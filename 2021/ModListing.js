@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.5f7d688fae0fa22e3d13.js
-// Retrieved at 8/11/2021, 2:30:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.6926208b65cdd744e34a.js
+// Retrieved at 8/12/2021, 9:40:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -548,9 +548,9 @@
 			})), r.d(t, "toggleHiddenSubreddit", (function() {
 				return J
 			})), r.d(t, "hideSubreddit", (function() {
-				return z
-			})), r.d(t, "unhideSubreddit", (function() {
 				return X
+			})), r.d(t, "unhideSubreddit", (function() {
+				return z
 			}));
 			var n = r("./node_modules/fbt/lib/FbtPublic.js"),
 				s = r("./node_modules/lodash/pick.js"),
@@ -714,7 +714,7 @@
 					r(a(e));
 					const m = await l(s(), i.displayText, e);
 					m.ok ? (await r(R(u.routeMatch.match, !0)), r(d(e))) : r(c(m.body))
-				}, z = e => J(e, !0), X = e => J(e, !1)
+				}, X = e => J(e, !0), z = e => J(e, !1)
 		},
 		"./src/reddit/actions/shortcuts/utils.ts": function(e, t, r) {
 			"use strict";
@@ -1236,6 +1236,28 @@
 					})
 				}
 			}
+		},
+		"./src/reddit/components/StructuredStyles/BladeManager/index.tsx": function(e, t, r) {
+			"use strict";
+			var n = r("./node_modules/react/index.js"),
+				s = r.n(n),
+				o = r("./src/reddit/connectors/connectClickToToggleEditor.ts");
+			class i extends s.a.Component {
+				constructor() {
+					super(...arguments), this.onClickCapture = e => {
+						this.props.isEditing && this.props.subredditId && !this.props.isModalOpen && (e.stopPropagation(), e.preventDefault(), this.props.requestCloseBlade())
+					}
+				}
+				render() {
+					return s.a.createElement("div", {
+						className: this.props.className,
+						onClickCapture: this.onClickCapture,
+						children: this.props.children
+					})
+				}
+			}
+			var a = Object(o.a)(i);
+			t.a = e => s.a.createElement(a, e)
 		},
 		"./src/reddit/components/VerticalVotes/votes.m.less": function(e, t, r) {
 			e.exports = {
@@ -2110,6 +2132,45 @@
 				backgroundContainer: "_2wxsLGNmMLx6sEMLJyn2o9"
 			}
 		},
+		"./src/reddit/layout/page/Listing/BackgroundContainer.tsx": function(e, t, r) {
+			"use strict";
+			r.d(t, "a", (function() {
+				return m
+			}));
+			var n = r("./node_modules/react/index.js"),
+				s = r.n(n),
+				o = r("./src/lib/classNames/index.ts"),
+				i = r("./src/lib/CSSVariableProvider/withTheme.tsx"),
+				a = r("./src/reddit/models/Theme/index.ts"),
+				d = r("./src/reddit/models/Theme/NewColorSystem/index.ts"),
+				c = r("./src/reddit/layout/page/Listing/BackgroundContainer.m.less"),
+				l = r.n(c);
+
+			function u() {
+				return (u = Object.assign || function(e) {
+					for (var t = 1; t < arguments.length; t++) {
+						var r = arguments[t];
+						for (var n in r) Object.prototype.hasOwnProperty.call(r, n) && (e[n] = r[n])
+					}
+					return e
+				}).apply(this, arguments)
+			}
+			const m = Object(i.a)(e => {
+				const {
+					backgroundColor: t,
+					className: r,
+					redditStyle: n,
+					theme: i,
+					...c
+				} = e, m = Object(d.a)(e), p = {
+					"--pseudo-before-background": t || Object(a.g)(m.canvas, m.canvasImgUrl, m.canvasImgPosition)
+				};
+				return s.a.createElement("div", u({
+					className: Object(o.a)(l.a.backgroundContainer, r),
+					style: p
+				}, c))
+			})
+		},
 		"./src/reddit/layout/page/Listing/Content.m.less": function(e, t, r) {
 			e.exports = {
 				styledContent: "_1OVBBWLtHoSPfGCRaPzpTf",
@@ -2185,9 +2246,7 @@
 				outerContainer: "qYj03fU5CXf5t2Fc5iSvg",
 				outerContainerExp: "_35NDNOyTzBcywfeEavUt6p",
 				innerContainer: "_3ozFtOe6WpJEMUtxDOIvtU",
-				bannerNavContainer: "q4a8asWOWdfdniAbgNhMh",
-				centeredBannerNavContainer: "ctmf7Kxhz0aytJTgwoLFj",
-				withSidebar: "H3HhI12mGQGCprOqEO4_l"
+				bannerNavContainer: "q4a8asWOWdfdniAbgNhMh"
 			}
 		},
 		"./src/reddit/layout/page/Listing/index.tsx": function(e, t, r) {
@@ -2195,130 +2254,84 @@
 			var n = r("./node_modules/react/index.js"),
 				s = r.n(n),
 				o = r("./node_modules/react-redux/es/index.js"),
-				i = r("./src/lib/classNames/index.ts"),
-				a = r("./src/lib/CSSVariableProvider/withTheme.tsx"),
-				d = r("./src/reddit/models/Theme/index.ts"),
-				c = r("./src/reddit/models/Theme/NewColorSystem/index.ts"),
-				l = r("./src/reddit/layout/page/Listing/BackgroundContainer.m.less"),
-				u = r.n(l);
-
-			function m() {
-				return (m = Object.assign || function(e) {
-					for (var t = 1; t < arguments.length; t++) {
-						var r = arguments[t];
-						for (var n in r) Object.prototype.hasOwnProperty.call(r, n) && (e[n] = r[n])
-					}
-					return e
-				}).apply(this, arguments)
-			}
-			const p = Object(a.a)(e => {
-				const {
-					backgroundColor: t,
-					className: r,
-					redditStyle: n,
-					theme: o,
-					...a
-				} = e, l = Object(c.a)(e), p = {
-					"--pseudo-before-background": t || Object(d.g)(l.canvas, l.canvasImgUrl, l.canvasImgPosition)
-				};
-				return s.a.createElement("div", m({
-					className: Object(i.a)(u.a.backgroundContainer, r),
-					style: p
-				}, a))
-			});
-			var h = r("./src/reddit/layout/page/Listing/Content.tsx"),
-				b = r("./src/reddit/constants/componentSizes.ts"),
-				f = r("./src/reddit/constants/elementClassNames.ts"),
-				y = r("./src/reddit/constants/screenWidths.ts"),
-				v = r("./src/reddit/contexts/NavbarExp.ts"),
-				g = r("./src/reddit/connectors/connectClickToToggleEditor.ts");
-			class x extends s.a.Component {
-				constructor() {
-					super(...arguments), this.onClickCapture = e => {
-						this.props.isEditing && this.props.subredditId && !this.props.isModalOpen && (e.stopPropagation(), e.preventDefault(), this.props.requestCloseBlade())
-					}
-				}
-				render() {
-					return s.a.createElement("div", {
-						className: this.props.className,
-						onClickCapture: this.onClickCapture,
-						children: this.props.children
-					})
-				}
-			}
-			var _ = Object(g.a)(x);
-			var O = e => s.a.createElement(_, e),
-				E = r("./src/reddit/layout/page/Listing/index.m.less"),
-				I = r.n(E);
+				i = r("./src/reddit/layout/page/Listing/BackgroundContainer.tsx"),
+				a = r("./src/reddit/layout/page/Listing/Content.tsx"),
+				d = r("./src/lib/classNames/index.ts"),
+				c = r("./src/reddit/constants/componentSizes.ts"),
+				l = r("./src/reddit/constants/elementClassNames.ts"),
+				u = r("./src/reddit/constants/screenWidths.ts"),
+				m = r("./src/reddit/contexts/NavbarExp.ts"),
+				p = r("./src/reddit/components/StructuredStyles/BladeManager/index.tsx"),
+				h = r("./src/reddit/layout/page/Listing/index.m.less"),
+				b = r.n(h);
 			t.a = e => {
 				const {
 					backgroundColor: t,
-					centerNav: r,
-					className: a,
-					containerRef: d,
-					content: c,
-					contentBanner: l,
-					contentClassName: u,
-					contentNavBar: m,
-					disableFullscreen: g,
-					fitPageToContent: x,
-					forcedLayout: _,
+					className: r,
+					containerRef: h,
+					content: f,
+					contentBanner: y,
+					contentClassName: v,
+					contentNavBar: g,
+					disableFullscreen: x,
+					fitPageToContent: _,
+					forcedLayout: O,
 					hideOnlyChildMargin: E,
-					isCollectionLayout: j,
-					isPageSwapped: w,
-					maxWidth: C,
-					navBar: S,
-					redditStyle: k,
-					sidebar: N,
-					sidebars: M,
-					trendingUnit: L,
-					subredditId: T
-				} = e, B = L ? "28px" : "0", P = w ? {
-					marginRight: `${b.q}px`,
-					marginTop: B
+					isCollectionLayout: I,
+					isPageSwapped: j,
+					maxWidth: w,
+					navBar: C,
+					redditStyle: S,
+					sidebar: k,
+					sidebars: N,
+					trendingUnit: M,
+					subredditId: L
+				} = e, T = M ? "28px" : "0", B = j ? {
+					marginRight: `${c.q}px`,
+					marginTop: T
 				} : {
-					marginLeft: `${b.q}px`,
-					marginTop: B
-				}, R = Object(o.e)(e => "fromCache" !== e.connection.contentState), F = N && s.a.createElement("div", {
-					className: Object(i.a)(I.a.sidebar, j ? I.a["m-collectionLayout"] : I.a.defaultLayout),
-					style: P
-				}, N), D = s.a.createElement(h.a, {
+					marginLeft: `${c.q}px`,
+					marginTop: T
+				}, P = Object(o.e)(e => "fromCache" !== e.connection.contentState), R = k && s.a.createElement("div", {
+					className: Object(d.a)(b.a.sidebar, I ? b.a["m-collectionLayout"] : b.a.defaultLayout),
+					style: B
+				}, k), F = s.a.createElement(a.a, {
 					hideOnlyChildMargin: E,
-					className: u,
-					disableFullscreen: g,
-					fitPageToContent: x,
-					forcedLayout: _,
-					isCollectionLayout: j
-				}, l, c);
-				let A;
-				A = M ? s.a.createElement(s.a.Fragment, null, M[0], D, M[1]) : w ? s.a.createElement(s.a.Fragment, null, F, D) : s.a.createElement(s.a.Fragment, null, D, F);
-				const U = g ? `${C||y.a+2*b.m}px` : "100%",
-					H = Object(n.useContext)(v.a);
-				return s.a.createElement(O, {
-					subredditId: T
+					className: v,
+					disableFullscreen: x,
+					fitPageToContent: _,
+					forcedLayout: O,
+					isCollectionLayout: I
+				}, y, f);
+				let D;
+				D = N ? s.a.createElement(s.a.Fragment, null, N[0], F, N[1]) : j ? s.a.createElement(s.a.Fragment, null, R, F) : s.a.createElement(s.a.Fragment, null, F, R);
+				const A = x ? `${w||u.a+2*c.m}px` : "100%",
+					U = Object(n.useContext)(m.a);
+				return s.a.createElement(p.a, {
+					subredditId: L
 				}, s.a.createElement("div", {
-					className: Object(i.a)(I.a.outerContainer, f.i, a, {
-						[I.a.outerContainerExp]: H
+					className: Object(d.a)(b.a.outerContainer, l.i, r, {
+						[b.a.outerContainerExp]: U
 					}),
-					ref: d
-				}, s.a.createElement(p, {
-					className: f.h,
-					redditStyle: k,
+					ref: h
+				}, s.a.createElement(i.a, {
+					className: l.h,
+					redditStyle: S,
 					backgroundColor: t
 				}), s.a.createElement("div", {
-					className: I.a.innerContainer
+					className: b.a.innerContainer
 				}, s.a.createElement("div", {
-					className: Object(i.a)(r ? I.a.centeredBannerNavContainer : I.a.bannerNavContainer, Boolean(N) && I.a.withSidebar)
-				}, S), m, R && s.a.createElement(s.a.Fragment, null, (e => e.hero ? s.a.createElement(s.a.Fragment, null, e.hero) : null)(e), s.a.createElement("div", {
+					className: b.a.bannerNavContainer
+				}, C), g, P && s.a.createElement(s.a.Fragment, null, (e => e.hero ? s.a.createElement(s.a.Fragment, null, e.hero) : null)(e), s.a.createElement("div", {
 					style: {
-						maxWidth: U
+						maxWidth: A
 					}
-				}, L), s.a.createElement("div", {
-					className: I.a.body,
+				}, M), s.a.createElement("div", {
+					className: b.a.body,
 					style: {
-						maxWidth: U
+						maxWidth: A
 					}
-				}, A)))))
+				}, D)))))
 			}
 		},
 		"./src/reddit/layout/row/Inline/index.m.less": function(e, t, r) {
@@ -2489,7 +2502,7 @@
 				apiError: e => e.modListingPage.filteredSubreddits.api.error,
 				isApiPending: K
 			});
-			class z extends i.a.Component {
+			class X extends i.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						subredditInput: ""
@@ -2533,9 +2546,9 @@
 					}, e.apiError.explanation))
 				}
 			}
-			var X = Object(a.b)(J, e => ({
+			var z = Object(a.b)(J, e => ({
 					hide: t => e(Object(m.hideSubreddit)(t))
-				}))(Object(R.c)(z)),
+				}))(Object(R.c)(X)),
 				Y = r("./src/lib/lessComponent.tsx"),
 				Z = r("./src/reddit/components/SubredditIcon/index.tsx"),
 				$ = r("./src/lib/classNames/index.ts"),
@@ -2646,7 +2659,7 @@
 						hk: "YdVw7"
 					})), e.filtered && i.a.createElement("div", {
 						className: be.a.inputContainer
-					}, i.a.createElement(X, null), i.a.createElement(pe, {
+					}, i.a.createElement(z, null), i.a.createElement(pe, {
 						hiddenSubredditsNames: e.hiddenSubredditsNames
 					})))
 				}
@@ -3127,7 +3140,7 @@
 				}
 			};
 			const J = {};
-			var z = (e = J, t) => {
+			var X = (e = J, t) => {
 					switch (t.type) {
 						case V.b: {
 							const {
@@ -3148,9 +3161,9 @@
 							return e
 					}
 				},
-				X = Object(n.c)({
+				z = Object(n.c)({
 					itemOrder: G,
-					models: z
+					models: X
 				});
 			var Y = (e = null, t) => {
 				switch (t.type) {
@@ -3228,7 +3241,7 @@
 					}
 				},
 				oe = Object(n.c)({
-					actions: X,
+					actions: z,
 					endCursor: Y,
 					hasNextPage: $,
 					hasPreviousPage: te,
@@ -3711,7 +3724,7 @@
 					userOrder: Qe
 				}),
 				Je = r("./src/reddit/actions/bulkActions/constants.ts");
-			var ze = (e = null, t) => {
+			var Xe = (e = null, t) => {
 					switch (t.type) {
 						case Je.c:
 						case Je.b:
@@ -3722,28 +3735,28 @@
 							return e
 					}
 				},
-				Xe = r("./src/reddit/actions/modQueue/constants.ts");
+				ze = r("./src/reddit/actions/modQueue/constants.ts");
 			var Ye = (e = !1, t) => {
 					switch (t.type) {
 						case Je.c:
 							return !0;
 						case Je.b:
 						case Je.a:
-						case Xe.s:
-						case Xe.r:
+						case ze.s:
+						case ze.r:
 							return !1;
 						default:
 							return e
 					}
 				},
 				Ze = Object(n.c)({
-					error: ze,
+					error: Xe,
 					pending: Ye
 				});
 			const $e = {};
 			var et = (e = $e, t) => {
 					switch (t.type) {
-						case Xe.a: {
+						case ze.a: {
 							const {
 								ids: r
 							} = t.payload, n = {};
@@ -3752,13 +3765,13 @@
 								...n
 							}
 						}
-						case Xe.d: {
+						case ze.d: {
 							const {
 								ids: r
 							} = t.payload;
 							return L()(e, r)
 						}
-						case Xe.c: {
+						case ze.c: {
 							const {
 								ids: e
 							} = t.payload, r = {};
@@ -3792,10 +3805,10 @@
 				});
 			var ot = (e = null, t) => {
 				switch (t.type) {
-					case Xe.g:
-					case Xe.f:
+					case ze.g:
+					case ze.f:
 						return null;
-					case Xe.e:
+					case ze.e:
 						return t.payload;
 					default:
 						return e
@@ -3803,10 +3816,10 @@
 			};
 			var it = (e = !1, t) => {
 					switch (t.type) {
-						case Xe.g:
+						case ze.g:
 							return !0;
-						case Xe.f:
-						case Xe.e:
+						case ze.f:
+						case ze.e:
 							return !1;
 						default:
 							return e
@@ -3819,7 +3832,7 @@
 			const dt = {};
 			var ct = (e = dt, t) => {
 				switch (t.type) {
-					case Xe.f: {
+					case ze.f: {
 						const {
 							listingKey: r,
 							page: n,
@@ -3842,7 +3855,7 @@
 			const lt = {};
 			var ut = (e = lt, t) => {
 					switch (t.type) {
-						case Xe.f: {
+						case ze.f: {
 							const {
 								listingKey: r,
 								response: n
@@ -3873,11 +3886,11 @@
 							} = r;
 						return n ? null : e
 					}
-					case Xe.i:
-					case Xe.f:
-					case Xe.m:
-					case Xe.p:
-					case Xe.v: {
+					case ze.i:
+					case ze.f:
+					case ze.m:
+					case ze.p:
+					case ze.v: {
 						const {
 							response: e
 						} = t.payload, {
@@ -3885,7 +3898,7 @@
 						} = e;
 						return r
 					}
-					case Xe.k: {
+					case ze.k: {
 						const e = t.payload,
 							{
 								moderatedAfter: r
@@ -3899,11 +3912,11 @@
 			const bt = [];
 			var ft = (e = bt, t) => {
 				switch (t.type) {
-					case Xe.i:
-					case Xe.f:
-					case Xe.m:
-					case Xe.p:
-					case Xe.v: {
+					case ze.i:
+					case ze.f:
+					case ze.m:
+					case ze.p:
+					case ze.v: {
 						const {
 							response: e
 						} = t.payload, {
@@ -3911,7 +3924,7 @@
 						} = e;
 						return r
 					}
-					case Xe.k: {
+					case ze.k: {
 						const r = t.payload,
 							{
 								listingOrder: n
@@ -3931,7 +3944,7 @@
 			};
 			var yt = (e = !1, t) => {
 				switch (t.type) {
-					case Xe.b:
+					case ze.b:
 						return !0;
 					default:
 						return e
@@ -3939,9 +3952,9 @@
 			};
 			var vt = (e = !1, t) => {
 					switch (t.type) {
-						case Xe.k:
+						case ze.k:
 							return !0;
-						case Xe.b:
+						case ze.b:
 							return !1;
 						default:
 							return e
@@ -3955,10 +3968,10 @@
 				});
 			var xt = (e = null, t) => {
 				switch (t.type) {
-					case Xe.j:
-					case Xe.i:
+					case ze.j:
+					case ze.i:
 						return null;
-					case Xe.h:
+					case ze.h:
 						return t.payload;
 					default:
 						return e
@@ -3966,10 +3979,10 @@
 			};
 			var _t = (e = !1, t) => {
 					switch (t.type) {
-						case Xe.j:
+						case ze.j:
 							return !0;
-						case Xe.i:
-						case Xe.h:
+						case ze.i:
+						case ze.h:
 							return !1;
 						default:
 							return e
@@ -3982,7 +3995,7 @@
 			const Et = {};
 			var It = (e = Et, t) => {
 				switch (t.type) {
-					case Xe.i: {
+					case ze.i: {
 						const {
 							listingKey: r,
 							page: n,
@@ -4005,7 +4018,7 @@
 			const jt = {};
 			var wt = (e = jt, t) => {
 					switch (t.type) {
-						case Xe.i: {
+						case ze.i: {
 							const {
 								listingKey: r,
 								response: n
@@ -4028,10 +4041,10 @@
 				});
 			var St = (e = null, t) => {
 				switch (t.type) {
-					case Xe.n:
-					case Xe.m:
+					case ze.n:
+					case ze.m:
 						return null;
-					case Xe.l:
+					case ze.l:
 						return t.payload;
 					default:
 						return e
@@ -4039,10 +4052,10 @@
 			};
 			var kt = (e = !1, t) => {
 					switch (t.type) {
-						case Xe.n:
+						case ze.n:
 							return !0;
-						case Xe.m:
-						case Xe.l:
+						case ze.m:
+						case ze.l:
 							return !1;
 						default:
 							return e
@@ -4055,7 +4068,7 @@
 			const Mt = {};
 			var Lt = (e = Mt, t) => {
 				switch (t.type) {
-					case Xe.m: {
+					case ze.m: {
 						const {
 							listingKey: r,
 							page: n,
@@ -4078,7 +4091,7 @@
 			const Tt = {};
 			var Bt = (e = Tt, t) => {
 					switch (t.type) {
-						case Xe.m: {
+						case ze.m: {
 							const {
 								listingKey: r,
 								response: n
@@ -4101,10 +4114,10 @@
 				});
 			var Rt = (e = null, t) => {
 				switch (t.type) {
-					case Xe.q:
-					case Xe.p:
+					case ze.q:
+					case ze.p:
 						return null;
-					case Xe.o:
+					case ze.o:
 						return t.payload;
 					default:
 						return e
@@ -4112,10 +4125,10 @@
 			};
 			var Ft = (e = !1, t) => {
 					switch (t.type) {
-						case Xe.q:
+						case ze.q:
 							return !0;
-						case Xe.p:
-						case Xe.o:
+						case ze.p:
+						case ze.o:
 							return !1;
 						default:
 							return e
@@ -4128,7 +4141,7 @@
 			const At = {};
 			var Ut = (e = At, t) => {
 				switch (t.type) {
-					case Xe.p: {
+					case ze.p: {
 						const {
 							listingKey: r,
 							page: n,
@@ -4151,7 +4164,7 @@
 			const Ht = {};
 			var qt = (e = Ht, t) => {
 					switch (t.type) {
-						case Xe.p: {
+						case ze.p: {
 							const {
 								listingKey: r,
 								response: n
@@ -4174,10 +4187,10 @@
 				});
 			var Wt = (e = null, t) => {
 				switch (t.type) {
-					case Xe.w:
-					case Xe.v:
+					case ze.w:
+					case ze.v:
 						return null;
-					case Xe.u:
+					case ze.u:
 						return t.payload;
 					default:
 						return e
@@ -4185,10 +4198,10 @@
 			};
 			var Vt = (e = !1, t) => {
 					switch (t.type) {
-						case Xe.w:
+						case ze.w:
 							return !0;
-						case Xe.v:
-						case Xe.u:
+						case ze.v:
+						case ze.u:
 							return !1;
 						default:
 							return e
@@ -4201,7 +4214,7 @@
 			const Gt = {};
 			var Jt = (e = Gt, t) => {
 				switch (t.type) {
-					case Xe.v: {
+					case ze.v: {
 						const {
 							listingKey: r,
 							page: n,
@@ -4221,10 +4234,10 @@
 						return e
 				}
 			};
-			const zt = {};
-			var Xt = (e = zt, t) => {
+			const Xt = {};
+			var zt = (e = Xt, t) => {
 					switch (t.type) {
-						case Xe.v: {
+						case ze.v: {
 							const {
 								listingKey: r,
 								response: n
@@ -4243,7 +4256,7 @@
 				Yt = Object(n.c)({
 					api: Qt,
 					itemOrder: Jt,
-					loadMore: Xt
+					loadMore: zt
 				}),
 				Zt = Object(n.c)({
 					bulkAction: st,
@@ -4537,4 +4550,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.5f7d688fae0fa22e3d13.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.6926208b65cdd744e34a.js.map
