@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.a5952fdbd42db0eef065.js
-// Retrieved at 8/11/2021, 4:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.d1d314eb9f4a740e1397.js
+// Retrieved at 8/12/2021, 4:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsPurchaseModal"], {
 		"./src/reddit/actions/goldPurchaseModals/payment.ts": function(e, t, n) {
@@ -379,7 +379,7 @@
 			var R = n("./src/reddit/components/PowerupsSidebar/common/utils.ts"),
 				q = n("./src/reddit/components/Econ/PowerupsPurchaseModal/PowerupsPurchase/PowerupsProgressControl/PowerupsCount/index.m.less"),
 				X = n.n(q);
-			var Z = function(e) {
+			var W = function(e) {
 					const {
 						className: t,
 						onChange: n,
@@ -407,10 +407,10 @@
 						onClick: () => i(1)
 					})))
 				},
-				V = n("./src/reddit/components/Econ/PowerupsPurchaseModal/PowerupsPurchase/PowerupsProgressControl/ProgressBar/index.m.less"),
-				W = n.n(V);
+				Z = n("./src/reddit/components/Econ/PowerupsPurchaseModal/PowerupsPurchase/PowerupsProgressControl/ProgressBar/index.m.less"),
+				K = n.n(Z);
 			const {
-				fbt: K
+				fbt: V
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 			var $ = e => {
 					const {
@@ -425,20 +425,20 @@
 					return s.a.createElement("div", {
 						className: n
 					}, s.a.createElement("div", {
-						className: W.a.titleRow
-					}, s.a.createElement("span", null, K._("Powerups", null, {
+						className: K.a.titleRow
+					}, s.a.createElement("span", null, V._("Powerups", null, {
 						hk: "DrcXp"
 					})), s.a.createElement("span", null, r < a ? `${r}/${a}` : r)), s.a.createElement("div", {
-						className: W.a.barRow
+						className: K.a.barRow
 					}, s.a.createElement("div", {
-						className: W.a.track
+						className: K.a.track
 					}), s.a.createElement("div", {
-						className: W.a.progress,
+						className: K.a.progress,
 						style: {
 							width: `${100*o}%`
 						}
 					}), t && s.a.createElement("div", {
-						className: W.a.additionalProgress,
+						className: K.a.additionalProgress,
 						style: {
 							width: `${100*(c-o)}%`,
 							left: `${100*o}%`
@@ -467,7 +467,7 @@
 					className: G.a.bar,
 					count: o.count,
 					maxCount: d
-				}), s.a.createElement(Z, {
+				}), s.a.createElement(W, {
 					className: G.a.count,
 					style: {
 						left: `${100*u}%`
@@ -517,7 +517,7 @@
 				fbt: ae
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), oe = 100, ce = Object(o.c)({
 				isAnonymous: x.d,
-				isNightMode: y.V,
+				isNightMode: y.W,
 				paypalErrorMessage: v.d,
 				powerups: x.j,
 				powerupsCount: x.e,
@@ -890,4 +890,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.a5952fdbd42db0eef065.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.d1d314eb9f4a740e1397.js.map

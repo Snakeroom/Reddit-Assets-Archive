@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.ea63313b7345224b51e9.js
-// Retrieved at 8/12/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.87bc4d1dd3345cfb7171.js
+// Retrieved at 8/12/2021, 4:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost", "Reddit~StandalonePostPage~reddit-components-MediumPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -892,12 +892,12 @@
 						S = e === O;
 					if (!(e === p.f || e === p.b || S)) return;
 					if (S) return void C(_, t, s)(n, i, u);
-					0 === x(o.nb).length && Object(b.Gb)(!1);
+					0 === x(o.nb).length && Object(b.Ib)(!1);
 					let y = i();
 					if (Object(h.d)(y, {
 							listingKey: t,
 							postId: s
-						}) || Object(h.a)(y).length >= m.a || Object(b.U)() || x(o.z).length >= m.a) return;
+						}) || Object(h.a)(y).length >= m.a || Object(b.V)() || x(o.z).length >= m.a) return;
 					const I = Object(v.w)(y, {
 						listingKey: t,
 						postId: s
@@ -947,14 +947,14 @@
 						postId: s
 					})))) : Object(r.a)(Object(f.c)(j, "no_chaining", _)(y))
 				}, y = "FEED_CHAINING__CHAIN_TOGGLED", I = (Object(i.a)(y), "FEED_CHAINING__CHAINING_TOGGLED"), j = Object(i.a)(I), T = () => async e => {
-					Object(b.Gb)(!0), e(j({
+					Object(b.Ib)(!0), e(j({
 						isDismissed: !0
 					})), e(Object(u.f)(Object(u.e)(n.fbt._("You'll see this less often.", null, {
 						hk: "38LGcQ"
 					}), _.b.Undo, n.fbt._("Undo", null, {
 						hk: "4zFGDk"
 					}), async () => {
-						Object(b.Gb)(!1), e(j({
+						Object(b.Ib)(!1), e(j({
 							isDismissed: !1
 						}))
 					})))
@@ -1441,7 +1441,7 @@
 					i && Object(n.a)(Object(a.b)(i)(m)), Object(d.J)(m) ? await t(Object(o.h)(c.a.SNOOVATAR_MODAL, {
 						share: l,
 						source: u
-					})) : await t(Object(r.h)())
+					})) : await t(Object(r.i)())
 				}
 			}
 		},
@@ -3945,7 +3945,7 @@
 					}) => Object(p.p)(e, {
 						pageLayer: t
 					}),
-					shouldOpenPostInNewTab: D.bb
+					shouldOpenPostInNewTab: D.cb
 				}),
 				Q = e => {
 					const {
@@ -4268,7 +4268,7 @@
 				h = s("./src/reddit/components/VerticalVotes/index.m.less"),
 				v = s.n(h);
 			const E = Object(c.c)({
-					isNightMode: _.V,
+					isNightMode: _.W,
 					isAnimatingUpvotePostId: f.k
 				}),
 				O = Object(i.b)(E),
@@ -6518,7 +6518,7 @@
 				d = (e, t) => s => {
 					const {
 						id: n
-					} = Object(i.mb)(s, {
+					} = Object(i.nb)(s, {
 						userName: t
 					});
 					return {
@@ -7756,7 +7756,7 @@
 					experimentEligibilitySelector: r.a,
 					experimentName: n.Gb
 				});
-				return !(!t || Object(n.ie)(t))
+				return !(!t || Object(n.ke)(t))
 			}
 		},
 		"./src/reddit/selectors/experiments/postActionBarAnimation.ts": function(e, t, s) {
@@ -7945,7 +7945,7 @@
 					minSize: t,
 					userName: s
 				}) => {
-					const n = Object(a.mb)(e, {
+					const n = Object(a.nb)(e, {
 						userName: s
 					});
 					if (n && n.awardedLastMonth && n.awardedLastMonth.topAward) return b(e, {
@@ -8148,7 +8148,7 @@
 				i = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const c = e => {
 					const t = Object(i.a)(e);
-					return Boolean(t) && !Object(r.ie)(t)
+					return Boolean(t) && !Object(r.ke)(t)
 				},
 				a = Object(n.a)(c, o.d, (e, t) => e && !t)
 		},
@@ -8422,4 +8422,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.ea63313b7345224b51e9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.87bc4d1dd3345cfb7171.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.7c1e335f5b4395f74478.js
-// Retrieved at 8/12/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.fc08a38e06875da655c2.js
+// Retrieved at 8/12/2021, 4:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-NotificationUnit-Button"], {
 		"./src/lib/makeCommentPermalink/index.ts": function(e, t, n) {
@@ -334,7 +334,7 @@
 				}) => async (r, o) => {
 					const s = o(),
 						m = Object(c.a)(G.c.replyToComment, t);
-					if (!Object(Y.J)(o())) return r(Object(d.j)()), void r(Object(a.k)({
+					if (!Object(Y.J)(o())) return r(Object(d.k)()), void r(Object(a.k)({
 						actionSource: a.a.Reply,
 						redirectUrl: Object(H.m)(o(), {
 							commentId: t
@@ -563,7 +563,7 @@
 								commentId: e,
 								followState: t
 							})).ok) {
-							Object(L.qb)(null !== (m = null === (a = null === (d = o().pages) || void 0 === d ? void 0 : d.comments) || void 0 === a ? void 0 : a.followed) && void 0 !== m ? m : [], null === (u = o().user.account) || void 0 === u ? void 0 : u.id);
+							Object(L.rb)(null !== (m = null === (a = null === (d = o().pages) || void 0 === d ? void 0 : d.comments) || void 0 === a ? void 0 : a.followed) && void 0 !== m ? m : [], null === (u = o().user.account) || void 0 === u ? void 0 : u.id);
 							const e = c ? r.fbt._("Followed! You’ll receive updates when there’s new activity", null, {
 								hk: "1Dp5UH"
 							}) : r.fbt._("Unfollowed, You’ll no longer recieve updates on this comment", null, {
@@ -647,7 +647,7 @@
 				P = e => async (t, n, {
 					apiContext: r
 				}) => {
-					if (!Object(_.J)(n())) return t(Object(a.j)()), void t(Object(m.k)({
+					if (!Object(_.J)(n())) return t(Object(a.k)()), void t(Object(m.k)({
 						actionSource: m.a.Save,
 						redirectUrl: Object(v.m)(n(), {
 							commentId: e
@@ -1040,7 +1040,7 @@
 						}),
 						kind: u.b.SuccessCommunity,
 						text: d
-					})), Object(i.nb)(o + 1)
+					})), Object(i.ob)(o + 1)
 				}
 		},
 		"./src/reddit/actions/presence.ts": function(e, t, n) {
@@ -1504,7 +1504,7 @@
 								experimentName: s.B,
 								expEventOverride: t
 							});
-							return !!(Object(s.ie)(n) ? void 0 : n)
+							return !!(Object(s.ke)(n) ? void 0 : n)
 						})(n)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -2596,7 +2596,7 @@
 							commentId: t
 						}),
 						r = n && n.authorId || "";
-					return Object(l.R)(e, r)
+					return Object(l.S)(e, r)
 				},
 				ee = (e, {
 					commentId: t
@@ -2672,4 +2672,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.7c1e335f5b4395f74478.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.fc08a38e06875da655c2.js.map

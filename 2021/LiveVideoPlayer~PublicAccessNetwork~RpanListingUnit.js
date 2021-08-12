@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit.d848677462a172f14a7c.js
-// Retrieved at 8/11/2021, 2:30:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit.7c90697b5fab5ed09590.js
+// Retrieved at 8/12/2021, 4:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit"], {
 		"./src/lib/VideoSession/VideoSessionManager.ts": function(e, t, s) {
@@ -406,7 +406,7 @@
 						const s = Object(l.l)(a(), e);
 						null !== s.post.voteState && Object(i.e)(s.post.voteState) === t || await Object(n.g)(r(), e, t)
 					}
-				else s(Object(m.h)())
+				else s(Object(m.i)())
 			}
 		},
 		"./src/reddit/components/CommentsChat/Comment/ChatIcon/default.tsx": function(e, t, s) {
@@ -1453,7 +1453,7 @@
 				const {
 					id: t,
 					name: s
-				} = e, a = Object(o.e)(e => Object(P.mb)(e, {
+				} = e, a = Object(o.e)(e => Object(P.nb)(e, {
 					userName: s
 				})), i = Ie(a), c = i && Object(x.a)(a.accountIcon);
 				return r.a.createElement("div", {
@@ -1486,7 +1486,7 @@
 			})), Ie = e => {
 				const t = Object(o.e)(P.j),
 					s = Object(o.e)(P.B),
-					a = Object(o.e)(P.cb);
+					a = Object(o.e)(P.db);
 				return !!e && (!!e.accountIcon && (!!t && (t.id === e.id || (!e.isNSFW || !!a && !s))))
 			}
 		},
@@ -1662,4 +1662,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit.d848677462a172f14a7c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit.7c90697b5fab5ed09590.js.map

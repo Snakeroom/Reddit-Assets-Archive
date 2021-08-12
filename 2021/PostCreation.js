@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.81eb182f8add255be486.js
-// Retrieved at 8/12/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.71cf3f8bf365dcfba3f8.js
+// Retrieved at 8/12/2021, 4:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, n) {
@@ -695,7 +695,7 @@
 				}) => async (o, r) => {
 					const s = r(),
 						l = Object(a.a)(W.c.replyToComment, t);
-					if (!Object(J.J)(r())) return o(Object(c.j)()), void o(Object(d.k)({
+					if (!Object(J.J)(r())) return o(Object(c.k)()), void o(Object(d.k)({
 						actionSource: d.a.Reply,
 						redirectUrl: Object(H.m)(r(), {
 							commentId: t
@@ -924,7 +924,7 @@
 								commentId: e,
 								followState: t
 							})).ok) {
-							Object(F.qb)(null !== (l = null === (d = null === (c = r().pages) || void 0 === c ? void 0 : c.comments) || void 0 === d ? void 0 : d.followed) && void 0 !== l ? l : [], null === (u = r().user.account) || void 0 === u ? void 0 : u.id);
+							Object(F.rb)(null !== (l = null === (d = null === (c = r().pages) || void 0 === c ? void 0 : c.comments) || void 0 === d ? void 0 : d.followed) && void 0 !== l ? l : [], null === (u = r().user.account) || void 0 === u ? void 0 : u.id);
 							const e = a ? o.fbt._("Followed! You’ll receive updates when there’s new activity", null, {
 								hk: "1Dp5UH"
 							}) : o.fbt._("Unfollowed, You’ll no longer recieve updates on this comment", null, {
@@ -1008,7 +1008,7 @@
 				w = e => async (t, n, {
 					apiContext: o
 				}) => {
-					if (!Object(j.J)(n())) return t(Object(d.j)()), void t(Object(l.k)({
+					if (!Object(j.J)(n())) return t(Object(d.k)()), void t(Object(l.k)({
 						actionSource: l.a.Save,
 						redirectUrl: Object(E.m)(n(), {
 							commentId: e
@@ -2665,7 +2665,7 @@
 						}),
 						kind: u.b.SuccessCommunity,
 						text: c
-					})), Object(i.nb)(r + 1)
+					})), Object(i.ob)(r + 1)
 				}
 		},
 		"./src/reddit/actions/postCreation/mediaUpload.ts": function(e, t, n) {
@@ -3877,7 +3877,7 @@
 					a && Object(o.a)(Object(c.b)(a)(m)), Object(d.J)(m) ? await t(Object(s.h)(i.a.SNOOVATAR_MODAL, {
 						share: l,
 						source: u
-					})) : await t(Object(r.h)())
+					})) : await t(Object(r.i)())
 				}
 			}
 		},
@@ -8448,7 +8448,7 @@
 					}) => Object(p.p)(e, {
 						pageLayer: t
 					}),
-					shouldOpenPostInNewTab: R.bb
+					shouldOpenPostInNewTab: R.cb
 				}),
 				J = e => {
 					const {
@@ -9310,8 +9310,8 @@
 			}
 			const f = Object(i.c)({
 					currentUser: d.j,
-					isNightMode: d.V,
-					isPresenceUserPrefEnabled: d.hb,
+					isNightMode: d.W,
+					isPresenceUserPrefEnabled: d.ib,
 					shouldHideNSFW: d.B
 				}),
 				g = Object(a.b)(f);
@@ -9862,10 +9862,10 @@
 						o = t.redditStyle || Object(f.l)(e, {
 							subredditId: n
 						}),
-						r = Object(g.V)(e);
+						r = Object(g.W)(e);
 					return o || r
 				},
-				nigtmode: g.V,
+				nigtmode: g.W,
 				subredditId: u.m,
 				topPostVariant: h.d
 			}));
@@ -15240,7 +15240,7 @@
 				d = (e, t) => n => {
 					const {
 						id: o
-					} = Object(a.mb)(n, {
+					} = Object(a.nb)(n, {
 						userName: t
 					});
 					return {
@@ -15549,7 +15549,7 @@
 					var e;
 					null === (e = n.current) || void 0 === e || e.emit(i)
 				}, [i]), [i, function(t) {
-					Object(r.Ab)(e, t), c(t)
+					Object(r.Bb)(e, t), c(t)
 				}]
 			}
 		},
@@ -17495,7 +17495,7 @@
 						const {
 							doNotShowOriginalContentDisclaimerClicked: e
 						} = this.props;
-						e(), Object(at.kb)(nt.ORIGINAL_CONTENT_DISCLAIMER, !0), this.setState({
+						e(), Object(at.lb)(nt.ORIGINAL_CONTENT_DISCLAIMER, !0), this.setState({
 							showOCDisclaimer: !1
 						})
 					}, this.handleOriginalContentClick = () => {
@@ -17769,13 +17769,13 @@
 			const Vt = [{
 					id: st.d,
 					getShowTimesLeft: at.I,
-					setShowTimesLeft: at.Ib,
+					setShowTimesLeft: at.Kb,
 					tooltipShown: Gt.n,
 					tooltipDismissed: Gt.m
 				}, {
 					id: st.c,
 					getShowTimesLeft: at.H,
-					setShowTimesLeft: at.Hb,
+					setShowTimesLeft: at.Jb,
 					tooltipShown: Gt.f,
 					tooltipDismissed: Gt.e
 				}],
@@ -18125,7 +18125,7 @@
 					if (!r) return d.fbt._("A destination community is required to crosspost", null, {
 						hk: "3haidF"
 					});
-					const i = s ? Object(P.db)(e, {
+					const i = s ? Object(P.eb)(e, {
 						userId: r
 					}) : r;
 					if (i) {
@@ -18707,7 +18707,7 @@
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), cr = `${wt.a.assetPath}/img/snoo-drafts.png`, dr = 3, lr = te.a.div("Wrapper", sr.a), ur = te.a.div("TitleRow", sr.a), mr = te.a.span("DraftsNumber", sr.a), pr = te.a.div("DetailsContainer", sr.a), br = te.a.wrapped(de.a, "ButtonRow", sr.a), hr = te.a.wrapped(fe.l, "CancelButton", sr.a), fr = te.a.div("CloseWrapper", sr.a), gr = te.a.wrapped(fo.a, "Close", sr.a), Cr = te.a.div("Empty", sr.a), _r = te.a.img("EmptyImage", sr.a), vr = te.a.p("EmptyText", sr.a), xr = Object(a.c)({
 				drafts: S.c,
 				isPending: S.b,
-				maxDrafts: P.U
+				maxDrafts: P.V
 			}), Er = Object(s.b)(xr);
 			class Or extends r.a.PureComponent {
 				constructor() {
@@ -21304,7 +21304,7 @@
 					linkBody: j.S,
 					markdownBody: j.T,
 					rteBody: j.eb,
-					maxDrafts: P.U,
+					maxDrafts: P.V,
 					modalId: y.a,
 					needsCaptcha: j.W,
 					nextSubreddit: j.X,
@@ -22605,7 +22605,7 @@
 					minSize: t,
 					userName: n
 				}) => {
-					const o = Object(c.mb)(e, {
+					const o = Object(c.nb)(e, {
 						userName: n
 					});
 					if (o && o.awardedLastMonth && o.awardedLastMonth.topAward) return b(e, {
@@ -23164,4 +23164,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.81eb182f8add255be486.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.71cf3f8bf365dcfba3f8.js.map

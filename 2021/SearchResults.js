@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.01decfebc5e143925fa1.js
-// Retrieved at 8/12/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.3cc22faf7ce0f72ca959.js
+// Retrieved at 8/12/2021, 4:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -2125,8 +2125,8 @@
 				E = Object(i.c)({
 					isInSrCreationEntrypointBehaviorExperiment: C.a,
 					isInSrCreationEntrypointCopyExperiment: C.b,
-					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(x.gb)(e),
-					userIsSuspended: x.O
+					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(x.hb)(e),
+					userIsSuspended: x.P
 				});
 			t.a = Object(o.b)(E, (e, {
 				eventSource: t
@@ -8187,7 +8187,7 @@
 				searchSwitcherUrl: n
 			}) {
 				const x = Object(u.a)(),
-					O = Object(o.e)(y.cb),
+					O = Object(o.e)(y.db),
 					E = Object(o.e)(v.m) === g.c.Trending,
 					j = s[d.c] || s.q || "",
 					_ = [{
@@ -11217,4 +11217,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.01decfebc5e143925fa1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.3cc22faf7ce0f72ca959.js.map

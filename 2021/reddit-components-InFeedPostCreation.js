@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.1475a79d2f5d47549f0b.js
-// Retrieved at 8/12/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.923ade195e6cc4ade087.js
+// Retrieved at 8/12/2021, 4:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-InFeedPostCreation"], {
 		"./src/reddit/components/InFeedPostCreation/index.m.less": function(e, t, n) {
@@ -46,7 +46,7 @@
 			! function(e) {
 				e.Media = "post-composer-du-media", e.Link = "post-composer-du-link"
 			}(j || (j = {}));
-			const h = e => {
+			const k = e => {
 					switch (e) {
 						case d.Sb.MEDIA:
 							return "?media=true";
@@ -56,7 +56,7 @@
 							return ""
 					}
 				},
-				k = e => {
+				h = e => {
 					switch (e) {
 						case d.Sb.MEDIA:
 							return "media_post";
@@ -69,7 +69,7 @@
 				M = Object(a.c)({
 					currentUser: C.j,
 					isPresenceConsumptionExpEnabled: E.a,
-					isPresenceTogglePref: C.hb,
+					isPresenceTogglePref: C.ib,
 					subreddit: U.z,
 					subredditAboutInfo: U.w
 				}),
@@ -121,7 +121,7 @@
 						c(t => ({
 							source: "post_composer_du",
 							action: "click",
-							noun: k(e),
+							noun: h(e),
 							...f.defaults(t)
 						}))
 					},
@@ -158,7 +158,7 @@
 					onClick: () => E(d.Sb.MEDIA),
 					onMouseEnter: () => u(j.Media),
 					onMouseLeave: () => u(j.Media),
-					to: m + h(d.Sb.MEDIA),
+					to: m + k(d.Sb.MEDIA),
 					Icon: Object(_.b)("image_post"),
 					isSquare: !0
 				}, o.a.createElement(p.c, {
@@ -175,7 +175,7 @@
 					onClick: () => E(d.Sb.LINK_ONLY),
 					onMouseEnter: () => u(j.Link),
 					onMouseLeave: () => u(j.Link),
-					to: m + h(d.Sb.LINK_ONLY),
+					to: m + k(d.Sb.LINK_ONLY),
 					Icon: Object(_.b)("link_post"),
 					isSquare: !0
 				}, o.a.createElement(p.c, {
@@ -211,8 +211,8 @@
 			}
 			const x = Object(i.c)({
 					currentUser: d.j,
-					isNightMode: d.V,
-					isPresenceUserPrefEnabled: d.hb,
+					isNightMode: d.W,
+					isPresenceUserPrefEnabled: d.ib,
 					shouldHideNSFW: d.B
 				}),
 				_ = Object(c.b)(x);
@@ -262,4 +262,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.1475a79d2f5d47549f0b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.923ade195e6cc4ade087.js.map

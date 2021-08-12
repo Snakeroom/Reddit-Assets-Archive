@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.bee28b4e98dd81ef57d6.js
-// Retrieved at 8/12/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.97b16587c6c17907e18d.js
+// Retrieved at 8/12/2021, 4:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ViewReportsDropdown-index"], {
 		"./src/reddit/actions/comment/index.ts": function(e, t, s) {
@@ -70,7 +70,7 @@
 				E = e => async (t, s, {
 					apiContext: o
 				}) => {
-					if (!Object(k.J)(s())) return t(Object(a.j)()), void t(Object(m.k)({
+					if (!Object(k.J)(s())) return t(Object(a.k)()), void t(Object(m.k)({
 						actionSource: m.a.Save,
 						redirectUrl: Object(w.m)(s(), {
 							commentId: e
@@ -1174,4 +1174,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.bee28b4e98dd81ef57d6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.97b16587c6c17907e18d.js.map

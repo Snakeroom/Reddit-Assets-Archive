@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.3f805223c25a04208acb.js
-// Retrieved at 8/12/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.32f8f98bd5f3c60f8087.js
+// Retrieved at 8/12/2021, 4:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -4334,7 +4334,7 @@
 					update: a
 				} = e, d = Object(Z.a)(), l = Object(i.d)(), [c, m] = Object(o.useState)(s), [u, p] = Object(o.useState)(!1), [h, b] = Object(o.useState)(!0);
 				return Object(o.useEffect)(() => {
-					b(Object(Y.E)("location")), Object(Y.Eb)("location")
+					b(Object(Y.E)("location")), Object(Y.Fb)("location")
 				}, []), r.a.createElement(r.a.Fragment, null, r.a.createElement(A.a, null, N.fbt._("Community Location", null, {
 					hk: "3aowzb"
 				})), r.a.createElement(L.k, {
@@ -5326,10 +5326,10 @@
 			}
 			var E = Object(r.b)(void 0, e => ({
 				onDismissTooltip: () => {
-					e(Object(l.i)()), Object(p.vb)()
+					e(Object(l.i)()), Object(p.wb)()
 				},
 				onViewTooltip: () => {
-					Object(p.Pb)()
+					Object(p.Rb)()
 				}
 			}))(Object(m.c)(x));
 			const v = "editable-primary-topic-idcard";
@@ -16156,7 +16156,7 @@
 				ce = f.a.div("TickText", B.a),
 				me = f.a.div("PreSubText", B.a),
 				ue = Object(i.c)({
-					isNightModeOn: L.V
+					isNightModeOn: L.W
 				}),
 				pe = Object(o.b)(ue)(e => a.a.createElement(Q, {
 					last: e.last,
@@ -21977,7 +21977,7 @@
 						profileName: t.match.params.profileName
 					})
 				}),
-				$e = Object(i.b)(() => Object(d.a)(Xe, N.G, E.O, Je, N.cb, w.hb, Ze, Ye, Qe, (e, t) => t.match.params.pageName, e => e, ({
+				$e = Object(i.b)(() => Object(d.a)(Xe, N.G, E.O, Je, N.db, w.hb, Ze, Ye, Qe, (e, t) => t.match.params.pageName, e => e, ({
 					contentGateInfo: e
 				}, t, s, {
 					moderatorPermissions: n
@@ -22344,8 +22344,8 @@
 					isInSrCreationFlowM2Experiment: ie,
 					isTopicOptional: ae,
 					isTopicRemoved: oe,
-					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(le.gb)(e),
-					userIsSuspended: le.O,
+					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(le.hb)(e),
+					userIsSuspended: le.P,
 					allTags: E.e,
 					existingTags: E.h,
 					newTags: E.i,
@@ -22745,7 +22745,7 @@
 					experimentEligibilitySelector: a.a,
 					experimentName: n.gc
 				});
-				return !(!t || Object(n.ie)(t))
+				return !(!t || Object(n.ke)(t))
 			}
 		},
 		"./src/reddit/selectors/showPromotedCTA.ts": function(e, t, s) {
@@ -22887,4 +22887,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.3f805223c25a04208acb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.32f8f98bd5f3c60f8087.js.map

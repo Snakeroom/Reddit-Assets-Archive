@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.1455d5cbb931748f96fb.js
-// Retrieved at 8/12/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.023ff1cd4b2accd0441b.js
+// Retrieved at 8/12/2021, 4:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e"], {
 		"./src/lib/addAllowQuarantinedParam/index.ts": function(e, t, s) {
@@ -622,7 +622,7 @@
 							profileName: i
 						} = e, o = [];
 						let d;
-						r ? d = Object(v.E)(n(), r) : i && (d = Object(x.eb)(n(), {
+						r ? d = Object(v.E)(n(), r) : i && (d = Object(x.fb)(n(), {
 							userName: i
 						})), d && o.push(s(Object(h.b)(d, t))), o.push(s(Object(O.Q)(t))), await Promise.all(o);
 						const a = Object(N.f)(n(), {
@@ -2245,7 +2245,7 @@
 				const e = Object(i.e)(e => ({
 					currentUser: Object(a.j)(e),
 					modModeEnabled: e.modModeEnabled,
-					nightmodeEnabled: Object(a.V)(e),
+					nightmodeEnabled: Object(a.W)(e),
 					prefs: e.user.prefs,
 					isLoggedIn: Object(a.J)(e)
 				}));
@@ -3087,4 +3087,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.1455d5cbb931748f96fb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.023ff1cd4b2accd0441b.js.map

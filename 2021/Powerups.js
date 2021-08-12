@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Powerups.4463ede96dfc32a22f24.js
-// Retrieved at 8/11/2021, 11:20:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Powerups.4b88f2278512cbf9d7d8.js
+// Retrieved at 8/12/2021, 4:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Powerups"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, a, t) {
@@ -823,7 +823,7 @@
 			const z = Y()(["wallstreetbets", "pennystocks", "tiktokcringe", "lgbt", "python", "unexpected", "chloe", "pewdiepiesubmissions", "roastme", "jacksepticeye", "thebachelor", "taylorswift", "bigbrother", "belowdeck", "blackpink"], 3),
 				R = () => {
 					const e = Object(h.a)(),
-						a = Object(r.e)(b.V),
+						a = Object(r.e)(b.W),
 						t = Object(U.a)(),
 						l = () => {
 							e((() => e => ({
@@ -1065,7 +1065,7 @@
 			}, re._("{perkDescription}", [re._param("perkDescription", a)], {
 				hk: "2Uanfp"
 			}))), ie = () => {
-				const e = Object(r.e)(b.V);
+				const e = Object(r.e)(b.W);
 				return s.a.createElement("div", {
 					className: Object(o.a)(se.a.perksSection, {
 						[se.a.isNightmodeOn]: e
@@ -1285,4 +1285,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Powerups.4463ede96dfc32a22f24.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Powerups.4b88f2278512cbf9d7d8.js.map

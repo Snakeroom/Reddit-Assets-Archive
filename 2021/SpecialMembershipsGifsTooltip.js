@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SpecialMembershipsGifsTooltip.7a8ac4614e02356de8c8.js
-// Retrieved at 8/5/2021, 6:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SpecialMembershipsGifsTooltip.ab99d2b0d4c7ca2bfbd2.js
+// Retrieved at 8/12/2021, 4:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SpecialMembershipsGifsTooltip"], {
 		"./src/reddit/components/RichTextEditor/media/GifTooltip/BaseTooltip.m.less": function(e, t, s) {
@@ -178,20 +178,20 @@
 				}
 			}
 			const L = Object(h.c)({
-				isNightMode: k.V
+				isNightMode: k.W
 			});
 			var P = Object(p.b)(L)(M),
 				U = s("./src/reddit/components/RichTextEditor/media/GifTooltip/GifTooltipBody.m.less"),
 				A = s.n(U);
 			const F = 4,
-				V = r()((function() {
+				H = r()((function() {
 					const e = Object(b.a)("https://api.giphy.com/v1/gifs/trending", {
 						api_key: g.a.giphyApiKey,
 						rating: x
 					});
 					return fetch(e).then(y)
 				}));
-			class H extends l.a.Component {
+			class V extends l.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						columns: [
@@ -255,7 +255,7 @@
 					this.mounted = !1
 				}
 				loadTrendingGifs() {
-					V().then(e => {
+					H().then(e => {
 						this.state.query || this.addGiphyResults(e)
 					})
 				}
@@ -390,7 +390,7 @@
 					kind: T.b.Error,
 					duration: 5e3
 				}))
-			}))(H))
+			}))(V))
 		},
 		"./src/reddit/components/RichTextEditor/media/GifTooltip/SearchBox/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -569,4 +569,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SpecialMembershipsGifsTooltip.7a8ac4614e02356de8c8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SpecialMembershipsGifsTooltip.ab99d2b0d4c7ca2bfbd2.js.map

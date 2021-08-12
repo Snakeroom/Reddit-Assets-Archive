@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/VideoShareModal.d473fe91a1a8a810ccb2.js
-// Retrieved at 8/12/2021, 11:10:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/VideoShareModal.3c25cecee2786496932f.js
+// Retrieved at 8/12/2021, 4:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["VideoShareModal"], {
 		"./src/reddit/actions/publicAccessNetwork/votes.ts": function(e, t, s) {
@@ -28,7 +28,7 @@
 						const s = Object(l.l)(a(), e);
 						null !== s.post.voteState && Object(c.e)(s.post.voteState) === t || await Object(o.g)(n(), e, t)
 					}
-				else s(Object(m.h)())
+				else s(Object(m.i)())
 			}
 		},
 		"./src/reddit/components/CommentsChat/Comment/ChatIcon/default.tsx": function(e, t, s) {
@@ -1082,7 +1082,7 @@
 				const {
 					id: t,
 					name: s
-				} = e, a = Object(r.e)(e => Object(P.mb)(e, {
+				} = e, a = Object(r.e)(e => Object(P.nb)(e, {
 					userName: s
 				})), c = ge(a), i = c && Object(w.a)(a.accountIcon);
 				return n.a.createElement("div", {
@@ -1115,7 +1115,7 @@
 			})), ge = e => {
 				const t = Object(r.e)(P.j),
 					s = Object(r.e)(P.B),
-					a = Object(r.e)(P.cb);
+					a = Object(r.e)(P.db);
 				return !!e && (!!e.accountIcon && (!!t && (t.id === e.id || (!e.isNSFW || !!a && !s))))
 			}
 		},
@@ -1736,4 +1736,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/VideoShareModal.d473fe91a1a8a810ccb2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/VideoShareModal.3c25cecee2786496932f.js.map

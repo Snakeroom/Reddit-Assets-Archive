@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.266f014d4f34e6924c2f.js
-// Retrieved at 8/11/2021, 2:30:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.ea475ed72c3eb19ba36a.js
+// Retrieved at 8/12/2021, 4:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinPurchaseModal"], {
 		"./src/lib/loadRedditAdsPixel.ts": function(e, t, a) {
@@ -1230,7 +1230,7 @@
 					dealCoinPackages: P.f,
 					gildThingId: k.s,
 					isIframed: C.g,
-					nightmode: x.V,
+					nightmode: x.W,
 					savedCardsPending: k.w,
 					selectedAward: f.b,
 					selectedPayment: k.c,
@@ -1608,4 +1608,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.266f014d4f34e6924c2f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.ea475ed72c3eb19ba36a.js.map

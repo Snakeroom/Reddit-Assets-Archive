@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.ca84073d07ed9880533f.js
-// Retrieved at 8/12/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.e8fba2544516828807d3.js
+// Retrieved at 8/12/2021, 4:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~Subreddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, r) {
@@ -976,7 +976,7 @@
 				}, K = Object(d.a)(A.d), V = e => async (t, r, o) => {
 					const n = r(),
 						i = n.structuredStyles.models[e] || {},
-						s = Object(L.V)(n);
+						s = Object(L.W)(n);
 					t(K({
 						isNightmodeOn: s,
 						styles: i,
@@ -1080,7 +1080,7 @@
 					Object(R.a)(u)
 				}, ee = Object(d.a)(A.e), te = () => async (e, t, r) => {
 					const o = t(),
-						n = Object(L.W)(o),
+						n = Object(L.X)(o),
 						i = !!Object(D.a)(o);
 					if (e(ee({
 							nightmodeTempUpdated: n
@@ -1097,7 +1097,7 @@
 					}) ? t(Object(p.i)(w.a.BLADE_UNSAVED_CHANGES)) : t(ne()))
 				}, se = e => async (t, r) => {
 					const o = r();
-					Object(N.i)(o) || t(Object(L.V)(o) ? Object(p.i)(w.a.BLADE_NIGHTMODE) : V(e))
+					Object(N.i)(o) || t(Object(L.W)(o) ? Object(p.i)(w.a.BLADE_NIGHTMODE) : V(e))
 				}, ce = Object(d.a)(A.i), ae = Object(d.a)(A.h), le = Object(d.a)(A.g), de = (e, t) => async (r, o, {
 					gqlContext: n,
 					apiContext: i
@@ -1682,7 +1682,7 @@
 				y = a.a.div("BackupImage", g.a),
 				j = Object(u.t)();
 			t.b = j(e => {
-				const t = Object(s.e)(m.V);
+				const t = Object(s.e)(m.W);
 				let r, n, a;
 				if (e.subredditOrProfile) {
 					const {
@@ -1936,9 +1936,9 @@
 			}
 			const v = Object(a.c)({
 					currentUser: _.j,
-					isNightMode: _.V,
+					isNightMode: _.W,
 					shouldHideNSFW: _.B,
-					user: _.mb
+					user: _.nb
 				}),
 				I = Object(c.b)(v);
 			t.a = I(e => {
@@ -2469,7 +2469,7 @@
 					}
 				}),
 				c = (e, t) => {
-					t && (Object(n.wb)(e.postId), Object(n.Fb)(t)), e.impressionIdStr ? Object(n.xb)(e.impressionIdStr) : e.impressionId && Object(n.xb)(e.impressionId)
+					t && (Object(n.xb)(e.postId), Object(n.Hb)(t)), e.impressionIdStr ? Object(n.yb)(e.impressionIdStr) : e.impressionId && Object(n.yb)(e.impressionId)
 				}
 		},
 		"./src/reddit/helpers/trackers/blade.ts": function(e, t, r) {
@@ -4490,9 +4490,9 @@
 					experimentName: n.yb,
 					experimentEligibilitySelector: e => a(e, t)
 				}), e => e),
-				d = e => e === n.Yd.NoCommunityWidgets,
-				u = e => e === n.Yd.NoRulesModerators,
-				f = e => e === n.Yd.RelatedPostsDu
+				d = e => e === n.Zd.NoCommunityWidgets,
+				u = e => e === n.Zd.NoRulesModerators,
+				f = e => e === n.Zd.RelatedPostsDu
 		},
 		"./src/reddit/selectors/tooltip.ts": function(e, t, r) {
 			"use strict";
@@ -4506,4 +4506,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.ca84073d07ed9880533f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.e8fba2544516828807d3.js.map

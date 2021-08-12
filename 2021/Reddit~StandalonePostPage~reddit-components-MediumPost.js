@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-MediumPost.08ff37c9a255202374cc.js
-// Retrieved at 8/12/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-MediumPost.13f34d96776b2d096b42.js
+// Retrieved at 8/12/2021, 4:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~StandalonePostPage~reddit-components-MediumPost"], {
 		"./src/lib/hooks/useTooltip.ts": function(e, t, r) {
@@ -220,7 +220,7 @@
 					c && Object(n.a)(Object(i.b)(c)(m)), Object(d.J)(m) ? await t(Object(o.h)(a.a.SNOOVATAR_MODAL, {
 						share: l,
 						source: u
-					})) : await t(Object(s.h)())
+					})) : await t(Object(s.i)())
 				}
 			}
 		},
@@ -766,7 +766,7 @@
 				h = r("./src/reddit/components/VerticalVotes/index.m.less"),
 				g = r.n(h);
 			const O = Object(a.c)({
-					isNightMode: v.V,
+					isNightMode: v.W,
 					isAnimatingUpvotePostId: b.k
 				}),
 				j = Object(c.b)(O),
@@ -2060,7 +2060,7 @@
 				d = (e, t) => r => {
 					const {
 						id: n
-					} = Object(c.mb)(r, {
+					} = Object(c.nb)(r, {
 						userName: t
 					});
 					return {
@@ -3069,7 +3069,7 @@
 					minSize: t,
 					userName: r
 				}) => {
-					const n = Object(i.mb)(e, {
+					const n = Object(i.nb)(e, {
 						userName: r
 					});
 					if (n && n.awardedLastMonth && n.awardedLastMonth.topAward) return f(e, {
@@ -3400,4 +3400,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-MediumPost.08ff37c9a255202374cc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-MediumPost.13f34d96776b2d096b42.js.map

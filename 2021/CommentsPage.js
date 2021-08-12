@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.dcf932320e1c4b503ed6.js
-// Retrieved at 8/12/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.58176dcadb69b59aef12.js
+// Retrieved at 8/12/2021, 4:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage"], {
 		"./src/reddit/actions/commentsListTruncated/index.ts": function(e, t, s) {
@@ -2414,7 +2414,7 @@
 					isLoggedIn: R.J,
 					isPendingDeletion: L.C,
 					isPresenceConsumptionExpEnabled: Qt.a,
-					isPresenceTogglePref: R.hb,
+					isPresenceTogglePref: R.ib,
 					isReplyWithUpvoteExperiment: rs.a,
 					moderatorPermissions: (e, t) => {
 						const s = Object(T.a)(e, t);
@@ -4633,7 +4633,7 @@
 				showEditFlair: we.a,
 				subredditOrProfile: U.U,
 				isEditing: D.K,
-				userIsOp: H.pb,
+				userIsOp: H.qb,
 				isVoteCountAnimation: (e, t) => !!t.isActionBarAnimationEnabled && Object(je.f)(e, {
 					postId: t.postId
 				}),
@@ -5749,7 +5749,7 @@
 							baseUrl: s.base_url,
 							hostPostId: a,
 							isEligibleForLinkedPosts: n,
-							shouldShowLinkedPosts: n && !Object(f.ie)(t) && !Object(j.a)(t),
+							shouldShowLinkedPosts: n && !Object(f.ke)(t) && !Object(j.a)(t),
 							subreddit: o
 						}
 					}
@@ -5804,7 +5804,7 @@
 						hostPostData: d,
 						listingBelowVariant: c
 					} = e;
-					if (c && !Object(f.ie)(c) && !Object(j.a)(c) && !i) return a.a.createElement("div", {
+					if (c && !Object(f.ke)(c) && !Object(j.a)(c) && !i) return a.a.createElement("div", {
 						className: K.a.smallBanner
 					});
 					const {
@@ -6609,7 +6609,7 @@
 			}
 			const O = Object(r.b)(() => Object(i.c)({
 					showFPR: C.H,
-					showSuspended: C.O,
+					showSuspended: C.P,
 					showOffline: e => "recent" !== e.connection.contentState
 				})),
 				y = Object(d.a)(({
@@ -7083,7 +7083,7 @@
 					contentGateInfo: (e, {
 						subredditName: t
 					}) => Object(he.e)(e, t),
-					currentUserShowNSFW: he.cb,
+					currentUserShowNSFW: he.db,
 					dismissedSubreddits: re.a,
 					fullyLoaded: te.u,
 					hasModeratorPostPermissions: le.c,
@@ -7094,7 +7094,7 @@
 					isChatPost: ee.d,
 					isCommentsListTruncated: oe.a,
 					isLoggedIn: he.J,
-					isNightmodeOn: he.V,
+					isNightmodeOn: he.W,
 					isTooltipOpen: (e, t) => !!Object(ue.a)(e),
 					origin: ce.j,
 					post: me.H,
@@ -7111,7 +7111,7 @@
 							commentsPageKey: o
 						})
 					}),
-					shouldOpenPostInNewTab: he.bb,
+					shouldOpenPostInNewTab: he.cb,
 					subredditAboutInfo: (e, {
 						subredditName: t
 					}) => t ? Object(pe.w)(e, {
@@ -7123,7 +7123,7 @@
 						tooltipIdPrefix: R.a,
 						tooltipType: Me.c.StickyPost
 					}))(e),
-					userPrefs: he.tb,
+					userPrefs: he.ub,
 					inResonatePilot: de.a,
 					isUpvotePromptExpEnabled: Y.d
 				}),
@@ -7142,8 +7142,8 @@
 					onToggleTooltip: t => e(Object(N.h)({
 						tooltipId: t
 					})),
-					openLoginModal: () => e(Object(L.h)()),
-					openRegisterModal: () => e(Object(L.j)()),
+					openLoginModal: () => e(Object(L.i)()),
+					openRegisterModal: () => e(Object(L.k)()),
 					goToSubredditPage: t => e(Object(u.b)(t)),
 					truncateCommentsList: () => e(Object(_.b)()),
 					fetchCommentsNativeAd: t => e(Object(k.a)(t)),
@@ -7872,7 +7872,7 @@
 					experimentEligibilitySelector: n.a,
 					experimentName: o.Gb
 				});
-				return !(!t || Object(o.ie)(t))
+				return !(!t || Object(o.ke)(t))
 			}
 		},
 		"./src/reddit/selectors/experiments/replyWithUpvote.ts": function(e, t, s) {
@@ -8024,7 +8024,7 @@
 				i = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const a = e => {
 					const t = Object(i.a)(e);
-					return Boolean(t) && !Object(n.ie)(t)
+					return Boolean(t) && !Object(n.ke)(t)
 				},
 				d = Object(o.a)(a, r.d, (e, t) => e && !t)
 		},
@@ -8049,4 +8049,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.dcf932320e1c4b503ed6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.58176dcadb69b59aef12.js.map

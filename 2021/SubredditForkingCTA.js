@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditForkingCTA.47249ff6357624aa9b1a.js
-// Retrieved at 8/12/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditForkingCTA.c6d0c1838f0ce8904f69.js
+// Retrieved at 8/12/2021, 4:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditForkingCTA"], {
 		"./src/reddit/components/CreateCommunityButton/index.m.less": function(t, _, e) {
@@ -26,15 +26,15 @@
 				y = e("./src/reddit/selectors/experiments/srCreationEntrypoints.ts"),
 				x = e("./src/reddit/selectors/user.ts"),
 				h = e("./src/reddit/components/CreateCommunityButton/index.m.less"),
-				g = e.n(h),
-				j = e("./src/lib/lessComponent.tsx");
+				j = e.n(h),
+				g = e("./src/lib/lessComponent.tsx");
 			const f = "create-community-button",
-				v = j.a.wrapped(u.c, "StyledTooltip", g.a),
+				v = g.a.wrapped(u.c, "StyledTooltip", j.a),
 				k = Object(i.c)({
 					isInSrCreationEntrypointBehaviorExperiment: y.a,
 					isInSrCreationEntrypointCopyExperiment: y.b,
-					userDoesNotHaveEnoughExpToCreateCommunity: t => !Object(x.gb)(t),
-					userIsSuspended: x.O
+					userDoesNotHaveEnoughExpToCreateCommunity: t => !Object(x.hb)(t),
+					userIsSuspended: x.P
 				});
 			_.a = Object(r.b)(k, (t, {
 				eventSource: _
@@ -111,8 +111,8 @@
 				y = Object(l.a)(m, t => t === a.Rd.Enabled);
 			var x = e("./src/reddit/selectors/posts.ts"),
 				h = e("./src/reddit/components/CreateCommunityButton/index.tsx"),
-				g = e("./src/reddit/components/TrackingHelper/index.tsx");
-			const j = {
+				j = e("./src/reddit/components/TrackingHelper/index.tsx");
+			const g = {
 				t5_2vgfw: !0,
 				t5_2qhrv: !0,
 				t5_2f3oes: !0,
@@ -1015,7 +1015,7 @@
 						..._,
 						disallowProfile: !0
 					});
-					return !(!e || (null == j ? void 0 : j[e.id])) && !!y(t)
+					return !(!e || (null == g ? void 0 : g[e.id])) && !!y(t)
 				},
 				w = Object(r.b)(() => Object(l.c)({
 					shouldDisplayCTA: k
@@ -1028,7 +1028,7 @@
 						}))
 					}
 				}));
-			_.default = Object(n.memo)(w(Object(g.c)(({
+			_.default = Object(n.memo)(w(Object(j.c)(({
 				shouldDisplayCTA: t,
 				setInitialCrosspostId: _,
 				postId: e,
@@ -1097,4 +1097,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditForkingCTA.47249ff6357624aa9b1a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditForkingCTA.c6d0c1838f0ce8904f69.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index.26a456ad312fe22f8e30.js
-// Retrieved at 8/12/2021, 11:50:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index.9a4022815aeb75f2bb6c.js
+// Retrieved at 8/12/2021, 4:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index"], {
 		"./src/reddit/components/Econ/Prediction/TournamentPostBody/PredictionContainer/index.m.less": function(e, t, n) {
@@ -29,7 +29,7 @@
 		"./src/reddit/components/Econ/Prediction/TournamentPostBody/index.tsx": function(e, t, n) {
 			"use strict";
 			n.r(t), n.d(t, "TournamentPostBody", (function() {
-				return J
+				return W
 			}));
 			var o = n("./node_modules/react/index.js"),
 				i = n.n(o),
@@ -107,8 +107,8 @@
 			const {
 				fbt: N
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
-			var V = n("./src/reddit/components/Econ/Prediction/TournamentPostBody/TournamentPrediction/index.m.less"),
-				M = n.n(V);
+			var M = n("./src/reddit/components/Econ/Prediction/TournamentPostBody/TournamentPrediction/index.m.less"),
+				V = n.n(M);
 			const U = ({
 				prediction: e,
 				tournamentId: t,
@@ -117,7 +117,7 @@
 				isLastPrediction: d
 			}) => {
 				const c = Object(u.e)(b.J),
-					a = Object(u.e)(b.V),
+					a = Object(u.e)(b.W),
 					l = Object(u.e)(t => Object(p.g)(t, {
 						postId: e.id
 					})),
@@ -126,7 +126,7 @@
 						isLoading: I,
 						isShowingVoteAnimation: g,
 						selectedOption: _,
-						selectOption: V,
+						selectOption: M,
 						predict: U,
 						cancelAction: F,
 						hideAnimation: H
@@ -153,11 +153,11 @@
 							} = n,
 							[I, g] = i.a.useState(!1),
 							[_, y] = i.a.useState(null),
-							[V, M] = i.a.useState(!1),
+							[M, V] = i.a.useState(!1),
 							U = O < Date.now();
 						return {
 							isLoading: I,
-							isShowingVoteAnimation: V,
+							isShowingVoteAnimation: M,
 							selectedOption: x.find(({
 								id: e
 							}) => e === _),
@@ -182,7 +182,7 @@
 										pollId: P,
 										tournamentId: e,
 										tournamentPostId: n.id
-									})), r && j < B.a.upvoted && (o(Object(w.db)(v)), o(Object(w.db)(P)), p()), g(!1), y(null), d ? M(!0) : a({
+									})), r && j < B.a.upvoted && (o(Object(w.db)(v)), o(Object(w.db)(P)), p()), g(!1), y(null), d ? V(!0) : a({
 										duration: 5e3,
 										kind: S.b.SuccessCommunity,
 										text: N._("Thanks! See if you're right in {timeToResult}", [N._param("timeToResult", Object(f.a)(new Date(O), !0))], {
@@ -199,7 +199,7 @@
 								y(null)
 							}, []),
 							hideAnimation: i.a.useCallback(() => {
-								M(!1)
+								V(!1)
 							}, [])
 						}
 					}(t, e, s),
@@ -210,19 +210,19 @@
 					{
 						endsAt: K,
 						title: R,
-						status: J,
-						resolvedOptionId: W,
+						status: W,
+						resolvedOptionId: J,
 						options: z
 					} = e,
 					Y = K < Date.now(),
-					$ = J === m.b.Cancelled || J === m.b.CancelInProgress,
+					$ = W === m.b.Cancelled || W === m.b.CancelInProgress,
 					Z = null != Q ? Q : z;
 				return i.a.createElement(i.a.Fragment, null, i.a.createElement("div", {
-					className: Object(r.a)(M.a.poll, {
-						[M.a.nightMode]: a
+					className: Object(r.a)(V.a.poll, {
+						[V.a.nightMode]: a
 					})
 				}, i.a.createElement("p", {
-					className: M.a.pollQuestion
+					className: V.a.pollQuestion
 				}, R), Z.map(e => i.a.createElement(E.a, {
 					endsAt: K,
 					key: `prediction-option-${e.id}`,
@@ -235,8 +235,8 @@
 					isSelected: G === e.id,
 					needsResolution: !1,
 					option: e,
-					onClick: () => V(e),
-					resolvedOptionId: W,
+					onClick: () => M(e),
+					resolvedOptionId: J,
 					tournamentId: t,
 					userSelection: G,
 					userIsLoggedOut: !c,
@@ -250,7 +250,7 @@
 					tournamentId: t,
 					onReveal: () => j(!0)
 				})), !!_ && i.a.createElement(P.b, {
-					className: M.a.modal,
+					className: V.a.modal,
 					isCreatingVote: I,
 					onOverlayClick: F,
 					onCancel: F,
@@ -286,7 +286,7 @@
 				}, K._("Go to Tournament", null, {
 					hk: "1QaAgH"
 				}))
-			}, J = ({
+			}, W = ({
 				post: e
 			}) => {
 				const {
@@ -313,8 +313,8 @@
 					postId: e.id
 				})
 			};
-			t.default = J
+			t.default = W
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.26a456ad312fe22f8e30.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.9a4022815aeb75f2bb6c.js.map

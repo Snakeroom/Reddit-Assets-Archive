@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.fbbeba2a69d742cc888c.js
-// Retrieved at 8/12/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.24c8f8cb1e870eb3673f.js
+// Retrieved at 8/12/2021, 4:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, n) {
@@ -2966,7 +2966,7 @@
 							await n(Object(l.o)(t.name))
 						}
 					})(), (async () => {
-						const r = Object(w.mb)(s, {
+						const r = Object(w.nb)(s, {
 							userName: t
 						});
 						if (!r) return;
@@ -3575,7 +3575,7 @@
 					subredditId: t.subredditId,
 					username: t.username
 				}),
-				user: (e, t) => Object(f.mb)(e, {
+				user: (e, t) => Object(f.nb)(e, {
 					userName: t.username
 				})
 			});
@@ -3913,7 +3913,7 @@
 						userName: t,
 						minSize: 32
 					}),
-					user: f.mb,
+					user: f.nb,
 					userFlair: (e, {
 						subredditId: t
 					}) => t ? Object(g.c)(e, {
@@ -4661,7 +4661,7 @@
 				I = n.n(S);
 			const P = Object(i.a)(h.j, (e, {
 					profileName: t
-				}) => Object(f.sb)(e, t), (e, t) => ({
+				}) => Object(f.tb)(e, t), (e, t) => ({
 					karma: {
 						...m.a,
 						...null == t ? void 0 : t.karma,
@@ -5333,7 +5333,7 @@
 						url: "testing" === r ? "https://nft.reddit.com" : `https://nft.reddit.com/n/${n}`,
 						badge: r
 					}
-				})(p), [p]), w = Object(a.e)(l.V);
+				})(p), [p]), w = Object(a.e)(l.W);
 				return s.a.createElement(s.a.Fragment, null, s.a.createElement("div", {
 					className: Object(i.a)(b.a.container, y)
 				}, s.a.createElement(c.a, {
@@ -7241,7 +7241,7 @@
 				de = g.a.div("TickText", F.a),
 				ue = g.a.div("PreSubText", F.a),
 				me = Object(i.c)({
-					isNightModeOn: R.V
+					isNightModeOn: R.W
 				}),
 				pe = Object(a.b)(me)(e => s.a.createElement(V, {
 					last: e.last,
@@ -10884,7 +10884,7 @@
 					},
 					hasVerifiedEmail: A.z,
 					isFPR: A.H,
-					language: A.T,
+					language: A.U,
 					shouldShowCreatePasswordModal: N.d,
 					showLanguageSection: I.d.langSelect,
 					availableLocales: Te,
@@ -11095,8 +11095,8 @@
 			var ht = Object(o.b)(bt, e => ({
 					openSSOCreatePasswordForLinkAppleModal: () => e(Object(y.h)(ke.i)),
 					openSSOCreatePasswordForUnlinkAppleModal: () => e(Object(y.h)(ke.j)),
-					openLinkAppleSSOModal: () => e(Object(_.f)()),
-					openUnlinkAppleSSOModal: () => e(Object(_.k)())
+					openLinkAppleSSOModal: () => e(Object(_.g)()),
+					openUnlinkAppleSSOModal: () => e(Object(_.l)())
 				}))(e => {
 					const t = Object(nt.a)();
 					return a.a.createElement(pt, {
@@ -11159,8 +11159,8 @@
 			var wt = Object(o.b)(jt, e => ({
 					openSSOCreatePasswordForLinkGoogleModal: () => e(Object(y.h)(ke.m)),
 					openSSOCreatePasswordForUnlinkGoogleModal: () => e(Object(y.h)(ke.n)),
-					openLinkGoogleSSOModal: () => e(Object(_.g)()),
-					openUnlinkGoogleSSOModal: () => e(Object(_.l)())
+					openLinkGoogleSSOModal: () => e(Object(_.h)()),
+					openUnlinkGoogleSSOModal: () => e(Object(_.m)())
 				}))(e => {
 					const t = Object(nt.a)();
 					return a.a.createElement(Et, {
@@ -12255,8 +12255,8 @@
 					removeWhitelisted: t => e(Object(dn.h)(t)),
 					removeBlocked: t => e(Object(ln.g)(t)),
 					saveChatSettings: t => e(Object(cn.c)(t)),
-					enable2FA: () => e(Object(_.d)()),
-					disable2FA: () => e(Object(_.c)()),
+					enable2FA: () => e(Object(_.e)()),
+					disable2FA: () => e(Object(_.d)()),
 					generateBackupCodes: () => e(Object(_.a)())
 				}));
 			var ds = ls(({
@@ -12508,7 +12508,7 @@
 				ws = n.n(js);
 			const {
 				fbt: ks
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), Os = 30, Ss = 200, Is = Object(c.a)(A.j, Cs.a, A.tb, xs.n, Xe.a, (e, t, n, r, s) => {
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), Os = 30, Ss = 200, Is = Object(c.a)(A.j, Cs.a, A.ub, xs.n, Xe.a, (e, t, n, r, s) => {
 				const a = e && e.profileId,
 					o = a && r[a] ? r[a].bannerBackgroundImage : void 0;
 				return {
@@ -14004,4 +14004,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.fbbeba2a69d742cc888c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.24c8f8cb1e870eb3673f.js.map

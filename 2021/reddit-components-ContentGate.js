@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.32452ff4ceb62d96baae.js
-// Retrieved at 8/12/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.b69651971e1cc8ead166.js
+// Retrieved at 8/12/2021, 4:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, n) {
@@ -141,9 +141,9 @@
 				L = n("./src/lib/linkMatchers/index.ts"),
 				R = n("./src/lib/linkMatchers/customLinks.ts"),
 				j = n("./src/reddit/controls/OutboundLink/index.tsx");
-			const T = /\[(.+?)\]\((.+?)\)/g,
-				P = e => {
-					const t = e.split(T);
+			const P = /\[(.+?)\]\((.+?)\)/g,
+				T = e => {
+					const t = e.split(P);
 					if (1 === t.length) return [e];
 					const n = [];
 					for (let r = 0; r < t.length; r += 3) {
@@ -154,7 +154,7 @@
 				};
 			var O = o.a.memo(e => {
 					let t = [e.text];
-					return e.parseMdLinks && (t = w()(t, P)), e.parseRegularLinks && (t = w()(t, e => Array.isArray(e) ? [e] : (e => {
+					return e.parseMdLinks && (t = w()(t, T)), e.parseRegularLinks && (t = w()(t, e => Array.isArray(e) ? [e] : (e => {
 						const t = L.f.add(R.g.subreddit.prefix, R.g.subreddit.config).match(e);
 						if (!t) return [e];
 						const n = [];
@@ -524,8 +524,8 @@
 				x = Object(i.c)({
 					isInSrCreationEntrypointBehaviorExperiment: _.a,
 					isInSrCreationEntrypointCopyExperiment: _.b,
-					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(E.gb)(e),
-					userIsSuspended: E.O
+					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(E.hb)(e),
+					userIsSuspended: E.P
 				});
 			t.a = Object(s.b)(x, (e, {
 				eventSource: t
@@ -592,4 +592,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.32452ff4ceb62d96baae.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.b69651971e1cc8ead166.js.map

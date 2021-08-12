@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.8e47666dd60099fe5fc8.js
-// Retrieved at 8/12/2021, 11:10:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.948d014b83fc97dd35ee.js
+// Retrieved at 8/12/2021, 4:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments~ProfileOverview~ProfilePrivate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1567,7 +1567,7 @@
 						return s && s.coinPrice >= d.g
 					})
 				},
-				isNightmodeOn: v.V
+				isNightmodeOn: v.W
 			}), e => ({
 				openPost: t => e(Object(m.K)(t))
 			}));
@@ -2137,7 +2137,7 @@
 				}),
 				L = Object(m.c)({
 					isDropdownMenuOpen: e => Object(O.a)(e) === S,
-					isOwnProfile: (e, t) => Object(k.N)(e, t.profileName),
+					isOwnProfile: (e, t) => Object(k.O)(e, t.profileName),
 					isSnoovatar30Enabled: C.d.snoovatar30,
 					isSubscriptionsPinned: I.b
 				}),
@@ -2679,7 +2679,7 @@
 				subreddits: function(e, {
 					profileName: t
 				}) {
-					const s = Object(p.mb)(e, {
+					const s = Object(p.nb)(e, {
 							userName: t
 						}),
 						n = Object(m.f)(e);
@@ -2892,7 +2892,7 @@
 				}) : null,
 				user: (e, {
 					subredditOrProfile: t
-				}) => t.type === l.a.PROFILE ? Object(h.mb)(e, {
+				}) => t.type === l.a.PROFILE ? Object(h.nb)(e, {
 					userName: t.name
 				}) : null
 			}), I = Object(r.b)(k, e => ({
@@ -3152,4 +3152,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.8e47666dd60099fe5fc8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.948d014b83fc97dd35ee.js.map

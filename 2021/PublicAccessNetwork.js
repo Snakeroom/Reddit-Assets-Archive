@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.75de70c280e84eb7e8e0.js
-// Retrieved at 8/12/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.cade4ebdb8050f32870b.js
+// Retrieved at 8/12/2021, 4:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -286,13 +286,13 @@
 					experimentEligibilitySelector: u.a,
 					experimentName: m.Rc
 				});
-				return Object(m.ie)(t) ? void 0 : t
+				return Object(m.ke)(t) ? void 0 : t
 			}, e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
 					experimentName: m.Sc
 				});
-				return Object(m.ie)(t) ? void 0 : t
+				return Object(m.ke)(t) ? void 0 : t
 			}, (e, t) => e === m.Tc.Enabled && t === m.Tc.Enabled);
 			var h = s("./src/config.ts");
 			var b = s("./src/reddit/selectors/user.ts");
@@ -4156,7 +4156,7 @@
 					toggleModal: e
 				}) => {
 					const t = () => {
-						q.Mb(), e()
+						q.Ob(), e()
 					};
 					return n.a.createElement(K.e, null, n.a.createElement(Z, null, n.a.createElement(J.a, null, n.a.createElement("div", null, n.a.createElement("div", {
 						className: Y.a.Title
@@ -5919,8 +5919,8 @@
 					loadComments: () => e(Object(Zs.commentsPageDataRequested)(t, void 0, {
 						sort: zs.s.CHAT
 					}, zs.s.CHAT)),
-					openLoginModal: () => e(Object(m.h)()),
-					openRegisterModal: () => e(Object(m.j)()),
+					openLoginModal: () => e(Object(m.i)()),
+					openRegisterModal: () => e(Object(m.k)()),
 					fetchAutomuteStatus: () => e(Object($s.b)(t))
 				}))(Ko),
 				Go = s("./src/reddit/icons/svgs/Pagination/back.tsx");
@@ -6515,12 +6515,12 @@
 					this.props.sendEvent(Object(Ve.h)("guidebook", this.props.currentStream))
 				}
 				onOBSBannerDismissClick() {
-					q.mb(), this.setState({
+					q.nb(), this.setState({
 						shouldShowOBSBanner: !1
 					}), this.props.sendEvent(Object(Ve.g)("not_now", this.props.currentStream))
 				}
 				onOBSBannerLearnMoreClick() {
-					q.mb(), this.setState({
+					q.nb(), this.setState({
 						shouldShowOBSBanner: !1
 					}), this.props.sendEvent(Object(Ve.g)("learn_more", this.props.currentStream)), this.props.toggleOBSDownloadModal()
 				}
@@ -6528,7 +6528,7 @@
 					this.props.currentStream && this.props.sendEvent(Object(Ve.n)(this.props.currentStream, this.playbackStats))
 				}
 				handleFocusMessageInput() {
-					q.V() || this.props.toggleIntroChatModal()
+					q.W() || this.props.toggleIntroChatModal()
 				}
 				onUpvote() {
 					this.props.currentStream && this.props.sendEvent(Object(Ve.q)(this.props.currentStream, this.playbackStats))
@@ -6759,7 +6759,7 @@
 				related: En,
 				timestamp: Cn
 			}), xn = Object(r.b)(yn, (e, t) => ({
-				onOpenLoginModal: () => e(Object(m.h)()),
+				onOpenLoginModal: () => e(Object(m.i)()),
 				onStreamByIdRequested: t => e(Object(u.d)(t)),
 				updateLocation: (t, {
 					isOverlay: s,
@@ -7094,10 +7094,10 @@
 				a = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const i = e => {
 					const t = Object(a.a)(e);
-					return Boolean(t) && !Object(n.ie)(t)
+					return Boolean(t) && !Object(n.ke)(t)
 				},
 				d = Object(o.a)(i, r.d, (e, t) => e && !t)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.75de70c280e84eb7e8e0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.cade4ebdb8050f32870b.js.map

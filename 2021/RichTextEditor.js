@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.3b8a790eccddcd9334ac.js
-// Retrieved at 8/12/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.b4e838bf5fadeaf61f1b.js
+// Retrieved at 8/12/2021, 4:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, o) {
@@ -1051,7 +1051,7 @@
 				}) => async (n, s) => {
 					const r = s(),
 						l = Object(a.a)(N.c.replyToComment, t);
-					if (!Object(Z.J)(s())) return n(Object(c.j)()), void n(Object(d.k)({
+					if (!Object(Z.J)(s())) return n(Object(c.k)()), void n(Object(d.k)({
 						actionSource: d.a.Reply,
 						redirectUrl: Object(K.m)(s(), {
 							commentId: t
@@ -1280,7 +1280,7 @@
 								commentId: e,
 								followState: t
 							})).ok) {
-							Object(B.qb)(null !== (l = null === (d = null === (c = s().pages) || void 0 === c ? void 0 : c.comments) || void 0 === d ? void 0 : d.followed) && void 0 !== l ? l : [], null === (u = s().user.account) || void 0 === u ? void 0 : u.id);
+							Object(B.rb)(null !== (l = null === (d = null === (c = s().pages) || void 0 === c ? void 0 : c.comments) || void 0 === d ? void 0 : d.followed) && void 0 !== l ? l : [], null === (u = s().user.account) || void 0 === u ? void 0 : u.id);
 							const e = a ? n.fbt._("Followed! You’ll receive updates when there’s new activity", null, {
 								hk: "1Dp5UH"
 							}) : n.fbt._("Unfollowed, You’ll no longer recieve updates on this comment", null, {
@@ -1364,7 +1364,7 @@
 				R = e => async (t, o, {
 					apiContext: n
 				}) => {
-					if (!Object(w.J)(o())) return t(Object(d.j)()), void t(Object(l.k)({
+					if (!Object(w.J)(o())) return t(Object(d.k)()), void t(Object(l.k)({
 						actionSource: l.a.Save,
 						redirectUrl: Object(C.m)(o(), {
 							commentId: e
@@ -1779,7 +1779,7 @@
 						}),
 						kind: u.b.SuccessCommunity,
 						text: c
-					})), Object(i.nb)(s + 1)
+					})), Object(i.ob)(s + 1)
 				}
 		},
 		"./src/reddit/actions/publicAccessNetwork/automute.ts": function(e, t, o) {
@@ -4204,8 +4204,8 @@
 			}
 			const f = Object(i.c)({
 					currentUser: d.j,
-					isNightMode: d.V,
-					isPresenceUserPrefEnabled: d.hb,
+					isNightMode: d.W,
+					isPresenceUserPrefEnabled: d.ib,
 					shouldHideNSFW: d.B
 				}),
 				_ = Object(a.b)(f);
@@ -4875,4 +4875,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.3b8a790eccddcd9334ac.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.b4e838bf5fadeaf61f1b.js.map

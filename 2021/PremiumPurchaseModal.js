@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.da85f48038a331c89808.js
-// Retrieved at 8/12/2021, 3:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.a8605549a1c2d5cccb0e.js
+// Retrieved at 8/12/2021, 4:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PremiumPurchaseModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, r) {
@@ -600,11 +600,11 @@
 						hk: "1T4BEy"
 					}))
 				},
-				$ = r("./src/reddit/selectors/gold/powerups/index.ts");
+				W = r("./src/reddit/selectors/gold/powerups/index.ts");
 			const {
-				fbt: W
+				fbt: $
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), q = Object(c.c)({
-				isAnonymous: $.d,
+				isAnonymous: W.d,
 				savedCardsPending: P.w,
 				stripeTokenPending: P.m
 			}), z = Object(s.b)(q);
@@ -626,7 +626,7 @@
 						},
 						className: e,
 						disabled: u || !o
-					}, W._("Complete purchase", null, {
+					}, $._("Complete purchase", null, {
 						hk: "KaR26"
 					}))
 				})),
@@ -749,7 +749,7 @@
 						const t = Object(g.a)(e);
 						return null === t ? void 0 : t
 					},
-					nightmode: O.V,
+					nightmode: O.W,
 					passthrough: P.e,
 					selectedPayment: P.c,
 					stripeErrorMessage: P.j,
@@ -1118,4 +1118,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.da85f48038a331c89808.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.a8605549a1c2d5cccb0e.js.map

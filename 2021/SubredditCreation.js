@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditCreation.0c23ceb178e497f4f43a.js
-// Retrieved at 8/12/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditCreation.26c2be569e43f769ad26.js
+// Retrieved at 8/12/2021, 4:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditCreation"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -184,10 +184,10 @@
 			}
 			var v = Object(i.b)(void 0, e => ({
 				onDismissTooltip: () => {
-					e(Object(c.i)()), Object(u.vb)()
+					e(Object(c.i)()), Object(u.wb)()
 				},
 				onViewTooltip: () => {
-					Object(u.Pb)()
+					Object(u.Rb)()
 				}
 			}))(Object(p.c)(C));
 			const g = "editable-primary-topic-idcard";
@@ -227,7 +227,7 @@
 				T = {
 					availablePrimaryTags: y.t
 				},
-				I = Object(r.c)({
+				k = Object(r.c)({
 					...T,
 					selectedPrimaryTag: (e, {
 						subredditId: t
@@ -241,7 +241,7 @@
 					})).length > 0,
 					isSaving: y.H
 				}),
-				k = Object(r.c)({
+				I = Object(r.c)({
 					...T,
 					selectedPrimaryTag: (e, {
 						subredditId: t
@@ -339,8 +339,8 @@
 						}))
 					}
 				}))(R),
-				M = Object(i.b)(k, j)(R),
-				P = Object(i.b)(I, j);
+				M = Object(i.b)(I, j)(R),
+				P = Object(i.b)(k, j);
 			t.c = P(R)
 		},
 		"./src/reddit/components/CommunityTopics/index.m.less": function(e, t, n) {
@@ -894,11 +894,11 @@
 				}
 			}
 			var T = n("./node_modules/reselect/es/index.js");
-			const I = [],
-				k = {};
+			const k = [],
+				I = {};
 			class N extends i.a.Component {
 				constructor(e) {
-					super(e), this._selectableOptionsSelector = Object(T.a)(e => e.availableOptions || I, e => e.input, (e, t) => e.filter(e => {
+					super(e), this._selectableOptionsSelector = Object(T.a)(e => e.availableOptions || k, e => e.input, (e, t) => e.filter(e => {
 						const n = e.displayText.toLowerCase(),
 							s = t.toLowerCase();
 						return 0 === n.indexOf(s) || a()(n.split(/[\s\/]+/), e => 0 === e.indexOf(s))
@@ -933,7 +933,7 @@
 				}
 				render() {
 					const {
-						childClassNames: e = k
+						childClassNames: e = I
 					} = this.props;
 					return i.a.createElement("div", {
 						className: this.props.className,
@@ -1164,8 +1164,8 @@
 			}
 			var S = n("./src/reddit/controls/ToggleSwitch/index.tsx"),
 				T = n("./src/reddit/controls/Typography/index.tsx"),
-				I = n("./src/reddit/icons/svgs/ArrowRight/index.tsx"),
-				k = n("./src/reddit/icons/svgs/Circle/index.tsx"),
+				k = n("./src/reddit/icons/svgs/ArrowRight/index.tsx"),
+				I = n("./src/reddit/icons/svgs/Circle/index.tsx"),
 				N = n("./src/reddit/icons/svgs/OutboundLink/index.tsx"),
 				j = n("./node_modules/lodash/range.js"),
 				R = n.n(j),
@@ -1187,7 +1187,7 @@
 				}).apply(this, arguments)
 			}
 			const W = Object(d.a)(h.a),
-				V = f.a.wrapped(k.a, "Circle", A.a),
+				V = f.a.wrapped(I.a, "Circle", A.a),
 				K = f.a.h3("Label", A.a),
 				G = f.a.wrapped(T.c, "Subtext", A.a),
 				q = f.a.wrapped(m.a, "HoverTooltip", A.a),
@@ -1219,7 +1219,7 @@
 				X = f.a.wrapped(U, "SubtextLink", A.a),
 				Z = f.a.wrapped(N.a, "LinkIcon", A.a),
 				$ = f.a.button("LinkButton", A.a),
-				ee = f.a.wrapped(I.a, "ArrowRight", A.a),
+				ee = f.a.wrapped(k.a, "ArrowRight", A.a),
 				te = e => a.a.createElement(Y, {
 					direction: e.direction,
 					disabled: e.disabled,
@@ -1268,7 +1268,7 @@
 				de = f.a.div("TickText", A.a),
 				pe = f.a.div("PreSubText", A.a),
 				me = Object(r.c)({
-					isNightModeOn: L.V
+					isNightModeOn: L.W
 				}),
 				ue = Object(o.b)(me)(e => a.a.createElement(Y, {
 					last: e.last,
@@ -2785,8 +2785,8 @@
 				_ = n("./src/reddit/components/EmailInvitePaintedDoor/loader.tsx"),
 				S = n("./src/reddit/components/InfoTextTooltip/index.tsx"),
 				T = n("./src/reddit/components/Settings/shared/Widgets.tsx"),
-				I = n("./src/reddit/components/TrackingHelper/index.tsx"),
-				k = n("./src/reddit/constants/history.ts"),
+				k = n("./src/reddit/components/TrackingHelper/index.tsx"),
+				I = n("./src/reddit/constants/history.ts"),
 				N = n("./src/reddit/contexts/InsideOverlay.tsx"),
 				j = n("./src/reddit/controls/Button/index.tsx"),
 				R = n("./src/reddit/controls/CheckboxInput/index.tsx"),
@@ -2873,8 +2873,8 @@
 					isInSrCreationFlowM2Experiment: re,
 					isTopicOptional: ae,
 					isTopicRemoved: oe,
-					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(ce.gb)(e),
-					userIsSuspended: ce.O,
+					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(ce.hb)(e),
+					userIsSuspended: ce.P,
 					allTags: v.e,
 					existingTags: v.h,
 					newTags: v.i,
@@ -2971,7 +2971,7 @@
 				}, s.fbt._("Only Reddit employees can view and submit to this community", null, {
 					hk: "3ty23C"
 				})))))];
-			class Ie extends o.a.Component {
+			class ke extends o.a.Component {
 				constructor(e) {
 					super(e), this.onNameChange = e => {
 						this.setState({
@@ -3123,7 +3123,7 @@
 						hk: "SlFa7"
 					}), l && o.a.createElement(ye, {
 						onClick: () => {
-							x(Object(A.b)()), m(t.state[k.a.CloseLocation])
+							x(Object(A.b)()), m(t.state[I.a.CloseLocation])
 						}
 					})), b ? o.a.createElement("h2", {
 						className: pe.a.sublabel
@@ -3243,7 +3243,7 @@
 						disabled: n,
 						className: pe.a.createButton,
 						onClick: () => {
-							m(t.state[k.a.CloseLocation]), x(Object(A.b)())
+							m(t.state[I.a.CloseLocation]), x(Object(A.b)())
 						},
 						priority: j.b.Secondary
 					}, s.fbt._("Cancel", null, {
@@ -3260,7 +3260,7 @@
 					}))
 				}
 			}
-			t.default = Object(I.c)(Se(Object(N.b)(Ie)))
+			t.default = Object(k.c)(Se(Object(N.b)(ke)))
 		},
 		"./src/reddit/selectors/experiments/emailInvite.ts": function(e, t, n) {
 			"use strict";
@@ -3274,9 +3274,9 @@
 					experimentEligibilitySelector: a.a,
 					experimentName: s.gc
 				});
-				return !(!t || Object(s.ie)(t))
+				return !(!t || Object(s.ke)(t))
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.0c23ceb178e497f4f43a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.26c2be569e43f769ad26.js.map

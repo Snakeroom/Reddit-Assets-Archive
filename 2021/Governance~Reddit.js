@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.fa9beaebced850781184.js
-// Retrieved at 8/12/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.6a4c3261a0981e2c07e4.js
+// Retrieved at 8/12/2021, 4:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -1358,7 +1358,7 @@
 						s = Object(i.J)(r),
 						n = Object(d.b)(r),
 						c = !!Object(o.a)(r);
-					s || c || !Object(d.e)(n) && !Object(d.d)(n) || e(Object(a.e)())
+					s || c || !Object(d.e)(n) && !Object(d.d)(n) || e(Object(a.f)())
 				}, f = e => {
 					Object(c.d)(e, {
 						experimentName: n.U
@@ -4508,7 +4508,7 @@
 						action: "view",
 						noun: l,
 						...Object(u.defaults)(e)
-					}))(d)), Object(i.zb)(), Object(i.yb)(v), n(O()), r && r()
+					}))(d)), Object(i.Ab)(), Object(i.zb)(v), n(O()), r && r()
 				}, h = e => async (t, r) => {
 					Object(f.a)((e => ({
 						source: l,
@@ -4520,14 +4520,14 @@
 					}) && t(Object(c.db)(e))
 				}, E = (e, t) => {
 					const r = Object(p.d)(e, {
-						experimentName: d.be
+						experimentName: d.de
 					});
 					let a = "";
-					return (null == r ? void 0 : r.variant) === d.ce.Variant1 ? a = t ? s.fbt._("Was that a good post? Upvote it so it gets seen by more people", null, {
+					return (null == r ? void 0 : r.variant) === d.ee.Variant1 ? a = t ? s.fbt._("Was that a good post? Upvote it so it gets seen by more people", null, {
 						hk: "2NOllx"
 					}) : s.fbt._("Was this a good post? Upvote it so it gets seen by more people", null, {
 						hk: "K1yBi"
-					}) : (null == r ? void 0 : r.variant) === d.ce.Variant2 && (a = t ? s.fbt._("If you enjoyed that post, upvote it so that more redditors will see it too.", null, {
+					}) : (null == r ? void 0 : r.variant) === d.ee.Variant2 && (a = t ? s.fbt._("If you enjoyed that post, upvote it so that more redditors will see it too.", null, {
 						hk: "1Y6B4I"
 					}) : s.fbt._("If you enjoyed this post, upvote it so that more redditors will see it too.", null, {
 						hk: "HR9Ye"
@@ -5044,7 +5044,7 @@
 				const {
 					nsfwSessionSetting: R,
 					refreshNsfwSessionSettingExpiryTime: C
-				} = Object(y.a)(), N = Object(n.e)(_.b), L = Object(n.e)(I.cb), k = e => e.subredditOrProfileRestrictedName ? `${e.subredditOrProfileRestrictedName} ${e.searchQuery}` : e.searchQuery, x = Object(h.a)({
+				} = Object(y.a)(), N = Object(n.e)(_.b), L = Object(n.e)(I.db), k = e => e.subredditOrProfileRestrictedName ? `${e.subredditOrProfileRestrictedName} ${e.searchQuery}` : e.searchQuery, x = Object(h.a)({
 					includeNsfwResults: N && L && R,
 					multireddit: null,
 					searchItem: c,
@@ -6418,7 +6418,7 @@
 					} = r;
 				if (`${o}//${s}` === n.a.gatewayUrl) {
 					const s = {},
-						a = Object(f.cb)(e.getState()) ? "1" : "";
+						a = Object(f.db)(e.getState()) ? "1" : "";
 					s.allow_over18 = a, s.include = b(e.getState(), r, t), t.endpoint = Object(c.a)(t.endpoint, s)
 				}
 			}
@@ -6811,7 +6811,7 @@
 					var e;
 					null === (e = r.current) || void 0 === e || e.emit(o)
 				}, [o]), [o, function(t) {
-					Object(a.Ab)(e, t), d(t)
+					Object(a.Bb)(e, t), d(t)
 				}]
 			}
 		},
@@ -23273,7 +23273,7 @@
 					return !!r && r.includes(t)
 				},
 				o = (e, t) => {
-					const r = Object(s.mb)(e, {
+					const r = Object(s.nb)(e, {
 						userName: t
 					});
 					return !!r && c(e, r.id)
@@ -23419,7 +23419,7 @@
 				l = e => e === a.N.OnetapAuto,
 				p = e => e.user.googleOneTapEnabled,
 				b = Object(s.a)(o.J, i, (e, t) => !e && !!t),
-				f = Object(s.a)(o.J, i, (e, t) => !e && !!t && !Object(a.ie)(t))
+				f = Object(s.a)(o.J, i, (e, t) => !e && !!t && !Object(a.ke)(t))
 		},
 		"./src/reddit/selectors/experiments/presenceIndicator.ts": function(e, t, r) {
 			"use strict";
@@ -23468,9 +23468,9 @@
 					if (!i(e, t)) return !1;
 					const r = Object(a.c)(e, {
 						experimentEligibilitySelector: a.a,
-						experimentName: s.be
+						experimentName: s.de
 					});
-					return r === s.ce.Variant1 || r === s.ce.Variant2
+					return r === s.ee.Variant1 || r === s.ee.Variant2
 				}
 		},
 		"./src/reddit/selectors/scheduledPosts/index.ts": function(e, t, r) {
@@ -23668,4 +23668,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.fa9beaebced850781184.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.6a4c3261a0981e2c07e4.js.map
