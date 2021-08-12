@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.9adae535b676c1c820b0.js
-// Retrieved at 8/11/2021, 7:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.d163515e514b1be54632.js
+// Retrieved at 8/12/2021, 9:20:06 AM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var n, a, r = o[0], s = o[1], c = o[2], l = 0, P = []; l < r.length; l++) a = r[l], Object.prototype.hasOwnProperty.call(d, a) && d[a] && P.push(d[a][0]), d[a] = 0;
@@ -692,8 +692,8 @@
 					RedesignChat: "6565fde54e4c1d8a98b0",
 					"vendors~CollectionCommentsPage~CommentsPage": "31d6cfe0d16ae931b73c",
 					"CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki": "d51d8192cd8600e80f7d",
-					CollectionCommentsPage: "9a295651c83c5cc47e5d",
-					CommentsPage: "9a295651c83c5cc47e5d",
+					CollectionCommentsPage: "70601bae025877ad1911",
+					CommentsPage: "70601bae025877ad1911",
 					"vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PostCreation~Settings~~f8934a85": "31d6cfe0d16ae931b73c",
 					CryptoHarbergerTaxManageModal: "82be4c65d5db9759d06e",
 					HarbergerTaxManageModal: "0a15a60855e5a7077999",
@@ -1295,7 +1295,7 @@
 						"translations/es_MX-json": "87016d98dff2fc1d35b0",
 						"translations/fr_FR-json": "0a1245fa3c88bf23bd77",
 						"translations/it_IT-json": "086a8185360f11217c11",
-						"translations/pseudo_ext-json": "85e9366703a27e857cac",
+						"translations/pseudo_ext-json": "233c6107765216487612",
 						"translations/pseudo_long-json": "e7fee505c6c99687bbbc",
 						"translations/pseudo_short-json": "84c5b4f557805c05ccc2",
 						"translations/pt_BR-json": "19b821e800300558e3b3",
@@ -1311,8 +1311,8 @@
 						RedesignChat: "0803216e7c105b3c6def",
 						"vendors~CollectionCommentsPage~CommentsPage": "74fecf4322147c824f67",
 						"CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki": "10b186eea4f7a740185f",
-						CollectionCommentsPage: "d1981a9a409487e8e531",
-						CommentsPage: "0a25ae1af0a9d2a66cdd",
+						CollectionCommentsPage: "e083a5a9f8db8b1a14e8",
+						CommentsPage: "818ceccf2b55f054d97a",
 						"vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PostCreation~Settings~~f8934a85": "aaad862b367893465412",
 						CryptoHarbergerTaxManageModal: "867a96894bbd94f59763",
 						HarbergerTaxManageModal: "d86c349dc3655f24438c",
@@ -1546,4 +1546,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.9adae535b676c1c820b0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.d163515e514b1be54632.js.map
