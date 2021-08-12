@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FlairEdit.44266627dfbfb66038cf.js
-// Retrieved at 8/11/2021, 2:30:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FlairEdit.44f384afd992714f2272.js
+// Retrieved at 8/12/2021, 6:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FlairEdit"], {
 		"./node_modules/draft-js/dist/Draft.css": function(e, t, o) {},
@@ -1780,4 +1780,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FlairEdit.44266627dfbfb66038cf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FlairEdit.44f384afd992714f2272.js.map

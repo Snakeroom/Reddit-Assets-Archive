@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.02d96b73ac5cf08fc920.js
-// Retrieved at 8/12/2021, 5:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.78dc471e26a3d5a8404a.js
+// Retrieved at 8/12/2021, 6:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -4992,7 +4992,7 @@
 				return a.a.createElement("div", {
 					className: Object(r.a)(t, b.a.metaContainer)
 				}, !n.isSponsored && h && a.a.createElement(o.a, {
-					className: Object(r.a)(b.a.hovercardContainer),
+					className: Object(r.a)(b.a.hovercardContainer, b.a.hovercardContainer),
 					postId: n.id,
 					subredditName: h.name
 				}, a.a.createElement(p.b, {
@@ -5880,16 +5880,16 @@
 				hk: "jdZLH"
 			}), l._("{search query}", [l._param("search query", e)], {
 				hk: "4vP3YT"
-			}), l._("” does it even exist?", null, {
-				hk: "2In6ot"
+			}), l._("”, does it even exist?", null, {
+				hk: "3Pa0q2"
 			})), a.a.createElement("p", {
 				className: d.a.text
 			}, l._("Looks like there aren’t any results for “", null, {
 				hk: "4zRIzA"
 			}), l._("{search query}", [l._param("search query", e)], {
 				hk: "4vP3YT"
-			}), l._("” Try double-checking your spelling or searching for a related topic", null, {
-				hk: "4dATmL"
+			}), l._("”. Try double-checking your spelling or searching for a related topic.", null, {
+				hk: "2wIbnh"
 			})))
 		},
 		"./src/reddit/components/SearchResultsContent/SearchResultsPostList.tsx": function(e, t, s) {
@@ -7618,7 +7618,8 @@
 					}, n.a.createElement(I.a, {
 						className: te.a.thumbnail,
 						post: H,
-						templatePlaceholderImage: re
+						templatePlaceholderImage: re,
+						usePreview: !0
 					}));
 					else if (ie)
 						if (ie.type !== D.o.RTJSON && ie.type !== D.o.TEXT) e = n.a.createElement("div", {
@@ -8141,8 +8142,8 @@
 				}, a.a.createElement("label", {
 					htmlFor: R,
 					className: Object(j.a)(L.a.searchNSFWToggleLabel)
-				}, r.fbt._("Safe search", null, {
-					hk: "pEL3K"
+				}, r.fbt._("Safe Search", null, {
+					hk: "x1C2Y"
 				})), a.a.createElement(N.a, {
 					activeColorOverride: _.a,
 					id: R,
@@ -8171,10 +8172,10 @@
 					visible: i.visible,
 					arrowProps: i.arrowProps,
 					popperProps: i.popperProps
-				}, p && r.fbt._("Turn off Safe Search to show adult and NSFW (Not Safe for Work) search results.", null, {
-					hk: "4soMR7"
-				}), !p && r.fbt._("Turn on Safe Search to hide adult and NSFW (Not Safe for Work) search results.", null, {
-					hk: "13g3Tt"
+				}, p && r.fbt._("Turn off safe search to hide adult and NSFW (Not Safe for Work) search results", null, {
+					hk: "EtfSo"
+				}), !p && r.fbt._("Turn on safe search to show adult and NSFW (Not Safe for Work) search results", null, {
+					hk: "evGo"
 				})))
 			}
 			var M = s("./src/reddit/components/SearchResultsNav/redesign.m.less"),
@@ -8205,8 +8206,8 @@
 						target: b.a.CommunitiesAndUsers,
 						key: "listings",
 						contentTypes: [i.Wb.Subreddits, i.Wb.Users].join(","),
-						text: r.fbt._("Communities and users", null, {
-							hk: "xcZ7c"
+						text: r.fbt._("Communities and People", null, {
+							hk: "1RJS0U"
 						})
 					}];
 				return a.a.createElement("div", {
@@ -8404,8 +8405,8 @@
 						to: Object(f.a)(i, k, [c.Wb.Subreddits, c.Wb.Users].join(","))
 					}, a.a.createElement("p", {
 						className: j.a.link
-					}, r.fbt._("See more communities and users", null, {
-						hk: "10t9Tz"
+					}, r.fbt._("See more communities and people", null, {
+						hk: "58fMF"
 					})))) : a.a.createElement("p", {
 						className: j.a.noResults
 					}, r.fbt._("No results", null, {
@@ -8820,7 +8821,7 @@
 						}) : u.fbt._("Posts From", null, {
 							hk: "1abcgn"
 						});
-						if (!e.searchOptions || e.searchOptions.sort === p.U.NEW) return null;
+						if (!e.searchOptions || e.searchOptions.sort === p.U.NEW || e.searchOptions.sort === p.U.HOT) return null;
 						const o = {
 							"data-testid": "search-results-filter-time",
 							options: t,
@@ -11217,4 +11218,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.02d96b73ac5cf08fc920.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.78dc471e26a3d5a8404a.js.map

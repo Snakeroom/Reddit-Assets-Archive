@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/removalReasonActions.350b37d4511451381651.js
-// Retrieved at 8/12/2021, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/removalReasonActions.39528ee438112d36e39f.js
+// Retrieved at 8/12/2021, 6:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["removalReasonActions"], {
 		"./src/lib/makeCommentPermalink/index.ts": function(e, t, n) {
@@ -3194,4 +3194,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.350b37d4511451381651.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.39528ee438112d36e39f.js.map

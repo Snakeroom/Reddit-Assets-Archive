@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PowerupsPremiumUpsellModal.378e65515d0944364318.js
-// Retrieved at 8/12/2021, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PowerupsPremiumUpsellModal.fa0f0b9faea2e109c83f.js
+// Retrieved at 8/12/2021, 6:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PowerupsPremiumUpsellModal"], {
 		"./src/reddit/actions/gold/productOfferPurchase.ts": function(e, t, r) {
@@ -1862,4 +1862,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsPremiumUpsellModal.378e65515d0944364318.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsPremiumUpsellModal.fa0f0b9faea2e109c83f.js.map
