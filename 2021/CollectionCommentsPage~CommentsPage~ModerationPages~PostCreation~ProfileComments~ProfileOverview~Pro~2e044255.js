@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.81265d5a6cbb1223513e.js
-// Retrieved at 8/12/2021, 11:10:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.6f358e0fd59be618c105.js
+// Retrieved at 8/12/2021, 2:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255"], {
 		"./src/lib/unicodeUtils/index.ts": function(e, t, s) {
@@ -803,11 +803,11 @@
 				H = () => n.fbt._("Pinned post", null, {
 					hk: "2oxErI"
 				}),
-				A = (e, t, s) => {
+				U = (e, t, s) => {
 					const n = `PostBadges--${e}--${t}`;
 					return s ? `${n}--${s}` : n
 				},
-				U = Object(b.t)({
+				A = Object(b.t)({
 					isProfilePostListing: b.I,
 					isSubreddit: b.K,
 					pageLayer: e => e
@@ -829,7 +829,7 @@
 						tooltipId: t
 					}))
 				}));
-			t.a = U(J(({
+			t.a = A(J(({
 				className: e,
 				displayText: t,
 				isSubreddit: s,
@@ -838,7 +838,7 @@
 				isPinned: b,
 				isProfilePostListing: P,
 				modModeEnabled: L,
-				onHideTooltip: U,
+				onHideTooltip: A,
 				onOpenRemovalReasonModal: W,
 				onShowTooltip: J,
 				post: V,
@@ -850,16 +850,16 @@
 					K = Object(i.e)(T.a),
 					q = V.isSponsored && (K === p.p.NoLockIcon || K === p.p.PromotedGrey),
 					Y = V.isRemoved && !V.modRemovalReason && !V.modNote && V.belongsTo.type === h.a.SUBREDDIT,
-					z = A("Approve", V.id, G),
-					Z = A("Archived", V.id, G),
-					Q = A("Automod", V.id, G),
-					$ = A("Lock", V.id, G),
-					ee = A("Mod", V.id, G),
-					te = A("Remove", V.id, G),
-					se = A("Report", V.id, G),
-					ne = A("Spam", V.id, G),
-					re = A("Sticky", V.id, G),
-					oe = A("Pinned", V.id, G),
+					z = U("Approve", V.id, G),
+					Z = U("Archived", V.id, G),
+					Q = U("Automod", V.id, G),
+					$ = U("Lock", V.id, G),
+					ee = U("Mod", V.id, G),
+					te = U("Remove", V.id, G),
+					se = U("Report", V.id, G),
+					ne = U("Spam", V.id, G),
+					re = U("Sticky", V.id, G),
+					oe = U("Pinned", V.id, G),
 					ie = V.bannedBy && Object(I.b)(V.bannedBy);
 				return o.a.createElement("div", {
 					className: e
@@ -876,7 +876,7 @@
 					desc: B(),
 					id: Z,
 					onMouseEnter: J(Z),
-					onMouseLeave: U
+					onMouseLeave: A
 				}), o.a.createElement(u.c, N({
 					tooltipId: Z,
 					text: B()
@@ -886,7 +886,7 @@
 					desc: R(),
 					id: $,
 					onMouseEnter: J($),
-					onMouseLeave: U
+					onMouseLeave: A
 				}), o.a.createElement(u.c, N({
 					tooltipId: $,
 					text: R()
@@ -896,7 +896,7 @@
 					desc: F(),
 					id: re,
 					onMouseEnter: J(re),
-					onMouseLeave: U
+					onMouseLeave: A
 				}), o.a.createElement(u.c, N({
 					tooltipId: re,
 					text: F()
@@ -906,7 +906,7 @@
 					desc: H(),
 					id: oe,
 					onMouseEnter: J(oe),
-					onMouseLeave: U
+					onMouseLeave: A
 				}), o.a.createElement(u.c, N({
 					tooltipId: oe,
 					text: H()
@@ -916,7 +916,7 @@
 					desc: Object(f.a)(V),
 					id: z,
 					onMouseEnter: J(z),
-					onMouseLeave: U
+					onMouseLeave: A
 				}), o.a.createElement(u.c, N({
 					tooltipId: z,
 					text: Object(f.a)(V)
@@ -926,7 +926,7 @@
 					desc: Object(f.c)(V),
 					id: te,
 					onMouseEnter: J(te),
-					onMouseLeave: U
+					onMouseLeave: A
 				}), Y && o.a.createElement(m.a, {
 					className: w.a.addRemovalReason,
 					onClick: W,
@@ -935,7 +935,7 @@
 					})
 				}), (V.modRemovalReason || V.modNote) && o.a.createElement(M, {
 					onMouseEnter: J(te),
-					onMouseLeave: U
+					onMouseLeave: A
 				}, n.fbt._("Removal reason", null, {
 					hk: "2DhKVZ"
 				})), o.a.createElement(u.c, N({
@@ -947,7 +947,7 @@
 					desc: Object(f.e)(V),
 					id: ne,
 					onMouseEnter: J(ne),
-					onMouseLeave: U
+					onMouseLeave: A
 				}), o.a.createElement(u.c, N({
 					tooltipId: ne,
 					text: Object(f.e)(V)
@@ -968,7 +968,7 @@
 					desc: Object(f.d)(V.numReports),
 					id: se,
 					onMouseEnter: J(se),
-					onMouseLeave: U
+					onMouseLeave: A
 				}), o.a.createElement(u.c, N({
 					tooltipId: se,
 					text: Object(f.d)(V.numReports)
@@ -1810,9 +1810,9 @@
 			})), s.d(t, "g", (function() {
 				return H
 			})), s.d(t, "i", (function() {
-				return A
-			})), s.d(t, "e", (function() {
 				return U
+			})), s.d(t, "e", (function() {
+				return A
 			}));
 			var n = s("./src/lib/unicodeUtils/index.ts"),
 				r = s("./node_modules/lodash/reduce.js"),
@@ -1917,7 +1917,7 @@
 						i = n.length;
 					for (let a = 0; a < i; a++) {
 						const e = n[a];
-						o.push(e.e === p.w ? e.t : U(e, t, a))
+						o.push(e.e === p.w ? e.t : A(e, t, a))
 					}
 					const d = c.x[r - 1];
 					return a.a.createElement(d, {
@@ -1995,7 +1995,7 @@
 							} = e;
 						l.push(a.a.createElement(n, {
 							key: c
-						}, A(i, t, s))), m[c] = r
+						}, U(i, t, s))), m[c] = r
 					}
 					for (let p = 0; p < i; p++) {
 						const e = r[p],
@@ -2008,7 +2008,7 @@
 								} = e[r];
 							o.push(a.a.createElement(n, {
 								key: r
-							}, A(i, t, s)))
+							}, U(i, t, s)))
 						}
 						u.push(a.a.createElement(c.t, {
 							key: p
@@ -2025,9 +2025,9 @@
 					const r = e.c[0];
 					return r.e !== p.m && r.e !== p.a || !Object(P.f)(r.id) ? a.a.createElement(c.j, {
 						key: n
-					}, A(e.c, t, s)) : Object(j.b)(r, n, t)
+					}, U(e.c, t, s)) : Object(j.b)(r, n, t)
 				},
-				A = (e, t, s) => {
+				U = (e, t, s) => {
 					const n = [],
 						r = e.length;
 					for (let o = 0; o < r; o++) {
@@ -2035,7 +2035,7 @@
 						if (r.e === p.A) n.push(W(r, o));
 						else if (r.e === p.x) n.push(a.a.createElement(S.a, {
 							key: o
-						}, A(r.c, t, s)));
+						}, U(r.c, t, s)));
 						else if (r.e === p.n) n.push(a.a.createElement("br", {
 							key: o
 						}));
@@ -2048,11 +2048,11 @@
 									media: e
 								}))
 							}
-						} else n.push(U(r, s, o))
+						} else n.push(A(r, s, o))
 					}
 					return n
 				},
-				U = (e, t, s) => {
+				A = (e, t, s) => {
 					switch (e.e) {
 						case p.o:
 							const n = W({
@@ -2345,12 +2345,12 @@
 						rtJsonElementProps: o
 					});
 					switch (n) {
-						case b.Sd.SmIcon:
+						case b.Ud.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: o
 							});
-						case b.Sd.SmIconHc:
+						case b.Ud.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -2943,12 +2943,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: n.Kd
+						experimentName: n.Md
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === n.Sd.SmIcon || t === n.Sd.SmIconHc
+					return t === n.Ud.SmIcon || t === n.Ud.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -2971,4 +2971,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.81265d5a6cbb1223513e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.6f358e0fd59be618c105.js.map

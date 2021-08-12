@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.3f805223c25a04208acb.js
-// Retrieved at 8/12/2021, 11:10:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.ac332ebb9ff7026923f7.js
+// Retrieved at 8/12/2021, 2:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -22311,11 +22311,11 @@
 					experimentName: $.D,
 					experimentEligibilitySelector: te.e
 				}), se.a),
-				ae = Object(d.a)(ne, e => e === $.K.Optional),
-				oe = Object(d.a)(ne, e => e === $.K.Remove);
+				ae = Object(d.a)(ne, e => e === $.M.Optional),
+				oe = Object(d.a)(ne, e => e === $.M.Remove);
 			var re = s("./src/reddit/selectors/experiments/emailInvite.ts");
 			const ie = Object(d.a)(e => Object(ee.c)(e, {
-				experimentName: $.jb,
+				experimentName: $.lb,
 				experimentEligibilitySelector: te.e
 			}), se.a);
 			var de = s("./src/reddit/selectors/subreddit.ts"),
@@ -22743,9 +22743,9 @@
 			const o = e => {
 				const t = Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: n.gc
+					experimentName: n.ic
 				});
-				return !(!t || Object(n.ie)(t))
+				return !(!t || Object(n.ke)(t))
 			}
 		},
 		"./src/reddit/selectors/showPromotedCTA.ts": function(e, t, s) {
@@ -22758,9 +22758,9 @@
 				o = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				r = s("./src/reddit/selectors/posts.ts");
 			const i = Object(n.a)(e => Object(o.c)(e, {
-				experimentName: a.gd,
+				experimentName: a.id,
 				experimentEligibilitySelector: o.a
-			}), r.H, (e, t) => e === a.qd.Enabled && (null == t ? void 0 : t.isCreatedFromAdsUi) || (null == t ? void 0 : t.isSponsored))
+			}), r.H, (e, t) => e === a.sd.Enabled && (null == t ? void 0 : t.isCreatedFromAdsUi) || (null == t ? void 0 : t.isSponsored))
 		},
 		"./src/reddit/selectors/streamingModSettings.ts": function(e, t, s) {
 			"use strict";
@@ -22887,4 +22887,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.3f805223c25a04208acb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.ac332ebb9ff7026923f7.js.map

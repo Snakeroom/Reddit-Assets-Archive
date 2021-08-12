@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditTopContent.23241043f0af21e17d0a.js
-// Retrieved at 8/12/2021, 11:10:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditTopContent.0b868c2495c936c5b3f2.js
+// Retrieved at 8/12/2021, 2:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditTopContent"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -465,8 +465,8 @@
 				},
 				M = s("./src/reddit/components/JSAPIContainers/index.tsx"),
 				A = s("./src/reddit/components/Media/index.tsx"),
-				U = s("./src/reddit/components/MiniCardPost/MetaLine/index.tsx"),
-				V = s("./src/reddit/components/MiniCardPost/Thumbnail/index.tsx"),
+				V = s("./src/reddit/components/MiniCardPost/MetaLine/index.tsx"),
+				U = s("./src/reddit/components/MiniCardPost/Thumbnail/index.tsx"),
 				W = s("./src/reddit/components/PostBackgroundWrapper/index.tsx"),
 				F = s("./src/reddit/components/PostContainer/index.tsx"),
 				R = s("./src/reddit/components/PostTitle/index.tsx"),
@@ -570,7 +570,7 @@
 						post: p,
 						size: R.b.Large,
 						titleColor: o && o.postTitleColor
-					}), y && k && r.a.createElement(U.a, {
+					}), y && k && r.a.createElement(V.a, {
 						className: ee.a.metaLine,
 						crosspostSubredditOrProfile: a,
 						hideNSFWPref: d,
@@ -580,7 +580,7 @@
 						className: ee.a.flexSpacer
 					}), O && r.a.createElement("div", {
 						className: ee.a.mediaWrapper
-					}, r.a.createElement(V.a, {
+					}, r.a.createElement(U.a, {
 						className: ee.a.thumbnailWrapper,
 						thumbnailClassName: ee.a.thumbnail,
 						thumbnailContainerClassName: ee.a.thumbnailContainer,
@@ -941,9 +941,9 @@
 				g = s("./src/reddit/constants/experiments.ts"),
 				f = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				C = s("./src/reddit/selectors/user.ts");
-			const y = e => Object(C.G)(e) || g.Td.ShowTopContent === Object(f.c)(e, {
+			const y = e => Object(C.G)(e) || g.Vd.ShowTopContent === Object(f.c)(e, {
 				experimentEligibilitySelector: f.a,
-				experimentName: g.Ld
+				experimentName: g.Nd
 			});
 			var E = s("./src/reddit/selectors/subreddit.ts"),
 				k = s("./src/reddit/components/DiscoveryUnit/SubredditTopContentDiscoveryUnit/index.m.less"),
@@ -1368,8 +1368,8 @@
 				D = s("./src/reddit/components/SEOTitle/index.tsx"),
 				M = s("./src/reddit/selectors/user.ts"),
 				A = s("./src/reddit/components/PostTitle/index.m.less"),
-				U = s.n(A),
-				V = s("./src/config.ts"),
+				V = s.n(A),
+				U = s("./src/config.ts"),
 				W = s("./src/reddit/hooks/useClickSourceData.ts"),
 				F = s("./src/reddit/hooks/useExperimentVariant.ts"),
 				R = s("./src/reddit/hooks/usePostContext.ts"),
@@ -1400,23 +1400,23 @@
 					let l = "";
 					switch (e) {
 						case I.ExtraLarge:
-							l = U.a.ExtraLarge;
+							l = V.a.ExtraLarge;
 							break;
 						case I.Large:
-							l = U.a.Large;
+							l = V.a.Large;
 							break;
 						case I.Medium:
-							l = U.a.Medium;
+							l = V.a.Medium;
 							break;
 						case I.Small:
-							l = U.a.Small;
+							l = V.a.Small;
 							break;
 						case I.ExtraSmall:
-							l = U.a.ExtraSmall
+							l = V.a.ExtraSmall
 					}
 					return r.a.createElement("div", {
-						className: Object(d.a)(U.a.Title, i, l, {
-							[U.a.isNoWrap]: n
+						className: Object(d.a)(V.a.Title, i, l, {
+							[V.a.isNoWrap]: n
 						}),
 						style: {
 							"--posttitletextcolor": t || Object(_.a)({
@@ -1435,8 +1435,8 @@
 					children: n,
 					...a
 				}) => r.a.createElement(o.a, Q({}, a, {
-					className: Object(d.a)(e, U.a.styledLink, {
-						[U.a.isVisitedEnabled]: !t
+					className: Object(d.a)(e, V.a.styledLink, {
+						[V.a.isVisitedEnabled]: !t
 					})
 				}), n),
 				G = ({
@@ -1445,9 +1445,9 @@
 					className: s,
 					children: n
 				}) => r.a.createElement("div", {
-					className: Object(d.a)(U.a.titleContainer, s, {
-						[U.a.isNoWrap]: t,
-						[U.a.isVisitedEnabled]: !e
+					className: Object(d.a)(V.a.titleContainer, s, {
+						[V.a.isNoWrap]: t,
+						[V.a.isVisitedEnabled]: !e
 					})
 				}, n),
 				K = Object(c.c)({
@@ -1464,7 +1464,7 @@
 						subreddit: s
 					} = e, {
 						isSponsored: n
-					} = t, a = Object(W.a)(), i = Object(F.a)(u.qc) === u.uc.Enabled;
+					} = t, a = Object(W.a)(), i = Object(F.a)(u.sc) === u.wc.Enabled;
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return r.a.createElement(G, {
 						nowrap: e.nowrap
 					}, r.a.createElement(Y, e));
@@ -1542,7 +1542,7 @@
 							sourceElement: a
 						}, Object(O.a)(s), !s.isSponsored && r.a.createElement(y.a, {
 							name: "external_link",
-							className: U.a.outboundLinkIcon
+							className: V.a.outboundLinkIcon
 						}))
 					} else if (s.source && !e.isCrosspost && e.size !== I.Large && e.size !== I.ExtraLarge) return r.a.createElement(h.a, {
 						className: e.outboundLinkClassName,
@@ -1553,7 +1553,7 @@
 						sourceElement: a
 					}, Object(O.a)(s), !s.isSponsored && r.a.createElement(y.a, {
 						name: "external_link",
-						className: U.a.outboundLinkIcon
+						className: V.a.outboundLinkIcon
 					}));
 					return null
 				};
@@ -1561,7 +1561,7 @@
 				getDynamicStyleTags() {
 					return r.a.createElement("style", {
 						dangerouslySetInnerHTML: {
-							__html: `\n        .${this.props.post.id} .${U.a.Component} {\n          --postTitle-VisitedLinkColor: ${Object(n.c)(.45,Object(_.a)(this.props).titleText,"#FFFFFF")};\n          --postTitleLink-VisitedLinkColor: ${Object(n.c)(.45,this.props.titleColor||Object(_.a)(this.props).titleText,Object(_.a)(this.props).body)};\n        }\n      `
+							__html: `\n        .${this.props.post.id} .${V.a.Component} {\n          --postTitle-VisitedLinkColor: ${Object(n.c)(.45,Object(_.a)(this.props).titleText,"#FFFFFF")};\n          --postTitleLink-VisitedLinkColor: ${Object(n.c)(.45,this.props.titleColor||Object(_.a)(this.props).titleText,Object(_.a)(this.props).body)};\n        }\n      `
 						}
 					})
 				}
@@ -1577,7 +1577,7 @@
 						showNSFWSpoilerFlairsOnly: c
 					} = this.props, l = s === E.b.Left, m = Object(v.b)(o), u = c ? m.filter(e => e.type === E.f.Nsfw || e.type === E.f.Spoiler) : l ? m.filter(e => Object(g.q)(e.type)) : [], p = c ? [] : l ? m.filter(e => !Object(g.q)(e.type)) : m, b = !a && !n, h = !t && u && u.length > 0 && b, x = !t && p && p.length > 0 && b;
 					return r.a.createElement("div", {
-						className: Object(d.a)(U.a.Component, e, o.id)
+						className: Object(d.a)(V.a.Component, e, o.id)
 					}, !c && h && r.a.createElement(v.a, {
 						isFlairFilter: !0,
 						titleFlair: u,
@@ -1588,7 +1588,7 @@
 					}), r.a.createElement(Z, Q({}, this.props, {
 						leftFlair: c ? u : void 0
 					})), i && r.a.createElement(T, {
-						className: U.a.pollMeta,
+						className: V.a.pollMeta,
 						pollId: i.id
 					}), r.a.createElement(J, this.props), x && r.a.createElement(v.a, {
 						isFlairFilter: !0,
@@ -1598,9 +1598,9 @@
 						sendEvent: this.props.sendEvent,
 						showCategoryTag: !1
 					}), r.a.createElement("div", {
-						className: U.a.postTitleVisibility,
+						className: V.a.postTitleVisibility,
 						dangerouslySetInnerHTML: {
-							__html: `\n              <img alt="" src="${V.a.assetPath}/img/renderTimingPixel.png" style="width: 1px; height: 1px;" onLoad="(__markFirstPostVisible || function(){})();" />\n            `
+							__html: `\n              <img alt="" src="${U.a.assetPath}/img/renderTimingPixel.png" style="width: 1px; height: 1px;" onLoad="(__markFirstPostVisible || function(){})();" />\n            `
 						}
 					}), this.getDynamicStyleTags())
 				}
@@ -2011,4 +2011,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.23241043f0af21e17d0a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.0b868c2495c936c5b3f2.js.map
