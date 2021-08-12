@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.ffa4e34d7472f6853e79.js
-// Retrieved at 8/11/2021, 2:30:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.ac50f282cadc273593c2.js
+// Retrieved at 8/12/2021, 11:10:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost", "Reddit~StandalonePostPage~reddit-components-MediumPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -741,7 +741,7 @@
 					let f = null;
 					if (b) f = b.id;
 					else if (Object(o.a)(n)) {
-						const e = Object(m.G)(a, {
+						const e = Object(m.H)(a, {
 							postId: n
 						});
 						e && (f = e.belongsTo.id)
@@ -1572,8 +1572,8 @@
 						first: G,
 						flairStyleTemplate: W,
 						formatTitle: Y,
-						hostPostData: q,
-						isCheckboxSelected: H,
+						hostPostData: H,
+						isCheckboxSelected: q,
 						isCurrentUserProfilePost: z,
 						isFrontpage: Q,
 						isGalleryTileLayoutDefault: K,
@@ -1640,7 +1640,7 @@
 							model: ie,
 							handleVote: w,
 							showBulkActionCheckbox: le,
-							isCheckboxSelected: H,
+							isCheckboxSelected: q,
 							toggleCheckbox: be,
 							flairStyleTemplate: ve,
 							redditStyle: ce,
@@ -1720,7 +1720,7 @@
 							hasModFlairPerms: Se,
 							hasModPostPerms: xe,
 							hasModFullPerms: ge,
-							hostPostData: q,
+							hostPostData: H,
 							isOverlay: !!Z,
 							modModeEnabled: ee,
 							onIgnoreReports: ne,
@@ -1883,9 +1883,9 @@
 						clearTimeout(D.current), clearTimeout(L.current), clearTimeout(N.current)
 					}
 				}, [t]);
-				const q = Object(s.useCallback)(() => j(!0), [j]),
-					H = 0 === C.length,
-					z = y || H,
+				const H = Object(s.useCallback)(() => j(!0), [j]),
+					q = 0 === C.length,
+					z = y || q,
 					Q = Object(s.useRef)(((e, t) => `${t}_${e}_count_anim`)(h, n));
 				return r.a.createElement(r.a.Fragment, null, !f && r.a.createElement("div", {
 					className: m.a.countAnimation
@@ -1903,7 +1903,7 @@
 						"aria-hidden": !0,
 						className: m.a.digitDeltaWrapper,
 						key: t,
-						onTransitionEnd: q,
+						onTransitionEnd: H,
 						style: S && C.length > 0 && !y ? {
 							transform: `translateY(-${O&&n.length>1?100:100*(n.length-1)}%)`,
 							transitionDuration: `${(O?500:750)/1e3}s`
@@ -2998,7 +2998,7 @@
 			n.d(t, "b", (function() {
 				return A
 			})), n.d(t, "a", (function() {
-				return q
+				return H
 			}));
 			var s = n("./node_modules/polished/dist/polished.es.js"),
 				r = n("./node_modules/react/index.js"),
@@ -3071,7 +3071,7 @@
 			}! function(e) {
 				e[e.ExtraLarge = 0] = "ExtraLarge", e[e.Large = 1] = "Large", e[e.Medium = 2] = "Medium", e[e.Small = 3] = "Small", e[e.ExtraSmall = 4] = "ExtraSmall"
 			}(A || (A = {}));
-			const q = ({
+			const H = ({
 					size: e,
 					titleColor: t,
 					titleType: n,
@@ -3112,7 +3112,7 @@
 						type: n
 					}, r) : r)
 				},
-				H = ({
+				q = ({
 					className: e,
 					disableVisited: t,
 					titleColor: n,
@@ -3173,7 +3173,7 @@
 								postId: e.id,
 								source: n
 							}, o.a.createElement(X, t)) : o.a.createElement(X, t)
-						})(t, e) : o.a.createElement(H, {
+						})(t, e) : o.a.createElement(q, {
 							className: e.titleLinkClassName,
 							"data-click-id": "body",
 							disableVisited: e.disableVisited,
@@ -3194,7 +3194,7 @@
 						return e.length >= 250 ? e.slice(0, 250 - "...".length) + "..." : e
 					})(r));
 					const i = e.isCommentsPage ? R.a.PostComments : R.a.PostItem;
-					return o.a.createElement(q, {
+					return o.a.createElement(H, {
 						className: e.titleClassName,
 						nowrap: e.nowrap,
 						redditStyle: e.redditStyle || e.isCommentsPage,
@@ -6628,7 +6628,7 @@
 				}) => {
 					const r = Object(d.c)(e),
 						i = l.find(e => e >= n),
-						c = s ? Object(a.G)(e, {
+						c = s ? Object(a.H)(e, {
 							postId: s
 						}) || Object(o.a)(e, {
 							commentId: s
@@ -6855,7 +6855,7 @@
 			const a = Object(s.a)(e => Object(o.c)(e, {
 				experimentName: r.gd,
 				experimentEligibilitySelector: o.a
-			}), i.G, (e, t) => e === r.qd.Enabled && (null == t ? void 0 : t.isCreatedFromAdsUi) || (null == t ? void 0 : t.isSponsored))
+			}), i.H, (e, t) => e === r.qd.Enabled && (null == t ? void 0 : t.isCreatedFromAdsUi) || (null == t ? void 0 : t.isSponsored))
 		},
 		"./src/reddit/selectors/userFlair.ts": function(e, t, n) {
 			"use strict";
@@ -6998,4 +6998,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.ffa4e34d7472f6853e79.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.ac50f282cadc273593c2.js.map

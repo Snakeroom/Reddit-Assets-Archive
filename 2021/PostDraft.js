@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostDraft.df4ce3fbbab582980120.js
-// Retrieved at 8/11/2021, 2:30:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostDraft.d72b7f34e16f7a83e00d.js
+// Retrieved at 8/12/2021, 11:10:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostDraft"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -468,7 +468,7 @@
 				}) => {
 					if ((await E(i(), e, t)).ok) {
 						const i = r(),
-							a = Object(S.G)(i, {
+							a = Object(S.H)(i, {
 								postId: t
 							}),
 							c = a && a.title || "",
@@ -485,7 +485,7 @@
 									collectionId: e
 								}),
 								s = n && n.postIds && n.postIds[u] || "",
-								i = Object(S.G)(t, {
+								i = Object(S.H)(t, {
 									postId: s
 								});
 							i && i.permalink && o(Object(w.a)(i.permalink))
@@ -518,7 +518,7 @@
 							collectionId: e,
 							postId: t
 						}));
-						const o = Object(S.G)(i, {
+						const o = Object(S.H)(i, {
 								postId: t
 							}),
 							r = Object(O.q)(i, {
@@ -981,10 +981,10 @@
 						style: t
 					}, e.children)
 				},
-				P = Object(i.b)(() => Object(d.a)(_.F, y.bb, (e, {
+				P = Object(i.b)(() => Object(d.a)(_.G, y.bb, (e, {
 					isSponsored: t,
 					postId: n
-				}) => t && n ? Object(_.b)(e, n) : null, E.a, v.actionInfo, _.G, (e, t, n, s, o, r) => ({
+				}) => t && n ? Object(_.b)(e, n) : null, E.a, v.actionInfo, _.H, (e, t, n, s, o, r) => ({
 					postPermalink: e,
 					shouldOpenPostInNewTab: t,
 					basePixelMetadata: n,
@@ -3268,7 +3268,7 @@
 				fbt: O
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), S = ["right", "bottom"], I = ["right", "top"];
 			var T = Object(a.b)(() => Object(d.c)({
-					post: x.G
+					post: x.H
 				}), (e, t) => ({
 					onRemovePostFromCollection: () => e(Object(f.g)(t.collectionId, t.postId))
 				}))(e => {
@@ -4727,4 +4727,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.df4ce3fbbab582980120.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.d72b7f34e16f7a83e00d.js.map

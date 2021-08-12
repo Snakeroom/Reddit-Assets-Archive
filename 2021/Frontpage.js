@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.7dc38c16ea60f534114d.js
-// Retrieved at 8/11/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.58656d57f23c73e21fcb.js
+// Retrieved at 8/12/2021, 11:10:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -1508,7 +1508,7 @@
 			var xe = fe(_e),
 				ve = n("./src/reddit/selectors/posts.ts");
 			const ke = Object(u.c)({
-				recentPosts: ve.P
+				recentPosts: ve.Q
 			});
 			var Ee = Object(d.b)(ke, (e, t) => ({
 					openLightbox: t => () => e(Object(pe.a)(t.permalink))
@@ -2031,7 +2031,7 @@
 				h = n("./src/reddit/selectors/subreddit.ts"),
 				g = n("./src/reddit/components/MiniPost/index.m.less"),
 				f = n.n(g);
-			const y = Object(a.a)(e => e, b.G, b.d, (e, t, n) => {
+			const y = Object(a.a)(e => e, b.H, b.d, (e, t, n) => {
 					return {
 						crosspost: n,
 						post: t,
@@ -2727,7 +2727,7 @@
 				d = n("./src/reddit/selectors/platform.ts"),
 				l = n("./src/reddit/selectors/posts.ts");
 			const u = Object(i.c)({
-					postCount: l.L,
+					postCount: l.M,
 					previousPageIsOverlay: d.n,
 					tabBadged: e => e.tabBadged
 				}),
@@ -4880,4 +4880,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.7dc38c16ea60f534114d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.58656d57f23c73e21fcb.js.map

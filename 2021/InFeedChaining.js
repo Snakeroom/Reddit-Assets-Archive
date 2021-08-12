@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InFeedChaining.460d24f19ae3beafdb95.js
-// Retrieved at 8/11/2021, 2:30:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InFeedChaining.d73f1892a60e9b1d29e4.js
+// Retrieved at 8/12/2021, 11:10:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InFeedChaining"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1587,7 +1587,7 @@
 				D = Object(c.c)({
 					discoveryUnit: C.b,
 					postChain: C.f,
-					postSubreddit: O.T,
+					postSubreddit: O.U,
 					routeName: j.p,
 					subscribedProfiles: E.c,
 					subscribedSubreddits: E.d
@@ -2527,10 +2527,10 @@
 						style: t
 					}, e.children)
 				},
-				N = Object(o.b)(() => Object(c.a)(g.F, w.bb, (e, {
+				N = Object(o.b)(() => Object(c.a)(g.G, w.bb, (e, {
 					isSponsored: t,
 					postId: s
-				}) => t && s ? Object(g.b)(e, s) : null, y.a, _.actionInfo, g.G, (e, t, s, n, r, i) => ({
+				}) => t && s ? Object(g.b)(e, s) : null, y.a, _.actionInfo, g.H, (e, t, s, n, r, i) => ({
 					postPermalink: e,
 					shouldOpenPostInNewTab: t,
 					basePixelMetadata: s,
@@ -4928,4 +4928,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InFeedChaining.460d24f19ae3beafdb95.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InFeedChaining.d73f1892a60e9b1d29e4.js.map

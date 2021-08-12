@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.ea356059f259bb8bafd7.js
-// Retrieved at 8/11/2021, 2:30:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.7d1c4f5f083efd9058ea.js
+// Retrieved at 8/12/2021, 11:10:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~ChatPost"], {
 		"./node_modules/lodash/_baseReduce.js": function(e, t) {
@@ -385,10 +385,10 @@
 						style: t
 					}, e.children)
 				},
-				N = Object(a.b)(() => Object(c.a)(_.F, j.bb, (e, {
+				N = Object(a.b)(() => Object(c.a)(_.G, j.bb, (e, {
 					isSponsored: t,
 					postId: s
-				}) => t && s ? Object(_.b)(e, s) : null, E.a, C.actionInfo, _.G, (e, t, s, n, r, o) => ({
+				}) => t && s ? Object(_.b)(e, s) : null, E.a, C.actionInfo, _.H, (e, t, s, n, r, o) => ({
 					postPermalink: e,
 					shouldOpenPostInNewTab: t,
 					basePixelMetadata: s,
@@ -2327,4 +2327,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.ea356059f259bb8bafd7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.7d1c4f5f083efd9058ea.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.343bc6e1f9414e15e36d.js
-// Retrieved at 8/11/2021, 2:30:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.b4b35dcd6c1fb9bbefe4.js
+// Retrieved at 8/12/2021, 11:10:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CompactPost", "Reddit~StandalonePostPage~reddit-components-MediumPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -741,7 +741,7 @@
 					let f = null;
 					if (b) f = b.id;
 					else if (Object(o.a)(n)) {
-						const e = Object(m.G)(a, {
+						const e = Object(m.H)(a, {
 							postId: n
 						});
 						e && (f = e.belongsTo.id)
@@ -6676,7 +6676,7 @@
 				}) => {
 					const r = Object(d.c)(e),
 						i = l.find(e => e >= n),
-						c = s ? Object(a.G)(e, {
+						c = s ? Object(a.H)(e, {
 							postId: s
 						}) || Object(o.a)(e, {
 							commentId: s
@@ -6903,7 +6903,7 @@
 			const a = Object(s.a)(e => Object(o.c)(e, {
 				experimentName: r.gd,
 				experimentEligibilitySelector: o.a
-			}), i.G, (e, t) => e === r.qd.Enabled && (null == t ? void 0 : t.isCreatedFromAdsUi) || (null == t ? void 0 : t.isSponsored))
+			}), i.H, (e, t) => e === r.qd.Enabled && (null == t ? void 0 : t.isCreatedFromAdsUi) || (null == t ? void 0 : t.isSponsored))
 		},
 		"./src/reddit/selectors/userFlair.ts": function(e, t, n) {
 			"use strict";
@@ -7046,4 +7046,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.343bc6e1f9414e15e36d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.b4b35dcd6c1fb9bbefe4.js.map

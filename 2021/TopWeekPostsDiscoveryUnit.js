@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.f2f7934e4fa2e4739a8a.js
-// Retrieved at 8/11/2021, 2:30:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.2e9414e367bf17a017a6.js
+// Retrieved at 8/12/2021, 11:10:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["TopWeekPostsDiscoveryUnit"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -1232,7 +1232,7 @@
 			}
 			const {
 				fbt: C
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), y = [], E = () => {}, v = () => void 0, O = c.a.button("CloseButton", f.a), P = Object(i.a)(p.z, e => e.filter(e => 9 === e.length)), k = Object(i.c)({
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), y = [], E = () => {}, v = () => void 0, O = c.a.button("CloseButton", f.a), P = Object(i.a)(p.A, e => e.filter(e => 9 === e.length)), k = Object(i.c)({
 				discoveryUnit: e => Object(u.c)(e, {
 					unitName: m.l
 				}),
@@ -2411,4 +2411,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.f2f7934e4fa2e4739a8a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.2e9414e367bf17a017a6.js.map

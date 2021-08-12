@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-ChangePredictionOutcomeModal.36581c59104169583d18.js
-// Retrieved at 8/11/2021, 5:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-ChangePredictionOutcomeModal.7e1210decbf138bfd857.js
+// Retrieved at 8/12/2021, 11:10:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction-ChangePredictionOutcomeModal"], {
 		"./node_modules/uuid/index.js": function(t, e, n) {
@@ -62,9 +62,9 @@
 			})), n.d(e, "k", (function() {
 				return M
 			})), n.d(e, "g", (function() {
-				return J
-			})), n.d(e, "h", (function() {
 				return R
+			})), n.d(e, "h", (function() {
+				return J
 			})), n.d(e, "n", (function() {
 				return B
 			})), n.d(e, "c", (function() {
@@ -281,7 +281,7 @@
 						} = r.body.data;
 					if (!i.tournament) throw new Error("Failed to update prediction name");
 					return e(A(i.tournament)), i.tournament
-				}, J = t => async (e, n, {
+				}, R = t => async (e, n, {
 					gqlContext: o
 				}) => {
 					const r = await Object(p.h)(o(), {
@@ -293,7 +293,7 @@
 					} = r.body.data;
 					if (!i.predictionChipPackages) throw new Error("Failed to fetch prediction chip packages");
 					return i.predictionChipPackages
-				}, R = t => async (e, n, {
+				}, J = t => async (e, n, {
 					gqlContext: o
 				}) => {
 					const r = await Object(p.i)(o(), {
@@ -530,7 +530,7 @@
 					var t, e;
 					const n = Object(c.d)(),
 						o = Object(f.a)(),
-						r = Object(c.e)(h.Q),
+						r = Object(c.e)(h.R),
 						i = () => n(Object(u.g)(p.a.ECON_PREDICTIONS_CHANGE_OUTCOME));
 					return d.a.createElement(C, {
 						withOverlay: !0,
@@ -879,4 +879,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-ChangePredictionOutcomeModal.36581c59104169583d18.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-ChangePredictionOutcomeModal.7e1210decbf138bfd857.js.map

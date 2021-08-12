@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.fe8cce6b7fb6be2f7a43.js
-// Retrieved at 8/11/2021, 2:30:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.1448f63c840f045de7e5.js
+// Retrieved at 8/12/2021, 11:10:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -2489,10 +2489,10 @@
 						style: t
 					}, e.children)
 				},
-				M = Object(i.b)(() => Object(d.a)(C.F, y.bb, (e, {
+				M = Object(i.b)(() => Object(d.a)(C.G, y.bb, (e, {
 					isSponsored: t,
 					postId: s
-				}) => t && s ? Object(C.b)(e, s) : null, v.a, E.actionInfo, C.G, (e, t, s, n, r, o) => ({
+				}) => t && s ? Object(C.b)(e, s) : null, v.a, E.actionInfo, C.H, (e, t, s, n, r, o) => ({
 					postPermalink: e,
 					shouldOpenPostInNewTab: t,
 					basePixelMetadata: s,
@@ -6288,4 +6288,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.fe8cce6b7fb6be2f7a43.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.1448f63c840f045de7e5.js.map

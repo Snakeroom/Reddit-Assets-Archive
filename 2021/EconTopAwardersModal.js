@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.a69f07d7bcd539123149.js
-// Retrieved at 8/11/2021, 2:30:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.1f48a36499a96fe0c246.js
+// Retrieved at 8/12/2021, 11:10:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconTopAwardersModal"], {
 		"./src/reddit/actions/inContextModeration.ts": function(e, t, r) {
@@ -212,12 +212,12 @@
 							return e
 					}
 				},
-				G = Object(y.c)({
+				q = Object(y.c)({
 					api: z,
 					result: Z
 				});
-			const q = {};
-			var Y = (e = q, t) => {
+			const G = {};
+			var Y = (e = G, t) => {
 					switch (t.type) {
 						case j.n: {
 							const {
@@ -260,7 +260,7 @@
 					inContext: T,
 					loadMore: L,
 					models: R,
-					search: G,
+					search: q,
 					userOrder: Y
 				});
 			Object(O.a)({
@@ -729,7 +729,7 @@
 				K = r("./src/reddit/icons/svgs/CoinV2/index.tsx"),
 				z = r("./src/reddit/components/Econ/TopAwardersModal/Winners/Winner/index.m.less"),
 				Z = r.n(z);
-			var G = function(e) {
+			var q = function(e) {
 					const {
 						showScore: t,
 						awarder: r,
@@ -764,8 +764,8 @@
 						className: Z.a.coinIcon
 					}), r.score))
 				},
-				q = r("./src/reddit/components/Econ/TopAwardersModal/Winners/index.m.less"),
-				Y = r.n(q);
+				G = r("./src/reddit/components/Econ/TopAwardersModal/Winners/index.m.less"),
+				Y = r.n(G);
 			var J = function(e) {
 					const {
 						awarders: t,
@@ -778,7 +778,7 @@
 						className: Object(i.a)(r, Y.a.container, {
 							[Y.a.flexContainer]: n.length < 3
 						})
-					}, n.map((e, t) => s.a.createElement(G, {
+					}, n.map((e, t) => s.a.createElement(q, {
 						showScore: a,
 						className: Y.a.winner,
 						awarder: e,
@@ -811,7 +811,7 @@
 					pending: a,
 					post: null
 				};
-				const n = Object(x.G)(e, {
+				const n = Object(x.H)(e, {
 						postId: t
 					}),
 					o = Object(h.b)(e, t),
@@ -1091,15 +1091,15 @@
 				K = r("./src/reddit/constants/modals.ts"),
 				z = r("./src/reddit/components/Hovercards/helpers.ts"),
 				Z = r("./src/reddit/icons/fonts/index.tsx"),
-				G = r("./src/reddit/models/ModeratingSubreddits/index.ts"),
-				q = r("./src/reddit/selectors/bannedUser.ts"),
+				q = r("./src/reddit/models/ModeratingSubreddits/index.ts"),
+				G = r("./src/reddit/selectors/bannedUser.ts"),
 				Y = r("./src/reddit/components/Hovercards/AuthorHovercard/ModActions.m.less"),
 				J = r.n(Y);
 			const {
 				fbt: Q
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), X = Object(o.c)({
-				hasModMailPermissions: Object(m.b)(G.c.mail),
-				isUserBanned: (e, t) => !!Object(q.b)(e, {
+				hasModMailPermissions: Object(m.b)(q.c.mail),
+				isUserBanned: (e, t) => !!Object(G.b)(e, {
 					subredditId: t.subredditId,
 					username: t.username
 				}),
@@ -2702,4 +2702,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.a69f07d7bcd539123149.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.1f48a36499a96fe0c246.js.map

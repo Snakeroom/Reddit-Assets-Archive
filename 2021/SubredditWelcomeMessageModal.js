@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWelcomeMessageModal.7343839c75c981e22118.js
-// Retrieved at 8/10/2021, 6:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWelcomeMessageModal.adb73814298a86ecc838.js
+// Retrieved at 8/12/2021, 11:10:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWelcomeMessageModal"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -487,10 +487,10 @@
 						style: t
 					}, e.children)
 				},
-				M = Object(i.b)(() => Object(d.a)(E.F, y.bb, (e, {
+				M = Object(i.b)(() => Object(d.a)(E.G, y.bb, (e, {
 					isSponsored: t,
 					postId: s
-				}) => t && s ? Object(E.b)(e, s) : null, v.a, w.actionInfo, E.G, (e, t, s, n, r, o) => ({
+				}) => t && s ? Object(E.b)(e, s) : null, v.a, w.actionInfo, E.H, (e, t, s, n, r, o) => ({
 					postPermalink: e,
 					shouldOpenPostInNewTab: t,
 					basePixelMetadata: s,
@@ -1487,7 +1487,7 @@
 			})), s.d(t, "i", (function() {
 				return A
 			})), s.d(t, "e", (function() {
-				return F
+				return W
 			}));
 			var n = s("./src/lib/unicodeUtils/index.ts"),
 				r = s("./node_modules/lodash/reduce.js"),
@@ -1592,7 +1592,7 @@
 						i = n.length;
 					for (let a = 0; a < i; a++) {
 						const e = n[a];
-						o.push(e.e === p.w ? e.t : F(e, t, a))
+						o.push(e.e === p.w ? e.t : W(e, t, a))
 					}
 					const c = d.x[r - 1];
 					return a.a.createElement(c, {
@@ -1707,7 +1707,7 @@
 						r = e.length;
 					for (let o = 0; o < r; o++) {
 						const r = e[o];
-						if (r.e === p.A) n.push(W(r, o));
+						if (r.e === p.A) n.push(F(r, o));
 						else if (r.e === p.x) n.push(a.a.createElement(O.a, {
 							key: o
 						}, A(r.c, t, s)));
@@ -1723,14 +1723,14 @@
 									media: e
 								}))
 							}
-						} else n.push(F(r, s, o))
+						} else n.push(W(r, s, o))
 					}
 					return n
 				},
-				F = (e, t, s) => {
+				W = (e, t, s) => {
 					switch (e.e) {
 						case p.o:
-							const n = W({
+							const n = F({
 								t: e.t,
 								f: e.f
 							}, 0);
@@ -1770,7 +1770,7 @@
 							}, e.t)
 					}
 				},
-				W = (e, t) => {
+				F = (e, t) => {
 					const {
 						f: s,
 						t: r
@@ -2309,4 +2309,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWelcomeMessageModal.7343839c75c981e22118.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWelcomeMessageModal.adb73814298a86ecc838.js.map

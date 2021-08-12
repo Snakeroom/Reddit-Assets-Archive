@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.f880afbd742cf9b207a0.js
-// Retrieved at 8/11/2021, 2:30:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.0f00d495319f1350f2de.js
+// Retrieved at 8/12/2021, 11:10:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -606,8 +606,8 @@
 				R = s("./src/reddit/helpers/brandSafety/index.ts"),
 				F = s("./src/reddit/helpers/trackers/ads.ts"),
 				B = s("./src/lib/LRUCache/index.ts"),
-				M = s("./src/telemetry/index.ts"),
-				H = s("./src/telemetry/models/Timer.ts"),
+				H = s("./src/telemetry/index.ts"),
+				M = s("./src/telemetry/models/Timer.ts"),
 				A = s("./src/reddit/components/PostList/index.m.less"),
 				V = s.n(A);
 			const {
@@ -683,12 +683,12 @@
 					}), this.eventFactoryHandler = (e, t, s) => this.props.postClickEventFactory(e, t, s, this.props)
 				}
 				UNSAFE_componentWillMount() {
-					void 0 !== this.timerId && M.c.cancel(this.timerId), this.props.postIds.length && (this.timerId = M.c.start())
+					void 0 !== this.timerId && H.c.cancel(this.timerId), this.props.postIds.length && (this.timerId = H.c.start())
 				}
 				componentDidMount() {
 					if (this.checkAndSendScreenview(), this.viewportHeight = window.innerHeight, void 0 !== this.timerId) {
-						const e = M.c.end(this.timerId);
-						setTimeout(() => Object(M.b)(f.l.Redesign, {
+						const e = H.c.end(this.timerId);
+						setTimeout(() => Object(H.b)(f.l.Redesign, {
 							type: "mount",
 							component: "postList",
 							duration: e
@@ -696,14 +696,14 @@
 					}
 				}
 				UNSAFE_componentWillUpdate(e) {
-					void 0 !== this.timerId && M.c.cancel(this.timerId), e.postIds.length && (this.timerId = M.c.start()), (e.listingKey !== this.props.listingKey || e.postIds.length !== this.props.postIds.length && !this.isListLongEnough()) && (this.didRenderLastVisibleChild = !1)
+					void 0 !== this.timerId && H.c.cancel(this.timerId), e.postIds.length && (this.timerId = H.c.start()), (e.listingKey !== this.props.listingKey || e.postIds.length !== this.props.postIds.length && !this.isListLongEnough()) && (this.didRenderLastVisibleChild = !1)
 				}
 				componentDidUpdate(e) {
 					var t, s;
-					if (v.a.read(() => this.checkAndSendScreenview()), this.timerId && M.c.has(this.timerId)) {
-						const e = M.c.end(this.timerId);
+					if (v.a.read(() => this.checkAndSendScreenview()), this.timerId && H.c.has(this.timerId)) {
+						const e = H.c.end(this.timerId);
 						if (e < 10) return;
-						setTimeout(() => Object(M.b)(f.l.Redesign, {
+						setTimeout(() => Object(H.b)(f.l.Redesign, {
 							duration: e,
 							type: "mount",
 							component: "postList"
@@ -714,7 +714,7 @@
 					r && r !== (null === (s = e.postIds) || void 0 === s ? void 0 : s[0]) && this.props.onFirstPostChanged(r)
 				}
 				componentWillUnmount() {
-					this.timerId && M.c.cancel(this.timerId), this.scrollerRef = null, this.didRenderLastVisibleChild = !1
+					this.timerId && H.c.cancel(this.timerId), this.scrollerRef = null, this.didRenderLastVisibleChild = !1
 				}
 				isListLongEnough() {
 					const e = this.scrollerRef && Array.from(this.scrollerRef.children),
@@ -727,7 +727,7 @@
 						listingKey: t,
 						viewportDataLoaded: s
 					} = this.props;
-					return M.c.has(t) && (e || !this.renderingPlaceholder && (this.renderingEmpty || this.didRenderLastVisibleChild && (s || this.isListLongEnough())))
+					return H.c.has(t) && (e || !this.renderingPlaceholder && (this.renderingEmpty || this.didRenderLastVisibleChild && (s || this.isListLongEnough())))
 				}
 				checkAndSendScreenview() {
 					const {
@@ -736,9 +736,9 @@
 						sendEvent: s
 					} = this.props;
 					if (!this.shouldSendScreenview()) return;
-					const r = M.c.end(e);
+					const r = H.c.end(e);
 					setTimeout(() => {
-						s(t(r, H.TimerType.InApp))
+						s(t(r, M.TimerType.InApp))
 					}, 0)
 				}
 				showPlaceholder() {
@@ -833,9 +833,9 @@
 							layout: r,
 							post: F
 						});
-						let M = `post-list-item-[layout: ${r}]-[postId: ${e}]`;
-						this.props.listingBelowVariant && g && (M += `--${g}`);
-						const H = Y(e, r, s, g, v, _, this.props, t, this.props.hostPostData),
+						let H = `post-list-item-[layout: ${r}]-[postId: ${e}]`;
+						this.props.listingBelowVariant && g && (H += `--${g}`);
+						const M = Y(e, r, s, g, v, _, this.props, t, this.props.hostPostData),
 							A = Q(e, r, this.props, t, x),
 							V = Z(e, this.props, c),
 							W = F.media && F.media.type === k.o.EMBED ? F.media.provider : null,
@@ -845,7 +845,7 @@
 							estHeight: Object(N.c)(R, r),
 							id: e,
 							isFocusable: !(!F.media || !(r === O.g.Large || r === O.g.Classic && Object(k.G)(F.media))) && (k.d.has(F.media.type) && (!W || !k.s.has(W)) && !F.isSpoiler && !F.isNSFW),
-							trackOnEnteredViewport: H,
+							trackOnEnteredViewport: M,
 							trackOnExitedViewport: A,
 							render: ({
 								className: r,
@@ -857,7 +857,7 @@
 							}) => u.a.createElement(B, {
 								className: r,
 								currentProfileName: i,
-								key: M,
+								key: H,
 								availableWidth: m,
 								eventFactory: this.eventFactoryHandler,
 								first: L,
@@ -1511,7 +1511,7 @@
 			}).map((e, t) => i.a.createElement(N, {
 				className: k.a.Subreddit,
 				key: t
-			})), M = {
+			})), H = {
 				enabled: !0,
 				id: "xd_103",
 				layout: p.d.Large,
@@ -1520,10 +1520,10 @@
 				unitType: p.f.SubredditListing,
 				url: ""
 			};
-			class H extends i.a.Component {
+			class M extends i.a.Component {
 				constructor() {
 					super(...arguments), this.onSeeMoreCommunities = () => {
-						this.props.onSeeMoreCommunities && (this.props.sendEvent(Object(u.G)(M)), this.props.onSeeMoreCommunities())
+						this.props.onSeeMoreCommunities && (this.props.sendEvent(Object(u.G)(H)), this.props.onSeeMoreCommunities())
 					}
 				}
 				render() {
@@ -1544,7 +1544,7 @@
 						className: k.a.SubredditList
 					}, r.length > 0 ? r.map(e => i.a.createElement(I, {
 						className: k.a.Subreddit,
-						discoveryUnit: M,
+						discoveryUnit: H,
 						key: e,
 						subredditId: e
 					})) : B), t.length > F && i.a.createElement(n.a, {
@@ -1557,7 +1557,7 @@
 					}))))
 				}
 			}
-			t.a = Object(d.c)(H)
+			t.a = Object(d.c)(M)
 		},
 		"./src/reddit/components/TopicSidebar/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -1642,7 +1642,7 @@
 								subredditId: s
 							})
 						}
-						return Object(y.R)(e, {
+						return Object(y.S)(e, {
 							...t
 						})
 					},
@@ -1658,7 +1658,7 @@
 								subredditId: t
 							})
 						}
-						return Object(y.D)(e, t, s, i)
+						return Object(y.E)(e, t, s, i)
 					}),
 					subredditsById: E.ab,
 					viewportDataLoaded: T.a,
@@ -2038,8 +2038,8 @@
 				}
 			}
 			var B = F,
-				M = s("./src/reddit/pages/Topic/TopicHeader/index.m.less"),
-				H = s.n(M);
+				H = s("./src/reddit/pages/Topic/TopicHeader/index.m.less"),
+				M = s.n(H);
 
 			function A() {
 				return (A = Object.assign || function(e) {
@@ -2063,14 +2063,14 @@
 						parentRelatedTopics: e
 					} = this.props;
 					return e.length ? i.a.createElement("ul", {
-						className: H.a.parentRelatedTopics
+						className: M.a.parentRelatedTopics
 					}, e.map(({
 						namePlural: e,
 						url: t
 					}, s) => i.a.createElement("li", {
 						key: s
 					}, i.a.createElement(p.a, {
-						className: H.a.link,
+						className: M.a.link,
 						to: t
 					}, e)))) : V._("Topic on Reddit", null, {
 						hk: "3gTFev"
@@ -2090,19 +2090,19 @@
 						tabs: n
 					};
 					return i.a.createElement("div", {
-						className: Object(o.a)(H.a.Container, t)
+						className: Object(o.a)(M.a.Container, t)
 					}, i.a.createElement("div", {
-						className: Object(o.a)(H.a.Content, s === L.g.Large ? H.a.cardWidth : H.a.fullWidth)
+						className: Object(o.a)(M.a.Content, s === L.g.Large ? M.a.cardWidth : M.a.fullWidth)
 					}, i.a.createElement("div", {
-						className: H.a.Header
+						className: M.a.Header
 					}, i.a.createElement("div", {
-						className: H.a.Title
+						className: M.a.Title
 					}, i.a.createElement(f.b, {
 						type: f.a.TopicHeader
 					}, a)), i.a.createElement("div", {
-						className: H.a.Subtitle
+						className: M.a.Subtitle
 					}, this.renderSubtitleContent())), i.a.createElement("div", {
-						className: H.a.Tabs
+						className: M.a.Tabs
 					}, i.a.createElement(B, A({
 						tab: W.Posts
 					}, c), V._("Posts", null, {
@@ -2569,10 +2569,10 @@
 					return t !== a && t !== o && (!(o + s > t) && (!(t + s > a) && !((e, t, s) => {
 						const r = s[t - 1],
 							i = s[t],
-							o = i && Object(n.G)(e, {
+							o = i && Object(n.H)(e, {
 								postId: r
 							}) || null,
-							a = i && Object(n.G)(e, {
+							a = i && Object(n.H)(e, {
 								postId: i
 							}) || null;
 						return o && o.isSponsored || a && a.isSponsored
@@ -2585,7 +2585,7 @@
 				}) => {
 					const r = t.slice().sort();
 					let i = -1;
-					const o = Object(n.z)(e, {
+					const o = Object(n.A)(e, {
 							listingKey: s.listingKey
 						}),
 						a = [];
@@ -2617,4 +2617,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.f880afbd742cf9b207a0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.0f00d495319f1350f2de.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlowNew.461737046e7997d81892.js
-// Retrieved at 8/11/2021, 2:30:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlowNew.d51266f878f97ef0dd99.js
+// Retrieved at 8/12/2021, 11:10:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlowNew"], {
 		"./src/reddit/actions/blockedRedditors.ts": function(e, t, o) {
@@ -301,7 +301,7 @@
 			const U = Object(l.c)({
 					post: (e, {
 						postId: t
-					}) => t ? Object(S.G)(e, {
+					}) => t ? Object(S.H)(e, {
 						postId: t
 					}) : null,
 					comment: (e, {
@@ -322,7 +322,7 @@
 							postId: s
 						} = t, n = r ? Object(I.a)(e, {
 							commentId: r
-						}) : null, i = s ? Object(S.G)(e, {
+						}) : null, i = s ? Object(S.H)(e, {
 							postId: s
 						}) : null;
 						(n ? n.author : i ? i.author : null) || t.author;
@@ -702,4 +702,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlowNew.461737046e7997d81892.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlowNew.d51266f878f97ef0dd99.js.map

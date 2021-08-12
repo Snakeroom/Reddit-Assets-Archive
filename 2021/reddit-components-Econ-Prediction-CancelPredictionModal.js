@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-CancelPredictionModal.d7a11ea7ecfb7b0d3046.js
-// Retrieved at 8/11/2021, 6:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-CancelPredictionModal.d6041a6429ce8f6818d6.js
+// Retrieved at 8/12/2021, 11:10:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction-CancelPredictionModal"], {
 		"./node_modules/uuid/index.js": function(t, e, n) {
@@ -64,9 +64,9 @@
 			})), n.d(e, "g", (function() {
 				return J
 			})), n.d(e, "h", (function() {
-				return U
-			})), n.d(e, "n", (function() {
 				return R
+			})), n.d(e, "n", (function() {
+				return U
 			})), n.d(e, "c", (function() {
 				return B
 			})), n.d(e, "d", (function() {
@@ -293,7 +293,7 @@
 					} = r.body.data;
 					if (!i.predictionChipPackages) throw new Error("Failed to fetch prediction chip packages");
 					return i.predictionChipPackages
-				}, U = t => async (e, n, {
+				}, R = t => async (e, n, {
 					gqlContext: o
 				}) => {
 					const r = await Object(p.i)(o(), {
@@ -305,7 +305,7 @@
 					} = r.body.data;
 					if (!i.hasOwnProperty("predictionTokens")) throw new Error("Failed to fetch token balance");
 					return i.predictionTokens
-				}, R = ({
+				}, U = ({
 					coinPackageId: t,
 					selectedOptionId: e,
 					price: n,
@@ -425,7 +425,7 @@
 				u = n("./src/reddit/selectors/posts.ts");
 			const p = () => {
 				const t = Object(d.d)(),
-					e = Object(d.e)(u.Q);
+					e = Object(d.e)(u.R);
 				if (!e) return null;
 				const {
 					totalVoteCount: n
@@ -724,4 +724,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-CancelPredictionModal.d7a11ea7ecfb7b0d3046.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-CancelPredictionModal.d6041a6429ce8f6818d6.js.map

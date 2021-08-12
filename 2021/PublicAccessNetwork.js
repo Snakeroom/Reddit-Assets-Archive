@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.734f4a979b2214b65937.js
-// Retrieved at 8/11/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.75de70c280e84eb7e8e0.js
+// Retrieved at 8/12/2021, 11:10:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -946,7 +946,7 @@
 				ye = Object(se.a)(ve.e),
 				xe = (e, t, s) => {
 					const o = !e,
-						n = Object(ee.G)(t, {
+						n = Object(ee.H)(t, {
 							postId: s
 						}).belongsTo,
 						r = Object(te.L)(t, {
@@ -1015,10 +1015,10 @@
 					}
 					if (D) {
 						const r = ((e, t) => {
-								const s = Object(ee.T)(e, {
+								const s = Object(ee.U)(e, {
 										postId: t
 									}),
-									o = Object(ee.G)(e, {
+									o = Object(ee.H)(e, {
 										postId: t
 									});
 								return s && o ? `${e.posts.models[t].title} : ${s.name}` : ""
@@ -1157,7 +1157,7 @@
 							sort: s.sort
 						}
 					}; {
-						const t = Object(ee.G)(i(), {
+						const t = Object(ee.H)(i(), {
 							postId: e
 						});
 						t && t.numComments && t.numComments > _e && (D.truncate = Oe)
@@ -1218,7 +1218,7 @@
 							i = U.body.posts;
 						await n(Object(O.b)(i, a, r))
 					} {
-						const o = Object(ee.G)(i(), {
+						const o = Object(ee.H)(i(), {
 							postId: e
 						});
 						o && U.body.comments && Object.keys(U.body.comments).length < o.numComments ? n(Me(e, t, s)) : U.ok && n(Ne({
@@ -1229,7 +1229,7 @@
 					}
 					if (U.ok) {
 						n(C.g(f));
-						const t = Object(ee.G)(i(), {
+						const t = Object(ee.H)(i(), {
 							postId: e
 						});
 						if (n(w.z(t, y.a.CommentsView)), t && "subreddit" === t.belongsTo.type && U.body.comments) {
@@ -1291,7 +1291,7 @@
 							key: a
 						}));
 						const s = n().posts.models[e],
-							r = s && Object(ee.T)(n(), {
+							r = s && Object(ee.U)(n(), {
 								postId: s.id
 							});
 						s && "subreddit" === s.belongsTo.type && r && Object($.a)(i, {
@@ -5734,7 +5734,7 @@
 					allAwards: e => e.awards.models,
 					post: (e, {
 						postId: t
-					}) => Object(Co.G)(e, {
+					}) => Object(Co.H)(e, {
 						postId: t
 					})
 				})),
@@ -5813,7 +5813,7 @@
 				isLoggedIn: Vo.J,
 				isPostDataLoaded: (e, {
 					postId: t
-				}) => !!Object(Co.G)(e, {
+				}) => !!Object(Co.H)(e, {
 					postId: t
 				}),
 				replyComment: (e, {
@@ -7100,4 +7100,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.734f4a979b2214b65937.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.75de70c280e84eb7e8e0.js.map

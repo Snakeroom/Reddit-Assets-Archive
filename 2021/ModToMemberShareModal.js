@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModToMemberShareModal.7413eae179db78177ae9.js
-// Retrieved at 8/11/2021, 2:30:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModToMemberShareModal.c6b4f19ab00454e729a5.js
+// Retrieved at 8/12/2021, 11:10:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModToMemberShareModal"], {
 		"./src/reddit/components/CharacterCountdown/index.m.less": function(e, t, s) {
@@ -60,7 +60,7 @@
 				h = s("./src/reddit/selectors/subreddit.ts"),
 				x = s("./src/reddit/components/MiniPost/index.m.less"),
 				_ = s.n(x);
-			const f = Object(a.a)(e => e, b.G, b.d, (e, t, s) => {
+			const f = Object(a.a)(e => e, b.H, b.d, (e, t, s) => {
 					return {
 						crosspost: s,
 						post: t,
@@ -458,4 +458,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModToMemberShareModal.7413eae179db78177ae9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModToMemberShareModal.c6b4f19ab00454e729a5.js.map

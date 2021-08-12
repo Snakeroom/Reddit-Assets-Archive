@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.8690f1417d6cec8f8008.js
-// Retrieved at 8/12/2021, 9:40:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.f5cf2a2f6d21af263fe0.js
+// Retrieved at 8/12/2021, 11:10:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~ModListing", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -5972,10 +5972,10 @@
 						style: t
 					}, e.children)
 				},
-				P = Object(a.b)(() => Object(c.a)(v.F, _.bb, (e, {
+				P = Object(a.b)(() => Object(c.a)(v.G, _.bb, (e, {
 					isSponsored: t,
 					postId: n
-				}) => t && n ? Object(v.b)(e, n) : null, y.a, E.actionInfo, v.G, (e, t, n, s, r, o) => ({
+				}) => t && n ? Object(v.b)(e, n) : null, y.a, E.actionInfo, v.H, (e, t, n, s, r, o) => ({
 					postPermalink: e,
 					shouldOpenPostInNewTab: t,
 					basePixelMetadata: n,
@@ -9259,8 +9259,8 @@
 			const {
 				fbt: z
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), Z = e => e.type === V.f.Nsfw || e.type === V.f.Spoiler, J = Object(d.c)({
-				post: B.G,
-				subredditOrProfile: B.T
+				post: B.H,
+				subredditOrProfile: B.U
 			});
 			class Y extends i.a.PureComponent {
 				constructor() {
@@ -9338,7 +9338,7 @@
 				$ = n.n(X);
 			const {
 				fbt: ee
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), te = 10, ne = 2, se = Object(d.a)(B.M, e => e.filter(e => !e.isSponsored)), re = Object(d.c)({
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), te = 10, ne = 2, se = Object(d.a)(B.N, e => e.filter(e => !e.isSponsored)), re = Object(d.c)({
 				posts: (e, t) => se(e, {
 					...t
 				})
@@ -9454,7 +9454,7 @@
 					listingKey: fe,
 					posts: (e, t) => {
 						const n = fe(e, t);
-						return Object(B.M)(e, {
+						return Object(B.N)(e, {
 							listingKey: n
 						})
 					},
@@ -10122,7 +10122,7 @@
 				d = n("./src/reddit/selectors/platform.ts"),
 				l = n("./src/reddit/selectors/posts.ts");
 			const u = Object(a.c)({
-					postCount: l.L,
+					postCount: l.M,
 					previousPageIsOverlay: d.n,
 					tabBadged: e => e.tabBadged
 				}),
@@ -10612,7 +10612,7 @@
 								subredditId: n
 							})
 						}
-						return Object(E.R)(e, {
+						return Object(E.S)(e, {
 							...t
 						})
 					},
@@ -10628,7 +10628,7 @@
 								subredditId: t
 							})
 						}
-						return Object(E.D)(e, t, n, r)
+						return Object(E.E)(e, t, n, r)
 					}),
 					subredditsById: _.ab,
 					viewportDataLoaded: C.a,
@@ -14115,7 +14115,7 @@
 						r = Object(je.b)(me.c.config)(e, {
 							subredditId: n.id
 						}),
-						o = Object(Se.D)(e, t, s, !0),
+						o = Object(Se.E)(e, t, s, !0),
 						a = !Object(Ce.d)(e, {
 							listingKey: t
 						});
@@ -14276,7 +14276,7 @@
 						subredditName: t.match.params.subredditName
 					}))
 				},
-				onLoadMoreSearchResults: () => e(Object(j.p)([h.Wb.Posts])),
+				onLoadMoreSearchResults: () => e(Object(j.q)([h.Wb.Posts])),
 				refreshFeed: () => e(S.s({
 					sort: t.match.params.sort,
 					subredditName: t.match.params.subredditName
@@ -15125,7 +15125,7 @@
 							layout: n,
 							sort: r,
 							listingKey: a
-						} = t, c = (Object(i.z)(e, {
+						} = t, c = (Object(i.A)(e, {
 							listingKey: a
 						}) || []).length;
 						return n === o.g.Large && r !== s.U.NEW && c >= 20
@@ -15353,10 +15353,10 @@
 					return t !== i && t !== a && (!(a + n > t) && (!(t + n > i) && !((e, t, n) => {
 						const s = n[t - 1],
 							r = n[t],
-							a = r && Object(o.G)(e, {
+							a = r && Object(o.H)(e, {
 								postId: s
 							}) || null,
-							i = r && Object(o.G)(e, {
+							i = r && Object(o.H)(e, {
 								postId: r
 							}) || null;
 						return a && a.isSponsored || i && i.isSponsored
@@ -15369,7 +15369,7 @@
 				}) => {
 					const s = t.slice().sort();
 					let r = -1;
-					const a = Object(o.z)(e, {
+					const a = Object(o.A)(e, {
 							listingKey: n.listingKey
 						}),
 						i = [];
@@ -15597,4 +15597,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.8690f1417d6cec8f8008.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.f5cf2a2f6d21af263fe0.js.map

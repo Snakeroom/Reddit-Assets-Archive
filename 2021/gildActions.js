@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/gildActions.fd5c10e0c55c18712eab.js
-// Retrieved at 8/10/2021, 3:40:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/gildActions.e5f4db1574c1eef18f41.js
+// Retrieved at 8/12/2021, 11:10:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["gildActions"], {
 		"./src/reddit/actions/gold/econPurchase.ts": function(e, t, s) {
@@ -44,11 +44,11 @@
 		"./src/reddit/actions/gold/gild.ts": function(e, t, s) {
 			"use strict";
 			s.r(t), s.d(t, "setIsAnonymous", (function() {
-				return U
-			})), s.d(t, "updateMessage", (function() {
-				return Z
-			})), s.d(t, "gildGqlRequested", (function() {
 				return H
+			})), s.d(t, "updateMessage", (function() {
+				return U
+			})), s.d(t, "gildGqlRequested", (function() {
+				return Z
 			})), s.d(t, "triggerLoader", (function() {
 				return V
 			})), s.d(t, "gildPending", (function() {
@@ -96,8 +96,8 @@
 				I = s("./src/reddit/selectors/gild.ts"),
 				A = s("./src/reddit/selectors/gold/awardIcon.ts"),
 				x = s("./src/reddit/selectors/gold/econPurchase.ts"),
-				G = s("./src/reddit/selectors/gold/purchaseCatalog.ts"),
-				C = s("./src/reddit/selectors/posts.ts"),
+				C = s("./src/reddit/selectors/gold/purchaseCatalog.ts"),
+				G = s("./src/reddit/selectors/posts.ts"),
 				P = s("./src/reddit/selectors/subreddit.ts"),
 				R = s("./src/reddit/selectors/user.ts"),
 				S = s("./src/lib/makeGqlRequest/index.ts"),
@@ -126,9 +126,9 @@
 				z = s("./src/reddit/actions/gold/awardKarma.ts"),
 				J = s("./src/reddit/actions/gold/constants.ts"),
 				B = s("./src/reddit/actions/gold/econPurchase.ts");
-			const U = Object(a.a)(J.r),
-				Z = Object(a.a)(J.v),
-				H = (e, t) => async (s, a, {
+			const H = Object(a.a)(J.r),
+				U = Object(a.a)(J.v),
+				Z = (e, t) => async (s, a, {
 					gqlContext: d
 				}) => {
 					const n = a().gild,
@@ -205,7 +205,7 @@
 				}, se = Object(a.a)(J.s), re = (e, t) => {
 					const {
 						id: s
-					} = t, r = Object(F.a)(s) ? Object(C.G)(e, {
+					} = t, r = Object(F.a)(s) ? Object(G.H)(e, {
 						postId: s
 					}) : Object(k.a)(e, {
 						commentId: s
@@ -305,11 +305,11 @@
 					await t(Object(i.b)(k));
 					const K = Date.now() - D;
 					if (L > 0) {
-						const e = Object(G.f)(s()).filter(e => j.a.has(e.dealInfo.type));
+						const e = Object(C.f)(s()).filter(e => j.a.has(e.dealInfo.type));
 						if (e.length) {
 							const s = Math.max(900 - K, 10),
 								r = Math.max(300 - K, 10),
-								d = Object(F.a)(m) && Object(O.o)(Object(C.G)(a, {
+								d = Object(F.a)(m) && Object(O.o)(Object(G.H)(a, {
 									postId: m
 								}));
 							setTimeout(() => t(Object(o.e)({
@@ -328,7 +328,7 @@
 						})), 0 === L && q) {
 						t(Object(n.a)(q.id, m, void 0, !0));
 						const e = 399,
-							r = Object(G.d)(s()).reduce((t, s) => {
+							r = Object(C.d)(s()).reduce((t, s) => {
 								const r = Math.abs(s.pennies - e);
 								return (!t || r < t.priceDelta) && (t = {
 									packageId: s.mobileId,
@@ -493,4 +493,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/gildActions.fd5c10e0c55c18712eab.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/gildActions.e5f4db1574c1eef18f41.js.map

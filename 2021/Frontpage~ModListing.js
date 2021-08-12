@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~ModListing.bfe1a954db5149378799.js
-// Retrieved at 8/11/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~ModListing.f21d4931d5cb1ba11981.js
+// Retrieved at 8/12/2021, 11:10:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~ModListing"], {
 		"./src/reddit/actions/focusedVerticals/index.ts": function(e, t, s) {
@@ -2091,7 +2091,7 @@
 								subredditId: s
 							})
 						}
-						return Object(_.R)(e, {
+						return Object(_.S)(e, {
 							...t
 						})
 					},
@@ -2107,7 +2107,7 @@
 								subredditId: t
 							})
 						}
-						return Object(_.D)(e, t, s, r)
+						return Object(_.E)(e, t, s, r)
 					}),
 					subredditsById: v.ab,
 					viewportDataLoaded: C.a,
@@ -2546,10 +2546,10 @@
 					return t !== a && t !== i && (!(i + s > t) && (!(t + s > a) && !((e, t, s) => {
 						const n = s[t - 1],
 							r = s[t],
-							i = r && Object(o.G)(e, {
+							i = r && Object(o.H)(e, {
 								postId: n
 							}) || null,
-							a = r && Object(o.G)(e, {
+							a = r && Object(o.H)(e, {
 								postId: r
 							}) || null;
 						return i && i.isSponsored || a && a.isSponsored
@@ -2562,7 +2562,7 @@
 				}) => {
 					const n = t.slice().sort();
 					let r = -1;
-					const i = Object(o.z)(e, {
+					const i = Object(o.A)(e, {
 							listingKey: s.listingKey
 						}),
 						a = [];
@@ -2594,4 +2594,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing.bfe1a954db5149378799.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing.f21d4931d5cb1ba11981.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.55ca30ed02dd0b269b46.js
-// Retrieved at 8/11/2021, 2:30:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.cd2e08073791c54aa66a.js
+// Retrieved at 8/12/2021, 11:10:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, r) {
@@ -879,7 +879,7 @@
 					let b = null;
 					if (f) b = f.id;
 					else if (Object(o.a)(r)) {
-						const e = Object(m.G)(a, {
+						const e = Object(m.H)(a, {
 							postId: r
 						});
 						e && (b = e.belongsTo.id)
@@ -3325,7 +3325,7 @@
 				}) => {
 					const s = Object(d.c)(e),
 						i = l.find(e => e >= r),
-						c = n ? Object(a.G)(e, {
+						c = n ? Object(a.H)(e, {
 							postId: n
 						}) || Object(o.a)(e, {
 							commentId: n
@@ -3540,4 +3540,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.55ca30ed02dd0b269b46.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.cd2e08073791c54aa66a.js.map

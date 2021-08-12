@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.80d9749f8f8148af8ce6.js
-// Retrieved at 8/11/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.055ea1a037ff9918fafd.js
+// Retrieved at 8/12/2021, 11:10:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -516,7 +516,7 @@
 				}, se = Object(n.a)(q.s), re = (e, t) => {
 					const {
 						id: s
-					} = t, r = Object(U.a)(s) ? Object(P.G)(e, {
+					} = t, r = Object(U.a)(s) ? Object(P.H)(e, {
 						postId: s
 					}) : Object(E.a)(e, {
 						commentId: s
@@ -620,7 +620,7 @@
 						if (e.length) {
 							const s = Math.max(900 - B, 10),
 								r = Math.max(300 - B, 10),
-								a = Object(U.a)(m) && Object(v.o)(Object(P.G)(n, {
+								a = Object(U.a)(m) && Object(v.o)(Object(P.H)(n, {
 									postId: m
 								}));
 							setTimeout(() => t(Object(i.e)({
@@ -1849,7 +1849,7 @@
 			}));
 			var xe = Object(a.b)((e, t) => {
 					if (Object(l.a)(t.thingId)) {
-						const s = Object(R.G)(e, {
+						const s = Object(R.H)(e, {
 							postId: t.thingId
 						});
 						if (!s) return {};
@@ -2231,7 +2231,7 @@
 						r = s && s.id
 					}
 					if (!r && Object(l.a)(t)) {
-						const s = Object(R.G)(e, {
+						const s = Object(R.H)(e, {
 							postId: t
 						});
 						r = s && s.belongsTo.id
@@ -2298,7 +2298,7 @@
 					message: A.c,
 					postOrComment: (e, {
 						thingId: t
-					}) => Object(l.a)(t) ? Object(R.G)(e, {
+					}) => Object(l.a)(t) ? Object(R.H)(e, {
 						postId: t
 					}) : Object(k.a)(e, {
 						commentId: t
@@ -2331,7 +2331,7 @@
 							r = s && s.id
 						}
 						if (!r && Object(l.a)(t)) {
-							const s = Object(R.G)(e, {
+							const s = Object(R.H)(e, {
 								postId: t
 							});
 							r = s && s.belongsTo.id
@@ -2765,10 +2765,10 @@
 						style: t
 					}, e.children)
 				},
-				A = Object(o.b)(() => Object(d.a)(v.F, j.bb, (e, {
+				A = Object(o.b)(() => Object(d.a)(v.G, j.bb, (e, {
 					isSponsored: t,
 					postId: s
-				}) => t && s ? Object(v.b)(e, s) : null, x.a, O.actionInfo, v.G, (e, t, s, r, n, a) => ({
+				}) => t && s ? Object(v.b)(e, s) : null, x.a, O.actionInfo, v.H, (e, t, s, r, n, a) => ({
 					postPermalink: e,
 					shouldOpenPostInNewTab: t,
 					basePixelMetadata: s,
@@ -5240,4 +5240,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.80d9749f8f8148af8ce6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.055ea1a037ff9918fafd.js.map

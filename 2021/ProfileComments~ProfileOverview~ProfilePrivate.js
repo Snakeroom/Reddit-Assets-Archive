@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.27957876815525ffa691.js
-// Retrieved at 8/11/2021, 2:30:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.8e47666dd60099fe5fc8.js
+// Retrieved at 8/12/2021, 11:10:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments~ProfileOverview~ProfilePrivate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1015,12 +1015,12 @@
 					modModeEnabled: V.Q,
 					postIsLocked: (e, {
 						comment: t
-					}) => Object(Z.B)(e, {
+					}) => Object(Z.C)(e, {
 						postId: t.postId
 					}),
 					postPermalink: (e, {
 						comment: t
-					}) => Object(Z.F)(e, {
+					}) => Object(Z.G)(e, {
 						postId: t.postId
 					}),
 					reportFlowIsOpen: (e, {
@@ -1032,7 +1032,7 @@
 					subreddit: V.q,
 					subredditOrProfile: (e, {
 						comment: t
-					}) => Object(Z.T)(e, {
+					}) => Object(Z.U)(e, {
 						postId: t.postId
 					}),
 					reportingRevampEnabled: X.a
@@ -3152,4 +3152,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.27957876815525ffa691.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.8e47666dd60099fe5fc8.js.map

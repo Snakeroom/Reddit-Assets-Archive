@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.3f8821efc42d94c1fb72.js
-// Retrieved at 8/11/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.c5715b28ea0002e87757.js
+// Retrieved at 8/12/2021, 11:10:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, n) {
@@ -155,7 +155,7 @@
 				j = n("./src/reddit/icons/svgs/ChevronDown/index.tsx"),
 				w = n("./src/reddit/components/SEOSidebarLinks/index.m.less"),
 				F = n.n(w);
-			const P = ({
+			const A = ({
 					to: e,
 					title: t
 				}) => d.a.createElement(T.a, {
@@ -166,7 +166,7 @@
 					to: e,
 					title: t
 				}, t)),
-				A = ({
+				P = ({
 					title: e,
 					isOpened: t,
 					isExpanded: n,
@@ -223,11 +223,11 @@
 					}, this.renderLink = ({
 						url: e,
 						title: t
-					}) => d.a.createElement(P, {
+					}) => d.a.createElement(A, {
 						key: t,
 						to: e,
 						title: t
-					}), this.renderSection = (e, t) => d.a.createElement(A, {
+					}), this.renderSection = (e, t) => d.a.createElement(P, {
 						key: e.title,
 						title: e.title,
 						isOpened: this.isOpened(t),
@@ -260,8 +260,8 @@
 				W = n("./node_modules/lodash/sampleSize.js"),
 				G = n.n(W),
 				U = n("./node_modules/request-idle-callback/index.js"),
-				q = n("./src/lib/constants/index.ts"),
-				Q = n("./src/reddit/components/SubredditIcon/index.tsx"),
+				Q = n("./src/lib/constants/index.ts"),
+				q = n("./src/reddit/components/SubredditIcon/index.tsx"),
 				M = n("./src/reddit/constants/localStorage.ts"),
 				J = n("./src/reddit/contexts/ApiContext.tsx"),
 				K = n("./src/reddit/featureFlags/component.tsx"),
@@ -272,14 +272,14 @@
 				z = n("./src/reddit/constants/headers.ts");
 			const Y = e => Object(H.a)(Object(X.a)(e, [z.a]), {
 				endpoint: `${e.apiUrl}/api/multi/user/CommunityAdoptionBot/m/adoption_week/`,
-				method: q.hb.GET,
+				method: Q.hb.GET,
 				type: "json"
 			});
 			var $ = n("./src/reddit/components/SubredditAdoptionWidget/index.m.less"),
 				ee = n.n($);
 			const {
 				fbt: te
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), ne = 3, ae = 30 * q.ib, se = "SubredditAdoption";
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), ne = 3, ae = 30 * Q.ib, se = "SubredditAdoption";
 			class re extends d.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
@@ -315,7 +315,7 @@
 						className: ee.a.main
 					}, d.a.createElement("div", {
 						className: ee.a.title
-					}, d.a.createElement(Q.b, {
+					}, d.a.createElement(q.b, {
 						className: ee.a.icon
 					}), te._("International Subreddit Adoption Week", null, {
 						hk: "487Ffc"
@@ -373,7 +373,7 @@
 			var xe = fe(ke),
 				ye = n("./src/reddit/selectors/posts.ts");
 			const Ne = Object(u.c)({
-				recentPosts: ye.P
+				recentPosts: ye.Q
 			});
 			var Ee = Object(c.b)(Ne, (e, t) => ({
 					openLightbox: t => () => e(Object(be.a)(t.permalink))
@@ -605,7 +605,7 @@
 			}];
 			var we = n("./src/reddit/components/Widgets/Aggregate/TopicsList/index.m.less"),
 				Fe = n.n(we);
-			const Pe = () => {
+			const Ae = () => {
 					const e = `${Se.a.assetPath}/img/banner/banner-medium@2x.png`,
 						t = v.fbt._("Find Your Next Community!", null, {
 							hk: "4tZ6vB"
@@ -620,13 +620,13 @@
 						className: Fe.a.bannerText
 					}, t))
 				},
-				Ae = e => `/t/${e}?activeTab=communities`,
+				Pe = e => `/t/${e}?activeTab=communities`,
 				Ie = e => {
 					const t = e.topic.getName();
 					return d.a.createElement("div", {
 						className: Fe.a.itemContainer
 					}, d.a.createElement(Ce.a, {
-						to: Ae(e.topic.url),
+						to: Pe(e.topic.url),
 						onClick: () => e.sendEvent(Object(Te.c)(t))
 					}, t))
 				};
@@ -642,7 +642,7 @@
 						noGradient: !0,
 						styles: e.widget && e.widget.styles,
 						widgetKind: e.widget && e.widget.kind
-					}, d.a.createElement(Pe, null), d.a.createElement("div", {
+					}, d.a.createElement(Ae, null), d.a.createElement("div", {
 						className: Fe.a.container
 					}, n.map(e => d.a.createElement(Ie, {
 						key: e.url,
@@ -662,11 +662,11 @@
 				})
 			}
 			var Ue = n("./src/reddit/selectors/experiments/utils.ts");
-			const qe = Object(u.a)(e => Object(We.c)(e, {
+			const Qe = Object(u.a)(e => Object(We.c)(e, {
 					experimentName: Le.Lc,
 					experimentEligibilitySelector: We.a
 				}), Ue.a),
-				Qe = Object(u.a)(qe, e => e === Le.Nc.Enabled);
+				qe = Object(u.a)(Qe, e => e === Le.Nc.Enabled);
 			var Me = n("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
 				Je = n("./src/reddit/selectors/user.ts");
 			var Ke = n("./src/reddit/selectors/experiments/uiSimplification.ts"),
@@ -704,7 +704,7 @@
 					},
 					isNavbarLikeMwebEnabled: l.a,
 					locale: ze.i,
-					isInLeaderboardTakeoverExperiment: Qe
+					isInLeaderboardTakeoverExperiment: qe
 				}),
 				tt = e => !(!e.currentUser || !e.currentUser.showRecentPosts),
 				nt = e => !(e.currentUser && (!e.currentUser || e.currentUser.isGold)),
@@ -775,11 +775,11 @@
 						shouldDisplayDelta: !this.props.isMod && l.id !== De.l,
 						to: l.path
 					}), d.a.createElement(L.a, {
-						placement: q.c.ABOVE_THE_FOLD,
+						placement: Q.c.ABOVE_THE_FOLD,
 						listingName: r,
 						removeSidebarSpacer: !m,
 						position: Xe.a.FIRST,
-						sizes: q.h,
+						sizes: Q.h,
 						placementIndex: e++
 					}), nt(this.props) && d.a.createElement(S, null), o && d.a.createElement(h.a, null, d.a.createElement(Be, null)), a && d.a.createElement(h.a, null, d.a.createElement(p.a, {
 						listingName: r
@@ -787,10 +787,10 @@
 						links: n
 					})), d.a.createElement(R.a, {
 						adComponent: d.a.createElement(L.a, {
-							placement: q.c.BELOW_THE_FOLD,
+							placement: Q.c.BELOW_THE_FOLD,
 							listingName: r,
 							position: Xe.a.BOTTOM,
-							sizes: q.n,
+							sizes: Q.n,
 							placementIndex: e++
 						})
 					}, a && d.a.createElement(ie, null)))
@@ -848,7 +848,7 @@
 				g = n("./src/reddit/selectors/subreddit.ts"),
 				h = n("./src/reddit/components/MiniPost/index.m.less"),
 				f = n.n(h);
-			const _ = Object(o.a)(e => e, p.G, p.d, (e, t, n) => {
+			const _ = Object(o.a)(e => e, p.H, p.d, (e, t, n) => {
 					return {
 						crosspost: n,
 						post: t,
@@ -2038,4 +2038,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.3f8821efc42d94c1fb72.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.c5715b28ea0002e87757.js.map

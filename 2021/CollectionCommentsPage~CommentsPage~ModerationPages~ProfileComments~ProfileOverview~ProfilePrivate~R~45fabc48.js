@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.93343527f55d39eda6c4.js
-// Retrieved at 8/11/2021, 2:30:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.22636f2e3d6e20646b09.js
+// Retrieved at 8/12/2021, 11:10:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48"], {
 		"./src/reddit/actions/eventPosts/index.ts": function(e, t, s) {
@@ -135,7 +135,7 @@
 							postId: e
 						}));
 						const r = s(),
-							i = Object(C.G)(r, {
+							i = Object(C.H)(r, {
 								postId: e
 							}),
 							c = i && i.title || "";
@@ -166,7 +166,7 @@
 							eventInfo: p
 						}));
 						const m = r(),
-							u = Object(C.G)(m, {
+							u = Object(C.H)(m, {
 								postId: e
 							}),
 							b = u && u.title || "",
@@ -338,7 +338,7 @@
 				}) => {
 					if ((await O(i(), e, t)).ok) {
 						const i = r(),
-							a = Object(y.G)(i, {
+							a = Object(y.H)(i, {
 								postId: t
 							}),
 							d = a && a.title || "",
@@ -355,7 +355,7 @@
 									collectionId: e
 								}),
 								o = s && s.postIds && s.postIds[p] || "",
-								i = Object(y.G)(t, {
+								i = Object(y.H)(t, {
 									postId: o
 								});
 							i && i.permalink && n(Object(E.a)(i.permalink))
@@ -388,7 +388,7 @@
 							collectionId: e,
 							postId: t
 						}));
-						const n = Object(y.G)(i, {
+						const n = Object(y.H)(i, {
 								postId: t
 							}),
 							r = Object(I.q)(i, {
@@ -617,7 +617,7 @@
 					apiContext: n
 				}) => {
 					const r = o(),
-						i = Object(I.G)(r, {
+						i = Object(I.H)(r, {
 							postId: e
 						});
 					t ? (s(Object(O.a)(i.permalink)), Object(g.e)(e, "edit")(r)) : Object(_.d)(e, "edit")(r);
@@ -938,7 +938,7 @@
 				S = Object(i.b)(() => Object(c.c)({
 					isChatPost: j.d,
 					isPostSEOEligible: k.e,
-					postPermalink: w.F,
+					postPermalink: w.G,
 					shouldOpenPostInNewTab: I.bb
 				})),
 				N = ({
@@ -3023,7 +3023,7 @@
 					}) => Object(H.a)(e) === `POST_OVERFLOW_DELETE_CONFIRMATION_${t}`,
 					isFutureEvent: se.i,
 					isPinned: K.q,
-					subredditAboutInfo: K.H,
+					subredditAboutInfo: K.I,
 					reportFlowIsOpen: (e, {
 						isOverlay: t,
 						postId: s
@@ -4598,7 +4598,7 @@
 				}),
 				i = (e, t) => {
 					const s = r(e, t);
-					return Object(n.M)(e, {
+					return Object(n.N)(e, {
 						listingKey: s
 					}) || []
 				},
@@ -4640,4 +4640,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.93343527f55d39eda6c4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.22636f2e3d6e20646b09.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.638ad18edb58e3ff5051.js
-// Retrieved at 8/11/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.ca84073d07ed9880533f.js
+// Retrieved at 8/12/2021, 11:10:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~Subreddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, r) {
@@ -2250,7 +2250,7 @@
 			const k = Object(d.a)(j.a, j.j, (e, {
 					isSponsored: t,
 					postId: r
-				}) => t && r ? Object(O.b)(e, r) : null, O.G, y.actionInfo, (e, t, r, o, n) => ({
+				}) => t && r ? Object(O.b)(e, r) : null, O.H, y.actionInfo, (e, t, r, o, n) => ({
 					allowClickTracking: e,
 					basePixelMetadata: r,
 					userId: t ? Object(_.a)(t.id) : null,
@@ -4108,7 +4108,7 @@
 				},
 				D = (e, t, r, o, c, u, f) => {
 					if (!o) {
-						o = Object(a.G)(e, {
+						o = Object(a.H)(e, {
 							postId: u
 						}).belongsTo
 					}
@@ -4506,4 +4506,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.638ad18edb58e3ff5051.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.ca84073d07ed9880533f.js.map

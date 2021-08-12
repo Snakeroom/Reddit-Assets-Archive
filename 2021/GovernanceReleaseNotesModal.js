@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.a5ca9a924397bbdd02bb.js
-// Retrieved at 8/10/2021, 6:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.33b0f0523b135b086b6d.js
+// Retrieved at 8/12/2021, 11:10:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceReleaseNotesModal"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1021,10 +1021,10 @@
 						style: t
 					}, e.children)
 				},
-				N = Object(i.b)(() => Object(d.a)(y.F, w.bb, (e, {
+				N = Object(i.b)(() => Object(d.a)(y.G, w.bb, (e, {
 					isSponsored: t,
 					postId: n
-				}) => t && n ? Object(y.b)(e, n) : null, v.a, _.actionInfo, y.G, (e, t, n, s, r, o) => ({
+				}) => t && n ? Object(y.b)(e, n) : null, v.a, _.actionInfo, y.H, (e, t, n, s, r, o) => ({
 					postPermalink: e,
 					shouldOpenPostInNewTab: t,
 					basePixelMetadata: n,
@@ -2931,4 +2931,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.a5ca9a924397bbdd02bb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.33b0f0523b135b086b6d.js.map
