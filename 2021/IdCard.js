@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.75eb49b0ef569e557469.js
-// Retrieved at 8/12/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.6d8d00b46b6fb6d7c877.js
+// Retrieved at 8/12/2021, 3:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -2273,58 +2273,52 @@
 		"./src/reddit/components/HumanDate/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "d", (function() {
-				return l
+				return a
 			})), n.d(t, "a", (function() {
-				return m
+				return d
 			})), n.d(t, "b", (function() {
-				return p
+				return u
 			})), n.d(t, "c", (function() {
-				return _
+				return f
 			}));
 			var s = n("./node_modules/react/index.js"),
 				r = n.n(s),
 				i = n("./src/lib/timeAgo/index.ts"),
-				o = n("./src/lib/constants/index.ts"),
-				a = n("./node_modules/react-redux/es/index.js"),
-				c = n("./src/reddit/selectors/meta.ts");
-			var d = "undefined" == typeof document ? function() {
-				return Object(a.e)(c.i) || o.B
-			} : function() {
-				return document.documentElement.lang || o.B
-			};
-			var l = function({
+				o = n("./src/reddit/hooks/useLocale.ts");
+			var a = function({
 					seconds: e,
 					...t
 				}) {
 					var n;
-					const s = d(),
-						o = {
+					const s = Object(o.a)(),
+						a = {
 							...t,
 							locale: null !== (n = t.locale) && void 0 !== n ? n : s
 						};
-					return r.a.createElement(r.a.Fragment, null, Object(i.d)(e, o))
+					return r.a.createElement(r.a.Fragment, null, Object(i.d)(e, a))
 				},
-				u = n("./src/lib/humanizeDate/index.ts");
-			var m = function({
-				seconds: e,
-				...t
-			}) {
-				var n;
-				const s = d(),
-					i = {
-						...t,
-						locale: null !== (n = t.locale) && void 0 !== n ? n : s
-					};
-				return r.a.createElement(r.a.Fragment, null, Object(u.a)(e, i))
-			};
-			var p = function({
+				c = n("./src/lib/humanizeDate/index.ts");
+			var d = function({
+					seconds: e,
+					...t
+				}) {
+					var n;
+					const s = Object(o.a)(),
+						i = {
+							...t,
+							locale: null !== (n = t.locale) && void 0 !== n ? n : s
+						};
+					return r.a.createElement(r.a.Fragment, null, Object(c.a)(e, i))
+				},
+				l = n("./src/lib/constants/index.ts");
+			var u = function({
 					seconds: e,
 					locale: t
 				}) {
-					const n = d(),
+					const n = Object(o.a)(),
 						s = null != t ? t : n;
-					return r.a.createElement(r.a.Fragment, null, function(e, t = o.B) {
-						const n = e * o.Ob;
+					return r.a.createElement(r.a.Fragment, null, function(e, t = l.B) {
+						const n = e * l.Ob;
 						return new Date(n).toLocaleString(t, {
 							weekday: "short",
 							month: "short",
@@ -2337,42 +2331,42 @@
 						})
 					}(e, s))
 				},
-				b = n("./node_modules/fbt/lib/FbtPublic.js"),
-				h = n("./src/lib/eventTools/index.ts");
+				m = n("./node_modules/fbt/lib/FbtPublic.js"),
+				p = n("./src/lib/eventTools/index.ts");
 
-			function f(e, t = o.B) {
+			function b(e, t = l.B) {
 				return e.toLocaleDateString(t, {
 					month: "numeric",
 					day: "numeric"
 				})
 			}
 
-			function g(e, t, n, s = o.B) {
-				const r = Object(h.e)(e, t),
-					i = new Date(e * o.Ob);
-				let a;
-				if (r === h.a.Live || n) return b.fbt._("Now", null, {
+			function h(e, t, n, s = l.B) {
+				const r = Object(p.e)(e, t),
+					i = new Date(e * l.Ob);
+				let o;
+				if (r === p.a.Live || n) return m.fbt._("Now", null, {
 					hk: "Prpcg"
 				});
-				return r === h.a.Future ? a = Object(h.d)(e) ? b.fbt._("Today", null, {
+				return r === p.a.Future ? o = Object(p.d)(e) ? m.fbt._("Today", null, {
 					hk: "1sZpnp"
-				}).toString() : Object(h.b)(e) >= 5 ? f(i, s) : function(e, t = o.B) {
+				}).toString() : Object(p.b)(e) >= 5 ? b(i, s) : function(e, t = l.B) {
 					return e.toLocaleDateString(t, {
 						weekday: "long"
 					})
-				}(i, s) : r === h.a.Past && (a = Object(h.d)(e) ? b.fbt._("Today", null, {
+				}(i, s) : r === p.a.Past && (o = Object(p.d)(e) ? m.fbt._("Today", null, {
 					hk: "1sZpnp"
-				}).toString() : f(i, s)), `${a} @ ${function(e,t=o.B){return e.toLocaleTimeString(t,{hour12:!0,hour:"numeric",minute:"2-digit"}).replace(/ /g,"").toUpperCase()}(i,s)}`
+				}).toString() : b(i, s)), `${o} @ ${function(e,t=l.B){return e.toLocaleTimeString(t,{hour12:!0,hour:"numeric",minute:"2-digit"}).replace(/ /g,"").toUpperCase()}(i,s)}`
 			}
-			var _ = function({
+			var f = function({
 				startTime: e,
 				endTime: t,
 				isLive: n,
 				locale: s
 			}) {
-				const i = d(),
-					o = null != s ? s : i;
-				return r.a.createElement(r.a.Fragment, null, g(e, t, n, o))
+				const i = Object(o.a)(),
+					a = null != s ? s : i;
+				return r.a.createElement(r.a.Fragment, null, h(e, t, n, a))
 			};
 			n("./src/lib/humanizeUTCDate/index.tsx")
 		},
@@ -5206,6 +5200,17 @@
 				}
 			}
 		},
+		"./src/reddit/hooks/useLocale.ts": function(e, t, n) {
+			"use strict";
+			var s = n("./src/lib/constants/index.ts"),
+				r = n("./node_modules/react-redux/es/index.js"),
+				i = n("./src/reddit/selectors/meta.ts");
+			t.a = "undefined" == typeof document ? function() {
+				return Object(r.e)(i.i) || s.B
+			} : function() {
+				return document.documentElement.lang || s.B
+			}
+		},
 		"./src/reddit/icons/fonts/Coin/index.m.less": function(e, t, n) {
 			e.exports = {
 				CoinIcon: "_12xlue8dQ1odPw1J81FIGQ",
@@ -6234,4 +6239,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.75eb49b0ef569e557469.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.6d8d00b46b6fb6d7c877.js.map
