@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.d465dc580cfc64e727d4.js
-// Retrieved at 8/16/2021, 12:20:11 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.fc110d13a1c1a3709914.js
+// Retrieved at 8/16/2021, 7:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -4266,8 +4266,7 @@
 				ratingReason: "_254fRg3JX4apEtqVAAXfbm",
 				promptText: "RqDOw50ARYjx_TliwJR0l",
 				surveyButton: "_7aZGYzh7hj5VihV4LcNzP",
-				previewButton: "_2OmdANJm2jP7a_6G2-JCqg",
-				warning: "_3QMvrP_WL3Jp-P0vsV4NUS"
+				previewButton: "_2OmdANJm2jP7a_6G2-JCqg"
 			}
 		},
 		"./src/reddit/components/CommunitySettings/index.tsx": function(e, t, s) {
@@ -4419,19 +4418,21 @@
 					update: d,
 					geoPlace: c,
 					onShowWelcomeMessagePreview: m,
-					onFocusWelcomeMessageInput: u
+					onFocusWelcomeMessageInput: u,
+					subredditRules: p
 				} = e, {
-					disableContributorRequests: p,
-					over18: b,
-					publicDescription: g,
-					restrictCommenting: E,
-					restrictPosting: v,
-					subredditType: C,
-					title: _,
-					welcomeMessageEnabled: k,
-					welcomeMessageText: y
-				} = n, O = [], S = [];
-				for (const r of Object.keys(ne)) S.push(ne[r].short()), O.push(ne[r].long());
+					disableContributorRequests: b,
+					over18: g,
+					publicDescription: E,
+					restrictCommenting: v,
+					restrictPosting: C,
+					subredditType: _,
+					title: k,
+					welcomeMessageEnabled: y,
+					welcomeMessageText: O
+				} = n, S = [], w = [];
+				for (const r of Object.keys(ne)) w.push(ne[r].short()), S.push(ne[r].long());
+				const I = O && p.length > 0;
 				return r.a.createElement(h.a, null, r.a.createElement(z.a, null, r.a.createElement(h.b, null, N.fbt._("Community settings", null, {
 					hk: "3mvH70"
 				})), r.a.createElement(A.a, null, N.fbt._("Community Profile", null, {
@@ -4443,7 +4444,7 @@
 					maxChars: q.d,
 					onChange: e => d(e.currentTarget.value, "title"),
 					textContainerClassName: te.a.fullWidthTextContainer,
-					value: _ || ""
+					value: k || ""
 				}), r.a.createElement(L.k, {
 					label: N.fbt._("Community topics", null, {
 						hk: "49aoGo"
@@ -4485,16 +4486,16 @@
 					subtext: N.fbt._("This is how new members come to understand your community.", null, {
 						hk: "llaA4"
 					}),
-					value: g || ""
+					value: E || ""
 				}), r.a.createElement(L.o, {
-					className: k ? te.a.welcomeMessageEnabled : void 0,
-					on: k,
-					onClick: () => d(!k, "welcomeMessageEnabled"),
+					className: y ? te.a.welcomeMessageEnabled : void 0,
+					on: y,
+					onClick: () => d(!y, "welcomeMessageEnabled"),
 					label: N.fbt._("Send welcome message to new members", null, {
 						hk: "4euZSE"
 					}),
-					subtext: r.a.createElement("span", null, N.fbt._("Create a custom message that new members will see as a prompt after joining and/or as a direct message to their inbox. Keep your message under 500 characters if you’d like it to display as a prompt right after joining. This field supports markdown.", null, {
-						hk: "Qne1T"
+					subtext: r.a.createElement("span", null, N.fbt._("Create a custom welcome message to greet people the instant they join your community. New community members will see this as soon as they join, and in a direct message 1 hour after joining.", null, {
+						hk: "2S5EV5"
 					}), " ", r.a.createElement(B.a, {
 						className: te.a.welcomeMessageHelpLink,
 						href: "https://mods.reddithelp.com/hc/en-us/articles/360002551551-Welcoming-new-members",
@@ -4503,19 +4504,18 @@
 					}, N.fbt._("Learn more.", null, {
 						hk: "NkFhF"
 					})))
-				}), k && r.a.createElement(r.a.Fragment, null, r.a.createElement(L.g, {
-					actionLink: r.a.createElement(r.a.Fragment, null, y && y.length <= 500 && r.a.createElement(D.a, {
+				}), y && r.a.createElement(r.a.Fragment, null, r.a.createElement(L.g, {
+					actionLink: r.a.createElement(r.a.Fragment, null, I && r.a.createElement(D.a, {
 						className: te.a.previewButton,
 						onClick: m
 					}, N.fbt._("Save and show me a preview", null, {
 						hk: "1HXlZ"
 					})), r.a.createElement(D.a, {
 						className: te.a.previewButton,
-						onClick: () => i(o, y)
+						onClick: () => i(o, O)
 					}, N.fbt._("Send me a test message", null, {
 						hk: "4iE1go"
 					}))),
-					hideCountdown: (y || "").length > 500,
 					label: null,
 					onChange: e => {
 						d(e.currentTarget.value, "welcomeMessageText")
@@ -4526,17 +4526,7 @@
 					}),
 					maxChars: q.e,
 					rows: 5,
-					value: y || "",
-					warning: (y || "").length > 500 ? r.a.createElement("div", {
-						className: te.a.warning
-					}, N.fbt._({
-						"*": "{characters} Characters",
-						_1: "1 Character"
-					}, [N.fbt._plural((y || "").length, "characters")], {
-						hk: "21H5Ye"
-					}), " ", N.fbt._("- Messages over 500 characters will only be sent as a direct message", null, {
-						hk: "3QcgDF"
-					})) : void 0
+					value: O || ""
 				})), r.a.createElement(se, {
 					subredditId: a,
 					update: d,
@@ -4549,12 +4539,12 @@
 					}),
 					direction: "column"
 				}, r.a.createElement(U.a, {
-					value: C,
+					value: _,
 					name: "type",
 					onChange: e => d(e, "subredditType")
 				}, Object(V.radioOptions)(t, s))), r.a.createElement(L.o, {
-					on: b,
-					onClick: () => d(!b, "over18"),
+					on: g,
+					onClick: () => d(!g, "over18"),
 					label: r.a.createElement("span", null, N.fbt._("18+ year old community", null, {
 						hk: "3VzYZp"
 					}), r.a.createElement(L.l, {
@@ -4563,33 +4553,33 @@
 					subtext: N.fbt._("When your community is marked as an 18+ community, users must be flagged as 18+ in their user settings", null, {
 						hk: "2h28m0"
 					})
-				}), "restricted" === C && r.a.createElement(r.a.Fragment, null, r.a.createElement(A.a, null, N.fbt._("Restricted Community Settings", null, {
+				}), "restricted" === _ && r.a.createElement(r.a.Fragment, null, r.a.createElement(A.a, null, N.fbt._("Restricted Community Settings", null, {
 					hk: "1HiDiC"
 				})), r.a.createElement(L.d, {
 					label: N.fbt._("Approved users have the ability to", null, {
 						hk: "2pduhW"
 					}),
-					items: S,
+					items: w,
 					selected: (() => {
 						let e = W.e.Post;
-						return E && v ? e = W.e.PostAndComment : E && (e = W.e.Comment), ne[e].short()
+						return v && C ? e = W.e.PostAndComment : v && (e = W.e.Comment), ne[e].short()
 					})(),
 					onClick: e => {
 						e === ne[W.e.PostAndComment].short() ? (d(!0, W.f.Comment), d(!0, W.f.Post)) : e === ne[W.e.Comment].short() ? (d(!1, W.f.Post), d(!0, W.f.Comment)) : e === ne[W.e.Post].short() && (d(!0, W.f.Post), d(!1, W.f.Comment))
 					},
 					id: "restrictionOptions",
-					descriptions: O
+					descriptions: S
 				}), r.a.createElement(L.o, {
-					on: !p,
-					onClick: () => d(!p, "disableContributorRequests"),
+					on: !b,
+					onClick: () => d(!b, "disableContributorRequests"),
 					label: N.fbt._("Accepting new requests to post", null, {
 						hk: "bTpYB"
 					})
-				})), "private" === C && r.a.createElement(r.a.Fragment, null, r.a.createElement(A.a, null, N.fbt._("Private Community Settings", null, {
+				})), "private" === _ && r.a.createElement(r.a.Fragment, null, r.a.createElement(A.a, null, N.fbt._("Private Community Settings", null, {
 					hk: "2JjNXE"
 				})), r.a.createElement(L.o, {
-					on: !p,
-					onClick: () => d(!p, "disableContributorRequests"),
+					on: !b,
+					onClick: () => d(!b, "disableContributorRequests"),
 					label: N.fbt._("Accepting requests to join", null, {
 						hk: "1l1acS"
 					})
@@ -5101,13 +5091,14 @@
 				selectedPrimaryTag: I.s,
 				hasSecondaryTags: I.m,
 				geoPlace: (e, t) => e.tags.models.geoPlaces[t.subredditId],
-				isWelcomeMessageExperimentEnabledSelector: _.a,
+				welcomeMessageExperimentVariant: _.a,
 				subredditHasPowerups: (e, t) => Object(k.g)(e, {
 					subredditId: t.subredditId
 				}),
 				powerupsBenefitSettings: (e, t) => Object(y.a)(e, {
 					subredditId: t.subredditId
-				})
+				}),
+				subredditRules: S.S
 			}), _e = Object(i.b)(Ce, (e, {
 				subredditId: t
 			}) => ({
@@ -16353,7 +16344,7 @@
 				}, !e.hideCountdown && a.a.createElement(m.a, {
 					maxChars: e.maxChars,
 					text: e.value || ""
-				}), e.warning && e.warning, !!e.actionLink && a.a.createElement("div", {
+				}), !!e.actionLink && a.a.createElement("div", {
 					className: B.a.ActionLinkContainer
 				}, e.actionLink)))
 		},
@@ -22680,4 +22671,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.d465dc580cfc64e727d4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.fc110d13a1c1a3709914.js.map
