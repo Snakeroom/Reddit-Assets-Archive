@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.d11e44202f70441d25ac.js
-// Retrieved at 8/12/2021, 7:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.01a0b5bea2772c3dcb14.js
+// Retrieved at 8/16/2021, 12:20:11 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./node_modules/uuid/index.js": function(e, t, n) {
@@ -62,9 +62,9 @@
 			})), n.d(t, "d", (function() {
 				return V
 			})), n.d(t, "a", (function() {
-				return J
-			})), n.d(t, "b", (function() {
 				return Z
+			})), n.d(t, "b", (function() {
+				return J
 			})), n.d(t, "n", (function() {
 				return $
 			})), n.d(t, "c", (function() {
@@ -248,9 +248,9 @@
 						commentsPageKey: t,
 						isCollapsed: c
 					})), 0 === n && o(a, !0), Object(p.d)()
-				}, q = Object(i.a)(I.r), J = e => t => t(q({
+				}, q = Object(i.a)(I.r), Z = e => t => t(q({
 					draftKey: e
-				})), Z = Object(i.a)(I.a), $ = Object(i.a)(I.E), X = Object(i.a)(I.b), Y = Object(i.a)(I.u)
+				})), J = Object(i.a)(I.a), $ = Object(i.a)(I.E), X = Object(i.a)(I.b), Y = Object(i.a)(I.u)
 		},
 		"./src/reddit/actions/comment/moderation.ts": function(e, t, n) {
 			"use strict";
@@ -630,7 +630,7 @@
 			})), n.d(t, "c", (function() {
 				return q
 			})), n.d(t, "d", (function() {
-				return J
+				return Z
 			}));
 			var o = n("./node_modules/fbt/lib/FbtPublic.js"),
 				s = n("./node_modules/uuid/index.js"),
@@ -912,7 +912,7 @@
 					}
 				};
 
-			function J(e, t) {
+			function Z(e, t) {
 				return async (n, o, {
 					gqlContext: s
 				}) => {
@@ -1688,13 +1688,13 @@
 						}),
 						V = A.flair.filter(e => e.type !== y.f.Nsfw && e.type !== y.f.Spoiler).length > 0,
 						q = Object(w.b)(A),
-						J = !(!A.approvedBy || !q),
-						Z = a ? void 0 : l,
+						Z = !(!A.approvedBy || !q),
+						J = a ? void 0 : l,
 						$ = Object(P.a)(A),
 						X = u ? L : D;
 					return s.a.createElement(S.g, null, n && s.a.createElement(s.a.Fragment, null, !A.isSponsored && s.a.createElement(s.a.Fragment, null, s.a.createElement(S.e, {
-						className: X(_.a.Approve, Z),
-						displayText: J ? C.fbt._("reapprove", null, {
+						className: X(_.a.Approve, J),
+						displayText: Z ? C.fbt._("reapprove", null, {
 							hk: "ZucfK"
 						}) : A.approvedBy ? C.fbt._("approved", null, {
 							hk: "nlSCc"
@@ -1703,7 +1703,7 @@
 						}),
 						onClick: p
 					}, s.a.createElement(S.a, null)), s.a.createElement(S.e, {
-						className: X(_.a.Remove, Z),
+						className: X(_.a.Remove, J),
 						displayText: A.isRemoved ? C.fbt._("removed", null, {
 							hk: "cSGLt"
 						}) : C.fbt._("remove", null, {
@@ -1711,7 +1711,7 @@
 						}),
 						onClick: g
 					}, s.a.createElement(S.i, null)), s.a.createElement(S.e, {
-						className: X(_.a.Spam, Z),
+						className: X(_.a.Spam, J),
 						displayText: A.isSpam ? C.fbt._("Removed as spam", null, {
 							hk: "2olZT7"
 						}) : C.fbt._("Remove as spam", null, {
@@ -1719,7 +1719,7 @@
 						}),
 						onClick: T
 					}, s.a.createElement(S.j, null))), e && s.a.createElement(S.e, {
-						className: X(_.a.Flair, Z),
+						className: X(_.a.Flair, J),
 						displayText: V ? C.fbt._("Edit post flair", null, {
 							hk: "2oet1"
 						}) : C.fbt._("Add post flair", null, {
@@ -3093,14 +3093,14 @@
 			const r = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: o.bd
-					}) === o.ld.Enabled
+						experimentName: o.ad
+					}) === o.kd.Enabled
 				},
 				i = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: o.ad
-					}) === o.kd.Enabled
+						experimentName: o.Zc
+					}) === o.jd.Enabled
 				}
 		},
 		"./src/reddit/selectors/features/predictions/creation/index.ts": function(e, t, n) {
@@ -3226,4 +3226,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.d11e44202f70441d25ac.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.01a0b5bea2772c3dcb14.js.map

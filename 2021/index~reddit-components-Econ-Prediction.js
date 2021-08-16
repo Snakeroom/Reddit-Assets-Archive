@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.7cc22c840dbe459e2425.js
-// Retrieved at 8/16/2021, 12:10:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.529ea425df14a331a16c.js
+// Retrieved at 8/16/2021, 12:20:11 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index~reddit-components-Econ-Prediction"], {
 		"./node_modules/lodash/_LazyWrapper.js": function(a, i, r) {
@@ -1564,7 +1564,7 @@
 				onCancel: a,
 				selectedChipPack: i
 			}) {
-				const r = Object(k.e)(u.t),
+				const r = Object(k.e)(u.s),
 					n = Object(k.e)(y.d),
 					[o, e] = Object(t.useState)(null),
 					[m, l] = Object(t.useState)(!1),
@@ -1739,7 +1739,7 @@
 			const {
 				fbt: K
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), X = 1e3, Z = Object(n.c)({
-				isNewPredictionsSheet: u.t,
+				isNewPredictionsSheet: u.s,
 				userCoins: y.d
 			});
 			i.b = Object(k.b)(Z)(Object(o.a)(({
@@ -3746,4 +3746,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.7cc22c840dbe459e2425.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.529ea425df14a331a16c.js.map

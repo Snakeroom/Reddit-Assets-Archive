@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RedesignChat.e1c816bc0bae19891abf.js
-// Retrieved at 8/12/2021, 7:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RedesignChat.0db569e5a5a29d375539.js
+// Retrieved at 8/16/2021, 12:20:11 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RedesignChat"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -52,17 +52,17 @@
 				y = n("./src/lib/CSSVariableProvider/index.tsx"),
 				S = n("./src/lib/lessComponent.tsx"),
 				N = n("./src/chat/components/MinimizedPortalContainer/index.tsx"),
-				T = n("./src/chat/components/Root/index.tsx"),
-				w = n("./src/chat/constants/container.ts"),
+				w = n("./src/chat/components/Root/index.tsx"),
+				T = n("./src/chat/constants/container.ts"),
 				R = n("./src/chat/helpers/chatSelector.ts"),
 				P = n("./src/chat/components/PortalContainer/index.m.less"),
 				A = n.n(P);
 			const {
-				embed: D,
-				hidden: M
-			} = w.b;
+				embed: B,
+				hidden: D
+			} = T.b;
 
-			function B(e) {
+			function M(e) {
 				return void 0 !== e ? e : -1
 			}
 			const U = S.a.wrapped(e => s.a.createElement("div", {
@@ -71,15 +71,15 @@
 				k = S.a.wrapped(e => s.a.createElement("div", {
 					className: e.className,
 					style: {
-						width: `${B(D.width)}px`,
-						height: `${B(D.height)}px`
+						width: `${M(B.width)}px`,
+						height: `${M(B.height)}px`
 					}
 				}, e.children), "EmbedPortalContainer", A.a),
 				I = S.a.wrapped(e => s.a.createElement("div", {
 					className: e.className,
 					style: {
-						width: `${B(M.width)}px`,
-						height: `${B(M.height)}px`
+						width: `${M(D.width)}px`,
+						height: `${M(D.height)}px`
 					}
 				}, e.children), "HiddenPortalContainer", A.a),
 				q = S.a.wrapped(N.a, "MinimizedRedesignPortalContainer", A.a),
@@ -90,13 +90,13 @@
 
 			function G(e) {
 				switch (e.container) {
-					case w.a.EMBED:
+					case T.a.EMBED:
 						return s.a.createElement(k, null, e.children);
-					case w.a.HIDDEN:
+					case T.a.HIDDEN:
 						return s.a.createElement(I, null, e.children);
-					case w.a.FULL:
+					case T.a.FULL:
 						return s.a.createElement(L, null, e.children);
-					case w.a.MINIMIZED:
+					case T.a.MINIMIZED:
 						return s.a.createElement(q, null);
 					default:
 						return s.a.createElement(k, null, e.children)
@@ -227,7 +227,7 @@
 						}
 					}, function(e, t) {
 						const n = Object(v.b)(z)(G);
-						return s.a.createElement("div", null, Object(y.d)(s.a.createElement(n, null, Object(T.a)(e, t)), document.body))
+						return s.a.createElement("div", null, Object(y.d)(s.a.createElement(n, null, Object(w.a)(e, t)), document.body))
 					}(e, t)),
 					appName: l.l.Chat,
 					history: Object(r.d)({
@@ -749,10 +749,10 @@
 				a = n("./src/reddit/selectors/experiments/index.ts"),
 				i = n("./src/reddit/selectors/experiments/utils.ts");
 			const o = Object(c.a)(e => Object(r.c)(e, {
-					experimentName: s.xc,
+					experimentName: s.wc,
 					experimentEligibilitySelector: a.e
 				}), i.a),
-				d = Object(c.a)(o, e => e === s.Ac.Enabled)
+				d = Object(c.a)(o, e => e === s.zc.Enabled)
 		},
 		"./src/reddit/selectors/experiments/inboxRedesign.ts": function(e, t, n) {
 			"use strict";
@@ -786,12 +786,12 @@
 					experimentName: s.Z,
 					experimentEligibilitySelector: a.e
 				}), i.a),
-				d = Object(c.a)(o, e => e === s.Gc.Enabled),
+				d = Object(c.a)(o, e => e === s.Fc.Enabled),
 				u = Object(c.a)(e => Object(r.c)(e, {
-					experimentName: s.zc,
+					experimentName: s.yc,
 					experimentEligibilitySelector: a.e
 				}), i.a),
-				l = Object(c.a)(d, u, (e, t) => e && t === s.Fc.Enabled),
+				l = Object(c.a)(d, u, (e, t) => e && t === s.Ec.Enabled),
 				b = Object(c.a)(e => Object(r.c)(e, {
 					experimentName: s.cb,
 					experimentEligibilitySelector: a.e
@@ -801,14 +801,14 @@
 					experimentName: s.W,
 					experimentEligibilitySelector: a.e
 				}), i.a),
-				p = Object(c.a)(h, e => e === s.Cc.Banner_1st_time),
-				x = Object(c.a)(h, e => e === s.Cc.Tooltip_persist),
-				j = Object(c.a)(h, e => e === s.Cc.Tooltip_1st_time),
+				p = Object(c.a)(h, e => e === s.Bc.Banner_1st_time),
+				x = Object(c.a)(h, e => e === s.Bc.Tooltip_persist),
+				j = Object(c.a)(h, e => e === s.Bc.Tooltip_1st_time),
 				f = Object(c.a)(e => Object(r.c)(e, {
 					experimentName: s.X,
 					experimentEligibilitySelector: a.e
 				}), i.a),
-				O = Object(c.a)(f, e => e === s.Dc.ContinuousScroll),
+				O = Object(c.a)(f, e => e === s.Cc.ContinuousScroll),
 				g = Object(c.a)(e => Object(r.c)(e, {
 					experimentName: s.R,
 					experimentEligibilitySelector: a.e
@@ -819,11 +819,11 @@
 					experimentName: s.Y,
 					experimentEligibilitySelector: a.e
 				}), i.a),
-				v = Object(c.a)(_, e => e === s.Ec.Enabled)
+				v = Object(c.a)(_, e => e === s.Dc.Enabled)
 		},
 		"./src/redditGQL/operations/BadgeIndicators.json": function(e) {
 			e.exports = JSON.parse('{"id":"712476d48c90"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.e1c816bc0bae19891abf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.0db569e5a5a29d375539.js.map

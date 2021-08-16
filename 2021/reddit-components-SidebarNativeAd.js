@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.1c1f9fc208a9b2b0cb4d.js
-// Retrieved at 8/12/2021, 7:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.4c0ef4a9a8fdf78dc0d3.js
+// Retrieved at 8/16/2021, 12:20:11 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, r) {
@@ -1447,7 +1447,7 @@
 						subreddit: r
 					} = e, {
 						isSponsored: n
-					} = t, s = Object(U.a)(), i = Object(B.a)(m.mc) === m.qc.Enabled;
+					} = t, s = Object(U.a)(), i = Object(B.a)(m.lc) === m.pc.Enabled;
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return o.a.createElement(Y, {
 						nowrap: e.nowrap
 					}, o.a.createElement(X, e));
@@ -3540,4 +3540,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.1c1f9fc208a9b2b0cb4d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.4c0ef4a9a8fdf78dc0d3.js.map

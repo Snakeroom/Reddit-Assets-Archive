@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditForkingCTA.e948229dae39448b688d.js
-// Retrieved at 8/16/2021, 10:30:14 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditForkingCTA.63ac08fd3a0fc87c0bd6.js
+// Retrieved at 8/16/2021, 12:20:11 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditForkingCTA"], {
 		"./src/reddit/components/CreateCommunityButton/index.m.less": function(t, e, _) {
@@ -63,7 +63,7 @@
 					className: t,
 					disabled: p || l,
 					onClick: t => {
-						y && y(t), _ === c.Kd.Tabs ? window.open("/subreddits/create", "_blank") : i(d)
+						y && y(t), _ === c.Jd.Tabs ? window.open("/subreddits/create", "_blank") : i(d)
 					},
 					onMouseEnter: s,
 					onMouseLeave: a,
@@ -174,9 +174,9 @@
 			})), _.d(e, "a", (function() {
 				return E
 			})), _.d(e, "s", (function() {
-				return F
-			})), _.d(e, "c", (function() {
 				return I
+			})), _.d(e, "c", (function() {
+				return F
 			}));
 			var n = _("./src/lib/classNames/index.ts"),
 				r = _("./src/lib/lessComponent.tsx"),
@@ -216,8 +216,8 @@
 				B = r.a.wrapped(a.i, "WarningButton", c.a),
 				T = r.a.wrapped(a.i, "PrimaryButton", c.a),
 				E = r.a.wrapped(a.l, "CancelButton", c.a),
-				F = r.a.wrapped(a.o, "RemoveButton", c.a),
-				I = ({
+				I = r.a.wrapped(a.o, "RemoveButton", c.a),
+				F = ({
 					className: t,
 					...e
 				}) => s.a.createElement(a.q, u({
@@ -244,10 +244,10 @@
 				m = _("./src/reddit/helpers/chooseVariant/index.ts"),
 				p = _("./src/reddit/selectors/experiments/utils.ts");
 			const y = Object(c.a)(t => Object(m.c)(t, {
-					experimentName: u.Fd,
+					experimentName: u.Ed,
 					experimentEligibilitySelector: m.a
 				}), p.a),
-				x = Object(c.a)(y, t => t === u.Nd.Enabled);
+				x = Object(c.a)(y, t => t === u.Md.Enabled);
 			var b = _("./src/reddit/selectors/posts.ts"),
 				f = _("./src/reddit/components/CreateCommunityButton/index.tsx"),
 				h = _("./src/reddit/components/TrackingHelper/index.tsx");
@@ -1573,15 +1573,15 @@
 				r = _("./src/reddit/constants/experiments.ts");
 			e.a = (t, e) => {
 				switch (t) {
-					case r.Ld.Add:
+					case r.Kd.Add:
 						return n.fbt._("Add Community", null, {
 							hk: "nuvEI"
 						});
-					case r.Ld.Start:
+					case r.Kd.Start:
 						return n.fbt._("Start Community", null, {
 							hk: "244eL5"
 						});
-					case r.Ld.Create:
+					case r.Kd.Create:
 						return n.fbt._("Create Subreddit", null, {
 							hk: "1Qw5ax"
 						});
@@ -1603,14 +1603,14 @@
 				s = _("./src/reddit/selectors/experiments/index.ts"),
 				a = _("./src/reddit/selectors/experiments/utils.ts");
 			const i = Object(n.a)(t => Object(o.c)(t, {
-					experimentName: r.Bd,
+					experimentName: r.Ad,
 					experimentEligibilitySelector: s.e
 				}), a.a),
 				d = Object(n.a)(t => Object(o.c)(t, {
-					experimentName: r.Cd,
+					experimentName: r.Bd,
 					experimentEligibilitySelector: s.e
 				}), a.a)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditForkingCTA.e948229dae39448b688d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditForkingCTA.63ac08fd3a0fc87c0bd6.js.map

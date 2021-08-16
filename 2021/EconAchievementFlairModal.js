@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconAchievementFlairModal.b16d15e76dc26627ec54.js
-// Retrieved at 8/12/2021, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconAchievementFlairModal.29a670ac1f33098c3371.js
+// Retrieved at 8/16/2021, 12:20:11 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconAchievementFlairModal"], {
 		"./src/reddit/components/Econ/AchievementFlair/AchievementFlairModal/AchievementFlairs.m.less": function(e, t, a) {
@@ -604,4 +604,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconAchievementFlairModal.b16d15e76dc26627ec54.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconAchievementFlairModal.29a670ac1f33098c3371.js.map
