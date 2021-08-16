@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index.9a4022815aeb75f2bb6c.js
-// Retrieved at 8/12/2021, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index.a7c74764590aa5149637.js
+// Retrieved at 8/16/2021, 12:10:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index"], {
 		"./src/reddit/components/Econ/Prediction/TournamentPostBody/PredictionContainer/index.m.less": function(e, t, n) {
@@ -86,7 +86,7 @@
 				return i.a.createElement(v.a, {
 					className: g.a.container,
 					to: `${null==s?void 0:s.url}predictions/`,
-					onClick: () => o(Object(T.i)(e))
+					onClick: () => o(Object(T.f)(e))
 				}, i.a.createElement("div", {
 					className: g.a.playTournament
 				}, n ? _._("View Tournament", null, {
@@ -170,7 +170,7 @@
 									hk: "22UWEr"
 								})), void y(null);
 								if (!P || !_) throw new Error("Invalid arguments, optionId and pollId must be strings");
-								g(!0), c(Object(T.r)({
+								g(!0), c(Object(T.o)({
 									pollId: P,
 									selectedNumberTokens: t.amount
 								}));
@@ -245,6 +245,7 @@
 				}))), !$ && i.a.createElement(x.a, {
 					disabled: g || v || !!G,
 					isEnded: Y,
+					postId: s.id,
 					userSelection: G,
 					isShowingHint: v,
 					tournamentId: t,
@@ -282,7 +283,7 @@
 				return i.a.createElement(v.a, {
 					className: G.a.viewTournament,
 					to: `${null==n?void 0:n.url}predictions/`,
-					onClick: () => t(Object(T.i)(e))
+					onClick: () => t(Object(T.f)(e))
 				}, K._("Go to Tournament", null, {
 					hk: "1QaAgH"
 				}))
@@ -317,4 +318,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.9a4022815aeb75f2bb6c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.a7c74764590aa5149637.js.map

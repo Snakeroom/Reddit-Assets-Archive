@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.020c120f3b1219f4b80a.js
-// Retrieved at 8/12/2021, 7:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.890dbfaa3d699bcc870c.js
+// Retrieved at 8/16/2021, 12:10:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"], {
 		"./src/lib/linkMatchers/index.ts": function(e, t, n) {
@@ -1566,7 +1566,7 @@
 						subredditId: e
 					}));
 				return Object(r.useEffect)(() => {
-					o && a(Object(D.A)())
+					o && a(Object(D.x)())
 				}, [o, a]), Object(r.useEffect)(() => {
 					(async () => {
 						u && !d && (t(Object(A.k)(l.name)), c(!0))
@@ -1578,7 +1578,7 @@
 						t(Object(T.p)({
 							subredditId: e,
 							forceState: !1
-						})), a(Object(D.k)())
+						})), a(Object(D.h)())
 					},
 					to: `${l.url}predictions/`
 				}, G._("Predictions", null, {
@@ -2674,60 +2674,54 @@
 		},
 		"./src/reddit/helpers/trackers/predictions.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "s", (function() {
+			n.d(t, "p", (function() {
 				return a
-			})), n.d(t, "t", (function() {
-				return o
-			})), n.d(t, "u", (function() {
-				return d
-			})), n.d(t, "o", (function() {
-				return c
-			})), n.d(t, "w", (function() {
-				return l
 			})), n.d(t, "q", (function() {
-				return u
+				return o
 			})), n.d(t, "r", (function() {
+				return d
+			})), n.d(t, "l", (function() {
+				return c
+			})), n.d(t, "t", (function() {
+				return l
+			})), n.d(t, "n", (function() {
+				return u
+			})), n.d(t, "o", (function() {
 				return m
-			})), n.d(t, "p", (function() {
+			})), n.d(t, "m", (function() {
 				return p
 			})), n.d(t, "a", (function() {
 				return b
-			})), n.d(t, "v", (function() {
+			})), n.d(t, "s", (function() {
 				return h
-			})), n.d(t, "g", (function() {
+			})), n.d(t, "d", (function() {
 				return f
-			})), n.d(t, "y", (function() {
+			})), n.d(t, "v", (function() {
 				return g
-			})), n.d(t, "n", (function() {
+			})), n.d(t, "k", (function() {
 				return x
-			})), n.d(t, "A", (function() {
-				return v
-			})), n.d(t, "j", (function() {
-				return w
-			})), n.d(t, "z", (function() {
-				return j
 			})), n.d(t, "x", (function() {
+				return v
+			})), n.d(t, "g", (function() {
+				return w
+			})), n.d(t, "w", (function() {
+				return j
+			})), n.d(t, "u", (function() {
 				return O
-			})), n.d(t, "f", (function() {
+			})), n.d(t, "c", (function() {
 				return _
-			})), n.d(t, "l", (function() {
+			})), n.d(t, "i", (function() {
 				return y
-			})), n.d(t, "h", (function() {
+			})), n.d(t, "e", (function() {
 				return E
 			})), n.d(t, "b", (function() {
 				return k
-			})), n.d(t, "m", (function() {
+			})), n.d(t, "j", (function() {
 				return I
-			})), n.d(t, "k", (function() {
+			})), n.d(t, "h", (function() {
 				return C
-			})), n.d(t, "i", (function() {
+			})), n.d(t, "f", (function() {
 				return N
-			})), n.d(t, "c", (function() {
-				return S
-			})), n.d(t, "e", (function() {
-				return P
-			})), n.d(t, "d", (function() {
-				return T
 			}));
 			var r = n("./src/reddit/models/Prediction/index.ts"),
 				s = n("./src/reddit/selectors/telemetry.ts");
@@ -2934,36 +2928,6 @@
 					post: Object(s.post)(t, e),
 					predictions: Object(s.predictions)(t, e),
 					subreddit: Object(s.subreddit)(t)
-				}),
-				S = e => t => ({
-					...Object(s.defaults)(t),
-					source: "predictions",
-					action: "click",
-					noun: "predictions_option_change",
-					post: Object(s.post)(t, e),
-					predictions: Object(s.predictions)(t, e),
-					subreddit: Object(s.subreddit)(t)
-				}),
-				P = e => t => ({
-					...Object(s.defaults)(t),
-					source: "predictions_option_change",
-					action: "click",
-					noun: "confirm",
-					post: Object(s.post)(t, e),
-					predictions: Object(s.predictions)(t, e),
-					subreddit: Object(s.subreddit)(t)
-				}),
-				T = e => t => ({
-					...Object(s.defaults)(t),
-					source: "predictions",
-					action: "click",
-					noun: "premium",
-					post: Object(s.post)(t, e),
-					predictions: Object(s.predictions)(t, e),
-					subreddit: Object(s.subreddit)(t),
-					actionInfo: {
-						reason: "predictions_option_change"
-					}
 				})
 		},
 		"./src/reddit/helpers/trackers/subredditWiki.ts": function(e, t, n) {
@@ -3350,4 +3314,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.020c120f3b1219f4b80a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.890dbfaa3d699bcc870c.js.map
