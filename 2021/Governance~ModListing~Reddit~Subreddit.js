@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.1ac603b22845c25bf110.js
-// Retrieved at 8/16/2021, 7:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.de06655cea4d18f0f7c6.js
+// Retrieved at 8/16/2021, 7:20:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~Subreddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, r) {
@@ -82,6 +82,7 @@
 				ban_fill: "ban_fill",
 				best: "best",
 				best_fill: "best_fill",
+				block: "block",
 				bold: "bold",
 				bold_fill: "bold_fill",
 				bot: "bot",
@@ -808,7 +809,7 @@
 			r.d(t, "l", (function() {
 				return B
 			})), r.d(t, "k", (function() {
-				return H
+				return W
 			})), r.d(t, "j", (function() {
 				return z
 			})), r.d(t, "e", (function() {
@@ -894,7 +895,7 @@
 						M[r] && !e[r] && M[r].forEach(e => t[e] = null)
 					}), t
 				},
-				H = (e, t, r, o) => async (n, i, s) => {
+				W = (e, t, r, o) => async (n, i, s) => {
 					const {
 						apiContext: c
 					} = s, a = i(), d = F(t), p = a.structuredStyles.models[e];
@@ -950,10 +951,10 @@
 							success: O.ok
 						}
 					})
-				}, W = Object(d.a)(A.l), G = Object(d.a)(A.k), q = Object(d.a)(A.j), z = e => async (t, r, {
+				}, H = Object(d.a)(A.l), G = Object(d.a)(A.k), q = Object(d.a)(A.j), z = e => async (t, r, {
 					apiContext: o
 				}) => {
-					t(W({
+					t(H({
 						subredditId: e
 					}));
 					const n = Object(g.T)(r(), {
@@ -2250,7 +2251,7 @@
 			const k = Object(d.a)(j.a, j.j, (e, {
 					isSponsored: t,
 					postId: r
-				}) => t && r ? Object(O.b)(e, r) : null, O.H, y.actionInfo, (e, t, r, o, n) => ({
+				}) => t && r ? Object(O.b)(e, r) : null, O.I, y.actionInfo, (e, t, r, o, n) => ({
 					allowClickTracking: e,
 					basePixelMetadata: r,
 					userId: t ? Object(_.a)(t.id) : null,
@@ -2631,9 +2632,9 @@
 			})), r.d(t, "h", (function() {
 				return F
 			})), r.d(t, "e", (function() {
-				return H
-			})), r.d(t, "f", (function() {
 				return W
+			})), r.d(t, "f", (function() {
+				return H
 			})), r.d(t, "b", (function() {
 				return G
 			})), r.d(t, "v", (function() {
@@ -2897,14 +2898,14 @@
 						...B(e, t)
 					})
 				},
-				H = (e, t) => {
+				W = (e, t) => {
 					Object(u.a)({
 						noun: t.draftId ? "draft_update" : "draft_create",
 						...m(e),
 						...B(e, t)
 					})
 				},
-				W = (e, t) => {
+				H = (e, t) => {
 					Object(u.a)({
 						noun: "draft_delete",
 						...m(e),
@@ -3381,7 +3382,7 @@
 							break;
 						case i.Jb.SETTINGS: {
 							const n = e;
-							Object(y.a)(W(r, o)(t)), n.match.params.page === i.Xb.Profile && Object(u.k)(t);
+							Object(y.a)(H(r, o)(t)), n.match.params.page === i.Xb.Profile && Object(u.k)(t);
 							break
 						}
 						case i.Jb.POST_CREATION:
@@ -3408,7 +3409,7 @@
 							Object(y.a)(M(r, o)(t)), Object(y.a)(F()(t));
 							break;
 						case i.Jb.APPEAL:
-							Object(y.a)(H(r, o)(t));
+							Object(y.a)(W(r, o)(t));
 							break;
 						case i.Jb.INBOX_PAGES:
 							_ && U(t);
@@ -3702,14 +3703,14 @@
 					noun: "screen",
 					...w(e)
 				}),
-				H = (e, t) => r => ({
+				W = (e, t) => r => ({
 					source: "appeal",
 					action: "view",
 					noun: "page",
 					...w(r),
 					timer: O.timer(e, t)
 				}),
-				W = (e, t) => r => ({
+				H = (e, t) => r => ({
 					source: "global",
 					action: "view",
 					noun: "screen",
@@ -4108,7 +4109,7 @@
 				},
 				D = (e, t, r, o, c, u, f) => {
 					if (!o) {
-						o = Object(a.H)(e, {
+						o = Object(a.I)(e, {
 							postId: u
 						}).belongsTo
 					}
@@ -4487,12 +4488,12 @@
 					pageLayer: t
 				}) => Object(i.L)(t), (e, t, r) => !e && !t && r),
 				l = Object(o.a)((e, t) => Object(s.c)(e, {
-					experimentName: n.ub,
+					experimentName: n.wb,
 					experimentEligibilitySelector: e => a(e, t)
 				}), e => e),
-				d = e => e === n.Ud.NoCommunityWidgets,
-				u = e => e === n.Ud.NoRulesModerators,
-				f = e => e === n.Ud.RelatedPostsDu
+				d = e => e === n.Wd.NoCommunityWidgets,
+				u = e => e === n.Wd.NoRulesModerators,
+				f = e => e === n.Wd.RelatedPostsDu
 		},
 		"./src/reddit/selectors/tooltip.ts": function(e, t, r) {
 			"use strict";
@@ -4506,4 +4507,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.1ac603b22845c25bf110.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.de06655cea4d18f0f7c6.js.map

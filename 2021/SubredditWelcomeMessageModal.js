@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWelcomeMessageModal.21fd342a8911bc46e60c.js
-// Retrieved at 8/16/2021, 7:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWelcomeMessageModal.4721c6cded2c1d37a16a.js
+// Retrieved at 8/16/2021, 7:20:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWelcomeMessageModal"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -487,10 +487,10 @@
 						style: t
 					}, e.children)
 				},
-				N = Object(o.b)(() => Object(d.a)(y.G, _.cb, (e, {
+				N = Object(o.b)(() => Object(d.a)(y.H, _.cb, (e, {
 					isSponsored: t,
 					postId: s
-				}) => t && s ? Object(y.b)(e, s) : null, v.a, E.actionInfo, y.H, (e, t, s, n, r, i) => ({
+				}) => t && s ? Object(y.b)(e, s) : null, v.a, E.actionInfo, y.I, (e, t, s, n, r, i) => ({
 					postPermalink: e,
 					shouldOpenPostInNewTab: t,
 					basePixelMetadata: s,
@@ -1976,12 +1976,12 @@
 						rtJsonElementProps: i
 					});
 					switch (n) {
-						case b.Nd.SmIcon:
+						case b.Pd.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: i
 							});
-						case b.Nd.SmIconHc:
+						case b.Pd.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -2088,7 +2088,7 @@
 				experimentVariant: e => {
 					var t;
 					return null === (t = Object(v.d)(e, {
-						experimentName: m.Hd
+						experimentName: m.Jd
 					})) || void 0 === t ? void 0 : t.variant
 				},
 				user: _.j,
@@ -2170,7 +2170,7 @@
 					rtJsonElementProps: N
 				}) : null === (i = null == _ ? void 0 : _.body) || void 0 === i ? void 0 : i.markdown)), r.a.createElement(d.g, {
 					className: k.a.modalFooter
-				}, u === m.Pd.Rules ? !j && r.a.createElement(p.q, {
+				}, u === m.Rd.Rules ? !j && r.a.createElement(p.q, {
 					priority: p.b.Secondary,
 					onClick: () => {
 						O(!0), y(b.b())
@@ -2559,12 +2559,12 @@
 				d = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: n.Fd
+						experimentName: n.Hd
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === n.Nd.SmIcon || t === n.Nd.SmIconHc
+					return t === n.Pd.SmIcon || t === n.Pd.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -2587,4 +2587,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWelcomeMessageModal.21fd342a8911bc46e60c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWelcomeMessageModal.4721c6cded2c1d37a16a.js.map

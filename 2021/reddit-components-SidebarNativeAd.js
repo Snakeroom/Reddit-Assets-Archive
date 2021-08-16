@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.78fd8cc0d808decdc298.js
-// Retrieved at 8/16/2021, 7:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.88fde6a242ab3c56b98f.js
+// Retrieved at 8/16/2021, 7:20:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, r) {
@@ -879,7 +879,7 @@
 					let b = null;
 					if (f) b = f.id;
 					else if (Object(o.a)(r)) {
-						const e = Object(m.H)(a, {
+						const e = Object(m.I)(a, {
 							postId: r
 						});
 						e && (b = e.belongsTo.id)
@@ -1447,7 +1447,7 @@
 						subreddit: r
 					} = e, {
 						isSponsored: n
-					} = t, s = Object(U.a)(), i = Object(B.a)(m.lc) === m.pc.Enabled;
+					} = t, s = Object(U.a)(), i = Object(B.a)(m.nc) === m.rc.Enabled;
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return o.a.createElement(Y, {
 						nowrap: e.nowrap
 					}, o.a.createElement(X, e));
@@ -3325,7 +3325,7 @@
 				}) => {
 					const s = Object(d.c)(e),
 						i = l.find(e => e >= r),
-						c = n ? Object(a.H)(e, {
+						c = n ? Object(a.I)(e, {
 							postId: n
 						}) || Object(o.a)(e, {
 							commentId: n
@@ -3540,4 +3540,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.78fd8cc0d808decdc298.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.88fde6a242ab3c56b98f.js.map

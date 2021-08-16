@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Collection.6b01957c143b95741ca0.js
-// Retrieved at 8/12/2021, 5:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Collection.53ec9309eedaab7595a9.js
+// Retrieved at 8/16/2021, 7:20:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Collection"], {
 		"./src/reddit/components/Collection/PostAndPostEventMeta/index.m.less": function(e, t, o) {
@@ -357,7 +357,7 @@
 					})
 				}
 			}
-			var q = Object(v.t)({
+			var V = Object(v.t)({
 					currentProfileName: v.h,
 					isCommentsPage: v.w,
 					isProfilePostListing: v.J,
@@ -368,9 +368,9 @@
 					galleryThumbnail: y.e,
 					isFutureEvent: y.i,
 					layout: v.P,
-					post: f.H,
+					post: f.I,
 					shouldShowCollectionPostEdits: y.s,
-					subredditOrProfile: f.U
+					subredditOrProfile: f.V
 				}), (e, {
 					collectionId: t,
 					postId: s,
@@ -388,8 +388,8 @@
 						Y && e(Y.editEventTimeRequested(s, t))
 					}
 				}))(Object(b.c)(Z))),
-				V = o("./src/reddit/components/Collection/index.m.less"),
-				K = o.n(V);
+				q = o("./src/reddit/components/Collection/index.m.less"),
+				K = o.n(q);
 			const {
 				fbt: $
 			} = o("./node_modules/fbt/lib/FbtPublic.js"), ee = e => n.a.createElement(m.a, {
@@ -416,11 +416,11 @@
 							postId: t
 						}),
 						s = o && (o.primaryPostId || o.postIds[0]);
-					return s && Object(f.H)(e, {
+					return s && Object(f.I)(e, {
 						postId: s
 					}) || null
 				},
-				post: f.H,
+				post: f.I,
 				shouldShowThumbnail: (e, {
 					postId: t
 				}) => {
@@ -508,7 +508,7 @@
 							className: Object(a.a)({
 								[K.a.galleryContainer]: o === g.a.GALLERY
 							})
-						}, h.map(e => n.a.createElement(q, {
+						}, h.map(e => n.a.createElement(V, {
 							collectionId: C,
 							postId: e,
 							key: e,
@@ -734,4 +734,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Collection.6b01957c143b95741ca0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Collection.53ec9309eedaab7595a9.js.map

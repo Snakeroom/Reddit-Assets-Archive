@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.4dabe9c099ad57aa421b.js
-// Retrieved at 8/12/2021, 6:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.186a8a074e124c1ef5d2.js
+// Retrieved at 8/16/2021, 7:20:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement"], {
 		"./src/reddit/actions/flairManagement/index.ts": function(e, t, s) {
@@ -69,6 +69,7 @@
 						approvedBy: void 0,
 						author: "reddit",
 						authorId: "t2_1qwk",
+						authorIsBlocked: !1,
 						awardCountsById: {},
 						bannedAtUTC: void 0,
 						bannedBy: void 0,
@@ -802,7 +803,7 @@
 				lt = s("./src/reddit/components/ModHub/flairs/FlairManagement/FlairTemplateEditor/PostAppearanceEditor/index.m.less"),
 				rt = s.n(lt);
 			const dt = Object(_e.c)({
-					examplePost: e => Object(Qe.H)(e, {
+					examplePost: e => Object(Qe.I)(e, {
 						postId: u.e
 					})
 				}),
@@ -2003,4 +2004,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.4dabe9c099ad57aa421b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.186a8a074e124c1ef5d2.js.map

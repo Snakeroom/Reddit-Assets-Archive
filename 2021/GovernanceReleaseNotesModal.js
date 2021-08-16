@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.82955f77ee363d2007d0.js
-// Retrieved at 8/16/2021, 7:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.967b33f5623161f6d753.js
+// Retrieved at 8/16/2021, 7:20:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceReleaseNotesModal"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -841,11 +841,11 @@
 					releaseNotes: m.f,
 					subreddit: u.q
 				}),
-				F = Object(i.b)(H, e => ({
+				U = Object(i.b)(H, e => ({
 					onClose: () => e(Object(d.f)())
 				})),
-				U = Object(u.t)();
-			t.default = Object(a.a)(U(F(D)))
+				A = Object(u.t)();
+			t.default = Object(a.a)(A(U(D)))
 		},
 		"./src/reddit/components/Governance/VaultActionLink/async.ts": function(e, t, n) {
 			"use strict";
@@ -1021,10 +1021,10 @@
 						style: t
 					}, e.children)
 				},
-				N = Object(i.b)(() => Object(d.a)(y.G, w.cb, (e, {
+				N = Object(i.b)(() => Object(d.a)(y.H, w.cb, (e, {
 					isSponsored: t,
 					postId: n
-				}) => t && n ? Object(y.b)(e, n) : null, v.a, _.actionInfo, y.H, (e, t, n, s, r, o) => ({
+				}) => t && n ? Object(y.b)(e, n) : null, v.a, _.actionInfo, y.I, (e, t, n, s, r, o) => ({
 					postPermalink: e,
 					shouldOpenPostInNewTab: t,
 					basePixelMetadata: n,
@@ -2065,11 +2065,11 @@
 			})), n.d(t, "h", (function() {
 				return H
 			})), n.d(t, "g", (function() {
-				return F
-			})), n.d(t, "i", (function() {
 				return U
-			})), n.d(t, "e", (function() {
+			})), n.d(t, "i", (function() {
 				return A
+			})), n.d(t, "e", (function() {
+				return F
 			}));
 			var s = n("./src/lib/unicodeUtils/index.ts"),
 				r = n("./node_modules/lodash/reduce.js"),
@@ -2174,7 +2174,7 @@
 						i = s.length;
 					for (let a = 0; a < i; a++) {
 						const e = s[a];
-						o.push(e.e === h.w ? e.t : A(e, t, a))
+						o.push(e.e === h.w ? e.t : F(e, t, a))
 					}
 					const c = d.x[r - 1];
 					return a.a.createElement(c, {
@@ -2228,7 +2228,7 @@
 						case h.p:
 							return B(e, t, n, s);
 						case h.u:
-							return F(e, t, n, s);
+							return U(e, t, n, s);
 						case h.z:
 							return H(e, t, n, s)
 					}
@@ -2252,7 +2252,7 @@
 							} = e;
 						l.push(a.a.createElement(s, {
 							key: d
-						}, U(i, t, n))), m[d] = r
+						}, A(i, t, n))), m[d] = r
 					}
 					for (let h = 0; h < i; h++) {
 						const e = r[h],
@@ -2265,7 +2265,7 @@
 								} = e[r];
 							o.push(a.a.createElement(s, {
 								key: r
-							}, U(i, t, n)))
+							}, A(i, t, n)))
 						}
 						u.push(a.a.createElement(d.t, {
 							key: h
@@ -2275,16 +2275,16 @@
 						key: s
 					}, a.a.createElement("thead", null, a.a.createElement(d.t, null, l)), a.a.createElement("tbody", null, u))
 				},
-				F = (e, t, n, s) => {
+				U = (e, t, n, s) => {
 					if (!e.c || !e.c.length) return (e => a.a.createElement(d.j, {
 						key: e
 					}, a.a.createElement("br", null)))(s);
 					const r = e.c[0];
 					return r.e !== h.m && r.e !== h.a || !Object(S.f)(r.id) ? a.a.createElement(d.j, {
 						key: s
-					}, U(e.c, t, n)) : Object(j.b)(r, s, t)
+					}, A(e.c, t, n)) : Object(j.b)(r, s, t)
 				},
-				U = (e, t, n) => {
+				A = (e, t, n) => {
 					const s = [],
 						r = e.length;
 					for (let o = 0; o < r; o++) {
@@ -2292,7 +2292,7 @@
 						if (r.e === h.A) s.push(V(r, o));
 						else if (r.e === h.x) s.push(a.a.createElement(O.a, {
 							key: o
-						}, U(r.c, t, n)));
+						}, A(r.c, t, n)));
 						else if (r.e === h.n) s.push(a.a.createElement("br", {
 							key: o
 						}));
@@ -2305,11 +2305,11 @@
 									media: e
 								}))
 							}
-						} else s.push(A(r, n, o))
+						} else s.push(F(r, n, o))
 					}
 					return s
 				},
-				A = (e, t, n) => {
+				F = (e, t, n) => {
 					switch (e.e) {
 						case h.o:
 							const s = V({
@@ -2510,12 +2510,12 @@
 						rtJsonElementProps: o
 					});
 					switch (s) {
-						case b.Nd.SmIcon:
+						case b.Pd.SmIcon:
 							return r.a.createElement(h, {
 								subredditName: n,
 								rtJsonElementProps: o
 							});
-						case b.Nd.SmIconHc:
+						case b.Pd.SmIconHc:
 							return r.a.createElement(h, {
 								subredditName: n,
 								isHoverable: !0,
@@ -2903,12 +2903,12 @@
 				d = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.Fd
+						experimentName: s.Hd
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === s.Nd.SmIcon || t === s.Nd.SmIconHc
+					return t === s.Pd.SmIcon || t === s.Pd.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -2931,4 +2931,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.82955f77ee363d2007d0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.967b33f5623161f6d753.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.7d5fc14b9cc7cb96b9d4.js
-// Retrieved at 8/16/2021, 7:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.53a49b697d8710a70c10.js
+// Retrieved at 8/16/2021, 7:20:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -1361,7 +1361,7 @@
 					s || c || !Object(d.e)(n) && !Object(d.d)(n) || e(Object(a.f)())
 				}, f = e => {
 					Object(c.d)(e, {
-						experimentName: n.S
+						experimentName: n.U
 					})
 				}
 		},
@@ -3303,7 +3303,7 @@
 			const j = e => g.d.reCaptchaEnterprise(e) && !Object(w.d)(e),
 				D = e => !!Object(v.c)(e, {
 					experimentEligibilitySelector: Object(S.d)(Object(S.b)(...n.d)),
-					experimentName: b.od
+					experimentName: b.qd
 				}),
 				T = Object(s.b)("LOAD_RECAPTCHA_ENTERPRISE"),
 				A = Object(s.b)("EXECUTE_RECAPTCHA_ENTERPRISE"),
@@ -4097,7 +4097,7 @@
 						if (Object(g.a)(Object(O.d)(S, e, a)(m)), t(A({
 								subredditName: h
 							})), v) {
-							const e = Object(_.H)(m, {
+							const e = Object(_.I)(m, {
 								postId: v
 							});
 							t(Object(n.h)(e.title)), await t(Object(o.b)({
@@ -4520,14 +4520,14 @@
 					}) && t(Object(c.db)(e))
 				}, E = (e, t) => {
 					const r = Object(p.d)(e, {
-						experimentName: d.Yd
+						experimentName: d.ae
 					});
 					let a = "";
-					return (null == r ? void 0 : r.variant) === d.Zd.Variant1 ? a = t ? s.fbt._("Was that a good post? Upvote it so it gets seen by more people", null, {
+					return (null == r ? void 0 : r.variant) === d.be.Variant1 ? a = t ? s.fbt._("Was that a good post? Upvote it so it gets seen by more people", null, {
 						hk: "2NOllx"
 					}) : s.fbt._("Was this a good post? Upvote it so it gets seen by more people", null, {
 						hk: "K1yBi"
-					}) : (null == r ? void 0 : r.variant) === d.Zd.Variant2 && (a = t ? s.fbt._("If you enjoyed that post, upvote it so that more redditors will see it too.", null, {
+					}) : (null == r ? void 0 : r.variant) === d.be.Variant2 && (a = t ? s.fbt._("If you enjoyed that post, upvote it so that more redditors will see it too.", null, {
 						hk: "1Y6B4I"
 					}) : s.fbt._("If you enjoyed this post, upvote it so that more redditors will see it too.", null, {
 						hk: "HR9Ye"
@@ -5283,8 +5283,8 @@
 				Q = r("./src/reddit/helpers/chooseVariant/index.ts");
 			const J = Object($.a)(e => Object(Q.c)(e, {
 				experimentEligibilitySelector: Q.a,
-				experimentName: K.eb
-			}), e => e === K.ob.Enabled);
+				experimentName: K.gb
+			}), e => e === K.qb.Enabled);
 			var z = r("./src/reddit/constants/parameters.ts");
 
 			function X({
@@ -5597,8 +5597,8 @@
 					var r;
 					if (!Object(b.J)(e)) return !1;
 					if (null === (r = Object(y.b)(I)) || void 0 === r ? void 0 : r[t.postId]) return !1;
-					const s = Object(p.H)(e, t),
-						a = Object(p.U)(e, {
+					const s = Object(p.I)(e, t),
+						a = Object(p.V)(e, {
 							...t,
 							disallowProfile: !0
 						});
@@ -23569,14 +23569,14 @@
 			const d = Object(s.a)(c.c, e => !e),
 				i = Object(s.a)(e => Object(n.c)(e, {
 					experimentEligibilitySelector: e => d(e),
-					experimentName: a.S,
+					experimentName: a.U,
 					expEventOverride: !1
 				}), e => e),
-				u = e => e === a.L.Onetap,
-				l = e => e === a.L.OnetapAuto,
+				u = e => e === a.N.Onetap,
+				l = e => e === a.N.OnetapAuto,
 				p = e => e.user.googleOneTapEnabled,
 				b = Object(s.a)(o.J, i, (e, t) => !e && !!t),
-				f = Object(s.a)(o.J, i, (e, t) => !e && !!t && !Object(a.fe)(t))
+				f = Object(s.a)(o.J, i, (e, t) => !e && !!t && !Object(a.he)(t))
 		},
 		"./src/reddit/selectors/experiments/presenceIndicator.ts": function(e, t, r) {
 			"use strict";
@@ -23590,14 +23590,14 @@
 			const n = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: a.a,
-						experimentName: s.ad
-					}) === s.kd.Enabled
+						experimentName: s.cd
+					}) === s.md.Enabled
 				},
 				c = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: a.a,
-						experimentName: s.Zc
-					}) === s.jd.Enabled
+						experimentName: s.bd
+					}) === s.ld.Enabled
 				}
 		},
 		"./src/reddit/selectors/experiments/upvotePrompt.ts": function(e, t, r) {
@@ -23618,16 +23618,16 @@
 			const o = 5e3,
 				d = 12e3,
 				i = (e, t) => {
-					const r = Object(c.H)(e, t);
+					const r = Object(c.I)(e, t);
 					return r && (1 === (null == r ? void 0 : r.score) || 0 === (null == r ? void 0 : r.score)) && (null == r ? void 0 : r.voteState) === n.a.notVoted
 				},
 				u = (e, t) => {
 					if (!i(e, t)) return !1;
 					const r = Object(a.c)(e, {
 						experimentEligibilitySelector: a.a,
-						experimentName: s.Yd
+						experimentName: s.ae
 					});
-					return r === s.Zd.Variant1 || r === s.Zd.Variant2
+					return r === s.be.Variant1 || r === s.be.Variant2
 				}
 		},
 		"./src/reddit/selectors/scheduledPosts/index.ts": function(e, t, r) {
@@ -23825,4 +23825,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.7d5fc14b9cc7cb96b9d4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.53a49b697d8710a70c10.js.map

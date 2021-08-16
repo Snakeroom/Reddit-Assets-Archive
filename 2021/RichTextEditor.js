@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.1a3e8a065ccd353977db.js
-// Retrieved at 8/16/2021, 7:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.65b09d505e573a633447.js
+// Retrieved at 8/16/2021, 7:20:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, o) {
@@ -932,7 +932,7 @@
 							commentsPageKey: t,
 							draftKey: o
 						}));
-						const s = Object(X.H)(b(), {
+						const s = Object(X.I)(b(), {
 							postId: e
 						});
 						u(Object(l.z)(s, f.a.CommentSubmitted))
@@ -4817,8 +4817,8 @@
 			const i = Object(n.a)(a.J, a.I, (e, t) => e || t),
 				c = Object(n.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: i,
-					experimentName: s.C
-				}), e => e === s.H.Enabled)
+					experimentName: s.E
+				}), e => e === s.J.Enabled)
 		},
 		"./src/reddit/selectors/experiments/replyWithUpvote.ts": function(e, t, o) {
 			"use strict";
@@ -4833,8 +4833,8 @@
 				const t = Object(r.j)(e);
 				return !(!t || (null == t ? void 0 : t.karma) && t.karma.fromPosts < 5 && t.karma.fromComments < 10) && Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: n.db
-				}) === n.cc
+					experimentName: n.fb
+				}) === n.ec
 			}
 		},
 		"./src/reddit/selectors/moderatingComments.ts": function(e, t, o) {
@@ -4875,4 +4875,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.1a3e8a065ccd353977db.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.65b09d505e573a633447.js.map

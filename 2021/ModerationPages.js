@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.fc110d13a1c1a3709914.js
-// Retrieved at 8/16/2021, 7:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.9b248b58697cd106140c.js
+// Retrieved at 8/16/2021, 7:20:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -7688,7 +7688,8 @@
 					color: s,
 					icon: n,
 					subtitle: r,
-					title: d
+					title: d,
+					textWrapperClassName: m
 				} = e;
 				return a.a.createElement("div", {
 					className: Object(o.a)(t, i.a.wrapper),
@@ -7700,7 +7701,9 @@
 					style: s && {
 						backgroundColor: s
 					} || {}
-				}), n ? a.a.createElement(l, null, n) : a.a.createElement(l, null), a.a.createElement(c, null, a.a.createElement("div", {
+				}), n ? a.a.createElement(l, null, n) : a.a.createElement(l, null), a.a.createElement(c, {
+					className: m
+				}, a.a.createElement("div", {
 					className: i.a.title
 				}, d), r && a.a.createElement("div", {
 					className: i.a.subtitle
@@ -22527,9 +22530,9 @@
 			const o = e => {
 				const t = Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: n.bc
+					experimentName: n.dc
 				});
-				return !(!t || Object(n.fe)(t))
+				return !(!t || Object(n.he)(t))
 			}
 		},
 		"./src/reddit/selectors/showPromotedCTA.ts": function(e, t, s) {
@@ -22542,9 +22545,9 @@
 				o = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				r = s("./src/reddit/selectors/posts.ts");
 			const i = Object(n.a)(e => Object(o.c)(e, {
-				experimentName: a.bd,
+				experimentName: a.dd,
 				experimentEligibilitySelector: o.a
-			}), r.H, (e, t) => e === a.ld.Enabled && (null == t ? void 0 : t.isCreatedFromAdsUi) || (null == t ? void 0 : t.isSponsored))
+			}), r.I, (e, t) => e === a.nd.Enabled && (null == t ? void 0 : t.isCreatedFromAdsUi) || (null == t ? void 0 : t.isSponsored))
 		},
 		"./src/reddit/selectors/streamingModSettings.ts": function(e, t, s) {
 			"use strict";
@@ -22671,4 +22674,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.fc110d13a1c1a3709914.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.9b248b58697cd106140c.js.map
