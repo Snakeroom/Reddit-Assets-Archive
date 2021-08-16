@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.11338c6e5c9e6583f67a.js
-// Retrieved at 8/16/2021, 12:20:11 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.b4e5afafc74145e9988d.js
+// Retrieved at 8/16/2021, 2:50:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage"], {
 		"./src/reddit/actions/commentsListTruncated/index.ts": function(e, t, s) {
@@ -7894,4 +7894,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.11338c6e5c9e6583f67a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.b4e5afafc74145e9988d.js.map

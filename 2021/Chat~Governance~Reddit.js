@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.1c95caa4622a777ffd8a.js
-// Retrieved at 8/16/2021, 12:20:11 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.19492457ad40f9576d28.js
+// Retrieved at 8/16/2021, 2:50:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -2520,13 +2520,13 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("142999"),
+				buildNumber: r("143009"),
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1629129984"),
+				})("1629138249"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -4022,6 +4022,7 @@
 					SUBREDDIT_LEADERBOARD: "SubredditLeaderboard",
 					SUBREDDIT_SETTINGS: "SubredditSettings",
 					SUBREDDIT_WIKI: "SubredditWiki",
+					TALK: "Talk",
 					TOPIC: "Topic",
 					MOD_LISTING: "ModListing",
 					MODERATION_PAGES: "ModerationPages",
@@ -4358,6 +4359,7 @@
 					SUBREDDIT_LEADERBOARD: "subredditLeaderboard",
 					SUBREDDIT_SETTINGS: "subredditSettings",
 					SUBREDDIT_WIKI: "subredditWiki",
+					TALK: "talk",
 					TOPIC: "topic",
 					MOD_LISTING: "modListing",
 					MODERATION_PAGES: "moderationPages",
@@ -4992,14 +4994,14 @@
 					}))
 				},
 				K = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %cff41d3e83af6f9c50080f2b98c3f347432751600-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %cb2451655821ed87d4bbc84b24bdf49b4bc4ca6fc-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${v.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "ff41d3e83af6f9c50080f2b98c3f347432751600-production",
+						release: "b2451655821ed87d4bbc84b24bdf49b4bc4ca6fc-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(B.d)(), new d.Integrations.Breadcrumbs({
@@ -5493,7 +5495,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "ff41d3e83af6f9c50080f2b98c3f347432751600-production",
+						releaseClient: "b2451655821ed87d4bbc84b24bdf49b4bc4ca6fc-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -6272,6 +6274,8 @@
 				return m
 			})), i.d(t, "l", (function() {
 				return h
+			})), i.d(t, "m", (function() {
+				return f
 			}));
 			var n = i("./node_modules/fbt/lib/FbtPublic.js");
 			const r = () => n.fbt._("Coins", null, {
@@ -6309,6 +6313,9 @@
 				}),
 				h = () => n.fbt._("Today’s Top Communities", null, {
 					hk: "2dcUEX"
+				}),
+				f = () => n.fbt._("Reddit Talk - Live Audio Conversations in Your Favorite Communities", null, {
+					hk: "4C3LAO"
 				})
 		},
 		"./src/lib/performance.js": function(e, t, i) {
@@ -40170,4 +40177,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.1c95caa4622a777ffd8a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.19492457ad40f9576d28.js.map
