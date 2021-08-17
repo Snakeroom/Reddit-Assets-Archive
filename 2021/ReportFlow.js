@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlow.abc4cdabdd4423e7b6cd.js
-// Retrieved at 8/16/2021, 7:20:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlow.7f241cf32cdc2b5d12fb.js
+// Retrieved at 8/16/2021, 8:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlow", "ReportFlowNew"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, o) {
@@ -542,7 +542,6 @@
 				ban_fill: "ban_fill",
 				best: "best",
 				best_fill: "best_fill",
-				block: "block",
 				bold: "bold",
 				bold_fill: "bold_fill",
 				bot: "bot",
@@ -1501,7 +1500,7 @@
 						redirectUrl: w.permalink
 					}));
 					n(Object(d.y)(w.author));
-					const x = Object(b.V)(u, {
+					const x = Object(b.U)(u, {
 							postId: p ? u.features.comments.models[e].postId : u.posts.models[e].id
 						}),
 						v = h && Object(_.o)(w) || p && W(w, u);
@@ -3169,7 +3168,7 @@
 					rulesCategory: e => e.features.reportFlow.rulesCategory,
 					post: (e, {
 						postId: t
-					}) => t ? Object(ze.I)(e, {
+					}) => t ? Object(ze.H)(e, {
 						postId: t
 					}) : null,
 					reportedPending: e => e.features.reportFlow.api.pending,
@@ -3177,7 +3176,7 @@
 					sitewideRules: e => e.reportRules.sitewideRules,
 					subredditOrProfile: (e, {
 						postId: t
-					}) => t ? Object(ze.V)(e, {
+					}) => t ? Object(ze.U)(e, {
 						postId: t
 					}) : null,
 					subredditRules: e => e.subreddits.rules,
@@ -3404,7 +3403,7 @@
 			const M = Object(d.c)({
 					post: (e, {
 						postId: t
-					}) => t ? Object(T.I)(e, {
+					}) => t ? Object(T.H)(e, {
 						postId: t
 					}) : null,
 					comment: (e, {
@@ -3425,7 +3424,7 @@
 							postId: r
 						} = t, s = n ? Object(I.a)(e, {
 							commentId: n
-						}) : null, i = r ? Object(T.I)(e, {
+						}) : null, i = r ? Object(T.H)(e, {
 							postId: r
 						}) : null;
 						(s ? s.author : i ? i.author : null) || t.author;
@@ -5839,13 +5838,13 @@
 			var n = o("./src/reddit/constants/experiments.ts"),
 				r = o("./src/reddit/helpers/chooseVariant/index.ts"),
 				s = o("./src/reddit/selectors/user.ts");
-			const i = e => n.c.Enabled === Object(r.c)(e, {
+			const i = e => n.b.Enabled === Object(r.c)(e, {
 					experimentEligibilitySelector: s.J,
-					experimentName: n.i
+					experimentName: n.g
 				}),
-				a = e => n.e.Enabled === Object(r.c)(e, {
+				a = e => n.d.Enabled === Object(r.c)(e, {
 					experimentEligibilitySelector: s.J,
-					experimentName: n.l
+					experimentName: n.j
 				})
 		},
 		"./src/reddit/selectors/experiments/topPosts.ts": function(e, t, o) {
@@ -5870,12 +5869,12 @@
 					pageLayer: t
 				}) => Object(s.L)(t), (e, t, o) => !e && !t && o),
 				c = Object(n.a)((e, t) => Object(i.c)(e, {
-					experimentName: r.wb,
+					experimentName: r.ub,
 					experimentEligibilitySelector: e => l(e, t)
 				}), e => e),
-				d = e => e === r.Wd.NoCommunityWidgets,
-				u = e => e === r.Wd.NoRulesModerators,
-				p = e => e === r.Wd.RelatedPostsDu
+				d = e => e === r.Ud.NoCommunityWidgets,
+				u = e => e === r.Ud.NoRulesModerators,
+				p = e => e === r.Ud.RelatedPostsDu
 		},
 		"./src/reddit/selectors/tooltip.ts": function(e, t, o) {
 			"use strict";
@@ -5904,4 +5903,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.abc4cdabdd4423e7b6cd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.7f241cf32cdc2b5d12fb.js.map
