@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.aee88e376ad7b3dc6b5e.js
-// Retrieved at 8/16/2021, 8:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.8704523801dc0ae18a71.js
+// Retrieved at 8/17/2021, 9:50:10 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -3034,7 +3034,7 @@
 			e.exports = {
 				container: "_3kd-dlN-SayusCxdP2netc",
 				header: "_2qYkItLcJFJyORCGH9k8xc",
-				subredditLogo: "_1vh_JamIt2dZYY7uwMHHv8",
+				powerupsLogo: "_3tAkLAAQVM-WSVSzy-_cEa",
 				headerText: "_1FyMArbFbR91zDup_aXAUI",
 				headerDelimiter: "_1O5D69EOlVhvj5bzxwHE38",
 				achievements: "_2184liSTNqbtEvYN_pvrvZ",
@@ -3066,10 +3066,10 @@
 				a = s("./node_modules/react-redux/es/index.js"),
 				o = s("./src/lib/classNames/index.ts"),
 				i = s("./src/reddit/actions/gold/powerups.ts"),
-				c = s("./src/reddit/components/SubredditIcon/index.tsx"),
-				d = s("./src/reddit/controls/Button/index.tsx"),
-				l = s("./src/reddit/helpers/trackers/userFlair.ts"),
-				m = s("./src/reddit/hooks/useTracking.ts"),
+				c = s("./src/reddit/controls/Button/index.tsx"),
+				d = s("./src/reddit/helpers/trackers/userFlair.ts"),
+				l = s("./src/reddit/hooks/useTracking.ts"),
+				m = s("./src/reddit/icons/svgs/PowerupTier2/index.tsx"),
 				u = s("./src/reddit/selectors/gold/powerups/achievements.ts"),
 				p = s("./src/reddit/selectors/subreddit.ts"),
 				h = s("./src/reddit/components/Econ/AchievementFlair/AchivementsHoverPopup.m.less"),
@@ -3089,7 +3089,7 @@
 						subredditId: t
 					})),
 					f = Object(a.d)(),
-					g = Object(m.a)(),
+					g = Object(l.a)(),
 					[v, y] = Object(r.useState)(!1),
 					O = Object(r.useRef)(null),
 					E = () => {
@@ -3106,9 +3106,8 @@
 					className: Object(o.a)(b.a.container, e)
 				}, n.a.createElement("div", {
 					className: b.a.header
-				}, n.a.createElement(c.b, {
-					className: b.a.subredditLogo,
-					subredditOrProfile: x
+				}, n.a.createElement(m.a, {
+					className: b.a.powerupsLogo
 				}), C._("{r/community} {=achievements}", [C._param("r/community", x.displayText), C._param("=achievements", n.a.createElement("span", {
 					className: b.a.headerText
 				}, C._("achievements", null, {
@@ -3138,11 +3137,11 @@
 					className: Object(o.a)(b.a.scrollGradient, {
 						[b.a.gradientHidden]: v
 					})
-				}), n.a.createElement(d.q, {
-					priority: d.b.Secondary,
+				}), n.a.createElement(c.q, {
+					priority: c.b.Secondary,
 					className: b.a.ctaButton,
 					onClick: () => {
-						g(Object(l.d)()), f(Object(i.e)())
+						g(Object(d.d)()), f(Object(i.e)())
 					},
 					isFullWidth: !0
 				}, C._("View your achievements", null, {
@@ -10538,6 +10537,36 @@
 				})))))
 			}
 		},
+		"./src/reddit/icons/svgs/PowerupTier2/index.tsx": function(e, t, s) {
+			"use strict";
+			var r = s("./node_modules/react/index.js"),
+				n = s.n(r);
+			t.a = e => n.a.createElement("svg", {
+				className: e.className,
+				viewBox: "0 0 74 74",
+				fill: "none",
+				xmlns: "http://www.w3.org/2000/svg",
+				onClick: e.onClick,
+				onMouseEnter: e.onMouseEnter,
+				onMouseLeave: e.onMouseLeave,
+				id: e.id
+			}, e.title && n.a.createElement("title", null, e.title), n.a.createElement("path", {
+				d: "M28.03 73.65h-.08a3.47 3.47 0 01-2.48-1.15l-6.93-7.59a3.47 3.47 0 01-.69-3.63l4.5-10.73H19.6a3.47 3.47 0 01-2.56-1.15L10.1 41.8a3.47 3.47 0 01-.67-3.65L24.86 2.62A3.47 3.47 0 0128.02.54l29.8-.2a3.47 3.47 0 012.55 1.16L67.3 9.1a3.47 3.47 0 01.16 4.5l-7.5 9.54c.27.16.51.36.72.6l6.94 7.58a3.47 3.47 0 01-.12 4.82L30.47 72.66c-.65.64-1.53 1-2.44 1zM25.1 61.9l3.06 3.31L60.3 33.53l-3.64-4.03h-3.47a3.47 3.47 0 01-2.72-5.62l9.75-12.32-3.93-4.28-25.96.17L16.7 38.8l4.4 4.8h6.45a3.47 3.47 0 013.2 4.81L25.1 61.9z",
+				fill: "#000"
+			}), n.a.createElement("path", {
+				d: "M34.1 11.6l22.76-7.78 6.99 7.58-17.58 22.21 10.94-7.58 6.98 7.58L27.1 70.18l-6.98-7.58L28.77 47l-10.1.06-7-7.58 22.43-27.9z",
+				fill: "#FF7A00"
+			}), n.a.createElement("path", {
+				d: "M27.11 4.01l29.75-.2L39.3 26.04H57.2L20.11 62.6l9.69-23.1-18.12-.01L27.1 4z",
+				fill: "#FFD15C"
+			}), n.a.createElement("path", {
+				d: "M35.79 35.25H17.77l11.74-27 18.8-.13-17.53 22.16h16.28l-17 17.75 5.73-12.78z",
+				fill: "#FFF5C7"
+			}), n.a.createElement("path", {
+				d: "M54.32 26.03H36.77l20-3.03-2.45 3.03zM26.1 48.32l4.34-10.37-7.97 10.14 3.64.23z",
+				fill: "#000"
+			}))
+		},
 		"./src/reddit/icons/svgs/Settings/index.tsx": function(e, t, s) {
 			"use strict";
 			var r = s("./node_modules/react/index.js"),
@@ -11266,4 +11295,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.aee88e376ad7b3dc6b5e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.8704523801dc0ae18a71.js.map
