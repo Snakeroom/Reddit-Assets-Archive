@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OnboardingModal.ec0ab74cbe9e21c7e335.js
-// Retrieved at 8/17/2021, 2:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OnboardingModal.882c04f37a8eec9d47fe.js
+// Retrieved at 8/17/2021, 4:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OnboardingModal"], {
 		"./node_modules/lodash/times.js": function(e, t, n) {
@@ -432,7 +432,7 @@
 						b = q.x in e.queryParams && e.queryParams[q.x].toUpperCase() || "",
 						p = b in d.cc && d.cc[b];
 					if (m || l && !u && !t) return void(l && (n(R.l({
-						title: N.c()
+						title: N.d()
 					})), r.sidebarPromotedPosts.firstFetch || window.addEventListener("load", () => {
 						n(Object(J.b)(Z.a.FRONTPAGE))
 					})));
@@ -447,7 +447,7 @@
 						statsdPathsForExperiments: O,
 						t: Object(D.a)(c, p)
 					})), n(R.l({
-						title: N.c()
+						title: N.d()
 					})), Object(X.c)(r, {
 						experimentEligibilitySelector: X.a,
 						experimentName: "redesign_aa"
@@ -1780,4 +1780,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.ec0ab74cbe9e21c7e335.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.882c04f37a8eec9d47fe.js.map

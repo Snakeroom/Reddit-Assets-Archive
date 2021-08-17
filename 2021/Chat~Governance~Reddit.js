@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.3927a91447555886c1c3.js
-// Retrieved at 8/17/2021, 4:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.99eb3d68ab9cf9c98b82.js
+// Retrieved at 8/17/2021, 4:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -2520,13 +2520,13 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("143251"),
+				buildNumber: r("143260"),
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1629230431"),
+				})("1629231584"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -4994,14 +4994,14 @@
 					}))
 				},
 				K = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c805ccfdcc2139437b7015ce6e86182d0ffbd0f4a-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %cb76f527c073e812164f2262b9658686bcb960e88-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${v.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "805ccfdcc2139437b7015ce6e86182d0ffbd0f4a-production",
+						release: "b76f527c073e812164f2262b9658686bcb960e88-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(B.d)(), new d.Integrations.Breadcrumbs({
@@ -5495,7 +5495,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "805ccfdcc2139437b7015ce6e86182d0ffbd0f4a-production",
+						releaseClient: "b76f527c073e812164f2262b9658686bcb960e88-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -6260,11 +6260,11 @@
 				return d
 			})), i.d(t, "e", (function() {
 				return a
-			})), i.d(t, "g", (function() {
-				return l
 			})), i.d(t, "f", (function() {
-				return u
+				return l
 			})), i.d(t, "h", (function() {
+				return u
+			})), i.d(t, "g", (function() {
 				return c
 			})), i.d(t, "i", (function() {
 				return _
@@ -6276,45 +6276,50 @@
 				return h
 			})), i.d(t, "m", (function() {
 				return f
+			})), i.d(t, "n", (function() {
+				return b
 			}));
 			var n = i("./node_modules/fbt/lib/FbtPublic.js");
-			const r = () => n.fbt._("Coins", null, {
-					hk: "2mS3S7"
+			const r = () => n.fbt._("Reddit Avatar Builder - Create Your Custom Avatar", null, {
+					hk: "oFQWN"
 				}),
-				s = (e, t) => n.fbt._("{postTitle}: {subreddit}", [n.fbt._param("postTitle", e), n.fbt._param("subreddit", t)], {
+				s = () => n.fbt._("Reddit Coins - Award and Recognize Community Contributions", null, {
+					hk: "4efF8g"
+				}),
+				o = (e, t) => n.fbt._("{postTitle}: {subreddit}", [n.fbt._param("postTitle", e), n.fbt._param("subreddit", t)], {
 					hk: "2IfXU7"
 				}),
-				o = () => n.fbt._("Reddit - Dive into anything", null, {
+				d = () => n.fbt._("Reddit - Dive into anything", null, {
 					hk: "3basF2"
 				}),
-				d = () => n.fbt._("Moderation Queue", null, {
+				a = () => n.fbt._("Moderation Queue", null, {
 					hk: "48r06Q"
 				}),
-				a = () => n.fbt._("Notifications", null, {
+				l = () => n.fbt._("Notifications", null, {
 					hk: "OUIeh"
 				}),
-				l = () => n.fbt._("Reddit Premium", null, {
-					hk: "4wp0Ea"
+				u = () => n.fbt._("Reddit Premium - Enjoy Exclusive Features and VIP Status", null, {
+					hk: "4eqnyx"
 				}),
-				u = () => n.fbt._("Powerups - Reddit Community Subscriptions that Unlock Perks", null, {
+				c = () => n.fbt._("Powerups - Reddit Community Subscriptions that Unlock Perks", null, {
 					hk: "2zIDhQ"
 				}),
-				c = () => n.fbt._("Reddit Live", null, {
+				_ = () => n.fbt._("Reddit Live", null, {
 					hk: "3xjxUD"
 				}),
-				_ = () => n.fbt._("Reddit Settings", null, {
+				p = () => n.fbt._("Reddit Settings", null, {
 					hk: "4f8xQM"
 				}),
-				p = e => n.fbt._("Submit to {subreddit}", [n.fbt._param("subreddit", e)], {
+				m = e => n.fbt._("Submit to {subreddit}", [n.fbt._param("subreddit", e)], {
 					hk: "1sykEm"
 				}),
-				m = () => n.fbt._("Create Community", null, {
+				h = () => n.fbt._("Create Community", null, {
 					hk: "utpVC"
 				}),
-				h = () => n.fbt._("Today’s Top Communities", null, {
+				f = () => n.fbt._("Today’s Top Communities", null, {
 					hk: "2dcUEX"
 				}),
-				f = () => n.fbt._("Reddit Talk - Live Audio Conversations in Your Favorite Communities", null, {
+				b = () => n.fbt._("Reddit Talk - Live Audio Conversations in Your Favorite Communities", null, {
 					hk: "4C3LAO"
 				})
 		},
@@ -9732,7 +9737,7 @@
 						type: h = []
 					} = d, f = h.indexOf(o.Wb.Posts) > -1, g = h.indexOf(o.Wb.Subreddits) > -1 || h.indexOf(o.Wb.Users) > -1;
 					f && n.listings.postOrder.api.error[_] && (p = !0), g && n.listings.listingOrder.api.error[_] && (p = !0), t(p ? m.l({
-						title: Object(l.c)()
+						title: Object(l.d)()
 					}) : m.l({
 						title: P(d.q)
 					}))
@@ -33096,7 +33101,7 @@
 					const i = p(e, {
 						profileName: t
 					});
-					return i && `${n.fbt._("{profileTitleOrName} ({displayText}) - Reddit",[n.fbt._param("profileTitleOrName",i.title||i.name),n.fbt._param("displayText",i.displayText)],{hk:"1MLLB8"})}` || `${Object(o.c)()}`
+					return i && `${n.fbt._("{profileTitleOrName} ({displayText}) - Reddit",[n.fbt._param("profileTitleOrName",i.title||i.name),n.fbt._param("displayText",i.displayText)],{hk:"1MLLB8"})}` || `${Object(o.d)()}`
 				},
 				v = (e, {
 					profileName: t
@@ -33827,7 +33832,7 @@
 					const i = U(e, {
 						subredditName: t
 					});
-					return i && i.title || Object(d.c)().toString()
+					return i && i.title || Object(d.d)().toString()
 				},
 				X = (e, {
 					subredditId: t
@@ -36717,6 +36722,12 @@
 								topicSlug: F
 							} = m.urlParams;
 							return F ? `${n.a.redditUrl}${Object(d.a)(F)}` : null;
+						case r.Jb.AVATAR:
+						case r.Jb.COINS:
+						case r.Jb.POWERUPS:
+						case r.Jb.PREMIUM:
+						case r.Jb.TALK:
+							return `${n.a.redditUrl}/${b}`;
 						default:
 							return null
 					}
@@ -40195,4 +40206,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.3927a91447555886c1c3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.99eb3d68ab9cf9c98b82.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.21597cb0be379b7a4182.js
-// Retrieved at 8/16/2021, 8:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.4263cfa2332f63caf489.js
+// Retrieved at 8/17/2021, 4:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1109,7 +1109,7 @@
 							await Promise.all(e.map(e => t(n.c(e))))
 						}
 					} else t(S.l({
-						title: b.c()
+						title: b.d()
 					}));
 					const {
 						routePrefix: U
@@ -1319,7 +1319,7 @@
 				a = s("./src/reddit/selectors/user.ts");
 			const i = e => async (e, t) => {
 				const s = t(),
-					i = o.h();
+					i = o.i();
 				e(n.l({
 					title: i
 				})), Object(a.J)(s) || await e(r.r())
@@ -7100,4 +7100,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.21597cb0be379b7a4182.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.4263cfa2332f63caf489.js.map

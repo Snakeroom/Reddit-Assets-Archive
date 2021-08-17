@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.e5825ed6aaf0aab387cf.js
-// Retrieved at 8/17/2021, 2:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.9bcf078edc6da84e28c1.js
+// Retrieved at 8/17/2021, 4:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -634,7 +634,7 @@
 						p = D.x in e.queryParams && e.queryParams[D.x].toUpperCase() || "",
 						b = p in d.cc && d.cc[p];
 					if (m || l && !u && !t) return void(l && (n(A.l({
-						title: P.c()
+						title: P.d()
 					})), r.sidebarPromotedPosts.firstFetch || window.addEventListener("load", () => {
 						n(Object(Q.b)(z.a.FRONTPAGE))
 					})));
@@ -649,7 +649,7 @@
 						statsdPathsForExperiments: f,
 						t: Object(U.a)(a, b)
 					})), n(A.l({
-						title: P.c()
+						title: P.d()
 					})), Object(J.c)(r, {
 						experimentEligibilitySelector: J.a,
 						experimentName: "redesign_aa"
@@ -4888,4 +4888,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.e5825ed6aaf0aab387cf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.9bcf078edc6da84e28c1.js.map
