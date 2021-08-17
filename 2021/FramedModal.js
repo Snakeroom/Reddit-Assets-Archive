@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedModal.4a067d239367cb4d9b64.js
-// Retrieved at 8/2/2021, 5:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedModal.f3f927c40c69cf3b81ab.js
+// Retrieved at 8/17/2021, 6:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedModal"], {
 		"./src/reddit/components/CrisisFlow/async.tsx": function(e, s, t) {
@@ -130,7 +130,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const A = /(.*\.reddit\.com|.*(staging|dev)\.snooguts\.net|.*reddit\.local)$/,
+			const A = /(.*\.reddit\.com|.*(staging|dev)\.snooguts\.net|.*reddit\.local|.*\.snoo\.dev)$/,
 				E = "framedmodal",
 				R = {
 					PARENT_ORIGIN: "_o"
@@ -255,4 +255,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedModal.4a067d239367cb4d9b64.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedModal.f3f927c40c69cf3b81ab.js.map
