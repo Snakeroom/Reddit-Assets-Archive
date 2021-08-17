@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.db7ea33ef504cba533a3.js
-// Retrieved at 8/17/2021, 3:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.db617fc53306de7ae8a4.js
+// Retrieved at 8/17/2021, 4:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -7647,7 +7647,7 @@
 								className: re.a.mediaPlaceholder
 							}), (ie.type === W.o.RTJSON && ie.richtextContent || ie.type === W.o.TEXT && ie.content) && Object(F.a)(H) && (e = a.a.createElement("div", {
 								className: n,
-								onClickCapture: e => this.onClickPost(e),
+								onClickCapture: de,
 								ref: e => m.current = e
 							}, a.a.createElement(I.a, {
 								autoplayPref: p,
@@ -7662,7 +7662,7 @@
 								showFull: !0
 							}), a.a.createElement("div", {
 								className: re.a.seeMore
-							}, "...", ne._("More", null, {
+							}, ne._("More", null, {
 								hk: "362mDE"
 							}))))
 						} return e
@@ -11295,4 +11295,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.db7ea33ef504cba533a3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.db617fc53306de7ae8a4.js.map
