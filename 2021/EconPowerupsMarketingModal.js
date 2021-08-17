@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.7fc9883910f60bd7d942.js
-// Retrieved at 8/17/2021, 2:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.bc038d47085117968e99.js
+// Retrieved at 8/17/2021, 3:30:12 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsMarketingModal"], {
 		"./src/reddit/components/Econ/Common/BenefitTile/index.m.less": function(e, t, s) {
@@ -376,7 +376,7 @@
 					currentSubredditId: t,
 					powerups: s,
 					subreddit: a
-				} = e, c = Object(r.d)(), h = Object(_.a)(), k = Object(r.e)(f.h), g = Object(r.e)(e => !Object(N.s)(e) && Object(f.k)(e)), P = Object(n.useRef)(null), [C, O] = Object(n.useState)(!1), v = () => {
+				} = e, c = Object(r.d)(), h = Object(_.a)(), k = Object(r.e)(f.h), g = Object(r.e)(e => !Object(N.r)(e) && Object(f.k)(e)), P = Object(n.useRef)(null), [C, O] = Object(n.useState)(!1), v = () => {
 					if (!P.current) return;
 					const e = Math.ceil(P.current.scrollTop) + P.current.clientHeight >= P.current.scrollHeight,
 						t = P.current.clientHeight < P.current.scrollHeight;
@@ -569,4 +569,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.7fc9883910f60bd7d942.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.bc038d47085117968e99.js.map
