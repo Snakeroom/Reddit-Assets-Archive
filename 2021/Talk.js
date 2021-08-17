@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Talk.bf9578a673a7064ba655.js
-// Retrieved at 8/16/2021, 2:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Talk.27922c94127cfc6ed2e1.js
+// Retrieved at 8/17/2021, 12:40:11 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Talk"], {
 		"./src/reddit/components/CollapsibleFAQ/index.m.less": function(e, a, t) {
@@ -378,10 +378,10 @@
 			}, {
 				title: "Sports, Media & Culture",
 				subreddits: ["r/movies", "r/kpop"],
-				imageName: "stories"
+				imageName: "media"
 			}, {
 				title: "Health & Fitness",
-				subreddits: [" r/meditation", "r/keto"],
+				subreddits: ["r/meditation", "r/keto"],
 				imageName: "health"
 			}], y = ({
 				title: e,
@@ -723,4 +723,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Talk.bf9578a673a7064ba655.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Talk.27922c94127cfc6ed2e1.js.map
