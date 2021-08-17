@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.5a9d8edb089f79d4b15d.js
-// Retrieved at 8/17/2021, 6:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.e1ab2d17e2cd634075de.js
+// Retrieved at 8/17/2021, 7:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -2353,7 +2353,7 @@
 				t(Object(s.c)({
 					correlationId: Object(r.d)(r.a.GildingFlow),
 					thingId: c
-				})), Object(a.J)(i) || await t(o.r());
+				})), Object(a.J)(i) || await t(o.s());
 				const l = n();
 				if (!Object(a.J)(l)) return t(Object(s.f)())
 			}
@@ -2367,7 +2367,7 @@
 				o = n("./src/reddit/selectors/user.ts");
 			const r = e => async (e, t) => {
 				const n = t();
-				Object(o.J)(n) || await e(s.r());
+				Object(o.J)(n) || await e(s.s());
 				const r = t();
 				if (!Object(o.J)(r)) throw new Error("Failed to login")
 			}
@@ -2912,7 +2912,7 @@
 			t.a = () => async (e, t) => {
 				e(Object(o.l)({
 					title: Object(s.a)()
-				})), await e(Object(r.r)()), Object(a.J)(t()) || e(Object(i.i)())
+				})), await e(Object(r.s)()), Object(a.J)(t()) || e(Object(i.i)())
 			}
 		},
 		"./src/reddit/actions/pages/meta/communityPointsLearnMorePage.ts": function(e, t, n) {
@@ -2921,7 +2921,7 @@
 				o = n("./src/reddit/actions/users.ts"),
 				r = n("./src/reddit/selectors/user.ts");
 			t.a = () => async (e, t) => {
-				Object(r.J)(t()) || await e(Object(o.r)()), await e(Object(s.b)()).then(() => {
+				Object(r.J)(t()) || await e(Object(o.s)()), await e(Object(s.b)()).then(() => {
 					if (t().economics.me.data) return e(Object(s.a)())
 				})
 			}
@@ -2942,7 +2942,7 @@
 					if (l) {
 						const n = [],
 							d = t();
-						Object(c.J)(d) || n.push(e(Object(a.r)()));
+						Object(c.J)(d) || n.push(e(Object(a.s)()));
 						const u = Object(s.a)(l, null);
 						n.push(e(Object(r.subredditDataRequested)(u, l, {}))), await Promise.all(n);
 						const m = Object(i.E)(t(), l);
@@ -2966,7 +2966,7 @@
 			t.a = () => async (e, t) => {
 				if (e(Object(r.l)({
 						title: Object(s.g)()
-					})), await e(Object(i.r)()), !Object(l.J)(t())) return;
+					})), await e(Object(i.s)()), !Object(l.J)(t())) return;
 				await e(Object(a.q)());
 				const n = Object(c.a)(t());
 				n && n.length && await e(Object(o.d)(n))
@@ -8879,7 +8879,7 @@
 					toggleChangeEmailModal: () => {
 						e(Object(Zr.b)()), e(Object(_e.i)(Ac.a))
 					},
-					resendEmail: () => e(Object(ta.v)(la.a)),
+					resendEmail: () => e(Object(ta.w)(la.a)),
 					requestCreatePost: () => {
 						t.pageLayer && e($r.n(t.pageLayer))
 					},
@@ -16959,9 +16959,9 @@
 			Object(o.e)(o.b.EntryPointStart);
 			const ls = Object(F.a)({
 					actionDispatchers: {
-						reddaidReceived: ae.s,
+						reddaidReceived: ae.t,
 						loidReceived: ae.q,
-						sessionTrackerReceived: ae.x
+						sessionTrackerReceived: ae.y
 					},
 					authHeaders: {
 						[Ye.a]: "desktop2x"
@@ -18420,7 +18420,7 @@
 				p = n("./src/reddit/selectors/user.ts");
 			const b = {
 					action: () => async (e, t) => {
-						Object(p.J)(t()) || await e(Object(l.r)())
+						Object(p.J)(t()) || await e(Object(l.s)())
 					},
 					chunk: o.q.META_ARBITRUM_POINTS_MIGRATION_PAGE,
 					component: Object(s.a)({
@@ -18509,7 +18509,7 @@
 				},
 				g = e => async (t, n) => {
 					const s = Object(m.a)(e.queryParams);
-					Object(p.J)(n()) || await t(Object(l.r)()), s && setTimeout(async () => {
+					Object(p.J)(n()) || await t(Object(l.s)()), s && setTimeout(async () => {
 						await t(Object(r.c)(`/r/${encodeURIComponent(s.subreddit)}/`)), u.d.spBurnLinks(n()) && t(Object(a.h)(d.a.CRYPTO_BURN_POINTS, s))
 					}, 0)
 				}, v = {
@@ -19962,4 +19962,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePo~5f1ac562", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250", "Governance~ModListing~Reddit~Subreddit", "Chat~Governance~Reddit", "Governance~Reddit~reddit-components-MediumPost", "Reddit~StandalonePostPage~reddit-components-MediumPost", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.5a9d8edb089f79d4b15d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.e1ab2d17e2cd634075de.js.map

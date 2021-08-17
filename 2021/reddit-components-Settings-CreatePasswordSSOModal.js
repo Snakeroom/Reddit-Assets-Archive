@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Settings-CreatePasswordSSOModal.726b4864c594427538c8.js
-// Retrieved at 8/12/2021, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Settings-CreatePasswordSSOModal.6cf8f70597c6bcc024e6.js
+// Retrieved at 8/17/2021, 7:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Settings-CreatePasswordSSOModal"], {
 		"./src/reddit/components/EmailCollection/Envelope/index.m.less": function(e, s, t) {
@@ -273,7 +273,7 @@
 					closeResetPasswordForDeactivateAccountModal: () => e(Object(r.g)(A.k)),
 					closeResetPasswordForGoogleLinkModal: () => e(Object(r.g)(A.m)),
 					closeResetPasswordForGoogleUnlinkModal: () => e(Object(r.g)(A.n)),
-					sendResetEmail: s => e(Object(i.w)(s))
+					sendResetEmail: s => e(Object(i.x)(s))
 				}));
 			s.default = L(e => e.userEmail && e.username ? a.a.createElement(R, e) : null)
 		},
@@ -373,4 +373,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Settings-CreatePasswordSSOModal.726b4864c594427538c8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Settings-CreatePasswordSSOModal.6cf8f70597c6bcc024e6.js.map

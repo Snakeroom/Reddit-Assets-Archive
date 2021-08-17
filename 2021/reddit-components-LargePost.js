@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.7c0d4158fb560e12c5e3.js
-// Retrieved at 8/17/2021, 2:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.95d83420999a4bbe8d05.js
+// Retrieved at 8/17/2021, 7:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost", "Reddit~StandalonePostPage~reddit-components-MediumPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1426,7 +1426,7 @@
 				d = s("./src/reddit/selectors/user.ts");
 			const l = () => async (e, t) => {
 				const s = t();
-				Object(n.a)(Object(a.f)(s)), e(Object(i.r)({
+				Object(n.a)(Object(a.f)(s)), e(Object(i.s)({
 					forceFetch: !0
 				})), await e(Object(o.g)(c.a.SNOOVATAR_MODAL))
 			};
@@ -8422,4 +8422,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.7c0d4158fb560e12c5e3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.95d83420999a4bbe8d05.js.map

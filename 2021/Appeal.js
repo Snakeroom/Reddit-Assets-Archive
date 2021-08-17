@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Appeal.30dcffc411a45579b278.js
-// Retrieved at 8/12/2021, 6:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Appeal.277abc7e5cb664392388.js
+// Retrieved at 8/17/2021, 7:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Appeal"], {
 		"./src/lib/validateEmail/index.ts": function(e, a, t) {
@@ -537,4 +537,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Appeal.30dcffc411a45579b278.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Appeal.277abc7e5cb664392388.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.4cff4fdb9322d2be7329.js
-// Retrieved at 8/17/2021, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.8784a1659026abf7d2d8.js
+// Retrieved at 8/17/2021, 7:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -1979,14 +1979,14 @@
 				const r = t();
 				e(i.l({
 					title: c.b()
-				})), Object(E.J)(r) || await e(h.r())
+				})), Object(E.J)(r) || await e(h.s())
 			}, w = () => async e => e(i.l({
 				title: c.b()
 			})), j = e => async (t, s) => {
 				const a = s();
 				t(i.l({
 					title: c.h()
-				})), Object(E.J)(a) || await t(h.r());
+				})), Object(E.J)(a) || await t(h.s());
 				const n = Object(E.J)(a);
 				if (e.queryParams.thanks && n) {
 					const e = await r.e("GoldPurchasePaymentActions").then(r.bind(null, "./src/reddit/actions/goldPurchaseModals/payment.ts")).then(e => e.paymentCompleted),
@@ -23825,4 +23825,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.4cff4fdb9322d2be7329.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.8784a1659026abf7d2d8.js.map

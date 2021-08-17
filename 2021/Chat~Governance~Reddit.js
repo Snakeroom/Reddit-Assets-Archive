@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.870adc5086b56fd6d3e4.js
-// Retrieved at 8/17/2021, 6:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.23c3d18c5ce9ad0da147.js
+// Retrieved at 8/17/2021, 7:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -2520,13 +2520,13 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("143285"),
+				buildNumber: r("143300"),
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1629236899"),
+				})("1629240947"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -4994,14 +4994,14 @@
 					}))
 				},
 				K = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c5e85be76fdf30fd1c045e331ba01dda118942905-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c21f0529842f77046a6e313988cc7be58e1422072-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${v.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "5e85be76fdf30fd1c045e331ba01dda118942905-production",
+						release: "21f0529842f77046a6e313988cc7be58e1422072-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(B.d)(), new d.Integrations.Breadcrumbs({
@@ -5495,7 +5495,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "5e85be76fdf30fd1c045e331ba01dda118942905-production",
+						releaseClient: "21f0529842f77046a6e313988cc7be58e1422072-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -13168,23 +13168,25 @@
 				return K
 			})), i.d(t, "d", (function() {
 				return J
-			})), i.d(t, "y", (function() {
+			})), i.d(t, "z", (function() {
 				return Z
 			})), i.d(t, "c", (function() {
 				return ee
 			})), i.d(t, "r", (function() {
+				return te
+			})), i.d(t, "s", (function() {
 				return ie
 			})), i.d(t, "p", (function() {
 				return ne
-			})), i.d(t, "x", (function() {
+			})), i.d(t, "y", (function() {
 				return re
-			})), i.d(t, "s", (function() {
+			})), i.d(t, "t", (function() {
 				return se
 			})), i.d(t, "a", (function() {
 				return oe
 			})), i.d(t, "o", (function() {
 				return ae
-			})), i.d(t, "u", (function() {
+			})), i.d(t, "v", (function() {
 				return le
 			})), i.d(t, "m", (function() {
 				return ue
@@ -13192,9 +13194,9 @@
 				return ce
 			})), i.d(t, "l", (function() {
 				return _e
-			})), i.d(t, "t", (function() {
+			})), i.d(t, "u", (function() {
 				return be
-			})), i.d(t, "v", (function() {
+			})), i.d(t, "w", (function() {
 				return ge
 			})), i.d(t, "i", (function() {
 				return we
@@ -13202,7 +13204,7 @@
 				return ye
 			})), i.d(t, "h", (function() {
 				return ve
-			})), i.d(t, "w", (function() {
+			})), i.d(t, "x", (function() {
 				return Oe
 			}));
 			var n = i("./node_modules/fbt/lib/FbtPublic.js"),
@@ -40206,4 +40208,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.870adc5086b56fd6d3e4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.23c3d18c5ce9ad0da147.js.map
