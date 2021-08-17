@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GoldTargetedOfferModal.239fd3a71cf62232e8e5.js
-// Retrieved at 8/12/2021, 6:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GoldTargetedOfferModal.2517f90ce0f288523c34.js
+// Retrieved at 8/16/2021, 8:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GoldTargetedOfferModal"], {
 		"./src/reddit/actions/goldPurchaseModals/coinPurchaseModal.ts": function(e, t, r) {
@@ -9,21 +9,21 @@
 			})), r.d(t, "a", (function() {
 				return E
 			})), r.d(t, "e", (function() {
-				return I
+				return P
 			})), r.d(t, "b", (function() {
 				return v
 			})), r.d(t, "d", (function() {
 				return A
 			})), r.d(t, "j", (function() {
-				return T
-			})), r.d(t, "i", (function() {
 				return S
+			})), r.d(t, "i", (function() {
+				return T
 			})), r.d(t, "f", (function() {
 				return M
 			})), r.d(t, "g", (function() {
-				return G
-			})), r.d(t, "h", (function() {
 				return N
+			})), r.d(t, "h", (function() {
+				return G
 			}));
 			var n = r("./node_modules/fbt/lib/FbtPublic.js"),
 				a = r("./src/lib/formatApiError/index.ts"),
@@ -50,7 +50,7 @@
 					t(k(e)), t(Object(l.h)(s.a.ECON_COIN_PURCHASE))
 				}, E = () => async (e, t) => {
 					e(w()), e(Object(l.g)(s.a.ECON_COIN_PURCHASE))
-				}, C = Object(o.a)(y.u), I = ({
+				}, C = Object(o.a)(y.u), P = ({
 					correlationId: e,
 					packageId: t
 				}) => async (r, n) => {
@@ -59,11 +59,11 @@
 						correlationId: e,
 						packageId: t
 					})), r(Object(l.i)(s.a.GOLD_TARGETED_OFFER_MODAL))) : c.c.captureMessage(`Tried to show targeted offer, but could not find package id: ${t}`)
-				}, P = Object(o.a)(y.p), v = ({
+				}, I = Object(o.a)(y.p), v = ({
 					correlationId: e,
 					packageId: t
 				}) => async (r, n) => {
-					Object(j.c)(n(), t) ? (r(P({
+					Object(j.c)(n(), t) ? (r(I({
 						correlationId: e,
 						packageId: t
 					})), r(Object(l.i)(s.a.ECON_COIN_PACKAGE_OFFER))) : c.c.captureMessage(`Tried to show coin package offer, but could not find package id: ${t}`)
@@ -87,7 +87,7 @@
 							text: e || t
 						}))
 					}
-				}, T = (e, t) => async (r, o, {
+				}, S = (e, t) => async (r, o, {
 					apiContext: c
 				}) => {
 					const s = o(),
@@ -127,7 +127,7 @@
 						});
 						r(Object(i.stripeApiError)(e))
 					}
-				}, S = (e, t, o) => async (c, s, {
+				}, T = (e, t, o) => async (c, s, {
 					apiContext: d
 				}) => {
 					const l = s(),
@@ -158,7 +158,7 @@
 								isAnonymous: s,
 								message: _
 							},
-							I = await Object(p.e)({
+							P = await Object(p.e)({
 								coins: u,
 								context: d(),
 								correlationId: h,
@@ -171,8 +171,8 @@
 								thingId: e,
 								token: j
 							});
-						if (I.error) {
-							const e = Object(a.a)(I.error, I.status);
+						if (P.error) {
+							const e = Object(a.a)(P.error, P.status);
 							return void c(Object(i.stripeApiError)(e))
 						} {
 							const {
@@ -186,7 +186,7 @@
 								all_awardings: a,
 								coins: o,
 								treatment_tags: s
-							} = I.body;
+							} = P.body;
 							return c(t({
 								awardKarmaReceived: n || 0,
 								awardId: x,
@@ -237,7 +237,7 @@
 						const e = Object(a.a)(l);
 						t(Object(i.paypalApiError)(e))
 					}
-				}, G = (e, t) => async (r, n, {
+				}, N = (e, t) => async (r, n, {
 					apiContext: o
 				}) => {
 					const s = n(),
@@ -272,7 +272,7 @@
 						const e = Object(a.a)(p);
 						r(Object(i.paypalApiError)(e))
 					}
-				}, N = (e, t) => async (o, s, {
+				}, G = (e, t) => async (o, s, {
 					apiContext: d
 				}) => {
 					const l = s(),
@@ -576,30 +576,39 @@
 			const {
 				fbt: j
 			} = r("./node_modules/fbt/lib/FbtPublic.js");
-			t.default = Object(s.a)((function() {
+			var _;
+			! function(e) {
+				e.NEW_PURCHASER = "new_purchaser", e.REPEAT_PURCHASER = "repeat_purchaser"
+			}(_ || (_ = {})), t.default = Object(s.a)((function() {
 				const e = Object(l.a)(),
 					t = Object(o.d)(),
 					r = Object(o.e)(e => Object(f.r)(e) || Object(i.d)(i.a.GoldPayment, !1)),
 					s = Object(o.e)(f.b),
 					O = Object(o.e)(e => s && Object(m.c)(e, s)),
-					_ = () => {
+					y = Object(o.e)(m.f),
+					k = () => {
 						t(Object(b.f)())
 					};
 				if (Object(n.useEffect)(() => {
 						O && e(Object(d.h)(void 0, O.mobileId, p.a.StorefrontFreeAward))
-					}, []), !O) return _(), null;
-				const {
-					baselineCoins: y,
-					baselinePennies: k,
-					coins: w,
-					pennies: x,
-					mobileId: E
-				} = O, C = w - y > 0, I = k - x, P = x !== k;
+					}, []), !O) return k(), null;
+				const w = y.length && (y[0].dealInfo.type === _.NEW_PURCHASER || y[0].dealInfo.type === _.REPEAT_PURCHASER),
+					{
+						baselineCoins: x,
+						baselinePennies: E,
+						coins: C,
+						pennies: P,
+						mobileId: I
+					} = w ? y[0] : O,
+					v = C - x,
+					A = !w && v > 0,
+					S = E - P,
+					T = P !== E;
 				return a.a.createElement(g.e, {
 					className: h.a.body
 				}, a.a.createElement("button", {
 					onClick: () => {
-						e(Object(d.b)(void 0, E, p.a.StorefrontFreeAward)), _()
+						e(Object(d.b)(void 0, I, p.a.StorefrontFreeAward)), k()
 					},
 					className: h.a.closeButton
 				}, a.a.createElement(g.b, {
@@ -617,11 +626,13 @@
 					hk: "2rIhaz"
 				})), a.a.createElement("p", {
 					className: h.a.description
-				}, !P && j._("Buy {coin amount} for {price}", [j._param("coin amount", y.toLocaleString()), j._param("price", `$${x/100}`)], {
-					hk: "15hnfi"
-				}), !P && C && j._("and get {bonus coins} coins FREE", [j._param("bonus coins", y.toLocaleString())], {
+				}, !T && j._("Buy {coin amount} coins for {price}", [j._param("coin amount", x.toLocaleString()), j._param("price", `$${P/100} `)], {
+					hk: "8rhgi"
+				}), w && j._("and get {coin amount} BONUS coins", [j._param("coin amount", v.toLocaleString())], {
+					hk: "26UFcD"
+				}), !T && A && j._("and get {bonus coins} coins FREE", [j._param("bonus coins", x.toLocaleString())], {
 					hk: "2CRGBn"
-				}), P && j._("Save {baseline price} off normal price!", [j._param("baseline price", `$${I/100}`)], {
+				}), T && j._("Save {baseline price} off normal price!", [j._param("baseline price", `$${S/100}`)], {
 					hk: "3DkBgK"
 				})), a.a.createElement("p", {
 					className: h.a.agreementLink
@@ -645,7 +656,7 @@
 					className: h.a.button,
 					"data-redditstyle": !0,
 					onClick: () => {
-						e(Object(d.a)(E, p.a.StorefrontFreeAward)), ((e, r) => {
+						e(Object(d.a)(I, p.a.StorefrontFreeAward)), ((e, r) => {
 							t(Object(b.f)()), t(Object(u.c)({
 								correlationId: r,
 								packageId: e.mobileId
@@ -727,8 +738,8 @@
 				} = b, y = f - p, k = y > 0, w = m - j, x = j !== m, {
 					title: E,
 					subtitle: C,
-					type: I
-				} = O, P = E || ("low_coin_upsell" === I ? n.fbt._("You’re low on coins", null, {
+					type: P
+				} = O, I = E || ("low_coin_upsell" === P ? n.fbt._("You’re low on coins", null, {
 					hk: "2fHrPn"
 				}) : n.fbt._("Special Offer!", null, {
 					hk: "2wnTrq"
@@ -751,7 +762,7 @@
 					src: b.images.marketing["2x"].url
 				}), o.a.createElement("h4", {
 					className: h.a.dealTitle
-				}, P), o.a.createElement("p", {
+				}, I), o.a.createElement("p", {
 					className: h.a.dealDescription
 				}, v), o.a.createElement("h4", {
 					className: h.a.deal
@@ -927,4 +938,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GoldTargetedOfferModal.239fd3a71cf62232e8e5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GoldTargetedOfferModal.2517f90ce0f288523c34.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.b89834107a0df5b6a5d2.js
-// Retrieved at 8/16/2021, 8:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.d6efdca1e559e21f7711.js
+// Retrieved at 8/16/2021, 8:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -3199,82 +3199,80 @@
 				c = n("./node_modules/reselect/es/index.js"),
 				l = n("./src/lib/addQueryParams/index.ts"),
 				d = n("./src/lib/lessComponent.tsx"),
-				u = n("./src/reddit/actions/login.ts"),
-				m = n("./src/reddit/actions/modal.ts"),
-				p = n("./src/reddit/actions/preferences.ts"),
-				b = n("./src/lib/makeActionCreator/index.ts"),
-				h = n("./src/reddit/actions/sso/constants.ts");
-			const f = Object(b.a)(h.a),
-				g = Object(b.a)(h.b);
-			var v = n("./src/reddit/actions/toaster.ts"),
-				y = n("./src/reddit/components/TrackingHelper/index.tsx"),
-				O = n("./src/reddit/constants/accountManager.ts"),
-				C = n("./src/reddit/constants/history.ts"),
-				x = n("./src/reddit/constants/listings.ts"),
-				E = n("./src/reddit/constants/modals.ts"),
-				P = n("./src/reddit/constants/parameters.ts"),
-				j = n("./src/reddit/helpers/getAccountManagerMessageTarget/index.ts"),
-				_ = n("./src/reddit/helpers/history/index.ts"),
-				S = n("./src/reddit/helpers/trackers/onboarding.ts"),
-				k = n("./src/reddit/icons/svgs/Close/index.tsx"),
-				w = n("./src/reddit/models/Sso/index.ts"),
-				I = n("./src/reddit/models/Toast/index.ts"),
-				M = n("./src/reddit/selectors/accountManager.ts"),
-				N = n("./src/reddit/selectors/experiments/frontpageSignup.ts"),
-				T = n("./src/reddit/selectors/experiments/onboarding.ts"),
-				A = n("./src/reddit/selectors/telemetry.ts"),
-				R = n("./src/reddit/selectors/user.ts"),
-				L = n("./src/reddit/components/AccountManagerModal/IFrame/index.m.less"),
-				F = n.n(L);
-			const D = d.a.iframe("IFrame", F.a),
-				U = d.a.button("CloseButton", F.a),
-				B = d.a.wrapped(k.a, "Close", F.a),
-				G = Object(c.c)({
-					accountManagerSrc: M.c,
-					actionSource: M.a,
-					frontpageSignupVariant: N.a,
-					isLoggedIn: R.J,
-					isOnboardingEnabled: T.a,
-					redirectUrl: M.b
+				u = n("./src/reddit/actions/modal.ts"),
+				m = n("./src/reddit/actions/preferences.ts"),
+				p = n("./src/lib/makeActionCreator/index.ts"),
+				b = n("./src/reddit/actions/sso/constants.ts");
+			const h = Object(p.a)(b.a),
+				f = Object(p.a)(b.b);
+			var g = n("./src/reddit/actions/toaster.ts"),
+				v = n("./src/reddit/components/TrackingHelper/index.tsx"),
+				y = n("./src/reddit/constants/accountManager.ts"),
+				O = n("./src/reddit/constants/history.ts"),
+				C = n("./src/reddit/constants/listings.ts"),
+				x = n("./src/reddit/constants/modals.ts"),
+				E = n("./src/reddit/constants/parameters.ts"),
+				P = n("./src/reddit/helpers/getAccountManagerMessageTarget/index.ts"),
+				j = n("./src/reddit/helpers/history/index.ts"),
+				_ = n("./src/reddit/helpers/trackers/onboarding.ts"),
+				S = n("./src/reddit/icons/svgs/Close/index.tsx"),
+				k = n("./src/reddit/models/Sso/index.ts"),
+				w = n("./src/reddit/models/Toast/index.ts"),
+				I = n("./src/reddit/selectors/accountManager.ts"),
+				M = n("./src/reddit/selectors/experiments/frontpageSignup.ts"),
+				N = n("./src/reddit/selectors/experiments/onboarding.ts"),
+				T = n("./src/reddit/selectors/telemetry.ts"),
+				A = n("./src/reddit/selectors/user.ts"),
+				R = n("./src/reddit/components/AccountManagerModal/IFrame/index.m.less"),
+				L = n.n(R);
+			const F = d.a.iframe("IFrame", L.a),
+				D = d.a.button("CloseButton", L.a),
+				U = d.a.wrapped(S.a, "Close", L.a),
+				B = Object(c.c)({
+					accountManagerSrc: I.c,
+					actionSource: I.a,
+					frontpageSignupVariant: M.a,
+					isLoggedIn: A.J,
+					isOnboardingEnabled: N.a,
+					redirectUrl: I.b
 				}),
-				q = Object(i.b)(G, (e, t) => ({
+				G = Object(i.b)(B, (e, t) => ({
 					oniFrameLoaded: (t, n) => {
 						e((e, s) => {
 							t.contentWindow.postMessage({
 								events: {
-									...Object(A.defaults)(s()),
+									...Object(T.defaults)(s()),
 									actionSource: n
 								},
 								type: "eventData"
-							}, Object(j.a)())
+							}, Object(P.a)())
 						})
 					},
-					onTwoFactorChanged: () => e(Object(p.x)(!1)),
+					onTwoFactorChanged: () => e(Object(m.x)(!1)),
 					onSSOLinkSuccess: (t, n, s) => {
-						e(f({
+						e(h({
 							linkedIdentity: n
-						})), e(Object(m.g)(s)), e(Object(v.f)(Object(v.e)(t, I.b.SuccessCommunity)))
+						})), e(Object(u.g)(s)), e(Object(g.f)(Object(g.e)(t, w.b.SuccessCommunity)))
 					},
 					onSSOUnlinkSuccess: (t, n, s) => {
-						e(g({
+						e(f({
 							linkedIdentity: n
-						})), e(Object(m.g)(s)), e(Object(v.f)(Object(v.e)(t, I.b.SuccessCommunity)))
+						})), e(Object(u.g)(s)), e(Object(g.f)(Object(g.e)(t, w.b.SuccessCommunity)))
 					},
 					showToast: (t, n) => {
-						e(Object(v.f)(Object(v.e)(t, n)))
-					},
-					showD2xOnboarding: () => e(Object(u.c)())
+						e(Object(g.f)(Object(g.e)(t, n)))
+					}
 				})),
-				H = ({
+				q = ({
 					data: e,
 					origin: t
-				}) => e && e.success && (e.type === O.a.ChangePassword || e.type === O.a.Close || e.type === O.a.CreateAccount || e.type === O.a.GoogleOneTapDisplayed || e.type === O.a.GoogleOneTapFlowFailed || e.type === O.a.GoogleOneTapSkipped || e.type === O.a.Login || e.type === O.a.PreferenceStatus || e.type === O.a.Register || e.type === O.a.Resize || e.type === O.a.ShowStep || e.type === O.a.SSOLinkFail || e.type === O.a.SSOLinkSuccess || e.type === O.a.SSOUnlinkFail || e.type === O.a.SSOUnlinkSuccess || e.type === O.a.Subscribe || e.type === O.a.TwoFactorChanged) && t === s.a.accountManagerOrigin,
-				W = {
+				}) => e && e.success && (e.type === y.a.ChangePassword || e.type === y.a.Close || e.type === y.a.CreateAccount || e.type === y.a.GoogleOneTapDisplayed || e.type === y.a.GoogleOneTapFlowFailed || e.type === y.a.GoogleOneTapSkipped || e.type === y.a.Login || e.type === y.a.PreferenceStatus || e.type === y.a.Register || e.type === y.a.Resize || e.type === y.a.ShowStep || e.type === y.a.SSOLinkFail || e.type === y.a.SSOLinkSuccess || e.type === y.a.SSOUnlinkFail || e.type === y.a.SSOUnlinkSuccess || e.type === y.a.Subscribe || e.type === y.a.TwoFactorChanged) && t === s.a.accountManagerOrigin,
+				H = {
 					"select-account": "link_account",
 					"confirm-otp": "link_account_otp",
 					"confirm-password": "link_account_password"
 				};
-			class V extends a.a.Component {
+			class W extends a.a.Component {
 				constructor() {
 					super(...arguments), this.iframeRef = a.a.createRef(), this.isAccountCreated = !1, this.trackResizing = !0, this.currentStep = null, this.state = {
 						iframeStyles: {}
@@ -3287,12 +3285,12 @@
 							t && t.focus()
 						} catch (e) {}
 					}, this.handleLinkSSOSuccess = e => {
-						const t = e === w.a.Apple ? E.a.LINK_APPLE_SSO : E.a.LINK_GOOGLE_SSO;
+						const t = e === k.a.Apple ? x.a.LINK_APPLE_SSO : x.a.LINK_GOOGLE_SSO;
 						this.props.onSSOLinkSuccess(o.fbt._("Account connected", null, {
 							hk: "2X2Y2n"
 						}), e, t)
 					}, this.handleUnlinkSSOSuccess = e => {
-						const t = e === w.a.Apple ? E.a.UNLINK_APPLE_SSO : E.a.UNLINK_GOOGLE_SSO;
+						const t = e === k.a.Apple ? x.a.UNLINK_APPLE_SSO : x.a.UNLINK_GOOGLE_SSO;
 						this.props.onSSOUnlinkSuccess(o.fbt._("Account disconnected", null, {
 							hk: "mUOBy"
 						}), e, t)
@@ -3307,77 +3305,73 @@
 						const {
 							data: t
 						} = e;
-						if (this.iframeRef.current && e.source === this.iframeRef.current.contentWindow && H(e))
-							if (t.type === O.a.CreateAccount) this.isAccountCreated = !0;
-							else if (t.type === O.a.Close) this.closedByUser();
-						else if (t.type === O.a.Subscribe) this.onSubscribe(t.subscriptions || t.subredditIds);
-						else if (t.type === O.a.Login) this.onLogIn();
-						else if (t.type === O.a.ChangePassword) this.onChangePassword();
-						else if (t.type === O.a.Resize) {
+						if (this.iframeRef.current && e.source === this.iframeRef.current.contentWindow && q(e))
+							if (t.type === y.a.CreateAccount) this.isAccountCreated = !0;
+							else if (t.type === y.a.Close) this.closedByUser();
+						else if (t.type === y.a.Subscribe) this.onSubscribe(t.subscriptions || t.subredditIds);
+						else if (t.type === y.a.Login) this.onLogIn();
+						else if (t.type === y.a.ChangePassword) this.onChangePassword();
+						else if (t.type === y.a.Resize) {
 							if (t.payload && this.trackResizing) {
 								const e = t.payload;
 								e.height && e.width && this.setIframeStyles(e)
 							}
-						} else if (t.type === O.a.TwoFactorChanged) this.props.onTwoFactorChanged();
-						else if (t.type === O.a.SSOLinkFail) this.props.onSSOLinkActionFail && this.props.onSSOLinkActionFail();
-						else if (t.type === O.a.SSOLinkSuccess) {
+						} else if (t.type === y.a.TwoFactorChanged) this.props.onTwoFactorChanged();
+						else if (t.type === y.a.SSOLinkFail) this.props.onSSOLinkActionFail && this.props.onSSOLinkActionFail();
+						else if (t.type === y.a.SSOLinkSuccess) {
 							const e = t.payload && t.payload.issuerId;
 							this.handleLinkSSOSuccess(e)
-						} else if (t.type === O.a.SSOUnlinkFail) this.props.onSSOLinkActionFail && this.props.onSSOLinkActionFail();
-						else if (t.type === O.a.SSOUnlinkSuccess) {
+						} else if (t.type === y.a.SSOUnlinkFail) this.props.onSSOLinkActionFail && this.props.onSSOLinkActionFail();
+						else if (t.type === y.a.SSOUnlinkSuccess) {
 							const e = t.payload && t.payload.issuerId;
 							this.handleUnlinkSSOSuccess(e)
-						} else t.type === O.a.GoogleOneTapDisplayed ? this.props.isLoggedIn || (this.setIframeStyles({
+						} else t.type === y.a.GoogleOneTapDisplayed ? this.props.isLoggedIn || (this.setIframeStyles({
 							visibility: "visible"
-						}), this.onGoogleOneTapUIViewed()) : t.type === O.a.GoogleOneTapFlowFailed ? this.props.isLoggedIn || this.onGoogleOneTapFlowFailed(t.message) : t.type === O.a.GoogleOneTapSkipped ? this.props.isLoggedIn || (this.props.onGoogleOneTapSkipped && this.props.onGoogleOneTapSkipped(t.reason), this.close()) : t.type === O.a.ShowStep ? this.onShowStep(t.step) : t.type === O.a.PreferenceStatus ? this.onEmailDigestsStatus(t.successfullySet) : this.onSignUp(t.numberSubredditsSelected, t.subredditIds)
+						}), this.onGoogleOneTapUIViewed()) : t.type === y.a.GoogleOneTapFlowFailed ? this.props.isLoggedIn || this.onGoogleOneTapFlowFailed(t.message) : t.type === y.a.GoogleOneTapSkipped ? this.props.isLoggedIn || (this.props.onGoogleOneTapSkipped && this.props.onGoogleOneTapSkipped(t.reason), this.close()) : t.type === y.a.ShowStep ? this.onShowStep(t.step) : t.type === y.a.PreferenceStatus ? this.onEmailDigestsStatus(t.successfullySet) : this.onSignUp(t.numberSubredditsSelected, t.subredditIds)
 					}, this.onSubscribe = e => {
 						this.props.onSubscriptionsChanged && this.props.onSubscriptionsChanged(e || [])
 					}, this.onLogIn = () => {
-						this.props.redirectUrl ? this.redirectTo(this.props.redirectUrl) : (Object(_.a)(C.a.JustLoggedIn, !0), window.location.reload(!0))
+						this.props.redirectUrl ? this.redirectTo(this.props.redirectUrl) : (Object(j.a)(O.a.JustLoggedIn, !0), window.location.reload(!0))
 					}, this.onChangePassword = () => {
 						this.props.redirectUrl ? this.redirectTo(this.props.redirectUrl) : window.location.reload(!0)
 					}, this.onSignUp = (e, t) => {
 						const {
 							isOnboardingEnabled: n,
-							redirectUrl: s,
-							showD2xOnboarding: o
+							redirectUrl: s
 						} = this.props;
-						let r = "";
-						if (s) r = s;
+						let o = "";
+						if (s) o = s;
+						else if ("/" !== window.location.pathname || n) o = window.location.href;
 						else {
-							if (n) return o();
-							if ("/" !== window.location.pathname) r = window.location.href;
-							else {
-								const n = 0;
-								r = (e || t && t.length || 0) > n ? x.c[x.b.Home] : x.c[x.b.Popular]
-							}
+							const n = 0;
+							o = (e || t && t.length || 0) > n ? C.c[C.b.Home] : C.c[C.b.Popular]
 						}
-						this.redirectTo(r)
+						this.redirectTo(o)
 					}, this.onShowStep = e => {
-						this.currentStep = e, e === O.b.Subscribe && (this.trackResizing = !1, this.setIframeStyles({
+						this.currentStep = e, e === y.b.Subscribe && (this.trackResizing = !1, this.setIframeStyles({
 							height: void 0,
 							width: void 0
 						})), this.props.onShowScreen && this.props.onShowScreen(e)
 					}, this.onGoogleOneTapFlowFailed = e => {
 						this.close(), this.props.showToast(e || o.fbt._("Something went wrong. Please try again later", null, {
 							hk: "3TdJZE"
-						}), I.b.Error)
+						}), w.b.Error)
 					}, this.onEmailDigestsStatus = e => {
 						e ? this.props.showToast(o.fbt._("Changes saved", null, {
 							hk: "6bifV"
-						}), I.b.SuccessCommunity) : this.props.showToast(o.fbt._("Something went wrong. Please try again later", null, {
+						}), w.b.SuccessCommunity) : this.props.showToast(o.fbt._("Something went wrong. Please try again later", null, {
 							hk: "1M3Z2N"
-						}), I.b.Error)
+						}), w.b.Error)
 					}, this.onGoogleOneTapUIViewed = () => {
 						this.props.onGoogleOneTapUIViewed && this.props.onGoogleOneTapUIViewed()
 					}, this.redirectTo = e => {
 						window.location.replace(Object(l.a)(e, {
-							[P.o]: "true"
+							[E.o]: "true"
 						}))
 					}, this.closedByUser = () => {
 						if (this.currentStep) {
-							const e = W[this.currentStep];
-							e && this.props.sendEvent(Object(S.l)(e))
+							const e = H[this.currentStep];
+							e && this.props.sendEvent(Object(_.l)(e))
 						}
 						this.close()
 					}, this.close = () => {
@@ -3399,7 +3393,7 @@
 					}, this.props.setRef && this.props.setRef(this.iframeRef), this.props.exposeIFrameElement && this.props.exposeIFrameElement(this.iframeRef.current)), window.addEventListener("message", this.onMessage)
 				}
 				componentDidUpdate(e) {
-					this.props.path !== e.path && e.path === O.c.GoogleOneTap && this.iframeRef.current && this.setIframeStyles({
+					this.props.path !== e.path && e.path === y.c.GoogleOneTap && this.iframeRef.current && this.setIframeStyles({
 						height: void 0,
 						visibility: void 0,
 						width: void 0
@@ -3416,18 +3410,18 @@
 					} = this.props, {
 						iframeStyles: s
 					} = this.state;
-					return a.a.createElement(a.a.Fragment, null, a.a.createElement(D, {
+					return a.a.createElement(a.a.Fragment, null, a.a.createElement(F, {
 						className: t,
 						innerRef: this.iframeRef,
 						src: e,
 						style: s,
 						onLoad: this.onIFrameLoad
-					}), n && a.a.createElement(U, {
+					}), n && a.a.createElement(D, {
 						onClick: this.closedByUser
-					}, a.a.createElement(B, null)))
+					}, a.a.createElement(U, null)))
 				}
 			}
-			t.a = q(Object(y.c)(V))
+			t.a = G(Object(v.c)(W))
 		},
 		"./src/reddit/components/AccountManagerModal/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -19933,4 +19927,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePo~5f1ac562", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250", "Governance~ModListing~Reddit~Subreddit", "Chat~Governance~Reddit", "Governance~Reddit~reddit-components-MediumPost", "Reddit~StandalonePostPage~reddit-components-MediumPost", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.b89834107a0df5b6a5d2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.d6efdca1e559e21f7711.js.map
