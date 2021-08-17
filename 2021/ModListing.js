@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.672d3f26ab00310aae7d.js
-// Retrieved at 8/16/2021, 8:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.6f40a8821b37cad5264e.js
+// Retrieved at 8/17/2021, 2:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -2204,10 +2204,10 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const h = Object(c.t)(),
+			const h = Object(c.u)(),
 				b = Object(i.c)({
 					isEditing: l.i,
-					layout: (e, t) => t.forcedLayout || Object(c.P)(e, t)
+					layout: (e, t) => t.forcedLayout || Object(c.Q)(e, t)
 				}),
 				f = Object(o.b)(b),
 				y = ({
@@ -2629,7 +2629,7 @@
 				be = r.n(he);
 			const {
 				fbt: fe
-			} = r("./node_modules/fbt/lib/FbtPublic.js"), ye = Object(F.t)({
+			} = r("./node_modules/fbt/lib/FbtPublic.js"), ye = Object(F.u)({
 				filtered: e => !!e && Object(q.d)(e.url)
 			}), ve = Object(d.c)({
 				hiddenSubredditsNames: e => e.modListingPage.filteredSubreddits.names
@@ -4550,4 +4550,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.672d3f26ab00310aae7d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.6f40a8821b37cad5264e.js.map

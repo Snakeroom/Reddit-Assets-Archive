@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.cc0c13561263c1bec5e1.js
-// Retrieved at 8/16/2021, 8:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.4d075f11acfcf03deff7.js
+// Retrieved at 8/17/2021, 2:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["TopWeekPostsDiscoveryUnit"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -909,9 +909,9 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const pe = Object(m.t)(),
+			const pe = Object(m.u)(),
 				be = Object(ae.c)({
-					isFakeSubreddit: m.x
+					isFakeSubreddit: m.y
 				}),
 				he = Object(o.b)(be),
 				xe = e => {
@@ -1030,7 +1030,7 @@
 					trackPostClick: (t, n) => e((e, r) => s ? h.w(r(), s, t, n) : null),
 					trackPostSubredditClick: n => e((e, r) => t ? h.y(r(), t, n) : s ? h.y(r(), s, n) : null)
 				})),
-				we = Object(m.t)();
+				we = Object(m.u)();
 			class Ie extends l.c {
 				constructor(e) {
 					super(e), this.state = {
@@ -1722,7 +1722,7 @@
 				K = Object(c.c)({
 					flairPosition: (e, {
 						pageLayer: t
-					}) => Object(p.p)(e, {
+					}) => Object(p.q)(e, {
 						pageLayer: t
 					}),
 					shouldOpenPostInNewTab: D.cb
@@ -1875,8 +1875,8 @@
 				}
 			}
 			t.c = a.a.memo((function(e) {
-				const t = Object(p.bb)(),
-					s = Object(p.v)(t),
+				const t = Object(p.db)(),
+					s = Object(p.w)(t),
 					n = Object(R.a)(),
 					r = Object(i.e)(r => K(r, {
 						...n,
@@ -1918,8 +1918,8 @@
 				b = ["center", "bottom"],
 				h = o.a.div("Container", u.a),
 				x = Object(i.a)(c.b),
-				f = Object(l.t)({
-					isProfileListingPage: l.G
+				f = Object(l.u)({
+					isProfileListingPage: l.H
 				});
 			class g extends a.a.Component {
 				constructor(e) {
@@ -2411,4 +2411,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.cc0c13561263c1bec5e1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.4d075f11acfcf03deff7.js.map

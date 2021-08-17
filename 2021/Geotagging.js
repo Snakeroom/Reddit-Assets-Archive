@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Geotagging.e460aa62eac38f74fc9e.js
-// Retrieved at 8/12/2021, 6:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Geotagging.e445346e0e9b25e3d99c.js
+// Retrieved at 8/17/2021, 2:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Geotagging"], {
 		"./node_modules/p-debounce/index.js": function(e, t, s) {
@@ -310,8 +310,8 @@
 				fbt: b
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), p = i.a.a("Link", m.a), h = Object(l.c)({
 				isNavbarLikeMwebEnabled: d.a
-			}), g = Object(a.b)(h), f = Object(c.t)({
-				isFrontpage: c.y
+			}), g = Object(a.b)(h), f = Object(c.u)({
+				isFrontpage: c.z
 			});
 			t.a = f(g(e => e.isNavbarLikeMwebEnabled ? e.isFrontpage ? r.a.createElement(o.a, {
 				className: m.a.Widget,
@@ -568,7 +568,7 @@
 					}))
 				}
 			}
-			const T = Object(x.t)();
+			const T = Object(x.u)();
 			t.a = T(w)
 		},
 		"./src/reddit/components/StructuredStyles/BladeDrawerController/index.m.less": function(e, t, s) {
@@ -1170,9 +1170,9 @@
 				O = s.n(k);
 			const {
 				fbt: j
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), C = Object(u.t)(), N = Object(i.b)(() => Object(a.c)({
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), C = Object(u.u)(), N = Object(i.b)(() => Object(a.c)({
 				forceRedditStyle: (e, t) => {
-					const s = Object(u.m)(e, t) || void 0,
+					const s = Object(u.n)(e, t) || void 0,
 						n = t.redditStyle || Object(g.l)(e, {
 							subredditId: s
 						}),
@@ -1180,7 +1180,7 @@
 					return n || r
 				},
 				nigtmode: f.W,
-				subredditId: u.m,
+				subredditId: u.n,
 				topPostVariant: h.d
 			}));
 			class w extends r.a.Component {
@@ -1815,4 +1815,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.e460aa62eac38f74fc9e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.e445346e0e9b25e3d99c.js.map

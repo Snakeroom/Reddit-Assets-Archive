@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.436fd5284c4a3491b7b6.js
-// Retrieved at 8/17/2021, 1:00:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.205c1a41721f1a40151c.js
+// Retrieved at 8/17/2021, 2:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -2520,13 +2520,13 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("143179"),
+				buildNumber: r("143202"),
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1629218098"),
+				})("1629221825"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -4994,14 +4994,14 @@
 					}))
 				},
 				K = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %cd42b5237d93285cf0c8a193511b9460d315545bd-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %cbd3155b00c0777b0530f8bc9b701903920e2ee9c-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${v.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "d42b5237d93285cf0c8a193511b9460d315545bd-production",
+						release: "bd3155b00c0777b0530f8bc9b701903920e2ee9c-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(B.d)(), new d.Integrations.Breadcrumbs({
@@ -5495,7 +5495,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "d42b5237d93285cf0c8a193511b9460d315545bd-production",
+						releaseClient: "bd3155b00c0777b0530f8bc9b701903920e2ee9c-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -16257,9 +16257,9 @@
 			"use strict";
 			i.d(t, "a", (function() {
 				return o
-			})), i.d(t, "t", (function() {
+			})), i.d(t, "u", (function() {
 				return a
-			})), i.d(t, "bb", (function() {
+			})), i.d(t, "db", (function() {
 				return l
 			}));
 			i("./node_modules/core-js/modules/web.dom.iterable.js");
@@ -16269,11 +16269,11 @@
 			i.d(t, "b", (function() {
 				return s.a
 			})), i.d(t, "c", (function() {
-				return s.c
+				return s.b
 			})), i.d(t, "d", (function() {
 				return s.d
 			})), i.d(t, "e", (function() {
-				return s.f
+				return s.e
 			})), i.d(t, "f", (function() {
 				return s.g
 			})), i.d(t, "g", (function() {
@@ -16302,7 +16302,7 @@
 				return s.s
 			})), i.d(t, "s", (function() {
 				return s.t
-			})), i.d(t, "u", (function() {
+			})), i.d(t, "t", (function() {
 				return s.u
 			})), i.d(t, "v", (function() {
 				return s.v
@@ -16368,6 +16368,10 @@
 				return s.Z
 			})), i.d(t, "ab", (function() {
 				return s.ab
+			})), i.d(t, "bb", (function() {
+				return s.bb
+			})), i.d(t, "cb", (function() {
+				return s.cb
 			}));
 			const o = r.a.createContext(null);
 
@@ -16403,112 +16407,116 @@
 		},
 		"./src/reddit/contexts/PageLayer/selectors.ts": function(e, t, i) {
 			"use strict";
-			i.d(t, "f", (function() {
+			i.d(t, "g", (function() {
 				return B
-			})), i.d(t, "y", (function() {
-				return k
-			})), i.d(t, "F", (function() {
-				return L
-			})), i.d(t, "O", (function() {
-				return M
-			})), i.d(t, "Q", (function() {
-				return U
-			})), i.d(t, "x", (function() {
-				return G
-			})), i.d(t, "D", (function() {
-				return q
-			})), i.d(t, "B", (function() {
-				return V
-			})), i.d(t, "W", (function() {
-				return H
-			})), i.d(t, "w", (function() {
-				return W
-			})), i.d(t, "v", (function() {
-				return $
 			})), i.d(t, "z", (function() {
-				return z
-			})), i.d(t, "N", (function() {
-				return K
-			})), i.d(t, "A", (function() {
-				return J
-			})), i.d(t, "I", (function() {
-				return Y
-			})), i.d(t, "E", (function() {
-				return Q
-			})), i.d(t, "J", (function() {
-				return Z
+				return k
 			})), i.d(t, "G", (function() {
-				return ee
-			})), i.d(t, "L", (function() {
-				return te
-			})), i.d(t, "K", (function() {
-				return ie
-			})), i.d(t, "c", (function() {
-				return ne
-			})), i.d(t, "a", (function() {
-				return re
-			})), i.d(t, "t", (function() {
-				return se
-			})), i.d(t, "d", (function() {
-				return oe
-			})), i.d(t, "o", (function() {
-				return de
-			})), i.d(t, "r", (function() {
-				return ae
-			})), i.d(t, "n", (function() {
-				return le
-			})), i.d(t, "p", (function() {
-				return ue
-			})), i.d(t, "q", (function() {
-				return ce
-			})), i.d(t, "H", (function() {
-				return _e
-			})), i.d(t, "i", (function() {
-				return pe
-			})), i.d(t, "j", (function() {
-				return me
-			})), i.d(t, "k", (function() {
-				return he
-			})), i.d(t, "l", (function() {
-				return fe
-			})), i.d(t, "C", (function() {
-				return be
-			})), i.d(t, "h", (function() {
-				return ge
-			})), i.d(t, "S", (function() {
-				return we
-			})), i.d(t, "U", (function() {
-				return ye
-			})), i.d(t, "X", (function() {
-				return ve
-			})), i.d(t, "ab", (function() {
-				return Ee
+				return L
 			})), i.d(t, "P", (function() {
-				return Te
+				return M
 			})), i.d(t, "R", (function() {
-				return Se
-			})), i.d(t, "s", (function() {
-				return Oe
-			})), i.d(t, "T", (function() {
-				return Ie
-			})), i.d(t, "b", (function() {
-				return Fe
-			})), i.d(t, "u", (function() {
-				return Re
-			})), i.d(t, "V", (function() {
-				return je
-			})), i.d(t, "g", (function() {
-				return Ce
-			})), i.d(t, "m", (function() {
-				return xe
-			})), i.d(t, "Z", (function() {
-				return Ne
-			})), i.d(t, "e", (function() {
-				return Ae
+				return U
+			})), i.d(t, "y", (function() {
+				return G
+			})), i.d(t, "E", (function() {
+				return q
+			})), i.d(t, "C", (function() {
+				return V
+			})), i.d(t, "X", (function() {
+				return H
+			})), i.d(t, "x", (function() {
+				return W
+			})), i.d(t, "w", (function() {
+				return $
+			})), i.d(t, "A", (function() {
+				return z
+			})), i.d(t, "O", (function() {
+				return K
+			})), i.d(t, "B", (function() {
+				return J
+			})), i.d(t, "J", (function() {
+				return Y
+			})), i.d(t, "F", (function() {
+				return Q
+			})), i.d(t, "K", (function() {
+				return Z
+			})), i.d(t, "H", (function() {
+				return ee
 			})), i.d(t, "M", (function() {
-				return Pe
+				return te
+			})), i.d(t, "L", (function() {
+				return ie
+			})), i.d(t, "d", (function() {
+				return ne
+			})), i.d(t, "b", (function() {
+				return re
+			})), i.d(t, "u", (function() {
+				return se
+			})), i.d(t, "e", (function() {
+				return oe
+			})), i.d(t, "p", (function() {
+				return de
+			})), i.d(t, "s", (function() {
+				return ae
+			})), i.d(t, "o", (function() {
+				return le
+			})), i.d(t, "q", (function() {
+				return ue
+			})), i.d(t, "r", (function() {
+				return ce
+			})), i.d(t, "I", (function() {
+				return _e
+			})), i.d(t, "j", (function() {
+				return pe
+			})), i.d(t, "k", (function() {
+				return me
+			})), i.d(t, "l", (function() {
+				return he
+			})), i.d(t, "m", (function() {
+				return fe
+			})), i.d(t, "D", (function() {
+				return be
+			})), i.d(t, "i", (function() {
+				return ge
+			})), i.d(t, "T", (function() {
+				return we
+			})), i.d(t, "V", (function() {
+				return ye
 			})), i.d(t, "Y", (function() {
+				return ve
+			})), i.d(t, "cb", (function() {
+				return Ee
+			})), i.d(t, "Q", (function() {
+				return Te
+			})), i.d(t, "S", (function() {
+				return Se
+			})), i.d(t, "t", (function() {
+				return Oe
+			})), i.d(t, "U", (function() {
+				return Ie
+			})), i.d(t, "c", (function() {
+				return Fe
+			})), i.d(t, "v", (function() {
+				return Re
+			})), i.d(t, "W", (function() {
+				return je
+			})), i.d(t, "h", (function() {
+				return Ce
+			})), i.d(t, "n", (function() {
+				return xe
+			})), i.d(t, "ab", (function() {
+				return Ne
+			})), i.d(t, "f", (function() {
+				return Ae
+			})), i.d(t, "N", (function() {
+				return Pe
+			})), i.d(t, "Z", (function() {
 				return De
+			})), i.d(t, "bb", (function() {
+				return Be
+			})), i.d(t, "a", (function() {
+				return ke
 			}));
 			i("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = i("./node_modules/lodash/isEmpty.js"),
@@ -16935,7 +16943,13 @@
 				}) => K(t), ae, A.g, (e, t, i) => {
 					const n = e || Boolean(t);
 					return Boolean(n && i)
-				})(e, t)
+				})(e, t),
+				Be = (e, t, i) => {
+					return !_e(t) && Object(P.q)(e, i)
+				},
+				ke = (e, t, i) => {
+					return !_e(t) && Object(P.f)(e, i)
+				}
 		},
 		"./src/reddit/endpoints/category/subreddits.ts": function(e, t, i) {
 			"use strict";
@@ -29662,7 +29676,7 @@
 						pageLayer: n
 					} = t, d = Object(a.z)(e, {
 						subredditName: i
-					}), u = Object(s.b)(e, {
+					}), u = Object(s.c)(e, {
 						pageLayer: n
 					});
 					return (!u || !l.has(u)) && (!(d || !Object(r.a)(i)) || !!d && d.wls === o.b.ALL_ADS)
@@ -29824,7 +29838,7 @@
 					return !!i && i.discussionType === r.b.Chat
 				},
 				u = (e, t) => {
-					const i = t.subredditId || Object(n.n)(e, t),
+					const i = t.subredditId || Object(n.o)(e, t),
 						r = d(e, i),
 						o = a(e, i),
 						l = !!i && Object(s.c)(e, {
@@ -31854,7 +31868,7 @@
 				L = (e, {
 					pageLayer: t
 				}) => {
-					if (!t || !Object(l.E)(t)) return !1;
+					if (!t || !Object(l.F)(t)) return !1;
 					const {
 						subredditName: i,
 						profileName: n
@@ -32239,19 +32253,19 @@
 					pageLayer: t
 				}) => {
 					if (!t) return E.b;
-					const i = Object(l.q)(e, {
+					const i = Object(l.r)(e, {
 						pageLayer: t
 					});
 					if (i) return Object(f.a)(Object(p.a)(i), E.b);
-					const n = Object(l.j)(e, {
+					const n = Object(l.k)(e, {
 						pageLayer: t
 					});
-					return n && Object(l.C)(e, {
+					return n && Object(l.D)(e, {
 						pageLayer: t
 					}) && Object(x.g)(e) ? Object(f.a)(n.url, E.b) : E.b
 				},
 				Ue = (e, t) => {
-					const i = Object(u.p)(e, t);
+					const i = Object(u.q)(e, t);
 					return (!i || !i.isQuarantined) && e.creations.formData.postToTwitter
 				},
 				Ge = e => {
@@ -33200,7 +33214,7 @@
 				s = i("./src/reddit/selectors/meta.ts"),
 				o = i("./src/reddit/selectors/user.ts");
 			const d = new Set([n.Xb.Creator, n.Xb.Messaging, n.Xb.Payments, n.Xb.SpecialMembership]),
-				a = (e, t) => !(!Object(s.f)(e) && !Object(s.h)(e)) && (!(!Object(o.I)(e) && !Object(o.J)(e)) && (!!Object(r.K)(t.pageLayer) && (!(!t.pageLayer || !t.pageLayer.routeMatch) && !d.has(t.pageLayer.routeMatch.match.params.page))))
+				a = (e, t) => !(!Object(s.f)(e) && !Object(s.h)(e)) && (!(!Object(o.I)(e) && !Object(o.J)(e)) && (!!Object(r.L)(t.pageLayer) && (!(!t.pageLayer || !t.pageLayer.routeMatch) && !d.has(t.pageLayer.routeMatch.match.params.page))))
 		},
 		"./src/reddit/selectors/runTimeEnvVars.ts": function(e, t, i) {
 			"use strict";
@@ -33325,7 +33339,7 @@
 				g = (e, {
 					pageLayer: t
 				}) => {
-					if (!t || !Object(s.w)(t) || Object(s.I)(t)) return !1;
+					if (!t || !Object(s.x)(t) || Object(s.J)(t)) return !1;
 					const {
 						partialPostId: i
 					} = !!t && t.urlParams;
@@ -34959,7 +34973,7 @@
 					return null
 				},
 				at = (e, t) => {
-					const i = Object(k.P)(e, {});
+					const i = Object(k.Q)(e, {});
 					let n;
 					Object(oe.f)(e) && (n = Object(oe.h)(e) ? "lightbox" : "post_detail");
 					let r = "default";
@@ -40179,4 +40193,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.436fd5284c4a3491b7b6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.205c1a41721f1a40151c.js.map

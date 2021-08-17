@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.37c4b9987ea97eca9de4.js
-// Retrieved at 8/16/2021, 8:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.f8f2b25ecb01f41c434b.js
+// Retrieved at 8/17/2021, 2:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8"], {
 		"./src/reddit/actions/economics/subredditPremium/actionCreators.ts": function(e, t, r) {
@@ -345,8 +345,8 @@
 					ErrorComponent: () => null,
 					LoadingComponent: () => null
 				}),
-				z = r("./src/reddit/components/AwardBadges/AwardPill/index.m.less"),
-				Q = r.n(z);
+				Q = r("./src/reddit/components/AwardBadges/AwardPill/index.m.less"),
+				z = r.n(Q);
 			const W = 3500,
 				V = 500;
 			class J extends n.a.PureComponent {
@@ -429,31 +429,31 @@
 						shouldAnimate: c
 					} = this.state, l = Object(U.a)(e.id, o.id);
 					return n.a.createElement("span", {
-						className: Q.a.awardPillContainer,
+						className: z.a.awardPillContainer,
 						id: i,
 						onMouseEnter: this.handleMouseEnter,
 						onMouseLeave: this.handleMouseLeave
 					}, n.a.createElement("button", {
-						className: Object(k.a)(t, Q.a.awardPill, {
-							[Q.a.userGiven]: d
+						className: Object(k.a)(t, z.a.awardPill, {
+							[z.a.userGiven]: d
 						}),
 						onClick: this.handleOnClick
 					}, n.a.createElement("span", {
-						className: Q.a.imageContainer
+						className: z.a.imageContainer
 					}, n.a.createElement("img", {
 						alt: e.name,
-						className: Object(k.a)(Q.a.awardIcon, {
-							[Q.a.hidden]: c
+						className: Object(k.a)(z.a.awardIcon, {
+							[z.a.hidden]: c
 						}),
 						id: l,
 						ref: this.imageRef,
 						src: a
 					}), c && n.a.createElement("img", {
 						alt: e.name,
-						className: Q.a.animationIcon,
+						className: z.a.animationIcon,
 						src: s
 					})), n.a.createElement("span", {
-						className: Q.a.count
+						className: z.a.count
 					}, r.toLocaleString())), n.a.createElement(q, {
 						award: e,
 						onOpenReportFlow: this.handleOpenReportFlow,
@@ -1800,13 +1800,13 @@
 				D = r("./src/reddit/icons/fonts/helpers.tsx"),
 				G = r("./src/reddit/icons/fonts/commonStyles.m.less"),
 				q = r.n(G);
-			var z = e => a.a.createElement("i", {
+			var Q = e => a.a.createElement("i", {
 					className: Object(o.a)(Object(D.b)("admin", e.isFilled), q.a.adminIcon, e.className),
 					id: e.id,
 					onMouseEnter: e.onMouseEnter,
 					onMouseLeave: e.onMouseLeave
 				}, a.a.createElement(D.a, null, e.desc)),
-				Q = (r("./src/reddit/icons/fonts/Premium/index.tsx"), r("./src/reddit/components/UserIcon/index.tsx")),
+				z = (r("./src/reddit/icons/fonts/Premium/index.tsx"), r("./src/reddit/components/UserIcon/index.tsx")),
 				W = r("./src/reddit/constants/postLayout.ts"),
 				V = r("./src/reddit/contexts/PageLayer/index.tsx"),
 				J = r("./src/reddit/models/Flair/index.ts"),
@@ -1832,7 +1832,7 @@
 			const de = e => Object(H.a)(Object(R.a)(e), Y.a.metaText, Y.b.metaText),
 				ce = c.a.wrapped(M.b, "MetaSeparator", ae.a),
 				le = c.a.span("text", ae.a),
-				ue = Object(V.t)(),
+				ue = Object(V.u)(),
 				me = e => {
 					const t = Object(b.a)(oe),
 						r = ne._("Reddit admin, speaking officially", null, {
@@ -1851,7 +1851,7 @@
 						forceOpenInNewTab: e.forceOpenInNewTab,
 						isUnstyled: !0,
 						style: e.style
-					}, `u/${e.post.author}`, n && a.a.createElement(a.a.Fragment, null, a.a.createElement(z, {
+					}, `u/${e.post.author}`, n && a.a.createElement(a.a.Fragment, null, a.a.createElement(Q, {
 						className: ae.a.adminIcon,
 						isFilled: !0,
 						desc: r
@@ -1864,7 +1864,7 @@
 						arrowProps: t.arrowProps,
 						popperProps: t.popperProps,
 						visible: t.visible
-					}, r))), e.renderContractorBadge && a.a.createElement(a.a.Fragment, null, a.a.createElement(z, {
+					}, r))), e.renderContractorBadge && a.a.createElement(a.a.Fragment, null, a.a.createElement(Q, {
 						className: ae.a.contractorIcon,
 						isFilled: !0,
 						desc: s
@@ -1890,9 +1890,9 @@
 						showTimestamp: M = !0,
 						subredditOrProfile: B,
 						tooltipType: L
-					} = e, R = Object(n.d)(), H = Object(f.a)(), D = Object(n.e)(Z.a), G = Object(n.e)(te.d), q = Object(n.e)(te.g) || ["popular", "all"].includes(G || ""), z = !(!v.isSponsored || !D || Object(l.fe)(D));
+					} = e, R = Object(n.d)(), H = Object(f.a)(), D = Object(n.e)(Z.a), G = Object(n.e)(te.d), q = Object(n.e)(te.g) || ["popular", "all"].includes(G || ""), Q = !(!v.isSponsored || !D || Object(l.fe)(D));
 					Object(s.useEffect)(() => {
-						z && R(Object(p.d)(v.author))
+						Q && R(Object(p.d)(v.author))
 					}, []);
 					const Y = v.belongsTo.id,
 						se = Object(s.useCallback)(e => Object(X.a)(e, {
@@ -1924,12 +1924,12 @@
 						Ce = () => a.a.createElement(ce, {
 							className: e.metaSeparatorClassName
 						}, "•"),
-						Ie = Object(n.e)(e => Object(V.P)(e, {
+						Ie = Object(n.e)(e => Object(V.Q)(e, {
 							pageLayer: c
 						})),
 						Pe = W.e[Ie] === W.d.Card,
 						Se = q && Pe || !!xe,
-						_e = z && (q || !!xe),
+						_e = Q && (q || !!xe),
 						Ne = a.a.createElement(a.a.Fragment, null, ie && je && a.a.createElement("div", {
 							className: ae.a.flairContainer
 						}, a.a.createElement(O.b, {
@@ -1942,7 +1942,7 @@
 							isDeleted: !0,
 							renderContractorBadge: ye,
 							showActionFont: _e,
-							style: z ? {} : {
+							style: Q ? {} : {
 								color: de(e)
 							}
 						}) : a.a.createElement(a.a.Fragment, null, a.a.createElement(A.b, {
@@ -1961,7 +1961,7 @@
 							post: v,
 							forceOpenInNewTab: r,
 							renderContractorBadge: ye,
-							style: z ? {} : {
+							style: Q ? {} : {
 								color: de(e)
 							},
 							showActionFont: _e
@@ -2016,7 +2016,7 @@
 						}))), ne._param("author", Ne)], {
 							hk: "3BfJwk"
 						})),
-						Be = () => Oe || z ? Oe ? Me : Ne : ke;
+						Be = () => Oe || Q ? Oe ? Me : Ne : ke;
 					return a.a.createElement("div", {
 						className: Object(o.a)(ae.a.container, t)
 					}, k && B && a.a.createElement(E.a, {
@@ -2029,7 +2029,7 @@
 							pathname: B.url,
 							state: ue
 						}
-					}, B.displayText)), B && B.isQuarantined && a.a.createElement(P.a, null), k && !Oe && a.a.createElement(Ce, null), z ? a.a.createElement(a.a.Fragment, null, (null == B ? void 0 : B.icon) && Se && a.a.createElement(Q.a, {
+					}, B.displayText)), B && B.isQuarantined && a.a.createElement(P.a, null), k && !Oe && a.a.createElement(Ce, null), Q ? a.a.createElement(a.a.Fragment, null, (null == B ? void 0 : B.icon) && Se && a.a.createElement(z.a, {
 						iconUrl: B.icon.url,
 						isNSFW: B.isNSFW,
 						userName: B.name,
@@ -2038,7 +2038,7 @@
 					}), Be(), v.isSponsored && a.a.createElement(a.a.Fragment, null, a.a.createElement(Ce, null), a.a.createElement(S.a, {
 						adHeaderVariant: D,
 						greyTextColor: de(e)
-					}))) : a.a.createElement(a.a.Fragment, null, v.isSponsored && a.a.createElement(a.a.Fragment, null, a.a.createElement(S.a, null), a.a.createElement(Ce, null)), Be()), a.a.createElement(I.e, null), M && !z && a.a.createElement(a.a.Fragment, null, a.a.createElement("a", {
+					}))) : a.a.createElement(a.a.Fragment, null, v.isSponsored && a.a.createElement(a.a.Fragment, null, a.a.createElement(S.a, null), a.a.createElement(Ce, null)), Be()), a.a.createElement(I.e, null), M && !Q && a.a.createElement(a.a.Fragment, null, a.a.createElement("a", {
 						className: ae.a.externalLink,
 						"data-click-id": "timestamp",
 						href: v.permalink,
@@ -2085,8 +2085,8 @@
 				h = ["center", "bottom"],
 				b = i.a.div("Container", m.a),
 				f = Object(o.a)(d.b),
-				w = Object(c.t)({
-					isProfileListingPage: c.G
+				w = Object(c.u)({
+					isProfileListingPage: c.H
 				});
 			class g extends n.a.Component {
 				constructor(e) {
@@ -3056,4 +3056,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.37c4b9987ea97eca9de4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.f8f2b25ecb01f41c434b.js.map

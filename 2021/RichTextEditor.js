@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.1a3e8a065ccd353977db.js
-// Retrieved at 8/16/2021, 8:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.ae182d8dba2fbf5135a9.js
+// Retrieved at 8/17/2021, 2:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, o) {
@@ -2857,7 +2857,7 @@
 				Je = Object(i.b)(() => Object(c.c)({
 					activeModalId: ve.a,
 					destSubreddit: (e, t) => {
-						const o = Object(ge.p)(e, t);
+						const o = Object(ge.q)(e, t);
 						return o ? {
 							name: o.name,
 							isProfile: o.type === ye.f.User,
@@ -2866,7 +2866,7 @@
 					},
 					draft: Ce.i,
 					userCanUseGifs: (e, t) => {
-						const o = Object(ge.p)(e, t);
+						const o = Object(ge.q)(e, t);
 						return Object(Ee.s)(e, o ? o.id : void 0, t.parentCommentId)
 					},
 					isReplyWithUpvoteExperiment: Fe.a,
@@ -3133,14 +3133,16 @@
 					}))
 				}
 			}
-			var Ze = Object(xe.t)()(Je(Object(ke.c)(Xe))),
+			var Ze = Object(xe.u)()(Je(Object(ke.c)(Xe))),
 				Ge = o("./src/reddit/components/RequestPendingBanner/index.tsx"),
 				Qe = o("./src/reddit/models/User/index.ts"),
-				Ye = o("./src/reddit/selectors/experiments/commentBox.ts"),
-				$e = o("./src/reddit/selectors/subreddit.ts");
-			const et = Object(c.c)({
+				Ye = o("./src/reddit/selectors/experiments/commentBox.ts");
+			const $e = Object(xe.u)(),
+				et = Object(c.c)({
 					activeModalId: ve.a,
-					contributorRequestPending: e => Object($e.f)(e, f.e.Comment),
+					contributorRequestPending: (e, {
+						pageLayer: t
+					}) => Object(xe.b)(e, t, f.e.Comment),
 					isCommentBoxDesignEnabled: Ye.a,
 					userName: e => e.user.account ? Object(Qe.e)(e.user.account) : "",
 					pending: (e, t) => e.features.comments.submit.pending[t.draftKey],
@@ -3148,7 +3150,9 @@
 					errorMsgs: Ce.K,
 					draft: Ce.i,
 					disableAutofocus: Ce.f,
-					showContributorRequestFlow: e => Object($e.q)(e, f.e.Comment)
+					showContributorRequestFlow: (e, {
+						pageLayer: t
+					}) => Object(xe.bb)(e, t, f.e.Comment)
 				}),
 				tt = Object(i.b)(et, (e, t) => ({
 					onMount: () => e(d.a(t.draftKey)),
@@ -3179,7 +3183,7 @@
 						t.dispatchSubmit(o, e.draft.commentMode)
 					}
 				}));
-			t.default = tt(class extends a.a.Component {
+			class ot extends a.a.Component {
 				constructor(e) {
 					super(e), this.getInstanceRef = e => this.formInstanceRef = e, this.onCancel = () => {
 						this.props.onCancel()
@@ -3260,7 +3264,8 @@
 						};
 					return e.contributorRequestPending ? a.a.createElement(Ge.a, null) : e.showContributorRequestFlow ? a.a.createElement(v, null) : e.draft.commentMode === me.h.RICH_TEXT ? a.a.createElement(Ze, o) : a.a.createElement(m.b, o)
 				}
-			})
+			}
+			t.default = $e(tt(ot))
 		},
 		"./src/reddit/components/ContributorRequestFlow/ContributorRequestButton/index.m.less": function(e, t, o) {
 			e.exports = {
@@ -3817,7 +3822,7 @@
 				B = z.a.div("FormContent", A.a),
 				W = z.a.wrapped(D.i, "SubmitButton", A.a),
 				L = z.a.wrapped(M.a, "LoadingIcon", A.a),
-				N = Object(T.t)(),
+				N = Object(T.u)(),
 				U = Object(l.c)({
 					destSubreddit: _.h,
 					editorMode: _.i,
@@ -3827,7 +3832,7 @@
 					pending: _.Y,
 					postRequirements: _.nb,
 					rteDraft: _.m,
-					subreddit: T.q,
+					subreddit: T.r,
 					uploads: e => e.uploads,
 					user: F.j,
 					isCommentsPage: f.f
@@ -4875,4 +4880,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.1a3e8a065ccd353977db.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.ae182d8dba2fbf5135a9.js.map

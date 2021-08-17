@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.1d2acdcee1c70d4d4822.js
-// Retrieved at 8/12/2021, 6:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.6086d47992d22837f804.js
+// Retrieved at 8/17/2021, 2:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumNewUserWelcome"], {
 		"./node_modules/lodash/flattenDeep.js": function(e, t, n) {
@@ -250,9 +250,9 @@
 			})), n.d(t, "d", (function() {
 				return v
 			})), n.d(t, "e", (function() {
-				return P
-			})), n.d(t, "c", (function() {
 				return A
+			})), n.d(t, "c", (function() {
+				return P
 			})), n.d(t, "f", (function() {
 				return I
 			}));
@@ -346,7 +346,7 @@
 						placement: r.placement
 					})), n(Object(O.d)(p.c.MyBadges)))
 				}
-			}, P = e => async (t, n, {
+			}, A = e => async (t, n, {
 				apiContext: r
 			}) => {
 				const i = n().user.account,
@@ -367,7 +367,7 @@
 						products: d
 					}))
 				}
-			}, A = (e, t, n) => async (r, s, {
+			}, P = (e, t, n) => async (r, s, {
 				apiContext: o
 			}) => {
 				if (await r(N(e, !0)), n && t) {
@@ -725,15 +725,15 @@
 				})))
 			}
 			var v = n("./src/reddit/pages/meta/MembershipPaywallPage/WhatDoYouGet/CommentThread/Footer/index.tsx"),
-				P = n("./src/reddit/components/Economics/SubredditPremium/NewUserWelcome/Jumper/index.m.less"),
-				A = n.n(P);
+				A = n("./src/reddit/components/Economics/SubredditPremium/NewUserWelcome/Jumper/index.m.less"),
+				P = n.n(A);
 			const I = [0, 500];
 
 			function w(e) {
 				return s.a.createElement("div", {
-					className: Object(d.a)(A.a.container, e.className)
+					className: Object(d.a)(P.a.container, e.className)
 				}, s.a.createElement(v.a, {
-					className: A.a.assets,
+					className: P.a.assets,
 					scrollRange: I,
 					subreddit: e.subreddit
 				}))
@@ -902,23 +902,23 @@
 			}
 			const J = Object(c.c)({
 					bannerIsDismissed: (e, t) => {
-						const n = Object(p.m)(e, t);
+						const n = Object(p.n)(e, t);
 						return n ? Object(h.g)(e, n, f.a.NewUserWelcome) : void 0
 					},
 					eligibleForBanner: (e, t) => {
 						const n = e.user.account,
-							r = Object(p.q)(e, t);
+							r = Object(p.r)(e, t);
 						if (!n) return !1;
-						if (Object(p.P)(e, t) !== m.g.Large) return !1;
+						if (Object(p.Q)(e, t) !== m.g.Large) return !1;
 						if (r) {
 							const t = Object(h.f)(e, r.id)[g.a.Achievement];
 							if (t && t.type === H) return !1
 						}
 						return !0
 					},
-					subreddit: p.q,
+					subreddit: p.r,
 					userIsSubscribed: (e, t) => {
-						const n = Object(p.q)(e, t);
+						const n = Object(p.r)(e, t);
 						return !!n && Object(E.fb)(e, {
 							identifier: {
 								name: n.name,
@@ -932,7 +932,7 @@
 					onDismissBanner: t => e(Object(u.a)(t, f.a.NewUserWelcome)),
 					onFetchDismissedBanners: t => e(Object(u.b)(t))
 				}))(ee),
-				ne = Object(p.t)()(te),
+				ne = Object(p.u)()(te),
 				re = Object(b.b)(ne);
 			t.default = Object(b.b)(re)
 		},
@@ -2082,9 +2082,9 @@
 			})), n.d(t, "n", (function() {
 				return v
 			})), n.d(t, "e", (function() {
-				return P
-			})), n.d(t, "d", (function() {
 				return A
+			})), n.d(t, "d", (function() {
+				return P
 			})), n.d(t, "j", (function() {
 				return I
 			})), n.d(t, "p", (function() {
@@ -2216,12 +2216,12 @@
 				return f
 			}
 
-			function P(e, t) {
+			function A(e, t) {
 				const n = v(e, t, i.a.Loyalty).find(e => "membership" === e.id);
 				return n ? [].concat(n.locked, n.unlocked).filter(e => e.position).sort((e, t) => e.position - t.position) : f
 			}
 
-			function A(e, t) {
+			function P(e, t) {
 				const n = e.economics.subredditPremium[t];
 				if (n && n.status === l.a.Fetched) {
 					const e = n.data.collections[i.a.Cosmetic];
@@ -2374,4 +2374,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.1d2acdcee1c70d4d4822.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.6086d47992d22837f804.js.map

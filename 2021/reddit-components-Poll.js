@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Poll.9ebe7e46144a0aaa3ab1.js
-// Retrieved at 8/16/2021, 8:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Poll.ad45df5384c739a2f67c.js
+// Retrieved at 8/17/2021, 2:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Poll"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, n) {
@@ -928,8 +928,8 @@
 				result: (e, t) => e.polls.results[t.resultType][t.pollId],
 				voteInProgress: (e, t) => !!e.polls.api.voting.pending[t.pollId]
 			});
-			var ne = Object(k.t)({
-					isCommentsPage: k.w
+			var ne = Object(k.u)({
+					isCommentsPage: k.x
 				})(Object(a.b)(te, (e, t) => ({
 					onVoteSelection: n => e(Object(w.d)(t.pollId, n.id))
 				}))(Object(R.c)(ee))),
@@ -1634,8 +1634,8 @@
 			};
 
 			function l() {
-				const e = Object(s.bb)(),
-					t = Object(r.e)(t => Object(s.q)(t, {
+				const e = Object(s.db)(),
+					t = Object(r.e)(t => Object(s.r)(t, {
 						pageLayer: e
 					})),
 					n = Object(r.e)(e => c(e, null == t ? void 0 : t.id));
@@ -1697,7 +1697,7 @@
 					return n && n.amount || "0"
 				},
 				m = (e, t) => {
-					const n = Object(r.m)(e, t);
+					const n = Object(r.n)(e, t);
 					return n && e.subreddits.gov.releaseNotes[n] || s
 				},
 				p = (e, t) => t.subredditId ? e.subreddits.gov.assets[t.subredditId] : void 0
@@ -1707,4 +1707,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Poll.9ebe7e46144a0aaa3ab1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Poll.ad45df5384c739a2f67c.js.map

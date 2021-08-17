@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.c76ffa8de82cc9d0eeb3.js
-// Retrieved at 8/16/2021, 8:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.b8a1c8c4a0680e206a1b.js
+// Retrieved at 8/17/2021, 2:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction"], {
 		"./src/lib/constants/specialMembership.ts": function(e, t, n) {
@@ -454,8 +454,8 @@
 			}
 			var G = n("./src/reddit/icons/svgs/CoinV2/index.tsx"),
 				W = n("./src/reddit/components/Econ/Prediction/UnicornIcon/index.tsx"),
-				H = n("./src/reddit/components/Econ/Prediction/PredictionEducationMessage/PredictionResolvedEducationMessage/index.m.less"),
-				Y = n.n(H);
+				Y = n("./src/reddit/components/Econ/Prediction/PredictionEducationMessage/PredictionResolvedEducationMessage/index.m.less"),
+				H = n.n(Y);
 			const {
 				fbt: V
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
@@ -474,13 +474,13 @@
 					message: i.a.createElement(i.a.Fragment, null, V._("Sorry, your prediction was wrong this time.", null, {
 						hk: "4aEoP2"
 					}), !!s && i.a.createElement("div", {
-						className: Y.a.wonOrLostAmountRow
+						className: H.a.wonOrLostAmountRow
 					}, V._("You lost {lostAmount}", [V._param("lostAmount", i.a.createElement("div", {
-						className: Y.a.wonOrLostAmount
+						className: H.a.wonOrLostAmount
 					}, t ? i.a.createElement(W.a, {
-						className: Y.a.coinIcon
+						className: H.a.coinIcon
 					}) : i.a.createElement(G.a, {
-						className: Y.a.coinIcon
+						className: H.a.coinIcon
 					}), s))], {
 						hk: "6091x"
 					})))
@@ -491,13 +491,13 @@
 					message: i.a.createElement(i.a.Fragment, null, V._("Well, and no one.", null, {
 						hk: "2nGCUb"
 					}), i.a.createElement("div", {
-						className: Y.a.wonOrLostAmountRow
+						className: H.a.wonOrLostAmountRow
 					}, V._("You've been refunded {refundedAmount}", [V._param("refundedAmount", i.a.createElement("div", {
-						className: Y.a.wonOrLostAmount
+						className: H.a.wonOrLostAmount
 					}, t ? i.a.createElement(W.a, {
-						className: Y.a.coinIcon
+						className: H.a.coinIcon
 					}) : i.a.createElement(G.a, {
-						className: Y.a.coinIcon
+						className: H.a.coinIcon
 					}), s))], {
 						hk: "49bOe9"
 					})))
@@ -508,13 +508,13 @@
 					message: i.a.createElement(i.a.Fragment, null, V._("It’s confirmed—Your prediction was spot on.", null, {
 						hk: "3AtcRD"
 					}), !!o && i.a.createElement("div", {
-						className: Y.a.wonOrLostAmountRow
+						className: H.a.wonOrLostAmountRow
 					}, V._("You won {wonAmount}", [V._param("wonAmount", i.a.createElement("div", {
-						className: Y.a.wonOrLostAmount
+						className: H.a.wonOrLostAmount
 					}, t ? i.a.createElement(W.a, {
-						className: Y.a.coinIcon
+						className: H.a.coinIcon
 					}) : i.a.createElement(G.a, {
-						className: Y.a.coinIcon
+						className: H.a.coinIcon
 					}), s + o))], {
 						hk: "1zg0cH"
 					})))
@@ -821,9 +821,9 @@
 					u = Object(c.e)(t => Object(Me.b)(t, {
 						subredditId: e
 					})),
-					b = Object(m.w)(o),
-					f = Object(m.H)(o),
-					E = Object(m.L)(o);
+					b = Object(m.x)(o),
+					f = Object(m.I)(o),
+					E = Object(m.M)(o);
 				if (Object(r.useEffect)(() => {
 						d || n(Object(p.k)(a.name))
 					}, [n, d, a.name]), (null == u ? void 0 : u.tournamentId) !== t) return null;
@@ -864,7 +864,7 @@
 				Ge = n.n(Re);
 			const {
 				fbt: We
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), He = Object(a.c)({
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), Ye = Object(a.c)({
 				isAutoVoteEnabled: P.p,
 				isEditing: y.K,
 				isVoteAnimationEnabled: P.o,
@@ -883,14 +883,14 @@
 				userCoins: k.d,
 				userIsLoggedIn: k.J,
 				userId: k.pb
-			}), Ye = {
+			}), He = {
 				onPredictionResolve: p.m,
 				onPredictionVote: p.n,
 				showToast: E.f,
 				upvoteToggled: f.db
-			}, Ve = Object(m.t)({
-				isCommentsPage: m.w,
-				isPredictionsPage: m.M
+			}, Ve = Object(m.u)({
+				isCommentsPage: m.x,
+				isPredictionsPage: m.N
 			}), ze = ({
 				className: e,
 				isAutoVoteEnabled: t,
@@ -912,8 +912,8 @@
 				userIsLoggedIn: N
 			}) => {
 				const [A, M] = Object(r.useState)(!1), [B, L] = Object(r.useState)(null), [F, T] = Object(r.useState)(null), [U, D] = Object(r.useState)(!1), [R, G] = Object(r.useState)(!1), W = Object(g.a)(), {
-					startDelayedUpvoteAnimation: H
-				} = Object(h.a)(E.id), Y = Object(r.useCallback)(() => {
+					startDelayedUpvoteAnimation: Y
+				} = Object(h.a)(E.id), H = Object(r.useCallback)(() => {
 					D(!1)
 				}, []), V = Object(r.useCallback)(() => {
 					L(null), T(null)
@@ -949,7 +949,7 @@
 					endsAt: J,
 					key: `prediction-option-${e.id}`,
 					isShowingVoteAnimation: U && se === e.id,
-					onAnimationEnd: Y
+					onAnimationEnd: H
 				}, i.a.createElement(q.a, {
 					disabled: U,
 					isCancelled: ue,
@@ -1022,7 +1022,7 @@
 								optionId: B,
 								postId: C,
 								price: n
-							}), t && E.voteState < x.a.upvoted && C && (k(C), H()), M(!1), L(null), m ? D(!0) : I({
+							}), t && E.voteState < x.a.upvoted && C && (k(C), Y()), M(!1), L(null), m ? D(!0) : I({
 								duration: 5e3,
 								kind: O.b.SuccessCommunity,
 								text: We._("Thanks! See if you're right in {timeToResult}", [We._param("timeToResult", Object(u.a)(new Date(J), !0))], {
@@ -1073,7 +1073,7 @@
 					tournamentId: ne
 				}))
 			};
-			t.default = Ve(Object(c.b)(He, Ye)(ze))
+			t.default = Ve(Object(c.b)(Ye, He)(ze))
 		},
 		"./src/reddit/components/Econ/Tournament/Facepile/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -1300,7 +1300,7 @@
 		"./src/reddit/hooks/usePageLayer.ts": function(e, t, n) {
 			"use strict";
 			var s = n("./src/reddit/contexts/PageLayer/index.tsx");
-			t.a = s.bb
+			t.a = s.db
 		},
 		"./src/reddit/icons/svgs/Checkmark/index.tsx": function(e, t, n) {
 			"use strict";
@@ -1726,7 +1726,7 @@
 			})), n.d(t, "g", (function() {
 				return W
 			})), n.d(t, "m", (function() {
-				return H
+				return Y
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var s = n("./src/reddit/featureFlags/index.ts"),
@@ -1957,8 +1957,8 @@
 						if (s && s.data) return !!s.data[n]
 					}
 				},
-				H = e => e.economics.pointsCopy.data
+				Y = e => e.economics.pointsCopy.data
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.c76ffa8de82cc9d0eeb3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.b8a1c8c4a0680e206a1b.js.map

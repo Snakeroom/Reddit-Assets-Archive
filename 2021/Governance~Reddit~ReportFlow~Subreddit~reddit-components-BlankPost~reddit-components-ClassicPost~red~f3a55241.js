@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241.d8d9cbb2cb9e49f32066.js
-// Retrieved at 8/16/2021, 8:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241.f792e926839709634ff5.js
+// Retrieved at 8/17/2021, 2:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241"], {
 		"./src/reddit/actions/downToChat.ts": function(e, t, r) {
@@ -922,7 +922,7 @@
 					...r,
 					recentPostIds: h.posts.recent
 				};
-				R.layout = ee.e[Object(te.P)(h, {})], t === X.c.Popular && (R.forceGeopopular = !0), i(Ae({
+				R.layout = ee.e[Object(te.Q)(h, {})], t === X.c.Popular && (R.forceGeopopular = !0), i(Ae({
 					key: e
 				}));
 				const N = Object(je.b)(h);
@@ -1492,7 +1492,7 @@
 							after: O.token,
 							dist: O.dist,
 							forceGeopopular: c === g.c.Popular,
-							layout: _.e[Object(S.P)(b, {})],
+							layout: _.e[Object(S.Q)(b, {})],
 							sort: T,
 							t: l,
 							...d()(f, [...j.l, j.h])
@@ -4848,4 +4848,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241.d8d9cbb2cb9e49f32066.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241.f792e926839709634ff5.js.map

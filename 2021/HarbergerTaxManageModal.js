@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/HarbergerTaxManageModal.ddc4565da086acfafa02.js
-// Retrieved at 8/12/2021, 6:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/HarbergerTaxManageModal.c3188c4beb720d38bde6.js
+// Retrieved at 8/17/2021, 2:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["HarbergerTaxManageModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -477,9 +477,9 @@
 				V = n("./src/reddit/components/Governance/HarbergerTax/BannerManageModal/index.m.less"),
 				K = n.n(V);
 			const {
-				fbt: q
+				fbt: z
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
-			class z extends o.a.Component {
+			class W extends o.a.Component {
 				constructor(e) {
 					super(e), this.handlePriceChange = e => this.setState({
 						price: e
@@ -501,7 +501,7 @@
 				}
 				componentDidUpdate(e) {
 					if (!s()(e.mainHeaderAsset, this.props.mainHeaderAsset)) {
-						const t = W(e) === W(this.props) ? this.state.image ? this.state.image[C] : e.savedStyles.bannerBackgroundImage : void 0;
+						const t = q(e) === q(this.props) ? this.state.image ? this.state.image[C] : e.savedStyles.bannerBackgroundImage : void 0;
 						this.setState(Z(this.props, t)), this.originalState = Z(this.props, t)
 					}
 				}
@@ -513,7 +513,7 @@
 						className: K.a.container
 					}, o.a.createElement(u.a, {
 						className: K.a.title
-					}, q._("Manage Banner", null, {
+					}, z._("Manage Banner", null, {
 						hk: "NMRRK"
 					})), o.a.createElement(G, {
 						className: K.a.price,
@@ -540,7 +540,7 @@
 				}
 			}
 
-			function W(e) {
+			function q(e) {
 				return e.mainHeaderAsset && e.mainHeaderAsset.content && e.mainHeaderAsset.content.bannerBackgroundImage || ""
 			}
 
@@ -570,22 +570,22 @@
 			}
 			const X = Object(d.c)({
 					mainHeaderAsset: (e, t) => {
-						const n = Object(m.q)(e, t);
+						const n = Object(m.r)(e, t);
 						if (n) return Object(b.a)(e, {
 							subredditId: n.id
 						})
 					},
 					savedStyles: (e, t) => {
-						const n = Object(m.q)(e, t);
+						const n = Object(m.r)(e, t);
 						return n ? e.structuredStyles.models[n.id] : {}
 					},
-					subreddit: m.q
+					subreddit: m.r
 				}),
 				Y = Object(i.b)(X, e => ({
 					onUpdateBanner: t => e(Object(l.c)(t))
 				})),
-				J = Object(m.t)();
-			t.default = Object(p.a)("spHarberger", Object(c.a)(J(Y(z))))
+				J = Object(m.u)();
+			t.default = Object(p.a)("spHarberger", Object(c.a)(J(Y(W))))
 		},
 		"./src/reddit/components/Governance/ModalClose/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -1413,11 +1413,11 @@
 					return n && n.amount || "0"
 				},
 				m = (e, t) => {
-					const n = Object(a.m)(e, t);
+					const n = Object(a.n)(e, t);
 					return n && e.subreddits.gov.releaseNotes[n] || s
 				},
 				p = (e, t) => t.subredditId ? e.subreddits.gov.assets[t.subredditId] : void 0
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/HarbergerTaxManageModal.ddc4565da086acfafa02.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/HarbergerTaxManageModal.c3188c4beb720d38bde6.js.map

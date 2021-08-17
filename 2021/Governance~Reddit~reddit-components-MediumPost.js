@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-MediumPost.95d72aa130f2c9c48d73.js
-// Retrieved at 8/16/2021, 8:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-MediumPost.d63fe6851944b0830160.js
+// Retrieved at 8/17/2021, 2:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~reddit-components-MediumPost"], {
 		"./src/lib/constants/specialMembership.ts": function(t, e, n) {
@@ -1550,7 +1550,7 @@
 				z = Object(d.c)({
 					flairPosition: (t, {
 						pageLayer: e
-					}) => Object(b.p)(t, {
+					}) => Object(b.q)(t, {
 						pageLayer: e
 					}),
 					shouldOpenPostInNewTab: F.cb
@@ -1703,8 +1703,8 @@
 				}
 			}
 			e.c = o.a.memo((function(t) {
-				const e = Object(b.bb)(),
-					n = Object(b.v)(e),
+				const e = Object(b.db)(),
+					n = Object(b.w)(e),
 					s = Object(B.a)(),
 					r = Object(i.e)(r => z(r, {
 						...s,
@@ -3056,4 +3056,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-MediumPost.95d72aa130f2c9c48d73.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-MediumPost.d63fe6851944b0830160.js.map

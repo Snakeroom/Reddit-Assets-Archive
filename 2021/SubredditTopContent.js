@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditTopContent.f52b9244bd288c277af6.js
-// Retrieved at 8/16/2021, 8:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditTopContent.1e791a46414848640ccf.js
+// Retrieved at 8/17/2021, 2:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditTopContent"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -628,9 +628,9 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const pe = Object(m.t)(),
+			const pe = Object(m.u)(),
 				be = Object(re.c)({
-					isFakeSubreddit: m.x
+					isFakeSubreddit: m.y
 				}),
 				he = Object(o.b)(be),
 				xe = e => {
@@ -749,7 +749,7 @@
 					trackPostClick: (t, n) => e((e, a) => s ? h.w(a(), s, t, n) : null),
 					trackPostSubredditClick: n => e((e, a) => t ? h.y(a(), t, n) : s ? h.y(a(), s, n) : null)
 				})),
-				Se = Object(m.t)();
+				Se = Object(m.u)();
 			class Le extends l.c {
 				constructor(e) {
 					super(e), this.state = {
@@ -1453,7 +1453,7 @@
 				K = Object(c.c)({
 					flairPosition: (e, {
 						pageLayer: t
-					}) => Object(p.p)(e, {
+					}) => Object(p.q)(e, {
 						pageLayer: t
 					}),
 					shouldOpenPostInNewTab: M.cb
@@ -1606,8 +1606,8 @@
 				}
 			}
 			t.c = r.a.memo((function(e) {
-				const t = Object(p.bb)(),
-					s = Object(p.v)(t),
+				const t = Object(p.db)(),
+					s = Object(p.w)(t),
 					n = Object(R.a)(),
 					a = Object(i.e)(a => K(a, {
 						...n,
@@ -1649,8 +1649,8 @@
 				b = ["center", "bottom"],
 				h = o.a.div("Container", u.a),
 				x = Object(i.a)(c.b),
-				g = Object(l.t)({
-					isProfileListingPage: l.G
+				g = Object(l.u)({
+					isProfileListingPage: l.H
 				});
 			class f extends r.a.Component {
 				constructor(e) {
@@ -2011,4 +2011,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.f52b9244bd288c277af6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.1e791a46414848640ccf.js.map

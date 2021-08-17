@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.4dabe9c099ad57aa421b.js
-// Retrieved at 8/16/2021, 8:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.2e67e492340948eb921b.js
+// Retrieved at 8/17/2021, 2:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement"], {
 		"./src/reddit/actions/flairManagement/index.ts": function(e, t, s) {
@@ -365,12 +365,12 @@
 				L = s("./src/reddit/constants/colors.ts"),
 				A = s("./src/reddit/icons/svgs/QuarantineWarning/index.tsx"),
 				H = s("./src/reddit/components/ModHub/flairs/FlairManagement/FlairsDisabledBanner/index.m.less"),
-				V = s.n(H);
-			var W, Q = e => o.a.createElement(U.a, {
+				Q = s.n(H);
+			var V, W = e => o.a.createElement(U.a, {
 					className: e.className,
 					color: L.b.quarantine,
 					icon: o.a.createElement(A.a, {
-						className: V.a.icon
+						className: Q.a.icon
 					}),
 					subtitle: e.flairTemplateType === f.d.UserFlair ? B.fbt._("User flairs will not be visible until feature is enabled", null, {
 						hk: "4uxycm"
@@ -395,12 +395,12 @@
 				ee = s.n($);
 			! function(e) {
 				e[e.Top = 0] = "Top", e[e.Left = 1] = "Left"
-			}(W || (W = {}));
+			}(V || (V = {}));
 			const te = e => e.preventDefault();
 			var se = e => o.a.createElement("div", {
 					className: Object(Z.a)(e.className, ee.a.container)
 				}, o.a.createElement("label", {
-					className: e.labelPosition === W.Top ? ee.a.topLabel : ee.a.leftLabel,
+					className: e.labelPosition === V.Top ? ee.a.topLabel : ee.a.leftLabel,
 					onClick: e.preventDefaultLabelClick ? te : void 0
 				}, o.a.createElement("span", {
 					className: Object(Z.a)(ee.a.labelText, e.labelClassName)
@@ -627,9 +627,9 @@
 				Le = s("./src/reddit/constants/postLayout.ts"),
 				Ae = s("./src/reddit/contexts/PageLayer/index.tsx"),
 				He = s("./src/reddit/controls/LayoutSwitch/index.tsx"),
-				Ve = s("./src/reddit/helpers/dom/index.ts"),
-				We = s("./src/reddit/helpers/postComponentForLayout/index.tsx"),
-				Qe = s("./src/reddit/selectors/posts.ts"),
+				Qe = s("./src/reddit/helpers/dom/index.ts"),
+				Ve = s("./src/reddit/helpers/postComponentForLayout/index.tsx"),
+				We = s("./src/reddit/selectors/posts.ts"),
 				Je = s("./src/lib/omitKey/index.ts"),
 				qe = s("./src/reddit/actions/imageUploads.ts"),
 				ze = s("./src/reddit/models/Image/index.tsx"),
@@ -755,7 +755,7 @@
 						label: B.fbt._("Thumbnail placeholder", null, {
 							hk: "Rcs3p"
 						}),
-						labelPosition: W.Top,
+						labelPosition: V.Top,
 						preventDefaultLabelClick: !!r
 					}, o.a.createElement(Ze, {
 						imageData: r,
@@ -779,7 +779,7 @@
 						tooltipId: "flair-postBackgroundColor-" + a,
 						value: i
 					})), o.a.createElement(se, {
-						labelPosition: W.Top,
+						labelPosition: V.Top,
 						label: B.fbt._("Post background image", null, {
 							hk: "7rg1y"
 						}),
@@ -802,7 +802,7 @@
 				lt = s("./src/reddit/components/ModHub/flairs/FlairManagement/FlairTemplateEditor/PostAppearanceEditor/index.m.less"),
 				rt = s.n(lt);
 			const dt = Object(_e.c)({
-					examplePost: e => Object(Qe.H)(e, {
+					examplePost: e => Object(We.H)(e, {
 						postId: u.e
 					})
 				}),
@@ -850,7 +850,7 @@
 					this.props.deleteExamplePost()
 				}
 				disableTabNavigationForPreviewPost() {
-					this.postWrapperRef.current && Object(Ve.a)(this.postWrapperRef.current)
+					this.postWrapperRef.current && Object(Qe.a)(this.postWrapperRef.current)
 				}
 				render() {
 					const {
@@ -861,7 +861,7 @@
 					if (!s) return null;
 					const {
 						previewLayout: a
-					} = this.state, n = t.styleTemplate || {}, i = Le.b[a], l = Object(We.b)({
+					} = this.state, n = t.styleTemplate || {}, i = Le.b[a], l = Object(Ve.b)({
 						isFirstPost: !1,
 						layout: i,
 						post: s
@@ -896,7 +896,7 @@
 					}))
 				}
 			}
-			var mt = Object(Ae.t)()(ct(pt)),
+			var mt = Object(Ae.u)()(ct(pt)),
 				ut = s("./src/reddit/components/ModHub/flairs/FlairManagement/FlairTemplateEditor/index.m.less"),
 				ht = s.n(ut);
 			const gt = "flair-management-emoji-picker",
@@ -1038,7 +1038,7 @@
 					}, o.a.createElement("legend", null, B.fbt._("Flair appearance", null, {
 						hk: "ZRrgk"
 					})), o.a.createElement(se, {
-						labelPosition: W.Top,
+						labelPosition: V.Top,
 						label: B.fbt._("Flair text", null, {
 							hk: "2ALbeU"
 						})
@@ -1055,7 +1055,7 @@
 						subredditId: t,
 						onBlur: this.onFlairEditBlur
 					})), o.a.createElement(se, {
-						labelPosition: W.Top,
+						labelPosition: V.Top,
 						label: B.fbt._("CSS class", null, {
 							hk: "2khRbr"
 						})
@@ -1137,7 +1137,7 @@
 						label: B.fbt._("This flair allows", null, {
 							hk: "3QLVMX"
 						}),
-						labelPosition: W.Top
+						labelPosition: V.Top
 					}, o.a.createElement(ye.a, {
 						value: s.allowableContent || f.a.All,
 						name: "allowable_content",
@@ -1164,7 +1164,7 @@
 						label: B.fbt._("Limit number of emojis", null, {
 							hk: "LnZU0"
 						}),
-						labelPosition: W.Top
+						labelPosition: V.Top
 					}, o.a.createElement(Te.a, {
 						buttonClassName: ht.a.dropdownSelectorButton,
 						className: ht.a.dropdownSelector,
@@ -1478,7 +1478,7 @@
 						hk: "3DSrei"
 					}), o.a.createElement(r.a, {
 						linkUrl: `${a.a.redditModHelpUrl}/${this.props.helpCenterLink}`
-					})), !this.props.flairSettings.displaySettings.isEnabled && o.a.createElement(Q, {
+					})), !this.props.flairSettings.displaySettings.isEnabled && o.a.createElement(W, {
 						className: Pt.a.disabledBanner,
 						flairTemplateType: this.props.flairTemplateType
 					}), o.a.createElement("div", {
@@ -1907,10 +1907,10 @@
 						[C.a.mIsActive]: e
 					})
 				}, t)),
-				k = Object(h.t)(),
+				k = Object(h.u)(),
 				_ = Object(l.c)({
-					postLayout: h.P,
-					redditStyle: h.B
+					postLayout: h.Q,
+					redditStyle: h.C
 				}),
 				w = Object(i.b)(_, e => ({
 					onListingLayoutChange: (t, s) => e(Object(c.v)(t, s)),
@@ -2003,4 +2003,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.4dabe9c099ad57aa421b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.2e67e492340948eb921b.js.map

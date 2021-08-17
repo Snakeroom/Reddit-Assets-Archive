@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.0e1720acdddc21b15c7c.js
-// Retrieved at 8/16/2021, 8:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.a15fb1c9887ffb653eab.js
+// Retrieved at 8/17/2021, 2:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250"], {
 		"./src/lib/humanizeDate/index.ts": function(e, t, r) {
@@ -946,7 +946,7 @@
 			const C = Object(i.b)(() => Object(a.c)({
 					flairPosition: (e, {
 						pageLayer: t
-					}) => Object(m.p)(e, {
+					}) => Object(m.q)(e, {
 						pageLayer: t
 					}),
 					isPostFlairEnabled: (e, t) => Object(x.c)(e, {
@@ -1833,7 +1833,7 @@
 				a = r("./src/reddit/selectors/telemetry.ts");
 
 			function c() {
-				const e = Object(i.bb)(),
+				const e = Object(i.db)(),
 					t = e ? Object(a.getPageTypeFromCurrentPage)(e) : void 0,
 					r = "search_results" === t && Object(a.structureType)(e) === a.StructureType.Trending;
 				return {
@@ -2598,4 +2598,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.0e1720acdddc21b15c7c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.a15fb1c9887ffb653eab.js.map

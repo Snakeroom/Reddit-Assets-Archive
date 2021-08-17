@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.07b40e64d5036ec4cbf1.js
-// Retrieved at 8/16/2021, 8:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.283ec127741c46b0f2bb.js
+// Retrieved at 8/17/2021, 2:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage"], {
 		"./src/reddit/actions/commentsListTruncated/index.ts": function(e, t, s) {
@@ -2398,10 +2398,10 @@
 				bs = p.a.div("CommentWrapper", ss.a),
 				gs = p.a.div("CommentBody", ss.a),
 				Cs = p.a.wrapped(yt.b, "AuthorHovercard", ss.a),
-				xs = Object(Lt.t)(),
+				xs = Object(Lt.u)(),
 				fs = Object(d.b)(() => Object(c.c)({
 					comment: (e, t) => Object(T.a)(e, t),
-					currentProfileModPermissions: Lt.g,
+					currentProfileModPermissions: Lt.h,
 					depth: (e, t) => Object(L.j)(e, t),
 					collapsed: es.b,
 					collapsedBecauseCrowdControl: es.a,
@@ -2426,16 +2426,16 @@
 					shouldShowTopSupporterIcon: (e, t) => {
 						const s = Object(T.a)(e, t);
 						if (!s) return !1;
-						const o = Object(Lt.q)(e, t);
+						const o = Object(Lt.r)(e, t);
 						return !!o && Object(Jt.a)(e, {
 							subredditId: o.id,
 							userId: s.authorId
 						}) && !Object(Yt.g)(e)
 					},
-					modModeEnabled: Lt.R,
+					modModeEnabled: Lt.S,
 					errorMsgs: L.G,
 					replyFormOpen: L.J,
-					subreddit: Lt.q,
+					subreddit: Lt.r,
 					subredditType: L.L,
 					allowNFTs: ns.a,
 					hasSupporterRing: Zt.a
@@ -4601,12 +4601,12 @@
 				className: Ye.a.VideoProcessingStatus
 			}, Qe._("Your video is processing. We'll send you a notification when it's done.", null, {
 				hk: "1R8rKB"
-			})), tt = Object(ye.t)({
-				isCommentsPage: ye.w,
+			})), tt = Object(ye.u)({
+				isCommentsPage: ye.x,
 				pageLayer: e => e
 			}), st = Object(a.b)(() => Object(l.c)({
 				activeModalId: R.a,
-				flairStyleTemplate: ye.T,
+				flairStyleTemplate: ye.U,
 				currentUser: H.j,
 				crosspost: U.d,
 				hideNSFWPref: H.B,
@@ -4627,7 +4627,7 @@
 				showPromotedCTA: W.a,
 				post: U.H,
 				moderatorPermissions: V.k,
-				modModeEnabled: ye.R,
+				modModeEnabled: ye.S,
 				isInCategoriesExperiment: A.a,
 				showAwardsPlaque: F.a,
 				showEditFlair: we.a,
@@ -6041,14 +6041,14 @@
 				E = s("./src/reddit/selectors/tracking.ts");
 
 			function P() {
-				return Object(u.t)({
-					currentProfileName: u.h,
-					isCommentPermalink: u.v,
-					isCommentsPage: u.w,
-					isFrontpage: u.y,
-					isPredictionsPage: u.M,
-					isProfilePostListing: u.J,
-					isTopicPage: u.O,
+				return Object(u.u)({
+					currentProfileName: u.i,
+					isCommentPermalink: u.w,
+					isCommentsPage: u.x,
+					isFrontpage: u.z,
+					isPredictionsPage: u.N,
+					isProfilePostListing: u.K,
+					isTopicPage: u.P,
 					pageLayer: e => e
 				})
 			}
@@ -6057,7 +6057,7 @@
 					apiError: v.c,
 					apiPending: v.d,
 					measureScrollFPS: C.d.measureScrollFPS,
-					layout: (e, t) => t.forcedLayout || Object(u.P)(e, t),
+					layout: (e, t) => t.forcedLayout || Object(u.Q)(e, t),
 					loadMore: (e, t) => t.isPredictionsPage ? null : Object(v.g)(e, t),
 					postsById: (e, t) => {
 						if (t.isPredictionsPage) {
@@ -6086,7 +6086,7 @@
 					}),
 					subredditsById: y.ab,
 					viewportDataLoaded: E.a,
-					pageReferrer: u.S,
+					pageReferrer: u.T,
 					postListPlaceholderComponent: () => g.a,
 					isNpsScrollSurveyEnabled: x.d
 				},
@@ -6911,7 +6911,7 @@
 						subredditName: d
 					}))
 				},
-				mt = Object(G.t)(),
+				mt = Object(G.u)(),
 				pt = () => Object(h.c)({
 					apiError: te.c,
 					apiPending: te.d,
@@ -7894,4 +7894,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.07b40e64d5036ec4cbf1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.283ec127741c46b0f2bb.js.map

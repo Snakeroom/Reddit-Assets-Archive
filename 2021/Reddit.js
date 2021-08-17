@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.169950b113313ad35763.js
-// Retrieved at 8/17/2021, 1:00:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.4876072e871b6b6e5c1f.js
+// Retrieved at 8/17/2021, 2:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -4226,7 +4226,7 @@
 			const Zt = N.a.div("Overlay", Yt.a),
 				$t = N.a.div("IframeContainer", Yt.a),
 				en = {},
-				tn = Object(Kt.t)(),
+				tn = Object(Kt.u)(),
 				nn = Object(g.c)({
 					frontpageSignupVariant: U.a,
 					isResponsiveSettingsEnabled: zt.a
@@ -4764,7 +4764,7 @@
 					pageLayer: t
 				}) => {
 					const n = !!e.user.account,
-						s = Object(Kt.W)(t);
+						s = Object(Kt.X)(t);
 					switch (s) {
 						case "index":
 						case "listing":
@@ -4838,7 +4838,7 @@
 								type: cs.Talk
 							};
 						case "topic": {
-							const n = Object(Kt.s)(t),
+							const n = Object(Kt.t)(t),
 								s = n && Object(ks.d)(e, n);
 							if (s) return {
 								type: cs.Topic,
@@ -4857,7 +4857,7 @@
 								type: cs.Settings, model: o
 							}
 					}
-					const r = Object(Kt.Q)(e, {
+					const r = Object(Kt.R)(e, {
 						pageLayer: t
 					});
 					if ("all" === r) return {
@@ -4866,7 +4866,7 @@
 					if ("popular" === r) return {
 						type: cs.Popular
 					};
-					const a = Object(Kt.q)(e, {
+					const a = Object(Kt.r)(e, {
 						pageLayer: t
 					});
 					if (a) return "searchResults" === s ? {
@@ -4876,21 +4876,21 @@
 						type: cs.Community,
 						model: a
 					};
-					const i = Object(Kt.d)(e, {
+					const i = Object(Kt.e)(e, {
 						pageLayer: t
 					});
 					if (i) return {
 						type: cs.Multi,
 						model: i
 					};
-					const c = Object(Kt.j)(e, {
+					const c = Object(Kt.k)(e, {
 						pageLayer: t
 					});
 					if (c) return {
 						type: cs.UserProfile,
 						model: c
 					};
-					const l = Object(Kt.h)(t);
+					const l = Object(Kt.i)(t);
 					if (l) return {
 						type: cs.UserProfileName,
 						name: `u/${l}`
@@ -4899,7 +4899,7 @@
 						type: cs.GlobalSearch
 					};
 					if ("subredditWiki" === s) {
-						const n = Object(Kt.n)(e, {
+						const n = Object(Kt.o)(e, {
 								pageLayer: t
 							}) || js.e,
 							s = Object(Ss.z)(e, {
@@ -6003,8 +6003,8 @@
 			}
 			const Mo = Object(p.b)(So, ko, wo)(Object(A.c)(Io)),
 				No = Object(p.b)(So, ko, wo)(Object(A.c)(Object(go.b)(Io))),
-				To = Object(Kt.t)({
-					isCommentsPage: Kt.w,
+				To = Object(Kt.u)({
+					isCommentsPage: Kt.x,
 					pageLayer: e => e
 				}),
 				Ao = Object(g.c)({
@@ -6471,7 +6471,7 @@
 				className: e
 			}) {
 				const t = Object(ur.a)(),
-					n = Object(Kt.X)(t),
+					n = Object(Kt.Y)(t),
 					{
 						nsfwSessionSetting: s,
 						refreshNsfwSessionSettingExpiryTime: o
@@ -6499,13 +6499,13 @@
 					D = Object(p.e)(lr.g),
 					U = Object(p.e)(xt.W),
 					B = Object(p.e)(Lt.p),
-					G = Object(p.e)(e => Object(Kt.Y)(e, {
+					G = Object(p.e)(e => Object(Kt.Z)(e, {
 						pageLayer: t
 					})),
-					q = Object(p.e)(e => Object(Kt.q)(e, {
+					q = Object(p.e)(e => Object(Kt.r)(e, {
 						pageLayer: t
 					})),
-					H = Object(p.e)(e => Object(Kt.d)(e, {
+					H = Object(p.e)(e => Object(Kt.e)(e, {
 						pageLayer: t
 					})),
 					W = Object(p.e)(dr.a),
@@ -7261,7 +7261,7 @@
 				var n;
 				const s = Object(p.d)(),
 					r = Object(Lr.a)(),
-					a = Object(Kt.bb)(),
+					a = Object(Kt.db)(),
 					i = Object(p.e)(e => e.user.account),
 					c = Object(p.e)(hs.c),
 					l = Object(p.e)(Si.c),
@@ -8454,7 +8454,7 @@
 					toggleModMode: () => e(Object(Fa.b)()),
 					openCommunityCreationModal: () => e(Object(Ls.a)("/subreddits/create"))
 				}));
-			var xc = Object(Kt.t)({
+			var xc = Object(Kt.u)({
 					pageLayer: e => e
 				})(Cc(e => {
 					const {
@@ -8795,7 +8795,7 @@
 						hk: "1TvNGq"
 					})))
 				})),
-				Zc = Object(Kt.t)({
+				Zc = Object(Kt.u)({
 					pageLayer: e => e
 				}),
 				$c = Object(g.c)({
@@ -8816,7 +8816,7 @@
 					isResponsiveSettingsEnabled: zt.a,
 					shouldOpenEmailVerificationTooltip: (e, {
 						pageLayer: t
-					}) => Object(Kt.L)(t) && !!Object(xt.m)(e) && !Object(xt.z)(e) && Object(xt.J)(e) && !Object(xt.H)(e),
+					}) => Object(Kt.M)(t) && !!Object(xt.m)(e) && !Object(xt.z)(e) && Object(xt.J)(e) && !Object(xt.H)(e),
 					shouldShowChangeUsernameModals: Hc.c,
 					unreadNotifications: xt.lb
 				}),
@@ -9022,7 +9022,7 @@
 				}),
 				user: e.account
 			})));
-			var cl = Object(Kt.t)()(Object(p.b)(al, e => ({
+			var cl = Object(Kt.u)()(Object(p.b)(al, e => ({
 					onOpenLoginModal: () => {
 						e(Object(_e.k)({
 							actionSource: _e.a.HeaderLogin
@@ -9057,8 +9057,8 @@
 					isPageResponsive: Ir.a,
 					isBladeOpen: e => !!e.structuredStyles.isEditing
 				}),
-				bl = Object(Kt.t)({
-					categoryName: Kt.b,
+				bl = Object(Kt.u)({
+					categoryName: Kt.c,
 					pageLayer: e => e
 				}),
 				hl = e => {
@@ -9141,7 +9141,7 @@
 				currentPage: ws
 			}), _l = Object(p.b)(jl, e => ({
 				onUnpinSubscriptions: () => e(Object(_.j)())
-			})), Sl = Object(Kt.t)();
+			})), Sl = Object(Kt.u)();
 			var kl = N.a.wrapped(Sl(_l(e => m.a.createElement("div", {
 					"data-redditstyle": !0,
 					className: e.className
@@ -9847,7 +9847,7 @@
 					isFPR: xt.H,
 					posts: Hu.K,
 					profileCollectionsEnabled: pu.a,
-					showEmailCollectionBanner: e => !Object(Kt.K)(e.platform.currentPage) && Xu(e)
+					showEmailCollectionBanner: e => !Object(Kt.L)(e.platform.currentPage) && Xu(e)
 				}), e => ({
 					onClickOutsideOverlay: t => e(Object(h.b)(t)),
 					onUnpinSubscriptions: () => e(Object(_.j)()),
@@ -9869,7 +9869,7 @@
 							posts: t,
 							profileCollectionsEnabled: n
 						} = this.props;
-						if (Object(Kt.w)(e)) {
+						if (Object(Kt.x)(e)) {
 							const s = e && e.urlParams && e.urlParams.partialPostId,
 								o = `${y.Fb.Post}_${s}`,
 								r = t && s && t[o],
@@ -9941,7 +9941,7 @@
 						E = O || C ? this.previousPage : t,
 						j = !(!(E && E.meta && E.meta.name === y.Jb.SEARCH_RESULTS && E && E.queryParams) || E.queryParams[Ru.s]),
 						_ = !(!E || !E.meta || E.meta.name !== y.Jb.MODERATION_PAGES),
-						S = Object(Kt.w)(E),
+						S = Object(Kt.x)(E),
 						w = this.getIsPostCollection(),
 						I = f && !g,
 						M = "recent" !== e.contentState;
@@ -13151,7 +13151,7 @@
 				h = n("./src/reddit/selectors/user.ts"),
 				f = n("./src/lib/CSSVariableProvider/index.tsx"),
 				g = n("./src/lib/isAdHocMultireddit/index.ts");
-			const v = (e, t) => t.forceRedditTheme ? void 0 : void 0 !== t.subredditName ? t.subredditName : Object(d.o)(e, t);
+			const v = (e, t) => t.forceRedditTheme ? void 0 : void 0 !== t.subredditName ? t.subredditName : Object(d.p)(e, t);
 			class y extends r.a.Component {
 				render() {
 					const {
@@ -13200,7 +13200,7 @@
 					});
 					return !(!t || !t.isNSFW)
 				}
-				const o = Object(d.d)(e, t);
+				const o = Object(d.e)(e, t);
 				return !!o && o.isNSFW
 			}, (e, t) => t.isOverlay, (e, t) => t.isCommentsPage, (e, t, n, o, r, a, i, c, l, d, p) => {
 				const b = {
@@ -13236,7 +13236,7 @@
 				}
 			}))(y);
 			t.b = O;
-			const C = Object(l.t)()(O)
+			const C = Object(l.u)()(O)
 		},
 		"./src/reddit/components/Toaster/EuCookiePolicyToast.m.less": function(e, t, n) {
 			e.exports = {
@@ -14693,7 +14693,7 @@
 				l = n("./src/reddit/selectors/user.ts");
 
 			function d(e) {
-				return Object(i.P)(e, {}) === r.g.Large && !Object(l.I)(e) && !Object(c.d)(e)
+				return Object(i.Q)(e, {}) === r.g.Large && !Object(l.I)(e) && !Object(c.d)(e)
 			}
 
 			function u(e) {
@@ -15881,7 +15881,7 @@
 		"./src/reddit/hooks/usePageLayer.ts": function(e, t, n) {
 			"use strict";
 			var s = n("./src/reddit/contexts/PageLayer/index.tsx");
-			t.a = s.bb
+			t.a = s.db
 		},
 		"./src/reddit/hooks/useTracking.ts": function(e, t, n) {
 			"use strict";
@@ -16561,7 +16561,7 @@
 					var t;
 					const {
 						currentPage: n
-					} = e.platform, s = Object(Dt.p)(e), o = null === (t = e.platform.currentPage) || void 0 === t ? void 0 : t.status, r = Ut.has(o), a = Object(Lt.k)(e, {
+					} = e.platform, s = Object(Dt.p)(e), o = null === (t = e.platform.currentPage) || void 0 === t ? void 0 : t.status, r = Ut.has(o), a = Object(Lt.l)(e, {
 						pageLayer: n
 					}), i = !(!a || !a.hideFromRobots), c = Gt(e), l = n && n.isRobotIndexable, d = s === _.Jb.COMMENTS || s === _.Jb.COLLECTION_COMMENTS, u = !(!n || !n.urlParams.partialCommentId), m = s === _.Jb.SEARCH_RESULTS || s === _.Jb.SUBREDDIT_LEADERBOARD || d && u;
 					return i || r || c || (!1 === l || m) ? m ? "noindex" : "noindex,nofollow" : null
@@ -17322,10 +17322,10 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const b = Object(l.t)(),
+			const b = Object(l.u)(),
 				h = Object(a.c)({
 					isEditing: d.i,
-					layout: (e, t) => t.forcedLayout || Object(l.P)(e, t)
+					layout: (e, t) => t.forcedLayout || Object(l.Q)(e, t)
 				}),
 				f = Object(r.b)(h),
 				g = ({
@@ -19572,7 +19572,7 @@
 				l = n("./src/reddit/selectors/user.ts");
 			const d = Object(s.a)(l.R, (e, {
 					pageLayer: t
-				}) => !t || Object(r.y)(t), c.c, (e, t, n) => !e && t && !n),
+				}) => !t || Object(r.z)(t), c.c, (e, t, n) => !e && t && !n),
 				u = Object(s.a)((e, t) => Object(a.c)(e, {
 					experimentEligibilitySelector: e => d(e, t),
 					experimentName: o.sb,
@@ -19927,4 +19927,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePo~5f1ac562", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250", "Governance~ModListing~Reddit~Subreddit", "Chat~Governance~Reddit", "Governance~Reddit~reddit-components-MediumPost", "Reddit~StandalonePostPage~reddit-components-MediumPost", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.169950b113313ad35763.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.4876072e871b6b6e5c1f.js.map

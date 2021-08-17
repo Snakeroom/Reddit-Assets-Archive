@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumUploadModal.4649a49633a169e3709c.js
-// Retrieved at 8/12/2021, 5:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumUploadModal.e91aa4ec07fb9877143d.js
+// Retrieved at 8/17/2021, 2:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumUploadModal"], {
 		"./src/reddit/components/Economics/SubredditPremium/UploadModal/ImageUpload/index.m.less": function(e, t, s) {
@@ -249,7 +249,7 @@
 				F = s.n(R);
 			const {
 				fbt: H
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), q = 120, Z = 150;
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), Z = 120, q = 150;
 
 			function z(e) {
 				const t = e.file.type;
@@ -257,11 +257,11 @@
 			}
 
 			function K(e) {
-				return e.height === q && e.width === q
+				return e.height === Z && e.width === Z
 			}
 
 			function G(e) {
-				return e.file.size <= 1024 * Z
+				return e.file.size <= 1024 * q
 			}
 
 			function J(e) {
@@ -298,7 +298,7 @@
 					hk: "3WlJuk"
 				})), r.a.createElement(W, {
 					isError: l
-				}, H._("File size limited to {max-file-size} KB", [H._param("max-file-size", Z)], {
+				}, H._("File size limited to {max-file-size} KB", [H._param("max-file-size", q)], {
 					hk: "2i3L33"
 				})), r.a.createElement(W, null, H._("Add 4px black outline", null, {
 					hk: "2mHGJn"
@@ -756,13 +756,13 @@
 						const t = Object(y.j)(e);
 						return t && Object(E.e)(t) || ""
 					},
-					subreddit: h.q,
+					subreddit: h.r,
 					uploadAssetType: e => {
 						var t;
 						return (null === (t = Object(_.a)(e)) || void 0 === t ? void 0 : t.uploadAssetType) || void 0
 					}
 				}),
-				Ie = Object(h.t)();
+				Ie = Object(h.u)();
 			t.default = Object(l.a)(Object(p.b)(Object(u.c)(Ie(Object(o.b)(Me, (e, t) => ({
 				onClose: () => e(Object(d.f)()),
 				onGovernanceError: t => {
@@ -1242,4 +1242,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumUploadModal.4649a49633a169e3709c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumUploadModal.e91aa4ec07fb9877143d.js.map

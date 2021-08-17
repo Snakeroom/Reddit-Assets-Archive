@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.69970ca27e54c9da75f3.js
-// Retrieved at 8/12/2021, 6:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.7dd1edabcea481dbe30d.js
+// Retrieved at 8/17/2021, 2:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Wiki-ModHubWikiManagement"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -1468,7 +1468,7 @@
 				}))(Object(W.c)(ze)),
 				Ve = n("./src/reddit/components/Wiki/ModHubWikiManagement/index.m.less"),
 				qe = n.n(Ve);
-			const Xe = Object(u.t)(),
+			const Xe = Object(u.u)(),
 				Ge = () => {
 					document.body.scrollTop = 0, document.documentElement.scrollTop = 0
 				};
@@ -2157,7 +2157,7 @@
 					wikiDirectory: v.b,
 					wikiPage: v.c
 				})),
-				H = Object(p.t)();
+				H = Object(p.u)();
 			class I extends s.Component {
 				constructor() {
 					super(...arguments), this.onEditButtonClick = () => {
@@ -3367,4 +3367,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.69970ca27e54c9da75f3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.7dd1edabcea481dbe30d.js.map

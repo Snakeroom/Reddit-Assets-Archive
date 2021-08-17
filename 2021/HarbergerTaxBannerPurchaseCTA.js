@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/HarbergerTaxBannerPurchaseCTA.3248b328bf3d65ba96c4.js
-// Retrieved at 8/12/2021, 5:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/HarbergerTaxBannerPurchaseCTA.c63a6024bc350f7780f7.js
+// Retrieved at 8/17/2021, 2:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["HarbergerTaxBannerPurchaseCTA"], {
 		"./src/reddit/actions/economics/claims/constants.ts": function(e, t, n) {
@@ -46,9 +46,9 @@
 			})), n.d(t, "i", (function() {
 				return l
 			})), n.d(t, "j", (function() {
-				return b
-			})), n.d(t, "k", (function() {
 				return _
+			})), n.d(t, "k", (function() {
+				return b
 			})), n.d(t, "l", (function() {
 				return E
 			})), n.d(t, "m", (function() {
@@ -85,8 +85,8 @@
 				u = "GOVERNANCE__PROPOSAL_CREATION_PENDING",
 				a = "GOVERNANCE__PROPOSAL_CREATION_SUCCESS",
 				l = "GOVERNANCE__PROPOSAL_OPTION_VOTE_FAILURE",
-				b = "GOVERNANCE__PROPOSAL_OPTION_VOTE_PENDING",
-				_ = "GOVERNANCE__PROPOSAL_OPTION_VOTE_SUCCESS",
+				_ = "GOVERNANCE__PROPOSAL_OPTION_VOTE_PENDING",
+				b = "GOVERNANCE__PROPOSAL_OPTION_VOTE_SUCCESS",
 				E = "GOVERNANCE__PUBLIC_WALLET_INFO_FAILURE",
 				f = "GOVERNANCE__PUBLIC_WALLET_INFO_PENDING",
 				m = "GOVERNANCE__PUBLIC_WALLET_INFO_SUCCESS",
@@ -118,9 +118,9 @@
 			})), n.d(t, "g", (function() {
 				return l
 			})), n.d(t, "h", (function() {
-				return b
-			})), n.d(t, "i", (function() {
 				return _
+			})), n.d(t, "i", (function() {
+				return b
 			})), n.d(t, "j", (function() {
 				return E
 			}));
@@ -133,8 +133,8 @@
 				u = Object(r.a)(s.d),
 				a = Object(r.a)(s.f),
 				l = Object(r.a)(s.g),
-				b = Object(r.a)(s.h),
-				_ = Object(r.a)(s.i),
+				_ = Object(r.a)(s.h),
+				b = Object(r.a)(s.i),
 				E = Object(r.a)(s.j)
 		},
 		"./src/reddit/actions/harbergerTax/constants.ts": function(e, t, n) {
@@ -158,7 +158,7 @@
 			})), n.d(t, "i", (function() {
 				return l
 			})), n.d(t, "j", (function() {
-				return b
+				return _
 			}));
 			const r = "HARBERGER_TAX__BANNER_MANAGE_MODAL_OPENED",
 				s = "HARBERGER_TAX__BANNER_PURCHASE_MODAL_OPENED",
@@ -169,7 +169,7 @@
 				u = "HARBERGER_TAX__BANNER_PURCHASE_SUCCESS",
 				a = "HARBERGER_TAX__BANNER_UPDATE_FAILURE",
 				l = "HARBERGER_TAX__BANNER_UPDATE_PENDING",
-				b = "HARBERGER_TAX__BANNER_UPDATE_SUCCESS"
+				_ = "HARBERGER_TAX__BANNER_UPDATE_SUCCESS"
 		},
 		"./src/reddit/components/Governance/HarbergerTax/BannerPurchaseCTA/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -190,8 +190,8 @@
 				u = n("./src/lib/prettyPrintNumber/index.ts"),
 				a = n("./src/reddit/actions/harbergerTax/actionCreators.ts"),
 				l = n("./src/reddit/actions/tooltip.ts"),
-				b = n("./src/reddit/components/Governance/Token/index.tsx"),
-				_ = n("./src/reddit/components/InfoTextTooltip/index.tsx"),
+				_ = n("./src/reddit/components/Governance/Token/index.tsx"),
+				b = n("./src/reddit/components/InfoTextTooltip/index.tsx"),
 				E = n("./src/reddit/contexts/PageLayer/index.tsx"),
 				f = n("./src/reddit/featureFlags/component.tsx"),
 				m = n("./src/reddit/helpers/governance/ethereum.ts"),
@@ -203,24 +203,24 @@
 				v = n.n(h);
 			const R = Object(c.c)({
 					cost: (e, t) => {
-						const n = Object(E.q)(e, t);
+						const n = Object(E.r)(e, t);
 						if (n) return Object(A.b)(e, {
 							subredditId: n.id
 						})
 					},
 					pointsDetails: (e, t) => {
-						const n = Object(E.q)(e, t);
+						const n = Object(E.r)(e, t);
 						return Object(p.b)(e, null == n ? void 0 : n.id)
 					},
 					publicAddress: (e, t) => {
-						const n = Object(E.q)(e, t);
+						const n = Object(E.r)(e, t);
 						return (null == n ? void 0 : n.id) ? Object(N.b)(e, {
 							subredditId: null == n ? void 0 : n.id
 						}) : void 0
 					},
-					subreddit: E.q,
+					subreddit: E.r,
 					userOwnsBanner: (e, t) => {
-						const n = Object(E.q)(e, t),
+						const n = Object(E.r)(e, t),
 							r = e.user.account;
 						if (n && r) {
 							return Object(A.c)(e, {
@@ -246,7 +246,7 @@
 						tooltipId: t
 					}))
 				})),
-				C = Object(E.t)();
+				C = Object(E.u)();
 			t.default = Object(f.a)("spHarberger", C(y((function(e) {
 				const {
 					cost: t,
@@ -279,10 +279,10 @@
 					hk: "aHDWM"
 				}) : i.a.createElement(s.Fragment, null, r.fbt._("Buy Banner", null, {
 					hk: "3Mp8CG"
-				}), i.a.createElement(b.a, {
+				}), i.a.createElement(_.a, {
 					className: v.a.token,
 					subredditId: o.id
-				}), Object(u.a)(Object(O.b)(t, p.displayConversion))), A && i.a.createElement(_.c, {
+				}), Object(u.a)(Object(O.b)(t, p.displayConversion))), A && i.a.createElement(b.c, {
 					tooltipId: h,
 					text: N ? r.fbt._("You must register your wallet address to purchase the banner", null, {
 						hk: "38o58h"
@@ -308,12 +308,12 @@
 				u = n("./src/reddit/selectors/crypto/points.ts"),
 				a = n("./src/reddit/components/Governance/Token/index.m.less"),
 				l = n.n(a);
-			const b = Object(o.c)({
+			const _ = Object(o.c)({
 				pointsDetails: (e, {
 					subredditId: t
 				}) => Object(u.b)(e, t)
 			});
-			t.a = Object(i.b)(b)((function(e) {
+			t.a = Object(i.b)(_)((function(e) {
 				var t;
 				const n = null === (t = e.pointsDetails) || void 0 === t ? void 0 : t.images;
 				if (!n) return null;
@@ -352,9 +352,9 @@
 			})), n.d(t, "m", (function() {
 				return l
 			})), n.d(t, "g", (function() {
-				return b
-			})), n.d(t, "b", (function() {
 				return _
+			})), n.d(t, "b", (function() {
+				return b
 			})), n.d(t, "d", (function() {
 				return E
 			})), n.d(t, "c", (function() {
@@ -429,7 +429,7 @@
 					data: n
 				})
 			}
-			async function b(e, t, n) {
+			async function _(e, t, n) {
 				return await Object(i.a)(e, {
 					method: "delete",
 					endpoint: `${s.a.metaUrl}/crypto/${t}/registrations/${n}`
@@ -437,7 +437,7 @@
 			}! function(e) {
 				e.Ethereum = "ethereum:1", e.Rinkeby = "ethereum:4", e.ArbitrumRinkeby = "ethereum:5391184", e.EthTraderEthereum = "ethereum:1:ethtrader", e.EthTraderRinkeby = "ethereum:4:ethtrader"
 			}(r || (r = {}));
-			const _ = (e, t, n) => ({
+			const b = (e, t, n) => ({
 					type: "burn-link",
 					subredditId: e,
 					amount: t,
@@ -485,7 +485,7 @@
 			})), n.d(t, "a", (function() {
 				return u
 			})), n.d(t, "g", (function() {
-				return _
+				return b
 			})), n.d(t, "h", (function() {
 				return f
 			})), n.d(t, "i", (function() {
@@ -549,8 +549,8 @@
 					type: "function"
 				}]
 			};
-			const b = 1;
-			async function _(e, t, r, s, i) {
+			const _ = 1;
+			async function b(e, t, r, s, i) {
 				const o = await Promise.all([n.e("vendors~CryptoLibEthers~reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-compon~fb9f1732"), n.e("CryptoLibEthers")]).then(n.bind(null, "./node_modules/ethers/lib.esm/index.js")).then(e => e.ethers),
 					{
 						BigNumber: c
@@ -558,11 +558,11 @@
 					{
 						hexlify: d,
 						hexZeroPad: u,
-						toUtf8Bytes: _
+						toUtf8Bytes: b
 					} = o.utils,
 					E = c.from(r).add(i),
-					f = b,
-					m = "0x" + [d(1)].concat([d(f), c.from(s).toHexString(), c.from(i).toHexString()].map(e => u(e, 32))).concat(d(_(""))).map(e => e.substr(2)).join("");
+					f = _,
+					m = "0x" + [d(1)].concat([d(f), c.from(s).toHexString(), c.from(i).toHexString()].map(e => u(e, 32))).concat(d(b(""))).map(e => e.substr(2)).join("");
 				return async function(e, t, n, r) {
 					return a(e, Promise.resolve(l), "send", [t, n, r])
 				}(e, t, E.toString(), m)
@@ -708,14 +708,14 @@
 					d = null == c ? void 0 : c.unlocked,
 					u = null !== (r = null === (n = e.walletProvider) || void 0 === n ? void 0 : n.provider) && void 0 !== r ? r : e.provider,
 					l = !!(null === (s = e.walletProvider) || void 0 === s ? void 0 : s.inTransition),
-					b = (null == d ? void 0 : d.decimals) || 0,
-					_ = "1" + "0".repeat(b);
+					_ = (null == d ? void 0 : d.decimals) || 0,
+					b = "1" + "0".repeat(_);
 				return {
 					blockchainProvider: u,
 					contractAddress: (null == d ? void 0 : d.address) || "",
 					contracts: c,
-					decimals: b,
-					displayConversion: _,
+					decimals: _,
+					displayConversion: b,
 					images: e.images || a,
 					inTransition: l,
 					name: e.name,
@@ -724,7 +724,7 @@
 					symbol: (null == d ? void 0 : d.token) || ""
 				}
 			}
-			var b = (e = u, t) => {
+			var _ = (e = u, t) => {
 				switch (t.type) {
 					case d.a: {
 						const {
@@ -740,8 +740,8 @@
 						return e
 				}
 			};
-			const _ = {};
-			var E = (e = _, t) => {
+			const b = {};
+			var E = (e = b, t) => {
 				switch (t.type) {
 					case d.n: {
 						const {
@@ -767,7 +767,7 @@
 			};
 			t.a = Object(r.c)({
 				claims: c,
-				points: b,
+				points: _,
 				publicWallets: E
 			})
 		},
@@ -796,8 +796,8 @@
 			};
 
 			function u() {
-				const e = Object(s.bb)(),
-					t = Object(r.e)(t => Object(s.q)(t, {
+				const e = Object(s.db)(),
+					t = Object(r.e)(t => Object(s.r)(t, {
 						pageLayer: e
 					})),
 					n = Object(r.e)(e => d(e, null == t ? void 0 : t.id));
@@ -856,21 +856,21 @@
 			})), n.d(t, "e", (function() {
 				return l
 			})), n.d(t, "f", (function() {
-				return b
+				return _
 			}));
 			var r = n("./src/reddit/contexts/PageLayer/index.tsx");
 			const s = [],
 				i = {},
 				o = (e, t) => {
-					const n = _(e, t);
+					const n = b(e, t);
 					if (n) return n.mainHeader
 				},
 				c = (e, t) => {
-					const n = _(e, t);
+					const n = b(e, t);
 					return n && n.mainHeader ? n.mainHeader.price : "0"
 				},
 				d = (e, t) => {
-					const n = _(e, t);
+					const n = b(e, t);
 					return n && n.mainHeader ? {
 						owner: n.mainHeader.owner,
 						ownerId: n.mainHeader.ownerId
@@ -887,12 +887,12 @@
 					const n = u(e, t);
 					return n && n.amount || "0"
 				},
-				b = (e, t) => {
-					const n = Object(r.m)(e, t);
+				_ = (e, t) => {
+					const n = Object(r.n)(e, t);
 					return n && e.subreddits.gov.releaseNotes[n] || s
 				},
-				_ = (e, t) => t.subredditId ? e.subreddits.gov.assets[t.subredditId] : void 0
+				b = (e, t) => t.subredditId ? e.subreddits.gov.assets[t.subredditId] : void 0
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/HarbergerTaxBannerPurchaseCTA.3248b328bf3d65ba96c4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/HarbergerTaxBannerPurchaseCTA.c63a6024bc350f7780f7.js.map

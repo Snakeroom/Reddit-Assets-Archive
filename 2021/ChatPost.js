@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.950bfa0257c8cee12441.js
-// Retrieved at 8/17/2021, 9:50:10 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.5947a85a9d5c4831b016.js
+// Retrieved at 8/17/2021, 2:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -348,18 +348,18 @@
 				},
 				K = (e, t) => {
 					window.addEventListener("focus", (function n() {
-						q(e, t, n)
+						z(e, t, n)
 					}))
 				},
-				q = (e, t, n) => {
+				z = (e, t, n) => {
 					window.removeEventListener("focus", n), e(Object(W.g)({
 						commentListNodeId: t
 					})), window.setTimeout(() => e(Object(W.g)({
 						commentListNodeId: t
 					})), 5e3)
 				};
-			var z = n("./src/reddit/components/Comments/Comment/TopMeta/crowdControl.m.less"),
-				G = n.n(z);
+			var q = n("./src/reddit/components/Comments/Comment/TopMeta/crowdControl.m.less"),
+				G = n.n(q);
 			const {
 				fbt: J
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), Q = () => a.a.createElement(x.a, {
@@ -1548,12 +1548,12 @@
 				};
 			var V = n("./src/reddit/selectors/comments.ts"),
 				K = n("./src/reddit/selectors/commentSelector.ts"),
-				q = n("./src/reddit/selectors/moderatorPermissions.ts"),
-				z = n("./src/reddit/actions/comment/websocket/constants.ts");
-			const G = Object(C.a)(z.b),
-				J = Object(C.a)(z.c),
-				Q = Object(C.a)(z.a),
-				Y = Object(C.a)(z.d),
+				z = n("./src/reddit/selectors/moderatorPermissions.ts"),
+				q = n("./src/reddit/actions/comment/websocket/constants.ts");
+			const G = Object(C.a)(q.b),
+				J = Object(C.a)(q.c),
+				Q = Object(C.a)(q.a),
+				Y = Object(C.a)(q.d),
 				X = {},
 				Z = (e, t, n, s) => async (o, a) => {
 					(e => new Promise(t => {
@@ -1657,7 +1657,7 @@
 											commentId: n
 										}),
 										i = (s.user.account && s.user.account.id) === (r && r.authorId),
-										c = !!e && !!Object(q.k)(s, {
+										c = !!e && !!Object(z.k)(s, {
 											postId: e
 										});
 									!r || r.isRemoved && r.isDeleted || i || c ? X[n] = R.REMOVE_COMMENT : o(Q({
@@ -1845,8 +1845,8 @@
 					target: "_blank"
 				}, e.children));
 			var Ke = n("./src/reddit/components/ConfirmUserActionModal/index.tsx"),
-				qe = n("./src/reddit/components/HumanDate/index.tsx"),
-				ze = n("./src/reddit/components/ModModeReports/helpers.ts"),
+				ze = n("./src/reddit/components/HumanDate/index.tsx"),
+				qe = n("./src/reddit/components/ModModeReports/helpers.ts"),
 				Ge = n("./src/reddit/components/ReportFlow/index.tsx"),
 				Je = n("./src/reddit/components/ReportFlow/new.tsx"),
 				Qe = n("./src/reddit/components/TrackingHelper/index.tsx"),
@@ -1889,7 +1889,7 @@
 					currentUser: ct.j,
 					isMod: (e, {
 						comment: t
-					}) => !!Object(q.k)(e, {
+					}) => !!Object(z.k)(e, {
 						postId: t.postId
 					}),
 					isAuthorBlocked: (e, {
@@ -1991,7 +1991,7 @@
 						spamTooltipId: S,
 						toggleDeleteCommentModal: R,
 						timestampUpdateTrigger: P
-					} = e, B = !!o && o.id === t.authorId, F = Object(ze.b)(t), D = t.isApproved && F, U = !t.bannedBy || t.bannedBy === m.k, W = {
+					} = e, B = !!o && o.id === t.authorId, F = Object(qe.b)(t), D = t.isApproved && F, U = !t.bannedBy || t.bannedBy === m.k, W = {
 						comment: t,
 						onHideTooltip: f,
 						onShowTooltip: E,
@@ -2101,11 +2101,11 @@
 						trackingNoun: `sitewide_${d?"unblock":"block"}`
 					}, W), c.a.createElement(lt, null))), !u && c.a.createElement(Ve, dt({}, e, {
 						tooltipId: s,
-						tooltipText: c.a.createElement(qe.b, {
+						tooltipText: c.a.createElement(ze.b, {
 							seconds: t.created
 						}),
 						timestampUpdateTrigger: P
-					}), c.a.createElement(qe.d, {
+					}), c.a.createElement(ze.d, {
 						seconds: t.created
 					})))
 				})),
@@ -2182,15 +2182,15 @@
 			};
 			var Vt = n("./src/reddit/selectors/gold/awardIcon.ts"),
 				Kt = n("./src/reddit/selectors/poll/index.ts"),
-				qt = n("./src/reddit/components/CommentsChat/Comment/index.m.less"),
-				zt = n.n(qt);
+				zt = n("./src/reddit/components/CommentsChat/Comment/index.m.less"),
+				qt = n.n(zt);
 			const Gt = 250,
 				Jt = 10,
-				Qt = ae.a.wrapped(Bt.b, "ErrorText", zt.a),
-				Yt = ae.a.wrapped(ce.a, "TopMeta", zt.a),
-				Xt = ae.a.span("DeleteText", zt.a),
-				Zt = ae.a.wrapped(jt, "Reply", zt.a),
-				$t = Object(Pt.t)(),
+				Qt = ae.a.wrapped(Bt.b, "ErrorText", qt.a),
+				Yt = ae.a.wrapped(ce.a, "TopMeta", qt.a),
+				Xt = ae.a.span("DeleteText", qt.a),
+				Zt = ae.a.wrapped(jt, "Reply", qt.a),
+				$t = Object(Pt.u)(),
 				en = Object(d.b)(() => Object(l.c)({
 					associatedAward: (e, {
 						commentId: t
@@ -2217,7 +2217,7 @@
 					}) => Boolean(e.shortcuts.activeCommentId && t === e.shortcuts.activeCommentId),
 					isEditing: V.A,
 					prediction: Kt.f,
-					subreddit: Pt.q,
+					subreddit: Pt.r,
 					shouldRenderSystemMessages: Ut
 				})),
 				tn = Object(ie.b)(e => ({
@@ -2301,12 +2301,12 @@
 						I = !d && !s.isDeleted && !k,
 						y = !!e,
 						T = Object(oe.a)({
-							[zt.a.SystemMessageWrapper]: k && !l && g,
-							[zt.a.CommentWrapper]: !l && !k,
-							[zt.a.CommentExpanded]: _,
-							[zt.a.CommentTruncated]: E,
-							[zt.a.HighlightTarget]: b,
-							[zt.a.LivestreamingCommentWrapper]: l
+							[qt.a.SystemMessageWrapper]: k && !l && g,
+							[qt.a.CommentWrapper]: !l && !k,
+							[qt.a.CommentExpanded]: _,
+							[qt.a.CommentTruncated]: E,
+							[qt.a.HighlightTarget]: b,
+							[qt.a.LivestreamingCommentWrapper]: l
 						});
 					return x ? c.a.createElement(ke, {
 						commentCount: 1,
@@ -2338,8 +2338,8 @@
 						isLivestreaming: l,
 						renderedInOverlay: p
 					}, c.a.createElement(xe.a, {
-						className: Object(oe.a)(zt.a.ChatIcon, {
-							[zt.a.Livestreaming]: l
+						className: Object(oe.a)(qt.a.ChatIcon, {
+							[qt.a.Livestreaming]: l
 						}),
 						isLivestreaming: l,
 						icon: s.profileImage,
@@ -2350,8 +2350,8 @@
 						onReplyClick: f,
 						isLivestreaming: l
 					}), l && c.a.createElement("span", {
-						className: zt.a.livestreamingTimeStamp
-					}, c.a.createElement(qe.d, {
+						className: qt.a.livestreamingTimeStamp
+					}, c.a.createElement(ze.d, {
 						seconds: s.created
 					})), y && e && l ? c.a.createElement(ge, {
 						award: e,
@@ -2361,8 +2361,8 @@
 						comment: s,
 						prediction: u
 					}) : [c.a.createElement(ue.a, {
-						className: Object(oe.a)(zt.a.RichTextJson, {
-							[zt.a.Livestreaming]: l
+						className: Object(oe.a)(qt.a.RichTextJson, {
+							[qt.a.Livestreaming]: l
 						}),
 						content: Object(me.a)(s),
 						key: `rich-text-${s.id}`,
@@ -2370,8 +2370,8 @@
 						useExplicitTextColor: l
 					}), c.a.createElement(_t, {
 						key: "Menu",
-						className: Object(oe.a)(zt.a.Menu, {
-							[zt.a.Livestreaming]: l
+						className: Object(oe.a)(qt.a.Menu, {
+							[qt.a.Livestreaming]: l
 						}),
 						comment: s,
 						commentsPageKey: o,
@@ -2380,8 +2380,8 @@
 					})]), s.isDeleted && c.a.createElement(on, null), I && a && a.map((e, t) => c.a.createElement(Qt, {
 						key: `${t}-${e}`
 					}, e)), !d && E && c.a.createElement("button", {
-						className: Object(oe.a)(zt.a.CommentReadMoreButton, {
-							[zt.a.Livestreaming]: l
+						className: Object(oe.a)(qt.a.CommentReadMoreButton, {
+							[qt.a.Livestreaming]: l
 						}),
 						onClick: this.toggleBody
 					}, te.fbt._("Read more", null, {
@@ -2395,8 +2395,8 @@
 				on = ({
 					isLivestreaming: e
 				}) => c.a.createElement(c.a.Fragment, null, c.a.createElement(xe.a, {
-					className: Object(oe.a)(zt.a.ChatIcon, {
-						[zt.a.Livestreaming]: e || !1
+					className: Object(oe.a)(qt.a.ChatIcon, {
+						[qt.a.Livestreaming]: e || !1
 					}),
 					trash: !0
 				}), c.a.createElement(Xt, null, te.fbt._("deleted", null, {
@@ -3561,4 +3561,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.950bfa0257c8cee12441.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.5947a85a9d5c4831b016.js.map

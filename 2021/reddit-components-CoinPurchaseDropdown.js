@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.020b8b1df3def8a03b35.js
-// Retrieved at 8/12/2021, 6:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.b06444fac329c58fd3bd.js
+// Retrieved at 8/17/2021, 2:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CoinPurchaseDropdown"], {
 		"./src/reddit/actions/goldPurchaseModals/coinPurchaseModal.ts": function(e, t, r) {
@@ -736,8 +736,8 @@
 				G = r("./src/reddit/components/LottieAnimation/index.tsx"),
 				z = r("./src/reddit/controls/Button/index.tsx"),
 				K = r("./src/reddit/components/CompactCoinPurchaseList/ListItem/index.m.less"),
-				q = r.n(K);
-			var V = e => {
+				V = r.n(K);
+			var q = e => {
 					const {
 						className: t,
 						buttonClass: r,
@@ -751,26 +751,26 @@
 						subtextCrossout: p
 					} = e, m = r ? z.f : z.i;
 					return o.a.createElement("div", {
-						className: Object(s.a)(t, q.a.CompactCoinPurchaseListItem)
+						className: Object(s.a)(t, V.a.CompactCoinPurchaseListItem)
 					}, o.a.createElement("div", {
-						className: q.a.productSection
+						className: V.a.productSection
 					}, i, o.a.createElement("div", null, o.a.createElement("span", {
-						className: q.a.primaryText
+						className: V.a.primaryText
 					}, l), u && o.a.createElement("span", {
-						className: Object(s.a)(q.a.subtext, {
-							[q.a.crossout]: p
+						className: Object(s.a)(V.a.subtext, {
+							[V.a.crossout]: p
 						})
 					}, Array.isArray(u) ? u.map((e, t) => o.a.createElement("p", {
 						key: t
 					}, e)) : u))), o.a.createElement("div", {
-						className: q.a.priceSection
+						className: V.a.priceSection
 					}, o.a.createElement(m, {
-						className: Object(s.a)(q.a.button, r),
+						className: Object(s.a)(V.a.button, r),
 						redditStyle: !0,
 						onClick: d
 					}, c), o.a.createElement("span", {
-						className: Object(s.a)(q.a.buttonSubtext, {
-							[q.a.crossout]: a
+						className: Object(s.a)(V.a.buttonSubtext, {
+							[V.a.crossout]: a
 						})
 					}, n)))
 				},
@@ -781,7 +781,7 @@
 					communityPointsConversionEnabled: L.d.spPointsCoinConversion,
 					communityPointsName: (e, t) => {
 						var r;
-						const n = Object(M.q)(e, t);
+						const n = Object(M.r)(e, t);
 						return null === (r = Object(H.b)(e, null == n ? void 0 : n.id)) || void 0 === r ? void 0 : r.name
 					},
 					isFreeAwardEventEnabled: e => Object(U.a)(e) && Object(R.g)(e),
@@ -916,7 +916,7 @@
 						hk: "4EQRS8"
 					}))) : o.a.createElement("div", {
 						className: e
-					}, a && o.a.createElement(V, {
+					}, a && o.a.createElement(q, {
 						buttonClass: $.a.freeAwardButton,
 						buttonText: P.fbt._("Claim", null, {
 							hk: "OUYUl"
@@ -940,7 +940,7 @@
 							primaryText: s,
 							subtext: c
 						} = e, i = a && a.coins !== a.baselineCoins, d = a && a.pennies !== a.baselinePennies;
-						return o.a.createElement(V, {
+						return o.a.createElement(q, {
 							buttonClass: t,
 							buttonSubtext: r,
 							buttonSubtextCrossout: d,
@@ -951,7 +951,7 @@
 							subtext: c,
 							subtextCrossout: i
 						})
-					}), r && n && o.a.createElement(V, {
+					}), r && n && o.a.createElement(q, {
 						buttonText: P.fbt._("Convert", null, {
 							hk: "zVTTU"
 						}),
@@ -965,7 +965,7 @@
 					}))
 				}
 			}
-			var Q = Object(M.t)()(Y(Object(i.c)(J))),
+			var Q = Object(M.u)()(Y(Object(i.c)(J))),
 				X = r("./src/reddit/components/CoinPurchaseDropdown/index.m.less"),
 				ee = r.n(X);
 			const {
@@ -1286,4 +1286,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.020b8b1df3def8a03b35.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.b06444fac329c58fd3bd.js.map

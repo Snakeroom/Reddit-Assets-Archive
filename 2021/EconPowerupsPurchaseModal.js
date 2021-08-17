@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.a3079d89f34107c9b97b.js
-// Retrieved at 8/12/2021, 6:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.33643002c9874df0688c.js
+// Retrieved at 8/17/2021, 2:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsPurchaseModal"], {
 		"./src/reddit/actions/goldPurchaseModals/payment.ts": function(e, t, n) {
@@ -377,8 +377,8 @@
 				}))
 			};
 			var R = n("./src/reddit/components/PowerupsSidebar/common/utils.ts"),
-				q = n("./src/reddit/components/Econ/PowerupsPurchaseModal/PowerupsPurchase/PowerupsProgressControl/PowerupsCount/index.m.less"),
-				X = n.n(q);
+				X = n("./src/reddit/components/Econ/PowerupsPurchaseModal/PowerupsPurchase/PowerupsProgressControl/PowerupsCount/index.m.less"),
+				q = n.n(X);
 			var W = function(e) {
 					const {
 						className: t,
@@ -389,21 +389,21 @@
 						max: c
 					} = e, i = e => n(Math.max(Math.min(a + e, c || Number.POSITIVE_INFINITY), o || 0)), d = c === o, u = Object(R.a)(a);
 					return s.a.createElement("div", {
-						className: Object(l.a)(t, X.a.container),
+						className: Object(l.a)(t, q.a.container),
 						style: r
 					}, s.a.createElement("div", {
-						className: Object(l.a)(X.a.control, {
-							[X.a.locked]: d
+						className: Object(l.a)(q.a.control, {
+							[q.a.locked]: d
 						})
 					}, !d && s.a.createElement("button", {
-						className: Object(l.a)(X.a.button, X.a.decrementButton),
+						className: Object(l.a)(q.a.button, q.a.decrementButton),
 						onClick: () => i(-1)
 					}), s.a.createElement("div", {
-						className: X.a.value
+						className: q.a.value
 					}, s.a.createElement(u, {
-						className: X.a.icon
+						className: q.a.icon
 					}), s.a.createElement("span", null, a)), !d && s.a.createElement("button", {
-						className: Object(l.a)(X.a.button, X.a.incrementButton),
+						className: Object(l.a)(q.a.button, q.a.incrementButton),
 						onClick: () => i(1)
 					})))
 				},
@@ -646,8 +646,8 @@
 			}
 			const {
 				fbt: me
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), pe = Object(p.t)(), be = Object(o.c)({
-				currentSubreddit: p.q
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), pe = Object(p.u)(), be = Object(o.c)({
+				currentSubreddit: p.r
 			}), he = Object(a.b)(be);
 			const fe = Object(c.a)(pe(he((function(e) {
 				const {
@@ -890,4 +890,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.a3079d89f34107c9b97b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.33643002c9874df0688c.js.map

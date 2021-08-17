@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.ff66468bc4cece393a51.js
-// Retrieved at 8/12/2021, 6:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.a971deb8b2a57438c461.js
+// Retrieved at 8/17/2021, 2:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceWalletRegistration"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -1116,7 +1116,7 @@
 					subredditId: t.subredditId
 				}))
 			}));
-			t.a = ne(Object(c.c)(Object(d.t)()(te)))
+			t.a = ne(Object(c.c)(Object(d.u)()(te)))
 		},
 		"./src/reddit/components/Governance/WalletRegistration/Common/pageReload.ts": function(e, t, n) {
 			"use strict";
@@ -1875,8 +1875,8 @@
 			};
 
 			function d() {
-				const e = Object(a.bb)(),
-					t = Object(r.e)(t => Object(a.q)(t, {
+				const e = Object(a.db)(),
+					t = Object(r.e)(t => Object(a.r)(t, {
 						pageLayer: e
 					})),
 					n = Object(r.e)(e => c(e, null == t ? void 0 : t.id));
@@ -1938,7 +1938,7 @@
 					return n && n.amount || "0"
 				},
 				m = (e, t) => {
-					const n = Object(r.m)(e, t);
+					const n = Object(r.n)(e, t);
 					return n && e.subreddits.gov.releaseNotes[n] || a
 				},
 				b = (e, t) => t.subredditId ? e.subreddits.gov.assets[t.subredditId] : void 0
@@ -1948,4 +1948,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.ff66468bc4cece393a51.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.a971deb8b2a57438c461.js.map

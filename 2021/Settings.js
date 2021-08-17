@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.f1ac77c90d24db476aab.js
-// Retrieved at 8/16/2021, 8:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.98f2a01e569a1e0a342d.js
+// Retrieved at 8/17/2021, 2:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, n) {
@@ -6613,7 +6613,7 @@
 					}), i.a.createElement(F, null))
 				}
 			}
-			const le = Object(V.t)();
+			const le = Object(V.u)();
 			t.b = le(oe(Object(z.c)(ce)))
 		},
 		"./src/reddit/components/Settings/PrivacyForm.m.less": function(e, t, n) {
@@ -11208,7 +11208,7 @@
 					},
 					trackDisplayLinkOnProfileToggled: t => e((e, n) => P.f(n(), t))
 				}));
-			var Ht = Object(Ve.t)()(Dt((function(e) {
+			var Ht = Object(Ve.u)()(Dt((function(e) {
 				const t = t => {
 						t.preventDefault(), e.onConnectAccount(It.a.Twitter)
 					},
@@ -11465,7 +11465,7 @@
 					}))
 				}
 			}
-			var sn = Object(Ve.t)()(nn(rn)),
+			var sn = Object(Ve.u)()(nn(rn)),
 				an = n("./src/reddit/reducers/user/prefs/index.ts"),
 				on = n("./src/reddit/actions/chat/constants.ts"),
 				cn = n("./src/reddit/actions/chat/userSettings.ts"),
@@ -13356,7 +13356,7 @@
 						return !1
 					}
 				}),
-				no = Object(Ve.t)(),
+				no = Object(Ve.u)(),
 				ro = Object(o.b)(to, (e, t) => ({
 					changeTab: t => e(Object(i.b)(`/settings/${t}`)),
 					updatePrefs: t => e(Object(us.F)(t)),
@@ -14004,4 +14004,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.f1ac77c90d24db476aab.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.98f2a01e569a1e0a342d.js.map

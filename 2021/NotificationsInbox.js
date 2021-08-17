@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NotificationsInbox.db6a681bd64dd3d94c34.js
-// Retrieved at 8/16/2021, 2:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationsInbox.557c0cbb24b5c4f74788.js
+// Retrieved at 8/17/2021, 2:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationsInbox"], {
 		"./src/reddit/actions/pages/notificationsInbox.ts": function(e, t, n) {
@@ -624,7 +624,7 @@
 				clearMessageTabBadgeCount: () => e(Object(m.b)()),
 				markAllAsRead: () => e(Object(u.g)())
 			}))(e => s.a.createElement(Y, e));
-			const $ = Object(o.t)();
+			const $ = Object(o.u)();
 			class ee extends s.a.Component {
 				render() {
 					return s.a.createElement(i.a, null, s.a.createElement(c.a, {
@@ -639,4 +639,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsInbox.db6a681bd64dd3d94c34.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsInbox.557c0cbb24b5c4f74788.js.map

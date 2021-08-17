@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.75b5a54dbc7292f6bdc3.js
-// Retrieved at 8/17/2021, 9:50:10 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.59c3338fa3a4fba6fc3c.js
+// Retrieved at 8/17/2021, 2:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -763,9 +763,9 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const g = Object(l.t)(),
+			const g = Object(l.u)(),
 				v = Object(i.c)({
-					isFakeSubreddit: l.x
+					isFakeSubreddit: l.y
 				}),
 				C = Object(o.b)(v),
 				E = e => {
@@ -884,7 +884,7 @@
 				O = s("./src/reddit/components/Comments/Comment/ModToolsFlatlist/RestrictedButton.tsx"),
 				k = s("./src/reddit/components/Comments/Comment/ModToolsFlatlist/index.m.less"),
 				T = s.n(k);
-			const j = Object(b.t)(),
+			const j = Object(b.u)(),
 				P = e => `Distinguish--Dropdown--${e}`,
 				M = Object(a.c)({
 					currentUser: C.j,
@@ -900,11 +900,11 @@
 						const {
 							comment: s
 						} = t;
-						return Object(b.g)(e, t) || Object(g.l)(e, {
+						return Object(b.h)(e, t) || Object(g.l)(e, {
 							subredditId: s.subredditId
 						})
 					},
-					modModeEnabled: b.R
+					modModeEnabled: b.S
 				}),
 				S = Object(i.b)(M, (e, {
 					comment: t
@@ -5051,9 +5051,9 @@
 				w = s.n(I);
 			const {
 				fbt: O
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), k = Object(m.t)(), T = Object(o.b)(() => Object(i.c)({
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), k = Object(m.u)(), T = Object(o.b)(() => Object(i.c)({
 				forceRedditStyle: (e, t) => {
-					const s = Object(m.m)(e, t) || void 0,
+					const s = Object(m.n)(e, t) || void 0,
 						n = t.redditStyle || Object(f.l)(e, {
 							subredditId: s
 						}),
@@ -5061,7 +5061,7 @@
 					return n || r
 				},
 				nigtmode: x.W,
-				subredditId: m.m,
+				subredditId: m.n,
 				topPostVariant: b.d
 			}));
 			class j extends r.a.Component {
@@ -5644,7 +5644,7 @@
 				renderingObjectInfo: e,
 				pageLayer: t
 			}) => {
-				if (e && (Object(r.b)(e) || Object(o.b)(e))) return Object(r.b)(e) ? i.SourceElement.Comment : Object(n.w)(t) ? i.SourceElement.PostDetail : Object(n.F)(t) ? i.SourceElement.ListingPostDetail : void 0
+				if (e && (Object(r.b)(e) || Object(o.b)(e))) return Object(r.b)(e) ? i.SourceElement.Comment : Object(n.x)(t) ? i.SourceElement.PostDetail : Object(n.G)(t) ? i.SourceElement.ListingPostDetail : void 0
 			}
 		},
 		"./src/reddit/helpers/trackers/subredditMentions.ts": function(e, t, s) {
@@ -6184,13 +6184,13 @@
 			}, v.fbt._("Automoderator Config", null, {
 				hk: "2GBjtX"
 			})))), i.a.createElement(P.a, null, i.a.createElement(D, null)));
-			const W = Object(p.t)(),
+			const W = Object(p.u)(),
 				V = Object(d.c)({
 					queryParams: (e, {
 						location: t
 					}) => r()([...Object(c.a)(t.search)])
 				}),
-				U = Object(d.a)(V, p.P, x.m, (e, {
+				U = Object(d.a)(V, p.Q, x.m, (e, {
 					match: t
 				}) => t.params.pageName, ({
 					queryParams: e
@@ -6317,4 +6317,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.75b5a54dbc7292f6bdc3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.59c3338fa3a4fba6fc3c.js.map

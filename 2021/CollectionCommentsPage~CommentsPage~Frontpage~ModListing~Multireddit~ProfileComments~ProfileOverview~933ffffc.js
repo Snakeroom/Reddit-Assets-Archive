@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~933ffffc.b4ad71a728e116e4c48d.js
-// Retrieved at 8/12/2021, 6:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~933ffffc.c1bb41ec56ea20bd7243.js
+// Retrieved at 8/17/2021, 2:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~933ffffc"], {
 		"./src/lib/intersectionObserver/index.ts": function(e, t, s) {
@@ -78,9 +78,9 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const C = Object(c.t)(),
+			const C = Object(c.u)(),
 				v = Object(r.c)({
-					isFakeSubreddit: c.x
+					isFakeSubreddit: c.y
 				}),
 				w = Object(o.b)(v),
 				y = e => {
@@ -194,9 +194,9 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const C = Object(c.t)(),
+			const C = Object(c.u)(),
 				v = Object(r.c)({
-					isFakeSubreddit: c.x
+					isFakeSubreddit: c.y
 				}),
 				w = Object(o.b)(v),
 				y = e => {
@@ -357,9 +357,9 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const O = Object(v.t)(),
+			const O = Object(v.u)(),
 				E = Object(c.c)({
-					isFakeSubreddit: v.x
+					isFakeSubreddit: v.y
 				}),
 				k = Object(d.b)(E),
 				_ = e => {
@@ -1307,8 +1307,8 @@
 				fbt: p
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), u = o.a.a("Link", m.a), b = Object(c.c)({
 				isNavbarLikeMwebEnabled: d.a
-			}), g = Object(r.b)(b), f = Object(l.t)({
-				isFrontpage: l.y
+			}), g = Object(r.b)(b), f = Object(l.u)({
+				isFrontpage: l.z
 			});
 			t.a = f(g(e => e.isNavbarLikeMwebEnabled ? e.isFrontpage ? n.a.createElement(a.a, {
 				className: m.a.Widget,
@@ -1565,7 +1565,7 @@
 					}))
 				}
 			}
-			const _ = Object(C.t)();
+			const _ = Object(C.u)();
 			t.a = _(k)
 		},
 		"./src/reddit/components/Widgets/ThemedWidget/index.m.less": function(e, t, s) {
@@ -1615,9 +1615,9 @@
 				R = s.n(I);
 			const {
 				fbt: S
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), O = Object(h.t)(), E = Object(o.b)(() => Object(r.c)({
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), O = Object(h.u)(), E = Object(o.b)(() => Object(r.c)({
 				forceRedditStyle: (e, t) => {
-					const s = Object(h.m)(e, t) || void 0,
+					const s = Object(h.n)(e, t) || void 0,
 						i = t.redditStyle || Object(g.l)(e, {
 							subredditId: s
 						}),
@@ -1625,7 +1625,7 @@
 					return i || n
 				},
 				nigtmode: f.W,
-				subredditId: h.m,
+				subredditId: h.n,
 				topPostVariant: b.d
 			}));
 			class k extends n.a.Component {
@@ -2157,4 +2157,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~933ffffc.b4ad71a728e116e4c48d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~933ffffc.c1bb41ec56ea20bd7243.js.map

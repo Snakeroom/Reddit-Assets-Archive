@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.e5709fa129b8bf720271.js
-// Retrieved at 8/16/2021, 8:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.c1e1575e7d9728ea702f.js
+// Retrieved at 8/17/2021, 2:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48"], {
 		"./src/reddit/actions/eventPosts/index.ts": function(e, t, s) {
@@ -1526,19 +1526,19 @@
 				fe = e => r.a.createElement("div", pe({}, e, {
 					className: Object(c.a)(le.a.flatlistSeparator, e.className)
 				})),
-				Ce = Object(W.t)({
-					currentProfileName: W.h,
-					isCommentPermalink: W.v,
-					isCommentsPage: W.w,
-					isProfilePostListing: W.J,
+				Ce = Object(W.u)({
+					currentProfileName: W.i,
+					isCommentPermalink: W.w,
+					isCommentsPage: W.x,
+					isProfilePostListing: W.K,
 					pageLayer: e => e
 				}),
 				Oe = Object(a.c)({
 					activeModalId: ce.a,
 					claimedFreeAward: j.b,
-					layout: W.P,
+					layout: W.Q,
 					userIsOp: G.qb,
-					subreddit: W.q
+					subreddit: W.r
 				}),
 				ve = Object(i.b)(Oe, (e, {
 					post: t,
@@ -3036,7 +3036,7 @@
 						userIsOp: s,
 						post: o,
 						pageLayer: n
-					}) => Object(S.C)(e, {
+					}) => Object(S.D)(e, {
 						pageLayer: n
 					}) && t && s && Object(z.ob)(e, {
 						userName: o.author
@@ -4640,4 +4640,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.e5709fa129b8bf720271.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.c1e1575e7d9728ea702f.js.map

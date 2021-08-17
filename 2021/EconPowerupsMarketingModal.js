@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.c08ce430f9ff00f556eb.js
-// Retrieved at 8/16/2021, 12:20:11 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.7fc9883910f60bd7d942.js
+// Retrieved at 8/17/2021, 2:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsMarketingModal"], {
 		"./src/reddit/components/Econ/Common/BenefitTile/index.m.less": function(e, t, s) {
@@ -356,16 +356,16 @@
 			}
 			const {
 				fbt: W
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), T = Object(h.t)(), D = Object(a.c)({
-				currentSubredditId: h.m,
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), T = Object(h.u)(), D = Object(a.c)({
+				currentSubredditId: h.n,
 				powerups: (e, t) => {
-					const s = Object(h.m)(e, t);
+					const s = Object(h.n)(e, t);
 					return s ? Object(k.j)(e, {
 						subredditId: s
 					}) : null
 				},
 				subreddit: (e, t) => {
-					const s = Object(h.m)(e, t);
+					const s = Object(h.n)(e, t);
 					return s ? Object(g.T)(e, {
 						subredditId: s
 					}) : null
@@ -569,4 +569,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.c08ce430f9ff00f556eb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.7fc9883910f60bd7d942.js.map

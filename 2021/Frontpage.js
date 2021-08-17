@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.7f8ad405bde8f3cf0bd2.js
-// Retrieved at 8/16/2021, 8:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.e5825ed6aaf0aab387cf.js
+// Retrieved at 8/17/2021, 2:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -582,7 +582,7 @@
 					var a, c;
 					const d = r();
 					if (d.listings.postOrder.api.pending[e]) return;
-					const l = F.e[Object(R.P)(d, {})];
+					const l = F.e[Object(R.Q)(d, {})];
 					t.isMobile = Object(i.e)(d.meta.userAgent), t.recentPostIds = d.posts.recent, t.layout = l, t.useMockData = !!d.platform.currentPage && (!!d.platform.currentPage.queryParams.useMockData && Object(G.b)(d)), n(ne({
 						key: e
 					})); {
@@ -707,7 +707,7 @@
 									limit: a,
 									sort: c,
 									t: Object(U.a)(c, b),
-									layout: F.e[Object(R.P)(r, {})],
+									layout: F.e[Object(R.Q)(r, {})],
 									useMockData: e
 								}; {
 								const e = r.platform.lastPage,
@@ -2625,7 +2625,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const m = Object(i.t)();
+			const m = Object(i.u)();
 			t.a = m(Object(o.b)((e, {
 				listingName: t,
 				pageLayer: n
@@ -4319,7 +4319,7 @@
 			}
 			const {
 				fbt: Z
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), $ = Object(A.t)(), ee = Object(d.c)({
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), $ = Object(A.u)(), ee = Object(d.c)({
 				queryParams: Object(Q.a)((e, {
 					location: t
 				}) => o()([...Object(u.a)(t.search)])),
@@ -4335,14 +4335,14 @@
 				isCountAnimShadowTestEnabled: R.e,
 				isInTrendingEntrypointExperiment: B.a,
 				isLoggedIn: G.J,
-				isPopular: A.D,
+				isPopular: A.E,
 				isRpanDuVisible: e => Object(W.a)(e, {
 					listingName: K.R
 				}),
 				rpanInjectionIndex: e => Object(W.b)(e, {
 					listingName: K.R
 				}),
-				layout: A.P,
+				layout: A.Q,
 				isInUISimplificationI18NExperiment: U.a
 			}), ne = () => Object(d.a)(q.k, ee, te, e => Object(W.a)(e, {
 				listingName: K.R
@@ -4798,7 +4798,7 @@
 				r = n("./src/reddit/constants/postLayout.ts"),
 				o = n("./src/reddit/contexts/PageLayer/index.tsx"),
 				i = n("./src/reddit/helpers/chooseVariant/index.ts");
-			const a = e => r.e[Object(o.P)(e, {})] === r.d.Card,
+			const a = e => r.e[Object(o.Q)(e, {})] === r.d.Card,
 				c = e => Object(i.c)(e, {
 					experimentEligibilitySelector: a,
 					experimentName: s.N
@@ -4888,4 +4888,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.7f8ad405bde8f3cf0bd2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.e5825ed6aaf0aab387cf.js.map

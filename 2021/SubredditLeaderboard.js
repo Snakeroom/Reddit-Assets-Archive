@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.6885e06222f0d922c2a0.js
-// Retrieved at 8/16/2021, 8:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.07e9f110c6ab5cbe7094.js
+// Retrieved at 8/17/2021, 2:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, n) {
@@ -245,8 +245,8 @@
 				fbt: g
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), p = a.a.a("Link", m.a), h = Object(l.c)({
 				isNavbarLikeMwebEnabled: c.a
-			}), b = Object(i.b)(h), f = Object(d.t)({
-				isFrontpage: d.y
+			}), b = Object(i.b)(h), f = Object(d.u)({
+				isFrontpage: d.z
 			});
 			t.a = f(b(e => e.isNavbarLikeMwebEnabled ? e.isFrontpage ? s.a.createElement(o.a, {
 				className: m.a.Widget,
@@ -516,7 +516,7 @@
 					}))
 				}
 			}
-			const j = Object(y.t)();
+			const j = Object(y.u)();
 			t.a = j(O)
 		},
 		"./src/reddit/components/StructuredStyles/BladeDrawerController/index.m.less": function(e, t, n) {
@@ -1164,9 +1164,9 @@
 				v = n.n(S);
 			const {
 				fbt: N
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), T = Object(u.t)(), w = Object(a.b)(() => Object(i.c)({
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), T = Object(u.u)(), w = Object(a.b)(() => Object(i.c)({
 				forceRedditStyle: (e, t) => {
-					const n = Object(u.m)(e, t) || void 0,
+					const n = Object(u.n)(e, t) || void 0,
 						r = t.redditStyle || Object(b.l)(e, {
 							subredditId: n
 						}),
@@ -1174,7 +1174,7 @@
 					return r || s
 				},
 				nigtmode: f.W,
-				subredditId: u.m,
+				subredditId: u.n,
 				topPostVariant: h.d
 			}));
 			class O extends s.a.Component {
@@ -2035,9 +2035,9 @@
 				}
 			}
 			var q = Object(u.c)(H(Q)),
-				J = n("./node_modules/react-router-dom/esm/react-router-dom.js"),
-				z = n("./src/reddit/components/CategoryPickerWidget/index.m.less"),
-				K = n.n(z);
+				z = n("./node_modules/react-router-dom/esm/react-router-dom.js"),
+				J = n("./src/reddit/components/CategoryPickerWidget/index.m.less"),
+				K = n.n(J);
 
 			function V() {
 				return (V = Object.assign || function(e) {
@@ -2056,7 +2056,7 @@
 					isActive: s,
 					tabIndex: a
 				} = e, o = Object(c.a)(K.a.categoryLink, s && K.a.active, r);
-				return i.a.createElement("li", null, i.a.createElement(J.a, V({}, t.anchorProps, {
+				return i.a.createElement("li", null, i.a.createElement(z.a, V({}, t.anchorProps, {
 					className: o,
 					"data-active": s,
 					onMouseDown: () => e.onSendEventClick(t.name),
@@ -2214,7 +2214,7 @@
 				};
 			var be = n("./src/reddit/selectors/category.ts"),
 				fe = n("./src/reddit/selectors/moderatorPermissions.ts");
-			const ye = Object(p.t)(),
+			const ye = Object(p.u)(),
 				ke = (e, {
 					match: t
 				}) => Object(h.b)(t.params.categoryName || ""),
@@ -2347,4 +2347,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.6885e06222f0d922c2a0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.07e9f110c6ab5cbe7094.js.map
