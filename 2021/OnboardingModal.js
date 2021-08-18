@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OnboardingModal.882c04f37a8eec9d47fe.js
-// Retrieved at 8/17/2021, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OnboardingModal.fae8ab24fe37fb5b8f5c.js
+// Retrieved at 8/18/2021, 11:50:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OnboardingModal"], {
 		"./node_modules/lodash/times.js": function(e, t, n) {
@@ -1138,7 +1138,7 @@
 					}))(e, r)), o.length && i.push(je(t, o)), i.length) try {
 					(await Promise.all(i)).some(({
 						ok: e
-					}) => !e) ? c.ok = !1 : (Object(he.Gb)(), c.reload = !0)
+					}) => !e) ? c.ok = !1 : (Object(he.Jb)(), c.reload = !0)
 				} catch (a) {
 					c.ok = !1
 				}
@@ -1780,4 +1780,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.882c04f37a8eec9d47fe.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.fae8ab24fe37fb5b8f5c.js.map

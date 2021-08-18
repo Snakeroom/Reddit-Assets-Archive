@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.e06d2d5ae4ad1ef02ab3.js
-// Retrieved at 8/18/2021, 10:00:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.db98bb90105838683091.js
+// Retrieved at 8/18/2021, 11:50:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -1423,8 +1423,8 @@
 							action: u.c.Request,
 							source: u.b.Notification
 						})
-					})(s()), Object(c.a)(e, t, () => {
-						n(Object(o.n)()), n(Object(o.m)()), (e => {
+					})(s()), Object(c.b)(e, t, () => {
+						n(Object(o.o)()), n(Object(o.n)()), (e => {
 							Object(d.a)({
 								...h(e),
 								action: u.c.View,
@@ -1432,7 +1432,7 @@
 							})
 						})(s())
 					}, (e, t) => {
-						n(Object(o.k)()), e && (t ? (e => {
+						n(Object(o.l)()), e && (t ? (e => {
 							Object(d.a)({
 								...h(e),
 								action: u.c.Block,
@@ -1446,7 +1446,7 @@
 							})
 						})(s()))
 					}, () => {
-						n(Object(o.l)()), Object(r.b)(l.gqlContext), (e => {
+						n(Object(o.m)()), Object(r.b)(l.gqlContext), (e => {
 							Object(d.a)({
 								...h(e),
 								action: u.c.Allow,
@@ -14125,34 +14125,47 @@
 			"use strict";
 			n.d(t, "a", (function() {
 				return c
+			})), n.d(t, "c", (function() {
+				return o
+			})), n.d(t, "b", (function() {
+				return i
 			}));
 			var s = n("./src/lib/localStorageAvailable/index.ts"),
 				a = n("./src/lib/notifications/constants.ts"),
 				r = n("./src/lib/notifications/featureFlags.ts");
 			n("./src/lib/serviceWorker/index.ts");
-			const c = async (e, t, n, c, o, i) => {
-				if (Object(s.a)()) {
-					const t = localStorage.getItem(a.h),
-						n = (new Date).getTime();
-					if (!e && t && parseInt(t) + a.i > n) return void i();
-					localStorage.setItem(a.h, n.toString())
+			const c = () => {
+					if (Object(r.a)() !== a.c.NotificationsSupported) return a.a.Unsupported;
+					const e = Object(s.a)() && localStorage.getItem(a.f) === a.g;
+					return "granted" === Notification.permission ? a.a.Granted : "denied" === Notification.permission ? a.a.Denied : e ? a.a.Closed : a.a.Default
+				},
+				o = () => !!Object(s.a)() && (localStorage.removeItem(a.f), !0),
+				i = async (e, t, n, r, o, i) => {
+					if (Object(s.a)()) {
+						const t = localStorage.getItem(a.h),
+							n = (new Date).getTime();
+						if (!e && t && parseInt(t) + a.i > n) return void i();
+						localStorage.setItem(a.h, n.toString())
+					}
+					const l = c();
+					if (l !== a.a.Unsupported) {
+						if (!t && l === a.a.Denied) return r(!1, !0), void i();
+						if (!t && l === a.a.Granted) return o(!1), void i();
+						if (t || l !== a.a.Closed) switch (n(), await Notification.requestPermission()) {
+							case "granted":
+								o(!0);
+								break;
+							case "denied":
+								r(!0, !0);
+								break;
+							case "default":
+								i();
+								break;
+							default:
+								r(!0, !1), localStorage.setItem(a.f, a.g)
+						} else i()
+					} else i()
 				}
-				const l = Object(r.a)();
-				if (l === a.c.BrowserUnsupported || l === a.c.LocalStorageUnavailable || l === a.c.NotAllRequiredAPIsSupported) return void i();
-				if ("denied" === Notification.permission) return c(!1, !1), void i();
-				if ("granted" === Notification.permission) return o(!1), void i();
-				const d = localStorage.getItem(a.f);
-				if (t || !d || d !== a.g) switch (n(), await Notification.requestPermission()) {
-					case "granted":
-						o(!0);
-						break;
-					case "denied":
-						c(!0, !0);
-						break;
-					default:
-						c(!0, !1), localStorage.setItem(a.f, a.g)
-				} else i()
-			}
 		},
 		"./src/lib/notifications/token.ts": function(e, t, n) {
 			"use strict";
@@ -14373,4 +14386,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.e06d2d5ae4ad1ef02ab3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.db98bb90105838683091.js.map

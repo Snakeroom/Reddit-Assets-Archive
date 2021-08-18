@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.812e205707dc398a227f.js
-// Retrieved at 8/17/2021, 8:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.d939ef9ae7f3468ab820.js
+// Retrieved at 8/18/2021, 11:50:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -864,7 +864,7 @@
 						O === v.Visible && t !== g.a.Achievements && E(Object(p.h)(y))
 					}, [t, O, E, y]), O === v.Hidden) return null;
 				const C = () => {
-						N(v.Visible), Object(m.ib)(d.a.AVATAR_LISTING_BANNER, !1, l.b)
+						N(v.Visible), Object(m.jb)(d.a.AVATAR_LISTING_BANNER, !1, l.b)
 					},
 					S = () => {
 						E(Object(p.a)(y)), k(Object(c.b)({
@@ -950,7 +950,7 @@
 						[_.a.closeLight]: y
 					}),
 					onClick: () => {
-						N(v.Dismissed), Object(m.ib)(d.a.AVATAR_LISTING_BANNER, !0, l.b), t !== g.a.Achievements && E(Object(p.e)(y))
+						N(v.Dismissed), Object(m.jb)(d.a.AVATAR_LISTING_BANNER, !0, l.b), t !== g.a.Achievements && E(Object(p.e)(y))
 					}
 				}), o.a.createElement("div", {
 					className: _.a.contentWrapper
@@ -1422,13 +1422,13 @@
 					}
 				}
 				async getSubredditForAdoption() {
-					let e = oe.cachedData || Object(Q.z)(G.b.SUBREDDITS_FOR_ADOPTION_STORE) || null;
+					let e = oe.cachedData || Object(Q.A)(G.b.SUBREDDITS_FOR_ADOPTION_STORE) || null;
 					if (!e || Date.now() - e.fetchedAt > se) {
 						const t = await X(this.props.apiContext());
 						t.ok && (e = {
 							subreddits: t.body.data.subreddits.map(e => e.name),
 							fetchedAt: Date.now()
-						}, Object(Q.Bb)(G.b.SUBREDDITS_FOR_ADOPTION_STORE, e))
+						}, Object(Q.Eb)(G.b.SUBREDDITS_FOR_ADOPTION_STORE, e))
 					}
 					return oe.cachedData = e, e ? e.subreddits : []
 				}
@@ -4890,4 +4890,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.812e205707dc398a227f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.d939ef9ae7f3468ab820.js.map

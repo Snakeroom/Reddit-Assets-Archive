@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.2c504e7adbbdf68872b2.js
-// Retrieved at 8/18/2021, 9:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.e6252316c3b542377e03.js
+// Retrieved at 8/18/2021, 11:50:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -4473,7 +4473,7 @@
 			const y = "INCREMENT_SEEN_COUNT_PER_SESS",
 				m = (e, t, r) => async (n, c) => {
 					const d = c(),
-						p = Object(i.y)(),
+						p = Object(i.z)(),
 						y = Date.now(),
 						m = p && y - p < 18e4,
 						_ = Object(b.c)(d, {
@@ -4481,7 +4481,7 @@
 						}),
 						I = d.upvotePromptCountPerSess,
 						g = (() => {
-							const e = Object(i.x)();
+							const e = Object(i.y)();
 							if (!e) return [];
 							const t = Date.now();
 							return e.filter(e => t - e < 864e5)
@@ -4510,7 +4510,7 @@
 						action: "view",
 						noun: l,
 						...Object(u.defaults)(e)
-					}))(d)), Object(i.Ab)(), Object(i.zb)(v), n(O()), r && r()
+					}))(d)), Object(i.Db)(), Object(i.Cb)(v), n(O()), r && r()
 				}, h = e => async (t, r) => {
 					Object(f.a)((e => ({
 						source: l,
@@ -6961,7 +6961,7 @@
 			function o(e, t) {
 				const r = Object(s.useRef)(null);
 				let n;
-				n = Object(a.z)(e);
+				n = Object(a.A)(e);
 				const [o, d] = Object(s.useState)(null != n ? n : t);
 				return Object(s.useEffect)(() => (r.current = c(e, d, t), () => {
 					var e;
@@ -6970,7 +6970,7 @@
 					var e;
 					null === (e = r.current) || void 0 === e || e.emit(o)
 				}, [o]), [o, function(t) {
-					Object(a.Bb)(e, t), d(t)
+					Object(a.Eb)(e, t), d(t)
 				}]
 			}
 		},
@@ -23827,4 +23827,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.2c504e7adbbdf68872b2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.e6252316c3b542377e03.js.map

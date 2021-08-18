@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-MediumPost.d63fe6851944b0830160.js
-// Retrieved at 8/17/2021, 2:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-MediumPost.9499e9c98e0f11b4115f.js
+// Retrieved at 8/18/2021, 11:50:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~reddit-components-MediumPost"], {
 		"./src/lib/constants/specialMembership.ts": function(t, e, n) {
@@ -309,7 +309,7 @@
 				I = Object(i.a)(T),
 				D = t => {
 					const e = Date.now() - t,
-						n = Object(E.G)();
+						n = Object(E.H)();
 					return Object.keys(n).filter(t => n[t].when >= e).map(t => n[t])
 				},
 				L = ({
@@ -326,12 +326,12 @@
 						L = t === T;
 					if (!(t === b.f || t === b.b || L)) return;
 					if (L) return void j(m, e, n)(s, i, l);
-					0 === D(o.nb).length && Object(E.Ib)(!1);
+					0 === D(o.nb).length && Object(E.Lb)(!1);
 					let C = i();
 					if (Object(f.d)(C, {
 							listingKey: e,
 							postId: n
-						}) || Object(f.a)(C).length >= _.a || Object(E.V)() || D(o.z).length >= _.a) return;
+						}) || Object(f.a)(C).length >= _.a || Object(E.W)() || D(o.z).length >= _.a) return;
 					const A = Object(S.w)(C, {
 						listingKey: e,
 						postId: n
@@ -381,14 +381,14 @@
 						postId: n
 					})))) : Object(r.a)(Object(p.c)(R, "no_chaining", m)(C))
 				}, C = "FEED_CHAINING__CHAIN_TOGGLED", A = (Object(i.a)(C), "FEED_CHAINING__CHAINING_TOGGLED"), R = Object(i.a)(A), h = () => async t => {
-					Object(E.Ib)(!0), t(R({
+					Object(E.Lb)(!0), t(R({
 						isDismissed: !0
 					})), t(Object(l.f)(Object(l.e)(s.fbt._("You'll see this less often.", null, {
 						hk: "38LGcQ"
 					}), m.b.Undo, s.fbt._("Undo", null, {
 						hk: "4zFGDk"
 					}), async () => {
-						Object(E.Ib)(!1), t(R({
+						Object(E.Lb)(!1), t(R({
 							isDismissed: !1
 						}))
 					})))
@@ -3056,4 +3056,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-MediumPost.d63fe6851944b0830160.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-MediumPost.9499e9c98e0f11b4115f.js.map
