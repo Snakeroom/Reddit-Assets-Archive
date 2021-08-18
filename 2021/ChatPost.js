@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.5947a85a9d5c4831b016.js
-// Retrieved at 8/17/2021, 2:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.46ec634c2d8565557a07.js
+// Retrieved at 8/18/2021, 11:20:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -367,15 +367,15 @@
 			}, J._("Crowd Control", null, {
 				hk: "4WgEW"
 			}));
-			var Y = n("./src/reddit/components/Comments/Comment/TopMeta/edited.m.less"),
-				X = n.n(Y);
+			var X = n("./src/reddit/components/Comments/Comment/TopMeta/edited.m.less"),
+				Y = n.n(X);
 			const {
 				fbt: Z
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), $ = ({
 				compact: e,
 				editedAt: t
 			}) => a.a.createElement(x.a, {
-				className: X.a.editedText
+				className: Y.a.editedText
 			}, Z._("edited {time}", [Z._param("time", a.a.createElement(H.d, {
 				seconds: t,
 				noPostfix: e,
@@ -1553,8 +1553,8 @@
 			const G = Object(C.a)(q.b),
 				J = Object(C.a)(q.c),
 				Q = Object(C.a)(q.a),
-				Y = Object(C.a)(q.d),
-				X = {},
+				X = Object(C.a)(q.d),
+				Y = {},
 				Z = (e, t, n, s) => async (o, a) => {
 					(e => new Promise(t => {
 						const {
@@ -1579,7 +1579,7 @@
 										c = Object(K.a)(i, {
 											commentId: n
 										}),
-										d = !(!n || !X[n]);
+										d = !(!n || !Y[n]);
 									if (r && !d) {
 										const n = j(0, s, t.payload),
 											a = t.payload.total_comment_count;
@@ -1646,7 +1646,7 @@
 										});
 									s && !s.isDeleted ? o(Q({
 										id: e
-									})) : X[e] = R.DELETE_COMMENT;
+									})) : Y[e] = R.DELETE_COMMENT;
 									break
 								}
 								case R.REMOVE_COMMENT: {
@@ -1660,7 +1660,7 @@
 										c = !!e && !!Object(z.k)(s, {
 											postId: e
 										});
-									!r || r.isRemoved && r.isDeleted || i || c ? X[n] = R.REMOVE_COMMENT : o(Q({
+									!r || r.isRemoved && r.isDeleted || i || c ? Y[n] = R.REMOVE_COMMENT : o(Q({
 										id: n
 									}));
 									break
@@ -1670,7 +1670,7 @@
 											isSystem: !0
 										}),
 										s = !0;
-									n && o(Y({
+									n && o(X({
 										comment: n,
 										commentsPageKey: e,
 										isChatSort: s
@@ -1850,8 +1850,8 @@
 				Ge = n("./src/reddit/components/ReportFlow/index.tsx"),
 				Je = n("./src/reddit/components/ReportFlow/new.tsx"),
 				Qe = n("./src/reddit/components/TrackingHelper/index.tsx"),
-				Ye = n("./src/reddit/icons/svgs/Approve/index.tsx"),
-				Xe = n("./src/reddit/icons/svgs/Edit/index.tsx"),
+				Xe = n("./src/reddit/icons/svgs/Approve/index.tsx"),
+				Ye = n("./src/reddit/icons/svgs/Edit/index.tsx"),
 				Ze = n("./src/reddit/icons/svgs/Flag/index.tsx"),
 				$e = n("./src/reddit/icons/svgs/Hide/index.tsx"),
 				et = n("./src/reddit/icons/svgs/Moderate/index.tsx"),
@@ -1875,8 +1875,8 @@
 			}
 			const lt = ae.a.wrapped($e.a, "BlockIcon", Fe.a),
 				mt = ae.a.wrapped(Ze.a, "FlagIcon", Fe.a),
-				ut = ae.a.wrapped(Xe.a, "EditIcon", Fe.a),
-				pt = ae.a.wrapped(Ye.a, "ApproveIcon", Fe.a),
+				ut = ae.a.wrapped(Ye.a, "EditIcon", Fe.a),
+				pt = ae.a.wrapped(Xe.a, "ApproveIcon", Fe.a),
 				ht = ae.a.wrapped(nt.a, "ReplyIcon", Fe.a),
 				bt = ae.a.wrapped(tt.a, "RemoveIcon", Fe.a),
 				Ct = ae.a.wrapped(st.a, "SpamIcon", Fe.a),
@@ -2187,8 +2187,8 @@
 			const Gt = 250,
 				Jt = 10,
 				Qt = ae.a.wrapped(Bt.b, "ErrorText", qt.a),
-				Yt = ae.a.wrapped(ce.a, "TopMeta", qt.a),
-				Xt = ae.a.span("DeleteText", qt.a),
+				Xt = ae.a.wrapped(ce.a, "TopMeta", qt.a),
+				Yt = ae.a.span("DeleteText", qt.a),
 				Zt = ae.a.wrapped(jt, "Reply", qt.a),
 				$t = Object(Pt.u)(),
 				en = Object(d.b)(() => Object(l.c)({
@@ -2325,7 +2325,7 @@
 						commentsPageKey: o,
 						isEditing: d,
 						comment: s
-					}), I && c.a.createElement(c.a.Fragment, null, c.a.createElement(Yt, {
+					}), I && c.a.createElement(c.a.Fragment, null, c.a.createElement(Xt, {
 						childrenInfo: n,
 						collapsedBecauseCrowdControl: !1,
 						collapsed: !1,
@@ -2399,7 +2399,7 @@
 						[qt.a.Livestreaming]: e || !1
 					}),
 					trash: !0
-				}), c.a.createElement(Xt, null, te.fbt._("deleted", null, {
+				}), c.a.createElement(Yt, null, te.fbt._("deleted", null, {
 					hk: "4rQ3ZP"
 				})));
 			var an = sn,
@@ -2828,7 +2828,7 @@
 				achievementName: "_2RAw7XCPPgNLzOBs-_7Cix",
 				footer: "_18M7nTbpMAhYLhlWT-5tla",
 				scrollGradient: "_2nRTIGjTOu0IHUU0XJ6h9n",
-				gradientHidden: "_3w5lLzB0F6x5aTwB7KfhJv",
+				gradientVisible: "_3IBEob3IfIdXcuzrEz6Kg-",
 				ctaButton: "D7NSPqulzWmB1gE8x95iQ"
 			}
 		},
@@ -2843,7 +2843,7 @@
 		"./src/reddit/components/Econ/AchievementFlair/UserAchievementFlair.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return x
+				return _
 			}));
 			var s = n("./node_modules/react/index.js"),
 				o = n.n(s),
@@ -2852,89 +2852,86 @@
 				i = n("./src/reddit/actions/gold/powerups.ts"),
 				c = n("./src/reddit/controls/Button/index.tsx"),
 				d = n("./src/reddit/helpers/trackers/userFlair.ts"),
-				l = n("./src/reddit/hooks/useTracking.ts"),
-				m = n("./src/reddit/icons/svgs/PowerupTier2/index.tsx"),
-				u = n("./src/reddit/selectors/gold/powerups/achievements.ts"),
-				p = n("./src/reddit/selectors/subreddit.ts"),
-				h = n("./src/reddit/components/Econ/AchievementFlair/AchivementsHoverPopup.m.less"),
-				b = n.n(h);
+				l = n("./src/reddit/hooks/useScrollGradient.ts"),
+				m = n("./src/reddit/hooks/useTracking.ts"),
+				u = n("./src/reddit/icons/svgs/PowerupTier2/index.tsx"),
+				p = n("./src/reddit/selectors/gold/powerups/achievements.ts"),
+				h = n("./src/reddit/selectors/subreddit.ts"),
+				b = n("./src/reddit/components/Econ/AchievementFlair/AchivementsHoverPopup.m.less"),
+				C = n.n(b);
 			const {
-				fbt: C
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), v = ({
+				fbt: v
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), f = ({
 				className: e,
 				subredditId: t,
 				userId: n
 			}) => {
-				const h = Object(a.e)(e => Object(u.b)(e, {
+				const b = Object(a.e)(e => Object(p.b)(e, {
 						subredditId: t,
 						userId: n
 					})),
-					v = Object(a.e)(e => Object(p.T)(e, {
+					f = Object(a.e)(e => Object(h.T)(e, {
 						subredditId: t
 					})),
-					f = Object(a.d)(),
-					g = Object(l.a)(),
-					[x, _] = Object(s.useState)(!1),
-					E = Object(s.useRef)(null),
-					k = () => {
-						const e = E.current;
-						if (!e) return;
-						const t = e.getBoundingClientRect().height,
-							n = Math.ceil(e.scrollTop + t) >= e.scrollHeight;
-						_(n)
-					};
+					g = Object(a.d)(),
+					x = Object(m.a)(),
+					{
+						container: _,
+						isScrollGradientVisible: E,
+						calculateGradientVisibility: k
+					} = Object(l.a)(!1);
 				Object(s.useEffect)(() => {
 					k()
-				}, []);
+				}, [k]);
 				return o.a.createElement("div", {
-					className: Object(r.a)(b.a.container, e)
+					className: Object(r.a)(C.a.container, e)
 				}, o.a.createElement("div", {
-					className: b.a.header
-				}, o.a.createElement(m.a, {
-					className: b.a.powerupsLogo
-				}), C._("{r/community} {=achievements}", [C._param("r/community", v.displayText), C._param("=achievements", o.a.createElement("span", {
-					className: b.a.headerText
-				}, C._("achievements", null, {
+					className: C.a.header
+				}, o.a.createElement(u.a, {
+					className: C.a.powerupsLogo
+				}), v._("{r/community} {=achievements}", [v._param("r/community", f.displayText), v._param("=achievements", o.a.createElement("span", {
+					className: C.a.headerText
+				}, v._("achievements", null, {
 					hk: "1IkAza"
 				})))], {
 					hk: "3GkQD9"
 				})), o.a.createElement("div", {
-					className: b.a.headerDelimiter
+					className: C.a.headerDelimiter
 				}), o.a.createElement("div", {
-					className: b.a.achievements,
+					className: C.a.achievements,
 					onScroll: k,
-					ref: E
-				}, h.map(e => !e.isLocked && o.a.createElement("div", {
-					className: b.a.achievementItem,
+					ref: _
+				}, b.map(e => !e.isLocked && o.a.createElement("div", {
+					className: C.a.achievementItem,
 					key: e.type
 				}, o.a.createElement("div", {
-					className: b.a.achievementImgWrapper
+					className: C.a.achievementImgWrapper
 				}, o.a.createElement("img", {
-					className: b.a.achievementImg,
+					className: C.a.achievementImg,
 					src: e.icon.url,
 					alt: e.name
 				})), o.a.createElement("div", {
-					className: b.a.achievementName
+					className: C.a.achievementName
 				}, o.a.createElement("span", null, e.name))))), o.a.createElement("div", {
-					className: b.a.footer
+					className: C.a.footer
 				}, o.a.createElement("div", {
-					className: Object(r.a)(b.a.scrollGradient, {
-						[b.a.gradientHidden]: x
+					className: Object(r.a)(C.a.scrollGradient, {
+						[C.a.gradientVisible]: E
 					})
 				}), o.a.createElement(c.q, {
 					priority: c.b.Secondary,
-					className: b.a.ctaButton,
+					className: C.a.ctaButton,
 					onClick: () => {
-						g(Object(d.d)()), f(Object(i.e)())
+						x(Object(d.d)()), g(Object(i.e)())
 					},
 					isFullWidth: !0
-				}, C._("View your achievements", null, {
+				}, v._("View your achievements", null, {
 					hk: "2ZyIE3"
 				}))))
 			};
-			var f = n("./src/reddit/components/Econ/AchievementFlair/UserAchievementFlair.m.less"),
-				g = n.n(f);
-			const x = ({
+			var g = n("./src/reddit/components/Econ/AchievementFlair/UserAchievementFlair.m.less"),
+				x = n.n(g);
+			const _ = ({
 					className: e,
 					subredditId: t,
 					userId: n,
@@ -2942,25 +2939,25 @@
 					onHover: c
 				}) => {
 					var d;
-					const l = Object(a.e)(e => Object(u.d)(e, {
+					const l = Object(a.e)(e => Object(p.d)(e, {
 							subredditId: t,
 							userId: n
 						})),
-						m = Object(a.e)(e => Object(u.e)(e, {
+						m = Object(a.e)(e => Object(p.e)(e, {
 							subredditId: t,
 							userId: n
 						})),
-						p = null === (d = Object(a.e)(e => Object(u.c)(e, {
+						u = null === (d = Object(a.e)(e => Object(p.c)(e, {
 							subredditId: t,
 							userId: n
 						}))) || void 0 === d ? void 0 : d.achievementTypes,
 						[h, b] = Object(s.useState)(!1);
-					if (!(!!l || !!m) || !p) return null;
+					if (!(!!l || !!m) || !u) return null;
 					const C = (null == m ? void 0 : m.type) === (null == l ? void 0 : l.type) ? null : m,
-						f = 1 + (C ? 1 : 0),
-						x = (null == p ? void 0 : p.length) - f;
+						v = 1 + (C ? 1 : 0),
+						g = (null == u ? void 0 : u.length) - v;
 					return o.a.createElement("span", {
-						className: Object(r.a)(g.a.container, e),
+						className: Object(r.a)(x.a.container, e),
 						"data-testid": "achievement-flairs",
 						onMouseEnter: () => {
 							i && (b(!0), null == c || c())
@@ -2968,23 +2965,23 @@
 						onMouseLeave: () => {
 							b(!1)
 						}
-					}, o.a.createElement(_, {
+					}, o.a.createElement(E, {
 						achievement: C
-					}), o.a.createElement(_, {
+					}), o.a.createElement(E, {
 						achievement: l
-					}), !!x && o.a.createElement("span", {
-						className: g.a.hiddenAchievementsCount
-					}, "+", x), i && h && o.a.createElement(v, {
-						className: g.a.hoverPopup,
+					}), !!g && o.a.createElement("span", {
+						className: x.a.hiddenAchievementsCount
+					}, "+", g), i && h && o.a.createElement(f, {
+						className: x.a.hoverPopup,
 						subredditId: t,
 						userId: n
 					}))
 				},
-				_ = ({
+				E = ({
 					achievement: e
 				}) => e ? o.a.createElement("img", {
 					alt: e.name,
-					className: g.a.icon,
+					className: x.a.icon,
 					src: e.icon.url
 				}) : null
 		},
@@ -3174,6 +3171,28 @@
 		"./src/reddit/helpers/showReportIndicator/index.ts": function(e, t, n) {
 			"use strict";
 			t.a = e => !e.ignoreReports && (e.numReports || 0) > 0
+		},
+		"./src/reddit/hooks/useScrollGradient.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "a", (function() {
+				return o
+			}));
+			var s = n("./node_modules/react/index.js");
+
+			function o(e) {
+				const [t, n] = Object(s.useState)(e), o = Object(s.useRef)(null);
+				return {
+					container: o,
+					isScrollGradientVisible: t,
+					calculateGradientVisibility: () => {
+						const e = o.current;
+						if (!e) return;
+						const t = e.getBoundingClientRect().height,
+							s = Math.ceil(e.scrollTop + t) >= e.scrollHeight;
+						n(!s)
+					}
+				}
+			}
 		},
 		"./src/reddit/icons/fonts/Approve/index.tsx": function(e, t, n) {
 			"use strict";
@@ -3561,4 +3580,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.5947a85a9d5c4831b016.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.46ec634c2d8565557a07.js.map
