@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.98c7d997882bf8b372ae.js
-// Retrieved at 8/18/2021, 1:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.81d12c1ae888b00ffeeb.js
+// Retrieved at 8/18/2021, 1:30:05 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var n, a, r = o[0], s = o[1], c = o[2], l = 0, P = []; l < r.length; l++) a = r[l], Object.prototype.hasOwnProperty.call(d, a) && d[a] && P.push(d[a][0]), d[a] = 0;
@@ -697,7 +697,7 @@
 					"translations/pt_BR-json": "31d6cfe0d16ae931b73c",
 					"translations/pt_PT-json": "31d6cfe0d16ae931b73c",
 					"vendors~AdminPanel": "31d6cfe0d16ae931b73c",
-					AdminPanel: "3bcb0a4987fa43484932",
+					AdminPanel: "2efa4ffa247f28c1dc59",
 					"vendors~ChatMessageInput~CommentRichUnit~FlairEdit~MembershipPaywallPage~PostCreation~PostRichUnit~R~9deab1a0": "31d6cfe0d16ae931b73c",
 					"ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor": "80ce6567dcf09f858df1",
 					MembershipPaywallPage: "a2e25b5aa807ba5396bc",
@@ -1320,13 +1320,13 @@
 						"translations/es_MX-json": "ce0b7c47eab6eb46c9cd",
 						"translations/fr_FR-json": "f89959013d4ca25cacea",
 						"translations/it_IT-json": "fe18aad9c25d8f79c407",
-						"translations/pseudo_ext-json": "a4e93383b590cabefe8a",
+						"translations/pseudo_ext-json": "271c3efe7c1f8ed9dfa9",
 						"translations/pseudo_long-json": "c5e67bab20c0ee29e58f",
 						"translations/pseudo_short-json": "7186741fa505462e18de",
 						"translations/pt_BR-json": "a14e0ab751106807e573",
 						"translations/pt_PT-json": "422bc86277055d6b705e",
 						"vendors~AdminPanel": "a5bc90ca020df1ed6380",
-						AdminPanel: "91f9acff7401214b34a5",
+						AdminPanel: "60bd9c6317b7ad905b2b",
 						"vendors~ChatMessageInput~CommentRichUnit~FlairEdit~MembershipPaywallPage~PostCreation~PostRichUnit~R~9deab1a0": "d4d1e0ef95d4318ae4e8",
 						"ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor": "6d93a14fc19495b0e646",
 						MembershipPaywallPage: "7c35d79483617137922a",
@@ -1570,4 +1570,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.98c7d997882bf8b372ae.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.81d12c1ae888b00ffeeb.js.map
