@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.f56ae6e140e4b531579e.js
-// Retrieved at 8/18/2021, 1:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.84ee257435e3bad92c1a.js
+// Retrieved at 8/18/2021, 3:51:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -2110,69 +2110,62 @@
 				c = s("./src/reddit/actions/tooltip.ts"),
 				d = s("./src/reddit/components/InfoTextTooltip/index.tsx"),
 				l = s("./src/reddit/components/TrackingHelper/index.tsx"),
-				m = s("./src/reddit/constants/experiments.ts"),
-				u = s("./src/reddit/controls/Button/index.tsx"),
-				p = s("./src/reddit/helpers/getSrCreationEntrypointCopy.ts"),
-				h = s("./src/reddit/helpers/overlay/index.ts"),
-				b = s("./src/reddit/helpers/trackers/subredditCreation.ts"),
-				C = s("./src/reddit/selectors/experiments/srCreationEntrypoints.ts"),
-				x = s("./src/reddit/selectors/user.ts"),
-				f = s("./src/reddit/components/CreateCommunityButton/index.m.less"),
-				g = s.n(f),
-				v = s("./src/lib/lessComponent.tsx");
-			const y = "create-community-button",
-				O = v.a.wrapped(d.c, "StyledTooltip", g.a),
-				E = Object(i.c)({
-					isInSrCreationEntrypointBehaviorExperiment: C.a,
-					isInSrCreationEntrypointCopyExperiment: C.b,
-					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(x.hb)(e),
-					userIsSuspended: x.P
+				m = s("./src/reddit/controls/Button/index.tsx"),
+				u = s("./src/reddit/helpers/overlay/index.ts"),
+				p = s("./src/reddit/helpers/trackers/subredditCreation.ts"),
+				h = s("./src/reddit/selectors/user.ts"),
+				b = s("./src/reddit/components/CreateCommunityButton/index.m.less"),
+				C = s.n(b),
+				x = s("./src/lib/lessComponent.tsx");
+			const f = "create-community-button",
+				g = x.a.wrapped(d.c, "StyledTooltip", C.a),
+				v = Object(i.c)({
+					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(h.hb)(e),
+					userIsSuspended: h.P
 				});
-			t.a = Object(o.b)(E, (e, {
+			t.a = Object(o.b)(v, (e, {
 				eventSource: t
 			}) => ({
 				openCommunityCreation: s => {
-					s(Object(b.c)(t)), e(Object(h.a)("/subreddits/create"))
+					s(Object(p.c)(t)), e(Object(u.a)("/subreddits/create"))
 				},
 				onShowTooltip: () => e(Object(c.f)({
-					tooltipId: y
+					tooltipId: f
 				})),
 				onHideTooltip: () => e(Object(c.i)())
 			}))(Object(l.c)(({
 				className: e,
 				eventSource: t,
-				isInSrCreationEntrypointBehaviorExperiment: s,
-				isInSrCreationEntrypointCopyExperiment: n,
-				onShowTooltip: o,
-				onHideTooltip: i,
-				openCommunityCreation: c,
-				sendEvent: d,
-				userDoesNotHaveEnoughExpToCreateCommunity: l,
-				userIsSuspended: h,
-				onClick: b
+				onShowTooltip: s,
+				onHideTooltip: n,
+				openCommunityCreation: o,
+				sendEvent: i,
+				userDoesNotHaveEnoughExpToCreateCommunity: c,
+				userIsSuspended: d,
+				onClick: l
 			}) => {
-				return a.a.createElement(u.q, {
+				return a.a.createElement(m.q, {
 					className: e,
-					disabled: h || l,
+					disabled: d || c,
 					onClick: e => {
-						b && b(e), s === m.Ld.Tabs ? window.open("/subreddits/create", "_blank") : c(d)
+						l && l(e), o(i)
 					},
-					onMouseEnter: o,
-					onMouseLeave: i,
-					priority: u.b.Secondary,
-					id: y,
+					onMouseEnter: s,
+					onMouseLeave: n,
+					priority: m.b.Secondary,
+					id: f,
 					isFullWidth: !0
-				}, Object(p.a)(n, r.fbt._("Create Community", null, {
+				}, r.fbt._("Create Community", null, {
 					hk: "28v7Qq"
-				})), l ? a.a.createElement(O, {
+				}), c ? a.a.createElement(g, {
 					caretOnTop: !0,
-					tooltipId: y,
+					tooltipId: f,
 					text: r.fbt._("To prevent spam, accounts must be at least 30 days old and have enough positive karma to create communities.", null, {
 						hk: "2R1OXu"
 					})
-				}) : h ? a.a.createElement(O, {
+				}) : d ? a.a.createElement(g, {
 					caretOnTop: !0,
-					tooltipId: y,
+					tooltipId: f,
 					text: r.fbt._("Accounts banned from the site can not create communities until the ban is lifted.", null, {
 						hk: "2xBDEw"
 					})
@@ -11314,4 +11307,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.f56ae6e140e4b531579e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.84ee257435e3bad92c1a.js.map

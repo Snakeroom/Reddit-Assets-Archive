@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditCreation.f18914d3c48b7d8d780b.js
-// Retrieved at 8/18/2021, 1:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditCreation.85556cd947891c84eb3b.js
+// Retrieved at 8/18/2021, 3:51:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditCreation"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -1962,6 +1962,7 @@
 							onMouseLeave: o,
 							className: z.a.info
 						}, r.a.createElement(K, null), r.a.createElement(U, {
+							className: z.a.StyledTooltip,
 							caretOnTop: !0,
 							tooltipId: Y,
 							text: a.fbt._('Names cannot have spaces (e.g., "r/bookclub" not "r/book club"), must be between 3-21 characters, and underscores ("_") are the only special characters allowed. Avoid using solely trademarked names (e.g., "r/FansOfAcme" not "r/Acme").', null, {
@@ -2048,9 +2049,9 @@
 					experimentEligibilitySelector: s.a,
 					experimentName: a.cc
 				});
-				return !(!t || Object(a.he)(t))
+				return !(!t || Object(a.de)(t))
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.f18914d3c48b7d8d780b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.85556cd947891c84eb3b.js.map

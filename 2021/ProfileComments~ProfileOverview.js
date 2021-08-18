@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview.4602351c977f3e281f7e.js
-// Retrieved at 8/18/2021, 1:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview.4e56f87cd350f77cc102.js
+// Retrieved at 8/18/2021, 3:51:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments~ProfileOverview", "reddit-components-ContentGate"], {
 		"./node_modules/linkify-it/index.js": function(e, t, n) {
@@ -405,8 +405,8 @@
 				}))),
 				C = n("./src/reddit/components/RawHTMLDisplay/index.tsx"),
 				E = n("./src/reddit/components/RichTextJson/index.tsx"),
-				S = n("./node_modules/lodash/flatMap.js"),
-				D = n.n(S),
+				D = n("./node_modules/lodash/flatMap.js"),
+				S = n.n(D),
 				O = n("./src/lib/linkMatchers/index.ts"),
 				j = n("./src/lib/linkMatchers/customLinks.ts"),
 				F = n("./src/reddit/controls/OutboundLink/index.tsx");
@@ -423,7 +423,7 @@
 				};
 			var L = o.a.memo(e => {
 					let t = [e.text];
-					return e.parseMdLinks && (t = D()(t, N)), e.parseRegularLinks && (t = D()(t, e => Array.isArray(e) ? [e] : (e => {
+					return e.parseMdLinks && (t = S()(t, N)), e.parseRegularLinks && (t = S()(t, e => Array.isArray(e) ? [e] : (e => {
 						const t = O.f.add(j.g.subreddit.prefix, j.g.subreddit.config).match(e);
 						if (!t) return [e];
 						const n = [];
@@ -783,69 +783,62 @@
 				l = n("./src/reddit/actions/tooltip.ts"),
 				c = n("./src/reddit/components/InfoTextTooltip/index.tsx"),
 				u = n("./src/reddit/components/TrackingHelper/index.tsx"),
-				d = n("./src/reddit/constants/experiments.ts"),
-				m = n("./src/reddit/controls/Button/index.tsx"),
-				p = n("./src/reddit/helpers/getSrCreationEntrypointCopy.ts"),
-				h = n("./src/reddit/helpers/overlay/index.ts"),
-				_ = n("./src/reddit/helpers/trackers/subredditCreation.ts"),
-				b = n("./src/reddit/selectors/experiments/srCreationEntrypoints.ts"),
-				f = n("./src/reddit/selectors/user.ts"),
-				g = n("./src/reddit/components/CreateCommunityButton/index.m.less"),
-				y = n.n(g),
-				k = n("./src/lib/lessComponent.tsx");
-			const w = "create-community-button",
-				x = k.a.wrapped(c.c, "StyledTooltip", y.a),
-				v = Object(i.c)({
-					isInSrCreationEntrypointBehaviorExperiment: b.a,
-					isInSrCreationEntrypointCopyExperiment: b.b,
-					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(f.hb)(e),
-					userIsSuspended: f.P
+				d = n("./src/reddit/controls/Button/index.tsx"),
+				m = n("./src/reddit/helpers/overlay/index.ts"),
+				p = n("./src/reddit/helpers/trackers/subredditCreation.ts"),
+				h = n("./src/reddit/selectors/user.ts"),
+				_ = n("./src/reddit/components/CreateCommunityButton/index.m.less"),
+				b = n.n(_),
+				f = n("./src/lib/lessComponent.tsx");
+			const g = "create-community-button",
+				y = f.a.wrapped(c.c, "StyledTooltip", b.a),
+				k = Object(i.c)({
+					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(h.hb)(e),
+					userIsSuspended: h.P
 				});
-			t.a = Object(s.b)(v, (e, {
+			t.a = Object(s.b)(k, (e, {
 				eventSource: t
 			}) => ({
 				openCommunityCreation: n => {
-					n(Object(_.c)(t)), e(Object(h.a)("/subreddits/create"))
+					n(Object(p.c)(t)), e(Object(m.a)("/subreddits/create"))
 				},
 				onShowTooltip: () => e(Object(l.f)({
-					tooltipId: w
+					tooltipId: g
 				})),
 				onHideTooltip: () => e(Object(l.i)())
 			}))(Object(u.c)(({
 				className: e,
 				eventSource: t,
-				isInSrCreationEntrypointBehaviorExperiment: n,
-				isInSrCreationEntrypointCopyExperiment: a,
-				onShowTooltip: s,
-				onHideTooltip: i,
-				openCommunityCreation: l,
-				sendEvent: c,
-				userDoesNotHaveEnoughExpToCreateCommunity: u,
-				userIsSuspended: h,
-				onClick: _
+				onShowTooltip: n,
+				onHideTooltip: a,
+				openCommunityCreation: s,
+				sendEvent: i,
+				userDoesNotHaveEnoughExpToCreateCommunity: l,
+				userIsSuspended: c,
+				onClick: u
 			}) => {
-				return o.a.createElement(m.q, {
+				return o.a.createElement(d.q, {
 					className: e,
-					disabled: h || u,
+					disabled: c || l,
 					onClick: e => {
-						_ && _(e), n === d.Ld.Tabs ? window.open("/subreddits/create", "_blank") : l(c)
+						u && u(e), s(i)
 					},
-					onMouseEnter: s,
-					onMouseLeave: i,
-					priority: m.b.Secondary,
-					id: w,
+					onMouseEnter: n,
+					onMouseLeave: a,
+					priority: d.b.Secondary,
+					id: g,
 					isFullWidth: !0
-				}, Object(p.a)(a, r.fbt._("Create Community", null, {
+				}, r.fbt._("Create Community", null, {
 					hk: "28v7Qq"
-				})), u ? o.a.createElement(x, {
+				}), l ? o.a.createElement(y, {
 					caretOnTop: !0,
-					tooltipId: w,
+					tooltipId: g,
 					text: r.fbt._("To prevent spam, accounts must be at least 30 days old and have enough positive karma to create communities.", null, {
 						hk: "2R1OXu"
 					})
-				}) : h ? o.a.createElement(x, {
+				}) : c ? o.a.createElement(y, {
 					caretOnTop: !0,
-					tooltipId: w,
+					tooltipId: g,
 					text: r.fbt._("Accounts banned from the site can not create communities until the ban is lifted.", null, {
 						hk: "2xBDEw"
 					})
@@ -921,8 +914,8 @@
 				}).apply(this, arguments)
 			}
 			const E = "view--layout--FUE",
-				S = "LayoutSwitch--picker",
-				D = Object(l.a)(f.a),
+				D = "LayoutSwitch--picker",
+				S = Object(l.a)(f.a),
 				O = {
 					[h.d.Card]: function(e) {
 						return o.a.createElement(y.a, C({}, e, {
@@ -956,14 +949,14 @@
 				},
 				F = Object(_.u)(),
 				z = Object(i.c)({
-					dropdownIsOpen: Object(w.b)(S),
+					dropdownIsOpen: Object(w.b)(D),
 					postLayout: _.Q,
 					redditStyle: _.C
 				}),
 				N = Object(s.b)(z, e => ({
 					onListingLayoutChange: (t, n) => e(Object(d.v)(t, n)),
 					openDropdown: () => e(Object(m.h)({
-						tooltipId: S
+						tooltipId: D
 					}))
 				}));
 			class L extends o.a.Component {
@@ -1009,14 +1002,14 @@
 						const {
 							dropdownIsOpen: t
 						} = this.props;
-						return o.a.createElement(D, C({}, e, {
+						return o.a.createElement(S, C({}, e, {
 							className: v.a.Dropdown,
 							isOpen: t,
 							renderContentsHidden: !0,
 							rowClassName: v.a.DropdownRow,
 							rowIconClassName: v.a.DropdownRowIcon,
 							rowSelectedClassName: v.a.DropdownRowSelected,
-							tooltipId: S
+							tooltipId: D
 						}), this.renderItem(h.d.Card), this.renderItem(h.d.Classic), this.renderItem(h.d.Compact))
 					}
 				}
@@ -1034,7 +1027,7 @@
 						className: v.a.DropdownContainer,
 						onClick: n
 					}, this.renderItem(a, {
-						id: S,
+						id: D,
 						showDropdownTriangle: !0,
 						forceIconFill: !1
 					}), o.a.createElement(b.a.Consumer, null, this.renderDropdown)))
@@ -1109,8 +1102,8 @@
 				v = n("./src/reddit/controls/Dropdown/Row.tsx"),
 				C = n("./src/reddit/helpers/path/index.ts"),
 				E = n("./src/reddit/helpers/trackers/navigation.ts"),
-				S = n("./src/reddit/icons/svgs/Dropdown/index.tsx"),
-				D = n("./src/reddit/selectors/experiments/bestSortPopular.ts"),
+				D = n("./src/reddit/icons/svgs/Dropdown/index.tsx"),
+				S = n("./src/reddit/selectors/experiments/bestSortPopular.ts"),
 				O = n("./src/reddit/selectors/experiments/econLeaderboards.ts"),
 				j = n("./src/reddit/selectors/tooltip.ts"),
 				F = n("./src/reddit/selectors/user.ts"),
@@ -1131,7 +1124,7 @@
 			const B = "ListingSort--SortPicker",
 				T = Object(y.a)(P.a.wrapped(x.a, "Dropdown", L.a)),
 				I = P.a.wrapped(z.a, "ListingSortIcon", L.a),
-				R = (P.a.wrapped(S.b, "DropdownTriangle", L.a), P.a.div("Title", L.a)),
+				R = (P.a.wrapped(D.b, "DropdownTriangle", L.a), P.a.div("Title", L.a)),
 				U = P.a.wrapped(e => a.a.createElement(v.b, A({}, e, {
 					noHover: !0,
 					isSelected: !1
@@ -1152,7 +1145,7 @@
 				}),
 				M = Object(b.c)({
 					isAwardListingExperimentEnabled: O.a,
-					isBestSortPopularEnabled: D.a,
+					isBestSortPopularEnabled: S.a,
 					user: F.j,
 					dropdownIsOpen: (e, t) => Object(j.b)(t.dropdownId || B)(e),
 					isPopularPage: u.E
@@ -1648,10 +1641,10 @@
 				},
 				Ce = P.a.div("ListingSortContainer", ke.a),
 				Ee = Object(u.u)(),
-				Se = Object(b.c)({
+				De = Object(b.c)({
 					dropdownIsOpen: Object(j.b)("TimeSort--SortPicker")
 				});
-			var De = Ee(Object(o.b)(Se, e => ({
+			var Se = Ee(Object(o.b)(De, e => ({
 					onOpenDropdown: () => e(Object(f.h)({
 						tooltipId: "TimeSort--SortPicker"
 					}))
@@ -1703,7 +1696,7 @@
 					isProfilePage: u.I,
 					pageLayer: e => e
 				}),
-				Re = Object(b.a)((e, t) => t.sortOptions, (e, t) => t.isFrontpage, D.a, F.j, u.E, O.a, ze.i, (e, t, n, r, a, o, s) => {
+				Re = Object(b.a)((e, t) => t.sortOptions, (e, t) => t.isFrontpage, S.a, F.j, u.E, O.a, ze.i, (e, t, n, r, a, o, s) => {
 					if (e) return {
 						isPopularPage: a,
 						sortOptions: e,
@@ -1799,7 +1792,7 @@
 						showTitle: !1
 					})), a.a.createElement("div", {
 						className: Object(s.a)(Le.a.SortButtons, e)
-					}, u.map(this.renderSort)), c && this.renderSort(r), l && a.a.createElement(De, {
+					}, u.map(this.renderSort)), c && this.renderSort(r), l && a.a.createElement(Se, {
 						baseUrl: this.getSortUrl(r),
 						buttonClassName: Le.a.DropdownButton,
 						className: Le.a.TimeSort,
@@ -2037,7 +2030,7 @@
 				}), e => ({
 					openPost: t => e(Object(h.K)(t))
 				}));
-			class S extends s.a.Component {
+			class D extends s.a.Component {
 				render() {
 					const {
 						comment: e,
@@ -2050,7 +2043,7 @@
 						isNightmodeOn: c,
 						profileName: d,
 						showModTools: p
-					} = this.props, h = d === e.author ? D : O;
+					} = this.props, h = d === e.author ? S : O;
 					return s.a.createElement(m.a, {
 						comment: e,
 						onClick: (e, t) => {
@@ -2074,7 +2067,7 @@
 					})), s.a.createElement(x, null, h(t, d, p))))
 				}
 			}
-			const D = (e, t, n) => s.a.createElement(w, null, O(e, t, n, !0, !0)),
+			const S = (e, t, n) => s.a.createElement(w, null, O(e, t, n, !0, !0)),
 				O = (e, t, n, r = !1, a) => s.a.createElement(p.a, {
 					commentId: e,
 					commentsPageKey: "profileOverviewPageKey",
@@ -2082,7 +2075,7 @@
 					showModTools: n,
 					isExpanded: !!a
 				});
-			t.a = E(S)
+			t.a = E(D)
 		},
 		"./src/reddit/components/StateSort/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -2257,4 +2250,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview.4602351c977f3e281f7e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview.4e56f87cd350f77cc102.js.map

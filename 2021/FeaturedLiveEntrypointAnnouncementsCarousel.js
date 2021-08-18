@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.bff56b19b28d248c4537.js
-// Retrieved at 8/18/2021, 1:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.9757c3281b20c39b880a.js
+// Retrieved at 8/18/2021, 3:51:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FeaturedLiveEntrypointAnnouncementsCarousel"], {
 		"./src/reddit/components/FeaturedLiveEntrypoint/AnnouncementsCarousel/index.m.less": function(e, n, t) {
@@ -63,8 +63,8 @@
 				v = t("./src/lib/constants/index.ts"),
 				A = t("./src/reddit/constants/cookie.ts"),
 				p = t("./src/reddit/constants/experiments.ts"),
-				h = t("./src/reddit/helpers/localStorage/index.ts"),
-				_ = t("./src/reddit/selectors/telemetry.ts");
+				_ = t("./src/reddit/helpers/localStorage/index.ts"),
+				h = t("./src/reddit/selectors/telemetry.ts");
 			const x = (e, {
 					id: n,
 					title: t,
@@ -82,13 +82,13 @@
 						title: "function" == typeof t ? t() : t,
 						body: "function" == typeof s ? s() : s || ""
 					},
-					...Object(_.defaults)(a)
+					...Object(h.defaults)(a)
 				}),
 				O = e => n => ({
 					source: "announcement",
 					action: e,
 					noun: "announcement",
-					...Object(_.defaults)(n)
+					...Object(h.defaults)(n)
 				});
 			var j = t("./src/reddit/hooks/useTracking.ts"),
 				C = t("./src/reddit/selectors/experiments/index.ts");
@@ -102,7 +102,7 @@
 				g = (e, n) => t => {
 					if (t.experimentName) {
 						const n = e[t.experimentName.toLowerCase()];
-						if (n && Object(p.he)(n.variant)) return !1
+						if (n && Object(p.de)(n.variant)) return !1
 					}
 					return !((n[t.id] || 0) >= t.maxImpressionsCount)
 				};
@@ -162,7 +162,7 @@
 					[t, r] = Object(a.useState)([]),
 					[d, u] = Object(a.useState)(!n),
 					[m, v] = Object(a.useState)(!0),
-					[p, _] = Object(a.useState)(0);
+					[p, h] = Object(a.useState)(0);
 				(({
 					announcements: e,
 					setActiveIndex: n,
@@ -173,7 +173,7 @@
 				}) => {
 					const r = Object(i.e)(C.a);
 					Object(a.useEffect)(() => {
-						const a = Object(h.f)(),
+						const a = Object(_.f)(),
 							i = e.filter(g(r, a)).slice(0, 5),
 							l = [...i].sort((e => (n, t) => (e[n.id] || 0) - (e[t.id] || 0))(a))[0],
 							d = i.length ? A.i.Yes : A.i.No;
@@ -181,7 +181,7 @@
 					}, [])
 				})({
 					announcements: e,
-					setActiveIndex: _,
+					setActiveIndex: h,
 					isHidden: d,
 					setVisibleAnnouncements: r,
 					visibleAnnouncements: t,
@@ -209,7 +209,7 @@
 				})({
 					activeIndex: p,
 					visibleAnnouncements: t,
-					setActiveIndex: _
+					setActiveIndex: h
 				}), D = (({
 					setIsHidden: e,
 					visibleAnnouncements: n
@@ -221,7 +221,7 @@
 								id: n,
 								maxImpressionsCount: t
 							} = e;
-							Object(h.ib)(n, t)
+							Object(_.ib)(n, t)
 						}), t(O("dismiss_all")), E(A.i.No)
 					}, [n, t, e])
 				})({
@@ -238,7 +238,7 @@
 					}, [e, s, n, t])
 				})({
 					activeIndex: p,
-					setActiveIndex: _,
+					setActiveIndex: h,
 					visibleAnnouncements: t
 				});
 				return (({
@@ -251,14 +251,14 @@
 					Object(a.useEffect)(() => {
 						if (e < 0 || e >= t.length) return void n(0);
 						const a = t[e],
-							i = Object(h.e)(a.id);
-						s(x("view", a)), Object(h.ib)(a.id, i + 1);
-						const c = Object(h.f)();
+							i = Object(_.e)(a.id);
+						s(x("view", a)), Object(_.ib)(a.id, i + 1);
+						const c = Object(_.f)();
 						t.filter(g(o, c)).length || E(A.i.No)
 					}, [e, o, s, n, t])
 				})({
 					activeIndex: p,
-					setActiveIndex: _,
+					setActiveIndex: h,
 					visibleAnnouncements: t
 				}), d ? null : o.a.createElement("div", {
 					className: f.a.Container
@@ -305,7 +305,7 @@
 				})), t.length > 1 ? o.a.createElement("div", {
 					className: f.a.Dots
 				}, t.map((e, n) => o.a.createElement("button", {
-					onClick: () => _(n),
+					onClick: () => h(n),
 					key: `announcement-carousel-dot-${n}`,
 					className: Object(c.a)(f.a.Dot, {
 						[f.a.isSelected]: n === p
@@ -317,4 +317,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.bff56b19b28d248c4537.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.9757c3281b20c39b880a.js.map

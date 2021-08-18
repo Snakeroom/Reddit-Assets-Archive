@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.0dde5feb76317f091d3d.js
-// Retrieved at 8/18/2021, 3:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.65d078b17515db609e92.js
+// Retrieved at 8/18/2021, 3:51:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -22464,6 +22464,7 @@
 							onMouseLeave: i,
 							className: q.a.info
 						}, o.a.createElement(Q, null), o.a.createElement(Y, {
+							className: q.a.StyledTooltip,
 							caretOnTop: !0,
 							tooltipId: X,
 							text: n.fbt._('Names cannot have spaces (e.g., "r/bookclub" not "r/book club"), must be between 3-21 characters, and underscores ("_") are the only special characters allowed. Avoid using solely trademarked names (e.g., "r/FansOfAcme" not "r/Acme").', null, {
@@ -22550,7 +22551,7 @@
 					experimentEligibilitySelector: a.a,
 					experimentName: n.cc
 				});
-				return !(!t || Object(n.he)(t))
+				return !(!t || Object(n.de)(t))
 			}
 		},
 		"./src/reddit/selectors/showPromotedCTA.ts": function(e, t, s) {
@@ -22692,4 +22693,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.0dde5feb76317f091d3d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.65d078b17515db609e92.js.map

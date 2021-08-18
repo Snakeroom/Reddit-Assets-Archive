@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.c08659ca0bc63c0ce3fe.js
-// Retrieved at 8/18/2021, 1:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.07db458312954eaee601.js
+// Retrieved at 8/18/2021, 3:51:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceReleaseNotesModal"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -768,17 +768,17 @@
 					hk: "2uULSy"
 				})))
 			}
-			var M = n("./src/reddit/components/Governance/ReleaseNotesModal/SlideIndicator/index.m.less"),
-				L = n.n(M);
+			var L = n("./src/reddit/components/Governance/ReleaseNotesModal/SlideIndicator/index.m.less"),
+				M = n.n(L);
 
 			function R(e) {
 				return o.a.createElement("div", {
-					className: Object(p.a)(L.a.container, e.className)
+					className: Object(p.a)(M.a.container, e.className)
 				}, Array.from({
 					length: e.totalSlides
 				}).map((t, n) => o.a.createElement("div", {
-					className: Object(p.a)(L.a.dot, {
-						[L.a.dotSelected]: n === e.currentSlide
+					className: Object(p.a)(M.a.dot, {
+						[M.a.dotSelected]: n === e.currentSlide
 					})
 				})))
 			}
@@ -1044,12 +1044,12 @@
 					onClick: () => {
 						e.isSponsored && e.post.postId && Object(f.a)(e.post, e.pageType)
 					}
-				}, L(e)) : e.isListing && e.postPermalink ? o.a.createElement(a.a, {
+				}, M(e)) : e.isListing && e.postPermalink ? o.a.createElement(a.a, {
 					target: e.shouldOpenPostInNewTab ? "_blank" : void 0,
 					to: e.sendGoodVisitEvent ? Object(m.a)(e.postPermalink, void 0, t) : Object(m.a)(e.postPermalink)
-				}, L(e)) : L(e)
+				}, M(e)) : M(e)
 			});
-			const M = (e, t) => o.a.createElement(k, {
+			const L = (e, t) => o.a.createElement(k, {
 					altText: t.altText,
 					className: Object(c.a)(t.imageClassName, {
 						[E.a]: !e
@@ -1066,7 +1066,7 @@
 					src: Object(l.a)(t.source),
 					width: t.width
 				}),
-				L = ({
+				M = ({
 					onClick: e,
 					...t
 				}) => {
@@ -1076,7 +1076,7 @@
 						className: `${n?`${E.a} `:""}${t.className||""}`
 					}), t.isListing ? o.a.createElement("div", {
 						className: t.contentImageClassName
-					}, M(n, t)) : o.a.createElement("a", {
+					}, L(n, t)) : o.a.createElement("a", {
 						href: t.originalSource,
 						onClick: e,
 						style: r ? {
@@ -1084,7 +1084,7 @@
 						} : {},
 						target: "_blank",
 						rel: u.b
-					}, M(n, t)), t.isListing && !t.showFull && t.height > g.j && Object(g.I)(t.height, t.width) && o.a.createElement("div", {
+					}, L(n, t)), t.isListing && !t.showFull && t.height > g.j && Object(g.I)(t.height, t.width) && o.a.createElement("div", {
 						className: I.a.seeMore
 					}, s.fbt._("see full image", null, {
 						hk: "1Qygw5"
@@ -1643,9 +1643,9 @@
 			})), n.d(t, "r", (function() {
 				return N
 			})), n.d(t, "a", (function() {
-				return M
-			})), n.d(t, "w", (function() {
 				return L
+			})), n.d(t, "w", (function() {
+				return M
 			}));
 			var s = n("./node_modules/react/index.js"),
 				r = n.n(s),
@@ -1676,8 +1676,8 @@
 				k = d.a.td("Tdr", a.a),
 				S = d.a.th("Thl", a.a),
 				N = d.a.th("Thc", a.a),
-				M = (d.a.th("Thr", a.a), d.a.wrapped(e => r.a.createElement(o.b, e), "A", a.a)),
-				L = d.a.wrapped(c.a, "A", a.a)
+				L = (d.a.th("Thr", a.a), d.a.wrapped(e => r.a.createElement(o.b, e), "A", a.a)),
+				M = d.a.wrapped(c.a, "A", a.a)
 		},
 		"./src/reddit/components/RichTextJson/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -2053,9 +2053,9 @@
 		"./src/reddit/components/RichTextJson/renderers.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "c", (function() {
-				return M
-			})), n.d(t, "d", (function() {
 				return L
+			})), n.d(t, "d", (function() {
+				return M
 			})), n.d(t, "a", (function() {
 				return R
 			})), n.d(t, "b", (function() {
@@ -2069,7 +2069,7 @@
 			})), n.d(t, "i", (function() {
 				return A
 			})), n.d(t, "e", (function() {
-				return V
+				return F
 			}));
 			var s = n("./src/lib/unicodeUtils/index.ts"),
 				r = n("./node_modules/lodash/reduce.js"),
@@ -2167,21 +2167,21 @@
 				k = n("./src/reddit/helpers/isPost.ts"),
 				S = n("./src/reddit/helpers/richTextJson/index.ts"),
 				N = n("./src/reddit/helpers/trackers/getRichTextSourceElement.ts");
-			const M = (e, t, n) => {
+			const L = (e, t, n) => {
 					const s = e.c || [],
 						r = e.l,
 						o = [],
 						i = s.length;
 					for (let a = 0; a < i; a++) {
 						const e = s[a];
-						o.push(e.e === h.w ? e.t : V(e, t, a))
+						o.push(e.e === h.w ? e.t : F(e, t, a))
 					}
 					const c = d.x[r - 1];
 					return a.a.createElement(c, {
 						key: n
 					}, o)
 				},
-				L = e => a.a.createElement(d.e, {
+				M = e => a.a.createElement(d.e, {
 					key: e
 				}),
 				R = (e, t, n, s) => {
@@ -2222,9 +2222,9 @@
 						case h.c:
 							return P(e, s);
 						case h.k:
-							return M(e, n, s);
+							return L(e, n, s);
 						case h.l:
-							return L(s);
+							return M(s);
 						case h.p:
 							return B(e, t, n, s);
 						case h.u:
@@ -2289,7 +2289,7 @@
 						r = e.length;
 					for (let o = 0; o < r; o++) {
 						const r = e[o];
-						if (r.e === h.A) s.push(F(r, o));
+						if (r.e === h.A) s.push(V(r, o));
 						else if (r.e === h.x) s.push(a.a.createElement(O.a, {
 							key: o
 						}, A(r.c, t, n)));
@@ -2305,14 +2305,14 @@
 									media: e
 								}))
 							}
-						} else s.push(V(r, n, o))
+						} else s.push(F(r, n, o))
 					}
 					return s
 				},
-				V = (e, t, n) => {
+				F = (e, t, n) => {
 					switch (e.e) {
 						case h.o:
-							const s = F({
+							const s = V({
 								t: e.t,
 								f: e.f
 							}, 0);
@@ -2352,7 +2352,7 @@
 							}, e.t)
 					}
 				},
-				F = (e, t) => {
+				V = (e, t) => {
 					const {
 						f: n,
 						t: r
@@ -2510,12 +2510,12 @@
 						rtJsonElementProps: o
 					});
 					switch (s) {
-						case b.Pd.SmIcon:
+						case b.Ld.SmIcon:
 							return r.a.createElement(h, {
 								subredditName: n,
 								rtJsonElementProps: o
 							});
-						case b.Pd.SmIconHc:
+						case b.Ld.SmIconHc:
 							return r.a.createElement(h, {
 								subredditName: n,
 								isHoverable: !0,
@@ -2903,12 +2903,12 @@
 				d = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.Hd
+						experimentName: s.Fd
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === s.Pd.SmIcon || t === s.Pd.SmIconHc
+					return t === s.Ld.SmIcon || t === s.Ld.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -2931,4 +2931,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.c08659ca0bc63c0ce3fe.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.07db458312954eaee601.js.map
