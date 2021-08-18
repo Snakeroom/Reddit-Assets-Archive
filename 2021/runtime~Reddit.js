@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.bf1e7edc5188e32e5dea.js
-// Retrieved at 8/18/2021, 10:00:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.8e026a0d3d5763191960.js
+// Retrieved at 8/18/2021, 11:00:05 AM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var n, a, r = o[0], s = o[1], c = o[2], l = 0, P = []; l < r.length; l++) a = r[l], Object.prototype.hasOwnProperty.call(d, a) && d[a] && P.push(d[a][0]), d[a] = 0;
@@ -1240,7 +1240,7 @@
 						"ModQueuePages~reddit-components-ModHub-Content-ModQueue": "97a528e1fd44a048b835",
 						ModQueuePages: "59c3338fa3a4fba6fc3c",
 						"Multireddit~reddit-components-AdHocMultiredditSidebar": "707bd38ebcab40e9bf4f",
-						Multireddit: "8b29192a3c6638a5b7f1",
+						Multireddit: "90705121be2ec41a8835",
 						ProfilePosts: "66fac646fde93481b99e",
 						GovernanceReleaseNotesModal: "0c09b107bf0f18934ab0",
 						"FramedGild~GildModal": "6a45110b8c85c3f197ab",
@@ -1320,7 +1320,7 @@
 						"translations/es_MX-json": "9553ddded982c6693686",
 						"translations/fr_FR-json": "fecc56c2599a4c829fd4",
 						"translations/it_IT-json": "43ac081b468646a33c5e",
-						"translations/pseudo_ext-json": "b0953843dad8c2b12bfc",
+						"translations/pseudo_ext-json": "196425da5eacbf9e3508",
 						"translations/pseudo_long-json": "54077c50e66e4e96e5e6",
 						"translations/pseudo_short-json": "ffce7877391248e47086",
 						"translations/pt_BR-json": "41b7771332d20cc90ea0",
@@ -1358,9 +1358,9 @@
 						"vendors~ExportTheme~ImportTheme": "798a308dcfca0dc5f6b9",
 						ExportTheme: "22be1ab3948c3464e2ac",
 						ImportTheme: "099317721ef0b4bccdaf",
-						ModListing: "6f40a8821b37cad5264e",
+						ModListing: "ed927d0483f3a0cd2c1e",
 						"vendors~Subreddit": "aa0cc290849b09621187",
-						Subreddit: "3069cbe987b789166a72",
+						Subreddit: "e9ee55f0c5510031a82d",
 						"vendors~LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit": "535de0accacdcafdf525",
 						"LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit": "2f94cbf02035ed007705",
 						PublicAccessNetwork: "2ae162eb4bcc476ad3f6",
@@ -1570,4 +1570,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.bf1e7edc5188e32e5dea.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.8e026a0d3d5763191960.js.map
