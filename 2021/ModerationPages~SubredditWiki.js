@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.09f5b9815769a84a5c46.js
-// Retrieved at 8/18/2021, 3:51:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.8e969f9d48b643387a4b.js
+// Retrieved at 8/18/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, r) {
@@ -2939,7 +2939,7 @@
 				s = r.n(n),
 				a = r("./node_modules/react-redux/es/index.js"),
 				i = r("./node_modules/reselect/es/index.js"),
-				o = r("./src/reddit/actions/snoovatar.ts"),
+				o = r("./src/reddit/actions/snoovatarModal.ts"),
 				d = r("./src/reddit/actions/tooltip.ts"),
 				c = r("./src/reddit/selectors/gold/awardIcon.ts"),
 				l = r("./src/reddit/selectors/meta.ts"),
@@ -4908,4 +4908,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.09f5b9815769a84a5c46.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.8e969f9d48b643387a4b.js.map

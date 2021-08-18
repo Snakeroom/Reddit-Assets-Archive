@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.2a4b9a70741c46460e12.js
-// Retrieved at 8/18/2021, 6:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.5716e70d4bef3048aba5.js
+// Retrieved at 8/18/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-MediumPost"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -1599,7 +1599,7 @@
 				i = s("./node_modules/react-redux/es/index.js"),
 				a = s("./node_modules/react-router/esm/react-router.js"),
 				c = s("./src/reddit/actions/post.ts"),
-				d = s("./src/reddit/actions/snoovatar.ts"),
+				d = s("./src/reddit/actions/snoovatarModal.ts"),
 				l = s("./src/reddit/components/TrackingHelper/index.tsx"),
 				u = s("./src/reddit/controls/Button/index.tsx"),
 				m = s("./src/reddit/helpers/trackers/snoovatar.ts"),
@@ -1623,10 +1623,10 @@
 					O = a && a.voteState;
 				let g = null;
 				E || (g = e ? "user_hovercard" : "profile_overview");
-				const j = Object(n.useCallback)(() => f(Object(m.c)(e ? "user_hovercard" : "profile_overview", t)), [e, f, t]);
+				const j = Object(n.useCallback)(() => f(Object(m.d)(e ? "user_hovercard" : "profile_overview", t)), [e, f, t]);
 				return r.a.createElement(u.q, {
 					onClick: () => {
-						s ? (f(m.d), E && O === b.a.notVoted && y(Object(c.db)(E))) : j();
+						s ? (f(m.e), E && O === b.a.notVoted && y(Object(c.db)(E))) : j();
 						const e = s ? "postify" : "copy";
 						y(Object(d.b)({
 							clickSource: g,
@@ -2330,4 +2330,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.2a4b9a70741c46460e12.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.5716e70d4bef3048aba5.js.map

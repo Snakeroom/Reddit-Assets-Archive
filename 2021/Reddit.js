@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.cccdf2f6c8615c2cb8d9.js
-// Retrieved at 8/18/2021, 6:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.79a54c2d0c62e69858f6.js
+// Retrieved at 8/18/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -7130,7 +7130,7 @@
 				});
 			var ci = n("./src/reddit/icons/svgs/SnooNoEyes/index.tsx"),
 				li = n("./src/reddit/actions/goldPurchaseModals/requestSpecialEvents.ts"),
-				di = n("./src/reddit/actions/snoovatar.ts"),
+				di = n("./src/reddit/actions/snoovatarModal.ts"),
 				ui = n("./src/reddit/constants/colors.ts"),
 				mi = n("./src/reddit/controls/InternalLink/index.tsx");
 
@@ -7299,7 +7299,7 @@
 					})),
 					h = Object(p.e)(Si.i).startsWith("en");
 				if ((null === (n = null == a ? void 0 : a.meta) || void 0 === n ? void 0 : n.name) === y.Jb.AVATAR) return null;
-				!d && l && s(Object(li.a)()), u && r(Ei.g);
+				!d && l && s(Object(li.a)()), u && r(Ei.j);
 				const f = i && i.snoovatarFullBodyAsset ? o.fbt._("Style Avatar", null, {
 					hk: "1HIsKA"
 				}) : o.fbt._("Create Avatar", null, {
@@ -20184,4 +20184,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePo~5f1ac562", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250", "Governance~ModListing~Reddit~Subreddit", "Chat~Governance~Reddit", "Governance~Reddit~reddit-components-MediumPost", "Reddit~StandalonePostPage~reddit-components-MediumPost", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.cccdf2f6c8615c2cb8d9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.79a54c2d0c62e69858f6.js.map

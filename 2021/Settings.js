@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.daae2b7c4b5b635276c9.js
-// Retrieved at 8/18/2021, 6:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.32545e98b9bb3ffe3bbc.js
+// Retrieved at 8/18/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, n) {
@@ -3517,7 +3517,7 @@
 				r = n.n(s),
 				a = n("./node_modules/react-redux/es/index.js"),
 				o = n("./node_modules/reselect/es/index.js"),
-				i = n("./src/reddit/actions/snoovatar.ts"),
+				i = n("./src/reddit/actions/snoovatarModal.ts"),
 				c = n("./src/reddit/actions/tooltip.ts"),
 				l = n("./src/reddit/selectors/gold/awardIcon.ts"),
 				d = n("./src/reddit/selectors/meta.ts"),
@@ -5161,7 +5161,7 @@
 				o = n("./node_modules/react-redux/es/index.js"),
 				i = n("./node_modules/react-router/esm/react-router.js"),
 				c = n("./src/reddit/actions/post.ts"),
-				l = n("./src/reddit/actions/snoovatar.ts"),
+				l = n("./src/reddit/actions/snoovatarModal.ts"),
 				d = n("./src/reddit/components/TrackingHelper/index.tsx"),
 				u = n("./src/reddit/controls/Button/index.tsx"),
 				m = n("./src/reddit/helpers/trackers/snoovatar.ts"),
@@ -5185,10 +5185,10 @@
 					x = i && i.voteState;
 				let C = null;
 				y || (C = e ? "user_hovercard" : "profile_overview");
-				const E = Object(r.useCallback)(() => v(Object(m.c)(e ? "user_hovercard" : "profile_overview", t)), [e, v, t]);
+				const E = Object(r.useCallback)(() => v(Object(m.d)(e ? "user_hovercard" : "profile_overview", t)), [e, v, t]);
 				return a.a.createElement(u.q, {
 					onClick: () => {
-						n ? (v(m.d), y && x === b.a.notVoted && _(Object(c.db)(y))) : E();
+						n ? (v(m.e), y && x === b.a.notVoted && _(Object(c.db)(y))) : E();
 						const e = n ? "postify" : "copy";
 						_(Object(l.b)({
 							clickSource: C,
@@ -12478,7 +12478,7 @@
 					isResponsiveSettingsEnabled: v
 				}))),
 				ur = n("./src/reddit/actions/preferences.ts"),
-				mr = n("./src/reddit/actions/snoovatar.ts"),
+				mr = n("./src/reddit/actions/snoovatarModal.ts"),
 				pr = n("./src/reddit/components/Loader/index.m.less"),
 				br = n.n(pr);
 			class hr extends a.a.Component {
@@ -14004,4 +14004,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.daae2b7c4b5b635276c9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.32545e98b9bb3ffe3bbc.js.map

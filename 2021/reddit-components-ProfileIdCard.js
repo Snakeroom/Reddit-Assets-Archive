@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.7ab6f74a9d2c967d6224.js
-// Retrieved at 8/18/2021, 6:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.ee759685d8f8dd13a1b3.js
+// Retrieved at 8/18/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ProfileIdCard"], {
 		"./node_modules/lodash/compact.js": function(e, t) {
@@ -1568,7 +1568,7 @@
 				o = r("./node_modules/react-redux/es/index.js"),
 				i = r("./node_modules/react-router/esm/react-router.js"),
 				c = r("./src/reddit/actions/post.ts"),
-				d = r("./src/reddit/actions/snoovatar.ts"),
+				d = r("./src/reddit/actions/snoovatarModal.ts"),
 				l = r("./src/reddit/components/TrackingHelper/index.tsx"),
 				m = r("./src/reddit/controls/Button/index.tsx"),
 				u = r("./src/reddit/helpers/trackers/snoovatar.ts"),
@@ -1592,10 +1592,10 @@
 					_ = i && i.voteState;
 				let O = null;
 				I || (O = e ? "user_hovercard" : "profile_overview");
-				const C = Object(s.useCallback)(() => g(Object(u.c)(e ? "user_hovercard" : "profile_overview", t)), [e, g, t]);
+				const C = Object(s.useCallback)(() => g(Object(u.d)(e ? "user_hovercard" : "profile_overview", t)), [e, g, t]);
 				return a.a.createElement(m.q, {
 					onClick: () => {
-						r ? (g(u.d), I && _ === f.a.notVoted && v(Object(c.db)(I))) : C();
+						r ? (g(u.e), I && _ === f.a.notVoted && v(Object(c.db)(I))) : C();
 						const e = r ? "postify" : "copy";
 						v(Object(d.b)({
 							clickSource: O,
@@ -2137,7 +2137,7 @@
 				s = r.n(n),
 				a = r("./node_modules/react-redux/es/index.js"),
 				o = r("./node_modules/reselect/es/index.js"),
-				i = r("./src/reddit/actions/snoovatar.ts"),
+				i = r("./src/reddit/actions/snoovatarModal.ts"),
 				c = r("./src/reddit/actions/subscription/index.ts"),
 				d = r("./src/reddit/actions/userBlocks.ts"),
 				l = r("./src/reddit/components/ChatButton/index.tsx"),
@@ -3044,4 +3044,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.7ab6f74a9d2c967d6224.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.ee759685d8f8dd13a1b3.js.map

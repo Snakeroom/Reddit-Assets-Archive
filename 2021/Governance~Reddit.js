@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.13012a700df551caa2d5.js
-// Retrieved at 8/18/2021, 6:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.125f4bfcc5dc474872b6.js
+// Retrieved at 8/18/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -5574,21 +5574,22 @@
 				g = (e, t) => {
 					const r = Object(b.j)(e),
 						s = Object(m.a)(t.postId),
-						a = Object(l.o)(e, {
+						a = Object(p.I)(e, t),
+						n = Object(l.o)(e, {
 							...t,
 							commentsPageKey: s
 						}),
-						n = Object(l.k)(e, {
+						c = Object(l.k)(e, {
 							...t,
 							commentsPageKey: s
 						}).reduce((t, r) => {
 							var s;
-							const n = Object(l.l)(e, {
+							const a = Object(l.l)(e, {
 								commentLink: r
 							});
-							return r.type !== i.a.Comment && 0 !== (null === (s = a[r.id]) || void 0 === s ? void 0 : s.depth) || t.push(n), t
+							return r.type !== i.a.Comment && 0 !== (null === (s = n[r.id]) || void 0 === s ? void 0 : s.depth) || t.push(a), t
 						}, []).sort((e, t) => t.score - e.score).slice(0, 5);
-					return (null == r ? void 0 : r.isEmployee) || !!n.find(e => e.authorId === (null == r ? void 0 : r.id))
+					return (null == r ? void 0 : r.id) === a.authorId || !!c.find(e => e.authorId === (null == r ? void 0 : r.id))
 				},
 				S = e => {
 					let t = Object(y.b)(I);
@@ -23834,4 +23835,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.13012a700df551caa2d5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.125f4bfcc5dc474872b6.js.map

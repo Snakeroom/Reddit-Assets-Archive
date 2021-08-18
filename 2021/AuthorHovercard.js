@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.66f99248aa5c3d7837e6.js
-// Retrieved at 8/18/2021, 11:50:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.78d80a60cb37ab0379f3.js
+// Retrieved at 8/18/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/lib/humanizeDate/index.ts": function(e, t, n) {
@@ -998,7 +998,7 @@
 				s = n.n(r),
 				o = n("./node_modules/react-redux/es/index.js"),
 				a = n("./node_modules/reselect/es/index.js"),
-				i = n("./src/reddit/actions/snoovatar.ts"),
+				i = n("./src/reddit/actions/snoovatarModal.ts"),
 				c = n("./src/reddit/actions/tooltip.ts"),
 				d = n("./src/reddit/selectors/gold/awardIcon.ts"),
 				l = n("./src/reddit/selectors/meta.ts"),
@@ -2598,7 +2598,7 @@
 				a = n("./node_modules/react-redux/es/index.js"),
 				i = n("./node_modules/react-router/esm/react-router.js"),
 				c = n("./src/reddit/actions/post.ts"),
-				d = n("./src/reddit/actions/snoovatar.ts"),
+				d = n("./src/reddit/actions/snoovatarModal.ts"),
 				l = n("./src/reddit/components/TrackingHelper/index.tsx"),
 				u = n("./src/reddit/controls/Button/index.tsx"),
 				m = n("./src/reddit/helpers/trackers/snoovatar.ts"),
@@ -2622,10 +2622,10 @@
 					g = i && i.voteState;
 				let C = null;
 				_ || (C = e ? "user_hovercard" : "profile_overview");
-				const O = Object(s.useCallback)(() => v(Object(m.c)(e ? "user_hovercard" : "profile_overview", t)), [e, v, t]);
+				const O = Object(s.useCallback)(() => v(Object(m.d)(e ? "user_hovercard" : "profile_overview", t)), [e, v, t]);
 				return o.a.createElement(u.q, {
 					onClick: () => {
-						n ? (v(m.d), _ && g === b.a.notVoted && I(Object(c.db)(_))) : O();
+						n ? (v(m.e), _ && g === b.a.notVoted && I(Object(c.db)(_))) : O();
 						const e = n ? "postify" : "copy";
 						I(Object(d.b)({
 							clickSource: C,
@@ -3967,4 +3967,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.66f99248aa5c3d7837e6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.78d80a60cb37ab0379f3.js.map

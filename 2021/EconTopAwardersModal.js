@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.b6bcdcfff584950a748f.js
-// Retrieved at 8/18/2021, 6:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.9cdb8c1aa32d28f54dac.js
+// Retrieved at 8/18/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconTopAwardersModal"], {
 		"./src/reddit/actions/inContextModeration.ts": function(e, t, r) {
@@ -1045,7 +1045,7 @@
 				s = r.n(a),
 				n = r("./node_modules/react-redux/es/index.js"),
 				o = r("./node_modules/reselect/es/index.js"),
-				c = r("./src/reddit/actions/snoovatar.ts"),
+				c = r("./src/reddit/actions/snoovatarModal.ts"),
 				i = r("./src/reddit/actions/tooltip.ts"),
 				d = r("./src/reddit/selectors/gold/awardIcon.ts"),
 				l = r("./src/reddit/selectors/meta.ts"),
@@ -1832,7 +1832,7 @@
 				o = r("./node_modules/react-redux/es/index.js"),
 				c = r("./node_modules/react-router/esm/react-router.js"),
 				i = r("./src/reddit/actions/post.ts"),
-				d = r("./src/reddit/actions/snoovatar.ts"),
+				d = r("./src/reddit/actions/snoovatarModal.ts"),
 				l = r("./src/reddit/components/TrackingHelper/index.tsx"),
 				m = r("./src/reddit/controls/Button/index.tsx"),
 				u = r("./src/reddit/helpers/trackers/snoovatar.ts"),
@@ -1856,10 +1856,10 @@
 					_ = c && c.voteState;
 				let w = null;
 				I || (w = e ? "user_hovercard" : "profile_overview");
-				const g = Object(s.useCallback)(() => x(Object(u.c)(e ? "user_hovercard" : "profile_overview", t)), [e, x, t]);
+				const g = Object(s.useCallback)(() => x(Object(u.d)(e ? "user_hovercard" : "profile_overview", t)), [e, x, t]);
 				return n.a.createElement(m.q, {
 					onClick: () => {
-						r ? (x(u.d), I && _ === b.a.notVoted && E(Object(i.db)(I))) : g();
+						r ? (x(u.e), I && _ === b.a.notVoted && E(Object(i.db)(I))) : g();
 						const e = r ? "postify" : "copy";
 						E(Object(d.b)({
 							clickSource: w,
@@ -2702,4 +2702,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.b6bcdcfff584950a748f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.9cdb8c1aa32d28f54dac.js.map
