@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.f1ace1481f8dcf9cb75e.js
-// Retrieved at 8/18/2021, 1:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.ba2e4614192c30055bd2.js
+// Retrieved at 8/18/2021, 2:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -857,9 +857,12 @@
 				return s
 			})), r.d(t, "a", (function() {
 				return a
+			})), r.d(t, "c", (function() {
+				return n
 			}));
 			const s = "CONNECTION__GO_ONLINE",
-				a = "CONNECTION__GO_OFFLINE"
+				a = "CONNECTION__GO_OFFLINE",
+				n = "CONNECTION__HIDE_BANNER"
 		},
 		"./src/reddit/actions/dismissedTruncationList/constants.ts": function(e, t, r) {
 			"use strict";
@@ -8659,18 +8662,22 @@
 				},
 				Er = r("./src/reddit/actions/connection/constants.ts");
 			const Or = {
-				contentState: "recent",
+				showBanner: !1,
 				online: !0
 			};
 			var _r = (e = Or, t) => {
 					switch (t.type) {
 						case Er.a:
 							return {
-								contentState: "stale", online: !1
+								online: !1, showBanner: !0
 							};
 						case Er.b:
 							return {
-								...e, online: !0
+								online: !0, showBanner: !0
+							};
+						case Er.c:
+							return {
+								...e, showBanner: !1
 							};
 						default:
 							return e
@@ -23827,4 +23834,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.f1ace1481f8dcf9cb75e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.ba2e4614192c30055bd2.js.map
