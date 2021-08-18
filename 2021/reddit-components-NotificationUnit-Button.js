@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.e74008565f9a0928df39.js
-// Retrieved at 8/18/2021, 6:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.735fd9075dbd2b29ffca.js
+// Retrieved at 8/18/2021, 7:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-NotificationUnit-Button"], {
 		"./src/lib/makeCommentPermalink/index.ts": function(e, t, n) {
@@ -563,7 +563,7 @@
 								commentId: e,
 								followState: t
 							})).ok) {
-							Object(L.ub)(null !== (m = null === (a = null === (d = o().pages) || void 0 === d ? void 0 : d.comments) || void 0 === a ? void 0 : a.followed) && void 0 !== m ? m : [], null === (u = o().user.account) || void 0 === u ? void 0 : u.id);
+							Object(L.vb)(null !== (m = null === (a = null === (d = o().pages) || void 0 === d ? void 0 : d.comments) || void 0 === a ? void 0 : a.followed) && void 0 !== m ? m : [], null === (u = o().user.account) || void 0 === u ? void 0 : u.id);
 							const e = c ? r.fbt._("Followed! You’ll receive updates when there’s new activity", null, {
 								hk: "1Dp5UH"
 							}) : r.fbt._("Unfollowed, You’ll no longer recieve updates on this comment", null, {
@@ -1040,7 +1040,7 @@
 						}),
 						kind: u.b.SuccessCommunity,
 						text: d
-					})), Object(i.rb)(o + 1)
+					})), Object(i.sb)(o + 1)
 				}
 		},
 		"./src/reddit/actions/presence.ts": function(e, t, n) {
@@ -1504,7 +1504,7 @@
 								experimentName: s.D,
 								expEventOverride: t
 							});
-							return !!(Object(s.fe)(n) ? void 0 : n)
+							return !!(Object(s.he)(n) ? void 0 : n)
 						})(n)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -2624,14 +2624,14 @@
 			const s = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: r.ed
-					}) === r.od.Enabled
+						experimentName: r.fd
+					}) === r.pd.Enabled
 				},
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: r.dd
-					}) === r.nd.Enabled
+						experimentName: r.ed
+					}) === r.od.Enabled
 				}
 		},
 		"./src/reddit/selectors/moderatingComments.ts": function(e, t, n) {
@@ -2672,4 +2672,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.e74008565f9a0928df39.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.735fd9075dbd2b29ffca.js.map

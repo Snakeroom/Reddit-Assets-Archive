@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OnboardingModal.51259856bb2762246cca.js
-// Retrieved at 8/18/2021, 6:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OnboardingModal.c0a32728d19a622792a3.js
+// Retrieved at 8/18/2021, 7:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OnboardingModal"], {
 		"./node_modules/lodash/times.js": function(e, t, n) {
@@ -358,8 +358,8 @@
 				M = n("./src/reddit/helpers/frontpageCardPostCountExperiment.ts"),
 				D = n("./src/reddit/helpers/getTimeSortForListing/index.ts"),
 				G = n("./src/reddit/models/Toast/index.ts"),
-				V = n("./src/reddit/selectors/experiments/frontpageSignup.ts"),
-				A = n("./src/reddit/selectors/frontpage.ts"),
+				A = n("./src/reddit/selectors/experiments/frontpageSignup.ts"),
+				V = n("./src/reddit/selectors/frontpage.ts"),
 				W = n("./src/reddit/selectors/goldPurchaseModals.ts"),
 				U = n("./src/reddit/selectors/runTimeEnvVars.ts"),
 				K = n("./src/lib/makeActionCreator/index.ts"),
@@ -421,7 +421,7 @@
 					}))
 				}, ie = (e, t) => async (n, s) => {
 					const r = s(),
-						i = Object(A.a)(r),
+						i = Object(V.a)(r),
 						{
 							sort: c = i
 						} = e.params,
@@ -452,8 +452,8 @@
 						experimentEligibilitySelector: X.a,
 						experimentName: "redesign_aa"
 					});
-					const j = Object(V.a)(r, {});
-					Object(V.e)(j) && n(Object(T.k)())
+					const j = Object(A.a)(r, {});
+					Object(A.e)(j) && n(Object(T.k)())
 				}, ce = () => async (e, t) => {
 					var n, s;
 					const r = t();
@@ -475,7 +475,7 @@
 					gqlContext: s
 				}) => {
 					const r = n(),
-						c = Object(A.a)(r),
+						c = Object(V.a)(r),
 						{
 							sort: a = c
 						} = e,
@@ -533,7 +533,7 @@
 					}
 				}, ge = e => async (t, n) => {
 					const s = n(),
-						r = Object(A.a)(s),
+						r = Object(V.a)(s),
 						{
 							sort: o = r
 						} = e,
@@ -807,7 +807,7 @@
 				D = n.n(M);
 			const {
 				fbt: G
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), V = ({
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), A = ({
 				interests: e,
 				selected: t,
 				toggleSelection: n,
@@ -818,7 +818,7 @@
 					a = null !== s;
 				return i.a.createElement(i.a.Fragment, {
 					key: e.id
-				}, i.a.createElement(A, {
+				}, i.a.createElement(V, {
 					colorIndex: a && null != s ? s : r,
 					interest: e,
 					isSelected: c,
@@ -826,13 +826,13 @@
 					key: e.id,
 					toggleSelection: n,
 					topic: e.topic
-				}), c && !!(null === (o = e.children) || void 0 === o ? void 0 : o.length) && i.a.createElement(V, {
+				}), c && !!(null === (o = e.children) || void 0 === o ? void 0 : o.length) && i.a.createElement(A, {
 					interests: e.children,
 					selected: t,
 					toggleSelection: n,
 					topicColor: r
 				}))
-			})), A = ({
+			})), V = ({
 				colorIndex: e,
 				interest: t,
 				isSelected: n,
@@ -869,7 +869,7 @@
 						s(Object(k.k)())
 					}, [s]), i.a.createElement("div", {
 						className: D.a.InterestListButtons
-					}, i.a.createElement(V, {
+					}, i.a.createElement(A, {
 						interests: e,
 						selected: t,
 						toggleSelection: n
@@ -1138,7 +1138,7 @@
 					}))(e, r)), o.length && i.push(je(t, o)), i.length) try {
 					(await Promise.all(i)).some(({
 						ok: e
-					}) => !e) ? c.ok = !1 : (Object(he.Jb)(), c.reload = !0)
+					}) => !e) ? c.ok = !1 : (Object(he.Lb)(), c.reload = !0)
 				} catch (a) {
 					c.ok = !1
 				}
@@ -1147,7 +1147,7 @@
 				const {
 					gqlContext: t,
 					apiContext: n
-				} = e, s = Object(c.d)(), r = Object(x.a)(), a = Object(c.e)(ve.b), d = a === Y.Vd.Enabled_noskip || a === Y.Vd.Enabled_noskip_no_preselect, m = a === Y.Vd.Enabled_noskip_no_preselect, [b, p] = Object(o.useState)(z.INTERESTS), [g, f] = Object(o.useState)([]), [j, h] = Object(o.useState)({}), [y, v] = Object(o.useState)(!1), [S, I] = Object(o.useState)([]), [_, E] = Object(o.useState)([]), [C, N] = Object(o.useState)({});
+				} = e, s = Object(c.d)(), r = Object(x.a)(), a = Object(c.e)(ve.b), d = a === Y.Wd.Enabled_noskip || a === Y.Wd.Enabled_noskip_no_preselect, m = a === Y.Wd.Enabled_noskip_no_preselect, [b, p] = Object(o.useState)(z.INTERESTS), [g, f] = Object(o.useState)([]), [j, h] = Object(o.useState)({}), [y, v] = Object(o.useState)(!1), [S, I] = Object(o.useState)([]), [_, E] = Object(o.useState)([]), [C, N] = Object(o.useState)({});
 				Object(o.useEffect)(() => {
 					!async function() {
 						const e = await Oe(t);
@@ -1192,8 +1192,8 @@
 					M = b === z.COMMUNITIES,
 					D = b === z.INTERESTS && !d,
 					G = Object.keys(C).length,
-					V = Object.keys(j).length,
-					A = d && b === z.INTERESTS && V < 3 || b === z.COMMUNITIES && G < 1;
+					A = Object.keys(j).length,
+					V = d && b === z.INTERESTS && A < 3 || b === z.COMMUNITIES && G < 1;
 				return b === z.CELEBRATION ? i.a.createElement(O, null) : i.a.createElement("div", {
 					className: X.a.container
 				}, i.a.createElement("header", {
@@ -1236,7 +1236,7 @@
 					className: X.a.continueButtonWrapper
 				}, i.a.createElement("button", {
 					className: X.a.continueButton,
-					disabled: A,
+					disabled: V,
 					onClick: q
 				}, Ie._("Continue", null, {
 					hk: "15wNPy"
@@ -1780,4 +1780,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.51259856bb2762246cca.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.c0a32728d19a622792a3.js.map

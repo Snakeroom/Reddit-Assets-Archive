@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.3a5abc8e27b17b20f10a.js
-// Retrieved at 8/18/2021, 6:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.5fc66c8f57ebb2f0cf0c.js
+// Retrieved at 8/18/2021, 7:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -3224,7 +3224,7 @@
 					showCreatePollButton: e => (e => Object(Ue.c)(e, {
 						experimentEligibilitySelector: Ue.a,
 						experimentName: Be.G
-					}) === Be.M.Treatment)(e) && !Object(Ie.h)(),
+					}) === Be.N.Treatment)(e) && !Object(Ie.h)(),
 					subreddit: (e, t) => Object(ne.z)(e, {
 						subredditName: t.listingName
 					}),
@@ -4708,7 +4708,7 @@
 								experimentName: i.D,
 								expEventOverride: t
 							});
-							return !!(Object(i.fe)(n) ? void 0 : n)
+							return !!(Object(i.he)(n) ? void 0 : n)
 						})(n)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -6252,4 +6252,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.3a5abc8e27b17b20f10a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.5fc66c8f57ebb2f0cf0c.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-MediumPost.6d36ae670e191a650328.js
-// Retrieved at 8/18/2021, 6:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-MediumPost.b4619a28cb6c5b24e069.js
+// Retrieved at 8/18/2021, 7:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~reddit-components-MediumPost"], {
 		"./src/lib/constants/specialMembership.ts": function(t, e, n) {
@@ -309,7 +309,7 @@
 				I = Object(i.a)(T),
 				D = t => {
 					const e = Date.now() - t,
-						n = Object(E.H)();
+						n = Object(E.I)();
 					return Object.keys(n).filter(t => n[t].when >= e).map(t => n[t])
 				},
 				L = ({
@@ -326,12 +326,12 @@
 						L = t === T;
 					if (!(t === b.f || t === b.b || L)) return;
 					if (L) return void j(m, e, n)(s, i, l);
-					0 === D(o.nb).length && Object(E.Lb)(!1);
+					0 === D(o.nb).length && Object(E.Nb)(!1);
 					let C = i();
 					if (Object(f.d)(C, {
 							listingKey: e,
 							postId: n
-						}) || Object(f.a)(C).length >= _.a || Object(E.W)() || D(o.z).length >= _.a) return;
+						}) || Object(f.a)(C).length >= _.a || Object(E.X)() || D(o.z).length >= _.a) return;
 					const A = Object(S.w)(C, {
 						listingKey: e,
 						postId: n
@@ -381,14 +381,14 @@
 						postId: n
 					})))) : Object(r.a)(Object(p.c)(R, "no_chaining", m)(C))
 				}, C = "FEED_CHAINING__CHAIN_TOGGLED", A = (Object(i.a)(C), "FEED_CHAINING__CHAINING_TOGGLED"), R = Object(i.a)(A), h = () => async t => {
-					Object(E.Lb)(!0), t(R({
+					Object(E.Nb)(!0), t(R({
 						isDismissed: !0
 					})), t(Object(l.f)(Object(l.e)(s.fbt._("You'll see this less often.", null, {
 						hk: "38LGcQ"
 					}), m.b.Undo, s.fbt._("Undo", null, {
 						hk: "4zFGDk"
 					}), async () => {
-						Object(E.Lb)(!1), t(R({
+						Object(E.Nb)(!1), t(R({
 							isDismissed: !1
 						}))
 					})))
@@ -1177,9 +1177,9 @@
 			var B = n("./src/reddit/actions/nsfwLinkedPosts/constants.ts");
 			const Y = Object(r.a)(B.b),
 				q = Object(r.a)(B.a),
-				H = Object(r.a)(C.j),
-				K = Object(r.a)(C.i),
-				V = Object(r.a)(C.r),
+				K = Object(r.a)(C.j),
+				V = Object(r.a)(C.i),
+				H = Object(r.a)(C.r),
 				W = Object(r.a)(C.q),
 				z = t => async (e, n, {
 					gqlContext: s
@@ -1209,7 +1209,7 @@
 								subreddit: t
 							})
 						}
-						e(V(c))
+						e(H(c))
 					} catch (d) {
 						e(W(d))
 					}
@@ -1230,9 +1230,9 @@
 						subredditName: x
 					} = t, v = Object(o.a)(j, null, {
 						isOtherDiscussions: !0
-					}), B = n(), V = Object(F.B)(B, {
+					}), B = n(), H = Object(F.B)(B, {
 						listingKey: v
-					}), W = S && (!V || 0 === V.length), z = Object(o.a)(x, s.U[N], {
+					}), W = S && (!H || 0 === H.length), z = Object(o.a)(x, s.U[N], {
 						t: g
 					}), Q = Object(F.B)(B, {
 						listingKey: z
@@ -1263,12 +1263,12 @@
 					}), ($ && !X || ot) && (et.ok ? nt.data && U({
 						getState: n,
 						isLinkedPostsFallback: ot,
-						onFailure: t => e(K(t)),
-						onSuccess: t => e(H(t)),
+						onFailure: t => e(V(t)),
+						onSuccess: t => e(K(t)),
 						options: t,
 						postId: j,
 						subreddit: nt.data.subreddit
-					}) : e(K(et.error))), X && rt && !st && et.ok && nt.data && y({
+					}) : e(V(et.error))), X && rt && !st && et.ok && nt.data && y({
 						getState: n,
 						onFailure: t => e(_(t)),
 						onSuccess: t => e(l(t)),
@@ -1411,7 +1411,7 @@
 			n.d(e, "b", (function() {
 				return U
 			})), n.d(e, "a", (function() {
-				return K
+				return V
 			}));
 			var s = n("./node_modules/polished/dist/polished.es.js"),
 				r = n("./node_modules/react/index.js"),
@@ -1473,8 +1473,8 @@
 				Y = n("./src/reddit/hooks/useTheme.ts"),
 				q = n("./src/telemetry/models/Outbound.ts");
 
-			function H() {
-				return (H = Object.assign || function(t) {
+			function K() {
+				return (K = Object.assign || function(t) {
 					for (var e = 1; e < arguments.length; e++) {
 						var n = arguments[e];
 						for (var s in n) Object.prototype.hasOwnProperty.call(n, s) && (t[s] = n[s])
@@ -1484,7 +1484,7 @@
 			}! function(t) {
 				t[t.ExtraLarge = 0] = "ExtraLarge", t[t.Large = 1] = "Large", t[t.Medium = 2] = "Medium", t[t.Small = 3] = "Small", t[t.ExtraSmall = 4] = "ExtraSmall"
 			}(U || (U = {}));
-			const K = ({
+			const V = ({
 					size: t,
 					titleColor: e,
 					titleType: n,
@@ -1525,13 +1525,13 @@
 						type: n
 					}, r) : r)
 				},
-				V = ({
+				H = ({
 					className: t,
 					disableVisited: e,
 					titleColor: n,
 					children: s,
 					...r
-				}) => o.a.createElement(c.a, H({}, r, {
+				}) => o.a.createElement(c.a, K({}, r, {
 					className: Object(u.a)(t, M.a.styledLink, {
 						[M.a.isVisitedEnabled]: !e
 					})
@@ -1561,7 +1561,7 @@
 						subreddit: n
 					} = t, {
 						isSponsored: s
-					} = e, r = Object(w.a)(), i = Object(G.a)(_.pc) === _.tc.Enabled;
+					} = e, r = Object(w.a)(), i = Object(G.a)(_.qc) === _.uc.Enabled;
 					if (t.isCommentsPage && !t.isCommentPermalink && !t.shouldLinkWrap) return o.a.createElement(W, {
 						nowrap: t.nowrap
 					}, o.a.createElement($, t));
@@ -1586,7 +1586,7 @@
 								postId: t.id,
 								source: n
 							}, o.a.createElement($, e)) : o.a.createElement($, e)
-						})(e, t) : o.a.createElement(V, {
+						})(e, t) : o.a.createElement(H, {
 							className: t.titleLinkClassName,
 							"data-click-id": "body",
 							disableVisited: t.disableVisited,
@@ -1607,7 +1607,7 @@
 						return t.length >= 250 ? t.slice(0, 250 - "...".length) + "..." : t
 					})(r));
 					const i = t.isCommentsPage ? k.a.PostComments : k.a.PostItem;
-					return o.a.createElement(K, {
+					return o.a.createElement(V, {
 						className: t.titleClassName,
 						nowrap: t.nowrap,
 						redditStyle: t.redditStyle || t.isCommentsPage,
@@ -1682,7 +1682,7 @@
 						post: c,
 						sendEvent: this.props.sendEvent,
 						showCategoryTag: !1
-					}), o.a.createElement(Q, H({}, this.props, {
+					}), o.a.createElement(Q, K({}, this.props, {
 						leftFlair: d ? _ : void 0
 					})), i && o.a.createElement(P, {
 						className: M.a.pollMeta,
@@ -1714,7 +1714,7 @@
 					})),
 					c = Object(Y.a)(),
 					d = Object(l.b)();
-				return o.a.createElement(J, H({
+				return o.a.createElement(J, K({
 					pageLayer: e,
 					isCommentPermalink: n
 				}, s, r, t, {
@@ -1879,11 +1879,11 @@
 			})), n.d(e, "t", (function() {
 				return q
 			})), n.d(e, "H", (function() {
-				return H
-			})), n.d(e, "d", (function() {
 				return K
-			})), n.d(e, "c", (function() {
+			})), n.d(e, "d", (function() {
 				return V
+			})), n.d(e, "c", (function() {
+				return H
 			})), n.d(e, "b", (function() {
 				return W
 			})), n.d(e, "f", (function() {
@@ -2130,7 +2130,7 @@
 						noun: "footer_subreddit"
 					})
 				},
-				H = (t, e) => n => {
+				K = (t, e) => n => {
 					const s = Object(u.j)(e);
 					return {
 						...m(n, t, e),
@@ -2140,7 +2140,7 @@
 						noun: "title_subreddit"
 					}
 				},
-				K = (t, e) => n => ({
+				V = (t, e) => n => ({
 					...m(n, t, e),
 					action: "status",
 					actionInfo: _.actionInfo(n, {
@@ -2148,7 +2148,7 @@
 					}),
 					noun: "loading"
 				}),
-				V = (t, e, n) => s => ({
+				H = (t, e, n) => s => ({
 					...m(s, t, n),
 					action: "status",
 					actionInfo: _.actionInfo(s, {
@@ -3056,4 +3056,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-MediumPost.6d36ae670e191a650328.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-MediumPost.b4619a28cb6c5b24e069.js.map

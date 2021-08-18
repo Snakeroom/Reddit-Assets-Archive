@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.1e9fb44a64a428e7a5b8.js
-// Retrieved at 8/18/2021, 6:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.7a801f5078e8a609c191.js
+// Retrieved at 8/18/2021, 7:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -4333,7 +4333,7 @@
 					update: a
 				} = e, d = Object(Z.a)(), l = Object(i.d)(), [c, m] = Object(o.useState)(s), [u, p] = Object(o.useState)(!1), [h, b] = Object(o.useState)(!0);
 				return Object(o.useEffect)(() => {
-					b(Object(Y.F)("location")), Object(Y.Ib)("location")
+					b(Object(Y.G)("location")), Object(Y.Kb)("location")
 				}, []), r.a.createElement(r.a.Fragment, null, r.a.createElement(A.a, null, N.fbt._("Community Location", null, {
 					hk: "3aowzb"
 				})), r.a.createElement(L.k, {
@@ -5315,10 +5315,10 @@
 			}
 			var E = Object(r.b)(void 0, e => ({
 				onDismissTooltip: () => {
-					e(Object(l.i)()), Object(p.zb)()
+					e(Object(l.i)()), Object(p.Ab)()
 				},
 				onViewTooltip: () => {
-					Object(p.Ub)()
+					Object(p.Wb)()
 				}
 			}))(Object(m.c)(x));
 			const v = "editable-primary-topic-idcard";
@@ -13228,8 +13228,9 @@
 					redditStyle: b,
 					isOverlay: g,
 					isVoteCountAnimation: f,
-					postId: x
-				} = e, E = `upvote-button-${t.id}${g?"-overlay":""}`;
+					triggerCelebratoryMoment: x,
+					postId: E
+				} = e, v = `upvote-button-${t.id}${g?"-overlay":""}`;
 				return a.a.createElement(o.b, {
 					isRemoved: !!t.bannedBy,
 					isReported: Object(l.a)(t),
@@ -13244,10 +13245,11 @@
 					model: t,
 					onVoteClick: s,
 					redditStyle: b,
-					upvoteTooltipId: E,
+					upvoteTooltipId: v,
 					isVoteCountAnimation: f,
 					isCountAnimShadowTestEnabled: u,
-					postId: x,
+					triggerCelebratoryMoment: x,
+					postId: E,
 					scoreClassName: m.a.score
 				}))
 			}
@@ -21541,7 +21543,7 @@
 				}
 				componentDidMount() {
 					this.setState({
-						locationSettingSeen: Object(q.F)("location")
+						locationSettingSeen: Object(q.G)("location")
 					})
 				}
 				render() {
@@ -22552,9 +22554,9 @@
 			const o = e => {
 				const t = Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: n.ec
+					experimentName: n.fc
 				});
-				return !(!t || Object(n.fe)(t))
+				return !(!t || Object(n.he)(t))
 			}
 		},
 		"./src/reddit/selectors/showPromotedCTA.ts": function(e, t, s) {
@@ -22567,9 +22569,9 @@
 				o = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				r = s("./src/reddit/selectors/posts.ts");
 			const i = Object(n.a)(e => Object(o.c)(e, {
-				experimentName: a.fd,
+				experimentName: a.gd,
 				experimentEligibilitySelector: o.a
-			}), r.I, (e, t) => e === a.pd.Enabled && (null == t ? void 0 : t.isCreatedFromAdsUi) || (null == t ? void 0 : t.isSponsored))
+			}), r.I, (e, t) => e === a.qd.Enabled && (null == t ? void 0 : t.isCreatedFromAdsUi) || (null == t ? void 0 : t.isSponsored))
 		},
 		"./src/reddit/selectors/streamingModSettings.ts": function(e, t, s) {
 			"use strict";
@@ -22696,4 +22698,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.1e9fb44a64a428e7a5b8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.7a801f5078e8a609c191.js.map

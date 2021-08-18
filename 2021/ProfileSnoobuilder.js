@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.dfc3d5d82f23489ef369.js
-// Retrieved at 8/18/2021, 6:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.62cf5095e6418388d2e9.js
+// Retrieved at 8/18/2021, 7:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileSnoobuilder", "reddit-components-ContentGate"], {
 		"./assets/snoobuilder/Snoobuilder.json": function(e, t, n) {
@@ -4103,12 +4103,12 @@
 						rtJsonElementProps: i
 					});
 					switch (s) {
-						case b.Nd.SmIcon:
+						case b.Od.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: i
 							});
-						case b.Nd.SmIconHc:
+						case b.Od.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -4600,7 +4600,7 @@
 					userName: t.name
 				}) : null
 			}), S = Object(i.b)(j, e => ({
-				trackTwitterAccountClicked: t => e((e, n) => u.l(n(), t))
+				trackTwitterAccountClicked: t => e((e, n) => u.m(n(), t))
 			}), (e, t, n) => ({
 				...n,
 				...e,
@@ -5312,12 +5312,12 @@
 				c = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.Hd
+						experimentName: s.Id
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.Nd.SmIcon || t === s.Nd.SmIconHc
+					return t === s.Od.SmIcon || t === s.Od.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -5340,4 +5340,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.dfc3d5d82f23489ef369.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.62cf5095e6418388d2e9.js.map

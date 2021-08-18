@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.9bdba64e46b7170de368.js
-// Retrieved at 8/18/2021, 6:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.87d999a33d1f55f79fe3.js
+// Retrieved at 8/18/2021, 7:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages~reddit-components-ModHub-Content-ModQueue"], {
 		"./node_modules/shallowequal/index.js": function(e, t) {
@@ -1700,38 +1700,40 @@
 						pageReferrer: C,
 						redditStyle: k,
 						shouldHideFlair: O,
-						triggerNewPostPill: S,
-						postIds: v
-					} = this.props, I = 0 === t, _ = `post-${o}-${e}-${t}-${s?"last-index":""}-${f}-${g}-${C}`;
-					let P;
-					if (void 0 === (P = this.scrollChildCache.get(_))) {
+						triggerCelebratoryMoment: S,
+						triggerNewPostPill: v,
+						postIds: I
+					} = this.props, _ = 0 === t, P = `post-${o}-${e}-${t}-${s?"last-index":""}-${f}-${g}-${C}`;
+					let L;
+					if (void 0 === (L = this.scrollChildCache.get(P))) {
 						const {
-							inSubredditOrProfile: L,
-							postsById: N
-						} = this.props, F = N[e], R = F.crosspostRootId && N[F.crosspostRootId] ? N[F.crosspostRootId] : F;
-						F.crosspostRootId && !N[F.crosspostRootId] && E.c.withScope(e => {
-							e.setExtra("errorType", x.r.API), e.setExtra("description", `Post ${F.id} is crosspost of ${F.crosspostRootId}, but ` + `${F.crosspostRootId} details are missing in the state`), E.c.captureMessage("Crosspost parent details are missing")
+							inSubredditOrProfile: N,
+							postsById: F
+						} = this.props, R = F[e], M = R.crosspostRootId && F[R.crosspostRootId] ? F[R.crosspostRootId] : R;
+						R.crosspostRootId && !F[R.crosspostRootId] && E.c.withScope(e => {
+							e.setExtra("errorType", x.r.API), e.setExtra("description", `Post ${R.id} is crosspost of ${R.crosspostRootId}, but ` + `${R.crosspostRootId} details are missing in the state`), E.c.captureMessage("Crosspost parent details are missing")
 						});
-						const M = this.props.postComponentForLayout({
-							isCrosspost: !!F.crosspostRootId,
-							isFirstPost: I,
+						const A = this.props.postComponentForLayout({
+							isCrosspost: !!R.crosspostRootId,
+							isFirstPost: _,
 							layout: o,
-							post: R
+							post: M
 						});
-						let A = `post-list-item-[layout: ${o}]-[postId: ${e}]`;
-						this.props.listingBelowVariant && g && (A += `--${g}`);
-						const B = J(e, o, s, g, f, C, this.props, t, this.props.hostPostData),
-							D = G(e, o, this.props, t, y),
-							Q = Z(e, this.props, l),
-							V = R.media && R.media.type === T.o.EMBED ? R.media.provider : null,
-							W = p && !F.isSponsored,
-							U = u && !F.isSponsored && !F.isScoreHidden;
-						P = {
-							estHeight: Object(w.c)(F, o),
+						let B = `post-list-item-[layout: ${o}]-[postId: ${e}]`;
+						this.props.listingBelowVariant && g && (B += `--${g}`);
+						const D = J(e, o, s, g, f, C, this.props, t, this.props.hostPostData),
+							Q = G(e, o, this.props, t, y),
+							V = Z(e, this.props, l),
+							W = M.media && M.media.type === T.o.EMBED ? M.media.provider : null,
+							U = p && !R.isSponsored,
+							K = u && !R.isSponsored && !R.isScoreHidden,
+							H = !R.isSponsored && !R.isArchived;
+						L = {
+							estHeight: Object(w.c)(R, o),
 							id: e,
-							isFocusable: !(!R.media || !(o === j.g.Large || o === j.g.Classic && Object(T.G)(R.media))) && (T.d.has(R.media.type) && (!V || !T.s.has(V)) && !R.isSpoiler && !R.isNSFW),
-							trackOnEnteredViewport: B,
-							trackOnExitedViewport: D,
+							isFocusable: !(!M.media || !(o === j.g.Large || o === j.g.Classic && Object(T.G)(M.media))) && (T.d.has(M.media.type) && (!W || !T.s.has(W)) && !M.isSpoiler && !M.isNSFW),
+							trackOnEnteredViewport: D,
+							trackOnExitedViewport: Q,
 							render: ({
 								className: o,
 								height: p,
@@ -1739,23 +1741,23 @@
 								remeasure: x,
 								setScrollerChildRef: C,
 								shouldLoadInitially: E
-							}) => m.a.createElement(M, {
+							}) => m.a.createElement(A, {
 								className: o,
 								currentProfileName: n,
-								key: A,
+								key: B,
 								availableWidth: u,
 								eventFactory: this.eventFactoryHandler,
-								first: I,
+								first: _,
 								forceLoadMedia: E,
 								hostPostData: r,
-								inSubredditOrProfile: L,
+								inSubredditOrProfile: N,
 								isCommentPermalink: a,
 								isCommentsPage: i,
 								isFrontpage: l,
 								isProfilePostListing: d,
 								isTopicPage: c,
-								isCommentCountAnimationEnabled: W,
-								isVoteCountAnimationEnabled: U,
+								isCommentCountAnimationEnabled: U,
+								isVoteCountAnimationEnabled: K,
 								isCountAnimShadowTestEnabled: h,
 								listingBelowVariant: b,
 								listingIndex: t,
@@ -1763,19 +1765,20 @@
 								listingName: f,
 								pageLayer: y,
 								last: s,
-								onClickPost: Q,
+								onClickPost: V,
 								onSizeChanged: x,
 								postId: e,
-								postIds: v,
+								postIds: I,
 								redditStyle: k,
 								sendEvent: this.props.sendEvent,
 								scrollerItemRef: C,
 								shouldHideFlair: O,
-								onceInViewport: S
+								triggerCelebratoryMoment: H ? S : void 0,
+								onceInViewport: v
 							})
-						}, this.scrollChildCache.set(_, P)
+						}, this.scrollChildCache.set(P, L)
 					}
-					return P
+					return L
 				}
 				render() {
 					return this.hasPosts() ? (this.renderingEmpty = !1, this.renderingPlaceholder = !1, this.renderList()) : this.showPlaceholder() ? (this.renderingEmpty = !1, this.renderingPlaceholder = !0, this.renderPlaceholder()) : (this.renderingEmpty = !0, this.renderingPlaceholder = !1, this.renderEmpty())
@@ -2155,4 +2158,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.9bdba64e46b7170de368.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.87d999a33d1f55f79fe3.js.map

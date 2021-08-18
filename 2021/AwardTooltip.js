@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AwardTooltip.92138f7e1634c2195d6e.js
-// Retrieved at 8/18/2021, 6:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AwardTooltip.8816719b75372b808881.js
+// Retrieved at 8/18/2021, 7:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AwardTooltip"], {
 		"./src/reddit/components/AwardTooltip/index.m.less": function(e, t, s) {
@@ -49,8 +49,8 @@
 				P = s("./src/reddit/controls/Button/index.tsx"),
 				E = s("./src/reddit/icons/svgs/CircleCheck/index.tsx"),
 				v = s("./src/reddit/icons/svgs/Hide/index.tsx"),
-				j = s("./src/reddit/icons/svgs/Moderate/index.tsx"),
-				N = s("./src/reddit/icons/svgs/Report/index.tsx"),
+				N = s("./src/reddit/icons/svgs/Moderate/index.tsx"),
+				j = s("./src/reddit/icons/svgs/Report/index.tsx"),
 				I = s("./src/reddit/icons/fonts/Coin/index.tsx");
 			const L = e => {
 				const {
@@ -69,8 +69,8 @@
 			const y = Object(d.c)({
 					canFlagAwards: e => Object(b.c)(e, {
 						experimentEligibilitySelector: b.a,
-						experimentName: w.Hb
-					}) === w.jc.Enabled,
+						experimentName: w.Ib
+					}) === w.kc.Enabled,
 					currentUser: g.j,
 					moderatorPermissions: (e, {
 						postOrComment: t
@@ -135,7 +135,7 @@
 						hk: "4C0VOl"
 					}) : null, e ? a.a.createElement(E.a, {
 						className: k.a.awardReportIcon
-					}) : a.a.createElement(N.a, {
+					}) : a.a.createElement(j.a, {
 						className: k.a.awardReportIcon
 					})) : null
 				}
@@ -223,7 +223,7 @@
 						subredditOrProfile: i
 					}), `r/${i.name}`), e.awardType === h.f.Moderator && a.a.createElement("div", {
 						className: k.a.subreddit
-					}, a.a.createElement(j.a, {
+					}, a.a.createElement(N.a, {
 						className: Object(c.a)(k.a.subredditIcon, k.a.modShield)
 					}), r.fbt._("Exclusive mod-given Award", null, {
 						hk: "1VGGho"
@@ -491,4 +491,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AwardTooltip.92138f7e1634c2195d6e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AwardTooltip.8816719b75372b808881.js.map

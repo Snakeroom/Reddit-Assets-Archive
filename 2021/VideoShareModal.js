@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/VideoShareModal.d8dc761f00949a8d3ba8.js
-// Retrieved at 8/18/2021, 6:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/VideoShareModal.4a153bdd0080437c4ddd.js
+// Retrieved at 8/18/2021, 7:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["VideoShareModal"], {
 		"./src/reddit/actions/publicAccessNetwork/votes.ts": function(e, t, s) {
@@ -1047,28 +1047,30 @@
 			}) => {
 				const {
 					name: a
-				} = e, r = xe(a), o = fe(a, !r), c = r ? H._("Unfollow u/{name}", [H._param("name", a)], {
+				} = e, r = xe(a), o = fe(a), c = we(a, !o), i = o ? H._("Unfollow u/{name}", [H._param("name", a)], {
 					hk: "2n0wqa"
 				}) : H._("Follow u/{name}", [H._param("name", a)], {
 					hk: "20X8Bw"
-				});
-				return n.a.createElement("button", {
+				}), l = n.a.createElement("button", {
 					className: W.a.subscribeToProfileButton,
 					onClick: () => {
-						s(!r), o()
+						s(!o), c()
 					},
-					title: c
-				}, n.a.createElement(we, {
+					title: i
+				}, n.a.createElement(Ee, {
 					profile: e
-				}), n.a.createElement(Ee, {
-					isSubscribed: r
-				}))
-			}, xe = e => Object(r.e)(t => Object(F.fb)(t, {
+				}), n.a.createElement(Ne, {
+					isSubscribed: o
+				}));
+				return r && r.enableFollowers ? l : null
+			}, xe = e => Object(r.e)(t => Object(P.nb)(t, {
+				userName: e
+			})), fe = e => Object(r.e)(t => Object(F.fb)(t, {
 				identifier: {
 					name: e,
 					type: b.a.PROFILE
 				}
-			})), fe = (e, t) => {
+			})), we = (e, t) => {
 				const s = Object(r.d)();
 				return Object(a.useCallback)(() => {
 					s(Object(u.d)([{
@@ -1076,43 +1078,41 @@
 						type: b.a.PROFILE
 					}], t))
 				}, [s, e, t])
-			}, we = ({
+			}, Ee = ({
 				profile: e
 			}) => {
 				const {
 					id: t,
 					name: s
-				} = e, a = Object(r.e)(e => Object(P.nb)(e, {
-					userName: s
-				})), c = ge(a), i = c && Object(w.a)(a.accountIcon);
+				} = e, a = xe(s), r = ke(a), c = r && Object(w.a)(a.accountIcon);
 				return n.a.createElement("div", {
 					className: Object(o.a)(W.a.subscribeToProfileAvatar, {
-						[W.a.snoovatarHeadshot]: i
+						[W.a.snoovatarHeadshot]: c
 					})
-				}, a ? c ? i ? n.a.createElement(h.a, {
+				}, a ? r ? c ? n.a.createElement(h.a, {
 					headshot: a.accountIcon
 				}) : n.a.createElement("img", {
 					src: a.accountIcon
 				}) : n.a.createElement(p.a, {
 					userId: t
 				}) : null)
-			}, Ee = ({
+			}, Ne = ({
 				isSubscribed: e
 			}) => n.a.createElement("div", {
 				className: Object(o.a)(W.a.subscribeToProfileStatus, {
 					[W.a.isSubscribed]: e
 				})
-			}, e ? n.a.createElement(Ne, null) : n.a.createElement(_e, null)), Ne = () => n.a.createElement("svg", {
+			}, e ? n.a.createElement(_e, null) : n.a.createElement(ge, null)), _e = () => n.a.createElement("svg", {
 				viewBox: "0 0 20 20",
 				xmlns: "http://www.w3.org/2000/svg"
 			}, n.a.createElement("path", {
 				d: "M17.7072 5.69337L16.3083 4.29337C16.1203 4.10537 15.8662 4.00037 15.6012 4.00037C15.3352 4.00037 15.0812 4.10537 14.8942 4.29337L7.90025 11.2864L5.10725 8.49337C4.71725 8.10237 4.08425 8.10237 3.69325 8.49337L2.29325 9.89337C1.90225 10.2844 1.90225 10.9174 2.29325 11.3074L7.19325 16.2074C7.38925 16.4024 7.64425 16.5004 7.90025 16.5004C8.15625 16.5004 8.41225 16.4024 8.60725 16.2074L17.7072 7.10737C18.0982 6.71637 18.0982 6.08437 17.7072 5.69337"
-			})), _e = () => n.a.createElement("svg", {
+			})), ge = () => n.a.createElement("svg", {
 				viewBox: "0 0 16 16",
 				xmlns: "http://www.w3.org/2000/svg"
 			}, n.a.createElement("path", {
 				d: "M12.8,6.4 L9.6,6.4 L9.6,3.2 C9.6,2.7576 9.2424,2.4 8.8,2.4 L7.2,2.4 C6.7576,2.4 6.4,2.7576 6.4,3.2 L6.4,6.4 L3.2,6.4 C2.7584,6.4 2.4,6.7576 2.4,7.2 L2.4,8.8 C2.4,9.2424 2.7584,9.6 3.2,9.6 L6.4,9.6 L6.4,12.8 C6.4,13.2424 6.7576,13.6 7.2,13.6 L8.8,13.6 C9.2424,13.6 9.6,13.2424 9.6,12.8 L9.6,9.6 L12.8,9.6 C13.2424,9.6 13.6,9.2424 13.6,8.8 L13.6,7.2 C13.6,6.7576 13.2424,6.4 12.8,6.4"
-			})), ge = e => {
+			})), ke = e => {
 				const t = Object(r.e)(P.j),
 					s = Object(r.e)(P.B),
 					a = Object(r.e)(P.db);
@@ -1736,4 +1736,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/VideoShareModal.d8dc761f00949a8d3ba8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/VideoShareModal.4a153bdd0080437c4ddd.js.map

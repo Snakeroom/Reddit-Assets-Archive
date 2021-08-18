@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.453d4780f788a5bbf3ae.js
-// Retrieved at 8/18/2021, 6:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.b5e6820e23332f4fa101.js
+// Retrieved at 8/18/2021, 7:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, n) {
@@ -155,7 +155,7 @@
 				j = n("./src/reddit/icons/svgs/ChevronDown/index.tsx"),
 				w = n("./src/reddit/components/SEOSidebarLinks/index.m.less"),
 				F = n.n(w);
-			const A = ({
+			const P = ({
 					to: e,
 					title: t
 				}) => d.a.createElement(T.a, {
@@ -166,7 +166,7 @@
 					to: e,
 					title: t
 				}, t)),
-				P = ({
+				A = ({
 					title: e,
 					isOpened: t,
 					isExpanded: n,
@@ -223,11 +223,11 @@
 					}, this.renderLink = ({
 						url: e,
 						title: t
-					}) => d.a.createElement(A, {
+					}) => d.a.createElement(P, {
 						key: t,
 						to: e,
 						title: t
-					}), this.renderSection = (e, t) => d.a.createElement(P, {
+					}), this.renderSection = (e, t) => d.a.createElement(A, {
 						key: e.title,
 						title: e.title,
 						isOpened: this.isOpened(t),
@@ -287,13 +287,13 @@
 					}
 				}
 				async getSubredditForAdoption() {
-					let e = re.cachedData || Object(Z.A)(M.b.SUBREDDITS_FOR_ADOPTION_STORE) || null;
+					let e = re.cachedData || Object(Z.B)(M.b.SUBREDDITS_FOR_ADOPTION_STORE) || null;
 					if (!e || Date.now() - e.fetchedAt > ae) {
 						const t = await Y(this.props.apiContext());
 						t.ok && (e = {
 							subreddits: t.body.data.subreddits.map(e => e.name),
 							fetchedAt: Date.now()
-						}, Object(Z.Eb)(M.b.SUBREDDITS_FOR_ADOPTION_STORE, e))
+						}, Object(Z.Gb)(M.b.SUBREDDITS_FOR_ADOPTION_STORE, e))
 					}
 					return re.cachedData = e, e ? e.subreddits : []
 				}
@@ -605,7 +605,7 @@
 			}];
 			var we = n("./src/reddit/components/Widgets/Aggregate/TopicsList/index.m.less"),
 				Fe = n.n(we);
-			const Ae = () => {
+			const Pe = () => {
 					const e = `${Se.a.assetPath}/img/banner/banner-medium@2x.png`,
 						t = v.fbt._("Find Your Next Community!", null, {
 							hk: "4tZ6vB"
@@ -620,13 +620,13 @@
 						className: Fe.a.bannerText
 					}, t))
 				},
-				Pe = e => `/t/${e}?activeTab=communities`,
+				Ae = e => `/t/${e}?activeTab=communities`,
 				Ie = e => {
 					const t = e.topic.getName();
 					return d.a.createElement("div", {
 						className: Fe.a.itemContainer
 					}, d.a.createElement(Ce.a, {
-						to: Pe(e.topic.url),
+						to: Ae(e.topic.url),
 						onClick: () => e.sendEvent(Object(Te.c)(t))
 					}, t))
 				};
@@ -642,7 +642,7 @@
 						noGradient: !0,
 						styles: e.widget && e.widget.styles,
 						widgetKind: e.widget && e.widget.kind
-					}, d.a.createElement(Ae, null), d.a.createElement("div", {
+					}, d.a.createElement(Pe, null), d.a.createElement("div", {
 						className: Fe.a.container
 					}, n.map(e => d.a.createElement(Ie, {
 						key: e.url,
@@ -663,10 +663,10 @@
 			}
 			var Ue = n("./src/reddit/selectors/experiments/utils.ts");
 			const qe = Object(u.a)(e => Object(We.c)(e, {
-					experimentName: Le.Kc,
+					experimentName: Le.Lc,
 					experimentEligibilitySelector: We.a
 				}), Ue.a),
-				Qe = Object(u.a)(qe, e => e === Le.Mc.Enabled);
+				Qe = Object(u.a)(qe, e => e === Le.Nc.Enabled);
 			var Me = n("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
 				Je = n("./src/reddit/selectors/user.ts");
 			var Ke = n("./src/reddit/selectors/experiments/uiSimplification.ts"),
@@ -698,8 +698,8 @@
 						return (!t || !n) && (!Object(Ke.b)(e) && function(e) {
 							return Object(We.c)(e, {
 								experimentEligibilitySelector: Je.J,
-								experimentName: Le.jb
-							}) === Le.fc
+								experimentName: Le.kb
+							}) === Le.gc
 						}(e))
 					},
 					isNavbarLikeMwebEnabled: l.a,
@@ -2046,4 +2046,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.453d4780f788a5bbf3ae.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.b5e6820e23332f4fa101.js.map

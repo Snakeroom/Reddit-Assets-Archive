@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.6a8fcc73f46f89115371.js
-// Retrieved at 8/18/2021, 6:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.05dd564698d44bc93d15.js
+// Retrieved at 8/18/2021, 7:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, o) {
@@ -1280,7 +1280,7 @@
 								commentId: e,
 								followState: t
 							})).ok) {
-							Object(B.ub)(null !== (l = null === (d = null === (c = s().pages) || void 0 === c ? void 0 : c.comments) || void 0 === d ? void 0 : d.followed) && void 0 !== l ? l : [], null === (u = s().user.account) || void 0 === u ? void 0 : u.id);
+							Object(B.vb)(null !== (l = null === (d = null === (c = s().pages) || void 0 === c ? void 0 : c.comments) || void 0 === d ? void 0 : d.followed) && void 0 !== l ? l : [], null === (u = s().user.account) || void 0 === u ? void 0 : u.id);
 							const e = a ? n.fbt._("Followed! You’ll receive updates when there’s new activity", null, {
 								hk: "1Dp5UH"
 							}) : n.fbt._("Unfollowed, You’ll no longer recieve updates on this comment", null, {
@@ -1779,7 +1779,7 @@
 						}),
 						kind: u.b.SuccessCommunity,
 						text: c
-					})), Object(i.rb)(s + 1)
+					})), Object(i.sb)(s + 1)
 				}
 		},
 		"./src/reddit/actions/publicAccessNetwork/automute.ts": function(e, t, o) {
@@ -2145,15 +2145,20 @@
 						} = e;
 						(t || o) && n === L.a.Enter && this.onSubmit()
 					}, this.onSubmit = () => {
-						this.props.onSubmit({
-							commentMode: Z.h.MARKDOWN,
-							draftType: this.props.draftType,
-							editorState: null,
-							text: this.getCurrentText(),
-							validate: this.props.showWarningModal
-						}), this.onBlur(), this.state.upvoteDefault && (this.props.onVoteClick(), this.setState({
-							hasAlreadyVoted: !0
-						}), this.props.sendEvent(Object(ae.e)(this.props.parentCommentId)))
+						if (this.props.onSubmit({
+								commentMode: Z.h.MARKDOWN,
+								draftType: this.props.draftType,
+								editorState: null,
+								text: this.getCurrentText(),
+								validate: this.props.showWarningModal
+							}), this.onBlur(), this.state.upvoteDefault && (this.props.onVoteClick(), this.setState({
+								hasAlreadyVoted: !0
+							}), this.props.sendEvent(Object(ae.e)(this.props.parentCommentId))), this.props.triggerCelebratoryMoment) {
+							const {
+								postId: e
+							} = this.props;
+							this.props.triggerCelebratoryMoment(!1, e)
+						}
 					}, this.userHasEnteredText = () => {
 						const {
 							text: e
@@ -2663,7 +2668,7 @@
 					} = e, u = l ? Object(W.k)(B.b.EMOJI_PROMO_TOOLTIP_DISPLAY_COUNT_PER_SUBREDDIT, l) : 0, m = d && u < V && s && 0 === c.length, [p, h] = Object(r.useState)(m), b = Object(i.d)();
 					Object(r.useEffect)(() => {
 						p && l && setTimeout(() => {
-							Object(W.S)(B.b.EMOJI_PROMO_TOOLTIP_DISPLAY_COUNT_PER_SUBREDDIT, l), b(Object(z.f)({
+							Object(W.T)(B.b.EMOJI_PROMO_TOOLTIP_DISPLAY_COUNT_PER_SUBREDDIT, l), b(Object(z.f)({
 								tooltipId: J
 							}))
 						}, X)
@@ -2935,14 +2940,19 @@
 					}, this.shouldConfirmCancel = () => this.hasContent() && this.state.hasChanged && this.props.draftType === pe.c.edit, this.onCancel = () => {
 						this.shouldConfirmCancel() ? this.props.cancelModalToggled() : this.cancelForm()
 					}, this.onSubmit = () => {
-						this.props.onSubmit({
-							rteState: this.state.rteState,
-							commentMode: me.h.RICH_TEXT,
-							draftType: this.props.draftType,
-							validate: this.props.showWarningModal
-						}), this.state.upvoteDefault && (this.props.onVoteClick(), this.setState({
-							hasAlreadyVoted: !0
-						}), this.props.sendEvent(Object(Se.e)(this.props.parentCommentId)))
+						if (this.props.onSubmit({
+								rteState: this.state.rteState,
+								commentMode: me.h.RICH_TEXT,
+								draftType: this.props.draftType,
+								validate: this.props.showWarningModal
+							}), this.state.upvoteDefault && (this.props.onVoteClick(), this.setState({
+								hasAlreadyVoted: !0
+							}), this.props.sendEvent(Object(Se.e)(this.props.parentCommentId))), this.props.triggerCelebratoryMoment) {
+							const {
+								postId: e
+							} = this.props;
+							this.props.triggerCelebratoryMoment(!1, e)
+						}
 					}, this.onSwitchEditorMode = (e, t) => {
 						this.props.onSwitchMode(e, t, this.props.draftKey)
 					}, this.onCheck = () => {
@@ -3260,7 +3270,8 @@
 							userName: e.userName,
 							initialText: e.draft ? e.draft.text : e.initialText || "",
 							onSwitchMode: this.onSwitchMode,
-							showWarningModal: this.state.showWarningModal
+							showWarningModal: this.state.showWarningModal,
+							triggerCelebratoryMoment: e.triggerCelebratoryMoment
 						};
 					return e.contributorRequestPending ? a.a.createElement(Ge.a, null) : e.showContributorRequestFlow ? a.a.createElement(v, null) : e.draft.commentMode === me.h.RICH_TEXT ? a.a.createElement(Ze, o) : a.a.createElement(m.b, o)
 				}
@@ -4823,7 +4834,7 @@
 				c = Object(n.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: i,
 					experimentName: s.E
-				}), e => e === s.J.Enabled)
+				}), e => e === s.K.Enabled)
 		},
 		"./src/reddit/selectors/experiments/replyWithUpvote.ts": function(e, t, o) {
 			"use strict";
@@ -4838,8 +4849,8 @@
 				const t = Object(r.j)(e);
 				return !(!t || (null == t ? void 0 : t.karma) && t.karma.fromPosts < 5 && t.karma.fromComments < 10) && Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: n.fb
-				}) === n.fc
+					experimentName: n.gb
+				}) === n.gc
 			}
 		},
 		"./src/reddit/selectors/moderatingComments.ts": function(e, t, o) {
@@ -4880,4 +4891,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.6a8fcc73f46f89115371.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.05dd564698d44bc93d15.js.map

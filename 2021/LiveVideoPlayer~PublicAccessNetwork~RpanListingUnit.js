@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit.2f94cbf02035ed007705.js
-// Retrieved at 8/16/2021, 12:20:11 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit.93edde7d3fd5d09e65ea.js
+// Retrieved at 8/18/2021, 7:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit"], {
 		"./src/lib/VideoSession/VideoSessionManager.ts": function(e, t, s) {
@@ -1418,28 +1418,30 @@
 			}) => {
 				const {
 					name: a
-				} = e, o = Ce(a), n = we(a, !o), i = o ? U._("Unfollow u/{name}", [U._param("name", a)], {
+				} = e, o = Ce(a), n = we(a), i = xe(a, !n), c = n ? U._("Unfollow u/{name}", [U._param("name", a)], {
 					hk: "2n0wqa"
 				}) : U._("Follow u/{name}", [U._param("name", a)], {
 					hk: "20X8Bw"
-				});
-				return r.a.createElement("button", {
+				}), l = r.a.createElement("button", {
 					className: W.a.subscribeToProfileButton,
 					onClick: () => {
-						s(!o), n()
+						s(!n), i()
 					},
-					title: i
-				}, r.a.createElement(xe, {
+					title: c
+				}, r.a.createElement(Ee, {
 					profile: e
-				}), r.a.createElement(Ee, {
-					isSubscribed: o
-				}))
-			}, Ce = e => Object(o.e)(t => Object(D.fb)(t, {
+				}), r.a.createElement(_e, {
+					isSubscribed: n
+				}));
+				return o && o.enableFollowers ? l : null
+			}, Ce = e => Object(o.e)(t => Object(P.nb)(t, {
+				userName: e
+			})), we = e => Object(o.e)(t => Object(D.fb)(t, {
 				identifier: {
 					name: e,
 					type: b.a.PROFILE
 				}
-			})), we = (e, t) => {
+			})), xe = (e, t) => {
 				const s = Object(o.d)();
 				return Object(a.useCallback)(() => {
 					s(Object(u.d)([{
@@ -1447,43 +1449,41 @@
 						type: b.a.PROFILE
 					}], t))
 				}, [s, e, t])
-			}, xe = ({
+			}, Ee = ({
 				profile: e
 			}) => {
 				const {
 					id: t,
 					name: s
-				} = e, a = Object(o.e)(e => Object(P.nb)(e, {
-					userName: s
-				})), i = Ie(a), c = i && Object(x.a)(a.accountIcon);
+				} = e, a = Ce(s), o = ke(a), i = o && Object(x.a)(a.accountIcon);
 				return r.a.createElement("div", {
 					className: Object(n.a)(W.a.subscribeToProfileAvatar, {
-						[W.a.snoovatarHeadshot]: c
+						[W.a.snoovatarHeadshot]: i
 					})
-				}, a ? i ? c ? r.a.createElement(v.a, {
+				}, a ? o ? i ? r.a.createElement(v.a, {
 					headshot: a.accountIcon
 				}) : r.a.createElement("img", {
 					src: a.accountIcon
 				}) : r.a.createElement(h.a, {
 					userId: t
 				}) : null)
-			}, Ee = ({
+			}, _e = ({
 				isSubscribed: e
 			}) => r.a.createElement("div", {
 				className: Object(n.a)(W.a.subscribeToProfileStatus, {
 					[W.a.isSubscribed]: e
 				})
-			}, e ? r.a.createElement(_e, null) : r.a.createElement(ge, null)), _e = () => r.a.createElement("svg", {
+			}, e ? r.a.createElement(ge, null) : r.a.createElement(Ie, null)), ge = () => r.a.createElement("svg", {
 				viewBox: "0 0 20 20",
 				xmlns: "http://www.w3.org/2000/svg"
 			}, r.a.createElement("path", {
 				d: "M17.7072 5.69337L16.3083 4.29337C16.1203 4.10537 15.8662 4.00037 15.6012 4.00037C15.3352 4.00037 15.0812 4.10537 14.8942 4.29337L7.90025 11.2864L5.10725 8.49337C4.71725 8.10237 4.08425 8.10237 3.69325 8.49337L2.29325 9.89337C1.90225 10.2844 1.90225 10.9174 2.29325 11.3074L7.19325 16.2074C7.38925 16.4024 7.64425 16.5004 7.90025 16.5004C8.15625 16.5004 8.41225 16.4024 8.60725 16.2074L17.7072 7.10737C18.0982 6.71637 18.0982 6.08437 17.7072 5.69337"
-			})), ge = () => r.a.createElement("svg", {
+			})), Ie = () => r.a.createElement("svg", {
 				viewBox: "0 0 16 16",
 				xmlns: "http://www.w3.org/2000/svg"
 			}, r.a.createElement("path", {
 				d: "M12.8,6.4 L9.6,6.4 L9.6,3.2 C9.6,2.7576 9.2424,2.4 8.8,2.4 L7.2,2.4 C6.7576,2.4 6.4,2.7576 6.4,3.2 L6.4,6.4 L3.2,6.4 C2.7584,6.4 2.4,6.7576 2.4,7.2 L2.4,8.8 C2.4,9.2424 2.7584,9.6 3.2,9.6 L6.4,9.6 L6.4,12.8 C6.4,13.2424 6.7576,13.6 7.2,13.6 L8.8,13.6 C9.2424,13.6 9.6,13.2424 9.6,12.8 L9.6,9.6 L12.8,9.6 C13.2424,9.6 13.6,9.2424 13.6,8.8 L13.6,7.2 C13.6,6.7576 13.2424,6.4 12.8,6.4"
-			})), Ie = e => {
+			})), ke = e => {
 				const t = Object(o.e)(P.j),
 					s = Object(o.e)(P.B),
 					a = Object(o.e)(P.db);
@@ -1662,4 +1662,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit.2f94cbf02035ed007705.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit.93edde7d3fd5d09e65ea.js.map

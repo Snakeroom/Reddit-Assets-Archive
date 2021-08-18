@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-MediumPost.05861398a21873c9675a.js
-// Retrieved at 8/18/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-MediumPost.ecff2b3f923c59642807.js
+// Retrieved at 8/18/2021, 7:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~StandalonePostPage~reddit-components-MediumPost"], {
 		"./src/lib/hooks/useTooltip.ts": function(e, t, r) {
@@ -813,11 +813,19 @@
 						const {
 							voteState: e
 						} = this.props.model, {
-							onVoteClick: t
+							onVoteClick: t,
+							triggerCelebratoryMoment: r
 						} = this.props;
-						t(f.a.upvoted), this.setState({
-							voted: e !== f.a.upvoted ? f.a.upvoted : f.a.notVoted
-						})
+						t(f.a.upvoted);
+						const n = e !== f.a.upvoted;
+						if (this.setState({
+								voted: n ? f.a.upvoted : f.a.notVoted
+							}), n && r) {
+							const {
+								postId: e
+							} = this.props;
+							r(!0, e)
+						}
 					}, this.onDownvote = () => {
 						const {
 							voteState: e
@@ -3105,8 +3113,8 @@
 				f = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: n.db
-					}) === n.ob.Enabled
+						experimentName: n.eb
+					}) === n.pb.Enabled
 				}
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, r) {
@@ -3545,4 +3553,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-MediumPost.05861398a21873c9675a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-MediumPost.ecff2b3f923c59642807.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.d8e148097b715898aced.js
-// Retrieved at 8/18/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.95e7b1452c7f08e71d14.js
+// Retrieved at 8/18/2021, 7:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CompactPost", "Reddit~StandalonePostPage~reddit-components-MediumPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -3292,7 +3292,7 @@
 						subreddit: n
 					} = e, {
 						isSponsored: s
-					} = t, r = Object(U.a)(), a = Object(G.a)(m.pc) === m.tc.Enabled;
+					} = t, r = Object(U.a)(), a = Object(G.a)(m.qc) === m.uc.Enabled;
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return o.a.createElement(q, {
 						nowrap: e.nowrap
 					}, o.a.createElement(Q, e));
@@ -3498,11 +3498,19 @@
 						const {
 							voteState: e
 						} = this.props.model, {
-							onVoteClick: t
+							onVoteClick: t,
+							triggerCelebratoryMoment: n
 						} = this.props;
-						t(b.a.upvoted), this.setState({
-							voted: e !== b.a.upvoted ? b.a.upvoted : b.a.notVoted
-						})
+						t(b.a.upvoted);
+						const s = e !== b.a.upvoted;
+						if (this.setState({
+								voted: s ? b.a.upvoted : b.a.notVoted
+							}), s && n) {
+							const {
+								postId: e
+							} = this.props;
+							n(!0, e)
+						}
 					}, this.onDownvote = () => {
 						const {
 							voteState: e
@@ -6738,8 +6746,8 @@
 				b = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: s.db
-					}) === s.ob.Enabled
+						experimentName: s.eb
+					}) === s.pb.Enabled
 				}
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, n) {
@@ -7047,9 +7055,9 @@
 				o = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				a = n("./src/reddit/selectors/posts.ts");
 			const i = Object(s.a)(e => Object(o.c)(e, {
-				experimentName: r.fd,
+				experimentName: r.gd,
 				experimentEligibilitySelector: o.a
-			}), a.I, (e, t) => e === r.pd.Enabled && (null == t ? void 0 : t.isCreatedFromAdsUi) || (null == t ? void 0 : t.isSponsored))
+			}), a.I, (e, t) => e === r.qd.Enabled && (null == t ? void 0 : t.isCreatedFromAdsUi) || (null == t ? void 0 : t.isSponsored))
 		},
 		"./src/reddit/selectors/userFlair.ts": function(e, t, n) {
 			"use strict";
@@ -7192,4 +7200,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.d8e148097b715898aced.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.95e7b1452c7f08e71d14.js.map

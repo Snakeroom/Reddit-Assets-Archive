@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.eb606ffcfd4d7fbd4f21.js
-// Retrieved at 8/18/2021, 6:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.11ffe835dc8f57826862.js
+// Retrieved at 8/18/2021, 7:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e"], {
 		"./src/lib/addAllowQuarantinedParam/index.ts": function(e, t, s) {
@@ -1107,11 +1107,11 @@
 			})), s.d(t, "a", (function() {
 				return W
 			})), s.d(t, "B", (function() {
-				return z
-			})), s.d(t, "J", (function() {
-				return J
-			})), s.d(t, "K", (function() {
 				return K
+			})), s.d(t, "J", (function() {
+				return z
+			})), s.d(t, "K", (function() {
+				return J
 			})), s.d(t, "I", (function() {
 				return Y
 			})), s.d(t, "W", (function() {
@@ -1162,9 +1162,9 @@
 				Q = "POST_CREATION__VALIDATION_FAILED",
 				$ = "POST_CREATION__SUBMIT_VALIDATION_FAILED",
 				W = "POST_CREATION__CAPTCHA_REQUIRED",
-				z = "POST_CREATION__SET_SUBMIT_MODE",
-				J = "POST_CREATION__SUBREDDIT_CHANGE_PENDING",
-				K = "POST_CREATION__SUBREDDIT_WILL_CHANGE",
+				K = "POST_CREATION__SET_SUBMIT_MODE",
+				z = "POST_CREATION__SUBREDDIT_CHANGE_PENDING",
+				J = "POST_CREATION__SUBREDDIT_WILL_CHANGE",
 				Y = "POST_CREATION__SUBREDDIT_CHANGE_CANCELED",
 				X = "POST_CREATION__UPDATE_SCHEDULED_POST_ADVANCED_SETTINGS"
 		},
@@ -1426,7 +1426,7 @@
 			})), s.d(t, "n", (function() {
 				return q
 			})), s.d(t, "s", (function() {
-				return K
+				return J
 			})), s.d(t, "r", (function() {
 				return Y
 			})), s.d(t, "g", (function() {
@@ -1533,7 +1533,7 @@
 						method: n.hb.GET
 					}))(s());
 					i.ok ? e(w(h(i.body))) : e(L(i.error))
-				}, M = "POST_DRAFT__SAVE_DRAFT_PENDING", G = "POST_DRAFT__SAVE_DRAFT_SUCCEEDED", F = "POST_DRAFT__SAVE_DRAFT_FAILED", U = "POST_DRAFT__SAVE_DRAFT_VALIDATION_FAILED", V = "POST_DRAFT__SAVE_DRAFT_SUBMIT_VALIDATION_FAILED", B = "POST_DRAFT__SAVE_DRAFT_CAPTCHA_REQUIRED", q = "POST_CREATION__TOGGLE_DRAFT_IS_PUBLIC", H = Object(i.a)(M), Q = Object(i.a)(G), $ = Object(i.a)(F), W = Object(i.a)(U), z = Object(i.a)(V), J = Object(i.a)(B), K = Object(i.a)(q), Y = e => async (t, s, {
+				}, M = "POST_DRAFT__SAVE_DRAFT_PENDING", G = "POST_DRAFT__SAVE_DRAFT_SUCCEEDED", F = "POST_DRAFT__SAVE_DRAFT_FAILED", U = "POST_DRAFT__SAVE_DRAFT_VALIDATION_FAILED", V = "POST_DRAFT__SAVE_DRAFT_SUBMIT_VALIDATION_FAILED", B = "POST_DRAFT__SAVE_DRAFT_CAPTCHA_REQUIRED", q = "POST_CREATION__TOGGLE_DRAFT_IS_PUBLIC", H = Object(i.a)(M), Q = Object(i.a)(G), $ = Object(i.a)(F), W = Object(i.a)(U), K = Object(i.a)(V), z = Object(i.a)(B), J = Object(i.a)(q), Y = e => async (t, s, {
 					apiContext: i
 				}) => {
 					const o = s(),
@@ -1569,7 +1569,7 @@
 						})), e || t(Object(d.a)(p.destSubreddit, s, !1))
 					} else {
 						const e = f.error;
-						e.type === n.G.BAD_CAPTCHA_ERROR ? t(J()) : e.type === n.G.VALIDATION_ERROR ? t(W(e)) : e.type === n.G.SUBMIT_VALIDATION_ERROR ? t(z(e)) : t($(e)), t(Object(a.f)({
+						e.type === n.G.BAD_CAPTCHA_ERROR ? t(z()) : e.type === n.G.VALIDATION_ERROR ? t(W(e)) : e.type === n.G.SUBMIT_VALIDATION_ERROR ? t(K(e)) : t($(e)), t(Object(a.f)({
 							duration: a.a,
 							kind: j.b.Error,
 							text: Object(r.a)(e)
@@ -2573,7 +2573,7 @@
 			! function(e) {
 				e.Whitelisted = "whitelisted", e.Everyone = "everyone"
 			}(n || (n = {}));
-			const V = ["acceptPrivateMessages", "allowClickTracking", "autoplayVideo", "collapseReadMessages", "defaultCommentSort", "emailDigests", "emailUnreadMessages", "emailUnsubscribe", "geopopular", "hideAds", "hideFromRobots", "hideNSFW", "highlightComments", "ignoreSuggestedSort", "inBeta", "labelNSFW", "markMessagesRead", "nightmode", "over18", "sendWelcomeMessages", "showMessagesInInbox", "showNotifications", "showTwitter", "showUsernameMentionNotifications", "showActiveCommunities", "showPresence", ...k.a, "loginOtpEnabled"],
+			const V = ["acceptPrivateMessages", "allowClickTracking", "autoplayVideo", "collapseReadMessages", "defaultCommentSort", "emailDigests", "emailUnreadMessages", "emailUnsubscribe", "enableFollowers", "geopopular", "hideAds", "hideFromRobots", "hideNSFW", "highlightComments", "ignoreSuggestedSort", "inBeta", "labelNSFW", "markMessagesRead", "nightmode", "over18", "sendWelcomeMessages", "showMessagesInInbox", "showNotifications", "showTwitter", "showUsernameMentionNotifications", "showActiveCommunities", "showPresence", ...k.a, "loginOtpEnabled"],
 				B = {
 					acceptPrivateMessages: void 0,
 					activityRelevantAds: !0,
@@ -2586,6 +2586,7 @@
 					rememberCommunityLayout: !1,
 					defaultCommentSort: u.s.CONFIDENCE,
 					editorMode: G.h.RICH_TEXT,
+					enableFollowers: !0,
 					geopopular: void 0,
 					globalTheme: M.a,
 					hamburgerTray: void 0,
@@ -2862,12 +2863,17 @@
 					case D.m: {
 						const s = t.payload,
 							{
-								showActiveCommunities: n
+								enableFollowers: n,
+								showActiveCommunities: r
 							} = s.additional;
-						return e.showActiveCommunities !== n ? {
-							...e,
-							showActiveCommunities: n
-						} : e
+						let i = e;
+						return e.enableFollowers !== n && (i = {
+							...i,
+							enableFollowers: n
+						}), e.showActiveCommunities !== r && (i = {
+							...i,
+							showActiveCommunities: r
+						}), i
 					}
 					default:
 						return e
@@ -3001,10 +3007,10 @@
 				o = s("./src/reddit/selectors/experiments/index.ts"),
 				d = s("./src/reddit/selectors/experiments/utils.ts");
 			const a = Object(n.a)(e => Object(i.c)(e, {
-					experimentName: r.Ac,
+					experimentName: r.Bc,
 					experimentEligibilitySelector: o.e
 				}), d.a),
-				c = Object(n.a)(a, e => e === r.Dc.Enabled)
+				c = Object(n.a)(a, e => e === r.Ec.Enabled)
 		},
 		"./src/reddit/selectors/experiments/inboxRedesign.ts": function(e, t, s) {
 			"use strict";
@@ -3035,43 +3041,43 @@
 				o = s("./src/reddit/selectors/experiments/index.ts"),
 				d = s("./src/reddit/selectors/experiments/utils.ts");
 			const a = Object(n.a)(e => Object(i.c)(e, {
-					experimentName: r.bb,
+					experimentName: r.cb,
 					experimentEligibilitySelector: o.e
 				}), d.a),
-				c = Object(n.a)(a, e => e === r.Jc.Enabled),
+				c = Object(n.a)(a, e => e === r.Kc.Enabled),
 				u = Object(n.a)(e => Object(i.c)(e, {
-					experimentName: r.Cc,
+					experimentName: r.Dc,
 					experimentEligibilitySelector: o.e
 				}), d.a),
-				l = Object(n.a)(c, u, (e, t) => e && t === r.Ic.Enabled),
+				l = Object(n.a)(c, u, (e, t) => e && t === r.Jc.Enabled),
 				b = Object(n.a)(e => Object(i.c)(e, {
-					experimentName: r.eb,
+					experimentName: r.fb,
 					experimentEligibilitySelector: o.e
 				}), d.a),
-				m = Object(n.a)(c, b, (e, t) => e && t === r.pb.Enabled),
+				m = Object(n.a)(c, b, (e, t) => e && t === r.qb.Enabled),
 				p = Object(n.a)(e => Object(i.c)(e, {
-					experimentName: r.Y,
-					experimentEligibilitySelector: o.e
-				}), d.a),
-				f = Object(n.a)(p, e => e === r.Fc.Banner_1st_time),
-				O = Object(n.a)(p, e => e === r.Fc.Tooltip_persist),
-				_ = Object(n.a)(p, e => e === r.Fc.Tooltip_1st_time),
-				E = Object(n.a)(e => Object(i.c)(e, {
 					experimentName: r.Z,
 					experimentEligibilitySelector: o.e
 				}), d.a),
-				h = Object(n.a)(E, e => e === r.Gc.ContinuousScroll),
-				T = Object(n.a)(e => Object(i.c)(e, {
-					experimentName: r.T,
-					experimentEligibilitySelector: o.e
-				}), d.a),
-				P = Object(n.a)(T, e => e === r.xb.Banner1stTime),
-				g = Object(n.a)(T, e => e === r.xb.BannerPersist),
-				j = Object(n.a)(e => Object(i.c)(e, {
+				f = Object(n.a)(p, e => e === r.Gc.Banner_1st_time),
+				O = Object(n.a)(p, e => e === r.Gc.Tooltip_persist),
+				_ = Object(n.a)(p, e => e === r.Gc.Tooltip_1st_time),
+				E = Object(n.a)(e => Object(i.c)(e, {
 					experimentName: r.ab,
 					experimentEligibilitySelector: o.e
 				}), d.a),
-				C = Object(n.a)(j, e => e === r.Hc.Enabled)
+				h = Object(n.a)(E, e => e === r.Hc.ContinuousScroll),
+				T = Object(n.a)(e => Object(i.c)(e, {
+					experimentName: r.U,
+					experimentEligibilitySelector: o.e
+				}), d.a),
+				P = Object(n.a)(T, e => e === r.yb.Banner1stTime),
+				g = Object(n.a)(T, e => e === r.yb.BannerPersist),
+				j = Object(n.a)(e => Object(i.c)(e, {
+					experimentName: r.bb,
+					experimentEligibilitySelector: o.e
+				}), d.a),
+				C = Object(n.a)(j, e => e === r.Ic.Enabled)
 		},
 		"./src/redditGQL/operations/BadgeIndicators.json": function(e) {
 			e.exports = JSON.parse('{"id":"712476d48c90"}')
@@ -3087,4 +3093,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.eb606ffcfd4d7fbd4f21.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.11ffe835dc8f57826862.js.map
