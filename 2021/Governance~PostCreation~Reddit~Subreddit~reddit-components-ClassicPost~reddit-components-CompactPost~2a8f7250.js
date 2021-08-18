@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.07181f77aebc36d1fe8b.js
-// Retrieved at 8/18/2021, 3:51:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.d5e1f846978542502f45.js
+// Retrieved at 8/18/2021, 6:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250"], {
 		"./src/lib/humanizeDate/index.ts": function(e, t, r) {
@@ -954,7 +954,7 @@
 					}),
 					postCategories: (e, {
 						post: t
-					}) => Object(y.x)(e, t),
+					}) => Object(y.y)(e, t),
 					subredditName: (e, {
 						post: t
 					}) => Object(O.T)(e, {
@@ -1659,10 +1659,10 @@
 						return !(!t.isStickied || !((e, t) => {
 							const r = Object(i.c)(e, {
 								experimentEligibilitySelector: i.a,
-								experimentName: o.B,
+								experimentName: o.D,
 								expEventOverride: t
 							});
-							return !!(Object(o.de)(r) ? void 0 : r)
+							return !!(Object(o.fe)(r) ? void 0 : r)
 						})(r)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -2474,7 +2474,7 @@
 					const r = Object(p.a)(e, {
 						commentId: t
 					});
-					return r ? Object(i.a)(Object(l.G)(e, r), t) : ""
+					return r ? Object(i.a)(Object(l.H)(e, r), t) : ""
 				},
 				D = (e, {
 					commentId: t
@@ -2598,4 +2598,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.07181f77aebc36d1fe8b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.d5e1f846978542502f45.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AdminPanel.f2249574115eb5b9f1c9.js
-// Retrieved at 8/18/2021, 3:51:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AdminPanel.c55aef5f817259c4ea6a.js
+// Retrieved at 8/18/2021, 6:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AdminPanel"], {
 		"./src/reddit/components/AdminPanel/CopyLink/index.m.less": function(e, t, n) {
@@ -443,7 +443,7 @@
 				ce = n("./src/reddit/selectors/trending.ts");
 			const le = Object(h.c)({
 				ads: oe.b,
-				posts: ie.K,
+				posts: ie.L,
 				trends: ce.a
 			});
 			class de extends a.a.Component {
@@ -703,9 +703,9 @@
 				nt = b.a.wrapped(We.b, "DropdownRow", Xe.a),
 				st = e => `experiment-${e}`;
 			var at = e => {
-					const t = ["control_1", "control_2", ...He.k[e.experimentName]];
+					const t = ["control_1", "control_2", ...He.m[e.experimentName]];
 					if (!t) return null;
-					const n = He.ec.has(e.experimentName);
+					const n = He.gc.has(e.experimentName);
 					return a.a.createElement(Q.a, {
 						className: e.className
 					}, a.a.createElement(Ye, null, `${e.experimentName}${n?"*":""}`), a.a.createElement(Ze, {
@@ -740,7 +740,7 @@
 			const it = b.a.wrapped(fe.i, "PrimaryButton", ot.a),
 				ct = b.a.wrapped(at, "Experiment", ot.a),
 				lt = b.a.div("Footnote", ot.a),
-				dt = Object(h.a)(e => e.user.experiments.byName, e => e.experimentOverrides, (e, t) => Object.keys(He.k).reduce((n, s) => {
+				dt = Object(h.a)(e => e.user.experiments.byName, e => e.experimentOverrides, (e, t) => Object.keys(He.m).reduce((n, s) => {
 					var a;
 					const r = e[s.toLowerCase()],
 						o = null == r ? void 0 : r.variant;
@@ -788,7 +788,7 @@
 					}, a.a.createElement(it, {
 						onClick: this.onCopyClick
 					}, "Copy Experiment Config URL"), a.a.createElement(Ke, {
-						items: Object.keys(He.k),
+						items: Object.keys(He.m),
 						listItem: this.renderExperiment
 					}), a.a.createElement(lt, null, "* Whitelisted for query param override in production"))
 				}
@@ -1872,4 +1872,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AdminPanel.f2249574115eb5b9f1c9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AdminPanel.c55aef5f817259c4ea6a.js.map

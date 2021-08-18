@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NotificationUnit.8a5a512383d7eebef5c8.js
-// Retrieved at 8/18/2021, 3:51:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationUnit.8a1adb1f6701a5216b02.js
+// Retrieved at 8/18/2021, 6:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationUnit"], {
 		"./src/reddit/components/NotificationUnit/Avatar.tsx": function(e, t, n) {
@@ -718,13 +718,13 @@
 				r = n("./src/reddit/selectors/user.ts");
 			const l = e => Object(r.I)(e) || Object(r.J)(e),
 				d = Object(i.a)(e => Object(o.c)(e, {
-					experimentName: a.zc,
+					experimentName: a.Bc,
 					experimentEligibilitySelector: l
 				}), s.a),
-				c = Object(i.a)(d, e => e === a.Cc.SeePostCTAs),
-				m = Object(i.a)(d, e => e === a.Cc.ReplyCTAs),
-				u = Object(i.a)(d, e => e === a.Cc.AllCTAs)
+				c = Object(i.a)(d, e => e === a.Ec.SeePostCTAs),
+				m = Object(i.a)(d, e => e === a.Ec.ReplyCTAs),
+				u = Object(i.a)(d, e => e === a.Ec.AllCTAs)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationUnit.8a5a512383d7eebef5c8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationUnit.8a1adb1f6701a5216b02.js.map

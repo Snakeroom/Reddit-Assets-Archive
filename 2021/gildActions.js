@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/gildActions.01c94863f9236f48a5da.js
-// Retrieved at 8/16/2021, 8:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/gildActions.e71bd496bb459b2bf42d.js
+// Retrieved at 8/18/2021, 6:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["gildActions"], {
 		"./src/reddit/actions/gold/econPurchase.ts": function(e, t, s) {
@@ -44,11 +44,11 @@
 		"./src/reddit/actions/gold/gild.ts": function(e, t, s) {
 			"use strict";
 			s.r(t), s.d(t, "setIsAnonymous", (function() {
-				return H
-			})), s.d(t, "updateMessage", (function() {
 				return U
-			})), s.d(t, "gildGqlRequested", (function() {
+			})), s.d(t, "updateMessage", (function() {
 				return Z
+			})), s.d(t, "gildGqlRequested", (function() {
+				return H
 			})), s.d(t, "triggerLoader", (function() {
 				return V
 			})), s.d(t, "gildPending", (function() {
@@ -92,8 +92,8 @@
 				v = s("./src/reddit/models/Toast/index.ts"),
 				y = s("./src/reddit/models/User/index.ts"),
 				k = s("./src/reddit/selectors/commentSelector.ts"),
-				_ = s("./src/reddit/selectors/communityAwards.ts"),
-				I = s("./src/reddit/selectors/gild.ts"),
+				I = s("./src/reddit/selectors/communityAwards.ts"),
+				_ = s("./src/reddit/selectors/gild.ts"),
 				A = s("./src/reddit/selectors/gold/awardIcon.ts"),
 				x = s("./src/reddit/selectors/gold/econPurchase.ts"),
 				C = s("./src/reddit/selectors/gold/purchaseCatalog.ts"),
@@ -126,9 +126,9 @@
 				z = s("./src/reddit/actions/gold/awardKarma.ts"),
 				J = s("./src/reddit/actions/gold/constants.ts"),
 				B = s("./src/reddit/actions/gold/econPurchase.ts");
-			const H = Object(a.a)(J.r),
-				U = Object(a.a)(J.v),
-				Z = (e, t) => async (s, a, {
+			const U = Object(a.a)(J.r),
+				Z = Object(a.a)(J.v),
+				H = (e, t) => async (s, a, {
 					gqlContext: d
 				}) => {
 					const n = a().gild,
@@ -205,7 +205,7 @@
 				}, se = Object(a.a)(J.s), re = (e, t) => {
 					const {
 						id: s
-					} = t, r = Object(F.a)(s) ? Object(G.H)(e, {
+					} = t, r = Object(F.a)(s) ? Object(G.I)(e, {
 						postId: s
 					}) : Object(k.a)(e, {
 						commentId: s
@@ -226,11 +226,11 @@
 							awardId: u,
 							id: m
 						} = e,
-						h = Object(_.a)(a, u),
+						h = Object(I.a)(a, u),
 						w = e.awardKarmaReceived,
 						f = Object(R.j)(a),
-						k = Object(I.b)(a) || Object(N.d)(N.a.GildingFlow, !1);
-					if (Object(I.g)(a)) {
+						k = Object(_.b)(a) || Object(N.d)(N.a.GildingFlow, !1);
+					if (Object(_.g)(a)) {
 						const e = "success.gild",
 							t = {},
 							s = Object(A.a)(a, {
@@ -309,7 +309,7 @@
 						if (e.length) {
 							const s = Math.max(900 - K, 10),
 								r = Math.max(300 - K, 10),
-								d = Object(F.a)(m) && Object(O.o)(Object(G.H)(a, {
+								d = Object(F.a)(m) && Object(O.o)(Object(G.I)(a, {
 									postId: m
 								}));
 							setTimeout(() => t(Object(o.e)({
@@ -493,4 +493,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/gildActions.01c94863f9236f48a5da.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/gildActions.e71bd496bb459b2bf42d.js.map

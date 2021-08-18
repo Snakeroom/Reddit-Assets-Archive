@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-MediumPost.adc3aae5ac0b29bbeb50.js
-// Retrieved at 8/18/2021, 3:51:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-MediumPost.c99dcfa36673e5fe15eb.js
+// Retrieved at 8/18/2021, 6:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~StandalonePostPage~reddit-components-MediumPost"], {
 		"./src/lib/hooks/useTooltip.ts": function(e, t, r) {
@@ -163,7 +163,7 @@
 					let b = null;
 					if (f) b = f.id;
 					else if (Object(o.a)(r)) {
-						const e = Object(m.H)(a, {
+						const e = Object(m.I)(a, {
 							postId: r
 						});
 						e && (b = e.belongsTo.id)
@@ -317,21 +317,21 @@
 						} = e, n = 1 !== r;
 						t ? V(!0) : n && V(!1)
 					})
-				}, []), q = Object(n.useRef)({
+				}, []), W = Object(n.useRef)({
 					rootMargin: "2000px 0px 2000px 0px"
 				});
-				Object(i.a)(A, B, q.current);
-				const W = Object(d.a)(t);
+				Object(i.a)(A, B, W.current);
+				const z = Object(d.a)(t);
 				Object(n.useEffect)(() => {
-					if (void 0 !== W && W !== t) {
-						const e = t - W;
+					if (void 0 !== z && z !== t) {
+						const e = t - z;
 						G.current ? (T.current(e), p && p()) : D.current += e
 					}
 					return () => {
 						clearTimeout(M.current), clearTimeout(R.current), clearTimeout(N.current)
 					}
 				}, [t]);
-				const z = Object(n.useCallback)(() => I(!0), [I]),
+				const q = Object(n.useCallback)(() => I(!0), [I]),
 					K = 0 === C.length,
 					H = _ || K,
 					Q = Object(n.useRef)(((e, t) => `${t}_${e}_count_anim`)(h, r));
@@ -351,7 +351,7 @@
 						"aria-hidden": !0,
 						className: m.a.digitDeltaWrapper,
 						key: t,
-						onTransitionEnd: z,
+						onTransitionEnd: q,
 						style: y && C.length > 0 && !_ ? {
 							transform: `translateY(-${j&&r.length>1?100:100*(r.length-1)}%)`,
 							transitionDuration: `${(j?500:750)/1e3}s`
@@ -2910,25 +2910,25 @@
 				i = e => {
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: n.l
+						experimentName: n.n
 					});
-					return t === n.q.VoteCountOnly || t === n.q.CommentCountOnly || t === n.q.VoteAndCommentCount
+					return t === n.s.VoteCountOnly || t === n.s.CommentCountOnly || t === n.s.VoteAndCommentCount
 				},
 				d = e => {
 					if (Object(c.c)(e)) return !1;
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: n.l
+						experimentName: n.n
 					});
-					return t === n.q.VoteCountOnly || t === n.q.VoteAndCommentCount
+					return t === n.s.VoteCountOnly || t === n.s.VoteAndCommentCount
 				},
 				l = e => {
 					if (Object(c.c)(e)) return !1;
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: n.l
+						experimentName: n.n
 					});
-					return t === n.q.CommentCountOnly || t === n.q.VoteAndCommentCount
+					return t === n.s.CommentCountOnly || t === n.s.VoteAndCommentCount
 				},
 				u = (e, {
 					post: t
@@ -2941,10 +2941,10 @@
 					const r = e.posts.models[t];
 					if (Object(c.c)(e) || !r || r.isSponsored || r.isScoreHidden || r.score >= a) return !1;
 					const s = Object(o.d)(e, {
-							experimentName: n.l
+							experimentName: n.n
 						}),
 						i = null == s ? void 0 : s.variant;
-					return i === n.q.VoteCountOnly || i === n.q.VoteAndCommentCount
+					return i === n.s.VoteCountOnly || i === n.s.VoteAndCommentCount
 				},
 				p = (e, {
 					postId: t
@@ -2952,16 +2952,16 @@
 					const r = e.posts.models[t];
 					if (Object(c.c)(e) || !r || r.isSponsored || r.numComments >= a) return !1;
 					const s = Object(o.d)(e, {
-							experimentName: n.l
+							experimentName: n.n
 						}),
 						i = null == s ? void 0 : s.variant;
-					return i === n.q.CommentCountOnly || i === n.q.VoteAndCommentCount
+					return i === n.s.CommentCountOnly || i === n.s.VoteAndCommentCount
 				},
 				f = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: n.bb
-					}) === n.mb.Enabled
+						experimentName: n.db
+					}) === n.ob.Enabled
 				}
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, r) {
@@ -3044,7 +3044,7 @@
 				}) => {
 					const s = Object(d.c)(e),
 						c = l.find(e => e >= r),
-						i = n ? Object(a.H)(e, {
+						i = n ? Object(a.I)(e, {
 							postId: n
 						}) || Object(o.a)(e, {
 							commentId: n
@@ -3400,4 +3400,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-MediumPost.adc3aae5ac0b29bbeb50.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-MediumPost.c99dcfa36673e5fe15eb.js.map

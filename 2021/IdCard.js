@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.6150985e8ce59f529e99.js
-// Retrieved at 8/18/2021, 3:51:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.3a5abc8e27b17b20f10a.js
+// Retrieved at 8/18/2021, 6:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -3223,8 +3223,8 @@
 					showContributorRequestFlow: e => Object(ne.q)(e, De.e.Post),
 					showCreatePollButton: e => (e => Object(Ue.c)(e, {
 						experimentEligibilitySelector: Ue.a,
-						experimentName: Be.E
-					}) === Be.K.Treatment)(e) && !Object(Ie.h)(),
+						experimentName: Be.G
+					}) === Be.M.Treatment)(e) && !Object(Ie.h)(),
 					subreddit: (e, t) => Object(ne.z)(e, {
 						subredditName: t.listingName
 					}),
@@ -4705,10 +4705,10 @@
 						return !(!t.isStickied || !((e, t) => {
 							const n = Object(o.c)(e, {
 								experimentEligibilitySelector: o.a,
-								experimentName: i.B,
+								experimentName: i.D,
 								expEventOverride: t
 							});
-							return !!(Object(i.de)(n) ? void 0 : n)
+							return !!(Object(i.fe)(n) ? void 0 : n)
 						})(n)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -6044,7 +6044,7 @@
 					const n = Object(p.a)(e, {
 						commentId: t
 					});
-					return n ? Object(o.a)(Object(l.G)(e, n), t) : ""
+					return n ? Object(o.a)(Object(l.H)(e, n), t) : ""
 				},
 				D = (e, {
 					commentId: t
@@ -6172,9 +6172,9 @@
 				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = n("./src/reddit/selectors/user.ts");
 			const o = e => {
-				return Object(i.G)(e) || s.F.Treatment1 === Object(r.c)(e, {
+				return Object(i.G)(e) || s.H.Treatment1 === Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: s.z
+					experimentName: s.B
 				})
 			}
 		},
@@ -6252,4 +6252,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.6150985e8ce59f529e99.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.3a5abc8e27b17b20f10a.js.map

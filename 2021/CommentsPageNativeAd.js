@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.5db6e5b2a6c4f3a6c764.js
-// Retrieved at 8/17/2021, 2:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.413c751de5403c428f44.js
+// Retrieved at 8/18/2021, 6:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPageNativeAd"], {
 		"./src/reddit/components/CommentsPageNativeAd/index.m.less": function(e, t, s) {
@@ -64,22 +64,22 @@
 				S = s("./src/reddit/components/UserIcon/index.tsx"),
 				_ = s("./src/reddit/controls/MetaSeparator/index.tsx"),
 				w = s("./src/reddit/components/CommentsPageNativeAd/index.m.less"),
-				A = s.n(w);
-			var L = e => a.a.createElement("div", {
-					className: A.a.adTopMetaContainer
+				L = s.n(w);
+			var A = e => a.a.createElement("div", {
+					className: L.a.adTopMetaContainer
 				}, a.a.createElement(S.a, {
 					iconUrl: e.iconUrl,
 					isNSFW: !1,
 					userName: e.author,
-					className: A.a.userIcon,
+					className: L.a.userIcon,
 					omitResponsivePresenceWrapper: !0
 				}), a.a.createElement(P.a, {
-					className: A.a.authorLink,
+					className: L.a.authorLink,
 					"data-click-id": "user",
 					author: e.author
 				}, `u/${e.author}`), a.a.createElement(_.a, {
 					isSmall: !0,
-					className: A.a.metaSeparator
+					className: L.a.metaSeparator
 				}), a.a.createElement(N.a, {
 					adHeaderVariant: e.adHeaderVariant,
 					greyTextColor: e.greyTextColor
@@ -112,11 +112,11 @@
 				url: l,
 				usePreview: m,
 				mediaExpanded: p
-			}) => n && n.media ? p && Object(u.K)(n.media) ? a.a.createElement("div", null, a.a.createElement(R.a, {
-				className: A.a.close,
+			}) => n && n.media ? p && Object(u.L)(n.media) ? a.a.createElement("div", null, a.a.createElement(R.a, {
+				className: L.a.close,
 				onClick: t
 			}), a.a.createElement(T.a, {
-				className: A.a.videoPlayer,
+				className: L.a.videoPlayer,
 				post: n,
 				isNotCardView: !0,
 				autoplayPref: !0,
@@ -128,18 +128,18 @@
 				showCentered: !1,
 				scrollerItemRef: c
 			})) : a.a.createElement(M.a, {
-				className: Object(I.a)(A.a.thumbnail, e),
+				className: Object(I.a)(L.a.thumbnail, e),
 				containerClassName: d,
 				crosspost: s,
 				forceShowNSFW: r,
 				isMeta: o,
 				post: n,
 				redditStyle: i,
-				removeLink: Object(u.K)(n.media),
-				url: Object(u.K)(n.media) ? void 0 : l,
+				removeLink: Object(u.L)(n.media),
+				url: Object(u.L)(n.media) ? void 0 : l,
 				usePreview: m
 			}) : a.a.createElement(M.a, {
-				className: Object(I.a)(A.a.thumbnail, e),
+				className: Object(I.a)(L.a.thumbnail, e),
 				containerClassName: d,
 				crosspost: s,
 				forceShowNSFW: r,
@@ -154,30 +154,30 @@
 						className: n
 					} = e, i = r && !t;
 					return a.a.createElement("div", {
-						className: t ? Object(I.a)(A.a.videoContainer, n) : Object(I.a)(A.a.thumbnailContainer, n),
+						className: t ? Object(I.a)(L.a.videoContainer, n) : Object(I.a)(L.a.thumbnailContainer, n),
 						onClick: i ? () => s(!0) : void 0
 					}, a.a.createElement(B, V({}, e, {
 						mediaExpanded: t,
 						closeVideo: () => s(!1)
 					})), i && a.a.createElement(W.a, {
-						className: A.a.playContainer,
-						playIconClassName: A.a.playIcon,
+						className: L.a.playContainer,
+						playIconClassName: L.a.playIcon,
 						onClick: () => s(!0)
 					}))
 				},
 				F = s("./src/reddit/connectors/ClassicPost/index.tsx"),
 				H = s("./src/reddit/connectors/ClassicPost/searchResults.tsx"),
 				D = s("./src/reddit/helpers/path/index.ts"),
-				K = s("./src/reddit/selectors/experiments/adHeaderExperiment.ts"),
-				Z = s("./src/reddit/selectors/profile.ts");
-			const z = Object(n.b)(() => Object(c.c)({
+				Z = s("./src/reddit/selectors/experiments/adHeaderExperiment.ts"),
+				z = s("./src/reddit/selectors/profile.ts");
+			const K = Object(n.b)(() => Object(c.c)({
 				iconUrl: (e, t) => {
-					const s = Object(Z.j)(e, {
+					const s = Object(z.j)(e, {
 						profileName: t.post.author
 					});
 					if (s && s.icon) return s.icon.url
 				},
-				adHeaderVariant: e => Object(K.a)(e)
+				adHeaderVariant: e => Object(Z.a)(e)
 			}), (e, t) => ({
 				fetchProfile: () => {
 					e(Object(x.d)(t.post.author))
@@ -197,13 +197,13 @@
 					} = this.props;
 					let n = Object(m.a)(o);
 					return o.media && Object(u.E)(o.media) && (null === (s = null === (t = null === (e = null == o ? void 0 : o.media) || void 0 === e ? void 0 : e.gallery) || void 0 === t ? void 0 : t.items[0]) || void 0 === s ? void 0 : s.displayUrl) && (n = o.media.gallery.items[0].displayUrl), o.source && o.isLocked ? a.a.createElement(j.b, {
-						className: A.a.styledOutboundLink,
+						className: L.a.styledOutboundLink,
 						href: o.source.url,
 						postId: o.id,
 						isSponsored: o.isSponsored,
 						source: o.source
 					}, n) : a.a.createElement(i.a, {
-						className: A.a.styledOutboundLink,
+						className: L.a.styledOutboundLink,
 						rel: "nofollow",
 						"data-click-id": "comments",
 						"data-test-id": y.a,
@@ -231,38 +231,38 @@
 					return l.isBlank ? a.a.createElement(h.default, {
 						postId: l.id
 					}) : a.a.createElement("div", null, a.a.createElement("div", {
-						className: A.a.commentsSpacer
+						className: L.a.commentsSpacer
 					}), a.a.createElement(f.a, {
-						className: A.a.postContainer,
+						className: L.a.postContainer,
 						isOverlay: i,
 						post: l,
 						eventFactory: t
 					}, a.a.createElement(v.a, {
 						"data-click-id": "background"
 					}, a.a.createElement("div", {
-						className: A.a.mainBody
+						className: L.a.mainBody
 					}, a.a.createElement("div", {
-						className: A.a.content,
+						className: L.a.content,
 						"data-click-id": "body"
-					}, a.a.createElement(L, {
+					}, a.a.createElement(A, {
 						author: l.author,
 						iconUrl: o,
 						adHeaderVariant: e,
 						greyTextColor: Object(E.e)(this.props)
 					}), a.a.createElement("div", {
-						className: A.a.contentRow
+						className: L.a.contentRow
 					}, !(n && !x) && a.a.createElement(U, {
 						isMeta: l.isMeta,
 						post: l,
 						redditStyle: m,
-						isVideo: l.media && Object(u.K)(l.media),
+						isVideo: l.media && Object(u.L)(l.media),
 						scrollerItemRef: p
 					}), a.a.createElement("div", {
-						className: A.a.contentColumn
+						className: L.a.contentColumn
 					}, a.a.createElement(O.c, {
 						format: r,
-						outboundLinkClassName: A.a.outboundLink,
-						className: A.a.postTitle,
+						outboundLinkClassName: L.a.outboundLink,
+						className: L.a.postTitle,
 						poll: c,
 						post: l,
 						redditStyle: m,
@@ -271,22 +271,22 @@
 						isCommentsPage: !1,
 						isCommentsPageAd: !0
 					}), l.permalink && a.a.createElement(b.a, {
-						className: A.a.adLinkWrapper
+						className: L.a.adLinkWrapper
 					}, this.checkCommentsActive(), l.callToAction && l.source && l.source.url && a.a.createElement(g.a, {
 						href: l.source.url.replace(d.a.redditUrl, ""),
 						isSponsored: l.isSponsored,
 						source: l.source,
 						postId: l.id
 					}, l.callToAction)))), a.a.createElement("div", {
-						className: A.a.spacer
-					}), a.a.createElement(C.d, null))), Object(k.a)(l, A.a, p, s, !1, !1))), a.a.createElement("div", {
-						className: A.a.commentsSpacer
+						className: L.a.spacer
+					}), a.a.createElement(C.d, null))), Object(k.a)(l, L.a, p, s, !1, !1))), a.a.createElement("div", {
+						className: L.a.commentsSpacer
 					}))
 				}
 			}
 			const Y = Object(l.a)(G),
 				J = Object(H.a)(Y);
-			t.default = Object(F.a)(z(Y))
+			t.default = Object(F.a)(K(Y))
 		},
 		"./src/reddit/components/PostBackgroundWrapper/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -521,4 +521,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.5db6e5b2a6c4f3a6c764.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.413c751de5403c428f44.js.map

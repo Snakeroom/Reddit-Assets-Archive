@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~ModListing.fd80b077d81482ef065d.js
-// Retrieved at 8/18/2021, 3:51:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~ModListing.2490e7d6111ab767d206.js
+// Retrieved at 8/18/2021, 6:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~ModListing"], {
 		"./src/reddit/actions/focusedVerticals/index.ts": function(e, t, s) {
@@ -2091,7 +2091,7 @@
 								subredditId: s
 							})
 						}
-						return Object(_.S)(e, {
+						return Object(_.T)(e, {
 							...t
 						})
 					},
@@ -2107,7 +2107,7 @@
 								subredditId: t
 							})
 						}
-						return Object(_.E)(e, t, s, r)
+						return Object(_.F)(e, t, s, r)
 					}),
 					subredditsById: v.ab,
 					viewportDataLoaded: C.a,
@@ -2472,15 +2472,15 @@
 			const i = e => {
 					const t = Object(r.c)(e, {
 						experimentEligibilitySelector: o.J,
-						experimentName: n.Jb
+						experimentName: n.Lb
 					});
-					return !(!t || Object(n.de)(t))
+					return !(!t || Object(n.fe)(t))
 				},
 				a = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: o.J,
-						experimentName: n.Jb
-					}) === n.ic.ListingEnabled
+						experimentName: n.Lb
+					}) === n.kc.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, s) {
@@ -2546,10 +2546,10 @@
 					return t !== a && t !== i && (!(i + s > t) && (!(t + s > a) && !((e, t, s) => {
 						const n = s[t - 1],
 							r = s[t],
-							i = r && Object(o.H)(e, {
+							i = r && Object(o.I)(e, {
 								postId: n
 							}) || null,
-							a = r && Object(o.H)(e, {
+							a = r && Object(o.I)(e, {
 								postId: r
 							}) || null;
 						return i && i.isSponsored || a && a.isSponsored
@@ -2562,7 +2562,7 @@
 				}) => {
 					const n = t.slice().sort();
 					let r = -1;
-					const i = Object(o.A)(e, {
+					const i = Object(o.B)(e, {
 							listingKey: s.listingKey
 						}),
 						a = [];
@@ -2594,4 +2594,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing.fd80b077d81482ef065d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing.2490e7d6111ab767d206.js.map

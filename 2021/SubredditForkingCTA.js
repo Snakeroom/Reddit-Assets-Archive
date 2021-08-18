@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditForkingCTA.81ce25e1d3d265332e6a.js
-// Retrieved at 8/18/2021, 3:51:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditForkingCTA.c81f767e062a764aadd8.js
+// Retrieved at 8/18/2021, 6:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditForkingCTA"], {
 		"./src/reddit/components/CreateCommunityButton/index.m.less": function(t, _, e) {
@@ -237,10 +237,10 @@
 				m = e("./src/reddit/helpers/chooseVariant/index.ts"),
 				p = e("./src/reddit/selectors/experiments/utils.ts");
 			const y = Object(c.a)(t => Object(m.c)(t, {
-					experimentName: u.Ed,
+					experimentName: u.Gd,
 					experimentEligibilitySelector: m.a
 				}), p.a),
-				x = Object(c.a)(y, t => t === u.Kd.Enabled);
+				x = Object(c.a)(y, t => t === u.Md.Enabled);
 			var f = e("./src/reddit/selectors/posts.ts"),
 				b = e("./src/reddit/components/CreateCommunityButton/index.tsx"),
 				h = e("./src/reddit/components/TrackingHelper/index.tsx");
@@ -1143,7 +1143,7 @@
 			var k = e("./src/reddit/components/SubredditForkingCTA/index.m.less"),
 				j = e.n(k);
 			const w = (t, _) => {
-					const e = Object(f.U)(t, {
+					const e = Object(f.V)(t, {
 						..._,
 						disallowProfile: !0
 					});
@@ -1562,4 +1562,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditForkingCTA.81ce25e1d3d265332e6a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditForkingCTA.c81f767e062a764aadd8.js.map

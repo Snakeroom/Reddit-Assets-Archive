@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportPage.c40ebbfeb1d05f69a38a.js
-// Retrieved at 8/18/2021, 3:51:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportPage.3bb999e99795a38afe63.js
+// Retrieved at 8/18/2021, 6:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportPage"], {
 		"./src/lib/formatPythonString/index.ts": function(e, t, n) {
@@ -1697,15 +1697,15 @@
 			var r = n("./src/reddit/constants/experiments.ts"),
 				s = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				a = n("./src/reddit/selectors/user.ts");
-			const o = e => r.b.Enabled === Object(s.c)(e, {
+			const o = e => r.c.Enabled === Object(s.c)(e, {
 					experimentEligibilitySelector: a.J,
-					experimentName: r.g
+					experimentName: r.i
 				}),
-				i = e => r.d.Enabled === Object(s.c)(e, {
+				i = e => r.e.Enabled === Object(s.c)(e, {
 					experimentEligibilitySelector: a.J,
-					experimentName: r.j
+					experimentName: r.l
 				})
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportPage.c40ebbfeb1d05f69a38a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportPage.3bb999e99795a38afe63.js.map

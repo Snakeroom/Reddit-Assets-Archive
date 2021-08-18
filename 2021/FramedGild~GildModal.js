@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.25ad850733d7866abdef.js
-// Retrieved at 8/18/2021, 3:51:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.fabe6d428cf446c64cb7.js
+// Retrieved at 8/18/2021, 6:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -516,7 +516,7 @@
 				}, se = Object(n.a)(q.s), re = (e, t) => {
 					const {
 						id: s
-					} = t, r = Object(U.a)(s) ? Object(P.H)(e, {
+					} = t, r = Object(U.a)(s) ? Object(P.I)(e, {
 						postId: s
 					}) : Object(E.a)(e, {
 						commentId: s
@@ -620,7 +620,7 @@
 						if (e.length) {
 							const s = Math.max(900 - B, 10),
 								r = Math.max(300 - B, 10),
-								a = Object(U.a)(m) && Object(v.o)(Object(P.H)(n, {
+								a = Object(U.a)(m) && Object(v.o)(Object(P.I)(n, {
 									postId: m
 								}));
 							setTimeout(() => t(Object(i.e)({
@@ -1849,7 +1849,7 @@
 			}));
 			var xe = Object(a.b)((e, t) => {
 					if (Object(l.a)(t.thingId)) {
-						const s = Object(R.H)(e, {
+						const s = Object(R.I)(e, {
 							postId: t.thingId
 						});
 						if (!s) return {};
@@ -2231,7 +2231,7 @@
 						r = s && s.id
 					}
 					if (!r && Object(l.a)(t)) {
-						const s = Object(R.H)(e, {
+						const s = Object(R.I)(e, {
 							postId: t
 						});
 						r = s && s.belongsTo.id
@@ -2298,7 +2298,7 @@
 					message: A.c,
 					postOrComment: (e, {
 						thingId: t
-					}) => Object(l.a)(t) ? Object(R.H)(e, {
+					}) => Object(l.a)(t) ? Object(R.I)(e, {
 						postId: t
 					}) : Object(k.a)(e, {
 						commentId: t
@@ -2331,7 +2331,7 @@
 							r = s && s.id
 						}
 						if (!r && Object(l.a)(t)) {
-							const s = Object(R.H)(e, {
+							const s = Object(R.I)(e, {
 								postId: t
 							});
 							r = s && s.belongsTo.id
@@ -2760,15 +2760,15 @@
 				},
 				N = e => {
 					const t = {};
-					return (!e.showFull && Object(w.I)(e.height, e.width) || e.shouldBlur) && (t.overflow = "hidden"), e.showFull || (t.maxHeight = `${w.j}px`, e.shouldBlur && (t.maxWidth = Object(w.I)(e.height, e.width) ? `${w.z}px` : `${e.width}px`)), e.showCentered && (t.margin = "0 auto"), e.isExpando && e.maxHeight && (t.maxHeight = `${e.maxHeight}px`), a.a.createElement("div", {
+					return (!e.showFull && Object(w.J)(e.height, e.width) || e.shouldBlur) && (t.overflow = "hidden"), e.showFull || (t.maxHeight = `${w.j}px`, e.shouldBlur && (t.maxWidth = Object(w.J)(e.height, e.width) ? `${w.z}px` : `${e.width}px`)), e.showCentered && (t.margin = "0 auto"), e.isExpando && e.maxHeight && (t.maxHeight = `${e.maxHeight}px`), a.a.createElement("div", {
 						className: Object(c.a)(_.a.container, e.className),
 						style: t
 					}, e.children)
 				},
-				A = Object(o.b)(() => Object(d.a)(v.G, j.cb, (e, {
+				A = Object(o.b)(() => Object(d.a)(v.H, j.cb, (e, {
 					isSponsored: t,
 					postId: s
-				}) => t && s ? Object(v.b)(e, s) : null, x.a, O.actionInfo, v.H, (e, t, s, r, n, a) => ({
+				}) => t && s ? Object(v.b)(e, s) : null, x.a, O.actionInfo, v.I, (e, t, s, r, n, a) => ({
 					postPermalink: e,
 					shouldOpenPostInNewTab: t,
 					basePixelMetadata: s,
@@ -2814,7 +2814,7 @@
 					onClick: e,
 					...t
 				}) => {
-					const s = Object(w.I)(t.height, t.width),
+					const s = Object(w.J)(t.height, t.width),
 						n = k(t.height) && s;
 					return a.a.createElement(N, C({}, t, {
 						className: `${s?`${E.a} `:""}${t.className||""}`
@@ -2828,7 +2828,7 @@
 						} : {},
 						target: "_blank",
 						rel: u.b
-					}, S(s, t)), t.isListing && !t.showFull && t.height > w.j && Object(w.I)(t.height, t.width) && a.a.createElement("div", {
+					}, S(s, t)), t.isListing && !t.showFull && t.height > w.j && Object(w.J)(t.height, t.width) && a.a.createElement("div", {
 						className: _.a.seeMore
 					}, r.fbt._("see full image", null, {
 						hk: "1Qygw5"
@@ -4206,12 +4206,12 @@
 						rtJsonElementProps: a
 					});
 					switch (r) {
-						case b.Ld.SmIcon:
+						case b.Nd.SmIcon:
 							return n.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: a
 							});
-						case b.Ld.SmIconHc:
+						case b.Nd.SmIconHc:
 							return n.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -5203,12 +5203,12 @@
 				d = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: r.Fd
+						experimentName: r.Hd
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === r.Ld.SmIcon || t === r.Ld.SmIconHc
+					return t === r.Nd.SmIcon || t === r.Nd.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -5240,4 +5240,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.25ad850733d7866abdef.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.fabe6d428cf446c64cb7.js.map

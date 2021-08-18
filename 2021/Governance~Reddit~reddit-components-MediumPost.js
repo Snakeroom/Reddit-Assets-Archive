@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-MediumPost.75762b9bb09831045a86.js
-// Retrieved at 8/18/2021, 3:51:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-MediumPost.6d36ae670e191a650328.js
+// Retrieved at 8/18/2021, 6:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~reddit-components-MediumPost"], {
 		"./src/lib/constants/specialMembership.ts": function(t, e, n) {
@@ -318,7 +318,7 @@
 					postId: n
 				}) => async (s, i, l) => {
 					if (!n) return;
-					const m = Object(S.U)(i(), {
+					const m = Object(S.V)(i(), {
 						postId: n
 					});
 					if (!m) return;
@@ -364,7 +364,7 @@
 										t: s
 									}),
 									r = n();
-								return 0 === Object(S.A)(r, {
+								return 0 === Object(S.B)(r, {
 									listingKey: e
 								}).length
 							});
@@ -1230,15 +1230,15 @@
 						subredditName: x
 					} = t, v = Object(o.a)(j, null, {
 						isOtherDiscussions: !0
-					}), B = n(), V = Object(F.A)(B, {
+					}), B = n(), V = Object(F.B)(B, {
 						listingKey: v
 					}), W = S && (!V || 0 === V.length), z = Object(o.a)(x, s.U[N], {
 						t: g
-					}), Q = Object(F.A)(B, {
+					}), Q = Object(F.B)(B, {
 						listingKey: z
-					}), $ = O && (f || !Q || 0 === Q.length), X = f, J = m, Z = Object(F.H)(B, {
+					}), $ = O && (f || !Q || 0 === Q.length), X = f, J = m, Z = Object(F.I)(B, {
 						postId: j
-					}), tt = !!Z && !!Z.media && (Object(P.H)(Z.media) || Object(P.F)(Z.media)) && !Z.media.altText;
+					}), tt = !!Z && !!Z.media && (Object(P.I)(Z.media) || Object(P.F)(Z.media)) && !Z.media.altText;
 					if (!(W || $ || X || J || tt || C)) return;
 					W && e(L({
 						key: v
@@ -1561,7 +1561,7 @@
 						subreddit: n
 					} = t, {
 						isSponsored: s
-					} = e, r = Object(w.a)(), i = Object(G.a)(_.nc) === _.rc.Enabled;
+					} = e, r = Object(w.a)(), i = Object(G.a)(_.pc) === _.tc.Enabled;
 					if (t.isCommentsPage && !t.isCommentPermalink && !t.shouldLinkWrap) return o.a.createElement(W, {
 						nowrap: t.nowrap
 					}, o.a.createElement($, t));
@@ -2978,7 +2978,7 @@
 					subredditId: e
 				}) => {
 					return p(t).some(n => {
-						const s = Object(u.U)(t, {
+						const s = Object(u.V)(t, {
 							postId: n
 						});
 						return !!s && s.id === e
@@ -2991,12 +2991,12 @@
 						s = Object(o.a)(e, r.U.TOP, {
 							t: n
 						}),
-						i = Object(u.A)(t, {
+						i = Object(u.B)(t, {
 							listingKey: s
 						});
 					if (0 !== i.length)
 						for (const r of i) {
-							const e = Object(u.H)(t, {
+							const e = Object(u.I)(t, {
 								postId: r
 							});
 							if (e && !e.hidden && !e.isSponsored) return e
@@ -3008,7 +3008,7 @@
 					const n = ((t, {
 							postId: e
 						}) => {
-							const n = Object(u.H)(t, {
+							const n = Object(u.I)(t, {
 								postId: e
 							});
 							if (!n) return _;
@@ -3056,4 +3056,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-MediumPost.75762b9bb09831045a86.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-MediumPost.6d36ae670e191a650328.js.map

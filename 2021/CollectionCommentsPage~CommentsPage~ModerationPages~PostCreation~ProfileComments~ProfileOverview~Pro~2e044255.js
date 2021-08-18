@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.748fd593fabfe3f230d8.js
-// Retrieved at 8/18/2021, 3:51:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.32c381019a623d76f6d7.js
+// Retrieved at 8/18/2021, 6:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255"], {
 		"./src/lib/unicodeUtils/index.ts": function(e, t, s) {
@@ -355,15 +355,15 @@
 				},
 				P = e => {
 					const t = {};
-					return (!e.showFull && Object(E.I)(e.height, e.width) || e.shouldBlur) && (t.overflow = "hidden"), e.showFull || (t.maxHeight = `${E.j}px`, e.shouldBlur && (t.maxWidth = Object(E.I)(e.height, e.width) ? `${E.z}px` : `${e.width}px`)), e.showCentered && (t.margin = "0 auto"), e.isExpando && e.maxHeight && (t.maxHeight = `${e.maxHeight}px`), o.a.createElement("div", {
+					return (!e.showFull && Object(E.J)(e.height, e.width) || e.shouldBlur) && (t.overflow = "hidden"), e.showFull || (t.maxHeight = `${E.j}px`, e.shouldBlur && (t.maxWidth = Object(E.J)(e.height, e.width) ? `${E.z}px` : `${e.width}px`)), e.showCentered && (t.margin = "0 auto"), e.isExpando && e.maxHeight && (t.maxHeight = `${e.maxHeight}px`), o.a.createElement("div", {
 						className: Object(d.a)(C.a.container, e.className),
 						style: t
 					}, e.children)
 				},
-				L = Object(i.b)(() => Object(c.a)(v.G, y.cb, (e, {
+				L = Object(i.b)(() => Object(c.a)(v.H, y.cb, (e, {
 					isSponsored: t,
 					postId: s
-				}) => t && s ? Object(v.b)(e, s) : null, g.a, _.actionInfo, v.H, (e, t, s, n, r, o) => ({
+				}) => t && s ? Object(v.b)(e, s) : null, g.a, _.actionInfo, v.I, (e, t, s, n, r, o) => ({
 					postPermalink: e,
 					shouldOpenPostInNewTab: t,
 					basePixelMetadata: s,
@@ -409,7 +409,7 @@
 					onClick: e,
 					...t
 				}) => {
-					const s = Object(E.I)(t.height, t.width),
+					const s = Object(E.J)(t.height, t.width),
 						r = k(t.height) && s;
 					return o.a.createElement(P, I({}, t, {
 						className: `${s?`${O.a} `:""}${t.className||""}`
@@ -423,7 +423,7 @@
 						} : {},
 						target: "_blank",
 						rel: u.b
-					}, w(s, t)), t.isListing && !t.showFull && t.height > E.j && Object(E.I)(t.height, t.width) && o.a.createElement("div", {
+					}, w(s, t)), t.isListing && !t.showFull && t.height > E.j && Object(E.J)(t.height, t.width) && o.a.createElement("div", {
 						className: C.a.seeMore
 					}, n.fbt._("see full image", null, {
 						hk: "1Qygw5"
@@ -812,7 +812,7 @@
 					isSubreddit: b.M,
 					pageLayer: e => e
 				}),
-				W = Object(a.c)({
+				J = Object(a.c)({
 					isPinned: (e, {
 						post: t
 					}) => Object(P.q)(e, {
@@ -820,7 +820,7 @@
 					}),
 					modModeEnabled: b.S
 				}),
-				J = Object(i.b)(W, (e, t) => ({
+				W = Object(i.b)(J, (e, t) => ({
 					onHideTooltip: () => e(Object(l.i)()),
 					onOpenRemovalReasonModal: () => {
 						s.e("removalReasonActions").then(s.bind(null, "./src/reddit/actions/removalReasons/index.ts")).then(s => e(s.fetchReasonsAndOpenModal(t.post.belongsTo.id, [t.post.id])))
@@ -829,7 +829,7 @@
 						tooltipId: t
 					}))
 				}));
-			t.a = U(J(({
+			t.a = U(W(({
 				className: e,
 				displayText: t,
 				isSubreddit: s,
@@ -839,8 +839,8 @@
 				isProfilePostListing: P,
 				modModeEnabled: L,
 				onHideTooltip: U,
-				onOpenRemovalReasonModal: W,
-				onShowTooltip: J,
+				onOpenRemovalReasonModal: J,
+				onShowTooltip: W,
 				post: V,
 				tooltipType: G
 			}) => {
@@ -848,7 +848,7 @@
 						caretOnTop: !1
 					},
 					K = Object(i.e)(T.a),
-					q = V.isSponsored && (K === p.p.NoLockIcon || K === p.p.PromotedGrey),
+					q = V.isSponsored && (K === p.r.NoLockIcon || K === p.r.PromotedGrey),
 					Y = V.isRemoved && !V.modRemovalReason && !V.modNote && V.belongsTo.type === h.a.SUBREDDIT,
 					z = A("Approve", V.id, G),
 					Z = A("Archived", V.id, G),
@@ -875,7 +875,7 @@
 					className: Object(c.a)(w.a.icon, w.a.archivedIcon),
 					desc: B(),
 					id: Z,
-					onMouseEnter: J(Z),
+					onMouseEnter: W(Z),
 					onMouseLeave: U
 				}), o.a.createElement(u.c, N({
 					tooltipId: Z,
@@ -885,7 +885,7 @@
 					className: Object(c.a)(w.a.icon, w.a.lockIcon),
 					desc: R(),
 					id: Q,
-					onMouseEnter: J(Q),
+					onMouseEnter: W(Q),
 					onMouseLeave: U
 				}), o.a.createElement(u.c, N({
 					tooltipId: Q,
@@ -895,7 +895,7 @@
 					className: Object(c.a)(w.a.icon, w.a.stickyIcon),
 					desc: F(),
 					id: re,
-					onMouseEnter: J(re),
+					onMouseEnter: W(re),
 					onMouseLeave: U
 				}), o.a.createElement(u.c, N({
 					tooltipId: re,
@@ -905,7 +905,7 @@
 					className: Object(c.a)(w.a.icon, w.a.stickyIcon),
 					desc: H(),
 					id: oe,
-					onMouseEnter: J(oe),
+					onMouseEnter: W(oe),
 					onMouseLeave: U
 				}), o.a.createElement(u.c, N({
 					tooltipId: oe,
@@ -915,7 +915,7 @@
 					className: Object(c.a)(w.a.icon, w.a.approveIcon),
 					desc: Object(f.a)(V),
 					id: z,
-					onMouseEnter: J(z),
+					onMouseEnter: W(z),
 					onMouseLeave: U
 				}), o.a.createElement(u.c, N({
 					tooltipId: z,
@@ -925,16 +925,16 @@
 					className: Object(c.a)(w.a.icon, w.a.removeIcon),
 					desc: Object(f.c)(V),
 					id: te,
-					onMouseEnter: J(te),
+					onMouseEnter: W(te),
 					onMouseLeave: U
 				}), Y && o.a.createElement(m.a, {
 					className: w.a.addRemovalReason,
-					onClick: W,
+					onClick: J,
 					text: n.fbt._("Add a removal reason", null, {
 						hk: "1YDo3"
 					})
 				}), (V.modRemovalReason || V.modNote) && o.a.createElement(M, {
-					onMouseEnter: J(te),
+					onMouseEnter: W(te),
 					onMouseLeave: U
 				}, n.fbt._("Removal reason", null, {
 					hk: "2DhKVZ"
@@ -946,7 +946,7 @@
 					className: Object(c.a)(w.a.icon, w.a.spamIcon),
 					desc: Object(f.e)(V),
 					id: ne,
-					onMouseEnter: J(ne),
+					onMouseEnter: W(ne),
 					onMouseLeave: U
 				}), o.a.createElement(u.c, N({
 					tooltipId: ne,
@@ -967,7 +967,7 @@
 					className: Object(c.a)(w.a.icon, w.a.reportIcon),
 					desc: Object(f.d)(V.numReports),
 					id: se,
-					onMouseEnter: J(se),
+					onMouseEnter: W(se),
 					onMouseLeave: U
 				}), o.a.createElement(u.c, N({
 					tooltipId: se,
@@ -2032,7 +2032,7 @@
 						r = e.length;
 					for (let o = 0; o < r; o++) {
 						const r = e[o];
-						if (r.e === p.A) n.push(W(r, o));
+						if (r.e === p.A) n.push(J(r, o));
 						else if (r.e === p.x) n.push(a.a.createElement(S.a, {
 							key: o
 						}, A(r.c, t, s)));
@@ -2055,7 +2055,7 @@
 				U = (e, t, s) => {
 					switch (e.e) {
 						case p.o:
-							const n = W({
+							const n = J({
 								t: e.t,
 								f: e.f
 							}, 0);
@@ -2095,7 +2095,7 @@
 							}, e.t)
 					}
 				},
-				W = (e, t) => {
+				J = (e, t) => {
 					const {
 						f: s,
 						t: r
@@ -2111,7 +2111,7 @@
 					}
 					return c < r.length && o.push(V(0, r.substr(c), `remaining${a}`)), o
 				},
-				J = {
+				W = {
 					[p.j.monospace]: c.h,
 					[p.j.bold]: c.b,
 					[p.j.italic]: c.f,
@@ -2122,7 +2122,7 @@
 				},
 				V = (e, t, s) => {
 					let n = t;
-					return n = o()(J, (t, n, r) => e & parseInt(r, 10) ? a.a.createElement(n, {
+					return n = o()(W, (t, n, r) => e & parseInt(r, 10) ? a.a.createElement(n, {
 						key: s
 					}, t) : t, n)
 				},
@@ -2345,12 +2345,12 @@
 						rtJsonElementProps: o
 					});
 					switch (n) {
-						case b.Ld.SmIcon:
+						case b.Nd.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: o
 							});
-						case b.Ld.SmIconHc:
+						case b.Nd.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -2943,12 +2943,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: n.Fd
+						experimentName: n.Hd
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === n.Ld.SmIcon || t === n.Ld.SmIconHc
+					return t === n.Nd.SmIcon || t === n.Nd.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -2971,4 +2971,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.748fd593fabfe3f230d8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.32c381019a623d76f6d7.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.84ee257435e3bad92c1a.js
-// Retrieved at 8/18/2021, 3:51:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.998ee8db0a80f3e0b9c6.js
+// Retrieved at 8/18/2021, 6:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -6084,14 +6084,14 @@
 						if (o && o.length > 0) {
 							if (t) {
 								const s = o.indexOf(t);
-								if (s > -1) return o.splice(s, 1), Object(N.W)(e, o)
+								if (s > -1) return o.splice(s, 1), Object(N.X)(e, o)
 							}
-							return Object(N.W)(e, o)
+							return Object(N.X)(e, o)
 						}
 						const {
 							models: d
 						} = e.posts;
-						return Object(N.E)(e, s, r, !!n).filter(e => d && d[e] && !d[e].isSponsored && (!i || c !== e))
+						return Object(N.F)(e, s, r, !!n).filter(e => d && d[e] && !d[e].isSponsored && (!i || c !== e))
 					}
 				}),
 				re = (e, t, s, r) => {
@@ -7040,7 +7040,7 @@
 				Jt = s("./src/reddit/selectors/showPromotedCTA.ts");
 			const {
 				fbt: Zt
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), Qt = `${Ue.a.assetPath}/img/link-placeholder.png`, Xt = (e, t) => t && t.length ? Object(rt.H)(e, {
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), Qt = `${Ue.a.assetPath}/img/link-placeholder.png`, Xt = (e, t) => t && t.length ? Object(rt.I)(e, {
 				postId: t[0]
 			}) : void 0, Yt = {
 				fireAdPixelsOfType: ze.z,
@@ -7688,8 +7688,8 @@
 					viewTreatment: u.m,
 					searchDiscoveryUnitsModels: ue.b,
 					hasBestResults: u.b,
-					postIds: V.A,
-					posts: V.z
+					postIds: V.B,
+					posts: V.A
 				});
 
 			function fe(e) {
@@ -9862,7 +9862,7 @@
 								subredditId: s
 							})
 						}
-						return Object(y.S)(e, {
+						return Object(y.T)(e, {
 							...t
 						})
 					},
@@ -9878,7 +9878,7 @@
 								subredditId: t
 							})
 						}
-						return Object(y.E)(e, t, s, n)
+						return Object(y.F)(e, t, s, n)
 					}),
 					subredditsById: O.ab,
 					viewportDataLoaded: E.a,
@@ -11122,9 +11122,9 @@
 			}));
 			var r = s("./src/reddit/constants/experiments.ts"),
 				n = s("./src/reddit/helpers/chooseVariant/index.ts");
-			const a = e => r.yd.Treatment1 === Object(n.c)(e, {
+			const a = e => r.Ad.Treatment1 === Object(n.c)(e, {
 				experimentEligibilitySelector: n.a,
-				experimentName: r.pd
+				experimentName: r.rd
 			})
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, s) {
@@ -11190,10 +11190,10 @@
 					return t !== i && t !== o && (!(o + s > t) && (!(t + s > i) && !((e, t, s) => {
 						const r = s[t - 1],
 							n = s[t],
-							o = n && Object(a.H)(e, {
+							o = n && Object(a.I)(e, {
 								postId: r
 							}) || null,
-							i = n && Object(a.H)(e, {
+							i = n && Object(a.I)(e, {
 								postId: n
 							}) || null;
 						return o && o.isSponsored || i && i.isSponsored
@@ -11206,7 +11206,7 @@
 				}) => {
 					const r = t.slice().sort();
 					let n = -1;
-					const o = Object(a.A)(e, {
+					const o = Object(a.B)(e, {
 							listingKey: s.listingKey
 						}),
 						i = [];
@@ -11298,13 +11298,13 @@
 				a = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				o = s("./src/reddit/selectors/posts.ts");
 			const i = Object(r.a)(e => Object(a.c)(e, {
-				experimentName: n.dd,
+				experimentName: n.fd,
 				experimentEligibilitySelector: a.a
-			}), o.H, (e, t) => e === n.nd.Enabled && (null == t ? void 0 : t.isCreatedFromAdsUi) || (null == t ? void 0 : t.isSponsored))
+			}), o.I, (e, t) => e === n.pd.Enabled && (null == t ? void 0 : t.isCreatedFromAdsUi) || (null == t ? void 0 : t.isSponsored))
 		},
 		"./src/redditGQL/operations/SubredditGeoRecommendationViaFocusVertical.json": function(e) {
 			e.exports = JSON.parse('{"id":"b1787cdf2fd4"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.84ee257435e3bad92c1a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.998ee8db0a80f3e0b9c6.js.map

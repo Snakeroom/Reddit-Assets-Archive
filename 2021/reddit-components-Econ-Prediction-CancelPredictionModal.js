@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-CancelPredictionModal.c8ae83f557e6f9c51fdf.js
-// Retrieved at 8/17/2021, 5:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-CancelPredictionModal.90f02b19293ddbcf68fb.js
+// Retrieved at 8/18/2021, 6:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction-CancelPredictionModal"], {
 		"./node_modules/uuid/index.js": function(t, e, n) {
@@ -58,7 +58,7 @@
 			})), n.d(e, "a", (function() {
 				return A
 			})), n.d(e, "s", (function() {
-				return U
+				return R
 			})), n.d(e, "l", (function() {
 				return J
 			})), n.d(e, "h", (function() {
@@ -265,7 +265,7 @@
 					if (null === (d = s.errors) || void 0 === d ? void 0 : d.length) throw new Error(s.errors[0].message);
 					if (!(null == s ? void 0 : s.tournament)) throw new Error("Failed to create prediction");
 					return s.tournament
-				}, R = Object(l.a)(w.m), U = (t, e, n) => async (e, o, {
+				}, U = Object(l.a)(w.m), R = (t, e, n) => async (e, o, {
 					gqlContext: r
 				}) => {
 					const i = await Object(p.m)(r(), {
@@ -276,7 +276,7 @@
 							updatePredictionTournament: d
 						} = i.body.data;
 					if (!d.tournament) throw new Error("Failed to update prediction name");
-					return e(R(d.tournament)), d.tournament
+					return e(U(d.tournament)), d.tournament
 				}, J = t => async (e, n, {
 					gqlContext: o
 				}) => {
@@ -287,7 +287,7 @@
 							endPredictionTournament: i
 						} = r.body.data;
 					if (!i.tournament) throw new Error("Failed to update prediction name");
-					return e(R(i.tournament)), i.tournament
+					return e(U(i.tournament)), i.tournament
 				}, B = t => async (e, n, {
 					gqlContext: o
 				}) => {
@@ -437,7 +437,7 @@
 				u = n("./src/reddit/selectors/posts.ts");
 			const p = () => {
 				const t = Object(d.d)(),
-					e = Object(d.e)(u.R);
+					e = Object(d.e)(u.S);
 				if (!e) return null;
 				const {
 					totalVoteCount: n
@@ -736,4 +736,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-CancelPredictionModal.c8ae83f557e6f9c51fdf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-CancelPredictionModal.90f02b19293ddbcf68fb.js.map
