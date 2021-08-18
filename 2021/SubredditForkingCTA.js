@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditForkingCTA.eece14e56d84f66c449d.js
-// Retrieved at 8/18/2021, 9:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditForkingCTA.aed8d23e863cd092f74d.js
+// Retrieved at 8/18/2021, 1:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditForkingCTA"], {
 		"./src/reddit/components/CreateCommunityButton/index.m.less": function(t, e, _) {
@@ -63,7 +63,7 @@
 					className: t,
 					disabled: p || l,
 					onClick: t => {
-						y && y(t), _ === c.Jd.Tabs ? window.open("/subreddits/create", "_blank") : a(d)
+						y && y(t), _ === c.Ld.Tabs ? window.open("/subreddits/create", "_blank") : a(d)
 					},
 					onMouseEnter: s,
 					onMouseLeave: i,
@@ -244,10 +244,10 @@
 				m = _("./src/reddit/helpers/chooseVariant/index.ts"),
 				p = _("./src/reddit/selectors/experiments/utils.ts");
 			const y = Object(c.a)(t => Object(m.c)(t, {
-					experimentName: u.Ed,
+					experimentName: u.Gd,
 					experimentEligibilitySelector: m.a
 				}), p.a),
-				x = Object(c.a)(y, t => t === u.Md.Enabled);
+				x = Object(c.a)(y, t => t === u.Od.Enabled);
 			var b = _("./src/reddit/selectors/posts.ts"),
 				f = _("./src/reddit/components/CreateCommunityButton/index.tsx"),
 				h = _("./src/reddit/components/TrackingHelper/index.tsx");
@@ -1573,15 +1573,15 @@
 				r = _("./src/reddit/constants/experiments.ts");
 			e.a = (t, e) => {
 				switch (t) {
-					case r.Kd.Add:
+					case r.Md.Add:
 						return n.fbt._("Add Community", null, {
 							hk: "nuvEI"
 						});
-					case r.Kd.Start:
+					case r.Md.Start:
 						return n.fbt._("Start Community", null, {
 							hk: "244eL5"
 						});
-					case r.Kd.Create:
+					case r.Md.Create:
 						return n.fbt._("Create Subreddit", null, {
 							hk: "1Qw5ax"
 						});
@@ -1603,14 +1603,14 @@
 				s = _("./src/reddit/selectors/experiments/index.ts"),
 				i = _("./src/reddit/selectors/experiments/utils.ts");
 			const a = Object(n.a)(t => Object(o.c)(t, {
-					experimentName: r.Ad,
+					experimentName: r.Cd,
 					experimentEligibilitySelector: s.e
 				}), i.a),
 				d = Object(n.a)(t => Object(o.c)(t, {
-					experimentName: r.Bd,
+					experimentName: r.Dd,
 					experimentEligibilitySelector: s.e
 				}), i.a)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditForkingCTA.eece14e56d84f66c449d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditForkingCTA.aed8d23e863cd092f74d.js.map

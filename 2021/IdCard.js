@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.78ed04d5f3128f521e5f.js
-// Retrieved at 8/18/2021, 12:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.8e07b6a338e1e192d224.js
+// Retrieved at 8/18/2021, 1:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -1626,7 +1626,7 @@
 					className: e,
 					disabled: b || l,
 					onClick: e => {
-						h && h(e), n === u.Jd.Tabs ? window.open("/subreddits/create", "_blank") : c(d)
+						h && h(e), n === u.Ld.Tabs ? window.open("/subreddits/create", "_blank") : c(d)
 					},
 					onMouseEnter: o,
 					onMouseLeave: a,
@@ -4715,7 +4715,7 @@
 								experimentName: i.B,
 								expEventOverride: t
 							});
-							return !!(Object(i.fe)(n) ? void 0 : n)
+							return !!(Object(i.he)(n) ? void 0 : n)
 						})(n)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -4768,15 +4768,15 @@
 				r = n("./src/reddit/constants/experiments.ts");
 			t.a = (e, t) => {
 				switch (e) {
-					case r.Kd.Add:
+					case r.Md.Add:
 						return s.fbt._("Add Community", null, {
 							hk: "nuvEI"
 						});
-					case r.Kd.Start:
+					case r.Md.Start:
 						return s.fbt._("Start Community", null, {
 							hk: "244eL5"
 						});
-					case r.Kd.Create:
+					case r.Md.Create:
 						return s.fbt._("Create Subreddit", null, {
 							hk: "1Qw5ax"
 						});
@@ -6221,11 +6221,11 @@
 				o = n("./src/reddit/selectors/experiments/index.ts"),
 				a = n("./src/reddit/selectors/experiments/utils.ts");
 			const c = Object(s.a)(e => Object(i.c)(e, {
-					experimentName: r.Ad,
+					experimentName: r.Cd,
 					experimentEligibilitySelector: o.e
 				}), a.a),
 				d = Object(s.a)(e => Object(i.c)(e, {
-					experimentName: r.Bd,
+					experimentName: r.Dd,
 					experimentEligibilitySelector: o.e
 				}), a.a)
 		},
@@ -6303,4 +6303,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.78ed04d5f3128f521e5f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.8e07b6a338e1e192d224.js.map
