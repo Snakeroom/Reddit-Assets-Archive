@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.79a54c2d0c62e69858f6.js
-// Retrieved at 8/18/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.0bbfe9f1a96030d884e1.js
+// Retrieved at 8/18/2021, 7:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -13923,7 +13923,9 @@
 				InlineTextButton: "_3kfXQpuyMJIMeWQCwjZKfw",
 				inlineTextButton: "_3kfXQpuyMJIMeWQCwjZKfw",
 				ChatButton: "_13twe55MPRo1LqypxB-LJx",
-				chatButton: "_13twe55MPRo1LqypxB-LJx"
+				chatButton: "_13twe55MPRo1LqypxB-LJx",
+				PlainLinkButton: "_2UhHcZFBOYxMULbf2p-skl",
+				plainLinkButton: "_2UhHcZFBOYxMULbf2p-skl"
 			}
 		},
 		"./src/reddit/controls/Button/index.tsx": function(e, t, n) {
@@ -13998,18 +14000,20 @@
 					const {
 						"data-redditstyle": t,
 						Icon: n,
-						iconPosition: s = p.C,
-						isFullWidth: a = !1,
-						isSquare: i = !1,
-						children: h,
-						className: y,
-						kind: O = b.Button,
-						priority: C = m.Primary,
-						redditStyle: x,
-						size: E = u.S,
-						text: P,
-						...j
-					} = e, _ = (({
+						iconClassName: s,
+						iconPosition: a = p.C,
+						isFullWidth: i = !1,
+						isSquare: h = !1,
+						children: y,
+						className: O,
+						kind: C = b.Button,
+						priority: x = m.Primary,
+						redditStyle: E,
+						size: P = u.S,
+						text: j,
+						textClassName: _,
+						...S
+					} = e, k = (({
 						baseClassName: e,
 						redditStyle: t,
 						dataRedditStyle: n,
@@ -14025,46 +14029,52 @@
 						[c.a.isSquare]: a,
 						[c.a.redditStyle]: !(!t && !n)
 					}))({
-						baseClassName: y,
-						children: h,
+						baseClassName: O,
+						children: y,
 						dataRedditStyle: t,
 						Icon: n,
-						isFullWidth: a,
-						isSquare: i,
-						priority: C,
-						redditStyle: x,
-						size: E,
-						text: P
-					}), S = (({
+						isFullWidth: i,
+						isSquare: h,
+						priority: x,
+						redditStyle: E,
+						size: P,
+						text: j
+					}), w = (({
 						children: e,
 						text: t,
 						Icon: n,
-						iconPosition: s,
-						priority: a
-					}) => !n && t ? o.a.createElement("span", null, t) : o.a.createElement(o.a.Fragment, null, n && (s === p.C || s === p.L) && o.a.createElement(n, {
-						className: Object(r.a)(c.a.Icon, {
-							[c.a.isLeft]: s === p.L
+						iconClassName: s,
+						iconPosition: a,
+						priority: i,
+						textClassName: l
+					}) => !n && t ? o.a.createElement("span", {
+						className: l
+					}, t) : o.a.createElement(o.a.Fragment, null, n && (a === p.C || a === p.L) && o.a.createElement(n, {
+						className: Object(r.a)(c.a.Icon, s, {
+							[c.a.isLeft]: a === p.L
 						}),
-						isFilled: a === m.Primary
+						isFilled: i === m.Primary
 					}), t && o.a.createElement("span", {
-						className: c.a.Text
-					}, t), e && e, n && s === p.R && o.a.createElement(n, {
-						className: Object(r.a)(c.a.Icon, c.a.isRight),
-						isFilled: a === m.Primary
+						className: Object(r.a)(c.a.Text, l)
+					}, t), e && e, n && a === p.R && o.a.createElement(n, {
+						className: Object(r.a)(c.a.Icon, s, c.a.isRight),
+						isFilled: i === m.Primary
 					})))({
-						children: h,
-						text: P,
+						children: y,
+						text: j,
 						Icon: n,
-						iconPosition: s,
-						priority: C
+						iconClassName: s,
+						iconPosition: a,
+						priority: x,
+						textClassName: _
 					});
-					return O === b.InternalLink && (e => "to" in e)(j) ? o.a.createElement(f, l({}, d, j, {
-						className: _
-					}), S) : O === b.ExternalLink && (e => "href" in e)(j) ? o.a.createElement(g, l({}, d, j, {
-						className: _
-					}), S) : o.a.createElement(v, l({}, d, j, {
-						className: _
-					}), S)
+					return C === b.InternalLink && (e => "to" in e)(S) ? o.a.createElement(f, l({}, d, S, {
+						className: k
+					}), w) : C === b.ExternalLink && (e => "href" in e)(S) ? o.a.createElement(g, l({}, d, S, {
+						className: k
+					}), w) : o.a.createElement(v, l({}, d, S, {
+						className: k
+					}), w)
 				},
 				f = e => o.a.createElement(a.a, e),
 				g = e => o.a.createElement("a", e),
@@ -20184,4 +20194,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePo~5f1ac562", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250", "Governance~ModListing~Reddit~Subreddit", "Chat~Governance~Reddit", "Governance~Reddit~reddit-components-MediumPost", "Reddit~StandalonePostPage~reddit-components-MediumPost", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.79a54c2d0c62e69858f6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.0bbfe9f1a96030d884e1.js.map

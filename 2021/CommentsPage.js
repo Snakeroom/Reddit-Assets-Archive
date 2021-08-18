@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.25b86e02972c9307f908.js
-// Retrieved at 8/18/2021, 6:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.ec4eb7eae0961bf8e35d.js
+// Retrieved at 8/18/2021, 7:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage"], {
 		"./src/reddit/actions/commentsListTruncated/index.ts": function(e, t, s) {
@@ -3509,19 +3509,21 @@
 				p = s("./src/reddit/models/Theme/NewColorSystem/index.ts"),
 				u = s("./src/reddit/selectors/dismissedTruncationList.ts"),
 				h = s("./src/reddit/selectors/experiments/postSeo.ts"),
-				b = s("./src/reddit/selectors/user.ts"),
-				g = s("./src/reddit/components/CommentsWrapper/index.m.less"),
-				C = s.n(g);
+				b = s("./src/reddit/selectors/meta.ts"),
+				g = s("./src/reddit/selectors/user.ts"),
+				C = s("./src/reddit/components/CommentsWrapper/index.m.less"),
+				x = s.n(C);
 			const {
-				fbt: x
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), f = "500px", v = 3, O = Object(i.c)({
+				fbt: f
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), v = "500px", O = 3, y = Object(i.c)({
 				hasDismissedTruncation: u.b,
-				isGQLLoggedIn: b.I,
-				isLoggedIn: b.J,
+				isGQLLoggedIn: g.I,
+				isLoggedIn: g.J,
 				isPostSEOEligible: h.e,
+				isSEOSession: b.g,
 				postSEOV2TruncatedVariant: h.i
-			}), y = Object(r.b)(O);
-			class E extends n.a.Component {
+			}), E = Object(r.b)(y);
+			class P extends n.a.Component {
 				render() {
 					const {
 						apiPending: e,
@@ -3534,29 +3536,30 @@
 						isGQLLoggedIn: u,
 						isLoggedIn: h,
 						isOverlay: b,
-						numberOfComments: g,
-						onClick: O,
-						subredditOrProfile: y
-					} = this.props, E = !(!y || Object(m.h)(y)), P = d && E && (g >= v && !b || !r) && (!u && !h), w = P && !e, k = P ? C.a.TruncatedComments : "";
+						isSEOSession: g,
+						numberOfComments: C,
+						onClick: y,
+						subredditOrProfile: E
+					} = this.props, P = !(!E || Object(m.h)(E)), w = g && d && P && (C >= O && !b || !r) && (!u && !h), k = w && !e, I = w ? x.a.TruncatedComments : "";
 					return n.a.createElement("div", {
-						onClick: O,
+						onClick: y,
 						ref: i
 					}, n.a.createElement("div", {
-						className: Object(a.a)(C.a.ContentWrapper, s, k),
+						className: Object(a.a)(x.a.ContentWrapper, s, I),
 						style: {
 							"--commentswrapper-gradient-color": Object(p.a)(this.props).body,
-							maxHeight: P ? f : "unset"
+							maxHeight: w ? v : "unset"
 						}
-					}, t), w && n.a.createElement(l.i, {
-						className: C.a.MoreCommentsButton,
+					}, t), k && n.a.createElement(l.i, {
+						className: x.a.MoreCommentsButton,
 						onClick: o,
 						"data-redditstyle": !0
-					}, x._("View Entire Discussion ({number of comments} Comments)", [x._param("number of comments", Object(c.b)(g))], {
+					}, f._("View Entire Discussion ({number of comments} Comments)", [f._param("number of comments", Object(c.b)(C))], {
 						hk: "1pmqUt"
 					})))
 				}
 			}
-			t.a = Object(d.a)(y(E))
+			t.a = Object(d.a)(E(P))
 		},
 		"./src/reddit/components/Econ/GiftOrFreeAwardIcon/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -7965,4 +7968,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.25b86e02972c9307f908.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.ec4eb7eae0961bf8e35d.js.map

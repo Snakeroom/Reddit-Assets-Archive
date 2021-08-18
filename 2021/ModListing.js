@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.f3f38c4eae9d3b899a39.js
-// Retrieved at 8/18/2021, 6:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.bc701502d69853e5601a.js
+// Retrieved at 8/18/2021, 7:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -1547,7 +1547,9 @@
 				InlineTextButton: "_3kfXQpuyMJIMeWQCwjZKfw",
 				inlineTextButton: "_3kfXQpuyMJIMeWQCwjZKfw",
 				ChatButton: "_13twe55MPRo1LqypxB-LJx",
-				chatButton: "_13twe55MPRo1LqypxB-LJx"
+				chatButton: "_13twe55MPRo1LqypxB-LJx",
+				PlainLinkButton: "_2UhHcZFBOYxMULbf2p-skl",
+				plainLinkButton: "_2UhHcZFBOYxMULbf2p-skl"
 			}
 		},
 		"./src/reddit/controls/Button/index.tsx": function(e, t, r) {
@@ -1622,18 +1624,20 @@
 					const {
 						"data-redditstyle": t,
 						Icon: r,
-						iconPosition: n = p.C,
-						isFullWidth: i = !1,
-						isSquare: a = !1,
-						children: b,
-						className: g,
-						kind: x = h.Button,
-						priority: _ = m.Primary,
-						redditStyle: O,
-						size: E = u.S,
-						text: I,
-						...j
-					} = e, w = (({
+						iconClassName: n,
+						iconPosition: i = p.C,
+						isFullWidth: a = !1,
+						isSquare: b = !1,
+						children: g,
+						className: x,
+						kind: _ = h.Button,
+						priority: O = m.Primary,
+						redditStyle: E,
+						size: I = u.S,
+						text: j,
+						textClassName: w,
+						...C
+					} = e, S = (({
 						baseClassName: e,
 						redditStyle: t,
 						dataRedditStyle: r,
@@ -1649,46 +1653,52 @@
 						[d.a.isSquare]: i,
 						[d.a.redditStyle]: !(!t && !r)
 					}))({
-						baseClassName: g,
-						children: b,
+						baseClassName: x,
+						children: g,
 						dataRedditStyle: t,
 						Icon: r,
-						isFullWidth: i,
-						isSquare: a,
-						priority: _,
-						redditStyle: O,
-						size: E,
-						text: I
-					}), C = (({
+						isFullWidth: a,
+						isSquare: b,
+						priority: O,
+						redditStyle: E,
+						size: I,
+						text: j
+					}), k = (({
 						children: e,
 						text: t,
 						Icon: r,
-						iconPosition: n,
-						priority: i
-					}) => !r && t ? s.a.createElement("span", null, t) : s.a.createElement(s.a.Fragment, null, r && (n === p.C || n === p.L) && s.a.createElement(r, {
-						className: Object(o.a)(d.a.Icon, {
-							[d.a.isLeft]: n === p.L
+						iconClassName: n,
+						iconPosition: i,
+						priority: a,
+						textClassName: c
+					}) => !r && t ? s.a.createElement("span", {
+						className: c
+					}, t) : s.a.createElement(s.a.Fragment, null, r && (i === p.C || i === p.L) && s.a.createElement(r, {
+						className: Object(o.a)(d.a.Icon, n, {
+							[d.a.isLeft]: i === p.L
 						}),
-						isFilled: i === m.Primary
+						isFilled: a === m.Primary
 					}), t && s.a.createElement("span", {
-						className: d.a.Text
-					}, t), e && e, r && n === p.R && s.a.createElement(r, {
-						className: Object(o.a)(d.a.Icon, d.a.isRight),
-						isFilled: i === m.Primary
+						className: Object(o.a)(d.a.Text, c)
+					}, t), e && e, r && i === p.R && s.a.createElement(r, {
+						className: Object(o.a)(d.a.Icon, n, d.a.isRight),
+						isFilled: a === m.Primary
 					})))({
-						children: b,
-						text: I,
+						children: g,
+						text: j,
 						Icon: r,
-						iconPosition: n,
-						priority: _
+						iconClassName: n,
+						iconPosition: i,
+						priority: O,
+						textClassName: w
 					});
-					return x === h.InternalLink && (e => "to" in e)(j) ? s.a.createElement(f, c({}, l, j, {
-						className: w
-					}), C) : x === h.ExternalLink && (e => "href" in e)(j) ? s.a.createElement(y, c({}, l, j, {
-						className: w
-					}), C) : s.a.createElement(v, c({}, l, j, {
-						className: w
-					}), C)
+					return _ === h.InternalLink && (e => "to" in e)(C) ? s.a.createElement(f, c({}, l, C, {
+						className: S
+					}), k) : _ === h.ExternalLink && (e => "href" in e)(C) ? s.a.createElement(y, c({}, l, C, {
+						className: S
+					}), k) : s.a.createElement(v, c({}, l, C, {
+						className: S
+					}), k)
 				},
 				f = e => s.a.createElement(i.a, e),
 				y = e => s.a.createElement("a", e),
@@ -4549,4 +4559,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.f3f38c4eae9d3b899a39.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.bc701502d69853e5601a.js.map
