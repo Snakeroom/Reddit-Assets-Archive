@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditForkingCTA.50daeaa8454d2c99ea50.js
-// Retrieved at 8/16/2021, 8:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditForkingCTA.eece14e56d84f66c449d.js
+// Retrieved at 8/18/2021, 9:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditForkingCTA"], {
 		"./src/reddit/components/CreateCommunityButton/index.m.less": function(t, e, _) {
@@ -14,8 +14,8 @@
 				r = _("./node_modules/react/index.js"),
 				o = _.n(r),
 				s = _("./node_modules/react-redux/es/index.js"),
-				a = _("./node_modules/reselect/es/index.js"),
-				i = _("./src/reddit/actions/tooltip.ts"),
+				i = _("./node_modules/reselect/es/index.js"),
+				a = _("./src/reddit/actions/tooltip.ts"),
 				d = _("./src/reddit/components/InfoTextTooltip/index.tsx"),
 				l = _("./src/reddit/components/TrackingHelper/index.tsx"),
 				c = _("./src/reddit/constants/experiments.ts"),
@@ -30,7 +30,7 @@
 				j = _("./src/lib/lessComponent.tsx");
 			const g = "create-community-button",
 				k = j.a.wrapped(d.c, "StyledTooltip", h.a),
-				w = Object(a.c)({
+				w = Object(i.c)({
 					isInSrCreationEntrypointBehaviorExperiment: x.a,
 					isInSrCreationEntrypointCopyExperiment: x.b,
 					userDoesNotHaveEnoughExpToCreateCommunity: t => !Object(b.hb)(t),
@@ -42,18 +42,18 @@
 				openCommunityCreation: _ => {
 					_(Object(y.c)(e)), t(Object(p.a)("/subreddits/create"))
 				},
-				onShowTooltip: () => t(Object(i.f)({
+				onShowTooltip: () => t(Object(a.f)({
 					tooltipId: g
 				})),
-				onHideTooltip: () => t(Object(i.i)())
+				onHideTooltip: () => t(Object(a.i)())
 			}))(Object(l.c)(({
 				className: t,
 				eventSource: e,
 				isInSrCreationEntrypointBehaviorExperiment: _,
 				isInSrCreationEntrypointCopyExperiment: r,
 				onShowTooltip: s,
-				onHideTooltip: a,
-				openCommunityCreation: i,
+				onHideTooltip: i,
+				openCommunityCreation: a,
 				sendEvent: d,
 				userDoesNotHaveEnoughExpToCreateCommunity: l,
 				userIsSuspended: p,
@@ -63,10 +63,10 @@
 					className: t,
 					disabled: p || l,
 					onClick: t => {
-						y && y(t), _ === c.Jd.Tabs ? window.open("/subreddits/create", "_blank") : i(d)
+						y && y(t), _ === c.Jd.Tabs ? window.open("/subreddits/create", "_blank") : a(d)
 					},
 					onMouseEnter: s,
-					onMouseLeave: a,
+					onMouseLeave: i,
 					priority: u.b.Secondary,
 					id: g,
 					isFullWidth: !0
@@ -182,8 +182,8 @@
 				r = _("./src/lib/lessComponent.tsx"),
 				o = _("./node_modules/react/index.js"),
 				s = _.n(o),
-				a = _("./src/reddit/controls/Button/index.tsx"),
-				i = _("./src/reddit/controls/Input/ModalInput.tsx"),
+				i = _("./src/reddit/controls/Button/index.tsx"),
+				a = _("./src/reddit/controls/Input/ModalInput.tsx"),
 				d = _("./src/reddit/icons/svgs/Close/index.tsx"),
 				l = _("./src/reddit/components/ModalStyledComponents/index.m.less"),
 				c = _.n(l);
@@ -205,7 +205,7 @@
 				f = r.a.div("ModalDescriptionText", c.a),
 				h = r.a.div("ModalMetaText", c.a),
 				j = r.a.label("ModalFormItem", c.a),
-				g = r.a.wrapped(i.a, "ModalInput", c.a),
+				g = r.a.wrapped(a.a, "ModalInput", c.a),
 				k = r.a.label("ModalInputLabel", c.a),
 				w = r.a.footer("ModalFooter", c.a),
 				v = r.a.header("ModalHeader", c.a),
@@ -213,16 +213,16 @@
 				z = r.a.div("ModalAnnotation", c.a),
 				C = r.a.div("ModalMain", c.a),
 				S = r.a.textarea("TextArea", c.a),
-				B = r.a.wrapped(a.i, "WarningButton", c.a),
-				T = r.a.wrapped(a.i, "PrimaryButton", c.a),
-				E = r.a.wrapped(a.l, "CancelButton", c.a),
-				I = r.a.wrapped(a.o, "RemoveButton", c.a),
+				B = r.a.wrapped(i.i, "WarningButton", c.a),
+				T = r.a.wrapped(i.i, "PrimaryButton", c.a),
+				E = r.a.wrapped(i.l, "CancelButton", c.a),
+				I = r.a.wrapped(i.o, "RemoveButton", c.a),
 				F = ({
 					className: t,
 					...e
-				}) => s.a.createElement(a.q, u({
-					kind: a.a.Button,
-					priority: a.b.Primary,
+				}) => s.a.createElement(i.q, u({
+					kind: i.a.Button,
+					priority: i.b.Primary,
 					className: Object(n.a)(c.a.ConfirmButton, t)
 				}, e))
 		},
@@ -235,8 +235,8 @@
 				r = _("./node_modules/react/index.js"),
 				o = _.n(r),
 				s = _("./node_modules/react-redux/es/index.js"),
-				a = _("./src/reddit/actions/subredditCreation.ts"),
-				i = _("./src/reddit/components/ModalStyledComponents/index.tsx"),
+				i = _("./src/reddit/actions/subredditCreation.ts"),
+				a = _("./src/reddit/components/ModalStyledComponents/index.tsx"),
 				d = _("./src/reddit/controls/TextButton/index.tsx"),
 				l = _("./src/reddit/helpers/trackers/subredditForking.ts"),
 				c = _("./node_modules/reselect/es/index.js"),
@@ -1162,7 +1162,7 @@
 					postId: e
 				}) => ({
 					setInitialCrosspostId: () => {
-						t(Object(a.g)({
+						t(Object(i.g)({
 							crosspostId: e
 						}))
 					}
@@ -1172,7 +1172,7 @@
 				setInitialCrosspostId: e,
 				postId: _,
 				sendEvent: s,
-				onClose: a
+				onClose: i
 			}) => {
 				Object(r.useEffect)(() => {
 					t && s(Object(l.c)(_))
@@ -1181,13 +1181,13 @@
 					className: k.a.subreditForkingWrapper
 				}, o.a.createElement(d.a, {
 					className: k.a.closeButton,
-					onClick: a
-				}, o.a.createElement(i.b, null), o.a.createElement("div", null, n.fbt._("Close", null, {
+					onClick: i
+				}, o.a.createElement(a.b, null), o.a.createElement("div", null, n.fbt._("Close", null, {
 					hk: "4gbyAA"
-				}))), o.a.createElement("h4", null, n.fbt._("Create a community from this post", null, {
-					hk: "2ojrxb"
-				})), o.a.createElement("p", null, n.fbt._("This post is in the Top 1% of all posts on Reddit today. Keep it going.", null, {
-					hk: "Q2bhy"
+				}))), o.a.createElement("h4", null, n.fbt._("Should this post be its own community?", null, {
+					hk: "4BhmjF"
+				})), o.a.createElement("p", null, n.fbt._("This post really took off. If you think it’s onto something, keep the conversation going and spin it off into its own community.", null, {
+					hk: "4tJ2v1"
 				})), o.a.createElement(f.a, {
 					className: k.a.ctaButton,
 					onClick: () => {
@@ -1325,8 +1325,8 @@
 				r = _.n(n),
 				o = _("./src/lib/classNames/index.ts"),
 				s = _("./src/reddit/controls/InternalLink/index.tsx"),
-				a = _("./src/reddit/controls/Button/index.m.less"),
-				i = _.n(a);
+				i = _("./src/reddit/controls/Button/index.m.less"),
+				a = _.n(i);
 
 			function d() {
 				return (d = Object.assign || function(t) {
@@ -1360,7 +1360,7 @@
 						Icon: _,
 						iconPosition: n = m.C,
 						isFullWidth: s = !1,
-						isSquare: a = !1,
+						isSquare: i = !1,
 						children: y,
 						className: h,
 						kind: j = p.Button,
@@ -1376,21 +1376,21 @@
 						Icon: n,
 						isFullWidth: r,
 						isSquare: s,
-						priority: a,
+						priority: i,
 						size: d,
 						text: l
-					}) => Object(o.a)(t, i.a.Button, a && i.a[a], d && i.a[d], {
-						[i.a.isFullWidth]: r,
-						[i.a.isIconOnly]: !!n && !l,
-						[i.a.isSquare]: s,
-						[i.a.redditStyle]: !(!e && !_)
+					}) => Object(o.a)(t, a.a.Button, i && a.a[i], d && a.a[d], {
+						[a.a.isFullWidth]: r,
+						[a.a.isIconOnly]: !!n && !l,
+						[a.a.isSquare]: s,
+						[a.a.redditStyle]: !(!e && !_)
 					}))({
 						baseClassName: h,
 						children: y,
 						dataRedditStyle: e,
 						Icon: _,
 						isFullWidth: s,
-						isSquare: a,
+						isSquare: i,
 						priority: g,
 						redditStyle: k,
 						size: w,
@@ -1402,14 +1402,14 @@
 						iconPosition: n,
 						priority: s
 					}) => !_ && e ? r.a.createElement("span", null, e) : r.a.createElement(r.a.Fragment, null, _ && (n === m.C || n === m.L) && r.a.createElement(_, {
-						className: Object(o.a)(i.a.Icon, {
-							[i.a.isLeft]: n === m.L
+						className: Object(o.a)(a.a.Icon, {
+							[a.a.isLeft]: n === m.L
 						}),
 						isFilled: s === u.Primary
 					}), e && r.a.createElement("span", {
-						className: i.a.Text
+						className: a.a.Text
 					}, e), t && t, _ && n === m.R && r.a.createElement(_, {
-						className: Object(o.a)(i.a.Icon, i.a.isRight),
+						className: Object(o.a)(a.a.Icon, a.a.isRight),
 						isFilled: s === u.Primary
 					})))({
 						children: y,
@@ -1467,35 +1467,35 @@
 				}) => r.a.createElement(y, d({
 					kind: p.Button,
 					priority: u.Primary,
-					className: Object(o.a)(t, i.a.DangerButtonColors)
+					className: Object(o.a)(t, a.a.DangerButtonColors)
 				}, e)),
 				S = ({
 					className: t,
 					...e
 				}) => r.a.createElement(y, d({
 					kind: p.Button,
-					className: Object(o.a)(t, i.a.GoldButtonColors)
+					className: Object(o.a)(t, a.a.GoldButtonColors)
 				}, e)),
 				B = ({
 					className: t,
 					...e
 				}) => r.a.createElement(y, d({
 					kind: p.Button,
-					className: Object(o.a)(t, i.a.PremiumButtonColors)
+					className: Object(o.a)(t, a.a.PremiumButtonColors)
 				}, e)),
 				T = ({
 					className: t,
 					...e
 				}) => r.a.createElement(y, d({
 					kind: p.Button,
-					className: Object(o.a)(t, i.a.ChatButton)
+					className: Object(o.a)(t, a.a.ChatButton)
 				}, e)),
 				E = ({
 					className: t,
 					...e
 				}) => r.a.createElement(y, d({
 					kind: p.Button,
-					className: Object(o.a)(t, i.a.InlineTextButton)
+					className: Object(o.a)(t, a.a.InlineTextButton)
 				}, e));
 			e.q = y
 		},
@@ -1505,8 +1505,8 @@
 				r = _.n(n),
 				o = _("./node_modules/react-redux/es/index.js"),
 				s = _("./src/lib/classNames/index.ts"),
-				a = _("./src/reddit/actions/modal.ts"),
-				i = _("./src/reddit/constants/keycodes.ts"),
+				i = _("./src/reddit/actions/modal.ts"),
+				a = _("./src/reddit/constants/keycodes.ts"),
 				d = _("./src/reddit/controls/Input/index.m.less"),
 				l = _.n(d);
 
@@ -1524,7 +1524,7 @@
 					super(...arguments), this.handleKeyDown = ({
 						keyCode: t
 					}) => {
-						t === i.a.Escape && this.props.closeModal()
+						t === a.a.Escape && this.props.closeModal()
 					}
 				}
 				render() {
@@ -1540,7 +1540,7 @@
 				}
 			}
 			e.a = Object(o.b)(null, {
-				closeModal: a.f
+				closeModal: i.f
 			})(u)
 		},
 		"./src/reddit/controls/Input/index.m.less": function(t, e, _) {
@@ -1559,10 +1559,10 @@
 				r = _.n(n),
 				o = _("./src/lib/classNames/index.ts"),
 				s = _("./src/reddit/controls/TextButton/index.m.less"),
-				a = _.n(s);
+				i = _.n(s);
 			e.a = t => r.a.createElement("button", {
 				children: t.children,
-				className: Object(o.a)(a.a.textButton, t.className),
+				className: Object(o.a)(i.a.textButton, t.className),
 				disabled: t.disabled,
 				onClick: t.onClick
 			})
@@ -1593,7 +1593,7 @@
 		"./src/reddit/selectors/experiments/srCreationEntrypoints.ts": function(t, e, _) {
 			"use strict";
 			_.d(e, "a", (function() {
-				return i
+				return a
 			})), _.d(e, "b", (function() {
 				return d
 			}));
@@ -1601,16 +1601,16 @@
 				r = _("./src/reddit/constants/experiments.ts"),
 				o = _("./src/reddit/helpers/chooseVariant/index.ts"),
 				s = _("./src/reddit/selectors/experiments/index.ts"),
-				a = _("./src/reddit/selectors/experiments/utils.ts");
-			const i = Object(n.a)(t => Object(o.c)(t, {
+				i = _("./src/reddit/selectors/experiments/utils.ts");
+			const a = Object(n.a)(t => Object(o.c)(t, {
 					experimentName: r.Ad,
 					experimentEligibilitySelector: s.e
-				}), a.a),
+				}), i.a),
 				d = Object(n.a)(t => Object(o.c)(t, {
 					experimentName: r.Bd,
 					experimentEligibilitySelector: s.e
-				}), a.a)
+				}), i.a)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditForkingCTA.50daeaa8454d2c99ea50.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditForkingCTA.eece14e56d84f66c449d.js.map
