@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.e7e46f6f05615b7db739.js
-// Retrieved at 8/18/2021, 1:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.0dde5feb76317f091d3d.js
+// Retrieved at 8/18/2021, 3:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -6145,7 +6145,8 @@
 					shouldPause: !1,
 					shouldShowGalleryTileOption: s,
 					showCentered: !0,
-					showFull: !0
+					showFull: !0,
+					showPromotedCTA: !0
 				}),
 				we = e => a.a.createElement(r.a, {
 					"data-click-id": "subreddit",
@@ -22691,4 +22692,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.e7e46f6f05615b7db739.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.0dde5feb76317f091d3d.js.map

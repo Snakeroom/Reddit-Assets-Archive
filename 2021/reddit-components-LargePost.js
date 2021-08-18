@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.ea5b20c4053dd531b6e5.js
-// Retrieved at 8/18/2021, 1:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.f4051e6989f807c28e7a.js
+// Retrieved at 8/18/2021, 3:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost", "Reddit~StandalonePostPage~reddit-components-MediumPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -3090,13 +3090,13 @@
 						shouldShowNsfwListingBelow: je,
 						showAwardsPlaque: Te,
 						showEditFlair: Ce,
-						subredditOrProfile: we,
-						userIsOp: Pe,
-						postId: ke,
-						postIds: Ae,
-						onceInViewport: Ne,
-						showPromotedCTA: Le
-					} = e, De = !!e.redditStyle || !!e["data-redditstyle"], Re = De ? void 0 : b, Fe = Object(l.a)(be), Ue = _e && Fe, Me = Object(a.a)(be), Be = Object(d.a)(be), Ge = Object(G.c)(xe), Ve = !!xe.media && xe.media.type === E.o.RTJSON, We = Pe && Ve, Ye = s ? s - Y.a : void 0, qe = !(C && z || ne), He = (e => e === ce.gd.OnlyTitles)(Se) && !Object(oe.a)(xe), Ke = (e => e === ce.gd.MediumHeight)(Se) && !Object(oe.a)(xe), ze = (e => {
+						showPromotedCTA: we,
+						subredditOrProfile: Pe,
+						userIsOp: ke,
+						postId: Ae,
+						postIds: Ne,
+						onceInViewport: Le
+					} = e, De = !!e.redditStyle || !!e["data-redditstyle"], Re = De ? void 0 : b, Fe = Object(l.a)(be), Ue = _e && Fe, Me = Object(a.a)(be), Be = Object(d.a)(be), Ge = Object(G.c)(xe), Ve = !!xe.media && xe.media.type === E.o.RTJSON, We = ke && Ve, Ye = s ? s - Y.a : void 0, qe = !(C && z || ne), He = (e => e === ce.gd.OnlyTitles)(Se) && !Object(oe.a)(xe), Ke = (e => e === ce.gd.MediumHeight)(Se) && !Object(oe.a)(xe), ze = (e => {
 						const {
 							post: t,
 							postIds: s,
@@ -3118,9 +3118,9 @@
 							const {
 								isIntersecting: t
 							} = e;
-							t && (null == Ne || Ne(ue))
+							t && (null == Le || Le(ue))
 						})
-					}, [Ne, ue]);
+					}, [Le, ue]);
 					Object(v.a)($e, et);
 					const tt = r.a.createElement(W.a, {
 						className: Object(P.a)(Oe.a.container, c, he.a.largeAndMediumPostStyles, he.a.largeAndMediumActiveStyles, Object(u.a)(e), {
@@ -3147,7 +3147,7 @@
 						toggleCheckbox: e.toggleCheckbox,
 						flairStyleTemplate: Re,
 						redditStyle: De,
-						postId: ke
+						postId: Ae
 					}), r.a.createElement(V.a, {
 						className: Object(P.a)(Oe.a.backgroundWrapper, {
 							[Oe.a.isEvent]: Object(ie.a)(xe)
@@ -3179,7 +3179,7 @@
 						shouldShowSubscribeButton: qe,
 						showSubreddit: Je,
 						showSubredditIcon: !0,
-						subredditOrProfile: we
+						subredditOrProfile: Pe
 					}), r.a.createElement($.c, {
 						className: Oe.a.postTitle,
 						post: xe,
@@ -3205,8 +3205,9 @@
 						shouldLoad: g,
 						scrollerItemRef: ye,
 						autoplayPref: t,
-						shouldShowGalleryTileOption: Ie
-					})), Le && Xe && Xe.url && r.a.createElement(k.a, {
+						shouldShowGalleryTileOption: Ie,
+						showPromotedCTA: we
+					})), we && Xe && Xe.url && r.a.createElement(k.a, {
 						className: Oe.a.adLinkWrapper
 					}, r.a.createElement(A.a, {
 						post: xe,
@@ -3252,8 +3253,8 @@
 						})
 					}))), C && r.a.createElement(L.a, {
 						post: xe,
-						postIds: null != Ae ? Ae : [],
-						subredditId: null == we ? void 0 : we.id
+						postIds: null != Ne ? Ne : [],
+						subredditId: null == Pe ? void 0 : Pe.id
 					}));
 					return r.a.createElement(h.b, null, tt, se && !J && r.a.createElement(R.a, {
 						className: Oe.a.chain,
@@ -8422,4 +8423,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.ea5b20c4053dd531b6e5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.f4051e6989f807c28e7a.js.map
