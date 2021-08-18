@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.8a8ebbafe4acb76802a5.js
-// Retrieved at 8/18/2021, 11:20:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.f2c4788088aee6ff5665.js
+// Retrieved at 8/18/2021, 11:30:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -21524,7 +21524,13 @@
 						this.setState({
 							showEmailInvitePaintedDoor: !1
 						})
-					}, this.state = {
+					}, this.getFlairSectionName = () => this.props.isBadgesAndEmotesEnabled ? p.fbt._("Badges, flair & emojis", null, {
+						hk: "1FuDnm"
+					}) : this.props.isPowerupsTabVisible ? p.fbt._("Flair", null, {
+						hk: "1fYKUf"
+					}) : p.fbt._("Flair & emojis", null, {
+						hk: "42b2AJ"
+					}), this.state = {
 						locationSettingSeen: !0,
 						showEmailInvitePaintedDoor: !1
 					}
@@ -21689,11 +21695,7 @@
 							}, r.a.createElement(Q.a, {
 								name: "tag",
 								className: se.a.iconStyles
-							}), e.isBadgesAndEmotesEnabled ? p.fbt._("Badges, flair & emojis", null, {
-								hk: "1FuDnm"
-							}) : p.fbt._("Flair & emojis", null, {
-								hk: "42b2AJ"
-							})), e.moderatorPermissions.flair && r.a.createElement(oe.b, {
+							}), this.getFlairSectionName()), e.moderatorPermissions.flair && r.a.createElement(oe.b, {
 								isActive: e.pageName === b.ac.Flair,
 								label: g(b.ac.Flair),
 								onClick: this.onClickGrantUserFlair,
@@ -22689,4 +22691,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.8a8ebbafe4acb76802a5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.f2c4788088aee6ff5665.js.map
