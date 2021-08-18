@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.05383a93a3f9d3e496f5.js
-// Retrieved at 8/18/2021, 1:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.4af9db0fa565f6688955.js
+// Retrieved at 8/18/2021, 3:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -929,7 +929,7 @@
 							hk: "3ISZMI"
 						})
 					}
-				}(t);
+				}(t), L = `${s.a.assetPath}/img/snoovatars/` + (t === g.a.CommunitySpacesControl ? "CommunitySpace_Control.png" : "CommunitySquare.png");
 				return o.a.createElement("div", {
 					className: Object(a.a)(_.a.container, n),
 					"data-testid": "avatar-listing-banner"
@@ -942,7 +942,7 @@
 					alt: x._("Continue to Avatar Community Spaces", null, {
 						hk: "3qCfDX"
 					}),
-					src: `${s.a.assetPath}/img/snoovatars/CommunitySpace${y?"_Control":""}.png`
+					src: L
 				}), t === g.a.Achievements && o.a.createElement("img", {
 					alt: "todo"
 				}), o.a.createElement(h.a, {
@@ -4890,4 +4890,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.05383a93a3f9d3e496f5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.4af9db0fa565f6688955.js.map
