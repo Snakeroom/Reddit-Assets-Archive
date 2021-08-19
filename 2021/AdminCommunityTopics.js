@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AdminCommunityTopics.70332f59a3f40f66c982.js
-// Retrieved at 8/12/2021, 7:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AdminCommunityTopics.379eb868cdbf3b730cb7.js
+// Retrieved at 8/18/2021, 8:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AdminCommunityTopics"], {
 		"./src/reddit/components/CommunityTopics/AdminCommunityTopics/ModeratorSelectedOption/index.m.less": function(e, t, s) {
@@ -61,7 +61,7 @@
 			});
 			var C = Object(r.b)(g, (e, t) => ({
 					onModeratorSelectedOptionClicked: (s, n) => {
-						s && t.option.id && e(Object(a.o)(s, [{
+						s && t.option.id && e(Object(a.n)(s, [{
 							subredditId: s,
 							tagId: t.option.id,
 							isRelevant: !n
@@ -129,16 +129,16 @@
 					subredditId: t
 				}) => ({
 					optionSelected: s => {
-						e(Object(a.n)({
+						e(Object(a.m)({
 							subredditId: t,
 							option: s
-						})), e(Object(a.e)(t, {
+						})), e(Object(a.d)(t, {
 							...s,
 							action: j.a.ADD
 						}, h.a.communitySettings))
 					},
 					optionDeselected: s => {
-						e(Object(a.m)({
+						e(Object(a.l)({
 							subredditId: t,
 							option: s
 						})), e(Object(a.b)(t, {
@@ -146,7 +146,7 @@
 							action: j.a.REMOVE
 						}, h.a.communitySettings))
 					},
-					onInputChanged: s => e(Object(a.l)({
+					onInputChanged: s => e(Object(a.k)({
 						subredditId: t,
 						input: s
 					})),
@@ -206,7 +206,7 @@
 			t.default = Object(r.b)(null, (e, {
 				subredditId: t
 			}) => ({
-				subredditDataRequested: () => e(Object(a.h)(t, h.a.communitySettings))
+				subredditDataRequested: () => e(Object(a.g)(t, h.a.communitySettings))
 			}))(_)
 		},
 		"./src/reddit/components/CommunityTopics/index.m.less": function(e, t, s) {
@@ -325,7 +325,7 @@
 				context: s
 			}) => ({
 				optionSelected: n => {
-					e(Object(d.k)({
+					e(Object(d.j)({
 						subredditId: t,
 						option: n
 					})), e((e, o) => {
@@ -335,7 +335,7 @@
 					})
 				},
 				optionDeselected: n => {
-					e(Object(d.j)({
+					e(Object(d.i)({
 						subredditId: t,
 						option: n
 					})), e((e, o) => {
@@ -344,7 +344,7 @@
 						})
 					})
 				},
-				onInputChanged: s => e(Object(d.i)({
+				onInputChanged: s => e(Object(d.h)({
 					subredditId: t,
 					input: s
 				})),
@@ -832,4 +832,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AdminCommunityTopics.70332f59a3f40f66c982.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AdminCommunityTopics.379eb868cdbf3b730cb7.js.map

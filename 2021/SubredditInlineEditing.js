@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditInlineEditing.7eb6f34d44c834359ea0.js
-// Retrieved at 8/18/2021, 7:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditInlineEditing.8ea5d73bd6ac7b7153da.js
+// Retrieved at 8/18/2021, 8:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditInlineEditing"], {
 		"./src/reddit/components/CommunityTopics/NumTopicsSelected.tsx": function(e, t, s) {
@@ -163,10 +163,10 @@
 					onPrimarySelect: s
 				}) => ({
 					onPrimaryTopicSelected: n => {
-						n.isSelected || !s ? n.isSelected || (e(Object(d.g)({
+						n.isSelected || !s ? n.isSelected || (e(Object(d.f)({
 							primaryTagId: n.value,
 							subredditId: t
-						})), e(Object(d.p)(t, {
+						})), e(Object(d.o)(t, {
 							tagId: n.value,
 							state: S.d.TAGGED
 						}))) : s(n.value)
@@ -237,8 +237,8 @@
 				}
 			}))(R);
 			const N = Object(r.b)(D, P)(R),
-				k = Object(r.b)(w, P);
-			t.b = k(R)
+				B = Object(r.b)(w, P);
+			t.b = B(R)
 		},
 		"./src/reddit/components/CommunityTopics/SuggestedTopics/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -306,7 +306,7 @@
 					context: o
 				}) => ({
 					onSuggestedOptionDismissed: s => {
-						e(Object(c.o)(t, [], [{
+						e(Object(c.n)(t, [], [{
 							subredditId: t,
 							tagId: s.id,
 							isRelevant: !1
@@ -322,7 +322,7 @@
 									hk: "1OySAh"
 								}), x.b.Error),
 								duration: l.a
-							})) : (e(Object(c.k)({
+							})) : (e(Object(c.j)({
 								subredditId: t,
 								option: i
 							})), Object(b.c)(r(), t, i, {
@@ -460,7 +460,7 @@
 				context: s
 			}) => ({
 				optionSelected: n => {
-					e(Object(d.k)({
+					e(Object(d.j)({
 						subredditId: t,
 						option: n
 					})), e((e, o) => {
@@ -470,7 +470,7 @@
 					})
 				},
 				optionDeselected: n => {
-					e(Object(d.j)({
+					e(Object(d.i)({
 						subredditId: t,
 						option: n
 					})), e((e, o) => {
@@ -479,7 +479,7 @@
 						})
 					})
 				},
-				onInputChanged: s => e(Object(d.i)({
+				onInputChanged: s => e(Object(d.h)({
 					subredditId: t,
 					input: s
 				})),
@@ -757,9 +757,9 @@
 				P = s("./src/reddit/selectors/activeModalId.ts"),
 				R = s("./src/reddit/selectors/tags.ts"),
 				N = s("./src/reddit/constants/colors.ts"),
-				k = s("./src/reddit/selectors/tooltip.ts"),
-				B = s("./node_modules/uuid/v4.js"),
-				M = s.n(B),
+				B = s("./src/reddit/selectors/tooltip.ts"),
+				k = s("./node_modules/uuid/v4.js"),
+				M = s.n(k),
 				L = s("./src/reddit/components/ContentTooltip/index.tsx"),
 				F = s("./src/reddit/icons/fonts/Info/index.tsx"),
 				H = s("./src/reddit/components/InlineSubredditEditing/InlineCommunityTopics/InfoTooltip/index.m.less"),
@@ -767,7 +767,7 @@
 			const {
 				fbt: U
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), K = Object(r.c)({
-				activeTooltipId: k.a
+				activeTooltipId: B.a
 			}), W = Object(i.b)(K, e => ({
 				onHideTooltip: () => e(Object(l.i)()),
 				onShowTooltip: t => e(Object(l.f)({
@@ -837,9 +837,9 @@
 				subredditId: t,
 				context: s
 			}) => ({
-				onTopicsRequested: () => e(Object(c.h)(t, s)),
-				onSaveRequested: () => e(Object(c.f)(t, s, !0)),
-				resetSelection: () => e(Object(c.d)(t)),
+				onTopicsRequested: () => e(Object(c.g)(t, s)),
+				onSaveRequested: () => e(Object(c.e)(t, s, !0)),
+				resetSelection: () => e(Object(c.c)(t)),
 				openUnsavedChangesModal: () => {
 					e(Object(l.i)()), e(Object(d.h)(E.a))
 				}
@@ -1643,4 +1643,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditInlineEditing.7eb6f34d44c834359ea0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditInlineEditing.8ea5d73bd6ac7b7153da.js.map

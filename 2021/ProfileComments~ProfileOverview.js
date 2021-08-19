@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview.4e56f87cd350f77cc102.js
-// Retrieved at 8/18/2021, 3:51:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview.4df0f3ae0ab94fbf6cd1.js
+// Retrieved at 8/18/2021, 8:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments~ProfileOverview", "reddit-components-ContentGate"], {
 		"./node_modules/linkify-it/index.js": function(e, t, n) {
@@ -780,33 +780,34 @@
 				o = n.n(a),
 				s = n("./node_modules/react-redux/es/index.js"),
 				i = n("./node_modules/reselect/es/index.js"),
-				l = n("./src/reddit/actions/tooltip.ts"),
-				c = n("./src/reddit/components/InfoTextTooltip/index.tsx"),
-				u = n("./src/reddit/components/TrackingHelper/index.tsx"),
-				d = n("./src/reddit/controls/Button/index.tsx"),
-				m = n("./src/reddit/helpers/overlay/index.ts"),
-				p = n("./src/reddit/helpers/trackers/subredditCreation.ts"),
-				h = n("./src/reddit/selectors/user.ts"),
-				_ = n("./src/reddit/components/CreateCommunityButton/index.m.less"),
-				b = n.n(_),
-				f = n("./src/lib/lessComponent.tsx");
-			const g = "create-community-button",
-				y = f.a.wrapped(c.c, "StyledTooltip", b.a),
-				k = Object(i.c)({
-					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(h.hb)(e),
-					userIsSuspended: h.P
+				l = n("./src/reddit/actions/modal.ts"),
+				c = n("./src/reddit/actions/tooltip.ts"),
+				u = n("./src/reddit/components/InfoTextTooltip/index.tsx"),
+				d = n("./src/reddit/components/TrackingHelper/index.tsx"),
+				m = n("./src/reddit/constants/modals.ts"),
+				p = n("./src/reddit/controls/Button/index.tsx"),
+				h = n("./src/reddit/helpers/trackers/subredditCreation.ts"),
+				_ = n("./src/reddit/selectors/user.ts"),
+				b = n("./src/reddit/components/CreateCommunityButton/index.m.less"),
+				f = n.n(b),
+				g = n("./src/lib/lessComponent.tsx");
+			const y = "create-community-button",
+				k = g.a.wrapped(u.c, "StyledTooltip", f.a),
+				w = Object(i.c)({
+					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(_.hb)(e),
+					userIsSuspended: _.P
 				});
-			t.a = Object(s.b)(k, (e, {
+			t.a = Object(s.b)(w, (e, {
 				eventSource: t
 			}) => ({
 				openCommunityCreation: n => {
-					n(Object(p.c)(t)), e(Object(m.a)("/subreddits/create"))
+					n(Object(h.c)(t)), e(Object(l.h)(m.a.SUBREDDIT_CREATION_MODAL_ID))
 				},
-				onShowTooltip: () => e(Object(l.f)({
-					tooltipId: g
+				onShowTooltip: () => e(Object(c.f)({
+					tooltipId: y
 				})),
-				onHideTooltip: () => e(Object(l.i)())
-			}))(Object(u.c)(({
+				onHideTooltip: () => e(Object(c.i)())
+			}))(Object(d.c)(({
 				className: e,
 				eventSource: t,
 				onShowTooltip: n,
@@ -817,7 +818,7 @@
 				userIsSuspended: c,
 				onClick: u
 			}) => {
-				return o.a.createElement(d.q, {
+				return o.a.createElement(p.q, {
 					className: e,
 					disabled: c || l,
 					onClick: e => {
@@ -825,20 +826,20 @@
 					},
 					onMouseEnter: n,
 					onMouseLeave: a,
-					priority: d.b.Secondary,
-					id: g,
+					priority: p.b.Secondary,
+					id: y,
 					isFullWidth: !0
 				}, r.fbt._("Create Community", null, {
 					hk: "28v7Qq"
-				}), l ? o.a.createElement(y, {
+				}), l ? o.a.createElement(k, {
 					caretOnTop: !0,
-					tooltipId: g,
+					tooltipId: y,
 					text: r.fbt._("To prevent spam, accounts must be at least 30 days old and have enough positive karma to create communities.", null, {
 						hk: "2R1OXu"
 					})
-				}) : c ? o.a.createElement(y, {
+				}) : c ? o.a.createElement(k, {
 					caretOnTop: !0,
-					tooltipId: g,
+					tooltipId: y,
 					text: r.fbt._("Accounts banned from the site can not create communities until the ban is lifted.", null, {
 						hk: "2xBDEw"
 					})
@@ -2250,4 +2251,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview.4e56f87cd350f77cc102.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview.4df0f3ae0ab94fbf6cd1.js.map

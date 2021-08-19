@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.ae4211ccc90b3edc600f.js
-// Retrieved at 8/18/2021, 7:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.07305b97829be73f390b.js
+// Retrieved at 8/18/2021, 8:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./src/lib/unicodeUtils/index.ts": function(e, t, s) {
@@ -414,13 +414,13 @@
 						hk: "3bTewe"
 					})))
 				},
-				X = s("./src/reddit/components/InfoTextTooltip/Hooked.tsx");
-			var Q = ({
+				Q = s("./src/reddit/components/InfoTextTooltip/Hooked.tsx");
+			var X = ({
 					arrowProps: e,
 					popperProps: t,
 					visible: s,
 					subredditName: n
-				}) => i.a.createElement(X.a, {
+				}) => i.a.createElement(Q.a, {
 					arrowProps: e,
 					popperProps: t,
 					visible: s
@@ -439,14 +439,14 @@
 				ie = s("./src/reddit/selectors/user.ts");
 			const re = e => (Object(ie.I)(e) || Object(ie.J)(e)) && Object(ee.a)(),
 				ae = Object(a.a)(e => Object(se.c)(e, {
-					experimentName: te.Y,
+					experimentName: te.Z,
 					experimentEligibilitySelector: re
 				}), ne.a),
-				oe = Object(a.a)(ae, e => e === te.yc.ToolTip_nonSub),
-				de = Object(a.a)(ae, e => e === te.yc.ToolTip_2ndVisit),
-				ce = Object(a.a)(ae, e => e === te.yc.ToolTip_3rdVisit),
-				le = Object(a.a)(ae, e => e === te.yc.HalfSheet_2ndVisit),
-				me = Object(a.a)(ae, e => e === te.yc.HalfSheet_3rdVisit),
+				oe = Object(a.a)(ae, e => e === te.Ac.ToolTip_nonSub),
+				de = Object(a.a)(ae, e => e === te.Ac.ToolTip_2ndVisit),
+				ce = Object(a.a)(ae, e => e === te.Ac.ToolTip_3rdVisit),
+				le = Object(a.a)(ae, e => e === te.Ac.HalfSheet_2ndVisit),
+				me = Object(a.a)(ae, e => e === te.Ac.HalfSheet_3rdVisit),
 				ue = Object(a.a)(le, me, de, ce, oe, (e, t, s, n, i) => e || t || s || n || i);
 			var pe = e => {
 					const t = Object(r.d)(),
@@ -520,7 +520,7 @@
 									className: S.a.notificationIcon
 								})
 						}
-					})(e.notificationLevel)), k && i.a.createElement(Q, {
+					})(e.notificationLevel)), k && i.a.createElement(X, {
 						arrowProps: p.arrowProps,
 						popperProps: p.popperProps,
 						visible: p.visible,
@@ -3922,12 +3922,12 @@
 						rtJsonElementProps: r
 					});
 					switch (n) {
-						case h.Od.SmIcon:
+						case h.Qd.SmIcon:
 							return i.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: r
 							});
-						case h.Od.SmIconHc:
+						case h.Qd.SmIconHc:
 							return i.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -4084,13 +4084,13 @@
 					}))))
 				}
 			}
-			var X = Object(d.b)(Y, e => ({
+			var Q = Object(d.b)(Y, e => ({
 					openLightbox: t => e(Object(I.a)(t.permalink))
 				}), null, {
 					forwardRef: !0
 				})(Z),
-				Q = s("./src/reddit/components/SidebarPostList/index.m.less"),
-				$ = s.n(Q);
+				X = s("./src/reddit/components/SidebarPostList/index.m.less"),
+				$ = s.n(X);
 			const {
 				fbt: ee
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), te = 10, se = 2, ne = Object(c.a)(R.O, e => e.filter(e => !e.isSponsored)), ie = Object(c.c)({
@@ -4129,7 +4129,7 @@
 							key: e.id,
 							onPostVisible: n,
 							postId: e.id
-						}, o.a.createElement(X, {
+						}, o.a.createElement(Q, {
 							className: Object(N.a)($.a.smallPost, r),
 							containerOnClick: s,
 							postId: e.id,
@@ -4467,14 +4467,14 @@
 				}) => ({
 					toggleCloseMenuModal: () => e(Object(_e.i)(Je))
 				}))(Object(oe.c)(Ye)),
-				Xe = s("./src/reddit/components/Widgets/CommunityList/SubredditList.tsx"),
-				Qe = s("./src/reddit/constants/tracking.ts"),
+				Qe = s("./src/reddit/components/Widgets/CommunityList/SubredditList.tsx"),
+				Xe = s("./src/reddit/constants/tracking.ts"),
 				$e = s("./src/reddit/selectors/seo/linksModule.ts"),
 				et = s("./src/reddit/selectors/telemetry.ts"),
 				tt = s("./src/telemetry/models/Subreddit.ts");
 			const st = e => t => ({
 					...et.defaults(t),
-					action: Qe.c.CLICK,
+					action: Xe.c.CLICK,
 					noun: "link",
 					source: "subreddit_subreddit_link",
 					subreddit: {
@@ -4484,7 +4484,7 @@
 				}),
 				nt = e => t => s => ({
 					...et.defaults(s),
-					action: Qe.c.CLICK,
+					action: Xe.c.CLICK,
 					noun: Object(tt.getSubscribeEventNoun)(e.type, t),
 					source: "subreddit_subreddit_link",
 					subreddit: {
@@ -4497,7 +4497,7 @@
 				});
 			var rt = Object(d.b)(it)(e => {
 					const t = Object(oe.b)();
-					return e.communities && e.communities.length ? o.a.createElement(C.a, null, o.a.createElement(Xe.b, {
+					return e.communities && e.communities.length ? o.a.createElement(C.a, null, o.a.createElement(Qe.b, {
 						className: e.className,
 						communities: e.communities,
 						getClickEventFactory: st,
@@ -5403,7 +5403,7 @@
 				isRevertConfirmationModalOpen: Object(y.b)("wiki-revert-confirmation"),
 				listingInfo: w.p
 			});
-			class X extends r.a.Component {
+			class Q extends r.a.Component {
 				constructor() {
 					super(...arguments), this.containerRef = r.a.createRef(), this.state = {
 						selectedRevisions: []
@@ -5575,7 +5575,7 @@
 					}))
 				}
 			}
-			const Q = Object(a.b)(Z, (e, t) => ({
+			const X = Object(a.b)(Z, (e, t) => ({
 				toggleRevetConfirmationModal: () => e(Object(c.i)("wiki-revert-confirmation")),
 				onRevertToRevision: t => e(Object(l.a)(t)),
 				onLoadMoreRevisions: () => e(Object(l.c)({
@@ -5584,7 +5584,7 @@
 					canShowFailToast: !0,
 					isRecent: !!t.isRecentRevisionsMode
 				}))
-			}))(Object(p.c)(X));
+			}))(Object(p.c)(Q));
 
 			function $(e) {
 				const t = !!e.isRecentRevisionsMode,
@@ -5592,7 +5592,7 @@
 						...e,
 						isRecent: t
 					});
-				return r.a.createElement(Q, Y({
+				return r.a.createElement(X, Y({
 					key: s,
 					listingKey: s
 				}, e))
@@ -6138,8 +6138,8 @@
 				K = s("./src/reddit/components/Wiki/WikiPageEditor/index.m.less"),
 				Y = s.n(K);
 			const Z = "Discard-wiki-page-changes",
-				X = "Add-wiki-revision-reason",
-				Q = 2,
+				Q = "Add-wiki-revision-reason",
+				X = 2,
 				$ = (e, t, s) => {
 					const i = t.status,
 						r = {
@@ -6168,7 +6168,7 @@
 				},
 				ee = Object(o.c)({
 					allowNavigationCallback: F.a,
-					isRevisionReasonModalOpen: Object(W.b)(X),
+					isRevisionReasonModalOpen: Object(W.b)(Q),
 					isSaveBeforeLeaveModalOpen: Object(W.b)(Z),
 					wikiPage: D.c
 				}),
@@ -6267,7 +6267,7 @@
 					}, this.onCancelAddingRevisionReason = () => {
 						this.finishPendingNavTransition(!1), this.props.closeAllModals()
 					}, this.showRevisionReasonModal = () => {
-						this.props.isRevisionReasonModalOpen || this.props.toggleModal(X)
+						this.props.isRevisionReasonModalOpen || this.props.toggleModal(Q)
 					}, this.onCancel = () => {
 						this.props.onFinishWikiEdit(!0)
 					}, this.onTextChange = e => {
@@ -6321,7 +6321,7 @@
 								hk: "4qKJob"
 							})
 						}) : r.a.createElement(P.a, {
-							paragraphsCount: Q
+							paragraphsCount: X
 						})), s && r.a.createElement(q, {
 							withOverlay: !0,
 							onCancel: this.onCancelAddingRevisionReason,
@@ -7505,9 +7505,9 @@
 			var n = s("./src/reddit/constants/experiments.ts"),
 				i = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				r = s("./src/reddit/selectors/user.ts");
-			const a = e => n.Ab.Enabled === Object(i.c)(e, {
+			const a = e => n.Cb.Enabled === Object(i.c)(e, {
 				experimentEligibilitySelector: r.J,
-				experimentName: n.zb
+				experimentName: n.Bb
 			})
 		},
 		"./src/reddit/selectors/subredditMention.ts": function(e, t, s) {
@@ -7533,12 +7533,12 @@
 				d = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: o,
-						experimentName: n.Id
+						experimentName: n.Kd
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === n.Od.SmIcon || t === n.Od.SmIconHc
+					return t === n.Qd.SmIcon || t === n.Qd.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -7561,4 +7561,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.ae4211ccc90b3edc600f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.07305b97829be73f390b.js.map

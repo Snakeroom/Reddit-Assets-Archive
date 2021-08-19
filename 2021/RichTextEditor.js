@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.05dd564698d44bc93d15.js
-// Retrieved at 8/18/2021, 7:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.1da274c29d4d25bbb817.js
+// Retrieved at 8/18/2021, 8:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, o) {
@@ -1733,7 +1733,7 @@
 				f = (e, t, o) => async (s, i, {
 					apiContext: f
 				}) => {
-					c.i(i(), t);
+					c.j(i(), t);
 					const x = t === d.h.MARKDOWN,
 						g = t === d.h.RICH_TEXT,
 						y = m.k;
@@ -4849,8 +4849,8 @@
 				const t = Object(r.j)(e);
 				return !(!t || (null == t ? void 0 : t.karma) && t.karma.fromPosts < 5 && t.karma.fromComments < 10) && Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: n.gb
-				}) === n.gc
+					experimentName: n.hb
+				}) === n.ic
 			}
 		},
 		"./src/reddit/selectors/moderatingComments.ts": function(e, t, o) {
@@ -4891,4 +4891,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.05dd564698d44bc93d15.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.1da274c29d4d25bbb817.js.map

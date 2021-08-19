@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.dd374122541531fb1921.js
-// Retrieved at 8/18/2021, 7:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.0834f28652789e17aa73.js
+// Retrieved at 8/18/2021, 8:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -2168,9 +2168,9 @@
 				Ft = n("./src/reddit/constants/experiments.ts"),
 				Dt = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const Ut = e => Object(Dt.c)(e, {
-				experimentName: Ft.S,
+				experimentName: Ft.T,
 				experimentEligibilitySelector: Dt.a
-			}) === Ft.P.Enabled;
+			}) === Ft.Q.Enabled;
 			var Wt = n("./src/reddit/selectors/communityAwards.ts");
 			const Ht = (e, {
 				commentId: t
@@ -3580,4 +3580,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.dd374122541531fb1921.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.0834f28652789e17aa73.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditCreation.7f0e5b8512f532e34b89.js
-// Retrieved at 8/18/2021, 7:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditCreation.656239acb2853c3ba0f1.js
+// Retrieved at 8/18/2021, 8:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditCreation"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -76,25 +76,6 @@
 				d = function() {
 					return l()[0].gen
 				}
-		},
-		"./src/reddit/actions/pages/subredditCreation.ts": function(e, t, n) {
-			"use strict";
-			n.r(t), n.d(t, "subredditCreationPageRequested", (function() {
-				return c
-			}));
-			var a = n("./src/lib/pageTitle.ts"),
-				s = n("./src/reddit/actions/platform.ts"),
-				r = n("./src/reddit/actions/tags/index.ts"),
-				i = n("./src/reddit/actions/users.ts"),
-				o = n("./src/reddit/helpers/pageActionLoginRedirect.ts"),
-				l = n("./src/reddit/selectors/user.ts");
-			const c = () => async (e, t) => {
-				e(s.l({
-					title: Object(a.l)()
-				})), await e(Object(i.s)());
-				const n = t();
-				Object(l.J)(n) ? await e(Object(r.c)()) : Object(o.a)(e, n)
-			}
 		},
 		"./src/reddit/components/CharacterCountdown/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -264,9 +245,9 @@
 		"./src/reddit/components/Settings/shared/Widgets.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "m", (function() {
-				return G
+				return J
 			})), n.d(t, "j", (function() {
-				return K
+				return X
 			})), n.d(t, "n", (function() {
 				return U
 			})), n.d(t, "k", (function() {
@@ -284,7 +265,7 @@
 			})), n.d(t, "a", (function() {
 				return be
 			})), n.d(t, "d", (function() {
-				return Ce
+				return ve
 			})), n.d(t, "h", (function() {
 				return fe
 			})), n.d(t, "c", (function() {
@@ -309,8 +290,8 @@
 				h = n("./src/reddit/controls/Dropdown/index.tsx"),
 				x = n("./src/reddit/controls/Dropdown/Row.tsx"),
 				b = n("./src/reddit/controls/FormFields/index.tsx"),
-				v = n("./src/lib/lessComponent.tsx"),
-				C = n("./src/reddit/icons/svgs/Dropdown/index.tsx"),
+				C = n("./src/lib/lessComponent.tsx"),
+				v = n("./src/reddit/icons/svgs/Dropdown/index.tsx"),
 				f = n("./src/reddit/controls/Select/index.m.less"),
 				E = n.n(f);
 
@@ -323,9 +304,9 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const _ = v.a.span("Wrapper", E.a),
-				w = v.a.select("Inner", E.a),
-				y = v.a.wrapped(C.b, "Caret", E.a);
+			const _ = C.a.span("Wrapper", E.a),
+				w = C.a.select("Inner", E.a),
+				y = C.a.wrapped(v.b, "Caret", E.a);
 
 			function k({
 				className: e,
@@ -345,21 +326,21 @@
 			}
 			var N = n("./src/reddit/controls/ToggleSwitch/index.tsx"),
 				O = n("./src/reddit/controls/Typography/index.tsx"),
-				j = n("./src/reddit/icons/svgs/ArrowRight/index.tsx"),
-				S = n("./src/reddit/icons/svgs/Circle/index.tsx"),
-				I = n("./src/reddit/icons/svgs/OutboundLink/index.tsx"),
+				S = n("./src/reddit/icons/svgs/ArrowRight/index.tsx"),
+				I = n("./src/reddit/icons/svgs/Circle/index.tsx"),
+				j = n("./src/reddit/icons/svgs/OutboundLink/index.tsx"),
 				T = n("./node_modules/lodash/range.js"),
-				R = n.n(T),
-				L = n("./src/reddit/controls/Button/index.tsx"),
-				M = n("./src/reddit/layout/row/Inline/index.tsx"),
-				D = n("./src/reddit/models/Flair/index.ts"),
-				F = n("./src/reddit/selectors/tooltip.ts"),
-				B = n("./src/reddit/selectors/user.ts"),
+				M = n.n(T),
+				D = n("./src/reddit/controls/Button/index.tsx"),
+				L = n("./src/reddit/layout/row/Inline/index.tsx"),
+				R = n("./src/reddit/models/Flair/index.ts"),
+				B = n("./src/reddit/selectors/tooltip.ts"),
+				F = n("./src/reddit/selectors/user.ts"),
 				P = n("./src/reddit/components/Settings/shared/Widgets.m.less"),
 				A = n.n(P);
 
-			function H() {
-				return (H = Object.assign || function(e) {
+			function W() {
+				return (W = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var a in n) Object.prototype.hasOwnProperty.call(n, a) && (e[a] = n[a])
@@ -367,15 +348,15 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const W = Object(d.a)(h.a),
-				V = v.a.wrapped(S.a, "Circle", A.a),
-				Q = v.a.h3("Label", A.a),
-				G = v.a.wrapped(O.c, "Subtext", A.a),
-				z = v.a.wrapped(u.a, "HoverTooltip", A.a),
-				q = v.a.div("ControlContainer", A.a),
-				J = v.a.div("TextContainer", A.a),
-				Y = v.a.div("ActionContainer", A.a),
-				K = ({
+			const G = Object(d.a)(h.a),
+				H = C.a.wrapped(I.a, "Circle", A.a),
+				V = C.a.h3("Label", A.a),
+				J = C.a.wrapped(O.c, "Subtext", A.a),
+				Y = C.a.wrapped(u.a, "HoverTooltip", A.a),
+				K = C.a.div("ControlContainer", A.a),
+				Q = C.a.div("TextContainer", A.a),
+				z = C.a.div("ActionContainer", A.a),
+				X = ({
 					className: e,
 					direction: t,
 					isCreateCommunity: n,
@@ -385,7 +366,7 @@
 					indent: o,
 					last: c,
 					...d
-				}) => s.a.createElement("div", H({}, d, {
+				}) => s.a.createElement("div", W({}, d, {
 					className: Object(l.a)(A.a.Wrapper, e, {
 						[A.a.mColumn]: "column" === t,
 						[A.a.mDisabled]: !!i,
@@ -396,28 +377,28 @@
 						[A.a.isNightModeOn]: !!r
 					})
 				})),
-				Z = v.a.a("Link", A.a),
-				U = v.a.wrapped(Z, "SubtextLink", A.a),
-				X = v.a.wrapped(I.a, "LinkIcon", A.a),
-				$ = v.a.button("LinkButton", A.a),
-				ee = v.a.wrapped(j.a, "ArrowRight", A.a),
-				te = e => s.a.createElement(K, {
+				q = C.a.a("Link", A.a),
+				U = C.a.wrapped(q, "SubtextLink", A.a),
+				Z = C.a.wrapped(j.a, "LinkIcon", A.a),
+				$ = C.a.button("LinkButton", A.a),
+				ee = C.a.wrapped(S.a, "ArrowRight", A.a),
+				te = e => s.a.createElement(X, {
 					direction: e.direction,
 					disabled: e.disabled,
 					indent: e.indent,
 					isCreateCommunity: e.isCreateCommunity,
 					last: e.last
-				}, s.a.createElement(J, {
+				}, s.a.createElement(Q, {
 					className: e.textContainerClassName
-				}, s.a.createElement(Q, null, e.label, e.isRequired && s.a.createElement(V, null)), s.a.createElement(G, null, e.subtext)), s.a.createElement(Y, null, e.children)),
-				ne = v.a.div("StyledFlair", A.a),
-				ae = v.a.wrapped(ne, "SpoilerFlair", A.a),
-				se = v.a.wrapped(ne, "NSFWFlair", A.a),
+				}, s.a.createElement(V, null, e.label, e.isRequired && s.a.createElement(H, null)), s.a.createElement(J, null, e.subtext)), s.a.createElement(z, null, e.children)),
+				ne = C.a.div("StyledFlair", A.a),
+				ae = C.a.wrapped(ne, "SpoilerFlair", A.a),
+				se = C.a.wrapped(ne, "NSFWFlair", A.a),
 				re = e => {
 					switch (e.flair) {
-						case D.f.Nsfw:
+						case R.f.Nsfw:
 							return s.a.createElement(se, null, "NSFW");
-						case D.f.Spoiler:
+						case R.f.Spoiler:
 							return s.a.createElement(ae, null, "SPOILER");
 						default:
 							return null
@@ -425,14 +406,14 @@
 				},
 				ie = e => {
 					const t = Object(i.a)();
-					return s.a.createElement(K, {
+					return s.a.createElement(X, {
 						className: e.className,
 						disabled: e.disabled,
 						indent: e.indent,
 						last: e.last
-					}, s.a.createElement(J, null, s.a.createElement(M.a, null, s.a.createElement("label", {
+					}, s.a.createElement(Q, null, s.a.createElement(L.a, null, s.a.createElement("label", {
 						htmlFor: t
-					}, s.a.createElement(Q, null, e.label))), s.a.createElement(G, null, e.subtext)), s.a.createElement(Y, null, s.a.createElement(q, null, e.tooltip && s.a.createElement(z, {
+					}, s.a.createElement(V, null, e.label))), s.a.createElement(J, null, e.subtext)), s.a.createElement(z, null, s.a.createElement(K, null, e.tooltip && s.a.createElement(Y, {
 						tooltipContentClass: e.tooltipContentClassName,
 						text: e.tooltip
 					}), s.a.createElement(N.a, {
@@ -443,37 +424,37 @@
 						disabled: e.disabled
 					}))))
 				},
-				oe = v.a.input("RangeSliderInput", A.a),
-				le = v.a.div("RangeSlider", A.a),
-				ce = v.a.div("Ticks", A.a),
-				de = v.a.div("TickText", A.a),
-				me = v.a.div("PreSubText", A.a),
+				oe = C.a.input("RangeSliderInput", A.a),
+				le = C.a.div("RangeSlider", A.a),
+				ce = C.a.div("Ticks", A.a),
+				de = C.a.div("TickText", A.a),
+				me = C.a.div("PreSubText", A.a),
 				ue = Object(o.c)({
-					isNightModeOn: B.W
+					isNightModeOn: F.W
 				}),
-				pe = Object(r.b)(ue)(e => s.a.createElement(K, {
+				pe = Object(r.b)(ue)(e => s.a.createElement(X, {
 					last: e.last,
 					indent: e.indent,
 					disabled: e.disabled,
 					inModal: e.inModal,
 					isNightModeOn: e.isNightModeOn,
 					direction: e.direction
-				}, s.a.createElement(J, {
+				}, s.a.createElement(Q, {
 					style: {
 						flex: 5
 					}
-				}, !e.inModal && s.a.createElement(M.a, null, s.a.createElement(Q, null, e.label)), s.a.createElement(G, null, " ", s.a.createElement(me, {
+				}, !e.inModal && s.a.createElement(L.a, null, s.a.createElement(V, null, e.label)), s.a.createElement(J, null, " ", s.a.createElement(me, {
 					style: {
 						color: e.ticks[e.value].color
 					}
-				}, " ", e.ticks[e.value].text + ": ", " "), " ", e.subtext)), s.a.createElement(Y, {
+				}, " ", e.ticks[e.value].text + ": ", " "), " ", e.subtext)), s.a.createElement(z, {
 					style: {
 						flex: 3,
 						margin: "20px 20px 0 0"
 					}
 				}, s.a.createElement(le, null, s.a.createElement(oe, {
 					style: {
-						background: "linear-gradient(to right, " + R()(1, e.max + 1).map((t, n) => t <= e.value ? `${e.ticks[e.value].color} ${(t-1)/e.max*100}%,\n                    ${e.ticks[e.value].color} ${t/e.max*100-1}%,\n                    #fff ${t/e.max*100-1}%,\n                    #fff ${t/e.max*100}%` : t !== e.max ? `#c5c5c5 ${(t-1)/e.max*100}%, #c5c5c5 ${t/e.max*100-1}%,\n                    #fff ${t/e.max*100-1}%,\n                    #fff ${t/e.max*100}%` : `#c5c5c5 ${(t-1)/e.max*100}%`) + ", #C5C5C5 100%)"
+						background: "linear-gradient(to right, " + M()(1, e.max + 1).map((t, n) => t <= e.value ? `${e.ticks[e.value].color} ${(t-1)/e.max*100}%,\n                    ${e.ticks[e.value].color} ${t/e.max*100-1}%,\n                    #fff ${t/e.max*100-1}%,\n                    #fff ${t/e.max*100}%` : t !== e.max ? `#c5c5c5 ${(t-1)/e.max*100}%, #c5c5c5 ${t/e.max*100-1}%,\n                    #fff ${t/e.max*100-1}%,\n                    #fff ${t/e.max*100}%` : `#c5c5c5 ${(t-1)/e.max*100}%`) + ", #C5C5C5 100%)"
 					},
 					className: "range-slider-input",
 					type: "range",
@@ -489,59 +470,59 @@
 						color: t === e.value.toString() ? e.ticks[t].color : "#878A8C"
 					}
 				}, e.ticks[t].text))))))),
-				he = e => s.a.createElement(K, {
+				he = e => s.a.createElement(X, {
 					last: e.last,
 					indent: e.indent,
 					disabled: e.disabled
-				}, s.a.createElement(J, null, s.a.createElement(M.a, null, s.a.createElement(Q, null, e.label)), s.a.createElement(G, null, e.subtext)), s.a.createElement(Y, null, s.a.createElement(q, null, s.a.createElement(L.l, {
+				}, s.a.createElement(Q, null, s.a.createElement(L.a, null, s.a.createElement(V, null, e.label)), s.a.createElement(J, null, e.subtext)), s.a.createElement(z, null, s.a.createElement(K, null, s.a.createElement(D.l, {
 					onClick: e.onClick
 				}, e.actionText)))),
-				xe = e => s.a.createElement(K, {
+				xe = e => s.a.createElement(X, {
 					className: e.className,
 					last: e.last,
 					indent: e.indent,
 					disabled: e.disabled
-				}, s.a.createElement(J, null, s.a.createElement(Z, {
+				}, s.a.createElement(Q, null, s.a.createElement(q, {
 					href: e.link,
 					onClick: e.onClick,
 					target: e.openInNewTab ? "_blank" : void 0
-				}, e.label, s.a.createElement(X, null)), s.a.createElement(G, null, e.subtext)), s.a.createElement(Y, null, s.a.createElement(Z, {
+				}, e.label, s.a.createElement(Z, null)), s.a.createElement(J, null, e.subtext)), s.a.createElement(z, null, s.a.createElement(q, {
 					href: e.link,
 					onClick: e.onClick,
 					target: e.openInNewTab ? "_blank" : void 0
 				}, s.a.createElement(ee, null)))),
-				be = e => s.a.createElement(K, {
+				be = e => s.a.createElement(X, {
 					className: e.className,
 					disabled: e.disabled,
 					indent: e.indent,
 					last: e.last
-				}, s.a.createElement(J, null, s.a.createElement($, {
+				}, s.a.createElement(Q, null, s.a.createElement($, {
 					onClick: e.onClick
-				}, e.label), s.a.createElement(G, null, e.subtext)), s.a.createElement(Y, null, s.a.createElement($, {
+				}, e.label), s.a.createElement(J, null, e.subtext)), s.a.createElement(z, null, s.a.createElement($, {
 					onClick: e.onClick
 				}, s.a.createElement(ee, null)))),
-				ve = Object(o.c)({
-					isOpen: (e, t) => Object(F.b)(t.id)(e)
+				Ce = Object(o.c)({
+					isOpen: (e, t) => Object(B.b)(t.id)(e)
 				}),
-				Ce = Object(r.b)(ve, (e, t) => ({
+				ve = Object(r.b)(Ce, (e, t) => ({
 					openDropdown: () => {
 						e(Object(c.h)({
 							tooltipId: t.id
 						}))
 					}
-				}))(e => s.a.createElement(K, {
+				}))(e => s.a.createElement(X, {
 					last: e.last,
 					indent: e.indent,
 					disabled: e.disabled
-				}, s.a.createElement(J, null, s.a.createElement(Q, null, e.label), s.a.createElement(G, null, e.subtext)), s.a.createElement(Y, null, (e => s.a.createElement("div", {
+				}, s.a.createElement(Q, null, s.a.createElement(V, null, e.label), s.a.createElement(J, null, e.subtext)), s.a.createElement(z, null, (e => s.a.createElement("div", {
 					className: A.a.DropdownWrapper,
 					onClick: e.openDropdown
 				}, s.a.createElement("span", {
 					className: A.a.Row,
 					id: `SettingDropdown--${e.id}`
-				}, e.displayTitle || e.selected), s.a.createElement(C.b, {
+				}, e.displayTitle || e.selected), s.a.createElement(v.b, {
 					className: A.a.DropdownTriangle
-				}), s.a.createElement(W, {
+				}), s.a.createElement(G, {
 					container: void 0,
 					isOpen: e.isOpen,
 					renderContentsHidden: !0,
@@ -568,15 +549,15 @@
 						{
 							items: l
 						} = i;
-					return s.a.createElement(K, {
+					return s.a.createElement(X, {
 						disabled: e
-					}, s.a.createElement(J, null, s.a.createElement("label", {
+					}, s.a.createElement(Q, null, s.a.createElement("label", {
 						htmlFor: i.id
-					}, s.a.createElement(Q, {
+					}, s.a.createElement(V, {
 						className: i.labelClassname
-					}, i.label)), s.a.createElement(G, null, i.subtext)), s.a.createElement("div", {
+					}, i.label)), s.a.createElement(J, null, i.subtext)), s.a.createElement("div", {
 						className: A.a.Wrapper__LineBreak
-					}), s.a.createElement(K, {
+					}), s.a.createElement(X, {
 						last: t,
 						indent: !0,
 						disabled: e
@@ -594,13 +575,13 @@
 						value: e
 					}, t)))))
 				},
-				Ee = e => s.a.createElement(K, {
+				Ee = e => s.a.createElement(X, {
 					className: e.className,
 					direction: e.direction,
 					disabled: e.disabled,
 					indent: e.indent,
 					last: e.last
-				}, s.a.createElement(J, null, s.a.createElement(Q, null, e.label), s.a.createElement(G, null, e.subtext)), s.a.createElement(Y, null, e.children)),
+				}, s.a.createElement(Q, null, s.a.createElement(V, null, e.label), s.a.createElement(J, null, e.subtext)), s.a.createElement(z, null, e.children)),
 				ge = e => s.a.createElement(te, {
 					isCreateCommunity: e.isCreateCommunity,
 					isRequired: e.isRequired,
@@ -713,9 +694,9 @@
 			})), n.d(t, "i", (function() {
 				return b
 			})), n.d(t, "e", (function() {
-				return v
-			})), n.d(t, "b", (function() {
 				return C
+			})), n.d(t, "b", (function() {
+				return v
 			})), n.d(t, "c", (function() {
 				return f
 			})), n.d(t, "d", (function() {
@@ -737,8 +718,8 @@
 				h = a.a.div("FormElement", r.a),
 				x = a.a.div("FormGroupDescription", r.a),
 				b = a.a.div("FormItem", r.a),
-				v = a.a.h3("FormElementTitle", r.a),
-				C = a.a.div("FormElementDescription", r.a),
+				C = a.a.h3("FormElementTitle", r.a),
+				v = a.a.div("FormElementDescription", r.a),
 				f = a.a.div("FormElementError", r.a),
 				E = a.a.div("FormElementSubGroup", r.a),
 				g = a.a.li("FormListItem", r.a)
@@ -781,9 +762,9 @@
 			})), n.d(t, "b", (function() {
 				return b
 			})), n.d(t, "i", (function() {
-				return v
-			})), n.d(t, "h", (function() {
 				return C
+			})), n.d(t, "h", (function() {
+				return v
 			})), n.d(t, "g", (function() {
 				return f
 			}));
@@ -801,9 +782,443 @@
 				h = a.a.wrapped(o.a, "RadioOff", d.a),
 				x = a.a.wrapped(r.a, "Checkbox", d.a),
 				b = a.a.wrapped(i.a, "CheckboxSelected", d.a),
-				v = a.a.textarea("Textarea", d.a),
-				C = a.a.label("StyledLabel", d.a),
+				C = a.a.textarea("Textarea", d.a),
+				v = a.a.label("StyledLabel", d.a),
 				f = a.a.input("StyledFileInput", d.a)
+		},
+		"./src/reddit/components/SubredditCreationModal/Layout/index.m.less": function(e, t, n) {
+			e.exports = {
+				Content: "gGAX8JwsFcDSDsT5KcKrL",
+				content: "gGAX8JwsFcDSDsT5KcKrL",
+				Container: "_1J0hJj-EXr49KppYTmtS9S",
+				container: "_1J0hJj-EXr49KppYTmtS9S",
+				ContainerExp: "_3Cb_x0VK1tr3QTaBDGU_-K",
+				containerExp: "_3Cb_x0VK1tr3QTaBDGU_-K",
+				OuterContainer: "_1wLNhgzYyv0-JBg0BfYf3Y",
+				outerContainer: "_1wLNhgzYyv0-JBg0BfYf3Y"
+			}
+		},
+		"./src/reddit/components/SubredditCreationModal/index.m.less": function(e, t, n) {
+			e.exports = {
+				sublabel: "_1l4AkEjhz6oh1lmsJv-6Oo",
+				subtitle: "SJ8r-Lx8GZVAGXaT954wj",
+				radioDescription: "_1FBE2BnOrrXe8bCr6ZLfGq",
+				buttonContainer: "pllx1jz7x_s-pSUC5f15v",
+				field: "_2m493sVo9iDo-3EBxQrAJc",
+				isCreatePending: "_39K9U8eGRvjiN3lSUWfoXF",
+				subredditCreation: "_3O95baBiXBhn2SNtTQXPun",
+				container: "o5ISTIh6L_lvDC1gObc76",
+				title: "_2d-OkUXQj6P8CRIrcoi1i9",
+				nsfw: "_3bx-zSg4-Vgfi3x1IUw6QP",
+				createButton: "_2shIfL3K7ivaojvZFjvI-Z",
+				pendingText: "A8PHuGr_4pbV_7t_GaokO",
+				metaFieldDescription: "HsJgPFCmZ8OKgFe3tYiOB",
+				numCommunityTopicsSelected: "_3-RTBwxKbhnYzfNZydOubp",
+				subtextContainer: "_1V3LfcGf8bnGW9vw7JkOOs",
+				radioContainer: "_247NCf2PSxl4rhmx2dDhDC",
+				radioContent: "_2QiRZZs4K5lTjMTuSaMgDC",
+				textButton: "c6YtB-MsWwD2pwSxCRQWE",
+				fullWidthTextContainer: "_39cm2YKltxh0YW0O1f54y3",
+				Info: "_16_IgJ4BqtadthCKIpnW1g",
+				info: "_16_IgJ4BqtadthCKIpnW1g",
+				RadioOption: "_12umGu0WfWJw9rxGq4ykrZ",
+				radioOption: "_12umGu0WfWJw9rxGq4ykrZ",
+				StyledTooltip: "j2Jvuy8Yu-jexJED1Ap51",
+				styledTooltip: "j2Jvuy8Yu-jexJED1Ap51",
+				RadioIcon: "_1g89RGQdzecmnfVeXck6JL",
+				radioIcon: "_1g89RGQdzecmnfVeXck6JL",
+				Employee: "_2gDVAtwwxskByrxI2Zr9BL",
+				employee: "_2gDVAtwwxskByrxI2Zr9BL",
+				Private: "_1Ma7YYe0ShiEmNSS16r18H",
+				private: "_1Ma7YYe0ShiEmNSS16r18H",
+				Public: "_3WyydSidemq34inFmhA1SE",
+				public: "_3WyydSidemq34inFmhA1SE",
+				Restricted: "CodbGPlWjCpPE6jWVhkOn",
+				restricted: "CodbGPlWjCpPE6jWVhkOn",
+				CloseButton: "_1P7Eow5rs9Xxm1uqMMEr2h",
+				closeButton: "_1P7Eow5rs9Xxm1uqMMEr2h",
+				ErrorText: "_2dXAoHGf_uRg0D6ofrpJbr",
+				errorText: "_2dXAoHGf_uRg0D6ofrpJbr"
+			}
+		},
+		"./src/reddit/components/SubredditCreationModal/index.tsx": function(e, t, n) {
+			"use strict";
+			n.r(t), n.d(t, "radioOptions", (function() {
+				return ie
+			}));
+			var a = n("./node_modules/fbt/lib/FbtPublic.js"),
+				s = n("./node_modules/react/index.js"),
+				r = n.n(s),
+				i = n("./node_modules/react-redux/es/index.js"),
+				o = n("./node_modules/reselect/es/index.js"),
+				l = n("./src/higherOrderComponents/asModal/index.tsx"),
+				c = n("./src/lib/classNames/index.ts"),
+				d = n("./src/lib/formatApiError/index.ts"),
+				m = n("./src/reddit/actions/modal.ts"),
+				u = n("./src/reddit/actions/subredditCreation.ts"),
+				p = n("./src/reddit/actions/tooltip.ts"),
+				h = n("./src/reddit/components/EmailInvitePaintedDoor/loader.tsx"),
+				x = n("./src/reddit/components/InfoTextTooltip/index.tsx"),
+				b = n("./src/reddit/components/Settings/shared/Widgets.tsx"),
+				C = n("./src/reddit/contexts/NavbarExp.ts"),
+				v = n("./src/reddit/components/SubredditCreationModal/Layout/index.m.less"),
+				f = n.n(v);
+			var E = e => {
+					const t = Object(s.useContext)(C.a);
+					return r.a.createElement("div", {
+						className: f.a.OuterContainer
+					}, r.a.createElement("div", {
+						className: Object(c.a)(e.className, f.a.Container)
+					}, r.a.createElement("div", {
+						className: Object(c.a)(f.a.Content, {
+							[f.a.ContainerExp]: t
+						})
+					}, e.children)))
+				},
+				g = n("./src/reddit/components/TrackingHelper/index.tsx"),
+				_ = n("./src/reddit/constants/modals.ts"),
+				w = n("./src/reddit/controls/Button/index.tsx"),
+				y = n("./src/reddit/controls/CheckboxInput/index.tsx"),
+				k = n("./src/reddit/controls/ErrorText/index.tsx"),
+				N = n("./src/reddit/controls/RadioInput/index.tsx"),
+				O = n("./src/reddit/controls/RadioInput/RadioOption/index.tsx"),
+				S = n("./src/reddit/controls/TextButton/index.tsx"),
+				I = n("./src/reddit/helpers/trackers/emailInvite.ts"),
+				j = n("./src/reddit/helpers/trackers/screenview.ts"),
+				T = n("./src/reddit/helpers/trackers/subredditCreation.ts"),
+				M = n("./src/reddit/icons/svgs/Admin/index.tsx"),
+				D = n("./src/reddit/icons/svgs/Close/index.tsx"),
+				L = n("./src/reddit/icons/svgs/Eye/index.tsx"),
+				R = n("./src/reddit/icons/svgs/Info/index.tsx"),
+				B = n("./src/reddit/icons/svgs/Lock/index.tsx"),
+				F = n("./src/reddit/icons/svgs/User/index.tsx"),
+				P = n("./src/reddit/models/Subreddit/index.ts"),
+				A = n("./src/reddit/models/SubredditRestrictions/index.ts"),
+				W = n("./src/reddit/selectors/experiments/emailInvite.ts"),
+				G = n("./src/reddit/selectors/subreddit.ts"),
+				H = n("./src/reddit/selectors/tags.ts"),
+				V = n("./src/reddit/selectors/user.ts"),
+				J = n("./src/reddit/components/SubredditCreationModal/index.m.less"),
+				Y = n.n(J),
+				K = n("./src/lib/lessComponent.tsx");
+			const Q = 21,
+				z = "create-title-info",
+				X = K.a.wrapped(R.a, "Info", Y.a),
+				q = K.a.wrapped(O.a, "RadioOption", Y.a),
+				U = K.a.wrapped(x.c, "Tooltip", Y.a),
+				Z = K.a.wrapped(F.a, "Public", Y.a),
+				$ = K.a.wrapped(L.a, "Restricted", Y.a),
+				ee = K.a.wrapped(B.a, "Private", Y.a),
+				te = K.a.wrapped(M.a, "Employee", Y.a),
+				ne = K.a.wrapped(D.a, "CloseButton", Y.a),
+				ae = K.a.wrapped(k.b, "ErrorText", Y.a),
+				se = Object(o.c)({
+					error: G.g,
+					isCreatePending: G.k,
+					isEmailInviteExperimentEnabled: W.a,
+					isEmployee: V.G,
+					crosspostId: G.j,
+					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(V.hb)(e),
+					userIsSuspended: V.P,
+					allTags: H.e,
+					existingTags: H.f,
+					newTags: H.g,
+					selectedPrimaryTagId: H.h
+				}),
+				re = Object(i.b)(se, e => ({
+					createCommunity: t => e(Object(u.h)(t)),
+					clearErrors: () => e(Object(u.f)()),
+					onCloseModal: () => e(Object(m.g)(_.a.SUBREDDIT_CREATION_MODAL_ID)),
+					onShowTooltip: () => e(Object(p.f)({
+						tooltipId: z
+					})),
+					onHideTooltip: () => e(Object(p.i)()),
+					validateSubredditName: t => e(Object(u.i)(t))
+				})),
+				ie = (e, t) => [r.a.createElement(q, {
+					key: "public",
+					showButton: !0,
+					value: "public"
+				}, r.a.createElement("div", {
+					className: Y.a.radioContent
+				}, r.a.createElement("div", null, r.a.createElement(Z, null)), r.a.createElement("div", {
+					className: Y.a.radioContainer
+				}, r.a.createElement("div", {
+					className: Y.a.sublabel
+				}, a.fbt._("Public", null, {
+					hk: "DK992"
+				})), r.a.createElement("div", {
+					className: Object(c.a)(Y.a.metafieldDescription, Y.a.radioDescription)
+				}, a.fbt._("Anyone can view, post, and comment to this community", null, {
+					hk: "1PfFUA"
+				}))))), r.a.createElement(q, {
+					key: "restricted",
+					showButton: !0,
+					value: "restricted"
+				}, r.a.createElement("div", {
+					className: Y.a.radioContent
+				}, r.a.createElement("div", null, r.a.createElement($, null)), r.a.createElement("div", {
+					className: Y.a.radioContainer
+				}, r.a.createElement("div", {
+					className: Y.a.sublabel
+				}, a.fbt._("Restricted", null, {
+					hk: "1iBTDq"
+				})), r.a.createElement("div", {
+					className: Object(c.a)(Y.a.metafieldDescription, Y.a.radioDescription)
+				}, Object(A.g)(t))))), r.a.createElement(q, {
+					key: "private",
+					showButton: !0,
+					value: "private"
+				}, r.a.createElement("div", {
+					className: Y.a.radioContent
+				}, r.a.createElement("div", null, r.a.createElement(ee, null)), r.a.createElement("div", {
+					className: Y.a.radioContainer
+				}, r.a.createElement("div", {
+					className: Y.a.sublabel
+				}, a.fbt._("Private", null, {
+					hk: "3q5SYn"
+				})), r.a.createElement("div", {
+					className: Object(c.a)(Y.a.metafieldDescription, Y.a.radioDescription)
+				}, a.fbt._("Only approved users can view and submit to this community", null, {
+					hk: "3z8OI6"
+				}))))), r.a.createElement(q, {
+					key: "employees_only",
+					showButton: !0,
+					value: "employees_only",
+					hidden: !e
+				}, r.a.createElement("div", {
+					className: Y.a.radioContent
+				}, r.a.createElement("div", null, r.a.createElement(te, null)), r.a.createElement("div", {
+					className: Y.a.radioContainer
+				}, r.a.createElement("div", {
+					className: Y.a.sublabel
+				}, a.fbt._("Employees only", null, {
+					hk: "1arrQC"
+				})), r.a.createElement("div", {
+					className: Object(c.a)(Y.a.metafieldDescription, Y.a.radioDescription)
+				}, a.fbt._("Only Reddit employees can view and submit to this community", null, {
+					hk: "3ty23C"
+				})))))];
+			class oe extends r.a.Component {
+				constructor(e) {
+					super(e), this.onNameChange = e => {
+						this.setState({
+							name: e.target.value
+						}), this.props.clearErrors()
+					}, this.update = (e, t) => this.setState({
+						[t]: e
+					}), this.onTypeChange = e => {
+						this.setState({
+							type: e
+						})
+					}, this.onInviteViaEmailClick = () => {
+						const {
+							sendEvent: e
+						} = this.props;
+						e(Object(I.a)("community_creation")), this.setState({
+							showEmailInviteModal: !0
+						})
+					}, this.onCloseInviteViaEmailModal = () => {
+						this.setState({
+							showEmailInviteModal: !1
+						})
+					}, this.onCreateCommunityClick = () => {
+						this.props.isCreatePending || (clearTimeout(this.timeout), this.props.createCommunity({
+							name: this.state.name,
+							publicDescription: "",
+							type: this.state.type,
+							over18: this.state.over18,
+							restrictCommenting: this.state.restrictCommenting,
+							restrictPosting: this.state.restrictPosting,
+							allTags: this.props.allTags,
+							newTags: this.props.newTags,
+							crosspostId: this.state.crosspostId,
+							existingTags: this.props.existingTags,
+							primaryTagId: this.props.selectedPrimaryTagId || void 0
+						}), this.timeout = window.setTimeout(() => {
+							this.props.isCreatePending && this.setState({
+								waitingForSuccessfulCommunity: !0
+							})
+						}, 2e3))
+					}, this.errorHelper = e => {
+						if (!e) return {};
+						const t = e.fields && e.fields.length && e.fields[0] && e.fields[0].field,
+							n = e.type;
+						if ("name" === t) {
+							if ("NO_TEXT" === n) return {
+								name: a.fbt._("A community name is required", null, {
+									hk: "QIlYS"
+								})
+							};
+							if ("BAD_SR_NAME" === n) return {
+								name: a.fbt._("Community names must be between 3–21 characters, and can only contain letters, numbers, or underscores.", null, {
+									hk: "2rmVgd"
+								})
+							};
+							if ("SUBREDDIT_EXISTS" === n) return {
+								name: a.fbt._("Sorry, r/{subreddit name attempt} is taken. Try another.", [a.fbt._param("subreddit name attempt", this.state.name)], {
+									hk: "CLwzs"
+								})
+							};
+							if ("SUBREDDIT_UNAVAILABLE" === n) return {
+								name: a.fbt._("This community name is unavailable", null, {
+									hk: "15j6BB"
+								})
+							}
+						}
+						return {
+							generic: Object(d.a)(e)
+						}
+					}, this.onValidateSubredditName = () => this.props.validateSubredditName(this.state.name), this.onCloseModal = () => {
+						this.props.sendEvent(Object(T.b)()), this.props.onCloseModal()
+					}, this.onCancelCreation = () => {
+						this.props.onCloseModal(), this.props.sendEvent(Object(T.b)())
+					}, this.onUpdateOver18 = () => this.update(!this.state.over18, "over18"), this.state = {
+						name: "",
+						type: P.f.Public,
+						crosspostId: e.crosspostId,
+						over18: !1,
+						waitingForSuccessfulCommunity: !1,
+						restrictCommenting: !1,
+						restrictPosting: !0,
+						showEmailInviteModal: !1
+					}
+				}
+				componentDidMount() {
+					const {
+						sendEvent: e
+					} = this.props;
+					e(Object(j.w)())
+				}
+				componentWillUnmount() {
+					clearTimeout(this.timeout), this.props.clearErrors()
+				}
+				render() {
+					const {
+						error: e,
+						isCreatePending: t,
+						isEmailInviteExperimentEnabled: n,
+						isEmployee: s,
+						onHideTooltip: i,
+						onShowTooltip: o,
+						sendEvent: l,
+						userDoesNotHaveEnoughExpToCreateCommunity: d,
+						userIsSuspended: m
+					} = this.props, u = this.errorHelper(e), {
+						over18: p,
+						showEmailInviteModal: x,
+						waitingForSuccessfulCommunity: C
+					} = this.state;
+					return r.a.createElement(E, {
+						className: Y.a.subredditCreation
+					}, r.a.createElement("div", {
+						className: Y.a.container
+					}, r.a.createElement("h1", {
+						className: Y.a.title
+					}, a.fbt._("Create a community", null, {
+						hk: "SlFa7"
+					}), r.a.createElement(ne, {
+						onClick: this.onCloseModal
+					})), d ? r.a.createElement("h2", {
+						className: Y.a.sublabel
+					}, a.fbt._("To prevent spam, accounts must be at least 30 days old and have enough positive karma to create communities.", null, {
+						hk: "44qhJp"
+					})) : m ? r.a.createElement("h2", {
+						className: Y.a.sublabel
+					}, a.fbt._("Accounts banned from the site can not create communities until the ban is lifted.", null, {
+						hk: "3trJMZ"
+					})) : r.a.createElement(r.a.Fragment, null, r.a.createElement(b.e, {
+						isCreateCommunity: !0,
+						label: a.fbt._("Name", null, {
+							hk: "3OIzgl"
+						}),
+						textContainerClassName: Y.a.fullWidthTextContainer,
+						onBlur: this.onValidateSubredditName,
+						onChange: this.onNameChange,
+						maxChars: Q,
+						value: this.state.name,
+						subtext: r.a.createElement("span", {
+							className: Y.a.subtextContainer
+						}, a.fbt._("Community names including capitalization cannot be changed.", null, {
+							hk: "VjrZg"
+						}), r.a.createElement("span", {
+							id: z,
+							onMouseEnter: o,
+							onMouseLeave: i,
+							className: Y.a.info
+						}, r.a.createElement(X, null), r.a.createElement(U, {
+							className: Y.a.StyledTooltip,
+							caretOnTop: !0,
+							tooltipId: z,
+							text: a.fbt._('Names cannot have spaces (e.g., "r/bookclub" not "r/book club"), must be between 3-21 characters, and underscores ("_") are the only special characters allowed. Avoid using solely trademarked names (e.g., "r/FansOfAcme" not "r/Acme").', null, {
+								hk: "3RsycS"
+							})
+						})))
+					}), u.name && r.a.createElement(ae, null, u.name), r.a.createElement(b.k, {
+						label: a.fbt._("Community type", null, {
+							hk: "152EhZ"
+						}),
+						direction: "column",
+						isCreateCommunity: !0,
+						textContainerClassName: Y.a.fullWidthTextContainer
+					}, r.a.createElement(N.a, {
+						value: this.state.type,
+						name: "type",
+						onChange: this.onTypeChange
+					}, ie(s, "post"))), r.a.createElement("div", {
+						className: Object(c.a)(Y.a.field, {
+							[Y.a.isCreatePending]: t
+						})
+					}, r.a.createElement("div", {
+						className: Y.a.subtitle
+					}, a.fbt._("Adult content", null, {
+						hk: "20arB"
+					})), r.a.createElement(y.a, {
+						name: "over18",
+						value: p,
+						onChange: this.onUpdateOver18,
+						disabled: t
+					}, r.a.createElement("div", {
+						className: Y.a.nsfw
+					}, "NSFW"), r.a.createElement("div", {
+						className: Y.a.sublabel
+					}, a.fbt._("18+ year old community", null, {
+						hk: "1XxZMV"
+					})))), n && r.a.createElement("div", {
+						className: Object(c.a)(Y.a.field, {
+							[Y.a.isCreatePending]: t
+						})
+					}, r.a.createElement(S.a, {
+						className: Y.a.textButton,
+						onClick: this.onInviteViaEmailClick
+					}, a.fbt._("Invite members via email", null, {
+						hk: "2uViIf"
+					}))), u.generic && r.a.createElement(ae, null, u.generic), C && r.a.createElement("div", {
+						className: Y.a.pendingText
+					}, a.fbt._("Your community is being created...", null, {
+						hk: "3dSTrq"
+					})), r.a.createElement("div", {
+						className: Y.a.buttonContainer
+					}, r.a.createElement(w.q, {
+						disabled: t,
+						className: Y.a.createButton,
+						onClick: this.onCancelCreation,
+						priority: w.b.Secondary
+					}, a.fbt._("Cancel", null, {
+						hk: "2TSLl5"
+					})), r.a.createElement(w.q, {
+						disabled: t,
+						className: Y.a.createButton,
+						onClick: this.onCreateCommunityClick
+					}, a.fbt._("Create Community", null, {
+						hk: "QE8Y3"
+					}))))), x && r.a.createElement(h.a, {
+						onClose: this.onCloseInviteViaEmailModal,
+						sendEvent: l
+					}))
+				}
+			}
+			t.default = Object(l.a)(Object(g.c)(re(oe)))
 		},
 		"./src/reddit/controls/CheckboxInput/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -839,7 +1254,7 @@
 		"./src/reddit/controls/Dropdown/Row.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return v
+				return C
 			}));
 			var a = n("./node_modules/lodash/throttle.js"),
 				s = n.n(a),
@@ -864,7 +1279,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			class v extends i.a.Component {
+			class C extends i.a.Component {
 				constructor() {
 					super(...arguments), this.handleMouseMove = s()(() => {
 						const {
@@ -923,7 +1338,7 @@
 					[x.a.mIsSelected]: t.isSelected,
 					[x.a.topics]: t.isTopicsStyle
 				});
-				return i.a.createElement(v, b({
+				return i.a.createElement(C, b({
 					className: n
 				}, t))
 			}
@@ -976,9 +1391,9 @@
 				h = n("./src/reddit/selectors/activeModalId.ts"),
 				x = n("./src/higherOrderComponents/asModal/index.tsx"),
 				b = n("./src/reddit/controls/Button/index.tsx"),
-				v = n("./src/reddit/layout/row/Inline/index.tsx"),
-				C = n("./src/reddit/controls/ErrorText/SeeAllTextModal/index.m.less"),
-				f = n.n(C);
+				C = n("./src/reddit/layout/row/Inline/index.tsx"),
+				v = n("./src/reddit/controls/ErrorText/SeeAllTextModal/index.m.less"),
+				f = n.n(v);
 			var E = Object(x.a)(e => {
 					const {
 						children: t,
@@ -986,11 +1401,11 @@
 					} = e;
 					return c.a.createElement("div", {
 						className: f.a.wrapper
-					}, c.a.createElement(v.a, {
+					}, c.a.createElement(C.a, {
 						className: f.a.titleRow
 					}, n), c.a.createElement("div", {
 						className: f.a.detailsContainer
-					}, t), c.a.createElement(v.a, {
+					}, t), c.a.createElement(C.a, {
 						className: f.a.buttonRow
 					}, c.a.createElement(b.i, {
 						className: f.a.confirmButton,
@@ -1184,16 +1599,16 @@
 						})
 					}, e.label), e.children)
 				},
-				v = e => s.a.createElement("div", {
+				C = e => s.a.createElement("div", {
 					className: Object(r.a)(m.a.addValueButton, e.className),
 					onClick: e.onClick
 				}, e.text, " ", s.a.createElement(l.a, {
 					className: m.a.plus
 				}));
-			var C;
+			var v;
 			! function(e) {
 				e[e.ADD = 0] = "ADD", e[e.REMOVE = 1] = "REMOVE"
-			}(C || (C = {}));
+			}(v || (v = {}));
 			class f extends s.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
@@ -1201,7 +1616,7 @@
 					}, this.addValue = () => {
 						const e = this.props.values.slice();
 						this.props.buttonOnTop ? e.unshift("") : e.push(""), this.props.onChange(e), this.props.onEvent && this.props.onEvent({
-							action: C.ADD
+							action: v.ADD
 						})
 					}, this.updateValue = (e, t) => {
 						const n = this.props.values.slice();
@@ -1210,7 +1625,7 @@
 						const t = this.props.values.slice(),
 							n = t[e];
 						t.splice(e, 1), this.props.onChange(t), this.props.onEvent && this.props.onEvent({
-							action: C.REMOVE,
+							action: v.REMOVE,
 							value: n,
 							index: e
 						})
@@ -1271,10 +1686,10 @@
 					const l = !(!!a && n.length >= a) && !o;
 					return s.a.createElement("div", {
 						className: Object(r.a)(m.a.multiInputWrapper, e)
-					}, t && l && s.a.createElement(v, {
+					}, t && l && s.a.createElement(C, {
 						onClick: this.addValue,
 						text: i
-					}), this.renderFields(), !t && l && s.a.createElement(v, {
+					}), this.renderFields(), !t && l && s.a.createElement(C, {
 						onClick: this.addValue,
 						text: i
 					}))
@@ -1592,451 +2007,6 @@
 				d: "M12,11 C15.309,11 18,13.691 18,17 C18,17.553 17.552,18 17,18 L3,18 C2.448,18 2,17.553 2,17 C2,13.691 4.691,11 8,11 L12,11 Z M10,9.7334 C7.868,9.7334 6.133,7.9994 6.133,5.8664 L6.133,4.8664 C6.133,2.7344 7.868,1.0004 10,1.0004 C12.132,1.0004 13.867,2.7344 13.867,4.8664 L13.867,5.8664 C13.867,7.9994 12.132,9.7334 10,9.7334 Z"
 			}))
 		},
-		"./src/reddit/pages/SubredditCreation/Layout/index.m.less": function(e, t, n) {
-			e.exports = {
-				Content: "_2wEvMk0HNO1vMRXR89R4YE",
-				content: "_2wEvMk0HNO1vMRXR89R4YE",
-				isOverlay: "_3JejK3woZKuE7psWYzZMk-",
-				Container: "_3rOOumzhn2kQeSbQA1BtJI",
-				container: "_3rOOumzhn2kQeSbQA1BtJI",
-				ContainerExp: "kRQ16EdnbA2Ep9MtOZ9-o",
-				containerExp: "kRQ16EdnbA2Ep9MtOZ9-o",
-				OuterContainer: "_1t_20Pp0ozZf5JHADFW277",
-				outerContainer: "_1t_20Pp0ozZf5JHADFW277"
-			}
-		},
-		"./src/reddit/pages/SubredditCreation/index.m.less": function(e, t, n) {
-			e.exports = {
-				sublabel: "_3iEQMbJzyCJP7q0YQLg6j4",
-				subtitle: "_1NkQ5U2m0s_6vOfhCgiIgT",
-				radioDescription: "_2VfO_j9K0NqNwA6JyAl8Dk",
-				buttonContainer: "rktXqe6ilbY86M7UI5N0",
-				isOverlay: "_2-RGOjReVDKqocc0lhfKCD",
-				field: "lzEa7-AzGmC9abTt7-RJG",
-				isCreatePending: "_3rxpxb7pMWAbGQ6_JA_my7",
-				subredditCreation: "_3eSVsnKJOqAQo-ixxTeJcl",
-				container: "_2oaybRT7snUp8XlyHlRiSP",
-				title: "_19pYcIVThkZW5KMHTi8qsc",
-				nsfw: "_hnZsl3c6qOjy4qOD9r0R",
-				createButton: "rJOmFCS_DMZSRltlKtpyt",
-				pendingText: "oXus6jwjzhkeznWdE45YL",
-				metaFieldDescription: "fd5WCBCH7kTLTlNepW054",
-				numCommunityTopicsSelected: "_1QES7ND3zudXR2epk08OVa",
-				subtextContainer: "_1V23LtWm6tqb0xlD1Xkh-W",
-				radioContainer: "_3qUROz4qvkxCG-oEJTkW3x",
-				radioContent: "luCqkz2vQaP-L_NeDD98b",
-				textButton: "_1HeLiu_c_KBBmvtR1puoSk",
-				fullWidthTextContainer: "_2jvToia6nJCdTHqp_Tw_fp",
-				Info: "cP738yi9DxlBmCQTtFLop",
-				info: "cP738yi9DxlBmCQTtFLop",
-				RadioOption: "_2uqw2bfrk5pQeRVMtPVRUR",
-				radioOption: "_2uqw2bfrk5pQeRVMtPVRUR",
-				StyledTooltip: "_3mMji3dmYN3jsQ2Ri0owBm",
-				styledTooltip: "_3mMji3dmYN3jsQ2Ri0owBm",
-				RadioIcon: "_1vr9rsoGcISz-S6s7p_6s-",
-				radioIcon: "_1vr9rsoGcISz-S6s7p_6s-",
-				Employee: "ExNY0v88NVrkWCfrt55XJ",
-				employee: "ExNY0v88NVrkWCfrt55XJ",
-				Private: "_19fLjAFVy42ZR2vocDvgUW",
-				private: "_19fLjAFVy42ZR2vocDvgUW",
-				Public: "_3fiOvK-VXqZ9cZO0d912xA",
-				public: "_3fiOvK-VXqZ9cZO0d912xA",
-				Restricted: "_3RYKKCLydFkeZVJov0xebO",
-				restricted: "_3RYKKCLydFkeZVJov0xebO",
-				CloseButton: "_1I-ULJ_Pqw5ZwVbFuh5I6W",
-				closeButton: "_1I-ULJ_Pqw5ZwVbFuh5I6W",
-				ErrorText: "_2ay6MX8oi5mY0chgCSBVHO",
-				errorText: "_2ay6MX8oi5mY0chgCSBVHO"
-			}
-		},
-		"./src/reddit/pages/SubredditCreation/index.tsx": function(e, t, n) {
-			"use strict";
-			n.r(t), n.d(t, "radioOptions", (function() {
-				return ie
-			}));
-			var a = n("./node_modules/fbt/lib/FbtPublic.js"),
-				s = n("./node_modules/react/index.js"),
-				r = n.n(s),
-				i = n("./node_modules/react-redux/es/index.js"),
-				o = n("./node_modules/react-router-redux/es/index.js"),
-				l = n("./node_modules/reselect/es/index.js"),
-				c = n("./src/lib/classNames/index.ts"),
-				d = n("./src/lib/formatApiError/index.ts"),
-				m = n("./src/reddit/actions/subredditCreation.ts"),
-				u = n("./src/reddit/actions/tooltip.ts"),
-				p = n("./src/reddit/components/EmailInvitePaintedDoor/loader.tsx"),
-				h = n("./src/reddit/components/InfoTextTooltip/index.tsx"),
-				x = n("./src/reddit/components/Settings/shared/Widgets.tsx"),
-				b = n("./src/reddit/components/TrackingHelper/index.tsx"),
-				v = n("./src/reddit/constants/history.ts"),
-				C = n("./src/reddit/contexts/InsideOverlay.tsx"),
-				f = n("./src/reddit/controls/Button/index.tsx"),
-				E = n("./src/reddit/controls/CheckboxInput/index.tsx"),
-				g = n("./src/reddit/controls/ErrorText/index.tsx"),
-				_ = n("./src/reddit/controls/RadioInput/index.tsx"),
-				w = n("./src/reddit/controls/RadioInput/RadioOption/index.tsx"),
-				y = n("./src/reddit/controls/TextButton/index.tsx"),
-				k = n("./src/reddit/helpers/trackers/emailInvite.ts"),
-				N = n("./src/reddit/helpers/trackers/screenview.ts"),
-				O = n("./src/reddit/helpers/trackers/subredditCreation.ts"),
-				j = n("./src/reddit/icons/svgs/Admin/index.tsx"),
-				S = n("./src/reddit/icons/svgs/Close/index.tsx"),
-				I = n("./src/reddit/icons/svgs/Eye/index.tsx"),
-				T = n("./src/reddit/icons/svgs/Info/index.tsx"),
-				R = n("./src/reddit/icons/svgs/Lock/index.tsx"),
-				L = n("./src/reddit/icons/svgs/User/index.tsx"),
-				M = n("./src/reddit/models/Subreddit/index.ts"),
-				D = n("./src/reddit/models/SubredditRestrictions/index.ts"),
-				F = n("./src/reddit/contexts/NavbarExp.ts"),
-				B = n("./src/reddit/pages/SubredditCreation/Layout/index.m.less"),
-				P = n.n(B);
-			var A = e => {
-					const t = Object(s.useContext)(F.a);
-					return r.a.createElement("div", {
-						className: P.a.OuterContainer
-					}, r.a.createElement("div", {
-						className: Object(c.a)(e.className, P.a.Container, {
-							[P.a.isOverlay]: e.isOverlay
-						})
-					}, r.a.createElement("div", {
-						className: Object(c.a)(P.a.Content, {
-							[P.a.isOverlay]: e.isOverlay,
-							[P.a.ContainerExp]: t
-						})
-					}, e.children)))
-				},
-				H = n("./src/reddit/selectors/experiments/emailInvite.ts"),
-				W = n("./src/reddit/selectors/subreddit.ts"),
-				V = n("./src/reddit/selectors/tags.ts"),
-				Q = n("./src/reddit/selectors/user.ts"),
-				G = n("./src/reddit/pages/SubredditCreation/index.m.less"),
-				z = n.n(G),
-				q = n("./src/lib/lessComponent.tsx");
-			const J = 21,
-				Y = "create-title-info",
-				K = q.a.wrapped(T.a, "Info", z.a),
-				Z = q.a.wrapped(w.a, "RadioOption", z.a),
-				U = q.a.wrapped(h.c, "Tooltip", z.a),
-				X = q.a.wrapped(L.a, "Public", z.a),
-				$ = q.a.wrapped(I.a, "Restricted", z.a),
-				ee = q.a.wrapped(R.a, "Private", z.a),
-				te = q.a.wrapped(j.a, "Employee", z.a),
-				ne = q.a.wrapped(S.a, "CloseButton", z.a),
-				ae = q.a.wrapped(g.b, "ErrorText", z.a),
-				se = Object(l.c)({
-					error: W.g,
-					isCreatePending: W.k,
-					isEmailInviteExperimentEnabled: H.a,
-					isEmployee: Q.G,
-					crosspostId: W.j,
-					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(Q.hb)(e),
-					userIsSuspended: Q.P,
-					allTags: V.e,
-					existingTags: V.f,
-					newTags: V.g,
-					selectedPrimaryTagId: V.h
-				}),
-				re = Object(i.b)(se, e => ({
-					createCommunity: t => e(Object(m.h)(t)),
-					clearErrors: () => e(Object(m.f)()),
-					onCloseLocation: t => e(Object(o.b)(t)),
-					onShowTooltip: () => e(Object(u.f)({
-						tooltipId: Y
-					})),
-					onHideTooltip: () => e(Object(u.i)()),
-					validateSubredditName: t => e(Object(m.i)(t))
-				})),
-				ie = (e, t) => [r.a.createElement(Z, {
-					key: "public",
-					showButton: !0,
-					value: "public"
-				}, r.a.createElement("div", {
-					className: z.a.radioContent
-				}, r.a.createElement("div", null, r.a.createElement(X, null)), r.a.createElement("div", {
-					className: z.a.radioContainer
-				}, r.a.createElement("div", {
-					className: z.a.sublabel
-				}, a.fbt._("Public", null, {
-					hk: "DK992"
-				})), r.a.createElement("div", {
-					className: Object(c.a)(z.a.metafieldDescription, z.a.radioDescription)
-				}, a.fbt._("Anyone can view, post, and comment to this community", null, {
-					hk: "1PfFUA"
-				}))))), r.a.createElement(Z, {
-					key: "restricted",
-					showButton: !0,
-					value: "restricted"
-				}, r.a.createElement("div", {
-					className: z.a.radioContent
-				}, r.a.createElement("div", null, r.a.createElement($, null)), r.a.createElement("div", {
-					className: z.a.radioContainer
-				}, r.a.createElement("div", {
-					className: z.a.sublabel
-				}, a.fbt._("Restricted", null, {
-					hk: "1iBTDq"
-				})), r.a.createElement("div", {
-					className: Object(c.a)(z.a.metafieldDescription, z.a.radioDescription)
-				}, Object(D.g)(t))))), r.a.createElement(Z, {
-					key: "private",
-					showButton: !0,
-					value: "private"
-				}, r.a.createElement("div", {
-					className: z.a.radioContent
-				}, r.a.createElement("div", null, r.a.createElement(ee, null)), r.a.createElement("div", {
-					className: z.a.radioContainer
-				}, r.a.createElement("div", {
-					className: z.a.sublabel
-				}, a.fbt._("Private", null, {
-					hk: "3q5SYn"
-				})), r.a.createElement("div", {
-					className: Object(c.a)(z.a.metafieldDescription, z.a.radioDescription)
-				}, a.fbt._("Only approved users can view and submit to this community", null, {
-					hk: "3z8OI6"
-				}))))), r.a.createElement(Z, {
-					key: "employees_only",
-					showButton: !0,
-					value: "employees_only",
-					hidden: !e
-				}, r.a.createElement("div", {
-					className: z.a.radioContent
-				}, r.a.createElement("div", null, r.a.createElement(te, null)), r.a.createElement("div", {
-					className: z.a.radioContainer
-				}, r.a.createElement("div", {
-					className: z.a.sublabel
-				}, a.fbt._("Employees only", null, {
-					hk: "1arrQC"
-				})), r.a.createElement("div", {
-					className: Object(c.a)(z.a.metafieldDescription, z.a.radioDescription)
-				}, a.fbt._("Only Reddit employees can view and submit to this community", null, {
-					hk: "3ty23C"
-				})))))];
-			class oe extends r.a.Component {
-				constructor(e) {
-					super(e), this.onNameChange = e => {
-						this.setState({
-							name: e.target.value
-						}), this.props.clearErrors()
-					}, this.update = (e, t) => this.setState({
-						[t]: e
-					}), this.onTypeChange = e => {
-						this.setState({
-							type: e
-						})
-					}, this.onInviteViaEmailClick = () => {
-						const {
-							sendEvent: e
-						} = this.props;
-						e(Object(k.a)("community_creation")), this.setState({
-							showEmailInviteModal: !0
-						})
-					}, this.onCloseInviteViaEmailModal = () => {
-						this.setState({
-							showEmailInviteModal: !1
-						})
-					}, this.onCreateCommunityClick = () => {
-						this.props.isCreatePending || (clearTimeout(this.timeout), this.props.createCommunity({
-							name: this.state.name,
-							publicDescription: "",
-							type: this.state.type,
-							over18: this.state.over18,
-							restrictCommenting: this.state.restrictCommenting,
-							restrictPosting: this.state.restrictPosting,
-							allTags: this.props.allTags,
-							newTags: this.props.newTags,
-							crosspostId: this.state.crosspostId,
-							existingTags: this.props.existingTags,
-							primaryTagId: this.props.selectedPrimaryTagId || void 0
-						}), this.timeout = window.setTimeout(() => {
-							this.props.isCreatePending && this.setState({
-								waitingForSuccessfulCommunity: !0
-							})
-						}, 2e3))
-					}, this.errorHelper = e => {
-						if (!e) return {};
-						const t = e.fields && e.fields.length && e.fields[0] && e.fields[0].field,
-							n = e.type;
-						if ("name" === t) {
-							if ("NO_TEXT" === n) return {
-								name: a.fbt._("A community name is required", null, {
-									hk: "QIlYS"
-								})
-							};
-							if ("BAD_SR_NAME" === n) return {
-								name: a.fbt._("Community names must be between 3–21 characters, and can only contain letters, numbers, or underscores.", null, {
-									hk: "2rmVgd"
-								})
-							};
-							if ("SUBREDDIT_EXISTS" === n) return {
-								name: a.fbt._("Sorry, r/{subreddit name attempt} is taken. Try another.", [a.fbt._param("subreddit name attempt", this.state.name)], {
-									hk: "CLwzs"
-								})
-							};
-							if ("SUBREDDIT_UNAVAILABLE" === n) return {
-								name: a.fbt._("This community name is unavailable", null, {
-									hk: "15j6BB"
-								})
-							}
-						}
-						return {
-							generic: Object(d.a)(e)
-						}
-					}, this.onValidateSubredditName = () => this.props.validateSubredditName(this.state.name), this.onCloseModal = () => {
-						this.props.sendEvent(Object(O.b)()), this.props.onCloseLocation(this.props.location.state[v.a.CloseLocation])
-					}, this.onCancelCreation = () => {
-						this.props.onCloseLocation(this.props.location.state[v.a.CloseLocation]), this.props.sendEvent(Object(O.b)())
-					}, this.onUpdateOver18 = () => this.update(!this.state.over18, "over18"), this.state = {
-						name: "",
-						type: M.f.Public,
-						crosspostId: e.crosspostId,
-						over18: !1,
-						waitingForSuccessfulCommunity: !1,
-						restrictCommenting: !1,
-						restrictPosting: !0,
-						showEmailInviteModal: !1
-					}
-				}
-				componentDidMount() {
-					const {
-						sendEvent: e
-					} = this.props;
-					e(Object(N.w)())
-				}
-				componentWillUnmount() {
-					clearTimeout(this.timeout), this.props.clearErrors()
-				}
-				render() {
-					const {
-						error: e,
-						isCreatePending: t,
-						isEmailInviteExperimentEnabled: n,
-						isEmployee: s,
-						isOverlay: i,
-						onHideTooltip: o,
-						onShowTooltip: l,
-						sendEvent: d,
-						userDoesNotHaveEnoughExpToCreateCommunity: m,
-						userIsSuspended: u
-					} = this.props, h = this.errorHelper(e), {
-						over18: b,
-						showEmailInviteModal: v,
-						waitingForSuccessfulCommunity: C
-					} = this.state;
-					return r.a.createElement(A, {
-						className: Object(c.a)(z.a.subredditCreation, {
-							[z.a.isOverlay]: i
-						}),
-						isOverlay: i
-					}, r.a.createElement("div", {
-						className: z.a.container
-					}, r.a.createElement("h1", {
-						className: z.a.title
-					}, a.fbt._("Create a community", null, {
-						hk: "SlFa7"
-					}), i && r.a.createElement(ne, {
-						onClick: this.onCloseModal
-					})), m ? r.a.createElement("h2", {
-						className: z.a.sublabel
-					}, a.fbt._("To prevent spam, accounts must be at least 30 days old and have enough positive karma to create communities.", null, {
-						hk: "44qhJp"
-					})) : u ? r.a.createElement("h2", {
-						className: z.a.sublabel
-					}, a.fbt._("Accounts banned from the site can not create communities until the ban is lifted.", null, {
-						hk: "3trJMZ"
-					})) : r.a.createElement(r.a.Fragment, null, r.a.createElement(x.e, {
-						isCreateCommunity: !0,
-						label: a.fbt._("Name", null, {
-							hk: "3OIzgl"
-						}),
-						textContainerClassName: z.a.fullWidthTextContainer,
-						onBlur: this.onValidateSubredditName,
-						onChange: this.onNameChange,
-						maxChars: J,
-						value: this.state.name,
-						subtext: r.a.createElement("span", {
-							className: z.a.subtextContainer
-						}, a.fbt._("Community names including capitalization cannot be changed.", null, {
-							hk: "VjrZg"
-						}), r.a.createElement("span", {
-							id: Y,
-							onMouseEnter: l,
-							onMouseLeave: o,
-							className: z.a.info
-						}, r.a.createElement(K, null), r.a.createElement(U, {
-							className: z.a.StyledTooltip,
-							caretOnTop: !0,
-							tooltipId: Y,
-							text: a.fbt._('Names cannot have spaces (e.g., "r/bookclub" not "r/book club"), must be between 3-21 characters, and underscores ("_") are the only special characters allowed. Avoid using solely trademarked names (e.g., "r/FansOfAcme" not "r/Acme").', null, {
-								hk: "3RsycS"
-							})
-						})))
-					}), h.name && r.a.createElement(ae, null, h.name), r.a.createElement(x.k, {
-						label: a.fbt._("Community type", null, {
-							hk: "152EhZ"
-						}),
-						direction: "column",
-						isCreateCommunity: !0,
-						textContainerClassName: z.a.fullWidthTextContainer
-					}, r.a.createElement(_.a, {
-						value: this.state.type,
-						name: "type",
-						onChange: this.onTypeChange
-					}, ie(s, "post"))), r.a.createElement("div", {
-						className: Object(c.a)(z.a.field, {
-							[z.a.isCreatePending]: t
-						})
-					}, r.a.createElement("div", {
-						className: z.a.subtitle
-					}, a.fbt._("Adult content", null, {
-						hk: "20arB"
-					})), r.a.createElement(E.a, {
-						name: "over18",
-						value: b,
-						onChange: this.onUpdateOver18,
-						disabled: t
-					}, r.a.createElement("div", {
-						className: z.a.nsfw
-					}, "NSFW"), r.a.createElement("div", {
-						className: z.a.sublabel
-					}, a.fbt._("18+ year old community", null, {
-						hk: "1XxZMV"
-					})))), n && r.a.createElement("div", {
-						className: Object(c.a)(z.a.field, {
-							[z.a.isCreatePending]: t
-						})
-					}, r.a.createElement(y.a, {
-						className: z.a.textButton,
-						onClick: this.onInviteViaEmailClick
-					}, a.fbt._("Invite members via email", null, {
-						hk: "2uViIf"
-					}))), h.generic && r.a.createElement(ae, null, h.generic), C && r.a.createElement("div", {
-						className: z.a.pendingText
-					}, a.fbt._("Your community is being created...", null, {
-						hk: "3dSTrq"
-					})), r.a.createElement("div", {
-						className: Object(c.a)(z.a.buttonContainer, {
-							[z.a.isOverlay]: i
-						})
-					}, i && r.a.createElement(f.q, {
-						disabled: t,
-						className: z.a.createButton,
-						onClick: this.onCancelCreation,
-						priority: f.b.Secondary
-					}, a.fbt._("Cancel", null, {
-						hk: "2TSLl5"
-					})), r.a.createElement(f.q, {
-						disabled: t,
-						className: z.a.createButton,
-						onClick: this.onCreateCommunityClick
-					}, a.fbt._("Create Community", null, {
-						hk: "QE8Y3"
-					}))))), v && r.a.createElement(p.a, {
-						onClose: this.onCloseInviteViaEmailModal,
-						sendEvent: d
-					}))
-				}
-			}
-			t.default = Object(b.c)(re(Object(C.b)(oe)))
-		},
 		"./src/reddit/selectors/experiments/emailInvite.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
@@ -2047,11 +2017,11 @@
 			const r = e => {
 				const t = Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: a.fc
+					experimentName: a.hc
 				});
-				return !(!t || Object(a.he)(t))
+				return !(!t || Object(a.je)(t))
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.7f0e5b8512f532e34b89.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.656239acb2853c3ba0f1.js.map

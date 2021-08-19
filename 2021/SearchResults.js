@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.cc7d16d42722e9c49389.js
-// Retrieved at 8/18/2021, 7:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.a08771eeb16494edb8c3.js
+// Retrieved at 8/18/2021, 8:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -2107,33 +2107,34 @@
 				a = s.n(n),
 				o = s("./node_modules/react-redux/es/index.js"),
 				i = s("./node_modules/reselect/es/index.js"),
-				c = s("./src/reddit/actions/tooltip.ts"),
-				d = s("./src/reddit/components/InfoTextTooltip/index.tsx"),
-				l = s("./src/reddit/components/TrackingHelper/index.tsx"),
-				m = s("./src/reddit/controls/Button/index.tsx"),
-				u = s("./src/reddit/helpers/overlay/index.ts"),
-				p = s("./src/reddit/helpers/trackers/subredditCreation.ts"),
-				h = s("./src/reddit/selectors/user.ts"),
-				b = s("./src/reddit/components/CreateCommunityButton/index.m.less"),
-				C = s.n(b),
-				x = s("./src/lib/lessComponent.tsx");
-			const f = "create-community-button",
-				g = x.a.wrapped(d.c, "StyledTooltip", C.a),
-				v = Object(i.c)({
-					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(h.hb)(e),
-					userIsSuspended: h.P
+				c = s("./src/reddit/actions/modal.ts"),
+				d = s("./src/reddit/actions/tooltip.ts"),
+				l = s("./src/reddit/components/InfoTextTooltip/index.tsx"),
+				m = s("./src/reddit/components/TrackingHelper/index.tsx"),
+				u = s("./src/reddit/constants/modals.ts"),
+				p = s("./src/reddit/controls/Button/index.tsx"),
+				h = s("./src/reddit/helpers/trackers/subredditCreation.ts"),
+				b = s("./src/reddit/selectors/user.ts"),
+				C = s("./src/reddit/components/CreateCommunityButton/index.m.less"),
+				x = s.n(C),
+				f = s("./src/lib/lessComponent.tsx");
+			const g = "create-community-button",
+				v = f.a.wrapped(l.c, "StyledTooltip", x.a),
+				y = Object(i.c)({
+					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(b.hb)(e),
+					userIsSuspended: b.P
 				});
-			t.a = Object(o.b)(v, (e, {
+			t.a = Object(o.b)(y, (e, {
 				eventSource: t
 			}) => ({
 				openCommunityCreation: s => {
-					s(Object(p.c)(t)), e(Object(u.a)("/subreddits/create"))
+					s(Object(h.c)(t)), e(Object(c.h)(u.a.SUBREDDIT_CREATION_MODAL_ID))
 				},
-				onShowTooltip: () => e(Object(c.f)({
-					tooltipId: f
+				onShowTooltip: () => e(Object(d.f)({
+					tooltipId: g
 				})),
-				onHideTooltip: () => e(Object(c.i)())
-			}))(Object(l.c)(({
+				onHideTooltip: () => e(Object(d.i)())
+			}))(Object(m.c)(({
 				className: e,
 				eventSource: t,
 				onShowTooltip: s,
@@ -2144,7 +2145,7 @@
 				userIsSuspended: d,
 				onClick: l
 			}) => {
-				return a.a.createElement(m.q, {
+				return a.a.createElement(p.q, {
 					className: e,
 					disabled: d || c,
 					onClick: e => {
@@ -2152,20 +2153,20 @@
 					},
 					onMouseEnter: s,
 					onMouseLeave: n,
-					priority: m.b.Secondary,
-					id: f,
+					priority: p.b.Secondary,
+					id: g,
 					isFullWidth: !0
 				}, r.fbt._("Create Community", null, {
 					hk: "28v7Qq"
-				}), c ? a.a.createElement(g, {
+				}), c ? a.a.createElement(v, {
 					caretOnTop: !0,
-					tooltipId: f,
+					tooltipId: g,
 					text: r.fbt._("To prevent spam, accounts must be at least 30 days old and have enough positive karma to create communities.", null, {
 						hk: "2R1OXu"
 					})
-				}) : d ? a.a.createElement(g, {
+				}) : d ? a.a.createElement(v, {
 					caretOnTop: !0,
-					tooltipId: f,
+					tooltipId: g,
 					text: r.fbt._("Accounts banned from the site can not create communities until the ban is lifted.", null, {
 						hk: "2xBDEw"
 					})
@@ -11127,9 +11128,9 @@
 			}));
 			var r = s("./src/reddit/constants/experiments.ts"),
 				n = s("./src/reddit/helpers/chooseVariant/index.ts");
-			const a = e => r.Bd.Treatment1 === Object(n.c)(e, {
+			const a = e => r.Dd.Treatment1 === Object(n.c)(e, {
 				experimentEligibilitySelector: n.a,
-				experimentName: r.sd
+				experimentName: r.ud
 			})
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, s) {
@@ -11303,13 +11304,13 @@
 				a = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				o = s("./src/reddit/selectors/posts.ts");
 			const i = Object(r.a)(e => Object(a.c)(e, {
-				experimentName: n.gd,
+				experimentName: n.id,
 				experimentEligibilitySelector: a.a
-			}), o.I, (e, t) => e === n.qd.Enabled && (null == t ? void 0 : t.isCreatedFromAdsUi) || (null == t ? void 0 : t.isSponsored))
+			}), o.I, (e, t) => e === n.sd.Enabled && (null == t ? void 0 : t.isCreatedFromAdsUi) || (null == t ? void 0 : t.isSponsored))
 		},
 		"./src/redditGQL/operations/SubredditGeoRecommendationViaFocusVertical.json": function(e) {
 			e.exports = JSON.parse('{"id":"b1787cdf2fd4"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.cc7d16d42722e9c49389.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.a08771eeb16494edb8c3.js.map

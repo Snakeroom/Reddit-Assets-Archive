@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.62cf5095e6418388d2e9.js
-// Retrieved at 8/18/2021, 7:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.e21e4a1310b7beefd038.js
+// Retrieved at 8/18/2021, 8:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileSnoobuilder", "reddit-components-ContentGate"], {
 		"./assets/snoobuilder/Snoobuilder.json": function(e, t, n) {
@@ -1124,33 +1124,34 @@
 				i = n.n(r),
 				o = n("./node_modules/react-redux/es/index.js"),
 				a = n("./node_modules/reselect/es/index.js"),
-				c = n("./src/reddit/actions/tooltip.ts"),
-				d = n("./src/reddit/components/InfoTextTooltip/index.tsx"),
-				l = n("./src/reddit/components/TrackingHelper/index.tsx"),
-				u = n("./src/reddit/controls/Button/index.tsx"),
-				m = n("./src/reddit/helpers/overlay/index.ts"),
-				p = n("./src/reddit/helpers/trackers/subredditCreation.ts"),
-				h = n("./src/reddit/selectors/user.ts"),
-				b = n("./src/reddit/components/CreateCommunityButton/index.m.less"),
-				f = n.n(b),
-				_ = n("./src/lib/lessComponent.tsx");
-			const g = "create-community-button",
-				x = _.a.wrapped(d.c, "StyledTooltip", f.a),
-				y = Object(a.c)({
-					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(h.hb)(e),
-					userIsSuspended: h.P
+				c = n("./src/reddit/actions/modal.ts"),
+				d = n("./src/reddit/actions/tooltip.ts"),
+				l = n("./src/reddit/components/InfoTextTooltip/index.tsx"),
+				u = n("./src/reddit/components/TrackingHelper/index.tsx"),
+				m = n("./src/reddit/constants/modals.ts"),
+				p = n("./src/reddit/controls/Button/index.tsx"),
+				h = n("./src/reddit/helpers/trackers/subredditCreation.ts"),
+				b = n("./src/reddit/selectors/user.ts"),
+				f = n("./src/reddit/components/CreateCommunityButton/index.m.less"),
+				_ = n.n(f),
+				g = n("./src/lib/lessComponent.tsx");
+			const x = "create-community-button",
+				y = g.a.wrapped(l.c, "StyledTooltip", _.a),
+				v = Object(a.c)({
+					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(b.hb)(e),
+					userIsSuspended: b.P
 				});
-			t.a = Object(o.b)(y, (e, {
+			t.a = Object(o.b)(v, (e, {
 				eventSource: t
 			}) => ({
 				openCommunityCreation: n => {
-					n(Object(p.c)(t)), e(Object(m.a)("/subreddits/create"))
+					n(Object(h.c)(t)), e(Object(c.h)(m.a.SUBREDDIT_CREATION_MODAL_ID))
 				},
-				onShowTooltip: () => e(Object(c.f)({
-					tooltipId: g
+				onShowTooltip: () => e(Object(d.f)({
+					tooltipId: x
 				})),
-				onHideTooltip: () => e(Object(c.i)())
-			}))(Object(l.c)(({
+				onHideTooltip: () => e(Object(d.i)())
+			}))(Object(u.c)(({
 				className: e,
 				eventSource: t,
 				onShowTooltip: n,
@@ -1161,7 +1162,7 @@
 				userIsSuspended: d,
 				onClick: l
 			}) => {
-				return i.a.createElement(u.q, {
+				return i.a.createElement(p.q, {
 					className: e,
 					disabled: d || c,
 					onClick: e => {
@@ -1169,20 +1170,20 @@
 					},
 					onMouseEnter: n,
 					onMouseLeave: r,
-					priority: u.b.Secondary,
-					id: g,
+					priority: p.b.Secondary,
+					id: x,
 					isFullWidth: !0
 				}, s.fbt._("Create Community", null, {
 					hk: "28v7Qq"
-				}), c ? i.a.createElement(x, {
+				}), c ? i.a.createElement(y, {
 					caretOnTop: !0,
-					tooltipId: g,
+					tooltipId: x,
 					text: s.fbt._("To prevent spam, accounts must be at least 30 days old and have enough positive karma to create communities.", null, {
 						hk: "2R1OXu"
 					})
-				}) : d ? i.a.createElement(x, {
+				}) : d ? i.a.createElement(y, {
 					caretOnTop: !0,
-					tooltipId: g,
+					tooltipId: x,
 					text: s.fbt._("Accounts banned from the site can not create communities until the ban is lifted.", null, {
 						hk: "2xBDEw"
 					})
@@ -4103,12 +4104,12 @@
 						rtJsonElementProps: i
 					});
 					switch (s) {
-						case b.Od.SmIcon:
+						case b.Qd.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: i
 							});
-						case b.Od.SmIconHc:
+						case b.Qd.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -5312,12 +5313,12 @@
 				c = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.Id
+						experimentName: s.Kd
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.Od.SmIcon || t === s.Od.SmIconHc
+					return t === s.Qd.SmIcon || t === s.Qd.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -5340,4 +5341,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.62cf5095e6418388d2e9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.e21e4a1310b7beefd038.js.map

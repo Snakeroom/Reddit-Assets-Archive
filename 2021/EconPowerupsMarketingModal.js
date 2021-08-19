@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.8158d086ac4841534f43.js
-// Retrieved at 8/18/2021, 7:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.56a3286f7ed18a1ab38f.js
+// Retrieved at 8/18/2021, 8:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsMarketingModal"], {
 		"./src/reddit/components/Econ/Common/BenefitTile/index.m.less": function(e, t, s) {
@@ -320,9 +320,9 @@
 				M = s("./src/reddit/constants/experiments.ts"),
 				I = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const y = Object(a.a)(e => Object(I.c)(e, {
-					experimentName: M.Qb,
+					experimentName: M.Sb,
 					experimentEligibilitySelector: N.J
-				}), e => e === M.mc.Community || e === M.mc.Supporter),
+				}), e => e === M.oc.Community || e === M.oc.Supporter),
 				S = [v.a.CommentRecognition, v.a.PowerupsAward, v.a.CommentsWithGifs, v.a.CommentsWithEmoji, v.a.Achievements, v.a.HeroStatus, v.a.HdVideo],
 				L = Object(a.a)([k.g, y, k.i], (e, t, s) => {
 					let n = S;
@@ -597,4 +597,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.8158d086ac4841534f43.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.56a3286f7ed18a1ab38f.js.map
