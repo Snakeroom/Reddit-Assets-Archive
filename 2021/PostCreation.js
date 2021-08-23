@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.99aa58c62e22fcc8f808.js
-// Retrieved at 8/18/2021, 8:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.7f44d47cfd88e5f537f4.js
+// Retrieved at 8/23/2021, 5:20:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, n) {
@@ -4542,7 +4542,7 @@
 								editorState: null,
 								text: this.getCurrentText(),
 								validate: this.props.showWarningModal
-							}), this.onBlur(), this.state.upvoteDefault && (this.props.onVoteClick(), this.setState({
+							}), this.onBlur(), this.state.upvoteDefault && this.props.isReplyWithUpvoteExperiment && (this.props.onVoteClick(), this.setState({
 								hasAlreadyVoted: !0
 							}), this.props.sendEvent(Object(ae.e)(this.props.parentCommentId))), this.props.triggerCelebratoryMoment) {
 							const {
@@ -23352,4 +23352,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.99aa58c62e22fcc8f808.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.7f44d47cfd88e5f537f4.js.map
