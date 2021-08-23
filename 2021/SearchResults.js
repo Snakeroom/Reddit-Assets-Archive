@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.a08771eeb16494edb8c3.js
-// Retrieved at 8/18/2021, 8:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.c6cc862634898f9cf6e6.js
+// Retrieved at 8/23/2021, 3:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -4857,6 +4857,7 @@
 				postItemFlatlistContainer: "_10nOMgIinej4MqZ6hIiowh",
 				mediaWrapper: "_1psVAAiSmYVB_YK5TsT7mN",
 				marginCancel: "_2Hinle4K74HK6s2WgEMwXA",
+				twitterEmbed: "GvFZl4E7FJWNEgWpOi-f1",
 				mediaContent: "_1YA190EaEjb8shjVnRdqVf",
 				textMediaWrapper: "gFNBTv7Sftp7j3rlmZin6",
 				textMedia: "_1eWnkq7LE-By6f08Vq_9G-",
@@ -7535,22 +7536,18 @@
 					}), []), !H) return null;
 				const {
 					media: ie
-				} = C || H || {};
+				} = C || H || {}, ce = (null == ie ? void 0 : ie.type) === W.o.EMBED && (null == ie ? void 0 : ie.provider) === W.v.Twitter, de = (null == ie ? void 0 : ie.type) === W.o.VIDEO || (null == ie ? void 0 : ie.type) === W.o.GIFVIDEO;
 
-				function ce() {
-					return !!ie && (ie.type === W.o.VIDEO || ie.type === W.o.GIFVIDEO)
-				}
-
-				function de(e) {
+				function le(e) {
 					e.stopPropagation(), e.preventDefault(), f(Object(U.q)(H.id, "search_result_post", c, l)), H.isSponsored ? (g(Object(_.z)(H, L.a.Click)), H.source ? H.source.outboundUrl ? Object(j.d)(H.source.outboundUrl, j.c.BLANK) : Object(j.d)(H.source.url, j.c.BLANK) : Object(j.d)(H.permalink, j.c.BLANK)) : g(Object(A.a)({
 						pathname: Object(B.b)(H.permalink),
 						state: Object(M.a)(x)
 					}))
 				}
 
-				function le(e) {
-					H.isSponsored && ce() || de(e), H.isSponsored && function(e) {
-						ce() || (e.stopPropagation(), e.preventDefault()), f(Object(U.s)(H.id, c, l, i, x))
+				function me(e) {
+					H.isSponsored && de || le(e), H.isSponsored && function(e) {
+						de || (e.stopPropagation(), e.preventDefault()), f(Object(U.s)(H.id, c, l, i, x))
 					}(e)
 				}
 				return H.isBlank ? a.a.createElement(k.BlankPost, {
@@ -7565,7 +7562,7 @@
 						let s;
 						return (s = "subreddit" === t ? D.K(c, x, i, l) : H && H.isSponsored ? D.I(c, x, i, l) : D.L(c, x, i, l))(e)
 					},
-					onClick: de,
+					onClick: le,
 					post: H,
 					"data-click-id": "hero_unit",
 					style: {
@@ -7620,8 +7617,8 @@
 					}));
 					else if (ie)
 						if (ie.type !== W.o.RTJSON && ie.type !== W.o.TEXT) e = a.a.createElement("div", {
-							className: n,
-							onClickCapture: le,
+							className: Object(r.a)(n, ce && re.a.twitterEmbed),
+							onClickCapture: me,
 							ref: e => m.current = e
 						}, a.a.createElement(I.a, {
 							className: re.a.mediaContent,
@@ -7643,7 +7640,7 @@
 								className: re.a.mediaPlaceholder
 							}), (ie.type === W.o.RTJSON && ie.richtextContent || ie.type === W.o.TEXT && ie.content) && Object(F.a)(H) && (e = a.a.createElement("div", {
 								className: n,
-								onClickCapture: de,
+								onClickCapture: le,
 								ref: e => m.current = e
 							}, a.a.createElement(I.a, {
 								autoplayPref: p,
@@ -11313,4 +11310,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.a08771eeb16494edb8c3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.c6cc862634898f9cf6e6.js.map
