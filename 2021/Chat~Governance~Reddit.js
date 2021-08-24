@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.cd46a2dbbaea0d07a263.js
-// Retrieved at 8/23/2021, 8:10:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.d34a38ec36f7257e0677.js
+// Retrieved at 8/23/2021, 9:30:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -2520,13 +2520,13 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("143652"),
+				buildNumber: r("143659"),
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1629762703"),
+				})("1629767500"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -4994,14 +4994,14 @@
 					}))
 				},
 				K = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c1ed197e9be877dd859a8500fd853aa822db3e9bf-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c3034a218810fa5083458887bc67118d7f0819d4a-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${v.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "1ed197e9be877dd859a8500fd853aa822db3e9bf-production",
+						release: "3034a218810fa5083458887bc67118d7f0819d4a-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(B.d)(), new d.Integrations.Breadcrumbs({
@@ -5495,7 +5495,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "1ed197e9be877dd859a8500fd853aa822db3e9bf-production",
+						releaseClient: "3034a218810fa5083458887bc67118d7f0819d4a-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -12230,62 +12230,63 @@
 						} = d.platform.currentPage.urlParams,
 						f = p || s()(_, u.t),
 						b = Object(a.e)(f),
-						v = {
+						v = Object(y.b)(d) ? e : b.type,
+						T = {
 							...b,
 							sort: b.category ? o.Ub.Relevance : b.sort,
 							t: b.category ? o.cc.DAY : b.t,
-							type: e
+							type: v
 						},
-						T = Object(a.b)(m, h, v);
-					let S;
-					if (e.indexOf(o.Wb.Posts) > -1) {
-						const e = d.listings.postOrder.loadMore[T];
+						S = Object(a.b)(m, h, T);
+					let O;
+					if (v.indexOf(o.Wb.Posts) > -1) {
+						const e = d.listings.postOrder.loadMore[S];
 						if (!e) return;
-						const t = d.listings.postOrder.api.pending[T],
+						const t = d.listings.postOrder.api.pending[S],
 							i = d.listings.postOrder.fetchedTokens,
-							n = i[T] && i[T][e.token];
+							n = i[S] && i[S][e.token];
 						if (t || n) return;
-						S = e.token
+						O = e.token
 					} else {
-						if (!(e.indexOf(o.Wb.Subreddits) > -1 || e.indexOf(o.Wb.Users) > -1)) throw new Error("Should not attempt to fetch more results without a search type"); {
-							const e = d.listings.listingOrder.loadMore[T];
+						if (!(v.indexOf(o.Wb.Subreddits) > -1 || v.indexOf(o.Wb.Users) > -1)) throw new Error("Should not attempt to fetch more results without a search type"); {
+							const e = d.listings.listingOrder.loadMore[S];
 							if (!e) return;
-							const t = d.listings.listingOrder.api.pending[T],
+							const t = d.listings.listingOrder.api.pending[S],
 								i = d.listings.listingOrder.fetchedTokens,
-								n = i[T] && i[T][e.token];
+								n = i[S] && i[S][e.token];
 							if (t || n) return;
-							S = e.token
+							O = e.token
 						}
 					}
-					const O = `error-${T}`;
+					const I = `error-${S}`;
 					t(N({
-						fetchedToken: S,
-						key: T,
-						type: e
+						fetchedToken: O,
+						key: S,
+						type: v
 					}));
-					const I = await Object(c.a)(r(), m, h, {
-						...v,
+					const F = await Object(c.a)(r(), m, h, {
+						...T,
 						q: Object(y.b)(d) && b.q ? Object(g.a)(b.q, Object(E.db)(d), "1" === b.include_over_18, [a.a.PromotedTrend, a.a.Trending].includes(b.source)) : b.q,
-						after: S,
-						type: (e || []).join(","),
+						after: O,
+						type: (v || []).join(","),
 						b: !0
 					});
-					I.ok ? (t(A({
-						key: T,
-						fetchedToken: S,
+					F.ok ? (t(A({
+						key: S,
+						fetchedToken: O,
 						meta: d.meta,
 						subredditOrMultiName: m,
-						type: e,
-						...I.body
-					})), t(l.g(O))) : (t(P({
-						key: T,
-						error: I.error,
-						fetchedToken: S,
+						type: v,
+						...F.body
+					})), t(l.g(I))) : (t(P({
+						key: S,
+						error: F.error,
+						fetchedToken: O,
 						meta: d.meta,
-						type: e,
-						...I.body
+						type: v,
+						...F.body
 					})), t(l.f({
-						id: O,
+						id: I,
 						kind: w.b.Error,
 						text: n.fbt._("Sorry, we couldn't load more search results.", null, {
 							hk: "3IDePs"
@@ -12293,7 +12294,7 @@
 						buttonText: n.fbt._("Retry", null, {
 							hk: "1XMjgA"
 						}),
-						buttonAction: M(e)
+						buttonAction: M(v)
 					})))
 				}, U = (e, t, i, n) => async (r, s) => {
 					const o = s();
@@ -40302,4 +40303,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.cd46a2dbbaea0d07a263.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.d34a38ec36f7257e0677.js.map

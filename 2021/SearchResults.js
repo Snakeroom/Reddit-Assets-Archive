@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.036a8e0a2c2e5b515682.js
-// Retrieved at 8/23/2021, 8:10:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.e96a713af92fc8efb0f1.js
+// Retrieved at 8/23/2021, 9:30:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -7283,66 +7283,65 @@
 						listingKey: t,
 						listingName: s,
 						location: r,
-						morePostsRequested: a,
-						onViewed: o,
-						searchDiscoveryUnitsModels: i,
-						searchDiscoveryUnitsOrder: c,
-						searchOptions: d
-					} = e, l = Object(Ae.a)(i);
-					return n.a.createElement(n.a.Fragment, null, c.map(e => {
-						if (i[e]) return ((e, i) => {
+						onViewed: a,
+						searchDiscoveryUnitsModels: o,
+						searchDiscoveryUnitsOrder: i,
+						searchOptions: c
+					} = e, d = Object(Ae.a)(o);
+					return n.a.createElement(n.a.Fragment, null, i.map(e => {
+						if (o[e]) return ((e, o) => {
 							const {
-								viewTypeWeb: c
+								viewTypeWeb: i
 							} = e.layout, {
-								Carousel: l,
-								Hero: m,
-								PromotedTrendHero: u,
-								Row: p
+								Carousel: d,
+								Hero: l,
+								PromotedTrendHero: m,
+								Row: u
 							} = De.b;
 							switch (e.type) {
 								case De.a.Posts:
-									if (c === l) return n.a.createElement(y, {
-										heroPostId: i,
+									if (i === d) return n.a.createElement(y, {
+										heroPostId: o,
 										listingKey: t,
 										key: e.id,
 										searchDiscoveryUnit: e,
-										searchOptions: d
+										searchOptions: c
 									});
-									if (c === m || c === u) return n.a.createElement(ss.a, {
-										key: i,
-										postId: i,
+									if (i === l || i === m) return n.a.createElement(ss.a, {
+										key: o,
+										postId: o,
 										discoveryUnit: e,
-										searchOptions: d,
+										searchOptions: c,
 										listingKey: t
 									}, n.a.createElement(ts, {
 										searchDiscoveryUnit: e,
-										searchOptions: d,
+										searchOptions: c,
 										listingKey: t
 									}));
-									if (c === p) return n.a.createElement(is, {
+									if (i === u) return n.a.createElement(is, {
 										searchDiscoveryUnit: e,
-										heroPostId: i,
+										heroPostId: o,
 										key: e.id,
 										listingKey: t,
 										listingName: s,
 										location: r,
-										onViewed: o,
-										morePostsRequested: a,
-										searchOptions: d
+										onViewed: a,
+										morePostsRequested: () => {},
+										searchOptions: c
 									});
 									break;
 								case De.a.Communities:
-									if (c === l) return n.a.createElement(pe, {
+									if (i === d) return n.a.createElement(pe, {
 										listingKey: t,
 										key: e.id,
 										searchDiscoveryUnit: e,
-										searchOptions: d
+										searchOptions: c
 									});
 									break;
 								default:
 									return null
 							}
-						})(i[e], l || "")
+						})(o[e], d || "")
 					}))
 				})),
 				ds = s("./src/reddit/constants/page.ts"),
@@ -11311,4 +11310,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.036a8e0a2c2e5b515682.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.e96a713af92fc8efb0f1.js.map

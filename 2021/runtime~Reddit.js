@@ -1,8 +1,8 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.9212fec0078df302c0af.js
-// Retrieved at 8/23/2021, 8:10:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.b0ef2453eda90a2cbcba.js
+// Retrieved at 8/23/2021, 9:30:10 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
-		for (var n, d, r = o[0], s = o[1], c = o[2], l = 0, P = []; l < r.length; l++) d = r[l], Object.prototype.hasOwnProperty.call(a, d) && a[d] && P.push(a[d][0]), a[d] = 0;
+		for (var n, a, r = o[0], s = o[1], c = o[2], l = 0, P = []; l < r.length; l++) a = r[l], Object.prototype.hasOwnProperty.call(d, a) && d[a] && P.push(d[a][0]), d[a] = 0;
 		for (n in s) Object.prototype.hasOwnProperty.call(s, n) && (e[n] = s[n]);
 		for (m && m(o); P.length;) P.shift()();
 		return i.push.apply(i, c || []), t()
@@ -10,19 +10,19 @@
 
 	function t() {
 		for (var e, o = 0; o < i.length; o++) {
-			for (var t = i[o], n = !0, d = 1; d < t.length; d++) {
-				var s = t[d];
-				0 !== a[s] && (n = !1)
+			for (var t = i[o], n = !0, a = 1; a < t.length; a++) {
+				var s = t[a];
+				0 !== d[s] && (n = !1)
 			}
 			n && (i.splice(o--, 1), e = r(r.s = t[0]))
 		}
 		return e
 	}
 	var n = {},
-		d = {
+		a = {
 			"runtime~Reddit": 0
 		},
-		a = {
+		d = {
 			"runtime~Reddit": 0
 		},
 		i = [];
@@ -38,7 +38,7 @@
 	}
 	r.e = function(e) {
 		var o = [];
-		d[e] ? o.push(d[e]) : 0 !== d[e] && {
+		a[e] ? o.push(a[e]) : 0 !== a[e] && {
 			0: 1,
 			1: 1,
 			OnboardingModal: 1,
@@ -275,7 +275,7 @@
 			ChatReportFlow: 1,
 			"reddit-components-Governance-TransactionModals-ClaimPointsModal": 1,
 			ModStatsChart: 1
-		} [e] && o.push(d[e] = new Promise((function(o, t) {
+		} [e] && o.push(a[e] = new Promise((function(o, t) {
 			for (var n = "chunkCSS/" + ({
 					OnboardingModal: "OnboardingModal",
 					Acknowledgements: "Acknowledgements",
@@ -880,30 +880,30 @@
 					"reddit-components-Governance-TransactionModals-ClaimPointsModal": "5931138358000b721f3c",
 					"vendors~ModStatsChart": "31d6cfe0d16ae931b73c",
 					ModStatsChart: "1716ac9447d14ba5fb74"
-				} [e] + ".css", a = r.p + n, i = document.getElementsByTagName("link"), s = 0; s < i.length; s++) {
+				} [e] + ".css", d = r.p + n, i = document.getElementsByTagName("link"), s = 0; s < i.length; s++) {
 				var c = (m = i[s]).getAttribute("data-href") || m.getAttribute("href");
-				if ("stylesheet" === m.rel && (c === n || c === a)) return o()
+				if ("stylesheet" === m.rel && (c === n || c === d)) return o()
 			}
 			var l = document.getElementsByTagName("style");
 			for (s = 0; s < l.length; s++) {
 				var m;
-				if ((c = (m = l[s]).getAttribute("data-href")) === n || c === a) return o()
+				if ((c = (m = l[s]).getAttribute("data-href")) === n || c === d) return o()
 			}
 			var P = document.createElement("link");
 			P.rel = "stylesheet", P.type = "text/css", P.onload = o, P.onerror = function(o) {
-				var n = o && o.target && o.target.src || a,
+				var n = o && o.target && o.target.src || d,
 					i = new Error("Loading CSS chunk " + e + " failed.\n(" + n + ")");
-				i.code = "CSS_CHUNK_LOAD_FAILED", i.request = n, delete d[e], P.parentNode.removeChild(P), t(i)
-			}, P.href = a, document.getElementsByTagName("head")[0].appendChild(P)
+				i.code = "CSS_CHUNK_LOAD_FAILED", i.request = n, delete a[e], P.parentNode.removeChild(P), t(i)
+			}, P.href = d, document.getElementsByTagName("head")[0].appendChild(P)
 		})).then((function() {
-			d[e] = 0
+			a[e] = 0
 		})));
-		var t = a[e];
+		var t = d[e];
 		if (0 !== t)
 			if (t) o.push(t[2]);
 			else {
 				var n = new Promise((function(o, n) {
-					t = a[e] = [o, n]
+					t = d[e] = [o, n]
 				}));
 				o.push(t[2] = n);
 				var i, s = document.createElement("script");
@@ -1241,7 +1241,7 @@
 						ProfileComments: "3e6d1cbcadf434dcb66e",
 						ProfileOverview: "a2023f6f2533d8155ce8",
 						ProfilePrivate: "bdb5e0069dfaeb565c49",
-						SearchResults: "036a8e0a2c2e5b515682",
+						SearchResults: "e96a713af92fc8efb0f1",
 						"ModQueue~ModQueuePages~ModerationPages": "72a2a7489ff02b67db5c",
 						"ModQueuePages~reddit-components-ModHub-Content-ModQueue": "fcd251356268a210c8fd",
 						ModQueuePages: "d0c6ced7587948424552",
@@ -1326,7 +1326,7 @@
 						"translations/es_MX-json": "1b0273cebeb68f5ac226",
 						"translations/fr_FR-json": "0002ed4cc98209b2859c",
 						"translations/it_IT-json": "b00d280332c3f41e934d",
-						"translations/pseudo_ext-json": "f14906677eb3821a63b5",
+						"translations/pseudo_ext-json": "c32ea9f4fe575a2a00d3",
 						"translations/pseudo_long-json": "222508efd64bc4b89755",
 						"translations/pseudo_short-json": "3d1d0582d08c4611387e",
 						"translations/pt_BR-json": "e6f3d2f9de274e586efb",
@@ -1517,14 +1517,14 @@
 				var c = new Error;
 				i = function(o) {
 					s.onerror = s.onload = null, clearTimeout(l);
-					var t = a[e];
+					var t = d[e];
 					if (0 !== t) {
 						if (t) {
 							var n = o && ("load" === o.type ? "missing" : o.type),
-								d = o && o.target && o.target.src;
-							c.message = "Loading chunk " + e + " failed.\n(" + n + ": " + d + ")", c.name = "ChunkLoadError", c.type = n, c.request = d, t[1](c)
+								a = o && o.target && o.target.src;
+							c.message = "Loading chunk " + e + " failed.\n(" + n + ": " + a + ")", c.name = "ChunkLoadError", c.type = n, c.request = a, t[1](c)
 						}
-						a[e] = void 0
+						d[e] = void 0
 					}
 				};
 				var l = setTimeout((function() {
@@ -1577,4 +1577,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.9212fec0078df302c0af.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.b0ef2453eda90a2cbcba.js.map
