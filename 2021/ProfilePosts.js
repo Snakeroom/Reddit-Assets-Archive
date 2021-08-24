@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePosts.a1b89dcb3b84d3fd000a.js
-// Retrieved at 8/18/2021, 8:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePosts.cd1a3702e32a3bf7534e.js
+// Retrieved at 8/23/2021, 8:10:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePosts", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -4110,19 +4110,20 @@
 						location: d,
 						loadMore: c,
 						postIds: m,
-						onLoadMore: p
+						postsById: p,
+						onLoadMore: b
 					} = this.props;
-					let b = m.map((e, t, n) => {
-						const s = t === m.length - 1;
+					let _ = m.filter(e => Boolean(p[e])).map((e, t, n) => {
+						const s = t === n.length - 1;
 						return this.scrollChildForPost(e, t, s, a)
 					});
-					r && (b = Q(b, r));
-					const _ = this.props.measureScrollFPS ? `post-listings-${a}` : void 0,
-						x = d ? Object(s.e)(d) : null,
-						y = x || i;
+					r && (_ = Q(_, r));
+					const x = this.props.measureScrollFPS ? `post-listings-${a}` : void 0,
+						y = d ? Object(s.e)(d) : null,
+						v = y || i;
 					return u.a.createElement(l.Fragment, null, u.a.createElement(k.b, {
 						innerRef: this.updateScrollerRef,
-						className: y ? U.a.truncatedPostList : Object(f.a)(U.a.postList, this.props.className),
+						className: v ? U.a.truncatedPostList : Object(f.a)(U.a.postList, this.props.className),
 						contentContainerRef: e,
 						dataKey: this.props.listingKey,
 						disableScrollCache: !0,
@@ -4132,16 +4133,16 @@
 						layoutKey: this.props.layout,
 						loadMoreToken: c && c.token ? c.token : void 0,
 						onLastVisibleChildRendered: this.setLastVisibleChildRendered,
-						onLoadMore: p,
+						onLoadMore: b,
 						onScroll: this.onScrollPause,
 						preventScrollOnMount: this.props.preventScrollOnMount,
-						trackingName: _,
+						trackingName: x,
 						viewportTopPadding: j.f
-					}, b), !o && x && u.a.createElement(Z, {
+					}, _), !o && y && u.a.createElement(Z, {
 						className: U.a.seeMoreButton
 					}, u.a.createElement(S.a, {
 						className: U.a.seeMorePostsText,
-						to: Object(h.a)(x, {
+						to: Object(h.a)(y, {
 							type: g.Wb.Posts
 						})
 					}, z._("See More Posts", null, {
@@ -7598,4 +7599,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.a1b89dcb3b84d3fd000a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.cd1a3702e32a3bf7534e.js.map

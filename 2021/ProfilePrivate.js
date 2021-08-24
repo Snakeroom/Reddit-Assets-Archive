@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePrivate.0148a722f297006cbe32.js
-// Retrieved at 8/18/2021, 7:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePrivate.bdb5e0069dfaeb565c49.js
+// Retrieved at 8/23/2021, 8:10:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePrivate"], {
 		"./node_modules/shallowequal/index.js": function(e, t) {
@@ -747,19 +747,20 @@
 						location: l,
 						loadMore: a,
 						postIds: u,
-						onLoadMore: m
+						postsById: m,
+						onLoadMore: g
 					} = this.props;
-					let g = u.map((e, t, s) => {
-						const i = t === u.length - 1;
+					let v = u.filter(e => Boolean(m[e])).map((e, t, s) => {
+						const i = t === s.length - 1;
 						return this.scrollChildForPost(e, t, i, d)
 					});
-					o && (g = Y(g, o));
-					const v = this.props.measureScrollFPS ? `post-listings-${d}` : void 0,
-						y = l ? Object(i.e)(l) : null,
-						P = y || n;
+					o && (v = Y(v, o));
+					const y = this.props.measureScrollFPS ? `post-listings-${d}` : void 0,
+						P = l ? Object(i.e)(l) : null,
+						w = P || n;
 					return p.a.createElement(c.Fragment, null, p.a.createElement(j.b, {
 						innerRef: this.updateScrollerRef,
-						className: P ? K.a.truncatedPostList : Object(b.a)(K.a.postList, this.props.className),
+						className: w ? K.a.truncatedPostList : Object(b.a)(K.a.postList, this.props.className),
 						contentContainerRef: e,
 						dataKey: this.props.listingKey,
 						disableScrollCache: !0,
@@ -769,16 +770,16 @@
 						layoutKey: this.props.layout,
 						loadMoreToken: a && a.token ? a.token : void 0,
 						onLastVisibleChildRendered: this.setLastVisibleChildRendered,
-						onLoadMore: m,
+						onLoadMore: g,
 						onScroll: this.onScrollPause,
 						preventScrollOnMount: this.props.preventScrollOnMount,
-						trackingName: v,
+						trackingName: y,
 						viewportTopPadding: O.f
-					}, g), !r && y && p.a.createElement($, {
+					}, v), !r && P && p.a.createElement($, {
 						className: K.a.seeMoreButton
 					}, p.a.createElement(k.a, {
 						className: K.a.seeMorePostsText,
-						to: Object(h.a)(y, {
+						to: Object(h.a)(P, {
 							type: f.Wb.Posts
 						})
 					}, U._("See More Posts", null, {
@@ -1872,4 +1873,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.0148a722f297006cbe32.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.bdb5e0069dfaeb565c49.js.map

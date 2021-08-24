@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.87d999a33d1f55f79fe3.js
-// Retrieved at 8/18/2021, 7:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.fcd251356268a210c8fd.js
+// Retrieved at 8/23/2021, 8:10:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages~reddit-components-ModHub-Content-ModQueue"], {
 		"./node_modules/shallowequal/index.js": function(e, t) {
@@ -1842,19 +1842,20 @@
 						location: l,
 						loadMore: d,
 						postIds: p,
-						onLoadMore: u
+						postsById: u,
+						onLoadMore: b
 					} = this.props;
-					let b = p.map((e, t, s) => {
-						const o = t === p.length - 1;
+					let f = p.filter(e => Boolean(u[e])).map((e, t, s) => {
+						const o = t === s.length - 1;
 						return this.scrollChildForPost(e, t, o, i)
 					});
-					n && (b = Y(b, n));
-					const f = this.props.measureScrollFPS ? `post-listings-${i}` : void 0,
-						y = l ? Object(o.e)(l) : null,
-						C = y || a;
+					n && (f = Y(f, n));
+					const y = this.props.measureScrollFPS ? `post-listings-${i}` : void 0,
+						C = l ? Object(o.e)(l) : null,
+						E = C || a;
 					return m.a.createElement(c.Fragment, null, m.a.createElement(S.b, {
 						innerRef: this.updateScrollerRef,
-						className: C ? Q.a.truncatedPostList : Object(g.a)(Q.a.postList, this.props.className),
+						className: E ? Q.a.truncatedPostList : Object(g.a)(Q.a.postList, this.props.className),
 						contentContainerRef: e,
 						dataKey: this.props.listingKey,
 						disableScrollCache: !0,
@@ -1864,16 +1865,16 @@
 						layoutKey: this.props.layout,
 						loadMoreToken: d && d.token ? d.token : void 0,
 						onLastVisibleChildRendered: this.setLastVisibleChildRendered,
-						onLoadMore: u,
+						onLoadMore: b,
 						onScroll: this.onScrollPause,
 						preventScrollOnMount: this.props.preventScrollOnMount,
-						trackingName: f,
+						trackingName: y,
 						viewportTopPadding: I.f
-					}, b), !r && y && m.a.createElement(q, {
+					}, f), !r && C && m.a.createElement(q, {
 						className: Q.a.seeMoreButton
 					}, m.a.createElement(_.a, {
 						className: Q.a.seeMorePostsText,
-						to: Object(h.a)(y, {
+						to: Object(h.a)(C, {
 							type: x.Wb.Posts
 						})
 					}, V._("See More Posts", null, {
@@ -2158,4 +2159,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.87d999a33d1f55f79fe3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.fcd251356268a210c8fd.js.map

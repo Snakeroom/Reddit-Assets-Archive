@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.a8757138c7fd7c952506.js
-// Retrieved at 8/18/2021, 8:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.a4c69b4414fc58c3d6e9.js
+// Retrieved at 8/23/2021, 8:10:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "CommentsPage"], {
 		"./src/lib/makeCollectionCommentsPageKey/index.ts": function(e, t, s) {
@@ -5814,19 +5814,20 @@
 						location: d,
 						loadMore: c,
 						postIds: p,
-						onLoadMore: u
+						postsById: u,
+						onLoadMore: b
 					} = this.props;
-					let b = p.map((e, t, s) => {
-						const o = t === p.length - 1;
+					let x = p.filter(e => Boolean(u[e])).map((e, t, s) => {
+						const o = t === s.length - 1;
 						return this.scrollChildForPost(e, t, o, a)
 					});
-					n && (b = Z(b, n));
-					const x = this.props.measureScrollFPS ? `post-listings-${a}` : void 0,
-						f = d ? Object(o.e)(d) : null,
-						v = f || i;
+					n && (x = Z(x, n));
+					const f = this.props.measureScrollFPS ? `post-listings-${a}` : void 0,
+						v = d ? Object(o.e)(d) : null,
+						O = v || i;
 					return m.a.createElement(l.Fragment, null, m.a.createElement(E.b, {
 						innerRef: this.updateScrollerRef,
-						className: v ? V.a.truncatedPostList : Object(g.a)(V.a.postList, this.props.className),
+						className: O ? V.a.truncatedPostList : Object(g.a)(V.a.postList, this.props.className),
 						contentContainerRef: e,
 						dataKey: this.props.listingKey,
 						disableScrollCache: !0,
@@ -5836,16 +5837,16 @@
 						layoutKey: this.props.layout,
 						loadMoreToken: c && c.token ? c.token : void 0,
 						onLastVisibleChildRendered: this.setLastVisibleChildRendered,
-						onLoadMore: u,
+						onLoadMore: b,
 						onScroll: this.onScrollPause,
 						preventScrollOnMount: this.props.preventScrollOnMount,
-						trackingName: x,
+						trackingName: f,
 						viewportTopPadding: I.f
-					}, b), !r && f && m.a.createElement(z, {
+					}, x), !r && v && m.a.createElement(z, {
 						className: V.a.seeMoreButton
 					}, m.a.createElement(k.a, {
 						className: V.a.seeMorePostsText,
-						to: Object(h.a)(f, {
+						to: Object(h.a)(v, {
 							type: C.Wb.Posts
 						})
 					}, U._("See More Posts", null, {
@@ -8429,4 +8430,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.a8757138c7fd7c952506.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.a4c69b4414fc58c3d6e9.js.map
