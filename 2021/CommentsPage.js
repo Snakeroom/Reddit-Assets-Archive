@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.dae1adcf184a79043f42.js
-// Retrieved at 8/30/2021, 10:10:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.386b6d3bca74d8e97479.js
+// Retrieved at 8/30/2021, 10:30:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage"], {
 		"./src/reddit/actions/celebratoryMoments/index.ts": function(e, t, s) {
@@ -397,9 +397,9 @@
 							i = Object(te.L)(s(), {
 								identifier: F.belongsTo
 							});
-						if (i && (e => V.Ed.Redirect === Object(D.b)(e, {
+						if (i && (e => V.Fd.Redirect === Object(D.b)(e, {
 								experimentEligibilitySelector: Z,
-								experimentName: V.wd
+								experimentName: V.xd
 							}))(s())) return void t(Object(o.c)(i.url));
 						if ((F.media && F.media.type) === T.o.LIVEVIDEO) {
 							const e = `/rpan${F.belongsTo.type===j.a.SUBREDDIT?i.url:"/"}${Object(u.t)(F.id)}`;
@@ -5863,7 +5863,7 @@
 							baseUrl: s.base_url,
 							hostPostId: a,
 							isEligibleForLinkedPosts: n,
-							shouldShowLinkedPosts: n && !Object(x.je)(t) && !Object(j.a)(t),
+							shouldShowLinkedPosts: n && !Object(x.ke)(t) && !Object(j.a)(t),
 							subreddit: o
 						}
 					}
@@ -5918,7 +5918,7 @@
 						hostPostData: d,
 						listingBelowVariant: c
 					} = e;
-					if (c && !Object(x.je)(c) && !Object(j.a)(c) && !i) return a.a.createElement("div", {
+					if (c && !Object(x.ke)(c) && !Object(j.a)(c) && !i) return a.a.createElement("div", {
 						className: K.a.smallBanner
 					});
 					const {
@@ -7873,13 +7873,13 @@
 			const i = e => {
 					const t = Object(n.c)(e, {
 						experimentEligibilitySelector: n.a,
-						experimentName: o.ge
+						experimentName: o.he
 					});
 					return t === o.I.TwoDayCooldown || t === o.I.FiveDayCooldown
 				},
 				a = e => {
 					const t = Object(r.d)(e, {
-							experimentName: o.ge
+							experimentName: o.he
 						}),
 						s = null == t ? void 0 : t.variant;
 					return s === o.I.TwoDayCooldown ? 2 : s === o.I.FiveDayCooldown ? 5 : 0
@@ -7927,7 +7927,7 @@
 					experimentEligibilitySelector: n.a,
 					experimentName: o.Hb
 				});
-				return !(!t || Object(o.je)(t))
+				return !(!t || Object(o.ke)(t))
 			}
 		},
 		"./src/reddit/selectors/experiments/replyWithUpvote.ts": function(e, t, s) {
@@ -7957,8 +7957,8 @@
 				r = s("./src/reddit/selectors/meta.ts");
 			const i = e => Object(n.c)(e, {
 				experimentEligibilitySelector: e => !Object(r.d)(e) && "US" === Object(r.b)(e),
-				experimentName: o.xd
-			}) === o.Fd.Enabled
+				experimentName: o.yd
+			}) === o.Gd.Enabled
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, s) {
 			"use strict";
@@ -8079,7 +8079,7 @@
 				i = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const a = e => {
 					const t = Object(i.a)(e);
-					return Boolean(t) && !Object(n.je)(t)
+					return Boolean(t) && !Object(n.ke)(t)
 				},
 				d = Object(o.a)(a, r.d, (e, t) => e && !t)
 		},
@@ -8104,4 +8104,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.dae1adcf184a79043f42.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.386b6d3bca74d8e97479.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.097f1dce7e04204373ff.js
-// Retrieved at 8/30/2021, 10:10:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.c80818ebb4ea0404ea6b.js
+// Retrieved at 8/30/2021, 10:30:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -6397,9 +6397,9 @@
 				nr = n("./src/reddit/selectors/experiments/serpRedesignLayout.ts"),
 				sr = n("./src/reddit/selectors/experiments/trending.ts"),
 				or = n("./src/reddit/helpers/chooseVariant/index.ts");
-			const rr = e => Object(xt.G)(e) || Jt.ae.Treatment1 === Object(or.c)(e, {
+			const rr = e => Object(xt.G)(e) || Jt.be.Treatment1 === Object(or.c)(e, {
 				experimentEligibilitySelector: or.a,
-				experimentName: Jt.Wd
+				experimentName: Jt.Xd
 			});
 			var ar, ir = n("./src/reddit/selectors/experiments/uiSimplification.ts"),
 				cr = n("./src/reddit/selectors/searchResults.ts"),
@@ -18228,6 +18228,45 @@
 				m = [u(o.Jb.COMMENTS, c), u(o.Jb.DUPLICATES, l), u(o.Jb.COMMENTS, d)];
 			t.a = m
 		},
+		"./src/reddit/routes/followers/index.ts": function(e, t, n) {
+			"use strict";
+			var s = n("./node_modules/@loadable/component/dist/loadable.esm.js"),
+				o = n("./src/lib/constants/index.ts"),
+				r = n("./src/lib/loadableAction/index.ts");
+			const a = "/user/:profileName/followers",
+				i = Object(s.a)({
+					resolved: {},
+					chunkName: () => "ProfileFollowersPage",
+					isReady(e) {
+						const t = this.resolve(e);
+						return !1 !== this.resolved[t] && !!n.m[t]
+					},
+					importAsync: () => n.e("ProfileFollowersPage").then(n.bind(null, "./src/reddit/pages/Followers/index.tsx")),
+					requireAsync(e) {
+						const t = this.resolve(e);
+						return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
+					},
+					requireSync(e) {
+						const t = this.resolve(e);
+						return n(t)
+					},
+					resolve() {
+						return "./src/reddit/pages/Followers/index.tsx"
+					}
+				}),
+				c = {
+					action: Object(r.a)(() => n.e("ProfileFollowersAction").then(n.bind(null, "./src/reddit/actions/pages/followers/index.ts")).then(e => e.followersPageRequested)),
+					chunk: o.q.PROFILE_FOLLOWERS,
+					component: i,
+					exact: !0,
+					meta: {
+						name: o.Jb.FOLLOWERS
+					},
+					path: a,
+					prefetches: [o.q.PROFILE_OVERVIEW]
+				};
+			t.a = c
+		},
 		"./src/reddit/routes/framedGild/index.ts": function(e, t, n) {
 			"use strict";
 			var s = n("./node_modules/@loadable/component/dist/loadable.esm.js"),
@@ -18538,19 +18577,20 @@
 					path: ["/explore", "/explore/:categoryName"],
 					prefetches: [c.q.COMMENTS_PAGE, c.q.FRONTPAGE]
 				},
-				v = n("./src/reddit/routes/framedGild/index.ts"),
-				O = n("./src/reddit/routes/framedModal/index.ts"),
-				y = n("./src/reddit/routes/frontpage/index.ts"),
-				C = n("./src/reddit/routes/geotagging/index.ts"),
-				x = n("./src/reddit/routes/inbox/index.ts"),
-				E = n("./src/reddit/routes/meta/index.ts"),
-				P = n("./src/reddit/routes/moderationPages/index.ts"),
-				j = n("./src/reddit/routes/modListing/index.ts"),
-				_ = n("./src/reddit/routes/modQueue/index.ts"),
-				S = n("./src/reddit/routes/multireddit/index.ts"),
-				k = n("./src/reddit/routes/notificationsInbox/index.ts"),
-				w = n("./src/reddit/routes/postCreation/constants.ts");
-			const I = ["/original", "/original/:categoryName/:sort([a-z]+)?"].map(e => ({
+				v = n("./src/reddit/routes/followers/index.ts"),
+				O = n("./src/reddit/routes/framedGild/index.ts"),
+				y = n("./src/reddit/routes/framedModal/index.ts"),
+				C = n("./src/reddit/routes/frontpage/index.ts"),
+				x = n("./src/reddit/routes/geotagging/index.ts"),
+				E = n("./src/reddit/routes/inbox/index.ts"),
+				P = n("./src/reddit/routes/meta/index.ts"),
+				j = n("./src/reddit/routes/moderationPages/index.ts"),
+				_ = n("./src/reddit/routes/modListing/index.ts"),
+				S = n("./src/reddit/routes/modQueue/index.ts"),
+				k = n("./src/reddit/routes/multireddit/index.ts"),
+				w = n("./src/reddit/routes/notificationsInbox/index.ts"),
+				I = n("./src/reddit/routes/postCreation/constants.ts");
+			const M = ["/original", "/original/:categoryName/:sort([a-z]+)?"].map(e => ({
 				path: e,
 				action: () => async e => {
 					await e(Object(i.c)("/"))
@@ -18561,22 +18601,22 @@
 					name: c.Jb.ORIGINAL_CONTENT_REDIRECT
 				}
 			}));
-			var M = [{
+			var N = [{
 					path: "/original/submit",
 					action: () => async e => {
-						await e(Object(i.c)(w.b))
+						await e(Object(i.c)(I.b))
 					},
 					chunk: c.q.EMPTY,
 					exact: !0,
 					meta: {
 						name: c.Jb.ORIGINAL_CONTENT_REDIRECT
 					}
-				}, ...I],
-				N = n("./src/reddit/routes/postCreation/index.ts"),
-				T = n("./src/reddit/routes/postDraft/index.ts"),
-				A = n("./src/reddit/routes/powerups/index.ts");
-			var R = {
-					action: () => async e => await e(Object(i.c)(A.a)),
+				}, ...M],
+				T = n("./src/reddit/routes/postCreation/index.ts"),
+				A = n("./src/reddit/routes/postDraft/index.ts"),
+				R = n("./src/reddit/routes/powerups/index.ts");
+			var L = {
+					action: () => async e => await e(Object(i.c)(R.a)),
 					chunk: c.q.EMPTY,
 					exact: !0,
 					meta: {
@@ -18584,11 +18624,11 @@
 					},
 					path: "/powerup"
 				},
-				L = n("./src/reddit/routes/premium/index.ts"),
-				F = n("./src/reddit/routes/profileComments/index.ts"),
-				D = n("./src/reddit/endpoints/me/index.ts"),
-				U = n("./src/reddit/helpers/pageActionLoginRedirect.ts");
-			var B = {
+				F = n("./src/reddit/routes/premium/index.ts"),
+				D = n("./src/reddit/routes/profileComments/index.ts"),
+				U = n("./src/reddit/endpoints/me/index.ts"),
+				B = n("./src/reddit/helpers/pageActionLoginRedirect.ts");
+			var G = {
 					action: e => async (t, n, {
 						apiContext: s
 					}) => {
@@ -18596,10 +18636,10 @@
 							rest: o
 						} = e.params, {
 							queryParams: r
-						} = e, a = await Object(D.a)(s());
+						} = e, a = await Object(U.a)(s());
 						if (!(a.ok && a.body && a.body.account)) {
 							const e = n();
-							return void Object(U.a)(t, e)
+							return void Object(B.a)(t, e)
 						}
 						const c = a.body.account.displayText,
 							l = o ? `/user/${c}/${(e=>e.endsWith("/")?e:`${e}/`)(o)}` : `/user/${c}/`,
@@ -18613,11 +18653,11 @@
 					},
 					path: ["/user/me", "/user/me/:rest(.*)"]
 				},
-				G = n("./src/reddit/routes/profileModSettings/index.ts"),
-				q = n("./src/reddit/routes/profileOverview/index.ts"),
-				H = n("./src/reddit/routes/profilePosts/index.ts"),
-				W = n("./src/reddit/routes/profilePrivate/index.ts");
-			var V = {
+				q = n("./src/reddit/routes/profileModSettings/index.ts"),
+				H = n("./src/reddit/routes/profileOverview/index.ts"),
+				W = n("./src/reddit/routes/profilePosts/index.ts"),
+				V = n("./src/reddit/routes/profilePrivate/index.ts");
+			var J = {
 					action: e => async t => {
 						const {
 							profileName: n,
@@ -18634,8 +18674,8 @@
 					},
 					path: ["/r/u_:profileName", "/r/u_:profileName/:rest(.*)", "/u/:profileName", "/u/:profileName/:rest(.*)"]
 				},
-				J = n("./src/reddit/routes/profileSnoobuilder/index.ts");
-			var z = {
+				z = n("./src/reddit/routes/profileSnoobuilder/index.ts");
+			var K = {
 					action: e => async t => {
 						const {
 							profileName: n,
@@ -18652,11 +18692,11 @@
 					},
 					path: ["/user/:profileName/submitted", "/user/:profileName/submitted/:rest(.*)"]
 				},
-				K = n("./src/reddit/routes/publicAccessNetwork/index.ts"),
-				Q = n("./src/reddit/routes/report/index.ts"),
-				X = n("./src/reddit/routes/searchResults/index.ts"),
-				Y = n("./src/reddit/routes/settings/index.ts");
-			var Z = [{
+				Q = n("./src/reddit/routes/publicAccessNetwork/index.ts"),
+				X = n("./src/reddit/routes/report/index.ts"),
+				Y = n("./src/reddit/routes/searchResults/index.ts"),
+				Z = n("./src/reddit/routes/settings/index.ts");
+			var $ = [{
 					action: e => async t => {
 						const {
 							page: n
@@ -18678,13 +18718,13 @@
 					},
 					path: ["/user/:username/about/edit", "/user/:username/about/edit/privacy"]
 				}],
-				$ = n("./src/reddit/routes/subreddit/index.ts"),
-				ee = n("./src/reddit/routes/subredditLeaderboard/index.ts"),
-				te = n("./src/reddit/routes/subredditWiki/index.ts"),
-				ne = n("./src/reddit/routes/talk/index.ts"),
-				se = n("./src/reddit/routes/topic/index.ts");
-			const oe = [o.a, r.a, a.b, l, d.a, u.a, B, V, z, ...s.a, ...m.a, h, ...y.a, C.a, L.a, A.b, ne.b, R, v.a, O.a, N.a, T.a, ...M, g, ...E.a, S.a, _.a, j.c, k.a, x.a, F.a, G.a, q.a, H.a, J.a, W.a, K.a, ...Y.a, ...Z, X.a, ...te.a, se.a, $.b, ee.a, P.a, Q.a, ...b];
-			t.a = oe
+				ee = n("./src/reddit/routes/subreddit/index.ts"),
+				te = n("./src/reddit/routes/subredditLeaderboard/index.ts"),
+				ne = n("./src/reddit/routes/subredditWiki/index.ts"),
+				se = n("./src/reddit/routes/talk/index.ts"),
+				oe = n("./src/reddit/routes/topic/index.ts");
+			const re = [o.a, r.a, a.b, l, d.a, u.a, G, J, K, ...s.a, ...m.a, h, ...C.a, x.a, F.a, R.b, se.b, L, v.a, O.a, y.a, T.a, A.a, ...N, g, ...P.a, k.a, S.a, _.c, w.a, E.a, D.a, q.a, H.a, W.a, z.a, V.a, Q.a, ...Z.a, ...$, Y.a, ...ne.a, oe.a, ee.b, te.a, j.a, X.a, ...b];
+			t.a = re
 		},
 		"./src/reddit/routes/meta/index.ts": function(e, t, n) {
 			"use strict";
@@ -19707,13 +19747,13 @@
 				O = e => e.accountManagerModalData.redirectUrl,
 				y = Object(a.a)((e, t) => t.path, (e, t) => t.uiMode, v, d.a, p.a, g.a, u.b, e => Object(b.c)(e, {
 					experimentEligibilitySelector: e => !Object(h.e)(e),
-					experimentName: l.Hd
+					experimentName: l.Id
 				}), m.a, f.i, (e, t, n, a, d, u, m, p, b, h) => {
 					let f = `${r.a.accountManagerOrigin}${e}`;
 					if (f = Object(i.a)(f, {
 							experiment_d2x_2020ify_buttons: "enabled"
 						}), p && (f = Object(i.a)(f, {
-							[`experiment_${l.Hd}`]: p
+							[`experiment_${l.Id}`]: p
 						})), d && (f = Object(i.a)(f, {
 							experiment_d2x_onboarding: "enabled"
 						})), e === c.c.GoogleOneTap) return Object(i.a)(f, {
@@ -19823,7 +19863,7 @@
 					experimentEligibilitySelector: r.J,
 					experimentName: s.gc
 				});
-				return !(!t || Object(s.je)(t))
+				return !(!t || Object(s.ke)(t))
 			}
 		},
 		"./src/reddit/selectors/experiments/frontpageSignup.ts": function(e, t, n) {
@@ -19889,8 +19929,8 @@
 				a = n("./src/reddit/selectors/experiments/utils.ts");
 			const i = Object(s.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: o.Ud
-				}), e => [o.Yd.Enabled, o.Yd.Enabled_noskip, o.Yd.Enabled_noskip_no_preselect].find(t => t === e)),
+					experimentName: o.Vd
+				}), e => [o.Zd.Enabled, o.Zd.Enabled_noskip, o.Zd.Enabled_noskip_no_preselect].find(t => t === e)),
 				c = Object(s.a)(i, e => !!Object(a.a)(e))
 		},
 		"./src/reddit/selectors/experiments/postCommentFollow.ts": function(e, t, n) {
@@ -19909,7 +19949,7 @@
 					experimentName: o.eb,
 					experimentEligibilitySelector: a.e
 				}), i.a),
-				l = Object(s.a)(c, e => e === o.kd.Enabled),
+				l = Object(s.a)(c, e => e === o.ld.Enabled),
 				d = Object(s.a)(e => Object(r.c)(e, {
 					experimentName: o.U,
 					experimentEligibilitySelector: a.e
@@ -19924,9 +19964,9 @@
 			var s = n("./src/reddit/constants/experiments.ts"),
 				o = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				r = n("./src/reddit/selectors/user.ts");
-			const a = e => Object(r.G)(e) || !(s.Zd.Holdout === Object(o.c)(e, {
+			const a = e => Object(r.G)(e) || !(s.ae.Holdout === Object(o.c)(e, {
 				experimentEligibilitySelector: o.a,
-				experimentName: s.Vd
+				experimentName: s.Wd
 			}))
 		},
 		"./src/reddit/selectors/experiments/uiSimplification.ts": function(e, t, n) {
@@ -20188,4 +20228,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePo~5f1ac562", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250", "Governance~ModListing~Reddit~Subreddit", "Chat~Governance~Reddit", "Governance~Reddit~reddit-components-MediumPost", "Reddit~StandalonePostPage~reddit-components-MediumPost", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.097f1dce7e04204373ff.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.c80818ebb4ea0404ea6b.js.map

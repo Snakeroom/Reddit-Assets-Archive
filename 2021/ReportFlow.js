@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlow.f449aba264f62ddc3d8c.js
-// Retrieved at 8/18/2021, 8:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlow.4d3f91469fabf3321eea.js
+// Retrieved at 8/30/2021, 10:30:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlow", "ReportFlowNew"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, o) {
@@ -1674,7 +1674,7 @@
 			})), o.d(t, "e", (function() {
 				return Y
 			})), o.d(t, "d", (function() {
-				return V
+				return X
 			})), o.d(t, "g", (function() {
 				return J
 			})), o.d(t, "c", (function() {
@@ -1792,7 +1792,7 @@
 									name: e
 								});
 								t && Object(R.j)(t) && (C[e] = o[e])
-							} Object.keys(C).length && r(X(C)), r(Object(u.e)(n)), r(B({
+							} Object.keys(C).length && r(V(C)), r(Object(u.e)(n)), r(B({
 							subredditId: e,
 							styles: {
 								...d,
@@ -1876,7 +1876,7 @@
 							error: l.error
 						}))
 					})(e)(t, o, n), Object(C.g)(e, !1)(t, o, n)
-				}, X = Object(d.a)(D.c), V = e => async (t, o, n) => {
+				}, V = Object(d.a)(D.c), X = e => async (t, o, n) => {
 					const r = M(e),
 						s = o();
 					for (const e in r)
@@ -1892,7 +1892,7 @@
 									name: e
 								});
 								o && t(Object(p.h)(o))
-							} t(X(r))
+							} t(V(r))
 				}, Q = Object(d.a)(D.f), J = (e, t, o) => async (n, r, s) => {
 					const i = r(),
 						a = o || i.structuredStyles.isEditing,
@@ -1908,7 +1908,7 @@
 						const o = await Object(p.g)(r(), c, t, R.a.StructuredStyles);
 						if (o) {
 							const t = o.url;
-							n(Object(p.j)(o)), n(X({
+							n(Object(p.j)(o)), n(V({
 								[e]: t
 							}))
 						}
@@ -2781,8 +2781,8 @@
 				W = o("./src/reddit/icons/svgs/ProfileSlashed/index.tsx"),
 				z = o("./src/reddit/components/ReportFlow/FinalPage/index.m.less"),
 				Y = o.n(z);
-			const X = d.a.wrapped(f.a, "blockUserHolder", Y.a),
-				V = d.a.wrapped(W.a, "BlockUserIcon", Y.a),
+			const V = d.a.wrapped(f.a, "blockUserHolder", Y.a),
+				X = d.a.wrapped(W.a, "BlockUserIcon", Y.a),
 				Q = d.a.div("BlockUserHeader", Y.a),
 				J = d.a.div("OptionHolder", Y.a),
 				Z = d.a.div("OptionHeader", Y.a),
@@ -2828,9 +2828,9 @@
 						const {
 							props: e
 						} = this, t = this.getBlockUserHeaderText();
-						return s.a.createElement(X, {
+						return s.a.createElement(V, {
 							onClick: () => this.onBlockAuthor(e.authorName)
-						}, s.a.createElement(V, null), s.a.createElement("div", null, s.a.createElement(Q, null, t), s.a.createElement($, null, n.fbt._("You won't see posts or comments from {username}. You can change this later in your preference.", [n.fbt._param("username", e.authorName)], {
+						}, s.a.createElement(X, null), s.a.createElement("div", null, s.a.createElement(Q, null, t), s.a.createElement($, null, n.fbt._("You won't see posts or comments from {username}. You can change this later in your preference.", [n.fbt._param("username", e.authorName)], {
 							hk: "2iUUlN"
 						}))))
 					}
@@ -3150,9 +3150,9 @@
 				We = o("./src/reddit/selectors/experiments/crisisTextLine.ts"),
 				ze = o("./src/reddit/selectors/posts.ts"),
 				Ye = o("./src/reddit/components/ReportFlow/_ReportFlow.m.less"),
-				Xe = o.n(Ye);
-			const Ve = d.a.div("CloseWrapper", Xe.a),
-				Qe = d.a.wrapped(Fe.a, "Close", Xe.a),
+				Ve = o.n(Ye);
+			const Xe = d.a.div("CloseWrapper", Ve.a),
+				Qe = d.a.wrapped(Fe.a, "Close", Ve.a),
 				Je = Object(a.c)({
 					comment: (e, {
 						commentId: t
@@ -3305,7 +3305,7 @@
 					} = this;
 					if (t.crisisFlowEnabled && e.chosenRuleKind === de.a.CrisisTextLine && e.showCTLPage) {
 						let e;
-						if (t.commentId ? e = t.comment && t.comment.author : t.postId && (e = t.post && t.post.author), e) return s.a.createElement(r.Fragment, null, s.a.createElement(Ve, {
+						if (t.commentId ? e = t.comment && t.comment.author : t.postId && (e = t.post && t.post.author), e) return s.a.createElement(r.Fragment, null, s.a.createElement(Xe, {
 							onClick: this.handleReportFlowClose
 						}, s.a.createElement(Qe, null)), s.a.createElement(u.a, {
 							onCloseReportFlow: this.handleReportFlowClose,
@@ -3327,7 +3327,7 @@
 				}
 				render() {
 					return s.a.createElement("div", {
-						className: Xe.a.Wrapper
+						className: Ve.a.Wrapper
 					}, this.getContent())
 				}
 			}
@@ -5883,9 +5883,9 @@
 					experimentName: r.zb,
 					experimentEligibilitySelector: e => l(e, t)
 				}), e => e),
-				d = e => e === r.Xd.NoCommunityWidgets,
-				u = e => e === r.Xd.NoRulesModerators,
-				p = e => e === r.Xd.RelatedPostsDu
+				d = e => e === r.Yd.NoCommunityWidgets,
+				u = e => e === r.Yd.NoRulesModerators,
+				p = e => e === r.Yd.RelatedPostsDu
 		},
 		"./src/reddit/selectors/tooltip.ts": function(e, t, o) {
 			"use strict";
@@ -5914,4 +5914,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.f449aba264f62ddc3d8c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.4d3f91469fabf3321eea.js.map

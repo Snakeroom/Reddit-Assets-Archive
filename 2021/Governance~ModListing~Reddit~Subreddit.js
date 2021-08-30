@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.016c46044e90c56fcd0c.js
-// Retrieved at 8/18/2021, 8:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.85b52c065d0174d85ad3.js
+// Retrieved at 8/30/2021, 10:30:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~Subreddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, r) {
@@ -813,7 +813,7 @@
 			})), r.d(t, "j", (function() {
 				return z
 			})), r.d(t, "e", (function() {
-				return V
+				return J
 			})), r.d(t, "d", (function() {
 				return Y
 			})), r.d(t, "g", (function() {
@@ -880,9 +880,9 @@
 				N = r("./src/reddit/selectors/structuredStyles.ts"),
 				L = r("./src/reddit/selectors/user.ts"),
 				U = r("./src/reddit/helpers/trackers/blade.ts"),
-				A = r("./src/telemetry/index.ts"),
-				R = r("./src/reddit/actions/structuredStyles/constants.ts");
-			const B = Object(d.a)(R.m),
+				R = r("./src/telemetry/index.ts"),
+				A = r("./src/reddit/actions/structuredStyles/constants.ts");
+			const B = Object(d.a)(A.m),
 				M = {
 					bannerBackgroundImage: ["bannerBackgroundImagePosition"],
 					bannerPositionedImage: ["bannerPositionedImagePosition", "secondaryBannerPositionedImage"]
@@ -933,7 +933,7 @@
 									name: e
 								});
 								t && Object(T.j)(t) && (j[e] = r[e])
-							} Object.keys(j).length && n(J(j)), n(Object(u.e)(o)), n(B({
+							} Object.keys(j).length && n(V(j)), n(Object(u.e)(o)), n(B({
 							subredditId: e,
 							styles: {
 								...d,
@@ -944,14 +944,14 @@
 						kind: P.b.Error,
 						text: Object(l.a)(O.error, O.status)
 					}));
-					Object(A.a)({
+					Object(R.a)({
 						...b,
 						actionInfo: {
 							...b.actionInfo,
 							success: O.ok
 						}
 					})
-				}, H = Object(d.a)(R.l), G = Object(d.a)(R.k), q = Object(d.a)(R.j), z = e => async (t, r, {
+				}, H = Object(d.a)(A.l), G = Object(d.a)(A.k), q = Object(d.a)(A.j), z = e => async (t, r, {
 					apiContext: o
 				}) => {
 					t(H({
@@ -974,7 +974,7 @@
 						subredditId: e,
 						...i.error
 					}))
-				}, K = Object(d.a)(R.d), V = e => async (t, r, o) => {
+				}, K = Object(d.a)(A.d), J = e => async (t, r, o) => {
 					const n = r(),
 						i = n.structuredStyles.models[e] || {},
 						s = Object(L.W)(n);
@@ -1017,7 +1017,7 @@
 							error: a.error
 						}))
 					})(e)(t, r, o), Object(j.g)(e, !1)(t, r, o)
-				}, J = Object(d.a)(R.c), Y = e => async (t, r, o) => {
+				}, V = Object(d.a)(A.c), Y = e => async (t, r, o) => {
 					const n = F(e),
 						i = r();
 					for (const e in n)
@@ -1033,8 +1033,8 @@
 									name: e
 								});
 								r && t(Object(f.h)(r))
-							} t(J(n))
-				}, $ = Object(d.a)(R.f), X = (e, t, r) => async (o, n, i) => {
+							} t(V(n))
+				}, $ = Object(d.a)(A.f), X = (e, t, r) => async (o, n, i) => {
 					const s = n(),
 						c = r || s.structuredStyles.isEditing,
 						a = Object(g.T)(s, {
@@ -1049,7 +1049,7 @@
 						const r = await Object(f.g)(n(), l, t, T.a.StructuredStyles);
 						if (r) {
 							const t = r.url;
-							o(Object(f.j)(r)), o(J({
+							o(Object(f.j)(r)), o(V({
 								[e]: t
 							}))
 						}
@@ -1057,7 +1057,7 @@
 						if (d instanceof Error) throw d;
 						o(Object(f.i)(d))
 					}
-				}, Q = Object(d.a)(R.b), Z = (e, t, r) => async (o, i, c) => {
+				}, Q = Object(d.a)(A.b), Z = (e, t, r) => async (o, i, c) => {
 					const a = i(),
 						l = a.structuredStyles.models[e] || {},
 						d = a.structuredStyles.draft,
@@ -1078,8 +1078,8 @@
 							styles: l
 						}))
 					}
-					Object(A.a)(u)
-				}, ee = Object(d.a)(R.e), te = () => async (e, t, r) => {
+					Object(R.a)(u)
+				}, ee = Object(d.a)(A.e), te = () => async (e, t, r) => {
 					const o = t(),
 						n = Object(L.X)(o),
 						i = !!Object(D.a)(o);
@@ -1090,7 +1090,7 @@
 						url: s
 					} = o.platform.currentPage;
 					s && e(Object(c.c)(Object(a.a)(s, ["styling", "route"])))
-				}, re = Object(d.a)(R.a), oe = Object(d.a)(R.n), ne = () => async e => e(te()), ie = e => async (t, r) => {
+				}, re = Object(d.a)(A.a), oe = Object(d.a)(A.n), ne = () => async e => e(te()), ie = e => async (t, r) => {
 					const o = r(),
 						n = Object(N.i)(o);
 					!Object(C.b)(w.a.BLADE_UNSAVED_CHANGES)(o) && n && (Object(N.a)(o, {
@@ -1098,8 +1098,8 @@
 					}) ? t(Object(p.i)(w.a.BLADE_UNSAVED_CHANGES)) : t(ne()))
 				}, se = e => async (t, r) => {
 					const o = r();
-					Object(N.i)(o) || t(Object(L.W)(o) ? Object(p.i)(w.a.BLADE_NIGHTMODE) : V(e))
-				}, ce = Object(d.a)(R.i), ae = Object(d.a)(R.h), le = Object(d.a)(R.g), de = (e, t) => async (r, o, {
+					Object(N.i)(o) || t(Object(L.W)(o) ? Object(p.i)(w.a.BLADE_NIGHTMODE) : J(e))
+				}, ce = Object(d.a)(A.i), ae = Object(d.a)(A.h), le = Object(d.a)(A.g), de = (e, t) => async (r, o, {
 					gqlContext: n,
 					apiContext: i
 				}) => {
@@ -1192,7 +1192,7 @@
 			})), r.d(t, "f", (function() {
 				return D
 			})), r.d(t, "g", (function() {
-				return A
+				return R
 			}));
 			var o = r("./node_modules/fbt/lib/FbtPublic.js"),
 				n = r("./src/lib/makeActionCreator/index.ts"),
@@ -1256,7 +1256,7 @@
 							try {
 								await k
 							} catch (E) {}
-							s = await n(R(e, a)) || s
+							s = await n(A(e, a)) || s
 						}
 						n(O({
 							subredditId: e,
@@ -1338,7 +1338,7 @@
 							try {
 								await E
 							} catch (x) {}
-							s = await n(R(e, O)) || s
+							s = await n(A(e, O)) || s
 						}
 						n(j({
 							subredditId: e,
@@ -1424,7 +1424,7 @@
 							widgets: o
 						})), r(Object(i.e)(t))
 					} else r(Object(i.f)(t, c.error))
-				}, N = Object(n.a)(I.c), L = Object(n.a)(I.b), U = Object(n.a)(I.a), A = (e, t) => async (r, o, {
+				}, N = Object(n.a)(I.c), L = Object(n.a)(I.b), U = Object(n.a)(I.a), R = (e, t) => async (r, o, {
 					apiContext: n
 				}) => {
 					r(N({
@@ -1444,7 +1444,7 @@
 						subredditId: e,
 						error: s.error
 					}))
-				}, R = (e, t) => async (r, o, {
+				}, A = (e, t) => async (r, o, {
 					apiContext: n
 				}) => {
 					const i = Object(b.T)(o(), {
@@ -2626,7 +2626,7 @@
 			})), r.d(t, "m", (function() {
 				return L
 			})), r.d(t, "e", (function() {
-				return A
+				return R
 			})), r.d(t, "n", (function() {
 				return B
 			})), r.d(t, "i", (function() {
@@ -2812,14 +2812,14 @@
 					},
 					action: o.c.CLICK
 				}),
-				A = e => {
+				R = e => {
 					Object(u.a)({
 						...m(e),
 						noun: "hide_oc_description",
 						action: o.c.CLICK
 					})
 				},
-				R = (e, t) => {
+				A = (e, t) => {
 					if (t) {
 						const r = l.subredditById(e, t);
 						if (r) return {
@@ -2864,7 +2864,7 @@
 					}
 					return {
 						postDraft: s,
-						...R(e, o.id)
+						...A(e, o.id)
 					}
 				},
 				M = (e, t) => {
@@ -2890,7 +2890,7 @@
 					}
 					return {
 						postDraft: o,
-						...R(e, t.subredditId)
+						...A(e, t.subredditId)
 					}
 				},
 				F = (e, t) => {
@@ -3257,27 +3257,27 @@
 			})), r.d(t, "g", (function() {
 				return U
 			})), r.d(t, "b", (function() {
-				return R
-			})), r.d(t, "a", (function() {
 				return B
-			})), r.d(t, "n", (function() {
+			})), r.d(t, "a", (function() {
 				return M
-			})), r.d(t, "m", (function() {
+			})), r.d(t, "n", (function() {
 				return F
+			})), r.d(t, "m", (function() {
+				return W
 			})), r.d(t, "t", (function() {
-				return G
-			})), r.d(t, "w", (function() {
 				return q
-			})), r.d(t, "e", (function() {
+			})), r.d(t, "w", (function() {
 				return z
+			})), r.d(t, "e", (function() {
+				return K
 			})), r.d(t, "d", (function() {
 				return V
 			})), r.d(t, "u", (function() {
-				return J
-			})), r.d(t, "v", (function() {
 				return Y
-			})), r.d(t, "h", (function() {
+			})), r.d(t, "v", (function() {
 				return $
+			})), r.d(t, "h", (function() {
+				return X
 			}));
 			var o = r("./node_modules/lodash/pick.js"),
 				n = r.n(o),
@@ -3389,12 +3389,15 @@
 							Object(y.a)(x(n)(o, r)(t));
 							break
 						}
+						case i.Jb.FOLLOWERS:
+							R(t);
+							break;
 						case i.Jb.PROFILE_MODERATION:
 							_ && D(t, !0);
 							break;
 						case i.Jb.SETTINGS: {
 							const n = e;
-							Object(y.a)(H(r, o)(t)), n.match.params.page === i.Xb.Profile && Object(u.l)(t);
+							Object(y.a)(G(r, o)(t)), n.match.params.page === i.Xb.Profile && Object(u.l)(t);
 							break
 						}
 						case i.Jb.POST_CREATION:
@@ -3412,16 +3415,16 @@
 							break
 						}
 						case i.Jb.SUBREDDIT_WIKI:
-							Object(y.a)(K(r, o)(t));
+							Object(y.a)(J(r, o)(t));
 							break;
 						case i.Jb.COINS:
-							Object(y.a)(R(r, o)(t)), Object(y.a)(B()(t));
+							Object(y.a)(B(r, o)(t)), Object(y.a)(M()(t));
 							break;
 						case i.Jb.PREMIUM:
-							Object(y.a)(M(r, o)(t)), Object(y.a)(F()(t));
+							Object(y.a)(F(r, o)(t)), Object(y.a)(W()(t));
 							break;
 						case i.Jb.APPEAL:
-							Object(y.a)(W(r, o)(t));
+							Object(y.a)(H(r, o)(t));
 							break;
 						case i.Jb.INBOX_PAGES:
 							_ && U(t);
@@ -3430,32 +3433,32 @@
 							_ && N(t, !0, d ? d.subredditName : null, d ? d.profileName : null);
 							break;
 						case i.Jb.COLLECTION_COMMENTS:
-							_ && Y(t, !0);
+							_ && $(t, !0);
 							break;
 						case i.Jb.MODQUEUE_PAGES:
 							_ && L(t, d ? d.subredditName : null, d ? d.profileName : null);
 							break;
 						case i.Jb.SUBREDDIT_LEADERBOARD:
-							_ && Object(y.a)(z()(t));
+							_ && Object(y.a)(K()(t));
 							break;
 						case i.Jb.SEARCH_RESULTS:
 							if (_) {
 								const i = Object(l.e)(e, t);
 								if (!i) return;
-								Object(y.a)(J(i, Object(g.e)(n()(v && v.queryParams || {}, c.t)), r, o, v)(t))
+								Object(y.a)(Y(i, Object(g.e)(n()(v && v.queryParams || {}, c.t)), r, o, v)(t))
 							}
 							break;
 						case i.Jb.PUBLIC_ACCESS_NETWORK:
-							_ && Object(y.a)(G()(t));
+							_ && Object(y.a)(q()(t));
 							break;
 						case i.Jb.GEOTAGGING:
 							_ && Object(y.a)(V()(t));
 							break;
 						case i.Jb.SUBREDDIT_CREATION:
-							_ && Object(y.a)(q()(t));
+							_ && Object(y.a)(z()(t));
 							break;
 						case i.Jb.MOD_LISTING:
-							_ && $(t, !0)
+							_ && X(t, !0)
 					}
 				},
 				w = e => ({
@@ -3666,6 +3669,15 @@
 						actionInfo: O.actionInfo(e)
 					})
 				},
+				R = e => {
+					Object(y.a)({
+						source: "global",
+						action: "view",
+						noun: "screen",
+						...w(e),
+						actionInfo: O.actionInfo(e)
+					})
+				},
 				A = (e, t, r, o, n) => {
 					const i = e.creations.api.page.pending[t],
 						s = !e.creations.api.page.error[t] && !i && !!r,
@@ -3685,7 +3697,7 @@
 						...c ? Object(d.n)(e, c) : {}
 					})
 				},
-				R = (e, t) => r => ({
+				B = (e, t) => r => ({
 					source: "coins_marketing",
 					action: "view",
 					noun: "page",
@@ -3694,13 +3706,13 @@
 					timer: O.timer(e, t),
 					adblock: O.adblock(r)
 				}),
-				B = () => e => ({
+				M = () => e => ({
 					source: "global",
 					action: "view",
 					noun: "screen",
 					...w(e)
 				}),
-				M = (e, t) => r => ({
+				F = (e, t) => r => ({
 					source: "premium_marketing",
 					action: "view",
 					noun: "page",
@@ -3709,46 +3721,46 @@
 					timer: O.timer(e, t),
 					adblock: O.adblock(r)
 				}),
-				F = () => e => ({
+				W = () => e => ({
 					source: "global",
 					action: "view",
 					noun: "screen",
 					...w(e)
 				}),
-				W = (e, t) => r => ({
+				H = (e, t) => r => ({
 					source: "appeal",
 					action: "view",
 					noun: "page",
 					...w(r),
 					timer: O.timer(e, t)
 				}),
-				H = (e, t) => r => ({
+				G = (e, t) => r => ({
 					source: "global",
 					action: "view",
 					noun: "screen",
 					...w(r),
 					timer: O.timer(e, t)
 				}),
-				G = () => e => ({
+				q = () => e => ({
 					source: "global",
 					action: "view",
 					noun: "screen",
 					subreddit: O.subreddit(e),
 					...w(e)
 				}),
-				q = () => e => ({
-					source: "global",
-					action: "view",
-					noun: "screen",
-					...w(e)
-				}),
 				z = () => e => ({
+					source: "global",
+					action: "view",
+					noun: "screen",
+					...w(e)
+				}),
+				K = () => e => ({
 					action: "view",
 					source: "global",
 					noun: "screen",
 					...w(e)
 				}),
-				K = (e, t) => r => ({
+				J = (e, t) => r => ({
 					source: "global",
 					action: "view",
 					noun: "screen",
@@ -3765,7 +3777,7 @@
 					noun: "screen",
 					...w(e)
 				}),
-				J = (e, t, r, o, n, s) => c => {
+				Y = (e, t, r, o, n, s) => c => {
 					let a = !0;
 					if (t.type.indexOf(i.Wb.Posts) > -1) {
 						const {
@@ -3812,7 +3824,7 @@
 						}
 					}
 				},
-				Y = (e, t) => {
+				$ = (e, t) => {
 					Object(y.a)({
 						source: "global",
 						action: "view",
@@ -3823,7 +3835,7 @@
 						})
 					})
 				},
-				$ = (e, t) => {
+				X = (e, t) => {
 					Object(y.a)({
 						source: "global",
 						action: "view",
@@ -3882,9 +3894,9 @@
 			})), r.d(t, "m", (function() {
 				return U
 			})), r.d(t, "n", (function() {
-				return A
-			})), r.d(t, "b", (function() {
 				return R
+			})), r.d(t, "b", (function() {
+				return A
 			})), r.d(t, "d", (function() {
 				return B
 			}));
@@ -4203,7 +4215,7 @@
 					},
 					post: l.post(n, t)
 				}),
-				A = (e, t, r) => o => ({
+				R = (e, t, r) => o => ({
 					...f(o),
 					source: d,
 					action: "click",
@@ -4218,7 +4230,7 @@
 					},
 					[e]: l[e](o)
 				}),
-				R = (e, t) => r => ({
+				A = (e, t) => r => ({
 					...f(r, t),
 					source: d,
 					action: e,
@@ -4503,9 +4515,9 @@
 					experimentName: n.zb,
 					experimentEligibilitySelector: e => a(e, t)
 				}), e => e),
-				d = e => e === n.Xd.NoCommunityWidgets,
-				u = e => e === n.Xd.NoRulesModerators,
-				f = e => e === n.Xd.RelatedPostsDu
+				d = e => e === n.Yd.NoCommunityWidgets,
+				u = e => e === n.Yd.NoRulesModerators,
+				f = e => e === n.Yd.RelatedPostsDu
 		},
 		"./src/reddit/selectors/tooltip.ts": function(e, t, r) {
 			"use strict";
@@ -4519,4 +4531,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.016c46044e90c56fcd0c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.85b52c065d0174d85ad3.js.map
