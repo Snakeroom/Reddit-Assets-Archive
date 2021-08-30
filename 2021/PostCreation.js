@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.669817443d985b119a97.js
-// Retrieved at 8/30/2021, 3:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.02ea7e0969f2a086bce3.js
+// Retrieved at 8/30/2021, 4:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, n) {
@@ -1444,10 +1444,10 @@
 				u = n("./src/reddit/endpoints/economics/predictions.ts"),
 				m = n("./src/reddit/helpers/graphql/normalizePostFromGql/index.ts"),
 				p = n("./src/reddit/helpers/graphql/normalizePredictionTournamentFromGql/index.ts"),
-				b = n("./src/reddit/actions/login.ts"),
-				h = n("./src/reddit/actions/modal.ts"),
-				f = n("./src/reddit/constants/modals.ts"),
-				g = n("./src/reddit/models/Prediction/index.ts"),
+				b = n("./src/redditGQL/types.ts"),
+				h = n("./src/reddit/actions/login.ts"),
+				f = n("./src/reddit/actions/modal.ts"),
+				g = n("./src/reddit/constants/modals.ts"),
 				C = n("./src/reddit/selectors/experiments/econ/index.ts"),
 				_ = n("./src/reddit/selectors/subreddit.ts"),
 				v = n("./src/reddit/selectors/user.ts"),
@@ -1550,7 +1550,7 @@
 					c.forEach(e => {
 						var t;
 						(null === (t = e.predictionPosts) || void 0 === t ? void 0 : t.length) && e.predictionPosts.forEach(e => {
-							d[e.id] = Object(m.e)(e)
+							e && (d[e.id] = Object(m.e)(e))
 						})
 					});
 					const l = c.map(e => Object(p.a)(e));
@@ -1571,11 +1571,12 @@
 						a = Object(C.a)(r);
 					if (!s) throw new Error("Failed to create tournament, no prediction drafts attached");
 					const i = await Object(u.f)(o(), {
+							tournamentId: null,
 							name: "Predictions Tournament",
 							isStartImmediately: !0,
 							subredditId: e,
 							predictionDrafts: s,
-							currency: a ? g.a.Coins : g.a.Tokens
+							currency: a ? b.b.Coins : b.b.Tokens
 						}),
 						{
 							createPredictionTournament: c
@@ -1676,10 +1677,10 @@
 					})), i
 				}, z = e => async (t, n) => {
 					const o = n();
-					Object(v.K)(o) ? await t(Object(h.h)(f.a.ECON_PREDICTIONS_PREMIUM_UPSELL, {
+					Object(v.K)(o) ? await t(Object(f.h)(g.a.ECON_PREDICTIONS_PREMIUM_UPSELL, {
 						feature: e
-					})) : await t(Object(b.i)())
-				}, Q = () => Object(h.g)(f.a.ECON_PREDICTIONS_PREMIUM_UPSELL), J = e => async (t, n, {
+					})) : await t(Object(h.i)())
+				}, Q = () => Object(f.g)(g.a.ECON_PREDICTIONS_PREMIUM_UPSELL), J = e => async (t, n, {
 					gqlContext: r
 				}) => {
 					try {
@@ -23334,4 +23335,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.669817443d985b119a97.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.02ea7e0969f2a086bce3.js.map

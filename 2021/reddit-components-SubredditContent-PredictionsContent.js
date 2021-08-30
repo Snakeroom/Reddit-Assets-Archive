@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.58b353faf3aab50c5fe2.js
-// Retrieved at 8/30/2021, 1:10:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.20c1cf69fec734441f54.js
+// Retrieved at 8/30/2021, 4:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SubredditContent-PredictionsContent"], {
 		"./node_modules/uuid/index.js": function(t, e, n) {
@@ -87,10 +87,10 @@
 				l = n("./src/reddit/endpoints/economics/predictions.ts"),
 				p = n("./src/reddit/helpers/graphql/normalizePostFromGql/index.ts"),
 				b = n("./src/reddit/helpers/graphql/normalizePredictionTournamentFromGql/index.ts"),
-				m = n("./src/reddit/actions/login.ts"),
-				f = n("./src/reddit/actions/modal.ts"),
-				j = n("./src/reddit/constants/modals.ts"),
-				O = n("./src/reddit/models/Prediction/index.ts"),
+				m = n("./src/redditGQL/types.ts"),
+				f = n("./src/reddit/actions/login.ts"),
+				j = n("./src/reddit/actions/modal.ts"),
+				O = n("./src/reddit/constants/modals.ts"),
 				h = n("./src/reddit/selectors/experiments/econ/index.ts"),
 				v = n("./src/reddit/selectors/subreddit.ts"),
 				x = n("./src/reddit/selectors/user.ts"),
@@ -102,8 +102,8 @@
 					predictions: c.a
 				}
 			});
-			const k = Object(u.a)(y.e),
-				I = Object(u.a)(y.i),
+			const I = Object(u.a)(y.e),
+				k = Object(u.a)(y.i),
 				_ = Object(u.a)(y.l),
 				w = Object(u.a)(y.h),
 				E = Object(u.a)(y.b),
@@ -129,7 +129,7 @@
 						subredditId: t,
 						...u
 					};
-					return r(k(p)), p
+					return r(I(p)), p
 				}, T = ({
 					coinPackageId: t,
 					optionId: e,
@@ -144,7 +144,7 @@
 						postId: n,
 						price: o
 					});
-					return r(I({
+					return r(k({
 						pollId: n,
 						prediction: c,
 						price: o
@@ -193,7 +193,7 @@
 					a.forEach(t => {
 						var e;
 						(null === (e = t.predictionPosts) || void 0 === e ? void 0 : e.length) && t.predictionPosts.forEach(t => {
-							s[t.id] = Object(p.e)(t)
+							t && (s[t.id] = Object(p.e)(t))
 						})
 					});
 					const u = a.map(t => Object(b.a)(t));
@@ -214,11 +214,12 @@
 						d = Object(h.a)(r);
 					if (!i) throw new Error("Failed to create tournament, no prediction drafts attached");
 					const c = await Object(l.f)(o(), {
+							tournamentId: null,
 							name: "Predictions Tournament",
 							isStartImmediately: !0,
 							subredditId: t,
 							predictionDrafts: i,
-							currency: d ? O.a.Coins : O.a.Tokens
+							currency: d ? m.b.Coins : m.b.Tokens
 						}),
 						{
 							createPredictionTournament: a
@@ -319,10 +320,10 @@
 					})), c
 				}, X = t => async (e, n) => {
 					const o = n();
-					Object(x.K)(o) ? await e(Object(f.h)(j.a.ECON_PREDICTIONS_PREMIUM_UPSELL, {
+					Object(x.K)(o) ? await e(Object(j.h)(O.a.ECON_PREDICTIONS_PREMIUM_UPSELL, {
 						feature: t
-					})) : await e(Object(m.i)())
-				}, H = () => Object(f.g)(j.a.ECON_PREDICTIONS_PREMIUM_UPSELL), W = t => async (e, n, {
+					})) : await e(Object(f.i)())
+				}, H = () => Object(j.g)(O.a.ECON_PREDICTIONS_PREMIUM_UPSELL), W = t => async (e, n, {
 					gqlContext: r
 				}) => {
 					try {
@@ -485,8 +486,8 @@
 					n = Object(b.a)(),
 					[j, h] = Object(r.useState)(""),
 					[P, g] = Object(r.useState)(!1),
-					[y, k] = Object(r.useState)(!1),
-					[I, _] = Object(r.useState)(!1),
+					[y, I] = Object(r.useState)(!1),
+					[k, _] = Object(r.useState)(!1),
 					[w, E] = Object(r.useState)(null),
 					C = Object(d.e)(e => Object(f.b)(e, {
 						subredditId: t.id
@@ -583,14 +584,14 @@
 					onClick: L
 				}, o.fbt._("End", null, {
 					hk: "HWN7f"
-				})), I && i.a.createElement(O, {
+				})), k && i.a.createElement(O, {
 					isEnding: y,
 					onClose: () => {
 						_(!1)
 					},
 					onConfirm: async () => {
 						if (!C || !S) return null;
-						k(!0);
+						I(!0);
 						try {
 							await e(Object(a.l)(C.tournamentId))
 						} catch (t) {
@@ -601,7 +602,7 @@
 								})
 							}))
 						}
-						k(!1), _(!1)
+						I(!1), _(!1)
 					}
 				}))))
 			}
@@ -621,9 +622,9 @@
 			})), n.d(e, "k", (function() {
 				return y
 			})), n.d(e, "b", (function() {
-				return k
-			})), n.d(e, "m", (function() {
 				return I
+			})), n.d(e, "m", (function() {
+				return k
 			})), n.d(e, "g", (function() {
 				return _
 			})), n.d(e, "h", (function() {
@@ -717,12 +718,12 @@
 					});
 					if (!Object(r.c)(n) || n.error) throw new Error("Failed to fetch tournaments");
 					return n.body.data.subredditInfoByName.predictionTournaments || []
-				}, k = (t, e) => Object(o.a)(t, {
+				}, I = (t, e) => Object(o.a)(t, {
 					...i,
 					variables: {
 						input: e
 					}
-				}), I = (t, e) => Object(o.a)(t, {
+				}), k = (t, e) => Object(o.a)(t, {
 					...j,
 					variables: {
 						input: e
@@ -812,9 +813,9 @@
 			})), n.d(e, "c", (function() {
 				return y
 			})), n.d(e, "i", (function() {
-				return k
-			})), n.d(e, "e", (function() {
 				return I
+			})), n.d(e, "e", (function() {
+				return k
 			})), n.d(e, "b", (function() {
 				return _
 			})), n.d(e, "j", (function() {
@@ -990,13 +991,13 @@
 					action: "click",
 					noun: "end_tournament"
 				}),
-				k = () => t => ({
+				I = () => t => ({
 					...Object(r.defaults)(t),
 					source: "mod_tool_predict",
 					action: "click",
 					noun: "rename_tournament"
 				}),
-				I = () => t => ({
+				k = () => t => ({
 					...Object(r.defaults)(t),
 					source: "predictions",
 					action: "click",
@@ -1124,4 +1125,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.58b353faf3aab50c5fe2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.20c1cf69fec734441f54.js.map

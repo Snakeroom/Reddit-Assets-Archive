@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.d5a8d8067086e474240e.js
-// Retrieved at 8/30/2021, 1:10:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.531bb80e644265715101.js
+// Retrieved at 8/30/2021, 4:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./node_modules/uuid/index.js": function(e, t, n) {
@@ -643,10 +643,10 @@
 				u = n("./src/reddit/endpoints/economics/predictions.ts"),
 				p = n("./src/reddit/helpers/graphql/normalizePostFromGql/index.ts"),
 				m = n("./src/reddit/helpers/graphql/normalizePredictionTournamentFromGql/index.ts"),
-				b = n("./src/reddit/actions/login.ts"),
-				f = n("./src/reddit/actions/modal.ts"),
-				h = n("./src/reddit/constants/modals.ts"),
-				x = n("./src/reddit/models/Prediction/index.ts"),
+				b = n("./src/redditGQL/types.ts"),
+				f = n("./src/reddit/actions/login.ts"),
+				h = n("./src/reddit/actions/modal.ts"),
+				x = n("./src/reddit/constants/modals.ts"),
 				O = n("./src/reddit/selectors/experiments/econ/index.ts"),
 				j = n("./src/reddit/selectors/subreddit.ts"),
 				v = n("./src/reddit/selectors/user.ts"),
@@ -749,7 +749,7 @@
 					c.forEach(e => {
 						var t;
 						(null === (t = e.predictionPosts) || void 0 === t ? void 0 : t.length) && e.predictionPosts.forEach(e => {
-							d[e.id] = Object(p.e)(e)
+							e && (d[e.id] = Object(p.e)(e))
 						})
 					});
 					const l = c.map(e => Object(m.a)(e));
@@ -770,11 +770,12 @@
 						i = Object(O.a)(s);
 					if (!r) throw new Error("Failed to create tournament, no prediction drafts attached");
 					const a = await Object(u.f)(o(), {
+							tournamentId: null,
 							name: "Predictions Tournament",
 							isStartImmediately: !0,
 							subredditId: e,
 							predictionDrafts: r,
-							currency: i ? x.a.Coins : x.a.Tokens
+							currency: i ? b.b.Coins : b.b.Tokens
 						}),
 						{
 							createPredictionTournament: c
@@ -875,10 +876,10 @@
 					})), a
 				}, H = e => async (t, n) => {
 					const o = n();
-					Object(v.K)(o) ? await t(Object(f.h)(h.a.ECON_PREDICTIONS_PREMIUM_UPSELL, {
+					Object(v.K)(o) ? await t(Object(h.h)(x.a.ECON_PREDICTIONS_PREMIUM_UPSELL, {
 						feature: e
-					})) : await t(Object(b.i)())
-				}, q = () => Object(f.g)(h.a.ECON_PREDICTIONS_PREMIUM_UPSELL), Z = e => async (t, n, {
+					})) : await t(Object(f.i)())
+				}, q = () => Object(h.g)(x.a.ECON_PREDICTIONS_PREMIUM_UPSELL), Z = e => async (t, n, {
 					gqlContext: s
 				}) => {
 					try {
@@ -3213,4 +3214,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.d5a8d8067086e474240e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.531bb80e644265715101.js.map

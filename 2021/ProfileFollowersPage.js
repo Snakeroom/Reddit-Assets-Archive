@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.5aab8b498c5b0bdc41ae.js
-// Retrieved at 8/30/2021, 3:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.fa486ad488368508bda3.js
+// Retrieved at 8/30/2021, 4:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileFollowersPage", "ProfileFollowersAction"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -87,31 +87,34 @@
 				l = s("./src/redditGQL/operations/ProfileFollowers.json");
 			var c = s("./src/reddit/endpoints/subreddit/subscriptions.ts");
 			var u = e => {
-					var t;
+					var t, s;
 					if (!e.identity || !e.identity.followedByRedditorsInfo) return;
-					const s = {},
+					const r = {},
 						{
-							followedByRedditorsInfo: r,
-							redditor: n
+							followedByRedditorsInfo: n,
+							redditor: i
 						} = e.identity,
 						{
-							moderatedSubreddits: i
-						} = n,
+							moderatedSubreddits: o
+						} = i,
 						{
-							edges: o,
-							pageInfo: a
-						} = r;
-					if (!o) return;
-					s.pageInfo = a;
-					const d = [],
-						l = {};
-					for (const c of o)
-						if ("Redditor" === (null === (t = null == c ? void 0 : c.node) || void 0 === t ? void 0 : t.__typename)) {
+							edges: a,
+							pageInfo: d
+						} = n;
+					if (!a) return;
+					r.pageInfo = {
+						...d,
+						endCursor: null !== (t = d.endCursor) && void 0 !== t ? t : null
+					};
+					const l = [],
+						c = {};
+					for (const u of a)
+						if ("Redditor" === (null === (s = null == u ? void 0 : u.node) || void 0 === s ? void 0 : s.__typename)) {
 							const {
 								id: e
-							} = c.node;
-							d.push(e), l[e] = c.node
-						} return s.followerUserIds = d, s.followers = l, s
+							} = u.node;
+							l.push(e), c[e] = u.node
+						} return r.followerUserIds = l, r.followers = c, r
 				},
 				m = s("./src/reddit/models/Toast/index.ts"),
 				p = s("./src/reddit/actions/pages/followers/constants.ts"),
@@ -6872,4 +6875,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.5aab8b498c5b0bdc41ae.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.fa486ad488368508bda3.js.map

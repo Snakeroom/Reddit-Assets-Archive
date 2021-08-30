@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-EndTimeModal.6607e148a0de36c8c813.js
-// Retrieved at 8/30/2021, 1:10:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-EndTimeModal.4dc479e77631a2ddb5f1.js
+// Retrieved at 8/30/2021, 4:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction-EndTimeModal"], {
 		"./node_modules/lodash/_baseClamp.js": function(e, t) {
@@ -88,9 +88,9 @@
 			})), n.d(t, "r", (function() {
 				return A
 			})), n.d(t, "g", (function() {
-				return R
-			})), n.d(t, "a", (function() {
 				return Q
+			})), n.d(t, "a", (function() {
+				return R
 			})), n.d(t, "s", (function() {
 				return B
 			})), n.d(t, "l", (function() {
@@ -121,10 +121,10 @@
 				l = n("./src/reddit/endpoints/economics/predictions.ts"),
 				p = n("./src/reddit/helpers/graphql/normalizePostFromGql/index.ts"),
 				m = n("./src/reddit/helpers/graphql/normalizePredictionTournamentFromGql/index.ts"),
-				b = n("./src/reddit/actions/login.ts"),
-				h = n("./src/reddit/actions/modal.ts"),
-				f = n("./src/reddit/constants/modals.ts"),
-				j = n("./src/reddit/models/Prediction/index.ts"),
+				b = n("./src/redditGQL/types.ts"),
+				h = n("./src/reddit/actions/login.ts"),
+				f = n("./src/reddit/actions/modal.ts"),
+				j = n("./src/reddit/constants/modals.ts"),
 				C = n("./src/reddit/selectors/experiments/econ/index.ts"),
 				v = n("./src/reddit/selectors/subreddit.ts"),
 				O = n("./src/reddit/selectors/user.ts"),
@@ -227,7 +227,7 @@
 					d.forEach(e => {
 						var t;
 						(null === (t = e.predictionPosts) || void 0 === t ? void 0 : t.length) && e.predictionPosts.forEach(e => {
-							c[e.id] = Object(p.e)(e)
+							e && (c[e.id] = Object(p.e)(e))
 						})
 					});
 					const u = d.map(e => Object(m.a)(e));
@@ -238,7 +238,7 @@
 						posts: c,
 						meta: r.meta
 					})), u
-				}, L = Object(u.a)(x.a), G = Object(u.a)(x.j), A = Object(u.a)(x.k), R = ({
+				}, L = Object(u.a)(x.a), G = Object(u.a)(x.j), A = Object(u.a)(x.k), Q = ({
 					subredditId: e
 				}) => async (t, n, {
 					gqlContext: o
@@ -248,11 +248,12 @@
 						s = Object(C.a)(r);
 					if (!i) throw new Error("Failed to create tournament, no prediction drafts attached");
 					const a = await Object(l.f)(o(), {
+							tournamentId: null,
 							name: "Predictions Tournament",
 							isStartImmediately: !0,
 							subredditId: e,
 							predictionDrafts: i,
-							currency: s ? j.a.Coins : j.a.Tokens
+							currency: s ? b.b.Coins : b.b.Tokens
 						}),
 						{
 							createPredictionTournament: d
@@ -265,7 +266,7 @@
 						subredditId: e,
 						tournaments: [c]
 					})), c
-				}, Q = (e, t) => async (n, o, {
+				}, R = (e, t) => async (n, o, {
 					gqlContext: r
 				}) => {
 					var s;
@@ -353,10 +354,10 @@
 					})), a
 				}, V = e => async (t, n) => {
 					const o = n();
-					Object(O.K)(o) ? await t(Object(h.h)(f.a.ECON_PREDICTIONS_PREMIUM_UPSELL, {
+					Object(O.K)(o) ? await t(Object(f.h)(j.a.ECON_PREDICTIONS_PREMIUM_UPSELL, {
 						feature: e
-					})) : await t(Object(b.i)())
-				}, Z = () => Object(h.g)(f.a.ECON_PREDICTIONS_PREMIUM_UPSELL), Y = e => async (t, n, {
+					})) : await t(Object(h.i)())
+				}, Z = () => Object(f.g)(j.a.ECON_PREDICTIONS_PREMIUM_UPSELL), Y = e => async (t, n, {
 					gqlContext: r
 				}) => {
 					try {
@@ -1349,4 +1350,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-EndTimeModal.6607e148a0de36c8c813.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-EndTimeModal.4dc479e77631a2ddb5f1.js.map
