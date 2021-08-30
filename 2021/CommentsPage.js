@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.637835a7da62e788922e.js
-// Retrieved at 8/30/2021, 12:20:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.5a49ae583aa7899acfe1.js
+// Retrieved at 8/30/2021, 1:10:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage"], {
 		"./src/reddit/actions/celebratoryMoments/index.ts": function(e, t, s) {
@@ -6100,11 +6100,11 @@
 		"./src/reddit/connectors/PostList/index.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "c", (function() {
-				return P
+				return E
 			})), s.d(t, "d", (function() {
-				return k
+				return w
 			})), s.d(t, "b", (function() {
-				return j
+				return I
 			}));
 			var o = s("./node_modules/react-redux/es/index.js"),
 				n = s("./node_modules/reselect/es/index.js"),
@@ -6122,64 +6122,43 @@
 				g = s("./src/reddit/components/PostList/Placeholder.tsx"),
 				C = s("./src/reddit/featureFlags/index.ts"),
 				x = s("./src/reddit/selectors/experiments/survey.ts"),
-				f = s("./src/reddit/selectors/features/predictions/tournaments/index.ts"),
-				v = s("./src/reddit/selectors/listings.ts"),
-				O = s("./src/reddit/selectors/posts.ts"),
-				y = s("./src/reddit/selectors/subreddit.ts"),
-				E = s("./src/reddit/selectors/tracking.ts");
+				f = s("./src/reddit/selectors/listings.ts"),
+				v = s("./src/reddit/selectors/posts.ts"),
+				O = s("./src/reddit/selectors/subreddit.ts"),
+				y = s("./src/reddit/selectors/tracking.ts");
 
-			function P() {
+			function E() {
 				return Object(u.u)({
 					currentProfileName: u.i,
 					isCommentPermalink: u.w,
 					isCommentsPage: u.x,
 					isFrontpage: u.z,
-					isPredictionsPage: u.N,
 					isProfilePostListing: u.K,
 					isTopicPage: u.P,
 					pageLayer: e => e
 				})
 			}
-			const w = P(),
-				k = {
-					apiError: v.c,
-					apiPending: v.d,
+			const P = E(),
+				w = {
+					apiError: f.c,
+					apiPending: f.d,
 					measureScrollFPS: C.d.measureScrollFPS,
 					layout: (e, t) => t.forcedLayout || Object(u.Q)(e, t),
-					loadMore: (e, t) => t.isPredictionsPage ? null : Object(v.g)(e, t),
-					postsById: (e, t) => {
-						if (t.isPredictionsPage) {
-							const s = Object(y.E)(e, t.listingName);
-							return Object(f.k)(e, {
-								subredditId: s
-							})
-						}
-						return Object(O.T)(e, {
-							...t
-						})
-					},
+					loadMore: f.g,
+					postsById: v.T,
 					postIds: Object(r.a)((e, {
 						listingKey: t,
 						listingName: s,
-						isPredictionsPage: o,
-						inSubredditOrProfile: n
-					}) => {
-						if (o) {
-							const t = Object(y.E)(e, s);
-							return Object(f.l)(e, {
-								subredditId: t
-							})
-						}
-						return Object(O.F)(e, t, s, n)
-					}),
-					subredditsById: y.ab,
-					viewportDataLoaded: E.a,
+						inSubredditOrProfile: o
+					}) => Object(v.F)(e, t, s, o)),
+					subredditsById: O.ab,
+					viewportDataLoaded: y.a,
 					pageReferrer: u.T,
 					postListPlaceholderComponent: () => g.a,
 					isNpsScrollSurveyEnabled: x.d
 				},
-				I = Object(n.c)(k),
-				j = e => ({
+				k = Object(n.c)(w),
+				I = e => ({
 					onBottomViewed: (t, s) => e(l.c(t, s)),
 					onFirstPostChanged: t => e(Object(d.a)(t)),
 					adBrandSafetyStatusReceived: t => {
@@ -6203,10 +6182,10 @@
 					},
 					surveyTriggerScrollCounted: () => e(Object(m.i)())
 				}),
-				_ = e => Object(h.b)({
+				j = e => Object(h.b)({
 					...e
 				}),
-				S = (e, t, s, o) => {
+				_ = (e, t, s, o) => {
 					const {
 						listingKey: n,
 						hostPostData: r,
@@ -6214,14 +6193,14 @@
 					} = o;
 					return Object(b.h)(e, t, "post", n, r, i, void 0)
 				},
-				L = Object(o.b)(I, j, (e, t, s) => ({
+				S = Object(o.b)(k, I, (e, t, s) => ({
 					...e,
 					...t,
 					...s,
-					postComponentForLayout: _,
-					postClickEventFactory: S
+					postComponentForLayout: j,
+					postClickEventFactory: _
 				}));
-			t.a = e => Object(p.c)(w(L(e)))
+			t.a = e => Object(p.c)(P(S(e)))
 		},
 		"./src/reddit/contexts/TrackCommentsPageClick.ts": function(e, t, s) {
 			"use strict";
@@ -8078,4 +8057,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.637835a7da62e788922e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.5a49ae583aa7899acfe1.js.map

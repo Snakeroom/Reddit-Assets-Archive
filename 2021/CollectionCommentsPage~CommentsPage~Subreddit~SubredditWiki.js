@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.5998501101bd01828cba.js
-// Retrieved at 8/30/2021, 12:20:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.e82f5e113e2eaa9d3183.js
+// Retrieved at 8/30/2021, 1:10:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"], {
 		"./src/lib/linkMatchers/index.ts": function(e, t, n) {
@@ -144,9 +144,9 @@
 				d = n("./src/reddit/actions/toaster.ts"),
 				c = n("./src/reddit/models/Toast/index.ts"),
 				l = n("./src/lib/makeActionCreator/index.ts"),
-				u = n("./src/lib/makeRequest/index.ts"),
-				m = n("./src/reddit/endpoints/economics/predictions.ts"),
-				p = n("./src/reddit/helpers/graphql/normalizePostFromGql/index.ts"),
+				u = n("./src/reddit/endpoints/economics/predictions.ts"),
+				m = n("./src/reddit/helpers/graphql/normalizePostFromGql/index.ts"),
+				p = n("./src/reddit/helpers/graphql/normalizePredictionTournamentFromGql/index.ts"),
 				b = n("./src/reddit/actions/login.ts"),
 				h = n("./src/reddit/actions/modal.ts"),
 				g = n("./src/reddit/constants/modals.ts"),
@@ -171,7 +171,7 @@
 					gqlContext: a
 				}) => {
 					const o = Object(w.K)(i()),
-						d = await Object(m.j)(a(), {
+						d = await Object(u.j)(a(), {
 							subredditId: e,
 							period: t,
 							top: n,
@@ -185,11 +185,11 @@
 					if (!c || !c.predictionWinners) throw new Error("Subreddit has no prediction winners");
 					const {
 						predictionWinners: l
-					} = c, u = {
+					} = c, m = {
 						subredditId: e,
 						...l
 					};
-					return s(y(u)), u
+					return s(y(m)), m
 				}, S = ({
 					coinPackageId: e,
 					optionId: t,
@@ -198,7 +198,7 @@
 				}) => async (s, i, {
 					gqlContext: a
 				}) => {
-					const o = await Object(m.n)(a(), {
+					const o = await Object(u.n)(a(), {
 						coinPackageId: e,
 						optionId: t,
 						postId: n,
@@ -215,7 +215,7 @@
 				}) => async (n, r, {
 					gqlContext: s
 				}) => {
-					const i = await Object(m.l)(s(), {
+					const i = await Object(u.l)(s(), {
 							optionId: e,
 							postId: t
 						}),
@@ -242,41 +242,26 @@
 					t(T({
 						subredditId: i
 					}));
-					const d = await Object(m.k)(r(), {
-						subredditName: e,
-						isLatestOnly: !0,
-						isIncludingPredictions: !0,
-						isIncludingParticipants: !0,
-						isIncludingCancelledPredictions: o
-					});
-					if (!Object(u.c)(d) || d.error) throw new Error("Failed to fetch tournaments");
-					const {
-						predictionTournaments: c
-					} = d.body.data.subredditInfoByName;
-					if (!c) return [];
-					const l = c.map(e => {
-							var t, n;
-							const r = null !== (n = null === (t = e.predictionPosts) || void 0 === t ? void 0 : t.map(e => {
-								const t = Object(p.e)(e),
-									n = t.pollData;
-								return {
-									...t,
-									pollData: n
-								}
-							})) && void 0 !== n ? n : [];
-							return {
-								...e,
-								predictionPosts: r
-							}
+					const d = await Object(u.k)(r(), {
+							subredditName: e,
+							isLatestOnly: !0,
+							isIncludingPredictions: !0,
+							isIncludingParticipants: !0,
+							isIncludingCancelledPredictions: o
 						}),
-						b = l.reduce((e, t) => (t.predictionPosts.length && t.predictionPosts.forEach(t => {
-							e[t.id] = t
-						}), e), {});
+						c = {};
+					d.forEach(e => {
+						var t;
+						(null === (t = e.predictionPosts) || void 0 === t ? void 0 : t.length) && e.predictionPosts.forEach(e => {
+							c[e.id] = Object(m.e)(e)
+						})
+					});
+					const l = d.map(e => Object(p.a)(e));
 					return t(L({
 						subredditId: i,
 						tournaments: l
 					})), t(F({
-						posts: b,
+						posts: c,
 						meta: s.meta
 					})), l
 				}, R = Object(l.a)(_.a), A = Object(l.a)(_.j), B = Object(l.a)(_.k), D = ({
@@ -288,7 +273,7 @@
 						i = Object(j.b)(s),
 						a = Object(x.a)(s);
 					if (!i) throw new Error("Failed to create tournament, no prediction drafts attached");
-					const o = await Object(m.f)(r(), {
+					const o = await Object(u.f)(r(), {
 							name: "Predictions Tournament",
 							isStartImmediately: !0,
 							subredditId: e,
@@ -312,7 +297,7 @@
 					var a;
 					const o = Object(j.b)(r());
 					if (!o) throw new Error("Failed to create prediction post, no prediction drafts attached");
-					const d = await Object(m.b)(s(), {
+					const d = await Object(u.b)(s(), {
 							tournamentId: e,
 							isStartImmediately: !0,
 							iKey: `add-dfts-${i.a.v4()}`,
@@ -328,7 +313,7 @@
 				}, H = Object(l.a)(_.m), G = (e, t, n) => async (t, r, {
 					gqlContext: s
 				}) => {
-					const i = await Object(m.m)(s(), {
+					const i = await Object(u.m)(s(), {
 							tournamentId: e,
 							name: n
 						}),
@@ -340,7 +325,7 @@
 				}, V = e => async (t, n, {
 					gqlContext: r
 				}) => {
-					const s = await Object(m.g)(r(), {
+					const s = await Object(u.g)(r(), {
 							tournamentId: e
 						}),
 						{
@@ -351,7 +336,7 @@
 				}, U = e => async (t, n, {
 					gqlContext: r
 				}) => {
-					const s = await Object(m.h)(r(), {
+					const s = await Object(u.h)(r(), {
 						postId: e
 					});
 					if (!s.ok || s.error) throw new Error("Failed to fetch prediction chip packages");
@@ -363,7 +348,7 @@
 				}, z = e => async (t, n, {
 					gqlContext: r
 				}) => {
-					const s = await Object(m.i)(r(), {
+					const s = await Object(u.i)(r(), {
 						tournamentId: e
 					});
 					if (!s.ok || s.error) throw new Error("Failed to fetch token balance");
@@ -401,7 +386,7 @@
 					gqlContext: s
 				}) => {
 					try {
-						const n = await Object(m.c)(s(), {
+						const n = await Object(u.c)(s(), {
 							postId: e
 						});
 						t(I({
@@ -424,7 +409,7 @@
 				return async (n, r, {
 					gqlContext: s
 				}) => {
-					const i = await Object(m.d)(s(), {
+					const i = await Object(u.d)(s(), {
 						postId: e,
 						...t
 					});
@@ -2601,37 +2586,35 @@
 						input: t
 					}
 				}),
-				_ = (e, t) => Object(r.a)(e, {
-					...p,
-					variables: t
-				}),
-				y = (e, t) => Object(r.a)(e, {
+				_ = async (e, t) => {
+					const n = await Object(r.a)(e, {
+						...p,
+						variables: t
+					});
+					if (!Object(s.c)(n) || n.error) throw new Error("Failed to fetch tournaments");
+					return n.body.data.subredditInfoByName.predictionTournaments || []
+				}, y = (e, t) => Object(r.a)(e, {
 					...i,
 					variables: {
 						input: t
 					}
-				}),
-				E = (e, t) => Object(r.a)(e, {
+				}), E = (e, t) => Object(r.a)(e, {
 					...g,
 					variables: {
 						input: t
 					}
-				}),
-				k = (e, t) => Object(r.a)(e, {
+				}), k = (e, t) => Object(r.a)(e, {
 					...l,
 					variables: {
 						input: t
 					}
-				}),
-				N = (e, t) => Object(r.a)(e, {
+				}), N = (e, t) => Object(r.a)(e, {
 					...u,
 					variables: t
-				}),
-				I = (e, t) => Object(r.a)(e, {
+				}), I = (e, t) => Object(r.a)(e, {
 					...m,
 					variables: t
-				}),
-				C = async (e, t) => {
+				}), C = async (e, t) => {
 					const n = await Object(r.a)(e, {
 						...o,
 						variables: {
@@ -3307,4 +3290,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.5998501101bd01828cba.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.e82f5e113e2eaa9d3183.js.map

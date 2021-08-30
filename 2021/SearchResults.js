@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.ad5c3da0fa73a9c8ecb9.js
-// Retrieved at 8/30/2021, 12:20:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.f178ec9aeb31182c9954.js
+// Retrieved at 8/30/2021, 1:10:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -9810,11 +9810,11 @@
 		"./src/reddit/connectors/PostList/index.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "c", (function() {
-				return j
+				return E
 			})), s.d(t, "d", (function() {
-				return k
+				return _
 			})), s.d(t, "b", (function() {
-				return N
+				return S
 			}));
 			var r = s("./node_modules/react-redux/es/index.js"),
 				n = s("./node_modules/reselect/es/index.js"),
@@ -9832,64 +9832,43 @@
 				C = s("./src/reddit/components/PostList/Placeholder.tsx"),
 				x = s("./src/reddit/featureFlags/index.ts"),
 				f = s("./src/reddit/selectors/experiments/survey.ts"),
-				g = s("./src/reddit/selectors/features/predictions/tournaments/index.ts"),
-				v = s("./src/reddit/selectors/listings.ts"),
-				y = s("./src/reddit/selectors/posts.ts"),
-				O = s("./src/reddit/selectors/subreddit.ts"),
-				E = s("./src/reddit/selectors/tracking.ts");
+				g = s("./src/reddit/selectors/listings.ts"),
+				v = s("./src/reddit/selectors/posts.ts"),
+				y = s("./src/reddit/selectors/subreddit.ts"),
+				O = s("./src/reddit/selectors/tracking.ts");
 
-			function j() {
+			function E() {
 				return Object(p.u)({
 					currentProfileName: p.i,
 					isCommentPermalink: p.w,
 					isCommentsPage: p.x,
 					isFrontpage: p.z,
-					isPredictionsPage: p.N,
 					isProfilePostListing: p.K,
 					isTopicPage: p.P,
 					pageLayer: e => e
 				})
 			}
-			const _ = j(),
-				k = {
-					apiError: v.c,
-					apiPending: v.d,
+			const j = E(),
+				_ = {
+					apiError: g.c,
+					apiPending: g.d,
 					measureScrollFPS: x.d.measureScrollFPS,
 					layout: (e, t) => t.forcedLayout || Object(p.Q)(e, t),
-					loadMore: (e, t) => t.isPredictionsPage ? null : Object(v.g)(e, t),
-					postsById: (e, t) => {
-						if (t.isPredictionsPage) {
-							const s = Object(O.E)(e, t.listingName);
-							return Object(g.k)(e, {
-								subredditId: s
-							})
-						}
-						return Object(y.T)(e, {
-							...t
-						})
-					},
+					loadMore: g.g,
+					postsById: v.T,
 					postIds: Object(a.a)((e, {
 						listingKey: t,
 						listingName: s,
-						isPredictionsPage: r,
-						inSubredditOrProfile: n
-					}) => {
-						if (r) {
-							const t = Object(O.E)(e, s);
-							return Object(g.l)(e, {
-								subredditId: t
-							})
-						}
-						return Object(y.F)(e, t, s, n)
-					}),
-					subredditsById: O.ab,
-					viewportDataLoaded: E.a,
+						inSubredditOrProfile: r
+					}) => Object(v.F)(e, t, s, r)),
+					subredditsById: y.ab,
+					viewportDataLoaded: O.a,
 					pageReferrer: p.T,
 					postListPlaceholderComponent: () => C.a,
 					isNpsScrollSurveyEnabled: f.d
 				},
-				S = Object(n.c)(k),
-				N = e => ({
+				k = Object(n.c)(_),
+				S = e => ({
 					onBottomViewed: (t, s) => e(l.c(t, s)),
 					onFirstPostChanged: t => e(Object(c.a)(t)),
 					adBrandSafetyStatusReceived: t => {
@@ -9913,10 +9892,10 @@
 					},
 					surveyTriggerScrollCounted: () => e(Object(m.i)())
 				}),
-				I = e => Object(h.b)({
+				N = e => Object(h.b)({
 					...e
 				}),
-				P = (e, t, s, r) => {
+				I = (e, t, s, r) => {
 					const {
 						listingKey: n,
 						hostPostData: a,
@@ -9924,14 +9903,14 @@
 					} = r;
 					return Object(b.h)(e, t, "post", n, a, o, void 0)
 				},
-				w = Object(r.b)(S, N, (e, t, s) => ({
+				P = Object(r.b)(k, S, (e, t, s) => ({
 					...e,
 					...t,
 					...s,
-					postComponentForLayout: I,
-					postClickEventFactory: P
+					postComponentForLayout: N,
+					postClickEventFactory: I
 				}));
-			t.a = e => Object(u.c)(_(w(e)))
+			t.a = e => Object(u.c)(j(P(e)))
 		},
 		"./src/reddit/connectors/SearchPost/searchSyntaxHighlight.tsx": function(e, t, s) {
 			"use strict";
@@ -11309,4 +11288,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.ad5c3da0fa73a9c8ecb9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.f178ec9aeb31182c9954.js.map
