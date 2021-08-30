@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.fe7e742bc560533a7f22.js
-// Retrieved at 8/30/2021, 9:40:09 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.097f1dce7e04204373ff.js
+// Retrieved at 8/30/2021, 10:10:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -10069,7 +10069,7 @@
 				}), e => ({
 					onClickOutsideOverlay: t => e(Object(h.b)(t)),
 					onUnpinSubscriptions: () => e(Object(_.j)()),
-					onPostDismissTrigger: () => e(Object(S.g)())
+					onPostDismissTrigger: () => e(Object(S.h)())
 				})),
 				nm = (e, t) => !(!e.state || !e.state[Yo.a.IsOverlay] || t === e);
 			class sm extends m.a.Component {
@@ -17539,7 +17539,7 @@
 									}(s || e || n || t) && (Qe.eb(), Qe.ib(), Qe.gb(), Qe.fb())
 								}
 								Object(ps.a)(c.getState()) && (null === (e = null == n ? void 0 : n.locationState) || void 0 === e ? void 0 : e.clickId) && ms.d[n.locationState.clickId] && !ms.d[n.locationState.clickId].completed && ("visible" !== document.visibilityState ? Object(ms.b)(n.locationState.clickId) : Object(ms.c)(n.locationState.clickId))
-							}), Object(Qn.g)(c.getState()) && xn(c.getState), c.dispatch(Object(ie.j)())
+							}), Object(Qn.g)(c.getState()) && xn(c.getState), c.dispatch(Object(ie.k)())
 						}), window.history.scrollRestoration = "manual", Xn.a.attachStore(c), c.dispatch(Object(re.b)(A.a.PageLoad)), Object(Ut.j)(c.getState()) && c.dispatch(Object(ds.e)()), Object(Vn.b)(c.getState())) {
 						const e = Qe.q(null === (d = c.getState().user.account) || void 0 === d ? void 0 : d.id);
 						c.dispatch(Object(oe.C)({
@@ -20188,4 +20188,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePo~5f1ac562", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250", "Governance~ModListing~Reddit~Subreddit", "Chat~Governance~Reddit", "Governance~Reddit~reddit-components-MediumPost", "Reddit~StandalonePostPage~reddit-components-MediumPost", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.fe7e742bc560533a7f22.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.097f1dce7e04204373ff.js.map

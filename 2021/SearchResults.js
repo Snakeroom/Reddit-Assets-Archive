@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.e96a713af92fc8efb0f1.js
-// Retrieved at 8/23/2021, 9:30:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.a7de2dfa70de89273edb.js
+// Retrieved at 8/30/2021, 10:10:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -9912,7 +9912,7 @@
 					trackOnPostExitedViewport: (t, s, r, n, a) => {
 						e(d.O(t, r, n, a))
 					},
-					surveyTriggerScrollCounted: () => e(Object(m.h)())
+					surveyTriggerScrollCounted: () => e(Object(m.i)())
 				}),
 				I = e => Object(h.b)({
 					...e
@@ -10837,7 +10837,7 @@
 					viewTreatment: S.m
 				}),
 				F = e => ({
-					searchViewedTrigger: () => e(Object(u.f)())
+					searchViewedTrigger: () => e(Object(u.g)())
 				}),
 				M = Object(c.b)(R, F);
 			class A extends i.a.Component {
@@ -11310,4 +11310,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.e96a713af92fc8efb0f1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.a7de2dfa70de89273edb.js.map

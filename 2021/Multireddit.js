@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.1fb1c301b03547f1fb0b.js
-// Retrieved at 8/23/2021, 8:10:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.13e6663797c64d5a3f3c.js
+// Retrieved at 8/30/2021, 10:10:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -6565,7 +6565,7 @@
 					trackOnPostExitedViewport: (t, n, s, r, o) => {
 						e(d.O(t, s, r, o))
 					},
-					surveyTriggerScrollCounted: () => e(Object(u.h)())
+					surveyTriggerScrollCounted: () => e(Object(u.i)())
 				}),
 				T = e => Object(h.b)({
 					...e
@@ -8199,4 +8199,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.1fb1c301b03547f1fb0b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.13e6663797c64d5a3f3c.js.map
