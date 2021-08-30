@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Powerups.7476dd5078e4c8bfeb45.js
-// Retrieved at 8/18/2021, 12:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Powerups.33beaebc62ae7242e713.js
+// Retrieved at 8/30/2021, 11:10:18 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Powerups"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, a, t) {
@@ -477,6 +477,7 @@
 				powerupsMarketingImage: "_2fhpicvjBRUQh2FrmS145-",
 				fallbackStaticImage: "_20svk_IXXvk6YtibBOeP7m",
 				heading: "_1KZo5pqbPxIDnKlhUQ1iCV",
+				isNightmodeOn: "_1AMPSEEofXw60FMrbdtq5e",
 				snoo: "yX-s6dxc0xlmMAnHxYVzy",
 				subheading: "tJ01nrUeIibPLtvHf4n1Z",
 				description: "_86QWvEglWWuqLFZMfXGgG",
@@ -522,12 +523,12 @@
 				h = t("./src/reddit/hooks/useTracking.ts"),
 				g = t("./src/reddit/icons/svgs/Close/index.tsx"),
 				w = t("./src/reddit/icons/svgs/SnooFacepalm/index.tsx"),
-				k = t("./src/reddit/featureFlags/subredditPoints.ts"),
-				_ = t("./src/reddit/selectors/moderatorPermissions.ts"),
+				_ = t("./src/reddit/featureFlags/subredditPoints.ts"),
+				k = t("./src/reddit/selectors/moderatorPermissions.ts"),
 				b = t("./src/reddit/selectors/user.ts"),
 				E = t("./src/reddit/selectors/gold/powerups/index.ts");
 			const v = e => {
-				const a = Object(_.a)(e);
+				const a = Object(k.a)(e);
 				if (!a) return null;
 				const t = Object(b.G)(e),
 					n = [];
@@ -537,7 +538,7 @@
 					const s = Object(E.g)(e, {
 						subredditId: l
 					});
-					k.b.has(a.name) || a.isNSFW || a.subscribers < 1e3 && !t || n.push({
+					_.b.has(a.name) || a.isNSFW || a.subscribers < 1e3 && !t || n.push({
 						id: l,
 						displayText: a.displayText,
 						hasPowerups: s
@@ -650,7 +651,7 @@
 					i = null == o ? void 0 : o.every(({
 						hasPowerups: e
 					}) => e),
-					[k, _] = Object(l.useState)(o && c ? [o[0].id] : []),
+					[_, k] = Object(l.useState)(o && c ? [o[0].id] : []),
 					[b, E] = Object(l.useState)(!1),
 					[N, f] = Object(l.useState)(!1),
 					[y, S] = Object(l.useState)(!1);
@@ -726,8 +727,8 @@
 				}, j), s.a.createElement("h2", {
 					className: q.a.subtitleText
 				}, F)), !c && s.a.createElement(P, {
-					onChange: _,
-					subredditIdsSelected: k,
+					onChange: k,
+					subredditIdsSelected: _,
 					subredditsInfo: o,
 					wasSuccessful: N,
 					allEnabled: i
@@ -740,7 +741,7 @@
 				}, M._("Something went wrong.", null, {
 					hk: "N6RFp"
 				}))), !N && !i && s.a.createElement(I, {
-					disabled: 0 === k.length,
+					disabled: 0 === _.length,
 					onClick: async () => {
 						n((e => a => ({
 							...d.defaults(a),
@@ -750,8 +751,8 @@
 							powerups: {
 								subredditIds: e.join(",")
 							}
-						}))(k)), E(!0);
-						const e = (await Promise.all(k.map(x))).every(({
+						}))(_)), E(!0);
+						const e = (await Promise.all(_.map(x))).every(({
 							success: e
 						}) => e);
 						f(e), S(!e), E(!1)
@@ -784,7 +785,7 @@
 			}), s.a.createElement("div", {
 				className: Object(o.a)(q.a.circle, q.a.lineCircle),
 				style: {
-					backgroundImage: `url(${n.a.assetPath}/img/powerups/linecircle.png)`
+					backgroundImage: `url(${n.a.assetPath}/img/powerups/linecircle-blue.png)`
 				}
 			}), s.a.createElement("div", {
 				className: Object(o.a)(q.a.circle, q.a.circleOrangeHollow)
@@ -1004,22 +1005,25 @@
 				className: Object(o.a)(J.a.faqQuestionMark, J.a.faqQuestionMarkLeft)
 			}), s.a.createElement("div", {
 				className: Object(o.a)(J.a.faqQuestionMark, J.a.faqQuestionMarkBottomRight)
-			})), ne = () => s.a.createElement("div", {
-				className: J.a.ctaButtonCirlcesAndBolt
-			}, s.a.createElement("div", {
-				className: J.a.circleFaqCtaStriped,
-				style: {
-					backgroundImage: `url(${n.a.assetPath}/img/powerups/linecircle.png)`
-				}
-			}), s.a.createElement("div", {
-				className: J.a.circleFaqCtaYellowBig
-			}, s.a.createElement("img", {
-				alt: "Powerup bolt",
-				className: J.a.boltInCircleFaqCtaYellow,
-				src: `${n.a.assetPath}/img/powerups/bolt.png`
-			})), s.a.createElement("div", {
-				className: J.a.circleFaqCtaCyanHollow
-			}));
+			})), ne = () => {
+				const e = Object(r.e)(b.W);
+				return s.a.createElement("div", {
+					className: J.a.ctaButtonCirlcesAndBolt
+				}, s.a.createElement("div", {
+					className: J.a.circleFaqCtaStriped,
+					style: {
+						backgroundImage: e ? `url(${n.a.assetPath}/img/powerups/linecircle-orange.png)` : `url(${n.a.assetPath}/img/powerups/linecircle-blue.png)`
+					}
+				}), s.a.createElement("div", {
+					className: J.a.circleFaqCtaYellowBig
+				}, s.a.createElement("img", {
+					alt: "Powerup bolt",
+					className: J.a.boltInCircleFaqCtaYellow,
+					src: `${n.a.assetPath}/img/powerups/bolt.png`
+				})), s.a.createElement("div", {
+					className: J.a.circleFaqCtaCyanHollow
+				}))
+			};
 			var le = t("./src/reddit/pages/Powerups/PerksSection.m.less"),
 				se = t.n(le);
 			const {
@@ -1099,7 +1103,8 @@
 			a.default = () => {
 				const e = Object(h.a)(),
 					a = Object(r.e)(v),
-					[t, i] = Object(l.useState)(!1);
+					t = Object(r.e)(b.W),
+					[i, m] = Object(l.useState)(!1);
 				Object(l.useEffect)(() => {
 					e((() => e => ({
 						...d.defaults(e),
@@ -1111,15 +1116,15 @@
 						}
 					}))())
 				}, [e]);
-				const m = () => {
+				const p = () => {
 						e((() => e => ({
 							...d.defaults(e),
 							source: "powerups_landing_page",
 							action: "click",
 							noun: "open_signup_modal"
-						}))()), i(!0)
+						}))()), m(!0)
 					},
-					p = () => i(!1);
+					g = () => m(!1);
 				return s.a.createElement(s.a.Fragment, null, s.a.createElement("div", {
 					className: ue.a.headingSection
 				}, s.a.createElement("div", {
@@ -1136,7 +1141,7 @@
 				}), s.a.createElement("div", {
 					className: Object(o.a)(ue.a.circle, ue.a.animatedCircle, ue.a.circleStriped),
 					style: {
-						backgroundImage: `url(${n.a.assetPath}/img/powerups/linecircle.png)`
+						backgroundImage: t ? `url(${n.a.assetPath}/img/powerups/linecircle-orange.png)` : `url(${n.a.assetPath}/img/powerups/linecircle-blue.png)`
 					}
 				}), s.a.createElement("div", {
 					className: Object(o.a)(ue.a.circle, ue.a.circleOrangeFull, ue.a.animatedCircle)
@@ -1155,7 +1160,9 @@
 				}, s.a.createElement("div", {
 					className: ue.a.headingText
 				}, s.a.createElement("h1", {
-					className: ue.a.heading
+					className: Object(o.a)(ue.a.heading, {
+						[ue.a.isNightmodeOn]: t
+					})
 				}, s.a.createElement(B.a, {
 					className: ue.a.snoo
 				}), "Powerups"), s.a.createElement("h2", {
@@ -1186,7 +1193,7 @@
 				})))], {
 					hk: "2FL5at"
 				})), s.a.createElement(u.h, {
-					onClick: m,
+					onClick: p,
 					disabled: !(null == a ? void 0 : a.length),
 					priority: u.b.Primary,
 					className: ue.a.ctaButton
@@ -1231,7 +1238,7 @@
 				}), s.a.createElement("div", {
 					className: Object(o.a)(ue.a.circle, ue.a.circleStepsStriped),
 					style: {
-						backgroundImage: `url(${n.a.assetPath}/img/powerups/linecircle.png)`
+						backgroundImage: t ? `url(${n.a.assetPath}/img/powerups/linecircle-orange.png)` : `url(${n.a.assetPath}/img/powerups/linecircle-blue.png)`
 					}
 				}), s.a.createElement("div", {
 					className: ue.a.powerupStep
@@ -1270,14 +1277,14 @@
 				}, de._("Once your community is powered up, the perks are unlocked for everyone to use.", null, {
 					hk: "3Fs5Gm"
 				}))))), s.a.createElement(ie, null), s.a.createElement($, {
-					openModal: m,
+					openModal: p,
 					modSubredditsInfo: a
 				}), s.a.createElement(c.a, {
 					className: ue.a.footer
-				}), t && s.a.createElement(T, {
+				}), i && s.a.createElement(T, {
 					withOverlay: !0,
-					closeModal: p,
-					onOverlayClick: p,
+					closeModal: g,
+					onOverlayClick: g,
 					className: ue.a.modalBody,
 					overlayClassName: ue.a.modalOverlay
 				}))
@@ -1285,4 +1292,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Powerups.7476dd5078e4c8bfeb45.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Powerups.33beaebc62ae7242e713.js.map
