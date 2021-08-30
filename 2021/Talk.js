@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Talk.27922c94127cfc6ed2e1.js
-// Retrieved at 8/17/2021, 12:40:11 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Talk.40b578f469f64dc1183c.js
+// Retrieved at 8/30/2021, 9:40:09 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Talk"], {
 		"./src/reddit/components/CollapsibleFAQ/index.m.less": function(e, a, t) {
@@ -357,7 +357,7 @@
 				p = t("./node_modules/react-redux/es/index.js"),
 				h = t("./node_modules/react-router-dom/esm/react-router-dom.js");
 			const _ = "https://forms.gle/U6BS6Q8dCCFy14Gw8",
-				E = "https://reddit-talk.notion.site/Reddit-Talk-Upcoming-Talks-f7388cef1c8c4449a1641f0da80e4100";
+				E = "https://reddit.zendesk.com/hc/en-us/articles/4405459143316";
 			var N = t("./src/reddit/selectors/user.ts"),
 				f = t("./src/reddit/pages/Talk/CommunitiesWithTalk.m.less"),
 				b = t.n(f);
@@ -723,4 +723,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Talk.27922c94127cfc6ed2e1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Talk.40b578f469f64dc1183c.js.map
