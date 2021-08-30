@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.6e47d4297e9442d55656.js
-// Retrieved at 8/30/2021, 12:20:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.4f7fbbdaabeb6e4cf2cf.js
+// Retrieved at 8/30/2021, 1:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48"], {
 		"./src/reddit/actions/eventPosts/index.ts": function(e, t, s) {
@@ -2106,8 +2106,8 @@
 						title: o.fbt._("This post can't be removed", null, {
 							hk: "2GbryD"
 						}),
-						body: o.fbt._("Sorry, about that. Once a prediction has been resolved, you can't remove its post.", null, {
-							hk: "1UgjHb"
+						body: o.fbt._("Sorry about that. Once a prediction has been resolved, you can't remove the post.", null, {
+							hk: "3wgNhQ"
 						}),
 						onClose: () => b(!u)
 					}), c && r.a.createElement(y.a, {
@@ -2993,8 +2993,8 @@
 					title: o.fbt._("This post can't be deleted", null, {
 						hk: "1sZ013"
 					}),
-					body: o.fbt._("Sorry, about that. Once a prediction has been resolved, you can't delete its post.", null, {
-						hk: "hkjDg"
+					body: o.fbt._("Sorry about that. Once a prediction has been resolved, you can't delete the post.", null, {
+						hk: "32l6dr"
 					}),
 					onClose: t
 				}) : i.a.createElement(ie.a, {
@@ -4671,4 +4671,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.6e47d4297e9442d55656.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.4f7fbbdaabeb6e4cf2cf.js.map
