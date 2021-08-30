@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-UserFlairManagement.f2c6968a1a8e54b0d999.js
-// Retrieved at 3/4/2021, 6:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-UserFlairManagement.316b65dddca29bfda8d0.js
+// Retrieved at 8/30/2021, 5:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-flairs-UserFlairManagement"], {
 		"./src/reddit/components/ModHub/flairs/UserFlairManagement/index.tsx": function(e, t, r) {
@@ -26,8 +26,8 @@
 			}
 			const p = Object(i.c)({
 					...u.b,
-					userFlairData: o.c,
-					userFlairSettings: o.e
+					userFlairData: o.d,
+					userFlairSettings: o.f
 				}),
 				b = Object(n.b)(p, (e, t) => ({
 					...Object(u.a)(e, t),
@@ -52,4 +52,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-UserFlairManagement.f2c6968a1a8e54b0d999.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-UserFlairManagement.316b65dddca29bfda8d0.js.map

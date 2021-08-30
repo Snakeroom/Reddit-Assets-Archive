@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/UserFlair.db0a987271bc79f29df7.js
-// Retrieved at 8/10/2021, 10:50:15 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/UserFlair.9c130c76c3f8c62e2a09.js
+// Retrieved at 8/30/2021, 5:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["UserFlair"], {
 		"./src/reddit/actions/authorFlair.ts": function(e, t, r) {
@@ -170,7 +170,7 @@
 						l = u.user.account,
 						E = l ? Object(S.e)(l) : void 0,
 						T = {
-							...Object(b.c)(u, {
+							...Object(b.d)(u, {
 								subredditId: s
 							}).displaySettings,
 							isUserEnabled: r
@@ -281,7 +281,7 @@
 						c = Object(_.T)(d, {
 							subredditId: t
 						}).name,
-						o = Object(b.c)(d, {
+						o = Object(b.d)(d, {
 							subredditId: t
 						}).templateIds;
 					if (r(g({
@@ -334,4 +334,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UserFlair.db0a987271bc79f29df7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UserFlair.9c130c76c3f8c62e2a09.js.map

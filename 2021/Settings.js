@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.864aaf3d9a18416ca8eb.js
-// Retrieved at 8/30/2021, 3:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.5ae7755c0d0d87585d47.js
+// Retrieved at 8/30/2021, 5:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, n) {
@@ -3916,7 +3916,7 @@
 					user: f.ob,
 					userFlair: (e, {
 						subredditId: t
-					}) => t ? Object(g.c)(e, {
+					}) => t ? Object(g.d)(e, {
 						subredditId: t
 					}) : void 0,
 					userIsBanned: (e, t) => !!Object(b.m)(t) && Object(b.eb)(e, t),
@@ -13959,7 +13959,7 @@
 			}));
 			var s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const o = Object(r.a)(s.jd)
+			const o = Object(r.a)(s.kd)
 		},
 		"./src/reddit/selectors/gold/productOffers.ts": function(e, t, n) {
 			"use strict";
@@ -14113,4 +14113,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.864aaf3d9a18416ca8eb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.5ae7755c0d0d87585d47.js.map

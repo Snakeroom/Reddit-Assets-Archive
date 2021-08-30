@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.c7e631deb6b5c7e2a24b.js
-// Retrieved at 8/30/2021, 4:30:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.00584bd16dc8722fde24.js
+// Retrieved at 8/30/2021, 5:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CompactPost", "Reddit~StandalonePostPage~reddit-components-MediumPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -3292,7 +3292,7 @@
 						subreddit: n
 					} = e, {
 						isSponsored: s
-					} = t, r = Object(U.a)(), a = Object(B.a)(m.tc) === m.xc.Enabled;
+					} = t, r = Object(U.a)(), a = Object(B.a)(m.uc) === m.yc.Enabled;
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return o.a.createElement(q, {
 						nowrap: e.nowrap
 					}, o.a.createElement(Q, e));
@@ -5454,7 +5454,7 @@
 				const t = a.subreddit(e),
 					n = null == t ? void 0 : t.id;
 				if (!n) return;
-				const r = Object(c.c)(e, {
+				const r = Object(c.d)(e, {
 						subredditId: n
 					}),
 					d = Object(i.i)(e),
@@ -6898,13 +6898,13 @@
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var s = n("./node_modules/reselect/es/index.js"),
-				r = n("./src/lib/initializeClient/installReducer.ts"),
-				o = n("./src/reddit/reducers/features/powerups/index.ts"),
-				a = n("./src/reddit/selectors/commentSelector.ts"),
-				i = n("./src/reddit/selectors/experiments/econ/index.ts");
-			Object(r.a)({
+				r = n("./src/reddit/selectors/commentSelector.ts"),
+				o = n("./src/reddit/selectors/experiments/econ/index.ts"),
+				a = n("./src/lib/initializeClient/installReducer.ts"),
+				i = n("./src/reddit/reducers/features/powerups/index.ts");
+			Object(a.a)({
 				features: {
-					powerups: o.a
+					powerups: i.a
 				}
 			});
 			const c = (e, {
@@ -6937,12 +6937,12 @@
 				f = (e, {
 					commentId: t
 				}) => {
-					const n = Object(a.a)(e, {
+					const n = Object(r.a)(e, {
 							commentId: t
 						}),
 						s = null == n ? void 0 : n.subredditId,
-						r = null == n ? void 0 : n.authorId;
-					return !(!s || !r) && !(!((e, {
+						a = null == n ? void 0 : n.authorId;
+					return !(!s || !a) && !(!((e, {
 						subredditId: t,
 						userId: n
 					}) => {
@@ -6950,8 +6950,8 @@
 						return t && n ? null === (o = null === (r = null === (s = e.features.powerups) || void 0 === s ? void 0 : s.usersSupportedSubreddits) || void 0 === r ? void 0 : r[n]) || void 0 === o ? void 0 : o[t] : null
 					})(e, {
 						subredditId: s,
-						userId: r
-					}) || !Object(i.h)(e))
+						userId: a
+					}) || !Object(o.h)(e))
 				}
 		},
 		"./src/reddit/selectors/goldPurchaseModals.ts": function(e, t, n) {
@@ -7055,46 +7055,49 @@
 				o = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				a = n("./src/reddit/selectors/posts.ts");
 			const i = Object(s.a)(e => Object(o.c)(e, {
-				experimentName: r.kd,
+				experimentName: r.ld,
 				experimentEligibilitySelector: o.a
-			}), a.I, (e, t) => e === r.ud.Enabled && (null == t ? void 0 : t.isCreatedFromAdsUi) || (null == t ? void 0 : t.isSponsored))
+			}), a.I, (e, t) => e === r.vd.Enabled && (null == t ? void 0 : t.isCreatedFromAdsUi) || (null == t ? void 0 : t.isSponsored))
 		},
 		"./src/reddit/selectors/userFlair.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "c", (function() {
-				return c
-			})), n.d(t, "a", (function() {
+			n.d(t, "d", (function() {
 				return d
-			})), n.d(t, "d", (function() {
+			})), n.d(t, "a", (function() {
 				return l
 			})), n.d(t, "e", (function() {
 				return u
-			})), n.d(t, "b", (function() {
+			})), n.d(t, "f", (function() {
 				return m
+			})), n.d(t, "b", (function() {
+				return p
+			})), n.d(t, "c", (function() {
+				return b
 			}));
 			var s = n("./src/lib/objectSelector/index.ts"),
 				r = n("./src/reddit/models/Flair/index.ts"),
-				o = n("./src/reddit/selectors/moderatorPermissions.ts"),
-				a = n("./src/lib/initializeClient/installReducer.ts"),
-				i = n("./src/reddit/reducers/features/userFlair/index.ts");
-			Object(a.a)({
+				o = n("./src/reddit/selectors/gold/powerups/index.ts"),
+				a = n("./src/reddit/selectors/moderatorPermissions.ts"),
+				i = n("./src/lib/initializeClient/installReducer.ts"),
+				c = n("./src/reddit/reducers/features/userFlair/index.ts");
+			Object(i.a)({
 				features: {
-					userFlair: i.a
+					userFlair: c.a
 				}
 			});
-			const c = (e, {
+			const d = (e, {
 					subredditId: t
 				}) => e.features.userFlair[t],
-				d = (e, {
-					subredditId: t
-				}) => !e.features.userFlair[t] || e.features.userFlair[t].displaySettings.isEnabled,
 				l = (e, {
 					subredditId: t
+				}) => !e.features.userFlair[t] || e.features.userFlair[t].displaySettings.isEnabled,
+				u = (e, {
+					subredditId: t
 				}) => e.features.userFlair[t] ? e.features.userFlair[t].displaySettings.position : r.b.Right,
-				u = Object(s.a)((e, {
+				m = Object(s.a)((e, {
 					subredditId: t
 				}) => {
-					const n = c(e, {
+					const n = d(e, {
 						subredditId: t
 					});
 					if (n) return {
@@ -7103,29 +7106,41 @@
 						permissions: n.permissions
 					}
 				}),
-				m = (e, {
+				p = (e, {
 					subredditId: t
 				}) => {
-					const n = d(e, {
+					const n = l(e, {
 							subredditId: t
 						}),
-						s = u(e, {
+						s = m(e, {
 							subredditId: t
 						}),
-						r = c(e, {
+						r = d(e, {
 							subredditId: t
 						});
 					if (!n || !s || !r) return !1;
 					if (r.applied) return !0;
-					const a = Object(o.g)(e, {
+					const o = Object(a.g)(e, {
 							subredditId: t
 						}),
 						{
 							canUserChange: i
 						} = s.permissions;
 					return !!r.templateIds.find(e => {
-						return !r.templates[e].modOnly || a
+						return !r.templates[e].modOnly || o
 					}) && i
+				},
+				b = (e, {
+					subredditId: t
+				}) => {
+					if (!t) return !1;
+					const n = p(e, {
+							subredditId: t
+						}),
+						s = Object(o.g)(e, {
+							subredditId: t
+						});
+					return n || s
 				}
 		},
 		"./src/reddit/selectors/userPrefs.ts": function(e, t, n) {
@@ -7200,4 +7215,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.c7e631deb6b5c7e2a24b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.00584bd16dc8722fde24.js.map

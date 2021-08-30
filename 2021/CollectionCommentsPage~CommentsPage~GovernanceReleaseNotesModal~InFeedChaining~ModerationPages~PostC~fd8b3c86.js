@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86.b4386170c5b5e62eec33.js
-// Retrieved at 8/30/2021, 3:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86.1f09f7158418d3062854.js
+// Retrieved at 8/30/2021, 5:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86"], {
 		"./src/higherOrderComponents/withMux/index.tsx": function(e, t, s) {
@@ -17,16 +17,16 @@
 			const h = Object(a.a)(e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.Uc
+					experimentName: u.Vc
 				});
-				return Object(u.le)(t) ? void 0 : t
+				return Object(u.me)(t) ? void 0 : t
 			}, e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.Vc
+					experimentName: u.Wc
 				});
-				return Object(u.le)(t) ? void 0 : t
-			}, (e, t) => e === u.Wc.Enabled && t === u.Wc.Enabled);
+				return Object(u.me)(t) ? void 0 : t
+			}, (e, t) => e === u.Xc.Enabled && t === u.Xc.Enabled);
 			var p = s("./src/config.ts");
 			var b = s("./src/reddit/selectors/user.ts");
 			const g = e => {
@@ -508,12 +508,12 @@
 					z = Object(i.useRef)(null),
 					Y = Object(i.useRef)(null),
 					[$, J] = Object(i.useState)(H ? F : -1),
-					[q, Q] = Object(i.useState)(H ? F : -1),
-					X = Object(r.a)(H),
+					[q, X] = Object(i.useState)(H ? F : -1),
+					Q = Object(r.a)(H),
 					Z = Object(r.a)(F);
 				Object(i.useEffect)(() => {
-					(void 0 !== X && X !== H && H && $ < 0 && q < 0 || void 0 !== Z && Z !== F && H && ($ > F || q < F)) && (J(D(F, 1)), Q(R(F, p.length, 1)))
-				}, [X, F, H, $, q, Z, p.length, A]);
+					(void 0 !== Q && Q !== H && H && $ < 0 && q < 0 || void 0 !== Z && Z !== F && H && ($ > F || q < F)) && (J(D(F, 1)), X(R(F, p.length, 1)))
+				}, [Q, F, H, $, q, Z, p.length, A]);
 				const ee = Object(i.useRef)(),
 					te = Object(i.useCallback)(e => {
 						e.forEach(e => {
@@ -522,7 +522,7 @@
 							} = e;
 							t ? ($ < 0 || q - $ == 0) && (ee.current = setTimeout(() => {
 								const e = R(q, p.length);
-								e !== q && Q(e)
+								e !== q && X(e)
 							}, 1e3)) : ($ < 0 || q - $ == 0) && clearTimeout(ee.current)
 						})
 					}, [$, q, p.length]);
@@ -547,7 +547,7 @@
 						const e = F + 1;
 						if (e + 1 >= q) {
 							const e = R(q, p.length);
-							e !== q && Q(e)
+							e !== q && X(e)
 						}
 						se(e), K(u.b(A, e)), K(u.d(A, e + 1)), ie(e)
 					}, [G, F, ie, se, K, A, q, p.length]),
@@ -999,8 +999,8 @@
 				$ = s("./src/reddit/selectors/media.ts"),
 				J = s("./src/reddit/selectors/postCreations.ts"),
 				q = s("./src/reddit/selectors/posts.ts"),
-				Q = s("./src/reddit/selectors/seo/index.ts"),
-				X = s("./src/reddit/components/Media/getResolution.ts"),
+				X = s("./src/reddit/selectors/seo/index.ts"),
+				Q = s("./src/reddit/components/Media/getResolution.ts"),
 				Z = s("./src/reddit/components/Media/index.m.less"),
 				ee = s.n(Z);
 
@@ -1072,7 +1072,7 @@
 					}) => Object(J.K)(e, {
 						postId: t.id
 					}),
-					shouldShowAltText: (e, t) => Object(Q.d)(e, t),
+					shouldShowAltText: (e, t) => Object(X.d)(e, t),
 					isGalleryTileLayout: (e, {
 						shouldShowGalleryTileOption: t,
 						post: s,
@@ -1274,11 +1274,11 @@
 						r = Object(F.b)(n.media.mediaMetadata || {}, Object(F.c)(i), z.p, s) + z.i, d = s
 					}
 					if (s && n.media && (n.media.type === z.o.IMAGE || n.media.type === z.o.GIFVIDEO)) {
-						const e = X.b(s, n.media.resolutions);
+						const e = Q.b(s, n.media.resolutions);
 						e && (a = e.url, d = e.width, r = e.height)
 					} else if (n && n.media && (!e.isListing || e.isExpando) && (n.media.type === z.o.IMAGE || n.media.type === z.o.GIFVIDEO)) {
 						let e;
-						(e = Object(z.J)(n.media.height, n.media.width) && Object(T.b)(n.media.height) ? X.c(n.media.height, n.media.width, n.media.resolutions) : X.a(n.media.resolutions)) && (a = e.url, d = e.width, r = e.height)
+						(e = Object(z.J)(n.media.height, n.media.width) && Object(T.b)(n.media.height) ? Q.c(n.media.height, n.media.width, n.media.resolutions) : Q.a(n.media.resolutions)) && (a = e.url, d = e.width, r = e.height)
 					}
 					if (e.isExpando)
 						if (d > t.viewportWidth) {
@@ -1350,15 +1350,15 @@
 							source: $,
 							obfuscated: J,
 							height: q,
-							width: Q,
-							needsBackgroundBlur: X
+							width: X,
+							needsBackgroundBlur: Q
 						} = this.getMediaInfo(this.props, this.state),
 						Z = {
 							showCentered: p,
 							isListing: d,
 							showFull: b,
 							height: q,
-							width: Q
+							width: X
 						},
 						ne = {
 							...Z,
@@ -1482,11 +1482,11 @@
 							}) : l.a.createElement(L.a, te({}, ne, {
 								alwaysWrapMedia: !0,
 								height: a ? q : z.j,
-								width: a ? Q : z.j * (16 / 9)
+								width: a ? X : z.j * (16 / 9)
 							}), y && l.a.createElement(S.a, {
 								childRef: this.storeChildRef,
 								height: a ? q : z.j,
-								width: a ? Q : void 0,
+								width: a ? X : void 0,
 								isListing: d,
 								isResponsive: !0,
 								onLoad: this.onIframeLoaded,
@@ -1506,9 +1506,9 @@
 							})));
 						case z.o.GIFVIDEO: {
 							let e = q,
-								t = Q;
-							return e > z.j && (t = Q / q * (e = z.j)), l.a.createElement(L.a, te({}, ne, {
-								blurSrc: X ? h.media.gifBackgroundImage : void 0
+								t = X;
+							return e > z.j && (t = X / q * (e = z.j)), l.a.createElement(L.a, te({}, ne, {
+								blurSrc: Q ? h.media.gifBackgroundImage : void 0
 							}), l.a.createElement(ce, {
 								isVisible: y
 							}, l.a.createElement(D.a, te({}, Z, {
@@ -1586,7 +1586,7 @@
 								V = this.state.viewportWidth - 2 * re;
 							let k = $;
 							return this.props.isMiniCard && !this.props.isMiniCardHQPreviews && (h.thumbnail && Object(x.a)(h.thumbnail.url) ? k = h.thumbnail.url : h.preview && Object(x.a)(h.preview.url) && (k = h.preview.url)), l.a.createElement(L.a, te({}, ne, {
-								blurSrc: X ? k : void 0,
+								blurSrc: Q ? k : void 0,
 								isExpando: !!a
 							}), l.a.createElement(ce, {
 								isVisible: y
@@ -1610,10 +1610,10 @@
 								originalSource: h.media.content
 							}))));
 						case z.o.GALLERY:
-							const J = Object(F.b)(h.media.mediaMetadata || {}, Object(F.c)(d), z.p, Q),
+							const J = Object(F.b)(h.media.mediaMetadata || {}, Object(F.c)(d), z.p, X),
 								le = Object(F.a)(h.media.gallery, h.isSponsored);
 							return l.a.createElement(L.a, te({}, ne, {
-								blurSrc: X ? $ : void 0,
+								blurSrc: Q ? $ : void 0,
 								isExpando: !!a,
 								maxGalleryHeight: J + le,
 								className: ee.a.galleryMediaContainer,
@@ -1970,4 +1970,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86.b4386170c5b5e62eec33.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86.1f09f7158418d3062854.js.map

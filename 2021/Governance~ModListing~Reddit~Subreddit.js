@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.4f24ad3e05164d80a562.js
-// Retrieved at 8/30/2021, 3:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.5add6c7c5bd30967e3e8.js
+// Retrieved at 8/30/2021, 5:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~Subreddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, r) {
@@ -819,7 +819,7 @@
 			})), r.d(t, "g", (function() {
 				return Q
 			})), r.d(t, "c", (function() {
-				return J
+				return Z
 			})), r.d(t, "f", (function() {
 				return te
 			})), r.d(t, "b", (function() {
@@ -1057,7 +1057,7 @@
 						if (d instanceof Error) throw d;
 						o(Object(f.i)(d))
 					}
-				}, Z = Object(d.a)(R.b), J = (e, t, r) => async (o, i, c) => {
+				}, J = Object(d.a)(R.b), Z = (e, t, r) => async (o, i, c) => {
 					const a = i(),
 						l = a.structuredStyles.models[e] || {},
 						d = a.structuredStyles.draft,
@@ -1068,12 +1068,12 @@
 								...n()(d, r),
 								...t
 							};
-						o(Z({
+						o(J({
 							subredditId: e,
 							styles: i
 						}))
 					} else {
-						o(Z({
+						o(J({
 							subredditId: e,
 							styles: l
 						}))
@@ -4515,9 +4515,9 @@
 					experimentName: n.Bb,
 					experimentEligibilitySelector: e => a(e, t)
 				}), e => e),
-				d = e => e === n.Zd.NoCommunityWidgets,
-				u = e => e === n.Zd.NoRulesModerators,
-				f = e => e === n.Zd.RelatedPostsDu
+				d = e => e === n.ae.NoCommunityWidgets,
+				u = e => e === n.ae.NoRulesModerators,
+				f = e => e === n.ae.RelatedPostsDu
 		},
 		"./src/reddit/selectors/tooltip.ts": function(e, t, r) {
 			"use strict";
@@ -4531,4 +4531,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.4f24ad3e05164d80a562.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.5add6c7c5bd30967e3e8.js.map

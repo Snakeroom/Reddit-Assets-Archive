@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.443e2cde89d2fdece1cc.js
-// Retrieved at 8/30/2021, 4:30:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.59f5b1ea90c040756181.js
+// Retrieved at 8/30/2021, 5:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, r) {
@@ -1480,7 +1480,7 @@
 						subreddit: r
 					} = e, {
 						isSponsored: n
-					} = t, s = Object(U.a)(), i = Object(B.a)(m.tc) === m.xc.Enabled;
+					} = t, s = Object(U.a)(), i = Object(B.a)(m.uc) === m.yc.Enabled;
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return o.a.createElement(q, {
 						nowrap: e.nowrap
 					}, o.a.createElement(X, e));
@@ -3616,40 +3616,43 @@
 		},
 		"./src/reddit/selectors/userFlair.ts": function(e, t, r) {
 			"use strict";
-			r.d(t, "c", (function() {
-				return c
-			})), r.d(t, "a", (function() {
+			r.d(t, "d", (function() {
 				return d
-			})), r.d(t, "d", (function() {
+			})), r.d(t, "a", (function() {
 				return l
 			})), r.d(t, "e", (function() {
 				return u
-			})), r.d(t, "b", (function() {
+			})), r.d(t, "f", (function() {
 				return m
+			})), r.d(t, "b", (function() {
+				return p
+			})), r.d(t, "c", (function() {
+				return f
 			}));
 			var n = r("./src/lib/objectSelector/index.ts"),
 				s = r("./src/reddit/models/Flair/index.ts"),
-				o = r("./src/reddit/selectors/moderatorPermissions.ts"),
-				i = r("./src/lib/initializeClient/installReducer.ts"),
-				a = r("./src/reddit/reducers/features/userFlair/index.ts");
-			Object(i.a)({
+				o = r("./src/reddit/selectors/gold/powerups/index.ts"),
+				i = r("./src/reddit/selectors/moderatorPermissions.ts"),
+				a = r("./src/lib/initializeClient/installReducer.ts"),
+				c = r("./src/reddit/reducers/features/userFlair/index.ts");
+			Object(a.a)({
 				features: {
-					userFlair: a.a
+					userFlair: c.a
 				}
 			});
-			const c = (e, {
+			const d = (e, {
 					subredditId: t
 				}) => e.features.userFlair[t],
-				d = (e, {
-					subredditId: t
-				}) => !e.features.userFlair[t] || e.features.userFlair[t].displaySettings.isEnabled,
 				l = (e, {
 					subredditId: t
+				}) => !e.features.userFlair[t] || e.features.userFlair[t].displaySettings.isEnabled,
+				u = (e, {
+					subredditId: t
 				}) => e.features.userFlair[t] ? e.features.userFlair[t].displaySettings.position : s.b.Right,
-				u = Object(n.a)((e, {
+				m = Object(n.a)((e, {
 					subredditId: t
 				}) => {
-					const r = c(e, {
+					const r = d(e, {
 						subredditId: t
 					});
 					if (r) return {
@@ -3658,31 +3661,43 @@
 						permissions: r.permissions
 					}
 				}),
-				m = (e, {
+				p = (e, {
 					subredditId: t
 				}) => {
-					const r = d(e, {
+					const r = l(e, {
 							subredditId: t
 						}),
-						n = u(e, {
+						n = m(e, {
 							subredditId: t
 						}),
-						s = c(e, {
+						s = d(e, {
 							subredditId: t
 						});
 					if (!r || !n || !s) return !1;
 					if (s.applied) return !0;
-					const i = Object(o.g)(e, {
+					const o = Object(i.g)(e, {
 							subredditId: t
 						}),
 						{
 							canUserChange: a
 						} = n.permissions;
 					return !!s.templateIds.find(e => {
-						return !s.templates[e].modOnly || i
+						return !s.templates[e].modOnly || o
 					}) && a
+				},
+				f = (e, {
+					subredditId: t
+				}) => {
+					if (!t) return !1;
+					const r = p(e, {
+							subredditId: t
+						}),
+						n = Object(o.g)(e, {
+							subredditId: t
+						});
+					return r || n
 				}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.443e2cde89d2fdece1cc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.59f5b1ea90c040756181.js.map
