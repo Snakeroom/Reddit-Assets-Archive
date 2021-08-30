@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.b0ef2453eda90a2cbcba.js
-// Retrieved at 8/23/2021, 9:30:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.15bf12d97460d3712082.js
+// Retrieved at 8/30/2021, 9:20:23 AM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var n, a, r = o[0], s = o[1], c = o[2], l = 0, P = []; l < r.length; l++) a = r[l], Object.prototype.hasOwnProperty.call(d, a) && d[a] && P.push(d[a][0]), d[a] = 0;
@@ -1326,7 +1326,7 @@
 						"translations/es_MX-json": "1b0273cebeb68f5ac226",
 						"translations/fr_FR-json": "0002ed4cc98209b2859c",
 						"translations/it_IT-json": "b00d280332c3f41e934d",
-						"translations/pseudo_ext-json": "c32ea9f4fe575a2a00d3",
+						"translations/pseudo_ext-json": "a514bc35eb6da4cf5208",
 						"translations/pseudo_long-json": "222508efd64bc4b89755",
 						"translations/pseudo_short-json": "3d1d0582d08c4611387e",
 						"translations/pt_BR-json": "e6f3d2f9de274e586efb",
@@ -1349,7 +1349,7 @@
 						HarbergerTaxManageModal: "c3188c4beb720d38bde6",
 						SubredditPremiumUploadModal: "e91aa4ec07fb9877143d",
 						"vendors~PostCreation": "5cdc10400d06417234d8",
-						PostCreation: "7f44d47cfd88e5f537f4",
+						PostCreation: "0242def518c6dc32243c",
 						"vendors~ModStatsChart~Settings": "4756d25d069e14bb198b",
 						Settings: "945437c96830f8f9383b",
 						"vendors~ModerationPages": "39e50d1662977fa3b008",
@@ -1364,9 +1364,9 @@
 						"vendors~ExportTheme~ImportTheme": "798a308dcfca0dc5f6b9",
 						ExportTheme: "22be1ab3948c3464e2ac",
 						ImportTheme: "099317721ef0b4bccdaf",
-						ModListing: "6823dbff8d3b88d6d15d",
+						ModListing: "b31854a0024b5863ecca",
 						"vendors~Subreddit": "aa0cc290849b09621187",
-						Subreddit: "cec5a0c5266a49ed8c5c",
+						Subreddit: "6a3b8d42db5527cb84a7",
 						"vendors~LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit": "535de0accacdcafdf525",
 						"LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit": "93edde7d3fd5d09e65ea",
 						PublicAccessNetwork: "8cd2b6443ddefd7847bd",
@@ -1577,4 +1577,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.b0ef2453eda90a2cbcba.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.15bf12d97460d3712082.js.map
