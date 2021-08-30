@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.7d9190866e06a89950b0.js
-// Retrieved at 8/30/2021, 3:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.c7e631deb6b5c7e2a24b.js
+// Retrieved at 8/30/2021, 4:30:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CompactPost", "Reddit~StandalonePostPage~reddit-components-MediumPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -4104,26 +4104,26 @@
 				endpoint: `${s.a.snoovatarUrl}/api/snoovatar`,
 				method: r.ib.POST,
 				headers: {
-					"Content-Type": "application/json "
+					"Content-Type": "application/json ",
+					"X-CSRF-Token": d
 				},
-				data: JSON.stringify({
-					accessories: t,
+				data: {
+					accessory_ids: t,
 					styles: n,
-					options: c,
-					csrf_token: d
-				})
+					...c
+				}
 			}), l = {
-				id: "moto_suit_body_0009",
-				section_id: "top_body_tops",
-				customizable_classes: ["jacket", "body"],
-				capability_required: null,
-				state: "enabled",
+				id: "achievement_head_accessory_012",
+				section_id: "head_accessories",
 				assets: [{
-					accessory_id: "moto_suit_body_0009",
-					image_url: "https://i.redd.it/snoovatar/accessory_assets/b0DYZ1JoBEc_moto_suit_body_0009.svg",
-					slot: 40
+					accessory_id: "achievement_head_accessory_012",
+					slot: 80,
+					image_url: "https://i.redd.it/snoovatar/accessory_assets/r13ZdtEfXFM_achievement_head_accessory_012.svg"
 				}],
-				tags: ["closet_reenabled:2021-06-23"],
+				customizable_classes: [],
+				capability_required: null,
+				state: "DISABLED",
+				tags: ["achievement"],
 				available_for_closet: !0
 			}
 		},
@@ -5417,16 +5417,16 @@
 				f = b("view"),
 				_ = b("click"),
 				h = b("dismiss"),
-				E = (e, t, n = "anniversary") => () => s => ({
-					source: n,
-					action: e,
-					noun: t,
+				E = (e, t, n) => () => s => ({
+					source: e,
+					action: t,
+					noun: n,
 					...o.defaults(s),
 					snoovatar: o.snoovatarActiveForBuilderEvent(s)
 				}),
-				v = E("view", "anniversary", "avatar"),
-				O = E("click", "close"),
-				x = E("click", "equip")
+				v = E("anniversary_achievement", "view", "anniversary_achievement"),
+				O = E("anniversary_achievement", "click", "close"),
+				x = E("anniversary_achievement", "click", "equip")
 		},
 		"./src/reddit/helpers/trackers/userFlair.ts": function(e, t, n) {
 			"use strict";
@@ -7200,4 +7200,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.7d9190866e06a89950b0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.c7e631deb6b5c7e2a24b.js.map
