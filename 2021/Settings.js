@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.a041932b28b4793ca829.js
-// Retrieved at 8/30/2021, 12:20:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.1f566188671efc0d0fe9.js
+// Retrieved at 8/30/2021, 2:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, n) {
@@ -12389,8 +12389,8 @@
 					label: s.fbt._("Collapse potentially disruptive comments", null, {
 						hk: "2lkG3p"
 					}),
-					subtext: s.fbt._("Automatically collapse comments that are potentially rude or disrespectful by selecting the sensitivity level you're most comfortable with—selecting Low will collapse the least, High will collapse the most.", null, {
-						hk: "ciUOe"
+					subtext: s.fbt._("Automatically collapse comments that are potentially rude or disrespectful by selecting the sensitivity level you're most comfortable with - selecting Low will collapse the least, High will collapse the most.", null, {
+						hk: "sPL2l"
 					}),
 					onChange: e => x(e, "badCommentAutocollapse")
 				}) : null, j ? ((e, t, n, r, a, i, c, l, d, u, m, p) => o.a.createElement(o.a.Fragment, null, o.a.createElement(Oe.a, null, s.fbt._("Privacy", null, {
@@ -14113,4 +14113,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.a041932b28b4793ca829.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.1f566188671efc0d0fe9.js.map
