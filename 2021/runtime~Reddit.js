@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.3742a8231bd24ca53614.js
-// Retrieved at 8/30/2021, 12:20:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.75785e8aa2912cb960bd.js
+// Retrieved at 8/30/2021, 1:00:08 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var n, a, r = o[0], s = o[1], c = o[2], l = 0, P = []; l < r.length; l++) a = r[l], Object.prototype.hasOwnProperty.call(d, a) && d[a] && P.push(d[a][0]), d[a] = 0;
@@ -1335,7 +1335,7 @@
 						"translations/es_MX-json": "dc54e59d8f049ee3424d",
 						"translations/fr_FR-json": "b902c0ea6127b5f3ca87",
 						"translations/it_IT-json": "12da574cc5fb054e6dff",
-						"translations/pseudo_ext-json": "306d4e7f6e499423e205",
+						"translations/pseudo_ext-json": "c44a171bd94698da50c9",
 						"translations/pseudo_long-json": "e8d9b77a39449456237f",
 						"translations/pseudo_short-json": "4e546e3ff95bed9c393a",
 						"translations/pt_BR-json": "44c41ce08a2420f7191d",
@@ -1465,7 +1465,7 @@
 						"chat-components-FormBuilder": "3ef82adafcbf0360edb8",
 						"ChatMessageInput~ChatPost": "5e1cb7b573378c1beb64",
 						ChatPost: "5a93094d783e426854d3",
-						CommentsPageNativeAd: "c110ef7f25d597cfe13d",
+						CommentsPageNativeAd: "f28b6bf7acd8c7acae55",
 						EconomicsSubredditPremiumSidebarCards: "cc82171f84453aa7490c",
 						HarbergerTaxBannerPurchaseCTA: "c63a6024bc350f7780f7",
 						ReredditLink: "0809c4e06cc108fe7650",
@@ -1586,4 +1586,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.3742a8231bd24ca53614.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.75785e8aa2912cb960bd.js.map

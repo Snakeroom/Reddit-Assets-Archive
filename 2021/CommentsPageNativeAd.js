@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.c110ef7f25d597cfe13d.js
-// Retrieved at 8/30/2021, 12:20:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.f28b6bf7acd8c7acae55.js
+// Retrieved at 8/30/2021, 1:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPageNativeAd"], {
 		"./src/reddit/components/CommentsPageNativeAd/index.m.less": function(e, t, s) {
@@ -193,49 +193,40 @@
 				checkCommentsActive() {
 					var e, t, s;
 					const {
-						post: o
+						post: r
 					} = this.props;
-					let n = Object(m.a)(o);
-					return o.media && Object(u.E)(o.media) && (null === (s = null === (t = null === (e = null == o ? void 0 : o.media) || void 0 === e ? void 0 : e.gallery) || void 0 === t ? void 0 : t.items[0]) || void 0 === s ? void 0 : s.displayUrl) && (n = o.media.gallery.items[0].displayUrl), o.source && o.isLocked ? a.a.createElement(j.b, {
+					let o = Object(m.a)(r);
+					return r.media && Object(u.E)(r.media) && (null === (s = null === (t = null === (e = null == r ? void 0 : r.media) || void 0 === e ? void 0 : e.gallery) || void 0 === t ? void 0 : t.items[0]) || void 0 === s ? void 0 : s.displayUrl) && (o = r.media.gallery.items[0].displayUrl), r.source ? a.a.createElement(j.b, {
 						className: L.a.styledOutboundLink,
-						href: o.source.url,
-						postId: o.id,
-						isSponsored: o.isSponsored,
-						source: o.source
-					}, n) : a.a.createElement(i.a, {
-						className: L.a.styledOutboundLink,
-						rel: "nofollow",
-						"data-click-id": "comments",
-						"data-test-id": y.a,
-						to: this.props.isOverlay ? Object(p.a)(o.permalink, !0) : Object(D.b)(o.permalink),
-						onClick: this.props.onClick
-					}, r.fbt._("Join the conversation", null, {
-						hk: "45BFWV"
-					}))
+						href: r.source.url,
+						postId: r.id,
+						isSponsored: r.isSponsored,
+						source: r.source
+					}, o) : null
 				}
 				render() {
 					const {
 						adHeaderVariant: e,
 						eventFactory: t,
 						isExpanded: s,
-						formatTitle: r,
-						iconUrl: o,
-						inSubredditOrProfile: n,
-						isOverlay: i,
-						poll: c,
-						post: l,
-						redditStyle: m,
-						scrollerItemRef: p,
-						showMedia: x
+						formatTitle: o,
+						iconUrl: n,
+						inSubredditOrProfile: c,
+						isOverlay: l,
+						poll: m,
+						post: x,
+						redditStyle: j,
+						scrollerItemRef: P,
+						showMedia: N
 					} = this.props;
-					return l.isBlank ? a.a.createElement(h.default, {
-						postId: l.id
+					return x.isBlank ? a.a.createElement(h.default, {
+						postId: x.id
 					}) : a.a.createElement("div", null, a.a.createElement("div", {
 						className: L.a.commentsSpacer
 					}), a.a.createElement(f.a, {
 						className: L.a.postContainer,
-						isOverlay: i,
-						post: l,
+						isOverlay: l,
+						post: x,
 						eventFactory: t
 					}, a.a.createElement(v.a, {
 						"data-click-id": "background"
@@ -245,41 +236,50 @@
 						className: L.a.content,
 						"data-click-id": "body"
 					}, a.a.createElement(A, {
-						author: l.author,
-						iconUrl: o,
+						author: x.author,
+						iconUrl: n,
 						adHeaderVariant: e,
 						greyTextColor: Object(E.e)(this.props)
 					}), a.a.createElement("div", {
 						className: L.a.contentRow
-					}, !(n && !x) && a.a.createElement(U, {
-						isMeta: l.isMeta,
-						post: l,
-						redditStyle: m,
-						isVideo: l.media && Object(u.L)(l.media),
-						scrollerItemRef: p
+					}, !(c && !N) && a.a.createElement(U, {
+						isMeta: x.isMeta,
+						post: x,
+						redditStyle: j,
+						isVideo: x.media && Object(u.L)(x.media),
+						scrollerItemRef: P
 					}), a.a.createElement("div", {
 						className: L.a.contentColumn
 					}, a.a.createElement(O.c, {
-						format: r,
+						format: o,
 						outboundLinkClassName: L.a.outboundLink,
 						className: L.a.postTitle,
-						poll: c,
-						post: l,
-						redditStyle: m,
+						poll: m,
+						post: x,
+						redditStyle: j,
 						size: 3,
-						isOverlay: i,
+						isOverlay: l,
 						isCommentsPage: !1,
 						isCommentsPageAd: !0
-					}), l.permalink && a.a.createElement(b.a, {
+					}), !x.isLocked && a.a.createElement(i.a, {
+						className: L.a.styledOutboundLink,
+						rel: "nofollow",
+						"data-click-id": "comments",
+						"data-test-id": y.a,
+						to: this.props.isOverlay ? Object(p.a)(x.permalink, !0) : Object(D.b)(x.permalink),
+						onClick: this.props.onClick
+					}, r.fbt._("Join the conversation", null, {
+						hk: "45BFWV"
+					})), x.permalink && a.a.createElement(b.a, {
 						className: L.a.adLinkWrapper
-					}, this.checkCommentsActive(), l.callToAction && l.source && l.source.url && a.a.createElement(g.a, {
-						href: l.source.url.replace(d.a.redditUrl, ""),
-						isSponsored: l.isSponsored,
-						source: l.source,
-						postId: l.id
-					}, l.callToAction)))), a.a.createElement("div", {
+					}, this.checkCommentsActive(), x.callToAction && x.source && x.source.url && a.a.createElement(g.a, {
+						href: x.source.url.replace(d.a.redditUrl, ""),
+						isSponsored: x.isSponsored,
+						source: x.source,
+						postId: x.id
+					}, x.callToAction)))), a.a.createElement("div", {
 						className: L.a.spacer
-					}), a.a.createElement(C.d, null))), Object(k.a)(l, L.a, p, s, !1, !1))), a.a.createElement("div", {
+					}), a.a.createElement(C.d, null))), Object(k.a)(x, L.a, P, s, !1, !1))), a.a.createElement("div", {
 						className: L.a.commentsSpacer
 					}))
 				}
@@ -521,4 +521,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.c110ef7f25d597cfe13d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.f28b6bf7acd8c7acae55.js.map
