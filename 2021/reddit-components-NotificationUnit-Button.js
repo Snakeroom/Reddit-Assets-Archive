@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.a1ffc3d5683e0d7cddfb.js
-// Retrieved at 8/30/2021, 10:30:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.a50a8e0566d7e6fdac2b.js
+// Retrieved at 8/30/2021, 12:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-NotificationUnit-Button"], {
 		"./src/lib/makeCommentPermalink/index.ts": function(e, t, n) {
@@ -841,7 +841,7 @@
 					const d = t.filter(e => !!(null == e ? void 0 : e.trim()));
 					if (d.length) try {
 						const t = r(),
-							s = Object(a.i)(t),
+							s = Object(a.h)(t),
 							m = await (async (e, t, n, r) => {
 								const o = await Object(c.a)(e, {
 									...i,
@@ -868,7 +868,7 @@
 						s = Object(y.j)(o);
 					if (!s || !Object(O.g)(o, {
 							subredditId: e
-						}) || !Object(a.g)(o)) return;
+						})) return;
 					const c = !!Object(j.c)(o, {
 						subredditId: e,
 						userId: s.id
@@ -882,7 +882,7 @@
 					const r = n();
 					return Object(O.g)(r, {
 						subredditId: e
-					}) && Object(a.g)(r)
+					})
 				}, k = e => async (t, n) => {
 					var r;
 					const o = n(),
@@ -1504,7 +1504,7 @@
 								experimentName: s.D,
 								expEventOverride: t
 							});
-							return !!(Object(s.ke)(n) ? void 0 : n)
+							return !!(Object(s.je)(n) ? void 0 : n)
 						})(n)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -2624,14 +2624,14 @@
 			const s = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: r.hd
-					}) === r.sd.Enabled
+						experimentName: r.gd
+					}) === r.rd.Enabled
 				},
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: r.gd
-					}) === r.rd.Enabled
+						experimentName: r.fd
+					}) === r.qd.Enabled
 				}
 		},
 		"./src/reddit/selectors/moderatingComments.ts": function(e, t, n) {
@@ -2672,4 +2672,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.a1ffc3d5683e0d7cddfb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.a50a8e0566d7e6fdac2b.js.map

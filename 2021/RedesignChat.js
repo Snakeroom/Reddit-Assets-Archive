@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RedesignChat.57923a9b6358c4f36dd3.js
-// Retrieved at 8/30/2021, 10:30:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RedesignChat.09775014782026e94a9e.js
+// Retrieved at 8/30/2021, 12:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RedesignChat"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -103,8 +103,8 @@
 				}
 			}
 			var F = n("./src/chat/customMiddleware/channelsFilter.ts"),
-				Q = n("./src/chat/customMiddleware/chatThemeKey.ts"),
-				H = n("./src/chat/customMiddleware/containerSize.ts"),
+				H = n("./src/chat/customMiddleware/chatThemeKey.ts"),
+				Q = n("./src/chat/customMiddleware/containerSize.ts"),
 				$ = n("./src/chat/customMiddleware/draftMessageText.ts"),
 				Y = n("./src/chat/customMiddleware/iframeDispatcher.ts"),
 				K = n("./src/chat/customMiddleware/lastSelectedChannel.ts"),
@@ -238,7 +238,7 @@
 						routes: he.a,
 						apiContext: pe.apiContext,
 						gqlContext: xe.gqlContext
-					}), pe.middleware, X.a, W.a, Y.a, V.a, Object(Z.a)(t), H.a, Q.a, F.a, $.a, ee.a, K.a, J.a],
+					}), pe.middleware, X.a, W.a, Y.a, V.a, Object(Z.a)(t), Q.a, H.a, F.a, $.a, ee.a, K.a, J.a],
 					modifyInitialData: ({
 						initialData: t,
 						browserHistory: n
@@ -250,7 +250,7 @@
 					}) => {
 						const c = d()([...Object(b.a)(Object(r.e)(location))]);
 						n.dispatch(Object(O.d)(c)).then(() => {
-							Object(Q.c)(n)
+							Object(H.c)(n)
 						});
 						return n.dispatch(Object(_.l)()), e.listen((e, c) => {
 							const s = Object(h.a)(Object(r.e)(e), t);
@@ -749,10 +749,10 @@
 				a = n("./src/reddit/selectors/experiments/index.ts"),
 				i = n("./src/reddit/selectors/experiments/utils.ts");
 			const o = Object(c.a)(e => Object(r.c)(e, {
-					experimentName: s.Dc,
+					experimentName: s.Cc,
 					experimentEligibilitySelector: a.e
 				}), i.a),
-				d = Object(c.a)(o, e => e === s.Gc.Enabled)
+				d = Object(c.a)(o, e => e === s.Fc.Enabled)
 		},
 		"./src/reddit/selectors/experiments/inboxRedesign.ts": function(e, t, n) {
 			"use strict";
@@ -786,12 +786,12 @@
 					experimentName: s.db,
 					experimentEligibilitySelector: a.e
 				}), i.a),
-				d = Object(c.a)(o, e => e === s.Mc.Enabled),
+				d = Object(c.a)(o, e => e === s.Lc.Enabled),
 				u = Object(c.a)(e => Object(r.c)(e, {
-					experimentName: s.Fc,
+					experimentName: s.Ec,
 					experimentEligibilitySelector: a.e
 				}), i.a),
-				l = Object(c.a)(d, u, (e, t) => e && t === s.Lc.Enabled),
+				l = Object(c.a)(d, u, (e, t) => e && t === s.Kc.Enabled),
 				b = Object(c.a)(e => Object(r.c)(e, {
 					experimentName: s.gb,
 					experimentEligibilitySelector: a.e
@@ -801,14 +801,14 @@
 					experimentName: s.ab,
 					experimentEligibilitySelector: a.e
 				}), i.a),
-				p = Object(c.a)(h, e => e === s.Ic.Banner_1st_time),
-				x = Object(c.a)(h, e => e === s.Ic.Tooltip_persist),
-				j = Object(c.a)(h, e => e === s.Ic.Tooltip_1st_time),
+				p = Object(c.a)(h, e => e === s.Hc.Banner_1st_time),
+				x = Object(c.a)(h, e => e === s.Hc.Tooltip_persist),
+				j = Object(c.a)(h, e => e === s.Hc.Tooltip_1st_time),
 				f = Object(c.a)(e => Object(r.c)(e, {
 					experimentName: s.bb,
 					experimentEligibilitySelector: a.e
 				}), i.a),
-				O = Object(c.a)(f, e => e === s.Jc.ContinuousScroll),
+				O = Object(c.a)(f, e => e === s.Ic.ContinuousScroll),
 				g = Object(c.a)(e => Object(r.c)(e, {
 					experimentName: s.V,
 					experimentEligibilitySelector: a.e
@@ -819,11 +819,11 @@
 					experimentName: s.cb,
 					experimentEligibilitySelector: a.e
 				}), i.a),
-				v = Object(c.a)(_, e => e === s.Kc.Enabled)
+				v = Object(c.a)(_, e => e === s.Jc.Enabled)
 		},
 		"./src/redditGQL/operations/BadgeIndicators.json": function(e) {
 			e.exports = JSON.parse('{"id":"712476d48c90"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.57923a9b6358c4f36dd3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.09775014782026e94a9e.js.map

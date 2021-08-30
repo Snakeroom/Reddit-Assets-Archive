@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.a0486defc1cfbe3b515f.js
-// Retrieved at 8/30/2021, 10:30:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.7618270b5f42e4e890cd.js
+// Retrieved at 8/30/2021, 12:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -4206,12 +4206,12 @@
 						rtJsonElementProps: a
 					});
 					switch (r) {
-						case b.Rd.SmIcon:
+						case b.Qd.SmIcon:
 							return n.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: a
 							});
-						case b.Rd.SmIconHc:
+						case b.Qd.SmIconHc:
 							return n.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -5203,12 +5203,12 @@
 				d = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: r.Ld
+						experimentName: r.Kd
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === r.Rd.SmIcon || t === r.Rd.SmIconHc
+					return t === r.Qd.SmIcon || t === r.Qd.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -5240,4 +5240,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.a0486defc1cfbe3b515f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.7618270b5f42e4e890cd.js.map

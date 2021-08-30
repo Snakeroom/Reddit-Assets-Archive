@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.b3c6c09762d1cf02cd7e.js
-// Retrieved at 8/30/2021, 10:30:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.daa31c7f1a61290da3e2.js
+// Retrieved at 8/30/2021, 12:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./node_modules/uuid/index.js": function(e, t, n) {
@@ -493,7 +493,7 @@
 					const c = t.filter(e => !!(null == e ? void 0 : e.trim()));
 					if (c.length) try {
 						const t = o(),
-							r = Object(d.i)(t),
+							r = Object(d.h)(t),
 							l = await (async (e, t, n, o) => {
 								const s = await Object(i.a)(e, {
 									...a,
@@ -520,7 +520,7 @@
 						r = Object(O.j)(s);
 					if (!r || !Object(h.g)(s, {
 							subredditId: e
-						}) || !Object(d.g)(s)) return;
+						})) return;
 					const i = !!Object(x.c)(s, {
 						subredditId: e,
 						userId: r.id
@@ -534,7 +534,7 @@
 					const o = n();
 					return Object(h.g)(o, {
 						subredditId: e
-					}) && Object(d.g)(o)
+					})
 				}, P = e => async (t, n) => {
 					var o;
 					const s = n(),
@@ -731,7 +731,7 @@
 						i = Object(k.j)(s, {
 							subredditId: r
 						}),
-						a = Object(O.m)(s);
+						a = Object(O.l)(s);
 					if (i) return Object(k.f)(s, {
 						subredditId: r
 					});
@@ -1681,14 +1681,14 @@
 					post: A
 				}) => {
 					var G, U, z, W;
-					const Q = Object(r.e)(N.q),
+					const Q = Object(r.e)(N.p),
 						K = Object(r.e)(e => {
 							var t;
-							return (null === (t = A.pollData) || void 0 === t ? void 0 : t.isPrediction) && null !== A.pollData.resolvedOptionId && Object(N.n)(e)
+							return (null === (t = A.pollData) || void 0 === t ? void 0 : t.isPrediction) && null !== A.pollData.resolvedOptionId && Object(N.m)(e)
 						}),
 						V = Object(r.e)(e => {
 							var t;
-							return (null === (t = A.pollData) || void 0 === t ? void 0 : t.isPrediction) && Object(N.m)(e)
+							return (null === (t = A.pollData) || void 0 === t ? void 0 : t.isPrediction) && Object(N.l)(e)
 						}),
 						H = A.flair.filter(e => e.type !== y.f.Nsfw && e.type !== y.f.Spoiler).length > 0,
 						q = Object(w.b)(A),
@@ -3097,14 +3097,14 @@
 			const r = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: o.hd
-					}) === o.sd.Enabled
+						experimentName: o.gd
+					}) === o.rd.Enabled
 				},
 				i = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: o.gd
-					}) === o.rd.Enabled
+						experimentName: o.fd
+					}) === o.qd.Enabled
 				}
 		},
 		"./src/reddit/selectors/features/predictions/creation/index.ts": function(e, t, n) {
@@ -3230,4 +3230,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.b3c6c09762d1cf02cd7e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.daa31c7f1a61290da3e2.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.0dbf957ff575d387fb32.js
-// Retrieved at 8/30/2021, 10:30:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.8a73019824293bd47273.js
+// Retrieved at 8/30/2021, 12:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, o) {
@@ -1608,7 +1608,7 @@
 					const c = t.filter(e => !!(null == e ? void 0 : e.trim()));
 					if (c.length) try {
 						const t = n(),
-							r = Object(d.i)(t),
+							r = Object(d.h)(t),
 							l = await (async (e, t, o, n) => {
 								const s = await Object(a.a)(e, {
 									...i,
@@ -1635,7 +1635,7 @@
 						r = Object(x.j)(s);
 					if (!r || !Object(f.g)(s, {
 							subredditId: e
-						}) || !Object(d.g)(s)) return;
+						})) return;
 					const a = !!Object(_.c)(s, {
 						subredditId: e,
 						userId: r.id
@@ -1649,7 +1649,7 @@
 					const n = o();
 					return Object(f.g)(n, {
 						subredditId: e
-					}) && Object(d.g)(n)
+					})
 				}, T = e => async (t, o) => {
 					var n;
 					const s = o(),
@@ -4850,7 +4850,7 @@
 				return !(!t || (null == t ? void 0 : t.karma) && t.karma.fromPosts < 5 && t.karma.fromComments < 10) && Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
 					experimentName: n.hb
-				}) === n.ic
+				}) === n.hc
 			}
 		},
 		"./src/reddit/selectors/moderatingComments.ts": function(e, t, o) {
@@ -4891,4 +4891,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.0dbf957ff575d387fb32.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.8a73019824293bd47273.js.map

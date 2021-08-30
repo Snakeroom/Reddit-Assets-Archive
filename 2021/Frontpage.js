@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.d6f33fbe3f3fd39d338f.js
-// Retrieved at 8/30/2021, 10:30:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.143cdc5c13938f6f7c04.js
+// Retrieved at 8/30/2021, 12:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -1875,10 +1875,10 @@
 			}
 			var qe = n("./src/reddit/selectors/experiments/utils.ts");
 			const Ve = Object(u.a)(e => Object(Me.c)(e, {
-					experimentName: Fe.Nc,
+					experimentName: Fe.Mc,
 					experimentEligibilitySelector: Me.a
 				}), qe.a),
-				We = Object(u.a)(Ve, e => e === Fe.Pc.Enabled);
+				We = Object(u.a)(Ve, e => e === Fe.Oc.Enabled);
 			var Ge = n("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
 				He = n("./src/reddit/selectors/user.ts");
 			var Ke = n("./src/reddit/selectors/experiments/uiSimplification.ts"),
@@ -1911,7 +1911,7 @@
 							return Object(Me.c)(e, {
 								experimentEligibilitySelector: He.J,
 								experimentName: Fe.mb
-							}) === Fe.ic
+							}) === Fe.hc
 						}(e))
 					},
 					isNavbarLikeMwebEnabled: l.a,
@@ -4931,13 +4931,13 @@
 			const i = e => {
 					const t = Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: s.he
+						experimentName: s.ge
 					});
 					return t === s.I.TwoDayCooldown || t === s.I.FiveDayCooldown
 				},
 				a = e => {
 					const t = Object(o.d)(e, {
-							experimentName: s.he
+							experimentName: s.ge
 						}),
 						n = null == t ? void 0 : t.variant;
 					return n === s.I.TwoDayCooldown ? 2 : n === s.I.FiveDayCooldown ? 5 : 0
@@ -4980,8 +4980,8 @@
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: c,
 						experimentName: s.Db
-					}) === s.kc.Enabled
-				}(e) ? d.Achievements : t === s.lc.ControlBanner ? d.CommunitySpacesControl : t === s.lc.EnabledBanner ? d.CommunitySpaces : null
+					}) === s.jc.Enabled
+				}(e) ? d.Achievements : t === s.kc.ControlBanner ? d.CommunitySpacesControl : t === s.kc.EnabledBanner ? d.CommunitySpaces : null
 			}! function(e) {
 				e.Achievements = "achievements", e.CommunitySpaces = "communitySpaces", e.CommunitySpacesControl = "communitySpaces--control"
 			}(d || (d = {}))
@@ -5032,4 +5032,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.d6f33fbe3f3fd39d338f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.143cdc5c13938f6f7c04.js.map

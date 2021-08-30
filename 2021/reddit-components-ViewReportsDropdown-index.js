@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.6c212ab21ffcaaae75b4.js
-// Retrieved at 8/30/2021, 10:30:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.38769c90bb6388b1ea90.js
+// Retrieved at 8/30/2021, 12:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ViewReportsDropdown-index"], {
 		"./src/reddit/actions/comment/index.ts": function(e, t, s) {
@@ -460,7 +460,7 @@
 					const i = t.filter(e => !!(null == e ? void 0 : e.trim()));
 					if (i.length) try {
 						const t = o(),
-							r = Object(a.i)(t),
+							r = Object(a.h)(t),
 							m = await (async (e, t, s, o) => {
 								const n = await Object(d.a)(e, {
 									...c,
@@ -487,7 +487,7 @@
 						r = Object(h.j)(n);
 					if (!r || !Object(O.g)(n, {
 							subredditId: e
-						}) || !Object(a.g)(n)) return;
+						})) return;
 					const d = !!Object(j.c)(n, {
 						subredditId: e,
 						userId: r.id
@@ -501,7 +501,7 @@
 					const o = s();
 					return Object(O.g)(o, {
 						subredditId: e
-					}) && Object(a.g)(o)
+					})
 				}, _ = e => async (t, s) => {
 					var o;
 					const n = s(),
@@ -1132,14 +1132,14 @@
 			const r = e => {
 					return Object(n.c)(e, {
 						experimentEligibilitySelector: n.a,
-						experimentName: o.hd
-					}) === o.sd.Enabled
+						experimentName: o.gd
+					}) === o.rd.Enabled
 				},
 				d = e => {
 					return Object(n.c)(e, {
 						experimentEligibilitySelector: n.a,
-						experimentName: o.gd
-					}) === o.rd.Enabled
+						experimentName: o.fd
+					}) === o.qd.Enabled
 				}
 		},
 		"./src/reddit/selectors/moderatingComments.ts": function(e, t, s) {
@@ -1174,4 +1174,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.6c212ab21ffcaaae75b4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.38769c90bb6388b1ea90.js.map
