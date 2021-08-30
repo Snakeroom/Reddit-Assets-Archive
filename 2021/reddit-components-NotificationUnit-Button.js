@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.8a4fc7fbd79acdf315bd.js
-// Retrieved at 8/30/2021, 12:20:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.426711151b38a8525799.js
+// Retrieved at 8/30/2021, 3:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-NotificationUnit-Button"], {
 		"./src/lib/makeCommentPermalink/index.ts": function(e, t, n) {
@@ -563,7 +563,7 @@
 								commentId: e,
 								followState: t
 							})).ok) {
-							Object(L.vb)(null !== (m = null === (a = null === (d = o().pages) || void 0 === d ? void 0 : d.comments) || void 0 === a ? void 0 : a.followed) && void 0 !== m ? m : [], null === (u = o().user.account) || void 0 === u ? void 0 : u.id);
+							Object(L.ub)(null !== (m = null === (a = null === (d = o().pages) || void 0 === d ? void 0 : d.comments) || void 0 === a ? void 0 : a.followed) && void 0 !== m ? m : [], null === (u = o().user.account) || void 0 === u ? void 0 : u.id);
 							const e = c ? r.fbt._("Followed! You’ll receive updates when there’s new activity", null, {
 								hk: "1Dp5UH"
 							}) : r.fbt._("Unfollowed, You’ll no longer recieve updates on this comment", null, {
@@ -1040,7 +1040,7 @@
 						}),
 						kind: u.b.SuccessCommunity,
 						text: d
-					})), Object(i.sb)(o + 1)
+					})), Object(i.rb)(o + 1)
 				}
 		},
 		"./src/reddit/actions/presence.ts": function(e, t, n) {
@@ -2672,4 +2672,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.8a4fc7fbd79acdf315bd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.426711151b38a8525799.js.map

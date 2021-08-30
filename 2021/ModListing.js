@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.804a350ca6c6e1fef9f8.js
-// Retrieved at 8/30/2021, 12:20:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.8f13ddcb86c6c7704dc8.js
+// Retrieved at 8/30/2021, 3:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -691,7 +691,7 @@
 				};
 
 			function H(e) {
-				const t = m.x in e && e[m.x].toUpperCase() || "";
+				const t = m.y in e && e[m.y].toUpperCase() || "";
 				return t in i.dc && i.dc[t]
 			}
 			const W = Object(a.a)(M.c),
@@ -2699,7 +2699,7 @@
 					match: t
 				}) => Object(W.d)(t.path), ke.j, ke.d, (e, t, r, n, o) => {
 					const i = s()([...Object(l.a)(e)]),
-						a = we.x in i && i[we.x].toUpperCase(),
+						a = we.y in i && i[we.y].toUpperCase(),
 						d = "string" == typeof a && a in c.dc ? c.dc[a] : c.ec,
 						m = r ? je.e : je.d;
 					return {
@@ -4558,4 +4558,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.804a350ca6c6e1fef9f8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.8f13ddcb86c6c7704dc8.js.map

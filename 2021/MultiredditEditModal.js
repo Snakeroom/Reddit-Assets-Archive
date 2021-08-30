@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MultiredditEditModal.ec85c07745ca6491316c.js
-// Retrieved at 8/30/2021, 12:20:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MultiredditEditModal.18ec28d9eb3b4d5f4a38.js
+// Retrieved at 8/30/2021, 3:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MultiredditEditModal"], {
 		"./src/reddit/actions/multireddit/index.ts": function(e, t, i) {
@@ -297,7 +297,7 @@
 							queryParams: x
 						} = o,
 						y = Object(c.a)(h, u, x),
-						O = b.x in x && x[b.x].toUpperCase() || "",
+						O = b.y in x && x[b.y].toUpperCase() || "",
 						g = a.dc[O] || !1,
 						j = Object(I.k)(r);
 					(f || j && j.displayText) && await e(Object(m.multiredditFeedRequested)(y, (f || j.displayText).toLowerCase(), p.toLowerCase(), {
@@ -680,7 +680,7 @@
 						g = f.listings.postOrder.ids[y],
 						v = f.listings.postOrder.api.error[y],
 						w = f.listings.postOrder.api.pending[y],
-						S = b.x in e.queryParams && e.queryParams[b.x].toUpperCase() || "",
+						S = b.y in e.queryParams && e.queryParams[b.y].toUpperCase() || "",
 						E = S in c.dc && c.dc[S];
 					if (w || g && !v && !t) return void(g && (i(u.l({
 						title: Object(_.f)(r(), m)
@@ -1573,4 +1573,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MultiredditEditModal.ec85c07745ca6491316c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MultiredditEditModal.18ec28d9eb3b4d5f4a38.js.map

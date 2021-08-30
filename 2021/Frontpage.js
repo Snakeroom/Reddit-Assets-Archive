@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.06933179b37191441491.js
-// Retrieved at 8/30/2021, 12:20:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.2321e940cd43047d6a36.js
+// Retrieved at 8/30/2021, 3:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -643,7 +643,7 @@
 						l = r.listings.postOrder.ids[c],
 						u = r.listings.postOrder.api.error[c],
 						m = r.listings.postOrder.api.pending[c],
-						p = D.x in e.queryParams && e.queryParams[D.x].toUpperCase() || "",
+						p = D.y in e.queryParams && e.queryParams[D.y].toUpperCase() || "",
 						b = p in d.dc && d.dc[p];
 					if (m || l && !u && !t) return void(l && (n(A.l({
 						title: P.d()
@@ -696,7 +696,7 @@
 						l = r.platform.currentPage ? r.platform.currentPage.queryParams : {},
 						u = Object(H.a)(L.a, c, l),
 						m = r.listings.postOrder.loadMore[u],
-						p = l[D.x] ? l[D.x].toUpperCase() : "",
+						p = l[D.y] ? l[D.y].toUpperCase() : "",
 						b = p in d.dc && d.dc[p];
 					if (m) {
 						const e = r.listings.postOrder.api.pending[u],
@@ -753,7 +753,7 @@
 						} = e,
 						i = s.platform.currentPage ? s.platform.currentPage.queryParams : {},
 						a = Object(H.a)(L.a, o, i),
-						c = i[D.x] ? i[D.x].toUpperCase() : "",
+						c = i[D.y] ? i[D.y].toUpperCase() : "",
 						l = c in d.dc && d.dc[c],
 						u = Object(B.a)(s),
 						m = Object(B.b)(u);
@@ -916,7 +916,7 @@
 						A === T.Visible && t === f.a.Achievements && k(Object(b.i)())
 					}, [t, A, k]), A === T.Hidden) return null;
 				const L = () => {
-						I(T.Visible), Object(p.kb)(d.a.AVATAR_LISTING_BANNER, !1, l.b)
+						I(T.Visible), Object(p.jb)(d.a.AVATAR_LISTING_BANNER, !1, l.b)
 					},
 					D = () => {
 						k(Object(b.b)(y)), _(Object(c.b)({
@@ -1019,7 +1019,7 @@
 						[S.a.closeLight]: y
 					}),
 					onClick: () => {
-						I(T.Dismissed), Object(p.kb)(d.a.AVATAR_LISTING_BANNER, !0, l.b), t !== f.a.Achievements && k(Object(b.g)(y)), t === f.a.Achievements && k(Object(b.f)())
+						I(T.Dismissed), Object(p.jb)(d.a.AVATAR_LISTING_BANNER, !0, l.b), t !== f.a.Achievements && k(Object(b.g)(y)), t === f.a.Achievements && k(Object(b.f)())
 					}
 				}), i.a.createElement("div", {
 					className: S.a.contentWrapper
@@ -1033,7 +1033,7 @@
 					className: S.a.copyTextDescription
 				}, B)), i.a.createElement(u.h, {
 					onClick: () => {
-						Object(p.kb)(d.a.AVATAR_LISTING_BANNER, !0, l.b), t === f.a.Achievements ? O() : D()
+						Object(p.jb)(d.a.AVATAR_LISTING_BANNER, !0, l.b), t === f.a.Achievements ? O() : D()
 					},
 					className: S.a.continueButton,
 					disabled: !!C
@@ -1505,7 +1505,7 @@
 						t.ok && (e = {
 							subreddits: t.body.data.subreddits.map(e => e.name),
 							fetchedAt: Date.now()
-						}, Object(Q.Gb)(G.b.SUBREDDITS_FOR_ADOPTION_STORE, e))
+						}, Object(Q.Fb)(G.b.SUBREDDITS_FOR_ADOPTION_STORE, e))
 					}
 					return oe.cachedData = e, e ? e.subreddits : []
 				}
@@ -4452,7 +4452,7 @@
 				queryParams: t,
 				sort: n
 			}, s, r, o, i, a) => {
-				const c = w.x in t && t[w.x].toUpperCase(),
+				const c = w.y in t && t[w.y].toUpperCase(),
 					d = "string" == typeof c && c in Q.dc ? Q.dc[c] : Q.ec,
 					l = Object(p.a)(X.a, n, t),
 					u = e,
@@ -5032,4 +5032,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.06933179b37191441491.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.2321e940cd43047d6a36.js.map

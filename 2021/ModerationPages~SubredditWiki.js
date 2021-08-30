@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.f2f18df2c31d5611c3bd.js
-// Retrieved at 8/30/2021, 12:20:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.6882067f3c90b4147ef5.js
+// Retrieved at 8/30/2021, 3:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, r) {
@@ -893,7 +893,7 @@
 						subredditName: d = S.e,
 						wikiPageName: l,
 						wikiSubRoute: u
-					} = e, m = t[P.A], b = t[P.B], f = m ? Object(x.a)(m) : void 0, g = b ? Object(x.a)(b) : void 0, w = l === S.j, _ = u === S.m.Revisions;
+					} = e, m = t[P.B], b = t[P.C], f = m ? Object(x.a)(m) : void 0, g = b ? Object(x.a)(b) : void 0, w = l === S.j, _ = u === S.m.Revisions;
 					let O = !1,
 						E = !1;
 					if (r) {
@@ -4909,4 +4909,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.f2f18df2c31d5611c3bd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.6882067f3c90b4147ef5.js.map

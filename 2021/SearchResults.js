@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.f178ec9aeb31182c9954.js
-// Retrieved at 8/30/2021, 1:10:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.999e44a9f6e3a788c1aa.js
+// Retrieved at 8/30/2021, 3:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -8798,7 +8798,7 @@
 							options: t,
 							optionLabels: s,
 							value: r
-						} = C(e.queryParams, e.url, h.u, se, p.Nb, re), a = {
+						} = C(e.queryParams, e.url, h.v, se, p.Nb, re), a = {
 							"data-testid": "search-results-filter-sort",
 							options: t,
 							optionLabels: s,
@@ -8807,8 +8807,8 @@
 							value: r
 						};
 						return e.isSerpRedesignLayout ? n.a.createElement(te, ne({}, a, {
-							active: Boolean(e.queryParams[h.u]),
-							label: e.queryParams[h.u] ? s[r] : u.fbt._("Sort", null, {
+							active: Boolean(e.queryParams[h.v]),
+							label: e.queryParams[h.v] ? s[r] : u.fbt._("Sort", null, {
 								hk: "2COMme"
 							})
 						})) : n.a.createElement(G, ne({}, a, {
@@ -8822,7 +8822,7 @@
 							options: t,
 							optionLabels: s,
 							value: r
-						} = C(e.queryParams, e.url, h.x, e.isSerpRedesignLayout ? oe.slice().reverse() : oe, p.Ob, ie), a = e.tab === ae.g.Listings ? u.fbt._("Communities From", null, {
+						} = C(e.queryParams, e.url, h.y, e.isSerpRedesignLayout ? oe.slice().reverse() : oe, p.Ob, ie), a = e.tab === ae.g.Listings ? u.fbt._("Communities From", null, {
 							hk: "1oVrVu"
 						}) : u.fbt._("Posts From", null, {
 							hk: "1abcgn"
@@ -8837,8 +8837,8 @@
 							value: r
 						};
 						return e.isSerpRedesignLayout ? n.a.createElement(te, ce({}, o, {
-							active: Boolean(e.queryParams[h.x]),
-							label: e.queryParams[h.x] ? s[r] : u.fbt._("Time", null, {
+							active: Boolean(e.queryParams[h.y]),
+							label: e.queryParams[h.y] ? s[r] : u.fbt._("Time", null, {
 								hk: "3hL0P3"
 							})
 						})) : n.a.createElement(G, ce({}, o, {
@@ -11288,4 +11288,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.f178ec9aeb31182c9954.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.999e44a9f6e3a788c1aa.js.map

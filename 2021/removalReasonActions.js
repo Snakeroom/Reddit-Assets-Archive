@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/removalReasonActions.5f1fdf7385da771ba590.js
-// Retrieved at 8/30/2021, 12:20:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/removalReasonActions.efb5656fa062dd87b311.js
+// Retrieved at 8/30/2021, 3:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["removalReasonActions"], {
 		"./src/lib/makeCommentPermalink/index.ts": function(e, t, n) {
@@ -578,7 +578,7 @@
 								commentId: e,
 								followState: t
 							})).ok) {
-							Object(M.vb)(null !== (m = null === (a = null === (i = r().pages) || void 0 === i ? void 0 : i.comments) || void 0 === a ? void 0 : a.followed) && void 0 !== m ? m : [], null === (u = r().user.account) || void 0 === u ? void 0 : u.id);
+							Object(M.ub)(null !== (m = null === (a = null === (i = r().pages) || void 0 === i ? void 0 : i.comments) || void 0 === a ? void 0 : a.followed) && void 0 !== m ? m : [], null === (u = r().user.account) || void 0 === u ? void 0 : u.id);
 							const e = c ? s.fbt._("Followed! You’ll receive updates when there’s new activity", null, {
 								hk: "1Dp5UH"
 							}) : s.fbt._("Unfollowed, You’ll no longer recieve updates on this comment", null, {
@@ -1251,7 +1251,7 @@
 						}),
 						kind: u.b.SuccessCommunity,
 						text: i
-					})), Object(d.sb)(r + 1)
+					})), Object(d.rb)(r + 1)
 				}
 		},
 		"./src/reddit/actions/presence.ts": function(e, t, n) {
@@ -3194,4 +3194,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.5f1fdf7385da771ba590.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.efb5656fa062dd87b311.js.map

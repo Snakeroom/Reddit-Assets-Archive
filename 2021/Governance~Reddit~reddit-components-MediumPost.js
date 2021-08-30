@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-MediumPost.165e81d88038b463c1bc.js
-// Retrieved at 8/30/2021, 12:20:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-MediumPost.6a07e460b2dc0d55d234.js
+// Retrieved at 8/30/2021, 3:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~reddit-components-MediumPost"], {
 		"./src/lib/constants/specialMembership.ts": function(t, e, n) {
@@ -326,12 +326,12 @@
 						L = t === T;
 					if (!(t === b.f || t === b.b || L)) return;
 					if (L) return void j(m, e, n)(s, i, l);
-					0 === D(o.ob).length && Object(E.Nb)(!1);
+					0 === D(o.ob).length && Object(E.Lb)(!1);
 					let C = i();
 					if (Object(f.d)(C, {
 							listingKey: e,
 							postId: n
-						}) || Object(f.a)(C).length >= _.a || Object(E.X)() || D(o.A).length >= _.a) return;
+						}) || Object(f.a)(C).length >= _.a || Object(E.W)() || D(o.A).length >= _.a) return;
 					const A = Object(S.w)(C, {
 						listingKey: e,
 						postId: n
@@ -381,14 +381,14 @@
 						postId: n
 					})))) : Object(r.a)(Object(p.c)(R, "no_chaining", m)(C))
 				}, C = "FEED_CHAINING__CHAIN_TOGGLED", A = (Object(i.a)(C), "FEED_CHAINING__CHAINING_TOGGLED"), R = Object(i.a)(A), h = () => async t => {
-					Object(E.Nb)(!0), t(R({
+					Object(E.Lb)(!0), t(R({
 						isDismissed: !0
 					})), t(Object(l.f)(Object(l.e)(s.fbt._("You'll see this less often.", null, {
 						hk: "38LGcQ"
 					}), m.b.Undo, s.fbt._("Undo", null, {
 						hk: "4zFGDk"
 					}), async () => {
-						Object(E.Nb)(!1), t(R({
+						Object(E.Lb)(!1), t(R({
 							isDismissed: !1
 						}))
 					})))
@@ -3056,4 +3056,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-MediumPost.165e81d88038b463c1bc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-MediumPost.6a07e460b2dc0d55d234.js.map

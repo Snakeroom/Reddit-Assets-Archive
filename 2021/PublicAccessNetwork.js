@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.1e081032a7b33c84b1fe.js
-// Retrieved at 8/30/2021, 12:20:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.209c35e0c1e4efa5d08f.js
+// Retrieved at 8/30/2021, 3:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -4156,7 +4156,7 @@
 					toggleModal: e
 				}) => {
 					const t = () => {
-						q.Tb(), e()
+						q.Rb(), e()
 					};
 					return n.a.createElement(K.e, null, n.a.createElement(Z, null, n.a.createElement(X.a, null, n.a.createElement("div", null, n.a.createElement("div", {
 						className: Y.a.Title
@@ -6515,12 +6515,12 @@
 					this.props.sendEvent(Object(Ve.h)("guidebook", this.props.currentStream))
 				}
 				onOBSBannerDismissClick() {
-					q.rb(), this.setState({
+					q.qb(), this.setState({
 						shouldShowOBSBanner: !1
 					}), this.props.sendEvent(Object(Ve.g)("not_now", this.props.currentStream))
 				}
 				onOBSBannerLearnMoreClick() {
-					q.rb(), this.setState({
+					q.qb(), this.setState({
 						shouldShowOBSBanner: !1
 					}), this.props.sendEvent(Object(Ve.g)("learn_more", this.props.currentStream)), this.props.toggleOBSDownloadModal()
 				}
@@ -6528,7 +6528,7 @@
 					this.props.currentStream && this.props.sendEvent(Object(Ve.n)(this.props.currentStream, this.playbackStats))
 				}
 				handleFocusMessageInput() {
-					q.Y() || this.props.toggleIntroChatModal()
+					q.X() || this.props.toggleIntroChatModal()
 				}
 				onUpvote() {
 					this.props.currentStream && this.props.sendEvent(Object(Ve.q)(this.props.currentStream, this.playbackStats))
@@ -6624,7 +6624,7 @@
 					const t = Object(De.d)(e);
 					return Object(w.a)(t, {
 						[Pe.r]: this.props.related,
-						[Pe.w]: this.props.timestamp
+						[Pe.x]: this.props.timestamp
 					})
 				}
 				goToStream(e) {
@@ -6749,7 +6749,7 @@
 					} = e;
 				return "home" === s || "r/popular" === s ? s : "popular" === o ? "r/popular" : o ? void 0 : "home"
 			}), Cn = Object(i.a)(_n, e => {
-				const t = e.get(Pe.w);
+				const t = e.get(Pe.x);
 				if (!t) return;
 				const s = parseInt(t, 10);
 				return isNaN(s) ? void 0 : s
@@ -7100,4 +7100,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.1e081032a7b33c84b1fe.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.209c35e0c1e4efa5d08f.js.map

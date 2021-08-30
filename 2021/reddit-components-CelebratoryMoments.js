@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CelebratoryMoments.0f87c7e1eb4074cf7d1a.js
-// Retrieved at 8/18/2021, 7:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CelebratoryMoments.20e4aa5a8da9b2feedd7.js
+// Retrieved at 8/30/2021, 3:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CelebratoryMoments"], {
 		"./src/reddit/components/CelebratoryMoments/constants.ts": function(e, t, n) {
@@ -91,7 +91,7 @@
 						s(Object(i.b)()), l(b({
 							numCooldownPeriodDays: f,
 							postId: O
-						})), Object(a.Bb)(Date.now())
+						})), Object(a.Ab)(Date.now())
 					}
 				}, r.a.createElement("div", {
 					className: h.a.speechBubble
@@ -112,4 +112,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CelebratoryMoments.0f87c7e1eb4074cf7d1a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CelebratoryMoments.20e4aa5a8da9b2feedd7.js.map

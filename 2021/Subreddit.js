@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.5c2912e0bd1e1c47c59b.js
-// Retrieved at 8/30/2021, 1:10:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.bfeb62b98a85463e026a.js
+// Retrieved at 8/30/2021, 3:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~ModListing", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -1213,7 +1213,7 @@
 				} = e, n = Object(c.g)(a.a.AWARDED_LISTING_BANNER, i.f), [u, m] = Object(s.useState)(n ? w.Hidden : w.Visible);
 				if (u === w.Hidden) return null;
 				const p = () => {
-					m(w.Visible), Object(c.kb)(a.a.AWARDED_LISTING_BANNER, !1, i.f)
+					m(w.Visible), Object(c.jb)(a.a.AWARDED_LISTING_BANNER, !1, i.f)
 				};
 				return u === w.Dismissed ? r.a.createElement("div", {
 					className: Object(o.a)(x.a.dismissedContainer, t)
@@ -1234,7 +1234,7 @@
 				})), r.a.createElement(j, null), r.a.createElement(l.a, {
 					className: x.a.close,
 					onClick: () => {
-						m(w.Dismissed), Object(c.kb)(a.a.AWARDED_LISTING_BANNER, !0, i.f)
+						m(w.Dismissed), Object(c.jb)(a.a.AWARDED_LISTING_BANNER, !0, i.f)
 					}
 				}))
 			}
@@ -1424,7 +1424,7 @@
 					}) : u.fbt._("Followed! You’ll receive updates when there’s new activity", null, {
 						hk: "1fYEVg"
 					})
-				})), t === x.b.FREQUENT && Object(f.db)(null === (c = d.user.account) || void 0 === c ? void 0 : c.id, e))
+				})), t === x.b.FREQUENT && Object(f.cb)(null === (c = d.user.account) || void 0 === c ? void 0 : c.id, e))
 			};
 			var C = n("./src/reddit/actions/subredditWelcomeMessage.ts"),
 				O = n("./src/lib/combineRefs/index.tsx"),
@@ -1834,7 +1834,7 @@
 					small: !0,
 					enableNotificationTooltipAfterSubscription: () => n(!0),
 					afterUnsubscribeAction: () => {
-						o && (Object(f.db)(e.userId, o), e.updateSubredditInfo())
+						o && (Object(f.cb)(e.userId, o), e.updateSubredditInfo())
 					}
 				})), p && o && e.notificationLevel && r.a.createElement("div", {
 					className: we.a.notificationButtonContainer
@@ -2590,7 +2590,7 @@
 			class y extends o.a.Component {
 				constructor(e) {
 					super(e), this.closeBanner = () => {
-						Object(u.kb)(d.a.CREATE_POST_BANNER, !0, this.props.subreddit.id), this.setState({
+						Object(u.jb)(d.a.CREATE_POST_BANNER, !0, this.props.subreddit.id), this.setState({
 							visible: !1
 						}), this.props.showToast(), this.props.sendEvent(Object(m.b)())
 					}, this.createPost = () => {
@@ -4685,7 +4685,7 @@
 				Ce = (e, t, n) => {
 					let s = e.url;
 					return e.urlParams.sort || Object(l.I)(e) || (s = ge.a.join(s, t)), Object(p.a)(s, {
-						[K.x]: n
+						[K.y]: n
 					})
 				},
 				Oe = B.a.div("ListingSortContainer", ve.a),
@@ -9617,7 +9617,7 @@
 					super(e), this.confirmCloseModOnboarding = () => {
 						this.props.toggleCloseMenuModal(), this.setState({
 							visible: !1
-						}), Object(Be.Ib)(Ke, !0, this.props.subredditId), this.props.sendEvent(Object(Ae.d)("close"))
+						}), Object(Be.Hb)(Ke, !0, this.props.subredditId), this.props.sendEvent(Object(Ae.d)("close"))
 					}, this.customizeThemeColors = () => {
 						this.props.sendEvent(Object(Ae.d)("theme_colors_link"))
 					}, this.customizeIcon = () => {
@@ -14211,7 +14211,7 @@
 				isPopular: re.E,
 				isInTrendingEntrypointExperiment: Ee.a
 			}), $e = e => {
-				const t = ne.x in e && e[ne.x].toUpperCase();
+				const t = ne.y in e && e[ne.y].toUpperCase();
 				if ("string" == typeof t && t in h.dc) return h.dc[t]
 			}, et = Object(E.a)((e, t) => {
 				const {
@@ -15649,4 +15649,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.5c2912e0bd1e1c47c59b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.bfeb62b98a85463e026a.js.map

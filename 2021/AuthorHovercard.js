@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.2b2128363c8a1c252fe2.js
-// Retrieved at 8/30/2021, 12:20:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.6f486243a36b53122c01.js
+// Retrieved at 8/30/2021, 3:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/lib/humanizeDate/index.ts": function(e, t, n) {
@@ -3674,7 +3674,7 @@
 			function o(e) {
 				const [t, n] = Object(r.useState)(Object(s.t)(e));
 				return [t, Object(r.useCallback)(() => {
-					n(!0), Object(s.ob)(e)
+					n(!0), Object(s.nb)(e)
 				}, [])]
 			}
 		},
@@ -3689,7 +3689,7 @@
 			function o(e) {
 				const [t, n] = Object(r.useState)(Object(s.u)(e));
 				return [t, Object(r.useCallback)(() => {
-					n(!0), Object(s.yb)(e)
+					n(!0), Object(s.xb)(e)
 				}, [])]
 			}
 		},
@@ -3704,7 +3704,7 @@
 			function o(e) {
 				const [t, n] = Object(r.useState)(() => Object(s.v)(e));
 				return [t, Object(r.useCallback)(() => {
-					n(!0), Object(s.zb)(e)
+					n(!0), Object(s.yb)(e)
 				}, [e])]
 			}
 		},
@@ -3967,4 +3967,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.2b2128363c8a1c252fe2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.6f486243a36b53122c01.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.1f566188671efc0d0fe9.js
-// Retrieved at 8/30/2021, 2:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.864aaf3d9a18416ca8eb.js
+// Retrieved at 8/30/2021, 3:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, n) {
@@ -14113,4 +14113,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.1f566188671efc0d0fe9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.864aaf3d9a18416ca8eb.js.map

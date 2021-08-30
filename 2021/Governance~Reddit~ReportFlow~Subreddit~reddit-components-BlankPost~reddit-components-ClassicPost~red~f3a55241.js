@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241.78bb361745745d4f2d12.js
-// Retrieved at 8/30/2021, 3:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241.44fbf8ff5a714e8ebd73.js
+// Retrieved at 8/30/2021, 3:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241"], {
 		"./src/reddit/actions/downToChat.ts": function(e, t, r) {
@@ -202,7 +202,7 @@
 			})), r.d(t, "d", (function() {
 				return Q
 			})), r.d(t, "m", (function() {
-				return H
+				return z
 			}));
 			var s = r("./node_modules/fbt/lib/FbtPublic.js"),
 				n = r("./src/lib/makeActionCreator/index.ts"),
@@ -302,7 +302,7 @@
 						provider: e,
 						error: i.error
 					}))
-				}, F = "OAUTH_FLOW_URL_PENDING", M = "OAUTH_FLOW_URL_SUCCESS", Q = "OAUTH_FLOW_URL_FAILED", $ = Object(n.a)(F), W = Object(n.a)(M), J = Object(n.a)(Q), H = e => async (t, r, {
+				}, F = "OAUTH_FLOW_URL_PENDING", M = "OAUTH_FLOW_URL_SUCCESS", Q = "OAUTH_FLOW_URL_FAILED", $ = Object(n.a)(F), W = Object(n.a)(M), J = Object(n.a)(Q), z = e => async (t, r, {
 					apiContext: n
 				}) => {
 					t($({
@@ -361,9 +361,9 @@
 			})), r.d(t, "f", (function() {
 				return J
 			})), r.d(t, "g", (function() {
-				return H
-			})), r.d(t, "e", (function() {
 				return z
+			})), r.d(t, "e", (function() {
+				return H
 			})), r.d(t, "m", (function() {
 				return K
 			}));
@@ -589,9 +589,9 @@
 			}), J = e => async (t, r) => {
 				const s = r();
 				return Object(m.k)(s) ? (Object(i.a)(Object(O.h)(e)(s)), t(Object(c.h)(u.a.ECON_POWERUPS_MARKETING))) : t(Object(o.i)())
-			}, H = e => async t => t(Object(c.h)(u.a.ECON_POWERUPS_PREMIUM_UPSELL, {
+			}, z = e => async t => t(Object(c.h)(u.a.ECON_POWERUPS_PREMIUM_UPSELL, {
 				subredditId: e
-			})), z = () => async (e, t) => {
+			})), H = () => async (e, t) => {
 				const r = t();
 				return Object(m.k)(r) ? e(Object(c.h)(u.a.ACHIEVEMENT_FLAIR)) : e(Object(o.i)())
 			}, V = Object(n.a)(g.N), K = (e, t) => async (r, s, {
@@ -783,7 +783,7 @@
 				$ = r("./src/reddit/selectors/isModeratorOfSubreddit.ts"),
 				W = r("./src/reddit/selectors/platform.ts"),
 				J = r("./src/reddit/selectors/user.ts");
-			const H = () => async (e, t, r) => {
+			const z = () => async (e, t, r) => {
 				const s = t(),
 					n = Object(W.e)(s);
 				if (!n || n.type !== F.f.Public) return;
@@ -812,12 +812,12 @@
 					id: "createPostCta",
 					kind: M.b.Modal,
 					name: "createPostCta",
-					secondButtonAction: async () => Object(q.Hb)(),
+					secondButtonAction: async () => Object(q.Gb)(),
 					secondButtonText: "Dismiss",
 					text: `There have been over ${j} visits to r/${d} in the past week. Create a new post and start the next conversation.`
 				}))
 			};
-			var z = r("./src/reddit/actions/subreddit/questions.ts"),
+			var H = r("./src/reddit/actions/subreddit/questions.ts"),
 				V = r("./src/reddit/actions/subredditSettings.ts"),
 				K = r("./src/reddit/actions/subredditWelcomeMessage.ts"),
 				Y = r("./src/reddit/actions/tags/index.ts"),
@@ -977,17 +977,17 @@
 					[F, Q] = await Promise.all([k, q]);
 				let $ = null;
 				(null == Q ? void 0 : Q.ok) && ($ = Q.body.data);
-				const H = F.body,
-					Z = (null == H ? void 0 : H.subreddits) ? ((e, t) => {
+				const z = F.body,
+					Z = (null == z ? void 0 : z.subreddits) ? ((e, t) => {
 						var r;
 						return null === (r = d()(e, e => (null == e ? void 0 : e.name.toLowerCase()) === t.toLowerCase())) || void 0 === r ? void 0 : r.id
-					})(H.subreddits, t) : null;
+					})(z.subreddits, t) : null;
 				i(h.m(F.status));
 				const oe = `error-${e}`,
 					ce = v || Z;
 				if (F.ok && ce) {
 					if (!v && Z) {
-						const e = null !== (f = null === (p = null == $ ? void 0 : $.subredditInfoByName) || void 0 === p ? void 0 : p.welcomeMessage) && void 0 !== f ? f : H.welcomeMessage;
+						const e = null !== (f = null === (p = null == $ ? void 0 : $.subredditInfoByName) || void 0 === p ? void 0 : p.welcomeMessage) && void 0 !== f ? f : z.welcomeMessage;
 						e && i(Object(K.f)({
 							welcomeMessage: e,
 							subredditId: Z
@@ -996,8 +996,8 @@
 						}) && Object(je.a)(o())
 					}
 					let r;
-					H.geoFilter && i(Object(T.k)(H.geoFilter));
-					const s = H.postIds.filter(e => !!H.posts[e].isMeta);
+					z.geoFilter && i(Object(T.k)(z.geoFilter));
+					const s = z.postIds.filter(e => !!z.posts[e].isMeta);
 					if (s.length && Z) {
 						const e = Object(m.i)(() => Object(se.a)(c.apiContext(), Z, s), {
 								name: "getGovernanceData",
@@ -1015,14 +1015,14 @@
 									...e
 								}
 							};
-						if (H.account && Object.assign(H.account, t), Z) {
+						if (z.account && Object.assign(z.account, t), Z) {
 							const e = null == Q ? void 0 : Q.body;
 							if (function(e) {
 									return Boolean(e && e.data && e.data.subredditInfoByName)
-								}(e) && H.subredditAboutInfo[Z]) {
+								}(e) && z.subredditAboutInfo[Z]) {
 								const t = e.data.subredditInfoByName,
 									r = t && t.notificationLevel;
-								H.subredditAboutInfo[Z].notificationLevel = r
+								z.subredditAboutInfo[Z].notificationLevel = r
 							}
 						}
 					}
@@ -1030,8 +1030,8 @@
 							key: e,
 							meta: y.meta,
 							governance: r,
-							...H,
-							postIds: H.postIds
+							...z,
+							postIds: z.postIds
 						})), !v) {
 						const e = Object(C.E)(o(), t);
 						(null == $ ? void 0 : $.subreddit) && i(G.t({
@@ -1042,13 +1042,13 @@
 							}),
 							subredditId: e
 						}));
-						const r = Object(g.c)(H.posts, e),
-							s = Object(g.b)(H.structuredStyles),
+						const r = Object(g.c)(z.posts, e),
+							s = Object(g.b)(z.structuredStyles),
 							n = (s ? Object(g.d)(s) : []).concat(r);
 						i(Object(g.a)(n, e))
 					}
 					if (n && i(B.g(oe)), i(Object(O.b)(Oe.a.SUBREDDIT)), i(Object(I.p)()), Z) {
-						Object(z.a)(i, Z, null == $ ? void 0 : $.subredditInfoByName), L(i, o, Z, {
+						Object(H.a)(i, Z, null == $ ? void 0 : $.subredditInfoByName), L(i, o, Z, {
 							data: {
 								subredditInfoById: null == $ ? void 0 : $.subredditInfoByName
 							}
@@ -1059,7 +1059,7 @@
 						});
 						const e = [Object(m.i)(() => i(Object(S.a)({
 							subredditId: Z,
-							postIds: H.postIds,
+							postIds: z.postIds,
 							skip: ["subscription"]
 						})), {
 							name: "fetchAllEconomicsData",
@@ -1090,7 +1090,7 @@
 							type: a.H.NOT_FOUND_ERROR
 						},
 						key: e,
-						...H
+						...z
 					})), n && i(B.f({
 						id: oe,
 						kind: M.b.Error,
@@ -1149,7 +1149,7 @@
 					}) || Object(Te.b)(fe.c.flair)(e, {
 						subredditId: t
 					}))(e, t),
-					k = Z.x in e.queryParams && e.queryParams[Z.x].toUpperCase() || "",
+					k = Z.y in e.queryParams && e.queryParams[Z.y].toUpperCase() || "",
 					L = k in a.dc && a.dc[k];
 				if (A || w && !x && !t) {
 					if (N(b, R) && r(U.i(R)), w) {
@@ -1160,7 +1160,7 @@
 							r(Object(I.p)())
 						}), b.sidebarPromotedPosts.firstFetch || window.addEventListener("load", () => {
 							r(Object(O.b)(Oe.a.SUBREDDIT))
-						}), r(H())
+						}), r(z())
 					}
 					return
 				}
@@ -1213,7 +1213,7 @@
 				const M = Le(s(), i);
 				r(h.l({
 					title: M
-				})), r(H()), await B
+				})), r(z()), await B
 			}, Ge = "PAGE__SUBREDDIT_INVALIDATE_LISTING", Be = Object(b.a)(Ge)
 		},
 		"./src/reddit/actions/publicAccessNetwork/api.ts": function(e, t, r) {
@@ -1340,7 +1340,7 @@
 			})), r.d(t, "h", (function() {
 				return J
 			})), r.d(t, "d", (function() {
-				return H
+				return z
 			})), r.d(t, "p", (function() {
 				return Y
 			})), r.d(t, "t", (function() {
@@ -1414,11 +1414,11 @@
 				$ = "SUBREDDIT__MORE_POSTS_PENDING",
 				W = "SUBREDDIT__MORE_POSTS_LOADED",
 				J = "SUBREDDIT__MORE_POSTS_FAILED",
-				H = "SUBREDDIT__META_FILTER_TOGGLED",
-				z = Object(c.a)($),
+				z = "SUBREDDIT__META_FILTER_TOGGLED",
+				H = Object(c.a)($),
 				V = Object(c.a)(W),
 				K = Object(c.a)(J),
-				Y = Object(c.a)(H),
+				Y = Object(c.a)(z),
 				X = Object(c.a)(f.b),
 				Z = Object(c.a)(f.c),
 				ee = Object(c.a)(f.a),
@@ -1488,7 +1488,7 @@
 						x = !(!D[m] || !D[m][O.token]);
 					if (h || x) return;
 					if (T === i.V.AWARDED && c === g.f) return;
-					t(z({
+					t(H({
 						key: m,
 						fetchedToken: O.token
 					}));
@@ -2151,9 +2151,9 @@
 			})), r.d(t, "g", (function() {
 				return Q
 			})), r.d(t, "e", (function() {
-				return H
-			})), r.d(t, "d", (function() {
 				return z
+			})), r.d(t, "d", (function() {
+				return H
 			})), r.d(t, "b", (function() {
 				return V
 			})), r.d(t, "n", (function() {
@@ -2349,7 +2349,7 @@
 					f.ok && m && m.updateSubredditTagStates && m.updateSubredditTagStates.ok && m.updateSubredditTagStates.subreddit ? s(w(o({
 						subredditInfoById: m.updateSubredditTagStates.subreddit
 					}))) : s(v())
-				}, H = (e, t, r = !1) => async (n, d, o) => {
+				}, z = (e, t, r = !1) => async (n, d, o) => {
 					const c = d(),
 						a = Object(S.q)(c, {
 							subredditId: e
@@ -2372,10 +2372,10 @@
 						hk: "2Jbh5V"
 					}), j.b.Error, s.fbt._("Retry", null, {
 						hk: "1c2xrJ"
-					}), H(e, t, r)))) : r && n(Object(i.f)(Object(i.e)(s.fbt._("Community topics saved!", null, {
+					}), z(e, t, r)))) : r && n(Object(i.f)(Object(i.e)(s.fbt._("Community topics saved!", null, {
 						hk: "3wtajT"
 					}), j.b.SuccessCommunity)))
-				}, z = (e, t, r) => async (r, n, d) => {
+				}, H = (e, t, r) => async (r, n, d) => {
 					const o = {
 						state: g.d.TAGGED
 					};
@@ -4843,4 +4843,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241.78bb361745745d4f2d12.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241.44fbf8ff5a714e8ebd73.js.map

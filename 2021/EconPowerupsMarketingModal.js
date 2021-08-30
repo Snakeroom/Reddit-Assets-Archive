@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.5cb7b9e2f2d0eefdfdf1.js
-// Retrieved at 8/30/2021, 3:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.b630dbd1d4b70eed24f8.js
+// Retrieved at 8/30/2021, 3:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsMarketingModal"], {
 		"./src/reddit/components/Econ/Common/BenefitTile/index.m.less": function(e, t, s) {
@@ -374,8 +374,8 @@
 						subredditId: s
 					}) : null
 				}
-			}), J = Object(r.b)(U);
-			const Y = Object(c.a)(G(J((function(e) {
+			}), Y = Object(r.b)(U);
+			const J = Object(c.a)(G(Y((function(e) {
 				const {
 					currentSubredditId: t,
 					powerups: s,
@@ -392,7 +392,7 @@
 				});
 				const M = () => c(Object(d.g)(b.a.ECON_POWERUPS_MARKETING)),
 					I = () => {
-						Object(E.Jb)(b.a.ECON_POWERUPS_MARKETING, !0), c(j ? Object(l.g)(t) : Object(d.h)(b.a.ECON_POWERUPS_PURCHASE))
+						Object(E.Ib)(b.a.ECON_POWERUPS_MARKETING, !0), c(j ? Object(l.g)(t) : Object(d.h)(b.a.ECON_POWERUPS_PURCHASE))
 					};
 				if (!t || !a || !s) return M(), null;
 				const y = k ? F._("Support the whole community", null, {
@@ -471,7 +471,7 @@
 					hk: "3gjy90"
 				})))))
 			}))));
-			t.default = e => o.a.createElement(Y, D({}, e, {
+			t.default = e => o.a.createElement(J, D({}, e, {
 				className: Object(i.a)(e.className, T.a.modal)
 			}))
 		},
@@ -592,4 +592,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.5cb7b9e2f2d0eefdfdf1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.b630dbd1d4b70eed24f8.js.map
