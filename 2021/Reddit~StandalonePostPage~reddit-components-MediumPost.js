@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-MediumPost.b1ef76d3c88a03b2a45d.js
-// Retrieved at 8/30/2021, 12:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-MediumPost.15993c1e6bb2dec4527b.js
+// Retrieved at 8/30/2021, 12:20:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~StandalonePostPage~reddit-components-MediumPost"], {
 		"./src/lib/hooks/useTooltip.ts": function(e, t, r) {
@@ -250,7 +250,7 @@
 						share: l,
 						source: u
 					} = e, m = r();
-					o && Object(d.a)(Object(c.c)(o)(m)), Object(i.J)(m) ? await t(Object(s.h)(a.a.SNOOVATAR_MODAL, {
+					o && Object(d.a)(Object(c.c)(o)(m)), Object(i.K)(m) ? await t(Object(s.h)(a.a.SNOOVATAR_MODAL, {
 						share: l,
 						source: u
 					})) : await t(Object(n.i)())
@@ -364,9 +364,9 @@
 						clearTimeout(R.current), clearTimeout(M.current), clearTimeout(N.current)
 					}
 				}, [t]);
-				const q = Object(n.useCallback)(() => C(!0), [C]),
-					K = 0 === I.length,
-					H = _ || K,
+				const K = Object(n.useCallback)(() => C(!0), [C]),
+					q = 0 === I.length,
+					H = _ || q,
 					Y = Object(n.useRef)(((e, t) => `${t}_${e}_count_anim`)(h, r));
 				return s.a.createElement(s.a.Fragment, null, !b && s.a.createElement("div", {
 					className: m.a.countAnimation
@@ -384,7 +384,7 @@
 						"aria-hidden": !0,
 						className: m.a.digitDeltaWrapper,
 						key: t,
-						onTransitionEnd: q,
+						onTransitionEnd: K,
 						style: w && I.length > 0 && !_ ? {
 							transform: `translateY(-${j&&r.length>1?100:100*(r.length-1)}%)`,
 							transitionDuration: `${(j?500:750)/1e3}s`
@@ -799,7 +799,7 @@
 				h = r("./src/reddit/components/VerticalVotes/index.m.less"),
 				g = r.n(h);
 			const O = Object(c.c)({
-					isNightMode: v.W,
+					isNightMode: v.X,
 					isAnimatingUpvotePostId: b.k
 				}),
 				j = Object(a.b)(O),
@@ -1327,10 +1327,10 @@
 				c = r("./src/reddit/constants/headers.ts");
 			const i = async e => Object(o.a)(Object(a.a)(e, [c.a]), {
 				endpoint: `${n.a.snoovatarUrl}/api/account`,
-				method: s.hb.GET
+				method: s.ib.GET
 			}), d = async (e, t, r, i, d) => Object(o.a)(Object(a.a)(e, [c.a]), {
 				endpoint: `${n.a.snoovatarUrl}/api/snoovatar`,
-				method: s.hb.POST,
+				method: s.ib.POST,
 				headers: {
 					"Content-Type": "application/json "
 				},
@@ -1791,7 +1791,7 @@
 					const {
 						thingId: r,
 						packageId: l
-					} = t, b = !!r, v = o.b(e), h = v ? Object(u.getAwardTypeFromAward)(v) : null, g = b ? h : c.o(e) ? d.GoldPurchaseType.Premium : d.GoldPurchaseType.Coins, O = r ? Object(p.a)(r) ? "comment" : "post" : void 0, j = l || c.t(e), y = [...Object(a.d)(e), ...Object(a.f)(e)].filter(e => e.mobileId === j)[0], w = t.offerContext || (v && 0 === v.coinPrice ? s.a.StorefrontFreeAward : Object(s.d)(y, b)), x = y ? Math.round(1e4 * (y.baselinePennies - y.pennies) / y.baselinePennies) / 100 : 0, _ = y ? Math.round(1e4 * (y.coins - y.baselineCoins) / y.coins) / 100 : 0, C = y ? y.baselinePennies !== y.pennies ? `${x}_percent_price` : y.baselineCoins !== y.coins ? `${_}_percent_bonus` : void 0 : void 0, I = g === d.GoldPurchaseType.Premium ? n.vb : y ? y.pennies : void 0;
+					} = t, b = !!r, v = o.b(e), h = v ? Object(u.getAwardTypeFromAward)(v) : null, g = b ? h : c.o(e) ? d.GoldPurchaseType.Premium : d.GoldPurchaseType.Coins, O = r ? Object(p.a)(r) ? "comment" : "post" : void 0, j = l || c.t(e), y = [...Object(a.d)(e), ...Object(a.f)(e)].filter(e => e.mobileId === j)[0], w = t.offerContext || (v && 0 === v.coinPrice ? s.a.StorefrontFreeAward : Object(s.d)(y, b)), x = y ? Math.round(1e4 * (y.baselinePennies - y.pennies) / y.baselinePennies) / 100 : 0, _ = y ? Math.round(1e4 * (y.coins - y.baselineCoins) / y.coins) / 100 : 0, C = y ? y.baselinePennies !== y.pennies ? `${x}_percent_price` : y.baselineCoins !== y.coins ? `${_}_percent_bonus` : void 0 : void 0, I = g === d.GoldPurchaseType.Premium ? n.wb : y ? y.pennies : void 0;
 					return {
 						...i.defaults(e),
 						comment: r ? i.comment(e, r) : null,
@@ -2151,7 +2151,7 @@
 				d = (e, t) => r => {
 					const {
 						id: n
-					} = Object(a.nb)(r, {
+					} = Object(a.ob)(r, {
 						userName: t
 					});
 					return {
@@ -2248,7 +2248,7 @@
 				const s = Object(i.c)(e, {
 						subredditId: r
 					}),
-					d = Object(c.h)(e),
+					d = Object(c.i)(e),
 					l = d ? Object(o.d)(e, {
 						subredditId: r,
 						userId: d
@@ -3113,8 +3113,8 @@
 				f = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: n.fb
-					}) === n.rb.Enabled
+						experimentName: n.hb
+					}) === n.tb.Enabled
 				}
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, r) {
@@ -3222,7 +3222,7 @@
 					minSize: t,
 					userName: r
 				}) => {
-					const n = Object(i.nb)(e, {
+					const n = Object(i.ob)(e, {
 						userName: r
 					});
 					if (n && n.awardedLastMonth && n.awardedLastMonth.topAward) return f(e, {
@@ -3492,7 +3492,7 @@
 			}));
 			var n = r("./src/lib/constants/index.ts");
 			const s = e => !o(e) && !!e.user.prefs.subscriptionsPinned,
-				o = e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== n.Jb.MODERATION_PAGES),
+				o = e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== n.Kb.MODERATION_PAGES),
 				a = e => e.user.prefs.reduceAnimationsFromAwards
 		},
 		"./src/reddit/singleton/EventSystem.ts": function(e, t, r) {
@@ -3553,4 +3553,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-MediumPost.b1ef76d3c88a03b2a45d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-MediumPost.15993c1e6bb2dec4527b.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/gildActions.e71bd496bb459b2bf42d.js
-// Retrieved at 8/18/2021, 6:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/gildActions.86ce991079312d5dd35a.js
+// Retrieved at 8/30/2021, 12:20:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["gildActions"], {
 		"./src/reddit/actions/gold/econPurchase.ts": function(e, t, s) {
@@ -209,7 +209,7 @@
 						postId: s
 					}) : Object(k.a)(e, {
 						commentId: s
-					}), a = Object(R.j)(e), d = e.gild, {
+					}), a = Object(R.k)(e), d = e.gild, {
 						isAnonymous: n
 					} = d, o = !n && a && (a.username || a.displayText) ? a.username || a.displayText : void 0, i = r ? r.author : void 0, c = Object(P.J)(e, {
 						thingId: s
@@ -228,7 +228,7 @@
 						} = e,
 						h = Object(I.a)(a, u),
 						w = e.awardKarmaReceived,
-						f = Object(R.j)(a),
+						f = Object(R.k)(a),
 						k = Object(_.b)(a) || Object(N.d)(N.a.GildingFlow, !1);
 					if (Object(_.g)(a)) {
 						const e = "success.gild",
@@ -493,4 +493,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/gildActions.e71bd496bb459b2bf42d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/gildActions.86ce991079312d5dd35a.js.map

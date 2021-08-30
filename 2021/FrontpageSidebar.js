@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.074ae2644448a20ef591.js
-// Retrieved at 8/30/2021, 12:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.8e2d98f95f2611eb8cda.js
+// Retrieved at 8/30/2021, 12:20:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, n) {
@@ -272,14 +272,14 @@
 				z = n("./src/reddit/constants/headers.ts");
 			const Y = e => Object(H.a)(Object(X.a)(e, [z.a]), {
 				endpoint: `${e.apiUrl}/api/multi/user/CommunityAdoptionBot/m/adoption_week/`,
-				method: q.hb.GET,
+				method: q.ib.GET,
 				type: "json"
 			});
 			var $ = n("./src/reddit/components/SubredditAdoptionWidget/index.m.less"),
 				ee = n.n($);
 			const {
 				fbt: te
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), ne = 3, ae = 30 * q.ib, se = "SubredditAdoption";
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), ne = 3, ae = 30 * q.jb, se = "SubredditAdoption";
 			class re extends d.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
@@ -663,10 +663,10 @@
 			}
 			var Ue = n("./src/reddit/selectors/experiments/utils.ts");
 			const qe = Object(u.a)(e => Object(We.c)(e, {
-					experimentName: Le.Mc,
+					experimentName: Le.Oc,
 					experimentEligibilitySelector: We.a
 				}), Ue.a),
-				Qe = Object(u.a)(qe, e => e === Le.Oc.Enabled);
+				Qe = Object(u.a)(qe, e => e === Le.Qc.Enabled);
 			var Me = n("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
 				Je = n("./src/reddit/selectors/user.ts");
 			var Ke = n("./src/reddit/selectors/experiments/uiSimplification.ts"),
@@ -679,12 +679,12 @@
 			const Ye = "c1020",
 				$e = "videos",
 				et = Object(u.c)({
-					isMod: Je.K,
-					isLoggedIn: Je.I,
+					isMod: Je.L,
+					isLoggedIn: Je.J,
 					shouldShowLocalRecommendations: e => !1 !== e.user.prefs.showLocationBasedRecommendations,
-					currentUser: Je.j,
+					currentUser: Je.k,
 					frontpageLinks: Ze.b,
-					isOver18: Je.db,
+					isOver18: Je.eb,
 					isUISimplificationAllItemsVariant: Ke.b,
 					isInBFFSLeaderboardExperiment: function(e) {
 						return Ge(e) === Le.w.RotateEven
@@ -697,9 +697,9 @@
 							n = !!Object(Ve.O)(e, Ye);
 						return (!t || !n) && (!Object(Ke.b)(e) && function(e) {
 							return Object(We.c)(e, {
-								experimentEligibilitySelector: Je.J,
-								experimentName: Le.mb
-							}) === Le.hc
+								experimentEligibilitySelector: Je.K,
+								experimentName: Le.ob
+							}) === Le.jc
 						}(e))
 					},
 					isNavbarLikeMwebEnabled: l.a,
@@ -790,7 +790,7 @@
 							placement: q.c.BELOW_THE_FOLD,
 							listingName: r,
 							position: Xe.a.BOTTOM,
-							sizes: q.n,
+							sizes: q.o,
 							placementIndex: e++
 						})
 					}, a && d.a.createElement(ie, null)))
@@ -2046,4 +2046,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.074ae2644448a20ef591.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.8e2d98f95f2611eb8cda.js.map

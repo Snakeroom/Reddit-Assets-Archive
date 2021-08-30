@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InFeedChaining.3a022c46fb86f1fafe2b.js
-// Retrieved at 8/30/2021, 12:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InFeedChaining.4c45f62b79a961e6084b.js
+// Retrieved at 8/30/2021, 12:20:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InFeedChaining"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1281,7 +1281,7 @@
 		"./src/reddit/components/DiscoveryUnit/InFeedChaining/Post/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return K
+				return Q
 			}));
 			var n = s("./node_modules/react/index.js"),
 				r = s.n(n),
@@ -1459,7 +1459,7 @@
 				if (!e) return !1;
 				return (Object(h.h)(e) ? t : s).some(t => t.id === e.id)
 			});
-			class Q extends r.a.Component {
+			class K extends r.a.Component {
 				constructor() {
 					super(...arguments), this.trackSubredditOrProfileClicked = e => {
 						e.stopPropagation(), this.props.onSubredditOrProfileClick(this.props.postId)
@@ -1509,8 +1509,8 @@
 					})), r.a.createElement(c.d, null))
 				}
 			}
-			const z = Object(m.b)(Object(u.a)(Object(a.a)(Q)));
-			class K extends r.a.Component {
+			const z = Object(m.b)(Object(u.a)(Object(a.a)(K)));
+			class Q extends r.a.Component {
 				render() {
 					return r.a.createElement(z, this.props)
 				}
@@ -1690,13 +1690,13 @@
 					}
 				}
 				componentDidMount() {
-					this.trackDiscoveryUnitViewed(), this.props.routeName !== d.Jb.COMMENTS && this.setState({
+					this.trackDiscoveryUnitViewed(), this.props.routeName !== d.Kb.COMMENTS && this.setState({
 						isCarouselVisible: !0,
 						isDUVisible: !0
 					})
 				}
 				componentDidUpdate(e) {
-					this.state.isCarouselVisible || e.routeName !== d.Jb.COMMENTS || this.props.routeName === d.Jb.COMMENTS || this.showDU()
+					this.state.isCarouselVisible || e.routeName !== d.Kb.COMMENTS || this.props.routeName === d.Kb.COMMENTS || this.showDU()
 				}
 				componentWillUnmount() {
 					this.showCarouselTimer && clearTimeout(this.showCarouselTimer), this.showDUTimer && clearTimeout(this.showDUTimer)
@@ -1873,7 +1873,7 @@
 					}, Object(j.b)(e.author, t)), i.a.createElement("span", {
 						className: P.a.timestamp
 					}, i.a.createElement(C.d, {
-						seconds: e.created / w.Ob
+						seconds: e.created / w.Pb
 					})))))
 				},
 				k = s("./src/reddit/icons/svgs/CircledPlanet/index.tsx"),
@@ -1905,7 +1905,7 @@
 					}, "•"), i.a.createElement("span", {
 						className: L.a.timestamp
 					}, i.a.createElement(C.d, {
-						seconds: e.created / w.Ob
+						seconds: e.created / w.Pb
 					})))))
 				},
 				D = s("./src/reddit/components/JSAPIContainers/index.tsx"),
@@ -1922,10 +1922,10 @@
 				q = s("./src/reddit/models/Media/index.ts"),
 				Y = s("./src/reddit/models/Subreddit/index.ts"),
 				X = s("./src/reddit/models/Widgets/index.ts"),
-				Q = s("./src/reddit/components/MiniCardPost/index.m.less"),
-				z = s.n(Q),
-				K = s("./src/reddit/helpers/styles/mixins/index.m.less"),
-				Z = s.n(K),
+				K = s("./src/reddit/components/MiniCardPost/index.m.less"),
+				z = s.n(K),
+				Q = s("./src/reddit/helpers/styles/mixins/index.m.less"),
+				Z = s.n(Q),
 				$ = s("./src/reddit/components/DiscoveryUnit/Layout/Posts/TopPostsLargePost/index.m.less"),
 				ee = s.n($);
 
@@ -2428,7 +2428,7 @@
 				h = s.n(p);
 			const b = ["allow-forms", "allow-orientation-lock", "allow-popups", "allow-popups-to-escape-sandbox", "allow-presentation", "allow-same-origin", "allow-scripts", "allow-top-navigation-by-user-activation"].join(" "),
 				f = Object(i.b)(() => Object(o.c)({
-					isNightmodeOn: m.W
+					isNightmodeOn: m.X
 				}));
 			t.a = f(e => {
 				const t = {
@@ -2527,7 +2527,7 @@
 						style: t
 					}, e.children)
 				},
-				N = Object(o.b)(() => Object(c.a)(g.H, w.cb, (e, {
+				N = Object(o.b)(() => Object(c.a)(g.H, w.db, (e, {
 					isSponsored: t,
 					postId: s
 				}) => t && s ? Object(g.b)(e, s) : null, y.a, _.actionInfo, g.I, (e, t, s, n, r, i) => ({
@@ -4142,12 +4142,12 @@
 						rtJsonElementProps: i
 					});
 					switch (n) {
-						case b.Qd.SmIcon:
+						case b.Sd.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: i
 							});
-						case b.Qd.SmIconHc:
+						case b.Sd.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -4327,7 +4327,7 @@
 				crosspostRoot: p.d,
 				crosspostSubredditOrProfile: p.e,
 				flairStyleTemplate: l.U,
-				hideNSFWPref: h.B,
+				hideNSFWPref: h.C,
 				isActive: p.j,
 				moderatorPermissions: u.k,
 				modModeEnabled: l.S,
@@ -4900,12 +4900,12 @@
 				c = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: n.Kd
+						experimentName: n.Md
 					}) || ""
 				},
 				l = e => {
 					const t = c(e);
-					return t === n.Qd.SmIcon || t === n.Qd.SmIconHc
+					return t === n.Sd.SmIcon || t === n.Sd.SmIconHc
 				},
 				d = (e, {
 					subredditName: t
@@ -4928,4 +4928,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InFeedChaining.3a022c46fb86f1fafe2b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InFeedChaining.4c45f62b79a961e6084b.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.947284325f658a814982.js
-// Retrieved at 8/18/2021, 8:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.3f5a4ce5a1f01d0cae41.js
+// Retrieved at 8/30/2021, 12:20:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, n) {
@@ -177,10 +177,10 @@
 				}),
 				D = n("./src/reddit/contexts/PageLayer/index.tsx"),
 				q = n("./src/reddit/controls/Button/index.tsx"),
-				F = n("./src/chat/controls/Svg/index.tsx");
+				A = n("./src/chat/controls/Svg/index.tsx");
 
-			function A() {
-				return (A = Object.assign || function(e) {
+			function F() {
+				return (F = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var a in n) Object.prototype.hasOwnProperty.call(n, a) && (e[a] = n[a])
@@ -188,7 +188,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var U = e => o.a.createElement(F.a, A({}, e, {
+			var U = e => o.a.createElement(A.a, F({}, e, {
 					viewBox: "-1 -1 21 21"
 				}), o.a.createElement("path", {
 					d: "M16.64,2.32a4.5,4.5,0,0,0-7,5.57L4.85,12.69,3.59,13.95h0L2.34,15.2a1,1,0,0,0,0,1.41l1.25,1.25h0l.42.42a1,1,0,0,0,1.41-1.41L5,16.46H5a.78.78,0,0,1,0-1.09.79.79,0,0,1,1.09,0h0l.42.42a1,1,0,0,0,1.41-1.41L7.52,14h0L7,13.4l4.1-4.1a4.5,4.5,0,0,0,5.57-7Zm-1.41,5a2.5,2.5,0,1,1,0-3.54A2.5,2.5,0,0,1,15.22,7.27Z"
@@ -197,27 +197,27 @@
 				N = n("./src/lib/constants/index.ts"),
 				H = n("./src/reddit/selectors/platform.ts"),
 				I = n("./src/reddit/selectors/user.ts");
-			var z = n("./src/reddit/selectors/meta.ts"),
-				G = n("./src/reddit/components/ContentGate/index.m.less"),
-				W = n.n(G);
+			var G = n("./src/reddit/selectors/meta.ts"),
+				z = n("./src/reddit/components/ContentGate/index.m.less"),
+				W = n.n(z);
 			const {
 				fbt: K
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), Z = u.a.wrapped(U, "PrivateKey", W.a), Y = u.a.div("ButtonsContainer", W.a), J = u.a.div("Container", W.a), V = u.a.div("ContainerExp", W.a), Q = u.a.div("Description", W.a), X = u.a.div("PrivateSubredditDetails", W.a), $ = u.a.div("PrivateSubredditDescription", W.a), ee = u.a.h3("PrivateSubredditName", W.a), te = u.a.a("Link", W.a), ne = u.a.wrapped(q.k, "LinkRouterButton", W.a), ae = u.a.wrapped(q.j, "LinkButton", W.a), re = u.a.wrapped(q.n, "SecondaryLinkRouterButton", W.a), oe = u.a.wrapped(q.m, "SecondaryLinkButton", W.a), se = u.a.wrapped(ne, "GoHomeLinkButton", W.a), ie = u.a.wrapped(_.a, "CreateCommunityButton", W.a), le = u.a.img("Image", W.a), ce = u.a.img("ImagePlaceholder", W.a), ue = u.a.wrapped(ne, "LeftLinkRouterButton", W.a), de = u.a.wrapped(ae, "LeftLinkButton", W.a), me = u.a.wrapped(oe, "SecondaryLeftLinkButton", W.a), he = u.a.wrapped(re, "SecondaryLeftLinkRouterButton", W.a), pe = u.a.h3("Title", W.a), _e = u.a.div("PageBody", W.a), be = u.a.div("QuarantineMessageWrapper", W.a), ke = Object(c.c)({
-				isLoggedIn: I.I,
-				origin: z.j,
-				user: I.j,
+				isLoggedIn: I.J,
+				origin: G.j,
+				user: I.k,
 				isPrivateSubredditContributorRequestPending: e => (e => {
-					if (!Object(I.J)(e)) return !1;
+					if (!Object(I.K)(e)) return !1;
 					const t = Object(H.d)(e);
 					if (!t) return !1;
-					const n = Object(I.e)(e, t);
+					const n = Object(I.f)(e, t);
 					if (!n) return !1;
 					if (!n.privateSubreddit) return !1;
 					const {
 						isContributorRequestTimestamp: a
 					} = n;
 					if (!a) return !1;
-					const r = 30 * N.z;
+					const r = 30 * N.A;
 					return a > Date.now() - r
 				})(e)
 			}), Ee = Object(D.u)(), ve = Object(s.b)(ke, (e, {
@@ -520,8 +520,8 @@
 			const v = "create-community-button",
 				g = E.a.wrapped(u.c, "StyledTooltip", k.a),
 				y = Object(i.c)({
-					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(_.hb)(e),
-					userIsSuspended: _.P
+					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(_.ib)(e),
+					userIsSuspended: _.Q
 				});
 			t.a = Object(s.b)(y, (e, {
 				eventSource: t
@@ -586,4 +586,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.947284325f658a814982.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.3f5a4ce5a1f01d0cae41.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.ca2fb3278eb94c0f9586.js
-// Retrieved at 8/30/2021, 12:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.05be7b95afd38285cbeb.js
+// Retrieved at 8/30/2021, 12:20:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsMarketingModal"], {
 		"./src/reddit/components/Econ/Common/BenefitTile/index.m.less": function(e, t, s) {
@@ -320,9 +320,9 @@
 				M = s("./src/reddit/constants/experiments.ts"),
 				I = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const y = Object(a.a)(e => Object(I.c)(e, {
-					experimentName: M.Rb,
-					experimentEligibilitySelector: N.J
-				}), e => e === M.nc.Community || e === M.nc.Supporter),
+					experimentName: M.Tb,
+					experimentEligibilitySelector: N.K
+				}), e => e === M.pc.Community || e === M.pc.Supporter),
 				S = [v.a.CommentRecognition, v.a.PowerupsAward, v.a.CommentsWithGifs, v.a.CommentsWithEmoji, v.a.Achievements, v.a.HeroStatus, v.a.HdVideo],
 				L = Object(a.a)([y, g.h], (e, t) => {
 					let s = S;
@@ -333,7 +333,7 @@
 			const {
 				fbt: A
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), H = e => e.length % 2 == 1 ? [...e, v.a.More] : e;
-			var W = function(e) {
+			var T = function(e) {
 					const {
 						className: t
 					} = e, s = Object(f.a)(), n = Object(r.e)(L), a = Object(r.e)(g.g), c = H(n);
@@ -350,7 +350,7 @@
 						title: v.d[e](a)
 					})))
 				},
-				T = s("./src/reddit/components/Econ/PowerupsMarketingModal/Header/index.tsx"),
+				W = s("./src/reddit/components/Econ/PowerupsMarketingModal/Header/index.tsx"),
 				D = s("./src/reddit/components/Econ/PowerupsMarketingModal/index.m.less"),
 				F = s.n(D);
 
@@ -364,8 +364,8 @@
 				}).apply(this, arguments)
 			}
 			const {
-				fbt: J
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), U = Object(h.u)(), Y = Object(a.c)({
+				fbt: U
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), J = Object(h.u)(), Y = Object(a.c)({
 				currentSubredditId: h.n,
 				powerups: (e, t) => {
 					const s = Object(h.n)(e, t);
@@ -380,12 +380,12 @@
 					}) : null
 				}
 			}), V = Object(r.b)(Y);
-			const K = Object(c.a)(U(V((function(e) {
+			const K = Object(c.a)(J(V((function(e) {
 				const {
 					currentSubredditId: t,
 					powerups: s,
 					subreddit: a
-				} = e, c = Object(r.d)(), h = Object(f.a)(), k = Object(r.e)(g.g), j = Object(r.e)(e => !Object(N.r)(e) && Object(g.j)(e)), {
+				} = e, c = Object(r.d)(), h = Object(f.a)(), k = Object(r.e)(g.g), j = Object(r.e)(e => !Object(N.s)(e) && Object(g.j)(e)), {
 					container: C,
 					isScrollGradientVisible: O,
 					calculateGradientVisibility: v
@@ -400,9 +400,9 @@
 						Object(E.Jb)(b.a.ECON_POWERUPS_MARKETING, !0), c(j ? Object(l.g)(t) : Object(d.h)(b.a.ECON_POWERUPS_PURCHASE))
 					};
 				if (!t || !a || !s) return M(), null;
-				const y = k ? J._("Support the whole community", null, {
+				const y = k ? U._("Support the whole community", null, {
 					hk: "oOdGv"
-				}) : J._("Unlock perks for the whole community", null, {
+				}) : U._("Unlock perks for the whole community", null, {
 					hk: "faCTq"
 				});
 				return o.a.createElement(o.a.Fragment, null, o.a.createElement(u.a, {
@@ -413,20 +413,20 @@
 					className: Object(i.a)(F.a.main),
 					ref: C,
 					onScroll: v
-				}, o.a.createElement(T.a, {
-					title: J._("Powerup {r/community}", [J._param("r/community", a.displayText)], {
+				}, o.a.createElement(W.a, {
+					title: U._("Powerup {r/community}", [U._param("r/community", a.displayText)], {
 						hk: "2HkBNV"
 					}),
 					subtitle: y
-				}), o.a.createElement(W, {
+				}), o.a.createElement(T, {
 					className: F.a.benefits
 				}), o.a.createElement("span", {
 					className: F.a.modDisclaimer
-				}, J._("Mods may choose to opt out of some perks.", null, {
+				}, U._("Mods may choose to opt out of some perks.", null, {
 					hk: "3W2PR1"
 				})), o.a.createElement("h2", {
 					className: F.a.howItWorksTitle
-				}, J._("How it works", null, {
+				}, U._("How it works", null, {
 					hk: "1S8XOX"
 				})), o.a.createElement("ul", {
 					className: F.a.howItWorksList
@@ -434,17 +434,17 @@
 					className: F.a.howItWorksStep
 				}, o.a.createElement("h3", {
 					className: F.a.howItWorksSubtitle
-				}, J._("Buy a monthly Powerup subscription", null, {
+				}, U._("Buy a monthly Powerup subscription", null, {
 					hk: "1xgdW6"
 				})), o.a.createElement("p", {
 					className: F.a.howItWorksDesc
-				}, J._("Purchase a Powerup or apply your monthly Powerup included with paid Reddit Premium", null, {
+				}, U._("Purchase a Powerup or apply your monthly Powerup included with paid Reddit Premium", null, {
 					hk: "2rBQGS"
 				}))), o.a.createElement("li", {
 					className: F.a.howItWorksStep
 				}, o.a.createElement("h3", {
 					className: F.a.howItWorksSubtitle
-				}, J._("Help unlock perks for your community", null, {
+				}, U._("Help unlock perks for your community", null, {
 					hk: "4qBTJD"
 				})), o.a.createElement(m.a, {
 					className: F.a.joinHeroes,
@@ -456,11 +456,11 @@
 					className: F.a.howItWorksStep
 				}, o.a.createElement("h3", {
 					className: F.a.howItWorksSubtitle
-				}, J._("Unlock perks for yourself", null, {
+				}, U._("Unlock perks for yourself", null, {
 					hk: "4dQOvK"
 				})), o.a.createElement("p", {
 					className: F.a.howItWorksDesc
-				}, J._("Get instant access to perks, a hero badge, and a spot on the heroes list", null, {
+				}, U._("Get instant access to perks, a hero badge, and a spot on the heroes list", null, {
 					hk: "3uxTLG"
 				})))), o.a.createElement("div", {
 					className: Object(i.a)(F.a.gradient, {
@@ -472,7 +472,7 @@
 					className: F.a.footerButton,
 					onClick: I,
 					priority: x.b.Primary
-				}, J._("Powerup This Community", null, {
+				}, U._("Powerup This Community", null, {
 					hk: "3gjy90"
 				})))))
 			}))));
@@ -597,4 +597,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.ca2fb3278eb94c0f9586.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.05be7b95afd38285cbeb.js.map

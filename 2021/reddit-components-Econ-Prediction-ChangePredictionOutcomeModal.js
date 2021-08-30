@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-ChangePredictionOutcomeModal.c4a120cdeb323ac8b7de.js
-// Retrieved at 8/30/2021, 12:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-ChangePredictionOutcomeModal.c0bacc5f42acdc4782c6.js
+// Retrieved at 8/30/2021, 12:20:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction-ChangePredictionOutcomeModal"], {
 		"./node_modules/uuid/index.js": function(t, e, n) {
@@ -66,11 +66,11 @@
 			})), n.d(e, "i", (function() {
 				return H
 			})), n.d(e, "o", (function() {
-				return V
-			})), n.d(e, "p", (function() {
-				return z
-			})), n.d(e, "f", (function() {
 				return K
+			})), n.d(e, "p", (function() {
+				return V
+			})), n.d(e, "f", (function() {
+				return z
 			})), n.d(e, "c", (function() {
 				return W
 			})), n.d(e, "d", (function() {
@@ -110,7 +110,7 @@
 				y = (t, e, n, o) => async (r, i, {
 					gqlContext: d
 				}) => {
-					const c = Object(I.J)(i()),
+					const c = Object(I.K)(i()),
 						s = await Object(p.j)(d(), {
 							subredditId: t,
 							period: e,
@@ -312,7 +312,7 @@
 					} = r.body.data;
 					if (!i.hasOwnProperty("predictionTokens")) throw new Error("Failed to fetch token balance");
 					return i.predictionTokens
-				}, V = ({
+				}, K = ({
 					coinPackageId: t,
 					selectedOptionId: e,
 					price: n,
@@ -332,12 +332,12 @@
 						tournamentId: r,
 						tournamentPostId: i
 					})), c
-				}, z = t => async (e, n) => {
+				}, V = t => async (e, n) => {
 					const o = n();
-					Object(I.J)(o) ? await e(Object(f.h)(O.a.ECON_PREDICTIONS_PREMIUM_UPSELL, {
+					Object(I.K)(o) ? await e(Object(f.h)(O.a.ECON_PREDICTIONS_PREMIUM_UPSELL, {
 						feature: t
 					})) : await e(Object(m.i)())
-				}, K = () => Object(f.g)(O.a.ECON_PREDICTIONS_PREMIUM_UPSELL), W = t => async (e, n, {
+				}, z = () => Object(f.g)(O.a.ECON_PREDICTIONS_PREMIUM_UPSELL), W = t => async (e, n, {
 					gqlContext: r
 				}) => {
 					try {
@@ -891,4 +891,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-ChangePredictionOutcomeModal.c4a120cdeb323ac8b7de.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-ChangePredictionOutcomeModal.c0bacc5f42acdc4782c6.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.9f6925b3889e50b25033.js
-// Retrieved at 8/30/2021, 12:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.efb0176a54c16c8ca619.js
+// Retrieved at 8/30/2021, 12:20:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -52,16 +52,16 @@
 			const p = Object(o.a)(e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.Sc
+					experimentName: u.Uc
 				});
-				return Object(u.je)(t) ? void 0 : t
+				return Object(u.le)(t) ? void 0 : t
 			}, e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.Tc
+					experimentName: u.Vc
 				});
-				return Object(u.je)(t) ? void 0 : t
-			}, (e, t) => e === u.Uc.Enabled && t === u.Uc.Enabled);
+				return Object(u.le)(t) ? void 0 : t
+			}, (e, t) => e === u.Wc.Enabled && t === u.Wc.Enabled);
 			var h = n("./src/config.ts");
 			var b = n("./src/reddit/selectors/user.ts");
 			const f = e => {
@@ -274,7 +274,7 @@
 						forwardedRef: t
 					}))),
 					w = Object(o.c)({
-						redditUserId: b.h,
+						redditUserId: b.i,
 						isMuxEnabled: p
 					});
 				return Object(i.b)(w, null, null, {
@@ -1407,11 +1407,11 @@
 				q = n.n(K);
 			const {
 				fbt: z
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), Z = 20, J = l.kc, X = l.kc, Q = Object(c.a)(k.a, {
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), Z = 20, J = l.lc, X = l.lc, Q = Object(c.a)(k.a, {
 				playerName: "RPAN DU Video Player"
 			}), $ = Object(i.b)(() => Object(o.c)({
 				autoplay: D.b,
-				isLoggedIn: D.J,
+				isLoggedIn: D.K,
 				isOverlayOpen: x.h,
 				location: (e, {
 					listingName: t
@@ -1465,7 +1465,7 @@
 						if (e) {
 							if (Date.now() - e >= J) {
 								Object(S.ab)();
-								const e = 30 * l.z,
+								const e = 30 * l.A,
 									t = Date.now() - e + X;
 								this.props.onHideRpanUnit(t, {
 									showToast: !1
@@ -2185,23 +2185,23 @@
 					for (const t of e) {
 						const e = t[0] || "";
 						switch (e) {
-							case r.G.NO_STRIPE_SUBSCRIPTION:
-							case r.G.USER_DOESNT_EXIST:
-							case r.G.USER_REQUIRED_ERROR:
-							case r.G.VALIDATION_ERROR:
+							case r.H.NO_STRIPE_SUBSCRIPTION:
+							case r.H.USER_DOESNT_EXIST:
+							case r.H.USER_REQUIRED_ERROR:
+							case r.H.VALIDATION_ERROR:
 								return e;
-							case r.G.NO_USER:
-							case r.G.NO_TEXT:
-							case r.G.NO_URL:
-								return r.G.VALIDATION_ERROR;
-							case r.G.CREDIT_CARD_FAILURE:
-							case r.G.CREDIT_CARD_FAILURE_GENERIC:
-								return r.G.CREDIT_CARD_FAILURE;
+							case r.H.NO_USER:
+							case r.H.NO_TEXT:
+							case r.H.NO_URL:
+								return r.H.VALIDATION_ERROR;
+							case r.H.CREDIT_CARD_FAILURE:
+							case r.H.CREDIT_CARD_FAILURE_GENERIC:
+								return r.H.CREDIT_CARD_FAILURE;
 							default:
-								if (e.startsWith("SUBMIT_VALIDATION")) return r.G.SUBMIT_VALIDATION_ERROR
+								if (e.startsWith("SUBMIT_VALIDATION")) return r.H.SUBMIT_VALIDATION_ERROR
 						}
 					}
-					return r.G.VALIDATION_ERROR
+					return r.H.VALIDATION_ERROR
 				},
 				i = e => {
 					const t = e.body;
@@ -2658,7 +2658,7 @@
 					const {
 						thingId: n,
 						packageId: l
-					} = t, b = !!n, f = i.b(e), _ = f ? Object(u.getAwardTypeFromAward)(f) : null, E = b ? _ : a.o(e) ? d.GoldPurchaseType.Premium : d.GoldPurchaseType.Coins, g = n ? Object(p.a)(n) ? "comment" : "post" : void 0, v = l || a.t(e), S = [...Object(o.d)(e), ...Object(o.f)(e)].filter(e => e.mobileId === v)[0], O = t.offerContext || (f && 0 === f.coinPrice ? s.a.StorefrontFreeAward : Object(s.d)(S, b)), I = S ? Math.round(1e4 * (S.baselinePennies - S.pennies) / S.baselinePennies) / 100 : 0, C = S ? Math.round(1e4 * (S.coins - S.baselineCoins) / S.coins) / 100 : 0, y = S ? S.baselinePennies !== S.pennies ? `${I}_percent_price` : S.baselineCoins !== S.coins ? `${C}_percent_bonus` : void 0 : void 0, T = E === d.GoldPurchaseType.Premium ? r.vb : S ? S.pennies : void 0;
+					} = t, b = !!n, f = i.b(e), _ = f ? Object(u.getAwardTypeFromAward)(f) : null, E = b ? _ : a.o(e) ? d.GoldPurchaseType.Premium : d.GoldPurchaseType.Coins, g = n ? Object(p.a)(n) ? "comment" : "post" : void 0, v = l || a.t(e), S = [...Object(o.d)(e), ...Object(o.f)(e)].filter(e => e.mobileId === v)[0], O = t.offerContext || (f && 0 === f.coinPrice ? s.a.StorefrontFreeAward : Object(s.d)(S, b)), I = S ? Math.round(1e4 * (S.baselinePennies - S.pennies) / S.baselinePennies) / 100 : 0, C = S ? Math.round(1e4 * (S.coins - S.baselineCoins) / S.coins) / 100 : 0, y = S ? S.baselinePennies !== S.pennies ? `${I}_percent_price` : S.baselineCoins !== S.coins ? `${C}_percent_bonus` : void 0 : void 0, T = E === d.GoldPurchaseType.Premium ? r.wb : S ? S.pennies : void 0;
 					return {
 						...c.defaults(e),
 						comment: n ? c.comment(e, n) : null,
@@ -3243,7 +3243,7 @@
 				const s = Object(c.c)(e, {
 						subredditId: n
 					}),
-					d = Object(a.h)(e),
+					d = Object(a.i)(e),
 					l = d ? Object(i.d)(e, {
 						subredditId: n,
 						userId: d
@@ -4080,4 +4080,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.9f6925b3889e50b25033.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.efb0176a54c16c8ca619.js.map

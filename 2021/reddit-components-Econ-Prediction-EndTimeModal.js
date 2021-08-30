@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-EndTimeModal.17d21f7e7b77bb06f878.js
-// Retrieved at 8/30/2021, 12:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-EndTimeModal.983052038de129182306.js
+// Retrieved at 8/30/2021, 12:20:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction-EndTimeModal"], {
 		"./node_modules/lodash/_baseClamp.js": function(e, t) {
@@ -96,9 +96,9 @@
 			})), n.d(t, "l", (function() {
 				return q
 			})), n.d(t, "h", (function() {
-				return J
-			})), n.d(t, "i", (function() {
 				return H
+			})), n.d(t, "i", (function() {
+				return J
 			})), n.d(t, "o", (function() {
 				return z
 			})), n.d(t, "p", (function() {
@@ -108,7 +108,7 @@
 			})), n.d(t, "c", (function() {
 				return Y
 			})), n.d(t, "d", (function() {
-				return W
+				return K
 			}));
 			var o = n("./node_modules/fbt/lib/FbtPublic.js"),
 				r = n("./node_modules/uuid/index.js"),
@@ -144,7 +144,7 @@
 				w = (e, t, n, o) => async (r, i, {
 					gqlContext: s
 				}) => {
-					const a = Object(O.J)(i()),
+					const a = Object(O.K)(i()),
 						d = await Object(p.j)(s(), {
 							subredditId: e,
 							period: t,
@@ -322,7 +322,7 @@
 						} = r.body.data;
 					if (!i.tournament) throw new Error("Failed to update prediction name");
 					return t(U(i.tournament)), i.tournament
-				}, J = e => async (t, n, {
+				}, H = e => async (t, n, {
 					gqlContext: o
 				}) => {
 					const r = await Object(p.h)(o(), {
@@ -334,7 +334,7 @@
 					} = r.body.data;
 					if (!i.predictionChipPackages) throw new Error("Failed to fetch prediction chip packages");
 					return i.predictionChipPackages
-				}, H = e => async (t, n, {
+				}, J = e => async (t, n, {
 					gqlContext: o
 				}) => {
 					const r = await Object(p.i)(o(), {
@@ -368,7 +368,7 @@
 					})), a
 				}, V = e => async (t, n) => {
 					const o = n();
-					Object(O.J)(o) ? await t(Object(h.h)(f.a.ECON_PREDICTIONS_PREMIUM_UPSELL, {
+					Object(O.K)(o) ? await t(Object(h.h)(f.a.ECON_PREDICTIONS_PREMIUM_UPSELL, {
 						feature: e
 					})) : await t(Object(b.i)())
 				}, Z = () => Object(h.g)(f.a.ECON_PREDICTIONS_PREMIUM_UPSELL), Y = e => async (t, n, {
@@ -394,7 +394,7 @@
 					}
 				};
 
-			function W(e, t) {
+			function K(e, t) {
 				return async (n, o, {
 					gqlContext: r
 				}) => {
@@ -1366,4 +1366,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-EndTimeModal.17d21f7e7b77bb06f878.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-EndTimeModal.983052038de129182306.js.map

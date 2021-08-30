@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/schedulePickerModal.6c1b6806121c4ac3aa63.js
-// Retrieved at 8/12/2021, 6:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/schedulePickerModal.f8ab087387380ddcf3f5.js
+// Retrieved at 8/30/2021, 12:20:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["schedulePickerModal"], {
 		"./node_modules/lodash/_baseClamp.js": function(e, t) {
@@ -547,7 +547,7 @@
 						});
 						const o = Object(c.f)(Object(f.a)(n, s)),
 							i = Object(c.f)(Object(f.a)(e, t));
-						return o < (this.currentTimezone === this.state.timezoneName ? new Date : new Date(Date.now() - r.z)) ? a.fbt._("Event start time needs to be in the future", null, {
+						return o < (this.currentTimezone === this.state.timezoneName ? new Date : new Date(Date.now() - r.A)) ? a.fbt._("Event start time needs to be in the future", null, {
 							hk: "3oL3LM"
 						}) : i < o ? a.fbt._("End time must be after start time", null, {
 							hk: "3C3TKE"
@@ -913,4 +913,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/schedulePickerModal.6c1b6806121c4ac3aa63.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/schedulePickerModal.f8ab087387380ddcf3f5.js.map

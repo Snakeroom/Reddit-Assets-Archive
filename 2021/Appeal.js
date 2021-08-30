@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Appeal.277abc7e5cb664392388.js
-// Retrieved at 8/17/2021, 7:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Appeal.2eeb6f4d7691093d841a.js
+// Retrieved at 8/30/2021, 12:20:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Appeal"], {
 		"./src/lib/validateEmail/index.ts": function(e, a, t) {
@@ -247,7 +247,7 @@
 				C = t("./src/reddit/constants/headers.ts"),
 				k = t("./src/reddit/helpers/addRedesignIdentifier/index.ts");
 			const E = (e, a, t) => Object(g.a)(Object(_.a)(e, [C.a]), {
-					method: x.hb.POST,
+					method: x.ib.POST,
 					endpoint: Object(k.a)(`${e.apiUrl}/api/appeal`),
 					data: {
 						api_type: "json",
@@ -256,7 +256,7 @@
 					}
 				}),
 				y = e => Object(g.a)(Object(_.a)(e, [C.a]), {
-					method: x.hb.GET,
+					method: x.ib.GET,
 					endpoint: Object(k.a)(`${e.apiUrl}/api/eligible_for_appeal`),
 					data: {
 						api_type: "json"
@@ -266,7 +266,7 @@
 			const F = "https://www.redditinc.com/policies/content-policy",
 				N = "https://www.reddithelp.com/en/categories/rules-reporting/account-and-community-restrictions/suspensions",
 				S = Object(s.c)({
-					currentUser: v.j
+					currentUser: v.k
 				}),
 				w = Object(i.b)(S, e => ({
 					logoutUser: () => e(Object(p.p)()),
@@ -537,4 +537,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Appeal.277abc7e5cb664392388.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Appeal.2eeb6f4d7691093d841a.js.map

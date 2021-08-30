@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.be389f7a023ec3ff6a28.js
-// Retrieved at 8/30/2021, 12:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.2b2128363c8a1c252fe2.js
+// Retrieved at 8/30/2021, 12:20:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/lib/humanizeDate/index.ts": function(e, t, n) {
@@ -13,9 +13,9 @@
 				showDay: t,
 				useUtc: n,
 				shortMonths: s,
-				locale: o = r.B
+				locale: o = r.C
 			} = {}) {
-				const a = new Date(e * r.Ob);
+				const a = new Date(e * r.Pb);
 				return new Intl.DateTimeFormat(o, {
 					month: s ? "short" : "long",
 					day: t ? "numeric" : void 0,
@@ -27,7 +27,7 @@
 		"./src/lib/humanizeUTCDate/index.tsx": function(e, t, n) {
 			"use strict";
 			var r = n("./src/lib/constants/index.ts");
-			t.a = (e, t = r.B) => {
+			t.a = (e, t = r.C) => {
 				return new Date(1e3 * e).toLocaleString(t, {
 					weekday: "short",
 					month: "short",
@@ -135,7 +135,7 @@
 				x = n("./src/reddit/models/RichTextJson/addRTJParam.ts");
 			const v = (e, t, n) => Object(p.a)(Object(b.a)(e, [f.a]), {
 				endpoint: Object(h.a)(Object(x.a)(`${e.apiUrl}/api/v1/${t}/banned`)),
-				method: m.hb.GET,
+				method: m.ib.GET,
 				data: n
 			});
 			var I = n("./src/reddit/helpers/normalizeUsername/index.tsx"),
@@ -396,7 +396,7 @@
 					t.username = Object(I.a)(t.username), s(Object(i.h)(n));
 					const x = await ((e, t, n) => Object(p.a)(Object(b.a)(e, [f.a]), {
 						endpoint: `${e.apiUrl}${t}api/friend`,
-						method: m.hb.POST,
+						method: m.ib.POST,
 						data: {
 							api_type: "json",
 							ban_reason: n.reason,
@@ -438,7 +438,7 @@
 					const i = s().subreddits.models[e].url,
 						c = await ((e, t, n) => Object(p.a)(Object(b.a)(e, [f.a]), {
 							endpoint: `${e.apiUrl}${t}api/unfriend`,
-							method: m.hb.POST,
+							method: m.ib.POST,
 							data: {
 								api_type: "json",
 								id: n,
@@ -476,7 +476,7 @@
 							await n(Object(d.o)(t.name))
 						}
 					})(), (async () => {
-						const r = Object(y.nb)(s, {
+						const r = Object(y.ob)(s, {
 							userName: t
 						});
 						if (!r) return;
@@ -623,13 +623,13 @@
 						type: e.type
 					} : {
 						id: Object(C.m)(d(), e.name),
-						name: `${s.ec}${e.name}`,
+						name: `${s.fc}${e.name}`,
 						type: e.type
 					});
-					if (!Object(y.J)(d())) return o(Object(c.k)({
+					if (!Object(y.K)(d())) return o(Object(c.k)({
 						actionSource: c.a.Subscribe
 					})), void o(Object(i.k)());
-					const b = Object(y.j)(d());
+					const b = Object(y.k)(d());
 					if (b) {
 						const t = p.length,
 							n = e.length;
@@ -747,7 +747,7 @@
 						multiredditPath: e,
 						multiredditsModelsState: o
 					})), (await ((e, t, n) => Object(m.a)(Object(p.a)(e, [b.a]), {
-						method: s.hb.POST,
+						method: s.ib.POST,
 						endpoint: `${e.apiUrl}/api/multi/favorite`,
 						data: {
 							make_favorite: n ? "true" : "false",
@@ -764,7 +764,7 @@
 				}) => {
 					const a = n(),
 						i = a.multireddits.models;
-					if (!Object(y.J)(a)) return;
+					if (!Object(y.K)(a)) return;
 					const c = (e = !0) => {
 							t(Object(l.f)({
 								text: r.fbt._("Sorry, failed to {followAction}", [r.fbt._param("followAction", e ? r.fbt._("follow", null, {
@@ -785,7 +785,7 @@
 						multiredditPath: e,
 						multiredditsModelsState: i
 					})), (await ((e, t, n) => Object(m.a)(Object(p.a)(e, [b.a]), {
-						method: s.hb.POST,
+						method: s.ib.POST,
 						endpoint: `${e.apiUrl}/api/multi/subscribe`,
 						data: {
 							action: n ? "sub" : "unsub",
@@ -1056,7 +1056,7 @@
 					subredditId: t.subredditId,
 					username: t.username
 				}),
-				user: (e, t) => Object(h.nb)(e, {
+				user: (e, t) => Object(h.ob)(e, {
 					userName: t.username
 				})
 			});
@@ -1375,9 +1375,9 @@
 			var Te = Ue;
 			const Ae = Object(a.c)({
 					activeTooltipId: f.a,
-					currentUser: h.j,
-					isLoggedIn: h.J,
-					hideNSFWPref: h.B,
+					currentUser: h.k,
+					isLoggedIn: h.K,
+					hideNSFWPref: h.C,
 					moderatorPermissions: (e, {
 						subredditId: t
 					}) => t ? Object(u.l)(e, {
@@ -1394,7 +1394,7 @@
 						userName: t,
 						minSize: 32
 					}),
-					user: h.nb,
+					user: h.ob,
 					userFlair: (e, {
 						subredditId: t
 					}) => t ? Object(x.c)(e, {
@@ -1725,8 +1725,8 @@
 				}) {
 					const n = Object(a.a)(),
 						r = null != t ? t : n;
-					return s.a.createElement(s.a.Fragment, null, function(e, t = l.B) {
-						const n = e * l.Ob;
+					return s.a.createElement(s.a.Fragment, null, function(e, t = l.C) {
+						const n = e * l.Pb;
 						return new Date(n).toLocaleString(t, {
 							weekday: "short",
 							month: "short",
@@ -1742,29 +1742,29 @@
 				m = n("./node_modules/fbt/lib/FbtPublic.js"),
 				p = n("./src/lib/eventTools/index.ts");
 
-			function b(e, t = l.B) {
+			function b(e, t = l.C) {
 				return e.toLocaleDateString(t, {
 					month: "numeric",
 					day: "numeric"
 				})
 			}
 
-			function f(e, t, n, r = l.B) {
+			function f(e, t, n, r = l.C) {
 				const s = Object(p.e)(e, t),
-					o = new Date(e * l.Ob);
+					o = new Date(e * l.Pb);
 				let a;
 				if (s === p.a.Live || n) return m.fbt._("Now", null, {
 					hk: "Prpcg"
 				});
 				return s === p.a.Future ? a = Object(p.d)(e) ? m.fbt._("Today", null, {
 					hk: "1sZpnp"
-				}).toString() : Object(p.b)(e) >= 5 ? b(o, r) : function(e, t = l.B) {
+				}).toString() : Object(p.b)(e) >= 5 ? b(o, r) : function(e, t = l.C) {
 					return e.toLocaleDateString(t, {
 						weekday: "long"
 					})
 				}(o, r) : s === p.a.Past && (a = Object(p.d)(e) ? m.fbt._("Today", null, {
 					hk: "1sZpnp"
-				}).toString() : b(o, r)), `${a} @ ${function(e,t=l.B){return e.toLocaleTimeString(t,{hour12:!0,hour:"numeric",minute:"2-digit"}).replace(/ /g,"").toUpperCase()}(o,r)}`
+				}).toString() : b(o, r)), `${a} @ ${function(e,t=l.C){return e.toLocaleTimeString(t,{hour12:!0,hour:"numeric",minute:"2-digit"}).replace(/ /g,"").toUpperCase()}(o,r)}`
 			}
 			var h = function({
 				startTime: e,
@@ -2582,8 +2582,8 @@
 				o = n("./src/reddit/actions/preferences.ts"),
 				a = n("./src/reddit/selectors/user.ts");
 			const i = Object(s.c)({
-					currentUser: a.j,
-					hideNSFWPref: a.B
+					currentUser: a.k,
+					hideNSFWPref: a.C
 				}),
 				c = Object(r.b)(i, e => ({
 					imageUpdateRequested: (t, n) => e(Object(o.z)(t, n))
@@ -3332,7 +3332,7 @@
 					subredditNames: n,
 					subscribe: r
 				}) => Object(o.a)(Object(i.a)(e, [c.a]), {
-					method: s.hb.POST,
+					method: s.ib.POST,
 					endpoint: Object(d.a)(`${e.apiUrl}/api/subscribe`),
 					data: {
 						action: r ? "sub" : "unsub",
@@ -3342,7 +3342,7 @@
 					}
 				}),
 				u = (e, t, n) => Object(o.a)(Object(i.a)(e, [c.a]), {
-					method: s.hb.POST,
+					method: s.ib.POST,
 					endpoint: `${e.apiUrl}/api/favorite`,
 					data: {
 						make_favorite: n ? "true" : "false",
@@ -3714,9 +3714,9 @@
 				s = n("./node_modules/react-redux/es/index.js"),
 				o = n("./src/reddit/selectors/meta.ts");
 			t.a = "undefined" == typeof document ? function() {
-				return Object(s.e)(o.i) || r.B
+				return Object(s.e)(o.i) || r.C
 			} : function() {
-				return document.documentElement.lang || r.B
+				return document.documentElement.lang || r.C
 			}
 		},
 		"./src/reddit/icons/fonts/Info/index.tsx": function(e, t, n) {
@@ -3934,7 +3934,7 @@
 					subredditId: t,
 					username: n
 				}) => {
-					const r = Object(a.nb)(e, {
+					const r = Object(a.ob)(e, {
 						userName: n
 					});
 					if (!r) return;
@@ -3967,4 +3967,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.be389f7a023ec3ff6a28.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.2b2128363c8a1c252fe2.js.map

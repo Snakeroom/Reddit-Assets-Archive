@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Powerups.33beaebc62ae7242e713.js
-// Retrieved at 8/30/2021, 11:10:18 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Powerups.11fef34a57179bebfcb7.js
+// Retrieved at 8/30/2021, 12:20:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Powerups"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, a, t) {
@@ -530,7 +530,7 @@
 			const v = e => {
 				const a = Object(k.a)(e);
 				if (!a) return null;
-				const t = Object(b.G)(e),
+				const t = Object(b.H)(e),
 					n = [];
 				for (const l of a) {
 					const a = e.subreddits.models[l];
@@ -824,7 +824,7 @@
 			const z = Y()(["wallstreetbets", "pennystocks", "tiktokcringe", "lgbt", "python", "unexpected", "chloe", "pewdiepiesubmissions", "roastme", "jacksepticeye", "thebachelor", "taylorswift", "bigbrother", "belowdeck", "blackpink"], 3),
 				R = () => {
 					const e = Object(h.a)(),
-						a = Object(r.e)(b.W),
+						a = Object(r.e)(b.X),
 						t = Object(U.a)(),
 						l = () => {
 							e((() => e => ({
@@ -856,9 +856,9 @@
 						className: G.a.communityName
 					}, "r/", e))))) : null
 				};
-			var V = t("./src/reddit/components/CollapsibleFAQ/index.tsx"),
-				X = t("./src/reddit/pages/Powerups/FaqSection.m.less"),
-				J = t.n(X);
+			var X = t("./src/reddit/components/CollapsibleFAQ/index.tsx"),
+				V = t("./src/reddit/pages/Powerups/FaqSection.m.less"),
+				J = t.n(V);
 			const {
 				fbt: Z
 			} = t("./node_modules/fbt/lib/FbtPublic.js"), K = [{
@@ -943,7 +943,7 @@
 			}, K.map(({
 				prompt: e,
 				answer: a
-			}, t) => s.a.createElement(V.a, {
+			}, t) => s.a.createElement(X.a, {
 				defaultClosed: !0,
 				question: e(),
 				key: t
@@ -1006,7 +1006,7 @@
 			}), s.a.createElement("div", {
 				className: Object(o.a)(J.a.faqQuestionMark, J.a.faqQuestionMarkBottomRight)
 			})), ne = () => {
-				const e = Object(r.e)(b.W);
+				const e = Object(r.e)(b.X);
 				return s.a.createElement("div", {
 					className: J.a.ctaButtonCirlcesAndBolt
 				}, s.a.createElement("div", {
@@ -1069,7 +1069,7 @@
 			}, re._("{perkDescription}", [re._param("perkDescription", a)], {
 				hk: "2Uanfp"
 			}))), ie = () => {
-				const e = Object(r.e)(b.W);
+				const e = Object(r.e)(b.X);
 				return s.a.createElement("div", {
 					className: Object(o.a)(se.a.perksSection, {
 						[se.a.isNightmodeOn]: e
@@ -1103,7 +1103,7 @@
 			a.default = () => {
 				const e = Object(h.a)(),
 					a = Object(r.e)(v),
-					t = Object(r.e)(b.W),
+					t = Object(r.e)(b.X),
 					[i, m] = Object(l.useState)(!1);
 				Object(l.useEffect)(() => {
 					e((() => e => ({
@@ -1292,4 +1292,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Powerups.33beaebc62ae7242e713.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Powerups.11fef34a57179bebfcb7.js.map

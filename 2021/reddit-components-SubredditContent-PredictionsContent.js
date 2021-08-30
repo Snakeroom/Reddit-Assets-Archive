@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.b069dbd373c1567fe423.js
-// Retrieved at 8/30/2021, 12:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.649c54dbe33a546e08cd.js
+// Retrieved at 8/30/2021, 12:20:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SubredditContent-PredictionsContent"], {
 		"./node_modules/uuid/index.js": function(t, e, n) {
@@ -60,9 +60,9 @@
 			})), n.d(e, "s", (function() {
 				return M
 			})), n.d(e, "l", (function() {
-				return J
-			})), n.d(e, "h", (function() {
 				return R
+			})), n.d(e, "h", (function() {
+				return J
 			})), n.d(e, "i", (function() {
 				return V
 			})), n.d(e, "o", (function() {
@@ -110,7 +110,7 @@
 				E = (t, e, n, o) => async (r, i, {
 					gqlContext: d
 				}) => {
-					const c = Object(x.J)(i()),
+					const c = Object(x.K)(i()),
 						a = await Object(p.j)(d(), {
 							subredditId: t,
 							period: e,
@@ -277,7 +277,7 @@
 						} = i.body.data;
 					if (!d.tournament) throw new Error("Failed to update prediction name");
 					return e(U(d.tournament)), d.tournament
-				}, J = t => async (e, n, {
+				}, R = t => async (e, n, {
 					gqlContext: o
 				}) => {
 					const r = await Object(p.g)(o(), {
@@ -288,7 +288,7 @@
 						} = r.body.data;
 					if (!i.tournament) throw new Error("Failed to update prediction name");
 					return e(U(i.tournament)), i.tournament
-				}, R = t => async (e, n, {
+				}, J = t => async (e, n, {
 					gqlContext: o
 				}) => {
 					const r = await Object(p.h)(o(), {
@@ -334,7 +334,7 @@
 					})), c
 				}, z = t => async (e, n) => {
 					const o = n();
-					Object(x.J)(o) ? await e(Object(f.h)(j.a.ECON_PREDICTIONS_PREMIUM_UPSELL, {
+					Object(x.K)(o) ? await e(Object(f.h)(j.a.ECON_PREDICTIONS_PREMIUM_UPSELL, {
 						feature: t
 					})) : await e(Object(m.i)())
 				}, H = () => Object(f.g)(j.a.ECON_PREDICTIONS_PREMIUM_UPSELL), W = t => async (e, n, {
@@ -1141,4 +1141,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.b069dbd373c1567fe423.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.649c54dbe33a546e08cd.js.map

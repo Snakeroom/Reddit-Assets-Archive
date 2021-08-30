@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.de9ee28fd5afe94865ad.js
-// Retrieved at 8/30/2021, 12:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.9d105f1d5d7eaa6e0d77.js
+// Retrieved at 8/30/2021, 12:20:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-MediumPost"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -584,8 +584,8 @@
 				W = s("./src/reddit/contexts/Post/index.tsx"),
 				U = s("./src/reddit/selectors/experiments/categories.ts"),
 				V = s("./src/reddit/selectors/experiments/econAwardsPlaque.ts"),
-				H = s("./src/reddit/components/CommunityTopicSurvey/AggregateSurvey.tsx"),
-				D = s("./src/reddit/hooks/useIsOverlay.ts"),
+				D = s("./src/reddit/components/CommunityTopicSurvey/AggregateSurvey.tsx"),
+				H = s("./src/reddit/hooks/useIsOverlay.ts"),
 				z = s("./src/reddit/hooks/useUserContext.ts"),
 				q = s("./src/reddit/selectors/inFeedChaining.ts"),
 				G = s("./src/reddit/selectors/moderatorPermissions.ts"),
@@ -633,7 +633,7 @@
 						hideNSFWPref: W,
 						hostPostData: U,
 						inSubredditOrProfile: V = !1,
-						isCheckboxSelected: D,
+						isCheckboxSelected: H,
 						isCommentsPage: z,
 						isCurrentUserProfilePost: q,
 						isFrontpage: G,
@@ -672,9 +672,9 @@
 							listingName: re,
 							postId: le
 						}))
-					}, [ke, ne, re, le]), Pe = e => e === R.a.upvoted ? ke(Object(u.db)(le)) : ke(Object(u.w)(le)), _e = () => ke(Object(u.Z)(le)), Ie = me ? void 0 : N, Te = Object(L.a)(ie), we = ae && Te, Ne = Object(M.a)(ie), Fe = Object(A.a)(ie), Me = Object(j.c)(de), Ae = !!(null == U ? void 0 : U.shouldShowLinkedPosts), Le = be, Be = Object(F.a)(de), Re = V && !fe && !Ae && !Le || Se, We = Re && !!de.source && !s, Ue = !(G && i || Y) && !q && (!V || Ae || Le), Ve = (!V || Ae || Le) && !de.isSponsored, He = Object(c.t)(de, oe), {
-						source: De
-					} = He, ze = n.a.createElement(k.a, {
+					}, [ke, ne, re, le]), Pe = e => e === R.a.upvoted ? ke(Object(u.db)(le)) : ke(Object(u.w)(le)), _e = () => ke(Object(u.Z)(le)), Ie = me ? void 0 : N, Te = Object(L.a)(ie), we = ae && Te, Ne = Object(M.a)(ie), Fe = Object(A.a)(ie), Me = Object(j.c)(de), Ae = !!(null == U ? void 0 : U.shouldShowLinkedPosts), Le = be, Be = Object(F.a)(de), Re = V && !fe && !Ae && !Le || Se, We = Re && !!de.source && !s, Ue = !(G && i || Y) && !q && (!V || Ae || Le), Ve = (!V || Ae || Le) && !de.isSponsored, De = Object(c.t)(de, oe), {
+						source: He
+					} = De, ze = n.a.createElement(k.a, {
 						className: Object(d.a)(te.a.container, t, Q.a.largeAndMediumPostStyles, Q.a.largeAndMediumActiveStyles, Object(B.a)(e), {
 							[Q.a.mUseRedditTheme]: e.redditStyle || e["data-redditstyle"]
 						}),
@@ -688,7 +688,7 @@
 						model: de,
 						handleVote: Pe,
 						showBulkActionCheckbox: he,
-						isCheckboxSelected: D,
+						isCheckboxSelected: H,
 						toggleCheckbox: ge,
 						flairStyleTemplate: Ie,
 						redditStyle: me,
@@ -755,11 +755,11 @@
 						shouldShowSubscribeButton: Ue,
 						subredditOrProfile: Oe,
 						templatePlaceholderImage: Ie && Ie.postPlaceholderImage
-					})), ye && De && De.url && n.a.createElement(p.a, {
+					})), ye && He && He.url && n.a.createElement(p.a, {
 						className: te.a.adLinkWrapper
 					}, n.a.createElement(b.a, {
 						post: de,
-						adLinkContent: He
+						adLinkContent: De
 					})), ae && Te && Me && n.a.createElement(g.a, {
 						className: te.a.modModeReports,
 						onIgnoreReports: _e,
@@ -802,7 +802,7 @@
 							hide: !1,
 							report: !1
 						})
-					}))), G && n.a.createElement(H.a, {
+					}))), G && n.a.createElement(D.a, {
 						post: de,
 						postIds: null != ue ? ue : [],
 						subredditId: null == Oe ? void 0 : Oe.id
@@ -822,7 +822,7 @@
 				return n.a.createElement(ne, se({}, e, s, {
 					modModeEnabled: c.modModeEnabled,
 					hideNSFWPref: c.prefs.hideNSFW,
-					isOverlay: Object(D.a)(),
+					isOverlay: Object(H.a)(),
 					isAvatarPostEnabled: a
 				}))
 			})))
@@ -1049,7 +1049,7 @@
 					isSubreddit: x.M,
 					pageLayer: e => e
 				}),
-				H = Object(a.c)({
+				D = Object(a.c)({
 					isPinned: (e, {
 						post: t
 					}) => Object(T.q)(e, {
@@ -1057,7 +1057,7 @@
 					}),
 					modModeEnabled: x.S
 				}),
-				D = Object(i.b)(H, (e, t) => ({
+				H = Object(i.b)(D, (e, t) => ({
 					onHideTooltip: () => e(Object(l.i)()),
 					onOpenRemovalReasonModal: () => {
 						s.e("removalReasonActions").then(s.bind(null, "./src/reddit/actions/removalReasons/index.ts")).then(s => e(s.fetchReasonsAndOpenModal(t.post.belongsTo.id, [t.post.id])))
@@ -1066,7 +1066,7 @@
 						tooltipId: t
 					}))
 				}));
-			t.a = V(D(({
+			t.a = V(H(({
 				className: e,
 				displayText: t,
 				isSubreddit: s,
@@ -1076,8 +1076,8 @@
 				isProfilePostListing: T,
 				modModeEnabled: w,
 				onHideTooltip: V,
-				onOpenRemovalReasonModal: H,
-				onShowTooltip: D,
+				onOpenRemovalReasonModal: D,
+				onShowTooltip: H,
 				post: z,
 				tooltipType: q
 			}) => {
@@ -1100,7 +1100,7 @@
 					ie = z.bannedBy && Object(P.b)(z.bannedBy);
 				return r.a.createElement("div", {
 					className: e
-				}, a && t && z.distinguishType === d.E.MODERATOR && r.a.createElement(n.Fragment, null, r.a.createElement(y.a, {
+				}, a && t && z.distinguishType === d.F.MODERATOR && r.a.createElement(n.Fragment, null, r.a.createElement(y.a, {
 					name: "mod",
 					isFilled: !0,
 					className: Object(c.a)(N.a.icon, N.a.modIcon)
@@ -1112,7 +1112,7 @@
 					className: Object(c.a)(N.a.icon, N.a.archivedIcon),
 					desc: A(),
 					id: Y,
-					onMouseEnter: D(Y),
+					onMouseEnter: H(Y),
 					onMouseLeave: V
 				}), r.a.createElement(u.c, F({
 					tooltipId: Y,
@@ -1122,7 +1122,7 @@
 					className: Object(c.a)(N.a.icon, N.a.lockIcon),
 					desc: L(),
 					id: $,
-					onMouseEnter: D($),
+					onMouseEnter: H($),
 					onMouseLeave: V
 				}), r.a.createElement(u.c, F({
 					tooltipId: $,
@@ -1132,7 +1132,7 @@
 					className: Object(c.a)(N.a.icon, N.a.stickyIcon),
 					desc: R(),
 					id: ne,
-					onMouseEnter: D(ne),
+					onMouseEnter: H(ne),
 					onMouseLeave: V
 				}), r.a.createElement(u.c, F({
 					tooltipId: ne,
@@ -1142,7 +1142,7 @@
 					className: Object(c.a)(N.a.icon, N.a.stickyIcon),
 					desc: W(),
 					id: re,
-					onMouseEnter: D(re),
+					onMouseEnter: H(re),
 					onMouseLeave: V
 				}), r.a.createElement(u.c, F({
 					tooltipId: re,
@@ -1152,7 +1152,7 @@
 					className: Object(c.a)(N.a.icon, N.a.approveIcon),
 					desc: Object(v.a)(z),
 					id: X,
-					onMouseEnter: D(X),
+					onMouseEnter: H(X),
 					onMouseLeave: V
 				}), r.a.createElement(u.c, F({
 					tooltipId: X,
@@ -1162,16 +1162,16 @@
 					className: Object(c.a)(N.a.icon, N.a.removeIcon),
 					desc: Object(v.c)(z),
 					id: te,
-					onMouseEnter: D(te),
+					onMouseEnter: H(te),
 					onMouseLeave: V
 				}), K && r.a.createElement(m.a, {
 					className: N.a.addRemovalReason,
-					onClick: H,
+					onClick: D,
 					text: o.fbt._("Add a removal reason", null, {
 						hk: "1YDo3"
 					})
 				}), (z.modRemovalReason || z.modNote) && r.a.createElement(M, {
-					onMouseEnter: D(te),
+					onMouseEnter: H(te),
 					onMouseLeave: V
 				}, o.fbt._("Removal reason", null, {
 					hk: "2DhKVZ"
@@ -1183,7 +1183,7 @@
 					className: Object(c.a)(N.a.icon, N.a.spamIcon),
 					desc: Object(v.e)(z),
 					id: oe,
-					onMouseEnter: D(oe),
+					onMouseEnter: H(oe),
 					onMouseLeave: V
 				}), r.a.createElement(u.c, F({
 					tooltipId: oe,
@@ -1204,7 +1204,7 @@
 					className: Object(c.a)(N.a.icon, N.a.reportIcon),
 					desc: Object(v.d)(z.numReports),
 					id: se,
-					onMouseEnter: D(se),
+					onMouseEnter: H(se),
 					onMouseLeave: V
 				}), r.a.createElement(u.c, F({
 					tooltipId: se,
@@ -1532,14 +1532,14 @@
 				showSubredditIcon: W,
 				subredditOrProfile: U,
 				isFollowed: V,
-				shouldShowFollowButton: H,
-				onFollowPostClick: D
+				shouldShowFollowButton: D,
+				onFollowPostClick: H
 			}) => {
 				const z = n || F,
 					q = U && Object(g.h)(U),
 					G = Object(i.e)(e => {
 						if (!q) return !0;
-						const t = Object(j.tb)(e, A.author || "");
+						const t = Object(j.ub)(e, A.author || "");
 						return !t || t.enableFollowers
 					});
 				return r.a.createElement("div", {
@@ -1593,9 +1593,9 @@
 					source: A.source
 				}, r.a.createElement(E.a, {
 					className: k.a.outboundLinkIcon
-				})), H && G && r.a.createElement(l.a, {
+				})), D && G && r.a.createElement(l.a, {
 					isFilled: !!V,
-					onClick: D,
+					onClick: H,
 					hasTooltip: !0,
 					tooltipText: o.fbt._("Follow post to stay updated", null, {
 						hk: "26UP9Z"
@@ -2288,7 +2288,7 @@
 				n = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				r = s("./src/reddit/selectors/user.ts");
 			const i = e => {
-				return Object(r.G)(e) || o.H.Treatment1 === Object(n.c)(e, {
+				return Object(r.H)(e) || o.I.Treatment1 === Object(n.c)(e, {
 					experimentEligibilitySelector: n.a,
 					experimentName: o.B
 				})
@@ -2304,9 +2304,9 @@
 			const r = e => {
 				const t = Object(n.c)(e, {
 					experimentEligibilitySelector: n.a,
-					experimentName: o.Hb
+					experimentName: o.Jb
 				});
-				return !(!t || Object(o.je)(t))
+				return !(!t || Object(o.le)(t))
 			}
 		},
 		"./src/reddit/selectors/i18n/index.ts": function(e, t, s) {
@@ -2322,7 +2322,7 @@
 				i = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const a = e => {
 					const t = Object(i.a)(e);
-					return Boolean(t) && !Object(n.je)(t)
+					return Boolean(t) && !Object(n.le)(t)
 				},
 				c = Object(o.a)(a, r.d, (e, t) => e && !t)
 		},
@@ -2336,10 +2336,10 @@
 				r = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = s("./src/reddit/selectors/posts.ts");
 			const a = Object(o.a)(e => Object(r.c)(e, {
-				experimentName: n.id,
+				experimentName: n.kd,
 				experimentEligibilitySelector: r.a
-			}), i.I, (e, t) => e === n.sd.Enabled && (null == t ? void 0 : t.isCreatedFromAdsUi) || (null == t ? void 0 : t.isSponsored))
+			}), i.I, (e, t) => e === n.ud.Enabled && (null == t ? void 0 : t.isCreatedFromAdsUi) || (null == t ? void 0 : t.isSponsored))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.de9ee28fd5afe94865ad.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.9d105f1d5d7eaa6e0d77.js.map

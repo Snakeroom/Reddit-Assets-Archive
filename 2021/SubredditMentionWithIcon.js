@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.718628fbfca1e8e28be9.js
-// Retrieved at 8/18/2021, 6:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.4cfb41b27472727569ba.js
+// Retrieved at 8/30/2021, 12:20:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditMentionWithIcon"], {
 		"./src/reddit/actions/subredditMention/constants.ts": function(e, t, s) {
@@ -206,13 +206,13 @@
 						type: e.type
 					} : {
 						id: Object(j.m)(a(), e.name),
-						name: `${i.ec}${e.name}`,
+						name: `${i.fc}${e.name}`,
 						type: e.type
 					});
-					if (!Object(C.J)(a())) return r(Object(c.k)({
+					if (!Object(C.K)(a())) return r(Object(c.k)({
 						actionSource: c.a.Subscribe
 					})), void r(Object(d.k)());
-					const p = Object(C.j)(a());
+					const p = Object(C.k)(a());
 					if (p) {
 						const t = m.length,
 							s = e.length;
@@ -330,7 +330,7 @@
 						multiredditPath: e,
 						multiredditsModelsState: r
 					})), (await ((e, t, s) => Object(b.a)(Object(m.a)(e, [p.a]), {
-						method: i.hb.POST,
+						method: i.ib.POST,
 						endpoint: `${e.apiUrl}/api/multi/favorite`,
 						data: {
 							make_favorite: s ? "true" : "false",
@@ -347,7 +347,7 @@
 				}) => {
 					const o = s(),
 						d = o.multireddits.models;
-					if (!Object(C.J)(o)) return;
+					if (!Object(C.K)(o)) return;
 					const c = (e = !0) => {
 							t(Object(u.f)({
 								text: n.fbt._("Sorry, failed to {followAction}", [n.fbt._param("followAction", e ? n.fbt._("follow", null, {
@@ -368,7 +368,7 @@
 						multiredditPath: e,
 						multiredditsModelsState: d
 					})), (await ((e, t, s) => Object(b.a)(Object(m.a)(e, [p.a]), {
-						method: i.hb.POST,
+						method: i.ib.POST,
 						endpoint: `${e.apiUrl}/api/multi/subscribe`,
 						data: {
 							action: s ? "sub" : "unsub",
@@ -947,8 +947,8 @@
 				fbt: ie
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), re = e => `subreddit-mention-${e}`, oe = Object(c.c)({
 				haveError: j.d,
-				hideNSFWPref: te.B,
-				isEmployee: te.G,
+				hideNSFWPref: te.C,
+				isEmployee: te.H,
 				isPending: j.c,
 				postIds: j.f,
 				subreddit: E.a,
@@ -972,7 +972,7 @@
 						this.props.showTooltip(e), this.props.sendEvent(Object($.f)(this.props.subredditName)), this.props.postIds.map(e => this.props.sendEvent(Object($.g)(this.props.subredditName, e)))
 					}, this.onClickPost = e => {
 						this.props.sendEvent(Object($.b)(this.props.subredditName, e))
-					}, this.handleScroll = i()(() => this.loadSubredditData && this.loadSubredditData(), l.I), this.loadSubredditData = () => {
+					}, this.handleScroll = i()(() => this.loadSubredditData && this.loadSubredditData(), l.J), this.loadSubredditData = () => {
 						const {
 							subreddit: e,
 							subredditAboutInfo: t,
@@ -1039,7 +1039,7 @@
 					if (!r || !d || Object(I.k)(r)) return this.renderDefault();
 					const {
 						uniqueId: a
-					} = this.state, u = Object(b.a)(this.props.subredditName, l.U.TOP), m = r.isNSFW && e || r.type === I.f.EmployeesOnly && !t || r.type === I.f.Private && !d.userIsSubscriber, p = m || r.isQuarantined || r.isNSFW;
+					} = this.state, u = Object(b.a)(this.props.subredditName, l.V.TOP), m = r.isNSFW && e || r.type === I.f.EmployeesOnly && !t || r.type === I.f.Private && !d.userIsSubscriber, p = m || r.isQuarantined || r.isNSFW;
 					return o.a.createElement("span", {
 						className: ne.a.subredditMentionContainer,
 						onMouseEnter: this.onShowTooltip,
@@ -1633,7 +1633,7 @@
 					subredditNames: s,
 					subscribe: n
 				}) => Object(r.a)(Object(d.a)(e, [c.a]), {
-					method: i.hb.POST,
+					method: i.ib.POST,
 					endpoint: Object(a.a)(`${e.apiUrl}/api/subscribe`),
 					data: {
 						action: n ? "sub" : "unsub",
@@ -1643,7 +1643,7 @@
 					}
 				}),
 				l = (e, t, s) => Object(r.a)(Object(d.a)(e, [c.a]), {
-					method: i.hb.POST,
+					method: i.ib.POST,
 					endpoint: `${e.apiUrl}/api/favorite`,
 					data: {
 						make_favorite: s ? "true" : "false",
@@ -2283,4 +2283,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.718628fbfca1e8e28be9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.4cfb41b27472727569ba.js.map

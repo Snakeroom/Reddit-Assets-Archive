@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.1321c7a89c801e5e3e9a.js
-// Retrieved at 8/30/2021, 12:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.5998501101bd01828cba.js
+// Retrieved at 8/30/2021, 12:20:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"], {
 		"./src/lib/linkMatchers/index.ts": function(e, t, n) {
@@ -132,9 +132,9 @@
 			})), n.d(t, "f", (function() {
 				return Q
 			})), n.d(t, "c", (function() {
-				return Z
-			})), n.d(t, "d", (function() {
 				return K
+			})), n.d(t, "d", (function() {
+				return Z
 			}));
 			var r = n("./node_modules/fbt/lib/FbtPublic.js"),
 				s = n("./node_modules/uuid/index.js"),
@@ -170,7 +170,7 @@
 				C = (e, t, n, r) => async (s, i, {
 					gqlContext: a
 				}) => {
-					const o = Object(w.J)(i()),
+					const o = Object(w.K)(i()),
 						d = await Object(m.j)(a(), {
 							subredditId: e,
 							period: t,
@@ -394,10 +394,10 @@
 					})), o
 				}, J = e => async (t, n) => {
 					const r = n();
-					Object(w.J)(r) ? await t(Object(h.h)(g.a.ECON_PREDICTIONS_PREMIUM_UPSELL, {
+					Object(w.K)(r) ? await t(Object(h.h)(g.a.ECON_PREDICTIONS_PREMIUM_UPSELL, {
 						feature: e
 					})) : await t(Object(b.i)())
-				}, Q = () => Object(h.g)(g.a.ECON_PREDICTIONS_PREMIUM_UPSELL), Z = e => async (t, n, {
+				}, Q = () => Object(h.g)(g.a.ECON_PREDICTIONS_PREMIUM_UPSELL), K = e => async (t, n, {
 					gqlContext: s
 				}) => {
 					try {
@@ -420,7 +420,7 @@
 					}
 				};
 
-			function K(e, t) {
+			function Z(e, t) {
 				return async (n, r, {
 					gqlContext: s
 				}) => {
@@ -1129,7 +1129,7 @@
 			}) => {
 				const n = Object(a.d)(),
 					v = Object(b.a)(),
-					w = Object(a.e)(x.j),
+					w = Object(a.e)(x.k),
 					j = Object(a.e)(e => Object(g.j)(e, {
 						subredditId: t
 					})),
@@ -1598,13 +1598,13 @@
 				fbt: z
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 			const q = Object(d.u)(),
-				J = [U.Jb.SUBREDDIT, U.Jb.COMMENTS, U.Jb.COLLECTION_COMMENTS],
+				J = [U.Kb.SUBREDDIT, U.Kb.COMMENTS, U.Kb.COLLECTION_COMMENTS],
 				Q = Object(a.c)({
 					isMetaFilterEnabled: (e, t) => !!e.subreddits.appliedFilters.meta[t.subredditId],
 					isPostsRoute: (e, t) => !!t.pageLayer && !!t.pageLayer.meta && J.indexOf(t.pageLayer.meta.name) > -1,
 					isPredictionsPage: (e, t) => !!t.pageLayer && Object(d.N)(t.pageLayer)
 				});
-			var Z = q(Object(i.b)(Q, (e, t) => ({
+			var K = q(Object(i.b)(Q, (e, t) => ({
 					onTurnOffMetaFilter: () => e(Object(T.p)({
 						subredditId: t.subredditId,
 						forceState: !1
@@ -1629,7 +1629,7 @@
 						hk: "36nXSp"
 					}))
 				}))),
-				K = n("./src/lib/CSSVariableProvider/withTheme.tsx"),
+				Z = n("./src/lib/CSSVariableProvider/withTheme.tsx"),
 				Y = n("./src/higherOrderComponents/makeAsync.tsx");
 			var $ = Object(Y.a)({
 					ErrorComponent: () => null,
@@ -1640,7 +1640,7 @@
 				ee = n("./src/reddit/constants/screenWidths.ts"),
 				te = n("./src/reddit/models/Theme/index.ts"),
 				ne = n("./src/reddit/models/Theme/NewColorSystem/index.ts");
-			const re = Object(K.a)(({
+			const re = Object(Z.a)(({
 				className: e,
 				children: t,
 				isTopBannerVariant: n,
@@ -1674,7 +1674,7 @@
 					homeUrl: t,
 					isTopBannerVariant: n,
 					pageLayer: r
-				} = e, i = !!r && !!r.meta && r.meta.name === U.Jb.SUBREDDIT_WIKI, a = `wiki/${ie.i}`, o = t.endsWith("/") ? t + a : `${t}/${a}`;
+				} = e, i = !!r && !!r.meta && r.meta.name === U.Kb.SUBREDDIT_WIKI, a = `wiki/${ie.i}`, o = t.endsWith("/") ? t + a : `${t}/${a}`;
 				return s.a.createElement(O, {
 					isActive: i,
 					isTopBannerVariant: n,
@@ -1697,7 +1697,7 @@
 				layout: e.layout,
 				disableFullscreen: e.disableFullscreen,
 				maxWidth: e.maxWidth
-			}, e.subredditId && s.a.createElement(s.a.Fragment, null, s.a.createElement(Z, {
+			}, e.subredditId && s.a.createElement(s.a.Fragment, null, s.a.createElement(K, {
 				homeUrl: e.homeUrl,
 				isTopBannerVariant: e.isTopBannerVariant,
 				subredditId: e.subredditId
@@ -2182,7 +2182,7 @@
 				N = m.a.wrapped(o.a, "RawHTMLDisplay", j.a);
 			var I = Object(i.b)(() => Object(a.c)({
 					forceRedditStyle: f.l,
-					isNightmodeOn: x.W
+					isNightmodeOn: x.X
 				}))(e => s.a.createElement(d.a, {
 					styles: e.widget.styles,
 					title: e.widget.shortName,
@@ -2268,8 +2268,8 @@
 			const Q = Object(a.c)({
 					stylesheet: e => e.stylesheets
 				}),
-				Z = Object(i.b)(Q),
-				K = (e, t, n) => `<head>\n  <link rel="stylesheet" href="${e}">\n  <link rel="stylesheet" href="${t}">\n  <base target="_blank">\n</head>\n<body>${n}</body>`;
+				K = Object(i.b)(Q),
+				Z = (e, t, n) => `<head>\n  <link rel="stylesheet" href="${e}">\n  <link rel="stylesheet" href="${t}">\n  <base target="_blank">\n</head>\n<body>${n}</body>`;
 			class Y extends s.a.Component {
 				constructor() {
 					super(...arguments), this.storeRef = e => {
@@ -2289,7 +2289,7 @@
 					this.iframe && this.iframe.contentWindow && this.iframeContent && (this.iframe.contentWindow.document.body && this.iframe.contentWindow.document.body.childNodes.length || this.writeIFrameDocument())
 				}
 				renderIframeContent(e) {
-					e.widget.stylesheetUrl && e.widget.textHtml && (this.iframeContent = K(e.stylesheet, e.widget.stylesheetUrl, e.widget.textHtml))
+					e.widget.stylesheetUrl && e.widget.textHtml && (this.iframeContent = Z(e.stylesheet, e.widget.stylesheetUrl, e.widget.textHtml))
 				}
 				render() {
 					const {
@@ -2307,7 +2307,7 @@
 					}))
 				}
 			}
-			var $ = Z(Y),
+			var $ = K(Y),
 				X = n("./src/reddit/components/Widgets/Image/ImageFrame.m.less"),
 				ee = n.n(X);
 			var te = m.a.div("ImageFrame", ee.a),
@@ -2388,7 +2388,7 @@
 				ye = m.a.div("LinkContainer", ge.a),
 				Ee = Object(a.c)({
 					userIsBanned: be.db,
-					userIsLoggedIn: x.J
+					userIsLoggedIn: x.K
 				});
 			var ke = Object(i.b)(Ee)(e => {
 					const {
@@ -3211,8 +3211,8 @@
 			const o = e => s.e[Object(i.Q)(e, {})] === s.d.Card,
 				d = e => Object(a.c)(e, {
 					experimentEligibilitySelector: o,
-					experimentName: r.R
-				}) === r.ob.Treatment
+					experimentName: r.T
+				}) === r.qb.Treatment
 		},
 		"./src/reddit/selectors/features/predictions/creation/index.ts": function(e, t, n) {
 			"use strict";
@@ -3307,4 +3307,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.1321c7a89c801e5e3e9a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.5998501101bd01828cba.js.map

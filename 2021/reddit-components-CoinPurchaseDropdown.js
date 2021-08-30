@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.b06444fac329c58fd3bd.js
-// Retrieved at 8/17/2021, 2:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.74c0aa020ed65d48cdbf.js
+// Retrieved at 8/30/2021, 12:20:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CoinPurchaseDropdown"], {
 		"./src/reddit/actions/goldPurchaseModals/coinPurchaseModal.ts": function(e, t, r) {
@@ -9,7 +9,7 @@
 			})), r.d(t, "a", (function() {
 				return k
 			})), r.d(t, "e", (function() {
-				return v
+				return E
 			})), r.d(t, "b", (function() {
 				return I
 			})), r.d(t, "d", (function() {
@@ -50,7 +50,7 @@
 					t(_(e)), t(Object(l.h)(c.a.ECON_COIN_PURCHASE))
 				}, k = () => async (e, t) => {
 					e(P()), e(Object(l.g)(c.a.ECON_COIN_PURCHASE))
-				}, w = Object(a.a)(x.u), v = ({
+				}, w = Object(a.a)(x.u), E = ({
 					correlationId: e,
 					packageId: t
 				}) => async (r, n) => {
@@ -59,11 +59,11 @@
 						correlationId: e,
 						packageId: t
 					})), r(Object(l.i)(c.a.GOLD_TARGETED_OFFER_MODAL))) : s.c.captureMessage(`Tried to show targeted offer, but could not find package id: ${t}`)
-				}, E = Object(a.a)(x.p), I = ({
+				}, v = Object(a.a)(x.p), I = ({
 					correlationId: e,
 					packageId: t
 				}) => async (r, n) => {
-					Object(C.c)(n(), t) ? (r(E({
+					Object(C.c)(n(), t) ? (r(v({
 						correlationId: e,
 						packageId: t
 					})), r(Object(l.i)(c.a.ECON_COIN_PACKAGE_OFFER))) : s.c.captureMessage(`Tried to show coin package offer, but could not find package id: ${t}`)
@@ -158,7 +158,7 @@
 								isAnonymous: c,
 								message: j
 							},
-							v = await Object(m.e)({
+							E = await Object(m.e)({
 								coins: u,
 								context: d(),
 								correlationId: g,
@@ -171,8 +171,8 @@
 								thingId: e,
 								token: C
 							});
-						if (v.error) {
-							const e = Object(o.a)(v.error, v.status);
+						if (E.error) {
+							const e = Object(o.a)(E.error, E.status);
 							return void s(Object(i.stripeApiError)(e))
 						} {
 							const {
@@ -186,7 +186,7 @@
 								all_awardings: o,
 								coins: a,
 								treatment_tags: c
-							} = v.body;
+							} = E.body;
 							return s(t({
 								awardKarmaReceived: n || 0,
 								awardId: y,
@@ -490,7 +490,7 @@
 					apiContext: n
 				}) => {
 					const a = Object(h.a)(r()),
-						s = (null == a ? void 0 : a.pennies) || c.vb,
+						s = (null == a ? void 0 : a.pennies) || c.wb,
 						l = Object(b.c)(b.a.GoldPayment);
 					t(Object(d.stripeTokenPending)());
 					const u = await t(Object(d.validateAndCreateStripeToken)(e));
@@ -571,7 +571,7 @@
 				}) => {
 					t(m());
 					const d = r(),
-						l = Object(i.J)(d);
+						l = Object(i.K)(d);
 					try {
 						const r = !l,
 							n = await Object(c.b)({
@@ -718,8 +718,8 @@
 				y = r("./node_modules/react-redux/es/index.js"),
 				k = r("./node_modules/reselect/es/index.js"),
 				w = r("./src/lib/constants/index.ts"),
-				v = r("./src/lib/opener/index.ts"),
-				E = r("./src/reddit/actions/goldPurchaseModals/coinPurchaseModal.ts"),
+				E = r("./src/lib/opener/index.ts"),
+				v = r("./src/reddit/actions/goldPurchaseModals/coinPurchaseModal.ts"),
 				I = r("./src/reddit/actions/goldPurchaseModals/premiumPurchaseModal.ts"),
 				A = r("./src/reddit/actions/goldPurchaseModals/purchaseCatalog.ts"),
 				T = r("./src/reddit/actions/modal.ts"),
@@ -785,14 +785,14 @@
 						return null === (r = Object(H.b)(e, null == n ? void 0 : n.id)) || void 0 === r ? void 0 : r.name
 					},
 					isFreeAwardEventEnabled: e => Object(U.a)(e) && Object(R.g)(e),
-					isPremiumSubscriber: B.s,
+					isPremiumSubscriber: B.t,
 					premiumPackages: R.j,
 					purchaseCatalogError: R.k,
 					purchaseCatalogPending: R.l
 				}),
 				Y = Object(y.b)(Z, e => ({
 					onClickClaimFreeAward: () => e(Object(T.h)(S.a.ECON_CLAIM_FREE_AWARD_MODAL)),
-					onClickCoinPackage: (t, r) => e(Object(E.c)({
+					onClickCoinPackage: (t, r) => e(Object(v.c)({
 						correlationId: r,
 						packageId: t.mobileId
 					})),
@@ -800,10 +800,10 @@
 					onClickPremiumPackage: (t, r) => r ? e(Object(I.openWithBlob)({
 						packageId: F.b,
 						correlationId: t
-					})) : Object(v.d)("/premium", v.c.BLANK),
+					})) : Object(E.d)("/premium", E.c.BLANK),
 					requestPurchaseCatalog: t => e(Object(A.b)(t))
 				}));
-			class J extends o.a.Component {
+			class Q extends o.a.Component {
 				constructor(e) {
 					super(e), this.handleClickBuyCoins = e => {
 						const {
@@ -821,7 +821,7 @@
 							sendEvent: o
 						} = this.props;
 						t && t(), o(l.c());
-						const a = (null === (e = null == n ? void 0 : n.meta) || void 0 === e ? void 0 : e.name) === w.Jb.PREMIUM;
+						const a = (null === (e = null == n ? void 0 : n.meta) || void 0 === e ? void 0 : e.name) === w.Kb.PREMIUM;
 						r(this.correlationId, a)
 					}, this.handleClickFreeAward = () => {
 						const {
@@ -965,9 +965,9 @@
 					}))
 				}
 			}
-			var Q = Object(M.u)()(Y(Object(i.c)(J))),
-				X = r("./src/reddit/components/CoinPurchaseDropdown/index.m.less"),
-				ee = r.n(X);
+			var X = Object(M.u)()(Y(Object(i.c)(Q))),
+				J = r("./src/reddit/components/CoinPurchaseDropdown/index.m.less"),
+				ee = r.n(J);
 			const {
 				fbt: te
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), re = Object(a.a)(d.a);
@@ -1011,7 +1011,7 @@
 						tooltipId: a
 					}, o.a.createElement(_, {
 						activeSaleConfig: e
-					}), o.a.createElement(Q, {
+					}), o.a.createElement(X, {
 						className: ee.a.purchaseList,
 						onClick: n,
 						sorted: !0
@@ -1122,7 +1122,7 @@
 					l = `${t.apiUrl}/api/v2/gold/paypal/initiate_premium_payment`,
 					u = Object(c.a)(l);
 				return Object(o.a)(Object(a.a)(t, [s.a]), {
-					method: n.hb.POST,
+					method: n.ib.POST,
 					endpoint: u,
 					data: d
 				}).then(i.c)
@@ -1138,7 +1138,7 @@
 					correlation_id: c
 				};
 				return Object(o.a)(Object(a.a)(e, [s.a]), {
-					method: n.hb.POST,
+					method: n.ib.POST,
 					endpoint: `${e.apiUrl}/api/v2/gold/paypal/create_coin_purchase_order`,
 					data: d
 				}).then(i.c)
@@ -1156,7 +1156,7 @@
 					thing_id: c
 				};
 				return Object(o.a)(Object(a.a)(e, [s.a]), {
-					method: n.hb.POST,
+					method: n.ib.POST,
 					endpoint: `${e.apiUrl}/api/v2/gold/paypal/create_award_purchase_order`,
 					data: l
 				}).then(i.c)
@@ -1176,7 +1176,7 @@
 					correlation_id: l
 				};
 				return Object(o.a)(Object(a.a)(e, [s.a]), {
-					method: n.hb.POST,
+					method: n.ib.POST,
 					endpoint: `${e.apiUrl}/api/v2/gold/paypal/execute_coin_order`,
 					data: u
 				}).then(i.c)
@@ -1204,7 +1204,7 @@
 					thing_id: b
 				};
 				return Object(o.a)(Object(a.a)(t, [s.a]), {
-					method: n.hb.POST,
+					method: n.ib.POST,
 					endpoint: `${t.apiUrl}/api/v2/gold/paypal/execute_coin_with_gild_order`,
 					data: h
 				}).then(i.c)
@@ -1226,7 +1226,7 @@
 					thing_id: u
 				};
 				return Object(o.a)(Object(a.a)(t, [s.a]), {
-					method: n.hb.POST,
+					method: n.ib.POST,
 					endpoint: `${t.apiUrl}/api/v2/gold/paypal/execute_award_purchase_order`,
 					data: p
 				}).then(i.c)
@@ -1286,4 +1286,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.b06444fac329c58fd3bd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.74c0aa020ed65d48cdbf.js.map

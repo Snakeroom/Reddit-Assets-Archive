@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index.2851ec48a6a90386dbce.js
-// Retrieved at 8/30/2021, 12:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index.522012b8e46313c0eafb.js
+// Retrieved at 8/30/2021, 12:20:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index"], {
 		"./src/reddit/components/Econ/Prediction/TournamentPostBody/PredictionContainer/index.m.less": function(e, t, n) {
@@ -116,8 +116,8 @@
 				post: s,
 				isLastPrediction: d
 			}) => {
-				const c = Object(u.e)(b.J),
-					a = Object(u.e)(b.W),
+				const c = Object(u.e)(b.K),
+					a = Object(u.e)(b.X),
 					l = Object(u.e)(t => Object(p.g)(t, {
 						postId: e.id
 					})),
@@ -129,10 +129,10 @@
 						selectOption: V,
 						predict: U,
 						cancelAction: F,
-						hideAnimation: Q
+						hideAnimation: K
 					} = function(e, t, n) {
 						const o = Object(u.d)(),
-							s = Object(u.e)(b.d),
+							s = Object(u.e)(b.e),
 							r = Object(u.e)(D.o),
 							d = Object(u.e)(D.n),
 							c = Object(h.a)(),
@@ -204,49 +204,49 @@
 						}
 					}(t, e, s),
 					{
-						options: H,
-						userSelection: K
+						options: Q,
+						userSelection: H
 					} = l || {},
 					{
 						endsAt: R,
 						title: G,
 						status: W,
-						resolvedOptionId: J,
-						options: z
+						resolvedOptionId: z,
+						options: J
 					} = e,
 					Y = R < Date.now(),
 					$ = W === m.b.Cancelled || W === m.b.CancelInProgress,
-					Z = null != H ? H : z;
+					X = null != Q ? Q : J;
 				return i.a.createElement(i.a.Fragment, null, i.a.createElement("div", {
 					className: Object(r.a)(M.a.poll, {
 						[M.a.nightMode]: a
 					})
 				}, i.a.createElement("p", {
 					className: M.a.pollQuestion
-				}, G), Z.map(e => i.a.createElement(E.a, {
+				}, G), X.map(e => i.a.createElement(E.a, {
 					endsAt: R,
 					key: `prediction-option-${e.id}`,
-					isShowingVoteAnimation: g && K === e.id,
-					onAnimationEnd: Q
+					isShowingVoteAnimation: g && H === e.id,
+					onAnimationEnd: K
 				}, i.a.createElement(O.a, {
 					disabled: g,
 					isCancelled: $,
 					isEnded: Y,
-					isSelected: K === e.id,
+					isSelected: H === e.id,
 					needsResolution: !1,
 					option: e,
 					onClick: () => V(e),
-					resolvedOptionId: J,
+					resolvedOptionId: z,
 					tournamentId: t,
-					userSelection: K,
+					userSelection: H,
 					userIsLoggedOut: !c,
-					votePercentage: (K || Y || v) && e.voteCount && (null == l ? void 0 : l.totalVoters) ? Math.floor(e.voteCount / l.totalVoters * 100) : null,
+					votePercentage: (H || Y || v) && e.voteCount && (null == l ? void 0 : l.totalVoters) ? Math.floor(e.voteCount / l.totalVoters * 100) : null,
 					isShowingHint: v
 				}))), !$ && i.a.createElement(x.a, {
-					disabled: g || v || !!K,
+					disabled: g || v || !!H,
 					isEnded: Y,
 					postId: s.id,
-					userSelection: K,
+					userSelection: H,
 					isShowingHint: v,
 					tournamentId: t,
 					onReveal: () => j(!0)
@@ -261,27 +261,27 @@
 					subredditId: n,
 					tournamentId: t,
 					withOverlay: !0
-				}), !!K && i.a.createElement(y, {
+				}), !!H && i.a.createElement(y, {
 					postId: s.id,
 					subredditId: n,
 					isLastPrediction: d
 				}))
 			};
 			var F = n("./src/reddit/helpers/predictions/index.ts");
-			var Q = n("./src/reddit/selectors/posts.ts"),
-				H = n("./src/reddit/components/Econ/Prediction/TournamentPostBody/ViewTournamentLink/index.m.less"),
-				K = n.n(H);
+			var K = n("./src/reddit/selectors/posts.ts"),
+				Q = n("./src/reddit/components/Econ/Prediction/TournamentPostBody/ViewTournamentLink/index.m.less"),
+				H = n.n(Q);
 			const {
 				fbt: R
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), G = ({
 				postId: e
 			}) => {
 				const t = Object(h.a)(),
-					n = Object(u.e)(t => Object(Q.V)(t, {
+					n = Object(u.e)(t => Object(K.V)(t, {
 						postId: e
 					}));
 				return i.a.createElement(v.a, {
-					className: K.a.viewTournament,
+					className: H.a.viewTournament,
 					to: `${null==n?void 0:n.url}predictions/`,
 					onClick: () => t(Object(T.f)(e))
 				}, R._("Go to Tournament", null, {
@@ -318,4 +318,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.2851ec48a6a90386dbce.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.522012b8e46313c0eafb.js.map

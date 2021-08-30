@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.7dd1edabcea481dbe30d.js
-// Retrieved at 8/17/2021, 2:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.b6d56ac48922b715b500.js
+// Retrieved at 8/30/2021, 12:20:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Wiki-ModHubWikiManagement"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -1521,10 +1521,10 @@
 							});
 							break;
 						default:
-							return b === o.ac.WikiBanned ? s.a.createElement(se, {
+							return b === o.bc.WikiBanned ? s.a.createElement(se, {
 								subredditId: e.id,
 								subredditName: e.name
-							}) : b === o.ac.WikiContributors ? s.a.createElement(pe, {
+							}) : b === o.bc.WikiContributors ? s.a.createElement(pe, {
 								subredditName: e.name
 							}) : p && g && k ? s.a.createElement(a.a, {
 								comparisonRevisionId: Object(m.a)(k),
@@ -2453,7 +2453,7 @@
 				f = n("./src/reddit/constants/headers.ts");
 			var v = e => Object(g.a)(Object(k.a)(e.context, [f.a]), {
 					endpoint: `${e.context.apiUrl}/r/${e.subredditName}/api/wiki/edit`,
-					method: b.hb.POST,
+					method: b.ib.POST,
 					data: {
 						content: e.pageContent,
 						page: e.wikiPageName,
@@ -3219,7 +3219,7 @@
 						showTimeAgo: o = !1
 					} = this.props, {
 						showTooltip: r
-					} = this.state, c = n.authorInfo && n.authorInfo.name || l.C, p = new Date(Object(b.e)(n.revisedAt)), k = a.a.createElement(m.a, {
+					} = this.state, c = n.authorInfo && n.authorInfo.name || l.D, p = new Date(Object(b.e)(n.revisedAt)), k = a.a.createElement(m.a, {
 						tooltipId: "wikipage-revision-author",
 						user: c,
 						sendHoverCardEvent: s.a
@@ -3240,7 +3240,7 @@
 						onMouseEnter: this.onShowTooltip,
 						onMouseLeave: this.onHideTooltip
 					}, " - ", a.a.createElement(h.d, {
-						seconds: p.valueOf() / l.Ob
+						seconds: p.valueOf() / l.Pb
 					}), a.a.createElement(E, {
 						text: p.toString(),
 						isOpen: r,
@@ -3367,4 +3367,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.7dd1edabcea481dbe30d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.b6d56ac48922b715b500.js.map

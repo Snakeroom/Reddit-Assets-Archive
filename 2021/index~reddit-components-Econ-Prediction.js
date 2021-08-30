@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.51d8f557f64fb74b57d8.js
-// Retrieved at 8/30/2021, 12:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.f73a3e02ba1c39b2ae72.js
+// Retrieved at 8/30/2021, 12:20:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index~reddit-components-Econ-Prediction"], {
 		"./node_modules/lodash/_LazyWrapper.js": function(a, i, r) {
@@ -669,7 +669,7 @@
 						const i = `https://${k.pointsDocsBaseUrl}v1.json?web`,
 							r = await Object(x.b)({
 								endpoint: i,
-								method: t.hb.GET
+								method: t.ib.GET
 							});
 						r.ok && r.body && a(l(r.body))
 					}
@@ -710,9 +710,9 @@
 			})), r.d(i, "p", (function() {
 				return Q
 			})), r.d(i, "f", (function() {
-				return J
-			})), r.d(i, "c", (function() {
 				return K
+			})), r.d(i, "c", (function() {
+				return J
 			})), r.d(i, "d", (function() {
 				return Y
 			}));
@@ -750,7 +750,7 @@
 				P = (a, i, r, t) => async (x, k, {
 					gqlContext: n
 				}) => {
-					const o = Object(E.J)(k()),
+					const o = Object(E.K)(k()),
 						s = await Object(c.j)(n(), {
 							subredditId: a,
 							period: i,
@@ -974,10 +974,10 @@
 					})), o
 				}, Q = a => async (i, r) => {
 					const t = r();
-					Object(E.J)(t) ? await i(Object(d.h)(f.a.ECON_PREDICTIONS_PREMIUM_UPSELL, {
+					Object(E.K)(t) ? await i(Object(d.h)(f.a.ECON_PREDICTIONS_PREMIUM_UPSELL, {
 						feature: a
 					})) : await i(Object(h.i)())
-				}, J = () => Object(d.g)(f.a.ECON_PREDICTIONS_PREMIUM_UPSELL), K = a => async (i, r, {
+				}, K = () => Object(d.g)(f.a.ECON_PREDICTIONS_PREMIUM_UPSELL), J = a => async (i, r, {
 					gqlContext: x
 				}) => {
 					try {
@@ -1547,7 +1547,7 @@
 				selectedChipPack: i
 			}) {
 				const r = Object(k.e)(u.r),
-					n = Object(k.e)(y.d),
+					n = Object(k.e)(y.e),
 					[o, e] = Object(t.useState)(null),
 					[m, l] = Object(t.useState)(!1),
 					c = (null == i ? void 0 : i.amount) || 0;
@@ -1636,9 +1636,9 @@
 				z = r("./src/reddit/helpers/getSubredditOrProfileIconData/index.tsx"),
 				q = r("./src/reddit/selectors/subreddit.ts"),
 				Q = r("./src/reddit/components/Econ/Prediction/PredictionModal/TournamentModal/index.m.less"),
-				J = r.n(Q);
+				K = r.n(Q);
 			const {
-				fbt: K
+				fbt: J
 			} = r("./node_modules/fbt/lib/FbtPublic.js");
 
 			function Y({
@@ -1669,52 +1669,52 @@
 						!l && c ? s(Object(I.k)(c.name)) : l || a()
 					}, [s, l, c, a]), !l) return null;
 				return x.a.createElement("div", {
-					className: J.a.tournamentModal
+					className: K.a.tournamentModal
 				}, x.a.createElement("div", {
-					className: J.a.header
+					className: K.a.header
 				}, x.a.createElement(H.b, {
-					className: J.a.icon,
+					className: K.a.icon,
 					iconUrl: p.url,
-					altText: K._("Subreddit icon", null, {
+					altText: J._("Subreddit icon", null, {
 						hk: "gEWhf"
 					}),
 					subredditOrProfile: c
 				}), x.a.createElement("h1", {
-					className: J.a.title
+					className: K.a.title
 				}, l.name), x.a.createElement("p", {
-					className: J.a.description
-				}, K._("Welcome to tournament play! Claim your tokens, make predictions, and climb up the leaderboard.", null, {
+					className: K.a.description
+				}, J._("Welcome to tournament play! Claim your tokens, make predictions, and climb up the leaderboard.", null, {
 					hk: "1tajkZ"
 				})), x.a.createElement(A.q, {
-					"aria-label": K._("Close", null, {
+					"aria-label": J._("Close", null, {
 						hk: "40q8CL"
 					}),
-					className: J.a.closeButton,
+					className: K.a.closeButton,
 					Icon: Object(B.b)("close"),
 					onClick: a,
 					priority: A.b.Plain
 				})), x.a.createElement("div", {
-					className: J.a.body
+					className: K.a.body
 				}, x.a.createElement("div", {
-					className: J.a.startingBalance
-				}, K._({
+					className: K.a.startingBalance
+				}, J._({
 					"*": "Claim your {tokens amount}tokens to get started",
 					_1: "Claim your {tokens amount} token to get started"
-				}, [K._param("tokens amount", x.a.createElement("span", {
-					className: J.a.startingBalanceAmount
+				}, [J._param("tokens amount", x.a.createElement("span", {
+					className: K.a.startingBalanceAmount
 				}, x.a.createElement(e.a, {
-					className: J.a.tokenIcon
-				}), Z)), K._plural(Z)], {
+					className: K.a.tokenIcon
+				}), Z)), J._plural(Z)], {
 					hk: "1qVlUJ"
 				})), x.a.createElement("button", {
-					className: J.a.submitButton,
+					className: K.a.submitButton,
 					onClick: async () => {
 						f(!0), await i(), f(!1)
 					}
 				}, d ? x.a.createElement(m.a, {
-					className: J.a.loadingIcon,
+					className: K.a.loadingIcon,
 					sizePx: 6
-				}) : K._("Join the Tournament!", null, {
+				}) : J._("Join the Tournament!", null, {
 					hk: "SIzo7"
 				}))))
 			}
@@ -1722,7 +1722,7 @@
 				fbt: $
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), Z = 1e3, X = Object(n.c)({
 				isNewPredictionsSheet: u.r,
-				userCoins: y.d
+				userCoins: y.e
 			});
 			i.b = Object(k.b)(X)(Object(o.a)(({
 				isCreatingVote: a,
@@ -2042,7 +2042,7 @@
 					[B, D] = Object(s.a)("hasSeenPredictionSneakPeek", !1),
 					b = !!c,
 					v = r && !l,
-					P = Object(k.e)(f.s);
+					P = Object(k.e)(f.t);
 				if (!Object(k.e)(a => !i && !v && b && Object(d.q)(a))) return null;
 				const S = () => {
 					B || D(!0), A(!1)
@@ -3009,7 +3009,7 @@
 			function n(a, i) {
 				return Object(k.a)(a, {
 					endpoint: `${t.a.metaUrl}/communities/${i.subredditId}/me`,
-					method: x.hb.GET
+					method: x.ib.GET
 				})
 			}
 		},
@@ -3080,7 +3080,7 @@
 			function n(a, i) {
 				return Object(k.a)(a, {
 					endpoint: `${t.a.metaUrl}/wallets/${i.subredditId}/me`,
-					method: x.hb.GET
+					method: x.ib.GET
 				}).then(a => {
 					if (a.ok) {
 						const r = a.body,
@@ -3102,7 +3102,7 @@
 						"X-HTTP-Method-Override": "GET"
 					},
 					endpoint: `${t.a.metaUrl}/wallets/${i.subredditId}`,
-					method: x.hb.POST,
+					method: x.ib.POST,
 					data: i.userIds
 				}).then(a => a.ok ? {
 					...a,
@@ -3752,4 +3752,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.51d8f557f64fb74b57d8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.f73a3e02ba1c39b2ae72.js.map

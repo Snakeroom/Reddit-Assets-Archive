@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueue.b22fa03c4f05507eea13.js
-// Retrieved at 8/18/2021, 8:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueue.c255e366fa14decf9270.js
+// Retrieved at 8/30/2021, 12:20:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueue"], {
 		"./src/reddit/actions/pages/modQueue/index.ts": function(e, t, r) {
@@ -32,20 +32,20 @@
 					page: O,
 					profile: _,
 					subreddit: f
-				} = g, j = r();
+				} = g, H = r();
 				if (!b) return;
-				const A = Object(n.a)({
+				const j = Object(n.a)({
 						onlyOfType: g.only,
 						profile: g.profile,
 						subreddit: g.subreddit
 					}),
-					H = j.pages.modHub.modQueue[b].itemOrder[A],
-					Q = !!(null === (m = null == H ? void 0 : H[O]) || void 0 === m ? void 0 : m.length),
-					L = j.pages.modHub.modQueue[b].api.error;
-				if (j.pages.modHub.modQueue[b].api.pending || Q && !L) return;
-				Object(p.n)(j) || await Object(c.e)(A, b, g)(t, r, s);
+					A = H.pages.modHub.modQueue[b].itemOrder[j],
+					Q = !!(null === (m = null == A ? void 0 : A[O]) || void 0 === m ? void 0 : m.length),
+					L = H.pages.modHub.modQueue[b].api.error;
+				if (H.pages.modHub.modQueue[b].api.pending || Q && !L) return;
+				Object(p.n)(H) || await Object(c.e)(j, b, g)(t, r, s);
 				const y = r();
-				if (d()(y.pages.modHub.modQueue[b].api.error, "type") === i.G.AUTHENTICATION_ERROR) return Object(u.a)(t, y);
+				if (d()(y.pages.modHub.modQueue[b].api.error, "type") === i.H.AUTHENTICATION_ERROR) return Object(u.a)(t, y);
 				Object(a.j)(y, f, _), t(l.l({
 					title: Object(o.e)()
 				}))
@@ -53,4 +53,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.b22fa03c4f05507eea13.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.c255e366fa14decf9270.js.map

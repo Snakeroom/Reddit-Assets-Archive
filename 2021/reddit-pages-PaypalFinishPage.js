@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-pages-PaypalFinishPage.67c68cae81a0a1756a46.js
-// Retrieved at 8/18/2021, 12:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-pages-PaypalFinishPage.0141e36b11d4a2459fbf.js
+// Retrieved at 8/30/2021, 12:20:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-pages-PaypalFinishPage"], {
 		"./src/reddit/actions/gold/productOfferPurchase.ts": function(e, t, r) {
@@ -125,7 +125,7 @@
 							const a = n.body;
 							if (!a.data.confirmEconPayment.ok || a.data.confirmEconPayment.payment.status !== E.a.Paid) return void b()
 						} else if (f && j.status !== E.a.Paid) return void b();
-						const v = Object(g.j)(c());
+						const v = Object(g.k)(c());
 						v && (P && s ? i(T({
 							subredditId: s,
 							powerupsCount: a,
@@ -185,7 +185,7 @@
 						if (p && p.ok) {
 							const e = p.body.data.createEconPayment;
 							if (null === (u = null == e ? void 0 : e.errors) || void 0 === u ? void 0 : u.length) return o(Object(y.paypalApiError)(S(e.errors))), null;
-							const n = Object(g.j)(s());
+							const n = Object(g.k)(s());
 							if (e.ok) {
 								const {
 									status: s
@@ -830,4 +830,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-pages-PaypalFinishPage.67c68cae81a0a1756a46.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-pages-PaypalFinishPage.0141e36b11d4a2459fbf.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.4cd04216fc5610355572.js
-// Retrieved at 8/30/2021, 12:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.4e171a4ab7d277970c14.js
+// Retrieved at 8/30/2021, 12:20:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e"], {
 		"./src/lib/addAllowQuarantinedParam/index.ts": function(e, t, s) {
@@ -158,12 +158,12 @@
 				REQUEST_SUCCESS: m
 			} = n, p = Object(i.a)(u), f = Object(i.a)(l), O = Object(i.a)(b), _ = Object(i.a)(m);
 			let E;
-			const h = 5 * r.ib,
+			const h = 5 * r.jb,
 				T = () => async (e, t, {
 					apiContext: s
 				}) => {
 					const n = t();
-					if (!Object(c.J)(n) || !Object(a.d)(n)) return clearTimeout(E);
+					if (!Object(c.K)(n) || !Object(a.d)(n)) return clearTimeout(E);
 					E || e((() => async (e, t, {
 						apiContext: s
 					}) => {
@@ -171,7 +171,7 @@
 							{
 								session: r
 							} = n.user;
-						if (r && Object(c.J)(n) && Object(a.d)(n)) {
+						if (r && Object(c.K)(n) && Object(a.d)(n)) {
 							e(O());
 							const t = await Object(o.g)(s(), r);
 							t && t.ok ? (e(_({
@@ -260,7 +260,7 @@
 						}
 						if (!i) {
 							const e = s.error || {
-								type: o.G.NOT_FOUND_ERROR
+								type: o.H.NOT_FOUND_ERROR
 							};
 							return void t(I({
 								...r,
@@ -307,7 +307,7 @@
 					}));
 					else {
 						const s = c.error || {
-							type: o.G.UNKNOWN_ERROR
+							type: o.H.UNKNOWN_ERROR
 						};
 						t(I({
 							...r,
@@ -445,7 +445,7 @@
 				o = s("./src/reddit/selectors/user.ts");
 			const d = "MOD_PERMS__REQUEST_LOADED",
 				a = (Object(n.a)("MOD_PERMS__REQUEST_PENDING"), Object(n.a)(d), Object(n.a)("MOD_PERMS__REQUEST_FAILED"), () => async (e, t) => {
-					const s = Object(o.j)(t());
+					const s = Object(o.k)(t());
 					if (s) {
 						const t = Object(i.e)(s);
 						await e(Object(r.b)(t))
@@ -555,7 +555,7 @@
 					}));
 					let I = c;
 					!c && d && (I = `u_${d}`), j.push(((e, t) => Object(P.a)(e, {
-						method: r.hb.GET,
+						method: r.ib.GET,
 						endpoint: Object(g.a)(`${T.a.gatewayUrl}/desktopapi/v1/submitpage`),
 						data: {
 							subreddit: t.subredditName,
@@ -577,7 +577,7 @@
 								meta: p.meta,
 								...e,
 								posts: n
-							})), !Object(x.J)(s())) return;
+							})), !Object(x.K)(s())) return;
 						if (r) {
 							const e = Object.keys(r)[0];
 							await t(Object(m.l)(e, {
@@ -588,7 +588,7 @@
 						t(V());
 						const i = [];
 						i.push(t(b.o()));
-						const d = Object(x.j)(s());
+						const d = Object(x.k)(s());
 						if (d && d.hasUserProfile && i.push(t(_.d(Object(S.e)(d)))), c && !Object(o.a)(c)) {
 							i.push(t(E.o(c))), !!Object(y.b)(s(), {
 								subredditName: c
@@ -608,7 +608,7 @@
 							collectionId: c,
 							profileName: d,
 							subredditName: o
-						})), !Object(x.J)(s())) return void Object(j.a)(t, s());
+						})), !Object(x.K)(s())) return void Object(j.a)(t, s());
 					let u;
 					if (o ? (u = Object(v.z)(s(), {
 							subredditName: o
@@ -622,7 +622,7 @@
 							profileName: i
 						} = e, o = [];
 						let d;
-						r ? d = Object(v.E)(n(), r) : i && (d = Object(x.fb)(n(), {
+						r ? d = Object(v.E)(n(), r) : i && (d = Object(x.gb)(n(), {
 							userName: i
 						})), d && o.push(s(Object(h.b)(d, t))), o.push(s(Object(f.Q)(t))), await Promise.all(o);
 						const a = Object(N.f)(n(), {
@@ -640,7 +640,7 @@
 						u && r && r.subredditId === u.id || t(Object(n.c)(Object(i.a)(e.url, ["collection"])))
 					}((e, t) => {
 						const s = e.platform.lastPage;
-						t && s && s.meta && s.meta.name === r.Jb.POST_CREATION && I.y(e)
+						t && s && s.meta && s.meta.name === r.Kb.POST_CREATION && I.y(e)
 					})(s(), o), t(p.l({
 						title: w(s())
 					}))
@@ -690,7 +690,7 @@
 					t(i.d(p));
 					const g = await Object(b.a)("postDraft", () => ((e, t, s) => Object(a.a)(e, {
 						endpoint: Object(c.a)(Object(u.a)(`${o.a.gatewayUrl}/desktopapi/v1/draftpreviewpage/${s}/${t}`)),
-						method: d.hb.GET
+						method: d.ib.GET
 					}))(n.apiContext(), m, p));
 					if (g.ok) {
 						const e = g.body;
@@ -762,7 +762,7 @@
 			const C = (e, t, s) => Object(P.a)(e, {
 				data: s,
 				endpoint: Object(g.a)(Object(h.a)(Object(j.a)(`${E.a.gatewayUrl}/desktopapi/v1/user/${t}/posts`))),
-				method: T.hb.GET
+				method: T.ib.GET
 			}).then(e => "pinned" in e.body ? e : "postIds" in e.body ? {
 				...e,
 				body: {
@@ -998,7 +998,7 @@
 					if (O) {
 						if (Object(l.Q)(p, {
 								profileName: h
-							}).length >= r.ab) return void s(Object(o.i)(a.a.PINNED_POSTS_LIMIT_REACHED))
+							}).length >= r.bb) return void s(Object(o.i)(a.a.PINNED_POSTS_LIMIT_REACHED))
 					}
 					const w = Object(l.p)(p, e, h),
 						L = !O && w;
@@ -1105,9 +1105,9 @@
 			})), s.d(t, "F", (function() {
 				return $
 			})), s.d(t, "a", (function() {
-				return W
-			})), s.d(t, "B", (function() {
 				return K
+			})), s.d(t, "B", (function() {
+				return W
 			})), s.d(t, "J", (function() {
 				return z
 			})), s.d(t, "K", (function() {
@@ -1161,8 +1161,8 @@
 				H = "POST_CREATION__POLL_FAILED",
 				Q = "POST_CREATION__VALIDATION_FAILED",
 				$ = "POST_CREATION__SUBMIT_VALIDATION_FAILED",
-				W = "POST_CREATION__CAPTCHA_REQUIRED",
-				K = "POST_CREATION__SET_SUBMIT_MODE",
+				K = "POST_CREATION__CAPTCHA_REQUIRED",
+				W = "POST_CREATION__SET_SUBMIT_MODE",
 				z = "POST_CREATION__SUBREDDIT_CHANGE_PENDING",
 				J = "POST_CREATION__SUBREDDIT_WILL_CHANGE",
 				Y = "POST_CREATION__SUBREDDIT_CHANGE_CANCELED",
@@ -1360,7 +1360,7 @@
 					o = n();
 					const S = Object(f.kb)(o),
 						y = Object(f.A)(o);
-					if (S === i.Sb.MEDIA && y) {
+					if (S === i.Tb.MEDIA && y) {
 						const e = Object(f.U)(o),
 							t = Object(b.v)(e),
 							s = Object(f.L)(o) && e.items.length > 1,
@@ -1370,7 +1370,7 @@
 						else if (t && !j.videos) {
 							const t = o.uploads[e.items[0].uploadKey],
 								s = t && t.metadata.videoDuration || 0;
-							j.images ? s > i.eb && (I = b.p.VideoWillBeRemovedTooLongForGif) : I = b.p.VideoWillBeRemovedMediaNotAllowed
+							j.images ? s > i.fb && (I = b.p.VideoWillBeRemovedTooLongForGif) : I = b.p.VideoWillBeRemovedMediaNotAllowed
 						}
 					}
 					s(I ? Object(a.i)(I) : C({
@@ -1526,14 +1526,14 @@
 					apiContext: s
 				}) => {
 					const r = t();
-					if (!Object(D.j)(r) || Object(S.b)(r)) return;
+					if (!Object(D.k)(r) || Object(S.b)(r)) return;
 					e(x());
 					const i = await (e => Object(u.a)(Object(l.a)(e, [m.a]), {
 						endpoint: `${e.apiUrl}/api/v1/drafts.json`,
-						method: n.hb.GET
+						method: n.ib.GET
 					}))(s());
 					i.ok ? e(w(h(i.body))) : e(L(i.error))
-				}, M = "POST_DRAFT__SAVE_DRAFT_PENDING", F = "POST_DRAFT__SAVE_DRAFT_SUCCEEDED", G = "POST_DRAFT__SAVE_DRAFT_FAILED", U = "POST_DRAFT__SAVE_DRAFT_VALIDATION_FAILED", V = "POST_DRAFT__SAVE_DRAFT_SUBMIT_VALIDATION_FAILED", B = "POST_DRAFT__SAVE_DRAFT_CAPTCHA_REQUIRED", q = "POST_CREATION__TOGGLE_DRAFT_IS_PUBLIC", H = Object(i.a)(M), Q = Object(i.a)(F), $ = Object(i.a)(G), W = Object(i.a)(U), K = Object(i.a)(V), z = Object(i.a)(B), J = Object(i.a)(q), Y = e => async (t, s, {
+				}, M = "POST_DRAFT__SAVE_DRAFT_PENDING", F = "POST_DRAFT__SAVE_DRAFT_SUCCEEDED", G = "POST_DRAFT__SAVE_DRAFT_FAILED", U = "POST_DRAFT__SAVE_DRAFT_VALIDATION_FAILED", V = "POST_DRAFT__SAVE_DRAFT_SUBMIT_VALIDATION_FAILED", B = "POST_DRAFT__SAVE_DRAFT_CAPTCHA_REQUIRED", q = "POST_CREATION__TOGGLE_DRAFT_IS_PUBLIC", H = Object(i.a)(M), Q = Object(i.a)(F), $ = Object(i.a)(G), K = Object(i.a)(U), W = Object(i.a)(V), z = Object(i.a)(B), J = Object(i.a)(q), Y = e => async (t, s, {
 					apiContext: i
 				}) => {
 					const o = s(),
@@ -1545,13 +1545,13 @@
 					t(H(p)), g.f(o, p);
 					const f = await ((e, t, s) => Object(u.a)(Object(l.a)(e, [m.a]), {
 						endpoint: `${e.apiUrl}/api/v1/draft`,
-						method: s ? n.hb.PUT : n.hb.POST,
+						method: s ? n.ib.PUT : n.ib.POST,
 						data: Object(T.a)(t)
 					}).then(e => e.body.fields && Object(P.u)(e.body.fields[0]) ? {
 						...e,
 						body: {},
 						error: {
-							type: n.G.SUBMIT_VALIDATION_ERROR,
+							type: n.H.SUBMIT_VALIDATION_ERROR,
 							fields: [{
 								field: e.body.fields[0],
 								msg: e.body.explanation
@@ -1569,7 +1569,7 @@
 						})), e || t(Object(d.a)(p.destSubreddit, s, !1))
 					} else {
 						const e = f.error;
-						e.type === n.G.BAD_CAPTCHA_ERROR ? t(z()) : e.type === n.G.VALIDATION_ERROR ? t(W(e)) : e.type === n.G.SUBMIT_VALIDATION_ERROR ? t(K(e)) : t($(e)), t(Object(a.f)({
+						e.type === n.H.BAD_CAPTCHA_ERROR ? t(z()) : e.type === n.H.VALIDATION_ERROR ? t(K(e)) : e.type === n.H.SUBMIT_VALIDATION_ERROR ? t(W(e)) : t($(e)), t(Object(a.f)({
 							duration: a.a,
 							kind: j.b.Error,
 							text: Object(r.a)(e)
@@ -1588,7 +1588,7 @@
 							s = Object(y.p)(i, {
 								profileId: e.subredditId
 							}),
-							n = Object(D.j)(i);
+							n = Object(D.k)(i);
 						t ? r = {
 							isProfile: !1,
 							name: t.name
@@ -1613,7 +1613,7 @@
 					}));
 					const f = await (async (e, t) => Object(u.a)(Object(l.a)(e, [b.g]), {
 						endpoint: `${e.apiUrl}/api/v1/draft?draft_id=${t}`,
-						method: n.hb.DELETE
+						method: n.ib.DELETE
 					}))(d(), e);
 					if (f.ok) {
 						const {
@@ -1666,7 +1666,7 @@
 					const a = await Object(o.a)(n());
 					a.ok && a.body ? !t || a.body.account ? (e(b(a.body)), e(Object(i.d)()), f(r)) : Object(d.a)(e, r) : e(m(a.error))
 				}, f = e => {
-					e.platform.currentPage && e.platform.currentPage.routeMatch && e.platform.currentPage.routeMatch.route && e.platform.currentPage.routeMatch.route.meta && e.platform.currentPage.routeMatch.route.meta.name && e.platform.currentPage.routeMatch.route.meta.name === n.Jb.INBOX_PAGES && Object(a.g)(e)
+					e.platform.currentPage && e.platform.currentPage.routeMatch && e.platform.currentPage.routeMatch.route && e.platform.currentPage.routeMatch.route.meta && e.platform.currentPage.routeMatch.route.meta.name && e.platform.currentPage.routeMatch.route.meta.name === n.Kb.INBOX_PAGES && Object(a.g)(e)
 				}
 		},
 		"./src/reddit/actions/subredditDuplicates.ts": function(e, t, s) {
@@ -1699,12 +1699,12 @@
 					const f = {
 							crossposts_only: !0,
 							sort: "new",
-							sr: Object(c.h)(p) ? r.ec + p.name : p.name
+							sr: Object(c.h)(p) ? r.fc + p.name : p.name
 						},
 						O = await ((e, t, s) => Object(o.a)(e, {
 							data: s,
 							endpoint: `${i.a.gatewayUrl}/desktopapi/v1/duplicates/${Object(d.t)(t)}`,
-							method: r.hb.GET
+							method: r.ib.GET
 						}))(b(), t, f);
 					if (O.ok) {
 						const n = O.body;
@@ -1765,7 +1765,7 @@
 				P = e => {
 					const t = Object(m.a)(e);
 					return {
-						inboxCount: t ? Object(l.h)(e) : Object(f.E)(e) || 0,
+						inboxCount: t ? Object(l.h)(e) : Object(f.F)(e) || 0,
 						basicChannelCount: t ? Object(l.e)(e) : Object(b.a)(e) || 0
 					}
 				},
@@ -1773,7 +1773,7 @@
 					const s = t(),
 						n = Object(a.f)(s, {}),
 						r = Object(m.a)(s),
-						i = Object(f.I)(s) || Object(f.J)(s),
+						i = Object(f.J)(s) || Object(f.K)(s),
 						o = Object(p.g)(s);
 					let d = 0;
 					i && n && (d = r ? o ? Object(l.i)(s) : Object(l.j)(s) : (e => {
@@ -1817,7 +1817,7 @@
 					} else {
 						const s = Object(b.a)(n),
 							r = Object(b.b)(n),
-							i = Object(f.E)(n),
+							i = Object(f.F)(n),
 							{
 								basicChannelCount: a,
 								inboxCount: c
@@ -2243,11 +2243,11 @@
 
 			function l() {
 				const e = Object(i.e)(e => ({
-					currentUser: Object(a.j)(e),
+					currentUser: Object(a.k)(e),
 					modModeEnabled: e.modModeEnabled,
-					nightmodeEnabled: Object(a.W)(e),
+					nightmodeEnabled: Object(a.X)(e),
 					prefs: e.user.prefs,
-					isLoggedIn: Object(a.J)(e)
+					isLoggedIn: Object(a.K)(e)
 				}));
 				return Object(o.a)(e)
 			}
@@ -2278,7 +2278,7 @@
 				o = s("./src/reddit/helpers/addRedesignIdentifier/index.ts");
 			const d = e => Object(i.a)(e, {
 				endpoint: Object(o.a)(`${n.a.gatewayUrl}/desktopapi/v1/me`),
-				method: r.hb.GET
+				method: r.ib.GET
 			})
 		},
 		"./src/reddit/endpoints/post/draft/helpers.ts": function(e, t, s) {
@@ -2582,9 +2582,10 @@
 					collapsedTraySections: U.a,
 					commentMode: F.h.RICH_TEXT,
 					countryCode: "",
+					badCommentAutocollapse: u.l.OFF,
 					layout: L.d.Card,
 					rememberCommunityLayout: !1,
-					defaultCommentSort: u.s.CONFIDENCE,
+					defaultCommentSort: u.t.CONFIDENCE,
 					editorMode: F.h.RICH_TEXT,
 					enableFollowers: !0,
 					geopopular: void 0,
@@ -2606,7 +2607,7 @@
 					showPresence: !1,
 					showRpanDu: !0,
 					showTwitter: !1,
-					sort: u.W.Hot,
+					sort: u.X.Hot,
 					stylesEnabled: !0,
 					subreddit: {},
 					subscriptionsPinned: void 0,
@@ -2920,13 +2921,13 @@
 				b = {
 					action: Object(i.a)(() => Promise.all([s.e("vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PostCreation~Settings~~f8934a85"), s.e("vendors~ChatMessageInput~CommentRichUnit~FlairEdit~MembershipPaywallPage~PostCreation~PostRichUnit~R~9deab1a0"), s.e("vendors~PostCreation"), s.e("CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08"), s.e("ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8"), s.e("CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86"), s.e("CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255"), s.e("Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250"), s.e("ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor"), s.e("PostCreation")]).then(s.bind(null, "./src/reddit/actions/pages/postCreation.ts")).then(e => e.postCreationPageRequested)),
 					component: a,
-					chunk: r.q.POST_CREATION,
+					chunk: r.r.POST_CREATION,
 					exact: !0,
 					meta: {
-						name: r.Jb.POST_CREATION
+						name: r.Kb.POST_CREATION
 					},
 					path: d,
-					prefetches: [r.q.COMMENTS_PAGE]
+					prefetches: [r.r.COMMENTS_PAGE]
 				};
 			t.a = b
 		},
@@ -3007,10 +3008,10 @@
 				o = s("./src/reddit/selectors/experiments/index.ts"),
 				d = s("./src/reddit/selectors/experiments/utils.ts");
 			const a = Object(n.a)(e => Object(i.c)(e, {
-					experimentName: r.Cc,
+					experimentName: r.Ec,
 					experimentEligibilitySelector: o.e
 				}), d.a),
-				c = Object(n.a)(a, e => e === r.Fc.Enabled)
+				c = Object(n.a)(a, e => e === r.Hc.Enabled)
 		},
 		"./src/reddit/selectors/experiments/inboxRedesign.ts": function(e, t, s) {
 			"use strict";
@@ -3041,43 +3042,43 @@
 				o = s("./src/reddit/selectors/experiments/index.ts"),
 				d = s("./src/reddit/selectors/experiments/utils.ts");
 			const a = Object(n.a)(e => Object(i.c)(e, {
-					experimentName: r.db,
+					experimentName: r.fb,
 					experimentEligibilitySelector: o.e
 				}), d.a),
-				c = Object(n.a)(a, e => e === r.Lc.Enabled),
+				c = Object(n.a)(a, e => e === r.Nc.Enabled),
 				u = Object(n.a)(e => Object(i.c)(e, {
-					experimentName: r.Ec,
+					experimentName: r.Gc,
 					experimentEligibilitySelector: o.e
 				}), d.a),
-				l = Object(n.a)(c, u, (e, t) => e && t === r.Kc.Enabled),
+				l = Object(n.a)(c, u, (e, t) => e && t === r.Mc.Enabled),
 				b = Object(n.a)(e => Object(i.c)(e, {
-					experimentName: r.gb,
+					experimentName: r.ib,
 					experimentEligibilitySelector: o.e
 				}), d.a),
-				m = Object(n.a)(c, b, (e, t) => e && t === r.sb.Enabled),
+				m = Object(n.a)(c, b, (e, t) => e && t === r.ub.Enabled),
 				p = Object(n.a)(e => Object(i.c)(e, {
-					experimentName: r.ab,
-					experimentEligibilitySelector: o.e
-				}), d.a),
-				f = Object(n.a)(p, e => e === r.Hc.Banner_1st_time),
-				O = Object(n.a)(p, e => e === r.Hc.Tooltip_persist),
-				_ = Object(n.a)(p, e => e === r.Hc.Tooltip_1st_time),
-				E = Object(n.a)(e => Object(i.c)(e, {
-					experimentName: r.bb,
-					experimentEligibilitySelector: o.e
-				}), d.a),
-				h = Object(n.a)(E, e => e === r.Ic.ContinuousScroll),
-				T = Object(n.a)(e => Object(i.c)(e, {
-					experimentName: r.V,
-					experimentEligibilitySelector: o.e
-				}), d.a),
-				P = Object(n.a)(T, e => e === r.Ab.Banner1stTime),
-				g = Object(n.a)(T, e => e === r.Ab.BannerPersist),
-				j = Object(n.a)(e => Object(i.c)(e, {
 					experimentName: r.cb,
 					experimentEligibilitySelector: o.e
 				}), d.a),
-				C = Object(n.a)(j, e => e === r.Jc.Enabled)
+				f = Object(n.a)(p, e => e === r.Jc.Banner_1st_time),
+				O = Object(n.a)(p, e => e === r.Jc.Tooltip_persist),
+				_ = Object(n.a)(p, e => e === r.Jc.Tooltip_1st_time),
+				E = Object(n.a)(e => Object(i.c)(e, {
+					experimentName: r.db,
+					experimentEligibilitySelector: o.e
+				}), d.a),
+				h = Object(n.a)(E, e => e === r.Kc.ContinuousScroll),
+				T = Object(n.a)(e => Object(i.c)(e, {
+					experimentName: r.X,
+					experimentEligibilitySelector: o.e
+				}), d.a),
+				P = Object(n.a)(T, e => e === r.Cb.Banner1stTime),
+				g = Object(n.a)(T, e => e === r.Cb.BannerPersist),
+				j = Object(n.a)(e => Object(i.c)(e, {
+					experimentName: r.eb,
+					experimentEligibilitySelector: o.e
+				}), d.a),
+				C = Object(n.a)(j, e => e === r.Lc.Enabled)
 		},
 		"./src/redditGQL/operations/BadgeIndicators.json": function(e) {
 			e.exports = JSON.parse('{"id":"712476d48c90"}')
@@ -3093,4 +3094,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.4cd04216fc5610355572.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.4e171a4ab7d277970c14.js.map

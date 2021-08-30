@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/VideoShareModal.6cb313d7b340c75339b8.js
-// Retrieved at 8/30/2021, 12:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/VideoShareModal.e7709749d3a456d863a9.js
+// Retrieved at 8/30/2021, 12:20:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["VideoShareModal"], {
 		"./src/reddit/actions/publicAccessNetwork/votes.ts": function(e, t, s) {
@@ -21,7 +21,7 @@
 				apiContext: n
 			}) => {
 				const u = a();
-				if (Object(d.J)(u))
+				if (Object(d.K)(u))
 					if (Object(i.f)(u)) await Object(o.g)(n(), e, t);
 					else {
 						await Object(r.d)(e);
@@ -63,7 +63,7 @@
 					className: h.a.NewUserpic,
 					userId: t
 				});
-				const r = (e => e.replace(l.Fb.Account + "_", ""))(t),
+				const r = (e => e.replace(l.Gb.Account + "_", ""))(t),
 					{
 						avatar: o,
 						color: d
@@ -618,8 +618,8 @@
 				y = s("./src/reddit/icons/svgs/Lock/index.tsx"),
 				S = s("./src/reddit/icons/svgs/Plus/index.tsx"),
 				A = s("./src/reddit/icons/svgs/PublicAccessNetwork/index.tsx"),
-				B = s("./src/reddit/icons/svgs/Remove/index.tsx"),
-				M = s("./src/reddit/icons/svgs/Report/index.tsx"),
+				M = s("./src/reddit/icons/svgs/Remove/index.tsx"),
+				B = s("./src/reddit/icons/svgs/Report/index.tsx"),
 				T = s("./src/reddit/icons/svgs/Rules/index.tsx"),
 				V = s("./src/reddit/icons/svgs/Unlock/index.tsx"),
 				D = s("./src/reddit/models/Vote/index.ts"),
@@ -847,7 +847,7 @@
 				iconWrapperClassName: W.a.overflowItemIconWrapper,
 				key: `${ne}-report`,
 				onClick: s
-			}, n.a.createElement(M.a, {
+			}, n.a.createElement(B.a, {
 				className: W.a.overflowItemIcon
 			})), n.a.createElement(C.b, {
 				className: W.a.overflowItem,
@@ -888,7 +888,7 @@
 				iconWrapperClassName: W.a.overflowItemIconWrapper,
 				key: `${ne}-end`,
 				onClick: c
-			}, n.a.createElement(B.a, {
+			}, n.a.createElement(M.a, {
 				className: W.a.endBroadcastIcon
 			})))), oe = Object(r.b)(null, e => ({
 				vote: (t, s) => e(Object(m.a)(t, s))
@@ -1063,7 +1063,7 @@
 					isSubscribed: o
 				}));
 				return r && r.enableFollowers ? l : null
-			}, xe = e => Object(r.e)(t => Object(P.nb)(t, {
+			}, xe = e => Object(r.e)(t => Object(P.ob)(t, {
 				userName: e
 			})), fe = e => Object(r.e)(t => Object(F.fb)(t, {
 				identifier: {
@@ -1113,9 +1113,9 @@
 			}, n.a.createElement("path", {
 				d: "M12.8,6.4 L9.6,6.4 L9.6,3.2 C9.6,2.7576 9.2424,2.4 8.8,2.4 L7.2,2.4 C6.7576,2.4 6.4,2.7576 6.4,3.2 L6.4,6.4 L3.2,6.4 C2.7584,6.4 2.4,6.7576 2.4,7.2 L2.4,8.8 C2.4,9.2424 2.7584,9.6 3.2,9.6 L6.4,9.6 L6.4,12.8 C6.4,13.2424 6.7576,13.6 7.2,13.6 L8.8,13.6 C9.2424,13.6 9.6,13.2424 9.6,12.8 L9.6,9.6 L12.8,9.6 C13.2424,9.6 13.6,9.2424 13.6,8.8 L13.6,7.2 C13.6,6.7576 13.2424,6.4 12.8,6.4"
 			})), ke = e => {
-				const t = Object(r.e)(P.j),
-					s = Object(r.e)(P.B),
-					a = Object(r.e)(P.db);
+				const t = Object(r.e)(P.k),
+					s = Object(r.e)(P.C),
+					a = Object(r.e)(P.eb);
 				return !!e && (!!e.accountIcon && (!!t && (t.id === e.id || (!e.isNSFW || !!a && !s))))
 			}
 		},
@@ -1518,9 +1518,9 @@
 			})), s.d(t, "d", (function() {
 				return A
 			})), s.d(t, "h", (function() {
-				return B
-			})), s.d(t, "k", (function() {
 				return M
+			})), s.d(t, "k", (function() {
+				return B
 			})), s.d(t, "c", (function() {
 				return T
 			})), s.d(t, "f", (function() {
@@ -1676,8 +1676,8 @@
 					if (e > 0) return t[e - 1]
 				}),
 				A = Object(n.a)(Object(a.a)(O, E, (e, t) => e ? t[e] : void 0)),
-				B = Object(n.a)(Object(a.a)(y, E, (e, t) => e ? t[e] : void 0)),
-				M = Object(n.a)(Object(a.a)(S, E, (e, t) => e ? t[e] : void 0)),
+				M = Object(n.a)(Object(a.a)(y, E, (e, t) => e ? t[e] : void 0)),
+				B = Object(n.a)(Object(a.a)(S, E, (e, t) => e ? t[e] : void 0)),
 				T = (Object(n.a)(Object(a.a)(e => e.publicAccessNetwork.preloads.discoveryUnitThumbnails, E, (e, t) => Object.keys(e).filter(e => !!t[e]).map(s => ({
 					...t[s],
 					preloadedPreviewUrl: e[s]
@@ -1736,4 +1736,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/VideoShareModal.6cb313d7b340c75339b8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/VideoShareModal.e7709749d3a456d863a9.js.map

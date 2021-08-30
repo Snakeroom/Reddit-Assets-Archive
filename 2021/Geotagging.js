@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Geotagging.656d02585572a752841c.js
-// Retrieved at 8/18/2021, 7:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Geotagging.d3348d99f7c122e021fd.js
+// Retrieved at 8/30/2021, 12:20:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Geotagging"], {
 		"./node_modules/p-debounce/index.js": function(e, t, s) {
@@ -531,7 +531,7 @@
 						this.windowHeight = window.innerHeight
 					}, this.handleResize = i()(() => {
 						this.updateMeasurements(), this.updateState()
-					}, c.I), this.setWrapperRef = e => this.containerEl = e || null, this.state = {
+					}, c.J), this.setWrapperRef = e => this.containerEl = e || null, this.state = {
 						isAdSticky: !0,
 						isFooterSticky: !0
 					}
@@ -959,7 +959,7 @@
 				O = s("./src/reddit/components/TopicSidebar/SubredditList/Subreddit/index.m.less"),
 				j = s.n(O);
 			const C = Object(h.c)({
-				isLoggedIn: k.J,
+				isLoggedIn: k.K,
 				subreddit: v.T,
 				subredditAboutInfo: v.v
 			});
@@ -1176,10 +1176,10 @@
 						n = t.redditStyle || Object(g.l)(e, {
 							subredditId: s
 						}),
-						r = Object(f.W)(e);
+						r = Object(f.X)(e);
 					return n || r
 				},
-				nigtmode: f.W,
+				nigtmode: f.X,
 				subredditId: u.n,
 				topPostVariant: h.d
 			}));
@@ -1482,7 +1482,7 @@
 		"./src/reddit/pages/Geotagging/index.tsx": function(e, t, s) {
 			"use strict";
 			s.r(t), s.d(t, "GEOTAGGING_DISMISSED", (function() {
-				return X
+				return Z
 			})), s.d(t, "Geotagging", (function() {
 				return $
 			})), s.d(t, "default", (function() {
@@ -1624,8 +1624,8 @@
 			} = s("./node_modules/fbt/lib/FbtPublic.js");
 
 			function Y(e) {
-				const t = Object(b.B)(X) || [];
-				t.push(e), Object(b.Gb)(X, t)
+				const t = Object(b.B)(Z) || [];
+				t.push(e), Object(b.Gb)(Z, t)
 			}
 
 			function V(e) {
@@ -1716,8 +1716,8 @@
 				}))
 			}
 			const {
-				fbt: Z
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), X = "geotagging-dismissed";
+				fbt: X
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), Z = "geotagging-dismissed";
 
 			function $() {
 				const {
@@ -1735,7 +1735,7 @@
 									id: "ChIJIQBpAG2ahYAR_6128GcTUEo"
 								})
 							});
-							const s = Object(b.B)(X) || [];
+							const s = Object(b.B)(Z) || [];
 							a((t.data.geoContributableSubreddits || []).filter(e => !s.includes(e.id)))
 						}).catch(e => {
 							console.error(e), t(!0)
@@ -1750,7 +1750,7 @@
 				function c(e) {
 					o(i + 1)
 				}
-				return e ? r.a.createElement("div", null, r.a.createElement(j, null), Z._("Error loading subreddits", null, {
+				return e ? r.a.createElement("div", null, r.a.createElement(j, null), X._("Error loading subreddits", null, {
 					hk: "4hQNVu"
 				})) : t ? r.a.createElement(r.a.Fragment, null, r.a.createElement(j, null), r.a.createElement(a.a, {
 					isLoading: !0,
@@ -1815,4 +1815,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.656d02585572a752841c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.d3348d99f7c122e021fd.js.map

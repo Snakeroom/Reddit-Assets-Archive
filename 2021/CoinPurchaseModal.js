@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.e62e457924e4f03a617d.js
-// Retrieved at 8/12/2021, 6:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.35d166b5fcdcfc009f96.js
+// Retrieved at 8/30/2021, 12:20:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinPurchaseModal"], {
 		"./src/lib/loadRedditAdsPixel.ts": function(e, t, a) {
@@ -704,7 +704,7 @@
 				}) => {
 					t(m());
 					const d = a(),
-						l = Object(i.J)(d);
+						l = Object(i.K)(d);
 					try {
 						const a = !l,
 							r = await Object(c.b)({
@@ -967,7 +967,7 @@
 					}, o.a.createElement(u.a, {
 						className: T.a.balance,
 						coinBalance: t
-					}), s === c.Eb ? e && e.pennyPrice && a ? o.a.createElement(I, {
+					}), s === c.Fb ? e && e.pennyPrice && a ? o.a.createElement(I, {
 						awardId: e.id,
 						className: Object(p.a)(T.a.purchaseButton, T.a.paypalCheckoutButton),
 						pennies: e.pennyPrice,
@@ -975,7 +975,7 @@
 					}) : r && o.a.createElement(I, {
 						className: Object(p.a)(T.a.purchaseButton, T.a.paypalCheckoutButton),
 						coinPackage: r
-					}) : null, s === c.Db && o.a.createElement(b.i, {
+					}) : null, s === c.Eb && o.a.createElement(b.i, {
 						className: T.a.purchaseButton,
 						"data-redditstyle": !0,
 						disabled: i || n,
@@ -1016,7 +1016,7 @@
 				className: T.a.closeIcon,
 				"data-redditstyle": !0
 			})));
-			var D = e => {
+			var L = e => {
 					const t = [];
 					if (e.purchasePackage && t.push(r.fbt._("{coinCount} Coins will automatically be spent on this {awardName} Award.", [r.fbt._param("coinCount", e.award.coinPrice.toLocaleString()), r.fbt._param("awardName", e.award.name)], {
 							hk: "1JRQG2"
@@ -1050,12 +1050,12 @@
 						"data-redditstyle": !0
 					})))
 				},
-				L = a("./src/reddit/hooks/useStripe.ts");
+				D = a("./src/reddit/hooks/useStripe.ts");
 			t.a = e => {
-				const t = Object(L.a)();
+				const t = Object(D.a)();
 				return o.a.createElement(s.StripeProvider, {
 					stripe: t
-				}, o.a.createElement(s.Elements, null, o.a.createElement(o.a.Fragment, null, e.gildThingId ? o.a.createElement(D, {
+				}, o.a.createElement(s.Elements, null, o.a.createElement(o.a.Fragment, null, e.gildThingId ? o.a.createElement(L, {
 					coinBalance: e.coinBalance,
 					award: e.selectedAward,
 					purchasePackage: e.purchasePackage,
@@ -1074,7 +1074,7 @@
 					nightmode: e.nightmode,
 					selectedPayment: e.selectedPayment,
 					onPaymentSelected: e.onPaymentSelected
-				}), e.selectedPayment === c.Db && o.a.createElement(d.a, {
+				}), e.selectedPayment === c.Eb && o.a.createElement(d.a, {
 					nightmode: e.nightmode
 				}), o.a.createElement("div", {
 					className: T.a.checkoutFooter
@@ -1082,9 +1082,9 @@
 					className: T.a.purchaseTotal
 				}, r.fbt._("Total: {totalAmount}", [r.fbt._param("totalAmount", "$" + ((e.purchasePackage ? e.purchasePackage.pennies : e.selectedAward.pennyPrice || 0) / 100).toLocaleString())], {
 					hk: "3dx6W8"
-				}))), e.selectedPayment === c.Eb && e.paypalErrorMessage && o.a.createElement("div", {
+				}))), e.selectedPayment === c.Fb && e.paypalErrorMessage && o.a.createElement("div", {
 					className: T.a.errorMessage
-				}, e.paypalErrorMessage), e.selectedPayment === c.Db && e.stripeErrorMessage && o.a.createElement("div", {
+				}, e.paypalErrorMessage), e.selectedPayment === c.Eb && e.stripeErrorMessage && o.a.createElement("div", {
 					className: T.a.errorMessage
 				}, e.stripeErrorMessage), o.a.createElement("div", {
 					className: T.a.agreementLink
@@ -1224,13 +1224,13 @@
 						const t = Object(w.a)(e);
 						return null === t ? void 0 : t
 					},
-					coinBalance: x.d,
+					coinBalance: x.e,
 					coinPackages: P.d,
 					correlationId: e => Object(k.r)(e) || Object(h.d)(h.a.GoldPayment, !1),
 					dealCoinPackages: P.f,
 					gildThingId: k.s,
 					isIframed: C.g,
-					nightmode: x.W,
+					nightmode: x.X,
 					savedCardsPending: k.w,
 					selectedAward: f.b,
 					selectedPayment: k.c,
@@ -1242,7 +1242,7 @@
 					purchasePackageId: k.t,
 					recommendedPackages: P.n,
 					userName: e => {
-						const t = Object(x.j)(e);
+						const t = Object(x.k)(e);
 						return `u/${Object(O.e)(t)}`
 					}
 				}),
@@ -1358,7 +1358,7 @@
 					}))
 				}
 			}
-			const D = Object(c.a)(R);
+			const L = Object(c.a)(R);
 			t.default = F(Object(b.c)(class extends n.a.PureComponent {
 				constructor() {
 					super(...arguments), this.onTryCloseModal = () => {
@@ -1380,7 +1380,7 @@
 							paddingBottom: 12
 						} : {}
 					};
-					return n.a.createElement(D, B({}, this.props, {
+					return n.a.createElement(L, B({}, this.props, {
 						className: A.a.coinPurchaseModal,
 						onCloseModal: this.onCloseModal,
 						onOverlayClick: this.onTryCloseModal,
@@ -1481,7 +1481,7 @@
 					l = `${t.apiUrl}/api/v2/gold/paypal/initiate_premium_payment`,
 					p = Object(c.a)(l);
 				return Object(n.a)(Object(o.a)(t, [s.a]), {
-					method: r.hb.POST,
+					method: r.ib.POST,
 					endpoint: p,
 					data: d
 				}).then(i.c)
@@ -1497,7 +1497,7 @@
 					correlation_id: c
 				};
 				return Object(n.a)(Object(o.a)(e, [s.a]), {
-					method: r.hb.POST,
+					method: r.ib.POST,
 					endpoint: `${e.apiUrl}/api/v2/gold/paypal/create_coin_purchase_order`,
 					data: d
 				}).then(i.c)
@@ -1515,7 +1515,7 @@
 					thing_id: c
 				};
 				return Object(n.a)(Object(o.a)(e, [s.a]), {
-					method: r.hb.POST,
+					method: r.ib.POST,
 					endpoint: `${e.apiUrl}/api/v2/gold/paypal/create_award_purchase_order`,
 					data: l
 				}).then(i.c)
@@ -1535,7 +1535,7 @@
 					correlation_id: l
 				};
 				return Object(n.a)(Object(o.a)(e, [s.a]), {
-					method: r.hb.POST,
+					method: r.ib.POST,
 					endpoint: `${e.apiUrl}/api/v2/gold/paypal/execute_coin_order`,
 					data: p
 				}).then(i.c)
@@ -1563,7 +1563,7 @@
 					thing_id: b
 				};
 				return Object(n.a)(Object(o.a)(t, [s.a]), {
-					method: r.hb.POST,
+					method: r.ib.POST,
 					endpoint: `${t.apiUrl}/api/v2/gold/paypal/execute_coin_with_gild_order`,
 					data: g
 				}).then(i.c)
@@ -1585,7 +1585,7 @@
 					thing_id: p
 				};
 				return Object(n.a)(Object(o.a)(t, [s.a]), {
-					method: r.hb.POST,
+					method: r.ib.POST,
 					endpoint: `${t.apiUrl}/api/v2/gold/paypal/execute_award_purchase_order`,
 					data: u
 				}).then(i.c)
@@ -1608,4 +1608,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.e62e457924e4f03a617d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.35d166b5fcdcfc009f96.js.map

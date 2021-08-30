@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InboxTooltip.a572ae6c8ab3470d0db9.js
-// Retrieved at 8/18/2021, 11:50:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InboxTooltip.33ecde1bcf7ea3bbfd46.js
+// Retrieved at 8/30/2021, 12:20:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InboxTooltip", "PushNotifications"], {
 		"./src/lib/notifications/token.ts": function(e, t, i) {
@@ -63,7 +63,7 @@
 			i.r(t), i.d(t, "initializeServiceWorkerChannel", (function() {
 				return S
 			})), i.d(t, "requestNotificationsPermissions", (function() {
-				return v
+				return I
 			})), i.d(t, "subscribeForPNs", (function() {
 				return _
 			})), i.d(t, "unsubscribeFromPNs", (function() {
@@ -92,14 +92,14 @@
 				N = i("./src/reddit/selectors/user.ts");
 			let k = !1;
 			const S = async (e, t) => {
-				const i = Object(N.I)(e);
+				const i = Object(N.J)(e);
 				if (k) return;
 				if (k = !0, Object(f.a)(e) !== d.c.NotificationsSupported) return;
 				await Object(l.a)();
 				navigator.serviceWorker.addEventListener("message", n => {
 					const s = n.data,
 						r = s.command || s.type;
-					if ("registerWithServiceWorker" === r) I(e);
+					if ("registerWithServiceWorker" === r) v(e);
 					else if (r === h.a && i) {
 						const e = o()(s, ["command"]);
 						t(Object(p.f)(e))
@@ -107,13 +107,13 @@
 						const e = Object(m.a)(s.data.href);
 						e && e.pathname && t(Object(u.c)(e.pathname))
 					}
-				}), I(e)
-			}, I = e => {
+				}), v(e)
+			}, v = e => {
 				navigator.serviceWorker.controller && navigator.serviceWorker.controller.postMessage({
 					command: "registerClient",
 					v2EventBoilerPlate: O.c(e)
 				})
-			}, v = (e, t, i = (() => {})) => async (n, s, o) => {
+			}, I = (e, t, i = (() => {})) => async (n, s, o) => {
 				const a = s(),
 					l = Object(j.f)(a);
 				if (await Object(r.a)() || l) return;
@@ -167,7 +167,7 @@
 				if (Object(f.a)(n) === d.c.NotificationsSupported) switch (Object(c.a)()) {
 					case d.a.Default:
 					case d.a.Closed:
-						t(v(!0, !0));
+						t(I(!0, !0));
 						break;
 					case d.a.Denied:
 						t(Object(b.h)(e))
@@ -239,8 +239,8 @@
 				isOpen: N,
 				isPending: k,
 				isPushNotificationsSupported: S,
-				markAllAsRead: I,
-				markNotificationAsRead: v,
+				markAllAsRead: v,
+				markNotificationAsRead: I,
 				messagesBadgeCount: _,
 				notifications: w,
 				showBrowserNotificationsPermissionSettings: B,
@@ -277,8 +277,8 @@
 					isInboxInfiniteScrollEnabled: x,
 					isInboxPostEmbedEnabled: j,
 					isPending: k,
-					markAllAsRead: I,
-					markNotificationAsRead: v,
+					markAllAsRead: v,
+					markNotificationAsRead: I,
 					messagesBadgeCount: _,
 					notifications: w,
 					setActiveOverflowMenuId: C,
@@ -421,4 +421,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InboxTooltip.a572ae6c8ab3470d0db9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InboxTooltip.33ecde1bcf7ea3bbfd46.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.62607b0c50547699c802.js
-// Retrieved at 8/18/2021, 12:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.219cddaf8fb46cfe497f.js
+// Retrieved at 8/30/2021, 12:20:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsPurchaseModal"], {
 		"./src/reddit/actions/goldPurchaseModals/payment.ts": function(e, t, n) {
@@ -289,7 +289,7 @@
 			const {
 				fbt: B
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), I = Object(o.c)({
-				currentUser: y.j,
+				currentUser: y.k,
 				isAnonymous: x.d,
 				powerupsCount: x.e,
 				productOffer: _.b
@@ -347,8 +347,8 @@
 						hk: "1T4BEy"
 					}))
 				}))),
-				D = n("./src/reddit/components/Econ/PowerupsPurchaseModal/PowerupsPurchase/PowerupsPremiumButton/index.m.less"),
-				F = n.n(D);
+				F = n("./src/reddit/components/Econ/PowerupsPurchaseModal/PowerupsPurchase/PowerupsPremiumButton/index.m.less"),
+				D = n.n(F);
 			const {
 				fbt: U
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), H = ({
@@ -364,10 +364,10 @@
 					onClick: () => {
 						c(Object(P.j)(t, o, n))
 					},
-					className: Object(l.a)(e, F.a.button),
+					className: Object(l.a)(e, D.a.button),
 					disabled: r
 				}, r ? s.a.createElement(z.a, {
-					className: F.a.loadingIcon,
+					className: D.a.loadingIcon,
 					sizePx: 12
 				}) : U._({
 					"*": "Apply Your Powerups",
@@ -379,7 +379,7 @@
 			var R = n("./src/reddit/components/PowerupsSidebar/common/utils.ts"),
 				X = n("./src/reddit/components/Econ/PowerupsPurchaseModal/PowerupsPurchase/PowerupsProgressControl/PowerupsCount/index.m.less"),
 				q = n.n(X);
-			var W = function(e) {
+			var Z = function(e) {
 					const {
 						className: t,
 						onChange: n,
@@ -407,8 +407,8 @@
 						onClick: () => i(1)
 					})))
 				},
-				Z = n("./src/reddit/components/Econ/PowerupsPurchaseModal/PowerupsPurchase/PowerupsProgressControl/ProgressBar/index.m.less"),
-				K = n.n(Z);
+				W = n("./src/reddit/components/Econ/PowerupsPurchaseModal/PowerupsPurchase/PowerupsProgressControl/ProgressBar/index.m.less"),
+				K = n.n(W);
 			const {
 				fbt: V
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
@@ -467,7 +467,7 @@
 					className: G.a.bar,
 					count: o.count,
 					maxCount: d
-				}), s.a.createElement(W, {
+				}), s.a.createElement(Z, {
 					className: G.a.count,
 					style: {
 						left: `${100*u}%`
@@ -517,7 +517,7 @@
 				fbt: ae
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), oe = 100, ce = Object(o.c)({
 				isAnonymous: x.d,
-				isNightMode: y.W,
+				isNightMode: y.X,
 				paypalErrorMessage: v.d,
 				powerups: x.j,
 				powerupsCount: x.e,
@@ -537,7 +537,7 @@
 						stripeErrorMessage: u,
 						subredditId: m,
 						userPowerupsData: p
-					} = e, x = Object(a.d)(), [_, v] = Object(r.useState)(f.Eb);
+					} = e, x = Object(a.d)(), [_, v] = Object(r.useState)(f.Fb);
 					Object(r.useEffect)(() => {
 						x(Object(E.d)()), x(Object(g.selectPaymentMethod)(_))
 					}, []);
@@ -584,18 +584,18 @@
 						onPaymentSelected: e => {
 							v(e), x(Object(g.selectPaymentMethod)(e))
 						}
-					}), _ === f.Db && u && s.a.createElement("div", {
+					}), _ === f.Eb && u && s.a.createElement("div", {
 						className: se.a.errorMessage
-					}, u), _ === f.Eb && c && s.a.createElement("div", {
+					}, u), _ === f.Fb && c && s.a.createElement("div", {
 						className: se.a.errorMessage
-					}, c), _ === f.Db && s.a.createElement(O.a, {
+					}, c), _ === f.Eb && s.a.createElement(O.a, {
 						nightmode: n,
 						className: se.a.stripeForm,
 						shouldDeleteCardWithGql: !0
-					}), _ === f.Eb && s.a.createElement(T, {
+					}), _ === f.Fb && s.a.createElement(T, {
 						className: se.a.button,
 						subredditId: m
-					}), _ === f.Db && s.a.createElement(ne, {
+					}), _ === f.Eb && s.a.createElement(ne, {
 						className: se.a.button,
 						subredditId: m
 					}), s.a.createElement("p", {
@@ -890,4 +890,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.62607b0c50547699c802.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.219cddaf8fb46cfe497f.js.map

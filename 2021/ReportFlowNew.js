@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlowNew.d0512ce8cc0c797200d3.js
-// Retrieved at 8/18/2021, 6:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlowNew.8dcc8d008b78b5fc60b0.js
+// Retrieved at 8/30/2021, 12:20:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlowNew"], {
 		"./src/reddit/actions/blockedRedditors.ts": function(e, t, o) {
@@ -167,7 +167,7 @@
 					apiContext: s
 				}) => {
 					const l = o(),
-						p = Object(a.j)(l),
+						p = Object(a.k)(l),
 						u = p ? p.id : void 0,
 						m = l.user.blocked.data.filter(t => t.name === e)[0];
 					u && (t(C({
@@ -328,7 +328,7 @@
 						(n ? n.author : i ? i.author : null) || t.author;
 						o.name
 					}),
-					isNightmodeOn: E.W,
+					isNightmodeOn: E.X,
 					locale: L.i
 				}),
 				G = Object(a.b)(U, (e, {
@@ -618,7 +618,7 @@
 					name: t
 				},
 				endpoint: `${e.apiUrl}/api/block_user`,
-				method: s.hb.POST
+				method: s.ib.POST
 			}), l = async (e, t, o) => Object(n.a)(Object(i.a)(e, [d.a]), {
 				data: {
 					name: o,
@@ -626,22 +626,22 @@
 					type: "enemy"
 				},
 				endpoint: `${e.apiUrl}/api/unfriend`,
-				method: s.hb.POST
+				method: s.ib.POST
 			}), p = async (e, t) => Object(n.a)(Object(i.a)(e, [d.a]), {
 				data: {
 					name: t
 				},
 				endpoint: `${e.apiUrl}/api/add_whitelisted?include_model`,
-				method: s.hb.POST
+				method: s.ib.POST
 			}), u = async (e, t) => Object(n.a)(Object(i.a)(e, [d.a]), {
 				data: {
 					name: t
 				},
 				endpoint: `${e.apiUrl}/api/remove_whitelisted`,
-				method: s.hb.POST
+				method: s.ib.POST
 			}), m = async (e, t) => Object(n.a)(Object(i.a)(e, [d.a]), {
 				endpoint: Object(c.a)(`${r.a.oauthUrl}/user/${t}/about`),
-				method: s.hb.GET,
+				method: s.ib.GET,
 				data: {
 					raw_json: 1
 				}
@@ -679,7 +679,7 @@
 					return !!o && o.includes(t)
 				},
 				d = (e, t) => {
-					const o = Object(r.nb)(e, {
+					const o = Object(r.ob)(e, {
 						userName: t
 					});
 					return !!o && i(e, o.id)
@@ -702,4 +702,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlowNew.d0512ce8cc0c797200d3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlowNew.8dcc8d008b78b5fc60b0.js.map

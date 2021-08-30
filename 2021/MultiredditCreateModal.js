@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MultiredditCreateModal.856f8264dc02df9dc073.js
-// Retrieved at 8/17/2021, 7:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MultiredditCreateModal.6a5be2eee139ddc6ef1f.js
+// Retrieved at 8/30/2021, 12:20:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MultiredditCreateModal"], {
 		"./src/reddit/actions/multireddit/index.ts": function(e, t, r) {
@@ -17,9 +17,9 @@
 			})), r.d(t, "myMultiredditsReceived", (function() {
 				return z
 			})), r.d(t, "myMultiredditsRequested", (function() {
-				return A
-			})), r.d(t, "createFailure", (function() {
 				return H
+			})), r.d(t, "createFailure", (function() {
+				return A
 			})), r.d(t, "createPending", (function() {
 				return W
 			})), r.d(t, "createSuccess", (function() {
@@ -31,9 +31,9 @@
 			})), r.d(t, "duplicateFailure", (function() {
 				return $
 			})), r.d(t, "duplicatePending", (function() {
-				return B
-			})), r.d(t, "duplicateSuccess", (function() {
 				return V
+			})), r.d(t, "duplicateSuccess", (function() {
+				return B
 			})), r.d(t, "duplicateRequested", (function() {
 				return X
 			})), r.d(t, "addSubredditPending", (function() {
@@ -92,16 +92,16 @@
 				f = r("./src/lib/makeApiRequest/index.ts"),
 				h = r("./src/lib/omitHeaders/index.ts"),
 				x = r("./src/reddit/constants/headers.ts"),
-				j = r("./src/reddit/helpers/addRedesignIdentifier/index.ts"),
-				O = r("./src/lib/makeGqlRequest/index.ts"),
+				O = r("./src/reddit/helpers/addRedesignIdentifier/index.ts"),
+				j = r("./src/lib/makeGqlRequest/index.ts"),
 				g = r("./src/redditGQL/operations/AllUserMultireddits.json"),
 				y = r("./src/reddit/endpoints/page/multiredditListing.ts"),
 				_ = r("./src/redditGQL/operations/SubredditRecommendations.json"),
 				C = r("./src/reddit/helpers/filterListingResponse/index.ts"),
-				F = r("./src/reddit/helpers/graphql/normalizeMultiredditDataFromGql/index.ts"),
-				v = r("./src/reddit/helpers/graphql/normalizeMultiredditListingFromGql/index.ts"),
-				S = r("./src/reddit/helpers/graphql/normalizeSubredditFromGql/index.ts"),
-				k = e => {
+				k = r("./src/reddit/helpers/graphql/normalizeMultiredditDataFromGql/index.ts"),
+				F = r("./src/reddit/helpers/graphql/normalizeMultiredditListingFromGql/index.ts"),
+				v = r("./src/reddit/helpers/graphql/normalizeSubredditFromGql/index.ts"),
+				S = e => {
 					let t = e.over_18 || !1;
 					if (!t)
 						for (const n of e.subreddits)
@@ -128,8 +128,8 @@
 								displayName: i.toLowerCase()
 							}
 						}).sort((e, t) => e.displayName.localeCompare(t.displayName)),
-						s = i.filter(e => !e.displayName.startsWith(a.ec)).map(e => e.id),
-						d = i.filter(e => e.displayName.startsWith(a.ec)).map(e => e.id);
+						s = i.filter(e => !e.displayName.startsWith(a.fc)).map(e => e.id),
+						d = i.filter(e => e.displayName.startsWith(a.fc)).map(e => e.id);
 					return {
 						created: e.created_utc,
 						description: e.description_md,
@@ -166,7 +166,7 @@
 					const {
 						gqlContext: s
 					} = i, {
-						sort: d = a.U.HOT,
+						sort: d = a.V.HOT,
 						multiredditName: n,
 						username: o
 					} = e, c = r(), u = c.platform.currentPage, m = u ? u.queryParams : {}, p = Object(T.d)(c, {
@@ -176,52 +176,52 @@
 					if (!f) return;
 					const h = c.listings.postOrder.api.pending[b],
 						x = c.listings.postOrder.fetchedTokens,
-						j = x[b] && x[b][f.token] || !1;
-					if (h || j) return;
+						O = x[b] && x[b][f.token] || !1;
+					if (h || O) return;
 					t(G({
 						key: b,
 						fetchedToken: f.token
 					}));
-					const O = p.url.replace(/\/$/, ""),
+					const j = p.url.replace(/\/$/, ""),
 						g = m.t ? m.t.toUpperCase() : void 0,
 						_ = {
 							after: f.token,
 							includeIdentity: !1,
 							includeSources: !1,
-							path: O,
+							path: j,
 							range: g,
 							sort: d.toUpperCase()
 						},
-						F = await Object(y.a)(s(), _),
+						k = await Object(y.a)(s(), _),
 						{
-							data: S
-						} = F.body,
-						k = Object(v.a)(S);
-					F.ok && S && S.multireddit ? t(R({
+							data: v
+						} = k.body,
+						S = Object(F.a)(v);
+					k.ok && v && v.multireddit ? t(R({
 						fetchedToken: f.token,
 						key: b,
 						meta: c.meta,
-						...k,
-						...Object(C.a)(c, b, k),
+						...S,
+						...Object(C.a)(c, b, S),
 						multiredditsModelsState: c.multireddits.models
 					})) : t(M({
 						error: {
-							type: a.G.NOT_FOUND_ERROR
+							type: a.H.NOT_FOUND_ERROR
 						},
 						fetchedToken: f.token,
 						key: b,
-						...F.body,
-						...Object(C.a)(c, b, k)
+						...k.body,
+						...Object(C.a)(c, b, S)
 					}))
-				}, U = Object(c.a)(I.t), z = Object(c.a)(I.u), A = (e, t = !1) => async (r, i, {
+				}, U = Object(c.a)(I.t), z = Object(c.a)(I.u), H = (e, t = !1) => async (r, i, {
 					apiContext: s,
 					gqlContext: d
 				}) => {
 					const n = i();
-					if (!Object(L.j)(n)) return;
+					if (!Object(L.k)(n)) return;
 					if (!e && Object(T.h)(n) || Object(T.i)(n)) return;
 					r(U());
-					const a = await ((e, t) => Object(O.a)(e, {
+					const a = await ((e, t) => Object(j.a)(e, {
 						...g,
 						variables: t
 					}))(d(), {
@@ -229,13 +229,13 @@
 					});
 					if (a.ok) {
 						const e = a.body.data.identity.allMultireddits.edges.map(e => e.node),
-							t = Object(F.b)(e);
+							t = Object(k.b)(e);
 						r(z({
 							...t,
 							multiredditsModelsState: n.multireddits.models
 						}))
 					}
-				}, H = Object(c.a)(I.e), W = Object(c.a)(I.f), Q = Object(c.a)(I.g), K = ({
+				}, A = Object(c.a)(I.e), W = Object(c.a)(I.f), Q = Object(c.a)(I.g), K = ({
 					description: e,
 					displayName: t,
 					shouldNavigate: r
@@ -243,11 +243,11 @@
 					apiContext: o
 				}) => {
 					const c = d(),
-						l = Object(L.j)(c);
+						l = Object(L.k)(c);
 					if (!l) return;
 					s(W());
 					const m = await ((e, t, r) => Object(f.a)(Object(h.a)(e, [x.a]), {
-						endpoint: Object(j.a)(`${e.apiUrl}/api/multi`),
+						endpoint: Object(O.a)(`${e.apiUrl}/api/multi`),
 						data: {
 							model: JSON.stringify({
 								description_md: r,
@@ -256,14 +256,14 @@
 								subreddits: []
 							})
 						},
-						method: a.hb.POST
+						method: a.ib.POST
 					}))(o(), t, e);
 					if (m.ok) {
 						const {
 							id: e
 						} = l;
 						if (await s(Q({
-								multireddit: k(m.body.data),
+								multireddit: S(m.body.data),
 								multiredditsModelsState: c.multireddits.models,
 								userId: e
 							})), r) {
@@ -276,17 +276,17 @@
 								hk: "258cY9"
 							})
 						}))
-					} else s(H(m.error))
+					} else s(A(m.error))
 				}, J = () => async (e, t, {
 					apiContext: r
 				}) => {
 					const i = t(),
-						s = Object(L.j)(i),
+						s = Object(L.k)(i),
 						n = Object(w.h)(i) ? Object(w.k)(i) : Object(w.b)(i),
 						o = n && n.routeMatch && n.routeMatch.match;
 					if (!o) return;
 					const c = o.params,
-						u = c.sort || a.U.HOT,
+						u = c.sort || a.V.HOT,
 						{
 							multiredditName: p,
 							username: f
@@ -296,17 +296,17 @@
 						{
 							queryParams: x
 						} = o,
-						j = Object(l.a)(h, u, x),
-						O = b.x in x && x[b.x].toUpperCase() || "",
-						g = a.cc[O] || !1,
-						y = Object(L.j)(i);
-					(f || y && y.displayText) && await e(Object(m.multiredditFeedRequested)(j, (f || y.displayText).toLowerCase(), p.toLowerCase(), {
+						O = Object(l.a)(h, u, x),
+						j = b.x in x && x[b.x].toUpperCase() || "",
+						g = a.dc[j] || !1,
+						y = Object(L.k)(i);
+					(f || y && y.displayText) && await e(Object(m.multiredditFeedRequested)(O, (f || y.displayText).toLowerCase(), p.toLowerCase(), {
 						...d()(x, b.l),
 						...d()(x, b.k),
 						sort: u,
 						t: Object(q.a)(u, g)
 					}))
-				}, $ = Object(c.a)(I.k), B = Object(c.a)(I.l), V = Object(c.a)(I.m), X = ({
+				}, $ = Object(c.a)(I.k), V = Object(c.a)(I.l), B = Object(c.a)(I.m), X = ({
 					description: e,
 					displayName: t,
 					fromName: r,
@@ -315,27 +315,27 @@
 					apiContext: c
 				}) => {
 					const l = o(),
-						m = Object(L.j)(l);
+						m = Object(L.k)(l);
 					if (!m || !m.displayText) return;
 					const b = Object(N.h)((s || m.displayText).toLowerCase(), r.toLowerCase());
-					d(B());
-					const O = await ((e, t) => Object(f.a)(Object(h.a)(e, [x.a]), {
-						endpoint: Object(j.a)(`${e.apiUrl}/api/multi/copy`),
+					d(V());
+					const j = await ((e, t) => Object(f.a)(Object(h.a)(e, [x.a]), {
+						endpoint: Object(O.a)(`${e.apiUrl}/api/multi/copy`),
 						data: {
 							description_md: t.description,
 							display_name: t.displayName,
 							expand_srs: !0,
 							from: t.from
 						},
-						method: a.hb.POST
+						method: a.ib.POST
 					}))(c(), {
 						from: b,
 						displayName: t,
 						description: e
 					});
-					if (O.ok) {
-						const e = k(O.body.data);
-						d(Object(u.f)()), d(V({
+					if (j.ok) {
+						const e = S(j.body.data);
+						d(Object(u.f)()), d(B({
 							multireddit: e,
 							multiredditsModelsState: l.multireddits.models,
 							userId: m.id
@@ -348,7 +348,7 @@
 							}),
 							buttonAction: Object(n.b)(e.url)
 						}))
-					} else d($(O.error)), d(Object(p.f)({
+					} else d($(j.error)), d(Object(p.f)({
 						text: i.fbt._("Something went wrong duplicating {multiName}", [i.fbt._param("multiName", r)], {
 							hk: "4bzN2D"
 						})
@@ -361,7 +361,7 @@
 					apiContext: n
 				}) => {
 					const c = d(),
-						l = Object(L.j)(c);
+						l = Object(L.k)(c);
 					if (!l || c.multireddits.api.addSubreddit.pending) return;
 					s(Y({
 						name: t.name
@@ -371,14 +371,14 @@
 					} = l;
 					if (!m) return;
 					const b = r.map(e => `/user/${m.toLowerCase()}/m/${e.toLowerCase()}`).join(","),
-						O = `${"profile"===t.type?a.ec:""}${t.name}`,
+						j = `${"profile"===t.type?a.fc:""}${t.name}`,
 						g = await ((e, t, r) => Object(f.a)(Object(h.a)(e, [x.a]), {
-							endpoint: Object(j.a)(`${e.apiUrl}/api/multi/bulk_add/r/${t}`),
+							endpoint: Object(O.a)(`${e.apiUrl}/api/multi/bulk_add/r/${t}`),
 							data: {
 								paths: r
 							},
-							method: a.hb.PUT
-						}))(n(), O, b);
+							method: a.ib.PUT
+						}))(n(), j, b);
 					if (g.ok) {
 						const d = Object(P.K)(c, {
 								identifier: t
@@ -420,17 +420,17 @@
 					apiContext: o
 				}) => {
 					const c = n(),
-						l = Object(L.j)(c);
+						l = Object(L.k)(c);
 					if (!l || !l.displayText || c.multireddits.api.removeSubreddit.pending) return;
 					d(re({
 						id: e
 					}));
 					const {
 						displayText: m
-					} = l, b = Object(N.h)(m, t), O = `${"profile"===s?a.ec:""}${r}`, g = await ((e, t, r) => Object(f.a)(Object(h.a)(e, [x.a]), {
-						endpoint: Object(j.a)(`${e.apiUrl}/api/multi${r}r/${t}`),
-						method: a.hb.DELETE
-					}))(o(), O, b);
+					} = l, b = Object(N.h)(m, t), j = `${"profile"===s?a.fc:""}${r}`, g = await ((e, t, r) => Object(f.a)(Object(h.a)(e, [x.a]), {
+						endpoint: Object(O.a)(`${e.apiUrl}/api/multi${r}r/${t}`),
+						method: a.ib.DELETE
+					}))(o(), j, b);
 					g.ok ? (d(Object(u.f)()), d(ie({
 						id: e,
 						multipath: b,
@@ -458,11 +458,11 @@
 					apiContext: s
 				}) => {
 					const d = r();
-					if (!Object(L.j)(d)) return;
+					if (!Object(L.k)(d)) return;
 					t(ae());
 					const o = await ((e, t) => Object(f.a)(Object(h.a)(e, [x.a]), {
-						endpoint: Object(j.a)(`${e.apiUrl}/api/multi${t}`),
-						method: a.hb.DELETE
+						endpoint: Object(O.a)(`${e.apiUrl}/api/multi${t}`),
+						method: a.ib.DELETE
 					}))(s(), e);
 					o.ok ? (await t(oe(e)), t(Object(u.f)()), await t(Object(n.b)("/")), t(Object(p.f)({
 						text: i.fbt._("Custom feed deleted!", null, {
@@ -478,7 +478,7 @@
 					apiContext: o
 				}) => {
 					const c = n();
-					if (!Object(L.J)(c)) return;
+					if (!Object(L.K)(c)) return;
 					d(ue());
 					const l = await (({
 						context: e,
@@ -487,7 +487,7 @@
 						multipath: i,
 						visibility: s
 					}) => Object(f.a)(Object(h.a)(e, [x.a]), {
-						endpoint: Object(j.a)(`${e.apiUrl}/api/multi${i}`),
+						endpoint: Object(O.a)(`${e.apiUrl}/api/multi${i}`),
 						data: {
 							model: JSON.stringify({
 								description_md: t,
@@ -496,7 +496,7 @@
 							}),
 							expand_srs: !0
 						},
-						method: a.hb.PUT
+						method: a.ib.PUT
 					}))({
 						context: o(),
 						description: e,
@@ -504,7 +504,7 @@
 						multipath: r,
 						visibility: s
 					});
-					l.ok ? (await d(me(k(l.body.data))), d(Object(u.f)()), d(Object(p.f)({
+					l.ok ? (await d(me(S(l.body.data))), d(Object(u.f)()), d(Object(p.f)({
 						text: i.fbt._("Custom feed updated!", null, {
 							hk: "39R30f"
 						})
@@ -522,7 +522,7 @@
 					gqlContext: d
 				}) => {
 					const n = s(),
-						a = Object(L.j)(n);
+						a = Object(L.k)(n);
 					if (!(t || a && a.displayText)) return;
 					const o = Object(N.h)(t || a.displayText, e),
 						c = n.multireddits.models[o];
@@ -532,7 +532,7 @@
 							const r = Object(P.E)(n, t) || Object(P.F)(n, t);
 							return r ? [...e, r] : e
 						}, []),
-						u = await ((e, t) => Object(O.a)(e, {
+						u = await ((e, t) => Object(j.a)(e, {
 							..._,
 							variables: t
 						}))(d(), {
@@ -546,7 +546,7 @@
 						} = u.body;
 						i(he({
 							multipath: o,
-							subreddits: Object(S.b)(e)
+							subreddits: Object(v.b)(e)
 						}))
 					} else i(be(u.error))
 				}
@@ -579,22 +579,22 @@
 				f = r("./src/reddit/constants/postLayout.ts"),
 				h = r("./src/reddit/contexts/PageLayer/index.tsx"),
 				x = r("./src/reddit/helpers/getTimeSortForListing/index.ts"),
-				j = r("./src/reddit/helpers/graphql/normalizeMultiredditListingFromGql/index.ts"),
-				O = r("./src/reddit/models/Multireddit/index.ts"),
+				O = r("./src/reddit/helpers/graphql/normalizeMultiredditListingFromGql/index.ts"),
+				j = r("./src/reddit/models/Multireddit/index.ts"),
 				g = r("./src/reddit/models/Toast/index.ts"),
 				y = r("./src/reddit/models/User/index.ts"),
 				_ = r("./src/reddit/selectors/multireddit.ts"),
 				C = r("./src/reddit/selectors/user.ts"),
-				F = r("./src/lib/makeActionCreator/index.ts"),
-				v = r("./src/lib/makeListingKey/index.ts"),
-				S = r("./src/reddit/actions/ads/index.ts"),
-				k = r("./src/reddit/helpers/canonicalUrls.ts"),
+				k = r("./src/lib/makeActionCreator/index.ts"),
+				F = r("./src/lib/makeListingKey/index.ts"),
+				v = r("./src/reddit/actions/ads/index.ts"),
+				S = r("./src/reddit/helpers/canonicalUrls.ts"),
 				N = r("./src/reddit/helpers/timeApiRoute/index.ts"),
 				E = r("./src/reddit/reducers/sidebarPromotedPosts/models/index.ts"),
 				T = r("./src/reddit/actions/pages/multireddit/constants.ts");
-			const w = Object(F.a)(T.c),
-				P = Object(F.a)(T.b),
-				L = Object(F.a)(T.a),
+			const w = Object(k.a)(T.c),
+				P = Object(k.a)(T.b),
+				L = Object(k.a)(T.a),
 				q = (e, t, r, s, d) => async (n, a, u) => {
 					const {
 						gqlContext: p
@@ -604,7 +604,7 @@
 						key: e
 					})), s.layout = f.e[Object(h.Q)(b, {})];
 					const x = {
-							path: Object(O.h)(t, r).replace(/\/$/, ""),
+							path: Object(j.h)(t, r).replace(/\/$/, ""),
 							includeIdentity: !0,
 							includeSources: !0,
 							sort: s.sort ? s.sort.toUpperCase() : void 0,
@@ -614,13 +614,13 @@
 						{
 							data: _
 						} = y.body,
-						F = `error-${e}`;
+						k = `error-${e}`;
 					if (y.ok && _) {
-						const i = Object(j.a)(_);
-						if (!_.multireddit) return d && n(m.g(F)), void n(L({
+						const i = Object(O.a)(_);
+						if (!_.multireddit) return d && n(m.g(k)), void n(L({
 							...i,
 							error: {
-								type: l.G.NOT_FOUND_ERROR
+								type: l.H.NOT_FOUND_ERROR
 							},
 							key: e
 						}));
@@ -628,16 +628,16 @@
 							key: e,
 							meta: b.meta,
 							...i,
-							account: i.account || Object(C.j)(b),
+							account: i.account || Object(C.k)(b),
 							multiredditsModelsState: b.multireddits.models
-						})), d && n(m.g(F)), n(Object(o.recommendationsRequested)({
+						})), d && n(m.g(k)), n(Object(o.recommendationsRequested)({
 							multiredditName: r,
 							username: t
 						})), window.addEventListener("load", () => {
-							n(Object(S.b)(E.a.MULTIREDDIT))
+							n(Object(v.b)(E.a.MULTIREDDIT))
 						})
 					} else d && n(m.f({
-						id: F,
+						id: k,
 						kind: g.b.Error,
 						text: i.fbt._("Sorry, we couldn't load posts for this page.", null, {
 							hk: "36ypKx"
@@ -669,23 +669,23 @@
 						return c += l ? `/${l}` : "", void r(Object(n.c)(Object(a.a)(c, e.queryParams)))
 					}
 					const {
-						sort: c = l.U.HOT
+						sort: c = l.V.HOT
 					} = e.params, m = {
 						multiredditName: s,
 						username: o
 					}, f = i();
 					o || (o = f.user.account ? Object(y.e)(f.user.account) : "");
-					const h = Object(O.h)(o, s),
-						j = Object(v.a)(h, c, e.queryParams),
-						g = f.listings.postOrder.ids[j],
-						C = f.listings.postOrder.api.error[j],
-						F = f.listings.postOrder.api.pending[j],
+					const h = Object(j.h)(o, s),
+						O = Object(F.a)(h, c, e.queryParams),
+						g = f.listings.postOrder.ids[O],
+						C = f.listings.postOrder.api.error[O],
+						k = f.listings.postOrder.api.pending[O],
 						N = b.x in e.queryParams && e.queryParams[b.x].toUpperCase() || "",
-						T = N in l.cc && l.cc[N];
-					if (F || g && !C && !t) return void(g && (r(u.l({
+						T = N in l.dc && l.dc[N];
+					if (k || g && !C && !t) return void(g && (r(u.l({
 						title: Object(_.f)(i(), m)
-					})), f.sidebarPromotedPosts.firstFetch || r(Object(S.b)(E.a.MULTIREDDIT))));
-					await r(q(j, o, s, {
+					})), f.sidebarPromotedPosts.firstFetch || r(Object(v.b)(E.a.MULTIREDDIT))));
+					await r(q(O, o, s, {
 						...d()(e.queryParams, b.l),
 						...d()(e.queryParams, b.k),
 						sort: c,
@@ -694,7 +694,7 @@
 					const w = i();
 					Object(_.d)(w, m) && r(u.l({
 						title: Object(_.f)(i(), m)
-					})), Object(k.c)(w, r, e)
+					})), Object(S.c)(w, r, e)
 				}
 		},
 		"./src/reddit/components/CharacterCountdown/index.m.less": function(e, t, r) {
@@ -748,18 +748,18 @@
 				f = r("./src/reddit/components/TrackingHelper/index.tsx"),
 				h = r("./src/reddit/contexts/PageLayer/index.tsx"),
 				x = r("./src/reddit/controls/LoadingIcon/index.tsx"),
-				j = r("./src/reddit/helpers/multireddit/index.ts"),
-				O = r("./src/reddit/helpers/trackers/customFeeds.ts"),
+				O = r("./src/reddit/helpers/multireddit/index.ts"),
+				j = r("./src/reddit/helpers/trackers/customFeeds.ts"),
 				g = r("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
 				y = r("./src/reddit/models/Multireddit/index.ts"),
 				_ = r("./src/reddit/selectors/multireddit.ts"),
 				C = r("./src/reddit/components/MultiredditCreateModal/index.m.less"),
-				F = r.n(C);
-			const v = 12,
-				S = Object(h.u)({
+				k = r.n(C);
+			const F = 12,
+				v = Object(h.u)({
 					multiredditParams: h.d
 				}),
-				k = Object(a.c)({
+				S = Object(a.c)({
 					createError: e => e.multireddits.api.create.error,
 					createFetched: e => e.multireddits.api.create.fetched,
 					createPending: e => e.multireddits.api.create.pending,
@@ -768,7 +768,7 @@
 					duplicatePending: e => e.multireddits.api.duplicate.pending,
 					myMultireddits: _.j
 				}),
-				N = Object(n.b)(k, (e, {
+				N = Object(n.b)(S, (e, {
 					multiredditParams: t
 				}) => ({
 					create: (t, r) => e(Object(l.createRequested)({
@@ -801,7 +801,7 @@
 							description: e.target.value
 						})
 					}, this.checkDisplayTextValidity = () => {
-						const e = Object(j.a)({
+						const e = Object(O.a)({
 							displayText: this.state.name,
 							myMultireddits: this.props.myMultireddits,
 							thisMultireddit: null
@@ -814,7 +814,7 @@
 						const {
 							multiredditParams: e
 						} = this.props;
-						this.props.isDuplicateModal && e ? (this.props.duplicate(this.state.name.trim(), this.state.description.trim()), e.username && this.props.sendEvent(Object(O.b)(Object(y.h)(e.username, e.multiredditName)))) : this.props.create(this.state.name.trim(), this.state.description.trim())
+						this.props.isDuplicateModal && e ? (this.props.duplicate(this.state.name.trim(), this.state.description.trim()), e.username && this.props.sendEvent(Object(j.b)(Object(y.h)(e.username, e.multiredditName)))) : this.props.create(this.state.name.trim(), this.state.description.trim())
 					}
 				}
 				render() {
@@ -849,7 +849,7 @@
 						state: f ? p.d.Invalid : void 0,
 						value: l
 					}), f ? d.a.createElement("p", {
-						className: F.a.nameError
+						className: k.a.nameError
 					}, c === y.a.SameName ? i.fbt._("A custom feed with that name already exists.", null, {
 						hk: "1kacgW"
 					}) : c === y.a.TooShort ? i.fbt._("Name must contain at least two alphanumeric characters.", null, {
@@ -860,7 +860,7 @@
 						text: l,
 						maxChars: y.c
 					})), d.a.createElement(m.h, null, d.a.createElement(p.c, {
-						className: F.a.descriptionTextarea,
+						className: k.a.descriptionTextarea,
 						label: i.fbt._("description (optional)", null, {
 							hk: "4mWEDA"
 						}),
@@ -873,8 +873,8 @@
 					}))), d.a.createElement(m.g, null, d.a.createElement(m.r, {
 						onClick: this.onSubmit
 					}, t || s ? d.a.createElement(x.a, {
-						className: F.a.loadingIcon,
-						sizePx: v
+						className: k.a.loadingIcon,
+						sizePx: F
 					}) : n ? i.fbt._("Duplicate Custom Feed", null, {
 						hk: "4t4IAs"
 					}) : i.fbt._("Create Custom Feed", null, {
@@ -882,7 +882,7 @@
 					})))))
 				}
 			}
-			t.default = Object(o.a)(S(N(Object(f.c)(E))))
+			t.default = Object(o.a)(v(N(Object(f.c)(E))))
 		},
 		"./src/reddit/components/StructuredStyles/Forms/LabeledControl/index.m.less": function(e, t, r) {
 			e.exports = {
@@ -910,9 +910,9 @@
 			})), r.d(t, "a", (function() {
 				return h
 			})), r.d(t, "b", (function() {
-				return j
-			})), r.d(t, "c", (function() {
 				return O
+			})), r.d(t, "c", (function() {
+				return j
 			}));
 			var i = r("./node_modules/react/index.js"),
 				s = r.n(i),
@@ -965,7 +965,7 @@
 						[l.a.mInvalid]: e.state === f.Invalid
 					})
 				}, e.state === f.Valid && s.a.createElement(o.a, null), e.state === f.Invalid && s.a.createElement(b, null, "!")))),
-				j = e => {
+				O = e => {
 					const {
 						backgroundColorState: t,
 						className: r,
@@ -991,7 +991,7 @@
 						onKeyDown: c
 					})))
 				},
-				O = e => {
+				j = e => {
 					const {
 						backgroundColorState: t,
 						className: r,
@@ -1082,9 +1082,9 @@
 			})), r.d(t, "e", (function() {
 				return x
 			})), r.d(t, "b", (function() {
-				return j
-			})), r.d(t, "c", (function() {
 				return O
+			})), r.d(t, "c", (function() {
+				return j
 			})), r.d(t, "d", (function() {
 				return g
 			})), r.d(t, "j", (function() {
@@ -1105,8 +1105,8 @@
 				f = i.a.div("FormGroupDescription", d.a),
 				h = i.a.div("FormItem", d.a),
 				x = i.a.h3("FormElementTitle", d.a),
-				j = i.a.div("FormElementDescription", d.a),
-				O = i.a.div("FormElementError", d.a),
+				O = i.a.div("FormElementDescription", d.a),
+				j = i.a.div("FormElementError", d.a),
 				g = i.a.div("FormElementSubGroup", d.a),
 				y = i.a.li("FormListItem", d.a)
 		},
@@ -1221,7 +1221,7 @@
 					multireddits: f,
 					multiredditsByUser: h,
 					profiles: x,
-					subreddits: j
+					subreddits: O
 				} = Object(n.a)(p);
 				return {
 					...t,
@@ -1233,7 +1233,7 @@
 					},
 					subreddits: {
 						...t.subreddits,
-						...j
+						...O
 					}
 				}
 			}
@@ -1278,4 +1278,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MultiredditCreateModal.856f8264dc02df9dc073.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MultiredditCreateModal.6a5be2eee139ddc6ef1f.js.map

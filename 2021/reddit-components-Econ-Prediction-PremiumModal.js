@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-PremiumModal.8ceb9a30efada8d756c5.js
-// Retrieved at 8/30/2021, 12:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-PremiumModal.875e418a1fcb0e3538ac.js
+// Retrieved at 8/30/2021, 12:20:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction-PremiumModal"], {
 		"./node_modules/uuid/index.js": function(e, t, n) {
@@ -110,7 +110,7 @@
 				C = (e, t, n, r) => async (o, i, {
 					gqlContext: d
 				}) => {
-					const c = Object(g.J)(i()),
+					const c = Object(g.K)(i()),
 						a = await Object(p.j)(d(), {
 							subredditId: e,
 							period: t,
@@ -334,7 +334,7 @@
 					})), c
 				}, V = e => async (t, n) => {
 					const r = n();
-					Object(g.J)(r) ? await t(Object(f.h)(j.a.ECON_PREDICTIONS_PREMIUM_UPSELL, {
+					Object(g.K)(r) ? await t(Object(f.h)(j.a.ECON_PREDICTIONS_PREMIUM_UPSELL, {
 						feature: e
 					})) : await t(Object(b.i)())
 				}, W = () => Object(f.g)(j.a.ECON_PREDICTIONS_PREMIUM_UPSELL), z = e => async (t, n, {
@@ -803,4 +803,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-PremiumModal.8ceb9a30efada8d756c5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-PremiumModal.875e418a1fcb0e3538ac.js.map

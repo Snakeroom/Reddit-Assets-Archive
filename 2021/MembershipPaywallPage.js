@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MembershipPaywallPage.7c35d79483617137922a.js
-// Retrieved at 8/17/2021, 2:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MembershipPaywallPage.e73e8288743d849bc4f3.js
+// Retrieved at 8/30/2021, 12:20:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MembershipPaywallPage"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1743,7 +1743,7 @@
 				}
 			}
 			const A = Object(u.c)({
-				isNightMode: S.W
+				isNightMode: S.X
 			});
 			var z = Object(m.b)(A)(R),
 				B = s("./src/reddit/components/RichTextEditor/media/GifTooltip/GifTooltipBody.m.less"),
@@ -2138,7 +2138,7 @@
 					},
 					m = g()(() => {
 						c(), r = window.setTimeout(l, s)
-					}, p.I);
+					}, p.J);
 				return {
 					cleanup: l,
 					eventHandler: t => {
@@ -2240,7 +2240,7 @@
 				L = s("./src/reddit/components/Scroller/Simple.m.less"),
 				H = s.n(L);
 			const V = T.g,
-				W = 5 * p.I,
+				W = 5 * p.J,
 				Z = 3,
 				G = Object(u.c)({
 					isOverlayOpen: z.h
@@ -2259,16 +2259,16 @@
 				} while (e);
 				return t
 			}
-			const Y = 10,
-				J = .9,
+			const J = 10,
+				Y = .9,
 				Q = .9,
 				$ = 1.8,
 				ee = 5,
 				te = 1500,
-				se = 2 * p.I,
+				se = 2 * p.J,
 				ie = 400,
 				ae = 8,
-				ne = 5 * p.I,
+				ne = 5 * p.J,
 				re = 30,
 				oe = "object" == typeof performance && "function" == typeof performance.now,
 				ce = () => oe ? performance.now() : Date.now();
@@ -2298,7 +2298,7 @@
 						};
 						B.b.enqueue(new E.a({
 							args: [e, t],
-							cb: (e, t) => Object(D.a)(p.l.Redesign, {
+							cb: (e, t) => Object(D.a)(p.m.Redesign, {
 								data: e,
 								meta: t,
 								type: "scrollfps"
@@ -2360,7 +2360,7 @@
 						clearTimeout(this.updateRenderableChildrenWhenIdleHandle), Object(m.cancelIdleCallback)(this.requestUpdateWhenIdleCallbackHandle)
 					}, this.callOnScrollForItemsChanged = a()(() => {
 						this.handleScroll()
-					}, p.I), this.pauseAllElements = () => {
+					}, p.J), this.pauseAllElements = () => {
 						const e = this.getItemsInViewportWithFilter(this.loadedChildRefFilter),
 							t = [];
 						e.forEach(e => {
@@ -2382,7 +2382,7 @@
 						const t = this.getChildRectangle(e);
 						return t && this.elementIsVisible(t) || !1
 					}, this.loadedChildRefFilter = e => e.loaded, this.resetScrollFramerateAndFocus = () => {
-						this.scrollContainer && (this.pixelsPerMSRing.clear(), this.lastScrollTime = -1, this.needsToPauseViewportItems = !0, null === this.unmountItemsIdleId && (this.unmountItemsIdleId = Object(m.requestIdleCallback)(this.unmountItemsWhileIdle)), setTimeout(this.handleScroll, p.I))
+						this.scrollContainer && (this.pixelsPerMSRing.clear(), this.lastScrollTime = -1, this.needsToPauseViewportItems = !0, null === this.unmountItemsIdleId && (this.unmountItemsIdleId = Object(m.requestIdleCallback)(this.unmountItemsWhileIdle)), setTimeout(this.handleScroll, p.J))
 					}, this.setContainerRef = e => {
 						this.containerRef = e, this.props.innerRef && this.props.innerRef(e)
 					}, this.getChildRectangle = e => {
@@ -2414,12 +2414,12 @@
 							const e = this.getTotalOffsetTop();
 							e !== this.containerOffsetTop && (this.containerOffsetTop = e, this.handleResize()), this.pendingResizeHandlerRead = null
 						}))
-					}, p.I), this.handleScroll = () => {
+					}, p.J), this.handleScroll = () => {
 						this.pendingScollHandlerRead || (this.pendingScollHandlerRead = h.a.read(() => {
 							if (clearTimeout(this.resetCanFocusTimer), this.cancelPopulateRenderableChildrenWhenIdle(), Object(j.b)() || !this.scrollContainer) return void(this.pendingScollHandlerRead = null);
 							this.updateScrollMetrics();
 							const e = this.getAveragePixelsPerMilliSecond(),
-								t = e < J,
+								t = e < Y,
 								s = e < Q,
 								i = e < $;
 							if (this.scrollContainer && !this.loadMoreFired && this.props.onLoadMore) {
@@ -2503,7 +2503,7 @@
 							void 0 !== t && (this.hideChild(e, t), this.childrenToHide[e] = void 0)
 						}
 						for (const e in this.childrenToShow) void 0 !== this.childrenToShow[e] && (this.showChild(e), this.childrenToShow[e] = void 0)
-					}, p.I), this.hideChild = (e, t) => {
+					}, p.J), this.hideChild = (e, t) => {
 						const s = this.childMap.get(e);
 						if (!s || !s.el) return;
 						const i = s.el.firstChild;
@@ -2529,7 +2529,7 @@
 								const i = this.getScrollTop() + s.el.getBoundingClientRect().top - (this.props.scrollToChildPadding || 0) - (this.props.viewportTopPadding || 0);
 								setTimeout(() => {
 									this.scrollContainer && (Object(j.c)(this.scrollContainer, i), this.callOnScrollForItemsChanged())
-								}, p.I)
+								}, p.J)
 							}
 						})
 					}, this.isScrollChildTopVisible = e => {
@@ -2544,7 +2544,7 @@
 							return a >= s + e && a < i
 						}
 						return !1
-					}, this.childMap = le(e), this.containerRef = null, this.itemsInViewport = new I.a("id"), this.loadMoreFired = !1, this.pixelsPerMSRing = new O(Y), this.wrapperRefFNs = {}, this.childRefFns = {}, this.childrenToHide = {}, this.childrenToShow = {}, this.canFocusItems = !0, this.focusedChild = void 0, this.hiddenChildren = {}, this.nextVisibleChildrenIndex = 0, this.lastVisibleEl = null, this.lastVisibleElId = null, this.remeasureWhenShown = {}, this.timeoutForUpdateIdleCallback = ne;
+					}, this.childMap = le(e), this.containerRef = null, this.itemsInViewport = new I.a("id"), this.loadMoreFired = !1, this.pixelsPerMSRing = new O(J), this.wrapperRefFNs = {}, this.childRefFns = {}, this.childrenToHide = {}, this.childrenToShow = {}, this.canFocusItems = !0, this.focusedChild = void 0, this.hiddenChildren = {}, this.nextVisibleChildrenIndex = 0, this.lastVisibleEl = null, this.lastVisibleElId = null, this.remeasureWhenShown = {}, this.timeoutForUpdateIdleCallback = ne;
 					const t = this.getVisibleChildren();
 					t.length && (this.lastVisibleElId = t[t.length - 1].id), this.nextVisibleChildrenIndex = t.length, this.updateRenderableChildrenHandle = null, this.state = {
 						renderableChildren: t
@@ -4353,37 +4353,37 @@
 				q = s("./src/reddit/components/OverlayAwareTooltip/index.tsx"),
 				K = s("./src/reddit/components/RichTextEditor/emotes/helpers.ts"),
 				X = s("./src/reddit/icons/svgs/Close/index.tsx"),
-				Y = s("./src/reddit/pages/meta/MembershipPaywallPage/Benefits/Toolbar/EmoteTooltip/index.m.less"),
-				J = s.n(Y);
+				J = s("./src/reddit/pages/meta/MembershipPaywallPage/Benefits/Toolbar/EmoteTooltip/index.m.less"),
+				Y = s.n(J);
 
 			function Q(e) {
 				const t = e.emojiPack.emotes,
 					s = Object.keys(t).map(e => t[e]).sort((e, t) => e.id.localeCompare(t.id));
 				return a.a.createElement("div", {
-					className: Object(m.a)(J.a.container, e.className),
+					className: Object(m.a)(Y.a.container, e.className),
 					style: e.style
 				}, a.a.createElement("div", {
-					className: J.a.header
+					className: Y.a.header
 				}, y.fbt._("Add r/{communityName} emote", [y.fbt._param("communityName", e.subreddit.name)], {
 					hk: "O2Vj2"
 				}), a.a.createElement(X.a, {
-					className: J.a.close,
+					className: Y.a.close,
 					onClick: e.onClose
 				})), a.a.createElement("div", {
-					className: J.a.emojis
+					className: Y.a.emojis
 				}, a.a.createElement("div", {
-					className: J.a.emojisTitle
+					className: Y.a.emojisTitle
 				}, e.emojiPack.title), a.a.createElement("div", {
-					className: J.a.emojisList
+					className: Y.a.emojisList
 				}, s.map(t => a.a.createElement("button", {
-					className: J.a.emoji,
+					className: Y.a.emoji,
 					onClick: () => e.onSelectEmoji(Object(K.g)(t, e.editorState)),
 					key: t.id
 				}, a.a.createElement("img", {
-					className: J.a.emojiImage,
+					className: Y.a.emojiImage,
 					src: t.emoji.path
 				}))))), a.a.createElement("div", {
-					className: J.a.triangle
+					className: Y.a.triangle
 				}))
 			}
 			Q.defaultProps = {
@@ -5334,41 +5334,41 @@
 			});
 			var Ke = Object(n.b)(qe)(Ue),
 				Xe = s("./src/reddit/pages/meta/MembershipPaywallPage/Footer/index.m.less"),
-				Ye = s.n(Xe);
-			const Je = [7900, 8240];
+				Je = s.n(Xe);
+			const Ye = [7900, 8240];
 
 			function Qe(e) {
 				return a.a.createElement("footer", {
-					className: Object(m.a)(Ye.a.container, e.className)
+					className: Object(m.a)(Je.a.container, e.className)
 				}, a.a.createElement("div", {
-					className: Ye.a.twoCol
+					className: Je.a.twoCol
 				}, a.a.createElement("div", {
-					className: Ye.a.copyright
+					className: Je.a.copyright
 				}, y.fbt._("© 2019 Reddit, Inc. All rights reserved", null, {
 					hk: "1hv6BJ"
 				}))), I(e.subreddit.id).animations && a.a.createElement("a", {
-					className: Ye.a.link,
+					className: Je.a.link,
 					href: "https://www.reddit.com/r/FortNiteBR/comments/a8mhn8/24_players_plays_all_i_want_for_christmas_is_you/",
 					target: "_blank"
 				}, a.a.createElement("img", {
-					className: Ye.a.pianoKeyboard,
+					className: Je.a.pianoKeyboard,
 					src: Object(F.a)(e.subreddit, "piano_keyboard@2x.png")
 				}), a.a.createElement(S.a, {
-					scrollRange: Je
+					scrollRange: Ye
 				}, t => a.a.createElement("img", {
-					className: Ye.a.pianoCrowdBottom,
+					className: Je.a.pianoCrowdBottom,
 					src: Object(F.a)(e.subreddit, "piano_crowd_bottom@2x.png"),
 					style: t
 				})), a.a.createElement(S.a, {
-					scrollRange: Je
+					scrollRange: Ye
 				}, t => a.a.createElement("img", {
-					className: Ye.a.pianoCrowdTop,
+					className: Je.a.pianoCrowdTop,
 					src: Object(F.a)(e.subreddit, "piano_crowd_top@2x.png"),
 					style: t
 				})), a.a.createElement(S.a, {
-					scrollRange: Je
+					scrollRange: Ye
 				}, t => a.a.createElement("img", {
-					className: Ye.a.pianoFlier,
+					className: Je.a.pianoFlier,
 					src: Object(F.a)(e.subreddit, "piano_flier@2x.png"),
 					style: t
 				}))))
@@ -5606,7 +5606,7 @@
 				}
 			}
 			const Ut = Object(o.c)({
-				isLoggedIn: v.J,
+				isLoggedIn: v.K,
 				membershipProducts: (e, {
 					subreddit: t
 				}) => Object(N.k)(e, t.id),
@@ -5632,10 +5632,10 @@
 				Kt = s("./src/reddit/components/Economics/SubredditPremium/CheckoutModal/Payment/index.m.less"),
 				Xt = s.n(Kt);
 			const {
-				fbt: Yt
+				fbt: Jt
 			} = s("./node_modules/fbt/lib/FbtPublic.js");
 
-			function Jt(e) {
+			function Yt(e) {
 				return a.a.createElement("div", {
 					className: Xt.a.dollarPurchase
 				}, e.target.type === es.Badge && e.target.product.price && a.a.createElement(Ot.a, {
@@ -5662,18 +5662,18 @@
 				return !e.wallet || new Nt.BigNumber(e.wallet.amount).isLessThan(new Nt.BigNumber(e.tokenPrice)) ? a.a.createElement(Pt.i, {
 					className: Xt.a.notEnoughTokens,
 					disabled: !0
-				}, Yt._("Not enough {token-name}", [Yt._param("token-name", e.tokenName)], {
+				}, Jt._("Not enough {token-name}", [Jt._param("token-name", e.tokenName)], {
 					hk: "4urJTo"
 				})) : a.a.createElement("div", {
 					className: Xt.a.tokenPurchase
 				}, a.a.createElement(Pt.i, {
 					onClick: e.onPayWithTokens,
 					className: Xt.a.tokenPurchaseButton
-				}, Yt._("Pay with {token-name}", [Yt._param("token-name", e.tokenName)], {
+				}, Jt._("Pay with {token-name}", [Jt._param("token-name", e.tokenName)], {
 					hk: "7b9oh"
 				})), a.a.createElement("div", {
 					className: Xt.a.requiresMobile
-				}, Yt._("Requires Reddit Vault on mobile", null, {
+				}, Jt._("Requires Reddit Vault on mobile", null, {
 					hk: "4oRRlp"
 				})))
 			}
@@ -5693,7 +5693,7 @@
 					className: Xt.a.selectPaymentTitleBox
 				}, a.a.createElement("span", {
 					className: Xt.a.selectPaymentTitle
-				}, Yt._("Select Payment Method", null, {
+				}, Jt._("Select Payment Method", null, {
 					hk: "15rwcx"
 				}))), a.a.createElement("div", {
 					className: Xt.a.paymentContainer
@@ -5713,7 +5713,7 @@
 					monthly: s,
 					subredditId: i.id,
 					hideTokenName: !0
-				})), a.a.createElement(Jt, e))), t && !n && a.a.createElement(Jt, e), n && !t && a.a.createElement(Qt, e))
+				})), a.a.createElement(Yt, e))), t && !n && a.a.createElement(Yt, e), n && !t && a.a.createElement(Qt, e))
 			}
 			var es, ts = s("./src/reddit/components/Economics/SubredditPremium/CheckoutModal/index.m.less"),
 				ss = s.n(ts);
@@ -6335,45 +6335,45 @@
 				}, e.text)))
 			}
 			var Xs = s("./src/reddit/pages/meta/MembershipPaywallPage/WhatDoYouGet/CommentThread/index.m.less"),
-				Ys = s.n(Xs);
+				Js = s.n(Xs);
 
-			function Js(e) {
+			function Ys(e) {
 				const t = Object(F.a)(e.subreddit, "what-do-you-get.png");
 				return a.a.createElement("article", {
-					className: Object(m.a)(Ys.a.container, e.className)
+					className: Object(m.a)(Js.a.container, e.className)
 				}, a.a.createElement(Gs, {
 					subreddit: e.subreddit
 				}), a.a.createElement("div", {
-					className: Ys.a.content
+					className: Js.a.content
 				}, a.a.createElement("img", {
-					className: Ys.a.img,
+					className: Js.a.img,
 					src: t
 				}), a.a.createElement("img", {
-					className: Ys.a.emoji,
+					className: Js.a.emoji,
 					src: "https://meta.redditmedia.com/img/fortnitebr/emotes/oof-2x.gif"
 				}), a.a.createElement("img", {
-					className: Ys.a.gif,
+					className: Js.a.gif,
 					src: "http://giphygifs.s3.amazonaws.com/media/HX3lSnGXZnaWk/giphy.gif"
 				}), a.a.createElement(Ks, {
-					className: Ys.a.tip1,
+					className: Js.a.tip1,
 					index: 1,
 					text: y.fbt._("Get up to 3 badges", null, {
 						hk: "2ftguA"
 					})
 				}), a.a.createElement(Ks, {
-					className: Ys.a.tip2,
+					className: Js.a.tip2,
 					index: 2,
 					text: y.fbt._("Use animated emojis in comments", null, {
 						hk: "1teakj"
 					})
 				}), a.a.createElement(Ks, {
-					className: Ys.a.tip3,
+					className: Js.a.tip3,
 					index: 3,
 					text: y.fbt._("Embed GIF directly in your comments", null, {
 						hk: "1fLSUy"
 					})
 				})), I(e.subreddit.id).animations && a.a.createElement(Hs.a, {
-					className: Ys.a.footer,
+					className: Js.a.footer,
 					subreddit: e.subreddit
 				}))
 			}
@@ -6403,7 +6403,7 @@
 						...x.defaults(t),
 						subreddit: x.subreddit(t)
 					})
-				}, a.a.createElement(Js, {
+				}, a.a.createElement(Ys, {
 					subreddit: e.subreddit
 				})))
 			}
@@ -6502,7 +6502,7 @@
 				}
 			}
 			const si = Object(o.c)({
-				currentUser: v.j,
+				currentUser: v.k,
 				isOverlay: f.h,
 				subreddit: (e, {
 					match: t
@@ -6868,4 +6868,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MembershipPaywallPage.7c35d79483617137922a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MembershipPaywallPage.e73e8288743d849bc4f3.js.map

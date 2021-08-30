@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostDraft.3b82bd255865c0abe20c.js
-// Retrieved at 8/30/2021, 12:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostDraft.e80026d5bd338ba22134.js
+// Retrieved at 8/30/2021, 12:20:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostDraft"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -346,7 +346,7 @@
 				p = n("./src/reddit/constants/headers.ts");
 			var h = (e, t, n) => Object(u.a)(Object(m.a)(e, [p.a]), {
 				endpoint: `${e.apiUrl}/api/v1/collections/add_post_to_collection.json`,
-				method: l.hb.POST,
+				method: l.ib.POST,
 				data: {
 					collection_id: t,
 					link_fullname: n
@@ -354,7 +354,7 @@
 			});
 			var b = (e, t, n) => Object(u.a)(Object(m.a)(e, [p.a]), {
 				endpoint: `${e.apiUrl}/api/v1/collections/create_collection.json`,
-				method: l.hb.POST,
+				method: l.ib.POST,
 				data: {
 					title: t,
 					sr_fullname: n
@@ -362,7 +362,7 @@
 			});
 			var f = (e, t) => Object(u.a)(Object(m.a)(e, [p.a]), {
 					endpoint: `${e.apiUrl}/api/v1/collections/delete_collection.json`,
-					method: l.hb.POST,
+					method: l.ib.POST,
 					data: {
 						collection_id: t
 					}
@@ -370,11 +370,11 @@
 				x = n("./src/config.ts");
 			var g = (e, t) => Object(u.a)(Object(m.a)(e, [p.a]), {
 				endpoint: `${x.a.gatewayUrl}/desktopapi/v1/subreddit_collections/${t}`,
-				method: l.hb.GET
+				method: l.ib.GET
 			});
 			var E = (e, t, n) => Object(u.a)(Object(m.a)(e, [p.a]), {
 				endpoint: `${e.apiUrl}/api/v1/collections/remove_post_in_collection.json`,
-				method: l.hb.POST,
+				method: l.ib.POST,
 				data: {
 					collection_id: t,
 					link_fullname: n
@@ -382,7 +382,7 @@
 			});
 			var _ = (e, t, n) => Object(u.a)(Object(m.a)(e, [p.a]), {
 				endpoint: `${e.apiUrl}/api/v1/collections/update_collection_title.json`,
-				method: l.hb.POST,
+				method: l.ib.POST,
 				data: {
 					collection_id: t,
 					title: n
@@ -390,7 +390,7 @@
 			});
 			var v = (e, t, n) => Object(u.a)(Object(m.a)(e, [p.a]), {
 				endpoint: `${e.apiUrl}/api/v1/collections/reorder_collection.json`,
-				method: l.hb.POST,
+				method: l.ib.POST,
 				data: {
 					collection_id: t,
 					link_ids: n.join(",")
@@ -398,7 +398,7 @@
 			});
 			var y = (e, t, n) => Object(u.a)(Object(m.a)(e, [p.a]), {
 				endpoint: `${e.apiUrl}/api/v1/collections/update_collection_description.json`,
-				method: l.hb.POST,
+				method: l.ib.POST,
 				data: {
 					collection_id: t,
 					description: n
@@ -406,7 +406,7 @@
 			});
 			var C = (e, t, n) => Object(u.a)(Object(m.a)(e, [p.a]), {
 					endpoint: `${e.apiUrl}/api/v1/collections/update_collection_display_layout.json`,
-					method: l.hb.POST,
+					method: l.ib.POST,
 					data: {
 						collection_id: t,
 						display_layout: n
@@ -591,7 +591,7 @@
 						}))
 					}
 					return a
-				}, Y = Object(i.a)(a.l), K = Object(i.a)(a.m), X = Object(i.a)(a.k), q = e => async (t, n) => {
+				}, Y = Object(i.a)(a.l), X = Object(i.a)(a.m), K = Object(i.a)(a.k), q = e => async (t, n) => {
 					const s = n().platform.currentPage.locationState;
 					t(!(!s || !s[c.a.IsOverlay]) ? Object(w.a)(e.permalink) : Object(o.b)(Object(k.b)(e.permalink)))
 				}, Z = Object(i.a)(a.i), Q = Object(i.a)(a.j), $ = Object(i.a)(a.h), ee = Object(i.a)(a.p), te = Object(i.a)(a.o), ne = Object(i.a)(a.q), se = e => async t => {
@@ -631,7 +631,7 @@
 						n(Y());
 						const i = await y(r(), e, t);
 						let a = !1;
-						if (i.ok) n(K({
+						if (i.ok) n(X({
 							collectionId: e,
 							newDescription: t
 						})), n(Object(d.f)({
@@ -642,7 +642,7 @@
 						})), a = !0;
 						else {
 							const e = i.error;
-							n(X(e)), n(Object(d.f)({
+							n(K(e)), n(Object(d.f)({
 								kind: j.b.Error,
 								text: s.fbt._("Something went wrong. Just don't panic.", null, {
 									hk: "4Ck6Cm"
@@ -882,7 +882,7 @@
 				h = n.n(p);
 			const b = ["allow-forms", "allow-orientation-lock", "allow-popups", "allow-popups-to-escape-sandbox", "allow-presentation", "allow-same-origin", "allow-scripts", "allow-top-navigation-by-user-activation"].join(" "),
 				f = Object(r.b)(() => Object(i.c)({
-					isNightmodeOn: m.W
+					isNightmodeOn: m.X
 				}));
 			t.a = f(e => {
 				const t = {
@@ -981,7 +981,7 @@
 						style: t
 					}, e.children)
 				},
-				P = Object(i.b)(() => Object(d.a)(_.H, y.cb, (e, {
+				P = Object(i.b)(() => Object(d.a)(_.H, y.db, (e, {
 					isSponsored: t,
 					postId: n
 				}) => t && n ? Object(_.b)(e, n) : null, E.a, v.actionInfo, _.I, (e, t, n, s, o, r) => ({
@@ -1529,7 +1529,7 @@
 				const {
 					className: t,
 					submissionType: n
-				} = e, o = n === d.Sb.CROSSPOST;
+				} = e, o = n === d.Tb.CROSSPOST;
 				return r.a.createElement("div", {
 					className: t
 				}, r.a.createElement(x, null, r.a.createElement(h, null), o ? s.fbt._("Crossposting to Reddit", null, {
@@ -2953,12 +2953,12 @@
 						rtJsonElementProps: r
 					});
 					switch (s) {
-						case b.Qd.SmIcon:
+						case b.Sd.SmIcon:
 							return o.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: r
 							});
-						case b.Qd.SmIconHc:
+						case b.Sd.SmIconHc:
 							return o.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -3287,7 +3287,7 @@
 					}, t.title), o.a.createElement("div", {
 						className: v.a.metaLine
 					}, O._("Posted · {timeAgo}", [O._param("timeAgo", o.a.createElement(g.d, {
-						seconds: t.created / E.Ob
+						seconds: t.created / E.Pb
 					}))], {
 						hk: "ZVJpV"
 					}))), o.a.createElement(y.a, {
@@ -3517,10 +3517,10 @@
 						s = t.redditStyle || Object(f.l)(e, {
 							subredditId: n
 						}),
-						o = Object(x.W)(e);
+						o = Object(x.X)(e);
 					return s || o
 				},
-				nigtmode: x.W,
+				nigtmode: x.X,
 				subredditId: u.n,
 				topPostVariant: b.d
 			}));
@@ -4038,12 +4038,12 @@
 				y = e => {
 					return {
 						postScheduled: !!e,
-						submitScheduledTime: e && e.submitTime === d.i.AtEventTime ? Object(i.f)(e.startDate).getTime() / o.Ob : void 0
+						submitScheduledTime: e && e.submitTime === d.i.AtEventTime ? Object(i.f)(e.startDate).getTime() / o.Pb : void 0
 					}
 				},
 				C = e => {
-					const t = Object(i.f)(e.startDate).getTime() / o.Ob,
-						n = Object(i.f)(e.endDate).getTime() / o.Ob;
+					const t = Object(i.f)(e.startDate).getTime() / o.Pb,
+						n = Object(i.f)(e.endDate).getTime() / o.Pb;
 					return {
 						eventStartTimestamp: t,
 						eventEndTimestamp: n,
@@ -4652,7 +4652,7 @@
 					return t ? o.a.createElement(o.a.Fragment, null, o.a.createElement(P, null, o.a.createElement(M, null, T._("Review draft", null, {
 						hk: "tclLq"
 					}))), o.a.createElement(L, null, n && o.a.createElement(N, null, T._("Draft last updated by {username} {timeDiff}", [T._param("username", `u/${n.name}`), T._param("timeDiff", o.a.createElement(I.d, {
-						seconds: (t.modified || t.created) / a.Ob
+						seconds: (t.modified || t.created) / a.Pb
 					}))], {
 						hk: "3QCJvU"
 					})), o.a.createElement(R, null, t.title), o.a.createElement(g, {
@@ -4718,12 +4718,12 @@
 				d = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.Kd
+						experimentName: s.Md
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === s.Qd.SmIcon || t === s.Qd.SmIconHc
+					return t === s.Sd.SmIcon || t === s.Sd.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -4746,4 +4746,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.3b82bd255865c0abe20c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.e80026d5bd338ba22134.js.map

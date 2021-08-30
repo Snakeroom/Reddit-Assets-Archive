@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-CancelPredictionModal.e251e66ec5289c78c3fa.js
-// Retrieved at 8/30/2021, 12:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-CancelPredictionModal.964d0f489dca50e5bac9.js
+// Retrieved at 8/30/2021, 12:20:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction-CancelPredictionModal"], {
 		"./node_modules/uuid/index.js": function(t, e, n) {
@@ -66,9 +66,9 @@
 			})), n.d(e, "i", (function() {
 				return V
 			})), n.d(e, "o", (function() {
-				return W
-			})), n.d(e, "p", (function() {
 				return K
+			})), n.d(e, "p", (function() {
+				return W
 			})), n.d(e, "f", (function() {
 				return z
 			})), n.d(e, "c", (function() {
@@ -110,7 +110,7 @@
 				_ = (t, e, n, o) => async (r, i, {
 					gqlContext: d
 				}) => {
-					const c = Object(x.J)(i()),
+					const c = Object(x.K)(i()),
 						a = await Object(p.j)(d(), {
 							subredditId: t,
 							period: e,
@@ -312,7 +312,7 @@
 					} = r.body.data;
 					if (!i.hasOwnProperty("predictionTokens")) throw new Error("Failed to fetch token balance");
 					return i.predictionTokens
-				}, W = ({
+				}, K = ({
 					coinPackageId: t,
 					selectedOptionId: e,
 					price: n,
@@ -332,9 +332,9 @@
 						tournamentId: r,
 						tournamentPostId: i
 					})), c
-				}, K = t => async (e, n) => {
+				}, W = t => async (e, n) => {
 					const o = n();
-					Object(x.J)(o) ? await e(Object(m.h)(j.a.ECON_PREDICTIONS_PREMIUM_UPSELL, {
+					Object(x.K)(o) ? await e(Object(m.h)(j.a.ECON_PREDICTIONS_PREMIUM_UPSELL, {
 						feature: t
 					})) : await e(Object(f.i)())
 				}, z = () => Object(m.g)(j.a.ECON_PREDICTIONS_PREMIUM_UPSELL), H = t => async (e, n, {
@@ -736,4 +736,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-CancelPredictionModal.e251e66ec5289c78c3fa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-CancelPredictionModal.964d0f489dca50e5bac9.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.2dbf73b0f61e61f1814f.js
-// Retrieved at 8/30/2021, 12:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.800f5ba946d41368a7ac.js
+// Retrieved at 8/30/2021, 12:20:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, n) {
@@ -98,7 +98,7 @@
 				}, y = e => async (t, n) => {
 					await t(Object(s.a)());
 					const r = n(),
-						a = Object(h.K)(r);
+						a = Object(h.L)(r);
 					if (Object(p.a)(r, e)) return;
 					const i = e && Object(g.f)(r, {
 							categoryName: e
@@ -479,7 +479,7 @@
 						this.windowHeight = window.innerHeight
 					}, this.handleResize = a()(() => {
 						this.updateMeasurements(), this.updateState()
-					}, d.I), this.setWrapperRef = e => this.containerEl = e || null, this.state = {
+					}, d.J), this.setWrapperRef = e => this.containerEl = e || null, this.state = {
 						isAdSticky: !0,
 						isFooterSticky: !0
 					}
@@ -1170,10 +1170,10 @@
 						r = t.redditStyle || Object(b.l)(e, {
 							subredditId: n
 						}),
-						s = Object(f.W)(e);
+						s = Object(f.X)(e);
 					return r || s
 				},
-				nigtmode: f.W,
+				nigtmode: f.X,
 				subredditId: u.n,
 				topPostVariant: h.d
 			}));
@@ -1952,7 +1952,7 @@
 					hasNextPage: (e, {
 						categoryId: t
 					}) => Object(W.b)(e, t),
-					isMod: R.K,
+					isMod: R.L,
 					rankings: (e, {
 						categoryId: t
 					}) => Object(B.O)(e, t),
@@ -2035,9 +2035,9 @@
 				}
 			}
 			var q = Object(u.c)(H(Q)),
-				z = n("./node_modules/react-router-dom/esm/react-router-dom.js"),
-				J = n("./src/reddit/components/CategoryPickerWidget/index.m.less"),
-				K = n.n(J);
+				J = n("./node_modules/react-router-dom/esm/react-router-dom.js"),
+				z = n("./src/reddit/components/CategoryPickerWidget/index.m.less"),
+				K = n.n(z);
 
 			function V() {
 				return (V = Object.assign || function(e) {
@@ -2056,7 +2056,7 @@
 					isActive: s,
 					tabIndex: a
 				} = e, o = Object(c.a)(K.a.categoryLink, s && K.a.active, r);
-				return i.a.createElement("li", null, i.a.createElement(z.a, V({}, t.anchorProps, {
+				return i.a.createElement("li", null, i.a.createElement(J.a, V({}, t.anchorProps, {
 					className: o,
 					"data-active": s,
 					onMouseDown: () => e.onSendEventClick(t.name),
@@ -2218,7 +2218,7 @@
 				ke = (e, {
 					match: t
 				}) => Object(h.b)(t.params.categoryName || ""),
-				_e = Object(m.he)(g.i),
+				_e = Object(m.je)(g.i),
 				xe = Object(d.c)({
 					categories: e => Object(be.c)(e, {
 						categoriesOrder: _e
@@ -2347,4 +2347,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.2dbf73b0f61e61f1814f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.800f5ba946d41368a7ac.js.map

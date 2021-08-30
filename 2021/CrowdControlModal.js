@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CrowdControlModal.d66b732ddf241ae76ed3.js
-// Retrieved at 8/18/2021, 6:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CrowdControlModal.85ecbd06c104c4f45592.js
+// Retrieved at 8/30/2021, 12:20:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CrowdControlModal"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -803,7 +803,7 @@
 				ce = C.a.div("TickText", A.a),
 				me = C.a.div("PreSubText", A.a),
 				ue = Object(l.c)({
-					isNightModeOn: D.W
+					isNightModeOn: D.X
 				}),
 				pe = Object(s.b)(ue)(e => r.a.createElement(K, {
 					last: e.last,
@@ -1845,4 +1845,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CrowdControlModal.d66b732ddf241ae76ed3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CrowdControlModal.85ecbd06c104c4f45592.js.map

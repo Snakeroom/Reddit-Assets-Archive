@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Coins.2bd093a11be71933ac15.js
-// Retrieved at 8/17/2021, 2:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Coins.aba636ff4d8fd288648c.js
+// Retrieved at 8/30/2021, 12:20:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Coins"], {
 		"./node_modules/lodash/times.js": function(e, t, a) {
@@ -523,7 +523,7 @@
 				}) => {
 					t(p());
 					const l = a(),
-						d = Object(o.J)(l);
+						d = Object(o.K)(l);
 					try {
 						const a = !d,
 							n = await Object(i.b)({
@@ -950,7 +950,7 @@
 					d = `${t.apiUrl}/api/v2/gold/paypal/initiate_premium_payment`,
 					m = Object(i.a)(d);
 				return Object(r.a)(Object(s.a)(t, [c.a]), {
-					method: n.hb.POST,
+					method: n.ib.POST,
 					endpoint: m,
 					data: l
 				}).then(o.c)
@@ -966,7 +966,7 @@
 					correlation_id: i
 				};
 				return Object(r.a)(Object(s.a)(e, [c.a]), {
-					method: n.hb.POST,
+					method: n.ib.POST,
 					endpoint: `${e.apiUrl}/api/v2/gold/paypal/create_coin_purchase_order`,
 					data: l
 				}).then(o.c)
@@ -984,7 +984,7 @@
 					thing_id: i
 				};
 				return Object(r.a)(Object(s.a)(e, [c.a]), {
-					method: n.hb.POST,
+					method: n.ib.POST,
 					endpoint: `${e.apiUrl}/api/v2/gold/paypal/create_award_purchase_order`,
 					data: d
 				}).then(o.c)
@@ -1004,7 +1004,7 @@
 					correlation_id: d
 				};
 				return Object(r.a)(Object(s.a)(e, [c.a]), {
-					method: n.hb.POST,
+					method: n.ib.POST,
 					endpoint: `${e.apiUrl}/api/v2/gold/paypal/execute_coin_order`,
 					data: m
 				}).then(o.c)
@@ -1032,7 +1032,7 @@
 					thing_id: h
 				};
 				return Object(r.a)(Object(s.a)(t, [c.a]), {
-					method: n.hb.POST,
+					method: n.ib.POST,
 					endpoint: `${t.apiUrl}/api/v2/gold/paypal/execute_coin_with_gild_order`,
 					data: g
 				}).then(o.c)
@@ -1054,7 +1054,7 @@
 					thing_id: m
 				};
 				return Object(r.a)(Object(s.a)(t, [c.a]), {
-					method: n.hb.POST,
+					method: n.ib.POST,
 					endpoint: `${t.apiUrl}/api/v2/gold/paypal/execute_award_purchase_order`,
 					data: u
 				}).then(o.c)
@@ -1432,10 +1432,10 @@
 				W = a("./src/reddit/components/GildMarketingDescription/index.tsx"),
 				X = a("./src/reddit/components/MarketingPageFooter/index.tsx"),
 				J = a("./src/reddit/components/PremiumMarketingBanner/index.m.less"),
-				Z = a.n(J);
+				K = a.n(J);
 			const {
-				fbt: $
-			} = a("./node_modules/fbt/lib/FbtPublic.js"), K = e => {
+				fbt: Z
+			} = a("./node_modules/fbt/lib/FbtPublic.js"), $ = e => {
 				const {
 					className: t,
 					isPremiumSubscriber: a,
@@ -1446,23 +1446,23 @@
 					periodicalCoins: i
 				} = c, l = i.toLocaleString(), d = `${n.a.assetPath}/img/gold/coins-premium-g.png`;
 				return o.a.createElement("div", {
-					className: Object(D.a)(Z.a.premiumBanner, t)
+					className: Object(D.a)(K.a.premiumBanner, t)
 				}, o.a.createElement("img", {
-					className: Z.a.premiumCrest,
+					className: K.a.premiumCrest,
 					src: d
 				}), o.a.createElement("h2", {
-					className: Z.a.premiumDescription
-				}, $._("Get {Number of monthly coins} coins every month with Reddit Premium and browse ads-free", [$._param("Number of monthly coins", l)], {
+					className: K.a.premiumDescription
+				}, Z._("Get {Number of monthly coins} coins every month with Reddit Premium and browse ads-free", [Z._param("Number of monthly coins", l)], {
 					hk: "42dB3q"
 				})), a ? o.a.createElement(F.i, {
-					className: Z.a.premiumCTA,
+					className: K.a.premiumCTA,
 					onClick: s
-				}, $._("Manage", null, {
+				}, Z._("Manage", null, {
 					hk: "4BQsAp"
 				})) : o.a.createElement(F.i, {
-					className: Z.a.premiumCTA,
+					className: K.a.premiumCTA,
 					onClick: r
-				}, $._("Upgrade", null, {
+				}, Z._("Upgrade", null, {
 					hk: "1Zf2Sh"
 				})))
 			};
@@ -1537,8 +1537,8 @@
 					activeSaleConfig: S.a,
 					coinPackages: S.d,
 					dealCoinPackages: S.f,
-					isPremiumSubscriber: G.s,
-					isLoggedIn: G.J,
+					isPremiumSubscriber: G.t,
+					isLoggedIn: G.K,
 					premiumPackages: S.j,
 					purchaseCatalogPending: S.l
 				}),
@@ -1586,7 +1586,7 @@
 						requestPurchaseCatalog: a
 					} = this.props;
 					e.length || t || a(this.correlationId), document.documentElement.scrollTop = document.body.scrollTop = 0;
-					const n = u.Jb.COINS;
+					const n = u.Kb.COINS;
 					O.c.has(n) && (this.props.sendEvent(Object(C.b)(x.TimerType.InApp, O.c.end(n))), this.props.sendEvent(Object(C.a)())), Object(p.a)(), this.setTargetedOfferTimeout()
 				}
 				componentDidUpdate() {
@@ -1712,7 +1712,7 @@
 						isLargeView: e.featured,
 						key: e.mobileId,
 						onClick: () => this.onClickPurchase(e)
-					})), i && o.a.createElement(K, {
+					})), i && o.a.createElement($, {
 						isPremiumSubscriber: t,
 						onGetPremium: this.onClickGetPremium,
 						onManagePremium: a,
@@ -1742,4 +1742,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Coins.2bd093a11be71933ac15.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Coins.aba636ff4d8fd288648c.js.map

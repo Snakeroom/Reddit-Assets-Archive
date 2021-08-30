@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditForkingCTA.84fcdb4eb0aefe642c6a.js
-// Retrieved at 8/30/2021, 12:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditForkingCTA.1b6970d8134fdd06b900.js
+// Retrieved at 8/30/2021, 12:20:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditForkingCTA"], {
 		"./src/reddit/components/CreateCommunityButton/index.m.less": function(t, _, e) {
@@ -29,8 +29,8 @@
 			const h = "create-community-button",
 				k = b.a.wrapped(c.c, "StyledTooltip", f.a),
 				g = Object(a.c)({
-					userDoesNotHaveEnoughExpToCreateCommunity: t => !Object(y.hb)(t),
-					userIsSuspended: y.P
+					userDoesNotHaveEnoughExpToCreateCommunity: t => !Object(y.ib)(t),
+					userIsSuspended: y.Q
 				});
 			_.a = Object(s.b)(g, (t, {
 				eventSource: _
@@ -238,10 +238,10 @@
 				m = e("./src/reddit/helpers/chooseVariant/index.ts"),
 				p = e("./src/reddit/selectors/experiments/utils.ts");
 			const y = Object(d.a)(t => Object(m.c)(t, {
-					experimentName: u.Jd,
+					experimentName: u.Ld,
 					experimentEligibilitySelector: m.a
 				}), p.a),
-				x = Object(d.a)(y, t => t === u.Pd.Enabled);
+				x = Object(d.a)(y, t => t === u.Rd.Enabled);
 			var f = e("./src/reddit/selectors/posts.ts"),
 				b = e("./src/reddit/components/CreateCommunityButton/index.tsx"),
 				h = e("./src/reddit/components/TrackingHelper/index.tsx");
@@ -1573,4 +1573,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditForkingCTA.84fcdb4eb0aefe642c6a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditForkingCTA.1b6970d8134fdd06b900.js.map

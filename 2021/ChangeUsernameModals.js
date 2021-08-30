@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChangeUsernameModals.0e0bdfd5107dbc3c5fa4.js
-// Retrieved at 8/12/2021, 6:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChangeUsernameModals.9b83384e51796a226a61.js
+// Retrieved at 8/30/2021, 12:20:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChangeUsernameModals"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -98,10 +98,10 @@
 					} = e, [r, c] = Object(a.useState)([0, 0]), [i, l] = Object(a.useState)([]), [d, m] = Object(a.useState)(!1), u = Object(a.useCallback)(async () => {
 						m(!0), setTimeout(() => {
 							m(!1)
-						}, 10 * g.Ob);
+						}, 10 * g.Pb);
 						const e = await (e => Object(v.a)(Object(O.a)(e, [x.a]), {
 							endpoint: `${e.apiUrl}/api/v1/generate_username.json`,
-							method: g.hb.GET
+							method: g.ib.GET
 						}))(t());
 						if (e.ok && e.body) {
 							const {
@@ -383,7 +383,7 @@
 				const [f, b] = Object(a.useState)(C || ""), [E, N] = Object(a.useState)(!1), U = Object($.a)(), M = Object(a.useCallback)(async () => {
 					N(!0);
 					const t = await ((e, t) => Object(v.a)(Object(O.a)(e, [x.a]), {
-						method: g.hb.POST,
+						method: g.ib.POST,
 						endpoint: `${e.apiUrl}/api/update_name`,
 						data: {
 							api_type: "json",
@@ -827,4 +827,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChangeUsernameModals.0e0bdfd5107dbc3c5fa4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChangeUsernameModals.9b83384e51796a226a61.js.map

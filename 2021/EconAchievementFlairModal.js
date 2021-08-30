@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconAchievementFlairModal.e58545392e052128c432.js
-// Retrieved at 8/30/2021, 12:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconAchievementFlairModal.5af674ea649a87f2722c.js
+// Retrieved at 8/30/2021, 12:20:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconAchievementFlairModal"], {
 		"./src/reddit/components/Econ/AchievementFlair/AchievementFlairModal/AchievementFlairs.m.less": function(e, t, a) {
@@ -72,8 +72,8 @@
 				O = a("./src/lib/classNames/index.ts"),
 				N = a("./src/reddit/actions/tooltip.ts"),
 				F = a("./src/reddit/components/InfoTextTooltip/index.tsx"),
-				A = a("./src/reddit/helpers/trackers/userFlair.ts"),
-				k = a("./src/reddit/icons/fonts/index.tsx"),
+				k = a("./src/reddit/helpers/trackers/userFlair.ts"),
+				A = a("./src/reddit/icons/fonts/index.tsx"),
 				w = a("./src/reddit/components/Econ/AchievementFlair/AchievementFlairModal/AchievementFlairs.m.less"),
 				g = a.n(w);
 			const {
@@ -98,7 +98,7 @@
 					onMouseEnter: l,
 					onMouseLeave: l,
 					onClick: () => {
-						d && t(e.type), e.isPreferred || s(Object(A.b)({
+						d && t(e.type), e.isPreferred || s(Object(k.b)({
 							achievementFlair: e
 						}))
 					},
@@ -117,7 +117,7 @@
 					alt: e.name
 				}), c.a.createElement("div", {
 					className: g.a.achievementImgLocked
-				}, c.a.createElement(k.a, {
+				}, c.a.createElement(A.a, {
 					name: "lock",
 					isFilled: !0,
 					className: g.a.achievementLock
@@ -233,7 +233,7 @@
 			}) => {
 				const s = Object(n.d)(),
 					r = Object(f.a)(),
-					i = Object(n.e)(m.j);
+					i = Object(n.e)(m.k);
 				return i ? c.a.createElement("div", {
 					className: Object(O.a)(q.a.container, e)
 				}, c.a.createElement("div", {
@@ -247,14 +247,14 @@
 					priority: E.b.Plain,
 					onClick: () => {
 						const e = i ? Object(d.e)(i) : null;
-						r(Object(A.a)()), s(Object(G.b)({
+						r(Object(k.a)()), s(Object(G.b)({
 							username: e,
 							subredditId: t,
 							isOpenedFromAchievementsModal: !0
 						}))
 					},
 					"data-testid": "edit-user-flair-button"
-				}, c.a.createElement(k.a, {
+				}, c.a.createElement(A.a, {
 					name: "edit"
 				}))), (null == a ? void 0 : a.applied) && a.displaySettings.isUserEnabled && c.a.createElement(W.b, {
 					className: q.a.flair,
@@ -264,7 +264,7 @@
 			};
 			t.default = Object(r.a)(() => {
 				const e = Object(n.d)(),
-					t = Object(n.e)(m.j),
+					t = Object(n.e)(m.k),
 					a = Object(n.e)(o.e),
 					s = Object(n.e)(e => a ? Object(u.b)(e, {
 						subredditId: a.id
@@ -499,7 +499,7 @@
 				flairData: c,
 				username: u
 			}) => {
-				const h = Object(r.e)(e => Object(m.j)(e));
+				const h = Object(r.e)(e => Object(m.k)(e));
 				return h ? n.a.createElement("div", {
 					className: Object(s.a)(v.a.flairPreview, e),
 					"data-testid": "user-flair-preview"
@@ -622,4 +622,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconAchievementFlairModal.e58545392e052128c432.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconAchievementFlairModal.5af674ea649a87f2722c.js.map

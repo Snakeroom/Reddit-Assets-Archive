@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GoldTargetedOfferModal.2517f90ce0f288523c34.js
-// Retrieved at 8/16/2021, 8:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GoldTargetedOfferModal.0ae1ae505825913ae815.js
+// Retrieved at 8/30/2021, 12:20:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GoldTargetedOfferModal"], {
 		"./src/reddit/actions/goldPurchaseModals/coinPurchaseModal.ts": function(e, t, r) {
@@ -476,7 +476,7 @@
 				}) => {
 					t(p());
 					const d = r(),
-						l = Object(i.J)(d);
+						l = Object(i.K)(d);
 					try {
 						const r = !l,
 							n = await Object(s.b)({
@@ -826,7 +826,7 @@
 					l = `${t.apiUrl}/api/v2/gold/paypal/initiate_premium_payment`,
 					u = Object(s.a)(l);
 				return Object(a.a)(Object(o.a)(t, [c.a]), {
-					method: n.hb.POST,
+					method: n.ib.POST,
 					endpoint: u,
 					data: d
 				}).then(i.c)
@@ -842,7 +842,7 @@
 					correlation_id: s
 				};
 				return Object(a.a)(Object(o.a)(e, [c.a]), {
-					method: n.hb.POST,
+					method: n.ib.POST,
 					endpoint: `${e.apiUrl}/api/v2/gold/paypal/create_coin_purchase_order`,
 					data: d
 				}).then(i.c)
@@ -860,7 +860,7 @@
 					thing_id: s
 				};
 				return Object(a.a)(Object(o.a)(e, [c.a]), {
-					method: n.hb.POST,
+					method: n.ib.POST,
 					endpoint: `${e.apiUrl}/api/v2/gold/paypal/create_award_purchase_order`,
 					data: l
 				}).then(i.c)
@@ -880,7 +880,7 @@
 					correlation_id: l
 				};
 				return Object(a.a)(Object(o.a)(e, [c.a]), {
-					method: n.hb.POST,
+					method: n.ib.POST,
 					endpoint: `${e.apiUrl}/api/v2/gold/paypal/execute_coin_order`,
 					data: u
 				}).then(i.c)
@@ -908,7 +908,7 @@
 					thing_id: m
 				};
 				return Object(a.a)(Object(o.a)(t, [c.a]), {
-					method: n.hb.POST,
+					method: n.ib.POST,
 					endpoint: `${t.apiUrl}/api/v2/gold/paypal/execute_coin_with_gild_order`,
 					data: f
 				}).then(i.c)
@@ -930,7 +930,7 @@
 					thing_id: u
 				};
 				return Object(a.a)(Object(o.a)(t, [c.a]), {
-					method: n.hb.POST,
+					method: n.ib.POST,
 					endpoint: `${t.apiUrl}/api/v2/gold/paypal/execute_award_purchase_order`,
 					data: b
 				}).then(i.c)
@@ -938,4 +938,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GoldTargetedOfferModal.2517f90ce0f288523c34.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GoldTargetedOfferModal.0ae1ae505825913ae815.js.map

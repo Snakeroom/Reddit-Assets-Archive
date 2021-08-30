@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.2f651539a94792ff2a5e.js
-// Retrieved at 8/12/2021, 6:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.6241da2e2521690a412b.js
+// Retrieved at 8/30/2021, 12:20:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PremiumPurchaseModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, r) {
@@ -326,7 +326,7 @@
 					apiContext: n
 				}) => {
 					const s = Object(f.a)(r()),
-						c = (null == s ? void 0 : s.pennies) || o.vb,
+						c = (null == s ? void 0 : s.pennies) || o.wb,
 						l = Object(b.c)(b.a.GoldPayment);
 					t(Object(d.stripeTokenPending)());
 					const u = await t(Object(d.validateAndCreateStripeToken)(e));
@@ -465,8 +465,8 @@
 				E = r("./src/reddit/actions/modal.ts"),
 				v = r("./src/reddit/components/Gold/PaymentCompletePageFooter/index.tsx"),
 				k = r("./src/reddit/components/ModalStyledComponents/index.tsx"),
-				N = r("./src/reddit/constants/modals.ts"),
-				w = r("./src/reddit/helpers/createEmojiText/index.tsx"),
+				w = r("./src/reddit/constants/modals.ts"),
+				N = r("./src/reddit/helpers/createEmojiText/index.tsx"),
 				M = r("./src/reddit/hooks/useTracking.ts"),
 				I = r("./src/reddit/icons/fonts/Premium/index.tsx"),
 				T = r("./src/reddit/selectors/activeModal.ts"),
@@ -513,7 +513,7 @@
 						hk: "1RxPah"
 					}))), a.a.createElement("div", {
 						className: R.a.paymentCompleteTitleItemLast
-					}, Object(w.a)(C.fbt._("Find more about {anchor text} on Reddit.", [C.fbt._param("anchor text", ":loungeLink:")], {
+					}, Object(N.a)(C.fbt._("Find more about {anchor text} on Reddit.", [C.fbt._param("anchor text", ":loungeLink:")], {
 						hk: "2RGr1F"
 					}), {
 						":loungeLink:": a.a.createElement("a", {
@@ -528,7 +528,7 @@
 						"data-redditstyle": !0
 					}))), a.a.createElement(v.a, {
 						onCloseClick: () => {
-							c ? r(Object(E.h)(N.a.ECON_POWERUPS_PURCHASE)) : e()
+							c ? r(Object(E.h)(w.a.ECON_POWERUPS_PURCHASE)) : e()
 						},
 						buttonText: c ? C.fbt._("Use Your Premium Powerup", null, {
 							hk: "JJNaN"
@@ -575,7 +575,7 @@
 					productOfferType: c
 				}) => {
 					const o = Object(G.a)(),
-						i = Object(s.e)(O.j),
+						i = Object(s.e)(O.k),
 						[d, l] = Object(n.useState)(!1),
 						[u, m] = Object(n.useState)(""),
 						p = Object(n.useCallback)(() => {
@@ -600,11 +600,11 @@
 						hk: "1T4BEy"
 					}))
 				},
-				W = r("./src/reddit/selectors/gold/powerups/index.ts");
+				$ = r("./src/reddit/selectors/gold/powerups/index.ts");
 			const {
-				fbt: $
+				fbt: W
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), q = Object(c.c)({
-				isAnonymous: W.d,
+				isAnonymous: $.d,
 				savedCardsPending: P.w,
 				stripeTokenPending: P.m
 			}), z = Object(s.b)(q);
@@ -626,7 +626,7 @@
 						},
 						className: e,
 						disabled: u || !o
-					}, $._("Complete purchase", null, {
+					}, W._("Complete purchase", null, {
 						hk: "KaR26"
 					}))
 				})),
@@ -676,8 +676,8 @@
 					}) : C.fbt._("month", null, {
 						hk: "1l20Gw"
 					}),
-					o = e.selectedPayment === l.Eb,
-					i = e.selectedPayment === l.Db,
+					o = e.selectedPayment === l.Fb,
+					i = e.selectedPayment === l.Eb,
 					d = o ? K : Q;
 				return a.a.createElement(U.StripeProvider, {
 					stripe: t
@@ -749,14 +749,14 @@
 						const t = Object(g.a)(e);
 						return null === t ? void 0 : t
 					},
-					nightmode: O.W,
+					nightmode: O.X,
 					passthrough: P.e,
 					selectedPayment: P.c,
 					stripeErrorMessage: P.j,
 					stripeTokenPending: P.m,
 					paypalErrorMessage: P.d,
 					userName: e => {
-						const t = Object(O.j)(e);
+						const t = Object(O.k)(e);
 						return `u/${Object(y.e)(t)}`
 					},
 					renewInterval: P.p,
@@ -788,9 +788,9 @@
 					premiumProductOffer: C,
 					premiumPrice: x
 				}) => {
-					let E = l.vb,
+					let E = l.wb,
 						v = !1;
-					C && x ? (E = x, v = j === _.b.Year) : r && (E = r ? r.pennies : l.vb, v = !!r && r.frequency === u.c.Yearly);
+					C && x ? (E = x, v = j === _.b.Year) : r && (E = r ? r.pennies : l.wb, v = !!r && r.frequency === u.c.Yearly);
 					const k = Object(n.useCallback)(e => {
 						if (27 === e.keyCode) return p()
 					}, [p]);
@@ -900,7 +900,7 @@
 					l = `${t.apiUrl}/api/v2/gold/paypal/initiate_premium_payment`,
 					u = Object(o.a)(l);
 				return Object(a.a)(Object(s.a)(t, [c.a]), {
-					method: n.hb.POST,
+					method: n.ib.POST,
 					endpoint: u,
 					data: d
 				}).then(i.c)
@@ -916,7 +916,7 @@
 					correlation_id: o
 				};
 				return Object(a.a)(Object(s.a)(e, [c.a]), {
-					method: n.hb.POST,
+					method: n.ib.POST,
 					endpoint: `${e.apiUrl}/api/v2/gold/paypal/create_coin_purchase_order`,
 					data: d
 				}).then(i.c)
@@ -934,7 +934,7 @@
 					thing_id: o
 				};
 				return Object(a.a)(Object(s.a)(e, [c.a]), {
-					method: n.hb.POST,
+					method: n.ib.POST,
 					endpoint: `${e.apiUrl}/api/v2/gold/paypal/create_award_purchase_order`,
 					data: l
 				}).then(i.c)
@@ -954,7 +954,7 @@
 					correlation_id: l
 				};
 				return Object(a.a)(Object(s.a)(e, [c.a]), {
-					method: n.hb.POST,
+					method: n.ib.POST,
 					endpoint: `${e.apiUrl}/api/v2/gold/paypal/execute_coin_order`,
 					data: u
 				}).then(i.c)
@@ -982,7 +982,7 @@
 					thing_id: b
 				};
 				return Object(a.a)(Object(s.a)(t, [c.a]), {
-					method: n.hb.POST,
+					method: n.ib.POST,
 					endpoint: `${t.apiUrl}/api/v2/gold/paypal/execute_coin_with_gild_order`,
 					data: f
 				}).then(i.c)
@@ -1004,7 +1004,7 @@
 					thing_id: u
 				};
 				return Object(a.a)(Object(s.a)(t, [c.a]), {
-					method: n.hb.POST,
+					method: n.ib.POST,
 					endpoint: `${t.apiUrl}/api/v2/gold/paypal/execute_award_purchase_order`,
 					data: m
 				}).then(i.c)
@@ -1118,4 +1118,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.2f651539a94792ff2a5e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.6241da2e2521690a412b.js.map

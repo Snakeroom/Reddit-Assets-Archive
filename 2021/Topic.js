@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.2f1f046236854e50e794.js
-// Retrieved at 8/30/2021, 10:10:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.5eed526c1b3ce30c58bd.js
+// Retrieved at 8/30/2021, 12:20:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -293,7 +293,7 @@
 					const i = t(),
 						n = Object(p.e)(i),
 						o = Object(p.d)(i),
-						d = Object(b.I)(i);
+						d = Object(b.J)(i);
 					if (n || !o) return;
 					e(f());
 					let m = !1;
@@ -368,7 +368,7 @@
 						a = Object(p.g)(o);
 					if (Object(p.f)(o) || null === a || "client" === a) {
 						const s = null === (i = null === (r = Object(m.b)(t())) || void 0 === r ? void 0 : r.routeMatch) || void 0 === i ? void 0 : i.route.chunk,
-							a = Object(b.J)(o);
+							a = Object(b.K)(o);
 						return Object(n.i)(() => e(E()), {
 							name: "getFocusedVerticalsRequested",
 							page: s,
@@ -609,16 +609,16 @@
 				M = s("./src/telemetry/index.ts"),
 				H = s("./src/telemetry/models/Timer.ts"),
 				A = s("./src/reddit/components/PostList/index.m.less"),
-				V = s.n(A);
+				W = s.n(A);
 			const {
-				fbt: W
+				fbt: V
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), D = 500, U = new B.a(D), J = new B.a(D), G = new B.a(D), z = {
 				LARGE: 1,
 				MEDIUM: 1,
 				CLASSIC: 3,
 				COMPACT: 5,
 				SEARCH: 3
-			}, K = x.a.div("SeeMore", V.a), q = x.a.wrapped(w.a, "ArrowRight", V.a), Q = (e, t, s, r, i, n, o, a, c) => {
+			}, K = x.a.div("SeeMore", W.a), q = x.a.wrapped(w.a, "ArrowRight", W.a), Q = (e, t, s, r, i, n, o, a, c) => {
 				const d = `entered-${e}-${t}-${s?`last-${r}-${i}`:""}-${n}`;
 				let l = U.get(d);
 				return void 0 === l && (l = () => {
@@ -688,7 +688,7 @@
 				componentDidMount() {
 					if (this.checkAndSendScreenview(), this.viewportHeight = window.innerHeight, void 0 !== this.timerId) {
 						const e = M.c.end(this.timerId);
-						setTimeout(() => Object(M.b)(f.l.Redesign, {
+						setTimeout(() => Object(M.b)(f.m.Redesign, {
 							type: "mount",
 							component: "postList",
 							duration: e
@@ -703,7 +703,7 @@
 					if (v.a.read(() => this.checkAndSendScreenview()), this.timerId && M.c.has(this.timerId)) {
 						const e = M.c.end(this.timerId);
 						if (e < 10) return;
-						setTimeout(() => Object(M.b)(f.l.Redesign, {
+						setTimeout(() => Object(M.b)(f.m.Redesign, {
 							duration: e,
 							type: "mount",
 							component: "postList"
@@ -826,7 +826,7 @@
 							postsById: R
 						} = this.props, F = R[e], B = F.crosspostRootId && R[F.crosspostRootId] ? R[F.crosspostRootId] : F;
 						F.crosspostRootId && !R[F.crosspostRootId] && y.c.withScope(e => {
-							e.setExtra("errorType", f.r.API), e.setExtra("description", `Post ${F.id} is crosspost of ${F.crosspostRootId}, but ` + `${F.crosspostRootId} details are missing in the state`), y.c.captureMessage("Crosspost parent details are missing")
+							e.setExtra("errorType", f.s.API), e.setExtra("description", `Post ${F.id} is crosspost of ${F.crosspostRootId}, but ` + `${F.crosspostRootId} details are missing in the state`), y.c.captureMessage("Crosspost parent details are missing")
 						});
 						const M = this.props.postComponentForLayout({
 							isCrosspost: !!F.crosspostRootId,
@@ -837,8 +837,8 @@
 						let H = `post-list-item-[layout: ${r}]-[postId: ${e}]`;
 						this.props.listingBelowVariant && g && (H += `--${g}`);
 						const A = Q(e, r, s, g, v, _, this.props, t, this.props.hostPostData),
-							V = Y(e, r, this.props, t, x),
-							W = Z(e, this.props, c),
+							W = Y(e, r, this.props, t, x),
+							V = Z(e, this.props, c),
 							D = B.media && B.media.type === k.o.EMBED ? B.media.provider : null,
 							U = p && !F.isSponsored,
 							J = m && !F.isSponsored && !F.isScoreHidden,
@@ -848,7 +848,7 @@
 							id: e,
 							isFocusable: !(!B.media || !(r === O.g.Large || r === O.g.Classic && Object(k.G)(B.media))) && (k.d.has(B.media.type) && (!D || !k.s.has(D)) && !B.isSpoiler && !B.isNSFW),
 							trackOnEnteredViewport: A,
-							trackOnExitedViewport: V,
+							trackOnExitedViewport: W,
 							render: ({
 								className: r,
 								height: p,
@@ -880,7 +880,7 @@
 								listingName: v,
 								pageLayer: x,
 								last: s,
-								onClickPost: W,
+								onClickPost: V,
 								onSizeChanged: f,
 								postId: e,
 								postIds: L,
@@ -914,7 +914,7 @@
 					if (s) return;
 					const o = n;
 					return u.a.createElement("div", {
-						className: V.a.placeholder
+						className: W.a.placeholder
 					}, u.a.createElement(o, {
 						className: t,
 						isLoading: !e,
@@ -934,7 +934,7 @@
 						onLoadMore: n
 					} = this.props;
 					if (!s) return u.a.createElement("div", {
-						className: V.a.placeholder
+						className: W.a.placeholder
 					}, u.a.createElement(E.a, {
 						className: i,
 						isLoading: !!t,
@@ -970,7 +970,7 @@
 						y = _ || o;
 					return u.a.createElement(l.Fragment, null, u.a.createElement(S.b, {
 						innerRef: this.updateScrollerRef,
-						className: y ? V.a.truncatedPostList : Object(g.a)(V.a.postList, this.props.className),
+						className: y ? W.a.truncatedPostList : Object(g.a)(W.a.postList, this.props.className),
 						contentContainerRef: e,
 						dataKey: this.props.listingKey,
 						disableScrollCache: !0,
@@ -986,13 +986,13 @@
 						trackingName: x,
 						viewportTopPadding: L.f
 					}, v), !n && _ && u.a.createElement(K, {
-						className: V.a.seeMoreButton
+						className: W.a.seeMoreButton
 					}, u.a.createElement(P.a, {
-						className: V.a.seeMorePostsText,
+						className: W.a.seeMorePostsText,
 						to: Object(b.a)(_, {
-							type: f.Wb.Posts
+							type: f.Xb.Posts
 						})
-					}, W._("See More Posts", null, {
+					}, V._("See More Posts", null, {
 						hk: "3o0CqI"
 					}), u.a.createElement(q, null))), this.isLoadingMore() && this.renderLoadMore())
 				}
@@ -1425,7 +1425,7 @@
 				C = s("./src/reddit/components/TopicSidebar/SubredditList/Subreddit/index.m.less"),
 				L = s.n(C);
 			const O = Object(h.c)({
-				isLoggedIn: S.J,
+				isLoggedIn: S.K,
 				subreddit: T.T,
 				subredditAboutInfo: T.v
 			});
@@ -2055,12 +2055,12 @@
 				}).apply(this, arguments)
 			}
 			const {
-				fbt: V
+				fbt: W
 			} = s("./node_modules/fbt/lib/FbtPublic.js");
-			var W;
+			var V;
 			! function(e) {
 				e.Communities = "communities", e.Posts = "posts", e.RelatedTopics = "relatedTopics"
-			}(W || (W = {}));
+			}(V || (V = {}));
 			class D extends i.a.Component {
 				renderSubtitleContent() {
 					const {
@@ -2076,7 +2076,7 @@
 					}, i.a.createElement(p.a, {
 						className: H.a.link,
 						to: t
-					}, e)))) : V._("Topic on Reddit", null, {
+					}, e)))) : W._("Topic on Reddit", null, {
 						hk: "3gTFev"
 					})
 				}
@@ -2108,16 +2108,16 @@
 					}, this.renderSubtitleContent())), i.a.createElement("div", {
 						className: H.a.Tabs
 					}, i.a.createElement(B, A({
-						tab: W.Posts
-					}, c), V._("Posts", null, {
+						tab: V.Posts
+					}, c), W._("Posts", null, {
 						hk: "3RLrle"
 					})), i.a.createElement(B, A({
-						tab: W.Communities
-					}, c), V._("Communities", null, {
+						tab: V.Communities
+					}, c), W._("Communities", null, {
 						hk: "KIwd1"
 					})), i.a.createElement(B, A({
-						tab: W.RelatedTopics
-					}, c), V._("Related Topics", null, {
+						tab: V.RelatedTopics
+					}, c), W._("Related Topics", null, {
 						hk: "4go2cr"
 					})))))
 				}
@@ -2135,7 +2135,7 @@
 							openTab: e,
 							relationshipIndex: t
 						} = this.props;
-						e(W.RelatedTopics, t)
+						e(V.RelatedTopics, t)
 					}
 				}
 				render() {
@@ -2183,7 +2183,7 @@
 			const {
 				fbt: ae
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), ce = Object(n.c)({
-				isLoggedIn: ie.J,
+				isLoggedIn: ie.K,
 				subreddit: re.T,
 				subredditAboutInfo: (e, {
 					subredditId: t
@@ -2267,7 +2267,7 @@
 							index: e,
 							onTabClick: t
 						} = this.props;
-						t(W.RelatedTopics, e)
+						t(V.RelatedTopics, e)
 					}
 				}
 				render() {
@@ -2311,9 +2311,9 @@
 							activeTab: e,
 							topicNamePlural: t
 						} = this.props;
-						return e === W.Posts ? Ee._("Posts about {topic name}", [Ee._param("topic name", t)], {
+						return e === V.Posts ? Ee._("Posts about {topic name}", [Ee._param("topic name", t)], {
 							hk: "3AGfU"
-						}) : e === W.Communities ? Ee._("Communities related to {topic name}", [Ee._param("topic name", t)], {
+						}) : e === V.Communities ? Ee._("Communities related to {topic name}", [Ee._param("topic name", t)], {
 							hk: "jKM0V"
 						}) : null
 					}
@@ -2322,8 +2322,8 @@
 					const {
 						activeLayout: e,
 						activeTab: t
-					} = this.props, s = t === W.Posts;
-					return t === W.RelatedTopics ? this.renderRelatedTopicsHeader() : i.a.createElement("div", {
+					} = this.props, s = t === V.Posts;
+					return t === V.RelatedTopics ? this.renderRelatedTopicsHeader() : i.a.createElement("div", {
 						className: ye.a.TabHeader
 					}, i.a.createElement("div", {
 						className: ye.a.TabTitle
@@ -2341,9 +2341,9 @@
 				Oe = s.n(Le);
 			const {
 				fbt: Pe
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), Ie = Object(O.u)(), je = (e, t) => t.match.params.sort || a.V, Ne = e => {
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), Ie = Object(O.u)(), je = (e, t) => t.match.params.sort || a.W, Ne = e => {
 				const t = [];
-				return e ? (e.hasPosts && t.push(W.Posts), e.hasSubreddits && t.push(W.Communities), e.childRelationships.length && t.push(W.RelatedTopics), t) : t
+				return e ? (e.hasPosts && t.push(V.Posts), e.hasSubreddits && t.push(V.Communities), e.childRelationships.length && t.push(V.RelatedTopics), t) : t
 			}, we = Object(d.b)(() => Object(n.a)((e, t) => Object(Ce.d)(e, t.match.params.topicSlug), (e, t) => Object(Ce.e)(e, {
 				topicSlug: t.match.params.topicSlug
 			}), (e, t) => Object(Ce.c)(e, {
@@ -2368,7 +2368,7 @@
 				topicNamePlural: t
 			})), (e, t) => ({
 				onLoadMorePosts: () => e(Object(l.morePostsRequested)(t.match.params))
-			})), ke = (e, t) => e === W.Communities ? L.g.Large : t;
+			})), ke = (e, t) => e === V.Communities ? L.g.Large : t;
 			class Re extends i.a.Component {
 				constructor(e) {
 					super(e), this.openTab = (e, t = 0) => {
@@ -2378,7 +2378,7 @@
 							activeTab: e
 						}), window.scrollTo(0, 0)
 					}, this.openCommunitiesTab = () => {
-						this.openTab(W.Communities)
+						this.openTab(V.Communities)
 					}, this.onViewed = (e, t) => {
 						var s;
 						return Object(P.f)(Object(c.a)(C.b.Topic, null, {
@@ -2450,15 +2450,15 @@
 							topicNamePlural: p
 						}), i.a.createElement("div", {
 							className: Object(o.a)(Oe.a.TopicTab, {
-								[Oe.a.active]: f === W.Communities
+								[Oe.a.active]: f === V.Communities
 							})
 						}, i.a.createElement(be, {
 							subredditIds: d.subredditIds
 						})), i.a.createElement("div", {
 							className: Object(o.a)(Oe.a.TopicTab, {
-								[Oe.a.active]: f === W.Posts
+								[Oe.a.active]: f === V.Posts
 							})
-						}, f === W.Posts && i.a.createElement(u.a, {
+						}, f === V.Posts && i.a.createElement(u.a, {
 							forcedLayout: h,
 							listingKey: b,
 							listingName: v,
@@ -2467,13 +2467,13 @@
 							onLoadMore: this.props.onLoadMorePosts
 						})), i.a.createElement("div", {
 							className: Object(o.a)(Oe.a.TopicTab, {
-								[Oe.a.active]: f === W.RelatedTopics
+								[Oe.a.active]: f === V.RelatedTopics
 							})
 						}, i.a.createElement(y, {
 							topics: _
 						}))),
-						O = f !== W.RelatedTopics,
-						P = f !== W.Communities && a.includes(W.Communities),
+						O = f !== V.RelatedTopics,
+						P = f !== V.Communities && a.includes(V.Communities),
 						N = i.a.createElement("div", {
 							className: Oe.a.WidgetsContainer
 						}, P && i.a.createElement(S.a, {
@@ -2610,7 +2610,7 @@
 				x = e => e.focusedVerticals.category,
 				_ = e => e.focusedVerticals.lastLoadedEnv,
 				y = e => {
-					const t = Object(a.I)(e),
+					const t = Object(a.J)(e),
 						s = i.d.geoSubredditRecommendationDULoggedIn(e),
 						r = i.d.geoSubredditRecommendationDULoggedOut(e);
 					return t && s || !t && r
@@ -2621,4 +2621,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.2f1f046236854e50e794.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.5eed526c1b3ce30c58bd.js.map
