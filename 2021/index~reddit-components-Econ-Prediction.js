@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.564dde1c53c33a655ae1.js
-// Retrieved at 8/30/2021, 5:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.ca5e65b2cf2267c3f948.js
+// Retrieved at 8/31/2021, 2:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index~reddit-components-Econ-Prediction"], {
 		"./node_modules/lodash/_LazyWrapper.js": function(a, i, r) {
@@ -455,6 +455,16 @@
 					n = new t.BigNumber("100").multipliedBy(k);
 				return new t.BigNumber(n).toNumber()
 			}
+		},
+		"./src/lib/delay/index.ts": function(a, i, r) {
+			"use strict";
+
+			function t(a) {
+				return new Promise(i => setTimeout(i, a))
+			}
+			r.d(i, "a", (function() {
+				return t
+			}))
 		},
 		"./src/reddit/actions/badge.ts": function(a, i, r) {
 			"use strict";
@@ -2377,12 +2387,9 @@
 				x = r.n(t),
 				k = r("./node_modules/react/index.js"),
 				n = r.n(k),
-				o = r("./src/lib/classNames/index.ts");
-
-			function s(a) {
-				return new Promise(i => setTimeout(i, a))
-			}
-			var e = r("./src/lib/timeUntil/index.ts"),
+				o = r("./src/lib/classNames/index.ts"),
+				s = r("./src/lib/delay/index.ts"),
+				e = r("./src/lib/timeUntil/index.ts"),
 				m = r("./src/higherOrderComponents/asModal/index.tsx"),
 				l = r("./src/config.ts");
 			const {
@@ -2436,25 +2443,25 @@
 					(async () => {
 						var a;
 						if (r && !d) {
-							await s(1), f(!0);
+							await Object(s.a)(1), f(!0);
 							const i = null === (a = null == x ? void 0 : x.current) || void 0 === a ? void 0 : a.getBoundingClientRect();
 							if (!i) return f(!1), void t();
-							m(i.width), h(i), await s(0), h({
+							m(i.width), h(i), await Object(s.a)(0), h({
 								top: i.top,
 								left: 0,
 								width: window.innerWidth,
 								height: i.height
-							}), await s(200), c(!0), h({
+							}), await Object(s.a)(200), c(!0), h({
 								left: 0,
 								width: window.innerWidth,
 								top: 0,
 								height: window.innerHeight
-							}), await s(300), G(!0), await s(2e3), G(!1), h({
+							}), await Object(s.a)(300), G(!0), await Object(s.a)(2e3), G(!1), h({
 								top: i.top,
 								left: 0,
 								width: window.innerWidth,
 								height: i.height
-							}), await s(300), c(!1), h(i), await s(200), t(), f(!1)
+							}), await Object(s.a)(300), c(!1), h(i), await Object(s.a)(200), t(), f(!1)
 						}
 					})()
 				}, [d, r, t]), n.a.createElement(n.a.Fragment, null, n.a.createElement("div", {
@@ -3736,4 +3743,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.564dde1c53c33a655ae1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.ca5e65b2cf2267c3f948.js.map

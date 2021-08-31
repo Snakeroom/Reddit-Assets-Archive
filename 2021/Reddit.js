@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.ad1108d97714fe8da9c1.js
-// Retrieved at 8/31/2021, 12:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.b453ad8b54dc294d9749.js
+// Retrieved at 8/31/2021, 2:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -1145,6 +1145,16 @@
 				})
 			}
 		},
+		"./src/lib/delay/index.ts": function(e, t, n) {
+			"use strict";
+
+			function s(e) {
+				return new Promise(t => setTimeout(t, e))
+			}
+			n.d(t, "a", (function() {
+				return s
+			}))
+		},
 		"./src/lib/hooks/useOnClickOutside.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
@@ -1187,47 +1197,53 @@
 		"./src/lib/notifications/index.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return a
-			})), n.d(t, "c", (function() {
-				return i
-			})), n.d(t, "b", (function() {
 				return c
+			})), n.d(t, "c", (function() {
+				return l
+			})), n.d(t, "b", (function() {
+				return d
 			}));
-			var s = n("./src/lib/localStorageAvailable/index.ts"),
-				o = n("./src/lib/notifications/constants.ts"),
-				r = n("./src/lib/notifications/featureFlags.ts");
+			var s = n("./src/lib/delay/index.ts"),
+				o = n("./src/lib/getParsedUserAgent/index.ts"),
+				r = n("./src/lib/localStorageAvailable/index.ts"),
+				a = n("./src/lib/notifications/constants.ts"),
+				i = n("./src/lib/notifications/featureFlags.ts");
 			n("./src/lib/serviceWorker/index.ts");
-			const a = () => {
-					if (Object(r.a)() !== o.c.NotificationsSupported) return o.a.Unsupported;
-					const e = Object(s.a)() && localStorage.getItem(o.f) === o.g;
-					return "granted" === Notification.permission ? o.a.Granted : "denied" === Notification.permission ? o.a.Denied : e ? o.a.Closed : o.a.Default
+			const c = () => {
+					if (Object(i.a)() !== a.c.NotificationsSupported) return a.a.Unsupported;
+					const e = Object(r.a)() && localStorage.getItem(a.f) === a.g;
+					return "granted" === Notification.permission ? a.a.Granted : "denied" === Notification.permission ? a.a.Denied : e ? a.a.Closed : a.a.Default
 				},
-				i = () => !!Object(s.a)() && (localStorage.removeItem(o.f), !0),
-				c = async (e, t, n, r, i, c) => {
-					if (Object(s.a)()) {
-						const t = localStorage.getItem(o.h),
+				l = () => !!Object(r.a)() && (localStorage.removeItem(a.f), !0),
+				d = async (e, t, n, i, l, d) => {
+					if (Object(r.a)()) {
+						const t = localStorage.getItem(a.h),
 							n = (new Date).getTime();
-						if (!e && t && parseInt(t) + o.i > n) return void c();
-						localStorage.setItem(o.h, n.toString())
+						if (!e && t && parseInt(t) + a.i > n) return void d();
+						localStorage.setItem(a.h, n.toString())
 					}
-					const l = a();
-					if (l !== o.a.Unsupported) {
-						if (!t && l === o.a.Denied) return r(!1, !0), void c();
-						if (!t && l === o.a.Granted) return i(!1), void c();
-						if (t || l !== o.a.Closed) switch (n(), await Notification.requestPermission()) {
-							case "granted":
-								i(!0);
-								break;
-							case "denied":
-								r(!0, !0);
-								break;
-							case "default":
-								c();
-								break;
-							default:
-								r(!0, !1), localStorage.setItem(o.f, o.g)
-						} else c()
-					} else c()
+					const u = c();
+					if (u === a.a.Unsupported) return void d();
+					if (!t && u === a.a.Denied) return i(!1, !0), void d();
+					if (!t && u === a.a.Granted) return l(!1), void d();
+					if (!t && u === a.a.Closed) return void d();
+					let m = a.a.Default;
+					const p = navigator.userAgent;
+					switch (Object(o.b)(p) || Object(o.f)(p) ? Object(s.a)(1800).then(() => {
+						m === a.a.Default && n()
+					}) : n(), m = await Notification.requestPermission()) {
+						case "granted":
+							l(!0);
+							break;
+						case "denied":
+							i(!0, !0);
+							break;
+						case "default":
+							d();
+							break;
+						default:
+							i(!0, !1), localStorage.setItem(a.f, a.g)
+					}
 				}
 		},
 		"./src/lib/safeBadgeUpdate.ts": function(e, t, n) {
@@ -20257,4 +20273,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePo~5f1ac562", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250", "Governance~ModListing~Reddit~Subreddit", "Chat~Governance~Reddit", "Governance~Reddit~reddit-components-MediumPost", "Reddit~StandalonePostPage~reddit-components-MediumPost", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.ad1108d97714fe8da9c1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.b453ad8b54dc294d9749.js.map

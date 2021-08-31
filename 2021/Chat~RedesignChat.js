@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.d8cfb83298fa635de637.js
-// Retrieved at 8/30/2021, 12:20:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.ba2d473c8f82e9b2f609.js
+// Retrieved at 8/31/2021, 2:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -13962,6 +13962,16 @@
 				})
 			}
 		},
+		"./src/lib/delay/index.ts": function(e, t, n) {
+			"use strict";
+
+			function s(e) {
+				return new Promise(t => setTimeout(t, e))
+			}
+			n.d(t, "a", (function() {
+				return s
+			}))
+		},
 		"./src/lib/hooks/useOnClickOutside.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
@@ -14124,47 +14134,53 @@
 		"./src/lib/notifications/index.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return c
-			})), n.d(t, "c", (function() {
-				return o
-			})), n.d(t, "b", (function() {
 				return i
+			})), n.d(t, "c", (function() {
+				return l
+			})), n.d(t, "b", (function() {
+				return d
 			}));
-			var s = n("./src/lib/localStorageAvailable/index.ts"),
-				a = n("./src/lib/notifications/constants.ts"),
-				r = n("./src/lib/notifications/featureFlags.ts");
+			var s = n("./src/lib/delay/index.ts"),
+				a = n("./src/lib/getParsedUserAgent/index.ts"),
+				r = n("./src/lib/localStorageAvailable/index.ts"),
+				c = n("./src/lib/notifications/constants.ts"),
+				o = n("./src/lib/notifications/featureFlags.ts");
 			n("./src/lib/serviceWorker/index.ts");
-			const c = () => {
-					if (Object(r.a)() !== a.c.NotificationsSupported) return a.a.Unsupported;
-					const e = Object(s.a)() && localStorage.getItem(a.f) === a.g;
-					return "granted" === Notification.permission ? a.a.Granted : "denied" === Notification.permission ? a.a.Denied : e ? a.a.Closed : a.a.Default
+			const i = () => {
+					if (Object(o.a)() !== c.c.NotificationsSupported) return c.a.Unsupported;
+					const e = Object(r.a)() && localStorage.getItem(c.f) === c.g;
+					return "granted" === Notification.permission ? c.a.Granted : "denied" === Notification.permission ? c.a.Denied : e ? c.a.Closed : c.a.Default
 				},
-				o = () => !!Object(s.a)() && (localStorage.removeItem(a.f), !0),
-				i = async (e, t, n, r, o, i) => {
-					if (Object(s.a)()) {
-						const t = localStorage.getItem(a.h),
+				l = () => !!Object(r.a)() && (localStorage.removeItem(c.f), !0),
+				d = async (e, t, n, o, l, d) => {
+					if (Object(r.a)()) {
+						const t = localStorage.getItem(c.h),
 							n = (new Date).getTime();
-						if (!e && t && parseInt(t) + a.i > n) return void i();
-						localStorage.setItem(a.h, n.toString())
+						if (!e && t && parseInt(t) + c.i > n) return void d();
+						localStorage.setItem(c.h, n.toString())
 					}
-					const l = c();
-					if (l !== a.a.Unsupported) {
-						if (!t && l === a.a.Denied) return r(!1, !0), void i();
-						if (!t && l === a.a.Granted) return o(!1), void i();
-						if (t || l !== a.a.Closed) switch (n(), await Notification.requestPermission()) {
-							case "granted":
-								o(!0);
-								break;
-							case "denied":
-								r(!0, !0);
-								break;
-							case "default":
-								i();
-								break;
-							default:
-								r(!0, !1), localStorage.setItem(a.f, a.g)
-						} else i()
-					} else i()
+					const u = i();
+					if (u === c.a.Unsupported) return void d();
+					if (!t && u === c.a.Denied) return o(!1, !0), void d();
+					if (!t && u === c.a.Granted) return l(!1), void d();
+					if (!t && u === c.a.Closed) return void d();
+					let h = c.a.Default;
+					const m = navigator.userAgent;
+					switch (Object(a.b)(m) || Object(a.f)(m) ? Object(s.a)(1800).then(() => {
+						h === c.a.Default && n()
+					}) : n(), h = await Notification.requestPermission()) {
+						case "granted":
+							l(!0);
+							break;
+						case "denied":
+							o(!0, !0);
+							break;
+						case "default":
+							d();
+							break;
+						default:
+							o(!0, !1), localStorage.setItem(c.f, c.g)
+					}
 				}
 		},
 		"./src/lib/notifications/token.ts": function(e, t, n) {
@@ -14386,4 +14402,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.d8cfb83298fa635de637.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.ba2d473c8f82e9b2f609.js.map
