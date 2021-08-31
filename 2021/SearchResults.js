@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.b07b0060e90fd3a600a5.js
-// Retrieved at 8/31/2021, 6:10:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.f1bee8124a4ec595c6b4.js
+// Retrieved at 8/31/2021, 6:30:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -7048,7 +7048,10 @@
 						postId: s.id
 					})
 				},
-				showPromotedCTA: Xt.a,
+				showPromotedCTA: (e, t) => {
+					const s = Qt(e, t.searchDiscoveryUnit.postOrder);
+					return !!s && Object(Xt.a)(e, s)
+				},
 				post: (e, t) => Qt(e, t.searchDiscoveryUnit.postOrder),
 				subredditOrProfile: Object(He.a)((e, t) => {
 					const s = Qt(e, t.searchDiscoveryUnit.postOrder);
@@ -7493,7 +7496,7 @@
 				fbt: ne
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), ae = `${y.a.assetPath}/img/link-placeholder.png`, oe = Object(z.c)({
 				autoplayPref: q.b,
-				showPromotedCTA: H.a,
+				showPromotedCTA: H.b,
 				flairStyleTemplate: d.U
 			});
 
@@ -9736,7 +9739,7 @@
 					isCurrentUserProfilePost: b.l,
 					isExpanded: b.m,
 					isLoggedIn: x.K,
-					showPromotedCTA: C.a,
+					showPromotedCTA: C.b,
 					moderatorPermissions: p.k,
 					modModeEnabled: d.S,
 					poll: (e, t) => {
@@ -11275,21 +11278,26 @@
 		},
 		"./src/reddit/selectors/showPromotedCTA.ts": function(e, t, s) {
 			"use strict";
-			s.d(t, "a", (function() {
-				return i
+			s.d(t, "b", (function() {
+				return d
+			})), s.d(t, "a", (function() {
+				return l
 			}));
 			var r = s("./node_modules/reselect/es/index.js"),
 				n = s("./src/reddit/constants/experiments.ts"),
 				a = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				o = s("./src/reddit/selectors/posts.ts");
-			const i = Object(r.a)(e => Object(a.c)(e, {
-				experimentName: n.ld,
-				experimentEligibilitySelector: a.a
-			}), o.H, (e, t) => e === n.vd.Enabled && (null == t ? void 0 : t.isCreatedFromAdsUi) || (null == t ? void 0 : t.isSponsored))
+			const i = e => Object(a.c)(e, {
+					experimentName: n.ld,
+					experimentEligibilitySelector: a.a
+				}),
+				c = (e, t) => t === n.vd.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				d = Object(r.a)(o.H, i, (e, t) => c(e, t)),
+				l = Object(r.a)((e, t) => t, i, (e, t) => c(e, t))
 		},
 		"./src/redditGQL/operations/SubredditGeoRecommendationViaFocusVertical.json": function(e) {
 			e.exports = JSON.parse('{"id":"b1787cdf2fd4"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.b07b0060e90fd3a600a5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.f1bee8124a4ec595c6b4.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.ab2dd3a644d343da6189.js
-// Retrieved at 8/31/2021, 6:10:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.449d2210b760926d8433.js
+// Retrieved at 8/31/2021, 6:30:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-MediumPost"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -1297,7 +1297,7 @@
 					flairStyleTemplate: L.U,
 					isActive: W.j,
 					isCurrentUserProfilePost: W.l,
-					showPromotedCTA: q.a,
+					showPromotedCTA: q.b,
 					moderatorPermissions: H.k,
 					shouldShowNsfwListingBelow: X.b,
 					showAwardsPlaque: U.a,
@@ -4091,18 +4091,23 @@
 		},
 		"./src/reddit/selectors/showPromotedCTA.ts": function(e, t, s) {
 			"use strict";
-			s.d(t, "a", (function() {
-				return c
+			s.d(t, "b", (function() {
+				return d
+			})), s.d(t, "a", (function() {
+				return l
 			}));
 			var n = s("./node_modules/reselect/es/index.js"),
 				o = s("./src/reddit/constants/experiments.ts"),
 				r = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = s("./src/reddit/selectors/posts.ts");
-			const c = Object(n.a)(e => Object(r.c)(e, {
-				experimentName: o.ld,
-				experimentEligibilitySelector: r.a
-			}), i.H, (e, t) => e === o.vd.Enabled && (null == t ? void 0 : t.isCreatedFromAdsUi) || (null == t ? void 0 : t.isSponsored))
+			const c = e => Object(r.c)(e, {
+					experimentName: o.ld,
+					experimentEligibilitySelector: r.a
+				}),
+				a = (e, t) => t === o.vd.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				d = Object(n.a)(i.H, c, (e, t) => a(e, t)),
+				l = Object(n.a)((e, t) => t, c, (e, t) => a(e, t))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.ab2dd3a644d343da6189.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.449d2210b760926d8433.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.ac2613543080488318ca.js
-// Retrieved at 8/31/2021, 6:10:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.cadb9f470f6abd02118c.js
+// Retrieved at 8/31/2021, 6:30:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview"], {
 		"./node_modules/shallowequal/index.js": function(e, t) {
@@ -1059,7 +1059,7 @@
 					isCurrentUserProfilePost: w.l,
 					isLoggedIn: I.K,
 					isActive: w.j,
-					showPromotedCTA: me.a,
+					showPromotedCTA: me.b,
 					moderatorPermissions: j.k,
 					modModeEnabled: ee.S,
 					posts: ye,
@@ -4205,4 +4205,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.ac2613543080488318ca.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.cadb9f470f6abd02118c.js.map

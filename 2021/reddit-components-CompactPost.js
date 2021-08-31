@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.a561fa812c44db69aefd.js
-// Retrieved at 8/31/2021, 6:10:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.e77c67d6935658c00107.js
+// Retrieved at 8/31/2021, 6:30:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CompactPost", "Reddit~StandalonePostPage~reddit-components-MediumPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1639,7 +1639,7 @@
 					flairStyleTemplate: ne.U,
 					isActive: y.j,
 					isExpanded: y.m,
-					showPromotedCTA: fe.a,
+					showPromotedCTA: fe.b,
 					layout: ne.Q,
 					moderatorPermissions: S.k,
 					poll: (e, t) => {
@@ -7034,17 +7034,22 @@
 		},
 		"./src/reddit/selectors/showPromotedCTA.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "a", (function() {
-				return i
+			n.d(t, "b", (function() {
+				return d
+			})), n.d(t, "a", (function() {
+				return l
 			}));
 			var s = n("./node_modules/reselect/es/index.js"),
 				r = n("./src/reddit/constants/experiments.ts"),
 				o = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				a = n("./src/reddit/selectors/posts.ts");
-			const i = Object(s.a)(e => Object(o.c)(e, {
-				experimentName: r.ld,
-				experimentEligibilitySelector: o.a
-			}), a.H, (e, t) => e === r.vd.Enabled && (null == t ? void 0 : t.isCreatedFromAdsUi) || (null == t ? void 0 : t.isSponsored))
+			const i = e => Object(o.c)(e, {
+					experimentName: r.ld,
+					experimentEligibilitySelector: o.a
+				}),
+				c = (e, t) => t === r.vd.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				d = Object(s.a)(a.H, i, (e, t) => c(e, t)),
+				l = Object(s.a)((e, t) => t, i, (e, t) => c(e, t))
 		},
 		"./src/reddit/selectors/userFlair.ts": function(e, t, n) {
 			"use strict";
@@ -7202,4 +7207,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.a561fa812c44db69aefd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.e77c67d6935658c00107.js.map
