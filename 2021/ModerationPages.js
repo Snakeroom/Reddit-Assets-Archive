@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.becca0a1c11f1385458b.js
-// Retrieved at 8/30/2021, 5:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.513aaa241de6e754664f.js
+// Retrieved at 8/31/2021, 12:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -1669,7 +1669,7 @@
 		"./src/reddit/components/BannedUserList/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "b", (function() {
-				return J
+				return K
 			}));
 			var n = s("./src/config.ts"),
 				a = s("./node_modules/fbt/lib/FbtPublic.js"),
@@ -1678,63 +1678,39 @@
 				i = s("./node_modules/react-redux/es/index.js"),
 				d = s("./node_modules/reselect/es/index.js"),
 				l = s("./src/lib/constants/index.ts"),
-				c = s("./node_modules/lodash/find.js"),
-				m = s.n(c);
-			const u = [{
-				ms: l.mc,
-				unit: "years"
-			}, {
-				ms: l.ob,
-				unit: "months"
-			}, {
-				ms: l.A,
-				unit: "days"
-			}, {
-				ms: l.P,
-				unit: "hours"
-			}, {
-				ms: l.jb,
-				unit: "minutes"
-			}, {
-				ms: l.Pb,
-				unit: "seconds"
-			}, {
-				ms: 1,
-				unit: "milliseconds"
-			}];
-			var p = s("./src/reddit/actions/modal.ts"),
-				h = s("./src/reddit/actions/subredditModeration/ban.ts"),
-				b = s("./src/reddit/components/ConfirmUserActionModal/index.tsx"),
-				g = s("./src/reddit/components/HumanDate/index.tsx"),
-				f = s("./src/reddit/components/ModerationPagesEmptyList/index.tsx"),
-				x = s("./src/reddit/components/ModHub/InfoLink/index.tsx"),
-				E = s("./src/reddit/components/ModHub/StyledComponents/index.tsx"),
-				v = s("./src/reddit/components/Scroller/Simple.tsx"),
-				C = s("./src/reddit/components/SubredditModerationSearch/index.tsx"),
-				_ = s("./src/reddit/components/SubredditModerationTopBar/index.tsx"),
-				k = s("./src/reddit/components/SubredditModerationUserItem/index.tsx"),
-				y = s("./src/reddit/controls/Button/index.tsx"),
-				S = s("./src/reddit/icons/fonts/index.tsx"),
-				O = s("./src/reddit/models/SubredditModeration/index.ts"),
-				w = s("./src/reddit/selectors/activeModalId.ts"),
-				I = s("./src/reddit/selectors/bannedUser.ts"),
-				j = s("./src/reddit/components/BannedUserList/AddBannedUserModal/index.tsx"),
-				T = s("./src/lib/lessComponent.tsx"),
-				N = s("./src/reddit/components/Comments/UnthreadedComment/index.tsx"),
-				M = s("./src/reddit/components/CompactPost/index.tsx"),
-				P = s("./src/reddit/contexts/PageLayer/index.tsx"),
-				R = s("./src/reddit/components/BannedUserList/ExpandedComponent.m.less"),
-				F = s.n(R);
+				c = s("./src/reddit/actions/modal.ts"),
+				m = s("./src/reddit/actions/subredditModeration/ban.ts"),
+				u = s("./src/reddit/components/ConfirmUserActionModal/index.tsx"),
+				p = s("./src/reddit/components/HumanDate/index.tsx"),
+				h = s("./src/reddit/components/ModerationPagesEmptyList/index.tsx"),
+				b = s("./src/reddit/components/ModHub/InfoLink/index.tsx"),
+				g = s("./src/reddit/components/ModHub/StyledComponents/index.tsx"),
+				f = s("./src/reddit/components/Scroller/Simple.tsx"),
+				x = s("./src/reddit/components/SubredditModerationSearch/index.tsx"),
+				E = s("./src/reddit/components/SubredditModerationTopBar/index.tsx"),
+				v = s("./src/reddit/components/SubredditModerationUserItem/index.tsx"),
+				C = s("./src/reddit/controls/Button/index.tsx"),
+				_ = s("./src/reddit/icons/fonts/index.tsx"),
+				k = s("./src/reddit/models/SubredditModeration/index.ts"),
+				y = s("./src/reddit/selectors/activeModalId.ts"),
+				S = s("./src/reddit/selectors/bannedUser.ts"),
+				O = s("./src/reddit/components/BannedUserList/AddBannedUserModal/index.tsx"),
+				w = s("./src/lib/lessComponent.tsx"),
+				I = s("./src/reddit/components/Comments/UnthreadedComment/index.tsx"),
+				j = s("./src/reddit/components/CompactPost/index.tsx"),
+				T = s("./src/reddit/contexts/PageLayer/index.tsx"),
+				N = s("./src/reddit/components/BannedUserList/ExpandedComponent.m.less"),
+				M = s.n(N);
 			const {
-				fbt: A
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), D = Object(P.u)({
-				currentProfileName: P.i,
-				isCommentsPage: P.x,
-				isCommentPermalink: P.w,
-				isProfilePostListing: P.K,
+				fbt: P
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), R = Object(T.u)({
+				currentProfileName: T.i,
+				isCommentsPage: T.x,
+				isCommentPermalink: T.w,
+				isProfilePostListing: T.K,
 				pageLayer: e => e
-			}), L = T.a.wrapped(N.c, "UnthreadedComment", F.a), B = T.a.div("BanReason", F.a), U = T.a.div("ExpandedComponentContainer", F.a), H = T.a.div("ModNote", F.a), W = T.a.div("ModNoteContainer", F.a), V = T.a.div("SectionTitle", F.a), z = T.a.div("ContextContainer", F.a), G = e => () => {};
-			var q = D(e => {
+			}), F = w.a.wrapped(I.c, "UnthreadedComment", M.a), A = w.a.div("BanReason", M.a), D = w.a.div("ExpandedComponentContainer", M.a), L = w.a.div("ModNote", M.a), B = w.a.div("ModNoteContainer", M.a), U = w.a.div("SectionTitle", M.a), H = w.a.div("ContextContainer", M.a), W = e => () => {};
+			var V = R(e => {
 					const {
 						currentProfileName: t,
 						isCommentPermalink: s,
@@ -1743,11 +1719,11 @@
 						pageLayer: o,
 						user: i
 					} = e;
-					return r.a.createElement(U, null, i.modNote && r.a.createElement(W, null, r.a.createElement(V, null, A._("Mod note:", null, {
+					return r.a.createElement(D, null, i.modNote && r.a.createElement(B, null, r.a.createElement(U, null, P._("Mod note:", null, {
 						hk: "2LBtSw"
-					})), r.a.createElement(H, null, i.modNote)), r.a.createElement("div", null, r.a.createElement(V, null, A._("Banned For:", null, {
+					})), r.a.createElement(L, null, i.modNote)), r.a.createElement("div", null, r.a.createElement(U, null, P._("Banned For:", null, {
 						hk: "3UbXsX"
-					})), r.a.createElement(B, null, i.reason), (i.postId || i.commentId) && r.a.createElement(z, null, i.postId && r.a.createElement(M.default, {
+					})), r.a.createElement(A, null, i.reason), (i.postId || i.commentId) && r.a.createElement(H, null, i.postId && r.a.createElement(j.default, {
 						currentProfileName: t,
 						isCommentsPage: n,
 						isCommentPermalink: s,
@@ -1757,58 +1733,44 @@
 						postId: i.postId,
 						hideModTools: !0,
 						inSubredditOrProfile: !0
-					}), i.commentId && r.a.createElement(L, {
+					}), i.commentId && r.a.createElement(F, {
 						commentId: i.commentId,
 						highlight: !1,
-						trackClick: G
+						trackClick: W
 					}))))
 				}),
-				K = s("./src/reddit/components/BannedUserList/index.m.less"),
-				X = s.n(K);
-			const Q = 48,
-				J = e => {
-					if (null == e) return a.fbt._("Permanent", null, {
-						hk: "3pNDzS"
-					}); {
-						const t = function(e) {
-							const t = m()(u, t => e >= t.ms);
-							return t ? {
-								amount: Math.floor(e / t.ms),
-								unit: t.unit
-							} : {
-								amount: 0,
-								unit: "justNow"
-							}
-						}(864e5 * e);
-						return a.fbt._({
-							"*": "{number} days left",
-							_1: "1 day left"
-						}, [a.fbt._plural(t.amount, "number")], {
-							hk: "3VM32a"
-						})
-					}
-				},
-				Y = Object(d.c)({
-					bannedUsers: I.h,
-					bannedUsersList: I.d,
-					bannedUsersListPending: I.c,
-					loadMoreToken: I.e,
-					isBanUserModalOpen: e => "ModerationPage--Modal--AddUser" === Object(w.a)(e),
-					isConfirmModalOpen: e => "ModerationPage--Modal--BanUserConfirmation" === Object(w.a)(e),
-					searchPending: I.f,
-					searchResult: I.g
+				z = s("./src/reddit/components/BannedUserList/index.m.less"),
+				G = s.n(z);
+			const q = 48,
+				K = e => null == e ? a.fbt._("Permanent", null, {
+					hk: "3pNDzS"
+				}) : a.fbt._({
+					"*": "{number} days left",
+					_1: "1 day left"
+				}, [a.fbt._plural(e, "number")], {
+					hk: "3VM32a"
 				}),
-				Z = Object(i.b)(Y, (e, {
+				X = Object(d.c)({
+					bannedUsers: S.h,
+					bannedUsersList: S.d,
+					bannedUsersListPending: S.c,
+					loadMoreToken: S.e,
+					isBanUserModalOpen: e => "ModerationPage--Modal--AddUser" === Object(y.a)(e),
+					isConfirmModalOpen: e => "ModerationPage--Modal--BanUserConfirmation" === Object(y.a)(e),
+					searchPending: S.f,
+					searchResult: S.g
+				}),
+				Q = Object(i.b)(X, (e, {
 					subredditId: t
 				}) => ({
-					loadMore: s => e(Object(h.c)(t, {
+					loadMore: s => e(Object(m.c)(t, {
 						after: s
 					})),
-					onUnbanUser: s => () => e(Object(h.e)(t, s)),
-					searchForBannedUser: s => e(Object(h.d)(t, s)),
-					toggleBanUserModal: () => e(Object(p.i)("ModerationPage--Modal--AddUser"))
+					onUnbanUser: s => () => e(Object(m.e)(t, s)),
+					searchForBannedUser: s => e(Object(m.d)(t, s)),
+					toggleBanUserModal: () => e(Object(c.i)("ModerationPage--Modal--AddUser"))
 				}));
-			class $ extends r.a.Component {
+			class J extends r.a.Component {
 				constructor(e) {
 					super(e), this.handleBanUserToggled = e => {
 						if (e) {
@@ -1821,7 +1783,7 @@
 								username: s
 							})
 						} else this.setState({
-							...O.a,
+							...k.a,
 							searchTerm: this.state.searchTerm
 						});
 						this.props.isBanUserModalOpen || this.props.sendEventWithName(e ? "edit_user" : "ban_dialog_banpage")(), this.props.toggleBanUserModal()
@@ -1835,27 +1797,27 @@
 						this.props.loadMoreToken && this.props.loadMore(this.props.loadMoreToken)
 					}, this.renderBannedUser = e => {
 						const t = this.props.bannedUsers[e] || this.props.searchResult,
-							s = J(t.duration);
-						return t ? r.a.createElement(k.b, {
+							s = K(t.duration);
+						return t ? r.a.createElement(v.b, {
 							description: t.reason,
-							expandedComponent: r.a.createElement(q, {
+							expandedComponent: r.a.createElement(V, {
 								user: t
 							}),
 							pageName: l.bc.Banned,
-							primaryButton: r.a.createElement(y.o, {
+							primaryButton: r.a.createElement(C.o, {
 								onClick: () => this.handleBanUserToggled(t),
 								"data-redditstyle": !0
 							}, a.fbt._("Edit", null, {
 								hk: "1nftDt"
 							})),
 							subredditId: this.props.subredditId,
-							timeAgo: r.a.createElement(r.a.Fragment, null, r.a.createElement(g.d, {
+							timeAgo: r.a.createElement(r.a.Fragment, null, r.a.createElement(p.d, {
 								seconds: t.bannedAtUTC
 							}), " (", s, ")"),
 							userIcon: t.accountIcon,
 							username: t.username
 						}) : r.a.createElement("div", null)
-					}, this.renderAddBannedUserModal = () => r.a.createElement(j.a, {
+					}, this.renderAddBannedUserModal = () => r.a.createElement(O.a, {
 						ignoreDefaultFocus: !0,
 						onUnbanUser: this.state.userId ? this.props.onUnbanUser(this.state.userId) : void 0,
 						subredditId: this.props.subredditId,
@@ -1864,38 +1826,38 @@
 						trackEventWithName: this.props.sendEventWithName,
 						user: this.state.userId ? this.state.searchTerm ? this.props.searchResult || null : this.props.bannedUsers[this.state.userId] : null,
 						withOverlay: !0
-					}), this.state = O.a
+					}), this.state = k.a
 				}
 				render() {
 					const {
 						props: e,
 						state: t
 					} = this, s = e.bannedUsersList.length ? e.bannedUsersList[e.bannedUsersList.length - 1].id : void 0;
-					return e.bannedUsersList.length ? r.a.createElement(r.a.Fragment, null, r.a.createElement(E.c, null, r.a.createElement(y.i, {
+					return e.bannedUsersList.length ? r.a.createElement(r.a.Fragment, null, r.a.createElement(g.c, null, r.a.createElement(C.i, {
 						onClick: this.addBannedUser,
 						"data-redditstyle": !0
 					}, a.fbt._("Ban user", null, {
 						hk: "2q7TuL"
-					}))), r.a.createElement(E.a, null, r.a.createElement(E.b, null, a.fbt._("Banned users", null, {
+					}))), r.a.createElement(g.a, null, r.a.createElement(g.b, null, a.fbt._("Banned users", null, {
 						hk: "3hvISm"
-					}), r.a.createElement(x.a, {
+					}), r.a.createElement(b.a, {
 						linkUrl: `${n.a.redditModHelpUrl}/hc/en-us/articles/360009161872`
-					})), r.a.createElement(_.b, {
+					})), r.a.createElement(E.b, {
 						onSearch: this.onSearch,
 						activeSearchQuery: this.state.searchTerm
-					}), t.searchTerm ? r.a.createElement(C.a, {
+					}), t.searchTerm ? r.a.createElement(x.a, {
 						cancelSearch: this.cancelSearch,
 						searchPending: e.searchPending,
 						searchTerm: t.searchTerm,
 						noResultsFound: !e.searchResult
-					}, e.searchResult && this.renderBannedUser(e.searchResult.id)) : r.a.createElement(v.b, {
+					}, e.searchResult && this.renderBannedUser(e.searchResult.id)) : r.a.createElement(f.b, {
 						loadMoreToken: s,
 						onLoadMore: this.onLoadMore
 					}, e.bannedUsersList.map(e => ({
-						estHeight: Q,
+						estHeight: q,
 						id: e.id,
 						render: () => this.renderBannedUser(e.id)
-					})))), e.isBanUserModalOpen && this.renderAddBannedUserModal(), e.isConfirmModalOpen && t.userId && t.username && r.a.createElement(b.a, {
+					})))), e.isBanUserModalOpen && this.renderAddBannedUserModal(), e.isConfirmModalOpen && t.userId && t.username && r.a.createElement(u.a, {
 						actionText: a.fbt._("Remove", null, {
 							hk: "3tYl0U"
 						}),
@@ -1905,26 +1867,26 @@
 						onConfirm: () => {},
 						toggleModal: e.toggleBanUserModal,
 						trackClick: e.sendEventWithName("remove")
-					})) : r.a.createElement(r.a.Fragment, null, r.a.createElement(E.c, null, r.a.createElement(y.i, {
+					})) : r.a.createElement(r.a.Fragment, null, r.a.createElement(g.c, null, r.a.createElement(C.i, {
 						onClick: this.addBannedUser,
 						"data-redditstyle": !0
 					}, " ", a.fbt._("Ban user", null, {
 						hk: "2q7TuL"
-					}))), r.a.createElement(E.a, null, r.a.createElement(E.b, null, a.fbt._("Banned users", null, {
+					}))), r.a.createElement(g.a, null, r.a.createElement(g.b, null, a.fbt._("Banned users", null, {
 						hk: "3hvISm"
-					}), r.a.createElement(x.a, {
+					}), r.a.createElement(b.a, {
 						linkUrl: `${n.a.redditModHelpUrl}/hc/en-us/articles/360009161872`
-					})), e.bannedUsersListPending ? r.a.createElement(k.a, null) : r.a.createElement(f.c, {
+					})), e.bannedUsersListPending ? r.a.createElement(v.a, null) : r.a.createElement(h.c, {
 						text: a.fbt._("No banned users in {subredditName}", [a.fbt._param("subredditName", e.subreddit.displayText)], {
 							hk: "1nOcbC"
 						})
-					}, r.a.createElement(S.a, {
+					}, r.a.createElement(_.a, {
 						name: "ban",
-						className: X.a.BanIcon
+						className: G.a.BanIcon
 					}))), e.isBanUserModalOpen && this.renderAddBannedUserModal())
 				}
 			}
-			t.a = Z($)
+			t.a = Q(J)
 		},
 		"./src/reddit/components/CallToActionButton/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -22708,4 +22670,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.becca0a1c11f1385458b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.513aaa241de6e754664f.js.map
