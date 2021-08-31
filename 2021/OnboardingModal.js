@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OnboardingModal.4ca0ab11890200b05ccc.js
-// Retrieved at 8/30/2021, 5:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OnboardingModal.82bf575e971abc21cff6.js
+// Retrieved at 8/31/2021, 4:50:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OnboardingModal"], {
 		"./node_modules/lodash/times.js": function(e, t, n) {
@@ -895,14 +895,19 @@
 				setSelectedCommunities: d,
 				setSelectedInterests: l
 			}) => {
-				const u = Object(o.useCallback)(e => {
+				const u = Object(o.useRef)(null);
+				Object(o.useEffect)(() => {
+					var e;
+					return null === (e = u.current) || void 0 === e ? void 0 : e.scroll(0, 0)
+				}, [e]);
+				const m = Object(o.useCallback)(e => {
 						const t = c[e],
 							n = {
 								...c
 							};
 						t ? delete n[e] : n[e] = !0, d(n)
 					}, [c, d]),
-					m = Object(o.useCallback)((e, n) => {
+					b = Object(o.useCallback)((e, n) => {
 						const s = {
 								...c
 							},
@@ -916,7 +921,7 @@
 						}
 						d(s)
 					}, [t, r, c, d]),
-					b = Object(o.useCallback)(e => {
+					p = Object(o.useCallback)(e => {
 						const {
 							children: t,
 							id: n
@@ -926,18 +931,19 @@
 						s ? (delete r[n], s.forEach(e => delete r[e])) : r[n] = [...(null == t ? void 0 : t.map(e => e.id)) || []], l(r)
 					}, [a, l]);
 				return i.a.createElement("div", {
-					className: Z.a.SelectedComponent
+					className: Z.a.SelectedComponent,
+					ref: u
 				}, e === J.INTERESTS && i.a.createElement(Q, {
 					interests: n,
 					selected: a,
-					toggleSelection: b
+					toggleSelection: p
 				}), e === J.COMMUNITIES && i.a.createElement(q, {
 					communitiesByTopic: t,
 					loadingCommunities: s,
 					recommendedCommunities: r,
 					selected: c,
-					toggleAll: m,
-					toggleSelection: u
+					toggleAll: b,
+					toggleSelection: m
 				}))
 			};
 			var Y = n("./src/reddit/constants/experiments.ts"),
@@ -1146,7 +1152,7 @@
 				const {
 					gqlContext: t,
 					apiContext: n
-				} = e, s = Object(c.d)(), r = Object(v.a)(), a = Object(c.e)(ve.c), d = a === Y.be.Enabled_noskip || a === Y.be.Enabled_noskip_no_preselect, m = a === Y.be.Enabled_noskip_no_preselect, [b, p] = Object(o.useState)(J.INTERESTS), [g, f] = Object(o.useState)([]), [j, h] = Object(o.useState)({}), [y, x] = Object(o.useState)(!1), [S, I] = Object(o.useState)([]), [_, E] = Object(o.useState)([]), [C, N] = Object(o.useState)({});
+				} = e, s = Object(c.d)(), r = Object(v.a)(), a = Object(c.e)(ve.b), d = a === Y.be.Enabled_noskip || a === Y.be.Enabled_noskip_no_preselect, m = a === Y.be.Enabled_noskip_no_preselect, [b, p] = Object(o.useState)(J.INTERESTS), [g, f] = Object(o.useState)([]), [j, h] = Object(o.useState)({}), [y, x] = Object(o.useState)(!1), [S, I] = Object(o.useState)([]), [_, E] = Object(o.useState)([]), [C, N] = Object(o.useState)({});
 				Object(o.useEffect)(() => {
 					!async function() {
 						const e = await Oe(t);
@@ -1779,4 +1785,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.4ca0ab11890200b05ccc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.82bf575e971abc21cff6.js.map
