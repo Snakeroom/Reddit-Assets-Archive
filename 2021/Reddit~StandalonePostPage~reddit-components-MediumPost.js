@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-MediumPost.613a26665ebef6287099.js
-// Retrieved at 8/31/2021, 4:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-MediumPost.5244996296e05c45398e.js
+// Retrieved at 8/31/2021, 6:10:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~StandalonePostPage~reddit-components-MediumPost"], {
 		"./src/lib/hooks/useTooltip.ts": function(e, t, r) {
@@ -157,13 +157,13 @@
 						thingId: r,
 						correlationId: t
 					})), n(Object(l.h)(a.a.GOLD_GILD_MODAL));
-					const f = Object(p.J)(c, {
+					const f = Object(p.G)(c, {
 						thingId: r
 					});
 					let b = null;
 					if (f) b = f.id;
 					else if (Object(o.a)(r)) {
-						const e = Object(m.I)(c, {
+						const e = Object(m.H)(c, {
 							postId: r
 						});
 						e && (b = e.belongsTo.id)
@@ -3197,7 +3197,7 @@
 				}) => {
 					const s = Object(d.c)(e),
 						a = l.find(e => e >= r),
-						i = n ? Object(c.I)(e, {
+						i = n ? Object(c.H)(e, {
 							postId: n
 						}) || Object(o.a)(e, {
 							commentId: n
@@ -3568,4 +3568,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-MediumPost.613a26665ebef6287099.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-MediumPost.5244996296e05c45398e.js.map

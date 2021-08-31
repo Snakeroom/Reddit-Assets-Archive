@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/StructuredStyles.6c66a20c4cef69011eb2.js
-// Retrieved at 8/31/2021, 4:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/StructuredStyles.78a975af58e2c5ab1d3e.js
+// Retrieved at 8/31/2021, 6:10:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["StructuredStyles"], {
 		"./node_modules/linkify-it/index.js": function(e, t, n) {
@@ -375,7 +375,7 @@
 				v = e => async (t, s) => {
 					t(p());
 					const i = s(),
-						o = Object(c.T)(i, {
+						o = Object(c.Q)(i, {
 							subredditId: e
 						}).name,
 						u = i.structuredStyles.models[e],
@@ -530,7 +530,7 @@
 					});
 					if (u.ok) {
 						const n = t(),
-							a = u.body && u.body.length ? u.body.map(e => Object(d.E)(n, e)).filter(e => !!e).reduce((e, t) => (e[t] = !0, e), {}) : {};
+							a = u.body && u.body.length ? u.body.map(e => Object(d.B)(n, e)).filter(e => !!e).reduce((e, t) => (e[t] = !0, e), {}) : {};
 						e(h({
 							subredditIds: a
 						}))
@@ -757,7 +757,7 @@
 				b = n("./src/reddit/selectors/subreddit.ts");
 			const f = (e, t) => {
 				const n = Object(g.a)(e, t),
-					a = Object(b.I)(e, t);
+					a = Object(b.F)(e, t);
 				return {
 					comment: n,
 					isModerator: !(!a || !a.name) && !!e.moderatingSubreddits[a.name],
@@ -796,7 +796,7 @@
 			}));
 			const x = (e, t) => {
 				const n = Object(g.a)(e, t),
-					a = Object(b.I)(e, t);
+					a = Object(b.F)(e, t);
 				return {
 					comment: n,
 					isModerator: !(!a || !a.name) && !!e.moderatingSubreddits[a.name],
@@ -822,7 +822,7 @@
 				}
 			}));
 			var _ = Object(s.b)(() => Object(i.c)({
-					subreddit: b.T
+					subreddit: b.Q
 				}))(e => r.a.createElement(h, {
 					className: e.className,
 					type: "communityTools",
@@ -929,7 +929,7 @@
 				})
 			};
 			var I = Object(s.b)(() => Object(i.c)({
-				subreddit: b.T
+				subreddit: b.Q
 			}))(e => r.a.createElement(h, {
 				className: e.className,
 				type: "sidebar",
@@ -942,7 +942,7 @@
 				}
 			}));
 			var w = Object(s.b)(() => Object(i.c)({
-				subredditOrProfile: (e, t) => Object(b.L)(e, {
+				subredditOrProfile: (e, t) => Object(b.I)(e, {
 					identifier: t
 				})
 			}))(e => r.a.createElement(h, {
@@ -959,7 +959,7 @@
 			var D = Object(s.b)(() => Object(i.c)({
 				subreddit: (e, {
 					subredditId: t
-				}) => t ? Object(b.T)(e, {
+				}) => t ? Object(b.Q)(e, {
 					subredditId: t
 				}) : null
 			}))(e => r.a.createElement(h, {
@@ -1217,7 +1217,7 @@
 				isImportExportThemesEnabled: Q.d.importExportThemes,
 				isStylingRestrictedDueToQuarantine: J.j,
 				moderatorPermissions: Y.l,
-				subreddit: X.T
+				subreddit: X.Q
 			});
 			class ee extends r.a.Component {
 				constructor() {
@@ -1763,7 +1763,7 @@
 						activeModalId: M.a,
 						draftStyles: (e, n) => kt()(e.structuredStyles.draft, t),
 						savedStyles: (e, t) => e.structuredStyles.models[t.subredditId],
-						subreddit: X.T,
+						subreddit: X.Q,
 						isExportPending: J.d
 					}),
 					a = Object(o.b)(n, (e, n) => ({
@@ -5003,7 +5003,7 @@
 					postFlairData: xs.d,
 					subredditName: (e, {
 						subredditId: t
-					}) => Object(X.T)(e, {
+					}) => Object(X.Q)(e, {
 						subredditId: t
 					}).name
 				})),
@@ -5108,7 +5108,7 @@
 			const Di = s.a.wrapped(Z.b, "FormElementDescription", wi.a),
 				Ti = Object(c.c)({
 					rulesWidget: re.h,
-					subreddit: X.T
+					subreddit: X.Q
 				});
 			var Oi = Object(o.b)(Ti, e => ({
 					refreshRulesWidget: (t, n) => e(Object($t.f)(t, n))
@@ -6136,7 +6136,7 @@
 					className: Object(i.a)(p.a.DropdownColorSwatch, e.isTransparent && p.a.isTransparent),
 					style: {
 						backgroundColor: e.isTransparent ? Object(m.a)(e).body : e.color,
-						fill: Object(a.f)(e.color)
+						fill: Object(a.e)(e.color)
 					}
 				}, e.isDropdownOpen ? s.a.createElement(c.a, {
 					className: p.a.ChevronUp
@@ -9141,4 +9141,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/StructuredStyles.6c66a20c4cef69011eb2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/StructuredStyles.78a975af58e2c5ab1d3e.js.map

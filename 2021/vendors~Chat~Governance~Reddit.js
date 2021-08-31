@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.8b3480f80ba9acdfbecd.js
-// Retrieved at 8/30/2021, 1:10:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.aaf52618de46c9b9550a.js
+// Retrieved at 8/31/2021, 6:10:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~Chat~Governance~Reddit"], {
 		"./node_modules/@loadable/component/dist/loadable.esm.js": function(e, t, n) {
@@ -19442,23 +19442,21 @@
 			})), n.d(t, "c", (function() {
 				return D
 			})), n.d(t, "d", (function() {
-				return z
-			})), n.d(t, "e", (function() {
 				return y
+			})), n.d(t, "e", (function() {
+				return z
 			})), n.d(t, "f", (function() {
-				return H
-			})), n.d(t, "g", (function() {
 				return E
+			})), n.d(t, "g", (function() {
+				return H
 			})), n.d(t, "h", (function() {
 				return $
 			})), n.d(t, "i", (function() {
 				return G
 			})), n.d(t, "j", (function() {
-				return Y
-			})), n.d(t, "k", (function() {
 				return R
-			})), n.d(t, "l", (function() {
-				return Z
+			})), n.d(t, "k", (function() {
+				return Y
 			}));
 			var r, o, i, s = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e) {
 					return typeof e
@@ -19993,49 +19991,40 @@
 			}
 			var D = M(U);
 
-			function F(e, t) {
-				var n = y(t),
-					r = "number" == typeof n.alpha ? n.alpha : 1;
-				return E(a({}, n, {
-					alpha: P(0, 1, (100 * r + 100 * e) / 100)
-				}))
+			function F(e) {
+				return L(e) > .179 ? "#000" : "#fff"
 			}
 			var z = M(F);
 
-			function q(e) {
-				return L(e) > .179 ? "#000" : "#fff"
-			}
-			var H = M(q);
-
-			function V(e, t) {
+			function q(e, t) {
 				return R(a({}, v(t), {
 					lightness: e
 				}))
 			}
-			var $ = M(V);
+			var H = M(q);
 
-			function W(e, t) {
+			function V(e, t) {
 				if ("number" != typeof e || e > 1 || e < -1) throw new Error("Passed an incorrect argument to shade, please pass a percentage less than or equal to 1 and larger than or equal to -1.");
 				if ("string" != typeof t) throw new Error("Passed an incorrect argument to a color function, please pass a string representation of a color.");
 				return D(e, t, "rgb(0, 0, 0)")
 			}
-			var G = M(W);
+			var $ = M(V);
 
-			function K(e, t) {
+			function W(e, t) {
 				if ("number" != typeof e || e > 1 || e < -1) throw new Error("Passed an incorrect argument to tint, please pass a percentage less than or equal to 1 and larger than or equal to -1.");
 				if ("string" != typeof t) throw new Error("Passed an incorrect argument to a color function, please pass a string representation of a color.");
 				return D(e, t, "rgb(255, 255, 255)")
 			}
-			var Y = M(K);
+			var G = M(W);
 
-			function X(e, t) {
+			function K(e, t) {
 				var n = y(t),
 					r = "number" == typeof n.alpha ? n.alpha : 1;
 				return E(a({}, n, {
 					alpha: P(0, 1, (100 * r - 100 * e) / 100)
 				}))
 			}
-			var Z = M(X)
+			var Y = M(K)
 		},
 		"./node_modules/process-nextick-args/index.js": function(e, t, n) {
 			"use strict";
@@ -34818,4 +34807,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.8b3480f80ba9acdfbecd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.aaf52618de46c9b9550a.js.map

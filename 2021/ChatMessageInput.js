@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput.ff45ed9c63bb946b3536.js
-// Retrieved at 8/18/2021, 6:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput.37ad1b087da975cb1f27.js
+// Retrieved at 8/31/2021, 6:10:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput"], {
 		"./node_modules/draft-js/dist/Draft.css": function(e, t, s) {},
@@ -592,7 +592,7 @@
 					postId: t
 				}) => Object(O.g)(e, {
 					commentsPageKey: Object(P.a)(t)
-				}), S.I, (e, {
+				}), S.H, (e, {
 					postId: t
 				}) => Object(O.u)(e, {
 					commentsPageKey: Object(P.a)(t)
@@ -655,26 +655,26 @@
 				}
 			}
 			var G = q(V),
-				W = s("./src/reddit/components/CommentsChat/MessageInput/index.m.less"),
-				H = s.n(W);
+				H = s("./src/reddit/components/CommentsChat/MessageInput/index.m.less"),
+				W = s.n(H);
 			const J = {},
 				X = 1e3,
 				Q = "chat_submission_from_rte",
-				$ = h.a.form("Form", H.a),
-				Y = h.a.wrapped(k.d, "ChatButton", H.a),
-				ee = h.a.div("CloseIconWrap", H.a),
-				te = h.a.div("Reply", H.a),
-				se = h.a.div("ReplyAuthor", H.a),
-				re = h.a.div("ReplyComment", H.a),
-				ne = h.a.wrapped(y.a, "RichTextEditor", H.a),
-				ae = h.a.wrapped(g.a, "SmallChatUserIcon", H.a),
+				$ = h.a.form("Form", W.a),
+				Y = h.a.wrapped(k.d, "ChatButton", W.a),
+				ee = h.a.div("CloseIconWrap", W.a),
+				te = h.a.div("Reply", W.a),
+				se = h.a.div("ReplyAuthor", W.a),
+				re = h.a.div("ReplyComment", W.a),
+				ne = h.a.wrapped(y.a, "RichTextEditor", W.a),
+				ae = h.a.wrapped(g.a, "SmallChatUserIcon", W.a),
 				oe = Object(d.b)(() => Object(l.c)({
 					draft: O.i,
 					errorMsgs: O.K,
 					hasError: O.v,
 					liveStreamingChatCharacterLimit: z.a,
 					pending: (e, t) => e.features.comments.submit.pending[t.draftKey],
-					post: S.I
+					post: S.H
 				}), (e, {
 					isEditing: t,
 					comment: s,
@@ -804,27 +804,27 @@
 						hk: "3yojgj"
 					}), h = i.isGildable && s && !t, p = s;
 					return u.a.createElement("div", {
-						className: Object(m.a)(H.a.FormWrapper, {
-							[H.a.LivestreamingWrapper]: s
+						className: Object(m.a)(W.a.FormWrapper, {
+							[W.a.LivestreamingWrapper]: s
 						})
 					}, !t && d && u.a.createElement(te, {
 						className: Object(m.a)({
-							[H.a.isLivestreaming]: s
+							[W.a.isLivestreaming]: s
 						})
 					}, u.a.createElement(re, {
 						onClick: this.handleCloseReply
 					}, u.a.createElement(se, null, r.fbt._("Replying to u/ {username}:", [r.fbt._param("username", d.author)], {
 						hk: "2YZre5"
 					})), u.a.createElement(x.a, {
-						className: H.a.RichTextJson,
+						className: W.a.RichTextJson,
 						key: `rich-text-${d.id}`,
 						content: Object(w.a)(d),
 						rtJsonElementProps: J
 					}), u.a.createElement(ee, null, u.a.createElement(D.a, null)))), u.a.createElement("div", {
-						className: H.a.inputLine
+						className: W.a.inputLine
 					}, u.a.createElement($, {
 						className: Object(m.a)({
-							[H.a.Editing]: t
+							[W.a.Editing]: t
 						}),
 						onSubmit: this.handleSubmit,
 						onReset: this.handleCancel
@@ -832,12 +832,12 @@
 						isEditing: !!t,
 						isLivestreaming: !!s
 					}), u.a.createElement(ne, {
-						className: Object(m.a)(H.a.RichTextEditor, {
-							[H.a.Livestreaming]: s && !t,
-							[H.a.Editing]: !s && t
+						className: Object(m.a)(W.a.RichTextEditor, {
+							[W.a.Livestreaming]: s && !t,
+							[W.a.Editing]: !s && t
 						}),
 						focusableContentRTEClassName: Object(m.a)({
-							[H.a.LivestreamingFocusableContent]: s && !t
+							[W.a.LivestreamingFocusableContent]: s && !t
 						}),
 						dataTestId: Q,
 						editorType: F.a.Comment,
@@ -851,21 +851,21 @@
 						placeholderText: l,
 						readOnly: o,
 						showSubmitButton: p,
-						submitButtonClassName: Object(m.a)(H.a.insetSubmitButton, H.a.submitButton),
+						submitButtonClassName: Object(m.a)(W.a.insetSubmitButton, W.a.submitButton),
 						submitOnEnter: !0,
 						trackToolbarClick: a.a,
 						hideToolbar: !0,
 						noBorder: !0,
 						isChatPost: !0
 					}), t && u.a.createElement(Y, {
-						className: Object(m.a)(H.a.ChatButton, {
-							[H.a.LivestreamingResetButton]: s
+						className: Object(m.a)(W.a.ChatButton, {
+							[W.a.LivestreamingResetButton]: s
 						}),
 						type: "reset"
 					}, u.a.createElement(D.a, null)), !p && u.a.createElement(Y, {
-						className: Object(m.a)(H.a.ChatButton, {
-							[H.a.LivestreamingChatButton]: s && !t,
-							[H.a.LivestreamingResetButton]: s && t
+						className: Object(m.a)(W.a.ChatButton, {
+							[W.a.LivestreamingChatButton]: s && !t,
+							[W.a.LivestreamingResetButton]: s && t
 						}),
 						type: "submit",
 						disabled: !this.canSubmit(),
@@ -873,9 +873,9 @@
 							hk: "4bL65Y"
 						})
 					}, u.a.createElement(A.a, null))), h && u.a.createElement(Y, {
-						className: Object(m.a)(H.a.ChatButton, {
-							[H.a.LivestreamingChatButton]: s,
-							[H.a.leftPad]: !p
+						className: Object(m.a)(W.a.ChatButton, {
+							[W.a.LivestreamingChatButton]: s,
+							[W.a.leftPad]: !p
 						}),
 						"aria-label": r.fbt._("give award", null, {
 							hk: "1nXRWY"
@@ -1942,4 +1942,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.ff45ed9c63bb946b3536.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.37ad1b087da975cb1f27.js.map

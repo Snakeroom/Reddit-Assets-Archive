@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.d1932fdefa8f378df5cb.js
-// Retrieved at 8/30/2021, 5:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.b7bfbc2bd3a9d7f97c23.js
+// Retrieved at 8/31/2021, 6:10:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -403,13 +403,13 @@
 						thingId: n,
 						correlationId: t
 					})), r(Object(l.h)(o.a.GOLD_GILD_MODAL));
-					const h = Object(p.J)(a, {
+					const h = Object(p.G)(a, {
 						thingId: n
 					});
 					let b = null;
 					if (h) b = h.id;
 					else if (Object(i.a)(n)) {
-						const e = Object(m.I)(a, {
+						const e = Object(m.H)(a, {
 							postId: n
 						});
 						e && (b = e.belongsTo.id)
@@ -1084,7 +1084,7 @@
 				f = n("./src/reddit/selectors/subreddit.ts");
 			const _ = (e, t) => {
 				const n = Object(b.a)(e, t),
-					r = Object(f.I)(e, t);
+					r = Object(f.F)(e, t);
 				return {
 					comment: n,
 					isModerator: !(!r || !r.name) && !!e.moderatingSubreddits[r.name],
@@ -1123,7 +1123,7 @@
 			}));
 			const g = (e, t) => {
 				const n = Object(b.a)(e, t),
-					r = Object(f.I)(e, t);
+					r = Object(f.F)(e, t);
 				return {
 					comment: n,
 					isModerator: !(!r || !r.name) && !!e.moderatingSubreddits[r.name],
@@ -1149,7 +1149,7 @@
 				}
 			}));
 			var S = Object(i.b)(() => Object(o.c)({
-					subreddit: f.T
+					subreddit: f.Q
 				}))(e => s.a.createElement(p, {
 					className: e.className,
 					type: "communityTools",
@@ -1256,7 +1256,7 @@
 				})
 			};
 			var T = Object(i.b)(() => Object(o.c)({
-				subreddit: f.T
+				subreddit: f.Q
 			}))(e => s.a.createElement(p, {
 				className: e.className,
 				type: "sidebar",
@@ -1269,7 +1269,7 @@
 				}
 			}));
 			var A = Object(i.b)(() => Object(o.c)({
-				subredditOrProfile: (e, t) => Object(f.L)(e, {
+				subredditOrProfile: (e, t) => Object(f.I)(e, {
 					identifier: t
 				})
 			}))(e => s.a.createElement(p, {
@@ -1286,7 +1286,7 @@
 			var x = Object(i.b)(() => Object(o.c)({
 				subreddit: (e, {
 					subredditId: t
-				}) => t ? Object(f.T)(e, {
+				}) => t ? Object(f.Q)(e, {
 					subredditId: t
 				}) : null
 			}))(e => s.a.createElement(p, {
@@ -1459,19 +1459,19 @@
 			class ne extends r.Component {
 				constructor(e) {
 					super(e), this.observableElement = s.a.createRef(), this.videoRef = s.a.createRef(), this.videoSessionManager = null, this.timerId = "rpan-du-active-watch-timer-id", this.handleSuccessfulPlayback = () => {
-						Object(S.Z)()
+						Object(S.W)()
 					}, this.handleUnsuccessfulPlayback = () => {
-						const e = Number(Object(S.N)());
+						const e = Number(Object(S.L)());
 						if (e) {
 							if (Date.now() - e >= J) {
-								Object(S.Z)();
+								Object(S.W)();
 								const e = 30 * l.A,
 									t = Date.now() - e + X;
 								this.props.onHideRpanUnit(t, {
 									showToast: !1
 								})
 							}
-						} else Object(S.Qb)(Date.now())
+						} else Object(S.Mb)(Date.now())
 					}, this.onResourceRemoved = () => {
 						this.subscribeStats()
 					}, this.onError = () => {
@@ -4095,4 +4095,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.d1932fdefa8f378df5cb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.b7bfbc2bd3a9d7f97c23.js.map

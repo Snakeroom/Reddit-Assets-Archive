@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.082b854367c686e4ecdf.js
-// Retrieved at 8/30/2021, 5:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.07730135e00d8128fc42.js
+// Retrieved at 8/31/2021, 6:10:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -727,7 +727,7 @@
 						comment: t
 					}) => !!Object(Oe.q)(e, t.subredditId, t.authorId).length,
 					subredditDisplayText: (e, t) => {
-						const n = Object(Ne.I)(e, {
+						const n = Object(Ne.F)(e, {
 							commentId: t.comment.id
 						});
 						return n ? n.displayText : ""
@@ -2622,7 +2622,7 @@
 					blockedRedditorsPending: rt.b,
 					chatCommentLinks: V.g,
 					isPending: V.d,
-					liveCommentsWebsocket: vn.G,
+					liveCommentsWebsocket: vn.F,
 					moreCommentsLink: V.F
 				}),
 				xn = Object(d.b)(_n, (e, t) => ({
@@ -2869,7 +2869,7 @@
 						subredditId: t,
 						userId: n
 					})),
-					f = Object(a.e)(e => Object(h.T)(e, {
+					f = Object(a.e)(e => Object(h.Q)(e, {
 						subredditId: t
 					})),
 					g = Object(a.d)(),
@@ -3579,4 +3579,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.082b854367c686e4ecdf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.07730135e00d8128fc42.js.map

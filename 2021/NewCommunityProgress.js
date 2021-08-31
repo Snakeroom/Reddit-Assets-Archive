@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NewCommunityProgress.bf5079e635f88641482f.js
-// Retrieved at 8/30/2021, 12:20:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NewCommunityProgress.7ab971995ad94eda39af.js
+// Retrieved at 8/31/2021, 6:10:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NewCommunityProgress"], {
 		"./src/lib/colors/constants.ts": function(C, e, t) {
@@ -119,7 +119,7 @@
 			})), t.d(e, "u", (function() {
 				return P
 			})), t.d(e, "s", (function() {
-				return Z
+				return I
 			}));
 			const a = "SUBREDDIT__ADD_TOP_SUBREDDIT_MODELS",
 				l = "SUBREDDIT__ADD_TOP_SUBREDDIT_RANKINGS",
@@ -146,7 +146,7 @@
 				v = "SUBREDDIT_SURVEY_DISMISS",
 				b = "SUBREDDIT_ABOUT_INFO_UPDATE__PENDING",
 				P = "SUBREDDIT_ABOUT_INFO_UPDATE__SUCCESS",
-				Z = "SUBREDDIT_ABOUT_INFO_UPDATE__FAILED"
+				I = "SUBREDDIT_ABOUT_INFO_UPDATE__FAILED"
 		},
 		"./src/reddit/actions/subreddit/questions.ts": function(C, e, t) {
 			"use strict";
@@ -300,7 +300,7 @@
 					},
 					subreddit: Object(M.subreddit)(t)
 				}),
-				Z = (C, e) => t => ({
+				I = (C, e) => t => ({
 					...Object(M.defaults)(t),
 					source: "new_community_setup",
 					action: "click",
@@ -311,7 +311,7 @@
 					},
 					subreddit: Object(M.subreddit)(t)
 				});
-			var I = t("./src/reddit/hooks/useMutation.ts"),
+			var Z = t("./src/reddit/hooks/useMutation.ts"),
 				Q = t("./src/reddit/hooks/useTracking.ts"),
 				k = t("./src/reddit/icons/svgs/svgIcons.tsx"),
 				x = t("./src/reddit/models/NewCommunityProgress/index.ts"),
@@ -1500,7 +1500,7 @@
 					preserveAspectRatio: "none"
 				}, l.a.createElement("path", {
 					style: {
-						fill: Object(T.l)(.8, e)
+						fill: Object(T.k)(.8, e)
 					},
 					d: "M 0 1 V 0 H 1 Z"
 				}))
@@ -1516,7 +1516,7 @@
 					preserveAspectRatio: "none"
 				}, l.a.createElement("path", {
 					style: {
-						fill: Object(T.l)(.8, e)
+						fill: Object(T.k)(.8, e)
 					},
 					d: "M 0 0 V 1 H 1 Z"
 				}))
@@ -1544,9 +1544,9 @@
 						v = aC[a],
 						b = v ? Object(z.b)(v) : null !== (M = tC[a]) && void 0 !== M ? M : Object(z.b)("best"),
 						P = d ? R.g : R.f,
-						Z = null !== (h = P[s]) && void 0 !== h ? h : P.downvote;
+						I = null !== (h = P[s]) && void 0 !== h ? h : P.downvote;
 
-					function I(e) {
+					function Z(e) {
 						(function(C) {
 							return "CommunityProgressShareButton" === C.__typename
 						})(e) && (Object(S.a)(`https://reddit.com${f}`), u(Object(U.f)(Object(U.e)("Copied community URL to clipboard!", K.b.SuccessCommunityGreen)))), A && o(x.b.CTA_BUTTON_CLICK), w(D(E, C, e.buttonText))
@@ -1562,16 +1562,16 @@
 					}, H && {
 						href: H
 					}, g && {
-						onClick: () => I(g)
+						onClick: () => Z(g)
 					}, {
 						rel: "noopener noreferrer",
 						target: "_blank",
 						ref: B
 					}), A ? l.a.createElement(l.a.Fragment, null, l.a.createElement(nC, {
-						color: Z,
+						color: I,
 						className: Object(r.a)(c.a.stripe, c.a.stripeUp)
 					}), l.a.createElement(AC, {
-						color: Z,
+						color: I,
 						className: Object(r.a)(c.a.stripe, c.a.stripeDown)
 					}), l.a.createElement(X.a, {
 						className: Object(r.a)(c.a.headerButton, c.a.closeButton, c.a.og),
@@ -1581,7 +1581,7 @@
 					}))), l.a.createElement("div", {
 						className: c.a.iconCircle,
 						style: {
-							backgroundColor: Z
+							backgroundColor: I
 						}
 					}, l.a.createElement(b, {
 						className: c.a.icon
@@ -1630,13 +1630,13 @@
 					}))), i.length > 0 && l.a.createElement("div", null, i.map(C => {
 						const e = lC(C, f),
 							t = A ? {
-								backgroundColor: Z,
-								borderColor: Z,
+								backgroundColor: I,
+								borderColor: I,
 								color: "white"
 							} : {},
 							a = {
 								className: c.a.button,
-								onClick: () => I(C),
+								onClick: () => Z(C),
 								style: t
 							},
 							n = !!(null == e ? void 0 : e.startsWith(j.a.redditUrl));
@@ -1807,19 +1807,19 @@
 				const f = Object(a.useRef)(null),
 					[E, M] = Object(a.useState)(!C),
 					h = Object(n.e)(O.X),
-					D = Object(n.e)(C => Object(N.Z)(C, e)),
+					D = Object(n.e)(C => Object(N.W)(C, e)),
 					j = Object(Q.a)();
 				Object(a.useEffect)(() => {
 					j(u(t, E ? "expanded_module" : "collapses_module"))
 				}, [E]);
-				const [T] = Object(I.a)(g), y = Object(n.d)();
-				const [F] = Object(I.a)(m);
-				const [R, S] = Object(a.useState)(void 0), [U] = Object(I.a)(p);
+				const [T] = Object(Z.a)(g), y = Object(n.d)();
+				const [F] = Object(Z.a)(m);
+				const [R, S] = Object(a.useState)(void 0), [U] = Object(Z.a)(p);
 				const G = Object(n.e)(H.a) === BC;
 				async function V() {
 					G && S(void 0), y(Object(i.i)(BC))
 				}
-				const [Y] = Object(I.a)(B);
+				const [Y] = Object(Z.a)(B);
 				const X = Object(a.useRef)(),
 					z = Object(a.useRef)(null),
 					K = d.findIndex(C => C.status === x.a.INITIAL || C.status === x.a.ACTIONED),
@@ -1920,7 +1920,7 @@
 								subredditId: e,
 								cardId: C
 							}
-						}), j(Z(t, C)), y(Object(s.b)(e)), G && V()
+						}), j(I(t, C)), y(Object(s.b)(e)), G && V()
 					}(R),
 					onDismissCard: () => R && async function(C) {
 						await F({
@@ -2528,4 +2528,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NewCommunityProgress.bf5079e635f88641482f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NewCommunityProgress.7ab971995ad94eda39af.js.map

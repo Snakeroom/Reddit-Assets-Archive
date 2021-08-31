@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.49e9676b30270c15651c.js
-// Retrieved at 8/31/2021, 4:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.22b796e46fe6e3921408.js
+// Retrieved at 8/31/2021, 6:10:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -912,14 +912,14 @@
 							})), r(!0), t(Object(v.f)(E))
 						}
 					}, s]
-				})(t), w = Object(p.g)(d.a.AVATAR_LISTING_BANNER, l.b), [A, I] = Object(o.useState)(w ? T.Hidden : T.Visible);
+				})(t), w = Object(p.f)(d.a.AVATAR_LISTING_BANNER, l.b), [A, I] = Object(o.useState)(w ? T.Hidden : T.Visible);
 				if (Object(o.useEffect)(() => {
 						A === T.Visible && t !== f.a.Achievements && k(Object(b.k)(y))
 					}, [t, A, k, y]), Object(o.useEffect)(() => {
 						A === T.Visible && t === f.a.Achievements && k(Object(b.i)())
 					}, [t, A, k]), A === T.Hidden) return null;
 				const L = () => {
-						I(T.Visible), Object(p.jb)(d.a.AVATAR_LISTING_BANNER, !1, l.b)
+						I(T.Visible), Object(p.gb)(d.a.AVATAR_LISTING_BANNER, !1, l.b)
 					},
 					D = () => {
 						k(Object(b.b)(y)), _(Object(c.b)({
@@ -1018,7 +1018,7 @@
 						[S.a.closeLight]: y
 					}),
 					onClick: () => {
-						I(T.Dismissed), Object(p.jb)(d.a.AVATAR_LISTING_BANNER, !0, l.b), t !== f.a.Achievements && k(Object(b.g)(y)), t === f.a.Achievements && k(Object(b.f)())
+						I(T.Dismissed), Object(p.gb)(d.a.AVATAR_LISTING_BANNER, !0, l.b), t !== f.a.Achievements && k(Object(b.g)(y)), t === f.a.Achievements && k(Object(b.f)())
 					}
 				}), i.a.createElement("div", {
 					className: S.a.contentWrapper
@@ -1032,7 +1032,7 @@
 					className: S.a.copyTextDescription
 				}, B)), i.a.createElement(u.h, {
 					onClick: () => {
-						Object(p.jb)(d.a.AVATAR_LISTING_BANNER, !0, l.b), t === f.a.Achievements ? O() : D()
+						Object(p.gb)(d.a.AVATAR_LISTING_BANNER, !0, l.b), t === f.a.Achievements ? O() : D()
 					},
 					className: S.a.continueButton,
 					disabled: !!C
@@ -1498,13 +1498,13 @@
 					}
 				}
 				async getSubredditForAdoption() {
-					let e = oe.cachedData || Object(Q.B)(G.b.SUBREDDITS_FOR_ADOPTION_STORE) || null;
+					let e = oe.cachedData || Object(Q.A)(G.b.SUBREDDITS_FOR_ADOPTION_STORE) || null;
 					if (!e || Date.now() - e.fetchedAt > se) {
 						const t = await Z(this.props.apiContext());
 						t.ok && (e = {
 							subreddits: t.body.data.subreddits.map(e => e.name),
 							fetchedAt: Date.now()
-						}, Object(Q.Fb)(G.b.SUBREDDITS_FOR_ADOPTION_STORE, e))
+						}, Object(Q.Cb)(G.b.SUBREDDITS_FOR_ADOPTION_STORE, e))
 					}
 					return oe.cachedData = e, e ? e.subreddits : []
 				}
@@ -1584,7 +1584,7 @@
 			var xe = fe(_e),
 				ve = n("./src/reddit/selectors/posts.ts");
 			const ke = Object(u.c)({
-				recentPosts: ve.R
+				recentPosts: ve.Q
 			});
 			var je = Object(d.b)(ke, (e, t) => ({
 					openLightbox: t => () => e(Object(pe.a)(t.permalink))
@@ -1902,10 +1902,10 @@
 					},
 					bffsLeaderboardVariant: Ue,
 					inRpanTopVideoEntrypointExperiment: Ge.e,
-					rankings: e => Object(Je.O)(e, Ze),
+					rankings: e => Object(Je.L)(e, Ze),
 					shouldShowTopicsWidget: e => {
 						const t = Object(Ge.e)(e),
-							n = !!Object(Je.O)(e, Ze);
+							n = !!Object(Je.L)(e, Ze);
 						return (!t || !n) && (!Object(He.b)(e) && function(e) {
 							return Object(Me.c)(e, {
 								experimentEligibilitySelector: Ke.K,
@@ -2107,11 +2107,11 @@
 				h = n("./src/reddit/selectors/subreddit.ts"),
 				g = n("./src/reddit/components/MiniPost/index.m.less"),
 				f = n.n(g);
-			const y = Object(a.a)(e => e, b.I, b.d, (e, t, n) => {
+			const y = Object(a.a)(e => e, b.H, b.d, (e, t, n) => {
 					return {
 						crosspost: n,
 						post: t,
-						subredditOrProfile: Object(h.L)(e, {
+						subredditOrProfile: Object(h.I)(e, {
 							identifier: t.belongsTo
 						})
 					}
@@ -2585,7 +2585,7 @@
 						const t = this.resolve(e);
 						return !1 !== this.resolved[t] && !!n.m[t]
 					},
-					importAsync: () => Promise.all([n.e("CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08"), n.e("ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8"), n.e("CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86"), n.e("CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255"), n.e("reddit-components-SidebarNativeAd")]).then(n.bind(null, "./src/reddit/components/SidebarNativeAd/index.tsx")),
+					importAsync: () => Promise.all([n.e("CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~MembershipPaywa~c24a8af4"), n.e("ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8"), n.e("CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab"), n.e("CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255"), n.e("reddit-components-SidebarNativeAd")]).then(n.bind(null, "./src/reddit/components/SidebarNativeAd/index.tsx")),
 					requireAsync(e) {
 						const t = this.resolve(e);
 						return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
@@ -2803,7 +2803,7 @@
 				d = n("./src/reddit/selectors/platform.ts"),
 				l = n("./src/reddit/selectors/posts.ts");
 			const u = Object(i.c)({
-					postCount: l.N,
+					postCount: l.M,
 					previousPageIsOverlay: d.n,
 					tabBadged: e => e.tabBadged
 				}),
@@ -3800,7 +3800,7 @@
 						background: m(t)
 					}
 				},
-				b = e => Object(s.l)(.2, e),
+				b = e => Object(s.k)(.2, e),
 				h = e => e && e.postBackgroundColor ? {
 					backgroundColor: b(e.postBackgroundColor)
 				} : u,
@@ -4645,7 +4645,7 @@
 					let s;
 					if (-1 === [o.R, "r/popular"].indexOf(t)) {
 						const r = t.replace(/^r\//, ""),
-							o = Object(i.E)(e, r),
+							o = Object(i.B)(e, r),
 							a = n.subreddit[o];
 						if (!a) return !1;
 						s = a
@@ -5031,4 +5031,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.49e9676b30270c15651c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.22b796e46fe6e3921408.js.map

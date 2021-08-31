@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.fe53122148c75e5cd402.js
-// Retrieved at 8/30/2021, 5:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.3410c3d67edb839ce30d.js
+// Retrieved at 8/31/2021, 6:10:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SubredditContent-PredictionsContent"], {
 		"./node_modules/uuid/index.js": function(t, e, n) {
@@ -38,9 +38,9 @@
 		"./src/reddit/actions/economics/predictions/index.ts": function(t, e, n) {
 			"use strict";
 			n.d(e, "e", (function() {
-				return E
-			})), n.d(e, "j", (function() {
 				return C
+			})), n.d(e, "j", (function() {
+				return E
 			})), n.d(e, "n", (function() {
 				return T
 			})), n.d(e, "m", (function() {
@@ -106,8 +106,8 @@
 				k = Object(u.a)(y.i),
 				_ = Object(u.a)(y.l),
 				w = Object(u.a)(y.h),
-				E = Object(u.a)(y.b),
-				C = (t, e, n, o) => async (r, i, {
+				C = Object(u.a)(y.b),
+				E = (t, e, n, o) => async (r, i, {
 					gqlContext: d
 				}) => {
 					const c = Object(x.K)(i()),
@@ -171,7 +171,7 @@
 					gqlContext: o
 				}) => {
 					const r = n(),
-						i = Object(v.E)(r, t),
+						i = Object(v.B)(r, t),
 						d = Object(g.j)(r, {
 							subredditId: i
 						}),
@@ -330,7 +330,7 @@
 						const n = await Object(l.c)(r(), {
 							postId: t
 						});
-						e(E({
+						e(C({
 							postId: t,
 							prediction: n
 						}));
@@ -354,7 +354,7 @@
 						postId: t,
 						...e
 					});
-					return n(E({
+					return n(C({
 						postId: t,
 						prediction: i
 					})), i
@@ -488,8 +488,8 @@
 					[P, g] = Object(r.useState)(!1),
 					[y, I] = Object(r.useState)(!1),
 					[k, _] = Object(r.useState)(!1),
-					[w, E] = Object(r.useState)(null),
-					C = Object(d.e)(e => Object(f.b)(e, {
+					[w, C] = Object(r.useState)(null),
+					E = Object(d.e)(e => Object(f.b)(e, {
 						subredditId: t.id
 					})),
 					T = Object(d.e)(e => Object(f.j)(e, {
@@ -503,12 +503,12 @@
 				}, [n]), Object(r.useEffect)(() => {
 					e(Object(a.k)(t.name))
 				}, [e, t.name]), Object(r.useEffect)(() => {
-					C && (h(C.name), E(x - C.name.length))
-				}, [C]);
+					E && (h(E.name), C(x - E.name.length))
+				}, [E]);
 				const L = Object(r.useCallback)(() => {
 						n(Object(p.c)()), _(!0)
 					}, [n]),
-					N = !!j && ((null == C ? void 0 : C.name) !== j && j.length > 3);
+					N = !!j && ((null == E ? void 0 : E.name) !== j && j.length > 3);
 				return i.a.createElement("div", {
 					className: v.a.predictionsContent
 				}, i.a.createElement("h1", {
@@ -527,14 +527,14 @@
 				})), i.a.createElement("input", {
 					name: "tournament-name",
 					className: v.a.input,
-					disabled: !C || T,
+					disabled: !E || T,
 					type: "text",
 					value: j,
 					onChange: t => {
 						const {
 							value: e
 						} = t.target;
-						e.length <= x && (h(e), E(x - e.length))
+						e.length <= x && (h(e), C(x - e.length))
 					},
 					placeholder: o.fbt._("/r/{subredditName} tournament", [o.fbt._param("subredditName", t.name)], {
 						hk: "bN9XA"
@@ -543,19 +543,19 @@
 					className: Object(c.a)(v.a.remainingCharacters, {
 						[v.a.maxCharacters]: (null == j ? void 0 : j.length) === x
 					})
-				}, C && C.name !== j && null !== w ? o.fbt._({
+				}, E && E.name !== j && null !== w ? o.fbt._({
 					"*": "{remaining characters} characters remaining",
 					_1: "1 character remaining"
 				}, [o.fbt._plural(w, "remaining characters")], {
 					hk: "1dBRgv"
 				}) : i.a.createElement(i.a.Fragment, null, " ")), i.a.createElement(u.i, {
 					className: v.a.button,
-					disabled: !j || !C || T || !N,
+					disabled: !j || !E || T || !N,
 					onClick: async () => {
-						if (!C || !j) return null;
+						if (!E || !j) return null;
 						n(Object(p.i)()), g(!0);
 						try {
-							await e(Object(a.s)(C.tournamentId, t.id, j))
+							await e(Object(a.s)(E.tournamentId, t.id, j))
 						} catch (r) {
 							e(Object(s.f)({
 								kind: m.b.Error,
@@ -580,7 +580,7 @@
 					hk: "2AgZtm"
 				})), i.a.createElement(u.i, {
 					className: v.a.button,
-					disabled: !C || !S || T,
+					disabled: !E || !S || T,
 					onClick: L
 				}, o.fbt._("End", null, {
 					hk: "HWN7f"
@@ -590,10 +590,10 @@
 						_(!1)
 					},
 					onConfirm: async () => {
-						if (!C || !S) return null;
+						if (!E || !S) return null;
 						I(!0);
 						try {
-							await e(Object(a.l)(C.tournamentId))
+							await e(Object(a.l)(E.tournamentId))
 						} catch (t) {
 							e(Object(s.f)({
 								kind: m.b.Error,
@@ -630,9 +630,9 @@
 			})), n.d(e, "h", (function() {
 				return w
 			})), n.d(e, "i", (function() {
-				return E
-			})), n.d(e, "d", (function() {
 				return C
+			})), n.d(e, "d", (function() {
+				return E
 			})), n.d(e, "c", (function() {
 				return T
 			})), n.d(e, "e", (function() {
@@ -736,10 +736,10 @@
 				}), w = (t, e) => Object(o.a)(t, {
 					...l,
 					variables: e
-				}), E = (t, e) => Object(o.a)(t, {
+				}), C = (t, e) => Object(o.a)(t, {
 					...p,
 					variables: e
-				}), C = async (t, e) => {
+				}), E = async (t, e) => {
 					const n = await Object(o.a)(t, {
 						...c,
 						variables: {
@@ -821,9 +821,9 @@
 			})), n.d(e, "j", (function() {
 				return w
 			})), n.d(e, "h", (function() {
-				return E
-			})), n.d(e, "f", (function() {
 				return C
+			})), n.d(e, "f", (function() {
+				return E
 			}));
 			var o = n("./src/reddit/models/Prediction/index.ts"),
 				r = n("./src/reddit/selectors/telemetry.ts");
@@ -1015,13 +1015,13 @@
 					action: "click",
 					noun: "start_tournament"
 				}),
-				E = () => t => ({
+				C = () => t => ({
 					...Object(r.defaults)(t),
 					source: "menu_links_bar",
 					action: "click",
 					noun: "predictions_tab"
 				}),
-				C = t => e => ({
+				E = t => e => ({
 					...Object(r.defaults)(e),
 					source: "predictions",
 					action: "click",
@@ -1125,4 +1125,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.fe53122148c75e5cd402.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.3410c3d67edb839ce30d.js.map

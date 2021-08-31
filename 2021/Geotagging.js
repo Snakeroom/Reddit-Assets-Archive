@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Geotagging.b4fef52895596c27557c.js
-// Retrieved at 8/30/2021, 3:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Geotagging.c0e9e0bf18b310f83da5.js
+// Retrieved at 8/31/2021, 6:10:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Geotagging"], {
 		"./node_modules/p-debounce/index.js": function(e, t, s) {
@@ -960,8 +960,8 @@
 				j = s.n(O);
 			const C = Object(h.c)({
 				isLoggedIn: k.K,
-				subreddit: v.T,
-				subredditAboutInfo: v.v
+				subreddit: v.Q,
+				subredditAboutInfo: v.s
 			});
 			class N extends r.a.Component {
 				constructor() {
@@ -974,7 +974,7 @@
 						} = this.props;
 						if (!s) return;
 						const r = Object(y.i)(s, n);
-						t(Object(u.u)(e, r))
+						t(Object(u.p)(e, r))
 					}
 				}
 				render() {
@@ -1052,16 +1052,16 @@
 			})), R = {
 				enabled: !0,
 				id: "xd_103",
-				layout: m.d.Large,
-				surface: m.e.Topic,
-				unitName: m.j,
-				unitType: m.f.SubredditListing,
+				layout: m.c.Large,
+				surface: m.d.Topic,
+				unitName: m.i,
+				unitType: m.e.SubredditListing,
 				url: ""
 			};
 			class M extends r.a.Component {
 				constructor() {
 					super(...arguments), this.onSeeMoreCommunities = () => {
-						this.props.onSeeMoreCommunities && (this.props.sendEvent(Object(u.G)(R)), this.props.onSeeMoreCommunities())
+						this.props.onSeeMoreCommunities && (this.props.sendEvent(Object(u.z)(R)), this.props.onSeeMoreCommunities())
 					}
 				}
 				render() {
@@ -1265,7 +1265,7 @@
 				i = s("./src/reddit/actions/subscription/index.ts"),
 				a = s("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(n.b)(() => Object(r.c)({
-				userIsSubscriber: a.fb
+				userIsSubscriber: a.cb
 			}), (e, {
 				identifier: t
 			}) => ({
@@ -1624,8 +1624,8 @@
 			} = s("./node_modules/fbt/lib/FbtPublic.js");
 
 			function Y(e) {
-				const t = Object(b.B)(Z) || [];
-				t.push(e), Object(b.Fb)(Z, t)
+				const t = Object(b.A)(Z) || [];
+				t.push(e), Object(b.Cb)(Z, t)
 			}
 
 			function V(e) {
@@ -1735,7 +1735,7 @@
 									id: "ChIJIQBpAG2ahYAR_6128GcTUEo"
 								})
 							});
-							const s = Object(b.B)(Z) || [];
+							const s = Object(b.A)(Z) || [];
 							a((t.data.geoContributableSubreddits || []).filter(e => !s.includes(e.id)))
 						}).catch(e => {
 							console.error(e), t(!0)
@@ -1815,4 +1815,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.b4fef52895596c27557c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.c0e9e0bf18b310f83da5.js.map

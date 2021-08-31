@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/UserFlair.9c130c76c3f8c62e2a09.js
-// Retrieved at 8/30/2021, 5:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/UserFlair.95fc02343aa60694ae29.js
+// Retrieved at 8/31/2021, 6:10:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["UserFlair"], {
 		"./src/reddit/actions/authorFlair.ts": function(e, t, r) {
@@ -120,9 +120,9 @@
 			})), r.d(t, "deleteUserFlairTemplate", (function() {
 				return G
 			})), r.d(t, "reorderUserFlairTemplates", (function() {
-				return H
+				return Q
 			})), r.d(t, "userFlairLoadedAndModalOpened", (function() {
-				return W
+				return H
 			}));
 			var n = r("./node_modules/fbt/lib/FbtPublic.js"),
 				s = r("./src/lib/makeActionCreator/index.ts"),
@@ -182,7 +182,7 @@
 							displaySettings: T
 						};
 					i(n === E ? h(R) : y(R));
-					const f = Object(_.T)(u, {
+					const f = Object(_.Q)(u, {
 							subredditId: s
 						}),
 						O = t && e ? Object(o.g)(e) : void 0;
@@ -191,7 +191,7 @@
 					apiContext: s
 				}) => {
 					const i = n(),
-						d = Object(_.T)(i, {
+						d = Object(_.Q)(i, {
 							subredditId: e
 						}).name;
 					r(O());
@@ -207,7 +207,7 @@
 					apiContext: s
 				}) => {
 					const i = n(),
-						d = Object(_.T)(i, {
+						d = Object(_.Q)(i, {
 							subredditId: e
 						}).name;
 					r(U());
@@ -223,7 +223,7 @@
 					apiContext: i
 				}) => {
 					const d = s(),
-						c = Object(_.T)(d, {
+						c = Object(_.Q)(d, {
 							subredditId: t
 						}).name;
 					r(j());
@@ -253,7 +253,7 @@
 					apiContext: i
 				}) => {
 					const d = s(),
-						c = Object(_.T)(d, {
+						c = Object(_.Q)(d, {
 							subredditId: t
 						}).name;
 					if (r(C()), (await Object(a.b)(i(), e, c)).ok) {
@@ -274,11 +274,11 @@
 						}), G(e, t));
 						r(Object(u.f)(s))
 					}
-				}, H = (e, t) => async (r, s, {
+				}, Q = (e, t) => async (r, s, {
 					apiContext: i
 				}) => {
 					const d = s(),
-						c = Object(_.T)(d, {
+						c = Object(_.Q)(d, {
 							subredditId: t
 						}).name,
 						o = Object(b.d)(d, {
@@ -302,17 +302,17 @@
 							hk: "3gAbwk"
 						}), E.b.Error, n.fbt._("Retry", null, {
 							hk: "2nPnNw"
-						}), H(e, t));
+						}), Q(e, t));
 						r(Object(u.f)(s))
 					}
-				}, W = (e, t) => async (r, s, {
+				}, H = (e, t) => async (r, s, {
 					apiContext: i
 				}) => {
 					var o;
 					const l = s(),
 						S = null === (o = l.features) || void 0 === o ? void 0 : o.userFlair;
 					if (S && S[e] && S[e].displaySettings.isEnabled && d()(S[e].templateIds)) {
-						const s = Object(_.T)(l, {
+						const s = Object(_.Q)(l, {
 								subredditId: e
 							}).name,
 							d = await Object(a.d)(i(), s);
@@ -334,4 +334,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UserFlair.9c130c76c3f8c62e2a09.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UserFlair.95fc02343aa60694ae29.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostDraft.97fddec49ab47e5c5b87.js
-// Retrieved at 8/30/2021, 5:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostDraft.af99d81be5056ba37e9e.js
+// Retrieved at 8/31/2021, 6:10:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostDraft"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -468,7 +468,7 @@
 				}) => {
 					if ((await E(i(), e, t)).ok) {
 						const i = r(),
-							a = Object(S.I)(i, {
+							a = Object(S.H)(i, {
 								postId: t
 							}),
 							c = a && a.title || "",
@@ -485,7 +485,7 @@
 									collectionId: e
 								}),
 								s = n && n.postIds && n.postIds[u] || "",
-								i = Object(S.I)(t, {
+								i = Object(S.H)(t, {
 									postId: s
 								});
 							i && i.permalink && o(Object(w.a)(i.permalink))
@@ -518,7 +518,7 @@
 							collectionId: e,
 							postId: t
 						}));
-						const o = Object(S.I)(i, {
+						const o = Object(S.H)(i, {
 								postId: t
 							}),
 							r = Object(O.q)(i, {
@@ -591,7 +591,7 @@
 						}))
 					}
 					return a
-				}, Y = Object(i.a)(a.l), X = Object(i.a)(a.m), K = Object(i.a)(a.k), q = e => async (t, n) => {
+				}, Y = Object(i.a)(a.l), K = Object(i.a)(a.m), X = Object(i.a)(a.k), q = e => async (t, n) => {
 					const s = n().platform.currentPage.locationState;
 					t(!(!s || !s[c.a.IsOverlay]) ? Object(w.a)(e.permalink) : Object(o.b)(Object(k.b)(e.permalink)))
 				}, Z = Object(i.a)(a.i), Q = Object(i.a)(a.j), $ = Object(i.a)(a.h), ee = Object(i.a)(a.p), te = Object(i.a)(a.o), ne = Object(i.a)(a.q), se = e => async t => {
@@ -631,7 +631,7 @@
 						n(Y());
 						const i = await y(r(), e, t);
 						let a = !1;
-						if (i.ok) n(X({
+						if (i.ok) n(K({
 							collectionId: e,
 							newDescription: t
 						})), n(Object(d.f)({
@@ -642,7 +642,7 @@
 						})), a = !0;
 						else {
 							const e = i.error;
-							n(K(e)), n(Object(d.f)({
+							n(X(e)), n(Object(d.f)({
 								kind: j.b.Error,
 								text: s.fbt._("Something went wrong. Just don't panic.", null, {
 									hk: "4Ck6Cm"
@@ -981,10 +981,10 @@
 						style: t
 					}, e.children)
 				},
-				P = Object(i.b)(() => Object(d.a)(_.H, y.db, (e, {
+				P = Object(i.b)(() => Object(d.a)(_.G, y.db, (e, {
 					isSponsored: t,
 					postId: n
-				}) => t && n ? Object(_.b)(e, n) : null, E.a, v.actionInfo, _.I, (e, t, n, s, o, r) => ({
+				}) => t && n ? Object(_.b)(e, n) : null, E.a, v.actionInfo, _.H, (e, t, n, s, o, r) => ({
 					postPermalink: e,
 					shouldOpenPostInNewTab: t,
 					basePixelMetadata: n,
@@ -1611,7 +1611,7 @@
 					const n = Object(b.r)(e, {
 						pageLayer: t
 					});
-					return n && Object(E.S)(e, {
+					return n && Object(E.P)(e, {
 						subredditId: n.id
 					})
 				}, e => (e || []).filter(e => I.has(e.kind))),
@@ -1714,8 +1714,8 @@
 						},
 						style: {
 							...e.style,
-							"--RawHTMLDisplay-tr-even": Object(s.g)(Object(u.a)(e).body, .8),
-							"--RawHTMLDisplay-tr-odd": Object(s.g)(Object(u.a)(e).line, .8)
+							"--RawHTMLDisplay-tr-even": Object(s.f)(Object(u.a)(e).body, .8),
+							"--RawHTMLDisplay-tr-odd": Object(s.f)(Object(u.a)(e).line, .8)
 						}
 					})
 				}, "StyledRawHTMLDisplay", p.a);
@@ -3268,7 +3268,7 @@
 				fbt: O
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), S = ["right", "bottom"], I = ["right", "top"];
 			var T = Object(a.b)(() => Object(d.c)({
-					post: x.I
+					post: x.H
 				}), (e, t) => ({
 					onRemovePostFromCollection: () => e(Object(f.g)(t.collectionId, t.postId))
 				}))(e => {
@@ -4111,7 +4111,7 @@
 					discoveryUnit: {
 						id: "xd_100",
 						name: s.SUBREDDIT_HOVERCARD,
-						type: c.f.Listing,
+						type: c.e.Listing,
 						title: s.SUBREDDIT_HOVERCARD
 					}
 				}),
@@ -4130,7 +4130,7 @@
 							subredditName: s,
 							[o]: n.id
 						},
-						c = Object(l.z)(e, {
+						c = Object(l.w)(e, {
 							subredditName: s
 						});
 					return c ? {
@@ -4738,7 +4738,7 @@
 				m = (e, {
 					subredditName: t
 				}) => {
-					const n = Object(i.X)(e, {
+					const n = Object(i.U)(e, {
 						subredditName: t
 					});
 					return (n && n.postIds || []).slice(0, 2)
@@ -4746,4 +4746,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.97fddec49ab47e5c5b87.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.af99d81be5056ba37e9e.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.f3117de79e48d3482f22.js
-// Retrieved at 8/30/2021, 5:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.e9e0d1a76bbda93a6c26.js
+// Retrieved at 8/31/2021, 6:10:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8"], {
 		"./src/reddit/actions/economics/subredditPremium/actionCreators.ts": function(e, t, r) {
@@ -1496,7 +1496,7 @@
 				f = r("./src/reddit/selectors/subreddit.ts");
 			const w = (e, t) => {
 				const r = Object(b.a)(e, t),
-					s = Object(f.I)(e, t);
+					s = Object(f.F)(e, t);
 				return {
 					comment: r,
 					isModerator: !(!s || !s.name) && !!e.moderatingSubreddits[s.name],
@@ -1535,7 +1535,7 @@
 			}));
 			const v = (e, t) => {
 				const r = Object(b.a)(e, t),
-					s = Object(f.I)(e, t);
+					s = Object(f.F)(e, t);
 				return {
 					comment: r,
 					isModerator: !(!s || !s.name) && !!e.moderatingSubreddits[s.name],
@@ -1561,7 +1561,7 @@
 				}
 			}));
 			var x = Object(n.b)(() => Object(o.c)({
-					subreddit: f.T
+					subreddit: f.Q
 				}))(e => a.a.createElement(p, {
 					className: e.className,
 					type: "communityTools",
@@ -1668,7 +1668,7 @@
 				})
 			};
 			var T = Object(n.b)(() => Object(o.c)({
-				subreddit: f.T
+				subreddit: f.Q
 			}))(e => a.a.createElement(p, {
 				className: e.className,
 				type: "sidebar",
@@ -1681,7 +1681,7 @@
 				}
 			}));
 			var C = Object(n.b)(() => Object(o.c)({
-				subredditOrProfile: (e, t) => Object(f.L)(e, {
+				subredditOrProfile: (e, t) => Object(f.I)(e, {
 					identifier: t
 				})
 			}))(e => a.a.createElement(p, {
@@ -1698,7 +1698,7 @@
 			var I = Object(n.b)(() => Object(o.c)({
 				subreddit: (e, {
 					subredditId: t
-				}) => t ? Object(f.T)(e, {
+				}) => t ? Object(f.Q)(e, {
 					subredditId: t
 				}) : null
 			}))(e => a.a.createElement(p, {
@@ -3056,4 +3056,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.f3117de79e48d3482f22.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.e9e0d1a76bbda93a6c26.js.map

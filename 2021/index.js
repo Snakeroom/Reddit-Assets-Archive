@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index.e68e4236ba887882219a.js
-// Retrieved at 8/30/2021, 5:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index.75c19c833f76b830cd08.js
+// Retrieved at 8/31/2021, 6:10:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index"], {
 		"./src/reddit/components/Econ/Prediction/TournamentPostBody/PredictionContainer/index.m.less": function(e, t, n) {
@@ -80,7 +80,7 @@
 				isLastPrediction: n
 			}) => {
 				const o = Object(T.a)(),
-					s = Object(u.e)(e => Object(g.T)(e, {
+					s = Object(u.e)(e => Object(g.Q)(e, {
 						subredditId: t
 					}));
 				return i.a.createElement(x.a, {
@@ -129,7 +129,7 @@
 						selectOption: N,
 						predict: U,
 						cancelAction: F,
-						hideAnimation: K
+						hideAnimation: Q
 					} = function(e, t, n) {
 						const o = Object(u.d)(),
 							s = Object(u.e)(b.e),
@@ -204,7 +204,7 @@
 						}
 					}(t, e, s),
 					{
-						options: Q,
+						options: K,
 						userSelection: H
 					} = l || {},
 					{
@@ -216,7 +216,7 @@
 					} = e,
 					Y = R < Date.now(),
 					$ = W === m.b.Cancelled || W === m.b.CancelInProgress,
-					X = null != Q ? Q : J;
+					X = null != K ? K : J;
 				return i.a.createElement(i.a.Fragment, null, i.a.createElement("div", {
 					className: Object(d.a)(M.a.poll, {
 						[M.a.nightMode]: a
@@ -227,7 +227,7 @@
 					endsAt: R,
 					key: `prediction-option-${e.id}`,
 					isShowingVoteAnimation: j && H === e.id,
-					onAnimationEnd: K
+					onAnimationEnd: Q
 				}, i.a.createElement(v.a, {
 					disabled: j,
 					isCancelled: $,
@@ -268,16 +268,16 @@
 				}))
 			};
 			var F = n("./src/reddit/helpers/predictions/index.ts");
-			var K = n("./src/reddit/selectors/posts.ts"),
-				Q = n("./src/reddit/components/Econ/Prediction/TournamentPostBody/ViewTournamentLink/index.m.less"),
-				H = n.n(Q);
+			var Q = n("./src/reddit/selectors/posts.ts"),
+				K = n("./src/reddit/components/Econ/Prediction/TournamentPostBody/ViewTournamentLink/index.m.less"),
+				H = n.n(K);
 			const {
 				fbt: R
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), G = ({
 				postId: e
 			}) => {
 				const t = Object(T.a)(),
-					n = Object(u.e)(t => Object(K.V)(t, {
+					n = Object(u.e)(t => Object(Q.U)(t, {
 						postId: e
 					}));
 				return i.a.createElement(x.a, {
@@ -355,4 +355,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.e68e4236ba887882219a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.75c19c833f76b830cd08.js.map

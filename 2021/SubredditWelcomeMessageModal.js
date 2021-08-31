@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWelcomeMessageModal.67f0dd53d3d7069896bf.js
-// Retrieved at 8/31/2021, 4:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWelcomeMessageModal.62740354e3490c1897e2.js
+// Retrieved at 8/31/2021, 6:10:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWelcomeMessageModal"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -487,10 +487,10 @@
 						style: t
 					}, e.children)
 				},
-				N = Object(o.b)(() => Object(d.a)(y.H, _.db, (e, {
+				N = Object(o.b)(() => Object(d.a)(y.G, _.db, (e, {
 					isSponsored: t,
 					postId: s
-				}) => t && s ? Object(y.b)(e, s) : null, v.a, E.actionInfo, y.I, (e, t, s, n, r, i) => ({
+				}) => t && s ? Object(y.b)(e, s) : null, v.a, E.actionInfo, y.H, (e, t, s, n, r, i) => ({
 					postPermalink: e,
 					shouldOpenPostInNewTab: t,
 					basePixelMetadata: s,
@@ -893,8 +893,8 @@
 						},
 						style: {
 							...e.style,
-							"--RawHTMLDisplay-tr-even": Object(n.g)(Object(u.a)(e).body, .8),
-							"--RawHTMLDisplay-tr-odd": Object(n.g)(Object(u.a)(e).line, .8)
+							"--RawHTMLDisplay-tr-even": Object(n.f)(Object(u.a)(e).body, .8),
+							"--RawHTMLDisplay-tr-odd": Object(n.f)(Object(u.a)(e).line, .8)
 						}
 					})
 				}, "StyledRawHTMLDisplay", p.a);
@@ -2362,7 +2362,7 @@
 					discoveryUnit: {
 						id: "xd_100",
 						name: n.SUBREDDIT_HOVERCARD,
-						type: c.f.Listing,
+						type: c.e.Listing,
 						title: n.SUBREDDIT_HOVERCARD
 					}
 				}),
@@ -2381,7 +2381,7 @@
 							subredditName: n,
 							[r]: s.id
 						},
-						c = Object(l.z)(e, {
+						c = Object(l.w)(e, {
 							subredditName: n
 						});
 					return c ? {
@@ -2579,7 +2579,7 @@
 				m = (e, {
 					subredditName: t
 				}) => {
-					const s = Object(o.X)(e, {
+					const s = Object(o.U)(e, {
 						subredditName: t
 					});
 					return (s && s.postIds || []).slice(0, 2)
@@ -2587,4 +2587,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWelcomeMessageModal.67f0dd53d3d7069896bf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWelcomeMessageModal.62740354e3490c1897e2.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.f9d4d87e9159856a2f85.js
-// Retrieved at 8/30/2021, 5:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.228b191b6ae131be9cb0.js
+// Retrieved at 8/31/2021, 6:10:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileFollowersPage", "ProfileFollowersAction"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -431,8 +431,8 @@
 						return e
 				}
 			};
-			const Z = {};
-			var Q = (e = Z, t) => {
+			const Q = {};
+			var Z = (e = Q, t) => {
 					switch (t.type) {
 						case k.f: {
 							const {
@@ -459,7 +459,7 @@
 				},
 				Y = Object(T.c)({
 					error: G,
-					pending: Q
+					pending: Z
 				}),
 				X = s("./src/reddit/actions/profileConversations.ts");
 			const J = {};
@@ -1044,7 +1044,7 @@
 					result: z
 				});
 			const G = {};
-			var Z = (e = G, t) => {
+			var Q = (e = G, t) => {
 					switch (t.type) {
 						case E.n: {
 							const {
@@ -1081,18 +1081,18 @@
 							return e
 					}
 				},
-				Q = Object(j.c)({
+				Z = Object(j.c)({
 					api: P,
 					fetchedTokens: F,
 					inContext: L,
 					loadMore: A,
 					models: W,
 					search: q,
-					userOrder: Z
+					userOrder: Q
 				});
 			Object(S.a)({
 				features: {
-					banned: Q
+					banned: Z
 				}
 			});
 			const Y = Object(o.a)(E.o),
@@ -1209,10 +1209,10 @@
 				}, de = (e, t) => async (s, r) => {
 					const n = r();
 					await Promise.all([(async () => {
-						if (!Object(w.b)(u.a.BAN_USER)(n) && !Object(_.Q)(n, {
+						if (!Object(w.b)(u.a.BAN_USER)(n) && !Object(_.N)(n, {
 								subredditId: e
 							})) {
-							const t = Object(_.T)(n, {
+							const t = Object(_.Q)(n, {
 								subredditId: e
 							});
 							await s(Object(l.o)(t.name))
@@ -1432,8 +1432,8 @@
 				z = s("./src/reddit/icons/fonts/index.tsx"),
 				q = s("./src/reddit/models/ModeratingSubreddits/index.ts"),
 				G = s("./src/reddit/selectors/bannedUser.ts"),
-				Z = s("./src/reddit/components/Hovercards/AuthorHovercard/ModActions.m.less"),
-				Q = s.n(Z);
+				Q = s("./src/reddit/components/Hovercards/AuthorHovercard/ModActions.m.less"),
+				Z = s.n(Q);
 			const {
 				fbt: Y
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), X = Object(o.c)({
@@ -1471,7 +1471,7 @@
 					}, n.a.createElement(z.a, {
 						name: "ban",
 						isFilled: !0,
-						className: Q.a.icon
+						className: Z.a.icon
 					}), Y._("Unban User", null, {
 						hk: "1aASyW"
 					})) : n.a.createElement(V.a, {
@@ -1481,7 +1481,7 @@
 						}
 					}, n.a.createElement(z.a, {
 						name: "ban",
-						className: Q.a.icon
+						className: Z.a.icon
 					}), Y._("Ban User", null, {
 						hk: "3OhuLx"
 					})), s && n.a.createElement(V.a, {
@@ -1491,7 +1491,7 @@
 						}
 					}, n.a.createElement(z.a, {
 						name: "mod_mute",
-						className: Q.a.icon
+						className: Z.a.icon
 					}), Y._("Mute User", null, {
 						hk: "3MCujH"
 					})))
@@ -1534,7 +1534,7 @@
 					}
 				}, n.a.createElement(z.a, {
 					name: "tag",
-					className: Q.a.icon
+					className: Z.a.icon
 				}), te._("Edit user flair", null, {
 					hk: "4mTxM"
 				}))),
@@ -1786,7 +1786,7 @@
 					}) => t ? Object(v.d)(e, {
 						subredditId: t
 					}) : void 0,
-					userIsBanned: (e, t) => !!Object(h.m)(t) && Object(h.eb)(e, t),
+					userIsBanned: (e, t) => !!Object(h.m)(t) && Object(h.bb)(e, t),
 					userProfileStyles: (e, t) => Object(p.m)(e, Object(m.m)(e, t.userName)),
 					acceptChats: (e, t) => {
 						const s = Object(m.h)(e, {
@@ -2112,7 +2112,7 @@
 				f = s("./src/reddit/selectors/subreddit.ts");
 			const v = (e, t) => {
 				const s = Object(b.a)(e, t),
-					r = Object(f.I)(e, t);
+					r = Object(f.F)(e, t);
 				return {
 					comment: s,
 					isModerator: !(!r || !r.name) && !!e.moderatingSubreddits[r.name],
@@ -2151,7 +2151,7 @@
 			}));
 			const x = (e, t) => {
 				const s = Object(b.a)(e, t),
-					r = Object(f.I)(e, t);
+					r = Object(f.F)(e, t);
 				return {
 					comment: s,
 					isModerator: !(!r || !r.name) && !!e.moderatingSubreddits[r.name],
@@ -2177,7 +2177,7 @@
 				}
 			}));
 			var C = Object(i.b)(() => Object(o.c)({
-					subreddit: f.T
+					subreddit: f.Q
 				}))(e => n.a.createElement(p, {
 					className: e.className,
 					type: "communityTools",
@@ -2284,7 +2284,7 @@
 				})
 			};
 			var E = Object(i.b)(() => Object(o.c)({
-				subreddit: f.T
+				subreddit: f.Q
 			}))(e => n.a.createElement(p, {
 				className: e.className,
 				type: "sidebar",
@@ -2297,7 +2297,7 @@
 				}
 			}));
 			var S = Object(i.b)(() => Object(o.c)({
-				subredditOrProfile: (e, t) => Object(f.L)(e, {
+				subredditOrProfile: (e, t) => Object(f.I)(e, {
 					identifier: t
 				})
 			}))(e => n.a.createElement(p, {
@@ -2314,7 +2314,7 @@
 			var j = Object(i.b)(() => Object(o.c)({
 				subreddit: (e, {
 					subredditId: t
-				}) => t ? Object(f.T)(e, {
+				}) => t ? Object(f.Q)(e, {
 					subredditId: t
 				}) : null
 			}))(e => n.a.createElement(p, {
@@ -2989,7 +2989,7 @@
 		"./src/reddit/components/Scroller/Simple.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return Z
+				return Q
 			}));
 			var r = s("./node_modules/lodash/debounce.js"),
 				n = s.n(r),
@@ -3171,11 +3171,11 @@
 				q = Object(c.b)(z),
 				G = {};
 
-			function Z(e) {
+			function Q(e) {
 				return e === document
 			}
 
-			function Q(e) {
+			function Z(e) {
 				let t = 0;
 				do {
 					t += e.offsetTop || 0, e = e.offsetParent
@@ -3332,7 +3332,7 @@
 						this.fpsMeter && this.fpsMeter.eventHandler(e);
 						for (const t in this.hiddenChildren) this.remeasureWhenShown[t] = !0;
 						this.measurementsInvalid = !0, this.callOnScrollForItemsChanged()
-					}, this.getTotalOffsetTop = () => this.containerRef ? Q(this.containerRef) : 0, this.handleContentContainerResize = n()(() => {
+					}, this.getTotalOffsetTop = () => this.containerRef ? Z(this.containerRef) : 0, this.handleContentContainerResize = n()(() => {
 						this.pendingResizeHandlerRead || (this.pendingResizeHandlerRead = h.a.read(() => {
 							const e = this.getTotalOffsetTop();
 							e !== this.containerOffsetTop && (this.containerOffsetTop = e, this.handleResize()), this.pendingResizeHandlerRead = null
@@ -3568,7 +3568,7 @@
 					return this.props.children.map(e => e.id).join("-")
 				}
 				getScrollTop() {
-					return this.scrollContainer ? Z(this.scrollContainer) ? Object(N.a)() : this.scrollContainer.scrollTop : 0
+					return this.scrollContainer ? Q(this.scrollContainer) ? Object(N.a)() : this.scrollContainer.scrollTop : 0
 				}
 				updateViewportInfo() {
 					if (this.scrollContainer) {
@@ -3647,7 +3647,7 @@
 					if (!this.containerRef) return !1;
 					const {
 						viewportTopPadding: e = 0
-					} = this.props, t = Q(this.containerRef);
+					} = this.props, t = Z(this.containerRef);
 					return this.getScrollTop() + e - t > 0
 				}
 				render() {
@@ -3920,7 +3920,7 @@
 			const v = Object(a.c)({
 					currentUser: h.k,
 					moderated: m.n,
-					subscriptions: p.f,
+					subscriptions: p.e,
 					hasMoreModerated: m.d,
 					loadMorePending: m.a
 				}),
@@ -5197,7 +5197,7 @@
 				i = s("./src/reddit/actions/subscription/index.ts"),
 				o = s("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(r.b)(() => Object(n.c)({
-				userIsSubscriber: o.fb
+				userIsSubscriber: o.cb
 			}), (e, {
 				identifier: t
 			}) => ({
@@ -6875,4 +6875,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.f9d4d87e9159856a2f85.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.228b191b6ae131be9cb0.js.map

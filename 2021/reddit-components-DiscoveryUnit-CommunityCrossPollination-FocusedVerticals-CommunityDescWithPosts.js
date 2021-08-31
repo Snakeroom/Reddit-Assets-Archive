@@ -1,17 +1,11 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.9124df0b6a306a251a54.js
-// Retrieved at 8/30/2021, 3:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.549ddc2e20f546d7a1aa.js
+// Retrieved at 8/31/2021, 6:10:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
 			"use strict";
-			s.d(t, "c", (function() {
+			s.d(t, "a", (function() {
 				return a
-			})), s.d(t, "a", (function() {
-				return u
-			})), s.d(t, "b", (function() {
-				return l
-			})), s.d(t, "d", (function() {
-				return b
 			}));
 			var n = s("./node_modules/react/index.js"),
 				r = s.n(n),
@@ -157,7 +151,7 @@
 			class C extends r.a.Component {
 				constructor(e) {
 					super(e), this.hasFiredViewEvent = !1, this.getLocalStorageDisabled = () => !0, this.setLocalStorageDisabled = () => void 0, this.trackViewEvent = () => {
-						this.hasFiredViewEvent || (this.props.sendEvent(Object(b.s)(this.props.listingKey, this.props.interactedSubredditId, this.props.listingPosition)), this.hasFiredViewEvent = !0)
+						this.hasFiredViewEvent || (this.props.sendEvent(Object(b.n)(this.props.listingKey, this.props.interactedSubredditId, this.props.listingPosition)), this.hasFiredViewEvent = !0)
 					}, this.onHideComponent = () => {
 						const {
 							hideComponent: e,
@@ -165,15 +159,15 @@
 							listingKey: s,
 							listingPosition: n
 						} = this.props;
-						this.setLocalStorageDisabled(), e(), this.props.sendEvent(Object(b.o)(s, t, n))
+						this.setLocalStorageDisabled(), e(), this.props.sendEvent(Object(b.j)(s, t, n))
 					}, this.onSubredditClick = () => {
 						const {
 							interactedSubredditId: e,
 							listingKey: t,
 							listingPosition: s
 						} = this.props;
-						this.props.sendEvent(Object(b.j)(t, e, s))
-					}, this.getLocalStorageDisabled = Object(l.S)(), this.setLocalStorageDisabled = Object(l.tb)()
+						this.props.sendEvent(Object(b.e)(t, e, s))
+					}, this.getLocalStorageDisabled = Object(l.Q)(), this.setLocalStorageDisabled = Object(l.qb)()
 				}
 				componentDidMount() {
 					const {
@@ -229,22 +223,22 @@
 				S = s("./src/reddit/actions/post.ts"),
 				y = s("./src/reddit/components/ClassicPost/Thumbnail.tsx"),
 				O = s("./src/reddit/components/Collection/PostAndPostEventMeta/index.tsx"),
-				f = s("./src/reddit/components/PostContainer/index.tsx"),
-				I = s("./src/reddit/components/SubredditNameLink/index.tsx"),
+				I = s("./src/reddit/components/PostContainer/index.tsx"),
+				f = s("./src/reddit/components/SubredditNameLink/index.tsx"),
 				g = s("./src/reddit/components/SubscribeButton/Inline.tsx"),
-				j = s("./src/reddit/constants/posts.ts"),
-				k = s("./src/reddit/selectors/posts.ts"),
+				k = s("./src/reddit/constants/posts.ts"),
+				j = s("./src/reddit/selectors/posts.ts"),
 				P = s("./src/reddit/components/DiscoveryUnit/CommunityCrossPollination/PostItem/index.m.less"),
-				T = s.n(P);
-			const N = e => `${e}--FocusedVerticalRecommendationItem`,
+				N = s.n(P);
+			const T = e => `${e}--FocusedVerticalRecommendationItem`,
 				D = Object(o.c)({
-					post: k.I,
-					subreddit: k.V
+					post: j.H,
+					subreddit: j.U
 				});
 			class B extends r.a.Component {
 				constructor() {
 					super(...arguments), this.hasFiredViewEvent = !1, this.trackViewEvent = () => {
-						this.props.post && !this.hasFiredViewEvent && (this.props.sendEvent(Object(b.m)(this.props.listingKey, this.props.postId, this.props.position)), this.hasFiredViewEvent = !0)
+						this.props.post && !this.hasFiredViewEvent && (this.props.sendEvent(Object(b.h)(this.props.listingKey, this.props.postId, this.props.position)), this.hasFiredViewEvent = !0)
 					}, this.onPostClick = () => {
 						const {
 							listingKey: e,
@@ -254,7 +248,7 @@
 							sendEvent: r,
 							position: i
 						} = this.props;
-						t(s), r(Object(b.k)(e, n, i))
+						t(s), r(Object(b.f)(e, n, i))
 					}, this.onSubredditNameClick = () => {
 						const {
 							listingKey: e,
@@ -263,7 +257,7 @@
 							subreddit: n,
 							position: r
 						} = this.props;
-						n && s(Object(b.l)(e, t, n.id, r))
+						n && s(Object(b.g)(e, t, n.id, r))
 					}, this.getSubscribeEventFactory = e => {
 						const {
 							listingKey: t,
@@ -271,7 +265,7 @@
 							postId: n,
 							position: r
 						} = this.props;
-						return e ? Object(b.q)(t, s && s.id || "", r, n) : Object(b.p)(t, s && s.id || "", r, n)
+						return e ? Object(b.l)(t, s && s.id || "", r, n) : Object(b.k)(t, s && s.id || "", r, n)
 					}
 				}
 				componentDidMount() {
@@ -291,58 +285,58 @@
 						shouldShowBiggerJoin: n,
 						subreddit: i
 					} = this.props;
-					return e ? r.a.createElement(f.a, {
-						className: Object(c.a)(T.a.postContainer, {
-							[T.a.hideBottomBorder]: t
+					return e ? r.a.createElement(I.a, {
+						className: Object(c.a)(N.a.postContainer, {
+							[N.a.hideBottomBorder]: t
 						}),
-						makePostContainerId: N,
+						makePostContainerId: T,
 						post: e,
 						onClick: this.onPostClick
 					}, r.a.createElement("div", {
-						className: T.a.postContent
+						className: N.a.postContent
 					}, r.a.createElement(y.a, {
-						classNameInnerThumbnail: T.a.thumbnailOverride,
+						classNameInnerThumbnail: N.a.thumbnailOverride,
 						post: e
 					}), r.a.createElement("div", {
-						className: T.a.postBodyWrapper
+						className: N.a.postBodyWrapper
 					}, !s && i && r.a.createElement("div", {
-						className: Object(c.a)(T.a.subredditContainer)
-					}, r.a.createElement(I.a, {
-						className: T.a.subredditLink,
+						className: Object(c.a)(N.a.subredditContainer)
+					}, r.a.createElement(f.a, {
+						className: N.a.subredditLink,
 						to: i.url,
 						onClick: this.onSubredditNameClick
 					}, i.displayText), n ? r.a.createElement("div", {
-						className: T.a.subredditSubscribeLargeButton
+						className: N.a.subredditSubscribeLargeButton
 					}, r.a.createElement(g.a, {
 						identifier: {
 							name: i.name,
-							type: j.a.SUBREDDIT
+							type: k.a.SUBREDDIT
 						},
 						postId: e.id,
 						shouldReverseColor: !0,
 						getEventFactory: this.getSubscribeEventFactory
 					})) : r.a.createElement(g.a, {
-						className: T.a.subredditSubscribeButton,
+						className: N.a.subredditSubscribeButton,
 						getEventFactory: this.getSubscribeEventFactory,
 						doNotHideOtherSubscribeButtons: !0,
 						identifier: {
 							name: i.name,
-							type: j.a.SUBREDDIT
+							type: k.a.SUBREDDIT
 						},
 						postId: e.id,
 						small: !0
 					})), r.a.createElement("div", {
-						className: Object(c.a)(T.a.postBody, {
-							[T.a.isFirst]: s || !i
+						className: Object(c.a)(N.a.postBody, {
+							[N.a.isFirst]: s || !i
 						}),
 						"data-click-id": "body"
 					}, r.a.createElement("div", {
-						className: T.a.postTitle,
+						className: N.a.postTitle,
 						style: {
 							WebkitBoxOrient: "vertical"
 						}
 					}, e.title)), r.a.createElement("div", {
-						className: T.a.bottomline
+						className: N.a.bottomline
 					}, r.a.createElement(O.b, {
 						post: e
 					}))))) : null
@@ -493,10 +487,10 @@
 			const {
 				fbt: y
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), O = Object(c.c)({
-				subreddit: C.T,
-				subredditAboutInfo: C.w
-			}), f = Object(i.b)(O);
-			class I extends r.a.Component {
+				subreddit: C.Q,
+				subredditAboutInfo: C.t
+			}), I = Object(i.b)(O);
+			class f extends r.a.Component {
 				constructor() {
 					super(...arguments), this.hasFiredViewEvent = !1, this.trackViewEvent = () => {
 						const {
@@ -507,7 +501,7 @@
 							position: r,
 							sendEvent: i
 						} = this.props;
-						e && t && !this.hasFiredViewEvent && (i(Object(v.r)(s, n, r)), this.hasFiredViewEvent = !0)
+						e && t && !this.hasFiredViewEvent && (i(Object(v.m)(s, n, r)), this.hasFiredViewEvent = !0)
 					}, this.onSubredditClick = () => {
 						const {
 							listingKey: e,
@@ -516,7 +510,7 @@
 							subredditId: n,
 							position: r
 						} = this.props;
-						s(t ? Object(x.c)(n) : Object(v.n)(e, n, r))
+						s(t ? Object(x.c)(n) : Object(v.i)(e, n, r))
 					}, this.getSubscribeEventFactory = e => {
 						const {
 							listingKey: t,
@@ -524,7 +518,7 @@
 							subredditId: n,
 							position: r
 						} = this.props;
-						return e ? s ? Object(x.e)(n) : Object(v.q)(t, n, r) : s ? Object(x.d)(n) : Object(v.p)(t, n, r)
+						return e ? s ? Object(x.e)(n) : Object(v.l)(t, n, r) : s ? Object(x.d)(n) : Object(v.k)(t, n, r)
 					}
 				}
 				componentDidMount() {
@@ -602,7 +596,7 @@
 					}, c))))
 				}
 			}
-			t.a = f(Object(m.c)(I))
+			t.a = I(Object(m.c)(f))
 		},
 		"./src/reddit/components/EventPost/PostEventMeta/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -649,7 +643,7 @@
 				S = E.a.wrapped(l, "CalendarIcon", h.a),
 				y = E.a.wrapped(b, "LiveIcon", h.a),
 				O = E.a.div("LoadingState", h.a);
-			class f extends n.Component {
+			class I extends n.Component {
 				constructor(e) {
 					super(e), this.state = {
 						mounted: !1
@@ -698,7 +692,7 @@
 					}, l)
 				}
 			}
-			t.a = f
+			t.a = I
 		},
 		"./src/reddit/components/PostContainer/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -747,25 +741,20 @@
 				_ = s("./src/reddit/components/PostContainer/index.m.less"),
 				S = s.n(_);
 			const y = Object(p.a)(() => Object(i.c)({
-					basePixelMetadata: Object(x.a)((e, {
-						post: t
-					}) => Object(h.b)(e, t.id)),
-					clickTrackingId: (e, {
-						post: t
-					}) => t.id,
-					imageGalleryCurrentItem: (e, {
-						post: t
-					}) => Object(h.i)(e, {
-						postId: t.id
-					}),
-					pageType: e => Object(E.actionInfo)(e).pageType
-				})),
-				O = e => {
-					const t = Object(C.d)(e.target, e.currentTarget),
-						s = Object(C.b)(e.target, e.currentTarget, C.a.buttons);
-					return "subreddit" !== t && s
-				};
-			class f extends r.a.Component {
+				basePixelMetadata: Object(x.a)((e, {
+					post: t
+				}) => Object(h.b)(e, t.id)),
+				clickTrackingId: (e, {
+					post: t
+				}) => t.id,
+				imageGalleryCurrentItem: (e, {
+					post: t
+				}) => Object(h.i)(e, {
+					postId: t.id
+				}),
+				pageType: e => Object(E.actionInfo)(e).pageType
+			}));
+			class O extends r.a.Component {
 				constructor() {
 					super(...arguments), this.cancelClick = !1
 				}
@@ -779,27 +768,26 @@
 						makePostContainerId: a,
 						post: u,
 						onClick: b,
-						onPostContentClick: p,
-						pageType: h,
-						sendEvent: E,
-						style: x,
-						ref: C,
-						shouldAddGalleryViewability: _ = !0
-					} = this.props, y = r.a.createElement("div", {
+						pageType: p,
+						sendEvent: h,
+						style: E,
+						ref: x,
+						shouldAddGalleryViewability: C = !0
+					} = this.props, _ = r.a.createElement("div", {
 						"data-click-id": this.props["data-click-id"],
-						style: x,
-						ref: C,
+						style: E,
+						ref: x,
 						onMouseUp: e => {
 							0 !== window.getSelection().toString().length && (this.cancelClick = !0, window.setTimeout(() => {
 								this.cancelClick = !1
 							}, 1e3))
 						},
 						onClick: s => {
-							if (!this.cancelClick && s.button < 2 && (e(() => b && b(s, u, t, i, h))(s), p && O(s) && p(s, u)), u.id && i) {
+							if (!this.cancelClick && s.button < 2 && e(() => b && b(s, u, t, i, p))(s), u.id && i) {
 								const {
 									source: e
 								} = Object(o.t)(u, i);
-								e && e.outboundUrl && E(Object(d.c)(u.id, e.outboundUrl))
+								e && e.outboundUrl && h(Object(d.c)(u.id, e.outboundUrl))
 							}
 						},
 						className: Object(v.a)(S.a.WrappedPost, n, `Post ${u.id}`, {
@@ -808,16 +796,16 @@
 						"data-testid": "post-container",
 						id: a ? a(u.id) : u.id,
 						tabIndex: -1
-					}, s), f = !!u.media && u.media.type === m.o.VIDEO;
-					return u.isSponsored || f ? r.a.createElement(c.a, {
+					}, s), y = !!u.media && u.media.type === m.o.VIDEO;
+					return u.isSponsored || y ? r.a.createElement(c.a, {
 						post: u,
 						trackDisplay: !0
-					}, y) : u.media && Object(m.E)(u.media) && _ ? r.a.createElement(l, {
+					}, _) : u.media && Object(m.E)(u.media) && C ? r.a.createElement(l, {
 						postId: u.id
-					}, y) : y
+					}, _) : _
 				}
 			}
-			t.a = y(Object(C.c)(Object(b.c)(f)))
+			t.a = y(Object(C.a)(Object(b.c)(O)))
 		},
 		"./src/reddit/components/SubscribeButton/Inline.m.less": function(e, t, s) {
 			e.exports = {
@@ -997,7 +985,7 @@
 				i = s("./src/reddit/actions/subscription/index.ts"),
 				o = s("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(n.b)(() => Object(r.c)({
-				userIsSubscriber: o.fb
+				userIsSubscriber: o.cb
 			}), (e, {
 				identifier: t
 			}) => ({
@@ -1171,7 +1159,7 @@
 					discoveryUnit: {
 						id: "xd_100",
 						name: n.SUBREDDIT_HOVERCARD,
-						type: a.f.Listing,
+						type: a.e.Listing,
 						title: n.SUBREDDIT_HOVERCARD
 					}
 				}),
@@ -1190,7 +1178,7 @@
 							subredditName: n,
 							[r]: s.id
 						},
-						a = Object(u.z)(e, {
+						a = Object(u.w)(e, {
 							subredditName: n
 						});
 					return a ? {
@@ -1272,4 +1260,4 @@
 		"./src/reddit/icons/fonts/commonStyles.m.less": function(e, t, s) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.9124df0b6a306a251a54.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.549ddc2e20f546d7a1aa.js.map

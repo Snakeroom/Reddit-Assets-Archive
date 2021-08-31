@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.436fd8a837cfadc564c0.js
-// Retrieved at 8/30/2021, 5:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.f937792620d0212920cf.js
+// Retrieved at 8/31/2021, 6:10:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsMarketingModal"], {
 		"./src/reddit/components/Econ/Common/BenefitTile/index.m.less": function(e, t, s) {
@@ -85,7 +85,7 @@
 				const n = Object(r.e)(e => Object(d.j)(e, {
 						subredditId: t
 					})),
-					u = Object(r.e)(e => Object(m.T)(e, {
+					u = Object(r.e)(e => Object(m.Q)(e, {
 						subredditId: t
 					})),
 					h = Object(r.e)(e => Object(d.l)(e, {
@@ -370,7 +370,7 @@
 				},
 				subreddit: (e, t) => {
 					const s = Object(h.n)(e, t);
-					return s ? Object(j.T)(e, {
+					return s ? Object(j.Q)(e, {
 						subredditId: s
 					}) : null
 				}
@@ -392,7 +392,7 @@
 				});
 				const M = () => c(Object(d.g)(b.a.ECON_POWERUPS_MARKETING)),
 					I = () => {
-						Object(E.Ib)(b.a.ECON_POWERUPS_MARKETING, !0), c(j ? Object(l.g)(t) : Object(d.h)(b.a.ECON_POWERUPS_PURCHASE))
+						Object(E.Fb)(b.a.ECON_POWERUPS_MARKETING, !0), c(j ? Object(l.g)(t) : Object(d.h)(b.a.ECON_POWERUPS_PURCHASE))
 					};
 				if (!t || !a || !s) return M(), null;
 				const y = k ? F._("Support the whole community", null, {
@@ -592,4 +592,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.436fd8a837cfadc564c0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.f937792620d0212920cf.js.map

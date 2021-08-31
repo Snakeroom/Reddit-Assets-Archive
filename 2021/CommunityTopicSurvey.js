@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.21e4f6019747513d9436.js
-// Retrieved at 8/30/2021, 5:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.26ff5bba312df99ccb8a.js
+// Retrieved at 8/31/2021, 6:10:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityTopicSurvey"], {
 		"./node_modules/react-uid/dist/es2015/hooks.js": function(e, t, n) {
@@ -175,7 +175,7 @@
 					source: "community_tagging",
 					action: "view",
 					noun: "verify_topics_module",
-					subreddit: Object(m.T)(n, {
+					subreddit: Object(m.Q)(n, {
 						subredditId: t
 					}),
 					raterTag: b(e)
@@ -184,7 +184,7 @@
 					source: "community_tagging",
 					action: "click",
 					noun: "select_answer",
-					subreddit: Object(m.T)(r, {
+					subreddit: Object(m.Q)(r, {
 						subredditId: n
 					}),
 					raterTag: b(e, t)
@@ -193,7 +193,7 @@
 					source: "community_tagging",
 					action: "click",
 					noun: "submit",
-					subreddit: Object(m.T)(r, {
+					subreddit: Object(m.Q)(r, {
 						subredditId: n
 					}),
 					raterTag: b(e, t)
@@ -202,7 +202,7 @@
 					source: "community_tagging",
 					action: "click",
 					noun: "close",
-					subreddit: Object(m.T)(n, {
+					subreddit: Object(m.Q)(n, {
 						subredditId: t
 					}),
 					raterTag: b(e)
@@ -1017,7 +1017,7 @@
 					discoveryUnit: {
 						id: "xd_100",
 						name: r.SUBREDDIT_HOVERCARD,
-						type: u.f.Listing,
+						type: u.e.Listing,
 						title: r.SUBREDDIT_HOVERCARD
 					}
 				}),
@@ -1036,7 +1036,7 @@
 							subredditName: r,
 							[s]: n.id
 						},
-						u = Object(a.z)(e, {
+						u = Object(a.w)(e, {
 							subredditName: r
 						});
 					return u ? {
@@ -1199,7 +1199,7 @@
 				m = (e, {
 					subredditName: t
 				}) => {
-					const n = Object(i.X)(e, {
+					const n = Object(i.U)(e, {
 						subredditName: t
 					});
 					return (n && n.postIds || []).slice(0, 2)
@@ -1210,4 +1210,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.21e4f6019747513d9436.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.26ff5bba312df99ccb8a.js.map

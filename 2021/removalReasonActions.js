@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/removalReasonActions.4649439fdb3b5c2d421e.js
-// Retrieved at 8/30/2021, 5:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/removalReasonActions.46ce22095bd83c124626.js
+// Retrieved at 8/31/2021, 6:10:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["removalReasonActions"], {
 		"./src/lib/makeCommentPermalink/index.ts": function(e, t, n) {
@@ -230,7 +230,7 @@
 							commentsPageKey: t,
 							draftKey: n
 						}));
-						const r = Object(W.I)(f(), {
+						const r = Object(W.H)(f(), {
 							postId: e
 						});
 						u(Object(m.z)(r, O.a.CommentSubmitted))
@@ -578,7 +578,7 @@
 								commentId: e,
 								followState: t
 							})).ok) {
-							Object(M.ub)(null !== (m = null === (a = null === (i = r().pages) || void 0 === i ? void 0 : i.comments) || void 0 === a ? void 0 : a.followed) && void 0 !== m ? m : [], null === (u = r().user.account) || void 0 === u ? void 0 : u.id);
+							Object(M.rb)(null !== (m = null === (a = null === (i = r().pages) || void 0 === i ? void 0 : i.comments) || void 0 === a ? void 0 : a.followed) && void 0 !== m ? m : [], null === (u = r().user.account) || void 0 === u ? void 0 : u.id);
 							const e = c ? s.fbt._("Followed! You’ll receive updates when there’s new activity", null, {
 								hk: "1Dp5UH"
 							}) : s.fbt._("Unfollowed, You’ll no longer recieve updates on this comment", null, {
@@ -1233,7 +1233,7 @@
 						})
 					})))
 				}, j = e => async (t, n) => {
-					const r = Object(d.m)();
+					const r = Object(d.l)();
 					if (r >= 3) return;
 					const c = n().user.prefs.useMarkdown ? a.h.MARKDOWN : a.h.RICH_TEXT;
 					if (e === c) return;
@@ -1251,7 +1251,7 @@
 						}),
 						kind: u.b.SuccessCommunity,
 						text: i
-					})), Object(d.rb)(r + 1)
+					})), Object(d.ob)(r + 1)
 				}
 		},
 		"./src/reddit/actions/presence.ts": function(e, t, n) {
@@ -3015,7 +3015,7 @@
 					const n = Object(b.a)(e, {
 						commentId: t
 					});
-					return n ? Object(c.a)(Object(m.H)(e, n), t) : ""
+					return n ? Object(c.a)(Object(m.G)(e, n), t) : ""
 				},
 				L = (e, {
 					commentId: t
@@ -3109,7 +3109,7 @@
 				X = e => e.features.comments.visitHighlightFilter,
 				Y = (e, t) => {
 					const n = Object(b.a)(e, t);
-					if (n) return Object(u.Y)(e, n)
+					if (n) return Object(u.V)(e, n)
 				},
 				Z = (e, {
 					commentId: t
@@ -3194,4 +3194,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.4649439fdb3b5c2d421e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.46ce22095bd83c124626.js.map

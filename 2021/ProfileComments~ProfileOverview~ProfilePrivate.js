@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.89549d66c2d52ae78290.js
-// Retrieved at 8/30/2021, 5:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.8e15fa42d412c9e9e74b.js
+// Retrieved at 8/31/2021, 6:10:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments~ProfileOverview~ProfilePrivate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -576,9 +576,9 @@
 				A = s("./src/reddit/helpers/styles/mixins/index.tsx"),
 				F = s("./src/reddit/hooks/usePrevious.ts"),
 				B = s("./src/reddit/helpers/styles/mixins/index.m.less"),
-				D = s.n(B),
-				W = s("./src/reddit/components/ClassicPost/index.m.less"),
-				U = s.n(W);
+				W = s.n(B),
+				D = s("./src/reddit/components/ClassicPost/index.m.less"),
+				U = s.n(D);
 
 			function V() {
 				return (V = Object.assign || function(e) {
@@ -598,7 +598,7 @@
 						isExpanded: M,
 						inSubredditOrProfile: N,
 						eventFactory: B,
-						first: W,
+						first: D,
 						flairStyleTemplate: z,
 						formatTitle: q,
 						hostPostData: K,
@@ -656,7 +656,7 @@
 							source: Ne
 						} = Me,
 						Le = n.a.createElement(g.a, {
-							className: Object(i.a)(D.a.classicPostStyles, U.a.postContainer, Object(A.a)(e), W ? U.a.mFirst : void 0, t),
+							className: Object(i.a)(W.a.classicPostStyles, U.a.postContainer, Object(A.a)(e), D ? U.a.mFirst : void 0, t),
 							isOverlay: Z,
 							style: {
 								...Object(A.d)(e),
@@ -818,7 +818,7 @@
 					}, t)
 				}
 			}
-			t.a = l(Object(d.c)(m))
+			t.a = l(Object(d.a)(m))
 		},
 		"./src/reddit/components/Comments/Comment/ProfileCommentFlatlist/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -951,8 +951,8 @@
 				A = s("./src/reddit/components/ConfirmUserActionModal/index.tsx"),
 				F = s("./src/reddit/components/DistinguishCommentDropdown/index.tsx"),
 				B = s("./src/reddit/components/ModActionsMenu/index.tsx"),
-				D = s("./src/reddit/components/ModModeReports/helpers.ts"),
-				W = s("./src/reddit/components/ViewReportsDropdown/Loader.ts"),
+				W = s("./src/reddit/components/ModModeReports/helpers.ts"),
+				D = s("./src/reddit/components/ViewReportsDropdown/Loader.ts"),
 				U = s("./src/reddit/contexts/InsideOverlay.tsx"),
 				V = s("./src/reddit/contexts/PageLayer/index.tsx"),
 				z = s("./src/reddit/helpers/correlationIdTracker.ts"),
@@ -1015,12 +1015,12 @@
 					modModeEnabled: V.S,
 					postIsLocked: (e, {
 						comment: t
-					}) => Object(Z.D)(e, {
+					}) => Object(Z.C)(e, {
 						postId: t.postId
 					}),
 					postPermalink: (e, {
 						comment: t
-					}) => Object(Z.H)(e, {
+					}) => Object(Z.G)(e, {
 						postId: t.postId
 					}),
 					reportFlowIsOpen: (e, {
@@ -1032,7 +1032,7 @@
 					subreddit: V.r,
 					subredditOrProfile: (e, {
 						comment: t
-					}) => Object(Z.V)(e, {
+					}) => Object(Z.U)(e, {
 						postId: t.postId
 					}),
 					reportingRevampEnabled: X.a
@@ -1093,13 +1093,13 @@
 						comment: e,
 						modModeEnabled: t,
 						showModTools: s
-					} = this.props, o = Object(D.a)(e);
-					if (s && Object(D.c)(e) && !t) return n.a.createElement(R.a, {
+					} = this.props, o = Object(W.a)(e);
+					if (s && Object(W.c)(e) && !t) return n.a.createElement(R.a, {
 						text: `${o}`,
 						onClick: this.handleRestrictedButtonClick,
 						selected: this.props.activeTooltipId === je(e.id),
 						id: je(e.id)
-					}, n.a.createElement(W.a, {
+					}, n.a.createElement(D.a, {
 						model: e,
 						onIgnoreReports: this.handleIgnoreReports,
 						tooltipId: je(e.id)
@@ -1273,8 +1273,8 @@
 				Ae = s("./src/reddit/components/Comments/ProfileComment/index.m.less"),
 				Fe = s.n(Ae);
 			const Be = be.a.wrapped(Le.a, "TopMeta", Fe.a),
-				De = be.a.div("ProfileCommentWrapper", Fe.a),
-				We = be.a.div("CommentBody", Fe.a),
+				We = be.a.div("ProfileCommentWrapper", Fe.a),
+				De = be.a.div("CommentBody", Fe.a),
 				Ue = Object(r.b)(() => Object(i.c)({
 					comment: (e, t) => Object(Re.a)(e, t),
 					flair: Q.e
@@ -1296,7 +1296,7 @@
 					mediaMetadata: t.media && t.media.mediaMetadata,
 					rtJsonElementProps: Ve(e)
 				});
-				return n.a.createElement(De, {
+				return n.a.createElement(We, {
 					className: Object(a.a)({
 						[Fe.a.isRemoved]: !!t.bannedBy
 					})
@@ -1307,7 +1307,7 @@
 					commentsPageKey: s,
 					flair: o,
 					renderedInOverlay: !1
-				}), n.a.createElement("div", null, !t.isDeleted && n.a.createElement(We, null, r ? l() : n.a.createElement(g, {
+				}), n.a.createElement("div", null, !t.isDeleted && n.a.createElement(De, null, r ? l() : n.a.createElement(g, {
 					height: d.Rb,
 					isExpanded: r
 				}, l)), !t.isDeleted && i && n.a.createElement(Ne, {
@@ -2159,7 +2159,7 @@
 					isSnoovatar30Enabled: l,
 					isSubscriptionsPinned: m
 				}) => {
-					const [p, u] = Object(a.useState)(!1), b = Object(a.useRef)(null), f = D({
+					const [p, u] = Object(a.useState)(!1), b = Object(a.useRef)(null), f = W({
 						profileName: o,
 						isOwnProfile: t,
 						routeName: r,
@@ -2252,7 +2252,7 @@
 					role: "listitem",
 					target: "_blank"
 				}, o),
-				D = ({
+				W = ({
 					profileName: e,
 					isOwnProfile: t,
 					routeName: s,
@@ -2515,7 +2515,7 @@
 			const x = Object(a.c)({
 					currentUser: h.k,
 					moderated: p.n,
-					subscriptions: u.f,
+					subscriptions: u.e,
 					hasMoreModerated: p.d,
 					loadMorePending: p.a
 				}),
@@ -3093,7 +3093,7 @@
 						background: p(t)
 					}
 				},
-				h = e => Object(o.l)(.2, e),
+				h = e => Object(o.k)(.2, e),
 				b = e => e && e.postBackgroundColor ? {
 					backgroundColor: h(e.postBackgroundColor)
 				} : m,
@@ -3152,4 +3152,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.89549d66c2d52ae78290.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.8e15fa42d412c9e9e74b.js.map

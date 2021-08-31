@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CelebratoryMoments.20e4aa5a8da9b2feedd7.js
-// Retrieved at 8/30/2021, 3:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CelebratoryMoments.7660c34acd01ebf021c3.js
+// Retrieved at 8/31/2021, 6:10:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CelebratoryMoments"], {
 		"./src/reddit/components/CelebratoryMoments/constants.ts": function(e, t, n) {
@@ -77,21 +77,21 @@
 				})();
 				let j = y.height >= d.a;
 				n && (j = j && y.width >= n);
-				const E = !_ && ((e, t) => {
-					const n = Object(a.w)();
+				const x = !_ && ((e, t) => {
+					const n = Object(a.v)();
 					return 0 !== e && !(n && t - n < 864e5 * e)
 				})(f, p.current) && j;
 				r.a.useEffect(() => {
-					E || s(Object(i.b)())
+					x || s(Object(i.b)())
 				}, []);
-				const O = Object(c.e)(e => Object(u.a)(e));
-				return E ? r.a.createElement("div", {
+				const E = Object(c.e)(e => Object(u.a)(e));
+				return x ? r.a.createElement("div", {
 					className: h.a.celebratoryMoment,
 					onAnimationEnd: e => {
 						s(Object(i.b)()), l(b({
 							numCooldownPeriodDays: f,
-							postId: O
-						})), Object(a.Ab)(Date.now())
+							postId: E
+						})), Object(a.xb)(Date.now())
 					}
 				}, r.a.createElement("div", {
 					className: h.a.speechBubble
@@ -112,4 +112,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CelebratoryMoments.20e4aa5a8da9b2feedd7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CelebratoryMoments.7660c34acd01ebf021c3.js.map

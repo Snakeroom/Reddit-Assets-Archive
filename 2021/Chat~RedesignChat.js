@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.ba2d473c8f82e9b2f609.js
-// Retrieved at 8/31/2021, 2:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.efc77c5f0c0d307e037e.js
+// Retrieved at 8/31/2021, 6:10:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -10579,7 +10579,7 @@
 							color: _(C).bodyText,
 							error: O.b.warning,
 							channelRename: Object(s.a)(.1, O.b.white),
-							background: Object(s.g)(Object(s.a)(.3, O.b.white), .1)
+							background: Object(s.f)(Object(s.a)(.3, O.b.white), .1)
 						},
 						link: {
 							staticUnderline: O.b.alienblue,
@@ -10600,7 +10600,7 @@
 					layout: {
 						body: _(C).body,
 						colsBorder: _(C).line,
-						controlsBorder: Object(s.g)(O.b.black, .15),
+						controlsBorder: Object(s.f)(O.b.black, .15),
 						header: {
 							counterBg: O.b.snoo,
 							counterText: O.b.white
@@ -10632,7 +10632,7 @@
 						iconBg: O.b.alienblue
 					},
 					sidebar: {
-						background: Object(s.g)(Object(s.a)(.3, O.b.white), .1),
+						background: Object(s.f)(Object(s.a)(.3, O.b.white), .1),
 						subreddit: {
 							background: {
 								active: O.b.alienblue,
@@ -10669,7 +10669,7 @@
 						field: _(C).field,
 						inactive: _(C).inactive
 					},
-					boxShadow: Object(s.g)(20, 120, 120, .11),
+					boxShadow: Object(s.f)(20, 120, 120, .11),
 					bubbleActions: {
 						hover: _(C).line
 					},
@@ -10737,7 +10737,7 @@
 							color: _(j).bodyText,
 							error: O.b.warning,
 							channelRename: Object(s.a)(.1, O.b.white),
-							background: Object(s.g)(Object(s.a)(.3, O.b.white), .1)
+							background: Object(s.f)(Object(s.a)(.3, O.b.white), .1)
 						},
 						link: {
 							staticUnderline: O.b.alienblue,
@@ -10758,7 +10758,7 @@
 					layout: {
 						body: _(j).body,
 						colsBorder: _(j).line,
-						controlsBorder: Object(s.g)(O.b.white, .15),
+						controlsBorder: Object(s.f)(O.b.white, .15),
 						header: {
 							counterBg: O.b.snoo,
 							counterText: O.b.white
@@ -10790,17 +10790,17 @@
 						iconBg: O.b.alienblue
 					},
 					sidebar: {
-						background: Object(s.g)(Object(s.a)(.4, O.b.white), .1),
+						background: Object(s.f)(Object(s.a)(.4, O.b.white), .1),
 						subreddit: {
 							background: {
 								active: O.b.alienblue,
-								hover: Object(s.h)(.2, _(j).canvas)
+								hover: Object(s.g)(.2, _(j).canvas)
 							}
 						},
 						basic: {
 							background: {
 								active: O.b.alienblue,
-								hover: Object(s.h)(.2, _(j).canvas)
+								hover: Object(s.g)(.2, _(j).canvas)
 							}
 						},
 						text: {
@@ -10827,7 +10827,7 @@
 						field: _(j).field,
 						inactive: _(j).inactive
 					},
-					boxShadow: Object(s.g)(20, 120, 120, 0),
+					boxShadow: Object(s.f)(20, 120, 120, 0),
 					bubbleActions: {
 						hover: _(j).field
 					},
@@ -14402,4 +14402,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.ba2d473c8f82e9b2f609.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.efc77c5f0c0d307e037e.js.map

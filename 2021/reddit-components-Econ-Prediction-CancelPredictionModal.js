@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-CancelPredictionModal.617066effe6aa7cd9660.js
-// Retrieved at 8/30/2021, 5:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-CancelPredictionModal.c3e82b7bbddb9363da9b.js
+// Retrieved at 8/31/2021, 6:10:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction-CancelPredictionModal"], {
 		"./node_modules/uuid/index.js": function(t, e, n) {
@@ -171,7 +171,7 @@
 					gqlContext: o
 				}) => {
 					const r = n(),
-						i = Object(v.E)(r, t),
+						i = Object(v.B)(r, t),
 						d = Object(I.j)(r, {
 							subredditId: i
 						}),
@@ -423,7 +423,7 @@
 				u = n("./src/reddit/selectors/posts.ts");
 			const p = () => {
 				const t = Object(d.d)(),
-					e = Object(d.e)(u.S);
+					e = Object(d.e)(u.R);
 				if (!e) return null;
 				const {
 					totalVoteCount: n
@@ -720,4 +720,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-CancelPredictionModal.617066effe6aa7cd9660.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-CancelPredictionModal.c3e82b7bbddb9363da9b.js.map

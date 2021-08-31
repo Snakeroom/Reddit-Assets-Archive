@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.eb69dc2b67e261b29720.js
-// Retrieved at 8/30/2021, 3:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.f6a196c088eac4b805c9.js
+// Retrieved at 8/31/2021, 6:10:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments"], {
 		"./src/reddit/actions/pages/profileComments/index.ts": function(e, t, r) {
@@ -13,9 +13,9 @@
 			})), r.d(t, "profileCommentsRequested", (function() {
 				return B
 			})), r.d(t, "moreItemsPending", (function() {
-				return D
-			})), r.d(t, "moreItemsLoaded", (function() {
 				return K
+			})), r.d(t, "moreItemsLoaded", (function() {
+				return D
 			})), r.d(t, "moreItemsFailed", (function() {
 				return M
 			})), r.d(t, "moreItemsRequested", (function() {
@@ -110,7 +110,7 @@
 						meta: r().meta,
 						...S
 					})), await Promise.all([t(Object(p.c)(g)), t(Object(b.q)()), t(Object(l.b)()), t(m.o(g))])
-				}, D = Object(i.a)(T.c), K = Object(i.a)(T.b), M = Object(i.a)(T.a), R = () => async (e, t, {
+				}, K = Object(i.a)(T.c), D = Object(i.a)(T.b), M = Object(i.a)(T.a), R = () => async (e, t, {
 					apiContext: r
 				}) => {
 					const s = t(),
@@ -138,7 +138,7 @@
 						}),
 						x = g && g[b.token];
 					if (O || x) return;
-					e(D({
+					e(K({
 						key: f,
 						fetchedToken: b.token
 					}));
@@ -158,7 +158,7 @@
 								...C.body,
 								commentIds: o()(C.body.commentIds, t)
 							};
-						e(K({
+						e(D({
 							fetchedToken: b.token,
 							key: f,
 							meta: s.meta,
@@ -264,7 +264,7 @@
 					width: m,
 					...l
 				} = e;
-				return a.a.createElement(D, l, s && a.a.createElement(w.a, {
+				return a.a.createElement(K, l, s && a.a.createElement(w.a, {
 					isFirst: !0
 				}, n === v.g.Large ? a.a.createElement(T, S({}, e, {
 					availableWidth: m,
@@ -285,7 +285,7 @@
 					showModTools: c
 				})))
 			}));
-			const D = Object(g.a)(e => a.a.createElement("div", {
+			const K = Object(g.a)(e => a.a.createElement("div", {
 				className: Object(j.a)(_.a.backgroundMargin, {
 					[_.a.isFirstInCommentList]: e.isFirstInCommentList,
 					[_.a.isLastInCommentList]: e.isLastInCommentList
@@ -294,7 +294,7 @@
 					background: Object(N.e)(e)
 				}
 			}, e.children));
-			var K = r("./src/reddit/components/ProfileItemList/index.tsx"),
+			var D = r("./src/reddit/components/ProfileItemList/index.tsx"),
 				M = r("./node_modules/lodash/noop.js"),
 				R = r.n(M),
 				G = r("./src/reddit/actions/ads/index.ts"),
@@ -304,8 +304,8 @@
 				U = r("./src/reddit/helpers/postComponentForLayout/index.tsx"),
 				V = r("./src/reddit/helpers/trackers/post.ts"),
 				W = r("./src/reddit/featureFlags/index.ts"),
-				$ = r("./src/reddit/selectors/comments.ts"),
-				X = r("./src/reddit/selectors/posts.ts"),
+				X = r("./src/reddit/selectors/comments.ts"),
+				$ = r("./src/reddit/selectors/posts.ts"),
 				Z = r("./src/reddit/selectors/profileComments.ts"),
 				z = r("./src/reddit/selectors/subreddit.ts"),
 				Y = r("./src/reddit/selectors/tracking.ts"),
@@ -318,12 +318,12 @@
 					measureScrollFPS: W.d.measureScrollFPS,
 					layout: I.Q,
 					loadMore: Z.d,
-					subredditsById: z.ab,
+					subredditsById: z.X,
 					viewportDataLoaded: Y.a,
-					commentsById: $.q,
+					commentsById: X.q,
 					itemIds: Z.f,
 					itemIdToPostId: Z.e,
-					postsById: X.L,
+					postsById: $.K,
 					estimateItemHeight: e => (e, t, r) => {
 						if (r) switch (t) {
 							case v.g.Medium:
@@ -377,7 +377,7 @@
 			const ae = e => a.a.createElement(B, ne({}, e, {
 					allowModToolsUnderComments: !0
 				})),
-				ie = (e => Object(Q.c)(te(oe(e))))(K.a);
+				ie = (e => Object(Q.c)(te(oe(e))))(D.a);
 			var ce = e => a.a.createElement(ie, ne({}, e, {
 					itemComponent: ae
 				})),
@@ -508,4 +508,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.eb69dc2b67e261b29720.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.f6a196c088eac4b805c9.js.map

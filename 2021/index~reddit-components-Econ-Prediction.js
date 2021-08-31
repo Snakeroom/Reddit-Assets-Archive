@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.ca5e65b2cf2267c3f948.js
-// Retrieved at 8/31/2021, 2:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.f8c0f73573f3c77a665a.js
+// Retrieved at 8/31/2021, 6:10:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index~reddit-components-Econ-Prediction"], {
 		"./node_modules/lodash/_LazyWrapper.js": function(a, i, r) {
@@ -821,7 +821,7 @@
 					gqlContext: t
 				}) => {
 					const x = r(),
-						k = Object(G.E)(x, a),
+						k = Object(G.B)(x, a),
 						n = Object(B.j)(x, {
 							subredditId: k
 						}),
@@ -1648,7 +1648,7 @@
 					l = Object(k.e)(a => Object(w.e)(a, {
 						subredditId: n
 					})),
-					c = Object(k.e)(a => Object(q.T)(a, {
+					c = Object(k.e)(a => Object(q.Q)(a, {
 						subredditId: n
 					})),
 					p = Object(z.a)({
@@ -3491,7 +3491,7 @@
 			function o(a, i) {
 				const r = Object(t.useRef)(null);
 				let k;
-				k = Object(x.B)(a);
+				k = Object(x.A)(a);
 				const [o, s] = Object(t.useState)(null != k ? k : i);
 				return Object(t.useEffect)(() => (r.current = n(a, s, i), () => {
 					var a;
@@ -3500,7 +3500,7 @@
 					var a;
 					null === (a = r.current) || void 0 === a || a.emit(o)
 				}, [o]), [o, function(i) {
-					Object(x.Fb)(a, i), s(i)
+					Object(x.Cb)(a, i), s(i)
 				}]
 			}
 		},
@@ -3743,4 +3743,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.ca5e65b2cf2267c3f948.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.f8c0f73573f3c77a665a.js.map

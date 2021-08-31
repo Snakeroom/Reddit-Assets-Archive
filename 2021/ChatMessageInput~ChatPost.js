@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.c6d53b2a6c26bc50b869.js
-// Retrieved at 8/30/2021, 5:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.f1feb673947812189107.js
+// Retrieved at 8/31/2021, 6:10:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~ChatPost"], {
 		"./node_modules/lodash/_baseReduce.js": function(e, t) {
@@ -385,10 +385,10 @@
 						style: t
 					}, e.children)
 				},
-				N = Object(a.b)(() => Object(c.a)(_.H, j.db, (e, {
+				N = Object(a.b)(() => Object(c.a)(_.G, j.db, (e, {
 					isSponsored: t,
 					postId: s
-				}) => t && s ? Object(_.b)(e, s) : null, E.a, C.actionInfo, _.I, (e, t, s, n, r, o) => ({
+				}) => t && s ? Object(_.b)(e, s) : null, E.a, C.actionInfo, _.H, (e, t, s, n, r, o) => ({
 					postPermalink: e,
 					shouldOpenPostInNewTab: t,
 					basePixelMetadata: s,
@@ -2178,7 +2178,7 @@
 					discoveryUnit: {
 						id: "xd_100",
 						name: n.SUBREDDIT_HOVERCARD,
-						type: d.f.Listing,
+						type: d.e.Listing,
 						title: n.SUBREDDIT_HOVERCARD
 					}
 				}),
@@ -2197,7 +2197,7 @@
 							subredditName: n,
 							[r]: s.id
 						},
-						d = Object(l.z)(e, {
+						d = Object(l.w)(e, {
 							subredditName: n
 						});
 					return d ? {
@@ -2319,7 +2319,7 @@
 				m = (e, {
 					subredditName: t
 				}) => {
-					const s = Object(a.X)(e, {
+					const s = Object(a.U)(e, {
 						subredditName: t
 					});
 					return (s && s.postIds || []).slice(0, 2)
@@ -2327,4 +2327,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.c6d53b2a6c26bc50b869.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.f1feb673947812189107.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlow.19c296b8fec7a19421b4.js
-// Retrieved at 8/30/2021, 5:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlow.f02a8ae2b014259ec880.js
+// Retrieved at 8/31/2021, 6:10:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlow", "ReportFlowNew"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, o) {
@@ -1269,7 +1269,7 @@
 			})), o.d(t, "reportFlowOpenCategory", (function() {
 				return M
 			})), o.d(t, "reportFlowOpened", (function() {
-				return q
+				return H
 			})), o.d(t, "reportFlowClosed", (function() {
 				return G
 			}));
@@ -1487,7 +1487,7 @@
 							buttonAction: D(e, t)
 						}))
 					}
-				}, B = Object(r.a)(v.f), U = Object(r.a)(v.a), M = Object(r.a)(v.b), q = (e, t, o) => async (n, r, {
+				}, B = Object(r.a)(v.f), U = Object(r.a)(v.a), M = Object(r.a)(v.b), H = (e, t, o) => async (n, r, {
 					apiContext: c
 				}) => {
 					const u = r(),
@@ -1501,16 +1501,16 @@
 						redirectUrl: w.permalink
 					}));
 					n(Object(d.z)(w.author));
-					const x = Object(b.V)(u, {
+					const x = Object(b.U)(u, {
 							postId: p ? u.features.comments.models[e].postId : u.posts.models[e].id
 						}),
 						v = h && Object(_.o)(w) || p && W(w, u);
 					v || u.reportRules.sitewideRules && u.reportRules.sitewideRules.length || n(Object(a.d)()), !v || u.reportRules.liveStreamingRules && u.reportRules.liveStreamingRules.length || n(Object(a.c)()), x && n(Object(l.o)(x.name, x.type)), n(B(e)), n(U(!!t)), o && n(M(o)), x && n(K(x.name))
-				}, H = Object(r.a)(v.g), K = e => async (t, o, {
+				}, q = Object(r.a)(v.g), K = e => async (t, o, {
 					apiContext: n
 				}) => {
 					const r = await Object(u.a)(n());
-					t(H(r.ok && !!r.body[e]))
+					t(q(r.ok && !!r.body[e]))
 				}, G = () => async (e, t, {
 					apiContext: o
 				}) => {
@@ -1668,7 +1668,7 @@
 			o.d(t, "l", (function() {
 				return B
 			})), o.d(t, "k", (function() {
-				return q
+				return H
 			})), o.d(t, "j", (function() {
 				return W
 			})), o.d(t, "e", (function() {
@@ -1754,7 +1754,7 @@
 						U[o] && !e[o] && U[o].forEach(e => t[e] = null)
 					}), t
 				},
-				q = (e, t, o, n) => async (r, s, i) => {
+				H = (e, t, o, n) => async (r, s, i) => {
 					const {
 						apiContext: a
 					} = i, l = s(), d = M(t), m = l.structuredStyles.models[e];
@@ -1774,7 +1774,7 @@
 						const e = Object(E.a)("webSocket");
 						return void r(Object(u.f)(n, e))
 					}
-					const x = Object(b.T)(l, {
+					const x = Object(b.Q)(l, {
 							subredditId: e
 						}).name,
 						v = await f.e(a(), x, d),
@@ -1792,7 +1792,7 @@
 									name: e
 								});
 								t && Object(R.j)(t) && (C[e] = o[e])
-							} Object.keys(C).length && r(V(C)), r(Object(u.e)(n)), r(B({
+							} Object.keys(C).length && r(Q(C)), r(Object(u.e)(n)), r(B({
 							subredditId: e,
 							styles: {
 								...d,
@@ -1810,13 +1810,13 @@
 							success: v.ok
 						}
 					})
-				}, H = Object(d.a)(D.l), K = Object(d.a)(D.k), G = Object(d.a)(D.j), W = e => async (t, o, {
+				}, q = Object(d.a)(D.l), K = Object(d.a)(D.k), G = Object(d.a)(D.j), W = e => async (t, o, {
 					apiContext: n
 				}) => {
-					t(H({
+					t(q({
 						subredditId: e
 					}));
-					const r = Object(b.T)(o(), {
+					const r = Object(b.Q)(o(), {
 							subredditId: e
 						}).name,
 						s = await f.f(n(), r);
@@ -1845,7 +1845,7 @@
 						gqlContext: n
 					}) => {
 						const r = o(),
-							s = Object(b.T)(r, {
+							s = Object(b.Q)(r, {
 								subredditId: e
 							});
 						if (!s) return;
@@ -1876,7 +1876,7 @@
 							error: l.error
 						}))
 					})(e)(t, o, n), Object(C.g)(e, !1)(t, o, n)
-				}, V = Object(d.a)(D.c), X = e => async (t, o, n) => {
+				}, Q = Object(d.a)(D.c), X = e => async (t, o, n) => {
 					const r = M(e),
 						s = o();
 					for (const e in r)
@@ -1892,14 +1892,14 @@
 									name: e
 								});
 								o && t(Object(p.h)(o))
-							} t(V(r))
-				}, Q = Object(d.a)(D.f), J = (e, t, o) => async (n, r, s) => {
+							} t(Q(r))
+				}, V = Object(d.a)(D.f), J = (e, t, o) => async (n, r, s) => {
 					const i = r(),
 						a = o || i.structuredStyles.isEditing,
-						l = Object(b.T)(i, {
+						l = Object(b.Q)(i, {
 							subredditId: a
 						}).name;
-					n(Q({
+					n(V({
 						imageKey: e,
 						uploadId: t.id
 					})), n(Object(p.k)(t));
@@ -1908,7 +1908,7 @@
 						const o = await Object(p.g)(r(), c, t, R.a.StructuredStyles);
 						if (o) {
 							const t = o.url;
-							n(Object(p.j)(o)), n(V({
+							n(Object(p.j)(o)), n(Q({
 								[e]: t
 							}))
 						}
@@ -1965,7 +1965,7 @@
 					o(ae({
 						subredditId: e
 					}));
-					const i = Object(b.T)(n(), {
+					const i = Object(b.Q)(n(), {
 						subredditId: e
 					});
 					if (!i) return;
@@ -2175,7 +2175,7 @@
 					} = f;
 					r(Object(s.h)(o));
 					const x = p(),
-						O = Object(h.T)(x, {
+						O = Object(h.Q)(x, {
 							subredditId: e
 						}).name,
 						C = Object(w.k)(t);
@@ -2220,7 +2220,7 @@
 					r(Object(s.h)(o));
 					const v = t.id,
 						O = p(),
-						y = Object(h.T)(O, {
+						y = Object(h.Q)(O, {
 							subredditId: e
 						}).name,
 						E = Object(w.k)(t);
@@ -2257,8 +2257,8 @@
 												const t = {
 														subredditName: e
 													},
-													n = Object(h.z)(o, t),
-													r = Object(h.w)(o, t);
+													n = Object(h.w)(o, t),
+													r = Object(h.t)(o, t);
 												return {
 													name: n.name,
 													subscribers: n ? n.subscribers : void 0,
@@ -2305,7 +2305,7 @@
 				}) => {
 					n(Object(s.h)(o));
 					const a = t.id,
-						p = Object(h.T)(r(), {
+						p = Object(h.Q)(r(), {
 							subredditId: e
 						}).name,
 						m = await (async (e, t, o) => Object(c.a)(Object(d.a)(e, [u.a]), {
@@ -2320,7 +2320,7 @@
 				}, k = Object(r.a)(x.f), R = (e, t) => async (o, n, {
 					apiContext: r
 				}) => {
-					const s = Object(h.T)(n(), {
+					const s = Object(h.Q)(n(), {
 						subredditId: e
 					}).name;
 					(await (async (e, t, o) => Object(c.a)(Object(d.a)(e, [u.a]), {
@@ -2337,7 +2337,7 @@
 				}) => async (t, o, n) => {
 					const r = o(),
 						s = r.structuredStyles.isEditing,
-						a = Object(h.T)(r, {
+						a = Object(h.Q)(r, {
 							subredditId: s
 						}).name;
 					t(Object(i.k)(e));
@@ -2362,7 +2362,7 @@
 					apiContext: r
 				}) => {
 					o(Object(s.h)(t));
-					const i = Object(h.T)(n(), {
+					const i = Object(h.Q)(n(), {
 							subredditId: e
 						}).name,
 						a = await p(r(), i);
@@ -2379,7 +2379,7 @@
 					o(P({
 						subredditId: e
 					}));
-					const s = Object(h.T)(n(), {
+					const s = Object(h.Q)(n(), {
 							subredditId: e
 						}).name,
 						i = await p(r(), s, t);
@@ -2396,7 +2396,7 @@
 				}, D = (e, t) => async (o, n, {
 					apiContext: r
 				}) => {
-					const s = Object(h.T)(n(), {
+					const s = Object(h.Q)(n(), {
 							subredditId: e
 						}).name,
 						i = await p(r(), s, !0);
@@ -2762,13 +2762,13 @@
 				B = o.n(D);
 			const U = d.a.div("LinkHolder", B.a),
 				M = d.a.a("Link", B.a),
-				q = d.a.wrapped(f.a, "footer", B.a);
-			var H = e => s.a.createElement("div", null, s.a.createElement(E, null, e.complaintPageTitle), s.a.createElement(S, null, e.complaintPrompt || n.fbt._("If you think content on Reddit violates your intellectual property, you can file a complaint. Use the link bellow:", null, {
+				H = d.a.wrapped(f.a, "footer", B.a);
+			var q = e => s.a.createElement("div", null, s.a.createElement(E, null, e.complaintPageTitle), s.a.createElement(S, null, e.complaintPrompt || n.fbt._("If you think content on Reddit violates your intellectual property, you can file a complaint. Use the link bellow:", null, {
 					hk: "4eHLfh"
 				})), s.a.createElement(U, null, s.a.createElement(M, {
 					target: "_blank",
 					href: e.complaintUrl
-				}, e.complaintButtonText)), s.a.createElement(q, null, s.a.createElement(y, null, s.a.createElement(m.a, {
+				}, e.complaintButtonText)), s.a.createElement(H, null, s.a.createElement(y, null, s.a.createElement(m.a, {
 					isLiveStreaming: e.isLiveStreaming,
 					subredditOrProfile: e.subredditOrProfile
 				})), s.a.createElement(k, {
@@ -2781,9 +2781,9 @@
 				W = o("./src/reddit/icons/svgs/ProfileSlashed/index.tsx"),
 				z = o("./src/reddit/components/ReportFlow/FinalPage/index.m.less"),
 				Y = o.n(z);
-			const V = d.a.wrapped(f.a, "blockUserHolder", Y.a),
+			const Q = d.a.wrapped(f.a, "blockUserHolder", Y.a),
 				X = d.a.wrapped(W.a, "BlockUserIcon", Y.a),
-				Q = d.a.div("BlockUserHeader", Y.a),
+				V = d.a.div("BlockUserHeader", Y.a),
 				J = d.a.div("OptionHolder", Y.a),
 				Z = d.a.div("OptionHeader", Y.a),
 				$ = d.a.div("OptionDescription", Y.a),
@@ -2828,9 +2828,9 @@
 						const {
 							props: e
 						} = this, t = this.getBlockUserHeaderText();
-						return s.a.createElement(V, {
+						return s.a.createElement(Q, {
 							onClick: () => this.onBlockAuthor(e.authorName)
-						}, s.a.createElement(X, null), s.a.createElement("div", null, s.a.createElement(Q, null, t), s.a.createElement($, null, n.fbt._("You won't see posts or comments from {username}. You can change this later in your preference.", [n.fbt._param("username", e.authorName)], {
+						}, s.a.createElement(X, null), s.a.createElement("div", null, s.a.createElement(V, null, t), s.a.createElement($, null, n.fbt._("You won't see posts or comments from {username}. You can change this later in your preference.", [n.fbt._param("username", e.authorName)], {
 							hk: "2iUUlN"
 						}))))
 					}
@@ -2979,7 +2979,7 @@
 				ye = d.a.wrapped(he.i, "FreeFormTextArea", we.a),
 				Ee = Object(a.c)({
 					dropdownIsOpen: Object(ue.b)(xe),
-					freeFormReports: be.D
+					freeFormReports: be.A
 				});
 			class Se extends s.a.Component {
 				constructor(e) {
@@ -3141,18 +3141,18 @@
 			const Be = d.a.wrapped(f.a, "Title", De.a),
 				Ue = d.a.div("CloseWrapper", De.a),
 				Me = d.a.wrapped(Fe.a, "Close", De.a);
-			var qe = e => s.a.createElement(Be, null, s.a.createElement("div", null, e.title), s.a.createElement(Ue, {
+			var He = e => s.a.createElement(Be, null, s.a.createElement("div", null, e.title), s.a.createElement(Ue, {
 					onClick: e.onClosePressed
 				}, s.a.createElement(Me, null))),
-				He = o("./src/reddit/models/Post/index.ts"),
+				qe = o("./src/reddit/models/Post/index.ts"),
 				Ke = o("./src/reddit/models/ReportFlow/index.ts"),
 				Ge = o("./src/reddit/selectors/commentSelector.ts"),
 				We = o("./src/reddit/selectors/experiments/crisisTextLine.ts"),
 				ze = o("./src/reddit/selectors/posts.ts"),
 				Ye = o("./src/reddit/components/ReportFlow/_ReportFlow.m.less"),
-				Ve = o.n(Ye);
-			const Xe = d.a.div("CloseWrapper", Ve.a),
-				Qe = d.a.wrapped(Fe.a, "Close", Ve.a),
+				Qe = o.n(Ye);
+			const Xe = d.a.div("CloseWrapper", Qe.a),
+				Ve = d.a.wrapped(Fe.a, "Close", Qe.a),
 				Je = Object(a.c)({
 					comment: (e, {
 						commentId: t
@@ -3163,13 +3163,13 @@
 						postId: t
 					}) => {
 						const o = t && e.posts.models[t];
-						return !!o && Object(He.o)(o)
+						return !!o && Object(qe.o)(o)
 					},
 					liveStreamingRules: e => e.reportRules.liveStreamingRules,
 					rulesCategory: e => e.features.reportFlow.rulesCategory,
 					post: (e, {
 						postId: t
-					}) => t ? Object(ze.I)(e, {
+					}) => t ? Object(ze.H)(e, {
 						postId: t
 					}) : null,
 					reportedPending: e => e.features.reportFlow.api.pending,
@@ -3177,7 +3177,7 @@
 					sitewideRules: e => e.reportRules.sitewideRules,
 					subredditOrProfile: (e, {
 						postId: t
-					}) => t ? Object(ze.V)(e, {
+					}) => t ? Object(ze.U)(e, {
 						postId: t
 					}) : null,
 					subredditRules: e => e.subreddits.rules,
@@ -3266,7 +3266,7 @@
 						state: e,
 						props: t
 					} = this;
-					if (e.chosenRule && e.chosenRule.fileComplaint && e.showFileAComplaintPage) return s.a.createElement(H, {
+					if (e.chosenRule && e.chosenRule.fileComplaint && e.showFileAComplaintPage) return s.a.createElement(q, {
 						complaintButtonText: e.chosenRule.complaintButtonText,
 						complaintPageTitle: e.chosenRule.complaintPageTitle,
 						complaintPrompt: e.chosenRule.complaintPrompt,
@@ -3307,7 +3307,7 @@
 						let e;
 						if (t.commentId ? e = t.comment && t.comment.author : t.postId && (e = t.post && t.post.author), e) return s.a.createElement(r.Fragment, null, s.a.createElement(Xe, {
 							onClick: this.handleReportFlowClose
-						}, s.a.createElement(Qe, null)), s.a.createElement(u.a, {
+						}, s.a.createElement(Ve, null)), s.a.createElement(u.a, {
 							onCloseReportFlow: this.handleReportFlowClose,
 							thingId: t.commentId ? t.commentId : t.postId,
 							username: e
@@ -3320,14 +3320,14 @@
 					}) : n.fbt._("Report comment", null, {
 						hk: "Buqls"
 					});
-					return s.a.createElement(r.Fragment, null, s.a.createElement(qe, {
+					return s.a.createElement(r.Fragment, null, s.a.createElement(He, {
 						onClosePressed: t.onCloseReportFlow,
 						title: o
 					}), s.a.createElement("div", null, this.getInnerContent()))
 				}
 				render() {
 					return s.a.createElement("div", {
-						className: Ve.a.Wrapper
+						className: Qe.a.Wrapper
 					}, this.getContent())
 				}
 			}
@@ -3404,7 +3404,7 @@
 			const M = Object(d.c)({
 					post: (e, {
 						postId: t
-					}) => t ? Object(T.I)(e, {
+					}) => t ? Object(T.H)(e, {
 						postId: t
 					}) : null,
 					comment: (e, {
@@ -3425,7 +3425,7 @@
 							postId: r
 						} = t, s = n ? Object(I.a)(e, {
 							commentId: n
-						}) : null, i = r ? Object(T.I)(e, {
+						}) : null, i = r ? Object(T.H)(e, {
 							postId: r
 						}) : null;
 						(s ? s.author : i ? i.author : null) || t.author;
@@ -3434,7 +3434,7 @@
 					isNightmodeOn: L.X,
 					locale: j.i
 				}),
-				q = Object(c.b)(M, (e, {
+				H = Object(c.b)(M, (e, {
 					timestamp: t
 				}) => ({
 					onCloseReportFlow: () => {
@@ -3450,7 +3450,7 @@
 						})
 					}))
 				})),
-				H = async (e, t, o, n, r) => {
+				q = async (e, t, o, n, r) => {
 					var s;
 					const i = await ((e, {
 						itemId: t,
@@ -3602,7 +3602,7 @@
 						gqlContext: o,
 						hostAppName: n
 					} = this.props;
-					H(o(), e, B, n, t).then(e => {
+					q(o(), e, B, n, t).then(e => {
 						e && this.setState({
 							formComponent: e.component,
 							formState: e.state,
@@ -3647,7 +3647,7 @@
 					}))
 				}
 			}
-			t.default = Object(E.b)(q(K))
+			t.default = Object(E.b)(H(K))
 		},
 		"./src/reddit/components/ReportFlow/_ReportFlowNewModal.tsx": function(e, t, o) {
 			"use strict";
@@ -5914,4 +5914,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.19c296b8fec7a19421b4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.f02a8ae2b014259ec880.js.map

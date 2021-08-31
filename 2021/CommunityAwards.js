@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityAwards.416f1b500794c37c7219.js
-// Retrieved at 8/30/2021, 12:20:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityAwards.3e5514e35442d9393b0f.js
+// Retrieved at 8/31/2021, 6:10:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityAwards"], {
 		"./src/reddit/actions/gold/communityAwards/communityAwards.ts": function(e, t, r) {
@@ -27,9 +27,9 @@
 			})), r.d(t, "awardSheetInfoPending", (function() {
 				return U
 			})), r.d(t, "awardSheetInfoFailed", (function() {
-				return Q
-			})), r.d(t, "awardSheetInfoLoaded", (function() {
 				return H
+			})), r.d(t, "awardSheetInfoLoaded", (function() {
+				return Q
 			})), r.d(t, "removeCommunityAward", (function() {
 				return F
 			})), r.d(t, "removeCommunityAwardSuccessful", (function() {
@@ -175,7 +175,7 @@
 						subredditOrProfileId: e
 					}));
 					const s = Object(i.a)(e),
-						o = !!Object(w.bb)(n, {
+						o = !!Object(w.Y)(n, {
 							subredditIds: [e]
 						})[0];
 					let c;
@@ -248,7 +248,7 @@
 									profileId: r
 								});
 								if (n) return n.name;
-								const d = Object(l.I)(e, {
+								const d = Object(l.H)(e, {
 									postId: t
 								});
 								return "profile" === (null === (a = null == d ? void 0 : d.belongsTo) || void 0 === a ? void 0 : a.type) ? d.author : null
@@ -261,13 +261,13 @@
 								if (r.ok) {
 									const a = r.body,
 										d = k(a.data.profileByName.awardingTray.sortedUsableTags);
-									await n(H({
+									await n(Q({
 										awards: a.data.profileByName.sortedUsableAwards,
 										tags: d,
 										subredditOrProfileId: e,
 										thingId: t
 									}))
-								} else await n(Q({
+								} else await n(H({
 									subredditOrProfileId: e,
 									thingId: t
 								}))
@@ -276,25 +276,25 @@
 								if (r.ok) {
 									const a = r.body,
 										d = k(a.data.subredditInfoById.awardingTray.sortedUsableTags);
-									await n(H({
+									await n(Q({
 										awards: a.data.subredditInfoById.sortedUsableAwards,
 										tags: d,
 										subredditOrProfileId: e,
 										thingId: t
 									}))
-								} else await n(Q({
+								} else await n(H({
 									subredditOrProfileId: e,
 									thingId: t
 								}))
 							}
 						} catch (u) {
-							d.c.captureException(u), await n(Q({
+							d.c.captureException(u), await n(H({
 								subredditOrProfileId: e,
 								thingId: t
 							}))
 						}
 					}
-				}, U = Object(n.a)(O.c), Q = Object(n.a)(O.a), H = Object(n.a)(O.b), F = (e, t) => async (r, n, {
+				}, U = Object(n.a)(O.c), H = Object(n.a)(O.a), Q = Object(n.a)(O.b), F = (e, t) => async (r, n, {
 					gqlContext: i
 				}) => {
 					r(M());
@@ -692,4 +692,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityAwards.416f1b500794c37c7219.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityAwards.3e5514e35442d9393b0f.js.map

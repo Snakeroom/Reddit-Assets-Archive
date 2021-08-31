@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.646a5e9e65800657afb8.js
-// Retrieved at 8/30/2021, 12:20:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.05a1ec64ac4a434354a9.js
+// Retrieved at 8/31/2021, 6:10:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-ClaimPointsModal"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, n) {
@@ -43,7 +43,7 @@
 			})), n.d(t, "c", (function() {
 				return w
 			})), n.d(t, "f", (function() {
-				return T
+				return y
 			})), n.d(t, "g", (function() {
 				return P
 			})), n.d(t, "d", (function() {
@@ -78,8 +78,8 @@
 				_ = Object(r.a)(h.j),
 				N = Object(r.a)(h.k),
 				I = Object(r.a)(h.q),
-				T = Object(r.a)(h.r),
-				y = Object(r.a)(h.s),
+				y = Object(r.a)(h.r),
+				T = Object(r.a)(h.s),
 				M = Object(r.a)(h.t),
 				k = Object(r.a)(h.u),
 				S = Object(r.a)(h.v),
@@ -132,7 +132,7 @@
 					apiContext: i
 				}) => {
 					var l;
-					n(y());
+					n(T());
 					const u = r().transfers.communityPoints.contentId || void 0,
 						m = await
 					function(e, t) {
@@ -277,8 +277,8 @@
 				_ = n("./src/reddit/selectors/crypto/points.ts"),
 				N = n("./src/reddit/selectors/gov.ts"),
 				I = n("./src/reddit/components/Governance/TransactionModals/CreateVaultModal/index.tsx"),
-				T = n("./src/reddit/components/Governance/TransactionModals/VaultTransactionModal/index.tsx"),
-				y = n("./src/reddit/components/SubredditIcon/index.tsx"),
+				y = n("./src/reddit/components/Governance/TransactionModals/VaultTransactionModal/index.tsx"),
+				T = n("./src/reddit/components/SubredditIcon/index.tsx"),
 				M = n("./src/reddit/selectors/subreddit.ts"),
 				k = n("./src/reddit/components/Governance/TransactionModals/ApprovalModal/Details.tsx"),
 				S = n("./src/reddit/components/Governance/TransactionModals/ApprovalModal/Overview.tsx"),
@@ -291,10 +291,10 @@
 					pointsDetails: n
 				} = e, r = Object(o.e)(t => Object(E.b)(t, e)), i = r && r.pointsToClaim;
 				if (!i) throw new Error("Expected claim amount to approve");
-				const c = Object(o.e)(t => Object(M.T)(t, e));
+				const c = Object(o.e)(t => Object(M.Q)(t, e));
 				return a.a.createElement(S.a, {
 					subredditId: t,
-					image: a.a.createElement(y.b, {
+					image: a.a.createElement(T.b, {
 						className: P.a.subredditIcon,
 						subredditOrProfile: c
 					}),
@@ -323,24 +323,24 @@
 				} = e, r = Object(o.d)(), c = Object(g.a)(), {
 					currentPointsAmount: d,
 					nextPointsClaim: l,
-					pointsDetails: y
+					pointsDetails: T
 				} = Object(o.e)(Object(i.c)({
 					currentPointsAmount: t => Object(N.e)(t, e),
 					nextPointsClaim: t => Object(E.b)(t, e),
 					pointsDetails: t => Object(_.b)(t, e.subredditId)
 				}));
-				if (!y || !l) throw new Error("No available claim to make");
+				if (!T || !l) throw new Error("No available claim to make");
 				if (!l.address) return a.a.createElement(I.a, {
 					onClose: t
 				});
-				const M = Object(h.b)(y.contracts.distribution.address, l.round, l.address, l.userKarma, l.signature),
+				const M = Object(h.b)(T.contracts.distribution.address, l.round, l.address, l.userKarma, l.signature),
 					k = e => {
-						c(Object(O.c)("points_claim", n, y.displayConversion, e))
+						c(Object(O.c)("points_claim", n, T.displayConversion, e))
 					},
-					S = Object(j.b)(l.pointsToClaim, y.displayConversion);
-				return a.a.createElement(T.a, {
+					S = Object(j.b)(l.pointsToClaim, T.displayConversion);
+				return a.a.createElement(y.a, {
 					approvalOverview: a.a.createElement(B, {
-						pointsDetails: y,
+						pointsDetails: T,
 						subredditId: n
 					}),
 					approvalDetails: a.a.createElement(D, {
@@ -363,18 +363,18 @@
 							})), await e(Object(p.b)({
 								forceFetch: !0
 							}))
-						}(r, y, e.hash, n, d).then(() => {
+						}(r, T, e.hash, n, d).then(() => {
 							c(Object(O.d)("points_claim", n, S)), r(function(e) {
 								return Object(x.f)(Object(x.e)(s.fbt._("Your {pointsName} are ready!", [s.fbt._param("pointsName", e)], {
 									hk: "2LpLml"
 								}), w.b.SuccessCommunityGreen))
-							}(y.name))
+							}(T.name))
 						}).catch(e => {
 							k(e.toString()), r(function(e) {
 								return Object(x.f)(Object(x.e)(s.fbt._("Failed to claim your {pointsName}. Try again later", [s.fbt._param("pointsName", e)], {
 									hk: "ch1Bl"
 								}), w.b.Error))
-							}(y.name))
+							}(T.name))
 						}).finally(() => {
 							r(u({
 								subredditId: n
@@ -1074,4 +1074,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.646a5e9e65800657afb8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.05a1ec64ac4a434354a9.js.map

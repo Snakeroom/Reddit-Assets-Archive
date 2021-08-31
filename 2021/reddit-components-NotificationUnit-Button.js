@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.8b486cfc1fcf476cae3e.js
-// Retrieved at 8/30/2021, 5:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.a9215bc860b60b8828cc.js
+// Retrieved at 8/31/2021, 6:10:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-NotificationUnit-Button"], {
 		"./src/lib/makeCommentPermalink/index.ts": function(e, t, n) {
@@ -215,7 +215,7 @@
 							commentsPageKey: t,
 							draftKey: n
 						}));
-						const o = Object($.I)(p(), {
+						const o = Object($.H)(p(), {
 							postId: e
 						});
 						u(Object(m.z)(o, O.a.CommentSubmitted))
@@ -563,7 +563,7 @@
 								commentId: e,
 								followState: t
 							})).ok) {
-							Object(L.ub)(null !== (m = null === (a = null === (d = o().pages) || void 0 === d ? void 0 : d.comments) || void 0 === a ? void 0 : a.followed) && void 0 !== m ? m : [], null === (u = o().user.account) || void 0 === u ? void 0 : u.id);
+							Object(L.rb)(null !== (m = null === (a = null === (d = o().pages) || void 0 === d ? void 0 : d.comments) || void 0 === a ? void 0 : a.followed) && void 0 !== m ? m : [], null === (u = o().user.account) || void 0 === u ? void 0 : u.id);
 							const e = c ? r.fbt._("Followed! You’ll receive updates when there’s new activity", null, {
 								hk: "1Dp5UH"
 							}) : r.fbt._("Unfollowed, You’ll no longer recieve updates on this comment", null, {
@@ -1022,7 +1022,7 @@
 						})
 					})))
 				}, j = e => async (t, n) => {
-					const o = Object(i.m)();
+					const o = Object(i.l)();
 					if (o >= 3) return;
 					const c = n().user.prefs.useMarkdown ? a.h.MARKDOWN : a.h.RICH_TEXT;
 					if (e === c) return;
@@ -1040,7 +1040,7 @@
 						}),
 						kind: u.b.SuccessCommunity,
 						text: d
-					})), Object(i.rb)(o + 1)
+					})), Object(i.ob)(o + 1)
 				}
 		},
 		"./src/reddit/actions/presence.ts": function(e, t, n) {
@@ -2493,7 +2493,7 @@
 					const n = Object(b.a)(e, {
 						commentId: t
 					});
-					return n ? Object(c.a)(Object(m.H)(e, n), t) : ""
+					return n ? Object(c.a)(Object(m.G)(e, n), t) : ""
 				},
 				D = (e, {
 					commentId: t
@@ -2587,7 +2587,7 @@
 				z = e => e.features.comments.visitHighlightFilter,
 				X = (e, t) => {
 					const n = Object(b.a)(e, t);
-					if (n) return Object(u.Y)(e, n)
+					if (n) return Object(u.V)(e, n)
 				},
 				Z = (e, {
 					commentId: t
@@ -2672,4 +2672,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.8b486cfc1fcf476cae3e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.a9215bc860b60b8828cc.js.map

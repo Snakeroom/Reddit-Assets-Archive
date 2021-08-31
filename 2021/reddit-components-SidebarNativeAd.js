@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.59f5b1ea90c040756181.js
-// Retrieved at 8/30/2021, 5:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.edcd8d5cf5718ab76d10.js
+// Retrieved at 8/31/2021, 6:10:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, r) {
@@ -501,14 +501,8 @@
 		},
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, r) {
 			"use strict";
-			r.d(t, "c", (function() {
+			r.d(t, "a", (function() {
 				return d
-			})), r.d(t, "a", (function() {
-				return l
-			})), r.d(t, "b", (function() {
-				return u
-			})), r.d(t, "d", (function() {
-				return m
 			}));
 			var n = r("./node_modules/react/index.js"),
 				s = r.n(n),
@@ -873,13 +867,13 @@
 						thingId: r,
 						correlationId: t
 					})), n(Object(l.h)(i.a.GOLD_GILD_MODAL));
-					const f = Object(p.J)(a, {
+					const f = Object(p.G)(a, {
 						thingId: r
 					});
 					let b = null;
 					if (f) b = f.id;
 					else if (Object(o.a)(r)) {
-						const e = Object(m.I)(a, {
+						const e = Object(m.H)(a, {
 							postId: r
 						});
 						e && (b = e.belongsTo.id)
@@ -1201,25 +1195,20 @@
 				v = r("./src/reddit/components/PostContainer/index.m.less"),
 				y = r.n(v);
 			const O = Object(p.a)(() => Object(o.c)({
-					basePixelMetadata: Object(g.a)((e, {
-						post: t
-					}) => Object(b.b)(e, t.id)),
-					clickTrackingId: (e, {
-						post: t
-					}) => t.id,
-					imageGalleryCurrentItem: (e, {
-						post: t
-					}) => Object(b.i)(e, {
-						postId: t.id
-					}),
-					pageType: e => Object(h.actionInfo)(e).pageType
-				})),
-				w = e => {
-					const t = Object(E.d)(e.target, e.currentTarget),
-						r = Object(E.b)(e.target, e.currentTarget, E.a.buttons);
-					return "subreddit" !== t && r
-				};
-			class S extends s.a.Component {
+				basePixelMetadata: Object(g.a)((e, {
+					post: t
+				}) => Object(b.b)(e, t.id)),
+				clickTrackingId: (e, {
+					post: t
+				}) => t.id,
+				imageGalleryCurrentItem: (e, {
+					post: t
+				}) => Object(b.i)(e, {
+					postId: t.id
+				}),
+				pageType: e => Object(h.actionInfo)(e).pageType
+			}));
+			class w extends s.a.Component {
 				constructor() {
 					super(...arguments), this.cancelClick = !1
 				}
@@ -1233,27 +1222,26 @@
 						makePostContainerId: d,
 						post: l,
 						onClick: m,
-						onPostContentClick: p,
-						pageType: b,
-						sendEvent: h,
-						style: g,
-						ref: E,
-						shouldAddGalleryViewability: v = !0
-					} = this.props, O = s.a.createElement("div", {
+						pageType: p,
+						sendEvent: b,
+						style: h,
+						ref: g,
+						shouldAddGalleryViewability: E = !0
+					} = this.props, v = s.a.createElement("div", {
 						"data-click-id": this.props["data-click-id"],
-						style: g,
-						ref: E,
+						style: h,
+						ref: g,
 						onMouseUp: e => {
 							0 !== window.getSelection().toString().length && (this.cancelClick = !0, window.setTimeout(() => {
 								this.cancelClick = !1
 							}, 1e3))
 						},
 						onClick: r => {
-							if (!this.cancelClick && r.button < 2 && (e(() => m && m(r, l, t, o, b))(r), p && w(r) && p(r, l)), l.id && o) {
+							if (!this.cancelClick && r.button < 2 && e(() => m && m(r, l, t, o, p))(r), l.id && o) {
 								const {
 									source: e
 								} = Object(i.t)(l, o);
-								e && e.outboundUrl && h(Object(c.c)(l.id, e.outboundUrl))
+								e && e.outboundUrl && b(Object(c.c)(l.id, e.outboundUrl))
 							}
 						},
 						className: Object(_.a)(y.a.WrappedPost, n, `Post ${l.id}`, {
@@ -1262,16 +1250,16 @@
 						"data-testid": "post-container",
 						id: d ? d(l.id) : l.id,
 						tabIndex: -1
-					}, r), S = !!l.media && l.media.type === f.o.VIDEO;
-					return l.isSponsored || S ? s.a.createElement(a.a, {
+					}, r), O = !!l.media && l.media.type === f.o.VIDEO;
+					return l.isSponsored || O ? s.a.createElement(a.a, {
 						post: l,
 						trackDisplay: !0
-					}, O) : l.media && Object(f.E)(l.media) && v ? s.a.createElement(u, {
+					}, v) : l.media && Object(f.E)(l.media) && E ? s.a.createElement(u, {
 						postId: l.id
-					}, O) : O
+					}, v) : v
 				}
 			}
-			t.a = O(Object(E.c)(Object(m.c)(S)))
+			t.a = O(Object(E.a)(Object(m.c)(w)))
 		},
 		"./src/reddit/components/PostMedia/index.tsx": function(e, t, r) {
 			"use strict";
@@ -3470,7 +3458,7 @@
 				}) => {
 					const s = Object(d.c)(e),
 						i = l.find(e => e >= r),
-						c = n ? Object(a.I)(e, {
+						c = n ? Object(a.H)(e, {
 							postId: n
 						}) || Object(o.a)(e, {
 							commentId: n
@@ -3700,4 +3688,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.59f5b1ea90c040756181.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.edcd8d5cf5718ab76d10.js.map

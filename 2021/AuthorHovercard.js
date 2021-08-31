@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.c03ad6d406d3c11ffbd2.js
-// Retrieved at 8/31/2021, 2:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.7a421112a854586d5aee.js
+// Retrieved at 8/31/2021, 6:10:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/lib/delay/index.ts": function(e, t, n) {
@@ -483,10 +483,10 @@
 				}, ce = (e, t) => async (n, r) => {
 					const s = r();
 					await Promise.all([(async () => {
-						if (!Object(C.b)(u.a.BAN_USER)(s) && !Object(E.Q)(s, {
+						if (!Object(C.b)(u.a.BAN_USER)(s) && !Object(E.N)(s, {
 								subredditId: e
 							})) {
-							const t = Object(E.T)(s, {
+							const t = Object(E.Q)(s, {
 								subredditId: e
 							});
 							await n(Object(d.o)(t.name))
@@ -634,7 +634,7 @@
 					apiContext: m
 				}) => {
 					let b = e.map(e => e.type === u.a.SUBREDDIT ? {
-						id: Object(O.E)(d(), e.name),
+						id: Object(O.B)(d(), e.name),
 						name: e.name,
 						type: e.type
 					} : {
@@ -711,7 +711,7 @@
 					apiContext: r
 				}) => {
 					const s = n(),
-						o = Object(O.L)(s, {
+						o = Object(O.I)(s, {
 							identifier: e
 						});
 					if (!o) throw new Error(`actions.subscription -- No subreddit or profile found with id ${e.id}`);
@@ -733,7 +733,7 @@
 							type: e.type,
 							name: o.name
 						},
-						v = () => Object(O.fb)(n(), {
+						v = () => Object(O.cb)(n(), {
 							identifier: x
 						});
 					(v() || (await t(U([x], !0)), v())) && ((await Object(f.b)(r(), a, b)).ok || (t(T({
@@ -1416,7 +1416,7 @@
 					}) => t ? Object(x.d)(e, {
 						subredditId: t
 					}) : void 0,
-					userIsBanned: (e, t) => !!Object(p.m)(t) && Object(p.eb)(e, t),
+					userIsBanned: (e, t) => !!Object(p.m)(t) && Object(p.bb)(e, t),
 					userProfileStyles: (e, t) => Object(b.m)(e, Object(m.m)(e, t.userName)),
 					acceptChats: (e, t) => {
 						const n = Object(m.h)(e, {
@@ -3239,7 +3239,7 @@
 				o = n("./src/reddit/actions/subscription/index.ts"),
 				a = n("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(r.b)(() => Object(s.c)({
-				userIsSubscriber: a.fb
+				userIsSubscriber: a.cb
 			}), (e, {
 				identifier: t
 			}) => ({
@@ -3688,9 +3688,9 @@
 				s = n("./src/reddit/helpers/localStorage/index.ts");
 
 			function o(e) {
-				const [t, n] = Object(r.useState)(Object(s.t)(e));
+				const [t, n] = Object(r.useState)(Object(s.s)(e));
 				return [t, Object(r.useCallback)(() => {
-					n(!0), Object(s.nb)(e)
+					n(!0), Object(s.kb)(e)
 				}, [])]
 			}
 		},
@@ -3703,9 +3703,9 @@
 				s = n("./src/reddit/helpers/localStorage/index.ts");
 
 			function o(e) {
-				const [t, n] = Object(r.useState)(Object(s.u)(e));
+				const [t, n] = Object(r.useState)(Object(s.t)(e));
 				return [t, Object(r.useCallback)(() => {
-					n(!0), Object(s.xb)(e)
+					n(!0), Object(s.ub)(e)
 				}, [])]
 			}
 		},
@@ -3718,9 +3718,9 @@
 				s = n("./src/reddit/helpers/localStorage/index.ts");
 
 			function o(e) {
-				const [t, n] = Object(r.useState)(() => Object(s.v)(e));
+				const [t, n] = Object(r.useState)(() => Object(s.u)(e));
 				return [t, Object(r.useCallback)(() => {
-					n(!0), Object(s.yb)(e)
+					n(!0), Object(s.vb)(e)
 				}, [e])]
 			}
 		},
@@ -3983,4 +3983,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.c03ad6d406d3c11ffbd2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.7a421112a854586d5aee.js.map
