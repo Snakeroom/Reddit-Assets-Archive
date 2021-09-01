@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.122cba880c0fabac3d3b.js
-// Retrieved at 9/1/2021, 5:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.c3c20145371b717ad988.js
+// Retrieved at 9/1/2021, 5:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -3351,9 +3351,13 @@
 						const {
 							data: t
 						} = e;
-						if (this.iframeRef.current && e.source === this.iframeRef.current.contentWindow && q(e))
-							if (t.type === O.a.CreateAccount) this.isAccountCreated = !0;
-							else if (t.type === O.a.Close) this.closedByUser();
+						if (!this.iframeRef.current || e.source !== this.iframeRef.current.contentWindow || !q(e)) return;
+						const {
+							exposeOnboardingExperiment: n,
+							isOnboardingEnabled: s
+						} = this.props;
+						if (t.type === O.a.CreateAccount) this.isAccountCreated = !0;
+						else if (t.type === O.a.Close) this.closedByUser();
 						else if (t.type === O.a.Subscribe) this.onSubscribe(t.subscriptions || t.subredditIds);
 						else if (t.type === O.a.Login) this.onLogIn();
 						else if (t.type === O.a.ChangePassword) this.onChangePassword();
@@ -3373,7 +3377,7 @@
 							this.handleUnlinkSSOSuccess(e)
 						} else t.type === O.a.GoogleOneTapDisplayed ? this.props.isLoggedIn || (this.setIframeStyles({
 							visibility: "visible"
-						}), this.onGoogleOneTapUIViewed()) : t.type === O.a.GoogleOneTapFlowFailed ? this.props.isLoggedIn || this.onGoogleOneTapFlowFailed(t.message) : t.type === O.a.GoogleOneTapSkipped ? this.props.isLoggedIn || (this.props.onGoogleOneTapSkipped && this.props.onGoogleOneTapSkipped(t.reason), this.close()) : t.type === O.a.ShowStep ? this.onShowStep(t.step) : t.type === O.a.PreferenceStatus ? this.onEmailDigestsStatus(t.successfullySet) : this.onSignUp(t.numberSubredditsSelected, t.subredditIds)
+						}), this.onGoogleOneTapUIViewed(), s && n()) : t.type === O.a.GoogleOneTapFlowFailed ? this.props.isLoggedIn || this.onGoogleOneTapFlowFailed(t.message) : t.type === O.a.GoogleOneTapSkipped ? this.props.isLoggedIn || (this.props.onGoogleOneTapSkipped && this.props.onGoogleOneTapSkipped(t.reason), this.close()) : t.type === O.a.ShowStep ? this.onShowStep(t.step) : t.type === O.a.PreferenceStatus ? this.onEmailDigestsStatus(t.successfullySet) : this.onSignUp(t.numberSubredditsSelected, t.subredditIds)
 					}, this.onSubscribe = e => {
 						this.props.onSubscriptionsChanged && this.props.onSubscriptionsChanged(e || [])
 					}, this.onLogIn = () => {
@@ -3382,18 +3386,17 @@
 						this.props.redirectUrl ? this.redirectTo(this.props.redirectUrl) : window.location.reload(!0)
 					}, this.onSignUp = (e, t) => {
 						const {
-							exposeOnboardingExperiment: n,
-							isOnboardingEnabled: s,
-							redirectUrl: o
+							isOnboardingEnabled: n,
+							redirectUrl: s
 						} = this.props;
-						let r = "";
-						if (s && n(), o) r = o;
-						else if ("/" !== window.location.pathname || s) r = window.location.href;
+						let o = "";
+						if (s) o = s;
+						else if ("/" !== window.location.pathname || n) o = window.location.href;
 						else {
 							const n = 0;
-							r = (e || t && t.length || 0) > n ? C.c[C.b.Home] : C.c[C.b.Popular]
+							o = (e || t && t.length || 0) > n ? C.c[C.b.Home] : C.c[C.b.Popular]
 						}
-						this.redirectTo(r, s)
+						this.redirectTo(o, n)
 					}, this.onShowStep = e => {
 						this.currentStep = e, e === O.b.Subscribe && (this.trackResizing = !1, this.setIframeStyles({
 							height: void 0,
@@ -3436,9 +3439,18 @@
 					}
 				}
 				componentDidMount() {
+					const {
+						actionSource: e,
+						exposeIFrameElement: t,
+						exposeOnboardingExperiment: n,
+						isOnboardingEnabled: s,
+						oniFrameLoaded: o,
+						path: r,
+						setRef: a
+					} = this.props;
 					this.iframeRef.current && (this.iframeRef.current.onload = () => {
-						this.props.oniFrameLoaded(this.iframeRef.current, this.props.actionSource), this.focusFirstVisibleIframeInput()
-					}, this.props.setRef && this.props.setRef(this.iframeRef), this.props.exposeIFrameElement && this.props.exposeIFrameElement(this.iframeRef.current)), window.addEventListener("message", this.onMessage)
+						o(this.iframeRef.current, e), this.focusFirstVisibleIframeInput()
+					}, a && a(this.iframeRef), t && t(this.iframeRef.current)), s && [O.c.Index, O.c.Register].includes(r) && n(), window.addEventListener("message", this.onMessage)
 				}
 				componentDidUpdate(e) {
 					this.props.path !== e.path && e.path === O.c.GoogleOneTap && this.iframeRef.current && this.setIframeStyles({
@@ -20289,4 +20301,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePo~5f1ac562", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250", "Governance~ModListing~Reddit~Subreddit", "Chat~Governance~Reddit", "Reddit~StandalonePostPage~reddit-components-MediumPost", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.122cba880c0fabac3d3b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.c3c20145371b717ad988.js.map
