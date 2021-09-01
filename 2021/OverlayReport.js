@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OverlayReport.5016ba06ca6394e69141.js
-// Retrieved at 8/2/2021, 5:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OverlayReport.2c2e946a792ee2f4713c.js
+// Retrieved at 9/1/2021, 3:30:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OverlayReport"], {
 		"./src/chat/components/OverlayReport/index.tsx": function(e, t, s) {
@@ -66,7 +66,7 @@
 								reason: r,
 								userNickname: n.name
 							};
-							await Object(u.b)(a(), o)
+							await Object(u.d)(a(), o)
 						})({
 							user: s,
 							reason: t
@@ -78,7 +78,7 @@
 						}) => {
 							const o = Object(h.a)(e, t),
 								c = Object(h.b)(e, t, s);
-							o && await Object(u.c)(r(), o, c)
+							o && await Object(u.e)(r(), o, c)
 						})(t, s, a))
 					}
 				}));
@@ -404,4 +404,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayReport.5016ba06ca6394e69141.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayReport.2c2e946a792ee2f4713c.js.map

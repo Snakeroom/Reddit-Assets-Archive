@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RedesignChat.24f14503054b3f9ec4de.js
-// Retrieved at 8/31/2021, 4:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RedesignChat.57e44e9856ebfc6f1ad4.js
+// Retrieved at 9/1/2021, 3:30:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RedesignChat"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -48,8 +48,8 @@
 				C = n("./src/chat/actions/platform.ts"),
 				E = n("./src/chat/actions/session.ts"),
 				_ = n("./src/chat/actions/user.ts"),
-				v = n("./node_modules/react-redux/es/index.js"),
-				y = n("./src/lib/CSSVariableProvider/index.tsx"),
+				y = n("./node_modules/react-redux/es/index.js"),
+				v = n("./src/lib/CSSVariableProvider/index.tsx"),
 				S = n("./src/lib/lessComponent.tsx"),
 				N = n("./src/chat/components/MinimizedPortalContainer/index.tsx"),
 				T = n("./src/chat/components/Root/index.tsx"),
@@ -68,14 +68,14 @@
 			const U = S.a.wrapped(e => s.a.createElement("div", {
 					className: e.className
 				}, e.children), "BasePortalContainer", A.a),
-				k = S.a.wrapped(e => s.a.createElement("div", {
+				I = S.a.wrapped(e => s.a.createElement("div", {
 					className: e.className,
 					style: {
 						width: `${B(M.width)}px`,
 						height: `${B(M.height)}px`
 					}
 				}, e.children), "EmbedPortalContainer", A.a),
-				I = S.a.wrapped(e => s.a.createElement("div", {
+				k = S.a.wrapped(e => s.a.createElement("div", {
 					className: e.className,
 					style: {
 						width: `${B(D.width)}px`,
@@ -91,22 +91,22 @@
 			function F(e) {
 				switch (e.container) {
 					case w.a.EMBED:
-						return s.a.createElement(k, null, e.children);
-					case w.a.HIDDEN:
 						return s.a.createElement(I, null, e.children);
+					case w.a.HIDDEN:
+						return s.a.createElement(k, null, e.children);
 					case w.a.FULL:
 						return s.a.createElement(L, null, e.children);
 					case w.a.MINIMIZED:
 						return s.a.createElement(q, null);
 					default:
-						return s.a.createElement(k, null, e.children)
+						return s.a.createElement(I, null, e.children)
 				}
 			}
 			var G = n("./src/chat/customMiddleware/channelsFilter.ts"),
 				H = n("./src/chat/customMiddleware/chatThemeKey.ts"),
 				Q = n("./src/chat/customMiddleware/containerSize.ts"),
-				K = n("./src/chat/customMiddleware/draftMessageText.ts"),
-				$ = n("./src/chat/customMiddleware/iframeDispatcher.ts"),
+				$ = n("./src/chat/customMiddleware/draftMessageText.ts"),
+				K = n("./src/chat/customMiddleware/iframeDispatcher.ts"),
 				Y = n("./src/chat/customMiddleware/lastSelectedChannel.ts"),
 				W = n("./src/chat/customMiddleware/loggedOutPreferencesSync.ts"),
 				V = n("./src/chat/customMiddleware/sendbirdToken.ts"),
@@ -126,35 +126,34 @@
 					...e.chat.promos
 				}), t),
 				de = (e, t) => {
-					var n, c;
+					var n;
 					const {
-						account: s,
-						language: r,
-						loid: a,
-						prefs: i,
-						reddaid: o,
-						session: d,
-						sessionTracker: u
+						account: c,
+						language: s,
+						loid: r,
+						prefs: a,
+						reddaid: i,
+						session: o,
+						sessionTracker: d
 					} = e.user;
 					return t.user = {
 						...t.user,
-						account: s ? {
-							commentKarma: (null === (n = s.karma) || void 0 === n ? void 0 : n.fromComments) || 0,
-							created: s.created,
-							inChat: s.inChat,
-							id: s.id,
-							isNSFW: s.isNSFW,
-							linkKarma: (null === (c = s.karma) || void 0 === c ? void 0 : c.fromPosts) || 0,
-							name: s.displayText || "",
+						account: c ? {
+							created: c.created,
+							inChat: c.inChat,
+							id: c.id,
+							isNSFW: c.isNSFW,
+							name: c.displayText || "",
 							prefNightmode: e.user.prefs.nightmode,
-							profileImg: s.accountIcon
+							profileImg: c.accountIcon,
+							totalKarma: null === (n = c.karma) || void 0 === n ? void 0 : n.total
 						} : null,
-						language: r,
-						loid: a,
-						prefs: i,
-						reddaid: o,
-						sessionTracker: u,
-						session: d && d.unsafeLoggedOut ? null : d
+						language: s,
+						loid: r,
+						prefs: a,
+						reddaid: i,
+						sessionTracker: d,
+						session: o && o.unsafeLoggedOut ? null : o
 					}, t
 				},
 				ue = e => (e.meta = {
@@ -226,8 +225,8 @@
 							gqlContext: xe.gqlContext
 						}
 					}, function(e, t) {
-						const n = Object(v.b)(z)(F);
-						return s.a.createElement("div", null, Object(y.d)(s.a.createElement(n, null, Object(T.a)(e, t)), document.body))
+						const n = Object(y.b)(z)(F);
+						return s.a.createElement("div", null, Object(v.d)(s.a.createElement(n, null, Object(T.a)(e, t)), document.body))
 					}(e, t)),
 					appName: l.m.Chat,
 					history: Object(r.d)({
@@ -238,7 +237,7 @@
 						routes: he.a,
 						apiContext: pe.apiContext,
 						gqlContext: xe.gqlContext
-					}), pe.middleware, X.a, V.a, $.a, W.a, Object(Z.a)(t), Q.a, H.a, G.a, K.a, ee.a, Y.a, J.a],
+					}), pe.middleware, X.a, V.a, K.a, W.a, Object(Z.a)(t), Q.a, H.a, G.a, $.a, ee.a, Y.a, J.a],
 					modifyInitialData: ({
 						initialData: t,
 						browserHistory: n
@@ -468,7 +467,7 @@
 			})), n.d(t, "d", (function() {
 				return _
 			})), n.d(t, "f", (function() {
-				return v
+				return y
 			}));
 			var c = n("./node_modules/reselect/es/index.js"),
 				s = n("./src/lib/fastdom/index.ts"),
@@ -527,7 +526,7 @@
 						const n = C(t());
 						Object(d.c)(n)
 					}
-				}, v = e => async (t, n) => {
+				}, y = e => async (t, n) => {
 					const c = n();
 					if (Object(m.a)(c)) {
 						const n = Object(l.e)(c),
@@ -775,7 +774,7 @@
 			})), n.d(t, "b", (function() {
 				return E
 			})), n.d(t, "i", (function() {
-				return v
+				return y
 			}));
 			var c = n("./node_modules/reselect/es/index.js"),
 				s = n("./src/reddit/constants/experiments.ts"),
@@ -819,11 +818,11 @@
 					experimentName: s.eb,
 					experimentEligibilitySelector: a.e
 				}), i.a),
-				v = Object(c.a)(_, e => e === s.Mc.Enabled)
+				y = Object(c.a)(_, e => e === s.Mc.Enabled)
 		},
 		"./src/redditGQL/operations/BadgeIndicators.json": function(e) {
 			e.exports = JSON.parse('{"id":"712476d48c90"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.24f14503054b3f9ec4de.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.57e44e9856ebfc6f1ad4.js.map

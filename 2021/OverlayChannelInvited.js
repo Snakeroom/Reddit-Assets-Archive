@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OverlayChannelInvited.497cd0ec72f9907647e6.js
-// Retrieved at 8/4/2021, 6:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OverlayChannelInvited.0d192251cb1d226cfe7b.js
+// Retrieved at 9/1/2021, 3:30:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OverlayChannelInvited"], {
 		"./src/chat/components/OverlayChannelInvited/index.m.less": function(e, t, a) {
@@ -58,8 +58,8 @@
 			}, "MediaObject", y.a);
 			var _ = a("./src/chat/controls/Overlay/index.tsx"),
 				B = a("./src/chat/controls/OverlayControlBar/index.tsx"),
-				k = a("./src/chat/controls/Title/index.tsx"),
-				v = a("./src/chat/helpers/time/index.tsx"),
+				v = a("./src/chat/controls/Title/index.tsx"),
+				k = a("./src/chat/helpers/time/index.tsx"),
 				N = a("./src/chat/icons/Nsfw/index.tsx"),
 				j = a("./src/chat/icons/Userpic/index.tsx"),
 				T = a("./src/chat/models/Channel/index.ts"),
@@ -80,9 +80,9 @@
 			}) => {
 				if (!e) return null;
 				const {
-					linkKarma: t,
+					totalKarma: t = 0,
 					created: a
-				} = e, n = M._("Redditor since {amount of time}", [M._param("amount of time", Object(v.a)(a))], {
+				} = e, n = M._("Redditor since {amount of time}", [M._param("amount of time", Object(k.a)(a))], {
 					hk: "37XXLN"
 				}), r = M._({
 					"*": "{karma count} karma",
@@ -112,7 +112,7 @@
 					userId: e.id
 				}), l.a.createElement("div", {
 					className: I.a.TitleContainer
-				}, l.a.createElement(k.a, {
+				}, l.a.createElement(v.a, {
 					className: I.a.Title,
 					bold: !0
 				}, e.name), s && l.a.createElement("span", {
@@ -174,10 +174,10 @@
 					O = Object(s.useCallback)(() => {
 						n(Object(m.y)(e)), n(Object(u.n)(e))
 					}, [n, e]),
-					k = Object(s.useCallback)(() => {
+					v = Object(s.useCallback)(() => {
 						d && (n(Object(m.B)(e, d, !0)), n(Object(u.p)(e)))
 					}, [n, e, d]),
-					v = Object(s.useCallback)(() => {
+					k = Object(s.useCallback)(() => {
 						d && (n(Object(m.B)(e, d)), b && n(Object(u.o)()), y && n(Object(u.q)()))
 					}, [n, e, d, b, y]),
 					N = Object(s.useCallback)(() => {
@@ -214,7 +214,7 @@
 						hk: "30ppMU"
 					}),
 					primaryButtonText: j,
-					primaryButtonAction: v,
+					primaryButtonAction: k,
 					secondaryButtonAction: N
 				}, l.a.createElement(Q, {
 					userName: null === (t = null == i ? void 0 : i.inviter) || void 0 === t ? void 0 : t.name,
@@ -224,7 +224,7 @@
 					secondaryButtonText: M._("Ignore", null, {
 						hk: "1ws6QH"
 					}),
-					secondaryButtonAction: k,
+					secondaryButtonAction: v,
 					primaryButtonText: M._("Accept", null, {
 						hk: "249yqF"
 					}),
@@ -318,4 +318,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayChannelInvited.497cd0ec72f9907647e6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayChannelInvited.0d192251cb1d226cfe7b.js.map
