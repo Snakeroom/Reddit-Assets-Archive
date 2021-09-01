@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.5a55b21dc82bbcb7d035.js
-// Retrieved at 9/1/2021, 5:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.2c54455978b4a27e344e.js
+// Retrieved at 9/1/2021, 7:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -10866,30 +10866,31 @@
 			n.d(t, "b", (function() {
 				return c
 			})), n.d(t, "a", (function() {
-				return i
+				return o
 			}));
 			var s = n("./src/lib/constants/index.ts"),
 				a = n("./src/lib/convertToCamelCase/index.ts");
 			const r = `${s.Gb.Account}_`,
 				c = e => {
-					if (null == e ? void 0 : e.length) return e.reduce((e, t) => t ? {
-						...e,
-						[t.id]: o(t)
-					} : e, {})
+					if (null == e ? void 0 : e.length) return e.reduce((e, t) => {
+						const n = function(e) {
+							var t;
+							return (null == e ? void 0 : e.profile) && {
+								id: e.id,
+								name: e.name,
+								created: e.profile && new Date(e.profile.createdAt).getTime(),
+								profileImg: e.profile.styles.icon || e.profile.styles.legacyIcon.url,
+								isNSFW: e.profile.isNsfw,
+								totalKarma: null === (t = e.karma) || void 0 === t ? void 0 : t.total
+							}
+						}(t);
+						return n ? {
+							...e,
+							[n.id]: n
+						} : e
+					}, {})
 				};
-
-			function o(e) {
-				var t;
-				return {
-					id: e.id,
-					name: e.name,
-					created: new Date(e.profile.createdAt).getTime(),
-					profileImg: e.profile.styles.icon || e.profile.styles.legacyIcon.url,
-					isNSFW: e.profile.isNsfw,
-					totalKarma: null === (t = e.karma) || void 0 === t ? void 0 : t.total
-				}
-			}
-			const i = e => {
+			const o = e => {
 				const t = (e => (e && e.id && (e.id.includes(r) ? e.id = e.id : e.id = r + e.id), e))(e);
 				return Object(a.a)(t)
 			}
@@ -14404,4 +14405,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.5a55b21dc82bbcb7d035.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.2c54455978b4a27e344e.js.map
