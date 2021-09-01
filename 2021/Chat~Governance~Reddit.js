@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.f091cfeadcf8301d298b.js
-// Retrieved at 9/1/2021, 3:30:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.a7b1769a39ca83c4f42d.js
+// Retrieved at 9/1/2021, 5:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -406,7 +406,7 @@
 					m = Object(s.c)(o.p.CHAT, o.x.CHAT_SHOW_THEMES_PROMPT_COUNT_KEY, i || "unknown");
 					const n = Object(s.b)(m);
 					let r = null == n ? 0 : n;
-					Object(c.b)(t) && e.dispatch(Object(a.chatThemeShowPromptCountSetAction)(++r))
+					Object(c.c)(t) && e.dispatch(Object(a.chatThemeShowPromptCountSetAction)(++r))
 				});
 			t.a = e => {
 				if ("undefined" == typeof window) return l.a;
@@ -1859,33 +1859,35 @@
 		},
 		"./src/chat/selectors/experiments.ts": function(e, t, i) {
 			"use strict";
-			i.d(t, "h", (function() {
-				return m
-			})), i.d(t, "f", (function() {
-				return h
+			i.d(t, "i", (function() {
+				return _
 			})), i.d(t, "g", (function() {
-				return g
-			})), i.d(t, "b", (function() {
-				return w
-			})), i.d(t, "a", (function() {
-				return y
+				return p
+			})), i.d(t, "h", (function() {
+				return b
 			})), i.d(t, "c", (function() {
+				return g
+			})), i.d(t, "a", (function() {
+				return w
+			})), i.d(t, "d", (function() {
+				return y
+			})), i.d(t, "f", (function() {
 				return v
 			})), i.d(t, "e", (function() {
 				return E
-			})), i.d(t, "d", (function() {
+			})), i.d(t, "b", (function() {
 				return T
 			}));
 			var n, r, s = i("./node_modules/lodash/memoize.js"),
 				o = i.n(s),
 				d = i("./node_modules/reselect/es/index.js");
 			! function(e) {
-				e.SubredditChat = "chat_subreddit", e.SubredditChatNotifcationFtux = "chat_subreddit_notification_ftux", e.EconRpanAvatar = "web_econ_avatar_in_rpan", e.UiRefreshBubblePreset = "ui_refresh_bubble_preset", e.UiRefreshBubblePresetColoredSend = "ui_refresh_bubble_preset_colored_send", e.D2xChatNicknamePainted = "d2x_chat_nickname_painted", e.D2XChatQuickActionsChannels = "d2x_chat_quickactions_channels", e.D2xChatFilterGroupDirect = "d2x_chat_filter_group_direct"
+				e.SubredditChat = "chat_subreddit", e.SubredditChatNotifcationFtux = "chat_subreddit_notification_ftux", e.EconRpanAvatar = "web_econ_avatar_in_rpan", e.UiRefreshBubblePreset = "ui_refresh_bubble_preset", e.UiRefreshBubblePresetColoredSend = "ui_refresh_bubble_preset_colored_send", e.D2xChatNicknamePainted = "d2x_chat_nickname_painted", e.D2XChatQuickActionsChannels = "d2x_chat_quickactions_channels", e.D2xChatFilterGroupDirect = "d2x_chat_filter_group_direct", e.ChatInviteMessagePreview = "chat_preview_comment"
 			}(n || (n = {})),
 			function(e) {
 				e.Control1 = "control_1", e.Control2 = "control_2"
 			}(r || (r = {}));
-			var a, l, u, c;
+			var a, l, u;
 			! function(e) {
 				e.JustEnabled = "just_enabled", e.Prompt = "prompt"
 			}(a || (a = {})),
@@ -1894,31 +1896,29 @@
 			}(l || (l = {})),
 			function(e) {
 				e.QuickActionBlock = "quick_action_block", e.QuickActionSpam = "quick_action_spam"
-			}(u || (u = {})),
-			function(e) {
-				e.Enabled = "enabled"
-			}(c || (c = {}));
-			var _ = i("./src/chat/tracking/events/experiment.ts");
-			const m = e => !!e.user.experiments[n.SubredditChat] || !!e.user.chatExperiments.userSubredditChatEnabled,
-				p = e => {
+			}(u || (u = {}));
+			var c = i("./src/chat/tracking/events/experiment.ts");
+			const _ = e => !!e.user.experiments[n.SubredditChat] || !!e.user.chatExperiments.userSubredditChatEnabled,
+				m = e => {
 					if (!(e => e === r.Control1 || e === r.Control2)(e)) return e || void 0
 				},
-				h = e => !!e.user.experiments[n.EconRpanAvatar],
-				f = o()((e, t, i) => {
-					Object(_.a)(t, i)
+				p = e => !!e.user.experiments[n.EconRpanAvatar],
+				h = o()((e, t, i) => {
+					Object(c.a)(t, i)
 				}),
-				b = Object(d.a)(e => e, e => e.experiments.models, (e, t) => t, (e, t, i) => {
+				f = Object(d.a)(e => e, e => e.experiments.models, (e, t) => t, (e, t, i) => {
 					var n;
 					const r = t[i],
 						s = null === (n = t[i]) || void 0 === n ? void 0 : n.variant;
-					return s && f(i, e, r), s
+					return s && h(i, e, r), s
 				}),
-				g = Object(d.a)(e => b(e, n.UiRefreshBubblePreset), e => Boolean(p(e))),
-				w = Object(d.a)(e => b(e, n.UiRefreshBubblePreset), e => e === a.Prompt),
-				y = Object(d.a)(e => b(e, n.D2xChatFilterGroupDirect), e => e === c.Enabled),
-				v = Object(d.a)(e => b(e, n.D2XChatQuickActionsChannels), e => e === u.QuickActionBlock),
-				E = Object(d.a)(e => b(e, n.D2XChatQuickActionsChannels), e => e === u.QuickActionSpam),
-				T = Object(d.a)(e => b(e, n.D2XChatQuickActionsChannels), e => Boolean(p(e)))
+				b = Object(d.a)(e => f(e, n.UiRefreshBubblePreset), e => Boolean(m(e))),
+				g = Object(d.a)(e => f(e, n.UiRefreshBubblePreset), e => e === a.Prompt),
+				w = Object(d.a)(e => f(e, n.D2xChatFilterGroupDirect), e => "enabled" === e),
+				y = Object(d.a)(e => f(e, n.D2XChatQuickActionsChannels), e => e === u.QuickActionBlock),
+				v = Object(d.a)(e => f(e, n.D2XChatQuickActionsChannels), e => e === u.QuickActionSpam),
+				E = Object(d.a)(e => f(e, n.D2XChatQuickActionsChannels), e => Boolean(m(e))),
+				T = Object(d.a)(e => f(e, n.ChatInviteMessagePreview), e => "enabled" === e)
 		},
 		"./src/chat/selectors/members.ts": function(e, t, i) {
 			"use strict";
@@ -2520,13 +2520,13 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("144122"),
+				buildNumber: r("144130"),
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1630523086"),
+				})("1630525377"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -5004,14 +5004,14 @@
 					}))
 				},
 				z = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c9a828c2dabf0258f14bbf16ef3556d68b13f881c-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c75dda63b938464813fb05ce60338f7b2edf3e940-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${v.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "9a828c2dabf0258f14bbf16ef3556d68b13f881c-production",
+						release: "75dda63b938464813fb05ce60338f7b2edf3e940-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -5505,7 +5505,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "9a828c2dabf0258f14bbf16ef3556d68b13f881c-production",
+						releaseClient: "75dda63b938464813fb05ce60338f7b2edf3e940-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -40744,4 +40744,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.f091cfeadcf8301d298b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.a7b1769a39ca83c4f42d.js.map
