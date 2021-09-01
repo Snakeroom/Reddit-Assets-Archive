@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.edcd8d5cf5718ab76d10.js
-// Retrieved at 8/31/2021, 6:10:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.c0ba39822c561ec63bcf.js
+// Retrieved at 9/1/2021, 12:30:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, r) {
@@ -964,11 +964,11 @@
 					apiContext: i
 				}) => {
 					const c = Object(a.b)(s());
-					await Object(o.c)(i(), e, t, r, c)
+					await Object(o.e)(i(), e, t, r, c)
 				}, u = () => async (e, t, {
 					apiContext: r
 				}) => {
-					const n = await Object(o.b)(r());
+					const n = await Object(o.d)(r());
 					n.ok && e(d(n.body))
 				}
 		},
@@ -1866,12 +1866,16 @@
 		},
 		"./src/reddit/endpoints/snoovatar/index.ts": function(e, t, r) {
 			"use strict";
-			r.d(t, "b", (function() {
+			r.d(t, "d", (function() {
 				return c
-			})), r.d(t, "c", (function() {
+			})), r.d(t, "e", (function() {
 				return d
-			})), r.d(t, "a", (function() {
+			})), r.d(t, "c", (function() {
 				return l
+			})), r.d(t, "a", (function() {
+				return u
+			})), r.d(t, "b", (function() {
+				return m
 			}));
 			var n = r("./src/config.ts"),
 				s = r("./src/lib/constants/index.ts"),
@@ -1903,7 +1907,33 @@
 				}],
 				customizable_classes: [],
 				capability_required: null,
-				state: "DISABLED",
+				state: "ENABLED",
+				tags: ["achievement"],
+				available_for_closet: !0
+			}, u = {
+				id: "achievement_body_012",
+				section_id: "top_body_tops",
+				assets: [{
+					accessory_id: "achievement_body_012",
+					slot: 40,
+					image_url: "https://i.redd.it/snoovatar/snoo_assets/XvgCbVDmabY_achievement_body_012.svg"
+				}],
+				customizable_classes: ["body"],
+				capability_required: null,
+				state: "ENABLED",
+				tags: ["achievement"],
+				available_for_closet: !0
+			}, m = {
+				id: "achievement_body_bottom_012",
+				section_id: "bottom_body_bottoms",
+				assets: [{
+					accessory_id: "achievement_body_bottom_012",
+					slot: 30,
+					image_url: "https://i.redd.it/snoovatar/snoo_assets/_Fx-Iq6Aueg_achievement_body_bottom_012.svg"
+				}],
+				customizable_classes: ["body"],
+				capability_required: null,
+				state: "ENABLED",
 				tags: ["achievement"],
 				available_for_closet: !0
 			}
@@ -3688,4 +3718,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.edcd8d5cf5718ab76d10.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.c0ba39822c561ec63bcf.js.map
