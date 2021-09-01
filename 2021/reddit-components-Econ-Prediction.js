@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.e5edb40143fe84862417.js
-// Retrieved at 8/31/2021, 6:10:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.b25e64844e3e8ee251f5.js
+// Retrieved at 9/1/2021, 1:20:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction"], {
 		"./src/lib/constants/specialMembership.ts": function(e, t, n) {
@@ -392,8 +392,8 @@
 				_ = n("./src/reddit/helpers/trackers/predictions.ts"),
 				g = n("./src/reddit/hooks/useTracking.ts"),
 				v = n("./src/reddit/models/Prediction/index.ts"),
-				P = n("./src/reddit/models/Toast/index.ts"),
-				x = n("./src/reddit/models/Vote/index.ts"),
+				x = n("./src/reddit/models/Toast/index.ts"),
+				P = n("./src/reddit/models/Vote/index.ts"),
 				O = n("./src/reddit/selectors/experiments/econ/index.ts"),
 				C = n("./src/reddit/selectors/poll/index.ts"),
 				y = n("./src/reddit/selectors/postCreations.ts"),
@@ -571,7 +571,7 @@
 			});
 			const te = e => e(Object(E.f)({
 				duration: E.a,
-				kind: P.b.Error,
+				kind: x.b.Error,
 				text: ee._("Error: Failed to change prediction selection, please try again later", null, {
 					hk: "WLVPy"
 				})
@@ -642,7 +642,7 @@
 										prediction: s
 									})), n(Object(E.f)({
 										duration: E.a,
-										kind: P.b.SuccessCommunity,
+										kind: x.b.SuccessCommunity,
 										text: ee._("Your prediction has been updated", null, {
 											hk: "4wwhZ6"
 										})
@@ -704,8 +704,8 @@
 				ge = n("./src/reddit/components/Econ/Prediction/PredictionStatus/index.m.less"),
 				ve = n.n(ge);
 			const {
-				fbt: Pe
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), xe = ({
+				fbt: xe
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), Pe = ({
 				endsAt: e,
 				resolvedOptionId: t,
 				isCoins: n
@@ -713,15 +713,15 @@
 				className: ve.a.statusBar
 			}, n && i.a.createElement(_e.a, {
 				className: ve.a.clockIcon
-			}), t ? Pe._("Prediction ended", null, {
+			}), t ? xe._("Prediction ended", null, {
 				hk: "3o79Ig"
-			}) : Pe._("Ended. Awaiting results", null, {
+			}) : xe._("Ended. Awaiting results", null, {
 				hk: "1szagh"
 			})) : i.a.createElement("div", {
 				className: ve.a.statusBar
 			}, n && i.a.createElement(_e.a, {
 				className: ve.a.clockIcon
-			}), Pe._("Prediction ends in {expirationDuration}", [Pe._param("expirationDuration", Object(u.a)(new Date(e), !0))], {
+			}), xe._("Prediction ends in {expirationDuration}", [xe._param("expirationDuration", Object(u.a)(new Date(e), !0))], {
 				hk: "3ysXEE"
 			})), Oe = ({
 				endsAt: e,
@@ -731,15 +731,15 @@
 				isCoins: o
 			}) => t === v.b.Cancelled || t === v.b.CancelInProgress ? i.a.createElement("div", {
 				className: ve.a.statusBar
-			}, Pe._("Canceled", null, {
+			}, xe._("Canceled", null, {
 				hk: "1SL2bC"
 			})) : i.a.createElement("div", null, s > 0 && o && i.a.createElement("div", {
 				className: ve.a.statusBar
 			}, i.a.createElement(G.a, {
 				className: ve.a.coinIcon
-			}), s, " ", Pe._("added by participants", null, {
+			}), s, " ", xe._("added by participants", null, {
 				hk: "PSq3T"
-			})), i.a.createElement(xe, {
+			})), i.a.createElement(Pe, {
 				endsAt: e,
 				resolvedOptionId: n,
 				isCoins: o
@@ -1002,7 +1002,7 @@
 						const n = e.amount;
 						if (G(!1), ie) return I({
 							duration: 5e3,
-							kind: P.b.Error,
+							kind: x.b.Error,
 							text: We._("Error: Failed to make prediction. This prediction has already ended", null, {
 								hk: "22UWEr"
 							})
@@ -1022,9 +1022,9 @@
 								optionId: B,
 								postId: C,
 								price: n
-							}), t && E.voteState < x.a.upvoted && C && (k(C), Y()), M(!1), L(null), m ? D(!0) : I({
+							}), t && E.voteState < P.a.upvoted && C && (k(C), Y()), M(!1), L(null), m ? D(!0) : I({
 								duration: 5e3,
-								kind: P.b.SuccessCommunity,
+								kind: x.b.SuccessCommunity,
 								text: We._("Thanks! See if you're right in {timeToResult}", [We._param("timeToResult", Object(u.a)(new Date(X), !0))], {
 									hk: "3ZSdoo"
 								})
@@ -1032,7 +1032,7 @@
 						} catch (s) {
 							M(!1), L(null), I({
 								duration: 5e3,
-								kind: P.b.Error,
+								kind: x.b.Error,
 								text: We._("Error: Failed to make prediction, please try again later", null, {
 									hk: "1tECsx"
 								})
@@ -1059,7 +1059,7 @@
 						} catch (e) {
 							I({
 								duration: 5e3,
-								kind: P.b.Error,
+								kind: x.b.Error,
 								text: We._("Error: Failed to resolve prediction, please try again later", null, {
 									hk: "3Ve2Mb"
 								})
@@ -1295,6 +1295,17 @@
 
 			function m(e) {
 				return l(e, e => e.e === s.o).map(e => e.u)
+			}
+		},
+		"./src/reddit/hooks/useLocale.ts": function(e, t, n) {
+			"use strict";
+			var s = n("./src/lib/constants/index.ts"),
+				o = n("./node_modules/react-redux/es/index.js"),
+				r = n("./src/reddit/selectors/meta.ts");
+			t.a = "undefined" == typeof document ? function() {
+				return Object(o.e)(r.i) || s.C
+			} : function() {
+				return document.documentElement.lang || s.C
 			}
 		},
 		"./src/reddit/hooks/usePageLayer.ts": function(e, t, n) {
@@ -1688,9 +1699,9 @@
 			})), n.d(t, "f", (function() {
 				return v
 			})), n.d(t, "i", (function() {
-				return P
-			})), n.d(t, "q", (function() {
 				return x
+			})), n.d(t, "q", (function() {
+				return P
 			})), n.d(t, "h", (function() {
 				return O
 			})), n.d(t, "y", (function() {
@@ -1789,13 +1800,13 @@
 					}
 				};
 
-			function P(e, t) {
+			function x(e, t) {
 				return (null == e ? void 0 : e.length) ? Object(o.a)(e.map(e => t[e]).filter(Boolean)) : f
 			}
-			const x = (e, t, n) => {
+			const P = (e, t, n) => {
 					var o;
 					if (!s.d.spBadges(e)) return f;
-					return P(null === (o = e.users.appliedBadges[n]) || void 0 === o ? void 0 : o[t], e.badges.models)
+					return x(null === (o = e.users.appliedBadges[n]) || void 0 === o ? void 0 : o[t], e.badges.models)
 				},
 				O = (e, t) => {
 					const n = e.economics.subredditPremium[t.subredditId];
@@ -1961,4 +1972,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.e5edb40143fe84862417.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.b25e64844e3e8ee251f5.js.map

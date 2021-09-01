@@ -1,7 +1,163 @@
-// https://www.redditstatic.com/desktop2x/PowerupsPremiumUpsellModal.e2ea34cb16ec5f335ede.js
-// Retrieved at 8/30/2021, 5:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PowerupsPremiumUpsellModal.83744c6658bca94254bb.js
+// Retrieved at 9/1/2021, 1:20:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PowerupsPremiumUpsellModal"], {
+		"./src/lib/currency/centsToDollars/index.ts": function(e, t, r) {
+			"use strict";
+			r.d(t, "a", (function() {
+				return o
+			}));
+			var n = r("./src/lib/currency/cleanNumber/index.ts");
+
+			function o(e, t) {
+				const r = Object(n.a)(e),
+					o = parseInt(r) / 100;
+				return Math.floor(o) !== o || t ? o.toFixed(2) : String(o)
+			}
+		},
+		"./src/lib/currency/cleanNumber/index.ts": function(e, t, r) {
+			"use strict";
+
+			function n(e) {
+				return e.replace(/[^0-9.]/g, "").replace(/^0+/, "") || "0"
+			}
+			r.d(t, "a", (function() {
+				return n
+			}))
+		},
+		"./src/lib/currency/currencies.ts": function(e, t, r) {
+			"use strict";
+			r.d(t, "b", (function() {
+				return n
+			})), r.d(t, "c", (function() {
+				return s
+			})), r.d(t, "d", (function() {
+				return c
+			})), r.d(t, "a", (function() {
+				return i
+			})), r.d(t, "f", (function() {
+				return a
+			})), r.d(t, "g", (function() {
+				return d
+			})), r.d(t, "e", (function() {
+				return u
+			}));
+			var n, o = r("./node_modules/fbt/lib/FbtPublic.js");
+			! function(e) {
+				e.Real = "real", e.Crypto = "crypto", e.Reddit = "reddit"
+			}(n || (n = {}));
+			const s = "USD",
+				c = "ETH",
+				i = "COINS",
+				a = [c, "BTC"],
+				d = [i, "SUBREDDIT_POINTS", "GAME_TOKENS"],
+				u = {
+					COINS: () => o.fbt._("Coins", null, {
+						hk: "1T2Y4p"
+					}),
+					SUBREDDIT_POINTS: () => o.fbt._("Subreddit points", null, {
+						hk: "1ytOO3"
+					}),
+					GAME_TOKENS: () => o.fbt._("Game tokens", null, {
+						hk: "16BUrU"
+					})
+				}
+		},
+		"./src/lib/localizeCurrency/index.ts": function(e, t, r) {
+			"use strict";
+			r.d(t, "a", (function() {
+				return u
+			})), r.d(t, "b", (function() {
+				return l
+			}));
+			var n = r("./node_modules/@reddit/i18n-tools/runtime/helpers/locale/constants.js"),
+				o = r("./src/lib/currency/centsToDollars/index.ts"),
+				s = r("./src/lib/currency/currencies.ts"),
+				c = r("./src/lib/prettyPrintNumber/index.ts"),
+				i = r("./src/reddit/helpers/governance/tokens.ts");
+			const a = (() => {
+					try {
+						return "1E4 bits" === new Intl.NumberFormat("en", {
+							style: "unit",
+							unit: "bit",
+							unitDisplay: "long",
+							notation: "scientific"
+						}).format(1e4)
+					} catch (e) {
+						return !1
+					}
+				})(),
+				d = () => a,
+				u = (e, {
+					locale: t = n.DEFAULT_LOCALE,
+					pretty: r,
+					formatOptions: o
+				} = {}) => {
+					const s = Number(e);
+					return d() ? r ? Object(c.b)(s) : new Intl.NumberFormat(t, o).format(s) : m(s, r, t)
+				},
+				l = (e, t = {}) => {
+					const {
+						locale: r = n.DEFAULT_LOCALE,
+						pretty: c,
+						formatOptions: a,
+						displayConversion: u,
+						forceDecimals: l,
+						currency: f = t.currency || (t.type ? b(t.type) : s.c),
+						type: y = t.type || (t.currency ? p(t.currency) : s.b.Real)
+					} = t, g = Number(e), O = String(e);
+					switch (y) {
+						case s.b.Reddit: {
+							const e = s.e[f],
+								t = e ? e() : f;
+							return d() ? new Intl.NumberFormat(r, {
+								currencyDisplay: "symbol",
+								...a
+							}).format(g) + " " + t : m(g, c, r, t)
+						}
+						case s.b.Crypto: {
+							if (c) {
+								return Object(i.c)(O, u) + " " + f
+							}
+							const e = Number(Object(i.b)(O, u));
+							return d() ? new Intl.NumberFormat(r, {
+								style: "currency",
+								currency: f,
+								currencyDisplay: "symbol",
+								minimumFractionDigits: 0,
+								maximumFractionDigits: 0,
+								...a
+							}).format(e) : m(e, c, r, f)
+						}
+						case s.b.Real:
+						default: {
+							const e = Number(Object(o.a)(O, l));
+							return d() ? new Intl.NumberFormat(r, {
+								style: "currency",
+								currency: f,
+								currencyDisplay: "symbol",
+								notation: c ? "compact" : "standard",
+								...a
+							}).format(e) : m(e, c, r, f)
+						}
+					}
+				},
+				m = (e, t, r, n) => {
+					return (t ? Object(c.b)(e) : e.toLocaleString(r)) + (n ? " " + n : "")
+				},
+				p = e => s.g.includes(e.toUpperCase()) ? s.b.Reddit : s.f.includes(e.toUpperCase()) ? s.b.Crypto : s.b.Real,
+				b = e => {
+					switch (e) {
+						case s.b.Crypto:
+							return s.d;
+						case s.b.Reddit:
+							return s.a;
+						case s.b.Real:
+						default:
+							return s.c
+					}
+				}
+		},
 		"./src/reddit/actions/gold/productOfferPurchase.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "b", (function() {
@@ -15,47 +171,47 @@
 			})), r.d(t, "d", (function() {
 				return N
 			})), r.d(t, "c", (function() {
-				return M
+				return A
 			})), r.d(t, "a", (function() {
 				return G
 			})), r.d(t, "h", (function() {
-				return R
+				return B
 			})), r.d(t, "e", (function() {
-				return W
+				return q
 			})), r.d(t, "i", (function() {
-				return D
+				return F
 			}));
 			var n = r("./node_modules/fbt/lib/FbtPublic.js"),
 				o = r("./node_modules/lodash/omit.js"),
 				s = r.n(o),
-				a = r("./node_modules/uuid/v4.js"),
-				i = r.n(a),
-				c = r("./src/config.ts"),
+				c = r("./node_modules/uuid/v4.js"),
+				i = r.n(c),
+				a = r("./src/config.ts"),
 				d = r("./src/reddit/constants/modals.ts"),
-				l = r("./src/reddit/actions/toaster.ts"),
-				u = r("./src/lib/addQueryParams/index.ts"),
+				u = r("./src/reddit/actions/toaster.ts"),
+				l = r("./src/lib/addQueryParams/index.ts"),
 				m = r("./src/lib/makeActionCreator/index.ts"),
 				p = r("./src/lib/sentry/index.ts"),
 				b = r("./src/reddit/models/Toast/index.ts"),
 				f = r("./src/reddit/actions/gold/constants.ts"),
-				g = r("./src/reddit/actions/goldPurchaseModals/payment.ts"),
-				y = r("./src/reddit/selectors/gold/productOffers.ts"),
-				h = r("./src/reddit/selectors/goldPurchaseModals.ts"),
-				O = r("./src/reddit/selectors/user.ts"),
+				y = r("./src/reddit/actions/goldPurchaseModals/payment.ts"),
+				g = r("./src/reddit/selectors/gold/productOffers.ts"),
+				O = r("./src/reddit/selectors/goldPurchaseModals.ts"),
+				h = r("./src/reddit/selectors/user.ts"),
 				j = r("./src/reddit/models/Gold/ProductOffer.ts"),
 				P = r("./src/reddit/actions/gold/powerups.ts"),
-				v = r("./src/reddit/actions/modal.ts"),
-				w = r("./src/reddit/endpoints/gold/productOfferPurchase.ts"),
+				w = r("./src/reddit/actions/modal.ts"),
+				v = r("./src/reddit/endpoints/gold/productOfferPurchase.ts"),
 				k = r("./src/reddit/models/Payments/index.ts");
 			const x = () => n.fbt._("Something went wrong during payment", null, {
 					hk: "31kmAa"
 				}),
 				_ = e => e.map(e => e.message).join(" : "),
 				E = (e, t, r) => async (o, s, {
-					gqlContext: a
+					gqlContext: c
 				}) => {
-					const c = i()(),
-						d = await Object(w.f)(a(), c, e, t, r);
+					const a = i()(),
+						d = await Object(v.f)(c(), a, e, t, r);
 					if (d.ok) {
 						const e = d.body,
 							{
@@ -68,105 +224,105 @@
 					throw new Error((() => n.fbt._("Something went wrong during order creation", null, {
 						hk: "19gS4y"
 					}))())
-				}, C = (e, t, r, o, s, a) => async (c, d, {
-					gqlContext: l
+				}, C = (e, t, r, o, s, c) => async (a, d, {
+					gqlContext: u
 				}) => {
-					var u;
+					var l;
 					const m = d(),
-						b = () => c(Object(g.stripeApiError)(n.fbt._("Something went wrong during payment creation", null, {
+						b = () => a(Object(y.stripeApiError)(n.fbt._("Something went wrong during payment creation", null, {
 							hk: "2LgB2E"
 						}))),
 						f = s === j.c.Premium,
 						P = s === j.c.Powerups,
-						v = {};
-					if (P && a) v.powerUps = {
-						subredditId: a,
+						w = {};
+					if (P && c) w.powerUps = {
+						subredditId: c,
 						isAnonymous: r
 					};
 					else if (f) {
-						const e = Object(y.d)(m, {
+						const e = Object(g.d)(m, {
 							provider: k.b.Stripe
 						});
 						if (!e) return;
-						v.premium = {
+						w.premium = {
 							pricePackage: e
 						}
 					}
 					let x, C, I = "";
 					try {
-						I = await c(E(t, o, v))
+						I = await a(E(t, o, w))
 					} catch (N) {
-						return p.c.captureException(N), void(N.message && c(Object(g.stripeApiError)(N.message)))
+						return p.c.captureException(N), void(N.message && a(Object(y.stripeApiError)(N.message)))
 					}
-					c(Object(g.stripeTokenPending)());
-					const S = Object(h.y)(m);
-					if (S || (x = await c(Object(g.validateAndCreateStripeToken)(e)), C = Object(h.v)(m), x)) try {
+					a(Object(y.stripeTokenPending)());
+					const S = Object(O.y)(m);
+					if (S || (x = await a(Object(y.validateAndCreateStripeToken)(e)), C = Object(O.v)(m), x)) try {
 						const t = i()(),
-							n = S || C ? x && C ? Object(w.h)(l(), t, I, x.id) : S ? Object(w.j)(l(), t, I, S) : null : Object(w.i)(l(), t, I, x.id),
+							n = S || C ? x && C ? Object(v.h)(u(), t, I, x.id) : S ? Object(v.j)(u(), t, I, S) : null : Object(v.i)(u(), t, I, x.id),
 							s = await n;
 						if (!(null == s ? void 0 : s.ok)) return void b();
 						const m = s.body.data.createEconPayment;
-						if (null === (u = null == m ? void 0 : m.errors) || void 0 === u ? void 0 : u.length) return void c(Object(g.stripeApiError)(_(m.errors)));
+						if (null === (l = null == m ? void 0 : m.errors) || void 0 === l ? void 0 : l.length) return void a(Object(y.stripeApiError)(_(m.errors)));
 						const {
 							ok: p,
-							payment: y,
+							payment: g,
 							providerExecution: {
-								paymentIntentClientSecret: h
+								paymentIntentClientSecret: O
 							}
 						} = m;
-						if (p && y.status === w.a.ActionRequired) {
-							const t = await e.confirmCardPayment(h),
+						if (p && g.status === v.a.ActionRequired) {
+							const t = await e.confirmCardPayment(O),
 								{
 									error: r
 								} = t;
-							if (r) return void(r.message ? c(Object(g.stripeApiError)(r.message)) : b());
+							if (r) return void(r.message ? a(Object(y.stripeApiError)(r.message)) : b());
 							let n;
-							if (!(n = S ? await Object(w.e)(l(), i()(), y.id, S) : await Object(w.d)(l(), i()(), y.id, x.id, C)).ok) return void b();
+							if (!(n = S ? await Object(v.e)(u(), i()(), g.id, S) : await Object(v.d)(u(), i()(), g.id, x.id, C)).ok) return void b();
 							const o = n.body;
-							if (!o.data.confirmEconPayment.ok || o.data.confirmEconPayment.payment.status !== w.a.Paid) return void b()
-						} else if (p && y.status !== w.a.Paid) return void b();
-						const j = Object(O.k)(d());
-						j && (P && a ? c(R({
-							subredditId: a,
+							if (!o.data.confirmEconPayment.ok || o.data.confirmEconPayment.payment.status !== v.a.Paid) return void b()
+						} else if (p && g.status !== v.a.Paid) return void b();
+						const j = Object(h.k)(d());
+						j && (P && c ? a(B({
+							subredditId: c,
 							powerupsCount: o,
 							user: j,
 							isAnonymous: r
-						})) : f && c(W({
+						})) : f && a(q({
 							user: j
 						})))
 					} catch (N) {
 						p.c.captureException(N), b()
 					}
-				}, I = (e, t, r, n, o) => async (s, a, {
+				}, I = (e, t, r, n, o) => async (s, c, {
 					gqlContext: d
 				}) => {
-					var l;
-					const m = a(),
+					var u;
+					const m = c(),
 						b = n === j.c.Premium,
 						f = n === j.c.Powerups,
-						h = {};
-					if (f && o) h.powerUps = {
+						O = {};
+					if (f && o) O.powerUps = {
 						subredditId: o,
 						isAnonymous: t
 					};
 					else if (b) {
-						const e = Object(y.d)(m, {
+						const e = Object(g.d)(m, {
 							provider: k.b.PayPal
 						});
 						if (!e) return null;
-						h.premium = {
+						O.premium = {
 							pricePackage: e
 						}
 					}
 					let P = "";
 					try {
-						P = await s(E(e, r, h))
+						P = await s(E(e, r, O))
 					} catch (I) {
-						return p.c.captureException(I), I.message && s(Object(g.paypalApiError)(I.message)), null
+						return p.c.captureException(I), I.message && s(Object(y.paypalApiError)(I.message)), null
 					}
-					const v = c.a.redditUrl;
+					const w = a.a.redditUrl;
 					let C = {
-						_o: v,
+						_o: w,
 						o: P,
 						pt: n
 					};
@@ -175,32 +331,32 @@
 						r: o
 					});
 					try {
-						const e = Object(u.a)(`${v}/framedModal/paypal-finish`, {
+						const e = Object(l.a)(`${w}/framedModal/paypal-finish`, {
 								...C,
 								s: !0
 							}),
-							n = Object(u.a)(`${v}/framedModal/paypal-finish`, C),
-							c = i()(),
-							m = await Object(w.g)(d(), c, P, e, n);
+							n = Object(l.a)(`${w}/framedModal/paypal-finish`, C),
+							a = i()(),
+							m = await Object(v.g)(d(), a, P, e, n);
 						if (m && m.ok) {
 							const e = m.body.data.createEconPayment;
-							if (null === (l = null == e ? void 0 : e.errors) || void 0 === l ? void 0 : l.length) return s(Object(g.paypalApiError)(_(e.errors))), null;
-							const n = Object(O.k)(a());
+							if (null === (u = null == e ? void 0 : e.errors) || void 0 === u ? void 0 : u.length) return s(Object(y.paypalApiError)(_(e.errors))), null;
+							const n = Object(h.k)(c());
 							if (e.ok) {
 								const {
-									status: a
+									status: c
 								} = e.payment;
-								if (a === w.a.ActionRequired) return {
+								if (c === v.a.ActionRequired) return {
 									paymentId: e.payment.id,
 									token: e.providerExecution.billingAgreementToken,
 									url: e.providerExecution.billingAgreementApprovalUrl
 								};
-								if ("PAID" === a && n) return o ? s(R({
+								if ("PAID" === c && n) return o ? s(B({
 									subredditId: o,
 									powerupsCount: r,
 									user: n,
 									isAnonymous: t
-								})) : b && s(W({
+								})) : b && s(q({
 									user: n
 								})), null
 							}
@@ -208,51 +364,51 @@
 					} catch (I) {
 						p.c.captureException(I)
 					}
-					return s(Object(g.paypalApiError)(x())), null
+					return s(Object(y.paypalApiError)(x())), null
 				}, S = (e, t) => async (r, n, {
 					gqlContext: o
 				}) => {
 					var s;
 					try {
 						const n = i()(),
-							a = await Object(w.c)(o(), n, e, t);
-						if (a && a.ok) {
-							const e = a.body.data.confirmEconPayment;
-							if (null === (s = null == e ? void 0 : e.errors) || void 0 === s ? void 0 : s.length) return r(Object(g.paypalApiError)(_(e.errors))), !1;
+							c = await Object(v.c)(o(), n, e, t);
+						if (c && c.ok) {
+							const e = c.body.data.confirmEconPayment;
+							if (null === (s = null == e ? void 0 : e.errors) || void 0 === s ? void 0 : s.length) return r(Object(y.paypalApiError)(_(e.errors))), !1;
 							if (e.ok && "PAID" === e.payment.status) return !0
 						}
-					} catch (a) {
-						p.c.captureException(a)
+					} catch (c) {
+						p.c.captureException(c)
 					}
-					return r(Object(g.paypalApiError)(x())), !1
+					return r(Object(y.paypalApiError)(x())), !1
 				}, N = () => async (e, t, {
 					gqlContext: r
 				}) => {
-					e(Object(g.savedCardsPending)());
+					e(Object(y.savedCardsPending)());
 					try {
-						const t = await Object(w.l)(r());
+						const t = await Object(v.l)(r());
 						if (t.ok) {
 							const r = t.body;
-							r.errors && r.errors.length && e(Object(g.stripeApiError)(r.errors[0].message));
+							r.errors && r.errors.length && e(Object(y.stripeApiError)(r.errors[0].message));
 							const {
 								savedStripeCards: n
 							} = r.data.identity, o = n.map(e => s()({
 								...e,
 								cardId: e.id
 							}, "id"));
-							e(Object(g.savedCardsSuccess)(o)), o[0] && e(Object(g.selectSavedCard)(o[0].cardId))
-						} else e(Object(g.stripeApiError)(n.fbt._("Something went wrong getting saved cards", null, {
+							e(Object(y.savedCardsSuccess)(o)), o[0] && e(Object(y.selectSavedCard)(o[0].cardId))
+						} else e(Object(y.stripeApiError)(n.fbt._("Something went wrong getting saved cards", null, {
 							hk: "3p1Q0C"
 						})))
 					} catch (o) {
-						p.c.captureException(o), e(Object(g.savedCardsSuccess)([]))
+						p.c.captureException(o), e(Object(y.savedCardsSuccess)([]))
 					}
-				}, M = e => async (t, r, {
+				}, A = e => async (t, r, {
 					gqlContext: n
 				}) => {
-					t(Object(g._deleteSavedCard)(e));
+					t(Object(y._deleteSavedCard)(e));
 					try {
-						const t = await Object(w.k)(n(), e);
+						const t = await Object(v.k)(n(), e);
 						if (t.error) throw new Error(t.error.type);
 						const r = t.body,
 							{
@@ -262,21 +418,21 @@
 					} catch (o) {
 						p.c.captureException(o)
 					}
-				}, A = Object(m.a)(f.O), T = Object(m.a)(f.P), U = Object(m.a)(f.Q), L = e => async (t, r) => {
-					await t(A(e)), t(Object(l.f)({
+				}, M = Object(m.a)(f.O), T = Object(m.a)(f.P), U = Object(m.a)(f.Q), L = e => async (t, r) => {
+					await t(M(e)), t(Object(u.f)({
 						kind: b.b.Error,
-						duration: l.a,
+						duration: u.a,
 						text: e
 					}))
 				}, G = (e, t, r) => async (o, s, {
-					gqlContext: a
+					gqlContext: c
 				}) => {
 					o(T({
 						subredditId: t,
 						allocatedAt: r
 					}));
 					try {
-						const s = await Object(w.b)(a(), e);
+						const s = await Object(v.b)(c(), e);
 						if (s.ok) {
 							const e = s.body,
 								{
@@ -295,57 +451,57 @@
 							hk: "4yuT5m"
 						})))
 					}
-				}, B = Object(m.a)(f.S), R = e => async (t, r) => {
-					t(B(e)), t(Object(P.l)(e.subredditId, {
+				}, R = Object(m.a)(f.S), B = e => async (t, r) => {
+					t(R(e)), t(Object(P.l)(e.subredditId, {
 						forceLoad: !0,
 						fullData: !1
-					})), t(Object(v.g)(d.a.ECON_POWERUPS_PURCHASE)), t(Object(v.h)(d.a.ECON_POWERUPS_SUCCESS))
-				}, q = Object(m.a)(f.W), W = ({
+					})), t(Object(w.g)(d.a.ECON_POWERUPS_PURCHASE)), t(Object(w.h)(d.a.ECON_POWERUPS_SUCCESS))
+				}, D = Object(m.a)(f.W), q = ({
 					user: e
 				}) => async t => {
-					await t(Object(P.n)(!0)), t(q({
+					await t(Object(P.n)(!0)), t(D({
 						user: e
 					}))
-				}, D = Object(m.a)(f.ab)
+				}, F = Object(m.a)(f.ab)
 		},
 		"./src/reddit/actions/gold/productOffers.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "c", (function() {
 				return I
 			})), r.d(t, "b", (function() {
-				return M
-			})), r.d(t, "a", (function() {
 				return A
+			})), r.d(t, "a", (function() {
+				return M
 			}));
 			var n = r("./node_modules/fbt/lib/FbtPublic.js"),
 				o = r("./src/lib/makeActionCreator/index.ts"),
 				s = r("./src/lib/sentry/index.ts"),
-				a = r("./src/reddit/actions/toaster.ts"),
+				c = r("./src/reddit/actions/toaster.ts"),
 				i = r("./src/reddit/models/Gold/ProductOffer.ts"),
-				c = r("./src/reddit/models/Toast/index.ts"),
+				a = r("./src/reddit/models/Toast/index.ts"),
 				d = r("./src/reddit/endpoints/gold/productOfferPurchase.ts"),
-				l = r("./src/lib/makeGqlRequest/index.ts"),
-				u = r("./src/redditGQL/operations/GlobalProductOffers.json"),
+				u = r("./src/lib/makeGqlRequest/index.ts"),
+				l = r("./src/redditGQL/operations/GlobalProductOffers.json"),
 				m = r("./src/redditGQL/operations/PremiumProductOfferSubscriptions.json"),
 				p = r("./src/redditGQL/operations/ProductOffers.json");
 			var b = r("./src/reddit/selectors/gold/productOffers.ts"),
 				f = r("./src/reddit/actions/gold/constants.ts");
-			const g = Object(o.a)(f.db),
-				y = Object(o.a)(f.cb),
-				h = Object(o.a)(f.bb),
-				O = Object(o.a)(f.Z),
+			const y = Object(o.a)(f.db),
+				g = Object(o.a)(f.cb),
+				O = Object(o.a)(f.bb),
+				h = Object(o.a)(f.Z),
 				j = Object(o.a)(f.Y),
 				P = Object(o.a)(f.X),
-				v = Object(o.a)(f.Eb),
-				w = Object(o.a)(f.Cb),
+				w = Object(o.a)(f.Eb),
+				v = Object(o.a)(f.Cb),
 				k = Object(o.a)(f.Db),
 				x = Object(o.a)(f.Hb),
 				_ = Object(o.a)(f.Gb),
 				E = Object(o.a)(f.Fb),
 				C = e => async t => {
-					t(Object(a.f)({
-						kind: c.b.Error,
-						duration: a.a,
+					t(Object(c.f)({
+						kind: a.b.Error,
+						duration: c.a,
 						text: e
 					}))
 				}, I = (e, t) => async r => {
@@ -353,14 +509,14 @@
 				}, S = (e, t) => async (r, o, {
 					gqlContext: s
 				}) => {
-					const a = o();
-					if (!Object(b.i)(a, {
+					const c = o();
+					if (!Object(b.i)(c, {
 							subredditId: t,
 							type: e
 						})) {
-						r(g());
+						r(y());
 						try {
-							const n = await ((e, t, r, n) => Object(l.a)(e, {
+							const n = await ((e, t, r, n) => Object(u.a)(e, {
 								...p,
 								variables: {
 									subredditId: t,
@@ -372,7 +528,7 @@
 								const e = n.body;
 								if (e.errors && e.errors.length) throw new Error(e.errors[0].message);
 								const o = e.data.subredditInfoById.productOffers ? e.data.subredditInfoById.productOffers.offers : [];
-								return void(await r(y({
+								return void(await r(g({
 									productOffers: o || [],
 									subredditId: t
 								})))
@@ -381,27 +537,27 @@
 							const e = n.fbt._("Something went wrong", null, {
 								hk: "1IJNeH"
 							});
-							r(h(e)), r(C(e))
+							r(O(e)), r(C(e))
 						}
 					}
 				}, N = () => async (e, t, {
 					gqlContext: r
 				}) => {
-					var o, a;
-					const c = i.c.Premium;
-					e(O());
+					var o, c;
+					const a = i.c.Premium;
+					e(h());
 					try {
-						const t = await ((e, t) => Object(l.a)(e, {
-							...u,
+						const t = await ((e, t) => Object(u.a)(e, {
+							...l,
 							variables: {
 								productTypes: t
 							}
-						}))(r(), [c]);
+						}))(r(), [a]);
 						if (t.ok) {
 							const r = t.body;
 							if (null === (o = r.errors) || void 0 === o ? void 0 : o.length) throw new Error(r.errors[0].message);
 							return void e(j({
-								productOffers: null !== (a = r.data.globalProductOffers.offers) && void 0 !== a ? a : []
+								productOffers: null !== (c = r.data.globalProductOffers.offers) && void 0 !== c ? c : []
 							}))
 						}
 					} catch (d) {
@@ -410,29 +566,29 @@
 						});
 						s.c.captureMessage(t), e(P(t)), e(C(t))
 					}
-				}, M = () => async (e, t, {
+				}, A = () => async (e, t, {
 					gqlContext: r
 				}) => {
-					var o, a, i;
-					e(v());
+					var o, c, i;
+					e(w());
 					try {
-						const t = await (e => Object(l.a)(e, m))(r());
+						const t = await (e => Object(u.a)(e, m))(r());
 						if (t.error) throw new Error(t.error.type);
 						if (t.ok) {
 							const r = t.body;
 							if (null === (o = r.errors) || void 0 === o ? void 0 : o.length) throw new Error(r.errors[0].message);
 							return void e(k({
-								subscriptions: null !== (i = null === (a = r.data.identity) || void 0 === a ? void 0 : a.econSubscriptions) && void 0 !== i ? i : []
+								subscriptions: null !== (i = null === (c = r.data.identity) || void 0 === c ? void 0 : c.econSubscriptions) && void 0 !== i ? i : []
 							}))
 						}
-					} catch (c) {
-						s.c.captureException(c);
-						const t = c.message ? c.message : n.fbt._("Something went wrong", null, {
+					} catch (a) {
+						s.c.captureException(a);
+						const t = a.message ? a.message : n.fbt._("Something went wrong", null, {
 							hk: "1IJNeH"
 						});
-						e(w(t)), e(C(t))
+						e(v(t)), e(C(t))
 					}
-				}, A = e => async (t, r, {
+				}, M = e => async (t, r, {
 					gqlContext: o
 				}) => {
 					var s;
@@ -451,8 +607,8 @@
 							}))
 						}
 						return !0
-					} catch (a) {
-						const e = null !== (s = a.message) && void 0 !== s ? s : n.fbt._("Something went wrong", null, {
+					} catch (c) {
+						const e = null !== (s = c.message) && void 0 !== s ? s : n.fbt._("Something went wrong", null, {
 							hk: "4yuT5m"
 						});
 						return t(_(e)), t(C(e)), !1
@@ -464,9 +620,9 @@
 			r.r(t), r.d(t, "selectPaymentMethod", (function() {
 				return d
 			})), r.d(t, "paymentCompleted", (function() {
-				return l
-			})), r.d(t, "cardNameInput", (function() {
 				return u
+			})), r.d(t, "cardNameInput", (function() {
+				return l
 			})), r.d(t, "postalCodeInput", (function() {
 				return m
 			})), r.d(t, "cardNameEmpty", (function() {
@@ -476,21 +632,21 @@
 			})), r.d(t, "stripeTokenPending", (function() {
 				return f
 			})), r.d(t, "stripeTokenError", (function() {
-				return g
-			})), r.d(t, "stripeApiError", (function() {
 				return y
+			})), r.d(t, "stripeApiError", (function() {
+				return g
 			})), r.d(t, "validateAndCreateStripeToken", (function() {
-				return h
-			})), r.d(t, "paypalApiError", (function() {
 				return O
+			})), r.d(t, "paypalApiError", (function() {
+				return h
 			})), r.d(t, "toggleRememberCard", (function() {
 				return j
 			})), r.d(t, "selectSavedCard", (function() {
 				return P
 			})), r.d(t, "_deleteSavedCard", (function() {
-				return v
-			})), r.d(t, "deleteSavedCard", (function() {
 				return w
+			})), r.d(t, "deleteSavedCard", (function() {
+				return v
 			})), r.d(t, "savedCardsPending", (function() {
 				return k
 			})), r.d(t, "savedCardsSuccess", (function() {
@@ -501,32 +657,32 @@
 			var n = r("./node_modules/fbt/lib/FbtPublic.js"),
 				o = r("./src/lib/sentry/index.ts"),
 				s = r("./src/lib/makeActionCreator/index.ts"),
-				a = r("./src/reddit/endpoints/gold/purchase.ts"),
+				c = r("./src/reddit/endpoints/gold/purchase.ts"),
 				i = r("./src/reddit/actions/goldPurchaseModals/constants.ts"),
-				c = r("./src/reddit/selectors/goldPurchaseModals.ts");
+				a = r("./src/reddit/selectors/goldPurchaseModals.ts");
 			const d = Object(s.a)(i.B),
-				l = Object(s.a)(i.w),
-				u = Object(s.a)(i.b),
+				u = Object(s.a)(i.w),
+				l = Object(s.a)(i.b),
 				m = Object(s.a)(i.y),
 				p = Object(s.a)(i.a),
 				b = Object(s.a)(i.E),
 				f = Object(s.a)(i.G),
-				g = Object(s.a)(i.F),
-				y = Object(s.a)(i.D),
-				h = e => async (t, r) => {
+				y = Object(s.a)(i.F),
+				g = Object(s.a)(i.D),
+				O = e => async (t, r) => {
 					const o = r(),
-						s = Object(c.h)(o),
-						a = Object(c.l)(o),
+						s = Object(a.h)(o),
+						c = Object(a.l)(o),
 						{
 							token: i,
 							error: d
 						} = await e.createToken({
 							name: s,
-							address_zip: a
+							address_zip: c
 						});
 					if (s.trim()) {
 						if (!d && i) return i;
-						t(g(d || void 0))
+						t(y(d || void 0))
 					} else {
 						const e = n.fbt._("Your card’s name field is incomplete", null, {
 							hk: "VBdRU"
@@ -535,12 +691,12 @@
 							message: e
 						}))
 					}
-				}, O = Object(s.a)(i.x), j = Object(s.a)(i.H), P = Object(s.a)(i.C), v = Object(s.a)(i.g), w = e => async (t, r, {
+				}, h = Object(s.a)(i.x), j = Object(s.a)(i.H), P = Object(s.a)(i.C), w = Object(s.a)(i.g), v = e => async (t, r, {
 					apiContext: n
 				}) => {
-					t(v(e));
+					t(w(e));
 					try {
-						const t = await Object(a.a)(n(), e);
+						const t = await Object(c.a)(n(), e);
 						if (t.error) throw new Error(t.error.type)
 					} catch (s) {
 						o.c.captureException(s)
@@ -550,7 +706,7 @@
 				}) => {
 					e(k());
 					try {
-						const t = await Object(a.b)(r());
+						const t = await Object(c.b)(r());
 						if (t.error) throw new Error(t.error.type);
 						const n = t.body.map(e => ({
 							brand: e.brand,
@@ -568,63 +724,63 @@
 		"./src/reddit/actions/goldPurchaseModals/premiumPurchaseModal.ts": function(e, t, r) {
 			"use strict";
 			r.r(t), r.d(t, "setPremiumPurchaseModalInfo", (function() {
-				return y
+				return g
 			})), r.d(t, "clearPremiumPurchaseModalInfo", (function() {
-				return h
-			})), r.d(t, "openPremiumPurchaseModal", (function() {
 				return O
+			})), r.d(t, "openPremiumPurchaseModal", (function() {
+				return h
 			})), r.d(t, "closePremiumPurchaseModal", (function() {
 				return j
 			})), r.d(t, "stripePremiumPurchaseRequested", (function() {
 				return P
 			})), r.d(t, "paymentBlobCreated", (function() {
-				return v
-			})), r.d(t, "openWithBlob", (function() {
 				return w
+			})), r.d(t, "openWithBlob", (function() {
+				return v
 			}));
 			var n = r("./src/config.ts"),
 				o = r("./node_modules/fbt/lib/FbtPublic.js"),
 				s = r("./src/lib/makeActionCreator/index.ts"),
-				a = r("./src/lib/sentry/index.ts"),
+				c = r("./src/lib/sentry/index.ts"),
 				i = r("./src/lib/constants/index.ts"),
-				c = r("./src/lib/formatApiError/index.ts"),
+				a = r("./src/lib/formatApiError/index.ts"),
 				d = r("./src/reddit/actions/goldPurchaseModals/payment.ts"),
-				l = r("./src/reddit/actions/modal.ts"),
-				u = r("./src/reddit/constants/modals.ts"),
+				u = r("./src/reddit/actions/modal.ts"),
+				l = r("./src/reddit/constants/modals.ts"),
 				m = r("./src/reddit/endpoints/gold/paypalPurchases.ts"),
 				p = r("./src/reddit/endpoints/gold/purchase.ts"),
 				b = r("./src/reddit/helpers/correlationIdTracker.ts"),
 				f = r("./src/reddit/selectors/goldPurchaseModals.ts"),
-				g = r("./src/reddit/actions/goldPurchaseModals/constants.ts");
-			const y = Object(s.a)(g.t),
-				h = Object(s.a)(g.e),
-				O = (e, t) => async r => {
-					r(y(e)), r(Object(l.h)(u.a.ECON_PREMIUM_PURCHASE, t))
+				y = r("./src/reddit/actions/goldPurchaseModals/constants.ts");
+			const g = Object(s.a)(y.t),
+				O = Object(s.a)(y.e),
+				h = (e, t) => async r => {
+					r(g(e)), r(Object(u.h)(l.a.ECON_PREMIUM_PURCHASE, t))
 				}, j = () => async e => {
-					e(Object(l.g)(u.a.ECON_PREMIUM_PURCHASE)), e(h())
+					e(Object(u.g)(l.a.ECON_PREMIUM_PURCHASE)), e(O())
 				}, P = e => async (t, r, {
 					apiContext: n
 				}) => {
 					const s = Object(f.a)(r()),
-						a = (null == s ? void 0 : s.pennies) || i.wb,
-						l = Object(b.c)(b.a.GoldPayment);
+						c = (null == s ? void 0 : s.pennies) || i.wb,
+						u = Object(b.c)(b.a.GoldPayment);
 					t(Object(d.stripeTokenPending)());
-					const u = await t(Object(d.validateAndCreateStripeToken)(e));
-					if (u) try {
+					const l = await t(Object(d.validateAndCreateStripeToken)(e));
+					if (l) try {
 						const e = await Object(p.h)({
 							context: n(),
-							correlationId: l,
-							pennies: a,
-							token: u
+							correlationId: u,
+							pennies: c,
+							token: l
 						});
 						if (e.error) {
-							const r = Object(c.a)(e.error);
+							const r = Object(a.a)(e.error);
 							t(Object(d.stripeApiError)(r))
 						} else t(Object(d.paymentCompleted)({
 							confirmed: !1
 						}))
 					} catch (m) {
-						const e = Object(c.a)(m);
+						const e = Object(a.a)(m);
 						t(Object(d.stripeApiError)(e))
 					} else {
 						const e = o.fbt._("Looks like something went wrong validating your credit card.", null, {
@@ -632,64 +788,64 @@
 						});
 						t(Object(d.stripeApiError)(e))
 					}
-				}, v = Object(s.a)(g.v), w = ({
+				}, w = Object(s.a)(y.v), v = ({
 					packageId: e,
 					correlationId: t
 				}, r) => async (o, s, {
 					apiContext: i
 				}) => {
-					o(O({
+					o(h({
 						packageId: e,
 						correlationId: t
 					}, r));
-					const l = Object(f.a)(s()),
-						u = (null == l ? void 0 : l.paypalButtonId) || n.a.paypal.buttons.premium;
-					if (u) try {
+					const u = Object(f.a)(s()),
+						l = (null == u ? void 0 : u.paypalButtonId) || n.a.paypal.buttons.premium;
+					if (l) try {
 						const e = await Object(m.f)({
-							buttonId: u,
+							buttonId: l,
 							context: i(),
 							correlationId: t
 						});
 						if (e.error) {
-							const t = Object(c.a)(e.error);
+							const t = Object(a.a)(e.error);
 							o(Object(d.paypalApiError)(t))
-						} else o(v(e))
+						} else o(w(e))
 					} catch (p) {
-						const e = Object(c.a)(p);
+						const e = Object(a.a)(p);
 						o(Object(d.paypalApiError)(e))
-					} else a.c.captureMessage("No Premium packages available on Premium purchase modal")
+					} else c.c.captureMessage("No Premium packages available on Premium purchase modal")
 				}
 		},
 		"./src/reddit/actions/goldPurchaseModals/purchaseCatalog.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "b", (function() {
-				return g
+				return y
 			})), r.d(t, "c", (function() {
 				return j
 			})), r.d(t, "a", (function() {
-				return v
+				return w
 			}));
 			var n = r("./node_modules/fbt/lib/FbtPublic.js"),
 				o = r("./src/lib/env/index.ts"),
 				s = r("./src/lib/makeActionCreator/index.ts"),
-				a = r("./src/lib/sentry/index.ts"),
+				c = r("./src/lib/sentry/index.ts"),
 				i = r("./src/reddit/endpoints/gold/productCatalog/index.ts"),
-				c = r("./src/reddit/selectors/user.ts"),
+				a = r("./src/reddit/selectors/user.ts"),
 				d = r("./src/reddit/actions/toaster.ts"),
-				l = r("./src/reddit/models/Toast/index.ts"),
-				u = r("./src/reddit/actions/post.ts"),
+				u = r("./src/reddit/models/Toast/index.ts"),
+				l = r("./src/reddit/actions/post.ts"),
 				m = r("./src/reddit/actions/goldPurchaseModals/constants.ts");
 			const p = Object(s.a)(m.j),
 				b = Object(s.a)(m.k),
 				f = Object(s.a)(m.i),
-				g = e => async (t, r, {
+				y = e => async (t, r, {
 					apiContext: s
 				}) => {
 					t(p());
 					const d = r(),
-						l = Object(c.K)(d);
+						u = Object(a.K)(d);
 					try {
-						const r = !l,
+						const r = !u,
 							n = await Object(i.b)({
 								context: s(),
 								correlationId: e,
@@ -698,56 +854,56 @@
 						if (!n.ok) throw new Error(n.error && n.error.type || "Unknown error");
 						const o = n.body;
 						t(b(o))
-					} catch (u) {
-						Object(o.b)() || console.error(u), a.c.captureException(u);
+					} catch (l) {
+						Object(o.b)() || console.error(l), c.c.captureException(l);
 						const e = n.fbt._("There was an error fetching available products", null, {
 							hk: "1Uvx37"
 						});
 						t(f(e))
 					}
-				}, y = Object(s.a)(m.m), h = Object(s.a)(m.n), O = Object(s.a)(m.l), j = (e, t) => async (r, s, {
-					apiContext: c
+				}, g = Object(s.a)(m.m), O = Object(s.a)(m.n), h = Object(s.a)(m.l), j = (e, t) => async (r, s, {
+					apiContext: a
 				}) => {
-					r(y());
+					r(g());
 					try {
 						const n = await Object(i.c)({
 							awardId: e,
-							context: c(),
+							context: a(),
 							correlationId: t
 						});
 						if (!n.ok) throw new Error(n.error && n.error.type || "Unknown error");
 						const o = n.body;
 						if (!o.coinPackages || !o.coinPackages.length) throw new Error(`Recommended coin packages returned empty for award id ${e}`);
-						r(h(o))
+						r(O(o))
 					} catch (d) {
-						Object(o.b)() || console.error(d), a.c.captureException(d);
+						Object(o.b)() || console.error(d), c.c.captureException(d);
 						const e = n.fbt._("There was an error fetching purchasable coins package", null, {
 							hk: "47Fxzt"
 						});
-						r(O(e))
+						r(h(e))
 					}
-				}, P = Object(s.a)(m.h), v = () => async (e, t, {
+				}, P = Object(s.a)(m.h), w = () => async (e, t, {
 					gqlContext: r
 				}) => {
-					var s, c;
+					var s, a;
 					try {
 						const t = await Object(i.a)(r());
 						if (t.ok) {
 							const r = t.body.data.claimAwardOffer;
 							if (null === (s = r.errors) || void 0 === s ? void 0 : s.length) throw new Error(r.errors.map(e => e.message).join(" | "));
-							if (!(null === (c = r.awards) || void 0 === c ? void 0 : c.length)) throw new Error("Got empty award list on free award offer claim");
+							if (!(null === (a = r.awards) || void 0 === a ? void 0 : a.length)) throw new Error("Got empty award list on free award offer claim");
 							if (!r.ok) throw new Error("Got not ok response on free award offer claim");
 							await e(P({
 								awards: r.awards
-							})), e(Object(u.B)())
+							})), e(Object(l.B)())
 						}
 					} catch (m) {
 						Object(o.b)() || console.error(m), e(Object(d.f)({
-							kind: l.b.Error,
+							kind: u.b.Error,
 							text: n.fbt._("Sorry, something went wrong. Try Claiming again.", null, {
 								hk: "FWjud"
 							})
-						})), a.c.captureException(m)
+						})), c.c.captureException(m)
 					}
 				}
 		},
@@ -765,9 +921,9 @@
 			var n = r("./node_modules/react/index.js"),
 				o = r.n(n),
 				s = r("./src/lib/classNames/index.ts"),
-				a = r("./src/reddit/components/Econ/Common/NewIcon/index.tsx"),
+				c = r("./src/reddit/components/Econ/Common/NewIcon/index.tsx"),
 				i = r("./src/reddit/components/Econ/Common/BenefitTile/index.m.less"),
-				c = r.n(i);
+				a = r.n(i);
 			const {
 				fbt: d
 			} = r("./node_modules/fbt/lib/FbtPublic.js");
@@ -779,19 +935,19 @@
 				title: i,
 				isNew: d
 			}) => o.a.createElement("div", {
-				className: Object(s.a)(e, c.a.container),
+				className: Object(s.a)(e, a.a.container),
 				onClick: n
-			}, d && o.a.createElement(a.a, {
-				className: c.a.new
+			}, d && o.a.createElement(c.a, {
+				className: a.a.new
 			}), o.a.createElement("div", {
-				className: c.a.icon,
+				className: a.a.icon,
 				style: {
 					backgroundImage: `url('${r}')`
 				}
 			}), i && o.a.createElement("h3", {
-				className: c.a.title
+				className: a.a.title
 			}, i), t && o.a.createElement("p", {
-				className: c.a.description
+				className: a.a.description
 			}, t))
 		},
 		"./src/reddit/components/Econ/Common/ModalCloseButton/index.m.less": function(e, t, r) {
@@ -808,17 +964,17 @@
 			var n = r("./node_modules/react/index.js"),
 				o = r.n(n),
 				s = r("./src/lib/classNames/index.ts"),
-				a = r("./src/reddit/icons/svgs/Close/index.tsx"),
+				c = r("./src/reddit/icons/svgs/Close/index.tsx"),
 				i = r("./src/reddit/components/Econ/Common/ModalCloseButton/index.m.less"),
-				c = r.n(i);
+				a = r.n(i);
 			const d = ({
 				className: e,
 				onClick: t
 			}) => o.a.createElement("button", {
-				className: Object(s.a)(c.a.closeButton, e),
+				className: Object(s.a)(a.a.closeButton, e),
 				onClick: t
-			}, o.a.createElement(a.a, {
-				className: c.a.closeIcon
+			}, o.a.createElement(c.a, {
+				className: a.a.closeIcon
 			}))
 		},
 		"./src/reddit/components/Econ/Common/NewIcon/index.m.less": function(e, t, r) {
@@ -834,15 +990,15 @@
 			var n = r("./node_modules/react/index.js"),
 				o = r.n(n),
 				s = r("./src/lib/classNames/index.ts"),
-				a = r("./src/reddit/components/Econ/Common/NewIcon/index.m.less"),
-				i = r.n(a);
+				c = r("./src/reddit/components/Econ/Common/NewIcon/index.m.less"),
+				i = r.n(c);
 			const {
-				fbt: c
+				fbt: a
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), d = ({
 				className: e
 			}) => o.a.createElement("span", {
 				className: Object(s.a)(i.a.new, e)
-			}, c._("NEW", null, {
+			}, a._("NEW", null, {
 				hk: "2P5bsM"
 			}))
 		},
@@ -858,235 +1014,240 @@
 		"./src/reddit/components/Econ/PowerupsPremiumUpsellModal/index.tsx": function(e, t, r) {
 			"use strict";
 			r.r(t), r.d(t, "PowerupsPremiumUpsellModal", (function() {
-				return Y
+				return $
 			}));
 			var n = r("./node_modules/react/index.js"),
 				o = r.n(n),
 				s = r("./node_modules/react-redux/es/index.js"),
-				a = r("./src/higherOrderComponents/asModal/index.tsx"),
+				c = r("./src/higherOrderComponents/asModal/index.tsx"),
 				i = r("./src/reddit/actions/modal.ts"),
-				c = r("./src/reddit/components/Econ/Common/ModalCloseButton/index.tsx"),
+				a = r("./src/reddit/components/Econ/Common/ModalCloseButton/index.tsx"),
 				d = r("./src/reddit/components/Econ/PowerupsPurchaseModal/async.tsx"),
-				l = r("./src/reddit/components/PremiumPurchaseModal/Loader.tsx"),
-				u = r("./src/reddit/constants/modals.ts"),
+				u = r("./src/reddit/components/PremiumPurchaseModal/Loader.tsx"),
+				l = r("./src/reddit/constants/modals.ts"),
 				m = r("./src/reddit/helpers/trackers/powerups.ts"),
 				p = r("./src/reddit/hooks/useTracking.ts"),
 				b = r("./src/reddit/selectors/platform.ts"),
 				f = r("./src/config.ts"),
+				y = r("./src/lib/localizeCurrency/index.ts"),
 				g = r("./src/reddit/actions/gold/productOfferPurchase.ts"),
-				y = r("./src/reddit/actions/goldPurchaseModals/premiumPurchaseModal.ts"),
+				O = r("./src/reddit/actions/goldPurchaseModals/premiumPurchaseModal.ts"),
 				h = r("./src/reddit/controls/Button/index.tsx"),
-				O = r("./src/reddit/controls/LoadingIcon/index.tsx"),
-				j = r("./src/reddit/actions/gold/productOffers.ts"),
-				P = r("./src/reddit/actions/goldPurchaseModals/purchaseCatalog.ts"),
-				v = r("./src/reddit/helpers/correlationIdTracker.ts"),
-				w = r("./src/reddit/models/Gold/Premium/index.ts"),
-				k = r("./src/reddit/models/Gold/ProductOffer.ts"),
-				x = r("./src/reddit/selectors/gold/productOffers.ts"),
-				_ = r("./src/reddit/selectors/gold/purchaseCatalog.ts");
-			var E = r("./src/reddit/pages/Premium/BenefitsSection/index.tsx"),
-				C = r("./src/lib/classNames/index.ts"),
-				I = r("./src/reddit/icons/fonts/index.tsx"),
-				S = r("./src/reddit/components/Econ/PowerupsPremiumUpsellModal/checklist.m.less"),
-				N = r.n(S);
-			const M = ({
+				j = r("./src/reddit/controls/LoadingIcon/index.tsx"),
+				P = r("./src/reddit/hooks/useLocale.ts"),
+				w = r("./src/reddit/actions/gold/productOffers.ts"),
+				v = r("./src/reddit/actions/goldPurchaseModals/purchaseCatalog.ts"),
+				k = r("./src/reddit/helpers/correlationIdTracker.ts"),
+				x = r("./src/reddit/models/Gold/Premium/index.ts"),
+				_ = r("./src/reddit/models/Gold/ProductOffer.ts"),
+				E = r("./src/reddit/selectors/gold/productOffers.ts"),
+				C = r("./src/reddit/selectors/gold/purchaseCatalog.ts");
+			var I = r("./src/reddit/pages/Premium/BenefitsSection/index.tsx"),
+				S = r("./src/lib/classNames/index.ts"),
+				N = r("./src/reddit/icons/fonts/index.tsx"),
+				A = r("./src/reddit/components/Econ/PowerupsPremiumUpsellModal/checklist.m.less"),
+				M = r.n(A);
+			const T = ({
 					className: e,
 					items: t
 				}) => o.a.createElement("div", {
 					className: e
-				}, t.map(e => o.a.createElement(A, {
+				}, t.map(e => o.a.createElement(U, {
 					key: e,
-					className: N.a.checklistItem,
+					className: M.a.checklistItem,
 					item: e
 				}))),
-				A = ({
+				U = ({
 					className: e,
 					item: t
 				}) => o.a.createElement("div", {
-					className: Object(C.a)(N.a.checklistItemRow, e)
+					className: Object(S.a)(M.a.checklistItemRow, e)
 				}, o.a.createElement("div", {
-					className: N.a.iconBackground
-				}, o.a.createElement(I.a, {
-					className: N.a.icon,
+					className: M.a.iconBackground
+				}, o.a.createElement(N.a, {
+					className: M.a.icon,
 					name: "checkmark_fill"
 				})), o.a.createElement("span", {
-					className: N.a.checklistItemText
+					className: M.a.checklistItemText
 				}, t));
-			var T = r("./src/reddit/components/Econ/PowerupsPremiumUpsellModal/offerCard.m.less"),
-				U = r.n(T);
-			const L = ({
+			var L = r("./src/reddit/components/Econ/PowerupsPremiumUpsellModal/offerCard.m.less"),
+				G = r.n(L);
+			const R = ({
 				className: e,
 				body: t,
 				buttons: r,
 				iconUrl: n,
 				title: s
 			}) => o.a.createElement("div", {
-				className: Object(C.a)(e, U.a.container)
+				className: Object(S.a)(e, G.a.container)
 			}, o.a.createElement("div", {
-				className: U.a.icon,
+				className: G.a.icon,
 				style: {
 					backgroundImage: `url('${n}')`
 				}
 			}), o.a.createElement("h3", {
-				className: U.a.title
+				className: G.a.title
 			}, s), t, o.a.createElement("div", {
-				className: U.a.buttons
+				className: G.a.buttons
 			}, r));
-			var G = r("./src/reddit/components/Econ/PowerupsPremiumUpsellModal/offers.m.less"),
-				B = r.n(G);
+			var B = r("./src/reddit/components/Econ/PowerupsPremiumUpsellModal/offers.m.less"),
+				D = r.n(B);
 			const {
-				fbt: R
-			} = r("./node_modules/fbt/lib/FbtPublic.js"), q = ["premium-powerups"], W = ["premium-powerups", "premium-ad-free", "premium-avatars", "premium-monthly-coins"], D = ({
+				fbt: q
+			} = r("./node_modules/fbt/lib/FbtPublic.js"), F = ["premium-powerups"], W = ["premium-powerups", "premium-ad-free", "premium-avatars", "premium-monthly-coins"], Q = ({
 				subredditId: e
 			}) => {
 				const t = Object(s.d)(),
-					r = Object(p.a)(),
+					r = Object(P.a)(),
+					c = Object(p.a)(),
 					a = function() {
 						var e, t;
 						const r = Object(s.d)(),
-							o = Object(s.e)(_.j),
-							a = Object(s.e)(x.e),
-							i = Object(s.e)(_.l);
+							o = Object(s.e)(C.j),
+							c = Object(s.e)(E.e),
+							i = Object(s.e)(C.l);
 						Object(n.useEffect)(() => {
-							o.length || i || r(Object(P.b)()), a || r(Object(j.c)(k.c.Premium))
+							o.length || i || r(Object(v.b)()), c || r(Object(w.c)(_.c.Premium))
 						});
-						const c = o.find(e => e.frequency === w.c.Monthly),
-							d = o.find(e => e.frequency === w.c.Yearly);
-						if (!c || !d) return null;
-						const l = null === (e = Object(x.j)(a, k.b.Month)) || void 0 === e ? void 0 : e[0],
-							u = null === (t = Object(x.j)(a, k.b.Year)) || void 0 === t ? void 0 : t[0];
-						return l && u ? {
-							correlationId: Object(v.d)(v.a.GoldPayment, !1),
+						const a = o.find(e => e.frequency === x.c.Monthly),
+							d = o.find(e => e.frequency === x.c.Yearly);
+						if (!a || !d) return null;
+						const u = null === (e = Object(E.j)(c, _.b.Month)) || void 0 === e ? void 0 : e[0],
+							l = null === (t = Object(E.j)(c, _.b.Year)) || void 0 === t ? void 0 : t[0];
+						return u && l ? {
+							correlationId: Object(k.d)(k.a.GoldPayment, !1),
 							premiumMonthly: {
-								price: l.price,
-								packageId: c.mobileId
+								price: u.price,
+								packageId: a.mobileId
 							},
 							premiumAnnual: {
-								price: u.price,
+								price: l.price,
 								packageId: d.mobileId,
 								bonusPct: d.bonusPct
 							}
 						} : null
 					}(),
-					c = Object(s.e)(t => Object(x.a)(t, {
+					d = Object(s.e)(t => Object(E.a)(t, {
 						subredditId: e
 					})),
-					d = Object(s.e)(_.h),
-					l = q.map(e => E.b[e]());
+					u = Object(s.e)(C.h),
+					b = F.map(e => I.b[e]());
 				return o.a.createElement("div", {
-					className: B.a.container
-				}, a && c ? o.a.createElement(o.a.Fragment, null, o.a.createElement(L, {
-					title: R._("Powerups Subscription", null, {
+					className: D.a.container
+				}, a && d ? o.a.createElement(o.a.Fragment, null, o.a.createElement(R, {
+					title: q._("Powerups Subscription", null, {
 						hk: "4zbTSR"
 					}),
 					iconUrl: `${f.a.assetPath}/img/gold/premium-marketing/benefits-icons/premium-powerups.png`,
-					body: o.a.createElement(M, {
-						items: l
+					body: o.a.createElement(T, {
+						items: b
 					}),
-					buttons: c && o.a.createElement(h.q, {
-						className: B.a.powerupsButton,
+					buttons: d && o.a.createElement(h.q, {
+						className: D.a.powerupsButton,
 						priority: h.b.Secondary,
 						onClick: () => {
-							r(Object(m.o)()), t(Object(i.h)(u.a.ECON_POWERUPS_PURCHASE))
+							c(Object(m.o)()), t(Object(i.h)(l.a.ECON_POWERUPS_PURCHASE))
 						},
 						isFullWidth: !0
-					}, R._("{powerupPrice}/mo", [R._param("powerupPrice", `$${Q(c)}`)], {
+					}, q._("{powerupPrice}/mo", [q._param("powerupPrice", Object(y.b)(d, {
+						locale: r
+					}))], {
 						hk: "1ApJir"
 					}))
-				}), o.a.createElement(L, {
-					title: R._("Reddit Premium", null, {
+				}), o.a.createElement(R, {
+					title: q._("Reddit Premium", null, {
 						hk: "S3DXw"
 					}),
 					iconUrl: `${f.a.assetPath}/img/gold/premium-marketing/benefits-icons/premium-crest.png`,
-					body: o.a.createElement(F, {
-						premiumMonthlyCoins: d
+					body: o.a.createElement(J, {
+						premiumMonthlyCoins: u
 					}),
-					buttons: a && o.a.createElement(J, {
+					buttons: a && o.a.createElement(H, {
 						premiumMonthly: a.premiumMonthly,
 						premiumAnnual: a.premiumAnnual,
-						onClickPrice: (e, n) => {
-							r(Object(m.p)(n)), t(Object(y.openWithBlob)({
+						onClickPrice: (e, r) => {
+							c(Object(m.p)(r)), t(Object(O.openWithBlob)({
 								correlationId: a.correlationId,
 								packageId: e
 							}, {
 								isPowerupsPremiumPurchase: !0
 							})), t(Object(g.i)({
-								renewInterval: n
+								renewInterval: r
 							}))
-						}
+						},
+						locale: r
 					})
-				})) : o.a.createElement(O.a, {
-					className: B.a.loadingIcon,
+				})) : o.a.createElement(j.a, {
+					className: D.a.loadingIcon,
 					sizePx: 40
 				}))
-			};
-
-			function Q(e) {
-				return (e / 100).toFixed(2).toLocaleString()
-			}
-			const F = ({
-					premiumMonthlyCoins: e
-				}) => {
-					const t = W.map(t => E.b[t]({
-						periodicalCoins: e
-					}));
-					return o.a.createElement("div", null, o.a.createElement(M, {
-						items: t
-					}), o.a.createElement("div", {
-						className: B.a.andSoMuchMore
-					}, R._("And so much more!", null, {
-						hk: "oMd"
-					})))
-				},
-				J = ({
-					premiumMonthly: e,
-					premiumAnnual: t,
-					onClickPrice: r
-				}) => o.a.createElement("div", {
-					className: B.a.premiumButtons
-				}, o.a.createElement(h.q, {
-					className: B.a.powerupsButton,
-					priority: h.b.Secondary,
-					onClick: () => r(e.packageId, k.b.Month),
-					isFullWidth: !0
-				}, R._("{premiumMonthlyPrice}/mo", [R._param("premiumMonthlyPrice", `$${Q(e.price)}`)], {
-					hk: "4i6SO9"
-				})), o.a.createElement(h.h, {
-					className: B.a.powerupsButton,
-					onClick: () => r(t.packageId, k.b.Year),
-					isFullWidth: !0
-				}, R._("{premiumAnnualPrice}/yr", [R._param("premiumAnnualPrice", `$${Q(t.price)}`)], {
-					hk: "2YAbPf"
-				})));
-			var H = r("./src/reddit/components/Econ/PowerupsPremiumUpsellModal/index.m.less"),
-				$ = r.n(H);
+			}, J = ({
+				premiumMonthlyCoins: e
+			}) => {
+				const t = W.map(t => I.b[t]({
+					periodicalCoins: e
+				}));
+				return o.a.createElement("div", null, o.a.createElement(T, {
+					items: t
+				}), o.a.createElement("div", {
+					className: D.a.andSoMuchMore
+				}, q._("And so much more!", null, {
+					hk: "oMd"
+				})))
+			}, H = ({
+				premiumMonthly: e,
+				premiumAnnual: t,
+				locale: r,
+				onClickPrice: n
+			}) => o.a.createElement("div", {
+				className: D.a.premiumButtons
+			}, o.a.createElement(h.q, {
+				className: D.a.powerupsButton,
+				priority: h.b.Secondary,
+				onClick: () => n(e.packageId, _.b.Month),
+				isFullWidth: !0
+			}, q._("{premiumMonthlyPrice}/mo", [q._param("premiumMonthlyPrice", Object(y.b)(e.price, {
+				locale: r
+			}))], {
+				hk: "4i6SO9"
+			})), o.a.createElement(h.h, {
+				className: D.a.powerupsButton,
+				onClick: () => n(t.packageId, _.b.Year),
+				isFullWidth: !0
+			}, q._("{premiumAnnualPrice}/yr", [q._param("premiumAnnualPrice", Object(y.b)(t.price, {
+				locale: r
+			}))], {
+				hk: "2YAbPf"
+			})));
+			var Z = r("./src/reddit/components/Econ/PowerupsPremiumUpsellModal/index.m.less"),
+				Y = r.n(Z);
 			const {
-				fbt: Z
-			} = r("./node_modules/fbt/lib/FbtPublic.js"), Y = () => {
+				fbt: z
+			} = r("./node_modules/fbt/lib/FbtPublic.js"), $ = () => {
 				const e = Object(s.e)(b.q),
 					t = Object(s.d)(),
 					r = Object(p.a)();
 				Object(n.useEffect)(() => {
-					e && (r(Object(m.q)()), Object(l.a)(), Object(d.a)())
+					e && (r(Object(m.q)()), Object(u.a)(), Object(d.a)())
 				}, []);
-				const a = () => t(Object(i.g)(u.a.ECON_POWERUPS_PREMIUM_UPSELL));
-				return e ? o.a.createElement(o.a.Fragment, null, o.a.createElement(c.a, {
-					onClick: a
+				const c = () => t(Object(i.g)(l.a.ECON_POWERUPS_PREMIUM_UPSELL));
+				return e ? o.a.createElement(o.a.Fragment, null, o.a.createElement(a.a, {
+					onClick: c
 				}), o.a.createElement("div", {
-					className: $.a.container
+					className: Y.a.container
 				}, o.a.createElement("h1", {
-					className: $.a.title
-				}, Z._("Get more with Premium!", null, {
+					className: Y.a.title
+				}, z._("Get more with Premium!", null, {
 					hk: "YXIbY"
-				})), o.a.createElement(D, {
+				})), o.a.createElement(Q, {
 					subredditId: e
 				}), o.a.createElement("div", {
-					className: $.a.footer
-				}, Z._("Subscriptions automatically renew.", null, {
+					className: Y.a.footer
+				}, z._("Subscriptions automatically renew.", null, {
 					hk: "133vve"
-				})))) : (a(), null)
+				})))) : (c(), null)
 			};
-			t.default = Object(a.a)(Y)
+			t.default = Object(c.a)($)
 		},
 		"./src/reddit/components/Econ/PowerupsPremiumUpsellModal/offerCard.m.less": function(e, t, r) {
 			e.exports = {
@@ -1118,8 +1279,8 @@
 			var n = r("./node_modules/react/index.js"),
 				o = r.n(n),
 				s = r("./src/lib/classNames/index.ts"),
-				a = r("./src/reddit/controls/LoadingIcon/index.m.less"),
-				i = r.n(a);
+				c = r("./src/reddit/controls/LoadingIcon/index.m.less"),
+				i = r.n(c);
 			t.a = ({
 				center: e,
 				className: t,
@@ -1139,9 +1300,9 @@
 			r.d(t, "f", (function() {
 				return d
 			})), r.d(t, "a", (function() {
-				return l
-			})), r.d(t, "b", (function() {
 				return u
+			})), r.d(t, "b", (function() {
+				return l
 			})), r.d(t, "c", (function() {
 				return m
 			})), r.d(t, "d", (function() {
@@ -1152,9 +1313,9 @@
 			var n = r("./src/lib/constants/index.ts"),
 				o = r("./src/lib/makeApiRequest/index.ts"),
 				s = r("./src/lib/omitHeaders/index.ts"),
-				a = r("./src/reddit/constants/headers.ts"),
+				c = r("./src/reddit/constants/headers.ts"),
 				i = r("./src/reddit/helpers/addRedesignIdentifier/index.ts"),
-				c = r("./src/reddit/endpoints/gold/purchase.ts");
+				a = r("./src/reddit/endpoints/gold/purchase.ts");
 			const d = async ({
 				buttonId: e,
 				context: t,
@@ -1164,14 +1325,14 @@
 						button_id: e,
 						correlation_id: r
 					},
-					l = `${t.apiUrl}/api/v2/gold/paypal/initiate_premium_payment`,
-					u = Object(i.a)(l);
-				return Object(o.a)(Object(s.a)(t, [a.a]), {
+					u = `${t.apiUrl}/api/v2/gold/paypal/initiate_premium_payment`,
+					l = Object(i.a)(u);
+				return Object(o.a)(Object(s.a)(t, [c.a]), {
 					method: n.ib.POST,
-					endpoint: u,
+					endpoint: l,
 					data: d
-				}).then(c.c)
-			}, l = async ({
+				}).then(a.c)
+			}, u = async ({
 				context: e,
 				coins: t,
 				pennies: r,
@@ -1182,57 +1343,57 @@
 					pennies: r,
 					correlation_id: i
 				};
-				return Object(o.a)(Object(s.a)(e, [a.a]), {
+				return Object(o.a)(Object(s.a)(e, [c.a]), {
 					method: n.ib.POST,
 					endpoint: `${e.apiUrl}/api/v2/gold/paypal/create_coin_purchase_order`,
 					data: d
-				}).then(c.c)
-			}, u = async ({
+				}).then(a.c)
+			}, l = async ({
 				context: e,
 				awardId: t,
 				pennies: r,
 				thingId: i,
 				correlationId: d
 			}) => {
-				const l = {
+				const u = {
 					award_id: t,
 					correlation_id: d,
 					pennies: r,
 					thing_id: i
 				};
-				return Object(o.a)(Object(s.a)(e, [a.a]), {
+				return Object(o.a)(Object(s.a)(e, [c.a]), {
 					method: n.ib.POST,
 					endpoint: `${e.apiUrl}/api/v2/gold/paypal/create_award_purchase_order`,
-					data: l
-				}).then(c.c)
+					data: u
+				}).then(a.c)
 			}, m = async ({
 				context: e,
 				offerContext: t,
 				orderId: r,
 				coins: i,
 				pennies: d,
-				correlationId: l
+				correlationId: u
 			}) => {
-				const u = {
+				const l = {
 					offer_context: t,
 					order_id: r,
 					coins: i,
 					pennies: d,
-					correlation_id: l
+					correlation_id: u
 				};
-				return Object(o.a)(Object(s.a)(e, [a.a]), {
+				return Object(o.a)(Object(s.a)(e, [c.a]), {
 					method: n.ib.POST,
 					endpoint: `${e.apiUrl}/api/v2/gold/paypal/execute_coin_order`,
-					data: u
-				}).then(c.c)
+					data: l
+				}).then(a.c)
 			}, p = async ({
 				awardId: e,
 				context: t,
 				coins: r,
 				correlationId: i,
 				isAnonymous: d,
-				message: l,
-				offerContext: u,
+				message: u,
+				offerContext: l,
 				orderId: m,
 				pennies: p,
 				thingId: b
@@ -1242,57 +1403,57 @@
 					coins: r,
 					correlation_id: i,
 					is_anonymous: d,
-					message: l,
-					offer_context: u,
+					message: u,
+					offer_context: l,
 					order_id: m,
 					pennies: p,
 					thing_id: b
 				};
-				return Object(o.a)(Object(s.a)(t, [a.a]), {
+				return Object(o.a)(Object(s.a)(t, [c.a]), {
 					method: n.ib.POST,
 					endpoint: `${t.apiUrl}/api/v2/gold/paypal/execute_coin_with_gild_order`,
 					data: f
-				}).then(c.c)
+				}).then(a.c)
 			}, b = async ({
 				awardId: e,
 				context: t,
 				correlationId: r,
 				isAnonymous: i,
 				message: d,
-				orderId: l,
-				thingId: u
+				orderId: u,
+				thingId: l
 			}) => {
 				const m = {
 					award_id: e,
 					correlation_id: r,
 					is_anonymous: i,
 					message: d,
-					order_id: l,
-					thing_id: u
+					order_id: u,
+					thing_id: l
 				};
-				return Object(o.a)(Object(s.a)(t, [a.a]), {
+				return Object(o.a)(Object(s.a)(t, [c.a]), {
 					method: n.ib.POST,
 					endpoint: `${t.apiUrl}/api/v2/gold/paypal/execute_award_purchase_order`,
 					data: m
-				}).then(c.c)
+				}).then(a.c)
 			}
 		},
 		"./src/reddit/endpoints/gold/productOfferPurchase.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "f", (function() {
-				return y
+				return g
 			})), r.d(t, "a", (function() {
-				return h
-			})), r.d(t, "i", (function() {
 				return O
+			})), r.d(t, "i", (function() {
+				return h
 			})), r.d(t, "h", (function() {
 				return j
 			})), r.d(t, "j", (function() {
 				return P
 			})), r.d(t, "g", (function() {
-				return v
-			})), r.d(t, "c", (function() {
 				return w
+			})), r.d(t, "c", (function() {
+				return v
 			})), r.d(t, "e", (function() {
 				return k
 			})), r.d(t, "d", (function() {
@@ -1307,43 +1468,43 @@
 			var n = r("./node_modules/bignumber.js/bignumber.js"),
 				o = r.n(n),
 				s = r("./src/redditGQL/operations/CancelEconRecurringPayment.json"),
-				a = r("./src/redditGQL/operations/ConfirmPaypalPayment.json"),
+				c = r("./src/redditGQL/operations/ConfirmPaypalPayment.json"),
 				i = r("./src/redditGQL/operations/ConfirmStripePaymentNewCard.json"),
-				c = r("./src/redditGQL/operations/ConfirmStripePaymentSavedCard.json"),
+				a = r("./src/redditGQL/operations/ConfirmStripePaymentSavedCard.json"),
 				d = r("./src/redditGQL/operations/CreateEconOrder.json"),
-				l = r("./src/redditGQL/operations/CreatePaypalPayment.json"),
-				u = r("./src/redditGQL/operations/CreateStripePaymentWithProvidedCard.json"),
+				u = r("./src/redditGQL/operations/CreatePaypalPayment.json"),
+				l = r("./src/redditGQL/operations/CreateStripePaymentWithProvidedCard.json"),
 				m = r("./src/redditGQL/operations/CreateStripePaymentWithProvidedNonAuthCard.json"),
 				p = r("./src/redditGQL/operations/CreateStripePaymentWithSavedCard.json"),
 				b = r("./src/redditGQL/operations/DeleteSavedStripeCard.json"),
 				f = r("./src/redditGQL/operations/UserSavedStripeCards.json"),
-				g = r("./src/lib/makeGqlRequest/index.ts");
-			const y = (e, t, r, n, s) => {
+				y = r("./src/lib/makeGqlRequest/index.ts");
+			const g = (e, t, r, n, s) => {
 				const {
-					premium: a,
+					premium: c,
 					...i
-				} = s, c = (null == a ? void 0 : a.pricePackage) || r.pricePackages[0], l = new o.a(c.price).multipliedBy(n).toFixed();
-				return Object(g.a)(e, {
+				} = s, a = (null == c ? void 0 : c.pricePackage) || r.pricePackages[0], u = new o.a(a.price).multipliedBy(n).toFixed();
+				return Object(y.a)(e, {
 					...d,
 					variables: {
 						input: {
 							nonce: t,
 							productId: r.id,
 							productVersion: r.version,
-							pricePackageId: c.id,
-							currency: c.currency,
-							price: l,
+							pricePackageId: a.id,
+							currency: a.currency,
+							price: u,
 							productsCount: n.toString(),
 							...i
 						}
 					}
 				})
 			};
-			var h;
+			var O;
 			! function(e) {
 				e.New = "NEW", e.ActionRequired = "ACTION_REQUIRED", e.Pending = "PENDING", e.Paid = "PAID", e.Canceled = "CANCELED", e.Rejected = "REJECTED", e.Failed = "FAILED", e.Refunded = "REFUNDED"
-			}(h || (h = {}));
-			const O = (e, t, r, n) => Object(g.a)(e, {
+			}(O || (O = {}));
+			const h = (e, t, r, n) => Object(y.a)(e, {
 					...m,
 					variables: {
 						nonce: t,
@@ -1351,15 +1512,15 @@
 						token: n
 					}
 				}),
-				j = (e, t, r, n) => Object(g.a)(e, {
-					...u,
+				j = (e, t, r, n) => Object(y.a)(e, {
+					...l,
 					variables: {
 						nonce: t,
 						orderId: r,
 						token: n
 					}
 				}),
-				P = (e, t, r, n) => Object(g.a)(e, {
+				P = (e, t, r, n) => Object(y.a)(e, {
 					...p,
 					variables: {
 						nonce: t,
@@ -1367,8 +1528,8 @@
 						cardId: n
 					}
 				}),
-				v = (e, t, r, n, o) => Object(g.a)(e, {
-					...l,
+				w = (e, t, r, n, o) => Object(y.a)(e, {
+					...u,
 					variables: {
 						nonce: t,
 						orderId: r,
@@ -1376,23 +1537,23 @@
 						cancelUrl: o
 					}
 				}),
-				w = (e, t, r, n) => Object(g.a)(e, {
-					...a,
+				v = (e, t, r, n) => Object(y.a)(e, {
+					...c,
 					variables: {
 						nonce: t,
 						paymentId: r,
 						token: n
 					}
 				}),
-				k = (e, t, r, n) => Object(g.a)(e, {
-					...c,
+				k = (e, t, r, n) => Object(y.a)(e, {
+					...a,
 					variables: {
 						nonce: t,
 						paymentId: r,
 						cardId: n
 					}
 				}),
-				x = (e, t, r, n, o) => Object(g.a)(e, {
+				x = (e, t, r, n, o) => Object(y.a)(e, {
 					...i,
 					variables: {
 						nonce: t,
@@ -1401,38 +1562,66 @@
 						saveCard: o
 					}
 				}),
-				_ = (e, t) => Object(g.a)(e, {
+				_ = (e, t) => Object(y.a)(e, {
 					...s,
 					variables: {
 						orderId: t
 					}
 				}),
-				E = e => Object(g.a)(e, {
+				E = e => Object(y.a)(e, {
 					...f,
 					variables: {}
 				}),
-				C = (e, t) => Object(g.a)(e, {
+				C = (e, t) => Object(y.a)(e, {
 					...b,
 					variables: {
 						cardId: t
 					}
 				})
 		},
+		"./src/reddit/helpers/governance/tokens.ts": function(e, t, r) {
+			"use strict";
+			r.d(t, "b", (function() {
+				return s
+			})), r.d(t, "c", (function() {
+				return c
+			})), r.d(t, "a", (function() {
+				return i
+			}));
+			var n = r("./node_modules/bignumber.js/bignumber.js"),
+				o = r("./src/lib/prettyPrintNumber/index.ts");
+
+			function s(e, t) {
+				const r = new n.BigNumber(e),
+					o = new n.BigNumber(t || 1);
+				return r.dividedToIntegerBy(o).toString()
+			}
+
+			function c(e, t) {
+				return Object(o.b)(parseInt(s(e, t), 10))
+			}
+
+			function i(e, t) {
+				const r = new n.BigNumber(e),
+					o = new n.BigNumber(t || 1);
+				return r.multipliedBy(o).toFixed(0)
+			}
+		},
 		"./src/reddit/helpers/trackers/premium.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "c", (function() {
-				return c
+				return a
 			})), r.d(t, "d", (function() {
 				return d
 			})), r.d(t, "a", (function() {
-				return l
-			})), r.d(t, "b", (function() {
 				return u
+			})), r.d(t, "b", (function() {
+				return l
 			}));
 			var n = r("./src/reddit/helpers/correlationIdTracker.ts"),
 				o = r("./src/reddit/selectors/gold/purchaseCatalog.ts"),
 				s = r("./src/reddit/selectors/telemetry.ts");
-			const a = (e, t) => {
+			const c = (e, t) => {
 					const {
 						packageId: r,
 						renewInterval: n
@@ -1450,13 +1639,13 @@
 					} : null
 				},
 				i = "premium_marketing",
-				c = e => t => ({
+				a = e => t => ({
 					source: i,
 					action: "click",
 					noun: "price",
 					correlationId: Object(n.c)(n.a.GoldPayment),
 					...s.defaults(t),
-					...a(t, e)
+					...c(t, e)
 				}),
 				d = () => e => ({
 					source: i,
@@ -1465,14 +1654,14 @@
 					correlationId: Object(n.c)(n.a.GoldPayment),
 					...s.defaults(e)
 				}),
-				l = () => e => ({
+				u = () => e => ({
 					source: i,
 					action: "click",
 					noun: "manage",
 					correlationId: Object(n.c)(n.a.GoldPayment),
 					...s.defaults(e)
 				}),
-				u = e => t => ({
+				l = e => t => ({
 					source: "premium_marketing",
 					action: "click",
 					noun: "premium_benefit",
@@ -1489,11 +1678,11 @@
 			})), r.d(t, "d", (function() {
 				return s
 			})), r.d(t, "e", (function() {
-				return a
+				return c
 			})), r.d(t, "b", (function() {
 				return i
 			})), r.d(t, "c", (function() {
-				return c
+				return a
 			}));
 			var n = r("./node_modules/fbt/lib/FbtPublic.js");
 			const o = {
@@ -1522,21 +1711,21 @@
 					}
 					return r
 				},
-				a = e => n.fbt._({
+				c = e => n.fbt._({
 					"*": "{number of months} months {number of coins} Coins",
 					_1: "1 month {number of coins} Coins"
 				}, [n.fbt._plural(e.monthsOfPremium, "number of months"), n.fbt._param("number of coins", e.priceInCoins.toLocaleString())], {
 					hk: "2bar0C"
 				}),
 				i = "com.reddit.premium_1";
-			var c;
+			var a;
 			! function(e) {
 				e.Monthly = "monthly", e.Yearly = "yearly"
-			}(c || (c = {}))
+			}(a || (a = {}))
 		},
 		"./src/reddit/models/Payments/index.ts": function(e, t, r) {
 			"use strict";
-			var n, o, s, a;
+			var n, o, s, c;
 			r.d(t, "b", (function() {
 					return o
 				})), r.d(t, "a", (function() {
@@ -1553,7 +1742,7 @@
 				}(s || (s = {})),
 				function(e) {
 					e.Comment = "comment", e.Post = "post", e.Profile = "profile", e.Subreddit = "subreddit"
-				}(a || (a = {}))
+				}(c || (c = {}))
 		},
 		"./src/reddit/pages/Premium/BenefitsSection/index.m.less": function(e, t, r) {
 			e.exports = {
@@ -1564,25 +1753,25 @@
 		"./src/reddit/pages/Premium/BenefitsSection/index.tsx": function(e, t, r) {
 			"use strict";
 			r.d(t, "b", (function() {
-				return y
+				return g
 			})), r.d(t, "a", (function() {
-				return O
+				return h
 			}));
 			var n = r("./node_modules/fbt/lib/FbtPublic.js"),
 				o = r("./node_modules/react/index.js"),
 				s = r.n(o),
-				a = r("./node_modules/react-redux/es/index.js"),
+				c = r("./node_modules/react-redux/es/index.js"),
 				i = r("./src/config.ts"),
-				c = r("./src/lib/classNames/index.ts"),
+				a = r("./src/lib/classNames/index.ts"),
 				d = r("./src/reddit/components/Econ/Common/BenefitTile/index.tsx"),
-				l = r("./src/reddit/controls/LoadingIcon/index.tsx"),
-				u = r("./src/reddit/helpers/trackers/premium.ts"),
+				u = r("./src/reddit/controls/LoadingIcon/index.tsx"),
+				l = r("./src/reddit/helpers/trackers/premium.ts"),
 				m = r("./src/reddit/hooks/useTracking.ts"),
 				p = r("./src/reddit/selectors/experiments/econ/index.ts"),
 				b = r("./src/reddit/selectors/gold/purchaseCatalog.ts"),
 				f = r("./src/reddit/pages/Premium/BenefitsSection/index.m.less"),
-				g = r.n(f);
-			const y = {
+				y = r.n(f);
+			const g = {
 					"premium-avatars": () => n.fbt._("Exclusive Avatar Gear", null, {
 						hk: "1f1QJb"
 					}),
@@ -1615,7 +1804,7 @@
 						hk: "2W5D7B"
 					})
 				},
-				h = {
+				O = {
 					"premium-avatars": () => n.fbt._("Outfit your avatar with the best gear and accessories", null, {
 						hk: "2HjLMS"
 					}),
@@ -1648,19 +1837,19 @@
 						hk: "1x9RYJ"
 					})
 				},
-				O = ({
+				h = ({
 					className: e
 				}) => {
-					const t = Object(a.e)(b.j),
-						r = Object(a.e)(b.h),
-						n = Object(a.e)(p.g),
+					const t = Object(c.e)(b.j),
+						r = Object(c.e)(b.h),
+						n = Object(c.e)(p.g),
 						o = Object(m.a)();
-					if (!(null == t ? void 0 : t.length)) return s.a.createElement("div", null, s.a.createElement(l.a, {
+					if (!(null == t ? void 0 : t.length)) return s.a.createElement("div", null, s.a.createElement(u.a, {
 						sizePx: 80
 					}));
 					const {
 						signupBonusCoins: f
-					} = t[0], O = f && f > 0 ? f.toLocaleString() : void 0, j = n ? [{
+					} = t[0], h = f && f > 0 ? f.toLocaleString() : void 0, j = n ? [{
 						key: "premium-ad-free",
 						telemetryTag: "ad_free"
 					}, {
@@ -1713,7 +1902,7 @@
 						key: "premium-awards",
 						telemetryTag: "premium_awards"
 					}];
-					O ? j.push({
+					h ? j.push({
 						key: "premium-bonus",
 						asterisk: !0,
 						telemetryTag: "coin_bonus"
@@ -1723,26 +1912,26 @@
 					});
 					const P = {
 						periodicalCoins: r,
-						bonusCoins: O,
+						bonusCoins: h,
 						isAltruismMessagingEnabled: n
 					};
 					return s.a.createElement("div", {
-						className: Object(c.a)(g.a.container, e)
+						className: Object(a.a)(y.a.container, e)
 					}, j.map(e => {
 						const {
 							key: t,
 							isNew: r,
 							asterisk: n,
-							telemetryTag: a
+							telemetryTag: c
 						} = e;
 						return s.a.createElement(d.a, {
-							className: g.a.benefit,
-							description: h[t](P),
+							className: y.a.benefit,
+							description: O[t](P),
 							iconUrl: `${i.a.assetPath}/img/gold/premium-marketing/benefits-icons/${t}.png`,
 							key: t,
-							title: `${y[t](P)}${n?"*":""}`,
+							title: `${g[t](P)}${n?"*":""}`,
 							isNew: r,
-							onClick: () => a && o(Object(u.b)(a))
+							onClick: () => c && o(Object(l.b)(c))
 						})
 					}))
 				}
@@ -1750,13 +1939,13 @@
 		"./src/reddit/selectors/gold/productOffers.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "h", (function() {
-				return c
+				return a
 			})), r.d(t, "i", (function() {
 				return d
 			})), r.d(t, "b", (function() {
-				return l
-			})), r.d(t, "a", (function() {
 				return u
+			})), r.d(t, "a", (function() {
+				return l
 			})), r.d(t, "e", (function() {
 				return m
 			})), r.d(t, "j", (function() {
@@ -1764,26 +1953,26 @@
 			})), r.d(t, "d", (function() {
 				return f
 			})), r.d(t, "c", (function() {
-				return g
-			})), r.d(t, "g", (function() {
 				return y
+			})), r.d(t, "g", (function() {
+				return g
 			})), r.d(t, "f", (function() {
-				return h
+				return O
 			}));
 			var n = r("./node_modules/reselect/es/index.js"),
 				o = r("./src/lib/makeProductOfferKey/index.ts"),
 				s = r("./src/reddit/models/Gold/ProductOffer.ts"),
-				a = r("./src/reddit/models/Payments/index.ts"),
+				c = r("./src/reddit/models/Payments/index.ts"),
 				i = r("./src/reddit/selectors/goldPurchaseModals.ts");
-			const c = e => e.subreddits.api.productOffers.pending,
+			const a = e => e.subreddits.api.productOffers.pending,
 				d = (e, {
 					subredditId: t,
 					type: r
 				}) => {
-					var n, s, a;
-					return t ? e.subreddits.productOffers[Object(o.a)(r, t)] : null === (a = null === (s = null === (n = e.features) || void 0 === n ? void 0 : n.goldPurchase) || void 0 === s ? void 0 : s.productOffers) || void 0 === a ? void 0 : a[Object(o.a)(r)]
+					var n, s, c;
+					return t ? e.subreddits.productOffers[Object(o.a)(r, t)] : null === (c = null === (s = null === (n = e.features) || void 0 === n ? void 0 : n.goldPurchase) || void 0 === s ? void 0 : s.productOffers) || void 0 === c ? void 0 : c[Object(o.a)(r)]
 				},
-				l = (e, {
+				u = (e, {
 					subredditId: t
 				}) => {
 					const r = d(e, {
@@ -1792,9 +1981,9 @@
 					});
 					return r && r[0]
 				},
-				u = (e, t) => {
+				l = (e, t) => {
 					var r;
-					const n = l(e, t);
+					const n = u(e, t);
 					return null === (r = null == n ? void 0 : n.pricePackages) || void 0 === r ? void 0 : r[0].price
 				},
 				m = e => {
@@ -1803,7 +1992,7 @@
 					});
 					return (null == t ? void 0 : t[0]) || null
 				},
-				p = (e, t) => (null == e ? void 0 : e.pricePackages) ? null == e ? void 0 : e.pricePackages.filter(e => e.renewInterval === t && e.requiredPaymentProviders && (e => e[0] === a.b.PayPal || e[0] === a.b.Stripe)(e.requiredPaymentProviders)) : null,
+				p = (e, t) => (null == e ? void 0 : e.pricePackages) ? null == e ? void 0 : e.pricePackages.filter(e => e.renewInterval === t && e.requiredPaymentProviders && (e => e[0] === c.b.PayPal || e[0] === c.b.Stripe)(e.requiredPaymentProviders)) : null,
 				b = Object(n.a)(m, i.p, (e, t) => p(e, t) || null),
 				f = Object(n.a)(b, (e, {
 					provider: t
@@ -1811,12 +2000,12 @@
 					var r;
 					return (null === (r = e.requiredPaymentProviders) || void 0 === r ? void 0 : r[0]) === t
 				})),
-				g = Object(n.a)(b, e => (null == e ? void 0 : e[0].price) || null),
-				y = Object(n.a)(e => {
+				y = Object(n.a)(b, e => (null == e ? void 0 : e[0].price) || null),
+				g = Object(n.a)(e => {
 					var t;
 					return null === (t = e.user.productOfferSubscriptions) || void 0 === t ? void 0 : t.subscriptions
 				}, e => null == e ? void 0 : e[0]),
-				h = Object(n.a)(y, e => Boolean(null == e ? void 0 : e.isCanceled))
+				O = Object(n.a)(g, e => Boolean(null == e ? void 0 : e.isCanceled))
 		},
 		"./src/redditGQL/operations/CancelEconRecurringPayment.json": function(e) {
 			e.exports = JSON.parse('{"id":"ac36f7489268"}')
@@ -1862,4 +2051,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsPremiumUpsellModal.e2ea34cb16ec5f335ede.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsPremiumUpsellModal.83744c6658bca94254bb.js.map

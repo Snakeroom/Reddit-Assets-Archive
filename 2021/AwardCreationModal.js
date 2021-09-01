@@ -1,7 +1,163 @@
-// https://www.redditstatic.com/desktop2x/AwardCreationModal.b182b7d776e8509e73a6.js
-// Retrieved at 8/10/2021, 1:20:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AwardCreationModal.253f47f6a44aa384dbf9.js
+// Retrieved at 9/1/2021, 1:20:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AwardCreationModal"], {
+		"./src/lib/currency/centsToDollars/index.ts": function(e, t, a) {
+			"use strict";
+			a.d(t, "a", (function() {
+				return s
+			}));
+			var n = a("./src/lib/currency/cleanNumber/index.ts");
+
+			function s(e, t) {
+				const a = Object(n.a)(e),
+					s = parseInt(a) / 100;
+				return Math.floor(s) !== s || t ? s.toFixed(2) : String(s)
+			}
+		},
+		"./src/lib/currency/cleanNumber/index.ts": function(e, t, a) {
+			"use strict";
+
+			function n(e) {
+				return e.replace(/[^0-9.]/g, "").replace(/^0+/, "") || "0"
+			}
+			a.d(t, "a", (function() {
+				return n
+			}))
+		},
+		"./src/lib/currency/currencies.ts": function(e, t, a) {
+			"use strict";
+			a.d(t, "b", (function() {
+				return n
+			})), a.d(t, "c", (function() {
+				return r
+			})), a.d(t, "d", (function() {
+				return o
+			})), a.d(t, "a", (function() {
+				return i
+			})), a.d(t, "f", (function() {
+				return l
+			})), a.d(t, "g", (function() {
+				return c
+			})), a.d(t, "e", (function() {
+				return d
+			}));
+			var n, s = a("./node_modules/fbt/lib/FbtPublic.js");
+			! function(e) {
+				e.Real = "real", e.Crypto = "crypto", e.Reddit = "reddit"
+			}(n || (n = {}));
+			const r = "USD",
+				o = "ETH",
+				i = "COINS",
+				l = [o, "BTC"],
+				c = [i, "SUBREDDIT_POINTS", "GAME_TOKENS"],
+				d = {
+					COINS: () => s.fbt._("Coins", null, {
+						hk: "1T2Y4p"
+					}),
+					SUBREDDIT_POINTS: () => s.fbt._("Subreddit points", null, {
+						hk: "1ytOO3"
+					}),
+					GAME_TOKENS: () => s.fbt._("Game tokens", null, {
+						hk: "16BUrU"
+					})
+				}
+		},
+		"./src/lib/localizeCurrency/index.ts": function(e, t, a) {
+			"use strict";
+			a.d(t, "a", (function() {
+				return d
+			})), a.d(t, "b", (function() {
+				return m
+			}));
+			var n = a("./node_modules/@reddit/i18n-tools/runtime/helpers/locale/constants.js"),
+				s = a("./src/lib/currency/centsToDollars/index.ts"),
+				r = a("./src/lib/currency/currencies.ts"),
+				o = a("./src/lib/prettyPrintNumber/index.ts"),
+				i = a("./src/reddit/helpers/governance/tokens.ts");
+			const l = (() => {
+					try {
+						return "1E4 bits" === new Intl.NumberFormat("en", {
+							style: "unit",
+							unit: "bit",
+							unitDisplay: "long",
+							notation: "scientific"
+						}).format(1e4)
+					} catch (e) {
+						return !1
+					}
+				})(),
+				c = () => l,
+				d = (e, {
+					locale: t = n.DEFAULT_LOCALE,
+					pretty: a,
+					formatOptions: s
+				} = {}) => {
+					const r = Number(e);
+					return c() ? a ? Object(o.b)(r) : new Intl.NumberFormat(t, s).format(r) : u(r, a, t)
+				},
+				m = (e, t = {}) => {
+					const {
+						locale: a = n.DEFAULT_LOCALE,
+						pretty: o,
+						formatOptions: l,
+						displayConversion: d,
+						forceDecimals: m,
+						currency: g = t.currency || (t.type ? p(t.type) : r.c),
+						type: b = t.type || (t.currency ? h(t.currency) : r.b.Real)
+					} = t, f = Number(e), C = String(e);
+					switch (b) {
+						case r.b.Reddit: {
+							const e = r.e[g],
+								t = e ? e() : g;
+							return c() ? new Intl.NumberFormat(a, {
+								currencyDisplay: "symbol",
+								...l
+							}).format(f) + " " + t : u(f, o, a, t)
+						}
+						case r.b.Crypto: {
+							if (o) {
+								return Object(i.c)(C, d) + " " + g
+							}
+							const e = Number(Object(i.b)(C, d));
+							return c() ? new Intl.NumberFormat(a, {
+								style: "currency",
+								currency: g,
+								currencyDisplay: "symbol",
+								minimumFractionDigits: 0,
+								maximumFractionDigits: 0,
+								...l
+							}).format(e) : u(e, o, a, g)
+						}
+						case r.b.Real:
+						default: {
+							const e = Number(Object(s.a)(C, m));
+							return c() ? new Intl.NumberFormat(a, {
+								style: "currency",
+								currency: g,
+								currencyDisplay: "symbol",
+								notation: o ? "compact" : "standard",
+								...l
+							}).format(e) : u(e, o, a, g)
+						}
+					}
+				},
+				u = (e, t, a, n) => {
+					return (t ? Object(o.b)(e) : e.toLocaleString(a)) + (n ? " " + n : "")
+				},
+				h = e => r.g.includes(e.toUpperCase()) ? r.b.Reddit : r.f.includes(e.toUpperCase()) ? r.b.Crypto : r.b.Real,
+				p = e => {
+					switch (e) {
+						case r.b.Crypto:
+							return r.d;
+						case r.b.Reddit:
+							return r.a;
+						case r.b.Real:
+						default:
+							return r.c
+					}
+				}
+		},
 		"./src/reddit/components/AwardCreationModal/AwardImagePreview/index.m.less": function(e, t, a) {
 			e.exports = {
 				previewComponent: "_2N7AHaslp4fm4xx0vdsKcr",
@@ -52,43 +208,45 @@
 			a.r(t);
 			var n = a("./node_modules/react/index.js"),
 				s = a.n(n),
-				o = a("./node_modules/react-redux/es/index.js"),
-				r = a("./node_modules/reselect/es/index.js"),
+				r = a("./node_modules/react-redux/es/index.js"),
+				o = a("./node_modules/reselect/es/index.js"),
 				i = a("./src/reddit/contexts/ApiContext.tsx"),
 				l = a("./src/reddit/helpers/awards/isEligibleForGlobalAwards.ts"),
 				c = a("./src/reddit/helpers/awards/isEligibleForTemporaryAwards.ts"),
 				d = a("./src/reddit/actions/gold/communityAwards/index.ts"),
 				m = a("./src/reddit/selectors/communityAwards.ts"),
-				h = a("./src/reddit/helpers/trackers/communityAwards.ts"),
-				u = a("./src/reddit/components/TrackingHelper/index.tsx"),
+				u = a("./src/reddit/helpers/trackers/communityAwards.ts"),
+				h = a("./src/reddit/components/TrackingHelper/index.tsx"),
 				p = (a("./node_modules/core-js/modules/web.dom.iterable.js"), a("./node_modules/fbt/lib/FbtPublic.js")),
 				g = a("./src/reddit/components/AwardCreationModal/index.m.less"),
 				b = a.n(g),
-				C = a("./src/higherOrderComponents/asModal/index.tsx"),
-				f = a("./src/lib/classNames/index.ts"),
-				E = a("./src/reddit/constants/colors.ts"),
+				f = a("./src/higherOrderComponents/asModal/index.tsx"),
+				C = a("./src/lib/classNames/index.ts"),
+				E = a("./src/lib/localizeCurrency/index.ts"),
+				y = a("./src/reddit/constants/colors.ts"),
 				w = a("./src/reddit/constants/gold.ts"),
 				v = a("./src/reddit/constants/keycodes.ts"),
 				I = a("./src/reddit/models/Gold/Award.ts"),
-				y = a("./src/reddit/models/Gold/Premium/index.ts"),
-				T = a("./src/reddit/components/ModalStyledComponents/index.tsx"),
-				x = a("./src/reddit/controls/DropdownSelector/index.tsx"),
-				S = a("./src/reddit/controls/FormFields/index.tsx"),
-				N = a("./src/reddit/controls/LoadingIcon/index.tsx"),
-				O = a("./src/reddit/controls/TextButton/index.tsx"),
+				T = a("./src/reddit/models/Gold/Premium/index.ts"),
+				x = a("./src/reddit/components/ModalStyledComponents/index.tsx"),
+				S = a("./src/reddit/controls/DropdownSelector/index.tsx"),
+				N = a("./src/reddit/controls/FormFields/index.tsx"),
+				O = a("./src/reddit/controls/LoadingIcon/index.tsx"),
+				D = a("./src/reddit/controls/TextButton/index.tsx"),
 				k = a("./src/reddit/controls/ToggleSwitch/index.tsx"),
-				D = a("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
-				_ = a("./src/lib/timezone/index.ts"),
-				P = a("./src/reddit/models/PostCreationForm/index.ts"),
-				M = a("./src/reddit/components/PostCreationForm/SchedulePickerModal/DateInput/index.tsx"),
-				F = a("./src/reddit/components/PostCreationForm/SchedulePickerModal/TimeInput/index.tsx"),
-				A = a("./src/reddit/components/PostCreationForm/SchedulePickerModal/TimezoneSelector/index.tsx"),
-				U = a("./src/reddit/components/AwardCreationModal/AwardImagePreview/index.m.less"),
-				j = a.n(U);
+				_ = a("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
+				P = a("./src/lib/currency/currencies.ts"),
+				F = a("./src/lib/timezone/index.ts"),
+				M = a("./src/reddit/models/PostCreationForm/index.ts"),
+				A = a("./src/reddit/components/PostCreationForm/SchedulePickerModal/DateInput/index.tsx"),
+				U = a("./src/reddit/components/PostCreationForm/SchedulePickerModal/TimeInput/index.tsx"),
+				j = a("./src/reddit/components/PostCreationForm/SchedulePickerModal/TimezoneSelector/index.tsx"),
+				R = a("./src/reddit/components/AwardCreationModal/AwardImagePreview/index.m.less"),
+				L = a.n(R);
 			const {
-				fbt: R
+				fbt: z
 			} = a("./node_modules/fbt/lib/FbtPublic.js");
-			class L extends s.a.Component {
+			class B extends s.a.Component {
 				render() {
 					const {
 						className: e,
@@ -96,54 +254,54 @@
 						onRemove: a
 					} = this.props;
 					return s.a.createElement("div", {
-						className: Object(f.a)(j.a.previewComponent, e)
+						className: Object(C.a)(L.a.previewComponent, e)
 					}, s.a.createElement("div", {
-						className: j.a.preview
+						className: L.a.preview
 					}, s.a.createElement("div", {
-						className: Object(f.a)(j.a.previewImg, j.a.largeSizeImg),
+						className: Object(C.a)(L.a.previewImg, L.a.largeSizeImg),
 						style: {
 							backgroundImage: `url(${t})`
 						}
-					}), s.a.createElement("span", null, R._("Large", null, {
+					}), s.a.createElement("span", null, z._("Large", null, {
 						hk: "1frk2C"
 					}))), s.a.createElement("div", {
-						className: j.a.preview
+						className: L.a.preview
 					}, s.a.createElement("div", {
-						className: Object(f.a)(j.a.previewImg, j.a.normalSizeImg),
+						className: Object(C.a)(L.a.previewImg, L.a.normalSizeImg),
 						style: {
 							backgroundImage: `url(${t})`
 						}
-					}), s.a.createElement("span", null, R._("Normal", null, {
+					}), s.a.createElement("span", null, z._("Normal", null, {
 						hk: "337tns"
 					}))), s.a.createElement("div", {
-						className: Object(f.a)(j.a.preview, j.a.previewLast)
+						className: Object(C.a)(L.a.preview, L.a.previewLast)
 					}, s.a.createElement("div", {
-						className: Object(f.a)(j.a.previewImg, j.a.smallSizeImg),
+						className: Object(C.a)(L.a.previewImg, L.a.smallSizeImg),
 						style: {
 							backgroundImage: `url(${t})`
 						}
-					}), s.a.createElement("span", null, R._("Small", null, {
+					}), s.a.createElement("span", null, z._("Small", null, {
 						hk: "1g2eZA"
 					}))), s.a.createElement("button", {
-						className: j.a.removeBtn,
+						className: L.a.removeBtn,
 						onClick: a
-					}, R._("remove", null, {
+					}, z._("remove", null, {
 						hk: "4zKN1U"
 					})))
 				}
 			}
-			var z = L,
-				W = a("./src/reddit/models/Image/index.tsx"),
-				V = a("./src/reddit/components/StructuredStyles/ImageUpload/index.tsx"),
-				H = a("./src/reddit/controls/FileDrop/index.tsx"),
-				B = a("./src/reddit/controls/ImageInput/index.tsx"),
-				K = a("./src/reddit/icons/svgs/ImageUpload/index.tsx"),
-				G = a("./src/reddit/components/AwardCreationModal/AwardImageUploader/index.m.less"),
-				q = a.n(G);
+			var W = B,
+				V = a("./src/reddit/models/Image/index.tsx"),
+				H = a("./src/reddit/components/StructuredStyles/ImageUpload/index.tsx"),
+				K = a("./src/reddit/controls/FileDrop/index.tsx"),
+				G = a("./src/reddit/controls/ImageInput/index.tsx"),
+				q = a("./src/reddit/icons/svgs/ImageUpload/index.tsx"),
+				X = a("./src/reddit/components/AwardCreationModal/AwardImageUploader/index.m.less"),
+				Y = a.n(X);
 			const {
-				fbt: X
+				fbt: J
 			} = a("./node_modules/fbt/lib/FbtPublic.js");
-			class Y extends s.a.Component {
+			class Z extends s.a.Component {
 				constructor() {
 					super(...arguments), this.inputRef = null, this.setInputRef = e => this.inputRef = e, this.handleLabelKeydown = e => {
 						e.keyCode === v.a.Enter && this.inputRef && (e.preventDefault(), this.inputRef.click())
@@ -155,38 +313,38 @@
 						id: t,
 						isUploading: a,
 						name: n,
-						onChange: o
+						onChange: r
 					} = this.props;
-					return a ? s.a.createElement(V.a, {
+					return a ? s.a.createElement(H.a, {
 						className: e
-					}) : s.a.createElement(H.a, {
-						className: Object(f.a)(e, q.a.fileDrop),
-						onDrop: o,
+					}) : s.a.createElement(K.a, {
+						className: Object(C.a)(e, Y.a.fileDrop),
+						onDrop: r,
 						render: e => s.a.createElement("label", {
-							className: Object(f.a)(q.a.fileDropContent, e && q.a.fileIsOver || ""),
+							className: Object(C.a)(Y.a.fileDropContent, e && Y.a.fileIsOver || ""),
 							onKeyDown: this.handleLabelKeydown,
 							tabIndex: 0
 						}, s.a.createElement("div", {
-							className: q.a.uploadIconContainer
-						}, s.a.createElement(K.a, {
-							className: q.a.uploadIcon
+							className: Y.a.uploadIconContainer
+						}, s.a.createElement(q.a, {
+							className: Y.a.uploadIcon
 						})), s.a.createElement("div", {
-							className: q.a.uploadLabel
-						}, X._("Drag and Drop or Upload Image", null, {
+							className: Y.a.uploadLabel
+						}, J._("Drag and Drop or Upload Image", null, {
 							hk: "133Ytg"
-						})), s.a.createElement(B.a, {
-							className: q.a.imageInput,
+						})), s.a.createElement(G.a, {
+							className: Y.a.imageInput,
 							inputId: t,
 							inputRef: this.setInputRef,
 							name: n,
-							onChange: o,
+							onChange: r,
 							multiple: !1
 						}))
 					})
 				}
 			}
-			var J = Y;
-			class Q extends s.a.Component {
+			var Q = Z;
+			class $ extends s.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						imageUploadInProgress: !1
@@ -197,15 +355,15 @@
 							maxSizeBytes: a,
 							maxHeight: n,
 							minHeight: s,
-							maxWidth: o,
-							minWidth: r,
+							maxWidth: r,
+							minWidth: o,
 							shouldBeEqualDimensions: i,
 							onImageChange: l
 						} = this.props;
 						this.setState({
 							imageUploadInProgress: !0
 						});
-						const c = await Object(W.e)(t);
+						const c = await Object(V.e)(t);
 						if (a && c.file.size > a) {
 							const e = p.fbt._("The chosen image file is too large. Please pick a new image and try again.", null, {
 								hk: "2LwR6S"
@@ -216,13 +374,13 @@
 								hk: "2WG1Xo"
 							});
 							setTimeout(() => this.handleImageUploadFailed(e), 1e3)
-						} else if (s && c.height < s || r && c.width < r) {
+						} else if (s && c.height < s || o && c.width < o) {
 							const e = p.fbt._("The chosen image does not match the required dimensions. Please pick a new image and try again.", null, {
 								hk: "3D0IW1"
 							});
 							setTimeout(() => this.handleImageUploadFailed(e), 1e3)
-						} else if (c.height > n || c.width > o) {
-							const e = o.toString(),
+						} else if (c.height > n || c.width > r) {
+							const e = r.toString(),
 								t = n.toString(),
 								a = p.fbt._("Image should be less than or equal to {maxWidth}x{maxHeight}. Please pick a new image and try again.", [p.fbt._param("maxWidth", e), p.fbt._param("maxHeight", t)], {
 									hk: "2GDxkX"
@@ -248,95 +406,95 @@
 						isValid: a,
 						name: n
 					} = this.props, {
-						imageUploadInProgress: o
-					} = this.state, r = !1 === a ? q.a.invalid : "";
+						imageUploadInProgress: r
+					} = this.state, o = !1 === a ? Y.a.invalid : "";
 					return s.a.createElement("div", {
-						className: Object(f.a)(e, q.a.imageUploader, r)
-					}, s.a.createElement(J, {
+						className: Object(C.a)(e, Y.a.imageUploader, o)
+					}, s.a.createElement(Q, {
 						id: t,
-						isUploading: o,
+						isUploading: r,
 						name: n,
 						onChange: this.handleImageUpload
 					}))
 				}
 			}
-			var Z, $ = Q,
-				ee = a("./src/lib/sentry/index.ts"),
-				te = a("./src/reddit/helpers/media/index.ts"),
-				ae = a("./src/reddit/endpoints/gold/communityAwards.ts");
+			var ee, te = $,
+				ae = a("./src/lib/sentry/index.ts"),
+				ne = a("./src/reddit/helpers/media/index.ts"),
+				se = a("./src/reddit/endpoints/gold/communityAwards.ts");
 			! function(e) {
 				e.BadResponse = "BadResponse", e.CancelledError = "ConnectionCancelled", e.CommunicationError = "CommunicationError", e.ConnectionError = "ConnectionError", e.TimeoutError = "TimeoutError"
-			}(Z || (Z = {}));
-			const ne = new Error("CommunityAwardImageUpload: Failed to connect to websocket.");
-			ne.name = Z.CommunicationError;
-			const se = new Error("CommunityAwardImageUpload: WebSocket connection failed before all messages received.");
-			se.name = Z.CommunicationError;
-			const oe = new Error("CommunityAwardImageUpload: Client websocket timed out.");
-			oe.name = Z.TimeoutError;
-			const re = new Error("CommunityAwardImageUpload: The websocket returned a bad response.");
-			re.name = Z.BadResponse;
-			const ie = new Error("CommunityAwardImageUpload: The websocket connection was cancelled.");
-			ie.name = Z.CancelledError;
-			const le = p.fbt._("There was an error uploading the image. Please try again.", null, {
+			}(ee || (ee = {}));
+			const re = new Error("CommunityAwardImageUpload: Failed to connect to websocket.");
+			re.name = ee.CommunicationError;
+			const oe = new Error("CommunityAwardImageUpload: WebSocket connection failed before all messages received.");
+			oe.name = ee.CommunicationError;
+			const ie = new Error("CommunityAwardImageUpload: Client websocket timed out.");
+			ie.name = ee.TimeoutError;
+			const le = new Error("CommunityAwardImageUpload: The websocket returned a bad response.");
+			le.name = ee.BadResponse;
+			const ce = new Error("CommunityAwardImageUpload: The websocket connection was cancelled.");
+			ce.name = ee.CancelledError;
+			const de = p.fbt._("There was an error uploading the image. Please try again.", null, {
 					hk: "dWlrv"
 				}),
-				ce = e => new Promise(t => {
+				me = e => new Promise(t => {
 					let a = null,
 						n = null;
 					const s = setTimeout((function() {
-						a = oe, ee.c.captureException(a), e.close()
+						a = ie, ae.c.captureException(a), e.close()
 					}), 6e4);
 					e.onerror = t => {
-						a = se, ee.c.captureException(a), e.close()
+						a = oe, ae.c.captureException(a), e.close()
 					}, e.onclose = e => (clearTimeout(s), t(n ? {
 						ok: !0,
 						award: n
 					} : {
 						ok: !1,
-						error: a || ie
+						error: a || ce
 					})), e.onmessage = t => {
 						const s = JSON.parse(t.data);
-						"success" !== s.type ? a = re : n = s.payload, e.close()
+						"success" !== s.type ? a = le : n = s.payload, e.close()
 					}
 				}),
-				de = async (e, t, a) => {
-					const n = await Object(te.g)(t.file) || t.file.type,
-						s = await Object(ae.d)(e(), a, t.file.name, n);
+				ue = async (e, t, a) => {
+					const n = await Object(ne.g)(t.file) || t.file.type,
+						s = await Object(se.d)(e(), a, t.file.name, n);
 					if (!s.ok) {
 						const e = new Error(`Error creating S3 lease for award: ${s.error&&s.error.type}`);
-						return ee.c.captureException(e), {
+						return ae.c.captureException(e), {
 							ok: !1,
-							error: new Error(le)
+							error: new Error(de)
 						}
 					}
 					const {
-						websocketUrl: o,
-						s3UploadLease: r
+						websocketUrl: r,
+						s3UploadLease: o
 					} = s.body, i = await (e => new Promise((t, a) => {
 						const n = new WebSocket(e);
 						n.onopen = e => {
 							n.onerror = null, t(n)
 						}, n.onerror = e => {
 							n.close();
-							const a = ne;
-							ee.c.captureException(a), t()
+							const a = re;
+							ae.c.captureException(a), t()
 						}
-					}))(o);
+					}))(r);
 					return i ? {
 						ok: !0,
-						s3UploadLease: r,
+						s3UploadLease: o,
 						websocket: i
 					} : {
 						ok: !1,
-						error: new Error(le)
+						error: new Error(de)
 					}
-				}, me = async (e, t) => {
-					const a = await Object(ae.n)(e, t.file);
+				}, he = async (e, t) => {
+					const a = await Object(se.n)(e, t.file);
 					if (!a.ok) {
 						const e = new Error(`Error uploading award imagine to S3 temp bucket: ${a.error&&a.error.type}`);
-						return ee.c.captureException(e), {
+						return ae.c.captureException(e), {
 							ok: !1,
-							error: new Error(le)
+							error: new Error(de)
 						}
 					}
 					const n = a.body;
@@ -344,26 +502,56 @@
 						ok: !0,
 						imageUrl: decodeURIComponent(n.PostResponse.Location)
 					}
-				}, he = "CommunityAwardCreationModalImageInput", ue = 15, pe = 30, ge = 2097152, be = 512, Ce = 512, fe = 2048, Ee = 2048, we = 500, ve = e => {
+				};
+			var pe = a("./src/reddit/hooks/useLocale.ts");
+			var ge = ({
+				num: e,
+				className: t,
+				...a
+			}) => {
+				const n = Object(pe.a)(),
+					r = Object(E.b)(e, {
+						locale: n,
+						...a
+					});
+				return s.a.createElement("span", {
+					className: t
+				}, r)
+			};
+			const be = "CommunityAwardCreationModalImageInput",
+				fe = 15,
+				Ce = 30,
+				Ee = 2097152,
+				ye = 512,
+				we = 512,
+				ve = 2048,
+				Ie = 2048,
+				Te = 500,
+				xe = e => {
 					const t = e || 0;
 					return t >= w.f ? t * w.h : t * w.c
-				}, Ie = e => {
+				},
+				Se = e => {
 					const t = e || 0;
 					return t >= w.f ? t * w.i : 0
-				}, ye = e => e.slice(0, 5), Te = (e, t) => `${e}T${ye(t)}:00`, xe = e => {
+				},
+				Ne = e => e.slice(0, 5),
+				Oe = (e, t) => `${e}T${Ne(t)}:00`,
+				De = e => {
 					const [t, a] = e.split("T");
-					return [t, ye(a)]
-				}, Se = () => {
+					return [t, Ne(a)]
+				},
+				ke = () => {
 					const e = new Date,
-						t = Object(_.g)(e);
+						t = Object(F.g)(e);
 					return e.setMinutes(e.getMinutes() + 1440), {
 						startDate: t,
-						endDate: Object(_.g)(e),
-						submitTime: P.i.Now,
-						timezoneName: Object(_.b)() || _.a
+						endDate: Object(F.g)(e),
+						submitTime: M.i.Now,
+						timezoneName: Object(F.b)() || F.a
 					}
 				};
-			class Ne extends s.a.Component {
+			class _e extends s.a.Component {
 				constructor(e) {
 					super(e), this.handleEscapeKey = e => {
 						e.keyCode === v.a.Escape && this.props.onTryCloseModal()
@@ -379,16 +567,16 @@
 							imageHeight: e.height,
 							imageWidth: e.width
 						});
-						const s = await de(t, e, a);
+						const s = await ue(t, e, a);
 						if (!s.ok) return this.handleImageUploadError(s.error.message), void this.sendUploadImageEvent(void 0, e, (new Date).getTime() - n, s.error.message);
 						const {
-							s3UploadLease: o,
-							websocket: r
+							s3UploadLease: r,
+							websocket: o
 						} = s;
 						this.setState({
-							websocket: r
+							websocket: o
 						});
-						const i = await me(o, e);
+						const i = await he(r, e);
 						if (!i.ok) return this.handleImageUploadError(i.error.message), void this.sendUploadImageEvent(void 0, e, (new Date).getTime() - n, i.error.message);
 						const {
 							imageUrl: l
@@ -399,7 +587,7 @@
 					}, this.handleImageRemoval = () => {
 						this.cancelExistingWebsockets(), this.setState({
 							imageUrl: void 0
-						}), this.props.sendEvent(Object(h.d)("remove", "image"))
+						}), this.props.sendEvent(Object(u.d)("remove", "image"))
 					}, this.handleImageUploadError = e => {
 						this.cancelExistingWebsockets(), this.setState({
 							imageError: e,
@@ -410,15 +598,15 @@
 							nameValue: e.target.value
 						})
 					}, this.handleNameFocus = e => {
-						this.props.sendEvent(Object(h.d)("click", "name_input"))
+						this.props.sendEvent(Object(u.d)("click", "name_input"))
 					}, this.handleNameBlur = e => {
-						this.props.sendEvent(Object(h.d)("type", "name_input"))
+						this.props.sendEvent(Object(u.d)("type", "name_input"))
 					}, this.handleModOnlyChange = () => {
 						const e = !this.state.isModOnly;
 						this.setState({
 							isModOnly: e
-						}), this.props.sendEvent(Object(h.c)(e ? "check" : "uncheck", "mod_award", {
-							defaultOption: e ? y.a.PREMIUM_1_MONTH.priceInCoins : this.defaultCostOptionValue
+						}), this.props.sendEvent(Object(u.c)(e ? "check" : "uncheck", "mod_award", {
+							defaultOption: e ? T.a.PREMIUM_1_MONTH.priceInCoins : this.defaultCostOptionValue
 						}))
 					}, this.handleCostChange = e => {
 						const t = e.value;
@@ -431,21 +619,22 @@
 							isTemporary: e
 						})
 					}, this.onCostInputOpen = () => {
-						this.props.sendEvent(Object(h.d)("click", "coin_cost_input"))
+						this.props.sendEvent(Object(u.d)("click", "coin_cost_input"))
 					}, this.getCostDropdownMenuItems = () => {
 						return Object(I.k)(this.props.awards).map(e => ({
-							displayText: p.fbt._("{Award cost} Coins", [p.fbt._param("Award cost", e.toLocaleString())], {
-								hk: "4rKGHp"
+							displayText: Object(E.b)(e, {
+								type: P.b.Reddit,
+								currency: P.a
 							}),
 							value: e
 						}))
 					}, this.handlePackageDropdownOpen = () => {
-						this.props.sendEvent(Object(h.d)("open", "mod_award_months"))
+						this.props.sendEvent(Object(u.d)("open", "mod_award_months"))
 					}, this.handlePremiumAmountChange = e => {
 						const t = e.value;
 						this.setState({
 							selectedPackage: t
-						}), this.props.sendEvent(Object(h.c)("click", "mod_award_months", {
+						}), this.props.sendEvent(Object(u.c)("click", "mod_award_months", {
 							numberMonths: t.monthsOfPremium,
 							numberCoins: t.priceInCoins
 						}))
@@ -457,41 +646,41 @@
 							onCreateAwardFailed: n,
 							onCreateAwardSuccess: s
 						} = this.props, {
-							costValue: o,
-							imageUrl: r,
+							costValue: r,
+							imageUrl: o,
 							imageWidth: i,
 							imageHeight: l,
 							isModOnly: c,
 							isTemporary: d,
 							startDate: m,
-							startTime: u,
+							startTime: h,
 							endDate: g,
 							endTime: b,
-							nameValue: C,
-							selectedPackage: f,
+							nameValue: f,
+							selectedPackage: C,
 							websocket: E
 						} = this.state;
-						if (!(r && C && o && E)) return;
+						if (!(o && f && r && E)) return;
 						if (E.readyState !== E.OPEN) {
 							return this.handleImageRemoval(), void n(p.fbt._("There was an error creating the award. Please try again.", null, {
 								hk: "1pkgpd"
 							}))
 						}
-						const w = ce(E),
-							v = Object(_.f)(Te(m, u)),
-							I = Object(_.f)(Te(g, b));
-						v.setTime(v.getTime()), I.setTime(I.getTime());
-						const y = d ? v.toISOString() : void 0,
-							T = d ? I.toISOString() : void 0;
-						c ? await a(C, r, i, l, f.monthsOfPremium, y, T) : await t(C, r, i, l, o, y, T);
-						const x = await w;
+						const y = me(E),
+							w = Object(F.f)(Oe(m, h)),
+							v = Object(F.f)(Oe(g, b));
+						w.setTime(w.getTime()), v.setTime(v.getTime());
+						const I = d ? w.toISOString() : void 0,
+							T = d ? v.toISOString() : void 0;
+						c ? await a(f, o, i, l, C.monthsOfPremium, I, T) : await t(f, o, i, l, r, I, T);
+						const x = await y;
 						if (!x.ok) {
 							return this.handleImageRemoval(), void n(p.fbt._("There was an error creating the award. Please try again.", null, {
 								hk: "1pkgpd"
 							}))
 						}
 						const S = x.award;
-						S.awardType = S.awardType.toUpperCase(), s(S), this.props.sendEvent(Object(h.b)(this.state.imageUrl, this.imageDraft, S))
+						S.awardType = S.awardType.toUpperCase(), s(S), this.props.sendEvent(Object(u.b)(this.state.imageUrl, this.imageDraft, S))
 					}, this.onStartDateChange = e => {
 						this.setState({
 							startDate: e
@@ -513,10 +702,10 @@
 							timezoneName: e
 						})
 					};
-					const t = Se(),
-						[a, n] = xe(t.startDate),
-						[s, o] = xe(t.endDate);
-					this.imageDraft = null, this.costOptions = this.getCostDropdownMenuItems(), this.defaultCostOptionValue = this.costOptions.length ? this.costOptions[0].value : we, this.state = {
+					const t = ke(),
+						[a, n] = De(t.startDate),
+						[s, r] = De(t.endDate);
+					this.imageDraft = null, this.costOptions = this.getCostDropdownMenuItems(), this.defaultCostOptionValue = this.costOptions.length ? this.costOptions[0].value : Te, this.state = {
 						costValue: e.defaultCoinPrice ? e.defaultCoinPrice : this.defaultCostOptionValue,
 						imageError: void 0,
 						imageUrl: void 0,
@@ -527,24 +716,24 @@
 						startDate: a,
 						startTime: n,
 						endDate: s,
-						endTime: o,
+						endTime: r,
 						timezoneName: t.timezoneName,
 						nameValue: "",
 						websocket: null,
-						selectedPackage: y.a.PREMIUM_1_MONTH
+						selectedPackage: T.a.PREMIUM_1_MONTH
 					}
 				}
 				componentWillUnmount() {
 					document.removeEventListener("keydown", this.handleEscapeKey), this.cancelExistingWebsockets()
 				}
 				componentDidMount() {
-					this.props.sendEvent(Object(h.c)("view", "page", {
-						defaultOption: this.state.isModOnly ? y.a.PREMIUM_1_MONTH.priceInCoins : this.props.defaultCoinPrice ? this.props.defaultCoinPrice : this.defaultCostOptionValue
+					this.props.sendEvent(Object(u.c)("view", "page", {
+						defaultOption: this.state.isModOnly ? T.a.PREMIUM_1_MONTH.priceInCoins : this.props.defaultCoinPrice ? this.props.defaultCoinPrice : this.defaultCostOptionValue
 					})), document.addEventListener("keydown", this.handleEscapeKey)
 				}
 				sendUploadImageEvent(e, t, a, n) {
 					const s = (new Date).getTime();
-					this.props.sendEvent(Object(h.f)(e, t, s - a, n))
+					this.props.sendEvent(Object(u.f)(e, t, s - a, n))
 				}
 				cancelExistingWebsockets() {
 					const {
@@ -555,10 +744,10 @@
 					}))
 				}
 				getModCostDropdownMenuItems() {
-					return Object.keys(y.a).map(e => {
-						const t = y.a[e];
+					return Object.keys(T.a).map(e => {
+						const t = T.a[e];
 						return {
-							displayText: Object(y.e)(t),
+							displayText: Object(T.e)(t),
 							value: t
 						}
 					})
@@ -582,8 +771,8 @@
 					} = this.state;
 					if (!1 === s) return !0;
 					if (!(a && n && e && t)) return !1;
-					const o = Object(_.f)(Te(a, n));
-					return !(Object(_.f)(Te(e, t)) < o)
+					const r = Object(F.f)(Oe(a, n));
+					return !(Object(F.f)(Oe(e, t)) < r)
 				}
 				inputsAreValid() {
 					const {
@@ -600,31 +789,31 @@
 						className: t,
 						onTryCloseModal: a,
 						isPending: n,
-						subredditId: o,
-						isEligibleForTemporaryAwards: r
+						subredditId: r,
+						isEligibleForTemporaryAwards: o
 					} = this.props, {
 						imageError: i,
 						imageUrl: l,
 						isModOnly: c,
 						isTemporary: d,
 						nameValue: m
-					} = this.state, h = e.filter(e => e.awardType === I.f.Moderator);
+					} = this.state, u = e.filter(e => e.awardType === I.f.Moderator);
 					return s.a.createElement("section", {
-						className: Object(f.a)(t, b.a.communityAwardCreationModal)
-					}, s.a.createElement(T.i, null, s.a.createElement(D.a, null, s.a.createElement(T.q, null, p.fbt._("Create Award", null, {
+						className: Object(C.a)(t, b.a.communityAwardCreationModal)
+					}, s.a.createElement(x.i, null, s.a.createElement(_.a, null, s.a.createElement(x.q, null, p.fbt._("Create Award", null, {
 						hk: "JQtjM"
-					})), s.a.createElement(O.a, {
+					})), s.a.createElement(D.a, {
 						onClick: a,
 						disabled: n
-					}, s.a.createElement(T.b, null)))), s.a.createElement("form", null, s.a.createElement(T.l, null, s.a.createElement("div", {
+					}, s.a.createElement(x.b, null)))), s.a.createElement("form", null, s.a.createElement(x.l, null, s.a.createElement("div", {
 						className: b.a.formSection
 					}, s.a.createElement("label", null, s.a.createElement("span", {
 						className: b.a.formLabelText
 					}, p.fbt._("Name", null, {
 						hk: "3PlUgw"
-					})), s.a.createElement(S.b, {
+					})), s.a.createElement(N.b, {
 						className: b.a.nameInput,
-						maxLength: pe,
+						maxLength: Ce,
 						name: "awardName",
 						onFocus: this.handleNameFocus,
 						onBlur: this.handleNameBlur,
@@ -636,42 +825,42 @@
 						value: m
 					})), s.a.createElement("div", {
 						className: b.a.formSubtext
-					}, pe - m.length)), s.a.createElement("div", {
+					}, Ce - m.length)), s.a.createElement("div", {
 						className: b.a.formSection
 					}, s.a.createElement("label", {
 						className: b.a.formLabelText,
-						htmlFor: he
+						htmlFor: be
 					}, p.fbt._("Image", null, {
 						hk: "2XS0KR"
-					})), l ? s.a.createElement(z, {
+					})), l ? s.a.createElement(W, {
 						imageUrl: l,
 						onRemove: this.handleImageRemoval
-					}) : s.a.createElement(s.a.Fragment, null, s.a.createElement($, {
-						id: he,
-						minHeight: be,
-						minWidth: Ce,
-						maxHeight: fe,
-						maxWidth: Ee,
-						maxSizeBytes: ge,
+					}) : s.a.createElement(s.a.Fragment, null, s.a.createElement(te, {
+						id: be,
+						minHeight: ye,
+						minWidth: we,
+						maxHeight: ve,
+						maxWidth: Ie,
+						maxSizeBytes: Ee,
 						name: "awardImage",
 						onImageChange: this.handleChooseImage,
 						onImageUploadFailed: e => {
 							this.handleImageUploadError(e), this.sendUploadImageEvent(void 0, null, 0, e)
 						},
 						shouldBeEqualDimensions: !0,
-						subredditId: o
+						subredditId: r
 					}), i && s.a.createElement("div", {
 						className: b.a.errorText
 					}, i), s.a.createElement("div", {
 						className: b.a.formSubtext
-					}, s.a.createElement("span", null, p.fbt._("Width and height should be equal, and at least {minImageSize}px", [p.fbt._param("minImageSize", Ce)], {
+					}, s.a.createElement("span", null, p.fbt._("Width and height should be equal, and at least {minImageSize}px", [p.fbt._param("minImageSize", we)], {
 						hk: "2A77pK"
-					})), s.a.createElement("span", null, p.fbt._("File size limited to {maxImageFileSize}MB", [p.fbt._param("maxImageFileSize", ge / 1048576)], {
+					})), s.a.createElement("span", null, p.fbt._("File size limited to {maxImageFileSize}MB", [p.fbt._param("maxImageFileSize", Ee / 1048576)], {
 						hk: "2iX7Vn"
-					}))))), h.length < w.e && s.a.createElement("div", {
-						className: Object(f.a)(b.a.formSection, b.a.modToggleSection)
+					}))))), u.length < w.e && s.a.createElement("div", {
+						className: Object(C.a)(b.a.formSection, b.a.modToggleSection)
 					}, s.a.createElement("label", null, 0 !== this.costOptions.length && s.a.createElement(k.a, {
-						activeColorOverride: E.b.moderator,
+						activeColorOverride: y.b.moderator,
 						className: b.a.modToggle,
 						on: c,
 						onToggle: this.handleModOnlyChange
@@ -679,10 +868,10 @@
 						className: b.a.modToggleLabelText
 					}, p.fbt._("Exclusive for Mods", null, {
 						hk: "1d7p5V"
-					})))), this.renderCostDropdown(), r && s.a.createElement("div", {
-						className: Object(f.a)(b.a.formSection, b.a.modToggleSection)
+					})))), this.renderCostDropdown(), o && s.a.createElement("div", {
+						className: Object(C.a)(b.a.formSection, b.a.modToggleSection)
 					}, s.a.createElement("label", null, s.a.createElement(k.a, {
-						activeColorOverride: E.b.moderator,
+						activeColorOverride: y.b.moderator,
 						className: b.a.modToggle,
 						on: d,
 						onToggle: this.handleIsTemporaryChange
@@ -690,18 +879,18 @@
 						className: b.a.modToggleLabelText
 					}, p.fbt._("Make Award Temporary", null, {
 						hk: "4GtfNs"
-					})))), this.renderDatePicker()), s.a.createElement(T.g, null, s.a.createElement(T.a, {
+					})))), this.renderDatePicker()), s.a.createElement(x.g, null, s.a.createElement(x.a, {
 						onClick: a,
 						disabled: n
 					}, p.fbt._("Cancel", null, {
 						hk: "2TSLl5"
-					})), s.a.createElement(T.r, {
+					})), s.a.createElement(x.r, {
 						className: b.a.createBtn,
 						"data-redditstyle": !0,
 						disabled: !this.inputsAreValid() || n,
 						onClick: this.handleSubmit
-					}, n ? s.a.createElement(N.a, {
-						sizePx: ue
+					}, n ? s.a.createElement(O.a, {
+						sizePx: fe
 					}) : p.fbt._("Create", null, {
 						hk: "42PxFO"
 					})))))
@@ -713,14 +902,14 @@
 						selectedPackage: a
 					} = this.state;
 					if (t) {
-						const e = Object(y.e)(a);
+						const e = Object(T.e)(a);
 						return s.a.createElement("div", {
 							className: b.a.formSection
 						}, s.a.createElement("label", null, s.a.createElement("span", {
 							className: b.a.formLabelText
 						}, p.fbt._("Months of Premium to give", null, {
 							hk: "3aWnVL"
-						})), s.a.createElement(x.b, {
+						})), s.a.createElement(S.b, {
 							className: b.a.dropdownSelector,
 							displayText: e,
 							name: "monthsOfPremium",
@@ -731,30 +920,42 @@
 					}
 					if (!this.costOptions.length) return null;
 					const n = this.costOptions.length ? this.costOptions.find(t => t.value === e) : null,
-						o = n ? n.displayText : p.fbt._("None", null, {
+						r = n ? n.displayText : p.fbt._("None", null, {
 							hk: "xWR5E"
 						}),
-						r = ve(e),
-						i = Ie(e);
+						o = xe(e),
+						i = Se(e);
 					return s.a.createElement("div", {
 						className: b.a.formSection
 					}, s.a.createElement("label", null, s.a.createElement("span", {
 						className: b.a.formLabelText
 					}, p.fbt._("Coin cost", null, {
 						hk: "1cOBVd"
-					})), s.a.createElement(x.b, {
+					})), s.a.createElement(S.b, {
 						className: b.a.dropdownSelector,
-						displayText: o,
+						displayText: r,
 						name: "coinCost",
 						options: this.costOptions,
 						onOpen: this.onCostInputOpen,
 						onSelect: this.handleCostChange
 					})), s.a.createElement("div", {
 						className: b.a.formSubtext
-					}, s.a.createElement("span", null, i > 0 ? p.fbt._("{coins-to-community} Coins will go to the community and {coins-to-recipient} will go to the recipient", [p.fbt._param("coins-to-community", r.toLocaleString()), p.fbt._param("coins-to-recipient", i.toLocaleString())], {
-						hk: "WQecM"
-					}) : p.fbt._("{coins-to-community} Coins will go to the community", [p.fbt._param("coins-to-community", r.toLocaleString())], {
-						hk: "3jEOwC"
+					}, s.a.createElement("span", null, i > 0 ? p.fbt._("{coins-to-community} will go to the community and {coins-to-recipient} will go to the recipient", [p.fbt._param("coins-to-community", s.a.createElement(ge, {
+						num: o,
+						type: P.b.Reddit,
+						currency: P.a
+					})), p.fbt._param("coins-to-recipient", s.a.createElement(ge, {
+						num: i,
+						type: P.b.Reddit,
+						currency: P.a
+					}))], {
+						hk: "38ioof"
+					}) : p.fbt._("{coins-to-community} will go to the community", [p.fbt._param("coins-to-community", s.a.createElement(ge, {
+						num: o,
+						type: P.b.Reddit,
+						currency: P.a
+					}))], {
+						hk: "3qOS8e"
 					}))))
 				}
 				renderDatePicker() {
@@ -767,10 +968,10 @@
 						className: b.a.formLabelText
 					}, p.fbt._("Start Date and Time", null, {
 						hk: "SAI4F"
-					})), s.a.createElement(M.a, {
+					})), s.a.createElement(A.a, {
 						onChange: this.onStartDateChange,
 						value: this.state.startDate
-					}), s.a.createElement(F.a, {
+					}), s.a.createElement(U.a, {
 						className: b.a.timeInput,
 						onChange: this.onStartTimeChange,
 						value: this.state.startTime
@@ -780,10 +981,10 @@
 						className: b.a.formLabelText
 					}, p.fbt._("End Date and Time", null, {
 						hk: "zCwiW"
-					})), s.a.createElement(M.a, {
+					})), s.a.createElement(A.a, {
 						onChange: this.onEndDateChange,
 						value: this.state.endDate
-					}), s.a.createElement(F.a, {
+					}), s.a.createElement(U.a, {
 						className: b.a.timeInput,
 						onChange: this.onEndTimeChange,
 						value: this.state.endTime
@@ -795,40 +996,40 @@
 						hk: "3do32Y"
 					})), s.a.createElement("fieldset", {
 						className: b.a.timezoneInput
-					}, s.a.createElement(A.a, {
+					}, s.a.createElement(j.a, {
 						selectedTimezoneName: this.state.timezoneName,
 						onChange: this.onTimezoneChange
 					})))) : null
 				}
 			}
-			var Oe = Object(C.a)(Ne),
-				ke = a("./src/reddit/controls/NumberInput/index.tsx");
-			const De = "GlobalAwardCreationModalImageInput",
-				_e = 15,
-				Pe = 30,
-				Me = 2097152,
-				Fe = 512,
-				Ae = 512,
-				Ue = 2048,
-				je = 2048,
-				Re = 500,
-				Le = e => e.slice(0, 5),
-				ze = (e, t) => `${e}T${Le(t)}:00`,
-				We = e => {
+			var Pe = Object(f.a)(_e),
+				Fe = a("./src/reddit/controls/NumberInput/index.tsx");
+			const Me = "GlobalAwardCreationModalImageInput",
+				Ae = 15,
+				Ue = 30,
+				je = 2097152,
+				Re = 512,
+				Le = 512,
+				ze = 2048,
+				Be = 2048,
+				We = 500,
+				Ve = e => e.slice(0, 5),
+				He = (e, t) => `${e}T${Ve(t)}:00`,
+				Ke = e => {
 					const [t, a] = e.split("T");
-					return [t, Le(a)]
+					return [t, Ve(a)]
 				},
-				Ve = () => {
+				Ge = () => {
 					const e = new Date,
-						t = Object(_.g)(e);
+						t = Object(F.g)(e);
 					return e.setMinutes(e.getMinutes() + 1440), {
 						startDate: t,
-						endDate: Object(_.g)(e),
-						submitTime: P.i.Now,
-						timezoneName: Object(_.b)() || _.a
+						endDate: Object(F.g)(e),
+						submitTime: M.i.Now,
+						timezoneName: Object(F.b)() || F.a
 					}
 				};
-			class He extends s.a.Component {
+			class qe extends s.a.Component {
 				constructor(e) {
 					super(e), this.handleEscapeKey = e => {
 						e.keyCode === v.a.Escape && this.props.onTryCloseModal()
@@ -844,16 +1045,16 @@
 							imageHeight: e.height,
 							imageWidth: e.width
 						});
-						const s = await de(t, e, a);
+						const s = await ue(t, e, a);
 						if (!s.ok) return this.handleImageUploadError(s.error.message), void this.sendUploadImageEvent(void 0, e, (new Date).getTime() - n, s.error.message);
 						const {
-							s3UploadLease: o,
-							websocket: r
+							s3UploadLease: r,
+							websocket: o
 						} = s;
 						this.setState({
-							websocket: r
+							websocket: o
 						});
-						const i = await me(o, e);
+						const i = await he(r, e);
 						if (!i.ok) return this.handleImageUploadError(i.error.message), void this.sendUploadImageEvent(void 0, e, (new Date).getTime() - n, i.error.message);
 						const {
 							imageUrl: l
@@ -864,7 +1065,7 @@
 					}, this.handleImageRemoval = () => {
 						this.cancelExistingWebsockets(), this.setState({
 							imageUrl: void 0
-						}), this.props.sendEvent(Object(h.d)("remove", "image"))
+						}), this.props.sendEvent(Object(u.d)("remove", "image"))
 					}, this.handleImageUploadError = e => {
 						this.cancelExistingWebsockets(), this.setState({
 							imageError: e,
@@ -907,7 +1108,7 @@
 					}), this.handleGiverCoinRewardChange = e => this.setState({
 						giverCoinReward: e
 					}), this.onCostInputOpen = () => {
-						this.props.sendEvent(Object(h.d)("click", "coin_cost_input"))
+						this.props.sendEvent(Object(u.d)("click", "coin_cost_input"))
 					}, this.getIconFormatDropdownMenuItems = () => Object.keys(I.c).map(e => ({
 						displayText: e,
 						value: I.c[e]
@@ -929,68 +1130,68 @@
 							onCreateAwardSuccess: n
 						} = this.props, {
 							coinReward: s,
-							costValue: o,
-							daysOfDripExtension: r,
+							costValue: r,
+							daysOfDripExtension: o,
 							daysOfPremium: i,
 							description: l,
 							endDate: c,
 							endTime: d,
 							giverCoinReward: m,
-							imageHeight: u,
+							imageHeight: h,
 							imageUrl: g,
 							imageWidth: b,
-							isNew: C,
-							isTemporary: f,
+							isNew: f,
+							isTemporary: C,
 							nameValue: E,
-							pennyDonate: w,
-							pennyPrice: v,
-							selectedAwardSubType: I,
-							selectedIconFormat: y,
+							pennyDonate: y,
+							pennyPrice: w,
+							selectedAwardSubType: v,
+							selectedIconFormat: I,
 							startDate: T,
 							startTime: x,
 							subredditCoinReward: S,
 							websocket: N
 						} = this.state;
-						if (!(g && E && o && N)) return;
+						if (!(g && E && r && N)) return;
 						if (N.readyState !== N.OPEN) {
 							return this.handleImageRemoval(), void a(p.fbt._("There was an error creating the award. Please try again.", null, {
 								hk: "1pkgpd"
 							}))
 						}
-						const O = ce(N),
-							k = Object(_.f)(ze(T, x)),
-							D = Object(_.f)(ze(c, d));
-						k.setTime(k.getTime()), D.setTime(D.getTime());
-						const P = f ? k.toISOString() : void 0,
-							M = f ? D.toISOString() : void 0;
+						const O = me(N),
+							D = Object(F.f)(He(T, x)),
+							k = Object(F.f)(He(c, d));
+						D.setTime(D.getTime()), k.setTime(k.getTime());
+						const _ = C ? D.toISOString() : void 0,
+							P = C ? k.toISOString() : void 0;
 						await t({
 							awardName: E,
-							awardSubType: I,
-							coinCost: o,
+							awardSubType: v,
+							coinCost: r,
 							coinReward: s,
-							daysOfDripExtension: r,
+							daysOfDripExtension: o,
 							daysOfPremium: i,
 							description: l,
 							giverCoinReward: m,
-							endDate: M,
-							iconFormat: y,
-							imageHeight: u,
+							endDate: P,
+							iconFormat: I,
+							imageHeight: h,
 							imageUrl: g,
 							imageWidth: b,
-							isNew: C,
-							pennyDonate: w,
-							pennyPrice: v,
-							startDate: P,
+							isNew: f,
+							pennyDonate: y,
+							pennyPrice: w,
+							startDate: _,
 							subredditCoinReward: S
 						});
-						const F = await O;
-						if (!F.ok) {
+						const M = await O;
+						if (!M.ok) {
 							return this.handleImageRemoval(), void a(p.fbt._("There was an error creating the award. Please try again.", null, {
 								hk: "1pkgpd"
 							}))
 						}
-						const A = F.award;
-						A.awardType = A.awardType.toUpperCase(), n(A), this.props.sendEvent(Object(h.b)(this.state.imageUrl, this.imageDraft, A))
+						const A = M.award;
+						A.awardType = A.awardType.toUpperCase(), n(A), this.props.sendEvent(Object(u.b)(this.state.imageUrl, this.imageDraft, A))
 					}, this.onStartDateChange = e => {
 						this.setState({
 							startDate: e
@@ -1012,12 +1213,12 @@
 							timezoneName: e
 						})
 					};
-					const t = Ve(),
-						[a, n] = We(t.startDate),
-						[s, o] = We(t.endDate);
+					const t = Ge(),
+						[a, n] = Ke(t.startDate),
+						[s, r] = Ke(t.endDate);
 					this.imageDraft = null, this.state = {
 						coinReward: 0,
-						costValue: Re,
+						costValue: We,
 						daysOfDripExtension: 0,
 						daysOfPremium: 0,
 						description: "",
@@ -1029,7 +1230,7 @@
 						isNew: !1,
 						isTemporary: !1,
 						endDate: s,
-						endTime: o,
+						endTime: r,
 						nameValue: "",
 						selectedAwardSubType: I.d.Global,
 						selectedIconFormat: I.c.png,
@@ -1050,7 +1251,7 @@
 				}
 				sendUploadImageEvent(e, t, a, n) {
 					const s = (new Date).getTime();
-					this.props.sendEvent(Object(h.f)(e, t, s - a, n))
+					this.props.sendEvent(Object(u.f)(e, t, s - a, n))
 				}
 				cancelExistingWebsockets() {
 					const {
@@ -1079,8 +1280,8 @@
 					} = this.state;
 					if (!1 === s) return !0;
 					if (!(a && n && e && t)) return !1;
-					const o = Object(_.f)(ze(a, n));
-					return !(Object(_.f)(ze(e, t)) < o)
+					const r = Object(F.f)(He(a, n));
+					return !(Object(F.f)(He(e, t)) < r)
 				}
 				inputsAreValid() {
 					const {
@@ -1097,28 +1298,28 @@
 						isPending: a,
 						subredditId: n
 					} = this.props, {
-						description: o,
-						imageError: r,
+						description: r,
+						imageError: o,
 						imageUrl: i,
 						isTemporary: l,
 						nameValue: c
 					} = this.state;
 					return s.a.createElement("section", {
-						className: Object(f.a)(e, b.a.communityAwardCreationModal)
-					}, s.a.createElement(T.i, null, s.a.createElement(D.a, null, s.a.createElement(T.q, null, p.fbt._("Create Award", null, {
+						className: Object(C.a)(e, b.a.communityAwardCreationModal)
+					}, s.a.createElement(x.i, null, s.a.createElement(_.a, null, s.a.createElement(x.q, null, p.fbt._("Create Award", null, {
 						hk: "JQtjM"
-					})), s.a.createElement(O.a, {
+					})), s.a.createElement(D.a, {
 						onClick: t,
 						disabled: a
-					}, s.a.createElement(T.b, null)))), s.a.createElement("form", null, s.a.createElement(T.l, null, s.a.createElement("div", {
+					}, s.a.createElement(x.b, null)))), s.a.createElement("form", null, s.a.createElement(x.l, null, s.a.createElement("div", {
 						className: b.a.formSection
 					}, s.a.createElement("label", null, s.a.createElement("span", {
 						className: b.a.formLabelText
 					}, p.fbt._("Name", null, {
 						hk: "3PlUgw"
-					})), s.a.createElement(S.b, {
+					})), s.a.createElement(N.b, {
 						className: b.a.nameInput,
-						maxLength: Pe,
+						maxLength: Ue,
 						name: "awardName",
 						onChange: this.handleNameChange,
 						placeholder: p.fbt._("Name of Award", null, {
@@ -1128,23 +1329,23 @@
 						value: c
 					})), s.a.createElement("div", {
 						className: b.a.formSubtext
-					}, Pe - c.length)), s.a.createElement("div", {
+					}, Ue - c.length)), s.a.createElement("div", {
 						className: b.a.formSection
 					}, s.a.createElement("label", {
 						className: b.a.formLabelText,
-						htmlFor: De
+						htmlFor: Me
 					}, p.fbt._("Image", null, {
 						hk: "2XS0KR"
-					})), i ? s.a.createElement(z, {
+					})), i ? s.a.createElement(W, {
 						imageUrl: i,
 						onRemove: this.handleImageRemoval
-					}) : s.a.createElement(s.a.Fragment, null, s.a.createElement($, {
-						id: De,
-						minHeight: Fe,
-						minWidth: Ae,
-						maxHeight: Ue,
-						maxWidth: je,
-						maxSizeBytes: Me,
+					}) : s.a.createElement(s.a.Fragment, null, s.a.createElement(te, {
+						id: Me,
+						minHeight: Re,
+						minWidth: Le,
+						maxHeight: ze,
+						maxWidth: Be,
+						maxSizeBytes: je,
 						name: "awardImage",
 						onImageChange: this.handleChooseImage,
 						onImageUploadFailed: e => {
@@ -1152,13 +1353,13 @@
 						},
 						shouldBeEqualDimensions: !0,
 						subredditId: n
-					}), r && s.a.createElement("div", {
+					}), o && s.a.createElement("div", {
 						className: b.a.errorText
-					}, r), s.a.createElement("div", {
+					}, o), s.a.createElement("div", {
 						className: b.a.formSubtext
-					}, s.a.createElement("span", null, p.fbt._("Width and height should be equal, and at least {minImageSize}px", [p.fbt._param("minImageSize", Ae)], {
+					}, s.a.createElement("span", null, p.fbt._("Width and height should be equal, and at least {minImageSize}px", [p.fbt._param("minImageSize", Le)], {
 						hk: "2A77pK"
-					})), s.a.createElement("span", null, p.fbt._("File size limited to {maxImageFileSize}MB", [p.fbt._param("maxImageFileSize", Me / 1048576)], {
+					})), s.a.createElement("span", null, p.fbt._("File size limited to {maxImageFileSize}MB", [p.fbt._param("maxImageFileSize", je / 1048576)], {
 						hk: "2iX7Vn"
 					}))))), s.a.createElement("div", {
 						className: b.a.formSection
@@ -1166,21 +1367,21 @@
 						className: b.a.formLabelText
 					}, p.fbt._("Description", null, {
 						hk: "162GGk"
-					})), s.a.createElement(T.t, {
+					})), s.a.createElement(x.t, {
 						name: "description",
 						onChange: this.handleDescriptionChange,
 						placeholder: p.fbt._("Award Description", null, {
 							hk: "22gFWn"
 						}),
-						value: o
+						value: r
 					})), s.a.createElement("div", {
 						className: b.a.formSubtext
 					}, p.fbt._('Use "{coinSymbol}" for the coin symbol', [p.fbt._param("coinSymbol", "%{coin_symbol}")], {
 						hk: "40lFWr"
 					}))), this.renderCostSelector(), s.a.createElement("div", {
-						className: Object(f.a)(b.a.formSection, b.a.modToggleSection)
+						className: Object(C.a)(b.a.formSection, b.a.modToggleSection)
 					}, s.a.createElement("label", null, s.a.createElement(k.a, {
-						activeColorOverride: E.b.moderator,
+						activeColorOverride: y.b.moderator,
 						className: b.a.modToggle,
 						on: l,
 						onToggle: this.handleIsTemporaryChange
@@ -1188,18 +1389,18 @@
 						className: b.a.modToggleLabelText
 					}, p.fbt._("Make Award Temporary", null, {
 						hk: "4GtfNs"
-					})))), this.renderDatePicker(), this.renderGlobalAwardOptions()), s.a.createElement(T.g, null, s.a.createElement(T.a, {
+					})))), this.renderDatePicker(), this.renderGlobalAwardOptions()), s.a.createElement(x.g, null, s.a.createElement(x.a, {
 						onClick: t,
 						disabled: a
 					}, p.fbt._("Cancel", null, {
 						hk: "2TSLl5"
-					})), s.a.createElement(T.r, {
+					})), s.a.createElement(x.r, {
 						className: b.a.createBtn,
 						"data-redditstyle": !0,
 						disabled: !this.inputsAreValid() || a,
 						onClick: this.handleSubmit
-					}, a ? s.a.createElement(N.a, {
-						sizePx: _e
+					}, a ? s.a.createElement(O.a, {
+						sizePx: Ae
 					}) : p.fbt._("Create", null, {
 						hk: "42PxFO"
 					})))))
@@ -1214,7 +1415,7 @@
 						className: b.a.formLabelText
 					}, p.fbt._("Award Sub Type", null, {
 						hk: "31fnRs"
-					})), s.a.createElement(x.b, {
+					})), s.a.createElement(S.b, {
 						className: b.a.dropdownSelector,
 						displayText: e,
 						name: "awardSubType",
@@ -1232,7 +1433,7 @@
 						className: b.a.formLabelText
 					}, p.fbt._("Image format", null, {
 						hk: "11p9LQ"
-					})), s.a.createElement(x.b, {
+					})), s.a.createElement(S.b, {
 						className: b.a.dropdownSelector,
 						displayText: e,
 						name: "iconFormat",
@@ -1250,7 +1451,7 @@
 						className: b.a.formLabelText
 					}, p.fbt._("Coin cost", null, {
 						hk: "1cOBVd"
-					})), s.a.createElement(ke.a, {
+					})), s.a.createElement(Fe.a, {
 						className: b.a.coinInput,
 						name: "cost of award",
 						onChange: this.handleCostChange,
@@ -1267,10 +1468,10 @@
 						className: b.a.formLabelText
 					}, p.fbt._("Start Date and Time", null, {
 						hk: "SAI4F"
-					})), s.a.createElement(M.a, {
+					})), s.a.createElement(A.a, {
 						onChange: this.onStartDateChange,
 						value: this.state.startDate
-					}), s.a.createElement(F.a, {
+					}), s.a.createElement(U.a, {
 						className: b.a.timeInput,
 						onChange: this.onStartTimeChange,
 						value: this.state.startTime
@@ -1280,10 +1481,10 @@
 						className: b.a.formLabelText
 					}, p.fbt._("End Date and Time", null, {
 						hk: "zCwiW"
-					})), s.a.createElement(M.a, {
+					})), s.a.createElement(A.a, {
 						onChange: this.onEndDateChange,
 						value: this.state.endDate
-					}), s.a.createElement(F.a, {
+					}), s.a.createElement(U.a, {
 						className: b.a.timeInput,
 						onChange: this.onEndTimeChange,
 						value: this.state.endTime
@@ -1295,7 +1496,7 @@
 						hk: "3do32Y"
 					})), s.a.createElement("fieldset", {
 						className: b.a.timezoneInput
-					}, s.a.createElement(A.a, {
+					}, s.a.createElement(j.a, {
 						selectedTimezoneName: this.state.timezoneName,
 						onChange: this.onTimezoneChange
 					})))) : null
@@ -1306,17 +1507,17 @@
 						daysOfDripExtension: t,
 						daysOfPremium: a,
 						giverCoinReward: n,
-						isNew: o,
-						subredditCoinReward: r,
+						isNew: r,
+						subredditCoinReward: o,
 						pennyDonate: i,
 						pennyPrice: l
 					} = this.state;
 					return s.a.createElement(s.a.Fragment, null, this.renderIconFormatDropdown(), this.renderAwardSubTypeDropdown(), s.a.createElement("div", {
-						className: Object(f.a)(b.a.formSection, b.a.modToggleSection)
+						className: Object(C.a)(b.a.formSection, b.a.modToggleSection)
 					}, s.a.createElement("label", null, s.a.createElement(k.a, {
-						activeColorOverride: E.b.moderator,
+						activeColorOverride: y.b.moderator,
 						className: b.a.modToggle,
-						on: o,
+						on: r,
 						onToggle: this.handleIsNewChange
 					}), s.a.createElement("span", {
 						className: b.a.modToggleLabelText
@@ -1328,7 +1529,7 @@
 						className: b.a.formLabelText
 					}, p.fbt._("Price in Pennies (this makes Award Cash only purchasable)", null, {
 						hk: "4ACqwC"
-					})), s.a.createElement(ke.a, {
+					})), s.a.createElement(Fe.a, {
 						className: b.a.coinInput,
 						name: "penny price",
 						onChange: this.handlePennyPriceChange,
@@ -1337,7 +1538,7 @@
 						className: b.a.globalLabelText
 					}, p.fbt._("Pennies Donated", null, {
 						hk: "61DzJ"
-					})), s.a.createElement(ke.a, {
+					})), s.a.createElement(Fe.a, {
 						className: b.a.coinInput,
 						name: "penny donated",
 						onChange: this.handlePennyDonateChange,
@@ -1346,7 +1547,7 @@
 						className: b.a.globalLabelText
 					}, p.fbt._("Giver Coin Reward", null, {
 						hk: "3ZwXG8"
-					})), s.a.createElement(ke.a, {
+					})), s.a.createElement(Fe.a, {
 						className: b.a.coinInput,
 						name: "coin reward",
 						onChange: this.handleGiverCoinRewardChange,
@@ -1357,7 +1558,7 @@
 						className: b.a.formLabelText
 					}, p.fbt._("Days of Drip Extension", null, {
 						hk: "3rnKnC"
-					})), s.a.createElement(ke.a, {
+					})), s.a.createElement(Fe.a, {
 						className: b.a.coinInput,
 						name: "days of drip extension",
 						onChange: this.handleDaysOfDripExtensionChange,
@@ -1366,7 +1567,7 @@
 						className: b.a.globalLabelText
 					}, p.fbt._("Days of Premium", null, {
 						hk: "2nPLUJ"
-					})), s.a.createElement(ke.a, {
+					})), s.a.createElement(Fe.a, {
 						className: b.a.coinInput,
 						name: "days of premium",
 						onChange: this.handleDaysOfPremiumChange,
@@ -1375,7 +1576,7 @@
 						className: b.a.globalLabelText
 					}, p.fbt._("Coin Reward", null, {
 						hk: "2QMoAk"
-					})), s.a.createElement(ke.a, {
+					})), s.a.createElement(Fe.a, {
 						className: b.a.coinInput,
 						name: "coin reward",
 						onChange: this.handleCoinRewardChange,
@@ -1384,18 +1585,18 @@
 						className: b.a.globalLabelText
 					}, p.fbt._("Subreddit Coin Reward", null, {
 						hk: "3QSEXY"
-					})), s.a.createElement(ke.a, {
+					})), s.a.createElement(Fe.a, {
 						className: b.a.coinInput,
 						name: "subreddit coin reward",
 						onChange: this.handleSubredditCoinRewardChange,
-						value: r
+						value: o
 					}))))
 				}
 			}
-			var Be = Object(C.a)(He);
+			var Xe = Object(f.a)(qe);
 
-			function Ke() {
-				return (Ke = Object.assign || function(e) {
+			function Ye() {
+				return (Ye = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var a = arguments[t];
 						for (var n in a) Object.prototype.hasOwnProperty.call(a, n) && (e[n] = a[n])
@@ -1403,7 +1604,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const Ge = Object(r.c)({
+			const Je = Object(o.c)({
 					awards: m.e,
 					isPending: m.c,
 					isEligibleForGlobalAwards: (e, {
@@ -1413,48 +1614,48 @@
 						subredditId: t
 					}) => Object(c.a)(t)
 				}),
-				qe = Object(o.b)(Ge, (e, {
+				Ze = Object(r.b)(Je, (e, {
 					subredditId: t
 				}) => ({
-					onCreateCommunityAward: (a, n, s, o, r, i, l) => e(Object(d.d)(t, a, n, s, o, r, i, l)),
-					onCreateModAward: (a, n, s, o, r, i, l) => e(Object(d.f)(t, a, n, s, o, r, i, l)),
+					onCreateCommunityAward: (a, n, s, r, o, i, l) => e(Object(d.d)(t, a, n, s, r, o, i, l)),
+					onCreateModAward: (a, n, s, r, o, i, l) => e(Object(d.f)(t, a, n, s, r, o, i, l)),
 					onCreateGlobalAward: ({
 						awardName: t,
 						awardSubType: a,
 						coinCost: n,
 						coinReward: s,
-						daysOfDripExtension: o,
-						daysOfPremium: r,
+						daysOfDripExtension: r,
+						daysOfPremium: o,
 						description: i,
 						endDate: l,
 						giverCoinReward: c,
 						iconFormat: m,
-						imageHeight: h,
-						imageUrl: u,
+						imageHeight: u,
+						imageUrl: h,
 						imageWidth: p,
 						isNew: g,
 						pennyPrice: b,
-						pennyDonate: C,
-						startDate: f,
+						pennyDonate: f,
+						startDate: C,
 						subredditCoinReward: E
 					}) => e(Object(d.e)({
 						awardSubType: a,
 						coinPrice: n,
 						coinReward: s,
-						daysOfPremium: r,
-						daysOfDripExtension: o,
+						daysOfPremium: o,
+						daysOfDripExtension: r,
 						description: i,
 						endsAt: l,
 						giverCoinReward: c,
 						iconFormat: m,
-						iconUrl: u,
+						iconUrl: h,
 						iconWidth: p,
-						iconHeight: h,
+						iconHeight: u,
 						isNew: g,
 						pennyPrice: b,
-						pennyDonate: C,
+						pennyDonate: f,
 						name: t,
-						startsAt: f,
+						startsAt: C,
 						subredditCoinReward: E
 					})),
 					onCreateAwardFailed: t => e(Object(d.b)(t)),
@@ -1463,7 +1664,7 @@
 						subredditId: t
 					}))
 				}));
-			t.default = Object(i.b)(qe(Object(u.c)(class extends s.a.PureComponent {
+			t.default = Object(i.b)(Ze(Object(h.c)(class extends s.a.PureComponent {
 				constructor() {
 					super(...arguments), this.onTryCloseModal = () => {
 						const {
@@ -1471,15 +1672,15 @@
 							sendEvent: t,
 							toggleModal: a
 						} = this.props;
-						e || (t(Object(h.d)("click", "cancel")), a())
+						e || (t(Object(u.d)("click", "cancel")), a())
 					}
 				}
 				render() {
-					return this.props.isEligibleForGlobalAwards ? s.a.createElement(Be, Ke({}, this.props, {
+					return this.props.isEligibleForGlobalAwards ? s.a.createElement(Xe, Ye({}, this.props, {
 						onTryCloseModal: this.onTryCloseModal,
 						withOverlay: !0,
 						onOverlayClick: this.onTryCloseModal
-					})) : s.a.createElement(Oe, Ke({}, this.props, {
+					})) : s.a.createElement(Pe, Ye({}, this.props, {
 						onTryCloseModal: this.onTryCloseModal,
 						withOverlay: !0,
 						onOverlayClick: this.onTryCloseModal
@@ -1499,12 +1700,12 @@
 			"use strict";
 			var n = a("./node_modules/react/index.js"),
 				s = a.n(n),
-				o = a("./src/lib/classNames/index.ts"),
-				r = a("./src/lib/lessComponent.tsx"),
+				r = a("./src/lib/classNames/index.ts"),
+				o = a("./src/lib/lessComponent.tsx"),
 				i = a("./src/reddit/components/FocusableContent/index.m.less"),
 				l = a.n(i);
-			t.a = r.a.wrapped(e => s.a.createElement("div", {
-				className: Object(o.a)(e.className, {
+			t.a = o.a.wrapped(e => s.a.createElement("div", {
+				className: Object(r.a)(e.className, {
 					[l.a.isFocused]: e.isFocused,
 					[l.a.noBorder]: e.noBorder
 				})
@@ -1533,15 +1734,15 @@
 			}));
 			var n = a("./node_modules/lodash/once.js"),
 				s = a.n(n),
-				o = a("./node_modules/react/index.js"),
-				r = a.n(o),
+				r = a("./node_modules/react/index.js"),
+				o = a.n(r),
 				i = a("./node_modules/lodash/range.js"),
 				l = a.n(i),
 				c = a("./src/reddit/components/PostCreationForm/SchedulePickerModal/DateInput/FallbackDateInput/index.m.less"),
 				d = a.n(c),
 				m = a("./src/lib/lessComponent.tsx");
-			const h = m.a.div("Container", d.a),
-				u = m.a.select("Select", d.a),
+			const u = m.a.div("Container", d.a),
+				h = m.a.select("Select", d.a),
 				p = m.a.span("Delimiter", d.a),
 				g = 2018,
 				b = e => {
@@ -1550,7 +1751,7 @@
 						month: "short"
 					})
 				},
-				C = e => {
+				f = e => {
 					const [t, a, n] = e.split("-").map(Number);
 					return {
 						year: t,
@@ -1558,11 +1759,11 @@
 						day: n
 					}
 				};
-			class f extends r.a.PureComponent {
+			class C extends o.a.PureComponent {
 				constructor() {
 					super(...arguments), this.onChange = e => {
 						const t = {
-								...C(this.props.value),
+								...f(this.props.value),
 								...e
 							},
 							{
@@ -1570,8 +1771,8 @@
 								month: n,
 								day: s
 							} = t,
-							o = new Date(Date.UTC(a, n, s)).toISOString().slice(0, 10);
-						this.props.onChange(o)
+							r = new Date(Date.UTC(a, n, s)).toISOString().slice(0, 10);
+						this.props.onChange(r)
 					}, this.onChangeYear = e => {
 						const t = +e.target.value;
 						this.onChange({
@@ -1594,36 +1795,36 @@
 						year: e,
 						month: t,
 						day: a
-					} = C(this.props.value);
-					return r.a.createElement(h, {
+					} = f(this.props.value);
+					return o.a.createElement(u, {
 						className: this.props.className
-					}, r.a.createElement(u, {
+					}, o.a.createElement(h, {
 						onChange: this.onChangeMonth,
 						value: t
-					}, l()(12).map(e => r.a.createElement("option", {
+					}, l()(12).map(e => o.a.createElement("option", {
 						key: e,
 						value: e
-					}, b(e)))), r.a.createElement(p, null, "/"), r.a.createElement(u, {
+					}, b(e)))), o.a.createElement(p, null, "/"), o.a.createElement(h, {
 						onChange: this.onChangeDay,
 						value: a
-					}, l()(1, 32).map(e => r.a.createElement("option", {
+					}, l()(1, 32).map(e => o.a.createElement("option", {
 						key: e,
 						value: e
-					}, ("0" + e).slice(-2)))), r.a.createElement(p, null, "/"), r.a.createElement(u, {
+					}, ("0" + e).slice(-2)))), o.a.createElement(p, null, "/"), o.a.createElement(h, {
 						onChange: this.onChangeYear,
 						value: e
-					}, l()(g, g + 10).map(e => r.a.createElement("option", {
+					}, l()(g, g + 10).map(e => o.a.createElement("option", {
 						key: e,
 						value: e
 					}, e))))
 				}
 			}
-			var E = f,
-				w = a("./src/reddit/components/PostCreationForm/SchedulePickerModal/DateInput/index.m.less"),
-				v = a.n(w);
+			var E = C,
+				y = a("./src/reddit/components/PostCreationForm/SchedulePickerModal/DateInput/index.m.less"),
+				w = a.n(y);
 
-			function I() {
-				return (I = Object.assign || function(e) {
+			function v() {
+				return (v = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var a = arguments[t];
 						for (var n in a) Object.prototype.hasOwnProperty.call(a, n) && (e[n] = a[n])
@@ -1631,18 +1832,18 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const y = s()(() => {
+			const I = s()(() => {
 					const e = document.createElement("input");
 					return e.setAttribute("type", "date"), e.setAttribute("value", "not-a-date"), "not-a-date" !== e.value
 				}),
-				T = m.a.input("Input", v.a);
+				T = m.a.input("Input", w.a);
 
 			function x(e) {
-				return y() ? r.a.createElement(T, I({
+				return I() ? o.a.createElement(T, v({
 					type: "date"
 				}, e, {
 					onChange: t => e.onChange(t.target.value)
-				})) : r.a.createElement(E, e)
+				})) : o.a.createElement(E, e)
 			}
 		},
 		"./src/reddit/components/PostCreationForm/SchedulePickerModal/TimeInput/FallbackTimeInput/index.m.less": function(e, t, a) {
@@ -1668,23 +1869,23 @@
 			}));
 			var n = a("./node_modules/lodash/once.js"),
 				s = a.n(n),
-				o = a("./node_modules/react/index.js"),
-				r = a.n(o),
+				r = a("./node_modules/react/index.js"),
+				o = a.n(r),
 				i = a("./node_modules/lodash/clamp.js"),
 				l = a.n(i),
 				c = a("./src/reddit/components/FocusableContent/index.tsx"),
 				d = a("./src/reddit/components/PostCreationForm/SchedulePickerModal/TimeInput/FallbackTimeInput/index.m.less"),
 				m = a.n(d),
-				h = a("./src/lib/lessComponent.tsx");
-			const u = h.a.wrapped(c.a, "Container", m.a),
-				p = h.a.input("Input", m.a),
-				g = h.a.span("Delimiter", m.a),
+				u = a("./src/lib/lessComponent.tsx");
+			const h = u.a.wrapped(c.a, "Container", m.a),
+				p = u.a.input("Input", m.a),
+				g = u.a.span("Delimiter", m.a),
 				b = e => ("0" + e).slice(-2),
-				C = (e, t) => {
+				f = (e, t) => {
 					const a = +e.slice(-2);
 					if (Number.isInteger(a)) return a > t ? 0 : a
 				};
-			class f extends r.a.PureComponent {
+			class C extends o.a.PureComponent {
 				constructor(e) {
 					super(e), this.callOnChange = () => {
 						let e = l()(+this.state.hour, 0, 24);
@@ -1696,12 +1897,12 @@
 						const a = `${b(e)}:${b(t)}`;
 						this.props.onChange(a)
 					}, this.onChangeHour = e => {
-						const t = C(e.target.value, 24);
+						const t = f(e.target.value, 24);
 						void 0 !== t && this.setState({
 							hour: t
 						}, this.callOnChange)
 					}, this.onChangeMinute = e => {
-						const t = C(e.target.value, 59);
+						const t = f(e.target.value, 59);
 						void 0 !== t && this.setState({
 							minute: t
 						}, this.callOnChange)
@@ -1731,16 +1932,16 @@
 				}
 				render() {
 					const e = this.state.isHourInputFocused || this.state.isMinuteInputFocused;
-					return r.a.createElement(u, {
+					return o.a.createElement(h, {
 						className: this.props.className,
 						isFocused: e
-					}, r.a.createElement(p, {
+					}, o.a.createElement(p, {
 						type: "number",
 						onChange: this.onChangeHour,
 						onFocus: this.onHourInputFocus,
 						onBlur: this.onHourInputBlur,
 						value: b(this.state.hour)
-					}), r.a.createElement(g, null, ":"), r.a.createElement(p, {
+					}), o.a.createElement(g, null, ":"), o.a.createElement(p, {
 						type: "number",
 						onChange: this.onChangeMinute,
 						onFocus: this.onMinuteInputFocus,
@@ -1749,12 +1950,12 @@
 					}))
 				}
 			}
-			var E = f,
-				w = a("./src/reddit/components/PostCreationForm/SchedulePickerModal/TimeInput/index.m.less"),
-				v = a.n(w);
+			var E = C,
+				y = a("./src/reddit/components/PostCreationForm/SchedulePickerModal/TimeInput/index.m.less"),
+				w = a.n(y);
 
-			function I() {
-				return (I = Object.assign || function(e) {
+			function v() {
+				return (v = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var a = arguments[t];
 						for (var n in a) Object.prototype.hasOwnProperty.call(a, n) && (e[n] = a[n])
@@ -1762,18 +1963,18 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const y = s()(() => {
+			const I = s()(() => {
 					const e = document.createElement("input");
 					return e.setAttribute("type", "time"), e.setAttribute("value", "not-a-time"), "not-a-time" !== e.value
 				}),
-				T = h.a.input("TimeInput", v.a);
+				T = u.a.input("TimeInput", w.a);
 
 			function x(e) {
-				return y() ? r.a.createElement(T, I({
+				return I() ? o.a.createElement(T, v({
 					type: "time"
 				}, e, {
 					onChange: t => e.onChange(t.target.value)
-				})) : r.a.createElement(E, e)
+				})) : o.a.createElement(E, e)
 			}
 		},
 		"./src/reddit/components/PostCreationForm/SchedulePickerModal/TimezoneSelector/index.m.less": function(e, t, a) {
@@ -1785,8 +1986,8 @@
 			"use strict";
 			var n = a("./node_modules/react/index.js"),
 				s = a.n(n),
-				o = a("./src/lib/classNames/index.ts"),
-				r = a("./src/lib/loadWithRetries/index.ts"),
+				r = a("./src/lib/classNames/index.ts"),
+				o = a("./src/lib/loadWithRetries/index.ts"),
 				i = a("./src/reddit/helpers/scheduledPosts/index.ts"),
 				l = a("./src/reddit/components/PostCreationForm/SchedulePickerModal/TimezoneSelector/index.m.less"),
 				c = a.n(l);
@@ -1815,7 +2016,7 @@
 					}
 				}
 				async loadTimezones() {
-					const e = (await Object(r.a)(() => a.e("TimezoneList").then(a.bind(null, "./src/lib/timezone/timezoneList.ts")))).default,
+					const e = (await Object(o.a)(() => a.e("TimezoneList").then(a.bind(null, "./src/lib/timezone/timezoneList.ts")))).default,
 						t = d(e);
 					this.setState({
 						timezoneOptions: t
@@ -1828,7 +2029,7 @@
 					return s.a.createElement("select", {
 						onChange: this.onSelect,
 						value: this.props.selectedTimezoneName,
-						className: Object(o.a)(c.a.select, this.props.className)
+						className: Object(r.a)(c.a.select, this.props.className)
 					}, this.state.timezoneOptions.map(({
 						name: e,
 						displayText: t
@@ -1852,12 +2053,12 @@
 		"./src/reddit/controls/NumberInput/index.tsx": function(e, t, a) {
 			"use strict";
 			a.d(t, "a", (function() {
-				return h
+				return u
 			}));
 			var n = a("./node_modules/react/index.js"),
 				s = a.n(n),
-				o = a("./src/lib/classNames/index.ts"),
-				r = a("./src/reddit/controls/FormFields/index.tsx"),
+				r = a("./src/lib/classNames/index.ts"),
+				o = a("./src/reddit/controls/FormFields/index.tsx"),
 				i = a("./src/reddit/icons/svgs/ChevronDown/index.tsx"),
 				l = a("./src/reddit/icons/svgs/ChevronUp/index.tsx"),
 				c = a("./src/reddit/controls/NumberInput/index.m.less"),
@@ -1872,7 +2073,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			class h extends s.a.Component {
+			class u extends s.a.Component {
 				constructor() {
 					super(...arguments), this.inputRef = null, this.handleIncrement = e => {
 						if (e.preventDefault(), !this.inputRef) return;
@@ -1905,8 +2106,8 @@
 						id: t,
 						...a
 					} = this.props, n = t || d.a.inputId;
-					return s.a.createElement(r.b, m({}, a, {
-						className: Object(o.a)(e, d.a.numberInput),
+					return s.a.createElement(o.b, m({}, a, {
+						className: Object(r.a)(e, d.a.numberInput),
 						id: n,
 						inputRef: this.setInputRef,
 						onChange: this.handleChangeEvent,
@@ -1933,14 +2134,42 @@
 				}
 			}
 		},
+		"./src/reddit/helpers/governance/tokens.ts": function(e, t, a) {
+			"use strict";
+			a.d(t, "b", (function() {
+				return r
+			})), a.d(t, "c", (function() {
+				return o
+			})), a.d(t, "a", (function() {
+				return i
+			}));
+			var n = a("./node_modules/bignumber.js/bignumber.js"),
+				s = a("./src/lib/prettyPrintNumber/index.ts");
+
+			function r(e, t) {
+				const a = new n.BigNumber(e),
+					s = new n.BigNumber(t || 1);
+				return a.dividedToIntegerBy(s).toString()
+			}
+
+			function o(e, t) {
+				return Object(s.b)(parseInt(r(e, t), 10))
+			}
+
+			function i(e, t) {
+				const a = new n.BigNumber(e),
+					s = new n.BigNumber(t || 1);
+				return a.multipliedBy(s).toFixed(0)
+			}
+		},
 		"./src/reddit/models/Gold/Premium/index.ts": function(e, t, a) {
 			"use strict";
 			a.d(t, "a", (function() {
 				return s
 			})), a.d(t, "d", (function() {
-				return o
-			})), a.d(t, "e", (function() {
 				return r
+			})), a.d(t, "e", (function() {
+				return o
 			})), a.d(t, "b", (function() {
 				return i
 			})), a.d(t, "c", (function() {
@@ -1965,15 +2194,15 @@
 						monthsOfPremium: 12
 					}
 				},
-				o = (e, t = !1) => {
+				r = (e, t = !1) => {
 					const a = [];
 					for (const n in s) {
-						const o = s[n];
-						(o.priceInCoins <= e || t) && a.push(o)
+						const r = s[n];
+						(r.priceInCoins <= e || t) && a.push(r)
 					}
 					return a
 				},
-				r = e => n.fbt._({
+				o = e => n.fbt._({
 					"*": "{number of months} months {number of coins} Coins",
 					_1: "1 month {number of coins} Coins"
 				}, [n.fbt._plural(e.monthsOfPremium, "number of months"), n.fbt._param("number of coins", e.priceInCoins.toLocaleString())], {
@@ -1987,4 +2216,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AwardCreationModal.b182b7d776e8509e73a6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AwardCreationModal.253f47f6a44aa384dbf9.js.map

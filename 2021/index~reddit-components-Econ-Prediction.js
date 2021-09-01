@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.f8c0f73573f3c77a665a.js
-// Retrieved at 8/31/2021, 6:10:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.9425e745440efe219c7f.js
+// Retrieved at 9/1/2021, 1:20:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index~reddit-components-Econ-Prediction"], {
 		"./node_modules/lodash/_LazyWrapper.js": function(a, i, r) {
@@ -35,18 +35,18 @@
 		"./node_modules/lodash/_composeArgs.js": function(a, i) {
 			var r = Math.max;
 			a.exports = function(a, i, t, x) {
-				for (var k = -1, n = a.length, o = t.length, s = -1, e = i.length, m = r(n - o, 0), l = Array(e + m), c = !x; ++s < e;) l[s] = i[s];
+				for (var k = -1, n = a.length, o = t.length, e = -1, s = i.length, m = r(n - o, 0), l = Array(s + m), c = !x; ++e < s;) l[e] = i[e];
 				for (; ++k < o;)(c || k < n) && (l[t[k]] = a[k]);
-				for (; m--;) l[s++] = a[k++];
+				for (; m--;) l[e++] = a[k++];
 				return l
 			}
 		},
 		"./node_modules/lodash/_composeArgsRight.js": function(a, i) {
 			var r = Math.max;
 			a.exports = function(a, i, t, x) {
-				for (var k = -1, n = a.length, o = -1, s = t.length, e = -1, m = i.length, l = r(n - s, 0), c = Array(l + m), p = !x; ++k < l;) c[k] = a[k];
-				for (var h = k; ++e < m;) c[h + e] = i[e];
-				for (; ++o < s;)(p || k < n) && (c[h + t[o]] = a[k++]);
+				for (var k = -1, n = a.length, o = -1, e = t.length, s = -1, m = i.length, l = r(n - e, 0), c = Array(l + m), p = !x; ++k < l;) c[k] = a[k];
+				for (var h = k; ++s < m;) c[h + s] = i[s];
+				for (; ++o < e;)(p || k < n) && (c[h + t[o]] = a[k++]);
 				return c
 			}
 		},
@@ -104,14 +104,14 @@
 				k = r("./node_modules/lodash/_createHybrid.js"),
 				n = r("./node_modules/lodash/_createRecurry.js"),
 				o = r("./node_modules/lodash/_getHolder.js"),
-				s = r("./node_modules/lodash/_replaceHolders.js"),
-				e = r("./node_modules/lodash/_root.js");
+				e = r("./node_modules/lodash/_replaceHolders.js"),
+				s = r("./node_modules/lodash/_root.js");
 			a.exports = function(a, i, r) {
 				var m = x(a);
 				return function x() {
 					for (var l = arguments.length, c = Array(l), p = l, h = o(x); p--;) c[p] = arguments[p];
-					var d = l < 3 && c[0] !== h && c[l - 1] !== h ? [] : s(c, h);
-					return (l -= d.length) < r ? n(a, i, k, x.placeholder, void 0, c, d, void 0, void 0, r - l) : t(this && this !== e && this instanceof x ? m : a, this, c)
+					var d = l < 3 && c[0] !== h && c[l - 1] !== h ? [] : e(c, h);
+					return (l -= d.length) < r ? n(a, i, k, x.placeholder, void 0, c, d, void 0, void 0, r - l) : t(this && this !== s && this instanceof x ? m : a, this, c)
 				}
 			}
 		},
@@ -121,8 +121,8 @@
 				k = r("./node_modules/lodash/_countHolders.js"),
 				n = r("./node_modules/lodash/_createCtor.js"),
 				o = r("./node_modules/lodash/_createRecurry.js"),
-				s = r("./node_modules/lodash/_getHolder.js"),
-				e = r("./node_modules/lodash/_reorder.js"),
+				e = r("./node_modules/lodash/_getHolder.js"),
+				s = r("./node_modules/lodash/_reorder.js"),
 				m = r("./node_modules/lodash/_replaceHolders.js"),
 				l = r("./node_modules/lodash/_root.js"),
 				c = 1,
@@ -140,7 +140,7 @@
 					T = v ? void 0 : n(i);
 				return function c() {
 					for (var p = arguments.length, h = Array(p), d = p; d--;) h[d] = arguments[d];
-					if (P) var f = s(c),
+					if (P) var f = e(c),
 						u = k(h, f);
 					if (G && (h = t(h, G, E, P)), A && (h = x(h, A, B, P)), p -= u, P && p < b) {
 						var _ = m(h, f);
@@ -148,7 +148,7 @@
 					}
 					var O = g ? y : this,
 						j = v ? O[i] : i;
-					return p = h.length, D ? h = e(h, D) : S && p > 1 && h.reverse(), F && V < p && (h.length = V), this && this !== l && this instanceof c && (j = T || n(j)), j.apply(O, h)
+					return p = h.length, D ? h = s(h, D) : S && p > 1 && h.reverse(), F && V < p && (h.length = V), this && this !== l && this instanceof c && (j = T || n(j)), j.apply(O, h)
 				}
 			}
 		},
@@ -158,12 +158,12 @@
 				k = r("./node_modules/lodash/_root.js"),
 				n = 1;
 			a.exports = function(a, i, r, o) {
-				var s = i & n,
-					e = x(a);
+				var e = i & n,
+					s = x(a);
 				return function i() {
-					for (var x = -1, n = arguments.length, m = -1, l = o.length, c = Array(l + n), p = this && this !== k && this instanceof i ? e : a; ++m < l;) c[m] = o[m];
+					for (var x = -1, n = arguments.length, m = -1, l = o.length, c = Array(l + n), p = this && this !== k && this instanceof i ? s : a; ++m < l;) c[m] = o[m];
 					for (; n--;) c[m++] = arguments[++x];
-					return t(p, s ? r : this, c)
+					return t(p, e ? r : this, c)
 				}
 			}
 		},
@@ -173,13 +173,13 @@
 				k = r("./node_modules/lodash/_setWrapToString.js"),
 				n = 1,
 				o = 2,
-				s = 4,
-				e = 8,
+				e = 4,
+				s = 8,
 				m = 32,
 				l = 64;
 			a.exports = function(a, i, r, c, p, h, d, f, u, y) {
-				var G = i & e;
-				i |= G ? m : l, (i &= ~(G ? l : m)) & s || (i &= ~(n | o));
+				var G = i & s;
+				i |= G ? m : l, (i &= ~(G ? l : m)) & e || (i &= ~(n | o));
 				var E = [a, i, p, G ? h : void 0, G ? d : void 0, G ? void 0 : h, G ? void 0 : d, f, u, y],
 					A = r.apply(void 0, E);
 				return t(a) && x(A, E), A.placeholder = c, k(A, a, i)
@@ -191,8 +191,8 @@
 				k = r("./node_modules/lodash/_createCurry.js"),
 				n = r("./node_modules/lodash/_createHybrid.js"),
 				o = r("./node_modules/lodash/_createPartial.js"),
-				s = r("./node_modules/lodash/_getData.js"),
-				e = r("./node_modules/lodash/_mergeData.js"),
+				e = r("./node_modules/lodash/_getData.js"),
+				s = r("./node_modules/lodash/_mergeData.js"),
 				m = r("./node_modules/lodash/_setData.js"),
 				l = r("./node_modules/lodash/_setWrapToString.js"),
 				c = r("./node_modules/lodash/toInteger.js"),
@@ -213,9 +213,9 @@
 						P = B;
 					A = B = void 0
 				}
-				var S = F ? void 0 : s(a),
+				var S = F ? void 0 : e(a),
 					T = [a, i, r, A, B, v, P, D, V, b];
-				if (S && e(T, S), a = T[0], i = T[1], r = T[2], A = T[3], B = T[4], !(b = T[9] = void 0 === T[9] ? F ? 0 : a.length : E(T[9] - g, 0)) && i & (f | u) && (i &= ~(f | u)), i && i != h) _ = i == f || i == u ? k(a, i, b) : i != y && i != (h | y) || B.length ? n.apply(void 0, T) : o(a, i, r, A);
+				if (S && s(T, S), a = T[0], i = T[1], r = T[2], A = T[3], B = T[4], !(b = T[9] = void 0 === T[9] ? F ? 0 : a.length : E(T[9] - g, 0)) && i & (f | u) && (i &= ~(f | u)), i && i != h) _ = i == f || i == u ? k(a, i, b) : i != y && i != (h | y) || B.length ? n.apply(void 0, T) : o(a, i, r, A);
 				else var _ = x(a, i, r);
 				return l((S ? t : m)(_, T), a, i)
 			}
@@ -282,8 +282,8 @@
 				k = r("./node_modules/lodash/_replaceHolders.js"),
 				n = "__lodash_placeholder__",
 				o = 1,
-				s = 2,
-				e = 4,
+				e = 2,
+				s = 4,
 				m = 8,
 				l = 128,
 				c = 256,
@@ -292,10 +292,10 @@
 				var r = a[1],
 					h = i[1],
 					d = r | h,
-					f = d < (o | s | l),
+					f = d < (o | e | l),
 					u = h == l && r == m || h == l && r == c && a[7].length <= i[8] || h == (l | c) && i[7].length <= i[8] && r == m;
 				if (!f && !u) return a;
-				h & o && (a[2] = i[2], d |= r & o ? 0 : e);
+				h & o && (a[2] = i[2], d |= r & o ? 0 : s);
 				var y = i[3];
 				if (y) {
 					var G = a[3];
@@ -318,8 +318,8 @@
 				k = Math.min;
 			a.exports = function(a, i) {
 				for (var r = a.length, n = k(i.length, r), o = t(a); n--;) {
-					var s = i[n];
-					a[n] = x(s, r) ? o[s] : void 0
+					var e = i[n];
+					a[n] = x(e, r) ? o[e] : void 0
 				}
 				return a
 			}
@@ -396,13 +396,13 @@
 				k = r("./node_modules/lodash/_baseLodash.js"),
 				n = r("./node_modules/lodash/isArray.js"),
 				o = r("./node_modules/lodash/isObjectLike.js"),
-				s = r("./node_modules/lodash/_wrapperClone.js"),
-				e = Object.prototype.hasOwnProperty;
+				e = r("./node_modules/lodash/_wrapperClone.js"),
+				s = Object.prototype.hasOwnProperty;
 
 			function m(a) {
 				if (o(a) && !n(a) && !(a instanceof t)) {
 					if (a instanceof x) return a;
-					if (e.call(a, "__wrapped__")) return s(a)
+					if (s.call(a, "__wrapped__")) return e(a)
 				}
 				return new x(a)
 			}
@@ -418,9 +418,9 @@
 			var t, x, k = r("./node_modules/uuid/lib/rng-browser.js"),
 				n = r("./node_modules/uuid/lib/bytesToUuid.js"),
 				o = 0,
-				s = 0;
+				e = 0;
 			a.exports = function(a, i, r) {
-				var e = i && r || 0,
+				var s = i && r || 0,
 					m = i || [],
 					l = (a = a || {}).node || t,
 					c = void 0 !== a.clockseq ? a.clockseq : x;
@@ -429,15 +429,15 @@
 					null == l && (l = t = [1 | p[0], p[1], p[2], p[3], p[4], p[5]]), null == c && (c = x = 16383 & (p[6] << 8 | p[7]))
 				}
 				var h = void 0 !== a.msecs ? a.msecs : (new Date).getTime(),
-					d = void 0 !== a.nsecs ? a.nsecs : s + 1,
-					f = h - o + (d - s) / 1e4;
+					d = void 0 !== a.nsecs ? a.nsecs : e + 1,
+					f = h - o + (d - e) / 1e4;
 				if (f < 0 && void 0 === a.clockseq && (c = c + 1 & 16383), (f < 0 || h > o) && void 0 === a.nsecs && (d = 0), d >= 1e4) throw new Error("uuid.v1(): Can't create more than 10M uuids/sec");
-				o = h, s = d, x = c;
+				o = h, e = d, x = c;
 				var u = (1e4 * (268435455 & (h += 122192928e5)) + d) % 4294967296;
-				m[e++] = u >>> 24 & 255, m[e++] = u >>> 16 & 255, m[e++] = u >>> 8 & 255, m[e++] = 255 & u;
+				m[s++] = u >>> 24 & 255, m[s++] = u >>> 16 & 255, m[s++] = u >>> 8 & 255, m[s++] = 255 & u;
 				var y = h / 4294967296 * 1e4 & 268435455;
-				m[e++] = y >>> 8 & 255, m[e++] = 255 & y, m[e++] = y >>> 24 & 15 | 16, m[e++] = y >>> 16 & 255, m[e++] = c >>> 8 | 128, m[e++] = 255 & c;
-				for (var G = 0; G < 6; ++G) m[e + G] = l[G];
+				m[s++] = y >>> 8 & 255, m[s++] = 255 & y, m[s++] = y >>> 24 & 15 | 16, m[s++] = y >>> 16 & 255, m[s++] = c >>> 8 | 128, m[s++] = 255 & c;
+				for (var G = 0; G < 6; ++G) m[s + G] = l[G];
 				return i || n(m)
 			}
 		},
@@ -456,6 +456,67 @@
 				return new t.BigNumber(n).toNumber()
 			}
 		},
+		"./src/lib/currency/centsToDollars/index.ts": function(a, i, r) {
+			"use strict";
+			r.d(i, "a", (function() {
+				return x
+			}));
+			var t = r("./src/lib/currency/cleanNumber/index.ts");
+
+			function x(a, i) {
+				const r = Object(t.a)(a),
+					x = parseInt(r) / 100;
+				return Math.floor(x) !== x || i ? x.toFixed(2) : String(x)
+			}
+		},
+		"./src/lib/currency/cleanNumber/index.ts": function(a, i, r) {
+			"use strict";
+
+			function t(a) {
+				return a.replace(/[^0-9.]/g, "").replace(/^0+/, "") || "0"
+			}
+			r.d(i, "a", (function() {
+				return t
+			}))
+		},
+		"./src/lib/currency/currencies.ts": function(a, i, r) {
+			"use strict";
+			r.d(i, "b", (function() {
+				return t
+			})), r.d(i, "c", (function() {
+				return k
+			})), r.d(i, "d", (function() {
+				return n
+			})), r.d(i, "a", (function() {
+				return o
+			})), r.d(i, "f", (function() {
+				return e
+			})), r.d(i, "g", (function() {
+				return s
+			})), r.d(i, "e", (function() {
+				return m
+			}));
+			var t, x = r("./node_modules/fbt/lib/FbtPublic.js");
+			! function(a) {
+				a.Real = "real", a.Crypto = "crypto", a.Reddit = "reddit"
+			}(t || (t = {}));
+			const k = "USD",
+				n = "ETH",
+				o = "COINS",
+				e = [n, "BTC"],
+				s = [o, "SUBREDDIT_POINTS", "GAME_TOKENS"],
+				m = {
+					COINS: () => x.fbt._("Coins", null, {
+						hk: "1T2Y4p"
+					}),
+					SUBREDDIT_POINTS: () => x.fbt._("Subreddit points", null, {
+						hk: "1ytOO3"
+					}),
+					GAME_TOKENS: () => x.fbt._("Game tokens", null, {
+						hk: "16BUrU"
+					})
+				}
+		},
 		"./src/lib/delay/index.ts": function(a, i, r) {
 			"use strict";
 
@@ -466,6 +527,101 @@
 				return t
 			}))
 		},
+		"./src/lib/localizeCurrency/index.ts": function(a, i, r) {
+			"use strict";
+			r.d(i, "a", (function() {
+				return m
+			})), r.d(i, "b", (function() {
+				return l
+			}));
+			var t = r("./node_modules/@reddit/i18n-tools/runtime/helpers/locale/constants.js"),
+				x = r("./src/lib/currency/centsToDollars/index.ts"),
+				k = r("./src/lib/currency/currencies.ts"),
+				n = r("./src/lib/prettyPrintNumber/index.ts"),
+				o = r("./src/reddit/helpers/governance/tokens.ts");
+			const e = (() => {
+					try {
+						return "1E4 bits" === new Intl.NumberFormat("en", {
+							style: "unit",
+							unit: "bit",
+							unitDisplay: "long",
+							notation: "scientific"
+						}).format(1e4)
+					} catch (a) {
+						return !1
+					}
+				})(),
+				s = () => e,
+				m = (a, {
+					locale: i = t.DEFAULT_LOCALE,
+					pretty: r,
+					formatOptions: x
+				} = {}) => {
+					const k = Number(a);
+					return s() ? r ? Object(n.b)(k) : new Intl.NumberFormat(i, x).format(k) : c(k, r, i)
+				},
+				l = (a, i = {}) => {
+					const {
+						locale: r = t.DEFAULT_LOCALE,
+						pretty: n,
+						formatOptions: e,
+						displayConversion: m,
+						forceDecimals: l,
+						currency: d = i.currency || (i.type ? h(i.type) : k.c),
+						type: f = i.type || (i.currency ? p(i.currency) : k.b.Real)
+					} = i, u = Number(a), y = String(a);
+					switch (f) {
+						case k.b.Reddit: {
+							const a = k.e[d],
+								i = a ? a() : d;
+							return s() ? new Intl.NumberFormat(r, {
+								currencyDisplay: "symbol",
+								...e
+							}).format(u) + " " + i : c(u, n, r, i)
+						}
+						case k.b.Crypto: {
+							if (n) {
+								return Object(o.c)(y, m) + " " + d
+							}
+							const a = Number(Object(o.b)(y, m));
+							return s() ? new Intl.NumberFormat(r, {
+								style: "currency",
+								currency: d,
+								currencyDisplay: "symbol",
+								minimumFractionDigits: 0,
+								maximumFractionDigits: 0,
+								...e
+							}).format(a) : c(a, n, r, d)
+						}
+						case k.b.Real:
+						default: {
+							const a = Number(Object(x.a)(y, l));
+							return s() ? new Intl.NumberFormat(r, {
+								style: "currency",
+								currency: d,
+								currencyDisplay: "symbol",
+								notation: n ? "compact" : "standard",
+								...e
+							}).format(a) : c(a, n, r, d)
+						}
+					}
+				},
+				c = (a, i, r, t) => {
+					return (i ? Object(n.b)(a) : a.toLocaleString(r)) + (t ? " " + t : "")
+				},
+				p = a => k.g.includes(a.toUpperCase()) ? k.b.Reddit : k.f.includes(a.toUpperCase()) ? k.b.Crypto : k.b.Real,
+				h = a => {
+					switch (a) {
+						case k.b.Crypto:
+							return k.d;
+						case k.b.Reddit:
+							return k.a;
+						case k.b.Real:
+						default:
+							return k.c
+					}
+				}
+		},
 		"./src/reddit/actions/badge.ts": function(a, i, r) {
 			"use strict";
 			r.d(i, "b", (function() {
@@ -473,9 +629,9 @@
 			})), r.d(i, "a", (function() {
 				return o
 			})), r.d(i, "e", (function() {
-				return s
-			})), r.d(i, "c", (function() {
 				return e
+			})), r.d(i, "c", (function() {
+				return s
 			})), r.d(i, "d", (function() {
 				return m
 			})), r.d(i, "h", (function() {
@@ -494,16 +650,16 @@
 				k = r("./src/reddit/endpoints/governance/badges.ts");
 			const n = "BADGE__BADGE_APPLICATION_SUCCESS",
 				o = "BADGE__BADGE_APPLICATION_FAILURE",
-				s = "BADGE__SUBREDDIT_BADGES_FETCH_SUCCESS",
-				e = "BADGE__SUBREDDIT_BADGES_FETCH_FAILURE",
+				e = "BADGE__SUBREDDIT_BADGES_FETCH_SUCCESS",
+				s = "BADGE__SUBREDDIT_BADGES_FETCH_FAILURE",
 				m = "BADGE__SUBREDDIT_BADGES_FETCH_PENDING",
 				l = "BADGE__USER_BADGES_FETCH_SUCCESS",
 				c = "BADGE__USER_BADGES_FETCH_FAILURE",
 				p = "BADGE__USER_BADGES_FETCH_PENDING",
 				h = Object(t.a)(n),
 				d = Object(t.a)(o),
-				f = (Object(t.a)("BADGE__BADGE_APPLICATION_PENDING"), Object(t.a)(s)),
-				u = Object(t.a)(e),
+				f = (Object(t.a)("BADGE__BADGE_APPLICATION_PENDING"), Object(t.a)(e)),
+				u = Object(t.a)(s),
 				y = Object(t.a)(m),
 				G = (Object(t.a)(l), Object(t.a)(c), Object(t.a)(p), ({
 					badgeIds: a,
@@ -512,23 +668,23 @@
 					apiContext: n
 				}) => {
 					const o = t(),
-						s = o.user.account;
-					if (s) {
-						const t = (o.users.appliedBadges[s.id] || {})[i] || [],
-							e = a.length ? a[0] : t[0],
+						e = o.user.account;
+					if (e) {
+						const t = (o.users.appliedBadges[e.id] || {})[i] || [],
+							s = a.length ? a[0] : t[0],
 							m = !!a.length;
 						r(h({
 							badgeIds: a,
 							subredditId: i,
-							userId: s.id
+							userId: e.id
 						}));
-						const l = await Object(k.a)(n(), i, e, m);
+						const l = await Object(k.a)(n(), i, s, m);
 						l.ok || (r(d({
 							badgeIds: a,
 							subredditId: i,
 							error: l.error,
 							previousBadgeIds: t,
-							userId: s.id
+							userId: e.id
 						})), Object(x.a)(r, l.error))
 					}
 				}),
@@ -564,8 +720,8 @@
 				k = r("./src/reddit/actions/badge.ts"),
 				n = r("./src/reddit/actions/economics/subredditPremium/thunkedActions.ts"),
 				o = r("./src/reddit/actions/governance/communityDetails.ts"),
-				s = r("./src/reddit/actions/governance/publicWalletsFetched.ts"),
-				e = r("./src/reddit/featureFlags/index.ts"),
+				e = r("./src/reddit/actions/governance/publicWalletsFetched.ts"),
+				s = r("./src/reddit/featureFlags/index.ts"),
 				m = r("./src/lib/initializeClient/installReducer.ts"),
 				l = r("./src/reddit/reducers/features/comments/index.ts");
 			Object(m.a)({
@@ -579,13 +735,13 @@
 					fortnitebr: "t5_3oeyf",
 					funkygoose: "t5_kzsl3"
 				},
-				p = x()((a, i) => i.some(i => e.d[i](a))),
+				p = x()((a, i) => i.some(i => s.d[i](a))),
 				h = a => async (i, r, {
 					apiContext: t
 				}) => {
 					const {
 						commentIds: x = [],
-						postIds: e = [],
+						postIds: s = [],
 						skip: m = []
 					} = a;
 					let l = a.subredditId;
@@ -599,7 +755,7 @@
 						u = d.features.comments.models,
 						y = d.posts.models,
 						G = new Set(d.user.account ? [d.user.account.id] : []);
-					e.forEach(a => {
+					s.forEach(a => {
 						const i = y[a];
 						i && G.add(i.authorId)
 					}), x.forEach(a => {
@@ -612,7 +768,7 @@
 						userIds: E
 					}))), !m.includes("communityDetails") && f(["spPoints", "spSpecialMemberships"]) && h.push(i(Object(o.a)({
 						subredditId: l
-					}))), !m.includes("subscription") && f(["spSpecialMemberships"]) && h.push(i(Object(n.g)(l))), !m.includes("wallets") && E.length && f(["spPoints"]) && h.push(i(Object(s.a)({
+					}))), !m.includes("subscription") && f(["spSpecialMemberships"]) && h.push(i(Object(n.g)(l))), !m.includes("wallets") && E.length && f(["spPoints"]) && h.push(i(Object(e.a)({
 						subredditId: l,
 						userIds: E
 					}))), await Promise.all(h)
@@ -647,17 +803,17 @@
 				k = r("./src/config.ts"),
 				n = r("./src/reddit/endpoints/governance/requester.ts");
 			var o = r("./src/lib/makeActionCreator/index.ts"),
-				s = r("./src/reddit/actions/economics/me/constants.ts");
-			const e = Object(o.a)(s.a),
-				m = Object(o.a)(s.b),
-				l = Object(o.a)(s.c),
+				e = r("./src/reddit/actions/economics/me/constants.ts");
+			const s = Object(o.a)(e.a),
+				m = Object(o.a)(e.b),
+				l = Object(o.a)(e.c),
 				c = a => async (i, r, {
 					apiContext: t
 				}) => {
 					const x = a && a.includeMemberships || !1,
 						o = a && a.forceFetch || !1,
-						s = r();
-					if (!s.economics.me.fetched || x && !s.economics.me.data.specialMemberships || o) {
+						e = r();
+					if (!e.economics.me.fetched || x && !e.economics.me.data.specialMemberships || o) {
 						const a = await
 						function(a, i) {
 							return Object(n.a)(a, {
@@ -667,7 +823,7 @@
 						}(t(), x);
 						if (a.ok) {
 							const r = a.body;
-							x && !r.specialMemberships && (r.specialMemberships = {}), i(e(r))
+							x && !r.specialMemberships && (r.specialMemberships = {}), i(s(r))
 						}
 					}
 				}, p = () => async (a, i) => {
@@ -712,9 +868,9 @@
 			})), r.d(i, "l", (function() {
 				return H
 			})), r.d(i, "h", (function() {
-				return W
-			})), r.d(i, "i", (function() {
 				return z
+			})), r.d(i, "i", (function() {
+				return W
 			})), r.d(i, "o", (function() {
 				return q
 			})), r.d(i, "p", (function() {
@@ -731,8 +887,8 @@
 				k = r.n(x),
 				n = r("./src/lib/initializeClient/installReducer.ts"),
 				o = r("./src/reddit/reducers/features/predictions/index.ts"),
-				s = r("./src/reddit/actions/toaster.ts"),
-				e = r("./src/reddit/models/Toast/index.ts"),
+				e = r("./src/reddit/actions/toaster.ts"),
+				s = r("./src/reddit/models/Toast/index.ts"),
 				m = r("./src/lib/makeActionCreator/index.ts"),
 				l = r("./src/reddit/endpoints/economics/predictions.ts"),
 				c = r("./src/reddit/helpers/graphql/normalizePostFromGql/index.ts"),
@@ -761,21 +917,21 @@
 					gqlContext: n
 				}) => {
 					const o = Object(E.K)(k()),
-						s = await Object(l.j)(n(), {
+						e = await Object(l.j)(n(), {
 							subredditId: a,
 							period: i,
 							top: r,
 							includeCurrentRank: o,
 							tournamentId: t
 						});
-					if (s.error || !s.ok) throw new Error("Failed to fetch subreddit top predictors");
+					if (e.error || !e.ok) throw new Error("Failed to fetch subreddit top predictors");
 					const {
-						subredditInfoById: e
-					} = s.body.data;
-					if (!e || !e.predictionWinners) throw new Error("Subreddit has no prediction winners");
+						subredditInfoById: s
+					} = e.body.data;
+					if (!s || !s.predictionWinners) throw new Error("Subreddit has no prediction winners");
 					const {
 						predictionWinners: m
-					} = e, c = {
+					} = s, c = {
 						subredditId: a,
 						...m
 					};
@@ -832,26 +988,26 @@
 					i(_({
 						subredditId: k
 					}));
-					const s = await Object(l.k)(t(), {
+					const e = await Object(l.k)(t(), {
 							subredditName: a,
 							isLatestOnly: !0,
 							isIncludingPredictions: !0,
 							isIncludingParticipants: !0,
 							isIncludingCancelledPredictions: o
 						}),
-						e = {};
-					s.forEach(a => {
+						s = {};
+					e.forEach(a => {
 						var i;
 						(null === (i = a.predictionPosts) || void 0 === i ? void 0 : i.length) && a.predictionPosts.forEach(a => {
-							a && (e[a.id] = Object(c.e)(a))
+							a && (s[a.id] = Object(c.e)(a))
 						})
 					});
-					const m = s.map(a => Object(p.a)(a));
+					const m = e.map(a => Object(p.a)(a));
 					return i(O({
 						subredditId: k,
 						tournaments: m
 					})), i(j({
-						posts: e,
+						posts: s,
 						meta: x.meta
 					})), m
 				}, I = Object(m.a)(D.a), N = Object(m.a)(D.j), w = Object(m.a)(D.k), L = ({
@@ -872,23 +1028,23 @@
 							currency: n ? h.b.Coins : h.b.Tokens
 						}),
 						{
-							createPredictionTournament: s
+							createPredictionTournament: e
 						} = o.body.data;
-					if (!(null == s ? void 0 : s.tournament)) throw new Error("Failed to resolve prediction");
+					if (!(null == e ? void 0 : e.tournament)) throw new Error("Failed to resolve prediction");
 					const {
-						tournament: e
-					} = s;
+						tournament: s
+					} = e;
 					return i(O({
 						subredditId: a,
-						tournaments: [e]
-					})), e
+						tournaments: [s]
+					})), s
 				}, M = (a, i) => async (r, t, {
 					gqlContext: x
 				}) => {
 					var n;
 					const o = Object(A.b)(t());
 					if (!o) throw new Error("Failed to create prediction post, no prediction drafts attached");
-					const s = await Object(l.b)(x(), {
+					const e = await Object(l.b)(x(), {
 							tournamentId: a,
 							isStartImmediately: !0,
 							iKey: `add-dfts-${k.a.v4()}`,
@@ -896,11 +1052,11 @@
 							predictionDrafts: o
 						}),
 						{
-							addPredictionDrafts: e
-						} = s.body.data;
-					if (null === (n = e.errors) || void 0 === n ? void 0 : n.length) throw new Error(e.errors[0].message);
-					if (!(null == e ? void 0 : e.tournament)) throw new Error("Failed to create prediction");
-					return e.tournament
+							addPredictionDrafts: s
+						} = e.body.data;
+					if (null === (n = s.errors) || void 0 === n ? void 0 : n.length) throw new Error(s.errors[0].message);
+					if (!(null == s ? void 0 : s.tournament)) throw new Error("Failed to create prediction");
+					return s.tournament
 				}, R = Object(m.a)(D.m), U = (a, i, r) => async (i, t, {
 					gqlContext: x
 				}) => {
@@ -924,7 +1080,7 @@
 						} = x.body.data;
 					if (!k.tournament) throw new Error("Failed to update prediction name");
 					return i(R(k.tournament)), k.tournament
-				}, W = a => async (i, r, {
+				}, z = a => async (i, r, {
 					gqlContext: t
 				}) => {
 					const x = await Object(l.h)(t(), {
@@ -936,7 +1092,7 @@
 					} = x.body.data;
 					if (!k.predictionChipPackages) throw new Error("Failed to fetch prediction chip packages");
 					return k.predictionChipPackages
-				}, z = a => async (i, r, {
+				}, W = a => async (i, r, {
 					gqlContext: t
 				}) => {
 					const x = await Object(l.i)(t(), {
@@ -984,15 +1140,15 @@
 							postId: a,
 							prediction: r
 						}));
-						const k = Object(s.e)(t.fbt._("Prediction has been cancelled", null, {
+						const k = Object(e.e)(t.fbt._("Prediction has been cancelled", null, {
 							hk: "3Bh9Fw"
-						}), e.b.SuccessMod);
-						i(Object(s.f)(k))
+						}), s.b.SuccessMod);
+						i(Object(e.f)(k))
 					} catch {
-						const a = Object(s.e)(t.fbt._("Unable to cancel prediction", null, {
+						const a = Object(e.e)(t.fbt._("Unable to cancel prediction", null, {
 							hk: "2wkeKy"
-						}), e.b.Error);
-						i(Object(s.f)(a))
+						}), s.b.Error);
+						i(Object(e.f)(a))
 					}
 				};
 
@@ -1034,8 +1190,8 @@
 				k = r("./src/reddit/actions/governance/errorToast.ts"),
 				n = r("./src/reddit/endpoints/economics/emojis.ts"),
 				o = r("./src/reddit/endpoints/economics/specialMembership.ts"),
-				s = r("./src/reddit/endpoints/economics/subredditPremium.ts"),
-				e = r("./src/reddit/endpoints/governance/badges.ts"),
+				e = r("./src/reddit/endpoints/economics/subredditPremium.ts"),
+				s = r("./src/reddit/endpoints/governance/badges.ts"),
 				m = r("./src/config.ts"),
 				l = r("./src/reddit/endpoints/governance/requester.ts");
 
@@ -1081,7 +1237,7 @@
 					n = t().economics.subredditPremium[a],
 					o = !n || n.status !== f.a.Fetched || i;
 				if (k && o) {
-					const i = await Object(s.a)(x(), a, k.id);
+					const i = await Object(e.a)(x(), a, k.id);
 					r(Object(E.i)(i))
 				}
 			}, b = a => async (i, r, {
@@ -1090,18 +1246,18 @@
 				const x = r(),
 					n = x.user.account,
 					o = Object(u.f)(x, a.subredditId),
-					s = Object.keys(o).map(a => o[a]).filter(Boolean);
+					e = Object.keys(o).map(a => o[a]).filter(Boolean);
 				if (n && a.badge) {
 					let r, x;
 					r = a.placement === p.a.First ? o[h.a.Loyalty] : a.placement === p.a.Second ? o[h.a.Achievement] : o[h.a.Cosmetic], i(Object(E.a)({
 						...a,
 						badge: B(a.badge),
-						currentAppliedBadges: s,
+						currentAppliedBadges: e,
 						userId: n.id
-					})), A(a.badge) && r ? x = await Object(e.a)(t(), a.subredditId, r.id, !1) : A(a.badge) || (x = await Object(e.a)(t(), a.subredditId, a.badge.id)), x && !x.ok && (i(Object(E.a)({
+					})), A(a.badge) && r ? x = await Object(s.a)(t(), a.subredditId, r.id, !1) : A(a.badge) || (x = await Object(s.a)(t(), a.subredditId, a.badge.id)), x && !x.ok && (i(Object(E.a)({
 						...a,
 						badge: r,
-						currentAppliedBadges: s,
+						currentAppliedBadges: e,
 						userId: n.id
 					})), Object(k.a)(i, x.error))
 				}
@@ -1122,21 +1278,21 @@
 				apiContext: t
 			}) => {
 				const o = r().user.account,
-					s = !r().economics.emotes[a],
-					e = !r().economics.gifs[a];
-				if (o && (s || e)) {
-					const [r, s] = await Promise.all([Object(n.b)(t(), a), c(t(), a, o.id)]);
-					if (!s.ok) return void Object(k.a)(i, s.error);
-					const e = {
+					e = !r().economics.emotes[a],
+					s = !r().economics.gifs[a];
+				if (o && (e || s)) {
+					const [r, e] = await Promise.all([Object(n.b)(t(), a), c(t(), a, o.id)]);
+					if (!e.ok) return void Object(k.a)(i, e.error);
+					const s = {
 						emotes: [],
 						emoteCollections: r.ok ? r.body : {},
 						giphy: []
 					};
-					x()(s.body, a => {
-						a.type === d.a.EmotesPack ? e.emotes.push(a) : a.type === d.a.Giphy && e.giphy.push(a)
+					x()(e.body, a => {
+						a.type === d.a.EmotesPack ? s.emotes.push(a) : a.type === d.a.Giphy && s.giphy.push(a)
 					}), i(Object(E.e)({
 						subredditId: a,
-						products: e
+						products: s
 					}))
 				}
 			}, v = (a, i, r) => async (t, x, {
@@ -1208,9 +1364,9 @@
 			})), r.d(i, "e", (function() {
 				return o
 			})), r.d(i, "f", (function() {
-				return s
-			})), r.d(i, "g", (function() {
 				return e
+			})), r.d(i, "g", (function() {
+				return s
 			})), r.d(i, "h", (function() {
 				return m
 			})), r.d(i, "i", (function() {
@@ -1251,8 +1407,8 @@
 				k = "GOVERNANCE__NEW_TOP_MOD_SUGGESTED",
 				n = "GOVERNANCE__OPT_OUT_MODAL_OPENED",
 				o = "POLL_VOTE_SUCCESS",
-				s = "GOVERNANCE__PROPOSAL_CREATION_FAILURE",
-				e = "GOVERNANCE__PROPOSAL_CREATION_PENDING",
+				e = "GOVERNANCE__PROPOSAL_CREATION_FAILURE",
+				s = "GOVERNANCE__PROPOSAL_CREATION_PENDING",
 				m = "GOVERNANCE__PROPOSAL_CREATION_SUCCESS",
 				l = "GOVERNANCE__PROPOSAL_OPTION_VOTE_FAILURE",
 				c = "GOVERNANCE__PROPOSAL_OPTION_VOTE_PENDING",
@@ -1295,7 +1451,7 @@
 				k = r("./src/reddit/actions/governance/constants.ts");
 			const n = Object(t.a)(k.m),
 				o = Object(t.a)(k.n),
-				s = Object(t.a)(k.l);
+				e = Object(t.a)(k.l);
 			i.a = a => async (i, r, {
 				apiContext: t
 			}) => {
@@ -1306,7 +1462,7 @@
 				k.ok ? i(o({
 					subredditId: a.subredditId,
 					...k.body
-				})) : i(s({
+				})) : i(e({
 					error: k.error
 				}))
 			}
@@ -1329,49 +1485,54 @@
 		"./src/reddit/components/Econ/CoinsModalHeader/index.tsx": function(a, i, r) {
 			"use strict";
 			r.d(i, "a", (function() {
-				return l
+				return p
 			}));
-			var t = r("./node_modules/react/index.js"),
-				x = r.n(t),
-				k = r("./src/reddit/components/Econ/CoinsModalHeader/index.m.less"),
-				n = r.n(k),
-				o = r("./src/reddit/components/ModalStyledComponents/index.tsx"),
-				s = r("./src/reddit/icons/svgs/CoinV2/index.tsx"),
-				e = r("./src/reddit/icons/svgs/Plus/index.tsx");
+			var t = r("./src/lib/localizeCurrency/index.ts"),
+				x = r("./node_modules/react/index.js"),
+				k = r.n(x),
+				n = r("./src/reddit/components/Econ/CoinsModalHeader/index.m.less"),
+				o = r.n(n),
+				e = r("./src/reddit/components/ModalStyledComponents/index.tsx"),
+				s = r("./src/reddit/hooks/useLocale.ts"),
+				m = r("./src/reddit/icons/svgs/CoinV2/index.tsx"),
+				l = r("./src/reddit/icons/svgs/Plus/index.tsx");
 			const {
-				fbt: m
+				fbt: c
 			} = r("./node_modules/fbt/lib/FbtPublic.js");
 
-			function l({
+			function p({
 				onAddCoins: a,
 				onCancel: i,
 				title: r,
-				userCoins: t
+				userCoins: x
 			}) {
-				return x.a.createElement("div", {
-					className: n.a.gildHeader
-				}, x.a.createElement("button", {
-					className: n.a.closeBtn,
+				const n = Object(s.a)();
+				return k.a.createElement("div", {
+					className: o.a.gildHeader
+				}, k.a.createElement("button", {
+					className: o.a.closeBtn,
 					onClick: i
-				}, x.a.createElement(o.b, {
-					className: n.a.closeBtnIcon
-				})), x.a.createElement("div", {
-					className: n.a.headerText
-				}, r), x.a.createElement("button", {
-					className: n.a.coinButton,
+				}, k.a.createElement(e.b, {
+					className: o.a.closeBtnIcon
+				})), k.a.createElement("div", {
+					className: o.a.headerText
+				}, r), k.a.createElement("button", {
+					className: o.a.coinButton,
 					onClick: a
-				}, x.a.createElement("div", {
-					className: n.a.coinBalanceIndicator,
+				}, k.a.createElement("div", {
+					className: o.a.coinBalanceIndicator,
 					tabIndex: -1
-				}, x.a.createElement(s.a, {
-					className: n.a.coinIcon
-				}), x.a.createElement("div", {
-					className: n.a.coinBalance
-				}, (t || 0).toLocaleString())), x.a.createElement("div", {
-					className: n.a.addCoins,
+				}, k.a.createElement(m.a, {
+					className: o.a.coinIcon
+				}), k.a.createElement("div", {
+					className: o.a.coinBalance
+				}, Object(t.a)(x || 0, {
+					locale: n
+				}))), k.a.createElement("div", {
+					className: o.a.addCoins,
 					tabIndex: -1
-				}, x.a.createElement(e.a, {
-					className: n.a.plusIcon
+				}, k.a.createElement(l.a, {
+					className: o.a.plusIcon
 				}))))
 			}
 		},
@@ -1443,8 +1604,8 @@
 				k = r("./node_modules/react-redux/es/index.js"),
 				n = r("./node_modules/reselect/es/index.js"),
 				o = r("./src/higherOrderComponents/asModal/index.tsx"),
-				s = r("./src/lib/classNames/index.ts"),
-				e = r("./src/reddit/components/Econ/Prediction/UnicornIcon/index.tsx"),
+				e = r("./src/lib/classNames/index.ts"),
+				s = r("./src/reddit/components/Econ/Prediction/UnicornIcon/index.tsx"),
 				m = r("./src/reddit/controls/LoadingIcon/index.tsx"),
 				l = r("./src/reddit/icons/svgs/CoinV2/index.tsx"),
 				c = r("./src/reddit/icons/svgs/Minus/index.tsx"),
@@ -1544,11 +1705,11 @@
 			}) {
 				const r = Object(k.e)(u.r),
 					n = Object(k.e)(y.e),
-					[o, e] = Object(t.useState)(null),
+					[o, s] = Object(t.useState)(null),
 					[m, l] = Object(t.useState)(!1),
 					c = (null == i ? void 0 : i.amount) || 0;
 				return Object(t.useEffect)(() => {
-					e(F(c)), l(!0), setTimeout(() => l(!1), 400)
+					s(F(c)), l(!0), setTimeout(() => l(!1), 400)
 				}, [c]), r ? x.a.createElement("div", {
 					className: v.a.header
 				}, x.a.createElement(A.q, {
@@ -1560,12 +1721,12 @@
 					onClick: a,
 					priority: A.b.Plain
 				}), x.a.createElement("h3", {
-					className: Object(s.a)(v.a.colorCommentary, {
+					className: Object(e.a)(v.a.colorCommentary, {
 						[v.a.hasAddedCoins]: !!c
 					}),
 					"data-testid": "color-commentary"
 				}, o || x.a.createElement(x.a.Fragment, null, " "), x.a.createElement("div", {
-					className: Object(s.a)(v.a.highlight, {
+					className: Object(e.a)(v.a.highlight, {
 						[v.a.isHighlighting]: m
 					})
 				}, x.a.createElement(D, {
@@ -1604,7 +1765,7 @@
 					_1: "You have {=[tokenImage][tokenBalance]} tournament token"
 				}, [j._param("=[tokenImage][tokenBalance]", x.a.createElement("span", {
 					className: O.a.tokenBalanceAmount
-				}, j._("{tokenImage}{tokenBalance}", [j._param("tokenImage", x.a.createElement(e.a, {
+				}, j._("{tokenImage}{tokenBalance}", [j._param("tokenImage", x.a.createElement(s.a, {
 					className: O.a.tokenIcon
 				})), j._param("tokenBalance", r)], {
 					hk: "2MlGLd"
@@ -1628,8 +1789,8 @@
 			var R = r("./src/reddit/components/Econ/Prediction/PredictionModal/index.m.less"),
 				U = r.n(R),
 				H = r("./src/reddit/components/SubredditIcon/index.tsx"),
-				W = r("./src/reddit/components/TrackingHelper/index.tsx"),
-				z = r("./src/reddit/helpers/getSubredditOrProfileIconData/index.tsx"),
+				z = r("./src/reddit/components/TrackingHelper/index.tsx"),
+				W = r("./src/reddit/helpers/getSubredditOrProfileIconData/index.tsx"),
 				q = r("./src/reddit/selectors/subreddit.ts"),
 				Q = r("./src/reddit/components/Econ/Prediction/PredictionModal/TournamentModal/index.m.less"),
 				K = r.n(Q);
@@ -1643,15 +1804,15 @@
 				pollId: r,
 				subredditId: n
 			}) {
-				const o = Object(W.b)(),
-					s = Object(k.d)(),
+				const o = Object(z.b)(),
+					e = Object(k.d)(),
 					l = Object(k.e)(a => Object(w.e)(a, {
 						subredditId: n
 					})),
 					c = Object(k.e)(a => Object(q.Q)(a, {
 						subredditId: n
 					})),
-					p = Object(z.a)({
+					p = Object(W.a)({
 						shouldHideNsfwIcon: !1,
 						subredditOrProfile: c
 					}),
@@ -1662,8 +1823,8 @@
 							pollId: r
 						}))
 					}, [r, o]), Object(t.useEffect)(() => {
-						!l && c ? s(Object(I.k)(c.name)) : l || a()
-					}, [s, l, c, a]), !l) return null;
+						!l && c ? e(Object(I.k)(c.name)) : l || a()
+					}, [e, l, c, a]), !l) return null;
 				return x.a.createElement("div", {
 					className: K.a.tournamentModal
 				}, x.a.createElement("div", {
@@ -1698,7 +1859,7 @@
 					_1: "Claim your {tokens amount} token to get started"
 				}, [J._param("tokens amount", x.a.createElement("span", {
 					className: K.a.startingBalanceAmount
-				}, x.a.createElement(e.a, {
+				}, x.a.createElement(s.a, {
 					className: K.a.tokenIcon
 				}), Z)), J._plural(Z)], {
 					hk: "1qVlUJ"
@@ -1732,35 +1893,35 @@
 				userCoins: E
 			}) => {
 				const A = function(a, i, r) {
-						const [t, n] = x.a.useState([]), o = Object(N.a)(), s = Object(k.d)(), e = Object(k.e)(i => a ? Object(w.a)(i, a) : null), m = x.a.useCallback(async () => {
+						const [t, n] = x.a.useState([]), o = Object(N.a)(), e = Object(k.d)(), s = Object(k.e)(i => a ? Object(w.a)(i, a) : null), m = x.a.useCallback(async () => {
 							try {
-								const a = await s(Object(I.h)(i));
+								const a = await e(Object(I.h)(i));
 								n(a)
 							} catch (a) {
 								o(L._("Error: Failed to get chip packs for post", null, {
 									hk: "1wR7Zy"
 								})), r()
 							}
-						}, [i, s, o, r]);
+						}, [i, e, o, r]);
 						return x.a.useEffect(() => {
-							(null == e ? void 0 : e.predictionChipPackages) ? n(e.predictionChipPackages): m()
-						}, [e, m]), t
+							(null == s ? void 0 : s.predictionChipPackages) ? n(s.predictionChipPackages): m()
+						}, [s, m]), t
 					}(G, u, r),
 					{
 						tokensBalance: B,
 						setTokensBalance: D,
 						fetched: V
 					} = function(a, i) {
-						const [r, t] = x.a.useState(null), [n, o] = x.a.useState(!1), s = Object(k.d)(), e = Object(N.a)(), m = x.a.useCallback(async () => {
+						const [r, t] = x.a.useState(null), [n, o] = x.a.useState(!1), e = Object(k.d)(), s = Object(N.a)(), m = x.a.useCallback(async () => {
 							if (a) try {
-								const i = await s(Object(I.i)(a));
+								const i = await e(Object(I.i)(a));
 								o(!0), t(i)
 							} catch (r) {
-								e(M._("Error: Failed to fetch user balance", null, {
+								s(M._("Error: Failed to fetch user balance", null, {
 									hk: "TF2D5"
 								})), i()
 							}
-						}, [a, s, e, i]);
+						}, [a, e, s, i]);
 						return x.a.useEffect(() => {
 							a && (t(null), o(!1), m())
 						}, [a, m]), {
@@ -1778,8 +1939,8 @@
 					j = (null == _ ? void 0 : _.currency) === f.a.Coins,
 					R = j && E < ((null == _ ? void 0 : _.amount) || 0),
 					H = !!_ && null !== B && B < _.amount,
-					W = R || H,
-					z = W || O;
+					z = R || H,
+					W = z || O;
 				Object(t.useEffect)(() => {
 					g || (P(h.t), v(!0))
 				}, [g, P]);
@@ -1835,7 +1996,7 @@
 					hk: "2EqRoV"
 				})), (null == _ ? void 0 : _.currency) === f.a.Tokens && x.a.createElement("div", {
 					className: U.a.wagerSelectorAmount
-				}, _.amount > 0 ? x.a.createElement(x.a.Fragment, null, x.a.createElement(e.a, {
+				}, _.amount > 0 ? x.a.createElement(x.a.Fragment, null, x.a.createElement(s.a, {
 					className: U.a.tokenIcon
 				}), " ", _.amount) : $._("Free", null, {
 					hk: "1fDvBk"
@@ -1854,16 +2015,16 @@
 					}
 				}, x.a.createElement(p.a, {
 					className: U.a.wagerSelectorButtonIcon
-				}))), z && x.a.createElement("div", {
+				}))), W && x.a.createElement("div", {
 					className: U.a.amountMessage
 				}, R && $._("Insufficient coins", null, {
 					hk: "2Mo83P"
 				}), H && $._("Insufficient tokens", null, {
 					hk: "2XAKK7"
-				}), O && !W && $._("Max amount", null, {
+				}), O && !z && $._("Max amount", null, {
 					hk: "1BpnPd"
 				}))), x.a.createElement("button", {
-					className: Object(s.a)(U.a.predictButton, {
+					className: Object(e.a)(U.a.predictButton, {
 						[U.a.isDisabled]: !T || R,
 						[U.a.isCreatingVote]: a
 					}),
@@ -1899,8 +2060,8 @@
 				k = r("./node_modules/react-redux/es/index.js"),
 				n = r("./src/reddit/actions/economics/predictions/index.ts"),
 				o = r("./src/reddit/helpers/trackers/predictionsPremiumFeatures.ts"),
-				s = r("./src/reddit/hooks/useLocalStorage.ts"),
-				e = r("./src/reddit/hooks/useTracking.ts"),
+				e = r("./src/reddit/hooks/useLocalStorage.ts"),
+				s = r("./src/reddit/hooks/useTracking.ts"),
 				m = r("./src/reddit/icons/svgs/EyeDouble/index.tsx"),
 				l = r("./src/lib/classNames/index.ts"),
 				c = r("./src/reddit/icons/svgs/Star6/index.m.less"),
@@ -1947,7 +2108,7 @@
 					onReveal: r,
 					onClose: k
 				}) => {
-					const n = Object(e.a)();
+					const n = Object(s.a)();
 					Object(t.useEffect)(() => {
 						n(Object(o.g)({
 							postId: a
@@ -2033,9 +2194,9 @@
 				onReveal: u
 			}) => {
 				const y = Object(k.d)(),
-					G = Object(e.a)(),
+					G = Object(s.a)(),
 					[E, A] = Object(t.useState)(!1),
-					[B, D] = Object(s.a)("hasSeenPredictionSneakPeek", !1),
+					[B, D] = Object(e.a)("hasSeenPredictionSneakPeek", !1),
 					b = !!c,
 					v = r && !l,
 					P = Object(k.e)(f.t);
@@ -2115,9 +2276,9 @@
 				k = r("./src/lib/classNames/index.ts"),
 				n = r("./src/reddit/components/Econ/Prediction/UnicornIcon/index.tsx"),
 				o = r("./src/reddit/icons/svgs/Checkmark/index.tsx"),
-				s = r("./src/reddit/icons/svgs/CoinV2/index.tsx"),
-				e = r("./src/reddit/components/Econ/Prediction/PredictionOption/index.m.less"),
-				m = r.n(e);
+				e = r("./src/reddit/icons/svgs/CoinV2/index.tsx"),
+				s = r("./src/reddit/components/Econ/Prediction/PredictionOption/index.m.less"),
+				m = r.n(s);
 			const {
 				fbt: l
 			} = r("./node_modules/fbt/lib/FbtPublic.js");
@@ -2126,7 +2287,7 @@
 				isCancelled: i,
 				isEnded: r,
 				isSelected: t,
-				needsResolution: e,
+				needsResolution: s,
 				onClick: c,
 				option: p,
 				resolvedOptionId: h,
@@ -2150,7 +2311,7 @@
 						[m.a.isSelected]: t,
 						[m.a.isShowingHint]: G && !u
 					}),
-					disabled: a || i || !e && (D || f),
+					disabled: a || i || !s && (D || f),
 					onClick: c,
 					ref: E
 				}, x.a.createElement("div", {
@@ -2165,7 +2326,7 @@
 					className: m.a.optionStake
 				}, A ? x.a.createElement(n.a, {
 					className: m.a.icon
-				}) : x.a.createElement(s.a, {
+				}) : x.a.createElement(e.a, {
 					className: m.a.icon
 				}), " ", p.userStakeAmount)), Boolean(y && !i) && x.a.createElement("div", {
 					className: m.a.optionPercentage,
@@ -2388,8 +2549,8 @@
 				k = r("./node_modules/react/index.js"),
 				n = r.n(k),
 				o = r("./src/lib/classNames/index.ts"),
-				s = r("./src/lib/delay/index.ts"),
-				e = r("./src/lib/timeUntil/index.ts"),
+				e = r("./src/lib/delay/index.ts"),
+				s = r("./src/lib/timeUntil/index.ts"),
 				m = r("./src/higherOrderComponents/asModal/index.tsx"),
 				l = r("./src/config.ts");
 			const {
@@ -2433,7 +2594,7 @@
 				onAnimationEnd: t
 			}) {
 				const x = Object(k.useRef)(null),
-					[e, m] = Object(k.useState)(0),
+					[s, m] = Object(k.useState)(0),
 					[l, c] = Object(k.useState)(!1),
 					[p, h] = Object(k.useState)(null),
 					[d, f] = Object(k.useState)(!1),
@@ -2443,25 +2604,25 @@
 					(async () => {
 						var a;
 						if (r && !d) {
-							await Object(s.a)(1), f(!0);
+							await Object(e.a)(1), f(!0);
 							const i = null === (a = null == x ? void 0 : x.current) || void 0 === a ? void 0 : a.getBoundingClientRect();
 							if (!i) return f(!1), void t();
-							m(i.width), h(i), await Object(s.a)(0), h({
+							m(i.width), h(i), await Object(e.a)(0), h({
 								top: i.top,
 								left: 0,
 								width: window.innerWidth,
 								height: i.height
-							}), await Object(s.a)(200), c(!0), h({
+							}), await Object(e.a)(200), c(!0), h({
 								left: 0,
 								width: window.innerWidth,
 								top: 0,
 								height: window.innerHeight
-							}), await Object(s.a)(300), G(!0), await Object(s.a)(2e3), G(!1), h({
+							}), await Object(e.a)(300), G(!0), await Object(e.a)(2e3), G(!1), h({
 								top: i.top,
 								left: 0,
 								width: window.innerWidth,
 								height: i.height
-							}), await Object(s.a)(300), c(!1), h(i), await Object(s.a)(200), t(), f(!1)
+							}), await Object(e.a)(300), c(!1), h(i), await Object(e.a)(200), t(), f(!1)
 						}
 					})()
 				}, [d, r, t]), n.a.createElement(n.a.Fragment, null, n.a.createElement("div", {
@@ -2471,7 +2632,7 @@
 				})), r && n.a.createElement(B, {
 					background: p,
 					endsAt: i,
-					initialWidth: e,
+					initialWidth: s,
 					isAnimating: d,
 					isFullWidth: l,
 					isRaining: y,
@@ -2487,7 +2648,7 @@
 				children: i,
 				endsAt: r,
 				initialWidth: t,
-				isAnimating: s,
+				isAnimating: e,
 				isFullWidth: m,
 				isRaining: l,
 				successMessage: c
@@ -2498,7 +2659,7 @@
 				}, [p, l]), n.a.createElement("div", {
 					"data-testid": "success-animation",
 					className: Object(o.a)(u.a.animationContainer, {
-						[u.a.isAnimating]: s,
+						[u.a.isAnimating]: e,
 						[u.a.isFullWidth]: m
 					}),
 					style: {
@@ -2544,7 +2705,7 @@
 					hk: "gsPdK"
 				})), n.a.createElement("h3", {
 					className: u.a.timerValue
-				}, Object(e.a)(new Date(r), !1, !0)))))
+				}, Object(s.a)(new Date(r), !1, !0)))))
 			})
 		},
 		"./src/reddit/components/Econ/Prediction/hooks/useDelayedUpvoteAnimation.tsx": function(a, i, r) {
@@ -2626,8 +2787,8 @@
 				k = r("./src/redditGQL/operations/AddPredictionDrafts.json"),
 				n = r("./src/redditGQL/operations/CancelPrediction.json"),
 				o = r("./src/redditGQL/operations/ChangePrediction.json"),
-				s = r("./src/redditGQL/operations/ChangePredictionVote.json"),
-				e = r("./src/redditGQL/operations/CreatePredictionTournament.json"),
+				e = r("./src/redditGQL/operations/ChangePredictionVote.json"),
+				s = r("./src/redditGQL/operations/CreatePredictionTournament.json"),
 				m = r("./src/redditGQL/operations/EndPredictionTournament.json"),
 				l = r("./src/redditGQL/operations/GetPredictionChipPackages.json"),
 				c = r("./src/redditGQL/operations/GetPredictionToken.json"),
@@ -2643,7 +2804,7 @@
 				price: n
 			}) => {
 				var o;
-				const s = await Object(t.a)(a, {
+				const e = await Object(t.a)(a, {
 					...u,
 					variables: {
 						input: {
@@ -2654,8 +2815,8 @@
 						}
 					}
 				});
-				if (!Object(x.c)(s) || s.error || !(null === (o = s.body.data.votePrediction) || void 0 === o ? void 0 : o.ok)) throw new Error("Failed to make prediction");
-				return s.body.data.votePrediction.poll
+				if (!Object(x.c)(e) || e.error || !(null === (o = e.body.data.votePrediction) || void 0 === o ? void 0 : o.ok)) throw new Error("Failed to make prediction");
+				return e.body.data.votePrediction.poll
 			}, G = (a, {
 				postId: i,
 				optionId: r
@@ -2689,7 +2850,7 @@
 					}
 				}),
 				B = (a, i) => Object(t.a)(a, {
-					...e,
+					...s,
 					variables: {
 						input: i
 					}
@@ -2748,7 +2909,7 @@
 				}, T = async (a, i) => {
 					var r, k;
 					const n = await Object(t.a)(a, {
-						...s,
+						...e,
 						variables: {
 							input: i
 						}
@@ -2760,7 +2921,7 @@
 		"./src/reddit/endpoints/economics/specialMembership.ts": function(a, i, r) {
 			"use strict";
 			r.d(i, "a", (function() {
-				return e
+				return s
 			})), r.d(i, "b", (function() {
 				return m
 			})), r.d(i, "d", (function() {
@@ -2775,9 +2936,9 @@
 				k = r("./src/reddit/constants/headers.ts"),
 				n = r("./src/reddit/endpoints/governance/requester.ts"),
 				o = r("./src/reddit/helpers/governanceErrorText/index.ts"),
-				s = r("./src/reddit/helpers/r2/normalizeSubredditFromR2/index.ts");
+				e = r("./src/reddit/helpers/r2/normalizeSubredditFromR2/index.ts");
 
-			function e(a, i) {
+			function s(a, i) {
 				return Object(n.a)(a, {
 					endpoint: `${t.a.metaUrl}/communities/${i.subredditId}/me`,
 					method: "patch",
@@ -2835,7 +2996,7 @@
 					if (a.ok) {
 						const i = a.body.data.children.map(({
 							data: a
-						}) => Object(s.a)(a)).reduce((a, i) => (a[i.id] = i, a), {});
+						}) => Object(e.a)(a)).reduce((a, i) => (a[i.id] = i, a), {});
 						return {
 							...a,
 							body: i
@@ -2878,8 +3039,8 @@
 				k = r("./src/config.ts"),
 				n = r("./src/reddit/endpoints/governance/badges.ts"),
 				o = r("./src/reddit/endpoints/governance/community.ts"),
-				s = r("./src/reddit/endpoints/governance/products/badges.ts"),
-				e = r("./src/reddit/endpoints/governance/requester.ts");
+				e = r("./src/reddit/endpoints/governance/products/badges.ts"),
+				s = r("./src/reddit/endpoints/governance/requester.ts");
 			async function m(a, i, r) {
 				const t = {
 						subredditId: i,
@@ -2891,7 +3052,7 @@
 						userOwnedBadges: []
 					},
 					m = function(a, i) {
-						return Object(e.a)(a, {
+						return Object(s.a)(a, {
 							method: "get",
 							endpoint: `${k.a.metaUrl}/product-collections/${i}?types=badge`
 						})
@@ -2899,7 +3060,7 @@
 					l = Object(o.a)(a, {
 						subredditId: i
 					}),
-					c = Object(s.b)(a, i),
+					c = Object(e.b)(a, i),
 					p = Object(n.c)(a, i, r),
 					[h, d, f, u] = await Promise.all([m, l, c, p]);
 				if (h.ok ? t.collections = h.body : t.errors.collections = h.error, d.ok) {
@@ -2908,7 +3069,7 @@
 				}
 				return f.ok ? t.products = f.body : t.errors.products = f.error, u.ok ? (x()(t.badges, u.body.badges), t.userOwnedBadges = u.body.userOwnedBadges) : t.errors.userBadges = u.error, t
 			}
-			const l = (a, i) => Object(e.a)(a, {
+			const l = (a, i) => Object(s.a)(a, {
 				endpoint: `${k.a.metaUrl}/products/${i}?types=badge,membership`,
 				method: "delete"
 			})
@@ -3013,7 +3174,7 @@
 			})), r.d(i, "c", (function() {
 				return o
 			})), r.d(i, "d", (function() {
-				return s
+				return e
 			}));
 			var t = r("./src/config.ts"),
 				x = r("./src/reddit/endpoints/governance/requester.ts");
@@ -3040,7 +3201,7 @@
 				})
 			}
 
-			function s(a, i) {
+			function e(a, i) {
 				return Object(x.a)(a, {
 					method: "post",
 					endpoint: `${t.a.metaUrl}/orders`,
@@ -3103,6 +3264,34 @@
 				} : a)
 			}
 		},
+		"./src/reddit/helpers/governance/tokens.ts": function(a, i, r) {
+			"use strict";
+			r.d(i, "b", (function() {
+				return k
+			})), r.d(i, "c", (function() {
+				return n
+			})), r.d(i, "a", (function() {
+				return o
+			}));
+			var t = r("./node_modules/bignumber.js/bignumber.js"),
+				x = r("./src/lib/prettyPrintNumber/index.ts");
+
+			function k(a, i) {
+				const r = new t.BigNumber(a),
+					x = new t.BigNumber(i || 1);
+				return r.dividedToIntegerBy(x).toString()
+			}
+
+			function n(a, i) {
+				return Object(x.b)(parseInt(k(a, i), 10))
+			}
+
+			function o(a, i) {
+				const r = new t.BigNumber(a),
+					x = new t.BigNumber(i || 1);
+				return r.multipliedBy(x).toFixed(0)
+			}
+		},
 		"./src/reddit/helpers/governanceErrorText/index.ts": function(a, i, r) {
 			"use strict";
 			r.d(i, "a", (function() {
@@ -3135,9 +3324,9 @@
 			})), r.d(i, "q", (function() {
 				return o
 			})), r.d(i, "r", (function() {
-				return s
-			})), r.d(i, "l", (function() {
 				return e
+			})), r.d(i, "l", (function() {
+				return s
 			})), r.d(i, "t", (function() {
 				return m
 			})), r.d(i, "n", (function() {
@@ -3194,13 +3383,13 @@
 					action: "select",
 					noun: "prediction_option"
 				}),
-				s = a => ({
+				e = a => ({
 					...Object(x.defaults)(a),
 					source: k,
 					action: "view",
 					noun: "predict_info_modal"
 				}),
-				e = a => ({
+				s = a => ({
 					...Object(x.defaults)(a),
 					source: k,
 					action: "close",
@@ -3242,13 +3431,13 @@
 					amount: r
 				}) => n => {
 					const o = i === t.a.Coins ? r : void 0,
-						s = i === t.a.Tokens ? r : void 0;
+						e = i === t.a.Tokens ? r : void 0;
 					return {
 						...Object(x.defaults)(n),
 						source: k,
 						action: "close",
 						noun: "prediction_modal",
-						poll: Object(x.poll)(n, a, !1, o, s)
+						poll: Object(x.poll)(n, a, !1, o, e)
 					}
 				},
 				h = a => ({
@@ -3393,9 +3582,9 @@
 			})), r.d(i, "g", (function() {
 				return o
 			})), r.d(i, "d", (function() {
-				return s
-			})), r.d(i, "f", (function() {
 				return e
+			})), r.d(i, "f", (function() {
+				return s
 			})), r.d(i, "a", (function() {
 				return m
 			})), r.d(i, "c", (function() {
@@ -3425,7 +3614,7 @@
 					action: "view",
 					noun: "continue"
 				}),
-				s = ({
+				e = ({
 					postId: a
 				}) => i => ({
 					...k(i, a),
@@ -3433,7 +3622,7 @@
 					action: "click",
 					noun: "continue"
 				}),
-				e = ({
+				s = ({
 					postId: a
 				}) => i => ({
 					...k(i, a),
@@ -3492,15 +3681,15 @@
 				const r = Object(t.useRef)(null);
 				let k;
 				k = Object(x.A)(a);
-				const [o, s] = Object(t.useState)(null != k ? k : i);
-				return Object(t.useEffect)(() => (r.current = n(a, s, i), () => {
+				const [o, e] = Object(t.useState)(null != k ? k : i);
+				return Object(t.useEffect)(() => (r.current = n(a, e, i), () => {
 					var a;
 					return null === (a = r.current) || void 0 === a ? void 0 : a.deregister()
 				}), [a, i]), Object(t.useEffect)(() => {
 					var a;
 					null === (a = r.current) || void 0 === a || a.emit(o)
 				}, [o]), [o, function(i) {
-					Object(x.Cb)(a, i), s(i)
+					Object(x.Cb)(a, i), e(i)
 				}]
 			}
 		},
@@ -3509,7 +3698,7 @@
 			r.d(i, "b", (function() {
 				return o
 			})), r.d(i, "a", (function() {
-				return s
+				return e
 			}));
 			var t = r("./node_modules/react/index.js"),
 				x = r("./node_modules/react-redux/es/index.js"),
@@ -3521,7 +3710,7 @@
 				return Object(t.useCallback)(i => a(Object(k.f)(i)), [a])
 			}
 
-			function s() {
+			function e() {
 				const a = o();
 				return Object(t.useCallback)((i, r) => a({
 					duration: 5e3,
@@ -3743,4 +3932,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.f8c0f73573f3c77a665a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.9425e745440efe219c7f.js.map
