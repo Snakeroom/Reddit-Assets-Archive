@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlow.59287aea55061989089d.js
-// Retrieved at 9/2/2021, 4:20:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlow.9bd26b1a5896df80f423.js
+// Retrieved at 9/2/2021, 4:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlow", "ReportFlowNew"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, o) {
@@ -5149,13 +5149,13 @@
 		},
 		"./src/reddit/helpers/trackers/powerups.ts": function(e, t, o) {
 			"use strict";
-			o.d(t, "z", (function() {
+			o.d(t, "A", (function() {
 				return i
 			})), o.d(t, "r", (function() {
 				return a
 			})), o.d(t, "t", (function() {
 				return l
-			})), o.d(t, "A", (function() {
+			})), o.d(t, "B", (function() {
 				return d
 			})), o.d(t, "j", (function() {
 				return u
@@ -5171,7 +5171,7 @@
 				return h
 			})), o.d(t, "u", (function() {
 				return b
-			})), o.d(t, "x", (function() {
+			})), o.d(t, "y", (function() {
 				return g
 			})), o.d(t, "v", (function() {
 				return w
@@ -5201,8 +5201,10 @@
 				return T
 			})), o.d(t, "l", (function() {
 				return L
-			})), o.d(t, "y", (function() {
+			})), o.d(t, "x", (function() {
 				return P
+			})), o.d(t, "z", (function() {
+				return N
 			}));
 			var n = o("./src/reddit/helpers/correlationIdTracker.ts"),
 				r = o("./src/reddit/selectors/telemetry.ts");
@@ -5418,7 +5420,14 @@
 					...s(o),
 					correlationId: e
 				}),
-				P = (e, t, o) => n => ({
+				P = () => e => ({
+					source: "powerups",
+					action: "click",
+					noun: "unlock_gifs",
+					...s(e),
+					correlationId: Object(n.d)(n.a.PowerupsFlow, !0)
+				}),
+				N = (e, t, o) => n => ({
 					source: "powerups_settings",
 					action: "click",
 					noun: e,
@@ -5914,4 +5923,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.59287aea55061989089d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.9bd26b1a5896df80f423.js.map

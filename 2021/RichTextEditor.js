@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.6e46575399ed2255afc7.js
-// Retrieved at 9/2/2021, 1:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.df984af376050f79095a.js
+// Retrieved at 9/2/2021, 4:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, o) {
@@ -2756,12 +2756,7 @@
 					})),
 					x = Object(i.e)(e => void 0 !== f && Object(N.c)(e, {
 						subredditId: f
-					})) || h,
-					g = a.a.createElement(ee, {
-						controlsState: b,
-						onGifButtonClick: d,
-						userCanUseGifs: h
-					});
+					}));
 				return a.a.createElement(D.a, {
 					className: t,
 					oveflowMenuDropdownId: n,
@@ -2769,11 +2764,15 @@
 					editorType: I.a.Comment
 				}, a.a.createElement("div", {
 					className: oe.a.powerupButtons
-				}, x && h && g, _ && a.a.createElement(G, {
+				}, _ && a.a.createElement(G, {
 					controlsState: b,
 					subredditId: o && o.id,
 					onEmoteButtonClick: c
-				}), x && !h && g), (_ || x) && a.a.createElement(ne, null), Object(M.g)(M.f, b, s, r, m), a.a.createElement(M.a, {
+				}), x && a.a.createElement(ee, {
+					controlsState: b,
+					onGifButtonClick: d,
+					userCanUseGifs: h
+				})), (_ || x) && a.a.createElement(ne, null), Object(M.g)(M.f, b, s, r, m), a.a.createElement(M.a, {
 					controlsState: b,
 					trackOnClick: m,
 					onLinkButtonClick: p
@@ -4891,4 +4890,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.6e46575399ed2255afc7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.df984af376050f79095a.js.map

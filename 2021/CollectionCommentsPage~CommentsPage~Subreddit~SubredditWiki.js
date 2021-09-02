@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.010a2ae4d034dcf2fd6e.js
-// Retrieved at 9/2/2021, 1:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.1ce9bec158b8aa9c546f.js
+// Retrieved at 9/2/2021, 4:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"], {
 		"./src/lib/linkMatchers/index.ts": function(e, t, r) {
@@ -873,7 +873,7 @@
 					className: b.a.user,
 					to: `/user/${x}/`,
 					onClick: () => {
-						f && n(Object(l.A)(f.id, f.displayName))
+						f && n(Object(l.B)(f.id, f.displayName))
 					}
 				}, O) : s.a.createElement("div", {
 					className: b.a.user
@@ -3291,4 +3291,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.010a2ae4d034dcf2fd6e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.1ce9bec158b8aa9c546f.js.map

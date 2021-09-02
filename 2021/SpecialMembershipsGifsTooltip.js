@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SpecialMembershipsGifsTooltip.2ededa35fdf266de2bbd.js
-// Retrieved at 8/30/2021, 12:20:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SpecialMembershipsGifsTooltip.32c9d43d696b8acb6be9.js
+// Retrieved at 9/2/2021, 4:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SpecialMembershipsGifsTooltip"], {
 		"./src/reddit/components/RichTextEditor/media/GifTooltip/BaseTooltip.m.less": function(e, t, s) {
@@ -80,6 +80,7 @@
 				closeIcon: "_3VwbhXXLp1dcUFkxf8wMsc",
 				body: "_2qdvF-IdzElbEEbTBTqXLE",
 				results: "_3NbyQMXVxyVAMWNcjMkFvi",
+				disabled: "_1q61sXN5YBwD15WuBXBYk5",
 				gifResult: "_26ADnJjpUFVQyc9EaxOU1n",
 				gifResultImage: "FdCn2CuFBj91lgTaeY2bA",
 				loadingSpinner: "_2t2HXTe1t9BdNxOjV-5WUX",
@@ -117,18 +118,18 @@
 				I = s("./src/reddit/selectors/telemetry.ts"),
 				v = s("./src/reddit/components/RichTextEditor/helpers/common.ts"),
 				C = s("./src/reddit/components/RichTextEditor/media/helpers.ts");
-			let G;
+			let N;
 
-			function N() {
-				G || (G = fetch("https://meta.redditmedia.com/public/fortnitebr/giphy_blacklist.json").then(e => e.json()))
+			function G() {
+				N || (N = fetch("https://meta.redditmedia.com/public/fortnitebr/giphy_blacklist.json").then(e => e.json()))
 			}
 			var O = s("./node_modules/lodash/debounce.js"),
-				S = s.n(O),
-				j = s("./src/reddit/icons/svgs/Search/index.tsx"),
+				j = s.n(O),
+				S = s("./src/reddit/icons/svgs/Search/index.tsx"),
 				k = s("./src/reddit/selectors/user.ts"),
 				w = s("./src/reddit/components/RichTextEditor/media/GifTooltip/SearchBox/index.m.less"),
-				R = s.n(w);
-			const B = 400;
+				B = s.n(w);
+			const R = 400;
 			class M extends l.a.Component {
 				constructor() {
 					super(...arguments), this.elementRef = null, this.state = {
@@ -137,9 +138,9 @@
 						this.setState({
 							query: e.target.value
 						}, this.dispatchOnChange)
-					}, this.dispatchOnChange = S()(() => {
+					}, this.dispatchOnChange = j()(() => {
 						this.props.onChange(this.state.query)
-					}, B), this.focusOnInput = () => {
+					}, R), this.focusOnInput = () => {
 						this.elementRef && !1 !== this.props.autofocus && this.elementRef.focus()
 					}
 				}
@@ -153,23 +154,23 @@
 						query: t
 					} = this.state, s = `powered-by-giphy-${e?"dark":"light"}.png`;
 					return l.a.createElement("div", {
-						className: Object(o.a)(R.a.searchBox, this.props.className)
+						className: Object(o.a)(B.a.searchBox, this.props.className)
 					}, l.a.createElement("button", {
-						className: R.a.searchIconButton,
+						className: B.a.searchIconButton,
 						onClick: this.focusOnInput
-					}, l.a.createElement(j.a, {
-						className: R.a.searchIcon
+					}, l.a.createElement(S.a, {
+						className: B.a.searchIcon
 					})), l.a.createElement("input", {
 						ref: e => this.elementRef = e,
 						type: "text",
-						className: R.a.searchInput,
+						className: B.a.searchInput,
 						placeholder: i.fbt._("Search GIFs", null, {
 							hk: "3upjCv"
 						}),
 						value: t,
 						onChange: this.onQueryChange
 					}), t.length < 25 && l.a.createElement("div", {
-						className: R.a.poweredByGiphy,
+						className: B.a.poweredByGiphy,
 						style: {
 							backgroundImage: `url(${g.a.assetPath}/img/memberships/${s}`
 						},
@@ -249,7 +250,7 @@
 					}
 				}
 				componentDidMount() {
-					this.mounted = !0, !this.state.query && this.state.loading && this.loadTrendingGifs(), N()
+					this.mounted = !0, !this.state.query && this.state.loading && this.loadTrendingGifs(), G()
 				}
 				componentWillUnmount() {
 					this.mounted = !1
@@ -267,7 +268,7 @@
 					} = this.state;
 					!e && s && null !== t && (await
 						function(e) {
-							return N(), G.then(t => {
+							return G(), N.then(t => {
 								return !!e.split(" ").concat(e).find(e => -1 !== t.indexOf(e.toLowerCase()))
 							}).catch(() => !1)
 						}(s) || (this.setState({
@@ -355,7 +356,9 @@
 						className: A.a.body,
 						onScroll: this.onScroll
 					}, l.a.createElement("div", {
-						className: A.a.results
+						className: Object(o.a)(A.a.results, {
+							[A.a.disabled]: this.props.disabled
+						})
 					}, e.map((e, t) => l.a.createElement("div", {
 						className: A.a.column,
 						key: t
@@ -365,7 +368,8 @@
 						onClick: () => this.onResultClick(e),
 						style: {
 							height: `${e.fixedWidthHeight}px`
-						}
+						},
+						disabled: this.props.disabled
 					}, l.a.createElement("img", {
 						className: A.a.gifResultImage,
 						src: e.url
@@ -374,7 +378,7 @@
 					}, l.a.createElement(f.a, {
 						sizePx: 20,
 						center: !0
-					})), l.a.createElement("div", {
+					})), this.props.children, l.a.createElement("div", {
 						className: A.a.whiteScrim
 					})))
 				}
@@ -569,4 +573,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SpecialMembershipsGifsTooltip.2ededa35fdf266de2bbd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SpecialMembershipsGifsTooltip.32c9d43d696b8acb6be9.js.map

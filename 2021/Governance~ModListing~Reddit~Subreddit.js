@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.9993bae147ae19a99135.js
-// Retrieved at 9/2/2021, 4:20:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.6d750a13c535b1bd8d78.js
+// Retrieved at 9/2/2021, 4:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~Subreddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, r) {
@@ -2949,13 +2949,13 @@
 		},
 		"./src/reddit/helpers/trackers/powerups.ts": function(e, t, r) {
 			"use strict";
-			r.d(t, "z", (function() {
+			r.d(t, "A", (function() {
 				return s
 			})), r.d(t, "r", (function() {
 				return c
 			})), r.d(t, "t", (function() {
 				return a
-			})), r.d(t, "A", (function() {
+			})), r.d(t, "B", (function() {
 				return d
 			})), r.d(t, "j", (function() {
 				return u
@@ -2971,7 +2971,7 @@
 				return b
 			})), r.d(t, "u", (function() {
 				return g
-			})), r.d(t, "x", (function() {
+			})), r.d(t, "y", (function() {
 				return h
 			})), r.d(t, "v", (function() {
 				return v
@@ -3001,8 +3001,10 @@
 				return C
 			})), r.d(t, "l", (function() {
 				return D
-			})), r.d(t, "y", (function() {
+			})), r.d(t, "x", (function() {
 				return N
+			})), r.d(t, "z", (function() {
+				return L
 			}));
 			var o = r("./src/reddit/helpers/correlationIdTracker.ts"),
 				n = r("./src/reddit/selectors/telemetry.ts");
@@ -3218,7 +3220,14 @@
 					...i(r),
 					correlationId: e
 				}),
-				N = (e, t, r) => o => ({
+				N = () => e => ({
+					source: "powerups",
+					action: "click",
+					noun: "unlock_gifs",
+					...i(e),
+					correlationId: Object(o.d)(o.a.PowerupsFlow, !0)
+				}),
+				L = (e, t, r) => o => ({
 					source: "powerups_settings",
 					action: "click",
 					noun: e,
@@ -4531,4 +4540,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.9993bae147ae19a99135.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.6d750a13c535b1bd8d78.js.map

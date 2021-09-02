@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconAchievementFlairModal.49e21f5ae79832ef5813.js
-// Retrieved at 9/2/2021, 1:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconAchievementFlairModal.a0d4bf4a9e34673058d1.js
+// Retrieved at 9/2/2021, 4:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconAchievementFlairModal"], {
 		"./src/reddit/actions/economics/subredditPremium/actionCreators.ts": function(e, t, s) {
@@ -56,7 +56,7 @@
 			s.d(t, "b", (function() {
 				return F
 			})), s.d(t, "c", (function() {
-				return y
+				return T
 			})), s.d(t, "a", (function() {
 				return C
 			}));
@@ -208,7 +208,7 @@
 					onOpenUploadDialog: () => e(Object(d.j)())
 				});
 
-			function T(e) {
+			function y(e) {
 				const {
 					badgeIds: t,
 					allBadges: s,
@@ -218,8 +218,8 @@
 					badges: i
 				}, a))
 			}
-			const y = Object(i.b)(w, P)(T),
-				C = Object(i.b)(A, P)(T)
+			const T = Object(i.b)(w, P)(y),
+				C = Object(i.b)(A, P)(y)
 		},
 		"./src/reddit/components/Econ/AchievementFlair/AchievementFlairModal/AchievementFlairs.m.less": function(e, t, s) {
 			e.exports = {
@@ -297,7 +297,7 @@
 				A = s.n(w);
 			const {
 				fbt: P
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), T = ({
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), y = ({
 				achievement: e,
 				onSelect: t
 			}) => {
@@ -348,7 +348,7 @@
 					className: A.a.achievementTooltip
 				}))
 			}, {
-				fbt: y
+				fbt: T
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), C = ({
 				className: e,
 				subredditId: t,
@@ -381,25 +381,25 @@
 					className: A.a.achievementsHeading
 				}, r.a.createElement(I.a, {
 					className: A.a.headingPowerupsBolt
-				}), y._("Achievements", null, {
+				}), T._("Achievements", null, {
 					hk: "1DnL4g"
 				})), r.a.createElement("p", {
 					className: A.a.achievementsDescription
-				}, (() => o && !d ? y._("Unlock the Powerup Supporter achievement when you Powerup this community", null, {
+				}, (() => o && !d ? T._("Unlock the Powerup Supporter achievement when you Powerup this community", null, {
 					hk: "2ZIvgm"
-				}) : o ? y._("Unlocked with Powerups! Choose the achievement you’d like to highlight.", null, {
+				}) : o ? T._("Unlocked with Powerups! Choose the achievement you’d like to highlight.", null, {
 					hk: "4iPJwf"
-				}) : y._("Powerup to unlock community achievements", null, {
+				}) : T._("Powerup to unlock community achievements", null, {
 					hk: "1oPooH"
 				}))()), r.a.createElement("div", {
 					className: A.a.achievementsList
-				}, c.map(e => r.a.createElement(T, {
+				}, c.map(e => r.a.createElement(y, {
 					achievement: e,
 					key: e.type,
 					onSelect: m
 				}))), (() => o && !d ? r.a.createElement(b.a, {
 					onClick: () => {
-						n(Object(f.x)()), u()
+						n(Object(f.y)()), u()
 					}
 				}) : o ? null : r.a.createElement(E.q, {
 					priority: E.b.Primary,
@@ -408,7 +408,7 @@
 					onClick: () => {
 						n(Object(f.v)()), u()
 					}
-				}, y._("Powerup to Unlock", null, {
+				}, T._("Powerup to Unlock", null, {
 					hk: "M8l7D"
 				})))())
 			};
@@ -879,4 +879,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconAchievementFlairModal.49e21f5ae79832ef5813.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconAchievementFlairModal.a0d4bf4a9e34673058d1.js.map
