@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.9b553dce4c1d97f8e17c.js
-// Retrieved at 8/31/2021, 6:10:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.8a7815d1c02b80fd8f3f.js
+// Retrieved at 9/2/2021, 1:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -3022,7 +3022,7 @@
 					}
 					return !1
 				},
-				showUserFlairPreviewEnabled: ve.v
+				showUserFlairPreviewEnabled: ve.t
 			}), Be = Object(o.b)(Ae), Ue = e => i.a.createElement(Re, {
 				onClick: e.onClick
 			}, i.a.createElement(ee.a, {
@@ -3134,7 +3134,7 @@
 						subredditId: t
 					}) => Object(Te.c)(e, {
 						subredditId: t
-					}) && !Object(ve.v)(e)
+					}) && !Object(ve.t)(e)
 				});
 			class St extends i.a.Component {
 				constructor(e) {
@@ -3245,7 +3245,7 @@
 						const n = Object(ne.B)(e, t);
 						return Object(Te.c)(e, {
 							subredditId: n
-						}) && Object(ve.v)(e)
+						}) && Object(ve.t)(e)
 					},
 					subreddit: (e, t) => Object(ne.w)(e, {
 						subredditName: t.listingName
@@ -4733,7 +4733,7 @@
 								experimentName: i.D,
 								expEventOverride: t
 							});
-							return !!(Object(i.me)(n) ? void 0 : n)
+							return !!(Object(i.ke)(n) ? void 0 : n)
 						})(n)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -6292,4 +6292,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.9b553dce4c1d97f8e17c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.8a7815d1c02b80fd8f3f.js.map

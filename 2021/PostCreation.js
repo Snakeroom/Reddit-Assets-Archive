@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.776db274deffd88f03ab.js
-// Retrieved at 9/1/2021, 12:30:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.56f6dff609eda6beef9b.js
+// Retrieved at 9/2/2021, 1:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, n) {
@@ -8487,7 +8487,7 @@
 						subreddit: n
 					} = e, {
 						isSponsored: o
-					} = t, r = Object(B.a)(), a = Object(U.a)(m.uc) === m.yc.Enabled;
+					} = t, r = Object(B.a)(), a = Object(U.a)(m.sc) === m.wc.Enabled;
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return s.a.createElement(z, {
 						nowrap: e.nowrap
 					}, s.a.createElement(Y, e));
@@ -22606,9 +22606,9 @@
 			var o = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const s = e => Object(r.c)(e, {
-				experimentName: o.Yc,
+				experimentName: o.Wc,
 				experimentEligibilitySelector: r.a
-			}) === o.dd.Enabled
+			}) === o.bd.Enabled
 		},
 		"./src/reddit/selectors/experiments/presenceIndicator.ts": function(e, t, n) {
 			"use strict";
@@ -22622,14 +22622,14 @@
 			const s = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: o.jd
-					}) === o.ud.Enabled
+						experimentName: o.hd
+					}) === o.sd.Enabled
 				},
 				a = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: o.id
-					}) === o.td.Enabled
+						experimentName: o.gd
+					}) === o.rd.Enabled
 				}
 		},
 		"./src/reddit/selectors/experiments/replyWithUpvote.ts": function(e, t, n) {
@@ -22646,7 +22646,7 @@
 				return !(!t || (null == t ? void 0 : t.karma) && t.karma.fromPosts < 5 && t.karma.fromComments < 10) && Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
 					experimentName: o.jb
-				}) === o.kc
+				}) === o.ic
 			}
 		},
 		"./src/reddit/selectors/features/predictions/creation/index.ts": function(e, t, n) {
@@ -23380,4 +23380,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.776db274deffd88f03ab.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.56f6dff609eda6beef9b.js.map

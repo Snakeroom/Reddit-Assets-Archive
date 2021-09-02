@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index.75c19c833f76b830cd08.js
-// Retrieved at 8/31/2021, 6:10:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index.84b2e748594327fd171e.js
+// Retrieved at 9/2/2021, 1:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index"], {
 		"./src/reddit/components/Econ/Prediction/TournamentPostBody/PredictionContainer/index.m.less": function(e, t, n) {
@@ -29,7 +29,7 @@
 		"./src/reddit/components/Econ/Prediction/TournamentPostBody/index.tsx": function(e, t, n) {
 			"use strict";
 			n.r(t), n.d(t, "TournamentPostBody", (function() {
-				return W
+				return G
 			}));
 			var o = n("./node_modules/react/index.js"),
 				i = n.n(o),
@@ -59,8 +59,8 @@
 				}))
 			};
 			var u = n("./node_modules/react-redux/es/index.js"),
-				m = n("./src/reddit/models/Prediction/index.ts"),
-				p = n("./src/reddit/selectors/poll/index.ts"),
+				p = n("./src/reddit/models/Prediction/index.ts"),
+				m = n("./src/reddit/selectors/poll/index.ts"),
 				b = n("./src/reddit/selectors/user.ts"),
 				O = n("./src/reddit/components/Econ/Prediction/PredictionModal/index.tsx"),
 				v = n("./src/reddit/components/Econ/Prediction/PredictionOption/index.tsx"),
@@ -68,8 +68,8 @@
 				I = n("./src/reddit/components/Econ/Prediction/VoteAnimation/index.tsx"),
 				x = n("./src/reddit/controls/InternalLink/index.tsx"),
 				E = n("./src/reddit/helpers/trackers/predictions.ts"),
-				T = n("./src/reddit/hooks/useTracking.ts"),
-				g = n("./src/reddit/selectors/subreddit.ts"),
+				g = n("./src/reddit/hooks/useTracking.ts"),
+				T = n("./src/reddit/selectors/subreddit.ts"),
 				h = n("./src/reddit/components/Econ/Prediction/TournamentPostBody/TournamentOverlay/index.m.less"),
 				j = n.n(h);
 			const {
@@ -79,8 +79,8 @@
 				subredditId: t,
 				isLastPrediction: n
 			}) => {
-				const o = Object(T.a)(),
-					s = Object(u.e)(e => Object(g.Q)(e, {
+				const o = Object(g.a)(),
+					s = Object(u.e)(e => Object(T.Q)(e, {
 						subredditId: t
 					}));
 				return i.a.createElement(x.a, {
@@ -95,21 +95,19 @@
 					hk: "Xa82J"
 				})))
 			};
-			var _ = n("./src/lib/timeUntil/index.ts"),
-				y = n("./src/reddit/actions/economics/helpers/index.ts"),
-				k = n("./src/reddit/actions/economics/predictions/index.ts"),
-				A = n("./src/reddit/actions/post.ts"),
-				S = n("./src/reddit/components/Econ/Prediction/hooks/useDelayedUpvoteAnimation.tsx"),
+			var _ = n("./src/reddit/actions/economics/helpers/index.ts"),
+				y = n("./src/reddit/actions/economics/predictions/index.ts"),
+				k = n("./src/reddit/actions/post.ts"),
+				A = n("./src/reddit/components/Econ/Prediction/hooks/useDelayedUpvoteAnimation.tsx"),
 				w = n("./src/reddit/hooks/useToast.tsx"),
-				L = n("./src/reddit/models/Toast/index.ts"),
-				D = n("./src/reddit/models/Vote/index.ts"),
-				V = n("./src/reddit/selectors/experiments/econ/index.ts");
+				L = n("./src/reddit/models/Vote/index.ts"),
+				S = n("./src/reddit/selectors/experiments/econ/index.ts");
 			const {
-				fbt: B
+				fbt: D
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
-			var N = n("./src/reddit/components/Econ/Prediction/TournamentPostBody/TournamentPrediction/index.m.less"),
-				M = n.n(N);
-			const U = ({
+			var V = n("./src/reddit/components/Econ/Prediction/TournamentPostBody/TournamentPrediction/index.m.less"),
+				B = n.n(V);
+			const N = ({
 				prediction: e,
 				tournamentId: t,
 				subredditId: n,
@@ -118,176 +116,168 @@
 			}) => {
 				const c = Object(u.e)(b.K),
 					a = Object(u.e)(b.X),
-					l = Object(u.e)(t => Object(p.g)(t, {
+					l = Object(u.e)(t => Object(m.g)(t, {
 						postId: e.id
 					})),
-					[x, g] = Object(o.useState)(!1),
+					[x, T] = Object(o.useState)(!1),
 					{
 						isLoading: h,
 						isShowingVoteAnimation: j,
 						selectedOption: C,
-						selectOption: N,
-						predict: U,
-						cancelAction: F,
-						hideAnimation: Q
+						selectOption: V,
+						predict: N,
+						cancelAction: M,
+						hideAnimation: U
 					} = function(e, t, n) {
 						const o = Object(u.d)(),
 							s = Object(u.e)(b.e),
-							d = Object(u.e)(V.o),
-							r = Object(u.e)(V.n),
-							c = Object(T.a)(),
-							a = Object(w.b)(),
-							l = Object(w.a)(),
+							d = Object(u.e)(S.n),
+							r = Object(g.a)(),
+							c = Object(w.a)(),
 							{
-								startDelayedUpvoteAnimation: p
-							} = Object(S.a)(n.id),
+								startDelayedUpvoteAnimation: a
+							} = Object(A.a)(n.id),
 							{
-								id: O,
-								endsAt: v,
-								options: P,
-								selectedOptionId: I
+								id: l,
+								endsAt: m,
+								options: O,
+								selectedOptionId: v
 							} = t,
 							{
-								id: x,
-								voteState: g
+								id: P,
+								voteState: I
 							} = n,
-							[h, j] = i.a.useState(!1),
-							[C, f] = i.a.useState(null),
-							[N, M] = i.a.useState(!1),
-							U = v < Date.now();
+							[x, T] = i.a.useState(!1),
+							[h, j] = i.a.useState(null),
+							[C, f] = i.a.useState(!1),
+							V = m < Date.now();
 						return {
-							isLoading: h,
-							isShowingVoteAnimation: N,
-							selectedOption: P.find(({
+							isLoading: x,
+							isShowingVoteAnimation: C,
+							selectedOption: O.find(({
 								id: e
-							}) => e === C),
+							}) => e === h),
 							selectOption: e => {
-								U || I || f(e.id)
+								V || v || j(e.id)
 							},
 							predict: async t => {
-								if (t.currency === m.a.Coins && t.amount > s) return Object(y.promptUserToBuyMoreCoins)(), void c(E.a);
-								if (U) return l(B._("Error: Failed to make prediction. This prediction has already ended", null, {
+								if (t.currency === p.a.Coins && t.amount > s) return Object(_.promptUserToBuyMoreCoins)(), void r(E.a);
+								if (V) return c(D._("Error: Failed to make prediction. This prediction has already ended", null, {
 									hk: "22UWEr"
-								})), void f(null);
-								if (!O || !C) throw new Error("Invalid arguments, optionId and pollId must be strings");
-								j(!0), c(Object(E.o)({
-									pollId: O,
+								})), void j(null);
+								if (!l || !h) throw new Error("Invalid arguments, optionId and pollId must be strings");
+								T(!0), r(Object(E.o)({
+									pollId: l,
 									selectedNumberTokens: t.amount
 								}));
 								try {
-									await o(Object(k.o)({
+									await o(Object(y.o)({
 										coinPackageId: t.id,
-										selectedOptionId: C,
+										selectedOptionId: h,
 										price: t.amount,
-										pollId: O,
+										pollId: l,
 										tournamentId: e,
 										tournamentPostId: n.id
-									})), d && g < D.a.upvoted && (o(Object(A.db)(x)), o(Object(A.db)(O)), p()), j(!1), f(null), r ? M(!0) : a({
-										duration: 5e3,
-										kind: L.b.SuccessCommunity,
-										text: B._("Thanks! See if you're right in {timeToResult}", [B._param("timeToResult", Object(_.a)(new Date(v), !0))], {
-											hk: "3ZSdoo"
-										})
-									})
+									})), d && I < L.a.upvoted && (o(Object(k.db)(P)), o(Object(k.db)(l)), a()), T(!1), j(null), f(!0)
 								} catch (i) {
-									j(!1), f(null), l(B._("Error: Failed to make prediction, please try again later", null, {
+									T(!1), j(null), c(D._("Error: Failed to make prediction, please try again later", null, {
 										hk: "1tECsx"
 									}))
 								}
 							},
 							cancelAction: i.a.useCallback(() => {
-								f(null)
+								j(null)
 							}, []),
 							hideAnimation: i.a.useCallback(() => {
-								M(!1)
+								f(!1)
 							}, [])
 						}
 					}(t, e, s),
 					{
-						options: K,
-						userSelection: H
+						options: F,
+						userSelection: Q
 					} = l || {},
 					{
-						endsAt: R,
-						title: G,
-						status: W,
-						resolvedOptionId: z,
-						options: J
+						endsAt: K,
+						title: H,
+						status: G,
+						resolvedOptionId: R,
+						options: W
 					} = e,
-					Y = R < Date.now(),
-					$ = W === m.b.Cancelled || W === m.b.CancelInProgress,
-					X = null != K ? K : J;
+					z = K < Date.now(),
+					J = G === p.b.Cancelled || G === p.b.CancelInProgress,
+					Y = null != F ? F : W;
 				return i.a.createElement(i.a.Fragment, null, i.a.createElement("div", {
-					className: Object(d.a)(M.a.poll, {
-						[M.a.nightMode]: a
+					className: Object(d.a)(B.a.poll, {
+						[B.a.nightMode]: a
 					})
 				}, i.a.createElement("p", {
-					className: M.a.pollQuestion
-				}, G), X.map(e => i.a.createElement(I.a, {
-					endsAt: R,
+					className: B.a.pollQuestion
+				}, H), Y.map(e => i.a.createElement(I.a, {
+					endsAt: K,
 					key: `prediction-option-${e.id}`,
-					isShowingVoteAnimation: j && H === e.id,
-					onAnimationEnd: Q
+					isShowingVoteAnimation: j && Q === e.id,
+					onAnimationEnd: U
 				}, i.a.createElement(v.a, {
 					disabled: j,
-					isCancelled: $,
-					isEnded: Y,
-					isSelected: H === e.id,
+					isCancelled: J,
+					isEnded: z,
+					isSelected: Q === e.id,
 					needsResolution: !1,
 					option: e,
-					onClick: () => N(e),
-					resolvedOptionId: z,
+					onClick: () => V(e),
+					resolvedOptionId: R,
 					tournamentId: t,
-					userSelection: H,
+					userSelection: Q,
 					userIsLoggedOut: !c,
-					votePercentage: (H || Y || x) && e.voteCount && (null == l ? void 0 : l.totalVoters) ? Math.floor(e.voteCount / l.totalVoters * 100) : null,
+					votePercentage: (Q || z || x) && e.voteCount && (null == l ? void 0 : l.totalVoters) ? Math.floor(e.voteCount / l.totalVoters * 100) : null,
 					isShowingHint: x
-				}))), !$ && i.a.createElement(P.a, {
-					disabled: j || x || !!H,
-					isEnded: Y,
+				}))), !J && i.a.createElement(P.a, {
+					disabled: j || x || !!Q,
+					isEnded: z,
 					postId: s.id,
-					userSelection: H,
+					userSelection: Q,
 					isShowingHint: x,
 					tournamentId: t,
-					onReveal: () => g(!0)
+					onReveal: () => T(!0)
 				})), !!C && i.a.createElement(O.b, {
-					className: M.a.modal,
+					className: B.a.modal,
 					isCreatingVote: h,
-					onOverlayClick: F,
-					onCancel: F,
-					onPredict: U,
+					onOverlayClick: M,
+					onCancel: M,
+					onPredict: N,
 					option: C,
 					pollId: e.id,
 					subredditId: n,
 					tournamentId: t,
 					withOverlay: !0
-				}), !!H && i.a.createElement(f, {
+				}), !!Q && i.a.createElement(f, {
 					postId: s.id,
 					subredditId: n,
 					isLastPrediction: r
 				}))
 			};
-			var F = n("./src/reddit/helpers/predictions/index.ts");
-			var Q = n("./src/reddit/selectors/posts.ts"),
-				K = n("./src/reddit/components/Econ/Prediction/TournamentPostBody/ViewTournamentLink/index.m.less"),
-				H = n.n(K);
+			var M = n("./src/reddit/helpers/predictions/index.ts");
+			var U = n("./src/reddit/selectors/posts.ts"),
+				F = n("./src/reddit/components/Econ/Prediction/TournamentPostBody/ViewTournamentLink/index.m.less"),
+				Q = n.n(F);
 			const {
-				fbt: R
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), G = ({
+				fbt: K
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), H = ({
 				postId: e
 			}) => {
-				const t = Object(T.a)(),
-					n = Object(u.e)(t => Object(Q.U)(t, {
+				const t = Object(g.a)(),
+					n = Object(u.e)(t => Object(U.U)(t, {
 						postId: e
 					}));
 				return i.a.createElement(x.a, {
-					className: H.a.viewTournament,
+					className: Q.a.viewTournament,
 					to: `${null==n?void 0:n.url}predictions/`,
 					onClick: () => t(Object(E.f)(e))
-				}, R._("Go to Tournament", null, {
+				}, K._("Go to Tournament", null, {
 					hk: "1QaAgH"
 				}))
-			}, W = ({
+			}, G = ({
 				post: e
 			}) => {
 				const {
@@ -297,24 +287,24 @@
 				} = e.predictionTournament, d = function(e) {
 					return i.a.useMemo(() => {
 						if (!e || !e.length) return;
-						const t = e.filter(e => !e.isSpoiler && !e.isNSFW).sort(F.a);
+						const t = e.filter(e => !e.isSpoiler && !e.isNSFW).sort(M.a);
 						return {
 							prediction: t[0],
 							isLastPrediction: t.length <= 1
 						}
 					}, [])
 				}(n);
-				return (null == d ? void 0 : d.prediction) && o !== s.a.Closed ? i.a.createElement(l, null, i.a.createElement(U, {
+				return (null == d ? void 0 : d.prediction) && o !== s.a.Closed ? i.a.createElement(l, null, i.a.createElement(N, {
 					subredditId: e.belongsTo.id,
 					tournamentId: t,
 					post: e,
 					prediction: null == d ? void 0 : d.prediction,
 					isLastPrediction: null == d ? void 0 : d.isLastPrediction
-				})) : i.a.createElement(G, {
+				})) : i.a.createElement(H, {
 					postId: e.id
 				})
 			};
-			t.default = W
+			t.default = G
 		},
 		"./src/reddit/helpers/predictions/index.ts": function(e, t, n) {
 			"use strict";
@@ -355,4 +345,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.75c19c833f76b830cd08.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.84b2e748594327fd171e.js.map
