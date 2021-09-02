@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~ModListing.38dbe192ac7c731af1ac.js
-// Retrieved at 8/31/2021, 6:10:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~ModListing.79483452818690742e80.js
+// Retrieved at 9/2/2021, 10:20:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~ModListing"], {
 		"./src/reddit/actions/focusedVerticals/index.ts": function(e, t, s) {
@@ -1641,7 +1641,7 @@
 						listingViewed: t,
 						sendEvent: s
 					} = this.props;
-					if (!this.shouldSendScreenview()) return;
+					if (!this.shouldSendScreenview() || !t) return;
 					const n = A.c.end(e);
 					setTimeout(() => {
 						s(t(n, B.TimerType.InApp))
@@ -2577,4 +2577,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing.38dbe192ac7c731af1ac.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing.79483452818690742e80.js.map
