@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.56d4efb7fe3d7909360a.js
-// Retrieved at 9/2/2021, 1:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.b638d5b70a03363bcfff.js
+// Retrieved at 9/2/2021, 2:40:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~ModListing", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -7246,7 +7246,7 @@
 							child: {
 								id: t,
 								estHeight: _(e.layout),
-								trackOnEnteredViewport: () => e.sendEvent(Object(E.G)()),
+								trackOnEnteredViewport: () => e.sendEvent(Object(E.H)()),
 								render: ({
 									className: t
 								}) => r.a.createElement(v, {
@@ -12378,70 +12378,72 @@
 			"use strict";
 			n.d(t, "a", (function() {
 				return s
-			})), n.d(t, "G", (function() {
+			})), n.d(t, "H", (function() {
 				return l
 			})), n.d(t, "i", (function() {
 				return u
 			})), n.d(t, "j", (function() {
 				return m
-			})), n.d(t, "C", (function() {
-				return p
-			})), n.d(t, "z", (function() {
-				return b
 			})), n.d(t, "D", (function() {
-				return h
-			})), n.d(t, "B", (function() {
-				return f
+				return p
 			})), n.d(t, "A", (function() {
+				return b
+			})), n.d(t, "E", (function() {
+				return h
+			})), n.d(t, "C", (function() {
+				return f
+			})), n.d(t, "B", (function() {
 				return x
-			})), n.d(t, "t", (function() {
-				return g
 			})), n.d(t, "u", (function() {
+				return g
+			})), n.d(t, "v", (function() {
 				return y
-			})), n.d(t, "w", (function() {
-				return v
-			})), n.d(t, "q", (function() {
-				return E
-			})), n.d(t, "o", (function() {
-				return _
-			})), n.d(t, "p", (function() {
-				return C
-			})), n.d(t, "n", (function() {
-				return O
-			})), n.d(t, "y", (function() {
-				return j
-			})), n.d(t, "r", (function() {
-				return S
 			})), n.d(t, "x", (function() {
-				return w
-			})), n.d(t, "F", (function() {
-				return k
+				return v
+			})), n.d(t, "r", (function() {
+				return E
+			})), n.d(t, "p", (function() {
+				return _
+			})), n.d(t, "q", (function() {
+				return C
+			})), n.d(t, "o", (function() {
+				return O
+			})), n.d(t, "z", (function() {
+				return j
 			})), n.d(t, "s", (function() {
+				return S
+			})), n.d(t, "y", (function() {
+				return w
+			})), n.d(t, "G", (function() {
+				return k
+			})), n.d(t, "t", (function() {
 				return N
 			})), n.d(t, "c", (function() {
 				return I
-			})), n.d(t, "k", (function() {
+			})), n.d(t, "n", (function() {
 				return P
-			})), n.d(t, "b", (function() {
+			})), n.d(t, "k", (function() {
 				return T
-			})), n.d(t, "d", (function() {
+			})), n.d(t, "b", (function() {
 				return L
-			})), n.d(t, "e", (function() {
+			})), n.d(t, "d", (function() {
 				return B
-			})), n.d(t, "v", (function() {
+			})), n.d(t, "e", (function() {
 				return A
-			})), n.d(t, "E", (function() {
+			})), n.d(t, "w", (function() {
 				return D
-			})), n.d(t, "f", (function() {
+			})), n.d(t, "F", (function() {
 				return R
-			})), n.d(t, "l", (function() {
+			})), n.d(t, "f", (function() {
 				return M
-			})), n.d(t, "m", (function() {
+			})), n.d(t, "l", (function() {
 				return F
-			})), n.d(t, "g", (function() {
+			})), n.d(t, "m", (function() {
 				return U
-			})), n.d(t, "h", (function() {
+			})), n.d(t, "g", (function() {
 				return H
+			})), n.d(t, "h", (function() {
+				return W
 			}));
 			var s, r = n("./src/reddit/constants/chat.ts"),
 				o = n("./src/reddit/selectors/PublicAccessNetwork/streams.ts"),
@@ -12670,53 +12672,59 @@
 				P = e => t => ({
 					source: "stream_player",
 					action: "click",
+					noun: "unfollow",
+					...i(t, e)
+				}),
+				T = e => t => ({
+					source: "stream_player",
+					action: "click",
 					noun: "subscribe",
 					...i(t, e),
 					targetSubreddit: a.subreddit(t)
 				}),
-				T = (e, t) => n => ({
+				L = (e, t) => n => ({
 					source: "stream_player",
 					action: "click",
 					noun: "close",
 					playback: c(n, e, t),
 					...i(n, e)
 				}),
-				L = (e, t) => n => ({
+				B = (e, t) => n => ({
 					source: "stream_player",
 					action: "click",
 					noun: "pause",
 					playback: c(n, e, t),
 					...i(n, e)
 				}),
-				B = (e, t) => n => ({
+				A = (e, t) => n => ({
 					source: "stream_player",
 					action: "click",
 					noun: "play",
 					playback: c(n, e, t),
 					...i(n, e)
 				}),
-				A = (e, t) => n => ({
+				D = (e, t) => n => ({
 					source: "stream_player",
 					action: "mute",
 					noun: "volume",
 					playback: c(n, e, t),
 					...i(n, e)
 				}),
-				D = (e, t) => n => ({
+				R = (e, t) => n => ({
 					source: "stream_player",
 					action: "unmute",
 					noun: "volume",
 					playback: c(n, e, t),
 					...i(n, e)
 				}),
-				R = (e, t) => n => ({
+				M = (e, t) => n => ({
 					source: "stream_player",
 					action: "click",
 					noun: "replay_video",
 					playback: c(n, e, t),
 					...i(n, e)
 				}),
-				M = (e, t) => n => ({
+				F = (e, t) => n => ({
 					source: "stream_player",
 					action: "swipe",
 					noun: "next",
@@ -12724,7 +12732,7 @@
 					...i(n, e),
 					...d(n)
 				}),
-				F = (e, t) => n => ({
+				U = (e, t) => n => ({
 					source: "stream_player",
 					action: "swipe",
 					noun: "previous",
@@ -12732,14 +12740,14 @@
 					...i(n, e),
 					...d(n)
 				}),
-				U = (e, t) => n => ({
+				H = (e, t) => n => ({
 					source: "rpanstudio_banner",
 					action: "click",
 					noun: e,
 					...i(n, t),
 					...d(n)
 				}),
-				H = (e, t) => n => ({
+				W = (e, t) => n => ({
 					source: "rpanstudio_modal",
 					action: "click",
 					noun: e,
@@ -15576,4 +15584,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.56d4efb7fe3d7909360a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.b638d5b70a03363bcfff.js.map

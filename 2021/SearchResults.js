@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.dd14ad38ce1b7df7e623.js
-// Retrieved at 9/2/2021, 1:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.bdc93d3099711ab2027c.js
+// Retrieved at 9/2/2021, 2:40:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -5415,9 +5415,7 @@
 					const P = k.displayText,
 						w = S.publicDescription,
 						T = Object(d.b)(s.type, S),
-						L = Object(d.a)(s.type, k, S, I, e => {
-							if (!e) return Object(l.a)(s.type, g)
-						});
+						L = Object(d.a)(s.type, k, S, I, e => e ? "profile" === s.type ? Object(l.a)(g) : void 0 : Object(l.b)(s.type, g));
 					return n.a.createElement(p.a, {
 						"data-testid": "community-link",
 						className: Object(i.a)(O.a.container, t),
@@ -5523,7 +5521,7 @@
 						M = T.publicDescription,
 						A = Object(l.b)(o.type, T),
 						B = Object(l.a)(o.type, w, T, R, e => {
-							if (!e) return Object(m.a)(o.type, E)
+							if (!e) return Object(m.b)(o.type, E)
 						}, h.b.Tertiary);
 					return n.a.createElement(b.a, {
 						"data-testid": "community-link",
@@ -6221,20 +6219,31 @@
 		},
 		"./src/reddit/components/SearchResultsContent/helpers/subscribeCheck.ts": function(e, t, s) {
 			"use strict";
-			s.d(t, "a", (function() {
-				return o
+			s.d(t, "b", (function() {
+				return i
+			})), s.d(t, "a", (function() {
+				return c
 			}));
 			var r = s("./src/reddit/constants/tracking.ts"),
 				n = s("./src/reddit/helpers/correlationIdTracker.ts"),
 				a = s("./src/reddit/selectors/telemetry.ts");
-			const o = (e, t) => s => ({
-				source: "search",
-				action: r.c.CLICK,
-				noun: `result_subscribe_${e}`,
-				correlationId: Object(n.c)(n.a.SearchResults),
-				actionInfo: a.actionInfo(s),
-				search: a.search(s, t)
-			})
+			const o = e => t => ({
+					correlationId: Object(n.c)(n.a.SearchResults),
+					actionInfo: a.actionInfo(t),
+					search: a.search(t, e)
+				}),
+				i = (e, t) => s => ({
+					source: "search",
+					action: r.c.CLICK,
+					noun: `result_subscribe_${e}`,
+					...o(t)
+				}),
+				c = e => t => ({
+					source: "search",
+					action: r.c.CLICK,
+					noun: "result_unsubscribe_profile",
+					...o(e)
+				})
 		},
 		"./src/reddit/components/SearchResultsContent/helpers/viewCommunityTracker.ts": function(e, t, s) {
 			"use strict";
@@ -11302,4 +11311,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.dd14ad38ce1b7df7e623.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.bdc93d3099711ab2027c.js.map

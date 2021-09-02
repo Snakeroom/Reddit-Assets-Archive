@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput.37ad1b087da975cb1f27.js
-// Retrieved at 8/31/2021, 6:10:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput.e163620f4621f91fd0ec.js
+// Retrieved at 9/2/2021, 2:40:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput"], {
 		"./node_modules/draft-js/dist/Draft.css": function(e, t, s) {},
@@ -759,7 +759,7 @@
 							};
 							this.cleanInputForm(), this.props.dispatchSubmit(e, I.h.RICH_TEXT, this.props.replyComment)
 						}
-						this.props.isLivestreaming && this.props.sendEvent(Object(E.y)(this.props.postId))
+						this.props.isLivestreaming && this.props.sendEvent(Object(E.z)(this.props.postId))
 					}, this.canSubmit = () => Boolean(!this.props.pending && this.state.hasChanged), this.state = {
 						hasChanged: !1,
 						showError: e.hasError,
@@ -974,70 +974,72 @@
 			"use strict";
 			s.d(t, "a", (function() {
 				return r
-			})), s.d(t, "G", (function() {
+			})), s.d(t, "H", (function() {
 				return d
 			})), s.d(t, "i", (function() {
 				return l
 			})), s.d(t, "j", (function() {
 				return m
-			})), s.d(t, "C", (function() {
-				return h
-			})), s.d(t, "z", (function() {
-				return p
 			})), s.d(t, "D", (function() {
-				return _
-			})), s.d(t, "B", (function() {
-				return b
+				return h
 			})), s.d(t, "A", (function() {
+				return p
+			})), s.d(t, "E", (function() {
+				return _
+			})), s.d(t, "C", (function() {
+				return b
+			})), s.d(t, "B", (function() {
 				return f
-			})), s.d(t, "t", (function() {
-				return g
 			})), s.d(t, "u", (function() {
+				return g
+			})), s.d(t, "v", (function() {
 				return y
-			})), s.d(t, "w", (function() {
-				return v
-			})), s.d(t, "q", (function() {
-				return x
-			})), s.d(t, "o", (function() {
-				return k
-			})), s.d(t, "p", (function() {
-				return j
-			})), s.d(t, "n", (function() {
-				return C
-			})), s.d(t, "y", (function() {
-				return w
-			})), s.d(t, "r", (function() {
-				return F
 			})), s.d(t, "x", (function() {
-				return E
-			})), s.d(t, "F", (function() {
-				return D
+				return v
+			})), s.d(t, "r", (function() {
+				return x
+			})), s.d(t, "p", (function() {
+				return k
+			})), s.d(t, "q", (function() {
+				return j
+			})), s.d(t, "o", (function() {
+				return C
+			})), s.d(t, "z", (function() {
+				return w
 			})), s.d(t, "s", (function() {
+				return F
+			})), s.d(t, "y", (function() {
+				return E
+			})), s.d(t, "G", (function() {
+				return D
+			})), s.d(t, "t", (function() {
 				return A
 			})), s.d(t, "c", (function() {
 				return I
-			})), s.d(t, "k", (function() {
+			})), s.d(t, "n", (function() {
 				return O
-			})), s.d(t, "b", (function() {
+			})), s.d(t, "k", (function() {
 				return S
-			})), s.d(t, "d", (function() {
+			})), s.d(t, "b", (function() {
 				return z
-			})), s.d(t, "e", (function() {
+			})), s.d(t, "d", (function() {
 				return P
-			})), s.d(t, "v", (function() {
+			})), s.d(t, "e", (function() {
 				return L
-			})), s.d(t, "E", (function() {
+			})), s.d(t, "w", (function() {
 				return N
-			})), s.d(t, "f", (function() {
+			})), s.d(t, "F", (function() {
 				return B
-			})), s.d(t, "l", (function() {
+			})), s.d(t, "f", (function() {
 				return R
-			})), s.d(t, "m", (function() {
+			})), s.d(t, "l", (function() {
 				return T
-			})), s.d(t, "g", (function() {
+			})), s.d(t, "m", (function() {
 				return M
-			})), s.d(t, "h", (function() {
+			})), s.d(t, "g", (function() {
 				return Z
+			})), s.d(t, "h", (function() {
+				return U
 			}));
 			var r, n = s("./src/reddit/constants/chat.ts"),
 				a = s("./src/reddit/selectors/PublicAccessNetwork/streams.ts"),
@@ -1266,53 +1268,59 @@
 				O = e => t => ({
 					source: "stream_player",
 					action: "click",
+					noun: "unfollow",
+					...i(t, e)
+				}),
+				S = e => t => ({
+					source: "stream_player",
+					action: "click",
 					noun: "subscribe",
 					...i(t, e),
 					targetSubreddit: o.subreddit(t)
 				}),
-				S = (e, t) => s => ({
+				z = (e, t) => s => ({
 					source: "stream_player",
 					action: "click",
 					noun: "close",
 					playback: c(s, e, t),
 					...i(s, e)
 				}),
-				z = (e, t) => s => ({
+				P = (e, t) => s => ({
 					source: "stream_player",
 					action: "click",
 					noun: "pause",
 					playback: c(s, e, t),
 					...i(s, e)
 				}),
-				P = (e, t) => s => ({
+				L = (e, t) => s => ({
 					source: "stream_player",
 					action: "click",
 					noun: "play",
 					playback: c(s, e, t),
 					...i(s, e)
 				}),
-				L = (e, t) => s => ({
+				N = (e, t) => s => ({
 					source: "stream_player",
 					action: "mute",
 					noun: "volume",
 					playback: c(s, e, t),
 					...i(s, e)
 				}),
-				N = (e, t) => s => ({
+				B = (e, t) => s => ({
 					source: "stream_player",
 					action: "unmute",
 					noun: "volume",
 					playback: c(s, e, t),
 					...i(s, e)
 				}),
-				B = (e, t) => s => ({
+				R = (e, t) => s => ({
 					source: "stream_player",
 					action: "click",
 					noun: "replay_video",
 					playback: c(s, e, t),
 					...i(s, e)
 				}),
-				R = (e, t) => s => ({
+				T = (e, t) => s => ({
 					source: "stream_player",
 					action: "swipe",
 					noun: "next",
@@ -1320,7 +1328,7 @@
 					...i(s, e),
 					...u(s)
 				}),
-				T = (e, t) => s => ({
+				M = (e, t) => s => ({
 					source: "stream_player",
 					action: "swipe",
 					noun: "previous",
@@ -1328,14 +1336,14 @@
 					...i(s, e),
 					...u(s)
 				}),
-				M = (e, t) => s => ({
+				Z = (e, t) => s => ({
 					source: "rpanstudio_banner",
 					action: "click",
 					noun: e,
 					...i(s, t),
 					...u(s)
 				}),
-				Z = (e, t) => s => ({
+				U = (e, t) => s => ({
 					source: "rpanstudio_modal",
 					action: "click",
 					noun: e,
@@ -1942,4 +1950,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.37ad1b087da975cb1f27.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.e163620f4621f91fd0ec.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.a47c4a2312c927695cb5.js
-// Retrieved at 9/2/2021, 1:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.1b3a5836466d87ed6c33.js
+// Retrieved at 9/2/2021, 2:40:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -1519,7 +1519,7 @@
 							streamById: r
 						} = this.props, s = n && n.post.id === e.id ? n : r(e.id);
 						if (!s) return;
-						const i = !t.sessionDurationMs ? C.D : C.z,
+						const i = !t.sessionDurationMs ? C.E : C.A,
 							o = {
 								chatState: g.a.None,
 								playerType: C.a.DU
@@ -4095,4 +4095,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.a47c4a2312c927695cb5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.1b3a5836466d87ed6c33.js.map

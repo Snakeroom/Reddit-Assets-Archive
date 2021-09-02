@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.e1b28b7ff994e8bb39c6.js
-// Retrieved at 9/2/2021, 1:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.4727875db9435028411f.js
+// Retrieved at 9/2/2021, 2:40:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -3897,70 +3897,72 @@
 			"use strict";
 			s.d(t, "a", (function() {
 				return o
-			})), s.d(t, "G", (function() {
+			})), s.d(t, "H", (function() {
 				return l
 			})), s.d(t, "i", (function() {
 				return m
 			})), s.d(t, "j", (function() {
 				return u
-			})), s.d(t, "C", (function() {
-				return p
-			})), s.d(t, "z", (function() {
-				return h
 			})), s.d(t, "D", (function() {
-				return b
-			})), s.d(t, "B", (function() {
-				return v
+				return p
 			})), s.d(t, "A", (function() {
+				return h
+			})), s.d(t, "E", (function() {
+				return b
+			})), s.d(t, "C", (function() {
+				return v
+			})), s.d(t, "B", (function() {
 				return g
-			})), s.d(t, "t", (function() {
-				return f
 			})), s.d(t, "u", (function() {
+				return f
+			})), s.d(t, "v", (function() {
 				return S
-			})), s.d(t, "w", (function() {
-				return w
-			})), s.d(t, "q", (function() {
-				return O
-			})), s.d(t, "o", (function() {
-				return _
-			})), s.d(t, "p", (function() {
-				return E
-			})), s.d(t, "n", (function() {
-				return C
-			})), s.d(t, "y", (function() {
-				return y
-			})), s.d(t, "r", (function() {
-				return x
 			})), s.d(t, "x", (function() {
-				return k
-			})), s.d(t, "F", (function() {
-				return j
+				return w
+			})), s.d(t, "r", (function() {
+				return O
+			})), s.d(t, "p", (function() {
+				return _
+			})), s.d(t, "q", (function() {
+				return E
+			})), s.d(t, "o", (function() {
+				return C
+			})), s.d(t, "z", (function() {
+				return y
 			})), s.d(t, "s", (function() {
+				return x
+			})), s.d(t, "y", (function() {
+				return k
+			})), s.d(t, "G", (function() {
+				return j
+			})), s.d(t, "t", (function() {
 				return R
 			})), s.d(t, "c", (function() {
 				return I
-			})), s.d(t, "k", (function() {
+			})), s.d(t, "n", (function() {
 				return N
-			})), s.d(t, "b", (function() {
+			})), s.d(t, "k", (function() {
 				return L
-			})), s.d(t, "d", (function() {
+			})), s.d(t, "b", (function() {
 				return M
-			})), s.d(t, "e", (function() {
+			})), s.d(t, "d", (function() {
 				return P
-			})), s.d(t, "v", (function() {
+			})), s.d(t, "e", (function() {
 				return T
-			})), s.d(t, "E", (function() {
+			})), s.d(t, "w", (function() {
 				return A
-			})), s.d(t, "f", (function() {
+			})), s.d(t, "F", (function() {
 				return D
-			})), s.d(t, "l", (function() {
+			})), s.d(t, "f", (function() {
 				return F
-			})), s.d(t, "m", (function() {
+			})), s.d(t, "l", (function() {
 				return V
-			})), s.d(t, "g", (function() {
+			})), s.d(t, "m", (function() {
 				return B
-			})), s.d(t, "h", (function() {
+			})), s.d(t, "g", (function() {
 				return U
+			})), s.d(t, "h", (function() {
+				return H
 			}));
 			var o, n = s("./src/reddit/constants/chat.ts"),
 				r = s("./src/reddit/selectors/PublicAccessNetwork/streams.ts"),
@@ -4189,53 +4191,59 @@
 				N = e => t => ({
 					source: "stream_player",
 					action: "click",
+					noun: "unfollow",
+					...i(t, e)
+				}),
+				L = e => t => ({
+					source: "stream_player",
+					action: "click",
 					noun: "subscribe",
 					...i(t, e),
 					targetSubreddit: a.subreddit(t)
 				}),
-				L = (e, t) => s => ({
+				M = (e, t) => s => ({
 					source: "stream_player",
 					action: "click",
 					noun: "close",
 					playback: d(s, e, t),
 					...i(s, e)
 				}),
-				M = (e, t) => s => ({
+				P = (e, t) => s => ({
 					source: "stream_player",
 					action: "click",
 					noun: "pause",
 					playback: d(s, e, t),
 					...i(s, e)
 				}),
-				P = (e, t) => s => ({
+				T = (e, t) => s => ({
 					source: "stream_player",
 					action: "click",
 					noun: "play",
 					playback: d(s, e, t),
 					...i(s, e)
 				}),
-				T = (e, t) => s => ({
+				A = (e, t) => s => ({
 					source: "stream_player",
 					action: "mute",
 					noun: "volume",
 					playback: d(s, e, t),
 					...i(s, e)
 				}),
-				A = (e, t) => s => ({
+				D = (e, t) => s => ({
 					source: "stream_player",
 					action: "unmute",
 					noun: "volume",
 					playback: d(s, e, t),
 					...i(s, e)
 				}),
-				D = (e, t) => s => ({
+				F = (e, t) => s => ({
 					source: "stream_player",
 					action: "click",
 					noun: "replay_video",
 					playback: d(s, e, t),
 					...i(s, e)
 				}),
-				F = (e, t) => s => ({
+				V = (e, t) => s => ({
 					source: "stream_player",
 					action: "swipe",
 					noun: "next",
@@ -4243,7 +4251,7 @@
 					...i(s, e),
 					...c(s)
 				}),
-				V = (e, t) => s => ({
+				B = (e, t) => s => ({
 					source: "stream_player",
 					action: "swipe",
 					noun: "previous",
@@ -4251,14 +4259,14 @@
 					...i(s, e),
 					...c(s)
 				}),
-				B = (e, t) => s => ({
+				U = (e, t) => s => ({
 					source: "rpanstudio_banner",
 					action: "click",
 					noun: e,
 					...i(s, t),
 					...c(s)
 				}),
-				U = (e, t) => s => ({
+				H = (e, t) => s => ({
 					source: "rpanstudio_modal",
 					action: "click",
 					noun: e,
@@ -5603,7 +5611,7 @@
 					super(e), this.onSubscribeToSubreddit = () => {
 						this.props.sendEvent(Object(He.k)(this.props.currentStream)), this.props.onSubscribeSubreddit()
 					}, this.onProfileSubscriptionChange = e => {
-						e && this.props.sendEvent(Object(He.c)(this.props.currentStream))
+						e ? this.props.sendEvent(Object(He.c)(this.props.currentStream)) : this.props.sendEvent(Object(He.n)(this.props.currentStream))
 					}, this.onCrosspost = e => {
 						this.props.currentStreamId && window.open(`${St.b}?source_id=${this.props.currentStreamId}`, "_blank"), this.props.onCrosspost(e)
 					}, this.onShareLink = e => {
@@ -6778,7 +6786,7 @@
 						this.hlsVideoApi && this.hlsVideoApi.setCurrentTime(s), this.setState({
 							hasLiveIntent: t,
 							videoCurrentTime: s
-						}), this.props.sendEvent(Object(He.x)(this.props.currentStream, {
+						}), this.props.sendEvent(Object(He.y)(this.props.currentStream, {
 							...this.playbackStats,
 							scrubbingStartMs: Object(E.a)(this.state.videoCurrentTime),
 							scrubbingEndMs: Object(E.a)(s)
@@ -6820,20 +6828,20 @@
 					}, this.onCopyLink = e => {
 						if (this.props.currentStream) {
 							const t = e.source === Xs.EndScreen ? "copy_link_video" : "copy_link";
-							this.props.sendEvent(Object(He.t)(t, this.props.currentStream, this.playbackStats, null == e ? void 0 : e.referralId))
+							this.props.sendEvent(Object(He.u)(t, this.props.currentStream, this.playbackStats, null == e ? void 0 : e.referralId))
 						}
 						this.cancelSwitchingOnStreamEnded()
 					}, this.onShare = () => {
-						this.props.currentStream && this.props.sendEvent(Object(He.A)("share", this.props.currentStream, this.playbackStats))
+						this.props.currentStream && this.props.sendEvent(Object(He.B)("share", this.props.currentStream, this.playbackStats))
 					}, this.onShareLink = e => {
 						if (this.props.currentStream) {
 							const t = e.source === Xs.EndScreen ? "share_video" : "share_copy";
-							this.props.sendEvent(Object(He.A)(t, this.props.currentStream, this.playbackStats))
+							this.props.sendEvent(Object(He.B)(t, this.props.currentStream, this.playbackStats))
 						}
 					}, this.onCrosspost = e => {
 						if (this.props.currentStream) {
 							const t = e.source === Xs.EndScreen ? "crosspost_video" : "share_crosspost";
-							this.props.sendEvent(Object(He.u)(t, this.props.currentStream, this.playbackStats))
+							this.props.sendEvent(Object(He.v)(t, this.props.currentStream, this.playbackStats))
 						}
 					}, this.onToggleMenu = () => {
 						this.cancelSwitchingOnStreamEnded()
@@ -6843,10 +6851,10 @@
 						}));
 						const t = this.hlsVideoApi;
 						if (!t) return;
-						const s = e ? He.v : He.E;
+						const s = e ? He.w : He.F;
 						e || t.setVolume(this.props.volume), this.props.sendEvent(s(this.props.currentStream, this.playbackStats))
 					}, this.goToSubreddit = e => {
-						this.props.sendEvent(Object(He.r)(e, this.props.currentStream)), this.props.onNavigation(e.path)
+						this.props.sendEvent(Object(He.s)(e, this.props.currentStream)), this.props.onNavigation(e.path)
 					}, this.isCurrentStreamWatchable = () => this.props.playbackState === Qe.a.LIVE || this.props.playbackState === Qe.a.VOD, this.handleHeartbeat = ({
 						meta: e,
 						stats: t
@@ -6856,7 +6864,7 @@
 							streamById: o
 						} = this.props, n = s && s.post.id === e.id ? s : o(e.id);
 						if (!n) return;
-						const r = !t.sessionDurationMs ? He.D : He.z,
+						const r = !t.sessionDurationMs ? He.E : He.A,
 							a = {
 								...t,
 								playerType: He.a.Theater
@@ -6972,7 +6980,7 @@
 					e && this.isCurrentStreamWatchable() && t(e.post.id)
 				}
 				onRpanStudioClick() {
-					this.props.sendEvent(Object(He.w)(this.props.currentStream)), this.props.toggleOBSDownloadModal()
+					this.props.sendEvent(Object(He.x)(this.props.currentStream)), this.props.toggleOBSDownloadModal()
 				}
 				onOBSModalDismissClick() {
 					this.props.sendEvent(Object(He.h)("dismiss", this.props.currentStream)), this.props.toggleOBSDownloadModal()
@@ -6994,16 +7002,16 @@
 					}), this.props.sendEvent(Object(He.g)("learn_more", this.props.currentStream)), this.props.toggleOBSDownloadModal()
 				}
 				onChatClick() {
-					this.props.currentStream && this.props.sendEvent(Object(He.n)(this.props.currentStream, this.playbackStats))
+					this.props.currentStream && this.props.sendEvent(Object(He.o)(this.props.currentStream, this.playbackStats))
 				}
 				handleFocusMessageInput() {
 					W.U() || this.props.toggleIntroChatModal()
 				}
 				onUpvote() {
-					this.props.currentStream && this.props.sendEvent(Object(He.q)(this.props.currentStream, this.playbackStats))
+					this.props.currentStream && this.props.sendEvent(Object(He.r)(this.props.currentStream, this.playbackStats))
 				}
 				onDownvote() {
-					this.props.currentStream && this.props.sendEvent(Object(He.o)(this.props.currentStream, this.playbackStats))
+					this.props.currentStream && this.props.sendEvent(Object(He.p)(this.props.currentStream, this.playbackStats))
 				}
 				onEnded() {
 					const {
@@ -7019,14 +7027,14 @@
 						...this.state,
 						isLoading: !!e
 					});
-					e && o(Object(He.B)(e, this.playbackStats)), s !== Qe.a.VOD || this.state.isVodStreamJustFinished || this.setState({
+					e && o(Object(He.C)(e, this.playbackStats)), s !== Qe.a.VOD || this.state.isVodStreamJustFinished || this.setState({
 						isVodStreamJustFinished: !0
 					}), this.isCurrentStreamWatchable() || this.state.isUnavailableVideoJustFinished || this.setState({
 						isUnavailableVideoJustFinished: !0
 					})
 				}
 				onPlayerError() {
-					this.props.sendEvent(Object(He.C)(this.props.currentStream, this.playbackStats)), this.setState({
+					this.props.sendEvent(Object(He.D)(this.props.currentStream, this.playbackStats)), this.setState({
 						...this.state,
 						isError: !0
 					})
@@ -7040,7 +7048,7 @@
 					this.props.sendEvent(Object(He.b)(this.props.currentStream, this.playbackStats)), this.props.isOverlay ? this.props.closeLocation() : window.location.replace(window.location.origin)
 				}
 				onReport() {
-					this.props.currentStream && (this.props.onReportModalRequested(this.props.currentStream.post.id, this.props.isOverlay), this.props.sendEvent(Object(He.p)(this.props.currentStream)))
+					this.props.currentStream && (this.props.onReportModalRequested(this.props.currentStream.post.id, this.props.isOverlay), this.props.sendEvent(Object(He.q)(this.props.currentStream)))
 				}
 				hideStreamEndedPrompt() {
 					this.state.showStreamEndedPrompt && this.setState({
@@ -7118,10 +7126,10 @@
 						hasLiveIntent: o === Qe.a.LIVE,
 						videoCurrentTime: 0,
 						videoTotalTime: 0
-					}), n(e.post.id), this.unsubscribeStats && this.unsubscribeStats(), this.unsubscribeHeartbeat && this.unsubscribeHeartbeat(), this.startJobIfLiveOrPaused(), s(e.post.id), e.post.authorInfo && e.post.authorInfo.name && t(e.post.authorInfo.name), this.syncLocationWithCurrentStreamId(), this.props.sendEvent(Object(He.F)(e)), this.setConsumePostTimeout(), this.showOverlayAfterStreamSwitching())
+					}), n(e.post.id), this.unsubscribeStats && this.unsubscribeStats(), this.unsubscribeHeartbeat && this.unsubscribeHeartbeat(), this.startJobIfLiveOrPaused(), s(e.post.id), e.post.authorInfo && e.post.authorInfo.name && t(e.post.authorInfo.name), this.syncLocationWithCurrentStreamId(), this.props.sendEvent(Object(He.G)(e)), this.setConsumePostTimeout(), this.showOverlayAfterStreamSwitching())
 				}
 				setConsumePostTimeout() {
-					window.clearTimeout(this.consumePostTimeout), this.consumePostTimeout = window.setTimeout(() => this.props.sendEvent(Object(He.s)(this.props.currentStream)), h.a.telemetry.postConsumedThreshold)
+					window.clearTimeout(this.consumePostTimeout), this.consumePostTimeout = window.setTimeout(() => this.props.sendEvent(Object(He.t)(this.props.currentStream)), h.a.telemetry.postConsumedThreshold)
 				}
 				showOverlayAfterStreamSwitching() {
 					window.clearTimeout(this.overlayVisibilityTimeout), this.overlayVisibilityTimeout = window.setTimeout(() => this.setState({
@@ -7581,4 +7589,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.e1b28b7ff994e8bb39c6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.4727875db9435028411f.js.map
