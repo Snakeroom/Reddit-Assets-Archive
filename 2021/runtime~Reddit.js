@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.e18aa25af29903faba9d.js
-// Retrieved at 9/2/2021, 3:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.167949017b9d21ac87c2.js
+// Retrieved at 9/2/2021, 4:00:07 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var n, a, i = o[0], s = o[1], c = o[2], l = 0, P = []; l < i.length; l++) a = i[l], Object.prototype.hasOwnProperty.call(d, a) && d[a] && P.push(d[a][0]), d[a] = 0;
@@ -1327,7 +1327,7 @@
 						"translations/es_MX-json": "a9ca6388a5469ad94886",
 						"translations/fr_FR-json": "8fecc94aa6081224571a",
 						"translations/it_IT-json": "4bd0a89a62b523844093",
-						"translations/pseudo_ext-json": "3b9b9946059daf8905f1",
+						"translations/pseudo_ext-json": "679ddcfb5ee29fe170d1",
 						"translations/pseudo_long-json": "3999d15f7d24427d2041",
 						"translations/pseudo_short-json": "c3dcb354107f39d254b5",
 						"translations/pt_BR-json": "f41534b1b102e9ef59cb",
@@ -1384,9 +1384,9 @@
 						gildActions: "4203db1b03673e390257",
 						ContributorRequestButton: "a3b92b38594608a83c56",
 						CryptoVault: "a5fc9d56deb9e184c824",
-						ReportFlow: "df70c14dd6086b8f663b",
+						ReportFlow: "a1762e5a46c2894c2dcc",
 						MuxEmbed: "ff75e8d29e1058ba0d77",
-						ReportFlowNew: "550dc8d62efc31904a65",
+						ReportFlowNew: "7437af5f6467bf818013",
 						RichTextJsonEmoteTooltip: "6d2a53b3555d26c3537f",
 						SubredditMentionWithIcon: "b054a9af05db2ec7bfee",
 						VideoShareModal: "8f6678192e28bff932aa",
@@ -1577,4 +1577,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.e18aa25af29903faba9d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.167949017b9d21ac87c2.js.map
