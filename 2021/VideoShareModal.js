@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/VideoShareModal.d775eb5c239357be5da5.js
-// Retrieved at 9/2/2021, 1:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/VideoShareModal.8f6678192e28bff932aa.js
+// Retrieved at 9/2/2021, 3:40:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["VideoShareModal"], {
 		"./src/reddit/actions/publicAccessNetwork/votes.ts": function(e, t, s) {
@@ -1684,7 +1684,7 @@
 				})))), Object(a.a)(O, e => e.publicAccessNetwork.preloads.streamPreviews, (e, t) => e && t[e])),
 				V = Object(a.a)((e, {
 					streamIdFromPath: t
-				}) => t ? N(e, t) : void 0, e => !e || e.chat_disabled);
+				}) => t ? N(e, t) : void 0, e => !e || e.chat_disabled || e.post.isArchived);
 
 			function D(e, t) {
 				const s = {
@@ -1736,4 +1736,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/VideoShareModal.d775eb5c239357be5da5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/VideoShareModal.8f6678192e28bff932aa.js.map
