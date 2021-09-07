@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.42e175482d557bb3037b.js
-// Retrieved at 9/7/2021, 1:20:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.82ac3ff96986b8bccb0a.js
+// Retrieved at 9/7/2021, 2:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~ModListing", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -3425,7 +3425,7 @@
 				const p = Object(o.e)(m.X),
 					h = Object(o.e)(m.k),
 					f = Object(o.e)(m.C),
-					x = Object(o.e)(e => Object(u.b)(e, {
+					x = Object(o.e)(e => Object(u.e)(e, {
 						subredditId: n
 					}));
 				return (null === (s = null == x ? void 0 : x.latestParticipants) || void 0 === s ? void 0 : s.length) ? r.a.createElement("div", {
@@ -3536,17 +3536,15 @@
 					hk: "Nsabe"
 				})), r.a.createElement("div", {
 					className: f.a.status
-				}, y !== m.a.Closed ? v > 0 && r.a.createElement("div", {
+				}, v > 0 && r.a.createElement("div", {
 					className: f.a.facepileRow
 				}, r.a.createElement(c.a, {
 					subredditId: e
 				}), r.a.createElement("div", {
 					className: f.a.numberOfPlayers
-				}, x._("{totalPlayers} playing now", [x._param("totalPlayers", Object(i.b)(v))], {
-					hk: "2ZTOLO"
-				}))) : x._("Tournament ended", null, {
-					hk: "2gUDWl"
-				})))
+				}, x._("{totalPlayers} {player participation}", [x._param("totalPlayers", Object(i.b)(v)), x._param("player participation", y !== m.a.Closed ? "playing now" : "predicted")], {
+					hk: "1nTMO"
+				})))))
 			}
 			n("./src/reddit/components/Econ/PredictionLeaderboard/List/index.tsx"), n("./src/reddit/components/Econ/PredictionLeaderboard/Modal/index.tsx");
 			var y = n("./src/reddit/components/Econ/PredictionLeaderboard/Sidebar/index.tsx");
@@ -15469,4 +15467,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.42e175482d557bb3037b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.82ac3ff96986b8bccb0a.js.map
