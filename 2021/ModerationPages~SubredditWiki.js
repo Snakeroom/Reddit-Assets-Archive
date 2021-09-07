@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.62eea08c1c9b82ff8f2f.js
-// Retrieved at 9/2/2021, 1:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.52e8a3a53d6e8bcdab17.js
+// Retrieved at 9/7/2021, 10:40:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, r) {
@@ -102,8 +102,8 @@
 				w = r("./src/redditGQL/operations/WikiComparisonDiff.json");
 			var _ = r("./src/reddit/helpers/wiki/makeComparisonDiffKey.ts"),
 				y = r("./src/reddit/selectors/subredditWiki.ts");
-			const O = Object(d.a)("WIKI_DIFF_PENDING"),
-				I = Object(d.a)("WIKI_DIFF_LOADED"),
+			const I = Object(d.a)("WIKI_DIFF_PENDING"),
+				O = Object(d.a)("WIKI_DIFF_LOADED"),
 				E = Object(d.a)("WIKI_DIFF_FAILED"),
 				j = e => async (t, r, n) => {
 					const s = r(),
@@ -115,7 +115,7 @@
 					const d = {
 						key: a
 					};
-					t(O(d));
+					t(I(d));
 					const c = await ((e, t) => Object(g.a)(e, {
 						...w,
 						variables: {
@@ -139,7 +139,7 @@
 					return t(l ? E({
 						...d,
 						error: l
-					}) : I({
+					}) : O({
 						...d,
 						htmlDiff: u
 					})), !l
@@ -153,8 +153,8 @@
 				R = r("./src/reddit/helpers/wiki/makeWikiPageKey.ts"),
 				U = r("./src/reddit/models/Toast/index.ts"),
 				B = r("./src/reddit/reducers/sidebarPromotedPosts/models/index.ts"),
-				D = r("./src/reddit/routes/subredditWiki/normalizeWikiUrl.ts"),
-				A = r("./src/reddit/selectors/subreddit.ts"),
+				A = r("./src/reddit/routes/subredditWiki/normalizeWikiUrl.ts"),
+				D = r("./src/reddit/selectors/subreddit.ts"),
 				M = r("./src/lib/initializeClient/installReducer.ts"),
 				W = r("./node_modules/redux/es/redux.js");
 			const F = {};
@@ -622,8 +622,8 @@
 					models: ke,
 					userOrder: _e
 				});
-			const Oe = {};
-			var Ie = (e = Oe, t) => {
+			const Ie = {};
+			var Oe = (e = Ie, t) => {
 					switch (t.type) {
 						case ce.g: {
 							const {
@@ -641,7 +641,7 @@
 				},
 				Ee = Object(W.c)({
 					listing: ye,
-					search: Ie
+					search: Oe
 				}),
 				je = r("./src/reddit/actions/wiki/wikiContributors/constants.ts");
 			const Ce = {};
@@ -752,8 +752,8 @@
 						return e
 				}
 			};
-			const De = {};
-			var Ae = (e = De, t) => {
+			const Ae = {};
+			var De = (e = Ae, t) => {
 					switch (t.type) {
 						case je.c:
 						case je.a: {
@@ -794,7 +794,7 @@
 					afterToken: Ne,
 					api: Re,
 					models: Be,
-					userOrder: Ae
+					userOrder: De
 				});
 			const We = {};
 			var Fe = (e = We, t) => {
@@ -882,7 +882,7 @@
 						url: s
 					} = e, {
 						wikiPageName: a
-					} = n, o = Object(D.a)(s, n);
+					} = n, o = Object(A.a)(s, n);
 					let d = !1;
 					return S.l.includes(a || "") ? (await (async (e, t) => {
 						const r = `${l.a.oldRedditUrl}${Object(m.b)(e)}`;
@@ -894,13 +894,13 @@
 						wikiPageName: l,
 						wikiSubRoute: u
 					} = e, m = t[P.B], b = t[P.C], f = m ? Object(x.a)(m) : void 0, g = b ? Object(x.a)(b) : void 0, w = l === S.j, _ = u === S.m.Revisions;
-					let O = !1,
-						I = !1;
+					let I = !1,
+						O = !1;
 					if (r) {
 						const {
 							pageName: t
 						} = e;
-						O = t === o.bc.WikiContributors, I = t === o.bc.WikiBanned
+						I = t === o.bc.WikiContributors, O = t === o.bc.WikiBanned
 					}
 					const E = a(),
 						T = (w || r) && !Qe(E, d),
@@ -937,7 +937,7 @@
 						isRecent: !l,
 						wikiPageName: l,
 						subredditName: d
-					}))), O && R.push(s(Object(k.e)(d))), I && R.push(s(Object(v.e)(d))), (await Promise.all(R)).every(Boolean) || s(Object(h.f)({
+					}))), I && R.push(s(Object(k.e)(d))), O && R.push(s(Object(v.e)(d))), (await Promise.all(R)).every(Boolean) || s(Object(h.f)({
 						kind: U.b.Error,
 						text: n.fbt._("Something went wrong", null, {
 							hk: "3UWos1"
@@ -956,7 +956,7 @@
 					t(u.l({
 						title: n.wikiPageName ? `${n.wikiPageName} - ${a}` : `wiki - ${a}`
 					})), await t(Ye(n, s));
-					const i = Object(A.w)(r(), {
+					const i = Object(D.w)(r(), {
 							subredditName: a
 						}),
 						o = r();
@@ -1006,8 +1006,8 @@
 				w = r("./src/reddit/models/Toast/index.ts"),
 				_ = r("./src/reddit/selectors/activeModalId.ts"),
 				y = r("./src/reddit/selectors/bannedUser.ts"),
-				O = r("./src/reddit/selectors/subreddit.ts"),
-				I = r("./src/reddit/selectors/user.ts"),
+				I = r("./src/reddit/selectors/subreddit.ts"),
+				O = r("./src/reddit/selectors/user.ts"),
 				E = r("./src/reddit/actions/subredditModeration/constants.ts"),
 				j = r("./src/lib/initializeClient/installReducer.ts"),
 				C = r("./node_modules/redux/es/redux.js");
@@ -1080,8 +1080,8 @@
 						return e
 				}
 			};
-			const D = {};
-			var A = (e = D, t) => {
+			const A = {};
+			var D = (e = A, t) => {
 					switch (t.type) {
 						case E.n: {
 							const {
@@ -1206,7 +1206,7 @@
 					api: T,
 					fetchedTokens: R,
 					inContext: B,
-					loadMore: A,
+					loadMore: D,
 					models: F,
 					search: z,
 					userOrder: Z
@@ -1330,16 +1330,16 @@
 				}, de = (e, t) => async (r, n) => {
 					const s = n();
 					await Promise.all([(async () => {
-						if (!Object(_.b)(u.a.BAN_USER)(s) && !Object(O.N)(s, {
+						if (!Object(_.b)(u.a.BAN_USER)(s) && !Object(I.N)(s, {
 								subredditId: e
 							})) {
-							const t = Object(O.Q)(s, {
+							const t = Object(I.Q)(s, {
 								subredditId: e
 							});
 							await r(Object(c.o)(t.name))
 						}
 					})(), (async () => {
-						const n = Object(I.ob)(s, {
+						const n = Object(O.ob)(s, {
 							userName: t
 						});
 						if (!n) return;
@@ -1386,7 +1386,7 @@
 			})), r.d(t, "a", (function() {
 				return y
 			})), r.d(t, "c", (function() {
-				return I
+				return O
 			})), r.d(t, "d", (function() {
 				return j
 			}));
@@ -1535,7 +1535,7 @@
 						}))
 					}
 					return u.ok
-				}, O = Object(a.a)(f.f), I = (e, t) => async (r, a, d) => {
+				}, I = Object(a.a)(f.f), O = (e, t) => async (r, a, d) => {
 					const u = await ((e, t, r) => Object(o.a)(Object(c.a)(e, [l.a]), {
 						endpoint: `${e.apiUrl}/r/${t}/api/unfriend`,
 						method: s.ib.POST,
@@ -1550,7 +1550,7 @@
 						text: n.fbt._("User has been successfully removed", null, {
 							hk: "381leB"
 						})
-					})), r(O({
+					})), r(I({
 						subredditName: e.toLowerCase(),
 						userId: t
 					}))) : r(Object(i.f)({
@@ -1561,7 +1561,7 @@
 						buttonText: n.fbt._("Retry", null, {
 							hk: "1QXiG6"
 						}),
-						buttonAction: I(e, t)
+						buttonAction: O(e, t)
 					})), u.ok
 				}, E = Object(a.a)(f.g), j = (e, t) => async (r, s, a) => {
 					const o = {
@@ -1622,7 +1622,7 @@
 			})), r.d(t, "a", (function() {
 				return y
 			})), r.d(t, "c", (function() {
-				return I
+				return O
 			})), r.d(t, "d", (function() {
 				return j
 			}));
@@ -1769,7 +1769,7 @@
 						}))
 					}
 					return u.ok
-				}, O = Object(a.a)(f.f), I = (e, t) => async (r, a, d) => {
+				}, I = Object(a.a)(f.f), O = (e, t) => async (r, a, d) => {
 					const u = await ((e, t, r) => Object(o.a)(Object(c.a)(e, [l.a]), {
 						endpoint: `${e.apiUrl}/r/${t}/api/unfriend`,
 						method: s.ib.POST,
@@ -1784,7 +1784,7 @@
 						text: n.fbt._("User has been successfully removed", null, {
 							hk: "2OevWA"
 						})
-					})), r(O({
+					})), r(I({
 						subredditName: e.toLowerCase(),
 						userId: t
 					}))) : r(Object(i.f)({
@@ -1795,7 +1795,7 @@
 						buttonText: n.fbt._("Retry", null, {
 							hk: "1QXiG6"
 						}),
-						buttonAction: I(e, t)
+						buttonAction: O(e, t)
 					})), u.ok
 				}, E = Object(a.a)(f.g), j = (e, t) => async (r, s, a) => {
 					const o = {
@@ -1850,7 +1850,7 @@
 			r.d(t, "c", (function() {
 				return _
 			})), r.d(t, "b", (function() {
-				return O
+				return I
 			})), r.d(t, "e", (function() {
 				return E
 			})), r.d(t, "a", (function() {
@@ -1923,7 +1923,7 @@
 						}
 					}
 					return o.ok
-				}, y = Object(a.a)(x.b), O = (e, t, r) => async (s, a, i) => {
+				}, y = Object(a.a)(x.b), I = (e, t, r) => async (s, a, i) => {
 					const d = {
 							subredditName: e,
 							wikiPageName: t,
@@ -1956,10 +1956,10 @@
 						buttonText: n.fbt._("Retry", null, {
 							hk: "1QXiG6"
 						}),
-						buttonAction: O(e, t, r)
+						buttonAction: I(e, t, r)
 					}));
 					return c.ok
-				}, I = Object(a.a)(x.d), E = ({
+				}, O = Object(a.a)(x.d), E = ({
 					editPermissions: e,
 					isVisible: t,
 					wikiPageName: r,
@@ -1979,7 +1979,7 @@
 						wikiPageName: r,
 						subredditName: n
 					});
-					return c.ok && a(I({
+					return c.ok && a(O({
 						editPermissions: e,
 						isVisible: t,
 						pageKey: Object(v.a)({
@@ -2074,7 +2074,7 @@
 		"./src/reddit/actions/wiki/wikiRevisions/index.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "c", (function() {
-				return I
+				return O
 			})), r.d(t, "a", (function() {
 				return j
 			})), r.d(t, "b", (function() {
@@ -2131,8 +2131,8 @@
 				w = r("./src/reddit/actions/wiki/wikiRevisions/constants.ts");
 			const _ = Object(a.a)(w.d),
 				y = Object(a.a)(w.c),
-				O = Object(a.a)(w.b),
-				I = e => async (t, r, a) => {
+				I = Object(a.a)(w.b),
+				O = e => async (t, r, a) => {
 					const {
 						canLoadMore: o = !1,
 						canShowFailToast: l = !1,
@@ -2173,7 +2173,7 @@
 						const r = C.error || {
 							type: s.H.UNKNOWN_ERROR
 						};
-						t(O({
+						t(I({
 							...j,
 							error: r
 						})), l && t(Object(i.f)({
@@ -2184,7 +2184,7 @@
 							buttonText: n.fbt._("Retry", null, {
 								hk: "1QXiG6"
 							}),
-							buttonAction: I(e)
+							buttonAction: O(e)
 						}))
 					}
 					return C.ok
@@ -2400,8 +2400,8 @@
 				}))), k._param("year", (new Date).getFullYear())], {
 					hk: "335pdO"
 				}))),
-				O = r("./src/reddit/components/RawHTMLDisplay/index.tsx"),
-				I = r("./src/reddit/components/RichTextJson/index.tsx"),
+				I = r("./src/reddit/components/RawHTMLDisplay/index.tsx"),
+				O = r("./src/reddit/components/RichTextJson/index.tsx"),
 				E = r("./node_modules/lodash/flatMap.js"),
 				j = r.n(E),
 				C = r("./src/lib/linkMatchers/index.ts"),
@@ -2445,8 +2445,8 @@
 				U = r("./src/reddit/controls/Button/index.tsx"),
 				B = r("./src/chat/controls/Svg/index.tsx");
 
-			function D() {
-				return (D = Object.assign || function(e) {
+			function A() {
+				return (A = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var r = arguments[t];
 						for (var n in r) Object.prototype.hasOwnProperty.call(r, n) && (e[n] = r[n])
@@ -2454,7 +2454,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var A = e => a.a.createElement(B.a, D({}, e, {
+			var D = e => a.a.createElement(B.a, A({}, e, {
 					viewBox: "-1 -1 21 21"
 				}), a.a.createElement("path", {
 					d: "M16.64,2.32a4.5,4.5,0,0,0-7,5.57L4.85,12.69,3.59,13.95h0L2.34,15.2a1,1,0,0,0,0,1.41l1.25,1.25h0l.42.42a1,1,0,0,0,1.41-1.41L5,16.46H5a.78.78,0,0,1,0-1.09.79.79,0,0,1,1.09,0h0l.42.42a1,1,0,0,0,1.41-1.41L7.52,14h0L7,13.4l4.1-4.1a4.5,4.5,0,0,0,5.57-7Zm-1.41,5a2.5,2.5,0,1,1,0-3.54A2.5,2.5,0,0,1,15.22,7.27Z"
@@ -2468,7 +2468,7 @@
 				G = r.n(q);
 			const {
 				fbt: z
-			} = r("./node_modules/fbt/lib/FbtPublic.js"), Q = l.a.wrapped(A, "PrivateKey", G.a), Z = l.a.div("ButtonsContainer", G.a), J = l.a.div("Container", G.a), Y = l.a.div("ContainerExp", G.a), X = l.a.div("Description", G.a), V = l.a.div("PrivateSubredditDetails", G.a), $ = l.a.div("PrivateSubredditDescription", G.a), ee = l.a.h3("PrivateSubredditName", G.a), te = l.a.a("Link", G.a), re = l.a.wrapped(U.k, "LinkRouterButton", G.a), ne = l.a.wrapped(U.j, "LinkButton", G.a), se = l.a.wrapped(U.n, "SecondaryLinkRouterButton", G.a), ae = l.a.wrapped(U.m, "SecondaryLinkButton", G.a), ie = l.a.wrapped(re, "GoHomeLinkButton", G.a), oe = l.a.wrapped(f.a, "CreateCommunityButton", G.a), de = l.a.img("Image", G.a), ce = l.a.img("ImagePlaceholder", G.a), le = l.a.wrapped(re, "LeftLinkRouterButton", G.a), ue = l.a.wrapped(ne, "LeftLinkButton", G.a), me = l.a.wrapped(ae, "SecondaryLeftLinkButton", G.a), be = l.a.wrapped(se, "SecondaryLeftLinkRouterButton", G.a), pe = l.a.h3("Title", G.a), fe = l.a.div("PageBody", G.a), he = l.a.div("QuarantineMessageWrapper", G.a), ve = Object(c.c)({
+			} = r("./node_modules/fbt/lib/FbtPublic.js"), Q = l.a.wrapped(D, "PrivateKey", G.a), Z = l.a.div("ButtonsContainer", G.a), J = l.a.div("Container", G.a), Y = l.a.div("ContainerExp", G.a), X = l.a.div("Description", G.a), V = l.a.div("PrivateSubredditDetails", G.a), $ = l.a.div("PrivateSubredditDescription", G.a), ee = l.a.h3("PrivateSubredditName", G.a), te = l.a.a("Link", G.a), re = l.a.wrapped(U.k, "LinkRouterButton", G.a), ne = l.a.wrapped(U.j, "LinkButton", G.a), se = l.a.wrapped(U.n, "SecondaryLinkRouterButton", G.a), ae = l.a.wrapped(U.m, "SecondaryLinkButton", G.a), ie = l.a.wrapped(re, "GoHomeLinkButton", G.a), oe = l.a.wrapped(f.a, "CreateCommunityButton", G.a), de = l.a.img("Image", G.a), ce = l.a.img("ImagePlaceholder", G.a), le = l.a.wrapped(re, "LeftLinkRouterButton", G.a), ue = l.a.wrapped(ne, "LeftLinkButton", G.a), me = l.a.wrapped(ae, "SecondaryLeftLinkButton", G.a), be = l.a.wrapped(se, "SecondaryLeftLinkRouterButton", G.a), pe = l.a.h3("Title", G.a), fe = l.a.div("PageBody", G.a), he = l.a.div("QuarantineMessageWrapper", G.a), ve = Object(c.c)({
 				isLoggedIn: H.J,
 				origin: K.j,
 				user: H.k,
@@ -2599,12 +2599,12 @@
 							hk: "2XqfJa"
 						})))], {
 							hk: "2B9i8y"
-						}), a.a.createElement(he, null, k ? a.a.createElement(I.a, {
+						}), a.a.createElement(he, null, k ? a.a.createElement(O.a, {
 							content: k,
 							rtJsonElementProps: {
 								pageLayer: b
 							}
-						}) : v ? a.a.createElement(O.a, {
+						}) : v ? a.a.createElement(I.a, {
 							html: v
 						}) : h || z._("Quarantined communities are dedicated to shocking or highly offensive content. You must be logged in with a verified email to continue.", null, {
 							hk: "3kRIzE"
@@ -2957,8 +2957,8 @@
 				w = r("./node_modules/react-router-dom/esm/react-router-dom.js"),
 				_ = r("./src/lib/lessComponent.tsx"),
 				y = r("./src/lib/prettyPrintNumber/index.ts"),
-				O = r("./src/reddit/components/ChatButton/index.tsx"),
-				I = r("./src/reddit/components/JSAPIContainers/index.tsx"),
+				I = r("./src/reddit/components/ChatButton/index.tsx"),
+				O = r("./src/reddit/components/JSAPIContainers/index.tsx"),
 				E = r("./src/reddit/components/OverlayAwareTooltip/index.tsx"),
 				j = r("./src/reddit/components/SubscribeButton/index.tsx"),
 				C = r("./src/reddit/components/UserIcon/index.tsx"),
@@ -2977,8 +2977,8 @@
 				R = r("./src/reddit/icons/svgs/Premium/index.tsx"),
 				U = r("./src/reddit/models/Gold/Award.ts"),
 				B = r("./src/reddit/models/User/index.ts"),
-				D = r("./src/reddit/components/HumanDate/index.tsx"),
-				A = r("./src/reddit/components/ProfileIdCard/AwardedLastMonth.tsx"),
+				A = r("./src/reddit/components/HumanDate/index.tsx"),
+				D = r("./src/reddit/components/ProfileIdCard/AwardedLastMonth.tsx"),
 				M = r("./src/reddit/components/ProfileIdCard/UserProfileOverview/UserSnoovatar/index.tsx"),
 				W = r("./src/reddit/actions/inContextModeration.ts"),
 				F = r("./src/reddit/actions/modal.ts"),
@@ -3108,7 +3108,7 @@
 			}
 			const ie = _.a.wrapped(C.a, "UserIcon", se.a),
 				oe = _.a.wrapped(j.a, "SubscribeButton", se.a),
-				de = _.a.wrapped(O.b, "ChatButton", se.a),
+				de = _.a.wrapped(I.b, "ChatButton", se.a),
 				ce = _.a.wrapped(L, "KarmaIcon", se.a),
 				le = _.a.wrapped(R.a, "PremiumIcon", se.a),
 				ue = _.a.wrapped(w.a, "UserNameLink", se.a),
@@ -3124,8 +3124,8 @@
 				we = _.a.a("InfoLink", se.a),
 				_e = _.a.div("KarmaCount", se.a),
 				ye = _.a.div("KarmaLabel", se.a),
-				Oe = _.a.div("GenericKarmaLabel", se.a),
-				Ie = _.a.div("BannerImage", se.a),
+				Ie = _.a.div("GenericKarmaLabel", se.a),
+				Oe = _.a.div("BannerImage", se.a),
 				Ee = _.a.div("UserContainer", se.a),
 				je = _.a.div("BottomSpacer", se.a),
 				Ce = _.a.div("Container", se.a),
@@ -3138,7 +3138,7 @@
 					})
 				}), e.user.isGold && s.a.createElement(w.a, {
 					to: "/premium"
-				}, s.a.createElement(le, null))), s.a.createElement(me, null, e.user.username && s.a.createElement(be, null, e.user.username, s.a.createElement(pe, null, "•")), s.a.createElement(be, null, s.a.createElement(D.d, {
+				}, s.a.createElement(le, null))), s.a.createElement(me, null, e.user.username && s.a.createElement(be, null, e.user.username, s.a.createElement(pe, null, "•")), s.a.createElement(be, null, s.a.createElement(A.d, {
 					seconds: e.user.createdUtc || e.user.created
 				})))),
 				Pe = e => {
@@ -3151,17 +3151,17 @@
 						...N.a,
 						...r
 					};
-					return t ? s.a.createElement(ge, null, s.a.createElement(xe, null, s.a.createElement(_e, null, Object(y.b)(n.fromPosts)), s.a.createElement(Oe, null, g.fbt._({
+					return t ? s.a.createElement(ge, null, s.a.createElement(xe, null, s.a.createElement(_e, null, Object(y.b)(n.fromPosts)), s.a.createElement(Ie, null, g.fbt._({
 						"*": "Post Karma",
 						_1: " Post Karma"
 					}, [g.fbt._plural(n.fromPosts)], {
 						hk: "3K4oaH"
-					}))), s.a.createElement(xe, null, s.a.createElement(_e, null, Object(y.b)(n.fromComments)), s.a.createElement(Oe, null, g.fbt._({
+					}))), s.a.createElement(xe, null, s.a.createElement(_e, null, Object(y.b)(n.fromComments)), s.a.createElement(Ie, null, g.fbt._({
 						"*": "Comment Karma",
 						_1: " Comment Karma"
 					}, [g.fbt._plural(n.fromComments)], {
 						hk: "3gKRx9"
-					}))), s.a.createElement(xe, null, s.a.createElement(_e, null, Object(y.b)(n.fromAwardsReceived)), s.a.createElement(Oe, null, g.fbt._({
+					}))), s.a.createElement(xe, null, s.a.createElement(_e, null, Object(y.b)(n.fromAwardsReceived)), s.a.createElement(Ie, null, g.fbt._({
 						"*": "Awardee Karma",
 						_1: " Awardee Karma"
 					}, [g.fbt._plural(n.fromAwardsReceived)], {
@@ -3172,7 +3172,7 @@
 						rel: "noopener noreferrer"
 					}, s.a.createElement(S.a, {
 						className: se.a.infoIcon
-					})))), s.a.createElement(xe, null, s.a.createElement(_e, null, Object(y.b)(n.fromAwardsGiven)), s.a.createElement(Oe, null, g.fbt._({
+					})))), s.a.createElement(xe, null, s.a.createElement(_e, null, Object(y.b)(n.fromAwardsGiven)), s.a.createElement(Ie, null, g.fbt._({
 						"*": "Awarder Karma",
 						_1: " Awarder Karma"
 					}, [g.fbt._plural(n.fromAwardsGiven)], {
@@ -3217,7 +3217,7 @@
 						userFlair: w,
 						userIsBanned: _,
 						userProfileStyles: y,
-						acceptChats: O,
+						acceptChats: I,
 						isCommentAuthorBlocked: E
 					} = e;
 					if (!k) return s.a.createElement(Ce, {
@@ -3233,18 +3233,18 @@
 						{
 							awardedLastMonth: U
 						} = k,
-						D = !!k.snoovatarFullBodyAsset,
+						A = !!k.snoovatarFullBodyAsset,
 						W = k.isNSFW && a;
 					let F;
-					return F = D ? !W && y && y.bannerBackgroundImage || void 0 : W ? `${x.a.assetPath}/img/user-info-banner.png` : e.user.bannerImage, s.a.createElement(Ce, {
+					return F = A ? !W && y && y.bannerBackgroundImage || void 0 : W ? `${x.a.assetPath}/img/user-info-banner.png` : e.user.bannerImage, s.a.createElement(Ce, {
 						className: t,
 						id: i,
 						style: p
-					}, !D && F && s.a.createElement(Ie, {
+					}, !A && F && s.a.createElement(Oe, {
 						style: {
 							backgroundImage: `url('${F}')`
 						}
-					}), s.a.createElement(Ee, null, D ? s.a.createElement(M.a, {
+					}), s.a.createElement(Ee, null, A ? s.a.createElement(M.a, {
 						isHovercard: !0,
 						bannerBackgroundImage: F,
 						compact: !0,
@@ -3271,11 +3271,11 @@
 					})), s.a.createElement(Pe, {
 						showAwardKarma: b,
 						user: k
-					}), U && s.a.createElement(A.a, {
+					}), U && s.a.createElement(D.a, {
 						recentAwardings: U,
 						topAwardIcon: h,
 						username: v
-					}), o && !j && !_ && O && !E && s.a.createElement(de, {
+					}), o && !j && !_ && I && !E && s.a.createElement(de, {
 						contextId: r,
 						userId: k.id,
 						text: g.fbt._("Start Chat", null, {
@@ -3300,7 +3300,7 @@
 						subredditId: f,
 						sendEvent: m,
 						username: v
-					}), s.a.createElement(I.i, {
+					}), s.a.createElement(O.i, {
 						contextId: r,
 						subredditId: f,
 						user: k
@@ -4043,9 +4043,9 @@
 					})
 				}
 			}
-			var O = y,
-				I = r("./src/reddit/components/ProfileIdCard/UserProfileOverview/UserProfile.m.less"),
-				E = r.n(I),
+			var I = y,
+				O = r("./src/reddit/components/ProfileIdCard/UserProfileOverview/UserProfile.m.less"),
+				E = r.n(O),
 				j = r("./src/reddit/components/ProfileIdCard/UserProfileOverview/UserSnoovatar/UserInformation.tsx");
 			t.a = ({
 				bannerBackgroundImage: e,
@@ -4061,7 +4061,7 @@
 				onDeleteBanner: w,
 				prefersReducedAnimations: _,
 				snoovatarUrl: y,
-				title: I,
+				title: O,
 				userCreated: C,
 				username: N,
 				url: P,
@@ -4081,7 +4081,7 @@
 					className: f.a.topGlow
 				}), s.a.createElement("div", {
 					className: f.a.bottomGlow
-				}), !_ && s.a.createElement(O, null)), s.a.createElement("img", {
+				}), !_ && s.a.createElement(I, null)), s.a.createElement("img", {
 					className: Object(i.a)(f.a.snoovatar, {
 						[f.a.premiumGlow]: v
 					}),
@@ -4096,7 +4096,7 @@
 					isEmployee: h,
 					isGold: v,
 					isNSFW: k,
-					title: I,
+					title: O,
 					username: N
 				}), s.a.createElement(b.a, {
 					className: f.a.snoovatarUserName,
@@ -4757,6 +4757,198 @@
 				stopColor: "#FF8717"
 			}))))
 		},
+		"./src/reddit/reducers/features/powerups/index.ts": function(e, t, r) {
+			"use strict";
+			var n = r("./node_modules/redux/es/redux.js"),
+				s = r("./src/reddit/actions/gold/constants.ts");
+			const a = {};
+			var i = r("./node_modules/icepick/icepick.js"),
+				o = r("./src/reddit/actions/economics/powerups/constants.ts");
+			const d = {},
+				c = {};
+			t.a = Object(n.c)({
+				subredditAchievements: (e = a, t) => {
+					switch (t.type) {
+						case s.pb:
+							const {
+								subredditId: r, subredditAchievementFlairs: n
+							} = t.payload, a = n.reduce((e, t) => ({
+								...e,
+								[t.type]: t
+							}), e[r] || {});
+							return {
+								...e, [r]: a
+							};
+						default:
+							return e
+					}
+				},
+				subredditUserAchievements: (e = d, t) => {
+					var r, n, s;
+					switch (t.type) {
+						case o.d: {
+							const {
+								id: a,
+								userAchievementFlairsByRedditorIds: i
+							} = t.payload;
+							let o = e[a] || {};
+							for (const {
+									redditorId: e,
+									userAchievementFlairs: t
+								} of i) {
+								const a = t.map(({
+										type: e
+									}) => e),
+									i = (null === (r = t.find(({
+										isPreferred: e
+									}) => e)) || void 0 === r ? void 0 : r.type) || (null === (n = t[0]) || void 0 === n ? void 0 : n.type),
+									d = null === (s = t.find(({
+										type: e
+									}) => e.startsWith("POWERUPS_SUPPORTER"))) || void 0 === s ? void 0 : s.type;
+								o = {
+									...o,
+									[e]: {
+										achievementTypes: a,
+										preferredType: i,
+										supporterType: d
+									}
+								}
+							}
+							return {
+								...e,
+								[a]: o
+							}
+						}
+						case o.f: {
+							const {
+								subredditId: r,
+								userId: n,
+								achievementType: s
+							} = t.payload;
+							return Object(i.setIn)(e, [r, n, "pendingPreferredType"], s)
+						}
+						case o.g: {
+							const {
+								subredditId: r,
+								userId: n,
+								achievementType: s
+							} = t.payload;
+							return Object(i.updateIn)(e, [r, n], e => ({
+								...e,
+								preferredType: s,
+								pendingPreferredType: void 0
+							}))
+						}
+						case o.e: {
+							const {
+								subredditId: r,
+								userId: n
+							} = t.payload;
+							return Object(i.setIn)(e, [r, n, "pendingPreferredType"], void 0)
+						}
+						default:
+							return e
+					}
+				},
+				usersSupportedSubreddits: (e = c, t) => {
+					switch (t.type) {
+						case o.h: {
+							let r = {};
+							return t.payload.forEach(e => {
+								const t = e.id,
+									n = e.powerups;
+								if (!t || !n) return;
+								const s = n.supportedSubreddits.filter(({
+									subredditInfo: e
+								}) => null == e ? void 0 : e.id).map(({
+									subredditInfo: e
+								}) => e.id);
+								r = {
+									...r,
+									[t]: s.reduce((e, t) => (e[t] = !0, e), {})
+								}
+							}), {
+								...e,
+								...r
+							}
+						}
+						default:
+							return e
+					}
+				}
+			})
+		},
+		"./src/reddit/selectors/gold/powerups/achievements.ts": function(e, t, r) {
+			"use strict";
+			r.d(t, "c", (function() {
+				return c
+			})), r.d(t, "d", (function() {
+				return u
+			})), r.d(t, "e", (function() {
+				return b
+			})), r.d(t, "b", (function() {
+				return p
+			})), r.d(t, "a", (function() {
+				return f
+			}));
+			r("./node_modules/core-js/modules/web.dom.iterable.js");
+			var n = r("./node_modules/reselect/es/index.js"),
+				s = r("./src/reddit/selectors/commentSelector.ts"),
+				a = r("./src/reddit/selectors/experiments/econ/index.ts"),
+				i = r("./src/lib/initializeClient/installReducer.ts"),
+				o = r("./src/reddit/reducers/features/powerups/index.ts");
+			Object(i.a)({
+				features: {
+					powerups: o.a
+				}
+			});
+			const d = (e, {
+					subredditId: t
+				}) => {
+					var r;
+					return t ? null === (r = e.features.powerups.subredditAchievements) || void 0 === r ? void 0 : r[t] : null
+				},
+				c = (e, {
+					subredditId: t,
+					userId: r
+				}) => {
+					var n, s;
+					return t && r ? null === (s = null === (n = e.features.powerups.subredditUserAchievements) || void 0 === n ? void 0 : n[t]) || void 0 === s ? void 0 : s[r] : null
+				},
+				l = Object(n.a)(c, e => (null == e ? void 0 : e.pendingPreferredType) || (null == e ? void 0 : e.preferredType)),
+				u = Object(n.a)([d, l], (e, t) => e && t ? e[t] : null),
+				m = Object(n.a)(c, e => null == e ? void 0 : e.supporterType),
+				b = Object(n.a)([d, m], (e, t) => e && t ? e[t] : null),
+				p = Object(n.a)([d, c], (e, t) => {
+					if (!e) return [];
+					const r = t ? t.achievementTypes : [],
+						n = (null == t ? void 0 : t.pendingPreferredType) || (null == t ? void 0 : t.preferredType);
+					return Object.values(e).map(e => ({
+						...e,
+						isLocked: !r.includes(e.type),
+						isPreferred: e.type === n
+					})).sort((e, t) => e.isLocked === t.isLocked ? 0 : e.isLocked ? 1 : -1)
+				}),
+				f = (e, {
+					commentId: t
+				}) => {
+					const r = Object(s.a)(e, {
+							commentId: t
+						}),
+						n = null == r ? void 0 : r.subredditId,
+						i = null == r ? void 0 : r.authorId;
+					return !(!n || !i) && !(!((e, {
+						subredditId: t,
+						userId: r
+					}) => {
+						var n, s, a;
+						return t && r ? null === (a = null === (s = null === (n = e.features.powerups) || void 0 === n ? void 0 : n.usersSupportedSubreddits) || void 0 === s ? void 0 : s[r]) || void 0 === a ? void 0 : a[t] : null
+					})(e, {
+						subredditId: n,
+						userId: i
+					}) || !Object(a.h)(e))
+				}
+		},
 		"./src/reddit/selectors/subredditWiki.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "b", (function() {
@@ -4909,4 +5101,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.62eea08c1c9b82ff8f2f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.52e8a3a53d6e8bcdab17.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.cf6797eef91ce0c117c1.js
-// Retrieved at 9/2/2021, 1:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.abcc966f6e8a24c70397.js
+// Retrieved at 9/7/2021, 10:40:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "CommentsPage"], {
 		"./src/lib/makeCollectionCommentsPageKey/index.ts": function(e, t, s) {
@@ -2324,7 +2324,7 @@
 				l = s("./src/lib/classNames/index.ts"),
 				m = s("./src/lib/constants/index.ts"),
 				p = s("./src/lib/lessComponent.tsx"),
-				u = s("./src/reddit/actions/economics/powerups/achievements.ts"),
+				u = s("./src/reddit/actions/economics/powerups/achievements/index.ts"),
 				h = s("./src/reddit/actions/comment/index.ts"),
 				b = s("./src/reddit/constants/comments.ts"),
 				g = s("./src/reddit/constants/componentSizes.ts"),
@@ -3658,7 +3658,7 @@
 					postPermalink: A.G
 				}),
 				fo = Object(d.b)(xo, (e, t) => ({
-					loadCommentAuthorsPowerupsInfo: async t => await e(Object(u.c)(t)),
+					loadCommentAuthorsPowerupsInfo: async t => await e(Object(u.getSubredditUserCommentsPowerupsInfoFromCommentLinks)(t)),
 					onCommentEnteredViewport: t => e(Object(h.e)(t)),
 					onCommentLeftViewport: (t, s) => e(Object(h.h)(t, s))
 				})),
@@ -8741,4 +8741,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.cf6797eef91ce0c117c1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.abcc966f6e8a24c70397.js.map

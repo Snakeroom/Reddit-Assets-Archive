@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.aca6137c3b018a967b63.js
-// Retrieved at 9/2/2021, 4:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.25589e351b40be1b49bd.js
+// Retrieved at 9/7/2021, 10:40:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -2557,7 +2557,7 @@
 				E = s("./src/reddit/components/PostTopMeta/index.tsx"),
 				v = s("./src/reddit/controls/MetaData/index.tsx"),
 				C = s("./src/reddit/helpers/flair.ts"),
-				_ = s("./src/reddit/helpers/trackers/userFlair.ts"),
+				_ = s("./src/reddit/helpers/trackers/features/achievementFlair.ts"),
 				k = s("./src/reddit/hooks/useTracking.ts"),
 				y = s("./src/reddit/models/Comment/index.ts"),
 				S = s("./src/reddit/selectors/gold/powerups/index.ts"),
@@ -2980,7 +2980,7 @@
 					subredditId: i.subredditId,
 					userId: i.authorId,
 					onHover: () => {
-						w(Object(_.f)(i.id, i.subredditId, i.authorId))
+						w(Object(_.b)(i.id, i.subredditId, i.authorId))
 					},
 					showPopupOnHover: !0
 				}), o.a.createElement(x.a, {
@@ -6343,7 +6343,7 @@
 				r = s("./src/lib/classNames/index.ts"),
 				i = s("./src/reddit/actions/gold/powerups.ts"),
 				d = s("./src/reddit/controls/Button/index.tsx"),
-				l = s("./src/reddit/helpers/trackers/userFlair.ts"),
+				l = s("./src/reddit/helpers/trackers/features/achievementFlair.ts"),
 				c = s("./src/reddit/hooks/useScrollGradient.ts"),
 				m = s("./src/reddit/hooks/useTracking.ts"),
 				u = s("./src/reddit/icons/svgs/PowerupTier2/index.tsx"),
@@ -6414,7 +6414,7 @@
 					priority: d.b.Secondary,
 					className: g.a.ctaButton,
 					onClick: () => {
-						v(Object(l.d)()), E(Object(i.e)())
+						v(Object(l.a)()), E(Object(i.e)())
 					},
 					isFullWidth: !0
 				}, f._("View your achievements", null, {
@@ -20581,6 +20581,48 @@
 					correlationId: Object(n.c)(n.a.SubredditCreation)
 				})
 		},
+		"./src/reddit/helpers/trackers/features/achievementFlair.ts": function(e, t, s) {
+			"use strict";
+			s.d(t, "b", (function() {
+				return i
+			})), s.d(t, "a", (function() {
+				return d
+			}));
+			var n = s("./src/reddit/helpers/flair.ts"),
+				a = s("./src/reddit/selectors/comments.ts"),
+				o = s("./src/reddit/selectors/gold/powerups/achievements.ts"),
+				r = s("./src/reddit/selectors/telemetry.ts");
+			const i = (e, t, s) => i => {
+					const d = Object(a.e)(i, {
+							commentId: e
+						}),
+						l = Object(o.d)(i, {
+							subredditId: t,
+							userId: s
+						});
+					return {
+						source: "meta",
+						action: "hover",
+						noun: "achieve_flair",
+						...r.defaults(i),
+						subreddit: {
+							id: t
+						},
+						userFlair: {
+							id: null == d ? void 0 : d.templateId,
+							title: d ? Object(n.g)(d) : void 0,
+							achievementFlairId: null == l ? void 0 : l.type,
+							achievementFlairTitle: null == l ? void 0 : l.name
+						}
+					}
+				},
+				d = () => e => ({
+					source: "powerups",
+					action: "click",
+					noun: "view_your_achievements",
+					...r.defaults(e)
+				})
+		},
 		"./src/reddit/helpers/trackers/modHub.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "b", (function() {
@@ -22678,4 +22720,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.aca6137c3b018a967b63.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.25589e351b40be1b49bd.js.map
