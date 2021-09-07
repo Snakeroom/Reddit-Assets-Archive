@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241.97995fc48fea83ec6180.js
-// Retrieved at 9/2/2021, 4:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241.db9ebcf3a9999dad51c1.js
+// Retrieved at 9/7/2021, 1:20:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241"], {
 		"./src/reddit/actions/downToChat.ts": function(e, t, r) {
@@ -4821,7 +4821,7 @@
 			e.exports = JSON.parse('{"id":"0ac0276ebc2f"}')
 		},
 		"./src/redditGQL/operations/TopAwardersLeaderboard.json": function(e) {
-			e.exports = JSON.parse('{"id":"2a194e7926dd"}')
+			e.exports = JSON.parse('{"id":"aba8fd5909b4"}')
 		},
 		"./src/redditGQL/operations/UpdatePowerupsSettings.json": function(e) {
 			e.exports = JSON.parse('{"id":"699ae1616006"}')
@@ -4843,4 +4843,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241.97995fc48fea83ec6180.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241.db9ebcf3a9999dad51c1.js.map
