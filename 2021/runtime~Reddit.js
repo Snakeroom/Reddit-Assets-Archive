@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.679ab80f1730fb279241.js
-// Retrieved at 9/7/2021, 2:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.45923eff5fe43d724de8.js
+// Retrieved at 9/7/2021, 4:00:08 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var n, a, i = o[0], s = o[1], c = o[2], l = 0, P = []; l < i.length; l++) a = i[l], Object.prototype.hasOwnProperty.call(d, a) && d[a] && P.push(d[a][0]), d[a] = 0;
@@ -852,7 +852,7 @@
 					"reddit-components-ModHub-ChatSettings": "3f6ca2a94c9efb5e06cd",
 					"reddit-components-ModHub-ContentControls": "c7ab910db4ec5421a645",
 					"reddit-components-ModHub-TrafficStats": "720ef41e6fc717a08ab2",
-					"reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement": "ec03f39a4d51da4d68f5",
+					"reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement": "c8df9a878691eb50f073",
 					"reddit-components-ModHub-flairs-PostFlairManagement": "31d6cfe0d16ae931b73c",
 					"reddit-components-ModHub-flairs-UserFlairManagement": "31d6cfe0d16ae931b73c",
 					"reddit-components-RecurringPostList-EditModal": "1cee887871582e944c2f",
@@ -1335,7 +1335,7 @@
 						"translations/es_MX-json": "72ea3f269ebdb0c069ea",
 						"translations/fr_FR-json": "a42afcc35d299086cc7c",
 						"translations/it_IT-json": "0f13878ac481e3df06b7",
-						"translations/pseudo_ext-json": "cbeed3885402e6f0e1fa",
+						"translations/pseudo_ext-json": "eefcea1c67a85496ff6e",
 						"translations/pseudo_long-json": "6c68a89050a54479a725",
 						"translations/pseudo_short-json": "13d5ab6f6dd28d926d46",
 						"translations/pt_BR-json": "8a3c7ae8f643247f6c51",
@@ -1488,7 +1488,7 @@
 						"reddit-components-ModHub-ChatSettings": "e52a9ef1f50a7ab16c5d",
 						"reddit-components-ModHub-ContentControls": "59519b1dcf939c3f9f80",
 						"reddit-components-ModHub-TrafficStats": "89805d71130cb86200c6",
-						"reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement": "61b9ea9caf065dcebcbf",
+						"reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement": "393a2eafd052adaa8963",
 						"reddit-components-ModHub-flairs-PostFlairManagement": "1c119806531abe89c804",
 						"reddit-components-ModHub-flairs-UserFlairManagement": "316b65dddca29bfda8d0",
 						"reddit-components-RecurringPostList-EditModal": "442a84f9150098b3f615",
@@ -1585,4 +1585,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.679ab80f1730fb279241.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.45923eff5fe43d724de8.js.map
