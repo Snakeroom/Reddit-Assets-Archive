@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.77bfa91098dd0bb50aab.js
-// Retrieved at 9/8/2021, 2:30:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.384949ef54bfdd81293c.js
+// Retrieved at 9/8/2021, 3:50:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsMarketingModal"], {
 		"./src/reddit/components/Econ/Common/BenefitTile/index.m.less": function(e, t, s) {
@@ -91,17 +91,17 @@
 					h = Object(r.e)(e => Object(d.l)(e, {
 						subredditId: t
 					})),
-					w = Object(r.e)(l.g);
+					w = Object(r.e)(l.h);
 				if (!n) return null;
 				const {
 					tier: E,
 					count: x,
 					tiersInfo: _,
 					supportersCount: f
-				} = n, g = _[1].powerupsCost, k = E >= 2, j = (null == h ? void 0 : h.filter(e => {
+				} = n, k = _[1].powerupsCost, g = E >= 2, j = (null == h ? void 0 : h.filter(e => {
 					var t;
 					return !!(null === (t = e.supporterInfo) || void 0 === t ? void 0 : t.displayName)
-				}).slice(0, 2)) || [], N = Math.min(x, g) / g, P = g - x;
+				}).slice(0, 2)) || [], N = Math.min(x, k) / k, P = k - x;
 				return o.a.createElement("div", {
 					className: Object(a.a)(p.a.container, e, {
 						[p.a.containerClickable]: !!s
@@ -143,7 +143,7 @@
 					hk: "3TGmi4"
 				}))())), o.a.createElement("p", {
 					className: p.a.title
-				}, k ? b._("Community perks are now unlocked!", null, {
+				}, g ? b._("Community perks are now unlocked!", null, {
 					hk: "3xbTTM"
 				}) : b._("{subredditName} needs {powerups needed} more Powerups to unlock perks for the entire community", [b._param("subredditName", u.displayText), b._param("powerups needed", P)], {
 					hk: "4h33rf"
@@ -309,8 +309,8 @@
 				x = s("./src/reddit/helpers/trackers/powerups.ts"),
 				_ = s("./src/reddit/hooks/useScrollGradient.ts"),
 				f = s("./src/reddit/hooks/useTracking.ts"),
-				g = s("./src/reddit/selectors/experiments/econ/index.ts"),
-				k = s("./src/reddit/selectors/gold/powerups/index.ts"),
+				k = s("./src/reddit/selectors/experiments/econ/index.ts"),
+				g = s("./src/reddit/selectors/gold/powerups/index.ts"),
 				j = s("./src/reddit/selectors/subreddit.ts"),
 				N = s("./src/reddit/selectors/user.ts"),
 				P = s("./src/reddit/components/Econ/PowerupsPremiumUpsellModal/async.tsx"),
@@ -319,7 +319,7 @@
 				v = s("./src/reddit/models/Gold/Powerups/index.ts"),
 				M = s("./src/reddit/selectors/experiments/econ/powerupsAward.ts");
 			const I = [v.a.CommentRecognition, v.a.PowerupsAward, v.a.CommentsWithGifs, v.a.CommentsWithEmoji, v.a.Achievements, v.a.CommunityGear, v.a.HeroStatus, v.a.HdVideo],
-				y = Object(a.a)([M.b, g.h, g.i], (e, t, s) => {
+				y = Object(a.a)([M.b, k.i, k.j], (e, t, s) => {
 					let n = I;
 					return e || (n = n.filter(e => e !== v.a.PowerupsAward)), t || (n = n.filter(e => e !== v.a.CommentRecognition)), s || (n = n.filter(e => e !== v.a.CommunityGear)), n
 				});
@@ -331,7 +331,7 @@
 			var R = function(e) {
 					const {
 						className: t
-					} = e, s = Object(f.a)(), n = Object(r.e)(y), a = Object(r.e)(g.g), c = A(n);
+					} = e, s = Object(f.a)(), n = Object(r.e)(y), a = Object(r.e)(k.h), c = A(n);
 					return o.a.createElement("div", {
 						className: Object(i.a)(S.a.container, t)
 					}, c.map(e => v.d[e] && o.a.createElement(O.a, {
@@ -364,7 +364,7 @@
 				currentSubredditId: h.n,
 				powerups: (e, t) => {
 					const s = Object(h.n)(e, t);
-					return s ? Object(k.j)(e, {
+					return s ? Object(g.j)(e, {
 						subredditId: s
 					}) : null
 				},
@@ -380,7 +380,7 @@
 					currentSubredditId: t,
 					powerups: s,
 					subreddit: a
-				} = e, c = Object(r.d)(), h = Object(f.a)(), k = Object(r.e)(g.g), j = Object(r.e)(e => !Object(N.s)(e) && Object(g.k)(e)), {
+				} = e, c = Object(r.d)(), h = Object(f.a)(), g = Object(r.e)(k.h), j = Object(r.e)(e => !Object(N.s)(e) && Object(k.l)(e)), {
 					container: C,
 					isScrollGradientVisible: O,
 					calculateGradientVisibility: v
@@ -395,7 +395,7 @@
 						Object(E.Fb)(b.a.ECON_POWERUPS_MARKETING, !0), c(j ? Object(l.g)(t) : Object(d.h)(b.a.ECON_POWERUPS_PURCHASE))
 					};
 				if (!t || !a || !s) return M(), null;
-				const y = k ? F._("Support the whole community", null, {
+				const y = g ? F._("Support the whole community", null, {
 					hk: "oOdGv"
 				}) : F._("Unlock perks for the whole community", null, {
 					hk: "faCTq"
@@ -592,4 +592,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.77bfa91098dd0bb50aab.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.384949ef54bfdd81293c.js.map

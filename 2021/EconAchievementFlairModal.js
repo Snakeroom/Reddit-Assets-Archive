@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconAchievementFlairModal.3d1b1c662e94a6dce1aa.js
-// Retrieved at 9/8/2021, 2:30:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconAchievementFlairModal.85f4c3f2248f89c2409f.js
+// Retrieved at 9/8/2021, 3:50:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconAchievementFlairModal"], {
 		"./src/reddit/actions/economics/powerups/achievements/index.ts": function(e, t, r) {
@@ -61,7 +61,7 @@
 					const c = t.filter(e => !!(null == e ? void 0 : e.trim()));
 					if (c.length) try {
 						const t = s(),
-							n = Object(o.h)(t),
+							n = Object(o.i)(t),
 							l = await (async (e, t, r, s) => {
 								const i = await Object(a.a)(e, {
 									...d,
@@ -930,7 +930,7 @@
 				onClick: t
 			}) => {
 				const r = Object(n.e)(c.t),
-					s = Object(n.e)(d.g);
+					s = Object(n.e)(d.h);
 				return i.a.createElement(a.q, {
 					priority: a.b.Primary,
 					className: e,
@@ -1265,7 +1265,7 @@
 					})(e, {
 						subredditId: s,
 						userId: a
-					}) || !Object(n.h)(e))
+					}) || !Object(n.i)(e))
 				}
 		},
 		"./src/redditGQL/operations/SubredditUserAchievements.json": function(e) {
@@ -1276,4 +1276,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconAchievementFlairModal.3d1b1c662e94a6dce1aa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconAchievementFlairModal.85f4c3f2248f89c2409f.js.map

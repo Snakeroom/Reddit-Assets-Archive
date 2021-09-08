@@ -1,13 +1,13 @@
-// https://www.redditstatic.com/desktop2x/AchievementsActions.1c73bb9964540971d5a8.js
-// Retrieved at 9/8/2021, 2:30:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AchievementsActions.7931eb39b05c1ab789fd.js
+// Retrieved at 9/8/2021, 3:50:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AchievementsActions"], {
 		"./src/reddit/actions/economics/powerups/achievements/index.ts": function(e, t, r) {
 			"use strict";
 			r.r(t), r.d(t, "onSubredditUserAchievementsLoaded", (function() {
-				return S
-			})), r.d(t, "onUsersSupportedSubredditsLoaded", (function() {
 				return _
+			})), r.d(t, "onUsersSupportedSubredditsLoaded", (function() {
+				return h
 			})), r.d(t, "onSubredditUserAchievementPreferenceUpdateRequested", (function() {
 				return y
 			})), r.d(t, "onSubredditUserAchievementPreferenceUpdateSuccess", (function() {
@@ -44,24 +44,24 @@
 				v = r("./src/reddit/selectors/gold/powerups/index.ts"),
 				E = r("./src/reddit/selectors/gold/powerups/achievements.ts"),
 				I = r("./src/reddit/selectors/user.ts"),
-				h = r("./src/reddit/actions/economics/powerups/constants.ts");
+				S = r("./src/reddit/actions/economics/powerups/constants.ts");
 			Object(a.a)({
 				features: {
 					powerups: l.a
 				}
 			});
-			const S = Object(n.a)(h.d),
-				_ = Object(n.a)(h.h),
-				y = Object(n.a)(h.f),
-				O = Object(n.a)(h.g),
-				U = Object(n.a)(h.e),
+			const _ = Object(n.a)(S.d),
+				h = Object(n.a)(S.h),
+				y = Object(n.a)(S.f),
+				O = Object(n.a)(S.g),
+				U = Object(n.a)(S.e),
 				w = (e, t) => async (r, d, {
 					gqlContext: n
 				}) => {
 					const c = t.filter(e => !!(null == e ? void 0 : e.trim()));
 					if (c.length) try {
 						const t = d(),
-							s = Object(u.h)(t),
+							s = Object(u.i)(t),
 							a = await (async (e, t, r, d) => {
 								const n = await Object(i.a)(e, {
 									...o,
@@ -78,7 +78,7 @@
 								subredditInfoById: l,
 								redditorsInfoByIds: p
 							} = a;
-						await r(S(l)), s && p && await r(_(p))
+						await r(_(l)), s && p && await r(h(p))
 					} catch (a) {
 						s.c.captureException(a)
 					}
@@ -376,7 +376,7 @@
 					})(e, {
 						subredditId: d,
 						userId: i
-					}) || !Object(s.h)(e))
+					}) || !Object(s.i)(e))
 				}
 		},
 		"./src/redditGQL/operations/SubredditUserAchievements.json": function(e) {
@@ -387,4 +387,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AchievementsActions.1c73bb9964540971d5a8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AchievementsActions.7931eb39b05c1ab789fd.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.9daf9b63f04acd078df2.js
-// Retrieved at 9/8/2021, 2:30:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.4a5af2f7e3281fbb2170.js
+// Retrieved at 9/8/2021, 3:50:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"], {
 		"./src/lib/linkMatchers/index.ts": function(e, t, r) {
@@ -154,7 +154,7 @@
 					const d = t.filter(e => !!(null == e ? void 0 : e.trim()));
 					if (d.length) try {
 						const t = n(),
-							i = Object(c.h)(t),
+							i = Object(c.i)(t),
 							l = await (async (e, t, r, n) => {
 								const s = await Object(a.a)(e, {
 									...o,
@@ -392,7 +392,7 @@
 						a = Object(O.j)(s, {
 							subredditId: i
 						}),
-						o = Object(x.m)(s);
+						o = Object(x.n)(s);
 					if (a) return Object(O.f)(s, {
 						subredditId: i
 					});
@@ -883,7 +883,7 @@
 				onClick: t
 			}) => {
 				const r = Object(i.e)(d.t),
-					n = Object(i.e)(o.g);
+					n = Object(i.e)(o.h);
 				return s.a.createElement(a.q, {
 					priority: a.b.Primary,
 					className: e,
@@ -1001,7 +1001,7 @@
 			}, e.displayName || e.userName));
 			t.b = function(e) {
 				var t;
-				const r = Object(i.e)(m.g),
+				const r = Object(i.e)(m.h),
 					n = Object(u.a)(),
 					{
 						className: d,
@@ -1285,7 +1285,7 @@
 					C = Object(a.e)(e => !!Object(f.k)(e, {
 						subredditId: t
 					})),
-					N = Object(a.e)(h.g);
+					N = Object(a.e)(h.h);
 				Object(s.useEffect)(() => {
 					j && r(Object(o.getSubredditCurrentUserAchievementsAndSupporterInfo)(t))
 				}, [j, t, r]);
@@ -3454,4 +3454,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.9daf9b63f04acd078df2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.4a5af2f7e3281fbb2170.js.map

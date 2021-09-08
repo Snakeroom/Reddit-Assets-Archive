@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.b186c473bbfc9d638b3d.js
-// Retrieved at 9/8/2021, 2:30:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.1d46f21f3e15fb042980.js
+// Retrieved at 9/8/2021, 3:50:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview"], {
 		"./node_modules/shallowequal/index.js": function(e, t) {
@@ -1069,7 +1069,7 @@
 					showAwardsPlaque: O.a,
 					isTournamentPost: (e, {
 						post: t
-					}) => Boolean(t.predictionTournament) && Object(C.r)(e)
+					}) => Boolean(t.predictionTournament) && Object(C.s)(e)
 				}), (e, {
 					postId: t
 				}) => ({
@@ -4205,4 +4205,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.b186c473bbfc9d638b3d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.1d46f21f3e15fb042980.js.map
