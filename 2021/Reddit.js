@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.3414f98b3d987cae69aa.js
-// Retrieved at 9/8/2021, 1:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.d92644ff59c4db0bcb77.js
+// Retrieved at 9/8/2021, 1:50:40 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -3137,6 +3137,7 @@
 					frontpageSignupVariant: N.a,
 					isLoggedIn: R.K,
 					isOnboardingEnabled: T.a,
+					isOnboardingExperiment: T.b,
 					redirectUrl: I.b
 				}),
 				H = Object(i.b)(G, (e, t) => ({
@@ -3212,7 +3213,7 @@
 						if (!this.iframeRef.current || e.source !== this.iframeRef.current.contentWindow || !q(e)) return;
 						const {
 							exposeOnboardingExperiment: n,
-							isOnboardingEnabled: s
+							isOnboardingExperiment: s
 						} = this.props;
 						if (t.type === O.a.CreateAccount) this.isAccountCreated = !0;
 						else if (t.type === O.a.Close) this.closedByUser();
@@ -3301,7 +3302,7 @@
 						actionSource: e,
 						exposeIFrameElement: t,
 						exposeOnboardingExperiment: n,
-						isOnboardingEnabled: s,
+						isOnboardingExperiment: s,
 						oniFrameLoaded: o,
 						path: r,
 						setRef: a
@@ -19825,10 +19826,12 @@
 		},
 		"./src/reddit/selectors/experiments/onboarding.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "b", (function() {
+			n.d(t, "c", (function() {
 				return i
 			})), n.d(t, "a", (function() {
 				return c
+			})), n.d(t, "b", (function() {
+				return l
 			}));
 			var s = n("./node_modules/reselect/es/index.js"),
 				o = n("./src/reddit/constants/experiments.ts"),
@@ -19838,8 +19841,9 @@
 					experimentEligibilitySelector: r.a,
 					experimentName: o.Yd,
 					expEventOverride: !1
-				}), e => [o.ce.Enabled, o.ce.Enabled_noskip, o.ce.Enabled_noskip_no_preselect].find(t => t === e)),
-				c = Object(s.a)(i, e => !!Object(a.a)(e))
+				}), e => e),
+				c = Object(s.a)(i, e => !!Object(a.a)(e)),
+				l = Object(s.a)(i, e => !!e)
 		},
 		"./src/reddit/selectors/experiments/postCommentFollow.ts": function(e, t, n) {
 			"use strict";
@@ -20149,4 +20153,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePo~5f1ac562", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250", "Governance~ModListing~Reddit~Subreddit", "Chat~Governance~Reddit", "Reddit~StandalonePostPage~reddit-components-MediumPost", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.3414f98b3d987cae69aa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.d92644ff59c4db0bcb77.js.map
