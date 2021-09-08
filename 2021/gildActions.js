@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/gildActions.4203db1b03673e390257.js
-// Retrieved at 8/31/2021, 6:10:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/gildActions.dd94a03d8bc4255f49f5.js
+// Retrieved at 9/8/2021, 11:40:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["gildActions"], {
 		"./src/reddit/actions/gold/econPurchase.ts": function(e, t, s) {
@@ -116,9 +116,9 @@
 				}, {
 					query: s ? {} : Object(L.b)()
 				});
-			var E = s("./src/reddit/helpers/awards/getAwardItemId.ts"),
-				M = s("./src/reddit/helpers/awards/message.ts"),
-				N = s("./src/reddit/helpers/correlationIdTracker.ts"),
+			var N = s("./src/reddit/helpers/awards/getAwardItemId.ts"),
+				E = s("./src/reddit/helpers/awards/message.ts"),
+				M = s("./src/reddit/helpers/correlationIdTracker.ts"),
 				F = s("./src/reddit/helpers/isPost.ts"),
 				Y = s("./src/reddit/helpers/trackers/gild.ts"),
 				Q = s("./src/telemetry/index.ts"),
@@ -142,7 +142,7 @@
 								gildingTypeId: n.selectedAward.id,
 								isAnonymous: n.isAnonymous,
 								isGildFunded: !1,
-								message: Object(M.d)(n.message, n.selectedAward, i),
+								message: Object(E.d)(n.message, n.selectedAward, i),
 								nodeId: e
 							},
 							a = Object(F.a)(e) ? K : q,
@@ -190,7 +190,7 @@
 							});
 						await s(te(t))
 					} finally {
-						Object(N.b)(N.a.GildingFlow)
+						Object(M.b)(M.a.GildingFlow)
 					}
 				}, V = Object(a.a)(H.u), $ = Object(a.a)(H.q), X = () => async (e, t) => {
 					e($()), window.setTimeout(() => {
@@ -229,7 +229,7 @@
 						h = Object(_.a)(a, u),
 						w = e.awardKarmaReceived,
 						f = Object(R.k)(a),
-						k = Object(I.b)(a) || Object(N.d)(N.a.GildingFlow, !1);
+						k = Object(I.b)(a) || Object(M.d)(M.a.GildingFlow, !1);
 					if (Object(I.g)(a)) {
 						const e = "success.gild",
 							t = {},
@@ -238,7 +238,7 @@
 								minSize: 32,
 								postOrCommentId: m
 							});
-						t.awardId = u, t.awardIcon = s, Object(d.a)({
+						t.awardId = u, t.awardIcon = s, t.awardName = h.name, Object(d.a)({
 							type: e,
 							data: t
 						})
@@ -297,7 +297,7 @@
 							awarderKarmaReceived: w
 						}) : S
 					})), setTimeout(() => {
-						const e = Object(E.a)(u, m),
+						const e = Object(N.a)(u, m),
 							t = document.getElementById(e);
 						t && t.dispatchEvent(new Event("awardAdded"))
 					}, 10);
@@ -493,4 +493,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/gildActions.4203db1b03673e390257.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/gildActions.dd94a03d8bc4255f49f5.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.49425d700c450f062414.js
-// Retrieved at 9/8/2021, 10:40:10 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.7d2fc271a007262838fb.js
+// Retrieved at 9/8/2021, 11:40:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -705,7 +705,7 @@
 								minSize: 32,
 								postOrCommentId: m
 							});
-						t.awardId = u, t.awardIcon = s, Object(a.a)({
+						t.awardId = u, t.awardIcon = s, t.awardName = h.name, Object(a.a)({
 							type: e,
 							data: t
 						})
@@ -5418,4 +5418,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.49425d700c450f062414.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.7d2fc271a007262838fb.js.map
