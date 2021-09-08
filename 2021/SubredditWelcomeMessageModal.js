@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWelcomeMessageModal.7a6657268136dc5fe399.js
-// Retrieved at 9/8/2021, 1:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWelcomeMessageModal.435cda29659b0e1c96fe.js
+// Retrieved at 9/8/2021, 2:30:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWelcomeMessageModal"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1525,15 +1525,15 @@
 			})), s.d(t, "a", (function() {
 				return R
 			})), s.d(t, "b", (function() {
-				return B
-			})), s.d(t, "f", (function() {
 				return P
+			})), s.d(t, "f", (function() {
+				return B
 			})), s.d(t, "h", (function() {
 				return D
 			})), s.d(t, "g", (function() {
 				return F
 			})), s.d(t, "i", (function() {
-				return U
+				return A
 			})), s.d(t, "e", (function() {
 				return W
 			}));
@@ -1660,13 +1660,13 @@
 						key: n
 					}, o)
 				},
-				B = (e, t) => {
+				P = (e, t) => {
 					const s = e.c;
 					return a.a.createElement(d.k, {
 						key: t
 					}, a.a.createElement(d.h, null, s.reduce((e, t, s, n) => e += t.t + (s < n.length ? "\n" : ""), "")))
 				},
-				P = (e, t, s, n) => {
+				B = (e, t, s, n) => {
 					const r = e.c,
 						i = [],
 						o = r.length;
@@ -1686,13 +1686,13 @@
 						case p.b:
 							return R(e, t, s, n);
 						case p.c:
-							return B(e, n);
+							return P(e, n);
 						case p.k:
 							return M(e, s, n);
 						case p.l:
 							return L(n);
 						case p.p:
-							return P(e, t, s, n);
+							return B(e, t, s, n);
 						case p.u:
 							return F(e, t, s, n);
 						case p.z:
@@ -1718,7 +1718,7 @@
 							} = e;
 						l.push(a.a.createElement(n, {
 							key: d
-						}, U(o, t, s))), m[d] = r
+						}, A(o, t, s))), m[d] = r
 					}
 					for (let p = 0; p < o; p++) {
 						const e = r[p],
@@ -1731,7 +1731,7 @@
 								} = e[r];
 							i.push(a.a.createElement(n, {
 								key: r
-							}, U(o, t, s)))
+							}, A(o, t, s)))
 						}
 						u.push(a.a.createElement(d.t, {
 							key: p
@@ -1748,17 +1748,17 @@
 					const r = e.c[0];
 					return r.e !== p.m && r.e !== p.a || !Object(I.f)(r.id) ? a.a.createElement(d.j, {
 						key: n
-					}, U(e.c, t, s)) : Object(j.b)(r, n, t)
+					}, A(e.c, t, s)) : Object(j.b)(r, n, t)
 				},
-				U = (e, t, s) => {
+				A = (e, t, s) => {
 					const n = [],
 						r = e.length;
 					for (let i = 0; i < r; i++) {
 						const r = e[i];
-						if (r.e === p.A) n.push(A(r, i));
+						if (r.e === p.A) n.push(U(r, i));
 						else if (r.e === p.x) n.push(a.a.createElement(O.a, {
 							key: i
-						}, U(r.c, t, s)));
+						}, A(r.c, t, s)));
 						else if (r.e === p.n) n.push(a.a.createElement("br", {
 							key: i
 						}));
@@ -1778,7 +1778,7 @@
 				W = (e, t, s) => {
 					switch (e.e) {
 						case p.o:
-							const n = A({
+							const n = U({
 								t: e.t,
 								f: e.f
 							}, 0);
@@ -1818,23 +1818,23 @@
 							}, e.t)
 					}
 				},
-				A = (e, t) => {
+				U = (e, t) => {
 					const {
 						f: s,
 						t: r
 					} = e, i = [];
-					if (!s) return V(0, r, t);
+					if (!s) return J(0, r, t);
 					const o = Object(n.a)(r);
 					let a = 0,
 						d = 0;
 					const c = s.length;
 					for (; a < c; a++) {
 						const [e, t, n] = s[a], c = t + n, l = o[t], u = o[c] - l;
-						l > d && i.push(V(0, r.substr(d, l - d), `between${a}`)), i.push(V(e, r.substr(l, u), a)), d = l + u
+						l > d && i.push(J(0, r.substr(d, l - d), `between${a}`)), i.push(J(e, r.substr(l, u), a)), d = l + u
 					}
-					return d < r.length && i.push(V(0, r.substr(d), `remaining${a}`)), i
+					return d < r.length && i.push(J(0, r.substr(d), `remaining${a}`)), i
 				},
-				J = {
+				V = {
 					[p.j.monospace]: d.h,
 					[p.j.bold]: d.b,
 					[p.j.italic]: d.f,
@@ -1843,9 +1843,9 @@
 					[p.j.subscript]: d.l,
 					[p.j.superscript]: d.m
 				},
-				V = (e, t, s) => {
+				J = (e, t, s) => {
 					let n = t;
-					return n = i()(J, (t, n, r) => e & parseInt(r, 10) ? a.a.createElement(n, {
+					return n = i()(V, (t, n, r) => e & parseInt(r, 10) ? a.a.createElement(n, {
 						key: s
 					}, t) : t, n)
 				},
@@ -1976,12 +1976,12 @@
 						rtJsonElementProps: i
 					});
 					switch (n) {
-						case b.Ud.SmIcon:
+						case b.Vd.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: i
 							});
-						case b.Ud.SmIconHc:
+						case b.Vd.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -2088,7 +2088,7 @@
 				experimentVariant: e => {
 					var t;
 					return null === (t = Object(v.d)(e, {
-						experimentName: m.Qd
+						experimentName: m.Rd
 					})) || void 0 === t ? void 0 : t.variant
 				},
 				user: _.k,
@@ -2170,7 +2170,7 @@
 					rtJsonElementProps: N
 				}) : null === (i = null == _ ? void 0 : _.body) || void 0 === i ? void 0 : i.markdown)), r.a.createElement(d.g, {
 					className: k.a.modalFooter
-				}, u === m.Wd.Rules ? !j && r.a.createElement(p.q, {
+				}, u === m.Xd.Rules ? !j && r.a.createElement(p.q, {
 					priority: p.b.Secondary,
 					onClick: () => {
 						O(!0), y(b.b())
@@ -2559,12 +2559,12 @@
 				d = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: n.Od
+						experimentName: n.Pd
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === n.Ud.SmIcon || t === n.Ud.SmIconHc
+					return t === n.Vd.SmIcon || t === n.Vd.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -2587,4 +2587,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWelcomeMessageModal.7a6657268136dc5fe399.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWelcomeMessageModal.435cda29659b0e1c96fe.js.map

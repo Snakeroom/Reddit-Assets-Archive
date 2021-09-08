@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.49c4bd3f21b1036d3a58.js
-// Retrieved at 9/8/2021, 1:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.864dc844cf9b0f6094eb.js
+// Retrieved at 9/8/2021, 2:30:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, n) {
@@ -1390,7 +1390,7 @@
 						a = Object(v.j)(r, {
 							subredditId: s
 						}),
-						i = Object(C.l)(r);
+						i = Object(C.m)(r);
 					if (a) return Object(v.f)(r, {
 						subredditId: s
 					});
@@ -8345,7 +8345,7 @@
 						subreddit: n
 					} = e, {
 						isSponsored: o
-					} = t, r = Object(B.a)(), a = Object(U.a)(m.vc) === m.zc.Enabled;
+					} = t, r = Object(B.a)(), a = Object(U.a)(m.wc) === m.Ac.Enabled;
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return s.a.createElement(z, {
 						nowrap: e.nowrap
 					}, s.a.createElement(J, e));
@@ -22266,9 +22266,9 @@
 			var o = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const s = e => Object(r.c)(e, {
-				experimentName: o.Zc,
+				experimentName: o.ad,
 				experimentEligibilitySelector: r.a
-			}) === o.ed.Enabled
+			}) === o.fd.Enabled
 		},
 		"./src/reddit/selectors/experiments/presenceIndicator.ts": function(e, t, n) {
 			"use strict";
@@ -22282,14 +22282,14 @@
 			const s = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: o.kd
-					}) === o.vd.Enabled
+						experimentName: o.ld
+					}) === o.wd.Enabled
 				},
 				a = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: o.jd
-					}) === o.ud.Enabled
+						experimentName: o.kd
+					}) === o.vd.Enabled
 				}
 		},
 		"./src/reddit/selectors/experiments/replyWithUpvote.ts": function(e, t, n) {
@@ -22306,7 +22306,7 @@
 				return !(!t || (null == t ? void 0 : t.karma) && t.karma.fromPosts < 5 && t.karma.fromComments < 10) && Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
 					experimentName: o.jb
-				}) === o.lc
+				}) === o.mc
 			}
 		},
 		"./src/reddit/selectors/features/predictions/creation/index.ts": function(e, t, n) {
@@ -22963,4 +22963,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.49c4bd3f21b1036d3a58.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.864dc844cf9b0f6094eb.js.map

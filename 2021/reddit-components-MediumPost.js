@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.e9bb7ac1ad33cebd860b.js
-// Retrieved at 9/8/2021, 1:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.98c2480a348ecb1cf74c.js
+// Retrieved at 9/8/2021, 2:30:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-MediumPost"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -2344,7 +2344,7 @@
 						subreddit: s
 					} = e, {
 						isSponsored: n
-					} = t, o = Object(U.a)(), i = Object(B.a)(m.vc) === m.zc.Enabled;
+					} = t, o = Object(U.a)(), i = Object(B.a)(m.wc) === m.Ac.Enabled;
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return r.a.createElement(z, {
 						nowrap: e.nowrap
 					}, r.a.createElement(X, e));
@@ -4081,7 +4081,7 @@
 					experimentEligibilitySelector: o.a,
 					experimentName: n.Mb
 				});
-				return !(!t || Object(n.ne)(t))
+				return !(!t || Object(n.oe)(t))
 			}
 		},
 		"./src/reddit/selectors/i18n/index.ts": function(e, t, s) {
@@ -4097,7 +4097,7 @@
 				i = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const c = e => {
 					const t = Object(i.a)(e);
-					return Boolean(t) && !Object(o.ne)(t)
+					return Boolean(t) && !Object(o.oe)(t)
 				},
 				a = Object(n.a)(c, r.d, (e, t) => e && !t)
 		},
@@ -4113,13 +4113,13 @@
 				r = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = s("./src/reddit/selectors/posts.ts");
 			const c = e => Object(r.c)(e, {
-					experimentName: o.md,
+					experimentName: o.nd,
 					experimentEligibilitySelector: r.a
 				}),
-				a = (e, t) => t === o.wd.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				a = (e, t) => t === o.xd.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				d = Object(n.a)(i.H, c, (e, t) => a(e, t)),
 				l = Object(n.a)((e, t) => t, c, (e, t) => a(e, t))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.e9bb7ac1ad33cebd860b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.98c2480a348ecb1cf74c.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.c6bcc7009d7ab8ac1968.js
-// Retrieved at 9/8/2021, 1:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.e5d8e28ae1a4a5058dac.js
+// Retrieved at 9/8/2021, 2:30:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./node_modules/uuid/index.js": function(e, t, n) {
@@ -589,7 +589,7 @@
 						i = Object(g.j)(s, {
 							subredditId: r
 						}),
-						a = Object(O.l)(s);
+						a = Object(O.m)(s);
 					if (i) return Object(g.f)(s, {
 						subredditId: r
 					});
@@ -1525,14 +1525,14 @@
 					post: A
 				}) => {
 					var G, U, z, W;
-					const K = Object(r.e)(N.o),
+					const K = Object(r.e)(N.p),
 						Q = Object(r.e)(e => {
 							var t;
-							return (null === (t = A.pollData) || void 0 === t ? void 0 : t.isPrediction) && null !== A.pollData.resolvedOptionId && Object(N.m)(e)
+							return (null === (t = A.pollData) || void 0 === t ? void 0 : t.isPrediction) && null !== A.pollData.resolvedOptionId && Object(N.n)(e)
 						}),
 						V = Object(r.e)(e => {
 							var t;
-							return (null === (t = A.pollData) || void 0 === t ? void 0 : t.isPrediction) && Object(N.l)(e)
+							return (null === (t = A.pollData) || void 0 === t ? void 0 : t.isPrediction) && Object(N.m)(e)
 						}),
 						H = A.flair.filter(e => e.type !== y.f.Nsfw && e.type !== y.f.Spoiler).length > 0,
 						q = Object(_.b)(A),
@@ -2939,14 +2939,14 @@
 			const r = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: o.kd
-					}) === o.vd.Enabled
+						experimentName: o.ld
+					}) === o.wd.Enabled
 				},
 				i = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: o.jd
-					}) === o.ud.Enabled
+						experimentName: o.kd
+					}) === o.vd.Enabled
 				}
 		},
 		"./src/reddit/selectors/features/predictions/creation/index.ts": function(e, t, n) {
@@ -3066,4 +3066,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.c6bcc7009d7ab8ac1968.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.e5d8e28ae1a4a5058dac.js.map

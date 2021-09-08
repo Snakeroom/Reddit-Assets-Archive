@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePosts.1afcdab54db65aad300f.js
-// Retrieved at 9/8/2021, 1:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePosts.ae5589dfad6c0a05341f.js
+// Retrieved at 9/8/2021, 2:30:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePosts", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -4477,7 +4477,7 @@
 					}
 				}),
 				_ = e => {
-					const t = Object(i.e)(e => Object(f.k)(e));
+					const t = Object(i.e)(e => Object(f.l)(e));
 					return o.a.createElement(a.a, {
 						className: e.className
 					}, o.a.createElement(g, {
@@ -6034,12 +6034,12 @@
 						rtJsonElementProps: o
 					});
 					switch (s) {
-						case b.Ud.SmIcon:
+						case b.Vd.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: o
 							});
-						case b.Ud.SmIconHc:
+						case b.Vd.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -7391,13 +7391,13 @@
 						experimentEligibilitySelector: o.K,
 						experimentName: s.Tb
 					});
-					return !(!t || Object(s.ne)(t))
+					return !(!t || Object(s.oe)(t))
 				},
 				a = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: o.K,
 						experimentName: s.Tb
-					}) === s.qc.ListingEnabled
+					}) === s.rc.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, n) {
@@ -7529,12 +7529,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.Od
+						experimentName: s.Pd
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.Ud.SmIcon || t === s.Ud.SmIconHc
+					return t === s.Vd.SmIcon || t === s.Vd.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -7578,4 +7578,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.1afcdab54db65aad300f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.ae5589dfad6c0a05341f.js.map

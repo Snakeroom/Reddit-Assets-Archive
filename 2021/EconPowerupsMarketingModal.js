@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.ceb040667e051bcf87ec.js
-// Retrieved at 9/2/2021, 4:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.77bfa91098dd0bb50aab.js
+// Retrieved at 9/8/2021, 2:30:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsMarketingModal"], {
 		"./src/reddit/components/Econ/Common/BenefitTile/index.m.less": function(e, t, s) {
@@ -318,10 +318,10 @@
 				O = s("./src/reddit/components/Econ/Common/BenefitTile/index.tsx"),
 				v = s("./src/reddit/models/Gold/Powerups/index.ts"),
 				M = s("./src/reddit/selectors/experiments/econ/powerupsAward.ts");
-			const I = [v.a.CommentRecognition, v.a.PowerupsAward, v.a.CommentsWithGifs, v.a.CommentsWithEmoji, v.a.Achievements, v.a.HeroStatus, v.a.HdVideo],
-				y = Object(a.a)([M.b, g.h], (e, t) => {
-					let s = I;
-					return e || (s = s.filter(e => e !== v.a.PowerupsAward)), t || (s = s.filter(e => e !== v.a.CommentRecognition)), s
+			const I = [v.a.CommentRecognition, v.a.PowerupsAward, v.a.CommentsWithGifs, v.a.CommentsWithEmoji, v.a.Achievements, v.a.CommunityGear, v.a.HeroStatus, v.a.HdVideo],
+				y = Object(a.a)([M.b, g.h, g.i], (e, t, s) => {
+					let n = I;
+					return e || (n = n.filter(e => e !== v.a.PowerupsAward)), t || (n = n.filter(e => e !== v.a.CommentRecognition)), s || (n = n.filter(e => e !== v.a.CommunityGear)), n
 				});
 			var L = s("./src/reddit/components/Econ/PowerupsMarketingModal/Benefits/index.m.less"),
 				S = s.n(L);
@@ -380,7 +380,7 @@
 					currentSubredditId: t,
 					powerups: s,
 					subreddit: a
-				} = e, c = Object(r.d)(), h = Object(f.a)(), k = Object(r.e)(g.g), j = Object(r.e)(e => !Object(N.s)(e) && Object(g.j)(e)), {
+				} = e, c = Object(r.d)(), h = Object(f.a)(), k = Object(r.e)(g.g), j = Object(r.e)(e => !Object(N.s)(e) && Object(g.k)(e)), {
 					container: C,
 					isScrollGradientVisible: O,
 					calculateGradientVisibility: v
@@ -592,4 +592,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.ceb040667e051bcf87ec.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.77bfa91098dd0bb50aab.js.map
