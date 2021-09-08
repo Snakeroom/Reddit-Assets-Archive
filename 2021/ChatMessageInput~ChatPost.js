@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.7b931f25fb3443fa64a8.js
-// Retrieved at 9/8/2021, 10:40:10 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.9138f3444ba0639b7dec.js
+// Retrieved at 9/8/2021, 1:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~ChatPost"], {
 		"./node_modules/lodash/_baseReduce.js": function(e, t) {
@@ -326,7 +326,7 @@
 		"./src/reddit/components/Media/ImageBox/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "b", (function() {
-				return w
+				return T
 			}));
 			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
 				r = s("./node_modules/react/index.js"),
@@ -353,8 +353,8 @@
 				O = s("./src/reddit/components/Media/ImageBox/index.m.less"),
 				I = s.n(O);
 
-			function T() {
-				return (T = Object.assign || function(e) {
+			function w() {
+				return (w = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var n in s) Object.prototype.hasOwnProperty.call(s, n) && (e[n] = s[n])
@@ -362,14 +362,14 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const w = e => e > 2 * g.e,
+			const T = e => e > 2 * g.e,
 				S = e => {
 					const t = Object(d.a)(I.a.image, p.g, e.className, {
 							[I.a.mShowCentered]: e.showCentered,
 							[I.a.mShowBlurred]: e.shouldBlur
 						}),
 						s = {};
-					return e.showFull || e.isTall || (s.maxHeight = `${g.j}px`), e.isListing || e.isTall && w(e.height) || (s.maxHeight = `${g.e}px`), e.isExpando && e.maxHeight && (s.maxHeight = `${e.maxHeight}px`), e.isExpando && e.maxWidth && (s.maxWidth = `${e.maxWidth}px`), o.a.createElement("img", {
+					return e.showFull || e.isTall || (s.maxHeight = `${g.j}px`), e.isListing || e.isTall && T(e.height) || (s.maxHeight = `${g.e}px`), e.isExpando && e.maxHeight && (s.maxHeight = `${e.maxHeight}px`), e.isExpando && e.maxWidth && (s.maxWidth = `${e.maxWidth}px`), o.a.createElement("img", {
 						alt: e.altText || n.fbt._("Post image", null, {
 							hk: "3KfCgs"
 						}),
@@ -435,8 +435,8 @@
 					...t
 				}) => {
 					const s = Object(g.J)(t.height, t.width),
-						r = w(t.height) && s;
-					return o.a.createElement(k, T({}, t, {
+						r = T(t.height) && s;
+					return o.a.createElement(k, w({}, t, {
 						className: `${s?`${v.a} `:""}${t.className||""}`
 					}), t.isListing ? o.a.createElement("div", {
 						className: t.contentImageClassName
@@ -949,9 +949,9 @@
 			})), s.d(t, "t", (function() {
 				return I
 			})), s.d(t, "p", (function() {
-				return T
-			})), s.d(t, "o", (function() {
 				return w
+			})), s.d(t, "o", (function() {
+				return T
 			})), s.d(t, "q", (function() {
 				return S
 			})), s.d(t, "s", (function() {
@@ -987,8 +987,8 @@
 				y = c.a.sup("Sup", i.a),
 				O = c.a.table("Table", i.a),
 				I = c.a.tr("Tr", i.a),
-				T = c.a.td("Tdl", i.a),
-				w = c.a.td("Tdc", i.a),
+				w = c.a.td("Tdl", i.a),
+				T = c.a.td("Tdc", i.a),
 				S = c.a.td("Tdr", i.a),
 				k = c.a.th("Thl", i.a),
 				N = c.a.th("Thc", i.a),
@@ -1069,7 +1069,7 @@
 						rtJsonElementProps: f,
 						useExplicitTextColor: E,
 						shouldBlur: j
-					} = e, O = n.document, I = [], T = e.mediaMetadata || null, w = y(O), S = v(O);
+					} = e, O = n.document, I = [], w = e.mediaMetadata || null, T = y(O), S = v(O);
 					if (j && !r) return a.a.createElement(_, {
 						className: Object(i.a)(u.j, s)
 					}, a.a.createElement("div", {
@@ -1078,8 +1078,8 @@
 						className: g.a.unblurButton,
 						onClick: d
 					}, Object(l.a)(!!o, !!c))));
-					if (-1 !== w)
-						for (let a = w; a <= S; a++) {
+					if (-1 !== T)
+						for (let a = T; a <= S; a++) {
 							const e = O[a];
 							switch (e.e) {
 								case p.k:
@@ -1089,19 +1089,19 @@
 									I.push(x.d(a));
 									break;
 								case p.b:
-									I.push(x.a(e, T, f, a));
+									I.push(x.a(e, w, f, a));
 									break;
 								case p.c:
 									I.push(x.b(e, a));
 									break;
 								case p.p:
-									I.push(x.f(e, T, f, a));
+									I.push(x.f(e, w, f, a));
 									break;
 								case p.z:
-									I.push(x.h(e, T, f, a));
+									I.push(x.h(e, w, f, a));
 									break;
 								case p.u:
-									I.push(x.g(e, T, f, a));
+									I.push(x.g(e, w, f, a));
 									break;
 								case p.h:
 									I.push(Object(b.a)(e, a));
@@ -1109,7 +1109,7 @@
 								case p.m:
 								case p.a:
 								case p.D:
-									I.push(...Object(b.b)(e, a, T, h, m, t))
+									I.push(...Object(b.b)(e, a, w, h, m, t))
 							}
 						}
 					return E ? a.a.createElement(_, {
@@ -1170,7 +1170,7 @@
 			s.d(t, "a", (function() {
 				return I
 			})), s.d(t, "b", (function() {
-				return w
+				return T
 			}));
 			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
 				r = s("./node_modules/react/index.js"),
@@ -1241,7 +1241,7 @@
 					showCentered: !0,
 					showFull: !0
 				}))),
-				T = (e, t, s) => {
+				w = (e, t, s) => {
 					const n = e.c;
 					let r = "";
 					return s && (s.e === p.s ? r = s.s.u : s.e === p.r ? r = s.s.gif : s.e === p.t && (r = (e => {
@@ -1253,9 +1253,9 @@
 						title: n
 					}, n || r) : null
 				},
-				w = (e, t, s, n, r, i) => {
+				T = (e, t, s, n, r, i) => {
 					const d = p.E(s, e.id);
-					if (n) return [T(e, t, d)];
+					if (n) return [w(e, t, d)];
 					const l = [];
 					return d ? d.e === p.s ? l.push((({
 						id: e,
@@ -1478,8 +1478,8 @@
 				y = s("./src/reddit/components/RichTextJson/media.tsx"),
 				O = s("./src/reddit/components/RichTextJson/SpoilerText.tsx"),
 				I = s("./src/reddit/components/SubredditMention/index.tsx"),
-				T = s("./src/reddit/helpers/crypto/vaultActionLink.ts"),
-				w = s("./src/reddit/helpers/isComment.ts"),
+				w = s("./src/reddit/helpers/crypto/vaultActionLink.ts"),
+				T = s("./src/reddit/helpers/isComment.ts"),
 				S = s("./src/reddit/helpers/isPost.ts"),
 				k = s("./src/reddit/helpers/richTextJson/index.ts"),
 				N = s("./src/reddit/helpers/trackers/getRichTextSourceElement.ts");
@@ -1632,7 +1632,7 @@
 								t: e.t,
 								f: e.f
 							}, 0);
-							if (Object(T.b)(e.u)) return i.a.createElement(c.w, {
+							if (Object(w.b)(e.u)) return i.a.createElement(c.w, {
 								to: e.u,
 								key: s,
 								title: e.a
@@ -1640,7 +1640,7 @@
 							let r, o;
 							const a = Object(N.a)(t),
 								d = t.renderingObjectInfo;
-							return d && Object(S.b)(d) && (r = d.postId), d && Object(w.b)(d) && (o = d.id, r = d.postId), i.a.createElement(c.a, {
+							return d && Object(S.b)(d) && (r = d.postId), d && Object(T.b)(d) && (o = d.id, r = d.postId), i.a.createElement(c.a, {
 								href: e.u,
 								key: s,
 								title: e.a,
@@ -1901,12 +1901,12 @@
 						rtJsonElementProps: o
 					});
 					switch (n) {
-						case b.Td.SmIcon:
+						case b.Ud.SmIcon:
 							return r.a.createElement(h, {
 								subredditName: s,
 								rtJsonElementProps: o
 							});
-						case b.Td.SmIconHc:
+						case b.Ud.SmIconHc:
 							return r.a.createElement(h, {
 								subredditName: s,
 								isHoverable: !0,
@@ -1942,7 +1942,7 @@
 			s.d(t, "a", (function() {
 				return I
 			})), s.d(t, "c", (function() {
-				return T
+				return w
 			}));
 			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
 				r = s("./node_modules/lodash/uniqueId.js"),
@@ -2060,7 +2060,7 @@
 						key: t
 					}, e))) : null
 				},
-				T = e => d.a.createElement(I, {
+				w = e => d.a.createElement(I, {
 					fallbackMessage: n.fbt._("Something went wrong", null, {
 						hk: "Cw1BT"
 					}),
@@ -2299,12 +2299,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: n.Nd
+						experimentName: n.Od
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === n.Td.SmIcon || t === n.Td.SmIconHc
+					return t === n.Ud.SmIcon || t === n.Ud.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -2327,4 +2327,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.7b931f25fb3443fa64a8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.9138f3444ba0639b7dec.js.map

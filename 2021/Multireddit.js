@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.4ed9521e69f7760e9437.js
-// Retrieved at 9/8/2021, 10:40:10 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.20c1492a7650626b918d.js
+// Retrieved at 9/8/2021, 1:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -5944,12 +5944,12 @@
 						rtJsonElementProps: o
 					});
 					switch (s) {
-						case b.Td.SmIcon:
+						case b.Ud.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: o
 							});
-						case b.Td.SmIconHc:
+						case b.Ud.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -8004,15 +8004,15 @@
 			const i = e => {
 					const t = Object(r.c)(e, {
 						experimentEligibilitySelector: o.K,
-						experimentName: s.Sb
+						experimentName: s.Tb
 					});
-					return !(!t || Object(s.me)(t))
+					return !(!t || Object(s.ne)(t))
 				},
 				a = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: o.K,
-						experimentName: s.Sb
-					}) === s.pc.ListingEnabled
+						experimentName: s.Tb
+					}) === s.qc.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, n) {
@@ -8144,12 +8144,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.Nd
+						experimentName: s.Od
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.Td.SmIcon || t === s.Td.SmIconHc
+					return t === s.Ud.SmIcon || t === s.Ud.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -8178,4 +8178,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.4ed9521e69f7760e9437.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.20c1492a7650626b918d.js.map
