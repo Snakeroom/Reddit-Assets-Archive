@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.f112bf0b76719efa6c5e.js
-// Retrieved at 9/8/2021, 1:50:40 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.c3269890eaa4fceb8fa5.js
+// Retrieved at 9/8/2021, 2:10:21 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var n, a, i = o[0], s = o[1], c = o[2], l = 0, P = []; l < i.length; l++) a = i[l], Object.prototype.hasOwnProperty.call(d, a) && d[a] && P.push(d[a][0]), d[a] = 0;
@@ -1335,7 +1335,7 @@
 						"translations/es_MX-json": "2827beaff62801f6dabb",
 						"translations/fr_FR-json": "4cff530fcf87692d47f8",
 						"translations/it_IT-json": "c0a9d95b92cc2295aea3",
-						"translations/pseudo_ext-json": "3d5025e504f2faba5949",
+						"translations/pseudo_ext-json": "c2ddb5e8a111c7e7e7a2",
 						"translations/pseudo_long-json": "fda3b9c52fc4e90dc7db",
 						"translations/pseudo_short-json": "2d115b6b7ce99d2274ea",
 						"translations/pt_BR-json": "44486eb4c98486947975",
@@ -1363,7 +1363,7 @@
 						Settings: "8f11e9b9c6dd3f7132d7",
 						"vendors~ModerationPages": "39e50d1662977fa3b008",
 						"ModerationPages~SubredditWiki": "52e8a3a53d6e8bcdab17",
-						ModerationPages: "643b319baa4b56a0625d",
+						ModerationPages: "1c5bda5ed1ecc3de5d13",
 						"vendors~CryptoLibEthers~reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-compon~fb9f1732": "7911e63de13ba06455be",
 						"reddit-pages-meta-ArbitrumPointsMigrationPage": "f11d33d9a6c7842ca6b2",
 						"vendors~reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-~bd661033": "74ffecc975f2389205d9",
@@ -1413,7 +1413,7 @@
 						CommunityTopicSurvey: "7296dc2bf14d041ecbda",
 						index: "84b2e748594327fd171e",
 						FeaturedLiveEntrypointLegacyAnnouncement: "804db7c97da99aaf7c05",
-						IdCard: "4b4f8e9f9de62d2bed42",
+						IdCard: "93c0cf4d18b99c732e10",
 						"reddit-components-ClassicPost": "94b263d779b8ead223a0",
 						"reddit-components-BlankPost": "aa4006d19ec0cd0be851",
 						PennyPurchaseModal: "9255e81dbbb6c65d268a",
@@ -1585,4 +1585,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.f112bf0b76719efa6c5e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.c3269890eaa4fceb8fa5.js.map
