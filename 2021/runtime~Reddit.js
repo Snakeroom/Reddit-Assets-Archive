@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.13f9bd07b12b43f5ccb4.js
-// Retrieved at 9/9/2021, 5:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.4c27645c2812a1af38b5.js
+// Retrieved at 9/9/2021, 5:30:07 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, i = o[0], s = o[1], c = o[2], l = 0, P = []; l < i.length; l++) n = i[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && P.push(d[n][0]), d[n] = 0;
@@ -1335,7 +1335,7 @@
 						"translations/es_MX-json": "4e7ead5703dc4f7feed1",
 						"translations/fr_FR-json": "97ba5f8ac5b5222abc30",
 						"translations/it_IT-json": "a49afe8db7e6670330cc",
-						"translations/pseudo_ext-json": "fcd8f6c2e0933a70f484",
+						"translations/pseudo_ext-json": "08e203c32fb3a04889ef",
 						"translations/pseudo_long-json": "84a3ed0f017e6238c63a",
 						"translations/pseudo_short-json": "5f076ac95c9430e3dd29",
 						"translations/pt_BR-json": "e83bb514c2f6695b4011",
@@ -1347,8 +1347,8 @@
 						MembershipPaywallPage: "787b1470bb8d2be74480",
 						FlairEdit: "bd4f3f601ea45c84a07b",
 						"vendors~Chat~RedesignChat": "8e5a5e659469fe3d2ed9",
-						"Chat~RedesignChat": "2c54455978b4a27e344e",
-						RedesignChat: "520730fb03dc1da84b92",
+						"Chat~RedesignChat": "4f07566749a3e4038c7c",
+						RedesignChat: "6622667720d1c81205fb",
 						"vendors~CollectionCommentsPage~CommentsPage": "74fecf4322147c824f67",
 						"CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki": "7c139430b98a1ef24cd0",
 						CollectionCommentsPage: "553751744210073d0920",
@@ -1452,7 +1452,7 @@
 						OverlayChannelRemoval: "49a17760f857ce0e306a",
 						OverlayChatMembers: "2824067f09bd7e2d451d",
 						OverlayCreateChannel: "e0471d3aeae526d4af76",
-						OverlayDeleteMessage: "08d7348468e8f75d969e",
+						OverlayDeleteMessage: "0b6a7737fe199606a36d",
 						OverlayDirectsEmptyState: "08faa3ebb8c51567230b",
 						OverlayKickUser: "69f2dbf70082cfcec90e",
 						OverlayNSFWWarning: "5a3763abf6f22ac0bd24",
@@ -1585,4 +1585,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.13f9bd07b12b43f5ccb4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.4c27645c2812a1af38b5.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OverlayDeleteMessage.08d7348468e8f75d969e.js
-// Retrieved at 7/28/2021, 2:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OverlayDeleteMessage.0b6a7737fe199606a36d.js
+// Retrieved at 9/9/2021, 5:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OverlayDeleteMessage"], {
 		"./src/chat/components/OverlayDeleteMessage/index.m.less": function(e, t, a) {
@@ -36,7 +36,7 @@
 				O = a.n(x);
 			const _ = Object(h.a)({
 					message: (e, t) => Object(p.b)(e, t.messageId),
-					isChatEmbedded: B.a,
+					isChatEmbedded: B.c,
 					isMessageFromCurrentUser: (e, t) => Object(p.g)(e, t.messageId)
 				}),
 				k = Object(o.b)(_, (e, t) => ({
@@ -157,4 +157,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayDeleteMessage.08d7348468e8f75d969e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayDeleteMessage.0b6a7737fe199606a36d.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.095884d1f2d860c3494d.js
-// Retrieved at 9/9/2021, 5:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.48ad611aa98ab68c5718.js
+// Retrieved at 9/9/2021, 5:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -47,24 +47,34 @@
 		"./src/chat/actions/container.ts": function(e, t, i) {
 			"use strict";
 			i.r(t), i.d(t, "SIZE_CHANGED", (function() {
-				return s
-			})), i.d(t, "sizeChanged", (function() {
 				return o
-			})), i.d(t, "popoutOpened", (function() {
+			})), i.d(t, "FOCUS_CHANGED", (function() {
 				return d
+			})), i.d(t, "sizeChanged", (function() {
+				return a
+			})), i.d(t, "popoutOpened", (function() {
+				return l
+			})), i.d(t, "toggleFocusAction", (function() {
+				return u
+			})), i.d(t, "changeFocus", (function() {
+				return c
 			}));
 			var n = i("./src/chat/constants/container.ts"),
-				r = i("./src/lib/makeActionCreator/index.ts");
-			const s = "CONTAINER__SIZE_CHANGED",
-				o = Object(r.a)(s),
-				d = () => async (e, t, {
-					apiContext: i
-				}) => {
+				r = i("./src/chat/selectors/app.ts"),
+				s = i("./src/lib/makeActionCreator/index.ts");
+			const o = "CONTAINER__SIZE_CHANGED",
+				d = "CONTAINER__FOCUS_CHANGED",
+				a = Object(s.a)(o),
+				l = () => async (e, t) => {
 					const {
-						currentPage: r
+						currentPage: i
 					} = t().platform;
-					if (!r) throw new Error("Could not open pop-out: current page not defined");
-					window.open(r.url, "_blank", "width=1024, height=768"), e(o(n.a.MINIMIZED))
+					if (!i) throw new Error("Could not open pop-out: current page not defined");
+					window.open(i.url, "_blank", "width=1024, height=768"), e(a(n.a.MINIMIZED))
+				}, u = Object(s.a)(d), c = e => async (t, i) => {
+					const n = i(),
+						s = Object(r.b)(n);
+					e !== s && t(u())
 				}
 		},
 		"./src/chat/actions/promo/constants.ts": function(e, t, i) {
@@ -468,7 +478,7 @@
 				}),
 				b = r()(e => {
 					const t = e.getState(),
-						i = Object(c.d)(t),
+						i = Object(c.f)(t),
 						n = t.user.account && t.user.account.id,
 						r = w(n),
 						s = g(n);
@@ -1454,38 +1464,45 @@
 		},
 		"./src/chat/selectors/app.ts": function(e, t, i) {
 			"use strict";
-			i.d(t, "f", (function() {
-				return a
-			})), i.d(t, "b", (function() {
+			i.d(t, "h", (function() {
 				return l
-			})), i.d(t, "a", (function() {
-				return u
-			})), i.d(t, "g", (function() {
-				return c
 			})), i.d(t, "d", (function() {
-				return _
-			})), i.d(t, "e", (function() {
-				return p
+				return u
 			})), i.d(t, "c", (function() {
+				return c
+			})), i.d(t, "i", (function() {
+				return _
+			})), i.d(t, "f", (function() {
+				return m
+			})), i.d(t, "g", (function() {
 				return h
+			})), i.d(t, "e", (function() {
+				return f
+			})), i.d(t, "b", (function() {
+				return b
+			})), i.d(t, "a", (function() {
+				return g
 			}));
 			var n = i("./node_modules/fbt/lib/FbtPublic.js"),
 				r = i("./node_modules/lodash/isEmpty.js"),
 				s = i.n(r),
 				o = i("./node_modules/reselect/es/index.js"),
 				d = i("./src/chat/constants/container.ts");
-			const a = e => e.container.size === d.a.HIDDEN,
-				l = e => e.container.size === d.a.EMBED || e.container.size === d.a.FULL,
-				u = e => e.container.size === d.a.EMBED || e.container.size === d.a.MINIMIZED,
-				c = e => !(!(e.user.account && e.sendbird.session.active && e.sendbird.sdk.initialized && e.channels.firstLoaded) || m(e)),
-				_ = e => window.parent !== window || !!(e && e.meta && e.meta.isRedesign),
-				m = e => {
+			const a = e => e.container,
+				l = Object(o.a)(e => a(e), e => e.size === d.a.HIDDEN),
+				u = Object(o.a)(e => a(e), e => e.size === d.a.EMBED || e.size === d.a.FULL),
+				c = Object(o.a)(e => a(e), e => e.size === d.a.EMBED || e.size === d.a.MINIMIZED),
+				_ = e => !(!(e.user.account && e.sendbird.session.active && e.sendbird.sdk.initialized && e.channels.firstLoaded) || p(e)),
+				m = e => window.parent !== window || !!(e && e.meta && e.meta.isRedesign),
+				p = e => {
 					if (!e.user.account) return n.fbt._("Sign in, please.", null, {
 						hk: "3cGIp8"
 					})
 				},
-				p = e => !(e.container.size !== d.a.FULL),
-				h = Object(o.a)(e => !s()(e.user.experiments), c, (e, t) => e && t)
+				h = Object(o.a)(e => a(e), e => !(e.size !== d.a.FULL)),
+				f = Object(o.a)(e => !s()(e.user.experiments), _, (e, t) => e && t),
+				b = Object(o.a)(e => a(e), e => e.isFocused),
+				g = Object(o.a)(e => a(e), e => e.size)
 		},
 		"./src/chat/selectors/channels.ts": function(e, t, i) {
 			"use strict";
@@ -2090,7 +2107,7 @@
 				d = i("./src/lib/constants/cookie.ts"),
 				a = i("./src/chat/selectors/app.ts");
 			const l = e => ({
-					pageType: Object(a.d)(e) ? "chat" : "chat_fullscreen"
+					pageType: Object(a.f)(e) ? "chat" : "chat_fullscreen"
 				}),
 				u = e => e.meta.platform || void 0,
 				c = e => {
@@ -2520,13 +2537,13 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("144633"),
+				buildNumber: r("144642"),
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1631219462"),
+				})("1631221671"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -5004,14 +5021,14 @@
 					}))
 				},
 				z = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c0e60000594078645f716fe6d56d66448f7f06484-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c7be002d8ea115f9b976ff6b75a4a2475dd3fa5d5-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${v.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "0e60000594078645f716fe6d56d66448f7f06484-production",
+						release: "7be002d8ea115f9b976ff6b75a4a2475dd3fa5d5-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -5505,7 +5522,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "0e60000594078645f716fe6d56d66448f7f06484-production",
+						releaseClient: "7be002d8ea115f9b976ff6b75a4a2475dd3fa5d5-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -40770,4 +40787,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.095884d1f2d860c3494d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.48ad611aa98ab68c5718.js.map
