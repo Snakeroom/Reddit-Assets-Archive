@@ -1,11 +1,11 @@
-// https://www.redditstatic.com/desktop2x/OverlayReport.2c2e946a792ee2f4713c.js
-// Retrieved at 9/1/2021, 3:30:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OverlayReport.9fbad6e57c03c35c9202.js
+// Retrieved at 9/9/2021, 7:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OverlayReport"], {
 		"./src/chat/components/OverlayReport/index.tsx": function(e, t, s) {
 			"use strict";
 			s.r(t), s.d(t, "OverlayReport", (function() {
-				return K
+				return M
 			}));
 			var a = s("./node_modules/fbt/lib/FbtPublic.js"),
 				n = s("./node_modules/lodash/map.js"),
@@ -51,12 +51,12 @@
 				N = Object(E.a)({
 					user: (e, t) => t.attr === w.a.User ? e.contacts.models[t.attrId] : void 0,
 					message: (e, t) => t.attr === w.a.Invite || t.attr === w.a.Message ? Object(T.b)(e, Number(t.attrId)) : void 0,
-					messageList: e => Object(j.B)(e),
+					messageList: e => Object(j.C)(e),
 					currentUserId: (e, t) => Object(L.a)(e)
 				}),
 				H = Object(l.b)(N, e => ({
 					onReportUser: (t, s) => {
-						e(Object(m.J)(s.id)), e((e => async (t, s, {
+						e(Object(m.M)(s.id)), e((e => async (t, s, {
 							apiContext: a
 						}) => {
 							const {
@@ -73,7 +73,7 @@
 						})).then(() => e(Object(i.a)()))
 					},
 					onReportMessage: (t, s, a) => {
-						e(Object(m.L)(s.messageId, t)), e(((e, t, s) => async (a, n, {
+						e(Object(m.O)(s.messageId, t)), e(((e, t, s) => async (a, n, {
 							apiContext: r
 						}) => {
 							const o = Object(h.a)(e, t),
@@ -82,7 +82,7 @@
 						})(t, s, a))
 					}
 				}));
-			class K extends o.Component {
+			class M extends o.Component {
 				constructor(e) {
 					super(e), this.selectReason = e => this.setState({
 						selectedReason: e
@@ -197,7 +197,7 @@
 					}))
 				}
 			}
-			t.default = H(K)
+			t.default = H(M)
 		},
 		"./src/chat/controls/Checkbox/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -324,43 +324,43 @@
 				l = s("./src/config.ts"),
 				i = s("./src/lib/classNames/index.ts"),
 				d = s("./src/chat/controls/Button/index.tsx"),
-				u = s("./src/chat/helpers/dom.ts"),
-				h = s("./src/chat/controls/OverlayControlBar/index.m.less"),
-				m = s.n(h);
+				u = s("./src/chat/controls/OverlayControlBar/index.m.less"),
+				h = s.n(u),
+				m = s("./src/chat/helpers/dom.ts");
 			const p = Object(o.b)(void 0, e => ({
 				onSubmit: () => {},
-				onCancel: Object(u.b)(() => e(Object(c.a)()))
+				onCancel: Object(m.b)(() => e(Object(c.a)()))
 			}))(e => r.a.createElement("div", {
 				className: Object(i.a)({
-					[m.a.primary]: e.primaryButtonOnly,
-					[m.a.NoHeaderText]: !e.children
-				}, m.a.OverlayControlBar, e.className)
+					[h.a.primary]: e.primaryButtonOnly,
+					[h.a.NoHeaderText]: !e.children
+				}, h.a.OverlayControlBar, e.className)
 			}, e.children && r.a.createElement("span", {
-				className: m.a.HeaderText
+				className: h.a.HeaderText
 			}, e.children), r.a.createElement("div", {
-				className: m.a.ButtonsWrapper
+				className: h.a.ButtonsWrapper
 			}, e.primaryButtonBlock && r.a.createElement(d.a, {
 				onClick: e.primaryButtonBlockAction || e.onCancel,
-				className: Object(i.a)(m.a.Button, m.a.NoBorderPrimaryButton),
+				className: Object(i.a)(h.a.Button, h.a.NoBorderPrimaryButton),
 				secondary: !0,
 				noBorder: !0
 			}, e.primaryButtonBlockText || a.fbt._("Block", null, {
 				hk: "4CA4VX"
 			})), !e.primaryButtonOnly && (e.secondaryButtonCTLOptions ? r.a.createElement(d.a, {
-				className: m.a.Button,
+				className: h.a.Button,
 				href: `${l.a.redditHelpUrl}/en/categories/rules-reporting/suicide-response/what-do-i-do-if-someone-talks-about-seriously-hurting`,
 				secondary: !0
 			}, a.fbt._("Other Options", null, {
 				hk: "1RadlV"
 			})) : r.a.createElement(d.a, {
-				className: m.a.Button,
+				className: h.a.Button,
 				onClick: e.secondaryButtonAction || e.onCancel,
 				primary: !!e.secondaryButtonOnly,
 				secondary: !e.secondaryButtonOnly
 			}, e.secondaryButtonText || a.fbt._("Cancel", null, {
 				hk: "2TSLl5"
 			}))), !e.secondaryButtonOnly && r.a.createElement(d.a, {
-				className: m.a.Button,
+				className: h.a.Button,
 				type: "submit",
 				primary: !0,
 				onClick: e.primaryButtonAction || e.onSubmit,
@@ -404,4 +404,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayReport.2c2e946a792ee2f4713c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayReport.9fbad6e57c03c35c9202.js.map

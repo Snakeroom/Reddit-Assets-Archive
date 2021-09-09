@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.cb6724c171e79df477bc.js
-// Retrieved at 9/9/2021, 7:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.939d43abe419a703fc04.js
+// Retrieved at 9/9/2021, 7:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -35,8 +35,8 @@
 				o = n.n(s),
 				r = n("./src/lib/classNames/index.ts"),
 				a = n("./src/lib/FocusTrap/index.ts"),
-				i = n("./src/reddit/actions/shortcuts/utils.ts"),
-				c = n("./src/reddit/components/Portal/index.tsx"),
+				i = n("./src/lib/portal/index.tsx"),
+				c = n("./src/reddit/actions/shortcuts/utils.ts"),
 				l = n("./src/reddit/constants/shortcuts.ts"),
 				d = n("./src/reddit/helpers/toggleBodyScroll/index.ts"),
 				u = n("./src/higherOrderComponents/asModal/index.m.less"),
@@ -78,7 +78,7 @@
 					componentWillUnmount() {
 						this.setState({
 							mounted: !1
-						}), Object(d.b)(), Object(i.d)(), this.focusTrap && this.focusTrap.deactivate()
+						}), Object(d.b)(), Object(c.d)(), this.focusTrap && this.focusTrap.deactivate()
 					}
 					render() {
 						const {
@@ -87,15 +87,15 @@
 							className: n,
 							ignoreDefaultFocus: s,
 							onOverlayClick: a,
-							overlayClassName: i,
+							overlayClassName: c,
 							overlayCustomStyles: d,
 							withOverlay: u,
 							...p
 						} = t, h = p;
-						return o.a.createElement(c.a, {
+						return o.a.createElement(i.a, {
 							container: document.getElementById(l.b)
 						}, o.a.createElement(b, {
-							className: i,
+							className: c,
 							isVisible: u,
 							onClick: this.onOverlayClick,
 							style: d
@@ -19407,4 +19407,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePo~5f1ac562", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit", "Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250", "Governance~ModListing~Reddit~Subreddit", "Chat~Governance~Reddit", "Reddit~StandalonePostPage~reddit-components-MediumPost", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.cb6724c171e79df477bc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.939d43abe419a703fc04.js.map

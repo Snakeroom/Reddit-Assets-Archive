@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OverlayBlockUser.d380f540e7c9abb79990.js
-// Retrieved at 7/28/2021, 2:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OverlayBlockUser.60aa8ee28cb5dffda6a5.js
+// Retrieved at 9/9/2021, 7:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OverlayBlockUser"], {
 		"./src/chat/components/OverlayBlockUser/index.m.less": function(e, t, n) {
@@ -30,7 +30,7 @@
 				}),
 				k = Object(s.b)(h, e => ({
 					onChannelBlock: t => {
-						e(c.n(t)), e(l.I(t))
+						e(c.n(t)), e(l.L(t))
 					}
 				}))(e => {
 					const {
@@ -88,43 +88,43 @@
 				c = n("./src/config.ts"),
 				i = n("./src/lib/classNames/index.ts"),
 				d = n("./src/chat/controls/Button/index.tsx"),
-				u = n("./src/chat/helpers/dom.ts"),
-				m = n("./src/chat/controls/OverlayControlBar/index.m.less"),
-				B = n.n(m);
+				u = n("./src/chat/controls/OverlayControlBar/index.m.less"),
+				m = n.n(u),
+				B = n("./src/chat/helpers/dom.ts");
 			const y = Object(s.b)(void 0, e => ({
 				onSubmit: () => {},
-				onCancel: Object(u.b)(() => e(Object(l.a)()))
+				onCancel: Object(B.b)(() => e(Object(l.a)()))
 			}))(e => o.a.createElement("div", {
 				className: Object(i.a)({
-					[B.a.primary]: e.primaryButtonOnly,
-					[B.a.NoHeaderText]: !e.children
-				}, B.a.OverlayControlBar, e.className)
+					[m.a.primary]: e.primaryButtonOnly,
+					[m.a.NoHeaderText]: !e.children
+				}, m.a.OverlayControlBar, e.className)
 			}, e.children && o.a.createElement("span", {
-				className: B.a.HeaderText
+				className: m.a.HeaderText
 			}, e.children), o.a.createElement("div", {
-				className: B.a.ButtonsWrapper
+				className: m.a.ButtonsWrapper
 			}, e.primaryButtonBlock && o.a.createElement(d.a, {
 				onClick: e.primaryButtonBlockAction || e.onCancel,
-				className: Object(i.a)(B.a.Button, B.a.NoBorderPrimaryButton),
+				className: Object(i.a)(m.a.Button, m.a.NoBorderPrimaryButton),
 				secondary: !0,
 				noBorder: !0
 			}, e.primaryButtonBlockText || a.fbt._("Block", null, {
 				hk: "4CA4VX"
 			})), !e.primaryButtonOnly && (e.secondaryButtonCTLOptions ? o.a.createElement(d.a, {
-				className: B.a.Button,
+				className: m.a.Button,
 				href: `${c.a.redditHelpUrl}/en/categories/rules-reporting/suicide-response/what-do-i-do-if-someone-talks-about-seriously-hurting`,
 				secondary: !0
 			}, a.fbt._("Other Options", null, {
 				hk: "1RadlV"
 			})) : o.a.createElement(d.a, {
-				className: B.a.Button,
+				className: m.a.Button,
 				onClick: e.secondaryButtonAction || e.onCancel,
 				primary: !!e.secondaryButtonOnly,
 				secondary: !e.secondaryButtonOnly
 			}, e.secondaryButtonText || a.fbt._("Cancel", null, {
 				hk: "2TSLl5"
 			}))), !e.secondaryButtonOnly && o.a.createElement(d.a, {
-				className: B.a.Button,
+				className: m.a.Button,
 				type: "submit",
 				primary: !0,
 				onClick: e.primaryButtonAction || e.onSubmit,
@@ -136,4 +136,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayBlockUser.d380f540e7c9abb79990.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayBlockUser.60aa8ee28cb5dffda6a5.js.map

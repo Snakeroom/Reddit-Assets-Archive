@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OverlayChannelInvited.b72bf40c5ace5c858148.js
-// Retrieved at 9/2/2021, 2:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OverlayChannelInvited.0ba5d601adb2feb2c8ff.js
+// Retrieved at 9/9/2021, 7:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OverlayChannelInvited"], {
 		"./src/chat/components/OverlayChannelInvited/index.m.less": function(e, t, a) {
@@ -67,14 +67,14 @@
 				E = a("./src/chat/selectors/contacts.ts"),
 				f = a("./src/chat/selectors/experiments.ts"),
 				g = a("./src/chat/components/OverlayChannelInvited/index.m.less"),
-				I = a.n(g),
-				A = a("./src/chat/constants/channels.ts");
+				A = a.n(g),
+				I = a("./src/chat/constants/channels.ts");
 			const {
 				fbt: M
 			} = a("./node_modules/fbt/lib/FbtPublic.js"), D = ({
 				children: e
 			}) => l.a.createElement("span", {
-				className: I.a.LightTextSmall
+				className: A.a.LightTextSmall
 			}, e), G = ({
 				inviterContact: e
 			}) => {
@@ -104,57 +104,54 @@
 					rel: i.b,
 					href: `${n.a.redditUrl}/user/${e.name}`
 				}, l.a.createElement(O, {
-					className: I.a.MediaObject
+					className: A.a.MediaObject
 				}, s ? l.a.createElement(N.a, {
-					className: I.a.NSFWIcon
+					className: A.a.NSFWIcon
 				}) : l.a.createElement(j.a, {
-					className: I.a.UserPic,
+					className: A.a.UserPic,
 					userId: e.id
 				}), l.a.createElement("div", {
-					className: I.a.TitleContainer
+					className: A.a.TitleContainer
 				}, l.a.createElement(v.a, {
-					className: I.a.Title,
+					className: A.a.Title,
 					bold: !0
 				}, e.name), s && l.a.createElement("span", {
-					className: I.a.WarningTextNSFW
+					className: A.a.WarningTextNSFW
 				}, M._("NSFW", null, {
 					hk: "3rI4EF"
 				}))), l.a.createElement(G, {
 					inviterContact: t
 				}))), void 0 !== r && c && l.a.createElement(w, {
 					channelType: r,
-					channelMessages: a,
-					channelId: c
+					channelMessages: a
 				}), l.a.createElement("div", {
-					className: I.a.Container
+					className: A.a.Container
 				})) : null
 			}, w = ({
 				channelType: e,
-				channelMessages: t,
-				channelId: a
+				channelMessages: t
 			}) => {
-				const n = c()([...t], "createdAt");
+				const a = c()([...t], "createdAt");
 				return t && t.length ? l.a.createElement(d.a, {
 					channelType: e,
-					messageList: n,
-					inPreview: !0,
-					channelId: a
+					messageList: a,
+					inPreview: !0
 				}) : null
 			}, L = ({
 				userName: e
 			}) => l.a.createElement("p", null, M._("Accept to chat with {userName}{restText}", [M._param("userName", l.a.createElement("span", {
-				className: I.a.BoldText
+				className: A.a.BoldText
 			}, e)), M._param("restText", l.a.createElement("span", null, ". If you ignore, the chat request will be removed, and we won’t let the sender know."))], {
 				hk: "3FVxLq"
 			})), Q = ({
 				userName: e,
 				isQuickActionBlock: t
 			}) => t ? M._("Are you sure you want to block {userName}", [M._param("userName", l.a.createElement("span", {
-				className: I.a.BoldText
+				className: A.a.BoldText
 			}, ` ${e}?`))], {
 				hk: "12VekN"
 			}) : M._("Are you sure you want to mark this chat as spam? You will also block {userName}", [M._param("userName", l.a.createElement("span", {
-				className: I.a.BoldText
+				className: A.a.BoldText
 			}, ` ${e}?`))], {
 				hk: "1teJQL"
 			}), U = ({
@@ -168,20 +165,20 @@
 				}, [e]);
 				const i = Object(o.e)(t => Object(C.j)(t, e)),
 					d = Object(o.e)(t => Object(E.d)(t, e)),
-					x = Object(o.e)(t => Object(C.y)(t, e)),
-					b = Object(o.e)(f.d),
-					y = Object(o.e)(f.f),
+					x = Object(o.e)(t => Object(C.z)(t, e)),
+					b = Object(o.e)(f.g),
+					y = Object(o.e)(f.i),
 					O = Object(s.useCallback)(() => {
-						n(Object(m.y)(e)), n(Object(u.n)(e))
+						n(Object(m.y)(e)), n(Object(u.o)(e))
 					}, [n, e]),
 					v = Object(s.useCallback)(() => {
-						d && (n(Object(m.B)(e, d, !0)), n(Object(u.p)(e)))
+						d && (n(Object(m.B)(e, d, !0)), n(Object(u.q)(e)))
 					}, [n, e, d]),
 					k = Object(s.useCallback)(() => {
-						d && (n(Object(m.B)(e, d)), b && n(Object(u.o)()), y && n(Object(u.q)()))
+						d && (n(Object(m.B)(e, d)), b && n(Object(u.p)()), y && n(Object(u.r)()))
 					}, [n, e, d, b, y]),
 					N = Object(s.useCallback)(() => {
-						n(Object(m.N)(A.b.INVITED, e))
+						n(Object(m.N)(I.b.INVITED, e))
 					}, [n, e]),
 					j = Object(s.useMemo)(() => b ? M._("Block", null, {
 						hk: "4CA4VX"
@@ -199,7 +196,7 @@
 					title: D,
 					showMenu: g
 				}), l.a.createElement(p.b, {
-					className: I.a.Scroller
+					className: A.a.Scroller
 				}, l.a.createElement(P, {
 					channelInviter: null == i ? void 0 : i.inviter,
 					channelMessages: x,
@@ -207,9 +204,9 @@
 					channelId: null == i ? void 0 : i.channelId,
 					channelType: null == i ? void 0 : i.type
 				})), l.a.createElement("div", {
-					className: I.a.OverlayControlBarWrapper
+					className: A.a.OverlayControlBarWrapper
 				}, r ? l.a.createElement(B.a, {
-					className: I.a.OverlayControlBar,
+					className: A.a.OverlayControlBar,
 					secondaryButtonText: M._("Nevermind", null, {
 						hk: "30ppMU"
 					}),
@@ -220,7 +217,7 @@
 					userName: null === (t = null == i ? void 0 : i.inviter) || void 0 === t ? void 0 : t.name,
 					isQuickActionBlock: b
 				})) : l.a.createElement(B.a, {
-					className: I.a.OverlayControlBar,
+					className: A.a.OverlayControlBar,
 					secondaryButtonText: M._("Ignore", null, {
 						hk: "1ws6QH"
 					}),
@@ -270,43 +267,43 @@
 				o = a("./src/config.ts"),
 				i = a("./src/lib/classNames/index.ts"),
 				m = a("./src/chat/controls/Button/index.tsx"),
-				u = a("./src/chat/helpers/dom.ts"),
-				d = a("./src/chat/controls/OverlayControlBar/index.m.less"),
-				h = a.n(d);
+				u = a("./src/chat/controls/OverlayControlBar/index.m.less"),
+				d = a.n(u),
+				h = a("./src/chat/helpers/dom.ts");
 			const p = Object(s.b)(void 0, e => ({
 				onSubmit: () => {},
-				onCancel: Object(u.b)(() => e(Object(l.a)()))
+				onCancel: Object(h.b)(() => e(Object(l.a)()))
 			}))(e => c.a.createElement("div", {
 				className: Object(i.a)({
-					[h.a.primary]: e.primaryButtonOnly,
-					[h.a.NoHeaderText]: !e.children
-				}, h.a.OverlayControlBar, e.className)
+					[d.a.primary]: e.primaryButtonOnly,
+					[d.a.NoHeaderText]: !e.children
+				}, d.a.OverlayControlBar, e.className)
 			}, e.children && c.a.createElement("span", {
-				className: h.a.HeaderText
+				className: d.a.HeaderText
 			}, e.children), c.a.createElement("div", {
-				className: h.a.ButtonsWrapper
+				className: d.a.ButtonsWrapper
 			}, e.primaryButtonBlock && c.a.createElement(m.a, {
 				onClick: e.primaryButtonBlockAction || e.onCancel,
-				className: Object(i.a)(h.a.Button, h.a.NoBorderPrimaryButton),
+				className: Object(i.a)(d.a.Button, d.a.NoBorderPrimaryButton),
 				secondary: !0,
 				noBorder: !0
 			}, e.primaryButtonBlockText || n.fbt._("Block", null, {
 				hk: "4CA4VX"
 			})), !e.primaryButtonOnly && (e.secondaryButtonCTLOptions ? c.a.createElement(m.a, {
-				className: h.a.Button,
+				className: d.a.Button,
 				href: `${o.a.redditHelpUrl}/en/categories/rules-reporting/suicide-response/what-do-i-do-if-someone-talks-about-seriously-hurting`,
 				secondary: !0
 			}, n.fbt._("Other Options", null, {
 				hk: "1RadlV"
 			})) : c.a.createElement(m.a, {
-				className: h.a.Button,
+				className: d.a.Button,
 				onClick: e.secondaryButtonAction || e.onCancel,
 				primary: !!e.secondaryButtonOnly,
 				secondary: !e.secondaryButtonOnly
 			}, e.secondaryButtonText || n.fbt._("Cancel", null, {
 				hk: "2TSLl5"
 			}))), !e.secondaryButtonOnly && c.a.createElement(m.a, {
-				className: h.a.Button,
+				className: d.a.Button,
 				type: "submit",
 				primary: !0,
 				onClick: e.primaryButtonAction || e.onSubmit,
@@ -318,4 +315,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayChannelInvited.b72bf40c5ace5c858148.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayChannelInvited.0ba5d601adb2feb2c8ff.js.map

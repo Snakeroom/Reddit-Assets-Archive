@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.4d69172368d2f6723491.js
-// Retrieved at 9/9/2021, 3:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.2b4946a13cb44506d70e.js
+// Retrieved at 9/9/2021, 7:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, n) {
@@ -18,8 +18,8 @@
 				r = n.n(o),
 				s = n("./src/lib/classNames/index.ts"),
 				a = n("./src/lib/FocusTrap/index.ts"),
-				i = n("./src/reddit/actions/shortcuts/utils.ts"),
-				c = n("./src/reddit/components/Portal/index.tsx"),
+				i = n("./src/lib/portal/index.tsx"),
+				c = n("./src/reddit/actions/shortcuts/utils.ts"),
 				d = n("./src/reddit/constants/shortcuts.ts"),
 				l = n("./src/reddit/helpers/toggleBodyScroll/index.ts"),
 				u = n("./src/higherOrderComponents/asModal/index.m.less"),
@@ -61,7 +61,7 @@
 					componentWillUnmount() {
 						this.setState({
 							mounted: !1
-						}), Object(l.b)(), Object(i.d)(), this.focusTrap && this.focusTrap.deactivate()
+						}), Object(l.b)(), Object(c.d)(), this.focusTrap && this.focusTrap.deactivate()
 					}
 					render() {
 						const {
@@ -70,15 +70,15 @@
 							className: n,
 							ignoreDefaultFocus: o,
 							onOverlayClick: a,
-							overlayClassName: i,
+							overlayClassName: c,
 							overlayCustomStyles: l,
 							withOverlay: u,
 							...p
 						} = t, h = p;
-						return r.a.createElement(c.a, {
+						return r.a.createElement(i.a, {
 							container: document.getElementById(d.b)
 						}, r.a.createElement(b, {
-							className: i,
+							className: c,
 							isVisible: u,
 							onClick: this.onOverlayClick,
 							style: l
@@ -22963,4 +22963,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.4d69172368d2f6723491.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.2b4946a13cb44506d70e.js.map

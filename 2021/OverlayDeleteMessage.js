@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OverlayDeleteMessage.0b6a7737fe199606a36d.js
-// Retrieved at 9/9/2021, 5:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OverlayDeleteMessage.84ac835281239f2bbe18.js
+// Retrieved at 9/9/2021, 7:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OverlayDeleteMessage"], {
 		"./src/chat/components/OverlayDeleteMessage/index.m.less": function(e, t, a) {
@@ -41,7 +41,7 @@
 				}),
 				k = Object(o.b)(_, (e, t) => ({
 					onConfirmationClick: () => ((e, t) => {
-						e(Object(c.r)(t)), e(Object(d.A)())
+						e(Object(c.s)(t)), e(Object(d.D)())
 					})(e, t.messageId),
 					onCancel: () => e(i())
 				}));
@@ -109,43 +109,43 @@
 				l = a("./src/config.ts"),
 				i = a("./src/lib/classNames/index.ts"),
 				d = a("./src/chat/controls/Button/index.tsx"),
-				m = a("./src/chat/helpers/dom.ts"),
-				u = a("./src/chat/controls/OverlayControlBar/index.m.less"),
-				y = a.n(u);
+				m = a("./src/chat/controls/OverlayControlBar/index.m.less"),
+				u = a.n(m),
+				y = a("./src/chat/helpers/dom.ts");
 			const b = Object(o.b)(void 0, e => ({
 				onSubmit: () => {},
-				onCancel: Object(m.b)(() => e(Object(c.a)()))
+				onCancel: Object(y.b)(() => e(Object(c.a)()))
 			}))(e => r.a.createElement("div", {
 				className: Object(i.a)({
-					[y.a.primary]: e.primaryButtonOnly,
-					[y.a.NoHeaderText]: !e.children
-				}, y.a.OverlayControlBar, e.className)
+					[u.a.primary]: e.primaryButtonOnly,
+					[u.a.NoHeaderText]: !e.children
+				}, u.a.OverlayControlBar, e.className)
 			}, e.children && r.a.createElement("span", {
-				className: y.a.HeaderText
+				className: u.a.HeaderText
 			}, e.children), r.a.createElement("div", {
-				className: y.a.ButtonsWrapper
+				className: u.a.ButtonsWrapper
 			}, e.primaryButtonBlock && r.a.createElement(d.a, {
 				onClick: e.primaryButtonBlockAction || e.onCancel,
-				className: Object(i.a)(y.a.Button, y.a.NoBorderPrimaryButton),
+				className: Object(i.a)(u.a.Button, u.a.NoBorderPrimaryButton),
 				secondary: !0,
 				noBorder: !0
 			}, e.primaryButtonBlockText || s.fbt._("Block", null, {
 				hk: "4CA4VX"
 			})), !e.primaryButtonOnly && (e.secondaryButtonCTLOptions ? r.a.createElement(d.a, {
-				className: y.a.Button,
+				className: u.a.Button,
 				href: `${l.a.redditHelpUrl}/en/categories/rules-reporting/suicide-response/what-do-i-do-if-someone-talks-about-seriously-hurting`,
 				secondary: !0
 			}, s.fbt._("Other Options", null, {
 				hk: "1RadlV"
 			})) : r.a.createElement(d.a, {
-				className: y.a.Button,
+				className: u.a.Button,
 				onClick: e.secondaryButtonAction || e.onCancel,
 				primary: !!e.secondaryButtonOnly,
 				secondary: !e.secondaryButtonOnly
 			}, e.secondaryButtonText || s.fbt._("Cancel", null, {
 				hk: "2TSLl5"
 			}))), !e.secondaryButtonOnly && r.a.createElement(d.a, {
-				className: y.a.Button,
+				className: u.a.Button,
 				type: "submit",
 				primary: !0,
 				onClick: e.primaryButtonAction || e.onSubmit,
@@ -157,4 +157,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayDeleteMessage.0b6a7737fe199606a36d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayDeleteMessage.84ac835281239f2bbe18.js.map

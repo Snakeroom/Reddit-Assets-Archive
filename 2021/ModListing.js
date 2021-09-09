@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.bfda42de2a8638aad263.js
-// Retrieved at 9/9/2021, 3:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.d5d0a263e34b1a763d36.js
+// Retrieved at 9/9/2021, 7:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -269,8 +269,8 @@
 				s = r.n(n),
 				o = r("./src/lib/classNames/index.ts"),
 				i = r("./src/lib/FocusTrap/index.ts"),
-				a = r("./src/reddit/actions/shortcuts/utils.ts"),
-				d = r("./src/reddit/components/Portal/index.tsx"),
+				a = r("./src/lib/portal/index.tsx"),
+				d = r("./src/reddit/actions/shortcuts/utils.ts"),
 				c = r("./src/reddit/constants/shortcuts.ts"),
 				l = r("./src/reddit/helpers/toggleBodyScroll/index.ts"),
 				u = r("./src/higherOrderComponents/asModal/index.m.less"),
@@ -312,7 +312,7 @@
 					componentWillUnmount() {
 						this.setState({
 							mounted: !1
-						}), Object(l.b)(), Object(a.d)(), this.focusTrap && this.focusTrap.deactivate()
+						}), Object(l.b)(), Object(d.d)(), this.focusTrap && this.focusTrap.deactivate()
 					}
 					render() {
 						const {
@@ -321,15 +321,15 @@
 							className: r,
 							ignoreDefaultFocus: n,
 							onOverlayClick: i,
-							overlayClassName: a,
+							overlayClassName: d,
 							overlayCustomStyles: l,
 							withOverlay: u,
 							...p
 						} = t, b = p;
-						return s.a.createElement(d.a, {
+						return s.a.createElement(a.a, {
 							container: document.getElementById(c.b)
 						}, s.a.createElement(h, {
-							className: a,
+							className: d,
 							isVisible: u,
 							onClick: this.onOverlayClick,
 							style: l
@@ -4558,4 +4558,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.bfda42de2a8638aad263.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.d5d0a263e34b1a763d36.js.map

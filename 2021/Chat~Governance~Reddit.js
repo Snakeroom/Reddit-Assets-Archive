@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.ba29089da87b0b8f73e6.js
-// Retrieved at 9/9/2021, 7:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.7e478c6fe459f30004e9.js
+// Retrieved at 9/9/2021, 7:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -300,7 +300,7 @@
 					e.ADMIN = "system", e.USER = "user", e.PENDING = "pending", e.FILE = "file"
 				}(s || (s = {})),
 				function(e) {
-					e.TEXT = "text", e.POST = "post", e.USER_POST = "userPost", e.EMBED = "embedCollection", e.SNOOMOJI = "snoomoji", e.SUBREDDIT = "subreddit", e.COMMENT = "comment", e.GIF = "gif"
+					e.TEXT = "text", e.POST = "post", e.USER_POST = "userPost", e.EMBED = "embedCollection", e.SNOOMOJI = "snoomoji", e.SUBREDDIT = "subreddit", e.COMMENT = "comment", e.GIF = "gif", e.IMAGE = "image"
 				}(o || (o = {})),
 				function(e) {
 					e.DELETE = "delete", e.REPORT = "report"
@@ -416,7 +416,7 @@
 					m = Object(s.c)(o.p.CHAT, o.x.CHAT_SHOW_THEMES_PROMPT_COUNT_KEY, i || "unknown");
 					const n = Object(s.b)(m);
 					let r = null == n ? 0 : n;
-					Object(c.c)(t) && e.dispatch(Object(a.chatThemeShowPromptCountSetAction)(++r))
+					Object(c.f)(t) && e.dispatch(Object(a.chatThemeShowPromptCountSetAction)(++r))
 				});
 			t.a = e => {
 				if ("undefined" == typeof window) return l.a;
@@ -617,7 +617,7 @@
 				s = i("./src/lib/makeApiRequest/index.ts"),
 				o = i("./src/lib/omitHeaders/index.ts"),
 				d = i("./src/reddit/constants/headers.ts"),
-				a = i("./src/chat/models/Channel/utils/index.ts");
+				a = i("./src/chat/models/Channel/utils.ts");
 			const l = {
 					Accept: "application/json",
 					"Content-Type": "application/json"
@@ -917,22 +917,21 @@
 			})), i.d(t, "a", (function() {
 				return s
 			})), i.d(t, "g", (function() {
-				return _
+				return c
 			})), i.d(t, "f", (function() {
-				return m
+				return _
 			})), i.d(t, "e", (function() {
-				return h
+				return p
 			})), i.d(t, "d", (function() {
-				return b
+				return f
 			})), i.d(t, "h", (function() {
-				return g
+				return b
 			}));
 			var n, r, s, o = i("./src/chat/constants/channels.ts"),
-				d = i("./src/chat/models/Channel/utils/index.ts"),
-				a = i("./src/chat/models/Channel/utils/removeSendbirdPrefix.ts"),
-				l = i("./src/chat/models/Message/index.ts"),
-				u = i("./src/chat/models/User/inviter.ts"),
-				c = i("./src/chat/models/User/member.ts");
+				d = i("./src/chat/models/Channel/utils.ts"),
+				a = i("./src/chat/models/Message/index.ts"),
+				l = i("./src/chat/models/User/inviter.ts"),
+				u = i("./src/chat/models/User/member.ts");
 			! function(e) {
 				e.Invited = "invited", e.Joined = "joined"
 			}(n || (n = {})),
@@ -944,88 +943,92 @@
 			}(s || (s = {}));
 			o.b.UNSORTED, s.Direct;
 
-			function _(e, t) {
+			function c(e, t) {
 				const {
 					createdAt: i,
 					customType: n,
 					data: r,
 					memberCount: o,
-					name: _,
-					isDistinct: m,
-					isHidden: b,
-					unreadMessageCount: g,
-					unreadMentionCount: w,
-					myCountPreference: y,
-					inviter: v,
-					lastMessage: E,
-					members: T,
-					url: S,
-					myMemberState: O,
-					isFrozen: I,
-					isPushEnabled: R,
-					myMutedState: F,
-					myRole: C,
-					coverUrl: N
+					name: c,
+					isDistinct: _,
+					isHidden: f,
+					unreadMessageCount: b,
+					unreadMentionCount: g,
+					myCountPreference: w,
+					inviter: y,
+					lastMessage: v,
+					members: E,
+					url: T,
+					myMemberState: S,
+					isFrozen: O,
+					isPushEnabled: I,
+					myMutedState: R,
+					myRole: F,
+					coverUrl: C
 				} = e;
 				return {
-					channelId: Object(a.a)(S),
-					channelSendbirdUrl: S,
-					channelState: Object(d.b)(t, O),
+					channelId: Object(d.f)(T),
+					channelSendbirdUrl: T,
+					channelState: Object(d.b)(t, S),
 					createdAt: Number(i),
 					customType: n,
 					data: r,
 					maxLengthMessage: -1,
 					memberCount: o,
-					name: _,
-					isFrozen: I,
-					isHidden: b,
-					isNotifsMuted: !R,
-					isModerator: h(C),
-					isUserMuted: f(F),
-					isMuted: p(y),
-					inviter: Object(u.a)(v),
-					type: m ? s.Direct : s.Group,
-					lastMessage: E ? Object(l.c)(E) : void 0,
-					unreadMessageCount: g,
-					unreadMentionCount: w,
-					members: Object(c.a)(T),
+					name: c,
+					isFrozen: O,
+					isHidden: f,
+					isNotifsMuted: !I,
+					isModerator: p(F),
+					isUserMuted: h(R),
+					isMuted: m(w),
+					inviter: Object(l.a)(y),
+					type: _ ? s.Direct : s.Group,
+					lastMessage: v ? Object(a.c)(v) : void 0,
+					unreadMessageCount: b,
+					unreadMentionCount: g,
+					members: Object(u.a)(E),
 					fetchingFirstMessage: !1,
 					fetchingMessages: !1,
 					fetchingMessagesError: !1,
 					hasMoreMessages: !1,
 					isMessageListLoaded: !1,
-					coverUrl: N,
+					coverUrl: C,
 					draftMessage: ""
 				}
 			}
 
-			function m(e) {
+			function _(e) {
 				const t = {};
 				for (let i = 0, n = e.length; i < n; i++) {
-					const n = _(e[i]);
+					const n = c(e[i]);
 					n && (t[n.channelId] = n)
 				}
 				return t
 			}
-			const p = e => e === o.c.Off,
-				h = e => "operator" === e,
-				f = e => "muted" === e,
-				b = (e, t, i) => ({
+			const m = e => e === o.c.Off,
+				p = e => "operator" === e,
+				h = e => "muted" === e,
+				f = (e, t, i) => ({
 					selectedJoinedFilter: i ? e.selectedJoinedFilter : t,
 					selectedInvitedFilter: i ? t : e.selectedInvitedFilter
 				}),
-				g = e => e === r.ALL ? "all" : e === r.DirectsOnly ? "direct" : "group"
+				b = e => e === r.ALL ? "all" : e === r.DirectsOnly ? "direct" : "group"
 		},
-		"./src/chat/models/Channel/utils/index.ts": function(e, t, i) {
+		"./src/chat/models/Channel/utils.ts": function(e, t, i) {
 			"use strict";
 			i.d(t, "a", (function() {
 				return c
-			})), i.d(t, "c", (function() {
+			})), i.d(t, "f", (function() {
 				return _
-			})), i.d(t, "b", (function() {
+			})), i.d(t, "c", (function() {
 				return m
 			})), i.d(t, "d", (function() {
 				return p
+			})), i.d(t, "b", (function() {
+				return h
+			})), i.d(t, "e", (function() {
+				return f
 			}));
 			var n = i("./node_modules/lodash/first.js"),
 				r = i.n(n),
@@ -1035,17 +1038,19 @@
 				a = i("./src/chat/constants/sendbird.ts"),
 				l = i("./src/chat/helpers/errors.ts"),
 				u = i("./src/chat/models/Channel/index.ts");
-			const c = e => a.a + e;
+			const c = e => a.a + e,
+				_ = e => e.replace(a.a, ""),
+				m = (e, t) => `CHAT_${c(e)}_${t}`;
 
-			function _(e, t) {
+			function p(e, t) {
 				return o()(e, e => t.includes(e.type))
 			}
 
-			function m(e, t) {
+			function h(e, t) {
 				return (e || t || d.b.UNSORTED).toUpperCase()
 			}
 
-			function p(e) {
+			function f(e) {
 				const t = e.custom_type || e.customType;
 				if (t) {
 					switch (r()(t.split("_"))) {
@@ -1061,26 +1066,21 @@
 				return u.a.Group
 			}
 		},
-		"./src/chat/models/Channel/utils/removeSendbirdPrefix.ts": function(e, t, i) {
-			"use strict";
-			var n = i("./src/chat/constants/sendbird.ts");
-			t.a = e => e.replace(n.a, "")
-		},
 		"./src/chat/models/Message/adapter.ts": function(e, t, i) {
 			"use strict";
 			i.d(t, "b", (function() {
-				return y
+				return E
 			})), i.d(t, "c", (function() {
-				return O
+				return R
 			})), i.d(t, "a", (function() {
-				return I
+				return F
 			}));
 			var n = i("./node_modules/lodash/isObject.js"),
 				r = i.n(n),
 				s = i("./src/chat/constants/messages.ts"),
 				o = i("./src/chat/helpers/json.ts"),
 				d = i("./src/chat/helpers/urls/index.ts"),
-				a = i("./src/chat/models/Channel/utils/removeSendbirdPrefix.ts");
+				a = i("./src/chat/models/Channel/utils.ts");
 			const l = (e, t) => {
 					const {
 						url: i
@@ -1130,6 +1130,15 @@
 							value: t.url || "",
 							gif: t
 						}
+					},
+					image: (e, t) => {
+						const i = Object(o.a)(e, {});
+						return {
+							type: s.c.IMAGE,
+							value: i.url || "",
+							image: i,
+							isHidden: t
+						}
 					}
 				},
 				{
@@ -1140,9 +1149,14 @@
 					COMMENT: h,
 					SUBREDDIT: f,
 					USER_POST: b,
-					GIF: g
-				} = s.c,
-				w = e => {
+					GIF: g,
+					IMAGE: w
+				} = s.c;
+			var y;
+			! function(e) {
+				e.PreUpload = "preupload", e.Done = "done"
+			}(y || (y = {}));
+			const v = e => {
 					let t = {};
 					if (e && "string" == typeof e) {
 						const i = Object(o.a)(e, {
@@ -1152,8 +1166,8 @@
 					}
 					return r()(t) || (t = {}), t
 				},
-				y = e => w(e).clientMessageId || "",
-				v = (e, t) => {
+				E = e => v(e).clientMessageId || "",
+				T = (e, t) => {
 					if (e.snoomoji) return u[p](e.snoomoji);
 					if (e.embed_data && e.embed_data.url) {
 						const {
@@ -1174,14 +1188,14 @@
 						if (t) return t
 					} else {
 						if (e.gif) return u[g](JSON.stringify(e.gif));
-						if (t) return u[c](t)
+						if (e.image) return u[w](JSON.stringify(e.image), Boolean(e.is_hidden))
 					}
-					return u[c]("")
+					return u[c](t || "")
 				},
-				E = e => ({
+				S = e => ({
 					channelIsPublic: e.channel_is_public,
 					channelName: e.channel_name,
-					channelId: e.channel_url && Object(a.a)(e.channel_url),
+					channelId: e.channel_url && Object(a.f)(e.channel_url),
 					messageId: e.message_id,
 					messageValue: e.message_value,
 					messageCreatedAt: e.message_created_at,
@@ -1211,32 +1225,32 @@
 						}
 					}
 				}),
-				T = e => (null == e ? void 0 : e.preview_collapsed) ? {
+				O = e => (null == e ? void 0 : e.preview_collapsed) ? {
 					shouldCollapse: !0,
 					shouldShowReportPrompt: !0
 				} : void 0,
-				S = e => {
+				I = e => {
 					var t, i;
 					return {
 						awarder_id: null === (t = null == e ? void 0 : e.awarding) || void 0 === t ? void 0 : t.awarder_id,
 						award_id: null === (i = null == e ? void 0 : e.awarding) || void 0 === i ? void 0 : i.award_id
 					}
 				},
-				O = (e, t) => {
-					const i = w(e);
+				R = (e, t) => {
+					const i = v(e);
 					return {
-						...v(i, t),
-						clientMessageId: y(e),
+						...T(i, t),
+						clientMessageId: E(e),
 						highlights: i.highlights || [],
-						collapsedInvitePreview: T(i),
+						collapsedInvitePreview: O(i),
 						...i.report && {
-							report: E(i.report)
+							report: S(i.report)
 						},
-						awarding: S(i),
+						awarding: I(i),
 						action_info_reason: i.action_info_reason
 					}
 				},
-				I = (e, t, i, n = []) => ({
+				F = (e, t, i, n = []) => ({
 					v1: {
 						clientMessageId: i,
 						highlights: n,
@@ -1253,6 +1267,9 @@
 						} : {},
 						...t === g ? {
 							gif: Object(o.a)(e, {})
+						} : {},
+						...t === w ? {
+							...Object(o.a)(e, {})
 						} : {}
 					}
 				})
@@ -1270,12 +1287,12 @@
 			var n, r = i("./node_modules/uuid/v4.js"),
 				s = i.n(r),
 				o = i("./src/chat/constants/messages.ts"),
-				d = i("./src/chat/models/Channel/utils/removeSendbirdPrefix.ts"),
+				d = i("./src/chat/models/Channel/utils.ts"),
 				a = i("./src/chat/models/Message/adapter.ts"),
 				l = i("./src/chat/selectors/messages.ts"),
 				u = i("./src/chat/selectors/user.ts");
 			! function(e) {
-				e.DEFAULT = "", e.AWARDING = "awarding"
+				e.DEFAULT = "", e.AWARDING = "awarding", e.IMAGE = "image"
 			}(n || (n = {}));
 			const c = new Set([o.e.USER, o.e.ADMIN]);
 
@@ -1292,7 +1309,7 @@
 			}
 
 			function h(e) {
-				return e && e.customType === n.AWARDING ? n.AWARDING : e && e.customType === n.DEFAULT ? n.DEFAULT : void 0
+				return e && e.customType === n.AWARDING ? n.AWARDING : e && e.customType === n.IMAGE ? n.IMAGE : e && e.customType === n.DEFAULT ? n.DEFAULT : void 0
 			}
 
 			function f(e) {
@@ -1308,7 +1325,7 @@
 						updatedAt: u
 					} = e;
 					return {
-						channelId: Object(d.a)(i),
+						channelId: Object(d.f)(i),
 						channelSendbirdUrl: i,
 						channelType: t,
 						createdAt: n,
@@ -1326,9 +1343,8 @@
 				var t
 			}
 
-			function b(e, t, i, n) {
-				const r = s()(),
-					d = Object(l.a)(e, i),
+			function b(e, t, i, n, r = s()()) {
+				const d = Object(l.a)(e, i),
 					c = JSON.stringify(Object(a.a)(i, n, r, d)),
 					_ = Object(a.c)(c, i);
 				return {
@@ -1506,86 +1522,88 @@
 		},
 		"./src/chat/selectors/channels.ts": function(e, t, i) {
 			"use strict";
-			i.d(t, "t", (function() {
+			i.d(t, "u", (function() {
 				return m
-			})), i.d(t, "u", (function() {
+			})), i.d(t, "v", (function() {
 				return p
 			})), i.d(t, "j", (function() {
 				return h
 			})), i.d(t, "i", (function() {
 				return f
-			})), i.d(t, "m", (function() {
-				return b
 			})), i.d(t, "n", (function() {
-				return g
+				return b
 			})), i.d(t, "o", (function() {
-				return w
-			})), i.d(t, "w", (function() {
-				return y
-			})), i.d(t, "x", (function() {
-				return v
+				return g
 			})), i.d(t, "p", (function() {
-				return E
-			})), i.d(t, "v", (function() {
-				return T
+				return w
+			})), i.d(t, "x", (function() {
+				return y
+			})), i.d(t, "y", (function() {
+				return v
 			})), i.d(t, "q", (function() {
+				return E
+			})), i.d(t, "w", (function() {
+				return T
+			})), i.d(t, "r", (function() {
 				return S
 			})), i.d(t, "b", (function() {
 				return O
-			})), i.d(t, "M", (function() {
+			})), i.d(t, "N", (function() {
 				return I
 			})), i.d(t, "g", (function() {
 				return R
-			})), i.d(t, "y", (function() {
-				return C
-			})), i.d(t, "B", (function() {
-				return N
 			})), i.d(t, "z", (function() {
+				return C
+			})), i.d(t, "C", (function() {
+				return N
+			})), i.d(t, "A", (function() {
 				return j
 			})), i.d(t, "h", (function() {
 				return A
-			})), i.d(t, "N", (function() {
+			})), i.d(t, "O", (function() {
 				return P
-			})), i.d(t, "A", (function() {
+			})), i.d(t, "B", (function() {
 				return D
-			})), i.d(t, "E", (function() {
+			})), i.d(t, "F", (function() {
 				return x
 			})), i.d(t, "d", (function() {
 				return L
-			})), i.d(t, "D", (function() {
+			})), i.d(t, "E", (function() {
 				return B
 			})), i.d(t, "c", (function() {
 				return k
-			})), i.d(t, "F", (function() {
+			})), i.d(t, "G", (function() {
 				return U
 			})), i.d(t, "e", (function() {
 				return G
 			})), i.d(t, "f", (function() {
 				return V
-			})), i.d(t, "G", (function() {
+			})), i.d(t, "H", (function() {
 				return q
-			})), i.d(t, "L", (function() {
+			})), i.d(t, "M", (function() {
 				return H
-			})), i.d(t, "K", (function() {
+			})), i.d(t, "L", (function() {
 				return W
 			})), i.d(t, "k", (function() {
 				return K
 			})), i.d(t, "a", (function() {
 				return $
-			})), i.d(t, "H", (function() {
+			})), i.d(t, "I", (function() {
 				return z
-			})), i.d(t, "J", (function() {
+			})), i.d(t, "K", (function() {
 				return Y
-			})), i.d(t, "r", (function() {
-				return Q
-			})), i.d(t, "C", (function() {
-				return J
 			})), i.d(t, "s", (function() {
+				return Q
+			})), i.d(t, "D", (function() {
+				return J
+			})), i.d(t, "t", (function() {
 				return X
 			})), i.d(t, "l", (function() {
 				return Z
-			})), i.d(t, "I", (function() {
+			})), i.d(t, "J", (function() {
 				return ee
+			})), i.d(t, "m", (function() {
+				return te
 			}));
 			var n = i("./node_modules/lodash/values.js"),
 				r = i.n(n),
@@ -1777,8 +1795,9 @@
 						if (n) return n.type === a.a.Group ? n.name && "Group Channel" !== n.name ? n.name : n.members.map(e => e.name).join(", ") : null === (i = null == r ? void 0 : r.firstUser) || void 0 === i ? void 0 : i.name
 					}
 				},
-				ee = Object(s.a)(b, e => (null == e ? void 0 : e.type) === a.a.Direct && (null == e ? void 0 : e.members.some(e => e.state === a.c.Invited)));
-			Object(s.a)((e, t) => f(e, t), e => null == e ? void 0 : e.type), Object(s.a)((e, t) => f(e, t), e => Boolean(null == e ? void 0 : e.members.some(e => e.isBlockedByMe)))
+				ee = Object(s.a)(b, e => (null == e ? void 0 : e.type) === a.a.Direct && (null == e ? void 0 : e.members.some(e => e.state === a.c.Invited))),
+				te = Object(s.a)((e, t) => f(e, t), e => null == e ? void 0 : e.type);
+			Object(s.a)((e, t) => f(e, t), e => Boolean(null == e ? void 0 : e.members.some(e => e.isBlockedByMe)))
 		},
 		"./src/chat/selectors/channelsFilter.ts": function(e, t, i) {
 			"use strict";
@@ -1876,30 +1895,36 @@
 		},
 		"./src/chat/selectors/experiments.ts": function(e, t, i) {
 			"use strict";
-			i.d(t, "i", (function() {
-				return _
-			})), i.d(t, "g", (function() {
+			i.d(t, "l", (function() {
 				return p
-			})), i.d(t, "h", (function() {
-				return b
-			})), i.d(t, "c", (function() {
+			})), i.d(t, "j", (function() {
 				return g
-			})), i.d(t, "a", (function() {
+			})), i.d(t, "k", (function() {
 				return w
-			})), i.d(t, "d", (function() {
-				return y
 			})), i.d(t, "f", (function() {
+				return y
+			})), i.d(t, "a", (function() {
 				return v
-			})), i.d(t, "e", (function() {
+			})), i.d(t, "g", (function() {
 				return E
-			})), i.d(t, "b", (function() {
+			})), i.d(t, "i", (function() {
 				return T
+			})), i.d(t, "h", (function() {
+				return S
+			})), i.d(t, "b", (function() {
+				return O
+			})), i.d(t, "d", (function() {
+				return I
+			})), i.d(t, "c", (function() {
+				return R
+			})), i.d(t, "e", (function() {
+				return F
 			}));
 			var n, r, s = i("./node_modules/lodash/memoize.js"),
 				o = i.n(s),
 				d = i("./node_modules/reselect/es/index.js");
 			! function(e) {
-				e.SubredditChat = "chat_subreddit", e.SubredditChatNotifcationFtux = "chat_subreddit_notification_ftux", e.EconRpanAvatar = "web_econ_avatar_in_rpan", e.UiRefreshBubblePreset = "ui_refresh_bubble_preset", e.UiRefreshBubblePresetColoredSend = "ui_refresh_bubble_preset_colored_send", e.D2xChatNicknamePainted = "d2x_chat_nickname_painted", e.D2XChatQuickActionsChannels = "d2x_chat_quickactions_channels", e.D2xChatFilterGroupDirect = "d2x_chat_filter_group_direct", e.ChatInviteMessagePreview = "chat_preview_comment"
+				e.SubredditChat = "chat_subreddit", e.EconRpanAvatar = "web_econ_avatar_in_rpan", e.UiRefreshBubblePreset = "ui_refresh_bubble_preset", e.UiRefreshBubblePresetColoredSend = "ui_refresh_bubble_preset_colored_send", e.D2xChatNicknamePainted = "d2x_chat_nickname_painted", e.D2XChatQuickActionsChannels = "d2x_chat_quickactions_channels", e.D2xChatFilterGroupDirect = "d2x_chat_filter_group_direct", e.ChatMediaShareImages = "chat_mediashare_images", e.ChatImagesRenderKillSwitch = "web_chat_mediashare_images_killswitch", e.ChatInviteMessagePreview = "chat_preview_comment"
 			}(n || (n = {})),
 			function(e) {
 				e.Control1 = "control_1", e.Control2 = "control_2"
@@ -1914,28 +1939,33 @@
 			function(e) {
 				e.QuickActionBlock = "quick_action_block", e.QuickActionSpam = "quick_action_spam"
 			}(u || (u = {}));
-			var c = i("./src/chat/tracking/events/experiment.ts");
-			const _ = e => !!e.user.experiments[n.SubredditChat] || !!e.user.chatExperiments.userSubredditChatEnabled,
-				m = e => {
-					if (!(e => e === r.Control1 || e === r.Control2)(e)) return e || void 0
+			var c = i("./src/chat/models/Channel/index.ts"),
+				_ = i("./src/chat/tracking/events/experiment.ts"),
+				m = i("./src/chat/selectors/channels.ts");
+			const p = e => Boolean(e.user.experiments[n.SubredditChat]) || Boolean(e.user.chatExperiments.userSubredditChatEnabled),
+				h = e => {
+					if (!(e => e === r.Control1 || e === r.Control2)(e)) return e
 				},
-				p = e => !!e.user.experiments[n.EconRpanAvatar],
-				h = o()((e, t, i) => {
-					Object(c.a)(t, i)
+				f = o()((e, t, i) => {
+					Object(_.a)(t, i)
 				}),
-				f = Object(d.a)(e => e, e => e.experiments.models, (e, t) => t, (e, t, i) => {
+				b = Object(d.a)(e => e, e => e.experiments.models, (e, t) => t, (e, t, i) => {
 					var n;
 					const r = t[i],
 						s = null === (n = t[i]) || void 0 === n ? void 0 : n.variant;
-					return s && h(i, e, r), s
+					return s && f(i, e, r), s
 				}),
-				b = Object(d.a)(e => f(e, n.UiRefreshBubblePreset), e => Boolean(m(e))),
-				g = Object(d.a)(e => f(e, n.UiRefreshBubblePreset), e => e === a.Prompt),
-				w = Object(d.a)(e => f(e, n.D2xChatFilterGroupDirect), e => "enabled" === e),
-				y = Object(d.a)(e => f(e, n.D2XChatQuickActionsChannels), e => e === u.QuickActionBlock),
-				v = Object(d.a)(e => f(e, n.D2XChatQuickActionsChannels), e => e === u.QuickActionSpam),
-				E = Object(d.a)(e => f(e, n.D2XChatQuickActionsChannels), e => Boolean(m(e))),
-				T = Object(d.a)(e => f(e, n.ChatInviteMessagePreview), e => "enabled" === e)
+				g = e => Boolean(e.user.experiments[n.EconRpanAvatar]),
+				w = Object(d.a)(e => b(e, n.UiRefreshBubblePreset), e => Boolean(h(e))),
+				y = Object(d.a)(e => b(e, n.UiRefreshBubblePreset), e => e === a.Prompt),
+				v = Object(d.a)(e => b(e, n.D2xChatFilterGroupDirect), e => "enabled" === e),
+				E = Object(d.a)(e => b(e, n.D2XChatQuickActionsChannels), e => e === u.QuickActionBlock),
+				T = Object(d.a)(e => b(e, n.D2XChatQuickActionsChannels), e => e === u.QuickActionSpam),
+				S = Object(d.a)(e => b(e, n.D2XChatQuickActionsChannels), e => Boolean(h(e))),
+				O = Object(d.a)(e => b(e, n.ChatImagesRenderKillSwitch), e => "enabled" === e),
+				I = Object(d.a)(e => b(e, n.ChatMediaShareImages), e => O(e), (e, t) => "enabled" === e && !t),
+				R = Object(d.a)((e, t) => t ? Object(m.m)(e, t) : void 0, e => I(e), (e, t) => e === c.a.Direct && t),
+				F = Object(d.a)(e => b(e, n.ChatInviteMessagePreview), e => "enabled" === e)
 		},
 		"./src/chat/selectors/members.ts": function(e, t, i) {
 			"use strict";
@@ -1957,7 +1987,7 @@
 				s = i("./src/chat/models/Channel/index.ts"),
 				o = i("./src/chat/selectors/channels.ts");
 			const d = e => {
-					const t = Object(o.x)(e);
+					const t = Object(o.y)(e);
 					if (t) return e.members[t]
 				},
 				a = e => {
@@ -2168,7 +2198,7 @@
 				s = i("./src/chat/selectors/promos.ts");
 			const o = e => e.messages.unread,
 				d = e => {
-					const t = Object(r.t)(e);
+					const t = Object(r.u)(e);
 					return e.messages.unread.basicChannelCount - t || 0
 				},
 				a = e => {
@@ -2223,250 +2253,251 @@
 		"./src/chat/tracking/fields/chat.ts": function(e, t, i) {
 			"use strict";
 			i.d(t, "f", (function() {
-				return p
-			})), i.d(t, "z", (function() {
 				return h
-			})), i.d(t, "d", (function() {
+			})), i.d(t, "z", (function() {
 				return f
-			})), i.d(t, "b", (function() {
+			})), i.d(t, "d", (function() {
 				return b
-			})), i.d(t, "D", (function() {
+			})), i.d(t, "b", (function() {
 				return g
-			})), i.d(t, "C", (function() {
+			})), i.d(t, "D", (function() {
 				return w
-			})), i.d(t, "p", (function() {
+			})), i.d(t, "C", (function() {
 				return y
-			})), i.d(t, "w", (function() {
+			})), i.d(t, "p", (function() {
 				return v
-			})), i.d(t, "j", (function() {
+			})), i.d(t, "w", (function() {
 				return E
-			})), i.d(t, "B", (function() {
+			})), i.d(t, "j", (function() {
 				return T
-			})), i.d(t, "y", (function() {
+			})), i.d(t, "B", (function() {
 				return S
-			})), i.d(t, "r", (function() {
+			})), i.d(t, "y", (function() {
 				return O
-			})), i.d(t, "o", (function() {
+			})), i.d(t, "r", (function() {
 				return I
-			})), i.d(t, "q", (function() {
+			})), i.d(t, "o", (function() {
 				return R
-			})), i.d(t, "n", (function() {
+			})), i.d(t, "q", (function() {
 				return F
-			})), i.d(t, "s", (function() {
+			})), i.d(t, "n", (function() {
 				return C
-			})), i.d(t, "A", (function() {
+			})), i.d(t, "s", (function() {
 				return N
-			})), i.d(t, "e", (function() {
+			})), i.d(t, "A", (function() {
 				return j
-			})), i.d(t, "g", (function() {
+			})), i.d(t, "e", (function() {
 				return A
-			})), i.d(t, "i", (function() {
+			})), i.d(t, "g", (function() {
 				return P
-			})), i.d(t, "h", (function() {
+			})), i.d(t, "i", (function() {
 				return D
-			})), i.d(t, "v", (function() {
+			})), i.d(t, "h", (function() {
 				return x
-			})), i.d(t, "t", (function() {
+			})), i.d(t, "v", (function() {
 				return L
-			})), i.d(t, "a", (function() {
+			})), i.d(t, "t", (function() {
 				return B
-			})), i.d(t, "c", (function() {
+			})), i.d(t, "a", (function() {
 				return k
-			})), i.d(t, "k", (function() {
+			})), i.d(t, "c", (function() {
 				return M
-			})), i.d(t, "x", (function() {
+			})), i.d(t, "k", (function() {
 				return U
-			})), i.d(t, "m", (function() {
+			})), i.d(t, "x", (function() {
 				return G
-			})), i.d(t, "u", (function() {
+			})), i.d(t, "m", (function() {
 				return V
-			})), i.d(t, "l", (function() {
+			})), i.d(t, "u", (function() {
 				return q
+			})), i.d(t, "l", (function() {
+				return H
 			}));
 			var n, r = i("./node_modules/lodash/difference.js"),
 				s = i.n(r),
 				o = i("./node_modules/lodash/isEmpty.js"),
 				d = i.n(o),
-				a = i("./src/chat/models/Channel/index.ts"),
-				l = i("./src/chat/selectors/channels.ts"),
-				u = i("./src/chat/selectors/contacts.ts"),
-				c = i("./src/chat/selectors/messages.ts"),
-				_ = i("./src/chat/selectors/unreadCounter.ts");
+				a = i("./src/chat/constants/messages.ts"),
+				l = i("./src/chat/models/Channel/index.ts"),
+				u = i("./src/chat/selectors/channels.ts"),
+				c = i("./src/chat/selectors/contacts.ts"),
+				_ = i("./src/chat/selectors/messages.ts"),
+				m = i("./src/chat/selectors/unreadCounter.ts");
 			! function(e) {
 				e.Direct = "direct", e.Group = "group"
 			}(n || (n = {}));
-			const m = e => {
+			const p = e => {
 					switch (e) {
-						case a.a.Direct:
+						case l.a.Direct:
 							return n.Direct;
-						case a.a.Group:
+						case l.a.Group:
 							return n.Group
 					}
 				},
-				p = (e, t) => {
-					const i = t ? Object(l.i)(e, t) : Object(l.m)(e);
+				h = (e, t) => {
+					const i = t ? Object(u.i)(e, t) : Object(u.n)(e);
 					return i && {
 						id: i.channelSendbirdUrl
 					}
 				},
-				h = (e, t) => {
-					const i = t ? Object(l.i)(e, t) : Object(l.p)(e);
+				f = (e, t) => {
+					const i = t ? Object(u.i)(e, t) : Object(u.q)(e);
 					if (i) {
 						const {
 							type: e
-						} = i, t = m(e);
+						} = i, t = p(e);
 						return t && {
 							type: t
 						}
 					}
 				},
-				f = e => {
+				b = e => {
 					return {
-						type: Object(u.k)(e) > 1 ? n.Group : n.Direct
+						type: Object(c.k)(e) > 1 ? n.Group : n.Direct
 					}
 				},
-				b = e => {
-					const t = Object(u.k)(e);
+				g = e => {
+					const t = Object(c.k)(e);
 					return {
 						number_members: t ? t + 1 : 0
 					}
 				},
-				g = (e, t) => {
+				w = (e, t) => {
 					return {
 						type: (t && t.length) > 2 ? n.Group : n.Direct
 					}
 				},
-				w = (e, t) => {
+				y = (e, t) => {
 					const {
 						members: i
-					} = T(e, t);
+					} = S(e, t);
 					return {
 						number_members: i.length
 					}
 				},
-				y = e => {
-					const t = Object(l.p)(e);
+				v = e => {
+					const t = Object(u.q)(e);
 					return {
 						number_members: t && t.memberCount
 					}
 				},
-				v = (e, t) => {
-					const i = Object(c.d)(e, t);
+				E = (e, t, i) => {
+					const n = i || Object(_.d)(e, t);
 					return {
-						sender_user_id: i && i.userId || e.user.account.id
+						sender_user_id: n && n.userId || e.user.account.id
 					}
 				},
-				E = e => {
-					const t = Object(l.m)(e);
+				T = e => {
+					const t = Object(u.n)(e);
 					return {
 						sender_user_id: t && t.inviter && t.inviter.id
 					}
 				},
-				T = (e, t) => (t.push(e.user.account.id), {
+				S = (e, t) => (t.push(e.user.account.id), {
 					members: t
 				}),
-				S = e => ({
-					number_unreads: Object(_.b)(e)
+				O = e => ({
+					number_unreads: Object(m.b)(e)
 				}),
-				O = (e, t) => {
-					const i = Object(l.p)(e),
+				I = (e, t) => {
+					const i = Object(u.q)(e),
 						n = i && i.unreadMessageCount;
 					return {
 						number_unreads: "number" == typeof t ? t : n || 0
 					}
 				},
-				I = e => ({
-					number_channels: Object(l.u)(e)
-				}),
 				R = e => ({
-					number_pending_invites: Object(l.t)(e)
+					number_channels: Object(u.v)(e)
 				}),
-				F = (e, t) => ({
-					message_type: Object(c.e)(e, t) || "text"
+				F = e => ({
+					number_pending_invites: Object(u.u)(e)
 				}),
-				C = (e, t) => {
-					const i = Object(c.f)(e, t);
+				C = (e, t, i) => ({
+					message_type: (null == i ? void 0 : i.type) || Object(_.e)(e, t) || a.c.TEXT
+				}),
+				N = (e, t) => {
+					const i = Object(_.f)(e, t);
 					return i && {
 						message_type: i.messageData.type
 					}
 				},
-				N = (e, t, i) => {
-					const n = Object(u.a)(e, t);
+				j = (e, t, i) => {
+					const n = Object(c.a)(e, t);
 					return {
 						user_added_method: i || (n || null)
 					}
 				},
-				j = e => {
+				A = e => {
 					let t = !1;
-					const i = Object(u.e)(e),
-						n = Object(l.g)(e);
+					const i = Object(c.e)(e),
+						n = Object(u.g)(e);
 					return i && i.length && n && n.length && (t = !!n.find(e => d()(s()(i.sort(), e.sort())))), {
 						existing_channel: t
 					}
 				},
-				A = e => {
-					const t = Object(l.p)(e);
+				P = e => {
+					const t = Object(u.q)(e);
 					return {
 						invitation_id: t ? t.channelSendbirdUrl : null
 					}
 				},
-				P = (e, t) => {
+				D = (e, t) => {
 					if (t) return {
 						invitation_type: t
 					};
-					const i = Object(l.p)(e),
-						n = i && m(i.type);
+					const i = Object(u.q)(e),
+						n = i && p(i.type);
 					return n && {
 						invitation_type: n
 					}
 				},
-				D = e => {
-					const t = Object(l.p)(e);
+				x = e => {
+					const t = Object(u.q)(e);
 					return {
 						invitation_timestamp: t ? t.createdAt : null
 					}
 				},
-				x = e => ({
+				L = e => ({
 					reported_user_id: e || null
 				}),
-				L = e => {
-					const t = Object(l.p)(e),
-						i = !(!t || t.type !== a.a.Direct),
-						n = Object(l.v)(e),
+				B = e => {
+					const t = Object(u.q)(e),
+						i = !(!t || t.type !== l.a.Direct),
+						n = Object(u.w)(e),
 						r = n && n.length && n[0].id;
 					return {
 						recipient_user_id: i ? r : null
 					}
 				},
-				B = (e, t) => {
-					const i = Object(u.b)(e, t);
+				k = (e, t) => {
+					const i = Object(c.b)(e, t);
 					return {
 						recipient_user_id: i ? i.id : null
 					}
 				},
-				k = e => {
-					const t = Object(u.j)(e);
+				M = e => {
+					const t = Object(c.j)(e);
 					return {
 						recipient_user_id: 1 === t.length ? t[0] : null
 					}
 				},
-				M = e => ({
-					is_member: Object(l.M)(e)
+				U = e => ({
+					is_member: Object(u.N)(e)
 				}),
-				U = e => {
-					const t = Object(l.o)(e);
+				G = e => {
+					const t = Object(u.p)(e);
 					return t && {
 						shown_history: !!t.lastMessage
 					}
 				},
-				G = e => ({
+				V = e => ({
 					message_id: e
 				}),
-				V = e => ({
+				q = e => ({
 					report_reason: e
 				}),
-				q = (e, t) => {
-					const i = Object(c.c)(e, t);
+				H = (e, t) => {
+					const i = Object(_.c)(e, t);
 					if (i) return {
 						message_body: i.value
 					}
@@ -2537,13 +2568,13 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("144656"),
+				buildNumber: r("144666"),
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1631227931"),
+				})("1631229380"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -2701,7 +2732,7 @@
 				s = i("./node_modules/react/index.js"),
 				o = i.n(s),
 				d = i("./src/lib/fastdom/index.ts"),
-				a = i("./src/reddit/components/Portal/index.tsx"),
+				a = i("./src/lib/portal/index.tsx"),
 				l = i("./src/higherOrderComponents/addOverlayEvents.tsx"),
 				u = i("./src/higherOrderComponents/sizeMe.tsx"),
 				c = i("./src/reddit/components/HiddenDiv.tsx");
@@ -4083,7 +4114,7 @@
 			};
 			var p;
 			! function(e) {
-				e.CHAT_EDIT_NICKNAME_KEY = "chat_edit_nicknameKey", e.CHAT_SHOW_THEMES_PROMPT_COUNT_KEY = "chat_show_themes_prompt_count_key", e.CHAT_THEME_KEY = "chat_theme_key", e.CHAT_SENDBIRD_SESSION_KEY = "session", e.CHAT_SENDBIRD_CONTACTS_KEY = "contacts", e.CHAT_CONTAINER_SIZE_KEY = "container_size", e.CHAT_DRAFT_MESSAGES_KEY = "draft_messages", e.CHAT_LAST_SELECTED_CHANNEL_ID_KEY = "last_selected_channel_id", e.CHANNELS_FILTER_KEY = "channels_filter_key", e.CHAT_UNREAD_MESSAGE_COUNT_KEY = "unread_message_count"
+				e.CHAT_EDIT_NICKNAME_KEY = "chat_edit_nicknameKey", e.CHAT_SHOW_THEMES_PROMPT_COUNT_KEY = "chat_show_themes_prompt_count_key", e.CHAT_THEME_KEY = "chat_theme_key", e.CHAT_SENDBIRD_SESSION_KEY = "session", e.CHAT_SENDBIRD_CONTACTS_KEY = "contacts", e.CHAT_CONTAINER_SIZE_KEY = "container_size", e.CHAT_DRAFT_MESSAGES_KEY = "draft_messages", e.CHAT_LAST_SELECTED_CHANNEL_ID_KEY = "last_selected_channel_id", e.CHANNELS_FILTER_KEY = "channels_filter_key", e.CHAT_UNREAD_MESSAGE_COUNT_KEY = "unread_message_count", e.CHAT_UPLOAD_PROMPT_COUNT_KEY = "upload_prompt_count"
 			}(p || (p = {}));
 			const h = {
 					RECENT_SUBREDDITS: "recent_subreddits"
@@ -5021,14 +5052,14 @@
 					}))
 				},
 				z = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %cd4d238a69a17c1371b8eb4b81ca2e4e8241dced4-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c863163b7830d1c125676a4f7191d1630913f3add-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${v.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "d4d238a69a17c1371b8eb4b81ca2e4e8241dced4-production",
+						release: "863163b7830d1c125676a4f7191d1630913f3add-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -5522,7 +5553,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "d4d238a69a17c1371b8eb4b81ca2e4e8241dced4-production",
+						releaseClient: "863163b7830d1c125676a4f7191d1630913f3add-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -6560,6 +6591,23 @@
 				return t.setFullYear(t.getFullYear() + e), {
 					...n.B,
 					expires: t
+				}
+			}
+		},
+		"./src/lib/portal/index.tsx": function(e, t, i) {
+			"use strict";
+			i.d(t, "a", (function() {
+				return s
+			}));
+			var n = i("./node_modules/react/index.js"),
+				r = i("./src/lib/CSSVariableProvider/index.tsx");
+			class s extends n.PureComponent {
+				render() {
+					const {
+						children: e,
+						container: t
+					} = this.props, i = top.document.body;
+					return Object(r.d)(e, t || i)
 				}
 			}
 		},
@@ -13861,23 +13909,6 @@
 				function(e) {
 					e.EmailCollectionBannerId = "email-collection-banner-id"
 				}(n || (n = {}))
-		},
-		"./src/reddit/components/Portal/index.tsx": function(e, t, i) {
-			"use strict";
-			i.d(t, "a", (function() {
-				return s
-			}));
-			var n = i("./node_modules/react/index.js"),
-				r = i("./src/lib/CSSVariableProvider/index.tsx");
-			class s extends n.PureComponent {
-				render() {
-					const {
-						children: e,
-						container: t
-					} = this.props;
-					return Object(r.d)(e, t || document.body)
-				}
-			}
 		},
 		"./src/reddit/components/RichTextEditor/RTEState/index.tsx": function(e, t, i) {
 			"use strict";
@@ -40433,7 +40464,7 @@
 				e.Allow = "allow", e.Bail = "bail", e.Block = "block", e.Close = "close", e.Request = "request", e.Register = "register", e.View = "view"
 			}(Ri || (Ri = {})),
 			function(e) {
-				e.Approve = "approve", e.Ban = "ban", e.Block = "block", e.Click = "click", e.Confirm = "confirm", e.Disable = "disable", e.Dismiss = "dismiss", e.Enable = "enable", e.Heartbeat = "heartbeat", e.Kick = "kick", e.Leave = "leave", e.Load = "load", e.ModDelete = "mod_delete", e.Mute = "mute", e.OptOut = "opt_out", e.Report = "report", e.Save = "save", e.Submit = "submit", e.View = "view", e.Search = "search", e.Unmute = "unmute"
+				e.Approve = "approve", e.Ban = "ban", e.Block = "block", e.Click = "click", e.Complete = "complete", e.Confirm = "confirm", e.Delete = "delete", e.Disable = "disable", e.Dismiss = "dismiss", e.Enable = "enable", e.Heartbeat = "heartbeat", e.Kick = "kick", e.Leave = "leave", e.Load = "load", e.ModDelete = "mod_delete", e.Mute = "mute", e.OptOut = "opt_out", e.Report = "report", e.Save = "save", e.Submit = "submit", e.View = "view", e.Search = "search", e.Unmute = "unmute"
 			}(Fi || (Fi = {})),
 			function(e) {
 				e.Experiment = "experiment", e.Page = "page"
@@ -40788,4 +40819,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.ba29089da87b0b8f73e6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.7e478c6fe459f30004e9.js.map

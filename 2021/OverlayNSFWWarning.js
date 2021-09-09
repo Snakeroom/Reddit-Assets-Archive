@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OverlayNSFWWarning.5a3763abf6f22ac0bd24.js
-// Retrieved at 7/28/2021, 2:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OverlayNSFWWarning.2059fe163c002642c74c.js
+// Retrieved at 9/9/2021, 7:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OverlayNSFWWarning"], {
 		"./src/chat/components/OverlayNSFWWarning/index.m.less": function(e, t, n) {
@@ -73,43 +73,43 @@
 				l = n("./src/config.ts"),
 				i = n("./src/lib/classNames/index.ts"),
 				d = n("./src/chat/controls/Button/index.tsx"),
-				u = n("./src/chat/helpers/dom.ts"),
-				m = n("./src/chat/controls/OverlayControlBar/index.m.less"),
-				h = n.n(m);
+				u = n("./src/chat/controls/OverlayControlBar/index.m.less"),
+				m = n.n(u),
+				h = n("./src/chat/helpers/dom.ts");
 			const y = Object(s.b)(void 0, e => ({
 				onSubmit: () => {},
-				onCancel: Object(u.b)(() => e(Object(c.a)()))
+				onCancel: Object(h.b)(() => e(Object(c.a)()))
 			}))(e => o.a.createElement("div", {
 				className: Object(i.a)({
-					[h.a.primary]: e.primaryButtonOnly,
-					[h.a.NoHeaderText]: !e.children
-				}, h.a.OverlayControlBar, e.className)
+					[m.a.primary]: e.primaryButtonOnly,
+					[m.a.NoHeaderText]: !e.children
+				}, m.a.OverlayControlBar, e.className)
 			}, e.children && o.a.createElement("span", {
-				className: h.a.HeaderText
+				className: m.a.HeaderText
 			}, e.children), o.a.createElement("div", {
-				className: h.a.ButtonsWrapper
+				className: m.a.ButtonsWrapper
 			}, e.primaryButtonBlock && o.a.createElement(d.a, {
 				onClick: e.primaryButtonBlockAction || e.onCancel,
-				className: Object(i.a)(h.a.Button, h.a.NoBorderPrimaryButton),
+				className: Object(i.a)(m.a.Button, m.a.NoBorderPrimaryButton),
 				secondary: !0,
 				noBorder: !0
 			}, e.primaryButtonBlockText || a.fbt._("Block", null, {
 				hk: "4CA4VX"
 			})), !e.primaryButtonOnly && (e.secondaryButtonCTLOptions ? o.a.createElement(d.a, {
-				className: h.a.Button,
+				className: m.a.Button,
 				href: `${l.a.redditHelpUrl}/en/categories/rules-reporting/suicide-response/what-do-i-do-if-someone-talks-about-seriously-hurting`,
 				secondary: !0
 			}, a.fbt._("Other Options", null, {
 				hk: "1RadlV"
 			})) : o.a.createElement(d.a, {
-				className: h.a.Button,
+				className: m.a.Button,
 				onClick: e.secondaryButtonAction || e.onCancel,
 				primary: !!e.secondaryButtonOnly,
 				secondary: !e.secondaryButtonOnly
 			}, e.secondaryButtonText || a.fbt._("Cancel", null, {
 				hk: "2TSLl5"
 			}))), !e.secondaryButtonOnly && o.a.createElement(d.a, {
-				className: h.a.Button,
+				className: m.a.Button,
 				type: "submit",
 				primary: !0,
 				onClick: e.primaryButtonAction || e.onSubmit,
@@ -121,4 +121,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayNSFWWarning.5a3763abf6f22ac0bd24.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayNSFWWarning.2059fe163c002642c74c.js.map

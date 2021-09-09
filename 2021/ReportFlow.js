@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlow.691e2ea966f58947a5da.js
-// Retrieved at 9/9/2021, 3:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlow.be19957b6f96e7388c24.js
+// Retrieved at 9/9/2021, 7:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlow", "ReportFlowNew"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, o) {
@@ -402,8 +402,8 @@
 				r = o.n(n),
 				s = o("./src/lib/classNames/index.ts"),
 				i = o("./src/lib/FocusTrap/index.ts"),
-				a = o("./src/reddit/actions/shortcuts/utils.ts"),
-				l = o("./src/reddit/components/Portal/index.tsx"),
+				a = o("./src/lib/portal/index.tsx"),
+				l = o("./src/reddit/actions/shortcuts/utils.ts"),
 				c = o("./src/reddit/constants/shortcuts.ts"),
 				d = o("./src/reddit/helpers/toggleBodyScroll/index.ts"),
 				u = o("./src/higherOrderComponents/asModal/index.m.less"),
@@ -445,7 +445,7 @@
 					componentWillUnmount() {
 						this.setState({
 							mounted: !1
-						}), Object(d.b)(), Object(a.d)(), this.focusTrap && this.focusTrap.deactivate()
+						}), Object(d.b)(), Object(l.d)(), this.focusTrap && this.focusTrap.deactivate()
 					}
 					render() {
 						const {
@@ -454,15 +454,15 @@
 							className: o,
 							ignoreDefaultFocus: n,
 							onOverlayClick: i,
-							overlayClassName: a,
+							overlayClassName: l,
 							overlayCustomStyles: d,
 							withOverlay: u,
 							...m
 						} = t, _ = m;
-						return r.a.createElement(l.a, {
+						return r.a.createElement(a.a, {
 							container: document.getElementById(c.b)
 						}, r.a.createElement(f, {
-							className: a,
+							className: l,
 							isVisible: u,
 							onClick: this.onOverlayClick,
 							style: d
@@ -5923,4 +5923,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.691e2ea966f58947a5da.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.be19957b6f96e7388c24.js.map

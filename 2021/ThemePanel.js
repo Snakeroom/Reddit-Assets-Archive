@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ThemePanel.ed10c5f736f23c3348a1.js
-// Retrieved at 7/28/2021, 2:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ThemePanel.2f55f755fc69d99c4711.js
+// Retrieved at 9/9/2021, 7:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ThemePanel"], {
 		"./src/chat/components/Sidebar/ThemePanel/index.m.less": function(e, t, a) {
@@ -80,7 +80,7 @@
 					t = t => {
 						e(Object(m.changeChatThemeAction)({
 							themeKey: t
-						})), e(Object(u.v)(t))
+						})), e(Object(u.x)(t))
 					};
 				return s.a.createElement("div", {
 					className: C.a.ThemePanel
@@ -124,4 +124,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ThemePanel.ed10c5f736f23c3348a1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ThemePanel.2f55f755fc69d99c4711.js.map

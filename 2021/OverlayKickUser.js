@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OverlayKickUser.69f2dbf70082cfcec90e.js
-// Retrieved at 7/28/2021, 2:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OverlayKickUser.3c662ba9225a37397007.js
+// Retrieved at 9/9/2021, 7:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OverlayKickUser"], {
 		"./src/chat/components/OverlayKickUser/index.m.less": function(e, t, a) {
@@ -73,7 +73,7 @@
 				}),
 				S = Object(s.b)(L, e => ({
 					onKickUser: (t, a, n) => {
-						e(Object(i.p)(t, a, n)), e(Object(l.D)(n))
+						e(Object(i.p)(t, a, n)), e(Object(l.G)(n))
 					}
 				}));
 			class K extends r.Component {
@@ -265,43 +265,43 @@
 				l = a("./src/config.ts"),
 				i = a("./src/lib/classNames/index.ts"),
 				d = a("./src/chat/controls/Button/index.tsx"),
-				u = a("./src/chat/helpers/dom.ts"),
-				m = a("./src/chat/controls/OverlayControlBar/index.m.less"),
-				h = a.n(m);
+				u = a("./src/chat/controls/OverlayControlBar/index.m.less"),
+				m = a.n(u),
+				h = a("./src/chat/helpers/dom.ts");
 			const p = Object(s.b)(void 0, e => ({
 				onSubmit: () => {},
-				onCancel: Object(u.b)(() => e(Object(o.a)()))
+				onCancel: Object(h.b)(() => e(Object(o.a)()))
 			}))(e => c.a.createElement("div", {
 				className: Object(i.a)({
-					[h.a.primary]: e.primaryButtonOnly,
-					[h.a.NoHeaderText]: !e.children
-				}, h.a.OverlayControlBar, e.className)
+					[m.a.primary]: e.primaryButtonOnly,
+					[m.a.NoHeaderText]: !e.children
+				}, m.a.OverlayControlBar, e.className)
 			}, e.children && c.a.createElement("span", {
-				className: h.a.HeaderText
+				className: m.a.HeaderText
 			}, e.children), c.a.createElement("div", {
-				className: h.a.ButtonsWrapper
+				className: m.a.ButtonsWrapper
 			}, e.primaryButtonBlock && c.a.createElement(d.a, {
 				onClick: e.primaryButtonBlockAction || e.onCancel,
-				className: Object(i.a)(h.a.Button, h.a.NoBorderPrimaryButton),
+				className: Object(i.a)(m.a.Button, m.a.NoBorderPrimaryButton),
 				secondary: !0,
 				noBorder: !0
 			}, e.primaryButtonBlockText || n.fbt._("Block", null, {
 				hk: "4CA4VX"
 			})), !e.primaryButtonOnly && (e.secondaryButtonCTLOptions ? c.a.createElement(d.a, {
-				className: h.a.Button,
+				className: m.a.Button,
 				href: `${l.a.redditHelpUrl}/en/categories/rules-reporting/suicide-response/what-do-i-do-if-someone-talks-about-seriously-hurting`,
 				secondary: !0
 			}, n.fbt._("Other Options", null, {
 				hk: "1RadlV"
 			})) : c.a.createElement(d.a, {
-				className: h.a.Button,
+				className: m.a.Button,
 				onClick: e.secondaryButtonAction || e.onCancel,
 				primary: !!e.secondaryButtonOnly,
 				secondary: !e.secondaryButtonOnly
 			}, e.secondaryButtonText || n.fbt._("Cancel", null, {
 				hk: "2TSLl5"
 			}))), !e.secondaryButtonOnly && c.a.createElement(d.a, {
-				className: h.a.Button,
+				className: m.a.Button,
 				type: "submit",
 				primary: !0,
 				onClick: e.primaryButtonAction || e.onSubmit,
@@ -327,4 +327,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayKickUser.69f2dbf70082cfcec90e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayKickUser.3c662ba9225a37397007.js.map

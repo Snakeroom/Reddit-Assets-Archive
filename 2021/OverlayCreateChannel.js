@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OverlayCreateChannel.e0471d3aeae526d4af76.js
-// Retrieved at 7/28/2021, 2:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OverlayCreateChannel.583b4ed8c3bcf4c72cf3.js
+// Retrieved at 9/9/2021, 7:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OverlayCreateChannel"], {
 		"./src/chat/components/OverlayCreateChannel/index.m.less": function(e, t, n) {
@@ -55,12 +55,12 @@
 				k = n("./src/chat/constants/keys.ts"),
 				g = n("./src/chat/helpers/dom.ts"),
 				E = n("./src/chat/components/SearchBar/index.m.less"),
-				O = n.n(E);
-			const B = f.a.span("Bubble", O.a),
-				U = f.a.span("SearchBarLabel", O.a),
-				v = f.a.span("SearchBarField", O.a),
-				N = f.a.input("SearchBarInput", O.a),
-				S = f.a.wrapped(x.b, "SearchBarWrapper", O.a);
+				B = n.n(E);
+			const O = f.a.span("Bubble", B.a),
+				U = f.a.span("SearchBarLabel", B.a),
+				v = f.a.span("SearchBarField", B.a),
+				N = f.a.input("SearchBarInput", B.a),
+				S = f.a.wrapped(x.b, "SearchBarWrapper", B.a);
 			class L extends i.a.Component {
 				constructor(e) {
 					super(e), this.bubbleRefs = {}, this.timeoutToken = null, this.onBubbleKey = e => t => {
@@ -131,7 +131,7 @@
 						autoScrollBottom: !0
 					}, i.a.createElement(U, null, a.fbt._("To:", null, {
 						hk: "2eyFcf"
-					})), i.a.createElement(v, null, n && n.length > 0 && n.map((e, t) => i.a.createElement(B, {
+					})), i.a.createElement(v, null, n && n.length > 0 && n.map((e, t) => i.a.createElement(O, {
 						key: `selected-contact-${t}`,
 						tabIndex: 0,
 						onKeyDown: Object(g.a)(this.onBubbleKey(e)),
@@ -190,8 +190,8 @@
 			var D = n("./src/chat/components/UnselectableUser/index.m.less"),
 				P = n.n(D);
 			const M = f.a.span("Wrapper", P.a),
-				K = f.a.span("Content", P.a),
-				W = f.a.wrapped(j.a, "UserPic", P.a),
+				W = f.a.span("Content", P.a),
+				K = f.a.wrapped(j.a, "UserPic", P.a),
 				G = f.a.span("Name", P.a),
 				Q = f.a.span("Context", P.a);
 			class z extends l.Component {
@@ -203,7 +203,7 @@
 						},
 						context: n
 					} = this.props;
-					return i.a.createElement(M, null, i.a.createElement(K, null, i.a.createElement(W, {
+					return i.a.createElement(M, null, i.a.createElement(W, null, i.a.createElement(K, {
 						userId: e
 					}), i.a.createElement(G, null, t)), i.a.createElement(Q, null, n))
 				}
@@ -234,17 +234,17 @@
 				le = e => e.toLocaleLowerCase(),
 				ie = Object($.a)({
 					channelAction: e => Object(ne.c)(e),
-					channel: e => Object(ee.m)(e),
+					channel: e => Object(ee.n)(e),
 					contacts: te.h,
 					currentUserName: ae.b,
 					existingGroupUsers: e => {
-						const t = Object(ee.A)(e, "members");
+						const t = Object(ee.B)(e, "members");
 						return t && t.map(e => e.id)
 					},
-					isCreatingChannel: ee.K,
+					isCreatingChannel: ee.L,
 					loadedContacts: te.i,
 					knownContacts: te.g,
-					memberCount: e => Object(ee.A)(e, "memberCount"),
+					memberCount: e => Object(ee.B)(e, "memberCount"),
 					selectedUsers: te.j,
 					selectedUsersCount: te.k
 				}),
@@ -255,7 +255,7 @@
 						username: t
 					})),
 					onCancelAndGoBack: () => {
-						e(Object(d.a)()), e(Object(C.i)())
+						e(Object(d.a)()), e(Object(C.j)())
 					},
 					onSelectUser: t => e(Object(b.m)(t)),
 					onUnselectUser: t => e(Object(b.t)(t)),
@@ -409,7 +409,7 @@
 						onContactsSelect: p,
 						onSubmit: C,
 						onCancel: b
-					} = this, _ = this.getSelectedContacts(), y = this.getFilteredContacts(), f = this.getLoadedContact(), k = !!s && !f, E = !!f, O = !this.getIsValidUser(s), B = this.handleChannelNameInput, U = this.availableCharacters(l), v = this.isSubmitDisabled(U), N = this.primaryButtonText(), S = this.isCreateChannelURLAction(), j = n >= Z.f;
+					} = this, _ = this.getSelectedContacts(), y = this.getFilteredContacts(), f = this.getLoadedContact(), k = !!s && !f, E = !!f, B = !this.getIsValidUser(s), O = this.handleChannelNameInput, U = this.availableCharacters(l), v = this.isSubmitDisabled(U), N = this.primaryButtonText(), S = this.isCreateChannelURLAction(), j = n >= Z.f;
 					return i.a.createElement(V.a, {
 						className: e,
 						onSubmit: Object(g.a)(C),
@@ -427,7 +427,7 @@
 						isShown: n > 1
 					}, i.a.createElement(q.a, {
 						className: re.a.ChannelNameInput,
-						handleChannelNameInput: B,
+						handleChannelNameInput: O,
 						placeholder: a.fbt._("Group name", null, {
 							hk: "3YSrvu"
 						})
@@ -473,7 +473,7 @@
 						onChange: p
 					}, i.a.createElement("span", {
 						className: re.a.Name
-					}, s, O && i.a.createElement("span", {
+					}, s, B && i.a.createElement("span", {
 						className: re.a.Error
 					}, a.fbt._("User doesn't exist", null, {
 						hk: "2nKv7P"
@@ -611,8 +611,8 @@
 			const k = c.a.input("HiddenInput", f.a),
 				g = c.a.wrapped(u, "Checked", f.a),
 				E = c.a.wrapped(_, "Unchecked", f.a),
-				O = c.a.span("Wrapper", f.a),
-				B = c.a.span("Content", f.a),
+				B = c.a.span("Wrapper", f.a),
+				O = c.a.span("Content", f.a),
 				U = c.a.span("Control", f.a),
 				v = c.a.label("CheckInput", f.a);
 			t.a = e => s.a.createElement(v, {
@@ -623,7 +623,7 @@
 					height: e.height || void 0,
 					width: e.width || void 0
 				}
-			}, s.a.createElement(O, null, e.children && !e.rightPosition && s.a.createElement(B, null, e.children), s.a.createElement(U, null, s.a.createElement(k, {
+			}, s.a.createElement(B, null, e.children && !e.rightPosition && s.a.createElement(O, null, e.children), s.a.createElement(U, null, s.a.createElement(k, {
 				tabIndex: 0,
 				type: e.type || "checkbox",
 				checked: e.checked,
@@ -632,7 +632,7 @@
 				value: e.value,
 				onChange: e.onChange,
 				id: e.id
-			}), s.a.createElement(g, null), s.a.createElement(E, null)), e.children && e.rightPosition && s.a.createElement(B, null, e.children)))
+			}), s.a.createElement(g, null), s.a.createElement(E, null)), e.children && e.rightPosition && s.a.createElement(O, null, e.children)))
 		},
 		"./src/chat/controls/OverlayControlBar/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -660,43 +660,43 @@
 				l = n("./src/config.ts"),
 				i = n("./src/lib/classNames/index.ts"),
 				h = n("./src/chat/controls/Button/index.tsx"),
-				d = n("./src/chat/helpers/dom.ts"),
-				m = n("./src/chat/controls/OverlayControlBar/index.m.less"),
-				u = n.n(m);
+				d = n("./src/chat/controls/OverlayControlBar/index.m.less"),
+				m = n.n(d),
+				u = n("./src/chat/helpers/dom.ts");
 			const p = Object(c.b)(void 0, e => ({
 				onSubmit: () => {},
-				onCancel: Object(d.b)(() => e(Object(o.a)()))
+				onCancel: Object(u.b)(() => e(Object(o.a)()))
 			}))(e => r.a.createElement("div", {
 				className: Object(i.a)({
-					[u.a.primary]: e.primaryButtonOnly,
-					[u.a.NoHeaderText]: !e.children
-				}, u.a.OverlayControlBar, e.className)
+					[m.a.primary]: e.primaryButtonOnly,
+					[m.a.NoHeaderText]: !e.children
+				}, m.a.OverlayControlBar, e.className)
 			}, e.children && r.a.createElement("span", {
-				className: u.a.HeaderText
+				className: m.a.HeaderText
 			}, e.children), r.a.createElement("div", {
-				className: u.a.ButtonsWrapper
+				className: m.a.ButtonsWrapper
 			}, e.primaryButtonBlock && r.a.createElement(h.a, {
 				onClick: e.primaryButtonBlockAction || e.onCancel,
-				className: Object(i.a)(u.a.Button, u.a.NoBorderPrimaryButton),
+				className: Object(i.a)(m.a.Button, m.a.NoBorderPrimaryButton),
 				secondary: !0,
 				noBorder: !0
 			}, e.primaryButtonBlockText || a.fbt._("Block", null, {
 				hk: "4CA4VX"
 			})), !e.primaryButtonOnly && (e.secondaryButtonCTLOptions ? r.a.createElement(h.a, {
-				className: u.a.Button,
+				className: m.a.Button,
 				href: `${l.a.redditHelpUrl}/en/categories/rules-reporting/suicide-response/what-do-i-do-if-someone-talks-about-seriously-hurting`,
 				secondary: !0
 			}, a.fbt._("Other Options", null, {
 				hk: "1RadlV"
 			})) : r.a.createElement(h.a, {
-				className: u.a.Button,
+				className: m.a.Button,
 				onClick: e.secondaryButtonAction || e.onCancel,
 				primary: !!e.secondaryButtonOnly,
 				secondary: !e.secondaryButtonOnly
 			}, e.secondaryButtonText || a.fbt._("Cancel", null, {
 				hk: "2TSLl5"
 			}))), !e.secondaryButtonOnly && r.a.createElement(h.a, {
-				className: u.a.Button,
+				className: m.a.Button,
 				type: "submit",
 				primary: !0,
 				onClick: e.primaryButtonAction || e.onSubmit,
@@ -757,4 +757,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayCreateChannel.e0471d3aeae526d4af76.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayCreateChannel.583b4ed8c3bcf4c72cf3.js.map

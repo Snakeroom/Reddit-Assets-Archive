@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OverlayChatMembers.2824067f09bd7e2d451d.js
-// Retrieved at 7/28/2021, 2:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OverlayChatMembers.aaee809861de4a2b2692.js
+// Retrieved at 9/9/2021, 7:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OverlayChatMembers"], {
 		"./src/chat/components/OverlayChatMembers/index.m.less": function(e, t, r) {
@@ -29,13 +29,13 @@
 				y = r("./src/chat/selectors/channels.ts"),
 				x = r("./src/chat/selectors/members.ts"),
 				_ = r("./src/chat/components/OverlayChatMembers/index.m.less"),
-				O = r.n(_);
-			const B = c.a.wrapped(i.b, "Scroller", O.a),
-				C = c.a.div("LoadingIndicator", O.a),
+				B = r.n(_);
+			const O = c.a.wrapped(i.b, "Scroller", B.a),
+				C = c.a.div("LoadingIndicator", B.a),
 				f = Object(p.a)({
-					channelType: e => Object(y.A)(e, "type"),
-					currentChannel: y.m,
-					memberCount: e => Object(y.A)(e, "memberCount"),
+					channelType: e => Object(y.B)(e, "type"),
+					currentChannel: y.n,
+					memberCount: e => Object(y.B)(e, "memberCount"),
 					members: e => Object(x.f)(e),
 					fetchingMembers: x.a,
 					hasMoreMembers: x.d
@@ -73,7 +73,7 @@
 						}, [a.fbt._plural(n, "number of members")], {
 							hk: "4phXDa"
 						})
-					}), s.a.createElement(B, {
+					}), s.a.createElement(O, {
 						loadMoreRows: x,
 						isLoadMoreRowsComplete: _,
 						threshold: 0
@@ -122,43 +122,43 @@
 				l = r("./src/config.ts"),
 				m = r("./src/lib/classNames/index.ts"),
 				i = r("./src/chat/controls/Button/index.tsx"),
-				d = r("./src/chat/helpers/dom.ts"),
-				u = r("./src/chat/controls/OverlayControlBar/index.m.less"),
-				h = r.n(u);
+				d = r("./src/chat/controls/OverlayControlBar/index.m.less"),
+				u = r.n(d),
+				h = r("./src/chat/helpers/dom.ts");
 			const b = Object(o.b)(void 0, e => ({
 				onSubmit: () => {},
-				onCancel: Object(d.b)(() => e(Object(c.a)()))
+				onCancel: Object(h.b)(() => e(Object(c.a)()))
 			}))(e => s.a.createElement("div", {
 				className: Object(m.a)({
-					[h.a.primary]: e.primaryButtonOnly,
-					[h.a.NoHeaderText]: !e.children
-				}, h.a.OverlayControlBar, e.className)
+					[u.a.primary]: e.primaryButtonOnly,
+					[u.a.NoHeaderText]: !e.children
+				}, u.a.OverlayControlBar, e.className)
 			}, e.children && s.a.createElement("span", {
-				className: h.a.HeaderText
+				className: u.a.HeaderText
 			}, e.children), s.a.createElement("div", {
-				className: h.a.ButtonsWrapper
+				className: u.a.ButtonsWrapper
 			}, e.primaryButtonBlock && s.a.createElement(i.a, {
 				onClick: e.primaryButtonBlockAction || e.onCancel,
-				className: Object(m.a)(h.a.Button, h.a.NoBorderPrimaryButton),
+				className: Object(m.a)(u.a.Button, u.a.NoBorderPrimaryButton),
 				secondary: !0,
 				noBorder: !0
 			}, e.primaryButtonBlockText || a.fbt._("Block", null, {
 				hk: "4CA4VX"
 			})), !e.primaryButtonOnly && (e.secondaryButtonCTLOptions ? s.a.createElement(i.a, {
-				className: h.a.Button,
+				className: u.a.Button,
 				href: `${l.a.redditHelpUrl}/en/categories/rules-reporting/suicide-response/what-do-i-do-if-someone-talks-about-seriously-hurting`,
 				secondary: !0
 			}, a.fbt._("Other Options", null, {
 				hk: "1RadlV"
 			})) : s.a.createElement(i.a, {
-				className: h.a.Button,
+				className: u.a.Button,
 				onClick: e.secondaryButtonAction || e.onCancel,
 				primary: !!e.secondaryButtonOnly,
 				secondary: !e.secondaryButtonOnly
 			}, e.secondaryButtonText || a.fbt._("Cancel", null, {
 				hk: "2TSLl5"
 			}))), !e.secondaryButtonOnly && s.a.createElement(i.a, {
-				className: h.a.Button,
+				className: u.a.Button,
 				type: "submit",
 				primary: !0,
 				onClick: e.primaryButtonAction || e.onSubmit,
@@ -205,4 +205,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayChatMembers.2824067f09bd7e2d451d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayChatMembers.aaee809861de4a2b2692.js.map
