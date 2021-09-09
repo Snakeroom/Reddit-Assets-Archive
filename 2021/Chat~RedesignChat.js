@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.4f07566749a3e4038c7c.js
-// Retrieved at 9/9/2021, 5:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.2c6c5c3b34b484cfd67e.js
+// Retrieved at 9/9/2021, 7:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -14160,14 +14160,14 @@
 				},
 				l = () => !!Object(r.a)() && (localStorage.removeItem(c.f), !0),
 				d = async (e, t, n, o, l, d) => {
+					const u = i();
+					if (u === c.a.Unsupported) return void d();
 					if (Object(r.a)()) {
 						const t = localStorage.getItem(c.h),
 							n = (new Date).getTime();
 						if (!e && t && parseInt(t) + c.i > n) return void d();
 						localStorage.setItem(c.h, n.toString())
 					}
-					const u = i();
-					if (u === c.a.Unsupported) return void d();
 					if (!t && u === c.a.Denied) return o(!1, !0), void d();
 					if (!t && u === c.a.Granted) return l(!1), void d();
 					if (!t && u === c.a.Closed) return void d();
@@ -14412,4 +14412,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.4f07566749a3e4038c7c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.2c6c5c3b34b484cfd67e.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.17df0c949c7fd4437160.js
-// Retrieved at 9/9/2021, 6:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.fe1a4df03a55e490d102.js
+// Retrieved at 9/9/2021, 7:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~ModListing", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -358,14 +358,14 @@
 				},
 				d = () => !!Object(o.a)() && (localStorage.removeItem(i.f), !0),
 				l = async (e, t, n, a, d, l) => {
+					const u = c();
+					if (u === i.a.Unsupported) return void l();
 					if (Object(o.a)()) {
 						const t = localStorage.getItem(i.h),
 							n = (new Date).getTime();
 						if (!e && t && parseInt(t) + i.i > n) return void l();
 						localStorage.setItem(i.h, n.toString())
 					}
-					const u = c();
-					if (u === i.a.Unsupported) return void l();
 					if (!t && u === i.a.Denied) return a(!1, !0), void l();
 					if (!t && u === i.a.Granted) return d(!1), void l();
 					if (!t && u === i.a.Closed) return void l();
@@ -16625,4 +16625,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.17df0c949c7fd4437160.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.fe1a4df03a55e490d102.js.map

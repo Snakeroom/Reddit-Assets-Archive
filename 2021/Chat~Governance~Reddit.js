@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.18cdc467b55c9dda1551.js
-// Retrieved at 9/9/2021, 6:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.ba29089da87b0b8f73e6.js
+// Retrieved at 9/9/2021, 7:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -2537,13 +2537,13 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("144655"),
+				buildNumber: r("144656"),
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1631225666"),
+				})("1631227931"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -5021,14 +5021,14 @@
 					}))
 				},
 				z = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c15dc0b7dcaa01a742289cc26d5405b4f3c09f4d6-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %cd4d238a69a17c1371b8eb4b81ca2e4e8241dced4-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${v.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "15dc0b7dcaa01a742289cc26d5405b4f3c09f4d6-production",
+						release: "d4d238a69a17c1371b8eb4b81ca2e4e8241dced4-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -5522,7 +5522,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "15dc0b7dcaa01a742289cc26d5405b4f3c09f4d6-production",
+						releaseClient: "d4d238a69a17c1371b8eb4b81ca2e4e8241dced4-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -18114,19 +18114,19 @@
 		"./src/reddit/featureFlags/index.ts": function(e, t, i) {
 			"use strict";
 			i.d(t, "d", (function() {
-				return T
-			})), i.d(t, "a", (function() {
 				return S
-			})), i.d(t, "f", (function() {
+			})), i.d(t, "a", (function() {
 				return O
+			})), i.d(t, "f", (function() {
+				return I
 			})), i.d(t, "g", (function() {
-				return R
-			})), i.d(t, "b", (function() {
 				return F
-			})), i.d(t, "c", (function() {
+			})), i.d(t, "b", (function() {
 				return C
+			})), i.d(t, "c", (function() {
+				return N
 			})), i.d(t, "e", (function() {
-				return j
+				return A
 			}));
 			i("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = i("./node_modules/lodash/isNil.js"),
@@ -18134,111 +18134,112 @@
 				s = i("./node_modules/lodash/mapValues.js"),
 				o = i.n(s),
 				d = i("./src/lib/constants/euCookiePolicy.ts"),
-				a = i("./src/lib/notifications/featureFlags.ts");
-			var l = i("./src/reddit/featureFlags/utils.ts"),
-				u = i("./src/reddit/models/User/index.ts"),
-				c = i("./src/reddit/selectors/user.ts");
-			const _ = new Set(["coachzzz", "settrace", "flash_55", "mikapp", "ggalex", "jdawg1000"]);
-			var m = i("./src/reddit/selectors/moderatorPermissions.ts"),
-				p = i("./src/reddit/selectors/platform.ts"),
-				h = i("./src/reddit/selectors/subreddit.ts");
-			var f = i("./src/reddit/selectors/responsiveSettings.ts");
-			const b = new Set([].map(e => e.toLowerCase())),
-				g = new Set(["uzitest", "testingtesting127", "kpkrunal"]);
-			var w = i("./src/reddit/featureFlags/subredditPoints.ts");
-			const y = new Set(["askaliberal", "asktransgender", "askwomen", "bisexual", "blackladies", "exchristian", "exmormon", "gendercynical", "girlgamers", "neoliberal", "nothowgirlswork", "progresspics", "subredditdrama", "teenagers", "thegirlsurvivalguide", "thequickbrowncorgi", "traaaaaaannnnnnnnnns", "transpositive", "trollxchromosomes", "twoxchromosomes"]);
-			var v = i("./src/reddit/featureFlags/useProductionStreamingApi.ts");
-			const E = {
-					[v.a]: () => Object(v.b)(),
-					introModal: Object(l.d)(l.g),
-					markdownMode: l.g,
-					modQueue: Object(l.e)(l.g, l.h),
-					spBadges: w.c,
-					spBurnLinks: w.d,
-					spClaimablePoints: w.e,
-					spCustomBadgesAndEmotes: w.f,
-					spCustomCrypto: w.g,
-					spEmotes: w.h,
-					spGiphy: w.i,
-					spGovPolls: w.j,
-					spHarberger: w.k,
-					spLeaderboard: w.l,
-					spPoints: w.m,
-					spPointsCoinConversion: w.n,
-					spPolls: w.o,
-					spPublicPoints: w.p,
-					spSpecialMemberships: w.r,
-					spSpecialMembershipUpsells: w.q,
-					spSpinoffs: w.s,
-					spTipping: w.t,
-					spWalletRegistrationBanner: w.u,
+				a = i("./src/lib/getParsedUserAgent/index.ts"),
+				l = i("./src/lib/notifications/featureFlags.ts");
+			var u = i("./src/reddit/featureFlags/utils.ts"),
+				c = i("./src/reddit/models/User/index.ts"),
+				_ = i("./src/reddit/selectors/user.ts");
+			const m = new Set(["coachzzz", "settrace", "flash_55", "mikapp", "ggalex", "jdawg1000"]);
+			var p = i("./src/reddit/selectors/moderatorPermissions.ts"),
+				h = i("./src/reddit/selectors/platform.ts"),
+				f = i("./src/reddit/selectors/subreddit.ts");
+			var b = i("./src/reddit/selectors/responsiveSettings.ts");
+			const g = new Set([].map(e => e.toLowerCase())),
+				w = new Set(["uzitest", "testingtesting127", "kpkrunal"]);
+			var y = i("./src/reddit/featureFlags/subredditPoints.ts");
+			const v = new Set(["askaliberal", "asktransgender", "askwomen", "bisexual", "blackladies", "exchristian", "exmormon", "gendercynical", "girlgamers", "neoliberal", "nothowgirlswork", "progresspics", "subredditdrama", "teenagers", "thegirlsurvivalguide", "thequickbrowncorgi", "traaaaaaannnnnnnnnns", "transpositive", "trollxchromosomes", "twoxchromosomes"]);
+			var E = i("./src/reddit/featureFlags/useProductionStreamingApi.ts");
+			const T = {
+					[E.a]: () => Object(E.b)(),
+					introModal: Object(u.d)(u.g),
+					markdownMode: u.g,
+					modQueue: Object(u.e)(u.g, u.h),
+					spBadges: y.c,
+					spBurnLinks: y.d,
+					spClaimablePoints: y.e,
+					spCustomBadgesAndEmotes: y.f,
+					spCustomCrypto: y.g,
+					spEmotes: y.h,
+					spGiphy: y.i,
+					spGovPolls: y.j,
+					spHarberger: y.k,
+					spLeaderboard: y.l,
+					spPoints: y.m,
+					spPointsCoinConversion: y.n,
+					spPolls: y.o,
+					spPublicPoints: y.p,
+					spSpecialMemberships: y.r,
+					spSpecialMembershipUpsells: y.q,
+					spSpinoffs: y.s,
+					spTipping: y.t,
+					spWalletRegistrationBanner: y.u,
 					scheduledPosts: e => {
-						const t = Object(p.d)(e);
-						return !!t && Object(m.h)(e, {
-							subredditId: Object(h.B)(e, t)
+						const t = Object(h.d)(e);
+						return !!t && Object(p.h)(e, {
+							subredditId: Object(f.B)(e, t)
 						})
 					},
 					adminCommunityTopics: e => {
 						if (!e.user.account) return !1;
-						const t = Object(u.e)(e.user.account).toLowerCase();
-						return Object(c.H)(e) && _.has(t)
+						const t = Object(c.e)(e.user.account).toLowerCase();
+						return Object(_.H)(e) && m.has(t)
 					},
-					rteVideoPoster: l.g,
-					devAndStagingWatermark: l.g,
-					fpsMeter: l.k,
-					rabbitHole: l.k,
-					measureScrollFPS: l.h,
-					showVerboseErrors: Object(l.e)(l.g, l.h),
-					srAdoptionWeek: l.l,
-					uappBanner: l.k,
-					experiments: Object(l.a)(l.i, Object(l.d)(l.f)),
-					enableGraphQl: l.i,
-					importExportThemes: l.h,
-					flairRestrictions: l.l,
-					newPostRequirements: l.l,
-					superbOwl: l.j,
-					enableShadowMode: Object(l.c)(0),
+					rteVideoPoster: u.g,
+					devAndStagingWatermark: u.g,
+					fpsMeter: u.k,
+					rabbitHole: u.k,
+					measureScrollFPS: u.h,
+					showVerboseErrors: Object(u.e)(u.g, u.h),
+					srAdoptionWeek: u.l,
+					uappBanner: u.k,
+					experiments: Object(u.a)(u.i, Object(u.d)(u.f)),
+					enableGraphQl: u.i,
+					importExportThemes: u.h,
+					flairRestrictions: u.l,
+					newPostRequirements: u.l,
+					superbOwl: u.j,
+					enableShadowMode: Object(u.c)(0),
 					pushNotificationsBrowserSupported: e => {
-						return !!Object(f.a)(e, {
+						return !(!Object(a.c)(navigator.userAgent) && !Object(b.a)(e, {
 							pageLayer: e.platform.currentPage
-						}) && Object(a.b)()
+						})) && Object(l.b)()
 					},
 					enableToxicityWarning: e => {
-						const t = Object(p.d)(e);
-						return !!t && y.has(t.toLowerCase())
+						const t = Object(h.d)(e);
+						return !!t && v.has(t.toLowerCase())
 					},
-					snoovatar30: l.g,
-					geoSubredditRecommendationDULoggedIn: l.k,
-					geoSubredditRecommendationDULoggedOut: l.k,
-					subredditInlineEditing: l.l,
+					snoovatar30: u.g,
+					geoSubredditRecommendationDULoggedIn: u.k,
+					geoSubredditRecommendationDULoggedOut: u.k,
+					subredditInlineEditing: u.l,
 					modToMemberShare: e => {
-						const t = Object(p.d)(e);
+						const t = Object(h.d)(e);
+						return !!t && w.has(t.toLowerCase())
+					},
+					subredditMentionD2xExperiment: u.l,
+					privacySettingLocationBasedRecommendations: u.l,
+					langSelect: u.l,
+					reCaptchaEnterprise: Object(u.d)(Object(u.b)(...d.d)),
+					automatedReportingEnabled: e => {
+						const t = Object(h.d)(e);
 						return !!t && g.has(t.toLowerCase())
 					},
-					subredditMentionD2xExperiment: l.l,
-					privacySettingLocationBasedRecommendations: l.l,
-					langSelect: l.l,
-					reCaptchaEnterprise: Object(l.d)(Object(l.b)(...d.d)),
-					automatedReportingEnabled: e => {
-						const t = Object(p.d)(e);
-						return !!t && b.has(t.toLowerCase())
-					},
-					__requiredDoNotRemove: l.k
+					__requiredDoNotRemove: u.k
 				},
-				T = o()(E, (e, t) => i => {
+				S = o()(T, (e, t) => i => {
 					const n = i.featureFlags.overrides[t];
 					return r()(n) ? e(i) : n
 				}),
-				S = Object.keys(E),
-				O = e => e.filter(e => "__requiredDoNotRemove" !== e),
-				I = /^feature_(.*)$/i,
-				R = e => {
-					const t = e.match(I);
+				O = Object.keys(T),
+				I = e => e.filter(e => "__requiredDoNotRemove" !== e),
+				R = /^feature_(.*)$/i,
+				F = e => {
+					const t = e.match(R);
 					if (null !== t) return t[1]
 				},
-				F = "FEATURES__FEATURE_SET",
-				C = "FEATURES__FEATURE_TOGGLED",
-				N = function(e, ...t) {
+				C = "FEATURES__FEATURE_SET",
+				N = "FEATURES__FEATURE_TOGGLED",
+				j = function(e, ...t) {
 					return function(...i) {
 						const n = e(...i);
 						return t.forEach(e => e(n, ...i)), n
@@ -18247,17 +18248,17 @@
 					featureName: e,
 					currentValue: t
 				}) => ({
-					type: C,
+					type: N,
 					payload: {
 						featureName: e,
 						currentValue: t
 					}
-				}), v.c),
-				j = ({
+				}), E.c),
+				A = ({
 					featureName: e
 				}) => (t, i) => {
-					const n = (0, T[e])(i());
-					t(N({
+					const n = (0, S[e])(i());
+					t(j({
 						featureName: e,
 						currentValue: n
 					}))
@@ -40787,4 +40788,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.18cdc467b55c9dda1551.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.ba29089da87b0b8f73e6.js.map

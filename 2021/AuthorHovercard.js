@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.5080000c7a1a5d062d54.js
-// Retrieved at 9/9/2021, 6:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.a834f11c4c85b0acaf1e.js
+// Retrieved at 9/9/2021, 7:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/lib/delay/index.ts": function(e, t, n) {
@@ -73,14 +73,14 @@
 				},
 				d = () => !!Object(o.a)() && (localStorage.removeItem(a.f), !0),
 				l = async (e, t, n, i, d, l) => {
+					const u = c();
+					if (u === a.a.Unsupported) return void l();
 					if (Object(o.a)()) {
 						const t = localStorage.getItem(a.h),
 							n = (new Date).getTime();
 						if (!e && t && parseInt(t) + a.i > n) return void l();
 						localStorage.setItem(a.h, n.toString())
 					}
-					const u = c();
-					if (u === a.a.Unsupported) return void l();
 					if (!t && u === a.a.Denied) return i(!1, !0), void l();
 					if (!t && u === a.a.Granted) return d(!1), void l();
 					if (!t && u === a.a.Closed) return void l();
@@ -3985,4 +3985,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.5080000c7a1a5d062d54.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.a834f11c4c85b0acaf1e.js.map
