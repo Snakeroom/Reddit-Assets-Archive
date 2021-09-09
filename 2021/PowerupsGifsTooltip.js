@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PowerupsGifsTooltip.005528710df9617e7da9.js
-// Retrieved at 9/2/2021, 4:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PowerupsGifsTooltip.50d4a3524dc53911084c.js
+// Retrieved at 9/9/2021, 12:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PowerupsGifsTooltip"], {
 		"./src/reddit/components/RichTextEditor/media/GifTooltip/BaseTooltip.m.less": function(e, t, s) {
@@ -12,16 +12,16 @@
 			var i = s("./node_modules/draft-js/lib/Draft.js"),
 				o = s("./node_modules/react/index.js"),
 				n = s.n(o),
-				r = s("./src/reddit/constants/keycodes.ts"),
-				a = s("./src/reddit/components/RichTextEditor/Tooltip/index.tsx"),
+				a = s("./src/reddit/constants/keycodes.ts"),
+				r = s("./src/reddit/components/RichTextEditor/Tooltip/index.tsx"),
 				l = s("./src/reddit/components/RichTextEditor/media/GifTooltip/BaseTooltip.m.less"),
-				d = s.n(l);
-			class c extends n.a.Component {
+				c = s.n(l);
+			class d extends n.a.Component {
 				constructor(e) {
 					super(e), this.updateTooltipPosition = null, this.toggleTooltip = e => {
 						e.currentTarget instanceof HTMLElement && (this.gifToolbarButtonEl = e.currentTarget), this.props.isVisible || this.props.sendEvent(), this.props.setIsVisible(!this.props.isVisible)
 					}, this.onKeyPressedInTooltip = e => {
-						e.keyCode === r.a.Escape && this.closeTooltip(!0)
+						e.keyCode === a.a.Escape && this.closeTooltip(!0)
 					}, this.closeTooltip = e => {
 						if (e) {
 							const {
@@ -57,16 +57,16 @@
 					const {
 						isVisible: e
 					} = this.props;
-					return n.a.createElement(a.b, {
-						className: d.a.tooltip,
+					return n.a.createElement(r.b, {
+						className: c.a.tooltip,
 						onSetPositionUpdater: e => this.updateTooltipPosition = e,
-						trianglePlacement: a.a.Below
+						trianglePlacement: r.a.Below
 					}, e && n.a.createElement("div", {
 						onKeyDown: this.onKeyPressedInTooltip
 					}, this.props.children))
 				}
 			}
-			t.a = c
+			t.a = d
 		},
 		"./src/reddit/components/RichTextEditor/media/GifTooltip/GifTooltipBody.m.less": function(e, t, s) {
 			e.exports = {
@@ -92,17 +92,17 @@
 			var i = s("./node_modules/fbt/lib/FbtPublic.js"),
 				o = s("./src/lib/classNames/index.ts"),
 				n = s("./node_modules/lodash/memoize.js"),
-				r = s.n(n),
-				a = s("./node_modules/lodash/throttle.js"),
-				l = s.n(a),
-				d = s("./node_modules/react/index.js"),
-				c = s.n(d),
+				a = s.n(n),
+				r = s("./node_modules/lodash/throttle.js"),
+				l = s.n(r),
+				c = s("./node_modules/react/index.js"),
+				d = s.n(c),
 				p = s("./node_modules/react-redux/es/index.js"),
 				h = s("./node_modules/reselect/es/index.js"),
 				u = s("./src/reddit/actions/toaster.ts"),
 				m = s("./src/reddit/components/TrackingHelper/index.tsx"),
-				g = s("./src/reddit/controls/LoadingIcon/index.tsx"),
-				f = s("./src/config.ts"),
+				f = s("./src/reddit/controls/LoadingIcon/index.tsx"),
+				g = s("./src/config.ts"),
 				b = s("./src/lib/addQueryParams/index.ts");
 			const x = "pg";
 
@@ -116,21 +116,21 @@
 				y = s("./src/reddit/models/Toast/index.ts"),
 				_ = s("./src/reddit/selectors/economics.ts"),
 				w = s("./src/reddit/selectors/telemetry.ts"),
-				v = s("./src/reddit/components/RichTextEditor/helpers/common.ts"),
-				C = s("./src/reddit/components/RichTextEditor/media/helpers.ts");
-			let I;
+				C = s("./src/reddit/components/RichTextEditor/helpers/common.ts"),
+				v = s("./src/reddit/components/RichTextEditor/media/helpers.ts");
+			let G;
 
-			function j() {
-				I || (I = fetch("https://meta.redditmedia.com/public/fortnitebr/giphy_blacklist.json").then(e => e.json()))
+			function I() {
+				G || (G = fetch("https://meta.redditmedia.com/public/fortnitebr/giphy_blacklist.json").then(e => e.json()))
 			}
-			var G = s("./node_modules/lodash/debounce.js"),
-				O = s.n(G),
-				k = s("./src/reddit/icons/svgs/Search/index.tsx"),
-				B = s("./src/reddit/selectors/user.ts"),
+			var j = s("./node_modules/lodash/debounce.js"),
+				k = s.n(j),
+				B = s("./src/reddit/icons/svgs/Search/index.tsx"),
+				O = s("./src/reddit/selectors/user.ts"),
 				S = s("./src/reddit/components/RichTextEditor/media/GifTooltip/SearchBox/index.m.less"),
 				N = s.n(S);
 			const R = 400;
-			class P extends c.a.Component {
+			class P extends d.a.Component {
 				constructor() {
 					super(...arguments), this.elementRef = null, this.state = {
 						query: ""
@@ -138,7 +138,7 @@
 						this.setState({
 							query: e.target.value
 						}, this.dispatchOnChange)
-					}, this.dispatchOnChange = O()(() => {
+					}, this.dispatchOnChange = k()(() => {
 						this.props.onChange(this.state.query)
 					}, R), this.focusOnInput = () => {
 						this.elementRef && !1 !== this.props.autofocus && this.elementRef.focus()
@@ -153,14 +153,14 @@
 					} = this.props, {
 						query: t
 					} = this.state, s = `powered-by-giphy-${e?"dark":"light"}.png`;
-					return c.a.createElement("div", {
+					return d.a.createElement("div", {
 						className: Object(o.a)(N.a.searchBox, this.props.className)
-					}, c.a.createElement("button", {
+					}, d.a.createElement("button", {
 						className: N.a.searchIconButton,
 						onClick: this.focusOnInput
-					}, c.a.createElement(k.a, {
+					}, d.a.createElement(B.a, {
 						className: N.a.searchIcon
-					})), c.a.createElement("input", {
+					})), d.a.createElement("input", {
 						ref: e => this.elementRef = e,
 						type: "text",
 						className: N.a.searchInput,
@@ -169,30 +169,30 @@
 						}),
 						value: t,
 						onChange: this.onQueryChange
-					}), t.length < 25 && c.a.createElement("div", {
+					}), t.length < 25 && d.a.createElement("div", {
 						className: N.a.poweredByGiphy,
 						style: {
-							backgroundImage: `url(${f.a.assetPath}/img/memberships/${s}`
+							backgroundImage: `url(${g.a.assetPath}/img/memberships/${s}`
 						},
 						onClick: this.focusOnInput
 					}))
 				}
 			}
 			const L = Object(h.c)({
-				isNightMode: B.X
+				isNightMode: O.X
 			});
 			var M = Object(p.b)(L)(P),
 				U = s("./src/reddit/components/RichTextEditor/media/GifTooltip/GifTooltipBody.m.less"),
 				A = s.n(U);
 			const F = 4,
-				H = r()((function() {
+				H = a()((function() {
 					const e = Object(b.a)("https://api.giphy.com/v1/gifs/trending", {
-						api_key: f.a.giphyApiKey,
+						api_key: g.a.giphyApiKey,
 						rating: x
 					});
 					return fetch(e).then(E)
 				}));
-			class q extends c.a.Component {
+			class z extends d.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						columns: [
@@ -245,12 +245,12 @@
 							}
 						});
 						const t = this.props.editorState,
-							s = Object(C.k)(t, e.id, e.url, e.hasDownsizedImage, e.width, e.height, t.getSelection().getEndKey(), v.a.after);
+							s = Object(v.k)(t, e.id, e.url, e.hasDownsizedImage, e.width, e.height, t.getSelection().getEndKey(), C.a.after);
 						this.props.onChange(s), this.props.onClose()
 					}
 				}
 				componentDidMount() {
-					this.mounted = !0, !this.state.query && this.state.loading && this.loadTrendingGifs(), j()
+					this.mounted = !0, !this.state.query && this.state.loading && this.loadTrendingGifs(), I()
 				}
 				componentWillUnmount() {
 					this.mounted = !1
@@ -268,14 +268,14 @@
 					} = this.state;
 					!e && s && null !== t && (await
 						function(e) {
-							return j(), I.then(t => {
+							return I(), G.then(t => {
 								return !!e.split(" ").concat(e).find(e => -1 !== t.indexOf(e.toLowerCase()))
 							}).catch(() => !1)
 						}(s) || (this.setState({
 							loading: !0
 						}), function(e) {
 							const t = Object(b.a)("https://api.giphy.com/v1/gifs/search", {
-								api_key: f.a.giphyApiKey,
+								api_key: g.a.giphyApiKey,
 								q: e.query,
 								offset: e.offset || 0,
 								rating: e.rating || x
@@ -330,39 +330,39 @@
 						columns: e,
 						loading: t
 					} = this.state;
-					return c.a.createElement("div", {
+					return d.a.createElement("div", {
 						className: A.a.tooltip
-					}, c.a.createElement("div", {
+					}, d.a.createElement("div", {
 						className: Object(o.a)(A.a.header, {
 							[A.a.headerWithTitleLine]: !!this.props.title
 						})
-					}, this.props.title && c.a.createElement("div", {
+					}, this.props.title && d.a.createElement("div", {
 						className: A.a.titleLine
-					}, c.a.createElement("span", {
+					}, d.a.createElement("span", {
 						className: A.a.title
-					}, this.props.title), c.a.createElement(T.a, {
+					}, this.props.title), d.a.createElement(T.a, {
 						className: A.a.closeIcon,
 						onClick: () => this.props.onClose(!0)
-					})), c.a.createElement("div", {
+					})), d.a.createElement("div", {
 						className: A.a.searchLine
-					}, c.a.createElement(M, {
+					}, d.a.createElement(M, {
 						autofocus: this.props.autofocus,
 						onChange: this.onQueryChange,
 						className: A.a.searchBox
-					}), !this.props.title && c.a.createElement(T.a, {
+					}), !this.props.title && d.a.createElement(T.a, {
 						className: A.a.closeIcon,
 						onClick: () => this.props.onClose(!0)
-					}))), c.a.createElement("div", {
+					}))), d.a.createElement("div", {
 						className: A.a.body,
 						onScroll: this.onScroll
-					}, c.a.createElement("div", {
+					}, d.a.createElement("div", {
 						className: Object(o.a)(A.a.results, {
 							[A.a.disabled]: this.props.disabled
 						})
-					}, e.map((e, t) => c.a.createElement("div", {
+					}, e.map((e, t) => d.a.createElement("div", {
 						className: A.a.column,
 						key: t
-					}, e.map(e => c.a.createElement("button", {
+					}, e.map(e => d.a.createElement("button", {
 						className: A.a.gifResult,
 						key: e.url,
 						onClick: () => this.onResultClick(e),
@@ -370,31 +370,31 @@
 							height: `${e.fixedWidthHeight}px`
 						},
 						disabled: this.props.disabled
-					}, c.a.createElement("img", {
+					}, d.a.createElement("img", {
 						className: A.a.gifResultImage,
 						src: e.url
-					})))))), t && c.a.createElement("div", {
+					})))))), t && d.a.createElement("div", {
 						className: A.a.loadingSpinner
-					}, c.a.createElement(g.a, {
+					}, d.a.createElement(f.a, {
 						sizePx: 20,
 						center: !0
-					})), this.props.children, c.a.createElement("div", {
+					})), this.props.children, d.a.createElement("div", {
 						className: A.a.whiteScrim
 					})))
 				}
 			}
-			const z = Object(h.c)({
+			const q = Object(h.c)({
 				hasGifProduct: (e, {
 					subreddit: t
 				}) => Object(_.v)(e, t.id)
 			});
-			t.a = Object(m.c)(Object(p.b)(z, e => ({
+			t.a = Object(m.c)(Object(p.b)(q, e => ({
 				showErrorToast: t => e(Object(u.f)({
 					text: t,
 					kind: y.b.Error,
 					duration: 5e3
 				}))
-			}))(q))
+			}))(z))
 		},
 		"./src/reddit/components/RichTextEditor/media/GifTooltip/Powerups/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -407,30 +407,26 @@
 			var i = s("./node_modules/react/index.js"),
 				o = s.n(i),
 				n = s("./node_modules/react-redux/es/index.js"),
-				r = s("./src/reddit/actions/gold/powerups.ts"),
-				a = s("./src/reddit/controls/Button/index.tsx"),
+				a = s("./src/reddit/actions/gold/powerups.ts"),
+				r = s("./src/reddit/controls/Button/index.tsx"),
 				l = s("./src/reddit/helpers/trackers/powerups.ts"),
-				d = s("./src/reddit/hooks/useTracking.ts"),
-				c = s("./src/reddit/icons/svgs/PowerupTier2/index.tsx"),
-				p = s("./src/reddit/selectors/gold/powerups/index.ts"),
-				h = s("./src/reddit/components/RichTextEditor/media/GifTooltip/BaseTooltip.tsx"),
-				u = s("./src/reddit/components/RichTextEditor/media/GifTooltip/GifTooltipBody.tsx"),
-				m = s("./src/reddit/components/RichTextEditor/media/GifTooltip/Powerups/index.m.less"),
-				g = s.n(m);
+				c = s("./src/reddit/hooks/useTracking.ts"),
+				d = s("./src/reddit/icons/svgs/PowerupTier2/index.tsx"),
+				p = s("./src/reddit/components/RichTextEditor/media/GifTooltip/BaseTooltip.tsx"),
+				h = s("./src/reddit/components/RichTextEditor/media/GifTooltip/GifTooltipBody.tsx"),
+				u = s("./src/reddit/components/RichTextEditor/media/GifTooltip/Powerups/index.m.less"),
+				m = s.n(u);
 			const {
 				fbt: f
 			} = s("./node_modules/fbt/lib/FbtPublic.js");
 			t.default = e => {
-				const t = Object(d.a)(),
+				const t = Object(c.a)(),
 					s = Object(n.d)(),
-					[m, b] = Object(i.useState)(!1),
-					x = Object(n.e)(t => Object(p.q)(t, {
-						subredditId: e.subreddit.id
-					})),
-					E = () => {
-						t(Object(l.x)()), s(Object(r.f)("gif_picker"))
+					[u, g] = Object(i.useState)(!1),
+					b = () => {
+						t(Object(l.x)()), s(Object(a.f)("gif_picker"))
 					};
-				return o.a.createElement(h.a, {
+				return o.a.createElement(p.a, {
 					editorState: e.editorState,
 					onChange: e.onChange,
 					onSetApi: e.onSetApi,
@@ -441,24 +437,24 @@
 						return t(Object(l.l)(e.correlationId, null === (s = e.subreddit) || void 0 === s ? void 0 : s.id))
 					},
 					correlationId: e.correlationId,
-					isVisible: m,
-					setIsVisible: b
-				}, o.a.createElement(u.a, {
+					isVisible: u,
+					setIsVisible: g
+				}, o.a.createElement(h.a, {
 					correlationId: e.correlationId,
 					editorState: e.editorState,
 					onChange: e.onChange,
-					onClose: () => b(!1),
+					onClose: () => g(!1),
 					subreddit: e.subreddit,
-					title: o.a.createElement(() => o.a.createElement(o.a.Fragment, null, o.a.createElement(c.a, null), x ? f._("Unlocked with Powerups", null, {
+					title: o.a.createElement(() => o.a.createElement(o.a.Fragment, null, o.a.createElement(d.a, null), e.userCanUseGifs ? f._("Unlocked with Powerups", null, {
 						hk: "T07a5"
 					}) : f._("Unlock with Powerups", null, {
 						hk: "1sgFk2"
 					})), null),
-					disabled: !x
-				}, !x && o.a.createElement(() => o.a.createElement(a.q, {
-					className: g.a.unlockButton,
-					onClick: E,
-					priority: a.b.Primary
+					disabled: !e.userCanUseGifs
+				}, !e.userCanUseGifs && o.a.createElement(() => o.a.createElement(r.q, {
+					className: m.a.unlockButton,
+					onClick: b,
+					priority: r.b.Primary
 				}, f._("Unlock Gifs", null, {
 					hk: "2HenIS"
 				})), null)))
@@ -505,4 +501,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsGifsTooltip.005528710df9617e7da9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsGifsTooltip.50d4a3524dc53911084c.js.map
