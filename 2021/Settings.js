@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.73369d8960d8333d36a7.js
-// Retrieved at 9/8/2021, 3:50:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.cf076b5af83c2b6eea6a.js
+// Retrieved at 9/9/2021, 12:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, n) {
@@ -9454,6 +9454,7 @@
 					KZ: "Kazakhstan",
 					KE: "Kenya",
 					KI: "Kiribati",
+					XK: "Kosovo",
 					KW: "Kuwait",
 					KG: "Kyrgyzstan",
 					LA: "Laos",
@@ -14260,4 +14261,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.73369d8960d8333d36a7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.cf076b5af83c2b6eea6a.js.map
