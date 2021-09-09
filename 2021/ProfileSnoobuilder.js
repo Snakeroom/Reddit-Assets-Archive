@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.e818d49989e7f2d112aa.js
-// Retrieved at 9/9/2021, 3:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.f8567f16b31bc9ee06a7.js
+// Retrieved at 9/9/2021, 5:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileSnoobuilder", "reddit-components-ContentGate"], {
 		"./assets/snoobuilder/Snoobuilder.json": function(e, t, n) {
@@ -878,19 +878,23 @@
 						})), i.a.createElement(X, null, G._("The moderators in this community have set it to Reddit Premium members only. You must upgrade to a Reddit Premium membership to continue.", null, {
 							hk: "mIiOw"
 						})), i.a.createElement(Z, null, E ? i.a.createElement(me, {
-							href: `${s.a.redditUrl}/premium`
+							href: `${s.a.redditUrl}/premium`,
+							redditStyle: !0
 						}, G._("Get Premium", null, {
 							hk: "3ChWi4"
 						})) : i.a.createElement(ue, {
-							href: Object(u.a)(d, l)
+							href: Object(u.a)(d, l),
+							redditStyle: !0
 						}, G._("Sign Up", null, {
 							hk: "rvpjy"
 						})), E ? i.a.createElement(ne, {
-							to: "/"
+							to: "/",
+							redditStyle: !0
 						}, G._("Go Home", null, {
 							hk: "49p4or"
 						})) : i.a.createElement(ie, {
-							href: Object(u.a)(d, l)
+							href: Object(u.a)(d, l),
+							redditStyle: !0
 						}, G._("Log In", null, {
 							hk: "4Cxw0g"
 						}))));
@@ -905,11 +909,13 @@
 						})), i.a.createElement(X, null, G._("You must be at least eighteen years old to view this content. Are you over eighteen and willing to see adult content?", null, {
 							hk: "gI12S"
 						})), i.a.createElement(Z, null, i.a.createElement(le, {
-							to: "/"
+							to: "/",
+							redditStyle: !0
 						}, G._("No", null, {
 							hk: "3fMglW"
 						})), i.a.createElement(ie, {
-							onClick: k
+							onClick: k,
+							redditStyle: !0
 						}, G._("Yes", null, {
 							hk: "2hpRkN"
 						}))));
@@ -928,15 +934,18 @@
 							className: V.a.ContributorRequestButton,
 							isContributorRequestPending: c
 						}), i.a.createElement(me, {
-							href: `${s.a.redditUrl}/message/compose?to=/r/${v}`
+							href: `${s.a.redditUrl}/message/compose?to=/r/${v}`,
+							redditStyle: !0
 						}, G._("Message Mods", null, {
 							hk: "vVe1i"
 						}))) : i.a.createElement(me, {
-							href: Object(u.a)(d, l)
+							href: Object(u.a)(d, l),
+							redditStyle: !0
 						}, G._("Sign Up", null, {
 							hk: "rvpjy"
 						})), i.a.createElement(ne, {
-							to: "/"
+							to: "/",
+							redditStyle: !0
 						}, G._("Browse Reddit", null, {
 							hk: "1fi8kh"
 						}))));
@@ -964,19 +973,23 @@
 							hk: "1gr5Bw"
 						})), i.a.createElement(Z, null, ((e, t, n) => {
 							return !(e && e.hasVerifiedEmail) && n ? i.a.createElement(Z, null, i.a.createElement(pe, {
-								to: "/"
+								to: "/",
+								redditStyle: !0
 							}, G._("No Thank You", null, {
 								hk: "4B26AR"
 							})), i.a.createElement(se, {
-								href: `${s.a.redditUrl}/prefs/update`
+								href: `${s.a.redditUrl}/prefs/update`,
+								redditStyle: !0
 							}, G._("Verify Email", null, {
 								hk: "1893cq"
 							}))) : i.a.createElement(Z, null, i.a.createElement(le, {
-								to: "/"
+								to: "/",
+								redditStyle: !0
 							}, G._("No Thank You", null, {
 								hk: "4B26AR"
 							})), i.a.createElement(ie, {
-								onClick: t
+								onClick: t,
+								redditStyle: !0
 							}, G._("Continue", null, {
 								hk: "4nU0mS"
 							})))
@@ -994,7 +1007,8 @@
 						}) : G._("This community has been banned for violating the Reddit rules.", null, {
 							hk: "3iUVxA"
 						})))(t), i.a.createElement(Z, null, i.a.createElement(ne, {
-							to: "/"
+							to: "/",
+							redditStyle: !0
 						}, G._("Explore Reddit", null, {
 							hk: "FrUWU"
 						}))));
@@ -1004,7 +1018,8 @@
 						}), i.a.createElement(he, null, G._("This content has been restricted in your country in response to a legal request.", null, {
 							hk: "4bCnhl"
 						})), i.a.createElement(Z, null, i.a.createElement(ne, {
-							to: "/"
+							to: "/",
+							redditStyle: !0
 						}, G._("Explore Reddit", null, {
 							hk: "FrUWU"
 						}))));
@@ -1016,7 +1031,8 @@
 						})), i.a.createElement(Z, null, E && i.a.createElement(ae, {
 							eventSource: "content_gate"
 						}), i.a.createElement(oe, {
-							to: "/"
+							to: "/",
+							redditStyle: !0
 						}, G._("Go Home", null, {
 							hk: "49p4or"
 						}))));
@@ -1055,7 +1071,8 @@
 									})))
 							}
 						})(e)), i.a.createElement(Z, null, i.a.createElement(oe, {
-							to: "/"
+							to: "/",
+							redditStyle: !0
 						}, G._("Go Home", null, {
 							hk: "49p4or"
 						}))));
@@ -1065,7 +1082,8 @@
 						}), i.a.createElement(he, null, G._("Sorry, this custom feed is private or does not exist.", null, {
 							hk: "2Ml4j9"
 						})), i.a.createElement(Z, null, i.a.createElement(oe, {
-							to: "/"
+							to: "/",
+							redditStyle: !0
 						}, G._("Go Home", null, {
 							hk: "49p4or"
 						}))));
@@ -1075,7 +1093,8 @@
 						}), i.a.createElement(he, null, G._("This content has been restricted in your country in response to a legal request.", null, {
 							hk: "1q1rVU"
 						})), i.a.createElement(Z, null, i.a.createElement(ne, {
-							to: "/"
+							to: "/",
+							redditStyle: !0
 						}, G._("Browse Reddit", null, {
 							hk: "1XnYmj"
 						}))))
@@ -5341,4 +5360,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.e818d49989e7f2d112aa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.f8567f16b31bc9ee06a7.js.map
