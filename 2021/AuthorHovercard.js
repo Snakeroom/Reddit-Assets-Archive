@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.b261bfa8d456af9b9235.js
-// Retrieved at 9/8/2021, 3:50:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.5080000c7a1a5d062d54.js
+// Retrieved at 9/9/2021, 6:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/lib/delay/index.ts": function(e, t, n) {
@@ -1993,33 +1993,35 @@
 				render() {
 					const {
 						activeOverflowMenuId: e,
-						disableNotificationUpdates: t,
-						hideNotification: n,
-						hideSubredditNotifications: r,
-						blockAwarder: s,
-						index: a,
-						isInboxPostEmbedEnabled: i,
-						markNotificationAsRead: c,
-						notification: d,
-						setActiveOverflowMenuId: l,
-						onItemClick: u
-					} = this.props, m = a + 1 <= E;
+						decreaseSubredditNotifications: t,
+						disableNotificationUpdates: n,
+						hideNotification: r,
+						hideSubredditNotifications: s,
+						blockAwarder: a,
+						index: i,
+						isInboxPostEmbedEnabled: c,
+						markNotificationAsRead: d,
+						notification: l,
+						setActiveOverflowMenuId: u,
+						onItemClick: m
+					} = this.props, b = i + 1 <= E;
 					return o.a.createElement(o.a.Fragment, null, o.a.createElement("div", {
 						ref: this.ref,
 						className: O.a.notificationResizeWrapper
 					}, o.a.createElement(_.a, {
 						activeOverflowMenuId: e,
-						disableNotificationUpdates: t,
-						hideNotification: n,
-						hideSubredditNotifications: r,
-						isInboxPostEmbedEnabled: i,
+						decreaseSubredditNotifications: t,
+						disableNotificationUpdates: n,
+						hideNotification: r,
+						hideSubredditNotifications: s,
+						isInboxPostEmbedEnabled: c,
 						isInTooltip: !0,
-						markNotificationAsRead: c,
-						notification: d,
-						setActiveOverflowMenuId: l,
-						onItemClick: u,
-						blockAwarder: s
-					}), !!m && o.a.createElement(g.a, {
+						markNotificationAsRead: d,
+						notification: l,
+						setActiveOverflowMenuId: u,
+						onItemClick: m,
+						blockAwarder: a
+					}), !!b && o.a.createElement(g.a, {
 						onResize: this.handleResize
 					})))
 				}
@@ -3417,7 +3419,7 @@
 				e.Activity = "activity", e.Messages = "messages"
 			}(r || (r = {})),
 			function(e) {
-				e.HideNotifications = "hide_notification", e.HideSubreddit = "hide_subreddit", e.HideUpdates = "hide_updates", e.BlockAwarder = "block_awarder"
+				e.HideNotifications = "hide_notification", e.HideSubreddit = "hide_subreddit", e.HideUpdates = "hide_updates", e.BlockAwarder = "block_awarder", e.DecreaseSubredditUpdates = "disable_frequent"
 			}(s || (s = {})),
 			function(e) {
 				e.MiniInbox = "mini_inbox", e.Inbox = "inbox"
@@ -3983,4 +3985,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.b261bfa8d456af9b9235.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.5080000c7a1a5d062d54.js.map

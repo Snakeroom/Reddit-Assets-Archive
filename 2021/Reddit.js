@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.3141b02b284cee06a251.js
-// Retrieved at 9/9/2021, 5:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.2584dee8197d5be470f9.js
+// Retrieved at 9/9/2021, 6:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -1582,18 +1582,20 @@
 				return T
 			})), n.d(t, "b", (function() {
 				return B
-			})), n.d(t, "f", (function() {
-				return U
-			})), n.d(t, "c", (function() {
-				return G
-			})), n.d(t, "a", (function() {
-				return H
-			})), n.d(t, "h", (function() {
-				return W
 			})), n.d(t, "i", (function() {
+				return U
+			})), n.d(t, "f", (function() {
+				return G
+			})), n.d(t, "c", (function() {
+				return H
+			})), n.d(t, "a", (function() {
+				return q
+			})), n.d(t, "h", (function() {
 				return K
+			})), n.d(t, "j", (function() {
+				return V
 			})), n.d(t, "g", (function() {
-				return z
+				return Q
 			}));
 			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
 				o = n("./src/lib/makeActionCreator/index.ts"),
@@ -1735,33 +1737,32 @@
 					gqlContext: r
 				}) => {
 					if (!e) return;
-					const a = () => {
+					(await Object(C.b)(r(), e, {
+						isSubredditUpdatesInterestingPostEnabled: !0,
+						isUpdateFromSubredditEnabled: !0
+					})).ok ? (t && t(), n(Object(c.f)(Object(c.e)(s.fbt._("Success! Undone hiding notifications from this community.", null, {
+						hk: "1na0NP"
+					}), _.b.SuccessCommunityGreen)))) : n(Object(c.f)(Object(c.e)(s.fbt._("Failed to undo hiding notifications, please try again.", null, {
+						hk: "4jo7Pf"
+					}), _.b.Error)))
+				}, G = (e, t) => async (n, o, {
+					gqlContext: r
+				}) => {
+					if (!e) return;
+					(await Object(C.b)(r(), e, {
+						isSubredditUpdatesInterestingPostEnabled: !1,
+						isUpdateFromSubredditEnabled: !1
+					})).ok ? n((() => {
 						const n = s.fbt._("Success! You won't see notifications from this community in the future.", null, {
 							hk: "2tkhbk"
 						});
 						return Object(c.f)(Object(c.e)(n, _.b.Undo, s.fbt._("Undo", null, {
 							hk: "4zFGDk"
-						}), ((e, t) => async (n, o, {
-							gqlContext: r
-						}) => {
-							if (!e) return;
-							(await Object(C.b)(r(), e, {
-								isSubredditUpdatesInterestingPostEnabled: !0,
-								isUpdateFromSubredditEnabled: !0
-							})).ok ? (t && t(), n(Object(c.f)(Object(c.e)(s.fbt._("Success! Undone hiding notifications from this community.", null, {
-								hk: "1na0NP"
-							}), _.b.SuccessCommunityGreen)))) : n(Object(c.f)(Object(c.e)(s.fbt._("Failed to undo hiding notifications, please try again.", null, {
-								hk: "4jo7Pf"
-							}), _.b.Error)))
-						})(e, t)))
-					};
-					(await Object(C.b)(r(), e, {
-						isSubredditUpdatesInterestingPostEnabled: !1,
-						isUpdateFromSubredditEnabled: !1
-					})).ok ? n(a()) : n(Object(c.f)(Object(c.e)(s.fbt._("Failed to hide notifications, please try again.", null, {
+						}), U(e, t)))
+					})()) : n(Object(c.f)(Object(c.e)(s.fbt._("Failed to hide notifications, please try again.", null, {
 						hk: "KEGcB"
 					}), _.b.Error)))
-				}, G = e => async (t, n, {
+				}, H = e => async (t, n, {
 					apiContext: o
 				}) => {
 					if (!e) return;
@@ -1776,7 +1777,7 @@
 					}), _.b.SuccessCommunityGreen))) : t(Object(c.f)(Object(c.e)(s.fbt._("Failed to turn off updates on this, please try again", null, {
 						hk: "1zhpEy"
 					}), _.b.Error)))
-				}, H = e => async (t, n, {
+				}, q = e => async (t, n, {
 					gqlContext: o
 				}) => {
 					if (!e) return;
@@ -1787,7 +1788,7 @@
 					}), _.b.SuccessCommunityGreen))) : t(Object(c.f)(Object(c.e)(s.fbt._("Failed to block awarder, please try again", null, {
 						hk: "2dxeA8"
 					}), _.b.Error)))
-				}, q = Object(o.a)(a.d), W = (e, t) => async (n, s, {
+				}, W = Object(o.a)(a.d), K = (e, t) => async (n, s, {
 					apiContext: o
 				}) => {
 					let a;
@@ -1818,12 +1819,12 @@
 					}))(o(), e);
 					if (a.ok) {
 						const t = (new Date).toISOString();
-						n(q({
+						n(W({
 							id: e,
 							now: t
 						}))
 					}
-				}, K = () => async (e, t, {
+				}, V = () => async (e, t, {
 					gqlContext: n
 				}) => {
 					const s = (new Date).toLocaleDateString(),
@@ -1840,7 +1841,7 @@
 							n = t && t.data && t.data.updateInboxActivitySeenState && t.data.updateInboxActivitySeenState.badgeIndicators;
 						n && (e(Object(r.a)(n)), e(Object(i.d)()))
 					}
-				}, V = Object(o.a)(a.c), z = () => async (e, t, {
+				}, z = Object(o.a)(a.c), Q = () => async (e, t, {
 					apiContext: n
 				}) => {
 					const {
@@ -1867,7 +1868,7 @@
 							e(Object(r.a)({
 								...t,
 								...n
-							})), e(V({
+							})), e(z({
 								now: a.toISOString()
 							}))
 						} else e(Object(c.f)(Object(c.e)(s.fbt._("Sorry, we had trouble doing that. Please try again.", null, {
@@ -10909,33 +10910,35 @@
 				render() {
 					const {
 						activeOverflowMenuId: e,
-						disableNotificationUpdates: t,
-						hideNotification: n,
-						hideSubredditNotifications: s,
-						blockAwarder: o,
-						index: a,
-						isInboxPostEmbedEnabled: i,
-						markNotificationAsRead: c,
-						notification: l,
-						setActiveOverflowMenuId: d,
-						onItemClick: u
-					} = this.props, m = a + 1 <= P;
+						decreaseSubredditNotifications: t,
+						disableNotificationUpdates: n,
+						hideNotification: s,
+						hideSubredditNotifications: o,
+						blockAwarder: a,
+						index: i,
+						isInboxPostEmbedEnabled: c,
+						markNotificationAsRead: l,
+						notification: d,
+						setActiveOverflowMenuId: u,
+						onItemClick: m
+					} = this.props, p = i + 1 <= P;
 					return r.a.createElement(r.a.Fragment, null, r.a.createElement("div", {
 						ref: this.ref,
 						className: E.a.notificationResizeWrapper
 					}, r.a.createElement(x.a, {
 						activeOverflowMenuId: e,
-						disableNotificationUpdates: t,
-						hideNotification: n,
-						hideSubredditNotifications: s,
-						isInboxPostEmbedEnabled: i,
+						decreaseSubredditNotifications: t,
+						disableNotificationUpdates: n,
+						hideNotification: s,
+						hideSubredditNotifications: o,
+						isInboxPostEmbedEnabled: c,
 						isInTooltip: !0,
-						markNotificationAsRead: c,
-						notification: l,
-						setActiveOverflowMenuId: d,
-						onItemClick: u,
-						blockAwarder: o
-					}), !!m && r.a.createElement(C.a, {
+						markNotificationAsRead: l,
+						notification: d,
+						setActiveOverflowMenuId: u,
+						onItemClick: m,
+						blockAwarder: a
+					}), !!p && r.a.createElement(C.a, {
 						onResize: this.handleResize
 					})))
 				}
@@ -14656,7 +14659,7 @@
 				e.Activity = "activity", e.Messages = "messages"
 			}(s || (s = {})),
 			function(e) {
-				e.HideNotifications = "hide_notification", e.HideSubreddit = "hide_subreddit", e.HideUpdates = "hide_updates", e.BlockAwarder = "block_awarder"
+				e.HideNotifications = "hide_notification", e.HideSubreddit = "hide_subreddit", e.HideUpdates = "hide_updates", e.BlockAwarder = "block_awarder", e.DecreaseSubredditUpdates = "disable_frequent"
 			}(o || (o = {})),
 			function(e) {
 				e.MiniInbox = "mini_inbox", e.Inbox = "inbox"
@@ -19429,7 +19432,7 @@
 			e.exports = JSON.parse('{"id":"7537a71b4f14"}')
 		},
 		"./src/redditGQL/operations/NotificationInboxFeed.json": function(e) {
-			e.exports = JSON.parse('{"id":"b0e50336ee76"}')
+			e.exports = JSON.parse('{"id":"6bc40669baab"}')
 		},
 		"./src/redditGQL/operations/NotificationInboxFeedSlimmed.json": function(e) {
 			e.exports = JSON.parse('{"id":"916e9e9be5e0"}')
@@ -19451,4 +19454,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePo~5f1ac562", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit", "Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250", "Governance~ModListing~Reddit~Subreddit", "Chat~Governance~Reddit", "Reddit~StandalonePostPage~reddit-components-MediumPost", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.3141b02b284cee06a251.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.2584dee8197d5be470f9.js.map
