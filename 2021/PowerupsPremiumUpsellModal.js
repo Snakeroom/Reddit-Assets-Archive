@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PowerupsPremiumUpsellModal.7e212b79dd2c6d480671.js
-// Retrieved at 9/9/2021, 11:40:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PowerupsPremiumUpsellModal.45ae42a672f735fb8e3c.js
+// Retrieved at 9/9/2021, 11:50:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PowerupsPremiumUpsellModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, r) {
@@ -175,7 +175,7 @@
 			})), r.d(t, "a", (function() {
 				return G
 			})), r.d(t, "h", (function() {
-				return B
+				return R
 			})), r.d(t, "e", (function() {
 				return F
 			})), r.d(t, "i", (function() {
@@ -282,7 +282,7 @@
 							if (!o.data.confirmEconPayment.ok || o.data.confirmEconPayment.payment.status !== v.a.Paid) return void b()
 						} else if (p && g.status !== v.a.Paid) return void b();
 						const j = Object(h.k)(d());
-						j && (P && c ? a(B({
+						j && (P && c ? a(R({
 							subredditId: c,
 							powerupsCount: o,
 							user: j,
@@ -351,7 +351,7 @@
 									token: e.providerExecution.billingAgreementToken,
 									url: e.providerExecution.billingAgreementApprovalUrl
 								};
-								if ("PAID" === c && n) return o ? s(B({
+								if ("PAID" === c && n) return o ? s(R({
 									subredditId: o,
 									powerupsCount: r,
 									user: n,
@@ -451,8 +451,8 @@
 							hk: "4yuT5m"
 						})))
 					}
-				}, R = Object(m.a)(f.S), B = e => async (t, r) => {
-					t(R(e)), t(Object(P.l)(e.subredditId, {
+				}, B = Object(m.a)(f.S), R = e => async (t, r) => {
+					t(B(e)), t(Object(P.l)(e.subredditId, {
 						forceLoad: !0,
 						fullData: !1
 					})), t(Object(w.g)(d.a.ECON_POWERUPS_PURCHASE)), t(Object(w.h)(d.a.ECON_POWERUPS_SUCCESS))
@@ -1076,7 +1076,7 @@
 				}, t));
 			var L = r("./src/reddit/components/Econ/PowerupsPremiumUpsellModal/offerCard.m.less"),
 				G = r.n(L);
-			const R = ({
+			const B = ({
 				className: e,
 				body: t,
 				buttons: r,
@@ -1094,8 +1094,8 @@
 			}, s), t, o.a.createElement("div", {
 				className: G.a.buttons
 			}, r));
-			var B = r("./src/reddit/components/Econ/PowerupsPremiumUpsellModal/offers.m.less"),
-				D = r.n(B);
+			var R = r("./src/reddit/components/Econ/PowerupsPremiumUpsellModal/offers.m.less"),
+				D = r.n(R);
 			const {
 				fbt: F
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), q = ["premium-powerups"], Q = ["premium-powerups", "premium-ad-free", "premium-avatars", "premium-monthly-coins"], W = ({
@@ -1138,7 +1138,7 @@
 					b = q.map(e => I.b[e]());
 				return o.a.createElement("div", {
 					className: D.a.container
-				}, a && d ? o.a.createElement(o.a.Fragment, null, o.a.createElement(R, {
+				}, a && d ? o.a.createElement(o.a.Fragment, null, o.a.createElement(B, {
 					title: F._("Powerups Subscription", null, {
 						hk: "4zbTSR"
 					}),
@@ -1158,7 +1158,7 @@
 					}))], {
 						hk: "1ApJir"
 					}))
-				}), o.a.createElement(R, {
+				}), o.a.createElement(B, {
 					title: F._("Reddit Premium", null, {
 						hk: "S3DXw"
 					}),
@@ -1223,10 +1223,10 @@
 			}))], {
 				hk: "2YAbPf"
 			})));
-			var Z = r("./src/reddit/components/Econ/PowerupsPremiumUpsellModal/index.m.less"),
-				Y = r.n(Z);
+			var Y = r("./src/reddit/components/Econ/PowerupsPremiumUpsellModal/index.m.less"),
+				z = r.n(Y);
 			const {
-				fbt: z
+				fbt: Z
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), $ = () => {
 				const e = Object(s.e)(b.q),
 					t = Object(s.d)(),
@@ -1238,16 +1238,16 @@
 				return e ? o.a.createElement(o.a.Fragment, null, o.a.createElement(a.a, {
 					onClick: c
 				}), o.a.createElement("div", {
-					className: Y.a.container
+					className: z.a.container
 				}, o.a.createElement("h1", {
-					className: Y.a.title
-				}, z._("Get more with Premium!", null, {
+					className: z.a.title
+				}, Z._("Get more with Premium!", null, {
 					hk: "YXIbY"
 				})), o.a.createElement(W, {
 					subredditId: e
 				}), o.a.createElement("div", {
-					className: Y.a.footer
-				}, z._("Subscriptions automatically renew.", null, {
+					className: z.a.footer
+				}, Z._("Subscriptions automatically renew.", null, {
 					hk: "133vve"
 				})))) : (c(), null)
 			};
@@ -1779,8 +1779,8 @@
 					"premium-avatars": () => n.fbt._("Exclusive Avatar Gear", null, {
 						hk: "1f1QJb"
 					}),
-					"premium-powerups": () => n.fbt._("Monthly Powerup", null, {
-						hk: "343Zbm"
+					"premium-powerups": () => n.fbt._("Powerup", null, {
+						hk: "2TMd6"
 					}),
 					"premium-app-icons": () => n.fbt._("Custom App Icons", null, {
 						hk: "2uGpiC"
@@ -1815,9 +1815,9 @@
 					"premium-powerups": ({
 						isAltruismMessagingEnabled: e
 					}) => e ? n.fbt._("Give back to your community", null, {
-						hk: "4tHRq3"
+						hk: "2jSmid"
 					}) : n.fbt._("Help select communities unlock perks", null, {
-						hk: "4tX97Z"
+						hk: "3vbuX2"
 					}),
 					"premium-app-icons": () => n.fbt._("Change your app icon to something more your style", null, {
 						hk: "1WobLA"
@@ -2055,4 +2055,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsPremiumUpsellModal.7e212b79dd2c6d480671.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsPremiumUpsellModal.45ae42a672f735fb8e3c.js.map
