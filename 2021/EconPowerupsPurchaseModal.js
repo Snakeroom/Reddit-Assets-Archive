@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.4ae0d7868395903a3c56.js
-// Retrieved at 9/2/2021, 4:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.cb464487276ccdd36523.js
+// Retrieved at 9/9/2021, 11:40:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsPurchaseModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, n) {
@@ -181,9 +181,9 @@
 			})), n.d(t, "validateAndCreateStripeToken", (function() {
 				return E
 			})), n.d(t, "paypalApiError", (function() {
-				return g
-			})), n.d(t, "toggleRememberCard", (function() {
 				return P
+			})), n.d(t, "toggleRememberCard", (function() {
+				return g
 			})), n.d(t, "selectSavedCard", (function() {
 				return y
 			})), n.d(t, "_deleteSavedCard", (function() {
@@ -195,7 +195,7 @@
 			})), n.d(t, "savedCardsSuccess", (function() {
 				return O
 			})), n.d(t, "loadSavedCards", (function() {
-				return N
+				return j
 			}));
 			var r = n("./node_modules/fbt/lib/FbtPublic.js"),
 				s = n("./src/lib/sentry/index.ts"),
@@ -234,7 +234,7 @@
 							message: e
 						}))
 					}
-				}, g = Object(a.a)(c.x), P = Object(a.a)(c.H), y = Object(a.a)(c.C), x = Object(a.a)(c.g), _ = e => async (t, n, {
+				}, P = Object(a.a)(c.x), g = Object(a.a)(c.H), y = Object(a.a)(c.C), x = Object(a.a)(c.g), _ = e => async (t, n, {
 					apiContext: r
 				}) => {
 					t(x(e));
@@ -244,7 +244,7 @@
 					} catch (a) {
 						s.c.captureException(a)
 					}
-				}, v = Object(a.a)(c.z), O = Object(a.a)(c.A), N = () => async (e, t, {
+				}, v = Object(a.a)(c.z), O = Object(a.a)(c.A), j = () => async (e, t, {
 					apiContext: n
 				}) => {
 					e(v());
@@ -277,18 +277,22 @@
 			}));
 			var r = n("./node_modules/react/index.js"),
 				s = n.n(r),
-				a = n("./src/lib/classNames/index.ts"),
-				o = n("./src/reddit/icons/svgs/Close/index.tsx"),
-				c = n("./src/reddit/components/Econ/Common/ModalCloseButton/index.m.less"),
-				i = n.n(c);
-			const l = ({
+				a = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
+				o = n("./src/reddit/components/Econ/Common/ModalCloseButton/index.m.less"),
+				c = n.n(o);
+			const {
+				fbt: i
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), l = ({
 				className: e,
 				onClick: t
 			}) => s.a.createElement("button", {
-				className: Object(a.a)(i.a.closeButton, e),
-				onClick: t
-			}, s.a.createElement(o.a, {
-				className: i.a.closeIcon
+				onClick: t,
+				className: c.a.closeButton,
+				"aria-label": i._("Close", null, {
+					hk: "3Qarlp"
+				})
+			}, s.a.createElement(a.b, {
+				className: c.a.closeIcon
 			}))
 		},
 		"./src/reddit/components/Econ/Common/PowerupRotatingBolt/index.m.less": function(e, t, n) {
@@ -426,15 +430,15 @@
 				h = n("./src/reddit/hooks/useTracking.ts"),
 				w = n("./src/lib/constants/index.ts"),
 				E = n("./src/lib/localizeCurrency/index.ts"),
-				g = n("./src/reddit/helpers/trackers/powerups.ts"),
-				P = n("./src/reddit/actions/gold/powerups.ts"),
+				P = n("./src/reddit/helpers/trackers/powerups.ts"),
+				g = n("./src/reddit/actions/gold/powerups.ts"),
 				y = n("./src/reddit/actions/gold/productOfferPurchase.ts"),
 				x = n("./src/reddit/actions/goldPurchaseModals/payment.ts"),
 				_ = n("./src/reddit/selectors/gold/powerups/index.ts"),
 				v = n("./src/reddit/selectors/gold/productOffers.ts"),
 				O = n("./src/reddit/selectors/goldPurchaseModals.ts"),
-				N = n("./src/reddit/selectors/user.ts"),
-				j = n("./src/reddit/components/Econ/PreviewsTermsOfUseLink/index.tsx"),
+				j = n("./src/reddit/selectors/user.ts"),
+				N = n("./src/reddit/components/Econ/PreviewsTermsOfUseLink/index.tsx"),
 				C = n("./src/reddit/components/PaymentMethodSelector/index.tsx"),
 				M = n("./src/reddit/components/StripePaymentForm/index.tsx"),
 				k = n("./src/reddit/controls/CheckboxWithLabel/index.tsx"),
@@ -447,7 +451,7 @@
 			const {
 				fbt: D
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), F = Object(o.c)({
-				currentUser: N.k,
+				currentUser: j.k,
 				isAnonymous: _.d,
 				powerupsCount: _.e,
 				productOffer: v.b
@@ -520,7 +524,7 @@
 				return s.a.createElement(B.q, {
 					priority: B.b.Primary,
 					onClick: () => {
-						c(Object(P.j)(t, o, n))
+						c(Object(g.j)(t, o, n))
 					},
 					className: Object(i.a)(e, R.a.button),
 					disabled: r
@@ -570,7 +574,7 @@
 			const {
 				fbt: G
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
-			var $ = e => {
+			var Q = e => {
 					const {
 						additionalCount: t,
 						className: n,
@@ -603,8 +607,8 @@
 						}
 					})))
 				},
-				Q = n("./src/reddit/components/Econ/PowerupsPurchaseModal/PowerupsPurchase/PowerupsProgressControl/index.m.less"),
-				J = n.n(Q);
+				$ = n("./src/reddit/components/Econ/PowerupsPurchaseModal/PowerupsPurchase/PowerupsProgressControl/index.m.less"),
+				J = n.n($);
 			var ee = function(e) {
 				const {
 					className: t,
@@ -620,7 +624,7 @@
 				const u = Math.min(d, d / 2 + o.count / 2, o.count + (n || 0) / 2) / d;
 				return s.a.createElement("div", {
 					className: Object(i.a)(t, J.a.container)
-				}, s.a.createElement($, {
+				}, s.a.createElement(Q, {
 					additionalCount: n,
 					className: J.a.bar,
 					count: o.count,
@@ -675,7 +679,7 @@
 				fbt: ce
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), ie = 100, le = Object(o.c)({
 				isAnonymous: _.d,
-				isNightMode: N.X,
+				isNightMode: j.X,
 				paypalErrorMessage: O.d,
 				powerups: _.j,
 				powerupsCount: _.e,
@@ -699,15 +703,15 @@
 					Object(r.useEffect)(() => {
 						_(Object(y.d)()), _(Object(x.selectPaymentMethod)(v))
 					}, []);
-					const N = Object(f.a)(),
+					const j = Object(f.a)(),
 						I = Object(h.a)();
 					Object(r.useEffect)(() => {
-						I(Object(g.i)())
+						I(Object(P.i)())
 					}, []);
 					const T = Object(S.a)();
 					if (!d || !i) return o(), null;
 					const B = Object(E.b)(l * d, {
-							locale: N
+							locale: j
 						}),
 						A = !!(null == p ? void 0 : p.freeCount);
 					return s.a.createElement(b.StripeProvider, {
@@ -716,14 +720,14 @@
 						className: oe.a.progressControl,
 						count: l,
 						maxCount: A && p ? p.freeCount : ie,
-						onChange: e => _(Object(P.i)(e)),
+						onChange: e => _(Object(g.i)(e)),
 						powerups: i
 					}), s.a.createElement("div", {
 						className: oe.a.details
 					}, s.a.createElement(k.a, {
 						className: oe.a.anonymousCheckbox,
 						isSelected: t,
-						onClick: () => (e => _(Object(P.c)(e)))(!t),
+						onClick: () => (e => _(Object(g.c)(e)))(!t),
 						text: ce._("Powerup anonymously", null, {
 							hk: "YXX31"
 						})
@@ -773,7 +777,7 @@
 						rel: "noopener noreferrer"
 					}, ce._("Privacy Policy", null, {
 						hk: "48zcty"
-					}))), ce._param("previews terms of use", s.a.createElement(j.a, null)), ce._param("powerup price", B), ce._param("=User Settings", s.a.createElement("a", {
+					}))), ce._param("previews terms of use", s.a.createElement(N.a, null)), ce._param("powerup price", B), ce._param("=User Settings", s.a.createElement("a", {
 						href: "/settings/premium",
 						target: "_blank"
 					}, ce._("User Settings", null, {
@@ -1079,4 +1083,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.4ae0d7868395903a3c56.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.cb464487276ccdd36523.js.map
