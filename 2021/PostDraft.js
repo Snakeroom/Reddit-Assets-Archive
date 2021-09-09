@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostDraft.a2705bf47d4784dd940e.js
-// Retrieved at 9/8/2021, 2:30:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostDraft.3d3cac407f43d0af4626.js
+// Retrieved at 9/9/2021, 3:40:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostDraft"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -591,7 +591,7 @@
 						}))
 					}
 					return a
-				}, Y = Object(i.a)(a.l), K = Object(i.a)(a.m), X = Object(i.a)(a.k), q = e => async (t, n) => {
+				}, X = Object(i.a)(a.l), Y = Object(i.a)(a.m), K = Object(i.a)(a.k), q = e => async (t, n) => {
 					const s = n().platform.currentPage.locationState;
 					t(!(!s || !s[c.a.IsOverlay]) ? Object(w.a)(e.permalink) : Object(o.b)(Object(k.b)(e.permalink)))
 				}, Z = Object(i.a)(a.i), Q = Object(i.a)(a.j), $ = Object(i.a)(a.h), ee = Object(i.a)(a.p), te = Object(i.a)(a.o), ne = Object(i.a)(a.q), se = e => async t => {
@@ -628,10 +628,10 @@
 					})(o, a))), c && n.push(t(z(o, c))), void 0 !== r && n.push(t(((e, t) => async (n, o, {
 						apiContext: r
 					}) => {
-						n(Y());
+						n(X());
 						const i = await y(r(), e, t);
 						let a = !1;
-						if (i.ok) n(K({
+						if (i.ok) n(Y({
 							collectionId: e,
 							newDescription: t
 						})), n(Object(d.f)({
@@ -642,7 +642,7 @@
 						})), a = !0;
 						else {
 							const e = i.error;
-							n(X(e)), n(Object(d.f)({
+							n(K(e)), n(Object(d.f)({
 								kind: j.b.Error,
 								text: s.fbt._("Something went wrong. Just don't panic.", null, {
 									hk: "4Ck6Cm"
@@ -2953,12 +2953,12 @@
 						rtJsonElementProps: r
 					});
 					switch (s) {
-						case b.Vd.SmIcon:
+						case b.Xd.SmIcon:
 							return o.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: r
 							});
-						case b.Vd.SmIconHc:
+						case b.Xd.SmIconHc:
 							return o.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -4718,12 +4718,12 @@
 				d = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.Pd
+						experimentName: s.Rd
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === s.Vd.SmIcon || t === s.Vd.SmIconHc
+					return t === s.Xd.SmIcon || t === s.Xd.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -4746,4 +4746,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.a2705bf47d4784dd940e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.3d3cac407f43d0af4626.js.map

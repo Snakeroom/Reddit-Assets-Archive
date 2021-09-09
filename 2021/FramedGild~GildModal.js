@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.1562e36369f47bd9b6f3.js
-// Retrieved at 9/8/2021, 2:30:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.0179681e8c3ca06cd689.js
+// Retrieved at 9/9/2021, 3:40:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -588,8 +588,8 @@
 				F = s("./src/reddit/helpers/correlationIdTracker.ts"),
 				U = s("./src/reddit/helpers/isPost.ts"),
 				H = s("./src/reddit/helpers/trackers/gild.ts"),
-				V = s("./src/telemetry/index.ts"),
-				W = s("./src/reddit/endpoints/profile/info.ts"),
+				W = s("./src/telemetry/index.ts"),
+				V = s("./src/reddit/endpoints/profile/info.ts"),
 				q = s("./src/reddit/actions/gold/awardKarma.ts"),
 				J = s("./src/reddit/actions/gold/constants.ts"),
 				z = s("./src/reddit/actions/gold/econPurchase.ts");
@@ -721,7 +721,7 @@
 					}
 					if (t(re(n, e)), f) {
 						const e = {
-								...W.a,
+								...V.a,
 								...f.karma
 							},
 							s = e.fromAwardsReceived + b,
@@ -745,7 +745,7 @@
 							hk: "2sIK9Y"
 						}),
 						T = h.coinPrice;
-					Object(V.a)(Object(H.viewKarmaSuccessEvent)({
+					Object(W.a)(Object(H.viewKarmaSuccessEvent)({
 						award: h,
 						awarderKarmaEarned: b,
 						awardeeKarmaEarned: 0,
@@ -1695,9 +1695,9 @@
 				F = s("./src/reddit/selectors/user.ts"),
 				U = s("./src/reddit/components/CoinPurchaseModal/async.tsx"),
 				H = (s("./node_modules/core-js/modules/web.dom.iterable.js"), s("./src/higherOrderComponents/makeAsync.tsx")),
-				V = s("./src/lib/loadWithRetries/index.ts"),
-				W = s("./src/reddit/helpers/loadThirdPartyScript.ts");
-			const q = () => Object(V.a)(() => Promise.all([Promise.all([s.e("CoinPurchaseModal~EconPowerupsPurchaseModal~PennyPurchaseModal~PremiumPurchaseModal"), s.e("PennyPurchaseModal")]).then(s.bind(null, "./src/reddit/components/PennyPurchaseModal/index.tsx")), Object(W.d)().catch(() => {})])).then(e => e[0].default);
+				W = s("./src/lib/loadWithRetries/index.ts"),
+				V = s("./src/reddit/helpers/loadThirdPartyScript.ts");
+			const q = () => Object(W.a)(() => Promise.all([Promise.all([s.e("CoinPurchaseModal~EconPowerupsPurchaseModal~PennyPurchaseModal~PremiumPurchaseModal"), s.e("PennyPurchaseModal")]).then(s.bind(null, "./src/reddit/components/PennyPurchaseModal/index.tsx")), Object(V.d)().catch(() => {})])).then(e => e[0].default);
 			var J = Object(H.a)({
 					getComponent: q,
 					ErrorComponent: () => null,
@@ -2367,9 +2367,9 @@
 				}),
 				userCoins: s
 			});
-			const Ve = (e, t) => e.length > b.l.length && !e.find(e => e.award.id === t.id);
-			var We = s("./src/reddit/components/GildModalContent/index.m.less"),
-				qe = s.n(We);
+			const We = (e, t) => e.length > b.l.length && !e.find(e => e.award.id === t.id);
+			var Ve = s("./src/reddit/components/GildModalContent/index.m.less"),
+				qe = s.n(Ve);
 			const Je = (e, {
 					thingId: t,
 					subredditId: s
@@ -2623,13 +2623,13 @@
 					} = this.props;
 					s || Object(m.d)(m.a.GildingFlow, !1), u(Object(h.viewGildModalEvent)(l.id, r, y)), g(!n && Object(p.q)());
 					const I = w ? w.id : O || (o && o.belongsTo ? o.belongsTo.id : void 0);
-					if (I && t(I), Ve(e, l) && (E(), d(b.n)), w || j) {
+					if (I && t(I), We(e, l) && (E(), d(b.n)), w || j) {
 						x(w ? w.name : j)
 					}
 					w && w.type !== f.f.User && v(w.id, w.name), a && (l.pennyPrice ? q() : Object(U.a)(), i || c(s))
 				}
 				componentDidUpdate(e) {
-					e.awardingsPending && !this.props.awardingsPending && Ve(this.props.awardings, this.props.selectedAward) && (this.props.displayUnusableAwardError(), this.props.selectAward(b.n))
+					e.awardingsPending && !this.props.awardingsPending && We(this.props.awardings, this.props.selectedAward) && (this.props.displayUnusableAwardError(), this.props.selectAward(b.n))
 				}
 				render() {
 					const {
@@ -4213,18 +4213,18 @@
 						f: s,
 						t: n
 					} = e, a = [];
-					if (!s) return W(0, n, t);
+					if (!s) return V(0, n, t);
 					const o = Object(r.a)(n);
 					let i = 0,
 						c = 0;
 					const d = s.length;
 					for (; i < d; i++) {
 						const [e, t, r] = s[i], d = t + r, l = o[t], u = o[d] - l;
-						l > c && a.push(W(0, n.substr(c, l - c), `between${i}`)), a.push(W(e, n.substr(l, u), i)), c = l + u
+						l > c && a.push(V(0, n.substr(c, l - c), `between${i}`)), a.push(V(e, n.substr(l, u), i)), c = l + u
 					}
-					return c < n.length && a.push(W(0, n.substr(c), `remaining${i}`)), a
+					return c < n.length && a.push(V(0, n.substr(c), `remaining${i}`)), a
 				},
-				V = {
+				W = {
 					[p.j.monospace]: c.h,
 					[p.j.bold]: c.b,
 					[p.j.italic]: c.f,
@@ -4233,9 +4233,9 @@
 					[p.j.subscript]: c.l,
 					[p.j.superscript]: c.m
 				},
-				W = (e, t, s) => {
+				V = (e, t, s) => {
 					let r = t;
-					return r = a()(V, (t, r, n) => e & parseInt(n, 10) ? i.a.createElement(r, {
+					return r = a()(W, (t, r, n) => e & parseInt(n, 10) ? i.a.createElement(r, {
 						key: s
 					}, t) : t, r)
 				},
@@ -4366,12 +4366,12 @@
 						rtJsonElementProps: a
 					});
 					switch (r) {
-						case b.Vd.SmIcon:
+						case b.Xd.SmIcon:
 							return n.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: a
 							});
-						case b.Vd.SmIconHc:
+						case b.Xd.SmIconHc:
 							return n.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -5152,7 +5152,7 @@
 			})), s.d(t, "e", (function() {
 				return H
 			})), s.d(t, "g", (function() {
-				return V
+				return W
 			}));
 			s("./node_modules/core-js/modules/web.dom.iterable.js");
 			var r = s("./node_modules/reselect/es/index.js"),
@@ -5330,7 +5330,7 @@
 				}),
 				U = Object(r.a)(S, F, m.b, c.b, c.o, (e, t, s, r, n) => s ? r : e ? t === G.LIVE || t === G.VOD ? e.stream.hls_url : n : void 0),
 				H = Object(r.a)(S, F, D, (e, t, s) => e ? t === G.LIVE ? e.broadcast_time : t === G.VOD && s < e.broadcast_time ? s : 0 : 0),
-				V = (e, t) => {
+				W = (e, t) => {
 					const s = p(e);
 					return !!s && s[t] && s[t].chat_disabled
 				}
@@ -5391,12 +5391,12 @@
 				c = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: r.Pd
+						experimentName: r.Rd
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === r.Vd.SmIcon || t === r.Vd.SmIconHc
+					return t === r.Xd.SmIcon || t === r.Xd.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -5428,4 +5428,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.1562e36369f47bd9b6f3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.0179681e8c3ca06cd689.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.172925e8c666193a9c59.js
-// Retrieved at 9/8/2021, 2:30:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.25e5dfcc384ee776c9a1.js
+// Retrieved at 9/9/2021, 3:40:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceReleaseNotesModal"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -841,11 +841,11 @@
 					releaseNotes: m.f,
 					subreddit: u.r
 				}),
-				V = Object(i.b)(H, e => ({
+				A = Object(i.b)(H, e => ({
 					onClose: () => e(Object(d.f)())
 				})),
-				A = Object(u.u)();
-			t.default = Object(a.a)(A(V(D)))
+				U = Object(u.u)();
+			t.default = Object(a.a)(U(A(D)))
 		},
 		"./src/reddit/components/Governance/VaultActionLink/async.ts": function(e, t, n) {
 			"use strict";
@@ -2065,11 +2065,11 @@
 			})), n.d(t, "h", (function() {
 				return H
 			})), n.d(t, "g", (function() {
-				return V
-			})), n.d(t, "i", (function() {
 				return A
-			})), n.d(t, "e", (function() {
+			})), n.d(t, "i", (function() {
 				return U
+			})), n.d(t, "e", (function() {
+				return F
 			}));
 			var s = n("./src/lib/unicodeUtils/index.ts"),
 				r = n("./node_modules/lodash/reduce.js"),
@@ -2174,7 +2174,7 @@
 						i = s.length;
 					for (let a = 0; a < i; a++) {
 						const e = s[a];
-						o.push(e.e === h.w ? e.t : U(e, t, a))
+						o.push(e.e === h.w ? e.t : F(e, t, a))
 					}
 					const c = d.x[r - 1];
 					return a.a.createElement(c, {
@@ -2228,7 +2228,7 @@
 						case h.p:
 							return B(e, t, n, s);
 						case h.u:
-							return V(e, t, n, s);
+							return A(e, t, n, s);
 						case h.z:
 							return H(e, t, n, s)
 					}
@@ -2252,7 +2252,7 @@
 							} = e;
 						l.push(a.a.createElement(s, {
 							key: d
-						}, A(i, t, n))), m[d] = r
+						}, U(i, t, n))), m[d] = r
 					}
 					for (let h = 0; h < i; h++) {
 						const e = r[h],
@@ -2265,7 +2265,7 @@
 								} = e[r];
 							o.push(a.a.createElement(s, {
 								key: r
-							}, A(i, t, n)))
+							}, U(i, t, n)))
 						}
 						u.push(a.a.createElement(d.t, {
 							key: h
@@ -2275,24 +2275,24 @@
 						key: s
 					}, a.a.createElement("thead", null, a.a.createElement(d.t, null, l)), a.a.createElement("tbody", null, u))
 				},
-				V = (e, t, n, s) => {
+				A = (e, t, n, s) => {
 					if (!e.c || !e.c.length) return (e => a.a.createElement(d.j, {
 						key: e
 					}, a.a.createElement("br", null)))(s);
 					const r = e.c[0];
 					return r.e !== h.m && r.e !== h.a || !Object(S.f)(r.id) ? a.a.createElement(d.j, {
 						key: s
-					}, A(e.c, t, n)) : Object(j.b)(r, s, t)
+					}, U(e.c, t, n)) : Object(j.b)(r, s, t)
 				},
-				A = (e, t, n) => {
+				U = (e, t, n) => {
 					const s = [],
 						r = e.length;
 					for (let o = 0; o < r; o++) {
 						const r = e[o];
-						if (r.e === h.A) s.push(F(r, o));
+						if (r.e === h.A) s.push(V(r, o));
 						else if (r.e === h.x) s.push(a.a.createElement(O.a, {
 							key: o
-						}, A(r.c, t, n)));
+						}, U(r.c, t, n)));
 						else if (r.e === h.n) s.push(a.a.createElement("br", {
 							key: o
 						}));
@@ -2305,14 +2305,14 @@
 									media: e
 								}))
 							}
-						} else s.push(U(r, n, o))
+						} else s.push(F(r, n, o))
 					}
 					return s
 				},
-				U = (e, t, n) => {
+				F = (e, t, n) => {
 					switch (e.e) {
 						case h.o:
-							const s = F({
+							const s = V({
 								t: e.t,
 								f: e.f
 							}, 0);
@@ -2352,7 +2352,7 @@
 							}, e.t)
 					}
 				},
-				F = (e, t) => {
+				V = (e, t) => {
 					const {
 						f: n,
 						t: r
@@ -2510,12 +2510,12 @@
 						rtJsonElementProps: o
 					});
 					switch (s) {
-						case b.Vd.SmIcon:
+						case b.Xd.SmIcon:
 							return r.a.createElement(h, {
 								subredditName: n,
 								rtJsonElementProps: o
 							});
-						case b.Vd.SmIconHc:
+						case b.Xd.SmIconHc:
 							return r.a.createElement(h, {
 								subredditName: n,
 								isHoverable: !0,
@@ -2852,12 +2852,12 @@
 				d = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.Pd
+						experimentName: s.Rd
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === s.Vd.SmIcon || t === s.Vd.SmIconHc
+					return t === s.Xd.SmIcon || t === s.Xd.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -2880,4 +2880,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.172925e8c666193a9c59.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.25e5dfcc384ee776c9a1.js.map

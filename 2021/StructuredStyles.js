@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/StructuredStyles.4ed96e596df2024f00fb.js
-// Retrieved at 9/8/2021, 2:30:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/StructuredStyles.956e101b521f5eff03d0.js
+// Retrieved at 9/9/2021, 3:40:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["StructuredStyles"], {
 		"./node_modules/linkify-it/index.js": function(e, t, n) {
@@ -1131,8 +1131,8 @@
 				F = n("./src/reddit/components/StructuredStyles/Breadcrumbs/index.tsx"),
 				A = n("./src/reddit/actions/modal.ts"),
 				N = n("./src/reddit/actions/structuredStyles/index.ts"),
-				R = n("./src/higherOrderComponents/asModal/index.tsx"),
-				P = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
+				P = n("./src/higherOrderComponents/asModal/index.tsx"),
+				R = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
 				B = n("./src/reddit/controls/TextButton/index.tsx");
 			const {
 				fbt: L
@@ -1148,18 +1148,18 @@
 					}
 				}
 				render() {
-					return r.a.createElement(P.e, null, r.a.createElement(P.i, null, r.a.createElement(v.a, null, r.a.createElement(P.q, null, L._("Reset to default styling?", null, {
+					return r.a.createElement(R.e, null, r.a.createElement(R.i, null, r.a.createElement(v.a, null, r.a.createElement(R.q, null, L._("Reset to default styling?", null, {
 						hk: "2Ztjzn"
 					})), r.a.createElement(B.a, {
 						onClick: this.handleClose
-					}, r.a.createElement(P.b, null)))), r.a.createElement(P.l, null, r.a.createElement(P.p, null, L._("Resetting to defaults here will rollback all your past edits to when your community was first created.", null, {
+					}, r.a.createElement(R.b, null)))), r.a.createElement(R.l, null, r.a.createElement(R.p, null, L._("Resetting to defaults here will rollback all your past edits to when your community was first created.", null, {
 						hk: "3eSsCv"
-					}))), r.a.createElement(P.g, null, r.a.createElement(P.a, {
+					}))), r.a.createElement(R.g, null, r.a.createElement(R.a, {
 						onClick: this.handleCancel,
 						"data-redditstyle": !0
 					}, L._("Cancel", null, {
 						hk: "2TSLl5"
-					})), r.a.createElement(P.r, {
+					})), r.a.createElement(R.r, {
 						onClick: this.handleSave,
 						"data-redditstyle": !0
 					}, L._("Reset", null, {
@@ -1167,7 +1167,7 @@
 					}))))
 				}
 			}
-			var U = Object(R.a)(W),
+			var U = Object(P.a)(W),
 				M = n("./src/reddit/selectors/activeModalId.ts"),
 				q = n("./src/reddit/components/StructuredStyles/ResetAllStylesButton/index.m.less"),
 				z = n.n(q);
@@ -1423,9 +1423,9 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const Re = be(),
-				Pe = fe(Se.a),
-				Be = e => r.a.createElement(Pe, Ne({}, e, {
+			const Pe = be(),
+				Re = fe(Se.a),
+				Be = e => r.a.createElement(Re, Ne({}, e, {
 					className: Object(ue.a)({
 						[Ae.a.selected]: e.selected,
 						[Ae.a.StyledRadioOption]: !0
@@ -1481,7 +1481,7 @@
 							})
 					}
 				})(e.value));
-			var Le = e => r.a.createElement(Re, {
+			var Le = e => r.a.createElement(Pe, {
 				name: e.name,
 				className: Ae.a.StyledRadioInput
 			}, e.values.map(t => r.a.createElement(Be, {
@@ -1537,18 +1537,18 @@
 					}
 				}
 				render() {
-					return r.a.createElement(P.e, null, r.a.createElement(P.i, null, r.a.createElement(v.a, null, r.a.createElement(P.q, null, i.fbt._("Save changes before leaving?", null, {
+					return r.a.createElement(R.e, null, r.a.createElement(R.i, null, r.a.createElement(v.a, null, r.a.createElement(R.q, null, i.fbt._("Save changes before leaving?", null, {
 						hk: "2Dr4N3"
 					})), r.a.createElement(B.a, {
 						onClick: this.handleClose
-					}, r.a.createElement(P.b, null)))), r.a.createElement(P.l, null, r.a.createElement(P.p, null, i.fbt._("You have made some changes to your community, do you wish to leave this menu without saving?", null, {
+					}, r.a.createElement(R.b, null)))), r.a.createElement(R.l, null, r.a.createElement(R.p, null, i.fbt._("You have made some changes to your community, do you wish to leave this menu without saving?", null, {
 						hk: "4A9yJT"
-					}))), r.a.createElement(P.g, null, r.a.createElement(P.a, {
+					}))), r.a.createElement(R.g, null, r.a.createElement(R.a, {
 						onClick: this.handleCancel,
 						"data-redditstyle": !0
 					}, i.fbt._("Discard", null, {
 						hk: "1SiwLl"
-					})), r.a.createElement(P.r, {
+					})), r.a.createElement(R.r, {
 						onClick: this.handleSave,
 						"data-redditstyle": !0
 					}, i.fbt._("Save", null, {
@@ -1556,7 +1556,7 @@
 					}))))
 				}
 			}
-			var Ke = Object(R.a)(He);
+			var Ke = Object(P.a)(He);
 			var Ge = e => r.a.createElement("div", null, e.isSaveChangesModalOpen && r.a.createElement(Ke, {
 				toggleModal: e.toggleSaveChangesModal,
 				onSave: e.saveChanges,
@@ -1750,9 +1750,9 @@
 				}).apply(this, arguments)
 			}
 			const Nt = "StructuredStyles--Modal--SaveChangesModal",
-				Rt = "StructuredStyles--Modal--ImportThemesModal";
+				Pt = "StructuredStyles--Modal--ImportThemesModal";
 
-			function Pt(e, t) {
+			function Rt(e, t) {
 				for (const n in e)
 					if (e[n] !== t[n]) return !0;
 				return !1
@@ -1774,7 +1774,7 @@
 							e(Object(A.i)(Nt))
 						},
 						toggleImportThemesModal: () => {
-							e(Object(A.i)(Rt))
+							e(Object(A.i)(Pt))
 						},
 						revertChanges: () => {
 							e(Object(N.c)(n.subredditId, n.paneName, t)), n.stopEditing()
@@ -1789,12 +1789,12 @@
 					}), (e, t, n) => ({
 						...n,
 						bannerHeight: e.draftStyles.bannerHeight,
-						hasUnsavedChanges: Pt(e.draftStyles, e.savedStyles),
+						hasUnsavedChanges: Rt(e.draftStyles, e.savedStyles),
 						exportStructuredStyles: t.exportStructuredStyles,
 						importStructuredStyles: t.importStructuredStyles,
 						isExportPending: e.isExportPending,
 						isSaveChangesModalOpen: e.activeModalId === Nt,
-						isImportThemesModalOpen: e.activeModalId === Rt,
+						isImportThemesModalOpen: e.activeModalId === Pt,
 						subreddit: e.subreddit,
 						revertChanges: t.revertChanges,
 						revertImport: t.revertImport,
@@ -1934,18 +1934,18 @@
 					const {
 						props: e
 					} = this;
-					return r.a.createElement(P.e, null, r.a.createElement(P.i, null, r.a.createElement(v.a, null, r.a.createElement(P.q, null, e.modalTitle), r.a.createElement(B.a, {
+					return r.a.createElement(R.e, null, r.a.createElement(R.i, null, r.a.createElement(v.a, null, r.a.createElement(R.q, null, e.modalTitle), r.a.createElement(B.a, {
 						onClick: this.props.toggleModal
-					}, r.a.createElement(P.b, null)))), r.a.createElement(P.l, null, r.a.createElement(P.p, null, e.modalText)), r.a.createElement(P.g, null, r.a.createElement(P.a, {
+					}, r.a.createElement(R.b, null)))), r.a.createElement(R.l, null, r.a.createElement(R.p, null, e.modalText)), r.a.createElement(R.g, null, r.a.createElement(R.a, {
 						onClick: this.onCancel,
 						"data-redditstyle": !0
-					}, e.onCancelText), r.a.createElement(P.r, {
+					}, e.onCancelText), r.a.createElement(R.r, {
 						onClick: this.onSave,
 						"data-redditstyle": !0
 					}, e.onSaveText)))
 				}
 			}
-			var Ht = Object(R.a)(Vt),
+			var Ht = Object(P.a)(Vt),
 				Kt = n("./src/reddit/components/StructuredStyles/StyledComponents/inputs.ts");
 			const Gt = "ss-file-input",
 				Zt = () => {};
@@ -2208,18 +2208,18 @@
 					const {
 						props: e
 					} = this;
-					return r.a.createElement(P.e, null, r.a.createElement(P.i, null, r.a.createElement(v.a, null, r.a.createElement(P.q, null, i.fbt._("Leave this menu without saving?", null, {
+					return r.a.createElement(R.e, null, r.a.createElement(R.i, null, r.a.createElement(v.a, null, r.a.createElement(R.q, null, i.fbt._("Leave this menu without saving?", null, {
 						hk: "2VpfMT"
 					})), r.a.createElement(B.a, {
 						onClick: e.toggleModal
-					}, r.a.createElement(P.b, null)))), r.a.createElement(P.l, null, r.a.createElement(P.p, null, i.fbt._("You have made some changes to your community, do you wish to leave this menu without saving?", null, {
+					}, r.a.createElement(R.b, null)))), r.a.createElement(R.l, null, r.a.createElement(R.p, null, i.fbt._("You have made some changes to your community, do you wish to leave this menu without saving?", null, {
 						hk: "3dOZum"
-					}))), r.a.createElement(P.g, null, r.a.createElement(P.a, {
+					}))), r.a.createElement(R.g, null, r.a.createElement(R.a, {
 						onClick: e.toggleModal,
 						"data-redditstyle": !0
 					}, i.fbt._("Cancel", null, {
 						hk: "2TSLl5"
-					})), r.a.createElement(P.r, {
+					})), r.a.createElement(R.r, {
 						onClick: e.onLeave,
 						"data-redditstyle": !0
 					}, i.fbt._("Leave", null, {
@@ -2227,7 +2227,7 @@
 					}))))
 				}
 			}
-			var An = Object(R.a)(Fn);
+			var An = Object(P.a)(Fn);
 			class Nn extends r.a.Component {
 				render() {
 					const {
@@ -2247,13 +2247,13 @@
 					}, e.title)))
 				}
 			}
-			var Rn, Pn = Nn,
+			var Pn, Rn = Nn,
 				Bn = n("./src/reddit/controls/Sortable/index.tsx"),
 				Ln = n("./src/reddit/components/StructuredStyles/FeatureToggle/index.m.less"),
 				Wn = n.n(Ln);
 			! function(e) {
 				e.Off = "0", e.On = "1"
-			}(Rn || (Rn = {}));
+			}(Pn || (Pn = {}));
 			const Un = s.a.wrapped(Kt.h, "StyledLabel", Wn.a),
 				Mn = s.a.wrapped(h.h, "ToggleInput", Wn.a),
 				qn = s.a.wrapped(Z.e, "FormElementTitle", Wn.a);
@@ -2638,10 +2638,10 @@
 						value: t.cachedTextButton.textColor || t.cachedTextButton.color
 					}))), r.a.createElement(Z.i, null, r.a.createElement(zn, {
 						name: "widgetButtonHoverToggle",
-						value: t.isHoverEnabled ? Rn.On : Rn.Off,
+						value: t.isHoverEnabled ? Pn.On : Pn.Off,
 						onChange: this.toggleHover,
-						onValue: Rn.On,
-						offValue: Rn.Off,
+						onValue: Pn.On,
+						offValue: Pn.Off,
 						label: i.fbt._("Hover treatment", null, {
 							hk: "1to7PM"
 						})
@@ -2779,7 +2779,7 @@
 					const {
 						props: e
 					} = this;
-					return r.a.createElement(Z.k, null, r.a.createElement(Pn, e), r.a.createElement("div", null, "This widget is not implemented"))
+					return r.a.createElement(Z.k, null, r.a.createElement(Rn, e), r.a.createElement("div", null, "This widget is not implemented"))
 				}
 			}
 			var ca = da;
@@ -2898,7 +2898,7 @@
 						} = this, {
 							widget: n
 						} = t, a = t.editMode !== Ea.None;
-						return r.a.createElement(Z.k, null, r.a.createElement(Pn, e), r.a.createElement(Z.f, null, r.a.createElement(Z.l, null, r.a.createElement(Z.i, null, r.a.createElement(Z.h, null, i.fbt._("Widget title", null, {
+						return r.a.createElement(Z.k, null, r.a.createElement(Rn, e), r.a.createElement(Z.f, null, r.a.createElement(Z.l, null, r.a.createElement(Z.i, null, r.a.createElement(Z.h, null, i.fbt._("Widget title", null, {
 							hk: "2dy5YB"
 						})), r.a.createElement(Kt.c, {
 							placeholder: i.fbt._("Widget title", null, {
@@ -3075,7 +3075,7 @@
 						} = this, {
 							widget: t
 						} = this.state;
-						return r.a.createElement(Z.k, null, r.a.createElement(Pn, e), r.a.createElement(Z.l, null, r.a.createElement(Z.h, null, i.fbt._("Widget title", null, {
+						return r.a.createElement(Z.k, null, r.a.createElement(Rn, e), r.a.createElement(Z.l, null, r.a.createElement(Z.h, null, i.fbt._("Widget title", null, {
 							hk: "2dy5YB"
 						})), r.a.createElement(Kt.c, {
 							placeholder: i.fbt._("Widget title", null, {
@@ -3169,8 +3169,8 @@
 						}))))
 					}
 				},
-				Ra = n("./src/reddit/controls/SubredditPicker/index.tsx"),
-				Pa = n("./src/reddit/layout/row/Inline/index.tsx"),
+				Pa = n("./src/reddit/controls/SubredditPicker/index.tsx"),
+				Ra = n("./src/reddit/layout/row/Inline/index.tsx"),
 				Ba = n("./src/reddit/components/StructuredStyles/Forms/CommunityListEditor/index.m.less"),
 				La = n.n(Ba);
 			const Wa = 30,
@@ -3259,7 +3259,7 @@
 						} = this, {
 							widget: n
 						} = t, a = this.getNewCommunityName();
-						return r.a.createElement(Z.k, null, r.a.createElement(Pn, e), r.a.createElement(Z.f, null, r.a.createElement(Z.h, null, i.fbt._("Widget title", null, {
+						return r.a.createElement(Z.k, null, r.a.createElement(Rn, e), r.a.createElement(Z.f, null, r.a.createElement(Z.h, null, i.fbt._("Widget title", null, {
 							hk: "2dy5YB"
 						})), r.a.createElement(Z.i, null, r.a.createElement(Kt.c, {
 							placeholder: i.fbt._("Widget title", null, {
@@ -3304,9 +3304,9 @@
 							className: La.a.trashIcon
 						}))))), n.data.length < Ua && t.editMode !== Ma.Sort && r.a.createElement(Z.f, null, r.a.createElement(Z.h, null, i.fbt._("Add New Community", null, {
 							hk: "1tXrnU"
-						})), r.a.createElement(Pa.a, {
+						})), r.a.createElement(Ra.a, {
 							className: La.a.controlRow
-						}, r.a.createElement(Ra.a, {
+						}, r.a.createElement(Pa.a, {
 							className: La.a.subredditPicker,
 							onSelect: this.handlePickCommunity,
 							value: {
@@ -3568,7 +3568,7 @@
 						} = this, {
 							widget: n
 						} = t;
-						return r.a.createElement(Z.k, null, r.a.createElement(Pn, e), r.a.createElement(Ja, null), r.a.createElement(cr, null, r.a.createElement(Z.h, null, i.fbt._("Widget title", null, {
+						return r.a.createElement(Z.k, null, r.a.createElement(Rn, e), r.a.createElement(Ja, null), r.a.createElement(cr, null, r.a.createElement(Z.h, null, i.fbt._("Widget title", null, {
 							hk: "48e5IQ"
 						})), r.a.createElement(Kt.c, {
 							placeholder: i.fbt._("Widget title", null, {
@@ -3734,7 +3734,7 @@
 					} = this, {
 						widget: t
 					} = this.state;
-					return r.a.createElement(Z.k, null, r.a.createElement(Pn, e), r.a.createElement(Z.f, null, r.a.createElement(Z.h, null, i.fbt._("Joined community", null, {
+					return r.a.createElement(Z.k, null, r.a.createElement(Rn, e), r.a.createElement(Z.f, null, r.a.createElement(Z.h, null, i.fbt._("Joined community", null, {
 						hk: "3fEZvt"
 					})), r.a.createElement(Z.i, null, r.a.createElement(Kt.c, {
 						placeholder: i.fbt._("Members", null, {
@@ -3931,7 +3931,7 @@
 						} = this, {
 							widget: n
 						} = t;
-						return r.a.createElement(Z.k, null, r.a.createElement(Pn, e), r.a.createElement(Z.f, null, r.a.createElement(Z.a, null, r.a.createElement(Z.g, null, i.fbt._("Uploading multiple images to this widget will load a random image on each page refresh.", null, {
+						return r.a.createElement(Z.k, null, r.a.createElement(Rn, e), r.a.createElement(Z.f, null, r.a.createElement(Z.a, null, r.a.createElement(Z.g, null, i.fbt._("Uploading multiple images to this widget will load a random image on each page refresh.", null, {
 							hk: "157MBS"
 						}))), r.a.createElement(Z.h, null, i.fbt._("Widget title", null, {
 							hk: "3Ka9sg"
@@ -3982,8 +3982,8 @@
 						}))))
 					}
 				}, $t.a),
-				Rr = n("./node_modules/lodash/noop.js"),
-				Pr = n.n(Rr),
+				Pr = n("./node_modules/lodash/noop.js"),
+				Rr = n.n(Pr),
 				Br = n("./src/reddit/components/StructuredStyles/Forms/MenuWidgetEditor/MenuItemLabel.m.less"),
 				Lr = n.n(Br);
 			const Wr = s.a.wrapped(Z.e, "TextDisplay", Lr.a),
@@ -4045,7 +4045,7 @@
 					} = this;
 					return r.a.createElement(Z.k, {
 						key: "default-content"
-					}, r.a.createElement(Pn, e), r.a.createElement(Jt.c, null, i.fbt._("These community styling options will also display in Reddit apps.", null, {
+					}, r.a.createElement(Rn, e), r.a.createElement(Jt.c, null, i.fbt._("These community styling options will also display in Reddit apps.", null, {
 						hk: "2gl4Jd"
 					})), r.a.createElement(Z.f, null, r.a.createElement(p.b, {
 						disabled: !0
@@ -4053,15 +4053,15 @@
 						hk: "rLU2h"
 					})), r.a.createElement(Xr, {
 						onClick: this.toggleWiki
-					}, r.a.createElement(v.a, null, r.a.createElement(Pa.a, null, r.a.createElement(Mr, {
+					}, r.a.createElement(v.a, null, r.a.createElement(Ra.a, null, r.a.createElement(Mr, {
 						text: i.fbt._("Wiki", null, {
 							hk: "2s4Mqc"
 						}),
 						url: Yr
-					})), r.a.createElement(Pa.a, null, r.a.createElement(Jr, {
+					})), r.a.createElement(Ra.a, null, r.a.createElement(Jr, {
 						name: Qr,
 						offValue: "false",
-						onChange: Pr.a,
+						onChange: Rr.a,
 						onValue: "true",
 						redditStyle: !0,
 						selected: e.widget.showWiki
@@ -4094,7 +4094,7 @@
 					} = this;
 					return r.a.createElement(Z.k, {
 						key: "reorder-form"
-					}, r.a.createElement(Pn, e), r.a.createElement(p.b, {
+					}, r.a.createElement(Rn, e), r.a.createElement(p.b, {
 						disabled: !0
 					}, i.fbt._("Posts", null, {
 						hk: "rLU2h"
@@ -4209,7 +4209,7 @@
 			var as = ns,
 				rs = n("./src/reddit/components/StructuredStyles/Forms/MenuWidgetEditor/ContentTypeOption.m.less"),
 				ss = n.n(rs);
-			const is = s.a.wrapped(Pa.a, "Inline", ss.a);
+			const is = s.a.wrapped(Ra.a, "Inline", ss.a);
 			var ls = e => r.a.createElement(Z.a, null, r.a.createElement(is, {
 				className: Object(ue.a)({
 					[ss.a.disabled]: e.disabled
@@ -4349,7 +4349,7 @@
 						props: e,
 						state: t
 					} = this;
-					return this.validate(t), r.a.createElement(Z.k, null, r.a.createElement(Pn, e), r.a.createElement(Z.f, null, r.a.createElement(Z.h, null, this.isANewMenuItemForm ? i.fbt._("Tab type", null, {
+					return this.validate(t), r.a.createElement(Z.k, null, r.a.createElement(Rn, e), r.a.createElement(Z.f, null, r.a.createElement(Z.h, null, this.isANewMenuItemForm ? i.fbt._("Tab type", null, {
 						hk: "274wIj"
 					}) : this.isALinkForm ? i.fbt._("Link Tab", null, {
 						hk: "19Feoy"
@@ -4620,7 +4620,7 @@
 						} = this, {
 							widget: n
 						} = t;
-						return r.a.createElement(Z.k, null, r.a.createElement(Pn, e), r.a.createElement(jn, {
+						return r.a.createElement(Z.k, null, r.a.createElement(Rn, e), r.a.createElement(jn, {
 							onChangeWidgetStyles: this.onChangeWidgetStyles,
 							subredditId: e.subredditId,
 							widgetStyles: n.styles
@@ -4649,7 +4649,7 @@
 			const Ss = s.a.wrapped(_s.b, "FlairComponent", ks.a);
 			var Is = e => {
 					const t = Object(Cs.c)(e.flairTemplate);
-					return r.a.createElement(Pa.a, null, r.a.createElement(Ss, {
+					return r.a.createElement(Ra.a, null, r.a.createElement(Ss, {
 						flair: t,
 						forceSmallEmojis: !0
 					}))
@@ -4662,26 +4662,26 @@
 				Fs = n("./src/reddit/layout/row/InlineButton/index.tsx"),
 				As = n("./src/reddit/models/Flair/index.ts"),
 				Ns = n("./src/reddit/components/StructuredStyles/Forms/PostFlairWidgetEditor/PostFlairPickerDropdown.m.less"),
-				Rs = n.n(Ns);
-			const Ps = "PostFlairWidget--FlairPicker",
+				Ps = n.n(Ns);
+			const Rs = "PostFlairWidget--FlairPicker",
 				Bs = Object(c.c)({
-					isOpen: Object(gt.b)(Ps)
+					isOpen: Object(gt.b)(Rs)
 				}),
 				Ls = Object(o.b)(Bs, e => ({
 					onOpenDropdown: () => {
 						e(Object(ot.h)({
-							tooltipId: Ps
+							tooltipId: Rs
 						}))
 					}
 				})),
-				Ws = s.a.wrapped(Ds.a, "StyledDropdown", Rs.a),
-				Us = s.a.wrapped(js.b, "DropdownTriangle", Rs.a),
+				Ws = s.a.wrapped(Ds.a, "StyledDropdown", Ps.a),
+				Us = s.a.wrapped(js.b, "DropdownTriangle", Ps.a),
 				Ms = Object(vs.a)(Ws),
-				qs = s.a.wrapped(Fs.a, "InlineButton", Rs.a),
-				zs = s.a.div("DropdownContainer", Rs.a),
-				Vs = s.a.div("SearchBarContainer", Rs.a),
-				Hs = s.a.wrapped(Ts.b, "Row", Rs.a),
-				Ks = s.a.wrapped(Is, "FlairTemplateItem", Rs.a);
+				qs = s.a.wrapped(Fs.a, "InlineButton", Ps.a),
+				zs = s.a.div("DropdownContainer", Ps.a),
+				Vs = s.a.div("SearchBarContainer", Ps.a),
+				Hs = s.a.wrapped(Ts.b, "Row", Ps.a),
+				Ks = s.a.wrapped(Is, "FlairTemplateItem", Ps.a);
 			class Gs extends r.a.Component {
 				constructor(e) {
 					super(e), this.searchRef = null, this.handleFlairSelection = (e, t, n) => {
@@ -4729,7 +4729,7 @@
 					} = this.props, s = document.getElementById(dt.a);
 					return r.a.createElement(zs, {
 						className: t,
-						id: Ps,
+						id: Rs,
 						onKeyDown: this.handleKeyDown
 					}, r.a.createElement(qs, {
 						"aria-expanded": n,
@@ -4748,14 +4748,14 @@
 						value: e.search || e.selectedFlairText
 					})), r.a.createElement(Us, null)), r.a.createElement(Ms, {
 						isOpen: n,
-						tooltipId: Ps,
+						tooltipId: Rs,
 						noFocus: !0,
 						container: s
 					}, Object.keys(this.filteredPostFlair).map(e => {
 						const t = a.order.includes(e);
 						return r.a.createElement(Hs, {
 							className: Object(ue.a)({
-								[Rs.a.disabled]: t
+								[Ps.a.disabled]: t
 							}),
 							key: this.filteredPostFlair[e].id,
 							noIcon: !0,
@@ -4771,7 +4771,7 @@
 			var Zs = Ls(Gs),
 				Qs = n("./src/reddit/components/StructuredStyles/Forms/PostFlairWidgetEditor/AddFlair.m.less"),
 				Ys = n.n(Qs);
-			const Js = s.a.wrapped(Pa.a, "ControlRow", Ys.a);
+			const Js = s.a.wrapped(Ra.a, "ControlRow", Ys.a);
 			class Xs extends r.a.Component {
 				constructor(e) {
 					super(e), this.isValidForm = () => !!this.state.selectedFlair, this.handleSelectFlair = e => this.setState({
@@ -4786,7 +4786,7 @@
 						postFlairData: t,
 						widget: n
 					} = this.props;
-					return r.a.createElement(Z.k, null, r.a.createElement(Pn, this.props), r.a.createElement(Js, null, r.a.createElement(Zs, {
+					return r.a.createElement(Z.k, null, r.a.createElement(Rn, this.props), r.a.createElement(Js, null, r.a.createElement(Zs, {
 						handleSelectFlair: this.handleSelectFlair,
 						postFlairData: t,
 						widget: n
@@ -4910,7 +4910,7 @@
 						subredditId: b,
 						widget: f
 					} = this.props, E = g.templates;
-					return r.a.createElement(Z.k, null, r.a.createElement(Pn, this.props), r.a.createElement(Z.h, null, i.fbt._("Widget title", null, {
+					return r.a.createElement(Z.k, null, r.a.createElement(Rn, this.props), r.a.createElement(Z.h, null, i.fbt._("Widget title", null, {
 						hk: "25M9MA"
 					})), r.a.createElement(Z.i, null, r.a.createElement(Kt.c, {
 						placeholder: i.fbt._("Title text", null, {
@@ -5151,7 +5151,7 @@
 						} = this, {
 							widget: t
 						} = this.state;
-						return r.a.createElement(Z.k, null, r.a.createElement(Pn, e), this.hasRules() && r.a.createElement("div", null, r.a.createElement(Z.f, null, r.a.createElement(Z.l, null, r.a.createElement(jn, {
+						return r.a.createElement(Z.k, null, r.a.createElement(Rn, e), this.hasRules() && r.a.createElement("div", null, r.a.createElement(Z.f, null, r.a.createElement(Z.l, null, r.a.createElement(jn, {
 							onChangeWidgetStyles: this.onChangeWidgetStyles,
 							subredditId: e.subredditId,
 							widgetStyles: t.styles
@@ -5218,8 +5218,8 @@
 				Fi = n.n(ji);
 			const Ai = 30,
 				Ni = 1e4,
-				Ri = s.a.wrapped(Kt.i, "Textarea", Fi.a);
-			var Pi = class extends Sa {
+				Pi = s.a.wrapped(Kt.i, "Textarea", Fi.a);
+			var Ri = class extends Sa {
 				constructor() {
 					super(...arguments), this.onTitleChange = e => {
 						this.setWidgetState({
@@ -5246,7 +5246,7 @@
 					} = this, {
 						widget: t
 					} = this.state;
-					return r.a.createElement(Z.k, null, r.a.createElement(Pn, e), r.a.createElement(Z.h, null, i.fbt._("Widget title", null, {
+					return r.a.createElement(Z.k, null, r.a.createElement(Rn, e), r.a.createElement(Z.h, null, i.fbt._("Widget title", null, {
 						hk: "3Ka9sg"
 					})), r.a.createElement(Z.i, null, r.a.createElement(Kt.c, {
 						placeholder: i.fbt._("Widget title", null, {
@@ -5265,7 +5265,7 @@
 						hk: "3p83zo"
 					})), r.a.createElement(Z.f, null, r.a.createElement(Z.h, null, i.fbt._("Text", null, {
 						hk: "1qBGzd"
-					})), r.a.createElement(Ri, {
+					})), r.a.createElement(Pi, {
 						value: t.text,
 						onChange: this.onTextChange
 					}), r.a.createElement(tn.a, {
@@ -5297,7 +5297,7 @@
 				Li = e => {
 					switch (e.kind) {
 						case "textarea":
-							return Pi;
+							return Ri;
 						case "button":
 							return xa;
 						case "subreddit-rules":
@@ -7697,8 +7697,8 @@
 				}, l.a.createElement(n, null))))
 			}
 			var N = n("./src/reddit/controls/SubredditPicker/Picker/SubredditDropdown/EntryContent/index.m.less"),
-				R = n.n(N);
-			const P = y.a.wrapped(k.b, "subredditIcon", R.a);
+				P = n.n(N);
+			const R = y.a.wrapped(k.b, "subredditIcon", P.a);
 
 			function B(e) {
 				const {
@@ -7711,15 +7711,15 @@
 					allowedPostTypes: i
 				} = s;
 				return l.a.createElement("div", {
-					className: Object(o.a)(R.a.container, {
-						[R.a.mHighlight]: t
+					className: Object(o.a)(P.a.container, {
+						[P.a.mHighlight]: t
 					})
 				}, n, l.a.createElement("div", {
-					className: R.a.main
+					className: P.a.main
 				}, l.a.createElement("span", {
-					className: R.a.title
+					className: P.a.title
 				}, a), r && l.a.createElement("span", {
-					className: R.a.secondary
+					className: P.a.secondary
 				}, r)), t && i && l.a.createElement(A, {
 					allowedPostTypes: i
 				}))
@@ -7749,7 +7749,7 @@
 				}, [a.fbt._plural(n, "number")], {
 					hk: "2SvJUX"
 				}) : void 0, i = l.a.createElement(_.a, {
-					className: Object(o.a)(W.a.profileIcon, R.a.subredditIcon)
+					className: Object(o.a)(W.a.profileIcon, P.a.subredditIcon)
 				});
 				return l.a.createElement(B, U({
 					icon: i,
@@ -7783,7 +7783,7 @@
 					_1: "1 member"
 				}, [a.fbt._plural(s, "number")], {
 					hk: "2SvJUX"
-				}) : void 0, d = l.a.createElement(P, {
+				}) : void 0, d = l.a.createElement(R, {
 					className: z.a.icon,
 					iconUrl: n,
 					primaryColor: t,
@@ -8057,10 +8057,10 @@
 				F = n.n(j);
 			const A = D.a.wrapped(T.b, "subredditRoundIcon", F.a),
 				N = D.a.wrapped(O.a, "userIcon", F.a),
-				R = D.a.span("iconEmpty", F.a);
+				P = D.a.span("iconEmpty", F.a);
 
-			function P() {
-				return (P = Object.assign || function(e) {
+			function R() {
+				return (R = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var a in n) Object.prototype.hasOwnProperty.call(n, a) && (e[a] = n[a])
@@ -8083,7 +8083,7 @@
 					value: o,
 					...d
 				} = e;
-				let c = r.a.createElement(R, null);
+				let c = r.a.createElement(P, null);
 				return a ? c = r.a.createElement(w.a, {
 					name: "search",
 					className: F.a.searchIcon
@@ -8091,7 +8091,7 @@
 					className: Object(C.a)(F.a.searchBar, t)
 				}, c, r.a.createElement("div", {
 					className: F.a.inputWrapper
-				}, r.a.createElement("input", P({
+				}, r.a.createElement("input", R({
 					className: F.a.input,
 					ref: i,
 					disabled: n,
@@ -8300,7 +8300,7 @@
 				K = n("./src/reddit/selectors/experiments/index.ts"),
 				G = n("./src/reddit/selectors/experiments/utils.ts");
 			const Z = Object(c.a)(e => Object(H.c)(e, {
-				experimentName: b.ob,
+				experimentName: b.qb,
 				experimentEligibilitySelector: K.e
 			}), G.a);
 			var Q = n("./src/reddit/selectors/subredditAutocomplete.ts"),
@@ -8324,7 +8324,7 @@
 					allowCrosspostableOnly: t,
 					includeUserProfile: n,
 					substring: a.rawString
-				}), e => Object(Y.ib)(e) && Z(e) === b.R.CreateCta, (e, t, n) => {
+				}), e => Object(Y.ib)(e) && Z(e) === b.T.CreateCta, (e, t, n) => {
 					const {
 						suggestedItems: a,
 						fallbackItems: r,
@@ -9141,4 +9141,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/StructuredStyles.4ed96e596df2024f00fb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/StructuredStyles.956e101b521f5eff03d0.js.map
