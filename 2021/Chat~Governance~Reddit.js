@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.eb7ace80121e5019f04f.js
-// Retrieved at 9/13/2021, 2:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.b3c18c44999887c44b07.js
+// Retrieved at 9/13/2021, 2:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -2568,13 +2568,13 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("144813"),
+				buildNumber: r("144814"),
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1631555411"),
+				})("1631556405"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -5052,14 +5052,14 @@
 					}))
 				},
 				z = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c94d47691bd10f50a0cb4be3f7df02eb3174b31d8-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %ca8f577344a575f45f6bf2c85e89f2840e5a2dcb1-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${v.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "94d47691bd10f50a0cb4be3f7df02eb3174b31d8-production",
+						release: "a8f577344a575f45f6bf2c85e89f2840e5a2dcb1-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -5553,7 +5553,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "94d47691bd10f50a0cb4be3f7df02eb3174b31d8-production",
+						releaseClient: "a8f577344a575f45f6bf2c85e89f2840e5a2dcb1-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -14989,17 +14989,17 @@
 			})), i.d(t, "L", (function() {
 				return yr
 			})), i.d(t, "T", (function() {
-				return vr
-			})), i.d(t, "m", (function() {
 				return Er
-			})), i.d(t, "pc", (function() {
+			})), i.d(t, "m", (function() {
 				return Tr
+			})), i.d(t, "pc", (function() {
+				return Sr
 			})), i.d(t, "oe", (function() {
-				return Or
-			})), i.d(t, "Yc", (function() {
 				return Ir
-			})), i.d(t, "pe", (function() {
+			})), i.d(t, "Yc", (function() {
 				return Rr
+			})), i.d(t, "pe", (function() {
+				return Fr
 			}));
 			i("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = i("./node_modules/fbt/lib/FbtPublic.js");
@@ -15140,7 +15140,7 @@
 			}(Rt || (Rt = {}));
 			const Ft = "enabled",
 				Ct = e => e === Rt.Control1 || e === Rt.Control2;
-			var Nt, jt, At, Pt, Dt, xt, Lt, Bt, kt, Mt, Ut, Gt, Vt, qt, Ht, Wt, Kt, $t, zt, Yt, Qt, Jt, Xt, Zt, ei, ti, ii, ni, ri, si, oi, di, ai, li, ui, ci, _i, mi, pi, hi, fi, bi, gi, wi, yi, vi, Ei, Ti, Si, Oi, Ii, Ri, Fi, Ci, Ni, ji, Ai, Pi, Di, xi, Li, Bi, ki, Mi, Ui, Gi, Vi, qi, Hi, Wi, Ki, $i, zi, Yi, Qi, Ji, Xi, Zi, en, tn, nn, rn, sn, on, dn, an, ln, un, cn, _n, mn, pn, hn, fn, bn, gn, wn, yn, vn, En, Tn, Sn, On, In, Rn, Fn, Cn, Nn, jn, An, Pn, Dn, xn, Ln, Bn, kn, Mn, Un, Gn, Vn, qn, Hn, Wn, Kn, $n, zn, Yn, Qn, Jn, Xn, Zn, er, tr, ir, nr, rr, sr, or, dr, ar, lr, ur, cr, _r, mr, pr, hr, fr, br, gr, wr, yr, vr;
+			var Nt, jt, At, Pt, Dt, xt, Lt, Bt, kt, Mt, Ut, Gt, Vt, qt, Ht, Wt, Kt, $t, zt, Yt, Qt, Jt, Xt, Zt, ei, ti, ii, ni, ri, si, oi, di, ai, li, ui, ci, _i, mi, pi, hi, fi, bi, gi, wi, yi, vi, Ei, Ti, Si, Oi, Ii, Ri, Fi, Ci, Ni, ji, Ai, Pi, Di, xi, Li, Bi, ki, Mi, Ui, Gi, Vi, qi, Hi, Wi, Ki, $i, zi, Yi, Qi, Ji, Xi, Zi, en, tn, nn, rn, sn, on, dn, an, ln, un, cn, _n, mn, pn, hn, fn, bn, gn, wn, yn, vn, En, Tn, Sn, On, In, Rn, Fn, Cn, Nn, jn, An, Pn, Dn, xn, Ln, Bn, kn, Mn, Un, Gn, Vn, qn, Hn, Wn, Kn, $n, zn, Yn, Qn, Jn, Xn, Zn, er, tr, ir, nr, rr, sr, or, dr, ar, lr, ur, cr, _r, mr, pr, hr, fr, br, gr, wr, yr, vr, Er;
 			! function(e) {
 				e.Enabled = "enabled"
 			}(Nt || (Nt = {})),
@@ -15598,11 +15598,17 @@
 				e.TwoDayCooldown = "two_day_cooldown", e.FiveDayCooldown = "five_day_cooldown"
 			}(yr || (yr = {})),
 			function(e) {
+				e.Bottom_sheet = "Bottom_sheet", e.Bottom_cell = "Bottom_cell"
+			}(vr || (vr = {})),
+			function(e) {
 				e.CreateCta = "create_cta"
-			}(vr || (vr = {}));
-			const Er = {
+			}(Er || (Er = {}));
+			const Tr = {
 					[et]: [Nt.Enabled],
 					[Ot]: [yr.TwoDayCooldown, yr.FiveDayCooldown],
+					d2x_geo_upsell_tier_0: [vr.Bottom_sheet, vr.Bottom_cell],
+					d2x_geo_upsell_tier_1: [vr.Bottom_sheet, vr.Bottom_cell],
+					d2x_geo_upsell_tier_2: [vr.Bottom_sheet, vr.Bottom_cell],
 					[N]: [Ai.Enabled],
 					[Xe]: [wr.Supporter, wr.Community],
 					[Ze]: [jt.Enabled],
@@ -15743,10 +15749,10 @@
 					[st]: [tr.Enabled],
 					[ot]: [ir.Enabled],
 					[lt]: [rr.Enabled],
-					[It]: [vr.CreateCta]
+					[It]: [Er.CreateCta]
 				},
-				Tr = new Set([E, l, S, B, "guest_d2x_subreddit_subreddit_links_url", X, Z, ie, oe, de, ce, ve, Ne, ke, He, "shreddit_pdp_bucketing", rt, at, ut, ct, _t]),
-				Sr = {
+				Sr = new Set([E, l, S, B, "guest_d2x_subreddit_subreddit_links_url", X, Z, ie, oe, de, ce, ve, Ne, ke, He, "shreddit_pdp_bucketing", rt, at, ut, ct, _t]),
+				Or = {
 					NFL: () => n.fbt._("NFL", null, {
 						hk: "3ktT9l"
 					}),
@@ -15853,10 +15859,10 @@
 						hk: "nSJdn"
 					})
 				},
-				Or = e => e.reduce((e, t, i) => (e[t] = i + 1, e), {}),
-				Ir = Or(["NFL", "Discussion", "Relationships", "Sports", "Gaming", "News", "Beauty", "Health & Fitness", "Learning", "Parenting", "Tech", "Crypto", "Science", "Video Games", "TV", "Popcorn", "Vroom", "Food", "Outdoors", "Fashion", "Books & Writing", "Art & Design", "Nostalgia", "Music", "Travel", "Photography", "Funny", "Wholesome", "Memes", "Aww", "Pics & Gifs", "Mindblowing", "Videos", "Cringe", "Schadenfreude"]),
-				Rr = e => {
-					const t = Sr[e];
+				Ir = e => e.reduce((e, t, i) => (e[t] = i + 1, e), {}),
+				Rr = Ir(["NFL", "Discussion", "Relationships", "Sports", "Gaming", "News", "Beauty", "Health & Fitness", "Learning", "Parenting", "Tech", "Crypto", "Science", "Video Games", "TV", "Popcorn", "Vroom", "Food", "Outdoors", "Fashion", "Books & Writing", "Art & Design", "Nostalgia", "Music", "Travel", "Photography", "Funny", "Wholesome", "Memes", "Aww", "Pics & Gifs", "Mindblowing", "Videos", "Cringe", "Schadenfreude"]),
+				Fr = e => {
+					const t = Or[e];
 					return t && t() || e
 				}
 		},
@@ -40819,4 +40825,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.eb7ace80121e5019f04f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.b3c18c44999887c44b07.js.map
