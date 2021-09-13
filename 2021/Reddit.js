@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.4b7a004dfff1f5411f10.js
-// Retrieved at 9/13/2021, 2:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.5896c91623d17fedb0ae.js
+// Retrieved at 9/13/2021, 2:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -6053,7 +6053,7 @@
 			var Ia = n("./src/reddit/components/HeaderUserActions/index.m.less"),
 				Ta = n.n(Ia);
 			var Aa = e => m.a.createElement(m.a.Fragment, null, m.a.createElement(ia.a, {
-					isActive: !!e.hasUnreadMessages,
+					isActive: e.badgeCount > 0 || e.hasUnreadGroupMessages,
 					unreadCount: e.badgeCount
 				}), m.a.createElement(ps.a, {
 					name: "chat",
@@ -7898,7 +7898,7 @@
 						onClick: Object($r.a)(e.onClickChat)
 					}, m.a.createElement(Aa, {
 						badgeCount: e.badgeCount,
-						hasUnreadMessages: e.hasUnreadMessages
+						hasUnreadGroupMessages: e.hasUnreadChatMessages
 					}))), m.a.createElement(Tr.a, {
 						arrowProps: t.arrowProps,
 						popperProps: t.popperProps,
@@ -8183,7 +8183,7 @@
 					}), M && m.a.createElement(u.Fragment, null, m.a.createElement(tl, {
 						onClickChat: this.onClickChat,
 						badgeCount: t,
-						hasUnreadMessages: a
+						hasUnreadChatMessages: a
 					}), h ? m.a.createElement(ol, {
 						sendNavClickInbox: this.sendNavClickInbox,
 						unreadCount: i,
@@ -19407,4 +19407,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePo~5f1ac562", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit", "Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250", "Governance~ModListing~Reddit~Subreddit", "Chat~Governance~Reddit", "Reddit~StandalonePostPage~reddit-components-MediumPost", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.4b7a004dfff1f5411f10.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.5896c91623d17fedb0ae.js.map

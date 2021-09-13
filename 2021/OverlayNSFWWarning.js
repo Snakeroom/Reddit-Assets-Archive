@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OverlayNSFWWarning.2059fe163c002642c74c.js
-// Retrieved at 9/9/2021, 7:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OverlayNSFWWarning.9285916fe54fa6371532.js
+// Retrieved at 9/13/2021, 2:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OverlayNSFWWarning"], {
 		"./src/chat/components/OverlayNSFWWarning/index.m.less": function(e, t, n) {
@@ -19,28 +19,26 @@
 				s = n("./node_modules/react-redux/es/index.js"),
 				c = n("./src/lib/lessComponent.tsx"),
 				l = n("./src/chat/actions/channel.ts"),
-				i = n("./src/chat/actions/promo/index.ts"),
-				d = n("./src/chat/components/OverlayNav/index.tsx"),
-				u = n("./src/chat/controls/Overlay/index.tsx"),
-				m = n("./src/chat/controls/OverlayControlBar/index.tsx"),
-				h = n("./src/chat/models/Promo/index.ts"),
-				y = n("./src/chat/components/OverlayNSFWWarning/index.m.less"),
-				B = n.n(y);
-			const p = c.a.div("Container", B.a),
-				x = c.a.p("Text", B.a),
-				O = Object(s.b)(null, e => ({
+				i = n("./src/chat/components/OverlayNav/index.tsx"),
+				d = n("./src/chat/controls/Overlay/index.tsx"),
+				u = n("./src/chat/controls/OverlayControlBar/index.tsx"),
+				m = n("./src/chat/components/OverlayNSFWWarning/index.m.less"),
+				h = n.n(m);
+			const y = c.a.div("Container", h.a),
+				B = c.a.p("Text", h.a),
+				p = Object(s.b)(null, e => ({
 					onAccept: t => {
-						e(Object(i.a)(h.b.NSFWWarning)), e(Object(l.y)(t))
+						e(Object(l.y)(t))
 					}
 				}));
-			t.default = O(e => o.a.createElement(u.a, null, o.a.createElement(d.a, {
+			t.default = p(e => o.a.createElement(d.a, null, o.a.createElement(i.a, {
 				channelId: e.channelId,
 				title: a.fbt._("NSFW User", null, {
 					hk: "3W2Bw2"
 				})
-			}), o.a.createElement(p, null, o.a.createElement(x, null, a.fbt._("One or more users in this chat are marked as NSFW (not safe for work), which means they tend to post explicit content elsewhere on Reddit. This doesn't necessarily mean that the content of this chat is explicit.", null, {
+			}), o.a.createElement(y, null, o.a.createElement(B, null, a.fbt._("One or more users in this chat are marked as NSFW (not safe for work), which means they tend to post explicit content elsewhere on Reddit. This doesn't necessarily mean that the content of this chat is explicit.", null, {
 				hk: "4cRpQH"
-			}))), o.a.createElement(m.a, {
+			}))), o.a.createElement(u.a, {
 				primaryButtonText: a.fbt._("Accept", null, {
 					hk: "2ILlth"
 				}),
@@ -121,4 +119,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayNSFWWarning.2059fe163c002642c74c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayNSFWWarning.9285916fe54fa6371532.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OverlayReport.9fbad6e57c03c35c9202.js
-// Retrieved at 9/9/2021, 7:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OverlayReport.5be130476ac2f9afffbf.js
+// Retrieved at 9/13/2021, 2:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OverlayReport"], {
 		"./src/chat/components/OverlayReport/index.tsx": function(e, t, s) {
@@ -51,7 +51,7 @@
 				N = Object(E.a)({
 					user: (e, t) => t.attr === w.a.User ? e.contacts.models[t.attrId] : void 0,
 					message: (e, t) => t.attr === w.a.Invite || t.attr === w.a.Message ? Object(T.b)(e, Number(t.attrId)) : void 0,
-					messageList: e => Object(j.C)(e),
+					messageList: e => Object(j.B)(e),
 					currentUserId: (e, t) => Object(L.a)(e)
 				}),
 				H = Object(l.b)(N, e => ({
@@ -404,4 +404,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayReport.9fbad6e57c03c35c9202.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayReport.5be130476ac2f9afffbf.js.map

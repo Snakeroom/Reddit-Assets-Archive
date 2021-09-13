@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.81a880baba94639bf959.js
-// Retrieved at 9/9/2021, 3:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.1295244aea921338d9bc.js
+// Retrieved at 9/13/2021, 2:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e"], {
 		"./src/lib/addAllowQuarantinedParam/index.ts": function(e, t, s) {
@@ -95,18 +95,14 @@
 						style: c.b.Numbered
 					}
 				}),
-				f = (e, t, s) => ({
-					[c.c.DirectMessages]: {
+				f = (e, t) => ({
+					[c.c.ChatUnreadMessages]: {
 						count: e,
 						style: c.b.Numbered
 					},
-					[c.c.ChatRooms]: {
-						count: t,
-						style: c.b.Numbered
-					},
-					[c.c.ChatRoomMentions]: {
-						count: s,
-						style: c.b.Numbered
+					[c.c.ChatHasNewMessages]: {
+						isShowing: t,
+						style: c.b.Filled
 					}
 				}),
 				O = () => async (e, t, {
@@ -117,7 +113,14 @@
 						const t = await a(e());
 						if (t.ok && t.body) {
 							return function(e) {
-								return e && e.data && e.data.badgeIndicators
+								var t;
+								const s = null === (t = null == e ? void 0 : e.data) || void 0 === t ? void 0 : t.badgeIndicators;
+								if (s) return {
+									...s,
+									chatUnreadMessages: {
+										count: (Number(s.chatUnreadMessages.count) || 0) + (Number(s.chatUnacceptedInvites.count) || 0) + (Number(s.chatUnreadMentions.count) || 0)
+									}
+								}
 							}(t.body)
 						}
 					}(s);
@@ -136,54 +139,54 @@
 			s.d(t, "a", (function() {
 				return n
 			})), s.d(t, "c", (function() {
-				return p
+				return f
 			})), s.d(t, "b", (function() {
-				return _
+				return E
 			})), s.d(t, "d", (function() {
-				return T
+				return P
 			}));
 			var n, r = s("./src/lib/constants/index.ts"),
 				i = s("./src/lib/makeActionCreator/index.ts"),
-				o = s("./src/chat/endpoints/sendbird/index.ts"),
-				d = s("./src/reddit/actions/tabBadging.ts"),
-				a = s("./src/reddit/selectors/chat.ts"),
-				c = s("./src/reddit/selectors/user.ts");
+				o = s("./src/chat/actions/message/unreadCount.ts"),
+				d = s("./src/chat/endpoints/sendbird/index.ts"),
+				a = s("./src/reddit/actions/tabBadging.ts"),
+				c = s("./src/reddit/selectors/chat.ts"),
+				u = s("./src/reddit/selectors/user.ts");
 			! function(e) {
 				e.SYNC = "UNREAD_COUNT__SYNC", e.REQUEST_FAILED = "UNREAD_COUNT__REQUEST_FAILED", e.REQUEST_PENDING = "UNREAD_COUNT__REQUEST_PENDING", e.REQUEST_SUCCESS = "UNREAD_COUNT__REQUEST_SUCCESS"
 			}(n || (n = {}));
 			const {
-				SYNC: u,
-				REQUEST_FAILED: l,
-				REQUEST_PENDING: b,
-				REQUEST_SUCCESS: m
-			} = n, p = Object(i.a)(u), f = Object(i.a)(l), O = Object(i.a)(b), _ = Object(i.a)(m);
-			let E;
-			const h = 5 * r.jb,
-				T = () => async (e, t, {
+				SYNC: l,
+				REQUEST_FAILED: b,
+				REQUEST_PENDING: m,
+				REQUEST_SUCCESS: p
+			} = n, f = Object(i.a)(l), O = Object(i.a)(b), _ = Object(i.a)(m), E = Object(i.a)(p);
+			let h;
+			const T = 5 * r.jb,
+				P = () => async (e, t, {
 					apiContext: s
 				}) => {
 					const n = t();
-					if (!Object(c.K)(n) || !Object(a.d)(n)) return clearTimeout(E);
-					E || e((() => async (e, t, {
-						apiContext: s
+					if (!Object(u.K)(n) || !Object(c.d)(n)) return clearTimeout(h);
+					h || e((() => async (e, t, {
+						gqlContext: s
 					}) => {
 						const n = t(),
 							{
 								session: r
 							} = n.user;
-						if (r && Object(c.K)(n) && Object(a.d)(n)) {
-							e(O());
-							const t = await Object(o.g)(s(), r);
-							t && t.ok ? (e(_({
-								basicChannelCount: t.body.unread_count || 0,
-								subredditChannelCount: t.body.subreddit_unread_count || 0
-							})), e(Object(d.d)())) : e(f({
+						if (r && Object(u.K)(n) && Object(c.d)(n)) {
+							e(_());
+							const t = await Object(d.g)(s());
+							t && t.ok && Object(d.j)(t.body) ? (e(E({
+								...Object(o.b)(t.body.data)
+							})), e(Object(a.d)())) : e(O({
 								error: t.error
 							}))
 						}
-					})()), E = setTimeout(() => {
-						e(T())
-					}, h)
+					})()), h = setTimeout(() => {
+						e(P())
+					}, T)
 				}
 		},
 		"./src/reddit/actions/contentControls/constants.ts": function(e, t, s) {
@@ -1823,8 +1826,7 @@
 								inboxCount: c
 							} = e;
 						s !== a && t(Object(o.b)({
-							...r,
-							basicChannelCount: a
+							...r
 						})), c && c !== i && t(Object(d.b)({
 							inboxCount: c
 						})), (s !== a || c && c !== i) && t(g())
@@ -2509,7 +2511,7 @@
 				e.First = "p1", e.Second = "p2"
 			}(n || (n = {})),
 			function(e) {
-				e.ActivityTab = "activityTab", e.ChatTab = "chatTab", e.DirectMessages = "directMessages", e.MessageTab = "messageTab", e.ChatRooms = "chatRooms", e.ChatRoomMentions = "chatRoomMentions"
+				e.ActivityTab = "activityTab", e.ChatTab = "chatTab", e.MessageTab = "messageTab", e.ChatHasNewMessages = "chatHasNewMessages", e.ChatUnreadMessages = "chatUnreadMessages"
 			}(r || (r = {})),
 			function(e) {
 				e.Numbered = "NUMBERED", e.Filled = "FILLED"
@@ -2958,14 +2960,19 @@
 				r = s("./src/reddit/selectors/chat.ts"),
 				i = s("./src/reddit/selectors/experiments/inboxAppBadgingGql.ts");
 			const o = e => e.appBadges.badges,
-				d = Object(n.a)(i.a, o, r.a, (e, t, s) => e ? t && t.directMessages && t.directMessages.count || 0 : s),
+				d = Object(n.a)(i.a, o, r.a, (e, t, s) => {
+					var n;
+					return e ? (null === (n = t.chatUnreadMessages) || void 0 === n ? void 0 : n.count) || 0 : s
+				}),
 				a = Object(n.a)(o, e => e && e.chatRooms && e.chatRooms.count || 0),
 				c = Object(n.a)(o, e => e && e.chatRoomMentions && e.chatRoomMentions.count || 0),
-				u = Object(n.a)(i.a, r.a, d, a, c, (e, t, s, n, r) => {
-					if (e) {
-						return s + n + r > 0
+				u = Object(n.a)(i.a, d, o, r.b, (e, t, s, n) => {
+					var r;
+					if (0 === t) {
+						if (e && (null === (r = s.chatHasNewMessages) || void 0 === r ? void 0 : r.isShowing)) return !0;
+						if (!e && n.hasNewMessages) return !0
 					}
-					return t > 0
+					return !1
 				}),
 				l = Object(n.a)(o, e => e && e.activityTab && e.activityTab.count || 0),
 				b = Object(n.a)(o, e => e && e.messageTab && e.messageTab.count || 0),
@@ -2988,8 +2995,8 @@
 				r = s("./src/reddit/models/ModeratingSubreddits/index.ts"),
 				i = s("./src/reddit/selectors/moderatorPermissions.ts");
 			const o = e => e.chat.unread.count,
-				d = Object(n.a)(o, e => e.basicChannelCount),
-				a = (Object(n.a)(o, e => e.subredditChannelCount), e => !(e.chat.isInited || e.chat.unread.api.pending)),
+				d = Object(n.a)(o, e => e.unreadMessages),
+				a = e => !(e.chat.isInited || e.chat.unread.api.pending),
 				c = (e, t) => {
 					const {
 						chatConfig: s
@@ -3081,7 +3088,7 @@
 				C = Object(n.a)(j, e => e === r.Qc.Enabled)
 		},
 		"./src/redditGQL/operations/BadgeIndicators.json": function(e) {
-			e.exports = JSON.parse('{"id":"712476d48c90"}')
+			e.exports = JSON.parse('{"id":"9d105ce5d71a"}')
 		},
 		"./src/redditGQL/operations/FetchContentControls.json": function(e) {
 			e.exports = JSON.parse('{"id":"90868f8cfd19"}')
@@ -3094,4 +3101,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.81a880baba94639bf959.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.1295244aea921338d9bc.js.map
