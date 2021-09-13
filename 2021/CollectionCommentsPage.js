@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.553751744210073d0920.js
-// Retrieved at 9/9/2021, 3:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.2ee24d8bba068999a7e4.js
+// Retrieved at 9/13/2021, 3:50:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "CommentsPage"], {
 		"./src/lib/makeCollectionCommentsPageKey/index.ts": function(e, t, s) {
@@ -2324,7 +2324,7 @@
 				l = s("./src/lib/classNames/index.ts"),
 				m = s("./src/lib/constants/index.ts"),
 				p = s("./src/lib/lessComponent.tsx"),
-				u = s("./src/reddit/actions/economics/powerups/achievements/index.ts"),
+				u = s("./src/reddit/actions/economics/powerups/flairs/index.ts"),
 				h = s("./src/reddit/actions/comment/index.ts"),
 				b = s("./src/reddit/constants/comments.ts"),
 				g = s("./src/reddit/constants/componentSizes.ts"),
@@ -2988,7 +2988,7 @@
 				Ht = s("./src/reddit/models/Vote/index.ts"),
 				Kt = s("./src/reddit/components/Governance/VaultActionLink/async.ts"),
 				qt = s("./src/reddit/selectors/experiments/presenceIndicator.ts"),
-				Gt = s("./src/reddit/selectors/gold/powerups/achievements.ts"),
+				Gt = s("./src/reddit/selectors/gold/powerups/flairs.ts"),
 				zt = s("./src/reddit/selectors/poll/index.ts"),
 				Yt = s("./src/reddit/selectors/userPrefs.ts"),
 				Qt = s("./src/reddit/selectors/moderatingComments.ts"),
@@ -8741,4 +8741,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.553751744210073d0920.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.2ee24d8bba068999a7e4.js.map

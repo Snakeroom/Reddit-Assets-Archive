@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.443c08639cd27ee2e04f.js
-// Retrieved at 9/9/2021, 3:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.5475d3919c9b3f84888c.js
+// Retrieved at 9/13/2021, 3:50:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, o) {
@@ -1340,7 +1340,7 @@
 				a = o("./src/lib/makeActionCreator/index.ts"),
 				i = o("./src/reddit/actions/economics/helpers/async.ts"),
 				c = o("./src/lib/loadableAction/index.ts");
-			const d = Object(c.a)(() => o.e("AchievementsActions").then(o.bind(null, "./src/reddit/actions/economics/powerups/achievements/index.ts")).then(e => e.getSubredditUserCommentsPowerupsInfoFromCommentCollection));
+			const d = Object(c.a)(() => o.e("AchievementsActions").then(o.bind(null, "./src/reddit/actions/economics/powerups/flairs/index.ts")).then(e => e.getSubredditUserCommentsPowerupsInfoFromCommentCollection));
 			var l = o("./src/reddit/actions/login.ts"),
 				u = o("./src/reddit/actions/modal.ts"),
 				m = o("./src/reddit/actions/presence.ts"),
@@ -4738,4 +4738,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.443c08639cd27ee2e04f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.5475d3919c9b3f84888c.js.map
