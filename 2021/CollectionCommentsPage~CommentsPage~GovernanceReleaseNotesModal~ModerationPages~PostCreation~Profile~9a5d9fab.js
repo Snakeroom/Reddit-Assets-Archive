@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.8b5545a09e847d8ea9e2.js
-// Retrieved at 9/14/2021, 1:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.09dfaae1f468dd09393c.js
+// Retrieved at 9/14/2021, 1:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab"], {
 		"./src/higherOrderComponents/withMux/index.tsx": function(e, t, s) {
@@ -952,6 +952,9 @@
 		},
 		"./src/reddit/components/Media/index.tsx": function(e, t, s) {
 			"use strict";
+			s.d(t, "a", (function() {
+				return ye
+			}));
 			var i = s("./node_modules/core-js/modules/web.dom.iterable.js"),
 				n = s.n(i),
 				o = s("./node_modules/@loadable/component/dist/loadable.esm.js"),
@@ -1396,7 +1399,7 @@
 					switch (h.media.type) {
 						case z.o.RTJSON:
 							const e = Object(H.a)(h, null);
-							if (null === e) return;
+							if (null === e) return null;
 							if (!b && !Object(W.a)(h)) return null;
 							const n = h.isMeta ? Object(K.a)(e, h.id) : e;
 							return l.a.createElement(l.a.Fragment, null, re && l.a.createElement(N.a, {
@@ -1650,7 +1653,7 @@
 					}
 				}
 			}
-			t.a = ge(fe(Object(b.a)(ve)))
+			const ye = ge(fe(Object(b.a)(ve)))
 		},
 		"./src/reddit/components/Poll/async.ts": function(e, t, s) {
 			"use strict";
@@ -2025,4 +2028,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.8b5545a09e847d8ea9e2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.09dfaae1f468dd09393c.js.map
