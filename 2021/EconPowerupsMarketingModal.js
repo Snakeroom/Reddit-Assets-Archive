@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.4fbb47d86420475a31ea.js
-// Retrieved at 9/9/2021, 11:40:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.0e7222a9b1a43c2a6c34.js
+// Retrieved at 9/14/2021, 3:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsMarketingModal"], {
 		"./src/reddit/components/Econ/Common/BenefitTile/index.m.less": function(e, t, s) {
@@ -461,11 +461,7 @@
 					className: T.a.howItWorksDesc
 				}, D._("Get instant access to perks, a hero badge, and a spot on the heroes list", null, {
 					hk: "3uxTLG"
-				})))), o.a.createElement("div", {
-					className: Object(i.a)(T.a.gradient, {
-						[T.a.visible]: O
-					})
-				})), o.a.createElement("div", {
+				}))))), o.a.createElement("div", {
 					className: T.a.footer
 				}, o.a.createElement(w.q, {
 					className: T.a.footerButton,
@@ -473,7 +469,11 @@
 					priority: w.b.Primary
 				}, D._("Powerup This Community", null, {
 					hk: "3gjy90"
-				})))))
+				})), o.a.createElement("div", {
+					className: Object(i.a)(T.a.gradient, {
+						[T.a.visible]: O
+					})
+				}))))
 			}))));
 			t.default = e => o.a.createElement(J, F({}, e, {
 				className: Object(i.a)(e.className, T.a.modal)
@@ -596,4 +596,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.4fbb47d86420475a31ea.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.0e7222a9b1a43c2a6c34.js.map

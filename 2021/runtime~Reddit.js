@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.6a5354496309453d9748.js
-// Retrieved at 9/14/2021, 1:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.6200fd0566b7c2c4f883.js
+// Retrieved at 9/14/2021, 3:40:06 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, i = o[0], s = o[1], c = o[2], l = 0, P = []; l < i.length; l++) n = i[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && P.push(d[n][0]), d[n] = 0;
@@ -637,7 +637,7 @@
 					CryptoHarbergerTaxPurchaseModal: "b640c5e0e27a20e1795d",
 					EconHelperActions: "31d6cfe0d16ae931b73c",
 					EconPowerupsFlairModal: "c667645b57b5e2228f2c",
-					EconPowerupsMarketingModal: "3eb446c50a6a40637627",
+					EconPowerupsMarketingModal: "01a87d66444b1c5ecf10",
 					EmailCollectionBanner: "75d3c7ec0a566b5e6671",
 					EmailVerificationModals: "b58095d93545a8377f71",
 					FramedModal: "e4a627f32d8749ce6735",
@@ -1273,7 +1273,7 @@
 						CryptoHarbergerTaxPurchaseModal: "28532e6128f04a964f5c",
 						EconHelperActions: "dff001a1dbf11a30c40a",
 						EconPowerupsFlairModal: "ddd17576372c4a8f2c3b",
-						EconPowerupsMarketingModal: "4fbb47d86420475a31ea",
+						EconPowerupsMarketingModal: "0e7222a9b1a43c2a6c34",
 						EmailCollectionBanner: "a4b4bbc9e2d4d3c4f77e",
 						EmailVerificationModals: "486a9f01e0d841eaebee",
 						FramedModal: "6993c5a9d6c6e4dc707e",
@@ -1335,7 +1335,7 @@
 						"translations/es_MX-json": "ed3ba54f4e6292a1a127",
 						"translations/fr_FR-json": "7cd10d435e67789ea0ab",
 						"translations/it_IT-json": "3cf1edc17ef2b5660fd1",
-						"translations/pseudo_ext-json": "13949fd6bca073e2763e",
+						"translations/pseudo_ext-json": "a899e35dfe02b35b2458",
 						"translations/pseudo_long-json": "8e2b4e233440b579d02d",
 						"translations/pseudo_short-json": "afeab5bab38693d32d5f",
 						"translations/pt_BR-json": "74307efd47e18de00b9b",
@@ -1585,4 +1585,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.6a5354496309453d9748.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.6200fd0566b7c2c4f883.js.map
