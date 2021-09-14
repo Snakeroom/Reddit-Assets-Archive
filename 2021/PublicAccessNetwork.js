@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.c68d161c17b0fdd9f437.js
-// Retrieved at 9/9/2021, 3:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.490e9b66030f19635a63.js
+// Retrieved at 9/14/2021, 11:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -369,7 +369,7 @@
 						this.doMuxThings()
 					}
 					componentDidUpdate(e) {
-						this.props.muxVideoId !== e.muxVideoId && this.doMuxThings(), this.props.videoRef !== e.videoRef && (this.combinedVideoRefs = this.combineExternalVideoRef(this.props.videoRef))
+						this.props.sessionId !== e.sessionId && this.doMuxThings(), this.props.videoRef !== e.videoRef && (this.combinedVideoRefs = this.combineExternalVideoRef(this.props.videoRef))
 					}
 					componentWillUnmount() {
 						this.handleDashDestroy(), this.handleHlsDestroy()
@@ -497,6 +497,7 @@
 							video_id: t,
 							video_stream_type: s ? R.STREAM_TYPE_LIVE : R.STREAM_TYPE_ON_DEMAND,
 							video_title: o,
+							view_session_id: this.props.sessionId,
 							player_software_version: this.getDashInstanceData() ? h.a.dashVersion : this.getHlsInstanceData() ? h.a.hlsVersion : null
 						}
 					}
@@ -6938,7 +6939,8 @@
 							playMutedOnPrevented: !0,
 							ref: this.onHlsRefChange,
 							url: o,
-							videoRef: this.videoRef
+							videoRef: this.videoRef,
+							sessionId: this.state.sessionId
 						})), n.a.createElement(Zs, {
 							currentStreamId: A,
 							isLoading: j,
@@ -7125,7 +7127,8 @@
 						videoCurrentTime: 0,
 						videoTotalTime: 0,
 						wasVideoPausedWhenOverlayOpened: !1,
-						shouldShowOBSBanner: !1
+						shouldShowOBSBanner: !1,
+						sessionId: ""
 					}, this.previouslyActiveElement = null, this.onAutoPlayPrevented = this.onAutoPlayPrevented.bind(this), this.onClose = this.onClose.bind(this), this.onEnded = this.onEnded.bind(this), this.onNextStream = this.onNextStream.bind(this), this.onPlayerError = this.onPlayerError.bind(this), this.onPreviousStream = this.onPreviousStream.bind(this), this.onReport = this.onReport.bind(this), this.onVideoPlayerLevelLoaded = this.onVideoPlayerLevelLoaded.bind(this), this.onVideoPlayerLoadedData = this.onVideoPlayerLoadedData.bind(this), this.onVideoPlayerLoadingData = this.onVideoPlayerLoadingData.bind(this), this.onChatClick = this.onChatClick.bind(this), this.handleFocusMessageInput = this.handleFocusMessageInput.bind(this), this.onUpvote = this.onUpvote.bind(this), this.onDownvote = this.onDownvote.bind(this), this.onOBSModalDownloadClick = this.onOBSModalDownloadClick.bind(this), this.onOBSModalGuidebookClick = this.onOBSModalGuidebookClick.bind(this), this.onOBSBannerDismissClick = this.onOBSBannerDismissClick.bind(this), this.onOBSBannerLearnMoreClick = this.onOBSBannerLearnMoreClick.bind(this), this.onOBSModalDismissClick = this.onOBSModalDismissClick.bind(this), this.onRpanStudioClick = this.onRpanStudioClick.bind(this), this.onVideoPlayerResourceRemoved = this.onVideoPlayerResourceRemoved.bind(this), this.scheduleSwitchingOnStreamEnded = this.scheduleSwitchingOnStreamEnded.bind(this)
 				}
 				get playbackStats() {
@@ -7398,28 +7401,30 @@
 					e && this.isCurrentStreamWatchable() && (t(e.post.id).then(e => this.unsubscribeStats = e), s(e.post.id).then(e => this.unsubscribeHeartbeat = e))
 				}
 				updateVideoSession(e, t) {
-					var s;
+					var s, o;
 					const {
-						video: o
+						video: n
 					} = this;
-					if (!o) return;
-					const n = this.getOrCreateVideoSessionManager(o),
+					if (!n) return;
+					const r = this.getOrCreateVideoSessionManager(n),
 						{
-							currentStream: r
+							currentStream: a
 						} = this.props,
-						a = null == r ? void 0 : r.post.id,
-						i = a !== (null === (s = e.currentStream) || void 0 === s ? void 0 : s.post.id);
-					i && this.setState({
+						i = null == a ? void 0 : a.post.id,
+						d = i !== (null === (s = e.currentStream) || void 0 === s ? void 0 : s.post.id);
+					d && this.setState({
 						isReady: !1
-					}), i && n.endSession();
+					}), d && r.endSession();
 					const {
-						isReady: d
-					} = this.state, {
 						isReady: c
+					} = this.state, {
+						isReady: l
 					} = t;
-					!!a && (!c && d) && n.startSession({
-						id: a
-					})
+					!!i && (!l && c) && (r.startSession({
+						id: i
+					}), this.setState({
+						sessionId: (null === (o = null == r ? void 0 : r.sessionStats) || void 0 === o ? void 0 : o.id) || ""
+					}))
 				}
 				getOrCreateVideoSessionManager(e) {
 					return this.videoSessionManager || (this.videoSessionManager = new E.a(e, {
@@ -7829,4 +7834,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.c68d161c17b0fdd9f437.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.490e9b66030f19635a63.js.map

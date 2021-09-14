@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.b6aa165b7b8aa0799204.js
-// Retrieved at 9/2/2021, 3:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.f1a33656195cd294df80.js
+// Retrieved at 9/14/2021, 11:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["LiveVideoPlayer"], {
 		"./node_modules/lodash/isUndefined.js": function(e, t) {
@@ -854,7 +854,8 @@
 						userPaused: !1,
 						userShowedIntent: !1,
 						volume: e.volumeInFeed,
-						wasRemoved: !1
+						wasRemoved: !1,
+						sessionId: ""
 					}, this.focusVisibleRef = Object(o.createRef)()
 				}
 				get hasPlayableMedia() {
@@ -982,7 +983,8 @@
 						onResourceRemoved: this.handleResourceRemoved,
 						onTimeUpdate: this.handleTimeUpdate,
 						ref: this.handleHlsRefChange,
-						videoRef: this.videoRef
+						videoRef: this.videoRef,
+						sessionId: this.state.sessionId
 					}))
 				}
 				renderAudioControl() {
@@ -1050,15 +1052,17 @@
 					this._unsubscribeHeartbeat && (this._unsubscribeHeartbeat(), delete this._unsubscribeHeartbeat)
 				}
 				updateVideoSession(e, t) {
-					var s, n;
+					var s, n, r, o;
 					const {
-						isPlaying: r,
-						isReady: o
-					} = this.state, {
 						isPlaying: i,
 						isReady: a
-					} = t, c = o && (i && !r);
-					!a && o && r || o && (!i && r) ? null === (s = this.videoSessionManager) || void 0 === s || s.startSession() : c && (null === (n = this.videoSessionManager) || void 0 === n || n.pauseSession())
+					} = this.state, {
+						isPlaying: c,
+						isReady: d
+					} = t, l = a && (c && !i);
+					!d && a && i || a && (!c && i) ? (null === (s = this.videoSessionManager) || void 0 === s || s.startSession(), this.setState({
+						sessionId: (null === (r = null === (n = this.videoSessionManager) || void 0 === n ? void 0 : n.sessionStats) || void 0 === r ? void 0 : r.id) || ""
+					})) : l && (null === (o = this.videoSessionManager) || void 0 === o || o.pauseSession())
 				}
 			}
 			F.contextType = w.a, t.default = R(Object(g.c)(F));
@@ -2111,4 +2115,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer.b6aa165b7b8aa0799204.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer.f1a33656195cd294df80.js.map
