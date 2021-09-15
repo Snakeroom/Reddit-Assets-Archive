@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OverlayChannelInvited.68e71b018d065757243c.js
-// Retrieved at 9/15/2021, 1:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OverlayChannelInvited.3b894fe860fe72dae818.js
+// Retrieved at 9/15/2021, 4:10:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OverlayChannelInvited"], {
 		"./src/chat/components/OverlayChannelInvited/index.m.less": function(e, t, a) {
@@ -100,8 +100,8 @@
 			}) => {
 				const s = t && !!t.isNSFW;
 				return e ? l.a.createElement(l.a.Fragment, null, l.a.createElement("a", {
-					target: i.e.BLANK,
-					rel: i.d,
+					target: i.d.BLANK,
+					rel: i.c,
 					href: `${n.a.redditUrl}/user/${e.name}`
 				}, l.a.createElement(O, {
 					className: A.a.MediaObject
@@ -315,4 +315,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayChannelInvited.68e71b018d065757243c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayChannelInvited.3b894fe860fe72dae818.js.map

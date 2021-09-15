@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/VideoShareModal.30f395c399b448be81d9.js
-// Retrieved at 9/15/2021, 1:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/VideoShareModal.fcdf0cabcdd63215d313.js
+// Retrieved at 9/15/2021, 4:10:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["VideoShareModal"], {
 		"./src/reddit/actions/publicAccessNetwork/votes.ts": function(e, t, s) {
@@ -391,7 +391,7 @@
 					}),
 					iconWrapperClassName: _.a.overflowItemIconWrapper,
 					key: `${L}-rules`,
-					onClick: () => Object(c.f)(d.S, c.e.BLANK)
+					onClick: () => Object(c.e)(d.S, c.d.BLANK)
 				}, r.a.createElement(C.a, {
 					className: _.a.overflowItemIcon
 				})), r.a.createElement(l.b, {
@@ -401,7 +401,7 @@
 					}),
 					iconWrapperClassName: _.a.overflowItemIconWrapper,
 					key: `${L}-community`,
-					onClick: () => Object(c.f)(d.Q, c.e.BLANK)
+					onClick: () => Object(c.e)(d.Q, c.d.BLANK)
 				}, r.a.createElement(h.c, {
 					className: _.a.overflowItemIcon
 				})), r.a.createElement(l.b, {
@@ -796,7 +796,7 @@
 				}),
 				iconWrapperClassName: W.a.overflowItemIconWrapper,
 				key: `${ne}-rules`,
-				onClick: () => Object(i.f)(d.S, i.e.BLANK)
+				onClick: () => Object(i.e)(d.S, i.d.BLANK)
 			}, n.a.createElement(T.a, {
 				className: W.a.overflowItemIcon
 			})), n.a.createElement(C.b, {
@@ -817,7 +817,7 @@
 				iconWrapperClassName: W.a.overflowItemIconWrapper,
 				key: `${ne}-community`,
 				onClick: () => {
-					Object(i.f)(Object(f.a)(m), i.e.BLANK)
+					Object(i.e)(Object(f.a)(m), i.d.BLANK)
 				}
 			}, (e => {
 				const t = e && Object(x.a)({
@@ -1736,4 +1736,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/VideoShareModal.30f395c399b448be81d9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/VideoShareModal.fcdf0cabcdd63215d313.js.map

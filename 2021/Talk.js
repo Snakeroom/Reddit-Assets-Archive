@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Talk.cf3d4b5bd9d9836fc91c.js
-// Retrieved at 9/15/2021, 1:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Talk.2344d3960d327da7adbc.js
+// Retrieved at 9/15/2021, 4:10:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Talk"], {
 		"./src/reddit/components/CollapsibleFAQ/index.m.less": function(e, a, t) {
@@ -359,8 +359,8 @@
 			const _ = "https://forms.gle/U6BS6Q8dCCFy14Gw8",
 				E = "https://reddit.zendesk.com/hc/en-us/articles/4405459143316";
 			var N = t("./src/reddit/selectors/user.ts"),
-				b = t("./src/reddit/pages/Talk/CommunitiesWithTalk.m.less"),
-				f = t.n(b);
+				f = t("./src/reddit/pages/Talk/CommunitiesWithTalk.m.less"),
+				b = t.n(f);
 			const {
 				fbt: v
 			} = t("./node_modules/fbt/lib/FbtPublic.js"), w = [{
@@ -388,53 +388,53 @@
 				subreddits: a,
 				imageName: t
 			}) => i.a.createElement("div", {
-				className: f.a.communityCell
+				className: b.a.communityCell
 			}, i.a.createElement("div", {
-				className: f.a.communityImageBackgroundCircle
+				className: b.a.communityImageBackgroundCircle
 			}, i.a.createElement("img", {
 				alt: `Community group art for category ${e}`,
-				className: f.a.communityImage,
+				className: b.a.communityImage,
 				src: `${l.a.assetPath}/img/talk/${t}.png`
 			})), i.a.createElement("h3", {
-				className: f.a.communityTitle
+				className: b.a.communityTitle
 			}, v._("{topic title}", [v._param("topic title", e)], {
 				hk: "eda29"
 			})), i.a.createElement("h4", {
-				className: f.a.communityDescription
+				className: b.a.communityDescription
 			}, a.map(e => i.a.createElement(h.a, {
-				className: f.a.communityLink,
+				className: b.a.communityLink,
 				key: e,
 				to: e,
-				target: r.e.BLANK,
-				rel: r.d
+				target: r.d.BLANK,
+				rel: r.c
 			}, e)))), C = () => {
 				const e = Object(p.e)(N.X);
 				return i.a.createElement("div", {
-					className: Object(s.a)(f.a.communitiesSection, {
-						[f.a.isNightmodeOn]: e
+					className: Object(s.a)(b.a.communitiesSection, {
+						[b.a.isNightmodeOn]: e
 					})
 				}, i.a.createElement("div", {
-					className: f.a.communitiesContentWrapper
+					className: b.a.communitiesContentWrapper
 				}, i.a.createElement("img", {
 					alt: "Powerups Bolt",
-					className: f.a.communitiesSectionBoltImage,
+					className: b.a.communitiesSectionBoltImage,
 					src: `${l.a.assetPath}/img/talk/communities-hosting.svg`
 				}), i.a.createElement("h2", {
-					className: f.a.communitiesSectionTitle
+					className: b.a.communitiesSectionTitle
 				}, v._("Check out the communities hosting talks", null, {
 					hk: "2eOJeR"
 				})), i.a.createElement(m.b, {
-					className: f.a.ctaButtonContainer,
+					className: b.a.ctaButtonContainer,
 					href: E,
-					rel: r.b,
+					rel: r.a,
 					target: "_blank"
 				}, i.a.createElement(o.h, {
-					className: f.a.ctaButton,
+					className: b.a.ctaButton,
 					priority: o.b.Primary
 				}, v._("See Upcoming Talks", null, {
 					hk: "42fDp9"
 				}))), i.a.createElement("div", {
-					className: Object(s.a)(f.a.communitiesSectionGrid, f.a.contentWrapper)
+					className: Object(s.a)(b.a.communitiesSectionGrid, b.a.contentWrapper)
 				}, w.map(({
 					title: e,
 					subreddits: a,
@@ -469,7 +469,7 @@
 					return O._("Only moderators of select subreddits can host Talks during our pilot (8/2021 - 9/2021). If you want to participate (and you're not already in the pilot), please sign up for our {waitlist signup form link}.", [O._param("waitlist signup form link", i.a.createElement(m.b, {
 						className: F.a.externalLink,
 						href: _,
-						rel: r.b,
+						rel: r.a,
 						target: "_blank"
 					}, "Talk waitlist"))], {
 						hk: "3BjybU"
@@ -485,7 +485,7 @@
 					}), i.a.createElement("br", null), i.a.createElement("br", null), O._("{=Check out all of our upcoming talks here}", [O._param("=Check out all of our upcoming talks here", i.a.createElement(m.b, {
 						className: F.a.externalLink,
 						href: E,
-						rel: r.b,
+						rel: r.a,
 						target: "_blank"
 					}, O._("Check out all of our upcoming talks here", null, {
 						hk: "1QRcwN"
@@ -520,7 +520,7 @@
 					return O._("If you want to participate in a Talk, please sign up for our {waitlist signup form link} and we'll get back to you as soon as possible.", [O._param("waitlist signup form link", i.a.createElement(m.b, {
 						className: F.a.externalLink,
 						href: _,
-						rel: r.b,
+						rel: r.a,
 						target: "_blank"
 					}, "Talk waitlist"))], {
 						hk: "4CD6vE"
@@ -566,7 +566,7 @@
 			})), i.a.createElement(m.b, {
 				className: F.a.ctaButtonContainer,
 				href: _,
-				rel: r.b,
+				rel: r.a,
 				target: "_blank"
 			}, i.a.createElement(o.h, {
 				priority: o.b.Primary,
@@ -679,7 +679,7 @@
 				})), P._("{=During our pilot, only moderators in participating communities can start talks. If you’re not a mod and are interested in hosting a talk,let us know}", [P._param("=During our pilot, only moderators in participating communities can start talks. If you’re not a mod and are interested in hosting a talk,let us know", i.a.createElement("div", null, P._("During our pilot, only moderators in participating communities can start talks. If you’re not a mod and are interested in hosting a talk, {=let us know}.", [P._param("=let us know", i.a.createElement(m.b, {
 					className: W.a.inlineCta,
 					href: _,
-					rel: r.b,
+					rel: r.a,
 					target: "_blank"
 				}, P._("let us know", null, {
 					hk: "2F4ah1"
@@ -690,7 +690,7 @@
 				})), i.a.createElement(m.b, {
 					className: W.a.ctaButtonContainer,
 					href: _,
-					rel: r.b,
+					rel: r.a,
 					target: "_blank"
 				}, i.a.createElement(o.h, {
 					className: W.a.ctaButton,
@@ -723,4 +723,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Talk.cf3d4b5bd9d9836fc91c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Talk.2344d3960d327da7adbc.js.map

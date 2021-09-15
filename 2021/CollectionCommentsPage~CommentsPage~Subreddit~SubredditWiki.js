@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.012fc72511a10381f81a.js
-// Retrieved at 9/15/2021, 1:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.4ed5a3e45287a3c5bfb3.js
+// Retrieved at 9/15/2021, 4:10:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"], {
 		"./src/lib/linkMatchers/index.ts": function(e, t, r) {
@@ -2549,8 +2549,8 @@
 						kind: c.a.InternalLink,
 						priority: c.b.Secondary,
 						className: fe.a.MessageModsButton,
-						rel: ce.d,
-						target: ce.e.BLANK,
+						rel: ce.c,
+						target: ce.d.BLANK,
 						to: `${oe.a.redditUrl}/message/compose?to=/r/${t}`
 					}, s.a.createElement(me.a, {
 						className: fe.a.MessageModsButtonIcon
@@ -2573,8 +2573,8 @@
 						hk: "447TOY"
 					}), " ", s.a.createElement(ge, {
 						href: `${oe.a.redditHelpUrl}/hc/en-us/articles/360049499032`,
-						rel: ce.d,
-						target: ce.e.BLANK
+						rel: ce.c,
+						target: ce.d.BLANK
 					}, N.fbt._("Learn More", null, {
 						hk: "2VxMRZ"
 					}))) : s.a.createElement("div", {
@@ -2583,8 +2583,8 @@
 						hk: "4rFABM"
 					}), " ", s.a.createElement(ge, {
 						href: `${oe.a.redditUrl}/r/redditrequest`,
-						rel: ce.d,
-						target: ce.e.BLANK
+						rel: ce.c,
+						target: ce.d.BLANK
 					}, N.fbt._("r/redditrequest", null, {
 						hk: "32jGtr"
 					})), " ", N.fbt._("to request it.", null, {
@@ -3454,4 +3454,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.012fc72511a10381f81a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.4ed5a3e45287a3c5bfb3.js.map

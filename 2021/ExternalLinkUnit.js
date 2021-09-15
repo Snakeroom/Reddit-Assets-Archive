@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ExternalLinkUnit.3379045f035b84db7de2.js
-// Retrieved at 9/15/2021, 1:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ExternalLinkUnit.30e495931b11d9f1930d.js
+// Retrieved at 9/15/2021, 4:10:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ExternalLinkUnit"], {
 		"./src/chat/components/Message/RichUnit/ExternalLink/ExternalLinkUnit.m.less": function(e, t, a) {
@@ -147,7 +147,7 @@
 					return r.a.createElement("button", {
 						onClick: e => {
 							((e, t) => {
-								e.stopPropagation(), Object(l.f)(t, "_blank")
+								e.stopPropagation(), Object(l.e)(t, "_blank")
 							})(e, n)
 						},
 						className: Object(i.a)(s.a.ExternalLinkUnit, {
@@ -173,4 +173,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ExternalLinkUnit.3379045f035b84db7de2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ExternalLinkUnit.30e495931b11d9f1930d.js.map

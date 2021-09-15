@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.60ba7eb8bb420c8a9586.js
-// Retrieved at 9/15/2021, 1:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.aa70241f246c2d77285a.js
+// Retrieved at 9/15/2021, 4:10:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~ModListing", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -1618,7 +1618,7 @@
 				routes: a
 			}) => {
 				const c = i();
-				Object(s.a)(e, a, c) ? n(Object(o.b)(e)) : t ? Object(r.f)(e, "_blank") : window.location.assign(e)
+				Object(s.a)(e, a, c) ? n(Object(o.b)(e)) : t ? Object(r.e)(e, "_blank") : window.location.assign(e)
 			}
 		},
 		"./src/reddit/components/AwardedListingBanner/index.m.less": function(e, t, n) {
@@ -6514,7 +6514,7 @@
 				return e.outboundUrl && !e.shouldBlur ? o.a.createElement("a", {
 					href: e.outboundUrl,
 					target: "_blank",
-					rel: u.b,
+					rel: u.a,
 					onMouseDown: t => {
 						e.source && e.outboundUrl && e.isSponsored && e.basePixelMetadata && Object(h.c)(t.currentTarget, e.postId, e.basePixelMetadata)
 					},
@@ -6560,7 +6560,7 @@
 							maxWidth: "50%"
 						} : {},
 						target: "_blank",
-						rel: u.d
+						rel: u.c
 					}, T(n, t)), t.isListing && !t.showFull && t.height > g.j && Object(g.J)(t.height, t.width) && o.a.createElement("div", {
 						className: j.a.seeMore
 					}, s.fbt._("see full image", null, {
@@ -7221,7 +7221,7 @@
 						} = Object(h.t)(s, o);
 						if (e && e.outboundUrl) {
 							let t = e.outboundUrl;
-							r && (t = Object(k.a)(s.id, r, t).url), Object(B.a)(s, i), Object(E.f)(t, E.e.BLANK)
+							r && (t = Object(k.a)(s.id, r, t).url), Object(B.a)(s, i), Object(E.e)(t, E.d.BLANK)
 						}
 					} else t.openPost({
 						postOrComment: s,
@@ -7662,7 +7662,7 @@
 						t(Object(l.b)())
 					},
 					href: `${s.a.redditUrl}/powerups`,
-					rel: a.d,
+					rel: a.c,
 					target: "_blank"
 				}, o.a.createElement("div", {
 					className: h.a.powerupsLogo
@@ -16664,4 +16664,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.60ba7eb8bb420c8a9586.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.aa70241f246c2d77285a.js.map

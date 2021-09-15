@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.df2eadb57108908a5d97.js
-// Retrieved at 9/15/2021, 1:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.29cc6a03790d91c71a42.js
+// Retrieved at 9/15/2021, 4:10:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileSnoobuilder", "reddit-components-ContentGate"], {
 		"./assets/snoobuilder/Snoobuilder.json": function(e, t, n) {
@@ -1508,7 +1508,7 @@
 				return e.outboundUrl && !e.shouldBlur ? i.a.createElement("a", {
 					href: e.outboundUrl,
 					target: "_blank",
-					rel: u.b,
+					rel: u.a,
 					onMouseDown: t => {
 						e.source && e.outboundUrl && e.isSponsored && e.basePixelMetadata && Object(b.c)(t.currentTarget, e.postId, e.basePixelMetadata)
 					},
@@ -1554,7 +1554,7 @@
 							maxWidth: "50%"
 						} : {},
 						target: "_blank",
-						rel: u.d
+						rel: u.c
 					}, F(n, t)), t.isListing && !t.showFull && t.height > x.j && Object(x.J)(t.height, t.width) && i.a.createElement("div", {
 						className: j.a.seeMore
 					}, s.fbt._("see full image", null, {
@@ -3895,8 +3895,8 @@
 					return i.a.createElement(E, {
 						key: e.id
 					}, i.a.createElement(k, null, e.url ? i.a.createElement("a", {
-						target: y.e.BLANK,
-						rel: y.d,
+						target: y.d.BLANK,
+						rel: y.c,
 						href: e.url,
 						onClick: () => t((e => t => ({
 							source: "trophy",
@@ -5368,4 +5368,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.df2eadb57108908a5d97.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.29cc6a03790d91c71a42.js.map
