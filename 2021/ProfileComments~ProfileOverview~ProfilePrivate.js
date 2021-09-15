@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.d0b206f9fd59c12c1181.js
-// Retrieved at 9/8/2021, 3:50:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.afea29787724aad030af.js
+// Retrieved at 9/15/2021, 10:20:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments~ProfileOverview~ProfilePrivate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1877,7 +1877,7 @@
 					const s = `click-${e}`;
 					let o = k.get(s);
 					return void 0 === o && (o = (e, s) => {
-						s.isSponsored && t.fireAdPixelsOfType(s, c.a.Click), s.isSponsored && s.source && s.source.outboundUrl ? Object(d.d)(s.source.outboundUrl, d.c.BLANK) : t.openPost({
+						s.isSponsored && t.fireAdPixelsOfType(s, c.a.Click), s.isSponsored && s.source && s.source.outboundUrl ? Object(d.e)(s.source.outboundUrl, d.d.BLANK) : t.openPost({
 							postOrComment: s,
 							clickInfo: Object(b.a)(e)
 						})
@@ -2793,8 +2793,8 @@
 					return r.a.createElement(_, {
 						key: e.id
 					}, r.a.createElement(w, null, e.url ? r.a.createElement("a", {
-						target: y.c.BLANK,
-						rel: y.b,
+						target: y.d.BLANK,
+						rel: y.c,
 						href: e.url,
 						onClick: () => t((e => t => ({
 							source: "trophy",
@@ -3152,4 +3152,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.d0b206f9fd59c12c1181.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.afea29787724aad030af.js.map

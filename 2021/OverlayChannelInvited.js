@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OverlayChannelInvited.efd9ae5f2db5473ccef7.js
-// Retrieved at 9/14/2021, 12:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OverlayChannelInvited.3b894fe860fe72dae818.js
+// Retrieved at 9/15/2021, 10:20:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OverlayChannelInvited"], {
 		"./src/chat/components/OverlayChannelInvited/index.m.less": function(e, t, a) {
@@ -48,14 +48,14 @@
 				h = a("./src/chat/components/OverlayNav/index.tsx"),
 				p = a("./src/chat/components/Scroller/index.tsx"),
 				x = a("./src/lib/lessComponent.tsx"),
-				b = a("./src/chat/controls/MediaObject/index.m.less"),
-				y = a.n(b);
+				y = a("./src/chat/controls/MediaObject/index.m.less"),
+				b = a.n(y);
 			const O = x.a.wrapped(e => {
 				const [t, a, n] = l.a.Children.toArray(e.children);
 				return l.a.createElement("div", {
 					className: e.className
 				}, t, a, n)
-			}, "MediaObject", y.a);
+			}, "MediaObject", b.a);
 			var _ = a("./src/chat/controls/Overlay/index.tsx"),
 				B = a("./src/chat/controls/OverlayControlBar/index.tsx"),
 				v = a("./src/chat/controls/Title/index.tsx"),
@@ -100,8 +100,8 @@
 			}) => {
 				const s = t && !!t.isNSFW;
 				return e ? l.a.createElement(l.a.Fragment, null, l.a.createElement("a", {
-					target: i.c.BLANK,
-					rel: i.b,
+					target: i.d.BLANK,
+					rel: i.c,
 					href: `${n.a.redditUrl}/user/${e.name}`
 				}, l.a.createElement(O, {
 					className: A.a.MediaObject
@@ -166,8 +166,8 @@
 				const i = Object(o.e)(t => Object(C.i)(t, e)),
 					d = Object(o.e)(t => Object(E.d)(t, e)),
 					x = Object(o.e)(t => Object(C.y)(t, e)),
-					b = Object(o.e)(f.g),
-					y = Object(o.e)(f.i),
+					y = Object(o.e)(f.g),
+					b = Object(o.e)(f.i),
 					O = Object(s.useCallback)(() => {
 						n(Object(m.y)(e)), n(Object(u.o)(e))
 					}, [n, e]),
@@ -175,16 +175,16 @@
 						d && (n(Object(m.B)(e, d, !0)), n(Object(u.q)(e)))
 					}, [n, e, d]),
 					k = Object(s.useCallback)(() => {
-						d && (n(Object(m.B)(e, d)), b && n(Object(u.p)()), y && n(Object(u.r)()))
-					}, [n, e, d, b, y]),
+						d && (n(Object(m.B)(e, d)), y && n(Object(u.p)()), b && n(Object(u.r)()))
+					}, [n, e, d, y, b]),
 					N = Object(s.useCallback)(() => {
 						n(Object(m.N)(I.b.INVITED, e))
 					}, [n, e]),
-					j = Object(s.useMemo)(() => b ? M._("Block", null, {
+					j = Object(s.useMemo)(() => y ? M._("Block", null, {
 						hk: "4CA4VX"
 					}) : M._("Mark as spam", null, {
 						hk: "3Iy1wd"
-					}), [b]),
+					}), [y]),
 					g = Object(s.useMemo)(() => (null == i ? void 0 : i.type) === T.a.Direct, [i]),
 					D = Object(s.useMemo)(() => g ? M._("Chat Request", null, {
 						hk: "1sWJM0"
@@ -215,7 +215,7 @@
 					secondaryButtonAction: N
 				}, l.a.createElement(Q, {
 					userName: null === (t = null == i ? void 0 : i.inviter) || void 0 === t ? void 0 : t.name,
-					isQuickActionBlock: b
+					isQuickActionBlock: y
 				})) : l.a.createElement(B.a, {
 					className: A.a.OverlayControlBar,
 					secondaryButtonText: M._("Ignore", null, {
@@ -226,7 +226,7 @@
 						hk: "249yqF"
 					}),
 					primaryButtonAction: O,
-					primaryButtonBlock: b || y,
+					primaryButtonBlock: y || b,
 					primaryButtonBlockText: j,
 					primaryButtonBlockAction: () => c(!0)
 				}, l.a.createElement(L, {
@@ -315,4 +315,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayChannelInvited.efd9ae5f2db5473ccef7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayChannelInvited.3b894fe860fe72dae818.js.map

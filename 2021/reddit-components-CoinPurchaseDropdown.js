@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.b41e56662dc6ed5001ad.js
-// Retrieved at 9/1/2021, 1:20:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.5a29791f98dcab1457e3.js
+// Retrieved at 9/15/2021, 10:20:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CoinPurchaseDropdown"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, r) {
@@ -959,7 +959,7 @@
 					onClickPremiumPackage: (t, r) => r ? e(Object(T.openWithBlob)({
 						packageId: B.b,
 						correlationId: t
-					})) : Object(I.d)("/premium", I.c.BLANK),
+					})) : Object(I.e)("/premium", I.d.BLANK),
 					requestPurchaseCatalog: t => e(Object(N.b)(t))
 				}));
 			class ee extends o.a.Component {
@@ -1483,4 +1483,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.b41e56662dc6ed5001ad.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.5a29791f98dcab1457e3.js.map

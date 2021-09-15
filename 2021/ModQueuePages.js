@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.e283755bc59a1ca4c622.js
-// Retrieved at 9/14/2021, 1:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.58d71c09d4e43744372e.js
+// Retrieved at 9/15/2021, 10:20:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -2540,7 +2540,7 @@
 							maxWidth: "50%"
 						} : {},
 						target: "_blank",
-						rel: m.b
+						rel: m.c
 					}, S(s, t)), t.isListing && !t.showFull && t.height > v.j && Object(v.J)(t.height, t.width) && o.a.createElement("div", {
 						className: O.a.seeMore
 					}, n.fbt._("see full image", null, {
@@ -6222,24 +6222,24 @@
 				redditStyle: !0
 			}, i.a.createElement(B, {
 				href: M.a.redditModHelpUrl,
-				rel: R.b,
-				target: R.c.BLANK
+				rel: R.c,
+				target: R.d.BLANK
 			}, g.fbt._("Mod help center", null, {
 				hk: "1LSJPB"
 			})), i.a.createElement(B, {
 				href: `${M.a.redditUrl}/help/healthycommunities/`,
-				rel: R.b,
-				target: R.c.BLANK
+				rel: R.c,
+				target: R.d.BLANK
 			}, g.fbt._("Moderator guidelines", null, {
 				hk: "15P5n5"
 			})), i.a.createElement(A, {
 				to: "/r/modsupport",
-				rel: R.b,
-				target: R.c.BLANK
+				rel: R.c,
+				target: R.d.BLANK
 			}, "r/modsupport"), i.a.createElement(B, {
 				href: `${M.a.redditHelpUrl}/en/submit-request/rusername`,
-				rel: R.b,
-				target: R.c.BLANK
+				rel: R.c,
+				target: R.d.BLANK
 			}, g.fbt._("Contact Reddit", null, {
 				hk: "43QJTq"
 			})));
@@ -6602,4 +6602,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.e283755bc59a1ca4c622.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.58d71c09d4e43744372e.js.map

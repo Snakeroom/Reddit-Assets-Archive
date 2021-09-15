@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWelcomeMessageModal.7626a906ac6f1cad9001.js
-// Retrieved at 9/14/2021, 1:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWelcomeMessageModal.ce5b5442379c082db3ba.js
+// Retrieved at 9/15/2021, 10:20:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWelcomeMessageModal"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -549,7 +549,7 @@
 							maxWidth: "50%"
 						} : {},
 						target: "_blank",
-						rel: u.b
+						rel: u.c
 					}, M(s, t)), t.isListing && !t.showFull && t.height > g.j && Object(g.J)(t.height, t.width) && i.a.createElement("div", {
 						className: S.a.seeMore
 					}, n.fbt._("see full image", null, {
@@ -2595,4 +2595,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWelcomeMessageModal.7626a906ac6f1cad9001.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWelcomeMessageModal.ce5b5442379c082db3ba.js.map

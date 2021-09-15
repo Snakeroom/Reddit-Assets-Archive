@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.f7da39c62bfa93faf70c.js
-// Retrieved at 9/14/2021, 1:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.aa70241f246c2d77285a.js
+// Retrieved at 9/15/2021, 10:20:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~ModListing", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -1618,7 +1618,7 @@
 				routes: a
 			}) => {
 				const c = i();
-				Object(s.a)(e, a, c) ? n(Object(o.b)(e)) : t ? Object(r.d)(e, "_blank") : window.location.assign(e)
+				Object(s.a)(e, a, c) ? n(Object(o.b)(e)) : t ? Object(r.e)(e, "_blank") : window.location.assign(e)
 			}
 		},
 		"./src/reddit/components/AwardedListingBanner/index.m.less": function(e, t, n) {
@@ -6560,7 +6560,7 @@
 							maxWidth: "50%"
 						} : {},
 						target: "_blank",
-						rel: u.b
+						rel: u.c
 					}, T(n, t)), t.isListing && !t.showFull && t.height > g.j && Object(g.J)(t.height, t.width) && o.a.createElement("div", {
 						className: j.a.seeMore
 					}, s.fbt._("see full image", null, {
@@ -7221,7 +7221,7 @@
 						} = Object(h.t)(s, o);
 						if (e && e.outboundUrl) {
 							let t = e.outboundUrl;
-							r && (t = Object(k.a)(s.id, r, t).url), Object(B.a)(s, i), Object(E.d)(t, E.c.BLANK)
+							r && (t = Object(k.a)(s.id, r, t).url), Object(B.a)(s, i), Object(E.e)(t, E.d.BLANK)
 						}
 					} else t.openPost({
 						postOrComment: s,
@@ -7662,7 +7662,7 @@
 						t(Object(l.b)())
 					},
 					href: `${s.a.redditUrl}/powerups`,
-					rel: a.b,
+					rel: a.c,
 					target: "_blank"
 				}, o.a.createElement("div", {
 					className: h.a.powerupsLogo
@@ -16664,4 +16664,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.f7da39c62bfa93faf70c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.aa70241f246c2d77285a.js.map

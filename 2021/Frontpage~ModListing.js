@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~ModListing.6d7fca0ce6dca100c88c.js
-// Retrieved at 9/9/2021, 3:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~ModListing.ebbe5a469ba16b29d4da.js
+// Retrieved at 9/15/2021, 10:20:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~ModListing"], {
 		"./src/reddit/actions/focusedVerticals/index.ts": function(e, t, s) {
@@ -1547,7 +1547,7 @@
 						} = Object(b.t)(n, o);
 						if (e && e.outboundUrl) {
 							let t = e.outboundUrl;
-							r && (t = Object(I.a)(n.id, r, t).url), Object(R.a)(n, i), Object(S.d)(t, S.c.BLANK)
+							r && (t = Object(I.a)(n.id, r, t).url), Object(R.a)(n, i), Object(S.e)(t, S.d.BLANK)
 						}
 					} else t.openPost({
 						postOrComment: n,
@@ -1988,7 +1988,7 @@
 						t(Object(l.b)())
 					},
 					href: `${n.a.redditUrl}/powerups`,
-					rel: a.b,
+					rel: a.c,
 					target: "_blank"
 				}, o.a.createElement("div", {
 					className: b.a.powerupsLogo
@@ -2577,4 +2577,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing.6d7fca0ce6dca100c88c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing.ebbe5a469ba16b29d4da.js.map

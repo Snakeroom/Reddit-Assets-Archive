@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePosts.9b9e896fcbcc1d2ee79c.js
-// Retrieved at 9/14/2021, 1:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePosts.a4dddd28b5d41ac9d5d2.js
+// Retrieved at 9/15/2021, 10:20:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePosts", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -3433,7 +3433,7 @@
 							maxWidth: "50%"
 						} : {},
 						target: "_blank",
-						rel: u.b
+						rel: u.c
 					}, P(n, t)), t.isListing && !t.showFull && t.height > _.j && Object(_.J)(t.height, t.width) && o.a.createElement("div", {
 						className: O.a.seeMore
 					}, r.fbt._("see full image", null, {
@@ -3821,7 +3821,7 @@
 						} = Object(b.t)(r, o);
 						if (e && e.outboundUrl) {
 							let t = e.outboundUrl;
-							s && (t = Object(N.a)(r.id, s, t).url), Object(F.a)(r, i), Object(y.d)(t, y.c.BLANK)
+							s && (t = Object(N.a)(r.id, s, t).url), Object(F.a)(r, i), Object(y.e)(t, y.d.BLANK)
 						}
 					} else t.openPost({
 						postOrComment: r,
@@ -5924,8 +5924,8 @@
 					return o.a.createElement(w, {
 						key: e.id
 					}, o.a.createElement(E, null, e.url ? o.a.createElement("a", {
-						target: y.c.BLANK,
-						rel: y.b,
+						target: y.d.BLANK,
+						rel: y.c,
 						href: e.url,
 						onClick: () => t((e => t => ({
 							source: "trophy",
@@ -7605,4 +7605,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.9b9e896fcbcc1d2ee79c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.a4dddd28b5d41ac9d5d2.js.map

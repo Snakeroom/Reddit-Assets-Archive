@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.e136e4feecdd2400f186.js
-// Retrieved at 9/14/2021, 1:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.29cc6a03790d91c71a42.js
+// Retrieved at 9/15/2021, 10:20:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileSnoobuilder", "reddit-components-ContentGate"], {
 		"./assets/snoobuilder/Snoobuilder.json": function(e, t, n) {
@@ -1554,7 +1554,7 @@
 							maxWidth: "50%"
 						} : {},
 						target: "_blank",
-						rel: u.b
+						rel: u.c
 					}, F(n, t)), t.isListing && !t.showFull && t.height > x.j && Object(x.J)(t.height, t.width) && i.a.createElement("div", {
 						className: j.a.seeMore
 					}, s.fbt._("see full image", null, {
@@ -3895,8 +3895,8 @@
 					return i.a.createElement(E, {
 						key: e.id
 					}, i.a.createElement(k, null, e.url ? i.a.createElement("a", {
-						target: y.c.BLANK,
-						rel: y.b,
+						target: y.d.BLANK,
+						rel: y.c,
 						href: e.url,
 						onClick: () => t((e => t => ({
 							source: "trophy",
@@ -5368,4 +5368,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.e136e4feecdd2400f186.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.29cc6a03790d91c71a42.js.map

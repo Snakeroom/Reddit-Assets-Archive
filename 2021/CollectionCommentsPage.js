@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.2ee24d8bba068999a7e4.js
-// Retrieved at 9/13/2021, 3:50:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.1a016c6c0dcb542cfcf7.js
+// Retrieved at 9/15/2021, 10:20:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "CommentsPage"], {
 		"./src/lib/makeCollectionCommentsPageKey/index.ts": function(e, t, s) {
@@ -5818,7 +5818,7 @@
 						} = Object(b.t)(o, r);
 						if (e && e.outboundUrl) {
 							let t = e.outboundUrl;
-							n && (t = Object(S.a)(o.id, n, t).url), Object(A.a)(o, i), Object(v.d)(t, v.c.BLANK)
+							n && (t = Object(S.a)(o.id, n, t).url), Object(A.a)(o, i), Object(v.e)(t, v.d.BLANK)
 						}
 					} else t.openPost({
 						postOrComment: o,
@@ -8741,4 +8741,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.2ee24d8bba068999a7e4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.1a016c6c0dcb542cfcf7.js.map

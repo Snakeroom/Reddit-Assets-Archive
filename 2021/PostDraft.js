@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostDraft.69ebf943786afdaa9edb.js
-// Retrieved at 9/14/2021, 1:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostDraft.bfc96b8f7ab17b5e202e.js
+// Retrieved at 9/15/2021, 10:20:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostDraft"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1043,7 +1043,7 @@
 							maxWidth: "50%"
 						} : {},
 						target: "_blank",
-						rel: u.b
+						rel: u.c
 					}, L(n, t)), t.isListing && !t.showFull && t.height > g.j && Object(g.J)(t.height, t.width) && r.a.createElement("div", {
 						className: k.a.seeMore
 					}, s.fbt._("see full image", null, {
@@ -3169,8 +3169,8 @@
 						hk: "qsiiu"
 					})
 				}), c && a.a.createElement(l.a, {
-					target: d.c.BLANK,
-					rel: d.b,
+					target: d.d.BLANK,
+					rel: d.c,
 					isOverlay: !1,
 					to: Object(p.b)(c)
 				}, a.a.createElement(f, {
@@ -4754,4 +4754,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.69ebf943786afdaa9edb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.bfc96b8f7ab17b5e202e.js.map

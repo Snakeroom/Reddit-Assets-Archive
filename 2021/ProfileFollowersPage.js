@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.9763eca514d0db204084.js
-// Retrieved at 9/9/2021, 3:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.2460a4695021bd966e4a.js
+// Retrieved at 9/15/2021, 10:20:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileFollowersPage", "ProfileFollowersAction"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -4359,8 +4359,8 @@
 					return i.a.createElement(w, {
 						key: e.id
 					}, i.a.createElement(I, null, e.url ? i.a.createElement("a", {
-						target: y.c.BLANK,
-						rel: y.b,
+						target: y.d.BLANK,
+						rel: y.c,
 						href: e.url,
 						onClick: () => t((e => t => ({
 							source: "trophy",
@@ -6875,4 +6875,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.9763eca514d0db204084.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.2460a4695021bd966e4a.js.map

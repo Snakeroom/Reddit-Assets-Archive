@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.f038cd6fb9a8a7c66277.js
-// Retrieved at 9/13/2021, 3:50:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.c36ddc15d4b8b557cc6a.js
+// Retrieved at 9/15/2021, 10:20:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, n) {
@@ -3978,7 +3978,7 @@
 				routes: i
 			}) => {
 				const c = a();
-				Object(o.a)(e, i, c) ? n(Object(s.b)(e)) : t ? Object(r.d)(e, "_blank") : window.location.assign(e)
+				Object(o.a)(e, i, c) ? n(Object(s.b)(e)) : t ? Object(r.e)(e, "_blank") : window.location.assign(e)
 			}
 		},
 		"./src/reddit/actions/userFlair/constants.ts": function(e, t, n) {
@@ -9414,8 +9414,8 @@
 						hk: "qsiiu"
 					})
 				}), c && i.a.createElement(l.a, {
-					target: d.c.BLANK,
-					rel: d.b,
+					target: d.d.BLANK,
+					rel: d.c,
 					isOverlay: !1,
 					to: Object(p.b)(c)
 				}, i.a.createElement(f, {
@@ -22963,4 +22963,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.f038cd6fb9a8a7c66277.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.c36ddc15d4b8b557cc6a.js.map

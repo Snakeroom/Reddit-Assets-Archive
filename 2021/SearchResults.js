@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.a018886297be123483e5.js
-// Retrieved at 9/14/2021, 1:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.7b0fcd13934982dbe851.js
+// Retrieved at 9/15/2021, 10:20:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -4272,7 +4272,7 @@
 						} = Object(b.t)(r, a);
 						if (e && e.outboundUrl) {
 							let t = e.outboundUrl;
-							n && (t = Object(N.a)(r.id, n, t).url), Object(F.a)(r, o), Object(g.d)(t, g.c.BLANK)
+							n && (t = Object(N.a)(r.id, n, t).url), Object(F.a)(r, o), Object(g.e)(t, g.d.BLANK)
 						}
 					} else t.openPost({
 						postOrComment: r,
@@ -7083,7 +7083,7 @@
 							post: t,
 							pageLayer: s
 						} = this.props;
-						t && (this.props.sendEvent(Object(Oe.q)(t.id, "search_result_post", this.props.searchOptions, this.props.searchDiscoveryUnit)), t.isSponsored ? (this.props.fireAdPixelsOfType(t, Qe.a.Click), t.source ? t.source.outboundUrl ? Object(qe.d)(t.source.outboundUrl, qe.c.BLANK) : Object(qe.d)(t.source.url, qe.c.BLANK) : Object(qe.d)(t.permalink, qe.c.BLANK)) : this.props.openLightbox({
+						t && (this.props.sendEvent(Object(Oe.q)(t.id, "search_result_post", this.props.searchOptions, this.props.searchDiscoveryUnit)), t.isSponsored ? (this.props.fireAdPixelsOfType(t, Qe.a.Click), t.source ? t.source.outboundUrl ? Object(qe.e)(t.source.outboundUrl, qe.d.BLANK) : Object(qe.e)(t.source.url, qe.d.BLANK) : Object(qe.e)(t.permalink, qe.d.BLANK)) : this.props.openLightbox({
 							pathname: Object(tt.b)(t.permalink),
 							state: Object(k.a)(s)
 						}))
@@ -7536,7 +7536,7 @@
 				} = b || H || {}, ce = (null == ie ? void 0 : ie.type) === D.o.EMBED && (null == ie ? void 0 : ie.provider) === D.v.Twitter, de = (null == ie ? void 0 : ie.type) === D.o.VIDEO || (null == ie ? void 0 : ie.type) === D.o.GIFVIDEO;
 
 				function le(e) {
-					e.stopPropagation(), e.preventDefault(), x(Object(B.q)(H.id, "search_result_post", c, d)), H.isSponsored ? (V(Object(O.z)(H, P.a.Click)), H.source ? H.source.outboundUrl ? Object(y.d)(H.source.outboundUrl, y.c.BLANK) : Object(y.d)(H.source.url, y.c.BLANK) : Object(y.d)(H.permalink, y.c.BLANK)) : V(Object(F.a)({
+					e.stopPropagation(), e.preventDefault(), x(Object(B.q)(H.id, "search_result_post", c, d)), H.isSponsored ? (V(Object(O.z)(H, P.a.Click)), H.source ? H.source.outboundUrl ? Object(y.e)(H.source.outboundUrl, y.d.BLANK) : Object(y.e)(H.source.url, y.d.BLANK) : Object(y.e)(H.permalink, y.d.BLANK)) : V(Object(F.a)({
 						pathname: Object(M.b)(H.permalink),
 						state: Object(R.a)(C)
 					}))
@@ -11562,4 +11562,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.a018886297be123483e5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.7b0fcd13934982dbe851.js.map

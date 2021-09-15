@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostRichUnit.936bb49657cd2ed674b8.js
-// Retrieved at 9/9/2021, 7:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostRichUnit.bf8392c2606f78a002a0.js
+// Retrieved at 9/15/2021, 10:20:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostRichUnit"], {
 		"./src/chat/components/Message/RichUnit/Post/LinkPostRichUnit.m.less": function(t, e, n) {
@@ -82,7 +82,7 @@
 					className: t
 				}, a.a.createElement(h, null, e), a.a.createElement(v, {
 					onClick: t => {
-						t.stopPropagation(), Object(s.d)(n, "_blank")
+						t.stopPropagation(), Object(s.e)(n, "_blank")
 					}
 				}, n)), "LinkPostRichUnit", p.a),
 				g = n("./node_modules/fbt/lib/FbtPublic.js"),
@@ -256,7 +256,7 @@
 					return a.a.createElement("button", {
 						onClick: t => {
 							((t, e) => {
-								t.stopPropagation(), Object(s.d)(e, "_blank")
+								t.stopPropagation(), Object(s.e)(e, "_blank")
 							})(t, m)
 						},
 						className: Object(o.a)(t, {
@@ -315,4 +315,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostRichUnit.936bb49657cd2ed674b8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostRichUnit.bf8392c2606f78a002a0.js.map

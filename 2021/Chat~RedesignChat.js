@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.9796d4aa89d5ab3da2a6.js
-// Retrieved at 9/14/2021, 12:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.afa163a7eebaa4ed357e.js
+// Retrieved at 9/15/2021, 10:20:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -5129,7 +5129,7 @@
 					return r.a.createElement("button", {
 						onClick: e => {
 							((e, t) => {
-								e.stopPropagation(), Object(d.d)(t, "_blank")
+								e.stopPropagation(), Object(d.e)(t, "_blank")
 							})(e, m)
 						},
 						className: Object(o.a)(e, {
@@ -5218,8 +5218,8 @@
 			const ze = I.a.wrapped(He, "TimeStamp", Ve.a),
 				We = I.a.span("UserName", Ve.a);
 			var Ke = I.a.wrapped(e => r.a.createElement("a", {
-				target: d.c.BLANK,
-				rel: d.b,
+				target: d.d.BLANK,
+				rel: d.c,
 				className: e.className,
 				href: `${De.a.redditUrl}/user/${e.nickname}`
 			}, r.a.createElement(m.a, {
@@ -5428,7 +5428,7 @@
 						const t = null === (e = null == p ? void 0 : p.sender) || void 0 === e ? void 0 : e.nickname;
 						if (t) {
 							const e = Object(O.viewProfileUrl)(t);
-							Object(d.d)(e, "_blank")
+							Object(d.e)(e, "_blank")
 						}
 					}),
 					className: yt.a.UserPic,
@@ -5707,7 +5707,7 @@
 					key: r || e,
 					href: e,
 					target: n,
-					rel: o.b,
+					rel: o.c,
 					noUnderline: a === c.d.mention || a === c.d.profile || a === c.d.profileFull || a === c.d.subreddit || a === c.d.subredditFull
 				}, t);
 			t.a = r.a.wrapped(e => {
@@ -5865,18 +5865,18 @@
 					}, c.a.createElement(o.a, {
 						className: m.a.SubredditName,
 						to: `/${u||h}`,
-						target: s.c.BLANK,
-						rel: s.b
+						target: s.d.BLANK,
+						rel: s.c
 					}, u || h), d ? c.a.createElement(o.a, {
 						className: m.a.SubredditTitle,
 						to: `/${u||h}`,
-						target: s.c.BLANK,
-						rel: s.b
+						target: s.d.BLANK,
+						rel: s.c
 					}, d) : c.a.createElement(o.a, {
 						className: m.a.AuthorName,
 						to: `/${p}`,
-						target: s.c.BLANK,
-						rel: s.b
+						target: s.d.BLANK,
+						rel: s.c
 					}, i ? `${a.fbt._("Comment by",null,{hk:"1pyLSv"})} ` : null, p))
 				}, "SubredditInfo", m.a);
 			t.a = i.a.wrapped(e => {
@@ -5893,8 +5893,8 @@
 					className: t
 				}, c.a.createElement(o.a, {
 					to: `/${u||h}`,
-					target: s.c.BLANK,
-					rel: s.b,
+					target: s.d.BLANK,
+					rel: s.c,
 					className: m.a.Link
 				}, l ? c.a.createElement(p, {
 					src: l
@@ -8222,8 +8222,8 @@
 					const t = Object(Le.viewProfileUrl)(e);
 					return s.a.createElement("a", {
 						onClick: e => e.stopPropagation(),
-						target: o.c.BLANK,
-						rel: o.b,
+						target: o.d.BLANK,
+						rel: o.c,
 						className: Re.a.UserProfileTitle,
 						href: t
 					}, e)
@@ -9274,8 +9274,8 @@
 						};
 					return e.href ? r.a.createElement(O, {
 						href: e.href,
-						target: i.c.BLANK,
-						rel: i.b,
+						target: i.d.BLANK,
+						rel: i.c,
 						title: e.title,
 						className: t,
 						tabIndex: 0,
@@ -15452,4 +15452,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.9796d4aa89d5ab3da2a6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.afa163a7eebaa4ed357e.js.map
