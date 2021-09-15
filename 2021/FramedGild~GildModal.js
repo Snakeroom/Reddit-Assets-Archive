@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.544b0fadcf126587d8bc.js
-// Retrieved at 9/15/2021, 10:20:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.35b3e51158417621f388.js
+// Retrieved at 9/15/2021, 1:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, r) {
@@ -2577,7 +2577,7 @@
 							sendEvent: t,
 							thingId: r
 						} = this.props;
-						t(Object(b.clickGetPremiumEvent)(r, e)), Object(d.e)("/premium", d.d.BLANK)
+						t(Object(b.clickGetPremiumEvent)(r, e)), Object(d.f)("/premium", d.e.BLANK)
 					}, this.onGildRequested = () => {
 						const {
 							gildRequested: e,
@@ -2941,7 +2941,7 @@
 				return e.outboundUrl && !e.shouldBlur ? a.a.createElement("a", {
 					href: e.outboundUrl,
 					target: "_blank",
-					rel: u.a,
+					rel: u.b,
 					onMouseDown: t => {
 						e.source && e.outboundUrl && e.isSponsored && e.basePixelMetadata && Object(h.c)(t.currentTarget, e.postId, e.basePixelMetadata)
 					},
@@ -2987,7 +2987,7 @@
 							maxWidth: "50%"
 						} : {},
 						target: "_blank",
-						rel: u.c
+						rel: u.d
 					}, S(r, t)), t.isListing && !t.showFull && t.height > w.j && Object(w.J)(t.height, t.width) && a.a.createElement("div", {
 						className: _.a.seeMore
 					}, s.fbt._("see full image", null, {
@@ -5436,4 +5436,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.544b0fadcf126587d8bc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.35b3e51158417621f388.js.map

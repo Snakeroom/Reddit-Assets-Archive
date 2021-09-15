@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Powerups.59476fc2f2241add0cb8.js
-// Retrieved at 9/15/2021, 10:20:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Powerups.5af44d8f49ed0425aeba.js
+// Retrieved at 9/15/2021, 1:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Powerups"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, a, t) {
@@ -844,8 +844,8 @@
 						className: G.a.community,
 						key: e,
 						to: `r/${e}`,
-						target: D.d.BLANK,
-						rel: D.c,
+						target: D.e.BLANK,
+						rel: D.d,
 						onClick: l
 					}, s.a.createElement("div", {
 						className: G.a.communityIcon,
@@ -1292,4 +1292,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Powerups.59476fc2f2241add0cb8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Powerups.5af44d8f49ed0425aeba.js.map
