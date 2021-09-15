@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.9341351700f56c5d540f.js
-// Retrieved at 9/15/2021, 7:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.0244039dcfddbdeefc97.js
+// Retrieved at 9/15/2021, 7:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~ModListing", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -606,8 +606,9 @@
 				r = n("./src/lib/makeActionCreator/index.ts"),
 				o = n("./src/reddit/actions/notificationSettingsLayout/constants.ts"),
 				i = n("./src/reddit/actions/toaster.ts"),
-				a = n("./src/reddit/endpoints/notificationSettingsLayoutByChannelEndpoint.ts"),
-				c = n("./src/reddit/models/NotificationSettingsLayout/index.ts"),
+				a = n("./src/reddit/endpoints/notificationsSettings/layoutByChannelEndpoint.ts");
+			n("./src/lib/makeGqlRequest/index.ts"), n("./src/redditGQL/operations/UserSubredditsNotificationsLevel.json");
+			var c = n("./src/reddit/models/NotificationSettingsLayout/index.ts"),
 				d = n("./src/reddit/models/Toast/index.ts");
 			const l = Object(r.a)(o.c),
 				u = Object(r.a)(o.b),
@@ -799,22 +800,22 @@
 					...l,
 					variables: t
 				}),
-				m = n("./src/redditGQL/operations/DeleteInboxNotifications.json");
-			n("./src/reddit/endpoints/notificationSettingsLayoutByChannelEndpoint.ts");
-			var p = n("./src/lib/constants/index.ts"),
-				b = n("./src/lib/makeApiRequest/index.ts"),
-				h = n("./src/lib/omitHeaders/index.ts"),
-				f = n("./src/redditGQL/operations/NotificationInboxFeed.json"),
-				x = n("./src/redditGQL/operations/NotificationInboxFeedSlimmed.json"),
-				g = n("./src/reddit/constants/headers.ts"),
-				y = n("./src/reddit/helpers/addRedesignIdentifier/index.ts");
-			var E;
+				m = n("./src/lib/constants/index.ts"),
+				p = n("./src/lib/makeApiRequest/index.ts"),
+				b = n("./src/lib/omitHeaders/index.ts"),
+				h = n("./src/redditGQL/operations/NotificationInboxFeed.json"),
+				f = n("./src/redditGQL/operations/NotificationInboxFeedSlimmed.json"),
+				x = n("./src/reddit/constants/headers.ts"),
+				g = n("./src/reddit/helpers/addRedesignIdentifier/index.ts");
+			var y;
 			! function(e) {
 				e.Activity = "activity", e.Messages = "messages"
-			}(E || (E = {}));
-			var v = n("./src/reddit/endpoints/subreddit/notificationSettings.ts"),
-				_ = n("./src/redditGQL/operations/UpdateInboxActivitySeenState.json");
-			var O = n("./src/reddit/helpers/trackers/inbox.ts"),
+			}(y || (y = {}));
+			var E = n("./src/redditGQL/operations/DeleteInboxNotifications.json");
+			n("./src/reddit/endpoints/notificationsSettings/layoutByChannelEndpoint.ts");
+			var v = n("./src/redditGQL/operations/UpdateInboxActivitySeenState.json");
+			var _ = n("./src/reddit/endpoints/subreddit/notificationSettings.ts"),
+				O = n("./src/reddit/helpers/trackers/inbox.ts"),
 				C = n("./src/reddit/models/Badge/index.ts"),
 				S = n("./src/reddit/models/NotificationInbox/index.ts"),
 				j = n("./src/reddit/models/Toast/index.ts"),
@@ -831,7 +832,7 @@
 						a = Object(w.a)(i);
 					t(k());
 					const l = await ((e, t) => Object(d.a)(e, {
-						...f,
+						...h,
 						variables: t
 					}))(s(), e);
 					if (null === (o = null === (r = l.error) || void 0 === r ? void 0 : r.fields) || void 0 === o ? void 0 : o.length) return t(P({
@@ -849,7 +850,7 @@
 				}) => {
 					var s, r;
 					const o = await (e => Object(d.a)(e, {
-						...x
+						...f
 					}))(n());
 					if (null === (r = null === (s = o.error) || void 0 === s ? void 0 : s.fields) || void 0 === r ? void 0 : r.length) return;
 					const i = o && o.body,
@@ -906,7 +907,7 @@
 				}) => {
 					const o = [e];
 					if ((await ((e, t) => Object(d.a)(e, {
-							...m,
+							...E,
 							variables: {
 								input: t
 							}
@@ -927,7 +928,7 @@
 					gqlContext: o
 				}) => {
 					if (!e) return;
-					(await Object(v.b)(o(), e, {
+					(await Object(_.b)(o(), e, {
 						isSubredditUpdatesInterestingPostEnabled: !0,
 						isUpdateFromSubredditEnabled: !0
 					})).ok ? (t && t(), n(Object(c.f)(Object(c.e)(s.fbt._("Success! Undone hiding notifications from this community.", null, {
@@ -939,7 +940,7 @@
 					gqlContext: o
 				}) => {
 					if (!e) return;
-					(await Object(v.b)(o(), e, {
+					(await Object(_.b)(o(), e, {
 						isSubredditUpdatesInterestingPostEnabled: !1,
 						isUpdateFromSubredditEnabled: !1
 					})).ok ? n((() => {
@@ -956,9 +957,9 @@
 					apiContext: r
 				}) => {
 					if (!e) return;
-					(await ((e, t) => Object(b.a)(Object(h.a)(e, [g.a]), {
-						endpoint: Object(y.a)(`${e.apiUrl}/api/sendreplies`),
-						method: p.ib.POST,
+					(await ((e, t) => Object(p.a)(Object(b.a)(e, [x.a]), {
+						endpoint: Object(g.a)(`${e.apiUrl}/api/sendreplies`),
+						method: m.ib.POST,
 						data: {
 							id: t
 						}
@@ -983,9 +984,9 @@
 				}) => {
 					let i;
 					if (t === S.a.CommentReply || t === S.a.PostReply || t === S.a.PrivateMessage || t === S.a.UsernameMention) {
-						if ((i = await ((e, t) => Object(b.a)(Object(h.a)(e, [g.a]), {
-								endpoint: Object(y.a)(`${e.apiUrl}/api/read_message`),
-								method: p.ib.POST,
+						if ((i = await ((e, t) => Object(p.a)(Object(b.a)(e, [x.a]), {
+								endpoint: Object(g.a)(`${e.apiUrl}/api/read_message`),
+								method: m.ib.POST,
 								data: {
 									id: t
 								}
@@ -1000,9 +1001,9 @@
 								n(Object(o.a)(t)), n(Object(a.e)())
 							}
 						}
-					} else i = await ((e, t) => Object(b.a)(Object(h.a)(e, [g.a]), {
-						endpoint: Object(y.a)(`${e.apiUrl}/api/read_notification`),
-						method: p.ib.POST,
+					} else i = await ((e, t) => Object(p.a)(Object(b.a)(e, [x.a]), {
+						endpoint: Object(g.a)(`${e.apiUrl}/api/read_notification`),
+						method: m.ib.POST,
 						data: {
 							id: t
 						}
@@ -1019,7 +1020,7 @@
 				}) => {
 					const s = (new Date).toLocaleDateString(),
 						r = await ((e, t) => Object(d.a)(e, {
-							..._,
+							...v,
 							variables: {
 								input: t
 							}
@@ -1040,13 +1041,13 @@
 						}
 					} = t(), i = new Date;
 					if (!r || i.getTime() - new Date(r).getTime() > 15e3) {
-						if ((await ((e, t) => Object(b.a)(Object(h.a)(e, [g.a]), {
-								endpoint: Object(y.a)(`${e.apiUrl}/api/read_all_messages`),
-								method: p.ib.POST,
+						if ((await ((e, t) => Object(p.a)(Object(b.a)(e, [x.a]), {
+								endpoint: Object(g.a)(`${e.apiUrl}/api/read_all_messages`),
+								method: m.ib.POST,
 								data: {
 									filter_types: null == t ? void 0 : t.join(",")
 								}
-							}))(n(), [E.Activity, E.Messages])).ok) {
+							}))(n(), [y.Activity, y.Messages])).ok) {
 							const t = Object(o.e)({
 									count: 0,
 									key: C.c.MessageTab
@@ -11888,7 +11889,7 @@
 				mIsVoteable: "_3edNsMs0PNfyQYofMNVhsG"
 			}
 		},
-		"./src/reddit/endpoints/notificationSettingsLayoutByChannelEndpoint.ts": function(e, t, n) {
+		"./src/reddit/endpoints/notificationsSettings/layoutByChannelEndpoint.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
 				return i
@@ -14607,7 +14608,7 @@
 					return s
 				})),
 				function(e) {
-					e.Email = "EMAIL", e.Push = "PUSH"
+					e.Email = "EMAIL", e.Push = "PUSH", e.CommunityAlerts = "COMMUNITY_ALERTS"
 				}(s || (s = {}))
 		},
 		"./src/reddit/models/Product/index.ts": function(e, t, n) {
@@ -16486,7 +16487,10 @@
 		},
 		"./src/redditGQL/operations/UpdateNotificationPreferences.json": function(e) {
 			e.exports = JSON.parse('{"id":"129085be0500"}')
+		},
+		"./src/redditGQL/operations/UserSubredditsNotificationsLevel.json": function(e) {
+			e.exports = JSON.parse('{"id":"8404d1f9e84d"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.9341351700f56c5d540f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.0244039dcfddbdeefc97.js.map
