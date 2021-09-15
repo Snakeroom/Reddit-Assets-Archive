@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.0ac93ffcbd84b761112e.js
-// Retrieved at 9/15/2021, 10:20:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.988a0f0dea3256ffccc3.js
+// Retrieved at 9/15/2021, 10:40:21 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~Subreddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, r) {
@@ -3091,9 +3091,9 @@
 					})
 				}),
 				g = () => e => ({
-					source: "powerups",
+					source: "powerups_supporters_modal",
 					action: "click",
-					noun: "premium",
+					noun: "powerups_cta",
 					...i(e)
 				}),
 				h = () => e => ({
@@ -4540,4 +4540,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.0ac93ffcbd84b761112e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.988a0f0dea3256ffccc3.js.map
