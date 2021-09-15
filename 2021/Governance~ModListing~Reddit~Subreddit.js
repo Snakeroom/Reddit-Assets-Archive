@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.d8f16a1e7284bda03d9f.js
-// Retrieved at 9/15/2021, 1:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.a9059224940ad91f9b8c.js
+// Retrieved at 9/15/2021, 3:10:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~Subreddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, r) {
@@ -4138,7 +4138,7 @@
 				P = (e, t, r, o, n, i) => s => D(s, e, t, r, o, n, i),
 				C = (e, t, r, o) => {
 					var n;
-					return (null === (n = null == o ? void 0 : o.layout) || void 0 === n ? void 0 : n.viewTypeWeb) === c.b.Hero ? 0 : (null == o ? void 0 : o.postOrder) ? o.postOrder.indexOf(t) : r ? l.getRelativePostOrder(e, t, r) : null
+					return (null === (n = null == o ? void 0 : o.layout) || void 0 === n ? void 0 : n.viewTypeWeb) === c.b.Hero ? 0 : (null == o ? void 0 : o.postOrder) ? o.postOrder.indexOf(t) >= 0 ? o.postOrder.indexOf(t) : null : r ? l.getRelativePostOrder(e, t, r) : null
 				},
 				D = (e, t, r, o, c, u, f) => {
 					if (!o) {
@@ -4540,4 +4540,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.d8f16a1e7284bda03d9f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.a9059224940ad91f9b8c.js.map
