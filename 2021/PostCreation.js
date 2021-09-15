@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.d599a648ae7b2837e91c.js
-// Retrieved at 9/15/2021, 6:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.157ae21ecb4c9e1b1cec.js
+// Retrieved at 9/15/2021, 7:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, n) {
@@ -370,6 +370,17 @@
 					hk: "7VjAI"
 				}).toString()
 			}
+		},
+		"./src/realtime/GQLSubscription/async.tsx": function(e, t, n) {
+			"use strict";
+			var o = n("./src/higherOrderComponents/makeAsync.tsx"),
+				r = n("./src/lib/loadWithRetries/index.ts");
+			const s = Object(o.a)({
+				ErrorComponent: () => null,
+				LoadingComponent: () => null,
+				getComponent: () => Object(r.a)(() => Promise.all([n.e("vendors~RealtimeGQLSubscriptionAsync"), n.e("RealtimeGQLSubscriptionAsync")]).then(n.bind(null, "./src/realtime/GQLSubscription/index.tsx"))).then(e => e.default)
+			});
+			t.a = s
 		},
 		"./src/reddit/actions/comment/authoring.ts": function(e, t, n) {
 			"use strict";
@@ -22974,4 +22985,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.d599a648ae7b2837e91c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.157ae21ecb4c9e1b1cec.js.map

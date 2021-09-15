@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.3061cebf16ded79d3569.js
-// Retrieved at 9/15/2021, 6:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.df1ba0a52ef7558ca7a8.js
+// Retrieved at 9/15/2021, 7:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -54,13 +54,13 @@
 					experimentEligibilitySelector: m.a,
 					experimentName: u.ad
 				});
-				return Object(u.re)(t) ? void 0 : t
+				return Object(u.te)(t) ? void 0 : t
 			}, e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
 					experimentName: u.bd
 				});
-				return Object(u.re)(t) ? void 0 : t
+				return Object(u.te)(t) ? void 0 : t
 			}, (e, t) => e === u.cd.Enabled && t === u.cd.Enabled);
 			var h = n("./src/config.ts");
 			var b = n("./src/reddit/selectors/user.ts");
@@ -297,6 +297,17 @@
 				return (...r) => (null !== t && r.length === t.length && s()(r, (e, n) => e === t[n]) || (t = r, n = e(...r)), n)
 			}
 		},
+		"./src/realtime/GQLSubscription/async.tsx": function(e, t, n) {
+			"use strict";
+			var r = n("./src/higherOrderComponents/makeAsync.tsx"),
+				s = n("./src/lib/loadWithRetries/index.ts");
+			const i = Object(r.a)({
+				ErrorComponent: () => null,
+				LoadingComponent: () => null,
+				getComponent: () => Object(s.a)(() => Promise.all([n.e("vendors~RealtimeGQLSubscriptionAsync"), n.e("RealtimeGQLSubscriptionAsync")]).then(n.bind(null, "./src/realtime/GQLSubscription/index.tsx"))).then(e => e.default)
+			});
+			t.a = i
+		},
 		"./src/reddit/actions/eventPosts/constants.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "c", (function() {
@@ -512,37 +523,31 @@
 		"./src/reddit/components/CountAnimation/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return p
+				return u
 			}));
 			var r = n("./node_modules/react/index.js"),
 				s = n.n(r),
-				i = n("./src/higherOrderComponents/makeAsync.tsx"),
-				o = n("./src/lib/loadWithRetries/index.ts");
-			var a = Object(i.a)({
-					ErrorComponent: () => null,
-					LoadingComponent: () => null,
-					getComponent: () => Object(o.a)(() => Promise.all([n.e("vendors~RealtimeGQLSubscriptionAsync"), n.e("RealtimeGQLSubscriptionAsync")]).then(n.bind(null, "./src/realtime/GQLSubscription/index.tsx"))).then(e => e.default)
-				}),
-				c = n("./src/reddit/hooks/useIntersectionObserver.ts"),
-				d = n("./src/reddit/hooks/usePrevious.ts");
-			const l = e => {
+				i = n("./src/realtime/GQLSubscription/async.tsx"),
+				o = n("./src/reddit/hooks/useIntersectionObserver.ts"),
+				a = n("./src/reddit/hooks/usePrevious.ts");
+			const c = e => {
 				return Math.abs(e).toString().split("").map(e => parseInt(e))
 			};
-			var u = n("./src/reddit/components/CountAnimation/index.m.less"),
-				m = n.n(u);
-			var p;
+			var d = n("./src/reddit/components/CountAnimation/index.m.less"),
+				l = n.n(d);
+			var u;
 			! function(e) {
 				e.Vote = "vote", e.Comment = "comment"
-			}(p || (p = {}));
-			const h = () => 0;
+			}(u || (u = {}));
+			const m = () => 0;
 			t.b = e => {
 				const {
 					countToUpperBound: t,
 					featureName: n,
-					incrementDelta: i,
-					initialDelay: o,
-					initialDisplayCount: u,
-					inViewPortAnimatingCallbackOnce: p,
+					incrementDelta: d,
+					initialDelay: u,
+					initialDisplayCount: p,
+					inViewPortAnimatingCallbackOnce: h,
 					isLoadTestOnly: b,
 					onDataCB: f,
 					postId: g,
@@ -550,17 +555,17 @@
 					queryVariables: v,
 					shouldDisjointAnimation: E,
 					subsequentRecurringDelay: O
-				} = e, [y, C] = Object(r.useState)(!1), [x, S] = Object(r.useState)(!0), [I, T] = Object(r.useState)([]), [w, j] = Object(r.useState)(l(u).reverse()), A = Object(r.useRef)(!1), k = Object(r.useRef)(null), N = Object(r.useRef)(e => {}), P = Object(r.useRef)();
+				} = e, [y, C] = Object(r.useState)(!1), [x, S] = Object(r.useState)(!0), [I, T] = Object(r.useState)([]), [w, j] = Object(r.useState)(c(p).reverse()), A = Object(r.useRef)(!1), k = Object(r.useRef)(null), N = Object(r.useRef)(e => {}), P = Object(r.useRef)();
 				N.current = Object(r.useCallback)(e => {
-					let n = e || i();
+					let n = e || d();
 					const r = [...w].reverse().join("");
 					let s = parseInt(r) + n;
 					s > t && (n = t - parseInt(r), s = t);
-					const o = l(s).reverse();
-					C(!1), T(w), j(o), S(!1), P.current = setTimeout(() => {
+					const i = c(s).reverse();
+					C(!1), T(w), j(i), S(!1), P.current = setTimeout(() => {
 						C(!0)
 					}, 0)
-				}, [t, i, w]);
+				}, [t, d, w]);
 				const D = Object(r.useRef)(() => {}),
 					R = Object(r.useRef)(),
 					L = Object(r.useRef)();
@@ -581,10 +586,10 @@
 							} = e, r = 1 !== n;
 							t ? (F.current = !0, A.current || (A.current = !0, R.current = setTimeout(() => {
 								N.current(), D.current()
-							}, o())), M.current > 0 && (N.current(M.current), M.current = 0)) : r && (F.current = !1)
+							}, u())), M.current > 0 && (N.current(M.current), M.current = 0)) : r && (F.current = !1)
 						})
 					}, []);
-				Object(c.a)(k, U);
+				Object(o.a)(k, U);
 				const [V, H] = Object(r.useState)(!1), G = Object(r.useCallback)(e => {
 					e.forEach(e => {
 						const {
@@ -596,12 +601,12 @@
 				}, []), Y = Object(r.useRef)({
 					rootMargin: "2000px 0px 2000px 0px"
 				});
-				Object(c.a)(k, G, Y.current);
-				const B = Object(d.a)(t);
+				Object(o.a)(k, G, Y.current);
+				const B = Object(a.a)(t);
 				Object(r.useEffect)(() => {
 					if (void 0 !== B && B !== t) {
 						const e = t - B;
-						F.current ? (N.current(e), p && p()) : M.current += e
+						F.current ? (N.current(e), h && h()) : M.current += e
 					}
 					return () => {
 						clearTimeout(R.current), clearTimeout(L.current), clearTimeout(P.current)
@@ -612,7 +617,7 @@
 					q = x || K,
 					z = Object(r.useRef)(((e, t) => `${t}_${e}_count_anim`)(g, n));
 				return s.a.createElement(s.a.Fragment, null, !b && s.a.createElement("div", {
-					className: m.a.countAnimation
+					className: l.a.countAnimation
 				}, w.map((e, t) => {
 					const n = ((e, t) => {
 						let n = Math.abs(e);
@@ -625,7 +630,7 @@
 					})(I[t] || 0, e);
 					return s.a.createElement("span", {
 						"aria-hidden": !0,
-						className: m.a.digitDeltaWrapper,
+						className: l.a.digitDeltaWrapper,
 						key: t,
 						onTransitionEnd: W,
 						style: y && I.length > 0 && !x ? {
@@ -635,22 +640,22 @@
 							transform: "translateY(0)"
 						}
 					}, q ? s.a.createElement("span", {
-						className: m.a.digitDelta
+						className: l.a.digitDelta
 					}, e) : n.map((e, t) => {
 						const r = 0 === t || t === n.length - 1;
 						if (!E || E && r) return s.a.createElement("span", {
-							className: m.a.digitDelta,
+							className: l.a.digitDelta,
 							key: t
 						}, e)
 					}).filter(e => !!e))
 				}), s.a.createElement("span", {
-					className: m.a.srOnly,
+					className: l.a.srOnly,
 					role: "screen-reader"
 				}, [...w].reverse().join(""))), s.a.createElement("span", {
 					ref: k
-				}), V && s.a.createElement(a, {
+				}), V && s.a.createElement(i.a, {
 					variables: v,
-					onData: b ? h : f,
+					onData: b ? m : f,
 					queryKey: _,
 					uniqueKey: z.current
 				}))
@@ -1310,7 +1315,7 @@
 				q = n.n(K);
 			const {
 				fbt: z
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), Z = 20, J = l.lc, X = l.lc, Q = Object(c.a)(R.a, {
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), Z = 20, J = l.lc, Q = l.lc, X = Object(c.a)(R.a, {
 				playerName: "RPAN DU Video Player"
 			}), $ = Object(i.b)(() => Object(o.c)({
 				autoplay: A.b,
@@ -1369,7 +1374,7 @@
 							if (Date.now() - e >= J) {
 								Object(O.W)();
 								const e = 30 * l.A,
-									t = Date.now() - e + X;
+									t = Date.now() - e + Q;
 								this.props.onHideRpanUnit(t, {
 									showToast: !1
 								})
@@ -1651,7 +1656,7 @@
 					const n = 1e3 * t.broadcast_time,
 						r = t.post.id,
 						i = t.post.title;
-					return s.a.createElement(Q, {
+					return s.a.createElement(X, {
 						url: t.stream.hls_url,
 						autoplay: e,
 						controls: !1,
@@ -3678,4 +3683,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.3061cebf16ded79d3569.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.df1ba0a52ef7558ca7a8.js.map

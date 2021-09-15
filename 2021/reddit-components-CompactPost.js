@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.cffde2b99e4aa2621d1d.js
-// Retrieved at 9/15/2021, 6:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.7b416bc3d7cd7042c846.js
+// Retrieved at 9/15/2021, 7:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CompactPost", "Reddit~StandalonePostPage~reddit-components-MediumPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -571,6 +571,17 @@
 					hk: "7VjAI"
 				}).toString()
 			}
+		},
+		"./src/realtime/GQLSubscription/async.tsx": function(e, t, n) {
+			"use strict";
+			var s = n("./src/higherOrderComponents/makeAsync.tsx"),
+				r = n("./src/lib/loadWithRetries/index.ts");
+			const o = Object(s.a)({
+				ErrorComponent: () => null,
+				LoadingComponent: () => null,
+				getComponent: () => Object(r.a)(() => Promise.all([n.e("vendors~RealtimeGQLSubscriptionAsync"), n.e("RealtimeGQLSubscriptionAsync")]).then(n.bind(null, "./src/realtime/GQLSubscription/index.tsx"))).then(e => e.default)
+			});
+			t.a = o
 		},
 		"./src/reddit/actions/economics/paymentSystems/constants.ts": function(e, t, n) {
 			"use strict";
@@ -1588,8 +1599,8 @@
 				H = n("./src/reddit/components/PostMedia/index.tsx"),
 				z = n("./src/reddit/components/PostModModeDropdown/index.tsx"),
 				q = n("./src/reddit/components/PostOverflowMenu/index.tsx"),
-				K = n("./src/reddit/components/PostTitle/index.tsx"),
-				Q = n("./src/reddit/components/PostTopMeta/index.tsx"),
+				Q = n("./src/reddit/components/PostTitle/index.tsx"),
+				K = n("./src/reddit/components/PostTopMeta/index.tsx"),
 				Z = n("./src/reddit/components/PublicAccessNetwork/LiveVideoPlayer/videoContext.tsx"),
 				X = n("./src/reddit/components/RestrictedFlatlistButton/index.tsx"),
 				J = n("./src/reddit/components/SponsoredLabel/index.tsx"),
@@ -1778,13 +1789,13 @@
 					}), r.a.createElement("div", {
 						className: ve.a.topLine,
 						"data-click-id": "body"
-					}, r.a.createElement(K.c, {
+					}, r.a.createElement(Q.c, {
 						post: ue,
 						poll: le,
-						size: K.b.Small,
+						size: Q.b.Small,
 						titleColor: i && i.postTitleColor,
 						isOverlay: !1
-					}), Ie(ue, me), r.a.createElement(Q.d, {
+					}), Ie(ue, me), r.a.createElement(K.d, {
 						className: ve.a.postTopMeta,
 						flairStyleTemplate: i,
 						post: ue,
@@ -1797,7 +1808,7 @@
 						post: ue
 					}), r.a.createElement(j.a, {
 						thing: ue,
-						tooltipType: g ? Q.c.Lightbox : void 0
+						tooltipType: g ? K.c.Lightbox : void 0
 					})), Ve && !Ye && r.a.createElement("div", null, r.a.createElement(I.a, {
 						className: ve.a.liveDiscussionIcon,
 						isMod: Ne,
@@ -1936,7 +1947,7 @@
 					key: "label"
 				}), r.a.createElement(oe.c, {
 					key: "separator"
-				})], !e.isSponsored && r.a.createElement(oe.a, null, " Posted by "), r.a.createElement(Q.b, {
+				})], !e.isSponsored && r.a.createElement(oe.a, null, " Posted by "), r.a.createElement(K.b, {
 					post: e
 				}));
 			t.default = Object(se.b)(r.a.memo((function(e) {
@@ -1978,37 +1989,31 @@
 		"./src/reddit/components/CountAnimation/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return p
+				return u
 			}));
 			var s = n("./node_modules/react/index.js"),
 				r = n.n(s),
-				o = n("./src/higherOrderComponents/makeAsync.tsx"),
-				a = n("./src/lib/loadWithRetries/index.ts");
-			var i = Object(o.a)({
-					ErrorComponent: () => null,
-					LoadingComponent: () => null,
-					getComponent: () => Object(a.a)(() => Promise.all([n.e("vendors~RealtimeGQLSubscriptionAsync"), n.e("RealtimeGQLSubscriptionAsync")]).then(n.bind(null, "./src/realtime/GQLSubscription/index.tsx"))).then(e => e.default)
-				}),
-				c = n("./src/reddit/hooks/useIntersectionObserver.ts"),
-				d = n("./src/reddit/hooks/usePrevious.ts");
-			const l = e => {
+				o = n("./src/realtime/GQLSubscription/async.tsx"),
+				a = n("./src/reddit/hooks/useIntersectionObserver.ts"),
+				i = n("./src/reddit/hooks/usePrevious.ts");
+			const c = e => {
 				return Math.abs(e).toString().split("").map(e => parseInt(e))
 			};
-			var u = n("./src/reddit/components/CountAnimation/index.m.less"),
-				m = n.n(u);
-			var p;
+			var d = n("./src/reddit/components/CountAnimation/index.m.less"),
+				l = n.n(d);
+			var u;
 			! function(e) {
 				e.Vote = "vote", e.Comment = "comment"
-			}(p || (p = {}));
-			const b = () => 0;
+			}(u || (u = {}));
+			const m = () => 0;
 			t.b = e => {
 				const {
 					countToUpperBound: t,
 					featureName: n,
-					incrementDelta: o,
-					initialDelay: a,
-					initialDisplayCount: u,
-					inViewPortAnimatingCallbackOnce: p,
+					incrementDelta: d,
+					initialDelay: u,
+					initialDisplayCount: p,
+					inViewPortAnimatingCallbackOnce: b,
 					isLoadTestOnly: f,
 					onDataCB: _,
 					postId: h,
@@ -2016,17 +2021,17 @@
 					queryVariables: v,
 					shouldDisjointAnimation: O,
 					subsequentRecurringDelay: x
-				} = e, [S, g] = Object(s.useState)(!1), [C, y] = Object(s.useState)(!0), [T, j] = Object(s.useState)([]), [I, w] = Object(s.useState)(l(u).reverse()), k = Object(s.useRef)(!1), A = Object(s.useRef)(null), P = Object(s.useRef)(e => {}), N = Object(s.useRef)();
+				} = e, [S, g] = Object(s.useState)(!1), [C, y] = Object(s.useState)(!0), [T, j] = Object(s.useState)([]), [I, w] = Object(s.useState)(c(p).reverse()), k = Object(s.useRef)(!1), A = Object(s.useRef)(null), P = Object(s.useRef)(e => {}), N = Object(s.useRef)();
 				P.current = Object(s.useCallback)(e => {
-					let n = e || o();
+					let n = e || d();
 					const s = [...I].reverse().join("");
 					let r = parseInt(s) + n;
 					r > t && (n = t - parseInt(s), r = t);
-					const a = l(r).reverse();
-					g(!1), j(I), w(a), y(!1), N.current = setTimeout(() => {
+					const o = c(r).reverse();
+					g(!1), j(I), w(o), y(!1), N.current = setTimeout(() => {
 						g(!0)
 					}, 0)
-				}, [t, o, I]);
+				}, [t, d, I]);
 				const R = Object(s.useRef)(() => {}),
 					D = Object(s.useRef)(),
 					L = Object(s.useRef)();
@@ -2047,10 +2052,10 @@
 							} = e, s = 1 !== n;
 							t ? (M.current = !0, k.current || (k.current = !0, D.current = setTimeout(() => {
 								P.current(), R.current()
-							}, a())), F.current > 0 && (P.current(F.current), F.current = 0)) : s && (M.current = !1)
+							}, u())), F.current > 0 && (P.current(F.current), F.current = 0)) : s && (M.current = !1)
 						})
 					}, []);
-				Object(c.a)(A, U);
+				Object(a.a)(A, U);
 				const [B, G] = Object(s.useState)(!1), V = Object(s.useCallback)(e => {
 					e.forEach(e => {
 						const {
@@ -2062,12 +2067,12 @@
 				}, []), Y = Object(s.useRef)({
 					rootMargin: "2000px 0px 2000px 0px"
 				});
-				Object(c.a)(A, V, Y.current);
-				const W = Object(d.a)(t);
+				Object(a.a)(A, V, Y.current);
+				const W = Object(i.a)(t);
 				Object(s.useEffect)(() => {
 					if (void 0 !== W && W !== t) {
 						const e = t - W;
-						M.current ? (P.current(e), p && p()) : F.current += e
+						M.current ? (P.current(e), b && b()) : F.current += e
 					}
 					return () => {
 						clearTimeout(D.current), clearTimeout(L.current), clearTimeout(N.current)
@@ -2076,9 +2081,9 @@
 				const H = Object(s.useCallback)(() => y(!0), [y]),
 					z = 0 === T.length,
 					q = C || z,
-					K = Object(s.useRef)(((e, t) => `${t}_${e}_count_anim`)(h, n));
+					Q = Object(s.useRef)(((e, t) => `${t}_${e}_count_anim`)(h, n));
 				return r.a.createElement(r.a.Fragment, null, !f && r.a.createElement("div", {
-					className: m.a.countAnimation
+					className: l.a.countAnimation
 				}, I.map((e, t) => {
 					const n = ((e, t) => {
 						let n = Math.abs(e);
@@ -2091,7 +2096,7 @@
 					})(T[t] || 0, e);
 					return r.a.createElement("span", {
 						"aria-hidden": !0,
-						className: m.a.digitDeltaWrapper,
+						className: l.a.digitDeltaWrapper,
 						key: t,
 						onTransitionEnd: H,
 						style: S && T.length > 0 && !C ? {
@@ -2101,24 +2106,24 @@
 							transform: "translateY(0)"
 						}
 					}, q ? r.a.createElement("span", {
-						className: m.a.digitDelta
+						className: l.a.digitDelta
 					}, e) : n.map((e, t) => {
 						const s = 0 === t || t === n.length - 1;
 						if (!O || O && s) return r.a.createElement("span", {
-							className: m.a.digitDelta,
+							className: l.a.digitDelta,
 							key: t
 						}, e)
 					}).filter(e => !!e))
 				}), r.a.createElement("span", {
-					className: m.a.srOnly,
+					className: l.a.srOnly,
 					role: "screen-reader"
 				}, [...I].reverse().join(""))), r.a.createElement("span", {
 					ref: A
-				}), B && r.a.createElement(i, {
+				}), B && r.a.createElement(o.a, {
 					variables: v,
-					onData: f ? b : _,
+					onData: f ? m : _,
 					queryKey: E,
-					uniqueKey: K.current
+					uniqueKey: Q.current
 				}))
 			}
 		},
@@ -3265,7 +3270,7 @@
 						[F.a.isVisitedEnabled]: !e
 					})
 				}, s),
-				K = Object(c.c)({
+				Q = Object(c.c)({
 					flairPosition: (e, {
 						pageLayer: t
 					}) => Object(p.q)(e, {
@@ -3273,7 +3278,7 @@
 					}),
 					shouldOpenPostInNewTab: D.db
 				}),
-				Q = e => {
+				K = e => {
 					const {
 						post: t,
 						subreddit: n
@@ -3400,7 +3405,7 @@
 						post: i,
 						sendEvent: this.props.sendEvent,
 						showCategoryTag: !1
-					}), o.a.createElement(Q, W({}, this.props, {
+					}), o.a.createElement(K, W({}, this.props, {
 						leftFlair: c ? m : void 0
 					})), a && o.a.createElement(N, {
 						className: F.a.pollMeta,
@@ -3424,7 +3429,7 @@
 				const t = Object(p.db)(),
 					n = Object(p.w)(t),
 					s = Object(G.a)(),
-					r = Object(a.e)(r => K(r, {
+					r = Object(a.e)(r => Q(r, {
 						...s,
 						...e,
 						isCommentPermalink: n,
@@ -6972,4 +6977,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.cffde2b99e4aa2621d1d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.7b416bc3d7cd7042c846.js.map
