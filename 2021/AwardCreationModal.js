@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AwardCreationModal.253f47f6a44aa384dbf9.js
-// Retrieved at 9/1/2021, 1:20:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AwardCreationModal.e77f7cb282cea620d0a8.js
+// Retrieved at 9/15/2021, 11:30:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AwardCreationModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, a) {
@@ -529,11 +529,11 @@
 				Te = 500,
 				xe = e => {
 					const t = e || 0;
-					return t >= w.f ? t * w.h : t * w.c
+					return t >= w.f ? t * w.i : t * w.c
 				},
 				Se = e => {
 					const t = e || 0;
-					return t >= w.f ? t * w.i : 0
+					return t >= w.f ? t * w.j : 0
 				},
 				Ne = e => e.slice(0, 5),
 				Oe = (e, t) => `${e}T${Ne(t)}:00`,
@@ -2216,4 +2216,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AwardCreationModal.253f47f6a44aa384dbf9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AwardCreationModal.e77f7cb282cea620d0a8.js.map

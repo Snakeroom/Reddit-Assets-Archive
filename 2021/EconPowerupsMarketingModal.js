@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.0e7222a9b1a43c2a6c34.js
-// Retrieved at 9/14/2021, 3:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.23f0e51bce3f2c02619f.js
+// Retrieved at 9/15/2021, 11:30:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsMarketingModal"], {
 		"./src/reddit/components/Econ/Common/BenefitTile/index.m.less": function(e, t, s) {
@@ -234,7 +234,8 @@
 				type: "image/png"
 			}), r.a.createElement("img", {
 				className: c.a.image,
-				src: `${n.a.assetPath}/img/powerups/powerup.png`
+				src: `${n.a.assetPath}/img/powerups/powerup.png`,
+				alt: "Rotating Powerups bolt"
 			})))
 		},
 		"./src/reddit/components/Econ/PowerupsMarketingModal/Benefits/index.m.less": function(e, t, s) {
@@ -331,11 +332,11 @@
 				L = s.n(S);
 			const {
 				fbt: B
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), A = e => e.length % 2 == 1 ? [...e, v.a.More] : e;
-			var R = function(e) {
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), R = e => e.length % 2 == 1 ? [...e, v.a.More] : e;
+			var A = function(e) {
 					const {
 						className: t
-					} = e, s = Object(f.a)(), n = Object(r.e)(y), a = Object(r.e)(k.h), c = A(n);
+					} = e, s = Object(f.a)(), n = Object(r.e)(y), a = Object(r.e)(k.h), c = R(n);
 					return o.a.createElement("div", {
 						className: Object(i.a)(L.a.container, t)
 					}, c.map(e => v.d[e] && o.a.createElement(O.a, {
@@ -417,7 +418,7 @@
 						hk: "2HkBNV"
 					}),
 					subtitle: y
-				}), o.a.createElement(R, {
+				}), o.a.createElement(A, {
 					className: T.a.benefits
 				}), o.a.createElement("span", {
 					className: T.a.modDisclaimer
@@ -596,4 +597,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.0e7222a9b1a43c2a6c34.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.23f0e51bce3f2c02619f.js.map

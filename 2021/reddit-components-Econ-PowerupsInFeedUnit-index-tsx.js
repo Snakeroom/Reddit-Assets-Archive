@@ -1,8 +1,8 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.99fa75ba7b7949490b42.js
-// Retrieved at 9/8/2021, 3:50:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.0c08a05bf1fe8b2896a6.js
+// Retrieved at 9/15/2021, 11:30:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-PowerupsInFeedUnit-index-tsx"], {
-		"./src/reddit/components/Econ/Common/JoinHeroes/index.m.less": function(e, t, s) {
+		"./src/reddit/components/Econ/Common/JoinHeroes/index.m.less": function(e, t, r) {
 			e.exports = {
 				container: "_1tjm5mAw6CbmqAm82cwaAe",
 				containerClickable: "_12ETqwk_rEASwSwC4LTdl2",
@@ -16,131 +16,133 @@
 				progressBar: "u6z9wwkHkYsAHhii9K7g9"
 			}
 		},
-		"./src/reddit/components/Econ/Common/JoinHeroes/index.tsx": function(e, t, s) {
+		"./src/reddit/components/Econ/Common/JoinHeroes/index.tsx": function(e, t, r) {
 			"use strict";
-			s.d(t, "a", (function() {
+			r.d(t, "a", (function() {
 				return _
 			}));
-			var r = s("./node_modules/react/index.js"),
-				o = s.n(r),
-				n = s("./node_modules/react-redux/es/index.js"),
-				a = s("./src/lib/classNames/index.ts"),
-				c = s("./src/reddit/components/PowerupsSidebar/PowerupsCountAndProgress/PowerupsProgressBar.tsx"),
-				i = s("./src/reddit/components/UserIcon/index.tsx"),
-				d = s("./src/reddit/selectors/experiments/econ/index.ts"),
-				l = s("./src/reddit/selectors/gold/powerups/index.ts"),
-				u = s("./src/reddit/selectors/subreddit.ts"),
-				p = s("./src/reddit/components/Econ/Common/JoinHeroes/index.m.less"),
-				m = s.n(p);
+			var s = r("./node_modules/react/index.js"),
+				n = r.n(s),
+				o = r("./node_modules/react-redux/es/index.js"),
+				a = r("./src/lib/classNames/index.ts"),
+				c = r("./src/reddit/components/PowerupsSidebar/PowerupsCountAndProgress/PowerupsProgressBar.tsx"),
+				i = r("./src/reddit/components/UserIcon/index.tsx"),
+				d = r("./src/reddit/selectors/experiments/econ/index.ts"),
+				u = r("./src/reddit/selectors/gold/powerups/index.ts"),
+				l = r("./src/reddit/selectors/subreddit.ts"),
+				m = r("./src/reddit/components/Econ/Common/JoinHeroes/index.m.less"),
+				p = r.n(m);
 			const {
 				fbt: b
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), _ = ({
+			} = r("./node_modules/fbt/lib/FbtPublic.js"), _ = ({
 				className: e,
 				subredditId: t,
-				onClick: s
+				onClick: r
 			}) => {
-				const r = Object(n.e)(e => Object(l.j)(e, {
+				const s = Object(o.e)(e => Object(u.j)(e, {
 						subredditId: t
 					})),
-					p = Object(n.e)(e => Object(u.Q)(e, {
+					m = Object(o.e)(e => Object(l.Q)(e, {
 						subredditId: t
 					})),
-					_ = Object(n.e)(e => Object(l.l)(e, {
+					_ = Object(o.e)(e => Object(u.l)(e, {
 						subredditId: t
 					})),
-					h = Object(n.e)(d.h);
-				if (!r) return null;
+					E = Object(o.e)(d.h);
+				if (!s) return null;
 				const {
-					tier: E,
-					count: x,
-					tiersInfo: w,
-					supportersCount: j
-				} = r, f = w[1].powerupsCost, N = E >= 2, O = (null == _ ? void 0 : _.filter(e => {
+					tier: h,
+					count: f,
+					tiersInfo: N,
+					supportersCount: g
+				} = s, w = N[1].powerupsCost, O = h >= 2, x = (null == _ ? void 0 : _.filter(e => {
 					var t;
 					return !!(null === (t = e.supporterInfo) || void 0 === t ? void 0 : t.displayName)
-				}).slice(0, 2)) || [], g = Math.min(x, f) / f, I = f - x;
-				return o.a.createElement("div", {
-					className: Object(a.a)(m.a.container, e, {
-						[m.a.containerClickable]: !!s
+				}).slice(0, 2)) || [], I = Math.min(f, w) / w, P = w - f;
+				return n.a.createElement("div", {
+					className: Object(a.a)(p.a.container, e, {
+						[p.a.containerClickable]: !!r
 					}),
 					"data-testid": "join-heroes",
-					onClick: () => null == s ? void 0 : s(x)
-				}, o.a.createElement("div", {
-					className: m.a.heroes
-				}, !!O.length && o.a.createElement("div", {
-					className: Object(a.a)(m.a.heroesAvatarContainer, {
-						[m.a.twoAvatarsContainer]: O.length > 1
+					onClick: () => null == r ? void 0 : r(f)
+				}, n.a.createElement("div", {
+					className: p.a.heroes
+				}, !!x.length && n.a.createElement("div", {
+					className: Object(a.a)(p.a.heroesAvatarContainer, {
+						[p.a.twoAvatarsContainer]: x.length > 1
 					})
-				}, O.map(e => {
-					var t, s;
-					return o.a.createElement("div", {
-						className: m.a.heroesAvatar,
+				}, x.map(e => {
+					var t, r;
+					return n.a.createElement("div", {
+						className: p.a.heroesAvatar,
 						key: e.supporterInfo.id
-					}, o.a.createElement(i.a, {
-						className: m.a.heroImage,
+					}, n.a.createElement(i.a, {
+						className: p.a.heroImage,
 						userName: e.supporterInfo.displayName,
 						iconUrl: null === (t = e.supporterInfo.icon) || void 0 === t ? void 0 : t.url,
-						isNSFW: !!(null === (s = e.supporterInfo.profile) || void 0 === s ? void 0 : s.isNsfw)
+						isNSFW: !!(null === (r = e.supporterInfo.profile) || void 0 === r ? void 0 : r.isNsfw)
 					}))
-				})), o.a.createElement("div", {
-					className: m.a.heroesTitle
-				}, (() => h ? j ? b._({
+				})), n.a.createElement("div", {
+					className: p.a.heroesTitle
+				}, (() => E ? g ? b._({
 					"*": "Join {subreddit supporters} supporters",
 					_1: "Join 1 supporter"
-				}, [b._plural(j, "subreddit supporters")], {
+				}, [b._plural(g, "subreddit supporters")], {
 					hk: "20DKnU"
 				}) : b._("Be the first supporter!", null, {
 					hk: "3sBXnW"
-				}) : j ? b._({
+				}) : g ? b._({
 					"*": "Join {subreddit supporters} heroes",
 					_1: "Join 1 hero"
-				}, [b._plural(j, "subreddit supporters")], {
+				}, [b._plural(g, "subreddit supporters")], {
 					hk: "2UisaO"
 				}) : b._("Be the first hero!", null, {
 					hk: "3TGmi4"
-				}))())), o.a.createElement("p", {
-					className: m.a.title
-				}, N ? b._("Community perks are now unlocked!", null, {
+				}))())), n.a.createElement("p", {
+					className: p.a.title
+				}, O ? b._("Community perks are now unlocked!", null, {
 					hk: "3xbTTM"
-				}) : b._("{subredditName} needs {powerups needed} more Powerups to unlock perks for the entire community", [b._param("subredditName", p.displayText), b._param("powerups needed", I)], {
+				}) : b._("{subredditName} needs {powerups needed} more Powerups to unlock perks for the entire community", [b._param("subredditName", m.displayText), b._param("powerups needed", P)], {
 					hk: "4h33rf"
-				})), o.a.createElement(c.a, {
-					className: m.a.progressBar,
-					progress: g
+				})), n.a.createElement(c.a, {
+					className: p.a.progressBar,
+					progress: I
 				}))
 			}
 		},
-		"./src/reddit/components/Econ/Common/PowerupRotatingBolt/index.m.less": function(e, t, s) {
+		"./src/reddit/components/Econ/Common/PowerupRotatingBolt/index.m.less": function(e, t, r) {
 			e.exports = {
 				image: "_2UM9VBeA7xU3ro_DBfudN2"
 			}
 		},
-		"./src/reddit/components/Econ/Common/PowerupRotatingBolt/index.tsx": function(e, t, s) {
+		"./src/reddit/components/Econ/Common/PowerupRotatingBolt/index.tsx": function(e, t, r) {
 			"use strict";
-			s.d(t, "a", (function() {
+			r.d(t, "a", (function() {
 				return i
 			}));
-			var r = s("./src/config.ts"),
-				o = s("./node_modules/react/index.js"),
-				n = s.n(o),
-				a = s("./src/reddit/components/Econ/Common/PowerupRotatingBolt/index.m.less"),
-				c = s.n(a);
-			const i = e => n.a.createElement("div", {
+			var s = r("./src/config.ts"),
+				n = r("./node_modules/react/index.js"),
+				o = r.n(n),
+				a = r("./src/reddit/components/Econ/Common/PowerupRotatingBolt/index.m.less"),
+				c = r.n(a);
+			const i = e => o.a.createElement("div", {
 				className: e.className
-			}, n.a.createElement("picture", null, n.a.createElement("source", {
-				srcSet: `${r.a.assetPath}/img/powerups/rotating-bolt.webp`,
+			}, o.a.createElement("picture", null, o.a.createElement("source", {
+				srcSet: `${s.a.assetPath}/img/powerups/rotating-bolt.webp`,
 				type: "image/webp"
-			}), n.a.createElement("source", {
-				srcSet: `${r.a.assetPath}/img/powerups/powerup.png`,
+			}), o.a.createElement("source", {
+				srcSet: `${s.a.assetPath}/img/powerups/powerup.png`,
 				type: "image/png"
-			}), n.a.createElement("img", {
+			}), o.a.createElement("img", {
 				className: c.a.image,
-				src: `${r.a.assetPath}/img/powerups/powerup.png`
+				src: `${s.a.assetPath}/img/powerups/powerup.png`,
+				alt: "Rotating Powerups bolt"
 			})))
 		},
-		"./src/reddit/components/Econ/PowerupsInFeedUnit/index.m.less": function(e, t, s) {
+		"./src/reddit/components/Econ/PowerupsInFeedUnit/index.m.less": function(e, t, r) {
 			e.exports = {
 				container: "_2MsbtBgPK6VR3Ha93sDNZL",
+				communityGearAvatar: "_2Fopbzloh0zrJwASh3rcrE",
 				powerupsIcon: "TXYXdThpqWivseedZWiEU",
 				title: "gRgV8TUH63xyvVlbzek3Z",
 				subtitle: "_2y2YN16x5c72tGWojYo8EF",
@@ -148,79 +150,147 @@
 				button: "_1gtB9Jx6ouVPNWvnkaDIif"
 			}
 		},
-		"./src/reddit/components/Econ/PowerupsInFeedUnit/index.tsx": function(e, t, s) {
+		"./src/reddit/components/Econ/PowerupsInFeedUnit/index.tsx": function(e, t, r) {
 			"use strict";
-			s.r(t);
-			var r = s("./node_modules/react/index.js"),
-				o = s.n(r),
-				n = s("./node_modules/react-redux/es/index.js"),
-				a = s("./src/lib/classNames/index.ts"),
-				c = s("./src/reddit/actions/gold/powerups.ts"),
-				i = s("./src/reddit/components/Econ/Common/JoinHeroes/index.tsx"),
-				d = s("./src/reddit/components/Econ/Common/PowerupRotatingBolt/index.tsx"),
-				l = s("./src/reddit/components/PowerupsCtaButton/index.tsx"),
-				u = s("./src/reddit/constants/localStorage.ts"),
-				p = s("./src/reddit/helpers/localStorage/index.ts"),
-				m = s("./src/reddit/helpers/trackers/powerups.ts"),
-				b = s("./src/reddit/hooks/useTracking.ts"),
-				_ = s("./src/reddit/selectors/experiments/econ/index.ts"),
-				h = s("./src/reddit/selectors/gold/powerups/index.ts"),
-				E = s("./src/reddit/selectors/subreddit.ts"),
-				x = s("./src/reddit/components/Econ/PowerupsInFeedUnit/index.m.less"),
-				w = s.n(x);
+			r.r(t), r.d(t, "MAX_DISPLAY_COUNT_ON_SUBREDDIT", (function() {
+				return P
+			}));
+			var s, n = r("./src/config.ts"),
+				o = r("./node_modules/react/index.js"),
+				a = r.n(o),
+				c = r("./node_modules/react-redux/es/index.js"),
+				i = r("./src/lib/classNames/index.ts"),
+				d = r("./src/reddit/actions/gold/powerups.ts"),
+				u = r("./src/reddit/components/Econ/Common/JoinHeroes/index.tsx"),
+				l = r("./src/reddit/components/Econ/Common/PowerupRotatingBolt/index.tsx"),
+				m = r("./src/reddit/components/PowerupsCtaButton/index.tsx"),
+				p = r("./src/reddit/constants/localStorage.ts"),
+				b = r("./src/reddit/helpers/localStorage/index.ts"),
+				_ = r("./src/reddit/helpers/trackers/powerups.ts"),
+				E = r("./src/reddit/hooks/useTracking.ts"),
+				h = r("./src/reddit/selectors/experiments/econ/index.ts"),
+				f = r("./src/reddit/constants/gold.ts"),
+				N = r("./src/reddit/constants/posts.ts"),
+				g = r("./src/reddit/selectors/subreddit.ts"),
+				w = r("./src/reddit/selectors/gold/powerups/index.ts");
+			! function(e) {
+				e[e.POWERUPS_DEFAULT = 0] = "POWERUPS_DEFAULT", e[e.POWERUPS_COMMUNITY_GEAR = 1] = "POWERUPS_COMMUNITY_GEAR", e[e.HIDDEN = 2] = "HIDDEN"
+			}(s || (s = {}));
+			var O = r("./src/reddit/components/Econ/PowerupsInFeedUnit/index.m.less"),
+				x = r.n(O);
 			const {
-				fbt: j
-			} = s("./node_modules/fbt/lib/FbtPublic.js");
+				fbt: I
+			} = r("./node_modules/fbt/lib/FbtPublic.js"), P = 2;
 			t.default = ({
 				subredditId: e,
 				className: t
 			}) => {
-				const s = Object(n.d)(),
-					x = Object(b.a)(),
-					f = Object(n.e)(t => Object(E.Q)(t, {
+				const r = Object(c.d)(),
+					O = Object(E.a)(),
+					j = Object(c.e)(t => Object(g.Q)(t, {
 						subredditId: e
 					})),
-					N = Object(n.e)(t => Object(h.u)(t, {
-						subredditId: e
+					v = Object(c.e)(h.h),
+					D = Object(c.e)(e => ((e, {
+						subredditId: t,
+						subredditName: r
+					}) => {
+						const n = Object(w.u)(e, {
+								subredditId: t
+							}),
+							o = Object(g.cb)(e, {
+								identifier: {
+									name: r,
+									type: N.a.SUBREDDIT
+								}
+							});
+						return n ? s.HIDDEN : f.h.includes(t) && o && Object(h.j)(e) ? s.POWERUPS_COMMUNITY_GEAR : s.POWERUPS_DEFAULT
+					})(e, {
+						subredditId: j.id,
+						subredditName: j.name
 					})),
-					O = Object(n.e)(_.h),
-					[g, I] = Object(r.useState)(!1);
-				if (Object(r.useEffect)(() => {
-						I(!N && !(e => {
-							return Object(p.j)(u.b.POWERUPS_INFEED_UNIT_VISIBILITY_STORE, e) >= 2
-						})(e))
-					}, [N, e, I]), Object(r.useEffect)(() => {
-						g && (Object(p.R)(u.b.POWERUPS_INFEED_UNIT_VISIBILITY_STORE, e), x(Object(m.n)()))
-					}, [g, x, e]), !g) return null;
-				const k = O ? j._("Support the whole community", null, {
+					[k, U] = Object(o.useState)(s.HIDDEN);
+				if (Object(o.useEffect)(() => {
+						const t = (e => {
+							return Object(b.j)(p.b.POWERUPS_INFEED_UNIT_VISIBILITY_STORE, e) >= P
+						})(e) ? s.HIDDEN : D;
+						U(t)
+					}, [e, D, U]), Object(o.useEffect)(() => {
+						k !== s.HIDDEN && (Object(b.R)(p.b.POWERUPS_INFEED_UNIT_VISIBILITY_STORE, e), O(Object(_.n)()))
+					}, [k, O, e]), k === s.HIDDEN) return null;
+				const A = v ? I._("Support the whole community", null, {
 					hk: "oOdGv"
-				}) : j._("Unlock perks for the whole community", null, {
+				}) : I._("Unlock perks for the whole community", null, {
 					hk: "1DllPY"
 				});
-				return o.a.createElement("div", {
-					className: Object(a.a)(w.a.container, t)
-				}, o.a.createElement(d.a, {
-					className: w.a.powerupsIcon
-				}), o.a.createElement("h2", {
-					className: w.a.title
-				}, j._("Powerup {subreddit name}", [j._param("subreddit name", f.displayText)], {
+				return a.a.createElement("div", {
+					className: Object(i.a)(x.a.container, t)
+				}, k === s.POWERUPS_DEFAULT ? a.a.createElement(() => a.a.createElement(a.a.Fragment, null, a.a.createElement(l.a, {
+					className: x.a.powerupsIcon
+				}), a.a.createElement("h2", {
+					className: x.a.title
+				}, I._("Powerup {subreddit name}", [I._param("subreddit name", j.displayText)], {
 					hk: "2zwNZk"
-				})), o.a.createElement("h3", {
-					className: w.a.subtitle
-				}, k), o.a.createElement(i.a, {
-					className: w.a.supporters,
+				})), a.a.createElement("h3", {
+					className: x.a.subtitle
+				}, A)), null) : a.a.createElement(() => a.a.createElement(a.a.Fragment, null, a.a.createElement("div", {
+					className: x.a.communityGearAvatar,
+					"data-testid": "community-gear-avatar",
+					style: {
+						backgroundImage: `url("${n.a.assetPath}/img/snoovatars/snoovatar_6.png")`
+					}
+				}), a.a.createElement("h2", {
+					className: x.a.title
+				}, I._("Powerup to unlock community gear", null, {
+					hk: "HyBcY"
+				}))), null), a.a.createElement(u.a, {
+					className: x.a.supporters,
 					subredditId: e,
 					onClick: t => {
-						x(Object(m.e)("post_upsell")), s(t ? Object(c.h)(e) : Object(c.f)("in_feed_unit"))
+						O(Object(_.e)("post_upsell")), r(t ? Object(d.h)(e) : Object(d.f)("in_feed_unit"))
 					}
-				}), o.a.createElement(l.a, {
-					className: w.a.button,
+				}), a.a.createElement(m.a, {
+					className: x.a.button,
 					onClick: () => {
-						x(Object(m.m)()), s(Object(c.f)("in_feed_unit"))
+						O(Object(_.m)()), r(Object(d.f)("in_feed_unit"))
 					}
 				}))
 			}
+		},
+		"./src/reddit/constants/gold.ts": function(e, t, r) {
+			"use strict";
+			r.d(t, "a", (function() {
+				return s
+			})), r.d(t, "b", (function() {
+				return n
+			})), r.d(t, "d", (function() {
+				return o
+			})), r.d(t, "e", (function() {
+				return a
+			})), r.d(t, "f", (function() {
+				return c
+			})), r.d(t, "c", (function() {
+				return i
+			})), r.d(t, "j", (function() {
+				return d
+			})), r.d(t, "i", (function() {
+				return u
+			})), r.d(t, "g", (function() {
+				return l
+			})), r.d(t, "h", (function() {
+				return m
+			}));
+			const s = "ModerationPage--Modal--AddAward",
+				n = "ModerationPage--Modal--DeleteAwardConfirmation",
+				o = 20,
+				a = 4,
+				c = 1e4,
+				i = .2,
+				d = .1,
+				u = .1,
+				l = 500,
+				m = ["t5_2qqoq", "t5_37xo2", "t5_2r60y", "t5_mvcq5", "t5_4e4fpz", "t5_4e4ib9", "t5_4y3poa", "t5_4hmhx4"]
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.99fa75ba7b7949490b42.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.0c08a05bf1fe8b2896a6.js.map

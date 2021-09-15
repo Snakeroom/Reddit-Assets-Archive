@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.c18534eea2adacb59cab.js
-// Retrieved at 9/14/2021, 1:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.2a5fa26f803b2121f494.js
+// Retrieved at 9/15/2021, 11:30:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, n) {
@@ -939,15 +939,15 @@
 			}, Q._("Crowd Control", null, {
 				hk: "4WgEW"
 			}));
-			var K = n("./src/reddit/components/Comments/Comment/TopMeta/edited.m.less"),
-				q = n.n(K);
+			var q = n("./src/reddit/components/Comments/Comment/TopMeta/edited.m.less"),
+				K = n.n(q);
 			const {
 				fbt: Z
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), Y = ({
 				compact: e,
 				editedAt: t
 			}) => r.a.createElement(C.a, {
-				className: q.a.editedText
+				className: K.a.editedText
 			}, Z._("edited {time}", [Z._param("time", r.a.createElement(U.d, {
 				seconds: t,
 				noPostfix: e,
@@ -2864,12 +2864,14 @@
 				return i
 			})), n.d(t, "c", (function() {
 				return c
-			})), n.d(t, "i", (function() {
+			})), n.d(t, "j", (function() {
 				return d
-			})), n.d(t, "h", (function() {
+			})), n.d(t, "i", (function() {
 				return l
 			})), n.d(t, "g", (function() {
 				return m
+			})), n.d(t, "h", (function() {
+				return u
 			}));
 			const s = "ModerationPage--Modal--AddAward",
 				o = "ModerationPage--Modal--DeleteAwardConfirmation",
@@ -2879,7 +2881,8 @@
 				c = .2,
 				d = .1,
 				l = .1,
-				m = 500
+				m = 500,
+				u = ["t5_2qqoq", "t5_37xo2", "t5_2r60y", "t5_mvcq5", "t5_4e4fpz", "t5_4e4ib9", "t5_4y3poa", "t5_4hmhx4"]
 		},
 		"./src/reddit/controls/Checkbox/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -3430,4 +3433,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.c18534eea2adacb59cab.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.2a5fa26f803b2121f494.js.map

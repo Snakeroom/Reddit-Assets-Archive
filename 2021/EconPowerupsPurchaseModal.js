@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.cb464487276ccdd36523.js
-// Retrieved at 9/9/2021, 11:40:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.98e57a44869d0e62e635.js
+// Retrieved at 9/15/2021, 11:30:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsPurchaseModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, n) {
@@ -320,7 +320,8 @@
 				type: "image/png"
 			}), a.a.createElement("img", {
 				className: c.a.image,
-				src: `${r.a.assetPath}/img/powerups/powerup.png`
+				src: `${r.a.assetPath}/img/powerups/powerup.png`,
+				alt: "Rotating Powerups bolt"
 			})))
 		},
 		"./src/reddit/components/Econ/PowerupsMarketingModal/Header/index.m.less": function(e, t, n) {
@@ -1083,4 +1084,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.cb464487276ccdd36523.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.98e57a44869d0e62e635.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PowerupSuccessModal.29cb4e8b11b9c30489da.js
-// Retrieved at 6/17/2021, 3:40:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PowerupSuccessModal.af39ec6b81a11e74f941.js
+// Retrieved at 9/15/2021, 11:30:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PowerupSuccessModal"], {
 		"./src/reddit/components/Econ/Common/PowerupRotatingBolt/index.m.less": function(i, a, x) {
@@ -27,7 +27,8 @@
 				type: "image/png"
 			}), o.a.createElement("img", {
 				className: r.a.image,
-				src: `${t.a.assetPath}/img/powerups/powerup.png`
+				src: `${t.a.assetPath}/img/powerups/powerup.png`,
+				alt: "Rotating Powerups bolt"
 			})))
 		},
 		"./src/reddit/components/Econ/PowerupsSuccess/confetti-animation.json": function(i) {
@@ -73,4 +74,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupSuccessModal.29cb4e8b11b9c30489da.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupSuccessModal.af39ec6b81a11e74f941.js.map

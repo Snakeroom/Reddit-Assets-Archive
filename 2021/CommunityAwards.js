@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityAwards.3e5514e35442d9393b0f.js
-// Retrieved at 8/31/2021, 6:10:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityAwards.203c0813d558fe89db98.js
+// Retrieved at 9/15/2021, 11:30:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityAwards"], {
 		"./src/reddit/actions/gold/communityAwards/communityAwards.ts": function(e, t, r) {
@@ -31,9 +31,9 @@
 			})), r.d(t, "awardSheetInfoLoaded", (function() {
 				return Q
 			})), r.d(t, "removeCommunityAward", (function() {
-				return F
-			})), r.d(t, "removeCommunityAwardSuccessful", (function() {
 				return q
+			})), r.d(t, "removeCommunityAwardSuccessful", (function() {
+				return M
 			})), r.d(t, "disableAwardinCommunity", (function() {
 				return W
 			})), r.d(t, "enableAwardinCommunity", (function() {
@@ -294,16 +294,16 @@
 							}))
 						}
 					}
-				}, U = Object(n.a)(O.c), H = Object(n.a)(O.a), Q = Object(n.a)(O.b), F = (e, t) => async (r, n, {
+				}, U = Object(n.a)(O.c), H = Object(n.a)(O.a), Q = Object(n.a)(O.b), q = (e, t) => async (r, n, {
 					gqlContext: i
 				}) => {
-					r(M());
+					r(F());
 					try {
 						if ((await Object(m.m)(i(), t)).error) {
 							const e = A();
 							await r(B(e))
 						} else {
-							await r(q({
+							await r(M({
 								awardId: t,
 								subredditId: e
 							}));
@@ -323,7 +323,7 @@
 						const e = A();
 						await r(B(e))
 					}
-				}, M = Object(n.a)(O.jb), q = Object(n.a)(O.kb), J = Object(n.a)(O.ib), B = e => async (t, r) => {
+				}, F = Object(n.a)(O.jb), M = Object(n.a)(O.kb), J = Object(n.a)(O.ib), B = e => async (t, r) => {
 					await t(J(e)), t(Object(o.f)({
 						kind: c.b.Error,
 						duration: o.a,
@@ -395,12 +395,14 @@
 				return s
 			})), r.d(t, "c", (function() {
 				return o
-			})), r.d(t, "i", (function() {
+			})), r.d(t, "j", (function() {
 				return c
-			})), r.d(t, "h", (function() {
+			})), r.d(t, "i", (function() {
 				return u
 			})), r.d(t, "g", (function() {
 				return b
+			})), r.d(t, "h", (function() {
+				return l
 			}));
 			const a = "ModerationPage--Modal--AddAward",
 				n = "ModerationPage--Modal--DeleteAwardConfirmation",
@@ -410,7 +412,8 @@
 				o = .2,
 				c = .1,
 				u = .1,
-				b = 500
+				b = 500,
+				l = ["t5_2qqoq", "t5_37xo2", "t5_2r60y", "t5_mvcq5", "t5_4e4fpz", "t5_4e4ib9", "t5_4y3poa", "t5_4hmhx4"]
 		},
 		"./src/reddit/endpoints/gold/communityAwards.ts": function(e, t, r) {
 			"use strict";
@@ -692,4 +695,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityAwards.3e5514e35442d9393b0f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityAwards.203c0813d558fe89db98.js.map
