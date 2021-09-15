@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PowerupsPremiumUpsellModal.45ae42a672f735fb8e3c.js
-// Retrieved at 9/9/2021, 11:50:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PowerupsPremiumUpsellModal.f49d434c506e495aaedd.js
+// Retrieved at 9/15/2021, 5:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PowerupsPremiumUpsellModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, r) {
@@ -1146,7 +1146,7 @@
 					body: o.a.createElement(T, {
 						items: b
 					}),
-					buttons: d && o.a.createElement(h.q, {
+					buttons: d && o.a.createElement(h.s, {
 						className: D.a.powerupsButton,
 						priority: h.b.Secondary,
 						onClick: () => {
@@ -1205,7 +1205,7 @@
 				onClickPrice: n
 			}) => o.a.createElement("div", {
 				className: D.a.premiumButtons
-			}, o.a.createElement(h.q, {
+			}, o.a.createElement(h.s, {
 				className: D.a.powerupsButton,
 				priority: h.b.Secondary,
 				onClick: () => n(e.packageId, x.b.Month),
@@ -1214,7 +1214,7 @@
 				locale: r
 			}))], {
 				hk: "4i6SO9"
-			})), o.a.createElement(h.h, {
+			})), o.a.createElement(h.j, {
 				className: D.a.powerupsButton,
 				onClick: () => n(t.packageId, x.b.Year),
 				isFullWidth: !0
@@ -2055,4 +2055,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsPremiumUpsellModal.45ae42a672f735fb8e3c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsPremiumUpsellModal.f49d434c506e495aaedd.js.map

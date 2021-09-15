@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.b2cb50a86d1eea4afe64.js
-// Retrieved at 9/8/2021, 3:50:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.ed7ddebb5a620e776578.js
+// Retrieved at 9/15/2021, 5:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index~reddit-components-Econ-Prediction"], {
 		"./node_modules/lodash/_LazyWrapper.js": function(a, i, r) {
@@ -1480,7 +1480,7 @@
 					k(D(e)), o(!0), setTimeout(() => o(!1), 400)
 				}, [e]), x.a.createElement("div", {
 					className: b.a.header
-				}, x.a.createElement(y.q, {
+				}, x.a.createElement(y.s, {
 					"aria-label": F._("Close", null, {
 						hk: "40q8CL"
 					}),
@@ -1603,7 +1603,7 @@
 					className: H.a.description
 				}, q._("Welcome to tournament play! Claim your tokens, make predictions, and climb up the leaderboard.", null, {
 					hk: "1tajkZ"
-				})), x.a.createElement(y.q, {
+				})), x.a.createElement(y.s, {
 					"aria-label": q._("Close", null, {
 						hk: "40q8CL"
 					}),
@@ -1875,7 +1875,7 @@
 					}, [n, a]);
 					return x.a.createElement("div", {
 						className: B.a.modal
-					}, x.a.createElement(G.q, {
+					}, x.a.createElement(G.s, {
 						"aria-label": D._("Close", null, {
 							hk: "10CQyx"
 						}),
@@ -1919,7 +1919,7 @@
 						className: B.a.subtitle
 					}, D._("Reddit Premium members can see what others have picked before making a prediction.", null, {
 						hk: "R7Vkp"
-					}))), x.a.createElement(G.q, {
+					}))), x.a.createElement(G.s, {
 						priority: G.b.Primary,
 						className: B.a.button,
 						onClick: () => {
@@ -3659,4 +3659,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.b2cb50a86d1eea4afe64.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.ed7ddebb5a620e776578.js.map

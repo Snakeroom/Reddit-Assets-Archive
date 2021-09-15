@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.b054a9af05db2ec7bfee.js
-// Retrieved at 8/31/2021, 6:10:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.974fe37720b0ae5ff0e8.js
+// Retrieved at 9/15/2021, 5:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditMentionWithIcon"], {
 		"./src/reddit/actions/subredditMention/constants.ts": function(e, t, s) {
@@ -1178,7 +1178,7 @@
 							type: t.type,
 							key: _ ? "unsubscribe" : "subscribed"
 						});
-						return i.a.createElement(d.q, b({
+						return i.a.createElement(d.s, b({
 							className: e,
 							priority: O.shouldReverseColor ? d.b.Primary : d.b.Secondary,
 							Icon: u || !u && !_ ? Object(c.b)("checkmark") : void 0,
@@ -1207,7 +1207,7 @@
 							type: t.type,
 							key: "subscribe"
 						});
-						return i.a.createElement(d.q, b({
+						return i.a.createElement(d.s, b({
 							className: e,
 							priority: O.shouldReverseColor ? d.b.Secondary : d.b.Primary,
 							Icon: Object(c.b)("add"),
@@ -2210,4 +2210,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.b054a9af05db2ec7bfee.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.974fe37720b0ae5ff0e8.js.map

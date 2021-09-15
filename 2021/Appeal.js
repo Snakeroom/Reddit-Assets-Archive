@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Appeal.2eeb6f4d7691093d841a.js
-// Retrieved at 8/30/2021, 12:20:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Appeal.59265eb8b220165436bc.js
+// Retrieved at 9/15/2021, 5:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Appeal"], {
 		"./src/lib/validateEmail/index.ts": function(e, a, t) {
@@ -479,7 +479,7 @@
 							className: d.a.errorMessage
 						}, e.msg)), r.a.createElement("fieldset", {
 							className: d.a.submitButtonPanel
-						}, r.a.createElement(h.i, {
+						}, r.a.createElement(h.k, {
 							className: d.a.submitButton,
 							disabled: e || t.appealPending
 						}, t.appealPending ? n.fbt._("Pending", null, {
@@ -537,4 +537,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Appeal.2eeb6f4d7691093d841a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Appeal.59265eb8b220165436bc.js.map

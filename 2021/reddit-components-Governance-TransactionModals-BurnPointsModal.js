@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal.356c141d8588d6aa00a9.js
-// Retrieved at 8/17/2021, 2:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal.4693cf86d9f74dbbba26.js
+// Retrieved at 9/15/2021, 5:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-BurnPointsModal"], {
 		"./src/reddit/actions/util/pollActionForSuccess.ts": function(e, t, a) {
@@ -490,7 +490,7 @@
 					className: f.a.footnote
 				}, i.fbt._("* Rewards are created by the community, for the community. Reddit has nothing to do with them, and cannot assist you to cancel, reverse, or otherwise modify burning details. Once you burn your {pointsName}, they’re gone forever.", [i.fbt._param("pointsName", t)], {
 					hk: "13HyI3"
-				})), n.a.createElement(m.q, {
+				})), n.a.createElement(m.s, {
 					onClick: e.onContinue
 				}, i.fbt._("Let's do it", null, {
 					hk: "2Ktk0f"
@@ -523,8 +523,8 @@
 				O = a("./src/reddit/hooks/useTracking.ts"),
 				L = a("./src/reddit/models/Toast/index.ts"),
 				I = a("./src/reddit/selectors/gov.ts"),
-				T = a("./src/reddit/components/Governance/TransactionModals/VaultTransactionModal/index.tsx"),
-				k = a("./src/lib/classNames/index.ts"),
+				k = a("./src/reddit/components/Governance/TransactionModals/VaultTransactionModal/index.tsx"),
+				T = a("./src/lib/classNames/index.ts"),
 				y = a("./src/reddit/components/Governance/TokenAmount/index.tsx"),
 				A = a("./src/reddit/components/Governance/TransactionModals/ApprovalModal/Details.tsx"),
 				D = a("./src/reddit/components/Governance/TransactionModals/Common/CurrentBalance.tsx"),
@@ -548,7 +548,7 @@
 				}), n.a.createElement(D.a, {
 					subredditId: s.id
 				}), n.a.createElement("div", {
-					className: Object(k.a)(V.a.memo, {
+					className: Object(T.a)(V.a.memo, {
 						[V.a.error]: !l
 					})
 				}, l ? i.fbt._("For “{memo}”. Fulfilled by the community, not Reddit.", [i.fbt._param("memo", a)], {
@@ -584,7 +584,7 @@
 				})), h = new x.BigNumber(u).isGreaterThanOrEqualTo(t), p = Object(z.b)(t, null == s ? void 0 : s.displayConversion), v = s.contractAddress, f = Object(j.a)(v, t, a), b = e => {
 					o(Object(F.c)("burn_link", m, p, e))
 				}, E = s.name;
-				return n.a.createElement(T.a, {
+				return n.a.createElement(k.a, {
 					approvalOverview: n.a.createElement(H, {
 						burnAmount: t,
 						burnMemo: a,
@@ -745,7 +745,7 @@
 						className: x.a.detailsContainer
 					}, t), i.a.createElement(b.a, {
 						className: x.a.buttonRow
-					}, i.a.createElement(f.i, {
+					}, i.a.createElement(f.k, {
 						className: x.a.confirmButton,
 						onClick: e.onConfirmed
 					}, l.fbt._("Ok", null, {
@@ -1216,4 +1216,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal.356c141d8588d6aa00a9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal.4693cf86d9f74dbbba26.js.map

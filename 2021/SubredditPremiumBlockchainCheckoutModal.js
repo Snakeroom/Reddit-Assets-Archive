@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumBlockchainCheckoutModal.ec7e9cfbe0ad62bf1571.js
-// Retrieved at 8/31/2021, 6:10:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumBlockchainCheckoutModal.020794e2e579a639507f.js
+// Retrieved at 9/15/2021, 5:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumBlockchainCheckoutModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -89,13 +89,13 @@
 				E = s("./src/reddit/selectors/gov.ts"),
 				w = s("./src/reddit/components/Governance/WalletAmount/index.m.less"),
 				_ = s.n(w);
-			const N = Object(l.c)({
+			const k = Object(l.c)({
 				latestWallet: E.d,
 				pointsDetails: (e, {
 					subredditId: t
 				}) => Object(g.b)(e, t)
 			});
-			var k = Object(d.b)(N)((function(e) {
+			var N = Object(d.b)(k)((function(e) {
 					var t;
 					const s = e.latestWallet && e.latestWallet.amount || "0";
 					return c.a.createElement("div", {
@@ -279,10 +279,10 @@
 						hk: "2rNfw8"
 					})), c.a.createElement("div", {
 						className: Z.a.purchase
-					}, c.a.createElement(k, {
+					}, c.a.createElement(N, {
 						className: Z.a.walletAmount,
 						subredditId: i
-					}), c.a.createElement(C.i, {
+					}), c.a.createElement(C.k, {
 						className: Z.a.purchaseButton,
 						onClick: this.onPurchase,
 						"data-redditstyle": !0,
@@ -474,7 +474,7 @@
 						className: g.a.detailsContainer
 					}, t), d.a.createElement(v.a, {
 						className: g.a.buttonRow
-					}, d.a.createElement(f.i, {
+					}, d.a.createElement(f.k, {
 						className: g.a.confirmButton,
 						onClick: e.onConfirmed
 					}, n.fbt._("Ok", null, {
@@ -483,10 +483,10 @@
 				}),
 				w = s("./src/reddit/controls/ErrorText/index.m.less"),
 				_ = s.n(w);
-			const N = Object(u.c)({
+			const k = Object(u.c)({
 				activeModalId: h.a
 			});
-			class k extends d.a.Component {
+			class N extends d.a.Component {
 				constructor(e) {
 					super(e), this.spanRef = d.a.createRef(), this.toggleModal = () => {
 						this.props.toggleErrorTextModal(this.state.modalId)
@@ -541,9 +541,9 @@
 					}, r || e))
 				}
 			}
-			const j = Object(l.b)(N, e => ({
+			const j = Object(l.b)(k, e => ({
 					toggleErrorTextModal: t => e(Object(p.i)(t))
-				}))(k),
+				}))(N),
 				C = e => {
 					const {
 						className: t,
@@ -1061,4 +1061,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumBlockchainCheckoutModal.ec7e9cfbe0ad62bf1571.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumBlockchainCheckoutModal.020794e2e579a639507f.js.map

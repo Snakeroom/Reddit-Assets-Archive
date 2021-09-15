@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChangeUsernameModals.9b83384e51796a226a61.js
-// Retrieved at 8/30/2021, 12:20:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChangeUsernameModals.9a0f6e7b38ded1c473e0.js
+// Retrieved at 9/15/2021, 5:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChangeUsernameModals"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -258,7 +258,7 @@
 						onSuggestedUsernameClick: this.onSuggestedUsernameClickHandler
 					}), o.a.createElement("div", {
 						className: T.a.buttonWrapper
-					}, o.a.createElement(S.i, {
+					}, o.a.createElement(S.k, {
 						className: Object(A.a)(T.a.commonBtn, T.a.primaryBtn),
 						disabled: !c,
 						onClick: this.handleContinue
@@ -291,11 +291,11 @@
 					className: T.a.usernamePrefix
 				}, "u/"), e.username), o.a.createElement("div", {
 					className: T.a.buttonWrapper
-				}, o.a.createElement(S.i, {
+				}, o.a.createElement(S.k, {
 					className: Object(A.a)(T.a.commonBtn, T.a.primaryBtn),
 					disabled: e.isSaving,
 					onClick: e.onPrimaryButtonClick
-				}, e.primaryButtonText()), o.a.createElement(S.o, {
+				}, e.primaryButtonText()), o.a.createElement(S.q, {
 					className: Object(A.a)(T.a.commonBtn, T.a.secondaryBtn),
 					disabled: e.isSaving,
 					onClick: e.onSecondaryButtonClick
@@ -827,4 +827,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChangeUsernameModals.9b83384e51796a226a61.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChangeUsernameModals.9a0f6e7b38ded1c473e0.js.map

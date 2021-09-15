@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.0f602fcd87c36a243889.js
-// Retrieved at 8/30/2021, 12:20:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.3aee7a6aa64d1206a33b.js
+// Retrieved at 9/15/2021, 5:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceWalletRegistration"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -615,7 +615,7 @@
 					style: {
 						backgroundImage: t
 					}
-				}), a.a.createElement(f.i, {
+				}), a.a.createElement(f.k, {
 					className: g.a.button,
 					onClick: e.onNextStep
 				}, E._("Start", null, {
@@ -658,7 +658,7 @@
 						style: {
 							backgroundImage: e
 						}
-					}), a.a.createElement(f.l, {
+					}), a.a.createElement(f.n, {
 						className: g.a.button,
 						onClick: l.b
 					}, y._("Connect", null, {
@@ -721,21 +721,21 @@
 						style: {
 							backgroundImage: n
 						}
-					}), t ? a.a.createElement(f.i, {
+					}), t ? a.a.createElement(f.k, {
 						className: g.a.button,
 						onClick: this.props.onNextStep
 					}, I._("Continue", null, {
 						hk: "4aMeJj"
 					}), a.a.createElement(v.a, {
 						className: g.a.buttonIcon
-					})) : e ? a.a.createElement(f.i, {
+					})) : e ? a.a.createElement(f.k, {
 						className: g.a.button,
 						onClick: j.a
 					}, I._("Reload page", null, {
 						hk: "14fa9z"
 					}), a.a.createElement(N.a, {
 						className: g.a.buttonIcon
-					})) : a.a.createElement(f.m, {
+					})) : a.a.createElement(f.o, {
 						className: g.a.button,
 						href: M,
 						target: "_blank",
@@ -797,7 +797,7 @@
 					style: {
 						backgroundImage: t
 					}
-				}), a.a.createElement(f.i, {
+				}), a.a.createElement(f.k, {
 					className: g.a.button,
 					onClick: () => {
 						var e, t;
@@ -900,7 +900,7 @@
 						onClick: this.toggleApprovalCheckbox
 					}, F.fbt._("I understand and agree to allow Reddit to publicly display my wallet address linked to my username", null, {
 						hk: "1fQEnc"
-					}))), a.a.createElement(f.l, {
+					}))), a.a.createElement(f.n, {
 						className: g.a.button,
 						onClick: this.runVerification,
 						disabled: !e
@@ -941,7 +941,7 @@
 					style: {
 						backgroundImage: t
 					}
-				}), a.a.createElement(f.l, {
+				}), a.a.createElement(f.n, {
 					className: g.a.button,
 					onClick: e.onNextStep
 				}, F.fbt._("Next", null, {
@@ -1948,4 +1948,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.0f602fcd87c36a243889.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.3aee7a6aa64d1206a33b.js.map

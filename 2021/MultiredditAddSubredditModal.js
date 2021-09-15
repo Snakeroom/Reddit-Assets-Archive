@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MultiredditAddSubredditModal.ba3989d631de9cdd71bd.js
-// Retrieved at 8/31/2021, 6:10:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MultiredditAddSubredditModal.03dffc4787f34595ebac.js
+// Retrieved at 9/15/2021, 5:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MultiredditAddSubredditModal"], {
 		"./node_modules/lodash/without.js": function(e, t, r) {
@@ -999,12 +999,12 @@
 					}), !f && !p && (e ? c.a.createElement(k.a, {
 						className: Object(b.a)(T.a.createSubmitBtn, T.a.loading),
 						sizePx: q
-					}) : c.a.createElement(S.o, {
+					}) : c.a.createElement(S.q, {
 						className: T.a.createSubmitBtn,
 						onClick: this.onCreateSubmit
 					}, i.fbt._("create", null, {
 						hk: "1RZAAQ"
-					})))) : c.a.createElement(S.o, {
+					})))) : c.a.createElement(S.q, {
 						className: T.a.listItem,
 						onClick: this.onCreateClick
 					}, i.fbt._("+ Create a custom feed", null, {
@@ -1448,4 +1448,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MultiredditAddSubredditModal.ba3989d631de9cdd71bd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MultiredditAddSubredditModal.03dffc4787f34595ebac.js.map

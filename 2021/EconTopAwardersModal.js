@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.29586a77552ae50e9891.js
-// Retrieved at 9/8/2021, 3:50:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.83d5cda496174f326224.js
+// Retrieved at 9/15/2021, 5:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconTopAwardersModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, r) {
@@ -590,7 +590,7 @@
 				onAddUserToQuickReplyList: f,
 				children: v
 			}) => {
-				return s.a.createElement(d.q, {
+				return s.a.createElement(d.s, {
 					onClick: t => {
 						if (b && b(t), e(), p === a.awardNotification) return f();
 						n(Object(l.b)(o))
@@ -1090,7 +1090,7 @@
 					className: ee.a.infoDesc
 				}, re._("Award publicly and your username will show up on this leaderboard!", null, {
 					hk: "3reZYa"
-				})), n.a.createElement(C.i, {
+				})), n.a.createElement(C.k, {
 					className: ee.a.cta,
 					onClick: P
 				}, n.a.createElement(O.a, {
@@ -2018,7 +2018,7 @@
 				let w = null;
 				I || (w = e ? "user_hovercard" : "profile_overview");
 				const g = Object(n.useCallback)(() => h(Object(u.d)(e ? "user_hovercard" : "profile_overview", t)), [e, h, t]);
-				return s.a.createElement(m.q, {
+				return s.a.createElement(m.s, {
 					onClick: () => {
 						r ? (h(u.e), I && _ === b.a.notVoted && E(Object(i.db)(I))) : g();
 						const e = r ? "postify" : "copy";
@@ -2075,7 +2075,7 @@
 				isOwnProfile: a,
 				onClick: d
 			}) {
-				return n.a.createElement(o.q, {
+				return n.a.createElement(o.s, {
 					onClick: d,
 					isFullWidth: !0,
 					className: Object(s.a)(l.a.snoovatarButton, {
@@ -2454,7 +2454,7 @@
 					priority: t,
 					small: r,
 					...a
-				}) => s.a.createElement(o.q, m({}, a, {
+				}) => s.a.createElement(o.s, m({}, a, {
 					priority: u(o.b.Primary, e, t),
 					className: Object(l.a)(a.className, d.a.BaseButton),
 					size: r ? o.c.S : o.c.M
@@ -2478,7 +2478,7 @@
 					priority: r,
 					small: a,
 					...n
-				}) => s.a.createElement(o.q, m({}, n, {
+				}) => s.a.createElement(o.s, m({}, n, {
 					priority: u(o.b.Secondary, t, r),
 					className: Object(l.a)(n.className, d.a.BaseButton),
 					size: a ? o.c.S : o.c.M,
@@ -2903,4 +2903,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.29586a77552ae50e9891.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.83d5cda496174f326224.js.map

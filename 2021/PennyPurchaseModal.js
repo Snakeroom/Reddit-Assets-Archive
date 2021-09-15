@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.9255e81dbbb6c65d268a.js
-// Retrieved at 9/1/2021, 1:20:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.0c2b461ffe66596fa5ce.js
+// Retrieved at 9/15/2021, 5:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PennyPurchaseModal"], {
 		"./src/lib/loadRedditAdsPixel.ts": function(e, a, t) {
@@ -243,7 +243,7 @@
 					}) : n && r.a.createElement(B, {
 						className: Object(h.a)(S.a.purchaseButton, S.a.paypalCheckoutButton),
 						coinPackage: n
-					}) : null, c === o.Eb && r.a.createElement(P.i, {
+					}) : null, c === o.Eb && r.a.createElement(P.k, {
 						className: S.a.purchaseButton,
 						"data-redditstyle": !0,
 						disabled: d || s,
@@ -468,7 +468,7 @@
 				onCloseClick: a
 			}) => s.a.createElement("div", {
 				className: o.a.purchaseFooter
-			}, s.a.createElement(r.i, {
+			}, s.a.createElement(r.k, {
 				className: o.a.purchaseButton,
 				"data-redditstyle": !0,
 				onClick: a
@@ -676,4 +676,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PennyPurchaseModal.9255e81dbbb6c65d268a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PennyPurchaseModal.0c2b461ffe66596fa5ce.js.map

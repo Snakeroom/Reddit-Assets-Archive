@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/HarbergerTaxManageModal.b95b82fe661ec0c0d344.js
-// Retrieved at 8/30/2021, 12:20:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/HarbergerTaxManageModal.d911f6a611aa68eec9d3.js
+// Retrieved at 9/15/2021, 5:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["HarbergerTaxManageModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -416,13 +416,13 @@
 						subredditId: e.subredditId
 					}), Object(T.a)(e.wallet.amount))), o.a.createElement("div", {
 						className: S.a.buttons
-					}, o.a.createElement(M.l, {
+					}, o.a.createElement(M.n, {
 						className: S.a.button,
 						tabIndex: e.tabIndex,
 						onClick: e.onClose
 					}, U._("Cancel", null, {
 						hk: "2TSLl5"
-					})), o.a.createElement(M.i, {
+					})), o.a.createElement(M.k, {
 						className: Object(k.a)(S.a.button, S.a.save),
 						disabled: !e.submitEnabled,
 						tabIndex: e.tabIndex ? e.tabIndex + 1 : void 0,
@@ -847,7 +847,7 @@
 						className: f.a.detailsContainer
 					}, t), c.a.createElement(h.a, {
 						className: f.a.buttonRow
-					}, c.a.createElement(x.i, {
+					}, c.a.createElement(x.k, {
 						className: f.a.confirmButton,
 						onClick: e.onConfirmed
 					}, a.fbt._("Ok", null, {
@@ -1420,4 +1420,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/HarbergerTaxManageModal.b95b82fe661ec0c0d344.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/HarbergerTaxManageModal.d911f6a611aa68eec9d3.js.map

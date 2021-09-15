@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.f27c7fce5a43332a366f.js
-// Retrieved at 9/15/2021, 5:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.ea85ee2128645b5a4925.js
+// Retrieved at 9/15/2021, 5:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "AchievementsActions", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -1734,7 +1734,7 @@
 						className: n,
 						isContributorRequestPending: r
 					} = this.props;
-					return i.a.createElement(u.q, {
+					return i.a.createElement(u.s, {
 						priority: e === b.b.ContentGate ? u.b.Secondary : u.b.Primary,
 						className: Object(a.a)(t ? null : h.a.RequestButton, n),
 						onClick: this.onRequest,
@@ -1801,7 +1801,7 @@
 				userIsSuspended: c,
 				onClick: l
 			}) => {
-				return i.a.createElement(p.q, {
+				return i.a.createElement(p.s, {
 					className: e,
 					disabled: c || d,
 					onClick: e => {
@@ -1933,7 +1933,7 @@
 					className: Object(o.a)(h.a.scrollGradient, {
 						[h.a.gradientVisible]: v
 					})
-				}), r.a.createElement(d.q, {
+				}), r.a.createElement(d.s, {
 					priority: d.b.Secondary,
 					className: h.a.ctaButton,
 					onClick: () => {
@@ -2943,7 +2943,7 @@
 					...d
 				}) => {
 					const c = `${Object(k.a)(a)||"/"}submit`;
-					return i.a.createElement(j.k, N({}, d, {
+					return i.a.createElement(j.m, N({}, d, {
 						onClick: e => {
 							o(e => ({
 								action: "click",
@@ -3017,7 +3017,7 @@
 						ref: this.setTextRef
 					}, t || o, e), r && s && i.a.createElement("div", {
 						className: K.a.showMore
-					}, "...", i.a.createElement(j.o, {
+					}, "...", i.a.createElement(j.q, {
 						className: K.a.showFullDescriptionButton,
 						onClick: this.showFullDescription
 					}, V._("MORE", null, {
@@ -3194,7 +3194,7 @@
 				Se = n.n(Oe);
 			const {
 				fbt: je
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), ke = G.a.div("FlairSettingsContainer", Se.a), we = G.a.div("FlairPreviewWrapper", Se.a), Fe = G.a.div("PreviewTitle", Se.a), Pe = G.a.wrapped(ge.b, "FlairComponent", Se.a), Ne = G.a.wrapped(j.o, "TertiaryButton", Se.a), Re = G.a.wrapped(Ne, "IconButton", Se.a), De = G.a.span("Username", Se.a), Le = Object(_e.a)("spBadges", he.a), Ue = Object(u.c)({
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), ke = G.a.div("FlairSettingsContainer", Se.a), we = G.a.div("FlairPreviewWrapper", Se.a), Fe = G.a.div("PreviewTitle", Se.a), Pe = G.a.wrapped(ge.b, "FlairComponent", Se.a), Ne = G.a.wrapped(j.q, "TertiaryButton", Se.a), Re = G.a.wrapped(Ne, "IconButton", Se.a), De = G.a.span("Username", Se.a), Le = Object(_e.a)("spBadges", he.a), Ue = Object(u.c)({
 				currentUser: F.k,
 				isAchievementFlairModalEnabled: (e, t) => Object(Ce.g)(e, {
 					subredditId: t.subredditId
@@ -3311,7 +3311,7 @@
 				vt = n("./src/reddit/helpers/trackers/idCard.ts"),
 				Ct = n("./src/reddit/components/IdCard/CommunityOptions/index.m.less"),
 				It = n.n(Ct);
-			const Tt = G.a.wrapped(j.q, "TertiaryButton", It.a),
+			const Tt = G.a.wrapped(j.s, "TertiaryButton", It.a),
 				Ot = Object(u.c)({
 					stylesDisabledForSubreddit: F.kb,
 					stylesDisabledGlobally: F.lb,
@@ -3538,7 +3538,7 @@
 						}), f && this.renderCreatePostButtons(), t && !o && !r && !a && i.a.createElement(O.a, {
 							className: Dt.a.CreateCommunityButton,
 							eventSource: "id_card"
-						}), m && i.a.createElement(j.n, {
+						}), m && i.a.createElement(j.p, {
 							className: Dt.a.VisitCommunityButton,
 							onClick: this.handleVisitCommunityClick,
 							to: a.url
@@ -4467,7 +4467,7 @@
 					priority: t,
 					small: n,
 					...s
-				}) => i.a.createElement(o.q, u({}, s, {
+				}) => i.a.createElement(o.s, u({}, s, {
 					priority: m(o.b.Primary, e, t),
 					className: Object(l.a)(s.className, c.a.BaseButton),
 					size: n ? o.c.S : o.c.M
@@ -4491,7 +4491,7 @@
 					priority: n,
 					small: s,
 					...r
-				}) => i.a.createElement(o.q, u({}, r, {
+				}) => i.a.createElement(o.s, u({}, r, {
 					priority: m(o.b.Secondary, t, n),
 					className: Object(l.a)(r.className, c.a.BaseButton),
 					size: s ? o.c.S : o.c.M,
@@ -4918,7 +4918,7 @@
 								experimentName: i.D,
 								expEventOverride: t
 							});
-							return !!(Object(i.qe)(n) ? void 0 : n)
+							return !!(Object(i.te)(n) ? void 0 : n)
 						})(n)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -6661,4 +6661,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.f27c7fce5a43332a366f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.ea85ee2128645b5a4925.js.map

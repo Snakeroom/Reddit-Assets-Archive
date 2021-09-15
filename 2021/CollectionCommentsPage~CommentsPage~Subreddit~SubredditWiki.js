@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.089a91a44e536a250bea.js
-// Retrieved at 9/15/2021, 5:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.aeac6aede7c0e87447d4.js
+// Retrieved at 9/15/2021, 5:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"], {
 		"./src/lib/linkMatchers/index.ts": function(e, t, r) {
@@ -884,7 +884,7 @@
 			}) => {
 				const r = Object(i.e)(d.t),
 					n = Object(i.e)(o.h);
-				return s.a.createElement(a.q, {
+				return s.a.createElement(a.s, {
 					priority: a.b.Primary,
 					className: e,
 					onClick: t,
@@ -1126,7 +1126,7 @@
 						}
 					}, i.a.createElement(l.b, {
 						supporter: e.data.supporter
-					}))))))), d && i.a.createElement(o.q, {
+					}))))))), d && i.a.createElement(o.s, {
 						priority: o.b.Secondary,
 						className: c.a.expandButton,
 						onClick: r,
@@ -2030,7 +2030,7 @@
 					})
 				}
 				renderButton() {
-					return i.a.createElement(f.o, {
+					return i.a.createElement(f.q, {
 						className: y.a.flairFilterButton,
 						onMouseDown: this.trackFlairOverflowClick,
 						onClick: this.onToggleCollapse
@@ -2306,7 +2306,7 @@
 						button: t,
 						overrideColors: r
 					} = e, n = Object(h.a)(e).button;
-					return s.a.createElement(c.q, {
+					return s.a.createElement(c.s, {
 						className: y(t),
 						style: O(t, r, n),
 						isFullWidth: !0,
@@ -2545,7 +2545,7 @@
 						title: N.fbt._("Moderators", null, {
 							hk: "3AMICc"
 						})
-					}, (r.mods && r.mods.length || n) && s.a.createElement(c.q, {
+					}, (r.mods && r.mods.length || n) && s.a.createElement(c.s, {
 						kind: c.a.InternalLink,
 						priority: c.b.Secondary,
 						className: fe.a.MessageModsButton,
@@ -3353,7 +3353,7 @@
 				d = e => Object(a.c)(e, {
 					experimentEligibilitySelector: o,
 					experimentName: n.V
-				}) === n.tb.Treatment
+				}) === n.wb.Treatment
 		},
 		"./src/reddit/selectors/features/predictions/creation/index.ts": function(e, t, r) {
 			"use strict";
@@ -3454,4 +3454,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.089a91a44e536a250bea.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.aeac6aede7c0e87447d4.js.map

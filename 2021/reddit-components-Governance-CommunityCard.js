@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.71e6c44d8debbd19cc4f.js
-// Retrieved at 8/30/2021, 12:20:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.8c04c0e1fc8f22017687.js
+// Retrieved at 9/15/2021, 5:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-CommunityCard"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, n) {
@@ -601,7 +601,7 @@
 					hk: "31KZbZ"
 				}))), i.a.createElement(K.a, {
 					className: te.a.snooIcon
-				})), i.a.createElement(h.i, {
+				})), i.a.createElement(h.k, {
 					className: te.a.claimButton,
 					onClick: () => s(!0),
 					disabled: c
@@ -695,7 +695,7 @@
 					})), n && p.blockchainProvider && i.a.createElement(H, {
 						publicAddress: _,
 						subredditId: f
-					}), n && !_ && a && i.a.createElement(h.i, {
+					}), n && !_ && a && i.a.createElement(h.k, {
 						className: oe.a.button,
 						onClick: c ? u : l
 					}, s.fbt._("Register", null, {
@@ -1779,4 +1779,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.71e6c44d8debbd19cc4f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.8c04c0e1fc8f22017687.js.map

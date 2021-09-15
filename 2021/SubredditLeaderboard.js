@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.52edbe0e7f6c5f4f15ea.js
-// Retrieved at 9/9/2021, 3:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.b9292b5a18d18dfa5b45.js
+// Retrieved at 9/15/2021, 5:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, n) {
@@ -412,7 +412,7 @@
 				}) => o.a.createElement("div", {
 					className: Object(r.a)(e, m.a.container),
 					style: n
-				}, o.a.createElement(l.i, {
+				}, o.a.createElement(l.k, {
 					className: m.a.button,
 					onClick: () => p(t)
 				}, g._("Back to Top", null, {
@@ -1018,7 +1018,7 @@
 					key: e
 				}))),
 				w = e => {
-					const t = e.isSecondaryButton ? f.n : f.k,
+					const t = e.isSecondaryButton ? f.p : f.m,
 						n = e.linkColor ? {
 							backgroundColor: e.linkColor,
 							color: "white"
@@ -1242,7 +1242,7 @@
 						style: {
 							maxHeight: this.state.isTruncated ? u : "none"
 						}
-					}, e), this.state.isTruncated && s.a.createElement(m.o, {
+					}, e), this.state.isTruncated && s.a.createElement(m.q, {
 						className: v.a.seeMore,
 						onClick: this.handleSeeMoreClick
 					}, N._("See More", null, {
@@ -1538,7 +1538,7 @@
 					kind: i.a.InternalLink,
 					to: e.to
 				} : {};
-				return s.a.createElement(i.q, c({
+				return s.a.createElement(i.s, c({
 					className: Object(a.a)(d.a.Chip, {
 						[d.a.isWide]: e.wide
 					}),
@@ -2145,7 +2145,7 @@
 						className: Object(c.a)(K.a.header, s)
 					}, i.a.createElement("h2", null, r || $._("Categories", null, {
 						hk: "46zLMb"
-					}))), this.renderCategoryList(), o && i.a.createElement(Y.o, {
+					}))), this.renderCategoryList(), o && i.a.createElement(Y.q, {
 						className: Object(c.a)(K.a.button, e),
 						onClick: this.toggleExpanded
 					}, o && !this.state.isExpanded ? $._("Show More", null, {
@@ -2218,7 +2218,7 @@
 				ke = (e, {
 					match: t
 				}) => Object(h.b)(t.params.categoryName || ""),
-				_e = Object(m.oe)(g.i),
+				_e = Object(m.re)(g.i),
 				xe = Object(d.c)({
 					categories: e => Object(be.c)(e, {
 						categoriesOrder: _e
@@ -2347,4 +2347,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.52edbe0e7f6c5f4f15ea.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.b9292b5a18d18dfa5b45.js.map

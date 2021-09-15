@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.ddd17576372c4a8f2c3b.js
-// Retrieved at 9/13/2021, 3:50:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.aaeaa93df75f4793a5fd.js
+// Retrieved at 9/15/2021, 5:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsFlairModal"], {
 		"./src/reddit/actions/economics/powerups/flairs/index.ts": function(e, t, r) {
@@ -606,7 +606,7 @@
 					onClick: () => {
 						a(Object(I.y)()), m()
 					}
-				}) : d ? null : i.a.createElement(f.q, {
+				}) : d ? null : i.a.createElement(f.s, {
 					priority: f.b.Primary,
 					className: k.a.powerupButton,
 					isFullWidth: !0,
@@ -645,10 +645,10 @@
 				G = r("./src/reddit/actions/authorFlair.ts"),
 				V = r("./src/reddit/components/Flair/index.tsx"),
 				K = r("./src/reddit/components/Econ/PowerupsFlair/PowerupsFlairModal/UserFlair.m.less"),
-				q = r.n(K);
+				R = r.n(K);
 			const {
-				fbt: R
-			} = r("./node_modules/fbt/lib/FbtPublic.js"), Q = ({
+				fbt: Q
+			} = r("./node_modules/fbt/lib/FbtPublic.js"), q = ({
 				className: e,
 				subredditId: t,
 				flairData: r
@@ -657,15 +657,15 @@
 					a = Object(j.a)(),
 					o = Object(n.e)(u.k);
 				return o ? i.a.createElement("div", {
-					className: Object(E.a)(q.a.container, e)
+					className: Object(E.a)(R.a.container, e)
 				}, i.a.createElement("div", {
-					className: q.a.header
+					className: R.a.header
 				}, i.a.createElement("h4", {
-					className: q.a.flairText
-				}, R._("User flair", null, {
+					className: R.a.flairText
+				}, Q._("User flair", null, {
 					hk: "3ToqP0"
-				})), i.a.createElement(f.q, {
-					className: q.a.editButton,
+				})), i.a.createElement(f.s, {
+					className: R.a.editButton,
 					priority: f.b.Plain,
 					onClick: () => {
 						const e = o ? Object(c.e)(o) : null;
@@ -679,7 +679,7 @@
 				}, i.a.createElement(_.a, {
 					name: "edit"
 				}))), (null == r ? void 0 : r.applied) && r.displaySettings.isUserEnabled && i.a.createElement(V.b, {
-					className: q.a.flair,
+					className: R.a.flair,
 					flair: r.applied,
 					forceSmallEmojis: !0
 				})) : null
@@ -705,7 +705,7 @@
 					onModalClose: () => {
 						e(Object(o.g)(d.a.ACHIEVEMENT_FLAIR))
 					}
-				}), p && i.a.createElement(Q, {
+				}), p && i.a.createElement(q, {
 					subredditId: r.id,
 					flairData: a
 				}), i.a.createElement(L, {
@@ -800,7 +800,7 @@
 					className: Object(a.a)(v.a.scrollGradient, {
 						[v.a.gradientVisible]: O
 					})
-				}), i.a.createElement(d.q, {
+				}), i.a.createElement(d.s, {
 					priority: d.b.Secondary,
 					className: v.a.ctaButton,
 					onClick: () => {
@@ -959,7 +959,7 @@
 			}) => {
 				const r = Object(n.e)(d.t),
 					s = Object(n.e)(o.h);
-				return i.a.createElement(a.q, {
+				return i.a.createElement(a.s, {
 					priority: a.b.Primary,
 					className: e,
 					onClick: t,
@@ -1321,4 +1321,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.ddd17576372c4a8f2c3b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.aaeaa93df75f4793a5fd.js.map

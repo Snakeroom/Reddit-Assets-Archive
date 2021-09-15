@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.7c388c34afcc03c4657a.js
-// Retrieved at 9/15/2021, 5:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.37dbb826d09b0545240d.js
+// Retrieved at 9/15/2021, 5:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -2138,7 +2138,7 @@
 				userIsSuspended: d,
 				onClick: l
 			}) => {
-				return a.a.createElement(p.q, {
+				return a.a.createElement(p.s, {
 					className: e,
 					disabled: d || c,
 					onClick: e => {
@@ -3121,7 +3121,7 @@
 					className: Object(o.a)(C.a.scrollGradient, {
 						[C.a.gradientVisible]: O
 					})
-				}), n.a.createElement(c.q, {
+				}), n.a.createElement(c.s, {
 					priority: c.b.Secondary,
 					className: C.a.ctaButton,
 					onClick: () => {
@@ -7938,12 +7938,12 @@
 						isHeaderContent: !0,
 						subredditIcons: u,
 						suffix: v
-					}), i && n && (this.state.isFollowed ? o.a.createElement(x.l, {
+					}), i && n && (this.state.isFollowed ? o.a.createElement(x.n, {
 						className: E.a.follow,
 						onClick: this.onFollow
 					}, r.fbt._("Unfollow", null, {
 						hk: "ddl2J"
-					})) : o.a.createElement(x.i, {
+					})) : o.a.createElement(x.k, {
 						className: E.a.follow,
 						onClick: this.onFollow
 					}, o.a.createElement(y.a, {
@@ -7966,7 +7966,7 @@
 				const t = r.fbt._("Share", null, {
 					hk: "1PIfHd"
 				});
-				return o.a.createElement(x.q, {
+				return o.a.createElement(x.s, {
 					className: E.a.share,
 					"data-click-id": "share",
 					onClick: e,
@@ -8855,7 +8855,7 @@
 				Ce = s.n(be);
 			const {
 				fbt: xe
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), fe = ue.a.wrapped(pe.o, "TertiaryButton", Ce.a), ve = ue.a.wrapped(fe, "AllRedditResultsButton", Ce.a), ge = e => {
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), fe = ue.a.wrapped(pe.q, "TertiaryButton", Ce.a), ve = ue.a.wrapped(fe, "AllRedditResultsButton", Ce.a), ge = e => {
 				const t = Object(N.b)();
 				return n.a.createElement(I.a, {
 					to: Object(he.a)(e.queryParams)
@@ -9230,7 +9230,7 @@
 					priority: t,
 					small: s,
 					...r
-				}) => a.a.createElement(o.q, m({}, r, {
+				}) => a.a.createElement(o.s, m({}, r, {
 					priority: u(o.b.Primary, e, t),
 					className: Object(l.a)(r.className, d.a.BaseButton),
 					size: s ? o.c.S : o.c.M
@@ -9254,7 +9254,7 @@
 					priority: s,
 					small: r,
 					...n
-				}) => a.a.createElement(o.q, m({}, n, {
+				}) => a.a.createElement(o.s, m({}, n, {
 					priority: u(o.b.Secondary, t, s),
 					className: Object(l.a)(n.className, d.a.BaseButton),
 					size: r ? o.c.S : o.c.M,
@@ -9592,7 +9592,7 @@
 					})
 				}
 				renderButton() {
-					return a.a.createElement(C.o, {
+					return a.a.createElement(C.q, {
 						className: E.a.flairFilterButton,
 						onMouseDown: this.trackFlairOverflowClick,
 						onClick: this.onToggleCollapse
@@ -11301,9 +11301,9 @@
 			}));
 			var r = s("./src/reddit/constants/experiments.ts"),
 				n = s("./src/reddit/helpers/chooseVariant/index.ts");
-			const a = e => r.Kd.Treatment1 === Object(n.c)(e, {
+			const a = e => r.Nd.Treatment1 === Object(n.c)(e, {
 				experimentEligibilitySelector: n.a,
-				experimentName: r.Bd
+				experimentName: r.Ed
 			})
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, s) {
@@ -11550,10 +11550,10 @@
 				a = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				o = s("./src/reddit/selectors/posts.ts");
 			const i = e => Object(a.c)(e, {
-					experimentName: n.pd,
+					experimentName: n.sd,
 					experimentEligibilitySelector: a.a
 				}),
-				c = (e, t) => t === n.zd.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				c = (e, t) => t === n.Cd.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				d = Object(r.a)(o.H, i, (e, t) => c(e, t)),
 				l = Object(r.a)((e, t) => t, i, (e, t) => c(e, t))
 		},
@@ -11562,4 +11562,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.7c388c34afcc03c4657a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.37dbb826d09b0545240d.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Download OBS Modal.315ce976640fb5ec9463.js
-// Retrieved at 8/10/2021, 1:20:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Download OBS Modal.dcae0b2f98fa5c0b9a4d.js
+// Retrieved at 9/15/2021, 5:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Download OBS Modal"], {
 		"./src/reddit/components/PublicAccessNetwork/Modals/DownloadOBS/DownloadOBSModal.tsx": function(e, t, a) {
@@ -80,7 +80,7 @@
 				hk: "2qEvgH"
 			}))))), r.a.createElement(h, {
 				className: p.a.ModalFooter
-			}, r.a.createElement(i.m, {
+			}, r.a.createElement(i.o, {
 				href: _,
 				className: p.a.button,
 				target: "_blank",
@@ -88,7 +88,7 @@
 				"data-redditstyle": !0
 			}, o.fbt._("Download the User Guide", null, {
 				hk: "3WO5Lv"
-			})), r.a.createElement(i.j, {
+			})), r.a.createElement(i.l, {
 				href: "https://github.com/reddit/rpan-studio/releases",
 				className: p.a.button,
 				target: "_blank",
@@ -100,4 +100,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Download OBS Modal.315ce976640fb5ec9463.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Download OBS Modal.dcae0b2f98fa5c0b9a4d.js.map

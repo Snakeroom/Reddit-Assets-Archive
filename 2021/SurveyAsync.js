@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SurveyAsync.96912f697ceb3318029e.js
-// Retrieved at 8/10/2021, 1:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SurveyAsync.c8327d66ffb358fed6d9.js
+// Retrieved at 9/15/2021, 5:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SurveyAsync"], {
 		"./src/reddit/components/CharacterCountdown/index.m.less": function(e, t, n) {
@@ -214,7 +214,7 @@
 					className: C.a.optionsWrapper
 				}, Array.from({
 					length: e === c.a.NPS ? 11 : 7
-				}).map((o, a) => s.a.createElement(f.l, {
+				}).map((o, a) => s.a.createElement(f.n, {
 					className: Object(i.a)(C.a.option, {
 						[C.a.isSelected]: t === a
 					}),
@@ -274,7 +274,7 @@
 					onNumberSelected: e
 				}), s.a.createElement(S, {
 					type: a.type
-				}), s.a.createElement(f.i, {
+				}), s.a.createElement(f.k, {
 					className: C.a.submitBtn,
 					onClick: t,
 					disabled: void 0 === n
@@ -300,7 +300,7 @@
 					className: C.a.characterCountdown,
 					text: a,
 					maxChars: 240
-				}), s.a.createElement(f.i, {
+				}), s.a.createElement(f.k, {
 					className: C.a.submitBtn,
 					onClick: t
 				}, o.fbt._("Done", null, {
@@ -484,4 +484,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SurveyAsync.96912f697ceb3318029e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SurveyAsync.c8327d66ffb358fed6d9.js.map

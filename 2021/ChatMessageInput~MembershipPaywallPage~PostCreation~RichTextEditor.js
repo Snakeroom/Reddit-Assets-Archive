@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor.be94dfb00299eb474402.js
-// Retrieved at 9/2/2021, 4:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor.2ae3a324b1086629011e.js
+// Retrieved at 9/15/2021, 5:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor"], {
 		"./src/lib/forEachGroup/index.ts": function(t, e, n) {
@@ -823,7 +823,7 @@
 					role: "button",
 					tabIndex: -1
 				};
-				return r.a.createElement(c.q, p({}, E, {
+				return r.a.createElement(c.s, p({}, E, {
 					size: c.c.S,
 					priority: c.b.Plain,
 					isSquare: !0,
@@ -864,7 +864,7 @@
 					isConverting: (t, e) => Object(u.a)(t, e.draftKey)
 				}),
 				b = Object(i.b)(f);
-			e.a = s.a.memo(b(t => s.a.createElement(l.q, {
+			e.a = s.a.memo(b(t => s.a.createElement(l.s, {
 				priority: l.b.Plain,
 				size: l.c.XS,
 				text: s.a.createElement(s.a.Fragment, null, t.isConverting && s.a.createElement(g, {
@@ -3172,8 +3172,8 @@
 				$t = n("./src/reddit/components/RichTextEditor/media/MediaBlock/MediaView/StatusBar/index.m.less"),
 				te = n.n($t);
 			const ee = g.a.div("ControlRow", te.a),
-				ne = g.a.wrapped(Zt.q, "Button", te.a),
-				oe = g.a.wrapped(Zt.q, "ErrButton", te.a),
+				ne = g.a.wrapped(Zt.s, "Button", te.a),
+				oe = g.a.wrapped(Zt.s, "ErrButton", te.a),
 				re = g.a.div("Status", te.a),
 				se = g.a.wrapped(Xt.a, "ProgressBar", te.a),
 				ie = g.a.div("ErrorLine", te.a),
@@ -4979,7 +4979,7 @@
 				Xr = g.a.label("Label", Gr.a),
 				Zr = g.a.div("HintAndButtonRow", Gr.a),
 				$r = g.a.span("InvalidUrlHint", Gr.a),
-				ts = g.a.wrapped(Zt.i, "SubmitButton", Gr.a),
+				ts = g.a.wrapped(Zt.k, "SubmitButton", Gr.a),
 				es = t => {
 					t && (t.focus(), t.select())
 				},
@@ -7382,8 +7382,8 @@
 					src: t.thumbnail.url
 				})),
 				R = u.a.wrapped(b.a, "ButtonRow", E.a),
-				w = h.i,
-				B = u.a.wrapped(h.l, "CancelButton", E.a),
+				w = h.k,
+				B = u.a.wrapped(h.n, "CancelButton", E.a),
 				I = (t, e) => {
 					if (1 === t) return [0];
 					const n = c()(0, e, e / (t - 1));
@@ -7934,4 +7934,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor.be94dfb00299eb474402.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor.2ae3a324b1086629011e.js.map

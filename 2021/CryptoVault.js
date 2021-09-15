@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CryptoVault.a5fc9d56deb9e184c824.js
-// Retrieved at 8/17/2021, 2:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CryptoVault.ed30e9a0de029b3e9e29.js
+// Retrieved at 9/15/2021, 5:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CryptoVault"], {
 		"./src/reddit/actions/economics/claims/constants.ts": function(e, t, n) {
@@ -204,7 +204,7 @@
 				const E = Object(c.a)(e),
 					O = Object(b.a)(Object(d.a)(E)),
 					p = null === (o = null == O ? void 0 : O.subreddit) || void 0 === o ? void 0 : o.toLowerCase();
-				return O && p && p === t.name.toLowerCase() ? s.a.createElement(_.q, {
+				return O && p && p === t.name.toLowerCase() ? s.a.createElement(_.s, {
 					priority: _.b.Plain,
 					onClick: () => n(Object(a.h)(m.a.CRYPTO_BURN_POINTS, O)),
 					className: v.a.vaultActionPill,
@@ -688,4 +688,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CryptoVault.a5fc9d56deb9e184c824.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CryptoVault.ed30e9a0de029b3e9e29.js.map

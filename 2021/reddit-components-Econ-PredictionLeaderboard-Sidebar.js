@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PredictionLeaderboard-Sidebar.97ccc82435b852630e73.js
-// Retrieved at 9/7/2021, 1:20:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PredictionLeaderboard-Sidebar.e5f601ea3cfe3cd06bf9.js
+// Retrieved at 9/15/2021, 5:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./src/reddit/components/Econ/Prediction/UnicornIcon/index.tsx": function(e, t, c) {
@@ -261,7 +261,7 @@
 					})
 				}, r.a.createElement("div", {
 					className: x.a.header
-				}, r.a.createElement(i.q, {
+				}, r.a.createElement(i.s, {
 					className: x.a.closeButton,
 					Icon: Object(o.b)("close"),
 					priority: i.b.Plain,
@@ -522,7 +522,7 @@
 					tournamentId: s
 				}), n.a.createElement("div", {
 					className: k.a.openModalButtonContainer
-				}, n.a.createElement(u.i, {
+				}, n.a.createElement(u.k, {
 					className: k.a.openModalButton,
 					isFullWidth: !0,
 					onClick: () => {
@@ -545,4 +545,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PredictionLeaderboard-Sidebar.97ccc82435b852630e73.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PredictionLeaderboard-Sidebar.e5f601ea3cfe3cd06bf9.js.map

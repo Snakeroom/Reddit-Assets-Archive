@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.ea4c475b0eccc1042ce5.js
-// Retrieved at 8/31/2021, 6:10:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.3b27e840482ee35951c3.js
+// Retrieved at 9/15/2021, 5:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Wiki-ModHubWikiManagement"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -831,11 +831,11 @@
 						isDurationPermanent: t.isDurationPermanent,
 						onChangeDuration: this.onChangeBanDuration,
 						togglePermanent: this.togglePermanent
-					})), s.a.createElement(z.g, null, s.a.createElement(B.l, {
+					})), s.a.createElement(z.g, null, s.a.createElement(B.n, {
 						onClick: e.toggleModal
 					}, w.fbt._("Cancel", null, {
 						hk: "2TSLl5"
-					})), s.a.createElement(B.i, {
+					})), s.a.createElement(B.k, {
 						className: J.a.primaryButton,
 						onClick: this.onSubmit,
 						disabled: !Object(V.a)(t.username)
@@ -897,15 +897,15 @@
 								href: `${x.a.redditUrl}/message/compose/?to=${t.username}`,
 								rel: "noopener noreferrer",
 								target: "_blank"
-							}, s.a.createElement(B.o, null, w.fbt._("Send message", null, {
+							}, s.a.createElement(B.q, null, w.fbt._("Send message", null, {
 								hk: "21j5K5"
 							}))),
-							secondaryButton: s.a.createElement(B.o, {
+							secondaryButton: s.a.createElement(B.q, {
 								onClick: () => this.onClickEditUser(t)
 							}, w.fbt._("Edit", null, {
 								hk: "1nftDt"
 							})),
-							tertiaryButton: s.a.createElement(B.o, {
+							tertiaryButton: s.a.createElement(B.q, {
 								onClick: () => this.onClickRemove(t.id)
 							}, w.fbt._("Remove", null, {
 								hk: "3tYl0U"
@@ -935,7 +935,7 @@
 						props: e,
 						state: t
 					} = this;
-					return s.a.createElement(s.a.Fragment, null, s.a.createElement(p.c, null, s.a.createElement(B.i, {
+					return s.a.createElement(s.a.Fragment, null, s.a.createElement(p.c, null, s.a.createElement(B.k, {
 						onClick: this.props.toggleAddBannedContributorModal
 					}, w.fbt._("Ban contributor", null, {
 						hk: "1vQTTH"
@@ -1028,11 +1028,11 @@
 						onChange: this.onInputChange,
 						value: this.state.username,
 						autoFocus: !0
-					})), s.a.createElement(z.g, null, s.a.createElement(B.l, {
+					})), s.a.createElement(z.g, null, s.a.createElement(B.n, {
 						onClick: e.toggleModal
 					}, w.fbt._("Cancel", null, {
 						hk: "2TSLl5"
-					})), s.a.createElement(B.i, {
+					})), s.a.createElement(B.k, {
 						className: de.a.primaryButton,
 						onClick: this.onSubmit,
 						disabled: !Object(V.a)(t.username)
@@ -1082,10 +1082,10 @@
 								href: `${x.a.redditUrl}/message/compose/?to=${e.username}`,
 								rel: "noopener noreferrer",
 								target: "_blank"
-							}, s.a.createElement(B.o, null, w.fbt._("Send message", null, {
+							}, s.a.createElement(B.q, null, w.fbt._("Send message", null, {
 								hk: "13WC98"
 							}))),
-							secondaryButton: s.a.createElement(B.o, {
+							secondaryButton: s.a.createElement(B.q, {
 								onClick: () => this.onClickRemove(e.id)
 							}, w.fbt._("Remove", null, {
 								hk: "3tYl0U"
@@ -1115,7 +1115,7 @@
 						props: e,
 						state: t
 					} = this;
-					return s.a.createElement(s.a.Fragment, null, s.a.createElement(p.c, null, s.a.createElement(B.i, {
+					return s.a.createElement(s.a.Fragment, null, s.a.createElement(p.c, null, s.a.createElement(B.k, {
 						onClick: this.props.toggleAddContributorModal
 					}, w.fbt._("Add contributor", null, {
 						hk: "4v9hcQ"
@@ -1244,7 +1244,7 @@
 						sendHoverCardEvent: Pe.a,
 						tooltipId: `wikiPageContributor--${e.username}`,
 						userIcon: e.iconUrl
-					}), s.a.createElement(B.o, {
+					}), s.a.createElement(B.q, {
 						className: We.a.removeButton,
 						onClick: () => this.onClickRemove(e.username)
 					}, w.fbt._("Remove", null, {
@@ -1283,7 +1283,7 @@
 						maxLength: 22
 					}), s.a.createElement("div", {
 						className: We.a.buttonRow
-					}, s.a.createElement(B.i, {
+					}, s.a.createElement(B.k, {
 						className: We.a.addButton,
 						disabled: !this.canAdd(),
 						onClick: this.onAddContributor
@@ -1366,12 +1366,12 @@
 					const n = e.subredditSettings && "disabled" === e.subredditSettings.wikimode,
 						i = t.editPermissions !== e.wikiPageSettings.editPermissions || t.isVisible !== e.wikiPageSettings.isVisible,
 						o = t.editPermissions === Ce.a.Contributors || t.editPermissions === Ce.a.Inherit;
-					return s.a.createElement(s.a.Fragment, null, s.a.createElement(p.c, null, i && s.a.createElement(s.a.Fragment, null, s.a.createElement(B.l, {
+					return s.a.createElement(s.a.Fragment, null, s.a.createElement(p.c, null, i && s.a.createElement(s.a.Fragment, null, s.a.createElement(B.n, {
 						className: We.a.cancelButton,
 						onClick: this.onCancel
 					}, w.fbt._("Cancel", null, {
 						hk: "2TSLl5"
-					})), s.a.createElement(B.i, {
+					})), s.a.createElement(B.k, {
 						disabled: t.isSavePending,
 						onClick: this.onSave
 					}, w.fbt._("Save", null, {
@@ -1770,20 +1770,20 @@
 					}, o.a.createElement("div", {
 						ref: this.reasonElementRef,
 						className: S.a.reasonText
-					}, a.reason), !u && o.a.createElement(b.g, {
+					}, a.reason), !u && o.a.createElement(b.h, {
 						className: S.a.moreButton,
 						onClick: this.onShowMoreButtonClick
 					}, i.fbt._("more", null, {
 						hk: "2IGYPS"
 					})))), o.a.createElement("td", null, o.a.createElement("div", {
 						className: S.a.buttons
-					}, o.a.createElement(b.p, {
+					}, o.a.createElement(b.r, {
 						className: S.a.viewButton,
 						onClick: this.onViewClick,
 						to: p
 					}, i.fbt._("View", null, {
 						hk: "4imNnh"
-					})), g && o.a.createElement(o.a.Fragment, null, o.a.createElement(b.o, {
+					})), g && o.a.createElement(o.a.Fragment, null, o.a.createElement(b.q, {
 						className: S.a.hideShowButton,
 						disabled: this.state.isHideRequestPending,
 						onClick: this.onToggleHiddenClick
@@ -1791,7 +1791,7 @@
 						hk: "3YKyhU"
 					}) : i.fbt._("Hide", null, {
 						hk: "30nwHP"
-					})), o.a.createElement(b.o, {
+					})), o.a.createElement(b.q, {
 						className: S.a.revertButton,
 						onClick: this.onRevertClick
 					}, i.fbt._("Revert", null, {
@@ -1935,7 +1935,7 @@
 						className: S.a.content
 					}, !a && o.a.createElement("div", {
 						className: S.a.compareBar
-					}, o.a.createElement(b.p, {
+					}, o.a.createElement(b.r, {
 						className: S.a.compareButton,
 						disabled: g.length < 2,
 						onClick: this.onCompareClick,
@@ -2544,7 +2544,7 @@
 						onClick: this.props.onCancel
 					}, i.fbt._("Cancel", null, {
 						hk: "2TSLl5"
-					})), o.a.createElement(j.i, {
+					})), o.a.createElement(j.k, {
 						onClick: this.onSaveButtonClick,
 						disabled: e
 					}, e ? o.a.createElement(z.a, {
@@ -2713,12 +2713,12 @@
 							className: Object(d.a)(this.props.topBarClassName, Y.a.topBar, {
 								[Y.a.modHubTopBarExp]: e
 							})
-						}, o.a.createElement(j.l, {
+						}, o.a.createElement(j.n, {
 							onClick: this.onCancel,
 							disabled: c
 						}, i.fbt._("Cancel", null, {
 							hk: "2TSLl5"
-						})), o.a.createElement(j.i, {
+						})), o.a.createElement(j.k, {
 							disabled: !v,
 							onClick: this.showRevisionReasonModal
 						}, i.fbt._("Save", null, {
@@ -3026,12 +3026,12 @@
 						revision: n.revision
 					}), a.a.createElement("div", {
 						className: j.a.flexSpacer
-					}), m && a.a.createElement(b.n, {
+					}), m && a.a.createElement(b.p, {
 						className: j.a.button,
 						to: `/r/${r}/about/wiki/settings/${o}`
 					}, i.fbt._("Page settings", null, {
 						hk: "2IAvWU"
-					})), c && u && a.a.createElement(b.k, {
+					})), c && u && a.a.createElement(b.m, {
 						className: j.a.button,
 						to: Object(s.c)(k, {
 							[p.a]: !0
@@ -3080,11 +3080,11 @@
 					title: l
 				} = e;
 				let c = null;
-				return n && t ? c = i.createElement(s.k, {
+				return n && t ? c = i.createElement(s.m, {
 					className: a.a.button,
 					onClick: e.onButtonClick,
 					to: t
-				}, n) : n && d && (c = i.createElement(s.i, {
+				}, n) : n && d && (c = i.createElement(s.k, {
 					className: a.a.button,
 					onClick: e.onButtonClick
 				}, n)), i.createElement("div", {
@@ -3155,7 +3155,7 @@
 				} = e;
 				return s.a.createElement("div", {
 					className: Object(o.a)(i, d.a.container)
-				}, r, n && t && s.a.createElement(a.p, {
+				}, r, n && t && s.a.createElement(a.r, {
 					className: d.a.linkButton,
 					to: t
 				}, n))
@@ -3367,4 +3367,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.ea4c475b0eccc1042ce5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.3b27e840482ee35951c3.js.map

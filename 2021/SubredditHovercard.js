@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditHovercard.b2972379149c951a877f.js
-// Retrieved at 8/31/2021, 6:10:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditHovercard.0754c566d09ded236840.js
+// Retrieved at 9/15/2021, 5:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditHovercard"], {
 		"./src/reddit/components/CommunityType/index.m.less": function(e, t, r) {
@@ -290,8 +290,8 @@
 				O = r("./src/reddit/components/JSAPIContainers/index.tsx"),
 				I = r("./src/reddit/components/OverlayAwareTooltip/index.tsx"),
 				N = r("./src/reddit/components/SubredditIcon/index.tsx"),
-				S = r("./src/reddit/controls/Button/index.tsx"),
-				j = r("./src/reddit/helpers/truncateStringWithEllipsis.ts"),
+				j = r("./src/reddit/controls/Button/index.tsx"),
+				S = r("./src/reddit/helpers/truncateStringWithEllipsis.ts"),
 				_ = r("./src/reddit/components/DiscoveryUnit/SubredditsDiscoveryUnit/communityClickContext.ts").c,
 				C = r("./src/reddit/components/Hovercards/SubredditHovercard/SubredditOptions.m.less"),
 				T = r.n(C);
@@ -346,7 +346,7 @@
 					subredditAboutInfo: u
 				}), s.a.createElement(x.a, {
 					subreddit: l
-				}), s.a.createElement(w, null, Object(j.a)(u.publicDescription || "", 140)), s.a.createElement(S.k, {
+				}), s.a.createElement(w, null, Object(S.a)(u.publicDescription || "", 140)), s.a.createElement(j.m, {
 					onClick: b,
 					to: `${l.url}`
 				}, B._("View Community", null, {
@@ -463,9 +463,9 @@
 			})), r.d(t, "d", (function() {
 				return N
 			})), r.d(t, "e", (function() {
-				return S
-			})), r.d(t, "f", (function() {
 				return j
+			})), r.d(t, "f", (function() {
+				return S
 			})), r.d(t, "g", (function() {
 				return _
 			})), r.d(t, "h", (function() {
@@ -637,7 +637,7 @@
 					data: o
 				})
 			};
-			var S = e => {
+			var j = e => {
 				const {
 					post: t,
 					subredditOrProfile: r,
@@ -660,7 +660,7 @@
 					data: i
 				})
 			};
-			var j = e => {
+			var S = e => {
 				const {
 					post: t,
 					subredditOrProfile: r
@@ -799,34 +799,38 @@
 				return u
 			})), r.d(t, "b", (function() {
 				return m
+			})), r.d(t, "g", (function() {
+				return p
 			})), r.d(t, "a", (function() {
 				return b
-			})), r.d(t, "j", (function() {
-				return E
-			})), r.d(t, "k", (function() {
-				return x
-			})), r.d(t, "i", (function() {
-				return O
-			})), r.d(t, "m", (function() {
-				return I
-			})), r.d(t, "n", (function() {
-				return N
 			})), r.d(t, "l", (function() {
-				return S
-			})), r.d(t, "p", (function() {
-				return j
+				return E
+			})), r.d(t, "m", (function() {
+				return x
+			})), r.d(t, "k", (function() {
+				return O
 			})), r.d(t, "o", (function() {
+				return I
+			})), r.d(t, "p", (function() {
+				return N
+			})), r.d(t, "n", (function() {
+				return j
+			})), r.d(t, "r", (function() {
+				return S
+			})), r.d(t, "q", (function() {
 				return _
 			})), r.d(t, "e", (function() {
 				return C
 			})), r.d(t, "f", (function() {
 				return T
-			})), r.d(t, "h", (function() {
+			})), r.d(t, "j", (function() {
 				return P
 			})), r.d(t, "d", (function() {
 				return B
-			})), r.d(t, "g", (function() {
+			})), r.d(t, "h", (function() {
 				return g
+			})), r.d(t, "i", (function() {
+				return k
 			}));
 			var n = r("./node_modules/react/index.js"),
 				s = r.n(n),
@@ -874,8 +878,8 @@
 						kind: O = b.Button,
 						priority: I = m.Primary,
 						redditStyle: N,
-						size: S = u.S,
-						text: j,
+						size: j = u.S,
+						text: S,
 						textClassName: _,
 						...C
 					} = e, T = (({
@@ -902,8 +906,8 @@
 						isSquare: v,
 						priority: I,
 						redditStyle: N,
-						size: S,
-						text: j
+						size: j,
+						text: S
 					}), P = (({
 						children: e,
 						text: t,
@@ -926,7 +930,7 @@
 						isFilled: a === m.Primary
 					})))({
 						children: E,
-						text: j,
+						text: S,
 						Icon: r,
 						iconClassName: n,
 						iconPosition: i,
@@ -964,11 +968,11 @@
 					kind: b.InternalLink,
 					priority: m.Secondary
 				}, e)),
-				S = e => s.a.createElement(v, c({
+				j = e => s.a.createElement(v, c({
 					kind: b.Button,
 					priority: m.Secondary
 				}, e)),
-				j = e => s.a.createElement(v, c({
+				S = e => s.a.createElement(v, c({
 					kind: b.InternalLink,
 					priority: m.Plain
 				}, e)),
@@ -1011,8 +1015,15 @@
 				}) => s.a.createElement(v, c({
 					kind: b.Button,
 					className: Object(o.a)(e, d.a.InlineTextButton)
+				}, t)),
+				k = ({
+					className: e,
+					...t
+				}) => s.a.createElement(v, c({
+					kind: b.Button,
+					className: Object(o.a)(e, d.a.PlainLinkButton)
 				}, t));
-			t.q = v
+			t.s = v
 		},
 		"./src/reddit/controls/IconTooltip/index.m.less": function(e, t, r) {
 			e.exports = {
@@ -1137,4 +1148,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditHovercard.b2972379149c951a877f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditHovercard.0754c566d09ded236840.js.map

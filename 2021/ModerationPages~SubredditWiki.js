@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.9b62876e4b2b0f250589.js
-// Retrieved at 9/13/2021, 3:50:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.3efbed828e83691f5b0f.js
+// Retrieved at 9/15/2021, 5:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, r) {
@@ -2287,7 +2287,7 @@
 				onAddUserToQuickReplyList: f,
 				children: h
 			}) => {
-				return a.a.createElement(c.q, {
+				return a.a.createElement(c.s, {
 					onClick: t => {
 						if (p && p(t), e(), b === n.awardNotification) return f();
 						s(Object(l.b)(i))
@@ -2468,7 +2468,7 @@
 				G = r.n(q);
 			const {
 				fbt: z
-			} = r("./node_modules/fbt/lib/FbtPublic.js"), Q = l.a.wrapped(A, "PrivateKey", G.a), Z = l.a.div("ButtonsContainer", G.a), J = l.a.div("Container", G.a), Y = l.a.div("ContainerExp", G.a), X = l.a.div("Description", G.a), V = l.a.div("PrivateSubredditDetails", G.a), $ = l.a.div("PrivateSubredditDescription", G.a), ee = l.a.h3("PrivateSubredditName", G.a), te = l.a.a("Link", G.a), re = l.a.wrapped(U.k, "LinkRouterButton", G.a), ne = l.a.wrapped(U.j, "LinkButton", G.a), se = l.a.wrapped(U.n, "SecondaryLinkRouterButton", G.a), ae = l.a.wrapped(U.m, "SecondaryLinkButton", G.a), ie = l.a.wrapped(re, "GoHomeLinkButton", G.a), oe = l.a.wrapped(f.a, "CreateCommunityButton", G.a), de = l.a.img("Image", G.a), ce = l.a.img("ImagePlaceholder", G.a), le = l.a.wrapped(re, "LeftLinkRouterButton", G.a), ue = l.a.wrapped(ne, "LeftLinkButton", G.a), me = l.a.wrapped(ae, "SecondaryLeftLinkButton", G.a), be = l.a.wrapped(se, "SecondaryLeftLinkRouterButton", G.a), pe = l.a.h3("Title", G.a), fe = l.a.div("PageBody", G.a), he = l.a.div("QuarantineMessageWrapper", G.a), ve = Object(c.c)({
+			} = r("./node_modules/fbt/lib/FbtPublic.js"), Q = l.a.wrapped(A, "PrivateKey", G.a), Z = l.a.div("ButtonsContainer", G.a), J = l.a.div("Container", G.a), Y = l.a.div("ContainerExp", G.a), X = l.a.div("Description", G.a), V = l.a.div("PrivateSubredditDetails", G.a), $ = l.a.div("PrivateSubredditDescription", G.a), ee = l.a.h3("PrivateSubredditName", G.a), te = l.a.a("Link", G.a), re = l.a.wrapped(U.m, "LinkRouterButton", G.a), ne = l.a.wrapped(U.l, "LinkButton", G.a), se = l.a.wrapped(U.p, "SecondaryLinkRouterButton", G.a), ae = l.a.wrapped(U.o, "SecondaryLinkButton", G.a), ie = l.a.wrapped(re, "GoHomeLinkButton", G.a), oe = l.a.wrapped(f.a, "CreateCommunityButton", G.a), de = l.a.img("Image", G.a), ce = l.a.img("ImagePlaceholder", G.a), le = l.a.wrapped(re, "LeftLinkRouterButton", G.a), ue = l.a.wrapped(ne, "LeftLinkButton", G.a), me = l.a.wrapped(ae, "SecondaryLeftLinkButton", G.a), be = l.a.wrapped(se, "SecondaryLeftLinkRouterButton", G.a), pe = l.a.h3("Title", G.a), fe = l.a.div("PageBody", G.a), he = l.a.div("QuarantineMessageWrapper", G.a), ve = Object(c.c)({
 				isLoggedIn: H.J,
 				origin: K.j,
 				user: H.k,
@@ -2829,7 +2829,7 @@
 				userIsSuspended: c,
 				onClick: l
 			}) => {
-				return a.a.createElement(b.q, {
+				return a.a.createElement(b.s, {
 					className: e,
 					disabled: c || d,
 					onClick: e => {
@@ -3813,7 +3813,7 @@
 				isOwnProfile: n,
 				onClick: c
 			}) {
-				return s.a.createElement(i.q, {
+				return s.a.createElement(i.s, {
 					onClick: c,
 					isFullWidth: !0,
 					className: Object(a.a)(l.a.snoovatarButton, {
@@ -4192,7 +4192,7 @@
 					priority: t,
 					small: r,
 					...n
-				}) => a.a.createElement(i.q, u({}, n, {
+				}) => a.a.createElement(i.s, u({}, n, {
 					priority: m(i.b.Primary, e, t),
 					className: Object(l.a)(n.className, c.a.BaseButton),
 					size: r ? i.c.S : i.c.M
@@ -4216,7 +4216,7 @@
 					priority: r,
 					small: n,
 					...s
-				}) => a.a.createElement(i.q, u({}, s, {
+				}) => a.a.createElement(i.s, u({}, s, {
 					priority: m(i.b.Secondary, t, r),
 					className: Object(l.a)(s.className, c.a.BaseButton),
 					size: n ? i.c.S : i.c.M,
@@ -5137,4 +5137,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.9b62876e4b2b0f250589.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.3efbed828e83691f5b0f.js.map

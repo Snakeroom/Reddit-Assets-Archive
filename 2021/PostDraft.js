@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostDraft.bfc96b8f7ab17b5e202e.js
-// Retrieved at 9/15/2021, 4:10:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostDraft.2560bffa9bb82100715d.js
+// Retrieved at 9/15/2021, 5:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostDraft"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -591,7 +591,7 @@
 						}))
 					}
 					return a
-				}, X = Object(i.a)(a.l), Y = Object(i.a)(a.m), K = Object(i.a)(a.k), q = e => async (t, n) => {
+				}, Y = Object(i.a)(a.l), K = Object(i.a)(a.m), X = Object(i.a)(a.k), q = e => async (t, n) => {
 					const s = n().platform.currentPage.locationState;
 					t(!(!s || !s[d.a.IsOverlay]) ? Object(w.a)(e.permalink) : Object(o.b)(Object(j.b)(e.permalink)))
 				}, Z = Object(i.a)(a.i), Q = Object(i.a)(a.j), $ = Object(i.a)(a.h), ee = Object(i.a)(a.p), te = Object(i.a)(a.o), ne = Object(i.a)(a.q), se = e => async t => {
@@ -628,10 +628,10 @@
 					})(o, a))), d && n.push(t(z(o, d))), void 0 !== r && n.push(t(((e, t) => async (n, o, {
 						apiContext: r
 					}) => {
-						n(X());
+						n(Y());
 						const i = await y(r(), e, t);
 						let a = !1;
-						if (i.ok) n(Y({
+						if (i.ok) n(K({
 							collectionId: e,
 							newDescription: t
 						})), n(Object(c.f)({
@@ -642,7 +642,7 @@
 						})), a = !0;
 						else {
 							const e = i.error;
-							n(K(e)), n(Object(c.f)({
+							n(X(e)), n(Object(c.f)({
 								kind: k.b.Error,
 								text: s.fbt._("Something went wrong. Just don't panic.", null, {
 									hk: "4Ck6Cm"
@@ -2961,12 +2961,12 @@
 						rtJsonElementProps: r
 					});
 					switch (s) {
-						case b.Xd.SmIcon:
+						case b.ae.SmIcon:
 							return o.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: r
 							});
-						case b.Xd.SmIconHc:
+						case b.ae.SmIconHc:
 							return o.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -3597,7 +3597,7 @@
 						style: {
 							maxHeight: this.state.isTruncated ? u : "none"
 						}
-					}, e), this.state.isTruncated && o.a.createElement(m.o, {
+					}, e), this.state.isTruncated && o.a.createElement(m.q, {
 						className: j.a.seeMore,
 						onClick: this.handleSeeMoreClick
 					}, k._("See More", null, {
@@ -4567,7 +4567,7 @@
 					className: c.a.title
 				}, e || s.fbt._("Sorry, there doesn't seem to be anything here.", null, {
 					hk: "3VvHek"
-				})), r.a.createElement(i.k, {
+				})), r.a.createElement(i.m, {
 					className: c.a.primaryRouterLink,
 					to: "/"
 				}, s.fbt._("Go Home", null, {
@@ -4581,7 +4581,7 @@
 					className: c.a.title
 				}, e || s.fbt._("Sorry, You do not have permission to view this page.", null, {
 					hk: "4lRbHD"
-				})), r.a.createElement(i.k, {
+				})), r.a.createElement(i.m, {
 					className: c.a.primaryRouterLink,
 					to: "/"
 				}, s.fbt._("Go Home", null, {
@@ -4726,12 +4726,12 @@
 				c = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.Rd
+						experimentName: s.Ud
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.Xd.SmIcon || t === s.Xd.SmIconHc
+					return t === s.ae.SmIcon || t === s.ae.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -4754,4 +4754,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.bfc96b8f7ab17b5e202e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.2560bffa9bb82100715d.js.map

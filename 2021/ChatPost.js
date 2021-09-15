@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.e7f0a96cde4e5554cd1f.js
-// Retrieved at 9/15/2021, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.9f87e115490967332e69.js
+// Retrieved at 9/15/2021, 5:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -1082,7 +1082,7 @@
 					className: E.a.StateContainer
 				}, i.a.createElement(k, null), i.a.createElement(I, null, n.fbt._("That comment is missing", null, {
 					hk: "1i1U0i"
-				})), i.a.createElement(p.k, {
+				})), i.a.createElement(p.m, {
 					to: Object(b.b)(e)
 				}, n.fbt._("View all comments", null, {
 					hk: "2CgaIx"
@@ -1105,7 +1105,7 @@
 					isLoggedOut: !1
 				}) : n.fbt._("Sorry, comments couldn't load!", null, {
 					hk: "2h6LDi"
-				})), i.a.createElement(p.i, {
+				})), i.a.createElement(p.k, {
 					onClick: t
 				}, n.fbt._("Retry", null, {
 					hk: "NOuNi"
@@ -2599,7 +2599,7 @@
 						key: "nextActiveCommentsSection",
 						ref: this._refNextActiveComments,
 						className: ls.a.ScrollerSection
-					}, this.state.chunks[this.state.activeChunkIndex + 1])), c.a.createElement(ms, null, c.a.createElement(cs.i, {
+					}, this.state.chunks[this.state.activeChunkIndex + 1])), c.a.createElement(ms, null, c.a.createElement(cs.k, {
 						className: s,
 						onClick: () => this.scrollToLastBottomChunk()
 					}, this.state.newCommentsCount, " ", te.fbt._({
@@ -2917,7 +2917,7 @@
 					className: Object(a.a)(v.a.scrollGradient, {
 						[v.a.gradientVisible]: E
 					})
-				}), o.a.createElement(c.q, {
+				}), o.a.createElement(c.s, {
 					priority: c.b.Secondary,
 					className: v.a.ctaButton,
 					onClick: () => {
@@ -3830,4 +3830,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.e7f0a96cde4e5554cd1f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.9f87e115490967332e69.js.map

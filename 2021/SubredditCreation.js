@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditCreation.e8b48cf76b2a0867a561.js
-// Retrieved at 9/9/2021, 3:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditCreation.542af8a9672ea02175a1.js
+// Retrieved at 9/15/2021, 5:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditCreation"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -474,7 +474,7 @@
 					last: e.last,
 					indent: e.indent,
 					disabled: e.disabled
-				}, s.a.createElement(K, null, s.a.createElement(L.a, null, s.a.createElement(V, null, e.label)), s.a.createElement(J, null, e.subtext)), s.a.createElement(z, null, s.a.createElement(Q, null, s.a.createElement(D.l, {
+				}, s.a.createElement(K, null, s.a.createElement(L.a, null, s.a.createElement(V, null, e.label)), s.a.createElement(J, null, e.subtext)), s.a.createElement(z, null, s.a.createElement(Q, null, s.a.createElement(D.n, {
 					onClick: e.onClick
 				}, e.actionText)))),
 				xe = e => s.a.createElement(X, {
@@ -1199,14 +1199,14 @@
 						hk: "3dSTrq"
 					})), r.a.createElement("div", {
 						className: Y.a.buttonContainer
-					}, r.a.createElement(w.q, {
+					}, r.a.createElement(w.s, {
 						disabled: t,
 						className: Y.a.createButton,
 						onClick: this.onCancelCreation,
 						priority: w.b.Secondary
 					}, a.fbt._("Cancel", null, {
 						hk: "2TSLl5"
-					})), r.a.createElement(w.q, {
+					})), r.a.createElement(w.s, {
 						disabled: t,
 						className: Y.a.createButton,
 						onClick: this.onCreateCommunityClick
@@ -1407,7 +1407,7 @@
 						className: f.a.detailsContainer
 					}, t), c.a.createElement(C.a, {
 						className: f.a.buttonRow
-					}, c.a.createElement(b.i, {
+					}, c.a.createElement(b.k, {
 						className: f.a.confirmButton,
 						onClick: e.onConfirmed
 					}, a.fbt._("Ok", null, {
@@ -2017,11 +2017,11 @@
 			const r = e => {
 				const t = Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: a.nc
+					experimentName: a.qc
 				});
-				return !(!t || Object(a.qe)(t))
+				return !(!t || Object(a.te)(t))
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.e8b48cf76b2a0867a561.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.542af8a9672ea02175a1.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SpecialMembershipsEmotesTooltip.c55a392c3b69bdd6993f.js
-// Retrieved at 8/11/2021, 11:00:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SpecialMembershipsEmotesTooltip.b66090ed43b5655b65fe.js
+// Retrieved at 9/15/2021, 5:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SpecialMembershipsEmotesTooltip"], {
 		"./src/reddit/components/RichTextEditor/emotes/BaseTooltip.tsx": function(e, t, s) {
@@ -378,7 +378,7 @@
 						className: k.a.upsellMoreEmotesImg,
 						src: e,
 						key: `${e}_${t}`
-					}))), a.a.createElement(f.k, {
+					}))), a.a.createElement(f.m, {
 						className: k.a.upsellMoreEmotesButton,
 						to: l,
 						onClick: e => {
@@ -525,4 +525,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SpecialMembershipsEmotesTooltip.c55a392c3b69bdd6993f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SpecialMembershipsEmotesTooltip.b66090ed43b5655b65fe.js.map

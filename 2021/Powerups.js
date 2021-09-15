@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Powerups.59476fc2f2241add0cb8.js
-// Retrieved at 9/15/2021, 4:10:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Powerups.a9b95aa368c459cfe691.js
+// Retrieved at 9/15/2021, 5:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Powerups"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, a, t) {
@@ -591,7 +591,7 @@
 						text: n,
 						disabled: l
 					})
-				})), !l && !r && s.a.createElement(u.q, {
+				})), !l && !r && s.a.createElement(u.s, {
 					className: y.a.selectAllButton,
 					onClick: () => {
 						a(m ? [] : c.map(({
@@ -608,9 +608,9 @@
 			};
 			var x = t("./src/reddit/controls/LoadingIcon/index.tsx"),
 				C = t("./src/reddit/components/PowerupsSignUpModal/signupButton.m.less"),
-				O = t.n(C);
+				j = t.n(C);
 			const {
-				fbt: j
+				fbt: O
 			} = t("./node_modules/fbt/lib/FbtPublic.js"), I = ({
 				className: e,
 				disabled: a,
@@ -618,14 +618,14 @@
 				isLoading: n,
 				wasError: l
 			}) => {
-				const r = l ? j._("Try again", null, {
+				const r = l ? O._("Try again", null, {
 					hk: "1cKOSe"
-				}) : j._("Turn on Powerups", null, {
+				}) : O._("Turn on Powerups", null, {
 					hk: "AuDZE"
 				});
-				return s.a.createElement(u.h, {
-					className: Object(o.a)(e, O.a.button, {
-						[O.a.loading]: n
+				return s.a.createElement(u.j, {
+					className: Object(o.a)(e, j.a.button, {
+						[j.a.loading]: n
 					}),
 					disabled: a || n,
 					onClick: t,
@@ -679,7 +679,7 @@
 					hk: "2Pz0Sn"
 				})))], {
 					hk: "p9zKt"
-				}), O = N || i ? M._("{=Your communities}{=have Powerups}", [M._param("=Your communities", s.a.createElement("div", null, M._("Your communities", null, {
+				}), j = N || i ? M._("{=Your communities}{=have Powerups}", [M._param("=Your communities", s.a.createElement("div", null, M._("Your communities", null, {
 					hk: "3ySkxw"
 				}))), M._param("=have Powerups", s.a.createElement("div", null, M._("have Powerups", null, {
 					hk: "4rHX2f"
@@ -691,7 +691,7 @@
 					hk: "4EPQY"
 				})))], {
 					hk: "1K9FOM"
-				}), j = c ? C : O, F = b || N || y ? M._("{=Hold tight! It can take up to 5 minutes for}{=Powerups to appear in yourcommunity.}", [M._param("=Hold tight! It can take up to 5 minutes for", s.a.createElement("div", null, M._("Hold tight! It can take up to 5 minutes for", null, {
+				}), O = c ? C : j, F = b || N || y ? M._("{=Hold tight! It can take up to 5 minutes for}{=Powerups to appear in yourcommunity.}", [M._param("=Hold tight! It can take up to 5 minutes for", s.a.createElement("div", null, M._("Hold tight! It can take up to 5 minutes for", null, {
 					hk: "1cFoaI"
 				}))), M._param("=Powerups to appear in yourcommunity.", s.a.createElement("div", null, M._({
 					"*": "Powerups to appear in your communities.",
@@ -724,7 +724,7 @@
 					className: q.a.titleContainer
 				}, s.a.createElement("h1", {
 					className: q.a.titleText
-				}, j), s.a.createElement("h2", {
+				}, O), s.a.createElement("h2", {
 					className: q.a.subtitleText
 				}, F)), !c && s.a.createElement(P, {
 					onChange: k,
@@ -763,7 +763,7 @@
 					className: q.a.successText
 				}, M._("Let your community know about Powerups with a pinned post", null, {
 					hk: "3bII20"
-				})), s.a.createElement(u.q, {
+				})), s.a.createElement(u.s, {
 					className: q.a.successButton,
 					to: `/${o[0].displayText}/submit`,
 					kind: u.a.InternalLink,
@@ -951,7 +951,7 @@
 				className: J.a.faqMoreQuestionsHeading
 			}, Z._("Have more questions? We've got answers.", null, {
 				hk: "3Entyj"
-			})), s.a.createElement(u.q, {
+			})), s.a.createElement(u.s, {
 				className: J.a.fullFaqsButton,
 				priority: u.b.Secondary,
 				href: "https://mods.reddithelp.com/hc/en-us/articles/4403699823629",
@@ -967,7 +967,7 @@
 				className: J.a.faqTryOutSubheading
 			}, Z._("Ok, you've made it to the bottom of the page. What do you think? Are Powerups for your community?", null, {
 				hk: "3062Vv"
-			})), s.a.createElement(u.h, {
+			})), s.a.createElement(u.j, {
 				onClick: e,
 				disabled: !(null == a ? void 0 : a.length),
 				priority: u.b.Primary,
@@ -1192,7 +1192,7 @@
 					hk: "2euXqd"
 				})))], {
 					hk: "2FL5at"
-				})), s.a.createElement(u.h, {
+				})), s.a.createElement(u.j, {
 					onClick: p,
 					disabled: !(null == a ? void 0 : a.length),
 					priority: u.b.Primary,
@@ -1292,4 +1292,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Powerups.59476fc2f2241add0cb8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Powerups.a9b95aa368c459cfe691.js.map

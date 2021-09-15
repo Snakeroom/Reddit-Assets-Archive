@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/BannedUserModal.7843d7c06bdf65bb07e5.js
-// Retrieved at 8/31/2021, 6:10:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/BannedUserModal.593b3b289eb3c73dec32.js
+// Retrieved at 9/15/2021, 5:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["BannedUserModal"], {
 		"./src/reddit/actions/inContextModeration.ts": function(e, t, n) {
@@ -790,7 +790,7 @@
 						"data-redditstyle": !0
 					}, s.fbt._("Cancel", null, {
 						hk: "2TSLl5"
-					})), a.a.createElement(b.i, {
+					})), a.a.createElement(b.k, {
 						className: j.a.PrimaryButton,
 						onClick: this.onSubmit,
 						disabled: !this.canSave(),
@@ -1204,4 +1204,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BannedUserModal.7843d7c06bdf65bb07e5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BannedUserModal.593b3b289eb3c73dec32.js.map

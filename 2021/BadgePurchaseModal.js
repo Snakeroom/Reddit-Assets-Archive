@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/BadgePurchaseModal.0ed9c52130d57c1363fa.js
-// Retrieved at 8/17/2021, 2:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/BadgePurchaseModal.3fa6cfbc48ae35faa0ff.js
+// Retrieved at 9/15/2021, 5:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["BadgePurchaseModal"], {
 		"./src/reddit/actions/economics/subredditPremium/actionCreators.ts": function(e, t, s) {
@@ -204,11 +204,11 @@
 					}(a, d.subredditId), function(e, t, s) {
 						return r.a.createElement("div", {
 							className: y.a.controls
-						}, r.a.createElement(g.o, {
+						}, r.a.createElement(g.q, {
 							onClick: () => s(e.subredditId)
 						}, P._("Done", null, {
 							hk: "36WZte"
-						})), r.a.createElement(g.i, {
+						})), r.a.createElement(g.k, {
 							onClick: () => t(e.subredditId, e.id)
 						}, P._("Apply badge", null, {
 							hk: "4nWjqv"
@@ -280,7 +280,7 @@
 							className: D.a.tokenSymbol,
 							subredditId: e.subredditId
 						}), Object(l.a)(e.price))
-					}(e.product), (t = e.purchaseInProgress, s = e.tokenName, n = e.onPurchase, r.a.createElement(g.i, {
+					}(e.product), (t = e.purchaseInProgress, s = e.tokenName, n = e.onPurchase, r.a.createElement(g.k, {
 						onClick: n
 					}, t ? r.a.createElement(B.a, {
 						className: D.a.loadingIcon,
@@ -291,14 +291,14 @@
 					var t, s, n, c
 				})),
 				H = s("./src/reddit/components/Badges/PurchaseModal/index.m.less"),
-				R = s.n(H);
-			const T = Object(d.c)({
+				q = s.n(H);
+			const R = Object(d.c)({
 					alreadyOwned: i.b
 				}),
-				q = Object(c.b)(T);
-			t.default = Object(a.a)(q((function(e) {
+				T = Object(c.b)(R);
+			t.default = Object(a.a)(T((function(e) {
 				return r.a.createElement("div", {
-					className: Object(o.a)(R.a.container, e.className)
+					className: Object(o.a)(q.a.container, e.className)
 				}, e.alreadyOwned ? r.a.createElement(C, {
 					productId: e.productId
 				}) : r.a.createElement(z, {
@@ -554,4 +554,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BadgePurchaseModal.0ed9c52130d57c1363fa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BadgePurchaseModal.3fa6cfbc48ae35faa0ff.js.map

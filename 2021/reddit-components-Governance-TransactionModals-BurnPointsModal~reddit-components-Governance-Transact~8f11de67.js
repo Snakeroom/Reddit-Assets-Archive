@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67.90eddb237cac52c27204.js
-// Retrieved at 8/30/2021, 12:20:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67.198e305a07533cad553f.js
+// Retrieved at 9/15/2021, 5:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67"], {
 		"./src/reddit/components/Governance/TransactionModals/ApprovalModal/ApprovalBar.m.less": function(A, e, t) {
@@ -277,12 +277,12 @@
 					subredditId: A.subredditId,
 					small: !0,
 					grey: !0
-				})), i.a.createElement(y.l, {
+				})), i.a.createElement(y.n, {
 					className: X.a.declineButton,
 					onClick: A.onDecline
 				}, w._("Decline", null, {
 					hk: "2k3T9H"
-				})), i.a.createElement(y.l, {
+				})), i.a.createElement(y.n, {
 					disabled: A.disabled,
 					onClick: A.onApprove
 				}, w._("Approve", null, {
@@ -333,7 +333,7 @@
 					})
 				}, E.fbt._("Wrong password", null, {
 					hk: "2L9j8l"
-				})))), i.a.createElement(y.i, {
+				})))), i.a.createElement(y.k, {
 					className: M.a.approveButton,
 					disabled: s,
 					onClick: l
@@ -476,7 +476,7 @@
 					className: _.a.approveInstructions
 				}, $._("You can approve this in your browser with your Vault Password instead.", null, {
 					hk: "2IOdOY"
-				})), i.a.createElement(y.l, {
+				})), i.a.createElement(y.n, {
 					onClick: A.onNotificationNotReceived
 				}, $._("Approve with Vault Password", null, {
 					hk: "1lwlYz"
@@ -1091,4 +1091,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67.90eddb237cac52c27204.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67.198e305a07533cad553f.js.map

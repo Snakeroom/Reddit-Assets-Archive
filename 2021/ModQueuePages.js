@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.468f2074bac2c3108111.js
-// Retrieved at 9/15/2021, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.e30fc0280f067ebbec73.js
+// Retrieved at 9/15/2021, 5:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -2237,7 +2237,7 @@
 					className: Object(i.a)(f.a.scrollGradient, {
 						[f.a.gradientVisible]: y
 					})
-				}), r.a.createElement(d.q, {
+				}), r.a.createElement(d.s, {
 					priority: d.b.Secondary,
 					className: f.a.ctaButton,
 					onClick: () => {
@@ -3023,12 +3023,12 @@
 						onChange: this.setSelectedFlair
 					}), i.a.createElement("div", {
 						className: I.a.buttonsRow
-					}, i.a.createElement(f.i, {
+					}, i.a.createElement(f.k, {
 						disabled: !l,
 						onClick: this.onApply
 					}, r.fbt._("Apply", null, {
 						hk: "3mAjVQ"
-					})), i.a.createElement(f.l, {
+					})), i.a.createElement(f.n, {
 						className: I.a.clearButton,
 						onClick: this.onClear
 					}, r.fbt._("Clear Flair", null, {
@@ -4976,12 +4976,12 @@
 						rtJsonElementProps: o
 					});
 					switch (n) {
-						case b.Xd.SmIcon:
+						case b.ae.SmIcon:
 							return r.a.createElement(h, {
 								subredditName: s,
 								rtJsonElementProps: o
 							});
-						case b.Xd.SmIconHc:
+						case b.ae.SmIconHc:
 							return r.a.createElement(h, {
 								subredditName: s,
 								isHoverable: !0,
@@ -5129,7 +5129,7 @@
 						style: {
 							maxHeight: this.state.isTruncated ? m : "none"
 						}
-					}, e), this.state.isTruncated && r.a.createElement(u.o, {
+					}, e), this.state.isTruncated && r.a.createElement(u.q, {
 						className: w.a.seeMore,
 						onClick: this.handleSeeMoreClick
 					}, O._("See More", null, {
@@ -6574,12 +6574,12 @@
 				d = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: n.Rd
+						experimentName: n.Ud
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === n.Xd.SmIcon || t === n.Xd.SmIconHc
+					return t === n.ae.SmIcon || t === n.ae.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -6602,4 +6602,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.468f2074bac2c3108111.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.e30fc0280f067ebbec73.js.map

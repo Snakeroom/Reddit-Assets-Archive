@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~ModListing.55952315b6c42ccc1e9b.js
-// Retrieved at 9/15/2021, 5:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~ModListing.00e0c198f4e559382dfc.js
+// Retrieved at 9/15/2021, 5:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~ModListing"], {
 		"./src/reddit/actions/focusedVerticals/index.ts": function(e, t, s) {
@@ -306,7 +306,7 @@
 				f = s("./src/lib/lessComponent.tsx"),
 				y = s("./src/reddit/pages/Subreddit/SurveyUnit.tsx");
 			const w = f.a.wrapped(m.a, "BackgroundPlaceholder", b.a),
-				S = f.a.wrapped(p.k, "SubmitLink", b.a),
+				S = f.a.wrapped(p.m, "SubmitLink", b.a),
 				_ = e => {
 					switch (e) {
 						case d.V.RISING:
@@ -1248,7 +1248,7 @@
 						const {
 							sort: t
 						} = this.props;
-						return r.a.createElement(Ie.q, {
+						return r.a.createElement(Ie.s, {
 							className: Object(i.a)(Te.a.SortLink, e === t && Te.a.selected),
 							kind: Ie.a.InternalLink,
 							priority: Ie.b.Plain,
@@ -2455,15 +2455,15 @@
 			const i = e => {
 					const t = Object(r.c)(e, {
 						experimentEligibilitySelector: o.K,
-						experimentName: n.Vb
+						experimentName: n.Yb
 					});
-					return !(!t || Object(n.qe)(t))
+					return !(!t || Object(n.te)(t))
 				},
 				a = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: o.K,
-						experimentName: n.Vb
-					}) === n.tc.ListingEnabled
+						experimentName: n.Yb
+					}) === n.wc.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, s) {
@@ -2577,4 +2577,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing.55952315b6c42ccc1e9b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing.00e0c198f4e559382dfc.js.map

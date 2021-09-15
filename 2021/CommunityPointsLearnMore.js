@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.8247dcd6aaedbedfba26.js
-// Retrieved at 8/30/2021, 12:20:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.347a2c5c88fc3da1b102.js
+// Retrieved at 9/15/2021, 5:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityPointsLearnMore"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, r) {
@@ -1660,7 +1660,7 @@
 					className: A.a.title
 				}, b), o.a.createElement(v, {
 					onComplete: () => t(!0)
-				}), e && o.a.createElement(o.a.Fragment, null, o.a.createElement(u.i, {
+				}), e && o.a.createElement(o.a.Fragment, null, o.a.createElement(u.k, {
 					className: A.a.createVaultButton,
 					onClick: () => {
 						p(Object(d.b)()), h ? window.location.href = `${a.a.redditUrl}/vault/` : m(!0)
@@ -1711,9 +1711,9 @@
 			})), r.d(t, "x", (function() {
 				return L
 			})), r.d(t, "t", (function() {
-				return O
-			})), r.d(t, "u", (function() {
 				return k
+			})), r.d(t, "u", (function() {
+				return O
 			})), r.d(t, "b", (function() {
 				return U
 			})), r.d(t, "v", (function() {
@@ -1915,11 +1915,11 @@
 					const t = e.economics.paymentSystems;
 					return !!(t.status === d.a.Fetched && t.data && t.data.tips && t.data.tips.usdr && t.data.tips.usdr.allowed)
 				},
-				O = (e, t) => {
+				k = (e, t) => {
 					const r = e.user.ownedBadges[t] || {};
 					return !!Object.keys(r).length
 				},
-				k = e => {
+				O = e => {
 					const t = e.economics.paymentSystems;
 					return t.status === d.a.Fetched && !!t.data && !!t.data.stripe && !!t.data.stripe.stripeAccountId
 				},
@@ -1958,4 +1958,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.8247dcd6aaedbedfba26.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.347a2c5c88fc3da1b102.js.map

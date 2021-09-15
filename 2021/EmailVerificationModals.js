@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EmailVerificationModals.486a9f01e0d841eaebee.js
-// Retrieved at 8/30/2021, 12:20:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EmailVerificationModals.c7e3a4ec9c06d7f99dd7.js
+// Retrieved at 9/15/2021, 5:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EmailVerificationModals"], {
 		"./src/lib/colors/constants.ts": function(e, t, s) {
@@ -312,7 +312,7 @@
 						validityState: n || void 0
 					}), i.a.createElement("div", {
 						className: k.a.buttonWrapper
-					}, i.a.createElement(f.i, {
+					}, i.a.createElement(f.k, {
 						className: Object(l.a)(k.a.commonBtn, k.a.primaryBtn),
 						redditStyle: !0,
 						disabled: this.formIncomplete(),
@@ -352,7 +352,7 @@
 					})
 				}, i.a.createElement("div", {
 					className: k.a.buttonWrapper
-				}, i.a.createElement(f.i, {
+				}, i.a.createElement(f.k, {
 					onClick: e.onConfirm
 				}, a.fbt._("Got it", null, {
 					hk: "2LxUeS"
@@ -434,11 +434,11 @@
 						hk: "2OiNgc"
 					}))), i.a.createElement("div", {
 						className: k.a.buttonWrapper
-					}, i.a.createElement(f.l, {
+					}, i.a.createElement(f.n, {
 						onClick: o
 					}, a.fbt._("Resend email", null, {
 						hk: "bbN8b"
-					})), i.a.createElement(f.i, {
+					})), i.a.createElement(f.k, {
 						className: k.a.primaryBtn,
 						onClick: n
 					}, a.fbt._("Done", null, {
@@ -585,7 +585,7 @@
 				b = p.a.h2("HeaderText", u.a),
 				E = p.a.button("Close", u.a),
 				f = p.a.wrapped(r.e, "PrimaryButton", u.a),
-				x = p.a.wrapped(r.l, "SecondaryButton", u.a),
+				x = p.a.wrapped(r.n, "SecondaryButton", u.a),
 				g = p.a.div("ButtonWrapper", u.a),
 				v = p.a.textarea("TextArea", u.a),
 				_ = p.a.h3("SectionLabel", u.a),
@@ -1023,4 +1023,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EmailVerificationModals.486a9f01e0d841eaebee.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EmailVerificationModals.c7e3a4ec9c06d7f99dd7.js.map

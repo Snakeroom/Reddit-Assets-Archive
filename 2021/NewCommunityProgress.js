@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NewCommunityProgress.7ab971995ad94eda39af.js
-// Retrieved at 8/31/2021, 6:10:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NewCommunityProgress.94851ab4e24b3f76ef4c.js
+// Retrieved at 9/15/2021, 5:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NewCommunityProgress"], {
 		"./src/lib/colors/constants.ts": function(C, e, t) {
@@ -1640,15 +1640,15 @@
 								style: t
 							},
 							n = !!(null == e ? void 0 : e.startsWith(j.a.redditUrl));
-						return e ? n ? l.a.createElement(Y.q, CC({}, a, {
+						return e ? n ? l.a.createElement(Y.s, CC({}, a, {
 							key: C.buttonText,
 							kind: Y.a.InternalLink,
 							to: e
-						}), C.buttonText) : l.a.createElement(Y.q, CC({}, a, {
+						}), C.buttonText) : l.a.createElement(Y.s, CC({}, a, {
 							key: C.buttonText,
 							kind: Y.a.ExternalLink,
 							href: e
-						}), C.buttonText) : l.a.createElement(Y.q, CC({}, a, {
+						}), C.buttonText) : l.a.createElement(Y.s, CC({}, a, {
 							key: C.buttonText
 						}), C.buttonText)
 					}))))
@@ -1672,19 +1672,19 @@
 					className: c.a.modalMain
 				}, rC.fbt._("If you remove this task, you won’t be able to see it anymore.", null, {
 					hk: "ycdgz"
-				})), l.a.createElement(G.g, null, l.a.createElement(Y.q, {
+				})), l.a.createElement(G.g, null, l.a.createElement(Y.s, {
 					className: c.a.modalButton,
 					onClick: e,
 					priority: Y.b.Secondary
 				}, rC.fbt._("Cancel", null, {
 					hk: "2TSLl5"
-				})), l.a.createElement(Y.q, {
+				})), l.a.createElement(Y.s, {
 					className: c.a.modalButton,
 					onClick: t,
 					priority: Y.b.Secondary
 				}, rC.fbt._("Mark as complete", null, {
 					hk: "4kKkLF"
-				})), l.a.createElement(Y.q, {
+				})), l.a.createElement(Y.s, {
 					className: c.a.modalButton,
 					onClick: a
 				}, rC.fbt._("Remove", null, {
@@ -2528,4 +2528,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NewCommunityProgress.7ab971995ad94eda39af.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NewCommunityProgress.94851ab4e24b3f76ef4c.js.map

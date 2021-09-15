@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.f3b571762d64c0e722b7.js
-// Retrieved at 9/14/2021, 1:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.264f26a3651df5b4c572.js
+// Retrieved at 9/15/2021, 5:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["TopWeekPostsDiscoveryUnit"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -1703,7 +1703,7 @@
 						subreddit: s
 					} = e, {
 						isSponsored: a
-					} = t, n = Object(U.a)(), i = Object(B.a)(u.yc) === u.Cc.Enabled;
+					} = t, n = Object(U.a)(), i = Object(B.a)(u.Bc) === u.Fc.Enabled;
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return r.a.createElement(G, {
 						nowrap: e.nowrap
 					}, r.a.createElement(Z, e));
@@ -2019,7 +2019,7 @@
 							type: t.type,
 							key: g ? "unsubscribe" : "subscribed"
 						});
-						return n.a.createElement(o.q, u({
+						return n.a.createElement(o.s, u({
 							className: e,
 							priority: f.shouldReverseColor ? o.b.Primary : o.b.Secondary,
 							Icon: d || !d && !g ? Object(c.b)("checkmark") : void 0,
@@ -2048,7 +2048,7 @@
 							type: t.type,
 							key: "subscribe"
 						});
-						return n.a.createElement(o.q, u({
+						return n.a.createElement(o.s, u({
 							className: e,
 							priority: f.shouldReverseColor ? o.b.Secondary : o.b.Primary,
 							Icon: Object(c.b)("add"),
@@ -2316,4 +2316,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.f3b571762d64c0e722b7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.264f26a3651df5b4c572.js.map

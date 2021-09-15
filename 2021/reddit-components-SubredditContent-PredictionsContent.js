@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.f4c9df85ff6f5ec31915.js
-// Retrieved at 9/8/2021, 3:50:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.bdaff11b655e5f102191.js
+// Retrieved at 9/15/2021, 5:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SubredditContent-PredictionsContent"], {
 		"./node_modules/uuid/index.js": function(t, e, n) {
@@ -102,8 +102,8 @@
 					predictions: c.a
 				}
 			});
-			const I = Object(u.a)(y.e),
-				k = Object(u.a)(y.i),
+			const k = Object(u.a)(y.e),
+				I = Object(u.a)(y.i),
 				_ = Object(u.a)(y.l),
 				w = Object(u.a)(y.h),
 				C = Object(u.a)(y.b),
@@ -129,7 +129,7 @@
 						subredditId: t,
 						...u
 					};
-					return r(I(p)), p
+					return r(k(p)), p
 				}, T = ({
 					coinPackageId: t,
 					optionId: e,
@@ -144,7 +144,7 @@
 						postId: n,
 						price: o
 					});
-					return r(k({
+					return r(I({
 						pollId: n,
 						prediction: c,
 						price: o
@@ -383,7 +383,7 @@
 				p = n("./src/reddit/components/PostCreationForm/Prompt/PromptModal.m.less"),
 				b = n.n(p),
 				m = n("./src/lib/lessComponent.tsx");
-			const f = m.a.wrapped(a.i, "PrimaryButton", b.a),
+			const f = m.a.wrapped(a.k, "PrimaryButton", b.a),
 				j = m.a.wrapped(d.p, "ModalText", b.a);
 			class O extends r.a.PureComponent {
 				constructor() {
@@ -486,8 +486,8 @@
 					n = Object(b.a)(),
 					[j, h] = Object(r.useState)(""),
 					[P, g] = Object(r.useState)(!1),
-					[y, I] = Object(r.useState)(!1),
-					[k, _] = Object(r.useState)(!1),
+					[y, k] = Object(r.useState)(!1),
+					[I, _] = Object(r.useState)(!1),
 					[w, C] = Object(r.useState)(null),
 					E = Object(d.e)(e => Object(f.b)(e, {
 						subredditId: t.id
@@ -548,7 +548,7 @@
 					_1: "1 character remaining"
 				}, [o.fbt._plural(w, "remaining characters")], {
 					hk: "1dBRgv"
-				}) : i.a.createElement(i.a.Fragment, null, " ")), i.a.createElement(u.i, {
+				}) : i.a.createElement(i.a.Fragment, null, " ")), i.a.createElement(u.k, {
 					className: v.a.button,
 					disabled: !j || !E || T || !N,
 					onClick: async () => {
@@ -578,20 +578,20 @@
 					className: v.a.endConditions
 				}, o.fbt._("Tournament can only be ended after its predictions are ended and resolved", null, {
 					hk: "2AgZtm"
-				})), i.a.createElement(u.i, {
+				})), i.a.createElement(u.k, {
 					className: v.a.button,
 					disabled: !E || !S || T,
 					onClick: L
 				}, o.fbt._("End", null, {
 					hk: "HWN7f"
-				})), k && i.a.createElement(O, {
+				})), I && i.a.createElement(O, {
 					isEnding: y,
 					onClose: () => {
 						_(!1)
 					},
 					onConfirm: async () => {
 						if (!E || !S) return null;
-						I(!0);
+						k(!0);
 						try {
 							await e(Object(a.l)(E.tournamentId))
 						} catch (t) {
@@ -602,7 +602,7 @@
 								})
 							}))
 						}
-						I(!1), _(!1)
+						k(!1), _(!1)
 					}
 				}))))
 			}
@@ -622,9 +622,9 @@
 			})), n.d(e, "k", (function() {
 				return y
 			})), n.d(e, "b", (function() {
-				return I
-			})), n.d(e, "m", (function() {
 				return k
+			})), n.d(e, "m", (function() {
+				return I
 			})), n.d(e, "g", (function() {
 				return _
 			})), n.d(e, "h", (function() {
@@ -718,12 +718,12 @@
 					});
 					if (!Object(r.c)(n) || n.error) throw new Error("Failed to fetch tournaments");
 					return n.body.data.subredditInfoByName.predictionTournaments || []
-				}, I = (t, e) => Object(o.a)(t, {
+				}, k = (t, e) => Object(o.a)(t, {
 					...i,
 					variables: {
 						input: e
 					}
-				}), k = (t, e) => Object(o.a)(t, {
+				}), I = (t, e) => Object(o.a)(t, {
 					...j,
 					variables: {
 						input: e
@@ -813,9 +813,9 @@
 			})), n.d(e, "c", (function() {
 				return y
 			})), n.d(e, "i", (function() {
-				return I
-			})), n.d(e, "e", (function() {
 				return k
+			})), n.d(e, "e", (function() {
+				return I
 			})), n.d(e, "b", (function() {
 				return _
 			})), n.d(e, "j", (function() {
@@ -991,13 +991,13 @@
 					action: "click",
 					noun: "end_tournament"
 				}),
-				I = () => t => ({
+				k = () => t => ({
 					...Object(r.defaults)(t),
 					source: "mod_tool_predict",
 					action: "click",
 					noun: "rename_tournament"
 				}),
-				k = () => t => ({
+				I = () => t => ({
 					...Object(r.defaults)(t),
 					source: "predictions",
 					action: "click",
@@ -1125,4 +1125,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.f4c9df85ff6f5ec31915.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.bdaff11b655e5f102191.js.map

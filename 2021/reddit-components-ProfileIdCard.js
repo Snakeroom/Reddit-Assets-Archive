@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.58816ea7a2876e3c25e0.js
-// Retrieved at 9/9/2021, 3:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.660f24259def8c784e67.js
+// Retrieved at 9/15/2021, 5:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ProfileIdCard"], {
 		"./node_modules/lodash/compact.js": function(e, t) {
@@ -564,7 +564,7 @@
 				onAddUserToQuickReplyList: b,
 				children: x
 			}) => {
-				return a.a.createElement(d.q, {
+				return a.a.createElement(d.s, {
 					onClick: t => {
 						if (f && f(t), e(), p === n.awardNotification) return b();
 						s(Object(l.b)(o))
@@ -1624,7 +1624,7 @@
 				let O = null;
 				I || (O = e ? "user_hovercard" : "profile_overview");
 				const C = Object(s.useCallback)(() => g(Object(u.d)(e ? "user_hovercard" : "profile_overview", t)), [e, g, t]);
-				return a.a.createElement(m.q, {
+				return a.a.createElement(m.s, {
 					onClick: () => {
 						r ? (g(u.e), I && _ === f.a.notVoted && v(Object(c.db)(I))) : C();
 						const e = r ? "postify" : "copy";
@@ -1681,7 +1681,7 @@
 				isOwnProfile: n,
 				onClick: d
 			}) {
-				return s.a.createElement(o.q, {
+				return s.a.createElement(o.s, {
 					onClick: d,
 					isFullWidth: !0,
 					className: Object(a.a)(l.a.snoovatarButton, {
@@ -2211,8 +2211,8 @@
 				H = r("./src/reddit/components/ProfileIdCard/footer.m.less"),
 				K = r.n(H);
 
-			function q() {
-				return (q = Object.assign || function(e) {
+			function z() {
+				return (z = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var r = arguments[t];
 						for (var n in r) Object.prototype.hasOwnProperty.call(r, n) && (e[n] = r[n])
@@ -2220,7 +2220,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const z = Object(o.c)({
+			const q = Object(o.c)({
 					areModeratedSubredditsPending: g.a,
 					coinsToSpend: _.e,
 					givePremiumModalIsOpen: W.c,
@@ -2233,7 +2233,7 @@
 				Z = ({
 					isLoading: e,
 					...t
-				}) => s.a.createElement("div", q({}, t, {
+				}) => s.a.createElement("div", z({}, t, {
 					className: Object(j.a)(K.a.Shimmer, Object(R.b)({
 						isLoading: e
 					}))
@@ -2344,7 +2344,7 @@
 						expanded: t
 					} = this.state, r = this.makeMenuItems();
 					if (0 === r.length) return null;
-					const n = (t ? r : []).map(e => e.url ? e.isInternalLink ? s.a.createElement(f.q, {
+					const n = (t ? r : []).map(e => e.url ? e.isInternalLink ? s.a.createElement(f.s, {
 						kind: f.a.InternalLink,
 						priority: f.b.Plain,
 						size: f.c.XS,
@@ -2352,7 +2352,7 @@
 						onClick: e.onClick,
 						to: e.url,
 						className: K.a.menuItem
-					}, e.text) : s.a.createElement(f.q, {
+					}, e.text) : s.a.createElement(f.s, {
 						kind: f.a.ExternalLink,
 						priority: f.b.Plain,
 						size: f.c.XS,
@@ -2360,7 +2360,7 @@
 						href: e.url,
 						onClick: e.onClick,
 						className: K.a.menuItem
-					}, e.text) : s.a.createElement(f.q, {
+					}, e.text) : s.a.createElement(f.s, {
 						priority: f.b.Plain,
 						size: f.c.XS,
 						className: K.a.menuItem,
@@ -2387,7 +2387,7 @@
 						className: K.a.container
 					}, n, s.a.createElement("div", {
 						className: K.a.expandContainer
-					}, s.a.createElement(f.o, {
+					}, s.a.createElement(f.q, {
 						className: K.a.expandButton,
 						onClick: this.moreOptionsToggled
 					}, a)), e && s.a.createElement(L, null), this.state.showCrisisModal && s.a.createElement(F.b, {
@@ -2399,7 +2399,7 @@
 					}))
 				}
 			}
-			var X = Object(a.b)(z, (e, {
+			var X = Object(a.b)(q, (e, {
 					profileName: t
 				}) => ({
 					addToMultiClicked: () => {
@@ -2454,7 +2454,7 @@
 				currentUserHasSubreddit: t
 			}) => s.a.createElement("div", {
 				className: Q.a.actionItem
-			}, s.a.createElement(f.k, {
+			}, s.a.createElement(f.m, {
 				className: Q.a.button,
 				to: t ? `/user/${e}/submit` : "/submit"
 			}, $._("New Post", null, {
@@ -2467,17 +2467,17 @@
 				onClickUnblockUser: a
 			}) => s.a.createElement("div", {
 				className: Q.a.actionItem
-			}, r && !n ? s.a.createElement(f.l, {
+			}, r && !n ? s.a.createElement(f.n, {
 				className: Q.a.button,
 				onClick: () => t(e, r)
 			}, $._("Unfollow", null, {
 				hk: "1nM1SO"
-			})) : n ? s.a.createElement(f.i, {
+			})) : n ? s.a.createElement(f.k, {
 				className: Q.a.button,
 				onClick: () => a(e)
 			}, $._("Unblock", null, {
 				hk: "2d6Cyx"
-			})) : s.a.createElement(f.i, {
+			})) : s.a.createElement(f.k, {
 				className: Q.a.button,
 				onClick: () => t(e, r)
 			}, $._("Follow", null, {
@@ -3088,7 +3088,7 @@
 			}));
 			var n = r("./src/reddit/constants/experiments.ts"),
 				s = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const a = Object(s.a)(n.od)
+			const a = Object(s.a)(n.rd)
 		},
 		"./src/reddit/selectors/premium.ts": function(e, t, r) {
 			"use strict";
@@ -3114,4 +3114,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.58816ea7a2876e3c25e0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.660f24259def8c784e67.js.map

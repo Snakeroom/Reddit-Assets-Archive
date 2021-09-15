@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditInlineEditing.9b70cf6292c556ff0c6a.js
-// Retrieved at 8/31/2021, 6:10:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditInlineEditing.59db1de02b9419c4ac0c.js
+// Retrieved at 9/15/2021, 5:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditInlineEditing"], {
 		"./src/reddit/components/CommunityTopics/NumTopicsSelected.tsx": function(e, t, s) {
@@ -71,7 +71,7 @@
 						className: b.a.title
 					}, e)), i.a.createElement("p", {
 						className: b.a.tooltipBody
-					}, t), i.a.createElement(h.i, {
+					}, t), i.a.createElement(h.k, {
 						className: b.a.gotIt,
 						onClick: this.props.onDismissTooltip
 					}, s || g._("Got it", null, {
@@ -237,8 +237,8 @@
 				}
 			}))(R);
 			const N = Object(r.b)(D, P)(R),
-				B = Object(r.b)(w, P);
-			t.b = B(R)
+				k = Object(r.b)(w, P);
+			t.b = k(R)
 		},
 		"./src/reddit/components/CommunityTopics/SuggestedTopics/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -757,9 +757,9 @@
 				P = s("./src/reddit/selectors/activeModalId.ts"),
 				R = s("./src/reddit/selectors/tags.ts"),
 				N = s("./src/reddit/constants/colors.ts"),
-				B = s("./src/reddit/selectors/tooltip.ts"),
-				k = s("./node_modules/uuid/v4.js"),
-				M = s.n(k),
+				k = s("./src/reddit/selectors/tooltip.ts"),
+				B = s("./node_modules/uuid/v4.js"),
+				M = s.n(B),
 				L = s("./src/reddit/components/ContentTooltip/index.tsx"),
 				F = s("./src/reddit/icons/fonts/Info/index.tsx"),
 				H = s("./src/reddit/components/InlineSubredditEditing/InlineCommunityTopics/InfoTooltip/index.m.less"),
@@ -767,7 +767,7 @@
 			const {
 				fbt: U
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), K = Object(r.c)({
-				activeTooltipId: B.a
+				activeTooltipId: k.a
 			}), G = Object(i.b)(K, e => ({
 				onHideTooltip: () => e(Object(l.i)()),
 				onShowTooltip: t => e(Object(l.f)({
@@ -1643,4 +1643,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditInlineEditing.9b70cf6292c556ff0c6a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditInlineEditing.59db1de02b9419c4ac0c.js.map

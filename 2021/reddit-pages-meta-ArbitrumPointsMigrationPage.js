@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-pages-meta-ArbitrumPointsMigrationPage.f11d33d9a6c7842ca6b2.js
-// Retrieved at 8/31/2021, 6:10:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-pages-meta-ArbitrumPointsMigrationPage.c63b39af6d7171d7fc2c.js
+// Retrieved at 9/15/2021, 5:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-pages-meta-ArbitrumPointsMigrationPage", "CryptoLibEthers"], {
 		"./node_modules/@ethersproject/address/lib.esm/index.js": function(e, t, n) {
@@ -928,7 +928,7 @@
 						className: E.a.detailsContainer
 					}, t), u.a.createElement(b.a, {
 						className: E.a.buttonRow
-					}, u.a.createElement(f.i, {
+					}, u.a.createElement(f.k, {
 						className: E.a.confirmButton,
 						onClick: e.onConfirmed
 					}, r.fbt._("Ok", null, {
@@ -2194,7 +2194,7 @@
 					saveMigrationState: H
 				}) : o.a.createElement(o.a.Fragment, null, o.a.createElement("p", null, o.a.createElement("b", null, "Please select a destination wallet address for the ", g.name, ":")), N.map(e => o.a.createElement("p", {
 					key: e
-				}, o.a.createElement(u.i, {
+				}, o.a.createElement(u.k, {
 					onClick: () => _(e)
 				}, "Your Vault (", e, ")"))), o.a.createElement("p", null, o.a.createElement(c.c, {
 					label: "Destination wallet address",
@@ -2204,7 +2204,7 @@
 					style: {
 						width: "380px"
 					}
-				}), o.a.createElement(u.i, {
+				}), o.a.createElement(u.k, {
 					onClick: () => _(E),
 					style: {
 						display: "inline-block"
@@ -2212,7 +2212,7 @@
 				}, "Custom"))) : o.a.createElement(W, {
 					setMigration: f,
 					walletAddress: d
-				}) : o.a.createElement("p", null, o.a.createElement("b", null, "Please select the Rinkeby Test Network in your wallet and reload this page.")) : o.a.createElement(o.a.Fragment, null, o.a.createElement("p", null, "This migration tool is designed to work with Chrome + MetaMask. If your Points are in a different wallet, we suggest moving them into MetaMask first. You should be able to use any web3-enabled wallet, but it is untested. Not all wallets will work with our Arbitrum chain. It must be a wallet where you can add a custom network with RPC url and a different chain id."), o.a.createElement("p", null, t ? o.a.createElement(u.i, {
+				}) : o.a.createElement("p", null, o.a.createElement("b", null, "Please select the Rinkeby Test Network in your wallet and reload this page.")) : o.a.createElement(o.a.Fragment, null, o.a.createElement("p", null, "This migration tool is designed to work with Chrome + MetaMask. If your Points are in a different wallet, we suggest moving them into MetaMask first. You should be able to use any web3-enabled wallet, but it is untested. Not all wallets will work with our Arbitrum chain. It must be a wallet where you can add a custom network with RPC url and a different chain id."), o.a.createElement("p", null, t ? o.a.createElement(u.k, {
 					onClick: w.b
 				}, "Connect to wallet") : o.a.createElement("b", null, "Please install ", o.a.createElement("a", {
 					href: "https://metamask.io/"
@@ -2234,7 +2234,7 @@
 					})
 				}, []), n ? n.length ? o.a.createElement(o.a.Fragment, null, o.a.createElement("p", null, o.a.createElement("b", null, "Please choose one to migrate:")), n.map(t => o.a.createElement("p", {
 					key: t.name
-				}, o.a.createElement(u.i, {
+				}, o.a.createElement(u.k, {
 					onClick: () => e(t)
 				}, s.ethers.utils.formatEther(t.balance), " ", t.name)))) : o.a.createElement(o.a.Fragment, null, o.a.createElement("p", {
 					className: P.a.error
@@ -2250,4 +2250,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-pages-meta-ArbitrumPointsMigrationPage.f11d33d9a6c7842ca6b2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-pages-meta-ArbitrumPointsMigrationPage.c63b39af6d7171d7fc2c.js.map

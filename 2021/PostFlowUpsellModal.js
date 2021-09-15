@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostFlowUpsellModal.e56574d2001b326a5f70.js
-// Retrieved at 8/10/2021, 1:20:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostFlowUpsellModal.2dc78b829c89096e0a5c.js
+// Retrieved at 9/15/2021, 5:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostFlowUpsellModal"], {
 		"./src/reddit/components/PostFlowUpsellModal/index.m.less": function(e, t, o) {
@@ -55,12 +55,12 @@
 					hk: "3C3CAV"
 				})), a.a.createElement(c.g, {
 					className: O.a.modalFooter
-				}, a.a.createElement(m.q, {
+				}, a.a.createElement(m.s, {
 					onClick: o,
 					priority: m.b.Secondary
 				}, E._("Continue", null, {
 					hk: "3Huqfz"
-				})), a.a.createElement(m.q, {
+				})), a.a.createElement(m.s, {
 					className: O.a.modalSubmitButton,
 					onClick: () => {
 						e.closeModal(), t(Object(_.e)())
@@ -74,4 +74,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostFlowUpsellModal.e56574d2001b326a5f70.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostFlowUpsellModal.2dc78b829c89096e0a5c.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.5a29791f98dcab1457e3.js
-// Retrieved at 9/15/2021, 4:10:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.091c1ec15b06ebe3c8c8.js
+// Retrieved at 9/15/2021, 5:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CoinPurchaseDropdown"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, r) {
@@ -908,7 +908,7 @@
 						primaryText: l,
 						subtext: u,
 						subtextCrossout: b
-					} = e, m = r ? V.f : V.i;
+					} = e, m = r ? V.f : V.k;
 					return o.a.createElement("div", {
 						className: Object(a.a)(t, Z.a.CompactCoinPurchaseListItem)
 					}, o.a.createElement("div", {
@@ -1483,4 +1483,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.5a29791f98dcab1457e3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.091c1ec15b06ebe3c8c8.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CrisisFlow-CrisisFlowPage.2ebc38a8ddef75563c10.js
-// Retrieved at 8/10/2021, 6:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CrisisFlow-CrisisFlowPage.142c85469201d7e1552e.js
+// Retrieved at 9/15/2021, 5:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CrisisFlow-CrisisFlowPage"], {
 		"./src/reddit/actions/reportFlow/index.ts": function(e, s, t) {
@@ -51,14 +51,14 @@
 				} = e;
 				return n.a.createElement("div", {
 					className: d.a.CrisisFooter
-				}, s ? null : n.a.createElement(a.m, {
+				}, s ? null : n.a.createElement(a.o, {
 					className: d.a.CrisisButton,
 					"data-redditstyle": !0,
 					href: "https://www.reddithelp.com/en/categories/rules-reporting/suicide-response/what-do-i-do-if-someone-talks-about-seriously-hurting",
 					target: "_blank"
 				}, m._("Other Options", null, {
 					hk: "1RadlV"
-				})), n.a.createElement(a.i, {
+				})), n.a.createElement(a.k, {
 					className: d.a.CrisisButton,
 					"data-redditstyle": !0,
 					onClick: s ? t : i
@@ -367,4 +367,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CrisisFlow-CrisisFlowPage.2ebc38a8ddef75563c10.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CrisisFlow-CrisisFlowPage.142c85469201d7e1552e.js.map

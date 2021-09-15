@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.76353a2581c67ece5eba.js
-// Retrieved at 9/8/2021, 3:50:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.6254c538eb8a440cd81f.js
+// Retrieved at 9/15/2021, 5:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction"], {
 		"./src/lib/constants/specialMembership.ts": function(e, t, n) {
@@ -272,7 +272,7 @@
 					className: l.a.newBadge
 				}, u._("New", null, {
 					hk: "2N0EBb"
-				}))), p && r.a.createElement(i.q, {
+				}))), p && r.a.createElement(i.s, {
 					"aria-label": u._("Close", null, {
 						hk: "2UjnU"
 					}),
@@ -555,8 +555,8 @@
 				})
 			};
 			var z = n("./src/reddit/components/Econ/Prediction/PredictionModal/index.tsx"),
-				q = n("./src/reddit/components/Econ/Prediction/PredictionOption/index.tsx"),
-				Z = n("./src/higherOrderComponents/asModal/index.tsx"),
+				Z = n("./src/reddit/components/Econ/Prediction/PredictionOption/index.tsx"),
+				q = n("./src/higherOrderComponents/asModal/index.tsx"),
 				X = n("./src/lib/initializeClient/installReducer.ts"),
 				Q = n("./src/reddit/reducers/features/predictions/index.ts"),
 				J = n("./src/reddit/endpoints/economics/predictions.ts");
@@ -592,7 +592,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const de = Object(Z.a)(({
+			const de = Object(q.a)(({
 					postId: e,
 					options: t,
 					selectedOptionId: n,
@@ -748,7 +748,7 @@
 				ye = n("./src/reddit/icons/fonts/index.tsx"),
 				Ie = n("./src/reddit/components/Econ/Prediction/ResolutionModal/index.m.less"),
 				ke = n.n(Ie);
-			var Se = Object(Z.a)((function({
+			var Se = Object(q.a)((function({
 					isResolving: e,
 					isTokens: t,
 					onCancel: n,
@@ -756,7 +756,7 @@
 				}) {
 					return i.a.createElement(i.a.Fragment, null, i.a.createElement("div", {
 						className: ke.a.header
-					}, i.a.createElement(Ce.q, {
+					}, i.a.createElement(Ce.s, {
 						className: ke.a.closeButton,
 						Icon: Object(ye.b)("close"),
 						priority: Ce.b.Plain,
@@ -773,7 +773,7 @@
 						hk: "1M6iWL"
 					})), i.a.createElement("div", {
 						className: ke.a.actions
-					}, i.a.createElement(Ce.l, {
+					}, i.a.createElement(Ce.n, {
 						disabled: e,
 						onClick: n,
 						priority: Ce.b.Secondary,
@@ -781,7 +781,7 @@
 						size: Ce.c.S
 					}, D.fbt._("Cancel", null, {
 						hk: "2TSLl5"
-					})), i.a.createElement(Ce.i, {
+					})), i.a.createElement(Ce.k, {
 						className: ke.a.submitButton,
 						disabled: e,
 						onClick: () => {
@@ -920,7 +920,7 @@
 				const {
 					creatorId: H,
 					endsAt: K,
-					options: Z,
+					options: q,
 					resolvedOptionId: X,
 					totalStakeAmount: Q,
 					totalVoters: J,
@@ -928,7 +928,7 @@
 					userSelection: ee,
 					predictionStatus: te,
 					voteUpdatesRemained: ne
-				} = f, se = H === k, re = K < Date.now(), oe = !r()($), ie = re && se && !X, ce = Z.find(({
+				} = f, se = H === k, re = K < Date.now(), oe = !r()($), ie = re && se && !X, ce = q.find(({
 					id: e
 				}) => e === A), ae = te === g.b.Cancelled || te === g.b.CancelInProgress, de = s ? Object(d.a)(e, Ge.a.container, Ge.a.forCommentsPage, {
 					[Ge.a.isEditing]: c
@@ -943,12 +943,12 @@
 					isCreator: se
 				}), i.a.createElement("div", {
 					className: Ge.a.poll
-				}, Z.map(e => i.a.createElement(Te.a, {
+				}, q.map(e => i.a.createElement(Te.a, {
 					endsAt: K,
 					key: `prediction-option-${e.id}`,
 					isShowingVoteAnimation: F && ee === e.id,
 					onAnimationEnd: W
-				}, i.a.createElement(q.a, {
+				}, i.a.createElement(Z.a, {
 					disabled: F,
 					isCancelled: ae,
 					isEnded: re,
@@ -975,7 +975,7 @@
 				}), !ae && n && i.a.createElement(fe, {
 					isLimitReached: 0 === ne,
 					postId: x,
-					options: Z,
+					options: q,
 					selectedOptionId: ee
 				}), i.a.createElement("div", {
 					className: Ge.a.predictionsCount
@@ -1953,4 +1953,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.76353a2581c67ece5eba.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.6254c538eb8a440cd81f.js.map

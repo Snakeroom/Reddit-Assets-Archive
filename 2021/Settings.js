@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.fc1f944e3d5d45d86b5a.js
-// Retrieved at 9/9/2021, 3:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.3dc2990f72a77f58e3a2.js
+// Retrieved at 9/15/2021, 5:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, n) {
@@ -3168,7 +3168,7 @@
 				onAddUserToQuickReplyList: h,
 				children: f
 			}) => {
-				return o.a.createElement(l.q, {
+				return o.a.createElement(l.s, {
 					onClick: t => {
 						if (b && b(t), e(), p === r.awardNotification) return h();
 						s(Object(d.b)(a))
@@ -3228,10 +3228,10 @@
 				className: c.a.text
 			}, e.children), s.a.createElement("div", {
 				className: c.a.buttonWrapper
-			}, e.cancelText && s.a.createElement(a.l, {
+			}, e.cancelText && s.a.createElement(a.n, {
 				className: c.a.secondaryButton,
 				onClick: e.onCancel
-			}, e.cancelText), s.a.createElement(a.i, {
+			}, e.cancelText), s.a.createElement(a.k, {
 				className: c.a.primaryButton,
 				onClick: e.onAccept
 			}, e.acceptText)))))
@@ -5354,7 +5354,7 @@
 				let C = null;
 				y || (C = e ? "user_hovercard" : "profile_overview");
 				const E = Object(s.useCallback)(() => v(Object(m.d)(e ? "user_hovercard" : "profile_overview", t)), [e, v, t]);
-				return o.a.createElement(u.q, {
+				return o.a.createElement(u.s, {
 					onClick: () => {
 						n ? (v(m.e), y && x === b.a.notVoted && _(Object(c.db)(y))) : E();
 						const e = n ? "postify" : "copy";
@@ -5411,7 +5411,7 @@
 				isOwnProfile: r,
 				onClick: l
 			}) {
-				return s.a.createElement(a.q, {
+				return s.a.createElement(a.s, {
 					onClick: l,
 					isFullWidth: !0,
 					className: Object(o.a)(d.a.snoovatarButton, {
@@ -6088,7 +6088,7 @@
 				h = p.a.h2("HeaderText", m.a),
 				f = p.a.button("Close", m.a),
 				g = p.a.wrapped(i.e, "PrimaryButton", m.a),
-				v = p.a.wrapped(i.l, "SecondaryButton", m.a),
+				v = p.a.wrapped(i.n, "SecondaryButton", m.a),
 				_ = p.a.div("ButtonWrapper", m.a),
 				y = p.a.textarea("TextArea", m.a),
 				x = p.a.h3("SectionLabel", m.a),
@@ -6491,7 +6491,7 @@
 						hk: "4qAoO"
 					})), i.a.createElement("div", {
 						className: O.a.details
-					}, P), i.a.createElement(g.o, {
+					}, P), i.a.createElement(g.q, {
 						className: O.a.button,
 						disabled: !N,
 						onClick: () => n(!0)
@@ -7455,7 +7455,7 @@
 					last: e.last,
 					indent: e.indent,
 					disabled: e.disabled
-				}, s.a.createElement(V, null, s.a.createElement(M.a, null, s.a.createElement(W, null, e.label)), s.a.createElement(z, null, e.subtext)), s.a.createElement(K, null, s.a.createElement(Y, null, s.a.createElement(T.l, {
+				}, s.a.createElement(V, null, s.a.createElement(M.a, null, s.a.createElement(W, null, e.label)), s.a.createElement(z, null, e.subtext)), s.a.createElement(K, null, s.a.createElement(Y, null, s.a.createElement(T.n, {
 					onClick: e.onClick
 				}, e.actionText)))),
 				he = e => s.a.createElement(J, {
@@ -7867,7 +7867,7 @@
 					priority: t,
 					small: n,
 					...r
-				}) => o.a.createElement(a.q, u({}, r, {
+				}) => o.a.createElement(a.s, u({}, r, {
 					priority: m(a.b.Primary, e, t),
 					className: Object(d.a)(r.className, l.a.BaseButton),
 					size: n ? a.c.S : a.c.M
@@ -7891,7 +7891,7 @@
 					priority: n,
 					small: r,
 					...s
-				}) => o.a.createElement(a.q, u({}, s, {
+				}) => o.a.createElement(a.s, u({}, s, {
 					priority: m(a.b.Secondary, t, n),
 					className: Object(d.a)(s.className, l.a.BaseButton),
 					size: r ? a.c.S : a.c.M,
@@ -8453,7 +8453,7 @@
 						className: _.a.detailsContainer
 					}, t), l.a.createElement(g.a, {
 						className: _.a.buttonRow
-					}, l.a.createElement(f.i, {
+					}, l.a.createElement(f.k, {
 						className: _.a.confirmButton,
 						onClick: e.onConfirmed
 					}, r.fbt._("Ok", null, {
@@ -10708,7 +10708,7 @@
 						className: G.a.emailText
 					}, K(e), o.a.createElement("span", {
 						className: G.a.emailAddress
-					}, t))), o.a.createElement(S.i, {
+					}, t))), o.a.createElement(S.k, {
 						className: G.a.primaryBtn,
 						onClick: this.onSendResetEmail
 					}, e ? r.fbt._("Resend", null, {
@@ -11098,7 +11098,7 @@
 					resendEmail: n
 				}) => e ? t ? e : o.a.createElement(o.a.Fragment, null, r.fbt._("{email} not verified!", [r.fbt._param("email", e)], {
 					hk: "3PanQN"
-				}), o.a.createElement(S.g, {
+				}), o.a.createElement(S.h, {
 					className: De.a.tertiaryBtn,
 					onClick: n
 				}, r.fbt._("Click to resend", null, {
@@ -11243,9 +11243,9 @@
 				ot = n.n(st),
 				at = n("./src/lib/lessComponent.tsx");
 			const it = at.a.wrapped(xe.c, "ConnectApple", ot.a),
-				ct = at.a.wrapped(S.i, "ConnectAppleButton", ot.a),
+				ct = at.a.wrapped(S.k, "ConnectAppleButton", ot.a),
 				lt = at.a.div("ConnectionInfo", ot.a),
-				dt = at.a.wrapped(S.m, "DisconnectButton", ot.a),
+				dt = at.a.wrapped(S.o, "DisconnectButton", ot.a),
 				ut = at.a.wrapped(rt.a, "AppleIcon", ot.a),
 				mt = at.a.span("TextAndIconWrapper", ot.a);
 
@@ -11307,9 +11307,9 @@
 				}),
 				ft = n("./src/reddit/icons/svgs/GoogleLogo/index.tsx");
 			const gt = at.a.wrapped(xe.c, "ConnectGoogle", ot.a),
-				vt = at.a.wrapped(S.i, "ConnectGoogleButton", ot.a),
+				vt = at.a.wrapped(S.k, "ConnectGoogleButton", ot.a),
 				_t = at.a.div("ConnectionInfo", ot.a),
-				yt = at.a.wrapped(S.m, "DisconnectButton", ot.a),
+				yt = at.a.wrapped(S.o, "DisconnectButton", ot.a),
 				xt = at.a.wrapped(ft.a, "GoogleIcon", ot.a),
 				Ct = at.a.span("TextAndIconWrapper", ot.a);
 
@@ -11384,7 +11384,7 @@
 					...t
 				}) => o.a.createElement(At, t),
 				Mt = at.a.wrapped(xe.c, "ConnectTwitter", ot.a),
-				Lt = at.a.wrapped(S.m, "DisconnectButton", ot.a),
+				Lt = at.a.wrapped(S.o, "DisconnectButton", ot.a),
 				Bt = at.a.span("Username", ot.a),
 				Rt = at.a.div("ConnectionInfo", ot.a);
 			var Ft = n("./src/reddit/selectors/externalAccount.ts");
@@ -11439,7 +11439,7 @@
 						subtext: r.fbt._("Connect a Twitter account to enable the choice to tweet your new posts and display a link on your profile. We will never post to Twitter without your permission.", null, {
 							hk: "3TueXf"
 						})
-					}, o.a.createElement(S.q, {
+					}, o.a.createElement(S.s, {
 						className: ot.a.ConnectTwitterButton,
 						Icon: s ? Tt : Nt,
 						text: s ? null : i,
@@ -11934,7 +11934,7 @@
 						})
 					}, o.a.createElement("div", {
 						className: Qn.a.cta
-					}, o.a.createElement(S.i, {
+					}, o.a.createElement(S.k, {
 						className: Qn.a.button,
 						disabled: t !== Xn.Default,
 						onClick: this.initiateStripeConnect
@@ -12377,7 +12377,7 @@
 							className: Yr.a.paymentDisplay
 						}, o.a.createElement(Wr.a, {
 							className: Yr.a.lock
-						}), e.display), o.a.createElement(S.o, {
+						}), e.display), o.a.createElement(S.q, {
 							disabled: t,
 							onClick: () => this.removePayment(e)
 						}, t ? r.fbt._("removing", null, {
@@ -13376,7 +13376,7 @@
 					title: b
 				})), o.a.createElement("footer", {
 					className: Eo.a.footer
-				}, o.a.createElement(S.l, {
+				}, o.a.createElement(S.n, {
 					disabled: h,
 					onClick: async () => {
 						f(!0);
@@ -13389,7 +13389,7 @@
 					hk: "1Ggy36"
 				}) : To._("cancel membership", null, {
 					hk: "C9ZhO"
-				})), o.a.createElement(S.i, {
+				})), o.a.createElement(S.k, {
 					onClick: l
 				}, To._("Dismiss", null, {
 					hk: "EKJpC"
@@ -13445,7 +13445,7 @@
 					}, p), l && o.a.createElement("div", {
 						className: Do.a.cancelled,
 						title: m
-					}, m), o.a.createElement(S.o, {
+					}, m), o.a.createElement(S.q, {
 						className: Do.a.button,
 						disabled: l,
 						onClick: () => this.setState({
@@ -14107,7 +14107,7 @@
 			}));
 			var r = n("./src/reddit/constants/experiments.ts"),
 				s = n("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const o = Object(s.a)(r.od)
+			const o = Object(s.a)(r.rd)
 		},
 		"./src/reddit/selectors/gold/productOffers.ts": function(e, t, n) {
 			"use strict";
@@ -14261,4 +14261,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.fc1f944e3d5d45d86b5a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.3dc2990f72a77f58e3a2.js.map

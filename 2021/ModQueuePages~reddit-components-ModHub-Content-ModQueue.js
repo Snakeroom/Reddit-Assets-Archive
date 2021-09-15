@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.7224d45aed04c8de7674.js
-// Retrieved at 9/15/2021, 4:10:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.99e7cef4c0fb7d169fb4.js
+// Retrieved at 9/15/2021, 5:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages~reddit-components-ModHub-Content-ModQueue"], {
 		"./node_modules/shallowequal/index.js": function(e, t) {
@@ -527,7 +527,7 @@
 				E = s.n(C);
 			var k = e => l.a.createElement(y.a, {
 					className: E.a.buttonContainer
-				}, l.a.createElement(f.p, {
+				}, l.a.createElement(f.r, {
 					className: Object(x.a)(E.a.routerLink, {
 						[E.a.mDisabled]: !e.prevButtonEnabled
 					}),
@@ -536,7 +536,7 @@
 					"data-redditstyle": !0
 				}, g.fbt._("Back", null, {
 					hk: "2pUhBQ"
-				})), l.a.createElement(f.p, {
+				})), l.a.createElement(f.r, {
 					className: Object(x.a)(E.a.routerLink, {
 						[E.a.mDisabled]: !e.nextButtonEnabled
 					}),
@@ -1427,7 +1427,7 @@
 					className: d.a.somethingWrong
 				}, r.a.createElement("div", {
 					className: d.a.somethingWrongText
-				}, n), t && r.a.createElement(a.i, {
+				}, n), t && r.a.createElement(a.k, {
 					onClick: t
 				}, o.fbt._("Try again", null, {
 					hk: "3JPIhw"
@@ -2159,4 +2159,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.7224d45aed04c8de7674.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.99e7cef4c0fb7d169fb4.js.map

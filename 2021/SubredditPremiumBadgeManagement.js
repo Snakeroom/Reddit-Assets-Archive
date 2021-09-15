@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeManagement.9087b6cd1978f9e3ec70.js
-// Retrieved at 9/1/2021, 1:20:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeManagement.9aaf7412c34686266f6e.js
+// Retrieved at 9/15/2021, 5:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumBadgeManagement"], {
 		"./node_modules/lodash/_LazyWrapper.js": function(e, t, s) {
@@ -1884,7 +1884,7 @@
 						className: Be.a.text
 					}, g.fbt._("Get a {membershipAlt} and receive new style badges every month. You can also buy badges individually from the Gallery.", [g.fbt._param("membershipAlt", e.meta.membershipAlt)], {
 						hk: "1JWnXS"
-					})), n.a.createElement(fe.k, {
+					})), n.a.createElement(fe.m, {
 						className: Be.a.learnMore,
 						disabled: !e.subreddit,
 						to: Object(_e.a)(a, s),
@@ -2120,7 +2120,7 @@
 						className: ct.a.price
 					}, g.fbt._("Get monthly reward badges by purchasing a {membershipAlt}!", [g.fbt._param("membershipAlt", e.meta.membershipAlt)], {
 						hk: "19iqHa"
-					}))), e.ownedBadge && n.a.createElement(fe.i, {
+					}))), e.ownedBadge && n.a.createElement(fe.k, {
 						className: ct.a.button,
 						disabled: e.alreadyApplied,
 						onClick: e.onApply
@@ -2128,7 +2128,7 @@
 						hk: "3zELtm"
 					}) : g.fbt._("Apply", null, {
 						hk: "19U1iU"
-					})), !Object(l.e)(e.badge) && !e.ownedBadge && Object(l.f)(e.badge) && n.a.createElement(fe.k, {
+					})), !Object(l.e)(e.badge) && !e.ownedBadge && Object(l.f)(e.badge) && n.a.createElement(fe.m, {
 						className: ct.a.button,
 						disabled: !e.subreddit,
 						to: Object(_e.a)(t, a),
@@ -2203,7 +2203,7 @@
 									hk: "3H5CTM"
 								})
 						}
-					}(e.badge)), n.a.createElement(fe.i, {
+					}(e.badge)), n.a.createElement(fe.k, {
 						className: pt.a.hide,
 						disabled: e.alreadyApplied,
 						onClick: e.onApply
@@ -3539,4 +3539,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeManagement.9087b6cd1978f9e3ec70.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeManagement.9aaf7412c34686266f6e.js.map

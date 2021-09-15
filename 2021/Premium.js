@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Premium.0fc5f23808ee2642339a.js
-// Retrieved at 8/30/2021, 12:20:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Premium.d82f46df3456dee9a6a0.js
+// Retrieved at 9/15/2021, 5:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Premium"], {
 		"./src/reddit/controls/Button/index.m.less": function(e, t, n) {
@@ -47,34 +47,38 @@
 				return l
 			})), n.d(t, "b", (function() {
 				return p
+			})), n.d(t, "g", (function() {
+				return m
 			})), n.d(t, "a", (function() {
 				return f
-			})), n.d(t, "j", (function() {
-				return h
-			})), n.d(t, "k", (function() {
-				return P
-			})), n.d(t, "i", (function() {
-				return k
-			})), n.d(t, "m", (function() {
-				return x
-			})), n.d(t, "n", (function() {
-				return O
 			})), n.d(t, "l", (function() {
-				return S
-			})), n.d(t, "p", (function() {
-				return B
+				return h
+			})), n.d(t, "m", (function() {
+				return P
+			})), n.d(t, "k", (function() {
+				return k
 			})), n.d(t, "o", (function() {
-				return C
-			})), n.d(t, "e", (function() {
+				return x
+			})), n.d(t, "p", (function() {
+				return O
+			})), n.d(t, "n", (function() {
+				return S
+			})), n.d(t, "r", (function() {
+				return B
+			})), n.d(t, "q", (function() {
 				return j
+			})), n.d(t, "e", (function() {
+				return C
 			})), n.d(t, "f", (function() {
 				return w
-			})), n.d(t, "h", (function() {
+			})), n.d(t, "j", (function() {
 				return I
 			})), n.d(t, "d", (function() {
-				return v
-			})), n.d(t, "g", (function() {
 				return N
+			})), n.d(t, "h", (function() {
+				return v
+			})), n.d(t, "i", (function() {
+				return E
 			}));
 			var r = n("./node_modules/react/index.js"),
 				a = n.n(r),
@@ -124,8 +128,8 @@
 						redditStyle: O,
 						size: S = l.S,
 						text: B,
-						textClassName: C,
-						...j
+						textClassName: j,
+						...C
 					} = e, w = (({
 						baseClassName: e,
 						redditStyle: t,
@@ -179,13 +183,13 @@
 						iconClassName: r,
 						iconPosition: o,
 						priority: x,
-						textClassName: C
+						textClassName: j
 					});
-					return k === f.InternalLink && (e => "to" in e)(j) ? a.a.createElement(_, c({}, u, j, {
+					return k === f.InternalLink && (e => "to" in e)(C) ? a.a.createElement(_, c({}, u, C, {
 						className: w
-					}), I) : k === f.ExternalLink && (e => "href" in e)(j) ? a.a.createElement(b, c({}, u, j, {
+					}), I) : k === f.ExternalLink && (e => "href" in e)(C) ? a.a.createElement(b, c({}, u, C, {
 						className: w
-					}), I) : a.a.createElement(g, c({}, u, j, {
+					}), I) : a.a.createElement(g, c({}, u, C, {
 						className: w
 					}), I)
 				},
@@ -220,11 +224,11 @@
 					kind: f.InternalLink,
 					priority: p.Plain
 				}, e)),
-				C = e => a.a.createElement(y, c({
+				j = e => a.a.createElement(y, c({
 					kind: f.Button,
 					priority: p.Plain
 				}, e)),
-				j = ({
+				C = ({
 					className: e,
 					...t
 				}) => a.a.createElement(y, c({
@@ -246,21 +250,28 @@
 					kind: f.Button,
 					className: Object(i.a)(e, d.a.PremiumButtonColors)
 				}, t)),
-				v = ({
+				N = ({
 					className: e,
 					...t
 				}) => a.a.createElement(y, c({
 					kind: f.Button,
 					className: Object(i.a)(e, d.a.ChatButton)
 				}, t)),
-				N = ({
+				v = ({
 					className: e,
 					...t
 				}) => a.a.createElement(y, c({
 					kind: f.Button,
 					className: Object(i.a)(e, d.a.InlineTextButton)
+				}, t)),
+				E = ({
+					className: e,
+					...t
+				}) => a.a.createElement(y, c({
+					kind: f.Button,
+					className: Object(i.a)(e, d.a.PlainLinkButton)
 				}, t));
-			t.q = y
+			t.s = y
 		},
 		"./src/reddit/endpoints/gold/productCatalog/index.ts": function(e, t, n) {
 			"use strict";
@@ -685,15 +696,15 @@
 			})), n.d(t, "i", (function() {
 				return B
 			})), n.d(t, "k", (function() {
-				return C
-			})), n.d(t, "j", (function() {
 				return j
+			})), n.d(t, "j", (function() {
+				return C
 			})), n.d(t, "m", (function() {
 				return w
 			})), n.d(t, "e", (function() {
 				return I
 			})), n.d(t, "d", (function() {
-				return v
+				return N
 			}));
 			var r = n("./src/reddit/selectors/gold/purchaseCatalog.ts"),
 				a = n("./src/lib/initializeClient/installReducer.ts"),
@@ -727,11 +738,11 @@
 				O = e => e.features.goldPurchase.payment.cardValidation.cardCvc,
 				S = e => e.features.goldPurchase.payment.cardValidation.cardExpiry,
 				B = e => e.features.goldPurchase.payment.cardValidation.cardNumber,
-				C = e => e.features.goldPurchase.payment.cardValidation.nameOnCard,
-				j = e => e.features.goldPurchase.payment.stripeToken.errorMessage,
+				j = e => e.features.goldPurchase.payment.cardValidation.nameOnCard,
+				C = e => e.features.goldPurchase.payment.stripeToken.errorMessage,
 				w = e => e.features.goldPurchase.payment.stripeToken.pending,
 				I = e => e.features.goldPurchase.payment.paypal.passthrough,
-				v = e => e.features.goldPurchase.payment.paypal.errorMessage
+				N = e => e.features.goldPurchase.payment.paypal.errorMessage
 		},
 		"./src/redditGQL/operations/ChangeStripePaymentMethod.json": function(e) {
 			e.exports = JSON.parse('{"id":"ce700fb9b230"}')
@@ -744,4 +755,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.0fc5f23808ee2642339a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.d82f46df3456dee9a6a0.js.map

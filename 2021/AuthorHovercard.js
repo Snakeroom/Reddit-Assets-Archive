@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.85cbfc2660fdf2116945.js
-// Retrieved at 9/15/2021, 10:00:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.7c6e6aef7d5a12ef527f.js
+// Retrieved at 9/15/2021, 5:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/lib/delay/index.ts": function(e, t, n) {
@@ -897,7 +897,7 @@
 				onAddUserToQuickReplyList: f,
 				children: h
 			}) => {
-				return o.a.createElement(d.q, {
+				return o.a.createElement(d.s, {
 					onClick: t => {
 						if (p && p(t), e(), b === r.awardNotification) return f();
 						s(Object(l.b)(a))
@@ -1818,7 +1818,7 @@
 				className: d.a.bannerTitleContainer
 			}, l && o.a.createElement("h4", {
 				className: d.a.bannerTitle
-			}, l), n && o.a.createElement(a.q, {
+			}, l), n && o.a.createElement(a.s, {
 				onClick: u,
 				Icon: Object(i.b)("close_fill"),
 				className: Object(r.a)(d.a.closeIcon, d.a.closeButton),
@@ -1828,13 +1828,13 @@
 				className: d.a.bannerDescription
 			}, s), o.a.createElement("div", {
 				className: d.a.bannerButtonsContainer
-			}, c && o.a.createElement(a.q, {
+			}, c && o.a.createElement(a.s, {
 				text: c,
 				priority: a.b.Tertiary,
 				className: Object(r.a)(d.a.button, d.a.primaryButton),
 				size: a.c.XS,
 				onClick: m
-			}), t && o.a.createElement(a.q, {
+			}), t && o.a.createElement(a.s, {
 				text: t,
 				onClick: u,
 				priority: a.b.Plain,
@@ -2641,7 +2641,7 @@
 				let C = null;
 				_ || (C = e ? "user_hovercard" : "profile_overview");
 				const O = Object(s.useCallback)(() => v(Object(m.d)(e ? "user_hovercard" : "profile_overview", t)), [e, v, t]);
-				return o.a.createElement(u.q, {
+				return o.a.createElement(u.s, {
 					onClick: () => {
 						n ? (v(m.e), _ && g === p.a.notVoted && I(Object(c.db)(_))) : O();
 						const e = n ? "postify" : "copy";
@@ -2698,7 +2698,7 @@
 				isOwnProfile: r,
 				onClick: d
 			}) {
-				return s.a.createElement(a.q, {
+				return s.a.createElement(a.s, {
 					onClick: d,
 					isFullWidth: !0,
 					className: Object(o.a)(l.a.snoovatarButton, {
@@ -3118,7 +3118,7 @@
 					priority: t,
 					small: n,
 					...r
-				}) => o.a.createElement(a.q, u({}, r, {
+				}) => o.a.createElement(a.s, u({}, r, {
 					priority: m(a.b.Primary, e, t),
 					className: Object(l.a)(r.className, d.a.BaseButton),
 					size: n ? a.c.S : a.c.M
@@ -3142,7 +3142,7 @@
 					priority: n,
 					small: r,
 					...s
-				}) => o.a.createElement(a.q, u({}, s, {
+				}) => o.a.createElement(a.s, u({}, s, {
 					priority: m(a.b.Secondary, t, n),
 					className: Object(l.a)(s.className, d.a.BaseButton),
 					size: r ? a.c.S : a.c.M,
@@ -3985,4 +3985,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.85cbfc2660fdf2116945.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.7c6e6aef7d5a12ef527f.js.map

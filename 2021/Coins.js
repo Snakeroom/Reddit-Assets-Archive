@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Coins.29c5e6f4f534541985bd.js
-// Retrieved at 9/1/2021, 1:20:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Coins.501d05b521fa78bcac73.js
+// Retrieved at 9/15/2021, 5:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Coins"], {
 		"./node_modules/lodash/times.js": function(e, t, a) {
@@ -1598,7 +1598,7 @@
 						className: Object(R.a)(D.a.description, y)
 					}, u), o.a.createElement("div", {
 						className: D.a.ctaContainer
-					}, o.a.createElement(V.q, {
+					}, o.a.createElement(V.s, {
 						kind: V.a.Button,
 						priority: V.b.Primary,
 						className: Object(R.a)(D.a.cta, y),
@@ -1649,12 +1649,12 @@
 					className: ee.a.premiumDescription
 				}, te._("Get {Number of monthly coins} coins every month with Reddit Premium and browse ads-free", [te._param("Number of monthly coins", l)], {
 					hk: "42dB3q"
-				})), a ? o.a.createElement(V.i, {
+				})), a ? o.a.createElement(V.k, {
 					className: ee.a.premiumCTA,
 					onClick: s
 				}, te._("Manage", null, {
 					hk: "4BQsAp"
-				})) : o.a.createElement(V.i, {
+				})) : o.a.createElement(V.k, {
 					className: ee.a.premiumCTA,
 					onClick: r
 				}, te._("Upgrade", null, {
@@ -1937,4 +1937,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Coins.29c5e6f4f534541985bd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Coins.501d05b521fa78bcac73.js.map

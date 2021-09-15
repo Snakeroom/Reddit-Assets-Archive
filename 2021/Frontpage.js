@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.35e5f1cf9a60751eda20.js
-// Retrieved at 9/15/2021, 5:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.8a48a6b94ee018e9242e.js
+// Retrieved at 9/15/2021, 5:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -1508,7 +1508,7 @@
 					className: y.a.dismissedText
 				}, P._("Ok, we won't show you this again.", null, {
 					hk: "4z33KK"
-				})), c.a.createElement(m.q, {
+				})), c.a.createElement(m.s, {
 					onClick: L
 				}, P._("undo", null, {
 					hk: "1A9z3Y"
@@ -1601,7 +1601,7 @@
 					className: y.a.copyTextHeading
 				}, B), c.a.createElement("p", {
 					className: y.a.copyTextDescription
-				}, Z)), c.a.createElement(m.h, {
+				}, Z)), c.a.createElement(m.j, {
 					onClick: F,
 					className: y.a.continueButton,
 					disabled: !!O
@@ -1917,7 +1917,7 @@
 						className: v.a.description
 					}, x._("The best Reddit experience, with monthly Coins", null, {
 						hk: "2n1ct3"
-					})))), i.a.createElement(y.h, {
+					})))), i.a.createElement(y.j, {
 						isFullWidth: !0,
 						onClick: t
 					}, x._("Try Now", null, {
@@ -1971,7 +1971,7 @@
 					className: T.a.SectionContent
 				}, s), i.a.createElement("div", {
 					className: T.a.SectionFooter
-				}, i.a.createElement(y.o, {
+				}, i.a.createElement(y.q, {
 					className: T.a.SectionButton,
 					onClick: r
 				}, a ? A.fbt._("Less", null, {
@@ -2103,7 +2103,7 @@
 						className: ee.a.description
 					}, te._("{subreddits list} and more are looking for moderators!", [te._param("subreddits list", i.a.createElement("strong", null, e.map(Q.c).join(", ") + (e.length > 1 ? "," : "")))], {
 						hk: "2Tb946"
-					}))), i.a.createElement(y.k, {
+					}))), i.a.createElement(y.m, {
 						className: ee.a.button,
 						to: `/r/${ne}?utm_source=reddit&utm_medium=fp_banner&utm_campaign=subreddit_adoption_week`
 					}, te._("Go Now", null, {
@@ -2443,10 +2443,10 @@
 			}
 			var qe = a("./src/reddit/selectors/experiments/utils.ts");
 			const Ue = Object(m.a)(e => Object(Be.c)(e, {
-					experimentName: De.Tc,
+					experimentName: De.Wc,
 					experimentEligibilitySelector: Be.a
 				}), qe.a),
-				Ve = Object(m.a)(Ue, e => e === De.Vc.Enabled);
+				Ve = Object(m.a)(Ue, e => e === De.Yc.Enabled);
 			var We = a("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
 				Ge = a("./src/reddit/selectors/user.ts");
 			var He = a("./src/reddit/selectors/experiments/uiSimplification.ts"),
@@ -2478,8 +2478,8 @@
 						return (!t || !a) && (!Object(He.b)(e) && function(e) {
 							return Object(Be.c)(e, {
 								experimentEligibilitySelector: Ge.K,
-								experimentName: De.rb
-							}) === De.oc
+								experimentName: De.ub
+							}) === De.rc
 						}(e))
 					},
 					isNavbarLikeMwebEnabled: d.a,
@@ -3712,7 +3712,7 @@
 					key: e
 				}))),
 				C = e => {
-					const t = e.isSecondaryButton ? f.n : f.k,
+					const t = e.isSecondaryButton ? f.p : f.m,
 						a = e.linkColor ? {
 							backgroundColor: e.linkColor,
 							color: "white"
@@ -4166,7 +4166,7 @@
 					kind: c.a.InternalLink,
 					to: e.to
 				} : {};
-				return n.a.createElement(c.q, l({
+				return n.a.createElement(c.s, l({
 					className: Object(r.a)(i.a.Chip, {
 						[i.a.isWide]: e.wide
 					}),
@@ -5486,7 +5486,7 @@
 				i = e => Object(c.c)(e, {
 					experimentEligibilitySelector: o,
 					experimentName: s.V
-				}) === s.tb.Treatment
+				}) === s.wb.Treatment
 		},
 		"./src/reddit/selectors/experiments/celebratoryMoments.ts": function(e, t, a) {
 			"use strict";
@@ -5507,13 +5507,13 @@
 			const c = e => {
 					const t = Object(n.c)(e, {
 						experimentEligibilitySelector: n.a,
-						experimentName: s.ne
+						experimentName: s.qe
 					});
 					return t === s.L.TwoDayCooldown || t === s.L.FiveDayCooldown
 				},
 				o = e => {
 					const t = Object(r.d)(e, {
-							experimentName: s.ne
+							experimentName: s.qe
 						}),
 						a = null == t ? void 0 : t.variant;
 					return a === s.L.TwoDayCooldown ? 2 : a === s.L.FiveDayCooldown ? 5 : 0
@@ -5536,7 +5536,7 @@
 			function c(e) {
 				return Object(n.c)(e, {
 					experimentEligibilitySelector: r.K,
-					experimentName: s.Kb
+					experimentName: s.Nb
 				})
 			}
 			const o = 31536e3;
@@ -5555,9 +5555,9 @@
 				return function(e) {
 					return Object(n.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: s.Jb
-					}) === s.qc.Enabled
-				}(e) ? l.Achievements : t === s.rc.ControlBanner ? l.CommunitySpacesControl : t === s.rc.EnabledBanner ? l.CommunitySpaces : null
+						experimentName: s.Mb
+					}) === s.tc.Enabled
+				}(e) ? l.Achievements : t === s.uc.ControlBanner ? l.CommunitySpacesControl : t === s.uc.EnabledBanner ? l.CommunitySpaces : null
 			}! function(e) {
 				e.Achievements = "achievements", e.CommunitySpaces = "communitySpaces", e.CommunitySpacesControl = "communitySpaces--control"
 			}(l || (l = {}))
@@ -5608,4 +5608,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.35e5f1cf9a60751eda20.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.8a48a6b94ee018e9242e.js.map

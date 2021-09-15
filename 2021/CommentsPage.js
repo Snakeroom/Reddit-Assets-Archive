@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.21cdade5f664c0ed53e5.js
-// Retrieved at 9/15/2021, 5:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.5e779fa9d5a069b6436a.js
+// Retrieved at 9/15/2021, 5:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage"], {
 		"./src/lib/makeLinkedPostsListingKey/index.ts": function(e, t, s) {
@@ -744,9 +744,9 @@
 							i = Object(te.I)(s(), {
 								identifier: R.belongsTo
 							});
-						if (i && (e => D.Ld.Redirect === Object(V.b)(e, {
+						if (i && (e => D.Od.Redirect === Object(V.b)(e, {
 								experimentEligibilitySelector: Z,
-								experimentName: D.Dd
+								experimentName: D.Gd
 							}))(s())) return void t(Object(o.c)(i.url));
 						if ((R.media && R.media.type) === T.o.LIVEVIDEO) {
 							const e = `/rpan${R.belongsTo.type===I.a.SUBREDDIT?i.url:"/"}${Object(u.t)(R.id)}`;
@@ -1200,7 +1200,7 @@
 				hk: "1KD7Eh"
 			})), n.a.createElement("div", {
 				className: p.a.CTAButtons
-			}, n.a.createElement(c.q, {
+			}, n.a.createElement(c.s, {
 				className: p.a.LoginLink,
 				kind: c.a.ExternalLink,
 				priority: c.b.Secondary,
@@ -1211,7 +1211,7 @@
 				"data-redditstyle": !0
 			}, u._("Log In", null, {
 				hk: "ZR3pC"
-			})), n.a.createElement(c.q, {
+			})), n.a.createElement(c.s, {
 				className: Object(r.a)(p.a.SignupLink, {
 					[p.a.LiveStreamingSignupLink]: t
 				}),
@@ -1950,7 +1950,7 @@
 					className: y.a.StateContainer
 				}, a.a.createElement(E, null), a.a.createElement(k, null, o.fbt._("That comment is missing", null, {
 					hk: "1i1U0i"
-				})), a.a.createElement(u.k, {
+				})), a.a.createElement(u.m, {
 					to: Object(b.b)(e)
 				}, o.fbt._("View all comments", null, {
 					hk: "2CgaIx"
@@ -1973,7 +1973,7 @@
 					isLoggedOut: !1
 				}) : o.fbt._("Sorry, comments couldn't load!", null, {
 					hk: "2h6LDi"
-				})), a.a.createElement(u.i, {
+				})), a.a.createElement(u.k, {
 					onClick: t
 				}, o.fbt._("Retry", null, {
 					hk: "NOuNi"
@@ -3904,7 +3904,7 @@
 							"--commentswrapper-gradient-color": Object(p.a)(this.props).body,
 							maxHeight: k ? v : "unset"
 						}
-					}, t), w && n.a.createElement(l.i, {
+					}, t), w && n.a.createElement(l.k, {
 						className: x.a.MoreCommentsButton,
 						onClick: o,
 						"data-redditstyle": !0
@@ -6183,7 +6183,7 @@
 							baseUrl: s.base_url,
 							hostPostId: a,
 							isEligibleForLinkedPosts: n,
-							shouldShowLinkedPosts: n && !Object(x.qe)(t) && !Object(I.a)(t),
+							shouldShowLinkedPosts: n && !Object(x.te)(t) && !Object(I.a)(t),
 							subreddit: o
 						}
 					}
@@ -6238,7 +6238,7 @@
 						hostPostData: d,
 						listingBelowVariant: c
 					} = e;
-					if (c && !Object(x.qe)(c) && !Object(I.a)(c) && !i) return a.a.createElement("div", {
+					if (c && !Object(x.te)(c) && !Object(I.a)(c) && !i) return a.a.createElement("div", {
 						className: K.a.smallBanner
 					});
 					const {
@@ -6249,9 +6249,9 @@
 						hk: "2g363L"
 					}) : Object(I.b)(c) ? o.fbt._("More posts like this", null, {
 						hk: "Maj0v"
-					}) : t === x.fd.SfwRecs ? o.fbt._("Top posts on Reddit this week", null, {
+					}) : t === x.id.SfwRecs ? o.fbt._("Top posts on Reddit this week", null, {
 						hk: "w3BDa"
-					}) : t === x.fd.DeRecs ? o.fbt._("Popular Posts Near You", null, {
+					}) : t === x.id.DeRecs ? o.fbt._("Popular Posts Near You", null, {
 						hk: "22vlW0"
 					}) : o.fbt._("More posts you may like", null, {
 						hk: "33WdfT"
@@ -8172,13 +8172,13 @@
 			const i = e => {
 					const t = Object(n.c)(e, {
 						experimentEligibilitySelector: n.a,
-						experimentName: o.ne
+						experimentName: o.qe
 					});
 					return t === o.L.TwoDayCooldown || t === o.L.FiveDayCooldown
 				},
 				a = e => {
 					const t = Object(r.d)(e, {
-							experimentName: o.ne
+							experimentName: o.qe
 						}),
 						s = null == t ? void 0 : t.variant;
 					return s === o.L.TwoDayCooldown ? 2 : s === o.L.FiveDayCooldown ? 5 : 0
@@ -8224,9 +8224,9 @@
 			const r = e => {
 				const t = Object(n.c)(e, {
 					experimentEligibilitySelector: n.a,
-					experimentName: o.Ob
+					experimentName: o.Rb
 				});
-				return !(!t || Object(o.qe)(t))
+				return !(!t || Object(o.te)(t))
 			}
 		},
 		"./src/reddit/selectors/experiments/replyWithUpvote.ts": function(e, t, s) {
@@ -8242,8 +8242,8 @@
 				const t = Object(r.k)(e);
 				return !(!t || (null == t ? void 0 : t.karma) && t.karma.fromPosts < 5 && t.karma.fromComments < 10) && Object(n.c)(e, {
 					experimentEligibilitySelector: n.a,
-					experimentName: o.lb
-				}) === o.oc
+					experimentName: o.ob
+				}) === o.rc
 			}
 		},
 		"./src/reddit/selectors/experiments/resonatePilot.ts": function(e, t, s) {
@@ -8256,8 +8256,8 @@
 				r = s("./src/reddit/selectors/meta.ts");
 			const i = e => Object(n.c)(e, {
 				experimentEligibilitySelector: e => !Object(r.d)(e) && "US" === Object(r.b)(e),
-				experimentName: o.Ed
-			}) === o.Md.Enabled
+				experimentName: o.Hd
+			}) === o.Pd.Enabled
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, s) {
 			"use strict";
@@ -8378,7 +8378,7 @@
 				i = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const a = e => {
 					const t = Object(i.a)(e);
-					return Boolean(t) && !Object(n.qe)(t)
+					return Boolean(t) && !Object(n.te)(t)
 				},
 				d = Object(o.a)(a, r.d, (e, t) => e && !t)
 		},
@@ -8415,4 +8415,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.21cdade5f664c0ed53e5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.5e779fa9d5a069b6436a.js.map

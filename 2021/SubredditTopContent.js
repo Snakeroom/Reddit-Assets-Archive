@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditTopContent.0f8a082c8b92efe759f3.js
-// Retrieved at 9/14/2021, 1:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditTopContent.0a558c77820bfc3df9a8.js
+// Retrieved at 9/15/2021, 5:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditTopContent"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -463,8 +463,8 @@
 				U = s("./src/reddit/components/MiniCardPost/Thumbnail/index.tsx"),
 				W = s("./src/reddit/components/PostBackgroundWrapper/index.tsx"),
 				F = s("./src/reddit/components/PostContainer/index.tsx"),
-				R = s("./src/reddit/components/PostTitle/index.tsx"),
-				B = s("./src/reddit/connectors/miniCardPost.ts"),
+				B = s("./src/reddit/components/PostTitle/index.tsx"),
+				R = s("./src/reddit/connectors/miniCardPost.ts"),
 				H = s("./src/reddit/contexts/Post/index.tsx"),
 				Q = s("./src/reddit/helpers/canPreviewSelfText/index.ts"),
 				q = s("./src/reddit/helpers/styles/mixins/index.tsx"),
@@ -557,12 +557,12 @@
 					}, N)), C && k && r.a.createElement(w, te({
 						created: p.created,
 						author: p.author
-					}, N)), r.a.createElement(R.c, {
+					}, N)), r.a.createElement(B.c, {
 						className: j ? ee.a.postTitle : ee.a.postTitleCompact,
 						disableFlair: !0,
 						hideSourceLink: !0,
 						post: p,
-						size: R.b.Large,
+						size: B.b.Large,
 						titleColor: o && o.postTitleColor
 					}), y && k && r.a.createElement(V.a, {
 						className: ee.a.metaLine,
@@ -599,7 +599,7 @@
 					}))))), r.a.createElement(M.d, null))
 				}
 			}
-			const ae = Object(H.b)(Object(B.a)(Object(C.a)(se)));
+			const ae = Object(H.b)(Object(R.a)(Object(C.a)(se)));
 			class ne extends r.a.Component {
 				render() {
 					return r.a.createElement(ae, this.props)
@@ -935,9 +935,9 @@
 				g = s("./src/reddit/constants/experiments.ts"),
 				f = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				C = s("./src/reddit/selectors/user.ts");
-			const y = e => Object(C.H)(e) || g.Yd.ShowTopContent === Object(f.c)(e, {
+			const y = e => Object(C.H)(e) || g.be.ShowTopContent === Object(f.c)(e, {
 				experimentEligibilitySelector: f.a,
-				experimentName: g.Sd
+				experimentName: g.Vd
 			});
 			var E = s("./src/reddit/selectors/subreddit.ts"),
 				k = s("./src/reddit/components/DiscoveryUnit/SubredditTopContentDiscoveryUnit/index.m.less"),
@@ -1360,8 +1360,8 @@
 				U = s("./src/config.ts"),
 				W = s("./src/reddit/hooks/useClickSourceData.ts"),
 				F = s("./src/reddit/hooks/useExperimentVariant.ts"),
-				R = s("./src/reddit/hooks/usePostContext.ts"),
-				B = s("./src/reddit/hooks/useTheme.ts"),
+				B = s("./src/reddit/hooks/usePostContext.ts"),
+				R = s("./src/reddit/hooks/useTheme.ts"),
 				H = s("./src/telemetry/models/Outbound.ts");
 
 			function Q() {
@@ -1384,7 +1384,7 @@
 					className: i,
 					redditStyle: o
 				}) => {
-					const c = Object(B.a)();
+					const c = Object(R.a)();
 					let l = "";
 					switch (e) {
 						case I.ExtraLarge:
@@ -1452,7 +1452,7 @@
 						subreddit: s
 					} = e, {
 						isSponsored: a
-					} = t, n = Object(W.a)(), i = Object(F.a)(u.yc) === u.Cc.Enabled;
+					} = t, n = Object(W.a)(), i = Object(F.a)(u.Bc) === u.Fc.Enabled;
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return r.a.createElement(G, {
 						nowrap: e.nowrap
 					}, r.a.createElement(Y, e));
@@ -1596,14 +1596,14 @@
 			t.c = r.a.memo((function(e) {
 				const t = Object(p.db)(),
 					s = Object(p.w)(t),
-					a = Object(R.a)(),
+					a = Object(B.a)(),
 					n = Object(i.e)(n => Z(n, {
 						...a,
 						...e,
 						isCommentPermalink: s,
 						pageLayer: t
 					})),
-					o = Object(B.a)(),
+					o = Object(R.a)(),
 					c = Object(m.b)();
 				return r.a.createElement(X, Q({
 					pageLayer: t,
@@ -1934,4 +1934,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.0f8a082c8b92efe759f3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.0a558c77820bfc3df9a8.js.map
