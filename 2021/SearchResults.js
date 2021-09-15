@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.995ca55f439c49d9144b.js
-// Retrieved at 9/15/2021, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.7c388c34afcc03c4657a.js
+// Retrieved at 9/15/2021, 5:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -7387,7 +7387,7 @@
 						viewTreatment: p
 					} = this.props;
 					switch (u) {
-						case ds.g.Posts:
+						case ds.h.Posts:
 							return n.a.createElement(Me, {
 								hasPostResults: t,
 								listingKey: s,
@@ -7398,7 +7398,7 @@
 								searchOptions: l,
 								tab: u
 							});
-						case ds.g.Listings:
+						case ds.h.Listings:
 							return n.a.createElement(Re.a, {
 								hasCommunityResults: e,
 								listingKey: s,
@@ -7406,7 +7406,7 @@
 								searchOptions: l,
 								tab: u
 							});
-						case ds.g.Top:
+						case ds.h.Top:
 						default: {
 							const h = p === De.c.Trending;
 							return n.a.createElement(n.a.Fragment, null, h ? n.a.createElement(cs, {
@@ -7769,7 +7769,7 @@
 				} = e, p = Object(o.e)(t => Object(d.a)(t, e));
 				return a.a.createElement("div", {
 					className: Object(r.a)(m.a.resultsContainer)
-				}, u === c.g.Listings ? a.a.createElement(i.a, {
+				}, u === c.h.Listings ? a.a.createElement(i.a, {
 					hasCommunityResults: p,
 					listingKey: t,
 					listingName: s,
@@ -7991,11 +7991,11 @@
 			class U extends o.a.Component {
 				constructor() {
 					super(...arguments), this.sendTopTabClickEvent = () => {
-						this.props.tab === L.g.Top && this.props.sendEvent(Object(v.i)(v.a.TopResults, this.props.searchOptions))
+						this.props.tab === L.h.Top && this.props.sendEvent(Object(v.i)(v.a.TopResults, this.props.searchOptions))
 					}, this.sendPostsTabClickEvent = () => {
-						this.props.tab === L.g.Posts && this.props.sendEvent(Object(v.i)(v.a.Posts, this.props.searchOptions))
+						this.props.tab === L.h.Posts && this.props.sendEvent(Object(v.i)(v.a.Posts, this.props.searchOptions))
 					}, this.sendCommunitiesTabClickEvent = () => {
-						this.props.tab === L.g.Listings && this.props.sendEvent(Object(v.i)(v.a.CommunitiesAndUsers, this.props.searchOptions))
+						this.props.tab === L.h.Listings && this.props.sendEvent(Object(v.i)(v.a.CommunitiesAndUsers, this.props.searchOptions))
 					}
 				}
 				render() {
@@ -8046,21 +8046,21 @@
 						title: E,
 						isCategoryPage: !!m[C.c]
 					}, !f && o.a.createElement(o.a.Fragment, null, o.a.createElement(P.a, {
-						active: h === L.g.Top,
+						active: h === L.h.Top,
 						onClick: this.sendTopTabClickEvent,
 						key: "top",
 						to: Object(M.a)(a, x, "")
 					}, r.fbt._("Best results", null, {
 						hk: "40v7Dh"
 					})), !Object(F.a)(x) && o.a.createElement(P.a, {
-						active: h === L.g.Posts,
+						active: h === L.h.Posts,
 						onClick: this.sendPostsTabClickEvent,
 						key: "posts",
 						to: Object(M.a)(a, x, i.Xb.Posts)
 					}, r.fbt._("Posts", null, {
 						hk: "vNVpl"
 					})), !Object(F.a)(x) && !m.is_multi && o.a.createElement(P.a, {
-						active: h === L.g.Listings,
+						active: h === L.h.Listings,
 						onClick: this.sendCommunitiesTabClickEvent,
 						key: "listings",
 						to: {
@@ -8203,7 +8203,7 @@
 					O = s[d.c] || s.q || "",
 					E = [{
 						condition: !0,
-						active: e === c.g.Posts,
+						active: e === c.h.Posts,
 						target: p.a.Posts,
 						key: "posts",
 						contentTypes: "",
@@ -8212,7 +8212,7 @@
 						})
 					}, {
 						condition: !s.is_multi && !s.restrict_sr,
-						active: e === c.g.Listings,
+						active: e === c.h.Listings,
 						target: p.a.CommunitiesAndUsers,
 						key: "listings",
 						contentTypes: [i.Xb.Subreddits, i.Xb.Users].join(","),
@@ -8824,7 +8824,7 @@
 							options: t,
 							optionLabels: s,
 							value: r
-						} = C(e.queryParams, e.url, h.y, e.isSerpRedesignLayout ? oe.slice().reverse() : oe, p.Ob, ie), a = e.tab === ae.g.Listings ? u.fbt._("Communities From", null, {
+						} = C(e.queryParams, e.url, h.y, e.isSerpRedesignLayout ? oe.slice().reverse() : oe, p.Ob, ie), a = e.tab === ae.h.Listings ? u.fbt._("Communities From", null, {
 							hk: "1oVrVu"
 						}) : u.fbt._("Posts From", null, {
 							hk: "1abcgn"
@@ -10934,7 +10934,7 @@
 						t: E.category ? l.dc.DAY : E.t
 					}, k = Object(m.b)(y, O, _);
 					let S;
-					return S = u && E.restrict_sr || 1 === _.type.length && _.type[0] === l.Xb.Posts ? v.g.Posts : _.type.length > 0 && -1 === _.type.indexOf(l.Xb.Posts) && (_.type.indexOf(l.Xb.Subreddits) > -1 || _.type.indexOf(l.Xb.Users) > -1) ? v.g.Listings : v.g.Top, i.a.createElement(j.a, {
+					return S = u && E.restrict_sr || 1 === _.type.length && _.type[0] === l.Xb.Posts ? v.h.Posts : _.type.length > 0 && -1 === _.type.indexOf(l.Xb.Posts) && (_.type.indexOf(l.Xb.Subreddits) > -1 || _.type.indexOf(l.Xb.Users) > -1) ? v.h.Listings : v.h.Top, i.a.createElement(j.a, {
 						className: this.props.className,
 						navBar: i.a.createElement(b.a, {
 							currentPageUrl: `${o}${e}`,
@@ -10956,7 +10956,7 @@
 						sidebar: i.a.createElement(C.a, {
 							className: P.a.sidebar,
 							listingKey: k,
-							listingName: y || v.b,
+							listingName: y || v.c,
 							searchOptions: _,
 							tab: S
 						})
@@ -11036,14 +11036,14 @@
 					}
 				}),
 				U = {
-					[v.g.Listings]: {
-						tab: v.g.Listings,
+					[v.h.Listings]: {
+						tab: v.h.Listings,
 						type: [d.Xb.Subreddits, d.Xb.Users],
 						sidebar: !1,
 						filterNav: !1
 					},
-					[v.g.Posts]: {
-						tab: v.g.Posts,
+					[v.h.Posts]: {
+						tab: v.h.Posts,
 						type: [],
 						sidebar: !0,
 						filterNav: !0
@@ -11083,7 +11083,7 @@
 				const X = t.params.subredditName || t.params.multiredditName || "",
 					Q = t.params.username,
 					Y = Object(l.e)(a()(K || {}, g.t)),
-					$ = !(W && Y.restrict_sr) && Object(E.a)(Y.type) ? v.g.Listings : v.g.Posts,
+					$ = !(W && Y.restrict_sr) && Object(E.a)(Y.type) ? v.h.Listings : v.h.Posts,
 					ee = {
 						...Y,
 						type: Object(R.a)(Y.type)
@@ -11148,7 +11148,7 @@
 					sidebar: ie && i.a.createElement(C.a, {
 						className: M.a.sidebar,
 						listingKey: re,
-						listingName: X || v.b,
+						listingName: X || v.c,
 						location: e,
 						searchOptions: se,
 						tab: oe
@@ -11562,4 +11562,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.995ca55f439c49d9144b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.7c388c34afcc03c4657a.js.map

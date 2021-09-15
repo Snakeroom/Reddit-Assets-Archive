@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OnboardingModal.efe873479aafdff09012.js
-// Retrieved at 9/9/2021, 3:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OnboardingModal.f03d611ccdf468731cc6.js
+// Retrieved at 9/15/2021, 5:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OnboardingModal"], {
 		"./node_modules/lodash/times.js": function(e, t, n) {
@@ -425,7 +425,7 @@
 						{
 							sort: c = i
 						} = e.params,
-						a = Object(Q.a)(w.a, c, e.queryParams),
+						a = Object(Q.a)(w.b, c, e.queryParams),
 						l = r.listings.postOrder.ids[a],
 						u = r.listings.postOrder.api.error[a],
 						m = r.listings.postOrder.api.pending[a],
@@ -480,7 +480,7 @@
 							sort: a = c
 						} = e,
 						l = r.platform.currentPage ? r.platform.currentPage.queryParams : {},
-						u = Object(Q.a)(w.a, a, l),
+						u = Object(Q.a)(w.b, a, l),
 						m = r.listings.postOrder.loadMore[u],
 						b = l[q.y] ? l[q.y].toUpperCase() : "",
 						p = b in d.dc && d.dc[b];
@@ -538,7 +538,7 @@
 							sort: o = r
 						} = e,
 						i = s.platform.currentPage ? s.platform.currentPage.queryParams : {},
-						c = Object(Q.a)(w.a, o, i),
+						c = Object(Q.a)(w.b, o, i),
 						a = i[q.y] ? i[q.y].toUpperCase() : "",
 						l = a in d.dc && d.dc[a],
 						u = Object(M.a)(s),
@@ -1785,4 +1785,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.efe873479aafdff09012.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.f03d611ccdf468731cc6.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-TabBadger-Component.f32a27cde7400cf24a41.js
-// Retrieved at 8/30/2021, 12:20:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-TabBadger-Component.d58f98034cc9d0c1360a.js
+// Retrieved at 9/15/2021, 5:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-TabBadger-Component"], {
 		"./src/reddit/components/Pill/PillButton/index.m.less": function(t, e, i) {
@@ -178,7 +178,7 @@
 							subredditName: e,
 							subscriberCount: i
 						} = this.props;
-						window.clearTimeout(this.timer), t || e === _.c.All || e === _.c.Popular ? this.timer = window.setTimeout(this.badgeFavicon, f) : i && i > j && (this.timer = window.setTimeout(this.badgeFavicon, T))
+						window.clearTimeout(this.timer), t || e === _.d.All || e === _.d.Popular ? this.timer = window.setTimeout(this.badgeFavicon, f) : i && i > j && (this.timer = window.setTimeout(this.badgeFavicon, T))
 					}, this.unbadgeFavicon = () => !this.props.tabBadged && Object(b.b)(!1), this.hidePill = () => this.setState({
 						isPillHidden: !0
 					}), this.activatePill = () => {
@@ -222,4 +222,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-TabBadger-Component.f32a27cde7400cf24a41.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-TabBadger-Component.d58f98034cc9d0c1360a.js.map

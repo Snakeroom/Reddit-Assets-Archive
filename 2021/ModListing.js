@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.d5d0a263e34b1a763d36.js
-// Retrieved at 9/9/2021, 7:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.d305e0204207454ee9b0.js
+// Retrieved at 9/15/2021, 5:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -626,7 +626,7 @@
 				}, R = (e, t) => async (r, s) => {
 					const {
 						sort: a = i.W
-					} = e.params, l = Object(k.d)(e.path), p = l ? u.e : u.d, h = Object(d.a)(p, a, e.queryParams), b = s(), f = b.listings.postOrder.ids[h], y = b.listings.postOrder.api.error[h];
+					} = e.params, l = Object(k.d)(e.path), p = l ? u.f : u.e, h = Object(d.a)(p, a, e.queryParams), b = s(), f = b.listings.postOrder.ids[h], y = b.listings.postOrder.api.error[h];
 					if (b.listings.postOrder.api.pending[h] || f && !y && !t) return void(f && r(c.l({
 						title: n.fbt._("Subreddits you moderate", null, {
 							hk: "3RYtBz"
@@ -653,7 +653,7 @@
 					if (!a) return;
 					const {
 						sort: c = i.W
-					} = e, l = a.queryParams, p = Object(k.d)(a.url), h = p ? u.e : u.d, b = Object(d.a)(h, c, l), f = s.listings.postOrder.loadMore[b];
+					} = e, l = a.queryParams, p = Object(k.d)(a.url), h = p ? u.f : u.e, b = Object(d.a)(h, c, l), f = s.listings.postOrder.loadMore[b];
 					if (!f) return;
 					const y = s.listings.postOrder.api.pending[b],
 						v = s.listings.postOrder.fetchedTokens,
@@ -2701,7 +2701,7 @@
 					const i = s()([...Object(l.a)(e)]),
 						a = we.y in i && i[we.y].toUpperCase(),
 						d = "string" == typeof a && a in c.dc ? c.dc[a] : c.ec,
-						m = r ? je.e : je.d;
+						m = r ? je.f : je.e;
 					return {
 						filtered: r,
 						isModerator: n,
@@ -4558,4 +4558,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.d5d0a263e34b1a763d36.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.d305e0204207454ee9b0.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.2ff42dde5e233c883aa0.js
-// Retrieved at 9/13/2021, 3:50:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.f27c7fce5a43332a366f.js
+// Retrieved at 9/15/2021, 5:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "AchievementsActions", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -2757,7 +2757,7 @@
 				o = n("./src/reddit/constants/page.ts");
 			const a = e => e && e.toLowerCase() === i.b.Popular,
 				d = e => e && e.toLowerCase() === i.b.All,
-				c = e => e && e === o.b,
+				c = e => e && e === o.c,
 				l = (e, t = 40, n = 68) => ({
 					height: n,
 					image: e,
@@ -3488,7 +3488,7 @@
 							isLoggedIn: e,
 							listingName: t
 						} = this.props;
-						return e || t !== Ve.b ? t : ze.b.Popular
+						return e || t !== Ve.c ? t : ze.b.Popular
 					}, this.onIconImageSelected = e => {
 						this.props.onCommunityIconSelected(e, Object(ct.b)())
 					}, this.openIconFilePicker = () => {
@@ -6661,4 +6661,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.2ff42dde5e233c883aa0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.f27c7fce5a43332a366f.js.map

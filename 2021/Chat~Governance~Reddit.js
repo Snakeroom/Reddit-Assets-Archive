@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.9c3365c27a594418ee43.js
-// Retrieved at 9/15/2021, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.7e2139e1648022740626.js
+// Retrieved at 9/15/2021, 5:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -2494,13 +2494,13 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("145052"),
+				buildNumber: r("145065"),
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1631737108"),
+				})("1631738987"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -4536,13 +4536,32 @@
 		},
 		"./src/lib/countrySites/index.ts": function(e, t, i) {
 			"use strict";
-			i.d(t, "a", (function() {
-				return n
+			i.d(t, "b", (function() {
+				return s
+			})), i.d(t, "c", (function() {
+				return o
+			})), i.d(t, "a", (function() {
+				return d
 			}));
-			const n = e => {
-				const t = (e => e.map(e => "/:countryCode([a-z]{2})" + e))(e);
-				return [...(e => e.map(e => "/:countryCode([a-z]{2})/:languageCode([a-z]{2})" + e))(e), ...t, ...e]
-			}
+			var n = i("./src/lib/isFakeSubreddit/index.ts"),
+				r = i("./src/reddit/constants/page.ts");
+			const s = e => {
+					const t = (e => e.map(e => "/:countryCode([a-z]{2})" + e))(e);
+					return [...(e => e.map(e => "/:countryCode([a-z]{2})/:languageCode([a-z]{2})" + e))(e), ...t, ...e]
+				},
+				o = e => {
+					const {
+						subredditName: t,
+						countryCode: i,
+						languageCode: s
+					} = e, o = Object(n.c)(t, i, s), d = Object(n.b)(t, i, s);
+					let a = t;
+					return o && (a = r.d.Popular), d && (a = r.d.All), a
+				},
+				d = (e, t, i) => {
+					let n = "";
+					return t && (n += `/${t}`, n += i ? `/${i}` : ""), n + e
+				}
 		},
 		"./src/lib/createSignature/index.ts": function(e, t, i) {
 			"use strict";
@@ -4978,14 +4997,14 @@
 					}))
 				},
 				z = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %caa4729511f29521f2626a791bbf315bb73d20a2a-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c822a61e9bf152b9fd8ea7431e4fa8956b5ab5a37-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${v.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "aa4729511f29521f2626a791bbf315bb73d20a2a-production",
+						release: "822a61e9bf152b9fd8ea7431e4fa8956b5ab5a37-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -5175,11 +5194,30 @@
 		},
 		"./src/lib/isFakeSubreddit/index.ts": function(e, t, i) {
 			"use strict";
-			var n = i("./src/reddit/constants/page.ts");
-			const r = [n.a, n.c.Frontpage, n.c.All, n.c.Mod, n.c.Friends, n.c.Popular, n.c.Topic].concat(["random", "randnsfw", "myrandom"]);
-			t.a = e => {
-				const t = e.toLowerCase();
-				return r.includes(t) || t.indexOf("+") > -1 || t.indexOf("-") > -1
+			i.d(t, "c", (function() {
+				return d
+			})), i.d(t, "b", (function() {
+				return a
+			}));
+			var n = i("./node_modules/@reddit/reddit-country-url-redirects/dist/esm/index.js"),
+				r = i("./src/reddit/constants/page.ts");
+			const s = [r.b, r.d.Frontpage],
+				o = [...s, r.d.Mod, r.d.Friends, r.d.Topic].concat(["random", "randnsfw", "myrandom"]),
+				d = (e, t, i) => {
+					const s = e.toLowerCase();
+					return t ? n.a.isPopularPage(s, t, i) : s === r.g
+				},
+				a = (e, t, i) => {
+					const s = e.toLowerCase();
+					return t ? n.a.isAllPage(s, t, i) : s === r.a
+				};
+			t.a = (e, t, i) => {
+				const n = e.toLowerCase(),
+					r = d(n, t, i),
+					l = a(n, t, i),
+					u = s.includes(n),
+					c = !t && o.includes(n);
+				return l || r || u || c || n.indexOf("+") > -1 || n.indexOf("-") > -1
 			}
 		},
 		"./src/lib/isPinnedAdminPost/index.ts": function(e, t, i) {
@@ -5479,7 +5517,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "aa4729511f29521f2626a791bbf315bb73d20a2a-production",
+						releaseClient: "822a61e9bf152b9fd8ea7431e4fa8956b5ab5a37-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -14450,6 +14488,19 @@
 				e.Yes = "yes", e.No = "no"
 			}(m || (m = {}))
 		},
+		"./src/reddit/constants/countrySites.ts": function(e, t, i) {
+			"use strict";
+			i.d(t, "a", (function() {
+				return n
+			})), i.d(t, "b", (function() {
+				return r
+			})), i.d(t, "c", (function() {
+				return s
+			}));
+			const n = "ca",
+				r = "fr",
+				s = ["t5_4hsusu", "t5_3j0kj", "t5_3denv", "t5_3fplt", "juan_test2", "whatssnoo", "grahamisms", "snootography"]
+		},
 		"./src/reddit/constants/covid.ts": function(e, t, i) {
 			"use strict";
 			i.d(t, "b", (function() {
@@ -15923,20 +15974,22 @@
 		},
 		"./src/reddit/constants/page.ts": function(e, t, i) {
 			"use strict";
-			i.d(t, "a", (function() {
+			i.d(t, "b", (function() {
 				return n
-			})), i.d(t, "d", (function() {
-				return r
 			})), i.d(t, "e", (function() {
-				return s
-			})), i.d(t, "c", (function() {
-				return o
-			})), i.d(t, "b", (function() {
-				return d
+				return r
 			})), i.d(t, "f", (function() {
-				return a
+				return s
+			})), i.d(t, "d", (function() {
+				return o
+			})), i.d(t, "a", (function() {
+				return d
 			})), i.d(t, "g", (function() {
+				return a
+			})), i.d(t, "c", (function() {
 				return l
+			})), i.d(t, "h", (function() {
+				return u
 			}));
 			const n = "(frontpage)",
 				r = "(modListing)",
@@ -15945,12 +15998,13 @@
 			! function(e) {
 				e.Frontpage = "frontpage", e.All = "all", e.Mod = "mod", e.Friends = "friends", e.Popular = "popular", e.PostDetail = "postDetail", e.Topic = "topic", e.OtherDiscussions = "otherDiscussions"
 			}(o || (o = {}));
-			const d = o.Frontpage,
-				a = o.Popular;
-			var l;
+			const d = o.All,
+				a = o.Popular,
+				l = o.Frontpage;
+			var u;
 			! function(e) {
 				e[e.Top = 0] = "Top", e[e.Posts = 1] = "Posts", e[e.Listings = 2] = "Listings"
-			}(l || (l = {}))
+			}(u || (u = {}))
 		},
 		"./src/reddit/constants/parameters.ts": function(e, t, i) {
 			"use strict";
@@ -16495,115 +16549,115 @@
 		"./src/reddit/contexts/PageLayer/selectors.ts": function(e, t, i) {
 			"use strict";
 			i.d(t, "g", (function() {
-				return L
-			})), i.d(t, "z", (function() {
 				return B
-			})), i.d(t, "G", (function() {
+			})), i.d(t, "z", (function() {
 				return k
-			})), i.d(t, "P", (function() {
+			})), i.d(t, "G", (function() {
 				return M
-			})), i.d(t, "R", (function() {
+			})), i.d(t, "P", (function() {
 				return U
-			})), i.d(t, "y", (function() {
+			})), i.d(t, "R", (function() {
 				return G
-			})), i.d(t, "E", (function() {
+			})), i.d(t, "y", (function() {
 				return V
-			})), i.d(t, "C", (function() {
+			})), i.d(t, "E", (function() {
 				return q
-			})), i.d(t, "X", (function() {
+			})), i.d(t, "C", (function() {
 				return H
-			})), i.d(t, "x", (function() {
+			})), i.d(t, "X", (function() {
 				return W
-			})), i.d(t, "w", (function() {
+			})), i.d(t, "x", (function() {
 				return K
-			})), i.d(t, "A", (function() {
+			})), i.d(t, "w", (function() {
 				return $
-			})), i.d(t, "O", (function() {
+			})), i.d(t, "A", (function() {
 				return z
-			})), i.d(t, "B", (function() {
+			})), i.d(t, "O", (function() {
 				return Y
-			})), i.d(t, "J", (function() {
+			})), i.d(t, "B", (function() {
 				return Q
-			})), i.d(t, "F", (function() {
+			})), i.d(t, "J", (function() {
 				return J
+			})), i.d(t, "F", (function() {
+				return X
 			})), i.d(t, "K", (function() {
-				return Z
-			})), i.d(t, "H", (function() {
 				return ee
-			})), i.d(t, "M", (function() {
+			})), i.d(t, "H", (function() {
 				return te
-			})), i.d(t, "L", (function() {
+			})), i.d(t, "M", (function() {
 				return ie
-			})), i.d(t, "d", (function() {
+			})), i.d(t, "L", (function() {
 				return ne
-			})), i.d(t, "b", (function() {
+			})), i.d(t, "d", (function() {
 				return re
-			})), i.d(t, "u", (function() {
+			})), i.d(t, "b", (function() {
 				return se
-			})), i.d(t, "e", (function() {
+			})), i.d(t, "u", (function() {
 				return oe
-			})), i.d(t, "p", (function() {
+			})), i.d(t, "e", (function() {
 				return de
-			})), i.d(t, "s", (function() {
+			})), i.d(t, "p", (function() {
 				return ae
-			})), i.d(t, "o", (function() {
+			})), i.d(t, "s", (function() {
 				return le
-			})), i.d(t, "q", (function() {
+			})), i.d(t, "o", (function() {
 				return ue
-			})), i.d(t, "r", (function() {
+			})), i.d(t, "q", (function() {
 				return ce
-			})), i.d(t, "I", (function() {
+			})), i.d(t, "r", (function() {
 				return _e
-			})), i.d(t, "j", (function() {
+			})), i.d(t, "I", (function() {
 				return me
-			})), i.d(t, "k", (function() {
+			})), i.d(t, "j", (function() {
 				return pe
-			})), i.d(t, "l", (function() {
+			})), i.d(t, "k", (function() {
 				return he
-			})), i.d(t, "m", (function() {
+			})), i.d(t, "l", (function() {
 				return fe
-			})), i.d(t, "D", (function() {
+			})), i.d(t, "m", (function() {
 				return be
-			})), i.d(t, "i", (function() {
+			})), i.d(t, "D", (function() {
 				return ge
-			})), i.d(t, "T", (function() {
+			})), i.d(t, "i", (function() {
 				return we
-			})), i.d(t, "V", (function() {
+			})), i.d(t, "T", (function() {
 				return ye
-			})), i.d(t, "Y", (function() {
+			})), i.d(t, "V", (function() {
 				return ve
-			})), i.d(t, "cb", (function() {
+			})), i.d(t, "Y", (function() {
 				return Ee
-			})), i.d(t, "Q", (function() {
+			})), i.d(t, "cb", (function() {
 				return Te
-			})), i.d(t, "S", (function() {
+			})), i.d(t, "Q", (function() {
 				return Se
-			})), i.d(t, "t", (function() {
+			})), i.d(t, "S", (function() {
 				return Oe
-			})), i.d(t, "U", (function() {
+			})), i.d(t, "t", (function() {
 				return Ie
-			})), i.d(t, "c", (function() {
+			})), i.d(t, "U", (function() {
 				return Re
-			})), i.d(t, "v", (function() {
+			})), i.d(t, "c", (function() {
 				return Fe
-			})), i.d(t, "W", (function() {
+			})), i.d(t, "v", (function() {
 				return Ce
-			})), i.d(t, "h", (function() {
+			})), i.d(t, "W", (function() {
 				return Ne
-			})), i.d(t, "n", (function() {
+			})), i.d(t, "h", (function() {
 				return je
-			})), i.d(t, "ab", (function() {
+			})), i.d(t, "n", (function() {
 				return Ae
-			})), i.d(t, "f", (function() {
+			})), i.d(t, "ab", (function() {
 				return Pe
-			})), i.d(t, "N", (function() {
+			})), i.d(t, "f", (function() {
 				return De
-			})), i.d(t, "Z", (function() {
+			})), i.d(t, "N", (function() {
 				return xe
-			})), i.d(t, "bb", (function() {
+			})), i.d(t, "Z", (function() {
 				return Le
-			})), i.d(t, "a", (function() {
+			})), i.d(t, "bb", (function() {
 				return Be
+			})), i.d(t, "a", (function() {
+				return ke
 			}));
 			i("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = i("./node_modules/lodash/isEmpty.js"),
@@ -16669,7 +16723,7 @@
 								} = Object(g.d)(a.sort);
 								return e
 							}
-							return i === _.f && Object(v.a)(e) ? o.ub : o.W
+							return i === _.g && Object(v.a)(e) ? o.ub : o.W
 						}
 						default:
 							return s || o.W
@@ -16679,83 +16733,87 @@
 				O = i("./src/reddit/models/Image/index.tsx"),
 				I = i("./src/reddit/routes/subreddit/index.ts"),
 				R = i("./src/reddit/selectors/category.ts"),
-				F = i("./src/reddit/selectors/modModeEnabled.ts"),
-				C = i("./src/reddit/selectors/multireddit.ts"),
-				N = i("./src/reddit/selectors/postCollection.ts"),
-				j = i("./src/reddit/selectors/postDraft.ts"),
-				A = i("./src/reddit/selectors/profile.ts"),
-				P = i("./src/reddit/selectors/searchResults.ts"),
-				D = i("./src/reddit/selectors/subreddit.ts"),
-				x = i("./src/reddit/selectors/user.ts");
-			const L = e => e ? e.url : "",
-				B = e => !!(e && e.routeMatch && o.r.FRONTPAGE.includes(e.routeMatch.route.chunk)),
-				k = e => e && e.routeMatch && [o.r.FRONTPAGE, o.r.MULTIREDDIT, o.r.SUBREDDIT].includes(e.routeMatch.route.chunk),
-				M = e => !(!e || !e.meta || e.meta.name !== o.Kb.TOPIC),
-				U = (e, {
+				F = i("./src/reddit/selectors/countrySites.ts"),
+				C = i("./src/reddit/selectors/modModeEnabled.ts"),
+				N = i("./src/reddit/selectors/multireddit.ts"),
+				j = i("./src/reddit/selectors/postCollection.ts"),
+				A = i("./src/reddit/selectors/postDraft.ts"),
+				P = i("./src/reddit/selectors/profile.ts"),
+				D = i("./src/reddit/selectors/searchResults.ts"),
+				x = i("./src/reddit/selectors/subreddit.ts"),
+				L = i("./src/reddit/selectors/user.ts");
+			const B = e => e ? e.url : "",
+				k = e => !!(e && e.routeMatch && o.r.FRONTPAGE.includes(e.routeMatch.route.chunk)),
+				M = e => e && e.routeMatch && [o.r.FRONTPAGE, o.r.MULTIREDDIT, o.r.SUBREDDIT].includes(e.routeMatch.route.chunk),
+				U = e => !(!e || !e.meta || e.meta.name !== o.Kb.TOPIC),
+				G = (e, {
 					pageLayer: t
 				}) => {
-					if (!t || !k(t) || !t.routeMatch) return null;
+					if (!t || !M(t) || !t.routeMatch) return null;
 					const {
 						match: i
 					} = t.routeMatch, n = i.params.subredditName;
 					if (!n) return null;
-					const r = Object(D.w)(e, {
+					const r = Object(x.w)(e, {
 						subredditName: n
 					});
 					return r ? r.name : n
 				},
-				G = (e, {
-					pageLayer: t
-				}) => {
-					const i = U(e, {
-						pageLayer: t
-					});
-					return !!i && Object(d.a)(i)
-				},
 				V = (e, {
 					pageLayer: t
 				}) => {
-					const i = U(e, {
+					const i = Object(F.b)(e),
+						n = G(e, {
 							pageLayer: t
-						}),
-						n = B(t),
-						r = Object(x.K)(e);
-					return i === _.f || !r && n
+						});
+					return !!n && Object(d.a)(n, i.countryCode, i.languageCode)
 				},
 				q = (e, {
 					pageLayer: t
 				}) => {
-					const i = U(e, {
+					const i = G(e, {
+							pageLayer: t
+						}),
+						n = k(t),
+						r = Object(L.K)(e),
+						s = Object(F.b)(e),
+						o = !!i && Object(d.c)(i, s.countryCode, s.languageCode);
+					return i === _.g || o || !r && n
+				},
+				H = (e, {
+					pageLayer: t
+				}) => {
+					const i = G(e, {
 						pageLayer: t
 					});
 					return !(i && !Object(d.a)(i))
 				},
-				H = e => {
+				W = e => {
 					if (!e || !e.routeMatch) return;
 					const {
 						route: t
 					} = e.routeMatch;
 					return t.meta.name
 				},
-				W = e => !(!e || !e.meta || e.meta.name !== o.Kb.COMMENTS),
-				K = e => !!(e && e.meta && e.meta.name === o.Kb.COMMENTS && e.urlParams.partialCommentId),
-				$ = e => !(!e || !e.meta || e.meta.name !== o.Kb.SEARCH_RESULTS || e.urlParams.subredditName),
-				z = e => {
+				K = e => !(!e || !e.meta || e.meta.name !== o.Kb.COMMENTS),
+				$ = e => !!(e && e.meta && e.meta.name === o.Kb.COMMENTS && e.urlParams.partialCommentId),
+				z = e => !(!e || !e.meta || e.meta.name !== o.Kb.SEARCH_RESULTS || e.urlParams.subredditName),
+				Y = e => {
 					var t;
 					return Boolean((null === (t = null == e ? void 0 : e.meta) || void 0 === t ? void 0 : t.name) === o.Kb.SEARCH_RESULTS && e.urlParams.subredditName)
 				},
-				Y = e => {
+				Q = e => {
 					var t;
 					return Boolean((null === (t = null == e ? void 0 : e.meta) || void 0 === t ? void 0 : t.name) === o.Kb.SEARCH_RESULTS && e.urlParams.multiredditName)
 				},
-				Q = e => !(!e || !e.meta || e.meta.name !== o.Kb.COMMENTS || h.b[e.urlParams.routePrefix] !== h.a.PROFILE),
-				J = e => !(!e || !e.meta || e.meta.name !== o.Kb.POST_CREATION),
-				X = e => !(!e || !e.meta || e.meta.name !== o.Kb.POST_DRAFT),
-				Z = e => !!(e && e.meta && o.zb.has(e.meta.name)),
-				ee = e => !!(e && e.meta && o.xb.has(e.meta.name)),
-				te = e => !!(e && e.meta && o.Ub.has(e.meta.name)),
-				ie = e => !(!e || !e.meta || o.Kb.SETTINGS !== e.meta.name),
-				ne = e => {
+				J = e => !(!e || !e.meta || e.meta.name !== o.Kb.COMMENTS || h.b[e.urlParams.routePrefix] !== h.a.PROFILE),
+				X = e => !(!e || !e.meta || e.meta.name !== o.Kb.POST_CREATION),
+				Z = e => !(!e || !e.meta || e.meta.name !== o.Kb.POST_DRAFT),
+				ee = e => !!(e && e.meta && o.zb.has(e.meta.name)),
+				te = e => !!(e && e.meta && o.xb.has(e.meta.name)),
+				ie = e => !!(e && e.meta && o.Ub.has(e.meta.name)),
+				ne = e => !(!e || !e.meta || o.Kb.SETTINGS !== e.meta.name),
+				re = e => {
 					const t = e && e.urlParams;
 					if (!t) return;
 					const {
@@ -16767,67 +16825,67 @@
 						username: n
 					}
 				},
-				re = e => {
+				se = e => {
 					const t = e && e.urlParams;
 					return t ? t.categoryName : void 0
 				},
-				se = e => {
+				oe = e => {
 					const t = e && e.urlParams;
 					return t ? t.topicSlug : void 0
 				},
-				oe = (e, {
+				de = (e, {
 					pageLayer: t
 				}) => {
-					const i = ne(t);
+					const i = re(t);
 					if (!i) return null;
 					const {
 						multiredditName: n,
 						username: r
 					} = i;
-					return n ? Object(C.d)(e, {
+					return n ? Object(N.d)(e, {
 						multiredditName: n,
 						username: r
 					}) : null
 				},
-				de = (e, {
+				ae = (e, {
 					pageLayer: t
 				}) => {
-					if (X(t)) {
-						const i = Fe(t);
-						return Object(j.e)(e, {
+					if (Z(t)) {
+						const i = Ce(t);
+						return Object(A.e)(e, {
 							draftId: i
 						})
 					}
 					const i = t && t.urlParams;
 					return i ? i.subredditName : void 0
 				},
-				ae = (e, {
-					pageLayer: t
-				}) => {
-					if (t && t.urlParams && h.b[t.urlParams.routePrefix] === h.a.PROFILE) return null;
-					const i = de(e, {
-						pageLayer: t
-					});
-					return i ? Object(D.w)(e, {
-						subredditName: i
-					}) : null
-				},
 				le = (e, {
 					pageLayer: t
 				}) => {
-					const i = de(e, {
+					if (t && t.urlParams && h.b[t.urlParams.routePrefix] === h.a.PROFILE) return null;
+					const i = ae(e, {
 						pageLayer: t
 					});
-					return i ? Object(D.B)(e, i) : null
+					return i ? Object(x.w)(e, {
+						subredditName: i
+					}) : null
 				},
-				ue = (e, t) => ae(e, t) || he(e, t),
-				ce = (e, {
+				ue = (e, {
+					pageLayer: t
+				}) => {
+					const i = ae(e, {
+						pageLayer: t
+					});
+					return i ? Object(x.B)(e, i) : null
+				},
+				ce = (e, t) => le(e, t) || fe(e, t),
+				_e = (e, {
 					pageLayer: t
 				}) => {
 					const i = ((e, {
 						pageLayer: t
 					}) => {
-						const i = le(e, {
+						const i = ue(e, {
 							pageLayer: t
 						});
 						return i ? e.postFlair[i] : null
@@ -16836,52 +16894,52 @@
 					});
 					return i ? i.displaySettings.position : S.b.Right
 				},
-				_e = e => !!(e && e.routeMatch && o.Ab.has(e.routeMatch.route.meta.name)) || Q(e) || (e => !(!e || !e.meta || e.meta.name !== o.Kb.COLLECTION_COMMENTS || h.b[e.urlParams.routePrefix] !== h.a.PROFILE))(e),
-				me = e => {
+				me = e => !!(e && e.routeMatch && o.Ab.has(e.routeMatch.route.meta.name)) || J(e) || (e => !(!e || !e.meta || e.meta.name !== o.Kb.COLLECTION_COMMENTS || h.b[e.urlParams.routePrefix] !== h.a.PROFILE))(e),
+				pe = e => {
 					const t = e && e.urlParams;
 					return t ? t.profileName : void 0
 				},
-				pe = e => {
-					if (e && e.routeMatch && H(e) === o.Kb.PROFILE_PRIVATE) return e.routeMatch.match.params.listingType
-				},
-				he = (e, {
-					pageLayer: t
-				}) => {
-					const i = Q(t) ? de(e, {
-						pageLayer: t
-					}) : me(t);
-					return i ? Object(A.j)(e, {
-						profileName: i
-					}) : null
+				he = e => {
+					if (e && e.routeMatch && W(e) === o.Kb.PROFILE_PRIVATE) return e.routeMatch.match.params.listingType
 				},
 				fe = (e, {
 					pageLayer: t
 				}) => {
-					const i = Q(t) ? de(e, {
+					const i = J(t) ? ae(e, {
 						pageLayer: t
-					}) : me(t);
-					return i ? Object(x.ob)(e, {
-						userName: i
+					}) : pe(t);
+					return i ? Object(P.j)(e, {
+						profileName: i
 					}) : null
 				},
 				be = (e, {
 					pageLayer: t
 				}) => {
-					const i = he(e, {
-							pageLayer: t
-						}),
-						n = Object(x.k)(e),
-						r = n && (n.username ? n.username : n.displayText);
-					return !(!r || !i || r !== i.name)
+					const i = J(t) ? ae(e, {
+						pageLayer: t
+					}) : pe(t);
+					return i ? Object(L.ob)(e, {
+						userName: i
+					}) : null
 				},
 				ge = (e, {
 					pageLayer: t
 				}) => {
-					if (be(e, {
+					const i = fe(e, {
+							pageLayer: t
+						}),
+						n = Object(L.k)(e),
+						r = n && (n.username ? n.username : n.displayText);
+					return !(!r || !i || r !== i.name)
+				},
+				we = (e, {
+					pageLayer: t
+				}) => {
+					if (ge(e, {
 							pageLayer: t
 						})) return f.a
 				},
-				we = (e, {
+				ye = (e, {
 					pageLayer: t
 				}) => {
 					if (!t) return;
@@ -16890,18 +16948,18 @@
 					} = t;
 					return e.platform.referrers[i]
 				},
-				ye = e => e ? e.queryParams : {},
-				ve = e => {
-					const t = H(e);
+				ve = e => e ? e.queryParams : {},
+				Ee = e => {
+					const t = W(e);
 					if (e && t && t === o.Kb.SEARCH_RESULTS) return e.queryParams[m.c] ? Object(l.a)(e.queryParams[m.c]) : Object(l.a)(e.queryParams[m.p])
 				},
-				Ee = e => e ? e.url : "",
-				Te = (e, {
+				Te = e => e ? e.url : "",
+				Se = (e, {
 					pageLayer: t
 				}) => {
 					let i;
 					if (void 0 !== (i = void 0 === t ? e.platform.currentPage : t)) {
-						const n = H(i);
+						const n = W(i);
 						if (n === o.Kb.POST_CREATION) return p.g.Large;
 						if (n === o.Kb.SUBREDDIT_WIKI) return p.g.Classic;
 						if (n === o.Kb.EXPLORE) return p.g.Classic;
@@ -16911,7 +16969,7 @@
 							const i = ((e, {
 								pageLayer: t
 							}) => {
-								const i = le(e, {
+								const i = ue(e, {
 									pageLayer: t
 								});
 								if (i) {
@@ -16926,27 +16984,27 @@
 						}
 						if (o.Ab.has(n)) {
 							if (n === o.Kb.PROFILE_OVERVIEW) return p.g.Large;
-							return Se(e, {
+							return Oe(e, {
 								pageLayer: t
 							}) ? n === o.Kb.PROFILE_POSTS || n === o.Kb.PROFILE_PRIVATE ? p.g.Classic : p.g.Compact : p.g.Classic
 						}
 					}
 					return e.user.prefs.layout ? p.b[e.user.prefs.layout] : p.g.Classic
 				},
-				Se = (e, {
-					pageLayer: t
-				}) => !!Object(F.a)(e) || !(!t || !t.meta) && t.meta.name === o.Kb.MODQUEUE_PAGES,
 				Oe = (e, {
 					pageLayer: t
+				}) => !!Object(C.a)(e) || !(!t || !t.meta) && t.meta.name === o.Kb.MODQUEUE_PAGES,
+				Ie = (e, {
+					pageLayer: t
 				}) => {
-					const i = le(e, {
+					const i = ue(e, {
 						pageLayer: t
 					});
 					if (!i) return !0;
 					const n = e.subreddits.about[i];
 					return !n || n.showMedia
 				},
-				Ie = Object(a.a)((e, {
+				Re = Object(a.a)((e, {
 					pageLayer: t,
 					postId: i,
 					flairStyleTemplateDraft: n
@@ -16955,7 +17013,7 @@
 					if (!r) return;
 					const s = r.flair.find(e => Object(b.q)(e.type));
 					if (!s || void 0 === s.templateId) return;
-					const d = le(e, {
+					const d = ue(e, {
 						pageLayer: t
 					});
 					if (!d || d !== r.belongsTo.id) return;
@@ -16963,13 +17021,13 @@
 					const a = e.structuredStyles.flairTemplate,
 						l = !!n;
 					if (t && t.meta && t.meta.name === o.Kb.MODERATION_PAGES && !n) return;
-					const u = Object(x.kb)(e, {
+					const u = Object(L.kb)(e, {
 						subredditId: d
 					});
 					if (!l && u) return;
 					let c = n || a.models[s.templateId];
 					if (!c) return;
-					const _ = !l && Object(x.X)(e),
+					const _ = !l && Object(L.X)(e),
 						m = t && t.locationState && t.locationState.isOverlay;
 					if (_ || m) {
 						if (!c.postPlaceholderImage) return;
@@ -16979,22 +17037,22 @@
 					}
 					return Object.keys(c).filter(e => c[e] !== O.c).reduce((e, t) => (e[t] = c[t], e), {})
 				}),
-				Re = (e, {
+				Fe = (e, {
 					pageLayer: t
 				}) => t ? T(e, t) : void 0,
-				Fe = e => {
-					if (e) return X(e) ? e.urlParams.draftId : e.queryParams.draft
+				Ce = e => {
+					if (e) return Z(e) ? e.urlParams.draftId : e.queryParams.draft
 				},
-				Ce = e => e && e.queryParams || {},
-				Ne = (e, {
+				Ne = e => e && e.queryParams || {},
+				je = (e, {
 					pageLayer: t
 				}) => {
 					const i = (e => e ? e.queryParams.collection : void 0)(t);
-					return i ? Object(N.q)(e, {
+					return i ? Object(j.q)(e, {
 						collectionId: i
 					}) : void 0
 				},
-				je = Object(s.a)(de, R.j, e => e.subreddits.models, e => e.subreddits.byCategory, (e, t, i, n) => {
+				Ae = Object(s.a)(ae, R.j, e => e.subreddits.models, e => e.subreddits.byCategory, (e, t, i, n) => {
 					if (!e) return;
 					const s = Object.keys(t).find(t => {
 						const s = n[t];
@@ -17004,11 +17062,11 @@
 					});
 					return s ? t[s] : void 0
 				}),
-				Ae = e => {
-					const t = ve(e);
+				Pe = e => {
+					const t = Ee(e);
 					return !!t && !!c.b.filter(e => t.toLowerCase().includes(e)).length
 				},
-				Pe = (e, {
+				De = (e, {
 					pageLayer: t
 				}) => {
 					if (t && t.title) return t.title; {
@@ -17021,21 +17079,21 @@
 						return null
 					}
 				},
-				De = e => {
+				xe = e => {
 					var t, i;
 					return null !== (i = (null === (t = null == e ? void 0 : e.routeMatch) || void 0 === t ? void 0 : t.match.path) === I.a) && void 0 !== i && i
 				},
-				xe = (e, t) => Object(s.a)((e, {
+				Le = (e, t) => Object(s.a)((e, {
 					pageLayer: t
-				}) => z(t), ae, P.g, (e, t, i) => {
+				}) => Y(t), le, D.g, (e, t, i) => {
 					const n = e || Boolean(t);
 					return Boolean(n && i)
 				})(e, t),
-				Le = (e, t, i) => {
-					return !_e(t) && Object(D.q)(e, i)
-				},
 				Be = (e, t, i) => {
-					return !_e(t) && Object(D.f)(e, i)
+					return !me(t) && Object(x.q)(e, i)
+				},
+				ke = (e, t, i) => {
+					return !me(t) && Object(x.f)(e, i)
 				}
 		},
 		"./src/reddit/endpoints/flair/index.ts": function(e, t, i) {
@@ -19478,7 +19536,7 @@
 					sort: i,
 					subredditName: d
 				} = e;
-				return i || (!d || Object(r.a)(d) ? d === s.f && Object(o.a)(t) ? n.ub : n.W : void 0)
+				return i || (!d || Object(r.a)(d) ? d === s.g && Object(o.a)(t) ? n.ub : n.W : void 0)
 			}
 		},
 		"./src/reddit/helpers/getSubredditUrl/index.ts": function(e, t, i) {
@@ -22791,7 +22849,7 @@
 								i = n.params,
 								r = i.sort ? i.sort : e;
 							return {
-								listingKey: Object(d.a)(m.a, r, o),
+								listingKey: Object(d.a)(m.b, r, o),
 								sort: r
 							}
 						}
@@ -22822,7 +22880,7 @@
 									sort: a
 								}
 							}
-							return i === m.c.Popular && a === s.V.HOT && (o.geo_filter = o.geo_filter || Object(O.k)(t) || ""), {
+							return i === m.d.Popular && a === s.V.HOT && (o.geo_filter = o.geo_filter || Object(O.k)(t) || ""), {
 								listingKey: Object(d.a)(i, a, o),
 								sort: a
 							}
@@ -22844,7 +22902,7 @@
 								{
 									sort: t = s.W
 								} = e,
-								i = Object(E.d)(n.path) ? m.e : m.d;
+								i = Object(E.d)(n.path) ? m.f : m.e;
 							return {
 								listingKey: Object(d.a)(i, t, o),
 								sort: t
@@ -29630,7 +29688,7 @@
 				u = Object.keys(o.V).map(e => `/r/:subredditName/:sort(${o.V[e]})?`),
 				c = "/r/:subredditName/predictions";
 			let _ = ["/r/:subredditName", c, ...u];
-			_ = Object(d.a)(_);
+			_ = Object(d.b)(_);
 			const m = _,
 				p = {
 					action: Object(a.a)(() => Promise.all([i.e("vendors~Governance~ModListing~Reddit~Subreddit"), i.e("vendors~Subreddit"), i.e("CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~MembershipPaywa~c24a8af4"), i.e("CollectionCommentsPage~CommentsPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~933ffffc"), i.e("Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241"), i.e("Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e"), i.e("Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250"), i.e("Governance~ModListing~Reddit~Subreddit"), i.e("CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"), i.e("Subreddit")]).then(i.bind(null, "./src/reddit/actions/pages/subreddit.ts")).then(e => e.subredditRequested)),
@@ -30025,6 +30083,56 @@
 					subredditName: t
 				}) => e.contentControls.models[t.toLowerCase()]
 		},
+		"./src/reddit/selectors/countrySites.ts": function(e, t, i) {
+			"use strict";
+			i.d(t, "a", (function() {
+				return d
+			})), i.d(t, "b", (function() {
+				return a
+			})), i.d(t, "c", (function() {
+				return l
+			})), i.d(t, "d", (function() {
+				return u
+			}));
+			var n = i("./node_modules/@reddit/reddit-country-url-redirects/dist/esm/index.js"),
+				r = i("./src/reddit/constants/countrySites.ts"),
+				s = i("./src/reddit/selectors/experiments/countrySites.ts"),
+				o = i("./src/reddit/selectors/user.ts");
+			const d = e => {
+					const t = Object(s.b)(e),
+						i = Object(s.a)(e),
+						r = Object(o.H)(e);
+					return {
+						countrySitesEnabled: i,
+						countrySitesAdminOnly: t,
+						enabledCountries: r ? n.a.testingCountries : n.a.countries,
+						userIsAdmin: r
+					}
+				},
+				a = e => {
+					const {
+						currentPage: t
+					} = e.platform, {
+						url: i = ""
+					} = t || {}, {
+						countryCode: n,
+						languageCode: r,
+						subredditName: s
+					} = (null == t ? void 0 : t.urlParams) || {};
+					return {
+						countryCode: n,
+						currentUrl: i,
+						languageCode: r,
+						subredditName: s
+					}
+				},
+				l = e => !!e && r.c.includes(e.toLowerCase()),
+				u = e => {
+					const t = Object(s.b)(e),
+						i = Object(o.H)(e);
+					return t && i
+				}
+		},
 		"./src/reddit/selectors/discoveryUnit.ts": function(e, t, i) {
 			"use strict";
 			i.d(t, "d", (function() {
@@ -30146,6 +30254,25 @@
 				experimentEligibilitySelector: r.a,
 				experimentName: n.v
 			}))
+		},
+		"./src/reddit/selectors/experiments/countrySites.ts": function(e, t, i) {
+			"use strict";
+			i.d(t, "a", (function() {
+				return o
+			})), i.d(t, "b", (function() {
+				return d
+			}));
+			var n = i("./node_modules/reselect/es/index.js"),
+				r = i("./src/reddit/constants/experiments.ts"),
+				s = i("./src/reddit/helpers/chooseVariant/index.ts");
+			const o = Object(n.a)(e => Object(s.c)(e, {
+					experimentEligibilitySelector: s.a,
+					experimentName: r.I
+				}), e => e === r.oc),
+				d = Object(n.a)(e => Object(s.c)(e, {
+					experimentEligibilitySelector: o,
+					experimentName: r.H
+				}), e => e === r.oc)
 		},
 		"./src/reddit/selectors/experiments/econ/index.ts": function(e, t, i) {
 			"use strict";
@@ -40758,4 +40885,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.9c3365c27a594418ee43.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.7e2139e1648022740626.js.map

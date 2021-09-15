@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.4abc99e76d055f7fa62c.js
-// Retrieved at 9/9/2021, 3:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.35e5f1cf9a60751eda20.js
+// Retrieved at 9/15/2021, 5:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -639,7 +639,7 @@
 						{
 							sort: o = c
 						} = e.params,
-						i = Object(H.a)(I.a, o, e.queryParams),
+						i = Object(H.a)(I.b, o, e.queryParams),
 						d = n.listings.postOrder.ids[i],
 						m = n.listings.postOrder.api.error[i],
 						u = n.listings.postOrder.api.pending[i],
@@ -694,7 +694,7 @@
 							sort: i = o
 						} = e,
 						d = n.platform.currentPage ? n.platform.currentPage.queryParams : {},
-						m = Object(H.a)(I.a, i, d),
+						m = Object(H.a)(I.b, i, d),
 						u = n.listings.postOrder.loadMore[m],
 						p = d[L.y] ? d[L.y].toUpperCase() : "",
 						h = p in l.dc && l.dc[p];
@@ -752,7 +752,7 @@
 							sort: r = n
 						} = e,
 						c = s.platform.currentPage ? s.platform.currentPage.queryParams : {},
-						o = Object(H.a)(I.a, r, c),
+						o = Object(H.a)(I.b, r, c),
 						i = c[L.y] ? c[L.y].toUpperCase() : "",
 						d = i in l.dc && l.dc[i],
 						m = Object(R.a)(s),
@@ -1485,14 +1485,14 @@
 							}))
 						}
 					}, s]
-				})(t), M = Object(u.f)(l.a.AVATAR_LISTING_BANNER, d.b), [w, I] = Object(r.useState)(M ? T.Hidden : T.Visible);
+				})(t), M = Object(u.f)(l.a.AVATAR_LISTING_BANNER, d.c), [w, I] = Object(r.useState)(M ? T.Hidden : T.Visible);
 				if (Object(r.useEffect)(() => {
 						w === T.Visible && t !== g.a.Achievements && v(Object(p.k)(f))
 					}, [t, w, v, f]), Object(r.useEffect)(() => {
 						w === T.Visible && t === g.a.Achievements && v(Object(p.i)())
 					}, [t, w, v]), w === T.Hidden) return null;
 				const L = () => {
-						I(T.Visible), Object(u.gb)(l.a.AVATAR_LISTING_BANNER, !1, d.b)
+						I(T.Visible), Object(u.gb)(l.a.AVATAR_LISTING_BANNER, !1, d.c)
 					},
 					D = () => {
 						v(Object(p.b)(f)), E(Object(i.b)({
@@ -1500,7 +1500,7 @@
 						}))
 					},
 					F = () => {
-						Object(u.gb)(l.a.AVATAR_LISTING_BANNER, !0, d.b), t === g.a.Achievements ? A() : D()
+						Object(u.gb)(l.a.AVATAR_LISTING_BANNER, !0, d.c), t === g.a.Achievements ? A() : D()
 					};
 				if (w === T.Dismissed) return c.a.createElement("div", {
 					className: Object(n.a)(y.a.dismissedContainer, a)
@@ -1589,7 +1589,7 @@
 						[y.a.closeLight]: f
 					}),
 					onClick: () => {
-						I(T.Dismissed), Object(u.gb)(l.a.AVATAR_LISTING_BANNER, !0, d.b), t !== g.a.Achievements && v(Object(p.g)(f)), t === g.a.Achievements && v(Object(p.f)())
+						I(T.Dismissed), Object(u.gb)(l.a.AVATAR_LISTING_BANNER, !0, d.c), t !== g.a.Achievements && v(Object(p.g)(f)), t === g.a.Achievements && v(Object(p.f)())
 					}
 				}), c.a.createElement("div", {
 					className: y.a.contentWrapper
@@ -1671,7 +1671,7 @@
 							listingPosition: r,
 							numInstance: t,
 							listingKey: s,
-							listingName: l.b,
+							listingName: l.c,
 							pubsub: p
 						})
 					}, d.set(m, u), u
@@ -5030,7 +5030,7 @@
 			}, s, n, r, c, o) => {
 				const i = T.y in t && t[T.y].toUpperCase(),
 					l = "string" == typeof i && i in K.dc ? K.dc[i] : K.ec,
-					d = Object(p.a)(J.a, a, t),
+					d = Object(p.a)(J.b, a, t),
 					m = e,
 					u = [];
 				n && u.push(r);
@@ -5090,7 +5090,7 @@
 			class de extends o.a.Component {
 				constructor(e) {
 					super(e), this.renderEmptySubreddit = () => o.a.createElement(_.a, {
-						listingName: J.b,
+						listingName: J.c,
 						sort: this.props.sort
 					}), this.onListingViewed = (e, t) => Object(L.f)(this.props.listingKey, this.props.sort, t, e, this.props.timeSort), this.componentDidMount = () => {
 						const {
@@ -5135,7 +5135,7 @@
 								numInstance: t,
 								layout: b,
 								listingKey: g,
-								listingName: J.b,
+								listingName: J.c,
 								listingPosition: e
 							})
 						}), p) {
@@ -5165,7 +5165,7 @@
 					const F = o.a.createElement(v.default, {
 						className: X.a.sidebar,
 						listingKey: g,
-						listingName: J.b
+						listingName: J.c
 					});
 					return o.a.createElement(D.a, {
 						className: Object(d.a)(X.a.Container, this.props.className),
@@ -5190,7 +5190,7 @@
 							noPostsComponent: this.renderEmptySubreddit,
 							key: "listing",
 							listingKey: g,
-							listingName: J.b,
+							listingName: J.c,
 							listingViewed: this.onListingViewed,
 							onLoadMore: this.props.onLoadMorePosts
 						})),
@@ -5608,4 +5608,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.4abc99e76d055f7fa62c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.35e5f1cf9a60751eda20.js.map

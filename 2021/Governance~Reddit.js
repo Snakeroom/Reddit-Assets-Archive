@@ -1,8 +1,265 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.b7832bde95d625fd7ab3.js
-// Retrieved at 9/15/2021, 4:10:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.aec8028f73136872cf82.js
+// Retrieved at 9/15/2021, 5:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
+		"./node_modules/@r/frames/compiled.js": function(e, t, r) {
+			"use strict";
+			(function(e) {
+				Object.defineProperty(t, "__esModule", {
+					value: !0
+				});
+				var r = arguments,
+					s = ".*",
+					n = ".postMessage",
+					a = {
+						targetOrigin: "*"
+					},
+					c = /\..+$/;
+
+				function o(e) {
+					return new RegExp("\\.(?:" + e.join("|") + ")$")
+				}
+
+				function d(e) {
+					return new RegExp("^http(s)?:\\/\\/" + e.join("|") + "$", "i")
+				}
+				var i = [s],
+					u = d(i),
+					l = [n],
+					p = o(l),
+					b = {},
+					f = !1;
+
+				function m(t, r, s) {
+					e.addEventListener ? e.addEventListener(t, r, s) : e.attachEvent && e.attachEvent("on" + t, r)
+				}
+
+				function y(t, r) {
+					e.removeEventListener ? e.removeEventListener(t, r) : e.detachEvent && e.detachEvent("on" + t, r)
+				}
+
+				function E(e) {
+					return /\*/.test(e)
+				}
+				var _ = t.postMessage = function(e, t, r) {
+						var s = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : {};
+						c.test(t) || (t += n);
+						var o = s;
+						Object.keys(a).forEach((function(e) {
+							o[e] = a[e]
+						})), e.postMessage(JSON.stringify({
+							type: t,
+							data: r,
+							defaultedOptions: o
+						}), o.targetOrigin)
+					},
+					O = t.receiveMessage = function(e, t, r, s) {
+						"string" == typeof e && (s = r, r = t, t = e, e = null), s = s || void 0;
+						var n = function(t) {
+							for (var n = arguments.length, a = Array(n > 1 ? n - 1 : 0), c = 1; c < n; c++) a[c - 1] = arguments[c];
+							e && e !== t.source && e.contentWindow !== t.source || r.apply(s, [t].concat(a))
+						};
+						return m(t, n), {
+							off: function() {
+								y(t, n)
+							}
+						}
+					},
+					h = (t.receiveMessageOnce = function(e, t, s, n) {
+						var a = O(e, t, (function() {
+							s && s.apply(void 0, r), a.off()
+						}), n);
+						return a
+					}, t.removePostMessageOrigin = function(e) {
+						var t = i.indexOf(e); - 1 !== t && (i.splice(t, 1), u = d(i))
+					}),
+					I = e.CustomEvent;
+				if ("undefined" != typeof window && "function" != typeof I) {
+					var S = {
+						bubbles: !1,
+						cancelable: !1,
+						detail: void 0
+					};
+					(I = function(e, t) {
+						t = t || S;
+						var r = document.createEvent("CustomEvent");
+						return r.initCustomEvent(e, t.bubbles, t.cancelable, t.detail), r
+					}).prototype = e.Event.prototype
+				}
+				t.addPostMessageOrigin = function(e) {
+					E(e) ? i = [s] : -1 === i.indexOf(e) && (h(s), i.push(e), u = d(i))
+				};
+
+				function g(t) {
+					if (t.origin === e.location.origin || u.test(t.origin) || "null" === t.origin) {
+						var r = {};
+						try {
+							r = JSON.parse(t.data)
+						} catch (t) {}
+						var s = r.type;
+						if (p.test(s)) {
+							var n = s.split(".", 2)[1];
+							if (b[n]) b[n].targets.forEach((function(e) {
+								return _(e, s, r.data, r.options)
+							}));
+							var a = new I(s, {
+								detail: r.data
+							});
+							a.source = t.source, e.dispatchEvent(a)
+						}
+					}
+				}
+				var T = t.listen = function(e) {
+					-1 === l.indexOf(e) && (l.push(e), p = o(l)), f || (m("message", g), f = !0)
+				};
+				t.stopListening = function(e) {
+					var t = l.indexOf(e); - 1 !== t && (l.splice(t, 1), l.length ? p = o(l) : (y("message", g), f = !1))
+				}, t.proxy = function(e, t) {
+					T(e), Array.isArray(t) || (t = [t]);
+					var r = b[e];
+					r ? r.targets = [].concat(r.targets, t) : r = {
+						targets: t
+					}, b[e] = r
+				}
+			}).call(this, r("./node_modules/webpack/buildin/global.js"))
+		},
+		"./node_modules/lodash/isEqualWith.js": function(e, t, r) {
+			var s = r("./node_modules/lodash/_baseIsEqual.js");
+			e.exports = function(e, t, r) {
+				var n = (r = "function" == typeof r ? r : void 0) ? r(e, t) : void 0;
+				return void 0 === n ? s(e, t, void 0, r) : !!n
+			}
+		},
+		"./node_modules/lodash/negate.js": function(e, t) {
+			var r = "Expected a function";
+			e.exports = function(e) {
+				if ("function" != typeof e) throw new TypeError(r);
+				return function() {
+					var t = arguments;
+					switch (t.length) {
+						case 0:
+							return !e.call(this);
+						case 1:
+							return !e.call(this, t[0]);
+						case 2:
+							return !e.call(this, t[0], t[1]);
+						case 3:
+							return !e.call(this, t[0], t[1], t[2])
+					}
+					return !e.apply(this, t)
+				}
+			}
+		},
+		"./node_modules/lodash/omitBy.js": function(e, t, r) {
+			var s = r("./node_modules/lodash/_baseIteratee.js"),
+				n = r("./node_modules/lodash/negate.js"),
+				a = r("./node_modules/lodash/pickBy.js");
+			e.exports = function(e, t) {
+				return a(e, n(s(t)))
+			}
+		},
+		"./node_modules/lodash/union.js": function(e, t, r) {
+			var s = r("./node_modules/lodash/_baseFlatten.js"),
+				n = r("./node_modules/lodash/_baseRest.js"),
+				a = r("./node_modules/lodash/_baseUniq.js"),
+				c = r("./node_modules/lodash/isArrayLikeObject.js"),
+				o = n((function(e) {
+					return a(s(e, 1, c, !0))
+				}));
+			e.exports = o
+		},
+		"./node_modules/ts-error/lib/cjs.js": function(e, t, r) {
+			"use strict";
+			t.__esModule = void 0, t.__esModule = !0;
+			var s = r("./node_modules/ts-error/lib/helpers.js"),
+				n = s.setPrototypeOf,
+				a = s.getPrototypeOf,
+				c = s.defineProperty,
+				o = s.objectCreate,
+				d = "[object Error]" === (new Error).toString(),
+				i = "";
+
+			function u(e) {
+				var t, r = this.constructor,
+					s = r.name || (null === (t = r.toString().match(/^function\s*([^\s(]+)/)) ? i || "Error" : t[1]),
+					o = "Error" === s,
+					l = o ? i : s,
+					p = Error.apply(this, arguments);
+				if (n(p, a(this)), !(p instanceof r && p instanceof u)) {
+					p = this;
+					Error.apply(this, arguments), c(p, "message", {
+						configurable: !0,
+						enumerable: !1,
+						value: e,
+						writable: !0
+					})
+				}
+				if (c(p, "name", {
+						configurable: !0,
+						enumerable: !1,
+						value: l,
+						writable: !0
+					}), Error.captureStackTrace && Error.captureStackTrace(p, o ? u : r), void 0 === p.stack) {
+					var b = new Error(e);
+					b.name = p.name, p.stack = b.stack
+				}
+				return d && c(p, "toString", {
+					configurable: !0,
+					enumerable: !1,
+					value: function() {
+						return (this.name || "Error") + (void 0 === this.message ? "" : ": " + this.message)
+					},
+					writable: !0
+				}), p
+			}
+			i = u.name || "ExtendableError", u.prototype = o(Error.prototype, {
+				constructor: {
+					value: Error,
+					enumerable: !1,
+					writable: !0,
+					configurable: !0
+				}
+			}), t.ExtendableError = u, t.default = t.ExtendableError
+		},
+		"./node_modules/ts-error/lib/helpers.js": function(e, t, r) {
+			"use strict";
+			t.__esModule = void 0, t.__esModule = !0;
+			var s = "function" == typeof Object.setPrototypeOf,
+				n = "function" == typeof Object.getPrototypeOf,
+				a = "function" == typeof Object.defineProperty,
+				c = "function" == typeof Object.create,
+				o = "function" == typeof Object.prototype.hasOwnProperty;
+			t.setPrototypeOf = function(e, t) {
+				s ? Object.setPrototypeOf(e, t) : e.__proto__ = t
+			};
+			t.getPrototypeOf = function(e) {
+				return n ? Object.getPrototypeOf(e) : e.__proto__ || e.prototype
+			};
+			var d = !1;
+			t.defineProperty = function e(t, r, s) {
+				if (a && !d) try {
+					Object.defineProperty(t, r, s)
+				} catch (n) {
+					d = !0, e(t, r, s)
+				} else t[r] = s.value
+			};
+			var i = function(e, t) {
+				return o ? e.hasOwnProperty(e, t) : void 0 === e[t]
+			};
+			t.hasOwnProperty = i;
+			t.objectCreate = function(e, t) {
+				if (c) return Object.create(e, t);
+				var r = function() {};
+				r.prototype = e;
+				var s = new r;
+				if (void 0 === t) return s;
+				if ("null" == typeof t) throw new Error("PropertyDescriptors must not be null.");
+				if ("object" == typeof t)
+					for (var n in t) i(t, n) && (s[n] = t[n].value);
+				return s
+			}
+		},
 		"./src/lib/asyncActions/index.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "b", (function() {
@@ -622,7 +879,7 @@
 			})), r.d(t, "a", (function() {
 				return D
 			})), r.d(t, "h", (function() {
-				return j
+				return v
 			}));
 			var s = r("./node_modules/fbt/lib/FbtPublic.js"),
 				n = r("./src/lib/makeActionCreator/index.ts"),
@@ -659,7 +916,7 @@
 				O = () => async (e, t) => {
 					const r = t();
 					Object(f.b)(r) ? e(_()) : e(E())
-				}, h = "CLAIMGOLD_UPDATE_CODE", I = Object(n.a)(h), S = "CLAIM_GOLD__TRIGGER_LOADER", g = "CLAIM_GOLD__CLAIM_GOLD_PENDING", T = "CLAIM_GOLD__CLAIM_GOLD_SUCCESSFUL", D = "CLAIM_GOLD__CLAIM_GOLD_FAILED", j = () => async (e, t, {
+				}, h = "CLAIMGOLD_UPDATE_CODE", I = Object(n.a)(h), S = "CLAIM_GOLD__TRIGGER_LOADER", g = "CLAIM_GOLD__CLAIM_GOLD_PENDING", T = "CLAIM_GOLD__CLAIM_GOLD_SUCCESSFUL", D = "CLAIM_GOLD__CLAIM_GOLD_FAILED", v = () => async (e, t, {
 					apiContext: r
 				}) => {
 					const s = {
@@ -672,9 +929,9 @@
 					} catch (n) {
 						e(C(n))
 					}
-				}, v = Object(n.a)(S), A = Object(n.a)(g), w = () => async (e, t) => {
+				}, j = Object(n.a)(S), A = Object(n.a)(g), w = () => async (e, t) => {
 					e(A()), window.setTimeout(() => {
-						t().claimGold.api.pending && e(v())
+						t().claimGold.api.pending && e(j())
 					}, 2e3)
 				}, R = Object(n.a)(D), C = e => async (t, r) => {
 					await t(R({
@@ -875,7 +1132,7 @@
 			})), r.d(t, "d", (function() {
 				return D
 			})), r.d(t, "c", (function() {
-				return j
+				return v
 			})), r.d(t, "h", (function() {
 				return w
 			})), r.d(t, "g", (function() {
@@ -893,9 +1150,9 @@
 			})), r.d(t, "m", (function() {
 				return H
 			})), r.d(t, "j", (function() {
-				return V
-			})), r.d(t, "k", (function() {
 				return q
+			})), r.d(t, "k", (function() {
+				return V
 			})), r.d(t, "b", (function() {
 				return K
 			})), r.d(t, "n", (function() {
@@ -949,9 +1206,9 @@
 			const g = "STRUCTURED_STYLES__NEW_EMOJI_ADDED",
 				T = Object(p.a)(g),
 				D = "STRUCTURED_STYLES__EMOJI_DELETE_LOADED",
-				j = "STRUCTURED_STYLES__EMOJI_DELETE_FAILED",
-				v = Object(p.a)(D),
-				A = Object(p.a)(j),
+				v = "STRUCTURED_STYLES__EMOJI_DELETE_FAILED",
+				j = Object(p.a)(D),
+				A = Object(p.a)(v),
 				w = "GET_ALL_EMOJIS_PENDING",
 				R = "GET_ALL_EMOJIS_LOADED",
 				C = "GET_ALL_EMOJIS_FAILED",
@@ -1089,7 +1346,7 @@
 					apiContext: s
 				}) => {
 					r().emojis[e] || await t(B(e))
-				}, V = (e, t) => async (r, n, {
+				}, q = (e, t) => async (r, n, {
 					apiContext: a
 				}) => {
 					const i = n(),
@@ -1102,7 +1359,7 @@
 							type: "json"
 						}))(a(), e, l);
 					if (p.ok) {
-						r(v({
+						r(j({
 							emojiName: e,
 							subredditId: t
 						})), r(f.f({
@@ -1117,7 +1374,7 @@
 							hk: "22u7ha"
 						})
 					}))
-				}, q = (e, t) => async (r, n, {
+				}, V = (e, t) => async (r, n, {
 					apiContext: a
 				}) => {
 					const i = n(),
@@ -1407,7 +1664,7 @@
 			})), r.d(t, "w", (function() {
 				return D
 			})), r.d(t, "x", (function() {
-				return j
+				return v
 			}));
 			const s = "GOVERNANCE__COMMUNITY_DETAILS_SUCCESS",
 				n = "GOVERNANCE__NEW_SUBREDDIT_SUGGESTED",
@@ -1432,7 +1689,7 @@
 				g = "GOVERNANCE__WALLETS_FETCH_FAILURE",
 				T = "GOVERNANCE__WALLETS_FETCH_PENDING",
 				D = "GOVERNANCE__WALLETS_FETCH_SUCCESS",
-				j = "GOVERNANCE__WALLET_REGISTRATION_MODAL_OPENED"
+				v = "GOVERNANCE__WALLET_REGISTRATION_MODAL_OPENED"
 		},
 		"./src/reddit/actions/governance/errorToast.ts": function(e, t, r) {
 			"use strict";
@@ -1493,8 +1750,8 @@
 				g = (Object(n.a)(_.f), Object(n.a)(_.g), Object(n.a)(_.h)),
 				T = Object(n.a)(_.i),
 				D = Object(n.a)(_.j),
-				j = Object(n.a)(_.k),
-				v = Object(n.a)(_.q),
+				v = Object(n.a)(_.k),
+				j = Object(n.a)(_.q),
 				A = Object(n.a)(_.r),
 				w = Object(n.a)(_.s),
 				R = Object(n.a)(_.t),
@@ -1533,7 +1790,7 @@
 								optionId: t,
 								options: e
 							}))
-						} else r(j(c.body));
+						} else r(v(c.body));
 						const n = s();
 						if ((d = n.polls.models[e]) && Object(l.d)(d)) {
 							const {
@@ -1575,7 +1832,7 @@
 						text: s.fbt._("Success! You just transferred {amount} {tokenName} to {recipient}", [s.fbt._param("amount", Object(a.a)(e.amount)), s.fbt._param("tokenName", (null === (u = Object(E.b)(n(), e.subredditId)) || void 0 === u ? void 0 : u.name) || ""), s.fbt._param("recipient", e.recipient)], {
 							hk: "3klrhq"
 						})
-					})), t && r(Object(c.f)())) : (r(v({
+					})), t && r(Object(c.f)())) : (r(j({
 						error: p.error
 					})), Object(O.a)(r, p.error))
 				}, U = e => async (t, r, {
@@ -1774,9 +2031,9 @@
 			})), r.d(t, "z", (function() {
 				return D
 			})), r.d(t, "y", (function() {
-				return j
-			})), r.d(t, "v", (function() {
 				return v
+			})), r.d(t, "v", (function() {
+				return j
 			})), r.d(t, "w", (function() {
 				return A
 			})), r.d(t, "x", (function() {
@@ -1807,8 +2064,8 @@
 				g = "MULTIREDDIT__SUBREDDIT_RECOMMENDATIONS_PENDING",
 				T = "MULTIREDDIT__SUBREDDIT_RECOMMENDATIONS_SUCCESS",
 				D = "MULTIREDDIT__SUBREDDIT_RECOMMENDATIONS_FAILURE",
-				j = 10,
-				v = "MULTIREDDIT__REMOVE_SUBREDDIT_FAILURE",
+				v = 10,
+				j = "MULTIREDDIT__REMOVE_SUBREDDIT_FAILURE",
 				A = "MULTIREDDIT__REMOVE_SUBREDDIT_PENDING",
 				w = "MULTIREDDIT__REMOVE_SUBREDDIT_SUCCESS";
 			var R;
@@ -1984,7 +2241,7 @@
 			})), r.d(t, "b", (function() {
 				return D
 			})), r.d(t, "e", (function() {
-				return j
+				return v
 			}));
 			var s = r("./node_modules/react-router-redux/es/index.js"),
 				n = r("./src/reddit/actions/pages/subreddit.ts"),
@@ -2048,7 +2305,7 @@
 				})), Object(_.K)(r) || await e(E.s())
 			}, D = () => async e => e(i.l({
 				title: c.b()
-			})), j = e => async (t, s) => {
+			})), v = e => async (t, s) => {
 				const n = s();
 				t(i.l({
 					title: c.h()
@@ -2119,8 +2376,8 @@
 				g = "FETCH_CHAT_SETTINGS__FAILED",
 				T = "FETCH_CHAT_SETTINGS__PENDING",
 				D = "UPDATE_CHAT_SETTINGS__LOADED",
-				j = Object(d.a)(S),
-				v = Object(d.a)(g),
+				v = Object(d.a)(S),
+				j = Object(d.a)(g),
 				A = Object(d.a)(T),
 				w = Object(d.a)(D),
 				R = e => async (t, r) => {
@@ -2148,12 +2405,12 @@
 							chatSettings: i
 						}
 					}
-					if (a) t(j(a));
+					if (a) t(v(a));
 					else {
 						const r = c.error || {
 							type: o.H.UNKNOWN_ERROR
 						};
-						t(v({
+						t(j({
 							...n,
 							error: r
 						})), i.c.withScope(t => {
@@ -2189,7 +2446,7 @@
 					return l ? (n(w({
 						subredditId: e,
 						chatSettings: r
-					})), n(N(t, p)), r) : (i && n(v({
+					})), n(N(t, p)), r) : (i && n(j({
 						subredditId: e,
 						error: i
 					})), n(w({
@@ -2448,8 +2705,8 @@
 				g = r("./src/reddit/models/Gold/Powerups/index.ts"),
 				T = r("./src/reddit/models/PostCreationForm/index.ts"),
 				D = r("./src/reddit/models/Toast/index.ts"),
-				j = r("./src/reddit/selectors/gold/powerups/index.ts"),
-				v = r("./src/reddit/selectors/postCreations.ts"),
+				v = r("./src/reddit/selectors/gold/powerups/index.ts"),
+				j = r("./src/reddit/selectors/postCreations.ts"),
 				A = r("./src/reddit/actions/postCreation/constants.ts"),
 				w = r("./src/reddit/actions/postCreation/general.ts");
 			const R = Object(d.a)(A.u),
@@ -2486,7 +2743,7 @@
 				U = (e, t, r, n) => async (a, o, {
 					apiContext: d
 				}) => {
-					const i = Object(v.h)(o()),
+					const i = Object(j.h)(o()),
 						l = Date.now();
 					let T = null,
 						D = !1,
@@ -2600,7 +2857,7 @@
 								const e = await Object(y.a)(d);
 								i.width = e.width, i.height = e.height
 							} else if (o.startsWith("video/")) {
-								const o = !(null == r || !r.id) && Object(j.o)(e, {
+								const o = !(null == r || !r.id) && Object(v.o)(e, {
 										subredditId: r.id,
 										benefit: g.a.HdVideo
 									}),
@@ -2725,12 +2982,12 @@
 					})(l)), u.filter(e => e.isValid).map(e => e.uploadKey)
 				}, G = (e, t) => async (r, n) => {
 					const a = n(),
-						c = Object(v.U)(a),
+						c = Object(j.U)(a),
 						{
 							items: o
 						} = c,
 						d = !o.length && 1 === e.length,
-						p = Object(v.L)(a) && !d;
+						p = Object(j.L)(a) && !d;
 					let b = !1,
 						f = e;
 					if (p) {
@@ -2802,10 +3059,10 @@
 				T = r("./src/reddit/models/PostCreationForm/index.ts"),
 				D = r("./src/reddit/models/RichTextJson/addRTJParam.ts");
 
-			function j(e) {
+			function v(e) {
 				return Math.floor(e.valueOf() / 1e3)
 			}
-			const v = e => {
+			const j = e => {
 					switch (e.kind) {
 						case T.o.CROSSPOST:
 							return T.o.CROSSPOST;
@@ -2843,7 +3100,7 @@
 						case T.o.POLL:
 							return e.poll.type === S.a.Prediction ? {
 								duration: 999999,
-								end_timestamp: j(e.poll.endDate),
+								end_timestamp: v(e.poll.endDate),
 								options: e.poll.options.map(e => e.text),
 								prediction: !0,
 								text: e.markdown,
@@ -2878,7 +3135,7 @@
 						spoiler: e.isSpoiler,
 						nsfw: e.isNSFW,
 						...e.kind !== T.o.POLL ? {
-							kind: v(e),
+							kind: j(e),
 							original_content: e.isOC
 						} : {},
 						post_to_twitter: e.postToTwitter,
@@ -2964,8 +3221,8 @@
 				G = r("./src/reddit/selectors/postCreations.ts"),
 				B = r("./src/reddit/selectors/postDraft.ts"),
 				H = r("./src/reddit/selectors/scheduledPosts/index.ts"),
-				V = r("./src/reddit/selectors/user.ts"),
-				q = r("./src/reddit/models/ScheduledPost/index.ts"),
+				q = r("./src/reddit/selectors/user.ts"),
+				V = r("./src/reddit/models/ScheduledPost/index.ts"),
 				K = r("./src/reddit/actions/postCreation/constants.ts"),
 				W = r("./src/reddit/actions/postCreation/general.ts"),
 				$ = r("./src/reddit/actions/postCreation/mediaUpload.ts");
@@ -2977,7 +3234,7 @@
 				Z = Object(n.a)(K.F),
 				ee = Object(n.a)(K.a),
 				te = Object(n.a)(K.B),
-				re = e => `/r/${e}/about/${q.r}`,
+				re = e => `/r/${e}/about/${V.r}`,
 				se = (e, t) => {
 					const r = e || {
 							duration: s.A,
@@ -3169,7 +3426,7 @@
 								},
 								type: "json"
 							}).then(e => R(e, t)))(n(), d) : await C(n(), d)).ok) {
-						const e = Object(V.k)(a),
+						const e = Object(q.k)(a),
 							r = O.body;
 						t(Y({
 							draftId: d.draftId,
@@ -3189,8 +3446,8 @@
 					}
 					const I = Object(W.m)(d.kind),
 						S = O.ok && O.body && O.body.id && Object(g.s)(O.body.id),
-						j = r();
-					U.s(j, I, S)
+						v = r();
+					U.s(v, I, S)
 				}
 		},
 		"./src/reddit/actions/postFlair.ts": function(e, t, r) {
@@ -3202,7 +3459,7 @@
 			})), r.d(t, "f", (function() {
 				return S
 			})), r.d(t, "b", (function() {
-				return j
+				return v
 			})), r.d(t, "e", (function() {
 				return R
 			})), r.d(t, "d", (function() {
@@ -3243,9 +3500,9 @@
 				g = Object(n.a)("STRUCTURED_STYLES__POSTFLAIR_SAVETEMPLATE_PENDING"),
 				T = Object(n.a)(S),
 				D = Object(n.a)("STRUCTURED_STYLES__POSTFLAIR_SAVETEMPLATE_FAILED"),
-				j = "STRUCTURED_STYLES__POSTFLAIR_DELETETEMPLATE_SUCCESS",
-				v = Object(n.a)("STRUCTURED_STYLES__POSTFLAIR_DELETETEMPLATE_PENDING"),
-				A = Object(n.a)(j),
+				v = "STRUCTURED_STYLES__POSTFLAIR_DELETETEMPLATE_SUCCESS",
+				j = Object(n.a)("STRUCTURED_STYLES__POSTFLAIR_DELETETEMPLATE_PENDING"),
+				A = Object(n.a)(v),
 				w = Object(n.a)("STRUCTURED_STYLES__POSTFLAIR_DELETETEMPLATE_FAILED"),
 				R = "STRUCTURED_STYLES__POSTFLAIR_REORDERTEMPLATES_PENDING",
 				C = "STRUCTURED_STYLES__POSTFLAIR_REORDERTEMPLATES_FAILED",
@@ -3327,7 +3584,7 @@
 						i = Object(b.Q)(c, {
 							subredditId: t
 						}).name;
-					if (r(v()), (await Object(d.b)(a(), e, i)).ok) {
+					if (r(j()), (await Object(d.b)(a(), e, i)).ok) {
 						r(A({
 							subredditId: t,
 							templateId: e
@@ -3403,7 +3660,7 @@
 			})), r.d(t, "a", (function() {
 				return T
 			})), r.d(t, "c", (function() {
-				return j
+				return v
 			}));
 			r("./node_modules/core-js/modules/web.dom.iterable.js");
 			var s = r("./node_modules/lodash/forEach.js"),
@@ -3467,8 +3724,8 @@
 					subredditId: e
 				});
 				if (!D) return !1;
-				const j = l.structuredStyles.flairTemplate.models[t];
-				if (j && c()(j, T)) return !0;
+				const v = l.structuredStyles.flairTemplate.models[t];
+				if (v && c()(v, T)) return !0;
 				if (I) {
 					const r = [];
 					if (n()(I, (n, a) => {
@@ -3490,11 +3747,11 @@
 					})(T, I, a())
 				}
 				l = a();
-				let v = null,
+				let j = null,
 					A = null;
 				const w = [];
 				try {
-					(v = await Object(u.f)(l, E.a.FlairTemplates)) && (A = Object(u.m)(v)(s, a, o), w.push(...d()(v.imagesByKey)))
+					(j = await Object(u.f)(l, E.a.FlairTemplates)) && (A = Object(u.m)(j)(s, a, o), w.push(...d()(j.imagesByKey)))
 				} catch (L) {
 					return !1
 				}
@@ -3503,7 +3760,7 @@
 						method: p.ib.PUT,
 						data: s
 					}))(i(), D.name, t, T),
-					C = j ? "edit_post_flair_template" : "save_post_flair_template",
+					C = v ? "edit_post_flair_template" : "save_post_flair_template",
 					P = Object(y.e)(l, C);
 				if (R.ok) {
 					let e;
@@ -3524,7 +3781,7 @@
 						flairId: t,
 						template: e || T
 					}))
-				} else v && v.websocket.close();
+				} else j && j.websocket.close();
 				return Object(O.a)({
 					...P,
 					actionInfo: {
@@ -3532,7 +3789,7 @@
 						success: R.ok
 					}
 				}), R.ok
-			}, T = "POSTFLAIR_STYLETEMPLATE_DELETED_SUCCESS", D = Object(i.a)(T), j = (e, t) => async (r, s, {
+			}, T = "POSTFLAIR_STYLETEMPLATE_DELETED_SUCCESS", D = Object(i.a)(T), v = (e, t) => async (r, s, {
 				apiContext: n
 			}) => {
 				const a = s(),
@@ -3793,15 +4050,15 @@
 				g = r("./src/reddit/featureFlags/utils.ts"),
 				T = r("./src/reddit/helpers/chooseVariant/index.ts"),
 				D = r("./src/reddit/selectors/meta.ts");
-			const j = e => S.d.reCaptchaEnterprise(e) && !Object(D.d)(e),
-				v = e => !!Object(T.c)(e, {
+			const v = e => S.d.reCaptchaEnterprise(e) && !Object(D.d)(e),
+				j = e => !!Object(T.c)(e, {
 					experimentEligibilitySelector: Object(g.d)(Object(g.b)(...a.d)),
 					experimentName: b.Cd
 				}),
 				A = Object(s.b)("LOAD_RECAPTCHA_ENTERPRISE"),
 				w = Object(s.b)("EXECUTE_RECAPTCHA_ENTERPRISE"),
 				R = Object(s.b)("SEND_RECAPTCHA_TOKEN"),
-				C = e => u(e => p()([j, v, e => e.tracking.reCaptchaEnterprise.send === s.a.New && e.tracking.reCaptchaEnterprise.execute === s.a.Succeeded && e.tracking.reCaptchaEnterprise.load === s.a.Succeeded], t => t(e)))(async (t, r, {
+				C = e => u(e => p()([v, j, e => e.tracking.reCaptchaEnterprise.send === s.a.New && e.tracking.reCaptchaEnterprise.execute === s.a.Succeeded && e.tracking.reCaptchaEnterprise.load === s.a.Succeeded], t => t(e)))(async (t, r, {
 					gqlContext: s
 				}) => {
 					t(R.requested());
@@ -3829,10 +4086,10 @@
 					}
 				}),
 				P = (e, t) => Object(g.g)(t) ? (e => `STAGING__${e}`)(e) : e,
-				L = (e = d.a.PageLoad) => u(e => p()([j, v, e => e.tracking.reCaptchaEnterprise.load === s.a.New], t => t(e)))(async (t, r) => {
+				L = (e = d.a.PageLoad) => u(e => p()([v, j, e => e.tracking.reCaptchaEnterprise.load === s.a.New], t => t(e)))(async (t, r) => {
 					const a = r();
 					try {
-						await t((() => u(e => p()([j, v, e => e.tracking.reCaptchaEnterprise.load === s.a.New], t => t(e)))(async e => {
+						await t((() => u(e => p()([v, j, e => e.tracking.reCaptchaEnterprise.load === s.a.New], t => t(e)))(async e => {
 							e(A.requested());
 							try {
 								await d.b.loadScript(), e(A.succeeded())
@@ -3840,7 +4097,7 @@
 								throw e(A.failed()), t
 							}
 						}))());
-						const r = await t((e => u(e => p()([j, v, e => e.tracking.reCaptchaEnterprise.load === s.a.Succeeded && e.tracking.reCaptchaEnterprise.execute === s.a.New], t => t(e)))(async t => {
+						const r = await t((e => u(e => p()([v, j, e => e.tracking.reCaptchaEnterprise.load === s.a.Succeeded && e.tracking.reCaptchaEnterprise.execute === s.a.New], t => t(e)))(async t => {
 							t(w.requested());
 							try {
 								const r = await d.b.execute(e);
@@ -4026,9 +4283,9 @@
 			})), r.d(t, "x", (function() {
 				return D
 			})), r.d(t, "w", (function() {
-				return j
-			})), r.d(t, "t", (function() {
 				return v
+			})), r.d(t, "t", (function() {
+				return j
 			}));
 			var s = r("./node_modules/fbt/lib/FbtPublic.js");
 			const n = "SCHEDULED_POSTS_REQUESTED",
@@ -4067,10 +4324,10 @@
 				D = () => s.fbt._("Successfully submitted scheduled post!", null, {
 					hk: "ONo6q"
 				}),
-				j = () => s.fbt._("Successfully edited scheduled post!", null, {
+				v = () => s.fbt._("Successfully edited scheduled post!", null, {
 					hk: "HfGcT"
 				}),
-				v = () => s.fbt._("Failed to update scheduled post", null, {
+				j = () => s.fbt._("Failed to update scheduled post", null, {
 					hk: "2zBuRu"
 				})
 		},
@@ -4152,7 +4409,7 @@
 			})), r.d(t, "e", (function() {
 				return D
 			})), r.d(t, "i", (function() {
-				return v
+				return j
 			})), r.d(t, "a", (function() {
 				return A
 			})), r.d(t, "b", (function() {
@@ -4181,10 +4438,10 @@
 				g = Object(n.a)(a.c),
 				T = Object(n.a)(a.e),
 				D = Object(n.a)(a.h),
-				j = (e, t) => {
-					e(T()), e(Object(o.f)(Object(o.e)(a.r(), p.b.Error, a.s(), v(t))))
+				v = (e, t) => {
+					e(T()), e(Object(o.f)(Object(o.e)(a.r(), p.b.Error, a.s(), j(t))))
 				},
-				v = ({
+				j = ({
 					subredditId: e,
 					includeStandalone: t = {
 						standaloneFirst: 25
@@ -4207,14 +4464,14 @@
 							...s
 						},
 						u = await Object(d.b)(c(), o);
-					Object(d.f)(u, o) ? w(n, Object(i.e)(u.body.data), o) : j(n, o)
+					Object(d.f)(u, o) ? w(n, Object(i.e)(u.body.data), o) : v(n, o)
 				}, A = e => async (t, r, {
 					gqlContext: s
 				}) => {
 					const n = r();
 					if (!Object(b.h)(n, {
 							subredditId: e
-						})) return t(v({
+						})) return t(j({
 						subredditId: e
 					}));
 					if (!Object(b.g)(n, {
@@ -4237,7 +4494,7 @@
 						o = await Object(d.b)(s(), c);
 					o.ok ? w(t, Object(i.e)(o.body.data), c) : t(T())
 				}, w = (e, t, r) => {
-					Object(i.b)(t) ? e(h(t)) : Object(i.a)(t) ? e(S(t)) : Object(i.c)(t) ? e(I(t)) : j(e, r)
+					Object(i.b)(t) ? e(h(t)) : Object(i.a)(t) ? e(S(t)) : Object(i.c)(t) ? e(I(t)) : v(e, r)
 				}, R = (e, t) => async (r, n, a) => {
 					const o = {},
 						d = n();
@@ -4514,9 +4771,9 @@
 			})), r.d(t, "e", (function() {
 				return D
 			})), r.d(t, "b", (function() {
-				return j
-			})), r.d(t, "a", (function() {
 				return v
+			})), r.d(t, "a", (function() {
+				return j
 			})), r.d(t, "f", (function() {
 				return C
 			})), r.d(t, "g", (function() {
@@ -4559,12 +4816,12 @@
 			const g = "SUBREDDIT__CREATE_SET_INITIAL_CROSSPOST",
 				T = "SUBREDDIT__CREATE_PENDING",
 				D = "SUBREDDIT__CREATE_SUCCEEDED",
-				j = "SUBREDDIT__CREATE_FAILED",
-				v = "SUBREDDIT__CREATE_CLEARED",
+				v = "SUBREDDIT__CREATE_FAILED",
+				j = "SUBREDDIT__CREATE_CLEARED",
 				A = Object(a.a)(T),
 				w = Object(a.a)(D),
-				R = Object(a.a)(j),
-				C = Object(a.a)(v),
+				R = Object(a.a)(v),
+				C = Object(a.a)(j),
 				P = Object(a.a)(g),
 				L = e => async (t, r, {
 					apiContext: a
@@ -4825,7 +5082,7 @@
 			})), r.d(t, "m", (function() {
 				return h
 			})), r.d(t, "k", (function() {
-				return v
+				return j
 			})), r.d(t, "l", (function() {
 				return A
 			})), r.d(t, "i", (function() {
@@ -4857,10 +5114,10 @@
 				g = Object(o.a)(m),
 				T = Object(o.a)(y),
 				D = Object(o.a)(E),
-				j = new Map,
-				v = (e, t) => {
-					const r = j.get(e) || [];
-					r.push(t), j.set(e, r)
+				v = new Map,
+				j = (e, t) => {
+					const r = v.get(e) || [];
+					r.push(t), v.set(e, r)
 				},
 				A = (e, t, r, s = !1) => async (a, o, {
 					apiContext: u
@@ -4887,7 +5144,7 @@
 						error: m
 					}));
 					let y;
-					v(p, () => {
+					j(p, () => {
 						y && y.abort()
 					}), a(O({
 						key: l
@@ -4931,8 +5188,8 @@
 				}, w = (e, t = !1) => (r, s) => {
 					const n = s().uploads[e];
 					n && (((e, t) => {
-						const r = j.get(e);
-						r && r.forEach(r => r(e, t)), j.delete(e)
+						const r = v.get(e);
+						r && r.forEach(r => r(e, t)), v.delete(e)
 					})(n.id, t), r(t ? D({
 						key: e
 					}) : T({
@@ -5542,8 +5799,8 @@
 				g = r("./src/reddit/models/Theme/NewColorSystem/index.ts"),
 				T = r("./src/lib/getShortenedLink.ts"),
 				D = r("./src/reddit/components/FlairWrapper/index.tsx"),
-				j = r("./node_modules/fbt/lib/FbtPublic.js"),
-				v = r("./src/lib/prettyPrintNumber/index.ts"),
+				v = r("./node_modules/fbt/lib/FbtPublic.js"),
+				j = r("./src/lib/prettyPrintNumber/index.ts"),
 				A = r("./src/reddit/components/Poll/PollExpiry/index.tsx"),
 				w = r("./src/reddit/components/Poll/PostTitleMetaData/index.m.less"),
 				R = r.n(w);
@@ -5558,10 +5815,10 @@
 					} = e, s = r ? r.totalVotes : "0";
 					return a.a.createElement("div", {
 						className: Object(u.a)(e.className, R.a.proposalMetaData)
-					}, a.a.createElement("span", null, j.fbt._({
+					}, a.a.createElement("span", null, v.fbt._({
 						"*": "{count} votes",
 						_1: "{count} vote"
-					}, [j.fbt._param("count", Object(v.a)(s)), j.fbt._plural(parseInt(s))], {
+					}, [v.fbt._param("count", Object(j.a)(s)), v.fbt._plural(parseInt(s))], {
 						hk: "4rP1VK"
 					})), t && a.a.createElement(A.a, {
 						className: R.a.proposalExpiry,
@@ -5577,10 +5834,10 @@
 				G = r("./src/reddit/hooks/useExperimentVariant.ts"),
 				B = r("./src/reddit/hooks/usePostContext.ts"),
 				H = r("./src/reddit/hooks/useTheme.ts"),
-				V = r("./src/telemetry/models/Outbound.ts");
+				q = r("./src/telemetry/models/Outbound.ts");
 
-			function q() {
-				return (q = Object.assign || function(e) {
+			function V() {
+				return (V = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var r = arguments[t];
 						for (var s in r) Object.prototype.hasOwnProperty.call(r, s) && (e[s] = r[s])
@@ -5637,7 +5894,7 @@
 					titleColor: r,
 					children: s,
 					...n
-				}) => a.a.createElement(o.a, q({}, n, {
+				}) => a.a.createElement(o.a, V({}, n, {
 					className: Object(u.a)(e, U.a.styledLink, {
 						[U.a.isVisitedEnabled]: !t
 					})
@@ -5734,7 +5991,7 @@
 						post: r
 					} = e, {
 						isSponsored: s
-					} = r, n = e.isCommentsPage ? V.SourceElement.PostLink : V.SourceElement.ListingPostLink, c = !t && !e.isCrosspost && e.size !== P.Large && !r.isSponsored && !(r.media && Object(S.G)(r.media)) && (r.source || r.media && (r.media.type === S.o.GIFVIDEO || r.media.type === S.o.IMAGE || r.media.type === S.o.EMBED));
+					} = r, n = e.isCommentsPage ? q.SourceElement.PostLink : q.SourceElement.ListingPostLink, c = !t && !e.isCrosspost && e.size !== P.Large && !r.isSponsored && !(r.media && Object(S.G)(r.media)) && (r.source || r.media && (r.media.type === S.o.GIFVIDEO || r.media.type === S.o.IMAGE || r.media.type === S.o.EMBED));
 					if (t || !e.isCommentsPage || e.isCommentPermalink || e.shouldLinkWrap) {
 						if (c) return a.a.createElement(m.a, {
 							className: e.outboundLinkClassName,
@@ -5788,7 +6045,7 @@
 						post: o,
 						sendEvent: this.props.sendEvent,
 						showCategoryTag: !1
-					}), a.a.createElement(Y, q({}, this.props, {
+					}), a.a.createElement(Y, V({}, this.props, {
 						leftFlair: d ? p : void 0
 					})), c && a.a.createElement(L, {
 						className: U.a.pollMeta,
@@ -5820,7 +6077,7 @@
 					})),
 					o = Object(H.a)(),
 					d = Object(l.b)();
-				return a.a.createElement(J, q({
+				return a.a.createElement(J, V({
 					pageLayer: t,
 					isCommentPermalink: r
 				}, s, n, e, {
@@ -5949,9 +6206,9 @@
 				g = r.n(S),
 				T = r("./src/reddit/components/SearchDropdown/index.m.less"),
 				D = r.n(T);
-			const j = Object(c.a)(f.b);
+			const v = Object(c.a)(f.b);
 
-			function v({
+			function j({
 				activeTooltipId: e,
 				className: t,
 				focusedItem: r,
@@ -5961,7 +6218,7 @@
 				indexOfItem: f,
 				toggleTooltip: S,
 				onClearSearchQuery: T,
-				onRemoveRecentSearch: v,
+				onRemoveRecentSearch: j,
 				onUpdateSearchQuery: A,
 				onSendSearchClickRecentEvent: w,
 				onCloseDropdown: R
@@ -6025,9 +6282,9 @@
 				}, n.a.createElement(_.a, {
 					name: "clear",
 					onMouseUp: e => {
-						e.stopPropagation(), e.preventDefault(), v(c)
+						e.stopPropagation(), e.preventDefault(), j(c)
 					}
-				}), n.a.createElement(j, {
+				}), n.a.createElement(v, {
 					className: D.a.fixedTextTooltip,
 					isOpen: e === F,
 					text: d.fbt._("Remove", null, {
@@ -6069,8 +6326,8 @@
 						subreddit: null
 					}),
 					T = null == g ? void 0 : g.url,
-					j = null == g ? void 0 : g.qs,
-					v = n.a.createElement(i.a, {
+					v = null == g ? void 0 : g.qs,
+					j = n.a.createElement(i.a, {
 						id: r,
 						"aria-label": s.searchQuery,
 						className: Object(o.a)(D.a.listItem, D.a.mTrending, b.a.item, b.a.trending, e, {
@@ -6103,7 +6360,7 @@
 							state: {
 								[y.a.SearchOriginPage]: c
 							},
-							search: j
+							search: v
 						}
 					}, n.a.createElement("div", {
 						className: b.a.trendingContent
@@ -6135,7 +6392,7 @@
 					}));
 				return S ? n.a.createElement(R.a, {
 					post: s.post
-				}, v) : v
+				}, j) : j
 			}
 			var U = r("./src/reddit/components/Flair/index.tsx"),
 				M = r("./src/reddit/models/Flair/index.ts");
@@ -6201,9 +6458,9 @@
 			var G = r("./src/reddit/constants/zIndex.ts"),
 				B = r("./src/reddit/controls/Dropdown/index.tsx"),
 				H = r("./src/reddit/components/HeaderSubredditSelector/index.m.less"),
-				V = r.n(H),
-				q = r("./src/reddit/components/HeaderSubredditSelector/LoadingListSection/index.m.less"),
-				K = r.n(q),
+				q = r.n(H),
+				V = r("./src/reddit/components/HeaderSubredditSelector/LoadingListSection/index.m.less"),
+				K = r.n(V),
 				W = r("./node_modules/reselect/es/index.js"),
 				$ = r("./src/reddit/constants/experiments.ts"),
 				Q = r("./src/reddit/helpers/chooseVariant/index.ts");
@@ -6263,7 +6520,7 @@
 				onClearSearchQuery: S,
 				onClose: g,
 				onRemoveRecentSearch: T,
-				onSendSearchClickRecentEvent: j,
+				onSendSearchClickRecentEvent: v,
 				onSendSearchClickTypeaheadEvent: A,
 				onSetRecentSearch: w,
 				onUpdateSearchQuery: R
@@ -6279,8 +6536,8 @@
 					}(e),
 					M = t.slice(0, te),
 					[B, H] = Object(s.useState)(new Array(te).fill(!1)),
-					q = N && E,
-					W = 0 === f.length && !u && !q;
+					V = N && E,
+					W = 0 === f.length && !u && !V;
 				Object(s.useLayoutEffect)(() => {
 					if (!r && i && document.getElementById(ee)) {
 						const e = $();
@@ -6311,7 +6568,7 @@
 				O && (Q.zIndex = G.g);
 				const z = Object(s.useMemo)(() => f.filter(e => e.isSubreddit), [f]);
 				return n.a.createElement(re, {
-					className: Object(o.a)(D.a.dropdown, V.a.listContainer),
+					className: Object(o.a)(D.a.dropdown, q.a.listContainer),
 					id: ee,
 					isFixed: O,
 					isOpen: i,
@@ -6345,7 +6602,7 @@
 					onSetRecentSearch: w,
 					nightmode: y,
 					onCloseDropdown: g
-				})), W && p.map((e, t) => n.a.createElement(v, {
+				})), W && p.map((e, t) => n.a.createElement(j, {
 					searchOriginPage: _,
 					activeTooltipId: P,
 					focusedItem: l[m],
@@ -6353,7 +6610,7 @@
 					key: e.id,
 					onClearSearchQuery: S,
 					onRemoveRecentSearch: T,
-					onSendSearchClickRecentEvent: j,
+					onSendSearchClickRecentEvent: v,
 					onSetRecentSearch: w,
 					onUpdateSearchQuery: R,
 					recentSearch: e,
@@ -6386,7 +6643,7 @@
 					onSetRecentSearch: w,
 					onUpdateSearchQuery: R,
 					trendingItem: e
-				})), q && n.a.createElement(X, {
+				})), V && n.a.createElement(X, {
 					searchOriginPage: _,
 					searchQuery: E,
 					onCloseDropdown: g
@@ -6539,8 +6796,8 @@
 				D = () => Object(f.c)({
 					shouldLoadCTA: T
 				}),
-				j = Object(d.b)(D),
-				v = ({
+				v = Object(d.b)(D),
+				j = ({
 					shouldLoadCTA: e,
 					postId: t,
 					sendEvent: r
@@ -6553,7 +6810,7 @@
 						postId: t
 					})
 				},
-				A = Object(c.memo)(j(Object(_.c)(v)))
+				A = Object(c.memo)(v(Object(_.c)(j)))
 		},
 		"./src/reddit/components/TrendingSearches/TrendingItemViewability.tsx": function(e, t, r) {
 			"use strict";
@@ -7819,9 +8076,9 @@
 			})), r.d(t, "y", (function() {
 				return T
 			})), r.d(t, "E", (function() {
-				return j
-			})), r.d(t, "u", (function() {
 				return v
+			})), r.d(t, "u", (function() {
+				return j
 			})), r.d(t, "v", (function() {
 				return A
 			})), r.d(t, "w", (function() {
@@ -7849,7 +8106,7 @@
 			})), r.d(t, "o", (function() {
 				return B
 			})), r.d(t, "n", (function() {
-				return q
+				return V
 			})), r.d(t, "h", (function() {
 				return K
 			})), r.d(t, "m", (function() {
@@ -7976,7 +8233,7 @@
 						}
 					}
 				},
-				j = (e, t, r, s, n, a, o) => {
+				v = (e, t, r, s, n, a, o) => {
 					Object(b.a)({
 						...l.defaults(e),
 						...Object(d.f)(e, r, s, n, a, t),
@@ -7984,7 +8241,7 @@
 						noun: o ? "ad" : "post"
 					})
 				},
-				v = (e, t, r, s) => {
+				j = (e, t, r, s) => {
 					Object(b.a)(h(e, t, r, s))
 				},
 				A = (e, t, r, s) => n => h(n, e, t, r, s),
@@ -8084,14 +8341,14 @@
 					surface: i.d.Frontpage,
 					url: "gql.reddit.com"
 				}),
-				V = (e, t, r) => l.actionInfo(e, {
+				q = (e, t, r) => l.actionInfo(e, {
 					position: r
 				}),
-				q = (e, t, r) => {
+				V = (e, t, r) => {
 					const s = H();
 					return e => ({
 						...y(e, s),
-						actionInfo: V(e, 0, r),
+						actionInfo: q(e, 0, r),
 						subreddit: l.subredditById(e, t)
 					})
 				},
@@ -8099,14 +8356,14 @@
 					const s = H();
 					return e => ({
 						...h(e, s, t),
-						actionInfo: V(e, 0, r)
+						actionInfo: q(e, 0, r)
 					})
 				},
 				W = (e, t, r) => {
 					const n = H();
 					return e => ({
 						...m(e, n),
-						actionInfo: V(e, 0, r),
+						actionInfo: q(e, 0, r),
 						subreddit: l.subredditById(e, t) || null,
 						source: f,
 						action: c.c.VIEW,
@@ -8117,7 +8374,7 @@
 					const n = H();
 					return e => ({
 						...m(e, n),
-						actionInfo: V(e, 0, r),
+						actionInfo: q(e, 0, r),
 						post: l.post(e, t) || null,
 						source: f,
 						action: c.c.CLICK,
@@ -8128,7 +8385,7 @@
 					const a = H();
 					return e => ({
 						...m(e, a),
-						actionInfo: V(e, 0, n),
+						actionInfo: q(e, 0, n),
 						subreddit: l.subredditById(e, r) || null,
 						post: l.post(e, t) || null,
 						source: f,
@@ -8140,7 +8397,7 @@
 					const n = H();
 					return e => ({
 						...m(e, n),
-						actionInfo: V(e, 0, r),
+						actionInfo: q(e, 0, r),
 						subreddit: l.subredditById(e, t) || null,
 						source: f,
 						action: c.c.CLICK,
@@ -8151,7 +8408,7 @@
 					const a = H();
 					return e => ({
 						...m(e, a),
-						actionInfo: V(e, 0, r),
+						actionInfo: q(e, 0, r),
 						subreddit: l.subredditById(e, t) || null,
 						post: n ? l.post(e, n) : null,
 						source: f,
@@ -8163,7 +8420,7 @@
 					const a = H();
 					return e => ({
 						...m(e, a),
-						actionInfo: V(e, 0, r),
+						actionInfo: q(e, 0, r),
 						subreddit: l.subredditById(e, t) || null,
 						post: n ? l.post(e, n) : null,
 						source: f,
@@ -8175,7 +8432,7 @@
 					const n = H();
 					return e => ({
 						...m(e, n),
-						actionInfo: V(e, 0, r),
+						actionInfo: q(e, 0, r),
 						subreddit: l.subredditById(e, t) || null,
 						source: f,
 						action: c.c.CLICK,
@@ -8186,7 +8443,7 @@
 					const n = H();
 					return e => ({
 						...m(e, n),
-						actionInfo: V(e, 0, r),
+						actionInfo: q(e, 0, r),
 						subreddit: l.subredditById(e, t) || null,
 						source: f,
 						action: c.c.CLICK,
@@ -8246,9 +8503,9 @@
 			})), r.d(t, "j", (function() {
 				return D
 			})), r.d(t, "e", (function() {
-				return j
-			})), r.d(t, "x", (function() {
 				return v
+			})), r.d(t, "x", (function() {
+				return j
 			})), r.d(t, "u", (function() {
 				return A
 			})), r.d(t, "a", (function() {
@@ -8398,13 +8655,13 @@
 					noun: "schedule_post_cta",
 					...a(e)
 				}),
-				j = () => e => ({
+				v = () => e => ({
 					source: "recurring_post_module",
 					action: "click",
 					noun: "edit_recurring_post",
 					...a(e)
 				}),
-				v = () => e => ({
+				j = () => e => ({
 					source: "recurring_post_composer",
 					action: "view",
 					noun: "recurring_post_composer",
@@ -8797,7 +9054,7 @@
 			})), r.d(t, "l", (function() {
 				return D
 			})), r.d(t, "p", (function() {
-				return j
+				return v
 			}));
 			r("./node_modules/core-js/modules/web.dom.iterable.js");
 			var s = r("./src/lib/assertNever.ts"),
@@ -8872,7 +9129,7 @@
 							return Object(s.a)(e)
 					}
 				},
-				j = e => "frequency" in e && !!e.frequency
+				v = e => "frequency" in e && !!e.frequency
 		},
 		"./src/reddit/models/WhitelistAndBlocked.ts": function(e, t, r) {
 			"use strict";
@@ -9431,7 +9688,7 @@
 				},
 				T = r("./node_modules/redux/es/redux.js"),
 				D = r("./src/reddit/actions/appBadgeIndicators/constants.ts");
-			var j = (e = null, t) => {
+			var v = (e = null, t) => {
 				switch (t.type) {
 					case D.a:
 						return t.payload && t.payload.error || null;
@@ -9442,7 +9699,7 @@
 						return e
 				}
 			};
-			var v = (e = !1, t) => {
+			var j = (e = !1, t) => {
 					switch (t.type) {
 						case D.c:
 							return !0;
@@ -9454,8 +9711,8 @@
 					}
 				},
 				A = Object(T.c)({
-					error: j,
-					pending: v
+					error: v,
+					pending: j
 				});
 			const w = {};
 			var R = (e = w, t) => {
@@ -9496,8 +9753,8 @@
 				G = r("./src/reddit/actions/pages/constants.ts"),
 				B = r("./src/reddit/actions/pages/profileComments/constants.ts"),
 				H = r("./src/reddit/actions/pages/profilePosts.ts"),
-				V = r("./src/reddit/actions/pages/profilePrivate/constants.ts"),
-				q = r("./src/reddit/actions/pages/search.ts"),
+				q = r("./src/reddit/actions/pages/profilePrivate/constants.ts"),
+				V = r("./src/reddit/actions/pages/search.ts"),
 				K = r("./src/reddit/actions/pages/subreddit.ts"),
 				W = r("./src/reddit/actions/profileConversations.ts"),
 				$ = r("./src/reddit/actions/subreddit.ts"),
@@ -9521,11 +9778,11 @@
 						}
 						return e
 					}
-					case V.c:
-					case V.i:
-					case V.e:
-					case V.g:
-					case q.SEARCH_RESULTS_RECEIVED: {
+					case q.c:
+					case q.i:
+					case q.e:
+					case q.g:
+					case V.SEARCH_RESULTS_RECEIVED: {
 						const {
 							authorFlair: r
 						} = t.payload;
@@ -9798,8 +10055,8 @@
 				ge = r("./src/reddit/actions/goldPurchaseModals/constants.ts"),
 				Te = r("./src/reddit/actions/multireddit/constants.ts"),
 				De = r("./src/reddit/actions/pages/modListing/constants.ts"),
-				je = r("./src/reddit/actions/pages/multireddit/constants.ts"),
-				ve = r("./src/reddit/actions/pages/postCreation.ts"),
+				ve = r("./src/reddit/actions/pages/multireddit/constants.ts"),
+				je = r("./src/reddit/actions/pages/postCreation.ts"),
 				Ae = r("./src/reddit/actions/pages/profileOverview/constants.ts"),
 				we = r("./src/reddit/actions/profileOverviewChrono/constants.ts"),
 				Re = r("./src/lib/makeActionCreator/index.ts"),
@@ -9872,7 +10129,7 @@
 					case G.b:
 					case x.w:
 					case U.b:
-					case ve.PAGE_LOADED:
+					case je.PAGE_LOADED:
 					case Ie.e:
 					case Se.f:
 					case De.e:
@@ -9884,8 +10141,8 @@
 					case Te.r:
 					case G.f:
 					case Se.b:
-					case je.b:
-					case q.SEARCH_RESULTS_RECEIVED:
+					case ve.b:
+					case V.SEARCH_RESULTS_RECEIVED:
 					case B.b:
 					case B.e:
 					case W.b:
@@ -9895,10 +10152,10 @@
 					case we.b:
 					case H.MORE_POSTS_LOADED:
 					case H.PROFILE_POSTS_LOADED:
-					case V.c:
-					case V.e:
-					case V.i:
-					case V.g:
+					case q.c:
+					case q.e:
+					case q.i:
+					case q.g:
 					case "RECOMMENDED_POSTS_LOADED":
 					case Pe.g:
 					case $.i:
@@ -10029,8 +10286,8 @@
 					api: Fe,
 					order: Be
 				});
-			const Ve = {};
-			var qe = (e = Ve, t) => {
+			const qe = {};
+			var Ve = (e = qe, t) => {
 					switch (t.type) {
 						case ee.b: {
 							const {
@@ -10047,7 +10304,7 @@
 					}
 				},
 				Ke = Object(T.c)({
-					order: qe
+					order: Ve
 				}),
 				We = Object(T.c)({
 					blacklist: re,
@@ -10330,7 +10587,7 @@
 								hasBrandSafetyBeenAssessed: !0
 							};
 						case K.SUBREDDIT_PENDING:
-						case je.c:
+						case ve.c:
 						case Se.c:
 							return e.hasBrandSafetyBeenAssessed ? {
 								...e,
@@ -10341,10 +10598,10 @@
 					}
 				},
 				Dt = r("./src/reddit/actions/celebratoryMoments/constants.ts");
-			const jt = {
+			const vt = {
 				isRenderCelebratoryMoment: !1
 			};
-			var vt = (e = jt, t) => {
+			var jt = (e = vt, t) => {
 					switch (t.type) {
 						case Dt.a: {
 							const {
@@ -10358,7 +10615,7 @@
 							}
 						}
 						case Dt.b:
-							return jt;
+							return vt;
 						default:
 							return e
 					}
@@ -10484,8 +10741,8 @@
 						return e
 				}
 			};
-			const Vt = {};
-			var qt = (e = Vt, t) => {
+			const qt = {};
+			var Vt = (e = qt, t) => {
 					switch (t.type) {
 						case Gt.a:
 						case Gt.b:
@@ -10505,7 +10762,7 @@
 				},
 				Kt = Object(T.c)({
 					error: Ht,
-					pending: qt
+					pending: Vt
 				}),
 				Wt = Object(T.c)({
 					fetch: Kt
@@ -10760,12 +11017,12 @@
 							return e
 					}
 				},
-				jr = Object(T.c)({
+				vr = Object(T.c)({
 					error: gr,
 					pending: Dr
 				}),
-				vr = Object(T.c)({
-					fetch: jr
+				jr = Object(T.c)({
+					fetch: vr
 				});
 			const Ar = {};
 			var wr = (e = Ar, t) => {
@@ -10808,7 +11065,7 @@
 					}
 				},
 				Rr = Object(T.c)({
-					api: vr,
+					api: jr,
 					models: wr
 				}),
 				Cr = r("./src/reddit/actions/contentGate.ts"),
@@ -11072,12 +11329,12 @@
 				Hr = Object(T.c)({
 					createOrUpdate: Br
 				}),
-				Vr = r("./src/reddit/actions/postDraft.ts");
-			const qr = {};
-			var Kr = (e = qr, t) => {
+				qr = r("./src/reddit/actions/postDraft.ts");
+			const Vr = {};
+			var Kr = (e = Vr, t) => {
 				switch (t.type) {
-					case Vr.c:
-					case Vr.b: {
+					case qr.c:
+					case qr.b: {
 						const {
 							draftId: r
 						} = t.payload;
@@ -11086,7 +11343,7 @@
 							[r]: null
 						}
 					}
-					case Vr.a: {
+					case qr.a: {
 						const {
 							apiError: r,
 							draftId: s
@@ -11103,7 +11360,7 @@
 			const Wr = {};
 			var $r = (e = Wr, t) => {
 					switch (t.type) {
-						case Vr.b: {
+						case qr.b: {
 							const {
 								draftId: r
 							} = t.payload;
@@ -11112,8 +11369,8 @@
 								[r]: !0
 							}
 						}
-						case Vr.c:
-						case Vr.a: {
+						case qr.c:
+						case qr.a: {
 							const {
 								draftId: r
 							} = t.payload;
@@ -11132,10 +11389,10 @@
 				});
 			var Yr = (e = null, t) => {
 				switch (t.type) {
-					case Vr.d:
+					case qr.d:
 						return t.payload;
-					case Vr.f:
-					case Vr.e:
+					case qr.f:
+					case qr.e:
 						return null;
 					default:
 						return e
@@ -11143,10 +11400,10 @@
 			};
 			var zr = (e = !1, t) => {
 					switch (t.type) {
-						case Vr.f:
+						case qr.f:
 							return !0;
-						case Vr.e:
-						case Vr.d:
+						case qr.e:
+						case qr.d:
 							return !1;
 						default:
 							return e
@@ -11164,31 +11421,31 @@
 			};
 			var Zr = (e = Jr, t) => {
 				switch (t.type) {
-					case Vr.l:
-					case Vr.j:
+					case qr.l:
+					case qr.j:
 						return Jr;
-					case Vr.i: {
+					case qr.i: {
 						const e = t.payload;
 						return {
 							...Jr,
 							apiError: e
 						}
 					}
-					case Vr.m: {
+					case qr.m: {
 						const e = t.payload;
 						return {
 							...Jr,
 							validationError: e
 						}
 					}
-					case Vr.k: {
+					case qr.k: {
 						const e = t.payload;
 						return {
 							...Jr,
 							submitValidationError: e
 						}
 					}
-					case Vr.h:
+					case qr.h:
 						return {
 							...Jr, needsCaptcha: !0
 						};
@@ -11198,13 +11455,13 @@
 			};
 			var es = (e = !1, t) => {
 					switch (t.type) {
-						case Vr.j:
+						case qr.j:
 							return !0;
-						case Vr.l:
-						case Vr.i:
-						case Vr.m:
-						case Vr.k:
-						case Vr.h:
+						case qr.l:
+						case qr.i:
+						case qr.m:
+						case qr.k:
+						case qr.h:
 							return !1;
 						default:
 							return e
@@ -11284,8 +11541,8 @@
 			const ls = {};
 			var ps = (e = ls, t) => {
 				switch (t.type) {
-					case ve.PAGE_LOADED:
-					case ve.PAGE_PENDING: {
+					case je.PAGE_LOADED:
+					case je.PAGE_PENDING: {
 						const {
 							key: r
 						} = t.payload;
@@ -11294,7 +11551,7 @@
 							[r]: null
 						}
 					}
-					case ve.PAGE_FAILED: {
+					case je.PAGE_FAILED: {
 						const {
 							key: r,
 							error: s
@@ -11311,7 +11568,7 @@
 			const bs = {};
 			var fs = (e = bs, t) => {
 				switch (t.type) {
-					case ve.PAGE_PENDING: {
+					case je.PAGE_PENDING: {
 						const {
 							key: r
 						} = t.payload;
@@ -11320,7 +11577,7 @@
 							[r]: !1
 						}
 					}
-					case ve.PAGE_LOADED: {
+					case je.PAGE_LOADED: {
 						const {
 							key: r
 						} = t.payload;
@@ -11336,7 +11593,7 @@
 			const ms = {};
 			var ys = (e = ms, t) => {
 					switch (t.type) {
-						case ve.PAGE_PENDING: {
+						case je.PAGE_PENDING: {
 							const {
 								key: r
 							} = t.payload;
@@ -11345,8 +11602,8 @@
 								[r]: !0
 							}
 						}
-						case ve.PAGE_LOADED:
-						case ve.PAGE_FAILED: {
+						case je.PAGE_LOADED:
+						case je.PAGE_FAILED: {
 							const {
 								key: r
 							} = t.payload;
@@ -11477,11 +11734,11 @@
 					error: gs,
 					pending: Ts
 				}),
-				js = Object(T.c)({
+				vs = Object(T.c)({
 					submit: Ss,
 					update: Ds
 				});
-			var vs = (e = null, t) => {
+			var js = (e = null, t) => {
 				switch (t.type) {
 					case ss.K:
 					case ss.I:
@@ -11503,7 +11760,7 @@
 					}
 				},
 				ws = Object(T.c)({
-					error: vs,
+					error: js,
 					pending: As
 				}),
 				Rs = Object(T.c)({
@@ -11514,7 +11771,7 @@
 					draft: rs,
 					editor: us,
 					page: Es,
-					post: js,
+					post: vs,
 					subreddit: Rs
 				}),
 				Ps = r("./node_modules/lodash/omit.js"),
@@ -11523,13 +11780,13 @@
 			const ks = {};
 			var xs = (e = ks, t) => {
 				switch (t.type) {
-					case Vr.e: {
+					case qr.e: {
 						const {
 							postDrafts: e
 						} = t.payload;
 						return e || ks
 					}
-					case Vr.c: {
+					case qr.c: {
 						const r = e,
 							{
 								draftId: s
@@ -11570,7 +11827,7 @@
 							const r = Ms(t);
 							return r && r.url ? r.url || "" : e
 						}
-						case Vr.g: {
+						case qr.g: {
 							const e = t.payload;
 							return e.kind === Fs.b.Link && e.body || ""
 						}
@@ -11583,7 +11840,7 @@
 				},
 				Bs = r("./src/reddit/models/PostCreationForm/index.ts"),
 				Hs = r("./src/reddit/models/ScheduledPost/index.ts");
-			var Vs = (e = "", t) => {
+			var qs = (e = "", t) => {
 				switch (t.type) {
 					case ss.e:
 						return t.payload || "";
@@ -11597,7 +11854,7 @@
 						const r = Ms(t);
 						return r && r.text ? (e => e ? e.replace(/\+/g, " ") : "")(r.text) : e
 					}
-					case Vr.g: {
+					case qr.g: {
 						const e = t.payload;
 						return e.kind === Fs.b.Markdown && e.body || ""
 					}
@@ -11610,23 +11867,23 @@
 						return e
 				}
 			};
-			const qs = {
+			const Vs = {
 				items: [],
 				selectedKey: null
 			};
-			var Ks = (e = qs, t) => {
+			var Ks = (e = Vs, t) => {
 					switch (t.type) {
 						case ss.f:
-							return t.payload || qs;
+							return t.payload || Vs;
 						case ss.A:
-							return qs;
+							return Vs;
 						case u.a:
-							return Us(t) !== Ce.Kb.POST_CREATION ? qs : e;
-						case Vr.g:
-							return qs;
+							return Us(t) !== Ce.Kb.POST_CREATION ? Vs : e;
+						case qr.g:
+							return Vs;
 						case _s.b:
 						case _s.n:
-							return qs;
+							return Vs;
 						default:
 							return e
 					}
@@ -11651,7 +11908,7 @@
 						}
 						case u.a:
 							return Us(t) !== Ce.Kb.POST_CREATION ? Ws.a.createInitial() : e;
-						case Vr.g: {
+						case qr.g: {
 							const e = t.payload;
 							return e.kind === Fs.b.RichText ? Ws.a.createInitial(e.body) : Ws.a.createInitial()
 						}
@@ -11667,7 +11924,7 @@
 				},
 				Xs = Object(T.c)({
 					link: Gs,
-					markdown: Vs,
+					markdown: qs,
 					media: Ks,
 					rte: zs
 				});
@@ -11676,7 +11933,7 @@
 						case ss.b:
 							return t.payload || null;
 						case ss.A:
-						case Vr.g:
+						case qr.g:
 						case _s.b:
 						case _s.n:
 						case ss.K:
@@ -11703,7 +11960,7 @@
 						return null;
 					case u.a:
 						return Us(t) === Ce.Kb.POST_CREATION ? e : null;
-					case Vr.g:
+					case qr.g:
 						return t.payload.flair || null;
 					default:
 						return e
@@ -11734,7 +11991,7 @@
 						return !1;
 					case u.a:
 						return Us(t) === Ce.Kb.POST_CREATION && e;
-					case Vr.g:
+					case qr.g:
 						return t.payload.isChatPost || !1;
 					default:
 						return e
@@ -11767,7 +12024,7 @@
 						return !1;
 					case u.a:
 						return Us(t) === Ce.Kb.POST_CREATION && e;
-					case Vr.g:
+					case qr.g:
 						return t.payload.isNSFW || !1;
 					case _s.b:
 					case _s.n:
@@ -11790,7 +12047,7 @@
 					}
 					case u.a:
 						return Us(t) === Ce.Kb.POST_CREATION && e;
-					case Vr.g:
+					case qr.g:
 						return t.payload.isOriginalContent || !1;
 					case _s.b:
 					case _s.n:
@@ -11839,11 +12096,11 @@
 					case _s.n:
 					case ss.A:
 						return !1;
-					case Vr.n:
+					case qr.n:
 						return t.payload;
 					case u.a:
 						return Us(t) === Ce.Kb.POST_CREATION && e;
-					case Vr.g:
+					case qr.g:
 						return t.payload.isPublicLink;
 					default:
 						return e
@@ -11857,7 +12114,7 @@
 						return !1;
 					case u.a:
 						return Us(t) === Ce.Kb.POST_CREATION && e;
-					case Vr.g:
+					case qr.g:
 						return t.payload.isSpoiler || !1;
 					case _s.b:
 					case _s.n:
@@ -11950,7 +12207,7 @@
 						return e || null
 					}
 					case ss.A:
-					case Vr.g:
+					case qr.g:
 					case ss.K:
 						return null;
 					case u.a:
@@ -12003,7 +12260,7 @@
 						return Us(t) === Ce.Kb.POST_CREATION && e;
 					case _s.b:
 					case _s.n:
-					case Vr.g:
+					case qr.g:
 						return !1;
 					default:
 						return e
@@ -12040,7 +12297,7 @@
 						return t.payload;
 					case u.a:
 						return Us(t) !== Ce.Kb.POST_CREATION || e;
-					case Vr.g:
+					case qr.g:
 						return t.payload.sendReplies;
 					case _s.b:
 					case _s.n:
@@ -12058,7 +12315,7 @@
 						return e || null
 					}
 					case ss.A:
-					case Vr.g:
+					case qr.g:
 					case ss.K:
 						return null;
 					case u.a:
@@ -12092,7 +12349,7 @@
 						} = r, d = s && !a && !o;
 						return c ? Ce.Tb.MEDIA : void 0 !== n || d ? Ce.Tb.LINK_ONLY : a || o ? Ce.Tb.POST : e
 					}
-					case Vr.g: {
+					case qr.g: {
 						const e = t.payload;
 						return Fs.a[e.kind]
 					}
@@ -12105,7 +12362,7 @@
 						return e
 				}
 			};
-			var jn = (e = null, t) => {
+			var vn = (e = null, t) => {
 					switch (t.type) {
 						case ss.W: {
 							const {
@@ -12114,7 +12371,7 @@
 							return e || null
 						}
 						case ss.A:
-						case Vr.g:
+						case qr.g:
 						case ss.K:
 							return null;
 						case u.a:
@@ -12126,7 +12383,7 @@
 							return e
 					}
 				},
-				vn = r("./src/reddit/models/Poll/index.ts");
+				jn = r("./src/reddit/models/Poll/index.ts");
 			const An = e => `Should ${e||"username"} become the top moderator?`,
 				wn = e => e ? `Should we spin-off to r/${e}?` : "Should we spin-off to a new community?";
 			var Rn = (e = "", t) => {
@@ -12148,14 +12405,14 @@
 							const r = Ms(t);
 							return r && r.title ? (e => e ? e.replace(/\+/g, " ") : "")(r.title) : e
 						}
-						case Vr.g:
+						case qr.g:
 							return t.payload.title;
 						case ss.q: {
 							const {
 								oldType: r,
 								type: s
 							} = t.payload;
-							return s === vn.a.ReplaceTopMod ? An("") : s === vn.a.Spinoff ? wn("") : r === vn.a.ReplaceTopMod || r === vn.a.Spinoff ? "" : e
+							return s === jn.a.ReplaceTopMod ? An("") : s === jn.a.Spinoff ? wn("") : r === jn.a.ReplaceTopMod || r === jn.a.Spinoff ? "" : e
 						}
 						case d.c: {
 							const {
@@ -12173,7 +12430,7 @@
 							const {
 								extra: r
 							} = t.payload;
-							return !r || r.govType !== vn.a.ReplaceTopMod && r.govType !== vn.a.Spinoff ? e : ""
+							return !r || r.govType !== jn.a.ReplaceTopMod && r.govType !== jn.a.Spinoff ? e : ""
 						}
 						case _s.b:
 						case _s.n:
@@ -12206,7 +12463,7 @@
 					sendReplies: Sn,
 					stickyPosition: gn,
 					submissionType: Dn,
-					suggestedSort: jn,
+					suggestedSort: vn,
 					title: Rn
 				});
 			var Pn = (e = null, t) => {
@@ -12311,7 +12568,7 @@
 					case ss.Q:
 					case ss.R:
 					case ss.T:
-					case Vr.n:
+					case qr.n:
 					case ss.V:
 					case ss.W:
 						return !0;
@@ -12329,8 +12586,8 @@
 					case u.a:
 						return Us(t) === Ce.Kb.POST_CREATION && e;
 					case ss.A:
-					case Vr.l:
-					case Vr.g:
+					case qr.l:
+					case qr.g:
 						return !1;
 					default:
 						return e
@@ -12343,7 +12600,7 @@
 							return Bs.q.Post;
 						case ss.B:
 							return t.payload;
-						case Vr.j:
+						case qr.j:
 							return Bs.q.Draft;
 						case u.a:
 							return Us(t) !== Ce.Kb.POST_CREATION ? xn : e;
@@ -12390,7 +12647,7 @@
 					markdown: Fn,
 					rte: Bn
 				});
-			var Vn = (e = null, t) => {
+			var qn = (e = null, t) => {
 					switch (t.type) {
 						case ss.D: {
 							const {
@@ -12404,16 +12661,16 @@
 							return e
 					}
 				},
-				qn = Object(T.c)({
+				Vn = Object(T.c)({
 					draft: Hn,
-					postId: Vn
+					postId: qn
 				}),
 				Kn = Object(T.c)({
 					api: Cs,
 					drafts: xs,
 					formData: Cn,
 					formState: Mn,
-					postEditing: qn
+					postEditing: Vn
 				}),
 				Wn = r("./src/reddit/actions/dashboard/constants.ts");
 			const $n = {
@@ -12808,7 +13065,7 @@
 				}
 			};
 			const Da = {};
-			var ja = (e = Da, t) => {
+			var va = (e = Da, t) => {
 					switch (t.type) {
 						case o.e: {
 							const r = t.payload.products.giphy.length > 0;
@@ -12823,14 +13080,14 @@
 							return e
 					}
 				},
-				va = r("./src/reddit/actions/economics/me/constants.ts");
+				ja = r("./src/reddit/actions/economics/me/constants.ts");
 			const Aa = {
 				fetched: !1,
 				data: {}
 			};
 			var wa = (e = Aa, t) => {
 					switch (t.type) {
-						case va.a:
+						case ja.a:
 							return {
 								fetched: !0, data: t.payload
 							};
@@ -12865,11 +13122,11 @@
 			};
 			var Pa = (e = Ca, t) => {
 					switch (t.type) {
-						case va.b:
+						case ja.b:
 							return {
 								fetched: !0, data: e.data
 							};
-						case va.c:
+						case ja.c:
 							return {
 								fetched: !0, data: t.payload
 							};
@@ -12883,7 +13140,7 @@
 					currentBadgeManagementScreen: _a,
 					currentModalArgs: Oa,
 					emotes: Ta,
-					gifs: ja,
+					gifs: va,
 					me: wa,
 					paymentSystems: Ra.b,
 					pointsCopy: Pa,
@@ -12999,10 +13256,10 @@
 					api: Fa,
 					models: Ba
 				}),
-				Va = r("./src/reddit/actions/experiments.ts");
-			const qa = /^experiment_(.*)$/i,
+				qa = r("./src/reddit/actions/experiments.ts");
+			const Va = /^experiment_(.*)$/i,
 				Ka = e => {
-					const t = e.match(qa);
+					const t = e.match(Va);
 					if (null !== t) return t[1]
 				},
 				Wa = {};
@@ -13021,7 +13278,7 @@
 								...s
 							}
 						}
-						case Va.b: {
+						case qa.b: {
 							const {
 								experimentName: r,
 								override: s
@@ -13339,9 +13596,9 @@
 				gc = r("./src/reddit/featureFlags/index.ts");
 			const Tc = new Set(["0", "disabled", "false", "off", ""]);
 			var Dc = e => !Tc.has(e.toLowerCase());
-			const jc = gc.a.reduce((e, t) => (e[t.toLowerCase()] = t, e), {}),
-				vc = gc.a.reduce((e, t) => (e[t] = null, e), {});
-			var Ac = (e = vc, t) => {
+			const vc = gc.a.reduce((e, t) => (e[t.toLowerCase()] = t, e), {}),
+				jc = gc.a.reduce((e, t) => (e[t] = null, e), {});
+			var Ac = (e = jc, t) => {
 					switch (t.type) {
 						case u.a: {
 							const r = Ms(t);
@@ -13350,7 +13607,7 @@
 								for (const e in r) {
 									const s = Object(gc.g)(e);
 									if (s) {
-										const n = jc[s.toLowerCase()];
+										const n = vc[s.toLowerCase()];
 										if (n) {
 											const s = r[e],
 												a = "string" != typeof s || Dc(s);
@@ -13498,8 +13755,8 @@
 					lastLoadedEnv: Gc
 				});
 			Object(Re.a)("FONTS_FONT_FILES_PARSED");
-			const Vc = [];
-			var qc = (e = Vc, t) => {
+			const qc = [];
+			var Vc = (e = qc, t) => {
 				switch (t.type) {
 					case "FONTS_FONT_FILES_PARSED":
 						return t.payload.fonts;
@@ -13801,7 +14058,7 @@
 						case K.SUBREDDIT_LOADED:
 						case G.b:
 						case G.f:
-						case ve.PAGE_LOADED: {
+						case je.PAGE_LOADED: {
 							if (e) return e;
 							const {
 								payload: r
@@ -13830,11 +14087,11 @@
 							return e
 					}
 				},
-				jo = r("./src/reddit/actions/jsApi.ts");
-			const vo = [];
-			var Ao = (e = vo, t) => {
+				vo = r("./src/reddit/actions/jsApi.ts");
+			const jo = [];
+			var Ao = (e = jo, t) => {
 					switch (t.type) {
-						case jo.a: {
+						case vo.a: {
 							const r = t.payload;
 							return -1 === e.indexOf(r) && (e = [...e, r]).sort(), e
 						}
@@ -13938,8 +14195,8 @@
 				switch (t.type) {
 					case Pe.f:
 					case Pe.g:
-					case q.SEARCH_PENDING:
-					case q.SEARCH_RESULTS_RECEIVED: {
+					case V.SEARCH_PENDING:
+					case V.SEARCH_RESULTS_RECEIVED: {
 						const {
 							key: r,
 							type: s
@@ -13950,7 +14207,7 @@
 						}
 					}
 					case Pe.e:
-					case q.SEARCH_FAILED: {
+					case V.SEARCH_FAILED: {
 						const {
 							key: r,
 							error: s,
@@ -13989,7 +14246,7 @@
 			var Ho = (e = Bo, t) => {
 					switch (t.type) {
 						case Pe.f:
-						case q.SEARCH_PENDING: {
+						case V.SEARCH_PENDING: {
 							const {
 								key: r,
 								type: s
@@ -14001,8 +14258,8 @@
 						}
 						case Pe.g:
 						case Pe.e:
-						case q.SEARCH_RESULTS_RECEIVED:
-						case q.SEARCH_FAILED: {
+						case V.SEARCH_RESULTS_RECEIVED:
+						case V.SEARCH_FAILED: {
 							const {
 								key: r,
 								type: s
@@ -14035,12 +14292,12 @@
 							return e
 					}
 				},
-				Vo = Object(T.c)({
+				qo = Object(T.c)({
 					error: Go,
 					pending: Ho
 				});
-			const qo = {};
-			var Ko = (e = qo, t) => {
+			const Vo = {};
+			var Ko = (e = Vo, t) => {
 				switch (t.type) {
 					case Pe.g: {
 						const {
@@ -14089,7 +14346,7 @@
 							[r]: e[r].concat(s)
 						}
 					}
-					case q.SEARCH_RESULTS_RECEIVED: {
+					case V.SEARCH_RESULTS_RECEIVED: {
 						const {
 							key: r,
 							listingOrder: s,
@@ -14108,7 +14365,7 @@
 			var Yo = (e = Qo, t) => {
 					switch (t.type) {
 						case Pe.g:
-						case q.SEARCH_RESULTS_RECEIVED: {
+						case V.SEARCH_RESULTS_RECEIVED: {
 							const {
 								key: r,
 								tokens: s,
@@ -14138,7 +14395,7 @@
 					}
 				},
 				zo = Object(T.c)({
-					api: Vo,
+					api: qo,
 					identifiers: $o,
 					fetchedTokens: Ko,
 					loadMore: Yo
@@ -14151,8 +14408,8 @@
 					switch (t.type) {
 						case Se.c:
 						case Se.b:
-						case je.c:
-						case je.b:
+						case ve.c:
+						case ve.b:
 						case K.SUBREDDIT_PENDING:
 						case K.SUBREDDIT_LOADED:
 						case Se.g:
@@ -14190,8 +14447,8 @@
 								[r]: null
 							}
 						}
-						case q.SEARCH_PENDING:
-						case q.SEARCH_RESULTS_RECEIVED:
+						case V.SEARCH_PENDING:
+						case V.SEARCH_RESULTS_RECEIVED:
 						case Pe.f:
 						case Pe.g: {
 							const {
@@ -14204,7 +14461,7 @@
 							}
 						}
 						case Se.a:
-						case je.a:
+						case ve.a:
 						case K.SUBREDDIT_FAILED:
 						case Se.e:
 						case De.g:
@@ -14227,7 +14484,7 @@
 								[r]: s
 							}
 						}
-						case q.SEARCH_FAILED:
+						case V.SEARCH_FAILED:
 						case Pe.e: {
 							const {
 								error: r,
@@ -14250,7 +14507,7 @@
 			var cd = (e = ad, t) => {
 					switch (t.type) {
 						case Se.c:
-						case je.c:
+						case ve.c:
 						case H.PROFILE_POSTS_PENDING:
 						case Ae.f:
 						case K.SUBREDDIT_PENDING:
@@ -14272,7 +14529,7 @@
 								[r]: !0
 							}
 						}
-						case q.SEARCH_PENDING:
+						case V.SEARCH_PENDING:
 						case Pe.f: {
 							const {
 								key: r,
@@ -14285,8 +14542,8 @@
 						}
 						case Se.b:
 						case Se.a:
-						case je.a:
-						case je.b:
+						case ve.a:
+						case ve.b:
 						case Ae.d:
 						case Ae.e:
 						case H.PROFILE_POSTS_FAILED:
@@ -14338,8 +14595,8 @@
 								...r
 							}
 						}
-						case q.SEARCH_RESULTS_RECEIVED:
-						case q.SEARCH_FAILED:
+						case V.SEARCH_RESULTS_RECEIVED:
+						case V.SEARCH_FAILED:
 						case Pe.g:
 						case Pe.e: {
 							const {
@@ -14396,7 +14653,7 @@
 					switch (t.type) {
 						case De.e:
 						case Se.b:
-						case je.b:
+						case ve.b:
 						case K.SUBREDDIT_LOADED:
 						case H.PROFILE_POSTS_LOADED:
 						case Zo.TOPIC_DATA_LOADED: {
@@ -14457,7 +14714,7 @@
 					switch (t.type) {
 						case Se.c:
 						case De.f:
-						case je.c:
+						case ve.c:
 						case H.PROFILE_POSTS_PENDING:
 						case K.SUBREDDIT_PENDING:
 						case Ae.f:
@@ -14476,7 +14733,7 @@
 						case De.e:
 						case sd.b:
 						case Se.b:
-						case je.b:
+						case ve.b:
 						case K.SUBREDDIT_LOADED:
 						case nd.j:
 						case Jo.b:
@@ -14523,7 +14780,7 @@
 								[r]: e[r].concat(s)
 							}
 						}
-						case q.SEARCH_RESULTS_RECEIVED: {
+						case V.SEARCH_RESULTS_RECEIVED: {
 							const {
 								key: r,
 								postOrder: s,
@@ -14598,7 +14855,7 @@
 			var gd = (e = Sd, t) => {
 				switch (t.type) {
 					case Se.b:
-					case je.b:
+					case ve.b:
 					case K.SUBREDDIT_LOADED:
 					case Ae.e:
 					case H.PROFILE_POSTS_LOADED:
@@ -14625,7 +14882,7 @@
 						} : Object(Ft.a)(e, r)
 					}
 					case Pe.g:
-					case q.SEARCH_RESULTS_RECEIVED: {
+					case V.SEARCH_RESULTS_RECEIVED: {
 						const {
 							key: r,
 							tokens: s,
@@ -14662,7 +14919,7 @@
 							return e
 					}
 				},
-				jd = Object(T.c)({
+				vd = Object(T.c)({
 					api: od,
 					endMarkers: bd,
 					fetchedTokens: md,
@@ -14671,10 +14928,10 @@
 					loadMore: gd,
 					pageInfo: Dd
 				}),
-				vd = Object(T.c)({
+				jd = Object(T.c)({
 					activeKey: Mo,
 					listingOrder: zo,
-					postOrder: jd
+					postOrder: vd
 				});
 			var Ad = (e = null, t) => {
 				switch (t.type) {
@@ -14778,8 +15035,8 @@
 					isMuted: Gd,
 					volume: Bd
 				}),
-				Vd = r("./src/reddit/actions/meta.ts");
-			const qd = {
+				qd = r("./src/reddit/actions/meta.ts");
+			const Vd = {
 				ampCid: void 0,
 				city: "",
 				country: "",
@@ -14798,30 +15055,30 @@
 				userAgent: "",
 				pageloadServerTime: 0
 			};
-			var Kd = (e = qd, t) => {
+			var Kd = (e = Vd, t) => {
 					switch (t.type) {
-						case Vd.b:
+						case qd.b:
 							return t.payload;
-						case Vd.a:
+						case qd.a:
 							return {
 								...e, ...t.payload
 							};
-						case Vd.e:
+						case qd.e:
 							return {
 								...e, locale: t.payload
 							};
-						case Vd.f:
+						case qd.f:
 							return {
 								...e, popularGeoFilter: t.payload
 							};
-						case Vd.c:
+						case qd.c:
 							return {
 								...e, platform: {
 									...e.platform,
 									pwa: !0
 								}
 							};
-						case Vd.d:
+						case qd.d:
 							return {
 								...e, platform: {
 									...e.platform,
@@ -14839,7 +15096,7 @@
 					case K.SUBREDDIT_LOADED:
 					case G.b:
 					case G.f:
-					case ve.PAGE_LOADED: {
+					case je.PAGE_LOADED: {
 						const {
 							payload: r
 						} = t;
@@ -15075,7 +15332,7 @@
 			};
 			var fi = (e = null, t) => {
 					switch (t.type) {
-						case je.b:
+						case ve.b:
 						case Te.a:
 						case Te.c:
 							return null;
@@ -15192,7 +15449,7 @@
 						return e
 				}
 			};
-			var ji = (e = !1, t) => {
+			var vi = (e = !1, t) => {
 					switch (t.type) {
 						case Te.k:
 						case Te.m:
@@ -15203,10 +15460,10 @@
 							return e
 					}
 				},
-				vi = Object(T.c)({
+				ji = Object(T.c)({
 					error: Ti,
 					fetched: Di,
-					pending: ji
+					pending: vi
 				});
 			var Ai = (e = null, t) => {
 				switch (t.type) {
@@ -15349,18 +15606,18 @@
 					fetched: Gi,
 					pending: Bi
 				}),
-				Vi = Object(T.c)({
+				qi = Object(T.c)({
 					addSubreddit: mi,
 					create: Oi,
 					deleteMulti: gi,
-					duplicate: vi,
+					duplicate: ji,
 					edit: Ci,
 					forUser: Ni,
 					recommendations: Mi,
 					removeSubreddit: Hi
 				}),
-				qi = r("./node_modules/lodash/isEqual.js"),
-				Ki = r.n(qi),
+				Vi = r("./node_modules/lodash/isEqual.js"),
+				Ki = r.n(Vi),
 				Wi = r("./node_modules/lodash/union.js"),
 				$i = r.n(Wi);
 
@@ -15382,7 +15639,7 @@
 			const zi = {};
 			var Xi = (e = zi, t) => {
 					switch (t.type) {
-						case je.b:
+						case ve.b:
 						case Te.r:
 						case Te.u:
 						case Yi.h: {
@@ -15434,7 +15691,7 @@
 			const eu = {};
 			var tu = (e = eu, t) => {
 				switch (t.type) {
-					case je.b:
+					case ve.b:
 					case Te.r:
 					case Te.u:
 					case Yi.h: {
@@ -15565,7 +15822,7 @@
 					}
 				},
 				nu = Object(T.c)({
-					api: Vi,
+					api: qi,
 					byUserId: Xi,
 					models: tu,
 					recommendations: su
@@ -15724,7 +15981,7 @@
 				Su = {};
 			var gu = (e = Su, t) => {
 				switch (t.type) {
-					case Va.a: {
+					case qa.a: {
 						const {
 							pageExperimentVariants: e
 						} = t.payload, r = e ? e.experiments : [];
@@ -15738,7 +15995,7 @@
 					byName: gu,
 					canonicalUrl: (e = null, t) => {
 						switch (t.type) {
-							case Va.a: {
+							case qa.a: {
 								const {
 									pageExperimentVariants: e
 								} = t.payload;
@@ -15752,8 +16009,8 @@
 				Du = Object(T.c)({
 					experiments: Tu
 				}),
-				ju = r("./node_modules/history/esm/history.js");
-			const vu = {
+				vu = r("./node_modules/history/esm/history.js");
+			const ju = {
 				allowNavigationCallback: null,
 				currentPage: null,
 				lastPage: null,
@@ -15761,7 +16018,7 @@
 				sessionReferrer: null,
 				metas: {}
 			};
-			var Au = (e = vu, t) => {
+			var Au = (e = ju, t) => {
 				switch (t.type) {
 					case u.a: {
 						const r = e.currentPage,
@@ -15774,7 +16031,7 @@
 								key: c
 							} = a;
 						if (void 0 === c) return e;
-						const o = Object(ju.e)(a),
+						const o = Object(vu.e)(a),
 							d = n ? ((e, t, r, s) => {
 								const {
 									action: n,
@@ -16023,7 +16280,7 @@
 										postId: t,
 										options: c,
 										totalVoters: i,
-										type: vn.a.GA,
+										type: jn.a.GA,
 										isPrediction: a,
 										totalStakeAmount: d,
 										tournamentId: u,
@@ -16136,7 +16393,7 @@
 				switch (t.type) {
 					case d.k: {
 						const {
-							[vn.b.ByVoters]: r, pollId: s
+							[jn.b.ByVoters]: r, pollId: s
 						} = t.payload.pollResults;
 						return {
 							...e,
@@ -16178,7 +16435,7 @@
 							const t = Object.keys(r).reduce((e, t) => {
 								const s = r[t],
 									{
-										[vn.b.ByVoters]: n,
+										[jn.b.ByVoters]: n,
 										pollId: a
 									} = s.pollResults;
 								return e[a] = n, e
@@ -16224,11 +16481,11 @@
 				}
 			};
 			const Hu = {};
-			var Vu = (e = Hu, t) => {
+			var qu = (e = Hu, t) => {
 					switch (t.type) {
 						case d.k: {
 							const {
-								[vn.b.ByVotingPower]: r, pollId: s
+								[jn.b.ByVotingPower]: r, pollId: s
 							} = t.payload.pollResults;
 							return {
 								...e,
@@ -16248,7 +16505,7 @@
 								const t = Object.keys(r).reduce((e, t) => {
 									const s = r[t],
 										{
-											[vn.b.ByVotingPower]: n,
+											[jn.b.ByVotingPower]: n,
 											pollId: a
 										} = s.pollResults;
 									return e[a] = n, e
@@ -16264,9 +16521,9 @@
 							return e
 					}
 				},
-				qu = Object(T.c)({
+				Vu = Object(T.c)({
 					byVoters: Bu,
-					byVotingPower: Vu
+					byVotingPower: qu
 				});
 			const Ku = {};
 			var Wu = (e = Ku, t) => {
@@ -16288,7 +16545,7 @@
 				$u = Object(T.c)({
 					api: Nu,
 					models: Fu,
-					results: qu,
+					results: Vu,
 					rewards: Wu
 				});
 			const Qu = {
@@ -16388,7 +16645,7 @@
 				};
 			var rl = (e = el, t) => {
 				switch (t.type) {
-					case ve.PAGE_LOADED:
+					case je.PAGE_LOADED:
 					case De.e:
 					case De.h:
 					case B.b:
@@ -16399,7 +16656,7 @@
 					case H.MORE_POSTS_LOADED:
 					case K.SUBREDDIT_LOADED:
 					case Se.b:
-					case je.b:
+					case ve.b:
 					case K.SUBREDDIT_LOADED:
 					case G.b:
 					case G.f:
@@ -16411,7 +16668,7 @@
 					case $.i:
 					case Pe.g:
 					case we.b:
-					case q.SEARCH_RESULTS_RECEIVED:
+					case V.SEARCH_RESULTS_RECEIVED:
 					case Mr.f: {
 						const {
 							collections: r,
@@ -16537,7 +16794,7 @@
 			const sl = {};
 			var nl = (e = sl, t) => {
 					switch (t.type) {
-						case ve.PAGE_LOADED:
+						case je.PAGE_LOADED:
 						case Mr.f: {
 							const {
 								collections: r
@@ -16612,7 +16869,7 @@
 				};
 			var ll = (e = dl, t) => {
 				switch (t.type) {
-					case ve.PAGE_LOADED:
+					case je.PAGE_LOADED:
 					case Se.f:
 					case De.e:
 					case De.h:
@@ -16621,15 +16878,15 @@
 					case G.b:
 					case G.f:
 					case Se.b:
-					case je.b:
-					case q.SEARCH_RESULTS_RECEIVED:
+					case ve.b:
+					case V.SEARCH_RESULTS_RECEIVED:
 					case K.SUBREDDIT_LOADED:
 					case B.b:
 					case B.e:
-					case V.c:
-					case V.i:
-					case V.e:
-					case V.g:
+					case q.c:
+					case q.i:
+					case q.e:
+					case q.g:
 					case W.e:
 					case we.b:
 					case we.b:
@@ -16826,7 +17083,7 @@
 					case "RECOMMENDED_POSTS_LOADED":
 					case $.i:
 					case Pe.g:
-					case q.SEARCH_RESULTS_RECEIVED:
+					case V.SEARCH_RESULTS_RECEIVED:
 						return k()({
 							...e
 						}, t.payload.postInstances, (e, t) => {
@@ -16845,8 +17102,8 @@
 					}
 				},
 				Dl = r("./src/reddit/actions/isTrackingCrossposts.ts");
-			const jl = {};
-			var vl = (e = jl, t) => {
+			const vl = {};
+			var jl = (e = vl, t) => {
 				switch (t.type) {
 					case Dl.a: {
 						const r = t.payload;
@@ -16934,8 +17191,8 @@
 			var Gl = r("./src/reddit/models/Gold/Gild/index.tsx"),
 				Bl = r("./src/reddit/models/Media/index.ts"),
 				Hl = r("./src/reddit/models/ModQueue/index.ts"),
-				Vl = r("./src/reddit/models/Post/index.ts"),
-				ql = r("./src/reddit/models/Vote/index.ts"),
+				ql = r("./src/reddit/models/Post/index.ts"),
+				Vl = r("./src/reddit/models/Vote/index.ts"),
 				Kl = r("./src/reddit/actions/subredditDuplicates.ts");
 
 			function Wl({
@@ -17083,7 +17340,7 @@
 								})(t);
 							if (r && r.instanceId && s && s.partialPostId) {
 								const t = r.instanceId,
-									n = Object(Vl.s)(s.partialPostId);
+									n = Object(ql.s)(s.partialPostId);
 								if (e[n] && e[t]) return {
 									...e,
 									[n]: op(e[n], e[t])
@@ -17103,7 +17360,7 @@
 						return Fl(e, t.payload);
 					case Kl.a:
 						return Fl(e, t.payload.posts);
-					case ve.PAGE_LOADED:
+					case je.PAGE_LOADED:
 					case rd.c:
 					case sd.b:
 					case De.e:
@@ -17116,7 +17373,7 @@
 					case H.MORE_POSTS_LOADED:
 					case K.SUBREDDIT_LOADED:
 					case Se.b:
-					case je.b:
+					case ve.b:
 					case Jo.b:
 					case Te.r:
 					case Se.f:
@@ -17163,7 +17420,7 @@
 					}
 					case Ie.e:
 					case Pe.g:
-					case q.SEARCH_RESULTS_RECEIVED: {
+					case V.SEARCH_RESULTS_RECEIVED: {
 						const r = Yl(t.payload.meta),
 							s = Lt()(t.payload.posts, cp([r, ap, np, ep, sp(e)]));
 						return k()({
@@ -17189,7 +17446,7 @@
 						} = t.payload, n = e[r];
 						return n ? {
 							...e,
-							[r]: Object(ql.c)(n, s)
+							[r]: Object(Vl.c)(n, s)
 						} : e
 					}
 					case U.b:
@@ -17424,10 +17681,10 @@
 							...e
 						} : e
 					}
-					case V.c:
-					case V.i:
-					case V.e:
-					case V.g:
+					case q.c:
+					case q.i:
+					case q.e:
+					case q.g:
 					case kl.b:
 						return {
 							...Lt()(t.payload.posts, cp([ap, ep])), ...e
@@ -17619,7 +17876,7 @@
 			const _p = Ep()();
 			var Op = (e = _p, t) => {
 				switch (t.type) {
-					case ve.PAGE_LOADED:
+					case je.PAGE_LOADED:
 					case _s.h:
 					case _s.a:
 					case _s.m:
@@ -17700,7 +17957,7 @@
 						return e
 				}
 			};
-			const jp = {
+			const vp = {
 				standalonePosts: {
 					POSTS_LOADED: _s.m,
 					postIdsKey: "standalonePostsIds",
@@ -17713,11 +17970,11 @@
 				}
 			};
 
-			function vp(e) {
+			function jp(e) {
 				const t = {};
 				return (r = t, s) => {
 					switch (s.type) {
-						case jp[e].POSTS_LOADED:
+						case vp[e].POSTS_LOADED:
 						case _s.f: {
 							const {
 								subredditInfoById: t
@@ -17751,7 +18008,7 @@
 							} = s.payload;
 							return Object.keys(r).reduce((t, s) => (s !== e && (t[s] = r[s]), t), {})
 						}
-						case jp[e].MUTATION_SUCCEEDED: {
+						case vp[e].MUTATION_SUCCEEDED: {
 							let t;
 							switch (e) {
 								case "recurringPosts":
@@ -17787,7 +18044,7 @@
 			function wp(e) {
 				return (t = Ap, r) => {
 					switch (r.type) {
-						case jp[e].POSTS_LOADED:
+						case vp[e].POSTS_LOADED:
 						case _s.f: {
 							const {
 								subredditInfoById: s
@@ -17819,11 +18076,11 @@
 			function Lp(e) {
 				return (t = Pp, r) => {
 					switch (r.type) {
-						case jp[e].POSTS_LOADED:
+						case vp[e].POSTS_LOADED:
 						case _s.f: {
 							const {
 								subredditInfoById: s
-							} = r.payload, n = s.id, a = s.scheduledPosts[jp[e].postIdsKey];
+							} = r.payload, n = s.id, a = s.scheduledPosts[vp[e].postIdsKey];
 							return {
 								...t,
 								[n]: Cp()([...t[n] || [], ...a])
@@ -17855,13 +18112,13 @@
 				}
 			}
 			var Np = Object(T.c)({
-					models: vp("recurringPosts"),
+					models: jp("recurringPosts"),
 					pageInfo: wp("recurringPosts"),
 					postOrder: Lp("recurringPosts"),
 					editModal: Dp
 				}),
 				kp = Object(T.c)({
-					models: vp("standalonePosts"),
+					models: jp("standalonePosts"),
 					pageInfo: wp("standalonePosts"),
 					postOrder: Lp("standalonePosts")
 				}),
@@ -17920,11 +18177,11 @@
 					api: Fp,
 					list: Bp
 				}),
-				Vp = r("./src/reddit/actions/video.ts");
-			const qp = {};
-			var Kp = (e = qp, t) => {
+				qp = r("./src/reddit/actions/video.ts");
+			const Vp = {};
+			var Kp = (e = Vp, t) => {
 				switch (t.type) {
-					case Vp.e: {
+					case qp.e: {
 						const {
 							auto: r,
 							postId: s
@@ -17941,7 +18198,7 @@
 			const Wp = {};
 			var $p = (e = Wp, t) => {
 				switch (t.type) {
-					case Vp.a: {
+					case qp.a: {
 						const {
 							postId: r,
 							isBuffering: s
@@ -17958,7 +18215,7 @@
 			const Qp = {};
 			var Yp = (e = Qp, t) => {
 				switch (t.type) {
-					case Vp.b: {
+					case qp.b: {
 						const {
 							postId: r
 						} = t.payload;
@@ -17974,7 +18231,7 @@
 			const zp = {};
 			var Xp = (e = zp, t) => {
 				switch (t.type) {
-					case Vp.c: {
+					case qp.c: {
 						const {
 							postId: r,
 							time: s
@@ -17993,7 +18250,7 @@
 			};
 			var Zp = (e = Jp, t) => {
 				switch (t.type) {
-					case Vp.l:
+					case qp.l:
 						return {
 							...e, mutedInFeed: t.payload
 						};
@@ -18003,13 +18260,13 @@
 			};
 			var eb = (e = null, t) => {
 				switch (t.type) {
-					case Vp.k: {
+					case qp.k: {
 						const {
 							postId: e
 						} = t.payload;
 						return e
 					}
-					case Vp.d:
+					case qp.d:
 						return null;
 					default:
 						return e
@@ -18018,7 +18275,7 @@
 			const tb = {};
 			var rb = (e = tb, t) => {
 				switch (t.type) {
-					case Vp.o: {
+					case qp.o: {
 						const {
 							postId: r
 						} = t.payload;
@@ -18027,7 +18284,7 @@
 							[r]: !1
 						} : e
 					}
-					case Vp.e: {
+					case qp.e: {
 						const {
 							postId: r
 						} = t.payload;
@@ -18042,7 +18299,7 @@
 			const sb = {};
 			var nb = (e = sb, t) => {
 				switch (t.type) {
-					case Vp.h: {
+					case qp.h: {
 						const {
 							postId: r,
 							time: s
@@ -18058,7 +18315,7 @@
 							}
 						}
 					}
-					case Vp.f: {
+					case qp.f: {
 						const {
 							postId: r,
 							time: s
@@ -18078,7 +18335,7 @@
 			const ab = {};
 			var cb = (e = ab, t) => {
 				switch (t.type) {
-					case Vp.j: {
+					case qp.j: {
 						const {
 							postId: r,
 							metadata: s
@@ -18095,7 +18352,7 @@
 			const ob = {};
 			var db = (e = ob, t) => {
 				switch (t.type) {
-					case Vp.p: {
+					case qp.p: {
 						const {
 							postId: r
 						} = t.payload;
@@ -18104,7 +18361,7 @@
 							[r]: !1
 						} : e
 					}
-					case Vp.g: {
+					case qp.g: {
 						const {
 							postId: r
 						} = t.payload;
@@ -18119,7 +18376,7 @@
 			const ib = {};
 			var ub = (e = ib, t) => {
 				switch (t.type) {
-					case Vp.i: {
+					case qp.i: {
 						const {
 							postId: r,
 							isPlaying: s
@@ -18136,7 +18393,7 @@
 			const lb = {};
 			var pb = (e = lb, t) => {
 					switch (t.type) {
-						case Vp.m: {
+						case qp.m: {
 							const {
 								postId: r
 							} = t.payload;
@@ -18153,7 +18410,7 @@
 			const fb = {};
 			var mb = (e = fb, t) => {
 					switch (t.type) {
-						case Vp.n: {
+						case qp.n: {
 							const {
 								postId: r,
 								time: s
@@ -18189,7 +18446,7 @@
 					followed: Il,
 					instances: gl,
 					isAnimatingUpvote: Tl,
-					isTrackingCrossposts: vl,
+					isTrackingCrossposts: jl,
 					metaMap: wl,
 					models: ip,
 					modToMemberShare: up,
@@ -18285,12 +18542,12 @@
 							return e
 					}
 				},
-				jb = Object(T.c)({
+				vb = Object(T.c)({
 					error: gb,
 					pending: Db
 				});
-			const vb = {};
-			var Ab = (e = vb, t) => {
+			const jb = {};
+			var Ab = (e = jb, t) => {
 				switch (t.type) {
 					case l.d: {
 						const {
@@ -18372,7 +18629,7 @@
 					pending: Rb
 				}),
 				Pb = Object(T.c)({
-					fetch: jb,
+					fetch: vb,
 					purchase: Cb
 				});
 			var Lb = (e = null, t) => {
@@ -18471,7 +18728,7 @@
 					pending: Gb
 				});
 			const Hb = {};
-			var Vb = (e = Hb, t) => {
+			var qb = (e = Hb, t) => {
 					switch (t.type) {
 						case B.e: {
 							const {
@@ -18497,11 +18754,11 @@
 							return e
 					}
 				},
-				qb = r("./src/reddit/actions/comment/list.ts");
+				Vb = r("./src/reddit/actions/comment/list.ts");
 			const Kb = {};
 			var Wb = (e = Kb, t) => {
 				switch (t.type) {
-					case qb.a: {
+					case Vb.a: {
 						const {
 							listingKey: r,
 							listingName: s
@@ -18511,7 +18768,7 @@
 							[r]: s
 						}
 					}
-					case qb.b: {
+					case Vb.b: {
 						const {
 							listingKey: r
 						} = t.payload;
@@ -18576,7 +18833,7 @@
 					api: Bb,
 					endMarkers: Wb,
 					fetchedTokens: Qb,
-					commentIds: Vb,
+					commentIds: qb,
 					loadMore: zb
 				}),
 				Jb = r("./src/reddit/actions/pages/profileModSettings.ts");
@@ -18599,8 +18856,8 @@
 			const nf = {};
 			var af = (e = nf, t) => {
 				switch (t.type) {
-					case V.a:
-					case V.d: {
+					case q.a:
+					case q.d: {
 						const {
 							listingKey: r,
 							error: s
@@ -18610,12 +18867,12 @@
 							[r]: s
 						}
 					}
-					case V.b:
-					case V.c:
-					case V.i:
-					case V.f:
-					case V.e:
-					case V.g: {
+					case q.b:
+					case q.c:
+					case q.i:
+					case q.f:
+					case q.e:
+					case q.g: {
 						const {
 							listingKey: r
 						} = t.payload;
@@ -18631,8 +18888,8 @@
 			const cf = {};
 			var of = (e = cf, t) => {
 				switch (t.type) {
-					case V.b:
-					case V.f: {
+					case q.b:
+					case q.f: {
 						const {
 							listingKey: r
 						} = t.payload;
@@ -18641,12 +18898,12 @@
 							[r]: !0
 						}
 					}
-					case V.a:
-					case V.d:
-					case V.c:
-					case V.i:
-					case V.e:
-					case V.g: {
+					case q.a:
+					case q.d:
+					case q.c:
+					case q.i:
+					case q.e:
+					case q.g: {
 						const {
 							listingKey: r
 						} = t.payload;
@@ -18665,10 +18922,10 @@
 			const uf = {};
 			var lf = (e = uf, t) => {
 				switch (t.type) {
-					case V.c:
-					case V.i:
-					case V.e:
-					case V.g: {
+					case q.c:
+					case q.i:
+					case q.e:
+					case q.g: {
 						const {
 							listingKey: r,
 							itemIds: s
@@ -18685,10 +18942,10 @@
 			const pf = {};
 			var bf = (e = pf, t) => {
 					switch (t.type) {
-						case V.i:
-						case V.c:
-						case V.e:
-						case V.g: {
+						case q.i:
+						case q.c:
+						case q.e:
+						case q.g: {
 							const {
 								pageInfo: r,
 								listingKey: s
@@ -18711,7 +18968,7 @@
 			const yf = {};
 			var Ef = (e = yf, t) => {
 					switch (t.type) {
-						case q.SEARCH_RESULTS_RECEIVED:
+						case V.SEARCH_RESULTS_RECEIVED:
 						case Pe.g:
 							return {
 								...e, ...t.payload.profileAboutInfo
@@ -18763,10 +19020,10 @@
 					case Se.b:
 					case B.b:
 					case B.e:
-					case V.c:
-					case V.i:
-					case V.e:
-					case V.g:
+					case q.c:
+					case q.i:
+					case q.e:
+					case q.g:
 					case Ae.b:
 					case Ae.e:
 					case H.PROFILE_POSTS_LOADED:
@@ -18781,12 +19038,12 @@
 					case Yi.m:
 					case W.b:
 					case W.e:
-					case q.SEARCH_RESULTS_RECEIVED:
-					case ve.PAGE_LOADED:
-					case Vr.e:
+					case V.SEARCH_RESULTS_RECEIVED:
+					case je.PAGE_LOADED:
+					case qr.e:
 					case Ns.PAGE_LOADED:
 					case K.SUBREDDIT_LOADED:
-					case je.b:
+					case ve.b:
 					case "RECOMMENDED_POSTS_LOADED":
 					case Ji.c:
 						return Object(L.merge)(e, t.payload.profiles);
@@ -18907,10 +19164,10 @@
 						}
 					}
 					case Yi.e:
-					case V.c:
-					case V.i:
-					case V.e:
-					case V.g: {
+					case q.c:
+					case q.i:
+					case q.e:
+					case q.g: {
 						const {
 							profileName: r,
 							moderatedSubredditIds: s
@@ -18924,8 +19181,8 @@
 						return e
 				}
 			};
-			const jf = {};
-			var vf = (e = jf, t) => {
+			const vf = {};
+			var jf = (e = vf, t) => {
 					switch (t.type) {
 						case Yi.e: {
 							const {
@@ -18937,8 +19194,8 @@
 								[s]: r
 							}
 						}
-						case V.c:
-						case V.i: {
+						case q.c:
+						case q.i: {
 							const {
 								moderatedPageInfo: r,
 								profileName: s
@@ -18955,7 +19212,7 @@
 				Af = Object(T.c)({
 					api: gf,
 					models: Df,
-					pageInfo: vf
+					pageInfo: jf
 				});
 			const wf = {};
 			var Rf = (e = wf, t) => {
@@ -19098,11 +19355,11 @@
 					initialData: Ff,
 					pending: Bf
 				}),
-				Vf = r("./src/reddit/actions/trophyCase.ts");
-			const qf = {};
-			var Kf, Wf, $f = (e = qf, t) => {
+				qf = r("./src/reddit/actions/trophyCase.ts");
+			const Vf = {};
+			var Kf, Wf, $f = (e = Vf, t) => {
 					switch (t.type) {
-						case Vf.a: {
+						case qf.a: {
 							const {
 								profileId: r,
 								trophyIds: s
@@ -19516,10 +19773,10 @@
 						return e
 				}
 			};
-			const jm = {
+			const vm = {
 				reported: []
 			};
-			var vm = (e = jm, t) => {
+			var jm = (e = vm, t) => {
 				switch (t.type) {
 					case p.d:
 						return {
@@ -19569,7 +19826,7 @@
 					listings: Om,
 					models: gm,
 					preloads: Dm,
-					reports: vm,
+					reports: jm,
 					theaterSettings: wm,
 					userSettings: Cm,
 					automuteLevels: um
@@ -19643,7 +19900,7 @@
 						return e
 				}
 			};
-			var Vm = (e = !1, t) => {
+			var qm = (e = !1, t) => {
 					switch (t.type) {
 						case Fm.c:
 							return !0;
@@ -19654,10 +19911,10 @@
 							return e
 					}
 				},
-				qm = Object(T.c)({
+				Vm = Object(T.c)({
 					error: Bm,
 					pending: Hm,
-					success: Vm
+					success: qm
 				}),
 				Km = r("./src/reddit/actions/reportPageRules/constants.ts");
 			const Wm = [];
@@ -19670,7 +19927,7 @@
 					}
 				},
 				Qm = Object(T.c)({
-					reportPageApi: qm,
+					reportPageApi: Vm,
 					reportPageRules: $m,
 					initialReason: Gm
 				}),
@@ -19758,7 +20015,7 @@
 			};
 			var ay = (e = null, t) => {
 				switch (t.type) {
-					case q.SEARCH_RESULTS_RECEIVED:
+					case V.SEARCH_RESULTS_RECEIVED:
 					case Pe.j: {
 						const {
 							searchQuery: e
@@ -19813,7 +20070,7 @@
 			const py = {};
 			var by = (e = py, t) => {
 					switch (t.type) {
-						case q.SEARCH_RESULTS_RECEIVED: {
+						case V.SEARCH_RESULTS_RECEIVED: {
 							const {
 								viewTreatment: r,
 								key: s
@@ -19848,7 +20105,7 @@
 			const yy = {};
 			var Ey = (e = yy, t) => {
 				switch (t.type) {
-					case q.SEARCH_RESULTS_RECEIVED: {
+					case V.SEARCH_RESULTS_RECEIVED: {
 						const {
 							categoryName: r,
 							key: s,
@@ -19894,7 +20151,7 @@
 			const _y = {};
 			var Oy = (e = _y, t) => {
 				switch (t.type) {
-					case q.SEARCH_RESULTS_RECEIVED: {
+					case V.SEARCH_RESULTS_RECEIVED: {
 						const {
 							key: r,
 							searchDiscoveryUnits: s
@@ -19911,7 +20168,7 @@
 			const hy = {};
 			var Iy = (e = hy, t) => {
 					switch (t.type) {
-						case q.SEARCH_RESULTS_RECEIVED: {
+						case V.SEARCH_RESULTS_RECEIVED: {
 							const {
 								key: r,
 								searchDiscoveryUnitOrder: s
@@ -19941,7 +20198,7 @@
 				},
 				Ty = r("./src/reddit/actions/seo/linksModule.ts");
 			const Dy = {};
-			var jy = (e = Dy, t) => {
+			var vy = (e = Dy, t) => {
 					switch (t.type) {
 						case Ty.b:
 							return Array.isArray(t.payload) && 0 !== t.payload.length ? {
@@ -19960,11 +20217,11 @@
 							return e
 					}
 				},
-				vy = r("./src/reddit/actions/seo/topicLinks.ts");
+				jy = r("./src/reddit/actions/seo/topicLinks.ts");
 			const Ay = {};
 			var wy = (e = Ay, t) => {
 					switch (t.type) {
-						case vy.a:
+						case jy.a:
 							return t.payload && t.payload.id && t.payload.data ? {
 								...e,
 								subreddits: {
@@ -19978,7 +20235,7 @@
 				},
 				Ry = Object(T.c)({
 					crawler: gy,
-					linksModule: jy,
+					linksModule: vy,
 					topicLinks: wy
 				}),
 				Cy = r("./src/reddit/actions/shortcuts/constants.ts");
@@ -20053,17 +20310,17 @@
 					}
 				},
 				Hy = r("./src/reddit/reducers/sidebarPromotedPosts/models/index.ts"),
-				Vy = Object(T.c)({
+				qy = Object(T.c)({
 					firstFetch: By,
 					models: Hy.b
 				}),
-				qy = r("./src/reddit/actions/streaming/modSettings.ts");
+				Vy = r("./src/reddit/actions/streaming/modSettings.ts");
 			var Ky = (e = null, t) => {
 				switch (t.type) {
-					case qy.b:
-					case qy.c:
+					case Vy.b:
+					case Vy.c:
 						return null;
-					case qy.a: {
+					case Vy.a: {
 						const {
 							error: e
 						} = t.payload;
@@ -20075,10 +20332,10 @@
 			};
 			var Wy = (e = !1, t) => {
 					switch (t.type) {
-						case qy.b:
+						case Vy.b:
 							return !0;
-						case qy.c:
-						case qy.a:
+						case Vy.c:
+						case Vy.a:
 							return !1;
 						default:
 							return e
@@ -20170,9 +20427,9 @@
 						case K.SUBREDDIT_LOADED:
 						case G.b:
 						case G.f:
-						case q.SEARCH_RESULTS_RECEIVED:
+						case V.SEARCH_RESULTS_RECEIVED:
 						case Pe.g:
-						case ve.PAGE_LOADED:
+						case je.PAGE_LOADED:
 						case Ns.PAGE_LOADED: {
 							const {
 								payload: r
@@ -20272,7 +20529,7 @@
 						case K.SUBREDDIT_LOADED:
 						case G.b:
 						case G.f:
-						case ve.PAGE_LOADED:
+						case je.PAGE_LOADED:
 						case Ns.PAGE_LOADED: {
 							const {
 								payload: r
@@ -20288,7 +20545,7 @@
 							}
 						}
 						case Pe.g:
-						case q.SEARCH_RESULTS_RECEIVED: {
+						case V.SEARCH_RESULTS_RECEIVED: {
 							const {
 								payload: r
 							} = t;
@@ -20464,11 +20721,11 @@
 							return e
 					}
 				},
-				jE = Object(T.c)({
+				vE = Object(T.c)({
 					api: gE,
 					models: DE
 				}),
-				vE = r("./src/reddit/actions/category/constants.ts"),
+				jE = r("./src/reddit/actions/category/constants.ts"),
 				AE = r("./src/reddit/actions/subredditMention/constants.ts");
 			const wE = {};
 			var RE = (e = wE, t) => {
@@ -20476,10 +20733,10 @@
 					case AE.d:
 					case G.b:
 					case G.f:
-					case q.SEARCH_RESULTS_RECEIVED:
+					case V.SEARCH_RESULTS_RECEIVED:
 					case K.SUBREDDIT_FAILED:
 					case K.SUBREDDIT_LOADED:
-					case ve.PAGE_LOADED:
+					case je.PAGE_LOADED:
 					case Ns.PAGE_LOADED:
 					case B.b:
 					case B.e:
@@ -20524,7 +20781,7 @@
 						return n.length ? n.reduce((e, t) => Object(L.setIn)(e, [t.id, "userIsSubscriber"], s), e) : e
 					}
 					case Rc.g:
-					case vE.f:
+					case jE.f:
 					case nd.g:
 					case nd.o: {
 						const {
@@ -20716,11 +20973,11 @@
 							return e
 					}
 				},
-				VE = Object(T.c)({
+				qE = Object(T.c)({
 					pending: HE
 				});
-			const qE = {};
-			var KE = (e = qE, t) => {
+			const VE = {};
+			var KE = (e = VE, t) => {
 				switch (t.type) {
 					case $.l:
 					case $.m: {
@@ -21022,7 +21279,7 @@
 				g_ = Object(T.c)({
 					about: NE,
 					create: BE,
-					inlineEditing: VE,
+					inlineEditing: qE,
 					models: QE,
 					onboarding: XE,
 					productOffers: e_,
@@ -21035,8 +21292,8 @@
 				}),
 				T_ = r("./node_modules/lodash/isNil.js"),
 				D_ = r.n(T_);
-			const j_ = {};
-			var v_ = (e = j_, t) => {
+			const v_ = {};
+			var j_ = (e = v_, t) => {
 					switch (t.type) {
 						case $.d: {
 							const {
@@ -21053,12 +21310,12 @@
 					}
 				},
 				A_ = Object(T.c)({
-					meta: v_
+					meta: j_
 				});
 			const w_ = {};
 			var R_ = (e = w_, t) => {
 				switch (t.type) {
-					case vE.f: {
+					case jE.f: {
 						const {
 							categoryId: r,
 							subredditIds: s
@@ -21172,8 +21429,8 @@
 				H_ = Object(T.c)({
 					models: B_
 				});
-			const V_ = {};
-			var q_ = (e = V_, t) => {
+			const q_ = {};
+			var V_ = (e = q_, t) => {
 				switch (t.type) {
 					case d.a: {
 						const {
@@ -21264,7 +21521,7 @@
 					}
 				},
 				X_ = Object(T.c)({
-					assets: q_,
+					assets: V_,
 					communityRaw: W_,
 					distributions: Q_,
 					releaseNotes: z_
@@ -21313,7 +21570,7 @@
 						})(e, t.payload.subreddits || {});
 					case Lm.b:
 					case AE.d:
-					case vE.f:
+					case jE.f:
 					case Se.f:
 					case Rc.g:
 					case rd.c:
@@ -21328,22 +21585,22 @@
 					case G.b:
 					case G.f:
 					case Se.b:
-					case je.b:
+					case ve.b:
 					case B.b:
 					case B.e:
-					case V.c:
-					case V.i:
-					case V.e:
-					case V.g:
+					case q.c:
+					case q.i:
+					case q.e:
+					case q.g:
 					case Ae.b:
 					case Ae.e:
 					case H.MORE_POSTS_LOADED:
 					case H.PROFILE_POSTS_LOADED:
 					case Yi.e:
-					case q.SEARCH_RESULTS_RECEIVED:
+					case V.SEARCH_RESULTS_RECEIVED:
 					case K.SUBREDDIT_LOADED:
-					case ve.PAGE_LOADED:
-					case Vr.e:
+					case je.PAGE_LOADED:
+					case qr.e:
 					case Ns.PAGE_LOADED:
 					case Yi.m:
 					case W.b:
@@ -21777,9 +22034,9 @@
 							return e
 					}
 				},
-				jO = r("./src/lib/makeProductOfferKey/index.ts");
-			const vO = {};
-			var AO = (e = vO, t) => {
+				vO = r("./src/lib/makeProductOfferKey/index.ts");
+			const jO = {};
+			var AO = (e = jO, t) => {
 				switch (t.type) {
 					case ee.cb:
 					case ee.pb: {
@@ -21789,7 +22046,7 @@
 						} = t.payload;
 						if (!(null == s ? void 0 : s.length)) return e;
 						const n = s.reduce((e, t) => {
-							const s = Object(jO.a)(t.type, r);
+							const s = Object(vO.a)(t.type, r);
 							return e[s] = e[s] ? [...e[s], t] : [t], e
 						}, {});
 						return {
@@ -21991,7 +22248,7 @@
 				}
 			};
 			const HO = {};
-			var VO = (e = HO, t) => {
+			var qO = (e = HO, t) => {
 				switch (t.type) {
 					case c_.c: {
 						const e = t.payload;
@@ -22025,8 +22282,8 @@
 						return e
 				}
 			};
-			const qO = {};
-			var KO = (e = qO, t) => {
+			const VO = {};
+			var KO = (e = VO, t) => {
 				switch (t.type) {
 					case nd.o: {
 						const {
@@ -22161,7 +22418,7 @@
 					rankings: UO,
 					rankingsPageInfo: FO,
 					rules: BO,
-					settings: VO,
+					settings: qO,
 					similar: KO,
 					survey: $O,
 					topContent: YO,
@@ -22387,7 +22644,7 @@
 							}) => e.toLowerCase()).sort(hh(r));
 							return Ki()(e, s) ? e : s
 						}
-						case je.b: {
+						case ve.b: {
 							const {
 								account: r,
 								multireddits: s,
@@ -22462,8 +22719,8 @@
 						return e
 				}
 			};
-			const jh = [];
-			var vh = (e = jh, t) => {
+			const vh = [];
+			var jh = (e = vh, t) => {
 					switch (t.type) {
 						case Yi.n: {
 							const {
@@ -22498,7 +22755,7 @@
 					favoriteSubredditOrder: _h,
 					multiredditOrder: Ih,
 					profileOrder: Dh,
-					subredditOrder: vh
+					subredditOrder: jh
 				}),
 				wh = r("./src/reddit/actions/survey/constants.ts");
 			var Rh = (e = null, t) => {
@@ -22600,7 +22857,7 @@
 				pending: !1,
 				error: !1
 			};
-			var Vh = (e = Hh, t) => {
+			var qh = (e = Hh, t) => {
 				switch (t.type) {
 					case Uh.t:
 						return {
@@ -22621,11 +22878,11 @@
 						return e
 				}
 			};
-			const qh = {
+			const Vh = {
 				pending: !1,
 				error: !1
 			};
-			var Kh = (e = qh, t) => {
+			var Kh = (e = Vh, t) => {
 				switch (t.type) {
 					case Uh.v:
 						return {
@@ -22668,7 +22925,7 @@
 				Qh = Object(T.c)({
 					create: Fh,
 					deleteTag: Bh,
-					fetch: Vh,
+					fetch: qh,
 					update: Kh,
 					updatePrimaryTag: $h
 				});
@@ -22922,15 +23179,15 @@
 						case G.h:
 						case Se.b:
 						case K.SUBREDDIT_LOADED:
-						case je.b:
-						case je.a:
+						case ve.b:
+						case ve.a:
 						case Se.f:
 						case oI.b:
 						case $.i:
 						case Pe.g:
-						case q.SEARCH_RESULTS_RECEIVED:
+						case V.SEARCH_RESULTS_RECEIVED:
 						case Pr.i:
-						case ve.PAGE_LOADED:
+						case je.PAGE_LOADED:
 						case Ns.PAGE_LOADED:
 						case iI.c:
 							if (t.payload && t.payload.preferences && "nightmode" in t.payload.preferences) {
@@ -23094,16 +23351,16 @@
 			const gI = Object(II.c)(SI.c.requestedActionType, SI.c.succeededActionType, SI.c.failedActionType),
 				TI = Object(II.c)(SI.a.requestedActionType, SI.a.succeededActionType, SI.a.failedActionType),
 				DI = Object(II.c)(SI.d.requestedActionType, SI.d.succeededActionType, SI.d.failedActionType);
-			var jI = Object(T.c)({
+			var vI = Object(T.c)({
 					load: gI,
 					execute: TI,
 					send: DI
 				}),
-				vI = r("./src/reddit/actions/tracking.ts");
+				jI = r("./src/reddit/actions/tracking.ts");
 			const AI = {};
 			var wI = (e = AI, t) => {
 					switch (t.type) {
-						case vI.a: {
+						case jI.a: {
 							const {
 								routeKey: r
 							} = t.payload;
@@ -23112,7 +23369,7 @@
 								[r]: !0
 							}
 						}
-						case vI.b: {
+						case jI.b: {
 							const {
 								routeKey: r
 							} = t.payload;
@@ -23126,7 +23383,7 @@
 					}
 				},
 				RI = Object(T.c)({
-					reCaptchaEnterprise: jI,
+					reCaptchaEnterprise: vI,
 					viewportDataLoaded: wI
 				}),
 				CI = r("./src/reddit/actions/trafficStats/constants.ts");
@@ -23230,12 +23487,12 @@
 				HI = Object(T.c)({
 					communityPoints: BI
 				}),
-				VI = r("./src/reddit/actions/search/trending.ts");
-			const qI = [];
-			var KI = (e = qI, t) => {
+				qI = r("./src/reddit/actions/search/trending.ts");
+			const VI = [];
+			var KI = (e = VI, t) => {
 					switch (t.type) {
 						case K.SUBREDDIT_LOADED:
-						case VI.a: {
+						case qI.a: {
 							const {
 								items: r
 							} = t.payload;
@@ -23252,7 +23509,7 @@
 			const QI = {};
 			var YI = (e = QI, t) => {
 					switch (t.type) {
-						case Vf.a: {
+						case qf.a: {
 							const {
 								trophies: r
 							} = t.payload;
@@ -23488,16 +23745,16 @@
 					case G.f:
 					case Se.a:
 					case Se.b:
-					case je.a:
-					case je.b:
+					case ve.a:
+					case ve.b:
 					case K.SUBREDDIT_FAILED:
 					case Yi.l:
 					case B.b:
 					case B.a:
 					case B.e:
 					case B.d:
-					case V.c:
-					case V.i:
+					case q.c:
+					case q.i:
 					case Ae.e:
 					case Ae.d:
 					case Ae.b:
@@ -23505,9 +23762,9 @@
 					case H.PROFILE_POSTS_LOADED:
 					case H.PROFILE_POSTS_FAILED:
 					case K.SUBREDDIT_LOADED:
-					case q.SEARCH_FAILED:
-					case q.SEARCH_RESULTS_RECEIVED:
-					case ve.PAGE_LOADED:
+					case V.SEARCH_FAILED:
+					case V.SEARCH_RESULTS_RECEIVED:
+					case je.PAGE_LOADED:
 					case Ns.PAGE_LOADED:
 					case Pe.e:
 					case Pe.g:
@@ -23768,13 +24025,13 @@
 							return e
 					}
 				},
-				jS = Object(T.c)({
+				vS = Object(T.c)({
 					api: gS,
 					data: DS
 				}),
-				vS = r("./src/reddit/actions/chat/constants.ts"),
+				jS = r("./src/reddit/actions/chat/constants.ts"),
 				AS = r("./src/reddit/actions/chat/userSettings.ts");
-			const wS = vS.a.anybody;
+			const wS = jS.a.anybody;
 			var RS = (e = wS, t) => {
 					switch (t.type) {
 						case AS.a:
@@ -23798,7 +24055,7 @@
 			};
 			var LS = (e = null, t) => {
 				switch (t.type) {
-					case ve.PAGE_LOADED: {
+					case je.PAGE_LOADED: {
 						const {
 							drafts: r
 						} = t.payload;
@@ -23815,14 +24072,14 @@
 						} = t.payload;
 						return PS(e, r)
 					}
-					case Vr.e: {
+					case qr.e: {
 						const {
 							postDraftIds: r
 						} = t.payload;
 						return PS(e, r.length)
 					}
-					case Vr.c:
-					case Vr.l: {
+					case qr.c:
+					case qr.l: {
 						const {
 							draftsCount: r
 						} = t.payload;
@@ -23835,7 +24092,7 @@
 			const NS = {};
 			var kS = (e = NS, t) => {
 					switch (t.type) {
-						case Va.a: {
+						case qa.a: {
 							const e = t.payload.experimentVariants;
 							return Iu(e)
 						}
@@ -23878,7 +24135,7 @@
 						return e
 				}
 			};
-			var VS = (e = "", t) => {
+			var qS = (e = "", t) => {
 				switch (t.type) {
 					case Pr.i:
 						return "string" == typeof t.payload.language ? t.payload.language : e;
@@ -23886,13 +24143,13 @@
 						return e
 				}
 			};
-			const qS = {
+			const VS = {
 				blob: "",
 				loid: "",
 				loidCreated: "",
 				version: -1
 			};
-			var KS = (e = qS, t) => {
+			var KS = (e = VS, t) => {
 					switch (t.type) {
 						case iI.b:
 							return t.payload;
@@ -24318,12 +24575,12 @@
 							return e
 					}
 				},
-				jg = Object(T.c)({
+				vg = Object(T.c)({
 					allocationByKey: Sg,
 					data: gg,
 					fetched: Dg
 				}),
-				vg = r("./src/reddit/reducers/user/prefs/index.ts");
+				jg = r("./src/reddit/reducers/user/prefs/index.ts");
 			! function(e) {
 				e.UNFETCHED = "default", e.PENDING = "pending", e.LOADED = "loaded", e.FAILED = "failed"
 			}(Tg || (Tg = {}));
@@ -24394,7 +24651,7 @@
 			};
 			var Ng = (e = null, t) => {
 				switch (t.type) {
-					case Va.a: {
+					case qa.a: {
 						const e = t.payload;
 						return e.identity && e.identity.isEmployee
 					}
@@ -24404,7 +24661,7 @@
 			};
 			var kg = (e = null, t) => {
 					switch (t.type) {
-						case Va.a:
+						case qa.a:
 							return t.payload.isLoggedIn;
 						default:
 							return e
@@ -24485,26 +24742,26 @@
 							return e
 					}
 				},
-				Vg = Object(T.c)({
+				qg = Object(T.c)({
 					api: Gg,
 					data: Hg
 				}),
-				qg = Object(T.c)({
+				Vg = Object(T.c)({
 					account: lS,
 					accountSettings: hS,
-					blocked: jS,
+					blocked: vS,
 					chatSettings: CS,
 					drafts: LS,
 					experiments: FS,
 					googleOneTapEnabled: BS,
 					isCustomizeFlyoutShowing: HS,
 					topContentDismissalPrefsSet: Ug,
-					language: VS,
+					language: qS,
 					loid: KS,
 					notificationPrefs: Eg,
 					ownedBadges: Og,
-					powerups: jg,
-					prefs: vg.c,
+					powerups: vg,
+					prefs: jg.c,
 					productOfferSubscriptions: wg,
 					reddaid: Rg,
 					session: Cg,
@@ -24512,7 +24769,7 @@
 					sessionTracker: Lg,
 					temporaryGQL: xg,
 					wallets: sS,
-					whitelist: Vg
+					whitelist: qg
 				});
 			var Kg = (e = null, t) => {
 				switch (t.type) {
@@ -24958,15 +25215,15 @@
 					powerups: pT,
 					presence: mT
 				});
-			const jT = {};
-			var vT = (e = jT, t) => {
+			const vT = {};
+			var jT = (e = vT, t) => {
 					switch (t.type) {
 						case G.b:
 						case G.f:
 						case K.SUBREDDIT_LOADED:
 						case $.i:
-						case q.SEARCH_RESULTS_RECEIVED:
-						case ve.PAGE_LOADED:
+						case V.SEARCH_RESULTS_RECEIVED:
+						case je.PAGE_LOADED:
 						case Ns.PAGE_LOADED: {
 							const {
 								structuredStyles: r
@@ -24991,10 +25248,10 @@
 					switch (t.type) {
 						case G.b:
 						case G.f:
-						case q.SEARCH_RESULTS_RECEIVED:
+						case V.SEARCH_RESULTS_RECEIVED:
 						case $.i:
 						case K.SUBREDDIT_LOADED:
-						case ve.PAGE_LOADED: {
+						case je.PAGE_LOADED: {
 							const {
 								structuredStyles: r
 							} = t.payload;
@@ -25086,8 +25343,8 @@
 					case G.f:
 					case K.SUBREDDIT_LOADED:
 					case $.i:
-					case q.SEARCH_RESULTS_RECEIVED:
-					case ve.PAGE_LOADED:
+					case V.SEARCH_RESULTS_RECEIVED:
+					case je.PAGE_LOADED:
 					case Ns.PAGE_LOADED: {
 						const {
 							structuredStyles: r
@@ -25147,7 +25404,7 @@
 					case K.SUBREDDIT_LOADED:
 					case G.f:
 					case $.i:
-					case ve.PAGE_LOADED: {
+					case je.PAGE_LOADED: {
 						const {
 							structuredStyles: r
 						} = t.payload;
@@ -25169,7 +25426,7 @@
 			var UT = (e = xT, t) => {
 				switch (t.type) {
 					case K.SUBREDDIT_LOADED:
-					case ve.PAGE_LOADED:
+					case je.PAGE_LOADED:
 					case Ns.PAGE_LOADED: {
 						const r = t.payload,
 							s = r.structuredStyles && r.structuredStyles.data && r.structuredStyles.data.content;
@@ -25223,9 +25480,9 @@
 					case G.b:
 					case G.f:
 					case K.SUBREDDIT_LOADED:
-					case q.SEARCH_RESULTS_RECEIVED:
+					case V.SEARCH_RESULTS_RECEIVED:
 					case $.i:
-					case ve.PAGE_LOADED:
+					case je.PAGE_LOADED:
 					case Ns.PAGE_LOADED: {
 						const {
 							structuredStyles: r
@@ -25256,7 +25513,7 @@
 				blockedRedditors: mt,
 				blockUser: St,
 				brandSafety: Tt,
-				celebratoryMoments: vt,
+				celebratoryMoments: jt,
 				chat: nr,
 				claimGold: pr,
 				commentsListTruncated: fr,
@@ -25275,7 +25532,7 @@
 				externalAccount: Sc,
 				featureFlags: wc,
 				focusedVerticals: Hc,
-				fontFiles: qc,
+				fontFiles: Vc,
 				gild: so,
 				header: bo,
 				htmlResponseStreaming: fo,
@@ -25286,7 +25543,7 @@
 				isModeratorWithPostPerms: Do,
 				jsApi: Ao,
 				leaderboard: Uo,
-				listings: vd,
+				listings: jd,
 				live: Pd,
 				mediaEmbed: (e = Nd, t) => {
 					switch (t.type) {
@@ -25341,11 +25598,11 @@
 				searchDiscoveryUnits: Sy,
 				seo: Ry,
 				shortcuts: Gy,
-				sidebarPromotedPosts: Vy,
+				sidebarPromotedPosts: qy,
 				streaming: Xy,
 				structuredStyles: yE,
 				stylesheets: EE,
-				subredditAutocomplete: jE,
+				subredditAutocomplete: vE,
 				subreddits: sh,
 				subredditStickyPosts: ch,
 				subscriptions: Ah,
@@ -25362,12 +25619,12 @@
 				trending: WI,
 				trophies: YI,
 				uploads: ZI,
-				user: qg,
+				user: Vg,
 				userDataRequestPage: zg,
 				upvotePromptCountPerSess: tS,
 				users: DT,
 				widgets: Object(T.c)({
-					idCardIds: vT,
+					idCardIds: jT,
 					menuIds: RT,
 					models: LT,
 					moderatorIds: kT,
@@ -25675,7 +25932,7 @@
 			})), r.d(t, "o", (function() {
 				return D
 			})), r.d(t, "b", (function() {
-				return j
+				return v
 			}));
 			var s = r("./src/reddit/helpers/graphql/normalizeFlairFromGql/index.ts"),
 				n = r("./src/reddit/models/Flair/index.ts"),
@@ -25777,7 +26034,7 @@
 				g = e => e.posts.scheduledPosts[a.f.recurringPosts].editModal.scheduledPostId,
 				T = e => e.posts.scheduledPosts[a.f.recurringPosts].editModal.subredditId,
 				D = e => e.posts.scheduledPosts.api.pendingUpdate,
-				j = e => e.posts.scheduledPosts.api.creationToken
+				v = e => e.posts.scheduledPosts.api.creationToken
 		},
 		"./src/reddit/selectors/userDataRequest.ts": function(e, t, r) {
 			"use strict";
@@ -25833,4 +26090,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.b7832bde95d625fd7ab3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.aec8028f73136872cf82.js.map
