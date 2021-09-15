@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.469f781f8b366774a102.js
-// Retrieved at 9/15/2021, 5:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.2359c2fa86ca7e7ca877.js
+// Retrieved at 9/15/2021, 6:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -5971,12 +5971,12 @@
 						rtJsonElementProps: o
 					});
 					switch (s) {
-						case b.ae.SmIcon:
+						case b.Yd.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: o
 							});
-						case b.ae.SmIconHc:
+						case b.Yd.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -6063,7 +6063,7 @@
 			class f extends o.a.Component {
 				constructor() {
 					super(...arguments), this.onClick = e => {
-						if (this.props.userIsSubscriber ? (this.props.onUnsubscribe(), this.props.afterUnsubscribeAction && this.props.afterUnsubscribeAction()) : (this.props.onSubscribe(), this.props.enableNotificationTooltipAfterSubscription && this.props.enableNotificationTooltipAfterSubscription()), this.props.onClick && this.props.onClick(e), this.props.getEventFactory) {
+						if (this.props.userIsSubscriber ? (this.props.onUnsubscribe(), this.props.afterUnsubscribeAction && this.props.afterUnsubscribeAction()) : this.props.onSubscribe(), this.props.onClick && this.props.onClick(e), this.props.getEventFactory) {
 							const e = this.props.getEventFactory(this.props.userIsSubscriber);
 							e && this.props.sendEvent(e)
 						}
@@ -8031,15 +8031,15 @@
 			const i = e => {
 					const t = Object(r.c)(e, {
 						experimentEligibilitySelector: o.K,
-						experimentName: s.Yb
+						experimentName: s.Xb
 					});
-					return !(!t || Object(s.te)(t))
+					return !(!t || Object(s.re)(t))
 				},
 				a = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: o.K,
-						experimentName: s.Yb
-					}) === s.wc.ListingEnabled
+						experimentName: s.Xb
+					}) === s.vc.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, n) {
@@ -8171,12 +8171,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.Ud
+						experimentName: s.Sd
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.ae.SmIcon || t === s.ae.SmIconHc
+					return t === s.Yd.SmIcon || t === s.Yd.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -8205,4 +8205,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.469f781f8b366774a102.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.2359c2fa86ca7e7ca877.js.map

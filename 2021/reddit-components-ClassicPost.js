@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.0b99216f5d999203eef1.js
-// Retrieved at 9/15/2021, 5:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.2d3e2c45697fa7245931.js
+// Retrieved at 9/15/2021, 6:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost", "Reddit~StandalonePostPage~reddit-components-MediumPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1599,8 +1599,8 @@
 						flairStyleTemplate: Y,
 						formatTitle: W,
 						hostPostData: H,
-						isCheckboxSelected: z,
-						isCurrentUserProfilePost: q,
+						isCheckboxSelected: q,
+						isCurrentUserProfilePost: z,
 						isFrontpage: Q,
 						isGalleryTileLayoutDefault: K,
 						isLoggedIn: X,
@@ -1643,7 +1643,7 @@
 							flairStyleTemplate: ve,
 							post: ae,
 							inSubredditOrProfile: A,
-							isCurrentUserProfilePost: q,
+							isCurrentUserProfilePost: z,
 							isOverlay: Z,
 							shouldShowSubscribeButton: !(Q && X),
 							subredditOrProfile: pe
@@ -1666,7 +1666,7 @@
 							model: ae,
 							handleVote: w,
 							showBulkActionCheckbox: le,
-							isCheckboxSelected: z,
+							isCheckboxSelected: q,
 							toggleCheckbox: be,
 							flairStyleTemplate: ve,
 							redditStyle: ce,
@@ -1910,8 +1910,8 @@
 					}
 				}, [t]);
 				const H = Object(s.useCallback)(() => y(!0), [y]),
-					z = 0 === j.length,
-					q = C || z,
+					q = 0 === j.length,
+					z = C || q,
 					Q = Object(s.useRef)(((e, t) => `${t}_${e}_count_anim`)(h, n));
 				return r.a.createElement(r.a.Fragment, null, !f && r.a.createElement("div", {
 					className: m.a.countAnimation
@@ -1936,7 +1936,7 @@
 						} : {
 							transform: "translateY(0)"
 						}
-					}, q ? r.a.createElement("span", {
+					}, z ? r.a.createElement("span", {
 						className: m.a.digitDelta
 					}, e) : n.map((e, t) => {
 						const s = 0 === t || t === n.length - 1;
@@ -3134,7 +3134,7 @@
 						type: n
 					}, r) : r)
 				},
-				z = ({
+				q = ({
 					className: e,
 					disableVisited: t,
 					titleColor: n,
@@ -3145,7 +3145,7 @@
 						[F.a.isVisitedEnabled]: !t
 					})
 				}), s),
-				q = ({
+				z = ({
 					disableVisited: e,
 					nowrap: t,
 					className: n,
@@ -3170,8 +3170,8 @@
 						subreddit: n
 					} = e, {
 						isSponsored: s
-					} = t, r = Object(U.a)(), a = Object(B.a)(m.Bc) === m.Fc.Enabled;
-					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return o.a.createElement(q, {
+					} = t, r = Object(U.a)(), a = Object(B.a)(m.Ac) === m.Ec.Enabled;
+					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return o.a.createElement(z, {
 						nowrap: e.nowrap
 					}, o.a.createElement(X, e));
 					if (e.isCommentsPageAd && t.source && t.source.url) return o.a.createElement(b.b, {
@@ -3182,7 +3182,7 @@
 					}, o.a.createElement(X, e)); {
 						const i = t.media && Object(S.G)(t.media) ? Object(v.c)(t.id, n.name) : t.permalink,
 							c = e.isCommentPermalink ? Object(E.b)(i) : a ? Object(_.a)(i, void 0, r) : Object(_.a)(i);
-						return o.a.createElement(q, {
+						return o.a.createElement(z, {
 							disableVisited: e.disableVisited,
 							nowrap: e.nowrap
 						}, s ? ((e, t) => {
@@ -3195,7 +3195,7 @@
 								postId: e.id,
 								source: n
 							}, o.a.createElement(X, t)) : o.a.createElement(X, t)
-						})(t, e) : o.a.createElement(z, {
+						})(t, e) : o.a.createElement(q, {
 							className: e.titleLinkClassName,
 							"data-click-id": "body",
 							disableVisited: e.disableVisited,
@@ -6522,8 +6522,8 @@
 				b = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: s.mb
-					}) === s.zb.Enabled
+						experimentName: s.lb
+					}) === s.yb.Enabled
 				}
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, n) {
@@ -6762,10 +6762,10 @@
 				o = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				a = n("./src/reddit/selectors/posts.ts");
 			const i = e => Object(o.c)(e, {
-					experimentName: r.sd,
+					experimentName: r.qd,
 					experimentEligibilitySelector: o.a
 				}),
-				c = (e, t) => t === r.Cd.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				c = (e, t) => t === r.Ad.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				d = Object(s.a)(a.H, i, (e, t) => c(e, t)),
 				l = Object(s.a)((e, t) => t, i, (e, t) => c(e, t))
 		},
@@ -6925,4 +6925,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.0b99216f5d999203eef1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.2d3e2c45697fa7245931.js.map

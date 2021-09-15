@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostDraft.2560bffa9bb82100715d.js
-// Retrieved at 9/15/2021, 5:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostDraft.69cc31a6b10abf2f9d74.js
+// Retrieved at 9/15/2021, 6:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostDraft"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -326,7 +326,7 @@
 			})), n.d(t, "c", (function() {
 				return U
 			})), n.d(t, "h", (function() {
-				return z
+				return Y
 			})), n.d(t, "f", (function() {
 				return q
 			})), n.d(t, "d", (function() {
@@ -566,7 +566,7 @@
 							hk: "4Ck6Cm"
 						})
 					}))
-				}, J = Object(i.a)(a.r), V = Object(i.a)(a.n), G = Object(i.a)(a.s), z = (e, t) => async (n, o, {
+				}, J = Object(i.a)(a.r), V = Object(i.a)(a.n), G = Object(i.a)(a.s), Y = (e, t) => async (n, o, {
 					apiContext: r
 				}) => {
 					n(J());
@@ -591,7 +591,7 @@
 						}))
 					}
 					return a
-				}, Y = Object(i.a)(a.l), K = Object(i.a)(a.m), X = Object(i.a)(a.k), q = e => async (t, n) => {
+				}, z = Object(i.a)(a.l), K = Object(i.a)(a.m), X = Object(i.a)(a.k), q = e => async (t, n) => {
 					const s = n().platform.currentPage.locationState;
 					t(!(!s || !s[d.a.IsOverlay]) ? Object(w.a)(e.permalink) : Object(o.b)(Object(j.b)(e.permalink)))
 				}, Z = Object(i.a)(a.i), Q = Object(i.a)(a.j), $ = Object(i.a)(a.h), ee = Object(i.a)(a.p), te = Object(i.a)(a.o), ne = Object(i.a)(a.q), se = e => async t => {
@@ -625,10 +625,10 @@
 								hk: "4Ck6Cm"
 							})
 						}))), a
-					})(o, a))), d && n.push(t(z(o, d))), void 0 !== r && n.push(t(((e, t) => async (n, o, {
+					})(o, a))), d && n.push(t(Y(o, d))), void 0 !== r && n.push(t(((e, t) => async (n, o, {
 						apiContext: r
 					}) => {
-						n(Y());
+						n(z());
 						const i = await y(r(), e, t);
 						let a = !1;
 						if (i.ok) n(K({
@@ -2961,12 +2961,12 @@
 						rtJsonElementProps: r
 					});
 					switch (s) {
-						case b.ae.SmIcon:
+						case b.Yd.SmIcon:
 							return o.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: r
 							});
-						case b.ae.SmIconHc:
+						case b.Yd.SmIconHc:
 							return o.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -4680,7 +4680,7 @@
 					})
 				}),
 				G = Object(r.b)(V);
-			class z extends s.Component {
+			class Y extends s.Component {
 				render() {
 					const {
 						draft: e,
@@ -4701,7 +4701,7 @@
 					})
 				}
 			}
-			t.default = J(G(z))
+			t.default = J(G(Y))
 		},
 		"./src/reddit/selectors/subredditMention.ts": function(e, t, n) {
 			"use strict";
@@ -4726,12 +4726,12 @@
 				c = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.Ud
+						experimentName: s.Sd
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.ae.SmIcon || t === s.ae.SmIconHc
+					return t === s.Yd.SmIcon || t === s.Yd.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -4754,4 +4754,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.2560bffa9bb82100715d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.69cc31a6b10abf2f9d74.js.map

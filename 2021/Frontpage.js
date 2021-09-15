@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.8a48a6b94ee018e9242e.js
-// Retrieved at 9/15/2021, 5:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.5e493a10ab0c8dbbed84.js
+// Retrieved at 9/15/2021, 6:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -2443,10 +2443,10 @@
 			}
 			var qe = a("./src/reddit/selectors/experiments/utils.ts");
 			const Ue = Object(m.a)(e => Object(Be.c)(e, {
-					experimentName: De.Wc,
+					experimentName: De.Uc,
 					experimentEligibilitySelector: Be.a
 				}), qe.a),
-				Ve = Object(m.a)(Ue, e => e === De.Yc.Enabled);
+				Ve = Object(m.a)(Ue, e => e === De.Wc.Enabled);
 			var We = a("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
 				Ge = a("./src/reddit/selectors/user.ts");
 			var He = a("./src/reddit/selectors/experiments/uiSimplification.ts"),
@@ -2478,8 +2478,8 @@
 						return (!t || !a) && (!Object(He.b)(e) && function(e) {
 							return Object(Be.c)(e, {
 								experimentEligibilitySelector: Ge.K,
-								experimentName: De.ub
-							}) === De.rc
+								experimentName: De.tb
+							}) === De.qc
 						}(e))
 					},
 					isNavbarLikeMwebEnabled: d.a,
@@ -5486,7 +5486,7 @@
 				i = e => Object(c.c)(e, {
 					experimentEligibilitySelector: o,
 					experimentName: s.V
-				}) === s.wb.Treatment
+				}) === s.vb.Treatment
 		},
 		"./src/reddit/selectors/experiments/celebratoryMoments.ts": function(e, t, a) {
 			"use strict";
@@ -5507,13 +5507,13 @@
 			const c = e => {
 					const t = Object(n.c)(e, {
 						experimentEligibilitySelector: n.a,
-						experimentName: s.qe
+						experimentName: s.oe
 					});
 					return t === s.L.TwoDayCooldown || t === s.L.FiveDayCooldown
 				},
 				o = e => {
 					const t = Object(r.d)(e, {
-							experimentName: s.qe
+							experimentName: s.oe
 						}),
 						a = null == t ? void 0 : t.variant;
 					return a === s.L.TwoDayCooldown ? 2 : a === s.L.FiveDayCooldown ? 5 : 0
@@ -5536,7 +5536,7 @@
 			function c(e) {
 				return Object(n.c)(e, {
 					experimentEligibilitySelector: r.K,
-					experimentName: s.Nb
+					experimentName: s.Mb
 				})
 			}
 			const o = 31536e3;
@@ -5555,9 +5555,9 @@
 				return function(e) {
 					return Object(n.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: s.Mb
-					}) === s.tc.Enabled
-				}(e) ? l.Achievements : t === s.uc.ControlBanner ? l.CommunitySpacesControl : t === s.uc.EnabledBanner ? l.CommunitySpaces : null
+						experimentName: s.Lb
+					}) === s.sc.Enabled
+				}(e) ? l.Achievements : t === s.tc.ControlBanner ? l.CommunitySpacesControl : t === s.tc.EnabledBanner ? l.CommunitySpaces : null
 			}! function(e) {
 				e.Achievements = "achievements", e.CommunitySpaces = "communitySpaces", e.CommunitySpacesControl = "communitySpaces--control"
 			}(l || (l = {}))
@@ -5608,4 +5608,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.8a48a6b94ee018e9242e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.5e493a10ab0c8dbbed84.js.map
