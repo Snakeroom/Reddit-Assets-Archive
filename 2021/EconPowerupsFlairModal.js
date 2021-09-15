@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.aaeaa93df75f4793a5fd.js
-// Retrieved at 9/15/2021, 5:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.9d61b54eb0e2a8be9a31.js
+// Retrieved at 9/15/2021, 6:10:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsFlairModal"], {
 		"./src/reddit/actions/economics/powerups/flairs/index.ts": function(e, t, r) {
@@ -836,7 +836,7 @@
 						[b, h] = Object(s.useState)(!1);
 					if (!(!!c || !!l) || !m) return null;
 					const v = (null == l ? void 0 : l.type) === (null == c ? void 0 : c.type) ? null : l,
-						f = 1 + (v ? 1 : 0),
+						f = (v ? 1 : 0) + (c ? 1 : 0),
 						j = (null == m ? void 0 : m.length) - f;
 					return i.a.createElement("span", {
 						className: Object(a.a)(x.a.container, e),
@@ -1321,4 +1321,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.aaeaa93df75f4793a5fd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.9d61b54eb0e2a8be9a31.js.map

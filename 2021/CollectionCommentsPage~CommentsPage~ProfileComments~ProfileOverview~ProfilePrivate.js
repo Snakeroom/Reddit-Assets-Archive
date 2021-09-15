@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.48370789fa8500e9a1e4.js
-// Retrieved at 9/15/2021, 5:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.d83b64c3d6349e7cf081.js
+// Retrieved at 9/15/2021, 6:10:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, n) {
@@ -1779,7 +1779,7 @@
 						[b, x] = Object(s.useState)(!1);
 					if (!(!!d || !!l) || !u) return null;
 					const h = (null == l ? void 0 : l.type) === (null == d ? void 0 : d.type) ? null : l,
-						f = 1 + (h ? 1 : 0),
+						f = (h ? 1 : 0) + (d ? 1 : 0),
 						E = (null == u ? void 0 : u.length) - f;
 					return o.a.createElement("span", {
 						className: Object(a.a)(C.a.container, e),
@@ -3433,4 +3433,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.48370789fa8500e9a1e4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.d83b64c3d6349e7cf081.js.map
