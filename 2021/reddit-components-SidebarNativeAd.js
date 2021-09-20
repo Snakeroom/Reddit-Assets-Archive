@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.d5e1cece0f10dcb443cc.js
-// Retrieved at 9/20/2021, 12:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.aee0ec3ed2ca1ff522f9.js
+// Retrieved at 9/20/2021, 6:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, r) {
@@ -1513,7 +1513,7 @@
 						subreddit: r
 					} = e, {
 						isSponsored: n
-					} = t, s = Object(U.a)(), i = Object(B.a)(m.Ac) === m.Ec.Enabled;
+					} = t, s = Object(U.a)(), i = Object(B.a)(m.Bc) === m.Fc.Enabled;
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return o.a.createElement(q, {
 						nowrap: e.nowrap
 					}, o.a.createElement(X, e));
@@ -2722,21 +2722,6 @@
 			"use strict";
 			t.a = (e, t) => e.length > t ? e.slice(0, t - 1).replace(/\s*$/, "") + "…" : e
 		},
-		"./src/reddit/hooks/useExperimentVariant.ts": function(e, t, r) {
-			"use strict";
-			r.d(t, "a", (function() {
-				return o
-			}));
-			var n = r("./node_modules/react-redux/es/index.js"),
-				s = r("./src/reddit/helpers/chooseVariant/index.ts");
-
-			function o(e, t = s.a) {
-				return Object(n.e)(r => Object(s.c)(r, {
-					experimentName: e,
-					experimentEligibilitySelector: t
-				}))
-			}
-		},
 		"./src/reddit/hooks/useInfoTextTooltip.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
@@ -3772,4 +3757,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.d5e1cece0f10dcb443cc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.aee0ec3ed2ca1ff522f9.js.map

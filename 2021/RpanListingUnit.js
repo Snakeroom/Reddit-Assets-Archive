@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.af221439f16044a7da6e.js
-// Retrieved at 9/20/2021, 12:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.219c6819e04d9c49531d.js
+// Retrieved at 9/20/2021, 6:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -52,16 +52,16 @@
 			const p = Object(o.a)(e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.ad
+					experimentName: u.bd
 				});
-				return Object(u.te)(t) ? void 0 : t
+				return Object(u.ue)(t) ? void 0 : t
 			}, e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.bd
+					experimentName: u.cd
 				});
-				return Object(u.te)(t) ? void 0 : t
-			}, (e, t) => e === u.cd.Enabled && t === u.cd.Enabled);
+				return Object(u.ue)(t) ? void 0 : t
+			}, (e, t) => e === u.dd.Enabled && t === u.dd.Enabled);
 			var h = n("./src/config.ts");
 			var b = n("./src/reddit/selectors/user.ts");
 			const f = e => {
@@ -118,12 +118,12 @@
 					respectDoNotTrack: I,
 					saltLength: T,
 					saltTimeToLive: w,
-					viewerUserIdLength: j
+					viewerUserIdLength: A
 				} = {
 					...C,
 					...t
 				};
-				class A extends s.Component {
+				class j extends s.Component {
 					constructor(e) {
 						super(e), this.dashInstance = null, this.hlsInstance = null, this.isMonitoring = !1, this.playerInitTime = Date.now(), this.videoRef = Object(s.createRef)(), this.handleDashCreate = e => this.setDashInstance(e), this.handleDashDestroy = () => this.setDashInstance(null), this.handleHlsCreate = e => this.setHlsInstance(e), this.handleHlsDestroy = () => this.setHlsInstance(null), this.combinedVideoRefs = this.combineExternalVideoRef(e.videoRef)
 					}
@@ -200,10 +200,10 @@
 						}
 					}
 					async encryptViewerUserId() {
-						const e = this.props.redditUserId || A.ANONYMOUS_USER_ID,
+						const e = this.props.redditUserId || j.ANONYMOUS_USER_ID,
 							t = this.getOrCreateSalt(),
 							n = `${v()}${e}${t}`;
-						return (await O(n)).substr(0, A.VIEWER_USER_ID_LENGTH)
+						return (await O(n)).substr(0, j.VIEWER_USER_ID_LENGTH)
 					}
 					getDashInstanceData() {
 						const {
@@ -227,25 +227,25 @@
 							t = this.getVideoData(),
 							n = this.getThirdPartyLibData();
 						return {
-							debug: A.DEBUG,
-							disableCookies: A.DISABLE_COOKIES,
-							respectDoNotTrack: A.RESPECT_DO_NOT_TRACK,
+							debug: j.DEBUG,
+							disableCookies: j.DISABLE_COOKIES,
+							respectDoNotTrack: j.RESPECT_DO_NOT_TRACK,
 							...n,
 							data: {
-								env_key: A.ENV_KEY,
+								env_key: j.ENV_KEY,
 								experiment_name: this.experimentName,
 								player_init_time: this.playerInitTime,
-								player_name: A.PLAYER_NAME,
-								player_version: A.PLAYER_VERSION,
+								player_name: j.PLAYER_NAME,
+								player_version: j.PLAYER_VERSION,
 								...t,
 								viewer_user_id: e
 							}
 						}
 					}
 					getOrCreateSalt() {
-						const e = A.LOCAL_STORAGE_SALT_KEY;
+						const e = j.LOCAL_STORAGE_SALT_KEY;
 						let t = Object(a.a)(e);
-						return t || (t = f(A.SALT_LENGTH), Object(a.b)(e, t, A.SALT_TIME_TO_LIVE)), t
+						return t || (t = f(j.SALT_LENGTH), Object(a.b)(e, t, j.SALT_TIME_TO_LIVE)), t
 					}
 					getThirdPartyLibData() {
 						return {
@@ -261,17 +261,17 @@
 							muxVideoTitle: s
 						} = this.props;
 						return {
-							video_duration: n ? A.DURATION_LIVE : e,
+							video_duration: n ? j.DURATION_LIVE : e,
 							video_id: t,
-							video_stream_type: n ? A.STREAM_TYPE_LIVE : A.STREAM_TYPE_ON_DEMAND,
+							video_stream_type: n ? j.STREAM_TYPE_LIVE : j.STREAM_TYPE_ON_DEMAND,
 							video_title: s,
 							view_session_id: this.props.sessionId,
 							player_software_version: this.getDashInstanceData() ? h.a.dashVersion : this.getHlsInstanceData() ? h.a.hlsVersion : null
 						}
 					}
 				}
-				A.displayName = y(e), A.ANONYMOUS_USER_ID = n, A.DEBUG = d, A.DISABLE_COOKIES = u, A.DURATION_LIVE = 1 / 0, A.ENV_KEY = m, A.LOCAL_STORAGE_SALT_KEY = g, A.LOCAL_STORAGE_VIEWER_USER_ID_KEY = _, A.PLAYER_NAME = x, A.PLAYER_VERSION = S, A.RESPECT_DO_NOT_TRACK = I, A.SALT_LENGTH = T, A.SALT_TIME_TO_LIVE = w, A.STREAM_TYPE_LIVE = "live", A.STREAM_TYPE_ON_DEMAND = "on-demand", A.VIEWER_USER_ID_LENGTH = j;
-				const k = Object(s.forwardRef)((e, t) => r.a.createElement(A, E({}, e, {
+				j.displayName = y(e), j.ANONYMOUS_USER_ID = n, j.DEBUG = d, j.DISABLE_COOKIES = u, j.DURATION_LIVE = 1 / 0, j.ENV_KEY = m, j.LOCAL_STORAGE_SALT_KEY = g, j.LOCAL_STORAGE_VIEWER_USER_ID_KEY = _, j.PLAYER_NAME = x, j.PLAYER_VERSION = S, j.RESPECT_DO_NOT_TRACK = I, j.SALT_LENGTH = T, j.SALT_TIME_TO_LIVE = w, j.STREAM_TYPE_LIVE = "live", j.STREAM_TYPE_ON_DEMAND = "on-demand", j.VIEWER_USER_ID_LENGTH = A;
+				const k = Object(s.forwardRef)((e, t) => r.a.createElement(j, E({}, e, {
 						forwardedRef: t
 					}))),
 					N = Object(o.c)({
@@ -555,14 +555,14 @@
 					queryVariables: _,
 					shouldDisjointAnimation: O,
 					subsequentRecurringDelay: E
-				} = e, [y, C] = Object(s.useState)(!1), [x, S] = Object(s.useState)(!0), [I, T] = Object(s.useState)([]), [w, j] = Object(s.useState)(c(p).reverse()), A = Object(s.useRef)(!1), k = Object(s.useRef)(null), N = Object(s.useRef)(e => {}), P = Object(s.useRef)();
+				} = e, [y, C] = Object(s.useState)(!1), [x, S] = Object(s.useState)(!0), [I, T] = Object(s.useState)([]), [w, A] = Object(s.useState)(c(p).reverse()), j = Object(s.useRef)(!1), k = Object(s.useRef)(null), N = Object(s.useRef)(e => {}), P = Object(s.useRef)();
 				N.current = Object(s.useCallback)(e => {
 					let n = e || d();
 					const s = [...w].reverse().join("");
 					let r = parseInt(s) + n;
 					r > t && (n = t - parseInt(s), r = t);
 					const i = c(r).reverse();
-					C(!1), T(w), j(i), S(!1), P.current = setTimeout(() => {
+					C(!1), T(w), A(i), S(!1), P.current = setTimeout(() => {
 						C(!0)
 					}, 0)
 				}, [t, d, w]);
@@ -584,7 +584,7 @@
 								isIntersecting: t,
 								intersectionRatio: n
 							} = e, s = 1 !== n;
-							t ? (F.current = !0, A.current || (A.current = !0, R.current = setTimeout(() => {
+							t ? (F.current = !0, j.current || (j.current = !0, R.current = setTimeout(() => {
 								N.current(), D.current()
 							}, u())), M.current > 0 && (N.current(M.current), M.current = 0)) : s && (F.current = !1)
 						})
@@ -1287,8 +1287,8 @@
 				I = n("./src/reddit/models/Vote/index.ts"),
 				T = n("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
 				w = n("./src/reddit/selectors/platform.ts"),
-				j = n("./src/reddit/selectors/PublicAccessNetwork/streams.ts"),
-				A = n("./src/reddit/selectors/user.ts"),
+				A = n("./src/reddit/selectors/PublicAccessNetwork/streams.ts"),
+				j = n("./src/reddit/selectors/user.ts"),
 				k = n("./src/reddit/components/ClassicPost/Placeholder.tsx"),
 				N = n("./src/reddit/components/Flatlist/index.tsx"),
 				P = n("./src/reddit/components/Flatlist/constants.ts"),
@@ -1311,13 +1311,13 @@
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), Z = 20, J = l.lc, Q = l.lc, X = Object(c.a)(R.a, {
 				playerName: "RPAN DU Video Player"
 			}), $ = Object(i.b)(() => Object(o.c)({
-				autoplay: A.b,
-				isLoggedIn: A.K,
+				autoplay: j.b,
+				isLoggedIn: j.K,
 				isOverlayOpen: w.h,
 				location: (e, {
 					listingName: t
 				}) => {
-					const n = Object(j.m)(e, {
+					const n = Object(A.m)(e, {
 						listingName: t
 					});
 					let s;
@@ -1331,10 +1331,10 @@
 				},
 				stream: (e, {
 					listingName: t
-				}) => Object(j.m)(e, {
+				}) => Object(A.m)(e, {
 					listingName: t
 				}),
-				streamById: e => t => Object(j.l)(e, t),
+				streamById: e => t => Object(A.l)(e, t),
 				rpanDuThresholdVariant: T.i,
 				inRpanDUPreloadExperiment: T.b,
 				inRpanDuTargetingExperiment: T.c
@@ -2037,11 +2037,11 @@
 						w = Object(a.useCallback)(() => {
 							T(Object(b.m)(i))
 						}, [T, i]),
-						j = !e.isScoreHidden && h && n < _.a;
+						A = !e.isScoreHidden && h && n < _.a;
 					return c.a.createElement("div", {
 						className: Object(r.a)(y.a.score, e.className),
 						style: e.disableInlineColor ? void 0 : t
-					}, (j || v) && c.a.createElement(c.a.Fragment, null, c.a.createElement(u.b, {
+					}, (A || v) && c.a.createElement(c.a.Fragment, null, c.a.createElement(u.b, {
 						initialDisplayCount: n,
 						countToUpperBound: n,
 						initialDelay: x,
@@ -2054,8 +2054,8 @@
 						queryKey: "postVoteCount",
 						queryVariables: I.current,
 						onDataCB: S,
-						isLoadTestOnly: v && !j
-					})), !j && E)
+						isLoadTestOnly: v && !A
+					})), !A && E)
 				});
 			t.a = S(I)
 		},
@@ -2294,9 +2294,9 @@
 			})), n.d(t, "clickSelectAwardEvent", (function() {
 				return w
 			})), n.d(t, "triggerAnonymousEvent", (function() {
-				return j
-			})), n.d(t, "clickMessageInputEvent", (function() {
 				return A
+			})), n.d(t, "clickMessageInputEvent", (function() {
+				return j
 			})), n.d(t, "typeMessageInputEvent", (function() {
 				return k
 			})), n.d(t, "clickLearnMoreLinkEvent", (function() {
@@ -2417,13 +2417,13 @@
 					noun: "award",
 					goldPurchase: l(e, n)
 				}),
-				j = (e, t) => n => ({
+				A = (e, t) => n => ({
 					...u(n, t),
 					source: "give_gold",
 					action: e,
 					noun: "anonymous"
 				}),
-				A = e => t => ({
+				j = e => t => ({
 					...u(t, e),
 					source: "give_gold",
 					action: "click",
@@ -2921,9 +2921,9 @@
 			})), n.d(t, "u", (function() {
 				return w
 			})), n.d(t, "a", (function() {
-				return j
-			})), n.d(t, "s", (function() {
 				return A
+			})), n.d(t, "s", (function() {
+				return j
 			})), n.d(t, "v", (function() {
 				return k
 			})), n.d(t, "w", (function() {
@@ -3086,13 +3086,13 @@
 					...i(e),
 					scheduledPost: o(t)
 				}),
-				j = () => e => ({
+				A = () => e => ({
 					source: "recurring_post_composer",
 					action: "click",
 					noun: "cancel",
 					...i(e)
 				}),
-				A = () => (e, t) => ({
+				j = () => (e, t) => ({
 					source: "recurring_post_composer",
 					action: "click",
 					noun: "delete",
@@ -3163,21 +3163,6 @@
 					noun: "edit_user_flair",
 					...r.defaults(e)
 				})
-		},
-		"./src/reddit/hooks/useExperimentVariant.ts": function(e, t, n) {
-			"use strict";
-			n.d(t, "a", (function() {
-				return i
-			}));
-			var s = n("./node_modules/react-redux/es/index.js"),
-				r = n("./src/reddit/helpers/chooseVariant/index.ts");
-
-			function i(e, t = r.a) {
-				return Object(s.e)(n => Object(r.c)(n, {
-					experimentName: e,
-					experimentEligibilitySelector: t
-				}))
-			}
 		},
 		"./src/reddit/icons/svgs/Lock/index.tsx": function(e, t, n) {
 			"use strict";
@@ -3632,9 +3617,9 @@
 			})), n.d(t, "m", (function() {
 				return w
 			})), n.d(t, "e", (function() {
-				return j
-			})), n.d(t, "d", (function() {
 				return A
+			})), n.d(t, "d", (function() {
+				return j
 			}));
 			var s = n("./src/reddit/selectors/gold/purchaseCatalog.ts"),
 				r = n("./src/lib/initializeClient/installReducer.ts"),
@@ -3671,9 +3656,9 @@
 				I = e => e.features.goldPurchase.payment.cardValidation.nameOnCard,
 				T = e => e.features.goldPurchase.payment.stripeToken.errorMessage,
 				w = e => e.features.goldPurchase.payment.stripeToken.pending,
-				j = e => e.features.goldPurchase.payment.paypal.passthrough,
-				A = e => e.features.goldPurchase.payment.paypal.errorMessage
+				A = e => e.features.goldPurchase.payment.paypal.passthrough,
+				j = e => e.features.goldPurchase.payment.paypal.errorMessage
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.af221439f16044a7da6e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.219c6819e04d9c49531d.js.map

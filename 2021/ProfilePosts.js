@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePosts.3d0569c565963548af47.js
-// Retrieved at 9/20/2021, 5:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePosts.88a0154f807c5aa85150.js
+// Retrieved at 9/20/2021, 6:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePosts", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -3842,7 +3842,12 @@
 					}, this.setLastVisibleChildRendered = () => {
 						this.didRenderLastVisibleChild = !0, this.checkAndSendScreenview()
 					}, this.onScrollPause = e => {
-						this.dispatchBrandSafety(e), this.props.isNpsScrollSurveyEnabled && this.props.surveyTriggerScrollCounted && !this.surveyTriggerCounted && this.surveyTriggerListener(e)
+						const {
+							isNpsScrollSurveyEnabled: t,
+							onScroll: n,
+							surveyTriggerScrollCounted: r
+						} = this.props;
+						this.dispatchBrandSafety(e), t && r && !this.surveyTriggerCounted && this.surveyTriggerListener(e), n && n(e)
 					}, this.surveyTriggerListener = d()(({
 						primaryChild: e
 					}) => {
@@ -6061,12 +6066,12 @@
 						rtJsonElementProps: o
 					});
 					switch (r) {
-						case b.Yd.SmIcon:
+						case b.Zd.SmIcon:
 							return s.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: o
 							});
-						case b.Yd.SmIconHc:
+						case b.Zd.SmIconHc:
 							return s.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -7416,15 +7421,15 @@
 			const i = e => {
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: o.K,
-						experimentName: r.Xb
+						experimentName: r.Yb
 					});
-					return !(!t || Object(r.te)(t))
+					return !(!t || Object(r.ue)(t))
 				},
 				a = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: o.K,
-						experimentName: r.Xb
-					}) === r.vc.ListingEnabled
+						experimentName: r.Yb
+					}) === r.wc.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, n) {
@@ -7556,12 +7561,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: r.Sd
+						experimentName: r.Td
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === r.Yd.SmIcon || t === r.Yd.SmIconHc
+					return t === r.Zd.SmIcon || t === r.Zd.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -7605,4 +7610,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.3d0569c565963548af47.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.88a0154f807c5aa85150.js.map

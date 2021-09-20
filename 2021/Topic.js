@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.516e2e36067626402190.js
-// Retrieved at 9/20/2021, 5:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.d2bf3a086d74a44576c7.js
+// Retrieved at 9/20/2021, 6:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -662,7 +662,12 @@
 					}, this.setLastVisibleChildRendered = () => {
 						this.didRenderLastVisibleChild = !0, this.checkAndSendScreenview()
 					}, this.onScrollPause = e => {
-						this.dispatchBrandSafety(e), this.props.isNpsScrollSurveyEnabled && this.props.surveyTriggerScrollCounted && !this.surveyTriggerCounted && this.surveyTriggerListener(e)
+						const {
+							isNpsScrollSurveyEnabled: t,
+							onScroll: s,
+							surveyTriggerScrollCounted: r
+						} = this.props;
+						this.dispatchBrandSafety(e), t && r && !this.surveyTriggerCounted && this.surveyTriggerListener(e), s && s(e)
 					}, this.surveyTriggerListener = d()(({
 						primaryChild: e
 					}) => {
@@ -2600,4 +2605,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.516e2e36067626402190.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.d2bf3a086d74a44576c7.js.map

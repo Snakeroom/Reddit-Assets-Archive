@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-MediumPost.d13f48a70df8faa72edc.js
-// Retrieved at 9/15/2021, 7:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-MediumPost.afa4dd0f35a56b9f8b6f.js
+// Retrieved at 9/20/2021, 6:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~StandalonePostPage~reddit-components-MediumPost"], {
 		"./src/lib/hooks/useTooltip.ts": function(e, t, r) {
@@ -128,7 +128,7 @@
 			})), r.d(t, "d", (function() {
 				return _
 			})), r.d(t, "c", (function() {
-				return j
+				return y
 			})), r.d(t, "a", (function() {
 				return w
 			})), r.d(t, "f", (function() {
@@ -180,7 +180,7 @@
 						e && (b = e.belongsTo.id)
 					}
 					b && Object(d.a)(b, r)
-				}, y = Object(n.a)(b.e), j = Object(n.a)(b.J), w = () => async (e, t) => {
+				}, j = Object(n.a)(b.e), y = Object(n.a)(b.J), w = () => async (e, t) => {
 					const n = t(),
 						o = Object(c.d)(n);
 					if (Object(c.g)(n)) {
@@ -189,7 +189,7 @@
 							type: e
 						})
 					}
-					e(y()), e(Object(l.g)(a.a.GOLD_GILD_MODAL));
+					e(j()), e(Object(l.g)(a.a.GOLD_GILD_MODAL));
 					const {
 						clickCloseGildModalEvent: d
 					} = await Promise.resolve().then(r.bind(null, "./src/reddit/helpers/trackers/gild.ts"));
@@ -311,8 +311,8 @@
 					queryKey: g,
 					queryVariables: O,
 					shouldDisjointAnimation: _,
-					subsequentRecurringDelay: y
-				} = e, [j, w] = Object(n.useState)(!1), [x, C] = Object(n.useState)(!0), [I, k] = Object(n.useState)([]), [E, A] = Object(n.useState)(i(p).reverse()), P = Object(n.useRef)(!1), S = Object(n.useRef)(null), T = Object(n.useRef)(e => {}), N = Object(n.useRef)();
+					subsequentRecurringDelay: j
+				} = e, [y, w] = Object(n.useState)(!1), [x, C] = Object(n.useState)(!0), [I, k] = Object(n.useState)([]), [E, A] = Object(n.useState)(i(p).reverse()), P = Object(n.useRef)(!1), S = Object(n.useRef)(null), T = Object(n.useRef)(e => {}), N = Object(n.useRef)();
 				T.current = Object(n.useCallback)(e => {
 					let r = e || d();
 					const n = [...E].reverse().join("");
@@ -331,8 +331,8 @@
 						T.current();
 						const e = [...I].reverse().join("");
 						parseInt(e) < t && F.current()
-					}, y())
-				}, [t, y, I]);
+					}, j())
+				}, [t, j, I]);
 				const D = Object(n.useRef)(0),
 					G = Object(n.useRef)(!1),
 					U = Object(n.useCallback)(e => {
@@ -355,14 +355,14 @@
 						} = e, n = 1 !== r;
 						t ? B(!0) : n && B(!1)
 					})
-				}, []), q = Object(n.useRef)({
+				}, []), z = Object(n.useRef)({
 					rootMargin: "2000px 0px 2000px 0px"
 				});
-				Object(a.a)(S, V, q.current);
-				const z = Object(c.a)(t);
+				Object(a.a)(S, V, z.current);
+				const q = Object(c.a)(t);
 				Object(n.useEffect)(() => {
-					if (void 0 !== z && z !== t) {
-						const e = t - z;
+					if (void 0 !== q && q !== t) {
+						const e = t - q;
 						G.current ? (T.current(e), f && f()) : D.current += e
 					}
 					return () => {
@@ -390,7 +390,7 @@
 						className: l.a.digitDeltaWrapper,
 						key: t,
 						onTransitionEnd: W,
-						style: j && I.length > 0 && !x ? {
+						style: y && I.length > 0 && !x ? {
 							transform: `translateY(-${_&&r.length>1?100:100*(r.length-1)}%)`,
 							transitionDuration: `${(_?500:750)/1e3}s`
 						} : {
@@ -558,8 +558,8 @@
 				g = r("./src/reddit/controls/RadioInput/RadioOption/index.tsx"),
 				O = r("./src/reddit/icons/svgs/Pencil/index.tsx"),
 				_ = r("./src/reddit/icons/svgs/Search/index.tsx"),
-				y = r("./src/reddit/components/FlairSearch/FlairTemplateList/index.m.less"),
-				j = r.n(y);
+				j = r("./src/reddit/components/FlairSearch/FlairTemplateList/index.m.less"),
+				y = r.n(j);
 			class w extends o.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
@@ -579,11 +579,11 @@
 						searchQuery: s
 					} = this.state, a = t.map(t => e[t]).filter(e => e.text.toLowerCase().includes(s)), c = !!r && a.some(e => e.id === r);
 					return o.a.createElement("div", {
-						className: j.a.container
+						className: y.a.container
 					}, o.a.createElement("div", {
-						className: j.a.searchBoxWrapper
+						className: y.a.searchBoxWrapper
 					}, o.a.createElement("input", {
-						className: j.a.searchInput,
+						className: y.a.searchInput,
 						onChange: this.onSearchChange,
 						type: "text",
 						placeholder: n.fbt._("Search for flair", null, {
@@ -591,7 +591,7 @@
 						}),
 						value: s
 					}), o.a.createElement(_.a, {
-						className: j.a.searchIcon
+						className: y.a.searchIcon
 					})), o.a.createElement(h.a, {
 						name: "flair_picker",
 						onChange: this.props.onChange,
@@ -600,17 +600,17 @@
 						const n = Object(u.c)(e),
 							s = r === e.id || !c && 0 === t;
 						return o.a.createElement(g.a, {
-							className: j.a.radioOption,
+							className: y.a.radioOption,
 							key: e.id,
 							showButton: !0,
 							tabIndex: s ? 0 : -1,
 							value: e.id
 						}, o.a.createElement(v.b, {
-							className: j.a.flairComponent,
+							className: y.a.flairComponent,
 							flair: n,
 							forceSmallEmojis: !0
 						}), e.textEditable && o.a.createElement(O.a, {
-							className: j.a.pencil
+							className: y.a.pencil
 						}))
 					})))
 				}
@@ -785,7 +785,7 @@
 		"./src/reddit/components/VerticalVotes/index.tsx": function(e, t, r) {
 			"use strict";
 			r.d(t, "b", (function() {
-				return j
+				return y
 			}));
 			var n = r("./node_modules/fbt/lib/FbtPublic.js"),
 				s = r("./node_modules/react/index.js"),
@@ -808,8 +808,8 @@
 					isAnimatingUpvotePostId: b.k
 				}),
 				_ = Object(a.b)(O),
-				y = e => !e.isCustomIconDisabled && !0 !== e.redditStyle && Object(p.a)(e).voteIcons.upvoteInactive && Object(p.a)(e).voteIcons.upvoteActive,
-				j = e => !e.isCustomIconDisabled && !0 !== e.redditStyle && Object(p.a)(e).voteIcons.downvoteInactive && Object(p.a)(e).voteIcons.downvoteActive;
+				j = e => !e.isCustomIconDisabled && !0 !== e.redditStyle && Object(p.a)(e).voteIcons.upvoteInactive && Object(p.a)(e).voteIcons.upvoteActive,
+				y = e => !e.isCustomIconDisabled && !0 !== e.redditStyle && Object(p.a)(e).voteIcons.downvoteInactive && Object(p.a)(e).voteIcons.downvoteActive;
 			class w extends o.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
@@ -856,8 +856,8 @@
 							model: v,
 							postId: h
 						} = e,
-						O = y(e),
-						_ = j(e),
+						O = j(e),
+						_ = y(e),
 						w = v.voteState,
 						x = a === h;
 					return o.a.createElement("div", {
@@ -992,11 +992,11 @@
 				_ = ({
 					voteState: e
 				}) => e === d.a.upvoted,
-				y = c(_, ({
+				j = c(_, ({
 					interactive: e
 				}) => !1 !== e, O);
-			var j = e => s.a.createElement(v.a, {
-					className: y(e),
+			var y = e => s.a.createElement(v.a, {
+					className: j(e),
 					compact: e.compact,
 					isFilled: _(e)
 				}),
@@ -1055,7 +1055,7 @@
 					}))
 				}),
 				T = b,
-				N = j
+				N = y
 		},
 		"./src/reddit/constants/jsapiEvents.ts": function(e, t, r) {
 			"use strict";
@@ -1238,8 +1238,8 @@
 				g = r("./src/reddit/models/Vote/index.ts"),
 				O = r("./src/reddit/selectors/experiments/postActionBarAnimation.ts"),
 				_ = r("./src/reddit/selectors/meta.ts"),
-				y = r("./src/reddit/controls/Score/index.m.less"),
-				j = r.n(y);
+				j = r("./src/reddit/controls/Score/index.m.less"),
+				y = r.n(j);
 			const w = e => e.voteState === g.a.downvoted ? Object(h.a)(e).voteText.downvote : e.voteState === g.a.upvoted ? Object(h.a)(e).voteText.upvote : Object(f.a)(Object(p.a)(e)),
 				x = () => 0,
 				C = Object(d.b)(e => ({
@@ -1258,10 +1258,10 @@
 						} = e,
 						g = Object(d.d)(),
 						_ = null == p ? void 0 : p.startsWith("en"),
-						y = e.isScoreHidden ? _ ? n.fbt._("Vote", null, {
+						j = e.isScoreHidden ? _ ? n.fbt._("Vote", null, {
 							hk: "2TMson"
 						}) : i.a.createElement("span", {
-							className: j.a.dot
+							className: y.a.dot
 						}, "•") : Object(a.b)(r),
 						C = Object(c.useCallback)(e => {
 							const {
@@ -1287,7 +1287,7 @@
 						}, [k, o]),
 						A = !e.isScoreHidden && f && r < O.a;
 					return i.a.createElement("div", {
-						className: Object(s.a)(j.a.score, e.className),
+						className: Object(s.a)(y.a.score, e.className),
 						style: e.disableInlineColor ? void 0 : t
 					}, (A || h) && i.a.createElement(i.a.Fragment, null, i.a.createElement(u.b, {
 						initialDisplayCount: r,
@@ -1303,7 +1303,7 @@
 						queryVariables: I.current,
 						onDataCB: C,
 						isLoadTestOnly: h && !A
-					})), !A && y)
+					})), !A && j)
 				});
 			t.a = C(I)
 		},
@@ -1540,9 +1540,9 @@
 			})), r.d(t, "clickCancelAwardReportFlow", (function() {
 				return _
 			})), r.d(t, "clickFlagAwardUsage", (function() {
-				return y
-			})), r.d(t, "clickCancelFlagAwardUsage", (function() {
 				return j
+			})), r.d(t, "clickCancelFlagAwardUsage", (function() {
+				return y
 			})), r.d(t, "clickConfirmFlagAwardUsage", (function() {
 				return w
 			})), r.d(t, "clickReportAward", (function() {
@@ -1656,8 +1656,8 @@
 				}),
 				O = g("award_hovercard_report"),
 				_ = g("cancel_award_hovercard_report"),
-				y = g("flag_award"),
-				j = g("cancel_flag_award"),
+				j = g("flag_award"),
+				y = g("cancel_flag_award"),
 				w = g("confirm_flag_award"),
 				x = g("report_community_award"),
 				C = g("cancel_report_community_award"),
@@ -1804,9 +1804,9 @@
 			})), r.d(t, "a", (function() {
 				return _
 			})), r.d(t, "f", (function() {
-				return y
-			})), r.d(t, "h", (function() {
 				return j
+			})), r.d(t, "h", (function() {
+				return y
 			})), r.d(t, "i", (function() {
 				return w
 			}));
@@ -1826,7 +1826,7 @@
 					const {
 						thingId: r,
 						packageId: l
-					} = t, b = !!r, v = o.b(e), h = v ? Object(u.getAwardTypeFromAward)(v) : null, g = b ? h : c.o(e) ? d.GoldPurchaseType.Premium : d.GoldPurchaseType.Coins, O = r ? Object(p.a)(r) ? "comment" : "post" : void 0, _ = l || c.t(e), y = [...Object(a.d)(e), ...Object(a.f)(e)].filter(e => e.mobileId === _)[0], j = t.offerContext || (v && 0 === v.coinPrice ? s.a.StorefrontFreeAward : Object(s.d)(y, b)), w = y ? Math.round(1e4 * (y.baselinePennies - y.pennies) / y.baselinePennies) / 100 : 0, x = y ? Math.round(1e4 * (y.coins - y.baselineCoins) / y.coins) / 100 : 0, C = y ? y.baselinePennies !== y.pennies ? `${w}_percent_price` : y.baselineCoins !== y.coins ? `${x}_percent_bonus` : void 0 : void 0, I = g === d.GoldPurchaseType.Premium ? n.wb : y ? y.pennies : void 0;
+					} = t, b = !!r, v = o.b(e), h = v ? Object(u.getAwardTypeFromAward)(v) : null, g = b ? h : c.o(e) ? d.GoldPurchaseType.Premium : d.GoldPurchaseType.Coins, O = r ? Object(p.a)(r) ? "comment" : "post" : void 0, _ = l || c.t(e), j = [...Object(a.d)(e), ...Object(a.f)(e)].filter(e => e.mobileId === _)[0], y = t.offerContext || (v && 0 === v.coinPrice ? s.a.StorefrontFreeAward : Object(s.d)(j, b)), w = j ? Math.round(1e4 * (j.baselinePennies - j.pennies) / j.baselinePennies) / 100 : 0, x = j ? Math.round(1e4 * (j.coins - j.baselineCoins) / j.coins) / 100 : 0, C = j ? j.baselinePennies !== j.pennies ? `${w}_percent_price` : j.baselineCoins !== j.coins ? `${x}_percent_bonus` : void 0 : void 0, I = g === d.GoldPurchaseType.Premium ? n.wb : j ? j.pennies : void 0;
 					return {
 						...i.defaults(e),
 						comment: r ? i.comment(e, r) : null,
@@ -1839,8 +1839,8 @@
 							type: g,
 							gildedContent: b,
 							contentType: O,
-							numberCoins: y ? y.coins : void 0,
-							offerContext: j,
+							numberCoins: j ? j.coins : void 0,
+							offerContext: y,
 							offerType: C
 						},
 						payment: {
@@ -1895,7 +1895,7 @@
 					action: "click",
 					noun: "confirm"
 				}),
-				y = e => t => ({
+				j = e => t => ({
 					...b(t, {
 						thingId: e
 					}),
@@ -1903,7 +1903,7 @@
 					action: "display",
 					noun: "error"
 				}),
-				j = (e, t, r) => n => {
+				y = (e, t, r) => n => {
 					const s = b(n, {
 						packageId: t,
 						thingId: e,
@@ -2163,7 +2163,7 @@
 			})), r.d(t, "f", (function() {
 				return _
 			})), r.d(t, "a", (function() {
-				return y
+				return j
 			}));
 			var n = r("./src/reddit/models/Gold/ProductOffer.ts"),
 				s = r("./src/reddit/selectors/avatarMarketing.ts"),
@@ -2252,7 +2252,7 @@
 				}),
 				O = g("anniversary_achievement", "view", "anniversary_achievement"),
 				_ = g("anniversary_achievement", "click", "close"),
-				y = g("anniversary_achievement", "click", "equip")
+				j = g("anniversary_achievement", "click", "equip")
 		},
 		"./src/reddit/helpers/trackers/userFlair.ts": function(e, t, r) {
 			"use strict";
@@ -2955,7 +2955,7 @@
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
 						experimentName: n.lb
-					}) === n.yb.Enabled
+					}) === n.zb.Enabled
 				}
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, r) {
@@ -3124,9 +3124,9 @@
 			})), r.d(t, "x", (function() {
 				return _
 			})), r.d(t, "v", (function() {
-				return y
-			})), r.d(t, "y", (function() {
 				return j
+			})), r.d(t, "y", (function() {
+				return y
 			})), r.d(t, "f", (function() {
 				return w
 			})), r.d(t, "g", (function() {
@@ -3171,8 +3171,8 @@
 				g = e => e.features.goldPurchase.payment.postalCode,
 				O = e => e.features.goldPurchase.payment.savedCardsPending,
 				_ = e => e.features.goldPurchase.payment.savedCards,
-				y = e => e.features.goldPurchase.payment.rememberCard,
-				j = e => e.features.goldPurchase.payment.useSavedCard,
+				j = e => e.features.goldPurchase.payment.rememberCard,
+				y = e => e.features.goldPurchase.payment.useSavedCard,
 				w = e => e.features.goldPurchase.payment.cardValidation.cardCvc,
 				x = e => e.features.goldPurchase.payment.cardValidation.cardExpiry,
 				C = e => e.features.goldPurchase.payment.cardValidation.cardNumber,
@@ -3338,4 +3338,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-MediumPost.d13f48a70df8faa72edc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-MediumPost.afa4dd0f35a56b9f8b6f.js.map

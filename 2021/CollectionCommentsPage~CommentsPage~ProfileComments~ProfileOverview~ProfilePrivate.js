@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.6f1b2d8ec4948cc7814f.js
-// Retrieved at 9/15/2021, 7:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.b7711cfcfdd8077618cb.js
+// Retrieved at 9/20/2021, 6:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, n) {
@@ -940,15 +940,15 @@
 				hk: "4WgEW"
 			}));
 			var K = n("./src/reddit/components/Comments/Comment/TopMeta/edited.m.less"),
-				q = n.n(K);
+				Z = n.n(K);
 			const {
-				fbt: Z
+				fbt: q
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), Y = ({
 				compact: e,
 				editedAt: t
 			}) => r.a.createElement(C.a, {
-				className: q.a.editedText
-			}, Z._("edited {time}", [Z._param("time", r.a.createElement(U.d, {
+				className: Z.a.editedText
+			}, q._("edited {time}", [q._param("time", r.a.createElement(U.d, {
 				seconds: t,
 				noPostfix: e,
 				shortenedUnit: e
@@ -3424,13 +3424,13 @@
 				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				a = n("./src/reddit/selectors/posts.ts");
 			const i = e => Object(r.c)(e, {
-					experimentName: o.qd,
+					experimentName: o.rd,
 					experimentEligibilitySelector: r.a
 				}),
-				c = (e, t) => t === o.Ad.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				c = (e, t) => t === o.Bd.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				d = Object(s.a)(a.H, i, (e, t) => c(e, t)),
 				l = Object(s.a)((e, t) => t, i, (e, t) => c(e, t))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.6f1b2d8ec4948cc7814f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.b7711cfcfdd8077618cb.js.map
