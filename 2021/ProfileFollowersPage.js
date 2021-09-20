@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.c0825d59c7a9e476d7d4.js
-// Retrieved at 9/15/2021, 7:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.b1cf19b21767ab038354.js
+// Retrieved at 9/20/2021, 12:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileFollowersPage", "ProfileFollowersAction"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -2192,96 +2192,89 @@
 				})),
 				w = s("./src/reddit/hooks/usePostContext.ts");
 			var I = e => {
-				const {
-					post: t,
-					subredditOrProfile: s
-				} = Object(w.a)(), i = Object(r.useMemo)(() => ({
-					author: t.author,
-					approvedAtUTC: t.approvedAtUTC,
-					approvedBy: t.approvedBy,
-					bannedAtUTC: t.bannedAtUTC,
-					created: t.created,
-					numComments: t.numComments,
-					distinguishType: t.distinguishType,
-					domain: t.source && t.source.displayText,
-					flair: t.flair,
-					id: t.id,
-					isApproved: t.isApproved,
-					isRemoved: t.isRemoved,
-					isSpam: t.isSpam,
-					media: t.media,
-					permalink: t.permalink,
-					removedBy: t.bannedBy,
-					sourceUrl: t.source && t.source.url,
-					subreddit: s ? {
-						id: s.id,
-						name: s.name,
-						type: s.type
-					} : {},
-					title: t.title,
-					voteState: t.voteState
-				}), [t, s]);
-				return n.a.createElement(p, {
+				const t = Object(w.a)(),
+					s = Object(r.useMemo)(() => ({
+						author: null == t ? void 0 : t.post.author,
+						approvedAtUTC: null == t ? void 0 : t.post.approvedAtUTC,
+						approvedBy: null == t ? void 0 : t.post.approvedBy,
+						bannedAtUTC: null == t ? void 0 : t.post.bannedAtUTC,
+						created: null == t ? void 0 : t.post.created,
+						numComments: null == t ? void 0 : t.post.numComments,
+						distinguishType: null == t ? void 0 : t.post.distinguishType,
+						domain: (null == t ? void 0 : t.post.source) && (null == t ? void 0 : t.post.source.displayText),
+						flair: null == t ? void 0 : t.post.flair,
+						id: null == t ? void 0 : t.post.id,
+						isApproved: null == t ? void 0 : t.post.isApproved,
+						isRemoved: null == t ? void 0 : t.post.isRemoved,
+						isSpam: null == t ? void 0 : t.post.isSpam,
+						media: null == t ? void 0 : t.post.media,
+						permalink: null == t ? void 0 : t.post.permalink,
+						removedBy: null == t ? void 0 : t.post.bannedBy,
+						sourceUrl: (null == t ? void 0 : t.post.source) && (null == t ? void 0 : t.post.source.url),
+						subreddit: (null == t ? void 0 : t.subredditOrProfile) ? {
+							id: null == t ? void 0 : t.subredditOrProfile.id,
+							name: null == t ? void 0 : t.subredditOrProfile.name,
+							type: null == t ? void 0 : t.subredditOrProfile.type
+						} : {},
+						title: null == t ? void 0 : t.post.title,
+						voteState: null == t ? void 0 : t.post.voteState
+					}), [t]);
+				return t ? n.a.createElement(p, {
 					className: e.className,
 					type: "post",
-					data: i
-				})
+					data: s
+				}) : null
 			};
 			var _ = e => {
-				const {
-					post: t,
-					subredditOrProfile: s,
-					isModerator: i
-				} = Object(w.a)(), o = Object(r.useMemo)(() => ({
-					author: t.author,
-					isModerator: i,
-					post: {
-						id: t.id
-					},
-					subreddit: s ? {
-						id: s.id,
-						name: s.name,
-						type: s.type
-					} : {}
-				}), [t, s, i]);
-				return n.a.createElement(p, {
+				const t = Object(w.a)(),
+					s = Object(r.useMemo)(() => ({
+						author: null == t ? void 0 : t.post.author,
+						isModerator: null == t ? void 0 : t.isModerator,
+						post: {
+							id: null == t ? void 0 : t.post.id
+						},
+						subreddit: (null == t ? void 0 : t.subredditOrProfile) ? {
+							id: null == t ? void 0 : t.subredditOrProfile.id,
+							name: null == t ? void 0 : t.subredditOrProfile.name,
+							type: null == t ? void 0 : t.subredditOrProfile.type
+						} : {}
+					}), [t]);
+				return t ? n.a.createElement(p, {
 					className: e.className,
 					type: "postAuthor",
-					data: o
-				})
+					data: s
+				}) : null
 			};
 			var O = e => {
-				const {
-					post: t,
-					subredditOrProfile: s
-				} = Object(w.a)(), i = Object(r.useMemo)(() => ({
-					author: t.author,
-					approvedAtUTC: t.approvedAtUTC,
-					approvedBy: t.approvedBy,
-					bannedAtUTC: t.bannedAtUTC,
-					distinguishType: t.distinguishType,
-					flair: t.flair,
-					id: t.id,
-					isApproved: t.isApproved,
-					isRemoved: t.isRemoved,
-					isSpam: t.isSpam,
-					media: t.media,
-					numComments: t.numComments,
-					permalink: t.permalink,
-					removedBy: t.bannedBy,
-					subreddit: s ? {
-						id: s.id,
-						name: s.name,
-						type: s.type
-					} : {},
-					title: t.title,
-					voteState: t.voteState
-				}), [t, s]);
-				return n.a.createElement(p, {
+				const t = Object(w.a)(),
+					s = Object(r.useMemo)(() => ({
+						author: null == t ? void 0 : t.post.author,
+						approvedAtUTC: null == t ? void 0 : t.post.approvedAtUTC,
+						approvedBy: null == t ? void 0 : t.post.approvedBy,
+						bannedAtUTC: null == t ? void 0 : t.post.bannedAtUTC,
+						distinguishType: null == t ? void 0 : t.post.distinguishType,
+						flair: null == t ? void 0 : t.post.flair,
+						id: null == t ? void 0 : t.post.id,
+						isApproved: null == t ? void 0 : t.post.isApproved,
+						isRemoved: null == t ? void 0 : t.post.isRemoved,
+						isSpam: null == t ? void 0 : t.post.isSpam,
+						media: null == t ? void 0 : t.post.media,
+						numComments: null == t ? void 0 : t.post.numComments,
+						permalink: null == t ? void 0 : t.post.permalink,
+						removedBy: null == t ? void 0 : t.post.bannedBy,
+						subreddit: (null == t ? void 0 : t.subredditOrProfile) ? {
+							id: null == t ? void 0 : t.subredditOrProfile.id,
+							name: null == t ? void 0 : t.subredditOrProfile.name,
+							type: null == t ? void 0 : t.subredditOrProfile.type
+						} : {},
+						title: null == t ? void 0 : t.post.title,
+						voteState: null == t ? void 0 : t.post.voteState
+					}), [t]);
+				return t ? n.a.createElement(p, {
 					className: e.className,
 					type: "postModTools",
-					data: i
-				})
+					data: s
+				}) : null
 			};
 			var E = Object(i.b)(() => Object(o.c)({
 				subreddit: f.Q
@@ -6875,4 +6868,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.c0825d59c7a9e476d7d4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.b1cf19b21767ab038354.js.map
