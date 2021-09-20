@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePrivate.f87c89dc41343ffbf21f.js
-// Retrieved at 9/15/2021, 6:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePrivate.a6d3352e408654fda0b5.js
+// Retrieved at 9/20/2021, 5:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePrivate"], {
 		"./node_modules/shallowequal/index.js": function(e, t) {
@@ -636,7 +636,7 @@
 						_ = {
 							estHeight: Object(R.c)(F, i),
 							id: e,
-							isFocusable: !(!N.media || !(i === x.g.Large || i === x.g.Classic && Object(E.G)(N.media))) && (E.d.has(N.media.type) && (!H || !E.s.has(H)) && !N.isSpoiler && !N.isNSFW),
+							isFocusable: !(!N.media || !(i === x.g.Large || i === x.g.Classic && Object(E.G)(N.media))) && (E.d.has(N.media.type) && (!H || !E.s.has(H)) && !N.isSpoiler),
 							trackOnEnteredViewport: M,
 							trackOnExitedViewport: K,
 							render: ({
@@ -1873,4 +1873,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.f87c89dc41343ffbf21f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.a6d3352e408654fda0b5.js.map

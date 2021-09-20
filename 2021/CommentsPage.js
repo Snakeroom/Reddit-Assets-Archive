@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.e1da755d2c53a7f0de0e.js
-// Retrieved at 9/15/2021, 7:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.fd618a79eb6850cc1893.js
+// Retrieved at 9/20/2021, 5:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage"], {
 		"./src/lib/makeLinkedPostsListingKey/index.ts": function(e, t, s) {
@@ -5772,7 +5772,7 @@
 						_ = {
 							estHeight: Object(L.c)(A, o),
 							id: e,
-							isFocusable: !(!F.media || !(o === I.g.Large || o === I.g.Classic && Object(N.G)(F.media))) && (N.d.has(F.media.type) && (!W || !N.s.has(W)) && !F.isSpoiler && !F.isNSFW),
+							isFocusable: !(!F.media || !(o === I.g.Large || o === I.g.Classic && Object(N.G)(F.media))) && (N.d.has(F.media.type) && (!W || !N.s.has(W)) && !F.isSpoiler),
 							trackOnEnteredViewport: D,
 							trackOnExitedViewport: V,
 							render: ({
@@ -8433,4 +8433,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.e1da755d2c53a7f0de0e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.fd618a79eb6850cc1893.js.map

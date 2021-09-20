@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.f968cafbc0f7fa4f6d31.js
-// Retrieved at 9/20/2021, 12:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.3d778b45281c9421474d.js
+// Retrieved at 9/20/2021, 5:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~ModListing", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -7314,7 +7314,7 @@
 						N = {
 							estHeight: Object(P.c)(B, s),
 							id: e,
-							isFocusable: !(!D.media || !(s === I.g.Large || s === I.g.Classic && Object(L.G)(D.media))) && (L.d.has(D.media.type) && (!W || !L.s.has(W)) && !D.isSpoiler && !D.isNSFW),
+							isFocusable: !(!D.media || !(s === I.g.Large || s === I.g.Classic && Object(L.G)(D.media))) && (L.d.has(D.media.type) && (!W || !L.s.has(W)) && !D.isSpoiler),
 							trackOnEnteredViewport: M,
 							trackOnExitedViewport: U,
 							render: ({
@@ -16486,4 +16486,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.f968cafbc0f7fa4f6d31.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.3d778b45281c9421474d.js.map

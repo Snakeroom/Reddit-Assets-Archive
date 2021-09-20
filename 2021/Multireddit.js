@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.64206619b74f773e349d.js
-// Retrieved at 9/15/2021, 7:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.4db27b2e7edf25b3fd54.js
+// Retrieved at 9/20/2021, 5:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -4627,7 +4627,7 @@
 						I = {
 							estHeight: Object(D.c)(P, s),
 							id: e,
-							isFocusable: !(!B.media || !(s === j.g.Large || s === j.g.Classic && Object(L.G)(B.media))) && (L.d.has(B.media.type) && (!H || !L.s.has(H)) && !B.isSpoiler && !B.isNSFW),
+							isFocusable: !(!B.media || !(s === j.g.Large || s === j.g.Classic && Object(L.G)(B.media))) && (L.d.has(B.media.type) && (!H || !L.s.has(H)) && !B.isSpoiler),
 							trackOnEnteredViewport: M,
 							trackOnExitedViewport: z,
 							render: ({
@@ -8205,4 +8205,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.64206619b74f773e349d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.4db27b2e7edf25b3fd54.js.map
