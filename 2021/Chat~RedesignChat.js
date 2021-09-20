@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.afa163a7eebaa4ed357e.js
-// Retrieved at 9/15/2021, 4:10:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.1c442945b832d2467949.js
+// Retrieved at 9/20/2021, 2:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -1087,12 +1087,19 @@
 					const i = {
 						channelId: e,
 						messageData: o.data,
-						message: t.downsized.url,
-						messageType: u.c.GIF.toUpperCase()
+						message: t.downsized.url
 					};
-					Object(v.a)(s(), {
-						input: i
-					})
+					if (!(await Object(v.a)(s(), {
+							input: i
+						})).ok) {
+						const {
+							clientMessageId: e
+						} = o;
+						n(Object(d.U)(e)), n(z({
+							clientMessageId: e,
+							toggle: !0
+						}))
+					}
 				}, B = (e, t) => async (n, a, {
 					gqlContext: s
 				}) => {
@@ -15452,4 +15459,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.afa163a7eebaa4ed357e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.1c442945b832d2467949.js.map
