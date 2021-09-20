@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.1c442945b832d2467949.js
-// Retrieved at 9/20/2021, 2:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.61ebcb6a94c32bec5edc.js
+// Retrieved at 9/20/2021, 7:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -2229,9 +2229,13 @@
 			}, Y = () => async (e, t) => {
 				const n = t();
 				Object(l.c)(n) === r.a.VIEW_INVITE && Object(f.e)(n)
-			}, J = () => async (e, t) => {
-				const n = t();
-				Object(l.c)(n) === r.a.VIEW_INVITE && Object(f.g)(n)
+			}, J = (e, t) => async (n, a) => {
+				const s = a();
+				if (Object(l.c)(s) === r.a.VIEW_INVITE) {
+					const n = t.pop(),
+						a = null == n ? void 0 : n.messageId;
+					Object(f.g)(s, e, a)
+				}
 			}, X = () => async (e, t) => {
 				(e => Object(h.a)({
 					noun: "edit_theme",
@@ -14850,11 +14854,13 @@
 					},
 					...Object(c.a)(e)
 				}),
-				h = e => Object(o.a)({
+				h = (e, t, n) => Object(o.a)({
 					noun: "spam",
 					source: a.b.InvitationInbox,
 					action: a.a.Click,
 					chat: {
+						id: t,
+						message_id: n,
 						...Object(r.i)(e),
 						...Object(r.j)(e),
 						...Object(r.g)(e),
@@ -15459,4 +15465,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.1c442945b832d2467949.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.61ebcb6a94c32bec5edc.js.map
