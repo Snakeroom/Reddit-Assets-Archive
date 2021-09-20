@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.810fbd4ac78b59c9a7b9.js
-// Retrieved at 9/15/2021, 7:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.a0023da373bf65383eb2.js
+// Retrieved at 9/20/2021, 4:10:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -7444,7 +7444,7 @@
 		"./src/reddit/components/SearchResultsContent/redesign.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return Oe
+				return Ee
 			}));
 			var r = s("./src/lib/classNames/index.ts"),
 				n = s("./node_modules/react/index.js"),
@@ -7681,23 +7681,25 @@
 				de = s("./src/reddit/hooks/useTracking.ts"),
 				le = s("./src/reddit/models/DiscoveryUnit/index.ts"),
 				me = s("./src/reddit/models/SearchDiscoveryUnit/index.ts"),
-				ue = s("./src/reddit/selectors/searchDiscoveryUnits.ts"),
-				pe = s("./src/reddit/selectors/searchFix.ts"),
-				he = s("./src/telemetry/index.ts"),
-				be = s("./src/telemetry/models/Timer.ts"),
-				Ce = s("./src/reddit/components/SearchResultsContent/helpers/getHeroPostId.tsx"),
-				xe = s("./src/reddit/components/SearchResultsContent/NoResults/redesign.tsx"),
-				fe = s("./src/reddit/components/SearchResultsContent/SearchResultsPostList.tsx");
-			const ve = () => null,
-				ge = Object(H.c)({
+				ue = s("./src/reddit/selectors/listings.ts"),
+				pe = s("./src/reddit/selectors/searchDiscoveryUnits.ts"),
+				he = s("./src/reddit/selectors/searchFix.ts"),
+				be = s("./src/telemetry/index.ts"),
+				Ce = s("./src/telemetry/models/Timer.ts"),
+				xe = s("./src/reddit/components/SearchResultsContent/helpers/getHeroPostId.tsx"),
+				fe = s("./src/reddit/components/SearchResultsContent/NoResults/redesign.tsx"),
+				ve = s("./src/reddit/components/SearchResultsContent/SearchResultsPostList.tsx");
+			const ge = () => null,
+				ye = Object(H.c)({
 					viewTreatment: d.m,
-					searchDiscoveryUnitsModels: ue.b,
+					searchDiscoveryUnitsModels: pe.b,
 					hasBestResults: d.b,
 					postIds: U.A,
-					posts: U.z
+					posts: U.z,
+					loadMore: ue.g
 				});
 
-			function ye(e) {
+			function Oe(e) {
 				const {
 					listingKey: t,
 					listingName: s,
@@ -7708,58 +7710,59 @@
 					searchDiscoveryUnitsModels: f,
 					hasBestResults: v,
 					postIds: g,
-					posts: y
-				} = Object(o.e)(t => ge(t, e)), O = Object(o.e)(e => Object(w.o)(e, {
+					posts: y,
+					loadMore: O
+				} = Object(o.e)(t => ye(t, e)), E = Object(o.e)(e => Object(w.o)(e, {
 					pageLayer: c
 				})), {
-					username: E,
-					multiredditName: j
-				} = Object(w.d)(c) || {}, _ = Object(p.b)(O || j, E, {
+					username: j,
+					multiredditName: _
+				} = Object(w.d)(c) || {}, k = Object(p.b)(E || _, j, {
 					...i,
 					type: [u.Xb.Posts]
-				}), k = Object(o.e)(e => Object(d.b)(e, {
-					listingKey: _
+				}), S = Object(o.e)(e => Object(d.b)(e, {
+					listingKey: k
 				}));
-				let S;
+				let I;
 				Object(n.useEffect)(() => {
-					if (v && !k && !C()(g) && (m(Object(x.p)(_, g, y, [u.Xb.Posts])), he.c.has(t))) {
-						((e, s) => l(Object(ie.u)(t, i, s, e, c, Object(pe.b)({
+					if (v && !S && !C()(g) && (m(Object(x.p)(k, g, y, [u.Xb.Posts], O)), be.c.has(t))) {
+						((e, s) => l(Object(ie.u)(t, i, s, e, c, Object(he.b)({
 							pageLayer: c
-						}))))(he.c.end(t), be.TimerType.InApp)
+						}))))(be.c.end(t), Ce.TimerType.InApp)
 					}
-				}, [v, k, g]), b === me.c.Trending && (S = Object(Ce.a)(f));
-				const I = Object(h.a)(i.q || ""),
-					N = Object(n.useMemo)(() => Object.values(f).find(e => e.name === le.m || e.name === le.f), [f]);
-				return v ? a.a.createElement(a.a.Fragment, null, S && N && a.a.createElement(oe.a, {
-					key: S,
-					postId: S,
-					discoveryUnit: N,
+				}, [v, S, g]), b === me.c.Trending && (I = Object(xe.a)(f));
+				const N = Object(h.a)(i.q || ""),
+					P = Object(n.useMemo)(() => Object.values(f).find(e => e.name === le.m || e.name === le.f), [f]);
+				return v ? a.a.createElement(a.a.Fragment, null, I && P && a.a.createElement(oe.a, {
+					key: I,
+					postId: I,
+					discoveryUnit: P,
 					searchOptions: i,
 					listingKey: t
 				}, a.a.createElement(ae, {
-					key: S,
-					discoveryUnit: N,
-					postId: S,
+					key: I,
+					discoveryUnit: P,
+					postId: I,
 					listingKey: t,
 					searchOptions: i
-				})), a.a.createElement(fe.a, {
+				})), a.a.createElement(ve.a, {
 					key: "posts",
-					listingKey: _,
+					listingKey: k,
 					listingName: s,
 					location: r,
 					inSubredditOrProfile: !1,
-					noPostsComponent: ve,
+					noPostsComponent: ge,
 					onLoadMore: function() {
 						m(Object(x.q)([u.Xb.Posts]))
 					},
 					searchOptions: i
-				})) : a.a.createElement(xe.a, {
-					query: I,
-					type: xe.b.Posts
+				})) : a.a.createElement(fe.a, {
+					query: N,
+					type: fe.b.Posts
 				})
 			}
 
-			function Oe(e) {
+			function Ee(e) {
 				const {
 					listingKey: t,
 					listingName: s,
@@ -7775,7 +7778,7 @@
 					listingName: s,
 					searchOptions: l,
 					tab: u
-				}) : a.a.createElement(ye, {
+				}) : a.a.createElement(Oe, {
 					key: t,
 					listingKey: t,
 					listingName: s,
@@ -11562,4 +11565,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.810fbd4ac78b59c9a7b9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.a0023da373bf65383eb2.js.map
