@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit.c10bc01fa764f87387b0.js
-// Retrieved at 9/21/2021, 10:00:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit.c8daeef916f6dce342c5.js
+// Retrieved at 9/21/2021, 1:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit"], {
 		"./src/lib/VideoSession/VideoSessionManager.ts": function(e, t, s) {
@@ -709,8 +709,8 @@
 				p = s("./src/reddit/icons/svgs/Hide/index.tsx"),
 				v = s("./src/reddit/icons/svgs/PublicAccessNetwork/index.tsx"),
 				b = s("./src/reddit/icons/svgs/Report/index.tsx"),
-				f = s("./src/reddit/icons/svgs/Rules/index.tsx"),
-				C = s("./src/reddit/icons/svgs/VideoMute/index.tsx"),
+				C = s("./src/reddit/icons/svgs/Rules/index.tsx"),
+				f = s("./src/reddit/icons/svgs/VideoMute/index.tsx"),
 				w = s("./src/reddit/icons/svgs/VideoReplay/index.tsx"),
 				x = s("./src/reddit/icons/svgs/VideoShare/index.tsx"),
 				E = s("./src/reddit/icons/svgs/VideoVolume/index.tsx"),
@@ -738,7 +738,7 @@
 						hk: "Enspe"
 					}),
 					value: "mute"
-				}, e ? o.a.createElement(C.a, {
+				}, e ? o.a.createElement(f.a, {
 					className: g.a.volumeIcon
 				}) : o.a.createElement(E.a, {
 					className: g.a.volumeIcon
@@ -763,7 +763,7 @@
 					iconWrapperClassName: g.a.overflowItemIconWrapper,
 					key: `${y}-rules`,
 					onClick: () => Object(i.e)(d.S, i.d.BLANK)
-				}, o.a.createElement(f.a, {
+				}, o.a.createElement(C.a, {
 					className: g.a.overflowItemIcon
 				})), o.a.createElement(l.b, {
 					className: g.a.overflowItem,
@@ -956,7 +956,7 @@
 			})), s.d(t, "s", (function() {
 				return be
 			})), s.d(t, "m", (function() {
-				return fe
+				return Ce
 			}));
 			s("./node_modules/core-js/modules/web.dom.iterable.js");
 			var a = s("./node_modules/react/index.js"),
@@ -973,8 +973,8 @@
 				p = s("./src/reddit/components/OverflowMenu/index.tsx"),
 				v = s("./src/reddit/components/UserIcon/SnoovatarHeadshot.tsx"),
 				b = s("./src/reddit/constants/posts.ts"),
-				f = s("./src/reddit/controls/Dropdown/Row.tsx"),
-				C = s("./src/reddit/helpers/getSubredditIcon/index.ts"),
+				C = s("./src/reddit/controls/Dropdown/Row.tsx"),
+				f = s("./src/reddit/helpers/getSubredditIcon/index.ts"),
 				w = s("./src/reddit/helpers/getSubredditUrl/index.ts"),
 				x = s("./src/reddit/helpers/userSnoovatar/index.ts"),
 				E = s("./src/reddit/icons/fonts/Downvote/index.tsx"),
@@ -988,13 +988,13 @@
 				R = s("./src/reddit/icons/svgs/Link/index.tsx"),
 				L = s("./src/reddit/icons/svgs/Lock/index.tsx"),
 				T = s("./src/reddit/icons/svgs/Plus/index.tsx"),
-				A = s("./src/reddit/icons/svgs/PublicAccessNetwork/index.tsx"),
-				O = s("./src/reddit/icons/svgs/Remove/index.tsx"),
+				A = s("./src/reddit/icons/svgs/Remove/index.tsx"),
 				j = s("./src/reddit/icons/svgs/Report/index.tsx"),
-				M = s("./src/reddit/icons/svgs/Rules/index.tsx"),
-				V = s("./src/reddit/icons/svgs/Unlock/index.tsx"),
-				D = s("./src/reddit/models/Vote/index.ts"),
-				B = s("./src/reddit/selectors/subreddit.ts"),
+				O = s("./src/reddit/icons/svgs/Rules/index.tsx"),
+				M = s("./src/reddit/icons/svgs/Unlock/index.tsx"),
+				V = s("./src/reddit/icons/svgs/Video/index.tsx"),
+				B = s("./src/reddit/models/Vote/index.ts"),
+				D = s("./src/reddit/selectors/subreddit.ts"),
 				P = s("./src/reddit/selectors/user.ts"),
 				H = s("./src/reddit/components/PublicAccessNetwork/Theater/Overlay/Buttons.tsx"),
 				F = s("./src/reddit/components/PublicAccessNetwork/Theater/Overlay/refresh.m.less"),
@@ -1066,7 +1066,7 @@
 					className: W.a.dropdownLabel
 				}, U._("Pick a Community", null, {
 					hk: "4AfDwd"
-				})), n.map(t => r.a.createElement(f.b, {
+				})), n.map(t => r.a.createElement(C.b, {
 					className: W.a.dropdownRow,
 					displayText: t.prefixedName,
 					key: `rpan-recommended-viewer-subreddits-dropdown-${t.prefixedName}`,
@@ -1113,7 +1113,7 @@
 				dropdownId: ee,
 				onClick: s,
 				icon: r.a.createElement(g.a, null)
-			}, r.a.createElement(f.b, {
+			}, r.a.createElement(C.b, {
 				className: W.a.menuOverflowItem,
 				displayText: U._("Copy Link", null, {
 					hk: "2oo038"
@@ -1123,7 +1123,7 @@
 				onClick: t
 			}, r.a.createElement(R.a, {
 				className: W.a.overflowItemIcon
-			})), r.a.createElement(f.b, {
+			})), r.a.createElement(C.b, {
 				className: W.a.menuOverflowItem,
 				displayText: U._("Crosspost", null, {
 					hk: "QSd6Z"
@@ -1136,7 +1136,7 @@
 			}))), se = i.a.wrapped(_.a, "menuIcon", W.a), ae = e => {
 				let t = 186;
 				if (e) {
-					t += 111 + 40
+					t += 74 + 40
 				}
 				return t
 			}, re = "rpan-overlay-menu", oe = ({
@@ -1160,7 +1160,7 @@
 					overflowY: "auto",
 					bottom: "0px"
 				}
-			}, r.a.createElement(f.b, {
+			}, r.a.createElement(C.b, {
 				className: W.a.overflowItem,
 				displayText: U._("View rules", null, {
 					hk: "haY6r"
@@ -1168,9 +1168,9 @@
 				iconWrapperClassName: W.a.overflowItemIconWrapper,
 				key: `${re}-rules`,
 				onClick: () => Object(c.e)(d.S, c.d.BLANK)
-			}, r.a.createElement(M.a, {
+			}, r.a.createElement(O.a, {
 				className: W.a.overflowItemIcon
-			})), r.a.createElement(f.b, {
+			})), r.a.createElement(C.b, {
 				className: W.a.overflowItem,
 				displayText: U._("Stream from desktop", null, {
 					hk: "4dOdik"
@@ -1178,9 +1178,9 @@
 				iconWrapperClassName: W.a.overflowItemIconWrapper,
 				key: `${re}-rpanstudio`,
 				onClick: l
-			}, r.a.createElement(A.b, {
+			}, r.a.createElement(V.a, {
 				className: W.a.overflowItemIcon
-			})), r.a.createElement(f.b, {
+			})), r.a.createElement(C.b, {
 				className: W.a.overflowItem,
 				displayText: U._("Visit community", null, {
 					hk: "2KViLk"
@@ -1191,7 +1191,7 @@
 					Object(c.e)(Object(w.a)(m), c.d.BLANK)
 				}
 			}, (e => {
-				const t = e && Object(C.a)({
+				const t = e && Object(f.a)({
 					subreddit: e
 				});
 				return t ? r.a.createElement("img", {
@@ -1210,7 +1210,7 @@
 						width: "16px"
 					}
 				})
-			})(m)), r.a.createElement(f.b, {
+			})(m)), r.a.createElement(C.b, {
 				className: W.a.overflowItem,
 				displayText: U._("Report", null, {
 					hk: "4oVcnd"
@@ -1220,7 +1220,7 @@
 				onClick: s
 			}, r.a.createElement(j.a, {
 				className: W.a.overflowItemIcon
-			})), r.a.createElement(f.b, {
+			})), r.a.createElement(C.b, {
 				className: W.a.overflowItem,
 				displayText: U._("Hide", null, {
 					hk: "15vs9C"
@@ -1230,14 +1230,14 @@
 				onClick: t
 			}, r.a.createElement(N.a, {
 				className: W.a.overflowItemIcon
-			})), n && r.a.createElement(r.a.Fragment, null, r.a.createElement(f.b, {
+			})), n && r.a.createElement(r.a.Fragment, null, r.a.createElement(C.b, {
 				className: W.a.headerItem,
 				displayText: U._("Mod Actions", null, {
 					hk: "19zCiw"
 				}),
 				key: `${re}-modaction`,
 				onClick: () => {}
-			}), r.a.createElement(f.b, {
+			}), r.a.createElement(C.b, {
 				className: W.a.overflowItem,
 				displayText: o ? U._("Unlock comments", null, {
 					hk: "Btg6R"
@@ -1247,11 +1247,11 @@
 				iconWrapperClassName: W.a.overflowItemIconWrapper,
 				key: `${re}-lock`,
 				onClick: a
-			}, o ? r.a.createElement(V.a, {
+			}, o ? r.a.createElement(M.a, {
 				className: W.a.overflowItemIcon
 			}) : r.a.createElement(L.a, {
 				className: W.a.overflowItemIcon
-			})), r.a.createElement(f.b, {
+			})), r.a.createElement(C.b, {
 				className: W.a.endBroadcastItem,
 				displayText: U._("Remove broadcast", null, {
 					hk: "3GaDuI"
@@ -1259,17 +1259,17 @@
 				iconWrapperClassName: W.a.overflowItemIconWrapper,
 				key: `${re}-end`,
 				onClick: i
-			}, r.a.createElement(O.a, {
+			}, r.a.createElement(A.a, {
 				className: W.a.endBroadcastIcon
 			})))), ne = Object(o.b)(null, e => ({
 				vote: (t, s) => e(Object(m.a)(t, s))
 			}))(class extends a.Component {
 				constructor(e) {
 					super(e), this.handleUpVote = () => {
-						const e = this.toggleVoteState(D.a.upvoted);
+						const e = this.toggleVoteState(B.a.upvoted);
 						this.vote(e)
 					}, this.handleDownVote = () => {
-						const e = this.toggleVoteState(D.a.downvoted);
+						const e = this.toggleVoteState(B.a.downvoted);
 						this.vote(e)
 					}, this.state = {
 						voteStates: new Map
@@ -1283,7 +1283,7 @@
 						score: e,
 						voteState: t
 					} = this.props.broadcast.post;
-					return null == e ? null : t && void 0 !== this.voteState ? e - Object(D.e)(t) + this.voteState : e
+					return null == e ? null : t && void 0 !== this.voteState ? e - Object(B.e)(t) + this.voteState : e
 				}
 				componentDidMount() {
 					this.setVoteStateFromBroadcastProp()
@@ -1295,8 +1295,8 @@
 					s && !a && this.setVoteStateFromBroadcastProp()
 				}
 				render() {
-					const e = this.voteState === D.a.upvoted,
-						t = this.voteState === D.a.downvoted;
+					const e = this.voteState === B.a.upvoted,
+						t = this.voteState === B.a.downvoted;
 					return r.a.createElement("div", {
 						className: W.a.votePanel
 					}, r.a.createElement(ie, {
@@ -1314,7 +1314,7 @@
 						id: e,
 						voteState: t
 					} = this.props.broadcast.post;
-					this.setVoteState(e, Object(D.e)(t))
+					this.setVoteState(e, Object(B.e)(t))
 				}
 				setVoteState(e, t) {
 					const {
@@ -1328,7 +1328,7 @@
 					}
 				}
 				toggleVoteState(e) {
-					return e === this.voteState ? D.a.notVoted : e
+					return e === this.voteState ? B.a.notVoted : e
 				}
 				vote(e) {
 					const {
@@ -1338,7 +1338,7 @@
 					} = this.props, {
 						id: r
 					} = t.post;
-					this.setVoteState(r, e), this.props.vote(r, e), e === D.a.upvoted ? s() : e === D.a.downvoted && a()
+					this.setVoteState(r, e), this.props.vote(r, e), e === B.a.upvoted ? s() : e === B.a.downvoted && a()
 				}
 			}), ie = ({
 				onClick: e,
@@ -1411,14 +1411,14 @@
 					name: s
 				} = e;
 				return !(!t || !s || "string" != typeof t || "string" != typeof s)
-			}, fe = ({
+			}, Ce = ({
 				profile: e,
 				currentStream: t,
 				onSubscriptionChange: s
 			}) => {
 				const {
 					name: a
-				} = e, o = Ce(a), n = we(a), i = xe(a, !n), c = n ? U._("Unfollow u/{name}", [U._param("name", a)], {
+				} = e, o = fe(a), n = we(a), i = xe(a, !n), c = n ? U._("Unfollow u/{name}", [U._param("name", a)], {
 					hk: "2n0wqa"
 				}) : U._("Follow u/{name}", [U._param("name", a)], {
 					hk: "20X8Bw"
@@ -1434,9 +1434,9 @@
 					isSubscribed: n
 				}));
 				return o && o.enableFollowers ? l : null
-			}, Ce = e => Object(o.e)(t => Object(P.ob)(t, {
+			}, fe = e => Object(o.e)(t => Object(P.ob)(t, {
 				userName: e
-			})), we = e => Object(o.e)(t => Object(B.cb)(t, {
+			})), we = e => Object(o.e)(t => Object(D.cb)(t, {
 				identifier: {
 					name: e,
 					type: b.a.PROFILE
@@ -1455,7 +1455,7 @@
 				const {
 					id: t,
 					name: s
-				} = e, a = Ce(s), o = ke(a), i = o && Object(x.a)(a.accountIcon);
+				} = e, a = fe(s), o = ke(a), i = o && Object(x.a)(a.accountIcon);
 				return r.a.createElement("div", {
 					className: Object(n.a)(W.a.subscribeToProfileAvatar, {
 						[W.a.snoovatarHeadshot]: i
@@ -1632,6 +1632,20 @@
 				d: "M20.7094669,9.4275 L9.29053307,9.4275 C8.86319398,9.4275 8.51636806,9.0915 8.51636806,8.6775 C8.51636806,8.2635 8.86319398,7.9275 9.29053307,7.9275 L20.7094669,7.9275 C21.136806,7.9275 21.4836319,8.2635 21.4836319,8.6775 C21.4836319,9.0915 21.136806,9.4275 20.7094669,9.4275 M20.7094669,14.142 L9.29053307,14.142 C8.86319398,14.142 8.51636806,13.806 8.51636806,13.392 C8.51636806,12.978 8.86319398,12.642 9.29053307,12.642 L20.7094669,12.642 C21.136806,12.642 21.4836319,12.978 21.4836319,13.392 C21.4836319,13.806 21.136806,14.142 20.7094669,14.142 M20.7094669,18.858 L9.29053307,18.858 C8.86319398,18.858 8.51636806,18.522 8.51636806,18.108 C8.51636806,17.6925 8.86319398,17.358 9.29053307,17.358 L20.7094669,17.358 C21.136806,17.358 21.4836319,17.6925 21.4836319,18.108 C21.4836319,18.522 21.136806,18.858 20.7094669,18.858 M20.7094669,23.5725 L9.29053307,23.5725 C8.86319398,23.5725 8.51636806,23.2365 8.51636806,22.8225 C8.51636806,22.407 8.86319398,22.0725 9.29053307,22.0725 L20.7094669,22.0725 C21.136806,22.0725 21.4836319,22.407 21.4836319,22.8225 C21.4836319,23.2365 21.136806,23.5725 20.7094669,23.5725 M23.95167,4.5 L20.4570891,4.5 C19.9198186,3.6075 18.9335324,3 17.7893165,3 L12.2106835,3 C11.0664676,3 10.0801814,3.6075 9.54291086,4.5 L6.04833002,4.5 C5.19365185,4.5 4.5,5.172 4.5,6 L4.5,25.5 C4.5,26.328 5.19365185,27 6.04833002,27 L23.95167,27 C24.8063482,27 25.5,26.328 25.5,25.5 L25.5,6 C25.5,5.172 24.8063482,4.5 23.95167,4.5"
 			})))
 		},
+		"./src/reddit/icons/svgs/Video/index.tsx": function(e, t, s) {
+			"use strict";
+			var a = s("./node_modules/react/index.js"),
+				r = s.n(a);
+			t.a = e => r.a.createElement("svg", {
+				className: e.className,
+				xmlns: "http://www.w3.org/2000/svg",
+				viewBox: "0 0 20 20"
+			}, r.a.createElement("g", {
+				transform: "translate(3, 4)"
+			}, r.a.createElement("path", {
+				d: "M15.4927,2.1514 C15.1797,1.9734 14.7947,1.9784 14.4857,2.1644 L11.9997,3.6554 L11.9997,2.0004 C11.9997,0.8974 11.1027,0.0004 9.9997,0.0004 L1.9997,0.0004 C0.8967,0.0004 -0.0003,0.8974 -0.0003,2.0004 L-0.0003,10.0004 C-0.0003,11.1034 0.8967,12.0004 1.9997,12.0004 L9.9997,12.0004 C11.1027,12.0004 11.9997,11.1034 11.9997,10.0004 L11.9997,8.3664 L14.4907,9.8394 C14.6477,9.9324 14.8237,9.9784 14.9997,9.9784 C15.1707,9.9784 15.3417,9.9344 15.4957,9.8474 C15.8077,9.6694 15.9997,9.3384 15.9997,8.9784 L15.9997,3.0214 C15.9997,2.6614 15.8057,2.3284 15.4927,2.1514"
+			})))
+		},
 		"./src/reddit/icons/svgs/VideoShare/index.m.less": function(e, t, s) {
 			e.exports = {
 				icon: "fpaVW-I8iox1soX0hTuwb"
@@ -1662,4 +1676,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit.c10bc01fa764f87387b0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit.c8daeef916f6dce342c5.js.map
