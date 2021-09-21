@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.81a45be51329734a4ba3.js
-// Retrieved at 9/21/2021, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.92e39fe676e53d800067.js
+// Retrieved at 9/21/2021, 11:10:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -2491,13 +2491,13 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("145527"),
+				buildNumber: r("145536"),
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1632234495"),
+				})("1632235819"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -4994,14 +4994,14 @@
 					}))
 				},
 				z = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c68c56ddde555a2280289ad5945108a0276ef29c5-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c094eb4033f6ed060fec7ed966a7391db9cae77eb-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${v.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "68c56ddde555a2280289ad5945108a0276ef29c5-production",
+						release: "094eb4033f6ed060fec7ed966a7391db9cae77eb-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -5514,7 +5514,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "68c56ddde555a2280289ad5945108a0276ef29c5-production",
+						releaseClient: "094eb4033f6ed060fec7ed966a7391db9cae77eb-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -24603,12 +24603,10 @@
 			"use strict";
 			i.d(t, "a", (function() {
 				return o
-			})), i.d(t, "d", (function() {
-				return d
 			})), i.d(t, "c", (function() {
-				return a
+				return d
 			})), i.d(t, "b", (function() {
-				return u
+				return l
 			}));
 			var n, r = i("./node_modules/fbt/lib/FbtPublic.js"),
 				s = i("./src/lib/constants/index.ts");
@@ -24618,78 +24616,99 @@
 			n.Second;
 			var o;
 			! function(e) {
-				e.Achievements = "ACHIEVEMENT_FLAIRS", e.SdVideo = "SD_VIDEO", e.HdVideo = "HD_VIDEO", e.CommentsWithGifs = "COMMENTS_WITH_GIFS", e.CommentsWithEmoji = "COMMENTS_WITH_EMOJI", e.PostsImageUpload = "POSTS_IMAGE_UPLOAD", e.HeroStatus = "HERO_STATUS", e.CommentRecognition = "COMMENT_RECOGNITION", e.PowerupsAward = "POWERUPS_AWARD", e.CommunityGear = "COMMUNITY_GEAR", e.More = "MORE"
+				e.Achievements = "ACHIEVEMENT_FLAIRS", e.SdVideo = "SD_VIDEO", e.HdVideo = "HD_VIDEO", e.CommentsWithGifs = "COMMENTS_WITH_GIFS", e.CommentsWithEmoji = "COMMENTS_WITH_EMOJI", e.PostsImageUpload = "POSTS_IMAGE_UPLOAD", e.HeroStatus = "HERO_STATUS", e.CommentRecognition = "COMMENT_RECOGNITION", e.PowerupsAward = "POWERUPS_AWARD", e.CommunityGear = "COMMUNITY_AVATAR_GEAR", e.More = "MORE"
 			}(o || (o = {}));
 			const d = {
-					[o.CommentRecognition]: () => r.fbt._("Comment Recognition", null, {
-						hk: "3sxu4T"
+					[o.CommentRecognition]: () => ({
+						title: r.fbt._("Comment Recognition", null, {
+							hk: "3sxu4T"
+						}),
+						description: r.fbt._("Stand out in the comments with a ring around your avatar", null, {
+							hk: "4FXS1Z"
+						})
 					}),
-					[o.PowerupsAward]: () => r.fbt._("Powerups Award", null, {
-						hk: "k1D64"
+					[o.PowerupsAward]: () => ({
+						title: r.fbt._("Powerups Award", null, {
+							hk: "k1D64"
+						}),
+						description: r.fbt._("Exclusive awards to use in your community", null, {
+							hk: "1FdKZ7"
+						})
 					}),
-					[o.Achievements]: () => r.fbt._("Achievements", null, {
-						hk: "15Pxs"
+					[o.Achievements]: () => ({
+						title: r.fbt._("Achievements", null, {
+							hk: "15Pxs"
+						}),
+						description: r.fbt._("Recognize members' contributions and skills", null, {
+							hk: "lhUOn"
+						})
 					}),
-					[o.CommunityGear]: () => r.fbt._("Community Gear", null, {
-						hk: "7Lg71"
+					[o.CommunityGear]: () => ({
+						title: r.fbt._("Community Gear", null, {
+							hk: "7Lg71"
+						}),
+						description: r.fbt._("Show your support with exclusive gear", null, {
+							hk: "w3r3L"
+						}),
+						isNew: !0
 					}),
-					[o.SdVideo]: () => r.fbt._("SD video", null, {
-						hk: "GDxZa"
+					[o.SdVideo]: () => ({
+						title: r.fbt._("SD video", null, {
+							hk: "GDxZa"
+						}),
+						description: ""
 					}),
-					[o.HdVideo]: () => r.fbt._("HD Video", null, {
-						hk: "2KPR6O"
+					[o.HdVideo]: () => ({
+						title: r.fbt._("HD Video", null, {
+							hk: "2KPR6O"
+						}),
+						description: r.fbt._("Upload and watch in greater resolution", null, {
+							hk: "1rvNwn"
+						})
 					}),
-					[o.CommentsWithGifs]: () => r.fbt._("GIF Replies", null, {
-						hk: "1wXiEa"
+					[o.CommentsWithGifs]: () => ({
+						title: r.fbt._("GIF Replies", null, {
+							hk: "1wXiEa"
+						}),
+						description: r.fbt._("Throw a GIF in the thread when words won’t do", null, {
+							hk: "4ATk7M"
+						})
 					}),
-					[o.CommentsWithEmoji]: () => r.fbt._("Custom Emojis", null, {
-						hk: "2qt00u"
+					[o.CommentsWithEmoji]: () => ({
+						title: r.fbt._("Custom Emojis", null, {
+							hk: "2qt00u"
+						}),
+						description: r.fbt._("Use emojis made just for this community", null, {
+							hk: "4cQwCT"
+						})
 					}),
-					[o.PostsImageUpload]: () => r.fbt._("Upload images", null, {
-						hk: "1P6ot7"
+					[o.PostsImageUpload]: () => ({
+						title: r.fbt._("Upload images", null, {
+							hk: "1P6ot7"
+						}),
+						description: ""
 					}),
-					[o.HeroStatus]: e => e ? r.fbt._("Supporter Status", null, {
-						hk: "Ktd1n"
-					}) : r.fbt._("Hero Status", null, {
-						hk: "miGwE"
+					[o.HeroStatus]: e => ({
+						title: e ? r.fbt._("Supporter Status", null, {
+							hk: "Ktd1n"
+						}) : r.fbt._("Hero Status", null, {
+							hk: "miGwE"
+						}),
+						description: e ? r.fbt._("Get on the supporters list and instantly access all perks", null, {
+							hk: "1Hzfaa"
+						}) : r.fbt._("Get on the heroes list and instantly access all perks", null, {
+							hk: "2bnnTY"
+						})
 					}),
-					[o.More]: () => r.fbt._("More to come...", null, {
-						hk: "3ksSuD"
+					[o.More]: () => ({
+						title: r.fbt._("More to come...", null, {
+							hk: "3ksSuD"
+						}),
+						description: void 0
 					})
 				},
-				a = {
-					[o.CommentRecognition]: () => r.fbt._("Stand out in the comments with a ring around your avatar", null, {
-						hk: "4FXS1Z"
-					}),
-					[o.PowerupsAward]: () => r.fbt._("Exclusive awards to use in your community", null, {
-						hk: "1FdKZ7"
-					}),
-					[o.Achievements]: () => r.fbt._("Recognize members' contributions and skills", null, {
-						hk: "lhUOn"
-					}),
-					[o.CommunityGear]: () => r.fbt._("Show Reddit what community you support", null, {
-						hk: "1x50Tl"
-					}),
-					[o.SdVideo]: () => "",
-					[o.HdVideo]: () => r.fbt._("Upload and watch in greater resolution", null, {
-						hk: "1rvNwn"
-					}),
-					[o.CommentsWithGifs]: () => r.fbt._("Throw a GIF in the thread when words won’t do", null, {
-						hk: "4ATk7M"
-					}),
-					[o.CommentsWithEmoji]: () => r.fbt._("Use emojis made just for this community", null, {
-						hk: "4cQwCT"
-					}),
-					[o.PostsImageUpload]: () => "",
-					[o.HeroStatus]: e => e ? r.fbt._("Get on the supporters list and instantly access all perks", null, {
-						hk: "1Hzfaa"
-					}) : r.fbt._("Get on the heroes list and instantly access all perks", null, {
-						hk: "2bnnTY"
-					}),
-					[o.More]: () => void 0
-				},
-				l = [s.E, s.D, s.Ib],
-				u = e => !e.supporterInfo || !e.supporterInfo.displayName || l.includes(e.supporterInfo.displayName)
+				a = [s.E, s.D, s.Ib],
+				l = e => !e.supporterInfo || !e.supporterInfo.displayName || a.includes(e.supporterInfo.displayName)
 		},
 		"./src/reddit/models/GqlTopLevelField.ts": function(e, t, i) {
 			"use strict";
@@ -40942,4 +40961,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.81a45be51329734a4ba3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.92e39fe676e53d800067.js.map

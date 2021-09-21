@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.3a0966af183f93d90798.js
-// Retrieved at 9/21/2021, 10:00:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.bb6abfe75336ce286819.js
+// Retrieved at 9/21/2021, 11:10:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsMarketingModal"], {
 		"./src/reddit/components/Econ/Common/BenefitTile/index.m.less": function(e, t, s) {
@@ -323,7 +323,7 @@
 				O = s("./src/reddit/components/Econ/Common/BenefitTile/index.tsx"),
 				v = s("./src/reddit/models/Gold/Powerups/index.ts"),
 				M = s("./src/reddit/selectors/experiments/econ/powerupsAward.ts");
-			const I = [v.a.CommentRecognition, v.a.PowerupsAward, v.a.CommentsWithGifs, v.a.CommentsWithEmoji, v.a.Achievements, v.a.CommunityGear, v.a.HeroStatus, v.a.HdVideo],
+			const I = [v.a.CommentRecognition, v.a.PowerupsAward, v.a.CommunityGear, v.a.CommentsWithGifs, v.a.CommentsWithEmoji, v.a.Achievements, v.a.HeroStatus, v.a.HdVideo],
 				y = Object(a.a)([M.b, k.i, k.j], (e, t, s) => {
 					let n = I;
 					return e || (n = n.filter(e => e !== v.a.PowerupsAward)), t || (n = n.filter(e => e !== v.a.CommentRecognition)), s || (n = n.filter(e => e !== v.a.CommunityGear)), n
@@ -339,15 +339,16 @@
 					} = e, s = Object(f.a)(), n = Object(r.e)(y), a = Object(r.e)(k.h), c = R(n);
 					return o.a.createElement("div", {
 						className: Object(i.a)(L.a.container, t)
-					}, c.map(e => v.d[e] && o.a.createElement(O.a, {
+					}, c.map(e => v.c[e]().title && o.a.createElement(O.a, {
 						className: L.a.benefit,
-						description: v.c[e](a),
+						description: v.c[e](a).description,
 						iconUrl: `${C.a.assetPath}/img/powerups/${e}_v3.png`,
 						key: `cell_${e}`,
 						onClick: () => {
 							s(Object(x.g)(e))
 						},
-						title: v.d[e](a)
+						title: v.c[e](a).title,
+						isNew: v.c[e](a).isNew
 					})))
 				},
 				H = s("./src/reddit/components/Econ/PowerupsMarketingModal/Header/index.tsx"),
@@ -597,4 +598,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.3a0966af183f93d90798.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.bb6abfe75336ce286819.js.map
