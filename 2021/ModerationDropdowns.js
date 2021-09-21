@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.962a3e5bdddfdabe36e8.js
-// Retrieved at 9/20/2021, 8:00:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.b45da817bbf1a303a1d2.js
+// Retrieved at 9/21/2021, 9:30:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./node_modules/uuid/index.js": function(e, t, n) {
@@ -139,7 +139,7 @@
 					}))
 				}, S = e => `viewing-comment-${e}`, T = o.a.telemetry.commentConsumedThreshold, M = e => async (t, n) => {
 					const s = n();
-					if (!Object(_.a)(s, {
+					if (!Object(_.b)(s, {
 							commentId: e
 						}) || Math.random() > o.a.telemetry.commentSampleRate) return;
 					O.g({
@@ -154,7 +154,7 @@
 				}, L = (e, t) => async (n, o) => {
 					const s = o(),
 						i = S(e);
-					if (Object(_.a)(s, {
+					if (Object(_.b)(s, {
 							commentId: e
 						}) && r.c.has(i)) {
 						const n = r.c.end(i);
@@ -385,7 +385,7 @@
 				}, E = (e, t, n) => async (r, i, {
 					gqlContext: a
 				}) => {
-					const c = Object(f.a)(i(), {
+					const c = Object(f.b)(i(), {
 						commentId: e
 					});
 					if (!c) return;
@@ -3066,4 +3066,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.962a3e5bdddfdabe36e8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.b45da817bbf1a303a1d2.js.map

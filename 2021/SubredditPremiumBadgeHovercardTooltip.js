@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeHovercardTooltip.0dccd25cdbefd3e0aa66.js
-// Retrieved at 9/15/2021, 5:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeHovercardTooltip.f6beb5db98df34bf7809.js
+// Retrieved at 9/21/2021, 9:30:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumBadgeHovercardTooltip"], {
 		"./node_modules/lodash/flattenDeep.js": function(e, t, r) {
@@ -2953,7 +2953,7 @@
 					if (Object(p.q)(e, {
 							subredditId: t
 						})) return !0;
-					const i = "replyToPost" !== r && Object(m.a)(e, {
+					const i = "replyToPost" !== r && Object(m.b)(e, {
 						commentId: r
 					});
 					if (i && Object(a.a)(i)) return !0;
@@ -3002,4 +3002,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeHovercardTooltip.0dccd25cdbefd3e0aa66.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeHovercardTooltip.f6beb5db98df34bf7809.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.0beac3ad38a130b26b45.js
-// Retrieved at 9/20/2021, 8:00:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.0eb2ab7fdb528c7815c1.js
+// Retrieved at 9/21/2021, 9:30:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileFollowersPage", "ProfileFollowersAction"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -2112,7 +2112,7 @@
 				b = s("./src/reddit/selectors/commentSelector.ts"),
 				f = s("./src/reddit/selectors/subreddit.ts");
 			const v = (e, t) => {
-				const s = Object(b.a)(e, t),
+				const s = Object(b.b)(e, t),
 					r = Object(f.F)(e, t);
 				return {
 					comment: s,
@@ -2151,7 +2151,7 @@
 				}
 			}));
 			const x = (e, t) => {
-				const s = Object(b.a)(e, t),
+				const s = Object(b.b)(e, t),
 					r = Object(f.F)(e, t);
 				return {
 					comment: s,
@@ -6869,4 +6869,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.0beac3ad38a130b26b45.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.0eb2ab7fdb528c7815c1.js.map

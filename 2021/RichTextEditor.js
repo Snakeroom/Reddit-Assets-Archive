@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.ff2421d3f3f899fab411.js
-// Retrieved at 9/20/2021, 8:00:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.f380b4095e0175f4a887.js
+// Retrieved at 9/21/2021, 9:30:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, o) {
@@ -1005,7 +1005,7 @@
 					}));
 					else {
 						if (_.error && _.error.type === s.Hb) {
-							const e = Object(V.a)(m, {
+							const e = Object(V.b)(m, {
 								commentId: r
 							});
 							if (!e) return;
@@ -1400,7 +1400,7 @@
 					}))
 				}, D = e => `viewing-comment-${e}`, M = n.a.telemetry.commentConsumedThreshold, I = e => async (t, o) => {
 					const s = o();
-					if (!Object(k.a)(s, {
+					if (!Object(k.b)(s, {
 							commentId: e
 						}) || Math.random() > n.a.telemetry.commentSampleRate) return;
 					x.g({
@@ -1415,7 +1415,7 @@
 				}, A = (e, t) => async (o, n) => {
 					const s = n(),
 						a = D(e);
-					if (Object(k.a)(s, {
+					if (Object(k.b)(s, {
 							commentId: e
 						}) && r.c.has(a)) {
 						const o = r.c.end(a);
@@ -4754,4 +4754,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.ff2421d3f3f899fab411.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.f380b4095e0175f4a887.js.map

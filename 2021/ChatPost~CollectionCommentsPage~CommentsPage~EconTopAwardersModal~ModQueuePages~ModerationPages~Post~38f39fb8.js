@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.aafaa189763308c16461.js
-// Retrieved at 9/20/2021, 8:00:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.799e00e6706ecb603853.js
+// Retrieved at 9/21/2021, 9:30:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8"], {
 		"./src/reddit/actions/economics/subredditPremium/actionCreators.ts": function(e, t, r) {
@@ -1495,7 +1495,7 @@
 				b = r("./src/reddit/selectors/commentSelector.ts"),
 				f = r("./src/reddit/selectors/subreddit.ts");
 			const w = (e, t) => {
-				const r = Object(b.a)(e, t),
+				const r = Object(b.b)(e, t),
 					s = Object(f.F)(e, t);
 				return {
 					comment: r,
@@ -1534,7 +1534,7 @@
 				}
 			}));
 			const v = (e, t) => {
-				const r = Object(b.a)(e, t),
+				const r = Object(b.b)(e, t),
 					s = Object(f.F)(e, t);
 				return {
 					comment: r,
@@ -2927,7 +2927,7 @@
 					if (Object(p.q)(e, {
 							subredditId: t
 						})) return !0;
-					const n = "replyToPost" !== r && Object(m.a)(e, {
+					const n = "replyToPost" !== r && Object(m.b)(e, {
 						commentId: r
 					});
 					if (n && Object(a.a)(n)) return !0;
@@ -3037,4 +3037,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.aafaa189763308c16461.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.799e00e6706ecb603853.js.map

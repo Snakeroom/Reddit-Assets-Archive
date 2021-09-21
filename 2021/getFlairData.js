@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/getFlairData.f99747ed0d1870244d71.js
-// Retrieved at 9/13/2021, 3:50:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/getFlairData.d63f2a11803aa8f00d73.js
+// Retrieved at 9/21/2021, 9:30:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["getFlairData"], {
 		"./src/reddit/actions/economics/powerups/constants.ts": function(e, r, t) {
@@ -53,24 +53,24 @@
 						subredditId: t,
 						userId: c
 					}) : void 0,
-					a = {
+					p = {
 						achievementFlairId: null == l ? void 0 : l.type,
 						achievementFlairTitle: null == l ? void 0 : l.name
 					};
 				if (!(null == o ? void 0 : o.displaySettings.isUserEnabled) || !(null == o ? void 0 : o.applied)) return {
 					isActive: !1,
-					...a
+					...p
 				};
-				const p = o.applied.templateId,
+				const a = o.applied.templateId,
 					v = Object(d.g)(o.applied);
 				return v ? {
-					id: p,
+					id: a,
 					title: v,
 					isActive: !0,
-					...a
+					...p
 				} : {
 					isActive: !1,
-					...a
+					...p
 				}
 			}
 		},
@@ -84,13 +84,13 @@
 			var o = t("./node_modules/icepick/icepick.js"),
 				c = t("./src/reddit/actions/economics/powerups/constants.ts");
 			const l = {},
-				a = e => {
+				p = e => {
 					var r, t;
 					return (null === (r = e.find(({
 						isPreferred: e
 					}) => e)) || void 0 === r ? void 0 : r.type) || (null === (t = e[0]) || void 0 === t ? void 0 : t.type)
 				},
-				p = {};
+				a = {};
 			r.a = Object(d.c)({
 				subredditPowerupsFlairs: (e = u, r) => {
 					switch (r.type) {
@@ -136,8 +136,8 @@
 									o = u.map(({
 										type: e
 									}) => e),
-									c = a(t),
-									l = a(u);
+									c = p(t),
+									l = p(u);
 								s = {
 									...s,
 									[e]: {
@@ -184,7 +184,7 @@
 							return e
 					}
 				},
-				usersSupportedSubreddits: (e = p, r) => {
+				usersSupportedSubreddits: (e = a, r) => {
 					switch (r.type) {
 						case c.h: {
 							let t = {};
@@ -217,7 +217,7 @@
 			t.d(r, "c", (function() {
 				return c
 			})), t.d(r, "d", (function() {
-				return a
+				return p
 			})), t.d(r, "e", (function() {
 				return v
 			})), t.d(r, "b", (function() {
@@ -250,9 +250,9 @@
 					return r && t ? null === (s = null === (d = e.features.powerups.subredditUserPowerupsFlairs) || void 0 === d ? void 0 : d[r]) || void 0 === s ? void 0 : s[t] : null
 				},
 				l = Object(d.a)(c, e => (null == e ? void 0 : e.pendingPreferredType) || (null == e ? void 0 : e.achievementDisplayType)),
-				a = Object(d.a)([o, l], (e, r) => e && r ? e[r] : null),
-				p = Object(d.a)(c, e => null == e ? void 0 : e.supporterDisplayType),
-				v = Object(d.a)([o, p], (e, r) => e && r ? e[r] : null),
+				p = Object(d.a)([o, l], (e, r) => e && r ? e[r] : null),
+				a = Object(d.a)(c, e => null == e ? void 0 : e.supporterDisplayType),
+				v = Object(d.a)([o, a], (e, r) => e && r ? e[r] : null),
 				f = Object(d.a)([o, c], (e, r) => {
 					if (!e) return [];
 					const t = r ? [...r.supporterTypes, ...r.achievementTypes] : [],
@@ -266,7 +266,7 @@
 				_ = (e, {
 					commentId: r
 				}) => {
-					const t = Object(s.a)(e, {
+					const t = Object(s.b)(e, {
 							commentId: r
 						}),
 						d = null == t ? void 0 : t.subredditId,
@@ -285,4 +285,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/getFlairData.f99747ed0d1870244d71.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/getFlairData.d63f2a11803aa8f00d73.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.7d068a539a9bd258ce09.js
-// Retrieved at 9/20/2021, 8:00:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.5d53468a983eb66f15c4.js
+// Retrieved at 9/21/2021, 9:30:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -1575,7 +1575,7 @@
 									const s = t.payload.name,
 										a = O(t.payload),
 										i = r(),
-										c = Object(V.a)(i, {
+										c = Object(V.b)(i, {
 											commentId: s
 										}),
 										d = !(!s || !X[s]);
@@ -1605,7 +1605,7 @@
 								case R.UPDATE_COMMENT: {
 									const s = t.payload.name,
 										a = r(),
-										i = Object(V.a)(a, {
+										i = Object(V.b)(a, {
 											commentId: s
 										}),
 										c = O(t.payload);
@@ -1625,7 +1625,7 @@
 									const s = t.payload.name,
 										n = t.payload.score,
 										a = r(),
-										i = Object(V.a)(a, {
+										i = Object(V.b)(a, {
 											commentId: s
 										});
 									i && o(J({
@@ -1640,7 +1640,7 @@
 								case R.DELETE_COMMENT: {
 									const e = t.payload.name,
 										s = r(),
-										n = Object(V.a)(s, {
+										n = Object(V.b)(s, {
 											commentId: e
 										});
 									n && !n.isDeleted ? o(Q({
@@ -1652,7 +1652,7 @@
 									const e = t.payload.link_id,
 										s = t.payload.name,
 										n = r(),
-										a = Object(V.a)(n, {
+										a = Object(V.b)(n, {
 											commentId: s
 										}),
 										i = (n.user.account && n.user.account.id) === (a && a.authorId),
@@ -2117,7 +2117,7 @@
 				jt = re.a.span("ReplyAuthor", It.a),
 				Mt = re.a.div("ReplyWrapper", It.a);
 			var Nt = Object(d.b)(() => Object(l.c)({
-					comment: V.a
+					comment: V.b
 				}))(({
 					comment: e,
 					commentId: t,
@@ -2174,7 +2174,7 @@
 			const Ht = (e, {
 				commentId: t
 			}) => {
-				const s = Object(V.a)(e, {
+				const s = Object(V.b)(e, {
 					commentId: t
 				});
 				if (s && s.associatedAwardId) return Object(Wt.a)(e, s.associatedAwardId)
@@ -2208,7 +2208,7 @@
 							postOrCommentId: t
 						})
 					},
-					comment: V.a,
+					comment: V.b,
 					errorMsgs: K.G,
 					flair: K.e,
 					isActive: (e, {
@@ -3739,7 +3739,7 @@
 				b = (e, {
 					commentId: t
 				}) => {
-					const s = Object(o.a)(e, {
+					const s = Object(o.b)(e, {
 							commentId: t
 						}),
 						n = null == s ? void 0 : s.subredditId,
@@ -3798,7 +3798,7 @@
 				d = (e, {
 					commentId: t
 				}) => {
-					const s = Object(r.a)(e, {
+					const s = Object(r.b)(e, {
 						commentId: t
 					});
 					return s && s.commentType === n.b.Prediction && c(e, s) || null
@@ -3830,4 +3830,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.7d068a539a9bd258ce09.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.5d53468a983eb66f15c4.js.map

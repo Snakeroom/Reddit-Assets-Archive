@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.e52be9e5f03c184b5099.js
-// Retrieved at 9/20/2021, 8:00:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.1d868dbda885cc51700b.js
+// Retrieved at 9/21/2021, 9:30:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, n) {
@@ -4399,7 +4399,7 @@
 				h = n("./src/reddit/selectors/commentSelector.ts"),
 				f = n("./src/reddit/selectors/subreddit.ts");
 			const g = (e, t) => {
-				const n = Object(h.a)(e, t),
+				const n = Object(h.b)(e, t),
 					s = Object(f.F)(e, t);
 				return {
 					comment: n,
@@ -4438,7 +4438,7 @@
 				}
 			}));
 			const _ = (e, t) => {
-				const n = Object(h.a)(e, t),
+				const n = Object(h.b)(e, t),
 					s = Object(f.F)(e, t);
 				return {
 					comment: n,
@@ -14078,7 +14078,7 @@
 					if (Object(p.q)(e, {
 							subredditId: t
 						})) return !0;
-					const r = "replyToPost" !== n && Object(m.a)(e, {
+					const r = "replyToPost" !== n && Object(m.b)(e, {
 						commentId: n
 					});
 					if (r && Object(o.a)(r)) return !0;
@@ -14255,4 +14255,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.e52be9e5f03c184b5099.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.1d868dbda885cc51700b.js.map

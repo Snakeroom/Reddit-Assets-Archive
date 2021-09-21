@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.f72b23a8972d006a0b22.js
-// Retrieved at 9/20/2021, 8:00:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.852c0383d6d9961585d9.js
+// Retrieved at 9/21/2021, 9:30:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -6865,7 +6865,7 @@
 				xt = s("./src/reddit/components/SearchDiscoveryUnits/HeroUnit/UnthreadedComment.m.less"),
 				ft = s.n(xt);
 			const vt = Object(o.c)({
-					comment: (e, t) => Object(Ct.a)(e, t),
+					comment: (e, t) => Object(Ct.b)(e, t),
 					flair: bt.e,
 					subreddit: I.F
 				}),
@@ -11474,7 +11474,7 @@
 				b = (e, {
 					commentId: t
 				}) => {
-					const s = Object(n.a)(e, {
+					const s = Object(n.b)(e, {
 							commentId: t
 						}),
 						r = null == s ? void 0 : s.subredditId,
@@ -11570,4 +11570,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.f72b23a8972d006a0b22.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.852c0383d6d9961585d9.js.map

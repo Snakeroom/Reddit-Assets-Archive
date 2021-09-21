@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.742127e0ee41ae291c87.js
-// Retrieved at 9/20/2021, 8:00:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.aff3e2dc309de06a76d5.js
+// Retrieved at 9/21/2021, 9:30:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost", "Reddit~StandalonePostPage~reddit-components-MediumPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -6598,7 +6598,7 @@
 						a = l.find(e => e >= n),
 						c = s ? Object(i.H)(e, {
 							postId: s
-						}) || Object(o.a)(e, {
+						}) || Object(o.b)(e, {
 							commentId: s
 						}) : void 0;
 					return t.reduce((e, t) => (t && (e[t.id] = m({
@@ -6915,4 +6915,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.742127e0ee41ae291c87.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.aff3e2dc309de06a76d5.js.map

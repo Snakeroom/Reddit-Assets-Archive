@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.ae65d3d537e3a80c6ff9.js
-// Retrieved at 9/20/2021, 8:00:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.1701490162a3cae7b112.js
+// Retrieved at 9/21/2021, 9:30:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -1597,7 +1597,7 @@
 					}));
 					else {
 						if (g.error && g.error.type === o.Hb) {
-							const e = Object(K.a)(m, {
+							const e = Object(K.b)(m, {
 								commentId: r
 							});
 							if (!e) return;
@@ -1992,7 +1992,7 @@
 					}))
 				}, I = e => `viewing-comment-${e}`, T = s.a.telemetry.commentConsumedThreshold, A = e => async (t, n) => {
 					const o = n();
-					if (!Object(P.a)(o, {
+					if (!Object(P.b)(o, {
 							commentId: e
 						}) || Math.random() > s.a.telemetry.commentSampleRate) return;
 					v.g({
@@ -2007,7 +2007,7 @@
 				}, R = (e, t) => async (n, s) => {
 					const o = s(),
 						a = I(e);
-					if (Object(P.a)(o, {
+					if (Object(P.b)(o, {
 							commentId: e
 						}) && r.c.has(a)) {
 						const n = r.c.end(a);
@@ -20390,4 +20390,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePo~5f1ac562", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250", "Governance~ModListing~Reddit~Subreddit", "Chat~Governance~Reddit", "Reddit~StandalonePostPage~reddit-components-MediumPost", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.ae65d3d537e3a80c6ff9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.1701490162a3cae7b112.js.map

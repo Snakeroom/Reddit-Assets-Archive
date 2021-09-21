@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.3ae959b9d01d0d56a173.js
-// Retrieved at 9/20/2021, 8:00:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.231240a1d5a8720ed070.js
+// Retrieved at 9/21/2021, 9:30:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1890,7 +1890,7 @@
 				P = w.a.div("ParentPostTitle", I.a),
 				M = w.a.div("CommentParentWrapper", I.a),
 				S = Object(i.c)({
-					comment: (e, t) => Object(E.a)(e, t),
+					comment: (e, t) => Object(E.b)(e, t),
 					flair: C.e,
 					subreddit: y.F
 				}),
@@ -6534,7 +6534,7 @@
 				b = (e, {
 					commentId: t
 				}) => {
-					const s = Object(r.a)(e, {
+					const s = Object(r.b)(e, {
 							commentId: t
 						}),
 						n = null == s ? void 0 : s.subredditId,
@@ -6602,4 +6602,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.3ae959b9d01d0d56a173.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.231240a1d5a8720ed070.js.map

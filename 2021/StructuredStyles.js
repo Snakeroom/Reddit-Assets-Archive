@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/StructuredStyles.b4718f7952a43229f82c.js
-// Retrieved at 9/20/2021, 8:00:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/StructuredStyles.3fa8a3e9c7d484f000aa.js
+// Retrieved at 9/21/2021, 9:30:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["StructuredStyles"], {
 		"./node_modules/linkify-it/index.js": function(e, t, n) {
@@ -756,7 +756,7 @@
 				g = n("./src/reddit/selectors/commentSelector.ts"),
 				b = n("./src/reddit/selectors/subreddit.ts");
 			const f = (e, t) => {
-				const n = Object(g.a)(e, t),
+				const n = Object(g.b)(e, t),
 					a = Object(b.F)(e, t);
 				return {
 					comment: n,
@@ -795,7 +795,7 @@
 				}
 			}));
 			const x = (e, t) => {
-				const n = Object(g.a)(e, t),
+				const n = Object(g.b)(e, t),
 					a = Object(b.F)(e, t);
 				return {
 					comment: n,
@@ -9335,4 +9335,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/StructuredStyles.b4718f7952a43229f82c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/StructuredStyles.3fa8a3e9c7d484f000aa.js.map

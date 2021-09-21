@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/gildActions.b92c55f58992773bd56e.js
-// Retrieved at 9/15/2021, 6:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/gildActions.ae6c6de87a9c675eb87a.js
+// Retrieved at 9/21/2021, 9:30:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["gildActions"], {
 		"./src/reddit/actions/gold/econPurchase.ts": function(e, t, s) {
@@ -207,7 +207,7 @@
 						id: s
 					} = t, r = Object(F.a)(s) ? Object(C.H)(e, {
 						postId: s
-					}) : Object(k.a)(e, {
+					}) : Object(k.b)(e, {
 						commentId: s
 					}), a = Object(R.k)(e), d = e.gild, {
 						isAnonymous: n
@@ -493,4 +493,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/gildActions.b92c55f58992773bd56e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/gildActions.ae6c6de87a9c675eb87a.js.map

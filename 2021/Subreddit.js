@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.4ca1e5864393b41df1e8.js
-// Retrieved at 9/20/2021, 8:00:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.c2d7260eead4967b7971.js
+// Retrieved at 9/21/2021, 9:30:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~ModListing", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -5978,7 +5978,7 @@
 				h = n("./src/reddit/selectors/commentSelector.ts"),
 				f = n("./src/reddit/selectors/subreddit.ts");
 			const x = (e, t) => {
-				const n = Object(h.a)(e, t),
+				const n = Object(h.b)(e, t),
 					s = Object(f.F)(e, t);
 				return {
 					comment: n,
@@ -6017,7 +6017,7 @@
 				}
 			}));
 			const y = (e, t) => {
-				const n = Object(h.a)(e, t),
+				const n = Object(h.b)(e, t),
 					s = Object(f.F)(e, t);
 				return {
 					comment: n,
@@ -16361,7 +16361,7 @@
 				h = (e, {
 					commentId: t
 				}) => {
-					const n = Object(r.a)(e, {
+					const n = Object(r.b)(e, {
 							commentId: t
 						}),
 						s = null == n ? void 0 : n.subredditId,
@@ -16600,4 +16600,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.4ca1e5864393b41df1e8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.c2d7260eead4967b7971.js.map

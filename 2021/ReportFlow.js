@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlow.671ab978d55d98c1c410.js
-// Retrieved at 9/20/2021, 8:00:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlow.913b30aa1beb5dafd5c5.js
+// Retrieved at 9/21/2021, 9:30:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlow", "ReportFlowNew"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, o) {
@@ -3156,7 +3156,7 @@
 				Je = Object(a.c)({
 					comment: (e, {
 						commentId: t
-					}) => t ? Object(Ge.a)(e, {
+					}) => t ? Object(Ge.b)(e, {
 						commentId: t
 					}) : null,
 					isLiveStreaming: (e, {
@@ -3409,7 +3409,7 @@
 					}) : null,
 					comment: (e, {
 						commentId: t
-					}) => t ? Object(I.a)(e, {
+					}) => t ? Object(I.b)(e, {
 						commentId: t
 					}) : null,
 					isLiveStreaming: (e, {
@@ -3423,7 +3423,7 @@
 						const {
 							commentId: n,
 							postId: r
-						} = t, s = n ? Object(I.a)(e, {
+						} = t, s = n ? Object(I.b)(e, {
 							commentId: n
 						}) : null, i = r ? Object(T.H)(e, {
 							postId: r
@@ -5934,4 +5934,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.671ab978d55d98c1c410.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.913b30aa1beb5dafd5c5.js.map

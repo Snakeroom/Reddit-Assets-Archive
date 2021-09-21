@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AchievementsActions.fd81791b06a5a3594116.js
-// Retrieved at 9/13/2021, 3:50:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AchievementsActions.adfb3cc87ebdd6f8da75.js
+// Retrieved at 9/21/2021, 9:30:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AchievementsActions"], {
 		"./src/reddit/actions/economics/powerups/constants.ts": function(e, r, t) {
@@ -137,7 +137,7 @@
 						n = e.map(({
 							id: e
 						}) => e),
-						i = Object(m.b)(d, {
+						i = Object(m.c)(d, {
 							commentIds: n
 						}),
 						o = null === (s = i.find(e => e && e.subredditId)) || void 0 === s ? void 0 : s.subredditId;
@@ -379,7 +379,7 @@
 				m = (e, {
 					commentId: r
 				}) => {
-					const t = Object(d.a)(e, {
+					const t = Object(d.b)(e, {
 							commentId: r
 						}),
 						s = null == t ? void 0 : t.subredditId,
@@ -404,4 +404,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AchievementsActions.fd81791b06a5a3594116.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AchievementsActions.adfb3cc87ebdd6f8da75.js.map
