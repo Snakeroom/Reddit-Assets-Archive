@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/BottomCellWrapper.b0a49fe91f41d555c9d1.js
-// Retrieved at 9/15/2021, 5:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/BottomCellWrapper.d9c5c2b46c1073431990.js
+// Retrieved at 9/21/2021, 2:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["BottomCellWrapper", "SignupUpsell"], {
 		"./src/reddit/components/Upsell/BottomCellWrapper/index.m.less": function(e, t, s) {
@@ -17,10 +17,10 @@
 				o = s("./src/reddit/hooks/promo/useIsPromoShown.ts"),
 				a = s("./src/reddit/components/Upsell/SignupUpsell/index.tsx"),
 				i = s("./src/reddit/components/Upsell/BottomCellWrapper/index.m.less"),
-				c = s.n(i);
+				r = s.n(i);
 			t.default = function() {
 				return Object(o.a)(l.b.SignupUpsellCell) ? n.createElement("div", {
-					className: c.a.wrapper
+					className: r.a.wrapper
 				}, n.createElement(a.default, {
 					size: "small"
 				})) : null
@@ -61,8 +61,8 @@
 				o = s("./node_modules/react/index.js"),
 				a = s("./node_modules/react-redux/es/index.js"),
 				i = s("./src/lib/classNames/index.ts"),
-				c = s("./src/reddit/actions/login.ts"),
-				r = s("./src/reddit/controls/Button/index.tsx"),
+				r = s("./src/reddit/actions/login.ts"),
+				c = s("./src/reddit/controls/Button/index.tsx"),
 				d = s("./src/reddit/components/Upsell/SSOButton/index.m.less"),
 				m = s.n(d);
 			var p = function({
@@ -73,26 +73,28 @@
 					iconClassName: l,
 					className: a
 				}) {
-					return o.createElement(r.s, {
+					return o.createElement(c.s, {
 						className: Object(i.a)(m.a.button, a, {
-							[m.a.large]: n === r.c.L,
-							[m.a.small]: n !== r.c.L
+							[m.a.large]: n === c.c.L,
+							[m.a.small]: n !== c.c.L
 						}),
 						Icon: e,
 						iconClassName: Object(i.a)(m.a.icon, l),
-						iconPosition: r.g.L,
+						iconPosition: c.g.L,
 						onClick: s,
-						priority: r.b.Secondary,
+						priority: c.b.Secondary,
 						size: n
 					}, o.createElement("span", {
 						className: m.a.buttonText
 					}, t))
 				},
-				u = s("./src/reddit/icons/svgs/AppleLogo/index.tsx"),
-				C = s("./src/reddit/icons/svgs/GoogleLogo/index.tsx"),
-				_ = s("./src/reddit/components/Upsell/SignupUpsell/index.m.less"),
-				x = s.n(_);
-			const g = {
+				u = s("./src/reddit/constants/promo.ts"),
+				C = s("./src/reddit/hooks/promo/useIsPromoShown.ts"),
+				_ = s("./src/reddit/icons/svgs/AppleLogo/index.tsx"),
+				g = s("./src/reddit/icons/svgs/GoogleLogo/index.tsx"),
+				x = s("./src/reddit/components/Upsell/SignupUpsell/index.m.less"),
+				b = s.n(x);
+			const f = {
 				S: "small",
 				L: "large"
 			};
@@ -100,59 +102,67 @@
 				size: e
 			}) {
 				const t = Object(a.d)(),
-					s = () => t(Object(c.i)()),
-					d = e === g.L ? r.c.L : r.c.XS;
+					s = () => t(Object(r.i)()),
+					d = e === f.L ? c.c.L : c.c.XS,
+					m = function() {
+						const e = Object(C.a)(u.b.SignupUpsellCell),
+							t = Object(C.a)(u.b.SignupUpsellBottomSheet),
+							s = `${n.a.assetPath}/img/upsell/appQrCode/`;
+						if (e) return `${s}bottom_cell.png`;
+						if (t) return `${s}bottom_sheet.png`;
+						throw new Error("Invalid variant for signup upsell")
+					}();
 				return o.createElement("div", {
-					className: Object(i.a)(x.a.wrapper, {
-						[x.a.small]: e === g.S,
-						[x.a.large]: e === g.L
+					className: Object(i.a)(b.a.wrapper, {
+						[b.a.small]: e === f.S,
+						[b.a.large]: e === f.L
 					})
 				}, o.createElement("div", {
-					className: x.a.title
+					className: b.a.title
 				}, l.fbt._("Sign in for the best experience", null, {
 					hk: "1NwkRp"
 				})), o.createElement("div", {
-					className: x.a.bottom
+					className: b.a.bottom
 				}, o.createElement("div", {
-					className: x.a.left
+					className: b.a.left
 				}, o.createElement(p, {
-					Icon: C.a,
+					Icon: g.a,
 					onClick: s,
 					size: d,
-					iconClassName: x.a.googleIcon
+					iconClassName: b.a.googleIcon
 				}, l.fbt._("Continue with Google", null, {
 					hk: "1jIIEZ"
 				})), o.createElement(p, {
-					Icon: u.a,
+					Icon: _.a,
 					onClick: s,
 					size: d,
-					iconClassName: x.a.appleIcon,
-					className: x.a.appleButton
+					iconClassName: b.a.appleIcon,
+					className: b.a.appleButton
 				}, l.fbt._("Continue with Apple", null, {
 					hk: "2Jn3ON"
 				})), o.createElement("div", {
-					className: x.a.bottomWrapper
-				}, o.createElement(r.i, {
-					className: Object(i.a)(x.a.linkButton, x.a.emailButton),
+					className: b.a.bottomWrapper
+				}, o.createElement(c.i, {
+					className: Object(i.a)(b.a.linkButton, b.a.emailButton),
 					onClick: s,
-					size: r.c.XS
+					size: c.c.XS
 				}, l.fbt._("Continue with Email", null, {
 					hk: "2zvL1n"
-				})), o.createElement(r.i, {
-					className: x.a.linkButton,
-					onClick: () => t(Object(c.k)()),
-					size: r.c.XS
+				})), o.createElement(c.i, {
+					className: b.a.linkButton,
+					onClick: () => t(Object(r.k)()),
+					size: c.c.XS
 				}, l.fbt._("Log In", null, {
 					hk: "3HqaJR"
 				})))), o.createElement("div", {
-					className: x.a.divider
+					className: b.a.divider
 				}), o.createElement("div", {
-					className: x.a.right
+					className: b.a.right
 				}, o.createElement("img", {
-					className: x.a.img,
-					src: `${n.a.assetPath}/img/upsell/appQrCode/app1.jpeg`
+					className: b.a.img,
+					src: m
 				}), o.createElement("div", {
-					className: x.a.downloadAppLabel
+					className: b.a.downloadAppLabel
 				}, l.fbt._("Download the app", null, {
 					hk: "1QKyF"
 				})))))
@@ -227,4 +237,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BottomCellWrapper.b0a49fe91f41d555c9d1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BottomCellWrapper.d9c5c2b46c1073431990.js.map
