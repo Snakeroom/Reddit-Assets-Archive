@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.638a43676304ab501185.js
-// Retrieved at 9/21/2021, 10:00:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.283a982a3d2d0168166a.js
+// Retrieved at 9/21/2021, 12:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~Subreddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, r) {
@@ -2681,7 +2681,7 @@
 					correlationId: Object(o.c)(o.a.PostComposer)
 				}),
 				h = (e, t) => "self" !== t ? {} : {
-					editorMode: e.user.prefs.editorMode === s.h.MARKDOWN ? "markdown" : "rte"
+					editorMode: e.user.prefs.editorMode === s.i.MARKDOWN ? "markdown" : "rte"
 				},
 				I = e => {
 					Object(p.a)({
@@ -2753,7 +2753,7 @@
 					})
 				},
 				x = (e, t) => {
-					const r = t === s.h.MARKDOWN ? "markdown_mode" : "rte_mode";
+					const r = t === s.i.MARKDOWN ? "markdown_mode" : "rte_mode";
 					Object(p.a)({
 						noun: r,
 						...g(e)
@@ -4651,8 +4651,8 @@
 				O = e => e.creations.subredditRec.isInputChanged,
 				v = e => {
 					if (!(e.creations.formData.submissionType === n.Tb.POST)) return "";
-					const t = e.creations.formState.editorMode === c.h.RICH_TEXT || null === e.creations.formState.editorMode,
-						r = e.creations.formState.editorMode === c.h.MARKDOWN;
+					const t = e.creations.formState.editorMode === c.i.RICH_TEXT || null === e.creations.formState.editorMode,
+						r = e.creations.formState.editorMode === c.i.MARKDOWN;
 					if (t) {
 						const t = e.creations.formData.body.rte;
 						return o.a.getRawText(t, " ") || ""
@@ -4710,4 +4710,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.638a43676304ab501185.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.283a982a3d2d0168166a.js.map

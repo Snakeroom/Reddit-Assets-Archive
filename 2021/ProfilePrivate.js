@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePrivate.1f4b22d29a14ee17e553.js
-// Retrieved at 9/21/2021, 10:00:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePrivate.a0b59b5ba98ec6acb236.js
+// Retrieved at 9/21/2021, 12:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePrivate"], {
 		"./node_modules/shallowequal/index.js": function(e, t) {
@@ -69,7 +69,7 @@
 			const j = e => ({
 					richtextContent: e.content && e.content.richtext ? Object(f.f)(e.content.richtext) : {},
 					type: "rtjson",
-					rteMode: C.h.RICH_TEXT
+					rteMode: C.i.RICH_TEXT
 				}),
 				S = (e, t) => !(!e || !t || Object(P.d)(t) || !t.authorInfo) && Object(w.b)(e) === Object(w.b)(t.authorInfo),
 				O = e => e && !Object(P.d)(e) && e.authorInfo ? Object(w.b)(e.authorInfo) : null;
@@ -1525,7 +1525,7 @@
 					liveCommentsWebsocket: "wss://reddit.com/live/5",
 					media: {
 						type: "text",
-						rteMode: r.h.RICH_TEXT,
+						rteMode: r.i.RICH_TEXT,
 						markdownContent: "",
 						content: "",
 						obfuscated: null
@@ -1623,7 +1623,7 @@
 					liveCommentsWebsocket: "wss://reddit.com/live/6",
 					media: {
 						type: "text",
-						rteMode: r.h.RICH_TEXT,
+						rteMode: r.i.RICH_TEXT,
 						markdownContent: "",
 						content: "",
 						obfuscated: null
@@ -1724,7 +1724,7 @@
 					liveCommentsWebsocket: "wss://reddit.com/live/6",
 					media: {
 						type: "text",
-						rteMode: r.h.RICH_TEXT,
+						rteMode: r.i.RICH_TEXT,
 						markdownContent: "",
 						content: "",
 						obfuscated: null
@@ -1771,7 +1771,7 @@
 				authorIsBlocked: !0,
 				media: {
 					type: "text",
-					rteMode: r.h.RICH_TEXT,
+					rteMode: r.i.RICH_TEXT,
 					markdownContent: "",
 					content: "This is content in a post.",
 					obfuscated: null
@@ -1878,4 +1878,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.1f4b22d29a14ee17e553.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.a0b59b5ba98ec6acb236.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.4a2c2e5071b1f9bcfdd0.js
-// Retrieved at 9/21/2021, 11:10:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.206832990e3acb5245c3.js
+// Retrieved at 9/21/2021, 12:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -2991,7 +2991,7 @@
 					let b = !1,
 						f = e;
 					if (p) {
-						if (Object(T.v)(c)) return void r(Object(i.f)({
+						if (Object(T.x)(c)) return void r(Object(i.f)({
 							kind: D.b.Error,
 							text: s.fbt._("Please remove the existing video first. Videos aren't supported within galleries yet.", null, {
 								hk: "3lGxp4"
@@ -3064,40 +3064,40 @@
 			}
 			const j = e => {
 					switch (e.kind) {
-						case T.o.CROSSPOST:
-							return T.o.CROSSPOST;
-						case T.o.LINK:
-							return T.o.LINK;
-						case T.o.POLL:
-							return T.o.POLL;
-						case T.o.MEDIA:
-							return e.makeGif ? T.o.VIDEO_GIF : e.mediaType;
+						case T.p.CROSSPOST:
+							return T.p.CROSSPOST;
+						case T.p.LINK:
+							return T.p.LINK;
+						case T.p.POLL:
+							return T.p.POLL;
+						case T.p.MEDIA:
+							return e.makeGif ? T.p.VIDEO_GIF : e.mediaType;
 						default:
 							return "self"
 					}
 				},
 				w = e => {
 					switch (e.kind) {
-						case T.o.RICH_TEXT:
+						case T.p.RICH_TEXT:
 							return {
 								richtext_json: JSON.stringify({
 									document: e.document
 								})
 							};
-						case T.o.MARKDOWN:
+						case T.p.MARKDOWN:
 							return {
 								text: e.markdown
 							};
-						case T.o.LINK:
-						case T.o.MEDIA:
+						case T.p.LINK:
+						case T.p.MEDIA:
 							return {
 								url: e.url
 							};
-						case T.o.CROSSPOST:
+						case T.p.CROSSPOST:
 							return {
 								crosspost_fullname: e.sourcePostId
 							};
-						case T.o.POLL:
+						case T.p.POLL:
 							return e.poll.type === S.a.Prediction ? {
 								duration: 999999,
 								end_timestamp: v(e.poll.endDate),
@@ -3134,7 +3134,7 @@
 						discussion_type: e.isChatPost ? g.b.Chat : void 0,
 						spoiler: e.isSpoiler,
 						nsfw: e.isNSFW,
-						...e.kind !== T.o.POLL ? {
+						...e.kind !== T.p.POLL ? {
 							kind: j(e),
 							original_content: e.isOC
 						} : {},
@@ -3145,10 +3145,10 @@
 						} : {},
 						resubmit: e.resubmit,
 						...w(e),
-						...e.kind === T.o.MEDIA && "video" === e.mediaType ? {
+						...e.kind === T.p.MEDIA && "video" === e.mediaType ? {
 							video_poster_url: e.videoThumbnailUrl
 						} : {},
-						...e.kind === T.o.MEDIA && e.makeGif ? {
+						...e.kind === T.p.MEDIA && e.makeGif ? {
 							make_gif: "on"
 						} : {},
 						...e.flair ? {
@@ -3162,7 +3162,7 @@
 							event_start: e.eventSchedule.startDate,
 							event_end: e.eventSchedule.endDate,
 							event_tz: e.eventSchedule.timezoneName,
-							unlist: e.eventSchedule.submitTime === T.i.AtEventTime
+							unlist: e.eventSchedule.submitTime === T.j.AtEventTime
 						},
 						...e.collectionId && {
 							collection_id: e.collectionId
@@ -3173,7 +3173,7 @@
 					if (!e.ok) return Object(I.b)(e);
 					const r = e.body.json.data;
 					let n = r.url;
-					n || t.kind !== T.o.MEDIA || (n = await ((e, t) => new Promise(r => {
+					n || t.kind !== T.p.MEDIA || (n = await ((e, t) => new Promise(r => {
 						const s = new WebSocket(e),
 							n = e => {
 								s.close(), clearTimeout(a), r(e)
@@ -3266,9 +3266,9 @@
 						const {
 							video: e
 						} = r.items[0];
-						if (e && e.thumbnail && !t[T.m]) return [{
+						if (e && e.thumbnail && !t[T.n]) return [{
 							...e.thumbnail,
-							uploadKey: T.m
+							uploadKey: T.n
 						}]
 					}
 				},
@@ -3285,7 +3285,7 @@
 						l = N.d.rteVideoPoster(c),
 						p = ne(c),
 						b = u === s.Tb.MEDIA;
-					p && (l || b) && (await r($.f(p)), ne(n())) || (e === T.q.Draft ? await r(Object(d.r)(t.draftId)) : e === T.q.ScheduledPost && Object(H.r)(c) ? await r(ce(t)) : e === T.q.ScheduledPost ? await r(oe(t)) : await r(de(t)))
+					p && (l || b) && (await r($.f(p)), ne(n())) || (e === T.r.Draft ? await r(Object(d.r)(t.draftId)) : e === T.r.ScheduledPost && Object(H.r)(c) ? await r(ce(t)) : e === T.r.ScheduledPost ? await r(oe(t)) : await r(de(t)))
 				}, ce = e => async (t, r, {
 					gqlContext: s
 				}) => {
@@ -3411,9 +3411,9 @@
 								type: "json"
 							}).then(e => R(e, t)))(n(), {
 								...d,
-								kind: T.o.POLL,
+								kind: T.p.POLL,
 								poll: m
-							}) : d.kind === T.o.GALLERY ? await ((e, t) => Object(f.a)(Object(y.a)(e, [E.a]), {
+							}) : d.kind === T.p.GALLERY ? await ((e, t) => Object(f.a)(Object(y.a)(e, [E.a]), {
 								endpoint: Object(D.a)(Object(_.a)(`${e.apiUrl}/api/submit_gallery_post.json?resubmit=true`)),
 								method: s.ib.POST,
 								data: {
@@ -7390,7 +7390,7 @@
 				_ = e => /^https?:\/\//i.test(e) ? e : `http://${e}`,
 				O = e => {
 					switch (e.kind) {
-						case o.o.RICH_TEXT:
+						case o.p.RICH_TEXT:
 							return {
 								content: {
 									richText: JSON.stringify({
@@ -7398,13 +7398,13 @@
 									})
 								}
 							};
-						case o.o.MARKDOWN:
+						case o.p.MARKDOWN:
 							return {
 								content: {
 									markdown: e.markdown
 								}
 							};
-						case o.o.LINK:
+						case o.p.LINK:
 							return {
 								content: {}, link: {
 									url: _(e.url)
@@ -11836,7 +11836,7 @@
 					case ss.I:
 						return "";
 					case ss.Q:
-						return t.payload.editorMode === Bs.h.MARKDOWN ? t.payload.content || "" : e;
+						return t.payload.editorMode === Bs.i.MARKDOWN ? t.payload.content || "" : e;
 					case u.a: {
 						if (Us(t) !== Ce.Kb.POST_CREATION) return "";
 						const r = Ms(t);
@@ -11892,7 +11892,7 @@
 							return Ks.a.createInitial();
 						case ss.Q: {
 							const r = t.payload;
-							return r.editorMode === Bs.h.RICH_TEXT && r.editorKey === Bs.g.POST_CREATION ? Ks.a.createInitial(r.content) : e
+							return r.editorMode === Bs.i.RICH_TEXT && r.editorKey === Bs.h.POST_CREATION ? Ks.a.createInitial(r.content) : e
 						}
 						case u.a:
 							return Us(t) !== Ce.Kb.POST_CREATION ? Ks.a.createInitial() : e;
@@ -12459,7 +12459,7 @@
 					case u.a: {
 						if (Us(t) !== Ce.Kb.POST_CREATION) return null;
 						const r = Ms(t);
-						return r && r.text && (e => e ? e.replace(/\+/g, " ") : "")(r.text) ? Bs.h.MARKDOWN : e
+						return r && r.text && (e => e ? e.replace(/\+/g, " ") : "")(r.text) ? Bs.i.MARKDOWN : e
 					}
 					case ss.H: {
 						const {
@@ -12477,7 +12477,7 @@
 					}
 					case _s.b:
 					case _s.n:
-						return t.payload.contentType === Hs.a.RTJSON ? Bs.h.RICH_TEXT : Bs.h.MARKDOWN;
+						return t.payload.contentType === Hs.a.RTJSON ? Bs.i.RICH_TEXT : Bs.i.MARKDOWN;
 					default:
 						return e
 				}
@@ -12530,7 +12530,7 @@
 						return ((e, t) => {
 							const r = (t.fields || []).filter(({
 								field: e
-							}) => Object(Bs.u)(e));
+							}) => Object(Bs.w)(e));
 							if (!r.length) return e;
 							const s = r.reduce((e, t) => (e[t.field] || (e[t.field] = []), e[t.field].push(t.msg), e), {});
 							return {
@@ -12581,15 +12581,15 @@
 						return e
 				}
 			};
-			const xn = Bs.q.Post;
+			const xn = Bs.r.Post;
 			var Un = (e = xn, t) => {
 					switch (t.type) {
 						case ss.w:
-							return Bs.q.Post;
+							return Bs.r.Post;
 						case ss.F:
 							return t.payload;
 						case Vr.j:
-							return Bs.q.Draft;
+							return Bs.r.Draft;
 						case u.a:
 							return Us(t) !== Ce.Kb.POST_CREATION ? xn : e;
 						default:
@@ -12605,11 +12605,11 @@
 			var Fn = (e = "", t) => {
 				switch (t.type) {
 					case ss.H:
-						return t.payload.editorMode === Bs.h.MARKDOWN ? t.payload.postContent || "" : e;
+						return t.payload.editorMode === Bs.i.MARKDOWN ? t.payload.postContent || "" : e;
 					case ss.I:
 						return "";
 					case ss.Q:
-						return t.payload.editorMode === Bs.h.MARKDOWN ? t.payload.content || "" : e;
+						return t.payload.editorMode === Bs.i.MARKDOWN ? t.payload.content || "" : e;
 					default:
 						return e
 				}
@@ -12621,11 +12621,11 @@
 							return Ks.a.createInitial();
 						case ss.H: {
 							const r = t.payload;
-							return r.editorMode === Bs.h.RICH_TEXT && "object" == typeof r.postContent ? Ks.a.createInitial(r.postContent, r.mediaMetadata) : e
+							return r.editorMode === Bs.i.RICH_TEXT && "object" == typeof r.postContent ? Ks.a.createInitial(r.postContent, r.mediaMetadata) : e
 						}
 						case ss.Q: {
 							const r = t.payload;
-							return r.editorMode === Bs.h.RICH_TEXT && r.editorKey === Bs.g.POST_EDITING ? Ks.a.createInitial(r.content) : e
+							return r.editorMode === Bs.i.RICH_TEXT && r.editorKey === Bs.h.POST_EDITING ? Ks.a.createInitial(r.content) : e
 						}
 						default:
 							return e
@@ -26186,4 +26186,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.4a2c2e5071b1f9bcfdd0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.206832990e3acb5245c3.js.map

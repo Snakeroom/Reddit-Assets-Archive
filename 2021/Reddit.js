@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.7a58486664c7c6228cfe.js
-// Retrieved at 9/21/2021, 12:30:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.2c3ef972fe827c93ab32.js
+// Retrieved at 9/21/2021, 12:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -1392,7 +1392,7 @@
 				w = n("./src/reddit/models/RichTextJson/addRTJParam.ts");
 			const M = (e, t, n, s) => {
 					let o, r;
-					if (s === S.h.MARKDOWN) o = n.text, r = null;
+					if (s === S.i.MARKDOWN) o = n.text, r = null;
 					else {
 						o = null;
 						let e = null;
@@ -1415,7 +1415,7 @@
 						return_rtjson: !0,
 						thing_id: t
 					};
-					if (r === S.h.MARKDOWN) a.text = n.text;
+					if (r === S.i.MARKDOWN) a.text = n.text;
 					else {
 						a.text = null;
 						let e = null;
@@ -1612,7 +1612,7 @@
 				}, ue = Object(r.a)(Y.q), me = Object(r.a)(Y.p), pe = Object(r.a)(Y.l), be = (Object(r.a)(Y.g), Object(r.a)(Y.m)), he = (Object(r.a)(Y.t), (e, t, n) => async (o, r, {
 					apiContext: a
 				}) => {
-					const i = e === S.h.RICH_TEXT;
+					const i = e === S.i.RICH_TEXT;
 					if (!t || "object" == typeof t && Object(H.G)(t)) o(be({
 						editorMode: e,
 						draftKey: n,
@@ -1661,7 +1661,7 @@
 						f = Object(F.d)();
 					if (f) {
 						const e = f.filter(e => !!e && 10 !== e.charCodeAt(0));
-						if (h === S.h.MARKDOWN) p = e.map(e => `> ${e}\n`).join("");
+						if (h === S.i.MARKDOWN) p = e.map(e => `> ${e}\n`).join("");
 						else {
 							const t = e.map(e => q.s(e, null)).map(e => q.l([e])),
 								n = q.s("", null),
@@ -1758,7 +1758,7 @@
 								return_rtjson: !0,
 								thing_id: t
 							};
-							if (a === S.h.MARKDOWN) i.text = s.text;
+							if (a === S.i.MARKDOWN) i.text = s.text;
 							else {
 								i.text = null;
 								let e = null;
@@ -2910,17 +2910,17 @@
 					apiContext: f
 				}) => {
 					c.j(i(), t);
-					const v = t === l.h.MARKDOWN,
-						y = t === l.h.RICH_TEXT,
+					const v = t === l.i.MARKDOWN,
+						y = t === l.i.RICH_TEXT,
 						O = m.k;
 					if (v && Object(d.G)(n)) return o(h({
 						editorKey: e,
-						editorMode: l.h.MARKDOWN,
+						editorMode: l.i.MARKDOWN,
 						content: ""
 					})), void o(g(t));
 					if (y && !n) return o(h({
 						editorKey: e,
-						editorMode: l.h.RICH_TEXT,
+						editorMode: l.i.RICH_TEXT,
 						content: d.i
 					})), void o(g(t));
 					o(p(O));
@@ -2939,9 +2939,9 @@
 				}, g = e => async (t, n) => {
 					const o = Object(i.l)();
 					if (o >= 3) return;
-					const a = n().user.prefs.useMarkdown ? l.h.MARKDOWN : l.h.RICH_TEXT;
+					const a = n().user.prefs.useMarkdown ? l.i.MARKDOWN : l.i.RICH_TEXT;
 					if (e === a) return;
-					const c = e === l.h.MARKDOWN ? s.fbt._("You can set Markdown as the default editor mode in the settings", null, {
+					const c = e === l.i.MARKDOWN ? s.fbt._("You can set Markdown as the default editor mode in the settings", null, {
 						hk: "yvN18"
 					}) : s.fbt._("You can set Fancy Pants as the default editor mode in the settings", null, {
 						hk: "4kQi5k"
@@ -15017,7 +15017,7 @@
 				const l = {
 					output_mode: "markdown" === t ? t : "rtjson"
 				};
-				return t === c.h.MARKDOWN ? l.richtext_json = n : l.markdown_text = n, Object(o.a)(Object(r.a)(e, [a.a]), {
+				return t === c.i.MARKDOWN ? l.richtext_json = n : l.markdown_text = n, Object(o.a)(Object(r.a)(e, [a.a]), {
 					endpoint: Object(i.a)(`${e.apiUrl}/api/convert_rte_body_format`),
 					method: s.ib.POST,
 					data: l
@@ -20390,4 +20390,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePo~5f1ac562", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250", "Governance~ModListing~Reddit~Subreddit", "Chat~Governance~Reddit", "Reddit~StandalonePostPage~reddit-components-MediumPost", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.7a58486664c7c6228cfe.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.2c3ef972fe827c93ab32.js.map

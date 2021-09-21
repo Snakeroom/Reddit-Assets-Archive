@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.62e1d89309220e9d692c.js
-// Retrieved at 9/21/2021, 12:30:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.3a390e0c4e3f03a508f5.js
+// Retrieved at 9/21/2021, 12:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -2491,13 +2491,13 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("145550"),
+				buildNumber: r("145551"),
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1632240359"),
+				})("1632241735"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -4994,14 +4994,14 @@
 					}))
 				},
 				z = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c5addb478daa516ea4c0455ceb6f1ad010408fe20-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c4caa0d21f676185dbb3ec646ed8d1ac6d3660a9d-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${v.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "5addb478daa516ea4c0455ceb6f1ad010408fe20-production",
+						release: "4caa0d21f676185dbb3ec646ed8d1ac6d3660a9d-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -5514,7 +5514,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "5addb478daa516ea4c0455ceb6f1ad010408fe20-production",
+						releaseClient: "4caa0d21f676185dbb3ec646ed8d1ac6d3660a9d-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -7168,7 +7168,7 @@
 						return {
 							startDate: u(new Date(t * n.Pb)),
 							endDate: u(new Date(i * n.Pb)),
-							submitTime: r.i.Now,
+							submitTime: r.j.Now,
 							timezoneName: o() || s
 						}
 					}
@@ -20256,7 +20256,7 @@
 							return null
 					}
 				},
-				P = e => e.authorOnlyInfo && e.authorOnlyInfo.contentMode === p.d.Markdown ? h.h.MARKDOWN : h.h.RICH_TEXT,
+				P = e => e.authorOnlyInfo && e.authorOnlyInfo.contentMode === p.d.Markdown ? h.i.MARKDOWN : h.i.RICH_TEXT,
 				D = e => Math.min(e.height, e.width),
 				x = (e, t) => {
 					const {
@@ -22441,7 +22441,7 @@
 						type: s.o.TEXT,
 						markdownContent: e.selftext,
 						obfuscated: n,
-						rteMode: e.rte_mode || o.h.RICH_TEXT,
+						rteMode: e.rte_mode || o.i.RICH_TEXT,
 						...e.rtjson && {
 							richtextContent: e.rtjson,
 							type: s.o.RTJSON,
@@ -25943,31 +25943,31 @@
 		},
 		"./src/reddit/models/PostCreationForm/index.ts": function(e, t, i) {
 			"use strict";
-			i.d(t, "m", (function() {
+			i.d(t, "n", (function() {
 				return r
-			})), i.d(t, "e", (function() {
+			})), i.d(t, "f", (function() {
 				return s
-			})), i.d(t, "q", (function() {
+			})), i.d(t, "r", (function() {
 				return o
-			})), i.d(t, "v", (function() {
+			})), i.d(t, "x", (function() {
 				return d
-			})), i.d(t, "u", (function() {
+			})), i.d(t, "w", (function() {
 				return l
-			})), i.d(t, "h", (function() {
+			})), i.d(t, "i", (function() {
 				return u
-			})), i.d(t, "g", (function() {
+			})), i.d(t, "h", (function() {
 				return c
-			})), i.d(t, "k", (function() {
-				return _
 			})), i.d(t, "l", (function() {
+				return _
+			})), i.d(t, "m", (function() {
 				return m
-			})), i.d(t, "o", (function() {
-				return p
 			})), i.d(t, "p", (function() {
+				return p
+			})), i.d(t, "q", (function() {
 				return h
-			})), i.d(t, "j", (function() {
+			})), i.d(t, "k", (function() {
 				return f
-			})), i.d(t, "d", (function() {
+			})), i.d(t, "e", (function() {
 				return b
 			})), i.d(t, "a", (function() {
 				return g
@@ -25975,18 +25975,22 @@
 				return w
 			})), i.d(t, "c", (function() {
 				return y
-			})), i.d(t, "f", (function() {
+			})), i.d(t, "d", (function() {
 				return v
-			})), i.d(t, "n", (function() {
+			})), i.d(t, "g", (function() {
 				return E
-			})), i.d(t, "r", (function() {
+			})), i.d(t, "o", (function() {
 				return T
-			})), i.d(t, "s", (function() {
+			})), i.d(t, "v", (function() {
 				return S
-			})), i.d(t, "t", (function() {
+			})), i.d(t, "s", (function() {
 				return O
-			})), i.d(t, "i", (function() {
+			})), i.d(t, "t", (function() {
 				return I
+			})), i.d(t, "u", (function() {
+				return R
+			})), i.d(t, "j", (function() {
+				return F
 			}));
 			var n = i("./src/reddit/models/Upload/index.ts");
 			const r = Object(n.d)("VIDEO_POSTER"),
@@ -26026,16 +26030,18 @@
 			const b = "POST_DRAFTS_MODAL_ID",
 				g = "COLLECTIONS_LIST_MODAL_ID",
 				w = "CREATE_COLLECTION_MODAL_ID",
-				y = "DISCARD_POST_ON_CREATE_POST_MODAL_ID",
-				v = "EVENT_SCHEDULE_PICKER_MODAL_ID",
-				E = "POST_SCHEDULE_PICKER_MODAL_ID",
-				T = (e, t, i) => `${v}-[postId: ${e}]-isOverlay[${t}]-pos[${i}]`,
-				S = (e, t) => `${g}-[postId: ${e}]-isOverlay[${t}]`,
-				O = (e, t) => `${w}-[postId: ${e}]-isOverlay[${t}]`;
-			var I;
+				y = "DIRECT_CREATE_COLLECTION_MODAL_ID",
+				v = "DISCARD_POST_ON_CREATE_POST_MODAL_ID",
+				E = "EVENT_SCHEDULE_PICKER_MODAL_ID",
+				T = "POST_SCHEDULE_PICKER_MODAL_ID",
+				S = e => e === w || e === y,
+				O = (e, t, i) => `${E}-[postId: ${e}]-isOverlay[${t}]-pos[${i}]`,
+				I = (e, t) => `${g}-[postId: ${e}]-isOverlay[${t}]`,
+				R = (e, t) => `${w}-[postId: ${e}]-isOverlay[${t}]`;
+			var F;
 			! function(e) {
 				e.Now = "now", e.AtEventTime = "atEventTime"
-			}(I || (I = {}))
+			}(F || (F = {}))
 		},
 		"./src/reddit/models/PostDraft/index.ts": function(e, t, i) {
 			"use strict";
@@ -28164,7 +28170,7 @@
 						} = t.payload;
 						if (!n || void 0 === n.useMarkdown) return e;
 						const r = Object(u.a)(m.c.replyToPost, i),
-							s = n.useMarkdown ? _.h.MARKDOWN : _.h.RICH_TEXT;
+							s = n.useMarkdown ? _.i.MARKDOWN : _.i.RICH_TEXT;
 						return {
 							...e,
 							[r]: {
@@ -28183,8 +28189,8 @@
 								...e[i],
 								commentMode: r,
 								rteState: null,
-								text: r === _.h.MARKDOWN ? n : "",
-								rtJson: r === _.h.RICH_TEXT ? n : null
+								text: r === _.i.MARKDOWN ? n : "",
+								rtJson: r === _.i.RICH_TEXT ? n : null
 							}
 						} : e;
 					case o.s:
@@ -32221,7 +32227,7 @@
 				}) => e.creations.postEditing.postId === t,
 				Y = e => e.creations.api.post.update.pending,
 				Q = e => !!e.creations.api.post.update.error,
-				J = e => e.creations.formState.editorMode || g.h.RICH_TEXT,
+				J = e => e.creations.formState.editorMode || g.i.RICH_TEXT,
 				X = Object(r.a)(e => e.creations.api.post.update.error, e => x(e)),
 				Z = e => e.creations.postEditing.draft.markdown,
 				ee = e => e.creations.postEditing.draft.rte,
@@ -32350,7 +32356,7 @@
 								title: pe(e)
 							};
 						case s.vb.BODY:
-							if (me(e) === g.h.RICH_TEXT) {
+							if (me(e) === g.i.RICH_TEXT) {
 								const t = Se(e);
 								return {
 									rtjson: d.a.toRichTextJSON(t, e.uploads).document
@@ -32440,7 +32446,7 @@
 					if (f === s.Tb.LINK_ONLY && c) return {
 						...l,
 						url: c,
-						kind: g.o.LINK
+						kind: g.p.LINK
 					};
 					if (f === s.Tb.MEDIA && y.length) {
 						if (y.length > 1) {
@@ -32455,7 +32461,7 @@
 							});
 							return {
 								...l,
-								kind: g.o.GALLERY,
+								kind: g.p.GALLERY,
 								galleryItems: e
 							}
 						} {
@@ -32464,34 +32470,34 @@
 									video: t
 								} = e,
 								i = b[e.uploadKey],
-								n = b[g.m],
+								n = b[g.n],
 								r = t && n ? n.url : null;
 							return {
 								...l,
 								mediaType: t ? "video" : "image",
 								videoThumbnailUrl: r,
-								kind: g.o.MEDIA,
+								kind: g.p.MEDIA,
 								url: i.url || "",
 								makeGif: !!t && t.isMakeGif
 							}
 						}
 					}
-					if ((f === s.Tb.POST || f === s.Tb.POLL) && u === g.h.MARKDOWN) return {
+					if ((f === s.Tb.POST || f === s.Tb.POLL) && u === g.i.MARKDOWN) return {
 						...l,
-						kind: g.o.MARKDOWN,
+						kind: g.p.MARKDOWN,
 						markdown: h ? _ : ""
 					};
-					if ((f === s.Tb.POST || f === s.Tb.POLL) && u === g.h.RICH_TEXT) {
+					if ((f === s.Tb.POST || f === s.Tb.POLL) && u === g.i.RICH_TEXT) {
 						const e = h && d.a.hasContent(p) ? d.a.toRichTextJSON(p, b).document : [];
 						return {
 							...l,
-							kind: g.o.RICH_TEXT,
+							kind: g.p.RICH_TEXT,
 							document: e
 						}
 					}
 					return f === s.Tb.CROSSPOST && w ? {
 						...l,
-						kind: g.o.CROSSPOST,
+						kind: g.p.CROSSPOST,
 						sourcePostId: w
 					} : void 0
 				},
@@ -32508,7 +32514,7 @@
 						case s.Tb.LINK_ONLY:
 							return "link";
 						case s.Tb.MEDIA:
-							return Object(g.v)(t) ? t.items[0].video.isMakeGif ? "videogif" : "video" : "image";
+							return Object(g.x)(t) ? t.items[0].video.isMakeGif ? "videogif" : "video" : "image";
 						default:
 							return "self"
 					}
@@ -32662,12 +32668,12 @@
 						body: r,
 						kind: u.b.Link
 					};
-					if (m === d.Tb.POST && n === l.h.MARKDOWN) return {
+					if (m === d.Tb.POST && n === l.i.MARKDOWN) return {
 						...i,
 						body: _ ? s : "",
 						kind: u.b.Markdown
 					};
-					if (m === d.Tb.POST && n === l.h.RICH_TEXT) {
+					if (m === d.Tb.POST && n === l.i.RICH_TEXT) {
 						const e = _ ? a.a.toRichTextJSON(o, p).document : [];
 						return {
 							...i,
@@ -40961,4 +40967,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.62e1d89309220e9d692c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.3a390e0c4e3f03a508f5.js.map

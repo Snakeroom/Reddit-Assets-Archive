@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/removalReasonActions.07f4907046dcb3024759.js
-// Retrieved at 9/21/2021, 10:00:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/removalReasonActions.3ffe1f227ef553f3e19f.js
+// Retrieved at 9/21/2021, 12:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["removalReasonActions"], {
 		"./src/reddit/actions/bulkActions/index.ts": function(e, t, n) {
@@ -90,7 +90,7 @@
 				E = n("./src/reddit/models/RichTextJson/addRTJParam.ts");
 			const A = (e, t, n, s) => {
 					let o, r;
-					if (s === k.h.MARKDOWN) o = n.text, r = null;
+					if (s === k.i.MARKDOWN) o = n.text, r = null;
 					else {
 						o = null;
 						let e = null;
@@ -113,7 +113,7 @@
 						return_rtjson: !0,
 						thing_id: t
 					};
-					if (r === k.h.MARKDOWN) c.text = n.text;
+					if (r === k.i.MARKDOWN) c.text = n.text;
 					else {
 						c.text = null;
 						let e = null;
@@ -310,7 +310,7 @@
 				}, ue = Object(r.a)(X.q), le = Object(r.a)(X.p), be = Object(r.a)(X.l), pe = (Object(r.a)(X.g), Object(r.a)(X.m)), fe = (Object(r.a)(X.t), (e, t, n) => async (o, r, {
 					apiContext: c
 				}) => {
-					const d = e === k.h.RICH_TEXT;
+					const d = e === k.i.RICH_TEXT;
 					if (!t || "object" == typeof t && Object(B.G)(t)) o(pe({
 						editorMode: e,
 						draftKey: n,
@@ -359,7 +359,7 @@
 						O = Object(N.d)();
 					if (O) {
 						const e = O.filter(e => !!e && 10 !== e.charCodeAt(0));
-						if (f === k.h.MARKDOWN) b = e.map(e => `> ${e}\n`).join("");
+						if (f === k.i.MARKDOWN) b = e.map(e => `> ${e}\n`).join("");
 						else {
 							const t = e.map(e => H.s(e, null)).map(e => H.l([e])),
 								n = H.s("", null),
@@ -456,7 +456,7 @@
 								return_rtjson: !0,
 								thing_id: t
 							};
-							if (c === k.h.MARKDOWN) d.text = s.text;
+							if (c === k.i.MARKDOWN) d.text = s.text;
 							else {
 								d.text = null;
 								let e = null;
@@ -1028,17 +1028,17 @@
 					apiContext: O
 				}) => {
 					a.j(d(), t);
-					const y = t === i.h.MARKDOWN,
-						h = t === i.h.RICH_TEXT,
+					const y = t === i.i.MARKDOWN,
+						h = t === i.i.RICH_TEXT,
 						R = l.k;
 					if (y && Object(m.G)(n)) return o(f({
 						editorKey: e,
-						editorMode: i.h.MARKDOWN,
+						editorMode: i.i.MARKDOWN,
 						content: ""
 					})), void o(j(t));
 					if (h && !n) return o(f({
 						editorKey: e,
-						editorMode: i.h.RICH_TEXT,
+						editorMode: i.i.RICH_TEXT,
 						content: m.i
 					})), void o(j(t));
 					o(b(R));
@@ -1057,9 +1057,9 @@
 				}, j = e => async (t, n) => {
 					const o = Object(d.l)();
 					if (o >= 3) return;
-					const c = n().user.prefs.useMarkdown ? i.h.MARKDOWN : i.h.RICH_TEXT;
+					const c = n().user.prefs.useMarkdown ? i.i.MARKDOWN : i.i.RICH_TEXT;
 					if (e === c) return;
-					const a = e === i.h.MARKDOWN ? s.fbt._("You can set Markdown as the default editor mode in the settings", null, {
+					const a = e === i.i.MARKDOWN ? s.fbt._("You can set Markdown as the default editor mode in the settings", null, {
 						hk: "yvN18"
 					}) : s.fbt._("You can set Fancy Pants as the default editor mode in the settings", null, {
 						hk: "4kQi5k"
@@ -1766,7 +1766,7 @@
 				const i = {
 					output_mode: "markdown" === t ? t : "rtjson"
 				};
-				return t === a.h.MARKDOWN ? i.richtext_json = n : i.markdown_text = n, Object(o.a)(Object(r.a)(e, [c.a]), {
+				return t === a.i.MARKDOWN ? i.richtext_json = n : i.markdown_text = n, Object(o.a)(Object(r.a)(e, [c.a]), {
 					endpoint: Object(d.a)(`${e.apiUrl}/api/convert_rte_body_format`),
 					method: s.ib.POST,
 					data: i
@@ -2887,4 +2887,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.07f4907046dcb3024759.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.3ffe1f227ef553f3e19f.js.map

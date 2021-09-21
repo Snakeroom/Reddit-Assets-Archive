@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.7258d02712772ba74546.js
-// Retrieved at 9/21/2021, 10:00:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.11e93ad2ebd5e708127e.js
+// Retrieved at 9/21/2021, 12:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e"], {
 		"./src/lib/addAllowQuarantinedParam/index.ts": function(e, t, s) {
@@ -1318,13 +1318,13 @@
 						n = Object(d.F)(e),
 						i = Object(T.F)(r);
 					if (n && i) {
-						Object(E.a)(r) !== O.c && t(z(O.c))
+						Object(E.a)(r) !== O.d && t(z(O.d))
 					} else t(K(!1, e))
 				}, Y = e => async (t, s) => {
 					const r = s();
 					Object(h.m)(r, {
 						subredditId: e
-					}) ? t(o.i(O.a)) : t(o.i(O.b))
+					}) ? t(o.i(O.a)) : t(o.i(O.c))
 				}, X = Object(i.a)(j.B), Z = Object(i.a)(j.C), ee = Object(i.a)(j.z), te = Object(i.a)(j.A), se = e => async (t, s) => {
 					Object(g.d)(s()) !== e && t(te({
 						isChanged: e
@@ -1506,15 +1506,15 @@
 						A = Object(O.A)(o);
 					if (I === i.Tb.MEDIA && A) {
 						const e = Object(O.U)(o),
-							t = Object(b.v)(e),
+							t = Object(b.x)(e),
 							s = Object(O.L)(o) && e.items.length > 1,
 							r = !t && !s;
-						if (s && !P.galleries) C = b.p.GalleryWillBeRemovedGalleryNotAllowed;
-						else if (r && !P.images) C = b.p.ImageWillBeRemoved;
+						if (s && !P.galleries) C = b.q.GalleryWillBeRemovedGalleryNotAllowed;
+						else if (r && !P.images) C = b.q.ImageWillBeRemoved;
 						else if (t && !P.videos) {
 							const t = o.uploads[e.items[0].uploadKey],
 								s = t && t.metadata.videoDuration || 0;
-							P.images ? s > i.fb && (C = b.p.VideoWillBeRemovedTooLongForGif) : C = b.p.VideoWillBeRemovedMediaNotAllowed
+							P.images ? s > i.fb && (C = b.q.VideoWillBeRemovedTooLongForGif) : C = b.q.VideoWillBeRemovedMediaNotAllowed
 						}
 					}
 					s(C ? Object(a.i)(C) : S({
@@ -1691,7 +1691,7 @@
 						endpoint: `${e.apiUrl}/api/v1/draft`,
 						method: s ? r.ib.PUT : r.ib.POST,
 						data: Object(T.a)(t)
-					}).then(e => e.body.fields && Object(g.u)(e.body.fields[0]) ? {
+					}).then(e => e.body.fields && Object(g.w)(e.body.fields[0]) ? {
 						...e,
 						body: {},
 						error: {
@@ -1723,7 +1723,7 @@
 					apiContext: r
 				}) => {
 					t(Z(e));
-					let n = g.e;
+					let n = g.f;
 					const i = s();
 					if (e.subredditId) {
 						const t = Object(y.Q)(i, {
@@ -2723,13 +2723,13 @@
 					allowClickTracking: !1,
 					autoplayVideo: !0,
 					collapsedTraySections: U.a,
-					commentMode: F.h.RICH_TEXT,
+					commentMode: F.i.RICH_TEXT,
 					countryCode: "",
 					badCommentAutocollapse: u.l.OFF,
 					layout: L.d.Card,
 					rememberCommunityLayout: !1,
 					defaultCommentSort: u.t.CONFIDENCE,
-					editorMode: F.h.RICH_TEXT,
+					editorMode: F.i.RICH_TEXT,
 					enableFollowers: !0,
 					geopopular: void 0,
 					globalTheme: M.a,
@@ -2794,7 +2794,7 @@
 						subreddit: n
 					};
 					if (o.useMarkdown !== e.useMarkdown) {
-						const e = o.useMarkdown ? F.h.MARKDOWN : F.h.RICH_TEXT;
+						const e = o.useMarkdown ? F.i.MARKDOWN : F.i.RICH_TEXT;
 						o.editorMode = e, o.commentMode = e
 					}
 					return i()(o, e) ? e : o
@@ -2844,7 +2844,7 @@
 						} = t.payload;
 						return {
 							...e,
-							editorMode: s === G.b.Markdown ? F.h.MARKDOWN : F.h.RICH_TEXT
+							editorMode: s === G.b.Markdown ? F.i.MARKDOWN : F.i.RICH_TEXT
 						}
 					}
 					case D.g: {
@@ -3248,4 +3248,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.7258d02712772ba74546.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.11e93ad2ebd5e708127e.js.map

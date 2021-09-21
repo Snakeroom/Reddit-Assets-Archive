@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.eeff774a5157c4760701.js
-// Retrieved at 9/21/2021, 10:00:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.3f804bd6930d35e31ded.js
+// Retrieved at 9/21/2021, 12:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, o) {
@@ -800,7 +800,7 @@
 				S = o("./src/reddit/models/RichTextJson/addRTJParam.ts");
 			const R = (e, t, o, n) => {
 					let s, r;
-					if (n === O.h.MARKDOWN) s = o.text, r = null;
+					if (n === O.i.MARKDOWN) s = o.text, r = null;
 					else {
 						s = null;
 						let e = null;
@@ -823,7 +823,7 @@
 						return_rtjson: !0,
 						thing_id: t
 					};
-					if (r === O.h.MARKDOWN) a.text = o.text;
+					if (r === O.i.MARKDOWN) a.text = o.text;
 					else {
 						a.text = null;
 						let e = null;
@@ -1020,7 +1020,7 @@
 				}, ue = Object(r.a)(Q.q), me = Object(r.a)(Q.p), pe = Object(r.a)(Q.l), he = (Object(r.a)(Q.g), Object(r.a)(Q.m)), be = (Object(r.a)(Q.t), (e, t, o) => async (s, r, {
 					apiContext: a
 				}) => {
-					const i = e === O.h.RICH_TEXT;
+					const i = e === O.i.RICH_TEXT;
 					if (!t || "object" == typeof t && Object(U.G)(t)) s(he({
 						editorMode: e,
 						draftKey: o,
@@ -1069,7 +1069,7 @@
 						f = Object(z.d)();
 					if (f) {
 						const e = f.filter(e => !!e && 10 !== e.charCodeAt(0));
-						if (b === O.h.MARKDOWN) p = e.map(e => `> ${e}\n`).join("");
+						if (b === O.i.MARKDOWN) p = e.map(e => `> ${e}\n`).join("");
 						else {
 							const t = e.map(e => H.s(e, null)).map(e => H.l([e])),
 								o = H.s("", null),
@@ -1166,7 +1166,7 @@
 								return_rtjson: !0,
 								thing_id: t
 							};
-							if (a === O.h.MARKDOWN) i.text = n.text;
+							if (a === O.i.MARKDOWN) i.text = n.text;
 							else {
 								i.text = null;
 								let e = null;
@@ -1592,17 +1592,17 @@
 					apiContext: f
 				}) => {
 					c.j(i(), t);
-					const x = t === d.h.MARKDOWN,
-						g = t === d.h.RICH_TEXT,
+					const x = t === d.i.MARKDOWN,
+						g = t === d.i.RICH_TEXT,
 						y = m.k;
 					if (x && Object(l.G)(o)) return s(b({
 						editorKey: e,
-						editorMode: d.h.MARKDOWN,
+						editorMode: d.i.MARKDOWN,
 						content: ""
 					})), void s(_(t));
 					if (g && !o) return s(b({
 						editorKey: e,
-						editorMode: d.h.RICH_TEXT,
+						editorMode: d.i.RICH_TEXT,
 						content: l.i
 					})), void s(_(t));
 					s(p(y));
@@ -1621,9 +1621,9 @@
 				}, _ = e => async (t, o) => {
 					const s = Object(i.l)();
 					if (s >= 3) return;
-					const a = o().user.prefs.useMarkdown ? d.h.MARKDOWN : d.h.RICH_TEXT;
+					const a = o().user.prefs.useMarkdown ? d.i.MARKDOWN : d.i.RICH_TEXT;
 					if (e === a) return;
-					const c = e === d.h.MARKDOWN ? n.fbt._("You can set Markdown as the default editor mode in the settings", null, {
+					const c = e === d.i.MARKDOWN ? n.fbt._("You can set Markdown as the default editor mode in the settings", null, {
 						hk: "yvN18"
 					}) : n.fbt._("You can set Fancy Pants as the default editor mode in the settings", null, {
 						hk: "4kQi5k"
@@ -2004,7 +2004,7 @@
 						(t || o) && n === L.a.Enter && this.onSubmit()
 					}, this.onSubmit = () => {
 						if (this.props.onSubmit({
-								commentMode: Z.h.MARKDOWN,
+								commentMode: Z.i.MARKDOWN,
 								draftType: this.props.draftType,
 								editorState: null,
 								text: this.getCurrentText(),
@@ -2175,11 +2175,11 @@
 						isReplyWithUpvoteExperiment: w
 					}, r.a.createElement(O, null, e => "compact" === e ? r.a.createElement(B, {
 						buttonRef: e => this.switchModeBtn = e,
-						onClick: () => S(Z.h.RICH_TEXT, A, b),
+						onClick: () => S(Z.i.RICH_TEXT, A, b),
 						isConverting: this.props.isConverting
 					}) : r.a.createElement("div", null, r.a.createElement(le, {
 						innerRef: e => this.switchModeBtn = e,
-						onClick: () => S(Z.h.RICH_TEXT, A, b)
+						onClick: () => S(Z.i.RICH_TEXT, A, b)
 					}, n.fbt._("Switch to Fancy Pants Editor", null, {
 						hk: "ousUG"
 					}), this.props.isConverting && r.a.createElement(ue, {
@@ -2799,7 +2799,7 @@
 					}, this.onSubmit = () => {
 						if (this.props.onSubmit({
 								rteState: this.state.rteState,
-								commentMode: me.h.RICH_TEXT,
+								commentMode: me.i.RICH_TEXT,
 								draftType: this.props.draftType,
 								validate: this.props.showWarningModal
 							}), this.state.upvoteDefault && this.props.isReplyWithUpvoteExperiment && (this.props.onVoteClick(), this.setState({
@@ -3144,7 +3144,7 @@
 							showWarningModal: this.state.showWarningModal,
 							triggerCelebratoryMoment: e.triggerCelebratoryMoment
 						};
-					return e.contributorRequestPending ? a.a.createElement(Ge.a, null) : e.showContributorRequestFlow ? a.a.createElement(v, null) : e.draft.commentMode === me.h.RICH_TEXT ? a.a.createElement(Ze, $e({}, o, {
+					return e.contributorRequestPending ? a.a.createElement(Ge.a, null) : e.showContributorRequestFlow ? a.a.createElement(v, null) : e.draft.commentMode === me.i.RICH_TEXT ? a.a.createElement(Ze, $e({}, o, {
 						isTypingIndicatorsPostShadowTestEnabled: !!e.isTypingIndicatorsPostShadowTestEnabled
 					})) : a.a.createElement(m.b, o)
 				}
@@ -3405,9 +3405,9 @@
 						} = e;
 						(t || o) && n === h.a.Enter && this.props.onSubmit()
 					}, this.handleSwitchModeClick = () => {
-						this.props.value ? this.props.switchToRTEModalToggled() : this.props.onSwitchEditorMode(_.h.RICH_TEXT, this.props.value)
+						this.props.value ? this.props.switchToRTEModalToggled() : this.props.onSwitchEditorMode(_.i.RICH_TEXT, this.props.value)
 					}, this.handleSwitchToRTEConfirm = () => {
-						this.props.switchToRTEModalToggled(), this.props.onSwitchEditorMode(_.h.RICH_TEXT, this.props.value)
+						this.props.switchToRTEModalToggled(), this.props.onSwitchEditorMode(_.i.RICH_TEXT, this.props.value)
 					}, this.setTextAreaRef = e => this.textAreaRef = e, this.state = {
 						isFocused: !1
 					}
@@ -3725,7 +3725,7 @@
 					onCancel: t => e(x.b(t)),
 					onSubmitDraft: t => e(x.c(t)),
 					onSuccess: t => e(Object(d.b)(t)),
-					onToggleEditorMode: (t, o) => e(g.d(h.g.POST_EDITING, t, o))
+					onToggleEditorMode: (t, o) => e(g.d(h.h.POST_EDITING, t, o))
 				}));
 			class K extends i.a.Component {
 				constructor(e) {
@@ -3746,14 +3746,14 @@
 							rteState: e,
 							richtextPostDraftChanged: this.state.richtextPostDraftChanged || t
 						})
-					}, this.haveMarkdownPostDraft = () => !!(this.state.markdownBody || "").trim(), this.haveDraft = () => this.props.editorMode === h.h.RICH_TEXT ? this.haveRichPostDraft() : this.haveMarkdownPostDraft(), this.onSubmit = () => {
+					}, this.haveMarkdownPostDraft = () => !!(this.state.markdownBody || "").trim(), this.haveDraft = () => this.props.editorMode === h.i.RICH_TEXT ? this.haveRichPostDraft() : this.haveMarkdownPostDraft(), this.onSubmit = () => {
 						const e = this.buildPostSubmission();
 						e && this.props.onSubmitDraft(e)
 					}, this.onToggleEditorMode = async (e, t) => {
 						this.setState({
 							markdownPostDraftChanged: !1,
 							richtextPostDraftChanged: !1
-						}), await this.props.onToggleEditorMode(e, t), e === h.h.RICH_TEXT ? this.rteRef && this.rteRef.focus() : this.markdownEditorRef && this.markdownEditorRef.focus()
+						}), await this.props.onToggleEditorMode(e, t), e === h.i.RICH_TEXT ? this.rteRef && this.rteRef.focus() : this.markdownEditorRef && this.markdownEditorRef.focus()
 					}, this.getMediaValidationErrors = () => {
 						const {
 							editorMode: e,
@@ -3761,7 +3761,7 @@
 						} = this.props, {
 							rteState: o
 						} = this.state;
-						return o.isBound && e === h.h.RICH_TEXT ? k(t, o.editorState.getCurrentContent()) : []
+						return o.isBound && e === h.i.RICH_TEXT ? k(t, o.editorState.getCurrentContent()) : []
 					}, this.getTextPostContent = () => {
 						const {
 							editorMode: e,
@@ -3770,7 +3770,7 @@
 							markdownBody: o,
 							rteState: n
 						} = this.state;
-						return e === h.h.RICH_TEXT ? O.a.toRichTextJSON(n, t) : {
+						return e === h.i.RICH_TEXT ? O.a.toRichTextJSON(n, t) : {
 							markdown: o
 						}
 					}, this.buildPostSubmission = () => {
@@ -3819,7 +3819,7 @@
 						markdownPostDraftChanged: t,
 						richtextPostDraftChanged: o
 					} = this.state;
-					return e === h.h.RICH_TEXT ? !!o : e === h.h.MARKDOWN && !!t
+					return e === h.i.RICH_TEXT ? !!o : e === h.i.MARKDOWN && !!t
 				}
 				render() {
 					const {
@@ -3845,7 +3845,7 @@
 						hk: "FsWrq"
 					}));
 					const E = !O.a.isAllMediaUploaded(x, l);
-					return i.a.createElement(i.a.Fragment, null, i.a.createElement(B, null, e === h.h.RICH_TEXT ? i.a.createElement(w.a, {
+					return i.a.createElement(i.a.Fragment, null, i.a.createElement(B, null, e === h.i.RICH_TEXT ? i.a.createElement(w.a, {
 						allowMediaUploads: !0,
 						className: Object(u.a)(A.a.Editor, {
 							[A.a.isPending]: !!a
@@ -4325,7 +4325,7 @@
 				const d = {
 					output_mode: "markdown" === t ? t : "rtjson"
 				};
-				return t === c.h.MARKDOWN ? d.richtext_json = o : d.markdown_text = o, Object(s.a)(Object(r.a)(e, [a.a]), {
+				return t === c.i.MARKDOWN ? d.richtext_json = o : d.markdown_text = o, Object(s.a)(Object(r.a)(e, [a.a]), {
 					endpoint: Object(i.a)(`${e.apiUrl}/api/convert_rte_body_format`),
 					method: n.ib.POST,
 					data: d
@@ -4754,4 +4754,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.eeff774a5157c4760701.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.3f804bd6930d35e31ded.js.map
