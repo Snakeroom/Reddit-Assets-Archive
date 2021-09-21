@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.92e39fe676e53d800067.js
-// Retrieved at 9/21/2021, 11:10:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.73d39de22563ed6d3099.js
+// Retrieved at 9/21/2021, 11:40:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -2491,13 +2491,13 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("145536"),
+				buildNumber: r("145543"),
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1632235819"),
+				})("1632237449"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -4994,14 +4994,14 @@
 					}))
 				},
 				z = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c094eb4033f6ed060fec7ed966a7391db9cae77eb-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c681a074731596c5f6a90d799b420f82571623daa-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${v.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "094eb4033f6ed060fec7ed966a7391db9cae77eb-production",
+						release: "681a074731596c5f6a90d799b420f82571623daa-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -5514,7 +5514,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "094eb4033f6ed060fec7ed966a7391db9cae77eb-production",
+						releaseClient: "681a074731596c5f6a90d799b420f82571623daa-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -23066,7 +23066,7 @@
 				}
 		},
 		"./src/reddit/helpers/survey/config.json": function(e) {
-			e.exports = JSON.parse('{"survey_cooldown_days":182,"active_surveys":[{"experiment_name":"nps_survey_scroll_trigger","trigger_event":"feed_scroll_1_page","variants":{"enabled":{"survey_enabled":true,"trigger_threshold":2,"sample_factor":0.5}},"steps":[{"type":"NPS","question":"How likely are you to recommend Reddit to a friend?","follow_up_question":"What\'s your main reason for feeling that way?"}]},{"experiment_name":"d2x_nps_survey_dismiss_post_trigger","trigger_event":"dismiss_post","variants":{"enabled":{"survey_enabled":true,"trigger_threshold":3,"sample_factor":0.01}},"steps":[{"type":"NPS","question":"How likely are you to recommend Reddit to a friend?","follow_up_question":"What\'s your main reason for feeling that way?"}]},{"experiment_name":"survey_demo_nps_1","trigger_event":"feed_scroll_1_page","variants":{"enabled":{"survey_enabled":true,"trigger_threshold":1,"sample_factor":1}},"steps":[{"type":"NPS","question":"How likely are you to recommend Reddit to a friend?","follow_up_question":"What is the primary reason for your score?"}]},{"experiment_name":"survey_demo_combined_1","trigger_event":"mods_feed_scroll_1_page","variants":{"enabled":{"survey_enabled":true,"trigger_threshold":1,"sample_factor":1}},"steps":[{"type":"CSAT","question":"How would you rate your overall satisfaction with moderating on Reddit?","follow_up_question":"What is the primary reason for your score with moderating on Reddit?"},{"type":"CES","question":"How easy is it to use the Reddit moderation tools available on this device?","follow_up_question":"What is the primary reason for your score with moderation tools on this device?"}]},{"experiment_name":"d2x_search_survey","trigger_event":"search_view_trigger","variants":{"enabled":{"survey_enabled":true,"trigger_threshold":1,"sample_factor":0.05}},"steps":[{"type":"CSAT","question":"How would you rate your overall satisfaction with search on Reddit?","follow_up_question":"What is the primary reason for your score on overall satisfaction with search?"},{"type":"CSAT","question":"How would you rate the results found on the search results page on Reddit?","follow_up_question":"What is the primary reason for your score on the quality of search results?"},{"type":"CES","question":"How easy was it to use Reddit search?","follow_up_question":"What is the primary reason for your score on the ease of searching?"}]},{"experiment_name":"d2x_search_redesign_survey","trigger_event":"search_view_redesign_trigger","variants":{"enabled":{"survey_enabled":true,"trigger_threshold":1,"sample_factor":0.02}},"steps":[{"type":"CSAT","question":"How would you rate your overall satisfaction with search on Reddit?","follow_up_question":"What is the primary reason for your score on overall satisfaction with search?"},{"type":"CSAT","question":"How would you rate the results found on the search results page on Reddit?","follow_up_question":"What is the primary reason for your score on the quality of search results?"},{"type":"CES","question":"How easy was it to use Reddit search?","follow_up_question":"What is the primary reason for your score on the ease of searching?"}]},{"experiment_name":"d2x_chat_survey","trigger_event":"chat_view_trigger","variants":{"enabled":{"survey_enabled":true,"trigger_threshold":1,"sample_factor":0.15}},"steps":[{"type":"CSAT","question":"How would you rate your overall satisfaction with Reddit\'s chat?","follow_up_question":"What is the primary reason for your score?"}]},{"experiment_name":"d2x_mods_survey","trigger_event":"mods_feed_scroll_1_page","variants":{"enabled":{"survey_enabled":true,"trigger_threshold":1,"sample_factor":1}},"steps":[{"type":"CSAT","question":"How would you rate your overall satisfaction with moderating on Reddit?","follow_up_question":"What is the primary reason for your score with moderating on Reddit?"},{"type":"CES","question":"How easy is it to use the Reddit moderation tools available on this device?","follow_up_question":"What is the primary reason for your score with moderation tools on this device?"}]}]}')
+			e.exports = JSON.parse('{"survey_cooldown_days":182,"active_surveys":[{"experiment_name":"nps_survey_scroll_trigger","trigger_event":"feed_scroll_1_page","variants":{"enabled":{"survey_enabled":true,"trigger_threshold":2,"sample_factor":0.5}},"steps":[{"type":"NPS","question":"How likely are you to recommend Reddit to a friend?","follow_up_question":"What\'s your main reason for feeling that way?"}]},{"experiment_name":"d2x_nps_survey_dismiss_post_trigger","trigger_event":"dismiss_post","variants":{"enabled":{"survey_enabled":true,"trigger_threshold":3,"sample_factor":0.01}},"steps":[{"type":"NPS","question":"How likely are you to recommend Reddit to a friend?","follow_up_question":"What\'s your main reason for feeling that way?"}]},{"experiment_name":"survey_demo_nps_1","trigger_event":"feed_scroll_1_page","variants":{"enabled":{"survey_enabled":true,"trigger_threshold":1,"sample_factor":1}},"steps":[{"type":"NPS","question":"How likely are you to recommend Reddit to a friend?","follow_up_question":"What is the primary reason for your score?"}]},{"experiment_name":"survey_demo_combined_1","trigger_event":"mods_feed_scroll_1_page","variants":{"enabled":{"survey_enabled":true,"trigger_threshold":1,"sample_factor":1}},"steps":[{"type":"CSAT","question":"How would you rate your overall satisfaction with moderating on Reddit?","follow_up_question":"What is the primary reason for your score with moderating on Reddit?"},{"type":"CES","question":"How easy is it to use the Reddit moderation tools available on this device?","follow_up_question":"What is the primary reason for your score with moderation tools on this device?"}]},{"experiment_name":"d2x_search_survey","trigger_event":"search_view_trigger","variants":{"enabled":{"survey_enabled":true,"trigger_threshold":1,"sample_factor":0.05}},"steps":[{"type":"CSAT","question":"How would you rate your overall satisfaction with search on Reddit?","follow_up_question":"What is the primary reason for your score on overall satisfaction with search?"},{"type":"CSAT","question":"How would you rate the results found on the search results page on Reddit?","follow_up_question":"What is the primary reason for your score on the quality of search results?"},{"type":"CES","question":"How easy was it to use Reddit search?","follow_up_question":"What is the primary reason for your score on the ease of searching?"}]},{"experiment_name":"d2x_search_redesign_survey","trigger_event":"search_view_redesign_trigger","variants":{"enabled":{"survey_enabled":true,"trigger_threshold":1,"sample_factor":0.05}},"steps":[{"type":"CSAT","question":"How would you rate your overall satisfaction with search on Reddit?","follow_up_question":"What is the primary reason for your score on overall satisfaction with search?"},{"type":"CSAT","question":"How would you rate the results found on the search results page on Reddit?","follow_up_question":"What is the primary reason for your score on the quality of search results?"},{"type":"CES","question":"How easy was it to use Reddit search?","follow_up_question":"What is the primary reason for your score on the ease of searching?"}]},{"experiment_name":"d2x_chat_survey","trigger_event":"chat_view_trigger","variants":{"enabled":{"survey_enabled":true,"trigger_threshold":1,"sample_factor":0.15}},"steps":[{"type":"CSAT","question":"How would you rate your overall satisfaction with Reddit\'s chat?","follow_up_question":"What is the primary reason for your score?"}]},{"experiment_name":"d2x_mods_survey","trigger_event":"mods_feed_scroll_1_page","variants":{"enabled":{"survey_enabled":true,"trigger_threshold":1,"sample_factor":1}},"steps":[{"type":"CSAT","question":"How would you rate your overall satisfaction with moderating on Reddit?","follow_up_question":"What is the primary reason for your score with moderating on Reddit?"},{"type":"CES","question":"How easy is it to use the Reddit moderation tools available on this device?","follow_up_question":"What is the primary reason for your score with moderation tools on this device?"}]}]}')
 		},
 		"./src/reddit/helpers/survey/index.ts": function(e, t, i) {
 			"use strict";
@@ -40961,4 +40961,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.92e39fe676e53d800067.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.73d39de22563ed6d3099.js.map
