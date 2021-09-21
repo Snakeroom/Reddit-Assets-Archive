@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RedesignChat.b2ddd0ff1ef705967b4a.js
-// Retrieved at 9/20/2021, 8:00:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RedesignChat.c291d9b04b379e9cd032.js
+// Retrieved at 9/21/2021, 10:00:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RedesignChat"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -56,8 +56,8 @@
 				T = n("./src/chat/constants/container.ts"),
 				M = n("./src/chat/helpers/chatSelector.ts"),
 				P = n("./src/chat/actions/container.ts"),
-				A = n("./src/chat/components/PortalContainer/index.m.less"),
-				R = n.n(A);
+				R = n("./src/chat/components/PortalContainer/index.m.less"),
+				A = n.n(R);
 			const {
 				embed: U,
 				hidden: B
@@ -68,7 +68,7 @@
 			}
 			const I = S.a.wrapped(e => c.a.createElement("div", {
 					className: e.className
-				}, e.children), "BasePortalContainer", R.a),
+				}, e.children), "BasePortalContainer", A.a),
 				k = S.a.wrapped(e => {
 					const t = Object(v.d)(),
 						n = Object(s.useRef)(null),
@@ -89,15 +89,15 @@
 							height: `${D(U.height)}px`
 						}
 					}, e.children)
-				}, "EmbedPortalContainer", R.a),
-				L = S.a.wrapped(e => c.a.createElement("div", {
+				}, "EmbedPortalContainer", A.a),
+				q = S.a.wrapped(e => c.a.createElement("div", {
 					className: e.className,
 					style: {
 						width: `${D(B.width)}px`,
 						height: `${D(B.height)}px`
 					}
-				}, e.children), "HiddenPortalContainer", R.a),
-				q = S.a.wrapped(w.a, "MinimizedRedesignPortalContainer", R.a),
+				}, e.children), "HiddenPortalContainer", A.a),
+				L = S.a.wrapped(w.a, "MinimizedRedesignPortalContainer", A.a),
 				z = I,
 				F = Object(M.a)({
 					container: e => e && e.container && e.container.size
@@ -108,11 +108,11 @@
 					case T.a.EMBED:
 						return c.a.createElement(k, null, e.children);
 					case T.a.HIDDEN:
-						return c.a.createElement(L, null, e.children);
+						return c.a.createElement(q, null, e.children);
 					case T.a.FULL:
 						return c.a.createElement(z, null, e.children);
 					case T.a.MINIMIZED:
-						return c.a.createElement(q, null);
+						return c.a.createElement(L, null);
 					default:
 						return c.a.createElement(k, null, e.children)
 				}
@@ -122,8 +122,8 @@
 				$ = n("./src/chat/customMiddleware/containerSize.ts"),
 				K = n("./src/chat/customMiddleware/draftMessageText.ts"),
 				Y = n("./src/chat/customMiddleware/iframeDispatcher.ts"),
-				W = n("./src/chat/customMiddleware/lastSelectedChannel.ts"),
-				V = n("./src/chat/customMiddleware/loggedOutPreferencesSync.ts"),
+				V = n("./src/chat/customMiddleware/lastSelectedChannel.ts"),
+				W = n("./src/chat/customMiddleware/loggedOutPreferencesSync.ts"),
 				J = n("./src/chat/customMiddleware/sendbirdToken.ts"),
 				X = n("./src/chat/customMiddleware/title.ts"),
 				Z = n("./src/chat/customMiddleware/tokenRefresher.ts"),
@@ -248,7 +248,7 @@
 						routes: he.a,
 						apiContext: fe.apiContext,
 						gqlContext: ge.gqlContext
-					}), fe.middleware, Z.a, J.a, Y.a, V.a, Object(ee.a)(t), $.a, Q.a, H.a, K.a, te.a, W.a, X.a, ne.a],
+					}), fe.middleware, Z.a, J.a, Y.a, W.a, Object(ee.a)(t), $.a, Q.a, H.a, K.a, te.a, V.a, X.a, ne.a],
 					modifyInitialData: ({
 						initialData: t,
 						browserHistory: n
@@ -758,10 +758,10 @@
 				a = n("./src/reddit/selectors/experiments/index.ts"),
 				i = n("./src/reddit/selectors/experiments/utils.ts");
 			const o = Object(s.a)(e => Object(r.c)(e, {
-					experimentName: c.Lc,
+					experimentName: c.Mc,
 					experimentEligibilitySelector: a.e
 				}), i.a),
-				d = Object(s.a)(o, e => e === c.Oc.Enabled)
+				d = Object(s.a)(o, e => e === c.Pc.Enabled)
 		},
 		"./src/reddit/selectors/experiments/inboxRedesign.ts": function(e, t, n) {
 			"use strict";
@@ -795,12 +795,12 @@
 					experimentName: c.jb,
 					experimentEligibilitySelector: a.e
 				}), i.a),
-				d = Object(s.a)(o, e => e === c.Uc.Enabled),
+				d = Object(s.a)(o, e => e === c.Vc.Enabled),
 				u = Object(s.a)(e => Object(r.c)(e, {
-					experimentName: c.Nc,
+					experimentName: c.Oc,
 					experimentEligibilitySelector: a.e
 				}), i.a),
-				l = Object(s.a)(d, u, (e, t) => e && t === c.Tc.Enabled),
+				l = Object(s.a)(d, u, (e, t) => e && t === c.Uc.Enabled),
 				b = Object(s.a)(e => Object(r.c)(e, {
 					experimentName: c.mb,
 					experimentEligibilitySelector: a.e
@@ -810,14 +810,14 @@
 					experimentName: c.gb,
 					experimentEligibilitySelector: a.e
 				}), i.a),
-				f = Object(s.a)(h, e => e === c.Qc.Banner_1st_time),
-				g = Object(s.a)(h, e => e === c.Qc.Tooltip_persist),
-				j = Object(s.a)(h, e => e === c.Qc.Tooltip_1st_time),
+				f = Object(s.a)(h, e => e === c.Rc.Banner_1st_time),
+				g = Object(s.a)(h, e => e === c.Rc.Tooltip_persist),
+				j = Object(s.a)(h, e => e === c.Rc.Tooltip_1st_time),
 				p = Object(s.a)(e => Object(r.c)(e, {
 					experimentName: c.hb,
 					experimentEligibilitySelector: a.e
 				}), i.a),
-				x = Object(s.a)(p, e => e === c.Rc.ContinuousScroll),
+				x = Object(s.a)(p, e => e === c.Sc.ContinuousScroll),
 				O = Object(s.a)(e => Object(r.c)(e, {
 					experimentName: c.Z,
 					experimentEligibilitySelector: a.e
@@ -828,11 +828,11 @@
 					experimentName: c.ib,
 					experimentEligibilitySelector: a.e
 				}), i.a),
-				v = Object(s.a)(_, e => e === c.Sc.Enabled)
+				v = Object(s.a)(_, e => e === c.Tc.Enabled)
 		},
 		"./src/redditGQL/operations/BadgeIndicators.json": function(e) {
 			e.exports = JSON.parse('{"id":"9d105ce5d71a"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.b2ddd0ff1ef705967b4a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.c291d9b04b379e9cd032.js.map

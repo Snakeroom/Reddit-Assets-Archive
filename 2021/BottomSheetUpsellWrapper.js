@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/BottomSheetUpsellWrapper.e6466957a1af38d79d34.js
-// Retrieved at 9/20/2021, 8:00:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/BottomSheetUpsellWrapper.b00aef8ef27e36b72ee6.js
+// Retrieved at 9/21/2021, 10:00:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["BottomSheetUpsellWrapper"], {
 		"./src/reddit/components/Upsell/BottomSheetUpsellWrapper/index.m.less": function(e, t, s) {
@@ -108,4 +108,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BottomSheetUpsellWrapper.e6466957a1af38d79d34.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BottomSheetUpsellWrapper.b00aef8ef27e36b72ee6.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.473c885de84340d9b4af.js
-// Retrieved at 9/20/2021, 8:00:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.4ccec1e2815ed89e83f2.js
+// Retrieved at 9/21/2021, 10:00:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, n) {
@@ -265,8 +265,8 @@
 				M = n("./src/reddit/constants/localStorage.ts"),
 				J = n("./src/reddit/contexts/ApiContext.tsx"),
 				K = n("./src/reddit/featureFlags/component.tsx"),
-				V = n("./src/reddit/helpers/localStorage/index.ts"),
-				Z = n("./src/reddit/helpers/name/index.ts"),
+				Z = n("./src/reddit/helpers/localStorage/index.ts"),
+				V = n("./src/reddit/helpers/name/index.ts"),
 				H = n("./src/lib/makeApiRequest/index.ts"),
 				X = n("./src/lib/omitHeaders/index.ts"),
 				z = n("./src/reddit/constants/headers.ts");
@@ -287,13 +287,13 @@
 					}
 				}
 				async getSubredditForAdoption() {
-					let e = re.cachedData || Object(V.A)(M.b.SUBREDDITS_FOR_ADOPTION_STORE) || null;
+					let e = re.cachedData || Object(Z.A)(M.b.SUBREDDITS_FOR_ADOPTION_STORE) || null;
 					if (!e || Date.now() - e.fetchedAt > ae) {
 						const t = await Y(this.props.apiContext());
 						t.ok && (e = {
 							subreddits: t.body.data.subreddits.map(e => e.name),
 							fetchedAt: Date.now()
-						}, Object(V.Cb)(M.b.SUBREDDITS_FOR_ADOPTION_STORE, e))
+						}, Object(Z.Cb)(M.b.SUBREDDITS_FOR_ADOPTION_STORE, e))
 					}
 					return re.cachedData = e, e ? e.subreddits : []
 				}
@@ -321,7 +321,7 @@
 						hk: "487Ffc"
 					})), d.a.createElement("div", {
 						className: ee.a.description
-					}, te._("{subreddits list} and more are looking for moderators!", [te._param("subreddits list", d.a.createElement("strong", null, e.map(Z.c).join(", ") + (e.length > 1 ? "," : "")))], {
+					}, te._("{subreddits list} and more are looking for moderators!", [te._param("subreddits list", d.a.createElement("strong", null, e.map(V.c).join(", ") + (e.length > 1 ? "," : "")))], {
 						hk: "2Tb946"
 					}))), d.a.createElement(_.m, {
 						className: ee.a.button,
@@ -663,15 +663,15 @@
 			}
 			var Ue = n("./src/reddit/selectors/experiments/utils.ts");
 			const qe = Object(u.a)(e => Object(We.c)(e, {
-					experimentName: Be.Vc,
+					experimentName: Be.Wc,
 					experimentEligibilitySelector: We.a
 				}), Ue.a),
-				Qe = Object(u.a)(qe, e => e === Be.Xc.Enabled);
+				Qe = Object(u.a)(qe, e => e === Be.Yc.Enabled);
 			var Me = n("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
 				Je = n("./src/reddit/selectors/user.ts");
 			var Ke = n("./src/reddit/selectors/experiments/uiSimplification.ts"),
-				Ve = n("./src/reddit/selectors/seo/linksModule.ts"),
-				Ze = n("./src/reddit/selectors/subreddit.ts"),
+				Ze = n("./src/reddit/selectors/seo/linksModule.ts"),
+				Ve = n("./src/reddit/selectors/subreddit.ts"),
 				He = n("./src/reddit/selectors/subredditLeaderboard.ts");
 			n("./src/reddit/components/TopSubredditsWidget/index.tsx"), n("./src/reddit/components/TopSubredditsWidget/SubredditRankItemPlaceholder.tsx");
 			var Xe = n("./src/reddit/helpers/createBannerProperties/index.ts"),
@@ -683,7 +683,7 @@
 					isLoggedIn: Je.J,
 					shouldShowLocalRecommendations: e => !1 !== e.user.prefs.showLocationBasedRecommendations,
 					currentUser: Je.k,
-					frontpageLinks: Ve.b,
+					frontpageLinks: Ze.b,
 					isOver18: Je.eb,
 					isUISimplificationAllItemsVariant: Ke.b,
 					isInBFFSLeaderboardExperiment: function(e) {
@@ -691,15 +691,15 @@
 					},
 					bffsLeaderboardVariant: Ge,
 					inRpanTopVideoEntrypointExperiment: Me.e,
-					rankings: e => Object(Ze.L)(e, Ye),
+					rankings: e => Object(Ve.L)(e, Ye),
 					shouldShowTopicsWidget: e => {
 						const t = Object(Me.e)(e),
-							n = !!Object(Ze.L)(e, Ye);
+							n = !!Object(Ve.L)(e, Ye);
 						return (!t || !n) && (!Object(Ke.b)(e) && function(e) {
 							return Object(We.c)(e, {
 								experimentEligibilitySelector: Je.K,
 								experimentName: Be.tb
-							}) === Be.rc
+							}) === Be.sc
 						}(e))
 					},
 					isNavbarLikeMwebEnabled: l.a,
@@ -2046,4 +2046,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.473c885de84340d9b4af.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.4ccec1e2815ed89e83f2.js.map

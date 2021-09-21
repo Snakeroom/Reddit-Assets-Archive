@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.63cd48f62d779dd13b58.js
-// Retrieved at 9/21/2021, 9:30:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.80f8363f5e6b0721b608.js
+// Retrieved at 9/21/2021, 10:00:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"], {
 		"./src/lib/linkMatchers/index.ts": function(e, t, r) {
@@ -1713,7 +1713,7 @@
 						subredditId: e
 					}));
 				return Object(n.useEffect)(() => {
-					o && a(Object(D.x)())
+					o && a(Object(D.w)())
 				}, [o, a]), Object(n.useEffect)(() => {
 					(async () => {
 						u && !d && (t(Object(A.k)(l.name)), c(!0))
@@ -1725,7 +1725,7 @@
 						t(Object(T.p)({
 							subredditId: e,
 							forceState: !1
-						})), a(Object(D.h)())
+						})), a(Object(D.g)())
 					},
 					to: `${l.url}predictions/`
 				}, U._("Predictions", null, {
@@ -2838,54 +2838,52 @@
 		},
 		"./src/reddit/helpers/trackers/predictions.ts": function(e, t, r) {
 			"use strict";
-			r.d(t, "p", (function() {
+			r.d(t, "o", (function() {
 				return a
-			})), r.d(t, "q", (function() {
+			})), r.d(t, "p", (function() {
 				return o
-			})), r.d(t, "r", (function() {
+			})), r.d(t, "q", (function() {
 				return d
-			})), r.d(t, "l", (function() {
+			})), r.d(t, "k", (function() {
 				return c
-			})), r.d(t, "t", (function() {
+			})), r.d(t, "s", (function() {
 				return l
-			})), r.d(t, "n", (function() {
-				return u
-			})), r.d(t, "o", (function() {
-				return m
 			})), r.d(t, "m", (function() {
+				return u
+			})), r.d(t, "n", (function() {
+				return m
+			})), r.d(t, "l", (function() {
 				return p
 			})), r.d(t, "a", (function() {
 				return b
-			})), r.d(t, "s", (function() {
+			})), r.d(t, "r", (function() {
 				return h
 			})), r.d(t, "d", (function() {
 				return f
-			})), r.d(t, "v", (function() {
-				return g
-			})), r.d(t, "k", (function() {
-				return x
-			})), r.d(t, "x", (function() {
-				return v
-			})), r.d(t, "g", (function() {
-				return w
-			})), r.d(t, "w", (function() {
-				return j
 			})), r.d(t, "u", (function() {
+				return g
+			})), r.d(t, "j", (function() {
+				return x
+			})), r.d(t, "w", (function() {
+				return v
+			})), r.d(t, "f", (function() {
+				return w
+			})), r.d(t, "v", (function() {
+				return j
+			})), r.d(t, "t", (function() {
 				return O
 			})), r.d(t, "c", (function() {
 				return y
-			})), r.d(t, "i", (function() {
+			})), r.d(t, "h", (function() {
 				return _
 			})), r.d(t, "e", (function() {
 				return k
 			})), r.d(t, "b", (function() {
 				return E
-			})), r.d(t, "j", (function() {
+			})), r.d(t, "i", (function() {
 				return I
-			})), r.d(t, "h", (function() {
+			})), r.d(t, "g", (function() {
 				return C
-			})), r.d(t, "f", (function() {
-				return N
 			}));
 			var n = r("./src/reddit/models/Prediction/index.ts"),
 				s = r("./src/reddit/selectors/telemetry.ts");
@@ -3082,16 +3080,6 @@
 					source: "menu_links_bar",
 					action: "click",
 					noun: "predictions_tab"
-				}),
-				N = e => t => ({
-					...Object(s.defaults)(t),
-					source: "predictions",
-					action: "click",
-					noun: "play_tournament",
-					poll: Object(s.predictionTournamentPoll)(t, e),
-					post: Object(s.post)(t, e),
-					predictions: Object(s.predictions)(t, e),
-					subreddit: Object(s.subreddit)(t)
 				})
 		},
 		"./src/reddit/helpers/trackers/subredditWiki.ts": function(e, t, r) {
@@ -3408,7 +3396,7 @@
 				}
 		},
 		"./src/redditGQL/operations/AddPredictionDrafts.json": function(e) {
-			e.exports = JSON.parse('{"id":"3048ce040c04"}')
+			e.exports = JSON.parse('{"id":"850d3ce757fa"}')
 		},
 		"./src/redditGQL/operations/CancelPrediction.json": function(e) {
 			e.exports = JSON.parse('{"id":"fac88c91fec8"}')
@@ -3420,10 +3408,10 @@
 			e.exports = JSON.parse('{"id":"90c7b71fa93f"}')
 		},
 		"./src/redditGQL/operations/CreatePredictionTournament.json": function(e) {
-			e.exports = JSON.parse('{"id":"cb619ee4a1d7"}')
+			e.exports = JSON.parse('{"id":"0e6e3552495b"}')
 		},
 		"./src/redditGQL/operations/EndPredictionTournament.json": function(e) {
-			e.exports = JSON.parse('{"id":"ef19872c5854"}')
+			e.exports = JSON.parse('{"id":"5aef77c8f8e8"}')
 		},
 		"./src/redditGQL/operations/GetPredictionChipPackages.json": function(e) {
 			e.exports = JSON.parse('{"id":"5ce83e513fa5"}')
@@ -3432,7 +3420,7 @@
 			e.exports = JSON.parse('{"id":"26b911e67a5f"}')
 		},
 		"./src/redditGQL/operations/GetTournaments.json": function(e) {
-			e.exports = JSON.parse('{"id":"003c1e2f9277"}')
+			e.exports = JSON.parse('{"id":"ed8e9ea64ead"}')
 		},
 		"./src/redditGQL/operations/ResolvePrediction.json": function(e) {
 			e.exports = JSON.parse('{"id":"d742e3019cfe"}')
@@ -3447,11 +3435,11 @@
 			e.exports = JSON.parse('{"id":"eab9458f507c"}')
 		},
 		"./src/redditGQL/operations/UpdatePredictionTournament.json": function(e) {
-			e.exports = JSON.parse('{"id":"6851ffb490a5"}')
+			e.exports = JSON.parse('{"id":"7bfb08af572b"}')
 		},
 		"./src/redditGQL/operations/VotePrediction.json": function(e) {
 			e.exports = JSON.parse('{"id":"484780ada6a2"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.63cd48f62d779dd13b58.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.80f8363f5e6b0721b608.js.map

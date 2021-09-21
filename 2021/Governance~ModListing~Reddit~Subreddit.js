@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.d6bd9831be8c6eade32a.js
-// Retrieved at 9/20/2021, 8:00:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.638a43676304ab501185.js
+// Retrieved at 9/21/2021, 10:00:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~Subreddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, r) {
@@ -4416,19 +4416,20 @@
 				}).apply(this, arguments)
 			}
 			const a = ({
-					className: e,
-					isFilled: t,
-					name: r,
-					...n
-				}) => o.a.createElement("i", c({
-					className: Object(i.a)(e, Object(s.b)(r, t))
-				}, n)),
-				l = (e, t) => r => o.a.createElement(a, c({
-					name: e
-				}, t, r, {
-					isFilled: (null == t ? void 0 : t.isFilled) || (null == r ? void 0 : r.isFilled),
-					className: Object(i.a)(null == t ? void 0 : t.className, null == r ? void 0 : r.className)
-				}));
+				className: e,
+				isFilled: t,
+				name: r,
+				...n
+			}) => o.a.createElement("i", c({
+				className: Object(i.a)(e, Object(s.b)(r, t))
+			}, n));
+			a.displayName = "Icon";
+			const l = (e, t) => r => o.a.createElement(a, c({
+				name: e
+			}, t, r, {
+				isFilled: (null == t ? void 0 : t.isFilled) || (null == r ? void 0 : r.isFilled),
+				className: Object(i.a)(null == t ? void 0 : t.className, null == r ? void 0 : r.className)
+			}));
 			t.a = a
 		},
 		"./src/reddit/icons/svgs/Close/index.tsx": function(e, t, r) {
@@ -4592,33 +4593,33 @@
 				u = e => {
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: i.kd
+						experimentName: i.ld
 					});
-					return t === i.ld.UIChangesOnly || t === i.ld.RedditRecommendation || t === i.ld.OpenAI || t === i.ld.FilteredOpenAI
+					return t === i.md.UIChangesOnly || t === i.md.RedditRecommendation || t === i.md.OpenAI || t === i.md.FilteredOpenAI
 				},
 				f = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: i.kd
-					}) === i.ld.UIChangesOnly
+						experimentName: i.ld
+					}) === i.md.UIChangesOnly
 				},
 				p = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: i.kd
-					}) === i.ld.RedditRecommendation
+						experimentName: i.ld
+					}) === i.md.RedditRecommendation
 				},
 				_ = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: i.kd
-					}) === i.ld.OpenAI
+						experimentName: i.ld
+					}) === i.md.OpenAI
 				},
 				m = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: i.kd
-					}) === i.ld.FilteredOpenAI
+						experimentName: i.ld
+					}) === i.md.FilteredOpenAI
 				},
 				b = e => e.creations.subredditRec.api.pending,
 				g = e => e.creations.subredditRec.api.error,
@@ -4693,9 +4694,9 @@
 					experimentName: o.Ib,
 					experimentEligibilitySelector: e => a(e, t)
 				}), e => e),
-				d = e => e === o.ie.NoCommunityWidgets,
-				u = e => e === o.ie.NoRulesModerators,
-				f = e => e === o.ie.RelatedPostsDu
+				d = e => e === o.je.NoCommunityWidgets,
+				u = e => e === o.je.NoRulesModerators,
+				f = e => e === o.je.RelatedPostsDu
 		},
 		"./src/reddit/selectors/tooltip.ts": function(e, t, r) {
 			"use strict";
@@ -4709,4 +4710,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.d6bd9831be8c6eade32a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.638a43676304ab501185.js.map

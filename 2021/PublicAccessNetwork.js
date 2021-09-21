@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.35060cf5809e7d2a6614.js
-// Retrieved at 9/21/2021, 9:30:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.8901f92db13fecba99ee.js
+// Retrieved at 9/21/2021, 10:00:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -284,16 +284,16 @@
 			const p = Object(a.a)(e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
-					experimentName: m.bd
+					experimentName: m.cd
 				});
-				return Object(m.we)(t) ? void 0 : t
+				return Object(m.xe)(t) ? void 0 : t
 			}, e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
-					experimentName: m.cd
+					experimentName: m.dd
 				});
-				return Object(m.we)(t) ? void 0 : t
-			}, (e, t) => e === m.dd.Enabled && t === m.dd.Enabled);
+				return Object(m.xe)(t) ? void 0 : t
+			}, (e, t) => e === m.ed.Enabled && t === m.ed.Enabled);
 			var h = s("./src/config.ts");
 			var b = s("./src/reddit/selectors/user.ts");
 			const v = e => {
@@ -1374,9 +1374,9 @@
 							a = Object(te.I)(s(), {
 								identifier: D.belongsTo
 							});
-						if (a && (e => V.Pd.Redirect === Object(F.b)(e, {
+						if (a && (e => V.Qd.Redirect === Object(F.b)(e, {
 								experimentEligibilitySelector: Z,
-								experimentName: V.Hd
+								experimentName: V.Id
 							}))(s())) return void t(Object(o.c)(a.url));
 						if ((D.media && D.media.type) === N.o.LIVEVIDEO) {
 							const e = `/rpan${D.belongsTo.type===j.a.SUBREDDIT?a.url:"/"}${Object(p.t)(D.id)}`;
@@ -7759,22 +7759,22 @@
 				a = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const i = e => {
 					const t = Object(a.a)(e);
-					return Boolean(t) && !Object(n.we)(t)
+					return Boolean(t) && !Object(n.xe)(t)
 				},
 				d = Object(o.a)(i, r.d, (e, t) => e && !t)
 		},
 		"./src/redditGQL/operations/OtherDiscussions.json": function(e) {
-			e.exports = JSON.parse('{"id":"2235f6ea21db"}')
+			e.exports = JSON.parse('{"id":"53354e96d5f9"}')
 		},
 		"./src/redditGQL/operations/PostFeedAndOtherDiscussions.json": function(e) {
-			e.exports = JSON.parse('{"id":"57a00f39b82d"}')
+			e.exports = JSON.parse('{"id":"9f31eb4d8cd6"}')
 		},
 		"./src/redditGQL/operations/SubredditPosts.json": function(e) {
-			e.exports = JSON.parse('{"id":"5331d6d26cc7"}')
+			e.exports = JSON.parse('{"id":"e7038156b6da"}')
 		},
 		"./src/redditGQL/operations/SubredditsPosts.json": function(e) {
-			e.exports = JSON.parse('{"id":"dea2650df7b5"}')
+			e.exports = JSON.parse('{"id":"cc44a9792eec"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.35060cf5809e7d2a6614.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.8901f92db13fecba99ee.js.map
