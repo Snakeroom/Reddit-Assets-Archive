@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-MediumPost.faf0f4e379782673a831.js
-// Retrieved at 9/21/2021, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-MediumPost.c5e0a09578ba10868703.js
+// Retrieved at 9/21/2021, 5:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~StandalonePostPage~reddit-components-MediumPost"], {
 		"./src/lib/hooks/useTooltip.ts": function(e, t, r) {
@@ -355,14 +355,14 @@
 						} = e, n = 1 !== r;
 						t ? B(!0) : n && B(!1)
 					})
-				}, []), z = Object(n.useRef)({
+				}, []), q = Object(n.useRef)({
 					rootMargin: "2000px 0px 2000px 0px"
 				});
-				Object(a.a)(S, V, z.current);
-				const q = Object(c.a)(t);
+				Object(a.a)(S, V, q.current);
+				const z = Object(c.a)(t);
 				Object(n.useEffect)(() => {
-					if (void 0 !== q && q !== t) {
-						const e = t - q;
+					if (void 0 !== z && z !== t) {
+						const e = t - z;
 						G.current ? (T.current(e), f && f()) : D.current += e
 					}
 					return () => {
@@ -2954,8 +2954,8 @@
 				f = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: n.lb
-					}) === n.zb.Enabled
+						experimentName: n.kb
+					}) === n.xb.Enabled
 				}
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, r) {
@@ -3338,4 +3338,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-MediumPost.faf0f4e379782673a831.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-MediumPost.c5e0a09578ba10868703.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.80f8363f5e6b0721b608.js
-// Retrieved at 9/21/2021, 10:00:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.538113ac617c4fcccb51.js
+// Retrieved at 9/21/2021, 5:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"], {
 		"./src/lib/linkMatchers/index.ts": function(e, t, r) {
@@ -3340,8 +3340,8 @@
 			const o = e => s.e[Object(i.Q)(e, {})] === s.d.Card,
 				d = e => Object(a.c)(e, {
 					experimentEligibilitySelector: o,
-					experimentName: n.V
-				}) === n.vb.Treatment
+					experimentName: n.U
+				}) === n.tb.Treatment
 		},
 		"./src/reddit/selectors/features/predictions/creation/index.ts": function(e, t, r) {
 			"use strict";
@@ -3442,4 +3442,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.80f8363f5e6b0721b608.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.538113ac617c4fcccb51.js.map

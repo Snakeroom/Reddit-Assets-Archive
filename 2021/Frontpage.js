@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.20293ca89bef7b695db2.js
-// Retrieved at 9/21/2021, 10:00:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.5cdc219585bb78cee0be.js
+// Retrieved at 9/21/2021, 5:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -365,9 +365,9 @@
 			const p = Object(l.a)(u.g, u.d, m.e, (e, t, a) => !e && !t && !a);
 
 			function h(e) {
-				const t = Object(d.a)(c.ab, p) === e,
-					a = Object(d.a)(c.bb, p) === e,
-					s = Object(d.a)(c.cb, p) === e;
+				const t = Object(d.a)(c.Z, p) === e,
+					a = Object(d.a)(c.ab, p) === e,
+					s = Object(d.a)(c.bb, p) === e;
 				return t || a || s
 			}
 			const b = 250,
@@ -377,8 +377,8 @@
 				const {
 					showPromo: t
 				} = Object(i.a)(), a = function() {
-					const e = h(c.wb.Bottom_cell),
-						t = h(c.wb.Bottom_sheet);
+					const e = h(c.ub.Bottom_cell),
+						t = h(c.ub.Bottom_sheet);
 					return e ? o.b.SignupUpsellCell : t ? o.b.SignupUpsellBottomSheet : null
 				}(), n = s.useRef(!1);
 				return s.useMemo(() => r()(e => {
@@ -2512,10 +2512,10 @@
 			}
 			var qe = a("./src/reddit/selectors/experiments/utils.ts");
 			const Ue = Object(m.a)(e => Object(Be.c)(e, {
-					experimentName: De.Wc,
+					experimentName: De.Uc,
 					experimentEligibilitySelector: Be.a
 				}), qe.a),
-				Ve = Object(m.a)(Ue, e => e === De.Yc.Enabled);
+				Ve = Object(m.a)(Ue, e => e === De.Wc.Enabled);
 			var We = a("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
 				Ge = a("./src/reddit/selectors/user.ts");
 			var He = a("./src/reddit/selectors/experiments/uiSimplification.ts"),
@@ -2547,8 +2547,8 @@
 						return (!t || !a) && (!Object(He.b)(e) && function(e) {
 							return Object(Be.c)(e, {
 								experimentEligibilitySelector: Ge.K,
-								experimentName: De.tb
-							}) === De.sc
+								experimentName: De.rb
+							}) === De.qc
 						}(e))
 					},
 					isNavbarLikeMwebEnabled: d.a,
@@ -5565,8 +5565,8 @@
 			const o = e => n.e[Object(r.Q)(e, {})] === n.d.Card,
 				i = e => Object(c.c)(e, {
 					experimentEligibilitySelector: o,
-					experimentName: s.V
-				}) === s.vb.Treatment
+					experimentName: s.U
+				}) === s.tb.Treatment
 		},
 		"./src/reddit/selectors/experiments/celebratoryMoments.ts": function(e, t, a) {
 			"use strict";
@@ -5587,13 +5587,13 @@
 			const c = e => {
 					const t = Object(n.c)(e, {
 						experimentEligibilitySelector: n.a,
-						experimentName: s.te
+						experimentName: s.re
 					});
 					return t === s.L.TwoDayCooldown || t === s.L.FiveDayCooldown
 				},
 				o = e => {
 					const t = Object(r.d)(e, {
-							experimentName: s.te
+							experimentName: s.re
 						}),
 						a = null == t ? void 0 : t.variant;
 					return a === s.L.TwoDayCooldown ? 2 : a === s.L.FiveDayCooldown ? 5 : 0
@@ -5616,7 +5616,7 @@
 			function c(e) {
 				return Object(n.c)(e, {
 					experimentEligibilitySelector: r.K,
-					experimentName: s.Nb
+					experimentName: s.Lb
 				})
 			}
 			const o = 31536e3;
@@ -5635,9 +5635,9 @@
 				return function(e) {
 					return Object(n.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: s.Mb
-					}) === s.uc.Enabled
-				}(e) ? l.Achievements : t === s.vc.ControlBanner ? l.CommunitySpacesControl : t === s.vc.EnabledBanner ? l.CommunitySpaces : null
+						experimentName: s.Kb
+					}) === s.sc.Enabled
+				}(e) ? l.Achievements : t === s.tc.ControlBanner ? l.CommunitySpacesControl : t === s.tc.EnabledBanner ? l.CommunitySpaces : null
 			}! function(e) {
 				e.Achievements = "achievements", e.CommunitySpaces = "communitySpaces", e.CommunitySpacesControl = "communitySpaces--control"
 			}(l || (l = {}))
@@ -5688,4 +5688,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.20293ca89bef7b695db2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.5cdc219585bb78cee0be.js.map

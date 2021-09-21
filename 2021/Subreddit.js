@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.0d4636eb7e67472e7a3d.js
-// Retrieved at 9/21/2021, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.bbc667943ea115dc5968.js
+// Retrieved at 9/21/2021, 5:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~ModListing", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -406,9 +406,9 @@
 			const p = Object(d.a)(m.g, m.d, u.e, (e, t, n) => !e && !t && !n);
 
 			function b(e) {
-				const t = Object(l.a)(i.ab, p) === e,
-					n = Object(l.a)(i.bb, p) === e,
-					s = Object(l.a)(i.cb, p) === e;
+				const t = Object(l.a)(i.Z, p) === e,
+					n = Object(l.a)(i.ab, p) === e,
+					s = Object(l.a)(i.bb, p) === e;
 				return t || n || s
 			}
 			const h = 250,
@@ -418,8 +418,8 @@
 				const {
 					showPromo: t
 				} = Object(c.a)(), n = function() {
-					const e = b(i.wb.Bottom_cell),
-						t = b(i.wb.Bottom_sheet);
+					const e = b(i.ub.Bottom_cell),
+						t = b(i.ub.Bottom_sheet);
 					return e ? a.b.SignupUpsellCell : t ? a.b.SignupUpsellBottomSheet : null
 				}(), r = s.useRef(!1);
 				return s.useMemo(() => o()(e => {
@@ -9809,12 +9809,12 @@
 						rtJsonElementProps: o
 					});
 					switch (s) {
-						case h.ce.SmIcon:
+						case h.ae.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: o
 							});
-						case h.ce.SmIconHc:
+						case h.ae.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -16142,9 +16142,9 @@
 			var s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				o = n("./src/reddit/selectors/user.ts");
-			const i = e => s.Lb.Enabled === Object(r.c)(e, {
+			const i = e => s.Jb.Enabled === Object(r.c)(e, {
 				experimentEligibilitySelector: o.K,
-				experimentName: s.Kb
+				experimentName: s.Ib
 			})
 		},
 		"./src/reddit/selectors/experiments/econLeaderboards.ts": function(e, t, n) {
@@ -16160,15 +16160,15 @@
 			const i = e => {
 					const t = Object(r.c)(e, {
 						experimentEligibilitySelector: o.K,
-						experimentName: s.Yb
+						experimentName: s.Wb
 					});
-					return !(!t || Object(s.xe)(t))
+					return !(!t || Object(s.ve)(t))
 				},
 				a = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: o.K,
-						experimentName: s.Yb
-					}) === s.xc.ListingEnabled
+						experimentName: s.Wb
+					}) === s.vc.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/experiments/navbarLikeMweb.ts": function(e, t, n) {
@@ -16179,9 +16179,9 @@
 			var s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const o = e => Object(r.c)(e, {
-				experimentName: s.fd,
+				experimentName: s.dd,
 				experimentEligibilitySelector: r.a
-			}) === s.kd.Enabled
+			}) === s.id.Enabled
 		},
 		"./src/reddit/selectors/experiments/newPostPill.ts": function(e, t, n) {
 			"use strict";
@@ -16206,9 +16206,9 @@
 					})(e, t)) return -1;
 				const n = Object(i.c)(e, {
 					experimentEligibilitySelector: i.a,
-					experimentName: r.Xc
+					experimentName: r.Vc
 				});
-				return n === r.Zc.TenPosts ? 10 : n === r.Zc.FifteenPosts ? 15 : -1
+				return n === r.Xc.TenPosts ? 10 : n === r.Xc.FifteenPosts ? 15 : -1
 			}
 		},
 		"./src/reddit/selectors/experiments/postActionBarAnimation.ts": function(e, t, n) {
@@ -16288,8 +16288,8 @@
 				b = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: s.lb
-					}) === s.zb.Enabled
+						experimentName: s.kb
+					}) === s.xb.Enabled
 				}
 		},
 		"./src/reddit/selectors/experiments/resonatePilot.ts": function(e, t, n) {
@@ -16302,8 +16302,8 @@
 				o = n("./src/reddit/selectors/meta.ts");
 			const i = e => Object(r.c)(e, {
 				experimentEligibilitySelector: e => !Object(o.d)(e) && "US" === Object(o.b)(e),
-				experimentName: s.Jd
-			}) === s.Rd.Enabled
+				experimentName: s.Hd
+			}) === s.Pd.Enabled
 		},
 		"./src/reddit/selectors/experiments/trending.ts": function(e, t, n) {
 			"use strict";
@@ -16313,9 +16313,9 @@
 			var s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				o = n("./src/reddit/selectors/user.ts");
-			const i = e => Object(o.H)(e) || !(s.le.Holdout === Object(r.c)(e, {
+			const i = e => Object(o.H)(e) || !(s.je.Holdout === Object(r.c)(e, {
 				experimentEligibilitySelector: r.a,
-				experimentName: s.he
+				experimentName: s.fe
 			}))
 		},
 		"./src/reddit/selectors/experiments/uiSimplification.ts": function(e, t, n) {
@@ -16330,17 +16330,17 @@
 				r = n("./src/reddit/featureFlags/utils.ts"),
 				o = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const i = ["AU", "CA", "GB", "US"],
-				a = new Set([s.Kc.AllItems, s.Kc.TrendingSearch]),
+				a = new Set([s.Ic.AllItems, s.Ic.TrendingSearch]),
 				c = e => {
 					const t = Object(o.c)(e, {
 						experimentEligibilitySelector: Object(r.d)(Object(r.b)(...i)),
-						experimentName: s.Lc
+						experimentName: s.Jc
 					});
 					return a.has(t)
 				},
-				d = e => s.Kc.AllItems === Object(o.c)(e, {
+				d = e => s.Ic.AllItems === Object(o.c)(e, {
 					experimentEligibilitySelector: Object(r.d)(Object(r.b)(...i)),
-					experimentName: s.Lc
+					experimentName: s.Jc
 				})
 		},
 		"./src/reddit/selectors/features/predictions/leaderboards/index.ts": function(e, t, n) {
@@ -16634,12 +16634,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.Wd
+						experimentName: s.Ud
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.ce.SmIcon || t === s.ce.SmIconHc
+					return t === s.ae.SmIcon || t === s.ae.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -16759,4 +16759,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.0d4636eb7e67472e7a3d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.bbc667943ea115dc5968.js.map

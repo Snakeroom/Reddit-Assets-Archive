@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.57acb993973a0a32be54.js
-// Retrieved at 9/21/2021, 10:00:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.86825e34235a906d4191.js
+// Retrieved at 9/21/2021, 5:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -5976,12 +5976,12 @@
 						rtJsonElementProps: o
 					});
 					switch (s) {
-						case b.ce.SmIcon:
+						case b.ae.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: o
 							});
-						case b.ce.SmIconHc:
+						case b.ae.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -8036,15 +8036,15 @@
 			const i = e => {
 					const t = Object(r.c)(e, {
 						experimentEligibilitySelector: o.K,
-						experimentName: s.Yb
+						experimentName: s.Wb
 					});
-					return !(!t || Object(s.xe)(t))
+					return !(!t || Object(s.ve)(t))
 				},
 				a = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: o.K,
-						experimentName: s.Yb
-					}) === s.xc.ListingEnabled
+						experimentName: s.Wb
+					}) === s.vc.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, n) {
@@ -8176,12 +8176,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.Wd
+						experimentName: s.Ud
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.ce.SmIcon || t === s.ce.SmIconHc
+					return t === s.ae.SmIcon || t === s.ae.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -8210,4 +8210,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.57acb993973a0a32be54.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.86825e34235a906d4191.js.map
