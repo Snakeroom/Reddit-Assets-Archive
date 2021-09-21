@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModStatsChart.0d57be9e8e2513ce988f.js
-// Retrieved at 8/31/2021, 6:10:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModStatsChart.f0b6345a90b74f344999.js
+// Retrieved at 9/21/2021, 12:30:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModStatsChart"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, o, s) {
@@ -355,7 +355,7 @@
 								maxRotation: 0,
 								minRotation: 0,
 								padding: 10,
-								callback: (o, s) => e.statsTime === r.b.Hour ? Object(r.k)(Object(r.g)(o)) : Object(r.m)(Object(r.g)(o), e.statsTime, 0 === s)
+								callback: (o, s) => e.statsTime === r.b.Hour ? Object(r.l)(Object(r.g)(o)) : Object(r.n)(Object(r.g)(o), e.statsTime, 0 === s)
 							}
 						}, {
 							gridLines: {
@@ -369,7 +369,7 @@
 								fontColor: Object(p.a)(e).actionIcon,
 								maxRotation: 0,
 								minRotation: 0,
-								callback: o => e.statsTime === r.b.Hour ? Object(r.j)(Object(r.g)(o), e.statsTime) : ""
+								callback: o => e.statsTime === r.b.Hour ? Object(r.k)(Object(r.g)(o), e.statsTime) : ""
 							}
 						}],
 						yAxes: [{
@@ -467,7 +467,7 @@
 							windowEnd: o,
 							windowStart: s
 						} = this.props;
-						return Object(r.o)(e, !0).slice(s, o).map(e => e.toString())
+						return Object(r.p)(e, !0).slice(s, o).map(e => e.toString())
 					};
 					const o = e.statsView === r.d.Members ? 2 : 4,
 						s = new Array(o).fill(!1);
@@ -498,10 +498,10 @@
 						windowStart: s,
 						windowEnd: n
 					} = this.props;
-					let a = Object(r.n)(this.props.data, o, e);
+					let a = Object(r.o)(this.props.data, o, e);
 					if (e === r.b.Month) {
 						const e = (new Date).getMonth() + 1;
-						a = a.map(o => Object(r.r)(o, e))
+						a = a.map(o => Object(r.s)(o, e))
 					}
 					const _ = {
 							labels: this.getLabels(),
@@ -519,7 +519,7 @@
 								hk: "2PU6tU"
 							}))]
 						},
-						h = e === r.b.Hour ? Object(r.k)(this.state.date) : Object(r.j)(this.state.date, e);
+						h = e === r.b.Hour ? Object(r.l)(this.state.date) : Object(r.k)(this.state.date, e);
 					return m.a.createElement("div", {
 						className: v.a.chart
 					}, m.a.createElement(u.a, null, m.a.createElement(d.a, {
@@ -727,4 +727,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModStatsChart.0d57be9e8e2513ce988f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModStatsChart.f0b6345a90b74f344999.js.map

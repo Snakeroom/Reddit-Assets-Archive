@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.77115c8ed9baa6736d70.js
-// Retrieved at 9/21/2021, 11:40:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.2df1561dc452cd1446d2.js
+// Retrieved at 9/21/2021, 12:30:10 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, i = o[0], s = o[1], c = o[2], l = 0, P = []; l < i.length; l++) n = i[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && P.push(d[n][0]), d[n] = 0;
@@ -1349,7 +1349,7 @@
 						"translations/es_MX-json": "ac526a182405624ea4a5",
 						"translations/fr_FR-json": "5ab117f0a509bf300d03",
 						"translations/it_IT-json": "3f4237b8407f4094a0c2",
-						"translations/pseudo_ext-json": "3c8186bc11ebeaa5eca1",
+						"translations/pseudo_ext-json": "1ee2b38d02aaf55be0e7",
 						"translations/pseudo_long-json": "b0f2142e009c82751c7a",
 						"translations/pseudo_short-json": "afe7be81e475ae789925",
 						"translations/pt_BR-json": "758487f95a1c7f113858",
@@ -1502,7 +1502,7 @@
 						"reddit-components-CommunitySettings-Notifications": "a69e183009a9b2687ad7",
 						"reddit-components-ModHub-ChatSettings": "5a239f6ec20d8a82691a",
 						"reddit-components-ModHub-ContentControls": "f5f14b7e5298878d444d",
-						"reddit-components-ModHub-TrafficStats": "89805d71130cb86200c6",
+						"reddit-components-ModHub-TrafficStats": "8e4c2933eac96b61d884",
 						"reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement": "6408ced1f4b59b4d0bc4",
 						"reddit-components-ModHub-flairs-PostFlairManagement": "1c119806531abe89c804",
 						"reddit-components-ModHub-flairs-UserFlairManagement": "316b65dddca29bfda8d0",
@@ -1534,7 +1534,7 @@
 						"vendors~reddit-components-Governance-TransactionModals-ClaimPointsModal": "45c45dc2b0aa3d257b7c",
 						"reddit-components-Governance-TransactionModals-ClaimPointsModal": "7cddc59a79168dd49b81",
 						"vendors~ModStatsChart": "45cc24bd757c37934779",
-						ModStatsChart: "0d57be9e8e2513ce988f"
+						ModStatsChart: "f0b6345a90b74f344999"
 					} [e] + ".js"
 				}(e);
 				var c = new Error;
@@ -1600,4 +1600,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.77115c8ed9baa6736d70.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.2df1561dc452cd1446d2.js.map
