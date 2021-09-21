@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.7c9bcb885ecf0e23b597.js
-// Retrieved at 9/21/2021, 5:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.08fd425f494cba7fd2c5.js
+// Retrieved at 9/21/2021, 7:10:07 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, i = o[0], s = o[1], c = o[2], l = 0, P = []; l < i.length; l++) n = i[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && P.push(d[n][0]), d[n] = 0;
@@ -1349,7 +1349,7 @@
 						"translations/es_MX-json": "9d57dafe7094819727dc",
 						"translations/fr_FR-json": "a1f5574d06f8259ae886",
 						"translations/it_IT-json": "caacc620d82fb80bf5f1",
-						"translations/pseudo_ext-json": "1282d0e6eccf2182349e",
+						"translations/pseudo_ext-json": "b10ca7dadb7fc1dc7fef",
 						"translations/pseudo_long-json": "38bc36a84588a015957d",
 						"translations/pseudo_short-json": "e89b5552d2af57b49eac",
 						"translations/pt_BR-json": "1bb8a4af8e9fb84d8c4d",
@@ -1600,4 +1600,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.7c9bcb885ecf0e23b597.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.08fd425f494cba7fd2c5.js.map
