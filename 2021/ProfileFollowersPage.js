@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.bcc1beabf56ffd9fef77.js
-// Retrieved at 9/20/2021, 6:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.0beac3ad38a130b26b45.js
+// Retrieved at 9/20/2021, 8:00:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileFollowersPage", "ProfileFollowersAction"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -404,8 +404,8 @@
 					ids: W,
 					loadMore: V
 				});
-			const q = {};
-			var G = (e = q, t) => {
+			const G = {};
+			var q = (e = G, t) => {
 				switch (t.type) {
 					case k.f:
 					case k.e: {
@@ -458,7 +458,7 @@
 					}
 				},
 				Y = Object(T.c)({
-					error: G,
+					error: q,
 					pending: Z
 				}),
 				X = s("./src/reddit/actions/profileConversations.ts");
@@ -1039,12 +1039,12 @@
 							return e
 					}
 				},
-				q = Object(j.c)({
+				G = Object(j.c)({
 					api: V,
 					result: z
 				});
-			const G = {};
-			var Q = (e = G, t) => {
+			const q = {};
+			var Q = (e = q, t) => {
 					switch (t.type) {
 						case E.n: {
 							const {
@@ -1087,7 +1087,7 @@
 					inContext: L,
 					loadMore: A,
 					models: W,
-					search: q,
+					search: G,
 					userOrder: Q
 				});
 			Object(S.a)({
@@ -1430,15 +1430,15 @@
 				K = s("./src/reddit/constants/modals.ts"),
 				V = s("./src/reddit/components/Hovercards/helpers.ts"),
 				z = s("./src/reddit/icons/fonts/index.tsx"),
-				q = s("./src/reddit/models/ModeratingSubreddits/index.ts"),
-				G = s("./src/reddit/selectors/bannedUser.ts"),
+				G = s("./src/reddit/models/ModeratingSubreddits/index.ts"),
+				q = s("./src/reddit/selectors/bannedUser.ts"),
 				Q = s("./src/reddit/components/Hovercards/AuthorHovercard/ModActions.m.less"),
 				Z = s.n(Q);
 			const {
 				fbt: Y
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), X = Object(o.c)({
-				hasModMailPermissions: Object(u.b)(q.c.mail),
-				isUserBanned: (e, t) => !!Object(G.b)(e, {
+				hasModMailPermissions: Object(u.b)(G.c.mail),
+				isUserBanned: (e, t) => !!Object(q.b)(e, {
 					subredditId: t.subredditId,
 					username: t.username
 				}),
@@ -1960,9 +1960,10 @@
 			var b = Object(o.b)(h, (e, t) => ({
 					onCloseUserDropdown: () => e(Object(l.i)()),
 					onOpenUserDropdown: async () => {
+						var s;
 						e(Object(l.f)({
 							tooltipId: t.tooltipId
-						})), t.authorOrSubredditName && e(Object(p.u)(t.authorOrSubredditName))
+						})), t.authorOrSubredditName && e(Object(p.u)(t.authorOrSubredditName)), null === (s = t.onShow) || void 0 === s || s.call(t)
 					}
 				})),
 				f = s("./src/reddit/components/Hovercards/HoverDiv/index.m.less"),
@@ -3161,8 +3162,8 @@
 				z = Object(m.c)({
 					isOverlayOpen: M.h
 				}),
-				q = Object(c.b)(z),
-				G = {};
+				G = Object(c.b)(z),
+				q = {};
 
 			function Q(e) {
 				return e === document
@@ -3492,8 +3493,8 @@
 					}), this.props.disableScrollCache && !this.props.preventScrollOnMount && Object(E.c)(this.scrollContainer, 0), this.setupScrollHandler(), h.a.write(() => {
 						if (!this.props.disableScrollCache) {
 							const e = this.getCacheKey(),
-								t = G[e];
-							o()(t) || (G[e] = void 0, this.scrollContainer && Object(E.c)(this.scrollContainer, t))
+								t = q[e];
+							o()(t) || (q[e] = void 0, this.scrollContainer && Object(E.c)(this.scrollContainer, t))
 						}
 						this.callOnScrollForItemsChanged(), this.props.onLastVisibleChildRendered && this.props.onLastVisibleChildRendered()
 					}), h.a.read(() => {
@@ -3522,7 +3523,7 @@
 				componentWillUnmount() {
 					if (this.callExitedViewportForUnmount(), this.cleanupScrollHandler(), clearTimeout(this.updateRenderableChildrenHandle), this.cancelPopulateRenderableChildrenWhenIdle(), this.scrollContainer && !this.props.disableScrollCache) {
 						const e = this.getCacheKey();
-						G[e] = this.lastRenderPosition
+						q[e] = this.lastRenderPosition
 					}
 					this.childMap = new S.a("id"), this.itemsInViewport = new S.a("id"), this.wrapperRefFNs = {}, this.childRefFns = {}, this.containerRef = null, this.loadMoreEl = void 0, this.scrollContainer = void 0, this.unmountItemsIdleId && (Object(u.cancelIdleCallback)(this.unmountItemsIdleId), this.unmountItemsIdleId = null)
 				}
@@ -3677,7 +3678,7 @@
 					return void 0 === e.onLoadMore || "loadMoreToken" in e
 				}
 			}
-			t.b = q(Object(L.b)(ce))
+			t.b = G(Object(L.b)(ce))
 		},
 		"./src/reddit/components/Scroller/getDocumentTop.ts": function(e, t, s) {
 			"use strict";
@@ -6033,7 +6034,7 @@
 			}));
 			var r = s("./src/reddit/constants/experiments.ts"),
 				n = s("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const i = Object(n.a)(r.qd)
+			const i = Object(n.a)(r.sd)
 		},
 		"./src/reddit/selectors/followers.ts": function(e, t, s) {
 			"use strict";
@@ -6868,4 +6869,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.bcc1beabf56ffd9fef77.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.0beac3ad38a130b26b45.js.map

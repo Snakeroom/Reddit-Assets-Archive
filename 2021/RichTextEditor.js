@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.cb612d50832d44e18c5c.js
-// Retrieved at 9/20/2021, 6:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.ff2421d3f3f899fab411.js
+// Retrieved at 9/20/2021, 8:00:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, o) {
@@ -1585,9 +1585,9 @@
 				l = o("./src/reddit/models/RichTextJson/index.ts"),
 				u = o("./src/reddit/models/Toast/index.ts"),
 				m = o("./src/reddit/actions/postCreation/constants.ts");
-			const p = Object(s.a)(m.C),
+			const p = Object(s.a)(m.G),
 				h = Object(s.a)(m.p),
-				b = Object(s.a)(m.M),
+				b = Object(s.a)(m.Q),
 				f = (e, t, o) => async (s, i, {
 					apiContext: f
 				}) => {
@@ -3376,8 +3376,8 @@
 					onChange: o => {
 						e(Object(c.c)(o)), t.onChange && t.onChange(o)
 					},
-					helpModalToggled: () => e(Object(c.x)(u.b)),
-					switchToRTEModalToggled: () => e(Object(c.x)(m.a.SWITCH_TO_RTE_MODAL_ID))
+					helpModalToggled: () => e(Object(c.y)(u.b)),
+					switchToRTEModalToggled: () => e(Object(c.y)(m.a.SWITCH_TO_RTE_MODAL_ID))
 				}));
 			class F extends r.a.Component {
 				constructor(e) {
@@ -4754,4 +4754,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.cb612d50832d44e18c5c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.ff2421d3f3f899fab411.js.map

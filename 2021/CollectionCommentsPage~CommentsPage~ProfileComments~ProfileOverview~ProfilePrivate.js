@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.b7711cfcfdd8077618cb.js
-// Retrieved at 9/20/2021, 6:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.a2fe2054e436cb861b45.js
+// Retrieved at 9/20/2021, 8:00:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, n) {
@@ -852,9 +852,9 @@
 			var M = n("./src/config.ts"),
 				A = n("./src/reddit/actions/tooltip.ts"),
 				S = n("./src/reddit/components/InfoTextTooltip/index.tsx");
-			const L = (e, t, n = !1) => `${e}${t}${n?"inOverlay":""}`;
-			var D = n("./src/reddit/components/Comments/Comment/TopMeta/cakeDay.m.less"),
-				B = n.n(D);
+			const D = (e, t, n = !1) => `${e}${t}${n?"inOverlay":""}`;
+			var L = n("./src/reddit/components/Comments/Comment/TopMeta/cakeDay.m.less"),
+				B = n.n(L);
 			const P = ({
 				className: e,
 				commentId: t,
@@ -864,7 +864,7 @@
 					i = () => o(Object(A.h)({
 						tooltipId: d
 					})),
-					d = L("CommentTopMeta--cakeday--", t, n),
+					d = D("CommentTopMeta--cakeday--", t, n),
 					l = s.fbt._("Cake day", null, {
 						hk: "1xptSi"
 					});
@@ -890,7 +890,7 @@
 						comment: n,
 						compact: s,
 						renderedInOverlay: o
-					} = e, i = Object(a.d)(), c = L("CommentTopMeta--Created--", n.id, o), d = () => i(Object(A.h)({
+					} = e, i = Object(a.d)(), c = D("CommentTopMeta--Created--", n.id, o), d = () => i(Object(A.h)({
 						tooltipId: c
 					}));
 					return r.a.createElement("a", {
@@ -977,7 +977,7 @@
 						tooltipId: e
 					})),
 					l = () => i(Object(A.i)()),
-					m = t => L(t, e.id, o),
+					m = t => D(t, e.id, o),
 					u = m("CommentTopMeta--Automod--"),
 					p = m("CommentTopMeta--Approve--"),
 					b = m("CommentTopMeta--Remove--"),
@@ -1134,7 +1134,7 @@
 						color: o,
 						label: i,
 						tooltipTemplate: d
-					} = he[n], l = L(s, e.comment.id, e.renderedInOverlay), m = d(e), u = () => t(Object(A.h)({
+					} = he[n], l = D(s, e.comment.id, e.renderedInOverlay), m = d(e), u = () => t(Object(A.h)({
 						tooltipId: l
 					}));
 					return r.a.createElement(r.a.Fragment, null, r.a.createElement("span", {
@@ -1293,8 +1293,8 @@
 				}).apply(this, arguments)
 			}
 			const Se = d.a.wrapped(f.b, "RightPositionedAuthorFlair", Me.a),
-				Le = d.a.span("DeletedText", Me.a),
-				De = d.a.wrapped(C.a, "MetaSeparator", Me.a),
+				De = d.a.span("DeletedText", Me.a),
+				Le = d.a.wrapped(C.a, "MetaSeparator", Me.a),
 				Be = Object(a.b)(() => Object(i.c)({
 					hasBadges: (e, {
 						comment: t
@@ -1443,7 +1443,7 @@
 					} = e;
 					return r.a.createElement("div", {
 						className: o
-					}, r.a.createElement(Le, null, a.deletedBy === _.c.User ? s.fbt._("Comment deleted by user", null, {
+					}, r.a.createElement(De, null, a.deletedBy === _.c.User ? s.fbt._("Comment deleted by user", null, {
 						hk: "1Rtt4V"
 					}) : s.fbt._("Comment removed by moderator", null, {
 						hk: "E1t49"
@@ -1494,7 +1494,7 @@
 						hasContinueThread: !1,
 						numChildren: 0
 					};
-					return r.a.createElement(De, {
+					return r.a.createElement(Le, {
 						className: Me.a.metaText
 					}, t ? s.fbt._({
 						"*": "More than {number} children",
@@ -3424,13 +3424,13 @@
 				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				a = n("./src/reddit/selectors/posts.ts");
 			const i = e => Object(r.c)(e, {
-					experimentName: o.rd,
+					experimentName: o.td,
 					experimentEligibilitySelector: r.a
 				}),
-				c = (e, t) => t === o.Bd.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				c = (e, t) => t === o.Dd.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				d = Object(s.a)(a.H, i, (e, t) => c(e, t)),
 				l = Object(s.a)((e, t) => t, i, (e, t) => c(e, t))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.b7711cfcfdd8077618cb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.a2fe2054e436cb861b45.js.map

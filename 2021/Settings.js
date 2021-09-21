@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.577bf7226d52fffae225.js
-// Retrieved at 9/20/2021, 6:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.e52be9e5f03c184b5099.js
+// Retrieved at 9/20/2021, 8:00:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, n) {
@@ -4247,9 +4247,10 @@
 			var h = Object(a.b)(b, (e, t) => ({
 					onCloseUserDropdown: () => e(Object(l.i)()),
 					onOpenUserDropdown: async () => {
+						var n;
 						e(Object(l.f)({
 							tooltipId: t.tooltipId
-						})), t.authorOrSubredditName && e(Object(p.u)(t.authorOrSubredditName))
+						})), t.authorOrSubredditName && e(Object(p.u)(t.authorOrSubredditName)), null === (n = t.onShow) || void 0 === n || n.call(t)
 					}
 				})),
 				f = n("./src/reddit/components/Hovercards/HoverDiv/index.m.less"),
@@ -14100,7 +14101,7 @@
 			}));
 			var s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const o = Object(r.a)(s.qd)
+			const o = Object(r.a)(s.sd)
 		},
 		"./src/reddit/selectors/gold/productOffers.ts": function(e, t, n) {
 			"use strict";
@@ -14254,4 +14255,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.577bf7226d52fffae225.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.e52be9e5f03c184b5099.js.map

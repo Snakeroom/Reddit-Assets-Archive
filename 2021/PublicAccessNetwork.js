@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.e7f756b32ea794515ae1.js
-// Retrieved at 9/20/2021, 6:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.596c445030209499c52f.js
+// Retrieved at 9/20/2021, 8:00:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -286,13 +286,13 @@
 					experimentEligibilitySelector: u.a,
 					experimentName: m.bd
 				});
-				return Object(m.ue)(t) ? void 0 : t
+				return Object(m.we)(t) ? void 0 : t
 			}, e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
 					experimentName: m.cd
 				});
-				return Object(m.ue)(t) ? void 0 : t
+				return Object(m.we)(t) ? void 0 : t
 			}, (e, t) => e === m.dd.Enabled && t === m.dd.Enabled);
 			var h = s("./src/config.ts");
 			var b = s("./src/reddit/selectors/user.ts");
@@ -1374,9 +1374,9 @@
 							a = Object(te.I)(s(), {
 								identifier: D.belongsTo
 							});
-						if (a && (e => V.Nd.Redirect === Object(F.b)(e, {
+						if (a && (e => V.Pd.Redirect === Object(F.b)(e, {
 								experimentEligibilitySelector: Z,
-								experimentName: V.Fd
+								experimentName: V.Hd
 							}))(s())) return void t(Object(o.c)(a.url));
 						if ((D.media && D.media.type) === N.o.LIVEVIDEO) {
 							const e = `/rpan${D.belongsTo.type===j.a.SUBREDDIT?a.url:"/"}${Object(p.t)(D.id)}`;
@@ -7759,7 +7759,7 @@
 				a = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const i = e => {
 					const t = Object(a.a)(e);
-					return Boolean(t) && !Object(n.ue)(t)
+					return Boolean(t) && !Object(n.we)(t)
 				},
 				d = Object(o.a)(i, r.d, (e, t) => e && !t)
 		},
@@ -7777,4 +7777,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.e7f756b32ea794515ae1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.596c445030209499c52f.js.map

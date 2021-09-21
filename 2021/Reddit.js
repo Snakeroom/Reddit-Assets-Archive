@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.8ac72e648fd491c56e97.js
-// Retrieved at 9/20/2021, 7:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.ae65d3d537e3a80c6ff9.js
+// Retrieved at 9/20/2021, 8:00:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -2794,7 +2794,7 @@
 			const i = () => async (e, t) => {
 				const n = t();
 				Object(r.d)(n, {
-					experimentName: o.de
+					experimentName: o.fe
 				})
 			};
 			t.default = () => async (e, t) => {
@@ -2903,9 +2903,9 @@
 				d = n("./src/reddit/models/RichTextJson/index.ts"),
 				u = n("./src/reddit/models/Toast/index.ts"),
 				m = n("./src/reddit/actions/postCreation/constants.ts");
-			const p = Object(o.a)(m.C),
+			const p = Object(o.a)(m.G),
 				b = Object(o.a)(m.p),
-				h = Object(o.a)(m.M),
+				h = Object(o.a)(m.Q),
 				f = (e, t, n) => async (o, i, {
 					apiContext: f
 				}) => {
@@ -6309,9 +6309,9 @@
 				tr = n("./src/reddit/models/Search/index.ts"),
 				nr = n("./src/reddit/selectors/experiments/trending.ts"),
 				sr = n("./src/reddit/helpers/chooseVariant/index.ts");
-			const or = e => Object(Ct.H)(e) || Kt.je.Treatment1 === Object(sr.c)(e, {
+			const or = e => Object(Ct.H)(e) || Kt.le.Treatment1 === Object(sr.c)(e, {
 				experimentEligibilitySelector: sr.a,
-				experimentName: Kt.fe
+				experimentName: Kt.he
 			});
 			var rr, ar = n("./src/reddit/selectors/experiments/uiSimplification.ts"),
 				ir = n("./src/reddit/selectors/searchResults.ts"),
@@ -9003,7 +9003,7 @@
 					},
 					resendEmail: () => e(Object(ra.w)(pa.a)),
 					requestCreatePost: () => {
-						t.pageLayer && e(sa.n(t.pageLayer))
+						t.pageLayer && e(sa.o(t.pageLayer))
 					},
 					startChangeUsernameFlow: t => {
 						const n = Object(h.b)(t);
@@ -19889,13 +19889,13 @@
 				y = e => e.accountManagerModalData.redirectUrl,
 				O = Object(a.a)((e, t) => t.path, (e, t) => t.uiMode, v, d.a, p.a, g.a, u.b, e => Object(b.c)(e, {
 					experimentEligibilitySelector: e => !Object(h.e)(e),
-					experimentName: l.Qd
+					experimentName: l.Sd
 				}), m.a, f.i, (e, t, n, a, d, u, m, p, b, h) => {
 					let f = `${r.a.accountManagerOrigin}${e}`;
 					if (f = Object(i.a)(f, {
 							experiment_d2x_2020ify_buttons: "enabled"
 						}), p && (f = Object(i.a)(f, {
-							[`experiment_${l.Qd}`]: p
+							[`experiment_${l.Sd}`]: p
 						})), d && (f = Object(i.a)(f, {
 							experiment_d2x_onboarding: "enabled"
 						})), e === c.c.GoogleOneTap) return Object(i.a)(f, {
@@ -20005,7 +20005,7 @@
 					experimentEligibilitySelector: r.K,
 					experimentName: s.pc
 				});
-				return !(!t || Object(s.ue)(t))
+				return !(!t || Object(s.we)(t))
 			}
 		},
 		"./src/reddit/selectors/experiments/frontpageSignup.ts": function(e, t, n) {
@@ -20073,7 +20073,7 @@
 				a = n("./src/reddit/selectors/experiments/utils.ts");
 			const i = Object(s.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: o.de,
+					experimentName: o.fe,
 					expEventOverride: !1
 				}), e => e),
 				c = Object(s.a)(i, e => !!Object(a.a)(e)),
@@ -20095,7 +20095,7 @@
 					experimentName: o.kb,
 					experimentEligibilitySelector: a.e
 				}), i.a),
-				l = Object(s.a)(c, e => e === o.td.Enabled),
+				l = Object(s.a)(c, e => e === o.vd.Enabled),
 				d = Object(s.a)(e => Object(r.c)(e, {
 					experimentName: o.Y,
 					experimentEligibilitySelector: a.e
@@ -20110,9 +20110,9 @@
 			var s = n("./src/reddit/constants/experiments.ts"),
 				o = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				r = n("./src/reddit/selectors/user.ts");
-			const a = e => Object(r.H)(e) || !(s.ie.Holdout === Object(o.c)(e, {
+			const a = e => Object(r.H)(e) || !(s.ke.Holdout === Object(o.c)(e, {
 				experimentEligibilitySelector: o.a,
-				experimentName: s.ee
+				experimentName: s.ge
 			}))
 		},
 		"./src/reddit/selectors/experiments/uiSimplification.ts": function(e, t, n) {
@@ -20390,4 +20390,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePo~5f1ac562", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250", "Governance~ModListing~Reddit~Subreddit", "Chat~Governance~Reddit", "Reddit~StandalonePostPage~reddit-components-MediumPost", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.8ac72e648fd491c56e97.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.ae65d3d537e3a80c6ff9.js.map

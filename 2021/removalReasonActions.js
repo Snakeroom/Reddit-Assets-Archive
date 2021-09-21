@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/removalReasonActions.6228f2b4d59943ed8f96.js
-// Retrieved at 9/20/2021, 6:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/removalReasonActions.3c5c01c679c1a56b30ae.js
+// Retrieved at 9/20/2021, 8:00:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["removalReasonActions"], {
 		"./src/lib/makeCommentPermalink/index.ts": function(e, t, n) {
@@ -1029,9 +1029,9 @@
 				m = n("./src/reddit/models/RichTextJson/index.ts"),
 				u = n("./src/reddit/models/Toast/index.ts"),
 				l = n("./src/reddit/actions/postCreation/constants.ts");
-			const b = Object(o.a)(l.C),
+			const b = Object(o.a)(l.G),
 				p = Object(o.a)(l.p),
-				f = Object(o.a)(l.M),
+				f = Object(o.a)(l.Q),
 				O = (e, t, n) => async (o, d, {
 					apiContext: O
 				}) => {
@@ -1838,7 +1838,7 @@
 								experimentName: r.D,
 								expEventOverride: t
 							});
-							return !!(Object(r.ue)(n) ? void 0 : n)
+							return !!(Object(r.we)(n) ? void 0 : n)
 						})(n)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -2855,14 +2855,14 @@
 			const r = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: s.pd
-					}) === s.Ad.Enabled
+						experimentName: s.rd
+					}) === s.Cd.Enabled
 				},
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: s.od
-					}) === s.zd.Enabled
+						experimentName: s.qd
+					}) === s.Bd.Enabled
 				}
 		},
 		"./src/reddit/selectors/moderatingComments.ts": function(e, t, n) {
@@ -2897,4 +2897,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.6228f2b4d59943ed8f96.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.3c5c01c679c1a56b30ae.js.map

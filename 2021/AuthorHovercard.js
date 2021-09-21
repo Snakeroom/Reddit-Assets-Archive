@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.8b0b54118de87a304cb5.js
-// Retrieved at 9/15/2021, 6:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.7937a612da91555a0a34.js
+// Retrieved at 9/20/2021, 8:00:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/lib/delay/index.ts": function(e, t, n) {
@@ -1612,9 +1612,10 @@
 			var f = Object(a.b)(p, (e, t) => ({
 					onCloseUserDropdown: () => e(Object(d.i)()),
 					onOpenUserDropdown: async () => {
+						var n;
 						e(Object(d.f)({
 							tooltipId: t.tooltipId
-						})), t.authorOrSubredditName && e(Object(b.u)(t.authorOrSubredditName))
+						})), t.authorOrSubredditName && e(Object(b.u)(t.authorOrSubredditName)), null === (n = t.onShow) || void 0 === n || n.call(t)
 					}
 				})),
 				h = n("./src/reddit/components/Hovercards/HoverDiv/index.m.less"),
@@ -3985,4 +3986,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.8b0b54118de87a304cb5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.7937a612da91555a0a34.js.map
