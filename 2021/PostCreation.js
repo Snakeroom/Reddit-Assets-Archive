@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.68561f8a93d72af2135a.js
-// Retrieved at 9/22/2021, 1:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.d0a1ad4a264dcedd310f.js
+// Retrieved at 9/22/2021, 2:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, n) {
@@ -15603,6 +15603,21 @@
 					}
 				})
 		},
+		"./src/reddit/hooks/useExperimentVariant.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "a", (function() {
+				return s
+			}));
+			var o = n("./node_modules/react-redux/es/index.js"),
+				r = n("./src/reddit/helpers/chooseVariant/index.ts");
+
+			function s(e, t = r.a) {
+				return Object(o.e)(n => Object(r.c)(n, {
+					experimentName: e,
+					experimentEligibilitySelector: t
+				}))
+			}
+		},
 		"./src/reddit/hooks/useInfoTextTooltip.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
@@ -23178,4 +23193,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.68561f8a93d72af2135a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.d0a1ad4a264dcedd310f.js.map

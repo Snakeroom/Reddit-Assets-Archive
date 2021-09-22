@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.bfe5466eb595248e25d3.js
-// Retrieved at 9/22/2021, 1:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.b5160c232eaa5c6db1b2.js
+// Retrieved at 9/22/2021, 2:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, r) {
@@ -202,8 +202,8 @@
 								return
 						}
 					}(r(/Windows ((NT|XP)( \d\d?.\d)?)/i)) : s.windowsphone ? w = r(/windows phone (?:os)?\s?(\d+(\.\d+)*)/i) : s.mac ? w = (w = r(/Mac OS X (\d+([_\.\s]\d+)*)/i)).replace(/[_\s]/g, ".") : o ? w = (w = r(/os (\d+([_\s]\d+)*) like mac os x/i)).replace(/[_\s]/g, ".") : i ? w = r(/android[ \/-](\d+(\.\d+)*)/i) : s.webos ? w = r(/(?:web|hpw)os\/(\d+(\.\d+)*)/i) : s.blackberry ? w = r(/rim\stablet\sos\s(\d+(\.\d+)*)/i) : s.bada ? w = r(/bada\/(\d+(\.\d+)*)/i) : s.tizen && (w = r(/tizen[\/\s](\d+(\.\d+)*)/i)), w && (s.osversion = w);
-					var I = !s.windows && w.split(".")[0];
-					return v || c || "ipad" == o || i && (3 == I || I >= 4 && !y) || s.silk ? s.tablet = e : (y || "iphone" == o || "ipod" == o || i || a || s.blackberry || s.webos || s.bada) && (s.mobile = e), s.msedge || s.msie && s.version >= 10 || s.yandexbrowser && s.version >= 15 || s.vivaldi && s.version >= 1 || s.chrome && s.version >= 20 || s.samsungBrowser && s.version >= 4 || s.firefox && s.version >= 20 || s.safari && s.version >= 6 || s.opera && s.version >= 10 || s.ios && s.osversion && s.osversion.split(".")[0] >= 6 || s.blackberry && s.version >= 10.1 || s.chromium && s.version >= 20 ? s.a = e : s.msie && s.version < 10 || s.chrome && s.version < 20 || s.firefox && s.version < 20 || s.safari && s.version < 6 || s.opera && s.version < 10 || s.ios && s.osversion && s.osversion.split(".")[0] < 6 || s.chromium && s.version < 20 ? s.c = e : s.x = e, s
+					var S = !s.windows && w.split(".")[0];
+					return v || c || "ipad" == o || i && (3 == S || S >= 4 && !y) || s.silk ? s.tablet = e : (y || "iphone" == o || "ipod" == o || i || a || s.blackberry || s.webos || s.bada) && (s.mobile = e), s.msedge || s.msie && s.version >= 10 || s.yandexbrowser && s.version >= 15 || s.vivaldi && s.version >= 1 || s.chrome && s.version >= 20 || s.samsungBrowser && s.version >= 4 || s.firefox && s.version >= 20 || s.safari && s.version >= 6 || s.opera && s.version >= 10 || s.ios && s.osversion && s.osversion.split(".")[0] >= 6 || s.blackberry && s.version >= 10.1 || s.chromium && s.version >= 20 ? s.a = e : s.msie && s.version < 10 || s.chrome && s.version < 20 || s.firefox && s.version < 20 || s.safari && s.version < 6 || s.opera && s.version < 10 || s.ios && s.osversion && s.osversion.split(".")[0] < 6 || s.chromium && s.version < 20 ? s.c = e : s.x = e, s
 				}
 				var r = t("undefined" != typeof navigator && navigator.userAgent || "");
 
@@ -831,7 +831,7 @@
 			})), r.d(t, "a", (function() {
 				return w
 			})), r.d(t, "f", (function() {
-				return I
+				return S
 			}));
 			var n = r("./src/lib/makeActionCreator/index.ts"),
 				s = r("./src/lib/postParentMessage/index.ts"),
@@ -893,7 +893,7 @@
 						clickCloseGildModalEvent: d
 					} = await Promise.resolve().then(r.bind(null, "./src/reddit/helpers/trackers/gild.ts"));
 					Object(f.a)(d(o)(n)), Object(c.b)(c.a.GildingFlow)
-				}, I = () => async () => {
+				}, S = () => async () => {
 					Object(s.a)({
 						type: "login.gild"
 					})
@@ -1386,8 +1386,8 @@
 				y = r("./src/reddit/models/Flair/index.ts"),
 				O = r("./src/reddit/models/Media/index.ts"),
 				w = r("./src/reddit/models/Theme/NewColorSystem/index.ts"),
-				I = r("./src/lib/getShortenedLink.ts"),
-				S = r("./src/reddit/components/FlairWrapper/index.tsx"),
+				S = r("./src/lib/getShortenedLink.ts"),
+				I = r("./src/reddit/components/FlairWrapper/index.tsx"),
 				C = r("./node_modules/fbt/lib/FbtPublic.js"),
 				T = r("./src/lib/prettyPrintNumber/index.ts"),
 				x = r("./src/reddit/components/Poll/PollExpiry/index.tsx"),
@@ -1568,7 +1568,7 @@
 						size: e.size,
 						titleColor: e.titleColor,
 						titleType: i
-					}, t && o.a.createElement(S.a, {
+					}, t && o.a.createElement(I.a, {
 						titleFlair: t,
 						nowrap: !0,
 						post: n,
@@ -1591,7 +1591,7 @@
 							postId: r.id,
 							source: r.source,
 							sourceElement: s
-						}, Object(I.a)(r), !r.isSponsored && o.a.createElement(v.a, {
+						}, Object(S.a)(r), !r.isSponsored && o.a.createElement(v.a, {
 							name: "external_link",
 							className: F.a.outboundLinkIcon
 						}))
@@ -1602,7 +1602,7 @@
 						postId: r.id,
 						source: r.source,
 						sourceElement: s
-					}, Object(I.a)(r), !r.isSponsored && o.a.createElement(v.a, {
+					}, Object(S.a)(r), !r.isSponsored && o.a.createElement(v.a, {
 						name: "external_link",
 						className: F.a.outboundLinkIcon
 					}));
@@ -1628,10 +1628,10 @@
 						post: c,
 						showNSFWSpoilerFlairsOnly: d,
 						isTournamentPredictionPostV2: u
-					} = this.props, m = n === y.b.Left, p = Object(S.b)(c), f = d ? p.filter(e => e.type === y.f.Nsfw || e.type === y.f.Spoiler) : m ? p.filter(e => Object(_.q)(e.type)) : [], b = d ? [] : m ? p.filter(e => !Object(_.q)(e.type)) : p, h = !i && !s, g = !r && f && f.length > 0 && h, E = !r && b && b.length > 0 && h, v = !(u && (null === (e = c.pollData) || void 0 === e ? void 0 : e.isPrediction));
+					} = this.props, m = n === y.b.Left, p = Object(I.b)(c), f = d ? p.filter(e => e.type === y.f.Nsfw || e.type === y.f.Spoiler) : m ? p.filter(e => Object(_.q)(e.type)) : [], b = d ? [] : m ? p.filter(e => !Object(_.q)(e.type)) : p, h = !i && !s, g = !r && f && f.length > 0 && h, E = !r && b && b.length > 0 && h, v = !(u && (null === (e = c.pollData) || void 0 === e ? void 0 : e.isPrediction));
 					return o.a.createElement("div", {
 						className: Object(l.a)(F.a.Component, t, c.id)
-					}, !d && g && o.a.createElement(S.a, {
+					}, !d && g && o.a.createElement(I.a, {
 						isFlairFilter: !0,
 						titleFlair: f,
 						nowrap: !0,
@@ -1643,7 +1643,7 @@
 					})), a && o.a.createElement(R, {
 						className: F.a.pollMeta,
 						pollId: a.id
-					}), o.a.createElement($, this.props), E && o.a.createElement(S.a, {
+					}), o.a.createElement($, this.props), E && o.a.createElement(I.a, {
 						isFlairFilter: !0,
 						titleFlair: b,
 						nowrap: !0,
@@ -1776,8 +1776,8 @@
 				y = r("./src/reddit/helpers/styles/postBackgroundColor.ts"),
 				O = r("./src/reddit/helpers/styles/smartTextColor.ts"),
 				w = r("./src/reddit/helpers/truncateStringWithEllipsis.ts"),
-				I = r("./src/reddit/icons/fonts/OutboundLink/index.tsx"),
-				S = r("./src/reddit/models/NewStructuredStyles/index.ts"),
+				S = r("./src/reddit/icons/fonts/OutboundLink/index.tsx"),
+				I = r("./src/reddit/models/NewStructuredStyles/index.ts"),
 				C = r("./src/reddit/models/Theme/index.ts"),
 				T = r("./src/reddit/models/Theme/NewColorSystem/index.ts"),
 				x = r("./src/lib/constants/index.ts"),
@@ -1817,7 +1817,7 @@
 					children: e
 				}) => o.a.createElement("div", null, e),
 				U = m.a.div("PromotedPostContainer", L.a),
-				B = m.a.wrapped(I.a, "OutboundLinkIcon", L.a),
+				B = m.a.wrapped(S.a, "OutboundLinkIcon", L.a),
 				G = m.a.div("SourceLinkWrapper", L.a),
 				H = m.a.div("TopLine", L.a),
 				V = m.a.wrapped(c.c, "PostTitle", L.a),
@@ -1828,7 +1828,7 @@
 				K = e => Object(w.a)(e.title, 100),
 				Q = e => {
 					if (e.post.isMediaOnly) return {};
-					const t = Object(O.a)(Object(y.a)(e), S.a.actionIcon, S.b.actionIcon);
+					const t = Object(O.a)(Object(y.a)(e), I.a.actionIcon, I.b.actionIcon);
 					return {
 						color: t,
 						fill: t
@@ -2211,9 +2211,9 @@
 			})), r.d(t, "clickConfirmFlagAwardUsage", (function() {
 				return w
 			})), r.d(t, "clickReportAward", (function() {
-				return I
-			})), r.d(t, "clickCancelReportAward", (function() {
 				return S
+			})), r.d(t, "clickCancelReportAward", (function() {
+				return I
 			})), r.d(t, "clickConfirmReportAward", (function() {
 				return C
 			})), r.d(t, "viewGildModalEvent", (function() {
@@ -2324,8 +2324,8 @@
 				y = g("flag_award"),
 				O = g("cancel_flag_award"),
 				w = g("confirm_flag_award"),
-				I = g("report_community_award"),
-				S = g("cancel_report_community_award"),
+				S = g("report_community_award"),
+				I = g("cancel_report_community_award"),
 				C = g("confirm_report_community_award"),
 				T = (e, t, r) => n => ({
 					...u(n, r),
@@ -2491,7 +2491,7 @@
 					const {
 						thingId: r,
 						packageId: l
-					} = t, b = !!r, h = o.b(e), _ = h ? Object(u.getAwardTypeFromAward)(h) : null, g = b ? _ : a.o(e) ? d.GoldPurchaseType.Premium : d.GoldPurchaseType.Coins, E = r ? Object(p.a)(r) ? "comment" : "post" : void 0, v = l || a.t(e), y = [...Object(i.d)(e), ...Object(i.f)(e)].filter(e => e.mobileId === v)[0], O = t.offerContext || (h && 0 === h.coinPrice ? s.a.StorefrontFreeAward : Object(s.d)(y, b)), w = y ? Math.round(1e4 * (y.baselinePennies - y.pennies) / y.baselinePennies) / 100 : 0, I = y ? Math.round(1e4 * (y.coins - y.baselineCoins) / y.coins) / 100 : 0, S = y ? y.baselinePennies !== y.pennies ? `${w}_percent_price` : y.baselineCoins !== y.coins ? `${I}_percent_bonus` : void 0 : void 0, C = g === d.GoldPurchaseType.Premium ? n.wb : y ? y.pennies : void 0;
+					} = t, b = !!r, h = o.b(e), _ = h ? Object(u.getAwardTypeFromAward)(h) : null, g = b ? _ : a.o(e) ? d.GoldPurchaseType.Premium : d.GoldPurchaseType.Coins, E = r ? Object(p.a)(r) ? "comment" : "post" : void 0, v = l || a.t(e), y = [...Object(i.d)(e), ...Object(i.f)(e)].filter(e => e.mobileId === v)[0], O = t.offerContext || (h && 0 === h.coinPrice ? s.a.StorefrontFreeAward : Object(s.d)(y, b)), w = y ? Math.round(1e4 * (y.baselinePennies - y.pennies) / y.baselinePennies) / 100 : 0, S = y ? Math.round(1e4 * (y.coins - y.baselineCoins) / y.coins) / 100 : 0, I = y ? y.baselinePennies !== y.pennies ? `${w}_percent_price` : y.baselineCoins !== y.coins ? `${S}_percent_bonus` : void 0 : void 0, C = g === d.GoldPurchaseType.Premium ? n.wb : y ? y.pennies : void 0;
 					return {
 						...c.defaults(e),
 						comment: r ? c.comment(e, r) : null,
@@ -2506,7 +2506,7 @@
 							contentType: E,
 							numberCoins: y ? y.coins : void 0,
 							offerContext: O,
-							offerType: S
+							offerType: I
 						},
 						payment: {
 							currency: "USD",
@@ -2725,6 +2725,21 @@
 		"./src/reddit/helpers/truncateStringWithEllipsis.ts": function(e, t, r) {
 			"use strict";
 			t.a = (e, t) => e.length > t ? e.slice(0, t - 1).replace(/\s*$/, "") + "…" : e
+		},
+		"./src/reddit/hooks/useExperimentVariant.ts": function(e, t, r) {
+			"use strict";
+			r.d(t, "a", (function() {
+				return o
+			}));
+			var n = r("./node_modules/react-redux/es/index.js"),
+				s = r("./src/reddit/helpers/chooseVariant/index.ts");
+
+			function o(e, t = s.a) {
+				return Object(n.e)(r => Object(s.c)(r, {
+					experimentName: e,
+					experimentEligibilitySelector: t
+				}))
+			}
 		},
 		"./src/reddit/hooks/useInfoTextTooltip.ts": function(e, t, r) {
 			"use strict";
@@ -3623,9 +3638,9 @@
 			})), r.d(t, "f", (function() {
 				return w
 			})), r.d(t, "g", (function() {
-				return I
-			})), r.d(t, "i", (function() {
 				return S
+			})), r.d(t, "i", (function() {
+				return I
 			})), r.d(t, "k", (function() {
 				return C
 			})), r.d(t, "j", (function() {
@@ -3667,8 +3682,8 @@
 				y = e => e.features.goldPurchase.payment.rememberCard,
 				O = e => e.features.goldPurchase.payment.useSavedCard,
 				w = e => e.features.goldPurchase.payment.cardValidation.cardCvc,
-				I = e => e.features.goldPurchase.payment.cardValidation.cardExpiry,
-				S = e => e.features.goldPurchase.payment.cardValidation.cardNumber,
+				S = e => e.features.goldPurchase.payment.cardValidation.cardExpiry,
+				I = e => e.features.goldPurchase.payment.cardValidation.cardNumber,
 				C = e => e.features.goldPurchase.payment.cardValidation.nameOnCard,
 				T = e => e.features.goldPurchase.payment.stripeToken.errorMessage,
 				x = e => e.features.goldPurchase.payment.stripeToken.pending,
@@ -3761,4 +3776,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.bfe5466eb595248e25d3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.b5160c232eaa5c6db1b2.js.map

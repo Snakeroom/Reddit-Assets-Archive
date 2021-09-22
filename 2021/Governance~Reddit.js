@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.7ea139549996fc56f002.js
-// Retrieved at 9/22/2021, 1:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.59460ba8ffa5d227410f.js
+// Retrieved at 9/22/2021, 2:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -8842,6 +8842,21 @@
 					...s.defaults(e),
 					actionInfo: s.actionInfo(e)
 				})
+		},
+		"./src/reddit/hooks/useExperimentVariant.ts": function(e, t, r) {
+			"use strict";
+			r.d(t, "a", (function() {
+				return a
+			}));
+			var s = r("./node_modules/react-redux/es/index.js"),
+				n = r("./src/reddit/helpers/chooseVariant/index.ts");
+
+			function a(e, t = n.a) {
+				return Object(s.e)(r => Object(n.c)(r, {
+					experimentName: e,
+					experimentEligibilitySelector: t
+				}))
+			}
 		},
 		"./src/reddit/hooks/useLocalStorage.ts": function(e, t, r) {
 			"use strict";
@@ -26186,4 +26201,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.7ea139549996fc56f002.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.59460ba8ffa5d227410f.js.map
