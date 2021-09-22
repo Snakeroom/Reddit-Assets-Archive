@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Powerups.a9b95aa368c459cfe691.js
-// Retrieved at 9/15/2021, 5:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Powerups.336999103cf78552c182.js
+// Retrieved at 9/22/2021, 11:50:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Powerups"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, a, t) {
@@ -1292,4 +1292,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Powerups.a9b95aa368c459cfe691.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Powerups.336999103cf78552c182.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeManagement.874f9acde1e5cd28873b.js
-// Retrieved at 9/21/2021, 9:30:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeManagement.5ce6990b836229438082.js
+// Retrieved at 9/22/2021, 11:50:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumBadgeManagement"], {
 		"./node_modules/lodash/_LazyWrapper.js": function(e, t, s) {
@@ -1684,8 +1684,8 @@
 						onSelect: e.onSelectBadge
 					}))))
 				})),
-				q = s("./node_modules/lodash/curry.js"),
-				$ = s.n(q),
+				$ = s("./node_modules/lodash/curry.js"),
+				q = s.n($),
 				K = s("./src/reddit/actions/economics/subredditPremium/actionCreators.ts"),
 				Y = s("./src/reddit/components/Economics/SubredditPremium/Badges/ManagementModal/LeftRail/BadgeTypeSelector/Tab/index.m.less"),
 				Q = s.n(Y);
@@ -1711,7 +1711,7 @@
 			}
 			var J = s("./src/reddit/components/Economics/SubredditPremium/Badges/ManagementModal/LeftRail/BadgeTypeSelector/index.m.less"),
 				Z = s.n(J);
-			const ee = $()((e, t, s) => `${S.a.assetPath}/img/memberships/badges/management/tabs/${e}/${t}-${s?"on":"off"}-v2.png`),
+			const ee = q()((e, t, s) => `${S.a.assetPath}/img/memberships/badges/management/tabs/${e}/${t}-${s?"on":"off"}-v2.png`),
 				te = [{
 					type: u.a.Loyalty,
 					text: () => g.fbt._("Loyalty", null, {
@@ -2036,9 +2036,9 @@
 				We = s("./src/reddit/icons/fonts/Downvote/index.tsx"),
 				Ve = s("./src/reddit/icons/fonts/Upvote/index.tsx"),
 				ze = s("./src/reddit/icons/svgs/Twinkle/index.tsx"),
-				qe = s("./src/reddit/components/Economics/SubredditPremium/Badges/UserPreview/index.tsx"),
-				$e = s("./node_modules/lodash/last.js"),
-				Ke = s.n($e),
+				$e = s("./src/reddit/components/Economics/SubredditPremium/Badges/UserPreview/index.tsx"),
+				qe = s("./node_modules/lodash/last.js"),
+				Ke = s.n(qe),
 				Ye = s("./src/reddit/icons/svgs/ChevronDown/index.tsx"),
 				Qe = s("./src/reddit/components/Economics/SubredditPremium/Badges/ManagementModal/Preview/BadgeCard/Content/index.tsx"),
 				Xe = s("./src/lib/localizeCurrency/index.ts"),
@@ -2332,7 +2332,7 @@
 						style: {
 							left: wt(s, a)
 						}
-					})), n.a.createElement(qe.a, {
+					})), n.a.createElement($e.a, {
 						showExplanation: !0,
 						badges: s,
 						subredditId: e.subredditId
@@ -3487,7 +3487,7 @@
 					if (!Object(b.b)(e, {
 							subredditId: t
 						})) return !1;
-					if (Object(p.q)(e, {
+					if (Object(p.r)(e, {
 							subredditId: t
 						})) return !0;
 					const n = "replyToPost" !== s && Object(m.b)(e, {
@@ -3539,4 +3539,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeManagement.874f9acde1e5cd28873b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeManagement.5ce6990b836229438082.js.map

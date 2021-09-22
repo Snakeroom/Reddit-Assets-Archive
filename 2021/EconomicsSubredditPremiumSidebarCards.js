@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconomicsSubredditPremiumSidebarCards.724d7ebb4675d7ab1250.js
-// Retrieved at 9/21/2021, 9:30:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconomicsSubredditPremiumSidebarCards.284d637b89894f435177.js
+// Retrieved at 9/22/2021, 11:50:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconomicsSubredditPremiumSidebarCards"], {
 		"./src/lib/constants/specialMembership.ts": function(e, t, r) {
@@ -3532,7 +3532,7 @@
 					if (!Object(p.b)(e, {
 							subredditId: t
 						})) return !1;
-					if (Object(b.q)(e, {
+					if (Object(b.r)(e, {
 							subredditId: t
 						})) return !0;
 					const i = "replyToPost" !== r && Object(l.b)(e, {
@@ -3584,4 +3584,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconomicsSubredditPremiumSidebarCards.724d7ebb4675d7ab1250.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconomicsSubredditPremiumSidebarCards.284d637b89894f435177.js.map
