@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.9532b6c733c00c289eaa.js
-// Retrieved at 9/22/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.d8c76c38c0041cdf2456.js
+// Retrieved at 9/22/2021, 10:50:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -2491,13 +2491,13 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("145665"),
+				buildNumber: r("145672"),
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1632316703"),
+				})("1632321006"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -4994,14 +4994,14 @@
 					}))
 				},
 				z = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c5d675f4bc4c3e589813ae8f58320dd6d309810bf-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c87a42889cbf32d56d8ed9758cb95bf9e65baae21-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${v.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "5d675f4bc4c3e589813ae8f58320dd6d309810bf-production",
+						release: "87a42889cbf32d56d8ed9758cb95bf9e65baae21-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -5514,7 +5514,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "5d675f4bc4c3e589813ae8f58320dd6d309810bf-production",
+						releaseClient: "87a42889cbf32d56d8ed9758cb95bf9e65baae21-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -39251,10 +39251,10 @@
 				e.writeStructBegin("DOMTimers"), null !== this.request && void 0 !== this.request && (e.writeFieldBegin("request", r.Type.I64, 1), e.writeI64(this.request), e.writeFieldEnd()), null !== this.loading && void 0 !== this.loading && (e.writeFieldBegin("loading", r.Type.I64, 2), e.writeI64(this.loading), e.writeFieldEnd()), null !== this.loaded && void 0 !== this.loaded && (e.writeFieldBegin("loaded", r.Type.I64, 3), e.writeI64(this.loaded), e.writeFieldEnd()), e.writeFieldStop(), e.writeStructEnd()
 			};
 			var o = e.exports.Timer = function(e) {
-				this.type = null, this.millis = null, this.time_to_first_byte = null, this.first_contentful_paint = null, this.first_meaningful_paint = null, this.first_input_delay = null, this.referrer = null, e && (void 0 !== e.type && null !== e.type && (this.type = e.type), void 0 !== e.millis && null !== e.millis && (this.millis = e.millis), void 0 !== e.time_to_first_byte && null !== e.time_to_first_byte && (this.time_to_first_byte = e.time_to_first_byte), void 0 !== e.first_contentful_paint && null !== e.first_contentful_paint && (this.first_contentful_paint = e.first_contentful_paint), void 0 !== e.first_meaningful_paint && null !== e.first_meaningful_paint && (this.first_meaningful_paint = e.first_meaningful_paint), void 0 !== e.first_input_delay && null !== e.first_input_delay && (this.first_input_delay = e.first_input_delay), void 0 !== e.referrer && null !== e.referrer && (this.referrer = e.referrer))
+				this.type = null, this.millis = null, this.time_to_first_byte = null, this.first_contentful_paint = null, this.first_meaningful_paint = null, this.first_input_delay = null, this.referrer = null, this.referrer_correlation_id = null, e && (void 0 !== e.type && null !== e.type && (this.type = e.type), void 0 !== e.millis && null !== e.millis && (this.millis = e.millis), void 0 !== e.time_to_first_byte && null !== e.time_to_first_byte && (this.time_to_first_byte = e.time_to_first_byte), void 0 !== e.first_contentful_paint && null !== e.first_contentful_paint && (this.first_contentful_paint = e.first_contentful_paint), void 0 !== e.first_meaningful_paint && null !== e.first_meaningful_paint && (this.first_meaningful_paint = e.first_meaningful_paint), void 0 !== e.first_input_delay && null !== e.first_input_delay && (this.first_input_delay = e.first_input_delay), void 0 !== e.referrer && null !== e.referrer && (this.referrer = e.referrer), void 0 !== e.referrer_correlation_id && null !== e.referrer_correlation_id && (this.referrer_correlation_id = e.referrer_correlation_id))
 			};
 			o.prototype = {}, o.prototype.write = function(e) {
-				e.writeStructBegin("Timer"), null !== this.type && void 0 !== this.type && (e.writeFieldBegin("type", r.Type.STRING, 1), e.writeString(this.type), e.writeFieldEnd()), null !== this.millis && void 0 !== this.millis && (e.writeFieldBegin("millis", r.Type.I64, 2), e.writeI64(this.millis), e.writeFieldEnd()), null !== this.time_to_first_byte && void 0 !== this.time_to_first_byte && (e.writeFieldBegin("time_to_first_byte", r.Type.I64, 3), e.writeI64(this.time_to_first_byte), e.writeFieldEnd()), null !== this.first_contentful_paint && void 0 !== this.first_contentful_paint && (e.writeFieldBegin("first_contentful_paint", r.Type.I64, 4), e.writeI64(this.first_contentful_paint), e.writeFieldEnd()), null !== this.first_meaningful_paint && void 0 !== this.first_meaningful_paint && (e.writeFieldBegin("first_meaningful_paint", r.Type.I64, 5), e.writeI64(this.first_meaningful_paint), e.writeFieldEnd()), null !== this.first_input_delay && void 0 !== this.first_input_delay && (e.writeFieldBegin("first_input_delay", r.Type.I64, 6), e.writeI64(this.first_input_delay), e.writeFieldEnd()), null !== this.referrer && void 0 !== this.referrer && (e.writeFieldBegin("referrer", r.Type.STRING, 7), e.writeString(this.referrer), e.writeFieldEnd()), e.writeFieldStop(), e.writeStructEnd()
+				e.writeStructBegin("Timer"), null !== this.type && void 0 !== this.type && (e.writeFieldBegin("type", r.Type.STRING, 1), e.writeString(this.type), e.writeFieldEnd()), null !== this.millis && void 0 !== this.millis && (e.writeFieldBegin("millis", r.Type.I64, 2), e.writeI64(this.millis), e.writeFieldEnd()), null !== this.time_to_first_byte && void 0 !== this.time_to_first_byte && (e.writeFieldBegin("time_to_first_byte", r.Type.I64, 3), e.writeI64(this.time_to_first_byte), e.writeFieldEnd()), null !== this.first_contentful_paint && void 0 !== this.first_contentful_paint && (e.writeFieldBegin("first_contentful_paint", r.Type.I64, 4), e.writeI64(this.first_contentful_paint), e.writeFieldEnd()), null !== this.first_meaningful_paint && void 0 !== this.first_meaningful_paint && (e.writeFieldBegin("first_meaningful_paint", r.Type.I64, 5), e.writeI64(this.first_meaningful_paint), e.writeFieldEnd()), null !== this.first_input_delay && void 0 !== this.first_input_delay && (e.writeFieldBegin("first_input_delay", r.Type.I64, 6), e.writeI64(this.first_input_delay), e.writeFieldEnd()), null !== this.referrer && void 0 !== this.referrer && (e.writeFieldBegin("referrer", r.Type.STRING, 7), e.writeString(this.referrer), e.writeFieldEnd()), null !== this.referrer_correlation_id && void 0 !== this.referrer_correlation_id && (e.writeFieldBegin("referrer_correlation_id", r.Type.STRING, 8), e.writeString(this.referrer_correlation_id), e.writeFieldEnd()), e.writeFieldStop(), e.writeStructEnd()
 			}
 		},
 		"./src/telemetry/eventSchemas/tooltip_types.js": function(e, t, i) {
@@ -40962,6 +40962,7 @@
 				type: e.type,
 				millis: e.millis,
 				referrer: e.referrer,
+				referrer_correlation_id: e.referrerCorrelationId,
 				time_to_first_byte: e.timeToFirstByte,
 				first_contentful_paint: e.firstContentfulPaint,
 				first_meaningful_paint: e.firstMeaningfulPaint,
@@ -40974,4 +40975,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.9532b6c733c00c289eaa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.d8c76c38c0041cdf2456.js.map
