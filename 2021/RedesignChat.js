@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RedesignChat.4e77f1ff6b3b0d3eb3a9.js
-// Retrieved at 9/22/2021, 3:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RedesignChat.ec452ad4d3b1267704c4.js
+// Retrieved at 9/22/2021, 3:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RedesignChat"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -49,8 +49,8 @@
 				E = n("./src/chat/actions/session.ts"),
 				_ = n("./src/chat/actions/user.ts"),
 				v = n("./node_modules/react-redux/es/index.js"),
-				N = n("./src/lib/CSSVariableProvider/index.tsx"),
-				y = n("./src/lib/lessComponent.tsx"),
+				y = n("./src/lib/CSSVariableProvider/index.tsx"),
+				N = n("./src/lib/lessComponent.tsx"),
 				S = n("./src/chat/components/MinimizedPortalContainer/index.tsx"),
 				w = n("./src/chat/components/Root/index.tsx"),
 				T = n("./src/chat/constants/container.ts"),
@@ -66,10 +66,10 @@
 			function D(e) {
 				return void 0 !== e ? e : -1
 			}
-			const I = y.a.wrapped(e => c.a.createElement("div", {
+			const I = N.a.wrapped(e => c.a.createElement("div", {
 					className: e.className
 				}, e.children), "BasePortalContainer", U.a),
-				k = y.a.wrapped(e => {
+				k = N.a.wrapped(e => {
 					const t = Object(v.d)(),
 						n = Object(s.useRef)(null),
 						r = e => {
@@ -90,14 +90,14 @@
 						}
 					}, e.children)
 				}, "EmbedPortalContainer", U.a),
-				L = y.a.wrapped(e => c.a.createElement("div", {
+				q = N.a.wrapped(e => c.a.createElement("div", {
 					className: e.className,
 					style: {
 						width: `${D(B.width)}px`,
 						height: `${D(B.height)}px`
 					}
 				}, e.children), "HiddenPortalContainer", U.a),
-				q = y.a.wrapped(S.a, "MinimizedRedesignPortalContainer", U.a),
+				L = N.a.wrapped(S.a, "MinimizedRedesignPortalContainer", U.a),
 				z = I,
 				H = Object(M.a)({
 					container: e => e && e.container && e.container.size
@@ -108,11 +108,11 @@
 					case T.a.EMBED:
 						return c.a.createElement(k, null, e.children);
 					case T.a.HIDDEN:
-						return c.a.createElement(L, null, e.children);
+						return c.a.createElement(q, null, e.children);
 					case T.a.FULL:
 						return c.a.createElement(z, null, e.children);
 					case T.a.MINIMIZED:
-						return c.a.createElement(q, null);
+						return c.a.createElement(L, null);
 					default:
 						return c.a.createElement(k, null, e.children)
 				}
@@ -122,8 +122,8 @@
 				$ = n("./src/chat/customMiddleware/containerSize.ts"),
 				Y = n("./src/chat/customMiddleware/draftMessageText.ts"),
 				K = n("./src/chat/customMiddleware/iframeDispatcher.ts"),
-				W = n("./src/chat/customMiddleware/lastSelectedChannel.ts"),
-				V = n("./src/chat/customMiddleware/loggedOutPreferencesSync.ts"),
+				V = n("./src/chat/customMiddleware/lastSelectedChannel.ts"),
+				W = n("./src/chat/customMiddleware/loggedOutPreferencesSync.ts"),
 				J = n("./src/chat/customMiddleware/sendbirdToken.ts"),
 				X = n("./src/chat/customMiddleware/title.ts"),
 				Z = n("./src/chat/customMiddleware/tokenRefresher.ts"),
@@ -237,7 +237,7 @@
 						}
 					}, function(e, t) {
 						const n = Object(v.b)(H)(F);
-						return c.a.createElement("div", null, Object(N.d)(c.a.createElement(n, null, Object(w.a)(e, t)), document.body))
+						return c.a.createElement("div", null, Object(y.d)(c.a.createElement(n, null, Object(w.a)(e, t)), document.body))
 					}(e, t)),
 					appName: l.m.Chat,
 					history: Object(r.d)({
@@ -248,7 +248,7 @@
 						routes: he.a,
 						apiContext: fe.apiContext,
 						gqlContext: ge.gqlContext
-					}), fe.middleware, Z.a, J.a, K.a, V.a, Object(ee.a)(t), $.a, Q.a, G.a, Y.a, te.a, W.a, X.a, ne.a],
+					}), fe.middleware, Z.a, J.a, K.a, W.a, Object(ee.a)(t), $.a, Q.a, G.a, Y.a, te.a, V.a, X.a, ne.a],
 					modifyInitialData: ({
 						initialData: t,
 						browserHistory: n
@@ -758,10 +758,10 @@
 				a = n("./src/reddit/selectors/experiments/index.ts"),
 				i = n("./src/reddit/selectors/experiments/utils.ts");
 			const o = Object(s.a)(e => Object(r.c)(e, {
-					experimentName: c.Lc,
+					experimentName: c.Mc,
 					experimentEligibilitySelector: a.e
 				}), i.a),
-				d = Object(s.a)(o, e => e === c.Oc.Enabled)
+				d = Object(s.a)(o, e => e === c.Pc.Enabled)
 		},
 		"./src/reddit/selectors/experiments/inboxRedesign.ts": function(e, t, n) {
 			"use strict";
@@ -795,12 +795,12 @@
 					experimentName: c.ib,
 					experimentEligibilitySelector: a.e
 				}), i.a),
-				d = Object(s.a)(o, e => e === c.Uc.Enabled),
+				d = Object(s.a)(o, e => e === c.Vc.Enabled),
 				u = Object(s.a)(e => Object(r.c)(e, {
-					experimentName: c.Nc,
+					experimentName: c.Oc,
 					experimentEligibilitySelector: a.e
 				}), i.a),
-				l = Object(s.a)(d, u, (e, t) => e && t === c.Tc.Enabled),
+				l = Object(s.a)(d, u, (e, t) => e && t === c.Uc.Enabled),
 				b = Object(s.a)(e => Object(r.c)(e, {
 					experimentName: c.lb,
 					experimentEligibilitySelector: a.e
@@ -810,14 +810,14 @@
 					experimentName: c.fb,
 					experimentEligibilitySelector: a.e
 				}), i.a),
-				f = Object(s.a)(h, e => e === c.Qc.Banner_1st_time),
-				g = Object(s.a)(h, e => e === c.Qc.Tooltip_persist),
-				j = Object(s.a)(h, e => e === c.Qc.Tooltip_1st_time),
+				f = Object(s.a)(h, e => e === c.Rc.Banner_1st_time),
+				g = Object(s.a)(h, e => e === c.Rc.Tooltip_persist),
+				j = Object(s.a)(h, e => e === c.Rc.Tooltip_1st_time),
 				p = Object(s.a)(e => Object(r.c)(e, {
 					experimentName: c.gb,
 					experimentEligibilitySelector: a.e
 				}), i.a),
-				x = Object(s.a)(p, e => e === c.Rc.ContinuousScroll),
+				x = Object(s.a)(p, e => e === c.Sc.ContinuousScroll),
 				O = Object(s.a)(e => Object(r.c)(e, {
 					experimentName: c.Y,
 					experimentEligibilitySelector: a.e
@@ -828,11 +828,11 @@
 					experimentName: c.hb,
 					experimentEligibilitySelector: a.e
 				}), i.a),
-				v = Object(s.a)(_, e => e === c.Sc.Enabled)
+				v = Object(s.a)(_, e => e === c.Tc.Enabled)
 		},
 		"./src/redditGQL/operations/BadgeIndicators.json": function(e) {
 			e.exports = JSON.parse('{"id":"9d105ce5d71a"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.4e77f1ff6b3b0d3eb3a9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.ec452ad4d3b1267704c4.js.map

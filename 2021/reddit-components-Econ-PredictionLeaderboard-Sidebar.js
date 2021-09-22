@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PredictionLeaderboard-Sidebar.714ca5810208c5e93f55.js
-// Retrieved at 9/21/2021, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PredictionLeaderboard-Sidebar.a39337819feb4ea969b8.js
+// Retrieved at 9/22/2021, 3:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./src/reddit/components/Econ/Prediction/UnicornIcon/index.tsx": function(e, t, c) {
@@ -450,7 +450,7 @@
 		"./src/reddit/components/Econ/PredictionLeaderboard/Sidebar/index.tsx": function(e, t, c) {
 			"use strict";
 			c.r(t), c.d(t, "PredictionLeaderboardSidebar", (function() {
-				return j
+				return z
 			}));
 			var r = c("./node_modules/fbt/lib/FbtPublic.js"),
 				a = c("./node_modules/react/index.js"),
@@ -475,11 +475,11 @@
 					leaderboard: b.a
 				}),
 				L = {
-					fetchSubredditTopPredictors: l.j
+					fetchSubredditTopPredictors: l.k
 				},
 				N = Object(d.b)(v, L);
 
-			function j({
+			function z({
 				className: e,
 				fetchSubredditTopPredictors: t,
 				leaderboard: c,
@@ -499,12 +499,12 @@
 						}
 					})()
 				}, [d]);
-				const j = () => {
+				const z = () => {
 					v(!1)
 				};
 				if (!(null === (l = null == c ? void 0 : c.topPredictorsRank) || void 0 === l ? void 0 : l.length) || L) return null;
 				const {
-					currentRank: z,
+					currentRank: j,
 					topPredictorsRank: I
 				} = c;
 				return n.a.createElement(o.a, {
@@ -516,7 +516,7 @@
 					})
 				}, n.a.createElement(E.a, {
 					className: P.a.list,
-					currentRank: z,
+					currentRank: j,
 					topPredictorsRank: I.slice(0, _),
 					tournamentId: s
 				}), n.a.createElement("div", {
@@ -531,16 +531,16 @@
 					hk: "1Ozf02"
 				}))), h && n.a.createElement(x.a, {
 					className: P.a.modal,
-					currentRank: z,
-					onOverlayClick: j,
-					onClose: j,
+					currentRank: j,
+					onOverlayClick: z,
+					onClose: z,
 					subredditId: d,
 					topPredictorsRank: c.topPredictorsRank,
 					tournamentId: s,
 					withOverlay: !0
 				}))
 			}
-			t.default = N(j)
+			t.default = N(z)
 		},
 		"./src/reddit/selectors/features/predictions/leaderboards/index.ts": function(e, t, c) {
 			"use strict";
@@ -561,4 +561,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PredictionLeaderboard-Sidebar.714ca5810208c5e93f55.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PredictionLeaderboard-Sidebar.a39337819feb4ea969b8.js.map

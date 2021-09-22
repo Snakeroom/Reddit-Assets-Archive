@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-CreatingTournamentBanner.4ecaf683c269c5fb1dd8.js
-// Retrieved at 9/15/2021, 5:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-CreatingTournamentBanner.47ab7048214f55cbaaf0.js
+// Retrieved at 9/22/2021, 3:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction-CreatingTournamentBanner"], {
 		"./src/reddit/components/Econ/Prediction/CreatingTournamentBanner/index.m.less": function(e, t, n) {
@@ -61,7 +61,7 @@
 					}),
 					onClick: async () => {
 						if (!e || n) return null;
-						_(!0), (await t(Object(a.k)(e.name)))[0].status === u.a.Live && await t(Object(o.s)({
+						_(!0), (await t(Object(a.l)(e.name)))[0].status === u.a.Live && await t(Object(o.s)({
 							subredditName: e.name
 						})), _(!1)
 					}
@@ -75,4 +75,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-CreatingTournamentBanner.4ecaf683c269c5fb1dd8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-CreatingTournamentBanner.47ab7048214f55cbaaf0.js.map

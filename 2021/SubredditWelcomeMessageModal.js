@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWelcomeMessageModal.be7f9551e6b0bafc9f9a.js
-// Retrieved at 9/22/2021, 3:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWelcomeMessageModal.a4e516639cbdedaccfda.js
+// Retrieved at 9/22/2021, 3:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWelcomeMessageModal"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1543,7 +1543,7 @@
 			})), s.d(t, "i", (function() {
 				return A
 			})), s.d(t, "e", (function() {
-				return U
+				return W
 			}));
 			var n = s("./src/lib/unicodeUtils/index.ts"),
 				r = s("./node_modules/lodash/reduce.js"),
@@ -1648,7 +1648,7 @@
 						o = n.length;
 					for (let a = 0; a < o; a++) {
 						const e = n[a];
-						i.push(e.e === p.w ? e.t : U(e, t, a))
+						i.push(e.e === p.w ? e.t : W(e, t, a))
 					}
 					const c = d.x[r - 1];
 					return a.a.createElement(c, {
@@ -1763,7 +1763,7 @@
 						r = e.length;
 					for (let i = 0; i < r; i++) {
 						const r = e[i];
-						if (r.e === p.A) n.push(W(r, i));
+						if (r.e === p.A) n.push(U(r, i));
 						else if (r.e === p.x) n.push(a.a.createElement(O.a, {
 							key: i
 						}, A(r.c, t, s)));
@@ -1779,14 +1779,14 @@
 									media: e
 								}))
 							}
-						} else n.push(U(r, s, i))
+						} else n.push(W(r, s, i))
 					}
 					return n
 				},
-				U = (e, t, s) => {
+				W = (e, t, s) => {
 					switch (e.e) {
 						case p.o:
-							const n = W({
+							const n = U({
 								t: e.t,
 								f: e.f
 							}, 0);
@@ -1826,7 +1826,7 @@
 							}, e.t)
 					}
 				},
-				W = (e, t) => {
+				U = (e, t) => {
 					const {
 						f: s,
 						t: r
@@ -1984,12 +1984,12 @@
 						rtJsonElementProps: i
 					});
 					switch (n) {
-						case b.be.SmIcon:
+						case b.ce.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: i
 							});
-						case b.be.SmIconHc:
+						case b.ce.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -2096,7 +2096,7 @@
 				experimentVariant: e => {
 					var t;
 					return null === (t = Object(v.d)(e, {
-						experimentName: m.Xd
+						experimentName: m.Yd
 					})) || void 0 === t ? void 0 : t.variant
 				},
 				user: y.k,
@@ -2178,7 +2178,7 @@
 					rtJsonElementProps: N
 				}) : null === (i = null == y ? void 0 : y.body) || void 0 === i ? void 0 : i.markdown)), r.a.createElement(d.g, {
 					className: T.a.modalFooter
-				}, u === m.de.Rules ? !j && r.a.createElement(p.s, {
+				}, u === m.ee.Rules ? !j && r.a.createElement(p.s, {
 					priority: p.b.Secondary,
 					onClick: () => {
 						O(!0), E(b.b())
@@ -2567,12 +2567,12 @@
 				d = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: n.Vd
+						experimentName: n.Wd
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === n.be.SmIcon || t === n.be.SmIconHc
+					return t === n.ce.SmIcon || t === n.ce.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -2595,4 +2595,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWelcomeMessageModal.be7f9551e6b0bafc9f9a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWelcomeMessageModal.a4e516639cbdedaccfda.js.map

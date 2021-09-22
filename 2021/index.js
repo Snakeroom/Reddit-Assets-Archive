@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index.4e0d85b7e08572a93244.js
-// Retrieved at 9/22/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index.afbebc38dffa5c30f338.js
+// Retrieved at 9/22/2021, 3:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index"], {
 		"./src/reddit/components/Econ/Prediction/TournamentPostBody/ViewTournamentLink/index.m.less": function(e, t, n) {
@@ -14,8 +14,8 @@
 			}));
 			var o = n("./node_modules/react/index.js"),
 				i = n.n(o),
-				s = n("./node_modules/react-redux/es/index.js"),
-				r = n("./src/reddit/selectors/experiments/econ/index.ts"),
+				r = n("./node_modules/react-redux/es/index.js"),
+				s = n("./src/reddit/selectors/experiments/econ/index.ts"),
 				a = n("./src/reddit/models/Prediction/Tournament/index.ts"),
 				c = n("./src/lib/classNames/index.ts"),
 				d = n("./src/reddit/controls/InternalLink/index.tsx"),
@@ -44,7 +44,7 @@
 				postId: t
 			}) => {
 				const n = Object(p.a)(),
-					o = Object(s.e)(e => Object(v.U)(e, {
+					o = Object(r.e)(e => Object(v.U)(e, {
 						postId: t
 					}));
 				return i.a.createElement(d.a, {
@@ -96,12 +96,12 @@
 				isLastPrediction: n
 			}) => {
 				const o = Object(p.a)(),
-					r = Object(s.e)(e => Object(k.Q)(e, {
+					s = Object(r.e)(e => Object(k.Q)(e, {
 						subredditId: t
 					}));
 				return i.a.createElement(d.a, {
 					className: A.a.container,
-					to: `${null==r?void 0:r.url}predictions/`,
+					to: `${null==s?void 0:s.url}predictions/`,
 					onClick: () => o(m(e))
 				}, i.a.createElement("div", {
 					className: A.a.playTournament
@@ -123,9 +123,9 @@
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 
 			function U(e, t, n) {
-				const o = Object(s.d)(),
-					a = Object(s.e)(C.e),
-					c = Object(s.e)(r.q),
+				const o = Object(r.d)(),
+					a = Object(r.e)(C.e),
+					c = Object(r.e)(s.r),
 					d = Object(p.a)(),
 					l = Object(R.a)(),
 					{
@@ -165,7 +165,7 @@
 							selectedNumberTokens: t.amount
 						}));
 						try {
-							await o(Object(D.o)({
+							await o(Object(D.p)({
 								coinPackageId: t.id,
 								selectedOptionId: g,
 								price: t.amount,
@@ -193,12 +193,12 @@
 				prediction: e,
 				tournamentId: t,
 				subredditId: n,
-				post: r,
+				post: s,
 				isLastPrediction: a
 			}) => {
-				const d = Object(s.e)(C.K),
-					l = Object(s.e)(C.X),
-					u = Object(s.e)(t => Object(y.g)(t, {
+				const d = Object(r.e)(C.K),
+					l = Object(r.e)(C.X),
+					u = Object(r.e)(t => Object(y.g)(t, {
 						postId: e.id
 					})),
 					[m, p] = Object(o.useState)(!1),
@@ -210,7 +210,7 @@
 						predict: E,
 						cancelAction: x,
 						hideAnimation: f
-					} = U(t, e, r),
+					} = U(t, e, s),
 					{
 						options: g,
 						userSelection: I
@@ -253,7 +253,7 @@
 				}))), !V && i.a.createElement(S.a, {
 					disabled: b || m || !!I,
 					isEnded: D,
-					postId: r.id,
+					postId: s.id,
 					userSelection: I,
 					isShowingHint: m,
 					tournamentId: t,
@@ -270,7 +270,7 @@
 					tournamentId: t,
 					withOverlay: !0
 				}), !!I && i.a.createElement(B, {
-					postId: r.id,
+					postId: s.id,
 					subredditId: n,
 					isLastPrediction: a
 				}))
@@ -283,7 +283,7 @@
 					tournamentId: t,
 					predictions: n,
 					status: o
-				} = e.predictionTournament, s = function(e) {
+				} = e.predictionTournament, r = function(e) {
 					return i.a.useMemo(() => {
 						if (!e || !e.length) return;
 						const t = e.filter(e => !e.isSpoiler && !e.isNSFW).sort(z.a);
@@ -293,12 +293,12 @@
 						}
 					}, [])
 				}(n);
-				return (null == s ? void 0 : s.prediction) && o !== a.a.Closed ? i.a.createElement(I, null, i.a.createElement(W, {
+				return (null == r ? void 0 : r.prediction) && o !== a.a.Closed ? i.a.createElement(I, null, i.a.createElement(W, {
 					subredditId: e.belongsTo.id,
 					tournamentId: t,
 					post: e,
-					prediction: null == s ? void 0 : s.prediction,
-					isLastPrediction: null == s ? void 0 : s.isLastPrediction
+					prediction: null == r ? void 0 : r.prediction,
+					isLastPrediction: null == r ? void 0 : r.isLastPrediction
 				})) : i.a.createElement(E, {
 					postId: e.id
 				})
@@ -337,8 +337,8 @@
 				oe = n("./src/reddit/components/Econ/Prediction/TournamentPostBody/v2/PredictionsCarousel/AllPredictedCard/Confetti/index.m.less"),
 				ie = n.n(oe);
 
-			function se() {
-				return (se = Object.assign || function(e) {
+			function re() {
+				return (re = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var o in n) Object.prototype.hasOwnProperty.call(n, o) && (e[o] = n[o])
@@ -346,10 +346,10 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const re = ({
+			const se = ({
 				className: e,
 				...t
-			}) => i.a.createElement("div", se({
+			}) => i.a.createElement("div", re({
 				className: Object(c.a)(ie.a.container, e)
 			}, t), i.a.createElement("img", {
 				className: ie.a.left,
@@ -370,7 +370,7 @@
 				postId: e
 			}) => i.a.createElement("section", {
 				className: ce.a.container
-			}, i.a.createElement(re, {
+			}, i.a.createElement(se, {
 				className: ce.a.confetti
 			}), i.a.createElement(te.a, {
 				className: ce.a.image
@@ -406,7 +406,7 @@
 				className: n,
 				...o
 			}) => {
-				const s = Math.floor(100 * (e + 1) / t);
+				const r = Math.floor(100 * (e + 1) / t);
 				return i.a.createElement("div", me({
 					className: Object(c.a)(ue.a.container, n)
 				}, o), i.a.createElement("div", {
@@ -414,7 +414,7 @@
 				}, i.a.createElement("div", {
 					className: ue.a.progress,
 					style: {
-						width: `${s}%`
+						width: `${r}%`
 					}
 				})), i.a.createElement("div", {
 					className: ue.a.label
@@ -441,8 +441,8 @@
 				tournamentId: t,
 				subredditId: n,
 				post: o,
-				onPredict: s,
-				...r
+				onPredict: r,
+				...s
 			}) => {
 				const {
 					isLoading: a,
@@ -455,13 +455,13 @@
 					prediction: e,
 					selectedOptionId: c ? c.id : null,
 					onSelectOption: d
-				}, r)), !!c && i.a.createElement(j.b, {
+				}, s)), !!c && i.a.createElement(j.b, {
 					className: Oe.a.modal,
 					isCreatingVote: a,
 					onOverlayClick: u,
 					onCancel: u,
 					onPredict: async e => {
-						await l(e), s && s()
+						await l(e), r && r()
 					},
 					option: c,
 					pollId: e.id,
@@ -476,26 +476,26 @@
 					post: e,
 					predictions: t
 				}) => {
-					const [n, o] = i.a.useState(!1), s = t.some(({
+					const [n, o] = i.a.useState(!1), r = t.some(({
 						userSelection: e,
 						endsAt: t,
 						predictionStatus: n
-					}) => !e && t > Date.now() && n !== h.b.Cancelled && n !== h.b.CancelInProgress), r = Object(p.a)(), {
+					}) => !e && t > Date.now() && n !== h.b.Cancelled && n !== h.b.CancelInProgress), s = Object(p.a)(), {
 						index: a,
 						isFirstSlide: d,
 						isLastSlide: l,
 						nextSlide: m,
 						prevSlide: v
 					} = function(e) {
-						const [t, n] = i.a.useState(0), o = 0 === t, s = t === e - 1;
+						const [t, n] = i.a.useState(0), o = 0 === t, r = t === e - 1;
 						return {
 							index: t,
-							nextSlide: () => !s && n(t + 1),
+							nextSlide: () => !r && n(t + 1),
 							prevSlide: () => !o && n(t - 1),
 							isFirstSlide: o,
-							isLastSlide: s
+							isLastSlide: r
 						}
-					}(s ? t.length : t.length + 1), b = !s && l;
+					}(r ? t.length : t.length + 1), b = !r && l;
 					return i.a.useEffect(() => {
 						const t = b ? (e => t => ({
 							...u(t, e),
@@ -508,15 +508,15 @@
 							action: "view",
 							noun: "predictions_post"
 						}))(e.id);
-						r(t)
-					}, [e.id, a, b, r]), i.a.useEffect(() => {
+						s(t)
+					}, [e.id, a, b, s]), i.a.useEffect(() => {
 						o(!1)
 					}, [a]), i.a.createElement("div", {
 						className: ge.a.container
 					}, i.a.createElement("div", null, !d && i.a.createElement("button", {
 						className: Object(c.a)(ge.a.slideButton, ge.a.prev),
 						onClick: () => {
-							r((e => t => ({
+							s((e => t => ({
 								...u(t, e),
 								source: "predictions",
 								action: "click",
@@ -541,7 +541,7 @@
 							[ge.a.active]: n
 						}),
 						onClick: () => {
-							r((e => t => ({
+							s((e => t => ({
 								...u(t, e),
 								source: "predictions",
 								action: "click",
@@ -568,7 +568,7 @@
 							predictions: t
 						} = e.predictionTournament;
 						return t ? t.filter(e => !e.isSpoiler && !e.isNSFW).sort(z.a) : []
-					}, []), o = Object(s.e)(e => n.map(t => Object(y.g)(e, {
+					}, []), o = Object(r.e)(e => n.map(t => Object(y.g)(e, {
 						postId: t.id
 					})).filter(e => null !== e));
 					return t === a.a.Closed ? i.a.createElement(E, {
@@ -579,7 +579,7 @@
 					}))
 				},
 				ye = e => {
-					return Object(s.e)(r.u) ? i.a.createElement(he, e) : i.a.createElement(X, e)
+					return Object(r.e)(s.v) ? i.a.createElement(he, e) : i.a.createElement(X, e)
 				};
 			t.default = ye
 		},
@@ -656,38 +656,38 @@
 			n.d(t, "a", (function() {
 				return i
 			})), n.d(t, "b", (function() {
-				return s
+				return r
 			}));
 			var o = n("./src/reddit/models/Prediction/index.ts");
 			const i = (e, t) => {
 					const n = Date.now(),
 						i = n <= e.endsAt,
-						s = n <= t.endsAt,
-						r = e.status === o.b.Cancelled || e.status === o.b.CancelInProgress;
-					return r !== (t.status === o.b.Cancelled || t.status === o.b.CancelInProgress) ? r ? 1 : -1 : i !== s ? i ? -1 : 1 : i && e.selectedOptionId !== t.selectedOptionId ? e.selectedOptionId ? 1 : -1 : !e.resolvedOptionId != !t.resolvedOptionId ? e.resolvedOptionId ? 1 : -1 : i || e.selectedOptionId === t.selectedOptionId ? (e.totalVoteCount || 0) >= (t.totalVoteCount || 0) ? -1 : 1 : e.selectedOptionId ? -1 : 1
+						r = n <= t.endsAt,
+						s = e.status === o.b.Cancelled || e.status === o.b.CancelInProgress;
+					return s !== (t.status === o.b.Cancelled || t.status === o.b.CancelInProgress) ? s ? 1 : -1 : i !== r ? i ? -1 : 1 : i && e.selectedOptionId !== t.selectedOptionId ? e.selectedOptionId ? 1 : -1 : !e.resolvedOptionId != !t.resolvedOptionId ? e.resolvedOptionId ? 1 : -1 : i || e.selectedOptionId === t.selectedOptionId ? (e.totalVoteCount || 0) >= (t.totalVoteCount || 0) ? -1 : 1 : e.selectedOptionId ? -1 : 1
 				},
-				s = (e, t) => {
+				r = (e, t) => {
 					var n, o;
 					const {
-						pollData: s
-					} = e, {
 						pollData: r
+					} = e, {
+						pollData: s
 					} = t;
-					return s && r ? i({
-						endsAt: null == s ? void 0 : s.votingEndTimestamp,
-						selectedOptionId: null !== (n = null == s ? void 0 : s.userSelection) && void 0 !== n ? n : null,
-						resolvedOptionId: null == s ? void 0 : s.resolvedOptionId,
-						totalVoteCount: null == s ? void 0 : s.totalVoteCount,
-						status: null == s ? void 0 : s.predictionStatus
-					}, {
+					return r && s ? i({
 						endsAt: null == r ? void 0 : r.votingEndTimestamp,
-						selectedOptionId: null !== (o = null == r ? void 0 : r.userSelection) && void 0 !== o ? o : null,
+						selectedOptionId: null !== (n = null == r ? void 0 : r.userSelection) && void 0 !== n ? n : null,
 						resolvedOptionId: null == r ? void 0 : r.resolvedOptionId,
 						totalVoteCount: null == r ? void 0 : r.totalVoteCount,
 						status: null == r ? void 0 : r.predictionStatus
+					}, {
+						endsAt: null == s ? void 0 : s.votingEndTimestamp,
+						selectedOptionId: null !== (o = null == s ? void 0 : s.userSelection) && void 0 !== o ? o : null,
+						resolvedOptionId: null == s ? void 0 : s.resolvedOptionId,
+						totalVoteCount: null == s ? void 0 : s.totalVoteCount,
+						status: null == s ? void 0 : s.predictionStatus
 					}) : 0
 				}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.4e0d85b7e08572a93244.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.afbebc38dffa5c30f338.js.map
