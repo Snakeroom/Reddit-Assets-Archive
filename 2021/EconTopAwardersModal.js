@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.c2748bf16154bb79b93b.js
-// Retrieved at 9/22/2021, 3:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.1c2e04d28107641372d5.js
+// Retrieved at 9/22/2021, 7:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconTopAwardersModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, r) {
@@ -2576,9 +2576,11 @@
 			var a = r("./node_modules/react-redux/es/index.js"),
 				n = r("./node_modules/reselect/es/index.js"),
 				s = r("./src/reddit/actions/subscription/index.ts"),
-				o = r("./src/reddit/selectors/subreddit.ts");
+				o = r("./src/reddit/selectors/experiments/joinOptimizations.ts"),
+				c = r("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(a.b)(() => Object(n.c)({
-				userIsSubscriber: o.cb
+				isInJoinOptimizationsExperiment: e => Object(o.a)(e) || Object(o.b)(e) || Object(o.c)(e) || Object(o.d)(e),
+				userIsSubscriber: c.cb
 			}), (e, {
 				identifier: t
 			}) => ({
@@ -2904,4 +2906,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.c2748bf16154bb79b93b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.1c2e04d28107641372d5.js.map

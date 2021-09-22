@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.72b8b1bdb5d8b0d79d6a.js
-// Retrieved at 9/22/2021, 3:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.084fff1f087901dec6c9.js
+// Retrieved at 9/22/2021, 7:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -52,16 +52,16 @@
 			const p = Object(o.a)(e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.cd
+					experimentName: u.kd
 				});
-				return Object(u.ze)(t) ? void 0 : t
+				return Object(u.He)(t) ? void 0 : t
 			}, e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.dd
+					experimentName: u.ld
 				});
-				return Object(u.ze)(t) ? void 0 : t
-			}, (e, t) => e === u.ed.Enabled && t === u.ed.Enabled);
+				return Object(u.He)(t) ? void 0 : t
+			}, (e, t) => e === u.md.Enabled && t === u.md.Enabled);
 			var h = n("./src/config.ts");
 			var b = n("./src/reddit/selectors/user.ts");
 			const f = e => {
@@ -1313,7 +1313,7 @@
 			}), $ = Object(i.b)(() => Object(o.c)({
 				autoplay: A.b,
 				isLoggedIn: A.K,
-				isOverlayOpen: w.h,
+				isOverlayOpen: w.i,
 				location: (e, {
 					listingName: t
 				}) => {
@@ -2703,7 +2703,7 @@
 					subreddit: a.subreddit(e)
 				}),
 				d = (e, t, n) => s => ({
-					source: Object(o.h)(s) || n ? "post_lightbox" : "post_detail",
+					source: Object(o.i)(s) || n ? "post_lightbox" : "post_detail",
 					action: "click",
 					noun: t,
 					...c(s),
@@ -2725,7 +2725,7 @@
 				u = (e, t) => n => {
 					const s = a.currentPost(n);
 					return s ? d(s.id, e, t)(n) : {
-						source: Object(o.h)(n) || t ? "post_lightbox" : "post_detail",
+						source: Object(o.i)(n) || t ? "post_lightbox" : "post_detail",
 						action: "click",
 						noun: e,
 						...c(n)
@@ -3676,4 +3676,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.72b8b1bdb5d8b0d79d6a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.084fff1f087901dec6c9.js.map

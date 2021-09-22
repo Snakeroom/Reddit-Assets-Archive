@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileFollowersAction.ca20038f9d091e2afddd.js
-// Retrieved at 9/22/2021, 3:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileFollowersAction.087f2060979d0fad2703.js
+// Retrieved at 9/22/2021, 7:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileFollowersAction"], {
 		"./src/lib/makeOverviewConversationsItemKey/index.ts": function(e, t, s) {
@@ -970,7 +970,7 @@
 			}));
 			var o = s("./src/reddit/constants/experiments.ts"),
 				i = s("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const r = Object(i.a)(o.td)
+			const r = Object(i.a)(o.Bd)
 		},
 		"./src/reddit/selectors/followers.ts": function(e, t, s) {
 			"use strict";
@@ -1801,8 +1801,8 @@
 				}) => e.pages.profileOverview.chrono.fetchedTokens[t]
 		},
 		"./src/redditGQL/operations/ProfileFollowers.json": function(e) {
-			e.exports = JSON.parse('{"id":"c199897ee59d"}')
+			e.exports = JSON.parse('{"id":"09abe4823911"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersAction.ca20038f9d091e2afddd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersAction.087f2060979d0fad2703.js.map

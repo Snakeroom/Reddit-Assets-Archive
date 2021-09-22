@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.ee0baf596ddd11d5ec22.js
-// Retrieved at 9/22/2021, 3:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.cf7307280cfb20f4169d.js
+// Retrieved at 9/22/2021, 7:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, o) {
@@ -4468,7 +4468,7 @@
 				i = o("./src/reddit/selectors/telemetry.ts"),
 				c = o("./src/telemetry/index.ts");
 			const d = e => {
-					const t = Object(a.m)(e);
+					const t = Object(a.n)(e);
 					return {
 						source: "comment_composer",
 						action: n.c.CLICK,
@@ -4734,8 +4734,8 @@
 				const t = Object(r.k)(e);
 				return !(!t || (null == t ? void 0 : t.karma) && t.karma.fromPosts < 5 && t.karma.fromComments < 10) && Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: n.mb
-				}) === n.sc
+					experimentName: n.ub
+				}) === n.Ac
 			}
 		},
 		"./src/reddit/selectors/experiments/typingIndicators.ts": function(e, t, o) {
@@ -4750,14 +4750,14 @@
 			const r = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: n.we
-					}) === n.oe.Enabled
+						experimentName: n.Ee
+					}) === n.we.Enabled
 				},
 				a = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: n.ve
-					}) === n.ne.Enabled
+						experimentName: n.De
+					}) === n.ve.Enabled
 				}
 		},
 		"./src/reddit/selectors/moderatingComments.ts": function(e, t, o) {
@@ -4792,4 +4792,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.ee0baf596ddd11d5ec22.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.cf7307280cfb20f4169d.js.map

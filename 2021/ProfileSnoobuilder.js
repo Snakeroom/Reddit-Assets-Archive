@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.037da1b722d6fdaf590b.js
-// Retrieved at 9/22/2021, 3:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.b2e102852495caa81c9f.js
+// Retrieved at 9/22/2021, 7:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileSnoobuilder", "reddit-components-ContentGate"], {
 		"./assets/snoobuilder/Snoobuilder.json": function(e, t, n) {
@@ -4131,12 +4131,12 @@
 						rtJsonElementProps: i
 					});
 					switch (s) {
-						case b.ce.SmIcon:
+						case b.ke.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: i
 							});
-						case b.ce.SmIconHc:
+						case b.ke.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -4791,9 +4791,11 @@
 			var s = n("./node_modules/react-redux/es/index.js"),
 				r = n("./node_modules/reselect/es/index.js"),
 				i = n("./src/reddit/actions/subscription/index.ts"),
-				o = n("./src/reddit/selectors/subreddit.ts");
+				o = n("./src/reddit/selectors/experiments/joinOptimizations.ts"),
+				a = n("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(s.b)(() => Object(r.c)({
-				userIsSubscriber: o.cb
+				isInJoinOptimizationsExperiment: e => Object(o.a)(e) || Object(o.b)(e) || Object(o.c)(e) || Object(o.d)(e),
+				userIsSubscriber: a.cb
 			}), (e, {
 				identifier: t
 			}) => ({
@@ -5340,12 +5342,12 @@
 				c = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.Wd
+						experimentName: s.ee
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.ce.SmIcon || t === s.ce.SmIconHc
+					return t === s.ke.SmIcon || t === s.ke.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -5368,4 +5370,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.037da1b722d6fdaf590b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.b2e102852495caa81c9f.js.map

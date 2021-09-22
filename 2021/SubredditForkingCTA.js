@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditForkingCTA.cc94cd7e1b92af2d702d.js
-// Retrieved at 9/22/2021, 3:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditForkingCTA.816c7fc481038524b0f1.js
+// Retrieved at 9/22/2021, 7:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditForkingCTA"], {
 		"./src/reddit/components/CreateCommunityButton/index.m.less": function(t, _, e) {
@@ -158,9 +158,9 @@
 			})), e.d(_, "d", (function() {
 				return z
 			})), e.d(_, "l", (function() {
-				return C
-			})), e.d(_, "t", (function() {
 				return B
+			})), e.d(_, "t", (function() {
+				return C
 			})), e.d(_, "u", (function() {
 				return S
 			})), e.d(_, "r", (function() {
@@ -205,8 +205,8 @@
 				v = o.a.header("ModalHeader", d.a),
 				q = o.a.div("ModalTitle", d.a),
 				z = o.a.div("ModalAnnotation", d.a),
-				C = o.a.div("ModalMain", d.a),
-				B = o.a.textarea("TextArea", d.a),
+				B = o.a.div("ModalMain", d.a),
+				C = o.a.textarea("TextArea", d.a),
 				S = o.a.wrapped(s.k, "WarningButton", d.a),
 				T = o.a.wrapped(s.k, "PrimaryButton", d.a),
 				E = o.a.wrapped(s.n, "CancelButton", d.a),
@@ -238,10 +238,10 @@
 				m = e("./src/reddit/helpers/chooseVariant/index.ts"),
 				p = e("./src/reddit/selectors/experiments/utils.ts");
 			const y = Object(d.a)(t => Object(m.c)(t, {
-					experimentName: u.Vd,
+					experimentName: u.de,
 					experimentEligibilitySelector: m.a
 				}), p.a),
-				x = Object(d.a)(y, t => t === u.be.Enabled);
+				x = Object(d.a)(y, t => t === u.je.Enabled);
 			var f = e("./src/reddit/selectors/posts.ts"),
 				b = e("./src/reddit/components/CreateCommunityButton/index.tsx"),
 				h = e("./src/reddit/components/TrackingHelper/index.tsx");
@@ -1254,6 +1254,7 @@
 				isLeft: "_1HHR_ND8U6x6YrIqKFeXZy",
 				isRight: "_3tKmDp5VAtgWvabEmFkJ7T",
 				xsmallButtonStyles: "_3uJP0daPEH2plzVEYyTdaH",
+				xsmallBigPaddingButtonStyles: "UEPNkU0rd1-nvbkOcBatc",
 				smallButtonStyles: "HNozj_dKjQZ59ZsfEegz8",
 				mediumButtonStyles: "_3ukcnQySDskQwK_wB2iXYl",
 				largeButtonStyles: "_1J4mN6_wNfCtSyMDUNGQqN",
@@ -1309,9 +1310,9 @@
 			})), e.d(_, "q", (function() {
 				return z
 			})), e.d(_, "e", (function() {
-				return C
-			})), e.d(_, "f", (function() {
 				return B
+			})), e.d(_, "f", (function() {
+				return C
 			})), e.d(_, "j", (function() {
 				return S
 			})), e.d(_, "d", (function() {
@@ -1343,7 +1344,7 @@
 			};
 			var d, u, m, p;
 			! function(t) {
-				t.XXS = "xxsmallButtonStyles", t.XS = "xsmallButtonStyles", t.S = "smallButtonStyles", t.M = "mediumButtonStyles", t.L = "largeButtonStyles", t.XL = "xlargeButtonStyles"
+				t.XXS = "xxsmallButtonStyles", t.XS = "xsmallButtonStyles", t.XSP = "xsmallBigPaddingButtonStyles", t.S = "smallButtonStyles", t.M = "mediumButtonStyles", t.L = "largeButtonStyles", t.XL = "xlargeButtonStyles"
 			}(d || (d = {})),
 			function(t) {
 				t.Primary = "primary", t.Secondary = "secondary", t.Tertiary = "tertiary", t.Plain = "plain"
@@ -1370,8 +1371,8 @@
 						size: v = d.S,
 						text: q,
 						textClassName: z,
-						...C
-					} = t, B = (({
+						...B
+					} = t, C = (({
 						baseClassName: t,
 						redditStyle: _,
 						dataRedditStyle: e,
@@ -1426,12 +1427,12 @@
 						priority: j,
 						textClassName: z
 					});
-					return g === p.InternalLink && (t => "to" in t)(C) ? o.a.createElement(x, l({}, c, C, {
-						className: B
-					}), S) : g === p.ExternalLink && (t => "href" in t)(C) ? o.a.createElement(f, l({}, c, C, {
-						className: B
-					}), S) : o.a.createElement(b, l({}, c, C, {
-						className: B
+					return g === p.InternalLink && (t => "to" in t)(B) ? o.a.createElement(x, l({}, c, B, {
+						className: C
+					}), S) : g === p.ExternalLink && (t => "href" in t)(B) ? o.a.createElement(f, l({}, c, B, {
+						className: C
+					}), S) : o.a.createElement(b, l({}, c, B, {
+						className: C
 					}), S)
 				},
 				x = t => o.a.createElement(a.a, t),
@@ -1469,7 +1470,7 @@
 					kind: p.Button,
 					priority: u.Plain
 				}, t)),
-				C = ({
+				B = ({
 					className: t,
 					..._
 				}) => o.a.createElement(y, l({
@@ -1477,7 +1478,7 @@
 					priority: u.Primary,
 					className: Object(r.a)(t, i.a.DangerButtonColors)
 				}, _)),
-				B = ({
+				C = ({
 					className: t,
 					..._
 				}) => o.a.createElement(y, l({
@@ -1584,4 +1585,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditForkingCTA.cc94cd7e1b92af2d702d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditForkingCTA.816c7fc481038524b0f1.js.map

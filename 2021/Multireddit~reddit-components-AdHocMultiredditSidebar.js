@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit~reddit-components-AdHocMultiredditSidebar.e9a80459560df819f5a2.js
-// Retrieved at 9/22/2021, 1:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit~reddit-components-AdHocMultiredditSidebar.360d60fd5dd99b0ff8a2.js
+// Retrieved at 9/22/2021, 7:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit~reddit-components-AdHocMultiredditSidebar"], {
 		"./node_modules/lodash/take.js": function(e, t, r) {
@@ -410,7 +410,7 @@
 				}) => {
 					const s = t(),
 						i = Object(P.k)(s),
-						d = Object(k.h)(s) ? Object(k.k)(s) : Object(k.b)(s),
+						d = Object(k.i)(s) ? Object(k.l)(s) : Object(k.b)(s),
 						a = d && d.routeMatch && d.routeMatch.match;
 					if (!a) return;
 					const c = a.params,
@@ -2645,17 +2645,17 @@
 			t.a = s.a.div("rightAligned", n.a)
 		},
 		"./src/redditGQL/operations/AllUserMultireddits.json": function(e) {
-			e.exports = JSON.parse('{"id":"8f2551b0bce3"}')
+			e.exports = JSON.parse('{"id":"9175f5163f7d"}')
 		},
 		"./src/redditGQL/operations/MultiredditListing.json": function(e) {
-			e.exports = JSON.parse('{"id":"7e15185be3ae"}')
+			e.exports = JSON.parse('{"id":"7eff7582981f"}')
 		},
 		"./src/redditGQL/operations/SubredditRecommendations.json": function(e) {
-			e.exports = JSON.parse('{"id":"3c4d88474140"}')
+			e.exports = JSON.parse('{"id":"3d59de103384"}')
 		},
 		"./src/redditGQL/operations/SubredditTypeaheadSearch.json": function(e) {
 			e.exports = JSON.parse('{"id":"20edc5ee12df"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit~reddit-components-AdHocMultiredditSidebar.e9a80459560df819f5a2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit~reddit-components-AdHocMultiredditSidebar.360d60fd5dd99b0ff8a2.js.map

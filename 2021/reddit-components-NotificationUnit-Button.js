@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.6a4fc593db889f7c3a16.js
-// Retrieved at 9/22/2021, 3:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.5ae5059df0fba625d9dd.js
+// Retrieved at 9/22/2021, 7:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-NotificationUnit-Button"], {
 		"./src/reddit/actions/comment/authoring.ts": function(e, t, n) {
@@ -1326,7 +1326,7 @@
 								experimentName: s.D,
 								expEventOverride: t
 							});
-							return !!(Object(s.ze)(n) ? void 0 : n)
+							return !!(Object(s.He)(n) ? void 0 : n)
 						})(n)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -1512,7 +1512,7 @@
 				i = n("./src/reddit/selectors/telemetry.ts"),
 				d = n("./src/telemetry/index.ts");
 			const a = e => {
-					const t = Object(c.m)(e);
+					const t = Object(c.n)(e);
 					return {
 						source: "comment_composer",
 						action: o.c.CLICK,
@@ -2323,14 +2323,14 @@
 			const s = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: o.sd
-					}) === o.Dd.Enabled
+						experimentName: o.Ad
+					}) === o.Ld.Enabled
 				},
 				c = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: o.rd
-					}) === o.Cd.Enabled
+						experimentName: o.zd
+					}) === o.Kd.Enabled
 				}
 		},
 		"./src/reddit/selectors/moderatingComments.ts": function(e, t, n) {
@@ -2365,4 +2365,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.6a4fc593db889f7c3a16.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.5ae5059df0fba625d9dd.js.map

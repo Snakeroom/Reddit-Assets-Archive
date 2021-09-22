@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.1e1429694fe6866f6321.js
-// Retrieved at 9/22/2021, 3:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.99e5c195b914e28cb5e8.js
+// Retrieved at 9/22/2021, 7:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -5976,12 +5976,12 @@
 						rtJsonElementProps: o
 					});
 					switch (s) {
-						case b.ce.SmIcon:
+						case b.ke.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: o
 							});
-						case b.ce.SmIconHc:
+						case b.ke.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -6603,9 +6603,11 @@
 			var s = n("./node_modules/react-redux/es/index.js"),
 				r = n("./node_modules/reselect/es/index.js"),
 				o = n("./src/reddit/actions/subscription/index.ts"),
-				i = n("./src/reddit/selectors/subreddit.ts");
+				i = n("./src/reddit/selectors/experiments/joinOptimizations.ts"),
+				a = n("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(s.b)(() => Object(r.c)({
-				userIsSubscriber: i.cb
+				isInJoinOptimizationsExperiment: e => Object(i.a)(e) || Object(i.b)(e) || Object(i.c)(e) || Object(i.d)(e),
+				userIsSubscriber: a.cb
 			}), (e, {
 				identifier: t
 			}) => ({
@@ -8036,15 +8038,15 @@
 			const i = e => {
 					const t = Object(r.c)(e, {
 						experimentEligibilitySelector: o.K,
-						experimentName: s.Wb
+						experimentName: s.ec
 					});
-					return !(!t || Object(s.ze)(t))
+					return !(!t || Object(s.He)(t))
 				},
 				a = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: o.K,
-						experimentName: s.Wb
-					}) === s.xc.ListingEnabled
+						experimentName: s.ec
+					}) === s.Fc.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, n) {
@@ -8176,12 +8178,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.Wd
+						experimentName: s.ee
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.ce.SmIcon || t === s.ce.SmIconHc
+					return t === s.ke.SmIcon || t === s.ke.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -8203,11 +8205,11 @@
 				}
 		},
 		"./src/redditGQL/operations/SubredditGeoRecommendationViaFocusVertical.json": function(e) {
-			e.exports = JSON.parse('{"id":"d5b9525ce2ca"}')
+			e.exports = JSON.parse('{"id":"e7c21be88172"}')
 		},
 		"./src/redditGQL/operations/SubscribedSubreddits.json": function(e) {
-			e.exports = JSON.parse('{"id":"84f02d14f38a"}')
+			e.exports = JSON.parse('{"id":"d0b176d08b19"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.1e1429694fe6866f6321.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.99e5c195b914e28cb5e8.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.2b96aabe767f3653adf7.js
-// Retrieved at 9/22/2021, 3:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.0a3baa6680dd63bba2fd.js
+// Retrieved at 9/22/2021, 7:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255"], {
 		"./src/lib/unicodeUtils/index.ts": function(e, t, s) {
@@ -2354,12 +2354,12 @@
 						rtJsonElementProps: o
 					});
 					switch (n) {
-						case h.ce.SmIcon:
+						case h.ke.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: o
 							});
-						case h.ce.SmIconHc:
+						case h.ke.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -2430,59 +2430,61 @@
 						const {
 							className: e,
 							identifier: t,
-							onSubscribe: s,
-							onUnsubscribe: n,
-							postId: o,
-							sendEvent: a,
-							small: l = !1,
-							size: u,
-							userIsSubscriber: p,
-							doNotHideOtherSubscribeButtons: b,
-							getEventFactory: h,
-							onSubscriptionsRequested: x,
-							...f
-						} = this.props, E = this.state.isHovered, v = Object(d.a)({
+							isInJoinOptimizationsExperiment: s,
+							onSubscribe: n,
+							onUnsubscribe: o,
+							postId: a,
+							sendEvent: l,
+							small: u = !1,
+							size: p,
+							userIsSubscriber: b,
+							doNotHideOtherSubscribeButtons: h,
+							getEventFactory: x,
+							onSubscriptionsRequested: f,
+							...E
+						} = this.props, v = this.state.isHovered, _ = Object(d.a)({
 							type: t.type,
-							key: E ? "unsubscribe" : "subscribed"
-						});
+							key: v ? "unsubscribe" : "subscribed"
+						}), g = s || !u && v ? void 0 : Object(c.b)("checkmark"), O = s ? i.c.XSP : p || (u ? i.c.XS : i.c.S);
 						return r.a.createElement(i.s, m({
 							className: e,
-							priority: f.shouldReverseColor ? i.b.Primary : i.b.Secondary,
-							Icon: l || !l && !E ? Object(c.b)("checkmark") : void 0,
-							text: !l && v,
+							priority: E.shouldReverseColor ? i.b.Primary : i.b.Secondary,
+							Icon: g,
+							text: s ? _ : !u && _,
 							onClick: this.onClick,
 							onMouseEnter: this.onMouseEnter,
 							onMouseLeave: this.onMouseLeave,
-							size: u || (l ? i.c.XS : i.c.S)
-						}, f))
+							size: O
+						}, E))
 					}, this.renderSubscribeButton = () => {
 						const {
 							className: e,
 							identifier: t,
-							onSubscribe: s,
-							onUnsubscribe: n,
-							postId: o,
-							sendEvent: a,
-							small: l = !1,
-							size: u,
-							userIsSubscriber: p,
-							doNotHideOtherSubscribeButtons: b,
-							getEventFactory: h,
-							onSubscriptionsRequested: x,
-							...f
-						} = this.props, E = Object(d.a)({
+							isInJoinOptimizationsExperiment: s,
+							onSubscribe: n,
+							onUnsubscribe: o,
+							postId: a,
+							sendEvent: l,
+							small: u = !1,
+							size: p,
+							userIsSubscriber: b,
+							doNotHideOtherSubscribeButtons: h,
+							getEventFactory: x,
+							onSubscriptionsRequested: f,
+							...E
+						} = this.props, v = Object(d.a)({
 							type: t.type,
 							key: "subscribe"
-						});
+						}), _ = s ? i.c.XSP : p || (u ? i.c.XS : i.c.S);
 						return r.a.createElement(i.s, m({
 							className: e,
-							priority: f.shouldReverseColor ? i.b.Secondary : i.b.Primary,
-							Icon: Object(c.b)("add"),
-							size: u || (l ? i.c.XS : i.c.S),
-							text: !l && E,
+							priority: E.shouldReverseColor ? i.b.Secondary : i.b.Primary,
+							Icon: s ? void 0 : Object(c.b)("add"),
+							size: _,
+							text: s ? v : !u && v,
 							onClick: this.onClick
-						}, f, {
-							id: `subscribe-button-${o}`,
+						}, E, {
+							id: `subscribe-button-${a}`,
 							onMouseEnter: this.onMouseEnter,
 							onMouseLeave: this.onMouseLeave
 						}))
@@ -2504,62 +2506,6 @@
 				}
 			}
 			t.a = Object(a.a)(Object(o.c)(b))
-		},
-		"./src/reddit/components/SubscribeButton/helpers/actionTemplateSource.ts": function(e, t, s) {
-			"use strict";
-			s.d(t, "a", (function() {
-				return a
-			}));
-			var n = s("./node_modules/fbt/lib/FbtPublic.js");
-			const r = ({
-					type: e
-				}) => "subreddit" === e ? "subredditActions" : "profileActions",
-				o = {
-					subredditActions: {
-						subscribe: () => n.fbt._("Join", null, {
-							hk: "3Nhj3V"
-						}),
-						subscribed: () => n.fbt._("Joined", null, {
-							hk: "1YGago"
-						}),
-						unsubscribe: () => n.fbt._("Leave", null, {
-							hk: "299znK"
-						})
-					},
-					profileActions: {
-						subscribe: () => n.fbt._("Follow", null, {
-							hk: "18PRa5"
-						}),
-						subscribed: () => n.fbt._("Following", null, {
-							hk: "sjS3y"
-						}),
-						unsubscribe: () => n.fbt._("Unfollow", null, {
-							hk: "3c0uwF"
-						})
-					}
-				},
-				a = ({
-					type: e,
-					key: t
-				}) => o[r({
-					type: e
-				})][t]()
-		},
-		"./src/reddit/connectors/SubscribeButton/index.ts": function(e, t, s) {
-			"use strict";
-			var n = s("./node_modules/react-redux/es/index.js"),
-				r = s("./node_modules/reselect/es/index.js"),
-				o = s("./src/reddit/actions/subscription/index.ts"),
-				a = s("./src/reddit/selectors/subreddit.ts");
-			t.a = Object(n.b)(() => Object(r.c)({
-				userIsSubscriber: a.cb
-			}), (e, {
-				identifier: t
-			}) => ({
-				onSubscribe: () => e(o.d([t], !0)),
-				onSubscriptionsRequested: () => e(o.e()),
-				onUnsubscribe: () => e(o.d([t], !1))
-			}))
 		},
 		"./src/reddit/helpers/isRemoved.ts": function(e, t, s) {
 			"use strict";
@@ -2913,12 +2859,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: n.Wd
+						experimentName: n.ee
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === n.ce.SmIcon || t === n.ce.SmIconHc
+					return t === n.ke.SmIcon || t === n.ke.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -2941,4 +2887,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.2b96aabe767f3653adf7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.0a3baa6680dd63bba2fd.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.1ac64843e36763954569.js
-// Retrieved at 9/22/2021, 1:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.9ec5d7bf762fb7322ca8.js
+// Retrieved at 9/22/2021, 7:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -1704,9 +1704,11 @@
 			var r = s("./node_modules/react-redux/es/index.js"),
 				i = s("./node_modules/reselect/es/index.js"),
 				n = s("./src/reddit/actions/subscription/index.ts"),
-				o = s("./src/reddit/selectors/subreddit.ts");
+				o = s("./src/reddit/selectors/experiments/joinOptimizations.ts"),
+				a = s("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(r.b)(() => Object(i.c)({
-				userIsSubscriber: o.cb
+				isInJoinOptimizationsExperiment: e => Object(o.a)(e) || Object(o.b)(e) || Object(o.c)(e) || Object(o.d)(e),
+				userIsSubscriber: a.cb
 			}), (e, {
 				identifier: t
 			}) => ({
@@ -2601,8 +2603,8 @@
 				}
 		},
 		"./src/redditGQL/operations/SubredditGeoRecommendationViaFocusVertical.json": function(e) {
-			e.exports = JSON.parse('{"id":"d5b9525ce2ca"}')
+			e.exports = JSON.parse('{"id":"e7c21be88172"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.1ac64843e36763954569.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.9ec5d7bf762fb7322ca8.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.0e2e3cbefce3b282c9ec.js
-// Retrieved at 9/22/2021, 3:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.2a634aee2e2050981038.js
+// Retrieved at 9/22/2021, 7:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -284,16 +284,16 @@
 			const p = Object(a.a)(e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
-					experimentName: m.cd
+					experimentName: m.kd
 				});
-				return Object(m.ze)(t) ? void 0 : t
+				return Object(m.He)(t) ? void 0 : t
 			}, e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
-					experimentName: m.dd
+					experimentName: m.ld
 				});
-				return Object(m.ze)(t) ? void 0 : t
-			}, (e, t) => e === m.ed.Enabled && t === m.ed.Enabled);
+				return Object(m.He)(t) ? void 0 : t
+			}, (e, t) => e === m.md.Enabled && t === m.md.Enabled);
 			var h = s("./src/config.ts");
 			var b = s("./src/reddit/selectors/user.ts");
 			const v = e => {
@@ -1313,7 +1313,7 @@
 						};
 					return i ? (c.listingBelow = a || o, c.postFeed = c.listingBelow) : d ? c.nsfwListingBelow = !0 : c.postFeed = (a || o) && (!Object(M.h)(r) && !Object(Qe.d)(t, {
 						postId: s
-					}) && !!r || !Object(K.h)(t) && Object(D.e)(t)), e && (c.postQASchema = Object(D.d)(t)), c
+					}) && !!r || !Object(K.i)(t) && Object(D.e)(t)), e && (c.postQASchema = Object(D.d)(t)), c
 				},
 				dt = (e, t) => e || t.postFeed || t.listingBelow || t.nsfwListingBelow || t.postQASchema,
 				ct = e => ({
@@ -1374,9 +1374,9 @@
 							a = Object(te.I)(s(), {
 								identifier: D.belongsTo
 							});
-						if (a && (e => V.Qd.Redirect === Object(F.b)(e, {
+						if (a && (e => V.Yd.Redirect === Object(F.b)(e, {
 								experimentEligibilitySelector: Z,
-								experimentName: V.Id
+								experimentName: V.Qd
 							}))(s())) return void t(Object(o.c)(a.url));
 						if ((D.media && D.media.type) === N.o.LIVEVIDEO) {
 							const e = `/rpan${D.belongsTo.type===j.a.SUBREDDIT?a.url:"/"}${Object(p.t)(D.id)}`;
@@ -1480,7 +1480,7 @@
 						M = !!g.platform.lastPage;
 					if ((j || C && !k) && !(N && M)) {
 						if (C && !g.sidebarPromotedPosts.firstFetch) {
-							const e = Object(K.h)(g) ? de.a.COMMENTS_OVERLAY : de.a.COMMENTS;
+							const e = Object(K.i)(g) ? de.a.COMMENTS_OVERLAY : de.a.COMMENTS;
 							window.addEventListener("load", () => {
 								n(Object(ne.b)(e))
 							})
@@ -1572,7 +1572,7 @@
 						o && U.body.comments && Object.keys(U.body.comments).length < o.numComments ? n(pt(e, t, s)) : U.ok && n(ut({
 							key: f
 						}));
-						const r = Object(K.h)(g) ? de.a.COMMENTS_OVERLAY : de.a.COMMENTS;
+						const r = Object(K.i)(g) ? de.a.COMMENTS_OVERLAY : de.a.COMMENTS;
 						n(Object(ne.b)(r))
 					}
 					if (U.ok) {
@@ -6714,7 +6714,7 @@
 					currentHlsUrl: Xe.b,
 					inViewerFeedTheMeter: (e, t) => Object(Ke.g)(e, t, Xe.d),
 					isIntroInProgress: Qe.b,
-					isOverlayOpen: We.h,
+					isOverlayOpen: We.i,
 					isReportFlowOpen: (e, {
 						streamIdFromPath: t
 					}) => {
@@ -7759,22 +7759,22 @@
 				a = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const i = e => {
 					const t = Object(a.a)(e);
-					return Boolean(t) && !Object(n.ze)(t)
+					return Boolean(t) && !Object(n.He)(t)
 				},
 				d = Object(o.a)(i, r.d, (e, t) => e && !t)
 		},
 		"./src/redditGQL/operations/OtherDiscussions.json": function(e) {
-			e.exports = JSON.parse('{"id":"69910b35bc53"}')
+			e.exports = JSON.parse('{"id":"cca4e3f8ec9e"}')
 		},
 		"./src/redditGQL/operations/PostFeedAndOtherDiscussions.json": function(e) {
-			e.exports = JSON.parse('{"id":"b17835321ec7"}')
+			e.exports = JSON.parse('{"id":"f22174f35dc8"}')
 		},
 		"./src/redditGQL/operations/SubredditPosts.json": function(e) {
-			e.exports = JSON.parse('{"id":"e46817f7bd83"}')
+			e.exports = JSON.parse('{"id":"14ab038598cf"}')
 		},
 		"./src/redditGQL/operations/SubredditsPosts.json": function(e) {
-			e.exports = JSON.parse('{"id":"1d2279f811ea"}')
+			e.exports = JSON.parse('{"id":"a6913d5db1c6"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.0e2e3cbefce3b282c9ec.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.2a634aee2e2050981038.js.map

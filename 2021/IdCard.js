@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.776f755627e8c9196398.js
-// Retrieved at 9/22/2021, 3:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.607fcdf55e077ad02ffc.js
+// Retrieved at 9/22/2021, 7:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "AchievementsActions", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -4646,9 +4646,11 @@
 			var r = n("./node_modules/react-redux/es/index.js"),
 				s = n("./node_modules/reselect/es/index.js"),
 				i = n("./src/reddit/actions/subscription/index.ts"),
-				o = n("./src/reddit/selectors/subreddit.ts");
+				o = n("./src/reddit/selectors/experiments/joinOptimizations.ts"),
+				a = n("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(r.b)(() => Object(s.c)({
-				userIsSubscriber: o.cb
+				isInJoinOptimizationsExperiment: e => Object(o.a)(e) || Object(o.b)(e) || Object(o.c)(e) || Object(o.d)(e),
+				userIsSubscriber: a.cb
 			}), (e, {
 				identifier: t
 			}) => ({
@@ -4939,7 +4941,7 @@
 								experimentName: i.D,
 								expEventOverride: t
 							});
-							return !!(Object(i.ze)(n) ? void 0 : n)
+							return !!(Object(i.He)(n) ? void 0 : n)
 						})(n)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -5097,7 +5099,7 @@
 					subreddit: a.subreddit(e)
 				}),
 				c = (e, t, n) => r => ({
-					source: Object(o.h)(r) || n ? "post_lightbox" : "post_detail",
+					source: Object(o.i)(r) || n ? "post_lightbox" : "post_detail",
 					action: "click",
 					noun: t,
 					...d(r),
@@ -5119,7 +5121,7 @@
 				u = (e, t) => n => {
 					const r = a.currentPost(n);
 					return r ? c(r.id, e, t)(n) : {
-						source: Object(o.h)(n) || t ? "post_lightbox" : "post_detail",
+						source: Object(o.i)(n) || t ? "post_lightbox" : "post_detail",
 						action: "click",
 						noun: e,
 						...d(n)
@@ -6722,11 +6724,11 @@
 			e.exports = JSON.parse('{"id":"df1c1b9b6408"}')
 		},
 		"./src/redditGQL/operations/SubscribedSubreddits.json": function(e) {
-			e.exports = JSON.parse('{"id":"84f02d14f38a"}')
+			e.exports = JSON.parse('{"id":"d0b176d08b19"}')
 		},
 		"./src/redditGQL/operations/UpdateAchievementFlairPreference.json": function(e) {
 			e.exports = JSON.parse('{"id":"8c45e89afc9b"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.776f755627e8c9196398.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.607fcdf55e077ad02ffc.js.map

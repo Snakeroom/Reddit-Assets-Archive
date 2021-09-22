@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~ModListing.271eb3b598d893037d66.js
-// Retrieved at 9/22/2021, 3:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~ModListing.f37e25acfee7d87835da.js
+// Retrieved at 9/22/2021, 7:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~ModListing"], {
 		"./src/reddit/actions/focusedVerticals/index.ts": function(e, t, s) {
@@ -660,8 +660,8 @@
 						[T.a.isDisabled]: e
 					})
 				})),
-				U = D.a.div("DropdownRowDisabled", T.a),
-				F = Object(l.u)({
+				F = D.a.div("DropdownRowDisabled", T.a),
+				U = Object(l.u)({
 					isFrontpage: l.z,
 					isProfilePage: l.I,
 					pageLayer: e => e
@@ -681,7 +681,7 @@
 						tooltipId: t || V
 					}))
 				}));
-			var W = D.a.wrapped(F(G(Object(d.c)(e => r.a.createElement("div", {
+			var W = D.a.wrapped(U(G(Object(d.c)(e => r.a.createElement("div", {
 					className: e.className,
 					onClick: e.onOpenDropdown
 				}, !1 !== e.showTitle && r.a.createElement(M, null, y.fbt._("Sort", null, {
@@ -701,7 +701,7 @@
 					tooltipId: e.dropdownId || V
 				}, t, {
 					renderContentsHidden: !0
-				}), e.disabled ? r.a.createElement(U, null, y.fbt._("Coming soon", null, {
+				}), e.disabled ? r.a.createElement(F, null, y.fbt._("Coming soon", null, {
 					hk: "taPqm"
 				})) : (e.sortOptions || ((e, t, s, n, r) => {
 					const o = [h.V.HOT, h.V.NEW, h.V.TOP, h.V.RISING];
@@ -1344,8 +1344,8 @@
 				}
 			}
 			var ze = Be(Object(o.b)(Me)(Object(d.c)(He))),
-				Ue = s("./src/reddit/components/GeneralCleanup/SortViewBar/index.m.less"),
-				Fe = s.n(Ue);
+				Fe = s("./src/reddit/components/GeneralCleanup/SortViewBar/index.m.less"),
+				Ue = s.n(Fe);
 			const Ke = Object(l.u)({
 					isProfilePage: l.I,
 					pageLayer: e => e
@@ -1391,7 +1391,7 @@
 						updateSortPreference: u
 					} = this.props;
 					return r.a.createElement("div", {
-						className: Object(i.a)(Fe.a.Container, t),
+						className: Object(i.a)(Ue.a.Container, t),
 						onBlur: this.blurListingBroadcast,
 						onFocus: this.focusListingBroadcast
 					}, r.a.createElement(ze, {
@@ -1404,7 +1404,7 @@
 						sortOptions: c,
 						timeSort: l
 					}), !o && r.a.createElement(p.a, {
-						className: Fe.a.LayoutSwitch,
+						className: Ue.a.LayoutSwitch,
 						subredditId: d
 					}))
 				}
@@ -1518,7 +1518,7 @@
 				H = s.n(M);
 			const {
 				fbt: z
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), U = 500, F = new V.a(U), K = new V.a(U), G = new V.a(U), W = {
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), F = 500, U = new V.a(F), K = new V.a(F), G = new V.a(F), W = {
 				LARGE: 1,
 				MEDIUM: 1,
 				CLASSIC: 3,
@@ -1526,10 +1526,10 @@
 				SEARCH: 3
 			}, q = w.a.div("SeeMore", H.a), Y = w.a.wrapped(L.a, "ArrowRight", H.a), Q = (e, t, s, n, r, o, i, a, c) => {
 				const d = `entered-${e}-${t}-${s?`last-${n}-${r}`:""}-${o}`;
-				let l = F.get(d);
+				let l = U.get(d);
 				return void 0 === l && (l = () => {
 					s && i.onBottomViewed(n, r), i.trackOnPostEnteredViewport(e, t, a, c)
-				}, F.set(d, l)), l
+				}, U.set(d, l)), l
 			}, X = (e, t, s, n, r) => {
 				const o = `left-${e}-${t}`;
 				let i = K.get(o);
@@ -1563,7 +1563,7 @@
 			};
 			class $ extends u.a.Component {
 				constructor() {
-					super(...arguments), this.didRenderLastVisibleChild = !1, this.renderingEmpty = !1, this.renderingPlaceholder = !1, this.scrollChildCache = new V.a(U), this.surveyTriggerCounted = !1, this.timerId = void 0, this.viewportHeight = null, this.updateScrollerRef = e => {
+					super(...arguments), this.didRenderLastVisibleChild = !1, this.renderingEmpty = !1, this.renderingPlaceholder = !1, this.scrollChildCache = new V.a(F), this.surveyTriggerCounted = !1, this.timerId = void 0, this.viewportHeight = null, this.updateScrollerRef = e => {
 						this.scrollerRef = e instanceof Element ? e : void 0
 					}, this.setLastVisibleChildRendered = () => {
 						this.didRenderLastVisibleChild = !0, this.checkAndSendScreenview()
@@ -1750,14 +1750,14 @@
 						const M = Q(e, n, s, g, y, S, this.props, t, this.props.hostPostData),
 							H = X(e, n, this.props, t, w),
 							z = J(e, this.props, c),
-							U = V.media && V.media.type === T.o.EMBED ? V.media.provider : null,
-							F = p && !R.isSponsored,
+							F = V.media && V.media.type === T.o.EMBED ? V.media.provider : null,
+							U = p && !R.isSponsored,
 							K = m && !R.isSponsored && !R.isScoreHidden,
 							G = !R.isSponsored && !R.isArchived;
 						N = {
 							estHeight: Object(P.c)(R, n),
 							id: e,
-							isFocusable: !(!V.media || !(n === E.g.Large || n === E.g.Classic && Object(T.G)(V.media))) && (T.d.has(V.media.type) && (!U || !T.s.has(U)) && !V.isSpoiler),
+							isFocusable: !(!V.media || !(n === E.g.Large || n === E.g.Classic && Object(T.G)(V.media))) && (T.d.has(V.media.type) && (!F || !T.s.has(F)) && !V.isSpoiler),
 							trackOnEnteredViewport: M,
 							trackOnExitedViewport: H,
 							render: ({
@@ -1782,7 +1782,7 @@
 								isFrontpage: c,
 								isProfilePostListing: d,
 								isTopicPage: l,
-								isCommentCountAnimationEnabled: F,
+								isCommentCountAnimationEnabled: U,
 								isVoteCountAnimationEnabled: K,
 								isCountAnimShadowTestEnabled: h,
 								listingBelowVariant: b,
@@ -2460,15 +2460,15 @@
 			const i = e => {
 					const t = Object(r.c)(e, {
 						experimentEligibilitySelector: o.K,
-						experimentName: n.Wb
+						experimentName: n.ec
 					});
-					return !(!t || Object(n.ze)(t))
+					return !(!t || Object(n.He)(t))
 				},
 				a = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: o.K,
-						experimentName: n.Wb
-					}) === n.xc.ListingEnabled
+						experimentName: n.ec
+					}) === n.Fc.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, s) {
@@ -2578,8 +2578,8 @@
 				}
 		},
 		"./src/redditGQL/operations/SubredditGeoRecommendationViaFocusVertical.json": function(e) {
-			e.exports = JSON.parse('{"id":"d5b9525ce2ca"}')
+			e.exports = JSON.parse('{"id":"e7c21be88172"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing.271eb3b598d893037d66.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing.f37e25acfee7d87835da.js.map

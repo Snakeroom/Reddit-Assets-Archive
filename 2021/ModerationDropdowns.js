@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.9b87a5c0226b95ae3684.js
-// Retrieved at 9/22/2021, 3:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.6815d9fac48145152bc8.js
+// Retrieved at 9/22/2021, 7:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./node_modules/uuid/index.js": function(e, t, n) {
@@ -203,7 +203,7 @@
 						moreCommentsItem: i,
 						...f.error
 					}))
-				}, G = Object(f.a)(h.b, k.a.upvoted), U = Object(f.a)(h.b, k.a.downvoted), z = Object(i.a)(P.j), W = Object(i.a)(P.i), Q = Object(i.a)(P.e), K = Object(i.a)(P.f), V = (Object(i.a)(P.c), Object(i.a)(P.d), ({
+				}, G = Object(f.a)(h.b, k.a.upvoted), U = Object(f.a)(h.b, k.a.downvoted), z = Object(i.a)(P.j), W = Object(i.a)(P.i), K = Object(i.a)(P.e), Q = Object(i.a)(P.f), V = (Object(i.a)(P.c), Object(i.a)(P.d), ({
 					commentId: e,
 					commentsPageKey: t,
 					scrollToAndRemeasure: n
@@ -219,7 +219,7 @@
 							commentsPageKey: t
 						}),
 						d = a.depth;
-					o(Q({
+					o(K({
 						commentId: e,
 						commentsPageKey: t,
 						isCollapsed: c
@@ -228,7 +228,7 @@
 					commentId: e,
 					commentsPageKey: t
 				}) => async n => {
-					n(K({
+					n(Q({
 						commentId: e,
 						commentsPageKey: t
 					}))
@@ -244,7 +244,7 @@
 							commentId: e.id,
 							commentsPageKey: t
 						});
-					s(Q({
+					s(K({
 						commentId: a,
 						commentsPageKey: t,
 						isCollapsed: c
@@ -476,9 +476,9 @@
 			})), n.d(t, "m", (function() {
 				return W
 			})), n.d(t, "i", (function() {
-				return Q
-			})), n.d(t, "j", (function() {
 				return K
+			})), n.d(t, "j", (function() {
+				return Q
 			})), n.d(t, "p", (function() {
 				return V
 			})), n.d(t, "q", (function() {
@@ -690,7 +690,7 @@
 						} = s.body.data;
 					if (!r.tournament) throw new Error("Failed to update prediction name");
 					return t(U(r.tournament)), r.tournament
-				}, Q = e => async (t, n, {
+				}, K = e => async (t, n, {
 					gqlContext: o
 				}) => {
 					const s = await Object(u.h)(o(), {
@@ -702,7 +702,7 @@
 					} = s.body.data;
 					if (!r.predictionChipPackages) throw new Error("Failed to fetch prediction chip packages");
 					return r.predictionChipPackages
-				}, K = e => async (t, n, {
+				}, Q = e => async (t, n, {
 					gqlContext: o
 				}) => {
 					const s = await Object(u.i)(o(), {
@@ -1532,8 +1532,8 @@
 					post: A
 				}) => {
 					var G, U, z, W;
-					const Q = Object(r.e)(N.s),
-						K = Object(r.e)(e => {
+					const K = Object(r.e)(N.s),
+						Q = Object(r.e)(e => {
 							var t;
 							return (null === (t = A.pollData) || void 0 === t ? void 0 : t.isPrediction) && null !== A.pollData.resolvedOptionId && Object(N.p)(e)
 						}),
@@ -1598,12 +1598,12 @@
 							hk: "hgWFW"
 						}),
 						onClick: m
-					}, s.a.createElement(S.i, null)), Q && (null === (z = A.pollData) || void 0 === z ? void 0 : z.isPrediction) && !(null === (W = A.pollData) || void 0 === W ? void 0 : W.resolvedOptionId) && s.a.createElement(S.e, {
+					}, s.a.createElement(S.i, null)), K && (null === (z = A.pollData) || void 0 === z ? void 0 : z.isPrediction) && !(null === (W = A.pollData) || void 0 === W ? void 0 : W.resolvedOptionId) && s.a.createElement(S.e, {
 						displayText: C.fbt._("Update the end date", null, {
 							hk: "FjDpu"
 						}),
 						onClick: f
-					}, s.a.createElement(S.b, null)), K && s.a.createElement(S.e, {
+					}, s.a.createElement(S.b, null)), Q && s.a.createElement(S.e, {
 						textClassName: M.a.text,
 						onClick: b,
 						displayText: C.fbt._("Change the outcome", null, {
@@ -2955,14 +2955,14 @@
 			const r = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: o.sd
-					}) === o.Dd.Enabled
+						experimentName: o.Ad
+					}) === o.Ld.Enabled
 				},
 				i = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: o.rd
-					}) === o.Cd.Enabled
+						experimentName: o.zd
+					}) === o.Kd.Enabled
 				}
 		},
 		"./src/reddit/selectors/features/predictions/creation/index.ts": function(e, t, n) {
@@ -3042,7 +3042,7 @@
 				}
 		},
 		"./src/redditGQL/operations/AddPredictionDrafts.json": function(e) {
-			e.exports = JSON.parse('{"id":"7c3c61a8992b"}')
+			e.exports = JSON.parse('{"id":"90a9ac95262d"}')
 		},
 		"./src/redditGQL/operations/CancelPrediction.json": function(e) {
 			e.exports = JSON.parse('{"id":"fac88c91fec8"}')
@@ -3054,10 +3054,10 @@
 			e.exports = JSON.parse('{"id":"90c7b71fa93f"}')
 		},
 		"./src/redditGQL/operations/CreatePredictionTournament.json": function(e) {
-			e.exports = JSON.parse('{"id":"adefbd4bae5e"}')
+			e.exports = JSON.parse('{"id":"63b8ae32b6ea"}')
 		},
 		"./src/redditGQL/operations/EndPredictionTournament.json": function(e) {
-			e.exports = JSON.parse('{"id":"87392a58e8c7"}')
+			e.exports = JSON.parse('{"id":"0a5a0b11accd"}')
 		},
 		"./src/redditGQL/operations/GetPredictionChipPackages.json": function(e) {
 			e.exports = JSON.parse('{"id":"5ce83e513fa5"}')
@@ -3069,7 +3069,7 @@
 			e.exports = JSON.parse('{"id":"26b911e67a5f"}')
 		},
 		"./src/redditGQL/operations/GetTournaments.json": function(e) {
-			e.exports = JSON.parse('{"id":"f3b802939587"}')
+			e.exports = JSON.parse('{"id":"c149434123b1"}')
 		},
 		"./src/redditGQL/operations/ResolvePrediction.json": function(e) {
 			e.exports = JSON.parse('{"id":"d742e3019cfe"}')
@@ -3078,11 +3078,11 @@
 			e.exports = JSON.parse('{"id":"a9582ea601a1"}')
 		},
 		"./src/redditGQL/operations/UpdatePredictionTournament.json": function(e) {
-			e.exports = JSON.parse('{"id":"c3f400e7edbb"}')
+			e.exports = JSON.parse('{"id":"70baf378030a"}')
 		},
 		"./src/redditGQL/operations/VotePrediction.json": function(e) {
 			e.exports = JSON.parse('{"id":"484780ada6a2"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.9b87a5c0226b95ae3684.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.6815d9fac48145152bc8.js.map

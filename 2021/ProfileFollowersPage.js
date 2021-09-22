@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.1cbcaca44567b50c7518.js
-// Retrieved at 9/22/2021, 3:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.966015dbcfeafe072f89.js
+// Retrieved at 9/22/2021, 7:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileFollowersPage", "ProfileFollowersAction"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -377,7 +377,7 @@
 				},
 				D = s("./src/lib/omitKey/index.ts");
 			const K = {};
-			var V = (e = K, t) => {
+			var z = (e = K, t) => {
 					switch (t.type) {
 						case k.b:
 						case P.b: {
@@ -398,11 +398,11 @@
 							return e
 					}
 				},
-				z = Object(T.c)({
+				V = Object(T.c)({
 					api: M,
 					fetchedTokens: U,
 					ids: W,
-					loadMore: V
+					loadMore: z
 				});
 			const G = {};
 			var q = (e = G, t) => {
@@ -709,7 +709,7 @@
 					keyToPostId: ve
 				}),
 				xe = Object(T.c)({
-					chrono: z,
+					chrono: V,
 					conversations: ge
 				});
 			Object(N.a)({
@@ -1022,11 +1022,11 @@
 							return e
 					}
 				},
-				V = Object(j.c)({
+				z = Object(j.c)({
 					error: D,
 					pending: K
 				});
-			var z = (e = null, t) => {
+			var V = (e = null, t) => {
 					switch (t.type) {
 						case E.r:
 						case E.p:
@@ -1040,8 +1040,8 @@
 					}
 				},
 				G = Object(j.c)({
-					api: V,
-					result: z
+					api: z,
+					result: V
 				});
 			const q = {};
 			var Q = (e = q, t) => {
@@ -1428,8 +1428,8 @@
 				W = s("./src/reddit/actions/modal.ts"),
 				D = s("./src/reddit/actions/subredditModeration/ban.ts"),
 				K = s("./src/reddit/constants/modals.ts"),
-				V = s("./src/reddit/components/Hovercards/helpers.ts"),
-				z = s("./src/reddit/icons/fonts/index.tsx"),
+				z = s("./src/reddit/components/Hovercards/helpers.ts"),
+				V = s("./src/reddit/icons/fonts/index.tsx"),
 				G = s("./src/reddit/models/ModeratingSubreddits/index.ts"),
 				q = s("./src/reddit/selectors/bannedUser.ts"),
 				Q = s("./src/reddit/components/Hovercards/AuthorHovercard/ModActions.m.less"),
@@ -1463,33 +1463,33 @@
 					} = this.props;
 					return n.a.createElement("div", {
 						className: e
-					}, r ? n.a.createElement(V.a, {
+					}, r ? n.a.createElement(z.a, {
 						role: "button",
 						onClick: () => {
 							i(this.props.user.id), o(N.e(t))
 						}
-					}, n.a.createElement(z.a, {
+					}, n.a.createElement(V.a, {
 						name: "ban",
 						isFilled: !0,
 						className: Z.a.icon
 					}), Y._("Unban User", null, {
 						hk: "1aASyW"
-					})) : n.a.createElement(V.a, {
+					})) : n.a.createElement(z.a, {
 						role: "button",
 						onClick: () => {
 							a(), o(N.a(t))
 						}
-					}, n.a.createElement(z.a, {
+					}, n.a.createElement(V.a, {
 						name: "ban",
 						className: Z.a.icon
 					}), Y._("Ban User", null, {
 						hk: "3OhuLx"
-					})), s && n.a.createElement(V.a, {
+					})), s && n.a.createElement(z.a, {
 						role: "button",
 						onClick: () => {
 							d(), o(N.d(t))
 						}
-					}, n.a.createElement(z.a, {
+					}, n.a.createElement(V.a, {
 						name: "mod_mute",
 						className: Z.a.icon
 					}), Y._("Mute User", null, {
@@ -1527,12 +1527,12 @@
 			} = s("./node_modules/fbt/lib/FbtPublic.js");
 			var se = Object(i.b)(null, (e, t) => ({
 					onToggleUserFlairModal: () => e(Object(ee.g)(t.subredditId, t.username))
-				}))(e => n.a.createElement(V.a, {
+				}))(e => n.a.createElement(z.a, {
 					role: "button",
 					onClick: () => {
 						e.onToggleUserFlairModal(), e.sendEvent(N.c(e.contextId))
 					}
-				}, n.a.createElement(z.a, {
+				}, n.a.createElement(V.a, {
 					name: "tag",
 					className: Z.a.icon
 				}), te._("Edit user flair", null, {
@@ -3158,11 +3158,11 @@
 				W = s.n(H);
 			const D = F.g,
 				K = 5 * p.J,
-				V = 3,
-				z = Object(m.c)({
-					isOverlayOpen: M.h
+				z = 3,
+				V = Object(m.c)({
+					isOverlayOpen: M.i
 				}),
-				G = Object(c.b)(z),
+				G = Object(c.b)(V),
 				q = {};
 
 			function Q(e) {
@@ -3405,7 +3405,7 @@
 								const r = this.getChildRectangle(s);
 								r && this.elementIsUnmountable(r) && s.loaded && t.push(s)
 							}), !t.length) return;
-						const s = Math.min(Math.ceil(e.timeRemaining() / V), t.length),
+						const s = Math.min(Math.ceil(e.timeRemaining() / z), t.length),
 							r = [];
 						for (let n = 0; n < s; n++) {
 							const e = t[n];
@@ -5189,9 +5189,11 @@
 			var r = s("./node_modules/react-redux/es/index.js"),
 				n = s("./node_modules/reselect/es/index.js"),
 				i = s("./src/reddit/actions/subscription/index.ts"),
-				o = s("./src/reddit/selectors/subreddit.ts");
+				o = s("./src/reddit/selectors/experiments/joinOptimizations.ts"),
+				a = s("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(r.b)(() => Object(n.c)({
-				userIsSubscriber: o.cb
+				isInJoinOptimizationsExperiment: e => Object(o.a)(e) || Object(o.b)(e) || Object(o.c)(e) || Object(o.d)(e),
+				userIsSubscriber: a.cb
 			}), (e, {
 				identifier: t
 			}) => ({
@@ -6034,7 +6036,7 @@
 			}));
 			var r = s("./src/reddit/constants/experiments.ts"),
 				n = s("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const i = Object(n.a)(r.td)
+			const i = Object(n.a)(r.Bd)
 		},
 		"./src/reddit/selectors/followers.ts": function(e, t, s) {
 			"use strict";
@@ -6865,8 +6867,8 @@
 				}) => e.pages.profileOverview.chrono.fetchedTokens[t]
 		},
 		"./src/redditGQL/operations/ProfileFollowers.json": function(e) {
-			e.exports = JSON.parse('{"id":"c199897ee59d"}')
+			e.exports = JSON.parse('{"id":"09abe4823911"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.1cbcaca44567b50c7518.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.966015dbcfeafe072f89.js.map

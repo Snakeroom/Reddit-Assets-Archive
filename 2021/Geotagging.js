@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Geotagging.5e681fc54427ad8e0266.js
-// Retrieved at 9/22/2021, 1:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Geotagging.f27ae7dec40e59940966.js
+// Retrieved at 9/22/2021, 7:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Geotagging"], {
 		"./node_modules/p-debounce/index.js": function(e, t, s) {
@@ -1263,9 +1263,11 @@
 			var n = s("./node_modules/react-redux/es/index.js"),
 				r = s("./node_modules/reselect/es/index.js"),
 				i = s("./src/reddit/actions/subscription/index.ts"),
-				a = s("./src/reddit/selectors/subreddit.ts");
+				a = s("./src/reddit/selectors/experiments/joinOptimizations.ts"),
+				o = s("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(n.b)(() => Object(r.c)({
-				userIsSubscriber: a.cb
+				isInJoinOptimizationsExperiment: e => Object(a.a)(e) || Object(a.b)(e) || Object(a.c)(e) || Object(a.d)(e),
+				userIsSubscriber: o.cb
 			}), (e, {
 				identifier: t
 			}) => ({
@@ -1587,8 +1589,8 @@
 				W = Q("select_location"),
 				A = Q("confirm_location"),
 				H = Q("undo_location"),
-				D = U("verify_location"),
-				J = U("reject_location");
+				J = U("verify_location"),
+				D = U("reject_location");
 
 			function Q(e) {
 				return (t, s) => () => ({
@@ -1679,12 +1681,12 @@
 				})), r.a.createElement(_.n, {
 					className: S.a.rejectButton,
 					onClick: function() {
-						b(!0), E(J(t, t.geoPlace.id))
+						b(!0), E(D(t, t.geoPlace.id))
 					}
 				}, "No"), r.a.createElement(_.k, {
 					className: S.a.verifyButton,
 					onClick: function() {
-						Y(t.id), E(D(t, t.geoPlace.id)), f(), s(t.id), y()
+						Y(t.id), E(J(t, t.geoPlace.id)), f(), s(t.id), y()
 					}
 				}, "Yes")) : r.a.createElement(N.a, {
 					disabled: l,
@@ -1802,7 +1804,7 @@
 			}
 		},
 		"./src/redditGQL/operations/GeoContributableSubreddits.json": function(e) {
-			e.exports = JSON.parse('{"id":"9f61c6bd8f6d"}')
+			e.exports = JSON.parse('{"id":"283ba5791293"}')
 		},
 		"./src/redditGQL/operations/GeoPlaceAutocomplete.json": function(e) {
 			e.exports = JSON.parse('{"id":"8a89fd7c7db1"}')
@@ -1815,4 +1817,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.5e681fc54427ad8e0266.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.f27ae7dec40e59940966.js.map

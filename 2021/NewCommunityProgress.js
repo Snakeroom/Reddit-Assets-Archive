@@ -1,7 +1,7 @@
-// https://www.redditstatic.com/desktop2x/NewCommunityProgress.4de0a88ae29d973ba4b0.js
-// Retrieved at 9/15/2021, 6:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NewCommunityProgress.58e004ddb69b95cda054.js
+// Retrieved at 9/22/2021, 7:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
-	["NewCommunityProgress"], {
+	["NewCommunityProgress", "FrontpageSidebar"], {
 		"./src/lib/colors/constants.ts": function(C, e, t) {
 			"use strict";
 			t.d(e, "e", (function() {
@@ -2528,4 +2528,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NewCommunityProgress.4de0a88ae29d973ba4b0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NewCommunityProgress.58e004ddb69b95cda054.js.map

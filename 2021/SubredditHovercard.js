@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditHovercard.22d0a762405685cb4d63.js
-// Retrieved at 9/22/2021, 1:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditHovercard.5c2e0a5bcab3d3e3ce94.js
+// Retrieved at 9/22/2021, 7:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditHovercard"], {
 		"./src/reddit/components/CommunityType/index.m.less": function(e, t, n) {
@@ -308,7 +308,7 @@
 			}
 			const {
 				fbt: k
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), w = y.a.wrapped(I.b, "SubredditIcon", T.a), B = y.a.wrapped(f.a, "SubredditNameDisplay", T.a), g = y.a.div("SubredditDescription", T.a), H = y.a.div("SubredditNameContainer", T.a), L = y.a.div("SubredditInfoContainer", T.a), M = y.a.div("Subscribers", T.a), A = y.a.div("Online", T.a), D = y.a.div("Count", T.a), U = y.a.div("CountLabel", T.a), R = y.a.div("Container", T.a), F = y.a.div("CardContainer", T.a), K = e => s.a.createElement(L, null, s.a.createElement(M, null, s.a.createElement(D, null, Object(E.b)(e.subredditAboutInfo.subscribers)), s.a.createElement(U, null, k._({
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), B = y.a.wrapped(I.b, "SubredditIcon", T.a), g = y.a.wrapped(f.a, "SubredditNameDisplay", T.a), w = y.a.div("SubredditDescription", T.a), H = y.a.div("SubredditNameContainer", T.a), L = y.a.div("SubredditInfoContainer", T.a), M = y.a.div("Subscribers", T.a), A = y.a.div("Online", T.a), D = y.a.div("Count", T.a), U = y.a.div("CountLabel", T.a), R = y.a.div("Container", T.a), F = y.a.div("CardContainer", T.a), K = e => s.a.createElement(L, null, s.a.createElement(M, null, s.a.createElement(D, null, Object(E.b)(e.subredditAboutInfo.subscribers)), s.a.createElement(U, null, k._({
 				"*": "Members",
 				_1: " Member"
 			}, [k._plural(e.subredditAboutInfo.subscribers)], {
@@ -338,10 +338,10 @@
 					className: t,
 					id: o,
 					style: c
-				}, s.a.createElement(F, null, s.a.createElement(H, null, s.a.createElement(w, {
+				}, s.a.createElement(F, null, s.a.createElement(H, null, s.a.createElement(B, {
 					subredditOrProfile: u,
 					shouldHideNsfwIcon: n
-				}), s.a.createElement(B, {
+				}), s.a.createElement(g, {
 					onClick: b,
 					to: `${u.url}`,
 					target: a ? "_blank" : void 0,
@@ -350,7 +350,7 @@
 					subredditAboutInfo: m
 				}), s.a.createElement(O.a, {
 					subreddit: u
-				}), s.a.createElement(g, null, Object(j.a)(m.publicDescription || "", 140)), s.a.createElement(S.m, {
+				}), s.a.createElement(w, null, Object(j.a)(m.publicDescription || "", 140)), s.a.createElement(S.m, {
 					onClick: v,
 					to: `${u.url}`,
 					target: a ? "_blank" : void 0,
@@ -767,6 +767,7 @@
 				isLeft: "_1HHR_ND8U6x6YrIqKFeXZy",
 				isRight: "_3tKmDp5VAtgWvabEmFkJ7T",
 				xsmallButtonStyles: "_3uJP0daPEH2plzVEYyTdaH",
+				xsmallBigPaddingButtonStyles: "UEPNkU0rd1-nvbkOcBatc",
 				smallButtonStyles: "HNozj_dKjQZ59ZsfEegz8",
 				mediumButtonStyles: "_3ukcnQySDskQwK_wB2iXYl",
 				largeButtonStyles: "_1J4mN6_wNfCtSyMDUNGQqN",
@@ -830,9 +831,9 @@
 			})), n.d(t, "d", (function() {
 				return k
 			})), n.d(t, "h", (function() {
-				return w
-			})), n.d(t, "i", (function() {
 				return B
+			})), n.d(t, "i", (function() {
+				return g
 			}));
 			var r = n("./node_modules/react/index.js"),
 				s = n.n(r),
@@ -856,7 +857,7 @@
 			};
 			var u, m, p, b;
 			! function(e) {
-				e.XXS = "xxsmallButtonStyles", e.XS = "xsmallButtonStyles", e.S = "smallButtonStyles", e.M = "mediumButtonStyles", e.L = "largeButtonStyles", e.XL = "xlargeButtonStyles"
+				e.XXS = "xxsmallButtonStyles", e.XS = "xsmallButtonStyles", e.XSP = "xsmallBigPaddingButtonStyles", e.S = "smallButtonStyles", e.M = "mediumButtonStyles", e.L = "largeButtonStyles", e.XL = "xlargeButtonStyles"
 			}(u || (u = {})),
 			function(e) {
 				e.Primary = "primary", e.Secondary = "secondary", e.Tertiary = "tertiary", e.Plain = "plain"
@@ -1011,14 +1012,14 @@
 					kind: b.Button,
 					className: Object(o.a)(e, a.a.ChatButton)
 				}, t)),
-				w = ({
+				B = ({
 					className: e,
 					...t
 				}) => s.a.createElement(v, l({
 					kind: b.Button,
 					className: Object(o.a)(e, a.a.InlineTextButton)
 				}, t)),
-				B = ({
+				g = ({
 					className: e,
 					...t
 				}) => s.a.createElement(v, l({
@@ -1150,4 +1151,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditHovercard.22d0a762405685cb4d63.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditHovercard.5c2e0a5bcab3d3e3ce94.js.map
