@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.7b7cba3e3854cb8bbfdc.js
-// Retrieved at 9/22/2021, 11:50:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.c0bf2d3a3a7142324a4c.js
+// Retrieved at 9/22/2021, 1:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~ModListing", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -10439,7 +10439,7 @@
 						const n = this.getRelatedCommunitiesWidgetData();
 						return n ? {
 							id: "related-communities-widget",
-							kind: "community-list",
+							kind: dt.i.CommunityList,
 							shortName: s.fbt._("Related Communities", null, {
 								hk: "FmqaL"
 							}),
@@ -10449,9 +10449,9 @@
 						if (this.props.communityFlairSortedKeys && this.props.communityFlairSortedKeys.length) return {
 							...this.getPostFlairWidget(),
 							id: "post-flair-widget",
-							kind: "post-flair",
+							kind: dt.i.PostFlair,
 							order: this.props.communityFlairSortedKeys,
-							display: dt.d.Cloud,
+							display: dt.g.Cloud,
 							shortName: s.fbt._("Filter by flair", null, {
 								hk: "1DI34"
 							}),
@@ -16784,7 +16784,7 @@
 			e.exports = JSON.parse('{"id":"d03522f8a8d4"}')
 		},
 		"./src/redditGQL/operations/SubredditGeoRecommendationViaFocusVertical.json": function(e) {
-			e.exports = JSON.parse('{"id":"000672d44a2b"}')
+			e.exports = JSON.parse('{"id":"d5b9525ce2ca"}')
 		},
 		"./src/redditGQL/operations/UpdateInboxActivitySeenState.json": function(e) {
 			e.exports = JSON.parse('{"id":"85d656894a08"}')
@@ -16797,4 +16797,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.7b7cba3e3854cb8bbfdc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.c0bf2d3a3a7142324a4c.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.319b470cd3c2d0d6fddc.js
-// Retrieved at 9/21/2021, 10:00:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.4492c64b578529187145.js
+// Retrieved at 9/22/2021, 1:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditMentionWithIcon"], {
 		"./src/reddit/actions/subredditMention/constants.ts": function(e, t, s) {
@@ -2135,7 +2135,7 @@
 				c = s("./src/reddit/selectors/subreddit.ts");
 			const a = [],
 				u = e => e.widgets.models,
-				l = Object(n.a)((e, t) => Object(o.r)(t) ? e.widgets.models[t.widgetId] : Object(o.l)(t.widgetKind)),
+				l = Object(n.a)((e, t) => Object(o.w)(t) ? e.widgets.models[t.widgetId] : Object(o.q)(t.widgetKind)),
 				b = (e, t) => e.widgets.idCardIds[t.subredditId],
 				m = (e, t) => {
 					let s = t.subredditId;
@@ -2200,7 +2200,7 @@
 				})
 		},
 		"./src/redditGQL/operations/SubredditTopContent.json": function(e) {
-			e.exports = JSON.parse('{"id":"32e5060effba"}')
+			e.exports = JSON.parse('{"id":"dcfb5df73a49"}')
 		},
 		"./src/redditGQL/operations/SubredditsWithAboutInfo.json": function(e) {
 			e.exports = JSON.parse('{"id":"208de0847dac"}')
@@ -2210,4 +2210,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.319b470cd3c2d0d6fddc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.4492c64b578529187145.js.map

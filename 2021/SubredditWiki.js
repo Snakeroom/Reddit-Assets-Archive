@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.b9d9cf8f538f81731146.js
-// Retrieved at 9/22/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.8575454009646bb4ddf9.js
+// Retrieved at 9/22/2021, 1:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./src/lib/unicodeUtils/index.ts": function(e, t, s) {
@@ -4531,7 +4531,7 @@
 						const s = this.getRelatedCommunitiesWidgetData();
 						return s ? {
 							id: "related-communities-widget",
-							kind: "community-list",
+							kind: ct.i.CommunityList,
 							shortName: n.fbt._("Related Communities", null, {
 								hk: "FmqaL"
 							}),
@@ -4541,9 +4541,9 @@
 						if (this.props.communityFlairSortedKeys && this.props.communityFlairSortedKeys.length) return {
 							...this.getPostFlairWidget(),
 							id: "post-flair-widget",
-							kind: "post-flair",
+							kind: ct.i.PostFlair,
 							order: this.props.communityFlairSortedKeys,
-							display: ct.d.Cloud,
+							display: ct.g.Cloud,
 							shortName: n.fbt._("Filter by flair", null, {
 								hk: "1DI34"
 							}),
@@ -7540,4 +7540,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.b9d9cf8f538f81731146.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.8575454009646bb4ddf9.js.map

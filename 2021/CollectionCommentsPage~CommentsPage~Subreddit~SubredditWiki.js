@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.aca87a97d33965dc3111.js
-// Retrieved at 9/22/2021, 11:50:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.6e21cabaece031d1d0ac.js
+// Retrieved at 9/22/2021, 1:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"], {
 		"./src/lib/linkMatchers/index.ts": function(e, t, r) {
@@ -2020,7 +2020,7 @@
 					onMouseDown: r,
 					...n
 				}) => i.a.createElement("li", {
-					className: Object(d.a)(y.a.StyledFlair, e === w.d.Cloud && y.a.cloudDisplay, {
+					className: Object(d.a)(y.a.StyledFlair, e === w.g.Cloud && y.a.cloudDisplay, {
 						[y.a.flairFilter]: t,
 						[y.a["m-selected"]]: n.isSelected
 					}),
@@ -2184,7 +2184,7 @@
 					}
 				}
 				shouldShowFullDisplay(e) {
-					return e.display === m.e.FULL
+					return e.display === m.h.FULL
 				}
 				render() {
 					const {
@@ -2287,7 +2287,7 @@
 			const O = (e, t, r) => {
 					let n = {},
 						s = {};
-					n = e.kind === f.f.Image ? {
+					n = e.kind === f.k.Image ? {
 						"--widget-button-background-image": `url('${e.url}')`
 					} : ((e, t, r) => {
 						let {
@@ -2302,7 +2302,7 @@
 						}
 					})(e, t, r);
 					const i = e.hoverState || e;
-					if (i.kind === f.f.Image) s = {
+					if (i.kind === f.k.Image) s = {
 						"--widget-button-hover-background-image": `url('${i.url}')`,
 						"--widget-button-hover-border": "none"
 					};
@@ -2324,9 +2324,9 @@
 						...s
 					}
 				},
-				y = e => e.kind === f.f.Image ? j.a.imageButton : j.a.textButton,
+				y = e => e.kind === f.k.Image ? j.a.imageButton : j.a.textButton,
 				_ = e => {
-					const t = Object(f.n)(e),
+					const t = Object(f.s)(e),
 						r = Object(p.h)(p.f, t);
 					return r ? r.url : e.url
 				},
@@ -2341,9 +2341,9 @@
 						isFullWidth: !0,
 						size: c.c.S,
 						priority: c.b.Secondary
-					}, t.kind === f.f.Text && s.a.createElement("span", {
+					}, t.kind === f.k.Text && s.a.createElement("span", {
 						className: t.hoverState ? j.a.vanishingTextButtonText : void 0
-					}, t.text), t.hoverState && t.hoverState.kind === f.f.Text && s.a.createElement("span", {
+					}, t.text), t.hoverState && t.hoverState.kind === f.k.Text && s.a.createElement("span", {
 						className: j.a.textButtonHoverText
 					}, t.hoverState.text))
 				}),
@@ -2362,7 +2362,7 @@
 					widgetKind: e.widget.kind
 				}, e.widget.descriptionHtml && s.a.createElement(I, {
 					html: e.widget.descriptionHtml
-				}), e.widget.buttons.filter(e => (e.kind !== f.f.Image || e.url !== b.c) && (!e.hoverState || e.hoverState.kind !== f.f.Image || e.hoverState.url !== b.c)).map(t => s.a.createElement(E, {
+				}), e.widget.buttons.filter(e => (e.kind !== f.k.Image || e.url !== b.c) && (!e.hoverState || e.hoverState.kind !== f.k.Image || e.hoverState.url !== b.c)).map(t => s.a.createElement(E, {
 					key: `${t.text}-${t.url}`,
 					button: t,
 					overrideColors: e.forceRedditStyle || e.isNightmodeOn
@@ -3425,7 +3425,7 @@
 				}
 		},
 		"./src/redditGQL/operations/AddPredictionDrafts.json": function(e) {
-			e.exports = JSON.parse('{"id":"850d3ce757fa"}')
+			e.exports = JSON.parse('{"id":"7c3c61a8992b"}')
 		},
 		"./src/redditGQL/operations/CancelPrediction.json": function(e) {
 			e.exports = JSON.parse('{"id":"fac88c91fec8"}')
@@ -3437,10 +3437,10 @@
 			e.exports = JSON.parse('{"id":"90c7b71fa93f"}')
 		},
 		"./src/redditGQL/operations/CreatePredictionTournament.json": function(e) {
-			e.exports = JSON.parse('{"id":"0e6e3552495b"}')
+			e.exports = JSON.parse('{"id":"adefbd4bae5e"}')
 		},
 		"./src/redditGQL/operations/EndPredictionTournament.json": function(e) {
-			e.exports = JSON.parse('{"id":"5aef77c8f8e8"}')
+			e.exports = JSON.parse('{"id":"87392a58e8c7"}')
 		},
 		"./src/redditGQL/operations/GetPredictionChipPackages.json": function(e) {
 			e.exports = JSON.parse('{"id":"5ce83e513fa5"}')
@@ -3449,7 +3449,7 @@
 			e.exports = JSON.parse('{"id":"26b911e67a5f"}')
 		},
 		"./src/redditGQL/operations/GetTournaments.json": function(e) {
-			e.exports = JSON.parse('{"id":"ed8e9ea64ead"}')
+			e.exports = JSON.parse('{"id":"f3b802939587"}')
 		},
 		"./src/redditGQL/operations/ResolvePrediction.json": function(e) {
 			e.exports = JSON.parse('{"id":"d742e3019cfe"}')
@@ -3464,11 +3464,11 @@
 			e.exports = JSON.parse('{"id":"8c45e89afc9b"}')
 		},
 		"./src/redditGQL/operations/UpdatePredictionTournament.json": function(e) {
-			e.exports = JSON.parse('{"id":"7bfb08af572b"}')
+			e.exports = JSON.parse('{"id":"c3f400e7edbb"}')
 		},
 		"./src/redditGQL/operations/VotePrediction.json": function(e) {
 			e.exports = JSON.parse('{"id":"484780ada6a2"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.aca87a97d33965dc3111.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.6e21cabaece031d1d0ac.js.map

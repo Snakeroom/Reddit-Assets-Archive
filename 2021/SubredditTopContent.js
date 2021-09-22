@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditTopContent.4476afe91da8a67ec537.js
-// Retrieved at 9/22/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditTopContent.62bf1fde6d2532a036b6.js
+// Retrieved at 9/22/2021, 1:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditTopContent"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -536,7 +536,7 @@
 					}, P)));
 					const j = !O && !v;
 					let N;
-					return k && (N = Object(G.h)(k) ? Object(Z.h)(k) : Object(Z.i)(k)), r.a.createElement(F.a, {
+					return k && (N = Object(G.h)(k) ? Object(Z.m)(k) : Object(Z.n)(k)), r.a.createElement(F.a, {
 						className: Object(c.a)(ee.a.container, X.a.largeAndMediumActiveStyles, X.a.largeAndMediumPostStyles, Y.a.postContainer, Object(q.a)(this.props), s),
 						post: p,
 						onClick: u,
@@ -1923,4 +1923,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.4476afe91da8a67ec537.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.62bf1fde6d2532a036b6.js.map

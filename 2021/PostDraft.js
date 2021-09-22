@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostDraft.8afd5b8c1e83aba0f339.js
-// Retrieved at 9/22/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostDraft.d05ad0d3fd420ecce4c3.js
+// Retrieved at 9/22/2021, 1:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostDraft"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1680,7 +1680,7 @@
 						isSubmissionPage: !0
 					})), d && l && c.a.createElement(p.a, null, c.a.createElement(b.a, {
 						subredditName: d.name,
-						display: x.e.COMPACT,
+						display: x.h.COMPACT,
 						rules: l,
 						redditStyle: !0
 					})), c.a.createElement(w.a, null), c.a.createElement(p.a, null), c.a.createElement(C.a, null), c.a.createElement(m.a, {
@@ -3412,7 +3412,7 @@
 					}
 				}
 				shouldShowFullDisplay(e) {
-					return e.display === m.e.FULL
+					return e.display === m.h.FULL
 				}
 				render() {
 					const {
@@ -4762,4 +4762,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.8afd5b8c1e83aba0f339.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.d05ad0d3fd420ecce4c3.js.map

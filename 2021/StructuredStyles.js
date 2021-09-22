@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/StructuredStyles.d324ab06117502499463.js
-// Retrieved at 9/21/2021, 5:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/StructuredStyles.9cd5c4ff413ac838f752.js
+// Retrieved at 9/22/2021, 1:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["StructuredStyles"], {
 		"./node_modules/linkify-it/index.js": function(e, t, n) {
@@ -698,9 +698,9 @@
 			})), n.d(t, "d", (function() {
 				return y
 			})), n.d(t, "e", (function() {
-				return S
-			})), n.d(t, "f", (function() {
 				return k
+			})), n.d(t, "f", (function() {
+				return S
 			})), n.d(t, "g", (function() {
 				return I
 			})), n.d(t, "h", (function() {
@@ -870,7 +870,7 @@
 					data: n
 				}) : null
 			};
-			var S = e => {
+			var k = e => {
 				const t = Object(C.a)(),
 					n = Object(a.useMemo)(() => ({
 						author: null == t ? void 0 : t.post.author,
@@ -890,7 +890,7 @@
 					data: n
 				}) : null
 			};
-			var k = e => {
+			var S = e => {
 				const t = Object(C.a)(),
 					n = Object(a.useMemo)(() => ({
 						author: null == t ? void 0 : t.post.author,
@@ -1086,12 +1086,12 @@
 				_ = n("./src/reddit/components/StructuredStyles/Blade/BladeLink/index.m.less"),
 				C = n.n(_);
 			const y = s.a.span("FakeLink", C.a),
-				S = s.a.wrapped(m.a, "StyledLink", C.a),
-				k = Object(g.c)(e => {
+				k = s.a.wrapped(m.a, "StyledLink", C.a),
+				S = Object(g.c)(e => {
 					const t = () => e.sendEvent(Object(x.b)(e.route));
 					return e.disabled ? r.a.createElement(y, {
 						onClick: t
-					}, e.children) : r.a.createElement(S, {
+					}, e.children) : r.a.createElement(k, {
 						to: e.to,
 						onClick: t
 					}, e.children)
@@ -1099,7 +1099,7 @@
 			var I = e => {
 					const t = f(e.route),
 						n = e.title || t.state.title;
-					return r.a.createElement(k, {
+					return r.a.createElement(S, {
 						disabled: e.disabled,
 						route: e.route,
 						to: t
@@ -1316,8 +1316,8 @@
 					disabled: e.fake,
 					title: e.fake ? "Coming Soon" : void 0
 				}, r.a.createElement(v.a, null, r.a.createElement(ne.a, {
-					label: Object(ae.p)(e.widgetKind),
-					description: Object(ae.o)(e.widgetKind),
+					label: Object(ae.u)(e.widgetKind),
+					description: Object(ae.t)(e.widgetKind),
 					fake: e.fake
 				}), r.a.createElement(h.g, null)));
 			class de extends r.a.Component {
@@ -1337,21 +1337,21 @@
 						breadcrumbs: e.breadcrumbs,
 						onNavigate: e.stopEditing
 					}), r.a.createElement(Z.m, null, e.title), r.a.createElement(Z.f, null, r.a.createElement(oe, se({
-						widgetKind: "textarea"
-					}, e)), !e.widgetKinds.includes("subreddit-rules") && r.a.createElement(oe, se({
-						widgetKind: "subreddit-rules"
+						widgetKind: ae.i.Textarea
+					}, e)), !e.widgetKinds.includes(ae.i.SubredditRules) && r.a.createElement(oe, se({
+						widgetKind: ae.i.SubredditRules
 					}, e)), !e.isStylingRestrictedDueToQuarantine && r.a.createElement(oe, se({
-						widgetKind: "button"
+						widgetKind: ae.i.Button
 					}, e)), !e.isStylingRestrictedDueToQuarantine && r.a.createElement(oe, se({
-						widgetKind: "image"
+						widgetKind: ae.i.Image
 					}, e)), r.a.createElement(oe, se({
-						widgetKind: "community-list"
-					}, e)), e.widgetKinds.filter(e => "calendar" === e).length < 2 && r.a.createElement(oe, se({
-						widgetKind: "calendar"
-					}, e)), e.widgetKinds.filter(e => "post-flair" === e).length < ae.c && !e.isStylingRestrictedDueToQuarantine && r.a.createElement(oe, se({
-						widgetKind: "post-flair"
+						widgetKind: ae.i.CommunityList
+					}, e)), e.widgetKinds.filter(e => e === ae.i.Calendar).length < 2 && r.a.createElement(oe, se({
+						widgetKind: ae.i.Calendar
+					}, e)), e.widgetKinds.filter(e => e === ae.i.PostFlair).length < ae.f && !e.isStylingRestrictedDueToQuarantine && r.a.createElement(oe, se({
+						widgetKind: ae.i.PostFlair
 					}, e)), t.showAdvanced && r.a.createElement(oe, se({
-						widgetKind: "custom"
+						widgetKind: ae.i.Custom
 					}, e))), !t.showAdvanced && !e.isStylingRestrictedDueToQuarantine && r.a.createElement(Z.f, null, r.a.createElement(h.f, {
 						onClick: this.showAdvanced,
 						"data-redditstyle": !0
@@ -1396,8 +1396,8 @@
 				_e = fe(me.a),
 				Ce = be(),
 				ye = fe(me.a),
-				Se = (fe(me.a), fe(me.a));
-			var ke = n("./src/reddit/controls/RadioInput/RadioOption/index.tsx"),
+				ke = (fe(me.a), fe(me.a));
+			var Se = n("./src/reddit/controls/RadioInput/RadioOption/index.tsx"),
 				Ie = n("./src/reddit/icons/svgs/Center/index.tsx"),
 				we = n("./src/reddit/icons/svgs/Fill/index.tsx"),
 				De = n("./src/reddit/icons/svgs/PositionCenter/index.tsx"),
@@ -1417,7 +1417,7 @@
 				}).apply(this, arguments)
 			}
 			const Ne = be(),
-				Ae = fe(ke.a),
+				Ae = fe(Se.a),
 				Be = e => r.a.createElement(Ae, Re({}, e, {
 					className: Object(ue.a)({
 						[Pe.a.selected]: e.selected,
@@ -1691,8 +1691,8 @@
 					}))
 				}),
 				yt = n("./node_modules/lodash/pick.js"),
-				St = n.n(yt),
-				kt = n("./src/reddit/actions/exportImportStyles.ts"),
+				kt = n.n(yt),
+				St = n("./src/reddit/actions/exportImportStyles.ts"),
 				It = n("./src/reddit/actions/apiRequestState.ts"),
 				wt = n("./src/reddit/models/ApiRequestState/index.ts"),
 				Dt = n("./src/reddit/selectors/apiRequestState.ts");
@@ -1754,7 +1754,7 @@
 			function Bt(e, t) {
 				const n = Object(c.c)({
 						activeModalId: U.a,
-						draftStyles: (e, n) => St()(e.structuredStyles.draft, t),
+						draftStyles: (e, n) => kt()(e.structuredStyles.draft, t),
 						savedStyles: (e, t) => e.structuredStyles.models[t.subredditId],
 						subreddit: X.Q,
 						isExportPending: Y.d
@@ -1776,9 +1776,9 @@
 							e(Object(R.c)(n.subredditId, n.paneName, t))
 						},
 						exportStructuredStyles: () => {
-							e(Object(kt.d)(n.subredditId))
+							e(Object(St.d)(n.subredditId))
 						},
-						importStructuredStyles: t => e(Object(kt.e)(t))
+						importStructuredStyles: t => e(Object(St.e)(t))
 					}), (e, t, n) => ({
 						...n,
 						bannerHeight: e.draftStyles.bannerHeight,
@@ -2133,7 +2133,7 @@
 				})),
 				Cn = s.a.wrapped(Z.e, "FormElementTitle", xn.a),
 				yn = s.a.wrapped(v.a, "ExpandLeft", xn.a);
-			var Sn = _n(e => {
+			var kn = _n(e => {
 					const t = ut(e.name);
 					return r.a.createElement(yn, null, r.a.createElement(Cn, {
 						id: t,
@@ -2147,10 +2147,10 @@
 						value: e.value
 					}))
 				}),
-				kn = n("./src/reddit/controls/Button/index.tsx"),
+				Sn = n("./src/reddit/controls/Button/index.tsx"),
 				In = n("./src/reddit/components/StructuredStyles/Forms/WidgetColorPicker/index.m.less"),
 				wn = n.n(In);
-			const Dn = s.a.wrapped(kn.q, "TertiaryButton", wn.a),
+			const Dn = s.a.wrapped(Sn.q, "TertiaryButton", wn.a),
 				On = Object(c.c)({
 					savedStructuredStyles: Y.k
 				});
@@ -2158,30 +2158,30 @@
 				constructor() {
 					super(...arguments), this.onChangeBackgroundColor = e => {
 						this.props.onChangeWidgetStyles({
-							...this.props.widgetStyles || Object(ae.m)(),
+							...this.props.widgetStyles || Object(ae.r)(),
 							backgroundColor: e
 						})
 					}, this.onChangeHeaderColor = e => {
 						this.props.onChangeWidgetStyles({
-							...this.props.widgetStyles || Object(ae.m)(),
+							...this.props.widgetStyles || Object(ae.r)(),
 							headerColor: e
 						})
 					}, this.onClearWidgetStyles = () => {
-						this.props.onChangeWidgetStyles(Object(ae.m)())
+						this.props.onChangeWidgetStyles(Object(ae.r)())
 					}
 				}
 				render() {
 					const {
 						props: e
-					} = this, t = e.widgetStyles || Object(ae.m)(), n = !!t.backgroundColor || !!t.headerColor, a = e.savedStructuredStyles.sidebarWidgetBackgroundColor, s = e.savedStructuredStyles.sidebarWidgetHeaderColor;
-					return r.a.createElement(Z.i, null, r.a.createElement(Z.a, null, r.a.createElement(Sn, {
+					} = this, t = e.widgetStyles || Object(ae.r)(), n = !!t.backgroundColor || !!t.headerColor, a = e.savedStructuredStyles.sidebarWidgetBackgroundColor, s = e.savedStructuredStyles.sidebarWidgetHeaderColor;
+					return r.a.createElement(Z.i, null, r.a.createElement(Z.a, null, r.a.createElement(kn, {
 						label: i.fbt._("Title background color", null, {
 							hk: "1lxRhZ"
 						}),
 						name: "sidebarWidgetHeaderColor",
 						onChange: this.onChangeHeaderColor,
 						value: t.headerColor || s || void 0
-					})), r.a.createElement(Z.a, null, r.a.createElement(Sn, {
+					})), r.a.createElement(Z.a, null, r.a.createElement(kn, {
 						label: i.fbt._("Widget background color", null, {
 							hk: "BG39P"
 						}),
@@ -2281,20 +2281,20 @@
 			}(Jn || (Jn = {}));
 			const Yn = e => e.length ? Jn.Valid : Jn.TooShort;
 			var Xn = n("./src/higherOrderComponents/withImageUploads.tsx");
-			var $n = e => r.a.createElement(r.a.Fragment, null, r.a.createElement(Se, {
-				value: ae.f.Text,
+			var $n = e => r.a.createElement(r.a.Fragment, null, r.a.createElement(ke, {
+				value: ae.k.Text,
 				label: i.fbt._("Text button", null, {
 					hk: "2zD9iL"
 				}),
-				selected: e.value === ae.f.Text,
-				onClick: () => e.onClick(ae.f.Text)
-			}), r.a.createElement(Se, {
-				value: ae.f.Image,
+				selected: e.value === ae.k.Text,
+				onClick: () => e.onClick(ae.k.Text)
+			}), r.a.createElement(ke, {
+				value: ae.k.Image,
 				label: i.fbt._("Image button", null, {
 					hk: "1sQoTL"
 				}),
-				selected: e.value === ae.f.Image,
-				onClick: () => e.onClick(ae.f.Image)
+				selected: e.value === ae.k.Image,
+				onClick: () => e.onClick(ae.k.Image)
 			}));
 			var ea = e => r.a.createElement(r.a.Fragment, null, e.localImage ? r.a.createElement(at.e, {
 				imageData: e.localImage,
@@ -2315,12 +2315,12 @@
 				e.Button = "button-image", e.Hover = "hover-image"
 			}(na || (na = {}));
 			const aa = e => {
-					if (e.hoverState && e.hoverState.kind === ae.f.Text) return {
+					if (e.hoverState && e.hoverState.kind === ae.k.Text) return {
 						...e.hoverState
 					};
-					const t = e.kind === ae.f.Text ? e : Object(ae.s)();
+					const t = e.kind === ae.k.Text ? e : Object(ae.x)();
 					return {
-						kind: ae.f.Text,
+						kind: ae.k.Text,
 						color: t.color,
 						text: "",
 						fillColor: t.fillColor,
@@ -2342,7 +2342,7 @@
 			class sa extends r.a.Component {
 				constructor(e) {
 					super(e), this.updateButtonDraft = e => {
-						e.kind === ae.f.Text && this.setState({
+						e.kind === ae.k.Text && this.setState({
 							cachedTextButton: e
 						}), this.props.updateButtonDraft(e)
 					}, this.updateButtonLink = e => {
@@ -2350,7 +2350,7 @@
 							n = {
 								...this.props.buttonDraft
 							};
-						n.kind === ae.f.Text ? n.url = t : n.linkUrl = t, this.setState({
+						n.kind === ae.k.Text ? n.url = t : n.linkUrl = t, this.setState({
 							cachedTextButton: {
 								...this.state.cachedTextButton,
 								url: t
@@ -2369,7 +2369,7 @@
 							}
 						}), this.updateButtonDraft(n)
 					}, this.updateTextButtonDraft = e => {
-						if (this.props.buttonDraft.kind === ae.f.Text) {
+						if (this.props.buttonDraft.kind === ae.k.Text) {
 							const t = {
 								...this.props.buttonDraft,
 								...e
@@ -2421,11 +2421,11 @@
 							height: n,
 							width: a
 						} = e, r = {
-							kind: ae.f.Image,
+							kind: ae.k.Image,
 							url: t,
 							height: n,
 							width: a,
-							linkUrl: Object(ae.n)(this.props.buttonDraft),
+							linkUrl: Object(ae.s)(this.props.buttonDraft),
 							text: this.props.buttonDraft.text,
 							hoverState: this.props.buttonDraft.hoverState
 						};
@@ -2436,7 +2436,7 @@
 							height: n,
 							width: a
 						} = e, r = {
-							kind: ae.f.Image,
+							kind: ae.k.Image,
 							url: t,
 							height: n,
 							width: a
@@ -2466,7 +2466,7 @@
 						})))
 					}, this.handleRemoveButtonImage = () => this.removeImage(na.Button), this.handleRemoveHoverImage = () => this.removeImage(na.Hover), this.onSelectButtonKind = e => {
 						if (e !== this.state.buttonKind) {
-							if (e === ae.f.Text) {
+							if (e === ae.k.Text) {
 								const e = {
 									...this.state.cachedTextButton,
 									hoverState: this.props.buttonDraft.hoverState
@@ -2489,10 +2489,10 @@
 						const t = {
 							...this.props.buttonDraft
 						};
-						if (e === ae.f.Text) t.hoverState = {
+						if (e === ae.k.Text) t.hoverState = {
 							...this.state.hoverButtonDraft
 						}, this.updateButtonDraft(t);
-						else if (e === ae.f.Image) {
+						else if (e === ae.k.Image) {
 							const e = this.state.localData[na.Hover];
 							e && Object(rt.h)(e) ? this.setHoverImage(e) : this.removeHoverState()
 						}
@@ -2505,17 +2505,17 @@
 							isHoverEnabled: !this.state.isHoverEnabled
 						})
 					}, this.isValidUrl = e => {
-						const t = Object(ae.n)(e);
+						const t = Object(ae.s)(e);
 						return Kn(t) === Hn.Valid
 					}, this.isInvalidButton = () => {
 						const e = this.props.buttonDraft;
 						if (this.state.buttonKind !== e.kind) return !0;
 						if (!e.text.length || e.text.length > ta) return !0;
-						if (this.state.buttonKind === ae.f.Image) {
+						if (this.state.buttonKind === ae.k.Image) {
 							const e = this.state.localData[na.Button];
 							if (!e || !Object(rt.h)(e)) return !0
 						}
-						return e.kind === ae.f.Text && !e.color || (!(!this.state.isHoverEnabled || e.hoverState && !this.isInvalidHoverState(e.hoverState)) || !this.isValidUrl(e))
+						return e.kind === ae.k.Text && !e.color || (!(!this.state.isHoverEnabled || e.hoverState && !this.isInvalidHoverState(e.hoverState)) || !this.isValidUrl(e))
 					}, this.onCancel = () => {
 						for (const e in this.state.localData) {
 							const t = this.state.localData[e];
@@ -2524,13 +2524,13 @@
 						this.props.onCancel()
 					};
 					const t = {};
-					e.buttonDraft.kind === ae.f.Image && (t[na.Button] = ra(e.buttonDraft));
+					e.buttonDraft.kind === ae.k.Image && (t[na.Button] = ra(e.buttonDraft));
 					const n = e.buttonDraft.hoverState;
-					n && n.kind === ae.f.Image && (t[na.Hover] = Object(rt.g)(n));
-					const a = e.buttonDraft.kind === ae.f.Text ? {
+					n && n.kind === ae.k.Image && (t[na.Hover] = Object(rt.g)(n));
+					const a = e.buttonDraft.kind === ae.k.Text ? {
 						...e.buttonDraft
 					} : {
-						...Object(ae.s)(),
+						...Object(ae.x)(),
 						url: e.buttonDraft.linkUrl,
 						text: e.buttonDraft.text
 					};
@@ -2538,7 +2538,7 @@
 						buttonKind: e.buttonDraft.kind,
 						cachedTextButton: a,
 						hoverButtonDraft: aa(e.buttonDraft),
-						hoverKind: n ? n.kind : ae.f.Text,
+						hoverKind: n ? n.kind : ae.k.Text,
 						isHoverEnabled: !!n,
 						localData: t
 					}
@@ -2558,17 +2558,17 @@
 					const r = {};
 					for (const s of a) {
 						const e = n[s.id];
-						r[e] = s, Object(rt.h)(s) && (e === na.Button && this.state.buttonKind === ae.f.Image ? this.setButtonImage(s) : e === na.Hover && this.state.hoverKind === ae.f.Image && this.setHoverImage(s))
+						r[e] = s, Object(rt.h)(s) && (e === na.Button && this.state.buttonKind === ae.k.Image ? this.setButtonImage(s) : e === na.Hover && this.state.hoverKind === ae.k.Image && this.setHoverImage(s))
 					}
 					this.setState(e => ({
 						localData: r
 					}))
 				}
 				isInvalidHoverState(e) {
-					if (e.kind === ae.f.Image) {
+					if (e.kind === ae.k.Image) {
 						const e = this.state.localData[na.Hover];
 						if (!e || !Object(rt.h)(e)) return !0
-					} else if (e.kind === ae.f.Text) {
+					} else if (e.kind === ae.k.Text) {
 						if (!e.color) return !0;
 						if (!e.text.length || e.text.length > ta) return !0
 					}
@@ -2596,18 +2596,18 @@
 						placeholder: i.fbt._("Link URL", null, {
 							hk: "4kbheN"
 						}),
-						value: Object(ae.n)(e.buttonDraft),
+						value: Object(ae.s)(e.buttonDraft),
 						onChange: this.updateButtonLink
 					}), !this.isValidUrl(e.buttonDraft) && r.a.createElement(Z.c, null, i.fbt._("The link provided is invalid", null, {
 						hk: "2OGHRG"
 					}))), r.a.createElement(Z.i, null, r.a.createElement($n, {
 						onClick: this.onSelectButtonKind,
 						value: t.buttonKind
-					})), t.buttonKind === ae.f.Image ? r.a.createElement(ea, {
+					})), t.buttonKind === ae.k.Image ? r.a.createElement(ea, {
 						localImage: t.localData[na.Button] || void 0,
 						onRemoveImage: this.handleRemoveButtonImage,
 						onUploadImage: this.handleButtonImageInput
-					}) : r.a.createElement(r.a.Fragment, null, r.a.createElement(Z.i, null, r.a.createElement(Sn, {
+					}) : r.a.createElement(r.a.Fragment, null, r.a.createElement(Z.i, null, r.a.createElement(kn, {
 						label: i.fbt._("Fill color", null, {
 							hk: "Z9Mpb"
 						}),
@@ -2615,14 +2615,14 @@
 						onChange: this.updateTextButtonFillColor,
 						value: t.cachedTextButton.fillColor,
 						includeTransparent: !0
-					})), r.a.createElement(Z.i, null, r.a.createElement(Sn, {
+					})), r.a.createElement(Z.i, null, r.a.createElement(kn, {
 						label: i.fbt._("Stroke color", null, {
 							hk: "3NkZYM"
 						}),
 						name: he.a.ButtonWidgetButtonColor,
 						onChange: this.updateTextButtonColor,
 						value: t.cachedTextButton.color
-					})), r.a.createElement(Z.i, null, r.a.createElement(Sn, {
+					})), r.a.createElement(Z.i, null, r.a.createElement(kn, {
 						label: i.fbt._("Text color", null, {
 							hk: "2Lc7J4"
 						}),
@@ -2641,7 +2641,7 @@
 					})), t.isHoverEnabled && r.a.createElement(r.a.Fragment, null, r.a.createElement(Z.i, null, r.a.createElement($n, {
 						onClick: this.onSelectHoverKind,
 						value: t.hoverKind
-					})), t.hoverKind === ae.f.Image ? r.a.createElement(ea, {
+					})), t.hoverKind === ae.k.Image ? r.a.createElement(ea, {
 						localImage: t.localData[na.Hover] || void 0,
 						onRemoveImage: this.handleRemoveHoverImage,
 						onUploadImage: this.handleHoverImageInput
@@ -2654,7 +2654,7 @@
 					}), r.a.createElement(tn.a, {
 						maxChars: ta,
 						text: t.hoverButtonDraft.text || ""
-					})), r.a.createElement(Z.i, null, r.a.createElement(Sn, {
+					})), r.a.createElement(Z.i, null, r.a.createElement(kn, {
 						label: i.fbt._("Fill color", null, {
 							hk: "Z9Mpb"
 						}),
@@ -2662,14 +2662,14 @@
 						onChange: this.updateHoverDraftFillColor,
 						value: t.hoverButtonDraft.fillColor,
 						includeTransparent: !0
-					})), r.a.createElement(Z.i, null, r.a.createElement(Sn, {
+					})), r.a.createElement(Z.i, null, r.a.createElement(kn, {
 						label: i.fbt._("Stroke color", null, {
 							hk: "3NkZYM"
 						}),
 						name: he.a.ButtonWidgetHoverColor,
 						onChange: this.updateHoverDraftColor,
 						value: t.hoverButtonDraft.color
-					})), r.a.createElement(Z.i, null, r.a.createElement(Sn, {
+					})), r.a.createElement(Z.i, null, r.a.createElement(kn, {
 						label: i.fbt._("Text color", null, {
 							hk: "2Lc7J4"
 						}),
@@ -2800,7 +2800,7 @@
 						}, this.handleAddButton = () => {
 							const {
 								widget: e
-							} = this.state, t = Object(ae.s)(), n = e.buttons.slice();
+							} = this.state, t = Object(ae.x)(), n = e.buttons.slice();
 							n.push(t), this.setState({
 								widget: {
 									...e,
@@ -2982,14 +2982,14 @@
 				_a = n.n(va);
 			const Ca = s.a.input("Input", _a.a),
 				ya = s.a.wrapped(an.a, "ExpandRight", _a.a);
-			var Sa = e => r.a.createElement(Kt.h, null, r.a.createElement(ya, null, e.selected ? r.a.createElement(Kt.b, null) : r.a.createElement(Kt.a, null), r.a.createElement("div", null, r.a.createElement(Ca, {
+			var ka = e => r.a.createElement(Kt.h, null, r.a.createElement(ya, null, e.selected ? r.a.createElement(Kt.b, null) : r.a.createElement(Kt.a, null), r.a.createElement("div", null, r.a.createElement(Ca, {
 				name: e.name,
 				onClick: t => e.onChange(e.name),
 				readOnly: !0
 			}), r.a.createElement(ne.a, {
 				label: e.label
 			}))));
-			var ka = class extends ca {
+			var Sa = class extends ca {
 					getInitialState(e) {
 						return {
 							widget: e
@@ -3004,7 +3004,7 @@
 				ja = s.a.wrapped(Z.c, "FormElementError", wa.a),
 				Fa = s.a.wrapped(Kt.c, "NumEventsInput", wa.a),
 				Pa = s.a.div("InputLabel", wa.a);
-			var Ra = class extends ka {
+			var Ra = class extends Sa {
 					constructor() {
 						super(...arguments), this.isValidGoogleCalendarId = () => this.state.widget.googleCalendarId.match(".+@.{2,}") && this.state.widget.googleCalendarId.length >= Oa, this.onTitleChange = e => {
 							this.setWidgetState({
@@ -3106,28 +3106,28 @@
 							hk: "3Kn7Wm"
 						})))), r.a.createElement(Z.m, null, i.fbt._("Event data included", null, {
 							hk: "2FkLQR"
-						})), r.a.createElement(Z.i, null, r.a.createElement(Sa, {
+						})), r.a.createElement(Z.i, null, r.a.createElement(ka, {
 							name: "showDate",
 							label: i.fbt._("Date", null, {
 								hk: "1RScWn"
 							}),
 							onChange: this.onToggleConfiguration,
 							selected: t.configuration.showDate
-						})), r.a.createElement(Z.i, null, r.a.createElement(Sa, {
+						})), r.a.createElement(Z.i, null, r.a.createElement(ka, {
 							name: "showTime",
 							label: i.fbt._("Time", null, {
 								hk: "1Nay4c"
 							}),
 							onChange: this.onToggleConfiguration,
 							selected: t.configuration.showTime
-						})), r.a.createElement(Z.i, null, r.a.createElement(Sa, {
+						})), r.a.createElement(Z.i, null, r.a.createElement(ka, {
 							name: "showLocation",
 							label: i.fbt._("Location", null, {
 								hk: "2tmlcT"
 							}),
 							onChange: this.onToggleConfiguration,
 							selected: t.configuration.showLocation
-						})), r.a.createElement(Z.i, null, r.a.createElement(Sa, {
+						})), r.a.createElement(Z.i, null, r.a.createElement(ka, {
 							name: "showDescription",
 							label: i.fbt._("Description", null, {
 								hk: "X3d2w"
@@ -3690,7 +3690,7 @@
 				_r = n("./src/reddit/components/StructuredStyles/Forms/IdCardWidgetEditor/index.m.less"),
 				Cr = n.n(_r);
 			const yr = 30,
-				Sr = e => r.a.createElement(p.b, {
+				kr = e => r.a.createElement(p.b, {
 					className: Object(ue.a)(Cr.a.NavLink, e.className)
 				}, r.a.createElement("a", {
 					href: e.url,
@@ -3699,7 +3699,7 @@
 				}, r.a.createElement(v.a, null, e.title, r.a.createElement(fr.a, {
 					className: Object(ue.a)(Cr.a.OutboundLinkIcon, e.className)
 				}))));
-			var kr = Object(br.u)()(Object(o.b)(() => Object(c.c)({
+			var Sr = Object(br.u)()(Object(o.b)(() => Object(c.c)({
 				subreddit: br.r
 			}))(class extends Er {
 				constructor() {
@@ -3753,7 +3753,7 @@
 						hk: "30o9mQ"
 					})), r.a.createElement("div", {
 						className: Object(ue.a)(Cr.a.Description, vr.a.Description)
-					}, t.description), r.a.createElement(Z.h, null, r.a.createElement(Sr, {
+					}, t.description), r.a.createElement(Z.h, null, r.a.createElement(kr, {
 						title: i.fbt._("Edit Community Description", null, {
 							hk: "2XvsrF"
 						}),
@@ -4595,7 +4595,7 @@
 					}
 				}
 			});
-			var Es = class extends ka {
+			var Es = class extends Sa {
 					constructor() {
 						super(...arguments), this.onChangeWidgetStyles = e => {
 							this.setWidgetState({
@@ -4638,11 +4638,11 @@
 				_s = n("./src/reddit/components/Flair/index.tsx"),
 				Cs = n("./src/reddit/helpers/flair.ts"),
 				ys = n("./src/reddit/components/StructuredStyles/Forms/PostFlairWidgetEditor/FlairTemplateItem.m.less"),
-				Ss = n.n(ys);
-			const ks = s.a.wrapped(_s.b, "FlairComponent", Ss.a);
+				ks = n.n(ys);
+			const Ss = s.a.wrapped(_s.b, "FlairComponent", ks.a);
 			var Is = e => {
 					const t = Object(Cs.c)(e.flairTemplate);
-					return r.a.createElement(Aa.a, null, r.a.createElement(ks, {
+					return r.a.createElement(Aa.a, null, r.a.createElement(Ss, {
 						flair: t,
 						forceSmallEmojis: !0
 					}))
@@ -4921,19 +4921,19 @@
 					}), r.a.createElement(Z.h, null, i.fbt._("Layout", null, {
 						hk: "26WqfC"
 					})), r.a.createElement(me.a, {
-						value: ae.d.List,
+						value: ae.g.List,
 						label: i.fbt._("Single column", null, {
 							hk: "usClX"
 						}),
-						selected: f.display === ae.d.List,
-						onClick: () => a(ae.d.List)
+						selected: f.display === ae.g.List,
+						onClick: () => a(ae.g.List)
 					}), r.a.createElement(me.a, {
-						value: ae.d.Cloud,
+						value: ae.g.Cloud,
 						label: i.fbt._("Word cloud", null, {
 							hk: "6Iqk1"
 						}),
-						selected: f.display === ae.d.Cloud,
-						onClick: () => a(ae.d.Cloud)
+						selected: f.display === ae.g.Cloud,
+						onClick: () => a(ae.g.Cloud)
 					}), r.a.createElement(fi, null, r.a.createElement(Ei, {
 						"data-redditstyle": !0,
 						disabled: f.order.length >= bi,
@@ -5000,11 +5000,11 @@
 						subredditId: t
 					}).name
 				})),
-				Si = e => ({
+				ki = e => ({
 					relativePosition: 0,
 					title: e
 				});
-			var ki = yi(class extends Xa {
+			var Si = yi(class extends Xa {
 					constructor() {
 						super(...arguments), this.returnToMainMenu = () => this.setState(e => ({
 							editMode: Ci.None,
@@ -5084,7 +5084,7 @@
 							case Ci.Add:
 								return r.a.createElement(Xs, _i({}, e, {
 									afterApiRequestCompleted: this.afterApiRequestCompleted,
-									breadcrumbs: [Si(e.title)],
+									breadcrumbs: [ki(e.title)],
 									handleCancelFromSubMenu: this.returnToMainMenu,
 									handleSaveFlair: this.handleSaveFlair,
 									stopEditing: this.returnToMainMenu,
@@ -5212,7 +5212,7 @@
 			const Pi = 30,
 				Ri = 1e4,
 				Ni = s.a.wrapped(Kt.i, "Textarea", Fi.a);
-			var Ai = class extends ka {
+			var Ai = class extends Sa {
 				constructor() {
 					super(...arguments), this.onTitleChange = e => {
 						this.setWidgetState({
@@ -5302,7 +5302,7 @@
 						case "calendar":
 							return Ra;
 						case "id-card":
-							return kr;
+							return Sr;
 						case "menu":
 							return fs;
 						case "custom":
@@ -5310,7 +5310,7 @@
 						case "moderators":
 							return Es;
 						case "post-flair":
-							return ki;
+							return Si;
 						default:
 							return Bi
 					}
@@ -5402,7 +5402,7 @@
 				title: e.title,
 				breadcrumbs: e.breadcrumbs,
 				stopEditing: e.stopEditing,
-				widgetKind: "menu",
+				widgetKind: ae.j.Menu,
 				helpCenterLink: e.helpCenterLink
 			}));
 			var zi = Bt(e => r.a.createElement(Z.k, null, r.a.createElement(Ge, e), r.a.createElement(Z.f, null, r.a.createElement(Z.h, null, i.fbt._("Link Colors", null, {
@@ -5662,7 +5662,7 @@
 				al = n.n(nl);
 			const rl = s.a.div("WidgetType", al.a),
 				sl = s.a.div("WidgetTitle", al.a);
-			var il = e => e.widget ? r.a.createElement("div", null, r.a.createElement(rl, null, Object(ae.p)(e.widget.kind)), r.a.createElement(sl, null, Object(ae.q)(e.widget))) : null;
+			var il = e => e.widget ? r.a.createElement("div", null, r.a.createElement(rl, null, Object(ae.u)(e.widget.kind)), r.a.createElement(sl, null, Object(ae.v)(e.widget))) : null;
 			const ll = Object(c.c)({
 				idCardWidget: (e, t) => Object(re.d)(e, {
 					subredditId: t.subredditId
@@ -6039,10 +6039,10 @@
 					children: e.children
 				})),
 				yl = n("./src/reddit/components/BlockNavigation/index.tsx"),
-				Sl = n("./src/reddit/constants/modals.ts");
-			var kl = Object(_l.a)(e => r.a.createElement(yl.a, {
+				kl = n("./src/reddit/constants/modals.ts");
+			var Sl = Object(_l.a)(e => r.a.createElement(yl.a, {
 					blockOnBeforeUnload: !0,
-					dialogId: Sl.a.BLADE_UNSAVED_CHANGES,
+					dialogId: kl.a.BLADE_UNSAVED_CHANGES,
 					enabled: e.bladeHasUnsavedChanges
 				})),
 				Il = n("./src/reddit/components/StructuredStyles/BladeDrawer/index.m.less"),
@@ -6055,7 +6055,7 @@
 				subredditId: e.subredditId
 			}, r.a.createElement(h.b, null)), r.a.createElement(vl, {
 				subredditId: e.subredditId
-			})), r.a.createElement(kl, e))
+			})), r.a.createElement(Sl, e))
 		},
 		"./src/reddit/components/StructuredStyles/Breadcrumbs/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -7843,8 +7843,8 @@
 				_ = n("./src/reddit/components/UserIcon/CurrentUserIcon.tsx"),
 				C = n("./src/reddit/helpers/name/index.ts"),
 				y = n("./src/reddit/controls/SubredditPicker/Picker/SubredditDropdown/EntryContent/index.tsx"),
-				S = n("./src/reddit/controls/SubredditPicker/Picker/SubredditDropdown/EntryContent/index.m.less"),
-				k = n.n(S),
+				k = n("./src/reddit/controls/SubredditPicker/Picker/SubredditDropdown/EntryContent/index.m.less"),
+				S = n.n(k),
 				I = n("./src/reddit/controls/SubredditPicker/Picker/SubredditDropdown/ProfileEntryContent/index.m.less"),
 				w = n.n(I);
 
@@ -7870,7 +7870,7 @@
 				}, [a.fbt._plural(n, "number")], {
 					hk: "2SvJUX"
 				}) : void 0, i = l.a.createElement(_.a, {
-					className: Object(o.a)(w.a.profileIcon, k.a.subredditIcon)
+					className: Object(o.a)(w.a.profileIcon, S.a.subredditIcon)
 				});
 				return l.a.createElement(y.b, D({
 					icon: i,
@@ -8132,8 +8132,8 @@
 				_ = n("./src/lib/classNames/index.ts"),
 				C = n("./src/reddit/constants/keycodes.ts"),
 				y = n("./src/reddit/constants/posts.ts"),
-				S = n("./src/reddit/models/SubredditAutocomplete/index.ts"),
-				k = n("./node_modules/fbt/lib/FbtPublic.js"),
+				k = n("./src/reddit/models/SubredditAutocomplete/index.ts"),
+				S = n("./node_modules/fbt/lib/FbtPublic.js"),
 				I = n("./src/reddit/icons/fonts/index.tsx"),
 				w = n("./src/lib/lessComponent.tsx"),
 				D = n("./src/reddit/components/SubredditIcon/index.tsx"),
@@ -8180,9 +8180,9 @@
 					className: j.a.input,
 					ref: i,
 					disabled: n,
-					placeholder: a ? k.fbt._("Search communities", null, {
+					placeholder: a ? S.fbt._("Search communities", null, {
 						hk: "1mtF5A"
-					}) : k.fbt._("Choose a community", null, {
+					}) : S.fbt._("Choose a community", null, {
 						hk: "44gKTd"
 					}),
 					spellCheck: !1,
@@ -8234,9 +8234,9 @@
 						item: e,
 						highlight: !1,
 						shouldPrettyPrint: !0,
-						explanationText: n ? k.fbt._("based on your subscription", null, {
+						explanationText: n ? S.fbt._("based on your subscription", null, {
 							hk: "3Hb2XK"
-						}) : k.fbt._("based on your content", null, {
+						}) : S.fbt._("based on your content", null, {
 							hk: "3u8Nrt"
 						}),
 						onClick: () => {
@@ -8270,7 +8270,7 @@
 						onMouseDown: e.onContainerMouseDown
 					}, r.a.createElement("div", {
 						className: J.a.title
-					}, k.fbt._("Suggested communities", null, {
+					}, S.fbt._("Suggested communities", null, {
 						hk: "4BebuH"
 					})), r.a.createElement("div", {
 						className: J.a.contentWrapper
@@ -8305,14 +8305,14 @@
 						const t = this.props.items[e];
 						if (!t) throw new Error("Invalid item index");
 						let n;
-						n = t.type === S.a.OWN_PROFILE ? Object(l.d)(t.name) : Object(l.c)(t.name), this.setState({
+						n = t.type === k.a.OWN_PROFILE ? Object(l.d)(t.name) : Object(l.c)(t.name), this.setState({
 							inputValue: n,
 							focusedIndex: e
 						}, this.commitSelection)
 					}, this.onSelectRecommendation = e => {
 						if (!e) throw new Error("Invalid item index");
 						let t;
-						t = e.type === S.a.OWN_PROFILE ? Object(l.d)(e.name) : Object(l.c)(e.name), this.props.onChange({
+						t = e.type === k.a.OWN_PROFILE ? Object(l.d)(e.name) : Object(l.c)(e.name), this.props.onChange({
 							rawString: t,
 							record: {
 								name: e.name,
@@ -8355,7 +8355,7 @@
 								iconUrl: c,
 								primaryColor: u,
 								allowedPostTypes: m,
-								type: i === S.a.OWN_PROFILE ? y.a.PROFILE : y.a.SUBREDDIT
+								type: i === k.a.OWN_PROFILE ? y.a.PROFILE : y.a.SUBREDDIT
 							} : null
 						}
 					}, this.findNextEnabledItemIndex = e => {
@@ -9329,4 +9329,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/StructuredStyles.d324ab06117502499463.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/StructuredStyles.9cd5c4ff413ac838f752.js.map

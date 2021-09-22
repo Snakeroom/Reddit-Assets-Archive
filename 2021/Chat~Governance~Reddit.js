@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.11d3dc852beead2071a1.js
-// Retrieved at 9/22/2021, 11:50:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.0ca6ade860bd9c325f51.js
+// Retrieved at 9/22/2021, 1:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -2491,13 +2491,13 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("145685"),
+				buildNumber: r("145712"),
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1632324444"),
+				})("1632330526"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -4994,14 +4994,14 @@
 					}))
 				},
 				z = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c2155dfe0e7a8c7764b3ea149b7c74ba6e3706c7b-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c29e4aa70279295fef7a6b47b9172461604d24ef1-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${v.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "2155dfe0e7a8c7764b3ea149b7c74ba6e3706c7b-production",
+						release: "29e4aa70279295fef7a6b47b9172461604d24ef1-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -5514,7 +5514,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "2155dfe0e7a8c7764b3ea149b7c74ba6e3706c7b-production",
+						releaseClient: "29e4aa70279295fef7a6b47b9172461604d24ef1-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -19769,9 +19769,9 @@
 				r = i("./src/reddit/helpers/graphql/helpers.ts");
 			const s = e => {
 					switch (e) {
-						case n.h.Dark:
+						case n.i.Dark:
 							return n.e.Dark;
-						case n.h.Light:
+						case n.i.Light:
 							return n.e.Light
 					}
 				},
@@ -24240,7 +24240,7 @@
 		},
 		"./src/reddit/models/Flair/index.ts": function(e, t, i) {
 			"use strict";
-			var n, r, s, o, d, a, l, u;
+			var n, r, s, o, d, a, l, u, c;
 			i.d(t, "c", (function() {
 					return n
 				})), i.d(t, "f", (function() {
@@ -24253,10 +24253,12 @@
 					return d
 				})), i.d(t, "b", (function() {
 					return a
-				})), i.d(t, "h", (function() {
+				})), i.d(t, "i", (function() {
 					return l
-				})), i.d(t, "g", (function() {
+				})), i.d(t, "h", (function() {
 					return u
+				})), i.d(t, "g", (function() {
+					return c
 				})),
 				function(e) {
 					e.Text = "text", e.Emoji = "emoji"
@@ -24281,7 +24283,10 @@
 				}(l || (l = {})),
 				function(e) {
 					e.RIGHT = "RIGHT", e.LEFT = "LEFT"
-				}(u || (u = {}))
+				}(u || (u = {})),
+				function(e) {
+					e.Text = "TEXT", e.Emoji = "EMOJI", e.All = "ALL"
+				}(c || (c = {}))
 		},
 		"./src/reddit/models/Gold/Award.ts": function(e, t, i) {
 			"use strict";
@@ -27379,61 +27384,77 @@
 		},
 		"./src/reddit/models/Widgets/index.ts": function(e, t, i) {
 			"use strict";
-			i.d(t, "c", (function() {
-				return s
-			})), i.d(t, "m", (function() {
-				return o
-			})), i.d(t, "f", (function() {
-				return u
-			})), i.d(t, "a", (function() {
-				return c
-			})), i.d(t, "b", (function() {
-				return _
-			})), i.d(t, "s", (function() {
-				return h
-			})), i.d(t, "n", (function() {
-				return f
-			})), i.d(t, "e", (function() {
-				return b
-			})), i.d(t, "d", (function() {
-				return y
-			})), i.d(t, "i", (function() {
-				return T
-			})), i.d(t, "h", (function() {
-				return S
+			i.d(t, "i", (function() {
+				return n
 			})), i.d(t, "j", (function() {
-				return O
-			})), i.d(t, "g", (function() {
-				return I
+				return r
+			})), i.d(t, "f", (function() {
+				return d
 			})), i.d(t, "r", (function() {
-				return B
+				return a
 			})), i.d(t, "k", (function() {
-				return k
+				return _
+			})), i.d(t, "a", (function() {
+				return m
+			})), i.d(t, "b", (function() {
+				return p
+			})), i.d(t, "x", (function() {
+				return b
+			})), i.d(t, "s", (function() {
+				return g
+			})), i.d(t, "h", (function() {
+				return w
+			})), i.d(t, "g", (function() {
+				return E
+			})), i.d(t, "n", (function() {
+				return O
+			})), i.d(t, "m", (function() {
+				return I
+			})), i.d(t, "o", (function() {
+				return R
 			})), i.d(t, "l", (function() {
+				return F
+			})), i.d(t, "w", (function() {
 				return M
 			})), i.d(t, "p", (function() {
 				return U
-			})), i.d(t, "o", (function() {
-				return G
 			})), i.d(t, "q", (function() {
+				return G
+			})), i.d(t, "u", (function() {
 				return V
+			})), i.d(t, "t", (function() {
+				return q
+			})), i.d(t, "v", (function() {
+				return H
+			})), i.d(t, "c", (function() {
+				return K
+			})), i.d(t, "d", (function() {
+				return $
+			})), i.d(t, "e", (function() {
+				return z
 			}));
-			var n = i("./node_modules/fbt/lib/FbtPublic.js"),
-				r = i("./src/reddit/models/Subreddit/index.ts");
-			const s = 1,
-				o = () => ({
+			var n, r, s = i("./node_modules/fbt/lib/FbtPublic.js"),
+				o = i("./src/reddit/models/Subreddit/index.ts");
+			! function(e) {
+				e.Textarea = "textarea", e.Button = "button", e.SubredditRules = "subreddit-rules", e.CommunityList = "community-list", e.IdCard = "id-card", e.Image = "image", e.Moderators = "moderators", e.Calendar = "calendar", e.Custom = "custom", e.PostFlair = "post-flair"
+			}(n || (n = {})),
+			function(e) {
+				e.Menu = "menu"
+			}(r || (r = {}));
+			const d = 1,
+				a = () => ({
 					backgroundColor: null,
 					headerColor: null
 				}),
-				d = () => ({
+				l = () => ({
 					id: null,
-					kind: "textarea",
+					kind: n.Textarea,
 					shortName: "",
 					text: "",
 					textHtml: void 0,
-					styles: o()
+					styles: a()
 				}),
-				a = e => {
+				u = e => {
 					return {
 						id: e.id,
 						kind: e.kind,
@@ -27442,24 +27463,24 @@
 						styles: e.styles
 					}
 				},
-				l = () => ({
+				c = () => ({
 					currentlyViewingCount: 0,
 					currentlyViewingText: "",
 					description: "",
 					id: null,
-					kind: "id-card",
+					kind: n.IdCard,
 					shortName: "Community details",
 					subscribersCount: 0,
 					subscribersText: "",
-					styles: o()
+					styles: a()
 				});
-			var u;
+			var _;
 			! function(e) {
 				e.Text = "text", e.Image = "image"
-			}(u || (u = {}));
-			const c = 32,
-				_ = 288,
-				m = e => {
+			}(_ || (_ = {}));
+			const m = 32,
+				p = 288,
+				h = e => {
 					return {
 						id: e.id,
 						kind: e.kind,
@@ -27469,28 +27490,28 @@
 						styles: e.styles
 					}
 				},
-				p = () => ({
+				f = () => ({
 					id: null,
-					kind: "button",
+					kind: n.Button,
 					shortName: "",
 					description: null,
 					descriptionHtml: null,
 					buttons: [],
-					styles: o()
+					styles: a()
 				}),
-				h = () => ({
-					kind: u.Text,
+				b = () => ({
+					kind: _.Text,
 					text: "",
 					url: "",
 					color: "#000000",
 					hoverState: void 0
 				}),
-				f = e => e.kind === u.Image ? e.linkUrl : e.url,
-				b = {
+				g = e => e.kind === _.Image ? e.linkUrl : e.url,
+				w = {
 					FULL: "full",
 					COMPACT: "compact"
 				},
-				g = e => {
+				y = e => {
 					return {
 						id: e.id,
 						display: e.display,
@@ -27500,29 +27521,29 @@
 						styles: e.styles
 					}
 				},
-				w = () => ({
+				v = () => ({
 					id: null,
-					kind: "subreddit-rules",
+					kind: n.SubredditRules,
 					display: "full",
 					data: [],
 					subreddit: "",
 					shortName: "Subreddit Rules",
-					styles: o()
+					styles: a()
 				});
-			var y;
+			var E;
 			! function(e) {
 				e.Cloud = "cloud", e.List = "list"
-			}(y || (y = {}));
-			const v = () => ({
+			}(E || (E = {}));
+			const T = () => ({
 					id: null,
-					kind: "post-flair",
-					display: y.List,
+					kind: n.PostFlair,
+					display: E.List,
 					order: [],
 					shortName: "",
-					styles: o(),
+					styles: a(),
 					templates: {}
 				}),
-				E = e => {
+				S = e => {
 					return {
 						id: e.id,
 						display: e.display,
@@ -27532,7 +27553,7 @@
 						styles: e.styles
 					}
 				},
-				T = (e, t) => {
+				O = (e, t) => {
 					const i = {
 						id: e.id,
 						displayText: e.displayText,
@@ -27546,7 +27567,7 @@
 					};
 					return t && t.publicDescription && (i.description = t.publicDescription), t && t.bannerBackgroundImage && (i.bannerBackgroundImage = t.bannerBackgroundImage), t && t.bannerBackgroundColor && (i.bannerBackgroundColor = t.bannerBackgroundColor), i
 				},
-				S = e => ({
+				I = e => ({
 					id: e.id,
 					name: e.name,
 					subscribers: e.subscribers,
@@ -27554,8 +27575,8 @@
 					type: "profile",
 					isNSFW: e.isNSFW
 				}),
-				O = e => Object(r.h)(e) ? S(e) : T(e),
-				I = e => ({
+				R = e => Object(o.h)(e) ? I(e) : O(e),
+				F = e => ({
 					iconUrl: e.iconUrl,
 					id: e.id,
 					name: e.name,
@@ -27564,24 +27585,24 @@
 					type: "subreddit",
 					isNSFW: e.isNsfw || !1
 				}),
-				R = e => {
+				C = e => {
 					const t = e.data.map(e => e.name),
 						i = {
 							...e
 						};
 					return i.data = t, i
 				},
-				F = () => ({
+				N = () => ({
 					id: null,
-					kind: "community-list",
+					kind: n.CommunityList,
 					shortName: "",
 					data: [],
 					description: "",
-					styles: o()
+					styles: a()
 				}),
-				C = () => ({
+				j = () => ({
 					id: null,
-					kind: "calendar",
+					kind: n.Calendar,
 					shortName: "",
 					configuration: {
 						numEvents: 10,
@@ -27597,9 +27618,9 @@
 					moderator: null,
 					requiresSync: !0,
 					synchronizedAtUTC: null,
-					styles: o()
+					styles: a()
 				}),
-				N = e => {
+				A = e => {
 					return {
 						id: e.id,
 						kind: e.kind,
@@ -27616,25 +27637,25 @@
 						styles: e.styles
 					}
 				},
-				j = e => (e.data.forEach((function(e) {
+				P = e => (e.data.forEach((function(e) {
 					void 0 === e.linkUrl && (e.linkUrl = "")
 				})), e),
-				A = () => ({
+				D = () => ({
 					data: [],
 					id: null,
-					kind: "image",
+					kind: n.Image,
 					shortName: ""
 				}),
-				P = () => ({
+				x = () => ({
 					id: null,
-					kind: "custom",
+					kind: n.Custom,
 					shortName: "",
 					text: "",
 					css: "",
 					height: null,
 					imageData: []
 				}),
-				D = e => ({
+				L = e => ({
 					id: e.id,
 					kind: e.kind,
 					shortName: e.shortName,
@@ -27643,192 +27664,201 @@
 					height: e.height,
 					imageData: e.imageData
 				}),
-				x = e => ({
+				B = e => ({
 					id: e.id,
 					kind: e.kind,
 					styles: e.styles
 				}),
-				L = () => ({
+				k = () => ({
 					id: null,
-					kind: "menu",
+					kind: r.Menu,
 					data: [],
 					showWiki: !1
 				});
 
-			function B(e) {
+			function M(e) {
 				return "widgetId" in e
 			}
 
-			function k(e) {
+			function U(e) {
 				switch (e.kind) {
-					case "subreddit-rules":
-						return g(e);
-					case "community-list":
-						return R(e);
-					case "image":
-						return j(e);
-					case "calendar":
-						return N(e);
-					case "textarea":
-						return a(e);
-					case "button":
-						return m(e);
-					case "custom":
-						return D(e);
-					case "moderators":
-						return x(e);
-					case "post-flair":
-						return E(e);
+					case n.SubredditRules:
+						return y(e);
+					case n.CommunityList:
+						return C(e);
+					case n.Image:
+						return P(e);
+					case n.Calendar:
+						return A(e);
+					case n.Textarea:
+						return u(e);
+					case n.Button:
+						return h(e);
+					case n.Custom:
+						return L(e);
+					case n.Moderators:
+						return B(e);
+					case n.PostFlair:
+						return S(e);
 					default:
 						return e
 				}
 			}
 
-			function M(e) {
+			function G(e) {
 				switch (e) {
-					case "textarea":
-						return d();
-					case "button":
-						return p();
-					case "subreddit-rules":
-						return w();
-					case "image":
-						return A();
-					case "community-list":
-						return F();
-					case "calendar":
-						return C();
-					case "menu":
-						return L();
-					case "custom":
-						return P();
-					case "id-card":
+					case n.Textarea:
 						return l();
-					case "post-flair":
+					case n.Button:
+						return f();
+					case n.SubredditRules:
 						return v();
+					case n.Image:
+						return D();
+					case n.CommunityList:
+						return N();
+					case n.Calendar:
+						return j();
+					case r.Menu:
+						return k();
+					case n.Custom:
+						return x();
+					case n.IdCard:
+						return c();
+					case n.PostFlair:
+						return T();
 					default:
 						throw new Error("Unknown widget type encountered")
 				}
 			}
 
-			function U(e) {
+			function V(e) {
 				switch (e) {
-					case "button":
-						return n.fbt._("Button", null, {
+					case n.Button:
+						return s.fbt._("Button", null, {
 							hk: "HgC1C"
 						});
-					case "calendar":
-						return n.fbt._("Calendar", null, {
+					case n.Calendar:
+						return s.fbt._("Calendar", null, {
 							hk: "ikzne"
 						});
-					case "community-list":
-						return n.fbt._("Community list", null, {
+					case n.CommunityList:
+						return s.fbt._("Community list", null, {
 							hk: "2KybEl"
 						});
-					case "custom":
-						return n.fbt._("Custom", null, {
+					case n.Custom:
+						return s.fbt._("Custom", null, {
 							hk: "4fliIM"
 						});
-					case "id-card":
-						return n.fbt._("ID Card", null, {
+					case n.IdCard:
+						return s.fbt._("ID Card", null, {
 							hk: "qYWnZ"
 						});
-					case "image":
-						return n.fbt._("Images", null, {
+					case n.Image:
+						return s.fbt._("Images", null, {
 							hk: "3IdoS0"
 						});
-					case "moderators":
-						return n.fbt._("Moderators", null, {
+					case n.Moderators:
+						return s.fbt._("Moderators", null, {
 							hk: "22G5Vw"
 						});
-					case "menu":
-						return n.fbt._("structuredStyles widgets menu label", null, {
+					case r.Menu:
+						return s.fbt._("structuredStyles widgets menu label", null, {
 							hk: "38QOec"
 						});
-					case "post-flair":
-						return n.fbt._("Post flair", null, {
+					case n.PostFlair:
+						return s.fbt._("Post flair", null, {
 							hk: "2iqHRS"
 						});
-					case "subreddit-rules":
-						return n.fbt._("Rules", null, {
+					case n.SubredditRules:
+						return s.fbt._("Rules", null, {
 							hk: "1GxTNW"
 						});
-					case "textarea":
-						return n.fbt._("Textarea", null, {
+					case n.Textarea:
+						return s.fbt._("Textarea", null, {
 							hk: "14tyaE"
 						})
 				}
 			}
 
-			function G(e) {
+			function q(e) {
 				switch (e) {
-					case "button":
-						return n.fbt._("A widget for buttons...", null, {
+					case n.Button:
+						return s.fbt._("A widget for buttons...", null, {
 							hk: "3gJsQp"
 						});
-					case "calendar":
-						return n.fbt._("Add a calendar for events, etc.", null, {
+					case n.Calendar:
+						return s.fbt._("Add a calendar for events, etc.", null, {
 							hk: "2RqtNI"
 						});
-					case "community-list":
-						return n.fbt._("Recommended, related communities, etc.", null, {
+					case n.CommunityList:
+						return s.fbt._("Recommended, related communities, etc.", null, {
 							hk: "2KQCPp"
 						});
-					case "custom":
-						return n.fbt._("Experimental: custom visuals with CSS", null, {
+					case n.Custom:
+						return s.fbt._("Experimental: custom visuals with CSS", null, {
 							hk: "14Pc95"
 						});
-					case "id-card":
-						return n.fbt._("Community Description", null, {
+					case n.IdCard:
+						return s.fbt._("Community Description", null, {
 							hk: "2vhNN2"
 						});
-					case "image":
-						return n.fbt._("Art display, more cat pics, etc.", null, {
+					case n.Image:
+						return s.fbt._("Art display, more cat pics, etc.", null, {
 							hk: "2buUWv"
 						});
-					case "moderators":
-						return n.fbt._("structuredStyles widgets moderators description", null, {
+					case n.Moderators:
+						return s.fbt._("structuredStyles widgets moderators description", null, {
 							hk: "2B8iNe"
 						});
-					case "menu":
-						return n.fbt._("structuredStyles widgets menu description", null, {
+					case r.Menu:
+						return s.fbt._("structuredStyles widgets menu description", null, {
 							hk: "2Ljjwx"
 						});
-					case "post-flair":
-						return n.fbt._("Display post flair for easy searching", null, {
+					case n.PostFlair:
+						return s.fbt._("Display post flair for easy searching", null, {
 							hk: "2KuxtA"
 						});
-					case "subreddit-rules":
-						return n.fbt._("Rules for your community", null, {
+					case n.SubredditRules:
+						return s.fbt._("Rules for your community", null, {
 							hk: "14w8VP"
 						});
-					case "textarea":
-						return n.fbt._("Announcements, quick links, etc.", null, {
+					case n.Textarea:
+						return s.fbt._("Announcements, quick links, etc.", null, {
 							hk: "1jQHO6"
 						})
 				}
 			}
 
-			function V(e) {
+			function H(e) {
 				switch (e.kind) {
-					case "textarea":
-					case "button":
-					case "image":
-					case "subreddit-rules":
-					case "community-list":
-					case "calendar":
-					case "custom":
-					case "id-card":
-					case "post-flair":
+					case n.Textarea:
+					case n.Button:
+					case n.Image:
+					case n.SubredditRules:
+					case n.CommunityList:
+					case n.Calendar:
+					case n.Custom:
+					case n.IdCard:
+					case n.PostFlair:
 						return e.shortName;
 					default:
 						return e.kind
 				}
 			}
-			var q;
+			var W, K, $, z;
 			! function(e) {
 				e[e.Pending = 0] = "Pending", e[e.Complete = 1] = "Complete", e[e.Failed = 2] = "Failed"
-			}(q || (q = {}))
+			}(W || (W = {})),
+			function(e) {
+				e.Button = "ButtonWidget", e.Calendar = "CalendarWidget", e.CommunityList = "CommunityListWidget", e.Custom = "CustomWidget", e.IdCard = "IdCardWidget", e.Image = "ImageWidget", e.Moderators = "ModeratorWidget", e.PostFlair = "PostFlairWidget", e.SubredditRules = "SubredditRulesWidget", e.TextArea = "TextAreaWidget"
+			}(K || (K = {})),
+			function(e) {
+				e.Menu = "MenuWidget"
+			}($ || ($ = {})),
+			function(e) {
+				e.Text = "TEXT", e.Image = "IMAGE"
+			}(z || (z = {}))
 		},
 		"./src/reddit/reducers/features/categories/index.ts": function(e, t, i) {
 			"use strict";
@@ -29938,7 +29968,7 @@
 				}) => {
 					if (!t) return c;
 					return e.subreddits.byCategory[t] || c
-				}, u.X, e => e.subreddits.about, (e, t, i) => e.map(e => Object(l.i)(t[e], i[e]))),
+				}, u.X, e => e.subreddits.about, (e, t, i) => e.map(e => Object(l.n)(t[e], i[e]))),
 				S = (Object(s.a)(E, u.X, (e, t) => 0 === e.length ? c : e.map(e => t[e])), () => Object(o.a)(Object(s.a)(E, u.X, (e, t) => 0 === e.length ? c : e.map(e => {
 					const i = t[e];
 					return i ? i.name : ""
@@ -31569,7 +31599,7 @@
 					}, []) || [], ...i && i.map(t => Object(c.p)(e, {
 						profileId: t
 					})) || []].filter(e => !!e).map(t => {
-						const i = Object(u.j)(t);
+						const i = Object(u.o)(t);
 						return i.isSubscribed = Object(_.cb)(e, {
 							identifier: {
 								type: i.type,
@@ -31590,7 +31620,7 @@
 				},
 				O = Object(d.a)((e, {
 					multireddit: t
-				}) => Object(a.f)(t) && e.multireddits.recommendations[t.url] && e.multireddits.recommendations[t.url].length ? e.multireddits.recommendations[t.url].map(t => Object(u.i)(e.subreddits.models[t])) : [])
+				}) => Object(a.f)(t) && e.multireddits.recommendations[t.url] && e.multireddits.recommendations[t.url].length ? e.multireddits.recommendations[t.url].map(t => Object(u.n)(e.subreddits.models[t])) : [])
 		},
 		"./src/reddit/selectors/notificationBanner.ts": function(e, t, i) {
 			"use strict";
@@ -33063,7 +33093,7 @@
 					const i = U(e, {
 						postId: t
 					});
-					if (i) return Object(u.h)(i) ? Object(c.h)(i) : Object(c.i)(i)
+					if (i) return Object(u.h)(i) ? Object(c.m)(i) : Object(c.n)(i)
 				},
 				V = (e, {
 					postId: t
@@ -34113,7 +34143,10 @@
 				}) => e.subreddits.rules[t] ? e.subreddits.rules[t].rules : b,
 				Z = Object(o.a)((e, {
 					subredditId: t
-				}) => e.subreddits.rules[t] ? e.subreddits.rules[t].rules.map(e => e.shortName) : b),
+				}) => {
+					var i, n;
+					return (null === (n = null === (i = e.subreddits) || void 0 === i ? void 0 : i.rules[t]) || void 0 === n ? void 0 : n.rules) ? e.subreddits.rules[t].rules.map(e => e.shortName) : b
+				}),
 				ee = (e, {
 					subredditId: t
 				}) => !!e.subreddits.rules[t],
@@ -34164,7 +34197,7 @@
 					const t = ae(e),
 						i = e.subreddits.models;
 					return t && t.length ? t.map(e => i[e]) : []
-				}), Object(o.a)((e, t) => w(e, t).map(e => Object(_.i)(e))), e => e.subreddits.api.create.pending),
+				}), Object(o.a)((e, t) => w(e, t).map(e => Object(_.n)(e))), e => e.subreddits.api.create.pending),
 				ue = e => e.subreddits.api.create.initialCrosspost,
 				ce = e => e.subreddits.api.create.error.apiError,
 				_e = (e, {
@@ -34177,7 +34210,7 @@
 				pe = Object(o.a)(Object(n.a)(w, me, (e, t) => {
 					const i = [];
 					return e.forEach(e => {
-						e.type === u.f.Public && i.push(Object(_.i)(e, t[e.id]))
+						e.type === u.f.Public && i.push(Object(_.n)(e, t[e.id]))
 					}), i
 				})),
 				he = (e, t) => e.subreddits.models[t].url,
@@ -36658,7 +36691,7 @@
 			e.exports = JSON.parse('{"id":"8d0e34deaa32"}')
 		},
 		"./src/redditGQL/operations/TopicBySlug.json": function(e) {
-			e.exports = JSON.parse('{"id":"7f3fd450b11d"}')
+			e.exports = JSON.parse('{"id":"63a94dad3f85"}')
 		},
 		"./src/redditGQL/operations/UpdatePostFollowState.json": function(e) {
 			e.exports = JSON.parse('{"id":"6491fda8f22b"}')
@@ -40978,4 +41011,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.11d3dc852beead2071a1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.0ca6ade860bd9c325f51.js.map

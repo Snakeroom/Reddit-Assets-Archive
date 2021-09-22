@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.2a7d63960ea6eb6fb471.js
-// Retrieved at 9/22/2021, 11:50:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.1090f9fa710dd926e9ac.js
+// Retrieved at 9/22/2021, 1:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -2554,7 +2554,7 @@
 					}, _)));
 					const S = !k && !j;
 					let I;
-					return O && (I = Object(G.h)(O) ? Object(Z.h)(O) : Object(Z.i)(O)), a.a.createElement(U.a, {
+					return O && (I = Object(G.h)(O) ? Object(Z.m)(O) : Object(Z.n)(O)), a.a.createElement(U.a, {
 						className: Object(c.a)(ee.a.container, Y.a.largeAndMediumActiveStyles, Y.a.largeAndMediumPostStyles, X.a.postContainer, Object(K.a)(this.props), s),
 						post: p,
 						onClick: u,
@@ -9561,7 +9561,7 @@
 					onMouseDown: s,
 					...r
 				}) => a.a.createElement("li", {
-					className: Object(c.a)(E.a.StyledFlair, e === g.d.Cloud && E.a.cloudDisplay, {
+					className: Object(c.a)(E.a.StyledFlair, e === g.g.Cloud && E.a.cloudDisplay, {
 						[E.a.flairFilter]: t,
 						[E.a["m-selected"]]: r.isSelected
 					}),
@@ -11615,8 +11615,8 @@
 				l = Object(r.a)((e, t) => t, i, (e, t) => c(e, t))
 		},
 		"./src/redditGQL/operations/SubredditGeoRecommendationViaFocusVertical.json": function(e) {
-			e.exports = JSON.parse('{"id":"000672d44a2b"}')
+			e.exports = JSON.parse('{"id":"d5b9525ce2ca"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.2a7d63960ea6eb6fb471.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.1090f9fa710dd926e9ac.js.map
