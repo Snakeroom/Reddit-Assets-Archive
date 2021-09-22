@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.098a51d35e7fe92b113a.js
-// Retrieved at 9/21/2021, 7:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.265b3abb4caa8812f5f7.js
+// Retrieved at 9/22/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~Subreddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, r) {
@@ -3002,13 +3002,13 @@
 		},
 		"./src/reddit/helpers/trackers/powerups.ts": function(e, t, r) {
 			"use strict";
-			r.d(t, "A", (function() {
+			r.d(t, "B", (function() {
 				return s
 			})), r.d(t, "r", (function() {
 				return c
 			})), r.d(t, "t", (function() {
 				return a
-			})), r.d(t, "B", (function() {
+			})), r.d(t, "C", (function() {
 				return d
 			})), r.d(t, "j", (function() {
 				return u
@@ -3024,40 +3024,42 @@
 				return b
 			})), r.d(t, "u", (function() {
 				return g
-			})), r.d(t, "y", (function() {
+			})), r.d(t, "z", (function() {
 				return h
 			})), r.d(t, "v", (function() {
 				return I
-			})), r.d(t, "h", (function() {
+			})), r.d(t, "y", (function() {
 				return O
-			})), r.d(t, "g", (function() {
+			})), r.d(t, "h", (function() {
 				return v
-			})), r.d(t, "i", (function() {
+			})), r.d(t, "g", (function() {
 				return y
-			})), r.d(t, "q", (function() {
+			})), r.d(t, "i", (function() {
 				return j
-			})), r.d(t, "o", (function() {
+			})), r.d(t, "q", (function() {
 				return w
-			})), r.d(t, "p", (function() {
+			})), r.d(t, "o", (function() {
 				return k
-			})), r.d(t, "f", (function() {
+			})), r.d(t, "p", (function() {
 				return S
-			})), r.d(t, "w", (function() {
+			})), r.d(t, "f", (function() {
 				return E
-			})), r.d(t, "k", (function() {
+			})), r.d(t, "w", (function() {
 				return x
-			})), r.d(t, "a", (function() {
+			})), r.d(t, "k", (function() {
 				return T
-			})), r.d(t, "s", (function() {
+			})), r.d(t, "a", (function() {
 				return C
-			})), r.d(t, "d", (function() {
+			})), r.d(t, "s", (function() {
 				return P
-			})), r.d(t, "l", (function() {
+			})), r.d(t, "d", (function() {
 				return D
-			})), r.d(t, "x", (function() {
+			})), r.d(t, "l", (function() {
 				return N
-			})), r.d(t, "z", (function() {
+			})), r.d(t, "x", (function() {
 				return L
+			})), r.d(t, "A", (function() {
+				return U
 			}));
 			var n = r("./src/reddit/helpers/correlationIdTracker.ts"),
 				o = r("./src/reddit/selectors/telemetry.ts");
@@ -3161,7 +3163,13 @@
 					noun: "unlock_achievements",
 					...i(e)
 				}),
-				O = e => t => ({
+				O = () => e => ({
+					source: "powerups_flair_picker",
+					action: "click",
+					noun: "powerups_cta",
+					...i(e)
+				}),
+				v = e => t => ({
 					source: "powerups_modal",
 					action: "view",
 					noun: "marketing_step",
@@ -3170,7 +3178,7 @@
 						reason: e
 					})
 				}),
-				v = e => t => ({
+				y = e => t => ({
 					source: "powerups",
 					action: "click",
 					noun: "benefit",
@@ -3180,13 +3188,13 @@
 						benefit: e
 					}
 				}),
-				y = (e, t) => r => ({
+				j = (e, t) => r => ({
 					source: "powerups_modal",
 					action: "view",
 					noun: "purchase_step",
 					...i(r, e, t)
 				}),
-				j = () => e => ({
+				w = () => e => ({
 					source: "global",
 					action: "view",
 					noun: "screen",
@@ -3195,13 +3203,13 @@
 						pageType: "powerups_premium_upsell"
 					})
 				}),
-				w = () => e => ({
+				k = () => e => ({
 					source: "powerups_premium_upsell",
 					action: "click",
 					noun: "powerups_price",
 					...i(e)
 				}),
-				k = e => t => ({
+				S = e => t => ({
 					source: "powerups",
 					action: "click",
 					noun: "premium",
@@ -3213,7 +3221,7 @@
 						subscriptionType: e
 					}
 				}),
-				S = (e, t) => r => ({
+				E = (e, t) => r => ({
 					source: "global",
 					action: "view",
 					noun: "screen",
@@ -3222,20 +3230,20 @@
 						pageType: "community_heroes_modal"
 					}
 				}),
-				E = () => e => ({
+				x = () => e => ({
 					source: "powerups",
 					action: "click",
 					noun: "unlock_emojis",
 					...i(e),
 					correlationId: Object(n.d)(n.a.PowerupsFlow, !0)
 				}),
-				x = () => e => ({
+				T = () => e => ({
 					source: "meta",
 					action: "open",
 					noun: "emote_picker",
 					...i(e)
 				}),
-				T = (e, t) => r => ({
+				C = (e, t) => r => ({
 					source: t,
 					action: "click",
 					noun: "add_custom_emojis",
@@ -3245,7 +3253,7 @@
 						emojiCount: e
 					}
 				}),
-				C = (e, t) => r => ({
+				P = (e, t) => r => ({
 					source: t,
 					action: "save",
 					noun: "custom_emojis",
@@ -3255,7 +3263,7 @@
 						emojiCount: e
 					}
 				}),
-				P = (e = 1, t) => r => ({
+				D = (e = 1, t) => r => ({
 					source: t,
 					action: "delete",
 					noun: "custom_emojis",
@@ -3265,7 +3273,7 @@
 						emojiCount: e
 					}
 				}),
-				D = (e, t) => r => ({
+				N = (e, t) => r => ({
 					source: "meta",
 					action: "open",
 					noun: "gif_tooltip",
@@ -3273,14 +3281,14 @@
 					...i(r),
 					correlationId: e
 				}),
-				N = () => e => ({
+				L = () => e => ({
 					source: "powerups",
 					action: "click",
 					noun: "unlock_gifs",
 					...i(e),
 					correlationId: Object(n.d)(n.a.PowerupsFlow, !0)
 				}),
-				L = (e, t, r) => n => ({
+				U = (e, t, r) => n => ({
 					source: "powerups_settings",
 					action: "click",
 					noun: e,
@@ -4593,33 +4601,33 @@
 				u = e => {
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: i.jd
+						experimentName: i.kd
 					});
-					return t === i.kd.UIChangesOnly || t === i.kd.RedditRecommendation || t === i.kd.OpenAI || t === i.kd.FilteredOpenAI
+					return t === i.ld.UIChangesOnly || t === i.ld.RedditRecommendation || t === i.ld.OpenAI || t === i.ld.FilteredOpenAI
 				},
 				f = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: i.jd
-					}) === i.kd.UIChangesOnly
+						experimentName: i.kd
+					}) === i.ld.UIChangesOnly
 				},
 				p = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: i.jd
-					}) === i.kd.RedditRecommendation
+						experimentName: i.kd
+					}) === i.ld.RedditRecommendation
 				},
 				_ = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: i.jd
-					}) === i.kd.OpenAI
+						experimentName: i.kd
+					}) === i.ld.OpenAI
 				},
 				m = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: i.jd
-					}) === i.kd.FilteredOpenAI
+						experimentName: i.kd
+					}) === i.ld.FilteredOpenAI
 				},
 				b = e => e.creations.subredditRec.api.pending,
 				g = e => e.creations.subredditRec.api.error,
@@ -4694,9 +4702,9 @@
 					experimentName: o.Gb,
 					experimentEligibilitySelector: e => a(e, t)
 				}), e => e),
-				d = e => e === o.he.NoCommunityWidgets,
-				u = e => e === o.he.NoRulesModerators,
-				f = e => e === o.he.RelatedPostsDu
+				d = e => e === o.ie.NoCommunityWidgets,
+				u = e => e === o.ie.NoRulesModerators,
+				f = e => e === o.ie.RelatedPostsDu
 		},
 		"./src/reddit/selectors/tooltip.ts": function(e, t, r) {
 			"use strict";
@@ -4710,4 +4718,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.098a51d35e7fe92b113a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.265b3abb4caa8812f5f7.js.map

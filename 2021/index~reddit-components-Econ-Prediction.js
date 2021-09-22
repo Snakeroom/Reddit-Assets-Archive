@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.9a1cd1f9658522996c17.js
-// Retrieved at 9/21/2021, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.fa48ff0dbb7a127daf74.js
+// Retrieved at 9/22/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index~reddit-components-Econ-Prediction"], {
 		"./node_modules/lodash/_LazyWrapper.js": function(a, i, r) {
@@ -825,7 +825,7 @@
 						n = Object(B.j)(x, {
 							subredditId: k
 						}),
-						o = Object(y.n)(x);
+						o = Object(y.o)(x);
 					if (n) return Object(B.f)(x, {
 						subredditId: k
 					});
@@ -1387,7 +1387,7 @@
 					userSelection: V,
 					predictionStatus: b,
 					voteUpdatesRemained: F
-				} = a, g = Object(n.e)(i => Boolean((null == a ? void 0 : a.userSelection) && !(null == a ? void 0 : a.resolvedOptionId) && Object(f.u)(i))), v = Object(n.e)(u.qb), P = Object(n.e)(u.K), [S, T] = Object(x.useState)(!1), _ = s === v, O = m < Date.now(), j = O && _ && !A, C = b === d.b.Cancelled || b === d.b.CancelInProgress;
+				} = a, g = Object(n.e)(i => Boolean((null == a ? void 0 : a.userSelection) && !(null == a ? void 0 : a.resolvedOptionId) && Object(f.v)(i))), v = Object(n.e)(u.qb), P = Object(n.e)(u.K), [S, T] = Object(x.useState)(!1), _ = s === v, O = m < Date.now(), j = O && _ && !A, C = b === d.b.Cancelled || b === d.b.CancelInProgress;
 				return k.a.createElement("div", E({
 					className: Object(t.a)(G.a.poll, o)
 				}, e), k.a.createElement(l, null, a.title), k.a.createElement("div", {
@@ -2068,7 +2068,7 @@
 			}) => {
 				const e = Object(k.d)(),
 					s = Object(A.a)(),
-					m = Object(k.e)(P.t) ? _.a : j.a,
+					m = Object(k.e)(P.u) ? _.a : j.a,
 					l = Object(k.e)(S.t),
 					[c, p] = Object(t.useState)(!1),
 					h = o ? C._("You've already changed your answer twice", null, {
@@ -2237,13 +2237,13 @@
 			}) => {
 				const y = Object(k.d)(),
 					G = Object(s.a)(),
-					E = Object(k.e)(d.t) ? F.a : v.a,
+					E = Object(k.e)(d.u) ? F.a : v.a,
 					[A, B] = Object(t.useState)(!1),
 					[D, b] = Object(e.a)("hasSeenPredictionSneakPeek", !1),
 					g = !!c,
 					S = r && !l,
 					T = Object(k.e)(f.t);
-				if (!Object(k.e)(a => !i && !S && g && Object(d.r)(a))) return null;
+				if (!Object(k.e)(a => !i && !S && g && Object(d.s)(a))) return null;
 				const _ = () => {
 					D || b(!0), B(!1)
 				};
@@ -2381,7 +2381,7 @@
 				isShowingHint: V,
 				...b
 			}, F) => {
-				const g = Object(k.e)(l.t),
+				const g = Object(k.e)(l.u),
 					v = !!E,
 					P = G === y.id,
 					S = t || !!B || !!G || r,
@@ -4059,4 +4059,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.9a1cd1f9658522996c17.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.fa48ff0dbb7a127daf74.js.map

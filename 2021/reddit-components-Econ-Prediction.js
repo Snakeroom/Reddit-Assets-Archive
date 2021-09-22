@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.bcbfff78bd207c21cb05.js
-// Retrieved at 9/21/2021, 10:00:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.ea22c18775d1297513eb.js
+// Retrieved at 9/22/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction"], {
 		"./src/lib/constants/specialMembership.ts": function(e, t, n) {
@@ -490,7 +490,7 @@
 					const n = Object(u.g)(t, {
 						postId: e.id
 					});
-					return Boolean((null == n ? void 0 : n.userSelection) && !(null == n ? void 0 : n.resolvedOptionId) && Object(l.u)(t))
+					return Boolean((null == n ? void 0 : n.userSelection) && !(null == n ? void 0 : n.resolvedOptionId) && Object(l.v)(t))
 				}), x = Object(r.e)(p.qb), C = Object(r.e)(p.K), [y, S] = Object(s.useState)(!1), I = m === x, k = b < Date.now(), j = k && I && !E, N = P === d.b.Cancelled || P === d.b.CancelInProgress;
 				return o.a.createElement("div", {
 					className: U.a.poll
@@ -535,7 +535,7 @@
 				post: e,
 				prediction: t
 			}) => {
-				const [n, i] = Object(s.useState)(!1), c = Object(r.e)(l.t), a = Object(r.e)(p.qb), {
+				const [n, i] = Object(s.useState)(!1), c = Object(r.e)(l.u), a = Object(r.e)(p.qb), {
 					isLoading: u,
 					selectedVoteOption: m,
 					setVoteOptionId: b,
@@ -611,7 +611,7 @@
 					upvote: N
 				} = function(e) {
 					const t = Object(r.d)(),
-						n = Object(r.e)(l.p),
+						n = Object(r.e)(l.q),
 						{
 							startDelayedUpvoteAnimation: s
 						} = Object(P.a)(e.id);
@@ -857,7 +857,7 @@
 					totalStakeAmount: i,
 					tournamentId: a,
 					totalVoters: u
-				} = e, m = Object(r.e)(l.t), b = Boolean(a), p = !b;
+				} = e, m = Object(r.e)(l.u), b = Boolean(a), p = !b;
 				return n === d.b.Cancelled || n === d.b.CancelInProgress ? o.a.createElement("div", {
 					className: Object(c.a)(me.a.container, {
 						[me.a.v2]: m
@@ -958,7 +958,7 @@
 					post: b.H,
 					subredditOrProfile: b.U,
 					userId: p.qb,
-					isPredictionsTournamentPostV2Enabled: l.t
+					isPredictionsTournamentPostV2Enabled: l.u
 				}),
 				Me = Object(a.u)({
 					isCommentsPage: a.x,
@@ -1818,4 +1818,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.bcbfff78bd207c21cb05.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.ea22c18775d1297513eb.js.map

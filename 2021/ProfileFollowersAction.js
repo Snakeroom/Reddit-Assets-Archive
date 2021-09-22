@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileFollowersAction.178d8410db61ccafa3ed.js
-// Retrieved at 9/21/2021, 7:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileFollowersAction.ce2df3da8562acc34d0a.js
+// Retrieved at 9/22/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileFollowersAction"], {
 		"./src/lib/makeOverviewConversationsItemKey/index.ts": function(e, t, s) {
@@ -13,9 +13,9 @@
 			s.d(t, "b", (function() {
 				return o
 			})), s.d(t, "a", (function() {
-				return r
-			})), s.d(t, "e", (function() {
 				return i
+			})), s.d(t, "e", (function() {
+				return r
 			})), s.d(t, "d", (function() {
 				return n
 			})), s.d(t, "c", (function() {
@@ -24,8 +24,8 @@
 				return l
 			}));
 			const o = "PROFILE_FOLLOWERS_PAGE_LOADED",
-				r = "MORE_PROFILE_FOLLOWERS_LOADED",
-				i = "PROFILE_FOLLOWERS_SEARCH_LOADED",
+				i = "MORE_PROFILE_FOLLOWERS_LOADED",
+				r = "PROFILE_FOLLOWERS_SEARCH_LOADED",
 				n = "PROFILE_FOLLOWERS_REQUEST_PENDING",
 				d = "PROFILE_FOLLOWERS_REQUEST_FAILED",
 				l = "FOLLOW_USER_SUCCESS"
@@ -55,8 +55,8 @@
 			}));
 			s("./node_modules/core-js/modules/web.dom.iterable.js");
 			var o = s("./node_modules/fbt/lib/FbtPublic.js"),
-				r = s("./node_modules/react-router-redux/es/index.js"),
-				i = s("./src/lib/constants/index.ts"),
+				i = s("./node_modules/react-router-redux/es/index.js"),
+				r = s("./src/lib/constants/index.ts"),
 				n = s("./src/lib/makeActionCreator/index.ts"),
 				d = (s("./src/reddit/actions/pages/profileOverview/index.ts"), s("./src/reddit/actions/toaster.ts")),
 				l = s("./src/lib/makeGqlRequest/index.ts"),
@@ -67,16 +67,16 @@
 					if (!e.identity || !e.identity.followedByRedditorsInfo) return;
 					const o = {},
 						{
-							followedByRedditorsInfo: r,
-							redditor: i
+							followedByRedditorsInfo: i,
+							redditor: r
 						} = e.identity,
 						{
 							moderatedSubreddits: n
-						} = i,
+						} = r,
 						{
 							edges: d,
 							pageInfo: l
-						} = r;
+						} = i;
 					if (!d) return;
 					o.pageInfo = {
 						...l,
@@ -117,23 +117,23 @@
 				k = e => async (t, s, {
 					gqlContext: o
 				}) => {
-					var i;
+					var r;
 					if (!Object(y.a)(s())) {
 						const {
 							profileName: s
 						} = e.params;
-						return void t(Object(r.c)(`/user/${s}/`))
+						return void t(Object(i.c)(`/user/${s}/`))
 					}
 					const n = [];
-					(null === (i = Object(v.a)(s())) || void 0 === i ? void 0 : i.length) || n.push(t(I(j))), await Promise.all(n)
+					(null === (r = Object(v.a)(s())) || void 0 === r ? void 0 : r.length) || n.push(t(I(j))), await Promise.all(n)
 				}, I = e => async (t, s, {
 					gqlContext: o
 				}) => {
-					const r = !s().user.account,
-						i = {
+					const i = !s().user.account,
+						r = {
 							...j,
 							...e,
-							includeIdentity: r
+							includeIdentity: i
 						};
 					t(O());
 					const n = await (async (e, t) => {
@@ -141,7 +141,7 @@
 							...a,
 							variables: t
 						})
-					})(o(), i);
+					})(o(), r);
 					if (n.ok && n.body) {
 						const {
 							data: s
@@ -150,11 +150,11 @@
 						(null == e ? void 0 : e.searchQuery) ? t(w(o)): (null == e ? void 0 : e.after) ? t(g(o)) : (null == e ? void 0 : e.after) || (null == e ? void 0 : e.searchQuery) || t(h(o))
 					}
 					n.ok || (t(Object(d.d)()), t(C()))
-				}, _ = Object(n.a)(m.f), S = (e, t) => async (s, r, {
+				}, _ = Object(n.a)(m.f), S = (e, t) => async (s, i, {
 					apiContext: n
 				}) => {
 					var l, a;
-					const u = null === (a = null === (l = r().pages) || void 0 === l ? void 0 : l.followers) || void 0 === a ? void 0 : a.models[e];
+					const u = null === (a = null === (l = i().pages) || void 0 === l ? void 0 : l.followers) || void 0 === a ? void 0 : a.models[e];
 					if (!u) return;
 					s(_({
 						userId: e,
@@ -162,30 +162,30 @@
 					}));
 					const m = u.name;
 					if ((await Object(c.c)(n(), {
-							subredditNames: [`${i.fc}${u.name}`],
+							subredditNames: [`${r.fc}${u.name}`],
 							subscribe: t
 						})).ok) {
 						s(_({
 							userId: e,
 							isFollowed: t
 						}));
-						const r = o.fbt._("Sucсessfully followed {userName}", [o.fbt._param("userName", m)], {
+						const i = o.fbt._("Sucсessfully followed {userName}", [o.fbt._param("userName", m)], {
 								hk: "1AYBqL"
 							}),
-							i = o.fbt._("Sucсessfully unfollowed {userName}", [o.fbt._param("userName", m)], {
+							r = o.fbt._("Sucсessfully unfollowed {userName}", [o.fbt._param("userName", m)], {
 								hk: "4F2yCK"
 							});
 						s(Object(d.f)({
-							text: t ? r : i
+							text: t ? i : r
 						}))
 					} else {
-						const r = o.fbt._("Something went wrong", null, {
+						const i = o.fbt._("Something went wrong", null, {
 							hk: "3i6szH"
 						});
 						s(_({
 							userId: e,
 							isFollowed: !t
-						})), s(Object(d.f)(Object(d.e)(r, p.b.Error)))
+						})), s(Object(d.f)(Object(d.e)(i, p.b.Error)))
 					}
 				}
 		},
@@ -212,8 +212,8 @@
 			}));
 			s("./node_modules/core-js/modules/web.dom.iterable.js");
 			var o = s("./node_modules/lodash/pick.js"),
-				r = s.n(o),
-				i = s("./src/reddit/actions/moderatingSubreddits.ts"),
+				i = s.n(o),
+				r = s("./src/reddit/actions/moderatingSubreddits.ts"),
 				n = s("./src/reddit/actions/pages/profileShared.ts"),
 				d = s("./src/reddit/actions/subreddit.ts"),
 				l = s("./src/reddit/endpoints/page/profileOverviewPage.ts"),
@@ -320,11 +320,11 @@
 						const {
 							key: s,
 							fetchedToken: o
-						} = t.payload, r = e[s];
+						} = t.payload, i = e[s];
 						return {
 							...e,
 							[s]: {
-								...r,
+								...i,
 								[o]: !0
 							}
 						}
@@ -341,10 +341,10 @@
 							const {
 								key: s,
 								overviewIds: o
-							} = t.payload, r = e[s] || [];
+							} = t.payload, i = e[s] || [];
 							return {
 								...e,
-								[s]: [...r, ...o]
+								[s]: [...i, ...o]
 							}
 						}
 						default:
@@ -360,13 +360,13 @@
 							const {
 								key: s,
 								dist: o,
-								token: r
+								token: i
 							} = t.payload;
-							return r ? {
+							return i ? {
 								...e,
 								[s]: {
 									dist: o,
-									token: r
+									token: i
 								}
 							} : Object(W.a)(e, s)
 						}
@@ -496,7 +496,7 @@
 					pending: te
 				});
 			const oe = {};
-			var re = (e = oe, t) => {
+			var ie = (e = oe, t) => {
 					switch (t.type) {
 						case x.e:
 						case Y.b:
@@ -508,9 +508,9 @@
 							return e
 					}
 				},
-				ie = Object(T.c)({
+				re = Object(T.c)({
 					api: se,
-					models: re
+					models: ie
 				}),
 				ne = s("./node_modules/lodash/mapValues.js"),
 				de = s.n(ne),
@@ -532,22 +532,22 @@
 			}
 			const pe = (e, t, s) => {
 				const o = {};
-				for (const r in t) {
-					const e = t[r],
+				for (const i in t) {
+					const e = t[i],
 						s = e.postId;
 					o.hasOwnProperty(s) ? o[s] = {
 						...o[s],
-						[r]: e
+						[i]: e
 					} : o[s] = {
-						[r]: e
+						[i]: e
 					}
 				}
-				for (const r in s) {
-					const e = s[r],
+				for (const i in s) {
+					const e = s[i],
 						t = e.postId;
 					o.hasOwnProperty(t) ? o[t] = {
 						...o[t],
-						[r]: e
+						[i]: e
 					} : o[t] = {
 						[t]: e
 					}
@@ -561,11 +561,11 @@
 						const {
 							comments: s,
 							extraComments: o,
-							postIds: r,
-							profileName: i
-						} = t.payload, n = pe(r, s, o), d = {};
-						for (const e of r) {
-							d[Object(le.a)(e, i)] = n.hasOwnProperty(e) ? ue(n[e]) : {}
+							postIds: i,
+							profileName: r
+						} = t.payload, n = pe(i, s, o), d = {};
+						for (const e of i) {
+							d[Object(le.a)(e, r)] = n.hasOwnProperty(e) ? ue(n[e]) : {}
 						}
 						return {
 							...e,
@@ -576,17 +576,17 @@
 						const {
 							comments: s,
 							commentLists: o,
-							extraComments: r,
-							extraCommentsId: i,
+							extraComments: i,
+							extraCommentsId: r,
 							postIds: n,
 							profileName: d
 						} = t.payload;
 						if (0 === n.length) {
-							const t = Object.keys(e).find(t => void 0 !== e[t][i]);
+							const t = Object.keys(e).find(t => void 0 !== e[t][r]);
 							if (!t) return e;
 							const s = {
 									...e[t]
-								} [i].prev,
+								} [r].prev,
 								o = s && s.id || "";
 							return {
 								...e,
@@ -600,12 +600,12 @@
 							}
 						}
 						const l = n[0],
-							a = ue(pe(n, s, r)[l]),
+							a = ue(pe(n, s, i)[l]),
 							c = Object(le.a)(l, d),
 							u = {
 								...e[c]
 							},
-							p = u[i].prev,
+							p = u[r].prev,
 							m = p && p.id || "",
 							b = o[l].head,
 							f = b && b.id || "",
@@ -642,14 +642,14 @@
 						const {
 							commentLists: s,
 							postIds: o,
-							profileName: r
-						} = t.payload, i = {};
+							profileName: i
+						} = t.payload, r = {};
 						for (const e of o) {
-							i[Object(le.a)(e, r)] = s[e] && s[e].head ? s[e].head.id : null
+							r[Object(le.a)(e, i)] = s[e] && s[e].head ? s[e].head.id : null
 						}
 						return {
 							...e,
-							...i
+							...r
 						}
 					}
 					default:
@@ -664,13 +664,13 @@
 							const {
 								postIds: s,
 								profileName: o
-							} = t.payload, r = {};
+							} = t.payload, i = {};
 							for (const e of s) {
-								r[Object(le.a)(e, o)] = e
+								i[Object(le.a)(e, o)] = e
 							}
 							return {
 								...e,
-								...r
+								...i
 							}
 						}
 						default:
@@ -679,7 +679,7 @@
 				},
 				he = Object(T.c)({
 					api: $,
-					extraComments: ie,
+					extraComments: re,
 					keyToCommentThreadLinkSets: me,
 					keyToHeadCommentId: fe,
 					keyToPostId: ve
@@ -699,8 +699,8 @@
 				je = Object(v.a)(x.c),
 				ke = Object(v.a)(x.b),
 				Ie = Object(v.a)(x.a),
-				_e = (e, t, s, o) => async (o, r, i) => {
-					const n = r(),
+				_e = (e, t, s, o) => async (o, i, r) => {
+					const n = i(),
 						d = !!n.listings.postOrder.ids[e],
 						a = !!Object(m.c)(n, {
 							listingKey: e
@@ -711,7 +711,7 @@
 					o(we({
 						key: e
 					}));
-					const c = await Object(R.a)("profile", () => Object(l.b)(i.apiContext(), t, s)),
+					const c = await Object(R.a)("profile", () => Object(l.b)(r.apiContext(), t, s)),
 						u = c.body,
 						{
 							pinned: p,
@@ -725,7 +725,7 @@
 							...u,
 							postIds: f
 						}));
-						const s = Object(b.m)(r(), t);
+						const s = Object(b.m)(i(), t);
 						o(Object(C.h)({
 							profileId: s,
 							pinned: p
@@ -739,8 +739,8 @@
 					})), c.body.reason === _.a.DeletedProfile && o(Object(g.p)({
 						profileName: t
 					})), o(Object(j.m)(c.status))
-				}, Se = (e, t, s, o) => async (o, r, i) => {
-					const n = r(),
+				}, Se = (e, t, s, o) => async (o, i, r) => {
+					const n = i(),
 						d = !!Object(f.f)(n, {
 							listingKey: e
 						}).length,
@@ -753,7 +753,7 @@
 					o(je({
 						key: e
 					}));
-					const c = await Object(R.a)("profile", () => Object(l.a)(i.apiContext(), t, s)),
+					const c = await Object(R.a)("profile", () => Object(l.a)(r.apiContext(), t, s)),
 						u = c.body,
 						{
 							pinned: p
@@ -764,7 +764,7 @@
 							meta: n.meta,
 							...u
 						}));
-						const s = Object(b.m)(r(), t);
+						const s = Object(b.m)(i(), t);
 						o(Object(C.h)({
 							profileId: s,
 							pinned: p
@@ -792,7 +792,7 @@
 					const _ = c.e[Object(p.Q)(s(), {})],
 						R = g.toLowerCase(),
 						x = {
-							...r()(e.queryParams, u.l),
+							...i()(e.queryParams, u.l),
 							sort: f,
 							layout: _,
 							t: v
@@ -805,7 +805,7 @@
 						const o = Object(S.a)(R, a.tb, f, e.queryParams);
 						s().listings.postOrder.ids[o] && !s().listings.postOrder.api.error[o] ? C = !0 : F.push(t(_e(o, R, x, !0)))
 					}
-					if (F.push(t(Object(i.b)())), await Promise.all(F), C) return;
+					if (F.push(t(Object(r.b)())), await Promise.all(F), C) return;
 					const T = s();
 					if (!T.platform.currentPage) return;
 					if (200 !== T.platform.currentPage.status) return;
@@ -830,17 +830,17 @@
 				return u
 			}));
 			var o = s("./src/config.ts"),
-				r = s("./src/lib/addAllowQuarantinedParam/index.ts"),
-				i = s("./src/lib/constants/index.ts"),
+				i = s("./src/lib/addAllowQuarantinedParam/index.ts"),
+				r = s("./src/lib/constants/index.ts"),
 				n = s("./src/lib/makeApiRequest/index.ts"),
 				d = s("./src/reddit/helpers/addRedesignIdentifier/index.ts"),
 				l = s("./src/reddit/models/RichTextJson/addEmotesAsImagesParam.ts"),
 				a = s("./src/reddit/models/RichTextJson/addRTJParam.ts");
 			const c = (e, t, s) => Object(n.a)(e, {
 					data: s,
-					endpoint: Object(d.a)(Object(r.a)(Object(l.a)(Object(a.a)(`${o.a.gatewayUrl}/desktopapi/v1/user/${t}/conversations`)))),
+					endpoint: Object(d.a)(Object(i.a)(Object(l.a)(Object(a.a)(`${o.a.gatewayUrl}/desktopapi/v1/user/${t}/conversations`)))),
 					traceRequestName: "get_profile_conversations",
-					method: i.ib.GET
+					method: r.ib.GET
 				}).then(e => "pinned" in e.body ? e : "postIds" in e.body ? {
 					...e,
 					body: {
@@ -850,8 +850,8 @@
 				} : e),
 				u = (e, t, s) => Object(n.a)(e, {
 					data: s,
-					endpoint: Object(d.a)(Object(r.a)(Object(a.a)(`${o.a.gatewayUrl}/desktopapi/v1/user/${t}/overview`))),
-					method: i.ib.GET
+					endpoint: Object(d.a)(Object(i.a)(Object(a.a)(`${o.a.gatewayUrl}/desktopapi/v1/user/${t}/overview`))),
+					method: r.ib.GET
 				}).then(e => "pinned" in e.body ? e : "overviewIds" in e.body ? {
 					...e,
 					body: {
@@ -863,29 +863,29 @@
 		"./src/reddit/reducers/pages/followers/index.ts": function(e, t, s) {
 			"use strict";
 			var o = s("./node_modules/redux/es/redux.js"),
-				r = s("./src/reddit/actions/pages/followers/constants.ts");
-			var i = (e = !1, t) => {
+				i = s("./src/reddit/actions/pages/followers/constants.ts");
+			var r = (e = !1, t) => {
 					switch (t.type) {
-						case r.b:
-						case r.e:
-						case r.a:
-						case r.c:
+						case i.b:
+						case i.e:
+						case i.a:
+						case i.c:
 							return !1;
-						case r.d:
+						case i.d:
 							return !0;
 						default:
 							return e
 					}
 				},
 				n = Object(o.c)({
-					pending: i
+					pending: r
 				});
 			const d = {};
 			var l = (e = d, t) => {
 				switch (t.type) {
-					case r.b:
-					case r.a:
-					case r.e: {
+					case i.b:
+					case i.a:
+					case i.e: {
 						const {
 							followers: s
 						} = t.payload;
@@ -894,7 +894,7 @@
 							...s
 						}
 					}
-					case r.f: {
+					case i.f: {
 						const {
 							userId: s,
 							isFollowed: o
@@ -913,7 +913,7 @@
 			};
 			var a = (e = null, t) => {
 				switch (t.type) {
-					case r.b: {
+					case i.b: {
 						const {
 							pageInfo: s
 						} = t.payload;
@@ -926,7 +926,7 @@
 			const c = {};
 			var u = (e = c, t) => {
 				switch (t.type) {
-					case r.e: {
+					case i.e: {
 						const {
 							followers: s
 						} = t.payload;
@@ -939,13 +939,13 @@
 			const p = [];
 			var m = (e = p, t) => {
 				switch (t.type) {
-					case r.b: {
+					case i.b: {
 						const {
 							followerUserIds: s
 						} = t.payload;
 						return s || e
 					}
-					case r.a: {
+					case i.a: {
 						const {
 							followerUserIds: s
 						} = t.payload;
@@ -966,16 +966,16 @@
 		"./src/reddit/selectors/experiments/profileFollowerList.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return i
+				return r
 			}));
 			var o = s("./src/reddit/constants/experiments.ts"),
-				r = s("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const i = Object(r.a)(o.rd)
+				i = s("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
+			const r = Object(i.a)(o.sd)
 		},
 		"./src/reddit/selectors/followers.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return i
+				return r
 			})), s.d(t, "b", (function() {
 				return n
 			})), s.d(t, "e", (function() {
@@ -986,13 +986,13 @@
 				return a
 			}));
 			var o = s("./src/lib/initializeClient/installReducer.ts"),
-				r = s("./src/reddit/reducers/pages/followers/index.ts");
+				i = s("./src/reddit/reducers/pages/followers/index.ts");
 			Object(o.a)({
 				pages: {
-					followers: r.a
+					followers: i.a
 				}
 			});
-			const i = e => {
+			const r = e => {
 					var t, s;
 					return null === (s = null === (t = e.pages) || void 0 === t ? void 0 : t.followers) || void 0 === s ? void 0 : s.userIds
 				},
@@ -1037,8 +1037,8 @@
 			}));
 			s("./node_modules/core-js/modules/web.dom.iterable.js");
 			var o = s("./src/lib/objectSelector/index.ts"),
-				r = s("./src/reddit/models/Flair/index.ts"),
-				i = s("./src/reddit/models/PostCreationForm/index.ts"),
+				i = s("./src/reddit/models/Flair/index.ts"),
+				r = s("./src/reddit/models/PostCreationForm/index.ts"),
 				n = s("./src/reddit/models/Vote/index.ts");
 			const d = {
 				t3_1: {
@@ -1338,10 +1338,10 @@
 					domain: "i.redditmedia.com",
 					events: [],
 					flair: [{
-						type: r.f.Text,
+						type: i.f.Text,
 						text: "hello world"
 					}, {
-						type: r.f.Spoiler,
+						type: i.f.Spoiler,
 						text: "spoiler"
 					}],
 					ignoreReports: !1,
@@ -1434,10 +1434,10 @@
 					domain: "self.listentothis",
 					events: [],
 					flair: [{
-						type: r.f.Text,
+						type: i.f.Text,
 						text: "hello world"
 					}, {
-						type: r.f.Spoiler,
+						type: i.f.Spoiler,
 						text: "spoiler"
 					}],
 					ignoreReports: !1,
@@ -1467,7 +1467,7 @@
 					liveCommentsWebsocket: "wss://reddit.com/live/5",
 					media: {
 						type: "text",
-						rteMode: i.i.RICH_TEXT,
+						rteMode: r.i.RICH_TEXT,
 						markdownContent: "",
 						content: "",
 						obfuscated: null
@@ -1532,10 +1532,10 @@
 					domain: "self.listentothis",
 					events: [],
 					flair: [{
-						type: r.f.Text,
+						type: i.f.Text,
 						text: "hello world"
 					}, {
-						type: r.f.Spoiler,
+						type: i.f.Spoiler,
 						text: "spoiler"
 					}],
 					ignoreReports: !1,
@@ -1565,7 +1565,7 @@
 					liveCommentsWebsocket: "wss://reddit.com/live/6",
 					media: {
 						type: "text",
-						rteMode: i.i.RICH_TEXT,
+						rteMode: r.i.RICH_TEXT,
 						markdownContent: "",
 						content: "",
 						obfuscated: null
@@ -1633,10 +1633,10 @@
 						url: "https://www.reddit.com/i.gif"
 					}],
 					flair: [{
-						type: r.f.Text,
+						type: i.f.Text,
 						text: "hello world"
 					}, {
-						type: r.f.Spoiler,
+						type: i.f.Spoiler,
 						text: "spoiler"
 					}],
 					ignoreReports: !1,
@@ -1666,7 +1666,7 @@
 					liveCommentsWebsocket: "wss://reddit.com/live/6",
 					media: {
 						type: "text",
-						rteMode: i.i.RICH_TEXT,
+						rteMode: r.i.RICH_TEXT,
 						markdownContent: "",
 						content: "",
 						obfuscated: null
@@ -1713,7 +1713,7 @@
 				authorIsBlocked: !0,
 				media: {
 					type: "text",
-					rteMode: i.i.RICH_TEXT,
+					rteMode: r.i.RICH_TEXT,
 					markdownContent: "",
 					content: "This is content in a post.",
 					obfuscated: null
@@ -1774,8 +1774,8 @@
 						o = m(e, {
 							listingKey: t
 						}),
-						r = {};
-					return o.forEach(e => r[e] = s[e]), r
+						i = {};
+					return o.forEach(e => i[e] = s[e]), i
 				}),
 				f = Object(o.a)((e, {
 					listingKey: t
@@ -1784,8 +1784,8 @@
 						o = c(e, {
 							listingKey: t
 						}),
-						r = {};
-					return o.forEach(e => !!Object(a.a)(e) && (r[e] = s[e])), r
+						i = {};
+					return o.forEach(e => !!Object(a.a)(e) && (i[e] = s[e])), i
 				}),
 				y = (e, {
 					listingKey: t
@@ -1805,4 +1805,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersAction.178d8410db61ccafa3ed.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersAction.ce2df3da8562acc34d0a.js.map

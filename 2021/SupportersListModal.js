@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SupportersListModal.5c9b16dbc4c84e7ab72c.js
-// Retrieved at 9/21/2021, 10:00:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SupportersListModal.46eb3abb8b3df6a73b13.js
+// Retrieved at 9/22/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SupportersListModal"], {
 		"./src/reddit/components/Econ/Common/ModalCloseButton/index.m.less": function(e, t, s) {
@@ -135,7 +135,7 @@
 					className: b.a.user,
 					to: `/user/${E}/`,
 					onClick: () => {
-						h && r(Object(d.B)(h.id, h.displayName))
+						h && r(Object(d.C)(h.id, h.displayName))
 					}
 				}, S) : n.a.createElement("div", {
 					className: b.a.user
@@ -615,4 +615,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SupportersListModal.5c9b16dbc4c84e7ab72c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SupportersListModal.46eb3abb8b3df6a73b13.js.map

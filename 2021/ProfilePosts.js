@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePosts.2796a62b58c616c04b7d.js
-// Retrieved at 9/21/2021, 7:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePosts.10e09102b72257ac2d18.js
+// Retrieved at 9/22/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePosts", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -4509,7 +4509,7 @@
 					}
 				}),
 				_ = e => {
-					const t = Object(i.e)(e => Object(f.m)(e));
+					const t = Object(i.e)(e => Object(f.n)(e));
 					return o.a.createElement(a.a, {
 						className: e.className
 					}, o.a.createElement(g, {
@@ -6066,12 +6066,12 @@
 						rtJsonElementProps: o
 					});
 					switch (r) {
-						case b.ae.SmIcon:
+						case b.be.SmIcon:
 							return s.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: o
 							});
-						case b.ae.SmIconHc:
+						case b.be.SmIconHc:
 							return s.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -7423,13 +7423,13 @@
 						experimentEligibilitySelector: o.K,
 						experimentName: r.Wb
 					});
-					return !(!t || Object(r.xe)(t))
+					return !(!t || Object(r.ye)(t))
 				},
 				a = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: o.K,
 						experimentName: r.Wb
-					}) === r.vc.ListingEnabled
+					}) === r.wc.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, n) {
@@ -7561,12 +7561,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: r.Ud
+						experimentName: r.Vd
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === r.ae.SmIcon || t === r.ae.SmIconHc
+					return t === r.be.SmIcon || t === r.be.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -7610,4 +7610,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.2796a62b58c616c04b7d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.10e09102b72257ac2d18.js.map

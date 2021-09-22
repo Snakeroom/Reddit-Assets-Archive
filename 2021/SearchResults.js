@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.4067169789edbe18389f.js
-// Retrieved at 9/21/2021, 7:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.b0de816eadd55b6ebea1.js
+// Retrieved at 9/22/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -3141,15 +3141,15 @@
 					showPopupOnHover: i,
 					onHover: c
 				}) => {
-					const d = Object(a.e)(e => Object(p.d)(e, {
+					const d = Object(a.e)(e => Object(p.e)(e, {
 							subredditId: t,
 							userId: s
 						})),
-						l = Object(a.e)(e => Object(p.e)(e, {
+						l = Object(a.e)(e => Object(p.g)(e, {
 							subredditId: t,
 							userId: s
 						})),
-						m = Object(a.e)(e => Object(p.c)(e, {
+						m = Object(a.e)(e => Object(p.d)(e, {
 							subredditId: t,
 							userId: s
 						})),
@@ -10358,7 +10358,7 @@
 					const c = Object(n.e)(i, {
 							commentId: e
 						}),
-						d = Object(a.d)(i, {
+						d = Object(a.e)(i, {
 							subredditId: t,
 							userId: s
 						});
@@ -11168,7 +11168,7 @@
 			"use strict";
 			var r = s("./node_modules/redux/es/redux.js"),
 				n = s("./src/reddit/actions/gold/constants.ts");
-			const a = e => e.type.startsWith("POWERUPS_SUPPORTER"),
+			const a = e => (e => e.startsWith("POWERUPS_SUPPORTER"))(e.type),
 				o = e => !a(e),
 				i = {};
 			var c = s("./node_modules/icepick/icepick.js"),
@@ -11233,8 +11233,8 @@
 									[e]: {
 										achievementTypes: r,
 										supporterTypes: c,
-										achievementDisplayType: d,
-										supporterDisplayType: l
+										preferredAchievementType: d,
+										preferredSupporterType: l
 									}
 								}
 							}
@@ -11247,20 +11247,28 @@
 							const {
 								subredditId: s,
 								userId: r,
-								achievementType: n
+								achievementFlairType: n,
+								supporterFlairType: a
 							} = t.payload;
-							return Object(c.setIn)(e, [s, r, "pendingPreferredType"], n)
+							return Object(c.updateIn)(e, [s, r], e => ({
+								...e,
+								pendingAchievementType: n,
+								pendingSupporterType: a
+							}))
 						}
 						case d.g: {
 							const {
 								subredditId: s,
 								userId: r,
-								achievementType: n
+								achievementFlairType: n,
+								supporterFlairType: a
 							} = t.payload;
 							return Object(c.updateIn)(e, [s, r], e => ({
 								...e,
-								achievementDisplayType: n,
-								pendingPreferredType: void 0
+								preferredAchievementType: n,
+								preferredSupporterType: a,
+								pendingAchievementType: void 0,
+								pendingSupporterType: void 0
 							}))
 						}
 						case d.e: {
@@ -11268,7 +11276,11 @@
 								subredditId: s,
 								userId: r
 							} = t.payload;
-							return Object(c.setIn)(e, [s, r, "pendingPreferredType"], void 0)
+							return Object(c.updateIn)(e, [s, r], e => ({
+								...e,
+								pendingAchievementType: void 0,
+								pendingSupporterType: void 0
+							}))
 						}
 						default:
 							return e
@@ -11309,9 +11321,9 @@
 			}));
 			var r = s("./src/reddit/constants/experiments.ts"),
 				n = s("./src/reddit/helpers/chooseVariant/index.ts");
-			const a = e => r.Nd.Treatment1 === Object(n.c)(e, {
+			const a = e => r.Od.Treatment1 === Object(n.c)(e, {
 				experimentEligibilitySelector: n.a,
-				experimentName: r.Ed
+				experimentName: r.Fd
 			})
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, s) {
@@ -11422,16 +11434,22 @@
 		},
 		"./src/reddit/selectors/gold/powerups/flairs.ts": function(e, t, s) {
 			"use strict";
-			s.d(t, "c", (function() {
+			s.d(t, "d", (function() {
 				return d
-			})), s.d(t, "d", (function() {
-				return m
+			})), s.d(t, "f", (function() {
+				return l
 			})), s.d(t, "e", (function() {
+				return m
+			})), s.d(t, "h", (function() {
+				return u
+			})), s.d(t, "g", (function() {
 				return p
 			})), s.d(t, "b", (function() {
 				return h
-			})), s.d(t, "a", (function() {
+			})), s.d(t, "c", (function() {
 				return b
+			})), s.d(t, "a", (function() {
+				return x
 			}));
 			s("./node_modules/core-js/modules/web.dom.iterable.js");
 			var r = s("./node_modules/reselect/es/index.js"),
@@ -11457,21 +11475,51 @@
 					var r, n;
 					return t && s ? null === (n = null === (r = e.features.powerups.subredditUserPowerupsFlairs) || void 0 === r ? void 0 : r[t]) || void 0 === n ? void 0 : n[s] : null
 				},
-				l = Object(r.a)(d, e => (null == e ? void 0 : e.pendingPreferredType) || (null == e ? void 0 : e.achievementDisplayType)),
+				l = Object(r.a)(d, e => (null == e ? void 0 : e.pendingAchievementType) || (null == e ? void 0 : e.preferredAchievementType)),
 				m = Object(r.a)([c, l], (e, t) => e && t ? e[t] : null),
-				u = Object(r.a)(d, e => null == e ? void 0 : e.supporterDisplayType),
+				u = Object(r.a)(d, e => null == e ? void 0 : e.preferredSupporterType),
 				p = Object(r.a)([c, u], (e, t) => e && t ? e[t] : null),
 				h = Object(r.a)([c, d], (e, t) => {
 					if (!e) return [];
 					const s = t ? [...t.supporterTypes, ...t.achievementTypes] : [],
-						r = (null == t ? void 0 : t.pendingPreferredType) || (null == t ? void 0 : t.achievementDisplayType);
+						r = (null == t ? void 0 : t.pendingAchievementType) || (null == t ? void 0 : t.preferredAchievementType),
+						n = (null == t ? void 0 : t.pendingSupporterType) || (null == t ? void 0 : t.preferredSupporterType);
 					return Object.values(e).map(e => ({
 						...e,
 						isLocked: !s.includes(e.type),
-						isPreferred: e.type === r
+						isPreferred: e.type === r || e.type === n
 					})).sort((e, t) => e.isLocked === t.isLocked ? 0 : e.isLocked ? 1 : -1)
 				}),
-				b = (e, {
+				b = Object(r.a)([(e, {
+					subredditId: t
+				}) => {
+					var s;
+					return t ? null === (s = e.features.powerups.subredditPowerupsFlairs) || void 0 === s ? void 0 : s[t] : null
+				}, d], (e, t) => {
+					if (!e || !t) return null;
+					const {
+						supporterTypes: s,
+						achievementTypes: r,
+						flairsByType: n
+					} = e, {
+						supporterTypes: a,
+						achievementTypes: o,
+						preferredSupporterType: i,
+						preferredAchievementType: c,
+						pendingSupporterType: d,
+						pendingAchievementType: l
+					} = t;
+					return {
+						supporterFlairs: C(s, a, n, d || i),
+						achievementFlairs: C(r, o, n, l || c)
+					}
+				}),
+				C = (e, t, s, r) => e.map(e => ({
+					...s[e],
+					isLocked: !t.includes(e),
+					isPreferred: e === r
+				})).sort((e, t) => e.isLocked === t.isLocked ? 0 : e.isLocked ? 1 : -1),
+				x = (e, {
 					commentId: t
 				}) => {
 					const s = Object(n.b)(e, {
@@ -11558,10 +11606,10 @@
 				a = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				o = s("./src/reddit/selectors/posts.ts");
 			const i = e => Object(a.c)(e, {
-					experimentName: n.sd,
+					experimentName: n.td,
 					experimentEligibilitySelector: a.a
 				}),
-				c = (e, t) => t === n.Cd.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				c = (e, t) => t === n.Dd.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				d = Object(r.a)(o.H, i, (e, t) => c(e, t)),
 				l = Object(r.a)((e, t) => t, i, (e, t) => c(e, t))
 		},
@@ -11570,4 +11618,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.4067169789edbe18389f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.b0de816eadd55b6ebea1.js.map

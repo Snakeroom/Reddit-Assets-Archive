@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlow.cd07abe049d6bffed215.js
-// Retrieved at 9/21/2021, 7:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlow.93b157f7023e19638bee.js
+// Retrieved at 9/22/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlow", "ReportFlowNew"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, o) {
@@ -5160,13 +5160,13 @@
 		},
 		"./src/reddit/helpers/trackers/powerups.ts": function(e, t, o) {
 			"use strict";
-			o.d(t, "A", (function() {
+			o.d(t, "B", (function() {
 				return i
 			})), o.d(t, "r", (function() {
 				return a
 			})), o.d(t, "t", (function() {
 				return l
-			})), o.d(t, "B", (function() {
+			})), o.d(t, "C", (function() {
 				return d
 			})), o.d(t, "j", (function() {
 				return u
@@ -5182,40 +5182,42 @@
 				return h
 			})), o.d(t, "u", (function() {
 				return b
-			})), o.d(t, "y", (function() {
+			})), o.d(t, "z", (function() {
 				return g
 			})), o.d(t, "v", (function() {
 				return w
-			})), o.d(t, "h", (function() {
+			})), o.d(t, "y", (function() {
 				return x
-			})), o.d(t, "g", (function() {
+			})), o.d(t, "h", (function() {
 				return v
-			})), o.d(t, "i", (function() {
+			})), o.d(t, "g", (function() {
 				return O
-			})), o.d(t, "q", (function() {
+			})), o.d(t, "i", (function() {
 				return C
-			})), o.d(t, "o", (function() {
+			})), o.d(t, "q", (function() {
 				return y
-			})), o.d(t, "p", (function() {
+			})), o.d(t, "o", (function() {
 				return E
-			})), o.d(t, "f", (function() {
+			})), o.d(t, "p", (function() {
 				return k
-			})), o.d(t, "w", (function() {
+			})), o.d(t, "f", (function() {
 				return S
-			})), o.d(t, "k", (function() {
+			})), o.d(t, "w", (function() {
 				return R
-			})), o.d(t, "a", (function() {
+			})), o.d(t, "k", (function() {
 				return I
-			})), o.d(t, "s", (function() {
+			})), o.d(t, "a", (function() {
 				return j
-			})), o.d(t, "d", (function() {
+			})), o.d(t, "s", (function() {
 				return T
-			})), o.d(t, "l", (function() {
+			})), o.d(t, "d", (function() {
 				return L
-			})), o.d(t, "x", (function() {
+			})), o.d(t, "l", (function() {
 				return P
-			})), o.d(t, "z", (function() {
+			})), o.d(t, "x", (function() {
 				return N
+			})), o.d(t, "A", (function() {
+				return F
 			}));
 			var n = o("./src/reddit/helpers/correlationIdTracker.ts"),
 				r = o("./src/reddit/selectors/telemetry.ts");
@@ -5319,7 +5321,13 @@
 					noun: "unlock_achievements",
 					...s(e)
 				}),
-				x = e => t => ({
+				x = () => e => ({
+					source: "powerups_flair_picker",
+					action: "click",
+					noun: "powerups_cta",
+					...s(e)
+				}),
+				v = e => t => ({
 					source: "powerups_modal",
 					action: "view",
 					noun: "marketing_step",
@@ -5328,7 +5336,7 @@
 						reason: e
 					})
 				}),
-				v = e => t => ({
+				O = e => t => ({
 					source: "powerups",
 					action: "click",
 					noun: "benefit",
@@ -5338,13 +5346,13 @@
 						benefit: e
 					}
 				}),
-				O = (e, t) => o => ({
+				C = (e, t) => o => ({
 					source: "powerups_modal",
 					action: "view",
 					noun: "purchase_step",
 					...s(o, e, t)
 				}),
-				C = () => e => ({
+				y = () => e => ({
 					source: "global",
 					action: "view",
 					noun: "screen",
@@ -5353,13 +5361,13 @@
 						pageType: "powerups_premium_upsell"
 					})
 				}),
-				y = () => e => ({
+				E = () => e => ({
 					source: "powerups_premium_upsell",
 					action: "click",
 					noun: "powerups_price",
 					...s(e)
 				}),
-				E = e => t => ({
+				k = e => t => ({
 					source: "powerups",
 					action: "click",
 					noun: "premium",
@@ -5371,7 +5379,7 @@
 						subscriptionType: e
 					}
 				}),
-				k = (e, t) => o => ({
+				S = (e, t) => o => ({
 					source: "global",
 					action: "view",
 					noun: "screen",
@@ -5380,20 +5388,20 @@
 						pageType: "community_heroes_modal"
 					}
 				}),
-				S = () => e => ({
+				R = () => e => ({
 					source: "powerups",
 					action: "click",
 					noun: "unlock_emojis",
 					...s(e),
 					correlationId: Object(n.d)(n.a.PowerupsFlow, !0)
 				}),
-				R = () => e => ({
+				I = () => e => ({
 					source: "meta",
 					action: "open",
 					noun: "emote_picker",
 					...s(e)
 				}),
-				I = (e, t) => o => ({
+				j = (e, t) => o => ({
 					source: t,
 					action: "click",
 					noun: "add_custom_emojis",
@@ -5403,7 +5411,7 @@
 						emojiCount: e
 					}
 				}),
-				j = (e, t) => o => ({
+				T = (e, t) => o => ({
 					source: t,
 					action: "save",
 					noun: "custom_emojis",
@@ -5413,7 +5421,7 @@
 						emojiCount: e
 					}
 				}),
-				T = (e = 1, t) => o => ({
+				L = (e = 1, t) => o => ({
 					source: t,
 					action: "delete",
 					noun: "custom_emojis",
@@ -5423,7 +5431,7 @@
 						emojiCount: e
 					}
 				}),
-				L = (e, t) => o => ({
+				P = (e, t) => o => ({
 					source: "meta",
 					action: "open",
 					noun: "gif_tooltip",
@@ -5431,14 +5439,14 @@
 					...s(o),
 					correlationId: e
 				}),
-				P = () => e => ({
+				N = () => e => ({
 					source: "powerups",
 					action: "click",
 					noun: "unlock_gifs",
 					...s(e),
 					correlationId: Object(n.d)(n.a.PowerupsFlow, !0)
 				}),
-				N = (e, t, o) => n => ({
+				F = (e, t, o) => n => ({
 					source: "powerups_settings",
 					action: "click",
 					noun: e,
@@ -5903,9 +5911,9 @@
 					experimentName: r.Gb,
 					experimentEligibilitySelector: e => l(e, t)
 				}), e => e),
-				d = e => e === r.he.NoCommunityWidgets,
-				u = e => e === r.he.NoRulesModerators,
-				p = e => e === r.he.RelatedPostsDu
+				d = e => e === r.ie.NoCommunityWidgets,
+				u = e => e === r.ie.NoRulesModerators,
+				p = e => e === r.ie.RelatedPostsDu
 		},
 		"./src/reddit/selectors/tooltip.ts": function(e, t, o) {
 			"use strict";
@@ -5934,4 +5942,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.cd07abe049d6bffed215.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.93b157f7023e19638bee.js.map
