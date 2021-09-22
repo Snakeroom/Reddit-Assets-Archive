@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.bc514a72f3cbd0fbd661.js
-// Retrieved at 9/22/2021, 2:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.da129f123c76d37fde91.js
+// Retrieved at 9/22/2021, 3:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage"], {
 		"./src/lib/makeLinkedPostsListingKey/index.ts": function(e, t, s) {
@@ -6276,7 +6276,12 @@
 				}) => t, I.c, L.request, L.subreddit, (e, t, s, o) => {
 					const n = !!e && void 0 !== e.isEligibleForLinkedPosts;
 					let r, i = "";
-					if (t && e && n) {
+					if (e && (r = {
+							hostPostId: e.id,
+							isEligibleForLinkedPosts: !1,
+							shouldShowLinkedPosts: !1,
+							subreddit: o
+						}), t && e && n) {
 						const {
 							isEligibleForLinkedPosts: n,
 							id: a
@@ -6352,8 +6357,6 @@
 						hk: "2g363L"
 					}) : Object(I.b)(c) ? o.fbt._("More posts like this", null, {
 						hk: "Maj0v"
-					}) : t === x.hd.SfwRecs ? o.fbt._("Top posts on Reddit this week", null, {
-						hk: "w3BDa"
 					}) : t === x.hd.DeRecs ? o.fbt._("Popular Posts Near You", null, {
 						hk: "22vlW0"
 					}) : o.fbt._("More posts you may like", null, {
@@ -8578,7 +8581,7 @@
 			e.exports = JSON.parse('{"id":"69910b35bc53"}')
 		},
 		"./src/redditGQL/operations/PostFeedAndOtherDiscussions.json": function(e) {
-			e.exports = JSON.parse('{"id":"758976ad5ad8"}')
+			e.exports = JSON.parse('{"id":"b17835321ec7"}')
 		},
 		"./src/redditGQL/operations/SubredditGeoRecommendationViaFocusVertical.json": function(e) {
 			e.exports = JSON.parse('{"id":"d5b9525ce2ca"}')
@@ -8591,4 +8594,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.bc514a72f3cbd0fbd661.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.da129f123c76d37fde91.js.map
