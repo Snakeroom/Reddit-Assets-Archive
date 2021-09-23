@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.c64946ab2de757fffdbb.js
-// Retrieved at 9/23/2021, 1:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.c1e4f494b609ba6a5d71.js
+// Retrieved at 9/23/2021, 2:40:11 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~Subreddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, r) {
@@ -1773,6 +1773,7 @@
 		},
 		"./src/reddit/components/UserIcon/PresenceDot.tsx": function(e, t, r) {
 			"use strict";
+			r.r(t);
 			var n = r("./node_modules/react/index.js"),
 				o = r.n(n),
 				i = r("./src/lib/classNames/index.ts"),
@@ -1780,7 +1781,7 @@
 				c = r("./src/reddit/icons/svgs/PresenceCircle/index.tsx"),
 				a = r("./src/reddit/components/UserIcon/UserIcon.m.less"),
 				l = r.n(a);
-			t.a = e => {
+			t.default = e => {
 				const {
 					showPresence: t,
 					onceInViewport: r
@@ -1961,7 +1962,7 @@
 					className: g.a.nftAnimation,
 					assetUrl: `${s.a.assetPath}/img/snoovatars/nft_comment_animation.json`,
 					loop: !0
-				}), C, b && i.a.createElement(u.a, {
+				}), C, b && i.a.createElement(u.default, {
 					showPresence: !0,
 					isHighlighted: a,
 					onceInViewport: O
@@ -4725,4 +4726,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.c64946ab2de757fffdbb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.c1e4f494b609ba6a5d71.js.map

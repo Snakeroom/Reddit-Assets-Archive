@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.bc9c4769138c5c4be4a8.js
-// Retrieved at 9/23/2021, 1:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.3c65e27d22c7c409e9b8.js
+// Retrieved at 9/23/2021, 2:40:11 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~ModListing", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -7123,11 +7123,7 @@
 		"./src/reddit/components/NewPostPill/index.m.less": function(e, t, n) {
 			e.exports = {
 				wrapper: "_369llFshxbL10dgfLlIApJ",
-				membersIcons: "DSE0wPawW7AVWG6WWZ6Nt",
-				memberIcon: "DnG050aRzI2YZFy5DI13M",
 				caption: "_2TsfnDXso674GKQKeaYyJz",
-				presenceWrapper: "_1x9bLWtAVO2GlveuEEgjuT",
-				presenceDotClass: "VxgQzayohiFb7UkVq-DCe",
 				wrapperExp: "_1rsB1M-j-PhnVlJxrOyQWm"
 			}
 		},
@@ -7136,63 +7132,30 @@
 			var s = n("./node_modules/react/index.js"),
 				r = n.n(s),
 				o = n("./src/lib/classNames/index.ts"),
-				i = n("./src/reddit/components/UserIcon/PresenceDot.tsx"),
+				i = n("./src/reddit/components/RandomBaseUserIcons/RandomBaseUserIcons.tsx"),
 				a = n("./src/reddit/contexts/NavbarExp.ts"),
-				c = n("./src/reddit/helpers/getFakeUserIcons.ts");
-			var d = n("./src/reddit/components/NewPostPill/index.m.less"),
-				l = n.n(d);
+				c = n("./src/reddit/components/NewPostPill/index.m.less"),
+				d = n.n(c);
 			const {
-				fbt: u
+				fbt: l
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 			t.a = e => {
 				const {
 					onClick: t,
 					subredditName: n
-				} = e, d = Object(s.useRef)([]);
-				! function(e) {
-					const t = Object(s.useRef)(!1);
-					t.current || (e(), t.current = !0)
-				}(() => {
-					const e = Object(c.a)(n, 20);
-					d.current = Array.from({
-						length: 3
-					}).map(() => e[Math.floor(20 * Math.random())])
-				});
-				const m = Object(s.useContext)(a.a);
+				} = e, c = Object(s.useContext)(a.a);
 				return r.a.createElement("div", {
-					className: Object(o.a)(l.a.wrapper, {
-						[l.a.wrapperExp]: m
+					className: Object(o.a)(d.a.wrapper, {
+						[d.a.wrapperExp]: c
 					}),
 					onClick: t
-				}, r.a.createElement("div", {
-					className: l.a.membersIcons
-				}, d.current.map(({
-					color: e,
-					image: t
-				}, n) => {
-					return 2 === n ? r.a.createElement("div", {
-						className: l.a.presenceWrapper
-					}, r.a.createElement("img", {
-						className: l.a.memberIcon,
-						key: t,
-						src: t,
-						style: {
-							backgroundColor: e
-						}
-					}), r.a.createElement(i.a, {
-						showPresence: !0,
-						outlineClassName: l.a.presenceDotClass
-					})) : r.a.createElement("img", {
-						className: l.a.memberIcon,
-						key: t,
-						src: t,
-						style: {
-							backgroundColor: e
-						}
-					})
-				})), r.a.createElement("label", {
-					className: l.a.caption
-				}, u._("New Posts", null, {
+				}, r.a.createElement(i.a, {
+					iconsKey: n,
+					isOutlinePresenceDot: !0,
+					isShowPresenceDot: !0
+				}), r.a.createElement("label", {
+					className: d.a.caption
+				}, l._("New Posts", null, {
 					hk: "3tuby1"
 				})))
 			}
@@ -7926,6 +7889,91 @@
 				classicPostPlaceholder: "_2lnslGhr0-HKZXmHDCzAU7",
 				upvoteAnimation: "_1MEw3CaNaAuwCohG-n7UPc",
 				liveStatus: "_1YeXsBJft9g02XQNAzcPWD"
+			}
+		},
+		"./src/reddit/components/RandomBaseUserIcons/RandomBaseUserIcons.tsx": function(e, t, n) {
+			"use strict";
+			var s = n("./node_modules/@loadable/component/dist/loadable.esm.js"),
+				r = n("./node_modules/react/index.js"),
+				o = n.n(r),
+				i = n("./src/lib/classNames/index.ts"),
+				a = n("./node_modules/lodash/sampleSize.js"),
+				c = n.n(a),
+				d = n("./src/reddit/helpers/getFakeUserIcons.ts"),
+				l = n("./src/reddit/hooks/useConstructor.ts"),
+				u = n("./src/reddit/components/RandomBaseUserIcons/index.m.less"),
+				m = n.n(u);
+			const p = Object(s.a)({
+					resolved: {},
+					chunkName: () => "reddit-components-UserIcon-PresenceDot",
+					isReady(e) {
+						const t = this.resolve(e);
+						return !1 !== this.resolved[t] && !!n.m[t]
+					},
+					importAsync: () => Promise.resolve().then(n.bind(null, "./src/reddit/components/UserIcon/PresenceDot.tsx")),
+					requireAsync(e) {
+						const t = this.resolve(e);
+						return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
+					},
+					requireSync(e) {
+						const t = this.resolve(e);
+						return n(t)
+					},
+					resolve() {
+						return "./src/reddit/components/UserIcon/PresenceDot.tsx"
+					}
+				}),
+				b = 20,
+				h = 3,
+				f = e => {
+					const {
+						iconsKey: t,
+						isOutlinePresenceDot: n,
+						isShowPresenceDot: s,
+						numIconsToDrawFrom: a = b,
+						numVisibleIcons: u = h
+					} = e, f = Object(r.useRef)([]);
+					return Object(l.a)(() => {
+						const e = Object(d.a)(t, a);
+						f.current = c()(e, u)
+					}), o.a.createElement("div", {
+						className: m.a.membersIcons
+					}, f.current.map(({
+						color: e,
+						image: t
+					}, r) => {
+						return r === u - 1 ? o.a.createElement("div", {
+							className: m.a.presenceWrapper,
+							key: r
+						}, o.a.createElement("img", {
+							className: m.a.memberIcon,
+							src: t,
+							style: {
+								backgroundColor: e
+							}
+						}), s && o.a.createElement(p, {
+							showPresence: !0,
+							outlineClassName: Object(i.a)({
+								[m.a.presenceDotClass]: n
+							})
+						})) : o.a.createElement("img", {
+							className: m.a.memberIcon,
+							key: r,
+							src: t,
+							style: {
+								backgroundColor: e
+							}
+						})
+					}))
+				};
+			t.a = f
+		},
+		"./src/reddit/components/RandomBaseUserIcons/index.m.less": function(e, t, n) {
+			e.exports = {
+				membersIcons: "_1W1pLIfaIb8rYU6YeTdAk6",
+				memberIcon: "_1H6Meh6ZAemKxOJDOEasfK",
+				presenceWrapper: "_30vlMmCcnqKnXP1t-fzm0e",
+				presenceDotClass: "_29m-SAo1wzA0dkdfJutrjs"
 			}
 		},
 		"./src/reddit/components/RawHTMLDisplay/index.m.less": function(e, t, n) {
@@ -13989,6 +14037,18 @@
 					noun: s.HEADER_SUBREDDIT_UNSUBSCRIBE
 				})
 		},
+		"./src/reddit/hooks/useConstructor.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "a", (function() {
+				return r
+			}));
+			var s = n("./node_modules/react/index.js");
+
+			function r(e) {
+				const t = Object(s.useRef)(!1);
+				t.current || (e(), t.current = !0)
+			}
+		},
 		"./src/reddit/hooks/useIsClient.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
@@ -16868,4 +16928,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.bc9c4769138c5c4be4a8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.3c65e27d22c7c409e9b8.js.map

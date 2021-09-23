@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.c7d31c22d2ba88edbce9.js
-// Retrieved at 9/23/2021, 1:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.044130b56181dbfa6904.js
+// Retrieved at 9/23/2021, 2:40:11 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage"], {
 		"./src/lib/makeLinkedPostsListingKey/index.ts": function(e, t, s) {
@@ -7534,8 +7534,8 @@
 					userPrefs: Ce.vb,
 					inResonatePilot: le.a,
 					isUpvotePromptExpEnabled: Y.d,
-					isTypingIndicatorsExperimentEnabled: me.a,
-					isTypingIndicatorsPostShadowTestEnabled: me.c
+					isTypingIndicatorsExperimentEnabled: me.b,
+					isTypingIndicatorsPostShadowTestEnabled: me.d
 				}),
 				vt = (e, t) => ({
 					dismissTruncation: t => e(Object(fe.a)({
@@ -8429,30 +8429,39 @@
 		},
 		"./src/reddit/selectors/experiments/typingIndicators.ts": function(e, t, s) {
 			"use strict";
-			s.d(t, "a", (function() {
-				return r
-			})), s.d(t, "c", (function() {
+			s.d(t, "b", (function() {
 				return i
-			})), s.d(t, "b", (function() {
+			})), s.d(t, "a", (function() {
 				return a
+			})), s.d(t, "d", (function() {
+				return d
+			})), s.d(t, "c", (function() {
+				return c
 			}));
 			var o = s("./src/reddit/constants/experiments.ts"),
-				n = s("./src/reddit/helpers/chooseVariant/index.ts");
-			s("./src/reddit/selectors/experiments/index.ts");
-			const r = e => {
+				n = s("./src/reddit/helpers/chooseVariant/index.ts"),
+				r = s("./src/reddit/selectors/experiments/index.ts");
+			const i = e => {
 					const t = Object(n.c)(e, {
 						experimentEligibilitySelector: n.a,
 						experimentName: o.Fe
 					});
 					return t === o.we.UIChangesOnly || t === o.we.TypingIndicators || t === o.we.IndicatorsPlusCTA
 				},
-				i = e => {
+				a = e => {
+					const t = Object(r.d)(e, {
+							experimentName: o.Fe
+						}),
+						s = null == t ? void 0 : t.variant;
+					return s === o.we.TypingIndicators || s === o.we.IndicatorsPlusCTA
+				},
+				d = e => {
 					return Object(n.c)(e, {
 						experimentEligibilitySelector: n.a,
 						experimentName: o.He
 					}) === o.ye.Enabled
 				},
-				a = e => {
+				c = e => {
 					return Object(n.c)(e, {
 						experimentEligibilitySelector: n.a,
 						experimentName: o.Ge
@@ -8615,4 +8624,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.c7d31c22d2ba88edbce9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.044130b56181dbfa6904.js.map
