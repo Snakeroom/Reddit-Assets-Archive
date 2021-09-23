@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.3cf4b0c220888d409ee6.js
-// Retrieved at 9/22/2021, 7:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.704b366f3b9cd70cff18.js
+// Retrieved at 9/22/2021, 8:00:08 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, i = o[0], s = o[1], c = o[2], l = 0, P = []; l < i.length; l++) n = i[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && P.push(d[n][0]), d[n] = 0;
@@ -1353,7 +1353,7 @@
 						"translations/es_MX-json": "a290266fe5633c896b25",
 						"translations/fr_FR-json": "60e3f0c7d2a233a9094e",
 						"translations/it_IT-json": "a9061921414ca97bcbc5",
-						"translations/pseudo_ext-json": "dc4ef19082f8f9135240",
+						"translations/pseudo_ext-json": "6743376f404c8aa02630",
 						"translations/pseudo_long-json": "5f1791521132be0ab3e6",
 						"translations/pseudo_short-json": "0b0609b061e7326021a5",
 						"translations/pt_BR-json": "a40a934539e0b2d73589",
@@ -1365,7 +1365,7 @@
 						MembershipPaywallPage: "6bd209cb0df497841b9e",
 						FlairEdit: "2ee528e8782fa49100df",
 						"vendors~Chat~RedesignChat": "8e5a5e659469fe3d2ed9",
-						"Chat~RedesignChat": "d86e6c34ece2724ff668",
+						"Chat~RedesignChat": "240960908f66978309da",
 						RedesignChat: "f7131a41edb04349a549",
 						"vendors~CollectionCommentsPage~CommentsPage": "74fecf4322147c824f67",
 						"CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki": "4ab26b12340e46856dab",
@@ -1465,9 +1465,9 @@
 						ChatMinimize: "d9055b288c8e61a1d298",
 						ChatPage: "86863bf7c87f03003f7d",
 						ExternalLinkUnit: "30e495931b11d9f1930d",
-						InvitedChannelsPanel: "7e2a00a0d24a3705f452",
+						InvitedChannelsPanel: "275eb89841c9a118e91e",
 						OverlayBlockUser: "c39897a254d271d30dfe",
-						OverlayChannelInvited: "b2cedad54a5af41894ef",
+						OverlayChannelInvited: "d0fc80069f3f596f34a9",
 						OverlayChannelRemoval: "49a17760f857ce0e306a",
 						OverlayChatMembers: "17a2eb6ad72aaa9df2c5",
 						OverlayCreateChannel: "4f3c6a56e2cfa2831721",
@@ -1604,4 +1604,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.3cf4b0c220888d409ee6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.704b366f3b9cd70cff18.js.map
