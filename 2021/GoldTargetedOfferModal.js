@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GoldTargetedOfferModal.ec5d107d86720ca7809d.js
-// Retrieved at 9/1/2021, 1:20:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GoldTargetedOfferModal.dac8f1c0436e9acbc400.js
+// Retrieved at 9/23/2021, 1:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GoldTargetedOfferModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, r) {
@@ -177,9 +177,9 @@
 			})), r.d(t, "f", (function() {
 				return N
 			})), r.d(t, "g", (function() {
-				return R
-			})), r.d(t, "h", (function() {
 				return M
+			})), r.d(t, "h", (function() {
+				return R
 			}));
 			var n = r("./node_modules/fbt/lib/FbtPublic.js"),
 				c = r("./src/lib/formatApiError/index.ts"),
@@ -393,7 +393,7 @@
 						const e = Object(c.a)(l);
 						t(Object(i.paypalApiError)(e))
 					}
-				}, R = (e, t) => async (r, n, {
+				}, M = (e, t) => async (r, n, {
 					apiContext: a
 				}) => {
 					const s = n(),
@@ -428,7 +428,7 @@
 						const e = Object(c.a)(p);
 						r(Object(i.paypalApiError)(e))
 					}
-				}, M = (e, t) => async (a, s, {
+				}, R = (e, t) => async (a, s, {
 					apiContext: d
 				}) => {
 					const l = s(),
@@ -705,6 +705,7 @@
 				image: "_3zxOPuyt8RD3yfvfjSexwG",
 				title: "GmqwvnWH-4Scmcg_LAAq9",
 				description: "_3lGo2G9LVVWU_7lEkZKy5s",
+				leftSpace: "_1htMHTBYSkl_raAM925lka",
 				agreementLink: "_1fs_kLGowvWWEDLJi84Kue",
 				buttonContainer: "_1bzBUturR9rsKSEL3VGNfW",
 				button: "_3Pnw83HApEfLFKPqFSeYis"
@@ -767,17 +768,17 @@
 						baselinePennies: T,
 						coins: S,
 						pennies: N,
-						mobileId: R
+						mobileId: M
 					} = v ? P : k,
-					M = S - A,
-					U = !v && M > 0,
+					R = S - A,
+					U = !v && R > 0,
 					D = T - N,
 					F = N !== T;
 				return o.a.createElement(_.e, {
 					className: w.a.body
 				}, o.a.createElement("button", {
 					onClick: () => {
-						t(Object(p.b)(void 0, R, y.a.StorefrontFreeAward)), I()
+						t(Object(p.b)(void 0, M, y.a.StorefrontFreeAward)), I()
 					},
 					className: w.a.closeButton
 				}, o.a.createElement(_.b, {
@@ -803,17 +804,21 @@
 					locale: e
 				}))], {
 					hk: "15hnfi"
-				}), v && E._("and get {coin amount} BONUS coins", [E._param("coin amount", Object(u.a)(M, {
+				}), v && o.a.createElement("span", {
+					className: w.a.leftSpace
+				}, E._("and get {coin amount} BONUS coins", [E._param("coin amount", Object(u.a)(R, {
 					locale: e
 				}))], {
 					hk: "26UFcD"
-				}), !F && U && E._("and get {bonus coins} FREE", [E._param("bonus coins", Object(u.b)(A, {
+				})), !F && U && o.a.createElement("span", {
+					className: w.a.leftSpace
+				}, E._("and get {bonus coins} FREE", [E._param("bonus coins", Object(u.b)(A, {
 					locale: e,
 					type: l.b.Reddit,
 					currency: l.a
 				}))], {
 					hk: "1E3ZU8"
-				}), F && E._("Save {baseline price} off normal price!", [E._param("baseline price", Object(u.b)(D, {
+				})), F && E._("Save {baseline price} off normal price!", [E._param("baseline price", Object(u.b)(D, {
 					locale: e
 				}))], {
 					hk: "3DkBgK"
@@ -839,7 +844,7 @@
 					className: w.a.button,
 					"data-redditstyle": !0,
 					onClick: () => {
-						t(Object(p.a)(R, y.a.StorefrontFreeAward)), ((e, t) => {
+						t(Object(p.a)(M, y.a.StorefrontFreeAward)), ((e, t) => {
 							r(Object(g.f)()), r(Object(O.c)({
 								correlationId: t,
 								packageId: e.mobileId
@@ -932,7 +937,7 @@
 					hk: "2wnTrq"
 				})), N = A || n.fbt._("Stock up and save with this limited-time offer", null, {
 					hk: "2eml5T"
-				}), R = C ? n.fbt._("Buy {coin amount} for {price} and get {bonus coins} bonus coins", [n.fbt._param("coin amount", Object(l.b)(g, {
+				}), M = C ? n.fbt._("Buy {coin amount} for {price} and get {bonus coins} bonus coins", [n.fbt._param("coin amount", Object(l.b)(g, {
 					locale: t,
 					type: d.b.Reddit,
 					currency: d.a
@@ -963,7 +968,7 @@
 					className: _.a.dealDescription
 				}, N), a.a.createElement("h4", {
 					className: _.a.deal
-				}, R), a.a.createElement("p", {
+				}, M), a.a.createElement("p", {
 					className: _.a.agreementLink
 				}, n.fbt._("By purchasing coins, you agree to our {user agreement} and {privacy plicy}", [n.fbt._param("user agreement", a.a.createElement("a", {
 					href: "https://www.redditinc.com/policies/user-agreement",
@@ -1163,4 +1168,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GoldTargetedOfferModal.ec5d107d86720ca7809d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GoldTargetedOfferModal.dac8f1c0436e9acbc400.js.map

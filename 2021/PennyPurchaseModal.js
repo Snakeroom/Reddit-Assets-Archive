@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.e6690421c0f609162a35.js
-// Retrieved at 9/22/2021, 7:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.78315d2cd3e317349b5c.js
+// Retrieved at 9/23/2021, 1:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PennyPurchaseModal"], {
 		"./src/lib/loadRedditAdsPixel.ts": function(e, a, t) {
@@ -305,12 +305,12 @@
 						}))], {
 							hk: "3jOvCI"
 						})), e.award.giverCoinReward) {
-						t.push(n.fbt._("As a thank you, you will receive {giverCoinReward} .", [n.fbt._param("giverCoinReward", Object(l.b)(e.award.giverCoinReward, {
+						t.push(n.fbt._("As a thank you, you will receive {giverCoinReward}.", [n.fbt._param("giverCoinReward", Object(l.b)(e.award.giverCoinReward, {
 							locale: a,
 							type: d.b.Reddit,
 							currency: d.a
 						}))], {
-							hk: "3hmbs4"
+							hk: "20S8v2"
 						}));
 						const s = e.coinBalance + (e.purchasePackage ? e.purchasePackage.coins : 0) + e.award.giverCoinReward - (e.award.pennyPrice ? 0 : e.award.coinPrice);
 						s > 0 && s !== e.coinBalance && n.fbt._("You’ll have {remainingCoins} remaining.", [n.fbt._param("remainingCoins", Object(l.b)(s, {
@@ -676,4 +676,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PennyPurchaseModal.e6690421c0f609162a35.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PennyPurchaseModal.78315d2cd3e317349b5c.js.map
