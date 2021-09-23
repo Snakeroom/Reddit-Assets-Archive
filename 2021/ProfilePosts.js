@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePosts.3f1bbcd4fea725c81fd0.js
-// Retrieved at 9/23/2021, 1:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePosts.d731bddf2daa9d6bdd3c.js
+// Retrieved at 9/23/2021, 5:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePosts", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -6066,12 +6066,12 @@
 						rtJsonElementProps: o
 					});
 					switch (r) {
-						case b.le.SmIcon:
+						case b.me.SmIcon:
 							return s.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: o
 							});
-						case b.le.SmIconHc:
+						case b.me.SmIconHc:
 							return s.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -7423,15 +7423,15 @@
 			const i = e => {
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: o.K,
-						experimentName: r.fc
+						experimentName: r.gc
 					});
-					return !(!t || Object(r.Ke)(t))
+					return !(!t || Object(r.Le)(t))
 				},
 				a = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: o.K,
-						experimentName: r.fc
-					}) === r.Gc.ListingEnabled
+						experimentName: r.gc
+					}) === r.Hc.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, n) {
@@ -7563,12 +7563,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: r.fe
+						experimentName: r.ge
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === r.le.SmIcon || t === r.le.SmIconHc
+					return t === r.me.SmIcon || t === r.me.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -7612,4 +7612,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.3f1bbcd4fea725c81fd0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.d731bddf2daa9d6bdd3c.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditCreation.99e6bcb0ef64b90b78ed.js
-// Retrieved at 9/23/2021, 1:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditCreation.43907c50fb49b7a314ba.js
+// Retrieved at 9/23/2021, 5:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditCreation"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -333,8 +333,8 @@
 				M = n.n(T),
 				D = n("./src/reddit/controls/Button/index.tsx"),
 				L = n("./src/reddit/layout/row/Inline/index.tsx"),
-				R = n("./src/reddit/models/Flair/index.ts"),
-				B = n("./src/reddit/selectors/tooltip.ts"),
+				B = n("./src/reddit/models/Flair/index.ts"),
+				R = n("./src/reddit/selectors/tooltip.ts"),
 				F = n("./src/reddit/selectors/user.ts"),
 				P = n("./src/reddit/components/Settings/shared/Widgets.m.less"),
 				A = n.n(P);
@@ -353,8 +353,8 @@
 				V = C.a.h3("Label", A.a),
 				J = C.a.wrapped(O.c, "Subtext", A.a),
 				Y = C.a.wrapped(u.a, "HoverTooltip", A.a),
-				K = C.a.div("ControlContainer", A.a),
-				Q = C.a.div("TextContainer", A.a),
+				Q = C.a.div("ControlContainer", A.a),
+				K = C.a.div("TextContainer", A.a),
 				z = C.a.div("ActionContainer", A.a),
 				X = ({
 					className: e,
@@ -388,7 +388,7 @@
 					indent: e.indent,
 					isCreateCommunity: e.isCreateCommunity,
 					last: e.last
-				}, s.a.createElement(Q, {
+				}, s.a.createElement(K, {
 					className: e.textContainerClassName
 				}, s.a.createElement(V, null, e.label, e.isRequired && s.a.createElement(H, null)), s.a.createElement(J, null, e.subtext)), s.a.createElement(z, null, e.children)),
 				ne = C.a.div("StyledFlair", A.a),
@@ -396,9 +396,9 @@
 				se = C.a.wrapped(ne, "NSFWFlair", A.a),
 				re = e => {
 					switch (e.flair) {
-						case R.f.Nsfw:
+						case B.f.Nsfw:
 							return s.a.createElement(se, null, "NSFW");
-						case R.f.Spoiler:
+						case B.f.Spoiler:
 							return s.a.createElement(ae, null, "SPOILER");
 						default:
 							return null
@@ -411,9 +411,9 @@
 						disabled: e.disabled,
 						indent: e.indent,
 						last: e.last
-					}, s.a.createElement(Q, null, s.a.createElement(L.a, null, s.a.createElement("label", {
+					}, s.a.createElement(K, null, s.a.createElement(L.a, null, s.a.createElement("label", {
 						htmlFor: t
-					}, s.a.createElement(V, null, e.label))), s.a.createElement(J, null, e.subtext)), s.a.createElement(z, null, s.a.createElement(K, null, e.tooltip && s.a.createElement(Y, {
+					}, s.a.createElement(V, null, e.label))), s.a.createElement(J, null, e.subtext)), s.a.createElement(z, null, s.a.createElement(Q, null, e.tooltip && s.a.createElement(Y, {
 						tooltipContentClass: e.tooltipContentClassName,
 						text: e.tooltip
 					}), s.a.createElement(N.a, {
@@ -439,7 +439,7 @@
 					inModal: e.inModal,
 					isNightModeOn: e.isNightModeOn,
 					direction: e.direction
-				}, s.a.createElement(Q, {
+				}, s.a.createElement(K, {
 					style: {
 						flex: 5
 					}
@@ -474,7 +474,7 @@
 					last: e.last,
 					indent: e.indent,
 					disabled: e.disabled
-				}, s.a.createElement(Q, null, s.a.createElement(L.a, null, s.a.createElement(V, null, e.label)), s.a.createElement(J, null, e.subtext)), s.a.createElement(z, null, s.a.createElement(K, null, s.a.createElement(D.n, {
+				}, s.a.createElement(K, null, s.a.createElement(L.a, null, s.a.createElement(V, null, e.label)), s.a.createElement(J, null, e.subtext)), s.a.createElement(z, null, s.a.createElement(Q, null, s.a.createElement(D.n, {
 					onClick: e.onClick
 				}, e.actionText)))),
 				xe = e => s.a.createElement(X, {
@@ -482,7 +482,7 @@
 					last: e.last,
 					indent: e.indent,
 					disabled: e.disabled
-				}, s.a.createElement(Q, null, s.a.createElement(q, {
+				}, s.a.createElement(K, null, s.a.createElement(q, {
 					href: e.link,
 					onClick: e.onClick,
 					target: e.openInNewTab ? "_blank" : void 0
@@ -496,13 +496,13 @@
 					disabled: e.disabled,
 					indent: e.indent,
 					last: e.last
-				}, s.a.createElement(Q, null, s.a.createElement($, {
+				}, s.a.createElement(K, null, s.a.createElement($, {
 					onClick: e.onClick
 				}, e.label), s.a.createElement(J, null, e.subtext)), s.a.createElement(z, null, s.a.createElement($, {
 					onClick: e.onClick
 				}, s.a.createElement(ee, null)))),
 				Ce = Object(o.c)({
-					isOpen: (e, t) => Object(B.b)(t.id)(e)
+					isOpen: (e, t) => Object(R.b)(t.id)(e)
 				}),
 				ve = Object(r.b)(Ce, (e, t) => ({
 					openDropdown: () => {
@@ -514,7 +514,7 @@
 					last: e.last,
 					indent: e.indent,
 					disabled: e.disabled
-				}, s.a.createElement(Q, null, s.a.createElement(V, null, e.label), s.a.createElement(J, null, e.subtext)), s.a.createElement(z, null, (e => s.a.createElement("div", {
+				}, s.a.createElement(K, null, s.a.createElement(V, null, e.label), s.a.createElement(J, null, e.subtext)), s.a.createElement(z, null, (e => s.a.createElement("div", {
 					className: A.a.DropdownWrapper,
 					onClick: e.openDropdown
 				}, s.a.createElement("span", {
@@ -551,7 +551,7 @@
 						} = i;
 					return s.a.createElement(X, {
 						disabled: e
-					}, s.a.createElement(Q, null, s.a.createElement("label", {
+					}, s.a.createElement(K, null, s.a.createElement("label", {
 						htmlFor: i.id
 					}, s.a.createElement(V, {
 						className: i.labelClassname
@@ -581,7 +581,7 @@
 					disabled: e.disabled,
 					indent: e.indent,
 					last: e.last
-				}, s.a.createElement(Q, null, s.a.createElement(V, null, e.label), s.a.createElement(J, null, e.subtext)), s.a.createElement(z, null, e.children)),
+				}, s.a.createElement(K, null, s.a.createElement(V, null, e.label), s.a.createElement(J, null, e.subtext)), s.a.createElement(z, null, e.children)),
 				ge = e => s.a.createElement(te, {
 					isCreateCommunity: e.isCreateCommunity,
 					isRequired: e.isRequired,
@@ -889,8 +889,8 @@
 				M = n("./src/reddit/icons/svgs/Admin/index.tsx"),
 				D = n("./src/reddit/icons/svgs/Close/index.tsx"),
 				L = n("./src/reddit/icons/svgs/Eye/index.tsx"),
-				R = n("./src/reddit/icons/svgs/Info/index.tsx"),
-				B = n("./src/reddit/icons/svgs/Lock/index.tsx"),
+				B = n("./src/reddit/icons/svgs/Info/index.tsx"),
+				R = n("./src/reddit/icons/svgs/Lock/index.tsx"),
 				F = n("./src/reddit/icons/svgs/User/index.tsx"),
 				P = n("./src/reddit/models/Subreddit/index.ts"),
 				A = n("./src/reddit/models/SubredditRestrictions/index.ts"),
@@ -900,18 +900,18 @@
 				V = n("./src/reddit/selectors/user.ts"),
 				J = n("./src/reddit/components/SubredditCreationModal/index.m.less"),
 				Y = n.n(J),
-				K = n("./src/lib/lessComponent.tsx");
-			const Q = 21,
+				Q = n("./src/lib/lessComponent.tsx");
+			const K = 21,
 				z = "create-title-info",
-				X = K.a.wrapped(R.a, "Info", Y.a),
-				q = K.a.wrapped(O.a, "RadioOption", Y.a),
-				U = K.a.wrapped(x.c, "Tooltip", Y.a),
-				Z = K.a.wrapped(F.a, "Public", Y.a),
-				$ = K.a.wrapped(L.a, "Restricted", Y.a),
-				ee = K.a.wrapped(B.a, "Private", Y.a),
-				te = K.a.wrapped(M.a, "Employee", Y.a),
-				ne = K.a.wrapped(D.a, "CloseButton", Y.a),
-				ae = K.a.wrapped(k.b, "ErrorText", Y.a),
+				X = Q.a.wrapped(B.a, "Info", Y.a),
+				q = Q.a.wrapped(O.a, "RadioOption", Y.a),
+				U = Q.a.wrapped(x.c, "Tooltip", Y.a),
+				Z = Q.a.wrapped(F.a, "Public", Y.a),
+				$ = Q.a.wrapped(L.a, "Restricted", Y.a),
+				ee = Q.a.wrapped(R.a, "Private", Y.a),
+				te = Q.a.wrapped(M.a, "Employee", Y.a),
+				ne = Q.a.wrapped(D.a, "CloseButton", Y.a),
+				ae = Q.a.wrapped(k.b, "ErrorText", Y.a),
 				se = Object(o.c)({
 					error: G.g,
 					isCreatePending: G.k,
@@ -1135,7 +1135,7 @@
 						textContainerClassName: Y.a.fullWidthTextContainer,
 						onBlur: this.onValidateSubredditName,
 						onChange: this.onNameChange,
-						maxChars: Q,
+						maxChars: K,
 						value: this.state.name,
 						subtext: r.a.createElement("span", {
 							className: Y.a.subtextContainer
@@ -2017,11 +2017,11 @@
 			const r = e => {
 				const t = Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: a.Ac
+					experimentName: a.Bc
 				});
-				return !(!t || Object(a.Ke)(t))
+				return !(!t || Object(a.Le)(t))
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.99e6bcb0ef64b90b78ed.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.43907c50fb49b7a314ba.js.map

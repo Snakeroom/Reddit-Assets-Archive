@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RedesignChat.58fb75645054b6dd52f5.js
-// Retrieved at 9/23/2021, 1:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RedesignChat.8f2ecf1037b8a8b967f2.js
+// Retrieved at 9/23/2021, 5:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RedesignChat"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -56,8 +56,8 @@
 				T = n("./src/chat/constants/container.ts"),
 				M = n("./src/chat/helpers/chatSelector.ts"),
 				P = n("./src/chat/actions/container.ts"),
-				A = n("./src/chat/components/PortalContainer/index.m.less"),
-				R = n.n(A);
+				R = n("./src/chat/components/PortalContainer/index.m.less"),
+				A = n.n(R);
 			const {
 				embed: U,
 				hidden: B
@@ -68,7 +68,7 @@
 			}
 			const I = w.a.wrapped(e => c.a.createElement("div", {
 					className: e.className
-				}, e.children), "BasePortalContainer", R.a),
+				}, e.children), "BasePortalContainer", A.a),
 				k = w.a.wrapped(e => {
 					const t = Object(v.d)(),
 						n = Object(s.useRef)(null),
@@ -89,15 +89,15 @@
 							height: `${D(U.height)}px`
 						}
 					}, e.children)
-				}, "EmbedPortalContainer", R.a),
+				}, "EmbedPortalContainer", A.a),
 				q = w.a.wrapped(e => c.a.createElement("div", {
 					className: e.className,
 					style: {
 						width: `${D(B.width)}px`,
 						height: `${D(B.height)}px`
 					}
-				}, e.children), "HiddenPortalContainer", R.a),
-				L = w.a.wrapped(y.a, "MinimizedRedesignPortalContainer", R.a),
+				}, e.children), "HiddenPortalContainer", A.a),
+				L = w.a.wrapped(y.a, "MinimizedRedesignPortalContainer", A.a),
 				z = I,
 				F = Object(M.a)({
 					container: e => e && e.container && e.container.size
@@ -122,8 +122,8 @@
 				$ = n("./src/chat/customMiddleware/containerSize.ts"),
 				Y = n("./src/chat/customMiddleware/draftMessageText.ts"),
 				K = n("./src/chat/customMiddleware/iframeDispatcher.ts"),
-				V = n("./src/chat/customMiddleware/lastSelectedChannel.ts"),
-				W = n("./src/chat/customMiddleware/loggedOutPreferencesSync.ts"),
+				W = n("./src/chat/customMiddleware/lastSelectedChannel.ts"),
+				V = n("./src/chat/customMiddleware/loggedOutPreferencesSync.ts"),
 				J = n("./src/chat/customMiddleware/sendbirdToken.ts"),
 				X = n("./src/chat/customMiddleware/title.ts"),
 				Z = n("./src/chat/customMiddleware/tokenRefresher.ts"),
@@ -248,7 +248,7 @@
 						routes: he.a,
 						apiContext: fe.apiContext,
 						gqlContext: ge.gqlContext
-					}), fe.middleware, Z.a, J.a, K.a, W.a, Object(ee.a)(t), $.a, Q.a, H.a, Y.a, te.a, V.a, X.a, ne.a],
+					}), fe.middleware, Z.a, J.a, K.a, V.a, Object(ee.a)(t), $.a, Q.a, H.a, Y.a, te.a, W.a, X.a, ne.a],
 					modifyInitialData: ({
 						initialData: t,
 						browserHistory: n
@@ -758,10 +758,10 @@
 				a = n("./src/reddit/selectors/experiments/index.ts"),
 				i = n("./src/reddit/selectors/experiments/utils.ts");
 			const o = Object(s.a)(e => Object(r.c)(e, {
-					experimentName: c.Vc,
+					experimentName: c.Wc,
 					experimentEligibilitySelector: a.e
 				}), i.a),
-				d = Object(s.a)(o, e => e === c.Yc.Enabled)
+				d = Object(s.a)(o, e => e === c.Zc.Enabled)
 		},
 		"./src/reddit/selectors/experiments/inboxRedesign.ts": function(e, t, n) {
 			"use strict";
@@ -792,47 +792,47 @@
 				a = n("./src/reddit/selectors/experiments/index.ts"),
 				i = n("./src/reddit/selectors/experiments/utils.ts");
 			const o = Object(s.a)(e => Object(r.c)(e, {
-					experimentName: c.nb,
+					experimentName: c.ob,
 					experimentEligibilitySelector: a.e
 				}), i.a),
-				d = Object(s.a)(o, e => e === c.ed.Enabled),
+				d = Object(s.a)(o, e => e === c.fd.Enabled),
 				u = Object(s.a)(e => Object(r.c)(e, {
-					experimentName: c.Xc,
+					experimentName: c.Yc,
 					experimentEligibilitySelector: a.e
 				}), i.a),
-				l = Object(s.a)(d, u, (e, t) => e && t === c.dd.Enabled),
+				l = Object(s.a)(d, u, (e, t) => e && t === c.ed.Enabled),
 				b = Object(s.a)(e => Object(r.c)(e, {
-					experimentName: c.ub,
+					experimentName: c.vb,
 					experimentEligibilitySelector: a.e
 				}), i.a),
-				m = Object(s.a)(d, b, (e, t) => e && t === c.Hb.Enabled),
+				m = Object(s.a)(d, b, (e, t) => e && t === c.Ib.Enabled),
 				h = Object(s.a)(e => Object(r.c)(e, {
-					experimentName: c.kb,
-					experimentEligibilitySelector: a.e
-				}), i.a),
-				f = Object(s.a)(h, e => e === c.ad.Banner_1st_time),
-				g = Object(s.a)(h, e => e === c.ad.Tooltip_persist),
-				j = Object(s.a)(h, e => e === c.ad.Tooltip_1st_time),
-				p = Object(s.a)(e => Object(r.c)(e, {
 					experimentName: c.lb,
 					experimentEligibilitySelector: a.e
 				}), i.a),
-				x = Object(s.a)(p, e => e === c.bd.ContinuousScroll),
-				O = Object(s.a)(e => Object(r.c)(e, {
-					experimentName: c.db,
-					experimentEligibilitySelector: a.e
-				}), i.a),
-				C = Object(s.a)(O, e => e === c.Qb.Banner1stTime),
-				E = Object(s.a)(O, e => e === c.Qb.BannerPersist),
-				_ = Object(s.a)(e => Object(r.c)(e, {
+				f = Object(s.a)(h, e => e === c.bd.Banner_1st_time),
+				g = Object(s.a)(h, e => e === c.bd.Tooltip_persist),
+				j = Object(s.a)(h, e => e === c.bd.Tooltip_1st_time),
+				p = Object(s.a)(e => Object(r.c)(e, {
 					experimentName: c.mb,
 					experimentEligibilitySelector: a.e
 				}), i.a),
-				v = Object(s.a)(_, e => e === c.cd.Enabled)
+				x = Object(s.a)(p, e => e === c.cd.ContinuousScroll),
+				O = Object(s.a)(e => Object(r.c)(e, {
+					experimentName: c.eb,
+					experimentEligibilitySelector: a.e
+				}), i.a),
+				C = Object(s.a)(O, e => e === c.Rb.Banner1stTime),
+				E = Object(s.a)(O, e => e === c.Rb.BannerPersist),
+				_ = Object(s.a)(e => Object(r.c)(e, {
+					experimentName: c.nb,
+					experimentEligibilitySelector: a.e
+				}), i.a),
+				v = Object(s.a)(_, e => e === c.dd.Enabled)
 		},
 		"./src/redditGQL/operations/BadgeIndicators.json": function(e) {
 			e.exports = JSON.parse('{"id":"9d105ce5d71a"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.58fb75645054b6dd52f5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.8f2ecf1037b8a8b967f2.js.map

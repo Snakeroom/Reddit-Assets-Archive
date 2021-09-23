@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.eb1822f8c7c9a1edbb9f.js
-// Retrieved at 9/23/2021, 1:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.99b5e839ae8567c62994.js
+// Retrieved at 9/23/2021, 5:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, r) {
@@ -1141,7 +1141,7 @@
 						t && window.clearTimeout(t), i(!1)
 					}
 				}, [e]), e ? s.a.createElement("div", c({
-					className: Object(o.a)(a.a.tooltip, {
+					className: Object(o.a)(a.a.tooltip, t.className, {
 						[a.a.visible]: r
 					})
 				}, t.popperProps), t.children, r && s.a.createElement("div", c({
@@ -1515,7 +1515,7 @@
 						subreddit: r
 					} = e, {
 						isSponsored: n
-					} = t, s = Object(B.a)(), i = Object(G.a)(m.Lc) === m.Pc.Enabled;
+					} = t, s = Object(B.a)(), i = Object(G.a)(m.Mc) === m.Qc.Enabled;
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return o.a.createElement(K, {
 						nowrap: e.nowrap
 					}, o.a.createElement(Z, e));
@@ -3776,4 +3776,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.eb1822f8c7c9a1edbb9f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.99b5e839ae8567c62994.js.map

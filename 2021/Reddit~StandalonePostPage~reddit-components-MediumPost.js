@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-MediumPost.0e7a3f1a53b25bbb9d37.js
-// Retrieved at 9/23/2021, 1:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-MediumPost.38498c53554490972cda.js
+// Retrieved at 9/23/2021, 5:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~StandalonePostPage~reddit-components-MediumPost"], {
 		"./src/lib/hooks/useTooltip.ts": function(e, t, r) {
@@ -709,7 +709,7 @@
 						t && window.clearTimeout(t), a(!1)
 					}
 				}, [e]), e ? s.a.createElement("div", i({
-					className: Object(o.a)(c.a.tooltip, {
+					className: Object(o.a)(c.a.tooltip, t.className, {
 						[c.a.visible]: r
 					})
 				}, t.popperProps), t.children, r && s.a.createElement("div", i({
@@ -2893,21 +2893,21 @@
 				o = r("./src/reddit/helpers/chooseVariant/index.ts"),
 				a = r("./src/reddit/selectors/experiments/index.ts");
 			const c = Object(n.a)(e => Object(o.c)(e, {
-					experimentName: s.ob,
-					experimentEligibilitySelector: a.e
-				}), e => e === s.U.Enabled),
-				i = Object(n.a)(e => Object(o.c)(e, {
 					experimentName: s.pb,
 					experimentEligibilitySelector: a.e
 				}), e => e === s.V.Enabled),
-				d = Object(n.a)(e => Object(o.c)(e, {
+				i = Object(n.a)(e => Object(o.c)(e, {
 					experimentName: s.qb,
 					experimentEligibilitySelector: a.e
 				}), e => e === s.W.Enabled),
-				l = Object(n.a)(e => Object(o.c)(e, {
+				d = Object(n.a)(e => Object(o.c)(e, {
 					experimentName: s.rb,
 					experimentEligibilitySelector: a.e
-				}), e => e === s.X.Enabled)
+				}), e => e === s.X.Enabled),
+				l = Object(n.a)(e => Object(o.c)(e, {
+					experimentName: s.sb,
+					experimentEligibilitySelector: a.e
+				}), e => e === s.Y.Enabled)
 		},
 		"./src/reddit/selectors/experiments/postActionBarAnimation.ts": function(e, t, r) {
 			"use strict";
@@ -2986,8 +2986,8 @@
 				f = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: n.tb
-					}) === n.Gb.Enabled
+						experimentName: n.ub
+					}) === n.Hb.Enabled
 				}
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, r) {
@@ -3370,4 +3370,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-MediumPost.0e7a3f1a53b25bbb9d37.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-MediumPost.38498c53554490972cda.js.map

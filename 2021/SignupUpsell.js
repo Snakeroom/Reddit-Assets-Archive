@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SignupUpsell.907d6cd2b3930d29b86d.js
-// Retrieved at 9/23/2021, 1:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SignupUpsell.d16679964bbb6643a29a.js
+// Retrieved at 9/23/2021, 5:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SignupUpsell"], {
 		"./src/reddit/components/Upsell/SSOButton/index.m.less": function(e, t, n) {
@@ -217,18 +217,18 @@
 					experimentName: e,
 					experimentEligibilitySelector: c,
 					throttledVariants: {
-						[l.Db.Bottom_sheet]: e
+						[l.Eb.Bottom_sheet]: e
 					},
 					expEventOverride: t
 				})
 			}
-			const d = r(l.eb, !0),
-				m = r(l.fb, !0),
-				u = r(l.gb, !0),
-				p = r(l.eb, !1),
-				b = r(l.fb, !1),
-				g = r(l.gb, !1)
+			const d = r(l.fb, !0),
+				m = r(l.gb, !0),
+				u = r(l.hb, !0),
+				p = r(l.fb, !1),
+				b = r(l.gb, !1),
+				g = r(l.hb, !1)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SignupUpsell.907d6cd2b3930d29b86d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SignupUpsell.d16679964bbb6643a29a.js.map

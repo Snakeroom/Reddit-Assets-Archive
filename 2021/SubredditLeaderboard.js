@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.b6315a30e813d53c2efb.js
-// Retrieved at 9/23/2021, 1:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.e6ef033d00ff8d850571.js
+// Retrieved at 9/23/2021, 5:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, n) {
@@ -2193,8 +2193,8 @@
 				N = n.n(j),
 				T = n("./node_modules/lodash/upperFirst.js"),
 				w = n.n(T),
-				I = n("./src/reddit/actions/pages/subredditLeaderboard.ts"),
-				L = n("./src/reddit/actions/subreddit/topSubreddits.ts"),
+				L = n("./src/reddit/actions/pages/subredditLeaderboard.ts"),
+				I = n("./src/reddit/actions/subreddit/topSubreddits.ts"),
 				P = n("./src/reddit/components/TopSubredditsWidget/SubredditRankItem.tsx"),
 				B = n("./src/reddit/components/TopSubredditsWidget/SubredditRankItemPlaceholder.tsx"),
 				D = n("./src/reddit/models/GoodContent/index.ts"),
@@ -2221,7 +2221,7 @@
 					isInLeaderboardEntryJoinOptimizationsExperiment: e => !(!Object(M.g)(e) || !Object(F.a)(e) && !Object(F.c)(e))
 				}),
 				J = Object(o.b)(H, e => ({
-					fetchMoreSubreddits: (t, n) => e(Object(L.b)(t, n))
+					fetchMoreSubreddits: (t, n) => e(Object(I.b)(t, n))
 				}));
 			class Q extends i.a.Component {
 				constructor() {
@@ -2253,7 +2253,7 @@
 						categoryName: t,
 						isMod: n,
 						rankings: s
-					} = this.props, r = O()(s), a = r && r.cursor, i = Object(I.checkIsModCategory)(t, n);
+					} = this.props, r = O()(s), a = r && r.cursor, i = Object(L.checkIsModCategory)(t, n);
 					return {
 						after: a,
 						categoryId: e === b.c ? b.f : e,
@@ -2482,7 +2482,7 @@
 				Ee = (e, {
 					match: t
 				}) => Object(g.b)(t.params.categoryName || ""),
-				_e = Object(m.Ie)(b.i),
+				_e = Object(m.Je)(b.i),
 				Se = Object(d.c)({
 					categories: e => Object(ye.c)(e, {
 						categoriesOrder: _e
@@ -2611,4 +2611,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.b6315a30e813d53c2efb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.e6ef033d00ff8d850571.js.map
