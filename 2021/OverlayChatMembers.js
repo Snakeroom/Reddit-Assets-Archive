@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OverlayChatMembers.17a2eb6ad72aaa9df2c5.js
-// Retrieved at 9/13/2021, 2:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OverlayChatMembers.00b4fc5cd9dde9e551fd.js
+// Retrieved at 9/23/2021, 7:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OverlayChatMembers"], {
 		"./src/chat/components/OverlayChatMembers/index.m.less": function(e, t, r) {
@@ -29,13 +29,13 @@
 				y = r("./src/chat/selectors/channels.ts"),
 				x = r("./src/chat/selectors/members.ts"),
 				_ = r("./src/chat/components/OverlayChatMembers/index.m.less"),
-				O = r.n(_);
-			const B = c.a.wrapped(i.b, "Scroller", O.a),
-				C = c.a.div("LoadingIndicator", O.a),
+				B = r.n(_);
+			const O = c.a.wrapped(i.b, "Scroller", B.a),
+				C = c.a.div("LoadingIndicator", B.a),
 				f = Object(p.a)({
-					channelType: e => Object(y.A)(e, "type"),
+					channelType: e => Object(y.B)(e, "type"),
 					currentChannel: y.m,
-					memberCount: e => Object(y.A)(e, "memberCount"),
+					memberCount: e => Object(y.B)(e, "memberCount"),
 					members: e => Object(x.f)(e),
 					fetchingMembers: x.a,
 					hasMoreMembers: x.d
@@ -73,7 +73,7 @@
 						}, [a.fbt._plural(n, "number of members")], {
 							hk: "4phXDa"
 						})
-					}), s.a.createElement(B, {
+					}), s.a.createElement(O, {
 						loadMoreRows: x,
 						isLoadMoreRowsComplete: _,
 						threshold: 0
@@ -205,4 +205,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayChatMembers.17a2eb6ad72aaa9df2c5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayChatMembers.00b4fc5cd9dde9e551fd.js.map

@@ -1,11 +1,11 @@
-// https://www.redditstatic.com/desktop2x/OverlayReport.4f07fe7defd3cd799a0d.js
-// Retrieved at 9/14/2021, 12:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OverlayReport.12c4775185626c0da224.js
+// Retrieved at 9/23/2021, 7:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OverlayReport"], {
 		"./src/chat/components/OverlayReport/index.tsx": function(e, t, s) {
 			"use strict";
 			s.r(t), s.d(t, "OverlayReport", (function() {
-				return M
+				return P
 			}));
 			var a = s("./node_modules/fbt/lib/FbtPublic.js"),
 				n = s("./node_modules/lodash/map.js"),
@@ -51,12 +51,12 @@
 				N = Object(E.a)({
 					user: (e, t) => t.attr === w.a.User ? e.contacts.models[t.attrId] : void 0,
 					message: (e, t) => t.attr === w.a.Invite || t.attr === w.a.Message ? Object(T.b)(e, Number(t.attrId)) : void 0,
-					messageList: e => Object(j.B)(e),
+					messageList: e => Object(j.C)(e),
 					currentUserId: (e, t) => Object(L.a)(e)
 				}),
 				H = Object(l.b)(N, e => ({
 					onReportUser: (t, s) => {
-						e(Object(m.M)(s.id)), e((e => async (t, s, {
+						e(Object(m.N)(s.id)), e((e => async (t, s, {
 							apiContext: a
 						}) => {
 							const {
@@ -73,7 +73,7 @@
 						})).then(() => e(Object(i.a)()))
 					},
 					onReportMessage: (t, s, a) => {
-						e(Object(m.O)(s.messageId, t)), e(((e, t, s) => async (a, n, {
+						e(Object(m.P)(s.messageId, t)), e(((e, t, s) => async (a, n, {
 							apiContext: r
 						}) => {
 							const o = Object(h.a)(e, t),
@@ -82,7 +82,7 @@
 						})(t, s, a))
 					}
 				}));
-			class M extends o.Component {
+			class P extends o.Component {
 				constructor(e) {
 					super(e), this.selectReason = e => this.setState({
 						selectedReason: e
@@ -197,7 +197,7 @@
 					}))
 				}
 			}
-			t.default = H(M)
+			t.default = H(P)
 		},
 		"./src/chat/controls/Checkbox/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -404,4 +404,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayReport.4f07fe7defd3cd799a0d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayReport.12c4775185626c0da224.js.map

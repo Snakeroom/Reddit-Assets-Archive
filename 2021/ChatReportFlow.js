@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatReportFlow.1775a1947f256c3121bd.js
-// Retrieved at 9/14/2021, 12:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatReportFlow.3e121ab9f81c3bf1529d.js
+// Retrieved at 9/23/2021, 7:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatReportFlow"], {
 		"./src/chat/components/ReportFlow/BlockUserFlow/index.m.less": function(e, t, n) {
@@ -88,8 +88,8 @@
 				H = p.a.div("Header", C.a),
 				U = p.a.div("SelectValue", C.a),
 				B = p.a.div("LoadingIndicator", C.a),
-				L = p.a.div("RadioOptionsSectionHeader", C.a),
-				F = p.a.wrapped(R.a, "DropdownRow", C.a),
+				F = p.a.div("RadioOptionsSectionHeader", C.a),
+				L = p.a.wrapped(R.a, "DropdownRow", C.a),
 				y = p.a.div("PickerWrapper", C.a),
 				N = p.a.wrapped(e => a.a.createElement("div", {
 					className: e.className,
@@ -173,7 +173,7 @@
 			}
 			var K = Object(r.b)(Y, (e, {}) => ({
 					onBlockUser: t => {
-						e(Object(h.n)(t, !0)), e(Object(d.L)(t))
+						e(Object(h.n)(t, !0)), e(Object(d.M)(t))
 					}
 				}))(G),
 				z = n("./src/chat/components/ReportFlow/FileComplaintFlow/index.m.less"),
@@ -226,7 +226,7 @@
 						tooltipId: se,
 						container: document.getElementById(te.a),
 						excludeContainerPosition: !0
-					}, l ? l.map((n, s) => a.a.createElement(F, {
+					}, l ? l.map((n, s) => a.a.createElement(L, {
 						key: n.reasonTextToShow,
 						displayText: n.reasonTextToShow,
 						isSelected: c === s,
@@ -245,7 +245,7 @@
 					} = s, r = e.nextStepReasons, l = (o && o.length > t ? o[t] : -1) === n;
 					return r && r.length && l ? a.a.createElement(N, {
 						depth: t
-					}, a.a.createElement(L, null, e.nextStepHeader), r.map((e, n) => a.a.createElement(a.a.Fragment, null, a.a.createElement(k, {
+					}, a.a.createElement(F, null, e.nextStepHeader), r.map((e, n) => a.a.createElement(a.a.Fragment, null, a.a.createElement(k, {
 						rightPosition: !0,
 						type: "radio",
 						name: `other_report_reason-${t}`,
@@ -495,4 +495,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatReportFlow.1775a1947f256c3121bd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatReportFlow.3e121ab9f81c3bf1529d.js.map

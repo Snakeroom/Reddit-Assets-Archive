@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InvitedChannelsPanel.275eb89841c9a118e91e.js
-// Retrieved at 9/22/2021, 8:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InvitedChannelsPanel.885967d47b8b8e1738ba.js
+// Retrieved at 9/23/2021, 7:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InvitedChannelsPanel"], {
 		"./src/chat/components/Sidebar/InvitedChannelsPanel/index.m.less": function(e, n, t) {
@@ -35,7 +35,7 @@
 			n.default = () => {
 				const e = Object(d.d)();
 				Object(r.useEffect)(() => {
-					e(Object(p.T)())
+					e(Object(p.U)())
 				}, [e]);
 				const n = Object(d.e)(u.d),
 					t = Object(d.e)(x.a),
@@ -61,4 +61,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InvitedChannelsPanel.275eb89841c9a118e91e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InvitedChannelsPanel.885967d47b8b8e1738ba.js.map

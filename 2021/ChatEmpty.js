@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatEmpty.e288e91c6334c8b3e705.js
-// Retrieved at 2/28/2021, 9:18:37 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatEmpty.c972414d60bb0116d22d.js
+// Retrieved at 9/23/2021, 7:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatEmpty"], {
 		"./src/chat/components/EmptyState/index.m.less": function(e, t, a) {
@@ -70,8 +70,9 @@
 			}, r.a.createElement(v, {
 				primary: !0
 			}, r.a.createElement(x.a, {
+				isFilled: !0,
 				width: "1em"
-			}), " ", s.fbt._("New Chat", null, {
+			}), s.fbt._("New Chat", null, {
 				hk: "1fS294"
 			})))))));
 			class X extends r.a.Component {
@@ -82,4 +83,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatEmpty.e288e91c6334c8b3e705.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatEmpty.c972414d60bb0116d22d.js.map
