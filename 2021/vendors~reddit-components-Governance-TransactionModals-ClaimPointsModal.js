@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~reddit-components-Governance-TransactionModals-ClaimPointsModal.45c45dc2b0aa3d257b7c.js
-// Retrieved at 8/2/2021, 12:50:26 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~reddit-components-Governance-TransactionModals-ClaimPointsModal.10dc51464efc4658a96c.js
+// Retrieved at 9/23/2021, 10:30:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~reddit-components-Governance-TransactionModals-ClaimPointsModal", "vendors~reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-~bd661033", "CryptoLibEthers", "vendors~reddit-components-Governance-TransactionModals-SubscriptionModal"], {
 		"./node_modules/@ethersproject/address/lib.esm/index.js": function(e, r, t) {
@@ -19,7 +19,7 @@
 				o = t("./node_modules/@ethersproject/bignumber/lib.esm/bignumber.js"),
 				i = t("./node_modules/@ethersproject/keccak256/lib.esm/index.js"),
 				s = t("./node_modules/@ethersproject/rlp/lib.esm/index.js");
-			const u = new(t("./node_modules/@ethersproject/logger/lib.esm/index.js").b)("address/5.4.0");
+			const u = new(t("./node_modules/@ethersproject/logger/lib.esm/index.js").a)("address/5.4.0");
 
 			function a(e) {
 				Object(n.l)(e, 20) || u.throwArgumentError("invalid address", "address", e);
@@ -109,7 +109,7 @@
 				s = t("./node_modules/@ethersproject/logger/lib.esm/index.js"),
 				u = t("./node_modules/@ethersproject/bignumber/lib.esm/_version.js"),
 				a = o.a.BN;
-			const c = new s.b(u.a),
+			const c = new s.a(u.a),
 				l = {},
 				d = 9007199254740991;
 
@@ -119,7 +119,7 @@
 			let h = !1;
 			class g {
 				constructor(e, r) {
-					c.checkNew(new.target, g), e !== l && c.throwError("cannot call constructor directly; use BigNumber.from", s.b.errors.UNSUPPORTED_OPERATION, {
+					c.checkNew(new.target, g), e !== l && c.throwError("cannot call constructor directly; use BigNumber.from", s.a.errors.UNSUPPORTED_OPERATION, {
 						operation: "new (BigNumber)"
 					}), this._hex = r, this._isBigNumber = !0, Object.freeze(this)
 				}
@@ -206,12 +206,12 @@
 					try {
 						return BigInt(this.toString())
 					} catch (e) {}
-					return c.throwError("this platform does not support BigInt", s.b.errors.UNSUPPORTED_OPERATION, {
+					return c.throwError("this platform does not support BigInt", s.a.errors.UNSUPPORTED_OPERATION, {
 						value: this.toString()
 					})
 				}
 				toString() {
-					return arguments.length > 0 && (10 === arguments[0] ? h || (h = !0, c.warn("BigNumber.toString does not accept any parameters; base-10 is assumed")) : 16 === arguments[0] ? c.throwError("BigNumber.toString does not accept any parameters; use bigNumber.toHexString()", s.b.errors.UNEXPECTED_ARGUMENT, {}) : c.throwError("BigNumber.toString does not accept parameters", s.b.errors.UNEXPECTED_ARGUMENT, {})), v(this).toString(10)
+					return arguments.length > 0 && (10 === arguments[0] ? h || (h = !0, c.warn("BigNumber.toString does not accept any parameters; base-10 is assumed")) : 16 === arguments[0] ? c.throwError("BigNumber.toString does not accept any parameters; use bigNumber.toHexString()", s.a.errors.UNEXPECTED_ARGUMENT, {}) : c.throwError("BigNumber.toString does not accept parameters", s.a.errors.UNEXPECTED_ARGUMENT, {})), v(this).toString(10)
 				}
 				toHexString() {
 					return this._hex
@@ -265,7 +265,7 @@
 					fault: e,
 					operation: r
 				};
-				return null != t && (n.value = t), c.throwError(e, s.b.errors.NUMERIC_FAULT, n)
+				return null != t && (n.value = t), c.throwError(e, s.a.errors.NUMERIC_FAULT, n)
 			}
 
 			function E(e) {
@@ -311,7 +311,7 @@
 			})), t.d(r, "m", (function() {
 				return _
 			}));
-			const n = new(t("./node_modules/@ethersproject/logger/lib.esm/index.js").b)("bytes/5.4.0");
+			const n = new(t("./node_modules/@ethersproject/logger/lib.esm/index.js").a)("bytes/5.4.0");
 
 			function o(e) {
 				return !!e.toHexString
@@ -617,8 +617,6 @@
 		"./node_modules/@ethersproject/logger/lib.esm/index.js": function(e, r, t) {
 			"use strict";
 			t.d(r, "a", (function() {
-				return d
-			})), t.d(r, "b", (function() {
 				return f
 			}));
 			const n = "logger/5.4.0";
@@ -783,7 +781,7 @@
 			}));
 			var n = t("./node_modules/@ethersproject/bytes/lib.esm/index.js"),
 				o = t("./node_modules/@ethersproject/logger/lib.esm/index.js");
-			const i = new o.b("rlp/5.4.0");
+			const i = new o.a("rlp/5.4.0");
 
 			function s(e) {
 				const r = [];
@@ -820,7 +818,7 @@
 				const s = [];
 				for (; t < r + 1 + n;) {
 					const u = l(e, t);
-					s.push(u.result), (t += u.consumed) > r + 1 + n && i.throwError("child data too short", o.b.errors.BUFFER_OVERRUN, {})
+					s.push(u.result), (t += u.consumed) > r + 1 + n && i.throwError("child data too short", o.a.errors.BUFFER_OVERRUN, {})
 				}
 				return {
 					consumed: 1 + n,
@@ -829,28 +827,28 @@
 			}
 
 			function l(e, r) {
-				if (0 === e.length && i.throwError("data too short", o.b.errors.BUFFER_OVERRUN, {}), e[r] >= 248) {
+				if (0 === e.length && i.throwError("data too short", o.a.errors.BUFFER_OVERRUN, {}), e[r] >= 248) {
 					const t = e[r] - 247;
-					r + 1 + t > e.length && i.throwError("data short segment too short", o.b.errors.BUFFER_OVERRUN, {});
+					r + 1 + t > e.length && i.throwError("data short segment too short", o.a.errors.BUFFER_OVERRUN, {});
 					const n = u(e, r + 1, t);
-					return r + 1 + t + n > e.length && i.throwError("data long segment too short", o.b.errors.BUFFER_OVERRUN, {}), c(e, r, r + 1 + t, t + n)
+					return r + 1 + t + n > e.length && i.throwError("data long segment too short", o.a.errors.BUFFER_OVERRUN, {}), c(e, r, r + 1 + t, t + n)
 				}
 				if (e[r] >= 192) {
 					const t = e[r] - 192;
-					return r + 1 + t > e.length && i.throwError("data array too short", o.b.errors.BUFFER_OVERRUN, {}), c(e, r, r + 1, t)
+					return r + 1 + t > e.length && i.throwError("data array too short", o.a.errors.BUFFER_OVERRUN, {}), c(e, r, r + 1, t)
 				}
 				if (e[r] >= 184) {
 					const t = e[r] - 183;
-					r + 1 + t > e.length && i.throwError("data array too short", o.b.errors.BUFFER_OVERRUN, {});
+					r + 1 + t > e.length && i.throwError("data array too short", o.a.errors.BUFFER_OVERRUN, {});
 					const s = u(e, r + 1, t);
-					return r + 1 + t + s > e.length && i.throwError("data array too short", o.b.errors.BUFFER_OVERRUN, {}), {
+					return r + 1 + t + s > e.length && i.throwError("data array too short", o.a.errors.BUFFER_OVERRUN, {}), {
 						consumed: 1 + t + s,
 						result: Object(n.i)(e.slice(r + 1 + t, r + 1 + t + s))
 					}
 				}
 				if (e[r] >= 128) {
 					const t = e[r] - 128;
-					return r + 1 + t > e.length && i.throwError("data too short", o.b.errors.BUFFER_OVERRUN, {}), {
+					return r + 1 + t > e.length && i.throwError("data too short", o.a.errors.BUFFER_OVERRUN, {}), {
 						consumed: 1 + t,
 						result: Object(n.i)(e.slice(r + 1, r + 1 + t))
 					}
@@ -2050,4 +2048,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~reddit-components-Governance-TransactionModals-ClaimPointsModal.45c45dc2b0aa3d257b7c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~reddit-components-Governance-TransactionModals-ClaimPointsModal.10dc51464efc4658a96c.js.map
