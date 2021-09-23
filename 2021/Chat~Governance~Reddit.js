@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.e8b738011be95ae74428.js
-// Retrieved at 9/23/2021, 10:30:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.37c5cdbca14b295521af.js
+// Retrieved at 9/23/2021, 10:50:09 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -2494,13 +2494,13 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("145867"),
+				buildNumber: r("145873"),
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1632405897"),
+				})("1632407166"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -4997,14 +4997,14 @@
 					}))
 				},
 				z = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c7b1e80f9ae62c6dd2cbc4a5dc1f126e687e42ae3-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c364b0fb3c6d2d7c3d1c2807378f0b62e48d9824a-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${v.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "7b1e80f9ae62c6dd2cbc4a5dc1f126e687e42ae3-production",
+						release: "364b0fb3c6d2d7c3d1c2807378f0b62e48d9824a-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -5517,7 +5517,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "7b1e80f9ae62c6dd2cbc4a5dc1f126e687e42ae3-production",
+						releaseClient: "364b0fb3c6d2d7c3d1c2807378f0b62e48d9824a-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -15006,15 +15006,15 @@
 			})), i.d(t, "T", (function() {
 				return xr
 			})), i.d(t, "m", (function() {
-				return Lr
-			})), i.d(t, "Bc", (function() {
 				return Br
+			})), i.d(t, "Bc", (function() {
+				return kr
 			})), i.d(t, "Fe", (function() {
-				return Mr
-			})), i.d(t, "jd", (function() {
 				return Ur
-			})), i.d(t, "Ge", (function() {
+			})), i.d(t, "jd", (function() {
 				return Gr
+			})), i.d(t, "Ge", (function() {
+				return Vr
 			}));
 			i("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = i("./node_modules/fbt/lib/FbtPublic.js");
@@ -15166,7 +15166,7 @@
 			}(kt || (kt = {}));
 			const Mt = "enabled",
 				Ut = e => e === kt.Control1 || e === kt.Control2;
-			var Gt, Vt, qt, Ht, Wt, Kt, $t, zt, Yt, Qt, Jt, Xt, Zt, ei, ti, ii, ni, ri, si, oi, di, ai, li, ui, ci, _i, mi, pi, hi, fi, bi, gi, wi, yi, vi, Ei, Ti, Si, Oi, Ii, Ri, Fi, Ci, Ni, ji, Ai, Pi, Di, xi, Li, Bi, ki, Mi, Ui, Gi, Vi, qi, Hi, Wi, Ki, $i, zi, Yi, Qi, Ji, Xi, Zi, en, tn, nn, rn, sn, on, dn, an, ln, un, cn, _n, mn, pn, hn, fn, bn, gn, wn, yn, vn, En, Tn, Sn, On, In, Rn, Fn, Cn, Nn, jn, An, Pn, Dn, xn, Ln, Bn, kn, Mn, Un, Gn, Vn, qn, Hn, Wn, Kn, $n, zn, Yn, Qn, Jn, Xn, Zn, er, tr, ir, nr, rr, sr, or, dr, ar, lr, ur, cr, _r, mr, pr, hr, fr, br, gr, wr, yr, vr, Er, Tr, Sr, Or, Ir, Rr, Fr, Cr, Nr, jr, Ar, Pr, Dr, xr;
+			var Gt, Vt, qt, Ht, Wt, Kt, $t, zt, Yt, Qt, Jt, Xt, Zt, ei, ti, ii, ni, ri, si, oi, di, ai, li, ui, ci, _i, mi, pi, hi, fi, bi, gi, wi, yi, vi, Ei, Ti, Si, Oi, Ii, Ri, Fi, Ci, Ni, ji, Ai, Pi, Di, xi, Li, Bi, ki, Mi, Ui, Gi, Vi, qi, Hi, Wi, Ki, $i, zi, Yi, Qi, Ji, Xi, Zi, en, tn, nn, rn, sn, on, dn, an, ln, un, cn, _n, mn, pn, hn, fn, bn, gn, wn, yn, vn, En, Tn, Sn, On, In, Rn, Fn, Cn, Nn, jn, An, Pn, Dn, xn, Ln, Bn, kn, Mn, Un, Gn, Vn, qn, Hn, Wn, Kn, $n, zn, Yn, Qn, Jn, Xn, Zn, er, tr, ir, nr, rr, sr, or, dr, ar, lr, ur, cr, _r, mr, pr, hr, fr, br, gr, wr, yr, vr, Er, Tr, Sr, Or, Ir, Rr, Fr, Cr, Nr, jr, Ar, Pr, Dr, xr, Lr;
 			! function(e) {
 				e.Enabled = "enabled"
 			}(Gt || (Gt = {})),
@@ -15634,8 +15634,11 @@
 			}(Dr || (Dr = {})),
 			function(e) {
 				e.Enabled = "enabled"
-			}(xr || (xr = {}));
-			const Lr = {
+			}(xr || (xr = {})),
+			function(e) {
+				e.Enabled = "enabled"
+			}(Lr || (Lr = {}));
+			const Br = {
 					[Pt]: [Mt],
 					[rt]: [Mt],
 					[At]: [jr.Enabled],
@@ -15643,6 +15646,7 @@
 					[jt]: [Nr.UIChangesOnly, Nr.RedditRecommendation, Nr.OpenAI, Nr.FilteredOpenAI],
 					d2x_creator_stats: [Mt],
 					[Nt]: [Cr.Enabled],
+					d2x_mod_pn_settings: [Lr.Enabled],
 					[et]: [Gt.Enabled],
 					[Ct]: [Rr.TwoDayCooldown, Rr.FiveDayCooldown],
 					[tt]: [Fr.Bottom_sheet, Fr.Bottom_cell],
@@ -15790,8 +15794,8 @@
 					[xt]: [Pr.Enabled],
 					[Dt]: [Ar.Enabled]
 				},
-				Br = new Set([E, l, S, B, "guest_d2x_subreddit_subreddit_links_url", X, Z, ie, oe, de, ce, ve, Ne, ke, He, "shreddit_pdp_bucketing", at, _t, pt, ht, jt, ft]),
-				kr = {
+				kr = new Set([E, l, S, B, "guest_d2x_subreddit_subreddit_links_url", X, Z, ie, oe, de, ce, ve, Ne, ke, He, "shreddit_pdp_bucketing", at, _t, pt, ht, jt, ft]),
+				Mr = {
 					NFL: () => n.fbt._("NFL", null, {
 						hk: "3ktT9l"
 					}),
@@ -15898,10 +15902,10 @@
 						hk: "nSJdn"
 					})
 				},
-				Mr = e => e.reduce((e, t, i) => (e[t] = i + 1, e), {}),
-				Ur = Mr(["NFL", "Discussion", "Relationships", "Sports", "Gaming", "News", "Beauty", "Health & Fitness", "Learning", "Parenting", "Tech", "Crypto", "Science", "Video Games", "TV", "Popcorn", "Vroom", "Food", "Outdoors", "Fashion", "Books & Writing", "Art & Design", "Nostalgia", "Music", "Travel", "Photography", "Funny", "Wholesome", "Memes", "Aww", "Pics & Gifs", "Mindblowing", "Videos", "Cringe", "Schadenfreude"]),
-				Gr = e => {
-					const t = kr[e];
+				Ur = e => e.reduce((e, t, i) => (e[t] = i + 1, e), {}),
+				Gr = Ur(["NFL", "Discussion", "Relationships", "Sports", "Gaming", "News", "Beauty", "Health & Fitness", "Learning", "Parenting", "Tech", "Crypto", "Science", "Video Games", "TV", "Popcorn", "Vroom", "Food", "Outdoors", "Fashion", "Books & Writing", "Art & Design", "Nostalgia", "Music", "Travel", "Photography", "Funny", "Wholesome", "Memes", "Aww", "Pics & Gifs", "Mindblowing", "Videos", "Cringe", "Schadenfreude"]),
+				Vr = e => {
+					const t = Mr[e];
 					return t && t() || e
 				}
 		},
@@ -41061,4 +41065,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.e8b738011be95ae74428.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.37c5cdbca14b295521af.js.map
