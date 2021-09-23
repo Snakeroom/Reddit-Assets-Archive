@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.519641599c777c269cc3.js
-// Retrieved at 9/23/2021, 12:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.cfee372675317596bd6f.js
+// Retrieved at 9/23/2021, 1:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, n) {
@@ -11061,8 +11061,8 @@
 				Be = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const Re = Object(c.a)(e => Object(Be.c)(e, {
 				experimentEligibilitySelector: A.K,
-				experimentName: Le.G
-			}), e => e === Le.Q.Enabled);
+				experimentName: Le.H
+			}), e => e === Le.R.Enabled);
 			var Fe = n("./src/reddit/selectors/meta.ts"),
 				Ue = n("./src/reddit/components/Settings/AccountPrefsSection/index.m.less"),
 				De = n.n(Ue);
@@ -12424,8 +12424,8 @@
 				}), e => e === Le.b.Enabled),
 				or = Object(c.a)(e => Object(Be.c)(e, {
 					experimentEligibilitySelector: A.K,
-					experimentName: Le.F
-				}), e => e === Le.P.Enabled),
+					experimentName: Le.G
+				}), e => e === Le.Q.Enabled),
 				ar = at.a.span("SubheaderLink", Mn.a),
 				ir = at.a.button("GenerateBackupCodesButton", Mn.a),
 				cr = at.a.wrapped(xe.f, "ThirdPartyAuth", Mn.a),
@@ -14103,7 +14103,7 @@
 			}));
 			var s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const o = Object(r.a)(s.Bd)
+			const o = Object(r.a)(s.Cd)
 		},
 		"./src/reddit/selectors/gold/productOffers.ts": function(e, t, n) {
 			"use strict";
@@ -14257,4 +14257,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.519641599c777c269cc3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.cfee372675317596bd6f.js.map

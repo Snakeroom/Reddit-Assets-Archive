@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.7c6348e3465c841cbe68.js
-// Retrieved at 9/23/2021, 12:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.1f8c0d07f1c81214b404.js
+// Retrieved at 9/23/2021, 1:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "AchievementsActions", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -3443,8 +3443,8 @@
 					showContributorRequestFlow: e => Object(ne.q)(e, lt.e.Post),
 					showCreatePollButton: e => (e => Object(bt.c)(e, {
 						experimentEligibilitySelector: bt.a,
-						experimentName: pt.J
-					}) === pt.R.Treatment)(e) && !Object(et.g)(),
+						experimentName: pt.K
+					}) === pt.S.Treatment)(e) && !Object(et.g)(),
 					shouldShowFlairPreview: (e, {
 						listingName: t
 					}) => {
@@ -4938,10 +4938,10 @@
 						return !(!t.isStickied || !((e, t) => {
 							const n = Object(o.c)(e, {
 								experimentEligibilitySelector: o.a,
-								experimentName: i.D,
+								experimentName: i.E,
 								expEventOverride: t
 							});
-							return !!(Object(i.Je)(n) ? void 0 : n)
+							return !!(Object(i.Ke)(n) ? void 0 : n)
 						})(n)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -6523,9 +6523,9 @@
 				s = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = n("./src/reddit/selectors/user.ts");
 			const o = e => {
-				return Object(i.H)(e) || r.K.Treatment1 === Object(s.c)(e, {
+				return Object(i.H)(e) || r.L.Treatment1 === Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: r.B
+					experimentName: r.C
 				})
 			}
 		},
@@ -6731,4 +6731,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.7c6348e3465c841cbe68.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.1f8c0d07f1c81214b404.js.map

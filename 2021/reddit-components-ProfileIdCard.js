@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.1f587971c93b9cf87f7b.js
-// Retrieved at 9/23/2021, 12:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.bf735447db88f7e826ec.js
+// Retrieved at 9/23/2021, 1:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ProfileIdCard"], {
 		"./node_modules/lodash/compact.js": function(e, t) {
@@ -3173,8 +3173,8 @@
 				s = r("./src/reddit/helpers/chooseVariant/index.ts");
 			const a = e => Object(s.c)(e, {
 				experimentEligibilitySelector: s.a,
-				experimentName: n.q
-			}) === n.t.Enabled
+				experimentName: n.r
+			}) === n.u.Enabled
 		},
 		"./src/reddit/selectors/experiments/profileFollowerList.ts": function(e, t, r) {
 			"use strict";
@@ -3183,7 +3183,7 @@
 			}));
 			var n = r("./src/reddit/constants/experiments.ts"),
 				s = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const a = Object(s.a)(n.Bd)
+			const a = Object(s.a)(n.Cd)
 		},
 		"./src/reddit/selectors/premium.ts": function(e, t, r) {
 			"use strict";
@@ -3209,4 +3209,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.1f587971c93b9cf87f7b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.bf735447db88f7e826ec.js.map

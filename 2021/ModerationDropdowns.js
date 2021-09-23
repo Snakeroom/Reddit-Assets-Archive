@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.387c2215197b75e758a1.js
-// Retrieved at 9/23/2021, 12:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.07c323ee5f6a5857bb4f.js
+// Retrieved at 9/23/2021, 1:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./node_modules/uuid/index.js": function(e, t, n) {
@@ -203,7 +203,7 @@
 						moreCommentsItem: i,
 						...f.error
 					}))
-				}, G = Object(f.a)(h.b, k.a.upvoted), U = Object(f.a)(h.b, k.a.downvoted), z = Object(i.a)(P.j), W = Object(i.a)(P.i), K = Object(i.a)(P.e), Q = Object(i.a)(P.f), V = (Object(i.a)(P.c), Object(i.a)(P.d), ({
+				}, G = Object(f.a)(h.b, k.a.upvoted), U = Object(f.a)(h.b, k.a.downvoted), z = Object(i.a)(P.j), W = Object(i.a)(P.i), Q = Object(i.a)(P.e), K = Object(i.a)(P.f), V = (Object(i.a)(P.c), Object(i.a)(P.d), ({
 					commentId: e,
 					commentsPageKey: t,
 					scrollToAndRemeasure: n
@@ -219,7 +219,7 @@
 							commentsPageKey: t
 						}),
 						d = a.depth;
-					o(K({
+					o(Q({
 						commentId: e,
 						commentsPageKey: t,
 						isCollapsed: c
@@ -228,7 +228,7 @@
 					commentId: e,
 					commentsPageKey: t
 				}) => async n => {
-					n(Q({
+					n(K({
 						commentId: e,
 						commentsPageKey: t
 					}))
@@ -244,7 +244,7 @@
 							commentId: e.id,
 							commentsPageKey: t
 						});
-					s(K({
+					s(Q({
 						commentId: a,
 						commentsPageKey: t,
 						isCollapsed: c
@@ -476,9 +476,9 @@
 			})), n.d(t, "m", (function() {
 				return W
 			})), n.d(t, "i", (function() {
-				return K
-			})), n.d(t, "j", (function() {
 				return Q
+			})), n.d(t, "j", (function() {
+				return K
 			})), n.d(t, "p", (function() {
 				return V
 			})), n.d(t, "q", (function() {
@@ -690,7 +690,7 @@
 						} = s.body.data;
 					if (!r.tournament) throw new Error("Failed to update prediction name");
 					return t(U(r.tournament)), r.tournament
-				}, K = e => async (t, n, {
+				}, Q = e => async (t, n, {
 					gqlContext: o
 				}) => {
 					const s = await Object(u.h)(o(), {
@@ -702,7 +702,7 @@
 					} = s.body.data;
 					if (!r.predictionChipPackages) throw new Error("Failed to fetch prediction chip packages");
 					return r.predictionChipPackages
-				}, Q = e => async (t, n, {
+				}, K = e => async (t, n, {
 					gqlContext: o
 				}) => {
 					const s = await Object(u.i)(o(), {
@@ -1532,8 +1532,8 @@
 					post: A
 				}) => {
 					var G, U, z, W;
-					const K = Object(r.e)(N.s),
-						Q = Object(r.e)(e => {
+					const Q = Object(r.e)(N.s),
+						K = Object(r.e)(e => {
 							var t;
 							return (null === (t = A.pollData) || void 0 === t ? void 0 : t.isPrediction) && null !== A.pollData.resolvedOptionId && Object(N.p)(e)
 						}),
@@ -1598,12 +1598,12 @@
 							hk: "hgWFW"
 						}),
 						onClick: m
-					}, s.a.createElement(S.i, null)), K && (null === (z = A.pollData) || void 0 === z ? void 0 : z.isPrediction) && !(null === (W = A.pollData) || void 0 === W ? void 0 : W.resolvedOptionId) && s.a.createElement(S.e, {
+					}, s.a.createElement(S.i, null)), Q && (null === (z = A.pollData) || void 0 === z ? void 0 : z.isPrediction) && !(null === (W = A.pollData) || void 0 === W ? void 0 : W.resolvedOptionId) && s.a.createElement(S.e, {
 						displayText: C.fbt._("Update the end date", null, {
 							hk: "FjDpu"
 						}),
 						onClick: f
-					}, s.a.createElement(S.b, null)), Q && s.a.createElement(S.e, {
+					}, s.a.createElement(S.b, null)), K && s.a.createElement(S.e, {
 						textClassName: M.a.text,
 						onClick: b,
 						displayText: C.fbt._("Change the outcome", null, {
@@ -2955,14 +2955,14 @@
 			const r = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: o.Ad
-					}) === o.Ld.Enabled
+						experimentName: o.Bd
+					}) === o.Md.Enabled
 				},
 				i = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: o.zd
-					}) === o.Kd.Enabled
+						experimentName: o.Ad
+					}) === o.Ld.Enabled
 				}
 		},
 		"./src/reddit/selectors/features/predictions/creation/index.ts": function(e, t, n) {
@@ -3085,4 +3085,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.387c2215197b75e758a1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.07c323ee5f6a5857bb4f.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~ModListing.f8ca699ac4b53ed42ab7.js
-// Retrieved at 9/23/2021, 12:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~ModListing.0ba9cd53bbcb4595406c.js
+// Retrieved at 9/23/2021, 1:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~ModListing"], {
 		"./src/reddit/actions/focusedVerticals/index.ts": function(e, t, s) {
@@ -660,8 +660,8 @@
 						[T.a.isDisabled]: e
 					})
 				})),
-				F = D.a.div("DropdownRowDisabled", T.a),
-				U = Object(l.u)({
+				U = D.a.div("DropdownRowDisabled", T.a),
+				F = Object(l.u)({
 					isFrontpage: l.z,
 					isProfilePage: l.I,
 					pageLayer: e => e
@@ -681,7 +681,7 @@
 						tooltipId: t || V
 					}))
 				}));
-			var W = D.a.wrapped(U(G(Object(d.c)(e => r.a.createElement("div", {
+			var W = D.a.wrapped(F(G(Object(d.c)(e => r.a.createElement("div", {
 					className: e.className,
 					onClick: e.onOpenDropdown
 				}, !1 !== e.showTitle && r.a.createElement(M, null, y.fbt._("Sort", null, {
@@ -701,7 +701,7 @@
 					tooltipId: e.dropdownId || V
 				}, t, {
 					renderContentsHidden: !0
-				}), e.disabled ? r.a.createElement(F, null, y.fbt._("Coming soon", null, {
+				}), e.disabled ? r.a.createElement(U, null, y.fbt._("Coming soon", null, {
 					hk: "taPqm"
 				})) : (e.sortOptions || ((e, t, s, n, r) => {
 					const o = [h.V.HOT, h.V.NEW, h.V.TOP, h.V.RISING];
@@ -884,8 +884,8 @@
 						hk: "1QaJzt"
 					})
 				};
-			var J = s("./src/reddit/components/StateSort/index.m.less"),
-				X = s.n(J);
+			var X = s("./src/reddit/components/StateSort/index.m.less"),
+				J = s.n(X);
 
 			function Z() {
 				return (Z = Object.assign || function(e) {
@@ -896,7 +896,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const $ = D.a.wrapped(v.a, "_Dropdown", X.a),
+			const $ = D.a.wrapped(v.a, "_Dropdown", J.a),
 				ee = Object(w.a)($),
 				te = e => {
 					return e.indexOf("_") > 0 && ne(e) === h.z.UnitedStates
@@ -959,7 +959,7 @@
 						isSelected: e.sort === n
 					}))
 				}))))
-			})), "Component", X.a);
+			})), "Component", J.a);
 			const de = {
 				[h.z.Everywhere]: () => y.fbt._("Everywhere", null, {
 					hk: "3ysAHX"
@@ -1344,8 +1344,8 @@
 				}
 			}
 			var ze = Be(Object(o.b)(Me)(Object(d.c)(He))),
-				Fe = s("./src/reddit/components/GeneralCleanup/SortViewBar/index.m.less"),
-				Ue = s.n(Fe);
+				Ue = s("./src/reddit/components/GeneralCleanup/SortViewBar/index.m.less"),
+				Fe = s.n(Ue);
 			const Ke = Object(l.u)({
 					isProfilePage: l.I,
 					pageLayer: e => e
@@ -1391,7 +1391,7 @@
 						updateSortPreference: u
 					} = this.props;
 					return r.a.createElement("div", {
-						className: Object(i.a)(Ue.a.Container, t),
+						className: Object(i.a)(Fe.a.Container, t),
 						onBlur: this.blurListingBroadcast,
 						onFocus: this.focusListingBroadcast
 					}, r.a.createElement(ze, {
@@ -1404,7 +1404,7 @@
 						sortOptions: c,
 						timeSort: l
 					}), !o && r.a.createElement(p.a, {
-						className: Ue.a.LayoutSwitch,
+						className: Fe.a.LayoutSwitch,
 						subredditId: d
 					}))
 				}
@@ -1473,7 +1473,7 @@
 		"./src/reddit/components/PostList/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "b", (function() {
-				return X
+				return J
 			})), s.d(t, "a", (function() {
 				return $
 			}));
@@ -1518,7 +1518,7 @@
 				H = s.n(M);
 			const {
 				fbt: z
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), F = 500, U = new V.a(F), K = new V.a(F), G = new V.a(F), W = {
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), U = 500, F = new V.a(U), K = new V.a(U), G = new V.a(U), W = {
 				LARGE: 1,
 				MEDIUM: 1,
 				CLASSIC: 3,
@@ -1526,17 +1526,17 @@
 				SEARCH: 3
 			}, q = w.a.div("SeeMore", H.a), Y = w.a.wrapped(L.a, "ArrowRight", H.a), Q = (e, t, s, n, r, o, i, a, c) => {
 				const d = `entered-${e}-${t}-${s?`last-${n}-${r}`:""}-${o}`;
-				let l = U.get(d);
+				let l = F.get(d);
 				return void 0 === l && (l = () => {
 					s && i.onBottomViewed(n, r), i.trackOnPostEnteredViewport(e, t, a, c)
-				}, U.set(d, l)), l
-			}, J = (e, t, s, n, r) => {
+				}, F.set(d, l)), l
+			}, X = (e, t, s, n, r) => {
 				const o = `left-${e}-${t}`;
 				let i = K.get(o);
 				return void 0 === i && (i = o => {
 					s.trackOnPostExitedViewport(e, t, o, n, r)
 				}, K.set(o, i)), i
-			}, X = (e, t, s = !1) => {
+			}, J = (e, t, s = !1) => {
 				const n = `click-${e}`;
 				let r = G.get(n);
 				return void 0 === r && (r = (e, n, r, o, i) => {
@@ -1563,7 +1563,7 @@
 			};
 			class $ extends u.a.Component {
 				constructor() {
-					super(...arguments), this.didRenderLastVisibleChild = !1, this.renderingEmpty = !1, this.renderingPlaceholder = !1, this.scrollChildCache = new V.a(F), this.surveyTriggerCounted = !1, this.timerId = void 0, this.viewportHeight = null, this.updateScrollerRef = e => {
+					super(...arguments), this.didRenderLastVisibleChild = !1, this.renderingEmpty = !1, this.renderingPlaceholder = !1, this.scrollChildCache = new V.a(U), this.surveyTriggerCounted = !1, this.timerId = void 0, this.viewportHeight = null, this.updateScrollerRef = e => {
 						this.scrollerRef = e instanceof Element ? e : void 0
 					}, this.setLastVisibleChildRendered = () => {
 						this.didRenderLastVisibleChild = !0, this.checkAndSendScreenview()
@@ -1748,16 +1748,16 @@
 						let B = `post-list-item-[layout: ${n}]-[postId: ${e}]`;
 						this.props.listingBelowVariant && g && (B += `--${g}`);
 						const M = Q(e, n, s, g, y, S, this.props, t, this.props.hostPostData),
-							H = J(e, n, this.props, t, w),
-							z = X(e, this.props, c),
-							F = V.media && V.media.type === T.o.EMBED ? V.media.provider : null,
-							U = p && !R.isSponsored,
+							H = X(e, n, this.props, t, w),
+							z = J(e, this.props, c),
+							U = V.media && V.media.type === T.o.EMBED ? V.media.provider : null,
+							F = p && !R.isSponsored,
 							K = m && !R.isSponsored && !R.isScoreHidden,
 							G = !R.isSponsored && !R.isArchived;
 						N = {
 							estHeight: Object(P.c)(R, n),
 							id: e,
-							isFocusable: !(!V.media || !(n === E.g.Large || n === E.g.Classic && Object(T.G)(V.media))) && (T.d.has(V.media.type) && (!F || !T.s.has(F)) && !V.isSpoiler),
+							isFocusable: !(!V.media || !(n === E.g.Large || n === E.g.Classic && Object(T.G)(V.media))) && (T.d.has(V.media.type) && (!U || !T.s.has(U)) && !V.isSpoiler),
 							trackOnEnteredViewport: M,
 							trackOnExitedViewport: H,
 							render: ({
@@ -1782,7 +1782,7 @@
 								isFrontpage: c,
 								isProfilePostListing: d,
 								isTopicPage: l,
-								isCommentCountAnimationEnabled: U,
+								isCommentCountAnimationEnabled: F,
 								isVoteCountAnimationEnabled: K,
 								isCountAnimShadowTestEnabled: h,
 								listingBelowVariant: b,
@@ -2460,15 +2460,15 @@
 			const i = e => {
 					const t = Object(r.c)(e, {
 						experimentEligibilitySelector: o.K,
-						experimentName: n.ec
+						experimentName: n.fc
 					});
-					return !(!t || Object(n.Je)(t))
+					return !(!t || Object(n.Ke)(t))
 				},
 				a = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: o.K,
-						experimentName: n.ec
-					}) === n.Fc.ListingEnabled
+						experimentName: n.fc
+					}) === n.Gc.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, s) {
@@ -2582,4 +2582,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing.f8ca699ac4b53ed42ab7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing.0ba9cd53bbcb4595406c.js.map

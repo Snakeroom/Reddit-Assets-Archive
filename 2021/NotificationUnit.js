@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NotificationUnit.b3b7ce43be11f2b8c667.js
-// Retrieved at 9/23/2021, 12:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationUnit.707376ea0b9c75e96490.js
+// Retrieved at 9/23/2021, 1:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationUnit"], {
 		"./src/reddit/components/NotificationUnit/Avatar.tsx": function(e, t, i) {
@@ -412,9 +412,9 @@
 						B = Object(E.e)(g.a),
 						[V, W] = Object(o.useState)(!1),
 						{
-							activeOverflowMenuId: Y,
+							activeOverflowMenuId: Z,
 							isInboxPostEmbedEnabled: z,
-							isInTooltip: Z,
+							isInTooltip: Y,
 							notification: K,
 							setActiveOverflowMenuId: G,
 							onItemClick: q
@@ -434,7 +434,7 @@
 						readAt: se,
 						sentAt: re,
 						title: le
-					} = K, de = null == X ? void 0 : X.messageType, ce = null === (i = null === (t = null == X ? void 0 : X.comment) || void 0 === t ? void 0 : t.parent) || void 0 === i ? void 0 : i.id, me = null === (n = null == X ? void 0 : X.post) || void 0 === n ? void 0 : n.id, ue = null == X ? void 0 : X.post, pe = null === (T = null == X ? void 0 : X.subreddit) || void 0 === T ? void 0 : T.id, be = null == X ? void 0 : X.isBodyHidden, fe = null == X ? void 0 : X.isPostHidden, ve = !se, Ee = `notif-${Z?"tooltip":""}-menu-${oe}`, xe = Ee === Y, Ne = de === v.a.CommentReply ? ce : me, ge = Object(r.a)(e.className, h.a.notificationItem, {
+					} = K, de = null == X ? void 0 : X.messageType, ce = null === (i = null === (t = null == X ? void 0 : X.comment) || void 0 === t ? void 0 : t.parent) || void 0 === i ? void 0 : i.id, me = null === (n = null == X ? void 0 : X.post) || void 0 === n ? void 0 : n.id, ue = null == X ? void 0 : X.post, pe = null === (T = null == X ? void 0 : X.subreddit) || void 0 === T ? void 0 : T.id, be = null == X ? void 0 : X.isBodyHidden, fe = null == X ? void 0 : X.isPostHidden, ve = !se, Ee = `notif-${Y?"tooltip":""}-menu-${oe}`, xe = Ee === Z, Ne = de === v.a.CommentReply ? ce : me, ge = Object(r.a)(e.className, h.a.notificationItem, {
 						[h.a.unread]: ve,
 						[h.a.isNightMode]: H
 					}), Oe = L || B || F, Te = {
@@ -466,7 +466,7 @@
 					}, s.a.createElement(u.a, {
 						dropdownId: Ee,
 						isHideNotifEligible: ee,
-						isInTooltip: Z,
+						isInTooltip: Y,
 						isOverflowMenuOpen: xe,
 						isToggleNotificationUpdateEligible: ie,
 						isToggleUpdateFromSubredditEligible: ne,
@@ -489,7 +489,7 @@
 						context: X,
 						notificationId: oe,
 						isUnread: ve,
-						isFullWidth: Z,
+						isFullWidth: Y,
 						onEvent: je,
 						isInboxCTAsReplyEnabled: L,
 						isInboxCTAsAllEnabled: B,
@@ -503,7 +503,7 @@
 								kind: N.b.Error,
 								text: "Sorry, this content is no longer available.",
 								duration: x.a
-							}))) : Z && q && q(), je({
+							}))) : Y && q && q(), je({
 								awardId: Ae,
 								position: b.c.FIRST
 							})
@@ -537,7 +537,7 @@
 						blockAwarder: () => {
 							e.isInTooltip && e.setActiveOverflowMenuId(A), e.blockAwarder(we), _e(b.d.BlockAwarder)
 						},
-						isInTooltip: Z,
+						isInTooltip: Y,
 						isHideNotifEligible: ee,
 						isOpen: xe,
 						isToggleLowUpdateFromSubredditEligible: te,
@@ -724,13 +724,13 @@
 				r = i("./src/reddit/selectors/user.ts");
 			const l = e => Object(r.J)(e) || Object(r.K)(e),
 				d = Object(n.a)(e => Object(o.c)(e, {
-					experimentName: a.Vc,
+					experimentName: a.Wc,
 					experimentEligibilitySelector: l
 				}), s.a),
-				c = Object(n.a)(d, e => e === a.Yc.SeePostCTAs),
-				m = Object(n.a)(d, e => e === a.Yc.ReplyCTAs),
-				u = Object(n.a)(d, e => e === a.Yc.AllCTAs)
+				c = Object(n.a)(d, e => e === a.Zc.SeePostCTAs),
+				m = Object(n.a)(d, e => e === a.Zc.ReplyCTAs),
+				u = Object(n.a)(d, e => e === a.Zc.AllCTAs)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationUnit.b3b7ce43be11f2b8c667.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationUnit.707376ea0b9c75e96490.js.map

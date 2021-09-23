@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/BottomCellWrapper.0320d33c29cc761b2106.js
-// Retrieved at 9/23/2021, 12:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/BottomCellWrapper.a121b6ca8cef2457fe2b.js
+// Retrieved at 9/23/2021, 1:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["BottomCellWrapper", "SignupUpsell"], {
 		"./src/reddit/components/Upsell/BottomCellWrapper/index.m.less": function(e, t, s) {
@@ -264,18 +264,18 @@
 					experimentName: e,
 					experimentEligibilitySelector: c,
 					throttledVariants: {
-						[o.Cb.Bottom_sheet]: e
+						[o.Db.Bottom_sheet]: e
 					},
 					expEventOverride: t
 				})
 			}
-			const d = a(o.db, !0),
-				m = a(o.eb, !0),
-				p = a(o.fb, !0),
-				u = a(o.db, !1),
-				C = a(o.eb, !1),
-				b = a(o.fb, !1)
+			const d = a(o.eb, !0),
+				m = a(o.fb, !0),
+				p = a(o.gb, !0),
+				u = a(o.eb, !1),
+				C = a(o.fb, !1),
+				b = a(o.gb, !1)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BottomCellWrapper.0320d33c29cc761b2106.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BottomCellWrapper.a121b6ca8cef2457fe2b.js.map

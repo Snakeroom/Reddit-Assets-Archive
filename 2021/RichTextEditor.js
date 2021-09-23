@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.68bf4bb578ec4cff1620.js
-// Retrieved at 9/23/2021, 12:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.1b676a3f3622ab669926.js
+// Retrieved at 9/23/2021, 1:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton", "reddit-components-RichTextEditor-Toolbar-GifButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, o) {
@@ -4945,8 +4945,8 @@
 			const a = Object(n.a)(i.K, i.J, (e, t) => e || t),
 				c = Object(n.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: a,
-					experimentName: s.E
-				}), e => e === s.N.Enabled)
+					experimentName: s.F
+				}), e => e === s.O.Enabled)
 		},
 		"./src/reddit/selectors/experiments/replyWithUpvote.ts": function(e, t, o) {
 			"use strict";
@@ -4961,8 +4961,8 @@
 				const t = Object(r.k)(e);
 				return !(!t || (null == t ? void 0 : t.karma) && t.karma.fromPosts < 5 && t.karma.fromComments < 10) && Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: n.ub
-				}) === n.Ac
+					experimentName: n.vb
+				}) === n.Bc
 			}
 		},
 		"./src/reddit/selectors/experiments/typingIndicators.ts": function(e, t, o) {
@@ -4980,21 +4980,21 @@
 			const r = e => {
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: n.Ee
+						experimentName: n.Fe
 					});
-					return t === n.ve.UIChangesOnly || t === n.ve.TypingIndicators || t === n.ve.IndicatorsPlusCTA
+					return t === n.we.UIChangesOnly || t === n.we.TypingIndicators || t === n.we.IndicatorsPlusCTA
 				},
 				i = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: n.Ge
-					}) === n.xe.Enabled
+						experimentName: n.He
+					}) === n.ye.Enabled
 				},
 				a = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: n.Fe
-					}) === n.we.Enabled
+						experimentName: n.Ge
+					}) === n.xe.Enabled
 				}
 		},
 		"./src/reddit/selectors/moderatingComments.ts": function(e, t, o) {
@@ -5029,4 +5029,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.68bf4bb578ec4cff1620.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.1b676a3f3622ab669926.js.map
