@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/removalReasonActions.0676210bda4bb845796d.js
-// Retrieved at 9/22/2021, 7:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/removalReasonActions.f330364b417cbcf1ed77.js
+// Retrieved at 9/23/2021, 12:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["removalReasonActions"], {
 		"./src/reddit/actions/bulkActions/index.ts": function(e, t, n) {
@@ -156,8 +156,8 @@
 				V = n("./src/reddit/models/PostDraft/index.ts"),
 				B = n("./src/reddit/models/RichTextJson/index.ts"),
 				H = n("./src/reddit/models/RichTextJson/nodeMakers.ts"),
-				$ = n("./src/reddit/models/Toast/index.ts"),
-				J = n("./src/reddit/selectors/comments.ts"),
+				J = n("./src/reddit/models/Toast/index.ts"),
+				$ = n("./src/reddit/selectors/comments.ts"),
 				G = n("./src/reddit/selectors/commentSelector.ts"),
 				q = n("./src/reddit/selectors/platform.ts"),
 				W = n("./src/reddit/selectors/posts.ts"),
@@ -216,7 +216,7 @@
 						let s;
 						s = x.body, u(te({
 							...s,
-							headCommentId: Object(J.w)(y, {
+							headCommentId: Object($.w)(y, {
 								commentsPageKey: t
 							}),
 							commentsPageKey: t,
@@ -236,7 +236,7 @@
 							error: x.error
 						})), u(Object(p.f)({
 							duration: p.a,
-							kind: $.b.Error,
+							kind: J.b.Error,
 							text: t
 						}))
 					}
@@ -328,7 +328,7 @@
 							})), o(Object(u.c)(e))
 						} else o(Object(u.a)(n)), o(Object(p.f)({
 							duration: p.a,
-							kind: $.b.Error,
+							kind: J.b.Error,
 							text: s.fbt._("Something went wrong", null, {
 								hk: "LWFS0"
 							})
@@ -343,7 +343,7 @@
 						m = Object(c.a)(V.c.replyToComment, t);
 					if (!Object(z.K)(o())) return s(Object(a.k)()), void s(Object(i.k)({
 						actionSource: i.a.Reply,
-						redirectUrl: Object(J.m)(o(), {
+						redirectUrl: Object($.m)(o(), {
 							commentId: t
 						})
 					}));
@@ -551,7 +551,7 @@
 				}) => {
 					var c, d, a, i, m, u;
 					n(Object(Q.c)());
-					const l = e => Object(p.f)(Object(p.e)(e, $.b.Error));
+					const l = e => Object(p.f)(Object(p.e)(e, J.b.Error));
 					if (((null === (d = null === (c = o().pages) || void 0 === c ? void 0 : c.comments) || void 0 === d ? void 0 : d.followed) || []).length === j.a) n(l(s.fbt._("You've reached your post follow limit", null, {
 						hk: "3ebRql"
 					})));
@@ -577,7 +577,7 @@
 								hk: "2fJsVC"
 							});
 							n(Object(p.f)({
-								kind: $.b.SuccessCommunityGreen,
+								kind: J.b.SuccessCommunityGreen,
 								text: e
 							}))
 						} else n(Object(Q.n)(d)), n(l(s.fbt._("Sorry, we had trouble doing that. Please try again.", null, {
@@ -754,7 +754,7 @@
 						moreCommentsItem: c,
 						...f.error
 					}))
-				}, F = Object(f.a)(j.b, x.a.upvoted), V = Object(f.a)(j.b, x.a.downvoted), B = Object(c.a)(C.j), H = Object(c.a)(C.i), $ = Object(c.a)(C.e), J = Object(c.a)(C.f), G = (Object(c.a)(C.c), Object(c.a)(C.d), ({
+				}, F = Object(f.a)(j.b, x.a.upvoted), V = Object(f.a)(j.b, x.a.downvoted), B = Object(c.a)(C.j), H = Object(c.a)(C.i), J = Object(c.a)(C.e), $ = Object(c.a)(C.f), G = (Object(c.a)(C.c), Object(c.a)(C.d), ({
 					commentId: e,
 					commentsPageKey: t,
 					scrollToAndRemeasure: n
@@ -770,7 +770,7 @@
 							commentsPageKey: t
 						}),
 						i = d.depth;
-					s($({
+					s(J({
 						commentId: e,
 						commentsPageKey: t,
 						isCollapsed: a
@@ -779,7 +779,7 @@
 					commentId: e,
 					commentsPageKey: t
 				}) => async n => {
-					n(J({
+					n($({
 						commentId: e,
 						commentsPageKey: t
 					}))
@@ -795,7 +795,7 @@
 							commentId: e.id,
 							commentsPageKey: t
 						});
-					o($({
+					o(J({
 						commentId: d,
 						commentsPageKey: t,
 						isCollapsed: a
@@ -1394,8 +1394,8 @@
 				});
 			var B = n("./src/reddit/helpers/isPost.ts"),
 				H = n("./src/reddit/helpers/r2/normalizeCommentFromR2/index.ts"),
-				$ = n("./src/reddit/helpers/routeKey/index.ts"),
-				J = n("./src/reddit/models/ModQueue/index.ts"),
+				J = n("./src/reddit/helpers/routeKey/index.ts"),
+				$ = n("./src/reddit/models/ModQueue/index.ts"),
 				G = n("./src/reddit/models/PostDraft/index.ts"),
 				q = n("./src/reddit/models/RemovalReason/index.ts"),
 				W = n("./src/reddit/models/Toast/index.ts"),
@@ -1540,7 +1540,7 @@
 											},
 											n = Object(Q.f)(a),
 											s = a.platform.currentPage && a.platform.currentPage.routeMatch;
-										let o = n && s && Object($.a)(s, a, a.posts.models[e.postId]);
+										let o = n && s && Object(J.a)(s, a, a.posts.models[e.postId]);
 										if (o || (o = Object(I.a)(e.postId, null, {
 												sort: v.u,
 												hasSortParam: !0
@@ -1617,7 +1617,7 @@
 					if (b.ok) {
 						const s = {
 							ids: e,
-							operation: J.a.RemovalReason,
+							operation: $.a.RemovalReason,
 							username: m,
 							options: {
 								modNote: r,
@@ -1830,7 +1830,7 @@
 								experimentName: r.D,
 								expEventOverride: t
 							});
-							return !!(Object(r.He)(n) ? void 0 : n)
+							return !!(Object(r.Je)(n) ? void 0 : n)
 						})(n)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -2580,9 +2580,9 @@
 			})), n.d(t, "K", (function() {
 				return H
 			})), n.d(t, "f", (function() {
-				return $
-			})), n.d(t, "i", (function() {
 				return J
+			})), n.d(t, "i", (function() {
+				return $
 			})), n.d(t, "G", (function() {
 				return G
 			})), n.d(t, "C", (function() {
@@ -2784,13 +2784,13 @@
 					const n = e.features.comments.submit.error[t];
 					return n && n.fields ? n.fields.map(e => e.msg) : []
 				},
-				$ = (e, {
+				J = (e, {
 					draftKey: t
 				}) => {
 					const n = e.features.comments.drafts[t];
 					return !!n && n.autofocusDisabled
 				},
-				J = (e, {
+				$ = (e, {
 					draftKey: t
 				}) => e.features.comments.drafts[t],
 				G = (e, {
@@ -2887,4 +2887,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.0676210bda4bb845796d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.f330364b417cbcf1ed77.js.map
