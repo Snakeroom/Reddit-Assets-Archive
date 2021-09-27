@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.b81d4262a46f370bef55.js
-// Retrieved at 9/27/2021, 10:40:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.07b77198e0a73a710b9b.js
+// Retrieved at 9/27/2021, 11:00:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -4763,7 +4763,7 @@
 		"./src/reddit/components/SearchPostFlatlist/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return u
+				return l
 			}));
 			s("./node_modules/core-js/modules/web.dom.iterable.js");
 			var r = s("./node_modules/fbt/lib/FbtPublic.js"),
@@ -4771,31 +4771,30 @@
 				o = s.n(n),
 				a = s("./src/lib/classNames/index.ts"),
 				i = s("./src/lib/prettyPrintNumber/index.ts"),
-				c = s("./src/reddit/components/TrackingHelper/index.tsx"),
-				d = s("./src/reddit/contexts/PageLayer/index.tsx"),
-				l = s("./src/reddit/components/SearchPostFlatlist/index.m.less"),
-				m = s.n(l);
-			const u = Object(d.u)({})(Object(c.c)(e => {
-				const {
-					className: t,
-					post: s
-				} = e, n = Object.values(s.awardCountsById || {}).reduce((e, t) => e += t, 0);
+				c = s("./src/reddit/components/SearchPostFlatlist/index.m.less"),
+				d = s.n(c);
+
+			function l({
+				post: e,
+				className: t
+			}) {
+				const s = Object.values(e.awardCountsById || {}).reduce((e, t) => e += t, 0);
 				return o.a.createElement("div", {
-					className: Object(a.a)(m.a.flatlistContainer, t)
-				}, o.a.createElement("p", {
-					className: Object(a.a)(m.a.flatlistItem)
-				}, r.fbt._("{upvotesCount} upvotes", [r.fbt._param("upvotesCount", Object(i.b)(s.score))], {
+					className: Object(a.a)(d.a.flatlistContainer, t)
+				}, o.a.createElement("span", {
+					className: Object(a.a)(d.a.flatlistItem)
+				}, r.fbt._("{upvotesCount} upvotes", [r.fbt._param("upvotesCount", Object(i.b)(e.score))], {
 					hk: "4pEh4K"
-				})), o.a.createElement("p", {
-					className: Object(a.a)(m.a.flatlistItem)
-				}, r.fbt._("{commentsCount} comments", [r.fbt._param("commentsCount", Object(i.b)(s.numComments))], {
+				})), o.a.createElement("span", {
+					className: Object(a.a)(d.a.flatlistItem)
+				}, r.fbt._("{commentsCount} comments", [r.fbt._param("commentsCount", Object(i.b)(e.numComments))], {
 					hk: "25X8If"
-				})), o.a.createElement("p", {
-					className: Object(a.a)(m.a.flatlistItem)
-				}, r.fbt._("{awardsCount} awards", [r.fbt._param("awardsCount", Object(i.b)(n))], {
+				})), o.a.createElement("span", {
+					className: Object(a.a)(d.a.flatlistItem)
+				}, r.fbt._("{awardsCount} awards", [r.fbt._param("awardsCount", Object(i.b)(s))], {
 					hk: "2DUF36"
 				})))
-			}))
+			}
 		},
 		"./src/reddit/components/SearchPostMeta/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -7528,7 +7527,7 @@
 					isSponsored: H.isSponsored,
 					postId: H.id,
 					source: H.source
-				}, H.callToAction)), o.a.createElement(G.a, {
+				}, H.callToAction)), !H.isSponsored && o.a.createElement(G.a, {
 					className: Object(r.a)(te.a.postItemFlatlistContainer),
 					post: H
 				}), o.a.createElement(_.d, null)))))
@@ -11493,4 +11492,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.b81d4262a46f370bef55.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.07b77198e0a73a710b9b.js.map
