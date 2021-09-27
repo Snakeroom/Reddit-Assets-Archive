@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.ffd6b37ccafebc0096c9.js
-// Retrieved at 9/27/2021, 10:40:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.b1ca6bed64ac049af5dc.js
+// Retrieved at 9/27/2021, 11:20:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, n) {
@@ -2767,22 +2767,24 @@
 				return s
 			})), n.d(t, "b", (function() {
 				return o
-			})), n.d(t, "d", (function() {
-				return r
 			})), n.d(t, "e", (function() {
-				return a
+				return r
 			})), n.d(t, "f", (function() {
-				return i
-			})), n.d(t, "c", (function() {
-				return c
-			})), n.d(t, "j", (function() {
-				return d
-			})), n.d(t, "i", (function() {
-				return l
+				return a
 			})), n.d(t, "g", (function() {
-				return m
+				return i
+			})), n.d(t, "d", (function() {
+				return c
+			})), n.d(t, "k", (function() {
+				return d
+			})), n.d(t, "j", (function() {
+				return l
 			})), n.d(t, "h", (function() {
+				return m
+			})), n.d(t, "i", (function() {
 				return u
+			})), n.d(t, "c", (function() {
+				return p
 			}));
 			const s = "ModerationPage--Modal--AddAward",
 				o = "ModerationPage--Modal--DeleteAwardConfirmation",
@@ -2793,7 +2795,8 @@
 				d = .1,
 				l = .1,
 				m = 500,
-				u = ["t5_2qqoq", "t5_37xo2", "t5_2r60y", "t5_mvcq5", "t5_4e4fpz", "t5_4e4ib9", "t5_4y3poa", "t5_4hmhx4"]
+				u = ["t5_2qqoq", "t5_37xo2", "t5_2r60y", "t5_mvcq5", "t5_4e4fpz", "t5_4e4ib9", "t5_4y3poa", "t5_4hmhx4"],
+				p = "https://reddit.zendesk.com/hc/en-us/articles/360050641932"
 		},
 		"./src/reddit/controls/Checkbox/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -3356,4 +3359,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.ffd6b37ccafebc0096c9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.b1ca6bed64ac049af5dc.js.map

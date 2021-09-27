@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.59c17fbd1c737082b3f1.js
-// Retrieved at 9/23/2021, 5:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.5390c216fb6f0b488987.js
+// Retrieved at 9/27/2021, 11:20:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -838,19 +838,20 @@
 				o = a("./node_modules/react-redux/es/index.js"),
 				i = a("./src/reddit/actions/snoovatarModal.ts"),
 				l = a("./src/reddit/constants/banners.ts"),
-				d = a("./src/reddit/constants/page.ts"),
-				m = a("./src/reddit/controls/Button/index.tsx"),
-				u = a("./src/reddit/helpers/localStorage/index.ts"),
-				p = a("./src/reddit/helpers/trackers/snoovatar.ts"),
-				h = a("./src/reddit/hooks/useTracking.ts"),
-				b = a("./src/reddit/icons/svgs/Close/index.tsx"),
-				f = a("./src/reddit/selectors/experiments/econ/avatarBanner.ts"),
-				g = a("./src/reddit/components/AvatarListingBanner/index.m.less"),
-				v = a.n(g);
-			var y = e => r.a.createElement("svg", {
+				d = a("./src/reddit/constants/gold.ts"),
+				m = a("./src/reddit/constants/page.ts"),
+				u = a("./src/reddit/controls/Button/index.tsx"),
+				p = a("./src/reddit/helpers/localStorage/index.ts"),
+				h = a("./src/reddit/helpers/trackers/snoovatar.ts"),
+				b = a("./src/reddit/hooks/useTracking.ts"),
+				f = a("./src/reddit/icons/svgs/Close/index.tsx"),
+				g = a("./src/reddit/selectors/experiments/econ/avatarBanner.ts"),
+				v = a("./src/reddit/components/AvatarListingBanner/index.m.less"),
+				y = a.n(v);
+			var E = e => r.a.createElement("svg", {
 					xmlns: "http://www.w3.org/2000/svg",
 					viewBox: "0 0 380 600",
-					className: Object(c.a)(v.a.achievementAvatar, e.className)
+					className: Object(c.a)(y.a.achievementAvatar, e.className)
 				}, r.a.createElement("defs", null, r.a.createElement("style", null, ".cls-1{isolation:isolate;}.cls-2{fill:#fff;}.cls-3{opacity:0.3;}.cls-4{opacity:0.5;}.cls-5{fill:#7a9299;}.cls-6{fill:#00ccc0;}.cls-7{fill:#fffffe;}.cls-8{fill:#d7dfe2;}.cls-9{fill:lime;}.cls-10{fill:#fff8b8;}.cls-11{fill:none;}.cls-12{fill:#b8c7cc;}.cls-13{opacity:0.2;}.cls-14{mix - blend - mode:multiply;}.cls-15{fill:#f2f6f7;}.cls-16{fill:#ff4500;}")), r.a.createElement("g", {
 					className: "cls-1"
 				}, r.a.createElement("g", {
@@ -1419,181 +1420,181 @@
 				}), r.a.createElement("path", {
 					d: "M235.06,281.76a4.3,4.3,0,0,1-.26-1.15c-.05-.31-.07-.67-.15-1.08s-.18-.85-.28-1.33a21.42,21.42,0,0,0-2.79-6.79,20.26,20.26,0,0,0-5.87-6,17.55,17.55,0,0,0-6.28-2.6,19.68,19.68,0,0,0-17.45,4.9,18.79,18.79,0,0,0-5,7.92,18.51,18.51,0,0,0-.63,9.11,18.8,18.8,0,0,0,2.89,7.2,19,19,0,0,0,19.66,8,19.37,19.37,0,0,0,11.39-7.09,21.24,21.24,0,0,0,3-5.45,22.58,22.58,0,0,0,1.23-5.65,16.56,16.56,0,0,1,.22,6.11,19.34,19.34,0,0,1-7.31,12.21,16.21,16.21,0,0,1-4.63,2.53,21.89,21.89,0,0,1-7.4,1.14,22.67,22.67,0,0,1-7.05-1.19,23.52,23.52,0,0,1-6.07-3.17,22,22,0,0,1-4.64-4.66,21.67,21.67,0,0,1-4.24-11.59,22,22,0,0,1,.4-5.91,23.15,23.15,0,0,1,1.94-5.42,21.44,21.44,0,0,1,3.18-4.57,20.76,20.76,0,0,1,2-1.92A23.71,23.71,0,0,1,203,263.7a21.2,21.2,0,0,1,19.23-2.17,20.62,20.62,0,0,1,7.52,4.94,19.6,19.6,0,0,1,5.36,12.73C235.17,280.41,235.07,281.32,235.06,281.76Z"
 				}))))),
-				E = a("./node_modules/lodash/flatten.js"),
-				x = a.n(E),
-				A = a("./src/reddit/actions/snoovatar.ts"),
-				_ = a("./src/reddit/actions/toaster.ts"),
-				j = a("./src/reddit/endpoints/snoovatar/index.ts"),
-				O = a("./src/reddit/models/Toast/index.ts"),
-				N = a("./src/reddit/selectors/avatar.ts");
+				x = a("./node_modules/lodash/flatten.js"),
+				A = a.n(x),
+				_ = a("./src/reddit/actions/snoovatar.ts"),
+				j = a("./src/reddit/actions/toaster.ts"),
+				O = a("./src/reddit/endpoints/snoovatar/index.ts"),
+				N = a("./src/reddit/models/Toast/index.ts"),
+				C = a("./src/reddit/selectors/avatar.ts");
 			const {
-				fbt: C
-			} = a("./node_modules/fbt/lib/FbtPublic.js"), M = {
-				kind: O.b.SuccessCommunityGreen,
-				text: C._("Updated! Enjoy your birthday look!", null, {
+				fbt: M
+			} = a("./node_modules/fbt/lib/FbtPublic.js"), k = {
+				kind: N.b.SuccessCommunityGreen,
+				text: M._("Updated! Enjoy your birthday look!", null, {
 					hk: "M2XMT"
 				})
-			}, k = (e, t) => {
-				const a = x()(t.map(e => e.assets.map(e => e.slot)));
+			}, P = (e, t) => {
+				const a = A()(t.map(e => e.assets.map(e => e.slot)));
 				return [...e.filter(e => !e.assets.find(e => a.includes(e.slot))), ...t]
 			}, {
-				fbt: P
+				fbt: S
 			} = a("./node_modules/fbt/lib/FbtPublic.js");
-			var S;
+			var w;
 			! function(e) {
 				e.Dismissed = "dismissed", e.Hidden = "hidden", e.Visible = "visible"
-			}(S || (S = {}));
+			}(w || (w = {}));
 			t.a = e => {
 				const {
 					bannerType: t,
 					className: a
-				} = e, g = t === f.a.CommunitySpacesControl, E = Object(o.d)(), x = Object(h.a)(), [O, C] = (e => {
+				} = e, v = t === g.a.CommunitySpacesControl, x = Object(o.d)(), A = Object(b.a)(), [N, M] = (e => {
 					const t = Object(o.d)();
 					Object(n.useEffect)(() => {
 						!async function() {
-							e === f.a.Achievements && await t(Object(A.b)())
+							e === g.a.Achievements && await t(Object(_.b)())
 						}()
 					}, [e, t]);
-					const a = Object(o.e)(N.a),
+					const a = Object(o.e)(C.a),
 						[s, c] = Object(n.useState)(!1),
-						r = Object(h.a)();
+						r = Object(b.a)();
 					return [async () => {
 						if (a) {
 							const e = a.snoovatar,
 								s = (null == e ? void 0 : e.accessories) || [],
-								n = k(s, [j.c, j.a, j.b]).map(e => e.id);
-							r(Object(p.a)()), c(!0), t(Object(_.f)(M)), await t(Object(A.c)(n, null == e ? void 0 : e.styles, {
+								n = P(s, [O.c, O.a, O.b]).map(e => e.id);
+							r(Object(h.a)()), c(!0), t(Object(j.f)(k)), await t(Object(_.c)(n, null == e ? void 0 : e.styles, {
 								set_avatar_to_profile: !0,
 								source: "anniversary_achievement"
 							}))
 						}
 					}, s]
-				})(t), w = Object(u.f)(l.a.AVATAR_LISTING_BANNER, d.c), [I, L] = Object(n.useState)(w ? S.Hidden : S.Visible);
+				})(t), I = Object(p.f)(l.a.AVATAR_LISTING_BANNER, m.c), [L, T] = Object(n.useState)(I ? w.Hidden : w.Visible);
 				if (Object(n.useEffect)(() => {
-						I === S.Visible && t !== f.a.Achievements && x(Object(p.k)(g))
-					}, [t, I, x, g]), Object(n.useEffect)(() => {
-						I === S.Visible && t === f.a.Achievements && x(Object(p.i)())
-					}, [t, I, x]), I === S.Hidden) return null;
-				const T = () => {
-						L(S.Visible), Object(u.gb)(l.a.AVATAR_LISTING_BANNER, !1, d.c)
-					},
-					D = () => {
-						x(Object(p.b)(g)), E(Object(i.b)({
-							source: g ? "community_spaces_control" : "community_spaces"
-						}))
+						L === w.Visible && t !== g.a.Achievements && A(Object(h.k)(v))
+					}, [t, L, A, v]), Object(n.useEffect)(() => {
+						L === w.Visible && t === g.a.Achievements && A(Object(h.i)())
+					}, [t, L, A]), L === w.Hidden) return null;
+				const D = () => {
+						T(w.Visible), Object(p.gb)(l.a.AVATAR_LISTING_BANNER, !1, m.c)
 					},
 					Z = () => {
-						Object(u.gb)(l.a.AVATAR_LISTING_BANNER, !0, d.c), t === f.a.Achievements ? O() : D()
+						A(Object(h.b)(v)), x(Object(i.b)({
+							source: v ? "community_spaces_control" : "community_spaces"
+						}))
+					},
+					R = () => {
+						Object(p.gb)(l.a.AVATAR_LISTING_BANNER, !0, m.c), t === g.a.Achievements ? N() : Z()
 					};
-				if (I === S.Dismissed) return r.a.createElement("div", {
-					className: Object(c.a)(v.a.dismissedContainer, a)
+				if (L === w.Dismissed) return r.a.createElement("div", {
+					className: Object(c.a)(y.a.dismissedContainer, a)
 				}, r.a.createElement("div", {
-					className: v.a.dismissedText
-				}, P._("Ok, we won't show you this again.", null, {
+					className: y.a.dismissedText
+				}, S._("Ok, we won't show you this again.", null, {
 					hk: "4z33KK"
-				})), r.a.createElement(m.s, {
-					onClick: T
-				}, P._("undo", null, {
+				})), r.a.createElement(u.s, {
+					onClick: D
+				}, S._("undo", null, {
 					hk: "1A9z3Y"
 				})));
 				const {
-					title: R,
-					heading: F,
-					description: q,
-					buttonText: U,
-					achievementEquipSuccessText: B
+					title: F,
+					heading: q,
+					description: U,
+					buttonText: B,
+					achievementEquipSuccessText: V
 				} = function(e) {
-					return e === f.a.Achievements ? {
-						title: P._("Avatar Unlocked", null, {
+					return e === g.a.Achievements ? {
+						title: S._("Avatar Unlocked", null, {
 							hk: "8hmDI"
 						}),
-						heading: P._("Welcome to the 1-Year Club!", null, {
+						heading: S._("Welcome to the 1-Year Club!", null, {
 							hk: "1rWLgV"
 						}),
-						description: P._("Celebrate and show off with this exclusive accessory only Redditors in the 1-year club can enjoy.", null, {
+						description: S._("Celebrate and show off with this exclusive accessory only Redditors in the 1-year club can enjoy.", null, {
 							hk: "1rqJGX"
 						}),
-						buttonText: P._("Claim Your Look", null, {
+						buttonText: S._("Claim Your Look", null, {
 							hk: "H78ib"
 						}),
-						achievementEquipSuccessText: P._("Looking Good!", null, {
+						achievementEquipSuccessText: S._("Looking Good!", null, {
 							hk: "3StzJ0"
 						})
-					} : e === f.a.CommunitySpaces ? {
-						title: P._("Introducing", null, {
+					} : e === g.a.CommunitySpaces ? {
+						title: S._("Introducing", null, {
 							hk: "Cbm1W"
 						}),
-						heading: P._("Community Square", null, {
+						heading: S._("Community Square", null, {
 							hk: "O5otX"
 						}),
-						description: P._("Grab an avatar to hang out with people in your communities.", null, {
+						description: S._("Grab an avatar to hang out with people in your communities.", null, {
 							hk: "1wAMNP"
 						}),
-						buttonText: P._("Get Started", null, {
+						buttonText: S._("Get Started", null, {
 							hk: "3ISZMI"
 						})
 					} : {
-						title: P._("Available Now", null, {
+						title: S._("Available Now", null, {
 							hk: "42JM0D"
 						}),
-						heading: P._("Avatar Builder", null, {
+						heading: S._("Avatar Builder", null, {
 							hk: "lY1YA"
 						}),
-						description: P._("Personalize your look on Reddit with the latest styles and gear!", null, {
+						description: S._("Personalize your look on Reddit with the latest styles and gear!", null, {
 							hk: "2y08sF"
 						}),
-						buttonText: P._("Get Started", null, {
+						buttonText: S._("Get Started", null, {
 							hk: "3ISZMI"
 						})
 					}
-				}(t), V = P._("Avatars and avatar visual elements © Reddit.", null, {
+				}(t), H = S._("Avatars and avatar visual elements © Reddit.", null, {
 					hk: "2Y4y3g"
-				}), H = P._("Learn more", null, {
+				}), K = S._("Learn more", null, {
 					hk: "2S4fxr"
-				}), K = `${s.a.assetPath}/img/snoovatars/` + (t === f.a.CommunitySpacesControl ? "CommunitySpace_Control.png" : "CommunitySquare.png");
+				}), W = `${s.a.assetPath}/img/snoovatars/` + (t === g.a.CommunitySpacesControl ? "CommunitySpace_Control.png" : "CommunitySquare.png");
 				return r.a.createElement("div", {
-					className: Object(c.a)(v.a.container, a),
+					className: Object(c.a)(y.a.container, a),
 					"data-testid": "avatar-listing-banner"
-				}, t !== f.a.Achievements && r.a.createElement("img", {
+				}, t !== g.a.Achievements && r.a.createElement("img", {
 					width: "640",
 					height: "360",
-					className: v.a.headerImage,
-					onClick: D,
+					className: y.a.headerImage,
+					onClick: Z,
 					role: "button",
-					alt: P._("Continue to Avatar Community Spaces", null, {
+					alt: S._("Continue to Avatar Community Spaces", null, {
 						hk: "3qCfDX"
 					}),
-					src: K
-				}), t === f.a.Achievements && r.a.createElement("div", {
-					className: v.a.achievementsBannerWrapper,
-					onClick: Z
-				}, r.a.createElement(y, null)), r.a.createElement(b.a, {
-					className: Object(c.a)(v.a.close, {
-						[v.a.closeLight]: g
+					src: W
+				}), t === g.a.Achievements && r.a.createElement("div", {
+					className: y.a.achievementsBannerWrapper,
+					onClick: R
+				}, r.a.createElement(E, null)), r.a.createElement(f.a, {
+					className: Object(c.a)(y.a.close, {
+						[y.a.closeLight]: v
 					}),
 					onClick: () => {
-						L(S.Dismissed), Object(u.gb)(l.a.AVATAR_LISTING_BANNER, !0, d.c), t !== f.a.Achievements && x(Object(p.g)(g)), t === f.a.Achievements && x(Object(p.f)())
+						T(w.Dismissed), Object(p.gb)(l.a.AVATAR_LISTING_BANNER, !0, m.c), t !== g.a.Achievements && A(Object(h.g)(v)), t === g.a.Achievements && A(Object(h.f)())
 					}
 				}), r.a.createElement("div", {
-					className: v.a.contentWrapper
+					className: y.a.contentWrapper
 				}, r.a.createElement("div", {
-					className: v.a.copyText
+					className: y.a.copyText
 				}, r.a.createElement("h4", {
-					className: v.a.copyTextTitle
-				}, R), r.a.createElement("h1", {
-					className: v.a.copyTextHeading
-				}, F), r.a.createElement("p", {
-					className: v.a.copyTextDescription
-				}, q)), r.a.createElement(m.j, {
-					onClick: Z,
-					className: v.a.continueButton,
-					disabled: !!C
-				}, C ? B : U)), t === f.a.Achievements && r.a.createElement("div", {
-					className: v.a.legalTextContainer
-				}, V, r.a.createElement("a", {
-					href: "https://reddit.zendesk.com/hc/en-us/articles/360050641932",
-					className: v.a.learnMoreLink
-				}, H)))
+					className: y.a.copyTextTitle
+				}, F), r.a.createElement("h1", {
+					className: y.a.copyTextHeading
+				}, q), r.a.createElement("p", {
+					className: y.a.copyTextDescription
+				}, U)), r.a.createElement(u.j, {
+					onClick: R,
+					className: y.a.continueButton,
+					disabled: !!M
+				}, M ? V : B)), t === g.a.Achievements && r.a.createElement("div", {
+					className: y.a.legalTextContainer
+				}, H, r.a.createElement("a", {
+					href: d.c,
+					className: y.a.learnMoreLink
+				}, K)))
 			}
 		},
 		"./src/reddit/components/DiscoveryUnit/CommunityCrossPollination/ScrollChildFactory.tsx": function(e, t, a) {
@@ -2539,6 +2540,43 @@
 			! function(e) {
 				e.SubredditChatNotifcationFtux = "chat_subreddit_notification_ftux"
 			}(c || (c = {}))
+		},
+		"./src/reddit/constants/gold.ts": function(e, t, a) {
+			"use strict";
+			a.d(t, "a", (function() {
+				return s
+			})), a.d(t, "b", (function() {
+				return c
+			})), a.d(t, "e", (function() {
+				return n
+			})), a.d(t, "f", (function() {
+				return r
+			})), a.d(t, "g", (function() {
+				return o
+			})), a.d(t, "d", (function() {
+				return i
+			})), a.d(t, "k", (function() {
+				return l
+			})), a.d(t, "j", (function() {
+				return d
+			})), a.d(t, "h", (function() {
+				return m
+			})), a.d(t, "i", (function() {
+				return u
+			})), a.d(t, "c", (function() {
+				return p
+			}));
+			const s = "ModerationPage--Modal--AddAward",
+				c = "ModerationPage--Modal--DeleteAwardConfirmation",
+				n = 20,
+				r = 4,
+				o = 1e4,
+				i = .2,
+				l = .1,
+				d = .1,
+				m = 500,
+				u = ["t5_2qqoq", "t5_37xo2", "t5_2r60y", "t5_mvcq5", "t5_4e4fpz", "t5_4e4ib9", "t5_4y3poa", "t5_4hmhx4"],
+				p = "https://reddit.zendesk.com/hc/en-us/articles/360050641932"
 		},
 		"./src/reddit/featureFlags/component.tsx": function(e, t, a) {
 			"use strict";
@@ -3794,4 +3832,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.59c17fbd1c737082b3f1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.5390c216fb6f0b488987.js.map

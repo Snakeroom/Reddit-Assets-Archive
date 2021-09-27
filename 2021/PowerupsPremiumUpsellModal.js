@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PowerupsPremiumUpsellModal.550fd70f64a964eef48b.js
-// Retrieved at 9/22/2021, 7:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PowerupsPremiumUpsellModal.5e959ea4a68bb2f62c27.js
+// Retrieved at 9/27/2021, 11:20:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PowerupsPremiumUpsellModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, r) {
@@ -959,26 +959,27 @@
 		"./src/reddit/components/Econ/Common/ModalCloseButton/index.tsx": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
-				return d
+				return u
 			}));
-			var n = r("./node_modules/react/index.js"),
-				o = r.n(n),
-				s = r("./src/reddit/components/ModalStyledComponents/index.tsx"),
-				c = r("./src/reddit/components/Econ/Common/ModalCloseButton/index.m.less"),
-				i = r.n(c);
+			var n = r("./src/lib/classNames/index.ts"),
+				o = r("./node_modules/react/index.js"),
+				s = r.n(o),
+				c = r("./src/reddit/components/ModalStyledComponents/index.tsx"),
+				i = r("./src/reddit/components/Econ/Common/ModalCloseButton/index.m.less"),
+				a = r.n(i);
 			const {
-				fbt: a
-			} = r("./node_modules/fbt/lib/FbtPublic.js"), d = ({
+				fbt: d
+			} = r("./node_modules/fbt/lib/FbtPublic.js"), u = ({
 				className: e,
 				onClick: t
-			}) => o.a.createElement("button", {
+			}) => s.a.createElement("button", {
 				onClick: t,
-				className: i.a.closeButton,
-				"aria-label": a._("Close", null, {
+				className: Object(n.a)(e, a.a.closeButton),
+				"aria-label": d._("Close", null, {
 					hk: "3Qarlp"
 				})
-			}, o.a.createElement(s.b, {
-				className: i.a.closeIcon
+			}, s.a.createElement(c.b, {
+				className: a.a.closeIcon
 			}))
 		},
 		"./src/reddit/components/Econ/Common/NewIcon/index.m.less": function(e, t, r) {
@@ -2055,4 +2056,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsPremiumUpsellModal.550fd70f64a964eef48b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsPremiumUpsellModal.5e959ea4a68bb2f62c27.js.map

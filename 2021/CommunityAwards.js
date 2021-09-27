@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityAwards.a3642cbbeffd1b8901cc.js
-// Retrieved at 9/15/2021, 6:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityAwards.ec840732b223b61f09fb.js
+// Retrieved at 9/27/2021, 11:20:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityAwards"], {
 		"./src/reddit/actions/gold/communityAwards/communityAwards.ts": function(e, t, r) {
@@ -200,7 +200,7 @@
 							a = n.manageableAwards || [], t(N({
 								awards: n.optionalAwards || [],
 								subredditOrProfileId: e
-							})), t(D({
+							})), t(k({
 								subredditOrProfileId: e,
 								disabled: !n.isAwardCreationAllowed
 							}))
@@ -219,7 +219,7 @@
 						duration: o.a,
 						text: e
 					}))
-				}, D = Object(n.a)(O.d), k = e => e.map(({
+				}, k = Object(n.a)(O.d), D = e => e.map(({
 					tag: e,
 					content: t
 				}) => ({
@@ -260,7 +260,7 @@
 								const r = await Object(m.g)(s(), a, t);
 								if (r.ok) {
 									const a = r.body,
-										d = k(a.data.profileByName.awardingTray.sortedUsableTags);
+										d = D(a.data.profileByName.awardingTray.sortedUsableTags);
 									await n(Q({
 										awards: a.data.profileByName.sortedUsableAwards,
 										tags: d,
@@ -275,7 +275,7 @@
 								const r = await Object(m.f)(s(), e, t);
 								if (r.ok) {
 									const a = r.body,
-										d = k(a.data.subredditInfoById.awardingTray.sortedUsableTags);
+										d = D(a.data.subredditInfoById.awardingTray.sortedUsableTags);
 									await n(Q({
 										awards: a.data.subredditInfoById.sortedUsableAwards,
 										tags: d,
@@ -332,14 +332,14 @@
 				}, W = (e, t) => async (r, n, {
 					gqlContext: i
 				}) => {
-					r(V());
+					r(z());
 					let s = a.fbt._("There was a problem disabling the {award name} Award. Please try again.", [a.fbt._param("award name", t.name)], {
 							hk: "3KNLaD"
 						}),
 						u = K(s),
 						b = c.b.Error;
 					try {
-						(await Object(m.h)(i(), t.id, e.id)).ok && (u = z({
+						(await Object(m.h)(i(), t.id, e.id)).ok && (u = V({
 							awardId: t.id,
 							subredditId: e.id
 						}), s = a.fbt._("{award name} Award successfully disabled in {subreddit or profile prefixed name}!", [a.fbt._param("award name", t.name), a.fbt._param("subreddit or profile prefixed name", e.displayText)], {
@@ -354,7 +354,7 @@
 							kind: b
 						}))
 					}
-				}, V = Object(n.a)(O.k), z = Object(n.a)(O.l), K = Object(n.a)(O.j), X = (e, t) => async (r, n, {
+				}, z = Object(n.a)(O.k), V = Object(n.a)(O.l), K = Object(n.a)(O.j), X = (e, t) => async (r, n, {
 					gqlContext: i
 				}) => {
 					r(Y());
@@ -387,22 +387,24 @@
 				return a
 			})), r.d(t, "b", (function() {
 				return n
-			})), r.d(t, "d", (function() {
-				return d
 			})), r.d(t, "e", (function() {
-				return i
+				return d
 			})), r.d(t, "f", (function() {
-				return s
-			})), r.d(t, "c", (function() {
-				return o
-			})), r.d(t, "j", (function() {
-				return c
-			})), r.d(t, "i", (function() {
-				return u
+				return i
 			})), r.d(t, "g", (function() {
-				return b
+				return s
+			})), r.d(t, "d", (function() {
+				return o
+			})), r.d(t, "k", (function() {
+				return c
+			})), r.d(t, "j", (function() {
+				return u
 			})), r.d(t, "h", (function() {
+				return b
+			})), r.d(t, "i", (function() {
 				return l
+			})), r.d(t, "c", (function() {
+				return f
 			}));
 			const a = "ModerationPage--Modal--AddAward",
 				n = "ModerationPage--Modal--DeleteAwardConfirmation",
@@ -413,7 +415,8 @@
 				c = .1,
 				u = .1,
 				b = 500,
-				l = ["t5_2qqoq", "t5_37xo2", "t5_2r60y", "t5_mvcq5", "t5_4e4fpz", "t5_4e4ib9", "t5_4y3poa", "t5_4hmhx4"]
+				l = ["t5_2qqoq", "t5_37xo2", "t5_2r60y", "t5_mvcq5", "t5_4e4fpz", "t5_4e4ib9", "t5_4y3poa", "t5_4hmhx4"],
+				f = "https://reddit.zendesk.com/hc/en-us/articles/360050641932"
 		},
 		"./src/reddit/endpoints/gold/communityAwards.ts": function(e, t, r) {
 			"use strict";
@@ -695,4 +698,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityAwards.a3642cbbeffd1b8901cc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityAwards.ec840732b223b61f09fb.js.map

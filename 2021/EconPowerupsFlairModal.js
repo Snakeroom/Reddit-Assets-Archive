@@ -1,13 +1,13 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.c5db51cae0cc9846d332.js
-// Retrieved at 9/27/2021, 10:40:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.98a94430d74dce49dbdf.js
+// Retrieved at 9/27/2021, 11:20:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsFlairModal"], {
 		"./src/reddit/actions/economics/powerups/flairs/index.ts": function(e, t, r) {
 			"use strict";
 			r.r(t), r.d(t, "onSubredditUserPowerupsFlairsLoaded", (function() {
-				return F
-			})), r.d(t, "onUsersSupportedSubredditsLoaded", (function() {
 				return O
+			})), r.d(t, "onUsersSupportedSubredditsLoaded", (function() {
+				return F
 			})), r.d(t, "onSubredditUserPowerupsFlairPreferenceUpdateRequested", (function() {
 				return y
 			})), r.d(t, "onSubredditUserPowerupsFlairPreferenceUpdateSuccess", (function() {
@@ -67,8 +67,8 @@
 					powerups: I.a
 				}
 			});
-			const F = Object(i.a)(w.d),
-				O = Object(i.a)(w.i),
+			const O = Object(i.a)(w.d),
+				F = Object(i.a)(w.i),
 				y = Object(i.a)(w.f),
 				g = Object(i.a)(w.g),
 				x = Object(i.a)(w.e),
@@ -96,7 +96,7 @@
 								subredditInfoById: u,
 								redditorsInfoByIds: p
 							} = c;
-						await r(F(u)), n && p && await r(O(p))
+						await r(O(u)), n && p && await r(F(p))
 					} catch (c) {
 						n.c.captureException(c)
 					}
@@ -317,8 +317,8 @@
 				j = r("./src/reddit/components/Badges/UserDisplay/index.m.less"),
 				I = r.n(j);
 
-			function F() {
-				return (F = Object.assign || function(e) {
+			function O() {
+				return (O = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var r = arguments[t];
 						for (var s in r) Object.prototype.hasOwnProperty.call(r, s) && (e[s] = r[s])
@@ -326,7 +326,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const O = "add-custom-badge-tooltip",
+			const F = "add-custom-badge-tooltip",
 				y = 100,
 				g = 2 * y,
 				x = 24;
@@ -350,7 +350,7 @@
 						className: Object(d.a)(I.a.image, this.props.className),
 						src: `${a.a.assetPath}/img/badges/placeholder.png`
 					});
-					const t = `${O}-${this.props.uniqueIdentifier}`,
+					const t = `${F}-${this.props.uniqueIdentifier}`,
 						r = this.props.badgeSize || x;
 					return i.a.createElement(s.Fragment, null, this.props.showAddCustom && i.a.createElement("div", {
 						className: I.a.wrapper,
@@ -444,7 +444,7 @@
 					allBadges: r,
 					...s
 				} = e, n = t.map(e => r[e]).filter(Boolean);
-				return i.a.createElement(E, F({
+				return i.a.createElement(E, O({
 					badges: n
 				}, s))
 			}
@@ -460,26 +460,27 @@
 		"./src/reddit/components/Econ/Common/ModalCloseButton/index.tsx": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
-				return c
+				return l
 			}));
-			var s = r("./node_modules/react/index.js"),
-				i = r.n(s),
-				n = r("./src/reddit/components/ModalStyledComponents/index.tsx"),
-				o = r("./src/reddit/components/Econ/Common/ModalCloseButton/index.m.less"),
-				a = r.n(o);
+			var s = r("./src/lib/classNames/index.ts"),
+				i = r("./node_modules/react/index.js"),
+				n = r.n(i),
+				o = r("./src/reddit/components/ModalStyledComponents/index.tsx"),
+				a = r("./src/reddit/components/Econ/Common/ModalCloseButton/index.m.less"),
+				d = r.n(a);
 			const {
-				fbt: d
-			} = r("./node_modules/fbt/lib/FbtPublic.js"), c = ({
+				fbt: c
+			} = r("./node_modules/fbt/lib/FbtPublic.js"), l = ({
 				className: e,
 				onClick: t
-			}) => i.a.createElement("button", {
+			}) => n.a.createElement("button", {
 				onClick: t,
-				className: a.a.closeButton,
-				"aria-label": d._("Close", null, {
+				className: Object(s.a)(e, d.a.closeButton),
+				"aria-label": c._("Close", null, {
 					hk: "3Qarlp"
 				})
-			}, i.a.createElement(n.b, {
-				className: a.a.closeIcon
+			}, n.a.createElement(o.b, {
+				className: d.a.closeIcon
 			}))
 		},
 		"./src/reddit/components/Econ/PowerupsFlair/PowerupsFlairModal/FlairsSection.m.less": function(e, t, r) {
@@ -585,8 +586,8 @@
 				onClick: n
 			}));
 			var I = r("./src/reddit/components/Econ/PowerupsFlair/PowerupsFlairModal/index.m.less"),
-				F = r.n(I),
-				O = r("./src/reddit/actions/economics/powerups/flairs/index.ts"),
+				O = r.n(I),
+				F = r("./src/reddit/actions/economics/powerups/flairs/index.ts"),
 				y = r("./src/reddit/actions/gold/powerups.ts"),
 				g = r("./src/reddit/components/Econ/PowerupsMarketingModal/async.tsx"),
 				x = r("./src/reddit/components/PowerupsCtaButton/index.tsx"),
@@ -678,7 +679,7 @@
 					})),
 					l = Object(n.d)(),
 					u = e => {
-						l(Object(O.setSubredditUserAchievementFlair)(t, e))
+						l(Object(F.setSubredditUserAchievementFlair)(t, e))
 					},
 					p = () => {
 						l(Object(y.f)("user_flair_picker"))
@@ -780,7 +781,7 @@
 					}),
 					flairs: a.supporterFlairs,
 					onClickFlair: t => {
-						o(Object(O.setSubredditUserSupporterFlair)(e, t))
+						o(Object(F.setSubredditUserSupporterFlair)(e, t))
 					}
 				}), i.a.createElement(W, {
 					className: J.a.flairsSection,
@@ -792,7 +793,7 @@
 					}),
 					flairs: a.achievementFlairs,
 					onClickFlair: t => {
-						o(Object(O.setSubredditUserAchievementFlair)(e, t))
+						o(Object(F.setSubredditUserAchievementFlair)(e, t))
 					}
 				}), i.a.createElement("div", {
 					className: J.a.flairsVisibility
@@ -805,7 +806,7 @@
 					disabled: !c,
 					on: c && !d,
 					onToggle: () => {
-						o(Object(O.setSubredditUserPowerupsFlairsVisibility)(e, !d))
+						o(Object(F.setSubredditUserPowerupsFlairsVisibility)(e, !d))
 					}
 				})), i.a.createElement(x.a, {
 					className: J.a.button,
@@ -869,7 +870,7 @@
 					b = Object(n.e)(l.m),
 					h = !!s && !!o;
 				return t && r ? i.a.createElement("div", {
-					className: F.a.container
+					className: O.a.container
 				}, i.a.createElement(j, {
 					subredditId: r.id,
 					userId: t.id,
@@ -1369,4 +1370,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.c5db51cae0cc9846d332.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.98a94430d74dce49dbdf.js.map

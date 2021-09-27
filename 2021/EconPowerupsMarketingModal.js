@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.729a78be9e56778d39f0.js
-// Retrieved at 9/22/2021, 3:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.d50977b7a736f53f1a4f.js
+// Retrieved at 9/27/2021, 11:20:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsMarketingModal"], {
 		"./src/reddit/components/Econ/Common/BenefitTile/index.m.less": function(e, t, s) {
@@ -162,26 +162,27 @@
 		"./src/reddit/components/Econ/Common/ModalCloseButton/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return l
+				return d
 			}));
-			var n = s("./node_modules/react/index.js"),
-				o = s.n(n),
-				r = s("./src/reddit/components/ModalStyledComponents/index.tsx"),
-				a = s("./src/reddit/components/Econ/Common/ModalCloseButton/index.m.less"),
-				c = s.n(a);
+			var n = s("./src/lib/classNames/index.ts"),
+				o = s("./node_modules/react/index.js"),
+				r = s.n(o),
+				a = s("./src/reddit/components/ModalStyledComponents/index.tsx"),
+				c = s("./src/reddit/components/Econ/Common/ModalCloseButton/index.m.less"),
+				i = s.n(c);
 			const {
-				fbt: i
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), l = ({
+				fbt: l
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), d = ({
 				className: e,
 				onClick: t
-			}) => o.a.createElement("button", {
+			}) => r.a.createElement("button", {
 				onClick: t,
-				className: c.a.closeButton,
-				"aria-label": i._("Close", null, {
+				className: Object(n.a)(e, i.a.closeButton),
+				"aria-label": l._("Close", null, {
 					hk: "3Qarlp"
 				})
-			}, o.a.createElement(r.b, {
-				className: c.a.closeIcon
+			}, r.a.createElement(a.b, {
+				className: i.a.closeIcon
 			}))
 		},
 		"./src/reddit/components/Econ/Common/NewIcon/index.m.less": function(e, t, s) {
@@ -599,4 +600,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.729a78be9e56778d39f0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.d50977b7a736f53f1a4f.js.map

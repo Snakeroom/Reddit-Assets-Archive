@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AwardCreationModal.48f642d33474c8605144.js
-// Retrieved at 9/21/2021, 12:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AwardCreationModal.767cf746c5ee857d2acb.js
+// Retrieved at 9/27/2021, 11:20:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AwardCreationModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, a) {
@@ -529,11 +529,11 @@
 				Te = 500,
 				xe = e => {
 					const t = e || 0;
-					return t >= w.f ? t * w.i : t * w.c
+					return t >= w.g ? t * w.j : t * w.d
 				},
 				Se = e => {
 					const t = e || 0;
-					return t >= w.f ? t * w.j : 0
+					return t >= w.g ? t * w.k : 0
 				},
 				Ne = e => e.slice(0, 5),
 				Oe = (e, t) => `${e}T${Ne(t)}:00`,
@@ -857,7 +857,7 @@
 						hk: "2A77pK"
 					})), s.a.createElement("span", null, p.fbt._("File size limited to {maxImageFileSize}MB", [p.fbt._param("maxImageFileSize", Ee / 1048576)], {
 						hk: "2iX7Vn"
-					}))))), u.length < w.e && s.a.createElement("div", {
+					}))))), u.length < w.f && s.a.createElement("div", {
 						className: Object(C.a)(b.a.formSection, b.a.modToggleSection)
 					}, s.a.createElement("label", null, 0 !== this.costOptions.length && s.a.createElement(k.a, {
 						activeColorOverride: y.b.moderator,
@@ -2216,4 +2216,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AwardCreationModal.48f642d33474c8605144.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AwardCreationModal.767cf746c5ee857d2acb.js.map

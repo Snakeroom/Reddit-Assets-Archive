@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.0a61b710a61a24747b9f.js
-// Retrieved at 9/27/2021, 10:40:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.449985b098d3297f6360.js
+// Retrieved at 9/27/2021, 11:20:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -3890,7 +3890,7 @@
 							moderatorPermissions: n,
 							subredditOrProfileId: a
 						} = this.props, r = !(!n || !n.all);
-						if (!e.filled && s.length < m.d) return o.a.createElement(U, {
+						if (!e.filled && s.length < m.e) return o.a.createElement(U, {
 							coinPrice: e.price,
 							key: e.price,
 							onCreate: () => this.openAddAwardModal(e.price),
@@ -3947,7 +3947,7 @@
 						r = s && s.all,
 						i = this.getAwardSlots().filter(e => r && !a || e.filled),
 						d = e.filter(e => e.awardType === E.f.Moderator),
-						l = e.length < m.d && d.length < m.e && r && !a;
+						l = e.length < m.e && d.length < m.f && r && !a;
 					return o.a.createElement(o.a.Fragment, null, o.a.createElement(L, {
 						subredditId: n
 					}), a && o.a.createElement(W, {
@@ -18944,22 +18944,24 @@
 				return n
 			})), s.d(t, "b", (function() {
 				return a
-			})), s.d(t, "d", (function() {
-				return o
 			})), s.d(t, "e", (function() {
-				return r
+				return o
 			})), s.d(t, "f", (function() {
-				return i
-			})), s.d(t, "c", (function() {
-				return d
-			})), s.d(t, "j", (function() {
-				return l
-			})), s.d(t, "i", (function() {
-				return c
+				return r
 			})), s.d(t, "g", (function() {
-				return m
+				return i
+			})), s.d(t, "d", (function() {
+				return d
+			})), s.d(t, "k", (function() {
+				return l
+			})), s.d(t, "j", (function() {
+				return c
 			})), s.d(t, "h", (function() {
+				return m
+			})), s.d(t, "i", (function() {
 				return u
+			})), s.d(t, "c", (function() {
+				return p
 			}));
 			const n = "ModerationPage--Modal--AddAward",
 				a = "ModerationPage--Modal--DeleteAwardConfirmation",
@@ -18970,7 +18972,8 @@
 				l = .1,
 				c = .1,
 				m = 500,
-				u = ["t5_2qqoq", "t5_37xo2", "t5_2r60y", "t5_mvcq5", "t5_4e4fpz", "t5_4e4ib9", "t5_4y3poa", "t5_4hmhx4"]
+				u = ["t5_2qqoq", "t5_37xo2", "t5_2r60y", "t5_mvcq5", "t5_4e4fpz", "t5_4e4ib9", "t5_4y3poa", "t5_4hmhx4"],
+				p = "https://reddit.zendesk.com/hc/en-us/articles/360050641932"
 		},
 		"./src/reddit/controls/CheckboxInput/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -22569,4 +22572,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.0a61b710a61a24747b9f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.449985b098d3297f6360.js.map
