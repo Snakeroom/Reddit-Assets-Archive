@@ -1,10 +1,10 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.dd13c13b5a811f46382a.js
-// Retrieved at 9/27/2021, 1:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.9ee33a24e819ef9d9639.js
+// Retrieved at 9/27/2021, 1:20:06 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
-		for (var n, a, i = o[0], s = o[1], c = o[2], l = 0, b = []; l < i.length; l++) a = i[l], Object.prototype.hasOwnProperty.call(d, a) && d[a] && b.push(d[a][0]), d[a] = 0;
+		for (var n, a, i = o[0], s = o[1], c = o[2], l = 0, P = []; l < i.length; l++) a = i[l], Object.prototype.hasOwnProperty.call(d, a) && d[a] && P.push(d[a][0]), d[a] = 0;
 		for (n in s) Object.prototype.hasOwnProperty.call(s, n) && (e[n] = s[n]);
-		for (m && m(o); b.length;) b.shift()();
+		for (m && m(o); P.length;) P.shift()();
 		return r.push.apply(r, c || []), t()
 	}
 
@@ -607,8 +607,8 @@
 					Avatar: "1767989a72b5003d0d46",
 					BadgePurchaseModal: "b2c916f4978b1d918052",
 					BannedUserModal: "58979c81647758538dd5",
-					BottomCellWrapper: "26aa52730f9a8a74ed69",
-					BottomSheetUpsellWrapper: "b31526669441b8fa5a7b",
+					BottomCellWrapper: "e5c4ddbd47fe92359b91",
+					BottomSheetUpsellWrapper: "538657bf7539ce1e38e4",
 					ChangeUsernameModals: "90a4beb7964023200a40",
 					ChangeUsernameTooltip: "7d63642f7de6512f3bde",
 					"ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8": "3777a30bdb1f4c215c26",
@@ -768,7 +768,7 @@
 					"vendors~SubredditWiki": "31d6cfe0d16ae931b73c",
 					SubredditWiki: "56277cca7fbbdf58a760",
 					"vendors~xml2js": "31d6cfe0d16ae931b73c",
-					SignupUpsell: "8df18b6617d9df46fdef",
+					SignupUpsell: "4f1c0a1a6f11cee3e442",
 					AuthorHovercard: "f56fb52b40864be294b4",
 					AwardTooltip: "a38b7ba17f1b5f686b54",
 					CustomBadgeHovercardTooltip: "3ed6dc5d02b740fdc998",
@@ -919,12 +919,12 @@
 				var m;
 				if ((c = (m = l[s]).getAttribute("data-href")) === n || c === d) return o()
 			}
-			var b = document.createElement("link");
-			b.rel = "stylesheet", b.type = "text/css", b.onload = o, b.onerror = function(o) {
+			var P = document.createElement("link");
+			P.rel = "stylesheet", P.type = "text/css", P.onload = o, P.onerror = function(o) {
 				var n = o && o.target && o.target.src || d,
 					r = new Error("Loading CSS chunk " + e + " failed.\n(" + n + ")");
-				r.code = "CSS_CHUNK_LOAD_FAILED", r.request = n, delete a[e], b.parentNode.removeChild(b), t(r)
-			}, b.href = d, document.getElementsByTagName("head")[0].appendChild(b)
+				r.code = "CSS_CHUNK_LOAD_FAILED", r.request = n, delete a[e], P.parentNode.removeChild(P), t(r)
+			}, P.href = d, document.getElementsByTagName("head")[0].appendChild(P)
 		})).then((function() {
 			a[e] = 0
 		})));
@@ -1261,8 +1261,8 @@
 						Avatar: "a4b91b609c4924b1db01",
 						BadgePurchaseModal: "3fa6cfbc48ae35faa0ff",
 						BannedUserModal: "87996313772e95e640a5",
-						BottomCellWrapper: "8c5dbbda45ea713c5ed2",
-						BottomSheetUpsellWrapper: "f20fc8254c957e52b840",
+						BottomCellWrapper: "bc714d59bc158d8a134b",
+						BottomSheetUpsellWrapper: "edc39eb9daec6f19dfd7",
 						ChangeUsernameModals: "9a0f6e7b38ded1c473e0",
 						ChangeUsernameTooltip: "a175739a64bf194c7ea9",
 						"ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8": "2d8de37e1156f3d79d6b",
@@ -1373,7 +1373,7 @@
 						"translations/es_MX-json": "c80edeecf30720061419",
 						"translations/fr_FR-json": "67961e8fd343f9e5b2f1",
 						"translations/it_IT-json": "0a68dd1c889bae3b334e",
-						"translations/pseudo_ext-json": "ba4af8c274f4aecdb7f4",
+						"translations/pseudo_ext-json": "b8b3f7b115c4db7e7d34",
 						"translations/pseudo_long-json": "ad5fd01ea1bb03cdd8ac",
 						"translations/pseudo_short-json": "5a122fb2b044f36a7e41",
 						"translations/pt_BR-json": "059b477e6dccf163137e",
@@ -1422,7 +1422,7 @@
 						"vendors~SubredditWiki": "375d2635dafe1308f47b",
 						SubredditWiki: "93b2a2f12807ce3505a7",
 						"vendors~xml2js": "88f76e2e07b71eb98128",
-						SignupUpsell: "d16679964bbb6643a29a",
+						SignupUpsell: "8333974e58e560a69ef4",
 						AuthorHovercard: "b840db61bcaa1ae66e90",
 						AwardTooltip: "e5f5cea8fb1c9310ad8a",
 						CustomBadgeHovercardTooltip: "aaaf1c15c57aac6ecff0",
@@ -1629,4 +1629,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.dd13c13b5a811f46382a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.9ee33a24e819ef9d9639.js.map

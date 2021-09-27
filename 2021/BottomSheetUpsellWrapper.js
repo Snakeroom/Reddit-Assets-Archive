@@ -1,11 +1,10 @@
-// https://www.redditstatic.com/desktop2x/BottomSheetUpsellWrapper.f20fc8254c957e52b840.js
-// Retrieved at 9/23/2021, 5:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/BottomSheetUpsellWrapper.edc39eb9daec6f19dfd7.js
+// Retrieved at 9/27/2021, 1:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["BottomSheetUpsellWrapper"], {
 		"./src/reddit/components/Upsell/BottomSheetUpsellWrapper/index.m.less": function(e, t, s) {
 			e.exports = {
-				wrapper: "_1CRxXSvUhagxkF2Z5KeFSg",
-				closeButton: "_16ynrhAmtfONULXVW-vhhU"
+				wrapper: "_1CRxXSvUhagxkF2Z5KeFSg"
 			}
 		},
 		"./src/reddit/components/Upsell/BottomSheetUpsellWrapper/index.tsx": function(e, t, s) {
@@ -14,8 +13,8 @@
 			var o = s("./node_modules/react/index.js"),
 				r = s("./src/reddit/components/Upsell/SignupUpsell/Loader.ts"),
 				n = s("./src/reddit/constants/promo.ts"),
-				l = s("./src/reddit/hooks/promo/useIsPromoShown.ts"),
-				i = s("./src/reddit/constants/experiments.ts"),
+				i = s("./src/reddit/hooks/promo/useIsPromoShown.ts"),
+				l = s("./src/reddit/constants/experiments.ts"),
 				c = s("./src/reddit/contexts/ThrottlingContext/index.tsx"),
 				d = s("./src/reddit/hooks/usePromoContext.ts");
 
@@ -28,31 +27,28 @@
 					}(n.b.SignupUpsellBottomSheet),
 					{
 						throttleFeature: t
-					} = o.useContext(c.a[i.fb]),
+					} = o.useContext(c.a[l.fb]),
 					{
 						throttleFeature: s
-					} = o.useContext(c.a[i.gb]),
+					} = o.useContext(c.a[l.gb]),
 					{
 						throttleFeature: r
-					} = o.useContext(c.a[i.hb]);
+					} = o.useContext(c.a[l.hb]);
 				o.useEffect(() => {
 					e && (t(), s(), r())
 				}, [e, t, s, r])
 			}
-			var u = s("./src/reddit/icons/svgs/Close/index.tsx"),
-				a = s("./src/reddit/components/Upsell/BottomSheetUpsellWrapper/index.m.less"),
-				m = s.n(a);
+			var u = s("./src/reddit/components/Upsell/BottomSheetUpsellWrapper/index.m.less"),
+				a = s.n(u);
 			t.default = function() {
 				p();
 				const {
 					dismissPromo: e
 				} = Object(d.a)();
-				return Object(l.a)(n.b.SignupUpsellBottomSheet) ? o.createElement("div", {
-					className: m.a.wrapper
-				}, o.createElement("button", {
-					className: m.a.closeButton,
-					onClick: () => e(n.b.SignupUpsellBottomSheet)
-				}, o.createElement(u.a, null)), o.createElement(r.a, {
+				return Object(i.a)(n.b.SignupUpsellBottomSheet) ? o.createElement("div", {
+					className: a.a.wrapper
+				}, o.createElement(r.a, {
+					onDismiss: () => e(n.b.SignupUpsellBottomSheet),
 					size: "large"
 				})) : null
 			}
@@ -108,4 +104,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BottomSheetUpsellWrapper.f20fc8254c957e52b840.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BottomSheetUpsellWrapper.edc39eb9daec6f19dfd7.js.map
