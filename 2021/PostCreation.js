@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.fc80d4d543e9f74eeea3.js
-// Retrieved at 9/23/2021, 5:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.cc2a20e6cc2ddb7e92e8.js
+// Retrieved at 9/27/2021, 6:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, n) {
@@ -22247,48 +22247,94 @@
 				hasActiveClosetSubscription: !1
 			};
 			var c = (e = a, t) => {
-					switch (t.type) {
-						case i.a:
-							return {
-								...t.payload
-							};
-						default:
-							return e
+				switch (t.type) {
+					case i.a:
+						return {
+							...t.payload
+						};
+					default:
+						return e
+				}
+			};
+			const d = {
+					marketingEvent: {
+						active: !1,
+						assetUrls: null
+					},
+					quickCreateV1: {
+						active: !1,
+						text: "",
+						minDaysOnReddit: 0,
+						shouldHaveAvatar: !1,
+						maxEventViews: 0,
+						minDaysSinceLastEventInteraction: 0,
+						webAssetUrls: []
 					}
 				},
-				d = n("./src/reddit/actions/goldPurchaseModals/constants.ts"),
-				l = n("./src/reddit/actions/modal.ts"),
-				u = n("./src/reddit/constants/modals.ts");
-			const m = {
-				active: !1,
-				assetUrls: null
-			};
-			var p = (e = null, t) => {
+				l = "avatar_quick_create_event",
+				u = "avatar_marketing_event",
+				m = e => {
+					const t = {};
+					return e.forEach(e => {
+						if (e.startsWith("targeting:")) {
+							const n = e.split(":");
+							if (!n.length && n.length < 3) return null;
+							try {
+								t[n[1]] = JSON.parse(n[2])
+							} catch {
+								t[n[1]] = n[2]
+							}
+						}
+					}), t
+				};
+			var p = n("./src/reddit/actions/goldPurchaseModals/constants.ts"),
+				b = n("./src/reddit/actions/modal.ts"),
+				h = n("./src/reddit/constants/modals.ts");
+			var f = (e = null, t) => {
 				var n;
 				switch (t.type) {
-					case d.o:
+					case p.o:
 						const {
-							avatarMarketingEvent: o
+							avatarMarketingEvents: o
 						} = t.payload;
 						return o ? function(e) {
-							const {
-								startsAt: t,
-								endsAt: n,
-								webAssetUrls: o
-							} = e, r = t && new Date(t) <= new Date, s = !!n && new Date(n) < new Date, i = o || null;
-							return {
-								active: !!r && !s && !!i,
-								assetUrls: i
-							}
-						}(o) : m;
-					case l.c:
-						return (null === (n = t.payload) || void 0 === n ? void 0 : n.id) === u.a.SNOOVATAR_MODAL ? m : e;
+							if (!e) return d;
+							const t = d;
+							return e.forEach(e => {
+								const {
+									startsAt: n,
+									endsAt: o,
+									webAssetUrls: r,
+									tags: s
+								} = e, i = n && new Date(n) <= new Date, a = !!o && new Date(o) < new Date, c = !!i && !a;
+								if (s && s.includes(l)) {
+									const {
+										text: n
+									} = e, o = r || null, i = m(s);
+									t && (t.quickCreateV1 = {
+										...i,
+										text: n,
+										active: c && !!o,
+										webAssetUrls: o
+									})
+								}
+								if (s && s.includes(u)) {
+									const e = r || null;
+									t && (t.marketingEvent = {
+										active: c && !!e,
+										assetUrls: e
+									})
+								}
+							}), t
+						}(o) : d;
+					case b.c:
+						return (null === (n = t.payload) || void 0 === n ? void 0 : n.id) === h.a.SNOOVATAR_MODAL ? d : e;
 					default:
 						return e
 				}
 			};
 			t.a = Object(s.c)({
-				marketing: p,
+				marketing: f,
 				avatarUser: c
 			})
 		},
@@ -22633,9 +22679,9 @@
 					return !!(null === (n = null === (t = e.features) || void 0 === t ? void 0 : t.avatar) || void 0 === n ? void 0 : n.marketing)
 				},
 				c = Object(o.a)(i.c, e => {
-					var t, n;
-					const o = null === (n = null === (t = e.features) || void 0 === t ? void 0 : t.avatar) || void 0 === n ? void 0 : n.marketing;
-					return (null == o ? void 0 : o.active) ? o.assetUrls && o.assetUrls[0] : null
+					var t, n, o;
+					const r = null === (o = null === (n = null === (t = e.features) || void 0 === t ? void 0 : t.avatar) || void 0 === n ? void 0 : n.marketing) || void 0 === o ? void 0 : o.marketingEvent;
+					return (null == r ? void 0 : r.active) ? (null == r ? void 0 : r.assetUrls) && (null == r ? void 0 : r.assetUrls[0]) : null
 				}, (e, t) => e ? t : null)
 		},
 		"./src/reddit/selectors/crypto/points.ts": function(e, t, n) {
@@ -23419,4 +23465,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.fc80d4d543e9f74eeea3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.cc2a20e6cc2ddb7e92e8.js.map

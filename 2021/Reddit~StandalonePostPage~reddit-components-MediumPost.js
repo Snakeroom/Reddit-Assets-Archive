@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-MediumPost.38498c53554490972cda.js
-// Retrieved at 9/23/2021, 5:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-MediumPost.e980fece60192f955fd0.js
+// Retrieved at 9/27/2021, 6:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~StandalonePostPage~reddit-components-MediumPost"], {
 		"./src/lib/hooks/useTooltip.ts": function(e, t, r) {
@@ -347,18 +347,18 @@
 						})
 					}, []);
 				Object(a.a)(S, U);
-				const [L, B] = Object(n.useState)(!1), V = Object(n.useCallback)(e => {
+				const [L, V] = Object(n.useState)(!1), B = Object(n.useCallback)(e => {
 					e.forEach(e => {
 						const {
 							isIntersecting: t,
 							intersectionRatio: r
 						} = e, n = 1 !== r;
-						t ? B(!0) : n && B(!1)
+						t ? V(!0) : n && V(!1)
 					})
 				}, []), q = Object(n.useRef)({
 					rootMargin: "2000px 0px 2000px 0px"
 				});
-				Object(a.a)(S, V, q.current);
+				Object(a.a)(S, B, q.current);
 				const z = Object(c.a)(t);
 				Object(n.useEffect)(() => {
 					if (void 0 !== z && z !== t) {
@@ -1580,9 +1580,9 @@
 			})), r.d(t, "clickFilterEvent", (function() {
 				return L
 			})), r.d(t, "clickNextFiltersEvent", (function() {
-				return B
-			})), r.d(t, "clickPreviousFiltersEvent", (function() {
 				return V
+			})), r.d(t, "clickPreviousFiltersEvent", (function() {
+				return B
 			}));
 			var n = r("./src/reddit/models/Gold/Award.ts"),
 				s = r("./src/reddit/selectors/telemetry.ts"),
@@ -1776,13 +1776,13 @@
 						filterName: e.content.markdown
 					}
 				}),
-				B = () => e => ({
+				V = () => e => ({
 					...u(e),
 					source: "give_gold",
 					action: "click",
 					noun: "next_filters"
 				}),
-				V = () => e => ({
+				B = () => e => ({
 					...u(e),
 					source: "give_gold",
 					action: "click",
@@ -2599,48 +2599,94 @@
 				hasActiveClosetSubscription: !1
 			};
 			var i = (e = c, t) => {
-					switch (t.type) {
-						case a.a:
-							return {
-								...t.payload
-							};
-						default:
-							return e
+				switch (t.type) {
+					case a.a:
+						return {
+							...t.payload
+						};
+					default:
+						return e
+				}
+			};
+			const d = {
+					marketingEvent: {
+						active: !1,
+						assetUrls: null
+					},
+					quickCreateV1: {
+						active: !1,
+						text: "",
+						minDaysOnReddit: 0,
+						shouldHaveAvatar: !1,
+						maxEventViews: 0,
+						minDaysSinceLastEventInteraction: 0,
+						webAssetUrls: []
 					}
 				},
-				d = r("./src/reddit/actions/goldPurchaseModals/constants.ts"),
-				l = r("./src/reddit/actions/modal.ts"),
-				u = r("./src/reddit/constants/modals.ts");
-			const m = {
-				active: !1,
-				assetUrls: null
-			};
-			var p = (e = null, t) => {
+				l = "avatar_quick_create_event",
+				u = "avatar_marketing_event",
+				m = e => {
+					const t = {};
+					return e.forEach(e => {
+						if (e.startsWith("targeting:")) {
+							const r = e.split(":");
+							if (!r.length && r.length < 3) return null;
+							try {
+								t[r[1]] = JSON.parse(r[2])
+							} catch {
+								t[r[1]] = r[2]
+							}
+						}
+					}), t
+				};
+			var p = r("./src/reddit/actions/goldPurchaseModals/constants.ts"),
+				f = r("./src/reddit/actions/modal.ts"),
+				b = r("./src/reddit/constants/modals.ts");
+			var v = (e = null, t) => {
 				var r;
 				switch (t.type) {
-					case d.o:
+					case p.o:
 						const {
-							avatarMarketingEvent: n
+							avatarMarketingEvents: n
 						} = t.payload;
 						return n ? function(e) {
-							const {
-								startsAt: t,
-								endsAt: r,
-								webAssetUrls: n
-							} = e, s = t && new Date(t) <= new Date, o = !!r && new Date(r) < new Date, a = n || null;
-							return {
-								active: !!s && !o && !!a,
-								assetUrls: a
-							}
-						}(n) : m;
-					case l.c:
-						return (null === (r = t.payload) || void 0 === r ? void 0 : r.id) === u.a.SNOOVATAR_MODAL ? m : e;
+							if (!e) return d;
+							const t = d;
+							return e.forEach(e => {
+								const {
+									startsAt: r,
+									endsAt: n,
+									webAssetUrls: s,
+									tags: o
+								} = e, a = r && new Date(r) <= new Date, c = !!n && new Date(n) < new Date, i = !!a && !c;
+								if (o && o.includes(l)) {
+									const {
+										text: r
+									} = e, n = s || null, a = m(o);
+									t && (t.quickCreateV1 = {
+										...a,
+										text: r,
+										active: i && !!n,
+										webAssetUrls: n
+									})
+								}
+								if (o && o.includes(u)) {
+									const e = s || null;
+									t && (t.marketingEvent = {
+										active: i && !!e,
+										assetUrls: e
+									})
+								}
+							}), t
+						}(n) : d;
+					case f.c:
+						return (null === (r = t.payload) || void 0 === r ? void 0 : r.id) === b.a.SNOOVATAR_MODAL ? d : e;
 					default:
 						return e
 				}
 			};
 			t.a = Object(o.c)({
-				marketing: p,
+				marketing: v,
 				avatarUser: i
 			})
 		},
@@ -2872,9 +2918,9 @@
 					return !!(null === (r = null === (t = e.features) || void 0 === t ? void 0 : t.avatar) || void 0 === r ? void 0 : r.marketing)
 				},
 				i = Object(n.a)(a.c, e => {
-					var t, r;
-					const n = null === (r = null === (t = e.features) || void 0 === t ? void 0 : t.avatar) || void 0 === r ? void 0 : r.marketing;
-					return (null == n ? void 0 : n.active) ? n.assetUrls && n.assetUrls[0] : null
+					var t, r, n;
+					const s = null === (n = null === (r = null === (t = e.features) || void 0 === t ? void 0 : t.avatar) || void 0 === r ? void 0 : r.marketing) || void 0 === n ? void 0 : n.marketingEvent;
+					return (null == s ? void 0 : s.active) ? (null == s ? void 0 : s.assetUrls) && (null == s ? void 0 : s.assetUrls[0]) : null
 				}, (e, t) => e ? t : null)
 		},
 		"./src/reddit/selectors/experiments/joinOptimizations.ts": function(e, t, r) {
@@ -3370,4 +3416,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-MediumPost.38498c53554490972cda.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-MediumPost.e980fece60192f955fd0.js.map

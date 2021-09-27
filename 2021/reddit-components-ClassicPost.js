@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.75b48adbb10a16940e58.js
-// Retrieved at 9/23/2021, 5:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.781257096f2707304160.js
+// Retrieved at 9/27/2021, 6:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost", "Reddit~StandalonePostPage~reddit-components-MediumPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1610,8 +1610,8 @@
 						flairStyleTemplate: Y,
 						formatTitle: W,
 						hostPostData: H,
-						isCheckboxSelected: z,
-						isCurrentUserProfilePost: q,
+						isCheckboxSelected: q,
+						isCurrentUserProfilePost: z,
 						isFrontpage: Q,
 						isGalleryTileLayoutDefault: K,
 						isLoggedIn: X,
@@ -1654,7 +1654,7 @@
 							flairStyleTemplate: ve,
 							post: ie,
 							inSubredditOrProfile: A,
-							isCurrentUserProfilePost: q,
+							isCurrentUserProfilePost: z,
 							isOverlay: Z,
 							shouldShowSubscribeButton: !(Q && X),
 							subredditOrProfile: pe
@@ -1677,7 +1677,7 @@
 							model: ie,
 							handleVote: w,
 							showBulkActionCheckbox: le,
-							isCheckboxSelected: z,
+							isCheckboxSelected: q,
 							toggleCheckbox: be,
 							flairStyleTemplate: ve,
 							redditStyle: ce,
@@ -1915,8 +1915,8 @@
 					}
 				}, [t]);
 				const H = Object(s.useCallback)(() => y(!0), [y]),
-					z = 0 === j.length,
-					q = C || z,
+					q = 0 === j.length,
+					z = C || q,
 					Q = Object(s.useRef)(((e, t) => `${t}_${e}_count_anim`)(h, n));
 				return r.a.createElement(r.a.Fragment, null, !f && r.a.createElement("div", {
 					className: l.a.countAnimation
@@ -1941,7 +1941,7 @@
 						} : {
 							transform: "translateY(0)"
 						}
-					}, q ? r.a.createElement("span", {
+					}, z ? r.a.createElement("span", {
 						className: l.a.digitDelta
 					}, e) : n.map((e, t) => {
 						const s = 0 === t || t === n.length - 1;
@@ -3025,7 +3025,7 @@
 			n.d(t, "b", (function() {
 				return P
 			})), n.d(t, "a", (function() {
-				return z
+				return q
 			}));
 			var s = n("./node_modules/polished/dist/polished.es.js"),
 				r = n("./node_modules/react/index.js"),
@@ -3099,7 +3099,7 @@
 			}! function(e) {
 				e[e.ExtraLarge = 0] = "ExtraLarge", e[e.Large = 1] = "Large", e[e.Medium = 2] = "Medium", e[e.Small = 3] = "Small", e[e.ExtraSmall = 4] = "ExtraSmall"
 			}(P || (P = {}));
-			const z = ({
+			const q = ({
 					size: e,
 					titleColor: t,
 					titleType: n,
@@ -3140,7 +3140,7 @@
 						type: n
 					}, r) : r)
 				},
-				q = ({
+				z = ({
 					className: e,
 					disableVisited: t,
 					titleColor: n,
@@ -3202,7 +3202,7 @@
 								postId: e.id,
 								source: n
 							}, o.a.createElement(Z, t)) : o.a.createElement(Z, t)
-						})(t, e) : o.a.createElement(q, {
+						})(t, e) : o.a.createElement(z, {
 							className: e.titleLinkClassName,
 							"data-click-id": "body",
 							disableVisited: e.disableVisited,
@@ -3223,7 +3223,7 @@
 						return e.length >= 250 ? e.slice(0, 250 - "...".length) + "..." : e
 					})(r));
 					const i = e.isCommentsPage ? R.a.PostComments : R.a.PostItem;
-					return o.a.createElement(z, {
+					return o.a.createElement(q, {
 						className: e.titleClassName,
 						nowrap: e.nowrap,
 						redditStyle: e.redditStyle || e.isCommentsPage,
@@ -6234,48 +6234,94 @@
 				hasActiveClosetSubscription: !1
 			};
 			var c = (e = a, t) => {
-					switch (t.type) {
-						case i.a:
-							return {
-								...t.payload
-							};
-						default:
-							return e
+				switch (t.type) {
+					case i.a:
+						return {
+							...t.payload
+						};
+					default:
+						return e
+				}
+			};
+			const d = {
+					marketingEvent: {
+						active: !1,
+						assetUrls: null
+					},
+					quickCreateV1: {
+						active: !1,
+						text: "",
+						minDaysOnReddit: 0,
+						shouldHaveAvatar: !1,
+						maxEventViews: 0,
+						minDaysSinceLastEventInteraction: 0,
+						webAssetUrls: []
 					}
 				},
-				d = n("./src/reddit/actions/goldPurchaseModals/constants.ts"),
-				l = n("./src/reddit/actions/modal.ts"),
-				u = n("./src/reddit/constants/modals.ts");
-			const m = {
-				active: !1,
-				assetUrls: null
-			};
-			var p = (e = null, t) => {
+				l = "avatar_quick_create_event",
+				u = "avatar_marketing_event",
+				m = e => {
+					const t = {};
+					return e.forEach(e => {
+						if (e.startsWith("targeting:")) {
+							const n = e.split(":");
+							if (!n.length && n.length < 3) return null;
+							try {
+								t[n[1]] = JSON.parse(n[2])
+							} catch {
+								t[n[1]] = n[2]
+							}
+						}
+					}), t
+				};
+			var p = n("./src/reddit/actions/goldPurchaseModals/constants.ts"),
+				b = n("./src/reddit/actions/modal.ts"),
+				f = n("./src/reddit/constants/modals.ts");
+			var _ = (e = null, t) => {
 				var n;
 				switch (t.type) {
-					case d.o:
+					case p.o:
 						const {
-							avatarMarketingEvent: s
+							avatarMarketingEvents: s
 						} = t.payload;
 						return s ? function(e) {
-							const {
-								startsAt: t,
-								endsAt: n,
-								webAssetUrls: s
-							} = e, r = t && new Date(t) <= new Date, o = !!n && new Date(n) < new Date, i = s || null;
-							return {
-								active: !!r && !o && !!i,
-								assetUrls: i
-							}
-						}(s) : m;
-					case l.c:
-						return (null === (n = t.payload) || void 0 === n ? void 0 : n.id) === u.a.SNOOVATAR_MODAL ? m : e;
+							if (!e) return d;
+							const t = d;
+							return e.forEach(e => {
+								const {
+									startsAt: n,
+									endsAt: s,
+									webAssetUrls: r,
+									tags: o
+								} = e, i = n && new Date(n) <= new Date, a = !!s && new Date(s) < new Date, c = !!i && !a;
+								if (o && o.includes(l)) {
+									const {
+										text: n
+									} = e, s = r || null, i = m(o);
+									t && (t.quickCreateV1 = {
+										...i,
+										text: n,
+										active: c && !!s,
+										webAssetUrls: s
+									})
+								}
+								if (o && o.includes(u)) {
+									const e = r || null;
+									t && (t.marketingEvent = {
+										active: c && !!e,
+										assetUrls: e
+									})
+								}
+							}), t
+						}(s) : d;
+					case b.c:
+						return (null === (n = t.payload) || void 0 === n ? void 0 : n.id) === f.a.SNOOVATAR_MODAL ? d : e;
 					default:
 						return e
 				}
 			};
 			t.a = Object(o.c)({
-				marketing: p,
+				marketing: _,
 				avatarUser: c
 			})
 		},
@@ -6507,9 +6553,9 @@
 					return !!(null === (n = null === (t = e.features) || void 0 === t ? void 0 : t.avatar) || void 0 === n ? void 0 : n.marketing)
 				},
 				c = Object(s.a)(i.c, e => {
-					var t, n;
-					const s = null === (n = null === (t = e.features) || void 0 === t ? void 0 : t.avatar) || void 0 === n ? void 0 : n.marketing;
-					return (null == s ? void 0 : s.active) ? s.assetUrls && s.assetUrls[0] : null
+					var t, n, s;
+					const r = null === (s = null === (n = null === (t = e.features) || void 0 === t ? void 0 : t.avatar) || void 0 === n ? void 0 : n.marketing) || void 0 === s ? void 0 : s.marketingEvent;
+					return (null == r ? void 0 : r.active) ? (null == r ? void 0 : r.assetUrls) && (null == r ? void 0 : r.assetUrls[0]) : null
 				}, (e, t) => e ? t : null)
 		},
 		"./src/reddit/selectors/experiments/joinOptimizations.ts": function(e, t, n) {
@@ -7024,4 +7070,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.75b48adbb10a16940e58.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.781257096f2707304160.js.map
