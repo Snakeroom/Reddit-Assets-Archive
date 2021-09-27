@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumBlockchainCheckoutModal.1cb1fa0a6bac13fb11e0.js
-// Retrieved at 9/15/2021, 6:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumBlockchainCheckoutModal.37301a8cac841080efea.js
+// Retrieved at 9/27/2021, 7:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumBlockchainCheckoutModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -86,11 +86,11 @@
 				v = s("./src/reddit/components/Governance/Token/index.tsx"),
 				x = s("./src/reddit/helpers/governance/tokens.ts"),
 				g = s("./src/reddit/selectors/crypto/points.ts"),
-				E = s("./src/reddit/selectors/gov.ts"),
-				w = s("./src/reddit/components/Governance/WalletAmount/index.m.less"),
-				_ = s.n(w);
+				w = s("./src/reddit/selectors/gov.ts"),
+				E = s("./src/reddit/components/Governance/WalletAmount/index.m.less"),
+				_ = s.n(E);
 			const k = Object(l.c)({
-				latestWallet: E.d,
+				latestWallet: w.d,
 				pointsDetails: (e, {
 					subredditId: t
 				}) => Object(g.b)(e, t)
@@ -112,8 +112,8 @@
 				y = s("./src/reddit/controls/LoadingIcon/index.tsx"),
 				M = s("./src/reddit/featureFlags/component.tsx"),
 				P = s("./src/reddit/helpers/governance/ethereum.ts"),
-				I = s("./src/reddit/models/Toast/index.ts"),
-				T = s("./src/reddit/selectors/economics.ts"),
+				T = s("./src/reddit/models/Toast/index.ts"),
+				I = s("./src/reddit/selectors/economics.ts"),
 				S = s("./src/reddit/selectors/subreddit.ts"),
 				A = s("./src/reddit/components/Econ/PreviewsTermsOfUseLink/index.tsx"),
 				B = s("./src/reddit/components/Economics/SubredditPremium/BlockchainCheckoutModal/Footer/index.m.less"),
@@ -124,7 +124,7 @@
 			const L = Object(l.c)({
 				meta: (e, {
 					subredditId: t
-				}) => Object(T.r)(e, t)
+				}) => Object(I.r)(e, t)
 			});
 			var R = Object(d.b)(L)((function(e) {
 					return c.a.createElement("footer", {
@@ -151,7 +151,7 @@
 			const V = Object(l.c)({
 				meta: (e, {
 					subredditId: t
-				}) => Object(T.r)(e, t)
+				}) => Object(I.r)(e, t)
 			});
 			var X = Object(d.b)(V)((function(e) {
 					const {
@@ -299,31 +299,31 @@
 			const Q = Object(l.c)({
 					meta: (e, {
 						subredditId: t
-					}) => Object(T.r)(e, t),
+					}) => Object(I.r)(e, t),
 					pointsDetails: (e, {
 						subredditId: t
 					}) => Object(g.b)(e, t),
 					priceInPoints: (e, {
 						subredditId: t
-					}) => Object(T.r)(e, t).prices.points || "0",
+					}) => Object(I.r)(e, t).prices.points || "0",
 					subscriptionExpiration: (e, {
 						subredditId: t
-					}) => Object(T.o)(e, t),
+					}) => Object(I.o)(e, t),
 					subreddit: S.Q,
-					wallet: E.d
+					wallet: w.d
 				}),
 				$ = Object(d.b)(Q, (e, t) => ({
 					onFetchSubredditMembership: () => e(Object(m.g)(t.subredditId, !0)),
 					onSuccess: () => e(Object(p.f)({
 						duration: 1e4,
-						kind: I.b.SuccessCommunityGreen,
+						kind: T.b.SuccessCommunityGreen,
 						text: z._("Your membership purchase was successful! Thank you for your support!", null, {
 							hk: "3do7sl"
 						})
 					})),
 					onError: t => e(Object(p.f)({
 						duration: 1e4,
-						kind: I.b.Error,
+						kind: T.b.Error,
 						text: t || z._("Something wen't wrong with the purchase. Please try again later.", null, {
 							hk: "4rsub"
 						})
@@ -440,9 +440,9 @@
 		"./src/reddit/controls/ErrorText/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return C
+				return w
 			})), s.d(t, "c", (function() {
-				return O
+				return E
 			}));
 			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
 				r = s("./node_modules/lodash/uniqueId.js"),
@@ -451,48 +451,44 @@
 				i = s.n(a),
 				c = s("./node_modules/react/index.js"),
 				d = s.n(c),
-				l = s("./node_modules/react-redux/es/index.js"),
-				u = s("./node_modules/reselect/es/index.js"),
-				m = s("./src/lib/classNames/index.ts"),
-				p = s("./src/reddit/actions/modal.ts"),
-				h = s("./src/reddit/selectors/activeModalId.ts"),
-				b = s("./src/higherOrderComponents/asModal/index.tsx"),
-				f = s("./src/reddit/controls/Button/index.tsx"),
-				v = s("./src/reddit/layout/row/Inline/index.tsx"),
-				x = s("./src/reddit/controls/ErrorText/SeeAllTextModal/index.m.less"),
-				g = s.n(x);
-			var E = Object(b.a)(e => {
+				l = s("./src/lib/classNames/index.ts"),
+				u = s("./src/higherOrderComponents/asModal/index.tsx"),
+				m = s("./src/reddit/controls/Button/index.tsx"),
+				p = s("./src/reddit/layout/row/Inline/index.tsx"),
+				h = s("./src/reddit/controls/ErrorText/SeeAllTextModal/index.m.less"),
+				b = s.n(h);
+			var f = Object(u.a)(e => {
 					const {
 						children: t,
 						title: s
 					} = e;
 					return d.a.createElement("div", {
-						className: g.a.wrapper
-					}, d.a.createElement(v.a, {
-						className: g.a.titleRow
+						className: b.a.wrapper
+					}, d.a.createElement(p.a, {
+						className: b.a.titleRow
 					}, s), d.a.createElement("div", {
-						className: g.a.detailsContainer
-					}, t), d.a.createElement(v.a, {
-						className: g.a.buttonRow
-					}, d.a.createElement(f.k, {
-						className: g.a.confirmButton,
+						className: b.a.detailsContainer
+					}, t), d.a.createElement(p.a, {
+						className: b.a.buttonRow
+					}, d.a.createElement(m.k, {
+						className: b.a.confirmButton,
 						onClick: e.onConfirmed
 					}, n.fbt._("Ok", null, {
 						hk: "2Giu9U"
 					}))))
 				}),
-				w = s("./src/reddit/controls/ErrorText/index.m.less"),
-				_ = s.n(w);
-			const k = Object(u.c)({
-				activeModalId: h.a
-			});
-			class N extends d.a.Component {
+				v = s("./src/reddit/controls/ErrorText/index.m.less"),
+				x = s.n(v);
+			class g extends d.a.Component {
 				constructor(e) {
 					super(e), this.spanRef = d.a.createRef(), this.toggleModal = () => {
-						this.props.toggleErrorTextModal(this.state.modalId)
+						this.setState({
+							isModalOpen: !this.state.isModalOpen
+						})
 					}, this.state = {
 						textHasOverflowed: !1,
-						modalId: `ErrorTextModal--${o()()}`
+						modalId: `ErrorTextModal--${o()()}`,
+						isModalOpen: !1
 					}
 				}
 				componentDidMount() {
@@ -514,37 +510,33 @@
 				render() {
 					const {
 						children: e,
-						activeModalId: t,
-						className: s,
-						errorModalBody: r,
-						errorModalTitle: o = n.fbt._("Error", null, {
+						className: t,
+						errorModalBody: s,
+						errorModalTitle: r = n.fbt._("Error", null, {
 							hk: "2nPF4G"
 						}),
-						moreText: a = n.fbt._("More", null, {
+						moreText: o = n.fbt._("More", null, {
 							hk: "1bCAQ0"
 						})
 					} = this.props, {
-						modalId: i,
-						textHasOverflowed: c
+						textHasOverflowed: a,
+						isModalOpen: i
 					} = this.state;
 					return d.a.createElement("div", {
-						className: Object(m.a)(_.a.wrapper, s)
+						className: Object(l.a)(x.a.wrapper, t)
 					}, d.a.createElement("span", {
-						className: _.a.description,
+						className: x.a.description,
 						ref: this.spanRef
-					}, e), c && d.a.createElement("span", {
-						className: _.a.moreText,
+					}, e), a && d.a.createElement("span", {
+						className: x.a.moreText,
 						onClick: this.toggleModal
-					}, a), t === i && d.a.createElement(E, {
+					}, o), i && d.a.createElement(f, {
 						onConfirmed: this.toggleModal,
-						title: o
-					}, r || e))
+						title: r
+					}, s || e))
 				}
 			}
-			const j = Object(l.b)(k, e => ({
-					toggleErrorTextModal: t => e(Object(p.i)(t))
-				}))(N),
-				C = e => {
+			const w = e => {
 					const {
 						className: t,
 						errorClassName: s,
@@ -554,19 +546,19 @@
 					} = e, a = o.length ? o : r ? [r] : [];
 					return a.length ? d.a.createElement("div", {
 						className: t
-					}, a.map((e, t) => d.a.createElement(j, {
+					}, a.map((e, t) => d.a.createElement(g, {
 						className: s,
 						errorModalTitle: n,
 						key: t
 					}, e))) : null
 				},
-				O = e => d.a.createElement(C, {
+				E = e => d.a.createElement(w, {
 					fallbackMessage: n.fbt._("Something went wrong", null, {
 						hk: "Cw1BT"
 					}),
 					messages: e
 				});
-			t.b = j
+			t.b = g
 		},
 		"./src/reddit/controls/FormFields/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -1061,4 +1053,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumBlockchainCheckoutModal.1cb1fa0a6bac13fb11e0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumBlockchainCheckoutModal.37301a8cac841080efea.js.map

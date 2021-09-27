@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxPurchaseModal.832779a6100ab779f227.js
-// Retrieved at 9/15/2021, 5:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxPurchaseModal.f99bec8f030fab7e034b.js
+// Retrieved at 9/27/2021, 7:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CryptoHarbergerTaxPurchaseModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -232,7 +232,7 @@
 				}
 			}
 			const _ = [],
-				I = Object(o.c)({
+				T = Object(o.c)({
 					badgeIds: (e, {
 						subredditId: t,
 						userId: n
@@ -243,7 +243,7 @@
 					allBadges: e => e.badges.models,
 					useHovercard: h.d.spSpecialMemberships
 				}),
-				T = Object(o.c)({
+				I = Object(o.c)({
 					badgeIds: (e, {
 						subredditId: t
 					}) => {
@@ -272,8 +272,8 @@
 					badges: s
 				}, r))
 			}
-			const P = Object(s.b)(I, k)(M),
-				B = Object(s.b)(T, k)(M)
+			const P = Object(s.b)(T, k)(M),
+				B = Object(s.b)(I, k)(M)
 		},
 		"./src/reddit/components/Governance/HarbergerTaxWithCrypto/BannerPurchaseModal/Info/Controls/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -562,7 +562,7 @@
 			const {
 				fbt: _
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
-			const I = Object(f.c)({
+			const T = Object(f.c)({
 				tokenName: (e, {
 					subredditId: t
 				}) => {
@@ -570,7 +570,7 @@
 					return (null === (n = Object(l.b)(e, t)) || void 0 === n ? void 0 : n.name) || ""
 				}
 			});
-			var T = Object(d.b)(I)((function(e) {
+			var I = Object(d.b)(T)((function(e) {
 					const {
 						className: t,
 						subredditName: n,
@@ -626,7 +626,7 @@
 			function P(e) {
 				return a.a.createElement("div", {
 					className: Object(o.a)(M.a.container, e.className)
-				}, a.a.createElement(T, {
+				}, a.a.createElement(I, {
 					subredditId: e.subreddit.id,
 					subredditName: e.subreddit.name,
 					taxRate: e.taxRate
@@ -1042,9 +1042,9 @@
 		"./src/reddit/controls/ErrorText/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return C
+				return E
 			})), n.d(t, "c", (function() {
-				return _
+				return y
 			}));
 			var r = n("./node_modules/fbt/lib/FbtPublic.js"),
 				a = n("./node_modules/lodash/uniqueId.js"),
@@ -1053,48 +1053,44 @@
 				i = n.n(o),
 				c = n("./node_modules/react/index.js"),
 				l = n.n(c),
-				d = n("./node_modules/react-redux/es/index.js"),
-				u = n("./node_modules/reselect/es/index.js"),
-				m = n("./src/lib/classNames/index.ts"),
-				p = n("./src/reddit/actions/modal.ts"),
-				h = n("./src/reddit/selectors/activeModalId.ts"),
-				b = n("./src/higherOrderComponents/asModal/index.tsx"),
-				x = n("./src/reddit/controls/Button/index.tsx"),
-				f = n("./src/reddit/layout/row/Inline/index.tsx"),
-				v = n("./src/reddit/controls/ErrorText/SeeAllTextModal/index.m.less"),
-				g = n.n(v);
-			var E = Object(b.a)(e => {
+				d = n("./src/lib/classNames/index.ts"),
+				u = n("./src/higherOrderComponents/asModal/index.tsx"),
+				m = n("./src/reddit/controls/Button/index.tsx"),
+				p = n("./src/reddit/layout/row/Inline/index.tsx"),
+				h = n("./src/reddit/controls/ErrorText/SeeAllTextModal/index.m.less"),
+				b = n.n(h);
+			var x = Object(u.a)(e => {
 					const {
 						children: t,
 						title: n
 					} = e;
 					return l.a.createElement("div", {
-						className: g.a.wrapper
-					}, l.a.createElement(f.a, {
-						className: g.a.titleRow
+						className: b.a.wrapper
+					}, l.a.createElement(p.a, {
+						className: b.a.titleRow
 					}, n), l.a.createElement("div", {
-						className: g.a.detailsContainer
-					}, t), l.a.createElement(f.a, {
-						className: g.a.buttonRow
-					}, l.a.createElement(x.k, {
-						className: g.a.confirmButton,
+						className: b.a.detailsContainer
+					}, t), l.a.createElement(p.a, {
+						className: b.a.buttonRow
+					}, l.a.createElement(m.k, {
+						className: b.a.confirmButton,
 						onClick: e.onConfirmed
 					}, r.fbt._("Ok", null, {
 						hk: "2Giu9U"
 					}))))
 				}),
-				y = n("./src/reddit/controls/ErrorText/index.m.less"),
-				N = n.n(y);
-			const w = Object(u.c)({
-				activeModalId: h.a
-			});
-			class j extends l.a.Component {
+				f = n("./src/reddit/controls/ErrorText/index.m.less"),
+				v = n.n(f);
+			class g extends l.a.Component {
 				constructor(e) {
 					super(e), this.spanRef = l.a.createRef(), this.toggleModal = () => {
-						this.props.toggleErrorTextModal(this.state.modalId)
+						this.setState({
+							isModalOpen: !this.state.isModalOpen
+						})
 					}, this.state = {
 						textHasOverflowed: !1,
-						modalId: `ErrorTextModal--${s()()}`
+						modalId: `ErrorTextModal--${s()()}`,
+						isModalOpen: !1
 					}
 				}
 				componentDidMount() {
@@ -1116,37 +1112,33 @@
 				render() {
 					const {
 						children: e,
-						activeModalId: t,
-						className: n,
-						errorModalBody: a,
-						errorModalTitle: s = r.fbt._("Error", null, {
+						className: t,
+						errorModalBody: n,
+						errorModalTitle: a = r.fbt._("Error", null, {
 							hk: "2nPF4G"
 						}),
-						moreText: o = r.fbt._("More", null, {
+						moreText: s = r.fbt._("More", null, {
 							hk: "1bCAQ0"
 						})
 					} = this.props, {
-						modalId: i,
-						textHasOverflowed: c
+						textHasOverflowed: o,
+						isModalOpen: i
 					} = this.state;
 					return l.a.createElement("div", {
-						className: Object(m.a)(N.a.wrapper, n)
+						className: Object(d.a)(v.a.wrapper, t)
 					}, l.a.createElement("span", {
-						className: N.a.description,
+						className: v.a.description,
 						ref: this.spanRef
-					}, e), c && l.a.createElement("span", {
-						className: N.a.moreText,
+					}, e), o && l.a.createElement("span", {
+						className: v.a.moreText,
 						onClick: this.toggleModal
-					}, o), t === i && l.a.createElement(E, {
+					}, s), i && l.a.createElement(x, {
 						onConfirmed: this.toggleModal,
-						title: s
-					}, a || e))
+						title: a
+					}, n || e))
 				}
 			}
-			const O = Object(d.b)(w, e => ({
-					toggleErrorTextModal: t => e(Object(p.i)(t))
-				}))(j),
-				C = e => {
+			const E = e => {
 					const {
 						className: t,
 						errorClassName: n,
@@ -1156,19 +1148,19 @@
 					} = e, o = s.length ? s : a ? [a] : [];
 					return o.length ? l.a.createElement("div", {
 						className: t
-					}, o.map((e, t) => l.a.createElement(O, {
+					}, o.map((e, t) => l.a.createElement(g, {
 						className: n,
 						errorModalTitle: r,
 						key: t
 					}, e))) : null
 				},
-				_ = e => l.a.createElement(C, {
+				y = e => l.a.createElement(E, {
 					fallbackMessage: r.fbt._("Something went wrong", null, {
 						hk: "Cw1BT"
 					}),
 					messages: e
 				});
-			t.b = O
+			t.b = g
 		},
 		"./src/reddit/controls/FormFields/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -1705,4 +1697,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxPurchaseModal.832779a6100ab779f227.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxPurchaseModal.f99bec8f030fab7e034b.js.map

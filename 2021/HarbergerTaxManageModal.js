@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/HarbergerTaxManageModal.d911f6a611aa68eec9d3.js
-// Retrieved at 9/15/2021, 5:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/HarbergerTaxManageModal.f31d078d0cdddd0ecd4f.js
+// Retrieved at 9/27/2021, 7:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["HarbergerTaxManageModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -813,9 +813,9 @@
 		"./src/reddit/controls/ErrorText/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return O
+				return I
 			})), n.d(t, "c", (function() {
-				return w
+				return j
 			}));
 			var a = n("./node_modules/fbt/lib/FbtPublic.js"),
 				s = n("./node_modules/lodash/uniqueId.js"),
@@ -824,48 +824,44 @@
 				i = n.n(o),
 				d = n("./node_modules/react/index.js"),
 				c = n.n(d),
-				l = n("./node_modules/react-redux/es/index.js"),
-				u = n("./node_modules/reselect/es/index.js"),
-				m = n("./src/lib/classNames/index.ts"),
-				p = n("./src/reddit/actions/modal.ts"),
-				b = n("./src/reddit/selectors/activeModalId.ts"),
-				g = n("./src/higherOrderComponents/asModal/index.tsx"),
-				x = n("./src/reddit/controls/Button/index.tsx"),
-				h = n("./src/reddit/layout/row/Inline/index.tsx"),
-				v = n("./src/reddit/controls/ErrorText/SeeAllTextModal/index.m.less"),
-				f = n.n(v);
-			var I = Object(g.a)(e => {
+				l = n("./src/lib/classNames/index.ts"),
+				u = n("./src/higherOrderComponents/asModal/index.tsx"),
+				m = n("./src/reddit/controls/Button/index.tsx"),
+				p = n("./src/reddit/layout/row/Inline/index.tsx"),
+				b = n("./src/reddit/controls/ErrorText/SeeAllTextModal/index.m.less"),
+				g = n.n(b);
+			var x = Object(u.a)(e => {
 					const {
 						children: t,
 						title: n
 					} = e;
 					return c.a.createElement("div", {
-						className: f.a.wrapper
-					}, c.a.createElement(h.a, {
-						className: f.a.titleRow
+						className: g.a.wrapper
+					}, c.a.createElement(p.a, {
+						className: g.a.titleRow
 					}, n), c.a.createElement("div", {
-						className: f.a.detailsContainer
-					}, t), c.a.createElement(h.a, {
-						className: f.a.buttonRow
-					}, c.a.createElement(x.k, {
-						className: f.a.confirmButton,
+						className: g.a.detailsContainer
+					}, t), c.a.createElement(p.a, {
+						className: g.a.buttonRow
+					}, c.a.createElement(m.k, {
+						className: g.a.confirmButton,
 						onClick: e.onConfirmed
 					}, a.fbt._("Ok", null, {
 						hk: "2Giu9U"
 					}))))
 				}),
-				j = n("./src/reddit/controls/ErrorText/index.m.less"),
-				E = n.n(j);
-			const _ = Object(u.c)({
-				activeModalId: b.a
-			});
-			class N extends c.a.Component {
+				h = n("./src/reddit/controls/ErrorText/index.m.less"),
+				v = n.n(h);
+			class f extends c.a.Component {
 				constructor(e) {
 					super(e), this.spanRef = c.a.createRef(), this.toggleModal = () => {
-						this.props.toggleErrorTextModal(this.state.modalId)
+						this.setState({
+							isModalOpen: !this.state.isModalOpen
+						})
 					}, this.state = {
 						textHasOverflowed: !1,
-						modalId: `ErrorTextModal--${r()()}`
+						modalId: `ErrorTextModal--${r()()}`,
+						isModalOpen: !1
 					}
 				}
 				componentDidMount() {
@@ -887,37 +883,33 @@
 				render() {
 					const {
 						children: e,
-						activeModalId: t,
-						className: n,
-						errorModalBody: s,
-						errorModalTitle: r = a.fbt._("Error", null, {
+						className: t,
+						errorModalBody: n,
+						errorModalTitle: s = a.fbt._("Error", null, {
 							hk: "2nPF4G"
 						}),
-						moreText: o = a.fbt._("More", null, {
+						moreText: r = a.fbt._("More", null, {
 							hk: "1bCAQ0"
 						})
 					} = this.props, {
-						modalId: i,
-						textHasOverflowed: d
+						textHasOverflowed: o,
+						isModalOpen: i
 					} = this.state;
 					return c.a.createElement("div", {
-						className: Object(m.a)(E.a.wrapper, n)
+						className: Object(l.a)(v.a.wrapper, t)
 					}, c.a.createElement("span", {
-						className: E.a.description,
+						className: v.a.description,
 						ref: this.spanRef
-					}, e), d && c.a.createElement("span", {
-						className: E.a.moreText,
+					}, e), o && c.a.createElement("span", {
+						className: v.a.moreText,
 						onClick: this.toggleModal
-					}, o), t === i && c.a.createElement(I, {
+					}, r), i && c.a.createElement(x, {
 						onConfirmed: this.toggleModal,
-						title: r
-					}, s || e))
+						title: s
+					}, n || e))
 				}
 			}
-			const C = Object(l.b)(_, e => ({
-					toggleErrorTextModal: t => e(Object(p.i)(t))
-				}))(N),
-				O = e => {
+			const I = e => {
 					const {
 						className: t,
 						errorClassName: n,
@@ -927,19 +919,19 @@
 					} = e, o = r.length ? r : s ? [s] : [];
 					return o.length ? c.a.createElement("div", {
 						className: t
-					}, o.map((e, t) => c.a.createElement(C, {
+					}, o.map((e, t) => c.a.createElement(f, {
 						className: n,
 						errorModalTitle: a,
 						key: t
 					}, e))) : null
 				},
-				w = e => c.a.createElement(O, {
+				j = e => c.a.createElement(I, {
 					fallbackMessage: a.fbt._("Something went wrong", null, {
 						hk: "Cw1BT"
 					}),
 					messages: e
 				});
-			t.b = C
+			t.b = f
 		},
 		"./src/reddit/controls/FileDrop/index.tsx": function(e, t, n) {
 			"use strict";
@@ -1420,4 +1412,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/HarbergerTaxManageModal.d911f6a611aa68eec9d3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/HarbergerTaxManageModal.f31d078d0cdddd0ecd4f.js.map

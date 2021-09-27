@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal.4693cf86d9f74dbbba26.js
-// Retrieved at 9/15/2021, 5:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal.6192587043b675eba27b.js
+// Retrieved at 9/27/2021, 7:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-BurnPointsModal"], {
 		"./src/reddit/actions/util/pollActionForSuccess.ts": function(e, t, a) {
@@ -512,20 +512,20 @@
 			}
 			var x = a("./node_modules/bignumber.js/bignumber.js"),
 				M = a("./src/reddit/actions/governance/index.ts"),
-				g = a("./src/reddit/actions/modal.ts"),
-				C = a("./src/reddit/actions/toaster.ts"),
+				C = a("./src/reddit/actions/modal.ts"),
+				g = a("./src/reddit/actions/toaster.ts"),
 				N = a("./src/reddit/actions/util/pollActionForSuccess.ts"),
 				_ = a("./src/reddit/endpoints/governance/crypto.ts"),
-				j = a("./src/reddit/helpers/crypto/transactions.ts"),
-				w = a("./src/reddit/helpers/crypto/vaultTransactions.ts"),
+				w = a("./src/reddit/helpers/crypto/transactions.ts"),
+				j = a("./src/reddit/helpers/crypto/vaultTransactions.ts"),
 				z = a("./src/reddit/helpers/governance/tokens.ts"),
-				F = a("./src/reddit/helpers/trackers/crypto.ts"),
-				O = a("./src/reddit/hooks/useTracking.ts"),
+				O = a("./src/reddit/helpers/trackers/crypto.ts"),
+				F = a("./src/reddit/hooks/useTracking.ts"),
 				L = a("./src/reddit/models/Toast/index.ts"),
-				I = a("./src/reddit/selectors/gov.ts"),
-				k = a("./src/reddit/components/Governance/TransactionModals/VaultTransactionModal/index.tsx"),
+				k = a("./src/reddit/selectors/gov.ts"),
+				y = a("./src/reddit/components/Governance/TransactionModals/VaultTransactionModal/index.tsx"),
 				T = a("./src/lib/classNames/index.ts"),
-				y = a("./src/reddit/components/Governance/TokenAmount/index.tsx"),
+				I = a("./src/reddit/components/Governance/TokenAmount/index.tsx"),
 				A = a("./src/reddit/components/Governance/TransactionModals/ApprovalModal/Details.tsx"),
 				D = a("./src/reddit/components/Governance/TransactionModals/Common/CurrentBalance.tsx"),
 				B = a("./src/reddit/components/Governance/TransactionModals/BurnPointsModal/Approval.m.less"),
@@ -541,7 +541,7 @@
 				} = e;
 				return n.a.createElement("div", {
 					className: V.a.overview
-				}, n.a.createElement(y.a, {
+				}, n.a.createElement(I.a, {
 					amount: t,
 					className: V.a.amount,
 					subredditId: s.id
@@ -579,12 +579,12 @@
 					burnMemo: a,
 					subreddit: l,
 					pointsDetails: s
-				} = e, r = Object(c.d)(), o = Object(O.a)(), d = () => r(Object(g.f)()), m = l.id, u = Object(c.e)(e => Object(I.e)(e, {
+				} = e, r = Object(c.d)(), o = Object(F.a)(), d = () => r(Object(C.f)()), m = l.id, u = Object(c.e)(e => Object(k.e)(e, {
 					subredditId: m
-				})), h = new x.BigNumber(u).isGreaterThanOrEqualTo(t), p = Object(z.b)(t, null == s ? void 0 : s.displayConversion), v = s.contractAddress, f = Object(j.a)(v, t, a), b = e => {
-					o(Object(F.c)("burn_link", m, p, e))
+				})), h = new x.BigNumber(u).isGreaterThanOrEqualTo(t), p = Object(z.b)(t, null == s ? void 0 : s.displayConversion), v = s.contractAddress, f = Object(w.a)(v, t, a), b = e => {
+					o(Object(O.c)("burn_link", m, p, e))
 				}, E = s.name;
-				return n.a.createElement(k.a, {
+				return n.a.createElement(y.a, {
 					approvalOverview: n.a.createElement(H, {
 						burnAmount: t,
 						burnMemo: a,
@@ -599,32 +599,32 @@
 					onClose: d,
 					onTransactionSuccess: async e => {
 						d(), r(function(e) {
-							const t = Object(C.e)(i.fbt._("Burning your {pointsName}...", [i.fbt._param("pointsName", e)], {
+							const t = Object(g.e)(i.fbt._("Burning your {pointsName}...", [i.fbt._param("pointsName", e)], {
 								hk: "2LoC1g"
 							}), L.b.SuccessCommunity);
-							return t.duration = P, Object(C.f)(t)
+							return t.duration = P, Object(g.f)(t)
 						}(E));
 						try {
 							await async function(e, t, a, l, n) {
-								await Object(w.a)(t, a), await e(Object(N.a)(Object(M.h)({
+								await Object(j.a)(t, a), await e(Object(N.a)(Object(M.h)({
 									subredditId: l
 								}), async e => {
-									const t = Object(I.e)(e(), {
+									const t = Object(k.e)(e(), {
 										subredditId: l
 									});
 									return n !== t || null
 								})), e(Object(M.h)({
 									subredditId: l
 								}))
-							}(r, s, e.hash, l.id, u), o(Object(F.d)("burn_link", m, p)), r(function(e) {
-								const t = Object(C.e)(i.fbt._("Your {pointsName} were burnt!", [i.fbt._param("pointsName", e)], {
+							}(r, s, e.hash, l.id, u), o(Object(O.d)("burn_link", m, p)), r(function(e) {
+								const t = Object(g.e)(i.fbt._("Your {pointsName} were burnt!", [i.fbt._param("pointsName", e)], {
 									hk: "1BHX95"
 								}), L.b.SuccessCommunityGreen);
-								return t.duration = P, Object(C.f)(t)
+								return t.duration = P, Object(g.f)(t)
 							}(E))
 						} catch (t) {
 							b(t.toString()), r(function(e) {
-								return Object(C.f)(Object(C.e)(i.fbt._("There was an error while burning your {pointsName}. Please try again later", [i.fbt._param("pointsName", e)], {
+								return Object(g.f)(Object(g.e)(i.fbt._("There was an error while burning your {pointsName}. Please try again later", [i.fbt._param("pointsName", e)], {
 									hk: "48Un5w"
 								}), L.b.Error))
 							}(E))
@@ -711,9 +711,9 @@
 		"./src/reddit/controls/ErrorText/index.tsx": function(e, t, a) {
 			"use strict";
 			a.d(t, "a", (function() {
-				return w
+				return M
 			})), a.d(t, "c", (function() {
-				return z
+				return C
 			}));
 			var l = a("./node_modules/fbt/lib/FbtPublic.js"),
 				n = a("./node_modules/lodash/uniqueId.js"),
@@ -722,48 +722,44 @@
 				r = a.n(s),
 				o = a("./node_modules/react/index.js"),
 				i = a.n(o),
-				d = a("./node_modules/react-redux/es/index.js"),
-				m = a("./node_modules/reselect/es/index.js"),
-				u = a("./src/lib/classNames/index.ts"),
-				h = a("./src/reddit/actions/modal.ts"),
-				p = a("./src/reddit/selectors/activeModalId.ts"),
-				v = a("./src/higherOrderComponents/asModal/index.tsx"),
-				f = a("./src/reddit/controls/Button/index.tsx"),
-				b = a("./src/reddit/layout/row/Inline/index.tsx"),
-				E = a("./src/reddit/controls/ErrorText/SeeAllTextModal/index.m.less"),
-				x = a.n(E);
-			var M = Object(v.a)(e => {
+				d = a("./src/lib/classNames/index.ts"),
+				m = a("./src/higherOrderComponents/asModal/index.tsx"),
+				u = a("./src/reddit/controls/Button/index.tsx"),
+				h = a("./src/reddit/layout/row/Inline/index.tsx"),
+				p = a("./src/reddit/controls/ErrorText/SeeAllTextModal/index.m.less"),
+				v = a.n(p);
+			var f = Object(m.a)(e => {
 					const {
 						children: t,
 						title: a
 					} = e;
 					return i.a.createElement("div", {
-						className: x.a.wrapper
-					}, i.a.createElement(b.a, {
-						className: x.a.titleRow
+						className: v.a.wrapper
+					}, i.a.createElement(h.a, {
+						className: v.a.titleRow
 					}, a), i.a.createElement("div", {
-						className: x.a.detailsContainer
-					}, t), i.a.createElement(b.a, {
-						className: x.a.buttonRow
-					}, i.a.createElement(f.k, {
-						className: x.a.confirmButton,
+						className: v.a.detailsContainer
+					}, t), i.a.createElement(h.a, {
+						className: v.a.buttonRow
+					}, i.a.createElement(u.k, {
+						className: v.a.confirmButton,
 						onClick: e.onConfirmed
 					}, l.fbt._("Ok", null, {
 						hk: "2Giu9U"
 					}))))
 				}),
-				g = a("./src/reddit/controls/ErrorText/index.m.less"),
-				C = a.n(g);
-			const N = Object(m.c)({
-				activeModalId: p.a
-			});
-			class _ extends i.a.Component {
+				b = a("./src/reddit/controls/ErrorText/index.m.less"),
+				E = a.n(b);
+			class x extends i.a.Component {
 				constructor(e) {
 					super(e), this.spanRef = i.a.createRef(), this.toggleModal = () => {
-						this.props.toggleErrorTextModal(this.state.modalId)
+						this.setState({
+							isModalOpen: !this.state.isModalOpen
+						})
 					}, this.state = {
 						textHasOverflowed: !1,
-						modalId: `ErrorTextModal--${c()()}`
+						modalId: `ErrorTextModal--${c()()}`,
+						isModalOpen: !1
 					}
 				}
 				componentDidMount() {
@@ -785,37 +781,33 @@
 				render() {
 					const {
 						children: e,
-						activeModalId: t,
-						className: a,
-						errorModalBody: n,
-						errorModalTitle: c = l.fbt._("Error", null, {
+						className: t,
+						errorModalBody: a,
+						errorModalTitle: n = l.fbt._("Error", null, {
 							hk: "2nPF4G"
 						}),
-						moreText: s = l.fbt._("More", null, {
+						moreText: c = l.fbt._("More", null, {
 							hk: "1bCAQ0"
 						})
 					} = this.props, {
-						modalId: r,
-						textHasOverflowed: o
+						textHasOverflowed: s,
+						isModalOpen: r
 					} = this.state;
 					return i.a.createElement("div", {
-						className: Object(u.a)(C.a.wrapper, a)
+						className: Object(d.a)(E.a.wrapper, t)
 					}, i.a.createElement("span", {
-						className: C.a.description,
+						className: E.a.description,
 						ref: this.spanRef
-					}, e), o && i.a.createElement("span", {
-						className: C.a.moreText,
+					}, e), s && i.a.createElement("span", {
+						className: E.a.moreText,
 						onClick: this.toggleModal
-					}, s), t === r && i.a.createElement(M, {
+					}, c), r && i.a.createElement(f, {
 						onConfirmed: this.toggleModal,
-						title: c
-					}, n || e))
+						title: n
+					}, a || e))
 				}
 			}
-			const j = Object(d.b)(N, e => ({
-					toggleErrorTextModal: t => e(Object(h.i)(t))
-				}))(_),
-				w = e => {
+			const M = e => {
 					const {
 						className: t,
 						errorClassName: a,
@@ -825,19 +817,19 @@
 					} = e, s = c.length ? c : n ? [n] : [];
 					return s.length ? i.a.createElement("div", {
 						className: t
-					}, s.map((e, t) => i.a.createElement(j, {
+					}, s.map((e, t) => i.a.createElement(x, {
 						className: a,
 						errorModalTitle: l,
 						key: t
 					}, e))) : null
 				},
-				z = e => i.a.createElement(w, {
+				C = e => i.a.createElement(M, {
 					fallbackMessage: l.fbt._("Something went wrong", null, {
 						hk: "Cw1BT"
 					}),
 					messages: e
 				});
-			t.b = j
+			t.b = x
 		},
 		"./src/reddit/controls/FormFields/index.m.less": function(e, t, a) {
 			e.exports = {
@@ -1216,4 +1208,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal.4693cf86d9f74dbbba26.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal.6192587043b675eba27b.js.map

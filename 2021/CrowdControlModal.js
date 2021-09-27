@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CrowdControlModal.1047af75da1df9227318.js
-// Retrieved at 9/22/2021, 1:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CrowdControlModal.895a301240990b4929e0.js
+// Retrieved at 9/27/2021, 7:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CrowdControlModal"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -245,10 +245,10 @@
 			}
 			var y = n("./src/higherOrderComponents/asModal/index.tsx"),
 				O = n("./src/reddit/endpoints/crowdControl/index.ts"),
-				j = n("./src/lib/makeGqlRequest/index.ts"),
-				S = n("./src/redditGQL/operations/UpdateCrowdControlLevel.json");
-			const L = (e, t, n) => Object(j.a)(e, {
-				...S,
+				S = n("./src/lib/makeGqlRequest/index.ts"),
+				j = n("./src/redditGQL/operations/UpdateCrowdControlLevel.json");
+			const L = (e, t, n) => Object(S.a)(e, {
+				...j,
 				variables: {
 					postId: t,
 					level: n
@@ -699,8 +699,8 @@
 			}
 			var y = n("./src/reddit/controls/ToggleSwitch/index.tsx"),
 				O = n("./src/reddit/controls/Typography/index.tsx"),
-				j = n("./src/reddit/icons/svgs/ArrowRight/index.tsx"),
-				S = n("./src/reddit/icons/svgs/Circle/index.tsx"),
+				S = n("./src/reddit/icons/svgs/ArrowRight/index.tsx"),
+				j = n("./src/reddit/icons/svgs/Circle/index.tsx"),
 				L = n("./src/reddit/icons/svgs/OutboundLink/index.tsx"),
 				T = n("./node_modules/lodash/range.js"),
 				I = n.n(T),
@@ -722,7 +722,7 @@
 				}).apply(this, arguments)
 			}
 			const H = Object(c.a)(x.a),
-				W = C.a.wrapped(S.a, "Circle", A.a),
+				W = C.a.wrapped(j.a, "Circle", A.a),
 				V = C.a.h3("Label", A.a),
 				z = C.a.wrapped(O.c, "Subtext", A.a),
 				Q = C.a.wrapped(u.a, "HoverTooltip", A.a),
@@ -754,7 +754,7 @@
 				Y = C.a.wrapped(X, "SubtextLink", A.a),
 				Z = C.a.wrapped(L.a, "LinkIcon", A.a),
 				$ = C.a.button("LinkButton", A.a),
-				ee = C.a.wrapped(j.a, "ArrowRight", A.a),
+				ee = C.a.wrapped(S.a, "ArrowRight", A.a),
 				te = e => r.a.createElement(K, {
 					direction: e.direction,
 					disabled: e.disabled,
@@ -1295,9 +1295,9 @@
 		"./src/reddit/controls/ErrorText/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return y
+				return g
 			})), n.d(t, "c", (function() {
-				return O
+				return E
 			}));
 			var a = n("./node_modules/fbt/lib/FbtPublic.js"),
 				r = n("./node_modules/lodash/uniqueId.js"),
@@ -1306,48 +1306,44 @@
 				l = n.n(o),
 				i = n("./node_modules/react/index.js"),
 				d = n.n(i),
-				c = n("./node_modules/react-redux/es/index.js"),
-				m = n("./node_modules/reselect/es/index.js"),
-				u = n("./src/lib/classNames/index.ts"),
-				p = n("./src/reddit/actions/modal.ts"),
-				x = n("./src/reddit/selectors/activeModalId.ts"),
-				b = n("./src/higherOrderComponents/asModal/index.tsx"),
-				h = n("./src/reddit/controls/Button/index.tsx"),
-				C = n("./src/reddit/layout/row/Inline/index.tsx"),
-				f = n("./src/reddit/controls/ErrorText/SeeAllTextModal/index.m.less"),
-				v = n.n(f);
-			var g = Object(b.a)(e => {
+				c = n("./src/lib/classNames/index.ts"),
+				m = n("./src/higherOrderComponents/asModal/index.tsx"),
+				u = n("./src/reddit/controls/Button/index.tsx"),
+				p = n("./src/reddit/layout/row/Inline/index.tsx"),
+				x = n("./src/reddit/controls/ErrorText/SeeAllTextModal/index.m.less"),
+				b = n.n(x);
+			var h = Object(m.a)(e => {
 					const {
 						children: t,
 						title: n
 					} = e;
 					return d.a.createElement("div", {
-						className: v.a.wrapper
-					}, d.a.createElement(C.a, {
-						className: v.a.titleRow
+						className: b.a.wrapper
+					}, d.a.createElement(p.a, {
+						className: b.a.titleRow
 					}, n), d.a.createElement("div", {
-						className: v.a.detailsContainer
-					}, t), d.a.createElement(C.a, {
-						className: v.a.buttonRow
-					}, d.a.createElement(h.k, {
-						className: v.a.confirmButton,
+						className: b.a.detailsContainer
+					}, t), d.a.createElement(p.a, {
+						className: b.a.buttonRow
+					}, d.a.createElement(u.k, {
+						className: b.a.confirmButton,
 						onClick: e.onConfirmed
 					}, a.fbt._("Ok", null, {
 						hk: "2Giu9U"
 					}))))
 				}),
-				E = n("./src/reddit/controls/ErrorText/index.m.less"),
-				w = n.n(E);
-			const _ = Object(m.c)({
-				activeModalId: x.a
-			});
-			class k extends d.a.Component {
+				C = n("./src/reddit/controls/ErrorText/index.m.less"),
+				f = n.n(C);
+			class v extends d.a.Component {
 				constructor(e) {
 					super(e), this.spanRef = d.a.createRef(), this.toggleModal = () => {
-						this.props.toggleErrorTextModal(this.state.modalId)
+						this.setState({
+							isModalOpen: !this.state.isModalOpen
+						})
 					}, this.state = {
 						textHasOverflowed: !1,
-						modalId: `ErrorTextModal--${s()()}`
+						modalId: `ErrorTextModal--${s()()}`,
+						isModalOpen: !1
 					}
 				}
 				componentDidMount() {
@@ -1369,37 +1365,33 @@
 				render() {
 					const {
 						children: e,
-						activeModalId: t,
-						className: n,
-						errorModalBody: r,
-						errorModalTitle: s = a.fbt._("Error", null, {
+						className: t,
+						errorModalBody: n,
+						errorModalTitle: r = a.fbt._("Error", null, {
 							hk: "2nPF4G"
 						}),
-						moreText: o = a.fbt._("More", null, {
+						moreText: s = a.fbt._("More", null, {
 							hk: "1bCAQ0"
 						})
 					} = this.props, {
-						modalId: l,
-						textHasOverflowed: i
+						textHasOverflowed: o,
+						isModalOpen: l
 					} = this.state;
 					return d.a.createElement("div", {
-						className: Object(u.a)(w.a.wrapper, n)
+						className: Object(c.a)(f.a.wrapper, t)
 					}, d.a.createElement("span", {
-						className: w.a.description,
+						className: f.a.description,
 						ref: this.spanRef
-					}, e), i && d.a.createElement("span", {
-						className: w.a.moreText,
+					}, e), o && d.a.createElement("span", {
+						className: f.a.moreText,
 						onClick: this.toggleModal
-					}, o), t === l && d.a.createElement(g, {
+					}, s), l && d.a.createElement(h, {
 						onConfirmed: this.toggleModal,
-						title: s
-					}, r || e))
+						title: r
+					}, n || e))
 				}
 			}
-			const N = Object(c.b)(_, e => ({
-					toggleErrorTextModal: t => e(Object(p.i)(t))
-				}))(k),
-				y = e => {
+			const g = e => {
 					const {
 						className: t,
 						errorClassName: n,
@@ -1409,19 +1401,19 @@
 					} = e, o = s.length ? s : r ? [r] : [];
 					return o.length ? d.a.createElement("div", {
 						className: t
-					}, o.map((e, t) => d.a.createElement(N, {
+					}, o.map((e, t) => d.a.createElement(v, {
 						className: n,
 						errorModalTitle: a,
 						key: t
 					}, e))) : null
 				},
-				O = e => d.a.createElement(y, {
+				E = e => d.a.createElement(g, {
 					fallbackMessage: a.fbt._("Something went wrong", null, {
 						hk: "Cw1BT"
 					}),
 					messages: e
 				});
-			t.b = N
+			t.b = v
 		},
 		"./src/reddit/controls/FormFields/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -1845,4 +1837,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CrowdControlModal.1047af75da1df9227318.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CrowdControlModal.895a301240990b4929e0.js.map
