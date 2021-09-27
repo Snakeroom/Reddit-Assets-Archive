@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.9bd38d8a37f6585e603e.js
-// Retrieved at 9/23/2021, 5:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.2d004f3a47a19e723c8a.js
+// Retrieved at 9/27/2021, 10:40:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -1076,7 +1076,7 @@
 				return a
 			})), r.d(t, "d", (function() {
 				return c
-			})), r.d(t, "h", (function() {
+			})), r.d(t, "i", (function() {
 				return o
 			})), r.d(t, "f", (function() {
 				return d
@@ -1084,6 +1084,8 @@
 				return i
 			})), r.d(t, "e", (function() {
 				return u
+			})), r.d(t, "h", (function() {
+				return l
 			}));
 			const s = 120,
 				n = "ON_CREATE_CUSTOM_EMOJI_SUCCESS",
@@ -1092,7 +1094,8 @@
 				o = "POWERUPS__USER_SUPPORTED_SUBREDDITS_LOADED",
 				d = "POWERUPS__SUBREDDIT_USER_POWERUPS_FLAIR_PREFERENCE_UPDATE_REQUESTED",
 				i = "POWERUPS__SUBREDDIT_USER_POWERUPS_FLAIR_PREFERENCE_UPDATED",
-				u = "POWERUPS__SUBREDDIT_USER_POWERUPS_FLAIR_PREFERENCE_UPDATE_FAILED"
+				u = "POWERUPS__SUBREDDIT_USER_POWERUPS_FLAIR_PREFERENCE_UPDATE_FAILED",
+				l = "POWERUPS__SUBREDDIT_USER_POWERUPS_FLAIR_VISIBILITY_UPDATE"
 		},
 		"./src/reddit/actions/economics/subredditPremium/constants.ts": function(e, t, r) {
 			"use strict";
@@ -26201,4 +26204,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.9bd38d8a37f6585e603e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.2d004f3a47a19e723c8a.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/getFlairData.5db8c5996562881f73e9.js
-// Retrieved at 9/22/2021, 3:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/getFlairData.77ca48609d6ef1cf0162.js
+// Retrieved at 9/27/2021, 10:40:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["getFlairData"], {
 		"./src/reddit/actions/economics/powerups/constants.ts": function(e, r, t) {
@@ -12,7 +12,7 @@
 				return s
 			})), t.d(r, "d", (function() {
 				return n
-			})), t.d(r, "h", (function() {
+			})), t.d(r, "i", (function() {
 				return u
 			})), t.d(r, "f", (function() {
 				return o
@@ -20,6 +20,8 @@
 				return p
 			})), t.d(r, "e", (function() {
 				return c
+			})), t.d(r, "h", (function() {
+				return l
 			}));
 			const d = 120,
 				i = "ON_CREATE_CUSTOM_EMOJI_SUCCESS",
@@ -28,7 +30,8 @@
 				u = "POWERUPS__USER_SUPPORTED_SUBREDDITS_LOADED",
 				o = "POWERUPS__SUBREDDIT_USER_POWERUPS_FLAIR_PREFERENCE_UPDATE_REQUESTED",
 				p = "POWERUPS__SUBREDDIT_USER_POWERUPS_FLAIR_PREFERENCE_UPDATED",
-				c = "POWERUPS__SUBREDDIT_USER_POWERUPS_FLAIR_PREFERENCE_UPDATE_FAILED"
+				c = "POWERUPS__SUBREDDIT_USER_POWERUPS_FLAIR_PREFERENCE_UPDATE_FAILED",
+				l = "POWERUPS__SUBREDDIT_USER_POWERUPS_FLAIR_VISIBILITY_UPDATE"
 		},
 		"./src/reddit/helpers/trackers/features/getFlairData.ts": function(e, r, t) {
 			"use strict";
@@ -49,7 +52,7 @@
 						subredditId: t
 					}),
 					p = Object(n.i)(e),
-					c = p ? Object(i.e)(e, {
+					c = p ? Object(i.f)(e, {
 						subredditId: t,
 						userId: p
 					}) : void 0,
@@ -126,25 +129,27 @@
 							let i = e[t] || {};
 							for (const {
 									redditorId: e,
-									userAchievementFlairs: r
+									isHidden: r,
+									userAchievementFlairs: u
 								} of d) {
-								const t = r.filter(n),
+								const t = u.filter(n),
 									d = t.map(({
 										type: e
 									}) => e),
-									u = r.filter(s),
-									o = u.map(({
+									o = u.filter(s),
+									p = o.map(({
 										type: e
 									}) => e),
-									p = l(t),
-									c = l(u);
+									c = l(t),
+									a = l(o);
 								i = {
 									...i,
 									[e]: {
 										achievementTypes: d,
-										supporterTypes: o,
-										preferredAchievementType: p,
-										preferredSupporterType: c
+										supporterTypes: p,
+										preferredAchievementType: c,
+										preferredSupporterType: a,
+										isHidden: r
 									}
 								}
 							}
@@ -192,13 +197,24 @@
 								pendingSupporterType: void 0
 							}))
 						}
+						case p.h: {
+							const {
+								subredditId: t,
+								userId: d,
+								isHidden: i
+							} = r.payload;
+							return Object(o.updateIn)(e, [t, d], e => ({
+								...e,
+								isHidden: i
+							}))
+						}
 						default:
 							return e
 					}
 				},
 				usersSupportedSubreddits: (e = a, r) => {
 					switch (r.type) {
-						case p.h: {
+						case p.i: {
 							let t = {};
 							return r.payload.forEach(e => {
 								const r = e.id,
@@ -226,22 +242,24 @@
 		},
 		"./src/reddit/selectors/gold/powerups/flairs.ts": function(e, r, t) {
 			"use strict";
-			t.d(r, "d", (function() {
+			t.d(r, "e", (function() {
 				return p
-			})), t.d(r, "f", (function() {
-				return c
-			})), t.d(r, "e", (function() {
-				return l
-			})), t.d(r, "h", (function() {
-				return a
 			})), t.d(r, "g", (function() {
+				return c
+			})), t.d(r, "f", (function() {
+				return l
+			})), t.d(r, "i", (function() {
+				return a
+			})), t.d(r, "h", (function() {
 				return v
 			})), t.d(r, "b", (function() {
 				return f
 			})), t.d(r, "c", (function() {
 				return y
+			})), t.d(r, "d", (function() {
+				return _
 			})), t.d(r, "a", (function() {
-				return E
+				return S
 			}));
 			t("./node_modules/core-js/modules/web.dom.iterable.js");
 			var d = t("./node_modules/reselect/es/index.js"),
@@ -302,16 +320,17 @@
 						pendingAchievementType: c
 					} = r;
 					return {
-						supporterFlairs: _(t, s, i, p || u),
-						achievementFlairs: _(d, n, i, c || o)
+						supporterFlairs: E(t, s, i, p || u),
+						achievementFlairs: E(d, n, i, c || o)
 					}
 				}),
-				_ = (e, r, t, d) => e.map(e => ({
+				_ = Object(d.a)([p], e => !!e && e.isHidden),
+				E = (e, r, t, d) => e.map(e => ({
 					...t[e],
 					isLocked: !r.includes(e),
 					isPreferred: e === d
 				})).sort((e, r) => e.isLocked === r.isLocked ? 0 : e.isLocked ? 1 : -1),
-				E = (e, {
+				S = (e, {
 					commentId: r
 				}) => {
 					const t = Object(i.b)(e, {
@@ -333,4 +352,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/getFlairData.5db8c5996562881f73e9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/getFlairData.77ca48609d6ef1cf0162.js.map
