@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.07b77198e0a73a710b9b.js
-// Retrieved at 9/27/2021, 11:00:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.81610c34de98e2854ac5.js
+// Retrieved at 9/27/2021, 3:40:12 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -618,70 +618,6 @@
 					return s || (e === t ? null : !!e.parentElement && u(e.parentElement, t))
 				},
 				p = (e, t) => "true" === e.dataset.ignoreClick || e !== t && (!!e.parentElement && p(e.parentElement, t))
-		},
-		"./src/lib/colors/constants.ts": function(e, t, s) {
-			"use strict";
-			s.d(t, "e", (function() {
-				return r
-			})), s.d(t, "b", (function() {
-				return n
-			})), s.d(t, "a", (function() {
-				return o
-			})), s.d(t, "d", (function() {
-				return a
-			})), s.d(t, "c", (function() {
-				return i
-			})), s.d(t, "f", (function() {
-				return c
-			})), s.d(t, "g", (function() {
-				return d
-			}));
-			const r = "#FFF",
-				n = "#FF4500",
-				o = "#0079D3",
-				a = "#24A0ED",
-				i = "#46D160",
-				c = {
-					black: "#000",
-					white: r,
-					orangered: n,
-					alienblue: o,
-					tone1: "#1A1A1B",
-					tone2: "#6A6D6F",
-					tone3: "#878A8C",
-					tone4: "#D3D6DA",
-					tone5: "#EDEFF1",
-					tone6: "#F6F7F8",
-					tone7: "#FFFFFF",
-					primary: a,
-					secondary: "#006CBF",
-					upvote: n,
-					downvote: "#7193FF",
-					positive: i,
-					negative: "#EA0027",
-					caution: "#FFB000",
-					admin: n,
-					moderator: "#46D160",
-					self: "#0DD3BB",
-					coins: "#DDBD37",
-					live: n,
-					nsfw: "#FF585B",
-					spoiler: "#1A1A1B"
-				},
-				d = {
-					...c,
-					tone1: "#D7DADC",
-					tone2: "#818384",
-					tone3: "#565758",
-					tone4: "#3A3A3C",
-					tone5: "#272729",
-					tone6: "#1A1A1B",
-					tone7: "#121213",
-					primary: "#006CBF",
-					secondary: "#24A0ED",
-					coins: "#FFE600",
-					spoiler: "#D7DADC"
-				}
 		},
 		"./src/reddit/actions/focusedVerticals/index.ts": function(e, t, s) {
 			"use strict";
@@ -1592,7 +1528,7 @@
 				be = s.n(he);
 			const Ce = {
 					[ue.Admin]: {
-						color: pe.b,
+						color: pe.c,
 						label: r.fbt._("Admin", null, {
 							hk: "QafFM"
 						}),
@@ -1602,7 +1538,7 @@
 						})
 					},
 					[ue.Mod]: {
-						color: pe.c,
+						color: pe.d,
 						label: r.fbt._("Mod", null, {
 							hk: "3l7DyF"
 						}),
@@ -1622,7 +1558,7 @@
 						})
 					},
 					[ue.AlumniAdmin]: {
-						color: pe.b,
+						color: pe.c,
 						label: r.fbt._("Admin", null, {
 							hk: "QafFM"
 						}),
@@ -7998,10 +7934,10 @@
 					u = Object(a.d)();
 				i.arrowProps.style = {
 					...i.arrowProps.style,
-					borderBottom: `3px solid ${E.d}`
+					borderBottom: `3px solid ${E.e}`
 				}, i.popperProps.style = {
 					...i.popperProps.style,
-					backgroundColor: E.d
+					backgroundColor: E.e
 				};
 				const p = null != s ? s : !c;
 				return o.a.createElement("div", {
@@ -11492,4 +11428,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.07b77198e0a73a710b9b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.81610c34de98e2854ac5.js.map

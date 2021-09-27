@@ -1,34 +1,37 @@
-// https://www.redditstatic.com/desktop2x/NewCommunityProgress.58e004ddb69b95cda054.js
-// Retrieved at 9/22/2021, 7:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NewCommunityProgress.e83a490afb4e875708a2.js
+// Retrieved at 9/27/2021, 3:40:12 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NewCommunityProgress", "FrontpageSidebar"], {
 		"./src/lib/colors/constants.ts": function(C, e, t) {
 			"use strict";
-			t.d(e, "e", (function() {
+			t.d(e, "b", (function() {
 				return a
-			})), t.d(e, "b", (function() {
-				return l
-			})), t.d(e, "a", (function() {
-				return n
-			})), t.d(e, "d", (function() {
-				return A
-			})), t.d(e, "c", (function() {
-				return c
 			})), t.d(e, "f", (function() {
+				return l
+			})), t.d(e, "c", (function() {
+				return n
+			})), t.d(e, "a", (function() {
+				return A
+			})), t.d(e, "e", (function() {
+				return c
+			})), t.d(e, "d", (function() {
 				return r
 			})), t.d(e, "g", (function() {
 				return i
+			})), t.d(e, "h", (function() {
+				return s
 			}));
-			const a = "#FFF",
-				l = "#FF4500",
-				n = "#0079D3",
-				A = "#24A0ED",
-				c = "#46D160",
-				r = {
-					black: "#000",
-					white: a,
-					orangered: l,
-					alienblue: n,
+			const a = "#000",
+				l = "#FFF",
+				n = "#FF4500",
+				A = "#0079D3",
+				c = "#24A0ED",
+				r = "#46D160",
+				i = {
+					black: a,
+					white: l,
+					orangered: n,
+					alienblue: A,
 					tone1: "#1A1A1B",
 					tone2: "#6A6D6F",
 					tone3: "#878A8C",
@@ -36,23 +39,23 @@
 					tone5: "#EDEFF1",
 					tone6: "#F6F7F8",
 					tone7: "#FFFFFF",
-					primary: A,
+					primary: c,
 					secondary: "#006CBF",
-					upvote: l,
+					upvote: n,
 					downvote: "#7193FF",
-					positive: c,
+					positive: r,
 					negative: "#EA0027",
 					caution: "#FFB000",
-					admin: l,
+					admin: n,
 					moderator: "#46D160",
 					self: "#0DD3BB",
 					coins: "#DDBD37",
-					live: l,
+					live: n,
 					nsfw: "#FF585B",
 					spoiler: "#1A1A1B"
 				},
-				i = {
-					...r,
+				s = {
+					...i,
 					tone1: "#D7DADC",
 					tone2: "#818384",
 					tone3: "#565758",
@@ -1543,7 +1546,7 @@
 						w = Object(Q.a)(),
 						v = aC[a],
 						b = v ? Object(z.b)(v) : null !== (M = tC[a]) && void 0 !== M ? M : Object(z.b)("best"),
-						P = d ? R.g : R.f,
+						P = d ? R.h : R.g,
 						I = null !== (h = P[s]) && void 0 !== h ? h : P.downvote;
 
 					function Z(e) {
@@ -2528,4 +2531,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NewCommunityProgress.58e004ddb69b95cda054.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NewCommunityProgress.e83a490afb4e875708a2.js.map

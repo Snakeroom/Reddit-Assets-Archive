@@ -1,34 +1,37 @@
-// https://www.redditstatic.com/desktop2x/EmailVerificationModals.c7e3a4ec9c06d7f99dd7.js
-// Retrieved at 9/15/2021, 5:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EmailVerificationModals.06bf21b7a88e0dd267c8.js
+// Retrieved at 9/27/2021, 3:40:12 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EmailVerificationModals"], {
 		"./src/lib/colors/constants.ts": function(e, t, s) {
 			"use strict";
-			s.d(t, "e", (function() {
+			s.d(t, "b", (function() {
 				return a
-			})), s.d(t, "b", (function() {
-				return n
-			})), s.d(t, "a", (function() {
-				return i
-			})), s.d(t, "d", (function() {
-				return o
-			})), s.d(t, "c", (function() {
-				return r
 			})), s.d(t, "f", (function() {
+				return n
+			})), s.d(t, "c", (function() {
+				return i
+			})), s.d(t, "a", (function() {
+				return o
+			})), s.d(t, "e", (function() {
+				return r
+			})), s.d(t, "d", (function() {
 				return l
 			})), s.d(t, "g", (function() {
 				return c
+			})), s.d(t, "h", (function() {
+				return d
 			}));
-			const a = "#FFF",
-				n = "#FF4500",
-				i = "#0079D3",
-				o = "#24A0ED",
-				r = "#46D160",
-				l = {
-					black: "#000",
-					white: a,
-					orangered: n,
-					alienblue: i,
+			const a = "#000",
+				n = "#FFF",
+				i = "#FF4500",
+				o = "#0079D3",
+				r = "#24A0ED",
+				l = "#46D160",
+				c = {
+					black: a,
+					white: n,
+					orangered: i,
+					alienblue: o,
 					tone1: "#1A1A1B",
 					tone2: "#6A6D6F",
 					tone3: "#878A8C",
@@ -36,23 +39,23 @@
 					tone5: "#EDEFF1",
 					tone6: "#F6F7F8",
 					tone7: "#FFFFFF",
-					primary: o,
+					primary: r,
 					secondary: "#006CBF",
-					upvote: n,
+					upvote: i,
 					downvote: "#7193FF",
-					positive: r,
+					positive: l,
 					negative: "#EA0027",
 					caution: "#FFB000",
-					admin: n,
+					admin: i,
 					moderator: "#46D160",
 					self: "#0DD3BB",
 					coins: "#DDBD37",
-					live: n,
+					live: i,
 					nsfw: "#FF585B",
 					spoiler: "#1A1A1B"
 				},
-				c = {
-					...l,
+				d = {
+					...c,
 					tone1: "#D7DADC",
 					tone2: "#818384",
 					tone3: "#565758",
@@ -420,7 +423,7 @@
 					}, i.a.createElement(J.a, {
 						className: Object(l.a)(z.a.checkbox, !r && z.a.unchecked),
 						checkBoxStyle: {
-							backgroundColor: R.e,
+							backgroundColor: R.f,
 							borderRadius: "50%",
 							fill: Object(W.a)(this.props).active,
 							visibility: r ? "visible" : "hidden"
@@ -1023,4 +1026,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EmailVerificationModals.c7e3a4ec9c06d7f99dd7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EmailVerificationModals.06bf21b7a88e0dd267c8.js.map
