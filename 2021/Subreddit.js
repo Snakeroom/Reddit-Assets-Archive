@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.e3897a2f38458de12ee0.js
-// Retrieved at 9/27/2021, 10:40:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.7d6d596021f448648bb7.js
+// Retrieved at 9/27/2021, 1:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~ModListing", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -4001,6 +4001,7 @@
 				tournamentInfo: "_1MwmQHjBLiH6XWzzpVBtHF",
 				"tournament-title": "_140bbDmuxY96fDpSG10nI6",
 				tournamentTitle: "_140bbDmuxY96fDpSG10nI6",
+				long: "_17m7Cs0WhffLTYHtIMgC_w",
 				"status-badge": "R548FtL9R_OxHk9HwQC3u",
 				statusBadge: "R548FtL9R_OxHk9HwQC3u",
 				live: "_1rIr--JVj3sZJv8DYnWfWR",
@@ -4097,7 +4098,9 @@
 				}, r.a.createElement("p", null, I._("Predictions Tournament", null, {
 					hk: "2AxvmU"
 				})), r.a.createElement("h1", {
-					className: j.a.tournamentTitle
+					className: Object(p.a)(j.a.tournamentTitle, {
+						[j.a.long]: s.name.length > 60
+					})
 				}, s.name, " ", r.a.createElement("span", {
 					className: Object(p.a)(j.a.statusBadge, {
 						[j.a.live]: a,
@@ -16916,4 +16919,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.e3897a2f38458de12ee0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.7d6d596021f448648bb7.js.map

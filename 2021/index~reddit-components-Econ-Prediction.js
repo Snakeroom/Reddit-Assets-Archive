@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.e268417991b57e8a3328.js
-// Retrieved at 9/23/2021, 2:40:11 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.56d788095b865a4fd5e8.js
+// Retrieved at 9/27/2021, 1:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index~reddit-components-Econ-Prediction"], {
 		"./node_modules/lodash/_LazyWrapper.js": function(a, i, r) {
@@ -1322,7 +1322,8 @@
 			a.exports = {
 				container: "_1kbLitb_-DeYsFKkTw3_ut",
 				badge: "_3hwpk55MHGD_SGEJfGUcOq",
-				question: "_2MQktDow59F-9N_1I740NE"
+				question: "_2MQktDow59F-9N_1I740NE",
+				long: "_1VDXnwXEPt6kDhrOo8Kv0t"
 			}
 		},
 		"./src/reddit/components/Econ/Prediction/PredictionCard/v2/index.m.less": function(a, i, r) {
@@ -1357,7 +1358,9 @@
 			}, m._("Prediction", null, {
 				hk: "1MyVWT"
 			})), k.a.createElement("div", {
-				className: s.a.question
+				className: Object(t.a)(s.a.question, {
+					[s.a.long]: Boolean(a && a.toString().length > 100)
+				})
 			}, a));
 			var c = r("./src/reddit/components/Econ/Prediction/PredictionOption/index.tsx"),
 				p = r("./src/reddit/components/Econ/Prediction/PredictionOption/PredictionChangeOption.tsx"),
@@ -1395,7 +1398,9 @@
 					predictionStatus: b,
 					voteUpdatesRemained: F
 				} = a, g = Object(n.e)(i => Boolean((null == a ? void 0 : a.userSelection) && !(null == a ? void 0 : a.resolvedOptionId) && Object(f.w)(i))), v = Object(n.e)(u.qb), P = Object(n.e)(u.K), [S, T] = Object(x.useState)(!1), _ = s === v, O = m < Date.now(), j = O && _ && !A, C = b === d.b.Cancelled || b === d.b.CancelInProgress;
-				return k.a.createElement("div", E({
+				return k.a.useEffect(() => {
+					T(!1)
+				}, [V]), k.a.createElement("div", E({
 					className: Object(t.a)(G.a.poll, o)
 				}, e), k.a.createElement(l, null, a.title), k.a.createElement("div", {
 					className: G.a.predictionOptions
@@ -1412,7 +1417,7 @@
 					userSelection: V,
 					userIsLoggedOut: !P,
 					votePercentage: (V || O || S) && a.voteCount ? Math.floor(a.voteCount / B * 100) : null,
-					isShowingHint: !V && S
+					isShowingHint: S
 				})), !C && k.a.createElement(h.a, {
 					disabled: S || !!V,
 					isEnded: O,
@@ -4078,4 +4083,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.e268417991b57e8a3328.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.56d788095b865a4fd5e8.js.map

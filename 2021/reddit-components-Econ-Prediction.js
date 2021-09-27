@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.c779f6e01b68f23288e5.js
-// Retrieved at 9/22/2021, 3:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.8b6a12e85bf267d7c206.js
+// Retrieved at 9/27/2021, 1:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction"], {
 		"./src/lib/constants/specialMembership.ts": function(e, t, n) {
@@ -492,7 +492,9 @@
 					});
 					return Boolean((null == n ? void 0 : n.userSelection) && !(null == n ? void 0 : n.resolvedOptionId) && Object(l.w)(t))
 				}), x = Object(r.e)(p.qb), C = Object(r.e)(p.K), [y, S] = Object(s.useState)(!1), I = m === x, k = b < Date.now(), j = k && I && !E, N = v === d.b.Cancelled || v === d.b.CancelInProgress;
-				return o.a.createElement("div", {
+				return o.a.useEffect(() => {
+					S(!1)
+				}, [g]), o.a.createElement("div", {
 					className: U.a.poll
 				}, f.map(e => o.a.createElement(T.a, {
 					endsAt: b,
@@ -512,7 +514,7 @@
 					userSelection: g,
 					userIsLoggedOut: !C,
 					votePercentage: (g || k || y) && e.voteCount ? Math.floor(e.voteCount / _ * 100) : null,
-					isShowingHint: !g && y
+					isShowingHint: y
 				}))), !N && o.a.createElement(D.a, {
 					disabled: i || y || !!g,
 					isEnded: k,
@@ -1818,4 +1820,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.c779f6e01b68f23288e5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.8b6a12e85bf267d7c206.js.map
