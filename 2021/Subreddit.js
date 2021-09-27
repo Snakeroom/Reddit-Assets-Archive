@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.7d6d596021f448648bb7.js
-// Retrieved at 9/27/2021, 1:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.298ac7086deddde8cd00.js
+// Retrieved at 9/27/2021, 6:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~ModListing", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -416,8 +416,9 @@
 					showPromo: t
 				} = Object(c.a)(), n = function() {
 					const e = u(i.Eb.Bottom_cell),
-						t = u(i.Eb.Bottom_sheet);
-					return e ? a.b.SignupUpsellCell : t ? a.b.SignupUpsellBottomSheet : null
+						t = u(i.Eb.Bottom_cell_dismissible),
+						n = u(i.Eb.Bottom_sheet);
+					return e ? a.b.SignupUpsellCell : t ? a.b.SignupUpsellCellDismissible : n ? a.b.SignupUpsellBottomSheet : null
 				}(), r = s.useRef(!1);
 				return s.useMemo(() => o()(e => {
 					var s;
@@ -11645,7 +11646,7 @@
 					return r
 				})),
 				function(e) {
-					e.SignupUpsellCell = "signupUpsellBottomCell", e.SignupUpsellBottomSheet = "signupUpsellBottomSheet"
+					e.SignupUpsellCell = "signupUpsellBottomCell", e.SignupUpsellCellDismissible = "signupUpsellBottomCellDismissible", e.SignupUpsellBottomSheet = "signupUpsellBottomSheet"
 				}(s || (s = {})),
 				function(e) {
 					e.Shown = "shown", e.Dismissed = "dismissed", e.Completed = "completed"
@@ -16919,4 +16920,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.7d6d596021f448648bb7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.298ac7086deddde8cd00.js.map

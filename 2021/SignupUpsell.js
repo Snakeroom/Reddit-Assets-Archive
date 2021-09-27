@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SignupUpsell.8333974e58e560a69ef4.js
-// Retrieved at 9/27/2021, 1:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SignupUpsell.291e9e96b34fe5e88fb0.js
+// Retrieved at 9/27/2021, 6:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SignupUpsell"], {
 		"./src/reddit/components/Upsell/SSOButton/index.m.less": function(e, t, n) {
@@ -36,8 +36,8 @@
 			var s = n("./src/config.ts"),
 				o = n("./node_modules/fbt/lib/FbtPublic.js"),
 				l = n("./node_modules/react/index.js"),
-				c = n("./node_modules/react-redux/es/index.js"),
-				i = n("./src/lib/classNames/index.ts"),
+				i = n("./node_modules/react-redux/es/index.js"),
+				c = n("./src/lib/classNames/index.ts"),
 				a = n("./src/reddit/actions/login.ts"),
 				r = n("./src/reddit/components/TrackingHelper/index.tsx"),
 				d = n("./src/reddit/controls/Button/index.tsx"),
@@ -49,15 +49,15 @@
 					onClick: n,
 					size: s,
 					iconClassName: o,
-					className: c
+					className: i
 				}) {
 					return l.createElement(d.s, {
-						className: Object(i.a)(u.a.button, c, {
+						className: Object(c.a)(u.a.button, i, {
 							[u.a.large]: s === d.c.L,
 							[u.a.small]: s !== d.c.L
 						}),
 						Icon: e,
-						iconClassName: Object(i.a)(u.a.icon, o),
+						iconClassName: Object(c.a)(u.a.icon, o),
 						iconPosition: d.g.L,
 						onClick: n,
 						priority: d.b.Secondary,
@@ -69,11 +69,11 @@
 				b = n("./src/reddit/constants/promo.ts"),
 				g = n("./src/reddit/selectors/telemetry.ts");
 			const f = "sso_signup";
-			var C;
+			var _;
 			! function(e) {
 				e.Apple = "apple", e.Google = "google", e.Reddit = "reddit"
-			}(C || (C = {}));
-			const _ = () => e => ({
+			}(_ || (_ = {}));
+			const C = () => e => ({
 					...Object(g.defaults)(e),
 					source: "popup",
 					action: "view",
@@ -121,24 +121,26 @@
 				onDismiss: e,
 				size: t
 			}) {
-				Object(c.e)(O.a), Object(c.e)(O.c), Object(c.e)(O.e);
+				Object(i.e)(O.a), Object(i.e)(O.c), Object(i.e)(O.e);
 				const n = Object(r.b)();
 				l.useEffect(() => {
-					n(_())
+					n(C())
 				}, [n]);
-				const p = Object(c.d)(),
+				const p = Object(i.d)(),
 					u = () => p(Object(a.k)()),
 					g = t === B.L ? d.c.L : d.c.XS,
 					f = function() {
 						const e = Object(h.a)(b.b.SignupUpsellCell),
-							t = Object(h.a)(b.b.SignupUpsellBottomSheet),
-							n = `${s.a.assetPath}/img/upsell/appQrCode/`;
-						if (e) return `${n}bottom_cell.png`;
-						if (t) return `${n}bottom_sheet.png`;
+							t = Object(h.a)(b.b.SignupUpsellCellDismissible),
+							n = Object(h.a)(b.b.SignupUpsellBottomSheet),
+							o = `${s.a.assetPath}/img/upsell/appQrCode/`;
+						if (e) return `${o}bottom_cell.png`;
+						if (t) return `${o}bottom_cell_dismissible.png`;
+						if (n) return `${o}bottom_sheet.png`;
 						throw new Error("Invalid variant for signup upsell")
 					}();
 				return l.createElement("div", {
-					className: Object(i.a)(L.a.wrapper, {
+					className: Object(c.a)(L.a.wrapper, {
 						[L.a.small]: t === B.S,
 						[L.a.large]: t === B.L
 					})
@@ -158,7 +160,7 @@
 				}, l.createElement(m, {
 					Icon: w.a,
 					onClick: () => {
-						u(), n(v(C.Google))
+						u(), n(v(_.Google))
 					},
 					size: g,
 					iconClassName: L.a.googleIcon
@@ -167,7 +169,7 @@
 				})), l.createElement(m, {
 					Icon: N.a,
 					onClick: () => {
-						u(), n(v(C.Apple))
+						u(), n(v(_.Apple))
 					},
 					size: g,
 					iconClassName: L.a.appleIcon,
@@ -177,9 +179,9 @@
 				})), l.createElement("div", {
 					className: L.a.bottomWrapper
 				}, l.createElement(d.i, {
-					className: Object(i.a)(L.a.linkButton, L.a.emailButton),
+					className: Object(c.a)(L.a.linkButton, L.a.emailButton),
 					onClick: () => {
-						u(), n(v(C.Reddit))
+						u(), n(v(_.Reddit))
 					},
 					size: d.c.XS
 				}, o.fbt._("Continue with Email", null, {
@@ -268,9 +270,9 @@
 			var s = n("./node_modules/reselect/es/index.js"),
 				o = n("./src/reddit/constants/experiments.ts"),
 				l = n("./src/reddit/helpers/chooseVariant/index.ts"),
-				c = n("./src/reddit/selectors/meta.ts"),
-				i = n("./src/reddit/selectors/experiments/index.ts");
-			const a = Object(s.a)(c.g, c.d, i.e, (e, t, n) => !e && !t && !n);
+				i = n("./src/reddit/selectors/meta.ts"),
+				c = n("./src/reddit/selectors/experiments/index.ts");
+			const a = Object(s.a)(i.g, i.d, c.e, (e, t, n) => !e && !t && !n);
 
 			function r(e, t) {
 				return n => Object(l.c)(n, {
@@ -291,4 +293,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SignupUpsell.8333974e58e560a69ef4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SignupUpsell.291e9e96b34fe5e88fb0.js.map

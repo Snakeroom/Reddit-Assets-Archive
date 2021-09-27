@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.f89e51a7f53533c07951.js
-// Retrieved at 9/27/2021, 11:20:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.21f5bf60cb13b4ff6320.js
+// Retrieved at 9/27/2021, 6:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage"], {
 		"./src/lib/makeLinkedPostsListingKey/index.ts": function(e, t, s) {
@@ -43,8 +43,9 @@
 					showPromo: t
 				} = Object(d.a)(), s = function() {
 					const e = m(i.Eb.Bottom_cell),
-						t = m(i.Eb.Bottom_sheet);
-					return e ? a.b.SignupUpsellCell : t ? a.b.SignupUpsellBottomSheet : null
+						t = m(i.Eb.Bottom_cell_dismissible),
+						s = m(i.Eb.Bottom_sheet);
+					return e ? a.b.SignupUpsellCell : t ? a.b.SignupUpsellCellDismissible : s ? a.b.SignupUpsellBottomSheet : null
 				}(), n = o.useRef(!1);
 				return o.useMemo(() => r()(e => {
 					var o;
@@ -8671,4 +8672,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.f89e51a7f53533c07951.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.21f5bf60cb13b4ff6320.js.map
