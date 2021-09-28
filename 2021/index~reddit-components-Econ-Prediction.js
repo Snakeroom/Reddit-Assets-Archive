@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.56d788095b865a4fd5e8.js
-// Retrieved at 9/27/2021, 1:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.968d2891f65b9f0d3708.js
+// Retrieved at 9/28/2021, 4:00:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index~reddit-components-Econ-Prediction"], {
 		"./node_modules/lodash/_LazyWrapper.js": function(a, i, r) {
@@ -2080,28 +2080,29 @@
 			}) => {
 				const e = Object(k.d)(),
 					s = Object(A.a)(),
-					m = Object(k.e)(P.v) ? _.a : j.a,
-					l = Object(k.e)(S.t),
-					[c, p] = Object(t.useState)(!1),
-					h = o ? C._("You've already changed your answer twice", null, {
-						hk: "h33B"
-					}) : C._("Change your prediction", null, {
+					m = Object(k.e)(P.v),
+					l = m ? _.a : j.a,
+					c = Object(k.e)(S.t),
+					[p, h] = Object(t.useState)(!1),
+					d = !o || m ? C._("Change your prediction", null, {
 						hk: "hleE5"
+					}) : C._("You've already changed your answer twice", null, {
+						hk: "h33B"
 					});
 				return x.a.createElement(x.a.Fragment, null, x.a.createElement("button", {
-					"aria-label": h,
-					className: m.additionalOptionButton,
+					"aria-label": d,
+					className: l.additionalOptionButton,
 					disabled: o,
 					onClick: () => {
-						l && (p(!0), s(Object(E.a)(a))), l || (e(Object(n.q)("CHANGE_PREDICTION")), s(Object(E.b)(a)))
+						c && (h(!0), s(Object(E.a)(a))), c || (e(Object(n.q)("CHANGE_PREDICTION")), s(Object(E.b)(a)))
 					}
 				}, x.a.createElement(v.a, {
-					className: m.icon
-				}), h), c && x.a.createElement(g, {
+					className: l.icon
+				}), d), p && x.a.createElement(g, {
 					postId: a,
 					options: i,
 					selectedOptionId: r,
-					onClose: () => p(!1)
+					onClose: () => h(!1)
 				}))
 			}
 		},
@@ -4083,4 +4084,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.56d788095b865a4fd5e8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.968d2891f65b9f0d3708.js.map
