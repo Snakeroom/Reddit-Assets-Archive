@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.cfcc43c099ca50151384.js
-// Retrieved at 9/29/2021, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.626468f651f9b730505d.js
+// Retrieved at 9/29/2021, 7:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -7537,20 +7537,19 @@
 				Object(n.useEffect)(() => {
 					!v || N || C()(g) || m(Object(x.p)(I, g, y, [u.Xb.Posts], O))
 				}, [v, N, g]), Object(n.useEffect)(() => {
-					if (v && xe.c.has(t)) {
-						const e = xe.c.end(t);
-						P(e, fe.TimerType.InApp)
-					}
-				}, [v]), Object(n.useEffect)(() => {
-					k && !E && function() {
-						if (xe.c.has(t)) {
-							const e = xe.c.end(t);
-							P(e, fe.TimerType.InApp)
-						}
-					}()
+					v && !C()(g) && F()
+				}, [v, g]), Object(n.useEffect)(() => {
+					k && !E && F()
 				}, [E, k]), b === ue.c.Trending && (T = Object(ve.a)(f));
 				const L = Object(h.a)(i.q || ""),
 					R = Object(n.useMemo)(() => Object.values(f).find(e => e.name === me.m || e.name === me.f), [f]);
+
+				function F() {
+					if (xe.c.has(t)) {
+						const e = xe.c.end(t);
+						P(e, fe.TimerType.InApp)
+					}
+				}
 				return v ? o.a.createElement(o.a.Fragment, null, T && R && o.a.createElement(ae.a, {
 					key: T,
 					postId: T,
@@ -7574,11 +7573,11 @@
 						m(Object(x.q)([u.Xb.Posts]))
 					},
 					searchOptions: i
-				})) : o.a.createElement(ye.a, {
+				})) : void 0 !== b ? o.a.createElement(ye.a, {
 					query: L,
 					type: ge.b.Posts,
 					searchOptions: i
-				})
+				}) : null
 			}
 
 			function Se(e) {
@@ -11456,4 +11455,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.cfcc43c099ca50151384.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.626468f651f9b730505d.js.map
