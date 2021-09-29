@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.298ac7086deddde8cd00.js
-// Retrieved at 9/27/2021, 6:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.8121efbee08a6300ca29.js
+// Retrieved at 9/29/2021, 3:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~ModListing", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -7158,8 +7158,8 @@
 					onClick: t
 				}, r.a.createElement(i.a, {
 					iconsKey: n,
-					isOutlinePresenceDot: !0,
-					isShowPresenceDot: !0
+					shouldOutlinePresenceDot: !0,
+					shouldShowPresenceDot: !0
 				}), r.a.createElement("label", {
 					className: d.a.caption
 				}, l._("New Posts", null, {
@@ -7930,41 +7930,45 @@
 						return "./src/reddit/components/UserIcon/PresenceDot.tsx"
 					}
 				}),
-				b = 20,
-				h = 3,
-				f = e => {
+				b = 8,
+				h = 20,
+				f = 3,
+				x = e => {
 					const {
 						iconsKey: t,
-						isOutlinePresenceDot: n,
-						isShowPresenceDot: s,
-						numIconsToDrawFrom: a = b,
-						numVisibleIcons: u = h
-					} = e, f = Object(r.useRef)([]);
+						memberIconClassName: n,
+						numVisibleIcons: s = f,
+						shouldOutlinePresenceDot: a,
+						shouldShowPresenceDot: u,
+						shouldUseColoredSilhouetteIcons: x,
+						numIconsToDrawFrom: g = (x ? b : h),
+						wrapperClassName: y
+					} = e, v = Object(r.useRef)([]);
 					return Object(l.a)(() => {
-						const e = Object(d.a)(t, a);
-						f.current = c()(e, u)
+						const e = Object(d.a)(t, g, x);
+						v.current = c()(e, s)
 					}), o.a.createElement("div", {
-						className: m.a.membersIcons
-					}, f.current.map(({
+						className: Object(i.a)(m.a.membersIcons, y)
+					}, v.current.map(({
 						color: e,
 						image: t
 					}, r) => {
-						return r === u - 1 ? o.a.createElement("div", {
+						return r === s - 1 && u ? o.a.createElement("div", {
 							className: m.a.presenceWrapper,
 							key: r
 						}, o.a.createElement("img", {
-							className: m.a.memberIcon,
+							className: Object(i.a)(m.a.memberIcon, n),
 							src: t,
 							style: {
 								backgroundColor: e
 							}
-						}), s && o.a.createElement(p, {
+						}), o.a.createElement(p, {
 							showPresence: !0,
 							outlineClassName: Object(i.a)({
-								[m.a.presenceDotClass]: n
+								[m.a.presenceDotClass]: a
 							})
 						})) : o.a.createElement("img", {
-							className: m.a.memberIcon,
+							className: Object(i.a)(m.a.memberIcon, n),
 							key: r,
 							src: t,
 							style: {
@@ -7973,7 +7977,7 @@
 						})
 					}))
 				};
-			t.a = f
+			t.a = x
 		},
 		"./src/reddit/components/RandomBaseUserIcons/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -12265,15 +12269,19 @@
 			const a = Array.from({
 					length: 20
 				}).map((e, t) => `${i.a.assetPath}/img/snoovatars/snoovatar_${t+1}.png`),
-				c = [];
-			t.a = r()((e, t = 3) => {
-				if (!e || !t) return c;
-				const n = Array.from(e).reduce((e, t) => e + t.charCodeAt(0), 0);
+				c = Array.from({
+					length: 8
+				}).map((e, t) => `${i.a.processingAvatarImageUrl}/defaults/avatar_default_${t}.png`),
+				d = [];
+			t.a = r()((e, t = 3, n) => {
+				if (!e || !t) return d;
+				const s = n ? c : a,
+					r = Array.from(e).reduce((e, t) => e + t.charCodeAt(0), 0);
 				return Array.from({
 					length: t
 				}).map((e, t) => ({
-					color: o.a[(n + t) % o.a.length],
-					image: a[(n + t) % a.length]
+					color: o.a[(r + t) % o.a.length],
+					image: s[(r + t) % s.length]
 				}))
 			}, (e, t = 3) => `${e}_${t}`)
 		},
@@ -16920,4 +16928,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.298ac7086deddde8cd00.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.8121efbee08a6300ca29.js.map

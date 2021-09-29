@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.04c6f329e914dd7a03c0.js
-// Retrieved at 9/23/2021, 5:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.8d20bb2e1bf4b58b1158.js
+// Retrieved at 9/29/2021, 3:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton", "reddit-components-RichTextEditor-Toolbar-GifButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, o) {
@@ -2721,10 +2721,11 @@
 						draft: t,
 						draftType: o,
 						hasError: n,
-						mediaMetadata: r,
-						rtJson: i,
-						voteState: a
-					} = e, c = !!localStorage.getItem("upvoteDefault"), d = a === ee.a.upvoted || a === ee.a.downvoted;
+						isTypingIndicatorsExperimentEnabled: r,
+						mediaMetadata: i,
+						rtJson: a,
+						voteState: c
+					} = e, d = !!localStorage.getItem("upvoteDefault"), l = c === ee.a.upvoted || c === ee.a.downvoted;
 					this.state = {
 						breakOut: !1,
 						cancelModalText: o === F.c.edit ? s.fbt._("Are you sure that you want to discard your edits?", null, {
@@ -2732,13 +2733,13 @@
 						}) : s.fbt._("Are you sure that you want to discard your comment?", null, {
 							hk: "38Df9h"
 						}),
-						rteState: !i && t && t.rteState ? t.rteState : P.a.createInitial(i, r),
+						rteState: !a && t && t.rteState ? t.rteState : P.a.createInitial(a, i),
 						formHeight: void 0,
 						hasChanged: !1,
 						showError: n,
-						upvoteDefault: c,
-						hasAlreadyVoted: d,
-						showTypingIndicatorsFormattingTools: !1
+						upvoteDefault: d,
+						hasAlreadyVoted: l,
+						showTypingIndicatorsFormattingTools: r
 					}
 				}
 				UNSAFE_componentWillReceiveProps(e) {
@@ -5103,4 +5104,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.04c6f329e914dd7a03c0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.8d20bb2e1bf4b58b1158.js.map

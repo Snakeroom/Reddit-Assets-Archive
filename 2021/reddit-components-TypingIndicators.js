@@ -1,123 +1,127 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-TypingIndicators.41a8c852a9edc8ef0a90.js
-// Retrieved at 9/23/2021, 2:40:11 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-TypingIndicators.c09c89dfd8514dbb8192.js
+// Retrieved at 9/29/2021, 3:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-TypingIndicators"], {
-		"./node_modules/lodash/_arraySampleSize.js": function(e, s, n) {
-			var t = n("./node_modules/lodash/_baseClamp.js"),
-				o = n("./node_modules/lodash/_copyArray.js"),
-				a = n("./node_modules/lodash/_shuffleSelf.js");
+		"./node_modules/lodash/_arraySampleSize.js": function(e, s, o) {
+			var n = o("./node_modules/lodash/_baseClamp.js"),
+				t = o("./node_modules/lodash/_copyArray.js"),
+				a = o("./node_modules/lodash/_shuffleSelf.js");
 			e.exports = function(e, s) {
-				return a(o(e), t(s, 0, e.length))
+				return a(t(e), n(s, 0, e.length))
 			}
 		},
 		"./node_modules/lodash/_baseRandom.js": function(e, s) {
-			var n = Math.floor,
-				t = Math.random;
+			var o = Math.floor,
+				n = Math.random;
 			e.exports = function(e, s) {
-				return e + n(t() * (s - e + 1))
+				return e + o(n() * (s - e + 1))
 			}
 		},
-		"./node_modules/lodash/_baseSampleSize.js": function(e, s, n) {
-			var t = n("./node_modules/lodash/_baseClamp.js"),
-				o = n("./node_modules/lodash/_shuffleSelf.js"),
-				a = n("./node_modules/lodash/values.js");
+		"./node_modules/lodash/_baseSampleSize.js": function(e, s, o) {
+			var n = o("./node_modules/lodash/_baseClamp.js"),
+				t = o("./node_modules/lodash/_shuffleSelf.js"),
+				a = o("./node_modules/lodash/values.js");
 			e.exports = function(e, s) {
-				var n = a(e);
-				return o(n, t(s, 0, n.length))
+				var o = a(e);
+				return t(o, n(s, 0, o.length))
 			}
 		},
-		"./node_modules/lodash/_shuffleSelf.js": function(e, s, n) {
-			var t = n("./node_modules/lodash/_baseRandom.js");
+		"./node_modules/lodash/_shuffleSelf.js": function(e, s, o) {
+			var n = o("./node_modules/lodash/_baseRandom.js");
 			e.exports = function(e, s) {
-				var n = -1,
-					o = e.length,
-					a = o - 1;
-				for (s = void 0 === s ? o : s; ++n < s;) {
-					var r = t(n, a),
+				var o = -1,
+					t = e.length,
+					a = t - 1;
+				for (s = void 0 === s ? t : s; ++o < s;) {
+					var r = n(o, a),
 						c = e[r];
-					e[r] = e[n], e[n] = c
+					e[r] = e[o], e[o] = c
 				}
 				return e.length = s, e
 			}
 		},
-		"./node_modules/lodash/sampleSize.js": function(e, s, n) {
-			var t = n("./node_modules/lodash/_arraySampleSize.js"),
-				o = n("./node_modules/lodash/_baseSampleSize.js"),
-				a = n("./node_modules/lodash/isArray.js"),
-				r = n("./node_modules/lodash/_isIterateeCall.js"),
-				c = n("./node_modules/lodash/toInteger.js");
-			e.exports = function(e, s, n) {
-				return s = (n ? r(e, s, n) : void 0 === s) ? 1 : c(s), (a(e) ? t : o)(e, s)
+		"./node_modules/lodash/sampleSize.js": function(e, s, o) {
+			var n = o("./node_modules/lodash/_arraySampleSize.js"),
+				t = o("./node_modules/lodash/_baseSampleSize.js"),
+				a = o("./node_modules/lodash/isArray.js"),
+				r = o("./node_modules/lodash/_isIterateeCall.js"),
+				c = o("./node_modules/lodash/toInteger.js");
+			e.exports = function(e, s, o) {
+				return s = (o ? r(e, s, o) : void 0 === s) ? 1 : c(s), (a(e) ? n : t)(e, s)
 			}
 		},
-		"./src/reddit/components/RandomBaseUserIcons/RandomBaseUserIcons.tsx": function(e, s, n) {
+		"./src/reddit/components/RandomBaseUserIcons/RandomBaseUserIcons.tsx": function(e, s, o) {
 			"use strict";
-			var t = n("./node_modules/@loadable/component/dist/loadable.esm.js"),
-				o = n("./node_modules/react/index.js"),
-				a = n.n(o),
-				r = n("./src/lib/classNames/index.ts"),
-				c = n("./node_modules/lodash/sampleSize.js"),
-				d = n.n(c),
-				l = n("./src/reddit/helpers/getFakeUserIcons.ts"),
-				i = n("./src/reddit/hooks/useConstructor.ts"),
-				m = n("./src/reddit/components/RandomBaseUserIcons/index.m.less"),
-				u = n.n(m);
-			const p = Object(t.a)({
+			var n = o("./node_modules/@loadable/component/dist/loadable.esm.js"),
+				t = o("./node_modules/react/index.js"),
+				a = o.n(t),
+				r = o("./src/lib/classNames/index.ts"),
+				c = o("./node_modules/lodash/sampleSize.js"),
+				d = o.n(c),
+				l = o("./src/reddit/helpers/getFakeUserIcons.ts"),
+				m = o("./src/reddit/hooks/useConstructor.ts"),
+				i = o("./src/reddit/components/RandomBaseUserIcons/index.m.less"),
+				u = o.n(i);
+			const p = Object(n.a)({
 					resolved: {},
 					chunkName: () => "reddit-components-UserIcon-PresenceDot",
 					isReady(e) {
 						const s = this.resolve(e);
-						return !1 !== this.resolved[s] && !!n.m[s]
+						return !1 !== this.resolved[s] && !!o.m[s]
 					},
-					importAsync: () => Promise.resolve().then(n.bind(null, "./src/reddit/components/UserIcon/PresenceDot.tsx")),
+					importAsync: () => Promise.resolve().then(o.bind(null, "./src/reddit/components/UserIcon/PresenceDot.tsx")),
 					requireAsync(e) {
 						const s = this.resolve(e);
 						return this.resolved[s] = !1, this.importAsync(e).then(e => (this.resolved[s] = !0, e))
 					},
 					requireSync(e) {
 						const s = this.resolve(e);
-						return n(s)
+						return o(s)
 					},
 					resolve() {
 						return "./src/reddit/components/UserIcon/PresenceDot.tsx"
 					}
 				}),
-				h = 20,
-				_ = 3,
-				f = e => {
+				h = 8,
+				_ = 20,
+				f = 3,
+				b = e => {
 					const {
 						iconsKey: s,
-						isOutlinePresenceDot: n,
-						isShowPresenceDot: t,
-						numIconsToDrawFrom: c = h,
-						numVisibleIcons: m = _
-					} = e, f = Object(o.useRef)([]);
-					return Object(i.a)(() => {
-						const e = Object(l.a)(s, c);
-						f.current = d()(e, m)
+						memberIconClassName: o,
+						numVisibleIcons: n = f,
+						shouldOutlinePresenceDot: c,
+						shouldShowPresenceDot: i,
+						shouldUseColoredSilhouetteIcons: b,
+						numIconsToDrawFrom: j = (b ? h : _),
+						wrapperClassName: v
+					} = e, y = Object(t.useRef)([]);
+					return Object(m.a)(() => {
+						const e = Object(l.a)(s, j, b);
+						y.current = d()(e, n)
 					}), a.a.createElement("div", {
-						className: u.a.membersIcons
-					}, f.current.map(({
+						className: Object(r.a)(u.a.membersIcons, v)
+					}, y.current.map(({
 						color: e,
 						image: s
-					}, o) => {
-						return o === m - 1 ? a.a.createElement("div", {
+					}, t) => {
+						return t === n - 1 && i ? a.a.createElement("div", {
 							className: u.a.presenceWrapper,
-							key: o
+							key: t
 						}, a.a.createElement("img", {
-							className: u.a.memberIcon,
+							className: Object(r.a)(u.a.memberIcon, o),
 							src: s,
 							style: {
 								backgroundColor: e
 							}
-						}), t && a.a.createElement(p, {
+						}), a.a.createElement(p, {
 							showPresence: !0,
 							outlineClassName: Object(r.a)({
-								[u.a.presenceDotClass]: n
+								[u.a.presenceDotClass]: c
 							})
 						})) : a.a.createElement("img", {
-							className: u.a.memberIcon,
-							key: o,
+							className: Object(r.a)(u.a.memberIcon, o),
+							key: t,
 							src: s,
 							style: {
 								backgroundColor: e
@@ -125,9 +129,9 @@
 						})
 					}))
 				};
-			s.a = f
+			s.a = b
 		},
-		"./src/reddit/components/RandomBaseUserIcons/index.m.less": function(e, s, n) {
+		"./src/reddit/components/RandomBaseUserIcons/index.m.less": function(e, s, o) {
 			e.exports = {
 				membersIcons: "_1W1pLIfaIb8rYU6YeTdAk6",
 				memberIcon: "_1H6Meh6ZAemKxOJDOEasfK",
@@ -135,14 +139,14 @@
 				presenceDotClass: "_29m-SAo1wzA0dkdfJutrjs"
 			}
 		},
-		"./src/reddit/components/TypingIndicators/index.tsx": function(e, s, n) {
+		"./src/reddit/components/TypingIndicators/index.tsx": function(e, s, o) {
 			"use strict";
-			n.r(s);
-			var t = n("./node_modules/react/index.js"),
-				o = n.n(t),
-				a = n("./src/realtime/GQLSubscription/async.tsx"),
-				r = n("./src/reddit/components/RandomBaseUserIcons/RandomBaseUserIcons.tsx"),
-				c = n("./src/reddit/selectors/telemetry.ts");
+			o.r(s);
+			var n = o("./node_modules/react/index.js"),
+				t = o.n(n),
+				a = o("./src/realtime/GQLSubscription/async.tsx"),
+				r = o("./src/reddit/components/RandomBaseUserIcons/RandomBaseUserIcons.tsx"),
+				c = o("./src/reddit/selectors/telemetry.ts");
 			const d = (() => e => s => ({
 				source: "comment_composer",
 				action: "view",
@@ -151,17 +155,17 @@
 				post: c.post(s, e),
 				subreddit: c.subreddit(s)
 			}))();
-			var l = n("./src/reddit/hooks/useClassNameOnMount.ts"),
-				i = n("./src/reddit/hooks/useTracking.ts"),
-				m = n("./src/reddit/components/TypingIndicators/index.m.less"),
-				u = n.n(m);
+			var l = o("./src/reddit/hooks/useClassNameOnMount.ts"),
+				m = o("./src/reddit/hooks/useTracking.ts"),
+				i = o("./src/reddit/components/TypingIndicators/index.m.less"),
+				u = o.n(i);
 			s.default = e => {
 				const {
 					minNumUsersTyping: s,
-					postId: n,
+					postId: o,
 					queryKey: c,
-					queryVariables: m
-				} = e, [p, h] = Object(t.useState)(0), _ = Object(i.a)(), f = Object(t.useCallback)(e => {
+					queryVariables: i
+				} = e, [p, h] = Object(n.useState)(0), _ = Object(m.a)(), f = Object(n.useCallback)(e => {
 					const {
 						numUsers: s
 					} = e.subscribe.data;
@@ -175,72 +179,79 @@
 					addedClass: u.a.isDisplayed,
 					mountCondition: p >= s
 				});
-				return Object(t.useEffect)(() => {
-					j && _(d(n))
-				}, [j, n, _]), o.a.createElement(o.a.Fragment, null, o.a.createElement(a.a, {
-					variables: m,
+				return Object(n.useEffect)(() => {
+					j && _(d(o))
+				}, [j, o, _]), t.a.createElement(t.a.Fragment, null, t.a.createElement(a.a, {
+					variables: i,
 					onData: f,
 					queryKey: c
-				}), j && o.a.createElement("div", {
+				}), j && t.a.createElement("div", {
 					className: b,
 					onTransitionEnd: v
-				}, o.a.createElement(r.a, {
-					iconsKey: n,
-					isShowPresenceDot: !0
-				}), o.a.createElement("div", {
+				}, t.a.createElement(r.a, {
+					iconsKey: o,
+					memberIconClassName: u.a.offsetMemberIcon,
+					numVisibleIcons: s,
+					shouldUseColoredSilhouetteIcons: !0,
+					wrapperClassName: u.a.offsetMembersIcons
+				}), t.a.createElement("div", {
 					className: u.a.numUsersTyping
-				}, p), o.a.createElement("div", {
+				}, p), t.a.createElement("div", {
 					className: u.a.typingDots
-				}, o.a.createElement("span", {
+				}, t.a.createElement("span", {
 					className: u.a.dot
-				}), o.a.createElement("span", {
+				}), t.a.createElement("span", {
 					className: u.a.dot
-				}), o.a.createElement("span", {
+				}), t.a.createElement("span", {
 					className: u.a.dot
 				}))))
 			}
 		},
-		"./src/reddit/helpers/getFakeUserIcons.ts": function(e, s, n) {
+		"./src/reddit/helpers/getFakeUserIcons.ts": function(e, s, o) {
 			"use strict";
-			var t = n("./node_modules/lodash/memoize.js"),
-				o = n.n(t),
-				a = n("./src/reddit/constants/categories.tsx"),
-				r = n("./src/config.ts");
+			var n = o("./node_modules/lodash/memoize.js"),
+				t = o.n(n),
+				a = o("./src/reddit/constants/categories.tsx"),
+				r = o("./src/config.ts");
 			const c = Array.from({
 					length: 20
 				}).map((e, s) => `${r.a.assetPath}/img/snoovatars/snoovatar_${s+1}.png`),
-				d = [];
-			s.a = o()((e, s = 3) => {
-				if (!e || !s) return d;
-				const n = Array.from(e).reduce((e, s) => e + s.charCodeAt(0), 0);
+				d = Array.from({
+					length: 8
+				}).map((e, s) => `${r.a.processingAvatarImageUrl}/defaults/avatar_default_${s}.png`),
+				l = [];
+			s.a = t()((e, s = 3, o) => {
+				if (!e || !s) return l;
+				const n = o ? d : c,
+					t = Array.from(e).reduce((e, s) => e + s.charCodeAt(0), 0);
 				return Array.from({
 					length: s
 				}).map((e, s) => ({
-					color: a.a[(n + s) % a.a.length],
-					image: c[(n + s) % c.length]
+					color: a.a[(t + s) % a.a.length],
+					image: n[(t + s) % n.length]
 				}))
 			}, (e, s = 3) => `${e}_${s}`)
 		},
-		"./src/reddit/hooks/useClassNameOnMount.ts": function(e, s, n) {
+		"./src/reddit/hooks/useClassNameOnMount.ts": function(e, s, o) {
 			"use strict";
-			var t = n("./node_modules/react/index.js"),
-				o = n("./src/lib/classNames/index.ts");
+			var n = o("./node_modules/react/index.js"),
+				t = o("./src/lib/classNames/index.ts");
 			s.a = ({
 				defaultClass: e,
 				addedClass: s,
-				mountCondition: n
+				mountCondition: o
 			}) => {
-				const [a, r] = Object(t.useState)(e), [c, d] = Object(t.useState)(!1);
-				Object(t.useEffect)(() => {
-					n && d(!0)
-				}, [n]), Object(t.useEffect)(() => {
-					c && (n ? window.setTimeout(() => {
-						r(Object(o.a)(e, s))
+				const [a, r] = Object(n.useState)(e), [c, d] = Object(n.useState)(!1);
+				Object(n.useEffect)(() => {
+					o && d(!0)
+				}, [o]), Object(n.useEffect)(() => {
+					c && (o ? window.setTimeout(() => {
+						r(Object(t.a)(e, s))
 					}, 100) : r(e))
-				}, [s, e, n, c]);
-				const l = Object(t.useCallback)(() => {
-					n || d(!1)
-				}, [n]);
+				}, [s, e, o, c]);
+				const l = Object(n.useCallback)(() => {
+					o || d(!1)
+				}, [o]);
 				return {
 					className: a,
 					shouldMount: c,
@@ -248,18 +259,18 @@
 				}
 			}
 		},
-		"./src/reddit/hooks/useConstructor.ts": function(e, s, n) {
+		"./src/reddit/hooks/useConstructor.ts": function(e, s, o) {
 			"use strict";
-			n.d(s, "a", (function() {
-				return o
+			o.d(s, "a", (function() {
+				return t
 			}));
-			var t = n("./node_modules/react/index.js");
+			var n = o("./node_modules/react/index.js");
 
-			function o(e) {
-				const s = Object(t.useRef)(!1);
+			function t(e) {
+				const s = Object(n.useRef)(!1);
 				s.current || (e(), s.current = !0)
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-TypingIndicators.41a8c852a9edc8ef0a90.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-TypingIndicators.c09c89dfd8514dbb8192.js.map

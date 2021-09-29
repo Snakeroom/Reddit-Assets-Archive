@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.743a3986c2546c4bc03b.js
-// Retrieved at 9/27/2021, 10:40:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.edb5c4e1dffa889e09ca.js
+// Retrieved at 9/29/2021, 3:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "AchievementsActions", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -4814,15 +4814,19 @@
 			const a = Array.from({
 					length: 20
 				}).map((e, t) => `${o.a.assetPath}/img/snoovatars/snoovatar_${t+1}.png`),
-				d = [];
-			t.a = s()((e, t = 3) => {
-				if (!e || !t) return d;
-				const n = Array.from(e).reduce((e, t) => e + t.charCodeAt(0), 0);
+				d = Array.from({
+					length: 8
+				}).map((e, t) => `${o.a.processingAvatarImageUrl}/defaults/avatar_default_${t}.png`),
+				c = [];
+			t.a = s()((e, t = 3, n) => {
+				if (!e || !t) return c;
+				const r = n ? d : a,
+					s = Array.from(e).reduce((e, t) => e + t.charCodeAt(0), 0);
 				return Array.from({
 					length: t
 				}).map((e, t) => ({
-					color: i.a[(n + t) % i.a.length],
-					image: a[(n + t) % a.length]
+					color: i.a[(s + t) % i.a.length],
+					image: r[(s + t) % r.length]
 				}))
 			}, (e, t = 3) => `${e}_${t}`)
 		},
@@ -5787,4 +5791,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.743a3986c2546c4bc03b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.edb5c4e1dffa889e09ca.js.map
