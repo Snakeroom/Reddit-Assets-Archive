@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.63f1b8c99dfe9e2ea411.js
-// Retrieved at 9/29/2021, 4:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.e9ee006e0aa4f05ee221.js
+// Retrieved at 9/29/2021, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit", "FrontpageSidebar"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -6518,11 +6518,11 @@
 							structureType: s,
 							searchQuery: n
 						};
-						_(Object(er.t)(o, r))
+						_(Object(er.u)(o, r))
 					}, le = (e, t, n) => {
-						_(Object(er.v)(e, t, n))
+						_(Object(er.w)(e, t, n))
 					}, de = (e, t, n, s) => {
-						_(Object(er.x)(e, t, n, s))
+						_(Object(er.y)(e, t, n, s))
 					}, ue = (e, t, s, o) => {
 						const r = {
 							displayQuery: s,
@@ -6530,7 +6530,7 @@
 							searchQuery: n,
 							structureType: t
 						};
-						_(Object(er.u)(e, r))
+						_(Object(er.v)(e, r))
 					}, me = ({
 						target: e,
 						searchOptions: t,
@@ -20436,4 +20436,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePo~5f1ac562", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250", "Governance~ModListing~Reddit~Subreddit", "Chat~Governance~Reddit", "Reddit~StandalonePostPage~reddit-components-MediumPost", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.63f1b8c99dfe9e2ea411.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.e9ee006e0aa4f05ee221.js.map
