@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index.58a54c67a51dc2f78799.js
-// Retrieved at 9/28/2021, 4:00:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index.912d99ee6bbe2118f4d6.js
+// Retrieved at 9/30/2021, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index"], {
 		"./src/reddit/components/Econ/Prediction/TournamentPostBody/ViewTournamentLink/index.m.less": function(e, t, n) {
@@ -160,7 +160,7 @@
 							hk: "22UWEr"
 						})), void g(null);
 						if (!m || !h) throw new Error("Invalid arguments, optionId and pollId must be strings");
-						x(!0), d(Object(F.n)({
+						x(!0), d(Object(F.o)({
 							pollId: m,
 							selectedNumberTokens: t.amount
 						}));
@@ -692,4 +692,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.58a54c67a51dc2f78799.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.912d99ee6bbe2118f4d6.js.map

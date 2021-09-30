@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.c857c56d1dfad734f1a0.js
-// Retrieved at 9/29/2021, 7:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.43bbe6c509aa2c74df2d.js
+// Retrieved at 9/30/2021, 4:20:05 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var n, a, i = o[0], s = o[1], c = o[2], l = 0, P = []; l < i.length; l++) a = i[l], Object.prototype.hasOwnProperty.call(d, a) && d[a] && P.push(d[a][0]), d[a] = 0;
@@ -1373,7 +1373,7 @@
 						"translations/es_MX-json": "993daf3cffd600ec70ac",
 						"translations/fr_FR-json": "a6d5a98e63060f637a7e",
 						"translations/it_IT-json": "24382102db8afb1c9f30",
-						"translations/pseudo_ext-json": "0823577138744011a437",
+						"translations/pseudo_ext-json": "3ca114c46435835a39ee",
 						"translations/pseudo_long-json": "9defdcb6d1b855bac8a8",
 						"translations/pseudo_short-json": "58a7bc39b95f6456e5ff",
 						"translations/pt_BR-json": "450346ada891395d1cf1",
@@ -1388,7 +1388,7 @@
 						"Chat~RedesignChat": "8e9d82e3df70f0dfbcce",
 						RedesignChat: "8f2ecf1037b8a8b967f2",
 						"vendors~CollectionCommentsPage~CommentsPage": "74fecf4322147c824f67",
-						"CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki": "b67ad4daf188072f915d",
+						"CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki": "f07db661f119fac04879",
 						CollectionCommentsPage: "994fb475fcac81438830",
 						CommentsPage: "21f5bf60cb13b4ff6320",
 						"vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PostCreation~Settings~~f8934a85": "aaad862b367893465412",
@@ -1396,7 +1396,7 @@
 						HarbergerTaxManageModal: "f31d078d0cdddd0ecd4f",
 						SubredditPremiumUploadModal: "5c086d8e828eeac94261",
 						"vendors~PostCreation": "5cdc10400d06417234d8",
-						PostCreation: "0b3ae504ea44a946a600",
+						PostCreation: "bdc44380317c4144865b",
 						"vendors~ModStatsChart~Settings": "4756d25d069e14bb198b",
 						Settings: "51f26a2bcf6ecde3cacd",
 						"vendors~ModerationPages": "39e50d1662977fa3b008",
@@ -1413,7 +1413,7 @@
 						ImportTheme: "099317721ef0b4bccdaf",
 						ModListing: "2de9820fb874d20ba277",
 						"vendors~Subreddit": "aa0cc290849b09621187",
-						Subreddit: "365cc0e834022c5c4c1d",
+						Subreddit: "880048ccbbe3f634756c",
 						"vendors~LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit": "535de0accacdcafdf525",
 						"LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit": "3cfb22bdf98da1377ce7",
 						PublicAccessNetwork: "d5bc620dbcd81d40a7b0",
@@ -1438,8 +1438,8 @@
 						SubredditMentionWithIcon: "3a991187360c6b8ba1e1",
 						UserAchievementFlair: "eefc5c0fecc00a8cb332",
 						VideoShareModal: "fb668da3b73895ff3111",
-						"index~reddit-components-Econ-Prediction": "968d2891f65b9f0d3708",
-						"reddit-components-Econ-Prediction": "8b6a12e85bf267d7c206",
+						"index~reddit-components-Econ-Prediction": "21627ba4490587a9bad0",
+						"reddit-components-Econ-Prediction": "a6d9de76b25d552b079b",
 						"reddit-components-Poll": "6560a88aeecfa28617ab",
 						"reddit-components-ProfileIdCard": "b5d7355f41574c014584",
 						"reddit-components-ViewReportsDropdown-index": "b78643ba7720cff30c9a",
@@ -1451,7 +1451,7 @@
 						"reddit-components-LargePost": "054cd6b9121db95d736b",
 						"vendors~dashjs": "536210f860c89db757de",
 						CommunityTopicSurvey: "2096fb8a01492bc89539",
-						index: "58a54c67a51dc2f78799",
+						index: "912d99ee6bbe2118f4d6",
 						FeaturedLiveEntrypointLegacyAnnouncement: "d1361cea2282ca79aade",
 						IdCard: "edb5c4e1dffa889e09ca",
 						"reddit-components-ClassicPost": "781257096f2707304160",
@@ -1535,7 +1535,7 @@
 						"reddit-components-ModHub-flairs-PostFlairManagement": "4cb1940abed6e911418f",
 						"reddit-components-ModHub-flairs-UserFlairManagement": "09a109792f5749167143",
 						"reddit-components-RecurringPostList-EditModal": "c77a21e78f8436e5dd41",
-						"reddit-components-SubredditContent-PredictionsContent": "f5d2ed0529233f615ef2",
+						"reddit-components-SubredditContent-PredictionsContent": "892d25b3c3187b3c0bf4",
 						"reddit-components-Wiki-ModHubWikiManagement": "6adb16e8a9fcdc264809",
 						SubredditTopContent: "da83f8c87232af8d7bfb",
 						TopWeekPostsDiscoveryUnit: "040d8d59c1449aed17fe",
@@ -1548,7 +1548,7 @@
 						"reddit-components-Governance-ClaimPointsBanner": "d56b897ab912b7ef9a33",
 						"reddit-components-LayerEmbed": "d240dbaee66894bba96f",
 						"Download OBS Modal": "dcae0b2f98fa5c0b9a4d",
-						"reddit-components-Econ-PredictionLeaderboard-Sidebar": "a39337819feb4ea969b8",
+						"reddit-components-Econ-PredictionLeaderboard-Sidebar": "ffd64c6770a23e113d28",
 						"reddit-components-FormBuilder": "79cdebaa2108ec236876",
 						GivePremiumModal: "39dfb1e33f873f5be5b8",
 						AdminCommunityTopics: "b1a60816a35418229f8b",
@@ -1629,4 +1629,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.c857c56d1dfad734f1a0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.43bbe6c509aa2c74df2d.js.map
