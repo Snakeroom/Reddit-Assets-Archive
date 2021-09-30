@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.880048ccbbe3f634756c.js
-// Retrieved at 9/30/2021, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.ccc3522ff6d6b1243a4a.js
+// Retrieved at 9/30/2021, 4:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~ModListing", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -3572,6 +3572,23 @@
 				}))
 			}
 		},
+		"./src/reddit/components/Econ/Prediction/themes.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "a", (function() {
+				return r
+			}));
+			var s = n("./src/config.ts");
+			const r = {
+				theme_1: `url(${s.a.assetPath}/img/econ/predictions/theme1.png)`,
+				theme_2: `url(${s.a.assetPath}/img/econ/predictions/theme2.png)`,
+				theme_3: "linear-gradient(104.49deg, #279A63 7.96%, #B6C048 119.75%)",
+				theme_4: "linear-gradient(91.64deg, #F5AC1F -10.49%, #FC7519 52.61%)",
+				theme_5: `url(${s.a.assetPath}/img/econ/predictions/theme5.png)`,
+				theme_6: `url(${s.a.assetPath}/img/econ/predictions/theme6.png)`,
+				theme_7: `url(${s.a.assetPath}/img/econ/predictions/theme7.png)`,
+				theme_8: `url(${s.a.assetPath}/img/econ/predictions/theme8.png)`
+			}
+		},
 		"./src/reddit/components/Econ/PredictionLeaderboard/List/index.m.less": function(e, t, n) {
 			e.exports = {
 				predictionLeaderboardList: "WnsHpoM6ZTGbLzCSxG1ho",
@@ -4024,9 +4041,9 @@
 				d = n("./src/reddit/selectors/experiments/econ/index.ts"),
 				l = n("./src/reddit/selectors/features/predictions/tournaments/index.ts"),
 				u = n("./src/reddit/selectors/subreddit.ts"),
-				m = n("./src/config.ts"),
-				p = n("./src/lib/classNames/index.ts"),
-				b = n("./src/lib/prettyPrintNumber/index.ts"),
+				m = n("./src/lib/classNames/index.ts"),
+				p = n("./src/lib/prettyPrintNumber/index.ts"),
+				b = n("./src/reddit/components/Econ/Prediction/themes.ts"),
 				h = n("./src/lib/constants/index.ts"),
 				f = n("./src/reddit/components/Econ/PredictionLeaderboard/Predictor/PlaceBadge/index.tsx"),
 				x = n("./src/reddit/components/UserIcon/index.tsx"),
@@ -4039,7 +4056,7 @@
 				className: e,
 				ranks: t
 			}) => r.a.createElement("div", {
-				className: Object(p.a)(v.a.container, e)
+				className: Object(m.a)(v.a.container, e)
 			}, r.a.createElement("div", {
 				className: v.a.label
 			}, E._("Top Predictors", null, {
@@ -4092,18 +4109,18 @@
 				return r.a.createElement("section", {
 					className: j.a.container,
 					style: {
-						backgroundImage: `url(${m.a.assetPath}/img/econ/predictions/theme1.png)`
+						backgroundImage: b.a[s.theme] || b.a.theme_1
 					}
 				}, r.a.createElement("div", {
 					className: j.a.tournamentInfo
 				}, r.a.createElement("p", null, I._("Predictions Tournament", null, {
 					hk: "2AxvmU"
 				})), r.a.createElement("h1", {
-					className: Object(p.a)(j.a.tournamentTitle, {
+					className: Object(m.a)(j.a.tournamentTitle, {
 						[j.a.long]: s.name.length > 60
 					})
 				}, s.name, " ", r.a.createElement("span", {
-					className: Object(p.a)(j.a.statusBadge, {
+					className: Object(m.a)(j.a.statusBadge, {
 						[j.a.live]: a,
 						[j.a.ended]: c
 					})
@@ -4113,19 +4130,19 @@
 					hk: "3oH4rs"
 				})))), r.a.createElement("div", {
 					className: j.a.stats
-				}, (null == i ? void 0 : i.topPredictorsRank) && r.a.createElement(_, {
+				}, (null == i ? void 0 : i.topPredictorsRank) && i.topPredictorsRank.length >= 3 && r.a.createElement(_, {
 					className: j.a.stat,
 					ranks: i.topPredictorsRank.slice(0, 3)
 				}), r.a.createElement("div", {
-					className: Object(p.a)(j.a.stat, j.a.simple)
-				}, r.a.createElement("dt", null, Object(b.b)(s.totalParticipantsCount)), r.a.createElement("dd", null, I._("Players", null, {
+					className: Object(m.a)(j.a.stat, j.a.simple)
+				}, r.a.createElement("dt", null, Object(p.b)(s.totalParticipantsCount)), r.a.createElement("dd", null, I._("Players", null, {
 					hk: "1S5q3e"
 				}))), r.a.createElement("div", {
-					className: Object(p.a)(j.a.stat, j.a.simple)
+					className: Object(m.a)(j.a.stat, j.a.simple)
 				}, r.a.createElement("dt", null, (null === (t = s.predictionPosts) || void 0 === t ? void 0 : t.length) || "--"), r.a.createElement("dd", null, I._("Predictions", null, {
 					hk: "3E8BVX"
 				}))), r.a.createElement("div", {
-					className: Object(p.a)(j.a.stat, j.a.simple)
+					className: Object(m.a)(j.a.stat, j.a.simple)
 				}, r.a.createElement("dt", null, (null === (n = null == i ? void 0 : i.currentRank) || void 0 === n ? void 0 : n.rank) || "--"), r.a.createElement("dd", null, I._("Your rank", null, {
 					hk: "2tS82X"
 				})))))
@@ -16915,7 +16932,7 @@
 			e.exports = JSON.parse('{"id":"d03522f8a8d4"}')
 		},
 		"./src/redditGQL/operations/SubredditGeoRecommendationViaFocusVertical.json": function(e) {
-			e.exports = JSON.parse('{"id":"e7c21be88172"}')
+			e.exports = JSON.parse('{"id":"250e849e47df"}')
 		},
 		"./src/redditGQL/operations/UpdateInboxActivitySeenState.json": function(e) {
 			e.exports = JSON.parse('{"id":"85d656894a08"}')
@@ -16928,4 +16945,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.880048ccbbe3f634756c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.ccc3522ff6d6b1243a4a.js.map

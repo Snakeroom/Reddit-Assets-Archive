@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.21627ba4490587a9bad0.js
-// Retrieved at 9/30/2021, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.d765cb7706b9d96d5f6d.js
+// Retrieved at 9/30/2021, 4:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index~reddit-components-Econ-Prediction"], {
 		"./node_modules/lodash/_LazyWrapper.js": function(a, i, r) {
@@ -1335,23 +1335,24 @@
 		"./src/reddit/components/Econ/Prediction/PredictionCard/v2/index.tsx": function(a, i, r) {
 			"use strict";
 			r.d(i, "a", (function() {
-				return A
+				return B
 			}));
 			var t = r("./src/lib/classNames/index.ts"),
 				x = r("./node_modules/react/index.js"),
 				k = r.n(x),
 				n = r("./node_modules/react-redux/es/index.js"),
-				o = r("./src/config.ts"),
+				o = r("./src/reddit/components/Econ/Prediction/themes.ts"),
 				e = r("./src/reddit/components/Econ/Prediction/PredictionCard/v2/PredictionQuestion/index.m.less"),
 				s = r.n(e);
 			const {
 				fbt: m
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), l = ({
-				children: a
+				theme: a = "theme_4",
+				children: i
 			}) => k.a.createElement("div", {
 				className: s.a.container,
 				style: {
-					backgroundImage: `url(${o.a.assetPath}/img/econ/predictions/theme1.png)`
+					backgroundImage: o.a[a] || o.a.theme_4
 				}
 			}, k.a.createElement("div", {
 				className: s.a.badge
@@ -1359,20 +1360,21 @@
 				hk: "1MyVWT"
 			})), k.a.createElement("div", {
 				className: Object(t.a)(s.a.question, {
-					[s.a.long]: Boolean(a && a.toString().length > 100)
+					[s.a.long]: Boolean(i && i.toString().length > 100)
 				})
-			}, a));
+			}, i));
 			var c = r("./src/reddit/components/Econ/Prediction/PredictionOption/index.tsx"),
 				p = r("./src/reddit/components/Econ/Prediction/PredictionOption/PredictionChangeOption.tsx"),
 				h = r("./src/reddit/components/Econ/Prediction/PredictionOption/SneakPeek.tsx"),
 				d = r("./src/reddit/models/Prediction/index.ts"),
 				f = r("./src/reddit/selectors/experiments/econ/index.ts"),
-				u = r("./src/reddit/selectors/user.ts"),
-				y = r("./src/reddit/components/Econ/Prediction/PredictionCard/v2/index.m.less"),
-				G = r.n(y);
+				u = r("./src/reddit/selectors/features/predictions/tournaments/index.ts"),
+				y = r("./src/reddit/selectors/user.ts"),
+				G = r("./src/reddit/components/Econ/Prediction/PredictionCard/v2/index.m.less"),
+				E = r.n(G);
 
-			function E() {
-				return (E = Object.assign || function(a) {
+			function A() {
+				return (A = Object.assign || function(a) {
 					for (var i = 1; i < arguments.length; i++) {
 						var r = arguments[i];
 						for (var t in r) Object.prototype.hasOwnProperty.call(r, t) && (a[t] = r[t])
@@ -1380,7 +1382,7 @@
 					return a
 				}).apply(this, arguments)
 			}
-			const A = ({
+			const B = ({
 				prediction: a,
 				selectedOptionId: i,
 				onSelectOption: r,
@@ -1390,47 +1392,49 @@
 				const {
 					creatorId: s,
 					endsAt: m,
-					options: y,
-					resolvedOptionId: A,
-					totalVoters: B,
-					tournamentId: D,
-					userSelection: V,
-					predictionStatus: b,
-					voteUpdatesRemained: F
-				} = a, g = Object(n.e)(i => Boolean((null == a ? void 0 : a.userSelection) && !(null == a ? void 0 : a.resolvedOptionId) && Object(f.w)(i))), v = Object(n.e)(u.qb), P = Object(n.e)(u.K), [S, T] = Object(x.useState)(!1), _ = s === v, O = m < Date.now(), j = O && _ && !A, C = b === d.b.Cancelled || b === d.b.CancelInProgress;
+					options: G,
+					resolvedOptionId: B,
+					totalVoters: D,
+					tournamentId: V,
+					userSelection: b,
+					predictionStatus: F,
+					voteUpdatesRemained: g
+				} = a, v = Object(n.e)(i => Boolean((null == a ? void 0 : a.userSelection) && !(null == a ? void 0 : a.resolvedOptionId) && Object(f.w)(i))), P = Object(n.e)(i => (null == a ? void 0 : a.tournamentId) ? Object(u.a)(i, a.tournamentId) : null), S = Object(n.e)(y.qb), T = Object(n.e)(y.K), [_, O] = Object(x.useState)(!1), j = s === S, C = m < Date.now(), I = C && j && !B, w = F === d.b.Cancelled || F === d.b.CancelInProgress;
 				return k.a.useEffect(() => {
-					T(!1)
-				}, [V]), k.a.createElement("div", E({
-					className: Object(t.a)(G.a.poll, o)
-				}, e), k.a.createElement(l, null, a.title), k.a.createElement("div", {
-					className: G.a.predictionOptions
-				}, y.map(a => k.a.createElement(c.a, {
+					O(!1)
+				}, [b]), k.a.createElement("div", A({
+					className: Object(t.a)(E.a.poll, o)
+				}, e), k.a.createElement(l, {
+					theme: null == P ? void 0 : P.theme
+				}, a.title), k.a.createElement("div", {
+					className: E.a.predictionOptions
+				}, G.map(a => k.a.createElement(c.a, {
 					key: a.id,
-					isCancelled: C,
-					isEnded: O,
+					isCancelled: w,
+					isEnded: C,
 					isSelected: i === a.id,
-					needsResolution: j,
+					needsResolution: I,
 					option: a,
 					onClick: () => r(a),
-					resolvedOptionId: A,
-					tournamentId: D,
-					userSelection: V,
-					userIsLoggedOut: !P,
-					votePercentage: (V || O || S) && a.voteCount ? Math.floor(a.voteCount / B * 100) : null,
-					isShowingHint: S
-				})), !C && k.a.createElement(h.a, {
-					disabled: S || !!V,
-					isEnded: O,
-					userSelection: V,
-					isShowingHint: S,
-					tournamentId: D,
+					resolvedOptionId: B,
+					tournamentId: V,
+					userSelection: b,
+					userIsLoggedOut: !T,
+					votePercentage: (b || C || _) && a.voteCount ? Math.floor(a.voteCount / D * 100) : null,
+					isShowingHint: _
+				})), !w && k.a.createElement(h.a, {
+					disabled: _ || !!b,
+					isEnded: C,
+					userSelection: b,
+					isShowingHint: _,
+					tournamentId: V,
 					postId: a.postId,
-					onReveal: () => T(!0)
-				}), !C && g && k.a.createElement(p.a, {
-					isLimitReached: 0 === F,
+					onReveal: () => O(!0)
+				}), !w && v && k.a.createElement(p.a, {
+					isLimitReached: 0 === g,
 					postId: a.postId,
-					options: y,
-					selectedOptionId: V
+					options: G,
+					selectedOptionId: b
 				})))
 			}
 		},
@@ -2834,6 +2838,23 @@
 				}
 			}
 		},
+		"./src/reddit/components/Econ/Prediction/themes.ts": function(a, i, r) {
+			"use strict";
+			r.d(i, "a", (function() {
+				return x
+			}));
+			var t = r("./src/config.ts");
+			const x = {
+				theme_1: `url(${t.a.assetPath}/img/econ/predictions/theme1.png)`,
+				theme_2: `url(${t.a.assetPath}/img/econ/predictions/theme2.png)`,
+				theme_3: "linear-gradient(104.49deg, #279A63 7.96%, #B6C048 119.75%)",
+				theme_4: "linear-gradient(91.64deg, #F5AC1F -10.49%, #FC7519 52.61%)",
+				theme_5: `url(${t.a.assetPath}/img/econ/predictions/theme5.png)`,
+				theme_6: `url(${t.a.assetPath}/img/econ/predictions/theme6.png)`,
+				theme_7: `url(${t.a.assetPath}/img/econ/predictions/theme7.png)`,
+				theme_8: `url(${t.a.assetPath}/img/econ/predictions/theme8.png)`
+			}
+		},
 		"./src/reddit/components/UserIcon/CurrentUserIcon.tsx": function(a, i, r) {
 			"use strict";
 			var t = r("./src/lib/classNames/index.ts"),
@@ -4056,7 +4077,7 @@
 				}
 		},
 		"./src/redditGQL/operations/AddPredictionDrafts.json": function(a) {
-			a.exports = JSON.parse('{"id":"90a9ac95262d"}')
+			a.exports = JSON.parse('{"id":"f87162053448"}')
 		},
 		"./src/redditGQL/operations/CancelPrediction.json": function(a) {
 			a.exports = JSON.parse('{"id":"fac88c91fec8"}')
@@ -4068,10 +4089,10 @@
 			a.exports = JSON.parse('{"id":"90c7b71fa93f"}')
 		},
 		"./src/redditGQL/operations/CreatePredictionTournament.json": function(a) {
-			a.exports = JSON.parse('{"id":"63b8ae32b6ea"}')
+			a.exports = JSON.parse('{"id":"723a33950f71"}')
 		},
 		"./src/redditGQL/operations/EndPredictionTournament.json": function(a) {
-			a.exports = JSON.parse('{"id":"0a5a0b11accd"}')
+			a.exports = JSON.parse('{"id":"619d946d303a"}')
 		},
 		"./src/redditGQL/operations/GetPredictionChipPackages.json": function(a) {
 			a.exports = JSON.parse('{"id":"5ce83e513fa5"}')
@@ -4083,7 +4104,7 @@
 			a.exports = JSON.parse('{"id":"26b911e67a5f"}')
 		},
 		"./src/redditGQL/operations/GetTournaments.json": function(a) {
-			a.exports = JSON.parse('{"id":"c149434123b1"}')
+			a.exports = JSON.parse('{"id":"9101a8318ed1"}')
 		},
 		"./src/redditGQL/operations/ResolvePrediction.json": function(a) {
 			a.exports = JSON.parse('{"id":"d742e3019cfe"}')
@@ -4092,11 +4113,11 @@
 			a.exports = JSON.parse('{"id":"a9582ea601a1"}')
 		},
 		"./src/redditGQL/operations/UpdatePredictionTournament.json": function(a) {
-			a.exports = JSON.parse('{"id":"70baf378030a"}')
+			a.exports = JSON.parse('{"id":"36df0d6f6bca"}')
 		},
 		"./src/redditGQL/operations/VotePrediction.json": function(a) {
 			a.exports = JSON.parse('{"id":"484780ada6a2"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.21627ba4490587a9bad0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.d765cb7706b9d96d5f6d.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.c196e559fc48c83fa189.js
-// Retrieved at 9/29/2021, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.ba15c0d6cc06010e33f8.js
+// Retrieved at 9/30/2021, 4:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -17309,15 +17309,17 @@
 				tournamentId: e,
 				name: t,
 				status: r,
-				totalParticipants: s,
-				predictions: n
+				themeId: s,
+				totalParticipants: n,
+				predictions: a
 			}) {
 				return {
 					tournamentId: e,
 					name: t,
 					status: r,
-					totalParticipantsCount: s,
-					predictions: n.map(rp)
+					theme: s,
+					totalParticipantsCount: n,
+					predictions: a.map(rp)
 				}
 			}
 
@@ -26182,7 +26184,7 @@
 			e.exports = JSON.parse('{"id":"de72339b938a"}')
 		},
 		"./src/redditGQL/operations/SubredditTopContent.json": function(e) {
-			e.exports = JSON.parse('{"id":"6b6dc5c9550d"}')
+			e.exports = JSON.parse('{"id":"910acd606d8a"}')
 		},
 		"./src/redditGQL/operations/UpdateScheduledPost.json": function(e) {
 			e.exports = JSON.parse('{"id":"f5276d63e133"}')
@@ -26204,4 +26206,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.c196e559fc48c83fa189.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.ba15c0d6cc06010e33f8.js.map
