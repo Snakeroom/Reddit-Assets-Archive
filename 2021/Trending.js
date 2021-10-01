@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Trending.561399c2164c73264ce7.js
-// Retrieved at 9/22/2021, 1:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Trending.4a1270d9bb19dd8d4a82.js
+// Retrieved at 10/1/2021, 6:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Trending"], {
 		"./src/reddit/actions/search/trending.ts": function(e, t, s) {
@@ -136,8 +136,8 @@
 				w = s("./src/reddit/components/SearchDiscoveryUnits/TrendingPosts/Post/index.m.less"),
 				v = s.n(w);
 			const T = e => e.type === f.f.Spoiler,
-				k = Object(h.u)();
-			t.a = k(Object(g.b)(Object(b.a)(Object(c.a)(e => {
+				N = Object(h.u)();
+			t.a = N(Object(g.b)(Object(b.a)(Object(c.a)(e => {
 				const {
 					backgroundWrapperClassName: t,
 					descriptionClassName: s,
@@ -149,21 +149,21 @@
 					shouldOpenPost: f,
 					showSubredditMeta: P = !0,
 					showSubredditName: w,
-					subredditOrProfile: k
-				} = e, N = h && h.preview && h.preview.url || void 0, S = h && h.isSponsored ? "promoted_trend" : "trending", E = h && Object(l.a)(h.permalink) || "", I = f && E || g && Object(a.a)("/search", {
+					subredditOrProfile: N
+				} = e, k = h && h.preview && h.preview.url || void 0, S = h && h.isSponsored ? "promoted_trend" : "trending", E = h && Object(l.a)(h.permalink) || "", I = f && E || g && Object(a.a)("/search", {
 					q: g.rawQuery,
 					source: S
-				}) || E, D = g ? g.subredditInfo && g.subredditInfo.icon : k && k.icon.url, U = g ? g.subredditInfo && g.subredditInfo.displayText : k && (k.displayText || k.name), A = h ? h.flair.filter(T) : [], V = h ? h.score : 0, R = h ? h.numComments : 0, F = h && h.isSponsored, L = Object(O.a)(e).body, W = `linear-gradient(\n      ${Object(n.f)(L,.2)},\n      ${Object(n.f)(L,.3)},\n      ${Object(n.f)(L,.4)},\n      ${Object(n.f)(L,.6)},\n      ${Object(n.f)(L,.8)},\n      ${L}\n    )`, M = o.a.createElement("div", {
+				}) || E, D = g ? g.subredditInfo && g.subredditInfo.icon : N && N.icon.url, U = g ? g.subredditInfo && g.subredditInfo.displayText : N && (N.displayText || N.name), A = h ? h.flair.filter(T) : [], V = h ? h.score : 0, R = h ? h.numComments : 0, F = h && h.isSponsored, L = Object(O.a)(e).body, W = `linear-gradient(\n      ${Object(n.f)(L,.2)},\n      ${Object(n.f)(L,.3)},\n      ${Object(n.f)(L,.4)},\n      ${Object(n.f)(L,.6)},\n      ${Object(n.f)(L,.8)},\n      ${L}\n    )`, M = o.a.createElement("div", {
 					id: i,
 					className: Object(d.a)(v.a.trendingPost, {
-						[v.a["m-background"]]: !!N
+						[v.a["m-background"]]: !!k
 					})
 				}, o.a.createElement(x.a, {
 					to: I
 				}, o.a.createElement("div", {
 					className: Object(d.a)(v.a.backgroundWrapper, j.a.backgroundWrapper, t),
 					style: {
-						background: Object(y.g)(Object(O.a)(e).body, N || Object(O.a)(e).banner.backgroundImage, "cover"),
+						background: Object(y.g)(Object(O.a)(e).body, k || Object(O.a)(e).banner.backgroundImage, "cover"),
 						"--SearchDiscoveryUnits-TrendingPosts-Post-background": W
 					}
 				}, F && o.a.createElement("div", {
@@ -292,8 +292,8 @@
 			}), e => ({
 				fetchTrendingItems: () => e(Object(a.b)()),
 				trackPostView: t => e((e, s) => b.y(s(), t, b.a.POPULAR_CAROUSEL))
-			})), k = 178;
-			class N extends n.a.Component {
+			})), N = 178;
+			class k extends n.a.Component {
 				constructor(e) {
 					super(e), this.state = {
 						trendingsVisibility: new Array(e.maxItemsCount).fill(!1)
@@ -340,7 +340,7 @@
 				}
 				scrollChildForItem() {
 					return [{
-						estHeight: k,
+						estHeight: N,
 						trackOnEnteredViewport: this.getTrackOnEnteredViewportFN(),
 						id: "trending-carousel",
 						render: () => this.renderContainer()
@@ -378,7 +378,7 @@
 					return n.a.createElement(d.b, null, this.scrollChildForItem())
 				}
 			}
-			t.default = Object(y.b)(T(N))
+			t.default = Object(y.b)(T(k))
 		},
 		"./src/reddit/connectors/miniCardPost.ts": function(e, t, s) {
 			"use strict";
@@ -402,7 +402,7 @@
 				flairStyleTemplate: c.U,
 				hideNSFWPref: b.C,
 				isActive: u.j,
-				moderatorPermissions: m.k,
+				moderatorPermissions: m.l,
 				modModeEnabled: c.S,
 				showEditFlair: p.a
 			}), (e, {
@@ -491,4 +491,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Trending.561399c2164c73264ce7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Trending.4a1270d9bb19dd8d4a82.js.map

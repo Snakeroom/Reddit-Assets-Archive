@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.2db3a78bf2ece9f62a29.js
-// Retrieved at 9/30/2021, 4:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.d55ea05c3d48acc06f84.js
+// Retrieved at 10/1/2021, 6:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, n) {
@@ -8191,7 +8191,7 @@
 				S = Object(c.c)({
 					flairData: _.d,
 					subreddit: x.Q,
-					isMod: (e, t) => !!Object(C.l)(e, t)
+					isMod: (e, t) => !!Object(C.m)(e, t)
 				});
 			class j extends i.a.Component {
 				constructor(e) {
@@ -8455,7 +8455,7 @@
 						pageLayer: t
 					}),
 					shouldOpenPostInNewTab: L.db,
-					isTournamentPredictionPostV2: R.v
+					isTournamentPredictionPostV2: R.w
 				}),
 				Y = e => {
 					const {
@@ -8463,7 +8463,7 @@
 						subreddit: n
 					} = e, {
 						isSponsored: o
-					} = t, r = Object(U.a)(), i = Object(W.a)(m.Mc) === m.Qc.Enabled;
+					} = t, r = Object(U.a)(), i = Object(W.a)(m.Nc) === m.Rc.Enabled;
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return s.a.createElement(Q, {
 						nowrap: e.nowrap
 					}, s.a.createElement(X, e));
@@ -15009,54 +15009,58 @@
 		},
 		"./src/reddit/helpers/trackers/predictions.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "p", (function() {
+			n.d(t, "q", (function() {
 				return i
-			})), n.d(t, "q", (function() {
-				return a
 			})), n.d(t, "r", (function() {
+				return a
+			})), n.d(t, "s", (function() {
 				return c
-			})), n.d(t, "l", (function() {
-				return d
-			})), n.d(t, "t", (function() {
-				return l
-			})), n.d(t, "n", (function() {
-				return u
-			})), n.d(t, "o", (function() {
-				return m
 			})), n.d(t, "m", (function() {
+				return d
+			})), n.d(t, "v", (function() {
+				return l
+			})), n.d(t, "o", (function() {
+				return u
+			})), n.d(t, "p", (function() {
+				return m
+			})), n.d(t, "n", (function() {
 				return p
 			})), n.d(t, "a", (function() {
 				return b
-			})), n.d(t, "s", (function() {
-				return h
-			})), n.d(t, "e", (function() {
-				return f
-			})), n.d(t, "v", (function() {
-				return g
-			})), n.d(t, "k", (function() {
-				return C
-			})), n.d(t, "x", (function() {
-				return _
-			})), n.d(t, "g", (function() {
-				return x
-			})), n.d(t, "w", (function() {
-				return E
 			})), n.d(t, "u", (function() {
+				return h
+			})), n.d(t, "f", (function() {
+				return f
+			})), n.d(t, "x", (function() {
+				return g
+			})), n.d(t, "l", (function() {
+				return C
+			})), n.d(t, "z", (function() {
+				return _
+			})), n.d(t, "h", (function() {
+				return x
+			})), n.d(t, "y", (function() {
+				return E
+			})), n.d(t, "w", (function() {
 				return v
 			})), n.d(t, "d", (function() {
 				return O
-			})), n.d(t, "i", (function() {
+			})), n.d(t, "j", (function() {
 				return y
 			})), n.d(t, "c", (function() {
 				return k
-			})), n.d(t, "f", (function() {
+			})), n.d(t, "g", (function() {
 				return S
 			})), n.d(t, "b", (function() {
 				return j
-			})), n.d(t, "j", (function() {
+			})), n.d(t, "k", (function() {
 				return P
-			})), n.d(t, "h", (function() {
+			})), n.d(t, "i", (function() {
 				return T
+			})), n.d(t, "t", (function() {
+				return w
+			})), n.d(t, "e", (function() {
+				return I
 			}));
 			var o = n("./src/reddit/models/Prediction/index.ts"),
 				r = n("./src/reddit/selectors/telemetry.ts");
@@ -15266,6 +15270,18 @@
 					source: "menu_links_bar",
 					action: "click",
 					noun: "predictions_tab"
+				}),
+				w = () => e => ({
+					...Object(r.defaults)(e),
+					source: "predictions_tab",
+					action: "view",
+					noun: "predictions_how_it_works"
+				}),
+				I = () => e => ({
+					...Object(r.defaults)(e),
+					source: "predictions_how_it_works",
+					action: "click",
+					noun: "learn_more"
 				})
 		},
 		"./src/reddit/helpers/trackers/privateCommunity.ts": function(e, t, n) {
@@ -18219,7 +18235,7 @@
 						}),
 						primaryButtonLoading: i,
 						onPrimaryAction: async () => {
-							n(Object(dn.j)()), c(!0), t(Object(an.b)({
+							n(Object(dn.k)()), c(!0), t(Object(an.b)({
 								prediction: {
 									formData: d,
 									formState: l
@@ -18318,7 +18334,7 @@
 								}))
 							}
 							h(!1)
-						})() : (i(Object(dn.f)()), u(!0))
+						})() : (i(Object(dn.g)()), u(!0))
 					}
 				}, b ? r.a.createElement(ae.a, {
 					sizePx: 16
@@ -20516,7 +20532,7 @@
 						i(Object(a.k)({
 							oldType: n,
 							type: me.a.GA
-						})), c(dn.p)
+						})), c(dn.q)
 					},
 					title: d.fbt._("Poll", null, {
 						hk: "2uKNlH"
@@ -20529,7 +20545,7 @@
 						i(Object(a.k)({
 							oldType: n,
 							type: me.a.Prediction
-						})), c(dn.q)
+						})), c(dn.r)
 					},
 					title: d.fbt._("Prediction", null, {
 						hk: "3wu0FO"
@@ -20544,8 +20560,8 @@
 					className: _c.a.education
 				}, r.a.createElement(dc.a, {
 					isTokens: e,
-					onClose: () => c(dn.l),
-					onView: () => c(dn.r),
+					onClose: () => c(dn.m),
+					onView: () => c(dn.s),
 					storageKey: cc.a.creation
 				})))
 			}
@@ -22782,9 +22798,9 @@
 			var o = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const s = e => Object(r.c)(e, {
-				experimentName: o.pd,
+				experimentName: o.qd,
 				experimentEligibilitySelector: r.a
-			}) === o.ud.Enabled
+			}) === o.vd.Enabled
 		},
 		"./src/reddit/selectors/experiments/presenceIndicator.ts": function(e, t, n) {
 			"use strict";
@@ -22798,14 +22814,14 @@
 			const s = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: o.Cd
-					}) === o.Nd.Enabled
+						experimentName: o.Dd
+					}) === o.Od.Enabled
 				},
 				i = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: o.Bd
-					}) === o.Md.Enabled
+						experimentName: o.Cd
+					}) === o.Nd.Enabled
 				}
 		},
 		"./src/reddit/selectors/experiments/replyWithUpvote.ts": function(e, t, n) {
@@ -22822,7 +22838,7 @@
 				return !(!t || (null == t ? void 0 : t.karma) && t.karma.fromPosts < 5 && t.karma.fromComments < 10) && Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
 					experimentName: o.wb
-				}) === o.Cc
+				}) === o.Dc
 			}
 		},
 		"./src/reddit/selectors/features/predictions/creation/index.ts": function(e, t, n) {
@@ -23482,4 +23498,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.2db3a78bf2ece9f62a29.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.d55ea05c3d48acc06f84.js.map

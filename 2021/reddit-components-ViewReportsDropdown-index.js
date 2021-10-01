@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.b78643ba7720cff30c9a.js
-// Retrieved at 9/23/2021, 5:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.b3633b163ed4959fd024.js
+// Retrieved at 10/1/2021, 6:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ViewReportsDropdown-index"], {
 		"./src/reddit/actions/comment/index.ts": function(e, t, o) {
@@ -9,7 +9,7 @@
 			})), o.d(t, "m", (function() {
 				return T
 			})), o.d(t, "e", (function() {
-				return D
+				return A
 			})), o.d(t, "h", (function() {
 				return B
 			})), o.d(t, "l", (function() {
@@ -21,7 +21,7 @@
 			})), o.d(t, "g", (function() {
 				return $
 			})), o.d(t, "f", (function() {
-				return M
+				return Z
 			})), o.d(t, "o", (function() {
 				return V
 			})), o.d(t, "p", (function() {
@@ -104,7 +104,7 @@
 							isSaved: r.isSaved
 						}
 					}))
-				}, P = e => `viewing-comment-${e}`, A = s.a.telemetry.commentConsumedThreshold, D = e => async (t, o) => {
+				}, P = e => `viewing-comment-${e}`, D = s.a.telemetry.commentConsumedThreshold, A = e => async (t, o) => {
 					const n = o();
 					if (!Object(y.b)(n, {
 							commentId: e
@@ -116,7 +116,7 @@
 					const d = setTimeout(() => x.a({
 						state: n,
 						commentId: e
-					}), A);
+					}), D);
 					S[e] = d
 				}, B = (e, t) => async (o, s) => {
 					const n = s(),
@@ -125,7 +125,7 @@
 							commentId: e
 						}) && r.c.has(d)) {
 						const o = r.c.end(d);
-						!t && o < A && (clearTimeout(S[e]), delete S[e])
+						!t && o < D && (clearTimeout(S[e]), delete S[e])
 					}
 				}, N = Object(d.a)(I.x), L = Object(d.a)(I.w), U = Object(d.a)(I.v), z = (e, t) => async (o, s, {
 					apiContext: n
@@ -170,7 +170,7 @@
 						moreCommentsItem: d,
 						...f.error
 					}))
-				}, F = Object(f.a)(j.b, R.a.upvoted), K = Object(f.a)(j.b, R.a.downvoted), $ = Object(d.a)(I.j), M = Object(d.a)(I.i), Z = Object(d.a)(I.e), H = Object(d.a)(I.f), V = (Object(d.a)(I.c), Object(d.a)(I.d), ({
+				}, F = Object(f.a)(j.b, R.a.upvoted), K = Object(f.a)(j.b, R.a.downvoted), $ = Object(d.a)(I.j), Z = Object(d.a)(I.i), H = Object(d.a)(I.e), M = Object(d.a)(I.f), V = (Object(d.a)(I.c), Object(d.a)(I.d), ({
 					commentId: e,
 					commentsPageKey: t,
 					scrollToAndRemeasure: o
@@ -186,7 +186,7 @@
 							commentsPageKey: t
 						}),
 						a = c.depth;
-					s(Z({
+					s(H({
 						commentId: e,
 						commentsPageKey: t,
 						isCollapsed: i
@@ -195,7 +195,7 @@
 					commentId: e,
 					commentsPageKey: t
 				}) => async o => {
-					o(H({
+					o(M({
 						commentId: e,
 						commentsPageKey: t
 					}))
@@ -211,7 +211,7 @@
 							commentId: e.id,
 							commentsPageKey: t
 						});
-					n(Z({
+					n(H({
 						commentId: c,
 						commentsPageKey: t,
 						isCollapsed: i
@@ -581,8 +581,8 @@
 				T = o("./src/reddit/components/Reports/index.m.less"),
 				P = o.n(T);
 			const {
-				fbt: A
-			} = o("./node_modules/fbt/lib/FbtPublic.js"), D = r.a.div("ReportText", P.a), B = r.a.div("ReportsTitle", P.a);
+				fbt: D
+			} = o("./node_modules/fbt/lib/FbtPublic.js"), A = r.a.div("ReportText", P.a), B = r.a.div("ReportsTitle", P.a);
 
 			function N(e) {
 				const {
@@ -595,13 +595,13 @@
 					className: t
 				}, o && o.length > 0 && n.a.createElement("div", {
 					className: P.a.Reports
-				}, n.a.createElement(B, null, A._("Moderator Reports", null, {
+				}, n.a.createElement(B, null, D._("Moderator Reports", null, {
 					hk: "3hZ0oX"
-				})), o.map(([e, t]) => n.a.createElement(D, {
+				})), o.map(([e, t]) => n.a.createElement(A, {
 					key: `mod-${t}`
 				}, `u/${t}: ${e}`))), s && s.length > 0 && n.a.createElement("div", {
 					className: P.a.Reports
-				}, n.a.createElement(B, null, A._("User Reports", null, {
+				}, n.a.createElement(B, null, D._("User Reports", null, {
 					hk: "2KeCLz"
 				})), n.a.createElement("div", {
 					className: P.a.UserReports
@@ -611,7 +611,7 @@
 					amount: t,
 					reportedThingId: r,
 					isSnoozed: o
-				}) : n.a.createElement(D, {
+				}) : n.a.createElement(A, {
 					key: `user-${e}`
 				}, `${t}: ${e}`)))))
 			}
@@ -990,14 +990,14 @@
 			const r = e => {
 					return Object(n.c)(e, {
 						experimentEligibilitySelector: n.a,
-						experimentName: s.Cd
-					}) === s.Nd.Enabled
+						experimentName: s.Dd
+					}) === s.Od.Enabled
 				},
 				d = e => {
 					return Object(n.c)(e, {
 						experimentEligibilitySelector: n.a,
-						experimentName: s.Bd
-					}) === s.Md.Enabled
+						experimentName: s.Cd
+					}) === s.Nd.Enabled
 				}
 		},
 		"./src/reddit/selectors/moderatingComments.ts": function(e, t, o) {
@@ -1026,4 +1026,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.b78643ba7720cff30c9a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.b3633b163ed4959fd024.js.map

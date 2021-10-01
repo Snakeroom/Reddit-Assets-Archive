@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.7db763fb8dbe2a63bc9a.js
-// Retrieved at 9/30/2021, 4:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.0fbd8799a6863bee946b.js
+// Retrieved at 10/1/2021, 6:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -5709,7 +5709,7 @@
 					crosspost: I.d,
 					isActive: I.j,
 					isLoggedIn: N.K,
-					moderatorPermissions: _.k,
+					moderatorPermissions: _.l,
 					modModeEnabled: j.S,
 					poll: S.e,
 					showEditFlair: k.a,
@@ -9614,7 +9614,7 @@
 					isExpanded: b.m,
 					isLoggedIn: x.K,
 					showPromotedCTA: C.b,
-					moderatorPermissions: p.k,
+					moderatorPermissions: p.l,
 					modModeEnabled: d.S,
 					poll: (e, t) => {
 						const s = e.posts.metaMap[t.postId];
@@ -9840,7 +9840,7 @@
 				flairStyleTemplate: d.U,
 				hideNSFWPref: h.C,
 				isActive: p.j,
-				moderatorPermissions: m.k,
+				moderatorPermissions: m.l,
 				modModeEnabled: d.S,
 				showEditFlair: u.a
 			}), (e, {
@@ -11155,9 +11155,9 @@
 			}));
 			var r = s("./src/reddit/constants/experiments.ts"),
 				n = s("./src/reddit/helpers/chooseVariant/index.ts");
-			const o = e => r.Zd.Treatment1 === Object(n.c)(e, {
+			const o = e => r.ae.Treatment1 === Object(n.c)(e, {
 				experimentEligibilitySelector: n.a,
-				experimentName: r.Qd
+				experimentName: r.Rd
 			})
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, s) {
@@ -11443,10 +11443,10 @@
 				o = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				a = s("./src/reddit/selectors/posts.ts");
 			const i = e => Object(o.c)(e, {
-					experimentName: n.Ed,
+					experimentName: n.Fd,
 					experimentEligibilitySelector: o.a
 				}),
-				c = (e, t) => t === n.Od.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				c = (e, t) => t === n.Pd.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				d = Object(r.a)(a.H, i, (e, t) => c(e, t)),
 				l = Object(r.a)((e, t) => t, i, (e, t) => c(e, t))
 		},
@@ -11455,4 +11455,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.7db763fb8dbe2a63bc9a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.0fbd8799a6863bee946b.js.map

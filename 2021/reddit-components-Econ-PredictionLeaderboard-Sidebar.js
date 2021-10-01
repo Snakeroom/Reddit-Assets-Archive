@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PredictionLeaderboard-Sidebar.ffd64c6770a23e113d28.js
-// Retrieved at 9/30/2021, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PredictionLeaderboard-Sidebar.06cafd5a20c646b2eef2.js
+// Retrieved at 10/1/2021, 6:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./src/reddit/components/Econ/Prediction/UnicornIcon/index.tsx": function(e, t, c) {
@@ -252,7 +252,7 @@
 						subredditId: c
 					}));
 				Object(a.useEffect)(() => {
-					_(x ? Object(m.w)() : Object(m.s)(v))
+					_(x ? Object(m.y)() : Object(m.u)(v))
 				}, []);
 				const N = t && t.rank > 0;
 				return r.a.createElement("div", {
@@ -407,7 +407,7 @@
 					className: b.a.rank
 				}, c), r.a.createElement(l.a, {
 					className: b.a.userLink,
-					onClick: () => P(Object(m.e)({
+					onClick: () => P(Object(m.f)({
 						targetUserId: p.id
 					})),
 					to: `/user/${L}`,
@@ -525,7 +525,7 @@
 					className: P.a.openModalButton,
 					isFullWidth: !0,
 					onClick: () => {
-						s && b(Object(f.g)()), v(!0)
+						s && b(Object(f.h)()), v(!0)
 					}
 				}, a.fbt._("See All", null, {
 					hk: "1Ozf02"
@@ -561,4 +561,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PredictionLeaderboard-Sidebar.ffd64c6770a23e113d28.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PredictionLeaderboard-Sidebar.06cafd5a20c646b2eef2.js.map

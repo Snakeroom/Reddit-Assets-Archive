@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.2397b1e4d5f0eb9b29fa.js
-// Retrieved at 9/30/2021, 4:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.2aef21e3e8c7fbd4c798.js
+// Retrieved at 10/1/2021, 6:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"], {
 		"./src/lib/linkMatchers/index.ts": function(e, t, r) {
@@ -352,9 +352,9 @@
 			})), r.d(t, "m", (function() {
 				return G
 			})), r.d(t, "i", (function() {
-				return V
-			})), r.d(t, "j", (function() {
 				return z
+			})), r.d(t, "j", (function() {
+				return V
 			})), r.d(t, "p", (function() {
 				return q
 			})), r.d(t, "q", (function() {
@@ -566,7 +566,7 @@
 						} = s.body.data;
 					if (!i.tournament) throw new Error("Failed to update prediction name");
 					return t(W(i.tournament)), i.tournament
-				}, V = e => async (t, r, {
+				}, z = e => async (t, r, {
 					gqlContext: n
 				}) => {
 					const s = await Object(u.h)(n(), {
@@ -578,7 +578,7 @@
 					} = s.body.data;
 					if (!i.predictionChipPackages) throw new Error("Failed to fetch prediction chip packages");
 					return i.predictionChipPackages
-				}, z = e => async (t, r, {
+				}, V = e => async (t, r, {
 					gqlContext: n
 				}) => {
 					const s = await Object(u.i)(n(), {
@@ -1793,7 +1793,7 @@
 						subredditId: e
 					}));
 				return Object(n.useEffect)(() => {
-					o && a(Object(D.x)())
+					o && a(Object(D.z)())
 				}, [o, a]), Object(n.useEffect)(() => {
 					(async () => {
 						u && !d && (t(Object(R.l)(l.name)), c(!0))
@@ -1805,7 +1805,7 @@
 						t(Object(T.p)({
 							subredditId: e,
 							forceState: !1
-						})), a(Object(D.h)())
+						})), a(Object(D.i)())
 					},
 					to: `${l.url}predictions/`
 				}, U._("Predictions", null, {
@@ -1816,12 +1816,12 @@
 					hk: "1o89m4"
 				}))) : null
 			}
-			var V = r("./src/lib/constants/index.ts");
+			var z = r("./src/lib/constants/index.ts");
 			const {
-				fbt: z
+				fbt: V
 			} = r("./node_modules/fbt/lib/FbtPublic.js");
 			const q = Object(d.u)(),
-				J = [V.Kb.SUBREDDIT, V.Kb.COMMENTS, V.Kb.COLLECTION_COMMENTS],
+				J = [z.Kb.SUBREDDIT, z.Kb.COMMENTS, z.Kb.COLLECTION_COMMENTS],
 				Q = Object(a.c)({
 					isMetaFilterEnabled: (e, t) => !!e.subreddits.appliedFilters.meta[t.subredditId],
 					isPostsRoute: (e, t) => !!t.pageLayer && !!t.pageLayer.meta && J.indexOf(t.pageLayer.meta.name) > -1,
@@ -1848,7 +1848,7 @@
 						onClick: e => {
 							r && (e.preventDefault(), o())
 						}
-					}, z._("Posts", null, {
+					}, V._("Posts", null, {
 						hk: "36nXSp"
 					}))
 				}))),
@@ -1897,7 +1897,7 @@
 					homeUrl: t,
 					isTopBannerVariant: r,
 					pageLayer: n
-				} = e, i = !!n && !!n.meta && n.meta.name === V.Kb.SUBREDDIT_WIKI, a = `wiki/${ie.i}`, o = t.endsWith("/") ? t + a : `${t}/${a}`;
+				} = e, i = !!n && !!n.meta && n.meta.name === z.Kb.SUBREDDIT_WIKI, a = `wiki/${ie.i}`, o = t.endsWith("/") ? t + a : `${t}/${a}`;
 				return s.a.createElement(O, {
 					isActive: i,
 					isTopBannerVariant: r,
@@ -2456,7 +2456,7 @@
 					}))) : s.a.createElement(W, null, e.text)
 				}
 			}
-			var V = e => s.a.createElement(d.a, {
+			var z = e => s.a.createElement(d.a, {
 					styles: e.widget.styles,
 					title: e.widget.shortName,
 					truncateThreshold: e.truncateThreshold,
@@ -2478,9 +2478,9 @@
 				}) : t.location), t.description && e.widget.configuration.showDescription && s.a.createElement(G, {
 					text: t.description
 				})))),
-				z = r("./src/reddit/components/TrackingHelper/index.tsx"),
+				V = r("./src/reddit/components/TrackingHelper/index.tsx"),
 				q = r("./src/reddit/components/Widgets/CommunityList/SubredditList.tsx");
-			var J = Object(z.c)(e => s.a.createElement(q.b, {
+			var J = Object(V.c)(e => s.a.createElement(q.b, {
 				className: e.className,
 				communities: e.widget.data,
 				sendEvent: e.sendEvent,
@@ -2702,7 +2702,7 @@
 						case "community-list":
 							return J;
 						case "calendar":
-							return V;
+							return z;
 						case "image":
 							return ae;
 						case "custom":
@@ -2927,54 +2927,58 @@
 		},
 		"./src/reddit/helpers/trackers/predictions.ts": function(e, t, r) {
 			"use strict";
-			r.d(t, "p", (function() {
+			r.d(t, "q", (function() {
 				return a
-			})), r.d(t, "q", (function() {
-				return o
 			})), r.d(t, "r", (function() {
+				return o
+			})), r.d(t, "s", (function() {
 				return d
-			})), r.d(t, "l", (function() {
-				return c
-			})), r.d(t, "t", (function() {
-				return l
-			})), r.d(t, "n", (function() {
-				return u
-			})), r.d(t, "o", (function() {
-				return m
 			})), r.d(t, "m", (function() {
+				return c
+			})), r.d(t, "v", (function() {
+				return l
+			})), r.d(t, "o", (function() {
+				return u
+			})), r.d(t, "p", (function() {
+				return m
+			})), r.d(t, "n", (function() {
 				return p
 			})), r.d(t, "a", (function() {
 				return b
-			})), r.d(t, "s", (function() {
-				return h
-			})), r.d(t, "e", (function() {
-				return f
-			})), r.d(t, "v", (function() {
-				return g
-			})), r.d(t, "k", (function() {
-				return x
-			})), r.d(t, "x", (function() {
-				return v
-			})), r.d(t, "g", (function() {
-				return w
-			})), r.d(t, "w", (function() {
-				return j
 			})), r.d(t, "u", (function() {
+				return h
+			})), r.d(t, "f", (function() {
+				return f
+			})), r.d(t, "x", (function() {
+				return g
+			})), r.d(t, "l", (function() {
+				return x
+			})), r.d(t, "z", (function() {
+				return v
+			})), r.d(t, "h", (function() {
+				return w
+			})), r.d(t, "y", (function() {
+				return j
+			})), r.d(t, "w", (function() {
 				return O
 			})), r.d(t, "d", (function() {
 				return y
-			})), r.d(t, "i", (function() {
+			})), r.d(t, "j", (function() {
 				return _
 			})), r.d(t, "c", (function() {
 				return k
-			})), r.d(t, "f", (function() {
+			})), r.d(t, "g", (function() {
 				return E
 			})), r.d(t, "b", (function() {
 				return I
-			})), r.d(t, "j", (function() {
+			})), r.d(t, "k", (function() {
 				return C
-			})), r.d(t, "h", (function() {
+			})), r.d(t, "i", (function() {
 				return S
+			})), r.d(t, "t", (function() {
+				return N
+			})), r.d(t, "e", (function() {
+				return P
 			}));
 			var n = r("./src/reddit/models/Prediction/index.ts"),
 				s = r("./src/reddit/selectors/telemetry.ts");
@@ -3184,6 +3188,18 @@
 					source: "menu_links_bar",
 					action: "click",
 					noun: "predictions_tab"
+				}),
+				N = () => e => ({
+					...Object(s.defaults)(e),
+					source: "predictions_tab",
+					action: "view",
+					noun: "predictions_how_it_works"
+				}),
+				P = () => e => ({
+					...Object(s.defaults)(e),
+					source: "predictions_how_it_works",
+					action: "click",
+					noun: "learn_more"
 				})
 		},
 		"./src/reddit/helpers/trackers/subredditWiki.ts": function(e, t, r) {
@@ -3580,4 +3596,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.2397b1e4d5f0eb9b29fa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.2aef21e3e8c7fbd4c798.js.map

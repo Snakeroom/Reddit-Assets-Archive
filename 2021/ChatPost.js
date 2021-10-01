@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.d5f3a6ad8b535e27d2d9.js
-// Retrieved at 9/27/2021, 3:40:12 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.01c2cf411f26c87dea68.js
+// Retrieved at 10/1/2021, 6:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -1592,7 +1592,7 @@
 											commentId: s
 										}),
 										i = (n.user.account && n.user.account.id) === (a && a.authorId),
-										c = !!e && !!Object(q.k)(n, {
+										c = !!e && !!Object(q.l)(n, {
 											postId: e
 										});
 									!a || a.isRemoved && a.isDeleted || i || c ? Z[s] = R.REMOVE_COMMENT : o(Q({
@@ -1824,7 +1824,7 @@
 					currentUser: ct.k,
 					isMod: (e, {
 						comment: t
-					}) => !!Object(q.k)(e, {
+					}) => !!Object(q.l)(e, {
 						postId: t.postId
 					}),
 					isAuthorBlocked: (e, {
@@ -3631,4 +3631,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.d5f3a6ad8b535e27d2d9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.01c2cf411f26c87dea68.js.map

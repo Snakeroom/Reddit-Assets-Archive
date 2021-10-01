@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.51f26a2bcf6ecde3cacd.js
-// Retrieved at 9/27/2021, 7:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.fbfc3d5e9e8c8c3be8ee.js
+// Retrieved at 10/1/2021, 6:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, n) {
@@ -2701,7 +2701,7 @@
 					}
 				}
 				t(Object(S.l)({
-					title: Object(c.j)()
+					title: Object(c.k)()
 				}))
 			}
 		},
@@ -4036,7 +4036,7 @@
 					hideNSFWPref: f.C,
 					moderatorPermissions: (e, {
 						subredditId: t
-					}) => t ? Object(u.l)(e, {
+					}) => t ? Object(u.m)(e, {
 						subredditId: t
 					}) : void 0,
 					origin: d.j,
@@ -14095,7 +14095,7 @@
 			}));
 			var s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const o = Object(r.a)(s.Dd)
+			const o = Object(r.a)(s.Ed)
 		},
 		"./src/reddit/selectors/gold/productOffers.ts": function(e, t, n) {
 			"use strict";
@@ -14249,4 +14249,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.51f26a2bcf6ecde3cacd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.fbfc3d5e9e8c8c3be8ee.js.map

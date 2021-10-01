@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.b5d7355f41574c014584.js
-// Retrieved at 9/23/2021, 5:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.bfb84d727965bbaab8a1.js
+// Retrieved at 10/1/2021, 6:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ProfileIdCard"], {
 		"./node_modules/lodash/compact.js": function(e, t) {
@@ -2416,7 +2416,7 @@
 						e(Object(d.h)(t)), n(Object(b.a)(t))
 					},
 					onClickUnblockUser: () => {
-						e(Object(d.g)(t)), n(Object(b.g)(t))
+						e(Object(d.g)(t)), n(Object(b.h)(t))
 					}
 				}))(X),
 				Q = r("./src/reddit/components/ProfileIdCard/index.m.less"),
@@ -2482,7 +2482,7 @@
 			})) : n ? s.a.createElement(f.k, {
 				className: J.a.button,
 				onClick: () => {
-					a(e), o(Object(b.g)(e))
+					a(e), o(Object(b.h)(e))
 				}
 			}, ee._("Unblock", null, {
 				hk: "2d6Cyx"
@@ -2869,20 +2869,22 @@
 		},
 		"./src/reddit/helpers/trackers/user.ts": function(e, t, r) {
 			"use strict";
-			r.d(t, "e", (function() {
+			r.d(t, "f", (function() {
 				return i
-			})), r.d(t, "f", (function() {
+			})), r.d(t, "g", (function() {
 				return c
 			})), r.d(t, "d", (function() {
 				return d
-			})), r.d(t, "c", (function() {
+			})), r.d(t, "e", (function() {
 				return l
-			})), r.d(t, "b", (function() {
+			})), r.d(t, "c", (function() {
 				return u
-			})), r.d(t, "a", (function() {
+			})), r.d(t, "b", (function() {
 				return m
-			})), r.d(t, "g", (function() {
+			})), r.d(t, "a", (function() {
 				return p
+			})), r.d(t, "h", (function() {
+				return f
 			}));
 			var n = r("./src/reddit/helpers/correlationIdTracker.ts"),
 				s = r("./src/reddit/selectors/telemetry.ts"),
@@ -2911,25 +2913,31 @@
 				d = () => e => ({
 					source: "user_dropdown",
 					action: "click",
+					noun: "predictions",
+					...o(e)
+				}),
+				l = () => e => ({
+					source: "user_dropdown",
+					action: "click",
 					noun: "premium",
 					correlationId: Object(n.c)(n.a.GoldPayment),
 					...o(e)
 				}),
-				l = () => e => ({
+				u = () => e => ({
 					source: "user_dropdown",
 					action: "click",
 					noun: "powerups",
 					correlationId: Object(n.d)(n.a.PowerupsFlow, !1),
 					...o(e)
 				}),
-				u = () => e => ({
+				m = () => e => ({
 					source: "user_dropdown",
 					action: "click",
 					noun: "coins",
 					correlationId: Object(n.c)(n.a.GoldPayment),
 					...o(e)
 				}),
-				m = e => t => ({
+				p = e => t => ({
 					source: "profile",
 					action: "click",
 					noun: "block_user",
@@ -2940,7 +2948,7 @@
 					},
 					...s.defaults(t)
 				}),
-				p = e => t => ({
+				f = e => t => ({
 					source: "profile",
 					action: "click",
 					noun: "unblock_user",
@@ -3183,7 +3191,7 @@
 			}));
 			var n = r("./src/reddit/constants/experiments.ts"),
 				s = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const a = Object(s.a)(n.Dd)
+			const a = Object(s.a)(n.Ed)
 		},
 		"./src/reddit/selectors/premium.ts": function(e, t, r) {
 			"use strict";
@@ -3209,4 +3217,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.b5d7355f41574c014584.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.bfb84d727965bbaab8a1.js.map

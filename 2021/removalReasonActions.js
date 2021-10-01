@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/removalReasonActions.acbabeb7bdebbd9bd48b.js
-// Retrieved at 9/23/2021, 5:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/removalReasonActions.be32605dce85ac97119a.js
+// Retrieved at 10/1/2021, 6:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["removalReasonActions"], {
 		"./src/reddit/actions/bulkActions/index.ts": function(e, t, n) {
@@ -1830,7 +1830,7 @@
 								experimentName: r.E,
 								expEventOverride: t
 							});
-							return !!(Object(r.Le)(n) ? void 0 : n)
+							return !!(Object(r.Me)(n) ? void 0 : n)
 						})(n)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -2845,14 +2845,14 @@
 			const r = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: s.Cd
-					}) === s.Nd.Enabled
+						experimentName: s.Dd
+					}) === s.Od.Enabled
 				},
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: s.Bd
-					}) === s.Md.Enabled
+						experimentName: s.Cd
+					}) === s.Nd.Enabled
 				}
 		},
 		"./src/reddit/selectors/moderatingComments.ts": function(e, t, n) {
@@ -2887,4 +2887,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.acbabeb7bdebbd9bd48b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.be32605dce85ac97119a.js.map

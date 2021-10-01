@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index.912d99ee6bbe2118f4d6.js
-// Retrieved at 9/30/2021, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index.dd0b03d785ea2e0a047b.js
+// Retrieved at 10/1/2021, 6:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index"], {
 		"./src/reddit/components/Econ/Prediction/TournamentPostBody/ViewTournamentLink/index.m.less": function(e, t, n) {
@@ -87,9 +87,9 @@
 				T = n("./src/reddit/components/Econ/Prediction/VoteAnimation/index.tsx"),
 				k = n("./src/reddit/selectors/subreddit.ts"),
 				N = n("./src/reddit/components/Econ/Prediction/TournamentPostBody/v1/TournamentOverlay/index.m.less"),
-				A = n.n(N);
+				w = n.n(N);
 			const {
-				fbt: w
+				fbt: A
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), B = ({
 				postId: e,
 				subredditId: t,
@@ -100,14 +100,14 @@
 						subredditId: t
 					}));
 				return i.a.createElement(d.a, {
-					className: A.a.container,
+					className: w.a.container,
 					to: `${null==s?void 0:s.url}predictions/`,
 					onClick: () => o(m(e))
 				}, i.a.createElement("div", {
-					className: A.a.playTournament
-				}, n ? w._("View Tournament", null, {
+					className: w.a.playTournament
+				}, n ? A._("View Tournament", null, {
 					hk: "4rKPbx"
-				}) : w._("Keep Playing", null, {
+				}) : A._("Keep Playing", null, {
 					hk: "Xa82J"
 				})))
 			};
@@ -160,7 +160,7 @@
 							hk: "22UWEr"
 						})), void g(null);
 						if (!m || !h) throw new Error("Invalid arguments, optionId and pollId must be strings");
-						x(!0), d(Object(F.o)({
+						x(!0), d(Object(F.p)({
 							pollId: m,
 							selectedNumberTokens: t.amount
 						}));
@@ -218,12 +218,12 @@
 					{
 						endsAt: k,
 						title: N,
-						status: A,
-						resolvedOptionId: w,
+						status: w,
+						resolvedOptionId: A,
 						options: L
 					} = e,
 					M = k < Date.now(),
-					D = A === I.b.Cancelled || A === I.b.CancelInProgress,
+					D = w === I.b.Cancelled || w === I.b.CancelInProgress,
 					V = null != h ? h : L;
 				return i.a.createElement(i.a.Fragment, null, i.a.createElement("div", {
 					className: Object(a.a)(J.a.poll, {
@@ -244,7 +244,7 @@
 					needsResolution: !1,
 					option: e,
 					onClick: () => O(e),
-					resolvedOptionId: w,
+					resolvedOptionId: A,
 					tournamentId: t,
 					userSelection: g,
 					userIsLoggedOut: !d,
@@ -581,7 +581,7 @@
 					}))
 				},
 				ye = e => {
-					return Object(r.e)(s.v) ? i.a.createElement(Ie, e) : i.a.createElement(Z, e)
+					return Object(r.e)(s.w) ? i.a.createElement(Ie, e) : i.a.createElement(Z, e)
 				};
 			t.default = ye
 		},
@@ -692,4 +692,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.912d99ee6bbe2118f4d6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.dd0b03d785ea2e0a047b.js.map

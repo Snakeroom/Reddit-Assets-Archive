@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.9c190b5eb097189cf59c.js
-// Retrieved at 9/30/2021, 4:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.244b2e9b7c82185913a4.js
+// Retrieved at 10/1/2021, 6:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./node_modules/uuid/index.js": function(e, t, n) {
@@ -1296,7 +1296,7 @@
 				E = Object(c.c)({
 					flairData: j.d,
 					subreddit: v.Q,
-					isMod: (e, t) => !!Object(O.l)(e, t)
+					isMod: (e, t) => !!Object(O.m)(e, t)
 				});
 			class I extends i.a.Component {
 				constructor(e) {
@@ -2955,14 +2955,14 @@
 			const r = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: o.Cd
-					}) === o.Nd.Enabled
+						experimentName: o.Dd
+					}) === o.Od.Enabled
 				},
 				i = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: o.Bd
-					}) === o.Md.Enabled
+						experimentName: o.Cd
+					}) === o.Nd.Enabled
 				}
 		},
 		"./src/reddit/selectors/features/predictions/creation/index.ts": function(e, t, n) {
@@ -3085,4 +3085,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.9c190b5eb097189cf59c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.244b2e9b7c82185913a4.js.map

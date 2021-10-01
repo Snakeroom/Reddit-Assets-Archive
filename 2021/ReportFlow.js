@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlow.641b46b02576b6117dfe.js
-// Retrieved at 9/23/2021, 5:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlow.578c97c121debcb5806e.js
+// Retrieved at 10/1/2021, 6:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlow", "FrontpageSidebar", "ReportFlowNew"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, o) {
@@ -781,6 +781,8 @@
 				powerup_color_outline: "powerup_color_outline",
 				powerup_fill: "powerup_fill",
 				powerup_fill_color: "powerup_fill_color",
+				prediction: "prediction",
+				prediction_fill: "prediction_fill",
 				premium: "premium",
 				premium_fill: "premium_fill",
 				privacy: "privacy",
@@ -5919,9 +5921,9 @@
 					experimentName: r.Qb,
 					experimentEligibilitySelector: e => l(e, t)
 				}), e => e),
-				d = e => e === r.te.NoCommunityWidgets,
-				u = e => e === r.te.NoRulesModerators,
-				p = e => e === r.te.RelatedPostsDu
+				d = e => e === r.ue.NoCommunityWidgets,
+				u = e => e === r.ue.NoRulesModerators,
+				p = e => e === r.ue.RelatedPostsDu
 		},
 		"./src/reddit/selectors/tooltip.ts": function(e, t, o) {
 			"use strict";
@@ -5950,4 +5952,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.641b46b02576b6117dfe.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.578c97c121debcb5806e.js.map

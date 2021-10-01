@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.0ff8bc5282b1ba395b52.js
-// Retrieved at 9/27/2021, 3:40:12 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.86b3545fbf04b843a1d2.js
+// Retrieved at 10/1/2021, 6:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -830,7 +830,7 @@
 						const {
 							comment: s
 						} = t;
-						return Object(b.h)(e, t) || Object(v.l)(e, {
+						return Object(b.h)(e, t) || Object(v.m)(e, {
 							subredditId: s.subredditId
 						})
 					},
@@ -2740,7 +2740,7 @@
 				O = Object(d.c)({
 					flairData: g.d,
 					subreddit: C.Q,
-					isMod: (e, t) => !!Object(v.l)(e, t)
+					isMod: (e, t) => !!Object(v.m)(e, t)
 				});
 			class k extends i.a.Component {
 				constructor(e) {
@@ -4765,12 +4765,12 @@
 						rtJsonElementProps: o
 					});
 					switch (n) {
-						case b.me.SmIcon:
+						case b.ne.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: o
 							});
-						case b.me.SmIconHc:
+						case b.ne.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -6003,7 +6003,7 @@
 						location: t
 					}) => r()([...Object(c.a)(t.search)])
 				}),
-				U = Object(d.a)(V, h.Q, x.m, (e, {
+				U = Object(d.a)(V, h.Q, x.n, (e, {
 					match: t
 				}) => t.params.pageName, ({
 					queryParams: e
@@ -6375,12 +6375,12 @@
 				d = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: n.ge
+						experimentName: n.he
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === n.me.SmIcon || t === n.me.SmIconHc
+					return t === n.ne.SmIcon || t === n.ne.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -6403,4 +6403,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.0ff8bc5282b1ba395b52.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.86b3545fbf04b843a1d2.js.map
