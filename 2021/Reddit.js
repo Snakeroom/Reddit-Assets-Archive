@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.53ca63c4af34bb4b6623.js
-// Retrieved at 10/1/2021, 6:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.f92a686573c5fd4d3423.js
+// Retrieved at 10/4/2021, 9:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit", "FrontpageSidebar"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -2106,6 +2106,181 @@
 					draftKey: e
 				})), Y = Object(a.a)(k.a), Z = Object(a.a)(k.E), $ = Object(a.a)(k.b), ee = Object(a.a)(k.u)
 		},
+		"./src/reddit/actions/economics/econManagement/constants.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "c", (function() {
+				return s
+			})), n.d(t, "b", (function() {
+				return o
+			})), n.d(t, "e", (function() {
+				return r
+			})), n.d(t, "f", (function() {
+				return a
+			})), n.d(t, "d", (function() {
+				return i
+			})), n.d(t, "a", (function() {
+				return c
+			}));
+			const s = "ECON_MANAGEMENT_FETCH_ENTITY_TYPES_SUCCESS",
+				o = "ECON_MANAGEMENT_FETCH_ENTITY_TYPES_FAILED",
+				r = "ECON_MANAGEMENT_SEARCH_ENTITY_DATA_STARTED",
+				a = "ECON_MANAGEMENT_SEARCH_ENTITY_DATA_SUCCESS",
+				i = "ECON_MANAGEMENT_SEARCH_ENTITY_DATA_FAILED",
+				c = "ECON_MANAGEMENT_FETCH_ASSOCIATED_DATA_SUCCESS"
+		},
+		"./src/reddit/actions/economics/econManagement/index.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "c", (function() {
+				return v
+			})), n.d(t, "d", (function() {
+				return y
+			})), n.d(t, "b", (function() {
+				return O
+			})), n.d(t, "a", (function() {
+				return x
+			}));
+			var s = n("./src/lib/makeActionCreator/index.ts"),
+				o = n("./src/reddit/actions/economics/econManagement/constants.ts"),
+				r = n("./src/reddit/actions/toaster.ts"),
+				a = n("./src/lib/makeGqlRequest/index.ts"),
+				i = n("./src/redditGQL/operations/EconAdminPanelQuery.json"),
+				c = n("./src/redditGQL/operations/PerformEconAdminAction.json");
+			var l = n("./src/reddit/models/Toast/index.ts"),
+				d = n("./src/reddit/selectors/econManagement.ts"),
+				u = n("./src/reddit/selectors/user.ts");
+			const m = Object(s.a)(o.c),
+				p = Object(s.a)(o.b),
+				b = Object(s.a)(o.e),
+				h = Object(s.a)(o.f),
+				f = Object(s.a)(o.d),
+				g = Object(s.a)(o.a),
+				v = () => async (e, t, {
+					gqlContext: n
+				}) => {
+					const s = t(),
+						o = Object(u.k)(s);
+					if (o && o.isEmployee) try {
+						const t = await (async e => {
+							const t = await Object(a.a)(e, {
+								...i,
+								variables: {
+									query: "",
+									queryName: "getEntityTypes"
+								}
+							});
+							if (!t.ok) throw new Error("Unable to update the preferred achievement flair");
+							const n = t.body.data.econAdminPanel.response;
+							return JSON.parse(n)
+						})(n());
+						e(m(t))
+					} catch (c) {
+						e(p()), e(Object(r.f)({
+							duration: r.a,
+							kind: l.b.Error,
+							text: c.message
+						}))
+					}
+				}, y = e => async (t, n, {
+					gqlContext: s
+				}) => {
+					const o = n(),
+						c = Object(u.k)(o);
+					if (c && c.isEmployee) {
+						t(b());
+						try {
+							const n = await (async (e, t) => {
+								const n = await Object(a.a)(e, {
+									...i,
+									variables: {
+										query: JSON.stringify({
+											entityRef: t
+										}),
+										queryName: "getEntity"
+									}
+								});
+								if (!n.ok) throw new Error(`Unable to fetch ${t}`);
+								const s = n.body.data.econAdminPanel.response;
+								return JSON.parse(s)
+							})(s(), e);
+							t(h(n))
+						} catch (d) {
+							t(f()), t(Object(r.f)({
+								duration: r.a,
+								kind: l.b.Error,
+								text: d.message
+							}))
+						}
+					}
+				}, O = e => async (t, n, {
+					gqlContext: s
+				}) => {
+					const o = n(),
+						c = Object(u.k)(o);
+					if (!c || !c.isEmployee) return;
+					const m = Object(d.b)(o);
+					if (m) try {
+						const n = await (async (e, t, n) => {
+							const s = await Object(a.a)(e, {
+								...i,
+								variables: {
+									query: JSON.stringify({
+										contextEntityRef: t,
+										entityType: n
+									}),
+									queryName: "getEntitiesBelongingTo"
+								}
+							});
+							if (!s.ok) throw new Error(`Unable to fetch ${n} data for ${t}`);
+							const o = s.body.data.econAdminPanel.response;
+							return JSON.parse(o)
+						})(s(), m.prefixedId, e);
+						t(g({
+							entity: n,
+							type: e
+						}))
+					} catch (p) {
+						t(Object(r.f)({
+							duration: r.a,
+							kind: l.b.Error,
+							text: p.message
+						}))
+					}
+				}, x = (e, t, n) => async (s, o, {
+					gqlContext: i
+				}) => {
+					const m = o(),
+						p = Object(u.k)(m);
+					if (p && p.isEmployee && Object(d.b)(m)) try {
+						await (async (e, t, n, s) => {
+							const o = s ? {
+								params: s
+							} : {};
+							if (!(await Object(a.a)(e, {
+									...c,
+									variables: {
+										input: {
+											name: n,
+											args: JSON.stringify({
+												entityRef: t,
+												...o
+											})
+										}
+									}
+								})).ok) throw new Error(`Unable to perform ${n} on ${t} with ${JSON.stringify(o)}`)
+						})(i(), e, t, n), s(Object(r.f)({
+							duration: r.a,
+							kind: l.b.SuccessCommunityGreen,
+							text: `${t} executed successfully for ${e}`
+						}))
+					} catch (b) {
+						s(Object(r.f)({
+							duration: r.a,
+							kind: l.b.Error,
+							text: b.message
+						}))
+					}
+				}
+		},
 		"./src/reddit/actions/economics/me/thunkedActions.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "b", (function() {
@@ -2813,6 +2988,23 @@
 				e(Object(o.l)({
 					title: Object(s.a)()
 				})), await e(Object(r.s)()), Object(a.K)(t()) || e(Object(i.i)())
+			}
+		},
+		"./src/reddit/actions/pages/econManagement.ts": function(e, t, n) {
+			"use strict";
+			var s = n("./node_modules/react-router-redux/es/index.js"),
+				o = n("./src/reddit/actions/economics/econManagement/index.ts"),
+				r = n("./src/reddit/actions/platform.ts"),
+				a = n("./src/reddit/actions/users.ts"),
+				i = n("./src/reddit/selectors/user.ts");
+			t.a = () => async (e, t) => {
+				await e(Object(a.s)());
+				const n = t(),
+					c = Object(i.K)(n),
+					l = Object(i.H)(n);
+				c && l || await e(Object(s.c)("/")), e(Object(r.l)({
+					title: "Econ control panel"
+				})), await e(Object(o.c)())
 			}
 		},
 		"./src/reddit/actions/pages/meta/communityPointsLearnMorePage.ts": function(e, t, n) {
@@ -18066,6 +18258,28 @@
 					e.CustomFeedDoesNotExist = "CustomFeedDoesNotExist", e.GoldSubreddit = "GoldSubreddit", e.Nsfw = "Nsfw", e.NsfwCustomFeed = "NsfwCustomFeed", e.PrivateSubreddit = "PrivateSubreddit", e.ProfileDoesNotExist = "ProfileDoesNotExist", e.ProfileDeleted = "ProfileDeleted", e.ProfileSuspended = "ProfileSuspended", e.ProfileBlockedForLegalReason = "ProfileBlockedForLegalReason", e.QuarantinedSubreddit = "QuarantinedSubreddit", e.SubredditBanned = "SubredditBanned", e.SubredditBlockedForLegalReason = "SubredditBlockedForLegalReason", e.SubredditDoesNotExist = "SubredditDoesNotExist", e.PostBlockedForLegalReason = "PostBlockedForLegalReason"
 				}(s || (s = {}))
 		},
+		"./src/reddit/models/EconManagement/index.ts": function(e, t, n) {
+			"use strict";
+
+			function s(e) {
+				return e.hasOwnProperty("source")
+			}
+
+			function o(e) {
+				return "object" != typeof e[0]
+			}
+			var r;
+			n.d(t, "c", (function() {
+					return s
+				})), n.d(t, "b", (function() {
+					return o
+				})), n.d(t, "a", (function() {
+					return r
+				})),
+				function(e) {
+					e.Default = "default", e.Loading = "loading", e.Error = "error"
+				}(r || (r = {}))
+		},
 		"./src/reddit/models/EmailSettings/index.ts": function(e, t, n) {
 			"use strict";
 			var s;
@@ -18477,6 +18691,46 @@
 				m = [u(o.Kb.COMMENTS, c), u(o.Kb.DUPLICATES, l), u(o.Kb.COMMENTS, d)];
 			t.a = m
 		},
+		"./src/reddit/routes/econManagement/index.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "a", (function() {
+				return a
+			}));
+			var s = n("./node_modules/@loadable/component/dist/loadable.esm.js"),
+				o = n("./src/lib/constants/index.ts"),
+				r = n("./src/reddit/actions/pages/econManagement.ts");
+			const a = "/econ-management",
+				i = {
+					action: r.a,
+					chunk: o.r.ECON_MANAGEMENT,
+					component: Object(s.a)({
+						resolved: {},
+						chunkName: () => "EconManagement",
+						isReady(e) {
+							const t = this.resolve(e);
+							return !1 !== this.resolved[t] && !!n.m[t]
+						},
+						importAsync: () => n.e("EconManagement").then(n.bind(null, "./src/reddit/pages/EconManagement/index.tsx")),
+						requireAsync(e) {
+							const t = this.resolve(e);
+							return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
+						},
+						requireSync(e) {
+							const t = this.resolve(e);
+							return n(t)
+						},
+						resolve() {
+							return "./src/reddit/pages/EconManagement/index.tsx"
+						}
+					}),
+					exact: !0,
+					meta: {
+						name: o.Kb.ECON_MANAGEMENT
+					},
+					path: a
+				};
+			t.b = i
+		},
 		"./src/reddit/routes/followers/index.ts": function(e, t, n) {
 			"use strict";
 			var s = n("./node_modules/@loadable/component/dist/loadable.esm.js"),
@@ -18798,8 +19052,9 @@
 				u = n("./src/reddit/routes/coinsMobile/index.ts"),
 				m = n("./src/reddit/routes/commentsPage/index.ts"),
 				p = (n("./node_modules/@loadable/component/dist/loadable.esm.js"), n("./src/lib/loadableAction/index.ts"));
-			var b = [];
-			var h = {
+			var b = [],
+				h = n("./src/reddit/routes/econManagement/index.ts");
+			var f = {
 					action: Object(p.a)(() => n.e(2).then(n.bind(null, "./src/reddit/actions/pages/emailVerification.ts")).then(e => e.emailVerificationRequested)),
 					chunk: c.r.EMPTY,
 					exact: !0,
@@ -18808,15 +19063,15 @@
 					},
 					path: "/verification/:verificationToken"
 				},
-				f = n("./src/lib/addQueryParams/index.ts");
-			var g = {
+				g = n("./src/lib/addQueryParams/index.ts");
+			var v = {
 					action: e => async (t, n, {
 						apiContext: s
 					}) => {
 						const {
 							queryParams: o
 						} = e;
-						await t(Object(i.c)(Object(f.a)("/", o)))
+						await t(Object(i.c)(Object(g.a)("/", o)))
 					},
 					chunk: c.r.EMPTY,
 					exact: !0,
@@ -18826,20 +19081,20 @@
 					path: ["/explore", "/explore/:categoryName"],
 					prefetches: [c.r.COMMENTS_PAGE, c.r.FRONTPAGE]
 				},
-				v = n("./src/reddit/routes/followers/index.ts"),
-				y = n("./src/reddit/routes/framedGild/index.ts"),
-				O = n("./src/reddit/routes/framedModal/index.ts"),
-				x = n("./src/reddit/routes/frontpage/index.ts"),
-				C = n("./src/reddit/routes/geotagging/index.ts"),
-				E = n("./src/reddit/routes/inbox/index.ts"),
-				P = n("./src/reddit/routes/meta/index.ts"),
-				j = n("./src/reddit/routes/moderationPages/index.ts"),
-				_ = n("./src/reddit/routes/modListing/index.ts"),
-				S = n("./src/reddit/routes/modQueue/index.ts"),
-				k = n("./src/reddit/routes/multireddit/index.ts"),
-				w = n("./src/reddit/routes/notificationsInbox/index.ts"),
-				M = n("./src/reddit/routes/postCreation/constants.ts");
-			const N = ["/original", "/original/:categoryName/:sort([a-z]+)?"].map(e => ({
+				y = n("./src/reddit/routes/followers/index.ts"),
+				O = n("./src/reddit/routes/framedGild/index.ts"),
+				x = n("./src/reddit/routes/framedModal/index.ts"),
+				C = n("./src/reddit/routes/frontpage/index.ts"),
+				E = n("./src/reddit/routes/geotagging/index.ts"),
+				P = n("./src/reddit/routes/inbox/index.ts"),
+				j = n("./src/reddit/routes/meta/index.ts"),
+				_ = n("./src/reddit/routes/moderationPages/index.ts"),
+				S = n("./src/reddit/routes/modListing/index.ts"),
+				k = n("./src/reddit/routes/modQueue/index.ts"),
+				w = n("./src/reddit/routes/multireddit/index.ts"),
+				M = n("./src/reddit/routes/notificationsInbox/index.ts"),
+				N = n("./src/reddit/routes/postCreation/constants.ts");
+			const I = ["/original", "/original/:categoryName/:sort([a-z]+)?"].map(e => ({
 				path: e,
 				action: () => async e => {
 					await e(Object(i.c)("/"))
@@ -18850,22 +19105,22 @@
 					name: c.Kb.ORIGINAL_CONTENT_REDIRECT
 				}
 			}));
-			var I = [{
+			var T = [{
 					path: "/original/submit",
 					action: () => async e => {
-						await e(Object(i.c)(M.b))
+						await e(Object(i.c)(N.b))
 					},
 					chunk: c.r.EMPTY,
 					exact: !0,
 					meta: {
 						name: c.Kb.ORIGINAL_CONTENT_REDIRECT
 					}
-				}, ...N],
-				T = n("./src/reddit/routes/postCreation/index.ts"),
-				A = n("./src/reddit/routes/postDraft/index.ts"),
-				R = n("./src/reddit/routes/powerups/index.ts");
-			var L = {
-					action: () => async e => await e(Object(i.c)(R.a)),
+				}, ...I],
+				A = n("./src/reddit/routes/postCreation/index.ts"),
+				R = n("./src/reddit/routes/postDraft/index.ts"),
+				L = n("./src/reddit/routes/powerups/index.ts");
+			var F = {
+					action: () => async e => await e(Object(i.c)(L.a)),
 					chunk: c.r.EMPTY,
 					exact: !0,
 					meta: {
@@ -18873,9 +19128,9 @@
 					},
 					path: "/powerup"
 				},
-				F = n("./src/reddit/routes/predictions/index.ts");
-			var D = {
-					action: () => async e => await e(Object(i.c)(F.a)),
+				D = n("./src/reddit/routes/predictions/index.ts");
+			var U = {
+					action: () => async e => await e(Object(i.c)(D.a)),
 					chunk: c.r.EMPTY,
 					exact: !0,
 					meta: {
@@ -18883,11 +19138,11 @@
 					},
 					path: "/prediction"
 				},
-				U = n("./src/reddit/routes/premium/index.ts"),
-				B = n("./src/reddit/routes/profileComments/index.ts"),
-				G = n("./src/reddit/endpoints/me/index.ts"),
-				H = n("./src/reddit/helpers/pageActionLoginRedirect.ts");
-			var q = {
+				B = n("./src/reddit/routes/premium/index.ts"),
+				G = n("./src/reddit/routes/profileComments/index.ts"),
+				H = n("./src/reddit/endpoints/me/index.ts"),
+				q = n("./src/reddit/helpers/pageActionLoginRedirect.ts");
+			var W = {
 					action: e => async (t, n, {
 						apiContext: s
 					}) => {
@@ -18895,14 +19150,14 @@
 							rest: o
 						} = e.params, {
 							queryParams: r
-						} = e, a = await Object(G.a)(s());
+						} = e, a = await Object(H.a)(s());
 						if (!(a.ok && a.body && a.body.account)) {
 							const e = n();
-							return void Object(H.a)(t, e)
+							return void Object(q.a)(t, e)
 						}
 						const c = a.body.account.displayText,
 							l = o ? `/user/${c}/${(e=>e.endsWith("/")?e:`${e}/`)(o)}` : `/user/${c}/`,
-							d = Object(f.a)(l, r);
+							d = Object(g.a)(l, r);
 						await t(Object(i.c)(d))
 					},
 					chunk: c.r.EMPTY,
@@ -18912,18 +19167,18 @@
 					},
 					path: ["/user/me", "/user/me/:rest(.*)"]
 				},
-				W = n("./src/reddit/routes/profileModSettings/index.ts"),
-				V = n("./src/reddit/routes/profileOverview/index.ts"),
-				K = n("./src/reddit/routes/profilePosts/index.ts"),
-				Q = n("./src/reddit/routes/profilePrivate/index.ts");
-			var z = {
+				V = n("./src/reddit/routes/profileModSettings/index.ts"),
+				K = n("./src/reddit/routes/profileOverview/index.ts"),
+				Q = n("./src/reddit/routes/profilePosts/index.ts"),
+				z = n("./src/reddit/routes/profilePrivate/index.ts");
+			var J = {
 					action: e => async t => {
 						const {
 							profileName: n,
 							rest: s
 						} = e.params, {
 							queryParams: o
-						} = e, r = s ? `/user/${n}/${(e=>e.endsWith("/")?e:`${e}/`)(s)}` : `/user/${n}/`, a = Object(f.a)(r, o);
+						} = e, r = s ? `/user/${n}/${(e=>e.endsWith("/")?e:`${e}/`)(s)}` : `/user/${n}/`, a = Object(g.a)(r, o);
 						await t(Object(i.c)(a))
 					},
 					chunk: c.r.EMPTY,
@@ -18933,15 +19188,15 @@
 					},
 					path: ["/r/u_:profileName", "/r/u_:profileName/:rest(.*)", "/u/:profileName", "/u/:profileName/:rest(.*)"]
 				},
-				J = n("./src/reddit/routes/profileSnoobuilder/index.ts");
-			var X = {
+				X = n("./src/reddit/routes/profileSnoobuilder/index.ts");
+			var Y = {
 					action: e => async t => {
 						const {
 							profileName: n,
 							rest: s
 						} = e.params, {
 							queryParams: o
-						} = e, r = s ? `/user/${n}/posts/${s}` : `/user/${n}/posts`, a = Object(f.a)(r, o);
+						} = e, r = s ? `/user/${n}/posts/${s}` : `/user/${n}/posts`, a = Object(g.a)(r, o);
 						t(Object(i.c)(a))
 					},
 					chunk: c.r.EMPTY,
@@ -18951,11 +19206,11 @@
 					},
 					path: ["/user/:profileName/submitted", "/user/:profileName/submitted/:rest(.*)"]
 				},
-				Y = n("./src/reddit/routes/publicAccessNetwork/index.ts"),
-				Z = n("./src/reddit/routes/report/index.ts"),
-				$ = n("./src/reddit/routes/searchResults/index.ts"),
-				ee = n("./src/reddit/routes/settings/index.ts");
-			var te = [{
+				Z = n("./src/reddit/routes/publicAccessNetwork/index.ts"),
+				$ = n("./src/reddit/routes/report/index.ts"),
+				ee = n("./src/reddit/routes/searchResults/index.ts"),
+				te = n("./src/reddit/routes/settings/index.ts");
+			var ne = [{
 					action: e => async t => {
 						const {
 							page: n
@@ -18977,13 +19232,13 @@
 					},
 					path: ["/user/:username/about/edit", "/user/:username/about/edit/privacy"]
 				}],
-				ne = n("./src/reddit/routes/subreddit/index.ts"),
-				se = n("./src/reddit/routes/subredditLeaderboard/index.ts"),
-				oe = n("./src/reddit/routes/subredditWiki/index.ts"),
-				re = n("./src/reddit/routes/talk/index.ts"),
-				ae = n("./src/reddit/routes/topic/index.ts");
-			const ie = [o.a, r.a, a.b, l, d.a, u.a, q, z, X, ...s.a, ...m.a, h, ...x.a, C.a, U.a, R.b, F.b, re.b, L, D, v.a, y.a, O.a, T.a, A.a, ...I, g, ...P.a, k.a, S.a, _.c, w.a, E.a, B.a, W.a, V.a, K.a, J.a, Q.a, Y.a, ...ee.a, ...te, $.a, ...oe.a, ae.a, ne.b, se.a, j.a, Z.a, ...b];
-			t.a = ie
+				se = n("./src/reddit/routes/subreddit/index.ts"),
+				oe = n("./src/reddit/routes/subredditLeaderboard/index.ts"),
+				re = n("./src/reddit/routes/subredditWiki/index.ts"),
+				ae = n("./src/reddit/routes/talk/index.ts"),
+				ie = n("./src/reddit/routes/topic/index.ts");
+			const ce = [o.a, r.a, a.b, l, d.a, u.a, W, J, Y, ...s.a, ...m.a, f, ...C.a, E.a, B.a, L.b, D.b, ae.b, h.b, F, U, y.a, O.a, x.a, A.a, R.a, ...T, v, ...j.a, w.a, k.a, S.c, M.a, P.a, G.a, V.a, K.a, Q.a, X.a, z.a, Z.a, ...te.a, ...ne, ee.a, ...re.a, ie.a, se.b, oe.a, _.a, $.a, ...b];
+			t.a = ce
 		},
 		"./src/reddit/routes/meta/index.ts": function(e, t, n) {
 			"use strict";
@@ -20134,6 +20389,104 @@
 				p = e => e.features.banned.search.result,
 				b = e => e.features.banned.inContext
 		},
+		"./src/reddit/selectors/econManagement.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "b", (function() {
+				return c
+			})), n.d(t, "a", (function() {
+				return l
+			})), n.d(t, "e", (function() {
+				return d
+			})), n.d(t, "d", (function() {
+				return u
+			})), n.d(t, "c", (function() {
+				return m
+			}));
+			var s = n("./src/lib/initializeClient/installReducer.ts"),
+				o = n("./src/reddit/models/EconManagement/index.ts"),
+				r = n("./src/reddit/actions/economics/econManagement/constants.ts");
+			const a = {
+				displayState: o.a.Default,
+				currentEntity: null,
+				relatedData: {},
+				entityTypes: {}
+			};
+			var i = (e = a, t) => {
+				switch (t.type) {
+					case r.c:
+						return {
+							...e, entityTypes: t.payload.reduce((e, t) => ({
+								...e,
+								[t.typename]: t
+							}), {})
+						};
+					case r.e:
+						return {
+							...a, entityTypes: e.entityTypes, displayState: o.a.Loading
+						};
+					case r.d:
+						return {
+							...a, entityTypes: e.entityTypes, displayState: o.a.Error
+						};
+					case r.f: {
+						const n = t.payload,
+							s = n.typename;
+						return {
+							...e,
+							displayState: o.a.Default,
+							currentEntity: {
+								id: n.entityId || "",
+								type: s,
+								prefixedId: `${n.typename}:${n.entityId}`,
+								details: n
+							},
+							relatedData: {}
+						}
+					}
+					case r.a: {
+						const n = t.payload,
+							s = n.type;
+						return {
+							...e,
+							relatedData: {
+								...e.relatedData,
+								[s]: n.entity
+							}
+						}
+					}
+					default:
+						return e
+				}
+			};
+			Object(s.a)({
+				pages: {
+					econManagement: i
+				}
+			});
+			const c = e => {
+					var t, n;
+					return (null === (n = null === (t = e.pages) || void 0 === t ? void 0 : t.econManagement) || void 0 === n ? void 0 : n.currentEntity) || null
+				},
+				l = e => {
+					var t, n;
+					return (null === (n = null === (t = e.pages) || void 0 === t ? void 0 : t.econManagement) || void 0 === n ? void 0 : n.displayState) || o.a.Default
+				},
+				d = e => {
+					var t, n;
+					const s = c(e);
+					if (!s) return [];
+					const o = null === (n = null === (t = e.pages) || void 0 === t ? void 0 : t.econManagement) || void 0 === n ? void 0 : n.entityTypes[s.type];
+					return o && o.externalRefs || []
+				},
+				u = (e, t) => {
+					var n, s;
+					return null === (s = null === (n = e.pages) || void 0 === n ? void 0 : n.econManagement) || void 0 === s ? void 0 : s.relatedData[t]
+				},
+				m = (e, t) => {
+					var n, s, o;
+					return (null === (o = null === (s = null === (n = e.pages) || void 0 === n ? void 0 : n.econManagement) || void 0 === s ? void 0 : s.entityTypes[t]) || void 0 === o ? void 0 : o.actions) || []
+				}
+		},
 		"./src/reddit/selectors/experiments/categories.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
@@ -20518,6 +20871,9 @@
 		"./src/redditGQL/operations/DeleteInboxNotifications.json": function(e) {
 			e.exports = JSON.parse('{"id":"ce2deb9deef7"}')
 		},
+		"./src/redditGQL/operations/EconAdminPanelQuery.json": function(e) {
+			e.exports = JSON.parse('{"id":"d47c78bc4284"}')
+		},
 		"./src/redditGQL/operations/FetchSpecialEvents.json": function(e) {
 			e.exports = JSON.parse('{"id":"6c73f2f0b64f"}')
 		},
@@ -20529,6 +20885,9 @@
 		},
 		"./src/redditGQL/operations/NotificationSettingsLayoutByChannel.json": function(e) {
 			e.exports = JSON.parse('{"id":"d03522f8a8d4"}')
+		},
+		"./src/redditGQL/operations/PerformEconAdminAction.json": function(e) {
+			e.exports = JSON.parse('{"id":"de8b0fb0be5d"}')
 		},
 		"./src/redditGQL/operations/UpdateCommentFollowState.json": function(e) {
 			e.exports = JSON.parse('{"id":"0a2ed51664c5"}')
@@ -20547,4 +20906,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePo~5f1ac562", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250", "Governance~ModListing~Reddit~Subreddit", "Chat~Governance~Reddit", "Reddit~StandalonePostPage~reddit-components-MediumPost", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.53ca63c4af34bb4b6623.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.f92a686573c5fd4d3423.js.map

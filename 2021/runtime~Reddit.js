@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.666a6c89e1ee98cf1f21.js
-// Retrieved at 10/1/2021, 6:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.69d64d82794d0b8c9629.js
+// Retrieved at 10/4/2021, 9:50:05 AM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var n, a, i = o[0], s = o[1], c = o[2], l = 0, P = []; l < i.length; l++) a = i[l], Object.prototype.hasOwnProperty.call(d, a) && d[a] && P.push(d[a][0]), d[a] = 0;
@@ -93,6 +93,7 @@
 			ContributorRequestRequestModal: 1,
 			CrowdControlModal: 1,
 			CryptoHarbergerTaxPurchaseModal: 1,
+			EconManagement: 1,
 			EconPowerupsFlairModal: 1,
 			EconPowerupsMarketingModal: 1,
 			EmailCollectionBanner: 1,
@@ -342,6 +343,7 @@
 					CrowdControlModal: "CrowdControlModal",
 					CryptoHarbergerTaxPurchaseModal: "CryptoHarbergerTaxPurchaseModal",
 					EconHelperActions: "EconHelperActions",
+					EconManagement: "EconManagement",
 					EconPowerupsFlairModal: "EconPowerupsFlairModal",
 					EconPowerupsMarketingModal: "EconPowerupsMarketingModal",
 					EmailCollectionBanner: "EmailCollectionBanner",
@@ -503,6 +505,7 @@
 					RpanListingUnit: "RpanListingUnit",
 					StructuredStyles: "StructuredStyles",
 					CryptoLibEthers: "CryptoLibEthers",
+					JsonEMEntityView: "JsonEMEntityView",
 					"reddit-components-CrisisFlow-CrisisFlowPage": "reddit-components-CrisisFlow-CrisisFlowPage",
 					"reddit-pages-PaypalFinishPage": "reddit-pages-PaypalFinishPage",
 					"reddit-components-Governance-TransactionModals-TransferTransactionModal": "reddit-components-Governance-TransactionModals-TransferTransactionModal",
@@ -658,6 +661,7 @@
 					CrowdControlModal: "7c7c8c55aa568b9f7b40",
 					CryptoHarbergerTaxPurchaseModal: "b640c5e0e27a20e1795d",
 					EconHelperActions: "31d6cfe0d16ae931b73c",
+					EconManagement: "b1c7cef7f2f5b13a0667",
 					EconPowerupsFlairModal: "6d8c902e086435216dbb",
 					EconPowerupsMarketingModal: "01a87d66444b1c5ecf10",
 					EmailCollectionBanner: "75d3c7ec0a566b5e6671",
@@ -728,7 +732,7 @@
 					"translations/pt_BR-json": "31d6cfe0d16ae931b73c",
 					"translations/pt_PT-json": "31d6cfe0d16ae931b73c",
 					"vendors~AdminPanel": "31d6cfe0d16ae931b73c",
-					AdminPanel: "2efa4ffa247f28c1dc59",
+					AdminPanel: "47bd79c1260a7906b663",
 					"vendors~ChatMessageInput~CommentRichUnit~FlairEdit~MembershipPaywallPage~PostCreation~PostRichUnit~R~9deab1a0": "31d6cfe0d16ae931b73c",
 					"ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor": "c7c0f8feb5d5af95d48f",
 					MembershipPaywallPage: "acba1ad4b1118b946df7",
@@ -819,6 +823,7 @@
 					RpanListingUnit: "9a6960c43f3c7e63b2d9",
 					StructuredStyles: "a8a195446d9f81aaa8c2",
 					CryptoLibEthers: "31d6cfe0d16ae931b73c",
+					JsonEMEntityView: "31d6cfe0d16ae931b73c",
 					"reddit-components-CrisisFlow-CrisisFlowPage": "ed056d5b0bab2a006468",
 					"reddit-pages-PaypalFinishPage": "cec2106d4a8eebeeecc7",
 					"reddit-components-Governance-TransactionModals-TransferTransactionModal": "deacc32581de2b9aca60",
@@ -998,6 +1003,7 @@
 						CrowdControlModal: "CrowdControlModal",
 						CryptoHarbergerTaxPurchaseModal: "CryptoHarbergerTaxPurchaseModal",
 						EconHelperActions: "EconHelperActions",
+						EconManagement: "EconManagement",
 						EconPowerupsFlairModal: "EconPowerupsFlairModal",
 						EconPowerupsMarketingModal: "EconPowerupsMarketingModal",
 						EmailCollectionBanner: "EmailCollectionBanner",
@@ -1159,6 +1165,7 @@
 						RpanListingUnit: "RpanListingUnit",
 						StructuredStyles: "StructuredStyles",
 						CryptoLibEthers: "CryptoLibEthers",
+						JsonEMEntityView: "JsonEMEntityView",
 						"reddit-components-CrisisFlow-CrisisFlowPage": "reddit-components-CrisisFlow-CrisisFlowPage",
 						"reddit-pages-PaypalFinishPage": "reddit-pages-PaypalFinishPage",
 						"reddit-components-Governance-TransactionModals-TransferTransactionModal": "reddit-components-Governance-TransactionModals-TransferTransactionModal",
@@ -1314,6 +1321,7 @@
 						CrowdControlModal: "895a301240990b4929e0",
 						CryptoHarbergerTaxPurchaseModal: "f99bec8f030fab7e034b",
 						EconHelperActions: "bbd10c42dbb5baa73d1c",
+						EconManagement: "f359b963acb03a353d34",
 						EconPowerupsFlairModal: "bcb04b5f680feb60f15b",
 						EconPowerupsMarketingModal: "497eff1aadfd681bc938",
 						EmailCollectionBanner: "62a2d8d6cb9d28f90bc6",
@@ -1378,13 +1386,13 @@
 						"translations/es_MX-json": "88830c054b9c14b0cf2f",
 						"translations/fr_FR-json": "6275d6f1405c0220b2a7",
 						"translations/it_IT-json": "4f4e785e50dcd4584b95",
-						"translations/pseudo_ext-json": "a71124db981eb6c89359",
+						"translations/pseudo_ext-json": "5aca69e1362fb9e1582f",
 						"translations/pseudo_long-json": "acd68a392d4e1ac65d95",
 						"translations/pseudo_short-json": "e2458a9e02eb64de4792",
 						"translations/pt_BR-json": "020995ac388fbaefd173",
 						"translations/pt_PT-json": "f659b681c1a3b8506fd7",
 						"vendors~AdminPanel": "a5bc90ca020df1ed6380",
-						AdminPanel: "4131bef4d08307b15b99",
+						AdminPanel: "96197b239d7996ccbd9f",
 						"vendors~ChatMessageInput~CommentRichUnit~FlairEdit~MembershipPaywallPage~PostCreation~PostRichUnit~R~9deab1a0": "d4d1e0ef95d4318ae4e8",
 						"ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor": "a2013697112dc748ec3b",
 						MembershipPaywallPage: "a8254dc12827504f5eee",
@@ -1475,6 +1483,7 @@
 						RpanListingUnit: "f72538b192d386a8efec",
 						StructuredStyles: "6ef45131cb854a0269d8",
 						CryptoLibEthers: "8476c1835bff169c3602",
+						JsonEMEntityView: "6813b3d8e6516f684f33",
 						"reddit-components-CrisisFlow-CrisisFlowPage": "142c85469201d7e1552e",
 						"reddit-pages-PaypalFinishPage": "0141e36b11d4a2459fbf",
 						"reddit-components-Governance-TransactionModals-TransferTransactionModal": "e5128134a526eb86cc13",
@@ -1634,4 +1643,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.666a6c89e1ee98cf1f21.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.69d64d82794d0b8c9629.js.map
