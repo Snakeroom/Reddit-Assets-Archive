@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.d127a7b2572ac96c901d.js
-// Retrieved at 10/4/2021, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.d57d03d2d81eaf33c679.js
+// Retrieved at 10/4/2021, 12:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -2305,14 +2305,14 @@
 				const r = t();
 				e(i.l({
 					title: c.b()
-				})), Object(_.K)(r) || await e(E.s())
+				})), Object(_.K)(r) || await e(E.t())
 			}, D = () => async e => e(i.l({
 				title: c.b()
 			})), v = e => async (t, s) => {
 				const n = s();
 				t(i.l({
 					title: c.i()
-				})), Object(_.K)(n) || await t(E.s());
+				})), Object(_.K)(n) || await t(E.t());
 				const a = Object(_.K)(n);
 				if (e.queryParams.thanks && a) {
 					const e = await r.e("GoldPurchasePaymentActions").then(r.bind(null, "./src/reddit/actions/goldPurchaseModals/payment.ts")).then(e => e.paymentCompleted),
@@ -23839,6 +23839,7 @@
 				}
 			};
 			var hS = Object(jb.a)((e = null, t) => {
+				var r, n;
 				switch (t.type) {
 					case mS.a:
 					case mS.b:
@@ -23891,7 +23892,7 @@
 					case _I.c:
 					case dd.TOPIC_DATA_LOADED:
 						return OS(e, t.payload.account);
-					case _I.n:
+					case _I.o:
 						return e ? {
 							...e,
 							email: t.payload
@@ -24022,16 +24023,24 @@
 							}
 						} : e
 					}
+					case _I.l: {
+						if (!(null === (n = null === (r = null == t ? void 0 : t.payload) || void 0 === r ? void 0 : r.avatar) || void 0 === n ? void 0 : n.headshot_image_url) || !e) return e;
+						const s = t.payload;
+						return {
+							...e,
+							accountIcon: s.avatar.headshot_image_url
+						}
+					}
 					default:
 						return e
 				}
 			}, null);
 			var IS = (e = null, t) => {
 				switch (t.type) {
-					case _I.m:
 					case _I.n:
+					case _I.o:
 						return null;
-					case _I.l:
+					case _I.m:
 						return t.payload;
 					default:
 						return e
@@ -24039,10 +24048,10 @@
 			};
 			var SS = (e = !1, t) => {
 					switch (t.type) {
-						case _I.m:
-							return !0;
 						case _I.n:
-						case _I.l:
+							return !0;
+						case _I.o:
+						case _I.m:
 							return !1;
 						default:
 							return e
@@ -26206,4 +26215,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.d127a7b2572ac96c901d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.d57d03d2d81eaf33c679.js.map

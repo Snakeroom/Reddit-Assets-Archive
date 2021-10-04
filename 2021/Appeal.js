@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Appeal.59265eb8b220165436bc.js
-// Retrieved at 9/15/2021, 5:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Appeal.1294e1b5b144444010cf.js
+// Retrieved at 10/4/2021, 12:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Appeal"], {
 		"./src/lib/validateEmail/index.ts": function(e, a, t) {
@@ -269,7 +269,7 @@
 					currentUser: v.k
 				}),
 				w = Object(i.b)(S, e => ({
-					logoutUser: () => e(Object(p.p)()),
+					logoutUser: () => e(Object(p.q)()),
 					onSubmitAppeal: (a, t) => e(E(a, t))
 				}));
 			class D extends r.a.Component {
@@ -537,4 +537,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Appeal.59265eb8b220165436bc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Appeal.1294e1b5b144444010cf.js.map

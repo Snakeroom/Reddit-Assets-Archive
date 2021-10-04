@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.09701bce85c774e9bea0.js
-// Retrieved at 10/4/2021, 11:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.4ed8bc62a9408f24baa3.js
+// Retrieved at 10/4/2021, 12:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit", "FrontpageSidebar"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -2448,7 +2448,7 @@
 				t(Object(s.c)({
 					correlationId: Object(r.d)(r.a.GildingFlow),
 					thingId: c
-				})), Object(a.K)(i) || await t(o.s());
+				})), Object(a.K)(i) || await t(o.t());
 				const l = n();
 				if (!Object(a.K)(l)) return t(Object(s.f)())
 			}
@@ -2462,7 +2462,7 @@
 				o = n("./src/reddit/selectors/user.ts");
 			const r = e => async (e, t) => {
 				const n = t();
-				Object(o.K)(n) || await e(s.s());
+				Object(o.K)(n) || await e(s.t());
 				const r = t();
 				if (!Object(o.K)(r)) throw new Error("Failed to login")
 			}
@@ -2987,7 +2987,7 @@
 			t.a = () => async (e, t) => {
 				e(Object(o.l)({
 					title: Object(s.a)()
-				})), await e(Object(r.s)()), Object(a.K)(t()) || e(Object(i.i)())
+				})), await e(Object(r.t)()), Object(a.K)(t()) || e(Object(i.i)())
 			}
 		},
 		"./src/reddit/actions/pages/econManagement.ts": function(e, t, n) {
@@ -2998,7 +2998,7 @@
 				a = n("./src/reddit/actions/users.ts"),
 				i = n("./src/reddit/selectors/user.ts");
 			t.a = () => async (e, t) => {
-				await e(Object(a.s)());
+				await e(Object(a.t)());
 				const n = t(),
 					c = Object(i.K)(n),
 					l = Object(i.H)(n);
@@ -3013,7 +3013,7 @@
 				o = n("./src/reddit/actions/users.ts"),
 				r = n("./src/reddit/selectors/user.ts");
 			t.a = () => async (e, t) => {
-				Object(r.K)(t()) || await e(Object(o.s)()), await e(Object(s.b)()).then(() => {
+				Object(r.K)(t()) || await e(Object(o.t)()), await e(Object(s.b)()).then(() => {
 					if (t().economics.me.data) return e(Object(s.a)())
 				})
 			}
@@ -3034,7 +3034,7 @@
 					if (l) {
 						const n = [],
 							d = t();
-						Object(c.K)(d) || n.push(e(Object(a.s)()));
+						Object(c.K)(d) || n.push(e(Object(a.t)()));
 						const u = Object(s.a)(l, null);
 						n.push(e(Object(r.subredditDataRequested)(u, l, {}))), await Promise.all(n);
 						const m = Object(i.B)(t(), l);
@@ -3058,7 +3058,7 @@
 			t.a = () => async (e, t) => {
 				if (e(Object(r.l)({
 						title: Object(s.g)()
-					})), await e(Object(i.s)()), !Object(l.K)(t())) return;
+					})), await e(Object(i.t)()), !Object(l.K)(t())) return;
 				await e(Object(a.q)());
 				const n = Object(c.a)(t());
 				n && n.length && await e(Object(o.d)(n))
@@ -3074,7 +3074,7 @@
 			t.a = () => async (e, t) => {
 				e(Object(o.l)({
 					title: Object(s.h)()
-				})), await e(Object(a.s)()), Object(i.K)(t()) && await e(Object(r.q)())
+				})), await e(Object(a.t)()), Object(i.K)(t()) && await e(Object(r.q)())
 			}
 		},
 		"./src/reddit/actions/pages/talk.ts": function(e, t, n) {
@@ -8749,7 +8749,7 @@
 						} = t;
 						n && n.contentWindow && (console.log("postMessage: disableAutoSelect"), n.contentWindow.postMessage({
 							type: "disableAutoSelect"
-						}, Object(Ka.a)())), e(Object(aa.p)())
+						}, Object(Ka.a)())), e(Object(aa.q)())
 					},
 					toggleModMode: () => e(Object(qa.b)()),
 					openCommunityCreationModal: () => e(Object(_e.h)(tt.a.SUBREDDIT_CREATION_MODAL_ID))
@@ -9205,7 +9205,7 @@
 					toggleChangeEmailModal: () => {
 						e(Object(sa.b)()), e(Object(_e.i)(Rc.a))
 					},
-					resendEmail: () => e(Object(aa.w)(ba.a)),
+					resendEmail: () => e(Object(aa.x)(ba.a)),
 					requestCreatePost: () => {
 						t.pageLayer && e(oa.o(t.pageLayer))
 					},
@@ -17622,9 +17622,9 @@
 			Object(o.e)(o.b.EntryPointStart);
 			const Cs = Object(F.a)({
 					actionDispatchers: {
-						reddaidReceived: ae.t,
-						loidReceived: ae.q,
-						sessionTrackerReceived: ae.y
+						reddaidReceived: ae.u,
+						loidReceived: ae.r,
+						sessionTrackerReceived: ae.z
 					},
 					authHeaders: {
 						[Ye.a]: "desktop2x"
@@ -19255,7 +19255,7 @@
 				p = n("./src/reddit/selectors/user.ts");
 			const b = {
 					action: () => async (e, t) => {
-						Object(p.K)(t()) || await e(Object(l.s)())
+						Object(p.K)(t()) || await e(Object(l.t)())
 					},
 					chunk: o.r.META_ARBITRUM_POINTS_MIGRATION_PAGE,
 					component: Object(s.a)({
@@ -19344,7 +19344,7 @@
 				},
 				g = e => async (t, n) => {
 					const s = Object(m.a)(e.queryParams);
-					Object(p.K)(n()) || await t(Object(l.s)()), s && setTimeout(async () => {
+					Object(p.K)(n()) || await t(Object(l.t)()), s && setTimeout(async () => {
 						await t(Object(r.c)(`/r/${encodeURIComponent(s.subreddit)}/`)), u.d.spBurnLinks(n()) && t(Object(a.h)(d.a.CRYPTO_BURN_POINTS, s))
 					}, 0)
 				}, v = {
@@ -20907,4 +20907,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePo~5f1ac562", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250", "Governance~ModListing~Reddit~Subreddit", "Chat~Governance~Reddit", "Reddit~StandalonePostPage~reddit-components-MediumPost", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.09701bce85c774e9bea0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.4ed8bc62a9408f24baa3.js.map

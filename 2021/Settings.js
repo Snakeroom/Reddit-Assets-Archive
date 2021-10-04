@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.3c93cc5cf2f4285d51db.js
-// Retrieved at 10/4/2021, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.693d28ea826ea65aaa8b.js
+// Retrieved at 10/4/2021, 12:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, n) {
@@ -2665,7 +2665,7 @@
 				B = n("./src/reddit/reducers/economics/paymentSystems/index.ts"),
 				R = n("./src/reddit/selectors/externalAccount.ts");
 			const F = e => async (t, n) => {
-				await t(Object(A.s)());
+				await t(Object(A.t)());
 				const f = [t(Object(P.x)(!0)), t(Object(p.a)())];
 				n().economics.paymentSystems.status === B.a.NotFetched && f.push(t((() => async (e, t, {
 					apiContext: n
@@ -10590,8 +10590,8 @@
 					}
 				}),
 				z = Object(a.b)(W, e => ({
-					changeEmail: t => e(Object(C.u)(t)),
-					sendResetEmail: t => e(Object(C.x)(t)),
+					changeEmail: t => e(Object(C.v)(t)),
+					sendResetEmail: t => e(Object(C.y)(t)),
 					showErrorToast: t => e(Object(M.f)({
 						duration: M.a,
 						kind: U.b.Error,
@@ -11078,7 +11078,7 @@
 					changeLanguage: t => e(Object(k.g)(t)),
 					openChangeEmailModal: () => e(Object(y.i)(ke.a)),
 					openSSOCreatePasswordForEmailModal: () => e(Object(y.h)(ke.l)),
-					resendEmail: () => e(Object(C.w)())
+					resendEmail: () => e(Object(C.x)())
 				})),
 				We = ({
 					email: e,
@@ -11507,7 +11507,7 @@
 				}),
 				nn = Object(a.b)(tn, (e, t) => ({
 					deactivate: t => {
-						e(Object(C.v)(t))
+						e(Object(C.w)(t))
 					},
 					openSSOCreatePasswordForLinkGoogleModal: () => e(Object(y.h)(ke.k)),
 					optOut: async () => {
@@ -11516,7 +11516,7 @@
 							domain: et.a.cookieDomain
 						}), await e(Object(v.b)()), window.location.href = `${et.a.redditUrl}/prefs`
 					},
-					resendEmail: () => e(Object(C.w)()),
+					resendEmail: () => e(Object(C.x)()),
 					toggleChangePasswordModal: () => e(Object(_.b)()),
 					toggleDeactivateModal: () => e(Object(y.i)("deactivate_modal_id")),
 					toggleOptoutModal: () => e(Object(y.i)("settins_optout_modal_id"))
@@ -14249,4 +14249,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.3c93cc5cf2f4285d51db.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.693d28ea826ea65aaa8b.js.map

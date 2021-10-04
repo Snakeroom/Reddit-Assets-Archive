@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.fec5b81eca046dacac23.js
-// Retrieved at 10/4/2021, 11:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.5219f8b137dd66df2033.js
+// Retrieved at 10/4/2021, 12:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -2500,10 +2500,10 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("147000"),
+				buildNumber: Object(r.c)("147003"),
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
-				buildTimestamp: Object(r.b)("1633361212"),
+				buildTimestamp: Object(r.b)("1633362937"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -5038,14 +5038,14 @@
 					}))
 				},
 				z = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c2f63375a77a98cbf316650929eb112ddeb0c29ef-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c76ffeb61e753c10a0913c71cd1e4acce12b37275-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${v.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "2f63375a77a98cbf316650929eb112ddeb0c29ef-production",
+						release: "76ffeb61e753c10a0913c71cd1e4acce12b37275-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -5558,7 +5558,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "2f63375a77a98cbf316650929eb112ddeb0c29ef-production",
+						releaseClient: "76ffeb61e753c10a0913c71cd1e4acce12b37275-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -11209,7 +11209,7 @@
 				}) => {
 					t($({
 						layout: e
-					})), t(Object(b.o)())
+					})), t(Object(b.p)())
 				}),
 				ne = (e, t) => async (i, n, {
 					apiContext: r
@@ -13273,7 +13273,7 @@
 			"use strict";
 			i.d(t, "b", (function() {
 				return H
-			})), i.d(t, "q", (function() {
+			})), i.d(t, "r", (function() {
 				return q
 			})), i.d(t, "g", (function() {
 				return W
@@ -13285,35 +13285,35 @@
 				return z
 			})), i.d(t, "d", (function() {
 				return Y
-			})), i.d(t, "z", (function() {
+			})), i.d(t, "B", (function() {
 				return Z
 			})), i.d(t, "c", (function() {
 				return ee
-			})), i.d(t, "r", (function() {
-				return te
 			})), i.d(t, "s", (function() {
-				return ie
-			})), i.d(t, "p", (function() {
-				return ne
-			})), i.d(t, "y", (function() {
-				return re
+				return te
 			})), i.d(t, "t", (function() {
+				return ie
+			})), i.d(t, "q", (function() {
+				return ne
+			})), i.d(t, "z", (function() {
+				return re
+			})), i.d(t, "u", (function() {
 				return se
 			})), i.d(t, "a", (function() {
 				return oe
-			})), i.d(t, "o", (function() {
+			})), i.d(t, "p", (function() {
 				return ae
-			})), i.d(t, "v", (function() {
-				return le
-			})), i.d(t, "m", (function() {
-				return ue
-			})), i.d(t, "n", (function() {
-				return ce
-			})), i.d(t, "l", (function() {
-				return _e
-			})), i.d(t, "u", (function() {
-				return be
 			})), i.d(t, "w", (function() {
+				return le
+			})), i.d(t, "n", (function() {
+				return ue
+			})), i.d(t, "o", (function() {
+				return ce
+			})), i.d(t, "m", (function() {
+				return _e
+			})), i.d(t, "v", (function() {
+				return be
+			})), i.d(t, "x", (function() {
 				return ge
 			})), i.d(t, "i", (function() {
 				return we
@@ -13321,8 +13321,12 @@
 				return ye
 			})), i.d(t, "h", (function() {
 				return ve
-			})), i.d(t, "x", (function() {
+			})), i.d(t, "y", (function() {
 				return Oe
+			})), i.d(t, "l", (function() {
+				return Ie
+			})), i.d(t, "A", (function() {
+				return Re
 			}));
 			var n = i("./node_modules/fbt/lib/FbtPublic.js"),
 				r = i("./src/lib/constants/index.ts"),
@@ -13548,7 +13552,7 @@
 					}))
 				}
 				t(Te())
-			}
+			}, Ie = "SET_USER_AVATAR_ICON", Re = Object(s.a)(Ie)
 		},
 		"./src/reddit/actions/video.ts": function(e, t, i) {
 			"use strict";
@@ -24218,7 +24222,7 @@
 			"use strict";
 
 			function n(e) {
-				return !!e && (e.indexOf("profileIcon_snoo") > -1 || e.endsWith("snoovatar_anonymous.svg"))
+				return !!e && (e.indexOf("profileIcon_snoo") > -1 || (null == e ? void 0 : e.indexOf("snoovatar/avatars")) > -1 || e.endsWith("snoovatar_anonymous.svg"))
 			}
 			i.d(t, "a", (function() {
 				return n
@@ -41212,4 +41216,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.fec5b81eca046dacac23.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.5219f8b137dd66df2033.js.map

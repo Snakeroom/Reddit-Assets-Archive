@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MultiredditEditModal.142925327071fb9236bb.js
-// Retrieved at 9/30/2021, 4:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MultiredditEditModal.4b37732fa379258b5e3a.js
+// Retrieved at 10/4/2021, 12:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MultiredditEditModal"], {
 		"./src/reddit/actions/multireddit/index.ts": function(e, t, i) {
@@ -657,7 +657,7 @@
 					if (!o) {
 						let t = r();
 						if (t.user.session && t.user.session.unsafeLoggedOut) return void i(Object(d.c)("/"));
-						!t.user.account && t.user.session && await i(p.s()), t = r();
+						!t.user.account && t.user.session && await i(p.t()), t = r();
 						const {
 							account: n
 						} = t.user;
@@ -1573,4 +1573,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MultiredditEditModal.142925327071fb9236bb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MultiredditEditModal.4b37732fa379258b5e3a.js.map
