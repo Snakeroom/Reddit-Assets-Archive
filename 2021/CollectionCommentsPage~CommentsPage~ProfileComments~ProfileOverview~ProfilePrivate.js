@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.4836d7b61b8bb775b3af.js
-// Retrieved at 10/1/2021, 6:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.ca0fec74c9f6d19dc6db.js
+// Retrieved at 10/4/2021, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, n) {
@@ -2884,7 +2884,7 @@
 					const c = Object(o.e)(i, {
 							commentId: e
 						}),
-						d = Object(r.f)(i, {
+						d = Object(r.g)(i, {
 							subredditId: t,
 							userId: n
 						});
@@ -3166,24 +3166,26 @@
 		},
 		"./src/reddit/selectors/gold/powerups/flairs.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "e", (function() {
-				return d
-			})), n.d(t, "g", (function() {
+			n.d(t, "f", (function() {
 				return l
-			})), n.d(t, "f", (function() {
-				return m
-			})), n.d(t, "i", (function() {
-				return u
 			})), n.d(t, "h", (function() {
+				return m
+			})), n.d(t, "g", (function() {
+				return u
+			})), n.d(t, "i", (function() {
 				return p
-			})), n.d(t, "b", (function() {
+			})), n.d(t, "j", (function() {
 				return b
-			})), n.d(t, "c", (function() {
+			})), n.d(t, "b", (function() {
 				return x
-			})), n.d(t, "d", (function() {
+			})), n.d(t, "c", (function() {
 				return h
-			})), n.d(t, "a", (function() {
+			})), n.d(t, "e", (function() {
+				return f
+			})), n.d(t, "d", (function() {
 				return v
+			})), n.d(t, "a", (function() {
+				return C
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var s = n("./node_modules/reselect/es/index.js"),
@@ -3199,21 +3201,27 @@
 			const c = (e, {
 					subredditId: t
 				}) => {
+					var n;
+					return t ? null === (n = e.features.powerups.subredditPowerupsFlairs) || void 0 === n ? void 0 : n[t] : null
+				},
+				d = (e, {
+					subredditId: t
+				}) => {
 					var n, s;
 					return t ? null === (s = null === (n = e.features.powerups.subredditPowerupsFlairs) || void 0 === n ? void 0 : n[t]) || void 0 === s ? void 0 : s.flairsByType : null
 				},
-				d = (e, {
+				l = (e, {
 					subredditId: t,
 					userId: n
 				}) => {
 					var s, o;
 					return t && n ? null === (o = null === (s = e.features.powerups.subredditUserPowerupsFlairs) || void 0 === s ? void 0 : s[t]) || void 0 === o ? void 0 : o[n] : null
 				},
-				l = Object(s.a)(d, e => (null == e ? void 0 : e.pendingAchievementType) || (null == e ? void 0 : e.preferredAchievementType)),
-				m = Object(s.a)([c, l], (e, t) => e && t ? e[t] : null),
-				u = Object(s.a)(d, e => null == e ? void 0 : e.preferredSupporterType),
-				p = Object(s.a)([c, u], (e, t) => e && t ? e[t] : null),
-				b = Object(s.a)([c, d], (e, t) => {
+				m = Object(s.a)(l, e => (null == e ? void 0 : e.pendingAchievementType) || (null == e ? void 0 : e.preferredAchievementType)),
+				u = Object(s.a)([d, m], (e, t) => e && t ? e[t] : null),
+				p = Object(s.a)(l, e => null == e ? void 0 : e.preferredSupporterType),
+				b = Object(s.a)([d, p], (e, t) => e && t ? e[t] : null),
+				x = Object(s.a)([d, l], (e, t) => {
 					if (!e) return [];
 					const n = t ? [...t.supporterTypes, ...t.achievementTypes] : [],
 						s = (null == t ? void 0 : t.pendingAchievementType) || (null == t ? void 0 : t.preferredAchievementType),
@@ -3224,12 +3232,7 @@
 						isPreferred: e.type === s || e.type === o
 					})).sort((e, t) => e.isLocked === t.isLocked ? 0 : e.isLocked ? 1 : -1)
 				}),
-				x = Object(s.a)([(e, {
-					subredditId: t
-				}) => {
-					var n;
-					return t ? null === (n = e.features.powerups.subredditPowerupsFlairs) || void 0 === n ? void 0 : n[t] : null
-				}, d], (e, t) => {
+				h = Object(s.a)([c, l], (e, t) => {
 					if (!e || !t) return null;
 					const {
 						supporterTypes: n,
@@ -3244,17 +3247,22 @@
 						pendingAchievementType: l
 					} = t;
 					return {
-						supporterFlairs: f(n, r, o, d || i),
-						achievementFlairs: f(s, a, o, l || c)
+						supporterFlairs: E(n, r, o, d || i),
+						achievementFlairs: E(s, a, o, l || c)
 					}
 				}),
-				h = Object(s.a)([d], e => !!e && e.isHidden),
-				f = (e, t, n, s) => e.map(e => ({
+				f = Object(s.a)([l], e => !!e && e.isHidden),
+				v = Object(s.a)([c, l, b], (e, t, n) => {
+					if (!e || !t) return [];
+					const s = t.achievementTypes.map(t => e.flairsByType[t]);
+					return n ? [n, ...s] : s
+				}),
+				E = (e, t, n, s) => e.map(e => ({
 					...n[e],
 					isLocked: !t.includes(e),
 					isPreferred: e === s
 				})).sort((e, t) => e.isLocked === t.isLocked ? 0 : e.isLocked ? 1 : -1),
-				v = (e, {
+				C = (e, {
 					commentId: t
 				}) => {
 					const n = Object(o.b)(e, {
@@ -3295,4 +3303,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.4836d7b61b8bb775b3af.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.ca0fec74c9f6d19dc6db.js.map

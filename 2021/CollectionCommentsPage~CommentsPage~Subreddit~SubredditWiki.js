@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.2aef21e3e8c7fbd4c798.js
-// Retrieved at 10/1/2021, 6:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.0045567fe0238e656c4f.js
+// Retrieved at 10/4/2021, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"], {
 		"./src/lib/linkMatchers/index.ts": function(e, t, r) {
@@ -200,7 +200,7 @@
 					if (!i || !Object(h.g)(s, {
 							subredditId: e
 						})) return;
-					const a = !!Object(f.e)(s, {
+					const a = !!Object(f.f)(s, {
 						subredditId: e,
 						userId: i.id
 					});
@@ -256,7 +256,7 @@
 						i = Object(g.k)(s);
 					if (!i) return;
 					const a = i.id,
-						o = Object(f.g)(s, {
+						o = Object(f.h)(s, {
 							subredditId: e,
 							userId: a
 						});
@@ -278,7 +278,7 @@
 						subredditId: l,
 						achievementFlairType: u,
 						supporterFlairType: b
-					} = e, h = [u, b].filter(Boolean), x = Object(f.d)(a, {
+					} = e, h = [u, b].filter(Boolean), x = Object(f.e)(a, {
 						subredditId: l,
 						userId: d
 					});
@@ -304,7 +304,7 @@
 							subredditId: e,
 							userId: l
 						},
-						b = [Object(f.g)(o, u), Object(f.i)(o, u)].filter(Boolean);
+						b = [Object(f.h)(o, u), Object(f.i)(o, u)].filter(Boolean);
 					r(E({
 						...u,
 						isHidden: t
@@ -3596,4 +3596,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.2aef21e3e8c7fbd4c798.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.0045567fe0238e656c4f.js.map
