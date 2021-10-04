@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.3bf9b5752bcf8cc9b10f.js
-// Retrieved at 10/4/2021, 12:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.c171fddfa4c0be9c6f2b.js
+// Retrieved at 10/4/2021, 2:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -3726,7 +3726,7 @@
 				})))), Object(s.a)(k, e => e.publicAccessNetwork.preloads.streamPreviews, (e, t) => e && t[e])),
 				D = Object(s.a)((e, {
 					streamIdFromPath: t
-				}) => t ? x(e, t) : void 0, e => !e || e.chat_disabled || e.post.isArchived);
+				}) => t ? x(e, t) : void 0, e => !e || e.chat_disabled || e.post.isArchived || e.post.isLocked);
 
 			function Z(e, t) {
 				const a = {
@@ -3919,4 +3919,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.3bf9b5752bcf8cc9b10f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.c171fddfa4c0be9c6f2b.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.555872df11ba44036662.js
-// Retrieved at 10/4/2021, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.635387a234e27c80d01f.js
+// Retrieved at 10/4/2021, 2:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~ModListing", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -16264,7 +16264,7 @@
 				})))), Object(s.a)(k, e => e.publicAccessNetwork.preloads.streamPreviews, (e, t) => e && t[e])),
 				D = Object(s.a)((e, {
 					streamIdFromPath: t
-				}) => t ? _(e, t) : void 0, e => !e || e.chat_disabled || e.post.isArchived);
+				}) => t ? _(e, t) : void 0, e => !e || e.chat_disabled || e.post.isArchived || e.post.isLocked);
 
 			function R(e, t) {
 				const n = {
@@ -17057,4 +17057,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.555872df11ba44036662.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.635387a234e27c80d01f.js.map
