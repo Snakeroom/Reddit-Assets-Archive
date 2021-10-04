@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.f72538b192d386a8efec.js
-// Retrieved at 10/1/2021, 6:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.1e17b1b97fa3d625f2e8.js
+// Retrieved at 10/4/2021, 10:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -52,16 +52,16 @@
 			const p = Object(o.a)(e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.nd
+					experimentName: u.od
 				});
-				return Object(u.Me)(t) ? void 0 : t
+				return Object(u.Ne)(t) ? void 0 : t
 			}, e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.od
+					experimentName: u.pd
 				});
-				return Object(u.Me)(t) ? void 0 : t
-			}, (e, t) => e === u.pd.Enabled && t === u.pd.Enabled);
+				return Object(u.Ne)(t) ? void 0 : t
+			}, (e, t) => e === u.qd.Enabled && t === u.qd.Enabled);
 			var h = n("./src/config.ts");
 			var b = n("./src/reddit/selectors/user.ts");
 			const f = e => {
@@ -271,16 +271,16 @@
 					}
 				}
 				A.displayName = y(e), A.ANONYMOUS_USER_ID = n, A.DEBUG = d, A.DISABLE_COOKIES = u, A.DURATION_LIVE = 1 / 0, A.ENV_KEY = m, A.LOCAL_STORAGE_SALT_KEY = g, A.LOCAL_STORAGE_VIEWER_USER_ID_KEY = _, A.PLAYER_NAME = x, A.PLAYER_VERSION = S, A.RESPECT_DO_NOT_TRACK = I, A.SALT_LENGTH = T, A.SALT_TIME_TO_LIVE = w, A.STREAM_TYPE_LIVE = "live", A.STREAM_TYPE_ON_DEMAND = "on-demand", A.VIEWER_USER_ID_LENGTH = j;
-				const k = Object(s.forwardRef)((e, t) => r.a.createElement(A, E({}, e, {
+				const N = Object(s.forwardRef)((e, t) => r.a.createElement(A, E({}, e, {
 						forwardedRef: t
 					}))),
-					N = Object(o.c)({
+					k = Object(o.c)({
 						redditUserId: b.i,
 						isMuxEnabled: p
 					});
-				return Object(i.b)(N, null, null, {
+				return Object(i.b)(k, null, null, {
 					forwardRef: !0
-				})(k)
+				})(N)
 			}
 		},
 		"./src/lib/memoizeByReference/index.ts": function(e, t, n) {
@@ -555,8 +555,8 @@
 					queryVariables: _,
 					shouldDisjointAnimation: O,
 					subsequentRecurringDelay: E
-				} = e, [y, C] = Object(s.useState)(!1), [x, S] = Object(s.useState)(!0), [I, T] = Object(s.useState)([]), [w, j] = Object(s.useState)(c(p).reverse()), A = Object(s.useRef)(!1), k = Object(s.useRef)(null), N = Object(s.useRef)(e => {}), P = Object(s.useRef)();
-				N.current = Object(s.useCallback)(e => {
+				} = e, [y, C] = Object(s.useState)(!1), [x, S] = Object(s.useState)(!0), [I, T] = Object(s.useState)([]), [w, j] = Object(s.useState)(c(p).reverse()), A = Object(s.useRef)(!1), N = Object(s.useRef)(null), k = Object(s.useRef)(e => {}), P = Object(s.useRef)();
+				k.current = Object(s.useCallback)(e => {
 					let n = e || d();
 					const s = [...w].reverse().join("");
 					let r = parseInt(s) + n;
@@ -571,7 +571,7 @@
 					L = Object(s.useRef)();
 				D.current = Object(s.useCallback)(() => {
 					L.current = setTimeout(() => {
-						N.current();
+						k.current();
 						const e = [...I].reverse().join("");
 						parseInt(e) < t && D.current()
 					}, E())
@@ -585,11 +585,11 @@
 								intersectionRatio: n
 							} = e, s = 1 !== n;
 							t ? (F.current = !0, A.current || (A.current = !0, R.current = setTimeout(() => {
-								N.current(), D.current()
-							}, u())), M.current > 0 && (N.current(M.current), M.current = 0)) : s && (F.current = !1)
+								k.current(), D.current()
+							}, u())), M.current > 0 && (k.current(M.current), M.current = 0)) : s && (F.current = !1)
 						})
 					}, []);
-				Object(o.a)(k, U);
+				Object(o.a)(N, U);
 				const [V, H] = Object(s.useState)(!1), G = Object(s.useCallback)(e => {
 					e.forEach(e => {
 						const {
@@ -601,12 +601,12 @@
 				}, []), Y = Object(s.useRef)({
 					rootMargin: "2000px 0px 2000px 0px"
 				});
-				Object(o.a)(k, G, Y.current);
+				Object(o.a)(N, G, Y.current);
 				const B = Object(a.a)(t);
 				Object(s.useEffect)(() => {
 					if (void 0 !== B && B !== t) {
 						const e = t - B;
-						F.current ? (N.current(e), h && h()) : M.current += e
+						F.current ? (k.current(e), h && h()) : M.current += e
 					}
 					return () => {
 						clearTimeout(R.current), clearTimeout(L.current), clearTimeout(P.current)
@@ -652,7 +652,7 @@
 					className: l.a.srOnly,
 					role: "screen-reader"
 				}, [...w].reverse().join(""))), r.a.createElement("span", {
-					ref: k
+					ref: N
 				}), V && r.a.createElement(i.a, {
 					variables: _,
 					onData: b ? m : f,
@@ -1289,8 +1289,8 @@
 				w = n("./src/reddit/selectors/platform.ts"),
 				j = n("./src/reddit/selectors/PublicAccessNetwork/streams.ts"),
 				A = n("./src/reddit/selectors/user.ts"),
-				k = n("./src/reddit/components/ClassicPost/Placeholder.tsx"),
-				N = n("./src/reddit/components/Flatlist/index.tsx"),
+				N = n("./src/reddit/components/ClassicPost/Placeholder.tsx"),
+				k = n("./src/reddit/components/Flatlist/index.tsx"),
 				P = n("./src/reddit/components/Flatlist/constants.ts"),
 				D = n("./src/reddit/components/Flatlist/ResponsiveRow.tsx"),
 				R = n("./src/reddit/components/HlsVideo/index.tsx"),
@@ -1582,7 +1582,7 @@
 						className: q.a.flatListContainer
 					}, r.a.createElement(re, {
 						onClick: this.onHeaderClicked
-					}), r.a.createElement(N.a, {
+					}), r.a.createElement(k.a, {
 						className: q.a.flatlistSeparator
 					}), r.a.createElement("div", null, r.a.createElement(ie, {
 						onClick: this.onHideUnitClicked
@@ -1749,7 +1749,7 @@
 					null === (e = this.videoSessionManager) || void 0 === e || e.destroy()
 				}
 			}
-			const se = e => r.a.createElement(k.a, {
+			const se = e => r.a.createElement(N.a, {
 					className: Object(d.a)({
 						[q.a.verticalVotes]: e.isVertical,
 						[q.a.horizontalVotes]: !e.isVertical
@@ -2298,9 +2298,9 @@
 			})), n.d(t, "clickMessageInputEvent", (function() {
 				return A
 			})), n.d(t, "typeMessageInputEvent", (function() {
-				return k
-			})), n.d(t, "clickLearnMoreLinkEvent", (function() {
 				return N
+			})), n.d(t, "clickLearnMoreLinkEvent", (function() {
+				return k
 			})), n.d(t, "clickQuestionMarkEvent", (function() {
 				return P
 			})), n.d(t, "clickConfirmAwardEvent", (function() {
@@ -2429,13 +2429,13 @@
 					action: "click",
 					noun: "message_input"
 				}),
-				k = e => t => ({
+				N = e => t => ({
 					...u(t, e),
 					source: "give_gold",
 					action: "type",
 					noun: "message_input"
 				}),
-				N = e => t => ({
+				k = e => t => ({
 					...u(t, e),
 					source: "give_gold",
 					action: "click",
@@ -2925,9 +2925,9 @@
 			})), n.d(t, "s", (function() {
 				return A
 			})), n.d(t, "v", (function() {
-				return k
-			})), n.d(t, "w", (function() {
 				return N
+			})), n.d(t, "w", (function() {
+				return k
 			}));
 			var s = n("./src/reddit/models/ScheduledPost/index.ts"),
 				r = n("./src/reddit/selectors/telemetry.ts");
@@ -3099,13 +3099,13 @@
 					...i(e),
 					scheduledPost: o(t)
 				}),
-				k = () => e => ({
+				N = () => e => ({
 					source: "scheduled_post_composer",
 					action: "view",
 					noun: "custom_schedule_post_composer",
 					...i(e)
 				}),
-				N = () => (e, t) => {
+				k = () => (e, t) => {
 					const n = i(e);
 					return {
 						source: "post",
@@ -3676,4 +3676,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.f72538b192d386a8efec.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.1e17b1b97fa3d625f2e8.js.map

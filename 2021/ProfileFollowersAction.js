@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileFollowersAction.bea36a27af52c370fe44.js
-// Retrieved at 10/1/2021, 6:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileFollowersAction.1767224cc07def81dc47.js
+// Retrieved at 10/4/2021, 10:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileFollowersAction"], {
 		"./src/lib/makeOverviewConversationsItemKey/index.ts": function(e, t, s) {
@@ -271,8 +271,8 @@
 						return e
 				}
 			};
-			const E = {};
-			var B = (e = E, t) => {
+			const B = {};
+			var E = (e = B, t) => {
 					switch (t.type) {
 						case x.c:
 						case A.c: {
@@ -302,7 +302,7 @@
 				},
 				N = Object(T.c)({
 					error: L,
-					pending: B
+					pending: E
 				});
 			const U = {};
 			var K = (e = U, t) => {
@@ -970,7 +970,7 @@
 			}));
 			var o = s("./src/reddit/constants/experiments.ts"),
 				i = s("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const r = Object(i.a)(o.Ed)
+			const r = Object(i.a)(o.Fd)
 		},
 		"./src/reddit/selectors/followers.ts": function(e, t, s) {
 			"use strict";
@@ -1805,4 +1805,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersAction.bea36a27af52c370fe44.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersAction.1767224cc07def81dc47.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.5c4ae3279537ec5dd385.js
-// Retrieved at 10/1/2021, 6:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.ffe88bbf495c4cbfb2f3.js
+// Retrieved at 10/4/2021, 10:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -5976,12 +5976,12 @@
 						rtJsonElementProps: o
 					});
 					switch (s) {
-						case b.ne.SmIcon:
+						case b.oe.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: o
 							});
-						case b.ne.SmIconHc:
+						case b.oe.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -8040,13 +8040,13 @@
 						experimentEligibilitySelector: o.K,
 						experimentName: s.gc
 					});
-					return !(!t || Object(s.Me)(t))
+					return !(!t || Object(s.Ne)(t))
 				},
 				a = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: o.K,
 						experimentName: s.gc
-					}) === s.Ic.ListingEnabled
+					}) === s.Jc.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, n) {
@@ -8178,12 +8178,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.he
+						experimentName: s.ie
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.ne.SmIcon || t === s.ne.SmIconHc
+					return t === s.oe.SmIcon || t === s.oe.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -8212,4 +8212,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.5c4ae3279537ec5dd385.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.ffe88bbf495c4cbfb2f3.js.map

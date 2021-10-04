@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.d0ff6862ce0f0e48ac88.js
-// Retrieved at 10/1/2021, 6:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.fb66a3adec3b6a4a3ab4.js
+// Retrieved at 10/4/2021, 10:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-NotificationUnit-Button"], {
 		"./src/reddit/actions/comment/authoring.ts": function(e, t, n) {
@@ -135,8 +135,8 @@
 				K = n("./src/reddit/endpoints/publicAccessNetwork/index.ts"),
 				D = n("./src/reddit/featureFlags/index.ts"),
 				L = n("./src/reddit/helpers/dom/index.ts"),
-				M = n("./src/reddit/helpers/localStorage/index.ts"),
-				U = n("./src/reddit/helpers/trackers/commentsPage.ts"),
+				U = n("./src/reddit/helpers/localStorage/index.ts"),
+				M = n("./src/reddit/helpers/trackers/commentsPage.ts"),
 				F = n("./src/reddit/models/Comment/index.ts"),
 				H = n("./src/reddit/models/PostDraft/index.ts"),
 				J = n("./src/reddit/models/RichTextJson/index.ts"),
@@ -169,7 +169,7 @@
 				}, ee = Object(s.a)(Q.H), te = Object(s.a)(Q.J), ne = Object(s.a)(Q.I), oe = Object(s.a)(Q.G), re = async (e, t, n, o) => {
 					const r = o.ok && o.body,
 						s = r && r.comment && r.comment.id;
-					await U.f(e, n, t, s)
+					await M.f(e, n, t, s)
 				}, se = "Toxicity_Warning__Modal", ce = (e, t, n, o, r, s) => async (c, i, {
 					gqlContext: d
 				}) => {
@@ -212,7 +212,7 @@
 						});
 						u(Object(m.z)(r, O.a.CommentSubmitted))
 					} else {
-						g.error && g.error.type === r.Hb && U.g(j, ie(s), e);
+						g.error && g.error.type === r.Hb && M.g(j, ie(s), e);
 						const t = g.error && g.error.fields && g.error.fields[0] ? g.error.fields[0].msg : o.fbt._("Something went wrong", null, {
 							hk: "LWFS0"
 						});
@@ -284,7 +284,7 @@
 								commentId: s
 							});
 							if (!e) return;
-							U.g(l, ie(m), e.postId, s)
+							M.g(l, ie(m), e.postId, s)
 						}
 						t(oe({
 							draftKey: d,
@@ -407,7 +407,7 @@
 					text: r
 				}) => async (s, c) => {
 					const i = c();
-					i.user.account && (U.c(i), s(xe({
+					i.user.account && (M.c(i), s(xe({
 						commentId: e,
 						commentsPageKey: n,
 						draftKey: o,
@@ -432,7 +432,7 @@
 					if (!d.user.account) return;
 					n(ge({
 						draftKey: o
-					})), U.d(d);
+					})), M.d(d);
 					const a = d.user.account.displayText || "",
 						m = s.commentMode,
 						u = await (async (e, t, n, o, s, c) => {
@@ -493,7 +493,7 @@
 					const c = o();
 					n(Se({
 						id: e
-					})), U.a(e, c);
+					})), M.a(e, c);
 					const i = await ((e, t) => Object(h.a)(Object(I.a)(e, [g.a]), {
 						endpoint: Object(C.a)(`${e.apiUrl}/api/del`),
 						method: r.ib.POST,
@@ -555,7 +555,7 @@
 								commentId: e,
 								followState: t
 							})).ok) {
-							Object(M.rb)(null !== (m = null === (a = null === (d = r().pages) || void 0 === d ? void 0 : d.comments) || void 0 === a ? void 0 : a.followed) && void 0 !== m ? m : [], null === (u = r().user.account) || void 0 === u ? void 0 : u.id);
+							Object(U.rb)(null !== (m = null === (a = null === (d = r().pages) || void 0 === d ? void 0 : d.comments) || void 0 === a ? void 0 : a.followed) && void 0 !== m ? m : [], null === (u = r().user.account) || void 0 === u ? void 0 : u.id);
 							const e = c ? o.fbt._("Followed! You’ll receive updates when there’s new activity", null, {
 								hk: "1Dp5UH"
 							}) : o.fbt._("Unfollowed, You’ll no longer recieve updates on this comment", null, {
@@ -582,7 +582,7 @@
 			})), n.d(t, "h", (function() {
 				return K
 			})), n.d(t, "l", (function() {
-				return U
+				return M
 			})), n.d(t, "q", (function() {
 				return F
 			})), n.d(t, "j", (function() {
@@ -696,7 +696,7 @@
 						const n = s.c.end(c);
 						!t && n < N && (clearTimeout(P[e]), delete P[e])
 					}
-				}, D = Object(c.a)(_.x), L = Object(c.a)(_.w), M = Object(c.a)(_.v), U = (e, t) => async (n, o, {
+				}, D = Object(c.a)(_.x), L = Object(c.a)(_.w), U = Object(c.a)(_.v), M = (e, t) => async (n, o, {
 					apiContext: r
 				}) => {
 					const s = o(),
@@ -735,7 +735,7 @@
 						const m = p.body.comments,
 							u = p.body.posts;
 						await n(Object(l.b)(u, m, d)), await n(a(d, m))
-					} else n(M({
+					} else n(U({
 						moreCommentsItem: c,
 						...p.error
 					}))
@@ -1040,8 +1040,8 @@
 					K = null == T ? void 0 : T.messageType,
 					D = null === (t = null == T ? void 0 : T.post) || void 0 === t ? void 0 : t.permalink,
 					L = K === O.a.PostReply ? N : null === (n = null == T ? void 0 : T.comment) || void 0 === n ? void 0 : n.id,
-					M = (null === (r = null == T ? void 0 : T.post) || void 0 === r ? void 0 : r.id) || (null === (j = null === (y = null == T ? void 0 : T.comment) || void 0 === y ? void 0 : y.postInfo) || void 0 === j ? void 0 : j.id),
-					U = null === (I = null == T ? void 0 : T.awarding) || void 0 === I ? void 0 : I.award.id,
+					U = (null === (r = null == T ? void 0 : T.post) || void 0 === r ? void 0 : r.id) || (null === (j = null === (y = null == T ? void 0 : T.comment) || void 0 === y ? void 0 : y.postInfo) || void 0 === j ? void 0 : j.id),
+					M = null === (I = null == T ? void 0 : T.awarding) || void 0 === I ? void 0 : I.award.id,
 					F = null === (C = null === (g = null == T ? void 0 : T.awarding) || void 0 === g ? void 0 : g.awarder) || void 0 === C ? void 0 : C.id;
 				return (() => {
 					switch (K) {
@@ -1073,8 +1073,8 @@
 						case O.a.CommentReply: {
 							if (!E && !P) return null;
 							const e = e => {
-								if (M && L) {
-									const e = Object(d.a)(M, L, Object(b.c)(k)),
+								if (U && L) {
+									const e = Object(d.a)(U, L, Object(b.c)(k)),
 										t = {
 											parentCommentId: L,
 											commentsPageKey: e
@@ -1105,7 +1105,7 @@
 							const e = e => {
 								e.preventDefault(), F ? A({
 									position: f.c.SECOND,
-									awardId: U
+									awardId: M
 								}) : v(Object(m.f)(x))
 							};
 							return s.a.createElement(u.b, {
@@ -1326,7 +1326,7 @@
 								experimentName: s.E,
 								expEventOverride: t
 							});
-							return !!(Object(s.Me)(n) ? void 0 : n)
+							return !!(Object(s.Ne)(n) ? void 0 : n)
 						})(n)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -2046,9 +2046,9 @@
 			})), n.d(t, "D", (function() {
 				return L
 			})), n.d(t, "E", (function() {
-				return M
-			})), n.d(t, "F", (function() {
 				return U
+			})), n.d(t, "F", (function() {
+				return M
 			})), n.d(t, "r", (function() {
 				return F
 			})), n.d(t, "e", (function() {
@@ -2226,10 +2226,10 @@
 				L = (e, {
 					moreCommentsId: t
 				}) => e.moreComments.models[t],
-				M = (e, {
+				U = (e, {
 					moreCommentsId: t
 				}) => !!e.moreComments.api.pending[t],
-				U = (e, {
+				M = (e, {
 					commentsPageKey: t
 				}) => {
 					const n = e.pages.comments.keyToPostId[t];
@@ -2323,14 +2323,14 @@
 			const s = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: o.Dd
-					}) === o.Od.Enabled
+						experimentName: o.Ed
+					}) === o.Pd.Enabled
 				},
 				c = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: o.Cd
-					}) === o.Nd.Enabled
+						experimentName: o.Dd
+					}) === o.Od.Enabled
 				}
 		},
 		"./src/reddit/selectors/moderatingComments.ts": function(e, t, n) {
@@ -2365,4 +2365,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.d0ff6862ce0f0e48ac88.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.fb66a3adec3b6a4a3ab4.js.map

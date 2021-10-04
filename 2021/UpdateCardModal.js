@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/UpdateCardModal.3ea24c02c72c4dac5375.js
-// Retrieved at 6/16/2021, 5:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/UpdateCardModal.2c8a92dd2f74b734f4af.js
+// Retrieved at 10/4/2021, 10:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["UpdateCardModal"], {
 		"./node_modules/react-stripe-elements/es/components/Element.js": function(e, t, n) {
@@ -819,14 +819,14 @@
 						})())
 					}
 				};
-			var w = n("./src/reddit/controls/LoadingIcon/index.tsx");
+			var j = n("./src/reddit/controls/LoadingIcon/index.tsx");
 			const g = Object(i.injectStripe)(Object(c.a)(({
 				stripe: e
 			}) => {
 				const t = Object(s.d)();
 				return Object(r.useEffect)(() => {
 					e && t(E(e))
-				}, [e, t]), o.a.createElement(w.a, {
+				}, [e, t]), o.a.createElement(j.a, {
 					sizePx: 15
 				})
 			}));
@@ -840,18 +840,22 @@
 		"./src/reddit/hooks/useStripe.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return s
+				return p
 			}));
 			var r = n("./src/config.ts"),
-				o = n("./node_modules/react/index.js");
+				o = n("./node_modules/react/index.js"),
+				s = n("./node_modules/react-redux/es/index.js"),
+				i = n("./src/reddit/constants/experiments.ts"),
+				a = n("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
+			const c = Object(a.a)(i.hc);
 
-			function s() {
-				const [e, t] = Object(o.useState)(null);
+			function p() {
+				const [e, t] = Object(o.useState)(null), n = Object(s.e)(c);
 				return Object(o.useEffect)(() => {
-					window.Stripe && t(window.Stripe(r.a.stripe.apiKey))
-				}, [window.Stripe, r.a.stripe.apiKey]), e
+					window.Stripe && t(window.Stripe(r.a.stripe.apiKey(n)))
+				}, [n]), e
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UpdateCardModal.3ea24c02c72c4dac5375.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UpdateCardModal.2c8a92dd2f74b734f4af.js.map
