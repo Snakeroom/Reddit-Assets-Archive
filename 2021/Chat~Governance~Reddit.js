@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.a0edd6f3f52808845f6a.js
-// Retrieved at 10/5/2021, 10:40:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.f44f8fcf6e26ce4e241d.js
+// Retrieved at 10/5/2021, 11:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -2500,10 +2500,10 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("147187"),
+				buildNumber: Object(r.c)("147194"),
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
-				buildTimestamp: Object(r.b)("1633443340"),
+				buildTimestamp: Object(r.b)("1633444659"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -5038,14 +5038,14 @@
 					}))
 				},
 				z = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c88125d2592b221ca9f7c5447ade3fa933f078c4a-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c0057c2aeadbd57d55f1e912a4f4134cbd3cf9599-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${v.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "88125d2592b221ca9f7c5447ade3fa933f078c4a-production",
+						release: "0057c2aeadbd57d55f1e912a4f4134cbd3cf9599-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -5558,7 +5558,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "88125d2592b221ca9f7c5447ade3fa933f078c4a-production",
+						releaseClient: "0057c2aeadbd57d55f1e912a4f4134cbd3cf9599-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -19039,7 +19039,7 @@
 			var n, r = i("./node_modules/uuid/v4.js"),
 				s = i.n(r);
 			! function(e) {
-				e.AwardCreationFlow = "AwardCreationFlow", e.AwardDeletionFlow = "AwardDeletionFlow", e.Explore = "Explore", e.GildingFlow = "GildingFlow", e.GiftPremiumFlow = "GiftPremiumFlow", e.GoldPayment = "GoldPayment", e.LinkedPosts = "LinkedPosts", e.ModQueue = "ModQueue", e.NsfwLinkedPosts = "NsfwLinkedPosts", e.PostComposer = "PostComposer", e.PowerupsFlow = "PowerupsFlow", e.PremiumSettings = "PremiumSettings", e.SearchResults = "SearchResults", e.SubredditCreation = "SubredditCreation", e.VideoView = "VideoView"
+				e.AwardCreationFlow = "AwardCreationFlow", e.AwardDeletionFlow = "AwardDeletionFlow", e.CommentComposer = "CommentComposer", e.Explore = "Explore", e.GildingFlow = "GildingFlow", e.GiftPremiumFlow = "GiftPremiumFlow", e.GoldPayment = "GoldPayment", e.LinkedPosts = "LinkedPosts", e.ModQueue = "ModQueue", e.NsfwLinkedPosts = "NsfwLinkedPosts", e.PostComposer = "PostComposer", e.PowerupsFlow = "PowerupsFlow", e.PremiumSettings = "PremiumSettings", e.SearchResults = "SearchResults", e.SubredditCreation = "SubredditCreation", e.VideoView = "VideoView"
 			}(n || (n = {}));
 			const o = {},
 				d = e => o[e],
@@ -38321,10 +38321,10 @@
 				e.writeStructBegin("Comment"), null !== this.id && void 0 !== this.id && (e.writeFieldBegin("id", r.Type.STRING, 1), e.writeString(this.id), e.writeFieldEnd()), null !== this.post_id && void 0 !== this.post_id && (e.writeFieldBegin("post_id", r.Type.STRING, 2), e.writeString(this.post_id), e.writeFieldEnd()), null !== this.parent_id && void 0 !== this.parent_id && (e.writeFieldBegin("parent_id", r.Type.STRING, 3), e.writeString(this.parent_id), e.writeFieldEnd()), null !== this.body_text && void 0 !== this.body_text && (e.writeFieldBegin("body_text", r.Type.STRING, 4), e.writeString(this.body_text), e.writeFieldEnd()), null !== this.author_id && void 0 !== this.author_id && (e.writeFieldBegin("author_id", r.Type.STRING, 5), e.writeString(this.author_id), e.writeFieldEnd()), null !== this.number_gildings && void 0 !== this.number_gildings && (e.writeFieldBegin("number_gildings", r.Type.I64, 6), e.writeI64(this.number_gildings), e.writeFieldEnd()), null !== this.score && void 0 !== this.score && (e.writeFieldBegin("score", r.Type.I64, 7), e.writeI64(this.score), e.writeFieldEnd()), null !== this.upvote_ratio && void 0 !== this.upvote_ratio && (e.writeFieldBegin("upvote_ratio", r.Type.DOUBLE, 8), e.writeDouble(this.upvote_ratio), e.writeFieldEnd()), null !== this.created_timestamp && void 0 !== this.created_timestamp && (e.writeFieldBegin("created_timestamp", r.Type.I64, 9), e.writeI64(this.created_timestamp), e.writeFieldEnd()), null !== this.type && void 0 !== this.type && (e.writeFieldBegin("type", r.Type.STRING, 10), e.writeString(this.type), e.writeFieldEnd()), null !== this.depth && void 0 !== this.depth && (e.writeFieldBegin("depth", r.Type.I64, 11), e.writeI64(this.depth), e.writeFieldEnd()), null !== this.content_type && void 0 !== this.content_type && (e.writeFieldBegin("content_type", r.Type.STRING, 12), e.writeString(this.content_type), e.writeFieldEnd()), e.writeFieldStop(), e.writeStructEnd()
 			};
 			var a = e.exports.CommentComposer = function(e) {
-				this.editor_mode = null, e && void 0 !== e.editor_mode && null !== e.editor_mode && (this.editor_mode = e.editor_mode)
+				this.editor_mode = null, this.text_type = null, this.final_status = null, e && (void 0 !== e.editor_mode && null !== e.editor_mode && (this.editor_mode = e.editor_mode), void 0 !== e.text_type && null !== e.text_type && (this.text_type = e.text_type), void 0 !== e.final_status && null !== e.final_status && (this.final_status = e.final_status))
 			};
 			a.prototype = {}, a.prototype.write = function(e) {
-				e.writeStructBegin("CommentComposer"), null !== this.editor_mode && void 0 !== this.editor_mode && (e.writeFieldBegin("editor_mode", r.Type.STRING, 1), e.writeString(this.editor_mode), e.writeFieldEnd()), e.writeFieldStop(), e.writeStructEnd()
+				e.writeStructBegin("CommentComposer"), null !== this.editor_mode && void 0 !== this.editor_mode && (e.writeFieldBegin("editor_mode", r.Type.STRING, 1), e.writeString(this.editor_mode), e.writeFieldEnd()), null !== this.text_type && void 0 !== this.text_type && (e.writeFieldBegin("text_type", r.Type.STRING, 2), e.writeString(this.text_type), e.writeFieldEnd()), null !== this.final_status && void 0 !== this.final_status && (e.writeFieldBegin("final_status", r.Type.STRING, 3), e.writeString(this.final_status), e.writeFieldEnd()), e.writeFieldStop(), e.writeStructEnd()
 			};
 			var l = e.exports.Notification = function(e) {
 				this.id = null, this.process_notes = null, this.dropped = null, this.type = null, this.title = null, this.body = null, this.authorization_status = null, e && (void 0 !== e.id && null !== e.id && (this.id = e.id), void 0 !== e.process_notes && null !== e.process_notes && (this.process_notes = e.process_notes), void 0 !== e.dropped && null !== e.dropped && (this.dropped = e.dropped), void 0 !== e.type && null !== e.type && (this.type = e.type), void 0 !== e.title && null !== e.title && (this.title = e.title), void 0 !== e.body && null !== e.body && (this.body = e.body), void 0 !== e.authorization_status && null !== e.authorization_status && (this.authorization_status = e.authorization_status))
@@ -40372,7 +40372,9 @@
 					type: e.type
 				}),
 				De = e => new Ae.CommentComposer({
-					editor_mode: e.editorMode
+					editor_mode: e.editorMode,
+					final_status: e.finalStatus,
+					text_type: e.textType
 				});
 			var Pe = i("./src/telemetry/eventSchemas/crawler_types.js");
 			const xe = e => new Pe.Crawler({
@@ -41216,4 +41218,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.a0edd6f3f52808845f6a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.f44f8fcf6e26ce4e241d.js.map
