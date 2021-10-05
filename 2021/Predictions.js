@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Predictions.ef04de7833e5715f243f.js
-// Retrieved at 10/4/2021, 2:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Predictions.452d0fa3121530dfcf29.js
+// Retrieved at 10/5/2021, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Predictions", "Powerups"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, a) {
@@ -2288,7 +2288,7 @@
 				for (const r of t) {
 					const t = e.subreddits.models[r];
 					if (!t) return null;
-					const s = Object(o.g)(e, {
+					const s = Object(o.h)(e, {
 						subredditId: r
 					});
 					n.b.has(t.name) || t.isNSFW || t.subscribers < 1e3 && !a || l.push({
@@ -2302,4 +2302,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Predictions.ef04de7833e5715f243f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Predictions.452d0fa3121530dfcf29.js.map

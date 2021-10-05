@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241.36fa65009880d4770911.js
-// Retrieved at 10/5/2021, 1:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241.c049bff3791019145dbc.js
+// Retrieved at 10/5/2021, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241"], {
 		"./src/reddit/actions/downToChat.ts": function(e, t, r) {
@@ -445,11 +445,11 @@
 			}) => {
 				var o;
 				const a = n();
-				if (Object(p.j)(a, {
+				if (Object(p.k)(a, {
 						subredditId: e
 					}) && Object(f.a)(a, {
 						subredditId: e
-					}) && (!t.fullData || Object(p.l)(a, {
+					}) && (!t.fullData || Object(p.m)(a, {
 						subredditId: e
 					})) && !t.forceLoad) return;
 				r(k());
@@ -999,7 +999,7 @@
 						e && i(Object(Y.f)({
 							welcomeMessage: e,
 							subredditId: ce
-						})), Object(E.b)(i, ce, null == ee ? void 0 : ee.subredditInfoByName, null == ee ? void 0 : ee.identity), Object(Te.g)(o(), {
+						})), Object(E.b)(i, ce, null == ee ? void 0 : ee.subredditInfoByName, null == ee ? void 0 : ee.identity), Object(Te.h)(o(), {
 							subredditId: ce
 						}) && Object(_e.a)(o())
 					}
@@ -5144,4 +5144,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241.36fa65009880d4770911.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241.c049bff3791019145dbc.js.map

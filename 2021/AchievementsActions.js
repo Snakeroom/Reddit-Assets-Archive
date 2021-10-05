@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AchievementsActions.88d690b87b6c4cbbc8f1.js
-// Retrieved at 10/4/2021, 10:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AchievementsActions.497094093905d05d049d.js
+// Retrieved at 10/5/2021, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AchievementsActions"], {
 		"./src/reddit/actions/economics/powerups/constants.ts": function(e, r, t) {
@@ -58,9 +58,9 @@
 			})), t.d(r, "getSubredditUserCommentsPowerupsInfoFromCommentCollection", (function() {
 				return R
 			})), t.d(r, "setSubredditUserAchievementFlair", (function() {
-				return g
-			})), t.d(r, "setSubredditUserSupporterFlair", (function() {
 				return D
+			})), t.d(r, "setSubredditUserSupporterFlair", (function() {
+				return g
 			})), t.d(r, "setSubredditUserPowerupsFlairsVisibility", (function() {
 				return x
 			}));
@@ -135,7 +135,7 @@
 					if (!e) return;
 					const i = d(),
 						n = Object(m.k)(i);
-					if (!n || !Object(y.g)(i, {
+					if (!n || !Object(y.h)(i, {
 							subredditId: e
 						})) return;
 					const s = !!Object(v.f)(i, {
@@ -149,7 +149,7 @@
 						fullData: !0
 					}));
 					const d = t();
-					return Object(y.g)(d, {
+					return Object(y.h)(d, {
 						subredditId: e
 					})
 				}, A = e => async (r, t) => {
@@ -174,7 +174,7 @@
 					Object.values(r).forEach(e => {
 						i.add(e.authorId)
 					}), await t(P(e, Array.from(i)))
-				}, g = (e, r) => async (t, d) => {
+				}, D = (e, r) => async (t, d) => {
 					const i = d(),
 						n = Object(m.k)(i);
 					if (!n) return;
@@ -189,7 +189,7 @@
 						achievementFlairType: r,
 						supporterFlairType: o
 					}))
-				}, D = (e, r) => async (t, d) => {
+				}, g = (e, r) => async (t, d) => {
 					const i = d(),
 						n = Object(m.k)(i);
 					if (!n) return;
@@ -552,4 +552,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AchievementsActions.88d690b87b6c4cbbc8f1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AchievementsActions.497094093905d05d049d.js.map

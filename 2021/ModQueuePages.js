@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.aa683d63c47deb443447.js
-// Retrieved at 10/4/2021, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.8e0d84c32f31e1e4b035.js
+// Retrieved at 10/5/2021, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1423,7 +1423,7 @@
 					renderedInOverlay: p,
 					subredditDisplayText: h,
 					renderContractorBadge: O
-				} = e, k = Object(_.a)(), T = a.subredditId, j = Object(i.e)(e => Object(w.g)(e, {
+				} = e, k = Object(_.a)(), T = a.subredditId, j = Object(i.e)(e => Object(w.h)(e, {
 					subredditId: T
 				}));
 				if (a.isDeleted) return o.a.createElement("div", {
@@ -6411,4 +6411,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.aa683d63c47deb443447.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.8e0d84c32f31e1e4b035.js.map

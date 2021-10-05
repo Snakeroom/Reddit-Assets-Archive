@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.b54f07f3a20e4beeec94.js
-// Retrieved at 10/5/2021, 1:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.4d6af9b8ecbf7887ee9c.js
+// Retrieved at 10/5/2021, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -2562,16 +2562,14 @@
 				return o
 			})), a.d(t, "d", (function() {
 				return i
-			})), a.d(t, "k", (function() {
-				return l
 			})), a.d(t, "j", (function() {
+				return l
+			})), a.d(t, "i", (function() {
 				return d
 			})), a.d(t, "h", (function() {
 				return m
-			})), a.d(t, "i", (function() {
-				return u
 			})), a.d(t, "c", (function() {
-				return p
+				return u
 			}));
 			const s = "ModerationPage--Modal--AddAward",
 				c = "ModerationPage--Modal--DeleteAwardConfirmation",
@@ -2582,8 +2580,7 @@
 				l = .1,
 				d = .1,
 				m = 500,
-				u = ["t5_2qqoq", "t5_37xo2", "t5_2r60y", "t5_mvcq5", "t5_4e4fpz", "t5_4e4ib9", "t5_4y3poa", "t5_4hmhx4"],
-				p = "https://reddit.zendesk.com/hc/en-us/articles/360050641932"
+				u = "https://reddit.zendesk.com/hc/en-us/articles/360050641932"
 		},
 		"./src/reddit/featureFlags/component.tsx": function(e, t, a) {
 			"use strict";
@@ -3919,4 +3916,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.b54f07f3a20e4beeec94.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.4d6af9b8ecbf7887ee9c.js.map

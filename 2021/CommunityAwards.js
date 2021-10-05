@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityAwards.ec840732b223b61f09fb.js
-// Retrieved at 9/27/2021, 11:20:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityAwards.b330a559b6c251be859c.js
+// Retrieved at 10/5/2021, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityAwards"], {
 		"./src/reddit/actions/gold/communityAwards/communityAwards.ts": function(e, t, r) {
@@ -31,9 +31,9 @@
 			})), r.d(t, "awardSheetInfoLoaded", (function() {
 				return Q
 			})), r.d(t, "removeCommunityAward", (function() {
-				return q
+				return F
 			})), r.d(t, "removeCommunityAwardSuccessful", (function() {
-				return M
+				return q
 			})), r.d(t, "disableAwardinCommunity", (function() {
 				return W
 			})), r.d(t, "enableAwardinCommunity", (function() {
@@ -294,16 +294,16 @@
 							}))
 						}
 					}
-				}, U = Object(n.a)(O.c), H = Object(n.a)(O.a), Q = Object(n.a)(O.b), q = (e, t) => async (r, n, {
+				}, U = Object(n.a)(O.c), H = Object(n.a)(O.a), Q = Object(n.a)(O.b), F = (e, t) => async (r, n, {
 					gqlContext: i
 				}) => {
-					r(F());
+					r(M());
 					try {
 						if ((await Object(m.m)(i(), t)).error) {
 							const e = A();
 							await r(B(e))
 						} else {
-							await r(M({
+							await r(q({
 								awardId: t,
 								subredditId: e
 							}));
@@ -323,7 +323,7 @@
 						const e = A();
 						await r(B(e))
 					}
-				}, F = Object(n.a)(O.jb), M = Object(n.a)(O.kb), J = Object(n.a)(O.ib), B = e => async (t, r) => {
+				}, M = Object(n.a)(O.jb), q = Object(n.a)(O.kb), J = Object(n.a)(O.ib), B = e => async (t, r) => {
 					await t(J(e)), t(Object(o.f)({
 						kind: c.b.Error,
 						duration: o.a,
@@ -332,14 +332,14 @@
 				}, W = (e, t) => async (r, n, {
 					gqlContext: i
 				}) => {
-					r(z());
+					r(V());
 					let s = a.fbt._("There was a problem disabling the {award name} Award. Please try again.", [a.fbt._param("award name", t.name)], {
 							hk: "3KNLaD"
 						}),
 						u = K(s),
 						b = c.b.Error;
 					try {
-						(await Object(m.h)(i(), t.id, e.id)).ok && (u = V({
+						(await Object(m.h)(i(), t.id, e.id)).ok && (u = z({
 							awardId: t.id,
 							subredditId: e.id
 						}), s = a.fbt._("{award name} Award successfully disabled in {subreddit or profile prefixed name}!", [a.fbt._param("award name", t.name), a.fbt._param("subreddit or profile prefixed name", e.displayText)], {
@@ -354,7 +354,7 @@
 							kind: b
 						}))
 					}
-				}, z = Object(n.a)(O.k), V = Object(n.a)(O.l), K = Object(n.a)(O.j), X = (e, t) => async (r, n, {
+				}, V = Object(n.a)(O.k), z = Object(n.a)(O.l), K = Object(n.a)(O.j), X = (e, t) => async (r, n, {
 					gqlContext: i
 				}) => {
 					r(Y());
@@ -395,16 +395,14 @@
 				return s
 			})), r.d(t, "d", (function() {
 				return o
-			})), r.d(t, "k", (function() {
-				return c
 			})), r.d(t, "j", (function() {
+				return c
+			})), r.d(t, "i", (function() {
 				return u
 			})), r.d(t, "h", (function() {
 				return b
-			})), r.d(t, "i", (function() {
-				return l
 			})), r.d(t, "c", (function() {
-				return f
+				return l
 			}));
 			const a = "ModerationPage--Modal--AddAward",
 				n = "ModerationPage--Modal--DeleteAwardConfirmation",
@@ -415,8 +413,7 @@
 				c = .1,
 				u = .1,
 				b = 500,
-				l = ["t5_2qqoq", "t5_37xo2", "t5_2r60y", "t5_mvcq5", "t5_4e4fpz", "t5_4e4ib9", "t5_4y3poa", "t5_4hmhx4"],
-				f = "https://reddit.zendesk.com/hc/en-us/articles/360050641932"
+				l = "https://reddit.zendesk.com/hc/en-us/articles/360050641932"
 		},
 		"./src/reddit/endpoints/gold/communityAwards.ts": function(e, t, r) {
 			"use strict";
@@ -698,4 +695,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityAwards.ec840732b223b61f09fb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityAwards.b330a559b6c251be859c.js.map

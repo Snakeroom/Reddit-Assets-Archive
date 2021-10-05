@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-RichTextEditor-Toolbar-EmoteButton.7bd67c60f2f0eaa2bac0.js
-// Retrieved at 10/5/2021, 1:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-RichTextEditor-Toolbar-EmoteButton.ac886b26039d3ffe49c7.js
+// Retrieved at 10/5/2021, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-RichTextEditor-Toolbar-EmoteButton"], {
 		"./src/reddit/components/InfoTextTooltip/index.m.less": function(e, t, o) {
@@ -162,17 +162,17 @@
 				}),
 				customEmotes: (e, {
 					subredditId: t
-				}) => Object(x.h)(e, {
+				}) => Object(x.i)(e, {
 					subredditId: t
 				}),
 				userCanEditCustomEmojis: (e, {
 					subredditId: t
-				}) => !!t && Object(x.t)(e, {
+				}) => !!t && Object(x.u)(e, {
 					subredditId: t
 				}),
 				subredditHasPowerups: (e, {
 					subredditId: t
-				}) => Object(x.g)(e, {
+				}) => Object(x.h)(e, {
 					subredditId: t
 				})
 			});
@@ -187,7 +187,7 @@
 					subredditHasPowerups: h,
 					subredditId: I,
 					useIconName: v
-				} = e, g = I ? Object(u.j)(m.b.EMOJI_PROMO_TOOLTIP_DISPLAY_COUNT_PER_SUBREDDIT, I) : 0, P = h && g < T && b && 0 === x.length, [w, y] = Object(n.useState)(P), N = Object(i.d)();
+				} = e, P = I ? Object(u.j)(m.b.EMOJI_PROMO_TOOLTIP_DISPLAY_COUNT_PER_SUBREDDIT, I) : 0, g = h && P < T && b && 0 === x.length, [w, y] = Object(n.useState)(g), N = Object(i.d)();
 				Object(n.useEffect)(() => {
 					w && I && setTimeout(() => {
 						Object(u.S)(m.b.EMOJI_PROMO_TOOLTIP_DISPLAY_COUNT_PER_SUBREDDIT, I), N(Object(a.f)({
@@ -247,4 +247,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-RichTextEditor-Toolbar-EmoteButton.7bd67c60f2f0eaa2bac0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-RichTextEditor-Toolbar-EmoteButton.ac886b26039d3ffe49c7.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.48218dec8f6cefd5c750.js
-// Retrieved at 10/5/2021, 1:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.afe28da74912b9542025.js
+// Retrieved at 10/5/2021, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -2858,7 +2858,7 @@
 					renderedInOverlay: p,
 					subredditDisplayText: h,
 					renderContractorBadge: O
-				} = e, w = Object(k.a)(), j = i.subredditId, I = Object(r.e)(e => Object(S.g)(e, {
+				} = e, w = Object(k.a)(), j = i.subredditId, I = Object(r.e)(e => Object(S.h)(e, {
 					subredditId: j
 				}));
 				if (i.isDeleted) return o.a.createElement("div", {
@@ -4998,7 +4998,7 @@
 				hasSecondaryTags: N.m,
 				geoPlace: (e, t) => e.tags.models.geoPlaces[t.subredditId],
 				welcomeMessageExperimentVariant: S.a,
-				subredditHasPowerups: (e, t) => Object(O.g)(e, {
+				subredditHasPowerups: (e, t) => Object(O.h)(e, {
 					subredditId: t.subredditId
 				}),
 				powerupsBenefitSettings: (e, t) => Object(w.a)(e, {
@@ -13056,7 +13056,7 @@
 					[r, l] = Object(n.useState)(null),
 					c = () => l(null),
 					[m, k] = Object(n.useState)(!1),
-					S = Object(o.e)(t => Object(_.h)(t, {
+					S = Object(o.e)(t => Object(_.i)(t, {
 						subredditId: e
 					})),
 					{
@@ -13178,7 +13178,7 @@
 			}) => {
 				const t = Object(o.d)(),
 					s = Object(d.a)(),
-					n = Object(o.e)(t => Object(_.g)(t, {
+					n = Object(o.e)(t => Object(_.h)(t, {
 						subredditId: e
 					})),
 					u = Object(o.e)(t => Object(T.Q)(t, {
@@ -18889,16 +18889,14 @@
 				return i
 			})), s.d(t, "d", (function() {
 				return d
-			})), s.d(t, "k", (function() {
-				return l
 			})), s.d(t, "j", (function() {
+				return l
+			})), s.d(t, "i", (function() {
 				return c
 			})), s.d(t, "h", (function() {
 				return m
-			})), s.d(t, "i", (function() {
-				return u
 			})), s.d(t, "c", (function() {
-				return p
+				return u
 			}));
 			const n = "ModerationPage--Modal--AddAward",
 				a = "ModerationPage--Modal--DeleteAwardConfirmation",
@@ -18909,8 +18907,7 @@
 				l = .1,
 				c = .1,
 				m = 500,
-				u = ["t5_2qqoq", "t5_37xo2", "t5_2r60y", "t5_mvcq5", "t5_4e4fpz", "t5_4e4ib9", "t5_4y3poa", "t5_4hmhx4"],
-				p = "https://reddit.zendesk.com/hc/en-us/articles/360050641932"
+				u = "https://reddit.zendesk.com/hc/en-us/articles/360050641932"
 		},
 		"./src/reddit/controls/CheckboxInput/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -21762,7 +21759,7 @@
 				}),
 				isPowerupsTabVisible: (e, {
 					subreddit: t
-				}) => Object(Y.g)(e, {
+				}) => Object(Y.h)(e, {
 					subredditId: t.id
 				}) && Object(Q.k)(e)
 			});
@@ -22509,4 +22506,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.48218dec8f6cefd5c750.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.afe28da74912b9542025.js.map

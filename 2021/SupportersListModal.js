@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SupportersListModal.14bc28865f70256663c7.js
-// Retrieved at 10/1/2021, 6:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SupportersListModal.d74892448d219b108a75.js
+// Retrieved at 10/5/2021, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SupportersListModal"], {
 		"./src/reddit/components/Econ/Common/ModalCloseButton/index.m.less": function(e, t, s) {
@@ -51,7 +51,7 @@
 				className: e,
 				onClick: t
 			}) => {
-				const s = Object(a.e)(i.u),
+				const s = Object(a.e)(i.v),
 					r = Object(a.e)(l.h);
 				return n.a.createElement(o.s, {
 					priority: o.b.Primary,
@@ -125,7 +125,7 @@
 					N = !!(null === (t = null == h ? void 0 : h.profile) || void 0 === t ? void 0 : t.isNsfw),
 					_ = Object(l.c)(h),
 					g = Object(l.a)(f),
-					S = n.a.createElement(x, {
+					v = n.a.createElement(x, {
 						userName: E,
 						isNsfw: N,
 						iconUrl: _
@@ -138,9 +138,9 @@
 					onClick: () => {
 						h && r(Object(d.C)(h.id, h.displayName))
 					}
-				}, S) : n.a.createElement("div", {
+				}, v) : n.a.createElement("div", {
 					className: b.a.user
-				}, S), n.a.createElement("div", {
+				}, v), n.a.createElement("div", {
 					className: b.a.counter
 				}, n.a.createElement(g, {
 					className: b.a.powerupIcon
@@ -303,9 +303,9 @@
 				N = s("./src/reddit/controls/InternalLink/index.tsx"),
 				_ = s("./src/reddit/helpers/trackers/powerups.ts"),
 				g = s("./src/reddit/hooks/useTracking.ts"),
-				S = s("./src/reddit/selectors/experiments/econ/index.ts");
+				v = s("./src/reddit/selectors/experiments/econ/index.ts");
 			const {
-				fbt: v
+				fbt: S
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), w = e => n.a.createElement(n.a.Fragment, null, n.a.createElement("div", {
 				className: h.a.supporterImageContainer
 			}, n.a.createElement(E.a, {
@@ -315,7 +315,7 @@
 				className: h.a.supporterImage
 			})), n.a.createElement("div", {
 				className: h.a.supporterName
-			}, e.name, " ", e.isCurrentUser && v._("(you)", null, {
+			}, e.name, " ", e.isCurrentUser && S._("(you)", null, {
 				hk: "3foyZr"
 			}))), L = e => e.isAnonymousUser ? n.a.createElement("div", {
 				className: e.className
@@ -325,7 +325,7 @@
 				onClick: e.onClick
 			}, e.children), j = e => {
 				var t;
-				const s = Object(a.e)(S.h),
+				const s = Object(a.e)(v.h),
 					r = Object(g.a)(),
 					{
 						supporter: o,
@@ -384,10 +384,10 @@
 			t.default = Object(o.a)(() => {
 				const e = Object(a.e)(y.k),
 					t = Object(a.e)(P.s),
-					s = Object(a.e)(e => t ? Object(O.m)(e, {
+					s = Object(a.e)(e => t ? Object(O.n)(e, {
 						subredditId: t.id
 					}) : []),
-					o = Object(a.e)(S.h),
+					o = Object(a.e)(v.h),
 					[b, x] = Object(r.useState)([]);
 				Object(r.useEffect)(() => {
 					var e;
@@ -405,7 +405,7 @@
 					},
 					{
 						container: N,
-						isScrollGradientVisible: v,
+						isScrollGradientVisible: S,
 						calculateGradientVisibility: w
 					} = Object(C.a)(!0);
 				return Object(r.useEffect)(() => {
@@ -437,7 +437,7 @@
 					className: z.a.footer
 				}, n.a.createElement("div", {
 					className: Object(l.a)(z.a.scrollGradient, {
-						[z.a.gradientVisible]: v
+						[z.a.gradientVisible]: S
 					})
 				}), n.a.createElement(p.a, {
 					className: z.a.ctaButton,
@@ -617,4 +617,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SupportersListModal.14bc28865f70256663c7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SupportersListModal.d74892448d219b108a75.js.map

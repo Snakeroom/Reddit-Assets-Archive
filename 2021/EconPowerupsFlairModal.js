@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.9f63ac22c94f08fd36a7.js
-// Retrieved at 10/4/2021, 10:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.db71f56a66c40eca1d73.js
+// Retrieved at 10/5/2021, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsFlairModal"], {
 		"./src/reddit/actions/economics/powerups/flairs/index.ts": function(e, t, r) {
@@ -104,7 +104,7 @@
 					if (!e) return;
 					const i = s(),
 						n = Object(v.k)(i);
-					if (!n || !Object(h.g)(i, {
+					if (!n || !Object(h.h)(i, {
 							subredditId: e
 						})) return;
 					const o = !!Object(f.f)(i, {
@@ -118,7 +118,7 @@
 						fullData: !0
 					}));
 					const s = r();
-					return Object(h.g)(s, {
+					return Object(h.h)(s, {
 						subredditId: e
 					})
 				}, k = e => async (t, r) => {
@@ -670,7 +670,7 @@
 						subredditId: t,
 						userId: r
 					})),
-					d = Object(n.e)(e => Object(k.n)(e, {
+					d = Object(n.e)(e => Object(k.o)(e, {
 						subredditId: t
 					})),
 					c = Object(n.e)(e => Object(S.j)(e, {
@@ -765,7 +765,7 @@
 						subredditId: e,
 						userId: t
 					})),
-					c = Object(n.e)(t => Object(k.n)(t, {
+					c = Object(n.e)(t => Object(k.o)(t, {
 						subredditId: e
 					}));
 				if (Object(s.useEffect)(() => {
@@ -1005,7 +1005,7 @@
 				className: e,
 				onClick: t
 			}) => {
-				const r = Object(n.e)(d.u),
+				const r = Object(n.e)(d.v),
 					s = Object(n.e)(a.h);
 				return i.a.createElement(o.s, {
 					priority: o.b.Primary,
@@ -1378,4 +1378,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.9f63ac22c94f08fd36a7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.db71f56a66c40eca1d73.js.map

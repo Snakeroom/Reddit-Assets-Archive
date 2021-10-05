@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.13618e57e821162e8c73.js
-// Retrieved at 10/5/2021, 12:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.d951bdeed0080c86549d.js
+// Retrieved at 10/5/2021, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"], {
 		"./src/lib/linkMatchers/index.ts": function(e, t, r) {
@@ -197,7 +197,7 @@
 					if (!e) return;
 					const s = n(),
 						i = Object(g.k)(s);
-					if (!i || !Object(h.g)(s, {
+					if (!i || !Object(h.h)(s, {
 							subredditId: e
 						})) return;
 					const a = !!Object(f.f)(s, {
@@ -211,7 +211,7 @@
 						fullData: !0
 					}));
 					const n = r();
-					return Object(h.g)(n, {
+					return Object(h.h)(n, {
 						subredditId: e
 					})
 				}, N = e => async (t, r) => {
@@ -962,7 +962,7 @@
 				className: e,
 				onClick: t
 			}) => {
-				const r = Object(i.e)(d.u),
+				const r = Object(i.e)(d.v),
 					n = Object(i.e)(o.h);
 				return s.a.createElement(a.s, {
 					priority: a.b.Primary,
@@ -1353,16 +1353,16 @@
 				const r = Object(a.d)(),
 					v = Object(b.a)(),
 					w = Object(a.e)(x.k),
-					j = Object(a.e)(e => Object(f.j)(e, {
+					j = Object(a.e)(e => Object(f.k)(e, {
 						subredditId: t
 					})),
 					O = Object(a.e)(e => Object(g.Q)(e, {
 						subredditId: t
 					})),
-					k = Object(a.e)(e => Object(f.m)(e, {
+					k = Object(a.e)(e => Object(f.n)(e, {
 						subredditId: t
 					})),
-					C = Object(a.e)(e => !!Object(f.k)(e, {
+					C = Object(a.e)(e => !!Object(f.l)(e, {
 						subredditId: t
 					})),
 					S = Object(a.e)(h.h);
@@ -3596,4 +3596,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.13618e57e821162e8c73.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.d951bdeed0080c86549d.js.map

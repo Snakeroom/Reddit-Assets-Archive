@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.e2f535f89878e7b9d878.js
-// Retrieved at 10/4/2021, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.b941ee9d5c63b8fa9ab2.js
+// Retrieved at 10/5/2021, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, n) {
@@ -876,15 +876,15 @@
 				hk: "4WgEW"
 			}));
 			var K = n("./src/reddit/components/Comments/Comment/TopMeta/edited.m.less"),
-				q = n.n(K);
+				Z = n.n(K);
 			const {
-				fbt: Z
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), Y = ({
+				fbt: Y
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), q = ({
 				compact: e,
 				editedAt: t
 			}) => r.a.createElement(C.a, {
-				className: q.a.editedText
-			}, Z._("edited {time}", [Z._param("time", r.a.createElement(U.d, {
+				className: Z.a.editedText
+			}, Y._("edited {time}", [Y._param("time", r.a.createElement(U.d, {
 				seconds: t,
 				noPostfix: e,
 				shortenedUnit: e
@@ -1114,7 +1114,7 @@
 					renderedInOverlay: p,
 					subredditDisplayText: b,
 					renderContractorBadge: j
-				} = e, I = Object(g.a)(), T = i.subredditId, w = Object(a.e)(e => Object(_.g)(e, {
+				} = e, I = Object(g.a)(), T = i.subredditId, w = Object(a.e)(e => Object(_.h)(e, {
 					subredditId: T
 				}));
 				if (i.isDeleted) return r.a.createElement("div", {
@@ -1193,7 +1193,7 @@
 					className: ke.a.separator
 				}), r.a.createElement(Oe, null)), i.editedAt && r.a.createElement(r.a.Fragment, null, r.a.createElement(C.c, {
 					className: ke.a.separator
-				}), r.a.createElement(Y, {
+				}), r.a.createElement(q, {
 					compact: !0,
 					editedAt: i.editedAt
 				})), r.a.createElement(me, {
@@ -1358,7 +1358,7 @@
 					className: Se.a.separator
 				}), r.a.createElement(Oe, null)), a.editedAt && r.a.createElement(r.a.Fragment, null, r.a.createElement(C.c, {
 					className: Se.a.separator
-				}), r.a.createElement(Y, {
+				}), r.a.createElement(q, {
 					editedAt: a.editedAt
 				}))), r.a.createElement(me, {
 					comment: a,
@@ -2711,16 +2711,14 @@
 				return i
 			})), n.d(t, "d", (function() {
 				return c
-			})), n.d(t, "k", (function() {
-				return d
 			})), n.d(t, "j", (function() {
+				return d
+			})), n.d(t, "i", (function() {
 				return l
 			})), n.d(t, "h", (function() {
 				return m
-			})), n.d(t, "i", (function() {
-				return u
 			})), n.d(t, "c", (function() {
-				return p
+				return u
 			}));
 			const s = "ModerationPage--Modal--AddAward",
 				o = "ModerationPage--Modal--DeleteAwardConfirmation",
@@ -2731,8 +2729,7 @@
 				d = .1,
 				l = .1,
 				m = 500,
-				u = ["t5_2qqoq", "t5_37xo2", "t5_2r60y", "t5_mvcq5", "t5_4e4fpz", "t5_4e4ib9", "t5_4y3poa", "t5_4hmhx4"],
-				p = "https://reddit.zendesk.com/hc/en-us/articles/360050641932"
+				u = "https://reddit.zendesk.com/hc/en-us/articles/360050641932"
 		},
 		"./src/reddit/controls/Checkbox/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -3303,4 +3300,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.e2f535f89878e7b9d878.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.b941ee9d5c63b8fa9ab2.js.map

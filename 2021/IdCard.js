@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.10051c44d4b7c15d9598.js
-// Retrieved at 10/5/2021, 1:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.470e426c5ce241462097.js
+// Retrieved at 10/5/2021, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "AchievementsActions", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -536,7 +536,7 @@
 					if (!e) return;
 					const s = r(),
 						i = Object(_.k)(s);
-					if (!i || !Object(h.g)(s, {
+					if (!i || !Object(h.h)(s, {
 							subredditId: e
 						})) return;
 					const o = !!Object(f.f)(s, {
@@ -550,7 +550,7 @@
 						fullData: !0
 					}));
 					const r = n();
-					return Object(h.g)(r, {
+					return Object(h.h)(r, {
 						subredditId: e
 					})
 				}, w = e => async (t, n) => {
@@ -3117,7 +3117,7 @@
 				fbt: je
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), ke = z.a.div("FlairSettingsContainer", Oe.a), we = z.a.div("FlairPreviewWrapper", Oe.a), Fe = z.a.div("PreviewTitle", Oe.a), Ne = z.a.wrapped(_e.b, "FlairComponent", Oe.a), Re = z.a.wrapped(j.q, "TertiaryButton", Oe.a), Pe = z.a.wrapped(Re, "IconButton", Oe.a), De = z.a.span("Username", Oe.a), Ue = Object(ge.a)("spBadges", fe.a), Ae = Object(u.c)({
 				currentUser: F.k,
-				isAchievementFlairModalEnabled: (e, t) => Object(ve.g)(e, {
+				isAchievementFlairModalEnabled: (e, t) => Object(ve.h)(e, {
 					subredditId: t.subredditId
 				}),
 				userFlairData: Te.d,
@@ -5782,7 +5782,7 @@
 					const n = p(e, {
 							subredditId: t
 						}),
-						r = Object(i.g)(e, {
+						r = Object(i.h)(e, {
 							subredditId: t
 						});
 					return n || r
@@ -5799,4 +5799,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.10051c44d4b7c15d9598.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.470e426c5ce241462097.js.map
