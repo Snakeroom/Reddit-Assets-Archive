@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-ChangePredictionOutcomeModal.2ee9c04dc49552587ceb.js
-// Retrieved at 10/1/2021, 6:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-ChangePredictionOutcomeModal.10575d3d965530982d58.js
+// Retrieved at 10/5/2021, 12:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction-ChangePredictionOutcomeModal"], {
 		"./node_modules/uuid/index.js": function(t, e, n) {
@@ -22,14 +22,14 @@
 					var b = i();
 					null == l && (l = o = [1 | b[0], b[1], b[2], b[3], b[4], b[5]]), null == p && (p = r = 16383 & (b[6] << 8 | b[7]))
 				}
-				var f = void 0 !== t.msecs ? t.msecs : (new Date).getTime(),
-					m = void 0 !== t.nsecs ? t.nsecs : s + 1,
-					O = f - c + (m - s) / 1e4;
-				if (O < 0 && void 0 === t.clockseq && (p = p + 1 & 16383), (O < 0 || f > c) && void 0 === t.nsecs && (m = 0), m >= 1e4) throw new Error("uuid.v1(): Can't create more than 10M uuids/sec");
-				c = f, s = m, r = p;
-				var j = (1e4 * (268435455 & (f += 122192928e5)) + m) % 4294967296;
+				var m = void 0 !== t.msecs ? t.msecs : (new Date).getTime(),
+					f = void 0 !== t.nsecs ? t.nsecs : s + 1,
+					O = m - c + (f - s) / 1e4;
+				if (O < 0 && void 0 === t.clockseq && (p = p + 1 & 16383), (O < 0 || m > c) && void 0 === t.nsecs && (f = 0), f >= 1e4) throw new Error("uuid.v1(): Can't create more than 10M uuids/sec");
+				c = m, s = f, r = p;
+				var j = (1e4 * (268435455 & (m += 122192928e5)) + f) % 4294967296;
 				u[a++] = j >>> 24 & 255, u[a++] = j >>> 16 & 255, u[a++] = j >>> 8 & 255, u[a++] = 255 & j;
-				var h = f / 4294967296 * 1e4 & 268435455;
+				var h = m / 4294967296 * 1e4 & 268435455;
 				u[a++] = h >>> 8 & 255, u[a++] = 255 & h, u[a++] = h >>> 24 & 15 | 16, u[a++] = h >>> 16 & 255, u[a++] = p >>> 8 | 128, u[a++] = 255 & p;
 				for (var v = 0; v < 6; ++v) u[a + v] = l[v];
 				return e || d(u)
@@ -89,8 +89,8 @@
 				l = n("./src/reddit/endpoints/economics/predictions.ts"),
 				p = n("./src/reddit/helpers/graphql/normalizePostFromGql/index.ts"),
 				b = n("./src/reddit/helpers/graphql/normalizePredictionTournamentFromGql/index.ts"),
-				f = n("./src/redditGQL/types.ts"),
-				m = n("./src/reddit/actions/login.ts"),
+				m = n("./src/redditGQL/types.ts"),
+				f = n("./src/reddit/actions/login.ts"),
 				O = n("./src/reddit/actions/modal.ts"),
 				j = n("./src/reddit/constants/modals.ts"),
 				h = n("./src/reddit/selectors/experiments/econ/index.ts"),
@@ -221,7 +221,7 @@
 							isStartImmediately: !0,
 							subredditId: t,
 							predictionDrafts: i,
-							currency: d ? f.b.Coins : f.b.Tokens
+							currency: d ? m.c.Coins : m.c.Tokens
 						}),
 						{
 							createPredictionTournament: s
@@ -324,7 +324,7 @@
 					const o = n();
 					Object(I.K)(o) ? await e(Object(O.h)(j.a.ECON_PREDICTIONS_PREMIUM_UPSELL, {
 						feature: t
-					})) : await e(Object(m.i)())
+					})) : await e(Object(f.i)())
 				}, V = () => Object(O.g)(j.a.ECON_PREDICTIONS_PREMIUM_UPSELL), W = t => async (e, n, {
 					gqlContext: r
 				}) => {
@@ -377,9 +377,9 @@
 			})), n.d(e, "e", (function() {
 				return b
 			})), n.d(e, "c", (function() {
-				return f
-			})), n.d(e, "d", (function() {
 				return m
+			})), n.d(e, "d", (function() {
+				return f
 			}));
 			var o = n("./src/lib/initializeClient/installReducer.ts"),
 				r = n("./src/reddit/actions/economics/predictions/index.ts"),
@@ -442,10 +442,10 @@
 			const b = t => Object(d.h)(s.a.ECON_PREDICTIONS_CHANGE_END_TIME, {
 					postId: t
 				}),
-				f = t => Object(d.h)(s.a.ECON_PREDICTIONS_CANCEL_PREDICTION, {
+				m = t => Object(d.h)(s.a.ECON_PREDICTIONS_CANCEL_PREDICTION, {
 					postId: t
 				}),
-				m = t => Object(d.h)(s.a.ECON_PREDICTIONS_CHANGE_OUTCOME, {
+				f = t => Object(d.h)(s.a.ECON_PREDICTIONS_CHANGE_OUTCOME, {
 					postId: t
 				})
 		},
@@ -475,8 +475,8 @@
 				l = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
 				p = n("./src/reddit/constants/modals.ts"),
 				b = n("./src/reddit/controls/TextButton/index.tsx"),
-				f = n("./src/reddit/helpers/trackers/predictionsModTools.ts"),
-				m = n("./src/reddit/hooks/useTracking.ts"),
+				m = n("./src/reddit/helpers/trackers/predictionsModTools.ts"),
+				f = n("./src/reddit/hooks/useTracking.ts"),
 				O = n("./src/reddit/icons/svgs/CircleCheck/index.tsx"),
 				j = n("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
 				h = n("./src/reddit/selectors/posts.ts"),
@@ -534,7 +534,7 @@
 				w = () => {
 					var t, e;
 					const n = Object(c.d)(),
-						o = Object(m.a)(),
+						o = Object(f.a)(),
 						r = Object(c.e)(h.R),
 						i = () => n(Object(u.g)(p.a.ECON_PREDICTIONS_CHANGE_OUTCOME));
 					return d.a.createElement(C, {
@@ -542,7 +542,7 @@
 						onOverlayClick: i,
 						onClose: i,
 						onChangeOutcome: t => {
-							r && (n(Object(a.b)(r.id, t.id)), o(Object(f.e)(r.id)), i())
+							r && (n(Object(a.b)(r.id, t.id)), o(Object(m.e)(r.id)), i())
 						},
 						options: (null === (t = null == r ? void 0 : r.pollData) || void 0 === t ? void 0 : t.options) || [],
 						resolvedOptionId: (null === (e = null == r ? void 0 : r.pollData) || void 0 === e ? void 0 : e.resolvedOptionId) || ""
@@ -594,8 +594,8 @@
 				l = n("./src/redditGQL/operations/GetPredictionChipPackages.json"),
 				p = n("./src/redditGQL/operations/GetPredictionCreationAllowance.json"),
 				b = n("./src/redditGQL/operations/GetPredictionToken.json"),
-				f = n("./src/redditGQL/operations/GetTournaments.json"),
-				m = n("./src/redditGQL/operations/ResolvePrediction.json"),
+				m = n("./src/redditGQL/operations/GetTournaments.json"),
+				f = n("./src/redditGQL/operations/ResolvePrediction.json"),
 				O = n("./src/redditGQL/operations/SubredditTopPredictors.json"),
 				j = n("./src/redditGQL/operations/UpdatePredictionTournament.json"),
 				h = n("./src/redditGQL/operations/VotePrediction.json");
@@ -623,7 +623,7 @@
 				postId: e,
 				optionId: n
 			}) => Object(o.a)(t, {
-				...m,
+				...f,
 				variables: {
 					input: {
 						postId: e,
@@ -659,7 +659,7 @@
 				}),
 				g = async (t, e) => {
 					const n = await Object(o.a)(t, {
-						...f,
+						...m,
 						variables: e
 					});
 					if (!Object(r.c)(n) || n.error) throw new Error("Failed to fetch tournaments");
@@ -851,7 +851,7 @@
 				}
 		},
 		"./src/redditGQL/operations/AddPredictionDrafts.json": function(t) {
-			t.exports = JSON.parse('{"id":"f87162053448"}')
+			t.exports = JSON.parse('{"id":"90a9ac95262d"}')
 		},
 		"./src/redditGQL/operations/CancelPrediction.json": function(t) {
 			t.exports = JSON.parse('{"id":"fac88c91fec8"}')
@@ -863,10 +863,10 @@
 			t.exports = JSON.parse('{"id":"90c7b71fa93f"}')
 		},
 		"./src/redditGQL/operations/CreatePredictionTournament.json": function(t) {
-			t.exports = JSON.parse('{"id":"723a33950f71"}')
+			t.exports = JSON.parse('{"id":"63b8ae32b6ea"}')
 		},
 		"./src/redditGQL/operations/EndPredictionTournament.json": function(t) {
-			t.exports = JSON.parse('{"id":"619d946d303a"}')
+			t.exports = JSON.parse('{"id":"0a5a0b11accd"}')
 		},
 		"./src/redditGQL/operations/GetPredictionChipPackages.json": function(t) {
 			t.exports = JSON.parse('{"id":"5ce83e513fa5"}')
@@ -878,7 +878,7 @@
 			t.exports = JSON.parse('{"id":"26b911e67a5f"}')
 		},
 		"./src/redditGQL/operations/GetTournaments.json": function(t) {
-			t.exports = JSON.parse('{"id":"9101a8318ed1"}')
+			t.exports = JSON.parse('{"id":"c149434123b1"}')
 		},
 		"./src/redditGQL/operations/ResolvePrediction.json": function(t) {
 			t.exports = JSON.parse('{"id":"d742e3019cfe"}')
@@ -887,11 +887,11 @@
 			t.exports = JSON.parse('{"id":"a9582ea601a1"}')
 		},
 		"./src/redditGQL/operations/UpdatePredictionTournament.json": function(t) {
-			t.exports = JSON.parse('{"id":"36df0d6f6bca"}')
+			t.exports = JSON.parse('{"id":"70baf378030a"}')
 		},
 		"./src/redditGQL/operations/VotePrediction.json": function(t) {
 			t.exports = JSON.parse('{"id":"484780ada6a2"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-ChangePredictionOutcomeModal.2ee9c04dc49552587ceb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-ChangePredictionOutcomeModal.10575d3d965530982d58.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.f44f8fcf6e26ce4e241d.js
-// Retrieved at 10/5/2021, 11:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.41dabad8d1eda1ac3cd2.js
+// Retrieved at 10/5/2021, 12:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -2500,10 +2500,10 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("147194"),
+				buildNumber: Object(r.c)("147204"),
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
-				buildTimestamp: Object(r.b)("1633444659"),
+				buildTimestamp: Object(r.b)("1633448613"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -5038,14 +5038,14 @@
 					}))
 				},
 				z = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c0057c2aeadbd57d55f1e912a4f4134cbd3cf9599-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c194c5f9c5f43897aee53672a3d066b12ec32eff2-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${v.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "0057c2aeadbd57d55f1e912a4f4134cbd3cf9599-production",
+						release: "194c5f9c5f43897aee53672a3d066b12ec32eff2-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -5558,7 +5558,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "0057c2aeadbd57d55f1e912a4f4134cbd3cf9599-production",
+						releaseClient: "194c5f9c5f43897aee53672a3d066b12ec32eff2-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -9692,19 +9692,19 @@
 		"./src/reddit/actions/pages/search.ts": function(e, t, i) {
 			"use strict";
 			i.r(t), i.d(t, "SEARCH_PENDING", (function() {
-				return F
-			})), i.d(t, "SEARCH_RESULTS_RECEIVED", (function() {
 				return C
-			})), i.d(t, "SEARCH_FAILED", (function() {
+			})), i.d(t, "SEARCH_RESULTS_RECEIVED", (function() {
 				return N
-			})), i.d(t, "searchPending", (function() {
+			})), i.d(t, "SEARCH_FAILED", (function() {
 				return A
-			})), i.d(t, "searchResultsReceived", (function() {
+			})), i.d(t, "searchPending", (function() {
 				return j
+			})), i.d(t, "searchResultsReceived", (function() {
+				return D
 			})), i.d(t, "searchDataRequested", (function() {
-				return x
-			})), i.d(t, "searchResultsRequested", (function() {
 				return L
+			})), i.d(t, "searchResultsRequested", (function() {
+				return B
 			}));
 			i("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = i("./node_modules/fbt/lib/FbtPublic.js"),
@@ -9730,85 +9730,113 @@
 				T = i("./src/reddit/models/Toast/index.ts"),
 				S = i("./src/reddit/reducers/sidebarPromotedPosts/models/index.ts"),
 				O = i("./src/reddit/selectors/experiments/serpRedesignLayout.ts"),
-				I = i("./src/reddit/selectors/subreddit.ts"),
-				R = i("./src/reddit/selectors/user.ts");
-			const F = "SEARCH__SEARCH_PENDING",
-				C = "SEARCH__SEARCH_RESULTS_RECEIVED",
-				N = "SEARCH__SEARCH_FAILED",
-				A = Object(d.a)(F),
+				I = i("./src/reddit/selectors/multireddit.ts"),
+				R = i("./src/reddit/selectors/subreddit.ts"),
+				F = i("./src/reddit/selectors/user.ts");
+			const C = "SEARCH__SEARCH_PENDING",
+				N = "SEARCH__SEARCH_RESULTS_RECEIVED",
+				A = "SEARCH__SEARCH_FAILED",
 				j = Object(d.a)(C),
 				D = Object(d.a)(N),
-				P = e => n.fbt._("reddit.com: search results - {query}", [n.fbt._param("query", e || "None")], {
+				P = Object(d.a)(A),
+				x = e => n.fbt._("reddit.com: search results - {query}", [n.fbt._param("query", e || "None")], {
 					hk: "1XOKAg"
 				}),
-				x = (e, t, i, r) => async (s, d, {
-					apiContext: l
+				L = (e, t, i, r) => async (s, d, {
+					apiContext: l,
+					gqlContext: p
 				}) => {
-					const p = d(),
-						w = t[b.c],
-						F = t.category;
-					(w || F) && (await Promise.all([s(m.g()), s(c.a())]), F && await Promise.all([s(c.b(F, 10)), s(m.h(E.g, F))]));
+					const w = d(),
+						C = t[b.c],
+						N = t.category;
+					(C || N) && (await Promise.all([s(m.g()), s(c.a())]), N && await Promise.all([s(c.b(N, 10)), s(m.h(E.g, N))]));
 					const {
-						q: C
-					} = t, N = !!C && o.Lb.some(e => C.includes(`${e}:`));
-					let P = t.type.indexOf(o.Xb.Posts) > -1 || !(!i || !t.restrict_sr) || N;
-					if (P) {
-						const t = p.listings.postOrder.ids[e],
-							i = p.listings.postOrder.api.error[e];
-						P = !(p.listings.postOrder.api.pending[e] || t && !i)
+						q: A
+					} = t, x = !!A && o.Lb.some(e => A.includes(`${e}:`));
+					let B = t.type.indexOf(o.Xb.Posts) > -1 || !(!i || !t.restrict_sr) || x;
+					if (B) {
+						const t = w.listings.postOrder.ids[e],
+							i = w.listings.postOrder.api.error[e];
+						B = !(w.listings.postOrder.api.pending[e] || t && !i)
 					}
-					let L = t.type.indexOf(o.Xb.Subreddits) > -1 || t.type.indexOf(o.Xb.Users) > -1;
-					if (L) {
-						const t = p.listings.listingOrder.identifiers[e],
-							i = p.listings.listingOrder.api.error[e];
-						L = !(p.listings.listingOrder.api.pending[e] || t && !i)
+					let k = t.type.indexOf(o.Xb.Subreddits) > -1 || t.type.indexOf(o.Xb.Users) > -1;
+					if (k) {
+						const t = w.listings.listingOrder.identifiers[e],
+							i = w.listings.listingOrder.api.error[e];
+						k = !(w.listings.listingOrder.api.pending[e] || t && !i)
 					}
-					if (!P && !L) return void(p.sidebarPromotedPosts.firstFetch || window.addEventListener("load", () => {
+					if (!B && !k) return void(w.sidebarPromotedPosts.firstFetch || window.addEventListener("load", () => {
 						s(Object(u.b)(S.a.SEARCH_RESULTS))
 					}));
 					t.q && s(Object(h.r)(t.q));
-					const B = `error-${e}`,
+					const M = `error-${e}`,
 						{
-							type: k
+							type: U
 						} = t;
-					s(A({
+					s(j({
 						key: e,
-						type: k
+						type: U
 					}));
-					const M = await Object(v.a)("searchResults", () => Object(g.a)(l(), i, r, {
-						...t,
-						q: Object(O.b)(p) && t.q ? Object(y.a)(t.q, Object(R.eb)(p), "1" === t.include_over_18, [a.a.PromotedTrend, a.a.Trending].includes(t.source)) : t.q,
-						type: (t.type || []).join(","),
-						b: !N
-					}));
-					if (M.ok) {
+					const G = i && Object(R.B)(d(), i),
+						V = Object(O.c)(w),
+						H = await Object(v.a)("searchResults", () => {
+							var e;
+							const n = {
+									...t,
+									q: Object(O.b)(w) && t.q ? Object(y.a)(t.q, Object(F.eb)(w), "1" === t.include_over_18, [a.a.PromotedTrend, a.a.Trending].includes(t.source)) : t.q,
+									type: (t.type || []).join(","),
+									b: !x
+								},
+								s = r && i ? null === (e = Object(I.d)(w, {
+									multiredditName: i,
+									username: r
+								})) || void 0 === e ? void 0 : e.subredditIds : void 0;
+							let o = [];
+							return s ? o = s : G && (o = [G]), V ? Object(g.a)({
+								context: p(),
+								isSerpRedesignLayoutM2: V,
+								options: n,
+								subredditIds: o,
+								tokens: {
+									communities: null,
+									posts: null,
+									users: null
+								}
+							}) : Object(g.a)({
+								context: l(),
+								isSerpRedesignLayoutM2: V,
+								options: n,
+								username: r,
+								subredditName: i
+							})
+						});
+					if (H.ok) {
 						const n = {
 								key: e,
-								type: k,
-								meta: p.meta,
+								type: U,
+								meta: w.meta,
 								searchQuery: t.q,
 								subredditName: i,
 								username: r
 							},
-							o = M.body;
-						if (s(j({
-								categoryName: w,
+							o = H.body;
+						if (s(D({
+								categoryName: C,
 								...n,
 								...o
-							})), s(f.g(B)), s(Object(u.b)(S.a.SEARCH_RESULTS)), i) {
-							const e = Object(I.B)(d(), i),
-								t = Object(_.c)(o.posts, e),
-								n = Object(_.b)(o.structuredStyles || {}),
-								r = (n ? Object(_.d)(n) : []).concat(t);
-							s(Object(_.a)(r, e))
+							})), s(f.g(M)), s(Object(u.b)(S.a.SEARCH_RESULTS)), i && G) {
+							const e = Object(_.c)(o.posts, G),
+								t = Object(_.b)(o.structuredStyles || {}),
+								i = (t ? Object(_.d)(t) : []).concat(e);
+							s(Object(_.a)(i, G))
 						}
-					} else s(D({
+					} else s(P({
 						key: e,
-						error: M.error,
-						type: k,
-						...M.body
+						error: H.error,
+						type: U,
+						...H.body
 					})), s(f.f({
-						id: B,
+						id: M,
 						kind: T.b.Error,
 						text: n.fbt._("Sorry, we couldn't load search results.", null, {
 							hk: "QgweL"
@@ -9816,14 +9844,14 @@
 						buttonText: n.fbt._("Retry", null, {
 							hk: "jld4g"
 						}),
-						buttonAction: x(e, t, i, r)
+						buttonAction: L(e, t, i, r)
 					}))
-				}, L = e => async (t, i) => {
+				}, B = e => async (t, i) => {
 					const n = i(),
 						r = Object(a.e)(s()(e.queryParams, b.t)),
 						d = {
 							...r,
-							type: Object(O.c)(n, r.type)
+							type: Object(O.d)(n, r.type)
 						},
 						u = e.params.subredditName || e.params.multiredditName,
 						{
@@ -9836,8 +9864,8 @@
 								type: [o.Xb.Subreddits, o.Xb.Users]
 							},
 							i = Object(a.b)(u, c, e);
-						await Promise.all([t(x(_, d, u, c)), t(x(i, e, u, c))])
-					} else await t(x(_, d, u, c));
+						await Promise.all([t(L(_, d, u, c)), t(L(i, e, u, c))])
+					} else await t(L(_, d, u, c));
 					let m = !1;
 					const {
 						type: h = []
@@ -9845,7 +9873,7 @@
 					f && n.listings.postOrder.api.error[_] && (m = !0), g && n.listings.listingOrder.api.error[_] && (m = !0), t(m ? p.l({
 						title: Object(l.d)()
 					}) : p.l({
-						title: P(d.q)
+						title: x(d.q)
 					}))
 				}
 		},
@@ -12238,43 +12266,43 @@
 		"./src/reddit/actions/search.ts": function(e, t, i) {
 			"use strict";
 			i.d(t, "b", (function() {
-				return S
-			})), i.d(t, "c", (function() {
-				return O
-			})), i.d(t, "f", (function() {
 				return I
-			})), i.d(t, "g", (function() {
+			})), i.d(t, "c", (function() {
 				return R
-			})), i.d(t, "e", (function() {
+			})), i.d(t, "f", (function() {
 				return F
-			})), i.d(t, "h", (function() {
+			})), i.d(t, "g", (function() {
 				return C
-			})), i.d(t, "j", (function() {
+			})), i.d(t, "e", (function() {
 				return N
-			})), i.d(t, "s", (function() {
+			})), i.d(t, "h", (function() {
 				return A
+			})), i.d(t, "j", (function() {
+				return j
+			})), i.d(t, "s", (function() {
+				return D
 			})), i.d(t, "l", (function() {
-				return x
+				return B
 			})), i.d(t, "m", (function() {
-				return L
-			})), i.d(t, "r", (function() {
 				return k
-			})), i.d(t, "q", (function() {
-				return M
-			})), i.d(t, "p", (function() {
+			})), i.d(t, "r", (function() {
 				return U
-			})), i.d(t, "i", (function() {
+			})), i.d(t, "q", (function() {
 				return G
-			})), i.d(t, "o", (function() {
+			})), i.d(t, "p", (function() {
+				return V
+			})), i.d(t, "i", (function() {
 				return H
-			})), i.d(t, "a", (function() {
-				return q
-			})), i.d(t, "d", (function() {
+			})), i.d(t, "o", (function() {
 				return W
-			})), i.d(t, "k", (function() {
+			})), i.d(t, "a", (function() {
 				return K
-			})), i.d(t, "n", (function() {
+			})), i.d(t, "d", (function() {
 				return $
+			})), i.d(t, "k", (function() {
+				return z
+			})), i.d(t, "n", (function() {
+				return Y
 			}));
 			var n = i("./node_modules/fbt/lib/FbtPublic.js"),
 				r = i("./node_modules/lodash/pick.js"),
@@ -12293,108 +12321,146 @@
 			var b = async (e, t) => Object(_.a)(Object(m.a)(e, [p.a]), {
 				endpoint: `${e.apiUrl}/api/related_queries_v1.json?query=${t}`,
 				method: o.ib.GET
-			}), g = i("./src/reddit/helpers/search/getQueryWithNsfwSetting.ts"), w = i("./src/reddit/models/Toast/index.ts"), y = i("./src/reddit/selectors/experiments/serpRedesignLayout.ts"), v = i("./src/reddit/selectors/searchResults.ts"), E = i("./src/reddit/selectors/user.ts"), T = i("./src/reddit/actions/pages/search.ts");
-			const S = "SEARCH__DROPDOWN_CLOSED",
-				O = "SEARCH__DROPDOWN_TOGGLED",
-				I = "SEARCH__MORE_RESULTS_PENDING",
-				R = "SEARCH__MORE_RESULTS_RECEIVED",
-				F = "SEARCH__MORE_RESULTS_FAILED",
-				C = "SEARCH__RELATED_QUERIES_RECEIVED",
-				N = "SEARCH__UPDATE_SEARCH_QUERY",
-				A = Object(d.a)(N),
-				j = Object(d.a)(I),
-				D = Object(d.a)(R),
+			}), g = i("./src/reddit/helpers/search/getQueryWithNsfwSetting.ts"), w = i("./src/reddit/models/Toast/index.ts"), y = i("./src/reddit/selectors/experiments/serpRedesignLayout.ts"), v = i("./src/reddit/selectors/multireddit.ts"), E = i("./src/reddit/selectors/searchResults.ts"), T = i("./src/reddit/selectors/subreddit.ts"), S = i("./src/reddit/selectors/user.ts"), O = i("./src/reddit/actions/pages/search.ts");
+			const I = "SEARCH__DROPDOWN_CLOSED",
+				R = "SEARCH__DROPDOWN_TOGGLED",
+				F = "SEARCH__MORE_RESULTS_PENDING",
+				C = "SEARCH__MORE_RESULTS_RECEIVED",
+				N = "SEARCH__MORE_RESULTS_FAILED",
+				A = "SEARCH__RELATED_QUERIES_RECEIVED",
+				j = "SEARCH__UPDATE_SEARCH_QUERY",
+				D = Object(d.a)(j),
 				P = Object(d.a)(F),
-				x = Object(d.a)(S),
-				L = Object(d.a)(O),
-				B = Object(d.a)(C),
-				k = e => async (t, i, {
+				x = Object(d.a)(C),
+				L = Object(d.a)(N),
+				B = Object(d.a)(I),
+				k = Object(d.a)(R),
+				M = Object(d.a)(A),
+				U = e => async (t, i, {
 					apiContext: n
 				}) => {
 					const r = i(),
-						s = Object(v.k)(r, e);
+						s = Object(E.p)(r, e);
 					if (s && s.length > 0) return;
 					const o = await b(n(), e);
 					if (o.ok) {
 						const i = (e => ({
 							relatedQueries: e.body.related_queries
 						}))(o);
-						t(B({
+						t(M({
 							query: e,
 							relatedQueries: i.relatedQueries
 						}))
 					}
-				}, M = e => async (t, i, {
-					apiContext: r
+				}, G = e => async (t, i, {
+					apiContext: r,
+					gqlContext: d
 				}) => {
-					const d = i(),
+					var _;
+					const m = i(),
 						{
-							queryParams: _
-						} = d.platform.currentPage,
-						m = Object(a.c)(_, Object(E.eb)(d)),
-						p = d.platform.currentPage.urlParams.subredditName || d.platform.currentPage.urlParams.multiredditName,
+							queryParams: p
+						} = m.platform.currentPage,
+						h = Object(a.c)(p, Object(S.eb)(m)),
+						f = m.platform.currentPage.urlParams.subredditName,
+						b = m.platform.currentPage.urlParams.multiredditName,
+						E = f || b,
 						{
-							username: h
-						} = d.platform.currentPage.urlParams,
-						f = m || s()(_, u.t),
-						b = Object(a.e)(f),
-						v = Object(y.b)(d) ? e : b.type,
-						T = {
-							...b,
-							sort: b.category ? o.Vb.Relevance : b.sort,
-							t: b.category ? o.dc.DAY : b.t,
-							type: v
+							username: O
+						} = m.platform.currentPage.urlParams,
+						I = h || s()(p, u.t),
+						R = Object(a.e)(I),
+						F = Object(y.b)(m) ? e : R.type,
+						C = {
+							...R,
+							sort: R.category ? o.Vb.Relevance : R.sort,
+							t: R.category ? o.dc.DAY : R.t,
+							type: F
 						},
-						S = Object(a.b)(p, h, T);
-					let O;
-					if (v.indexOf(o.Xb.Posts) > -1) {
-						const e = d.listings.postOrder.loadMore[S];
+						N = Object(a.b)(E, O, C),
+						A = Object(y.c)(m);
+					let j;
+					const D = {
+						communities: null,
+						posts: null,
+						users: null
+					};
+					if (F.indexOf(o.Xb.Posts) > -1) {
+						const e = m.listings.postOrder.loadMore[N];
 						if (!e) return;
-						const t = d.listings.postOrder.api.pending[S],
-							i = d.listings.postOrder.fetchedTokens,
-							n = i[S] && i[S][e.token];
+						const t = m.listings.postOrder.api.pending[N],
+							i = m.listings.postOrder.fetchedTokens,
+							n = i[N] && i[N][e.token];
 						if (t || n) return;
-						O = e.token
+						j = e.token, D.posts = j
+					} else if (!A && (F.indexOf(o.Xb.Subreddits) > -1 || F.indexOf(o.Xb.Users) > -1)) {
+						const e = m.listings.listingOrder.loadMore[N];
+						if (!e) return;
+						const t = m.listings.listingOrder.api.pending[N],
+							i = m.listings.listingOrder.fetchedTokens,
+							n = i[N] && i[N][e.token];
+						if (t || n) return;
+						j = e.token
 					} else {
-						if (!(v.indexOf(o.Xb.Subreddits) > -1 || v.indexOf(o.Xb.Users) > -1)) throw new Error("Should not attempt to fetch more results without a search type"); {
-							const e = d.listings.listingOrder.loadMore[S];
+						if (!(A && F.indexOf(o.Xb.Subreddits) > -1)) throw new Error("Should not attempt to fetch more results without a search type"); {
+							const e = m.listings.communityOrder.loadMore[N];
 							if (!e) return;
-							const t = d.listings.listingOrder.api.pending[S],
-								i = d.listings.listingOrder.fetchedTokens,
-								n = i[S] && i[S][e.token];
+							const t = m.listings.communityOrder.api.pending[N],
+								i = m.listings.communityOrder.fetchedTokens,
+								n = i[N] && i[N][e.token];
 							if (t || n) return;
-							O = e.token
+							j = e.token, D.communities = j
 						}
 					}
-					const I = `error-${S}`;
-					t(j({
-						fetchedToken: O,
-						key: S,
-						type: v
+					const B = `error-${N}`;
+					t(P({
+						fetchedToken: j,
+						key: N,
+						type: F
 					}));
-					const R = await Object(c.a)(r(), p, h, {
-						...T,
-						q: Object(y.b)(d) && b.q ? Object(g.a)(b.q, Object(E.eb)(d), "1" === b.include_over_18, [a.a.PromotedTrend, a.a.Trending].includes(b.source)) : b.q,
-						after: O,
-						type: (v || []).join(","),
-						b: !0
-					});
-					R.ok ? (t(D({
-						key: S,
-						fetchedToken: O,
-						meta: d.meta,
-						subredditOrMultiName: p,
-						type: v,
-						...R.body
-					})), t(l.g(I))) : (t(P({
-						key: S,
-						error: R.error,
-						fetchedToken: O,
-						meta: d.meta,
-						type: v,
-						...R.body
+					const k = {
+							...C,
+							q: Object(y.b)(m) && R.q ? Object(g.a)(R.q, Object(S.eb)(m), "1" === R.include_over_18, [a.a.PromotedTrend, a.a.Trending].includes(R.source)) : R.q,
+							after: j,
+							type: (F || []).join(","),
+							b: !0
+						},
+						M = f && Object(T.B)(i(), f),
+						U = b ? null === (_ = Object(v.d)(m, {
+							multiredditName: b,
+							username: O
+						})) || void 0 === _ ? void 0 : _.subredditIds : void 0;
+					let V = [];
+					U ? V = U : M && (V = [M]);
+					const H = await (A ? Object(c.a)({
+						context: d(),
+						isSerpRedesignLayoutM2: A,
+						options: k,
+						subredditIds: V,
+						tokens: D
+					}) : Object(c.a)({
+						context: r(),
+						isSerpRedesignLayoutM2: A,
+						options: k,
+						subredditName: E,
+						username: O
+					}));
+					H.ok ? (t(x({
+						key: N,
+						fetchedToken: j,
+						meta: m.meta,
+						subredditOrMultiName: E,
+						type: F,
+						...H.body
+					})), t(l.g(B))) : (t(L({
+						key: N,
+						error: H.error,
+						fetchedToken: j,
+						meta: m.meta,
+						type: F,
+						...H.body
 					})), t(l.f({
-						id: I,
+						id: B,
 						kind: w.b.Error,
 						text: n.fbt._("Sorry, we couldn't load more search results.", null, {
 							hk: "3IDePs"
@@ -12402,17 +12468,20 @@
 						buttonText: n.fbt._("Retry", null, {
 							hk: "1XMjgA"
 						}),
-						buttonAction: M(v)
+						buttonAction: G(F)
 					})))
-				}, U = (e, t, i, n, r) => async (s, o) => {
+				}, V = (e, t, i, n, r) => async (s, o) => {
 					const d = o();
-					s(Object(T.searchPending)({
+					s(Object(O.searchPending)({
 						key: e,
 						type: n
 					}));
 					const a = {
 						account: null,
+						communityOrder: [],
+						key: e,
 						listingOrder: [],
+						meta: d.meta,
 						postOrder: t,
 						posts: i,
 						profileAboutInfo: {},
@@ -12421,17 +12490,18 @@
 						subreddits: {},
 						subredditAboutInfo: {},
 						tokens: {
+							communities: null,
 							listings: null,
-							posts: r ? r.token : null
+							posts: r ? r.token : null,
+							users: null
 						},
 						searchDiscoveryUnits: {},
 						searchDiscoveryUnitOrder: [],
-						key: e,
 						type: n,
-						meta: d.meta
+						userOrder: []
 					};
-					s(Object(T.searchResultsReceived)(a))
-				}, G = "SEARCH__TYPEAHEAD_SUCCESS", V = Object(d.a)(G), H = e => async (t, i, {
+					s(Object(O.searchResultsReceived)(a))
+				}, H = "SEARCH__TYPEAHEAD_SUCCESS", q = Object(d.a)(H), W = e => async (t, i, {
 					apiContext: n
 				}) => {
 					var r, s;
@@ -12455,13 +12525,13 @@
 								order: t
 							}
 						})(d.body.data.children);
-						i && i.data && i.order && t(V({
+						i && i.data && i.order && t(q({
 							typeaheadSuggestions: i.data,
 							order: i.order,
 							searchQuery: e
 						}))
 					}
-				}, q = "SEARCH__DISABLE_SUBREDDIT_SEARCH", W = "SEARCH__ENABLE_SUBREDDIT_SEARCH", K = Object(d.a)(q), $ = Object(d.a)(W)
+				}, K = "SEARCH__DISABLE_SUBREDDIT_SEARCH", $ = "SEARCH__ENABLE_SUBREDDIT_SEARCH", z = Object(d.a)(K), Y = Object(d.a)($)
 		},
 		"./src/reddit/actions/session.ts": function(e, t, i) {
 			"use strict";
@@ -17236,7 +17306,7 @@
 				},
 				Le = (e, t) => Object(s.a)((e, {
 					pageLayer: t
-				}) => Y(t), le, P.g, (e, t, i) => {
+				}) => Y(t), le, P.k, (e, t, i) => {
 					const n = e || Boolean(t);
 					return Boolean(n && i)
 				})(e, t),
@@ -17476,29 +17546,157 @@
 		},
 		"./src/reddit/endpoints/page/search.ts": function(e, t, i) {
 			"use strict";
-			var n = i("./src/config.ts"),
-				r = i("./src/lib/constants/index.ts"),
-				s = i("./src/lib/makeApiRequest/index.ts"),
-				o = i("./src/lib/search/index.ts"),
-				d = i("./src/reddit/helpers/correlationIdTracker.ts"),
-				a = i("./src/reddit/models/RichTextJson/addRTJParam.ts");
-			const l = (e, t) => {
-				let i = t ? {
-					...e,
-					type: e.restrict_sr ? "link" : e.type
-				} : e;
-				(i = i.type ? i : {
-					...i,
-					type: "link,sr,user"
-				}).q = Object(o.a)(e.q);
-				const n = Object(d.c)(d.a.SearchResults);
-				return n && (i.search_correlation_id = n), i
-			};
-			t.a = (e, t, i, o) => Object(s.a)(e, {
-				data: l(o || {}, t),
-				endpoint: Object(a.a)(i ? `${n.a.gatewayUrl}/desktopapi/v1/multireddits/${i}/${t}/search` : t ? `${n.a.gatewayUrl}/desktopapi/v1/subreddits/${t}/search` : `${n.a.gatewayUrl}/desktopapi/v1/search`),
-				method: r.ib.GET
-			})
+			i.d(t, "a", (function() {
+				return R
+			}));
+			var n = i("./node_modules/lodash/isEmpty.js"),
+				r = i.n(n),
+				s = i("./src/config.ts"),
+				o = i("./src/lib/constants/index.ts"),
+				d = i("./src/lib/makeApiRequest/index.ts"),
+				a = i("./src/lib/makeGqlRequest/index.ts"),
+				l = i("./src/lib/search/index.ts"),
+				u = i("./src/reddit/helpers/correlationIdTracker.ts"),
+				c = i("./src/reddit/helpers/graphql/normalizePostFromGql/index.ts"),
+				_ = i("./src/reddit/helpers/graphql/normalizeSubredditAboutFromGql/index.ts"),
+				m = i("./src/reddit/helpers/graphql/normalizeSubredditFromGql/index.ts"),
+				p = i("./src/reddit/models/RichTextJson/addRTJParam.ts"),
+				h = i("./src/reddit/models/SearchDiscoveryUnit/index.ts"),
+				f = i("./src/redditGQL/operations/GeneralSearch.json"),
+				b = i("./src/redditGQL/types.ts"),
+				g = i("./src/telemetry/models/App.ts");
+			const w = (e, t) => {
+					let i = t ? {
+						...e,
+						type: e.restrict_sr ? "link" : e.type
+					} : e;
+					(i = i.type ? i : {
+						...i,
+						type: "link,sr,user"
+					}).q = Object(l.a)(e.q);
+					const n = Object(u.c)(u.a.SearchResults);
+					return n && (i.search_correlation_id = n), i
+				},
+				y = e => !e.isSerpRedesignLayoutM2,
+				v = ({
+					context: e,
+					subredditName: t,
+					username: i,
+					options: n
+				}) => Object(d.a)(e, {
+					data: w(n || {}, t),
+					endpoint: Object(p.a)(i ? `${s.a.gatewayUrl}/desktopapi/v1/multireddits/${i}/${t}/search` : t ? `${s.a.gatewayUrl}/desktopapi/v1/subreddits/${t}/search` : `${s.a.gatewayUrl}/desktopapi/v1/search`),
+					method: o.ib.GET
+				});
+			const E = e => !r()(e);
+
+			function T(e) {
+				var t, i, n, r, s, o, d, a, l, u, p, f, b, g, w, y, v, T, S, O, I, R;
+				let F = {},
+					C = [],
+					N = {},
+					A = [],
+					j = {},
+					D = {
+						communities: null,
+						listings: null,
+						posts: null,
+						users: null
+					};
+				const P = h.c.Default;
+				return E(e) && ([F, C] = function(e) {
+					var t;
+					const i = {},
+						n = [];
+					for (const r of e)(null === (t = null == r ? void 0 : r.node) || void 0 === t ? void 0 : t.id) && (i[r.node.id] = Object(c.e)(r.node), n.push(r.node.id));
+					return [i, n]
+				}(null !== (s = null === (r = null === (n = null === (i = null === (t = e.data) || void 0 === t ? void 0 : t.search) || void 0 === i ? void 0 : i.general) || void 0 === n ? void 0 : n.posts) || void 0 === r ? void 0 : r.edges) && void 0 !== s ? s : []), [N, A] = function(e) {
+					var t;
+					const i = [],
+						n = {};
+					for (const r of e)(null === (t = null == r ? void 0 : r.node) || void 0 === t ? void 0 : t.id) && (n[r.node.id] = Object(m.a)(r.node), i.push({
+						id: r.node.id,
+						type: "subreddit"
+					}));
+					return [n, i]
+				}(null !== (u = null === (l = null === (a = null === (d = null === (o = e.data) || void 0 === o ? void 0 : o.search) || void 0 === d ? void 0 : d.general) || void 0 === a ? void 0 : a.communities) || void 0 === l ? void 0 : l.edges) && void 0 !== u ? u : []), j = Object(_.b)(null !== (g = null === (b = null === (f = null === (p = e.data.search) || void 0 === p ? void 0 : p.general) || void 0 === f ? void 0 : f.communities) || void 0 === b ? void 0 : b.edges.reduce((e, t) => ((null == t ? void 0 : t.node) && e.push(t.node), e), [])) && void 0 !== g ? g : []), D = {
+					communities: null !== (T = null === (v = null === (y = null === (w = e.data.search) || void 0 === w ? void 0 : w.general) || void 0 === y ? void 0 : y.communities) || void 0 === v ? void 0 : v.pageInfo.endCursor) && void 0 !== T ? T : null,
+					listings: null,
+					posts: null !== (R = null === (I = null === (O = null === (S = e.data.search) || void 0 === S ? void 0 : S.general) || void 0 === O ? void 0 : O.posts) || void 0 === I ? void 0 : I.pageInfo.endCursor) && void 0 !== R ? R : null,
+					users: null
+				}), {
+					account: null,
+					listingOrder: [],
+					postOrder: C,
+					communityOrder: A,
+					userOrder: [],
+					posts: F,
+					profileAboutInfo: {},
+					profiles: {},
+					structuredStyles: null,
+					subreddits: N,
+					subredditAboutInfo: j,
+					tokens: D,
+					viewTreatment: P
+				}
+			}
+			const S = e => e && e.reduce((e, t) => "" === e ? e + t : e += `,${t}`, ""),
+				O = {
+					[o.Vb.Comments]: b.b.Comments,
+					[o.Vb.Hot]: b.b.Hot,
+					[o.Vb.New]: b.b.New,
+					[o.Vb.Top]: b.b.Top,
+					[o.Vb.Relevance]: b.b.Relevance
+				},
+				I = async ({
+					context: e,
+					options: t,
+					profileIds: i,
+					subredditIds: n,
+					tokens: r
+				}) => {
+					var s, d, l, u, c;
+					const _ = [{
+							key: "profile_ids",
+							value: null !== (s = S(i)) && void 0 !== s ? s : null
+						}, {
+							key: "subreddit_ids",
+							value: null !== (d = S(n)) && void 0 !== d ? d : null
+						}, {
+							key: "time_range",
+							value: (null == t ? void 0 : t.t) && "all" !== (null == t ? void 0 : t.t) ? null == t ? void 0 : t.t : null
+						}].filter(e => null !== e.value),
+						m = {
+							[o.Xb.Posts]: !1,
+							[o.Xb.Subreddits]: !1,
+							[o.Xb.Users]: !1
+						};
+					for (const o of null !== (u = null === (l = null == t ? void 0 : t.type) || void 0 === l ? void 0 : l.split(",")) && void 0 !== u ? u : []) void 0 !== m[o] && (m[o] = !0);
+					const p = {
+							query: null !== (c = null == t ? void 0 : t.q) && void 0 !== c ? c : "",
+							sort: (null == t ? void 0 : t.sort) ? O[null == t ? void 0 : t.sort] : null,
+							filters: _,
+							productSurface: `${g.TelemetryAppName.web2x}-serp`,
+							includePosts: m[o.Xb.Posts],
+							includeCommunities: m[o.Xb.Subreddits],
+							postsAfter: r.posts,
+							communitiesAfter: r.communities
+						},
+						h = await Object(a.a)(e, {
+							...f,
+							variables: p
+						}, {
+							traceRequestName: "general_search"
+						});
+					return {
+						...h,
+						body: T(h.body)
+					}
+				};
+
+			function R(e) {
+				return y(e) ? v(e) : I(e)
+			}
 		},
 		"./src/reddit/endpoints/post/index.tsx": function(e, t, i) {
 			"use strict";
@@ -23148,7 +23346,7 @@
 						username: a
 					} = n.params, u = Object(l.e)(r()(n.queryParams, p.t)), c = {
 						...u,
-						type: Object(T.c)(t, u.type)
+						type: Object(T.d)(t, u.type)
 					};
 					return Object(l.b)(d, a, c)
 				},
@@ -30849,8 +31047,10 @@
 				return l
 			})), i.d(t, "c", (function() {
 				return u
-			})), i.d(t, "a", (function() {
+			})), i.d(t, "d", (function() {
 				return c
+			})), i.d(t, "a", (function() {
+				return _
 			}));
 			var n = i("./src/lib/constants/index.ts"),
 				r = i("./node_modules/lodash/isEmpty.js"),
@@ -30862,12 +31062,13 @@
 					experimentEligibilitySelector: d.a,
 					experimentName: o.yb
 				}), e => e === o.Kb.Redesign),
-				u = (Object(a.a)(e => Object(d.c)(e, {
+				u = Object(a.a)(l, e => Object(d.c)(e, {
 					experimentEligibilitySelector: d.a,
 					experimentName: o.zb
-				}), e => e === o.Lb.Redesign), (e, t) => l(e) ? c(t) : t);
+				}), (e, t) => e && t === o.Lb.Redesign),
+				c = (e, t) => l(e) ? _(t) : t;
 
-			function c(e) {
+			function _(e) {
 				return e.includes(n.Xb.Posts) || s()(e) ? [n.Xb.Posts, n.Xb.Subreddits, n.Xb.Users] : e.includes(n.Xb.Users) || e.includes(n.Xb.Subreddits) ? [n.Xb.Users, n.Xb.Subreddits] : e
 			}
 		},
@@ -33694,34 +33895,44 @@
 		},
 		"./src/reddit/selectors/searchResults.ts": function(e, t, i) {
 			"use strict";
-			i.d(t, "h", (function() {
+			i.d(t, "l", (function() {
 				return d
-			})), i.d(t, "i", (function() {
-				return a
-			})), i.d(t, "d", (function() {
-				return l
-			})), i.d(t, "j", (function() {
-				return u
-			})), i.d(t, "n", (function() {
-				return c
-			})), i.d(t, "e", (function() {
-				return _
 			})), i.d(t, "m", (function() {
-				return m
-			})), i.d(t, "c", (function() {
-				return p
-			})), i.d(t, "k", (function() {
-				return h
-			})), i.d(t, "f", (function() {
-				return f
-			})), i.d(t, "g", (function() {
-				return b
-			})), i.d(t, "a", (function() {
-				return g
+				return a
 			})), i.d(t, "b", (function() {
+				return l
+			})), i.d(t, "c", (function() {
+				return u
+			})), i.d(t, "h", (function() {
+				return c
+			})), i.d(t, "a", (function() {
+				return _
+			})), i.d(t, "o", (function() {
+				return m
+			})), i.d(t, "n", (function() {
+				return p
+			})), i.d(t, "s", (function() {
+				return h
+			})), i.d(t, "i", (function() {
+				return f
+			})), i.d(t, "r", (function() {
+				return b
+			})), i.d(t, "g", (function() {
+				return g
+			})), i.d(t, "p", (function() {
 				return w
-			})), i.d(t, "l", (function() {
+			})), i.d(t, "j", (function() {
 				return y
+			})), i.d(t, "k", (function() {
+				return v
+			})), i.d(t, "e", (function() {
+				return E
+			})), i.d(t, "d", (function() {
+				return T
+			})), i.d(t, "f", (function() {
+				return S
+			})), i.d(t, "q", (function() {
+				return O
 			}));
 			var n = i("./src/reddit/constants/postLayout.ts"),
 				r = i("./src/reddit/selectors/posts.ts"),
@@ -33735,11 +33946,23 @@
 				}) => e.listings.listingOrder.api.pending[t],
 				l = (e, {
 					listingKey: t
-				}) => e.listings.listingOrder.identifiers[t] || [],
+				}) => e.listings.communityOrder.api.error[t],
 				u = (e, {
 					listingKey: t
+				}) => e.listings.communityOrder.api.pending[t],
+				c = (e, {
+					listingKey: t
+				}) => e.listings.listingOrder.identifiers[t] || [],
+				_ = (e, {
+					listingKey: t
+				}) => e.listings.communityOrder.identifiers[t] || [],
+				m = (e, {
+					listingKey: t
 				}) => e.listings.listingOrder.loadMore[t],
-				c = e => {
+				p = (e, {
+					listingKey: t
+				}) => e.listings.communityOrder.loadMore[t],
+				h = e => {
 					const t = e.search.searchQuery;
 					if (!t) return o;
 					const i = e.search.typeahead.idsByQuery[t.toLowerCase()];
@@ -33749,23 +33972,24 @@
 						n.push(e.search.typeahead.models[t])
 					}), n
 				},
-				_ = e => e.search.typeahead.idsByQuery,
-				m = e => {
+				f = e => e.search.typeahead.idsByQuery,
+				b = e => {
 					const t = e.listings.activeKey;
 					return e.search.viewTreatment[t]
 				},
-				p = e => {
+				g = e => {
 					const t = e.listings.activeKey;
 					if (t) return e.searchDiscoveryUnits.headerContent[t]
 				},
-				h = (e, t) => t ? e.search.relatedQueries[t.toLowerCase()] : o,
-				f = e => e.search.isDropdownOpen,
-				b = e => e.search.isSubredditSearchEnabled,
-				g = (e, t) => !!a(e, t) || !d(e, t) && l(e, t).length > 0,
-				w = (e, t) => !!((e, {
+				w = (e, t) => t ? e.search.relatedQueries[t.toLowerCase()] : o,
+				y = e => e.search.isDropdownOpen,
+				v = e => e.search.isSubredditSearchEnabled,
+				E = (e, t) => !!a(e, t) || !d(e, t) && c(e, t).length > 0,
+				T = (e, t) => !!u(e, t) || !l(e, t) && _(e, t).length > 0,
+				S = (e, t) => !!((e, {
 					listingKey: t
 				}) => e.listings.postOrder.api.pending[t])(e, t) || Object(r.N)(e, t).length > 0,
-				y = e => Object(s.b)(e) ? n.g.Search : n.g.Classic
+				O = e => Object(s.b)(e) ? n.g.Search : n.g.Classic
 		},
 		"./src/reddit/selectors/seo/index.ts": function(e, t, i) {
 			"use strict";
@@ -36808,6 +37032,9 @@
 		"./src/redditGQL/operations/ExperimentVariants.json": function(e) {
 			e.exports = JSON.parse('{"id":"34910619f1e9"}')
 		},
+		"./src/redditGQL/operations/GeneralSearch.json": function(e) {
+			e.exports = JSON.parse('{"id":"1882165ce756"}')
+		},
 		"./src/redditGQL/operations/ModeratedSubreddits.json": function(e) {
 			e.exports = JSON.parse('{"id":"3f04933af189"}')
 		},
@@ -36836,7 +37063,7 @@
 			e.exports = JSON.parse('{"id":"8d0e34deaa32"}')
 		},
 		"./src/redditGQL/operations/TopicBySlug.json": function(e) {
-			e.exports = JSON.parse('{"id":"bcfe9e6f378e"}')
+			e.exports = JSON.parse('{"id":"35fc0a399ad9"}')
 		},
 		"./src/redditGQL/operations/UpdatePostFollowState.json": function(e) {
 			e.exports = JSON.parse('{"id":"6491fda8f22b"}')
@@ -36850,6 +37077,8 @@
 			i.d(t, "a", (function() {
 					return At
 				})), i.d(t, "b", (function() {
+					return Ut
+				})), i.d(t, "c", (function() {
 					return di
 				})),
 				function(e) {
@@ -41218,4 +41447,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.f44f8fcf6e26ce4e241d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.41dabad8d1eda1ac3cd2.js.map

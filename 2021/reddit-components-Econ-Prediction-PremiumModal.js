@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-PremiumModal.980cff15fe4a2aa15123.js
-// Retrieved at 10/1/2021, 6:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-PremiumModal.92444b468b155ee1406a.js
+// Retrieved at 10/5/2021, 12:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction-PremiumModal"], {
 		"./node_modules/uuid/index.js": function(e, t, n) {
@@ -19,17 +19,17 @@
 					l = (e = e || {}).node || r,
 					p = void 0 !== e.clockseq ? e.clockseq : o;
 				if (null == l || null == p) {
-					var m = i();
-					null == l && (l = r = [1 | m[0], m[1], m[2], m[3], m[4], m[5]]), null == p && (p = o = 16383 & (m[6] << 8 | m[7]))
+					var b = i();
+					null == l && (l = r = [1 | b[0], b[1], b[2], b[3], b[4], b[5]]), null == p && (p = o = 16383 & (b[6] << 8 | b[7]))
 				}
-				var b = void 0 !== e.msecs ? e.msecs : (new Date).getTime(),
+				var m = void 0 !== e.msecs ? e.msecs : (new Date).getTime(),
 					f = void 0 !== e.nsecs ? e.nsecs : c + 1,
-					j = b - a + (f - c) / 1e4;
-				if (j < 0 && void 0 === e.clockseq && (p = p + 1 & 16383), (j < 0 || b > a) && void 0 === e.nsecs && (f = 0), f >= 1e4) throw new Error("uuid.v1(): Can't create more than 10M uuids/sec");
-				a = b, c = f, o = p;
-				var O = (1e4 * (268435455 & (b += 122192928e5)) + f) % 4294967296;
+					j = m - a + (f - c) / 1e4;
+				if (j < 0 && void 0 === e.clockseq && (p = p + 1 & 16383), (j < 0 || m > a) && void 0 === e.nsecs && (f = 0), f >= 1e4) throw new Error("uuid.v1(): Can't create more than 10M uuids/sec");
+				a = m, c = f, o = p;
+				var O = (1e4 * (268435455 & (m += 122192928e5)) + f) % 4294967296;
 				u[s++] = O >>> 24 & 255, u[s++] = O >>> 16 & 255, u[s++] = O >>> 8 & 255, u[s++] = 255 & O;
-				var P = b / 4294967296 * 1e4 & 268435455;
+				var P = m / 4294967296 * 1e4 & 268435455;
 				u[s++] = P >>> 8 & 255, u[s++] = 255 & P, u[s++] = P >>> 24 & 15 | 16, u[s++] = P >>> 16 & 255, u[s++] = p >>> 8 | 128, u[s++] = 255 & p;
 				for (var h = 0; h < 6; ++h) u[s + h] = l[h];
 				return t || d(u)
@@ -88,8 +88,8 @@
 				u = n("./src/lib/makeActionCreator/index.ts"),
 				l = n("./src/reddit/endpoints/economics/predictions.ts"),
 				p = n("./src/reddit/helpers/graphql/normalizePostFromGql/index.ts"),
-				m = n("./src/reddit/helpers/graphql/normalizePredictionTournamentFromGql/index.ts"),
-				b = n("./src/redditGQL/types.ts"),
+				b = n("./src/reddit/helpers/graphql/normalizePredictionTournamentFromGql/index.ts"),
+				m = n("./src/redditGQL/types.ts"),
 				f = n("./src/reddit/actions/login.ts"),
 				j = n("./src/reddit/actions/modal.ts"),
 				O = n("./src/reddit/constants/modals.ts"),
@@ -198,7 +198,7 @@
 							e && (s[e.id] = Object(p.e)(e))
 						})
 					});
-					const u = c.map(e => Object(m.a)(e));
+					const u = c.map(e => Object(b.a)(e));
 					return t(N({
 						subredditId: i,
 						tournaments: u
@@ -221,7 +221,7 @@
 							isStartImmediately: !0,
 							subredditId: e,
 							predictionDrafts: i,
-							currency: d ? b.b.Coins : b.b.Tokens
+							currency: d ? m.c.Coins : m.c.Tokens
 						}),
 						{
 							createPredictionTournament: c
@@ -399,8 +399,8 @@
 				u = n("./src/reddit/actions/gold/productOfferPurchase.ts"),
 				l = n("./src/reddit/actions/gold/productOffers.ts"),
 				p = n("./src/reddit/actions/goldPurchaseModals/premiumPurchaseModal.ts"),
-				m = n("./src/reddit/actions/goldPurchaseModals/purchaseCatalog.ts"),
-				b = n("./src/reddit/components/PremiumPurchaseModal/Loader.tsx"),
+				b = n("./src/reddit/actions/goldPurchaseModals/purchaseCatalog.ts"),
+				m = n("./src/reddit/components/PremiumPurchaseModal/Loader.tsx"),
 				f = n("./src/reddit/controls/Button/index.tsx"),
 				j = n("./src/reddit/helpers/correlationIdTracker.ts"),
 				O = n("./src/reddit/helpers/trackers/premium.ts"),
@@ -430,9 +430,9 @@
 					_ = Object(d.e)(k.l),
 					L = Object(j.d)(j.a.GoldPayment, !1);
 				Object(o.useEffect)(() => {
-					Object(b.a)()
+					Object(m.a)()
 				}, []), Object(o.useEffect)(() => {
-					y.length || _ || c(Object(m.b)(L)), c(Object(l.c)(v.c.Premium))
+					y.length || _ || c(Object(b.b)(L)), c(Object(l.c)(v.c.Premium))
 				});
 				return i.a.createElement(i.a.Fragment, null, i.a.createElement("div", {
 					className: E.a.background,
@@ -577,8 +577,8 @@
 				u = n("./src/redditGQL/operations/EndPredictionTournament.json"),
 				l = n("./src/redditGQL/operations/GetPredictionChipPackages.json"),
 				p = n("./src/redditGQL/operations/GetPredictionCreationAllowance.json"),
-				m = n("./src/redditGQL/operations/GetPredictionToken.json"),
-				b = n("./src/redditGQL/operations/GetTournaments.json"),
+				b = n("./src/redditGQL/operations/GetPredictionToken.json"),
+				m = n("./src/redditGQL/operations/GetTournaments.json"),
 				f = n("./src/redditGQL/operations/ResolvePrediction.json"),
 				j = n("./src/redditGQL/operations/SubredditTopPredictors.json"),
 				O = n("./src/redditGQL/operations/UpdatePredictionTournament.json"),
@@ -643,7 +643,7 @@
 				}),
 				x = async (e, t) => {
 					const n = await Object(r.a)(e, {
-						...b,
+						...m,
 						variables: t
 					});
 					if (!Object(o.c)(n) || n.error) throw new Error("Failed to fetch tournaments");
@@ -667,7 +667,7 @@
 					...l,
 					variables: t
 				}), _ = (e, t) => Object(r.a)(e, {
-					...m,
+					...b,
 					variables: t
 				}), L = async (e, t) => {
 					const n = await Object(r.a)(e, {
@@ -763,7 +763,7 @@
 				}
 		},
 		"./src/redditGQL/operations/AddPredictionDrafts.json": function(e) {
-			e.exports = JSON.parse('{"id":"f87162053448"}')
+			e.exports = JSON.parse('{"id":"90a9ac95262d"}')
 		},
 		"./src/redditGQL/operations/CancelPrediction.json": function(e) {
 			e.exports = JSON.parse('{"id":"fac88c91fec8"}')
@@ -775,10 +775,10 @@
 			e.exports = JSON.parse('{"id":"90c7b71fa93f"}')
 		},
 		"./src/redditGQL/operations/CreatePredictionTournament.json": function(e) {
-			e.exports = JSON.parse('{"id":"723a33950f71"}')
+			e.exports = JSON.parse('{"id":"63b8ae32b6ea"}')
 		},
 		"./src/redditGQL/operations/EndPredictionTournament.json": function(e) {
-			e.exports = JSON.parse('{"id":"619d946d303a"}')
+			e.exports = JSON.parse('{"id":"0a5a0b11accd"}')
 		},
 		"./src/redditGQL/operations/GetPredictionChipPackages.json": function(e) {
 			e.exports = JSON.parse('{"id":"5ce83e513fa5"}')
@@ -790,7 +790,7 @@
 			e.exports = JSON.parse('{"id":"26b911e67a5f"}')
 		},
 		"./src/redditGQL/operations/GetTournaments.json": function(e) {
-			e.exports = JSON.parse('{"id":"9101a8318ed1"}')
+			e.exports = JSON.parse('{"id":"c149434123b1"}')
 		},
 		"./src/redditGQL/operations/ResolvePrediction.json": function(e) {
 			e.exports = JSON.parse('{"id":"d742e3019cfe"}')
@@ -799,11 +799,11 @@
 			e.exports = JSON.parse('{"id":"a9582ea601a1"}')
 		},
 		"./src/redditGQL/operations/UpdatePredictionTournament.json": function(e) {
-			e.exports = JSON.parse('{"id":"36df0d6f6bca"}')
+			e.exports = JSON.parse('{"id":"70baf378030a"}')
 		},
 		"./src/redditGQL/operations/VotePrediction.json": function(e) {
 			e.exports = JSON.parse('{"id":"484780ada6a2"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-PremiumModal.980cff15fe4a2aa15123.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-PremiumModal.92444b468b155ee1406a.js.map
