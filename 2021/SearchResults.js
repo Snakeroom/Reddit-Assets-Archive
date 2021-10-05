@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.6fbe9af4e273d8b207ea.js
-// Retrieved at 10/4/2021, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.f50675fc9f774771a84e.js
+// Retrieved at 10/5/2021, 10:40:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -6499,6 +6499,8 @@
 				}),
 				Te = Object(a.c)({
 					fromSubreddit: Se.a,
+					apiPending: x.d,
+					communityApiPending: x.h,
 					shouldShowGlobalSearchSwitcher: je.c
 				});
 			var Le = we(Object(o.b)(Te)(e => {
@@ -6517,50 +6519,54 @@
 							shouldShowGlobalSearchSwitcher: b,
 							subredditsDiscoveryUnit: C,
 							tab: x,
-							queryParams: f
+							queryParams: f,
+							apiPending: v,
+							communityApiPending: g
 						} = e,
-						v = Object(r.useCallback)(e => {
+						O = Object(r.useCallback)(e => {
 							t(Object(Oe.l)(h, u, void 0, i, e))
 						}, [i, u, h, t]),
-						g = Object(d.a)(h[ve.c]),
-						O = h.category,
-						E = h.is_multi,
-						j = !h.restrict_sr && !O && !g,
-						_ = p && O && g,
-						S = C && O && g,
-						k = s && !Object(ge.a)(h.q) && !h.category;
+						E = Object(d.a)(h[ve.c]),
+						j = h.category,
+						_ = h.is_multi,
+						S = !h.restrict_sr && !j && !E,
+						k = p && j && E,
+						I = C && j && E,
+						P = s && !Object(ge.a)(h.q) && !h.category,
+						w = void 0 === v || v,
+						T = void 0 === g || g;
 					return n.a.createElement(n.a.Fragment, null, b && a && n.a.createElement(fe.a, {
 						searchOptions: h,
 						subreddit: a,
 						url: Object(ye.a)(f, a.name)
-					}), j && n.a.createElement(Ne, {
+					}), S && n.a.createElement(Ne, {
 						key: "subNav"
 					}, n.a.createElement(xe.a, {
 						searchOptions: h,
 						subredditName: c,
 						tab: x
-					})), S && n.a.createElement(pe, {
+					})), I && n.a.createElement(pe, {
 						key: "subredditsDiscoveryUnit",
-						categoryId: O,
-						categoryName: g,
+						categoryId: j,
+						categoryName: E,
 						discoveryUnit: C
-					}), _ && n.a.createElement(y, {
+					}), k && n.a.createElement(y, {
 						key: "postsDiscoveryUnit",
-						categoryId: O,
-						category: g,
+						categoryId: j,
+						category: E,
 						discoveryUnit: p
-					}), k ? n.a.createElement(Ne, {
+					}), P || T ? n.a.createElement(Ne, {
 						key: "communitiesPreview"
 					}, n.a.createElement(he.a, {
 						listingKey: i,
 						preview: !0,
 						searchOptions: h
-					})) : !E && !O && n.a.createElement(be.a, {
+					})) : !_ && !j && n.a.createElement(be.a, {
 						query: Object(d.a)(h.q || ""),
 						type: be.b.Communities,
 						searchOptions: h
-					}), o ? n.a.createElement(N.b.Provider, {
-						value: v
+					}), o || w ? n.a.createElement(N.b.Provider, {
+						value: O
 					}, n.a.createElement(_e.a.Provider, {
 						value: !0
 					}, n.a.createElement(Ce.a, {
@@ -6585,35 +6591,35 @@
 						hasPostResults: t,
 						listingKey: s,
 						listingName: r,
-						location: o,
-						morePostsRequested: a,
-						onViewed: i,
-						searchOptions: c,
-						tab: l
-					} = e, m = Object(d.a)(c.q || ""), u = Object(_.db)(), p = Object(_.O)(u), h = Object(_.V)(u);
-					return n.a.createElement(n.a.Fragment, null, p && n.a.createElement(fe.a, {
-						searchOptions: c,
-						url: Object(ye.a)(h)
+						location: a,
+						morePostsRequested: i,
+						onViewed: c,
+						searchOptions: l,
+						tab: m
+					} = e, u = Object(d.a)(l.q || ""), p = Object(_.db)(), h = Object(_.O)(p), b = Object(_.V)(p), C = Object(o.e)(t => Object(x.d)(t, e)), f = void 0 === C || C;
+					return n.a.createElement(n.a.Fragment, null, h && n.a.createElement(fe.a, {
+						searchOptions: l,
+						url: Object(ye.a)(b)
 					}), n.a.createElement(xe.a, {
 						key: "subNav",
-						searchOptions: c,
-						shouldHideGlobalSearchLink: p,
+						searchOptions: l,
+						shouldHideGlobalSearchLink: h,
 						subredditName: r,
-						tab: l
-					}), t ? n.a.createElement(Ce.a, {
+						tab: m
+					}), t || f ? n.a.createElement(Ce.a, {
 						key: "posts",
 						listingKey: s,
 						listingName: r,
-						listingViewed: i,
-						location: o,
+						listingViewed: c,
+						location: a,
 						inSubredditOrProfile: !1,
 						noPostsComponent: Fe,
-						onLoadMore: a,
-						searchOptions: c
+						onLoadMore: i,
+						searchOptions: l
 					}) : n.a.createElement(be.a, {
-						query: m,
+						query: u,
 						type: be.b.Posts,
-						searchOptions: c
+						searchOptions: l
 					}))
 				};
 			var Ae = s("./src/reddit/components/SearchResultsContent/helpers/getHeroPostId.tsx"),
@@ -7500,6 +7506,7 @@
 					viewTreatment: d.m,
 					searchDiscoveryUnitsModels: be.b,
 					hasBestResults: d.b,
+					apiPending: pe.d,
 					postIds: U.A,
 					posts: U.z,
 					loadMore: pe.g,
@@ -7519,52 +7526,53 @@
 					postIds: g,
 					posts: y,
 					loadMore: O,
-					isOverlayOpen: E
-				} = Object(a.e)(t => je(t, e)), j = Object(a.e)(e => Object(w.o)(e, {
+					isOverlayOpen: E,
+					apiPending: j
+				} = Object(a.e)(t => je(t, e)), _ = Object(a.e)(e => Object(w.o)(e, {
 					pageLayer: c
 				})), {
-					username: _,
-					multiredditName: S
-				} = Object(w.d)(c) || {}, k = Object(de.a)(E), I = Object(p.b)(j || S, _, {
+					username: S,
+					multiredditName: k
+				} = Object(w.d)(c) || {}, I = Object(de.a)(E), N = Object(p.b)(_ || k, S, {
 					...i,
 					type: [u.Xb.Posts]
-				}), N = Object(a.e)(e => Object(d.b)(e, {
-					listingKey: I
-				})), P = (e, s) => l(Object(ie.u)(t, i, s, e, c, Object(Ce.b)({
+				}), P = Object(a.e)(e => Object(d.b)(e, {
+					listingKey: N
+				})), T = void 0 === j || j, L = (e, s) => l(Object(ie.u)(t, i, s, e, c, Object(Ce.b)({
 					pageLayer: c
 				})));
-				let T;
+				let R;
 				Object(n.useEffect)(() => {
-					!v || N || C()(g) || m(Object(x.p)(I, g, y, [u.Xb.Posts], O))
-				}, [v, N, g]), Object(n.useEffect)(() => {
-					v && !C()(g) && F()
+					!v || P || C()(g) || m(Object(x.p)(N, g, y, [u.Xb.Posts], O))
+				}, [v, P, g]), Object(n.useEffect)(() => {
+					v && !C()(g) && A()
 				}, [v, g]), Object(n.useEffect)(() => {
-					k && !E && F()
-				}, [E, k]), b === ue.c.Trending && (T = Object(ve.a)(f));
-				const L = Object(h.a)(i.q || ""),
-					R = Object(n.useMemo)(() => Object.values(f).find(e => e.name === me.m || e.name === me.f), [f]);
+					I && !E && A()
+				}, [E, I]), b === ue.c.Trending && (R = Object(ve.a)(f));
+				const F = Object(h.a)(i.q || ""),
+					M = Object(n.useMemo)(() => Object.values(f).find(e => e.name === me.m || e.name === me.f), [f]);
 
-				function F() {
+				function A() {
 					if (xe.c.has(t)) {
 						const e = xe.c.end(t);
-						P(e, fe.TimerType.InApp)
+						L(e, fe.TimerType.InApp)
 					}
 				}
-				return v ? o.a.createElement(o.a.Fragment, null, T && R && o.a.createElement(ae.a, {
-					key: T,
-					postId: T,
-					discoveryUnit: R,
+				return v || T ? o.a.createElement(o.a.Fragment, null, R && M && o.a.createElement(ae.a, {
+					key: R,
+					postId: R,
+					discoveryUnit: M,
 					searchOptions: i,
 					listingKey: t
 				}, o.a.createElement(oe, {
-					key: T,
-					discoveryUnit: R,
-					postId: T,
+					key: R,
+					discoveryUnit: M,
+					postId: R,
 					listingKey: t,
 					searchOptions: i
 				})), o.a.createElement(Oe.a, {
 					key: "posts",
-					listingKey: I,
+					listingKey: N,
 					listingName: s,
 					location: r,
 					inSubredditOrProfile: !1,
@@ -7573,11 +7581,11 @@
 						m(Object(x.q)([u.Xb.Posts]))
 					},
 					searchOptions: i
-				})) : void 0 !== b ? o.a.createElement(ye.a, {
-					query: L,
+				})) : o.a.createElement(ye.a, {
+					query: F,
 					type: ge.b.Posts,
 					searchOptions: i
-				}) : null
+				})
 			}
 
 			function Se(e) {
@@ -7614,7 +7622,7 @@
 		"./src/reddit/components/SearchResultsContent/searchResultsPageTreatment/CommunitiesResults.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return p
+				return h
 			}));
 			var r = s("./node_modules/react/index.js"),
 				n = s.n(r),
@@ -7625,37 +7633,38 @@
 				d = s("./src/reddit/components/SearchResultsSubNav/index.tsx"),
 				l = s("./src/reddit/helpers/search/hasSearchGrammar.ts"),
 				m = s("./src/reddit/selectors/experiments/serpRedesignLayout.ts"),
-				u = s("./src/reddit/components/SearchResultsContent/NoResults/redesign.tsx");
+				u = s("./src/reddit/selectors/listings.ts"),
+				p = s("./src/reddit/components/SearchResultsContent/NoResults/redesign.tsx");
 
-			function p(e) {
+			function h(e) {
 				const {
 					hasCommunityResults: t,
 					listingKey: s,
 					listingName: r,
-					searchOptions: p,
-					tab: h
-				} = e, b = p.is_multi || p.category, C = Object(o.e)(m.b), x = t && !Object(l.a)(p.q), f = Object(a.a)(p.q || "");
-				return n.a.createElement(n.a.Fragment, null, C ? x ? n.a.createElement(i.a, {
+					searchOptions: h,
+					tab: b
+				} = e, C = h.is_multi || h.category, x = Object(o.e)(m.b), f = Object(o.e)(t => Object(u.h)(t, e)), v = t && !Object(l.a)(h.q), g = Object(a.a)(h.q || ""), y = void 0 === f || f;
+				return n.a.createElement(n.a.Fragment, null, x ? v || y ? n.a.createElement(i.a, {
 					key: "communitiesPreview",
 					listingKey: s,
-					searchOptions: p
-				}) : !b && n.a.createElement(u.a, {
-					query: f,
+					searchOptions: h
+				}) : !C && n.a.createElement(p.a, {
+					query: g,
 					type: c.b.Communities,
-					searchOptions: p
+					searchOptions: h
 				}) : n.a.createElement(n.a.Fragment, null, n.a.createElement(d.a, {
 					key: "subNav",
-					searchOptions: p,
+					searchOptions: h,
 					subredditName: r,
-					tab: h
-				}), x ? n.a.createElement(i.a, {
+					tab: b
+				}), v || y ? n.a.createElement(i.a, {
 					key: "communitiesPreview",
 					listingKey: s,
-					searchOptions: p
-				}) : !b && n.a.createElement(c.a, {
-					query: f,
+					searchOptions: h
+				}) : !C && n.a.createElement(c.a, {
+					query: g,
 					type: c.b.Communities,
-					searchOptions: p
+					searchOptions: h
 				})))
 			}
 		},
@@ -11463,4 +11472,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.6fbe9af4e273d8b207ea.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.f50675fc9f774771a84e.js.map
