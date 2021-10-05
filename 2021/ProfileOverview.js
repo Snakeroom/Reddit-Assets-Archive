@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.214247f9d189513b7a1a.js
-// Retrieved at 10/5/2021, 1:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.bcf820aa29f06c078a64.js
+// Retrieved at 10/5/2021, 2:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview"], {
 		"./node_modules/shallowequal/index.js": function(e, t) {
@@ -842,12 +842,12 @@
 					if (!T.platform.currentPage) return;
 					if (200 !== T.platform.currentPage.status) return;
 					const N = Object(b.m)(s(), k),
-						L = Object(f.ob)(T, {
+						L = Object(f.nb)(T, {
 							userName: v
 						}).id;
 					t(O.l({
 						title: Ee(s(), v)
-					})), Object(f.M)(T) && Object(f.P)(T, v) && t(Object(y.f)());
+					})), Object(f.M)(T) && Object(f.Q)(T, v) && t(Object(y.f)());
 					const M = [t(Object(d.q)()), t(w.b(k, N)), t(j.b(k)), t(x.o(v)), t(j.g(v)), t(P.k(v, L))];
 					await Promise.all(M)
 				}, Ee = (e, t) => Object(b.q)(e, {
@@ -1224,7 +1224,7 @@
 						postIds: ke,
 						onceInViewport: Ee,
 						triggerCelebratoryMoment: _e
-					} = e, Te = !!e.redditStyle || !!e["data-redditstyle"], Ne = Te ? void 0 : u, Le = Object(l.a)(ce), Me = le && Le, Fe = Object(a.a)(ce), Re = Object(c.a)(ce), Ae = Object(B.c)(fe), Be = !!fe.media && fe.media.type === y.o.RTJSON, Ve = Ie && Be, Ke = s ? s - U.a : void 0, Ue = !(G && q || $), We = (e => e === re.Jd.OnlyTitles)(ye) && !Object(se.a)(fe), De = (e => e === re.Jd.MediumHeight)(ye) && !Object(se.a)(fe), Ge = (e => {
+					} = e, Te = !!e.redditStyle || !!e["data-redditstyle"], Ne = Te ? void 0 : u, Le = Object(l.a)(ce), Me = le && Le, Fe = Object(a.a)(ce), Re = Object(c.a)(ce), Ae = Object(B.c)(fe), Be = !!fe.media && fe.media.type === y.o.RTJSON, Ve = Ie && Be, Ke = s ? s - U.a : void 0, Ue = !(G && q || $), We = (e => e === re.Ld.OnlyTitles)(ye) && !Object(se.a)(fe), De = (e => e === re.Ld.MediumHeight)(ye) && !Object(se.a)(fe), Ge = (e => {
 						const {
 							post: t,
 							postIds: s,
@@ -2109,7 +2109,7 @@
 					H = K && Object(C.h)(K),
 					q = Object(i.e)(e => {
 						if (!H) return !0;
-						const t = Object(O.ub)(e, F.author || "");
+						const t = Object(O.tb)(e, F.author || "");
 						return !t || t.enableFollowers
 					});
 				return n.a.createElement("div", {
@@ -4358,4 +4358,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.214247f9d189513b7a1a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.bcf820aa29f06c078a64.js.map

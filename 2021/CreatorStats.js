@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CreatorStats.b90d84ca834c07c6ec89.js
-// Retrieved at 10/5/2021, 12:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CreatorStats.08aa92fb694083b8c7b8.js
+// Retrieved at 10/5/2021, 2:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CreatorStats"], {
 		"./src/reddit/components/CreatorStats/index.m.less": function(t, e, a) {
@@ -31,14 +31,14 @@
 				l = a("./src/reddit/components/ShareMenu/index.tsx"),
 				c = a("./src/reddit/constants/tracking.ts"),
 				u = a("./src/reddit/selectors/telemetry.ts");
-			var m = a("./src/reddit/hooks/useTracking.ts"),
-				d = a("./src/reddit/selectors/creatorStats.ts"),
+			var d = a("./src/reddit/hooks/useTracking.ts"),
+				m = a("./src/reddit/selectors/creatorStats.ts"),
 				p = a("./src/reddit/components/CreatorStats/helpers.ts"),
 				b = a("./src/lib/constants/icons.ts"),
 				h = a("./src/lib/prettyPrintNumber/index.ts"),
 				f = a("./src/reddit/components/InfoTextTooltip/Hooked.tsx"),
-				_ = a("./src/reddit/hooks/useInfoTextTooltip.ts"),
-				v = a("./src/reddit/icons/fonts/index.tsx"),
+				v = a("./src/reddit/hooks/useInfoTextTooltip.ts"),
+				_ = a("./src/reddit/icons/fonts/index.tsx"),
 				k = a("./src/reddit/components/CreatorStats/index.m.less"),
 				N = a.n(k);
 
@@ -52,7 +52,7 @@
 				}).apply(this, arguments)
 			}
 			const E = t => {
-				const e = Object(_.a)();
+				const e = Object(v.a)();
 				return r.a.createElement(r.a.Fragment, null, r.a.createElement("div", {
 					className: N.a.singleStat,
 					onMouseEnter: e.show,
@@ -62,7 +62,7 @@
 					className: N.a.statNumber
 				}, t.statNumber), r.a.createElement("div", {
 					className: N.a.statDescription
-				}, r.a.createElement(v.a, {
+				}, r.a.createElement(_.a, {
 					name: t.iconName,
 					className: N.a.icon
 				}), t.statDescription)), r.a.createElement(f.a, T({}, e, {
@@ -102,7 +102,7 @@
 						hk: "41J83l"
 					})
 				}), null != t.subredditKarma && r.a.createElement(E, {
-					statNumber: t.subredditKarma,
+					statNumber: Object(h.b)(t.subredditKarma),
 					statDescription: s.fbt._("Community Karma", null, {
 						hk: "2iy1C6"
 					}),
@@ -128,18 +128,21 @@
 				}))
 			};
 			e.default = t => {
-				const e = Object(m.a)(),
-					a = Object(n.e)(e => Object(d.b)(e, t.post.id)),
+				const e = Object(d.a)(),
+					a = Object(n.e)(e => Object(m.b)(e, t.post.id)),
 					b = Object(p.c)(t.post, a),
-					h = Object(n.e)(e => Object(d.c)(e, t.subreddit.id));
+					h = Object(n.e)(e => Object(m.c)(e, t.subreddit.id));
 				return Object(o.useEffect)(() => {
-					a && e((() => t => ({
-						...Object(u.defaults)(t),
+					b === p.b.Available && e((t => e => ({
+						...Object(u.defaults)(e),
 						action: c.c.VIEW,
 						noun: "aggregate_stats",
-						source: "creator_stats"
-					}))())
-				}, [a, e]), r.a.createElement("div", {
+						source: "creator_stats",
+						subreddit: Object(u.subreddit)(e),
+						post: Object(u.post)(e, t),
+						userSubreddit: Object(u.userSubreddit)(e)
+					}))(t.post.id))
+				}, [e, t.post.id, b]), r.a.createElement("div", {
 					className: N.a.container
 				}, r.a.createElement("div", {
 					className: N.a.titleContainer
@@ -186,12 +189,15 @@
 						default:
 							return ""
 					}
-				})(b, t.post, t.subreddit, t => e((t => e => ({
-					...Object(u.defaults)(e),
+				})(b, t.post, t.subreddit, a => e(((t, e) => a => ({
+					...Object(u.defaults)(a),
 					action: c.c.CLICK,
 					noun: t,
-					source: "creator_stats"
-				}))(t))))), b === p.b.Available && a && r.a.createElement(x, {
+					source: "creator_stats",
+					post: Object(u.post)(a, e),
+					subreddit: Object(u.subreddit)(a),
+					userSubreddit: Object(u.userSubreddit)(a)
+				}))(a, t.post.id))))), b === p.b.Available && a && r.a.createElement(x, {
 					upvoteRatio: t.post.upvoteRatio || void 0,
 					postStats: a,
 					subredditKarma: h
@@ -200,4 +206,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CreatorStats.b90d84ca834c07c6ec89.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CreatorStats.08aa92fb694083b8c7b8.js.map

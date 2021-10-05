@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.afe28da74912b9542025.js
-// Retrieved at 10/5/2021, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.d366f66e009e4612a4eb.js
+// Retrieved at 10/5/2021, 2:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -17432,7 +17432,7 @@
 					isEmployee: W.H,
 					crosspostId: U.j,
 					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(W.ib)(e),
-					userIsSuspended: W.Q,
+					userIsSuspended: W.R,
 					allTags: H.e,
 					existingTags: H.f,
 					newTags: H.g,
@@ -22374,7 +22374,7 @@
 				o = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				r = s("./src/reddit/selectors/posts.ts");
 			const i = e => Object(o.c)(e, {
-					experimentName: a.Gd,
+					experimentName: a.Id,
 					experimentEligibilitySelector: o.a
 				}),
 				d = (e, t) => t === a.Qd.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
@@ -22506,4 +22506,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.afe28da74912b9542025.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.d366f66e009e4612a4eb.js.map

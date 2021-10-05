@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.ce1d151d3e3746b8b124.js
-// Retrieved at 10/5/2021, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.066f22ea63358f2010a8.js
+// Retrieved at 10/5/2021, 2:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, n) {
@@ -3099,7 +3099,7 @@
 							await n(Object(l.o)(t.name))
 						}
 					})(), (async () => {
-						const s = Object(w.ob)(r, {
+						const s = Object(w.nb)(r, {
 							userName: t
 						});
 						if (!s) return;
@@ -3712,7 +3712,7 @@
 					subredditId: t.subredditId,
 					username: t.username
 				}),
-				user: (e, t) => Object(f.ob)(e, {
+				user: (e, t) => Object(f.nb)(e, {
 					userName: t.username
 				})
 			});
@@ -4050,7 +4050,7 @@
 						userName: t,
 						minSize: 32
 					}),
-					user: f.ob,
+					user: f.nb,
 					userFlair: (e, {
 						subredditId: t
 					}) => t ? Object(g.d)(e, {
@@ -4796,7 +4796,7 @@
 				A = n.n(N);
 			const T = Object(i.a)(v.j, (e, {
 					profileName: t
-				}) => Object(_.ub)(e, t), (e, t) => ({
+				}) => Object(_.tb)(e, t), (e, t) => ({
 					karma: {
 						...m.a,
 						...null == t ? void 0 : t.karma,
@@ -12717,7 +12717,7 @@
 				Sr = n.n(Or);
 			const {
 				fbt: Pr
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), Ir = 30, Nr = 200, Ar = Object(c.a)(A.k, wr.a, A.vb, jr.n, Xe.a, (e, t, n, s, r) => {
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), Ir = 30, Nr = 200, Ar = Object(c.a)(A.k, wr.a, A.ub, jr.n, Xe.a, (e, t, n, s, r) => {
 				const o = e && e.profileId,
 					a = o && s[o] ? s[o].bannerBackgroundImage : void 0;
 				return {
@@ -14095,7 +14095,7 @@
 			}));
 			var s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const o = Object(r.a)(s.Fd)
+			const o = Object(r.a)(s.Hd)
 		},
 		"./src/reddit/selectors/gold/productOffers.ts": function(e, t, n) {
 			"use strict";
@@ -14249,4 +14249,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.ce1d151d3e3746b8b124.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.066f22ea63358f2010a8.js.map

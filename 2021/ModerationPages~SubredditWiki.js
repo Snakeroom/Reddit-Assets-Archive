@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.53d663511ed33e5c5fd6.js
-// Retrieved at 10/4/2021, 10:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.0554160c295d3b910f93.js
+// Retrieved at 10/5/2021, 2:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, r) {
@@ -1339,7 +1339,7 @@
 							await r(Object(c.o)(t.name))
 						}
 					})(), (async () => {
-						const n = Object(O.ob)(s, {
+						const n = Object(O.nb)(s, {
 							userName: t
 						});
 						if (!n) return;
@@ -2806,7 +2806,7 @@
 				x = k.a.wrapped(l.c, "StyledTooltip", v.a),
 				y = Object(o.c)({
 					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(f.ib)(e),
-					userIsSuspended: f.Q
+					userIsSuspended: f.R
 				});
 			t.a = Object(i.b)(y, (e, {
 				eventSource: t
@@ -3017,7 +3017,7 @@
 					subredditId: t.subredditId,
 					username: t.username
 				}),
-				user: (e, t) => Object(h.ob)(e, {
+				user: (e, t) => Object(h.nb)(e, {
 					userName: t.username
 				})
 			});
@@ -3355,7 +3355,7 @@
 						userName: t,
 						minSize: 32
 					}),
-					user: h.ob,
+					user: h.nb,
 					userFlair: (e, {
 						subredditId: t
 					}) => t ? Object(v.d)(e, {
@@ -5238,4 +5238,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.53d663511ed33e5c5fd6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.0554160c295d3b910f93.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.3d771a94ef015105f463.js
-// Retrieved at 10/5/2021, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.ea35ed1f5bd7be96501a.js
+// Retrieved at 10/5/2021, 2:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~ModListing", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -2981,7 +2981,7 @@
 				v = g.a.wrapped(l.c, "StyledTooltip", x.a),
 				E = Object(a.c)({
 					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(h.ib)(e),
-					userIsSuspended: h.Q
+					userIsSuspended: h.R
 				});
 			t.a = Object(i.b)(E, (e, {
 				eventSource: t
@@ -15284,7 +15284,7 @@
 			}), Qe = Object(_.a)(Object(m.a)((e, {
 				location: t
 			}) => t.search, e => o()([...Object(x.a)(e)]))), Ye = e => Object(je.a)(e) || "", Je = Object(m.c)({
-				isTopContentDismissed: Te.R
+				isTopContentDismissed: Te.S
 			}), Ze = Object(m.c)({
 				subreddit: (e, t) => Object(Pe.w)(e, {
 					subredditName: t.match.params.subredditName
@@ -16058,7 +16058,7 @@
 			const l = Object(s.a)(c.a, (e, {
 					listingName: t
 				}) => {
-					const n = Object(a.vb)(e);
+					const n = Object(a.ub)(e);
 					if (!n) return !1;
 					let s;
 					if (-1 === [o.R, "r/popular"].indexOf(t)) {
@@ -17057,4 +17057,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.3d771a94ef015105f463.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.ea35ed1f5bd7be96501a.js.map

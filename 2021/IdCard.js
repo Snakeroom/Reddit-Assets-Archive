@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.470e426c5ce241462097.js
-// Retrieved at 10/5/2021, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.356edf21011882a04b2d.js
+// Retrieved at 10/5/2021, 2:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "AchievementsActions", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -1846,7 +1846,7 @@
 				x = g.a.wrapped(l.c, "StyledTooltip", _.a),
 				y = Object(a.c)({
 					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(h.ib)(e),
-					userIsSuspended: h.Q
+					userIsSuspended: h.R
 				});
 			t.a = Object(o.b)(y, (e, {
 				eventSource: t
@@ -3234,8 +3234,8 @@
 				Tt = n.n(vt);
 			const St = z.a.wrapped(j.s, "TertiaryButton", Tt.a),
 				It = Object(u.c)({
-					stylesDisabledForSubreddit: F.kb,
-					stylesDisabledGlobally: F.lb,
+					stylesDisabledForSubreddit: F.jb,
+					stylesDisabledGlobally: F.kb,
 					shouldShowFlairPreview: (e, {
 						subredditId: t
 					}) => Object(Te.c)(e, {
@@ -5799,4 +5799,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.470e426c5ce241462097.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.356edf21011882a04b2d.js.map

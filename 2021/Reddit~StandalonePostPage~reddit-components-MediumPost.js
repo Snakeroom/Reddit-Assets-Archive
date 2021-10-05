@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-MediumPost.815a3444013e341a96e8.js
-// Retrieved at 10/5/2021, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-MediumPost.1b6f384dfce817a99016.js
+// Retrieved at 10/5/2021, 2:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~StandalonePostPage~reddit-components-MediumPost"], {
 		"./src/lib/hooks/useTooltip.ts": function(e, t, r) {
@@ -71,17 +71,6 @@
 					r = null;
 				return (...n) => (null !== t && n.length === t.length && s()(n, (e, r) => e === t[r]) || (t = n, r = e(...n)), r)
 			}
-		},
-		"./src/realtime/GQLSubscription/async.tsx": function(e, t, r) {
-			"use strict";
-			var n = r("./src/higherOrderComponents/makeAsync.tsx"),
-				s = r("./src/lib/loadWithRetries/index.ts");
-			const o = Object(n.a)({
-				ErrorComponent: () => null,
-				LoadingComponent: () => null,
-				getComponent: () => Object(s.a)(() => Promise.all([r.e("vendors~RealtimeGQLSubscriptionAsync"), r.e("RealtimeGQLSubscriptionAsync")]).then(r.bind(null, "./src/realtime/GQLSubscription/index.tsx"))).then(e => e.default)
-			});
-			t.a = o
 		},
 		"./src/reddit/actions/gold/communityAwards/index.ts": function(e, t, r) {
 			"use strict";
@@ -369,22 +358,22 @@
 						})
 					}, []);
 				Object(a.a)(S, U);
-				const [L, V] = Object(n.useState)(!1), B = Object(n.useCallback)(e => {
+				const [V, B] = Object(n.useState)(!1), L = Object(n.useCallback)(e => {
 					e.forEach(e => {
 						const {
 							isIntersecting: t,
 							intersectionRatio: r
 						} = e, n = 1 !== r;
-						t ? V(!0) : n && V(!1)
+						t ? B(!0) : n && B(!1)
 					})
-				}, []), W = Object(n.useRef)({
+				}, []), q = Object(n.useRef)({
 					rootMargin: "2000px 0px 2000px 0px"
 				});
-				Object(a.a)(S, B, W.current);
-				const q = Object(c.a)(t);
+				Object(a.a)(S, L, q.current);
+				const W = Object(c.a)(t);
 				Object(n.useEffect)(() => {
-					if (void 0 !== q && q !== t) {
-						const e = t - q;
+					if (void 0 !== W && W !== t) {
+						const e = t - W;
 						G.current ? (T.current(e), f && f()) : D.current += e
 					}
 					return () => {
@@ -432,7 +421,7 @@
 					role: "screen-reader"
 				}, [...E].reverse().join(""))), s.a.createElement("span", {
 					ref: S
-				}), L && s.a.createElement(o.a, {
+				}), V && s.a.createElement(o.a, {
 					variables: O,
 					onData: b ? m : v,
 					queryKey: g,
@@ -1526,11 +1515,11 @@
 			})), r.d(t, "viewKarmaSuccessEvent", (function() {
 				return U
 			})), r.d(t, "clickFilterEvent", (function() {
-				return L
-			})), r.d(t, "clickNextFiltersEvent", (function() {
 				return V
-			})), r.d(t, "clickPreviousFiltersEvent", (function() {
+			})), r.d(t, "clickNextFiltersEvent", (function() {
 				return B
+			})), r.d(t, "clickPreviousFiltersEvent", (function() {
+				return L
 			}));
 			var n = r("./src/reddit/models/Gold/Award.ts"),
 				s = r("./src/reddit/selectors/telemetry.ts"),
@@ -1714,7 +1703,7 @@
 						...l(e)
 					}
 				}),
-				L = e => t => ({
+				V = e => t => ({
 					...u(t),
 					source: "give_gold",
 					action: "click",
@@ -1724,13 +1713,13 @@
 						filterName: e.content.markdown
 					}
 				}),
-				V = () => e => ({
+				B = () => e => ({
 					...u(e),
 					source: "give_gold",
 					action: "click",
 					noun: "next_filters"
 				}),
-				B = () => e => ({
+				L = () => e => ({
 					...u(e),
 					source: "give_gold",
 					action: "click",
@@ -2134,7 +2123,7 @@
 				d = (e, t) => r => {
 					const {
 						id: n
-					} = Object(a.ob)(r, {
+					} = Object(a.nb)(r, {
 						userName: t
 					});
 					return {
@@ -3093,7 +3082,7 @@
 					minSize: t,
 					userName: r
 				}) => {
-					const n = Object(i.ob)(e, {
+					const n = Object(i.nb)(e, {
 						userName: r
 					});
 					if (n && n.awardedLastMonth && n.awardedLastMonth.topAward) return f(e, {
@@ -3368,4 +3357,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-MediumPost.815a3444013e341a96e8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-MediumPost.1b6f384dfce817a99016.js.map

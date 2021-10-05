@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.fac90da929b2df73f949.js
-// Retrieved at 10/5/2021, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.c1ff63efd71d9210d4de.js
+// Retrieved at 10/5/2021, 2:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -2051,7 +2051,7 @@
 				v = f.a.wrapped(l.c, "StyledTooltip", x.a),
 				y = Object(a.c)({
 					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(b.ib)(e),
-					userIsSuspended: b.Q
+					userIsSuspended: b.R
 				});
 			t.a = Object(i.b)(y, (e, {
 				eventSource: t
@@ -11500,7 +11500,7 @@
 				o = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = s("./src/reddit/selectors/posts.ts");
 			const a = e => Object(o.c)(e, {
-					experimentName: n.Gd,
+					experimentName: n.Id,
 					experimentEligibilitySelector: o.a
 				}),
 				c = (e, t) => t === n.Qd.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
@@ -11512,4 +11512,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.fac90da929b2df73f949.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.c1ff63efd71d9210d4de.js.map

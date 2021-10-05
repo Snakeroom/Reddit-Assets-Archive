@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.e9bbf9a685fb760ba831.js
-// Retrieved at 10/5/2021, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.3d652a54b98714c78c91.js
+// Retrieved at 10/5/2021, 2:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -3837,57 +3837,6 @@
 							[e]: r
 						}))
 					}
-				}
-		},
-		"./src/reddit/actions/presence.ts": function(e, t, r) {
-			"use strict";
-			r.d(t, "a", (function() {
-				return u
-			})), r.d(t, "b", (function() {
-				return p
-			}));
-			r("./node_modules/core-js/modules/web.dom.iterable.js");
-			var s = r("./src/lib/makeActionCreator/index.ts"),
-				n = r("./src/lib/constants/index.ts"),
-				a = r("./src/lib/makeApiRequest/index.ts"),
-				c = r("./src/lib/omitHeaders/index.ts"),
-				o = r("./src/reddit/constants/headers.ts"),
-				d = r("./src/reddit/helpers/addRedesignIdentifier/index.ts");
-			var i = r("./src/reddit/selectors/experiments/presenceIndicator.ts");
-			const u = "PRESENCE__PRESENTUSERS_LOADED",
-				l = Object(s.a)(u),
-				p = (e, t, r) => async (s, u, {
-					apiContext: p
-				}) => {
-					const b = u();
-					if (!Object(i.a)(b)) return;
-					const f = new Set;
-					e && Object.values(e).map(e => {
-						e.authorId && f.add(e.authorId)
-					}), t && Object.values(t).map(e => {
-						e.authorId && f.add(e.authorId)
-					});
-					const y = await (async (e, t, r) => Object(a.a)(Object(c.a)(e, [o.a]), {
-						endpoint: Object(d.a)(`${e.apiUrl}/api/presence`),
-						method: n.ib.POST,
-						data: {
-							user_fullnames: t.join(","),
-							subreddit_fullname: r || ""
-						}
-					}).then(e => {
-						if (!e.ok) return {
-							presentUsers: []
-						};
-						const r = e.body.present_user_fullnames || [],
-							s = new Set(r),
-							n = {};
-						return t.forEach(e => {
-							n[e] = s.has(e)
-						}), {
-							presentUsers: n
-						}
-					}))(p(), Array.from(f), r);
-					s(l(y))
 				}
 		},
 		"./src/reddit/actions/product.ts": function(e, t, r) {
@@ -9498,7 +9447,7 @@
 		"./src/reddit/reducers/index.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
-				return aD
+				return rD
 			}));
 			var s = r("./src/reddit/actions/modal.ts");
 			const n = {};
@@ -25384,20 +25333,8 @@
 				LT = Object(T.c)({
 					allocationByKey: CT,
 					fetched: PT
-				}),
-				NT = r("./src/reddit/actions/presence.ts");
-			const kT = {};
-			var xT = (e = kT, t) => {
-				switch (t.type) {
-					case NT.a:
-						return {
-							...e, ...t.payload.presentUsers
-						};
-					default:
-						return e
-				}
-			};
-			var UT = (e = null, t) => {
+				});
+			var NT = (e = null, t) => {
 				switch (t.type) {
 					case ee.vb:
 						return t.payload;
@@ -25408,7 +25345,7 @@
 						return e
 				}
 			};
-			var MT = (e = !1, t) => {
+			var kT = (e = !1, t) => {
 					switch (t.type) {
 						case ee.wb:
 						case ee.vb:
@@ -25419,11 +25356,11 @@
 							return e
 					}
 				},
-				FT = Object(T.c)({
-					error: UT,
-					pending: MT
+				xT = Object(T.c)({
+					error: NT,
+					pending: kT
 				});
-			var GT = (e = null, t) => {
+			var UT = (e = null, t) => {
 				switch (t.type) {
 					case ee.yb:
 						return t.payload.postId;
@@ -25431,8 +25368,8 @@
 						return e
 				}
 			};
-			const BT = {};
-			var HT = (e = BT, t) => {
+			const MT = {};
+			var FT = (e = MT, t) => {
 				switch (t.type) {
 					case ee.wb: {
 						const {
@@ -25448,8 +25385,8 @@
 						return e
 				}
 			};
-			const VT = {};
-			var qT = (e = VT, t) => {
+			const GT = {};
+			var BT = (e = GT, t) => {
 					switch (t.type) {
 						case ee.wb: {
 							const {
@@ -25471,23 +25408,22 @@
 							return e
 					}
 				},
-				WT = Object(T.c)({
-					api: FT,
-					currentPostId: GT,
-					currentRank: HT,
-					list: qT
+				HT = Object(T.c)({
+					api: xT,
+					currentPostId: UT,
+					currentRank: FT,
+					list: BT
 				}),
-				KT = Object(T.c)({
+				VT = Object(T.c)({
 					api: IT,
 					appliedBadges: gT,
 					models: vT,
 					nameAvailable: AT,
-					topAwarders: WT,
-					powerups: LT,
-					presence: xT
+					topAwarders: HT,
+					powerups: LT
 				});
-			const $T = {};
-			var QT = (e = $T, t) => {
+			const qT = {};
+			var WT = (e = qT, t) => {
 					switch (t.type) {
 						case G.b:
 						case G.f:
@@ -25513,9 +25449,9 @@
 							return e
 					}
 				},
-				YT = r("./src/reddit/actions/widgets/constants.ts");
-			const XT = {};
-			var zT = (e = XT, t) => {
+				KT = r("./src/reddit/actions/widgets/constants.ts");
+			const $T = {};
+			var QT = (e = $T, t) => {
 					switch (t.type) {
 						case G.b:
 						case G.f:
@@ -25538,14 +25474,14 @@
 								[c]: n[0]
 							}
 						}
-						case YT.g: {
+						case KT.g: {
 							const r = t.payload;
 							return "menu" !== r.widget.kind ? e : {
 								...e,
 								[r.subredditId]: r.widgetId
 							}
 						}
-						case YT.h: {
+						case KT.h: {
 							const r = t.payload;
 							return e[r.subredditId] === r.widgetId ? {
 								...e,
@@ -25556,9 +25492,9 @@
 							return e
 					}
 				},
-				JT = r("./src/reddit/models/Widgets/index.ts");
-			const ZT = {};
-			var eD = (e = ZT, t) => {
+				YT = r("./src/reddit/models/Widgets/index.ts");
+			const XT = {};
+			var zT = (e = XT, t) => {
 				switch (t.type) {
 					case W.SUBREDDIT_LOADED: {
 						const r = t.payload,
@@ -25570,7 +25506,7 @@
 							...n.items
 						}
 					}
-					case YT.b: {
+					case KT.b: {
 						const r = t.payload;
 						return {
 							...e,
@@ -25584,26 +25520,26 @@
 						return Object.keys(t).forEach(e => {
 							t[e] = {
 								...t[e],
-								styles: Object(JT.r)()
+								styles: Object(YT.r)()
 							}
 						}), t
 					}
-					case YT.e: {
+					case KT.e: {
 						const r = t.payload;
 						return {
 							...e,
 							...r.widgets.items
 						}
 					}
-					case YT.i:
-					case YT.g: {
+					case KT.i:
+					case KT.g: {
 						const r = t.payload;
 						return {
 							...e,
 							[r.widget.id]: r.widget
 						}
 					}
-					case YT.h: {
+					case KT.h: {
 						const r = t.payload,
 							s = {
 								...e
@@ -25669,8 +25605,8 @@
 						return e
 				}
 			};
-			const tD = {};
-			var rD = (e = tD, t) => {
+			const JT = {};
+			var ZT = (e = JT, t) => {
 				switch (t.type) {
 					case W.SUBREDDIT_LOADED:
 					case G.f:
@@ -25693,8 +25629,8 @@
 						return e
 				}
 			};
-			const sD = {};
-			var nD = (e = sD, t) => {
+			const eD = {};
+			var tD = (e = eD, t) => {
 				switch (t.type) {
 					case W.SUBREDDIT_LOADED:
 					case je.PAGE_LOADED:
@@ -25711,22 +25647,22 @@
 							[a]: c
 						}
 					}
-					case YT.e:
-					case YT.b: {
+					case KT.e:
+					case KT.b: {
 						const r = t.payload;
 						return {
 							...e,
 							[r.subredditId]: r.widgets.layout.sidebar.order
 						}
 					}
-					case YT.f: {
+					case KT.f: {
 						const r = t.payload;
 						return {
 							...e,
 							[r.subredditId]: r.widgetIds
 						}
 					}
-					case YT.g: {
+					case KT.g: {
 						const r = t.payload;
 						if ("menu" === r.widget.kind) return e;
 						if (!e[r.subredditId]) return {
@@ -25739,7 +25675,7 @@
 							[r.subredditId]: s
 						}
 					}
-					case YT.h: {
+					case KT.h: {
 						const r = t.payload;
 						if (!e[r.subredditId]) return e;
 						const s = e[r.subredditId].filter(e => e !== r.widgetId);
@@ -25772,7 +25708,7 @@
 						return e
 				}
 			};
-			const aD = {
+			const rD = {
 				accountManagerModalData: a,
 				activeModal: y,
 				ads: h,
@@ -25893,13 +25829,13 @@
 				user: lT,
 				userDataRequestPage: ET,
 				upvotePromptCountPerSess: SS,
-				users: KT,
+				users: VT,
 				widgets: Object(T.c)({
-					idCardIds: QT,
-					menuIds: zT,
-					models: eD,
-					moderatorIds: rD,
-					sidebar: nD
+					idCardIds: WT,
+					menuIds: QT,
+					models: zT,
+					moderatorIds: ZT,
+					sidebar: tD
 				})
 			}
 		},
@@ -25966,7 +25902,7 @@
 					return !!r && r.includes(t)
 				},
 				o = (e, t) => {
-					const r = Object(s.ob)(e, {
+					const r = Object(s.nb)(e, {
 						userName: t
 					});
 					return !!r && c(e, r.id)
@@ -26113,28 +26049,6 @@
 				p = e => e.user.googleOneTapEnabled,
 				b = Object(s.a)(o.K, i, (e, t) => !e && !!t),
 				f = Object(s.a)(o.K, i, (e, t) => !e && !!t && !Object(n.Ne)(t))
-		},
-		"./src/reddit/selectors/experiments/presenceIndicator.ts": function(e, t, r) {
-			"use strict";
-			r.d(t, "b", (function() {
-				return a
-			})), r.d(t, "a", (function() {
-				return c
-			}));
-			var s = r("./src/reddit/constants/experiments.ts"),
-				n = r("./src/reddit/helpers/chooseVariant/index.ts");
-			const a = e => {
-					return Object(n.c)(e, {
-						experimentEligibilitySelector: n.a,
-						experimentName: s.Ed
-					}) === s.Pd.Enabled
-				},
-				c = e => {
-					return Object(n.c)(e, {
-						experimentEligibilitySelector: n.a,
-						experimentName: s.Dd
-					}) === s.Od.Enabled
-				}
 		},
 		"./src/reddit/selectors/experiments/upvotePrompt.ts": function(e, t, r) {
 			"use strict";
@@ -26361,4 +26275,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.e9bbf9a685fb760ba831.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.3d652a54b98714c78c91.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview.5f593039bf2c9c69b7e7.js
-// Retrieved at 10/5/2021, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview.e2ec70c305a6f3723674.js
+// Retrieved at 10/5/2021, 2:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments~ProfileOverview", "reddit-components-ContentGate"], {
 		"./node_modules/linkify-it/index.js": function(e, t, n) {
@@ -814,7 +814,7 @@
 				w = g.a.wrapped(u.c, "StyledTooltip", f.a),
 				y = Object(i.c)({
 					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(_.ib)(e),
-					userIsSuspended: _.Q
+					userIsSuspended: _.R
 				});
 			t.a = Object(s.b)(y, (e, {
 				eventSource: t
@@ -2270,4 +2270,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview.5f593039bf2c9c69b7e7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview.e2ec70c305a6f3723674.js.map

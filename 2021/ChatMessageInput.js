@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput.bde623d418dd7b8034b8.js
-// Retrieved at 10/5/2021, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput.7041920f72bb63ddcc36.js
+// Retrieved at 10/5/2021, 2:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput"], {
 		"./node_modules/draft-js/dist/Draft.css": function(e, t, s) {},
@@ -710,12 +710,12 @@
 				U = h.a.div("CloseIconWrap", N.a),
 				q = h.a.div("Reply", N.a),
 				G = h.a.div("ReplyAuthor", N.a),
-				K = h.a.div("ReplyComment", N.a),
-				V = h.a.wrapped(y.a, "RichTextEditor", N.a),
+				V = h.a.div("ReplyComment", N.a),
+				K = h.a.wrapped(y.a, "RichTextEditor", N.a),
 				H = h.a.wrapped(g.a, "SmallChatUserIcon", N.a),
 				W = Object(d.b)(() => Object(l.c)({
 					draft: O.i,
-					errorMsgs: O.K,
+					errorMsgs: O.J,
 					hasError: O.v,
 					liveStreamingChatCharacterLimit: e => {
 						const t = Object(z.a)(e);
@@ -866,7 +866,7 @@
 						className: Object(m.a)({
 							[N.a.isLivestreaming]: s
 						})
-					}, u.a.createElement(K, {
+					}, u.a.createElement(V, {
 						onClick: this.handleCloseReply
 					}, u.a.createElement(G, null, r.fbt._("Replying to u/ {username}:", [r.fbt._param("username", h.author)], {
 						hk: "2YZre5"
@@ -886,7 +886,7 @@
 					}, u.a.createElement(X, {
 						isEditing: !!t,
 						isLivestreaming: !!s
-					}), u.a.createElement(V, {
+					}), u.a.createElement(K, {
 						className: Object(m.a)(N.a.RichTextEditor, {
 							[N.a.Livestreaming]: s && !t,
 							[N.a.Editing]: !s && t
@@ -1988,4 +1988,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.bde623d418dd7b8034b8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.7041920f72bb63ddcc36.js.map

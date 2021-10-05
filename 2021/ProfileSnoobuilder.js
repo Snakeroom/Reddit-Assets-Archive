@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.103bc82aeee4b2530dff.js
-// Retrieved at 10/5/2021, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.8734c519fd7f94a75e49.js
+// Retrieved at 10/5/2021, 2:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileSnoobuilder", "reddit-components-ContentGate"], {
 		"./assets/snoobuilder/Snoobuilder.json": function(e, t, n) {
@@ -1158,7 +1158,7 @@
 				y = x.a.wrapped(l.c, "StyledTooltip", _.a),
 				v = Object(a.c)({
 					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(b.ib)(e),
-					userIsSuspended: b.Q
+					userIsSuspended: b.R
 				});
 			t.a = Object(o.b)(v, (e, {
 				eventSource: t
@@ -1920,7 +1920,7 @@
 				}),
 				F = Object(u.c)({
 					isDropdownMenuOpen: e => Object(C.a)(e) === B,
-					isOwnProfile: (e, t) => Object(j.P)(e, t.profileName),
+					isOwnProfile: (e, t) => Object(j.Q)(e, t.profileName),
 					isSnoovatar30Enabled: w.d.snoovatar30,
 					isSubscriptionsPinned: S.b
 				}),
@@ -3620,7 +3620,7 @@
 				subreddits: function(e, {
 					profileName: t
 				}) {
-					const n = Object(m.ob)(e, {
+					const n = Object(m.nb)(e, {
 							userName: t
 						}),
 						s = Object(u.f)(e);
@@ -4624,7 +4624,7 @@
 				}) : null,
 				user: (e, {
 					subredditOrProfile: t
-				}) => t.type === l.a.PROFILE ? Object(h.ob)(e, {
+				}) => t.type === l.a.PROFILE ? Object(h.nb)(e, {
 					userName: t.name
 				}) : null
 			}), S = Object(i.b)(j, e => ({
@@ -5370,4 +5370,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.103bc82aeee4b2530dff.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.8734c519fd7f94a75e49.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.b941ee9d5c63b8fa9ab2.js
-// Retrieved at 10/5/2021, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.aeec32b35eacc899ccd4.js
+// Retrieved at 10/5/2021, 2:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, n) {
@@ -867,12 +867,12 @@
 					})), 5e3)
 				};
 			var X = n("./src/reddit/components/Comments/Comment/TopMeta/crowdControl.m.less"),
-				G = n.n(X);
+				J = n.n(X);
 			const {
-				fbt: J
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), Q = () => r.a.createElement(C.a, {
-				className: G.a.crowdControlText
-			}, J._("Crowd Control", null, {
+				fbt: Q
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), G = () => r.a.createElement(C.a, {
+				className: J.a.crowdControlText
+			}, Q._("Crowd Control", null, {
 				hk: "4WgEW"
 			}));
 			var K = n("./src/reddit/components/Comments/Comment/TopMeta/edited.m.less"),
@@ -1157,7 +1157,7 @@
 					isLivestreaming: u,
 					renderedInOverlay: p,
 					collapsed: n
-				})), o && r.a.createElement(Q, null), r.a.createElement(fe, {
+				})), o && r.a.createElement(G, null), r.a.createElement(fe, {
 					className: ke.a.role,
 					comment: i,
 					subredditDisplayText: b,
@@ -1321,7 +1321,7 @@
 					isStrong: !!d,
 					renderedInOverlay: _,
 					collapsed: s
-				}), o && r.a.createElement(Q, null), o && r.a.createElement(C.c, {
+				}), o && r.a.createElement(G, null), o && r.a.createElement(C.c, {
 					className: Se.a.metaText,
 					key: "crowdControlSeparator"
 				}), m && !w && r.a.createElement(Fe, {
@@ -3291,7 +3291,7 @@
 				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				a = n("./src/reddit/selectors/posts.ts");
 			const i = e => Object(r.c)(e, {
-					experimentName: o.Gd,
+					experimentName: o.Id,
 					experimentEligibilitySelector: r.a
 				}),
 				c = (e, t) => t === o.Qd.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
@@ -3300,4 +3300,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.b941ee9d5c63b8fa9ab2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.aeec32b35eacc899ccd4.js.map

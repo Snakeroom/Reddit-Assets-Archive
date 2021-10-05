@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OnboardingModal.8a5f892e767073dcd672.js
-// Retrieved at 10/5/2021, 12:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OnboardingModal.7fabc18d8eff7ad4e593.js
+// Retrieved at 10/5/2021, 2:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OnboardingModal"], {
 		"./node_modules/lodash/times.js": function(e, t, n) {
@@ -207,7 +207,7 @@
 						limit: d,
 						sort: l,
 						t: u
-					} = t, p = Object(I.S)(e) || Object(I.K)(e), g = Object(x.p)(e), f = {
+					} = t, p = Object(I.T)(e) || Object(I.K)(e), g = Object(x.p)(e), f = {
 						adContext: {
 							layout: c ? c.toUpperCase() : m.a.Card,
 							reddaid: e.user.reddaid,
@@ -390,7 +390,7 @@
 					}
 					const m = null === (a = null === (c = Object(x.b)(d)) || void 0 === c ? void 0 : c.routeMatch) || void 0 === a ? void 0 : a.route.chunk,
 						b = Object(I.K)(d),
-						p = await Object(u.i)(() => C(o.gqlContext(), E(d, t), Object(I.S)(d), t.statsdPathsForExperiments), {
+						p = await Object(u.i)(() => C(o.gqlContext(), E(d, t), Object(I.T)(d), t.statsdPathsForExperiments), {
 							name: "fetchFrontpageData",
 							isLoggedIn: b,
 							page: m
@@ -512,7 +512,7 @@
 									t = e && e.url;
 								t && (b.clickUrl = t)
 							}
-							const g = () => C(s(), E(r, b), Object(I.S)(r), d),
+							const g = () => C(s(), E(r, b), Object(I.T)(r), d),
 								f = await g(),
 								O = {
 									...f.body,
@@ -1791,4 +1791,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.8a5f892e767073dcd672.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.7fabc18d8eff7ad4e593.js.map

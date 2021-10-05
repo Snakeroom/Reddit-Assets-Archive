@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.04781dedb5cf04a68a95.js
-// Retrieved at 10/4/2021, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.df01e0afff829e1c51d0.js
+// Retrieved at 10/5/2021, 2:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-MediumPost"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -2578,7 +2578,7 @@
 					W = B && Object(T.h)(B),
 					q = Object(i.e)(e => {
 						if (!W) return !0;
-						const t = Object(I.ub)(e, D.author || "");
+						const t = Object(I.tb)(e, D.author || "");
 						return !t || t.enableFollowers
 					});
 				return r.a.createElement("div", {
@@ -4122,7 +4122,7 @@
 				r = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = s("./src/reddit/selectors/posts.ts");
 			const c = e => Object(r.c)(e, {
-					experimentName: o.Gd,
+					experimentName: o.Id,
 					experimentEligibilitySelector: r.a
 				}),
 				a = (e, t) => t === o.Qd.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
@@ -4131,4 +4131,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.04781dedb5cf04a68a95.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.df01e0afff829e1c51d0.js.map

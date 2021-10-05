@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.e30c87bc95d43395be40.js
-// Retrieved at 10/5/2021, 12:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.e82e8ef78b914a3914f1.js
+// Retrieved at 10/5/2021, 2:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -2013,7 +2013,7 @@
 				y = _.a.wrapped(l.c, "StyledTooltip", g.a),
 				v = Object(a.c)({
 					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(b.ib)(e),
-					userIsSuspended: b.Q
+					userIsSuspended: b.R
 				});
 			t.a = Object(i.b)(v, (e, {
 				eventSource: t
@@ -8212,4 +8212,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.e30c87bc95d43395be40.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.e82e8ef78b914a3914f1.js.map

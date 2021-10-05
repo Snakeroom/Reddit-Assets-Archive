@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.1b03a2de6c342a37270a.js
-// Retrieved at 10/4/2021, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.4e17620ec330115a51c9.js
+// Retrieved at 10/5/2021, 2:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250"], {
 		"./src/lib/humanizeDate/index.ts": function(e, t, r) {
@@ -2246,81 +2246,79 @@
 		"./src/reddit/selectors/comments.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "c", (function() {
-				return f
+				return b
 			})), r.d(t, "d", (function() {
-				return h
+				return f
 			})), r.d(t, "u", (function() {
-				return x
+				return h
 			})), r.d(t, "w", (function() {
-				return y
+				return x
 			})), r.d(t, "x", (function() {
-				return g
+				return y
 			})), r.d(t, "k", (function() {
-				return j
+				return O
 			})), r.d(t, "g", (function() {
+				return j
+			})), r.d(t, "G", (function() {
 				return C
-			})), r.d(t, "H", (function() {
-				return k
 			})), r.d(t, "n", (function() {
-				return _
+				return k
 			})), r.d(t, "o", (function() {
-				return v
+				return _
 			})), r.d(t, "j", (function() {
-				return T
+				return v
 			})), r.d(t, "l", (function() {
-				return I
+				return T
 			})), r.d(t, "h", (function() {
-				return S
+				return I
 			})), r.d(t, "a", (function() {
-				return N
+				return S
 			})), r.d(t, "b", (function() {
-				return E
+				return N
 			})), r.d(t, "q", (function() {
-				return w
+				return E
 			})), r.d(t, "m", (function() {
-				return F
+				return w
 			})), r.d(t, "t", (function() {
+				return F
+			})), r.d(t, "z", (function() {
 				return P
-			})), r.d(t, "A", (function() {
+			})), r.d(t, "I", (function() {
 				return L
-			})), r.d(t, "J", (function() {
-				return D
 			})), r.d(t, "s", (function() {
+				return D
+			})), r.d(t, "C", (function() {
 				return R
 			})), r.d(t, "D", (function() {
 				return A
 			})), r.d(t, "E", (function() {
 				return M
-			})), r.d(t, "F", (function() {
-				return H
 			})), r.d(t, "r", (function() {
-				return W
+				return H
 			})), r.d(t, "e", (function() {
-				return U
+				return W
 			})), r.d(t, "v", (function() {
+				return U
+			})), r.d(t, "J", (function() {
 				return K
-			})), r.d(t, "K", (function() {
-				return B
 			})), r.d(t, "f", (function() {
-				return q
+				return B
 			})), r.d(t, "i", (function() {
+				return q
+			})), r.d(t, "F", (function() {
 				return $
-			})), r.d(t, "G", (function() {
-				return G
-			})), r.d(t, "C", (function() {
-				return J
-			})), r.d(t, "I", (function() {
-				return V
-			})), r.d(t, "p", (function() {
-				return z
-			})), r.d(t, "L", (function() {
-				return X
-			})), r.d(t, "y", (function() {
-				return Z
-			})), r.d(t, "z", (function() {
-				return Q
 			})), r.d(t, "B", (function() {
-				return Y
+				return G
+			})), r.d(t, "H", (function() {
+				return J
+			})), r.d(t, "p", (function() {
+				return V
+			})), r.d(t, "K", (function() {
+				return z
+			})), r.d(t, "y", (function() {
+				return X
+			})), r.d(t, "A", (function() {
+				return Z
 			}));
 			r("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = r("./node_modules/lodash/values.js"),
@@ -2330,40 +2328,39 @@
 				a = r("./src/reddit/constants/comments.ts"),
 				c = r("./src/reddit/models/Post/index.ts"),
 				d = r("./src/reddit/selectors/subreddit.ts"),
-				l = r("./src/reddit/selectors/user.ts"),
-				u = r("./src/reddit/selectors/commentSelector.ts"),
-				m = r("./src/lib/initializeClient/installReducer.ts"),
-				p = r("./src/reddit/reducers/features/comments/index.ts"),
-				b = r("./src/reddit/reducers/pages/comments/index.ts");
-			Object(m.a)({
+				l = r("./src/reddit/selectors/commentSelector.ts"),
+				u = r("./src/lib/initializeClient/installReducer.ts"),
+				m = r("./src/reddit/reducers/features/comments/index.ts"),
+				p = r("./src/reddit/reducers/pages/comments/index.ts");
+			Object(u.a)({
 				features: {
-					comments: p.a
+					comments: m.a
 				},
 				pages: {
-					comments: b.a
+					comments: p.a
 				}
 			});
-			const f = (e, {
+			const b = (e, {
 					commentsPageKey: t
 				}) => e.pages.comments.api.error[t],
-				h = (e, {
+				f = (e, {
 					commentsPageKey: t
 				}) => e.pages.comments.api.pending[t],
-				x = (e, {
+				h = (e, {
 					commentsPageKey: t
 				}) => e.pages.comments.api.fullyLoaded[t],
-				y = (e, t) => e.pages.comments.keyToHeadCommentId[t.commentsPageKey],
-				g = (e, t) => {
-					const r = y(e, t);
-					if (r) return Object(u.b)(e, {
+				x = (e, t) => e.pages.comments.keyToHeadCommentId[t.commentsPageKey],
+				y = (e, t) => {
+					const r = x(e, t);
+					if (r) return Object(l.b)(e, {
 						commentId: r
 					})
 				},
-				O = [],
-				j = Object(i.a)((e, t) => {
-					const r = g(e, t),
+				g = [],
+				O = Object(i.a)((e, t) => {
+					const r = y(e, t),
 						n = r && r.id;
-					if (!n) return O;
+					if (!n) return g;
 					const {
 						commentsPageKey: s
 					} = t, o = e.pages.comments.keyToCommentThreadLinkSets[s], i = [];
@@ -2376,14 +2373,14 @@
 					} while (c);
 					return i
 				}),
-				C = (e, t) => y(e, t) ? e.pages.comments.keyToChatCommentLinks[t.commentsPageKey] : [],
-				k = (e, {
+				j = (e, t) => x(e, t) ? e.pages.comments.keyToChatCommentLinks[t.commentsPageKey] : [],
+				C = (e, {
 					commentsPageKey: t
 				}) => {
 					const r = e.pages.comments.keyToPostId[t];
 					return r ? e.posts.models[r] : null
 				},
-				_ = (e, {
+				k = (e, {
 					commentId: t,
 					commentLink: r,
 					commentsPageKey: n
@@ -2391,14 +2388,14 @@
 					const s = e.pages.comments.keyToCommentThreadLinkSets[n];
 					return s ? r ? s[r.id] : t ? s[t] : null : null
 				},
-				v = (e, {
+				_ = (e, {
 					commentsPageKey: t
 				}) => e.pages.comments.keyToCommentThreadLinkSets[t],
-				T = (e, t) => {
-					const r = t.commentsPageKey ? _(e, t) : null;
+				v = (e, t) => {
+					const r = t.commentsPageKey ? k(e, t) : null;
 					return r ? r.depth : null
 				},
-				I = (e, {
+				T = (e, {
 					commentLink: t
 				}) => {
 					const {
@@ -2416,7 +2413,7 @@
 							return null
 					}
 				},
-				S = (e, t) => {
+				I = (e, t) => {
 					if (e.platform.currentPage && e.platform.currentPage.urlParams && e.platform.currentPage.urlParams.partialPostId) {
 						const {
 							partialPostId: t
@@ -2425,39 +2422,39 @@
 					}
 					return []
 				},
-				N = (e, {
+				S = (e, {
 					commentsPageKey: t
 				}) => e.features.comments.collapsed[t],
-				E = e => e.moreComments.models,
-				w = e => e.features.comments.models,
-				F = (e, {
+				N = e => e.moreComments.models,
+				E = e => e.features.comments.models,
+				w = (e, {
 					commentId: t
 				}) => {
-					const r = Object(u.b)(e, {
+					const r = Object(l.b)(e, {
 						commentId: t
 					});
-					return r ? Object(u.a)(e, r) : ""
+					return r ? Object(l.a)(e, r) : ""
 				},
-				P = (e, {
+				F = (e, {
 					commentId: t
 				}) => !!(t && e.features.comments.focused && e.features.comments.focused[t]),
-				L = (e, {
+				P = (e, {
 					commentId: t,
 					commentsPageKey: r
 				}) => !!(t && e.features.comments.isEditing[r] && e.features.comments.isEditing[r][t]),
-				D = (e, {
+				L = (e, {
 					commentId: t,
 					commentsPageKey: r
 				}) => !!(t && e.features.comments.replyFormOpen[r] && e.features.comments.replyFormOpen[r][t]),
-				R = (e, {
+				D = (e, {
 					commentsPageKey: t
 				}) => {
 					const r = t && e.features.comments.replyFormOpen[t] || {},
 						n = Object.keys(r).find(e => r[e]),
-						s = Object(u.b)(e, {
+						s = Object(l.b)(e, {
 							commentId: n
 						}),
-						o = s && T(e, {
+						o = s && v(e, {
 							commentId: s.id,
 							commentLink: void 0,
 							commentsPageKey: t
@@ -2467,13 +2464,13 @@
 						depth: o
 					}
 				},
-				A = (e, {
+				R = (e, {
 					moreCommentsId: t
 				}) => e.moreComments.models[t],
-				M = (e, {
+				A = (e, {
 					moreCommentsId: t
 				}) => !!e.moreComments.api.pending[t],
-				H = (e, {
+				M = (e, {
 					commentsPageKey: t
 				}) => {
 					const r = e.pages.comments.keyToPostId[t];
@@ -2486,10 +2483,10 @@
 					}
 					return null
 				},
-				W = (e, {
+				H = (e, {
 					id: t
 				}) => e.continueThreads.models[t],
-				U = (e, {
+				W = (e, {
 					commentId: t
 				}) => {
 					const r = t ? e.features.comments.models[t] : void 0;
@@ -2497,57 +2494,48 @@
 					const n = e.authorFlair.models[r.subredditId];
 					return n ? n[r.author] : null
 				},
-				K = (e, {
+				U = (e, {
 					draftKey: t
 				}) => !!e.features.comments.submit.error[t],
-				B = (e, {
+				K = (e, {
 					draftKey: t
 				}) => {
 					const r = e.features.comments.submit.error[t];
 					return r && r.fields ? r.fields.map(e => e.msg) : []
 				},
-				q = (e, {
+				B = (e, {
 					draftKey: t
 				}) => {
 					const r = e.features.comments.drafts[t];
 					return !!r && r.autofocusDisabled
 				},
-				$ = (e, {
+				q = (e, {
 					draftKey: t
 				}) => e.features.comments.drafts[t],
-				G = (e, {
+				$ = (e, {
 					commentId: t
 				}) => {
 					const r = t ? e.features.comments.submit.error[t] : void 0;
 					return r && r.fields ? r.fields.map(e => e.msg) : void 0
 				},
-				J = (e, {
+				G = (e, {
 					commentId: t
 				}) => !!t && e.features.comments.submit.pending[t],
-				V = (e, {
+				J = (e, {
 					commentId: t
 				}) => !!t && e.features.comments.models[t].sendReplies,
-				z = e => e.features.comments.visitHighlightFilter,
-				X = (e, t) => {
-					const r = Object(u.b)(e, t);
+				V = e => e.features.comments.visitHighlightFilter,
+				z = (e, t) => {
+					const r = Object(l.b)(e, t);
 					if (r) return Object(d.V)(e, r)
 				},
-				Z = (e, {
-					commentId: t
-				}) => {
-					const r = Object(u.b)(e, {
-							commentId: t
-						}),
-						n = r && r.authorId || "";
-					return Object(l.T)(e, n)
-				},
-				Q = (e, {
+				X = (e, {
 					commentId: t
 				}) => {
 					var r, n;
 					return !!((null === (n = null === (r = e.pages) || void 0 === r ? void 0 : r.comments) || void 0 === n ? void 0 : n.followed) || []).find(e => e.id === t)
 				},
-				Y = (e, {
+				Z = (e, {
 					commentId: t
 				}) => {
 					var r, n;
@@ -2560,4 +2548,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.1b03a2de6c342a37270a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.4e17620ec330115a51c9.js.map

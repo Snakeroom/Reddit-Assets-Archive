@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.f9dd90d54347058acaca.js
-// Retrieved at 10/5/2021, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.711fce2fb7437ea4fce3.js
+// Retrieved at 10/5/2021, 2:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments~ProfileOverview~ProfilePrivate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1001,7 +1001,7 @@
 					}) => Object($.a)(e) === Ce(t.id),
 					isPendingDeletion: (e, {
 						comment: t
-					}) => Object(G.C)(e, {
+					}) => Object(G.B)(e, {
 						commentId: t.postId
 					}),
 					isLoggedIn: X.K,
@@ -2136,7 +2136,7 @@
 				}),
 				L = Object(m.c)({
 					isDropdownMenuOpen: e => Object(O.a)(e) === S,
-					isOwnProfile: (e, t) => Object(k.P)(e, t.profileName),
+					isOwnProfile: (e, t) => Object(k.Q)(e, t.profileName),
 					isSnoovatar30Enabled: C.d.snoovatar30,
 					isSubscriptionsPinned: I.b
 				}),
@@ -2678,7 +2678,7 @@
 				subreddits: function(e, {
 					profileName: t
 				}) {
-					const s = Object(p.ob)(e, {
+					const s = Object(p.nb)(e, {
 							userName: t
 						}),
 						n = Object(m.f)(e);
@@ -2891,7 +2891,7 @@
 				}) : null,
 				user: (e, {
 					subredditOrProfile: t
-				}) => t.type === l.a.PROFILE ? Object(h.ob)(e, {
+				}) => t.type === l.a.PROFILE ? Object(h.nb)(e, {
 					userName: t.name
 				}) : null
 			}), I = Object(r.b)(k, e => ({
@@ -3151,4 +3151,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.f9dd90d54347058acaca.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.711fce2fb7437ea4fce3.js.map
