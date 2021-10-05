@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/BadgePurchaseModal.3fa6cfbc48ae35faa0ff.js
-// Retrieved at 9/15/2021, 5:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/BadgePurchaseModal.2ac20a4f67d017070e54.js
+// Retrieved at 10/5/2021, 7:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["BadgePurchaseModal"], {
 		"./src/reddit/actions/economics/subredditPremium/actionCreators.ts": function(e, t, s) {
@@ -554,4 +554,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BadgePurchaseModal.3fa6cfbc48ae35faa0ff.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BadgePurchaseModal.2ac20a4f67d017070e54.js.map

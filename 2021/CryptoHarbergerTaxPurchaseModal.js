@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxPurchaseModal.f99bec8f030fab7e034b.js
-// Retrieved at 9/27/2021, 7:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxPurchaseModal.f4dedb0587252ff5fd73.js
+// Retrieved at 10/5/2021, 7:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CryptoHarbergerTaxPurchaseModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -1697,4 +1697,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxPurchaseModal.f99bec8f030fab7e034b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxPurchaseModal.f4dedb0587252ff5fd73.js.map

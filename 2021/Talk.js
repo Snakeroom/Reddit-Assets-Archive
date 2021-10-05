@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Talk.a31b6e3f3a30656a052f.js
-// Retrieved at 10/5/2021, 2:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Talk.c30b866e63bcfb141edf.js
+// Retrieved at 10/5/2021, 7:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Talk"], {
 		"./src/reddit/components/CollapsibleFAQ/index.m.less": function(e, a, t) {
@@ -726,4 +726,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Talk.a31b6e3f3a30656a052f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Talk.c30b866e63bcfb141edf.js.map

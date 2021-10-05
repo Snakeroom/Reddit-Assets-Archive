@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.07b24383c3e29fede39b.js
-// Retrieved at 10/5/2021, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.1eaa48ef9871b15a2af4.js
+// Retrieved at 10/5/2021, 7:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-PowerupsInFeedUnit-index-tsx"], {
 		"./src/reddit/actions/snoovatar.ts": function(e, t, s) {
@@ -913,4 +913,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.07b24383c3e29fede39b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.1eaa48ef9871b15a2af4.js.map

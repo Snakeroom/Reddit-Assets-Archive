@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.38de2427ee50f2eca9b2.js
-// Retrieved at 10/5/2021, 2:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.498855875c9df56e7cca.js
+// Retrieved at 10/5/2021, 7:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityTopicSurvey"], {
 		"./node_modules/react-uid/dist/es2015/hooks.js": function(e, t, n) {
@@ -1210,4 +1210,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.38de2427ee50f2eca9b2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.498855875c9df56e7cca.js.map

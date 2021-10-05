@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~CryptoLibEthers~reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-compon~fb9f1732.1f252485d3a8bd656fef.js
-// Retrieved at 9/23/2021, 10:30:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~CryptoLibEthers~reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-compon~fb9f1732.5b16d2c71f22938e781d.js
+// Retrieved at 10/5/2021, 7:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~CryptoLibEthers~reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-compon~fb9f1732"], {
 		"./node_modules/@ethersproject/abstract-provider/lib.esm/index.js": function(e, t, r) {
@@ -12606,4 +12606,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~CryptoLibEthers~reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-compon~fb9f1732.1f252485d3a8bd656fef.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~CryptoLibEthers~reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-compon~fb9f1732.5b16d2c71f22938e781d.js.map

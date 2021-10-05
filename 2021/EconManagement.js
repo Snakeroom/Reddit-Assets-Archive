@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconManagement.f359b963acb03a353d34.js
-// Retrieved at 10/4/2021, 9:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconManagement.2d8d7f0a8bf76e228b90.js
+// Retrieved at 10/5/2021, 7:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconManagement"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, a, t) {
@@ -410,4 +410,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconManagement.f359b963acb03a353d34.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconManagement.2d8d7f0a8bf76e228b90.js.map

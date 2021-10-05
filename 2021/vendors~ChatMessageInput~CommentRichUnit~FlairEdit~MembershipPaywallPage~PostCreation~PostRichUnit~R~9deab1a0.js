@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~ChatMessageInput~CommentRichUnit~FlairEdit~MembershipPaywallPage~PostCreation~PostRichUnit~R~9deab1a0.d4d1e0ef95d4318ae4e8.js
-// Retrieved at 6/1/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~ChatMessageInput~CommentRichUnit~FlairEdit~MembershipPaywallPage~PostCreation~PostRichUnit~R~9deab1a0.201e0a53b4d00907b96f.js
+// Retrieved at 10/5/2021, 7:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~ChatMessageInput~CommentRichUnit~FlairEdit~MembershipPaywallPage~PostCreation~PostRichUnit~R~9deab1a0"], {
 		"./node_modules/draft-js/lib/AtomicBlockUtils.js": function(t, e, n) {
@@ -7783,4 +7783,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~ChatMessageInput~CommentRichUnit~FlairEdit~MembershipPaywallPage~PostCreation~PostRichUnit~R~9deab1a0.d4d1e0ef95d4318ae4e8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~ChatMessageInput~CommentRichUnit~FlairEdit~MembershipPaywallPage~PostCreation~PostRichUnit~R~9deab1a0.201e0a53b4d00907b96f.js.map

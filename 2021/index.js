@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index.0c04f59a7fa3e4402379.js
-// Retrieved at 10/5/2021, 2:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index.8c154fd8413622e741e1.js
+// Retrieved at 10/5/2021, 7:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index"], {
 		"./src/reddit/components/Econ/Prediction/TournamentPostBody/ViewTournamentLink/index.m.less": function(e, t, n) {
@@ -692,4 +692,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.0c04f59a7fa3e4402379.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.8c154fd8413622e741e1.js.map

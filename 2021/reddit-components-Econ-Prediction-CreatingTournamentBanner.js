@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-CreatingTournamentBanner.1bf97d6aef98715bcad9.js
-// Retrieved at 10/1/2021, 6:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-CreatingTournamentBanner.c599b9027ed3afeafdcf.js
+// Retrieved at 10/5/2021, 7:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction-CreatingTournamentBanner"], {
 		"./src/reddit/components/Econ/Prediction/CreatingTournamentBanner/index.m.less": function(e, t, n) {
@@ -75,4 +75,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-CreatingTournamentBanner.1bf97d6aef98715bcad9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-CreatingTournamentBanner.c599b9027ed3afeafdcf.js.map

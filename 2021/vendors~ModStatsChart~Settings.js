@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~ModStatsChart~Settings.4756d25d069e14bb198b.js
-// Retrieved at 5/5/2021, 12:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~ModStatsChart~Settings.b500f4dfb4a94d20681b.js
+// Retrieved at 10/5/2021, 7:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~ModStatsChart~Settings"], {
 		"./node_modules/moment/locale/af.js": function(e, t, a) {
@@ -11203,4 +11203,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~ModStatsChart~Settings.4756d25d069e14bb198b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~ModStatsChart~Settings.b500f4dfb4a94d20681b.js.map

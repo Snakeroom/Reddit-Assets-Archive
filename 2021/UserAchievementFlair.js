@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/UserAchievementFlair.ed49bd74300c21c936c5.js
-// Retrieved at 10/5/2021, 2:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/UserAchievementFlair.6cc856b4ebf4b938a942.js
+// Retrieved at 10/5/2021, 7:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["UserAchievementFlair"], {
 		"./src/reddit/components/Econ/PowerupsFlair/HoverPopup.m.less": function(e, t, n) {
@@ -1031,4 +1031,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UserAchievementFlair.ed49bd74300c21c936c5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UserAchievementFlair.6cc856b4ebf4b938a942.js.map

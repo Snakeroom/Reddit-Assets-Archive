@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.cfe9940f6236b70cb613.js
-// Retrieved at 10/5/2021, 2:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.b3a510aae17a16736562.js
+// Retrieved at 10/5/2021, 7:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FeaturedLiveEntrypointAnnouncementsCarousel"], {
 		"./src/reddit/components/FeaturedLiveEntrypoint/AnnouncementsCarousel/index.m.less": function(e, n, t) {
@@ -317,4 +317,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.cfe9940f6236b70cb613.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.b3a510aae17a16736562.js.map

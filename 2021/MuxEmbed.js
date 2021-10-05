@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MuxEmbed.ff75e8d29e1058ba0d77.js
-// Retrieved at 5/6/2021, 7:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MuxEmbed.982b3400754d822142c4.js
+// Retrieved at 10/5/2021, 7:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MuxEmbed"], {
 		"./node_modules/mux-embed/dist/mux.js": function(e, t, a) {
@@ -2577,4 +2577,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MuxEmbed.ff75e8d29e1058ba0d77.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MuxEmbed.982b3400754d822142c4.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.5faa654470b40d641874.js
-// Retrieved at 10/5/2021, 2:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.7a469ad9e750bc2b1964.js
+// Retrieved at 10/5/2021, 7:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-NotificationUnit-Button"], {
 		"./src/reddit/actions/comment/authoring.ts": function(e, t, n) {
@@ -2296,4 +2296,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.5faa654470b40d641874.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.7a469ad9e750bc2b1964.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ColorPickerDropdown.0ab65547bedaff2da5f3.js
-// Retrieved at 7/26/2021, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ColorPickerDropdown.a3deef95bace61d04faf.js
+// Retrieved at 10/5/2021, 7:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ColorPickerDropdown"], {
 		"./src/reddit/components/StructuredStyles/ColorPicker/_ColorPickerDropdown.tsx": function(e, a, t) {
@@ -136,4 +136,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ColorPickerDropdown.0ab65547bedaff2da5f3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ColorPickerDropdown.a3deef95bace61d04faf.js.map

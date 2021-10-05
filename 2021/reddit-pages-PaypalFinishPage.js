@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-pages-PaypalFinishPage.07128fdffcda0b7f9938.js
-// Retrieved at 10/5/2021, 2:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-pages-PaypalFinishPage.60c27370c222e2b479c8.js
+// Retrieved at 10/5/2021, 7:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-pages-PaypalFinishPage"], {
 		"./src/reddit/actions/gold/productOfferPurchase.ts": function(e, t, r) {
@@ -830,4 +830,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-pages-PaypalFinishPage.07128fdffcda0b7f9938.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-pages-PaypalFinishPage.60c27370c222e2b479c8.js.map

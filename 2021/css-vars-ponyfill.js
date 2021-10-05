@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/css-vars-ponyfill.18b8ed7e7877c1f91961.js
-// Retrieved at 2/28/2021, 9:18:37 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/css-vars-ponyfill.8e6cec8301d069e523d7.js
+// Retrieved at 10/5/2021, 7:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["css-vars-ponyfill"], {
 		"./node_modules/css-vars-ponyfill/dist/css-vars-ponyfill.esm.js": function(e, t, n) {
@@ -784,4 +784,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/css-vars-ponyfill.18b8ed7e7877c1f91961.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/css-vars-ponyfill.8e6cec8301d069e523d7.js.map

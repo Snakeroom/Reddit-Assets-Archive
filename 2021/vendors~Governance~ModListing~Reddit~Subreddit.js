@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~Governance~ModListing~Reddit~Subreddit.4d2d748bc22911999ac8.js
-// Retrieved at 6/17/2021, 3:40:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~Governance~ModListing~Reddit~Subreddit.c8ec9e5f753fc464aad5.js
+// Retrieved at 10/5/2021, 7:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~Governance~ModListing~Reddit~Subreddit"], {
 		"./node_modules/lottie-web/build/player/lottie.js": function(module, exports, __webpack_require__) {
@@ -6087,4 +6087,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Governance~ModListing~Reddit~Subreddit.4d2d748bc22911999ac8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Governance~ModListing~Reddit~Subreddit.c8ec9e5f753fc464aad5.js.map
