@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CreatePollButton.f2e0861ff21d48c5aa15.js
-// Retrieved at 9/15/2021, 6:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CreatePollButton.1bcc64853b965829db78.js
+// Retrieved at 10/5/2021, 1:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CreatePollButton"], {
 		"./src/reddit/components/ConfirmUserActionModal/index.m.less": function(e, a, t) {
@@ -14,22 +14,22 @@
 			var s = t("./node_modules/fbt/lib/FbtPublic.js"),
 				o = t("./node_modules/react/index.js"),
 				n = t.n(o),
-				i = t("./src/higherOrderComponents/asModal/index.tsx"),
-				r = t("./src/reddit/components/ModalStyledComponents/index.tsx"),
+				r = t("./src/higherOrderComponents/asModal/index.tsx"),
+				i = t("./src/reddit/components/ModalStyledComponents/index.tsx"),
 				l = t("./src/reddit/controls/TextButton/index.tsx"),
 				c = t("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
 				d = t("./src/reddit/components/ConfirmUserActionModal/index.m.less"),
 				m = t.n(d);
 			const u = e => e.preventDefault();
-			a.a = Object(i.a)(e => n.a.createElement(r.e, null, n.a.createElement(r.i, null, n.a.createElement(c.a, null, n.a.createElement(r.q, null, e.headerText || s.fbt._("Confirm", null, {
+			a.a = Object(r.a)(e => n.a.createElement(i.e, null, n.a.createElement(i.i, null, n.a.createElement(c.a, null, n.a.createElement(i.q, null, e.headerText || s.fbt._("Confirm", null, {
 				hk: "2zlvKa"
 			})), n.a.createElement(l.a, {
 				onClick: () => {
 					e.onClose && e.onClose(), e.toggleModal && e.toggleModal()
 				}
-			}, n.a.createElement(r.b, null)))), n.a.createElement(r.l, null, n.a.createElement(r.p, {
+			}, n.a.createElement(i.b, null)))), n.a.createElement(i.l, null, n.a.createElement(i.p, {
 				className: m.a.ModalText
-			}, e.modalText)), n.a.createElement(r.g, null, !e.hideCancelButton && n.a.createElement(r.a, {
+			}, e.modalText)), n.a.createElement(i.g, null, !e.hideCancelButton && n.a.createElement(i.a, {
 				className: m.a.buttonWidth,
 				onMouseDown: u,
 				onClick: () => {
@@ -38,7 +38,7 @@
 				"data-redditstyle": !e.disableRedditStyle
 			}, e.cancelActionText || s.fbt._("Cancel", null, {
 				hk: "2TSLl5"
-			})), n.a.createElement(r.u, {
+			})), n.a.createElement(i.u, {
 				className: m.a.buttonWidth,
 				onMouseDown: u,
 				onClick: a => {
@@ -54,8 +54,8 @@
 			var s = t("./node_modules/fbt/lib/FbtPublic.js"),
 				o = t("./node_modules/react/index.js"),
 				n = t.n(o),
-				i = t("./src/lib/opener/index.ts"),
-				r = t("./src/reddit/components/ConfirmUserActionModal/index.tsx"),
+				r = t("./src/lib/opener/index.ts"),
+				i = t("./src/reddit/components/ConfirmUserActionModal/index.tsx"),
 				l = t("./src/reddit/components/TrackingHelper/index.tsx"),
 				c = t("./src/reddit/controls/Button/index.tsx"),
 				d = t("./src/reddit/helpers/localStorage/index.ts"),
@@ -69,7 +69,7 @@
 						isDismissed: !1,
 						isModalOpen: !1
 					}, this.onConfirm = () => {
-						Object(i.e)("https://forms.gle/1wn2oCNFz3mXVf9S8", i.d.BLANK)
+						Object(r.e)("https://forms.gle/1wn2oCNFz3mXVf9S8", r.d.BLANK)
 					}, this.closeModal = () => {
 						this.setState({
 							isDismissed: !0,
@@ -78,7 +78,7 @@
 					}, this.onCreatePostButtonClick = () => {
 						this.setState({
 							isModalOpen: !0
-						}), Object(d.ib)(), this.props.sendEvent(e => ({
+						}), Object(d.kb)(), this.props.sendEvent(e => ({
 							source: "id_card",
 							action: "click",
 							noun: "create_poll",
@@ -92,7 +92,7 @@
 						onClick: this.onCreatePostButtonClick
 					}, s.fbt._("Submit a poll", null, {
 						hk: "1N5qAj"
-					})), this.state.isModalOpen && n.a.createElement(r.a, {
+					})), this.state.isModalOpen && n.a.createElement(i.a, {
 						actionText: s.fbt._("Sure", null, {
 							hk: "1vHfdf"
 						}),
@@ -113,4 +113,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CreatePollButton.f2e0861ff21d48c5aa15.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CreatePollButton.1bcc64853b965829db78.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.46ff9558f99aa52096f5.js
-// Retrieved at 10/5/2021, 12:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.6f893921616a0f35ce47.js
+// Retrieved at 10/5/2021, 1:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~ModListing", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -796,14 +796,14 @@
 				d = e => {
 					switch (e) {
 						case r.a.Denied:
-							a.jb(!1), Object(s.c)();
+							a.lb(!1), Object(s.c)();
 							break;
 						case r.a.Default:
 						case r.a.Granted:
-							a.jb(!0), Object(s.c)();
+							a.lb(!0), Object(s.c)();
 							break;
 						case r.a.Closed:
-							a.jb(!0)
+							a.lb(!0)
 					}
 				}
 		},
@@ -1813,7 +1813,7 @@
 				} = e, n = Object(c.f)(i.a.AWARDED_LISTING_BANNER, a.g), [u, m] = Object(s.useState)(n ? I.Hidden : I.Visible);
 				if (u === I.Hidden) return null;
 				const p = () => {
-					m(I.Visible), Object(c.gb)(i.a.AWARDED_LISTING_BANNER, !1, a.g)
+					m(I.Visible), Object(c.ib)(i.a.AWARDED_LISTING_BANNER, !1, a.g)
 				};
 				return u === I.Dismissed ? r.a.createElement("div", {
 					className: Object(o.a)(x.a.dismissedContainer, t)
@@ -1834,7 +1834,7 @@
 				})), r.a.createElement(S, null), r.a.createElement(l.a, {
 					className: x.a.close,
 					onClick: () => {
-						m(I.Dismissed), Object(c.gb)(i.a.AWARDED_LISTING_BANNER, !0, a.g)
+						m(I.Dismissed), Object(c.ib)(i.a.AWARDED_LISTING_BANNER, !0, a.g)
 					}
 				}))
 			}
@@ -2123,7 +2123,7 @@
 						i = Object(h.b)(y),
 						a = Object(h.b)(v),
 						[c, d] = function(e, t) {
-							const [n, r] = Object(s.useState)(Object(R.M)(e, t));
+							const [n, r] = Object(s.useState)(Object(R.N)(e, t));
 							return [n, Object(s.useCallback)(() => {
 								const n = Object(R.a)(e, t);
 								r(n)
@@ -2152,7 +2152,7 @@
 							e.stopPropagation(), i.visible ? m() : _()
 						}, [m, _, i.visible]),
 						k = Object(s.useCallback)(t => {
-							t === x.b.FREQUENT && Object(R.Z)(e.userId, e.subredditId)
+							t === x.b.FREQUENT && Object(R.ab)(e.userId, e.subredditId)
 						}, [e.subredditId, e.userId]),
 						N = Object(s.useCallback)(s => {
 							const {
@@ -2330,7 +2330,7 @@
 					onClick: e.onOpenWelcomeMessageModal,
 					small: !0,
 					afterUnsubscribeAction: () => {
-						t && (Object(R.Z)(e.userId, t), e.updateSubredditInfo())
+						t && (Object(R.ab)(e.userId, t), e.updateSubredditInfo())
 					}
 				})), e.userIsSubscriber && t && e.notificationLevel && r.a.createElement("div", {
 					className: $.a.notificationButtonContainer
@@ -3104,7 +3104,7 @@
 			class y extends o.a.Component {
 				constructor(e) {
 					super(e), this.closeBanner = () => {
-						Object(u.gb)(d.a.CREATE_POST_BANNER, !0, this.props.subreddit.id), this.setState({
+						Object(u.ib)(d.a.CREATE_POST_BANNER, !0, this.props.subreddit.id), this.setState({
 							visible: !1
 						}), this.props.showToast(), this.props.sendEvent(Object(m.b)())
 					}, this.createPost = () => {
@@ -7847,7 +7847,7 @@
 					})),
 					b = !!n;
 				return Object(r.useEffect)(() => {
-					b && (Object(d.R)(c.b.POWERUPS_CNC_MODULE_VISIBILITY_STORE, e), x(e) || t(Object(l.c)()))
+					b && (Object(d.S)(c.b.POWERUPS_CNC_MODULE_VISIBILITY_STORE, e), x(e) || t(Object(l.c)()))
 				}, [t, b, e]), b ? o.a.createElement("a", {
 					className: h.a.feedBanner,
 					onClick: () => {
@@ -10414,7 +10414,7 @@
 					super(e), this.confirmCloseModOnboarding = () => {
 						this.props.toggleCloseMenuModal(), this.setState({
 							visible: !1
-						}), Object(Be.Eb)(ze, !0, this.props.subredditId), this.props.sendEvent(Object(Ae.d)("close"))
+						}), Object(Be.Gb)(ze, !0, this.props.subredditId), this.props.sendEvent(Object(Ae.d)("close"))
 					}, this.customizeThemeColors = () => {
 						this.props.sendEvent(Object(Ae.d)("theme_colors_link"))
 					}, this.customizeIcon = () => {
@@ -10440,7 +10440,7 @@
 						modHasEditedColors: n,
 						modHasEditedIcon: s,
 						subredditId: r
-					} = this.props, o = e && !(t && n && s) && (!Object(Ee.a)() || !Object(Be.D)(ze, r));
+					} = this.props, o = e && !(t && n && s) && (!Object(Ee.a)() || !Object(Be.E)(ze, r));
 					o !== this.state.visible && (this.setState({
 						visible: o
 					}), o && this.props.sendEvent(Object(Ae.e)("mod_edu_banner")))
@@ -17057,4 +17057,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.46ff9558f99aa52096f5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.6f893921616a0f35ce47.js.map

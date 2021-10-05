@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.8248dc097fa460f15081.js
-// Retrieved at 10/4/2021, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.590760a3352ab06becb8.js
+// Retrieved at 10/5/2021, 1:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./src/lib/unicodeUtils/index.ts": function(e, t, s) {
@@ -445,7 +445,7 @@
 						o = Object(h.b)(k),
 						a = Object(h.b)(v),
 						[d, c] = function(e, t) {
-							const [s, i] = Object(n.useState)(Object(W.M)(e, t));
+							const [s, i] = Object(n.useState)(Object(W.N)(e, t));
 							return [s, Object(n.useCallback)(() => {
 								const s = Object(W.a)(e, t);
 								i(s)
@@ -474,7 +474,7 @@
 							e.stopPropagation(), o.visible ? m() : _()
 						}, [m, _, o.visible]),
 						P = Object(n.useCallback)(t => {
-							t === x.b.FREQUENT && Object(W.Z)(e.userId, e.subredditId)
+							t === x.b.FREQUENT && Object(W.ab)(e.userId, e.subredditId)
 						}, [e.subredditId, e.userId]),
 						S = Object(n.useCallback)(n => {
 							const {
@@ -652,7 +652,7 @@
 					onClick: e.onOpenWelcomeMessageModal,
 					small: !0,
 					afterUnsubscribeAction: () => {
-						t && (Object(W.Z)(e.userId, t), e.updateSubredditInfo())
+						t && (Object(W.ab)(e.userId, t), e.updateSubredditInfo())
 					}
 				})), e.userIsSubscriber && t && e.notificationLevel && i.a.createElement("div", {
 					className: $.a.notificationButtonContainer
@@ -4329,7 +4329,7 @@
 					super(e), this.confirmCloseModOnboarding = () => {
 						this.props.toggleCloseMenuModal(), this.setState({
 							visible: !1
-						}), Object(Re.Eb)(Ke, !0, this.props.subredditId), this.props.sendEvent(Object(Me.d)("close"))
+						}), Object(Re.Gb)(Ke, !0, this.props.subredditId), this.props.sendEvent(Object(Me.d)("close"))
 					}, this.customizeThemeColors = () => {
 						this.props.sendEvent(Object(Me.d)("theme_colors_link"))
 					}, this.customizeIcon = () => {
@@ -4355,7 +4355,7 @@
 						modHasEditedColors: s,
 						modHasEditedIcon: n,
 						subredditId: i
-					} = this.props, r = e && !(t && s && n) && (!Object(Ee.a)() || !Object(Re.D)(Ke, i));
+					} = this.props, r = e && !(t && s && n) && (!Object(Ee.a)() || !Object(Re.E)(Ke, i));
 					r !== this.state.visible && (this.setState({
 						visible: r
 					}), r && this.props.sendEvent(Object(Me.e)("mod_edu_banner")))
@@ -7484,4 +7484,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.8248dc097fa460f15081.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.590760a3352ab06becb8.js.map

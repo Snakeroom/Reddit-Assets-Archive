@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.e9917820b1e32cb72400.js
-// Retrieved at 10/5/2021, 11:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.d2ae76e3c52f1772e592.js
+// Retrieved at 10/5/2021, 1:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-NotificationUnit-Button"], {
 		"./src/reddit/actions/comment/authoring.ts": function(e, t, n) {
@@ -143,9 +143,9 @@
 				W = n("./src/reddit/models/RichTextJson/index.ts"),
 				B = n("./src/reddit/models/RichTextJson/nodeMakers.ts"),
 				V = n("./src/reddit/models/Toast/index.ts"),
-				G = n("./src/reddit/selectors/comments.ts"),
-				$ = n("./src/reddit/selectors/commentSelector.ts"),
-				q = n("./src/reddit/selectors/platform.ts"),
+				q = n("./src/reddit/selectors/comments.ts"),
+				G = n("./src/reddit/selectors/commentSelector.ts"),
+				$ = n("./src/reddit/selectors/platform.ts"),
 				Y = n("./src/reddit/selectors/posts.ts"),
 				z = n("./src/reddit/selectors/user.ts"),
 				Q = n("./src/reddit/actions/comment/index.ts"),
@@ -175,7 +175,7 @@
 					gqlContext: d
 				}) => {
 					const m = i(),
-						u = Object(q.e)(m);
+						u = Object($.e)(m);
 					let l = "";
 					if (u && (l = u.name), D.d.enableToxicityWarning(m)) {
 						if (!(await E(d(), l, o, r))) return void c(Object(a.i)(ce))
@@ -202,7 +202,7 @@
 						let o;
 						o = C.body, u(ne({
 							...o,
-							headCommentId: Object(G.w)(j, {
+							headCommentId: Object(q.w)(j, {
 								commentsPageKey: t
 							}),
 							commentsPageKey: t,
@@ -237,7 +237,7 @@
 						draftKey: i,
 						formData: d,
 						editorMode: m
-					} = e, u = n(), l = Object(q.e)(u);
+					} = e, u = n(), l = Object($.e)(u);
 					let b = "";
 					if (l && (b = l.name), D.d.enableToxicityWarning(u)) {
 						if (!(await E(o(), b, d, m))) return void t(Object(a.i)(ce))
@@ -281,7 +281,7 @@
 					}));
 					else {
 						if (y.error && y.error.type === r.Hb) {
-							const e = Object($.b)(l, {
+							const e = Object(G.b)(l, {
 								commentId: s
 							});
 							if (!e) return;
@@ -329,7 +329,7 @@
 						m = Object(c.a)(J.c.replyToComment, t);
 					if (!Object(z.K)(r())) return o(Object(d.k)()), void o(Object(a.k)({
 						actionSource: a.a.Reply,
-						redirectUrl: Object(G.m)(r(), {
+						redirectUrl: Object(q.m)(r(), {
 							commentId: t
 						})
 					}));
@@ -556,7 +556,7 @@
 								commentId: e,
 								followState: t
 							})).ok) {
-							Object(M.rb)(null !== (m = null === (a = null === (d = r().pages) || void 0 === d ? void 0 : d.comments) || void 0 === a ? void 0 : a.followed) && void 0 !== m ? m : [], null === (u = r().user.account) || void 0 === u ? void 0 : u.id);
+							Object(M.tb)(null !== (m = null === (a = null === (d = r().pages) || void 0 === d ? void 0 : d.comments) || void 0 === a ? void 0 : a.followed) && void 0 !== m ? m : [], null === (u = r().user.account) || void 0 === u ? void 0 : u.id);
 							const e = c ? o.fbt._("Followed! You’ll receive updates when there’s new activity", null, {
 								hk: "1Dp5UH"
 							}) : o.fbt._("Unfollowed, You’ll no longer recieve updates on this comment", null, {
@@ -593,11 +593,11 @@
 			})), n.d(t, "f", (function() {
 				return W
 			})), n.d(t, "o", (function() {
-				return G
-			})), n.d(t, "p", (function() {
-				return $
-			})), n.d(t, "d", (function() {
 				return q
+			})), n.d(t, "p", (function() {
+				return G
+			})), n.d(t, "d", (function() {
+				return $
 			})), n.d(t, "a", (function() {
 				return z
 			})), n.d(t, "b", (function() {
@@ -740,7 +740,7 @@
 						moreCommentsItem: c,
 						...p.error
 					}))
-				}, F = Object(p.a)(y.b, C.a.upvoted), H = Object(p.a)(y.b, C.a.downvoted), J = Object(c.a)(S.j), W = Object(c.a)(S.i), B = Object(c.a)(S.e), V = Object(c.a)(S.f), G = (Object(c.a)(S.c), Object(c.a)(S.d), ({
+				}, F = Object(p.a)(y.b, C.a.upvoted), H = Object(p.a)(y.b, C.a.downvoted), J = Object(c.a)(S.j), W = Object(c.a)(S.i), B = Object(c.a)(S.e), V = Object(c.a)(S.f), q = (Object(c.a)(S.c), Object(c.a)(S.d), ({
 					commentId: e,
 					commentsPageKey: t,
 					scrollToAndRemeasure: n
@@ -761,7 +761,7 @@
 						commentsPageKey: t,
 						isCollapsed: d
 					})), d || 0 !== a || n(e, !0), Object(b.d)()
-				}), $ = ({
+				}), G = ({
 					commentId: e,
 					commentsPageKey: t
 				}) => async n => {
@@ -769,7 +769,7 @@
 						commentId: e,
 						commentsPageKey: t
 					}))
-				}, q = ({
+				}, $ = ({
 					commentLink: e,
 					commentsPageKey: t,
 					lineDepth: n,
@@ -863,7 +863,7 @@
 						}),
 						kind: u.b.SuccessCommunity,
 						text: d
-					})), Object(i.ob)(r + 1)
+					})), Object(i.qb)(r + 1)
 				}
 		},
 		"./src/reddit/actions/presence.ts": function(e, t, n) {
@@ -2080,11 +2080,11 @@
 			})), n.d(t, "i", (function() {
 				return V
 			})), n.d(t, "G", (function() {
-				return G
-			})), n.d(t, "C", (function() {
-				return $
-			})), n.d(t, "I", (function() {
 				return q
+			})), n.d(t, "C", (function() {
+				return G
+			})), n.d(t, "I", (function() {
+				return $
 			})), n.d(t, "p", (function() {
 				return Y
 			})), n.d(t, "L", (function() {
@@ -2289,16 +2289,16 @@
 				V = (e, {
 					draftKey: t
 				}) => e.features.comments.drafts[t],
-				G = (e, {
+				q = (e, {
 					commentId: t
 				}) => {
 					const n = t ? e.features.comments.submit.error[t] : void 0;
 					return n && n.fields ? n.fields.map(e => e.msg) : void 0
 				},
-				$ = (e, {
+				G = (e, {
 					commentId: t
 				}) => !!t && e.features.comments.submit.pending[t],
-				q = (e, {
+				$ = (e, {
 					commentId: t
 				}) => !!t && e.features.comments.models[t].sendReplies,
 				Y = e => e.features.comments.visitHighlightFilter,
@@ -2383,4 +2383,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.e9917820b1e32cb72400.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.d2ae76e3c52f1772e592.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.f95ca68ac6439357d653.js
-// Retrieved at 10/5/2021, 12:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.cb8fa8e2ec0dac25fae6.js
+// Retrieved at 10/5/2021, 1:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -5226,7 +5226,7 @@
 			const y = "INCREMENT_SEEN_COUNT_PER_SESS",
 				m = (e, t, r) => async (a, c) => {
 					const d = c(),
-						p = Object(i.z)(),
+						p = Object(i.A)(),
 						y = Date.now(),
 						m = p && y - p < 18e4,
 						h = Object(b.c)(d, {
@@ -5234,7 +5234,7 @@
 						}),
 						I = d.upvotePromptCountPerSess,
 						S = (() => {
-							const e = Object(i.y)();
+							const e = Object(i.z)();
 							if (!e) return [];
 							const t = Date.now();
 							return e.filter(e => t - e < 864e5)
@@ -5263,7 +5263,7 @@
 						action: "view",
 						noun: l,
 						...Object(u.defaults)(e)
-					}))(d)), Object(i.Bb)(), Object(i.Ab)(T), a(O()), r && r()
+					}))(d)), Object(i.Db)(), Object(i.Cb)(T), a(O()), r && r()
 				}, E = e => async (t, r) => {
 					Object(f.a)((e => ({
 						source: l,
@@ -8889,7 +8889,7 @@
 			function o(e, t) {
 				const r = Object(s.useRef)(null);
 				let a;
-				a = Object(n.A)(e);
+				a = Object(n.B)(e);
 				const [o, d] = Object(s.useState)(null != a ? a : t);
 				return Object(s.useEffect)(() => (r.current = c(e, d, t), () => {
 					var e;
@@ -8898,7 +8898,7 @@
 					var e;
 					null === (e = r.current) || void 0 === e || e.emit(o)
 				}, [o]), [o, function(t) {
-					Object(n.Cb)(e, t), d(t)
+					Object(n.Eb)(e, t), d(t)
 				}]
 			}
 		},
@@ -26361,4 +26361,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.f95ca68ac6439357d653.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.cb8fa8e2ec0dac25fae6.js.map

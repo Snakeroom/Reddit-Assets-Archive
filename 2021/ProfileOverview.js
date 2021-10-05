@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.09f985468cb7d03f0f94.js
-// Retrieved at 10/5/2021, 12:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.214247f9d189513b7a1a.js
+// Retrieved at 10/5/2021, 1:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview"], {
 		"./node_modules/shallowequal/index.js": function(e, t) {
@@ -3118,7 +3118,7 @@
 							pauseMedia: !0
 						})
 					}, this.onGotItClick = () => {
-						Object(jt.Kb)(), this.setState({
+						Object(jt.Mb)(), this.setState({
 							showEducation: !1
 						})
 					}, this.onClickPost = (e, t) => {
@@ -3138,7 +3138,7 @@
 				}
 				componentDidMount() {
 					this.setState({
-						showEducation: !Object(jt.J)()
+						showEducation: !Object(jt.K)()
 					}), document.addEventListener("scroll", this.handleScroll), this.handleScroll()
 				}
 				componentWillUnmount() {
@@ -4358,4 +4358,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.09f985468cb7d03f0f94.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.214247f9d189513b7a1a.js.map

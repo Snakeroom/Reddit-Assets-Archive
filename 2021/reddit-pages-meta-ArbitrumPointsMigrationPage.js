@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-pages-meta-ArbitrumPointsMigrationPage.6f874b04a72d7257c680.js
-// Retrieved at 9/27/2021, 7:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-pages-meta-ArbitrumPointsMigrationPage.e29c7e5192f4f68d7179.js
+// Retrieved at 10/5/2021, 1:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-pages-meta-ArbitrumPointsMigrationPage", "CryptoLibEthers"], {
 		"./node_modules/@ethersproject/address/lib.esm/index.js": function(e, t, n) {
@@ -2139,7 +2139,7 @@
 			const G = "arb-migration-l1";
 
 			function H(e) {
-				e ? Object(k.Cb)(G, e) : window.localStorage && window.localStorage.removeItem(G)
+				e ? Object(k.Eb)(G, e) : window.localStorage && window.localStorage.removeItem(G)
 			}
 
 			function V() {
@@ -2150,7 +2150,7 @@
 					[p, h] = Object(a.useState)(Object(w.e)()),
 					[g, f] = Object(a.useState)(function() {
 						var e, t;
-						const n = Object(k.A)(G);
+						const n = Object(k.B)(G);
 						return n && (n.balance = r.a.from(n.balance), n.seqNums = null === (e = n.seqNums) || void 0 === e ? void 0 : e.map(e => r.a.from(e)), n.originalL2Balance = null !== (t = n.originalL2Balance) && void 0 !== t ? t : r.a.from(n.originalL2Balance)), n
 					}()),
 					[b, y] = Object(a.useState)((null == g ? void 0 : g.destinationAddress) || ""),
@@ -2240,4 +2240,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-pages-meta-ArbitrumPointsMigrationPage.6f874b04a72d7257c680.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-pages-meta-ArbitrumPointsMigrationPage.e29c7e5192f4f68d7179.js.map

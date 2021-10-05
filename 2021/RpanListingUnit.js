@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.1e17b1b97fa3d625f2e8.js
-// Retrieved at 10/4/2021, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.8aeae45252cbb94426f3.js
+// Retrieved at 10/5/2021, 1:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -1308,7 +1308,7 @@
 				q = n.n(K);
 			const {
 				fbt: z
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), Z = 20, J = l.lc, Q = l.lc, X = Object(c.a)(R.a, {
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), Z = 20, J = l.lc, X = l.lc, Q = Object(c.a)(R.a, {
 				playerName: "RPAN DU Video Player"
 			}), $ = Object(i.b)(() => Object(o.c)({
 				autoplay: A.b,
@@ -1360,19 +1360,19 @@
 			class ne extends s.Component {
 				constructor(e) {
 					super(e), this.observableElement = r.a.createRef(), this.videoRef = r.a.createRef(), this.videoSessionManager = null, this.timerId = "rpan-du-active-watch-timer-id", this.handleSuccessfulPlayback = () => {
-						Object(E.W)()
+						Object(E.X)()
 					}, this.handleUnsuccessfulPlayback = () => {
-						const e = Number(Object(E.L)());
+						const e = Number(Object(E.M)());
 						if (e) {
 							if (Date.now() - e >= J) {
-								Object(E.W)();
+								Object(E.X)();
 								const e = 30 * l.A,
-									t = Date.now() - e + Q;
+									t = Date.now() - e + X;
 								this.props.onHideRpanUnit(t, {
 									showToast: !1
 								})
 							}
-						} else Object(E.Mb)(Date.now())
+						} else Object(E.Ob)(Date.now())
 					}, this.onResourceRemoved = () => {
 						this.subscribeStats()
 					}, this.onError = () => {
@@ -1649,7 +1649,7 @@
 					const n = 1e3 * t.broadcast_time,
 						s = t.post.id,
 						i = t.post.title;
-					return r.a.createElement(X, {
+					return r.a.createElement(Q, {
 						url: t.stream.hls_url,
 						autoplay: e,
 						controls: !1,
@@ -3676,4 +3676,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.1e17b1b97fa3d625f2e8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.8aeae45252cbb94426f3.js.map

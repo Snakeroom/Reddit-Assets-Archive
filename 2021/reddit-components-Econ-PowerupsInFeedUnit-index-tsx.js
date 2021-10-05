@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.392a54c7fd8417e80a99.js
-// Retrieved at 10/4/2021, 12:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.a1f740b2a2867a39d225.js
+// Retrieved at 10/5/2021, 1:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-PowerupsInFeedUnit-index-tsx"], {
 		"./src/reddit/actions/snoovatar.ts": function(e, t, s) {
@@ -113,7 +113,7 @@
 				} = a, C = f[1].powerupsCost, N = v >= 2, x = (null == b ? void 0 : b.filter(e => {
 					var t;
 					return !!(null === (t = e.supporterInfo) || void 0 === t ? void 0 : t.displayName)
-				}).slice(0, 2)) || [], w = Math.min(h, C) / C, A = C - h;
+				}).slice(0, 2)) || [], w = Math.min(h, C) / C, y = C - h;
 				return r.a.createElement("div", {
 					className: Object(o.a)(_.a.container, e, {
 						[_.a.containerClickable]: !!s
@@ -157,7 +157,7 @@
 					className: _.a.title
 				}, N ? p._("Community perks are now unlocked!", null, {
 					hk: "3xbTTM"
-				}) : p._("{subredditName} needs {powerups needed} more Powerups to unlock perks for the entire community", [p._param("subredditName", m.displayText), p._param("powerups needed", A)], {
+				}) : p._("{subredditName} needs {powerups needed} more Powerups to unlock perks for the entire community", [p._param("subredditName", m.displayText), p._param("powerups needed", y)], {
 					hk: "4h33rf"
 				})), r.a.createElement(c.a, {
 					className: _.a.progressBar,
@@ -293,8 +293,8 @@
 				N = s("./src/lib/opener/index.ts"),
 				x = s("./src/reddit/actions/snoovatar.ts"),
 				w = s("./src/reddit/actions/toaster.ts"),
-				A = s("./src/reddit/actions/urlRequested.ts"),
-				y = s("./src/reddit/components/Econ/Common/ModalCloseButton/index.tsx"),
+				y = s("./src/reddit/actions/urlRequested.ts"),
+				A = s("./src/reddit/components/Econ/Common/ModalCloseButton/index.tsx"),
 				k = s("./src/reddit/helpers/avatar/index.ts"),
 				g = s("./src/reddit/models/Avatar/accessories.ts"),
 				j = s("./src/reddit/models/Toast/index.ts"),
@@ -312,7 +312,7 @@
 				Object(r.useEffect)(() => {
 					t(Object(x.b)())
 				}, [t]);
-				const a = async () => t(Object(A.a)("/user/me", !0)), c = D._("Nice! Ready to update your avatar?", null, {
+				const a = async () => t(Object(y.a)("/user/me", !0)), c = D._("Nice! Ready to update your avatar?", null, {
 					hk: "20KFjx"
 				}), i = D._("Avatars and avatar visual elements © Reddit.", null, {
 					hk: "2Y4y3g"
@@ -323,7 +323,7 @@
 					className: U.a.modal
 				}, n.a.createElement("div", {
 					className: U.a.header
-				}, c, n.a.createElement(y.a, {
+				}, c, n.a.createElement(A.a, {
 					onClick: e
 				})), n.a.createElement("div", {
 					className: U.a.contentWrapper
@@ -528,7 +528,7 @@
 					})(e, f, h) ? a.HIDDEN : v;
 					C(t)
 				}, [e, f, v, C, h]), Object(r.useEffect)(() => {
-					O !== a.HIDDEN && (Object(i.R)(f, e), h || s(Object(d.n)()))
+					O !== a.HIDDEN && (Object(i.S)(f, e), h || s(Object(d.n)()))
 				}, [O, f, e, h, s]), O) {
 					case a.POWERUPS_DEFAULT:
 					case a.POWERUPS_COMMUNITY_GEAR:
@@ -701,18 +701,20 @@
 						assetUrls: null
 					},
 					quickCreateV1: {
+						id: "-1",
 						active: !1,
 						text: "",
-						minDaysOnReddit: 0,
-						shouldHaveAvatar: !1,
-						maxEventViews: 0,
-						minDaysSinceLastEventInteraction: 0,
+						min_days_on_reddit: 0,
+						should_have_avatar: !1,
+						max_event_views: 0,
+						min_days_since_last_event_interaction: 0,
 						webAssetUrls: []
 					}
 				},
 				l = "avatar_quick_create_event",
 				u = "avatar_marketing_event",
-				m = e => {
+				m = "avatar_promo_archived",
+				_ = e => {
 					const t = {};
 					return e.forEach(e => {
 						if (e.startsWith("targeting:")) {
@@ -726,13 +728,13 @@
 						}
 					}), t
 				};
-			var _ = s("./src/reddit/actions/goldPurchaseModals/constants.ts"),
-				p = s("./src/reddit/actions/modal.ts"),
-				b = s("./src/reddit/constants/modals.ts");
-			var E = (e = null, t) => {
+			var p = s("./src/reddit/actions/goldPurchaseModals/constants.ts"),
+				b = s("./src/reddit/actions/modal.ts"),
+				E = s("./src/reddit/constants/modals.ts");
+			var v = (e = null, t) => {
 				var s;
 				switch (t.type) {
-					case _.o:
+					case p.o:
 						const {
 							avatarMarketingEvents: a
 						} = t.payload;
@@ -745,19 +747,21 @@
 									endsAt: a,
 									webAssetUrls: r,
 									tags: n
-								} = e, o = s && new Date(s) <= new Date, c = !!a && new Date(a) < new Date, i = !!o && !c;
-								if (n && n.includes(l)) {
+								} = e, o = s && new Date(s) <= new Date, c = !!a && new Date(a) < new Date, i = !!o && !c, d = n.includes(m);
+								if (n && n.includes(l) && !d) {
 									const {
-										text: s
-									} = e, a = r || null, o = m(n);
-									t && (t.quickCreateV1 = {
-										...o,
 										text: s,
-										active: i && !!a,
-										webAssetUrls: a
+										id: a
+									} = e, o = r || null, c = _(n);
+									t && (t.quickCreateV1 = {
+										...c,
+										id: a,
+										text: s,
+										active: i && !!o,
+										webAssetUrls: o
 									})
 								}
-								if (n && n.includes(u)) {
+								if (n && n.includes(u) && !d) {
 									const e = r || null;
 									t && (t.marketingEvent = {
 										active: i && !!e,
@@ -766,14 +770,14 @@
 								}
 							}), t
 						}(a) : d;
-					case p.c:
-						return (null === (s = t.payload) || void 0 === s ? void 0 : s.id) === b.a.SNOOVATAR_MODAL ? d : e;
+					case b.c:
+						return (null === (s = t.payload) || void 0 === s ? void 0 : s.id) === E.a.SNOOVATAR_MODAL ? d : e;
 					default:
 						return e
 				}
 			};
 			t.a = Object(n.c)({
-				marketing: E,
+				marketing: v,
 				avatarUser: i
 			})
 		},
@@ -802,4 +806,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.392a54c7fd8417e80a99.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.a1f740b2a2867a39d225.js.map

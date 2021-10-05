@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.ad5280d6aa846ba87506.js
-// Retrieved at 10/5/2021, 12:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.b54f07f3a20e4beeec94.js
+// Retrieved at 10/5/2021, 1:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -1483,7 +1483,7 @@
 						T === S.Visible && t === g.a.Achievements && C(Object(h.i)())
 					}, [t, T, C]), T === S.Hidden) return null;
 				const Z = () => {
-						D(S.Visible), Object(p.gb)(l.a.AVATAR_LISTING_BANNER, !1, m.c)
+						D(S.Visible), Object(p.ib)(l.a.AVATAR_LISTING_BANNER, !1, m.c)
 					},
 					R = () => {
 						C(Object(h.b)(v)), O(Object(i.b)({
@@ -1491,7 +1491,7 @@
 						}))
 					},
 					F = () => {
-						Object(p.gb)(l.a.AVATAR_LISTING_BANNER, !0, m.c), t === g.a.Achievements ? w() : R()
+						Object(p.ib)(l.a.AVATAR_LISTING_BANNER, !0, m.c), t === g.a.Achievements ? w() : R()
 					};
 				if (T === S.Dismissed) return r.a.createElement("div", {
 					className: Object(c.a)(y.a.dismissedContainer, a)
@@ -1580,7 +1580,7 @@
 						[y.a.closeLight]: v
 					}),
 					onClick: () => {
-						D(S.Dismissed), Object(p.gb)(l.a.AVATAR_LISTING_BANNER, !0, m.c), t !== g.a.Achievements && C(Object(h.g)(v)), t === g.a.Achievements && C(Object(h.f)())
+						D(S.Dismissed), Object(p.ib)(l.a.AVATAR_LISTING_BANNER, !0, m.c), t !== g.a.Achievements && C(Object(h.g)(v)), t === g.a.Achievements && C(Object(h.f)())
 					}
 				}), r.a.createElement("div", {
 					className: y.a.contentWrapper
@@ -3919,4 +3919,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.ad5280d6aa846ba87506.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.b54f07f3a20e4beeec94.js.map

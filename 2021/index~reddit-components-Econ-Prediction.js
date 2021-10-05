@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.3740b6fc726f19dd7409.js
-// Retrieved at 10/5/2021, 12:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.c241aac79c98207d4b22.js
+// Retrieved at 10/5/2021, 1:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index~reddit-components-Econ-Prediction"], {
 		"./node_modules/lodash/_LazyWrapper.js": function(a, i, r) {
@@ -3864,7 +3864,7 @@
 			function o(a, i) {
 				const r = Object(t.useRef)(null);
 				let n;
-				n = Object(x.A)(a);
+				n = Object(x.B)(a);
 				const [o, e] = Object(t.useState)(null != n ? n : i);
 				return Object(t.useEffect)(() => (r.current = k(a, e, i), () => {
 					var a;
@@ -3873,7 +3873,7 @@
 					var a;
 					null === (a = r.current) || void 0 === a || a.emit(o)
 				}, [o]), [o, function(i) {
-					Object(x.Cb)(a, i), e(i)
+					Object(x.Eb)(a, i), e(i)
 				}]
 			}
 		},
@@ -4136,4 +4136,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.3740b6fc726f19dd7409.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.c241aac79c98207d4b22.js.map

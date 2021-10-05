@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.4b3632a93632c27a36e6.js
-// Retrieved at 10/4/2021, 12:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.aeb5d5b558a9621c9ea9.js
+// Retrieved at 10/5/2021, 1:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, r) {
@@ -3151,18 +3151,20 @@
 						assetUrls: null
 					},
 					quickCreateV1: {
+						id: "-1",
 						active: !1,
 						text: "",
-						minDaysOnReddit: 0,
-						shouldHaveAvatar: !1,
-						maxEventViews: 0,
-						minDaysSinceLastEventInteraction: 0,
+						min_days_on_reddit: 0,
+						should_have_avatar: !1,
+						max_event_views: 0,
+						min_days_since_last_event_interaction: 0,
 						webAssetUrls: []
 					}
 				},
 				l = "avatar_quick_create_event",
 				u = "avatar_marketing_event",
-				m = e => {
+				m = "avatar_promo_archived",
+				p = e => {
 					const t = {};
 					return e.forEach(e => {
 						if (e.startsWith("targeting:")) {
@@ -3176,13 +3178,13 @@
 						}
 					}), t
 				};
-			var p = r("./src/reddit/actions/goldPurchaseModals/constants.ts"),
-				f = r("./src/reddit/actions/modal.ts"),
-				b = r("./src/reddit/constants/modals.ts");
-			var h = (e = null, t) => {
+			var f = r("./src/reddit/actions/goldPurchaseModals/constants.ts"),
+				b = r("./src/reddit/actions/modal.ts"),
+				h = r("./src/reddit/constants/modals.ts");
+			var _ = (e = null, t) => {
 				var r;
 				switch (t.type) {
-					case p.o:
+					case f.o:
 						const {
 							avatarMarketingEvents: n
 						} = t.payload;
@@ -3195,19 +3197,21 @@
 									endsAt: n,
 									webAssetUrls: s,
 									tags: o
-								} = e, i = r && new Date(r) <= new Date, a = !!n && new Date(n) < new Date, c = !!i && !a;
-								if (o && o.includes(l)) {
+								} = e, i = r && new Date(r) <= new Date, a = !!n && new Date(n) < new Date, c = !!i && !a, d = o.includes(m);
+								if (o && o.includes(l) && !d) {
 									const {
-										text: r
-									} = e, n = s || null, i = m(o);
-									t && (t.quickCreateV1 = {
-										...i,
 										text: r,
-										active: c && !!n,
-										webAssetUrls: n
+										id: n
+									} = e, i = s || null, a = p(o);
+									t && (t.quickCreateV1 = {
+										...a,
+										id: n,
+										text: r,
+										active: c && !!i,
+										webAssetUrls: i
 									})
 								}
-								if (o && o.includes(u)) {
+								if (o && o.includes(u) && !d) {
 									const e = s || null;
 									t && (t.marketingEvent = {
 										active: c && !!e,
@@ -3216,14 +3220,14 @@
 								}
 							}), t
 						}(n) : d;
-					case f.c:
-						return (null === (r = t.payload) || void 0 === r ? void 0 : r.id) === b.a.SNOOVATAR_MODAL ? d : e;
+					case b.c:
+						return (null === (r = t.payload) || void 0 === r ? void 0 : r.id) === h.a.SNOOVATAR_MODAL ? d : e;
 					default:
 						return e
 				}
 			};
 			t.a = Object(o.c)({
-				marketing: h,
+				marketing: _,
 				avatarUser: c
 			})
 		},
@@ -3770,4 +3774,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.4b3632a93632c27a36e6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.aeb5d5b558a9621c9ea9.js.map
