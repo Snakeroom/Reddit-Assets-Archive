@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.832e548dd82cf91f5cad.js
-// Retrieved at 10/5/2021, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.d1c16e73455b9c28907b.js
+// Retrieved at 10/5/2021, 2:10:04 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var n, a, i = o[0], s = o[1], c = o[2], l = 0, P = []; l < i.length; l++) a = i[l], Object.prototype.hasOwnProperty.call(d, a) && d[a] && P.push(d[a][0]), d[a] = 0;
@@ -1316,7 +1316,7 @@
 						SubredditWelcomeMessageModal: "8256e9411681d72ce128",
 						"Frontpage~ModListing": "f8dff7399a98bdb921a5",
 						"Frontpage~FrontpageSidebar": "46810f6f6749409b0dd9",
-						Frontpage: "4d6af9b8ecbf7887ee9c",
+						Frontpage: "b60e794a9612140a528c",
 						Topic: "acf254548332ea86f9af",
 						CommunityAwards: "b330a559b6c251be859c",
 						CommunityPointsLearnMore: "86850975742bf3e07e21",
@@ -1390,7 +1390,7 @@
 						"translations/es_MX-json": "d706be3139d7832490de",
 						"translations/fr_FR-json": "2a830a4ff9d944da1427",
 						"translations/it_IT-json": "63e904895c398c4b5b55",
-						"translations/pseudo_ext-json": "54f18d85a0ec59dc48fa",
+						"translations/pseudo_ext-json": "6cd88b3e2e3200375121",
 						"translations/pseudo_long-json": "fd00b2faf7577bdff5cb",
 						"translations/pseudo_short-json": "fd9b4f77f8d963154e06",
 						"translations/pt_BR-json": "79ef24fac45f306cf5ef",
@@ -1561,7 +1561,7 @@
 						FrontpageSidebar: "d08ddb32c44e02816e02",
 						"reddit-components-AdHocMultiredditSidebar": "7a4857ca64d2a7b983a0",
 						SubredditPremiumNewUserWelcome: "c2b208a577559d0e3972",
-						"reddit-components-Econ-PowerupsInFeedUnit-index-tsx": "fd2f75fb3869ef56ef50",
+						"reddit-components-Econ-PowerupsInFeedUnit-index-tsx": "07b24383c3e29fede39b",
 						"reddit-components-Econ-Prediction-CreatingTournamentBanner": "1bf97d6aef98715bcad9",
 						"reddit-components-Economics-SubredditPremium-LFGBanner": "7526b74ef94fefcfaa0f",
 						"reddit-components-Governance-ClaimPointsBanner": "213e6486bf570dc62f05",
@@ -1648,4 +1648,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.832e548dd82cf91f5cad.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.d1c16e73455b9c28907b.js.map
