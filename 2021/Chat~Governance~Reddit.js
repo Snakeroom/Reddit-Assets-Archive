@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.41dabad8d1eda1ac3cd2.js
-// Retrieved at 10/5/2021, 12:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.ad803623a3d247f3b271.js
+// Retrieved at 10/5/2021, 12:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -2500,10 +2500,10 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("147204"),
+				buildNumber: Object(r.c)("147209"),
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
-				buildTimestamp: Object(r.b)("1633448613"),
+				buildTimestamp: Object(r.b)("1633450083"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -5038,14 +5038,14 @@
 					}))
 				},
 				z = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c194c5f9c5f43897aee53672a3d066b12ec32eff2-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %cc9f6b72d3deb4a4f2988f6871554342b2170217d-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${v.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "194c5f9c5f43897aee53672a3d066b12ec32eff2-production",
+						release: "c9f6b72d3deb4a4f2988f6871554342b2170217d-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -5558,7 +5558,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "194c5f9c5f43897aee53672a3d066b12ec32eff2-production",
+						releaseClient: "c9f6b72d3deb4a4f2988f6871554342b2170217d-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -17642,11 +17642,11 @@
 			}
 			const S = e => e && e.reduce((e, t) => "" === e ? e + t : e += `,${t}`, ""),
 				O = {
-					[o.Vb.Comments]: b.b.Comments,
-					[o.Vb.Hot]: b.b.Hot,
-					[o.Vb.New]: b.b.New,
-					[o.Vb.Top]: b.b.Top,
-					[o.Vb.Relevance]: b.b.Relevance
+					[o.Vb.Comments]: b.c.Comments,
+					[o.Vb.Hot]: b.c.Hot,
+					[o.Vb.New]: b.c.New,
+					[o.Vb.Top]: b.c.Top,
+					[o.Vb.Relevance]: b.c.Relevance
 				},
 				I = async ({
 					context: e,
@@ -26437,7 +26437,7 @@
 				return Boolean(null === (t = e.pollData) || void 0 === t ? void 0 : t.isPrediction)
 			}
 			i.d(t, "a", (function() {
-				return n.a
+				return n.b
 			}))
 		},
 		"./src/reddit/models/Prediction/index.ts": function(e, t, i) {
@@ -37075,10 +37075,12 @@
 			"use strict";
 			var n, r, s, o, d, a, l, u, c, _, m, p, h, f, b, g, w, y, v, E, T, S, O, I, R, F, C, N, A, j, D, P, x, L, B, k, M, U, G, V, H, q, W, K, $, z, Y, Q, J, X, Z, ee, te, ie, ne, re, se, oe, de, ae, le, ue, ce, _e, me, pe, he, fe, be, ge, we, ye, ve, Ee, Te, Se, Oe, Ie, Re, Fe, Ce, Ne, Ae, je, De, Pe, xe, Le, Be, ke, Me, Ue, Ge, Ve, He, qe, We, Ke, $e, ze, Ye, Qe, Je, Xe, Ze, et, tt, it, nt, rt, st, ot, dt, at, lt, ut, ct, _t, mt, pt, ht, ft, bt, gt, wt, yt, vt, Et, Tt, St, Ot, It, Rt, Ft, Ct, Nt, At, jt, Dt, Pt, xt, Lt, Bt, kt, Mt, Ut, Gt, Vt, Ht, qt, Wt, Kt, $t, zt, Yt, Qt, Jt, Xt, Zt, ei, ti, ii, ni, ri, si, oi, di, ai, li, ui, ci, _i, mi, pi, hi, fi, bi, gi, wi, yi, vi, Ei;
 			i.d(t, "a", (function() {
-					return At
+					return te
 				})), i.d(t, "b", (function() {
-					return Ut
+					return At
 				})), i.d(t, "c", (function() {
+					return Ut
+				})), i.d(t, "d", (function() {
 					return di
 				})),
 				function(e) {
@@ -41447,4 +41449,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.41dabad8d1eda1ac3cd2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.ad803623a3d247f3b271.js.map
