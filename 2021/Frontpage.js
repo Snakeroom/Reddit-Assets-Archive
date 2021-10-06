@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.57c2ab83c8e129e5e031.js
-// Retrieved at 10/6/2021, 4:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.0df070f4e8b94564f1dd.js
+// Retrieved at 10/6/2021, 7:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -2309,17 +2309,22 @@
 				removeSidebarSpacer: d
 			}) {
 				const m = d ? o.a.Fragment : u.a;
-				return i || !O(t) && !l ? null : o.a.createElement(m, null, l ? o.a.createElement(C, {
-					className: e,
-					redditStyle: r,
-					placement: n
-				}) : o.a.createElement(E, {
-					post: t,
-					refreshKey: s,
-					listingName: c,
-					placement: n,
-					placementIndex: a
-				}))
+				if (!i && (O(t) || l)) {
+					let i = null;
+					return l ? i = o.a.createElement(C, {
+						className: e,
+						redditStyle: r,
+						placement: n
+					}) : t && (i = o.a.createElement(E, {
+						post: t,
+						postId: t.id,
+						refreshKey: s,
+						listingName: c,
+						placement: n,
+						placementIndex: a
+					})), o.a.createElement(m, null, i)
+				}
+				return null
 			}
 			t.a = A(M)
 		},
@@ -4016,4 +4021,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.57c2ab83c8e129e5e031.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.0df070f4e8b94564f1dd.js.map

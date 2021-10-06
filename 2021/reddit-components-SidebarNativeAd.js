@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.7d55b3e68e246b821f4f.js
-// Retrieved at 10/6/2021, 4:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.51ba486474e68afcdf58.js
+// Retrieved at 10/6/2021, 7:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, r) {
@@ -1775,7 +1775,7 @@
 		"./src/reddit/components/SidebarNativeAd/index.tsx": function(e, t, r) {
 			"use strict";
 			r.r(t), r.d(t, "SidebarNativeAd", (function() {
-				return Z
+				return $
 			}));
 			var n = r("./node_modules/fbt/lib/FbtPublic.js"),
 				s = r("./node_modules/react/index.js"),
@@ -1793,37 +1793,38 @@
 				h = r("./src/reddit/components/PostContainer/index.tsx"),
 				_ = r("./src/reddit/constants/adEvents.ts"),
 				g = r("./src/reddit/contexts/InsideOverlay.tsx"),
-				E = r("./src/reddit/controls/OutboundLink/styled.tsx"),
-				v = r("./src/reddit/helpers/adCount/index.ts"),
-				y = r("./src/reddit/helpers/styles/postBackgroundColor.ts"),
-				O = r("./src/reddit/helpers/styles/smartTextColor.ts"),
-				w = r("./src/reddit/helpers/truncateStringWithEllipsis.ts"),
-				S = r("./src/reddit/icons/fonts/OutboundLink/index.tsx"),
-				I = r("./src/reddit/models/NewStructuredStyles/index.ts"),
-				C = r("./src/reddit/models/Theme/index.ts"),
-				T = r("./src/reddit/models/Theme/NewColorSystem/index.ts"),
-				x = r("./src/lib/constants/index.ts"),
-				k = r("./src/reddit/models/Media/index.ts"),
-				A = r("./src/reddit/components/NativeBannerAd/index.m.less"),
-				P = r.n(A);
-			const j = m.a.wrapped(e => o.a.createElement("img", {
+				E = r("./src/reddit/contexts/Post/index.tsx"),
+				v = r("./src/reddit/controls/OutboundLink/styled.tsx"),
+				y = r("./src/reddit/helpers/adCount/index.ts"),
+				O = r("./src/reddit/helpers/styles/postBackgroundColor.ts"),
+				w = r("./src/reddit/helpers/styles/smartTextColor.ts"),
+				S = r("./src/reddit/helpers/truncateStringWithEllipsis.ts"),
+				I = r("./src/reddit/icons/fonts/OutboundLink/index.tsx"),
+				C = r("./src/reddit/models/NewStructuredStyles/index.ts"),
+				T = r("./src/reddit/models/Theme/index.ts"),
+				x = r("./src/reddit/models/Theme/NewColorSystem/index.ts"),
+				k = r("./src/lib/constants/index.ts"),
+				A = r("./src/reddit/models/Media/index.ts"),
+				P = r("./src/reddit/components/NativeBannerAd/index.m.less"),
+				j = r.n(P);
+			const R = m.a.wrapped(e => o.a.createElement("img", {
 				className: e.className,
 				src: e.src
-			}), "BannerAdImage", P.a);
-			class R extends o.a.Component {
+			}), "BannerAdImage", j.a);
+			class M extends o.a.Component {
 				render() {
 					const {
 						post: e
 					} = this.props;
 					if (!e.media) return null;
-					const t = !e.media || Object(k.L)(e.media) || Object(k.G)(e.media) ? "" : e.media.content,
+					const t = !e.media || Object(A.L)(e.media) || Object(A.G)(e.media) ? "" : e.media.content,
 						{
 							type: r
 						} = e.media;
 					if (!t || !r) return null;
 					switch (r) {
-						case x.pb.IMAGE:
-							return o.a.createElement(j, {
+						case k.pb.IMAGE:
+							return o.a.createElement(R, {
 								src: t
 							});
 						default:
@@ -1831,35 +1832,35 @@
 					}
 				}
 			}
-			var M = r("./src/reddit/components/SidebarNativeAd/index.m.less"),
-				L = r.n(M);
-			const N = m.a.wrapped(d.d, "PostTopMeta", L.a),
-				D = m.a.div("BannerAdContainer", L.a),
-				F = ({
+			var L = r("./src/reddit/components/SidebarNativeAd/index.m.less"),
+				N = r.n(L);
+			const D = m.a.wrapped(d.d, "PostTopMeta", N.a),
+				F = m.a.div("BannerAdContainer", N.a),
+				U = ({
 					children: e
 				}) => o.a.createElement("div", null, e),
-				U = m.a.div("PromotedPostContainer", L.a),
-				B = m.a.wrapped(S.a, "OutboundLinkIcon", L.a),
-				G = m.a.div("SourceLinkWrapper", L.a),
-				H = m.a.div("TopLine", L.a),
-				V = m.a.wrapped(c.c, "PostTitle", L.a),
-				z = m.a.div("PostMediaWrapper", L.a),
-				W = m.a.div("BackgroundWrapper", L.a),
-				Y = m.a.wrapped(h.a, "PostContainer", L.a),
-				q = 640,
-				K = e => Object(w.a)(e.title, 100),
-				Q = e => {
+				B = m.a.div("PromotedPostContainer", N.a),
+				G = m.a.wrapped(I.a, "OutboundLinkIcon", N.a),
+				H = m.a.div("SourceLinkWrapper", N.a),
+				V = m.a.div("TopLine", N.a),
+				z = m.a.wrapped(c.c, "PostTitle", N.a),
+				W = m.a.div("PostMediaWrapper", N.a),
+				Y = m.a.div("BackgroundWrapper", N.a),
+				q = m.a.wrapped(h.a, "PostContainer", N.a),
+				K = 640,
+				Q = e => Object(S.a)(e.title, 100),
+				X = e => {
 					if (e.post.isMediaOnly) return {};
-					const t = Object(O.a)(Object(y.a)(e), I.a.actionIcon, I.b.actionIcon);
+					const t = Object(w.a)(Object(O.a)(e), C.a.actionIcon, C.b.actionIcon);
 					return {
 						color: t,
 						fill: t
 					}
 				},
-				X = e => ({
-					background: Object(C.g)(Object(T.a)(e).body, null, null) || ""
+				Z = e => ({
+					background: Object(T.g)(Object(x.a)(e).body, null, null) || ""
 				});
-			class Z extends o.a.Component {
+			class $ extends o.a.Component {
 				constructor() {
 					super(...arguments), this.refreshedAt = 1 / 0, this.onClick = (e, t) => {
 						this.props.fireAdPixelsOfType(t, _.a.Click), t.source ? t.source.outboundUrl ? Object(p.e)(t.source.outboundUrl, p.d.BLANK) : Object(p.e)(t.source.url, p.d.BLANK) : Object(p.e)(t.permalink, p.d.BLANK)
@@ -1882,45 +1883,45 @@
 						isOverlay: s
 					} = this.props;
 					let i, l, m = {};
-					return e.isBlank ? (i = F, l = null) : e.isMediaOnly ? (i = D, m = {
+					return e.isBlank ? (i = U, l = null) : e.isMediaOnly ? (i = F, m = {
 						"data-before-content": n.fbt._("advertisement", null, {
 							hk: "4b2OD7"
 						})
-					}, l = o.a.createElement(R, {
+					}, l = o.a.createElement(M, {
 						post: e
-					})) : (i = U, l = o.a.createElement(W, {
-						style: X(this.props)
-					}, o.a.createElement(H, null, o.a.createElement(N, {
+					})) : (i = B, l = o.a.createElement(Y, {
+						style: Z(this.props)
+					}, o.a.createElement(V, null, o.a.createElement(D, {
 						tooltipType: s ? d.c.Lightbox : void 0,
 						post: e,
 						showTimestamp: !1
-					})), o.a.createElement(V, {
+					})), o.a.createElement(z, {
 						post: e,
 						size: c.b.Large,
-						format: K
-					}), e.source && o.a.createElement(G, null, o.a.createElement(E.a, {
+						format: Q
+					}), e.source && o.a.createElement(H, null, o.a.createElement(v.a, {
 						href: e.source.url,
 						isSponsored: !0,
 						postId: e.id,
 						source: e.source
-					}, Object(u.a)(e), o.a.createElement(B, null))), o.a.createElement(z, null, e.media && o.a.createElement(a.a, {
+					}, Object(u.a)(e), o.a.createElement(G, null))), o.a.createElement(W, null, e.media && o.a.createElement(a.a, {
 						isListing: !0,
 						isNotCardView: !0,
 						showCentered: !0,
 						post: e,
-						availableWidth: q,
+						availableWidth: K,
 						shouldLoad: !0
-					})))), o.a.createElement(i, m, o.a.createElement(Y, {
+					})))), o.a.createElement(i, m, o.a.createElement(q, {
 						className: t,
 						isOverlay: s,
 						post: e,
 						onClick: this.onClick,
 						eventFactory: r,
-						style: Q(this.props)
+						style: X(this.props)
 					}, l))
 				}
 			}
-			const $ = Object(i.b)(null, (e, t) => ({
+			const J = Object(i.b)(null, (e, t) => ({
 				fireAdPixelsOfType: (t, r) => {
 					e(Object(b.z)(t, r))
 				},
@@ -1930,10 +1931,10 @@
 						placementIndex: n,
 						isOverlay: s
 					} = t;
-					e(Object(f.c)(Object(v.a)(r, !!s, n)))
+					e(Object(f.c)(Object(y.a)(r, !!s, n)))
 				}
 			}));
-			t.default = $(Object(g.b)(Object(l.a)(Z)))
+			t.default = Object(E.b)(J(Object(g.b)(Object(l.a)($))))
 		},
 		"./src/reddit/helpers/economics/sortBadges.ts": function(e, t, r) {
 			"use strict";
@@ -3774,4 +3775,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.7d55b3e68e246b821f4f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.51ba486474e68afcdf58.js.map

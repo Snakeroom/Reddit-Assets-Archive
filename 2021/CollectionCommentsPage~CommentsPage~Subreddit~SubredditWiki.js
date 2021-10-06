@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.fed3ca15dc573d1966ab.js
-// Retrieved at 10/6/2021, 4:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.e6238ba51cfcbce86ce1.js
+// Retrieved at 10/6/2021, 7:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"], {
 		"./src/lib/linkMatchers/index.ts": function(e, t, r) {
@@ -1546,17 +1546,22 @@
 				removeSidebarSpacer: l
 			}) {
 				const u = l ? o.a.Fragment : m.a;
-				return d || !k(t) && !c ? null : o.a.createElement(u, null, c ? o.a.createElement(I, {
-					className: e,
-					redditStyle: a,
-					placement: i
-				}) : o.a.createElement(j, {
-					post: t,
-					refreshKey: n,
-					listingName: s,
-					placement: i,
-					placementIndex: r
-				}))
+				if (!d && (k(t) || c)) {
+					let d = null;
+					return c ? d = o.a.createElement(I, {
+						className: e,
+						redditStyle: a,
+						placement: i
+					}) : t && (d = o.a.createElement(j, {
+						post: t,
+						postId: t.id,
+						refreshKey: n,
+						listingName: s,
+						placement: i,
+						placementIndex: r
+					})), o.a.createElement(u, null, d)
+				}
+				return null
 			}
 			t.a = y(C)
 		},
@@ -3596,4 +3601,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.fed3ca15dc573d1966ab.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.e6238ba51cfcbce86ce1.js.map
