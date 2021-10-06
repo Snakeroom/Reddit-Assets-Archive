@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/BottomSheetUpsellWrapper.5a814e9fe2748cc068aa.js
-// Retrieved at 10/6/2021, 1:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/BottomSheetUpsellWrapper.2ad4c21ec712104ef0a0.js
+// Retrieved at 10/6/2021, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["BottomSheetUpsellWrapper"], {
 		"./src/reddit/components/Upsell/BottomSheetUpsellWrapper/index.m.less": function(e, t, s) {
@@ -11,44 +11,45 @@
 			"use strict";
 			s.r(t);
 			var o = s("./node_modules/react/index.js"),
-				r = s("./src/reddit/components/Upsell/SignupUpsell/Loader.ts"),
-				n = s("./src/reddit/constants/promo.ts"),
-				i = s("./src/reddit/hooks/promo/useIsPromoShown.ts"),
+				r = s("./src/lib/classNames/index.ts"),
+				n = s("./src/reddit/components/Upsell/SignupUpsell/Loader.ts"),
+				i = s("./src/reddit/constants/promo.ts"),
+				c = s("./src/reddit/hooks/promo/useIsPromoShown.ts"),
 				l = s("./src/reddit/constants/experiments.ts"),
-				c = s("./src/reddit/contexts/ThrottlingContext/index.tsx"),
-				d = s("./src/reddit/hooks/usePromoContext.ts");
+				d = s("./src/reddit/contexts/ThrottlingContext/index.tsx"),
+				p = s("./src/reddit/hooks/usePromoContext.ts");
 
-			function p() {
+			function u() {
 				const e = function(e) {
 						const {
 							promos: t
-						} = Object(d.a)();
-						return t.get(e) === n.a.Dismissed
-					}(n.b.SignupUpsellBottomSheet),
+						} = Object(p.a)();
+						return t.get(e) === i.a.Dismissed
+					}(i.b.SignupUpsellBottomSheet),
 					{
 						throttleFeature: t
-					} = o.useContext(c.a[l.fb]),
+					} = o.useContext(d.a[l.fb]),
 					{
 						throttleFeature: s
-					} = o.useContext(c.a[l.gb]),
+					} = o.useContext(d.a[l.gb]),
 					{
 						throttleFeature: r
-					} = o.useContext(c.a[l.hb]);
+					} = o.useContext(d.a[l.hb]);
 				o.useEffect(() => {
 					e && (t(), s(), r())
 				}, [e, t, s, r])
 			}
-			var u = s("./src/reddit/components/Upsell/BottomSheetUpsellWrapper/index.m.less"),
-				a = s.n(u);
+			var a = s("./src/reddit/components/Upsell/BottomSheetUpsellWrapper/index.m.less"),
+				m = s.n(a);
 			t.default = function() {
-				p();
+				u();
 				const {
 					dismissPromo: e
-				} = Object(d.a)();
-				return Object(i.a)(n.b.SignupUpsellBottomSheet) ? o.createElement("div", {
-					className: a.a.wrapper
-				}, o.createElement(r.a, {
-					onDismiss: () => e(n.b.SignupUpsellBottomSheet),
+				} = Object(p.a)();
+				return Object(c.a)(i.b.SignupUpsellBottomSheet) ? o.createElement("div", {
+					className: Object(r.a)(m.a.wrapper)
+				}, o.createElement(n.a, {
+					onDismiss: () => e(i.b.SignupUpsellBottomSheet),
 					size: "large"
 				})) : null
 			}
@@ -104,4 +105,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BottomSheetUpsellWrapper.5a814e9fe2748cc068aa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BottomSheetUpsellWrapper.2ad4c21ec712104ef0a0.js.map

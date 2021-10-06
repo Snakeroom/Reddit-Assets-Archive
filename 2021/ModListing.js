@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.eac6f09ce254fb524e2e.js
-// Retrieved at 10/6/2021, 1:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.9545faf0a5362e5451c1.js
+// Retrieved at 10/6/2021, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -1617,7 +1617,7 @@
 				e.XXS = "xxsmallButtonStyles", e.XS = "xsmallButtonStyles", e.XSP = "xsmallBigPaddingButtonStyles", e.S = "smallButtonStyles", e.M = "mediumButtonStyles", e.L = "largeButtonStyles", e.XL = "xlargeButtonStyles"
 			}(u || (u = {})),
 			function(e) {
-				e.Primary = "primary", e.Secondary = "secondary", e.Tertiary = "tertiary", e.Plain = "plain"
+				e.Primary = "primary", e.Secondary = "secondary", e.Tertiary = "tertiary", e.Plain = "plain", e.PlainLink = "plainLink"
 			}(m || (m = {})),
 			function(e) {
 				e.L = "left", e.R = "right", e.C = "center"
@@ -1781,7 +1781,8 @@
 					...t
 				}) => s.a.createElement(b, c({
 					kind: h.Button,
-					className: Object(o.a)(e, d.a.PlainLinkButton)
+					className: Object(o.a)(e, d.a.PlainLinkButton),
+					priority: m.PlainLink
 				}, t));
 			t.s = b
 		},
@@ -4570,4 +4571,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.eac6f09ce254fb524e2e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.9545faf0a5362e5451c1.js.map

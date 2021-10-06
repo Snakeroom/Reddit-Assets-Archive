@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.b9cf8ef4088743803b0a.js
-// Retrieved at 10/6/2021, 1:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.7c4a778d52ad3d2cfea6.js
+// Retrieved at 10/6/2021, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, n) {
@@ -10306,7 +10306,7 @@
 				e.XXS = "xxsmallButtonStyles", e.XS = "xsmallButtonStyles", e.XSP = "xsmallBigPaddingButtonStyles", e.S = "smallButtonStyles", e.M = "mediumButtonStyles", e.L = "largeButtonStyles", e.XL = "xlargeButtonStyles"
 			}(u || (u = {})),
 			function(e) {
-				e.Primary = "primary", e.Secondary = "secondary", e.Tertiary = "tertiary", e.Plain = "plain"
+				e.Primary = "primary", e.Secondary = "secondary", e.Tertiary = "tertiary", e.Plain = "plain", e.PlainLink = "plainLink"
 			}(m || (m = {})),
 			function(e) {
 				e.L = "left", e.R = "right", e.C = "center"
@@ -10470,7 +10470,8 @@
 					...t
 				}) => r.a.createElement(h, d({
 					kind: b.Button,
-					className: Object(s.a)(e, c.a.PlainLinkButton)
+					className: Object(s.a)(e, c.a.PlainLinkButton),
+					priority: m.PlainLink
 				}, t));
 			t.s = h
 		},
@@ -23403,4 +23404,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.b9cf8ef4088743803b0a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.7c4a778d52ad3d2cfea6.js.map

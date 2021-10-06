@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlow.2c917f435304f05dc57e.js
-// Retrieved at 10/6/2021, 1:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlow.2be64d899870c1aa938f.js
+// Retrieved at 10/6/2021, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlow", "FrontpageSidebar", "ReportFlowNew"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, o) {
@@ -4325,7 +4325,7 @@
 				e.XXS = "xxsmallButtonStyles", e.XS = "xsmallButtonStyles", e.XSP = "xsmallBigPaddingButtonStyles", e.S = "smallButtonStyles", e.M = "mediumButtonStyles", e.L = "largeButtonStyles", e.XL = "xlargeButtonStyles"
 			}(u || (u = {})),
 			function(e) {
-				e.Primary = "primary", e.Secondary = "secondary", e.Tertiary = "tertiary", e.Plain = "plain"
+				e.Primary = "primary", e.Secondary = "secondary", e.Tertiary = "tertiary", e.Plain = "plain", e.PlainLink = "plainLink"
 			}(p || (p = {})),
 			function(e) {
 				e.L = "left", e.R = "right", e.C = "center"
@@ -4489,7 +4489,8 @@
 					...t
 				}) => r.a.createElement(_, c({
 					kind: f.Button,
-					className: Object(s.a)(e, l.a.PlainLinkButton)
+					className: Object(s.a)(e, l.a.PlainLinkButton),
+					priority: p.PlainLink
 				}, t));
 			t.s = _
 		},
@@ -5952,4 +5953,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.2c917f435304f05dc57e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.2be64d899870c1aa938f.js.map

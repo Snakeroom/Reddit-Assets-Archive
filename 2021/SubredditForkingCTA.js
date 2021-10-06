@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditForkingCTA.dfac8cec058b9fd8d865.js
-// Retrieved at 10/6/2021, 1:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditForkingCTA.4183904a4822651cd4e4.js
+// Retrieved at 10/6/2021, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditForkingCTA"], {
 		"./src/reddit/components/CreateCommunityButton/index.m.less": function(t, _, e) {
@@ -1347,7 +1347,7 @@
 				t.XXS = "xxsmallButtonStyles", t.XS = "xsmallButtonStyles", t.XSP = "xsmallBigPaddingButtonStyles", t.S = "smallButtonStyles", t.M = "mediumButtonStyles", t.L = "largeButtonStyles", t.XL = "xlargeButtonStyles"
 			}(d || (d = {})),
 			function(t) {
-				t.Primary = "primary", t.Secondary = "secondary", t.Tertiary = "tertiary", t.Plain = "plain"
+				t.Primary = "primary", t.Secondary = "secondary", t.Tertiary = "tertiary", t.Plain = "plain", t.PlainLink = "plainLink"
 			}(u || (u = {})),
 			function(t) {
 				t.L = "left", t.R = "right", t.C = "center"
@@ -1511,7 +1511,8 @@
 					..._
 				}) => o.a.createElement(y, l({
 					kind: p.Button,
-					className: Object(r.a)(t, i.a.PlainLinkButton)
+					className: Object(r.a)(t, i.a.PlainLinkButton),
+					priority: u.PlainLink
 				}, _));
 			_.s = y
 		},
@@ -1585,4 +1586,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditForkingCTA.dfac8cec058b9fd8d865.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditForkingCTA.4183904a4822651cd4e4.js.map
