@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.eff2b882c79101106002.js
-// Retrieved at 10/6/2021, 3:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.e23efef321c5fe90668e.js
+// Retrieved at 10/6/2021, 4:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -2500,10 +2500,10 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("147453"),
+				buildNumber: Object(r.c)("147459"),
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
-				buildTimestamp: Object(r.b)("1633547384"),
+				buildTimestamp: Object(r.b)("1633549720"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -5038,14 +5038,14 @@
 					}))
 				},
 				z = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c20cd1ae8c9179e896c727a246e353f1065af3869-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %ccb223fcfbe3450e7aae9fecb7607663ea7ae7535-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${v.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "20cd1ae8c9179e896c727a246e353f1065af3869-production",
+						release: "cb223fcfbe3450e7aae9fecb7607663ea7ae7535-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -5246,11 +5246,11 @@
 				o = [...s, r.d.Mod, r.d.Friends, r.d.Topic].concat(["random", "randnsfw", "myrandom"]),
 				d = (e, t, i) => {
 					const s = e.toLowerCase();
-					return t ? n.a.isPopularPage(s, t, i) : s === r.g
+					return t ? Object(n.d)(s, t, i) : s === r.g
 				},
 				a = (e, t, i) => {
 					const s = e.toLowerCase();
-					return t ? n.a.isAllPage(s, t, i) : s === r.a
+					return t ? Object(n.c)(s, t, i) : s === r.a
 				};
 			t.a = (e, t, i) => {
 				const n = e.toLowerCase(),
@@ -5558,7 +5558,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "20cd1ae8c9179e896c727a246e353f1065af3869-production",
+						releaseClient: "cb223fcfbe3450e7aae9fecb7607663ea7ae7535-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -30827,38 +30827,39 @@
 		"./src/reddit/selectors/countrySites.ts": function(e, t, i) {
 			"use strict";
 			i.d(t, "a", (function() {
-				return d
-			})), i.d(t, "b", (function() {
 				return a
-			})), i.d(t, "c", (function() {
+			})), i.d(t, "b", (function() {
 				return l
-			})), i.d(t, "d", (function() {
+			})), i.d(t, "c", (function() {
 				return u
+			})), i.d(t, "d", (function() {
+				return c
 			}));
 			var n = i("./node_modules/@reddit/reddit-country-url-redirects/dist/esm/index.js"),
-				r = i("./src/reddit/constants/countrySites.ts"),
-				s = i("./src/reddit/selectors/experiments/countrySites.ts"),
-				o = i("./src/reddit/selectors/user.ts");
-			const d = e => {
-					const t = Object(s.b)(e),
-						i = Object(s.a)(e),
-						r = Object(o.H)(e);
+				r = i("./src/lib/env/index.ts"),
+				s = i("./src/reddit/constants/countrySites.ts"),
+				o = i("./src/reddit/selectors/experiments/countrySites.ts"),
+				d = i("./src/reddit/selectors/user.ts");
+			const a = e => {
+					const t = Object(o.b)(e),
+						i = Object(o.a)(e),
+						s = !Object(r.b)() || Object(d.H)(e);
 					return {
 						countrySitesEnabled: i,
 						countrySitesAdminOnly: t,
-						enabledCountries: r ? n.a.testingCountries : n.a.countries,
-						userIsAdmin: r
+						enabledCountries: s ? n.e : n.b,
+						userIsAdmin: s
 					}
 				},
-				a = e => {
+				l = e => {
 					const {
 						currentPage: t
 					} = e.platform, {
 						url: i = ""
 					} = t || {}, {
-						countryCode: n,
-						languageCode: r,
-						subredditName: s
+						countryCode: n = "",
+						languageCode: r = "",
+						subredditName: s = ""
 					} = (null == t ? void 0 : t.urlParams) || {};
 					return {
 						countryCode: n,
@@ -30867,10 +30868,10 @@
 						subredditName: s
 					}
 				},
-				l = e => !!e && r.c.includes(e.toLowerCase()),
-				u = e => {
-					const t = Object(s.b)(e),
-						i = Object(o.H)(e);
+				u = e => !!e && s.c.includes(e.toLowerCase()),
+				c = e => {
+					const t = Object(o.b)(e),
+						i = !Object(r.b)() || Object(d.H)(e);
 					return t && i
 				}
 		},
@@ -41756,4 +41757,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.eff2b882c79101106002.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.e23efef321c5fe90668e.js.map

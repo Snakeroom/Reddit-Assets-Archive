@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.52b80e1a30882284cc61.js
-// Retrieved at 10/6/2021, 3:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.1287665666e3fb5c8eb2.js
+// Retrieved at 10/6/2021, 4:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~ModListing", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -15675,7 +15675,7 @@
 						topContentDiscoveryUnit: ve,
 						topPostsVariant: ye,
 						walletRegistrationBannerEnabled: Ee
-					} = this.props, Oe = Object(v.a)(fe, null == n ? void 0 : n.countryCode, null == n ? void 0 : n.languageCode), Ce = fe.toLowerCase(), Se = be && be.url ? be.url : Object(Ae.a)(`/r/${fe}/`, null == n ? void 0 : n.countryCode, null == n ? void 0 : n.languageCode), je = p.a.buildSubredditUrl({
+					} = this.props, Oe = Object(v.a)(fe, null == n ? void 0 : n.countryCode, null == n ? void 0 : n.languageCode), Ce = fe.toLowerCase(), Se = be && be.url ? be.url : Object(Ae.a)(`/r/${fe}/`, null == n ? void 0 : n.countryCode, null == n ? void 0 : n.languageCode), je = Object(p.a)({
 						countryCode: De.a,
 						languageCode: De.b,
 						hardcodedPath: Se,
@@ -17076,4 +17076,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.52b80e1a30882284cc61.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.1287665666e3fb5c8eb2.js.map
