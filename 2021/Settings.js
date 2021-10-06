@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.6f8bd5ade0ef872d8de3.js
-// Retrieved at 10/6/2021, 4:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.57daa1e580be95b71469.js
+// Retrieved at 10/6/2021, 7:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, n) {
@@ -5344,10 +5344,10 @@
 					C = i && i.voteState;
 				let x = null;
 				y || (x = e ? "user_hovercard" : "profile_overview");
-				const E = Object(r.useCallback)(() => v(Object(m.d)(e ? "user_hovercard" : "profile_overview", t)), [e, v, t]);
+				const E = Object(r.useCallback)(() => v(Object(m.e)(e ? "user_hovercard" : "profile_overview", t)), [e, v, t]);
 				return o.a.createElement(u.s, {
 					onClick: () => {
-						n ? (v(m.e), y && C === b.a.notVoted && _(Object(c.db)(y))) : E();
+						n ? (v(m.f), y && C === b.a.notVoted && _(Object(c.db)(y))) : E();
 						const e = n ? "postify" : "copy";
 						_(Object(l.b)({
 							clickSource: x,
@@ -14280,4 +14280,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.6f8bd5ade0ef872d8de3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.57daa1e580be95b71469.js.map

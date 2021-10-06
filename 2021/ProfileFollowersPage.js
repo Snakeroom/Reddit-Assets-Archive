@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.f5f26431dbaeb88781a0.js
-// Retrieved at 10/6/2021, 4:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.5f6d54413cccf20f58c0.js
+// Retrieved at 10/6/2021, 7:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileFollowersPage", "ProfileFollowersAction"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -2504,10 +2504,10 @@
 					C = a && a.voteState;
 				let w = null;
 				y || (w = e ? "user_hovercard" : "profile_overview");
-				const I = Object(n.useCallback)(() => g(Object(m.d)(e ? "user_hovercard" : "profile_overview", t)), [e, g, t]);
+				const I = Object(n.useCallback)(() => g(Object(m.e)(e ? "user_hovercard" : "profile_overview", t)), [e, g, t]);
 				return i.a.createElement(u.s, {
 					onClick: () => {
-						s ? (g(m.e), y && C === h.a.notVoted && x(Object(d.db)(y))) : I();
+						s ? (g(m.f), y && C === h.a.notVoted && x(Object(d.db)(y))) : I();
 						const e = s ? "postify" : "copy";
 						x(Object(l.b)({
 							clickSource: w,
@@ -6854,4 +6854,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.f5f26431dbaeb88781a0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.5f6d54413cccf20f58c0.js.map

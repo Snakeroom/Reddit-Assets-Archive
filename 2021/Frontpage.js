@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.0df070f4e8b94564f1dd.js
-// Retrieved at 10/6/2021, 7:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.d711ed7893a9311eaa6c.js
+// Retrieved at 10/6/2021, 7:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -1478,15 +1478,15 @@
 					}, s]
 				})(t), I = Object(p.f)(l.a.AVATAR_LISTING_BANNER, m.c), [T, D] = Object(n.useState)(I ? P.Hidden : P.Visible);
 				if (Object(n.useEffect)(() => {
-						T === P.Visible && t !== _.a.Achievements && C(Object(h.k)(g))
+						T === P.Visible && t !== _.a.Achievements && C(Object(h.m)(g))
 					}, [t, T, C, g]), Object(n.useEffect)(() => {
-						T === P.Visible && t === _.a.Achievements && C(Object(h.i)())
+						T === P.Visible && t === _.a.Achievements && C(Object(h.j)())
 					}, [t, T, C]), T === P.Hidden) return null;
 				const Z = () => {
 						D(P.Visible), Object(p.ib)(l.a.AVATAR_LISTING_BANNER, !1, m.c)
 					},
 					q = () => {
-						C(Object(h.b)(g)), O(Object(i.b)({
+						C(Object(h.c)(g)), O(Object(i.b)({
 							source: g ? "community_spaces_control" : "community_spaces"
 						}))
 					},
@@ -1580,7 +1580,7 @@
 						[y.a.closeLight]: g
 					}),
 					onClick: () => {
-						D(P.Dismissed), Object(p.ib)(l.a.AVATAR_LISTING_BANNER, !0, m.c), t !== _.a.Achievements && C(Object(h.g)(g)), t === _.a.Achievements && C(Object(h.f)())
+						D(P.Dismissed), Object(p.ib)(l.a.AVATAR_LISTING_BANNER, !0, m.c), t !== _.a.Achievements && C(Object(h.h)(g)), t === _.a.Achievements && C(Object(h.g)())
 					}
 				}), r.a.createElement("div", {
 					className: y.a.contentWrapper
@@ -4021,4 +4021,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.0df070f4e8b94564f1dd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.d711ed7893a9311eaa6c.js.map

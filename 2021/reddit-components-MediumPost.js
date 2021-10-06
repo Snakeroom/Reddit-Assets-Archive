@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.baadc7e840109c7eb481.js
-// Retrieved at 10/6/2021, 4:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.1da0a48ede4d1a9d29b7.js
+// Retrieved at 10/6/2021, 7:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-MediumPost"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -2674,10 +2674,10 @@
 					O = c && c.voteState;
 				let T = null;
 				h || (T = e ? "user_hovercard" : "profile_overview");
-				const I = Object(o.useCallback)(() => S(Object(m.d)(e ? "user_hovercard" : "profile_overview", t)), [e, S, t]);
+				const I = Object(o.useCallback)(() => S(Object(m.e)(e ? "user_hovercard" : "profile_overview", t)), [e, S, t]);
 				return r.a.createElement(u.s, {
 					onClick: () => {
-						s ? (S(m.e), h && O === b.a.notVoted && x(Object(a.db)(h))) : I();
+						s ? (S(m.f), h && O === b.a.notVoted && x(Object(a.db)(h))) : I();
 						const e = s ? "postify" : "copy";
 						x(Object(d.b)({
 							clickSource: T,
@@ -4131,4 +4131,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.baadc7e840109c7eb481.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.1da0a48ede4d1a9d29b7.js.map

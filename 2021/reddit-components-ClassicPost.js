@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.6ceda64a8b0d69507709.js
-// Retrieved at 10/6/2021, 4:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.817e3f571365d39e1163.js
+// Retrieved at 10/6/2021, 7:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost", "Reddit~StandalonePostPage~reddit-components-MediumPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1299,7 +1299,7 @@
 				d = n("./src/telemetry/index.ts");
 			const l = () => async (e, t) => {
 				const n = t();
-				Object(d.a)(Object(a.h)(n)), e(Object(o.t)({
+				Object(d.a)(Object(a.i)(n)), e(Object(o.t)({
 					forceFetch: !0
 				})), await e(Object(r.g)(i.a.SNOOVATAR_MODAL))
 			};
@@ -1311,7 +1311,7 @@
 						share: l,
 						source: u
 					} = e, m = n();
-					o && Object(d.a)(Object(a.c)(o)(m)), Object(c.K)(m) ? await t(Object(r.h)(i.a.SNOOVATAR_MODAL, {
+					o && Object(d.a)(Object(a.d)(o)(m)), Object(c.K)(m) ? await t(Object(r.h)(i.a.SNOOVATAR_MODAL, {
 						share: l,
 						source: u
 					})) : await t(Object(s.i)())
@@ -1621,8 +1621,8 @@
 						flairStyleTemplate: Y,
 						formatTitle: W,
 						hostPostData: H,
-						isCheckboxSelected: z,
-						isCurrentUserProfilePost: q,
+						isCheckboxSelected: q,
+						isCurrentUserProfilePost: z,
 						isFrontpage: Q,
 						isGalleryTileLayoutDefault: K,
 						isLoggedIn: X,
@@ -1665,7 +1665,7 @@
 							flairStyleTemplate: ve,
 							post: ie,
 							inSubredditOrProfile: P,
-							isCurrentUserProfilePost: q,
+							isCurrentUserProfilePost: z,
 							isOverlay: Z,
 							shouldShowSubscribeButton: !(Q && X),
 							subredditOrProfile: pe
@@ -1688,7 +1688,7 @@
 							model: ie,
 							handleVote: w,
 							showBulkActionCheckbox: le,
-							isCheckboxSelected: z,
+							isCheckboxSelected: q,
 							toggleCheckbox: be,
 							flairStyleTemplate: ve,
 							redditStyle: ce,
@@ -1926,8 +1926,8 @@
 					}
 				}, [t]);
 				const H = Object(s.useCallback)(() => j(!0), [j]),
-					z = 0 === y.length,
-					q = C || z,
+					q = 0 === y.length,
+					z = C || q,
 					Q = Object(s.useRef)(((e, t) => `${t}_${e}_count_anim`)(h, n));
 				return r.a.createElement(r.a.Fragment, null, !f && r.a.createElement("div", {
 					className: l.a.countAnimation
@@ -1952,7 +1952,7 @@
 						} : {
 							transform: "translateY(0)"
 						}
-					}, q ? r.a.createElement("span", {
+					}, z ? r.a.createElement("span", {
 						className: l.a.digitDelta
 					}, e) : n.map((e, t) => {
 						const s = 0 === t || t === n.length - 1;
@@ -3036,7 +3036,7 @@
 			n.d(t, "b", (function() {
 				return A
 			})), n.d(t, "a", (function() {
-				return z
+				return q
 			}));
 			var s = n("./node_modules/polished/dist/polished.es.js"),
 				r = n("./node_modules/react/index.js"),
@@ -3110,7 +3110,7 @@
 			}! function(e) {
 				e[e.ExtraLarge = 0] = "ExtraLarge", e[e.Large = 1] = "Large", e[e.Medium = 2] = "Medium", e[e.Small = 3] = "Small", e[e.ExtraSmall = 4] = "ExtraSmall"
 			}(A || (A = {}));
-			const z = ({
+			const q = ({
 					size: e,
 					titleColor: t,
 					titleType: n,
@@ -3151,7 +3151,7 @@
 						type: n
 					}, r) : r)
 				},
-				q = ({
+				z = ({
 					className: e,
 					disableVisited: t,
 					titleColor: n,
@@ -3213,7 +3213,7 @@
 								postId: e.id,
 								source: n
 							}, o.a.createElement(Z, t)) : o.a.createElement(Z, t)
-						})(t, e) : o.a.createElement(q, {
+						})(t, e) : o.a.createElement(z, {
 							className: e.titleLinkClassName,
 							"data-click-id": "body",
 							disableVisited: e.disableVisited,
@@ -3234,7 +3234,7 @@
 						return e.length >= 250 ? e.slice(0, 250 - "...".length) + "..." : e
 					})(r));
 					const i = e.isCommentsPage ? R.a.PostComments : R.a.PostItem;
-					return o.a.createElement(z, {
+					return o.a.createElement(q, {
 						className: e.titleClassName,
 						nowrap: e.nowrap,
 						redditStyle: e.redditStyle || e.isCommentsPage,
@@ -5309,30 +5309,34 @@
 		},
 		"./src/reddit/helpers/trackers/snoovatar.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "c", (function() {
+			n.d(t, "d", (function() {
 				return c
-			})), n.d(t, "d", (function() {
-				return d
 			})), n.d(t, "e", (function() {
-				return l
-			})), n.d(t, "l", (function() {
-				return u
-			})), n.d(t, "h", (function() {
-				return m
-			})), n.d(t, "j", (function() {
-				return p
-			})), n.d(t, "k", (function() {
-				return f
-			})), n.d(t, "b", (function() {
-				return _
-			})), n.d(t, "g", (function() {
-				return h
-			})), n.d(t, "i", (function() {
-				return v
+				return d
 			})), n.d(t, "f", (function() {
+				return l
+			})), n.d(t, "n", (function() {
+				return u
+			})), n.d(t, "i", (function() {
+				return m
+			})), n.d(t, "k", (function() {
+				return p
+			})), n.d(t, "m", (function() {
+				return f
+			})), n.d(t, "c", (function() {
+				return _
+			})), n.d(t, "h", (function() {
+				return h
+			})), n.d(t, "j", (function() {
+				return v
+			})), n.d(t, "g", (function() {
 				return O
 			})), n.d(t, "a", (function() {
 				return x
+			})), n.d(t, "l", (function() {
+				return g
+			})), n.d(t, "b", (function() {
+				return C
 			}));
 			var s = n("./src/reddit/models/Gold/ProductOffer.ts"),
 				r = n("./src/reddit/selectors/avatarMarketing.ts"),
@@ -5421,7 +5425,15 @@
 				}),
 				v = E("anniversary_achievement", "view", "anniversary_achievement"),
 				O = E("anniversary_achievement", "click", "close"),
-				x = E("anniversary_achievement", "click", "equip")
+				x = E("anniversary_achievement", "click", "equip"),
+				S = e => () => t => ({
+					...o.defaults(t),
+					source: "gold_top_nav",
+					action: e,
+					noun: "quick_create_cta"
+				}),
+				g = S("view"),
+				C = S("click")
 		},
 		"./src/reddit/helpers/trackers/userFlair.ts": function(e, t, n) {
 			"use strict";
@@ -7011,4 +7023,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.6ceda64a8b0d69507709.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.817e3f571365d39e1163.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.3021b8cc524db54f8d6c.js
-// Retrieved at 10/6/2021, 4:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.715153ff16575a84459b.js
+// Retrieved at 10/6/2021, 7:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ProfileIdCard"], {
 		"./node_modules/lodash/compact.js": function(e, t) {
@@ -1620,10 +1620,10 @@
 					_ = i && i.voteState;
 				let O = null;
 				I || (O = e ? "user_hovercard" : "profile_overview");
-				const C = Object(s.useCallback)(() => x(Object(m.d)(e ? "user_hovercard" : "profile_overview", t)), [e, x, t]);
+				const C = Object(s.useCallback)(() => x(Object(m.e)(e ? "user_hovercard" : "profile_overview", t)), [e, x, t]);
 				return a.a.createElement(u.s, {
 					onClick: () => {
-						r ? (x(m.e), I && _ === f.a.notVoted && v(Object(c.db)(I))) : C();
+						r ? (x(m.f), I && _ === f.a.notVoted && v(Object(c.db)(I))) : C();
 						const e = r ? "postify" : "copy";
 						v(Object(d.b)({
 							clickSource: O,
@@ -3205,4 +3205,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.3021b8cc524db54f8d6c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.715153ff16575a84459b.js.map

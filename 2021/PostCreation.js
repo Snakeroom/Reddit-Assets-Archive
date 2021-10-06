@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.3f4535f7e65202aa7086.js
-// Retrieved at 10/6/2021, 4:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.7828820c219eb57ab4ad.js
+// Retrieved at 10/6/2021, 7:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, n) {
@@ -3720,7 +3720,7 @@
 				d = n("./src/telemetry/index.ts");
 			const l = () => async (e, t) => {
 				const n = t();
-				Object(d.a)(Object(a.h)(n)), e(Object(s.t)({
+				Object(d.a)(Object(a.i)(n)), e(Object(s.t)({
 					forceFetch: !0
 				})), await e(Object(r.g)(i.a.SNOOVATAR_MODAL))
 			};
@@ -3732,7 +3732,7 @@
 						share: l,
 						source: u
 					} = e, m = n();
-					s && Object(d.a)(Object(a.c)(s)(m)), Object(c.K)(m) ? await t(Object(r.h)(i.a.SNOOVATAR_MODAL, {
+					s && Object(d.a)(Object(a.d)(s)(m)), Object(c.K)(m) ? await t(Object(r.h)(i.a.SNOOVATAR_MODAL, {
 						share: l,
 						source: u
 					})) : await t(Object(o.i)())
@@ -15500,30 +15500,34 @@
 		},
 		"./src/reddit/helpers/trackers/snoovatar.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "c", (function() {
+			n.d(t, "d", (function() {
 				return c
-			})), n.d(t, "d", (function() {
-				return d
 			})), n.d(t, "e", (function() {
-				return l
-			})), n.d(t, "l", (function() {
-				return u
-			})), n.d(t, "h", (function() {
-				return m
-			})), n.d(t, "j", (function() {
-				return p
-			})), n.d(t, "k", (function() {
-				return h
-			})), n.d(t, "b", (function() {
-				return f
-			})), n.d(t, "g", (function() {
-				return g
-			})), n.d(t, "i", (function() {
-				return _
+				return d
 			})), n.d(t, "f", (function() {
+				return l
+			})), n.d(t, "n", (function() {
+				return u
+			})), n.d(t, "i", (function() {
+				return m
+			})), n.d(t, "k", (function() {
+				return p
+			})), n.d(t, "m", (function() {
+				return h
+			})), n.d(t, "c", (function() {
+				return f
+			})), n.d(t, "h", (function() {
+				return g
+			})), n.d(t, "j", (function() {
+				return _
+			})), n.d(t, "g", (function() {
 				return x
 			})), n.d(t, "a", (function() {
 				return E
+			})), n.d(t, "l", (function() {
+				return O
+			})), n.d(t, "b", (function() {
+				return y
 			}));
 			var o = n("./src/reddit/models/Gold/ProductOffer.ts"),
 				r = n("./src/reddit/selectors/avatarMarketing.ts"),
@@ -15612,7 +15616,15 @@
 				}),
 				_ = C("anniversary_achievement", "view", "anniversary_achievement"),
 				x = C("anniversary_achievement", "click", "close"),
-				E = C("anniversary_achievement", "click", "equip")
+				E = C("anniversary_achievement", "click", "equip"),
+				v = e => () => t => ({
+					...s.defaults(t),
+					source: "gold_top_nav",
+					action: e,
+					noun: "quick_create_cta"
+				}),
+				O = v("view"),
+				y = v("click")
 		},
 		"./src/reddit/helpers/trackers/userFlair.ts": function(e, t, n) {
 			"use strict";
@@ -23404,4 +23416,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.3f4535f7e65202aa7086.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.7828820c219eb57ab4ad.js.map

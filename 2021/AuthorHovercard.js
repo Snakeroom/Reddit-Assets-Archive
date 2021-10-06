@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.7ba94031d88b2255a355.js
-// Retrieved at 10/6/2021, 4:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.1f6a1901b9d086e178d8.js
+// Retrieved at 10/6/2021, 7:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/lib/delay/index.ts": function(e, t, n) {
@@ -2641,10 +2641,10 @@
 					g = i && i.voteState;
 				let C = null;
 				_ || (C = e ? "user_hovercard" : "profile_overview");
-				const O = Object(s.useCallback)(() => v(Object(m.d)(e ? "user_hovercard" : "profile_overview", t)), [e, v, t]);
+				const O = Object(s.useCallback)(() => v(Object(m.e)(e ? "user_hovercard" : "profile_overview", t)), [e, v, t]);
 				return o.a.createElement(u.s, {
 					onClick: () => {
-						n ? (v(m.e), _ && g === p.a.notVoted && I(Object(c.db)(_))) : O();
+						n ? (v(m.f), _ && g === p.a.notVoted && I(Object(c.db)(_))) : O();
 						const e = n ? "postify" : "copy";
 						I(Object(d.b)({
 							clickSource: C,
@@ -3988,4 +3988,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.7ba94031d88b2255a355.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.1f6a1901b9d086e178d8.js.map
