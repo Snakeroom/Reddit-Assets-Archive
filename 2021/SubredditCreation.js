@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditCreation.ed2bd7daa652ee726249.js
-// Retrieved at 10/5/2021, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditCreation.036698cb9947f0398811.js
+// Retrieved at 10/6/2021, 1:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditCreation"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -206,6 +206,8 @@
 				linkButton: "_3I7YVr4pIJiOGmmJdgsEXK",
 				ArrowRight: "_1oH-o0mDV86imeLnyfmCiD",
 				arrowRight: "_1oH-o0mDV86imeLnyfmCiD",
+				NoColor: "mI7WmWMma8pZnlYRHtE56",
+				noColor: "mI7WmWMma8pZnlYRHtE56",
 				StyledFlair: "_1F2irboi-xRChkhyndP6ct",
 				styledFlair: "_1F2irboi-xRChkhyndP6ct",
 				SpoilerFlair: "_3mkE4WZP2_bhfSQvrpeIka",
@@ -245,11 +247,11 @@
 		"./src/reddit/components/Settings/shared/Widgets.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "m", (function() {
-				return J
+				return Y
 			})), n.d(t, "j", (function() {
 				return X
 			})), n.d(t, "n", (function() {
-				return U
+				return Z
 			})), n.d(t, "k", (function() {
 				return te
 			})), n.d(t, "l", (function() {
@@ -308,7 +310,7 @@
 				w = C.a.select("Inner", E.a),
 				y = C.a.wrapped(v.b, "Caret", E.a);
 
-			function k({
+			function N({
 				className: e,
 				innerClassName: t,
 				...n
@@ -324,7 +326,7 @@
 					isSubreddit: !0
 				}, a)))
 			}
-			var N = n("./src/reddit/controls/ToggleSwitch/index.tsx"),
+			var k = n("./src/reddit/controls/ToggleSwitch/index.tsx"),
 				O = n("./src/reddit/controls/Typography/index.tsx"),
 				S = n("./src/reddit/icons/svgs/ArrowRight/index.tsx"),
 				I = n("./src/reddit/icons/svgs/Circle/index.tsx"),
@@ -332,8 +334,8 @@
 				T = n("./node_modules/lodash/range.js"),
 				M = n.n(T),
 				D = n("./src/reddit/controls/Button/index.tsx"),
-				L = n("./src/reddit/layout/row/Inline/index.tsx"),
-				R = n("./src/reddit/models/Flair/index.ts"),
+				R = n("./src/reddit/layout/row/Inline/index.tsx"),
+				L = n("./src/reddit/models/Flair/index.ts"),
 				B = n("./src/reddit/selectors/tooltip.ts"),
 				F = n("./src/reddit/selectors/user.ts"),
 				P = n("./src/reddit/components/Settings/shared/Widgets.m.less"),
@@ -351,8 +353,8 @@
 			const G = Object(d.a)(h.a),
 				H = C.a.wrapped(I.a, "Circle", A.a),
 				V = C.a.h3("Label", A.a),
-				J = C.a.wrapped(O.c, "Subtext", A.a),
-				Y = C.a.wrapped(u.a, "HoverTooltip", A.a),
+				Y = C.a.wrapped(O.c, "Subtext", A.a),
+				J = C.a.wrapped(u.a, "HoverTooltip", A.a),
 				K = C.a.div("ControlContainer", A.a),
 				Q = C.a.div("TextContainer", A.a),
 				z = C.a.div("ActionContainer", A.a),
@@ -378,8 +380,8 @@
 					})
 				})),
 				q = C.a.a("Link", A.a),
-				U = C.a.wrapped(q, "SubtextLink", A.a),
-				Z = C.a.wrapped(j.a, "LinkIcon", A.a),
+				Z = C.a.wrapped(q, "SubtextLink", A.a),
+				U = C.a.wrapped(j.a, "LinkIcon", A.a),
 				$ = C.a.button("LinkButton", A.a),
 				ee = C.a.wrapped(S.a, "ArrowRight", A.a),
 				te = e => s.a.createElement(X, {
@@ -390,15 +392,15 @@
 					last: e.last
 				}, s.a.createElement(Q, {
 					className: e.textContainerClassName
-				}, s.a.createElement(V, null, e.label, e.isRequired && s.a.createElement(H, null)), s.a.createElement(J, null, e.subtext)), s.a.createElement(z, null, e.children)),
+				}, s.a.createElement(V, null, e.label, e.isRequired && s.a.createElement(H, null)), s.a.createElement(Y, null, e.subtext)), s.a.createElement(z, null, e.children)),
 				ne = C.a.div("StyledFlair", A.a),
 				ae = C.a.wrapped(ne, "SpoilerFlair", A.a),
 				se = C.a.wrapped(ne, "NSFWFlair", A.a),
 				re = e => {
 					switch (e.flair) {
-						case R.f.Nsfw:
+						case L.f.Nsfw:
 							return s.a.createElement(se, null, "NSFW");
-						case R.f.Spoiler:
+						case L.f.Spoiler:
 							return s.a.createElement(ae, null, "SPOILER");
 						default:
 							return null
@@ -411,12 +413,12 @@
 						disabled: e.disabled,
 						indent: e.indent,
 						last: e.last
-					}, s.a.createElement(Q, null, s.a.createElement(L.a, null, s.a.createElement("label", {
+					}, s.a.createElement(Q, null, s.a.createElement(R.a, null, s.a.createElement("label", {
 						htmlFor: t
-					}, s.a.createElement(V, null, e.label))), s.a.createElement(J, null, e.subtext)), s.a.createElement(z, null, s.a.createElement(K, null, e.tooltip && s.a.createElement(Y, {
+					}, s.a.createElement(V, null, e.label))), s.a.createElement(Y, null, e.subtext)), s.a.createElement(z, null, s.a.createElement(K, null, e.tooltip && s.a.createElement(J, {
 						tooltipContentClass: e.tooltipContentClassName,
 						text: e.tooltip
-					}), s.a.createElement(N.a, {
+					}), s.a.createElement(k.a, {
 						id: t,
 						on: e.on,
 						forceOn: e.forceOn,
@@ -443,7 +445,7 @@
 					style: {
 						flex: 5
 					}
-				}, !e.inModal && s.a.createElement(L.a, null, s.a.createElement(V, null, e.label)), s.a.createElement(J, null, " ", s.a.createElement(me, {
+				}, !e.inModal && s.a.createElement(R.a, null, s.a.createElement(V, null, e.label)), s.a.createElement(Y, null, " ", s.a.createElement(me, {
 					style: {
 						color: e.ticks[e.value].color
 					}
@@ -474,7 +476,7 @@
 					last: e.last,
 					indent: e.indent,
 					disabled: e.disabled
-				}, s.a.createElement(Q, null, s.a.createElement(L.a, null, s.a.createElement(V, null, e.label)), s.a.createElement(J, null, e.subtext)), s.a.createElement(z, null, s.a.createElement(K, null, s.a.createElement(D.n, {
+				}, s.a.createElement(Q, null, s.a.createElement(R.a, null, s.a.createElement(V, null, e.label)), s.a.createElement(Y, null, e.subtext)), s.a.createElement(z, null, s.a.createElement(K, null, s.a.createElement(D.n, {
 					onClick: e.onClick
 				}, e.actionText)))),
 				xe = e => s.a.createElement(X, {
@@ -486,7 +488,7 @@
 					href: e.link,
 					onClick: e.onClick,
 					target: e.openInNewTab ? "_blank" : void 0
-				}, e.label, s.a.createElement(Z, null)), s.a.createElement(J, null, e.subtext)), s.a.createElement(z, null, s.a.createElement(q, {
+				}, e.label, s.a.createElement(U, null)), s.a.createElement(Y, null, e.subtext)), s.a.createElement(z, null, s.a.createElement(q, {
 					href: e.link,
 					onClick: e.onClick,
 					target: e.openInNewTab ? "_blank" : void 0
@@ -497,10 +499,20 @@
 					indent: e.indent,
 					last: e.last
 				}, s.a.createElement(Q, null, s.a.createElement($, {
-					onClick: e.onClick
-				}, e.label), s.a.createElement(J, null, e.subtext)), s.a.createElement(z, null, s.a.createElement($, {
-					onClick: e.onClick
-				}, s.a.createElement(ee, null)))),
+					onClick: e.onClick,
+					className: Object(l.a)({
+						[A.a.NoColor]: e.color && "none" === e.color
+					})
+				}, e.label), s.a.createElement(Y, null, e.subtext)), s.a.createElement(z, null, s.a.createElement($, {
+					onClick: e.onClick,
+					className: Object(l.a)({
+						[A.a.NoColor]: e.color && "none" === e.color
+					})
+				}, s.a.createElement(ee, {
+					className: Object(l.a)({
+						[A.a.NoColor]: e.color && "none" === e.color
+					})
+				})))),
 				Ce = Object(o.c)({
 					isOpen: (e, t) => Object(B.b)(t.id)(e)
 				}),
@@ -514,7 +526,7 @@
 					last: e.last,
 					indent: e.indent,
 					disabled: e.disabled
-				}, s.a.createElement(Q, null, s.a.createElement(V, null, e.label), s.a.createElement(J, null, e.subtext)), s.a.createElement(z, null, (e => s.a.createElement("div", {
+				}, s.a.createElement(Q, null, s.a.createElement(V, null, e.label), s.a.createElement(Y, null, e.subtext)), s.a.createElement(z, null, (e => s.a.createElement("div", {
 					className: A.a.DropdownWrapper,
 					onClick: e.openDropdown
 				}, s.a.createElement("span", {
@@ -555,13 +567,13 @@
 						htmlFor: i.id
 					}, s.a.createElement(V, {
 						className: i.labelClassname
-					}, i.label)), s.a.createElement(J, null, i.subtext)), s.a.createElement("div", {
+					}, i.label)), s.a.createElement(Y, null, i.subtext)), s.a.createElement("div", {
 						className: A.a.Wrapper__LineBreak
 					}), s.a.createElement(X, {
 						last: t,
 						indent: !0,
 						disabled: e
-					}, s.a.createElement(k, {
+					}, s.a.createElement(N, {
 						id: i.id,
 						className: "redditStyle",
 						disabled: e || i.inputDisabled,
@@ -581,7 +593,7 @@
 					disabled: e.disabled,
 					indent: e.indent,
 					last: e.last
-				}, s.a.createElement(Q, null, s.a.createElement(V, null, e.label), s.a.createElement(J, null, e.subtext)), s.a.createElement(z, null, e.children)),
+				}, s.a.createElement(Q, null, s.a.createElement(V, null, e.label), s.a.createElement(Y, null, e.subtext)), s.a.createElement(z, null, e.children)),
 				ge = e => s.a.createElement(te, {
 					isCreateCommunity: e.isCreateCommunity,
 					isRequired: e.isRequired,
@@ -879,8 +891,8 @@
 				_ = n("./src/reddit/controls/Button/index.tsx"),
 				w = n("./src/reddit/controls/CheckboxInput/index.tsx"),
 				y = n("./src/reddit/controls/ErrorText/index.tsx"),
-				k = n("./src/reddit/controls/RadioInput/index.tsx"),
-				N = n("./src/reddit/controls/RadioInput/RadioOption/index.tsx"),
+				N = n("./src/reddit/controls/RadioInput/index.tsx"),
+				k = n("./src/reddit/controls/RadioInput/RadioOption/index.tsx"),
 				O = n("./src/reddit/controls/TextButton/index.tsx"),
 				S = n("./src/reddit/helpers/trackers/emailInvite.ts"),
 				I = n("./src/reddit/helpers/trackers/screenview.ts"),
@@ -888,8 +900,8 @@
 				T = n("./src/reddit/icons/svgs/Admin/index.tsx"),
 				M = n("./src/reddit/icons/svgs/Close/index.tsx"),
 				D = n("./src/reddit/icons/svgs/Eye/index.tsx"),
-				L = n("./src/reddit/icons/svgs/Info/index.tsx"),
-				R = n("./src/reddit/icons/svgs/Lock/index.tsx"),
+				R = n("./src/reddit/icons/svgs/Info/index.tsx"),
+				L = n("./src/reddit/icons/svgs/Lock/index.tsx"),
 				B = n("./src/reddit/icons/svgs/User/index.tsx"),
 				F = n("./src/reddit/models/Subreddit/index.ts"),
 				P = n("./src/reddit/models/SubredditRestrictions/index.ts"),
@@ -898,7 +910,7 @@
 				G = n("./src/reddit/selectors/tags.ts"),
 				H = n("./src/reddit/selectors/user.ts"),
 				V = n("./src/lib/formatApiError/index.ts");
-			const J = (e, t) => {
+			const Y = (e, t) => {
 				if (!e) return {};
 				const n = e.fields && e.fields.length && e.fields[0] && e.fields[0].field,
 					s = e.type;
@@ -928,17 +940,17 @@
 					generic: Object(V.a)(e)
 				}
 			};
-			var Y = n("./src/reddit/components/SubredditCreationModal/index.m.less"),
-				K = n.n(Y),
+			var J = n("./src/reddit/components/SubredditCreationModal/index.m.less"),
+				K = n.n(J),
 				Q = n("./src/lib/lessComponent.tsx");
 			const z = 21,
 				X = "create-title-info",
-				q = Q.a.wrapped(L.a, "Info", K.a),
-				U = Q.a.wrapped(N.a, "RadioOption", K.a),
-				Z = Q.a.wrapped(h.c, "Tooltip", K.a),
+				q = Q.a.wrapped(R.a, "Info", K.a),
+				Z = Q.a.wrapped(k.a, "RadioOption", K.a),
+				U = Q.a.wrapped(h.c, "Tooltip", K.a),
 				$ = Q.a.wrapped(B.a, "Public", K.a),
 				ee = Q.a.wrapped(D.a, "Restricted", K.a),
-				te = Q.a.wrapped(R.a, "Private", K.a),
+				te = Q.a.wrapped(L.a, "Private", K.a),
 				ne = Q.a.wrapped(T.a, "Employee", K.a),
 				ae = Q.a.wrapped(M.a, "CloseButton", K.a),
 				se = Q.a.wrapped(y.b, "ErrorText", K.a),
@@ -965,7 +977,7 @@
 					onHideTooltip: () => e(Object(u.i)()),
 					validateSubredditName: t => e(Object(m.i)(t))
 				})),
-				oe = (e, t) => [r.a.createElement(U, {
+				oe = (e, t) => [r.a.createElement(Z, {
 					key: "public",
 					showButton: !0,
 					value: "public"
@@ -981,7 +993,7 @@
 					className: Object(c.a)(K.a.metafieldDescription, K.a.radioDescription)
 				}, a.fbt._("Anyone can view, post, and comment to this community", null, {
 					hk: "1PfFUA"
-				}))))), r.a.createElement(U, {
+				}))))), r.a.createElement(Z, {
 					key: "restricted",
 					showButton: !0,
 					value: "restricted"
@@ -995,7 +1007,7 @@
 					hk: "1iBTDq"
 				})), r.a.createElement("div", {
 					className: Object(c.a)(K.a.metafieldDescription, K.a.radioDescription)
-				}, Object(P.g)(t))))), r.a.createElement(U, {
+				}, Object(P.g)(t))))), r.a.createElement(Z, {
 					key: "private",
 					showButton: !0,
 					value: "private"
@@ -1011,7 +1023,7 @@
 					className: Object(c.a)(K.a.metafieldDescription, K.a.radioDescription)
 				}, a.fbt._("Only approved users can view and submit to this community", null, {
 					hk: "3z8OI6"
-				}))))), r.a.createElement(U, {
+				}))))), r.a.createElement(Z, {
 					key: "employees_only",
 					showButton: !0,
 					value: "employees_only",
@@ -1105,7 +1117,7 @@
 						sendEvent: l,
 						userDoesNotHaveEnoughExpToCreateCommunity: d,
 						userIsSuspended: m
-					} = this.props, u = J(e, this.state.name), {
+					} = this.props, u = Y(e, this.state.name), {
 						over18: h,
 						showEmailInviteModal: b,
 						waitingForSuccessfulCommunity: C
@@ -1147,7 +1159,7 @@
 							onMouseEnter: o,
 							onMouseLeave: i,
 							className: K.a.info
-						}, r.a.createElement(q, null), r.a.createElement(Z, {
+						}, r.a.createElement(q, null), r.a.createElement(U, {
 							className: K.a.StyledTooltip,
 							caretOnTop: !0,
 							tooltipId: X,
@@ -1162,7 +1174,7 @@
 						direction: "column",
 						isCreateCommunity: !0,
 						textContainerClassName: K.a.fullWidthTextContainer
-					}, r.a.createElement(k.a, {
+					}, r.a.createElement(N.a, {
 						value: this.state.type,
 						name: "type",
 						onChange: this.onTypeChange
@@ -2012,9 +2024,9 @@
 					experimentEligibilitySelector: s.a,
 					experimentName: a.Dc
 				});
-				return !(!t || Object(a.Ne)(t))
+				return !(!t || Object(a.Pe)(t))
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.ed2bd7daa652ee726249.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.036698cb9947f0398811.js.map

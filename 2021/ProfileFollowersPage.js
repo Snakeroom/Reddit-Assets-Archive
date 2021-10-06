@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.e97073ff8b80e2e493fa.js
-// Retrieved at 10/5/2021, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.7b706ace70f49d38751c.js
+// Retrieved at 10/6/2021, 1:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileFollowersPage", "ProfileFollowersAction"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -461,12 +461,12 @@
 					error: q,
 					pending: Z
 				}),
-				X = s("./src/reddit/actions/profileConversations.ts");
-			const J = {};
-			var $ = (e = J, t) => {
+				J = s("./src/reddit/actions/profileConversations.ts");
+			const X = {};
+			var $ = (e = X, t) => {
 				switch (t.type) {
-					case X.c:
-					case X.b: {
+					case J.c:
+					case J.b: {
 						const {
 							extraCommentsId: s
 						} = t.payload;
@@ -475,7 +475,7 @@
 							[s]: null
 						}
 					}
-					case X.a: {
+					case J.a: {
 						const {
 							extraCommentsId: s,
 							error: r
@@ -492,7 +492,7 @@
 			const ee = {};
 			var te = (e = ee, t) => {
 					switch (t.type) {
-						case X.c: {
+						case J.c: {
 							const {
 								extraCommentsId: s
 							} = t.payload;
@@ -501,8 +501,8 @@
 								[s]: !0
 							}
 						}
-						case X.b:
-						case X.a: {
+						case J.b:
+						case J.a: {
 							const {
 								extraCommentsId: s
 							} = t.payload;
@@ -523,8 +523,8 @@
 			var ne = (e = re, t) => {
 					switch (t.type) {
 						case k.e:
-						case X.b:
-						case X.e:
+						case J.b:
+						case J.e:
 							return {
 								...e, ...t.payload.extraComments
 							};
@@ -581,7 +581,7 @@
 			var pe = (e = ce, t) => {
 				switch (t.type) {
 					case k.e:
-					case X.e: {
+					case J.e: {
 						const {
 							comments: s,
 							extraComments: r,
@@ -596,7 +596,7 @@
 							...a
 						}
 					}
-					case X.b: {
+					case J.b: {
 						const {
 							comments: s,
 							commentLists: r,
@@ -662,7 +662,7 @@
 			var be = (e = he, t) => {
 				switch (t.type) {
 					case k.e:
-					case X.e: {
+					case J.e: {
 						const {
 							commentLists: s,
 							postIds: r,
@@ -684,7 +684,7 @@
 			var ve = (e = fe, t) => {
 					switch (t.type) {
 						case k.e:
-						case X.e: {
+						case J.e: {
 							const {
 								postIds: s,
 								profileName: r
@@ -1096,8 +1096,8 @@
 				}
 			});
 			const Y = Object(o.a)(E.o),
-				X = Object(o.a)(E.n),
-				J = Object(o.a)(E.m),
+				J = Object(o.a)(E.n),
+				X = Object(o.a)(E.m),
 				$ = (e, t = {}) => async (s, r, {
 					apiContext: n
 				}) => {
@@ -1112,10 +1112,10 @@
 					}));
 					const l = i.subreddits.models[e].name,
 						c = await g(n(), l, t);
-					c.ok ? s(X({
+					c.ok ? s(J({
 						...c.body,
 						fetchedToken: o
-					})) : s(J({
+					})) : s(X({
 						subredditId: e,
 						fetchedToken: o
 					}))
@@ -1436,7 +1436,7 @@
 				Z = s.n(Q);
 			const {
 				fbt: Y
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), X = Object(o.c)({
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), J = Object(o.c)({
 				hasModMailPermissions: Object(u.b)(G.c.mail),
 				isUserBanned: (e, t) => !!Object(q.b)(e, {
 					subredditId: t.subredditId,
@@ -1446,7 +1446,7 @@
 					userName: t.username
 				})
 			});
-			class J extends n.a.Component {
+			class X extends n.a.Component {
 				componentDidMount() {
 					this.props.requestUserBanInfo()
 				}
@@ -1497,7 +1497,7 @@
 					})))
 				}
 			}
-			var $ = Object(i.b)(X, (e, {
+			var $ = Object(i.b)(J, (e, {
 					username: t,
 					subredditId: s,
 					contextId: r
@@ -1520,7 +1520,7 @@
 							contextId: r
 						})), e(Object(W.i)(K.a.MUTE_USER))
 					}
-				}))(J),
+				}))(X),
 				ee = s("./src/reddit/actions/userFlair/index.ts");
 			const {
 				fbt: te
@@ -3177,8 +3177,8 @@
 				return t
 			}
 			const Y = 10,
-				X = .9,
 				J = .9,
+				X = .9,
 				$ = 1.8,
 				ee = 5,
 				te = 1500,
@@ -3336,8 +3336,8 @@
 							if (clearTimeout(this.resetCanFocusTimer), this.cancelPopulateRenderableChildrenWhenIdle(), Object(E.b)() || !this.scrollContainer) return void(this.pendingScollHandlerRead = null);
 							this.updateScrollMetrics();
 							const e = this.getAveragePixelsPerMilliSecond(),
-								t = e < X,
-								s = e < J,
+								t = e < J,
+								s = e < X,
 								r = e < $;
 							if (this.scrollContainer && !this.loadMoreFired && this.props.onLoadMore) {
 								let e = !1;
@@ -6036,7 +6036,7 @@
 			}));
 			var r = s("./src/reddit/constants/experiments.ts"),
 				n = s("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const i = Object(n.a)(r.Hd)
+			const i = Object(n.a)(r.Jd)
 		},
 		"./src/reddit/selectors/followers.ts": function(e, t, s) {
 			"use strict";
@@ -6871,4 +6871,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.e97073ff8b80e2e493fa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.7b706ace70f49d38751c.js.map

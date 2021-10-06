@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.c154b92a2f794427ed92.js
-// Retrieved at 10/5/2021, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.1e01c77a17831fe78780.js
+// Retrieved at 10/6/2021, 1:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, n) {
@@ -869,10 +869,10 @@
 			var X = n("./src/reddit/components/Comments/Comment/TopMeta/crowdControl.m.less"),
 				J = n.n(X);
 			const {
-				fbt: Q
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), G = () => r.a.createElement(C.a, {
+				fbt: G
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), Q = () => r.a.createElement(C.a, {
 				className: J.a.crowdControlText
-			}, Q._("Crowd Control", null, {
+			}, G._("Crowd Control", null, {
 				hk: "4WgEW"
 			}));
 			var K = n("./src/reddit/components/Comments/Comment/TopMeta/edited.m.less"),
@@ -1157,7 +1157,7 @@
 					isLivestreaming: u,
 					renderedInOverlay: p,
 					collapsed: n
-				})), o && r.a.createElement(G, null), r.a.createElement(fe, {
+				})), o && r.a.createElement(Q, null), r.a.createElement(fe, {
 					className: ke.a.role,
 					comment: i,
 					subredditDisplayText: b,
@@ -1321,7 +1321,7 @@
 					isStrong: !!d,
 					renderedInOverlay: _,
 					collapsed: s
-				}), o && r.a.createElement(G, null), o && r.a.createElement(C.c, {
+				}), o && r.a.createElement(Q, null), o && r.a.createElement(C.c, {
 					className: Se.a.metaText,
 					key: "crowdControlSeparator"
 				}), m && !w && r.a.createElement(Fe, {
@@ -3291,13 +3291,13 @@
 				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				a = n("./src/reddit/selectors/posts.ts");
 			const i = e => Object(r.c)(e, {
-					experimentName: o.Id,
+					experimentName: o.Kd,
 					experimentEligibilitySelector: r.a
 				}),
-				c = (e, t) => t === o.Qd.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				c = (e, t) => t === o.Sd.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				d = Object(s.a)(a.H, i, (e, t) => c(e, t)),
 				l = Object(s.a)((e, t) => t, i, (e, t) => c(e, t))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.c154b92a2f794427ed92.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.1e01c77a17831fe78780.js.map

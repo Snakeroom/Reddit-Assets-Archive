@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.1951b370bc30d032b3b6.js
-// Retrieved at 10/5/2021, 8:30:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.c525b11e5334000bde6f.js
+// Retrieved at 10/6/2021, 1:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -15675,6 +15675,8 @@
 				linkButton: "_3I7YVr4pIJiOGmmJdgsEXK",
 				ArrowRight: "_1oH-o0mDV86imeLnyfmCiD",
 				arrowRight: "_1oH-o0mDV86imeLnyfmCiD",
+				NoColor: "mI7WmWMma8pZnlYRHtE56",
+				noColor: "mI7WmWMma8pZnlYRHtE56",
 				StyledFlair: "_1F2irboi-xRChkhyndP6ct",
 				styledFlair: "_1F2irboi-xRChkhyndP6ct",
 				SpoilerFlair: "_3mkE4WZP2_bhfSQvrpeIka",
@@ -15966,10 +15968,20 @@
 					indent: e.indent,
 					last: e.last
 				}, a.a.createElement(K, null, a.a.createElement($, {
-					onClick: e.onClick
+					onClick: e.onClick,
+					className: Object(d.a)({
+						[B.a.NoColor]: e.color && "none" === e.color
+					})
 				}, e.label), a.a.createElement(q, null, e.subtext)), a.a.createElement(X, null, a.a.createElement($, {
-					onClick: e.onClick
-				}, a.a.createElement(ee, null)))),
+					onClick: e.onClick,
+					className: Object(d.a)({
+						[B.a.NoColor]: e.color && "none" === e.color
+					})
+				}, a.a.createElement(ee, {
+					className: Object(d.a)({
+						[B.a.NoColor]: e.color && "none" === e.color
+					})
+				})))),
 				fe = Object(i.c)({
 					isOpen: (e, t) => Object(A.b)(t.id)(e)
 				}),
@@ -22359,7 +22371,7 @@
 					experimentEligibilitySelector: a.a,
 					experimentName: n.Dc
 				});
-				return !(!t || Object(n.Ne)(t))
+				return !(!t || Object(n.Pe)(t))
 			}
 		},
 		"./src/reddit/selectors/showPromotedCTA.ts": function(e, t, s) {
@@ -22374,10 +22386,10 @@
 				o = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				r = s("./src/reddit/selectors/posts.ts");
 			const i = e => Object(o.c)(e, {
-					experimentName: a.Id,
+					experimentName: a.Kd,
 					experimentEligibilitySelector: o.a
 				}),
-				d = (e, t) => t === a.Qd.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				d = (e, t) => t === a.Sd.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				l = Object(n.a)(r.H, i, (e, t) => d(e, t)),
 				c = Object(n.a)((e, t) => t, i, (e, t) => d(e, t))
 		},
@@ -22506,4 +22518,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.1951b370bc30d032b3b6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.c525b11e5334000bde6f.js.map
