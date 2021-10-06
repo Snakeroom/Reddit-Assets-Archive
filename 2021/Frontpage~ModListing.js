@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~ModListing.b4bc1c7a0a1c3d55b527.js
-// Retrieved at 10/6/2021, 3:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~ModListing.83cd944bcc3ef9eeb7c3.js
+// Retrieved at 10/6/2021, 4:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~ModListing"], {
 		"./src/reddit/actions/focusedVerticals/index.ts": function(e, t, s) {
@@ -884,8 +884,8 @@
 						hk: "1QaJzt"
 					})
 				};
-			var J = s("./src/reddit/components/StateSort/index.m.less"),
-				X = s.n(J);
+			var X = s("./src/reddit/components/StateSort/index.m.less"),
+				J = s.n(X);
 
 			function Z() {
 				return (Z = Object.assign || function(e) {
@@ -896,7 +896,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const $ = D.a.wrapped(v.a, "_Dropdown", X.a),
+			const $ = D.a.wrapped(v.a, "_Dropdown", J.a),
 				ee = Object(w.a)($),
 				te = e => {
 					return e.indexOf("_") > 0 && ne(e) === h.z.UnitedStates
@@ -959,7 +959,7 @@
 						isSelected: e.sort === n
 					}))
 				}))))
-			})), "Component", X.a);
+			})), "Component", J.a);
 			const de = {
 				[h.z.Everywhere]: () => y.fbt._("Everywhere", null, {
 					hk: "3ysAHX"
@@ -1473,7 +1473,7 @@
 		"./src/reddit/components/PostList/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "b", (function() {
-				return X
+				return J
 			})), s.d(t, "a", (function() {
 				return $
 			}));
@@ -1530,13 +1530,13 @@
 				return void 0 === l && (l = () => {
 					s && i.onBottomViewed(n, r), i.trackOnPostEnteredViewport(e, t, a, c)
 				}, F.set(d, l)), l
-			}, J = (e, t, s, n, r) => {
+			}, X = (e, t, s, n, r) => {
 				const o = `left-${e}-${t}`;
 				let i = K.get(o);
 				return void 0 === i && (i = o => {
 					s.trackOnPostExitedViewport(e, t, o, n, r)
 				}, K.set(o, i)), i
-			}, X = (e, t, s = !1) => {
+			}, J = (e, t, s = !1) => {
 				const n = `click-${e}`;
 				let r = G.get(n);
 				return void 0 === r && (r = (e, n, r, o, i) => {
@@ -1748,8 +1748,8 @@
 						let B = `post-list-item-[layout: ${n}]-[postId: ${e}]`;
 						this.props.listingBelowVariant && g && (B += `--${g}`);
 						const M = Q(e, n, s, g, y, S, this.props, t, this.props.hostPostData),
-							H = J(e, n, this.props, t, w),
-							z = X(e, this.props, c),
+							H = X(e, n, this.props, t, w),
+							z = J(e, this.props, c),
 							U = V.media && V.media.type === T.o.EMBED ? V.media.provider : null,
 							F = p && !R.isSponsored,
 							K = m && !R.isSponsored && !R.isScoreHidden,
@@ -2460,15 +2460,15 @@
 			const i = e => {
 					const t = Object(r.c)(e, {
 						experimentEligibilitySelector: o.K,
-						experimentName: n.gc
+						experimentName: n.hc
 					});
-					return !(!t || Object(n.Oe)(t))
+					return !(!t || Object(n.Pe)(t))
 				},
 				a = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: o.K,
-						experimentName: n.gc
-					}) === n.Jc.ListingEnabled
+						experimentName: n.hc
+					}) === n.Kc.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, s) {
@@ -2578,8 +2578,8 @@
 				}
 		},
 		"./src/redditGQL/operations/SubredditGeoRecommendationViaFocusVertical.json": function(e) {
-			e.exports = JSON.parse('{"id":"e7c21be88172"}')
+			e.exports = JSON.parse('{"id":"da00c26e96b1"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing.b4bc1c7a0a1c3d55b527.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing.83cd944bcc3ef9eeb7c3.js.map

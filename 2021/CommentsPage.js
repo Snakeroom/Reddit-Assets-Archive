@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.0d2600e27c268f3bc625.js
-// Retrieved at 10/6/2021, 3:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.1983a157d66b63c40b1b.js
+// Retrieved at 10/6/2021, 4:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage"], {
 		"./src/lib/makeLinkedPostsListingKey/index.ts": function(e, t, s) {
@@ -879,9 +879,9 @@
 							i = Object(pe.I)(s(), {
 								identifier: O.belongsTo
 							});
-						if (i && (e => J.de.Redirect === Object(X.b)(e, {
+						if (i && (e => J.ee.Redirect === Object(X.b)(e, {
 								experimentEligibilitySelector: ce,
-								experimentName: J.Vd
+								experimentName: J.Wd
 							}))(s())) return void t(Object(o.c)(i.url));
 						if ((O.media && O.media.type) === H.o.LIVEVIDEO) {
 							const e = `/rpan${O.belongsTo.type===D.a.SUBREDDIT?i.url:"/"}${Object(w.t)(O.id)}`;
@@ -4192,7 +4192,7 @@
 				const t = e.predictionTournament,
 					s = t.status === d.a.Live,
 					n = t.status === d.a.Closed,
-					m = Object(i.e)(c.w),
+					m = Object(i.e)(c.x),
 					p = Object(i.e)(t => Object(l.U)(t, {
 						postId: e.id
 					}));
@@ -5412,7 +5412,7 @@
 					showPromotedCTA: we,
 					subredditOrProfile: je,
 					userIsOp: Se
-				} = e, _e = Object(fe.b)(), [Le, Te] = Object(r.useState)(ie.authorIsBlocked), Ne = Object(T.H)(ie), Me = Object(a.e)(e => Boolean(ie.predictionTournament) && Object(Ie.v)(e)), Ae = Object(a.e)(e => Object(Pe.a)(e)), Fe = Object(c.a)(ie);
+				} = e, _e = Object(fe.b)(), [Le, Te] = Object(r.useState)(ie.authorIsBlocked), Ne = Object(T.H)(ie), Me = Object(a.e)(e => Boolean(ie.predictionTournament) && Object(Ie.w)(e)), Ae = Object(a.e)(e => Object(Pe.a)(e)), Fe = Object(c.a)(ie);
 				Object(r.useEffect)(() => {
 					R && A && W()
 				}, []);
@@ -5469,8 +5469,8 @@
 							crosspost: t,
 							isCommentPermalink: s,
 							post: o
-						} = e, n = Object(a.e)(e => Boolean(o.predictionTournament) && Object(Ie.v)(e));
-						return s ? Oe.g.Classic : n ? Oe.g.Large : t ? Oe.g.Large : o.media && !pt(o) ? Oe.g.Large : Oe.g.Medium
+						} = e, n = Object(a.e)(e => Boolean(o.predictionTournament) && Object(Ie.w)(e)), r = Object(a.e)(e => Boolean(o.audioRoom) && Object(Ie.c)(e));
+						return s ? Oe.g.Classic : n ? Oe.g.Large : r ? Oe.g.Large : t ? Oe.g.Large : o.media && !pt(o) ? Oe.g.Large : Oe.g.Medium
 					})(e);
 				if (Ct === Oe.g.Classic) {
 					const t = Object(g.a)(ie);
@@ -6453,7 +6453,7 @@
 							baseUrl: s.base_url,
 							hostPostId: a,
 							isEligibleForLinkedPosts: n,
-							shouldShowLinkedPosts: n && !Object(x.Oe)(t) && !Object(I.a)(t),
+							shouldShowLinkedPosts: n && !Object(x.Pe)(t) && !Object(I.a)(t),
 							subreddit: o
 						}
 					}
@@ -6508,7 +6508,7 @@
 						hostPostData: d,
 						listingBelowVariant: c
 					} = e;
-					if (c && !Object(x.Oe)(c) && !Object(I.a)(c) && !i) return a.a.createElement("div", {
+					if (c && !Object(x.Pe)(c) && !Object(I.a)(c) && !i) return a.a.createElement("div", {
 						className: K.a.smallBanner
 					});
 					const {
@@ -6519,7 +6519,7 @@
 						hk: "2g363L"
 					}) : Object(I.b)(c) ? o.fbt._("More posts like this", null, {
 						hk: "Maj0v"
-					}) : t === x.wd.DeRecs ? o.fbt._("Popular Posts Near You", null, {
+					}) : t === x.xd.DeRecs ? o.fbt._("Popular Posts Near You", null, {
 						hk: "22vlW0"
 					}) : o.fbt._("More posts you may like", null, {
 						hk: "33WdfT"
@@ -8551,13 +8551,13 @@
 			const i = e => {
 					const t = Object(n.c)(e, {
 						experimentEligibilitySelector: n.a,
-						experimentName: o.Ie
+						experimentName: o.Je
 					});
 					return t === o.N.TwoDayCooldown || t === o.N.FiveDayCooldown
 				},
 				a = e => {
 					const t = Object(r.d)(e, {
-							experimentName: o.Ie
+							experimentName: o.Je
 						}),
 						s = null == t ? void 0 : t.variant;
 					return s === o.N.TwoDayCooldown ? 2 : s === o.N.FiveDayCooldown ? 5 : 0
@@ -8598,7 +8598,7 @@
 						postId: t
 					}) || Object(i.H)(e))(e, t),
 					experimentName: o.L
-				}) === o.Ec
+				}) === o.Fc
 			}
 		},
 		"./src/reddit/selectors/experiments/econ/avatarNfts.ts": function(e, t, s) {
@@ -8623,9 +8623,9 @@
 			const r = e => {
 				const t = Object(n.c)(e, {
 					experimentEligibilitySelector: n.a,
-					experimentName: o.Zb
+					experimentName: o.ac
 				});
-				return !(!t || Object(o.Oe)(t))
+				return !(!t || Object(o.Pe)(t))
 			}
 		},
 		"./src/reddit/selectors/experiments/replyWithUpvote.ts": function(e, t, s) {
@@ -8642,7 +8642,7 @@
 				return !(!t || (null == t ? void 0 : t.karma) && t.karma.fromPosts < 5 && t.karma.fromComments < 10) && Object(n.c)(e, {
 					experimentEligibilitySelector: n.a,
 					experimentName: o.wb
-				}) === o.Ec
+				}) === o.Fc
 			}
 		},
 		"./src/reddit/selectors/experiments/resonatePilot.ts": function(e, t, s) {
@@ -8655,8 +8655,8 @@
 				r = s("./src/reddit/selectors/meta.ts");
 			const i = e => Object(n.c)(e, {
 				experimentEligibilitySelector: e => !Object(r.d)(e) && "US" === Object(r.b)(e),
-				experimentName: o.Wd
-			}) === o.ee.Enabled
+				experimentName: o.Xd
+			}) === o.fe.Enabled
 		},
 		"./src/reddit/selectors/experiments/signupUpsellExperiment.ts": function(e, t, s) {
 			"use strict";
@@ -8716,34 +8716,34 @@
 			const i = e => {
 					const t = Object(n.c)(e, {
 						experimentEligibilitySelector: n.a,
-						experimentName: o.Je
+						experimentName: o.Ke
 					});
-					return t === o.Ae.UIChangesOnly || t === o.Ae.TypingIndicators || t === o.Ae.IndicatorsPlusCTA
+					return t === o.Be.UIChangesOnly || t === o.Be.TypingIndicators || t === o.Be.IndicatorsPlusCTA
 				},
 				a = e => {
 					const t = Object(r.d)(e, {
-							experimentName: o.Je
+							experimentName: o.Ke
 						}),
 						s = null == t ? void 0 : t.variant;
-					return s === o.Ae.TypingIndicators || s === o.Ae.IndicatorsPlusCTA
+					return s === o.Be.TypingIndicators || s === o.Be.IndicatorsPlusCTA
 				},
 				d = e => {
 					const t = Object(r.d)(e, {
-						experimentName: o.Je
+						experimentName: o.Ke
 					});
-					return (null == t ? void 0 : t.variant) === o.Ae.IndicatorsPlusCTA
+					return (null == t ? void 0 : t.variant) === o.Be.IndicatorsPlusCTA
 				},
 				c = e => {
 					return Object(n.c)(e, {
 						experimentEligibilitySelector: n.a,
-						experimentName: o.Le
-					}) === o.Ce.Enabled
+						experimentName: o.Me
+					}) === o.De.Enabled
 				},
 				l = e => {
 					return Object(n.c)(e, {
 						experimentEligibilitySelector: n.a,
-						experimentName: o.Ke
-					}) === o.Be.Enabled
+						experimentName: o.Le
+					}) === o.Ce.Enabled
 				}
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, s) {
@@ -8865,7 +8865,7 @@
 				i = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const a = e => {
 					const t = Object(i.a)(e);
-					return Boolean(t) && !Object(n.Oe)(t)
+					return Boolean(t) && !Object(n.Pe)(t)
 				},
 				d = Object(o.a)(a, r.d, (e, t) => e && !t)
 		},
@@ -8889,20 +8889,20 @@
 			e.exports = JSON.parse('{"id":"b3a25d285bff"}')
 		},
 		"./src/redditGQL/operations/OtherDiscussions.json": function(e) {
-			e.exports = JSON.parse('{"id":"cca4e3f8ec9e"}')
+			e.exports = JSON.parse('{"id":"6ce18c1e5204"}')
 		},
 		"./src/redditGQL/operations/PostFeedAndOtherDiscussions.json": function(e) {
-			e.exports = JSON.parse('{"id":"f22174f35dc8"}')
+			e.exports = JSON.parse('{"id":"27a56c70546e"}')
 		},
 		"./src/redditGQL/operations/SubredditGeoRecommendationViaFocusVertical.json": function(e) {
-			e.exports = JSON.parse('{"id":"e7c21be88172"}')
+			e.exports = JSON.parse('{"id":"da00c26e96b1"}')
 		},
 		"./src/redditGQL/operations/SubredditPosts.json": function(e) {
-			e.exports = JSON.parse('{"id":"14ab038598cf"}')
+			e.exports = JSON.parse('{"id":"2d1d9a98d153"}')
 		},
 		"./src/redditGQL/operations/SubredditsPosts.json": function(e) {
-			e.exports = JSON.parse('{"id":"a6913d5db1c6"}')
+			e.exports = JSON.parse('{"id":"aae1e90d3468"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.0d2600e27c268f3bc625.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.1983a157d66b63c40b1b.js.map

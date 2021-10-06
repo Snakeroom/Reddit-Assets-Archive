@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index.7ff12e093f3c48235cba.js
-// Retrieved at 10/6/2021, 3:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index.f9eef3620c864d47b4a9.js
+// Retrieved at 10/6/2021, 4:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index"], {
 		"./src/reddit/components/Econ/Prediction/TournamentPostBody/ViewTournamentLink/index.m.less": function(e, t, n) {
@@ -125,7 +125,7 @@
 			function R(e, t, n) {
 				const o = Object(s.d)(),
 					a = Object(s.e)(C.e),
-					c = Object(s.e)(r.r),
+					c = Object(s.e)(r.s),
 					d = Object(p.a)(),
 					l = Object(U.a)(),
 					{
@@ -575,7 +575,7 @@
 					}))
 				},
 				ye = e => {
-					return Object(s.e)(r.w) ? i.a.createElement(ge, e) : i.a.createElement(Z, e)
+					return Object(s.e)(r.x) ? i.a.createElement(ge, e) : i.a.createElement(Z, e)
 				};
 			t.default = ye
 		},
@@ -701,4 +701,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.7ff12e093f3c48235cba.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.f9eef3620c864d47b4a9.js.map

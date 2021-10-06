@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.1bd2f06250eff81705c1.js
-// Retrieved at 10/5/2021, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.eadbe176968a861a865c.js
+// Retrieved at 10/6/2021, 4:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index~reddit-components-Econ-Prediction"], {
 		"./node_modules/lodash/_LazyWrapper.js": function(a, i, r) {
@@ -827,7 +827,7 @@
 						k = Object(B.j)(x, {
 							subredditId: n
 						}),
-						o = Object(y.o)(x);
+						o = Object(y.p)(x);
 					if (k) return Object(B.f)(x, {
 						subredditId: n
 					});
@@ -1399,7 +1399,7 @@
 					userSelection: b,
 					predictionStatus: F,
 					voteUpdatesRemained: g
-				} = a, v = Object(k.e)(i => Boolean((null == a ? void 0 : a.userSelection) && !(null == a ? void 0 : a.resolvedOptionId) && Object(f.x)(i))), P = Object(k.e)(i => (null == a ? void 0 : a.tournamentId) ? Object(u.a)(i, a.tournamentId) : null), S = Object(k.e)(y.pb), T = Object(k.e)(y.K), [_, O] = Object(x.useState)(!1), j = s === S, C = m < Date.now(), I = C && j && !B, w = F === d.b.Cancelled || F === d.b.CancelInProgress;
+				} = a, v = Object(k.e)(i => Boolean((null == a ? void 0 : a.userSelection) && !(null == a ? void 0 : a.resolvedOptionId) && Object(f.y)(i))), P = Object(k.e)(i => (null == a ? void 0 : a.tournamentId) ? Object(u.a)(i, a.tournamentId) : null), S = Object(k.e)(y.pb), T = Object(k.e)(y.K), [_, O] = Object(x.useState)(!1), j = s === S, C = m < Date.now(), I = C && j && !B, w = F === d.b.Cancelled || F === d.b.CancelInProgress;
 				return n.a.useEffect(() => {
 					O(!1)
 				}, [b]), n.a.createElement("div", A({
@@ -2084,7 +2084,7 @@
 			}) => {
 				const e = Object(n.d)(),
 					s = Object(A.a)(),
-					m = Object(n.e)(P.w),
+					m = Object(n.e)(P.x),
 					l = m ? _.a : j.a,
 					c = Object(n.e)(S.t),
 					[p, h] = Object(t.useState)(!1),
@@ -2254,13 +2254,13 @@
 			}) => {
 				const y = Object(n.d)(),
 					G = Object(s.a)(),
-					E = Object(n.e)(d.w) ? F.a : v.a,
+					E = Object(n.e)(d.x) ? F.a : v.a,
 					[A, B] = Object(t.useState)(!1),
 					[D, b] = Object(e.a)("hasSeenPredictionSneakPeek", !1),
 					g = !!c,
 					S = r && !l,
 					T = Object(n.e)(f.t);
-				if (!Object(n.e)(a => !i && !S && g && Object(d.t)(a))) return null;
+				if (!Object(n.e)(a => !i && !S && g && Object(d.u)(a))) return null;
 				const _ = () => {
 					D || b(!0), B(!1)
 				};
@@ -2398,7 +2398,7 @@
 				isShowingHint: V,
 				...b
 			}, F) => {
-				const g = Object(n.e)(l.w),
+				const g = Object(n.e)(l.x),
 					v = !!E,
 					P = G === y.id,
 					S = t || !!B || !!G || r,
@@ -4093,7 +4093,7 @@
 				}
 		},
 		"./src/redditGQL/operations/AddPredictionDrafts.json": function(a) {
-			a.exports = JSON.parse('{"id":"90a9ac95262d"}')
+			a.exports = JSON.parse('{"id":"55e2b71b7c14"}')
 		},
 		"./src/redditGQL/operations/CancelPrediction.json": function(a) {
 			a.exports = JSON.parse('{"id":"fac88c91fec8"}')
@@ -4105,10 +4105,10 @@
 			a.exports = JSON.parse('{"id":"90c7b71fa93f"}')
 		},
 		"./src/redditGQL/operations/CreatePredictionTournament.json": function(a) {
-			a.exports = JSON.parse('{"id":"63b8ae32b6ea"}')
+			a.exports = JSON.parse('{"id":"3fb10f0c4910"}')
 		},
 		"./src/redditGQL/operations/EndPredictionTournament.json": function(a) {
-			a.exports = JSON.parse('{"id":"0a5a0b11accd"}')
+			a.exports = JSON.parse('{"id":"309c4e7f3e89"}')
 		},
 		"./src/redditGQL/operations/GetPredictionChipPackages.json": function(a) {
 			a.exports = JSON.parse('{"id":"5ce83e513fa5"}')
@@ -4120,7 +4120,7 @@
 			a.exports = JSON.parse('{"id":"26b911e67a5f"}')
 		},
 		"./src/redditGQL/operations/GetTournaments.json": function(a) {
-			a.exports = JSON.parse('{"id":"c149434123b1"}')
+			a.exports = JSON.parse('{"id":"50d44a50f01c"}')
 		},
 		"./src/redditGQL/operations/ResolvePrediction.json": function(a) {
 			a.exports = JSON.parse('{"id":"d742e3019cfe"}')
@@ -4129,11 +4129,11 @@
 			a.exports = JSON.parse('{"id":"a9582ea601a1"}')
 		},
 		"./src/redditGQL/operations/UpdatePredictionTournament.json": function(a) {
-			a.exports = JSON.parse('{"id":"70baf378030a"}')
+			a.exports = JSON.parse('{"id":"eacbeec256c7"}')
 		},
 		"./src/redditGQL/operations/VotePrediction.json": function(a) {
 			a.exports = JSON.parse('{"id":"484780ada6a2"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.1bd2f06250eff81705c1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.eadbe176968a861a865c.js.map

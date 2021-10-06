@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.7724ebbd96b88897d329.js
-// Retrieved at 10/6/2021, 3:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.6f8bd5ade0ef872d8de3.js
+// Retrieved at 10/6/2021, 4:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, n) {
@@ -5805,7 +5805,7 @@
 				url: I,
 				isHovercard: N
 			}) => {
-				const A = Object(o.e)(e => !_ && !!E && Object(l.f)(e));
+				const A = Object(o.e)(e => !_ && !!E && Object(l.g)(e));
 				return r.a.createElement(r.a.Fragment, null, r.a.createElement(m.a, {
 					bannerBackgroundImage: e,
 					editMode: !!s,
@@ -14280,4 +14280,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.7724ebbd96b88897d329.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.6f8bd5ade0ef872d8de3.js.map
