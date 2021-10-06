@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.9211957a8093e1f81620.js
-// Retrieved at 10/6/2021, 1:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.3ac37939ce7556eb91f3.js
+// Retrieved at 10/6/2021, 3:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab"], {
 		"./src/higherOrderComponents/withMux/index.tsx": function(e, t, s) {
@@ -1957,70 +1957,75 @@
 		"./src/reddit/selectors/poll/index.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return a
-			})), s.d(t, "e", (function() {
 				return r
-			})), s.d(t, "g", (function() {
+			})), s.d(t, "e", (function() {
 				return d
-			})), s.d(t, "f", (function() {
+			})), s.d(t, "g", (function() {
 				return l
-			})), s.d(t, "d", (function() {
+			})), s.d(t, "f", (function() {
 				return c
-			})), s.d(t, "b", (function() {
+			})), s.d(t, "h", (function() {
 				return u
-			})), s.d(t, "c", (function() {
+			})), s.d(t, "d", (function() {
 				return m
+			})), s.d(t, "b", (function() {
+				return h
+			})), s.d(t, "c", (function() {
+				return p
 			}));
-			var i = s("./src/reddit/models/Comment/index.ts"),
-				n = s("./src/reddit/models/Prediction/index.ts"),
-				o = s("./src/reddit/selectors/commentSelector.ts");
-			const a = (e, {
+			s("./node_modules/core-js/modules/web.dom.iterable.js");
+			var i = s("./node_modules/reselect/es/index.js"),
+				n = s("./src/reddit/models/Comment/index.ts"),
+				o = s("./src/reddit/models/Prediction/index.ts"),
+				a = s("./src/reddit/selectors/commentSelector.ts");
+			const r = (e, {
 					postId: t
 				}) => e.posts.metaMap[t],
-				r = (e, {
-					postId: t
-				}) => {
-					const s = a(e, {
-						postId: t
-					});
-					if (s) return e.polls.models[s]
-				},
 				d = (e, {
 					postId: t
 				}) => {
 					const s = r(e, {
 						postId: t
 					});
-					return s && Object(n.c)(s) ? s : null
+					if (s) return e.polls.models[s]
 				},
 				l = (e, {
-					commentId: t
-				}) => {
-					const s = Object(o.b)(e, {
-						commentId: t
-					});
-					return s && s.commentType === i.b.Prediction && d(e, s) || null
-				},
-				c = (e, {
 					postId: t
 				}) => {
-					const s = a(e, {
+					const s = d(e, {
+						postId: t
+					});
+					return s && Object(o.c)(s) ? s : null
+				},
+				c = (e, {
+					commentId: t
+				}) => {
+					const s = Object(a.b)(e, {
+						commentId: t
+					});
+					return s && s.commentType === n.b.Prediction && l(e, s) || null
+				},
+				u = Object(i.a)(e => e.polls.models, (e, t) => t, (e, t) => Object.values(e).filter(e => Object(o.c)(e) && e.tournamentId === t)),
+				m = (e, {
+					postId: t
+				}) => {
+					const s = r(e, {
 						postId: t
 					});
 					if (s) return e.polls.rewards[s]
 				},
-				u = (e, {
+				h = (e, {
 					postId: t
 				}) => {
-					const s = a(e, {
+					const s = r(e, {
 						postId: t
 					});
 					if (s) return e.polls.results.byVotingPower[s]
 				},
-				m = (e, {
+				p = (e, {
 					postId: t
 				}) => {
-					const s = a(e, {
+					const s = r(e, {
 						postId: t
 					});
 					if (s) return e.polls.results.byVoters[s]
@@ -2028,4 +2033,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.9211957a8093e1f81620.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.3ac37939ce7556eb91f3.js.map

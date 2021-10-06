@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.d797c3ee469b8f9b571b.js
-// Retrieved at 10/6/2021, 2:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.88ca09dd8f54695f3450.js
+// Retrieved at 10/6/2021, 3:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -2500,10 +2500,10 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("147434"),
+				buildNumber: Object(r.c)("147443"),
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
-				buildTimestamp: Object(r.b)("1633544348"),
+				buildTimestamp: Object(r.b)("1633545312"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -5038,14 +5038,14 @@
 					}))
 				},
 				z = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c6171387a34067ecf68ffb1d44e0d26549086a086-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %cd883aa33392a5b03ebcbe859bf45091a308c8af3-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${v.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "6171387a34067ecf68ffb1d44e0d26549086a086-production",
+						release: "d883aa33392a5b03ebcbe859bf45091a308c8af3-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -5558,7 +5558,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "6171387a34067ecf68ffb1d44e0d26549086a086-production",
+						releaseClient: "d883aa33392a5b03ebcbe859bf45091a308c8af3-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -8569,6 +8569,31 @@
 				u = 237,
 				c = "community_desc_with_posts_geo",
 				_ = "community_desc_with_posts_geo"
+		},
+		"./src/reddit/actions/frontpage/constants.ts": function(e, t, i) {
+			"use strict";
+			i.d(t, "c", (function() {
+				return n
+			})), i.d(t, "b", (function() {
+				return r
+			})), i.d(t, "a", (function() {
+				return s
+			})), i.d(t, "d", (function() {
+				return o
+			})), i.d(t, "g", (function() {
+				return d
+			})), i.d(t, "f", (function() {
+				return a
+			})), i.d(t, "e", (function() {
+				return l
+			}));
+			const n = "PAGE__FRONTPAGE_PENDING",
+				r = "PAGE__FRONTPAGE_LOADED",
+				s = "PAGE__FRONTPAGE_FAILED",
+				o = "PAGE__FRONTPAGE_RELOADED",
+				d = "FRONTPAGE__MORE_POSTS_PENDING",
+				a = "FRONTPAGE__MORE_POSTS_LOADED",
+				l = "FRONTPAGE__MORE_POSTS_FAILED"
 		},
 		"./src/reddit/actions/global/constants.ts": function(e, t, i) {
 			"use strict";
@@ -29930,27 +29955,33 @@
 			};
 			const l = {};
 			var u = (e = l, t) => {
-				switch (t.type) {
-					case o.e: {
-						const {
-							currentRank: i,
-							subredditId: n,
-							topPredictorsRank: r
-						} = t.payload;
-						return {
-							...e,
-							[n]: {
+					switch (t.type) {
+						case o.e: {
+							const {
 								currentRank: i,
+								subredditId: n,
 								topPredictorsRank: r
+							} = t.payload;
+							return {
+								...e,
+								[n]: {
+									currentRank: i,
+									topPredictorsRank: r
+								}
 							}
 						}
+						default:
+							return e
 					}
-					default:
-						return e
-				}
-			};
-			const c = {};
-			var _ = (e = c, t) => {
+				},
+				c = (i("./node_modules/core-js/modules/web.dom.iterable.js"), i("./node_modules/lodash/mapValues.js")),
+				_ = i.n(c),
+				m = i("./src/reddit/reducers/posts/models/helpers.ts"),
+				p = i("./src/reddit/actions/frontpage/constants.ts"),
+				h = i("./src/reddit/actions/pages/constants.ts"),
+				f = i("./src/reddit/models/Prediction/Tournament/index.ts");
+			const b = {};
+			var g = (e = b, t) => {
 				switch (t.type) {
 					case o.d: {
 						const {
@@ -29958,10 +29989,38 @@
 						} = t.payload;
 						return {
 							...e,
-							...i.reduce((e, t) => ({
-								...e,
-								[t.tournamentId]: t
+							...i.reduce((t, i) => ({
+								...t,
+								[i.tournamentId]: {
+									...e[i.tournamentId],
+									...i
+								}
 							}), {})
+						}
+					}
+					case p.b:
+					case "PAGE__SUBREDDIT_LOADED":
+					case "SUBREDDIT__MORE_POSTS_LOADED":
+					case p.f:
+					case h.b:
+					case h.f: {
+						const i = _()(t.payload.posts, Object(m.h)([m.n])),
+							n = Object.values(i).reduce((t, i) => {
+								if (Object(f.c)(i)) {
+									const {
+										tournamentId: n
+									} = i.predictionTournament;
+									t[n] = {
+										...e[n],
+										...i.predictionTournament,
+										predictions: void 0
+									}
+								}
+								return t
+							}, {});
+						return {
+							...e,
+							...n
 						}
 					}
 					case o.m: {
@@ -29979,8 +30038,8 @@
 						return e
 				}
 			};
-			const m = {};
-			var p = (e = m, t) => {
+			const w = {};
+			var y = (e = w, t) => {
 				var i;
 				switch (t.type) {
 					case o.c: {
@@ -30015,9 +30074,206 @@
 			t.a = Object(n.c)({
 				creation: a,
 				leaderboards: u,
-				tournaments: _,
-				tournamentsBySubreddit: p
+				tournaments: g,
+				tournamentsBySubreddit: y
 			})
+		},
+		"./src/reddit/reducers/posts/models/helpers.ts": function(e, t, i) {
+			"use strict";
+			i.d(t, "g", (function() {
+				return l
+			})), i.d(t, "a", (function() {
+				return u
+			})), i.d(t, "b", (function() {
+				return c
+			})), i.d(t, "o", (function() {
+				return _
+			})), i.d(t, "e", (function() {
+				return m
+			})), i.d(t, "f", (function() {
+				return p
+			})), i.d(t, "n", (function() {
+				return h
+			})), i.d(t, "m", (function() {
+				return f
+			})), i.d(t, "k", (function() {
+				return b
+			})), i.d(t, "j", (function() {
+				return g
+			})), i.d(t, "i", (function() {
+				return w
+			})), i.d(t, "d", (function() {
+				return y
+			})), i.d(t, "l", (function() {
+				return v
+			})), i.d(t, "h", (function() {
+				return E
+			})), i.d(t, "c", (function() {
+				return T
+			}));
+			var n = i("./node_modules/icepick/icepick.js"),
+				r = i("./src/reddit/helpers/path/index.ts");
+
+			function s({
+				tournamentId: e,
+				name: t,
+				status: i,
+				themeId: n,
+				totalParticipants: r,
+				predictions: s
+			}) {
+				return {
+					tournamentId: e,
+					name: t,
+					status: i,
+					theme: n,
+					totalParticipantsCount: r,
+					predictions: s.map(o)
+				}
+			}
+
+			function o({
+				id: e,
+				title: t,
+				status: i,
+				resolvedOptionId: n,
+				votingEndTimestamp: r,
+				userWonAmount: s,
+				totalStakeAmount: o,
+				totalVoteCount: a,
+				userSelection: l,
+				isNSFW: u,
+				isSpoiler: c,
+				options: _
+			}) {
+				return {
+					id: e,
+					title: t,
+					endsAt: r,
+					status: i,
+					voteUpdatesRemained: null,
+					isNSFW: u,
+					isSpoiler: c,
+					totalVoteCount: a,
+					totalStakeAmount: o,
+					wonAmount: s,
+					resolvedOptionId: n,
+					selectedOptionId: l,
+					options: _.map(d)
+				}
+			}
+
+			function d({
+				userAmount: e,
+				...t
+			}) {
+				return {
+					...t,
+					userStakeAmount: e
+				}
+			}
+			var a = i("./src/reddit/models/Media/index.ts");
+			const l = e => {
+					const {
+						protocol: t,
+						domain: i
+					} = e;
+					return e => {
+						const n = Object(r.b)(e.permalink);
+						return {
+							...e,
+							permalink: `${t}://${i}${n}`
+						}
+					}
+				},
+				u = e => t => {
+					const i = e[t.id];
+					return i && i.events && (t.events = i.events, t.source = i.source), t
+				},
+				c = e => t => {
+					const i = e[t.id];
+					return i && i.isSponsored && (t.isSponsored = i.isSponsored), t
+				},
+				_ = (e, t) => e.pollData ? {
+					...e,
+					pollData: {
+						...e.pollData,
+						...t
+					}
+				} : e,
+				m = ({
+					post: e,
+					selectedOptionId: t
+				}) => _(e, {
+					userSelection: t
+				}),
+				p = ({
+					post: e,
+					selectedOptionId: t,
+					predictionId: i
+				}) => {
+					var n, r;
+					if (e.predictionTournament) return {
+						...e,
+						predictionTournament: {
+							...e.predictionTournament,
+							predictions: null === (r = null === (n = e.predictionTournament) || void 0 === n ? void 0 : n.predictions) || void 0 === r ? void 0 : r.map(e => e.id === i ? {
+								...e,
+								selectedOptionId: t
+							} : e)
+						}
+					}
+				},
+				h = ({
+					tournamentData: e,
+					...t
+				}) => e ? {
+					...t,
+					predictionTournament: s(e)
+				} : t,
+				f = e => e.media && Object(a.E)(e.media) ? {
+					...Object(n.unsetIn)(e, ["source"])
+				} : e,
+				b = e => t => {
+					const i = e[t.id];
+					return t && t.media && i && i.media && Object(a.I)(t.media) && t.media.isRichtextPreview && Object(a.I)(i.media) && !i.media.isRichtextPreview && (t.media.richtextContent = i.media.richtextContent, t.media.isRichtextPreview = !1), t
+				},
+				g = e => t => {
+					const i = e[t.id];
+					return i && i.numDuplicates && (t.numDuplicates = i.numDuplicates), t
+				},
+				w = e => t => {
+					const i = e[t.id];
+					return i && void 0 !== i.isEligibleForLinkedPosts && (t.isEligibleForLinkedPosts = i.isEligibleForLinkedPosts), t
+				},
+				y = e => {
+					let t = e.source;
+					return t && t.outboundUrlCreated && (t = {
+						...t,
+						outboundUrlReceived: Date.now()
+					}, e.source = t), e
+				},
+				v = e => {
+					const {
+						allAwardings: t,
+						...i
+					} = e, n = {};
+					return t && t.forEach(e => {
+						n[e.id] = e.count
+					}), {
+						...i,
+						awardCountsById: n
+					}
+				},
+				E = e => t => {
+					for (let i = 0; i < e.length; i++) t = e[i](t);
+					return t
+				},
+				T = (e, t) => ({
+					...e,
+					events: t.events,
+					source: t.source
+				})
 		},
 		"./src/reddit/reducers/sidebarPromotedPosts/models/index.ts": function(e, t, i) {
 			"use strict";
@@ -41503,4 +41759,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.d797c3ee469b8f9b571b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.88ca09dd8f54695f3450.js.map

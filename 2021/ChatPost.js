@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.e3db5582ef2f0ea94293.js
-// Retrieved at 10/6/2021, 1:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.05d5a28cdbf7370e818e.js
+// Retrieved at 10/6/2021, 3:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -184,8 +184,8 @@
 				O = s("./src/reddit/components/Economics/SubredditPremium/Badges/UsernameDisplay/index.tsx"),
 				j = s("./src/reddit/components/Hovercards/AuthorHovercard/index.tsx"),
 				M = s("./src/reddit/components/Comments/Comment/TopMeta/author.m.less"),
-				N = s.n(M);
-			const w = ({
+				w = s.n(M);
+			const N = ({
 				authorClassName: e,
 				className: t,
 				comment: s,
@@ -194,7 +194,7 @@
 				renderedInOverlay: a,
 				collapsed: i
 			}) => r.a.createElement(j.b, {
-				className: Object(c.a)(N.a.authorHoverCard, t),
+				className: Object(c.a)(w.a.authorHoverCard, t),
 				postOrComment: s,
 				tooltipType: a ? g.c.Lightbox : void 0,
 				isCommentAuthorBlocked: Object(y.g)(s),
@@ -578,7 +578,7 @@
 					uniqueIdentifier: i.id
 				}), r.a.createElement("div", {
 					className: ye.a.baselineItem
-				}, r.a.createElement(w, {
+				}, r.a.createElement(N, {
 					authorClassName: ye.a.author,
 					comment: i,
 					isLivestreaming: u,
@@ -642,9 +642,9 @@
 				Oe = s("./src/reddit/selectors/economics.ts"),
 				je = s("./src/reddit/models/Flair/index.ts"),
 				Me = s("./src/reddit/selectors/subreddit.ts"),
-				Ne = s("./src/reddit/selectors/userFlair.ts"),
-				we = s("./src/reddit/components/Comments/Comment/TopMeta/index.m.less"),
-				Le = s.n(we);
+				we = s("./src/reddit/selectors/userFlair.ts"),
+				Ne = s("./src/reddit/components/Comments/Comment/TopMeta/index.m.less"),
+				Le = s.n(Ne);
 
 			function Se() {
 				return (Se = Object.assign || function(e) {
@@ -670,7 +670,7 @@
 					},
 					flairPosition: (e, {
 						comment: t
-					}) => Object(Ne.e)(e, {
+					}) => Object(we.e)(e, {
 						subredditId: t.subredditId
 					})
 				}));
@@ -741,7 +741,7 @@
 					subredditId: a.subredditId,
 					userId: a.authorId,
 					uniqueIdentifier: a.id
-				}), t && t, r.a.createElement(w, {
+				}), t && t, r.a.createElement(N, {
 					authorClassName: O ? Le.a.NftAuthor : void 0,
 					comment: a,
 					isLivestreaming: h,
@@ -958,9 +958,9 @@
 			})), s.d(t, "b", (function() {
 				return M
 			})), s.d(t, "g", (function() {
-				return N
-			})), s.d(t, "e", (function() {
 				return w
+			})), s.d(t, "e", (function() {
+				return N
 			})), s.d(t, "d", (function() {
 				return L
 			})), s.d(t, "f", (function() {
@@ -1012,7 +1012,7 @@
 				})), i.a.createElement(O, null, n.fbt._("Be the first to post the same link or crosspost in another community!", null, {
 					hk: "4yirBw"
 				}))),
-				N = ({
+				w = ({
 					link: e
 				}) => i.a.createElement("div", {
 					className: E.a.StateContainer
@@ -1023,7 +1023,7 @@
 				}, n.fbt._("View all comments", null, {
 					hk: "2CgaIx"
 				}))),
-				w = Object(c.b)(null, (e, {
+				N = Object(c.b)(null, (e, {
 					postId: t,
 					commentId: s,
 					sort: n
@@ -1053,7 +1053,7 @@
 					apiError: n
 				}) => i.a.createElement("div", {
 					className: Object(d.a)(E.a.StateContainer, E.a.ErrorFullPage)
-				}, i.a.createElement(w, {
+				}, i.a.createElement(N, {
 					postId: e,
 					commentId: t,
 					sort: s,
@@ -1357,7 +1357,7 @@
 					}
 				},
 				M = e => f()((e || []).filter(e => x()(e) && e.length >= 2).sort(e => e[0]).map(e => e[1])) || k.e.None;
-			const N = (e, t, s) => {
+			const w = (e, t, s) => {
 				const n = {
 						[t]: {}
 					},
@@ -1403,7 +1403,7 @@
 					}
 				}
 			};
-			var w = s("./src/lib/env/index.ts");
+			var N = s("./src/lib/env/index.ts");
 			const L = new Map,
 				S = e => e,
 				A = new Set;
@@ -1467,19 +1467,19 @@
 							};
 						setTimeout(() => {
 							F(d, c, l, t)
-						}, i), Object(w.a)() && console.debug(`Connection reset, retrying in ${i}ms`)
+						}, i), Object(N.a)() && console.debug(`Connection reset, retrying in ${i}ms`)
 					}
 				},
 				W = (e, t) => {
 					if (t && t.data) try {
 						e(JSON.parse(t.data))
 					} catch (t) {
-						Object(w.a)() && console.error(t)
+						Object(N.a)() && console.error(t)
 					}
 				},
 				H = (e, t) => {
 					const s = L.get(e);
-					s && s.isClosePlanned && s.socket && s.socket.readyState === WebSocket.CLOSED ? L.delete(e) : Object(w.a)() && console.error(t)
+					s && s.isClosePlanned && s.socket && s.socket.readyState === WebSocket.CLOSED ? L.delete(e) : Object(N.a)() && console.error(t)
 				};
 			var K = s("./src/reddit/selectors/comments.ts"),
 				V = s("./src/reddit/selectors/commentSelector.ts"),
@@ -1516,7 +1516,7 @@
 										}),
 										d = !(!s || !Z[s]);
 									if (a && !d) {
-										const s = N(0, n, t.payload),
+										const s = w(0, n, t.payload),
 											r = t.payload.total_comment_count;
 										if (void 0 === c) {
 											const t = Object(K.w)(i, {
@@ -1546,7 +1546,7 @@
 										}),
 										c = O(t.payload);
 									if (i && c) {
-										const s = N(0, n, t.payload),
+										const s = w(0, n, t.payload),
 											r = t.payload.total_comment_count;
 										o(G({
 											authorFlair: s,
@@ -1700,8 +1700,8 @@
 				Oe = s("./src/reddit/actions/reportFlow/index.ts"),
 				je = s("./src/reddit/actions/tooltip.ts"),
 				Me = s("./src/reddit/actions/userBlocks.ts"),
-				Ne = s("./src/reddit/components/InfoTextTooltip/index.tsx"),
-				we = s("./src/reddit/constants/tracking.ts"),
+				we = s("./src/reddit/components/InfoTextTooltip/index.tsx"),
+				Ne = s("./src/reddit/constants/tracking.ts"),
 				Le = s("./src/reddit/selectors/telemetry.ts"),
 				Se = s("./src/telemetry/models/Event.ts");
 			const Ae = e => ({
@@ -1718,7 +1718,7 @@
 				}),
 				Pe = e => t => ({
 					source: "chat_post",
-					action: we.c.VIEW,
+					action: Ne.c.VIEW,
 					noun: "last_message",
 					post: Object(Le.post)(t, e),
 					comment: Object(Le.comment)(t, e),
@@ -1755,21 +1755,21 @@
 					onClick: e => {
 						s(e), d && (r(((e, t) => s => ({
 							source: "comment",
-							action: we.c.CLICK,
+							action: Ne.c.CLICK,
 							noun: e,
 							post: Object(Le.post)(s, t),
 							comment: Object(Le.comment)(s, t),
 							...Ae(s)
 						}))(d, t.id)), r(((e, t) => s => ({
 							source: "comment_overflow_menu",
-							action: we.c.CLICK,
+							action: Ne.c.CLICK,
 							noun: e,
 							post: Object(Le.post)(s, t),
 							comment: Object(Le.comment)(s, t),
 							...Ae(s)
 						}))(d, t.id)))
 					}
-				}, e, c.a.createElement(Ne.c, {
+				}, e, c.a.createElement(we.c, {
 					tooltipId: a
 				}, i)),
 				Ke = e => c.a.createElement(He, De({
@@ -1919,8 +1919,8 @@
 						replyTooltipId: O,
 						reportTooltipId: j,
 						approveTooltipId: M,
-						blockTooltipId: N,
-						removeTooltipId: w,
+						blockTooltipId: w,
+						removeTooltipId: N,
 						distinguishTooltipId: L,
 						sendEvent: S,
 						spamTooltipId: A,
@@ -1995,7 +1995,7 @@
 						trackingNoun: "edit"
 					}, W), c.a.createElement(ut, null)), p && U ? c.a.createElement(He, dt({
 						onClick: g,
-						tooltipId: w,
+						tooltipId: N,
 						tooltipText: t.bannedBy === m.k ? te.fbt._("Confirm removal", null, {
 							hk: "3q7g1J"
 						}) : te.fbt._("Remove", null, {
@@ -2027,7 +2027,7 @@
 						withOverlay: !0
 					}), !!o && !B && c.a.createElement(He, dt({
 						onClick: () => d ? y() : b(),
-						tooltipId: N,
+						tooltipId: w,
 						tooltipText: d ? te.fbt._("Unblock User", null, {
 							hk: "26F2c9"
 						}) : te.fbt._("Block User", null, {
@@ -2052,7 +2052,7 @@
 				Ot = re.a.wrapped(xe.a, "ChatIcon", It.a),
 				jt = re.a.span("ReplyAuthor", It.a),
 				Mt = re.a.div("ReplyWrapper", It.a);
-			var Nt = Object(d.b)(() => Object(l.c)({
+			var wt = Object(d.b)(() => Object(l.c)({
 					comment: V.b
 				}))(({
 					comment: e,
@@ -2080,8 +2080,8 @@
 					content: Object(me.a)(e),
 					rtJsonElementProps: Tt
 				}))) : null),
-				wt = s("./src/reddit/components/CommentsChat/Comment/SystemMessage/index.m.less"),
-				Lt = s.n(wt);
+				Nt = s("./src/reddit/components/CommentsChat/Comment/SystemMessage/index.m.less"),
+				Lt = s.n(Nt);
 			const St = Object(ie.b)(e => ({
 				renderingObjectInfo: e.comment || void 0
 			}));
@@ -2124,7 +2124,7 @@
 				Qt = re.a.wrapped(Bt.b, "ErrorText", zt.a),
 				Yt = re.a.wrapped(ce.a, "TopMeta", zt.a),
 				Zt = re.a.span("DeleteText", zt.a),
-				Xt = re.a.wrapped(Nt, "Reply", zt.a),
+				Xt = re.a.wrapped(wt, "Reply", zt.a),
 				$t = Object(Pt.u)(),
 				es = Object(d.b)(() => Object(l.c)({
 					associatedAward: (e, {
@@ -3568,70 +3568,75 @@
 		"./src/reddit/selectors/poll/index.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return a
-			})), s.d(t, "e", (function() {
 				return i
-			})), s.d(t, "g", (function() {
+			})), s.d(t, "e", (function() {
 				return c
-			})), s.d(t, "f", (function() {
+			})), s.d(t, "g", (function() {
 				return d
-			})), s.d(t, "d", (function() {
+			})), s.d(t, "f", (function() {
 				return l
-			})), s.d(t, "b", (function() {
+			})), s.d(t, "h", (function() {
 				return m
-			})), s.d(t, "c", (function() {
+			})), s.d(t, "d", (function() {
 				return u
+			})), s.d(t, "b", (function() {
+				return p
+			})), s.d(t, "c", (function() {
+				return h
 			}));
-			var n = s("./src/reddit/models/Comment/index.ts"),
-				o = s("./src/reddit/models/Prediction/index.ts"),
-				r = s("./src/reddit/selectors/commentSelector.ts");
-			const a = (e, {
+			s("./node_modules/core-js/modules/web.dom.iterable.js");
+			var n = s("./node_modules/reselect/es/index.js"),
+				o = s("./src/reddit/models/Comment/index.ts"),
+				r = s("./src/reddit/models/Prediction/index.ts"),
+				a = s("./src/reddit/selectors/commentSelector.ts");
+			const i = (e, {
 					postId: t
 				}) => e.posts.metaMap[t],
-				i = (e, {
-					postId: t
-				}) => {
-					const s = a(e, {
-						postId: t
-					});
-					if (s) return e.polls.models[s]
-				},
 				c = (e, {
 					postId: t
 				}) => {
 					const s = i(e, {
 						postId: t
 					});
-					return s && Object(o.c)(s) ? s : null
+					if (s) return e.polls.models[s]
 				},
 				d = (e, {
-					commentId: t
-				}) => {
-					const s = Object(r.b)(e, {
-						commentId: t
-					});
-					return s && s.commentType === n.b.Prediction && c(e, s) || null
-				},
-				l = (e, {
 					postId: t
 				}) => {
-					const s = a(e, {
+					const s = c(e, {
+						postId: t
+					});
+					return s && Object(r.c)(s) ? s : null
+				},
+				l = (e, {
+					commentId: t
+				}) => {
+					const s = Object(a.b)(e, {
+						commentId: t
+					});
+					return s && s.commentType === o.b.Prediction && d(e, s) || null
+				},
+				m = Object(n.a)(e => e.polls.models, (e, t) => t, (e, t) => Object.values(e).filter(e => Object(r.c)(e) && e.tournamentId === t)),
+				u = (e, {
+					postId: t
+				}) => {
+					const s = i(e, {
 						postId: t
 					});
 					if (s) return e.polls.rewards[s]
 				},
-				m = (e, {
+				p = (e, {
 					postId: t
 				}) => {
-					const s = a(e, {
+					const s = i(e, {
 						postId: t
 					});
 					if (s) return e.polls.results.byVotingPower[s]
 				},
-				u = (e, {
+				h = (e, {
 					postId: t
 				}) => {
-					const s = a(e, {
+					const s = i(e, {
 						postId: t
 					});
 					if (s) return e.polls.results.byVoters[s]
@@ -3639,4 +3644,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.e3db5582ef2f0ea94293.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.05d5a28cdbf7370e818e.js.map
