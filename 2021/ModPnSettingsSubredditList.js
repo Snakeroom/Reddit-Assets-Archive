@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModPnSettingsSubredditList.06e77ada6ed189f19808.js
-// Retrieved at 10/6/2021, 1:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModPnSettingsSubredditList.6006991843e61556d884.js
+// Retrieved at 10/6/2021, 3:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModPnSettingsSubredditList"], {
 		"./node_modules/lodash/times.js": function(e, t, n) {
@@ -107,4 +107,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModPnSettingsSubredditList.06e77ada6ed189f19808.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModPnSettingsSubredditList.6006991843e61556d884.js.map

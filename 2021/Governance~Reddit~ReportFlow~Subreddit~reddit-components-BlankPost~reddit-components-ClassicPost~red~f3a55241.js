@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241.cf6467d2c47757f44d78.js
-// Retrieved at 10/6/2021, 1:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241.93f253700c0a93258281.js
+// Retrieved at 10/6/2021, 3:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241"], {
 		"./src/reddit/actions/downToChat.ts": function(e, t, r) {
@@ -2011,7 +2011,7 @@
 					I = Object(g.q)(c, f.e.Post);
 				if (!l || !b || (S || I || O)) return;
 				const T = Object(m.a)(c);
-				(T === o.se.Post || T === o.se.Rules) && (Object(n.a)(Object(p.d)()(c)), await t(Object(i.h)(a.a.SUBREDDIT_WELCOME_MESSAGE)))
+				(T === o.re.Post || T === o.re.Rules) && (Object(n.a)(Object(p.d)()(c)), await t(Object(i.h)(a.a.SUBREDDIT_WELCOME_MESSAGE)))
 			}, E = e => async (t, r) => {
 				let s = r(),
 					n = Object(_.a)(s, e);
@@ -4536,52 +4536,52 @@
 			}));
 			var s = r("./src/reddit/constants/experiments.ts"),
 				n = r("./src/reddit/helpers/chooseVariant/index.ts");
-			const d = e => s.Td.Enabled === Object(n.c)(e, {
+			const d = e => s.Sd.Enabled === Object(n.c)(e, {
 					experimentEligibilitySelector: n.a,
-					experimentName: s.be
+					experimentName: s.ae
 				}),
-				i = e => s.Td.Enabled === Object(n.c)(e, {
+				i = e => s.Sd.Enabled === Object(n.c)(e, {
 					experimentEligibilitySelector: n.a,
-					experimentName: s.Ld
+					experimentName: s.Kd
 				}),
-				o = e => s.oe.Enabled === Object(n.c)(e, {
+				o = e => s.ne.Enabled === Object(n.c)(e, {
 					experimentEligibilitySelector: n.a,
-					experimentName: s.ie
+					experimentName: s.he
 				}),
 				a = (e, t, r) => {
 					const d = r(e, t);
-					return !(!d || !d.meter) && (d.meter.enabled && o(e) && s.Ie.Enabled === Object(n.c)(e, {
+					return !(!d || !d.meter) && (d.meter.enabled && o(e) && s.He.Enabled === Object(n.c)(e, {
 						experimentEligibilitySelector: n.a,
-						experimentName: s.He
+						experimentName: s.Ge
 					}))
 				},
 				c = e => Object(n.c)(e, {
 					experimentEligibilitySelector: n.a,
-					experimentName: s.ae
+					experimentName: s.Zd
 				}),
 				u = e => {
 					switch (e) {
-						case s.ge.Five:
+						case s.fe.Five:
 							return .05;
-						case s.ge.Ten:
+						case s.fe.Ten:
 							return .1;
-						case s.ge.Fifty:
+						case s.fe.Fifty:
 							return .5;
 						default:
 							return .01
 					}
 				},
-				l = e => s.Td.Enabled === Object(n.c)(e, {
+				l = e => s.Sd.Enabled === Object(n.c)(e, {
 					experimentEligibilitySelector: n.a,
-					experimentName: s.ce
+					experimentName: s.be
 				}),
-				b = e => s.Td.Enabled === Object(n.c)(e, {
+				b = e => s.Sd.Enabled === Object(n.c)(e, {
+					experimentEligibilitySelector: n.a,
+					experimentName: s.Xd
+				}),
+				p = e => s.Sd.Enabled === Object(n.c)(e, {
 					experimentEligibilitySelector: n.a,
 					experimentName: s.Yd
-				}),
-				p = e => s.Td.Enabled === Object(n.c)(e, {
-					experimentEligibilitySelector: n.a,
-					experimentName: s.Zd
 				})
 		},
 		"./src/reddit/selectors/experiments/subredditWelcomeMessage.ts": function(e, t, r) {
@@ -4595,7 +4595,7 @@
 				i = r("./src/reddit/selectors/experiments/index.ts"),
 				o = r("./src/reddit/selectors/experiments/utils.ts");
 			const a = Object(s.a)(e => Object(d.c)(e, {
-				experimentName: n.me,
+				experimentName: n.le,
 				experimentEligibilitySelector: i.e
 			}), o.a)
 		},
@@ -5144,4 +5144,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241.cf6467d2c47757f44d78.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241.93f253700c0a93258281.js.map

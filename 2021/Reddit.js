@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.96278266e13017e0fcab.js
-// Retrieved at 10/6/2021, 3:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.ff0e3936a5e2e0a879b8.js
+// Retrieved at 10/6/2021, 3:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit", "FrontpageSidebar"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -2968,7 +2968,7 @@
 			const i = () => async (e, t) => {
 				const n = t();
 				Object(r.d)(n, {
-					experimentName: o.ue
+					experimentName: o.te
 				})
 			};
 			t.default = () => async (e, t) => {
@@ -6546,9 +6546,9 @@
 				sr = n("./src/reddit/models/Search/index.ts"),
 				or = n("./src/reddit/selectors/experiments/trending.ts"),
 				rr = n("./src/reddit/helpers/chooseVariant/index.ts");
-			const ar = e => Object(Ct.H)(e) || Kt.Ae.Treatment1 === Object(rr.c)(e, {
+			const ar = e => Object(Ct.H)(e) || Kt.ze.Treatment1 === Object(rr.c)(e, {
 				experimentEligibilitySelector: rr.a,
-				experimentName: Kt.we
+				experimentName: Kt.ve
 			});
 			var ir, cr = n("./src/reddit/selectors/experiments/uiSimplification.ts"),
 				lr = n("./src/reddit/selectors/searchResults.ts"),
@@ -20386,13 +20386,13 @@
 				y = e => e.accountManagerModalData.redirectUrl,
 				O = Object(a.a)((e, t) => t.path, (e, t) => t.uiMode, v, d.a, p.a, g.a, u.b, e => Object(b.c)(e, {
 					experimentEligibilitySelector: e => !Object(h.e)(e),
-					experimentName: l.he
+					experimentName: l.ge
 				}), m.a, f.i, (e, t, n, a, d, u, m, p, b, h) => {
 					let f = `${r.a.accountManagerOrigin}${e}`;
 					if (f = Object(i.a)(f, {
 							experiment_d2x_2020ify_buttons: "enabled"
 						}), p && (f = Object(i.a)(f, {
-							[`experiment_${l.he}`]: p
+							[`experiment_${l.ge}`]: p
 						})), d && (f = Object(i.a)(f, {
 							experiment_d2x_onboarding: "enabled"
 						})), e === c.c.GoogleOneTap) return Object(i.a)(f, {
@@ -20600,7 +20600,7 @@
 					experimentEligibilitySelector: r.K,
 					experimentName: s.Cc
 				});
-				return !(!t || Object(s.Pe)(t))
+				return !(!t || Object(s.Oe)(t))
 			}
 		},
 		"./src/reddit/selectors/experiments/frontpageSignup.ts": function(e, t, n) {
@@ -20668,7 +20668,7 @@
 				a = n("./src/reddit/selectors/experiments/utils.ts");
 			const i = Object(s.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: o.ue,
+					experimentName: o.te,
 					expEventOverride: !1
 				}), e => e),
 				c = Object(s.a)(i, e => !!Object(a.a)(e)),
@@ -20690,7 +20690,7 @@
 					experimentName: o.tb,
 					experimentEligibilitySelector: a.e
 				}), i.a),
-				l = Object(s.a)(c, e => e === o.Md.Enabled),
+				l = Object(s.a)(c, e => e === o.Ld.Enabled),
 				d = Object(s.a)(e => Object(r.c)(e, {
 					experimentName: o.db,
 					experimentEligibilitySelector: a.e
@@ -20735,9 +20735,9 @@
 			var s = n("./src/reddit/constants/experiments.ts"),
 				o = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				r = n("./src/reddit/selectors/user.ts");
-			const a = e => Object(r.H)(e) || !(s.ze.Holdout === Object(o.c)(e, {
+			const a = e => Object(r.H)(e) || !(s.ye.Holdout === Object(o.c)(e, {
 				experimentEligibilitySelector: o.a,
-				experimentName: s.ve
+				experimentName: s.ue
 			}))
 		},
 		"./src/reddit/selectors/experiments/uiSimplification.ts": function(e, t, n) {
@@ -21021,4 +21021,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePo~5f1ac562", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250", "Governance~ModListing~Reddit~Subreddit", "Chat~Governance~Reddit", "Reddit~StandalonePostPage~reddit-components-MediumPost", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.96278266e13017e0fcab.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.ff0e3936a5e2e0a879b8.js.map

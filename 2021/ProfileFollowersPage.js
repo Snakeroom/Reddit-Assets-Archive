@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.7b706ace70f49d38751c.js
-// Retrieved at 10/6/2021, 1:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.e3799a1a4565b55c97ba.js
+// Retrieved at 10/6/2021, 3:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileFollowersPage", "ProfileFollowersAction"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -57,36 +57,35 @@
 		"./src/reddit/actions/pages/followers/index.ts": function(e, t, s) {
 			"use strict";
 			s.r(t), s.d(t, "profileFollowersPageLoaded", (function() {
-				return g
+				return f
 			})), s.d(t, "moreProfileFollowersLoaded", (function() {
-				return x
+				return v
 			})), s.d(t, "profileFollowersSearchLoaded", (function() {
-				return y
+				return g
 			})), s.d(t, "profileFollowersRequestPending", (function() {
-				return C
+				return x
 			})), s.d(t, "profileFollowersPageFailed", (function() {
-				return w
+				return y
 			})), s.d(t, "DEFAULT_VARIABLES", (function() {
-				return I
+				return C
 			})), s.d(t, "followersPageRequested", (function() {
-				return _
+				return w
 			})), s.d(t, "followersRequested", (function() {
-				return O
+				return I
 			})), s.d(t, "followUserToggled", (function() {
-				return E
+				return _
 			})), s.d(t, "toggleFollowUser", (function() {
-				return S
+				return O
 			}));
 			s("./node_modules/core-js/modules/web.dom.iterable.js");
 			var r = s("./node_modules/fbt/lib/FbtPublic.js"),
-				n = s("./node_modules/react-router-redux/es/index.js"),
-				i = s("./src/lib/constants/index.ts"),
-				o = s("./src/lib/makeActionCreator/index.ts"),
-				a = (s("./src/reddit/actions/pages/profileOverview/index.ts"), s("./src/reddit/actions/toaster.ts")),
-				d = s("./src/lib/makeGqlRequest/index.ts"),
-				l = s("./src/redditGQL/operations/ProfileFollowers.json");
-			var c = s("./src/reddit/endpoints/subreddit/subscriptions.ts");
-			var u = e => {
+				n = s("./src/lib/constants/index.ts"),
+				i = s("./src/lib/makeActionCreator/index.ts"),
+				o = (s("./src/reddit/actions/pages/profileOverview/index.ts"), s("./src/reddit/actions/toaster.ts")),
+				a = s("./src/lib/makeGqlRequest/index.ts"),
+				d = s("./src/redditGQL/operations/ProfileFollowers.json");
+			var l = s("./src/reddit/endpoints/subreddit/subscriptions.ts");
+			var c = e => {
 					var t, s;
 					if (!e.identity || !e.identity.followedByRedditorsInfo) return;
 					const r = {},
@@ -116,80 +115,73 @@
 							l.push(e), c[e] = u.node
 						} return r.followerUserIds = l, r.followers = c, r
 				},
-				m = s("./src/reddit/models/Toast/index.ts"),
-				p = s("./src/reddit/actions/pages/followers/constants.ts"),
-				h = s("./src/lib/initializeClient/installReducer.ts"),
-				b = s("./src/reddit/reducers/pages/followers/index.ts"),
-				f = s("./src/reddit/selectors/experiments/profileFollowerList.ts"),
-				v = s("./src/reddit/selectors/followers.ts");
-			Object(h.a)({
+				u = s("./src/reddit/models/Toast/index.ts"),
+				m = s("./src/reddit/actions/pages/followers/constants.ts"),
+				p = s("./src/lib/initializeClient/installReducer.ts"),
+				h = s("./src/reddit/reducers/pages/followers/index.ts"),
+				b = s("./src/reddit/selectors/followers.ts");
+			Object(p.a)({
 				pages: {
-					followers: b.a
+					followers: h.a
 				}
 			});
-			const g = Object(o.a)(p.b),
-				x = Object(o.a)(p.a),
-				y = Object(o.a)(p.e),
-				C = Object(o.a)(p.d),
-				w = Object(o.a)(p.c),
-				I = {
+			const f = Object(i.a)(m.b),
+				v = Object(i.a)(m.a),
+				g = Object(i.a)(m.e),
+				x = Object(i.a)(m.d),
+				y = Object(i.a)(m.c),
+				C = {
 					includeIdentity: !1,
 					first: null,
 					after: null,
 					searchQuery: null
 				},
-				_ = e => async (t, s, {
-					gqlContext: r
+				w = e => async (e, t, {
+					gqlContext: s
 				}) => {
-					var i;
-					if (!Object(f.a)(s())) {
-						const {
-							profileName: s
-						} = e.params;
-						return void t(Object(n.c)(`/user/${s}/`))
-					}
-					const o = [];
-					(null === (i = Object(v.a)(s())) || void 0 === i ? void 0 : i.length) || o.push(t(O(I))), await Promise.all(o)
-				}, O = e => async (t, s, {
+					var r;
+					const n = [];
+					(null === (r = Object(b.a)(t())) || void 0 === r ? void 0 : r.length) || n.push(e(I(C))), await Promise.all(n)
+				}, I = e => async (t, s, {
 					gqlContext: r
 				}) => {
 					const n = !s().user.account,
 						i = {
-							...I,
+							...C,
 							...e,
 							includeIdentity: n
 						};
-					t(C());
-					const o = await (async (e, t) => {
-						return await Object(d.a)(e, {
-							...l,
+					t(x());
+					const l = await (async (e, t) => {
+						return await Object(a.a)(e, {
+							...d,
 							variables: t
 						})
 					})(r(), i);
-					if (o.ok && o.body) {
+					if (l.ok && l.body) {
 						const {
 							data: s
-						} = o.body, r = u(s);
-						if (!r) return t(Object(a.d)()), void t(w());
-						(null == e ? void 0 : e.searchQuery) ? t(y(r)): (null == e ? void 0 : e.after) ? t(x(r)) : (null == e ? void 0 : e.after) || (null == e ? void 0 : e.searchQuery) || t(g(r))
+						} = l.body, r = c(s);
+						if (!r) return t(Object(o.d)()), void t(y());
+						(null == e ? void 0 : e.searchQuery) ? t(g(r)): (null == e ? void 0 : e.after) ? t(v(r)) : (null == e ? void 0 : e.after) || (null == e ? void 0 : e.searchQuery) || t(f(r))
 					}
-					o.ok || (t(Object(a.d)()), t(w()))
-				}, E = Object(o.a)(p.f), S = (e, t) => async (s, n, {
-					apiContext: o
+					l.ok || (t(Object(o.d)()), t(y()))
+				}, _ = Object(i.a)(m.f), O = (e, t) => async (s, i, {
+					apiContext: a
 				}) => {
-					var d, l;
-					const u = null === (l = null === (d = n().pages) || void 0 === d ? void 0 : d.followers) || void 0 === l ? void 0 : l.models[e];
-					if (!u) return;
-					s(E({
+					var d, c;
+					const m = null === (c = null === (d = i().pages) || void 0 === d ? void 0 : d.followers) || void 0 === c ? void 0 : c.models[e];
+					if (!m) return;
+					s(_({
 						userId: e,
 						isFollowed: t
 					}));
-					const p = u.name;
-					if ((await Object(c.c)(o(), {
-							subredditNames: [`${i.fc}${u.name}`],
+					const p = m.name;
+					if ((await Object(l.c)(a(), {
+							subredditNames: [`${n.fc}${m.name}`],
 							subscribe: t
 						})).ok) {
-						s(E({
+						s(_({
 							userId: e,
 							isFollowed: t
 						}));
@@ -199,17 +191,17 @@
 							i = r.fbt._("Sucсessfully unfollowed {userName}", [r.fbt._param("userName", p)], {
 								hk: "4F2yCK"
 							});
-						s(Object(a.f)({
+						s(Object(o.f)({
 							text: t ? n : i
 						}))
 					} else {
 						const n = r.fbt._("Something went wrong", null, {
 							hk: "3i6szH"
 						});
-						s(E({
+						s(_({
 							userId: e,
 							isFollowed: !t
-						})), s(Object(a.f)(Object(a.e)(n, m.b.Error)))
+						})), s(Object(o.f)(Object(o.e)(n, u.b.Error)))
 					}
 				}
 		},
@@ -461,12 +453,12 @@
 					error: q,
 					pending: Z
 				}),
-				J = s("./src/reddit/actions/profileConversations.ts");
-			const X = {};
-			var $ = (e = X, t) => {
+				X = s("./src/reddit/actions/profileConversations.ts");
+			const J = {};
+			var $ = (e = J, t) => {
 				switch (t.type) {
-					case J.c:
-					case J.b: {
+					case X.c:
+					case X.b: {
 						const {
 							extraCommentsId: s
 						} = t.payload;
@@ -475,7 +467,7 @@
 							[s]: null
 						}
 					}
-					case J.a: {
+					case X.a: {
 						const {
 							extraCommentsId: s,
 							error: r
@@ -492,7 +484,7 @@
 			const ee = {};
 			var te = (e = ee, t) => {
 					switch (t.type) {
-						case J.c: {
+						case X.c: {
 							const {
 								extraCommentsId: s
 							} = t.payload;
@@ -501,8 +493,8 @@
 								[s]: !0
 							}
 						}
-						case J.b:
-						case J.a: {
+						case X.b:
+						case X.a: {
 							const {
 								extraCommentsId: s
 							} = t.payload;
@@ -523,8 +515,8 @@
 			var ne = (e = re, t) => {
 					switch (t.type) {
 						case k.e:
-						case J.b:
-						case J.e:
+						case X.b:
+						case X.e:
 							return {
 								...e, ...t.payload.extraComments
 							};
@@ -581,7 +573,7 @@
 			var pe = (e = ce, t) => {
 				switch (t.type) {
 					case k.e:
-					case J.e: {
+					case X.e: {
 						const {
 							comments: s,
 							extraComments: r,
@@ -596,7 +588,7 @@
 							...a
 						}
 					}
-					case J.b: {
+					case X.b: {
 						const {
 							comments: s,
 							commentLists: r,
@@ -662,7 +654,7 @@
 			var be = (e = he, t) => {
 				switch (t.type) {
 					case k.e:
-					case J.e: {
+					case X.e: {
 						const {
 							commentLists: s,
 							postIds: r,
@@ -684,7 +676,7 @@
 			var ve = (e = fe, t) => {
 					switch (t.type) {
 						case k.e:
-						case J.e: {
+						case X.e: {
 							const {
 								postIds: s,
 								profileName: r
@@ -1096,8 +1088,8 @@
 				}
 			});
 			const Y = Object(o.a)(E.o),
-				J = Object(o.a)(E.n),
-				X = Object(o.a)(E.m),
+				X = Object(o.a)(E.n),
+				J = Object(o.a)(E.m),
 				$ = (e, t = {}) => async (s, r, {
 					apiContext: n
 				}) => {
@@ -1112,10 +1104,10 @@
 					}));
 					const l = i.subreddits.models[e].name,
 						c = await g(n(), l, t);
-					c.ok ? s(J({
+					c.ok ? s(X({
 						...c.body,
 						fetchedToken: o
-					})) : s(X({
+					})) : s(J({
 						subredditId: e,
 						fetchedToken: o
 					}))
@@ -1436,7 +1428,7 @@
 				Z = s.n(Q);
 			const {
 				fbt: Y
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), J = Object(o.c)({
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), X = Object(o.c)({
 				hasModMailPermissions: Object(u.b)(G.c.mail),
 				isUserBanned: (e, t) => !!Object(q.b)(e, {
 					subredditId: t.subredditId,
@@ -1446,7 +1438,7 @@
 					userName: t.username
 				})
 			});
-			class X extends n.a.Component {
+			class J extends n.a.Component {
 				componentDidMount() {
 					this.props.requestUserBanInfo()
 				}
@@ -1497,7 +1489,7 @@
 					})))
 				}
 			}
-			var $ = Object(i.b)(J, (e, {
+			var $ = Object(i.b)(X, (e, {
 					username: t,
 					subredditId: s,
 					contextId: r
@@ -1520,7 +1512,7 @@
 							contextId: r
 						})), e(Object(W.i)(K.a.MUTE_USER))
 					}
-				}))(X),
+				}))(J),
 				ee = s("./src/reddit/actions/userFlair/index.ts");
 			const {
 				fbt: te
@@ -3177,8 +3169,8 @@
 				return t
 			}
 			const Y = 10,
-				J = .9,
 				X = .9,
+				J = .9,
 				$ = 1.8,
 				ee = 5,
 				te = 1500,
@@ -3336,8 +3328,8 @@
 							if (clearTimeout(this.resetCanFocusTimer), this.cancelPopulateRenderableChildrenWhenIdle(), Object(E.b)() || !this.scrollContainer) return void(this.pendingScollHandlerRead = null);
 							this.updateScrollMetrics();
 							const e = this.getAveragePixelsPerMilliSecond(),
-								t = e < J,
-								s = e < X,
+								t = e < X,
+								s = e < J,
 								r = e < $;
 							if (this.scrollContainer && !this.loadMoreFired && this.props.onLoadMore) {
 								let e = !1;
@@ -6029,15 +6021,6 @@
 				userIds: p
 			})
 		},
-		"./src/reddit/selectors/experiments/profileFollowerList.ts": function(e, t, s) {
-			"use strict";
-			s.d(t, "a", (function() {
-				return i
-			}));
-			var r = s("./src/reddit/constants/experiments.ts"),
-				n = s("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const i = Object(n.a)(r.Jd)
-		},
 		"./src/reddit/selectors/followers.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
@@ -6871,4 +6854,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.7b706ace70f49d38751c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.e3799a1a4565b55c97ba.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.dfe9d67f668588aa56a4.js
-// Retrieved at 10/6/2021, 1:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.49b858ae438d8d4d3f9a.js
+// Retrieved at 10/6/2021, 3:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-NotificationUnit-Button"], {
 		"./src/reddit/actions/comment/authoring.ts": function(e, t, n) {
@@ -71,8 +71,8 @@
 				T = n("./src/reddit/helpers/r2/normalizeCommentFromR2/index.ts"),
 				k = n("./src/reddit/helpers/r2/normalizeR2APIErrors/index.ts"),
 				_ = n("./src/reddit/models/PostCreationForm/index.ts"),
-				P = n("./src/reddit/models/RichTextJson/addEmotesAsImagesParam.ts"),
-				S = n("./src/reddit/models/RichTextJson/addRTJParam.ts");
+				S = n("./src/reddit/models/RichTextJson/addEmotesAsImagesParam.ts"),
+				P = n("./src/reddit/models/RichTextJson/addRTJParam.ts");
 			const R = (e, t, n, o) => {
 					let r, s;
 					if (o === _.i.MARKDOWN) r = n.text, s = null;
@@ -108,7 +108,7 @@
 					}
 					return Object(h.a)(Object(C.a)(e, [g.a]), {
 						method: r.ib.POST,
-						endpoint: Object(I.a)(Object(P.a)(Object(S.a)(`${e.apiUrl}/api/comment.json`))),
+						endpoint: Object(I.a)(Object(S.a)(Object(P.a)(`${e.apiUrl}/api/comment.json`))),
 						data: c
 					}).then(e => e.ok ? e.body.json ? e.body.json.errors.length ? {
 						...e,
@@ -451,7 +451,7 @@
 								})
 							}
 							return Object(h.a)(Object(C.a)(e, [g.a]), {
-								endpoint: Object(I.a)(Object(S.a)(Object(P.a)(`${e.apiUrl}/api/editusertext`))),
+								endpoint: Object(I.a)(Object(P.a)(Object(S.a)(`${e.apiUrl}/api/editusertext`))),
 								method: r.ib.POST,
 								data: i
 							}).then(e => e.ok ? e.body.json ? e.body.json.errors.length ? {
@@ -488,11 +488,11 @@
 						draftKey: o,
 						error: u.error
 					}))
-				}, Pe = Object(s.a)(X.z), Se = Object(s.a)(X.y), Re = Object(s.a)(X.A), Ee = (e, t) => async (n, o, {
+				}, Se = Object(s.a)(X.z), Pe = Object(s.a)(X.y), Re = Object(s.a)(X.A), Ee = (e, t) => async (n, o, {
 					apiContext: s
 				}) => {
 					const c = o();
-					n(Pe({
+					n(Se({
 						id: e
 					})), F.b(e, c);
 					const i = await ((e, t) => Object(h.a)(Object(C.a)(e, [g.a]), {
@@ -515,7 +515,7 @@
 					i.ok ? n(Re({
 						id: e,
 						postId: t
-					})) : n(Se({
+					})) : n(Pe({
 						id: e,
 						error: i.error
 					}))
@@ -575,7 +575,7 @@
 		"./src/reddit/actions/comment/index.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "i", (function() {
-				return S
+				return P
 			})), n.d(t, "m", (function() {
 				return R
 			})), n.d(t, "e", (function() {
@@ -635,8 +635,8 @@
 				T = n("./src/reddit/selectors/moderatingComments.ts"),
 				k = n("./src/reddit/selectors/user.ts"),
 				_ = n("./src/reddit/actions/comment/constants.ts");
-			const P = {},
-				S = Object(c.a)(_.o),
+			const S = {},
+				P = Object(c.a)(_.o),
 				R = e => async (t, n, {
 					apiContext: o
 				}) => {
@@ -649,7 +649,7 @@
 					const s = n().features.comments.models[e];
 					if (!s) return;
 					const c = s.isSaved ? p.k : p.g;
-					if (t(S({
+					if (t(P({
 							[e]: {
 								isSaved: !s.isSaved
 							}
@@ -668,7 +668,7 @@
 							buttonText: o,
 							buttonAction: R(e)
 						}))
-					} else t(S({
+					} else t(P({
 						[e]: {
 							isSaved: s.isSaved
 						}
@@ -686,7 +686,7 @@
 						state: r,
 						commentId: e
 					}), w);
-					P[e] = c
+					S[e] = c
 				}, K = (e, t) => async (n, o) => {
 					const r = o(),
 						c = E(e);
@@ -694,7 +694,7 @@
 							commentId: e
 						}) && s.c.has(c)) {
 						const n = s.c.end(c);
-						!t && n < w && (clearTimeout(P[e]), delete P[e])
+						!t && n < w && (clearTimeout(S[e]), delete S[e])
 					}
 				}, A = Object(c.a)(_.x), D = Object(c.a)(_.w), L = Object(c.a)(_.v), M = (e, t) => async (n, o, {
 					apiContext: r
@@ -977,8 +977,8 @@
 						context: T,
 						deeplinkUrl: k,
 						isFullWidth: _,
-						isUnread: P,
-						isInboxCTAsAllEnabled: S,
+						isUnread: S,
+						isInboxCTAsAllEnabled: P,
 						isInboxCTAsReplyEnabled: R,
 						isInboxCTAsSeePostEnabled: E,
 						isNightMode: w,
@@ -995,7 +995,7 @@
 					switch (A) {
 						case O.a.LifecyclePostSuggestions:
 						case O.a.SubredditRecommendation: {
-							if (!E && !S) return null;
+							if (!E && !P) return null;
 							const e = e => {
 								D ? K({
 									position: f.c.SECOND
@@ -1007,7 +1007,7 @@
 								priority: l.b.Tertiary,
 								redditStyle: !0,
 								className: Object(i.a)(h.a.notificationButton, {
-									[h.a.isUnread]: P,
+									[h.a.isUnread]: S,
 									[h.a.isNightMode]: w
 								})
 							}, s.a.createElement(p.a, {
@@ -1019,7 +1019,7 @@
 						}
 						case O.a.PostReply:
 						case O.a.CommentReply: {
-							if (!R && !S) return null;
+							if (!R && !P) return null;
 							const e = e => {
 								if (M && L) {
 									const e = Object(d.a)(M, L, Object(b.c)(k)),
@@ -1038,7 +1038,7 @@
 								priority: l.b.Tertiary,
 								redditStyle: !0,
 								className: Object(i.a)(h.a.notificationButton, {
-									[h.a.isUnread]: P,
+									[h.a.isUnread]: S,
 									[h.a.isNightMode]: w
 								})
 							}, s.a.createElement(p.a, {
@@ -1065,7 +1065,7 @@
 								redditStyle: !0,
 								eventSource: u.a.awardNotification,
 								className: Object(i.a)(h.a.notificationButton, {
-									[h.a.isUnread]: P,
+									[h.a.isUnread]: S,
 									[h.a.isNightMode]: w
 								})
 							}, s.a.createElement(p.a, {
@@ -1274,7 +1274,7 @@
 								experimentName: s.E,
 								expEventOverride: t
 							});
-							return !!(Object(s.Pe)(n) ? void 0 : n)
+							return !!(Object(s.Oe)(n) ? void 0 : n)
 						})(n)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -1747,8 +1747,8 @@
 				},
 				k = n("./node_modules/lodash/mapValues.js"),
 				_ = n.n(k),
-				P = n("./src/reddit/helpers/commentList/index.ts"),
-				S = n("./src/reddit/models/Comment/index.ts");
+				S = n("./src/reddit/helpers/commentList/index.ts"),
+				P = n("./src/reddit/models/Comment/index.ts");
 			const R = {};
 
 			function E(e) {
@@ -1793,13 +1793,13 @@
 							}
 						}
 						if (d.head && d.tail) {
-							const e = Object(P.c)({
+							const e = Object(S.c)({
 									commentLink: d.head,
 									commentsDict: n,
 									moreCommentsDict: i,
 									continueThreadDict: r
 								}),
-								t = Object(P.c)({
+								t = Object(S.c)({
 									commentLink: d.tail,
 									commentsDict: n,
 									moreCommentsDict: i,
@@ -1846,8 +1846,8 @@
 						let i = null;
 						return r && (c[r] = {
 							...s[r],
-							prev: Object(S.i)(n.id)
-						}, i = Object(S.i)(r)), {
+							prev: Object(P.i)(n.id)
+						}, i = Object(P.i)(r)), {
 							...e,
 							[o]: {
 								...e[o],
@@ -1872,10 +1872,10 @@
 						const a = c[r].next;
 						return a && (i[a.id] = {
 							...c[a.id],
-							prev: Object(S.i)(n.id)
+							prev: Object(P.i)(n.id)
 						}, d = a), i[r] = {
 							...c[r],
-							next: Object(S.i)(n.id)
+							next: Object(P.i)(n.id)
 						}, {
 							...e,
 							[o]: {
@@ -1884,7 +1884,7 @@
 								[n.id]: {
 									depth: s,
 									next: d,
-									prev: Object(S.i)(r)
+									prev: Object(P.i)(r)
 								}
 							}
 						}
@@ -1993,9 +1993,9 @@
 			})), n.d(t, "h", (function() {
 				return _
 			})), n.d(t, "a", (function() {
-				return P
-			})), n.d(t, "b", (function() {
 				return S
+			})), n.d(t, "b", (function() {
+				return P
 			})), n.d(t, "q", (function() {
 				return R
 			})), n.d(t, "m", (function() {
@@ -2143,10 +2143,10 @@
 					}
 					return []
 				},
-				P = (e, {
+				S = (e, {
 					commentsPageKey: t
 				}) => e.features.comments.collapsed[t],
-				S = e => e.moreComments.models,
+				P = e => e.moreComments.models,
 				R = e => e.features.comments.models,
 				E = (e, {
 					commentId: t
@@ -2296,4 +2296,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.dfe9d67f668588aa56a4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.49b858ae438d8d4d3f9a.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.dd7bb752cbc518f033f7.js
-// Retrieved at 10/6/2021, 1:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.8de8696fb09e58601ed8.js
+// Retrieved at 10/6/2021, 3:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ProfileIdCard"], {
 		"./node_modules/lodash/compact.js": function(e, t) {
@@ -1009,16 +1009,15 @@
 				f = r("./src/reddit/helpers/trackers/followers.ts"),
 				b = r("./src/reddit/hooks/useTracking.ts"),
 				g = r("./src/reddit/icons/fonts/index.tsx"),
-				h = r("./src/reddit/selectors/experiments/profileFollowerList.ts"),
-				x = r("./src/reddit/selectors/profile.ts"),
-				v = r("./src/reddit/selectors/user.ts"),
-				I = r("./src/reddit/actions/tooltip.ts"),
-				_ = r("./src/reddit/components/InfoTextTooltip/index.tsx"),
-				O = r("./src/reddit/components/ProfileIdCard/Highlight.m.less"),
-				C = r.n(O);
+				h = r("./src/reddit/selectors/profile.ts"),
+				x = r("./src/reddit/selectors/user.ts"),
+				v = r("./src/reddit/actions/tooltip.ts"),
+				I = r("./src/reddit/components/InfoTextTooltip/index.tsx"),
+				_ = r("./src/reddit/components/ProfileIdCard/Highlight.m.less"),
+				O = r.n(_);
 
-			function P() {
-				return (P = Object.assign || function(e) {
+			function C() {
+				return (C = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var r = arguments[t];
 						for (var n in r) Object.prototype.hasOwnProperty.call(r, n) && (e[n] = r[n])
@@ -1026,11 +1025,11 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const E = c.a.div("Container", C.a),
-				k = c.a.div("Body", C.a),
-				j = c.a.h5("Title", C.a),
-				N = c.a.span("Label", C.a);
-			class w extends a.a.Component {
+			const P = c.a.div("Container", O.a),
+				E = c.a.div("Body", O.a),
+				k = c.a.h5("Title", O.a),
+				j = c.a.span("Label", O.a);
+			class N extends a.a.Component {
 				constructor() {
 					super(...arguments), this.toggleTooltip = () => {
 						const {
@@ -1053,26 +1052,26 @@
 						onMouseEnter: this.toggleTooltip,
 						onMouseLeave: this.toggleTooltip
 					} : {};
-					return a.a.createElement(E, {
+					return a.a.createElement(P, {
 						className: o
-					}, a.a.createElement(j, null, r), a.a.createElement(k, null, e, a.a.createElement(N, P({
+					}, a.a.createElement(k, null, r), a.a.createElement(E, null, e, a.a.createElement(j, C({
 						key: "label"
-					}, i), t)), s && n && a.a.createElement(_.c, {
+					}, i), t)), s && n && a.a.createElement(I.c, {
 						caretOnTop: !0,
 						tooltipId: s
 					}, n))
 				}
 			}
-			var y = Object(o.b)(null, e => ({
-					toggleTooltip: t => e(Object(I.h)({
+			var w = Object(o.b)(null, e => ({
+					toggleTooltip: t => e(Object(v.h)({
 						tooltipId: t
 					}))
-				}))(Object(u.b)(w)),
-				S = r("./src/reddit/components/ProfileIdCard/Highlights.m.less"),
-				U = r.n(S);
-			const F = Object(i.a)(x.j, (e, {
+				}))(Object(u.b)(N)),
+				y = r("./src/reddit/components/ProfileIdCard/Highlights.m.less"),
+				S = r.n(y);
+			const U = Object(i.a)(h.j, (e, {
 					profileName: t
-				}) => Object(v.tb)(e, t), (e, t) => ({
+				}) => Object(x.tb)(e, t), (e, t) => ({
 					karma: {
 						...m.a,
 						...null == t ? void 0 : t.karma,
@@ -1082,45 +1081,43 @@
 					profileCreated: t && (t.createdUtc || t.created) || 0,
 					subscribers: e && e.subscribers || 0
 				})),
-				T = c.a.div("Container", U.a);
+				F = c.a.div("Container", S.a);
 
-			function B(e, t) {
+			function T(e, t) {
 				return `profile--id-card--highlight-tooltip-${e?"-overlay":""}-${t}`
 			}
-			const L = e => {
-				const t = Object(o.e)(h.a),
-					r = Object(b.a)(),
-					i = Object(s.useCallback)(() => {
-						r(Object(f.b)())
-					}, [r]),
-					c = e.isOwnProfile && t,
-					l = c ? a.a.createElement(a.a.Fragment, null, Object(d.b)(e.subscribers, {
+			const B = e => {
+				const t = Object(b.a)(),
+					r = Object(s.useCallback)(() => {
+						t(Object(f.b)())
+					}, [t]),
+					o = e.isOwnProfile ? a.a.createElement(a.a.Fragment, null, Object(d.b)(e.subscribers, {
 						displayFull: !0
 					}), a.a.createElement(g.a, {
 						name: "right",
-						className: U.a.iconRight
+						className: S.a.iconRight
 					})) : Object(d.b)(e.subscribers, {
 						displayFull: !0
 					}),
-					u = a.a.createElement(y, {
+					i = a.a.createElement(w, {
 						className: e.highlightClassName,
 						icon: a.a.createElement(g.a, {
 							name: "user",
 							isFilled: !0,
-							className: U.a.icon,
+							className: S.a.icon,
 							key: "followers"
 						}),
 						title: n.fbt._("Followers", null, {
 							hk: "4ucimK"
 						}),
-						label: l
+						label: o
 					});
-				return c ? a.a.createElement("a", {
+				return e.isOwnProfile ? a.a.createElement("a", {
 					href: `/user/${e.profileName}/followers`,
-					onClick: i
-				}, u) : u
+					onClick: r
+				}, i) : i
 			};
-			t.a = Object(o.b)(F)(Object(u.b)(e => {
+			t.a = Object(o.b)(U)(Object(u.b)(e => {
 				const {
 					karma: t,
 					enableFollowers: r,
@@ -1132,15 +1129,15 @@
 				} = e, p = {
 					...m.a,
 					...t
-				}, f = B(o, "karma"), b = B(o, "cakeday"), h = `${n.fbt._({"*":"{number} Post Karma",_1:"1 Post Karma"},[n.fbt._plural(p.fromPosts,"number",Object(d.b)(p.fromPosts,{displayFull:!0}))],{hk:"husfU"})}\n${n.fbt._({"*":"{number} Comment Karma",_1:"1 Comment Karma"},[n.fbt._plural(p.fromComments,"number",Object(d.b)(p.fromComments,{displayFull:!0}))],{hk:"26iPTL"})}\n${n.fbt._({"*":"{number} Awardee Karma",_1:"1 Awardee Karma"},[n.fbt._plural(p.fromAwardsReceived,"number",Object(d.b)(p.fromAwardsReceived,{displayFull:!0}))],{hk:"2Ww5MR"})}\n${n.fbt._({"*":"{number} Awarder Karma",_1:"1 Awarder Karma"},[n.fbt._plural(p.fromAwardsGiven,"number",Object(d.b)(p.fromAwardsGiven,{displayFull:!0}))],{hk:"2F1chz"})}`;
-				return a.a.createElement(T, {
+				}, f = T(o, "karma"), b = T(o, "cakeday"), h = `${n.fbt._({"*":"{number} Post Karma",_1:"1 Post Karma"},[n.fbt._plural(p.fromPosts,"number",Object(d.b)(p.fromPosts,{displayFull:!0}))],{hk:"husfU"})}\n${n.fbt._({"*":"{number} Comment Karma",_1:"1 Comment Karma"},[n.fbt._plural(p.fromComments,"number",Object(d.b)(p.fromComments,{displayFull:!0}))],{hk:"26iPTL"})}\n${n.fbt._({"*":"{number} Awardee Karma",_1:"1 Awardee Karma"},[n.fbt._plural(p.fromAwardsReceived,"number",Object(d.b)(p.fromAwardsReceived,{displayFull:!0}))],{hk:"2Ww5MR"})}\n${n.fbt._({"*":"{number} Awarder Karma",_1:"1 Awarder Karma"},[n.fbt._plural(p.fromAwardsGiven,"number",Object(d.b)(p.fromAwardsGiven,{displayFull:!0}))],{hk:"2F1chz"})}`;
+				return a.a.createElement(F, {
 					className: c
-				}, a.a.createElement(y, {
+				}, a.a.createElement(w, {
 					className: u,
 					icon: a.a.createElement(g.a, {
 						name: "karma",
 						isFilled: !0,
-						className: U.a.icon,
+						className: S.a.icon,
 						key: "karma"
 					}),
 					label: Object(d.b)(p.total, {
@@ -1151,12 +1148,12 @@
 					}),
 					tooltipId: f,
 					tooltip: h
-				}), a.a.createElement(y, {
+				}), a.a.createElement(w, {
 					className: u,
 					icon: a.a.createElement(g.a, {
 						name: "cake",
 						isFilled: !0,
-						className: U.a.icon,
+						className: S.a.icon,
 						key: "cakeDay"
 					}),
 					label: a.a.createElement(l.a, {
@@ -1170,7 +1167,7 @@
 					tooltip: a.a.createElement(l.d, {
 						seconds: s
 					})
-				}), r && i > 0 && a.a.createElement(L, {
+				}), r && i > 0 && a.a.createElement(B, {
 					highlightClassName: u,
 					isOwnProfile: !!e.isOwnProfile,
 					profileName: e.profileName,
@@ -3184,15 +3181,6 @@
 				experimentName: n.r
 			}) === n.u.Enabled
 		},
-		"./src/reddit/selectors/experiments/profileFollowerList.ts": function(e, t, r) {
-			"use strict";
-			r.d(t, "a", (function() {
-				return a
-			}));
-			var n = r("./src/reddit/constants/experiments.ts"),
-				s = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const a = Object(s.a)(n.Jd)
-		},
 		"./src/reddit/selectors/premium.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "c", (function() {
@@ -3217,4 +3205,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.dd7bb752cbc518f033f7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.8de8696fb09e58601ed8.js.map
