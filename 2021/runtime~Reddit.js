@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.c795e0e90033e0d19136.js
-// Retrieved at 10/6/2021, 7:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.17885d80e830df6edb9b.js
+// Retrieved at 10/6/2021, 7:40:06 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var n, a, i = o[0], s = o[1], c = o[2], l = 0, P = []; l < i.length; l++) a = i[l], Object.prototype.hasOwnProperty.call(d, a) && d[a] && P.push(d[a][0]), d[a] = 0;
@@ -1394,7 +1394,7 @@
 						"translations/es_MX-json": "2e18d041b6d0b0c69ba3",
 						"translations/fr_FR-json": "357ac659c424ac4068c9",
 						"translations/it_IT-json": "dc1a76705214ad035116",
-						"translations/pseudo_ext-json": "a0e337329d13875840c6",
+						"translations/pseudo_ext-json": "ae0ff9e25ce23c0e741a",
 						"translations/pseudo_long-json": "daf346f4e054f4ad5521",
 						"translations/pseudo_short-json": "131c0c2b3e6c9a2f5fe4",
 						"translations/pt_BR-json": "2cfc1f1f72f2cb9c47cd",
@@ -1410,8 +1410,8 @@
 						RedesignChat: "44fe879ff3d0eaa8050c",
 						"vendors~CollectionCommentsPage~CommentsPage": "206ccecf4ac614ab5c95",
 						"CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki": "e6238ba51cfcbce86ce1",
-						CollectionCommentsPage: "ea63adbc5d7df25daa33",
-						CommentsPage: "1983a157d66b63c40b1b",
+						CollectionCommentsPage: "acd8c066b32c9f66ccb3",
+						CommentsPage: "43cd3619e9d4811d8383",
 						"vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PostCreation~Settings~~f8934a85": "fbf6b3871488094312c2",
 						CryptoHarbergerTaxManageModal: "ebfb9d2460cca14b2c47",
 						HarbergerTaxManageModal: "cbb8b6f5457a38d0f985",
@@ -1437,7 +1437,7 @@
 						Subreddit: "4baf2c008451f00f1f81",
 						"vendors~LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit": "b1b748750a6395dcc18f",
 						"LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit": "b5faa2421a62dd1ba5d7",
-						PublicAccessNetwork: "f24ddad05dad8bccdef1",
+						PublicAccessNetwork: "7216d034b90119fe9cd2",
 						"vendors~RealtimeGQLSubscriptionAsync": "3144a6231ee41b041496",
 						RealtimeGQLSubscriptionAsync: "ab149f1a467a4c0c8755",
 						"vendors~SubredditWiki": "59f99c55936d8d8767dd",
@@ -1653,4 +1653,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.c795e0e90033e0d19136.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.17885d80e830df6edb9b.js.map

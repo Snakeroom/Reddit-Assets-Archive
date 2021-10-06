@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.f24ddad05dad8bccdef1.js
-// Retrieved at 10/6/2021, 4:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.7216d034b90119fe9cd2.js
+// Retrieved at 10/6/2021, 7:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -7869,35 +7869,41 @@
 		"./src/reddit/selectors/creatorStats.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "b", (function() {
-				return i
-			})), s.d(t, "c", (function() {
 				return d
-			})), s.d(t, "a", (function() {
+			})), s.d(t, "c", (function() {
 				return c
+			})), s.d(t, "a", (function() {
+				return l
 			}));
 			var o = s("./src/lib/initializeClient/installReducer.ts"),
 				n = s("./src/reddit/reducers/features/creatorStats/index.ts"),
 				r = s("./src/reddit/selectors/moderatorPermissions.ts"),
-				a = s("./src/reddit/selectors/user.ts");
+				a = s("./src/reddit/selectors/posts.ts"),
+				i = s("./src/reddit/selectors/user.ts");
 			Object(o.a)({
 				features: {
 					creatorStats: n.a
 				}
 			});
-			const i = (e, t) => {
+			const d = (e, t) => {
 					var s, o;
 					return null === (o = null === (s = e.features) || void 0 === s ? void 0 : s.creatorStats) || void 0 === o ? void 0 : o.postStats[t]
 				},
-				d = (e, t) => {
+				c = (e, t) => {
 					var s, o, n;
 					const r = null === (n = null === (o = null === (s = e.features) || void 0 === s ? void 0 : s.creatorStats) || void 0 === o ? void 0 : o.subredditKarma[t]) || void 0 === n ? void 0 : n.karma;
 					if (r) return r.fromComments + r.fromPosts
 				},
-				c = (e, t) => Object(a.qb)(e, {
-					postId: t
-				}) || !!Object(r.l)(e, {
-					postId: t
-				})
+				l = (e, t) => {
+					const s = Object(a.H)(e, {
+						postId: t
+					});
+					return !(!s || s.isSponsored) && (Object(i.qb)(e, {
+						postId: t
+					}) || !!Object(r.l)(e, {
+						postId: t
+					}))
+				}
 		},
 		"./src/reddit/selectors/experiments/creatorStats.ts": function(e, t, s) {
 			"use strict";
@@ -7967,4 +7973,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.f24ddad05dad8bccdef1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.7216d034b90119fe9cd2.js.map
