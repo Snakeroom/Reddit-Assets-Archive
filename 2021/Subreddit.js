@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.7b2142d89e6587a76b18.js
-// Retrieved at 10/6/2021, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.5a4ee32ceabc36711c33.js
+// Retrieved at 10/6/2021, 2:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~ModListing", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -3623,17 +3623,20 @@
 					redditor: n,
 					redditorInfo: o,
 					score: a
-				}) => n || o ? r.a.createElement("div", {
-					key: `prediction-leaderboard-${o.id}`,
-					className: c.a.topPredictor
-				}, r.a.createElement(i.a, {
-					isCurrentUser: (null == t ? void 0 : t.redditor.name) === o.displayName,
-					rank: e,
-					redditor: n,
-					redditorInfo: o,
-					score: a,
-					tournamentId: s
-				})) : null) : d._("No top predictors", null, {
+				}) => {
+					var d;
+					return n || o ? r.a.createElement("div", {
+						key: `prediction-leaderboard-${o.id}`,
+						className: c.a.topPredictor
+					}, r.a.createElement(i.a, {
+						isCurrentUser: (null === (d = null == t ? void 0 : t.redditor) || void 0 === d ? void 0 : d.name) === o.displayName,
+						rank: e,
+						redditor: n,
+						redditorInfo: o,
+						score: a,
+						tournamentId: s
+					})) : null
+				}) : d._("No top predictors", null, {
 					hk: "1nIqZI"
 				}))
 			}
@@ -4068,24 +4071,24 @@
 				redditorInfo: t,
 				rank: n
 			}) => {
-				var s, o, i;
+				var s, o, i, a;
 				return r.a.createElement(g.a, {
-					key: e.id,
+					key: t.id,
 					className: v.a.user,
-					to: `/user/${e.name}`,
+					to: `/user/${null==e?void 0:e.name}`,
 					disabled: t.displayName === h.E || t.displayName === h.Ib
 				}, r.a.createElement("div", {
 					className: v.a.userAvatar
 				}, r.a.createElement(x.a, {
 					className: v.a.icon,
-					iconUrl: null === (s = e.icon) || void 0 === s ? void 0 : s.url,
-					isNSFW: Boolean(null === (o = e.profile) || void 0 === o ? void 0 : o.isNsfw),
-					userName: null !== (i = e.name) && void 0 !== i ? i : ""
+					iconUrl: null === (s = null == e ? void 0 : e.icon) || void 0 === s ? void 0 : s.url,
+					isNSFW: Boolean(null === (o = null == e ? void 0 : e.profile) || void 0 === o ? void 0 : o.isNsfw),
+					userName: null !== (i = null == e ? void 0 : e.name) && void 0 !== i ? i : ""
 				}), r.a.createElement(f.a, {
 					place: n
 				})), r.a.createElement("div", {
 					className: v.a.userName
-				}, e.name))
+				}, null !== (a = null == e ? void 0 : e.name) && void 0 !== a ? a : t.displayName))
 			})));
 			var O = n("./src/reddit/models/Prediction/Tournament/index.ts"),
 				C = n("./src/reddit/selectors/features/predictions/leaderboards/index.ts"),
@@ -17058,4 +17061,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.7b2142d89e6587a76b18.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.5a4ee32ceabc36711c33.js.map
