@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.eb33f875452eb025a9e8.js
-// Retrieved at 10/5/2021, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.1951b370bc30d032b3b6.js
+// Retrieved at 10/5/2021, 8:30:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -22027,7 +22027,7 @@
 									hk: "11S6dN"
 								}),
 								onClick: this.onClickScheduledPosts,
-								path: Object(X.e)(e.subreddit.displayText),
+								path: Object(X.e)(e.subreddit.url),
 								isNew: !0
 							}), r.a.createElement(ne.b, {
 								isActive: e.pageName === b.bc.EventPostContent,
@@ -22035,7 +22035,7 @@
 									hk: "3D98hc"
 								}),
 								onClick: this.onClickEventPosts,
-								path: Object(X.b)(e.subreddit.displayText),
+								path: Object(X.b)(e.subreddit.url),
 								isBeta: !0
 							})), e.isTournamentsEnabled && r.a.createElement(ne.b, {
 								isActive: e.pageName === b.bc.Predictions,
@@ -22043,7 +22043,7 @@
 									hk: "Serjr"
 								}),
 								onClick: this.onClickPredictions,
-								path: Object(X.d)(e.subreddit.displayText),
+								path: Object(X.d)(e.subreddit.url),
 								isNew: !0
 							})), (e.moderatorPermissions.config || e.moderatorPermissions.wiki) && r.a.createElement("div", {
 								className: ee.a.navSection
@@ -22506,4 +22506,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.eb33f875452eb025a9e8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.1951b370bc30d032b3b6.js.map

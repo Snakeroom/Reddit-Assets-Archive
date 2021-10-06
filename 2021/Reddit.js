@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.b9d556f922cc3e41b857.js
-// Retrieved at 10/5/2021, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.246ccf63cf82ed380016.js
+// Retrieved at 10/5/2021, 8:30:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit", "FrontpageSidebar"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -16573,7 +16573,9 @@
 			var s = n("./src/reddit/constants/wiki.ts");
 			t.a = (e, t = !1) => {
 				let n = "/wiki";
-				return e.subredditName && (n = t ? `/r/${e.subredditName}/about/wiki` : `/r/${e.subredditName}/wiki`, e.wikiSubRoute && (n += `/${e.wikiSubRoute}`)), e.wikiPageName ? n += `/${e.wikiPageName.toLowerCase()}` : e.wikiSubRoute || (n += `/${s.i}`), n
+				const o = e.countryCode ? `/${e.countryCode}` : "",
+					r = e.languageCode ? `/${e.languageCode}` : "";
+				return e.subredditName && (n = t ? `${o}${r}/r/${e.subredditName}/about/wiki` : `${o}${r}/r/${e.subredditName}/wiki`, e.wikiSubRoute && (n += `/${e.wikiSubRoute}`)), e.wikiPageName ? n += `/${e.wikiPageName.toLowerCase()}` : e.wikiSubRoute || (n += `/${s.i}`), n
 			}
 		},
 		"./src/reddit/hooks/useDesktopNotificationsPromptSeen.ts": function(e, t, n) {
@@ -19477,27 +19479,28 @@
 		"./src/reddit/routes/moderationPages/index.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "e", (function() {
-				return m
-			})), n.d(t, "b", (function() {
 				return p
-			})), n.d(t, "d", (function() {
+			})), n.d(t, "b", (function() {
 				return b
+			})), n.d(t, "d", (function() {
+				return h
 			})), n.d(t, "c", (function() {
-				return v
+				return y
 			}));
 			var s = n("./node_modules/core-js/modules/web.dom.iterable.js"),
 				o = n.n(s),
 				r = n("./node_modules/@loadable/component/dist/loadable.esm.js"),
-				a = n("./node_modules/react-router/esm/react-router.js"),
-				i = n("./src/lib/constants/index.ts"),
-				c = n("./src/lib/loadableAction/index.ts");
-			const l = Object.keys(i.bc).map(e => i.bc[e]).join("|"),
-				d = [i.bc.Awards],
-				u = d.join("|"),
-				m = e => `/${e}/about/scheduledposts`,
-				p = e => `/${e}/about/eventposts`,
-				b = e => `/${e}/about/predictions`,
-				h = Object(r.a)({
+				a = n("./src/lib/constants/index.ts"),
+				i = n("./src/lib/countrySites/index.ts"),
+				c = n("./src/lib/loadableAction/index.ts"),
+				l = n("./node_modules/react-router/esm/react-router.js");
+			const d = Object.keys(a.bc).map(e => a.bc[e]).join("|"),
+				u = [a.bc.Awards],
+				m = u.join("|"),
+				p = e => `${e}about/scheduledposts`,
+				b = e => `${e}about/eventposts`,
+				h = e => `${e}about/predictions`,
+				f = Object(r.a)({
 					resolved: {},
 					chunkName: () => "ModerationPages",
 					isReady(e) {
@@ -19517,23 +19520,28 @@
 						return "./src/reddit/pages/ModHub/index.tsx"
 					}
 				}),
-				f = ["/r/:subredditName/about/:pageName(wiki)/:wikiSubRoute(revisions|wikibanned|wikicontributors)", "/r/:subredditName/about/:pageName(wiki)/:wikiSubRoute(edit|create|settings|revisions)/:wikiPageName+", "/r/:subredditName/about/:pageName(wiki)/:wikiPageName*"],
-				g = ["/r/:subredditName/about", `/r/:subredditName/about/:pageName(${l})`, `/user/:profileName/about/:pageName(${u})`, ...f],
-				v = e => !!Object(a.h)(e, {
+				g = ["/r/:subredditName/about/:pageName(wiki)/:wikiSubRoute(revisions|wikibanned|wikicontributors)", "/r/:subredditName/about/:pageName(wiki)/:wikiSubRoute(edit|create|settings|revisions)/:wikiPageName+", "/r/:subredditName/about/:pageName(wiki)/:wikiPageName*"];
+			let v = ["/r/:subredditName/about", `/r/:subredditName/about/:pageName(${d})`, `/user/:profileName/about/:pageName(${m})`, ...g];
+			v = Object(i.b)(v);
+			const y = e => !!Object(l.h)(e, {
 					path: "/r/:subredditName/about"
+				}) || !!Object(l.h)(e, {
+					path: "/:countryCode([a-z]{2})/r/:subredditName/about"
+				}) || !!Object(l.h)(e, {
+					path: "/:countryCode([a-z]{2})/:languageCode([a-z]{2})/r/:subredditName/about"
 				}),
-				y = {
+				O = {
 					action: Object(c.a)(() => Promise.all([n.e("vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PostCreation~Settings~~f8934a85"), n.e("vendors~ModerationPages"), n.e("CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~MembershipPaywa~c24a8af4"), n.e("ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8"), n.e("CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab"), n.e("CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48"), n.e("CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255"), n.e("ModQueue~ModQueuePages~ModerationPages"), n.e("ModerationPages~SubredditWiki"), n.e("ModerationPages")]).then(n.bind(null, "./src/reddit/actions/pages/moderationPages/index.ts")).then(e => e.moderationPageRequested)),
-					chunk: i.r.MODERATION_PAGES,
-					component: h,
+					chunk: a.r.MODERATION_PAGES,
+					component: f,
 					exact: !0,
 					meta: {
-						name: i.Kb.MODERATION_PAGES
+						name: a.Kb.MODERATION_PAGES
 					},
-					path: g,
-					prefetches: [i.r.SUBREDDIT]
+					path: v,
+					prefetches: [a.r.SUBREDDIT]
 				};
-			t.a = y
+			t.a = O
 		},
 		"./src/reddit/routes/multireddit/index.ts": function(e, t, n) {
 			"use strict";
@@ -21012,4 +21020,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePo~5f1ac562", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250", "Governance~ModListing~Reddit~Subreddit", "Chat~Governance~Reddit", "Reddit~StandalonePostPage~reddit-components-MediumPost", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.b9d556f922cc3e41b857.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.246ccf63cf82ed380016.js.map
