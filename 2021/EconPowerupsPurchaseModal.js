@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.319792e0bc282ba0cc4b.js
-// Retrieved at 10/5/2021, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.fe6bd23995d6bdd13d01.js
+// Retrieved at 10/6/2021, 1:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsPurchaseModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, n) {
@@ -880,7 +880,7 @@
 				o = n("./src/reddit/icons/svgs/PowerupTier2/index.tsx"),
 				c = n("./src/reddit/icons/svgs/PowerupTier3/index.tsx");
 			const i = 2,
-				l = 5;
+				l = 3;
 
 			function d(e) {
 				return e >= l ? c.a : e >= i ? o.a : a.a
@@ -1086,4 +1086,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.319792e0bc282ba0cc4b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.fe6bd23995d6bdd13d01.js.map
