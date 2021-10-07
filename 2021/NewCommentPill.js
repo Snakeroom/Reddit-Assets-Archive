@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NewCommentPill.d00a0d14fba5817c03b4.js
-// Retrieved at 10/5/2021, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NewCommentPill.256a6527831a2ebd9a3b.js
+// Retrieved at 10/7/2021, 5:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NewCommentPill"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, s) {
@@ -103,24 +103,24 @@
 						post: O
 					} = Object(f.a)() || {},
 					C = Object(o.useRef)(null),
-					[y, N] = Object(o.useReducer)(x, 0),
+					[N, y] = Object(o.useReducer)(x, 0),
 					w = Object(a.e)(h.a),
-					[B, A] = Object(o.useState)(!1),
-					[P, T] = Object(o.useState)(!1);
+					[A, B] = Object(o.useState)(!1),
+					[E, P] = Object(o.useState)(!0);
 				Object(o.useEffect)(() => {
 					C.current = m || null
 				}, [m]);
-				const E = Object(o.useCallback)(([e]) => {
-					m && e.boundingClientRect.top < u.f && (T(!1), A(!1))
+				const T = Object(o.useCallback)(([e]) => {
+					m && e.boundingClientRect.top < u.f && (P(!1), B(!1))
 				}, [m]);
-				Object(_.a)(C, E), Object(o.useEffect)(() => {
-					if (!B || P) return;
+				Object(_.a)(C, T), Object(o.useEffect)(() => {
+					if (!A || E) return;
 					const e = () => {
-							A(!1)
+							B(!1)
 						},
 						t = s ? document.getElementById(p.d) : document;
 					return null == t || t.addEventListener("scroll", e), () => null == t ? void 0 : t.removeEventListener("scroll", e)
-				}, [P, s, B]);
+				}, [E, s, A]);
 				const S = Object(o.useMemo)(() => ({
 					input: {
 						channel: {
@@ -131,18 +131,20 @@
 					}
 				}), [t]);
 				Object(o.useEffect)(() => {
-					B && O ? (j.current && clearTimeout(j.current), e(g(b.c.VIEW, O))) : j.current = setTimeout(() => N({
+					N && B(!0)
+				}, [N]), Object(o.useEffect)(() => {
+					A && O ? (j.current && clearTimeout(j.current), e(g(b.c.VIEW, O))) : j.current = setTimeout(() => y({
 						type: "reset"
 					}), 1e3)
-				}, [B, e, O]);
+				}, [A, e, O]);
 				const U = Object(o.useCallback)(e => {
 					const {
 						topLevelCommentCountChange: t
 					} = e.subscribe.data;
-					t && (N({
+					t && y({
 						type: "add",
 						delta: t
-					}), A(!0))
+					})
 				}, []);
 				return w ? r.a.createElement(r.a.Fragment, null, r.a.createElement(c.a, {
 					variables: S,
@@ -151,14 +153,14 @@
 				}), r.a.createElement("div", {
 					className: Object(v.a)(I.a.wrapper, {
 						[I.a.isOverlayWrapper]: s,
-						[I.a.wrapperVisible]: B
+						[I.a.wrapperVisible]: A
 					})
 				}, r.a.createElement(l.a, {
 					className: I.a.pillContainer
 				}, r.a.createElement(d.a, {
 					className: I.a.pillButton,
 					onClick: () => {
-						O && (e(g(b.c.CLICK, O)), A(!1), window.location.search = "sort=new")
+						O && (e(g(b.c.CLICK, O)), B(!1), window.location.search = "sort=new")
 					},
 					variant: d.b.BUTTON
 				}, r.a.createElement(i.a, {
@@ -169,8 +171,10 @@
 					memberIconClassName: I.a.memberIcon
 				}), r.a.createElement("span", {
 					className: I.a.newCommentsText
-				}, n.fbt._("{number of new comments} new comment{is comment plural}", [n.fbt._param("number of new comments", y.toString()), n.fbt._param("is comment plural", y > 1 ? "s" : " ")], {
-					hk: "UW02r"
+				}, N > 1 ? n.fbt._("{number of new comments} new comments", [n.fbt._param("number of new comments", N.toString())], {
+					hk: "2jSNSA"
+				}) : n.fbt._("1 new comment", null, {
+					hk: "4nXICl"
 				})))))) : null
 			})
 		},
@@ -366,4 +370,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NewCommentPill.d00a0d14fba5817c03b4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NewCommentPill.256a6527831a2ebd9a3b.js.map
