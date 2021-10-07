@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.3af5ab5dd27b242d8049.js
-// Retrieved at 10/7/2021, 4:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.8d30e990b325901e4a57.js
+// Retrieved at 10/7/2021, 6:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~Subreddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, r) {
@@ -2010,7 +2010,7 @@
 					onceInViewport: S
 				}), (k || j) && K && i.a.createElement(l.a, {
 					variables: F,
-					onData: j ? v : H,
+					onData: j && !k ? v : H,
 					queryKey: "isUserOnline"
 				}))
 			})
@@ -4792,7 +4792,7 @@
 				y = e => {
 					return e.creations.formData.submissionType === n.Tb.LINK_ONLY && e.creations.formData.body.link || ""
 				},
-				j = e => !f(e) && (!g(e) || g(e) && I(e)) && (e => {
+				j = e => !f(e) && u(e) && (!g(e) || g(e) && I(e)) && (e => {
 					const t = e.creations.formData.title,
 						r = y(e),
 						n = v(e);
@@ -4840,4 +4840,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.3af5ab5dd27b242d8049.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.8d30e990b325901e4a57.js.map

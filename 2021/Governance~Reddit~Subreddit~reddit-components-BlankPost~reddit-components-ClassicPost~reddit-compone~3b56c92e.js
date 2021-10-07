@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.970be367d800cc5491ca.js
-// Retrieved at 10/7/2021, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.0a6deaae90c783d8ee53.js
+// Retrieved at 10/7/2021, 6:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e"], {
 		"./src/lib/addAllowQuarantinedParam/index.ts": function(e, t, s) {
@@ -1308,8 +1308,8 @@
 					const s = t(),
 						r = Object(j.j)(s),
 						n = Object(j.e)(s);
-					!r && n && (Object(j.f)(s) || Object(j.g)(s) ? e(ie()) : Object(j.i)(s) && !Object(j.c)(s) && e(oe()))
-				}, ne = ["askreddit", "teenagers"], ie = () => async (e, t, {
+					!r && n && (Object(j.f)(s) || Object(j.g)(s) ? e(oe()) : Object(j.i)(s) && !Object(j.c)(s) && e(de()))
+				}, ne = ["torrents", "IsolatedVocals"], ie = ["askreddit", "teenagers"], oe = () => async (e, t, {
 					apiContext: s,
 					gqlContext: r
 				}) => {
@@ -1332,17 +1332,17 @@
 					const _ = {},
 						E = {},
 						h = [];
-					if (!a.body || !a.ok) return e(ee()), void e(se(!1)); {
+					if (!a.body || !a.ok) return e(se(!1)), void e(ee()); {
 						const {
 							data: s
-						} = a.body, r = s.openaiSubredditSuggestions.slice(0, j.a), i = r.map(e => {
+						} = a.body, r = s.openaiSubredditSuggestions.filter(e => !ne.includes(e.name)).slice(0, j.a), i = r.map(e => {
 							const t = e.name;
 							return E[t] = {}, h.push(t), t
 						});
 						if (Object(j.g)(n) && (e => {
 								const t = e.map(e => e.toLowerCase());
 								let s = !1;
-								return ne.forEach(e => {
+								return ie.forEach(e => {
 									t.includes(e) && (s = !0)
 								}), s
 							})(i)) return e(se(!1)), e(X({
@@ -1366,14 +1366,14 @@
 							}
 						})
 					}
-					0 === Object(j.b)(t()).length && e(ee()), e(se(!1)), e(X({
+					e(se(!1)), e(X({
 						subreddits: c,
 						subredditsAboutInfo: O,
 						unavailableSubreddits: _,
 						recSubsDict: E,
 						recSubsOrder: h
-					}))
-				}, oe = () => async (e, t, {
+					})), 0 === Object(j.b)(t()).length && e(ee())
+				}, de = () => async (e, t, {
 					apiContext: s,
 					gqlContext: r
 				}) => {
@@ -1411,13 +1411,13 @@
 							}
 						})
 					}
-					0 === Object(j.b)(t()).length && e(ee()), e(se(!1)), e(X({
+					e(se(!1)), e(X({
 						subreddits: i,
 						subredditsAboutInfo: o,
 						unavailableSubreddits: d,
 						recSubsDict: a,
 						recSubsOrder: l
-					}))
+					})), 0 === Object(j.b)(t()).length && e(ee())
 				}
 		},
 		"./src/reddit/actions/postCreation/subredditChange.ts": function(e, t, s) {
@@ -3230,4 +3230,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.970be367d800cc5491ca.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.0a6deaae90c783d8ee53.js.map
