@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OverlayDeleteMessage.9ad906e0a279d42babb0.js
-// Retrieved at 10/5/2021, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OverlayDeleteMessage.dcdd5b9c495259f5b3ac.js
+// Retrieved at 10/7/2021, 4:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OverlayDeleteMessage"], {
 		"./src/chat/components/OverlayDeleteMessage/index.m.less": function(e, t, a) {
@@ -27,14 +27,14 @@
 			var d = a("./src/chat/actions/tracking.ts"),
 				m = a("./src/chat/components/Message/Bubble.tsx"),
 				u = a("./src/chat/components/OverlayNav/index.tsx"),
-				y = a("./src/chat/controls/Overlay/index.tsx"),
-				b = a("./src/chat/controls/OverlayControlBar/index.tsx"),
-				h = a("./src/chat/helpers/chatSelector.ts"),
+				b = a("./src/chat/controls/Overlay/index.tsx"),
+				h = a("./src/chat/controls/OverlayControlBar/index.tsx"),
+				y = a("./src/chat/helpers/chatSelector.ts"),
 				B = a("./src/chat/selectors/app.ts"),
 				p = a("./src/chat/selectors/messages.ts"),
 				x = a("./src/chat/components/OverlayDeleteMessage/index.m.less"),
 				O = a.n(x);
-			const _ = Object(h.a)({
+			const _ = Object(y.a)({
 					message: (e, t) => Object(p.b)(e, t.messageId),
 					isChatEmbedded: B.c,
 					isMessageFromCurrentUser: (e, t) => Object(p.g)(e, t.messageId)
@@ -54,17 +54,17 @@
 						isChatEmbedded: n,
 						isMessageFromCurrentUser: o
 					} = this.props;
-					return r.a.createElement(y.a, null, r.a.createElement(u.a, {
+					return r.a.createElement(b.a, null, r.a.createElement(u.a, {
 						channelId: e,
-						title: s.fbt._("Delete message", null, {
-							hk: "1ZCVBI"
+						title: s.fbt._("Delete this message?", null, {
+							hk: "1nsbno"
 						})
 					}), r.a.createElement("div", {
 						className: O.a.Container
 					}, r.a.createElement("p", {
 						className: O.a.Text
-					}, s.fbt._("Are you sure you want to delete this message?", null, {
-						hk: "3cAxYZ"
+					}, s.fbt._("It will be removed for everyone in this chat.", null, {
+						hk: "4cJces"
 					}), r.a.createElement("br", null), s.fbt._("You can't undo this.", null, {
 						hk: "4ockoK"
 					})), t && r.a.createElement(m.a, {
@@ -73,9 +73,9 @@
 						fromCurrentUser: o,
 						withButton: !1,
 						isChatEmbedded: n
-					})), r.a.createElement(b.a, {
-						primaryButtonText: s.fbt._("Delete", null, {
-							hk: "4lt26q"
+					})), r.a.createElement(h.a, {
+						primaryButtonText: s.fbt._("Yes, Delete.", null, {
+							hk: "oCERQ"
 						}),
 						primaryButtonAction: () => a()
 					}))
@@ -111,10 +111,10 @@
 				d = a("./src/chat/controls/Button/index.tsx"),
 				m = a("./src/chat/controls/OverlayControlBar/index.m.less"),
 				u = a.n(m),
-				y = a("./src/chat/helpers/dom.ts");
-			const b = Object(o.b)(void 0, e => ({
+				b = a("./src/chat/helpers/dom.ts");
+			const h = Object(o.b)(void 0, e => ({
 				onSubmit: () => {},
-				onCancel: Object(y.b)(() => e(Object(c.a)()))
+				onCancel: Object(b.b)(() => e(Object(c.a)()))
 			}))(e => r.a.createElement("div", {
 				className: Object(i.a)({
 					[u.a.primary]: e.primaryButtonOnly,
@@ -153,8 +153,8 @@
 			}, e.primaryButtonText || s.fbt._("Submit", null, {
 				hk: "4aU3dh"
 			})))));
-			b.displayName = "OverlayControlBar", t.a = b
+			h.displayName = "OverlayControlBar", t.a = h
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayDeleteMessage.9ad906e0a279d42babb0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayDeleteMessage.dcdd5b9c495259f5b3ac.js.map
