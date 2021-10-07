@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GivePremiumModal.09ee8ef00b4683d244f4.js
-// Retrieved at 10/5/2021, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GivePremiumModal.e2f81fb2c506a5404161.js
+// Retrieved at 10/7/2021, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GivePremiumModal", "givePremiumTrackers"], {
 		"./src/reddit/components/CoinBalance/index.m.less": function(e, t, n) {
@@ -63,13 +63,13 @@
 				u = n("./src/reddit/components/TrackingHelper/index.tsx"),
 				p = n("./src/reddit/helpers/localStorage/index.ts"),
 				h = n("./src/reddit/helpers/trackers/givePremium.ts"),
-				x = n("./src/lib/constants/index.ts"),
-				b = n("./src/lib/makeActionCreator/index.ts"),
+				b = n("./src/lib/constants/index.ts"),
+				x = n("./src/lib/makeActionCreator/index.ts"),
 				f = n("./src/reddit/actions/toaster.ts"),
 				k = n("./src/lib/makeApiRequest/index.ts"),
-				g = n("./src/lib/omitHeaders/index.ts"),
-				v = n("./src/reddit/constants/headers.ts"),
-				E = n("./src/reddit/helpers/r2/normalizeR2APIErrors/index.ts");
+				E = n("./src/lib/omitHeaders/index.ts"),
+				g = n("./src/reddit/constants/headers.ts"),
+				v = n("./src/reddit/helpers/r2/normalizeR2APIErrors/index.ts");
 			var C = async (e, t, n, s, o, a) => {
 				const c = {
 					recipient: n,
@@ -78,31 +78,31 @@
 					message: o,
 					correlation_id: a
 				};
-				return Object(k.a)(Object(g.a)(e, [v.a]), {
-					method: x.ib.POST,
+				return Object(k.a)(Object(E.a)(e, [g.a]), {
+					method: b.ib.POST,
 					endpoint: `${e.apiUrl}/api/v2/gold/give_premium`,
 					data: c
 				}).then(e => e.ok ? {
 					...e
 				} : e.error && e.error.type ? e : {
 					...e,
-					error: Object(E.a)(e)
+					error: Object(v.a)(e)
 				})
 			}, O = n("./src/reddit/helpers/correlationIdTracker.ts"), _ = n("./src/reddit/models/Toast/index.ts"), y = n("./src/reddit/selectors/premium.ts"), w = n("./src/reddit/actions/gold/constants.ts");
-			Object(b.a)(w.y), Object(b.a)(w.A), Object(b.a)(w.z), Object(b.a)(w.C);
-			const I = Object(b.a)(w.x),
-				j = Object(b.a)(w.w),
+			Object(x.a)(w.y), Object(x.a)(w.A), Object(x.a)(w.z), Object(x.a)(w.C);
+			const I = Object(x.a)(w.x),
+				j = Object(x.a)(w.w),
 				N = e => async (t, n) => {
 					await t(j(e));
 					const o = Object(y.a)(n());
 					if (o) {
 						const n = ((e, t) => {
 							switch (!0) {
-								case e && e.error && e.error.type && e.error.type === x.H.AUTHENTICATION_ERROR:
+								case e && e.error && e.error.type && e.error.type === b.H.AUTHENTICATION_ERROR:
 									return s.fbt._("There was an authentication error", null, {
 										hk: "12YR0w"
 									});
-								case e && e.error && e.error.type && e.error.type === x.H.INVALID_PREMIUM_AMOUNT:
+								case e && e.error && e.error.type && e.error.type === b.H.INVALID_PREMIUM_AMOUNT:
 									return s.fbt._("That Premium gift amount is invalid.", null, {
 										hk: "3XzSbH"
 									});
@@ -116,7 +116,7 @@
 							text: n
 						}))
 					}
-				}, S = Object(b.a)(w.B), M = e => async (t, n) => {
+				}, S = Object(x.a)(w.B), M = e => async (t, n) => {
 					const o = n(),
 						a = Object(y.d)(o);
 					t(S(e));
@@ -137,10 +137,10 @@
 				B = n("./src/reddit/controls/TextButton/index.tsx"),
 				H = n("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
 				K = n("./src/reddit/models/Gold/Premium/index.ts"),
-				F = n("./src/reddit/selectors/user.ts");
+				U = n("./src/reddit/selectors/user.ts");
 
-			function U() {
-				return (U = Object.assign || function(e) {
+			function F() {
+				return (F = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var s in n) Object.prototype.hasOwnProperty.call(n, s) && (e[s] = n[s])
@@ -150,8 +150,8 @@
 			}
 			const G = 10,
 				W = Object(i.c)({
-					coinBalance: F.e,
-					isEmployee: F.H,
+					coinBalance: U.e,
+					isEmployee: U.H,
 					isPending: y.b,
 					recipientName: y.d
 				}),
@@ -175,7 +175,7 @@
 						})(t, n, s, o ? a : ""))
 					}
 				}));
-			class z extends a.a.PureComponent {
+			class V extends a.a.PureComponent {
 				constructor() {
 					super(...arguments), this.state = {
 						includeMessage: !1,
@@ -345,8 +345,8 @@
 					}))))))
 				}
 			}
-			const V = Object(d.a)(Object(u.c)(z));
-			t.default = X(e => a.a.createElement(V, U({}, e, {
+			const z = Object(d.a)(Object(u.c)(V));
+			t.default = X(e => a.a.createElement(z, F({}, e, {
 				withOverlay: !0,
 				onOverlayClick: e.closeModal
 			})))
@@ -404,10 +404,10 @@
 				u = n("./src/reddit/controls/Dropdown/index.m.less"),
 				p = n.n(u),
 				h = n("./src/reddit/controls/Dropdown/row.m.less"),
-				x = n.n(h);
+				b = n.n(h);
 
-			function b() {
-				return (b = Object.assign || function(e) {
+			function x() {
+				return (x = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var s in n) Object.prototype.hasOwnProperty.call(n, s) && (e[s] = n[s])
@@ -429,8 +429,8 @@
 						props: e
 					} = this, t = e.skipRoleAttr ? null : {
 						role: "menuitem"
-					}, n = Object(i.a)(x.a.iconWrapper, e.iconWrapperClassName);
-					return e.href ? c.a.createElement(r.a, b({}, t, {
+					}, n = Object(i.a)(b.a.iconWrapper, e.iconWrapperClassName);
+					return e.href ? c.a.createElement(r.a, x({}, t, {
 						id: e.id,
 						className: e.className,
 						onBlur: e.onBlur,
@@ -444,8 +444,8 @@
 					}), e.children && c.a.createElement("span", {
 						className: n
 					}, e.children), c.a.createElement("span", {
-						className: Object(i.a)(x.a.text, e.textClassName)
-					}, e.displayText)) : c.a.createElement(m.a, b({}, t, {
+						className: Object(i.a)(b.a.text, e.textClassName)
+					}, e.displayText)) : c.a.createElement(m.a, x({}, t, {
 						id: e.id,
 						className: e.className,
 						disabled: e.disabled,
@@ -457,9 +457,9 @@
 					}), e.children && (e.noIcon ? c.a.createElement("div", null, e.children) : c.a.createElement("span", {
 						className: n
 					}, e.children)), e.displayText && c.a.createElement("span", {
-						className: Object(i.a)(x.a.text, e.textClassName)
+						className: Object(i.a)(b.a.text, e.textClassName)
 					}, e.displayText), e.showSelectedCheckmark && e.isSelected && c.a.createElement(d.a, {
-						className: x.a.checkmark
+						className: b.a.checkmark
 					}), e.showDropdownTriangle && c.a.createElement(l.a, {
 						className: p.a.dropdownTriangle
 					}))
@@ -469,12 +469,12 @@
 				className: e,
 				...t
 			}) => {
-				const n = Object(i.a)(x.a.row, e, {
-					[x.a.mIsInteractive]: !t.noHover,
-					[x.a.mIsSelected]: t.isSelected,
-					[x.a.topics]: t.isTopicsStyle
+				const n = Object(i.a)(b.a.row, e, {
+					[b.a.mIsInteractive]: !t.noHover,
+					[b.a.mIsSelected]: t.isSelected,
+					[b.a.topics]: t.isTopicsStyle
 				});
-				return c.a.createElement(f, b({
+				return c.a.createElement(f, x({
 					className: n
 				}, t))
 			}
@@ -500,7 +500,8 @@
 				topics: "qWs3cMcSjquK-OXl-9jH5",
 				loadingIcon: "_3WxhmmhQ3cYt1J7mtfcoKG",
 				menuItems: "_3ssvFhIB2HAXL261eWf7G0",
-				menuOption: "_1Qm1phX3yfiJHnjgi_O_9V"
+				menuOption: "_1Qm1phX3yfiJHnjgi_O_9V",
+				buttonIcon: "_1J0h3Uv7HEaVZiJLcCUlQw"
 			}
 		},
 		"./src/reddit/controls/DropdownSelector/index.tsx": function(e, t, n) {
@@ -589,14 +590,14 @@
 						className: Object(i.a)(c.a.menuOption, {
 							[c.a.topics]: n
 						}),
-						noIcon: !0,
+						noIcon: Boolean(e.icon),
 						onKeydown: t => this.handleOptionKeyDown(t, e),
 						onMouseDown: t => this.onOptionClick(t, e),
 						onBlur: this.handleDropdownBlur,
 						showSelectedCheckmark: t,
 						isSelected: void 0 !== e.isSelected ? e.isSelected : void 0,
 						isTopicsStyle: n
-					}, e.displayText))
+					}, e.icon && e.icon, e.displayText))
 				}
 				render() {
 					const {
@@ -607,9 +608,10 @@
 						isTopicsStyle: a,
 						menuItemsClassName: r,
 						name: u,
-						isSaving: p
+						isSaving: p,
+						buttonIcon: h
 					} = this.props, {
-						isOpen: h
+						isOpen: b
 					} = this.state;
 					return o.a.createElement("div", {
 						ref: this.containerRef,
@@ -632,7 +634,9 @@
 					}, o.a.createElement("span", {
 						className: c.a.selectorContent,
 						tabIndex: -1
-					}, n), p ? o.a.createElement(l.a, {
+					}, h && o.a.createElement("span", {
+						className: c.a.buttonIcon
+					}, h), n), p ? o.a.createElement(l.a, {
 						sizePx: 8,
 						className: c.a.loadingIcon
 					}) : o.a.createElement(d.a, {
@@ -643,7 +647,7 @@
 						}),
 						onMouseDown: m,
 						ref: this.menuItems
-					}, h && this.getDropdownMenuItems()))
+					}, b && this.getDropdownMenuItems()))
 				}
 			}
 			t.b = u
@@ -847,4 +851,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GivePremiumModal.09ee8ef00b4683d244f4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GivePremiumModal.e2f81fb2c506a5404161.js.map

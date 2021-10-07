@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ScheduledPost-PostSchedulePickerModal.47b33f6b9dbd34ac12fa.js
-// Retrieved at 10/5/2021, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ScheduledPost-PostSchedulePickerModal.83fb9291292d6defccb2.js
+// Retrieved at 10/7/2021, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ScheduledPost-PostSchedulePickerModal"], {
 		"./src/reddit/components/ScheduledPost/PostSchedulePickerModal/index.m.less": function(e, t, n) {
@@ -219,9 +219,9 @@
 				G = n("./src/reddit/components/ScheduledPost/PostSchedulePickerModal/index.m.less"),
 				V = n.n(G);
 			const {
-				fbt: X
+				fbt: J
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
-			class J extends o.a.PureComponent {
+			class X extends o.a.PureComponent {
 				constructor(e) {
 					super(e), this.maxDate = Object(c.a)(), this._onSubmitDateChange = Object(L.l)(this), this.onSubmitDateChange = e => {
 						this.props.sendEvent(Object(U.m)()), this._onSubmitDateChange(e)
@@ -275,7 +275,7 @@
 						className: V.a.marginBottom24
 					}, o.a.createElement("legend", {
 						className: V.a.timeLegend
-					}, X._("Submit Time", null, {
+					}, J._("Submit Time", null, {
 						hk: "1YyF9n"
 					})), o.a.createElement(P, {
 						maxDate: this.maxDate,
@@ -289,7 +289,7 @@
 						className: V.a.marginBottom24
 					}, o.a.createElement("legend", {
 						className: V.a.timeLegend
-					}, X._("Repeat Options", null, {
+					}, J._("Repeat Options", null, {
 						hk: "3xqIuV"
 					})), o.a.createElement(W, {
 						frequencyOption: l,
@@ -306,7 +306,7 @@
 						className: V.a.marginBottom24
 					}, o.a.createElement("legend", {
 						className: V.a.timeLegend
-					}, X._("Advanced Options", null, {
+					}, J._("Advanced Options", null, {
 						hk: "3Dxit5"
 					})), o.a.createElement(k, {
 						isContestMode: e,
@@ -319,7 +319,7 @@
 						suggestedSort: i
 					})), o.a.createElement("div", {
 						className: V.a.extraNoteRow
-					}, X._("Note: This post will be in Scheduled Posts in mod hub and editable.", null, {
+					}, J._("Note: This post will be in Scheduled Posts in mod hub and editable.", null, {
 						hk: "2HREcK"
 					})))
 				}
@@ -329,31 +329,31 @@
 						className: V.a.container
 					}, o.a.createElement(i.i, {
 						className: V.a.header
-					}, X._("Schedule this post", null, {
+					}, J._("Schedule this post", null, {
 						hk: "3wCfCU"
 					})), o.a.createElement(i.l, null, this.renderModalMainContents()), o.a.createElement(i.g, null, this.props.schedule && o.a.createElement(z.n, {
 						onClick: this.onDeleteClick,
 						className: V.a.deleteButton
 					}, o.a.createElement(B.a, {
 						className: V.a.clearIcon
-					}), X._("Clear", null, {
+					}), J._("Clear", null, {
 						hk: "2s7K3"
 					})), e && o.a.createElement("div", {
 						className: V.a.errorMessage
 					}, e), o.a.createElement(K.a, null, o.a.createElement(z.n, {
 						onClick: this.onCloseClick,
 						className: V.a.cancelButton
-					}, X._("Cancel", null, {
+					}, J._("Cancel", null, {
 						hk: "2TSLl5"
 					})), o.a.createElement(z.k, {
 						onClick: this.onApplyClick,
 						disabled: !!e
-					}, X._("Apply", null, {
+					}, J._("Apply", null, {
 						hk: "3x8S96"
 					})))))
 				}
 			}
-			t.default = Object(r.a)(Object(H.c)(J))
+			t.default = Object(r.a)(Object(H.c)(X))
 		},
 		"./src/reddit/components/ScheduledPost/SchedulePicker/AdvancedOptionsPicker/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -915,7 +915,8 @@
 				topics: "qWs3cMcSjquK-OXl-9jH5",
 				loadingIcon: "_3WxhmmhQ3cYt1J7mtfcoKG",
 				menuItems: "_3ssvFhIB2HAXL261eWf7G0",
-				menuOption: "_1Qm1phX3yfiJHnjgi_O_9V"
+				menuOption: "_1Qm1phX3yfiJHnjgi_O_9V",
+				buttonIcon: "_1J0h3Uv7HEaVZiJLcCUlQw"
 			}
 		},
 		"./src/reddit/controls/DropdownSelector/index.tsx": function(e, t, n) {
@@ -1004,14 +1005,14 @@
 						className: Object(c.a)(i.a.menuOption, {
 							[i.a.topics]: n
 						}),
-						noIcon: !0,
+						noIcon: Boolean(e.icon),
 						onKeydown: t => this.handleOptionKeyDown(t, e),
 						onMouseDown: t => this.onOptionClick(t, e),
 						onBlur: this.handleDropdownBlur,
 						showSelectedCheckmark: t,
 						isSelected: void 0 !== e.isSelected ? e.isSelected : void 0,
 						isTopicsStyle: n
-					}, e.displayText))
+					}, e.icon && e.icon, e.displayText))
 				}
 				render() {
 					const {
@@ -1022,9 +1023,10 @@
 						isTopicsStyle: r,
 						menuItemsClassName: a,
 						name: m,
-						isSaving: h
+						isSaving: h,
+						buttonIcon: p
 					} = this.props, {
-						isOpen: p
+						isOpen: f
 					} = this.state;
 					return o.a.createElement("div", {
 						ref: this.containerRef,
@@ -1047,7 +1049,9 @@
 					}, o.a.createElement("span", {
 						className: i.a.selectorContent,
 						tabIndex: -1
-					}, n), h ? o.a.createElement(l.a, {
+					}, p && o.a.createElement("span", {
+						className: i.a.buttonIcon
+					}, p), n), h ? o.a.createElement(l.a, {
 						sizePx: 8,
 						className: i.a.loadingIcon
 					}) : o.a.createElement(u.a, {
@@ -1058,7 +1062,7 @@
 						}),
 						onMouseDown: d,
 						ref: this.menuItems
-					}, p && this.getDropdownMenuItems()))
+					}, f && this.getDropdownMenuItems()))
 				}
 			}
 			t.b = m
@@ -1765,4 +1769,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ScheduledPost-PostSchedulePickerModal.47b33f6b9dbd34ac12fa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ScheduledPost-PostSchedulePickerModal.83fb9291292d6defccb2.js.map

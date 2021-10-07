@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.5b6778a83817af5c94e8.js
-// Retrieved at 10/7/2021, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.31b826cd929b5a8774b7.js
+// Retrieved at 10/7/2021, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -18970,7 +18970,8 @@
 				topics: "qWs3cMcSjquK-OXl-9jH5",
 				loadingIcon: "_3WxhmmhQ3cYt1J7mtfcoKG",
 				menuItems: "_3ssvFhIB2HAXL261eWf7G0",
-				menuOption: "_1Qm1phX3yfiJHnjgi_O_9V"
+				menuOption: "_1Qm1phX3yfiJHnjgi_O_9V",
+				buttonIcon: "_1J0h3Uv7HEaVZiJLcCUlQw"
 			}
 		},
 		"./src/reddit/controls/DropdownSelector/index.tsx": function(e, t, s) {
@@ -19059,14 +19060,14 @@
 						className: Object(i.a)(r.a.menuOption, {
 							[r.a.topics]: s
 						}),
-						noIcon: !0,
+						noIcon: Boolean(e.icon),
 						onKeydown: t => this.handleOptionKeyDown(t, e),
 						onMouseDown: t => this.onOptionClick(t, e),
 						onBlur: this.handleDropdownBlur,
 						showSelectedCheckmark: t,
 						isSelected: void 0 !== e.isSelected ? e.isSelected : void 0,
 						isTopicsStyle: s
-					}, e.displayText))
+					}, e.icon && e.icon, e.displayText))
 				}
 				render() {
 					const {
@@ -19077,9 +19078,10 @@
 						isTopicsStyle: o,
 						menuItemsClassName: d,
 						name: u,
-						isSaving: p
+						isSaving: p,
+						buttonIcon: h
 					} = this.props, {
-						isOpen: h
+						isOpen: b
 					} = this.state;
 					return a.a.createElement("div", {
 						ref: this.containerRef,
@@ -19102,7 +19104,9 @@
 					}, a.a.createElement("span", {
 						className: r.a.selectorContent,
 						tabIndex: -1
-					}, s), p ? a.a.createElement(l.a, {
+					}, h && a.a.createElement("span", {
+						className: r.a.buttonIcon
+					}, h), s), p ? a.a.createElement(l.a, {
 						sizePx: 8,
 						className: r.a.loadingIcon
 					}) : a.a.createElement(c.a, {
@@ -19113,7 +19117,7 @@
 						}),
 						onMouseDown: m,
 						ref: this.menuItems
-					}, h && this.getDropdownMenuItems()))
+					}, b && this.getDropdownMenuItems()))
 				}
 			}
 			t.b = u
@@ -22526,4 +22530,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.5b6778a83817af5c94e8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.31b826cd929b5a8774b7.js.map
