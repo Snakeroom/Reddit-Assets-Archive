@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.f622c82ce67dbc3392c3.js
-// Retrieved at 10/7/2021, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.f4557346d9203622159d.js
+// Retrieved at 10/7/2021, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -23981,7 +23981,8 @@
 						const s = t.payload;
 						return {
 							...e,
-							accountIcon: s.avatar.headshot_image_url
+							accountIcon: s.avatar.headshot_image_url,
+							snoovatarFullBodyAsset: s.avatar.image_url
 						}
 					}
 					default:
@@ -25095,6 +25096,18 @@
 								}
 							}) : e
 						}
+						case yI.c:
+							const r = t.payload.account;
+							if (!r || !e) return e;
+							const s = Object(Y.e)(r).toLowerCase(),
+								n = e[s];
+							return n ? uT(e, {
+								[s]: {
+									...n,
+									accountIcon: r.accountIcon,
+									snoovatarFullBodyAsset: r.snoovatarFullBodyAsset
+								}
+							}) : e;
 						case Pr.m: {
 							const {
 								additional: r,
@@ -26133,4 +26146,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.f622c82ce67dbc3392c3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.f4557346d9203622159d.js.map
