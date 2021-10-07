@@ -1,7 +1,38 @@
-// https://www.redditstatic.com/desktop2x/BottomSheetUpsellWrapper.5aadaa60722b2877192b.js
-// Retrieved at 10/7/2021, 11:00:10 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/BottomSheetUpsellWrapper.8efaded792e3d06a12cc.js
+// Retrieved at 10/7/2021, 1:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["BottomSheetUpsellWrapper"], {
+		"./src/reddit/components/ErrorBoundary/index.tsx": function(e, t, s) {
+			"use strict";
+			var r = s("./node_modules/@sentry/minimal/esm/index.js"),
+				o = s("./node_modules/react/index.js");
+			class n extends o.Component {
+				constructor() {
+					super(...arguments), this.state = {
+						error: null
+					}
+				}
+				componentDidCatch(e, t) {
+					r.l(s => {
+						s.setExtra("info", t), r.c(e)
+					}), this.setState({
+						error: e
+					})
+				}
+				render() {
+					const {
+						children: e,
+						FallbackComponent: t = (() => null)
+					} = this.props, {
+						error: s
+					} = this.state;
+					return s ? o.createElement(t, {
+						error: s
+					}) : e
+				}
+			}
+			t.a = n
+		},
 		"./src/reddit/components/Upsell/BottomSheetUpsellWrapper/index.m.less": function(e, t, s) {
 			e.exports = {
 				wrapper: "_1CRxXSvUhagxkF2Z5KeFSg"
@@ -10,54 +41,65 @@
 		"./src/reddit/components/Upsell/BottomSheetUpsellWrapper/index.tsx": function(e, t, s) {
 			"use strict";
 			s.r(t);
-			var o = s("./node_modules/react/index.js"),
-				r = s("./src/lib/classNames/index.ts"),
-				n = s("./src/reddit/components/Upsell/SignupUpsell/Loader.ts"),
-				i = s("./src/reddit/constants/promo.ts"),
+			var r = s("./node_modules/react/index.js"),
+				o = s("./src/lib/classNames/index.ts"),
+				n = s("./src/reddit/components/ErrorBoundary/index.tsx"),
+				i = s("./src/reddit/components/Upsell/SignupUpsell/Loader.ts"),
+				l = s("./src/reddit/constants/promo.ts"),
 				c = s("./src/reddit/hooks/promo/useIsPromoShown.ts"),
-				l = s("./src/reddit/constants/experiments.ts"),
-				d = s("./src/reddit/contexts/ThrottlingContext/index.tsx"),
-				p = s("./src/reddit/hooks/usePromoContext.ts");
+				d = s("./src/reddit/constants/experiments.ts"),
+				u = s("./src/reddit/contexts/ThrottlingContext/index.tsx"),
+				a = s("./src/reddit/hooks/usePromoContext.ts");
 
-			function u() {
-				const e = function(e) {
-						const {
-							promos: t
-						} = Object(p.a)();
-						return t.get(e) === i.a.Dismissed
-					}(i.b.SignupUpsellBottomSheet),
-					{
-						throttleFeature: t
-					} = o.useContext(d.a[l.fb]),
-					{
-						throttleFeature: s
-					} = o.useContext(d.a[l.gb]),
-					{
-						throttleFeature: r
-					} = o.useContext(d.a[l.hb]);
-				o.useEffect(() => {
-					e && (t(), s(), r())
-				}, [e, t, s, r])
+			function p(e) {
+				const {
+					promos: t
+				} = Object(a.a)();
+				return t.get(e) === l.a.Dismissed
 			}
-			var a = s("./src/reddit/components/Upsell/BottomSheetUpsellWrapper/index.m.less"),
-				m = s.n(a);
+			var m = s("./src/reddit/components/Upsell/BottomSheetUpsellWrapper/index.m.less"),
+				h = s.n(m);
+
+			function x({
+				children: e
+			}) {
+				return r.createElement(n.a, null, r.createElement("div", {
+					className: Object(o.a)(h.a.wrapper)
+				}, e))
+			}
 			t.default = function() {
-				u();
+				! function() {
+					const e = p(l.b.SignupUpsellBottomSheet),
+						t = p(l.b.SignupUpsellCellDismissible),
+						{
+							throttleFeature: s
+						} = r.useContext(u.a[d.fb]),
+						{
+							throttleFeature: o
+						} = r.useContext(u.a[d.gb]),
+						{
+							throttleFeature: n
+						} = r.useContext(u.a[d.hb]);
+					r.useEffect(() => {
+						function r() {
+							s(), o(), n()
+						}
+						e && r(), t && r()
+					}, [e, t, s, o, n])
+				}();
 				const {
 					dismissPromo: e
-				} = Object(p.a)();
-				return Object(c.a)(i.b.SignupUpsellBottomSheet) ? o.createElement("div", {
-					className: Object(r.a)(m.a.wrapper)
-				}, o.createElement(n.a, {
-					onDismiss: () => e(i.b.SignupUpsellBottomSheet),
+				} = Object(a.a)();
+				return Object(c.a)(l.b.SignupUpsellBottomSheet) ? r.createElement(x, null, r.createElement(i.a, {
+					onDismiss: () => e(l.b.SignupUpsellBottomSheet),
 					size: "large"
 				})) : null
 			}
 		},
 		"./src/reddit/components/Upsell/SignupUpsell/Loader.ts": function(e, t, s) {
 			"use strict";
-			var o = s("./node_modules/@loadable/component/dist/loadable.esm.js");
-			t.a = Object(o.a)({
+			var r = s("./node_modules/@loadable/component/dist/loadable.esm.js");
+			t.a = Object(r.a)({
 				resolved: {},
 				chunkName: () => "SignupUpsell",
 				isReady(e) {
@@ -85,24 +127,24 @@
 			s.d(t, "a", (function() {
 				return n
 			}));
-			var o = s("./src/reddit/constants/promo.ts"),
-				r = s("./src/reddit/hooks/usePromoContext.ts");
+			var r = s("./src/reddit/constants/promo.ts"),
+				o = s("./src/reddit/hooks/usePromoContext.ts");
 
 			function n(e) {
 				const {
 					promos: t
-				} = Object(r.a)();
-				return t.get(e) === o.a.Shown
+				} = Object(o.a)();
+				return t.get(e) === r.a.Shown
 			}
 		},
 		"./src/reddit/hooks/usePromoContext.ts": function(e, t, s) {
 			"use strict";
-			var o = s("./node_modules/react/index.js"),
-				r = s("./src/reddit/contexts/Promo/index.ts");
+			var r = s("./node_modules/react/index.js"),
+				o = s("./src/reddit/contexts/Promo/index.ts");
 			t.a = function() {
-				return Object(o.useContext)(r.a)
+				return Object(r.useContext)(o.a)
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BottomSheetUpsellWrapper.5aadaa60722b2877192b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BottomSheetUpsellWrapper.8efaded792e3d06a12cc.js.map

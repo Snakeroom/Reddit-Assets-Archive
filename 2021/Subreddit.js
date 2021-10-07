@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.bec08fdb37e8d4567687.js
-// Retrieved at 10/7/2021, 12:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.1e6ff99e56522a9912a1.js
+// Retrieved at 10/7/2021, 1:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~ModListing", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -391,7 +391,7 @@
 		"./src/lib/promo/withShowSignupUpsell.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return f
+				return b
 			}));
 			var s = n("./node_modules/react/index.js");
 			var r = n("./node_modules/lodash/debounce.js"),
@@ -399,28 +399,25 @@
 				i = n("./src/reddit/constants/experiments.ts"),
 				a = n("./src/reddit/constants/promo.ts"),
 				c = n("./src/reddit/hooks/usePromoContext.ts"),
-				d = n("./node_modules/react-redux/es/index.js"),
-				l = n("./src/reddit/selectors/experiments/signupUpsellExperiment.ts");
+				d = n("./src/reddit/hooks/promo/useIsSignupUpsellVariantEligible.ts");
+			const l = 250,
+				u = 1e3;
 
-			function u(e) {
-				const t = Object(d.e)(l.b) === e,
-					n = Object(d.e)(l.d) === e,
-					s = Object(d.e)(l.f) === e;
-				return t || n || s
-			}
-			const m = 250,
-				p = 1e3;
-
-			function b(e = m) {
+			function m(e = l) {
 				const {
 					showPromo: t
 				} = Object(c.a)(), n = function() {
-					const e = u(i.Eb.Bottom_cell),
-						t = u(i.Eb.Bottom_cell_dismissible),
-						n = u(i.Eb.Bottom_sheet);
-					return e ? a.b.SignupUpsellCell : t ? a.b.SignupUpsellCellDismissible : n ? a.b.SignupUpsellBottomSheet : null
-				}(), r = s.useRef(!1);
-				return s.useMemo(() => o()(e => {
+					const e = Object(d.a)(i.Eb.Bottom_cell),
+						t = Object(d.a)(i.Eb.Bottom_cell_dismissible),
+						n = Object(d.a)(i.Eb.Bottom_cell_dismissible_immediate_trigger),
+						s = Object(d.a)(i.Eb.Bottom_cell_signup_upsell_copy),
+						r = Object(d.a)(i.Eb.Bottom_cell_surprise_install_copy),
+						o = Object(d.a)(i.Eb.Bottom_sheet);
+					return e || s || r ? a.b.SignupUpsellCell : t || n ? a.b.SignupUpsellCellDismissible : o ? a.b.SignupUpsellBottomSheet : null
+				}(), r = s.useRef(!1), m = Object(d.a)(i.Eb.Bottom_cell_dismissible_immediate_trigger);
+				return s.useEffect(() => {
+					n && m && !r.current && (t(n), r.current = !0)
+				}, [m, n, t]), s.useMemo(() => o()(e => {
 					var s;
 					if (!r.current && n && (null === (s = null == e ? void 0 : e.primaryChild) || void 0 === s ? void 0 : s.rectangle)) {
 						const {
@@ -429,12 +426,12 @@
 						s > 2 * window.innerHeight && (t(n), r.current = !0)
 					}
 				}, e, {
-					maxWait: p
+					maxWait: u
 				}), [n, t, e])
 			}
 
-			function h() {
-				return (h = Object.assign || function(e) {
+			function p() {
+				return (p = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var s in n) Object.prototype.hasOwnProperty.call(n, s) && (e[s] = n[s])
@@ -443,12 +440,12 @@
 				}).apply(this, arguments)
 			}
 
-			function f(e) {
+			function b(e) {
 				const t = e.displayName || e.name || "Component";
 
 				function n(t) {
-					const n = b();
-					return s.createElement(e, h({
+					const n = m();
+					return s.createElement(e, p({
 						showSignupUpsell: n
 					}, t))
 				}
@@ -14192,6 +14189,21 @@
 					noun: s.HEADER_SUBREDDIT_UNSUBSCRIBE
 				})
 		},
+		"./src/reddit/hooks/promo/useIsSignupUpsellVariantEligible.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "a", (function() {
+				return o
+			}));
+			var s = n("./node_modules/react-redux/es/index.js"),
+				r = n("./src/reddit/selectors/experiments/signupUpsellExperiment.ts");
+
+			function o(e) {
+				const t = Object(s.e)(r.b) === e,
+					n = Object(s.e)(r.d) === e,
+					o = Object(s.e)(r.f) === e;
+				return t || n || o
+			}
+		},
 		"./src/reddit/hooks/useConstructor.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
@@ -17085,4 +17097,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.bec08fdb37e8d4567687.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.1e6ff99e56522a9912a1.js.map

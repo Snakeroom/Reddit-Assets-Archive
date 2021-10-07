@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.1410c9ea6845bda41179.js
-// Retrieved at 10/7/2021, 12:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.05709a08f1625eb4036f.js
+// Retrieved at 10/7/2021, 1:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage"], {
 		"./src/lib/makeLinkedPostsListingKey/index.ts": function(e, t, s) {
@@ -18,7 +18,7 @@
 		"./src/lib/promo/withShowSignupUpsell.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return g
+				return h
 			}));
 			var o = s("./node_modules/react/index.js");
 			var n = s("./node_modules/lodash/debounce.js"),
@@ -26,28 +26,25 @@
 				i = s("./src/reddit/constants/experiments.ts"),
 				a = s("./src/reddit/constants/promo.ts"),
 				d = s("./src/reddit/hooks/usePromoContext.ts"),
-				c = s("./node_modules/react-redux/es/index.js"),
-				l = s("./src/reddit/selectors/experiments/signupUpsellExperiment.ts");
+				c = s("./src/reddit/hooks/promo/useIsSignupUpsellVariantEligible.ts");
+			const l = 250,
+				m = 1e3;
 
-			function m(e) {
-				const t = Object(c.e)(l.b) === e,
-					s = Object(c.e)(l.d) === e,
-					o = Object(c.e)(l.f) === e;
-				return t || s || o
-			}
-			const p = 250,
-				u = 1e3;
-
-			function h(e = p) {
+			function p(e = l) {
 				const {
 					showPromo: t
 				} = Object(d.a)(), s = function() {
-					const e = m(i.Eb.Bottom_cell),
-						t = m(i.Eb.Bottom_cell_dismissible),
-						s = m(i.Eb.Bottom_sheet);
-					return e ? a.b.SignupUpsellCell : t ? a.b.SignupUpsellCellDismissible : s ? a.b.SignupUpsellBottomSheet : null
-				}(), n = o.useRef(!1);
-				return o.useMemo(() => r()(e => {
+					const e = Object(c.a)(i.Eb.Bottom_cell),
+						t = Object(c.a)(i.Eb.Bottom_cell_dismissible),
+						s = Object(c.a)(i.Eb.Bottom_cell_dismissible_immediate_trigger),
+						o = Object(c.a)(i.Eb.Bottom_cell_signup_upsell_copy),
+						n = Object(c.a)(i.Eb.Bottom_cell_surprise_install_copy),
+						r = Object(c.a)(i.Eb.Bottom_sheet);
+					return e || o || n ? a.b.SignupUpsellCell : t || s ? a.b.SignupUpsellCellDismissible : r ? a.b.SignupUpsellBottomSheet : null
+				}(), n = o.useRef(!1), p = Object(c.a)(i.Eb.Bottom_cell_dismissible_immediate_trigger);
+				return o.useEffect(() => {
+					s && p && !n.current && (t(s), n.current = !0)
+				}, [p, s, t]), o.useMemo(() => r()(e => {
 					var o;
 					if (!n.current && s && (null === (o = null == e ? void 0 : e.primaryChild) || void 0 === o ? void 0 : o.rectangle)) {
 						const {
@@ -56,12 +53,12 @@
 						o > 2 * window.innerHeight && (t(s), n.current = !0)
 					}
 				}, e, {
-					maxWait: u
+					maxWait: m
 				}), [s, t, e])
 			}
 
-			function b() {
-				return (b = Object.assign || function(e) {
+			function u() {
+				return (u = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var o in s) Object.prototype.hasOwnProperty.call(s, o) && (e[o] = s[o])
@@ -70,12 +67,12 @@
 				}).apply(this, arguments)
 			}
 
-			function g(e) {
+			function h(e) {
 				const t = e.displayName || e.name || "Component";
 
 				function s(t) {
-					const s = h();
-					return o.createElement(e, b({
+					const s = p();
+					return o.createElement(e, u({
 						showSignupUpsell: s
 					}, t))
 				}
@@ -7006,6 +7003,21 @@
 					...n(t, e)
 				})
 		},
+		"./src/reddit/hooks/promo/useIsSignupUpsellVariantEligible.ts": function(e, t, s) {
+			"use strict";
+			s.d(t, "a", (function() {
+				return r
+			}));
+			var o = s("./node_modules/react-redux/es/index.js"),
+				n = s("./src/reddit/selectors/experiments/signupUpsellExperiment.ts");
+
+			function r(e) {
+				const t = Object(o.e)(n.b) === e,
+					s = Object(o.e)(n.d) === e,
+					r = Object(o.e)(n.f) === e;
+				return t || s || r
+			}
+		},
 		"./src/reddit/hooks/useIsClient.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
@@ -8961,4 +8973,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.1410c9ea6845bda41179.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.05709a08f1625eb4036f.js.map
