@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.22ad6179f76a42616957.js
-// Retrieved at 10/7/2021, 11:00:10 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.97a8ed7b073321a31df7.js
+// Retrieved at 10/7/2021, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["TopWeekPostsDiscoveryUnit"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -500,8 +500,8 @@
 				U = s("./src/reddit/components/PostBackgroundWrapper/index.tsx"),
 				B = s("./src/reddit/components/PostContainer/index.tsx"),
 				R = s("./src/reddit/components/PostTitle/index.tsx"),
-				H = s("./src/reddit/connectors/miniCardPost.ts"),
-				V = s("./src/reddit/contexts/Post/index.tsx"),
+				V = s("./src/reddit/connectors/miniCardPost.ts"),
+				H = s("./src/reddit/contexts/Post/index.tsx"),
 				Q = s("./src/reddit/helpers/canPreviewSelfText/index.ts"),
 				z = s("./src/reddit/helpers/styles/mixins/index.tsx"),
 				q = s("./src/reddit/models/Media/index.ts"),
@@ -635,7 +635,7 @@
 					}))))), r.a.createElement(D.d, null))
 				}
 			}
-			const ne = Object(V.b)(Object(H.a)(Object(C.a)(se)));
+			const ne = Object(H.b)(Object(V.a)(Object(C.a)(se)));
 			class ae extends r.a.Component {
 				render() {
 					return r.a.createElement(ne, this.props)
@@ -1084,8 +1084,8 @@
 						hk: "1QQoSA"
 					})))
 				},
-				H = s("./src/reddit/components/SubredditIcon/index.tsx"),
-				V = s("./src/reddit/components/SubscribeButton/Inline.tsx"),
+				V = s("./src/reddit/components/SubredditIcon/index.tsx"),
+				H = s("./src/reddit/components/SubscribeButton/Inline.tsx"),
 				Q = s("./src/reddit/components/Widgets/CommunityList/helpers.ts"),
 				z = s("./src/reddit/constants/posts.ts"),
 				q = s("./src/reddit/controls/Button/index.tsx"),
@@ -1107,7 +1107,7 @@
 						"data-redditstyle": !0,
 						to: i.url,
 						onMouseDown: n
-					}, a.a.createElement(H.b, {
+					}, a.a.createElement(V.b, {
 						className: J.a.icon,
 						subredditOrProfile: i
 					})), a.a.createElement("div", {
@@ -1117,7 +1117,7 @@
 						"data-redditstyle": !0,
 						to: i.url,
 						onMouseDown: n
-					}, Object(Q.b)(i.displayText || i.name, c))), r && a.a.createElement(V.a, {
+					}, Object(Q.b)(i.displayText || i.name, c))), r && a.a.createElement(H.a, {
 						className: J.a.subscribe,
 						"data-redditstyle": !0,
 						getEventFactory: s,
@@ -1612,8 +1612,8 @@
 				U = s("./src/config.ts"),
 				B = s("./src/reddit/hooks/useClickSourceData.ts"),
 				R = s("./src/reddit/hooks/useExperimentVariant.ts"),
-				H = s("./src/reddit/hooks/usePostContext.ts"),
-				V = s("./src/reddit/hooks/useTheme.ts"),
+				V = s("./src/reddit/hooks/usePostContext.ts"),
+				H = s("./src/reddit/hooks/useTheme.ts"),
 				Q = s("./src/telemetry/models/Outbound.ts");
 
 			function z() {
@@ -1636,7 +1636,7 @@
 					className: i,
 					redditStyle: o
 				}) => {
-					const c = Object(V.a)();
+					const c = Object(H.a)();
 					let l = "";
 					switch (e) {
 						case L.ExtraLarge:
@@ -1705,7 +1705,7 @@
 						subreddit: s
 					} = e, {
 						isSponsored: n
-					} = t, a = Object(B.a)(), i = Object(R.a)(u.Pc) === u.Tc.Enabled;
+					} = t, a = Object(B.a)(), i = Object(R.a)(u.Rc) === u.Vc.Enabled;
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return r.a.createElement(K, {
 						nowrap: e.nowrap
 					}, r.a.createElement(Y, e));
@@ -1851,14 +1851,14 @@
 			t.c = r.a.memo((function(e) {
 				const t = Object(p.db)(),
 					s = Object(p.w)(t),
-					n = Object(H.a)(),
+					n = Object(V.a)(),
 					a = Object(i.e)(a => J(a, {
 						...n,
 						...e,
 						isCommentPermalink: s,
 						pageLayer: t
 					})),
-					o = Object(V.a)(),
+					o = Object(H.a)(),
 					c = Object(m.b)();
 				return n ? r.a.createElement($, z({
 					pageLayer: t,
@@ -2322,4 +2322,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.22ad6179f76a42616957.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.97a8ed7b073321a31df7.js.map

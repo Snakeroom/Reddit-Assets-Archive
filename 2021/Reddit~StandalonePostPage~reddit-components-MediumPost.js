@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-MediumPost.04c99ac564b7d06a6621.js
-// Retrieved at 10/7/2021, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-MediumPost.8aada8269a3f4fe79fd5.js
+// Retrieved at 10/7/2021, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~StandalonePostPage~reddit-components-MediumPost"], {
 		"./src/lib/hooks/useTooltip.ts": function(e, t, r) {
@@ -2916,19 +2916,19 @@
 				o = r("./src/reddit/helpers/chooseVariant/index.ts"),
 				a = r("./src/reddit/selectors/experiments/index.ts");
 			const c = Object(n.a)(e => Object(o.c)(e, {
-					experimentName: s.pb,
+					experimentName: s.qb,
 					experimentEligibilitySelector: a.e
 				}), e => e === s.V.Enabled),
 				i = Object(n.a)(e => Object(o.c)(e, {
-					experimentName: s.qb,
+					experimentName: s.rb,
 					experimentEligibilitySelector: a.e
 				}), e => e === s.W.Enabled),
 				d = Object(n.a)(e => Object(o.c)(e, {
-					experimentName: s.rb,
+					experimentName: s.sb,
 					experimentEligibilitySelector: a.e
 				}), e => e === s.X.Enabled),
 				l = Object(n.a)(e => Object(o.c)(e, {
-					experimentName: s.sb,
+					experimentName: s.tb,
 					experimentEligibilitySelector: a.e
 				}), e => e === s.Y.Enabled)
 		},
@@ -3009,8 +3009,8 @@
 				f = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: n.ub
-					}) === n.Hb.Enabled
+						experimentName: n.wb
+					}) === n.Jb.Enabled
 				}
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, r) {
@@ -3393,4 +3393,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-MediumPost.04c99ac564b7d06a6621.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-MediumPost.8aada8269a3f4fe79fd5.js.map

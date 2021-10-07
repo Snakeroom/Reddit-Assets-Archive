@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/BottomCellWrapper.3125278e4b349a51895d.js
-// Retrieved at 10/7/2021, 1:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/BottomCellWrapper.964d5512cfd77b9160c0.js
+// Retrieved at 10/7/2021, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["BottomCellWrapper", "SignupUpsell"], {
 		"./src/reddit/components/ErrorBoundary/index.tsx": function(e, t, s) {
@@ -154,7 +154,7 @@
 					noun: f,
 					actionInfo: Object(_.actionInfo)(e)
 				}),
-				E = e => t => ({
+				h = e => t => ({
 					...Object(_.defaults)(t),
 					source: "popup",
 					action: "click",
@@ -164,7 +164,7 @@
 						type: e
 					})
 				}),
-				h = () => e => ({
+				j = () => e => ({
 					...Object(_.defaults)(e),
 					source: "popup",
 					action: "click",
@@ -173,7 +173,7 @@
 						popup_button_text: "login"
 					})
 				});
-			var j = s("./src/reddit/hooks/promo/useIsSignupUpsellVariantEligible.ts"),
+			var E = s("./src/reddit/hooks/promo/useIsSignupUpsellVariantEligible.ts"),
 				O = s("./src/reddit/selectors/experiments/signupUpsellExperiment.ts");
 			var v = s("./src/reddit/icons/svgs/AppleLogo/index.tsx"),
 				B = s("./src/reddit/icons/svgs/Close/index.tsx"),
@@ -202,12 +202,12 @@
 						const e = Object(i.e)(O.b),
 							t = Object(i.e)(O.d),
 							s = Object(i.e)(O.f),
-							o = Object(j.a)(b.Eb.Bottom_sheet),
-							l = Object(j.a)(b.Eb.Bottom_cell),
-							r = Object(j.a)(b.Eb.Bottom_cell_dismissible),
-							c = Object(j.a)(b.Eb.Bottom_cell_dismissible_immediate_trigger),
-							a = Object(j.a)(b.Eb.Bottom_cell_signup_upsell_copy),
-							d = Object(j.a)(b.Eb.Bottom_cell_surprise_install_copy);
+							o = Object(E.a)(b.Gb.Bottom_sheet),
+							l = Object(E.a)(b.Gb.Bottom_cell),
+							r = Object(E.a)(b.Gb.Bottom_cell_dismissible),
+							c = Object(E.a)(b.Gb.Bottom_cell_dismissible_immediate_trigger),
+							a = Object(E.a)(b.Gb.Bottom_cell_signup_upsell_copy),
+							d = Object(E.a)(b.Gb.Bottom_cell_surprise_install_copy);
 						let u;
 						if (e) u = L;
 						else if (t) u = I;
@@ -224,8 +224,8 @@
 						if (e && d) return `${p}bottom_cell_surprise_install_copy.png`;
 						throw new Error("Invalid variant for signup upsell")
 					}(),
-					f = Object(j.a)(b.Eb.Bottom_cell_signup_upsell_copy),
-					w = Object(j.a)(b.Eb.Bottom_cell_surprise_install_copy),
+					f = Object(E.a)(b.Gb.Bottom_cell_signup_upsell_copy),
+					w = Object(E.a)(b.Gb.Bottom_cell_surprise_install_copy),
 					D = f ? o.fbt._("Come join us, we have snacks", null, {
 						hk: "1LUl2W"
 					}) : o.fbt._("Log in or sign up for the best experience", null, {
@@ -259,7 +259,7 @@
 				}, l.createElement(m, {
 					Icon: N.a,
 					onClick: () => {
-						p(), s(E(g.Google))
+						p(), s(h(g.Google))
 					},
 					size: d.c.M,
 					iconClassName: S.a.googleIcon
@@ -268,7 +268,7 @@
 				})), l.createElement(m, {
 					Icon: v.a,
 					onClick: () => {
-						p(), s(E(g.Apple))
+						p(), s(h(g.Apple))
 					},
 					size: d.c.M,
 					iconClassName: S.a.appleIcon,
@@ -280,7 +280,7 @@
 				}, l.createElement(d.i, {
 					className: Object(r.a)(S.a.linkButton, S.a.emailButton),
 					onClick: () => {
-						p(), s(E(g.Reddit))
+						p(), s(h(g.Reddit))
 					},
 					redditStyle: !0,
 					size: d.c.XS
@@ -289,7 +289,7 @@
 				})), l.createElement(d.i, {
 					className: S.a.linkButton,
 					onClick: () => {
-						(() => u(Object(c.i)()))(), s(h())
+						(() => u(Object(c.i)()))(), s(j())
 					},
 					redditStyle: !0,
 					size: d.c.XS
@@ -416,18 +416,18 @@
 					experimentName: e,
 					experimentEligibilitySelector: c,
 					throttledVariants: {
-						[o.Eb.Bottom_sheet]: e
+						[o.Gb.Bottom_sheet]: e
 					},
 					expEventOverride: t
 				})
 			}
-			const d = a(o.fb, !0),
-				u = a(o.gb, !0),
-				p = a(o.hb, !0),
-				m = a(o.fb, !1),
-				b = a(o.gb, !1),
-				_ = a(o.hb, !1)
+			const d = a(o.gb, !0),
+				u = a(o.hb, !0),
+				p = a(o.ib, !0),
+				m = a(o.gb, !1),
+				b = a(o.hb, !1),
+				_ = a(o.ib, !1)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BottomCellWrapper.3125278e4b349a51895d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BottomCellWrapper.964d5512cfd77b9160c0.js.map

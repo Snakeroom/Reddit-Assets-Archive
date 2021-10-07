@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NotificationsInbox.a2f3e9823d1dff1f0bf9.js
-// Retrieved at 10/5/2021, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationsInbox.759f037979cf4852b147.js
+// Retrieved at 10/7/2021, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationsInbox"], {
 		"./src/reddit/actions/pages/notificationsInbox.ts": function(e, t, n) {
@@ -529,7 +529,7 @@
 				y = n("./src/reddit/pages/NotificationsInbox/Content/index.m.less"),
 				k = n.n(y);
 			const j = e => {
-				const t = Object(d.e)(O.i),
+				const t = Object(d.e)(O.j),
 					n = Object(N.a)(),
 					[i, a] = Object(_.a)(e.userId),
 					r = t && !i;
@@ -596,7 +596,9 @@
 						userId: a
 					}), s.a.createElement("div", {
 						className: k.a.notificationsContainer
-					}, !r && n && s.a.createElement(x.a, null), !r && !n && s.a.createElement(S.a, null), r && this.renderNotifications(), r && !n && e && s.a.createElement(g.a, {
+					}, !r && n && s.a.createElement(x.a, null), !r && !n && s.a.createElement(S.a, {
+						isLoggedIn: !0
+					}), r && this.renderNotifications(), r && !n && e && s.a.createElement(g.a, {
 						onChange: this.fetchNotifications,
 						rootMargin: "0px 0px 0px 0px",
 						threshold: w
@@ -730,4 +732,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsInbox.a2f3e9823d1dff1f0bf9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsInbox.759f037979cf4852b147.js.map

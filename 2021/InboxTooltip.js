@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InboxTooltip.10fe5242528a080a2161.js
-// Retrieved at 10/5/2021, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InboxTooltip.fa787afb57490e3978e7.js
+// Retrieved at 10/7/2021, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InboxTooltip", "PushNotifications"], {
 		"./src/lib/notifications/token.ts": function(e, t, i) {
@@ -306,7 +306,7 @@
 					isDNInboxPromptBannerPersistEnabled: m.b,
 					isInboxExposureBannerEnabled: m.d,
 					isInboxInfiniteScrollEnabled: m.h,
-					isInboxPolicyBannerEnabled: m.i,
+					isInboxPolicyBannerEnabled: m.j,
 					isInboxPostEmbedEnabled: m.f,
 					isPending: h.e,
 					messagesBadgeCount: g.h,
@@ -349,30 +349,31 @@
 				isInboxPolicyBannerEnabled: j,
 				isInboxInfiniteScrollEnabled: x,
 				isInboxPostEmbedEnabled: v,
-				isOpen: S,
-				isPending: k,
-				isPushNotificationsSupported: N,
-				markAllAsRead: w,
-				markNotificationAsRead: I,
-				messagesBadgeCount: y,
-				notifications: P,
-				showBrowserNotificationsPermissionSettings: _,
-				updateInboxActivitySeenState: E,
-				userId: B
+				isLoggedIn: S,
+				isOpen: k,
+				isPending: N,
+				isPushNotificationsSupported: w,
+				markAllAsRead: I,
+				markNotificationAsRead: y,
+				messagesBadgeCount: P,
+				notifications: _,
+				showBrowserNotificationsPermissionSettings: E,
+				updateInboxActivitySeenState: B,
+				userId: F
 			}) => {
-				const F = Object(f.a)(),
-					[C, A] = Object(n.useState)("");
+				const C = Object(f.a)(),
+					[A, R] = Object(n.useState)("");
 				return Object(n.useEffect)(() => {
-					if (S && !P.length) {
+					if (k && !_.length && S) {
 						r({
 							first: 5
 						})
 					}
-					S && (E(), F(Object(l.p)({
+					k && S && (B(), C(Object(l.p)({
 						badgeCount: g
 					})))
-				}, [S]), s.a.createElement(b.b, {
-					activeOverflowMenuId: C,
+				}, [k]), s.a.createElement(b.b, {
+					activeOverflowMenuId: A,
 					clearMessageTabBadgeCount: e,
 					cursor: t,
 					decreaseSubredditNotifications: i,
@@ -384,20 +385,21 @@
 					hideTooltip: u,
 					blockAwarder: p,
 					inboxBadgeCount: g,
-					isDNInboxPromptBannerFirstTimeEnabled: m && N,
-					isDNInboxPromptBannerPersistEnabled: h && N,
+					isDNInboxPromptBannerFirstTimeEnabled: m && w,
+					isDNInboxPromptBannerPersistEnabled: h && w,
 					isInboxExposureBannerEnabled: O,
 					isInboxPolicyBannerEnabled: j,
 					isInboxInfiniteScrollEnabled: x,
 					isInboxPostEmbedEnabled: v,
-					isPending: k,
-					markAllAsRead: w,
-					markNotificationAsRead: I,
-					messagesBadgeCount: y,
-					notifications: P,
-					setActiveOverflowMenuId: A,
-					showBrowserNotificationsPermissionSettings: _,
-					userId: B
+					isLoggedIn: S,
+					isPending: N,
+					markAllAsRead: I,
+					markNotificationAsRead: y,
+					messagesBadgeCount: P,
+					notifications: _,
+					setActiveOverflowMenuId: R,
+					showBrowserNotificationsPermissionSettings: E,
+					userId: F
 				})
 			})
 		},
@@ -535,4 +537,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InboxTooltip.10fe5242528a080a2161.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InboxTooltip.fa787afb57490e3978e7.js.map

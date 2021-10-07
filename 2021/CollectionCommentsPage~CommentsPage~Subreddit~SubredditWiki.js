@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.23be42455a779050a9d9.js
-// Retrieved at 10/7/2021, 12:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.01e2c68d2c9aa732c76f.js
+// Retrieved at 10/7/2021, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"], {
 		"./src/lib/linkMatchers/index.ts": function(e, t, r) {
@@ -120,9 +120,9 @@
 			})), r.d(t, "getSubredditUserCommentsPowerupsInfoFromCommentCollection", (function() {
 				return P
 			})), r.d(t, "setSubredditUserAchievementFlair", (function() {
-				return T
-			})), r.d(t, "setSubredditUserSupporterFlair", (function() {
 				return F
+			})), r.d(t, "setSubredditUserSupporterFlair", (function() {
+				return T
 			})), r.d(t, "setSubredditUserPowerupsFlairsVisibility", (function() {
 				return M
 			}));
@@ -236,7 +236,7 @@
 					Object.values(t).forEach(e => {
 						s.add(e.authorId)
 					}), await r(I(e, Array.from(s)))
-				}, T = (e, t) => async (r, n) => {
+				}, F = (e, t) => async (r, n) => {
 					const s = n(),
 						i = Object(g.k)(s);
 					if (!i) return;
@@ -251,7 +251,7 @@
 						achievementFlairType: t,
 						supporterFlairType: o
 					}))
-				}, F = (e, t) => async (r, n) => {
+				}, T = (e, t) => async (r, n) => {
 					const s = n(),
 						i = Object(g.k)(s);
 					if (!i) return;
@@ -459,7 +459,7 @@
 						pollId: t,
 						prediction: a.poll
 					})), a.poll
-				}, T = Object(l.a)(y.c), F = Object(l.a)(y.d), L = Object(l.a)(y.g), M = e => async (t, r, {
+				}, F = Object(l.a)(y.c), T = Object(l.a)(y.d), L = Object(l.a)(y.g), M = e => async (t, r, {
 					gqlContext: n
 				}) => {
 					const s = r(),
@@ -471,7 +471,7 @@
 					if (a) return Object(O.f)(s, {
 						subredditId: i
 					});
-					t(T({
+					t(F({
 						subredditId: i
 					}));
 					const d = await Object(u.k)(n(), {
@@ -489,7 +489,7 @@
 						})
 					});
 					const l = d.map(e => Object(p.a)(e));
-					return t(F({
+					return t(T({
 						subredditId: i,
 						tournaments: l
 					})), t(L({
@@ -520,7 +520,7 @@
 					const {
 						tournament: c
 					} = d;
-					return t(F({
+					return t(T({
 						subredditId: e,
 						tournaments: [c]
 					})), c
@@ -1732,8 +1732,8 @@
 					rel: "noopener"
 				}, e.text))),
 				P = r("./src/reddit/selectors/subreddit.ts"),
-				T = r("./src/reddit/actions/subreddit.ts"),
-				F = r("./src/reddit/hooks/usePageLayer.ts");
+				F = r("./src/reddit/actions/subreddit.ts"),
+				T = r("./src/reddit/hooks/usePageLayer.ts");
 			const {
 				fbt: L
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), M = Object(a.c)({
@@ -1747,7 +1747,7 @@
 				})
 			});
 			var A = Object(i.b)(M, (e, t) => ({
-					onActivate: () => e(Object(T.p)({
+					onActivate: () => e(Object(F.p)({
 						subredditId: t.subredditId,
 						forceState: !0
 					}))
@@ -1756,7 +1756,7 @@
 					isActive: t,
 					onActivate: r
 				}) => {
-					const n = Object(F.a)();
+					const n = Object(T.a)();
 					return e ? s.a.createElement(y, {
 						className: x.a.metaNavLink,
 						to: e.url,
@@ -1781,7 +1781,7 @@
 				subredditId: e
 			}) {
 				const t = Object(i.d)(),
-					r = Object(F.a)(),
+					r = Object(T.a)(),
 					a = Object(H.a)(),
 					o = Object(B.N)(r),
 					[d, c] = Object(n.useState)(!1),
@@ -1807,7 +1807,7 @@
 					className: x.a.predictionsFilter,
 					isActive: o,
 					onClick: () => {
-						t(Object(T.p)({
+						t(Object(F.p)({
 							subredditId: e,
 							forceState: !1
 						})), a(Object(D.i)())
@@ -1833,7 +1833,7 @@
 					isPredictionsPage: (e, t) => !!t.pageLayer && Object(d.N)(t.pageLayer)
 				});
 			var K = q(Object(i.b)(Q, (e, t) => ({
-					onTurnOffMetaFilter: () => e(Object(T.p)({
+					onTurnOffMetaFilter: () => e(Object(F.p)({
 						subredditId: t.subredditId,
 						forceState: !1
 					}))
@@ -2426,19 +2426,19 @@
 				S = r("./node_modules/fbt/lib/FbtPublic.js"),
 				N = r("./src/reddit/components/HumanDate/index.tsx"),
 				P = r("./src/reddit/controls/TextButton/index.tsx"),
-				T = r("./src/reddit/components/Widgets/Calendar/index.m.less"),
-				F = r.n(T);
+				F = r("./src/reddit/components/Widgets/Calendar/index.m.less"),
+				T = r.n(F);
 			const L = 100,
 				M = {
 					isExpanded: !1
 				},
-				A = m.a.wrapped(o.a, "RawHTMLDisplay", F.a),
-				R = m.a.div("EventContainer", F.a),
-				B = m.a.div("EventTitle", F.a),
-				D = m.a.div("EventDate", F.a),
-				H = m.a.div("EventLocation", F.a),
-				W = m.a.div("EventDescription", F.a),
-				U = m.a.wrapped(P.a, "ToggleDescription", F.a);
+				A = m.a.wrapped(o.a, "RawHTMLDisplay", T.a),
+				R = m.a.div("EventContainer", T.a),
+				B = m.a.div("EventTitle", T.a),
+				D = m.a.div("EventDate", T.a),
+				H = m.a.div("EventLocation", T.a),
+				W = m.a.div("EventDescription", T.a),
+				U = m.a.wrapped(P.a, "ToggleDescription", T.a);
 			class G extends s.a.Component {
 				constructor(e) {
 					super(e), this.toggleDescriptionView = () => {
@@ -2681,13 +2681,13 @@
 				Se = r("./src/reddit/components/Widgets/TextArea/index.m.less"),
 				Ne = r.n(Se);
 			const Pe = m.a.div("WidgetContent", Ne.a),
-				Te = m.a.wrapped(o.a, "RawHTMLDisplay", Ne.a);
-			var Fe = e => s.a.createElement(d.a, {
+				Fe = m.a.wrapped(o.a, "RawHTMLDisplay", Ne.a);
+			var Te = e => s.a.createElement(d.a, {
 					styles: e.widget.styles,
 					title: e.widget.shortName,
 					truncateThreshold: e.truncateThreshold,
 					widgetKind: e.widget.kind
-				}, s.a.createElement(Pe, null, s.a.createElement(Te, {
+				}, s.a.createElement(Pe, null, s.a.createElement(Fe, {
 					html: e.widget.textHtml || ""
 				}))),
 				Le = r("./src/reddit/components/Widgets/Base/index.tsx");
@@ -2699,7 +2699,7 @@
 						case "moderators":
 							return Ee;
 						case "textarea":
-							return Fe;
+							return Te;
 						case "button":
 							return C;
 						case "subreddit-rules":
@@ -2754,9 +2754,9 @@
 			})), r.d(t, "c", (function() {
 				return P
 			})), r.d(t, "e", (function() {
-				return T
-			})), r.d(t, "l", (function() {
 				return F
+			})), r.d(t, "l", (function() {
+				return T
 			}));
 			var n = r("./src/lib/makeGqlRequest/index.ts"),
 				s = r("./src/lib/makeRequest/index.ts"),
@@ -2883,7 +2883,7 @@
 					});
 					if (!Object(s.c)(o) || !(null === (r = o.body.data.cancelPrediction) || void 0 === r ? void 0 : r.ok) || !(null === (i = o.body.data.cancelPrediction) || void 0 === i ? void 0 : i.poll)) throw new Error("Unable to cancel prediction");
 					return o.body.data.cancelPrediction.poll
-				}, T = async (e, t) => {
+				}, F = async (e, t) => {
 					var r, i;
 					const a = await Object(n.a)(e, {
 						...d,
@@ -2893,7 +2893,7 @@
 					});
 					if (!Object(s.c)(a) || !(null === (r = a.body.data.changePredictionVote) || void 0 === r ? void 0 : r.ok) || !(null === (i = a.body.data.changePredictionVote) || void 0 === i ? void 0 : i.poll)) throw new Error("Unable to change prediction.");
 					return a.body.data.changePredictionVote.poll
-				}, F = async (e, t) => {
+				}, T = async (e, t) => {
 					const r = await Object(n.a)(e, {
 						...m,
 						variables: t
@@ -3496,8 +3496,8 @@
 			const o = e => s.e[Object(i.Q)(e, {})] === s.d.Card,
 				d = e => Object(a.c)(e, {
 					experimentEligibilitySelector: o,
-					experimentName: n.ab
-				}) === n.Db.Treatment
+					experimentName: n.bb
+				}) === n.Fb.Treatment
 		},
 		"./src/reddit/selectors/features/predictions/creation/index.ts": function(e, t, r) {
 			"use strict";
@@ -3601,4 +3601,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.23be42455a779050a9d9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.01e2c68d2c9aa732c76f.js.map

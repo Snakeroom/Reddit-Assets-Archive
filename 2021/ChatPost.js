@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.043bfc19d90afa0070e4.js
-// Retrieved at 10/7/2021, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.6709065aeee224ef981d.js
+// Retrieved at 10/7/2021, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -305,13 +305,13 @@
 			var Q = s("./src/reddit/components/Comments/Comment/TopMeta/edited.m.less"),
 				Y = s.n(Q);
 			const {
-				fbt: Z
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), X = ({
+				fbt: X
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), Z = ({
 				compact: e,
 				editedAt: t
 			}) => r.a.createElement(x.a, {
 				className: Y.a.editedText
-			}, Z._("edited {time}", [Z._param("time", r.a.createElement(W.d, {
+			}, X._("edited {time}", [X._param("time", r.a.createElement(W.d, {
 				seconds: t,
 				noPostfix: e,
 				shortenedUnit: e
@@ -620,7 +620,7 @@
 					className: ye.a.separator
 				}), r.a.createElement(Ee, null)), i.editedAt && r.a.createElement(r.a.Fragment, null, r.a.createElement(x.c, {
 					className: ye.a.separator
-				}), r.a.createElement(X, {
+				}), r.a.createElement(Z, {
 					compact: !0,
 					editedAt: i.editedAt
 				})), r.a.createElement(me, {
@@ -785,7 +785,7 @@
 					className: Le.a.separator
 				}), r.a.createElement(Ee, null)), a.editedAt && r.a.createElement(r.a.Fragment, null, r.a.createElement(x.c, {
 					className: Le.a.separator
-				}), r.a.createElement(X, {
+				}), r.a.createElement(Z, {
 					editedAt: a.editedAt
 				}))), r.a.createElement(me, {
 					comment: a,
@@ -1489,8 +1489,8 @@
 				G = Object(v.a)(z.c),
 				Q = Object(v.a)(z.a),
 				Y = Object(v.a)(z.d),
-				Z = {},
-				X = (e, t, s, n) => async (o, r) => {
+				X = {},
+				Z = (e, t, s, n) => async (o, r) => {
 					(e => new Promise(t => {
 						const {
 							cb: s,
@@ -1514,7 +1514,7 @@
 										c = Object(V.b)(i, {
 											commentId: s
 										}),
-										d = !(!s || !Z[s]);
+										d = !(!s || !X[s]);
 									if (a && !d) {
 										const s = w(0, n, t.payload),
 											r = t.payload.total_comment_count;
@@ -1581,7 +1581,7 @@
 										});
 									n && !n.isDeleted ? o(Q({
 										id: e
-									})) : Z[e] = R.DELETE_COMMENT;
+									})) : X[e] = R.DELETE_COMMENT;
 									break
 								}
 								case R.REMOVE_COMMENT: {
@@ -1595,7 +1595,7 @@
 										c = !!e && !!Object(q.l)(n, {
 											postId: e
 										});
-									!a || a.isRemoved && a.isDeleted || i || c ? Z[s] = R.REMOVE_COMMENT : o(Q({
+									!a || a.isRemoved && a.isDeleted || i || c ? X[s] = R.REMOVE_COMMENT : o(Q({
 										id: s
 									}));
 									break
@@ -1786,8 +1786,8 @@
 				Ge = s("./src/reddit/components/ReportFlow/new.tsx"),
 				Qe = s("./src/reddit/components/TrackingHelper/index.tsx"),
 				Ye = s("./src/reddit/icons/svgs/Approve/index.tsx"),
-				Ze = s("./src/reddit/icons/svgs/Edit/index.tsx"),
-				Xe = s("./src/reddit/icons/svgs/Flag/index.tsx"),
+				Xe = s("./src/reddit/icons/svgs/Edit/index.tsx"),
+				Ze = s("./src/reddit/icons/svgs/Flag/index.tsx"),
 				$e = s("./src/reddit/icons/svgs/Hide/index.tsx"),
 				et = s("./src/reddit/icons/svgs/Moderate/index.tsx"),
 				tt = s("./src/reddit/icons/svgs/Remove/index.tsx"),
@@ -1809,8 +1809,8 @@
 				}).apply(this, arguments)
 			}
 			const lt = re.a.wrapped($e.a, "BlockIcon", Be.a),
-				mt = re.a.wrapped(Xe.a, "FlagIcon", Be.a),
-				ut = re.a.wrapped(Ze.a, "EditIcon", Be.a),
+				mt = re.a.wrapped(Ze.a, "FlagIcon", Be.a),
+				ut = re.a.wrapped(Xe.a, "EditIcon", Be.a),
 				pt = re.a.wrapped(Ye.a, "ApproveIcon", Be.a),
 				ht = re.a.wrapped(st.a, "ReplyIcon", Be.a),
 				bt = re.a.wrapped(tt.a, "RemoveIcon", Be.a),
@@ -2103,9 +2103,9 @@
 				Bt = s("./src/reddit/constants/experiments.ts"),
 				Dt = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const Ut = e => Object(Dt.c)(e, {
-				experimentName: Bt.cb,
+				experimentName: Bt.db,
 				experimentEligibilitySelector: Dt.a
-			}) === Bt.Z.Enabled;
+			}) === Bt.ab.Enabled;
 			var Wt = s("./src/reddit/selectors/communityAwards.ts");
 			const Ht = (e, {
 				commentId: t
@@ -2123,8 +2123,8 @@
 				Gt = 10,
 				Qt = re.a.wrapped(Ft.b, "ErrorText", zt.a),
 				Yt = re.a.wrapped(ce.a, "TopMeta", zt.a),
-				Zt = re.a.span("DeleteText", zt.a),
-				Xt = re.a.wrapped(wt, "Reply", zt.a),
+				Xt = re.a.span("DeleteText", zt.a),
+				Zt = re.a.wrapped(wt, "Reply", zt.a),
 				$t = Object(Pt.u)(),
 				es = Object(d.b)(() => Object(l.c)({
 					associatedAward: (e, {
@@ -2280,7 +2280,7 @@
 						icon: n.profileImage,
 						userId: n.authorId,
 						isNSFW: n.profileOver18 || n.authorIconIsNSFW
-					})), n.parentId && c.a.createElement(Xt, {
+					})), n.parentId && c.a.createElement(Zt, {
 						commentId: n.parentId,
 						onReplyClick: f,
 						isLivestreaming: l
@@ -2334,7 +2334,7 @@
 						[zt.a.Livestreaming]: e || !1
 					}),
 					trash: !0
-				}), c.a.createElement(Zt, null, te.fbt._("deleted", null, {
+				}), c.a.createElement(Xt, null, te.fbt._("deleted", null, {
 					hk: "4rQ3ZP"
 				})));
 			var rs = ns,
@@ -2562,7 +2562,7 @@
 					moreCommentsLink: K.E
 				}),
 				xs = Object(d.b)(gs, (e, t) => ({
-					onLiveCommentsSubscribe: (s, n, o) => e(X(s, n, o, t.subredditId)),
+					onLiveCommentsSubscribe: (s, n, o) => e(Z(s, n, o, t.subredditId)),
 					offLiveCommentsSubscribe: (t, s) => e(((e, t) => async () => {
 						F(0, t)
 					})(0, s)),
@@ -3653,4 +3653,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.043bfc19d90afa0070e4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.6709065aeee224ef981d.js.map
