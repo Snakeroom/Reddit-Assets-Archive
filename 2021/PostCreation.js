@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.27eecd8b06358ca63f56.js
-// Retrieved at 10/7/2021, 11:00:10 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.147365be4a5a8989be05.js
+// Retrieved at 10/7/2021, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, n) {
@@ -15629,45 +15629,69 @@
 		"./src/reddit/helpers/trackers/userFlair.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "c", (function() {
-				return s
-			})), n.d(t, "b", (function() {
 				return i
-			})), n.d(t, "a", (function() {
+			})), n.d(t, "b", (function() {
 				return a
+			})), n.d(t, "a", (function() {
+				return c
+			})), n.d(t, "d", (function() {
+				return d
 			}));
 			var o = n("./src/reddit/helpers/flair.ts"),
-				r = n("./src/reddit/selectors/telemetry.ts");
-			const s = () => e => ({
+				r = n("./src/reddit/selectors/gold/powerups/index.ts"),
+				s = n("./src/reddit/selectors/telemetry.ts");
+			const i = () => e => ({
 					source: "id_card",
 					action: "click",
 					noun: "user_flair_picker",
-					...r.defaults(e)
+					...s.defaults(e)
 				}),
-				i = e => t => {
-					const {
-						userFlair: n,
-						achievementFlair: s
-					} = e;
+				a = e => t => {
+					const n = s.subreddit(t),
+						i = Object(r.w)(t, {
+							subredditId: null == n ? void 0 : n.id
+						}),
+						{
+							userFlair: a,
+							achievementFlair: c,
+							supporterFlair: d
+						} = e,
+						l = c || d;
 					return {
 						source: "user_flair_picker",
 						action: "click",
 						noun: "user_flair",
-						...r.defaults(t),
+						...s.defaults(t),
+						subreddit: n,
 						userFlair: {
-							id: null == n ? void 0 : n.id,
-							title: n && Object(o.g)(n),
-							isActive: n && !!n,
-							achievementFlairId: null == s ? void 0 : s.type,
-							achievementFlairTitle: null == s ? void 0 : s.name,
-							isLocked: null == s ? void 0 : s.isLocked
+							id: null == a ? void 0 : a.id,
+							title: a ? Object(o.g)(a) : void 0,
+							isActive: !!a || void 0,
+							achievementFlairId: null == c ? void 0 : c.type,
+							achievementFlairTitle: null == c ? void 0 : c.name,
+							isLocked: null == l ? void 0 : l.isLocked,
+							supporterFlairId: null == d ? void 0 : d.type,
+							supporterFlairTitle: null == d ? void 0 : d.name,
+							isSupporter: i
 						}
 					}
 				},
-				a = () => e => ({
+				c = () => e => ({
 					source: "user_flair_picker",
 					action: "click",
 					noun: "edit_user_flair",
-					...r.defaults(e)
+					...s.defaults(e)
+				}),
+				d = e => t => ({
+					source: "user_flair_picker",
+					action: "click",
+					noun: "enable_powerups_flair",
+					setting: {
+						value: e ? "0" : "1",
+						oldValue: e ? "1" : "0"
+					},
+					subreddit: s.subreddit(t),
+					...s.defaults(t)
 				})
 		},
 		"./src/reddit/helpers/trackers/widgets.ts": function(e, t, n) {
@@ -23416,4 +23440,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.27eecd8b06358ca63f56.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.147365be4a5a8989be05.js.map

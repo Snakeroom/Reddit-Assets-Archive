@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.55b6bea64c64d585d6f8.js
-// Retrieved at 10/7/2021, 11:00:10 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.54d5f4df8da539ed3628.js
+// Retrieved at 10/7/2021, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~ModListing", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -15009,6 +15009,16 @@
 					e.CustomFeedDoesNotExist = "CustomFeedDoesNotExist", e.GoldSubreddit = "GoldSubreddit", e.Nsfw = "Nsfw", e.NsfwCustomFeed = "NsfwCustomFeed", e.PrivateSubreddit = "PrivateSubreddit", e.ProfileDoesNotExist = "ProfileDoesNotExist", e.ProfileDeleted = "ProfileDeleted", e.ProfileSuspended = "ProfileSuspended", e.ProfileBlockedForLegalReason = "ProfileBlockedForLegalReason", e.QuarantinedSubreddit = "QuarantinedSubreddit", e.SubredditBanned = "SubredditBanned", e.SubredditBlockedForLegalReason = "SubredditBlockedForLegalReason", e.SubredditDoesNotExist = "SubredditDoesNotExist", e.PostBlockedForLegalReason = "PostBlockedForLegalReason"
 				}(s || (s = {}))
 		},
+		"./src/reddit/models/Gold/Powerups/powerupsFlair/index.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "b", (function() {
+				return s
+			})), n.d(t, "a", (function() {
+				return r
+			}));
+			const s = e => (e => e.startsWith("POWERUPS_SUPPORTER"))(e.type),
+				r = e => !s(e)
+		},
 		"./src/reddit/models/NotificationInbox/index.ts": function(e, t, n) {
 			"use strict";
 			var s, r, o, i;
@@ -15900,48 +15910,47 @@
 		"./src/reddit/reducers/features/powerups/index.ts": function(e, t, n) {
 			"use strict";
 			var s = n("./node_modules/redux/es/redux.js"),
-				r = n("./src/reddit/actions/gold/constants.ts");
-			const o = e => (e => e.startsWith("POWERUPS_SUPPORTER"))(e.type),
-				i = e => !o(e),
-				a = {};
-			var c = n("./node_modules/icepick/icepick.js"),
-				d = n("./src/reddit/actions/economics/powerups/constants.ts");
-			const l = {},
-				u = e => {
+				r = n("./src/reddit/actions/gold/constants.ts"),
+				o = n("./src/reddit/models/Gold/Powerups/powerupsFlair/index.ts");
+			const i = {};
+			var a = n("./node_modules/icepick/icepick.js"),
+				c = n("./src/reddit/actions/economics/powerups/constants.ts");
+			const d = {},
+				l = e => {
 					var t, n;
 					return (null === (t = e.find(({
 						isPreferred: e
 					}) => e)) || void 0 === t ? void 0 : t.type) || (null === (n = e[0]) || void 0 === n ? void 0 : n.type)
 				},
-				m = {};
+				u = {};
 			t.a = Object(s.c)({
-				subredditPowerupsFlairs: (e = a, t) => {
+				subredditPowerupsFlairs: (e = i, t) => {
 					switch (t.type) {
 						case r.pb:
 							const {
 								subredditId: n, subredditAchievementFlairs: s
 							} = t.payload;
 							if (!(null == s ? void 0 : s.length)) return e;
-							const a = s.reduce((e, t) => ({
+							const i = s.reduce((e, t) => ({
 									...e,
 									[t.type]: t
 								}), {}),
-								c = s.filter(i).map(e => e.type),
-								d = s.filter(o).map(e => e.type);
+								a = s.filter(o.a).map(e => e.type),
+								c = s.filter(o.b).map(e => e.type);
 							return {
 								...e, [n]: {
-									flairsByType: a,
-									achievementTypes: c,
-									supporterTypes: d
+									flairsByType: i,
+									achievementTypes: a,
+									supporterTypes: c
 								}
 							};
 						default:
 							return e
 					}
 				},
-				subredditUserPowerupsFlairs: (e = l, t) => {
+				subredditUserPowerupsFlairs: (e = d, t) => {
 					switch (t.type) {
-						case d.d: {
+						case c.d: {
 							const {
 								id: n,
 								userAchievementFlairsByRedditorIds: s
@@ -15950,25 +15959,25 @@
 							for (const {
 									redditorId: e,
 									isHidden: t,
-									userAchievementFlairs: a
+									userAchievementFlairs: i
 								} of s) {
-								const n = a.filter(i),
+								const n = i.filter(o.a),
 									s = n.map(({
 										type: e
 									}) => e),
-									c = a.filter(o),
-									d = c.map(({
+									a = i.filter(o.b),
+									c = a.map(({
 										type: e
 									}) => e),
-									l = u(n),
-									m = u(c);
+									d = l(n),
+									u = l(a);
 								r = {
 									...r,
 									[e]: {
 										achievementTypes: s,
-										supporterTypes: d,
-										preferredAchievementType: l,
-										preferredSupporterType: m,
+										supporterTypes: c,
+										preferredAchievementType: d,
+										preferredSupporterType: u,
 										isHidden: t
 									}
 								}
@@ -15978,27 +15987,27 @@
 								[n]: r
 							}
 						}
-						case d.f: {
+						case c.f: {
 							const {
 								subredditId: n,
 								userId: s,
 								achievementFlairType: r,
 								supporterFlairType: o
 							} = t.payload;
-							return Object(c.updateIn)(e, [n, s], e => ({
+							return Object(a.updateIn)(e, [n, s], e => ({
 								...e,
 								pendingAchievementType: r,
 								pendingSupporterType: o
 							}))
 						}
-						case d.g: {
+						case c.g: {
 							const {
 								subredditId: n,
 								userId: s,
 								achievementFlairType: r,
 								supporterFlairType: o
 							} = t.payload;
-							return Object(c.updateIn)(e, [n, s], e => ({
+							return Object(a.updateIn)(e, [n, s], e => ({
 								...e,
 								preferredAchievementType: r,
 								preferredSupporterType: o,
@@ -16006,24 +16015,24 @@
 								pendingSupporterType: void 0
 							}))
 						}
-						case d.e: {
+						case c.e: {
 							const {
 								subredditId: n,
 								userId: s
 							} = t.payload;
-							return Object(c.updateIn)(e, [n, s], e => ({
+							return Object(a.updateIn)(e, [n, s], e => ({
 								...e,
 								pendingAchievementType: void 0,
 								pendingSupporterType: void 0
 							}))
 						}
-						case d.h: {
+						case c.h: {
 							const {
 								subredditId: n,
 								userId: s,
 								isHidden: r
 							} = t.payload;
-							return Object(c.updateIn)(e, [n, s], e => ({
+							return Object(a.updateIn)(e, [n, s], e => ({
 								...e,
 								isHidden: r
 							}))
@@ -16032,9 +16041,9 @@
 							return e
 					}
 				},
-				usersSupportedSubreddits: (e = m, t) => {
+				usersSupportedSubreddits: (e = u, t) => {
 					switch (t.type) {
-						case d.i: {
+						case c.i: {
 							let n = {};
 							return t.payload.forEach(e => {
 								const t = e.id,
@@ -17076,4 +17085,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.55b6bea64c64d585d6f8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.54d5f4df8da539ed3628.js.map
