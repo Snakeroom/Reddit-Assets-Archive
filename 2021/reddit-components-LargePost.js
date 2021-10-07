@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.16a3a6302e259c16dd3f.js
-// Retrieved at 10/7/2021, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.26e99ac1bf0a925fe25e.js
+// Retrieved at 10/7/2021, 12:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost", "Reddit~StandalonePostPage~reddit-components-MediumPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1796,19 +1796,13 @@
 			const {
 				fbt: m
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), p = ({
-				tournamentStatus: e,
-				participantsCount: t
-			}) => 0 === t ? null : e === c.a.Live ? m._({
-				"*": "· {total participated users} users predicting",
-				_1: "· {total participated users} user predicting"
-			}, [m._param("total participated users", Object(u.b)(t)), m._plural(t)], {
-				hk: "1PPQpS"
-			}) : e === c.a.Closed ? m._({
-				"*": "· {total participated users} users predicted",
-				_1: "· {total participated users} user predicted"
-			}, [m._param("total participated users", Object(u.b)(t)), m._plural(t)], {
-				hk: "4ehhqy"
-			}) : null;
+				participantsCount: e
+			}) => 0 === e ? null : m._({
+				"*": "· {total participated users} players",
+				_1: "· {total participated users} player"
+			}, [m._param("total participated users", Object(u.b)(e)), m._plural(e)], {
+				hk: "1yrPLH"
+			});
 			var b = n("./src/reddit/components/Econ/Prediction/TournamentPostTitle/index.m.less"),
 				f = n.n(b);
 			const {
@@ -1842,7 +1836,6 @@
 				})), u && o.a.createElement("span", {
 					className: f.a.predictions
 				}, o.a.createElement(p, {
-					tournamentStatus: t.status,
 					participantsCount: t.totalParticipantsCount
 				}))), o.a.createElement(a.a, {
 					className: f.a.awards,
@@ -7231,4 +7224,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.16a3a6302e259c16dd3f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.26e99ac1bf0a925fe25e.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.8601954dad09ef222516.js
-// Retrieved at 10/7/2021, 12:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.679323baee632deaa6d9.js
+// Retrieved at 10/7/2021, 12:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "CommentsPage"], {
 		"./src/lib/makeCollectionCommentsPageKey/index.ts": function(e, t, s) {
@@ -4420,19 +4420,13 @@
 			const {
 				fbt: p
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), u = ({
-				tournamentStatus: e,
-				participantsCount: t
-			}) => 0 === t ? null : e === d.a.Live ? p._({
-				"*": "· {total participated users} users predicting",
-				_1: "· {total participated users} user predicting"
-			}, [p._param("total participated users", Object(m.b)(t)), p._plural(t)], {
-				hk: "1PPQpS"
-			}) : e === d.a.Closed ? p._({
-				"*": "· {total participated users} users predicted",
-				_1: "· {total participated users} user predicted"
-			}, [p._param("total participated users", Object(m.b)(t)), p._plural(t)], {
-				hk: "4ehhqy"
-			}) : null;
+				participantsCount: e
+			}) => 0 === e ? null : p._({
+				"*": "· {total participated users} players",
+				_1: "· {total participated users} player"
+			}, [p._param("total participated users", Object(m.b)(e)), p._plural(e)], {
+				hk: "1yrPLH"
+			});
 			var h = s("./src/reddit/components/Econ/Prediction/TournamentPostTitle/index.m.less"),
 				b = s.n(h);
 			const {
@@ -4466,7 +4460,6 @@
 				})), m && r.a.createElement("span", {
 					className: b.a.predictions
 				}, r.a.createElement(u, {
-					tournamentStatus: t.status,
 					participantsCount: t.totalParticipantsCount
 				}))), r.a.createElement(a.a, {
 					className: b.a.awards,
@@ -9294,4 +9287,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.8601954dad09ef222516.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.679323baee632deaa6d9.js.map
