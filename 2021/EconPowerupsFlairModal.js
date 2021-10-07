@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.86c5eab8ed2978cba631.js
-// Retrieved at 10/7/2021, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.707e0c92304e89c21698.js
+// Retrieved at 10/7/2021, 4:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsFlairModal"], {
 		"./src/reddit/actions/economics/powerups/flairs/index.ts": function(e, t, r) {
@@ -667,7 +667,7 @@
 				Q = r.n(R);
 			const {
 				fbt: G
-			} = r("./node_modules/fbt/lib/FbtPublic.js"), z = ({
+			} = r("./node_modules/fbt/lib/FbtPublic.js"), K = ({
 				className: e,
 				subredditId: t,
 				userId: r
@@ -717,22 +717,22 @@
 					onSelect: u
 				}))), (() => d && !c ? i.a.createElement(E.a, {
 					onClick: () => {
-						o(Object(P.z)()), p()
+						o(Object(P.F)()), p()
 					}
 				}) : d ? null : i.a.createElement(g.s, {
 					priority: g.b.Primary,
 					className: Q.a.powerupButton,
 					isFullWidth: !0,
 					onClick: () => {
-						o(Object(P.v)()), p()
+						o(Object(P.B)()), p()
 					}
 				}, G._("Powerup to Unlock", null, {
 					hk: "M8l7D"
 				})))())
 			};
-			var K = r("./src/reddit/controls/ToggleSwitch/index.tsx"),
-				W = r("./src/reddit/components/Econ/PowerupsFlair/PowerupsFlairModal/FlairsSection.m.less"),
-				V = r.n(W);
+			var W = r("./src/reddit/controls/ToggleSwitch/index.tsx"),
+				z = r("./src/reddit/components/Econ/PowerupsFlair/PowerupsFlairModal/FlairsSection.m.less"),
+				V = r.n(z);
 			const q = ({
 				className: e,
 				title: t,
@@ -808,7 +808,7 @@
 					className: Y.a.flairsVisibilityLabel
 				}, Z._("Show Supporter and Achievement Flair", null, {
 					hk: "3755UL"
-				})), i.a.createElement(K.a, {
+				})), i.a.createElement(W.a, {
 					className: Y.a.flairsVisibilitySwitch,
 					disabled: !c,
 					on: c && !d,
@@ -819,7 +819,7 @@
 				})), i.a.createElement(E.a, {
 					className: Y.a.button,
 					onClick: () => {
-						r(Object(P.y)()), o(Object(y.f)("user_flair_picker"))
+						r(Object(P.E)()), o(Object(y.f)("user_flair_picker"))
 					}
 				}))
 			};
@@ -893,7 +893,7 @@
 				}), b ? i.a.createElement($, {
 					subredditId: r.id,
 					userId: t.id
-				}) : i.a.createElement(z, {
+				}) : i.a.createElement(K, {
 					subredditId: r.id,
 					userId: t.id
 				})) : null
@@ -1395,4 +1395,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.86c5eab8ed2978cba631.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.707e0c92304e89c21698.js.map

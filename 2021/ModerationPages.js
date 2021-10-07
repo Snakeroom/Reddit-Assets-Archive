@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.31b826cd929b5a8774b7.js
-// Retrieved at 10/7/2021, 2:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.9a16c67bb6c0e2ccace5.js
+// Retrieved at 10/7/2021, 4:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -13087,7 +13087,7 @@
 					}, e => {
 						s(Object(E.a)(e, "mod_tools"))
 					}, e => {
-						s(Object(E.s)(e, "mod_tools")), t(Object(h.f)({
+						s(Object(E.y)(e, "mod_tools")), t(Object(h.f)({
 							duration: h.a,
 							kind: C.b.SuccessCommunity,
 							text: i.fbt._({
@@ -13209,7 +13209,7 @@
 				})), a.a.createElement(w.o, {
 					on: h,
 					onClick: () => (n => {
-						s(Object(E.A)("comments_with_gifs", n, !n)), t(Object(l.m)(e, {
+						s(Object(E.G)("comments_with_gifs", n, !n)), t(Object(l.m)(e, {
 							[I.a.CommentsWithGifs]: n
 						}))
 					})(!h),
@@ -22530,4 +22530,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.31b826cd929b5a8774b7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.9a16c67bb6c0e2ccace5.js.map

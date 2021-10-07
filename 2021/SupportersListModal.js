@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SupportersListModal.35ec62669a8e6e8770ee.js
-// Retrieved at 10/6/2021, 4:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SupportersListModal.5e8d435f178daba31359.js
+// Retrieved at 10/7/2021, 4:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SupportersListModal"], {
 		"./src/reddit/components/Econ/Common/ModalCloseButton/index.m.less": function(e, t, s) {
@@ -136,7 +136,7 @@
 					className: b.a.user,
 					to: `/user/${E}/`,
 					onClick: () => {
-						h && r(Object(d.C)(h.id, h.displayName))
+						h && r(Object(d.I)(h.id, h.displayName))
 					}
 				}, v) : n.a.createElement("div", {
 					className: b.a.user
@@ -442,7 +442,7 @@
 				}), n.a.createElement(p.a, {
 					className: z.a.ctaButton,
 					onClick: () => {
-						h(Object(_.u)()), f(Object(i.f)("supporters_list_modal"))
+						h(Object(_.A)()), f(Object(i.f)("supporters_list_modal"))
 					}
 				}))) : (f(Object(d.f)({
 					kind: k.b.Error,
@@ -617,4 +617,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SupportersListModal.35ec62669a8e6e8770ee.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SupportersListModal.5e8d435f178daba31359.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.b1aa753fbb1fe2cc3e85.js
-// Retrieved at 10/7/2021, 2:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.3af5ab5dd27b242d8049.js
+// Retrieved at 10/7/2021, 4:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~Subreddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, r) {
@@ -3056,64 +3056,76 @@
 		},
 		"./src/reddit/helpers/trackers/powerups.ts": function(e, t, r) {
 			"use strict";
-			r.d(t, "B", (function() {
+			r.d(t, "H", (function() {
 				return s
-			})), r.d(t, "r", (function() {
+			})), r.d(t, "x", (function() {
 				return c
-			})), r.d(t, "t", (function() {
+			})), r.d(t, "z", (function() {
 				return a
-			})), r.d(t, "C", (function() {
+			})), r.d(t, "I", (function() {
 				return d
 			})), r.d(t, "j", (function() {
 				return u
-			})), r.d(t, "n", (function() {
+			})), r.d(t, "t", (function() {
 				return f
-			})), r.d(t, "m", (function() {
-				return p
-			})), r.d(t, "c", (function() {
-				return _
-			})), r.d(t, "b", (function() {
-				return m
-			})), r.d(t, "e", (function() {
-				return b
-			})), r.d(t, "u", (function() {
-				return g
-			})), r.d(t, "z", (function() {
-				return h
-			})), r.d(t, "v", (function() {
-				return O
-			})), r.d(t, "y", (function() {
-				return I
-			})), r.d(t, "h", (function() {
-				return v
-			})), r.d(t, "g", (function() {
-				return y
-			})), r.d(t, "i", (function() {
-				return j
 			})), r.d(t, "q", (function() {
-				return w
-			})), r.d(t, "o", (function() {
-				return S
-			})), r.d(t, "p", (function() {
-				return k
-			})), r.d(t, "f", (function() {
-				return E
-			})), r.d(t, "w", (function() {
-				return x
-			})), r.d(t, "k", (function() {
-				return T
-			})), r.d(t, "a", (function() {
-				return C
+				return p
 			})), r.d(t, "s", (function() {
-				return P
-			})), r.d(t, "d", (function() {
-				return D
-			})), r.d(t, "l", (function() {
-				return N
-			})), r.d(t, "x", (function() {
-				return R
+				return _
+			})), r.d(t, "r", (function() {
+				return m
+			})), r.d(t, "p", (function() {
+				return b
+			})), r.d(t, "m", (function() {
+				return g
+			})), r.d(t, "o", (function() {
+				return h
+			})), r.d(t, "n", (function() {
+				return O
+			})), r.d(t, "c", (function() {
+				return I
+			})), r.d(t, "b", (function() {
+				return v
+			})), r.d(t, "e", (function() {
+				return y
 			})), r.d(t, "A", (function() {
+				return j
+			})), r.d(t, "F", (function() {
+				return w
+			})), r.d(t, "B", (function() {
+				return S
+			})), r.d(t, "E", (function() {
+				return k
+			})), r.d(t, "h", (function() {
+				return E
+			})), r.d(t, "g", (function() {
+				return x
+			})), r.d(t, "i", (function() {
+				return T
+			})), r.d(t, "w", (function() {
+				return C
+			})), r.d(t, "u", (function() {
+				return P
+			})), r.d(t, "v", (function() {
+				return D
+			})), r.d(t, "f", (function() {
+				return N
+			})), r.d(t, "C", (function() {
+				return R
+			})), r.d(t, "k", (function() {
 				return L
+			})), r.d(t, "a", (function() {
+				return A
+			})), r.d(t, "y", (function() {
+				return U
+			})), r.d(t, "d", (function() {
+				return B
+			})), r.d(t, "l", (function() {
+				return F
+			})), r.d(t, "D", (function() {
+				return H
+			})), r.d(t, "G", (function() {
+				return M
 			}));
 			var n = r("./src/reddit/helpers/correlationIdTracker.ts"),
 				o = r("./src/reddit/selectors/telemetry.ts");
@@ -3177,20 +3189,60 @@
 					correlationId: Object(n.d)(n.a.PowerupsFlow, !0)
 				}),
 				_ = () => e => ({
+					source: "powerups",
+					action: "view",
+					noun: "post_upsell_unlock_avatar",
+					...i(e),
+					correlationId: Object(n.d)(n.a.PowerupsFlow, !0)
+				}),
+				m = () => e => ({
+					source: "powerups",
+					action: "click",
+					noun: "post_upsell_unlock_avatar",
+					...i(e),
+					correlationId: Object(n.d)(n.a.PowerupsFlow, !0)
+				}),
+				b = () => e => ({
+					source: "powerups",
+					action: "view",
+					noun: "post_upsell_avatar",
+					...i(e),
+					correlationId: Object(n.d)(n.a.PowerupsFlow, !0)
+				}),
+				g = () => e => ({
+					source: "powerups_post_upsell_avatar",
+					action: "click",
+					noun: "post_upsell_avatar_cta",
+					...i(e),
+					correlationId: Object(n.d)(n.a.PowerupsFlow, !0)
+				}),
+				h = () => e => ({
+					source: "powerups_post_upsell_avatar_modal",
+					action: "view",
+					noun: "powerups_modal",
+					...i(e)
+				}),
+				O = () => e => ({
+					source: "powerups_post_upsell_avatar_modal",
+					action: "click",
+					noun: "post_upsell_avatar_modal_cta",
+					...i(e)
+				}),
+				I = () => e => ({
 					source: "powerups_community_feed",
 					action: "view",
 					noun: "powerups_mod_enable_banner",
 					...i(e),
 					correlationId: Object(n.d)(n.a.PowerupsFlow, !1)
 				}),
-				m = () => e => ({
+				v = () => e => ({
 					source: "powerups_community_feed",
 					action: "click",
 					noun: "powerups_mod_enable_banner",
 					...i(e),
 					correlationId: Object(n.d)(n.a.PowerupsFlow, !1)
 				}),
-				b = e => t => ({
+				y = e => t => ({
 					source: "powerups",
 					action: "click",
 					noun: "join_supporters",
@@ -3199,31 +3251,31 @@
 						reason: e
 					})
 				}),
-				g = () => e => ({
+				j = () => e => ({
 					source: "powerups_supporters_modal",
 					action: "click",
 					noun: "powerups_cta",
 					...i(e)
 				}),
-				h = () => e => ({
+				w = () => e => ({
 					source: "powerups",
 					action: "click",
 					noun: "unlock_supporter_achievement",
 					...i(e)
 				}),
-				O = () => e => ({
+				S = () => e => ({
 					source: "powerups",
 					action: "click",
 					noun: "unlock_achievements",
 					...i(e)
 				}),
-				I = () => e => ({
+				k = () => e => ({
 					source: "powerups_flair_picker",
 					action: "click",
 					noun: "powerups_cta",
 					...i(e)
 				}),
-				v = e => t => ({
+				E = e => t => ({
 					source: "powerups_modal",
 					action: "view",
 					noun: "marketing_step",
@@ -3232,7 +3284,7 @@
 						reason: e
 					})
 				}),
-				y = e => t => ({
+				x = e => t => ({
 					source: "powerups",
 					action: "click",
 					noun: "benefit",
@@ -3242,13 +3294,13 @@
 						benefit: e
 					}
 				}),
-				j = (e, t) => r => ({
+				T = (e, t) => r => ({
 					source: "powerups_modal",
 					action: "view",
 					noun: "purchase_step",
 					...i(r, e, t)
 				}),
-				w = () => e => ({
+				C = () => e => ({
 					source: "global",
 					action: "view",
 					noun: "screen",
@@ -3257,13 +3309,13 @@
 						pageType: "powerups_premium_upsell"
 					})
 				}),
-				S = () => e => ({
+				P = () => e => ({
 					source: "powerups_premium_upsell",
 					action: "click",
 					noun: "powerups_price",
 					...i(e)
 				}),
-				k = e => t => ({
+				D = e => t => ({
 					source: "powerups",
 					action: "click",
 					noun: "premium",
@@ -3275,7 +3327,7 @@
 						subscriptionType: e
 					}
 				}),
-				E = (e, t) => r => ({
+				N = (e, t) => r => ({
 					source: "global",
 					action: "view",
 					noun: "screen",
@@ -3284,20 +3336,20 @@
 						pageType: "community_heroes_modal"
 					}
 				}),
-				x = () => e => ({
+				R = () => e => ({
 					source: "powerups",
 					action: "click",
 					noun: "unlock_emojis",
 					...i(e),
 					correlationId: Object(n.d)(n.a.PowerupsFlow, !0)
 				}),
-				T = () => e => ({
+				L = () => e => ({
 					source: "meta",
 					action: "open",
 					noun: "emote_picker",
 					...i(e)
 				}),
-				C = (e, t) => r => ({
+				A = (e, t) => r => ({
 					source: t,
 					action: "click",
 					noun: "add_custom_emojis",
@@ -3307,7 +3359,7 @@
 						emojiCount: e
 					}
 				}),
-				P = (e, t) => r => ({
+				U = (e, t) => r => ({
 					source: t,
 					action: "save",
 					noun: "custom_emojis",
@@ -3317,7 +3369,7 @@
 						emojiCount: e
 					}
 				}),
-				D = (e = 1, t) => r => ({
+				B = (e = 1, t) => r => ({
 					source: t,
 					action: "delete",
 					noun: "custom_emojis",
@@ -3327,7 +3379,7 @@
 						emojiCount: e
 					}
 				}),
-				N = (e, t) => r => ({
+				F = (e, t) => r => ({
 					source: "meta",
 					action: "open",
 					noun: "gif_tooltip",
@@ -3335,14 +3387,14 @@
 					...i(r),
 					correlationId: e
 				}),
-				R = () => e => ({
+				H = () => e => ({
 					source: "powerups",
 					action: "click",
 					noun: "unlock_gifs",
 					...i(e),
 					correlationId: Object(n.d)(n.a.PowerupsFlow, !0)
 				}),
-				L = (e, t, r) => n => ({
+				M = (e, t, r) => n => ({
 					source: "powerups_settings",
 					action: "click",
 					noun: e,
@@ -4788,4 +4840,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.b1aa753fbb1fe2cc3e85.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.3af5ab5dd27b242d8049.js.map

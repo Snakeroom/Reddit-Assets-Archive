@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.55f7efdb652c3808736a.js
-// Retrieved at 10/7/2021, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.0ee2f24196a3ad10b8fb.js
+// Retrieved at 10/7/2021, 4:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8"], {
 		"./src/reddit/actions/economics/subredditPremium/actionCreators.ts": function(e, t, r) {
@@ -1963,7 +1963,7 @@
 							onMouseEnter: Ae.show,
 							onMouseLeave: Ae.hide,
 							onClick: () => {
-								H(Object(u.B)(L ? "post" : "postlist")), R(Object(m.f)("post_top_supporter_badge"))
+								H(Object(u.H)(L ? "post" : "postlist")), R(Object(m.f)("post_top_supporter_badge"))
 							},
 							ref: Ae.target.ref
 						}, n.a.createElement(g.a, {
@@ -3037,4 +3037,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.55f7efdb652c3808736a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.0ee2f24196a3ad10b8fb.js.map
