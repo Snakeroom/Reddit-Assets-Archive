@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.a4ba3dc5047e90dfdb7e.js
-// Retrieved at 10/6/2021, 4:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.cc4a1dc51f3b4081b275.js
+// Retrieved at 10/7/2021, 11:00:10 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab"], {
 		"./src/higherOrderComponents/withMux/index.tsx": function(e, t, s) {
@@ -19,13 +19,13 @@
 					experimentEligibilitySelector: m.a,
 					experimentName: u.qd
 				});
-				return Object(u.Pe)(t) ? void 0 : t
+				return Object(u.Re)(t) ? void 0 : t
 			}, e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
 					experimentName: u.rd
 				});
-				return Object(u.Pe)(t) ? void 0 : t
+				return Object(u.Re)(t) ? void 0 : t
 			}, (e, t) => e === u.td.Enabled && t === u.td.Enabled);
 			var p = s("./src/config.ts");
 			var b = s("./src/reddit/selectors/user.ts");
@@ -477,10 +477,10 @@
 				} : void 0
 			}, e.toggleTileLayout && n.a.createElement(g.a, {
 				className: S.a.tileIcon
-			}), e.currentSlide, "/", e.totalSlides), D = (e, t = 4) => {
+			}), e.currentSlide, "/", e.totalSlides), R = (e, t = 4) => {
 				let s = e - t;
 				return s < 0 && (s = 0), s
-			}, P = (e, t, s = 4) => {
+			}, D = (e, t, s = 4) => {
 				let i = e + s;
 				return i > t - 1 && (i = t - 1), i
 			};
@@ -494,7 +494,7 @@
 						isSponsored: C,
 						isTileLayout: j,
 						mediaMetadata: T = {},
-						post: R,
+						post: P,
 						postId: A,
 						postTitle: V,
 						shouldShowTileLayoutOption: k,
@@ -513,7 +513,7 @@
 					X = Object(r.a)(H),
 					Z = Object(r.a)(F);
 				Object(i.useEffect)(() => {
-					(void 0 !== X && X !== H && H && $ < 0 && q < 0 || void 0 !== Z && Z !== F && H && ($ > F || q < F)) && (J(D(F, 1)), Q(P(F, p.length, 1)))
+					(void 0 !== X && X !== H && H && $ < 0 && q < 0 || void 0 !== Z && Z !== F && H && ($ > F || q < F)) && (J(R(F, 1)), Q(D(F, p.length, 1)))
 				}, [X, F, H, $, q, Z, p.length, A]);
 				const ee = Object(i.useRef)(),
 					te = Object(i.useCallback)(e => {
@@ -522,7 +522,7 @@
 								isIntersecting: t
 							} = e;
 							t ? ($ < 0 || q - $ == 0) && (ee.current = setTimeout(() => {
-								const e = P(q, p.length);
+								const e = D(q, p.length);
 								e !== q && Q(e)
 							}, 1e3)) : ($ < 0 || q - $ == 0) && clearTimeout(ee.current)
 						})
@@ -535,8 +535,8 @@
 						}))
 					}, [t, A]),
 					ie = Object(i.useCallback)(e => {
-						t(Object(f.z)(R, E.a.GalleryItemImpression, `Slide${e}`))
-					}, [t, R]),
+						t(Object(f.z)(P, E.a.GalleryItemImpression, `Slide${e}`))
+					}, [t, P]),
 					ne = Object(i.useCallback)(() => {
 						t(Object(x.i)({
 							postId: A,
@@ -547,7 +547,7 @@
 						if (!G) return;
 						const e = F + 1;
 						if (e + 1 >= q) {
-							const e = P(q, p.length);
+							const e = D(q, p.length);
 							e !== q && Q(e)
 						}
 						se(e), K(u.b(A, e)), K(u.d(A, e + 1)), ie(e)
@@ -556,7 +556,7 @@
 						if (!U) return;
 						const e = F - 1;
 						if (e - 1 <= $) {
-							const e = D($);
+							const e = R($);
 							e !== $ && J(e)
 						}
 						const t = F + 1;
@@ -985,9 +985,9 @@
 				M = s("./src/reddit/components/Media/PollContainer/index.tsx"),
 				N = s("./src/reddit/components/Media/RichTextContainer/index.tsx"),
 				_ = s("./src/reddit/components/Media/TwitterEmbed/index.tsx"),
-				D = s("./src/reddit/components/Media/VideoBox/index.tsx"),
-				P = s("./src/reddit/components/PlayButton/index.tsx"),
-				R = s("./src/reddit/components/RawHTMLDisplay/Media.tsx"),
+				R = s("./src/reddit/components/Media/VideoBox/index.tsx"),
+				D = s("./src/reddit/components/PlayButton/index.tsx"),
+				P = s("./src/reddit/components/RawHTMLDisplay/Media.tsx"),
 				A = s("./src/reddit/components/RichTextJson/index.tsx"),
 				V = s("./src/reddit/constants/componentSizes.ts"),
 				k = s("./src/reddit/constants/screenWidths.ts"),
@@ -1447,7 +1447,7 @@
 									"data-click-id": "text",
 									isCommentsPage: o,
 									showFull: b
-								}, l.a.createElement(R.a, {
+								}, l.a.createElement(P.a, {
 									flairStyleTemplate: i,
 									html: h.isMeta ? Object(G.a)(h.media.content, h.id, te.a.hiddenLink) : h.media.content
 								})), l.a.createElement(M.a, {
@@ -1477,7 +1477,7 @@
 								shouldBlur: ae,
 								source: h.preview.url,
 								originalSource: h.preview.url
-							})), l.a.createElement(P.a, null)))) : z.h.has(h.media.provider) ? h.media.provider === z.v.Twitter ? l.a.createElement(_.a, {
+							})), l.a.createElement(D.a, null)))) : z.h.has(h.media.provider) ? h.media.provider === z.v.Twitter ? l.a.createElement(_.a, {
 								canLoadContent: y,
 								embedBoxChildRef: this.storeChildRef,
 								mediaContainerProps: oe,
@@ -1517,7 +1517,7 @@
 								blurSrc: Z ? h.media.gifBackgroundImage : void 0
 							}), l.a.createElement(ue, {
 								isVisible: y
-							}, l.a.createElement(D.a, se({}, ee, {
+							}, l.a.createElement(R.a, se({}, ee, {
 								isNotCardView: u,
 								height: a ? void 0 : e,
 								width: a ? void 0 : t,
@@ -1547,7 +1547,7 @@
 								shouldBlur: ae,
 								source: e,
 								originalSource: e
-							})), l.a.createElement(P.a, null))));
+							})), l.a.createElement(D.a, null))));
 							const t = l.a.createElement(L.a, se({}, oe, {
 								alwaysWrapMedia: !0,
 								isVideo: !0
@@ -2033,4 +2033,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.a4ba3dc5047e90dfdb7e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.cc4a1dc51f3b4081b275.js.map

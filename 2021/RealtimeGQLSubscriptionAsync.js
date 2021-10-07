@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RealtimeGQLSubscriptionAsync.ab149f1a467a4c0c8755.js
-// Retrieved at 10/5/2021, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RealtimeGQLSubscriptionAsync.2f52c0667269b1b53155.js
+// Retrieved at 10/7/2021, 11:00:10 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RealtimeGQLSubscriptionAsync"], {
 		"./src/realtime/GQLSubscription/index.tsx": function(e, n, t) {
@@ -7,14 +7,14 @@
 			t.r(n);
 			var s = t("./node_modules/@apollo/client/core/ApolloClient.js"),
 				i = t("./node_modules/@apollo/client/cache/inmemory/inMemoryCache.js"),
-				o = t("./node_modules/@apollo/client/react/hooks/useSubscription.js"),
-				u = t("./node_modules/@apollo/client/link/ws/index.js"),
+				u = t("./node_modules/@apollo/client/react/hooks/useSubscription.js"),
+				o = t("./node_modules/@apollo/client/link/ws/index.js"),
 				a = t("./node_modules/react/index.js"),
 				r = t.n(a),
 				c = t("./node_modules/react-redux/es/index.js"),
-				p = t("./node_modules/@apollo/client/node_modules/graphql-tag/lib/index.js");
-			var b = {
-					postVoteCount: p.a`
+				b = t("./node_modules/@apollo/client/node_modules/graphql-tag/lib/index.js");
+			var p = {
+					postVoteCount: b.a`
     subscription SubscribeSubscription($input: SubscribeInput!) {
       subscribe(input: $input) {
         id
@@ -28,7 +28,7 @@
       }
     }
   `,
-					postCommentCount: p.a`
+					postCommentCount: b.a`
     subscription SubscribeSubscription($input: SubscribeInput!) {
       subscribe(input: $input) {
         id
@@ -42,7 +42,7 @@
       }
     }
   `,
-					topLevelCommentCountChange: p.a`
+					topLevelCommentCountChange: b.a`
     subscription SubscribeSubscription($input: SubscribeInput!) {
       subscribe(input: $input) {
         id
@@ -56,14 +56,14 @@
       }
     }
   `,
-					userIsTypingOnPost: p.a`
+					userIsTypingOnPost: b.a`
     subscription SubscribeSubscription($input: SubscribeInput!) {
       subscribe(input: $input) {
         id
       }
     }
   `,
-					postTypingIndicator: p.a`
+					postTypingIndicator: b.a`
     subscription SubscribeSubscription($input: SubscribeInput!) {
       subscribe(input: $input) {
         id
@@ -77,14 +77,35 @@
       }
     }
   `,
-					userIsOnline: p.a`
+					userIsOnline: b.a`
     subscription SubscribeSubscription($input: SubscribeInput!) {
       subscribe(input: $input) {
         id
       }
     }
   `,
-					isUserOnline: p.a`
+					isUserOnline: b.a`
+    subscription SubscribeSubscription($input: SubscribeInput!) {
+      subscribe(input: $input) {
+        id
+        ... on BasicMessage {
+          data {
+            ... on PostTypingIndicatorMessageData {
+              numUsers
+            }
+          }
+        }
+      }
+    }
+  `,
+					userIsReadingPost: b.a`
+    subscription SubscribeSubscription($input: SubscribeInput!) {
+      subscribe(input: $input) {
+        id
+      }
+    }
+  `,
+					usersReadingIndicator: b.a`
     subscription SubscribeSubscription($input: SubscribeInput!) {
       subscribe(input: $input) {
         id
@@ -123,37 +144,37 @@
 					name: "web2x",
 					version: "0.0.1"
 				},
-				_ = r.a.memo(({
+				I = r.a.memo(({
 					apolloClient: e,
 					onData: n,
 					onError: t,
 					onLoading: s,
 					queryKey: i,
-					subscriptionQueries: u,
+					subscriptionQueries: o,
 					variables: a
 				}) => {
-					const r = u[i],
+					const r = o[i],
 						{
 							data: c,
-							loading: p,
-							error: b
-						} = Object(o.a)(r, {
+							loading: b,
+							error: p
+						} = Object(u.a)(r, {
 							variables: a,
 							client: e
 						});
-					return b ? t && t() : p ? s && s() : !b && !p && c && c.subscribe && c.subscribe.data && n && n(c), null
+					return p ? t && t() : b ? s && s() : !p && !b && c && c.subscribe && c.subscribe.data && n && n(c), null
 				});
 			n.default = e => {
-				const [n, t] = Object(a.useState)(g), o = Object(c.e)(e => e.user.session);
+				const [n, t] = Object(a.useState)(g), u = Object(c.e)(e => e.user.session);
 				Object(a.useEffect)(() => {
 					g || (g = function() {
 						let e;
 						return {
 							getInstance: () => (e || (e = function() {
-								const e = new u.a(new l.SubscriptionClient(`wss://${d.a.gqlRealtimeAddress}`, {
+								const e = new o.a(new l.SubscriptionClient(`wss://${d.a.gqlRealtimeAddress}`, {
 									...S,
 									connectionParams: {
-										Authorization: o && o.accessToken ? `Bearer ${o.accessToken}` : ""
+										Authorization: u && u.accessToken ? `Bearer ${u.accessToken}` : ""
 									}
 								}));
 								return new s.a({
@@ -164,16 +185,16 @@
 							}()), e)
 						}
 					}(), t(g)), g && !n && t(g)
-				}, [o, t, n]);
-				const p = Object(a.useRef)((e => {
+				}, [u, t, n]);
+				const b = Object(a.useRef)((e => {
 					if (e) {
 						return !!document.getElementById(e)
 					}
 					return !1
 				})(e.uniqueKey));
-				return n && n.getInstance() && b && !p.current ? n && r.a.createElement(r.a.Fragment, null, r.a.createElement(_, m({}, e, {
+				return n && n.getInstance() && p && !b.current ? n && r.a.createElement(r.a.Fragment, null, r.a.createElement(I, m({}, e, {
 					apolloClient: n.getInstance(),
-					subscriptionQueries: b
+					subscriptionQueries: p
 				})), r.a.createElement("span", {
 					id: e.uniqueKey
 				})) : null
@@ -181,4 +202,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RealtimeGQLSubscriptionAsync.ab149f1a467a4c0c8755.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RealtimeGQLSubscriptionAsync.2f52c0667269b1b53155.js.map

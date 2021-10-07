@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.282f9086062b941f71ec.js
-// Retrieved at 10/6/2021, 4:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.b08252244790a300a788.js
+// Retrieved at 10/7/2021, 11:00:10 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview"], {
 		"./node_modules/shallowequal/index.js": function(e, t) {
@@ -3404,7 +3404,7 @@
 					experimentEligibilitySelector: r.a,
 					experimentName: o.ac
 				});
-				return !(!t || Object(o.Pe)(t))
+				return !(!t || Object(o.Re)(t))
 			}
 		},
 		"./src/reddit/selectors/experiments/signupUpsellExperiment.ts": function(e, t, s) {
@@ -3565,7 +3565,7 @@
 				i = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const a = e => {
 					const t = Object(i.a)(e);
-					return Boolean(t) && !Object(r.Pe)(t)
+					return Boolean(t) && !Object(r.Re)(t)
 				},
 				d = Object(o.a)(a, n.d, (e, t) => e && !t)
 		},
@@ -4358,4 +4358,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.282f9086062b941f71ec.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.b08252244790a300a788.js.map
