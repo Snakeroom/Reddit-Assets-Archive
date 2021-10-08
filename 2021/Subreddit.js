@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.a61dc21d8f9b946d3cb2.js
-// Retrieved at 10/7/2021, 4:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.cc3a8b6669601c1675e8.js
+// Retrieved at 10/8/2021, 12:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~ModListing", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -4117,7 +4117,7 @@
 					hk: "2AxvmU"
 				})), r.a.createElement("h1", {
 					className: Object(m.a)(j.a.tournamentTitle, {
-						[j.a.long]: s.name.length > 60
+						[j.a.long]: s.name.length > 40
 					})
 				}, s.name, " ", r.a.createElement("span", {
 					className: Object(m.a)(j.a.statusBadge, {
@@ -17097,4 +17097,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.a61dc21d8f9b946d3cb2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.cc3a8b6669601c1675e8.js.map
