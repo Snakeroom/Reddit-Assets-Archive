@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.8f4cddab818c610b6158.js
-// Retrieved at 10/7/2021, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.79c4f507e174dd8a0869.js
+// Retrieved at 10/7/2021, 8:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -863,23 +863,24 @@
 		"./src/lib/humanizeDate/index.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return r
+				return o
 			}));
-			var s = n("./src/lib/constants/index.ts");
+			var s = n("./src/lib/constants/index.ts"),
+				r = n("./src/reddit/constants/intlSupport.ts");
 
-			function r(e, {
+			function o(e, {
 				showDay: t,
 				useUtc: n,
-				shortMonths: r,
-				locale: o = s.C
+				shortMonths: o,
+				locale: i = s.C
 			} = {}) {
-				const i = new Date(e * s.Pb);
-				return new Intl.DateTimeFormat(o, {
-					month: r ? "short" : "long",
+				const a = new Date(e * s.Pb);
+				return r.a ? new Intl.DateTimeFormat(i, {
+					month: o ? "short" : "long",
 					day: t ? "numeric" : void 0,
 					year: "numeric",
 					timeZone: n ? "UTC" : void 0
-				}).format(i)
+				}).format(a) : a.toLocaleString()
 			}
 		},
 		"./src/lib/humanizeUTCDate/index.tsx": function(e, t, n) {
@@ -3589,7 +3590,7 @@
 				})
 			}
 
-			function b(e, t, n, s = l.C) {
+			function b(e, t, n = !1, s = l.C) {
 				const r = Object(p.e)(e, t),
 					o = new Date(e * l.Pb);
 				let i;
@@ -7254,13 +7255,16 @@
 		},
 		"./src/reddit/hooks/useLocale.ts": function(e, t, n) {
 			"use strict";
-			var s = n("./src/lib/constants/index.ts"),
-				r = n("./node_modules/react-redux/es/index.js"),
-				o = n("./src/reddit/selectors/meta.ts");
+			var s = n("./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js"),
+				r = n("./node_modules/@reddit/i18n-tools/runtime/helpers/locale/constants.js"),
+				o = n("./node_modules/react-redux/es/index.js"),
+				i = n("./src/reddit/selectors/meta.ts");
 			t.a = "undefined" == typeof document ? function() {
-				return Object(r.e)(o.i) || s.C
+				const e = Object(o.e)(i.i) || r.DEFAULT_LOCALE;
+				return Object(s.isPseudoLocale)(e) ? r.DEFAULT_LOCALE : e
 			} : function() {
-				return document.documentElement.lang || s.C
+				const e = document.documentElement.lang || r.DEFAULT_LOCALE;
+				return Object(s.isPseudoLocale)(e) ? r.DEFAULT_LOCALE : e
 			}
 		},
 		"./src/reddit/icons/fonts/Downvote/index.m.less": function(e, t, n) {
@@ -8212,4 +8216,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.8f4cddab818c610b6158.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.79c4f507e174dd8a0869.js.map

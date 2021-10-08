@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeManagement.87706468a19df3c9f520.js
-// Retrieved at 10/5/2021, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeManagement.7acf6a1d3647b5c9cdaa.js
+// Retrieved at 10/7/2021, 8:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumBadgeManagement"], {
 		"./node_modules/lodash/_LazyWrapper.js": function(e, t, s) {
@@ -479,87 +479,75 @@
 		"./src/lib/localizeCurrency/index.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return l
+				return c
 			})), s.d(t, "b", (function() {
-				return u
+				return l
 			}));
 			var a = s("./node_modules/@reddit/i18n-tools/runtime/helpers/locale/constants.js"),
 				n = s("./src/lib/currency/centsToDollars/index.ts"),
 				r = s("./src/lib/currency/currencies.ts"),
 				d = s("./src/lib/prettyPrintNumber/index.ts"),
-				o = s("./src/reddit/helpers/governance/tokens.ts");
-			const i = (() => {
-					try {
-						return "1E4 bits" === new Intl.NumberFormat("en", {
-							style: "unit",
-							unit: "bit",
-							unitDisplay: "long",
-							notation: "scientific"
-						}).format(1e4)
-					} catch (e) {
-						return !1
-					}
-				})(),
-				c = () => i,
-				l = (e, {
+				o = s("./src/reddit/helpers/governance/tokens.ts"),
+				i = s("./src/reddit/constants/intlSupport.ts");
+			const c = (e, {
 					locale: t = a.DEFAULT_LOCALE,
 					pretty: s,
 					formatOptions: n
 				} = {}) => {
 					const r = Number(e);
-					return c() ? s ? Object(d.b)(r) : new Intl.NumberFormat(t, n).format(r) : m(r, s, t)
+					return Object(i.c)() ? s ? Object(d.b)(r) : new Intl.NumberFormat(t, n).format(r) : u(r, s, t)
 				},
-				u = (e, t = {}) => {
+				l = (e, t = {}) => {
 					const {
 						locale: s = a.DEFAULT_LOCALE,
 						pretty: d,
-						formatOptions: i,
+						formatOptions: c,
 						displayConversion: l,
-						forceDecimals: u,
-						currency: g = t.currency || (t.type ? b(t.type) : r.c),
-						type: h = t.type || (t.currency ? p(t.currency) : r.b.Real)
+						forceDecimals: b,
+						currency: g = t.currency || (t.type ? p(t.type) : r.c),
+						type: h = t.type || (t.currency ? m(t.currency) : r.b.Real)
 					} = t, f = Number(e), _ = String(e);
 					switch (h) {
 						case r.b.Reddit: {
 							const e = r.e[g],
 								t = e ? e() : g;
-							return c() ? new Intl.NumberFormat(s, {
+							return Object(i.c)() ? new Intl.NumberFormat(s, {
 								currencyDisplay: "symbol",
-								...i
-							}).format(f) + " " + t : m(f, d, s, t)
+								...c
+							}).format(f) + " " + t : u(f, d, s, t)
 						}
 						case r.b.Crypto: {
 							if (d) {
 								return Object(o.c)(_, l) + " " + g
 							}
 							const e = Number(Object(o.b)(_, l));
-							return c() ? new Intl.NumberFormat(s, {
+							return Object(i.c)() ? new Intl.NumberFormat(s, {
 								style: "currency",
 								currency: g,
 								currencyDisplay: "symbol",
 								minimumFractionDigits: 0,
 								maximumFractionDigits: 0,
-								...i
-							}).format(e) : m(e, d, s, g)
+								...c
+							}).format(e) : u(e, d, s, g)
 						}
 						case r.b.Real:
 						default: {
-							const e = Number(Object(n.a)(_, u));
-							return c() ? new Intl.NumberFormat(s, {
+							const e = Number(Object(n.a)(_, b));
+							return Object(i.c)() ? new Intl.NumberFormat(s, {
 								style: "currency",
 								currency: g,
 								currencyDisplay: "symbol",
 								notation: d ? "compact" : "standard",
-								...i
-							}).format(e) : m(e, d, s, g)
+								...c
+							}).format(e) : u(e, d, s, g)
 						}
 					}
 				},
-				m = (e, t, s, a) => {
+				u = (e, t, s, a) => {
 					return (t ? Object(d.b)(e) : e.toLocaleString(s)) + (a ? " " + a : "")
 				},
-				p = e => r.g.includes(e.toUpperCase()) ? r.b.Reddit : r.f.includes(e.toUpperCase()) ? r.b.Crypto : r.b.Real,
-				b = e => {
+				m = e => r.g.includes(e.toUpperCase()) ? r.b.Reddit : r.f.includes(e.toUpperCase()) ? r.b.Crypto : r.b.Real,
+				p = e => {
 					switch (e) {
 						case r.b.Crypto:
 							return r.d;
@@ -1562,8 +1550,8 @@
 				}),
 				D = s("./src/reddit/icons/svgs/EyeCancel/index.tsx"),
 				H = s("./src/reddit/components/Economics/SubredditPremium/Badges/ManagementModal/LeftRail/HideBadge/index.m.less"),
-				F = s.n(H);
-			const R = {
+				R = s.n(H);
+			const F = {
 				id: "removeBadge",
 				type: "removeBadge"
 			};
@@ -1604,32 +1592,32 @@
 					}
 				}(t);
 				return n.a.createElement("div", {
-					className: Object(b.a)(s, F.a.container)
+					className: Object(b.a)(s, R.a.container)
 				}, n.a.createElement("div", {
-					className: F.a.centerContent
+					className: R.a.centerContent
 				}, n.a.createElement("header", {
-					className: F.a.title
+					className: R.a.title
 				}, r), n.a.createElement("div", {
-					className: F.a.description
+					className: R.a.description
 				}, a), n.a.createElement("article", {
-					className: F.a.grid
+					className: R.a.grid
 				}, n.a.createElement("div", {
-					className: F.a.row
+					className: R.a.row
 				}, n.a.createElement("div", {
-					className: F.a.item
+					className: R.a.item
 				}, n.a.createElement("div", {
-					className: Object(b.a)(F.a.hide, {
-						[F.a.applied]: !!e.applied,
-						[F.a.selected]: !!e.selected
+					className: Object(b.a)(R.a.hide, {
+						[R.a.applied]: !!e.applied,
+						[R.a.selected]: !!e.selected
 					}),
 					onClick: () => e.onSelect({
 						badgeType: t,
-						...R
+						...F
 					})
 				}, e.applied && n.a.createElement(h.a, {
-					className: F.a.checkmark
+					className: R.a.checkmark
 				}), n.a.createElement(D.a, {
-					className: F.a.hideIcon
+					className: R.a.hideIcon
 				})))))))
 			}
 			var G = s("./src/reddit/components/Economics/SubredditPremium/Badges/ManagementModal/LeftRail/AchievementBadge/index.m.less"),
@@ -1986,14 +1974,14 @@
 			}
 			var De = s("./src/reddit/components/Economics/SubredditPremium/Badges/ManagementModal/LeftRail/index.m.less"),
 				He = s.n(De);
-			const Fe = Object(d.c)({
+			const Re = Object(d.c)({
 				badgeType: e => e.economics.currentBadgeManagementScreen.badgeType,
 				hasGalleryBadges: (e, {
 					subredditId: t
 				}) => Object(p.j)(e, t),
 				view: e => e.economics.currentBadgeManagementScreen.view
 			});
-			var Re = Object(r.b)(Fe)((function(e) {
+			var Fe = Object(r.b)(Re)((function(e) {
 					const t = Object(b.a)(He.a.contentWrapper, {
 						[He.a.withView]: e.badgeType === u.a.Cosmetic,
 						[He.a.withoutView]: e.badgeType !== u.a.Cosmetic
@@ -2412,7 +2400,7 @@
 						className: Pt.a.container
 					}, n.a.createElement("article", {
 						className: Pt.a.content
-					}, n.a.createElement(Re, {
+					}, n.a.createElement(Fe, {
 						appliedBadges: this.props.appliedBadges,
 						className: Pt.a.leftRail,
 						selectedBadges: this.state.selectedBadges,
@@ -3265,9 +3253,9 @@
 			})), s.d(t, "u", (function() {
 				return H
 			})), s.d(t, "b", (function() {
-				return F
-			})), s.d(t, "v", (function() {
 				return R
+			})), s.d(t, "v", (function() {
+				return F
 			})), s.d(t, "s", (function() {
 				return U
 			})), s.d(t, "g", (function() {
@@ -3473,13 +3461,13 @@
 					const t = e.economics.paymentSystems;
 					return t.status === l.a.Fetched && !!t.data && !!t.data.stripe && !!t.data.stripe.stripeAccountId
 				},
-				F = (e, {
+				R = (e, {
 					subredditId: t
 				}) => {
 					if (!t) return;
 					return e.economics.emotes[t]
 				},
-				R = (e, t) => {
+				F = (e, t) => {
 					const s = t && e.economics.gifs[t];
 					return !!s && s.hasGifProduct
 				},
@@ -3495,7 +3483,7 @@
 					});
 					if (n && Object(r.a)(n)) return !0;
 					const d = a.d.spGiphy(e),
-						o = R(e, t);
+						o = F(e, t);
 					return !(!d || !o) || d && o
 				},
 				G = (e, t, s) => {
@@ -3539,4 +3527,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeManagement.87706468a19df3c9f520.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeManagement.7acf6a1d3647b5c9cdaa.js.map

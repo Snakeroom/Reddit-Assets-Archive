@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.f6fb615ff02640bebcaf.js
-// Retrieved at 10/7/2021, 6:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.aa81aa2267a959b8840f.js
+// Retrieved at 10/7/2021, 8:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -2500,10 +2500,10 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("147620"),
+				buildNumber: Object(r.c)("147648"),
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
-				buildTimestamp: Object(r.b)("1633642196"),
+				buildTimestamp: Object(r.b)("1633649713"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -5038,14 +5038,14 @@
 					}))
 				},
 				z = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %cef88cb1217d9442272fa96f4b20567890a6e606c-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c62212c535de6ec4d34b7bdbaf654017d49334ef5-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${v.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "ef88cb1217d9442272fa96f4b20567890a6e606c-production",
+						release: "62212c535de6ec4d34b7bdbaf654017d49334ef5-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -5558,7 +5558,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "ef88cb1217d9442272fa96f4b20567890a6e606c-production",
+						releaseClient: "62212c535de6ec4d34b7bdbaf654017d49334ef5-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -6889,26 +6889,27 @@
 		"./src/lib/timeAgo/index.ts": function(e, t, i) {
 			"use strict";
 			i.d(t, "d", (function() {
-				return c
-			})), i.d(t, "e", (function() {
 				return _
-			})), i.d(t, "c", (function() {
+			})), i.d(t, "e", (function() {
 				return m
-			})), i.d(t, "a", (function() {
+			})), i.d(t, "c", (function() {
 				return p
-			})), i.d(t, "b", (function() {
+			})), i.d(t, "a", (function() {
 				return h
+			})), i.d(t, "b", (function() {
+				return f
 			}));
 			var n = i("./node_modules/fbt/lib/FbtPublic.js"),
-				r = i("./src/lib/constants/index.ts");
-			const s = {
+				r = i("./src/lib/constants/index.ts"),
+				s = i("./src/reddit/constants/intlSupport.ts");
+			const o = {
 					[r.jb]: r.Pb,
 					[r.P]: r.jb,
 					[r.A]: r.P,
 					[r.ob]: r.A,
 					[r.mc]: r.ob
 				},
-				o = {
+				d = {
 					[r.Pb]: e => n.fbt._({
 						"*": "{number} seconds",
 						_1: "1 second"
@@ -6946,7 +6947,7 @@
 						hk: "3rMhN9"
 					})
 				},
-				d = {
+				a = {
 					[r.Pb]: e => n.fbt._({
 						"*": "{number} seconds ago",
 						_1: "1 second ago"
@@ -6984,7 +6985,7 @@
 						hk: "S0Gnf"
 					})
 				},
-				a = {
+				l = {
 					[r.Pb]: e => n.fbt._("{amount}s", [n.fbt._param("amount", String(e))], {
 						hk: "1wpxaX"
 					}),
@@ -7004,7 +7005,7 @@
 						hk: "8gNOa"
 					})
 				},
-				l = {
+				u = {
 					[r.Pb]: e => n.fbt._("{amount}s ago", [n.fbt._param("amount", String(e))], {
 						hk: "g6jbi"
 					}),
@@ -7024,7 +7025,7 @@
 						hk: "4piT6o"
 					})
 				},
-				u = {
+				c = {
 					[r.Pb]: e => n.fbt._("{amount}s left", [n.fbt._param("amount", String(e))], {
 						hk: "1ZSXLq"
 					}),
@@ -7039,97 +7040,93 @@
 					})
 				};
 
-			function c(e, t = {}) {
-				try {
-					return function(e, {
-						shortenedUnit: t,
-						noPostfix: i,
-						locale: s = r.C
-					} = {}) {
-						const o = Date.now(),
-							d = e * r.Pb - o,
-							a = Math.abs(d);
-						if (Math.abs(d) < r.jb) return n.fbt._("just now", null, {
-							hk: "WMsPx"
-						}).toString();
-						let l, u;
-						const c = t ? i ? "narrow" : "short" : "long";
-						if (Math.round(a / r.jb) < 60 ? (u = d / r.jb, l = "minute") : Math.round(a / r.P) < 24 ? (u = d / r.P, l = "hour") : Math.round(a / r.A) < 29 ? (u = d / r.A, l = "day") : Math.round(a / r.ob) < 12 ? (u = d / r.ob, l = "month") : (u = d / r.mc, l = "year"), u = Math.round(u), i) {
-							return new Intl.NumberFormat(s, {
-								style: "unit",
-								unit: l,
-								unitDisplay: c
-							}).format(Math.abs(u))
-						}
-						return new Intl.RelativeTimeFormat(s, {
-							localeMatcher: "best fit",
-							numeric: "always",
-							style: c
-						}).format(u, l)
-					}(e, t)
-				} catch (i) {
-					return function(e, t = {}) {
-						const i = Date.now(),
-							u = Math.abs(i - 1e3 * e);
-						if (u < r.jb) return n.fbt._("just now", null, {
-							hk: "WMsPx"
-						}).toString();
-						let c = d;
-						t.noPostfix && t.shortenedUnit ? c = a : t.noPostfix ? c = o : t.shortenedUnit && (c = l);
-						for (const n of [r.P, r.A, r.ob, r.mc])
-							if (u < n) {
-								const e = Math.floor(u / s[n]);
-								return (0, c[s[n]])(e).toString()
-							} const _ = Math.floor(u / r.mc);
-						return c[r.mc](_).toString()
-					}(e, t)
-				}
+			function _(e, t = {}) {
+				return Object.is(e, NaN) ? "" : s.b && Object(s.c)() && Object(s.d)(t.locale) ? function(e, {
+					shortenedUnit: t,
+					noPostfix: i,
+					locale: s = r.C
+				} = {}) {
+					const o = Date.now(),
+						d = e * r.Pb - o,
+						a = Math.abs(d);
+					if (Math.abs(d) < r.jb) return n.fbt._("just now", null, {
+						hk: "WMsPx"
+					}).toString();
+					let l, u;
+					const c = t ? i ? "narrow" : "short" : "long";
+					if (Math.round(a / r.jb) < 60 ? (u = d / r.jb, l = "minute") : Math.round(a / r.P) < 24 ? (u = d / r.P, l = "hour") : Math.round(a / r.A) < 29 ? (u = d / r.A, l = "day") : Math.round(a / r.ob) < 12 ? (u = d / r.ob, l = "month") : (u = d / r.mc, l = "year"), u = Math.round(u), i) {
+						return new Intl.NumberFormat(s, {
+							style: "unit",
+							unit: l,
+							unitDisplay: c
+						}).format(Math.abs(u))
+					}
+					return new Intl.RelativeTimeFormat(s, {
+						localeMatcher: "best fit",
+						numeric: "always",
+						style: c
+					}).format(u, l)
+				}(e, t) : function(e, t = {}) {
+					const i = Date.now(),
+						s = Math.abs(i - 1e3 * e);
+					if (s < r.jb) return n.fbt._("just now", null, {
+						hk: "WMsPx"
+					}).toString();
+					let c = a;
+					t.noPostfix && t.shortenedUnit ? c = l : t.noPostfix ? c = d : t.shortenedUnit && (c = u);
+					for (const n of [r.P, r.A, r.ob, r.mc])
+						if (s < n) {
+							const e = Math.floor(s / o[n]);
+							return (0, c[o[n]])(e).toString()
+						} const _ = Math.floor(s / r.mc);
+					return c[r.mc](_).toString()
+				}(e, t)
 			}
 
-			function _(e) {
+			function m(e) {
 				const t = Date.now(),
 					i = "number" == typeof e ? e : new Date(e).valueOf();
 				return Math.trunc(Math.abs(t - i) / r.P)
 			}
 
-			function m(e) {
+			function p(e) {
 				const t = Date.now(),
 					i = "number" == typeof e ? e : new Date(e).valueOf(),
 					n = Math.abs(t - 1e3 * i);
 				return Math.floor(n / r.A)
 			}
 
-			function p(e, t) {
+			function h(e, t) {
 				const i = Date.now(),
-					o = Math.abs(i - 1e3 * e),
+					s = Math.abs(i - 1e3 * e),
 					d = new Date(1e3 * e),
-					u = new Date(i);
-				if (o < r.jb) return n.fbt._("now", null, {
+					a = new Date(i);
+				if (s < r.jb) return n.fbt._("now", null, {
 					hk: "1hZvPT"
 				}).toString();
-				if (o < r.lc)
+				if (s < r.lc)
 					for (const n of [r.P, r.A, r.ob])
-						if (o < n) {
-							const e = Math.floor(o / s[n]);
-							return (t ? a : l)[s[n]](e).toString()
-						} return d.getFullYear() !== u.getFullYear() ? d.toLocaleDateString() : new Intl.DateTimeFormat("default", {
+						if (s < n) {
+							const e = Math.floor(s / o[n]);
+							return (t ? l : u)[o[n]](e).toString()
+						} return d.getFullYear() !== a.getFullYear() ? d.toLocaleDateString() : new Intl.DateTimeFormat("default", {
 					month: "short",
 					day: "numeric"
 				}).format(d)
 			}
 
-			function h(e) {
+			function f(e) {
 				const t = Date.now(),
 					i = Math.abs(1e3 * e - t),
-					o = new Date(1e3 * e),
+					s = new Date(1e3 * e),
 					d = new Date(t);
 				if (i < r.ob)
 					for (const n of [r.P, r.A, r.ob])
 						if (i < n) {
-							const e = Math.floor(i / s[n]);
-							return u[s[n]](e).toString()
-						} if (o.getFullYear() !== d.getFullYear()) {
-					const e = o.toLocaleDateString();
+							const e = Math.floor(i / o[n]);
+							return c[o[n]](e).toString()
+						} if (s.getFullYear() !== d.getFullYear()) {
+					const e = s.toLocaleDateString();
 					return n.fbt._("Expires {Expiration date}", [n.fbt._param("Expiration date", e)], {
 						hk: "4nE1rV"
 					}).toString()
@@ -7137,7 +7134,7 @@
 				return new Intl.DateTimeFormat("default", {
 					month: "short",
 					day: "numeric"
-				}).format(o)
+				}).format(s)
 			}
 		},
 		"./src/lib/timezone/index.ts": function(e, t, i) {
@@ -16190,6 +16187,39 @@
 				function(e) {
 					e.IsOverlay = "isOverlay", e.ScrollOnLoad = "scrollOnLoad", e.CloseLocation = "closeLocation", e.JustLoggedIn = "JustLoggedIn", e.JustLoggedOut = "JustLoggedOut", e.SearchOriginPage = "searchOriginPage", e.ClickSource = "clickSource", e.ClickId = "clickId"
 				}(n || (n = {}))
+		},
+		"./src/reddit/constants/intlSupport.ts": function(e, t, i) {
+			"use strict";
+			i.d(t, "d", (function() {
+				return n
+			})), i.d(t, "a", (function() {
+				return o
+			})), i.d(t, "b", (function() {
+				return d
+			})), i.d(t, "c", (function() {
+				return a
+			}));
+			const n = e => {
+					if (!e) return !0;
+					const t = Array.isArray(e) ? e : [e];
+					return Intl.DateTimeFormat.supportedLocalesOf(t).length === t.length
+				},
+				r = (() => {
+					try {
+						return "1E4 bits" === new Intl.NumberFormat("en", {
+							style: "unit",
+							unit: "bit",
+							unitDisplay: "long",
+							notation: "scientific"
+						}).format(1e4)
+					} catch (e) {
+						return !1
+					}
+				})(),
+				s = "undefined" != typeof Intl,
+				o = s && void 0 !== Intl.DateTimeFormat,
+				d = s && void 0 !== Intl.RelativeTimeFormat,
+				a = () => r
 		},
 		"./src/reddit/constants/listings.ts": function(e, t, i) {
 			"use strict";
@@ -41790,4 +41820,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.f6fb615ff02640bebcaf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.aa81aa2267a959b8840f.js.map

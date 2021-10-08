@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.d400ad3b9ea969f0fe5c.js
-// Retrieved at 10/7/2021, 2:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.1f273b25ca3c87c31796.js
+// Retrieved at 10/7/2021, 8:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, n) {
@@ -1598,87 +1598,75 @@
 		"./src/lib/localizeCurrency/index.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return d
+				return l
 			})), n.d(t, "b", (function() {
-				return u
+				return d
 			}));
 			var s = n("./node_modules/@reddit/i18n-tools/runtime/helpers/locale/constants.js"),
 				r = n("./src/lib/currency/centsToDollars/index.ts"),
 				o = n("./src/lib/currency/currencies.ts"),
 				a = n("./src/lib/prettyPrintNumber/index.ts"),
-				i = n("./src/reddit/helpers/governance/tokens.ts");
-			const c = (() => {
-					try {
-						return "1E4 bits" === new Intl.NumberFormat("en", {
-							style: "unit",
-							unit: "bit",
-							unitDisplay: "long",
-							notation: "scientific"
-						}).format(1e4)
-					} catch (e) {
-						return !1
-					}
-				})(),
-				l = () => c,
-				d = (e, {
+				i = n("./src/reddit/helpers/governance/tokens.ts"),
+				c = n("./src/reddit/constants/intlSupport.ts");
+			const l = (e, {
 					locale: t = s.DEFAULT_LOCALE,
 					pretty: n,
 					formatOptions: r
 				} = {}) => {
 					const o = Number(e);
-					return l() ? n ? Object(a.b)(o) : new Intl.NumberFormat(t, r).format(o) : m(o, n, t)
+					return Object(c.c)() ? n ? Object(a.b)(o) : new Intl.NumberFormat(t, r).format(o) : u(o, n, t)
 				},
-				u = (e, t = {}) => {
+				d = (e, t = {}) => {
 					const {
 						locale: n = s.DEFAULT_LOCALE,
 						pretty: a,
-						formatOptions: c,
+						formatOptions: l,
 						displayConversion: d,
-						forceDecimals: u,
-						currency: h = t.currency || (t.type ? b(t.type) : o.c),
-						type: f = t.type || (t.currency ? p(t.currency) : o.b.Real)
+						forceDecimals: b,
+						currency: h = t.currency || (t.type ? p(t.type) : o.c),
+						type: f = t.type || (t.currency ? m(t.currency) : o.b.Real)
 					} = t, g = Number(e), v = String(e);
 					switch (f) {
 						case o.b.Reddit: {
 							const e = o.e[h],
 								t = e ? e() : h;
-							return l() ? new Intl.NumberFormat(n, {
+							return Object(c.c)() ? new Intl.NumberFormat(n, {
 								currencyDisplay: "symbol",
-								...c
-							}).format(g) + " " + t : m(g, a, n, t)
+								...l
+							}).format(g) + " " + t : u(g, a, n, t)
 						}
 						case o.b.Crypto: {
 							if (a) {
 								return Object(i.c)(v, d) + " " + h
 							}
 							const e = Number(Object(i.b)(v, d));
-							return l() ? new Intl.NumberFormat(n, {
+							return Object(c.c)() ? new Intl.NumberFormat(n, {
 								style: "currency",
 								currency: h,
 								currencyDisplay: "symbol",
 								minimumFractionDigits: 0,
 								maximumFractionDigits: 0,
-								...c
-							}).format(e) : m(e, a, n, h)
+								...l
+							}).format(e) : u(e, a, n, h)
 						}
 						case o.b.Real:
 						default: {
-							const e = Number(Object(r.a)(v, u));
-							return l() ? new Intl.NumberFormat(n, {
+							const e = Number(Object(r.a)(v, b));
+							return Object(c.c)() ? new Intl.NumberFormat(n, {
 								style: "currency",
 								currency: h,
 								currencyDisplay: "symbol",
 								notation: a ? "compact" : "standard",
-								...c
-							}).format(e) : m(e, a, n, h)
+								...l
+							}).format(e) : u(e, a, n, h)
 						}
 					}
 				},
-				m = (e, t, n, s) => {
+				u = (e, t, n, s) => {
 					return (t ? Object(a.b)(e) : e.toLocaleString(n)) + (s ? " " + s : "")
 				},
-				p = e => o.g.includes(e.toUpperCase()) ? o.b.Reddit : o.f.includes(e.toUpperCase()) ? o.b.Crypto : o.b.Real,
-				b = e => {
+				m = e => o.g.includes(e.toUpperCase()) ? o.b.Reddit : o.f.includes(e.toUpperCase()) ? o.b.Crypto : o.b.Real,
+				p = e => {
 					switch (e) {
 						case o.b.Crypto:
 							return o.d;
@@ -14303,4 +14291,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.d400ad3b9ea969f0fe5c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.1f273b25ca3c87c31796.js.map

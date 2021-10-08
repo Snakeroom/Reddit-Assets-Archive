@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.2b421e2ff934133768c2.js
-// Retrieved at 10/5/2021, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.7bf5e9e09d8cf69c2f6e.js
+// Retrieved at 10/7/2021, 8:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinPurchaseModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, a) {
@@ -97,87 +97,75 @@
 		"./src/lib/localizeCurrency/index.ts": function(e, t, a) {
 			"use strict";
 			a.d(t, "a", (function() {
-				return l
+				return d
 			})), a.d(t, "b", (function() {
-				return u
+				return l
 			}));
 			var r = a("./node_modules/@reddit/i18n-tools/runtime/helpers/locale/constants.js"),
 				n = a("./src/lib/currency/centsToDollars/index.ts"),
 				c = a("./src/lib/currency/currencies.ts"),
 				s = a("./src/lib/prettyPrintNumber/index.ts"),
-				o = a("./src/reddit/helpers/governance/tokens.ts");
-			const i = (() => {
-					try {
-						return "1E4 bits" === new Intl.NumberFormat("en", {
-							style: "unit",
-							unit: "bit",
-							unitDisplay: "long",
-							notation: "scientific"
-						}).format(1e4)
-					} catch (e) {
-						return !1
-					}
-				})(),
-				d = () => i,
-				l = (e, {
+				o = a("./src/reddit/helpers/governance/tokens.ts"),
+				i = a("./src/reddit/constants/intlSupport.ts");
+			const d = (e, {
 					locale: t = r.DEFAULT_LOCALE,
 					pretty: a,
 					formatOptions: n
 				} = {}) => {
 					const c = Number(e);
-					return d() ? a ? Object(s.b)(c) : new Intl.NumberFormat(t, n).format(c) : p(c, a, t)
+					return Object(i.c)() ? a ? Object(s.b)(c) : new Intl.NumberFormat(t, n).format(c) : u(c, a, t)
 				},
-				u = (e, t = {}) => {
+				l = (e, t = {}) => {
 					const {
 						locale: a = r.DEFAULT_LOCALE,
 						pretty: s,
-						formatOptions: i,
+						formatOptions: d,
 						displayConversion: l,
-						forceDecimals: u,
-						currency: g = t.currency || (t.type ? b(t.type) : c.c),
-						type: h = t.type || (t.currency ? m(t.currency) : c.b.Real)
+						forceDecimals: b,
+						currency: g = t.currency || (t.type ? m(t.type) : c.c),
+						type: h = t.type || (t.currency ? p(t.currency) : c.b.Real)
 					} = t, y = Number(e), f = String(e);
 					switch (h) {
 						case c.b.Reddit: {
 							const e = c.e[g],
 								t = e ? e() : g;
-							return d() ? new Intl.NumberFormat(a, {
+							return Object(i.c)() ? new Intl.NumberFormat(a, {
 								currencyDisplay: "symbol",
-								...i
-							}).format(y) + " " + t : p(y, s, a, t)
+								...d
+							}).format(y) + " " + t : u(y, s, a, t)
 						}
 						case c.b.Crypto: {
 							if (s) {
 								return Object(o.c)(f, l) + " " + g
 							}
 							const e = Number(Object(o.b)(f, l));
-							return d() ? new Intl.NumberFormat(a, {
+							return Object(i.c)() ? new Intl.NumberFormat(a, {
 								style: "currency",
 								currency: g,
 								currencyDisplay: "symbol",
 								minimumFractionDigits: 0,
 								maximumFractionDigits: 0,
-								...i
-							}).format(e) : p(e, s, a, g)
+								...d
+							}).format(e) : u(e, s, a, g)
 						}
 						case c.b.Real:
 						default: {
-							const e = Number(Object(n.a)(f, u));
-							return d() ? new Intl.NumberFormat(a, {
+							const e = Number(Object(n.a)(f, b));
+							return Object(i.c)() ? new Intl.NumberFormat(a, {
 								style: "currency",
 								currency: g,
 								currencyDisplay: "symbol",
 								notation: s ? "compact" : "standard",
-								...i
-							}).format(e) : p(e, s, a, g)
+								...d
+							}).format(e) : u(e, s, a, g)
 						}
 					}
 				},
-				p = (e, t, a, r) => {
+				u = (e, t, a, r) => {
 					return (t ? Object(s.b)(e) : e.toLocaleString(a)) + (r ? " " + r : "")
 				},
-				m = e => c.g.includes(e.toUpperCase()) ? c.b.Reddit : c.f.includes(e.toUpperCase()) ? c.b.Crypto : c.b.Real,
-				b = e => {
+				p = e => c.g.includes(e.toUpperCase()) ? c.b.Reddit : c.f.includes(e.toUpperCase()) ? c.b.Crypto : c.b.Real,
+				m = e => {
 					switch (e) {
 						case c.b.Crypto:
 							return c.d;
@@ -1145,8 +1133,8 @@
 				}
 			}
 			var R = Object(s.injectStripe)(Object(h.c)(F)),
-				D = a("./src/reddit/components/ModalStyledComponents/index.tsx"),
-				G = a("./src/reddit/icons/fonts/Coin/index.tsx");
+				G = a("./src/reddit/components/ModalStyledComponents/index.tsx"),
+				D = a("./src/reddit/icons/fonts/Coin/index.tsx");
 			const {
 				fbt: L
 			} = a("./node_modules/fbt/lib/FbtPublic.js");
@@ -1157,7 +1145,7 @@
 					style: {
 						backgroundImage: `url("${O.a.assetPath}/img/gold/coins-hero.jpg")`
 					}
-				}, c.a.createElement(G.a, {
+				}, c.a.createElement(D.a, {
 					className: S.a.coinIcon
 				}), c.a.createElement("div", {
 					className: S.a.titleMain
@@ -1177,7 +1165,7 @@
 				}), c.a.createElement("button", {
 					className: S.a.closeButton,
 					onClick: e.onCloseClick
-				}, c.a.createElement(D.b, {
+				}, c.a.createElement(G.b, {
 					className: S.a.closeIcon,
 					"data-redditstyle": !0
 				})))
@@ -1226,7 +1214,7 @@
 					}), c.a.createElement("button", {
 						className: S.a.closeButton,
 						onClick: e.onCloseClick
-					}, c.a.createElement(D.b, {
+					}, c.a.createElement(G.b, {
 						className: Object(b.a)(S.a.closeIcon, S.a.awardPurchase),
 						"data-redditstyle": !0
 					})))
@@ -1461,7 +1449,7 @@
 					...a,
 					onCompletePurchaseClick: (a, r) => t.dispatchCompletePurchase(a, r, !!e.gildThingId, e.isIframed)
 				}));
-			class D extends n.a.Component {
+			class G extends n.a.Component {
 				constructor(e) {
 					super(e), this.handleEscapeKey = e => {
 						const {
@@ -1550,7 +1538,7 @@
 					}))
 				}
 			}
-			const G = Object(o.a)(D);
+			const D = Object(o.a)(G);
 			t.default = R(Object(b.c)(class extends n.a.PureComponent {
 				constructor() {
 					super(...arguments), this.onTryCloseModal = () => {
@@ -1572,7 +1560,7 @@
 							paddingBottom: 12
 						} : {}
 					};
-					return n.a.createElement(G, B({}, this.props, {
+					return n.a.createElement(D, B({}, this.props, {
 						className: N.a.coinPurchaseModal,
 						onCloseModal: this.onCloseModal,
 						onOverlayClick: this.onTryCloseModal,
@@ -1828,4 +1816,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.2b421e2ff934133768c2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.7bf5e9e09d8cf69c2f6e.js.map

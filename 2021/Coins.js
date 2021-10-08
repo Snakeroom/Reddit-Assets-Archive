@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Coins.b562d8c5bb26a22d1c7f.js
-// Retrieved at 10/5/2021, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Coins.e87635cdcfe0441c3b2d.js
+// Retrieved at 10/7/2021, 8:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Coins"], {
 		"./node_modules/lodash/times.js": function(e, t, a) {
@@ -113,87 +113,75 @@
 		"./src/lib/localizeCurrency/index.ts": function(e, t, a) {
 			"use strict";
 			a.d(t, "a", (function() {
-				return d
+				return l
 			})), a.d(t, "b", (function() {
-				return m
+				return d
 			}));
 			var n = a("./node_modules/@reddit/i18n-tools/runtime/helpers/locale/constants.js"),
 				r = a("./src/lib/currency/centsToDollars/index.ts"),
 				s = a("./src/lib/currency/currencies.ts"),
 				c = a("./src/lib/prettyPrintNumber/index.ts"),
-				i = a("./src/reddit/helpers/governance/tokens.ts");
-			const o = (() => {
-					try {
-						return "1E4 bits" === new Intl.NumberFormat("en", {
-							style: "unit",
-							unit: "bit",
-							unitDisplay: "long",
-							notation: "scientific"
-						}).format(1e4)
-					} catch (e) {
-						return !1
-					}
-				})(),
-				l = () => o,
-				d = (e, {
+				i = a("./src/reddit/helpers/governance/tokens.ts"),
+				o = a("./src/reddit/constants/intlSupport.ts");
+			const l = (e, {
 					locale: t = n.DEFAULT_LOCALE,
 					pretty: a,
 					formatOptions: r
 				} = {}) => {
 					const s = Number(e);
-					return l() ? a ? Object(c.b)(s) : new Intl.NumberFormat(t, r).format(s) : u(s, a, t)
+					return Object(o.c)() ? a ? Object(c.b)(s) : new Intl.NumberFormat(t, r).format(s) : m(s, a, t)
 				},
-				m = (e, t = {}) => {
+				d = (e, t = {}) => {
 					const {
 						locale: a = n.DEFAULT_LOCALE,
 						pretty: c,
-						formatOptions: o,
+						formatOptions: l,
 						displayConversion: d,
-						forceDecimals: m,
-						currency: h = t.currency || (t.type ? b(t.type) : s.c),
-						type: g = t.type || (t.currency ? p(t.currency) : s.b.Real)
+						forceDecimals: b,
+						currency: h = t.currency || (t.type ? p(t.type) : s.c),
+						type: g = t.type || (t.currency ? u(t.currency) : s.b.Real)
 					} = t, f = Number(e), k = String(e);
 					switch (g) {
 						case s.b.Reddit: {
 							const e = s.e[h],
 								t = e ? e() : h;
-							return l() ? new Intl.NumberFormat(a, {
+							return Object(o.c)() ? new Intl.NumberFormat(a, {
 								currencyDisplay: "symbol",
-								...o
-							}).format(f) + " " + t : u(f, c, a, t)
+								...l
+							}).format(f) + " " + t : m(f, c, a, t)
 						}
 						case s.b.Crypto: {
 							if (c) {
 								return Object(i.c)(k, d) + " " + h
 							}
 							const e = Number(Object(i.b)(k, d));
-							return l() ? new Intl.NumberFormat(a, {
+							return Object(o.c)() ? new Intl.NumberFormat(a, {
 								style: "currency",
 								currency: h,
 								currencyDisplay: "symbol",
 								minimumFractionDigits: 0,
 								maximumFractionDigits: 0,
-								...o
-							}).format(e) : u(e, c, a, h)
+								...l
+							}).format(e) : m(e, c, a, h)
 						}
 						case s.b.Real:
 						default: {
-							const e = Number(Object(r.a)(k, m));
-							return l() ? new Intl.NumberFormat(a, {
+							const e = Number(Object(r.a)(k, b));
+							return Object(o.c)() ? new Intl.NumberFormat(a, {
 								style: "currency",
 								currency: h,
 								currencyDisplay: "symbol",
 								notation: c ? "compact" : "standard",
-								...o
-							}).format(e) : u(e, c, a, h)
+								...l
+							}).format(e) : m(e, c, a, h)
 						}
 					}
 				},
-				u = (e, t, a, n) => {
+				m = (e, t, a, n) => {
 					return (t ? Object(c.b)(e) : e.toLocaleString(a)) + (n ? " " + n : "")
 				},
-				p = e => s.g.includes(e.toUpperCase()) ? s.b.Reddit : s.f.includes(e.toUpperCase()) ? s.b.Crypto : s.b.Real,
-				b = e => {
+				u = e => s.g.includes(e.toUpperCase()) ? s.b.Reddit : s.f.includes(e.toUpperCase()) ? s.b.Crypto : s.b.Real,
+				p = e => {
 					switch (e) {
 						case s.b.Crypto:
 							return s.d;
@@ -246,14 +234,14 @@
 				k = a("./src/reddit/models/Toast/index.ts"),
 				w = a("./src/reddit/selectors/gold/purchaseCatalog.ts"),
 				_ = a("./src/reddit/selectors/goldPurchaseModals.ts"),
-				y = a("./src/reddit/actions/goldPurchaseModals/constants.ts");
-			const O = Object(s.a)(y.q),
-				v = Object(s.a)(y.c),
+				O = a("./src/reddit/actions/goldPurchaseModals/constants.ts");
+			const y = Object(s.a)(O.q),
+				v = Object(s.a)(O.c),
 				j = e => async (t, a) => {
-					t(O(e)), t(Object(d.h)(i.a.ECON_COIN_PURCHASE))
+					t(y(e)), t(Object(d.h)(i.a.ECON_COIN_PURCHASE))
 				}, C = () => async (e, t) => {
 					e(v()), e(Object(d.g)(i.a.ECON_COIN_PURCHASE))
-				}, x = Object(s.a)(y.u), E = ({
+				}, x = Object(s.a)(O.u), E = ({
 					correlationId: e,
 					packageId: t
 				}) => async (a, n) => {
@@ -262,7 +250,7 @@
 						correlationId: e,
 						packageId: t
 					})), a(Object(d.i)(i.a.GOLD_TARGETED_OFFER_MODAL))) : c.c.captureMessage(`Tried to show targeted offer, but could not find package id: ${t}`)
-				}, N = Object(s.a)(y.p), P = ({
+				}, N = Object(s.a)(O.p), P = ({
 					correlationId: e,
 					packageId: t
 				}) => async (a, n) => {
@@ -339,10 +327,10 @@
 							pennies: u
 						} = t,
 						k = Object(_.r)(d) || Object(b.d)(b.a.GoldPayment, !1);
-					let w, y;
+					let w, O;
 					c(Object(o.stripeTokenPending)());
-					const O = Object(_.y)(d);
-					if (O || (w = await c(Object(o.validateAndCreateStripeToken)(e)), y = Object(_.v)(d), w)) try {
+					const y = Object(_.y)(d);
+					if (y || (w = await c(Object(o.validateAndCreateStripeToken)(e)), O = Object(_.v)(d), w)) try {
 						const {
 							gildModalThingId: e,
 							isAnonymous: i,
@@ -369,8 +357,8 @@
 								isOldReddit: s,
 								offerContext: Object(f.d)(t, !0),
 								pennies: u,
-								rememberCard: y,
-								savedCardId: O || void 0,
+								rememberCard: O,
+								savedCardId: y || void 0,
 								thingId: e,
 								token: w
 							});
@@ -494,21 +482,21 @@
 						if (!c || !_) return void s(Object(o.paypalApiError)(n.fbt._("Gilding unknown post or comment", null, {
 							hk: "4DkIS3"
 						})));
-						const y = _.id,
-							O = await Object(u.d)({
+						const O = _.id,
+							y = await Object(u.d)({
 								context: l(),
 								offerContext: Object(f.d)(t, !0),
 								orderId: e,
 								coins: p,
 								pennies: k,
 								thingId: c,
-								awardId: y,
+								awardId: O,
 								message: w || "",
 								isAnonymous: i,
 								correlationId: m
 							});
-						if (O.error) {
-							const e = Object(r.a)(O.error);
+						if (y.error) {
+							const e = Object(r.a)(y.error);
 							s(Object(o.paypalApiError)(e))
 						} else {
 							s(C());
@@ -518,7 +506,7 @@
 								coins: n,
 								subreddit_coins: r,
 								treatment_tags: i
-							} = O.body;
+							} = y.body;
 							s(Object(o.paymentCompleted)({
 								coins: n,
 								confirmed: !0
@@ -527,7 +515,7 @@
 								gildSuccessful: l
 							} = await a.e("gildActions").then(a.bind(null, "./src/reddit/actions/gold/gild.ts"));
 							s(l({
-								awardId: y,
+								awardId: O,
 								awardKarmaReceived: t || 0,
 								awardings: Object(h.a)(e).map(e => ({
 									award: Object(g.h)(e),
@@ -573,9 +561,9 @@
 			})), a.d(t, "toggleRememberCard", (function() {
 				return _
 			})), a.d(t, "selectSavedCard", (function() {
-				return y
-			})), a.d(t, "_deleteSavedCard", (function() {
 				return O
+			})), a.d(t, "_deleteSavedCard", (function() {
+				return y
 			})), a.d(t, "deleteSavedCard", (function() {
 				return v
 			})), a.d(t, "savedCardsPending", (function() {
@@ -622,10 +610,10 @@
 							message: e
 						}))
 					}
-				}, w = Object(s.a)(i.x), _ = Object(s.a)(i.H), y = Object(s.a)(i.C), O = Object(s.a)(i.g), v = e => async (t, a, {
+				}, w = Object(s.a)(i.x), _ = Object(s.a)(i.H), O = Object(s.a)(i.C), y = Object(s.a)(i.g), v = e => async (t, a, {
 					apiContext: n
 				}) => {
-					t(O(e));
+					t(y(e));
 					try {
 						const t = await Object(c.a)(n(), e);
 						if (t.error) throw new Error(t.error.type)
@@ -646,7 +634,7 @@
 							expirationYear: e.exp_year,
 							last4: e.last4
 						}));
-						e(C(n)), n[0] && e(y(n[0].cardId))
+						e(C(n)), n[0] && e(O(n[0].cardId))
 					} catch (n) {
 						r.c.captureException(n), e(C([]))
 					}
@@ -659,7 +647,7 @@
 			})), a.d(t, "c", (function() {
 				return _
 			})), a.d(t, "a", (function() {
-				return O
+				return y
 			}));
 			var n = a("./node_modules/fbt/lib/FbtPublic.js"),
 				r = a("./src/lib/env/index.ts"),
@@ -718,7 +706,7 @@
 						});
 						a(w(e))
 					}
-				}, y = Object(s.a)(u.h), O = () => async (e, t, {
+				}, O = Object(s.a)(u.h), y = () => async (e, t, {
 					gqlContext: a
 				}) => {
 					var s, o;
@@ -729,7 +717,7 @@
 							if (null === (s = a.errors) || void 0 === s ? void 0 : s.length) throw new Error(a.errors.map(e => e.message).join(" | "));
 							if (!(null === (o = a.awards) || void 0 === o ? void 0 : o.length)) throw new Error("Got empty award list on free award offer claim");
 							if (!a.ok) throw new Error("Got not ok response on free award offer claim");
-							await e(y({
+							await e(O({
 								awards: a.awards
 							})), e(Object(m.B)())
 						}
@@ -1511,13 +1499,13 @@
 					action: "click",
 					noun: "coins_package"
 				}),
-				y = () => e => ({
+				O = () => e => ({
 					...k(e),
 					source: f,
 					action: "click",
 					noun: "get_premium"
 				});
-			var O = a("./src/reddit/helpers/trackers/screenview.ts"),
+			var y = a("./src/reddit/helpers/trackers/screenview.ts"),
 				v = a("./src/telemetry/index.ts"),
 				j = a("./src/telemetry/models/Timer.ts"),
 				C = a("./src/reddit/pages/CoinsPage/index.m.less"),
@@ -1563,45 +1551,45 @@
 						currency: F.a
 					}), k = n ? b.marketing["4x"].url : b.marketing["2x"].url, w = d > 0 && `${Object(B.a)(d,{locale:c})}%`, _ = r.fbt._("bonus", null, {
 						hk: "L8mcp"
-					}), y = n ? D.a.large : "", O = i !== m, v = l !== h;
+					}), O = n ? D.a.large : "", y = i !== m, v = l !== h;
 					return o.a.createElement("div", {
-						className: Object(R.a)(t, D.a.coinPurchasePackage, y)
+						className: Object(R.a)(t, D.a.coinPurchasePackage, O)
 					}, o.a.createElement("div", {
-						className: Object(R.a)(y, D.a.imageContainer)
+						className: Object(R.a)(O, D.a.imageContainer)
 					}, o.a.createElement("img", {
 						src: k
 					}), p && o.a.createElement("div", {
 						className: D.a.badge
 					}, p), w && o.a.createElement("div", {
-						className: Object(R.a)(D.a.stamp, y)
+						className: Object(R.a)(D.a.stamp, O)
 					}, o.a.createElement(q.a, {
 						className: D.a.stampIcon
 					}), o.a.createElement("div", {
-						className: Object(R.a)(D.a.stampValue, y)
+						className: Object(R.a)(D.a.stampValue, O)
 					}, w), o.a.createElement("div", {
-						className: Object(R.a)(D.a.stampText, y)
+						className: Object(R.a)(D.a.stampText, O)
 					}, _))), o.a.createElement("div", {
-						className: Object(R.a)(D.a.contentContainer, y)
+						className: Object(R.a)(D.a.contentContainer, O)
 					}, o.a.createElement("div", {
-						className: Object(R.a)(D.a.price, y)
+						className: Object(R.a)(D.a.price, O)
 					}, o.a.createElement(z.a, {
 						className: D.a.priceCoinIcon
 					}), o.a.createElement("div", null, o.a.createElement("div", {
 						className: D.a.priceValue
-					}, f), O && o.a.createElement("div", {
+					}, f), y && o.a.createElement("div", {
 						className: Object(R.a)(D.a.priceCurrency, D.a.crossout)
 					}, Object(B.b)(i, {
 						locale: c,
 						type: F.b.Reddit,
 						currency: F.a
 					})))), o.a.createElement("div", {
-						className: Object(R.a)(D.a.description, y)
+						className: Object(R.a)(D.a.description, O)
 					}, u), o.a.createElement("div", {
 						className: D.a.ctaContainer
 					}, o.a.createElement(V.s, {
 						kind: V.a.Button,
 						priority: V.b.Primary,
-						className: Object(R.a)(D.a.cta, y),
+						className: Object(R.a)(D.a.cta, O),
 						onClick: s
 					}, g), v && o.a.createElement("div", {
 						className: D.a.priceCrossout
@@ -1771,7 +1759,7 @@
 							onRouteToPremium: e,
 							sendEvent: t
 						} = this.props;
-						t(y()), e()
+						t(O()), e()
 					}
 				}
 				componentDidMount() {
@@ -1782,7 +1770,7 @@
 					} = this.props;
 					e.length || t || a(this.correlationId), document.documentElement.scrollTop = document.body.scrollTop = 0;
 					const n = u.Kb.COINS;
-					v.c.has(n) && (this.props.sendEvent(Object(O.b)(j.TimerType.InApp, v.c.end(n))), this.props.sendEvent(Object(O.a)())), Object(p.a)(), this.setTargetedOfferTimeout()
+					v.c.has(n) && (this.props.sendEvent(Object(y.b)(j.TimerType.InApp, v.c.end(n))), this.props.sendEvent(Object(y.a)())), Object(p.a)(), this.setTargetedOfferTimeout()
 				}
 				componentDidUpdate() {
 					!this.targetedOfferTimerId && this.props.dealCoinPackages.length && this.setTargetedOfferTimeout()
@@ -1937,4 +1925,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Coins.b562d8c5bb26a22d1c7f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Coins.e87635cdcfe0441c3b2d.js.map
