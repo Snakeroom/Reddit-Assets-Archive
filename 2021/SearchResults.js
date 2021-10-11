@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.1193cf314772420b767e.js
-// Retrieved at 10/7/2021, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.e979543e1ac03716965f.js
+// Retrieved at 10/11/2021, 10:20:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -10956,90 +10956,91 @@
 					q = Object(c.e)(e => Object(N.c)(e, {
 						pageLayer: r
 					})),
-					K = Object(y.V)(r),
-					z = Object(y.ab)(r),
-					[G, J] = Object(i.useState)(!1),
-					Z = Object(S.a)(K) || {};
+					K = Object(c.e)(R.c),
+					z = Object(y.V)(r),
+					G = Object(y.ab)(r),
+					[J, Z] = Object(i.useState)(!1),
+					X = Object(S.a)(z) || {};
 				Object(i.useEffect)(() => {
 					let e = 0;
 					return Object(O.c)(O.a.SearchResults) || Object(O.d)(O.a.SearchResults), e = window.setTimeout(() => s(Object(m.f)()), B), () => {
 						Object(O.b)(O.a.SearchResults), window.clearTimeout(e)
 					}
 				}, []), Object(i.useEffect)(() => {
-					K !== Z && (V.current = !1, J(!1)), K && Z && K[v.p] !== Z[v.p] && (Object(O.b)(O.a.SearchResults), Object(O.d)(O.a.SearchResults))
-				}, [K, Z]);
-				const X = t.params.subredditName || t.params.multiredditName || "",
-					Q = t.params.username,
-					Y = Object(l.e)(o()(K || {}, v.t)),
-					$ = !(W && Y.restrict_sr) && Object(E.a)(Y.type) ? g.h.Listings : g.h.Posts,
-					ee = {
-						...Y,
-						type: Object(R.a)(Y.type)
+					z !== X && (V.current = !1, Z(!1)), z && X && z[v.p] !== X[v.p] && (Object(O.b)(O.a.SearchResults), Object(O.d)(O.a.SearchResults))
+				}, [z, X]);
+				const Q = t.params.subredditName || t.params.multiredditName || "",
+					Y = t.params.username,
+					$ = Object(l.e)(o()(z || {}, v.t)),
+					ee = !(W && $.restrict_sr) && Object(E.a)($.type) ? g.h.Listings : g.h.Posts,
+					te = {
+						...$,
+						type: Object(R.a)($.type)
 					},
-					te = Object(l.b)(X, Q, ee),
-					se = {
-						...ee,
-						type: [d.Xb.Subreddits, d.Xb.Users]
+					se = Object(l.b)(Q, Y, te),
+					re = {
+						...te,
+						type: K ? [d.Xb.Posts, d.Xb.Subreddits, d.Xb.Users] : [d.Xb.Subreddits, d.Xb.Users]
 					},
-					re = Object(l.b)(X, Q, se),
-					ne = {
+					ne = Object(l.b)(Q, Y, re),
+					oe = {
 						redesign: !0,
-						searchOptions: ee
+						searchOptions: te
 					};
-				let oe;
-				Object(y.O)(r) || Object(y.B)(r) ? oe = a.a.createElement(x.a, A({}, ne, {
-					url: Object(j.a)(K)
-				})) : H && q && (oe = a.a.createElement(x.a, A({}, ne, {
+				let ie;
+				Object(y.O)(r) || Object(y.B)(r) ? ie = a.a.createElement(x.a, A({}, oe, {
+					url: Object(j.a)(z)
+				})) : H && q && (ie = a.a.createElement(x.a, A({}, oe, {
 					subreddit: H,
-					url: Object(j.a)(K, H.name)
+					url: Object(j.a)(z, H.name)
 				})));
-				const ie = U[$].tab,
-					ae = U[$].sidebar,
-					ce = U[$].filterNav,
-					de = Object(P.a)({
+				const ae = U[ee].tab,
+					ce = U[ee].sidebar,
+					de = U[ee].filterNav,
+					le = Object(P.a)({
 						redditStyle: !0,
 						theme: F
 					});
 				return a.a.createElement(I.a, {
-					backgroundColor: de.canvas,
-					content: a.a.createElement(a.a.Fragment, null, a.a.createElement(u.a, null), z && !G && (() => {
-						const e = e => n(Object(_.b)(e, Object(l.e)(o()(K || {}, v.t))));
+					backgroundColor: le.canvas,
+					content: a.a.createElement(a.a.Fragment, null, a.a.createElement(u.a, null), G && !J && (() => {
+						const e = e => n(Object(_.b)(e, Object(l.e)(o()(z || {}, v.t))));
 						return V.current || (e("view"), V.current = !0), a.a.createElement(D, {
 							announcement: f.a,
 							className: M.a.announcement,
 							onBtnClick: () => e("click"),
 							onClose: () => {
-								e("dismiss"), J(!0)
+								e("dismiss"), Z(!0)
 							}
 						})
 					})(), a.a.createElement(p.a, {
-						listingKey: te,
-						listingName: X,
+						listingKey: se,
+						listingName: Q,
 						location: e,
-						searchOptions: ee,
-						tab: ie
+						searchOptions: te,
+						tab: ae
 					})),
 					navBar: a.a.createElement(a.a.Fragment, null, a.a.createElement(b.a, {
-						activeTab: ie,
+						activeTab: ae,
 						location: e,
-						searchOptions: ee,
-						searchSwitcher: oe
-					}), ce && a.a.createElement(T.a, {
+						searchOptions: te,
+						searchSwitcher: ie
+					}), de && a.a.createElement(T.a, {
 						key: "subNav",
-						searchOptions: Y,
+						searchOptions: $,
 						shouldHideGlobalSearchLink: !0,
-						subredditName: X,
-						tab: ie
-					}), oe && a.a.createElement("div", {
+						subredditName: Q,
+						tab: ae
+					}), ie && a.a.createElement("div", {
 						className: M.a.searchSwitcherContainer
-					}, oe)),
-					sidebar: ae && a.a.createElement(C.a, {
+					}, ie)),
+					sidebar: ce && a.a.createElement(C.a, {
 						className: M.a.sidebar,
-						listingKey: re,
-						listingName: X || g.c,
+						listingKey: ne,
+						listingName: Q || g.c,
 						location: e,
-						searchOptions: se,
-						tab: ie
+						searchOptions: re,
+						tab: ae
 					})
 				})
 			}
@@ -11521,4 +11522,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.1193cf314772420b767e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.e979543e1ac03716965f.js.map
