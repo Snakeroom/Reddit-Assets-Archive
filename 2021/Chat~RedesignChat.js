@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.cf971669eedf4dfd0469.js
-// Retrieved at 10/5/2021, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.44926e73bc8d942298d2.js
+// Retrieved at 10/11/2021, 5:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -1910,522 +1910,523 @@
 		"./src/chat/actions/tracking.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return E
-			})), n.d(t, "l", (function() {
 				return j
-			})), n.d(t, "O", (function() {
+			})), n.d(t, "l", (function() {
 				return v
-			})), n.d(t, "V", (function() {
+			})), n.d(t, "O", (function() {
 				return C
-			})), n.d(t, "P", (function() {
+			})), n.d(t, "V", (function() {
 				return _
-			})), n.d(t, "Z", (function() {
+			})), n.d(t, "P", (function() {
 				return I
-			})), n.d(t, "Y", (function() {
+			})), n.d(t, "Z", (function() {
 				return x
-			})), n.d(t, "e", (function() {
+			})), n.d(t, "Y", (function() {
 				return y
-			})), n.d(t, "U", (function() {
+			})), n.d(t, "e", (function() {
 				return S
-			})), n.d(t, "A", (function() {
+			})), n.d(t, "U", (function() {
 				return w
-			})), n.d(t, "h", (function() {
+			})), n.d(t, "A", (function() {
 				return N
-			})), n.d(t, "W", (function() {
+			})), n.d(t, "h", (function() {
 				return M
-			})), n.d(t, "M", (function() {
+			})), n.d(t, "W", (function() {
 				return T
-			})), n.d(t, "y", (function() {
+			})), n.d(t, "M", (function() {
 				return A
-			})), n.d(t, "C", (function() {
+			})), n.d(t, "y", (function() {
 				return k
-			})), n.d(t, "F", (function() {
+			})), n.d(t, "C", (function() {
 				return P
-			})), n.d(t, "E", (function() {
+			})), n.d(t, "F", (function() {
 				return L
-			})), n.d(t, "c", (function() {
+			})), n.d(t, "E", (function() {
 				return D
-			})), n.d(t, "w", (function() {
+			})), n.d(t, "c", (function() {
 				return U
-			})), n.d(t, "K", (function() {
+			})), n.d(t, "w", (function() {
 				return R
-			})), n.d(t, "ab", (function() {
+			})), n.d(t, "K", (function() {
 				return F
-			})), n.d(t, "N", (function() {
+			})), n.d(t, "ab", (function() {
 				return B
-			})), n.d(t, "k", (function() {
+			})), n.d(t, "N", (function() {
 				return H
-			})), n.d(t, "T", (function() {
+			})), n.d(t, "k", (function() {
 				return G
-			})), n.d(t, "S", (function() {
+			})), n.d(t, "T", (function() {
 				return V
-			})), n.d(t, "m", (function() {
+			})), n.d(t, "S", (function() {
 				return z
-			})), n.d(t, "j", (function() {
+			})), n.d(t, "m", (function() {
 				return W
-			})), n.d(t, "d", (function() {
+			})), n.d(t, "j", (function() {
 				return K
-			})), n.d(t, "o", (function() {
+			})), n.d(t, "d", (function() {
 				return Z
-			})), n.d(t, "q", (function() {
+			})), n.d(t, "o", (function() {
 				return q
-			})), n.d(t, "s", (function() {
+			})), n.d(t, "q", (function() {
 				return Q
-			})), n.d(t, "p", (function() {
+			})), n.d(t, "s", (function() {
 				return Y
-			})), n.d(t, "r", (function() {
+			})), n.d(t, "p", (function() {
 				return J
-			})), n.d(t, "f", (function() {
+			})), n.d(t, "r", (function() {
 				return X
-			})), n.d(t, "x", (function() {
+			})), n.d(t, "f", (function() {
 				return $
-			})), n.d(t, "H", (function() {
+			})), n.d(t, "x", (function() {
 				return ee
-			})), n.d(t, "R", (function() {
+			})), n.d(t, "H", (function() {
 				return te
-			})), n.d(t, "n", (function() {
+			})), n.d(t, "R", (function() {
 				return ne
-			})), n.d(t, "i", (function() {
+			})), n.d(t, "n", (function() {
 				return ae
-			})), n.d(t, "u", (function() {
+			})), n.d(t, "i", (function() {
 				return se
-			})), n.d(t, "z", (function() {
+			})), n.d(t, "u", (function() {
 				return re
-			})), n.d(t, "B", (function() {
+			})), n.d(t, "z", (function() {
 				return ce
-			})), n.d(t, "t", (function() {
+			})), n.d(t, "B", (function() {
 				return oe
-			})), n.d(t, "L", (function() {
+			})), n.d(t, "t", (function() {
 				return ie
-			})), n.d(t, "D", (function() {
+			})), n.d(t, "L", (function() {
 				return le
-			})), n.d(t, "G", (function() {
+			})), n.d(t, "D", (function() {
 				return de
-			})), n.d(t, "X", (function() {
+			})), n.d(t, "G", (function() {
 				return ue
-			})), n.d(t, "J", (function() {
+			})), n.d(t, "X", (function() {
 				return he
-			})), n.d(t, "b", (function() {
+			})), n.d(t, "J", (function() {
 				return me
-			})), n.d(t, "I", (function() {
+			})), n.d(t, "b", (function() {
 				return pe
-			})), n.d(t, "v", (function() {
+			})), n.d(t, "I", (function() {
 				return be
-			})), n.d(t, "Q", (function() {
+			})), n.d(t, "v", (function() {
 				return ge
-			})), n.d(t, "g", (function() {
+			})), n.d(t, "Q", (function() {
 				return fe
+			})), n.d(t, "g", (function() {
+				return Oe
 			}));
 			var a = n("./src/telemetry/models/Event.ts"),
 				s = n("./src/chat/components/MessageInput/constants.ts"),
 				r = n("./src/chat/constants/channels.ts"),
-				c = n("./src/chat/selectors/channels.ts"),
-				o = n("./src/chat/selectors/contacts.ts"),
-				i = n("./src/chat/selectors/gifs.ts"),
-				l = n("./src/chat/selectors/platform.ts"),
-				d = n("./src/chat/tracking/fields/chat.ts"),
-				u = n("./src/chat/tracking/fields/common.ts"),
-				h = n("./src/chat/tracking/sendEvent.ts");
-			var m = n("./src/chat/selectors/telemetry.ts");
-			var p = n("./src/chat/tracking/events/chatView.ts"),
-				b = n("./src/chat/tracking/events/contactsList.ts"),
-				g = (n("./src/chat/tracking/events/experiment.ts"), n("./src/chat/tracking/events/invitationInbox.ts")),
-				f = n("./src/chat/tracking/events/messagesInbox.ts");
-			var O, E;
+				c = n("./src/chat/constants/messages.ts"),
+				o = n("./src/chat/selectors/channels.ts"),
+				i = n("./src/chat/selectors/contacts.ts"),
+				l = n("./src/chat/selectors/gifs.ts"),
+				d = n("./src/chat/selectors/platform.ts"),
+				u = n("./src/chat/tracking/fields/chat.ts"),
+				h = n("./src/chat/tracking/fields/common.ts"),
+				m = n("./src/chat/tracking/sendEvent.ts");
+			var p = n("./src/chat/selectors/telemetry.ts");
+			var b = n("./src/chat/tracking/events/chatView.ts"),
+				g = n("./src/chat/tracking/events/contactsList.ts"),
+				f = (n("./src/chat/tracking/events/experiment.ts"), n("./src/chat/tracking/events/invitationInbox.ts")),
+				O = n("./src/chat/tracking/events/messagesInbox.ts");
+			var E, j;
 			! function(e) {
 				e.AWARD_RECEIVED = "award_received"
-			}(O || (O = {})),
+			}(E || (E = {})),
 			function(e) {
 				e[e.FIRST = 1] = "FIRST", e[e.SECOND = 2] = "SECOND", e[e.THIRD = 3] = "THIRD"
-			}(E || (E = {}));
-			const j = () => async (e, t) => {
-				Object(f.b)(t())
-			}, v = e => async (t, n) => {
-				Object(p.f)(n(), e)
-			}, C = (e, t) => async (n, a) => {
-				Object(p.j)(a(), e, t)
+			}(j || (j = {}));
+			const v = () => async (e, t) => {
+				Object(O.b)(t())
+			}, C = e => async (t, n) => {
+				Object(b.f)(n(), e)
 			}, _ = (e, t) => async (n, a) => {
-				Object(p.g)(a(), e, t)
-			}, I = () => async (e, t) => {
-				Object(p.l)(t())
+				Object(b.j)(a(), e, t)
+			}, I = (e, t) => async (n, a) => {
+				Object(b.g)(a(), e, t)
 			}, x = () => async (e, t) => {
-				Object(p.k)(t())
+				Object(b.l)(t())
 			}, y = () => async (e, t) => {
-				Object(p.a)(t())
+				Object(b.k)(t())
 			}, S = () => async (e, t) => {
-				Object(p.h)(t())
-			}, w = (e, t) => async (n, a) => {
-				Object(p.d)(a(), e, t)
-			}, N = () => async (e, t) => {
-				Object(p.b)(t())
+				Object(b.a)(t())
+			}, w = () => async (e, t) => {
+				Object(b.h)(t())
+			}, N = (e, t) => async (n, a) => {
+				Object(b.d)(a(), e, t)
 			}, M = () => async (e, t) => {
-				(e => Object(h.a)({
+				Object(b.b)(t())
+			}, T = () => async (e, t) => {
+				(e => Object(m.a)({
 					noun: "chat_settings",
 					source: a.b.ChatSettings,
 					action: a.a.View,
 					chat: {
-						...Object(d.z)(e),
-						...Object(d.p)(e),
-						...Object(d.f)(e)
+						...Object(u.z)(e),
+						...Object(u.p)(e),
+						...Object(u.f)(e)
 					},
-					...Object(u.a)(e)
+					...Object(h.a)(e)
 				}))(t())
-			}, T = e => async (t, n) => {
-				((e, t) => Object(h.a)({
+			}, A = e => async (t, n) => {
+				((e, t) => Object(m.a)({
 					noun: "chat_member_block",
 					source: a.b.ChatSettings,
 					action: a.a.Submit,
 					chat: {
-						...Object(d.z)(e),
-						...Object(d.p)(e),
-						...Object(d.f)(e)
+						...Object(u.z)(e),
+						...Object(u.p)(e),
+						...Object(u.f)(e)
 					},
 					targetUser: {
 						id: t
 					},
-					...Object(u.a)(e)
+					...Object(h.a)(e)
 				}))(n(), e)
-			}, A = () => async (e, t) => {
+			}, k = () => async (e, t) => {
 				const n = t();
-				Object(l.c)(n) !== r.a.VIEW_INVITE && (e => {
-					Object(h.a)({
+				Object(d.c)(n) !== r.a.VIEW_INVITE && (e => {
+					Object(m.a)({
 						noun: "view_profile",
 						source: a.b.ChatSettings,
 						action: a.a.Click,
 						chat: {
-							...Object(d.z)(e),
-							...Object(d.p)(e),
-							...Object(d.t)(e),
-							...Object(d.f)(e)
+							...Object(u.z)(e),
+							...Object(u.p)(e),
+							...Object(u.t)(e),
+							...Object(u.f)(e)
 						},
-						...Object(u.a)(e)
+						...Object(h.a)(e)
 					})
 				})(n)
-			}, k = () => async (e, t) => {
-				(e => Object(h.a)({
+			}, P = () => async (e, t) => {
+				(e => Object(m.a)({
 					noun: "leave_chat",
 					source: a.b.ChatSettings,
 					action: a.a.Confirm,
 					chat: {
-						...Object(d.z)(e),
-						...Object(d.p)(e),
-						...Object(d.f)(e),
-						...Object(d.x)(e)
+						...Object(u.z)(e),
+						...Object(u.p)(e),
+						...Object(u.f)(e),
+						...Object(u.x)(e)
 					},
-					...Object(u.a)(e)
+					...Object(h.a)(e)
 				}))(t())
-			}, P = () => async (e, t) => {
-				(e => Object(h.a)({
+			}, L = () => async (e, t) => {
+				(e => Object(m.a)({
 					noun: "badging",
 					source: a.b.ChatSettings,
 					action: a.a.Enable,
 					chat: {
-						...Object(d.z)(e),
-						...Object(d.p)(e),
-						...Object(d.f)(e),
-						...Object(d.x)(e)
+						...Object(u.z)(e),
+						...Object(u.p)(e),
+						...Object(u.f)(e),
+						...Object(u.x)(e)
 					},
-					...Object(u.a)(e)
+					...Object(h.a)(e)
 				}))(t())
-			}, L = () => async (e, t) => {
-				(e => Object(h.a)({
+			}, D = () => async (e, t) => {
+				(e => Object(m.a)({
 					noun: "badging",
 					source: a.b.ChatSettings,
 					action: a.a.Disable,
 					chat: {
-						...Object(d.z)(e),
-						...Object(d.p)(e),
-						...Object(d.f)(e),
-						...Object(d.x)(e)
+						...Object(u.z)(e),
+						...Object(u.p)(e),
+						...Object(u.f)(e),
+						...Object(u.x)(e)
 					},
-					...Object(u.a)(e)
+					...Object(h.a)(e)
 				}))(t())
-			}, D = () => async (e, t) => {
-				(e => Object(h.a)({
+			}, U = () => async (e, t) => {
+				(e => Object(m.a)({
 					noun: "add_to_group",
 					source: a.b.ChatSettings,
 					action: a.a.Click,
 					chat: {
-						...Object(d.z)(e),
-						...Object(d.p)(e),
-						...Object(d.f)(e),
-						...Object(d.x)(e)
+						...Object(u.z)(e),
+						...Object(u.p)(e),
+						...Object(u.f)(e),
+						...Object(u.x)(e)
 					},
-					...Object(u.a)(e)
+					...Object(h.a)(e)
 				}))(t())
-			}, U = () => async (e, t) => {
-				(e => Object(h.a)({
+			}, R = () => async (e, t) => {
+				(e => Object(m.a)({
 					noun: "rename_group",
 					source: a.b.ChatSettings,
 					action: a.a.Click,
 					chat: {
-						...Object(d.z)(e),
-						...Object(d.p)(e),
-						...Object(d.f)(e),
-						...Object(d.x)(e)
+						...Object(u.z)(e),
+						...Object(u.p)(e),
+						...Object(u.f)(e),
+						...Object(u.x)(e)
 					},
-					...Object(u.a)(e)
+					...Object(h.a)(e)
 				}))(t())
-			}, R = () => async (e, t) => {
-				(e => Object(h.a)({
+			}, F = () => async (e, t) => {
+				(e => Object(m.a)({
 					noun: "rename_group",
 					source: a.b.ChatSettings,
 					action: a.a.Save,
 					chat: {
-						...Object(d.z)(e),
-						...Object(d.p)(e),
-						...Object(d.f)(e),
-						...Object(d.x)(e)
+						...Object(u.z)(e),
+						...Object(u.p)(e),
+						...Object(u.f)(e),
+						...Object(u.x)(e)
 					},
-					...Object(u.a)(e)
+					...Object(h.a)(e)
 				}))(t())
-			}, F = () => async (e, t) => {
-				(e => Object(h.a)({
+			}, B = () => async (e, t) => {
+				(e => Object(m.a)({
 					noun: "view_members",
 					source: a.b.ChatSettings,
 					action: a.a.Click,
 					chat: {
-						...Object(d.z)(e),
-						...Object(d.p)(e),
-						...Object(d.f)(e),
-						...Object(d.x)(e)
+						...Object(u.z)(e),
+						...Object(u.p)(e),
+						...Object(u.f)(e),
+						...Object(u.x)(e)
 					},
-					...Object(u.a)(e)
+					...Object(h.a)(e)
 				}))(t())
-			}, B = e => async (t, n) => {
+			}, H = e => async (t, n) => {
 				((e, t) => {
-					Object(h.a)({
+					Object(m.a)({
 						noun: "chat_member_report",
 						source: a.b.ChatSettings,
 						action: a.a.Submit,
 						chat: {
-							...Object(d.z)(e),
-							...Object(d.p)(e),
-							...Object(d.f)(e),
-							...Object(d.v)(t)
+							...Object(u.z)(e),
+							...Object(u.p)(e),
+							...Object(u.f)(e),
+							...Object(u.v)(t)
 						},
-						...Object(u.a)(e)
+						...Object(h.a)(e)
 					})
 				})(n(), e)
-			}, H = e => async (t, n) => {
-				Object(b.c)(n(), e)
 			}, G = e => async (t, n) => {
-				Object(o.c)(n(), e) && Object(b.f)(n())
+				Object(g.c)(n(), e)
 			}, V = e => async (t, n) => {
+				Object(i.c)(n(), e) && Object(g.f)(n())
+			}, z = e => async (t, n) => {
 				const a = n(),
 					s = e && e.filter(e => e !== a.user.account.id),
 					r = s && s[0],
 					c = a.contacts.models[r],
-					i = c && c.name,
-					l = Object(o.a)(n(), i);
-				l && Object(b.e)(n(), l)
-			}, z = e => async (t, n) => {
-				Object(b.d)(n(), e)
-			}, W = () => async (e, t) => {
-				Object(b.b)(t())
+					o = c && c.name,
+					l = Object(i.a)(n(), o);
+				l && Object(g.e)(n(), l)
+			}, W = e => async (t, n) => {
+				Object(g.d)(n(), e)
 			}, K = () => async (e, t) => {
-				Object(b.a)(t())
-			}, Z = e => async (t, n) => {
-				const a = n(),
-					s = Object(c.g)(a, e);
-				Object(g.d)(a, s, s ? O.AWARD_RECEIVED : void 0)
+				Object(g.b)(t())
+			}, Z = () => async (e, t) => {
+				Object(g.a)(t())
 			}, q = e => async (t, n) => {
 				const a = n(),
-					s = Object(c.g)(a, e);
-				Object(g.f)(a, s, s ? O.AWARD_RECEIVED : void 0)
-			}, Q = () => async (e, t) => {
-				const n = t();
-				Object(l.c)(n) === r.a.VIEW_INVITE && Object(g.h)(n)
+					s = Object(o.g)(a, e);
+				Object(f.d)(a, s, s ? E.AWARD_RECEIVED : void 0)
+			}, Q = e => async (t, n) => {
+				const a = n(),
+					s = Object(o.g)(a, e);
+				Object(f.f)(a, s, s ? E.AWARD_RECEIVED : void 0)
 			}, Y = () => async (e, t) => {
 				const n = t();
-				Object(l.c)(n) === r.a.VIEW_INVITE && Object(g.e)(n)
-			}, J = (e, t) => async (n, a) => {
+				Object(d.c)(n) === r.a.VIEW_INVITE && Object(f.h)(n)
+			}, J = () => async (e, t) => {
+				const n = t();
+				Object(d.c)(n) === r.a.VIEW_INVITE && Object(f.e)(n)
+			}, X = (e, t) => async (n, a) => {
 				const s = a();
-				if (Object(l.c)(s) === r.a.VIEW_INVITE) {
+				if (Object(d.c)(s) === r.a.VIEW_INVITE) {
 					const n = t.pop(),
 						a = null == n ? void 0 : n.messageId;
-					Object(g.g)(s, e, a)
+					Object(f.g)(s, e, a)
 				}
-			}, X = () => async (e, t) => {
-				(e => Object(h.a)({
+			}, $ = () => async (e, t) => {
+				(e => Object(m.a)({
 					noun: "edit_theme",
 					source: a.b.ChatSettings,
 					action: a.a.Click,
 					chat: {
-						...Object(d.z)(e),
-						...Object(d.p)(e),
-						...Object(d.f)(e)
+						...Object(u.z)(e),
+						...Object(u.p)(e),
+						...Object(u.f)(e)
 					},
-					...Object(u.a)(e)
+					...Object(h.a)(e)
 				}))(t())
-			}, $ = e => async (t, n) => {
-				((e, t) => Object(h.a)({
+			}, ee = e => async (t, n) => {
+				((e, t) => Object(m.a)({
 					noun: "select_theme",
 					source: a.b.ChatSettings,
 					action: a.a.Click,
 					chat: {
-						...Object(d.z)(e),
-						...Object(d.p)(e),
-						...Object(d.f)(e)
+						...Object(u.z)(e),
+						...Object(u.p)(e),
+						...Object(u.f)(e)
 					},
-					...Object(u.a)(e),
+					...Object(h.a)(e),
 					actionInfo: {
-						...Object(m.a)(e),
+						...Object(p.a)(e),
 						settingValue: t
 					}
 				}))(n(), e)
-			}, ee = () => async (e, t) => {
-				(e => Object(h.a)({
+			}, te = () => async (e, t) => {
+				(e => Object(m.a)({
 					noun: "channel",
 					source: a.b.ChatSettings,
 					action: a.a.Mute,
 					chat: {
-						...Object(d.z)(e),
-						...Object(d.p)(e),
-						...Object(d.f)(e),
-						...Object(d.x)(e)
+						...Object(u.z)(e),
+						...Object(u.p)(e),
+						...Object(u.f)(e),
+						...Object(u.x)(e)
 					},
-					...Object(u.a)(e)
+					...Object(h.a)(e)
 				}))(t())
-			}, te = () => async (e, t) => {
-				(e => Object(h.a)({
+			}, ne = () => async (e, t) => {
+				(e => Object(m.a)({
 					noun: "channel",
 					source: a.b.ChatSettings,
 					action: a.a.Unmute,
 					chat: {
-						...Object(d.z)(e),
-						...Object(d.p)(e),
-						...Object(d.f)(e),
-						...Object(d.x)(e)
+						...Object(u.z)(e),
+						...Object(u.p)(e),
+						...Object(u.f)(e),
+						...Object(u.x)(e)
 					},
-					...Object(u.a)(e)
+					...Object(h.a)(e)
 				}))(t())
-			}, ne = e => async (t, n) => {
+			}, ae = e => async (t, n) => {
 				((e, t) => {
-					Object(h.a)({
+					Object(m.a)({
 						noun: "create_chat",
 						source: a.b.UserHovercard,
 						action: a.a.Click,
 						chat: {
-							...Object(d.D)(e, t),
-							...Object(d.B)(e, t),
-							...Object(d.C)(e, t)
+							...Object(u.D)(e, t),
+							...Object(u.B)(e, t),
+							...Object(u.C)(e, t)
 						},
-						...Object(u.a)(e),
-						...Object(u.b)(e)
+						...Object(h.a)(e),
+						...Object(h.b)(e)
 					})
 				})(n(), e)
-			}, ae = () => async (e, t) => {
-				Object(f.a)(t())
 			}, se = () => async (e, t) => {
-				Object(f.c)(t())
-			}, re = e => async (t, n) => {
+				Object(O.a)(t())
+			}, re = () => async (e, t) => {
+				Object(O.c)(t())
+			}, ce = e => async (t, n) => {
 				const r = n();
 				r.tooltipId === e && (e === s.d && (e => {
-					Object(h.a)({
+					Object(m.a)({
 						noun: "snoomoji",
 						source: a.b.ChatKeyboard,
 						action: a.a.Click,
 						chat: {
-							...Object(d.z)(e),
-							...Object(d.p)(e),
-							...Object(d.f)(e)
+							...Object(u.z)(e),
+							...Object(u.p)(e),
+							...Object(u.f)(e)
 						},
-						...Object(u.a)(e)
+						...Object(h.a)(e)
 					})
 				})(r), e === s.b && (e => {
-					Object(h.a)({
+					Object(m.a)({
 						noun: "share_gif",
 						source: a.b.ChatKeyboard,
 						action: a.a.Click,
 						chat: {
-							...Object(d.z)(e),
-							...Object(d.p)(e),
-							...Object(d.f)(e)
+							...Object(u.z)(e),
+							...Object(u.p)(e),
+							...Object(u.f)(e)
 						},
-						...Object(u.a)(e)
+						...Object(h.a)(e)
 					})
 				})(r))
-			}, ce = e => async (t, n) => {
+			}, oe = e => async (t, n) => {
 				((e, t) => {
-					Object(h.a)({
+					Object(m.a)({
 						noun: "image_gallery",
 						source: a.b.ChatKeyboard,
 						action: a.a.Complete,
 						chat: {
-							...Object(d.f)(e),
-							...Object(d.z)(e)
+							...Object(u.f)(e),
+							...Object(u.z)(e)
 						},
-						...Object(u.a)(e),
+						...Object(h.a)(e),
 						actionInfo: {
-							...Object(m.a)(e),
+							...Object(p.a)(e),
 							settingValue: t
 						}
 					})
 				})(n(), e)
-			}, oe = () => async (e, t) => {
+			}, ie = () => async (e, t) => {
 				(e => {
-					Object(h.a)({
+					Object(m.a)({
 						noun: "image_button",
 						source: a.b.ChatKeyboard,
 						action: a.a.Click,
 						chat: {
-							...Object(d.f)(e),
-							...Object(d.z)(e)
+							...Object(u.f)(e),
+							...Object(u.z)(e)
 						},
-						...Object(u.a)(e)
+						...Object(h.a)(e)
 					})
 				})(t())
-			}, ie = e => async (t, n) => {
+			}, le = e => async (t, n) => {
 				((e, t) => {
-					Object(h.a)({
+					Object(m.a)({
 						noun: "shortcut",
 						source: a.b.ChatKeyboard,
 						action: a.a.Slash,
 						chat: {
-							...Object(d.z)(e),
-							...Object(d.p)(e),
-							...Object(d.f)(e)
+							...Object(u.z)(e),
+							...Object(u.p)(e),
+							...Object(u.f)(e)
 						},
-						...Object(u.a)(e),
+						...Object(h.a)(e),
 						actionInfo: {
-							...Object(m.a)(e),
+							...Object(p.a)(e),
 							settingValue: t
 						}
 					})
 				})(n(), e)
-			}, le = () => async (e, t) => {
+			}, de = () => async (e, t) => {
 				(e => {
-					Object(h.a)({
+					Object(m.a)({
 						noun: "other_message",
 						source: a.b.ChatView,
 						action: a.a.ModDelete,
 						chat: {
-							...Object(d.z)(e),
-							...Object(d.p)(e),
-							...Object(d.f)(e),
-							...Object(d.r)(e),
-							...Object(d.n)(e),
-							...Object(d.w)(e)
+							...Object(u.z)(e),
+							...Object(u.p)(e),
+							...Object(u.f)(e),
+							...Object(u.r)(e),
+							...Object(u.n)(e),
+							...Object(u.w)(e)
 						},
-						...Object(u.a)(e)
+						...Object(h.a)(e)
 					})
 				})(t()), (e => {
-					Object(h.a)({
+					Object(m.a)({
 						noun: "message",
 						source: a.b.Chat,
 						action: a.a.Delete,
 						chat: {
-							...Object(d.f)(e),
-							...Object(d.z)(e),
-							...Object(d.n)(e)
+							...Object(u.f)(e),
+							...Object(u.z)(e),
+							...Object(u.n)(e)
 						},
-						...Object(u.a)(e)
+						...Object(h.a)(e)
 					})
 				})(t())
-			}, de = e => async (t, n) => {
+			}, ue = e => async (t, n) => {
 				const s = n(),
-					r = Object(l.b)(s),
+					r = Object(d.b)(s),
 					c = (e => {
 						switch (e) {
 							case a.b.ChatSettings:
@@ -2435,53 +2436,59 @@
 						}
 					})(r && r.source);
 				((e, t, n) => {
-					Object(h.a)({
+					Object(m.a)({
 						noun: "user",
 						source: n,
 						action: a.a.Kick,
 						chat: {
-							...Object(d.z)(e),
-							...Object(d.p)(e),
-							...Object(d.f)(e),
-							...Object(d.r)(e),
-							...Object(d.n)(e),
-							...Object(d.w)(e)
+							...Object(u.z)(e),
+							...Object(u.p)(e),
+							...Object(u.f)(e),
+							...Object(u.r)(e),
+							...Object(u.n)(e),
+							...Object(u.w)(e)
 						},
-						...Object(u.a)(e),
+						...Object(h.a)(e),
 						actionInfo: {
 							settingValue: t,
-							...Object(m.a)(e)
+							...Object(p.a)(e)
 						}
 					})
 				})(n(), e, c)
-			}, ue = e => async (t, n) => {
-				Object(g.j)(n(), e)
 			}, he = e => async (t, n) => {
-				Object(g.j)(n(), e)
-			}, me = (e, t) => async (n, a) => {
-				Object(g.a)(a(), e, t)
+				Object(f.j)(n(), e)
+			}, me = e => async (t, n) => {
+				Object(f.j)(n(), e)
 			}, pe = (e, t) => async (n, a) => {
-				Object(g.i)(a(), e, t)
+				Object(f.a)(a(), e, t)
 			}, be = (e, t) => async (n, a) => {
-				Object(p.c)(a(), e, t, O.AWARD_RECEIVED)
-			}, ge = e => async (t, n) => {
-				t(v(e)), t((() => async (e, t) => {
-					const n = t(),
-						a = Object(i.b)(n);
-					Object(p.e)(t(), a)
-				})())
+				Object(f.i)(a(), e, t)
+			}, ge = (e, t) => async (n, a) => {
+				Object(b.c)(a(), e, t, E.AWARD_RECEIVED)
 			}, fe = e => async (t, n) => {
+				switch (e.messageData.type) {
+					case c.c.GIF:
+						t((() => async (e, t) => {
+							const n = t(),
+								a = Object(l.b)(n);
+							Object(b.e)(t(), a)
+						})());
+						break;
+					case c.c.IMAGE:
+						t(C(e))
+				}
+			}, Oe = e => async (t, n) => {
 				((e, t) => {
-					Object(h.a)({
+					Object(m.a)({
 						noun: "image",
 						source: a.b.Chat,
 						action: a.a.Click,
 						chat: {
-							...Object(d.f)(e),
-							...Object(d.z)(e),
-							...Object(d.n)(e, void 0, void 0, t)
+							...Object(u.f)(e),
+							...Object(u.z)(e),
+							...Object(u.n)(e, void 0, void 0, t)
 						},
-						...Object(u.a)(e)
+						...Object(h.a)(e)
 					})
 				})(n(), e)
 			}
@@ -15033,22 +15040,24 @@
 				o = n("./src/chat/constants/messages.ts"),
 				i = n("./src/chat/selectors/messages.ts"),
 				l = n("./src/chat/selectors/uploads.ts");
-			const d = (e, t, n) => {
-					var a, s, r, c, l;
-					const d = n || Object(i.c)(e, t);
-					return d && d.type === o.c.GIF ? {
-						id: null === (a = d.gif) || void 0 === a ? void 0 : a.id,
-						caption: null === (s = d.gif) || void 0 === s ? void 0 : s.title,
-						url: null === (r = d.gif) || void 0 === r ? void 0 : r.url,
-						width: null === (c = d.gif) || void 0 === c ? void 0 : c.width,
-						height: null === (l = d.gif) || void 0 === l ? void 0 : l.height
+			const d = (e, t) => {
+					var n, a, s, r, c;
+					const l = Object(i.c)(e, t);
+					return l && l.type === o.c.GIF ? {
+						id: null === (n = l.gif) || void 0 === n ? void 0 : n.id,
+						caption: null === (a = l.gif) || void 0 === a ? void 0 : a.title,
+						url: null === (s = l.gif) || void 0 === s ? void 0 : s.url,
+						width: null === (r = l.gif) || void 0 === r ? void 0 : r.width,
+						height: null === (c = l.gif) || void 0 === c ? void 0 : c.height
 					} : {}
 				},
 				u = (e, t, n) => {
-					const a = n || Object(i.c)(e, t),
-						s = Object(l.d)(e, null == a ? void 0 : a.clientMessageId);
+					var a;
+					const s = n || Object(i.c)(e, t),
+						r = Object(l.d)(e, null == s ? void 0 : s.clientMessageId);
 					return {
-						reason: (null == s ? void 0 : s.source) && String(s.source) || void 0
+						reason: (null == r ? void 0 : r.source) && String(r.source) || void 0,
+						type: (null === (a = null == r ? void 0 : r.metadata) || void 0 === a ? void 0 : a.mimetype) && String(r.metadata.mimetype).toLowerCase() || void 0
 					}
 				};
 			var h = n("./src/chat/tracking/sendEvent.ts");
@@ -16089,4 +16098,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.cf971669eedf4dfd0469.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.44926e73bc8d942298d2.js.map
