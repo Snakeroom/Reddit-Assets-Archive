@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-EndTimeModal.3c83c0532a2c8be8dc5c.js
-// Retrieved at 10/7/2021, 12:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-EndTimeModal.fed781b630d5bb6eed04.js
+// Retrieved at 10/11/2021, 6:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction-EndTimeModal"], {
 		"./node_modules/lodash/_baseClamp.js": function(e, t) {
@@ -1326,7 +1326,7 @@
 				}
 		},
 		"./src/redditGQL/operations/AddPredictionDrafts.json": function(e) {
-			e.exports = JSON.parse('{"id":"f87162053448"}')
+			e.exports = JSON.parse('{"id":"55e2b71b7c14"}')
 		},
 		"./src/redditGQL/operations/CancelPrediction.json": function(e) {
 			e.exports = JSON.parse('{"id":"fac88c91fec8"}')
@@ -1338,10 +1338,10 @@
 			e.exports = JSON.parse('{"id":"90c7b71fa93f"}')
 		},
 		"./src/redditGQL/operations/CreatePredictionTournament.json": function(e) {
-			e.exports = JSON.parse('{"id":"723a33950f71"}')
+			e.exports = JSON.parse('{"id":"3fb10f0c4910"}')
 		},
 		"./src/redditGQL/operations/EndPredictionTournament.json": function(e) {
-			e.exports = JSON.parse('{"id":"619d946d303a"}')
+			e.exports = JSON.parse('{"id":"309c4e7f3e89"}')
 		},
 		"./src/redditGQL/operations/GetPredictionChipPackages.json": function(e) {
 			e.exports = JSON.parse('{"id":"5ce83e513fa5"}')
@@ -1353,7 +1353,7 @@
 			e.exports = JSON.parse('{"id":"26b911e67a5f"}')
 		},
 		"./src/redditGQL/operations/GetTournaments.json": function(e) {
-			e.exports = JSON.parse('{"id":"9101a8318ed1"}')
+			e.exports = JSON.parse('{"id":"50d44a50f01c"}')
 		},
 		"./src/redditGQL/operations/ResolvePrediction.json": function(e) {
 			e.exports = JSON.parse('{"id":"d742e3019cfe"}')
@@ -1362,11 +1362,11 @@
 			e.exports = JSON.parse('{"id":"a9582ea601a1"}')
 		},
 		"./src/redditGQL/operations/UpdatePredictionTournament.json": function(e) {
-			e.exports = JSON.parse('{"id":"36df0d6f6bca"}')
+			e.exports = JSON.parse('{"id":"eacbeec256c7"}')
 		},
 		"./src/redditGQL/operations/VotePrediction.json": function(e) {
 			e.exports = JSON.parse('{"id":"484780ada6a2"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-EndTimeModal.3c83c0532a2c8be8dc5c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-EndTimeModal.fed781b630d5bb6eed04.js.map

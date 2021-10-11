@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.b317610ad2343379ae08.js
-// Retrieved at 10/7/2021, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.b9d8c716e9eefe8b3ca7.js
+// Retrieved at 10/11/2021, 6:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage"], {
 		"./src/lib/makeLinkedPostsListingKey/index.ts": function(e, t, s) {
@@ -8957,20 +8957,20 @@
 			e.exports = JSON.parse('{"id":"b3a25d285bff"}')
 		},
 		"./src/redditGQL/operations/OtherDiscussions.json": function(e) {
-			e.exports = JSON.parse('{"id":"729ac3a1e3a8"}')
+			e.exports = JSON.parse('{"id":"6ce18c1e5204"}')
 		},
 		"./src/redditGQL/operations/PostFeedAndOtherDiscussions.json": function(e) {
-			e.exports = JSON.parse('{"id":"a6c0bca360a4"}')
+			e.exports = JSON.parse('{"id":"27a56c70546e"}')
 		},
 		"./src/redditGQL/operations/SubredditGeoRecommendationViaFocusVertical.json": function(e) {
-			e.exports = JSON.parse('{"id":"250e849e47df"}')
+			e.exports = JSON.parse('{"id":"da00c26e96b1"}')
 		},
 		"./src/redditGQL/operations/SubredditPosts.json": function(e) {
-			e.exports = JSON.parse('{"id":"4374a396afe3"}')
+			e.exports = JSON.parse('{"id":"2d1d9a98d153"}')
 		},
 		"./src/redditGQL/operations/SubredditsPosts.json": function(e) {
-			e.exports = JSON.parse('{"id":"5756bd0637ac"}')
+			e.exports = JSON.parse('{"id":"aae1e90d3468"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.b317610ad2343379ae08.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.b9d8c716e9eefe8b3ca7.js.map
