@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Predictions.8b455d1e21f7e157d65d.js
-// Retrieved at 10/7/2021, 8:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Predictions.899167d3ad94f95617af.js
+// Retrieved at 10/11/2021, 7:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Predictions", "Powerups"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, a, t) {
@@ -492,7 +492,7 @@
 				w = t.n(k);
 			const {
 				fbt: f
-			} = t("./node_modules/fbt/lib/FbtPublic.js"), E = e => {
+			} = t("./node_modules/fbt/lib/FbtPublic.js"), y = e => {
 				const {
 					onChange: a,
 					subredditIdsSelected: t,
@@ -547,7 +547,7 @@
 					hk: "2Eo4n2"
 				})))
 			};
-			var y = t("./src/reddit/controls/LoadingIcon/index.tsx"),
+			var E = t("./src/reddit/controls/LoadingIcon/index.tsx"),
 				N = t("./src/reddit/components/PowerupsSignUpModal/signupButton.m.less"),
 				v = t.n(N);
 			const {
@@ -572,7 +572,7 @@
 					onClick: t,
 					priority: m.b.Primary,
 					isFullWidth: !0
-				}, n ? s.a.createElement(y.a, {
+				}, n ? s.a.createElement(E.a, {
 					sizePx: 12,
 					center: !0
 				}) : o)
@@ -593,7 +593,7 @@
 						hasPowerups: e
 					}) => e),
 					[w, f] = Object(r.useState)(i && _ ? [i[0].id] : []),
-					[y, N] = Object(r.useState)(!1),
+					[E, N] = Object(r.useState)(!1),
 					[v, S] = Object(r.useState)(!1),
 					[O, j] = Object(r.useState)(!1);
 				if (!(null == i ? void 0 : i.length)) return e(), null;
@@ -632,7 +632,7 @@
 					hk: "4EPQY"
 				})))], {
 					hk: "1K9FOM"
-				}), M = _ ? q : T, W = y || v || O ? P._("{=Hold tight! It can take up to 5 minutes for}{=Powerups to appear in yourcommunity.}", [P._param("=Hold tight! It can take up to 5 minutes for", s.a.createElement("div", null, P._("Hold tight! It can take up to 5 minutes for", null, {
+				}), M = _ ? q : T, W = E || v || O ? P._("{=Hold tight! It can take up to 5 minutes for}{=Powerups to appear in yourcommunity.}", [P._param("=Hold tight! It can take up to 5 minutes for", s.a.createElement("div", null, P._("Hold tight! It can take up to 5 minutes for", null, {
 					hk: "1cFoaI"
 				}))), P._param("=Powerups to appear in yourcommunity.", s.a.createElement("div", null, P._({
 					"*": "Powerups to appear in your communities.",
@@ -673,7 +673,7 @@
 					className: x.a.titleText
 				}, M), s.a.createElement("h2", {
 					className: x.a.subtitleText
-				}, W)), !_ && s.a.createElement(E, {
+				}, W)), !_ && s.a.createElement(y, {
 					onChange: f,
 					subredditIdsSelected: w,
 					subredditsInfo: i,
@@ -696,7 +696,7 @@
 						}) => e);
 						S(e), j(!e), N(!1)
 					},
-					isLoading: y,
+					isLoading: E,
 					wasError: O
 				}), (v || k) && _ && s.a.createElement(s.a.Fragment, null, s.a.createElement("p", {
 					className: x.a.successText
@@ -1273,14 +1273,14 @@
 				k = t.n(_),
 				w = t("./node_modules/react-router-dom/esm/react-router-dom.js"),
 				f = t("./src/lib/opener/index.ts"),
-				E = t("./src/reddit/hooks/useIsClient.ts"),
-				y = t("./src/reddit/pages/Powerups/Communities.m.less"),
-				N = t.n(y);
+				y = t("./src/reddit/hooks/useIsClient.ts"),
+				E = t("./src/reddit/pages/Powerups/Communities.m.less"),
+				N = t.n(E);
 			const v = k()(["wallstreetbets", "pennystocks", "tiktokcringe", "lgbt", "python", "unexpected", "chloe", "pewdiepiesubmissions", "roastme", "jacksepticeye", "thebachelor", "taylorswift", "bigbrother", "belowdeck", "blackpink"], 3),
 				S = () => {
 					const e = Object(u.a)(),
 						a = Object(o.e)(b.X),
-						t = Object(E.a)(),
+						t = Object(y.a)(),
 						r = () => {
 							e(Object(d.a)())
 						};
@@ -1707,7 +1707,7 @@
 			const {
 				fbt: f
 			} = t("./node_modules/fbt/lib/FbtPublic.js");
-			var E = ({
+			var y = ({
 					isEligibleMod: e,
 					selectedSubredditUrl: a,
 					modSubredditsInfo: t,
@@ -1752,7 +1752,7 @@
 						hk: "JgEmz"
 					})))
 				},
-				y = t("./node_modules/fbt/lib/FbtPublic.js"),
+				E = t("./node_modules/fbt/lib/FbtPublic.js"),
 				N = t("./src/reddit/components/PowerupsSignUpModal/index.tsx"),
 				v = t("./src/reddit/icons/fonts/index.tsx"),
 				S = t("./src/reddit/components/PredictionsSignupModal/index.m.less"),
@@ -1773,7 +1773,7 @@
 				alt: "Predictor Snoos",
 				src: `${n.a.assetPath}/img/econ/predictions/predictor_snoos.png`
 			}))), s.a.createElement(w.s, {
-				"aria-label": y.fbt._("Close", null, {
+				"aria-label": E.fbt._("Close", null, {
 					hk: "26np07"
 				}),
 				className: C.a.closeButton,
@@ -1842,7 +1842,7 @@
 						className: C.a.disclaimer
 					}, x._("Predictions creation is only available on Web and iOS at this time.", null, {
 						hk: "J1xBl"
-					})), s.a.createElement(E, {
+					})), s.a.createElement(y, {
 						isEligibleMod: c,
 						selectedSubredditUrl: l,
 						modSubredditsInfo: n,
@@ -1925,46 +1925,53 @@
 				Y = t("./src/reddit/pages/Predictions/FaqSection.m.less"),
 				U = t.n(Y);
 			const V = [{
-					prompt: y.fbt._("Where can I find Predictions?", null, {
+					prompt: E.fbt._("Where can I find Predictions?", null, {
 						hk: "32ZI7C"
 					}),
-					answer: y.fbt._("You can find Predictions within participating communities, inside the “Predictions” tab. Communities that have participated in the past include: r/movies, r/leagueoflegends, r/Cryptocurrency, r/formula1 and r/soccer.", null, {
+					answer: E.fbt._("You can find Predictions within participating communities, inside the “Predictions” tab. Communities that have participated in the past include: r/movies, r/leagueoflegends, r/Cryptocurrency, r/formula1 and r/soccer.", null, {
 						hk: "Igxj1"
 					})
 				}, {
-					prompt: y.fbt._("Do I need to have anything to play Predictions?", null, {
+					prompt: E.fbt._("Do I need to have anything to play Predictions?", null, {
 						hk: "22KDvv"
 					}),
-					answer: y.fbt._("Every user who plays will get a wallet of “tokens” that can be used to predict. You will get 1,000 tokens for every new Predictions tournament that you participate in.", null, {
+					answer: E.fbt._("Every user who plays will get a wallet of “tokens” that can be used to predict. You will get 1,000 tokens for every new Predictions tournament that you participate in.", null, {
 						hk: "RnK1g"
 					})
 				}, {
-					prompt: y.fbt._("What happens if I run out of tokens? Can I still play?", null, {
+					prompt: E.fbt._("What happens if I run out of tokens? Can I still play?", null, {
 						hk: "3eQJBV"
 					}),
-					answer: y.fbt._("Unfortunately, once you exhaust your token wallet, you’re done for that tournament. But every tournament gives you a new token wallet - for example, if r/formula1 ran a Spring tournament and then later ran a Fall tournament, every user would get a fresh set of tokens for the Fall tournament (the Spring tournament tokens go away).", null, {
+					answer: E.fbt._("Unfortunately, once you exhaust your token wallet, you’re done for that tournament. But every tournament gives you a new token wallet - for example, if r/formula1 ran a Spring tournament and then later ran a Fall tournament, every user would get a fresh set of tokens for the Fall tournament (the Spring tournament tokens go away).", null, {
 						hk: "uwWuz"
 					})
 				}, {
-					prompt: y.fbt._("What if mods pick the wrong winner?", null, {
+					prompt: E.fbt._("What if mods pick the wrong winner?", null, {
 						hk: "4uoijH"
 					}),
-					answer: y.fbt._("Feel free to let mods know; mods have the ability to reverse decisions within their mod settings. However, mods do have final say on who wins, so keep that in mind as you play.", null, {
+					answer: E.fbt._("Feel free to let mods know; mods have the ability to reverse decisions within their mod settings. However, mods do have final say on who wins, so keep that in mind as you play.", null, {
 						hk: "1ivYvz"
 					})
 				}, {
-					prompt: y.fbt._("Why predict with more tokens? Do I get the same rewards if I put down 10 tokens or 100 tokens?", null, {
+					prompt: E.fbt._("Why predict with more tokens? Do I get the same rewards if I put down 10 tokens or 100 tokens?", null, {
 						hk: "4h5gWj"
 					}),
-					answer: y.fbt._("People who predict higher token amounts on questions will get proportionately bigger rewards. For example, if a user who put down 10 tokens wins 30 tokens, then a user who put down 100 tokens would win 300 tokens.", null, {
+					answer: E.fbt._("People who predict higher token amounts on questions will get proportionately bigger rewards. For example, if a user who put down 10 tokens wins 30 tokens, then a user who put down 100 tokens would win 300 tokens.", null, {
 						hk: "Dqx1"
 					})
 				}, {
-					prompt: y.fbt._("Do I need to buy anything to participate?", null, {
+					prompt: E.fbt._("Do I need to buy anything to participate?", null, {
 						hk: "1NcFmJ"
 					}),
-					answer: y.fbt._("No purchase is necessary to play Predictions - 1,000 free tokens are given to every user per tournament. We may include some special benefits for Premium users from time to time, so stay tuned!", null, {
+					answer: E.fbt._("No purchase is necessary to play Predictions - 1,000 free tokens are given to every user per tournament. We may include some special benefits for Premium users from time to time, so stay tuned!", null, {
 						hk: "3LTZkn"
+					})
+				}, {
+					prompt: E.fbt._("How do Predictions impact votes on posts?", null, {
+						hk: "13gvO2"
+					}),
+					answer: E.fbt._("Currently when you make a prediction, the Tournament post is automatically upvoted. We did this because Predictions are more fun when more people play and upvoting helps the Tournament to be seen by more people! Of course, you're in control and you can always remove your upvote if you'd like.", null, {
+						hk: "3KIWZw"
 					})
 				}],
 				R = () => {
@@ -1977,7 +1984,7 @@
 						hideBolt: !0
 					}), s.a.createElement("h2", {
 						className: U.a.faqHeading
-					}, y.fbt._("Questions about Predictions?", null, {
+					}, E.fbt._("Questions about Predictions?", null, {
 						hk: "3e9tVH"
 					})), s.a.createElement("div", {
 						className: U.a.faqs
@@ -1991,7 +1998,7 @@
 						key: t
 					}, a))), s.a.createElement("h3", {
 						className: U.a.faqMoreQuestionsHeading
-					}, y.fbt._("Have more questions? We've got answers.", null, {
+					}, E.fbt._("Have more questions? We've got answers.", null, {
 						hk: "3Entyj"
 					})), s.a.createElement(w.s, {
 						className: U.a.fullFaqsButton,
@@ -2007,7 +2014,7 @@
 						},
 						kind: w.a.ExternalLink,
 						target: "_blank"
-					}, y.fbt._("View Full FAQs", null, {
+					}, E.fbt._("View Full FAQs", null, {
 						hk: "1eOLlL"
 					}))))
 				};
@@ -2298,4 +2305,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Predictions.8b455d1e21f7e157d65d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Predictions.899167d3ad94f95617af.js.map
