@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.e23c105309f3f83e2f55.js
-// Retrieved at 10/7/2021, 8:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.e1aa6a0b7f301949f9f6.js
+// Retrieved at 10/11/2021, 3:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -2565,7 +2565,7 @@
 							sendEvent: t,
 							thingId: s
 						} = this.props;
-						t(Object(b.clickGetPremiumEvent)(s, e)), Object(d.e)("/premium", d.d.BLANK)
+						t(Object(b.clickGetPremiumEvent)(s, e)), window.open("/premium", d.d.BLANK, d.c)
 					}, this.onGildRequested = () => {
 						const {
 							gildRequested: e,
@@ -5424,4 +5424,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.e23c105309f3f83e2f55.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.e1aa6a0b7f301949f9f6.js.map
