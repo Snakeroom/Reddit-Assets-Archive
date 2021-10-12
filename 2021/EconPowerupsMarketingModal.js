@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.440412e5762c7412d4cc.js
-// Retrieved at 10/12/2021, 11:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.da50ae262a6231c9efb0.js
+// Retrieved at 10/12/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsMarketingModal"], {
 		"./src/reddit/components/Econ/Common/BenefitTile/index.m.less": function(e, t, s) {
@@ -87,7 +87,7 @@
 					m = Object(r.e)(e => Object(d.m)(e, {
 						subredditId: t
 					})),
-					b = Object(r.e)(l.i);
+					b = Object(r.e)(l.j);
 				if (!n) return null;
 				const {
 					tier: h,
@@ -324,7 +324,7 @@
 				v = s("./src/reddit/models/Gold/Powerups/index.ts"),
 				M = s("./src/reddit/selectors/experiments/econ/powerupsAward.ts");
 			const y = [v.a.CommentRecognition, v.a.PowerupsAward, v.a.CommunityGear, v.a.CommentsWithGifs, v.a.CommentsWithEmoji, v.a.Achievements, v.a.HeroStatus, v.a.HdVideo],
-				I = Object(a.a)([M.b, k.j], (e, t) => {
+				I = Object(a.a)([M.b, k.k], (e, t) => {
 					let s = y;
 					return e || (s = s.filter(e => e !== v.a.PowerupsAward)), t || (s = s.filter(e => e !== v.a.CommunityGear)), s
 				});
@@ -336,7 +336,7 @@
 			var A = function(e) {
 					const {
 						className: t
-					} = e, s = Object(f.a)(), n = Object(r.e)(I), a = Object(r.e)(k.i), c = H(n);
+					} = e, s = Object(f.a)(), n = Object(r.e)(I), a = Object(r.e)(k.j), c = H(n);
 					return o.a.createElement("div", {
 						className: Object(i.a)(L.a.container, t)
 					}, c.map(e => v.c[e]().title && o.a.createElement(O.a, {
@@ -386,7 +386,7 @@
 					currentSubredditId: t,
 					powerups: s,
 					subreddit: a
-				} = e, c = Object(r.d)(), h = Object(f.a)(), g = Object(r.e)(k.i), N = Object(r.e)(e => !Object(j.s)(e)), {
+				} = e, c = Object(r.d)(), h = Object(f.a)(), g = Object(r.e)(k.j), N = Object(r.e)(e => !Object(j.s)(e)), {
 					container: C,
 					isScrollGradientVisible: O,
 					calculateGradientVisibility: v
@@ -599,4 +599,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.440412e5762c7412d4cc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.da50ae262a6231c9efb0.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Avatar.adcca718742e2bdbd074.js
-// Retrieved at 10/6/2021, 7:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Avatar.9f4b843bca21e9363467.js
+// Retrieved at 10/12/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Avatar"], {
 		"./src/reddit/components/SnoovatarModal/SnoovatarIframe.tsx": function(e, t, s) {
@@ -26,31 +26,31 @@
 				v.append("platform", "desktop"), Object.entries(t.params).forEach(([e, t]) => v.append(e, t)), o && Object.entries(o).forEach(([e, t]) => v.set(e, t)), u && v.set("source", u);
 				const f = Object(l.a)();
 				Object(a.useEffect)(() => {
-					f(d.n)
+					f(d.p)
 				}, [f]);
-				const x = Object(n.e)(e => e.user.session),
-					_ = Object(a.useRef)(null),
-					p = Object(a.useCallback)(e => {
-						x && e && e.postMessage({
+				const p = Object(n.e)(e => e.user.session),
+					x = Object(a.useRef)(null),
+					_ = Object(a.useCallback)(e => {
+						p && e && e.postMessage({
 							type: "injectAuth",
 							headers: {
-								Authorization: `Bearer ${x.accessToken}`
+								Authorization: `Bearer ${p.accessToken}`
 							},
-							expiration: new Date(x.expires).getTime()
+							expiration: new Date(p.expires).getTime()
 						}, c.a.snoovatarUrl)
-					}, [x]);
+					}, [p]);
 				return Object(a.useEffect)(() => {
 					var e;
-					return p(null === (e = null == _ ? void 0 : _.current) || void 0 === e ? void 0 : e.contentWindow)
-				}, [_, p]), Object(a.useEffect)(() => {
+					return _(null === (e = null == x ? void 0 : x.current) || void 0 === e ? void 0 : e.contentWindow)
+				}, [x, _]), Object(a.useEffect)(() => {
 					const e = e => {
-						"refreshAuth" === (null == e ? void 0 : e.data) && p(e.source)
+						"refreshAuth" === (null == e ? void 0 : e.data) && _(e.source)
 					};
 					return window.addEventListener("message", e), () => window.removeEventListener("message", e)
-				}, [p]), r.a.createElement("div", {
+				}, [_]), r.a.createElement("div", {
 					className: Object(i.a)(m.a.iframeContainer, e)
 				}, r.a.createElement("iframe", {
-					ref: _,
+					ref: x,
 					src: `${c.a.snoovatarUrl}/static/client/?${v.toString()}`
 				}))
 			})
@@ -93,4 +93,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Avatar.adcca718742e2bdbd074.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Avatar.9f4b843bca21e9363467.js.map

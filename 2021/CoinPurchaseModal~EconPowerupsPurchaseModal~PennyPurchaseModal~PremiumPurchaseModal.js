@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinPurchaseModal~EconPowerupsPurchaseModal~PennyPurchaseModal~PremiumPurchaseModal.cfddfcc395a380cfaa21.js
-// Retrieved at 10/12/2021, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinPurchaseModal~EconPowerupsPurchaseModal~PennyPurchaseModal~PremiumPurchaseModal.3aa54c2c4f8a449afb2c.js
+// Retrieved at 10/12/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinPurchaseModal~EconPowerupsPurchaseModal~PennyPurchaseModal~PremiumPurchaseModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -1822,7 +1822,7 @@
 				a = n("./node_modules/react-redux/es/index.js"),
 				s = n("./src/reddit/constants/experiments.ts"),
 				i = n("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const c = Object(i.a)(s.kc);
+			const c = Object(i.a)(s.lc);
 
 			function d() {
 				const [e, t] = Object(o.useState)(null), n = Object(a.e)(c);
@@ -1985,4 +1985,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal~EconPowerupsPurchaseModal~PennyPurchaseModal~PremiumPurchaseModal.cfddfcc395a380cfaa21.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal~EconPowerupsPurchaseModal~PennyPurchaseModal~PremiumPurchaseModal.3aa54c2c4f8a449afb2c.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.0991dae20109b95a7278.js
-// Retrieved at 10/12/2021, 3:50:11 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.ee1ebb3534c86d930d14.js
+// Retrieved at 10/12/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"], {
 		"./src/lib/linkMatchers/index.ts": function(e, t, r) {
@@ -464,7 +464,7 @@
 						a = Object(O.j)(s, {
 							subredditId: i
 						}),
-						o = Object(x.m)(s);
+						o = Object(x.n)(s);
 					if (a) return Object(O.f)(s, {
 						subredditId: i
 					});
@@ -959,7 +959,7 @@
 				onClick: t
 			}) => {
 				const r = Object(i.e)(d.v),
-					n = Object(i.e)(o.i);
+					n = Object(i.e)(o.j);
 				return s.a.createElement(a.s, {
 					priority: a.b.Primary,
 					className: e,
@@ -1077,7 +1077,7 @@
 			}, e.displayName || e.userName));
 			t.b = function(e) {
 				var t;
-				const r = Object(i.e)(m.i),
+				const r = Object(i.e)(m.j),
 					n = Object(u.a)(),
 					{
 						className: d,
@@ -1361,7 +1361,7 @@
 					C = Object(a.e)(e => !!Object(f.l)(e, {
 						subredditId: t
 					})),
-					S = Object(a.e)(h.i);
+					S = Object(a.e)(h.j);
 				Object(s.useEffect)(() => {
 					j && r(Object(o.getSubredditCurrentUserPowerupsFlairsAndSupporterInfo)(t))
 				}, [j, t, r]);
@@ -3597,4 +3597,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.0991dae20109b95a7278.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.ee1ebb3534c86d930d14.js.map

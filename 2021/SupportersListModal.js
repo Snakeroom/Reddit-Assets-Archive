@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SupportersListModal.4fb757b910c3509667b0.js
-// Retrieved at 10/12/2021, 11:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SupportersListModal.a10e3cca1687d2b5bf6c.js
+// Retrieved at 10/12/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SupportersListModal"], {
 		"./src/reddit/components/Econ/Common/ModalCloseButton/index.m.less": function(e, t, s) {
@@ -52,7 +52,7 @@
 				onClick: t
 			}) => {
 				const s = Object(a.e)(i.v),
-					r = Object(a.e)(l.i);
+					r = Object(a.e)(l.j);
 				return n.a.createElement(o.s, {
 					priority: o.b.Primary,
 					className: e,
@@ -107,7 +107,7 @@
 			}, e.displayName || e.userName));
 			t.b = function(e) {
 				var t;
-				const s = Object(a.e)(m.i),
+				const s = Object(a.e)(m.j),
 					r = Object(u.a)(),
 					{
 						className: i,
@@ -306,7 +306,7 @@
 				v = s("./src/reddit/selectors/experiments/econ/index.ts");
 			const {
 				fbt: S
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), w = e => n.a.createElement(n.a.Fragment, null, n.a.createElement("div", {
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), j = e => n.a.createElement(n.a.Fragment, null, n.a.createElement("div", {
 				className: h.a.supporterImageContainer
 			}, n.a.createElement(E.a, {
 				userName: e.name,
@@ -317,15 +317,15 @@
 				className: h.a.supporterName
 			}, e.name, " ", e.isCurrentUser && S._("(you)", null, {
 				hk: "3foyZr"
-			}))), L = e => e.isAnonymousUser ? n.a.createElement("div", {
+			}))), w = e => e.isAnonymousUser ? n.a.createElement("div", {
 				className: e.className
 			}, e.children) : n.a.createElement(N.a, {
 				className: e.className,
 				to: `/user/${e.name}/`,
 				onClick: e.onClick
-			}, e.children), j = e => {
+			}, e.children), L = e => {
 				var t;
-				const s = Object(a.e)(v.i),
+				const s = Object(a.e)(v.j),
 					r = Object(g.a)(),
 					{
 						supporter: o,
@@ -349,14 +349,14 @@
 					className: h.a.supporter
 				}, n.a.createElement("div", {
 					className: h.a.supporterRank
-				}, p), n.a.createElement(L, {
+				}, p), n.a.createElement(w, {
 					className: h.a.user,
 					name: b,
 					isAnonymousUser: !c,
 					onClick: () => {
 						c && r(Object(_.j)(c.id, c.displayName))
 					}
-				}, n.a.createElement(w, {
+				}, n.a.createElement(j, {
 					name: b,
 					iconUrl: f,
 					isNsfw: E,
@@ -387,7 +387,7 @@
 					s = Object(a.e)(e => t ? Object(O.n)(e, {
 						subredditId: t.id
 					}) : []),
-					o = Object(a.e)(v.i),
+					o = Object(a.e)(v.j),
 					[b, x] = Object(r.useState)([]);
 				Object(r.useEffect)(() => {
 					var e;
@@ -406,10 +406,10 @@
 					{
 						container: N,
 						isScrollGradientVisible: S,
-						calculateGradientVisibility: w
+						calculateGradientVisibility: j
 					} = Object(C.a)(!0);
 				return Object(r.useEffect)(() => {
-					w()
+					j()
 				}), t ? n.a.createElement("div", {
 					className: z.a.container
 				}, n.a.createElement("div", {
@@ -426,9 +426,9 @@
 					className: z.a.subheading
 				}, t.displayText)), n.a.createElement("div", {
 					className: z.a.supportersContainer,
-					onScroll: w,
+					onScroll: j,
 					ref: N
-				}, b.map((t, s) => n.a.createElement(j, {
+				}, b.map((t, s) => n.a.createElement(L, {
 					key: t.key,
 					supporter: t.data,
 					currentUser: e,
@@ -617,4 +617,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SupportersListModal.4fb757b910c3509667b0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SupportersListModal.a10e3cca1687d2b5bf6c.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.12aa532ae16f48a7c428.js
-// Retrieved at 10/12/2021, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.92f70938a71781b8bbd0.js
+// Retrieved at 10/12/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255"], {
 		"./src/lib/unicodeUtils/index.ts": function(e, t, s) {
@@ -856,8 +856,8 @@
 				const X = {
 						caretOnTop: !1
 					},
-					K = Object(a.e)(T.a),
-					q = G.isSponsored && (K === p.s.NoLockIcon || K === p.s.PromotedGrey),
+					q = Object(a.e)(T.a),
+					K = G.isSponsored && (q === p.s.NoLockIcon || q === p.s.PromotedGrey),
 					Y = G.isRemoved && !G.modRemovalReason && !G.modNote && G.belongsTo.type === b.a.SUBREDDIT,
 					z = A("Approve", G.id, V),
 					Z = A("Archived", G.id, V),
@@ -889,7 +889,7 @@
 				}), o.a.createElement(u.c, N({
 					tooltipId: Z,
 					text: R()
-				}, X))), G.isLocked && !q && o.a.createElement(r.Fragment, null, o.a.createElement(O.a, {
+				}, X))), G.isLocked && !K && o.a.createElement(r.Fragment, null, o.a.createElement(O.a, {
 					isFilled: !0,
 					className: Object(c.a)(w.a.icon, w.a.lockIcon),
 					desc: B(),
@@ -1100,10 +1100,10 @@
 					g = i && i.voteState;
 				let O = null;
 				_ || (O = e ? "user_hovercard" : "profile_overview");
-				const j = Object(r.useCallback)(() => E(Object(m.e)(e ? "user_hovercard" : "profile_overview", t)), [e, E, t]);
+				const j = Object(r.useCallback)(() => E(Object(m.f)(e ? "user_hovercard" : "profile_overview", t)), [e, E, t]);
 				return o.a.createElement(u.s, {
 					onClick: () => {
-						s ? (E(m.f), _ && g === b.a.notVoted && v(Object(c.db)(_))) : j();
+						s ? (E(m.g), _ && g === b.a.notVoted && v(Object(c.db)(_))) : j();
 						const e = s ? "postify" : "copy";
 						v(Object(d.b)({
 							clickSource: O,
@@ -2354,12 +2354,12 @@
 						rtJsonElementProps: o
 					});
 					switch (n) {
-						case h.pe.SmIcon:
+						case h.qe.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: o
 							});
-						case h.pe.SmIconHc:
+						case h.qe.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -2743,7 +2743,7 @@
 					adminId: e.authorId,
 					subredditId: e.belongsTo.id,
 					avatarShareUrl: e.source ? e.source.url : ""
-				}) && Object(i.e)(t)
+				}) && Object(i.f)(t)
 			})
 		},
 		"./src/reddit/icons/fonts/Archived/index.tsx": function(e, t, s) {
@@ -2936,12 +2936,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: n.je
+						experimentName: n.ke
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === n.pe.SmIcon || t === n.pe.SmIconHc
+					return t === n.qe.SmIcon || t === n.qe.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -2964,4 +2964,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.12aa532ae16f48a7c428.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.92f70938a71781b8bbd0.js.map

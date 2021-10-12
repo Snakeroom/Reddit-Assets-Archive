@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.20ff464e0d46e3d345ec.js
-// Retrieved at 10/12/2021, 3:50:11 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.72e1062f186208073945.js
+// Retrieved at 10/12/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index~reddit-components-Econ-Prediction"], {
 		"./node_modules/lodash/_LazyWrapper.js": function(a, i, r) {
@@ -827,7 +827,7 @@
 						k = Object(B.j)(x, {
 							subredditId: n
 						}),
-						o = Object(y.m)(x);
+						o = Object(y.n)(x);
 					if (k) return Object(B.f)(x, {
 						subredditId: n
 					});
@@ -1403,7 +1403,7 @@
 					userSelection: b,
 					predictionStatus: F,
 					voteUpdatesRemained: g
-				} = a, v = Object(k.e)(i => Boolean((null == a ? void 0 : a.userSelection) && !(null == a ? void 0 : a.resolvedOptionId) && Object(f.v)(i))), P = Object(k.e)(i => (null == a ? void 0 : a.tournamentId) ? Object(u.a)(i, a.tournamentId) : null), S = Object(k.e)(y.pb), T = Object(k.e)(y.K), [_, O] = Object(x.useState)(!1), j = s === S, C = m < Date.now(), I = C && j && !B, w = F === d.b.Cancelled || F === d.b.CancelInProgress;
+				} = a, v = Object(k.e)(i => Boolean((null == a ? void 0 : a.userSelection) && !(null == a ? void 0 : a.resolvedOptionId) && Object(f.w)(i))), P = Object(k.e)(i => (null == a ? void 0 : a.tournamentId) ? Object(u.a)(i, a.tournamentId) : null), S = Object(k.e)(y.pb), T = Object(k.e)(y.K), [_, O] = Object(x.useState)(!1), j = s === S, C = m < Date.now(), I = C && j && !B, w = F === d.b.Cancelled || F === d.b.CancelInProgress;
 				return n.a.useEffect(() => {
 					O(!1)
 				}, [b, a]), n.a.createElement("div", A({
@@ -2088,7 +2088,7 @@
 			}) => {
 				const e = Object(n.d)(),
 					s = Object(A.a)(),
-					m = Object(n.e)(P.u),
+					m = Object(n.e)(P.v),
 					l = m ? _.a : j.a,
 					c = Object(n.e)(S.t),
 					[p, h] = Object(t.useState)(!1),
@@ -2258,13 +2258,13 @@
 			}) => {
 				const y = Object(n.d)(),
 					G = Object(s.a)(),
-					E = Object(n.e)(d.u) ? F.a : v.a,
+					E = Object(n.e)(d.v) ? F.a : v.a,
 					[A, B] = Object(t.useState)(!1),
 					[D, b] = Object(e.a)("hasSeenPredictionSneakPeek", !1),
 					g = !!c,
 					S = r && !l,
 					T = Object(n.e)(f.t);
-				if (!Object(n.e)(a => !i && !S && g && Object(d.r)(a))) return null;
+				if (!Object(n.e)(a => !i && !S && g && Object(d.s)(a))) return null;
 				const _ = () => {
 					D || b(!0), B(!1)
 				};
@@ -2402,7 +2402,7 @@
 				isShowingHint: V,
 				...b
 			}, F) => {
-				const g = Object(n.e)(l.u),
+				const g = Object(n.e)(l.v),
 					v = !!E,
 					P = G === y.id,
 					S = t || !!B || !!G || r,
@@ -4140,4 +4140,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.20ff464e0d46e3d345ec.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.72e1062f186208073945.js.map

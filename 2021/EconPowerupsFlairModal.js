@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.c609acaa2c595b705943.js
-// Retrieved at 10/12/2021, 11:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.51c4b0b7aa72476b4435.js
+// Retrieved at 10/12/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsFlairModal"], {
 		"./src/reddit/actions/economics/powerups/flairs/index.ts": function(e, t, r) {
@@ -872,7 +872,7 @@
 					o = Object(n.e)(e => r ? Object(m.d)(e, {
 						subredditId: r.id
 					}) : null),
-					b = Object(n.e)(l.k),
+					b = Object(n.e)(l.l),
 					f = !!s && !!o;
 				return t && r ? i.a.createElement("div", {
 					className: F.a.container
@@ -1011,7 +1011,7 @@
 				onClick: t
 			}) => {
 				const r = Object(n.e)(d.v),
-					s = Object(n.e)(a.i);
+					s = Object(n.e)(a.j);
 				return i.a.createElement(o.s, {
 					priority: o.b.Primary,
 					className: e,
@@ -1395,4 +1395,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.c609acaa2c595b705943.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.51c4b0b7aa72476b4435.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.efaf9871269a690de325.js
-// Retrieved at 10/12/2021, 11:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.b96af3222ad794cca0f9.js
+// Retrieved at 10/12/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconTopAwardersModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, r) {
@@ -2006,10 +2006,10 @@
 					_ = c && c.voteState;
 				let w = null;
 				I || (w = e ? "user_hovercard" : "profile_overview");
-				const g = Object(n.useCallback)(() => h(Object(u.e)(e ? "user_hovercard" : "profile_overview", t)), [e, h, t]);
+				const g = Object(n.useCallback)(() => h(Object(u.f)(e ? "user_hovercard" : "profile_overview", t)), [e, h, t]);
 				return s.a.createElement(m.s, {
 					onClick: () => {
-						r ? (h(u.f), I && _ === b.a.notVoted && E(Object(i.db)(I))) : g();
+						r ? (h(u.g), I && _ === b.a.notVoted && E(Object(i.db)(I))) : g();
 						const e = r ? "postify" : "copy";
 						E(Object(d.b)({
 							clickSource: w,
@@ -2337,7 +2337,7 @@
 				url: U,
 				isHovercard: P
 			}) => {
-				const A = Object(s.e)(e => !E && !!g && Object(d.g)(e));
+				const A = Object(s.e)(e => !E && !!g && Object(d.h)(e));
 				return n.a.createElement(n.a.Fragment, null, n.a.createElement(u.a, {
 					bannerBackgroundImage: e,
 					editMode: !!a,
@@ -2894,4 +2894,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.efaf9871269a690de325.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.b96af3222ad794cca0f9.js.map

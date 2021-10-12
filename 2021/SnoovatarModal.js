@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SnoovatarModal.87bc8bece397c04e1136.js
-// Retrieved at 10/6/2021, 7:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SnoovatarModal.4384a60aeed72855dc36.js
+// Retrieved at 10/12/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SnoovatarModal"], {
 		"./src/reddit/components/SnoovatarModal/SnoovatarIframe.tsx": function(e, t, a) {
@@ -26,11 +26,11 @@
 				v.append("platform", "desktop"), Object.entries(t.params).forEach(([e, t]) => v.append(e, t)), n && Object.entries(n).forEach(([e, t]) => v.set(e, t)), u && v.set("source", u);
 				const f = Object(l.a)();
 				Object(r.useEffect)(() => {
-					f(i.n)
+					f(i.p)
 				}, [f]);
 				const j = Object(s.e)(e => e.user.session),
-					O = Object(r.useRef)(null),
-					p = Object(r.useCallback)(e => {
+					p = Object(r.useRef)(null),
+					O = Object(r.useCallback)(e => {
 						j && e && e.postMessage({
 							type: "injectAuth",
 							headers: {
@@ -41,16 +41,16 @@
 					}, [j]);
 				return Object(r.useEffect)(() => {
 					var e;
-					return p(null === (e = null == O ? void 0 : O.current) || void 0 === e ? void 0 : e.contentWindow)
-				}, [O, p]), Object(r.useEffect)(() => {
+					return O(null === (e = null == p ? void 0 : p.current) || void 0 === e ? void 0 : e.contentWindow)
+				}, [p, O]), Object(r.useEffect)(() => {
 					const e = e => {
-						"refreshAuth" === (null == e ? void 0 : e.data) && p(e.source)
+						"refreshAuth" === (null == e ? void 0 : e.data) && O(e.source)
 					};
 					return window.addEventListener("message", e), () => window.removeEventListener("message", e)
-				}, [p]), o.a.createElement("div", {
+				}, [O]), o.a.createElement("div", {
 					className: Object(d.a)(m.a.iframeContainer, e)
 				}, o.a.createElement("iframe", {
-					ref: O,
+					ref: p,
 					src: `${c.a.snoovatarUrl}/static/client/?${v.toString()}`
 				}))
 			})
@@ -100,4 +100,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SnoovatarModal.87bc8bece397c04e1136.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SnoovatarModal.4384a60aeed72855dc36.js.map

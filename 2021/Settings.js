@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.5495a16b760dde673477.js
-// Retrieved at 10/12/2021, 3:50:11 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.f6cbc9da39afb653796c.js
+// Retrieved at 10/12/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, n) {
@@ -5357,10 +5357,10 @@
 					C = i && i.voteState;
 				let x = null;
 				y || (x = e ? "user_hovercard" : "profile_overview");
-				const E = Object(r.useCallback)(() => v(Object(m.e)(e ? "user_hovercard" : "profile_overview", t)), [e, v, t]);
+				const E = Object(r.useCallback)(() => v(Object(m.f)(e ? "user_hovercard" : "profile_overview", t)), [e, v, t]);
 				return o.a.createElement(u.s, {
 					onClick: () => {
-						n ? (v(m.f), y && C === b.a.notVoted && _(Object(c.db)(y))) : E();
+						n ? (v(m.g), y && C === b.a.notVoted && _(Object(c.db)(y))) : E();
 						const e = n ? "postify" : "copy";
 						_(Object(l.b)({
 							clickSource: x,
@@ -5818,7 +5818,7 @@
 				url: N,
 				isHovercard: I
 			}) => {
-				const A = Object(o.e)(e => !_ && !!E && Object(l.g)(e));
+				const A = Object(o.e)(e => !_ && !!E && Object(l.h)(e));
 				return r.a.createElement(r.a.Fragment, null, r.a.createElement(m.a, {
 					bannerBackgroundImage: e,
 					editMode: !!s,
@@ -14330,4 +14330,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.5495a16b760dde673477.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.f6cbc9da39afb653796c.js.map

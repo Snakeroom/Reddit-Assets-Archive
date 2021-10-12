@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.b3c6a757509089628312.js
-// Retrieved at 10/12/2021, 3:50:11 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.94e774b5ad74369f0b53.js
+// Retrieved at 10/12/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, n) {
@@ -1391,7 +1391,7 @@
 						i = Object(v.j)(r, {
 							subredditId: s
 						}),
-						a = Object(C.m)(r);
+						a = Object(C.n)(r);
 					if (i) return Object(v.f)(r, {
 						subredditId: s
 					});
@@ -3651,37 +3651,44 @@
 		},
 		"./src/reddit/actions/snoovatar.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "a", (function() {
-				return p
-			})), n.d(t, "c", (function() {
-				return h
-			})), n.d(t, "b", (function() {
+			n.d(t, "b", (function() {
+				return b
+			})), n.d(t, "a", (function() {
 				return f
+			})), n.d(t, "e", (function() {
+				return C
+			})), n.d(t, "c", (function() {
+				return _
+			})), n.d(t, "d", (function() {
+				return x
 			}));
 			var o = n("./src/lib/initializeClient/installReducer.ts"),
 				r = n("./src/lib/makeActionCreator/index.ts"),
-				s = n("./src/config.ts"),
-				i = n("./src/lib/constants/index.ts"),
-				a = n("./src/lib/makeApiRequest/index.ts"),
-				c = n("./src/lib/omitHeaders/index.ts"),
-				d = n("./src/reddit/constants/headers.ts");
-			var l = n("./src/reddit/reducers/features/avatar/index.ts"),
-				u = n("./src/reddit/selectors/avatar.ts"),
-				m = n("./src/reddit/actions/users.ts");
+				s = n("./src/lib/sentry/index.ts"),
+				i = n("./src/config.ts"),
+				a = n("./src/lib/constants/index.ts"),
+				c = n("./src/lib/makeApiRequest/index.ts"),
+				d = n("./src/lib/omitHeaders/index.ts"),
+				l = n("./src/reddit/constants/headers.ts");
+			var u = n("./src/reddit/reducers/features/avatar/index.ts"),
+				m = n("./src/reddit/selectors/avatar.ts"),
+				p = n("./src/reddit/actions/users.ts");
 			Object(o.a)({
 				features: {
-					avatar: l.a
+					avatar: u.a
 				}
 			});
-			const p = "SET_AVATAR_USER",
-				b = Object(r.a)(p),
-				h = (e, t, n) => async (o, r, {
-					apiContext: l
+			const b = "SET_AVATAR_USER",
+				h = Object(r.a)(b),
+				f = "RANDOM_AVATAR_LOADED",
+				g = Object(r.a)(f),
+				C = (e, t, n) => async (o, r, {
+					apiContext: s
 				}) => {
-					const p = Object(u.b)(r()),
-						b = await (async (e, t, n, o, r) => Object(a.a)(Object(c.a)(e, [d.a]), {
-							endpoint: `${s.a.snoovatarUrl}/api/snoovatar`,
-							method: i.ib.POST,
+					const u = Object(m.b)(r()),
+						b = await (async (e, t, n, o, r) => Object(c.a)(Object(d.a)(e, [l.a]), {
+							endpoint: `${i.a.snoovatarUrl}/api/snoovatar`,
+							method: a.ib.POST,
 							headers: {
 								"Content-Type": "application/json ",
 								"X-CSRF-Token": r
@@ -3691,17 +3698,33 @@
 								styles: n,
 								...o
 							}
-						}))(l(), e, t, n, p);
+						}))(s(), e, t, n, u);
 					if (!b.ok) throw new Error("User avatar failed to save");
-					o(Object(m.A)(b.body))
-				}, f = () => async (e, t, {
+					o(Object(p.A)(b.body))
+				}, _ = () => async (e, t, {
 					apiContext: n
 				}) => {
-					const o = await (async e => Object(a.a)(Object(c.a)(e, [d.a]), {
-						endpoint: `${s.a.snoovatarUrl}/api/account`,
-						method: i.ib.GET
-					}))(n());
-					o.ok && e(b(o.body))
+					try {
+						const t = await (async e => Object(c.a)(Object(d.a)(e, [l.a]), {
+							endpoint: `${i.a.snoovatarUrl}/api/account`,
+							method: a.ib.GET
+						}))(n());
+						t.ok && e(h(t.body))
+					} catch (o) {
+						s.c.captureException(o)
+					}
+				}, x = () => async (e, t, {
+					apiContext: n
+				}) => {
+					try {
+						const t = await (async e => Object(c.a)(Object(d.a)(e, [l.a]), {
+							endpoint: `${i.a.snoovatarUrl}/api/snoovatars/random:byId`,
+							method: a.ib.GET
+						}))(n());
+						t.ok && e(g(t.body))
+					} catch (o) {
+						s.c.captureException(o)
+					}
 				}
 		},
 		"./src/reddit/actions/snoovatarModal.ts": function(e, t, n) {
@@ -3720,7 +3743,7 @@
 				d = n("./src/telemetry/index.ts");
 			const l = () => async (e, t) => {
 				const n = t();
-				Object(d.a)(Object(a.i)(n)), e(Object(s.t)({
+				Object(d.a)(Object(a.j)(n)), e(Object(s.t)({
 					forceFetch: !0
 				})), await e(Object(r.g)(i.a.SNOOVATAR_MODAL))
 			};
@@ -3732,7 +3755,7 @@
 						share: l,
 						source: u
 					} = e, m = n();
-					s && Object(d.a)(Object(a.d)(s)(m)), Object(c.K)(m) ? await t(Object(r.h)(i.a.SNOOVATAR_MODAL, {
+					s && Object(d.a)(Object(a.e)(s)(m)), Object(c.K)(m) ? await t(Object(r.h)(i.a.SNOOVATAR_MODAL, {
 						share: l,
 						source: u
 					})) : await t(Object(o.i)())
@@ -8414,7 +8437,7 @@
 						pageLayer: t
 					}),
 					shouldOpenPostInNewTab: L.db,
-					isTournamentPredictionPostV2: R.u
+					isTournamentPredictionPostV2: R.v
 				}),
 				Y = e => {
 					const {
@@ -8422,7 +8445,7 @@
 						subreddit: n
 					} = e, {
 						isSponsored: o
-					} = t, r = Object(U.a)(), i = Object(W.a)(m.Oc) === m.Sc.Enabled;
+					} = t, r = Object(U.a)(), i = Object(W.a)(m.Pc) === m.Tc.Enabled;
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return s.a.createElement(Q, {
 						nowrap: e.nowrap
 					}, s.a.createElement(Z, e));
@@ -15500,34 +15523,38 @@
 		},
 		"./src/reddit/helpers/trackers/snoovatar.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "d", (function() {
+			n.d(t, "e", (function() {
 				return c
-			})), n.d(t, "e", (function() {
-				return d
 			})), n.d(t, "f", (function() {
-				return l
-			})), n.d(t, "n", (function() {
-				return u
-			})), n.d(t, "i", (function() {
-				return m
-			})), n.d(t, "k", (function() {
-				return p
-			})), n.d(t, "m", (function() {
-				return h
-			})), n.d(t, "c", (function() {
-				return f
-			})), n.d(t, "h", (function() {
-				return g
-			})), n.d(t, "j", (function() {
-				return _
+				return d
 			})), n.d(t, "g", (function() {
-				return x
-			})), n.d(t, "a", (function() {
-				return E
+				return l
+			})), n.d(t, "p", (function() {
+				return u
+			})), n.d(t, "j", (function() {
+				return m
 			})), n.d(t, "l", (function() {
-				return O
+				return p
+			})), n.d(t, "o", (function() {
+				return h
+			})), n.d(t, "d", (function() {
+				return f
+			})), n.d(t, "i", (function() {
+				return g
+			})), n.d(t, "k", (function() {
+				return _
+			})), n.d(t, "h", (function() {
+				return x
 			})), n.d(t, "b", (function() {
+				return E
+			})), n.d(t, "n", (function() {
+				return O
+			})), n.d(t, "c", (function() {
 				return y
+			})), n.d(t, "a", (function() {
+				return S
+			})), n.d(t, "m", (function() {
+				return j
 			}));
 			var o = n("./src/reddit/models/Gold/ProductOffer.ts"),
 				r = n("./src/reddit/selectors/avatarMarketing.ts"),
@@ -15624,7 +15651,19 @@
 					noun: "quick_create_cta"
 				}),
 				O = v("view"),
-				y = v("click")
+				y = v("click"),
+				k = (e, t, n) => o => ({
+					source: e,
+					action: t,
+					noun: n,
+					...s.defaults(o),
+					actionInfo: {
+						pageType: "onboarding"
+					},
+					snoovatar: s.snoovatarActiveForBuilderEvent(o)
+				}),
+				S = e => k("onboarding", "click", e),
+				j = () => k("avatar", "view", "onboarding")
 		},
 		"./src/reddit/helpers/trackers/userFlair.ts": function(e, t, n) {
 			"use strict";
@@ -21926,7 +21965,7 @@
 							pageLayer: o
 						})), a = Object(s.e)(e => i && Object(be.h)(e, {
 							subredditId: i.id
-						})), c = Object(s.e)(pn.o);
+						})), c = Object(s.e)(pn.p);
 						return r.a.useEffect(() => i && i.allowPredictions ? a ? t(!0) : c ? void Promise.resolve(n(Object(an.h)(i.id))).then(e => t(Boolean(e))) : t(!1) : t(!1), [i, c]), e
 					}();
 					return r.a.createElement(jl, gl({}, e, {
@@ -22241,7 +22280,7 @@
 			};
 			var c = (e = a, t) => {
 				switch (t.type) {
-					case i.a:
+					case i.b:
 						return {
 							...t.payload
 						};
@@ -22330,9 +22369,26 @@
 						return e
 				}
 			};
+			var C = (e = null, t) => {
+				switch (t.type) {
+					case i.a: {
+						const {
+							image: e,
+							accessory_ids: n
+						} = t.payload;
+						return {
+							image: e,
+							accessoryIds: n
+						}
+					}
+					default:
+						return e
+				}
+			};
 			t.a = Object(s.c)({
 				marketing: g,
-				avatarUser: c
+				avatarUser: c,
+				randomAvatar: C
 			})
 		},
 		"./src/reddit/reducers/features/crypto/index.ts": function(e, t, n) {
@@ -22638,6 +22694,8 @@
 				return s
 			})), n.d(t, "b", (function() {
 				return i
+			})), n.d(t, "c", (function() {
+				return a
 			}));
 			var o = n("./src/lib/initializeClient/installReducer.ts"),
 				r = n("./src/reddit/reducers/features/avatar/index.ts");
@@ -22653,6 +22711,10 @@
 				i = e => {
 					var t, n;
 					return null === (n = null === (t = e.features) || void 0 === t ? void 0 : t.avatar) || void 0 === n ? void 0 : n.avatarUser.csrf_token
+				},
+				a = e => {
+					var t, n;
+					return (null === (n = null === (t = e.features) || void 0 === t ? void 0 : t.avatar) || void 0 === n ? void 0 : n.randomAvatar) || null
 				}
 		},
 		"./src/reddit/selectors/avatarMarketing.ts": function(e, t, n) {
@@ -22762,9 +22824,9 @@
 			var o = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const s = e => Object(r.c)(e, {
-				experimentName: o.td,
+				experimentName: o.ud,
 				experimentEligibilitySelector: r.a
-			}) === o.yd.Enabled
+			}) === o.zd.Enabled
 		},
 		"./src/reddit/selectors/experiments/replyWithUpvote.ts": function(e, t, n) {
 			"use strict";
@@ -22780,7 +22842,7 @@
 				return !(!t || (null == t ? void 0 : t.karma) && t.karma.fromPosts < 5 && t.karma.fromComments < 10) && Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
 					experimentName: o.yb
-				}) === o.Ec
+				}) === o.Fc
 			}
 		},
 		"./src/reddit/selectors/features/predictions/creation/index.ts": function(e, t, n) {
@@ -23440,4 +23502,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.b3c6a757509089628312.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.94e774b5ad74369f0b53.js.map
