@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.fe5c3d19ff344a04d800.js
-// Retrieved at 10/12/2021, 5:20:17 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.4e1560e1c128f96dc8b5.js
+// Retrieved at 10/12/2021, 5:50:06 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var n, a, r = o[0], s = o[1], c = o[2], l = 0, P = []; l < r.length; l++) a = r[l], Object.prototype.hasOwnProperty.call(d, a) && d[a] && P.push(d[a][0]), d[a] = 0;
@@ -1405,7 +1405,7 @@
 						"translations/es_MX-json": "b4d73114de9a9d2abcd2",
 						"translations/fr_FR-json": "59607705ba27e4c8099d",
 						"translations/it_IT-json": "fde1196ac346fe8a28b7",
-						"translations/pseudo_ext-json": "b5402e9452f75e39e337",
+						"translations/pseudo_ext-json": "4ecb05fed09e2451d026",
 						"translations/pseudo_long-json": "02ca1e9e8386a402f3cb",
 						"translations/pseudo_short-json": "a2462e3f74fc0249029c",
 						"translations/pt_BR-json": "29976bfba6e1d7ec0b75",
@@ -1413,7 +1413,7 @@
 						"vendors~AdminPanel": "e6e59f93c311ab1cce5c",
 						AdminPanel: "6402b84f5ac960639194",
 						"vendors~ChatMessageInput~CommentRichUnit~FlairEdit~MembershipPaywallPage~PostCreation~PostRichUnit~R~9deab1a0": "201e0a53b4d00907b96f",
-						"ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor": "ac3045f295ad46cdf905",
+						"ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor": "cd5dacdf32964f669bf1",
 						MembershipPaywallPage: "0ae1355f014185e95268",
 						FlairEdit: "ab4165106b722e23f355",
 						"vendors~Chat~RedesignChat": "4ea3bc796c3ac26848b1",
@@ -1551,7 +1551,7 @@
 						"reddit-components-Governance-Leaderboard": "911a43b8b3d1ee7a702b",
 						"reddit-pages-CommentsPage-OtherDiscussions": "7a4c1d71b1eb930d5fd4",
 						ChatMessageInput: "47831ef085165a2941fd",
-						RichTextEditor: "fbd33bffd2d8ff8563d1",
+						RichTextEditor: "5da0291a89c23d6ed68f",
 						TimezoneList: "57988e1ba10253d58674",
 						"reddit-components-RichTextEditor-Toolbar-EmoteButton": "ab4f130c8206f05b2ea4",
 						"reddit-components-RichTextEditor-Toolbar-GifButton": "64cd23be2df950ce1992",
@@ -1667,4 +1667,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.fe5c3d19ff344a04d800.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.4e1560e1c128f96dc8b5.js.map
