@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.707e0c92304e89c21698.js
-// Retrieved at 10/7/2021, 4:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.e52b134c7d57591cf601.js
+// Retrieved at 10/12/2021, 10:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsFlairModal"], {
 		"./src/reddit/actions/economics/powerups/flairs/index.ts": function(e, t, r) {
@@ -730,9 +730,9 @@
 					hk: "M8l7D"
 				})))())
 			};
-			var W = r("./src/reddit/controls/ToggleSwitch/index.tsx"),
-				z = r("./src/reddit/components/Econ/PowerupsFlair/PowerupsFlairModal/FlairsSection.m.less"),
-				V = r.n(z);
+			var z = r("./src/reddit/controls/ToggleSwitch/index.tsx"),
+				V = r("./src/reddit/components/Econ/PowerupsFlair/PowerupsFlairModal/FlairsSection.m.less"),
+				W = r.n(V);
 			const q = ({
 				className: e,
 				title: t,
@@ -742,13 +742,13 @@
 			}) => i.a.createElement("div", {
 				className: e
 			}, i.a.createElement("h4", {
-				className: V.a.title
+				className: W.a.title
 			}, i.a.createElement(T.a, {
-				className: V.a.headingPowerupsBolt
+				className: W.a.headingPowerupsBolt
 			}), t), i.a.createElement("p", {
-				className: V.a.subtitle
+				className: W.a.subtitle
 			}, r), i.a.createElement("div", {
-				className: V.a.flairsList
+				className: W.a.flairsList
 			}, s.map(e => i.a.createElement(D, {
 				flair: e,
 				key: e.type,
@@ -808,7 +808,7 @@
 					className: Y.a.flairsVisibilityLabel
 				}, Z._("Show Supporter and Achievement Flair", null, {
 					hk: "3755UL"
-				})), i.a.createElement(W.a, {
+				})), i.a.createElement(z.a, {
 					className: Y.a.flairsVisibilitySwitch,
 					disabled: !c,
 					on: c && !d,
@@ -1099,13 +1099,17 @@
 		},
 		"./src/reddit/models/Gold/Powerups/powerupsFlair/index.ts": function(e, t, r) {
 			"use strict";
+			var s;
 			r.d(t, "b", (function() {
-				return s
-			})), r.d(t, "a", (function() {
-				return i
-			}));
-			const s = e => (e => e.startsWith("POWERUPS_SUPPORTER"))(e.type),
-				i = e => !s(e)
+					return i
+				})), r.d(t, "a", (function() {
+					return n
+				})),
+				function(e) {
+					e.Supporter = "SUPPORTER", e.Achievement = "ACHIEVEMENT"
+				}(s || (s = {}));
+			const i = e => e.category === s.Supporter,
+				n = e => e.category === s.Achievement
 		},
 		"./src/reddit/reducers/features/powerups/index.ts": function(e, t, r) {
 			"use strict";
@@ -1388,11 +1392,11 @@
 				}
 		},
 		"./src/redditGQL/operations/SubredditUserAchievements.json": function(e) {
-			e.exports = JSON.parse('{"id":"de382962c5ac"}')
+			e.exports = JSON.parse('{"id":"92790c69eba6"}')
 		},
 		"./src/redditGQL/operations/UpdateAchievementFlairPreference.json": function(e) {
 			e.exports = JSON.parse('{"id":"1bc1df66f049"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.707e0c92304e89c21698.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.e52b134c7d57591cf601.js.map

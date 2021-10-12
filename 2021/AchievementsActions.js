@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AchievementsActions.07928272ee1e0a5ab91d.js
-// Retrieved at 10/7/2021, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AchievementsActions.bb9cd7ff8aea315d234a.js
+// Retrieved at 10/12/2021, 10:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AchievementsActions"], {
 		"./src/reddit/actions/economics/powerups/constants.ts": function(e, r, t) {
@@ -36,15 +36,15 @@
 		"./src/reddit/actions/economics/powerups/flairs/index.ts": function(e, r, t) {
 			"use strict";
 			t.r(r), t.d(r, "onSubredditUserPowerupsFlairsLoaded", (function() {
-				return E
+				return O
 			})), t.d(r, "onUsersSupportedSubredditsLoaded", (function() {
-				return _
-			})), t.d(r, "onSubredditUserPowerupsFlairPreferenceUpdateRequested", (function() {
 				return h
+			})), t.d(r, "onSubredditUserPowerupsFlairPreferenceUpdateRequested", (function() {
+				return _
 			})), t.d(r, "onSubredditUserPowerupsFlairPreferenceUpdateSuccess", (function() {
-				return w
-			})), t.d(r, "onSubredditUserPowerupsFlairPreferenceUpdateFailed", (function() {
 				return T
+			})), t.d(r, "onSubredditUserPowerupsFlairPreferenceUpdateFailed", (function() {
+				return w
 			})), t.d(r, "onSubredditUserPowerupsFlairVisibilityUpdate", (function() {
 				return P
 			})), t.d(r, "getSubredditUserPowerupsFlairsAndSupporterInfo", (function() {
@@ -58,9 +58,9 @@
 			})), t.d(r, "getSubredditUserCommentsPowerupsInfoFromCommentCollection", (function() {
 				return R
 			})), t.d(r, "setSubredditUserAchievementFlair", (function() {
-				return D
-			})), t.d(r, "setSubredditUserSupporterFlair", (function() {
 				return g
+			})), t.d(r, "setSubredditUserSupporterFlair", (function() {
+				return D
 			})), t.d(r, "setSubredditUserPowerupsFlairsVisibility", (function() {
 				return x
 			}));
@@ -92,17 +92,17 @@
 				v = t("./src/reddit/selectors/user.ts"),
 				I = t("./src/reddit/actions/economics/powerups/constants.ts"),
 				S = t("./src/lib/initializeClient/installReducer.ts"),
-				O = t("./src/reddit/reducers/features/powerups/index.ts");
+				E = t("./src/reddit/reducers/features/powerups/index.ts");
 			Object(S.a)({
 				features: {
-					powerups: O.a
+					powerups: E.a
 				}
 			});
-			const E = Object(i.a)(I.d),
-				_ = Object(i.a)(I.i),
-				h = Object(i.a)(I.f),
-				w = Object(i.a)(I.g),
-				T = Object(i.a)(I.e),
+			const O = Object(i.a)(I.d),
+				h = Object(i.a)(I.i),
+				_ = Object(i.a)(I.f),
+				T = Object(i.a)(I.g),
+				w = Object(i.a)(I.e),
 				P = Object(i.a)(I.h),
 				U = (e, r) => async (t, d, {
 					gqlContext: i
@@ -127,7 +127,7 @@
 								subredditInfoById: p,
 								redditorsInfoByIds: l
 							} = c;
-						await t(E(p)), n && l && await t(_(l))
+						await t(O(p)), n && l && await t(h(l))
 					} catch (c) {
 						n.c.captureException(c)
 					}
@@ -174,7 +174,7 @@
 					Object.values(r).forEach(e => {
 						i.add(e.authorId)
 					}), await t(U(e, Array.from(i)))
-				}, D = (e, r) => async (t, d) => {
+				}, g = (e, r) => async (t, d) => {
 					const i = d(),
 						n = Object(v.k)(i);
 					if (!n) return;
@@ -189,7 +189,7 @@
 						achievementFlairType: r,
 						supporterFlairType: o
 					}))
-				}, g = (e, r) => async (t, d) => {
+				}, D = (e, r) => async (t, d) => {
 					const i = d(),
 						n = Object(v.k)(i);
 					if (!n) return;
@@ -211,7 +211,7 @@
 						o = Object(v.k)(s);
 					if (!o) return;
 					const u = o.id;
-					r(h(e));
+					r(_(e));
 					const {
 						subredditId: a,
 						achievementFlairType: p,
@@ -221,9 +221,9 @@
 						userId: u
 					});
 					try {
-						await c(i(), a, y, I), r(w(e))
+						await c(i(), a, y, I), r(T(e))
 					} catch (S) {
-						r(T(e)), n.c.captureException(S), r(Object(l.f)({
+						r(w(e)), n.c.captureException(S), r(Object(l.f)({
 							duration: l.a,
 							kind: f.b.Error,
 							text: d.fbt._("Failed to set preferred achievement flair", null, {
@@ -265,13 +265,17 @@
 		},
 		"./src/reddit/models/Gold/Powerups/powerupsFlair/index.ts": function(e, r, t) {
 			"use strict";
+			var d;
 			t.d(r, "b", (function() {
-				return d
-			})), t.d(r, "a", (function() {
-				return i
-			}));
-			const d = e => (e => e.startsWith("POWERUPS_SUPPORTER"))(e.type),
-				i = e => !d(e)
+					return i
+				})), t.d(r, "a", (function() {
+					return n
+				})),
+				function(e) {
+					e.Supporter = "SUPPORTER", e.Achievement = "ACHIEVEMENT"
+				}(d || (d = {}));
+			const i = e => e.category === d.Supporter,
+				n = e => e.category === d.Achievement
 		},
 		"./src/reddit/reducers/features/powerups/index.ts": function(e, r, t) {
 			"use strict";
@@ -456,7 +460,7 @@
 			})), t.d(r, "d", (function() {
 				return I
 			})), t.d(r, "a", (function() {
-				return O
+				return E
 			}));
 			t("./node_modules/core-js/modules/web.dom.iterable.js");
 			var d = t("./node_modules/reselect/es/index.js"),
@@ -533,7 +537,7 @@
 					isLocked: !r.includes(e),
 					isPreferred: e === d
 				})).sort((e, r) => e.isLocked === r.isLocked ? 0 : e.isLocked ? 1 : -1),
-				O = (e, {
+				E = (e, {
 					commentId: r
 				}) => {
 					const t = Object(i.b)(e, {
@@ -554,11 +558,11 @@
 				}
 		},
 		"./src/redditGQL/operations/SubredditUserAchievements.json": function(e) {
-			e.exports = JSON.parse('{"id":"de382962c5ac"}')
+			e.exports = JSON.parse('{"id":"92790c69eba6"}')
 		},
 		"./src/redditGQL/operations/UpdateAchievementFlairPreference.json": function(e) {
 			e.exports = JSON.parse('{"id":"1bc1df66f049"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AchievementsActions.07928272ee1e0a5ab91d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AchievementsActions.bb9cd7ff8aea315d234a.js.map

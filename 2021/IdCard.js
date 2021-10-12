@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.75df84f3bc3f0da6c5ef.js
-// Retrieved at 10/7/2021, 8:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.60a951f9af0a26cf70b6.js
+// Retrieved at 10/12/2021, 10:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "AchievementsActions", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -5284,13 +5284,17 @@
 		},
 		"./src/reddit/models/Gold/Powerups/powerupsFlair/index.ts": function(e, t, n) {
 			"use strict";
+			var r;
 			n.d(t, "b", (function() {
-				return r
-			})), n.d(t, "a", (function() {
-				return s
-			}));
-			const r = e => (e => e.startsWith("POWERUPS_SUPPORTER"))(e.type),
-				s = e => !r(e)
+					return s
+				})), n.d(t, "a", (function() {
+					return i
+				})),
+				function(e) {
+					e.Supporter = "SUPPORTER", e.Achievement = "ACHIEVEMENT"
+				}(r || (r = {}));
+			const s = e => e.category === r.Supporter,
+				i = e => e.category === r.Achievement
 		},
 		"./src/reddit/reducers/features/powerups/index.ts": function(e, t, n) {
 			"use strict";
@@ -5826,7 +5830,7 @@
 				}
 		},
 		"./src/redditGQL/operations/SubredditUserAchievements.json": function(e) {
-			e.exports = JSON.parse('{"id":"de382962c5ac"}')
+			e.exports = JSON.parse('{"id":"92790c69eba6"}')
 		},
 		"./src/redditGQL/operations/SubscribedSubreddits.json": function(e) {
 			e.exports = JSON.parse('{"id":"d0b176d08b19"}')
@@ -5836,4 +5840,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.75df84f3bc3f0da6c5ef.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.60a951f9af0a26cf70b6.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/getFlairData.38424e26ee6cbd0a475b.js
-// Retrieved at 10/7/2021, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/getFlairData.8cc8a1fd6d490946492e.js
+// Retrieved at 10/12/2021, 10:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["getFlairData"], {
 		"./src/reddit/actions/economics/powerups/constants.ts": function(e, r, t) {
@@ -65,10 +65,10 @@
 					...l
 				};
 				const a = o.applied.templateId,
-					f = Object(d.g)(o.applied);
-				return f ? {
+					v = Object(d.g)(o.applied);
+				return v ? {
 					id: a,
-					title: f,
+					title: v,
 					isActive: !0,
 					...l
 				} : {
@@ -79,13 +79,17 @@
 		},
 		"./src/reddit/models/Gold/Powerups/powerupsFlair/index.ts": function(e, r, t) {
 			"use strict";
+			var d;
 			t.d(r, "b", (function() {
-				return d
-			})), t.d(r, "a", (function() {
-				return i
-			}));
-			const d = e => (e => e.startsWith("POWERUPS_SUPPORTER"))(e.type),
-				i = e => !d(e)
+					return i
+				})), t.d(r, "a", (function() {
+					return s
+				})),
+				function(e) {
+					e.Supporter = "SUPPORTER", e.Achievement = "ACHIEVEMENT"
+				}(d || (d = {}));
+			const i = e => e.category === d.Supporter,
+				s = e => e.category === d.Achievement
 		},
 		"./src/reddit/reducers/features/powerups/index.ts": function(e, r, t) {
 			"use strict";
@@ -258,19 +262,19 @@
 			})), t.d(r, "g", (function() {
 				return a
 			})), t.d(r, "i", (function() {
-				return f
-			})), t.d(r, "j", (function() {
 				return v
+			})), t.d(r, "j", (function() {
+				return f
 			})), t.d(r, "b", (function() {
 				return y
 			})), t.d(r, "c", (function() {
-				return _
-			})), t.d(r, "e", (function() {
 				return E
+			})), t.d(r, "e", (function() {
+				return _
 			})), t.d(r, "d", (function() {
 				return T
 			})), t.d(r, "a", (function() {
-				return S
+				return b
 			}));
 			t("./node_modules/core-js/modules/web.dom.iterable.js");
 			var d = t("./node_modules/reselect/es/index.js"),
@@ -304,8 +308,8 @@
 				},
 				l = Object(d.a)(c, e => (null == e ? void 0 : e.pendingAchievementType) || (null == e ? void 0 : e.preferredAchievementType)),
 				a = Object(d.a)([p, l], (e, r) => e && r ? e[r] : null),
-				f = Object(d.a)(c, e => null == e ? void 0 : e.preferredSupporterType),
-				v = Object(d.a)([p, f], (e, r) => e && r ? e[r] : null),
+				v = Object(d.a)(c, e => null == e ? void 0 : e.preferredSupporterType),
+				f = Object(d.a)([p, v], (e, r) => e && r ? e[r] : null),
 				y = Object(d.a)([p, c], (e, r) => {
 					if (!e) return [];
 					const t = r ? [...r.supporterTypes, ...r.achievementTypes] : [],
@@ -317,7 +321,7 @@
 						isPreferred: e.type === d || e.type === i
 					})).sort((e, r) => e.isLocked === r.isLocked ? 0 : e.isLocked ? 1 : -1)
 				}),
-				_ = Object(d.a)([o, c], (e, r) => {
+				E = Object(d.a)([o, c], (e, r) => {
 					if (!e || !r) return null;
 					const {
 						supporterTypes: t,
@@ -332,22 +336,22 @@
 						pendingAchievementType: c
 					} = r;
 					return {
-						supporterFlairs: b(t, s, i, p || u),
-						achievementFlairs: b(d, n, i, c || o)
+						supporterFlairs: S(t, s, i, p || u),
+						achievementFlairs: S(d, n, i, c || o)
 					}
 				}),
-				E = Object(d.a)([c], e => !!e && e.isHidden),
-				T = Object(d.a)([o, c, v], (e, r, t) => {
+				_ = Object(d.a)([c], e => !!e && e.isHidden),
+				T = Object(d.a)([o, c, f], (e, r, t) => {
 					if (!e || !r) return [];
 					const d = r.achievementTypes.map(r => e.flairsByType[r]);
 					return t ? [t, ...d] : d
 				}),
-				b = (e, r, t, d) => e.map(e => ({
+				S = (e, r, t, d) => e.map(e => ({
 					...t[e],
 					isLocked: !r.includes(e),
 					isPreferred: e === d
 				})).sort((e, r) => e.isLocked === r.isLocked ? 0 : e.isLocked ? 1 : -1),
-				S = (e, {
+				b = (e, {
 					commentId: r
 				}) => {
 					const t = Object(i.b)(e, {
@@ -369,4 +373,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/getFlairData.38424e26ee6cbd0a475b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/getFlairData.8cc8a1fd6d490946492e.js.map

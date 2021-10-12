@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.c36bff910ddbb62d337b.js
-// Retrieved at 10/7/2021, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.31fcc55b97bdc47af5c0.js
+// Retrieved at 10/12/2021, 10:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -5857,13 +5857,17 @@
 		},
 		"./src/reddit/models/Gold/Powerups/powerupsFlair/index.ts": function(e, t, s) {
 			"use strict";
+			var n;
 			s.d(t, "b", (function() {
-				return n
-			})), s.d(t, "a", (function() {
-				return r
-			}));
-			const n = e => (e => e.startsWith("POWERUPS_SUPPORTER"))(e.type),
-				r = e => !n(e)
+					return r
+				})), s.d(t, "a", (function() {
+					return o
+				})),
+				function(e) {
+					e.Supporter = "SUPPORTER", e.Achievement = "ACHIEVEMENT"
+				}(n || (n = {}));
+			const r = e => e.category === n.Supporter,
+				o = e => e.category === n.Achievement
 		},
 		"./src/reddit/pages/ModQueuePages/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -6420,4 +6424,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.c36bff910ddbb62d337b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.31fcc55b97bdc47af5c0.js.map
