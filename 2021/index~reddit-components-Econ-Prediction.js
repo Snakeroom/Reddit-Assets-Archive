@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.fd6fafc99b3058bda861.js
-// Retrieved at 10/12/2021, 11:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.e30daa55cb47aec62838.js
+// Retrieved at 10/12/2021, 12:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index~reddit-components-Econ-Prediction"], {
 		"./node_modules/lodash/_LazyWrapper.js": function(a, i, r) {
@@ -1349,20 +1349,24 @@
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), l = ({
 				theme: a = "theme_4",
 				children: i
-			}) => n.a.createElement("div", {
-				className: s.a.container,
-				style: {
-					backgroundImage: o.a[a] || o.a.theme_4
-				}
-			}, n.a.createElement("div", {
-				className: s.a.badge
-			}, m._("Prediction", null, {
-				hk: "1MyVWT"
-			})), n.a.createElement("div", {
-				className: Object(t.a)(s.a.question, {
-					[s.a.long]: Boolean(i && i.toString().length > 100)
-				})
-			}, i));
+			}) => {
+				const r = i ? i.toString() : "";
+				return n.a.createElement("div", {
+					className: s.a.container,
+					style: {
+						backgroundImage: o.a[a] || o.a.theme_4
+					}
+				}, n.a.createElement("div", {
+					className: s.a.badge
+				}, m._("Prediction", null, {
+					hk: "1MyVWT"
+				})), n.a.createElement("div", {
+					className: Object(t.a)(s.a.question, {
+						[s.a.long]: Boolean(r.length > 100)
+					}),
+					title: r.length > 140 ? r : void 0
+				}, i))
+			};
 			var c = r("./src/reddit/components/Econ/Prediction/PredictionOption/index.tsx"),
 				p = r("./src/reddit/components/Econ/Prediction/PredictionOption/PredictionChangeOption.tsx"),
 				h = r("./src/reddit/components/Econ/Prediction/PredictionOption/SneakPeek.tsx"),
@@ -4136,4 +4140,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.fd6fafc99b3058bda861.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.e30daa55cb47aec62838.js.map
