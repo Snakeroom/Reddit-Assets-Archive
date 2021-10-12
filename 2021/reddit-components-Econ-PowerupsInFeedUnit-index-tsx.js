@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.0450fb79443bbb965e43.js
-// Retrieved at 10/7/2021, 4:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.ea31cd6064c8424177c7.js
+// Retrieved at 10/12/2021, 11:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-PowerupsInFeedUnit-index-tsx"], {
 		"./src/reddit/actions/snoovatar.ts": function(e, t, s) {
@@ -296,8 +296,8 @@
 				C = s("./src/reddit/components/Econ/Common/ModalCloseButton/index.tsx"),
 				x = s("./src/reddit/constants/gold.ts"),
 				k = s("./src/reddit/helpers/avatar/index.ts"),
-				P = s("./src/reddit/models/Avatar/accessories.ts"),
-				j = s("./src/reddit/models/Toast/index.ts"),
+				j = s("./src/reddit/models/Avatar/accessories.ts"),
+				P = s("./src/reddit/models/Toast/index.ts"),
 				U = s("./src/reddit/selectors/avatar.ts"),
 				I = s("./src/reddit/components/Econ/PowerupsInFeedUnit/UpdateAvatarConfirmationModal/index.m.less"),
 				D = s.n(I);
@@ -356,14 +356,14 @@
 						if (s(Object(d.n)()), !i) return;
 						const r = i.snoovatar,
 							o = (null == r ? void 0 : r.accessories) || [],
-							n = Object(k.a)(o, [P.d[e]]).map(e => e.id);
+							n = Object(k.a)(o, [j.d[e]]).map(e => e.id);
 						try {
 							a(Object(y.c)(n, null == r ? void 0 : r.styles, {
 								set_avatar_to_profile: !0,
 								source: "powerups_post_upsell"
 							})), a(Object(N.f)({
 								duration: N.a,
-								kind: j.b.SuccessCommunityGreen,
+								kind: P.b.SuccessCommunityGreen,
 								text: R._("Success!", null, {
 									hk: "4ieEVt"
 								}),
@@ -375,7 +375,7 @@
 						} catch {
 							a(Object(N.f)({
 								duration: N.a,
-								kind: j.b.Error,
+								kind: P.b.Error,
 								text: R._("Something went wrong!", null, {
 									hk: "qD6OP"
 								})
@@ -527,7 +527,7 @@
 							c = Object(m.g)(e, {
 								subredditId: t
 							});
-						return n || r ? i && o && Object(_.k)(e) ? a.UNLOCKED_COMMUNITY_GEAR : a.HIDDEN : c && o && Object(_.k)(e) ? a.POWERUPS_COMMUNITY_GEAR : a.POWERUPS_DEFAULT
+						return n || r ? i && o && Object(_.j)(e) ? a.UNLOCKED_COMMUNITY_GEAR : a.HIDDEN : c && o && Object(_.j)(e) ? a.POWERUPS_COMMUNITY_GEAR : a.POWERUPS_DEFAULT
 					})(e, {
 						subredditId: b.id,
 						subredditName: b.name
@@ -917,4 +917,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.0450fb79443bbb965e43.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.ea31cd6064c8424177c7.js.map

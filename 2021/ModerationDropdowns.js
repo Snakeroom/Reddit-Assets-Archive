@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.82474264eb8ead3effba.js
-// Retrieved at 10/11/2021, 6:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.552fa42196714d3779dc.js
+// Retrieved at 10/12/2021, 11:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./node_modules/uuid/index.js": function(e, t, n) {
@@ -589,7 +589,7 @@
 						i = Object(k.j)(s, {
 							subredditId: r
 						}),
-						a = Object(O.p)(s);
+						a = Object(O.o)(s);
 					if (i) return Object(k.f)(s, {
 						subredditId: r
 					});
@@ -1479,14 +1479,14 @@
 					post: A
 				}) => {
 					var G, U, z, W;
-					const Q = Object(r.e)(N.t),
+					const Q = Object(r.e)(N.s),
 						K = Object(r.e)(e => {
 							var t;
-							return (null === (t = A.pollData) || void 0 === t ? void 0 : t.isPrediction) && null !== A.pollData.resolvedOptionId && Object(N.q)(e)
+							return (null === (t = A.pollData) || void 0 === t ? void 0 : t.isPrediction) && null !== A.pollData.resolvedOptionId && Object(N.p)(e)
 						}),
 						V = Object(r.e)(e => {
 							var t;
-							return (null === (t = A.pollData) || void 0 === t ? void 0 : t.isPrediction) && Object(N.p)(e)
+							return (null === (t = A.pollData) || void 0 === t ? void 0 : t.isPrediction) && Object(N.o)(e)
 						}),
 						H = A.flair.filter(e => e.type !== y.f.Nsfw && e.type !== y.f.Spoiler).length > 0,
 						q = Object(_.b)(A),
@@ -3010,4 +3010,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.82474264eb8ead3effba.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.552fa42196714d3779dc.js.map

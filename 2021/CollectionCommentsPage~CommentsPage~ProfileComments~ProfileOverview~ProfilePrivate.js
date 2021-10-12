@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.22c10091a4cb37ea882a.js
-// Retrieved at 10/12/2021, 10:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.59d1996a39eea46e4398.js
+// Retrieved at 10/12/2021, 11:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, n) {
@@ -3177,61 +3177,60 @@
 		"./src/reddit/selectors/gold/powerups/flairs.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "f", (function() {
-				return l
+				return d
 			})), n.d(t, "h", (function() {
-				return m
+				return l
 			})), n.d(t, "g", (function() {
-				return u
+				return m
 			})), n.d(t, "i", (function() {
-				return p
+				return u
 			})), n.d(t, "j", (function() {
-				return b
+				return p
 			})), n.d(t, "b", (function() {
-				return x
+				return b
 			})), n.d(t, "c", (function() {
-				return h
+				return x
 			})), n.d(t, "e", (function() {
-				return f
+				return h
 			})), n.d(t, "d", (function() {
-				return v
+				return f
 			})), n.d(t, "a", (function() {
-				return C
+				return E
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var s = n("./node_modules/reselect/es/index.js"),
 				o = n("./src/reddit/selectors/commentSelector.ts"),
-				r = n("./src/reddit/selectors/experiments/econ/index.ts"),
-				a = n("./src/lib/initializeClient/installReducer.ts"),
-				i = n("./src/reddit/reducers/features/powerups/index.ts");
-			Object(a.a)({
+				r = n("./src/lib/initializeClient/installReducer.ts"),
+				a = n("./src/reddit/reducers/features/powerups/index.ts");
+			Object(r.a)({
 				features: {
-					powerups: i.a
+					powerups: a.a
 				}
 			});
-			const c = (e, {
+			const i = (e, {
 					subredditId: t
 				}) => {
 					var n;
 					return t ? null === (n = e.features.powerups.subredditPowerupsFlairs) || void 0 === n ? void 0 : n[t] : null
 				},
-				d = (e, {
+				c = (e, {
 					subredditId: t
 				}) => {
 					var n, s;
 					return t ? null === (s = null === (n = e.features.powerups.subredditPowerupsFlairs) || void 0 === n ? void 0 : n[t]) || void 0 === s ? void 0 : s.flairsByType : null
 				},
-				l = (e, {
+				d = (e, {
 					subredditId: t,
 					userId: n
 				}) => {
 					var s, o;
 					return t && n ? null === (o = null === (s = e.features.powerups.subredditUserPowerupsFlairs) || void 0 === s ? void 0 : s[t]) || void 0 === o ? void 0 : o[n] : null
 				},
-				m = Object(s.a)(l, e => (null == e ? void 0 : e.pendingAchievementType) || (null == e ? void 0 : e.preferredAchievementType)),
-				u = Object(s.a)([d, m], (e, t) => e && t ? e[t] : null),
-				p = Object(s.a)(l, e => null == e ? void 0 : e.preferredSupporterType),
-				b = Object(s.a)([d, p], (e, t) => e && t ? e[t] : null),
-				x = Object(s.a)([d, l], (e, t) => {
+				l = Object(s.a)(d, e => (null == e ? void 0 : e.pendingAchievementType) || (null == e ? void 0 : e.preferredAchievementType)),
+				m = Object(s.a)([c, l], (e, t) => e && t ? e[t] : null),
+				u = Object(s.a)(d, e => null == e ? void 0 : e.preferredSupporterType),
+				p = Object(s.a)([c, u], (e, t) => e && t ? e[t] : null),
+				b = Object(s.a)([c, d], (e, t) => {
 					if (!e) return [];
 					const n = t ? [...t.supporterTypes, ...t.achievementTypes] : [],
 						s = (null == t ? void 0 : t.pendingAchievementType) || (null == t ? void 0 : t.preferredAchievementType),
@@ -3242,7 +3241,7 @@
 						isPreferred: e.type === s || e.type === o
 					})).sort((e, t) => e.isLocked === t.isLocked ? 0 : e.isLocked ? 1 : -1)
 				}),
-				h = Object(s.a)([c, l], (e, t) => {
+				x = Object(s.a)([i, d], (e, t) => {
 					if (!e || !t) return null;
 					const {
 						supporterTypes: n,
@@ -3257,30 +3256,30 @@
 						pendingAchievementType: l
 					} = t;
 					return {
-						supporterFlairs: E(n, r, o, d || i),
-						achievementFlairs: E(s, a, o, l || c)
+						supporterFlairs: v(n, r, o, d || i),
+						achievementFlairs: v(s, a, o, l || c)
 					}
 				}),
-				f = Object(s.a)([l], e => !!e && e.isHidden),
-				v = Object(s.a)([c, l, b], (e, t, n) => {
+				h = Object(s.a)([d], e => !!e && e.isHidden),
+				f = Object(s.a)([i, d, p], (e, t, n) => {
 					if (!e || !t) return [];
 					const s = t.achievementTypes.map(t => e.flairsByType[t]);
 					return n ? [n, ...s] : s
 				}),
-				E = (e, t, n, s) => e.map(e => ({
+				v = (e, t, n, s) => e.map(e => ({
 					...n[e],
 					isLocked: !t.includes(e),
 					isPreferred: e === s
 				})).sort((e, t) => e.isLocked === t.isLocked ? 0 : e.isLocked ? 1 : -1),
-				C = (e, {
+				E = (e, {
 					commentId: t
 				}) => {
 					const n = Object(o.b)(e, {
 							commentId: t
 						}),
 						s = null == n ? void 0 : n.subredditId,
-						a = null == n ? void 0 : n.authorId;
-					return !(!s || !a) && !(!((e, {
+						r = null == n ? void 0 : n.authorId;
+					return !(!s || !r) && !!((e, {
 						subredditId: t,
 						userId: n
 					}) => {
@@ -3288,8 +3287,8 @@
 						return t && n ? null === (r = null === (o = null === (s = e.features.powerups) || void 0 === s ? void 0 : s.usersSupportedSubreddits) || void 0 === o ? void 0 : o[n]) || void 0 === r ? void 0 : r[t] : null
 					})(e, {
 						subredditId: s,
-						userId: a
-					}) || !Object(r.j)(e))
+						userId: r
+					})
 				}
 		},
 		"./src/reddit/selectors/showPromotedCTA.ts": function(e, t, n) {
@@ -3304,13 +3303,13 @@
 				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				a = n("./src/reddit/selectors/posts.ts");
 			const i = e => Object(r.c)(e, {
-					experimentName: o.Md,
+					experimentName: o.Ld,
 					experimentEligibilitySelector: r.a
 				}),
-				c = (e, t) => t === o.Ud.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				c = (e, t) => t === o.Td.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				d = Object(s.a)(a.H, i, (e, t) => c(e, t)),
 				l = Object(s.a)((e, t) => t, i, (e, t) => c(e, t))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.22c10091a4cb37ea882a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.59d1996a39eea46e4398.js.map

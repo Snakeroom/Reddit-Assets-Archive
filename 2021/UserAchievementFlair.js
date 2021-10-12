@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/UserAchievementFlair.e799f4fdb6a30c055e7f.js
-// Retrieved at 10/7/2021, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/UserAchievementFlair.5e6a8b5f113451969068.js
+// Retrieved at 10/12/2021, 11:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["UserAchievementFlair"], {
 		"./src/reddit/components/Econ/PowerupsFlair/HoverPopup.m.less": function(e, t, n) {
@@ -153,7 +153,7 @@
 				if (Object(o.e)(e => Object(p.e)(e, {
 						subredditId: t,
 						userId: n
-					}) && Object(I.n)(e))) return null;
+					}) && Object(I.m)(e))) return null;
 				const h = u ? [m, ...u.achievementTypes].filter(Boolean) : null;
 				if (!(!!i || !!m) || !h) return null;
 				const b = (null == m ? void 0 : m.type) === (null == i ? void 0 : i.type) ? null : m,
@@ -238,7 +238,7 @@
 								experimentName: c.E,
 								expEventOverride: t
 							});
-							return !!(Object(c.Te)(n) ? void 0 : n)
+							return !!(Object(c.Se)(n) ? void 0 : n)
 						})(n)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -776,9 +776,9 @@
 			})), n.d(t, "C", (function() {
 				return A
 			})), n.d(t, "D", (function() {
-				return M
-			})), n.d(t, "E", (function() {
 				return S
+			})), n.d(t, "E", (function() {
+				return M
 			})), n.d(t, "r", (function() {
 				return H
 			})), n.d(t, "e", (function() {
@@ -953,10 +953,10 @@
 				A = (e, {
 					moreCommentsId: t
 				}) => e.moreComments.models[t],
-				M = (e, {
+				S = (e, {
 					moreCommentsId: t
 				}) => !!e.moreComments.api.pending[t],
-				S = (e, {
+				M = (e, {
 					commentsPageKey: t
 				}) => {
 					const n = e.pages.comments.keyToPostId[t];
@@ -1031,4 +1031,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UserAchievementFlair.e799f4fdb6a30c055e7f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UserAchievementFlair.5e6a8b5f113451969068.js.map

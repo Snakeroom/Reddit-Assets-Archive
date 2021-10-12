@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.586a75bb14bd96fceef9.js
-// Retrieved at 10/7/2021, 4:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.bc78747e846e49c39dce.js
+// Retrieved at 10/12/2021, 11:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsMarketingModal"], {
 		"./src/reddit/components/Econ/Common/BenefitTile/index.m.less": function(e, t, s) {
@@ -324,16 +324,16 @@
 				v = s("./src/reddit/models/Gold/Powerups/index.ts"),
 				M = s("./src/reddit/selectors/experiments/econ/powerupsAward.ts");
 			const y = [v.a.CommentRecognition, v.a.PowerupsAward, v.a.CommunityGear, v.a.CommentsWithGifs, v.a.CommentsWithEmoji, v.a.Achievements, v.a.HeroStatus, v.a.HdVideo],
-				I = Object(a.a)([M.b, k.j, k.k], (e, t, s) => {
-					let n = y;
-					return e || (n = n.filter(e => e !== v.a.PowerupsAward)), t || (n = n.filter(e => e !== v.a.CommentRecognition)), s || (n = n.filter(e => e !== v.a.CommunityGear)), n
+				I = Object(a.a)([M.b, k.j], (e, t) => {
+					let s = y;
+					return e || (s = s.filter(e => e !== v.a.PowerupsAward)), t || (s = s.filter(e => e !== v.a.CommunityGear)), s
 				});
 			var S = s("./src/reddit/components/Econ/PowerupsMarketingModal/Benefits/index.m.less"),
 				L = s.n(S);
 			const {
 				fbt: B
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), H = e => e.length % 2 == 1 ? [...e, v.a.More] : e;
-			var R = function(e) {
+			var A = function(e) {
 					const {
 						className: t
 					} = e, s = Object(f.a)(), n = Object(r.e)(I), a = Object(r.e)(k.i), c = H(n);
@@ -351,7 +351,7 @@
 						isNew: v.c[e](a).isNew
 					})))
 				},
-				A = s("./src/reddit/components/Econ/PowerupsMarketingModal/Header/index.tsx"),
+				R = s("./src/reddit/components/Econ/PowerupsMarketingModal/Header/index.tsx"),
 				W = s("./src/reddit/components/Econ/PowerupsMarketingModal/index.m.less"),
 				T = s.n(W);
 
@@ -386,7 +386,7 @@
 					currentSubredditId: t,
 					powerups: s,
 					subreddit: a
-				} = e, c = Object(r.d)(), h = Object(f.a)(), g = Object(r.e)(k.i), N = Object(r.e)(e => !Object(j.s)(e) && Object(k.m)(e)), {
+				} = e, c = Object(r.d)(), h = Object(f.a)(), g = Object(r.e)(k.i), N = Object(r.e)(e => !Object(j.s)(e) && Object(k.l)(e)), {
 					container: C,
 					isScrollGradientVisible: O,
 					calculateGradientVisibility: v
@@ -414,12 +414,12 @@
 					onScroll: v
 				}, o.a.createElement(u.a, {
 					onClick: M
-				}), o.a.createElement(A.a, {
+				}), o.a.createElement(R.a, {
 					title: F._("Powerup {r/community}", [F._param("r/community", a.displayText)], {
 						hk: "2HkBNV"
 					}),
 					subtitle: I
-				}), o.a.createElement(R, {
+				}), o.a.createElement(A, {
 					className: T.a.benefits
 				}), o.a.createElement("span", {
 					className: T.a.modDisclaimer
@@ -599,4 +599,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.586a75bb14bd96fceef9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.bc78747e846e49c39dce.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.8d30e990b325901e4a57.js
-// Retrieved at 10/7/2021, 6:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.565f684b5fb9fb86a7db.js
+// Retrieved at 10/12/2021, 11:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~Subreddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, r) {
@@ -883,22 +883,22 @@
 				A = r("./src/telemetry/index.ts"),
 				U = r("./src/reddit/actions/structuredStyles/constants.ts");
 			const B = Object(d.a)(U.m),
-				F = {
+				H = {
 					bannerBackgroundImage: ["bannerBackgroundImagePosition"],
 					bannerPositionedImage: ["bannerPositionedImagePosition", "secondaryBannerPositionedImage"]
 				},
-				H = e => {
+				F = e => {
 					const t = {
 						...e
 					};
 					return Object.keys(e).forEach(r => {
-						F[r] && !e[r] && F[r].forEach(e => t[e] = null)
+						H[r] && !e[r] && H[r].forEach(e => t[e] = null)
 					}), t
 				},
 				M = (e, t, r, n) => async (o, i, s) => {
 					const {
 						apiContext: c
-					} = s, a = i(), d = H(t), p = a.structuredStyles.models[e];
+					} = s, a = i(), d = F(t), p = a.structuredStyles.models[e];
 					let m;
 					for (const e in d)
 						if (d[e] !== p[e]) {
@@ -1018,7 +1018,7 @@
 						}))
 					})(e)(t, r, n), Object(j.g)(e, !1)(t, r, n)
 				}, Y = Object(d.a)(U.c), Q = e => async (t, r, n) => {
-					const o = H(e),
+					const o = F(e),
 						i = r();
 					for (const e in o)
 						if (Object(T.l)(e))
@@ -1970,7 +1970,7 @@
 					iconUrl: a && t ? "https://www.redditstatic.com/avatars/defaults/avatar_default_3.png" : D,
 					isCurrentUser: C,
 					isNSFW: N
-				})), A = null == E ? void 0 : E.id, [U, B] = Object(o.useState)(!1), F = Object(o.useMemo)(() => ({
+				})), A = null == E ? void 0 : E.id, [U, B] = Object(o.useState)(!1), H = Object(o.useMemo)(() => ({
 					input: {
 						channel: {
 							teamOwner: "CONTENT_AND_COMMUNITIES",
@@ -1978,7 +1978,7 @@
 							authorID: A
 						}
 					}
-				}), [A]), H = Object(o.useCallback)(e => {
+				}), [A]), F = Object(o.useCallback)(e => {
 					const {
 						numUsers: t
 					} = e.subscribe.data;
@@ -2009,8 +2009,8 @@
 					isHighlighted: b,
 					onceInViewport: S
 				}), (k || j) && K && i.a.createElement(l.a, {
-					variables: F,
-					onData: j && !k ? v : H,
+					variables: H,
+					onData: j && !k ? v : F,
 					queryKey: "isUserOnline"
 				}))
 			})
@@ -2682,7 +2682,7 @@
 			})), r.d(t, "e", (function() {
 				return B
 			})), r.d(t, "n", (function() {
-				return H
+				return F
 			})), r.d(t, "i", (function() {
 				return K
 			})), r.d(t, "f", (function() {
@@ -2884,7 +2884,7 @@
 						action: n.c.CLICK
 					})
 				},
-				F = (e, t) => {
+				H = (e, t) => {
 					if (t) {
 						const r = u.subredditById(e, t);
 						if (r) return {
@@ -2896,7 +2896,7 @@
 						}
 					}
 				},
-				H = (e, t) => {
+				F = (e, t) => {
 					const {
 						draftId: r,
 						destSubreddit: n
@@ -2929,7 +2929,7 @@
 					}
 					return {
 						postDraft: s,
-						...F(e, n.id)
+						...H(e, n.id)
 					}
 				},
 				M = (e, t) => {
@@ -2955,21 +2955,21 @@
 					}
 					return {
 						postDraft: n,
-						...F(e, t.subredditId)
+						...H(e, t.subredditId)
 					}
 				},
 				K = (e, t) => {
 					Object(p.a)({
 						noun: "draft_load",
 						...g(e),
-						...H(e, t)
+						...F(e, t)
 					})
 				},
 				G = (e, t) => {
 					Object(p.a)({
 						noun: t.draftId ? "draft_update" : "draft_create",
 						...g(e),
-						...H(e, t)
+						...F(e, t)
 					})
 				},
 				W = (e, t) => {
@@ -2996,7 +2996,7 @@
 				V = (e, t, r) => {
 					Object(p.a)({
 						...g(e),
-						...H(e, t),
+						...F(e, t),
 						noun: "draft_share",
 						action: r ? n.c.ENABLE : n.c.DISABLE
 					})
@@ -3121,9 +3121,9 @@
 			})), r.d(t, "d", (function() {
 				return B
 			})), r.d(t, "l", (function() {
-				return F
-			})), r.d(t, "D", (function() {
 				return H
+			})), r.d(t, "D", (function() {
+				return F
 			})), r.d(t, "G", (function() {
 				return M
 			}));
@@ -3379,7 +3379,7 @@
 						emojiCount: e
 					}
 				}),
-				F = (e, t) => r => ({
+				H = (e, t) => r => ({
 					source: "meta",
 					action: "open",
 					noun: "gif_tooltip",
@@ -3387,7 +3387,7 @@
 					...i(r),
 					correlationId: e
 				}),
-				H = () => e => ({
+				F = () => e => ({
 					source: "powerups",
 					action: "click",
 					noun: "unlock_gifs",
@@ -3435,9 +3435,9 @@
 			})), r.d(t, "b", (function() {
 				return B
 			})), r.d(t, "a", (function() {
-				return F
-			})), r.d(t, "n", (function() {
 				return H
+			})), r.d(t, "n", (function() {
+				return F
 			})), r.d(t, "m", (function() {
 				return M
 			})), r.d(t, "t", (function() {
@@ -3594,10 +3594,10 @@
 							Object(y.a)(V(r, n)(t));
 							break;
 						case i.Kb.COINS:
-							Object(y.a)(B(r, n)(t)), Object(y.a)(F()(t));
+							Object(y.a)(B(r, n)(t)), Object(y.a)(H()(t));
 							break;
 						case i.Kb.PREMIUM:
-							Object(y.a)(H(r, n)(t)), Object(y.a)(M()(t));
+							Object(y.a)(F(r, n)(t)), Object(y.a)(M()(t));
 							break;
 						case i.Kb.APPEAL:
 							Object(y.a)(K(r, n)(t));
@@ -3882,13 +3882,13 @@
 					timer: v.timer(e, t),
 					adblock: v.adblock(r)
 				}),
-				F = () => e => ({
+				H = () => e => ({
 					source: "global",
 					action: "view",
 					noun: "screen",
 					...w(e)
 				}),
-				H = (e, t) => r => ({
+				F = (e, t) => r => ({
 					source: "premium_marketing",
 					action: "view",
 					noun: "page",
@@ -4723,33 +4723,33 @@
 				u = e => {
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: i.Ed
+						experimentName: i.Dd
 					});
-					return t === i.Fd.UIChangesOnly || t === i.Fd.RedditRecommendation || t === i.Fd.OpenAI || t === i.Fd.FilteredOpenAI
+					return t === i.Ed.UIChangesOnly || t === i.Ed.RedditRecommendation || t === i.Ed.OpenAI || t === i.Ed.FilteredOpenAI
 				},
 				f = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: i.Ed
-					}) === i.Fd.UIChangesOnly
+						experimentName: i.Dd
+					}) === i.Ed.UIChangesOnly
 				},
 				p = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: i.Ed
-					}) === i.Fd.RedditRecommendation
+						experimentName: i.Dd
+					}) === i.Ed.RedditRecommendation
 				},
 				_ = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: i.Ed
-					}) === i.Fd.OpenAI
+						experimentName: i.Dd
+					}) === i.Ed.OpenAI
 				},
 				m = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: i.Ed
-					}) === i.Fd.FilteredOpenAI
+						experimentName: i.Dd
+					}) === i.Ed.FilteredOpenAI
 				},
 				b = e => e.creations.subredditRec.api.pending,
 				g = e => e.creations.subredditRec.api.error,
@@ -4824,9 +4824,9 @@
 					experimentName: o.Sb,
 					experimentEligibilitySelector: e => a(e, t)
 				}), e => e),
-				d = e => e === o.ze.NoCommunityWidgets,
-				u = e => e === o.ze.NoRulesModerators,
-				f = e => e === o.ze.RelatedPostsDu
+				d = e => e === o.ye.NoCommunityWidgets,
+				u = e => e === o.ye.NoRulesModerators,
+				f = e => e === o.ye.RelatedPostsDu
 		},
 		"./src/reddit/selectors/tooltip.ts": function(e, t, r) {
 			"use strict";
@@ -4840,4 +4840,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.8d30e990b325901e4a57.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.565f684b5fb9fb86a7db.js.map
