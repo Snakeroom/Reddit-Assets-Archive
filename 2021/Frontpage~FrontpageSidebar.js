@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~FrontpageSidebar.64bb7c928d1d816410cb.js
-// Retrieved at 10/12/2021, 11:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~FrontpageSidebar.6d7003d21d558d26a180.js
+// Retrieved at 10/12/2021, 11:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~FrontpageSidebar"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, n) {
@@ -168,7 +168,7 @@
 					to: e,
 					title: t
 				}, t)),
-				B = ({
+				F = ({
 					title: e,
 					isOpened: t,
 					isExpanded: n,
@@ -201,7 +201,7 @@
 				}) : O.fbt._("See more", null, {
 					hk: "439kAh"
 				})))));
-			class F extends d.a.Component {
+			class B extends d.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						openedSection: 0,
@@ -229,7 +229,7 @@
 						key: t,
 						to: e,
 						title: t
-					}), this.renderSection = (e, t) => d.a.createElement(B, {
+					}), this.renderSection = (e, t) => d.a.createElement(F, {
 						key: e.title,
 						title: e.title,
 						isOpened: this.isOpened(t),
@@ -255,7 +255,7 @@
 					}, t.map(this.renderSection))
 				}
 			}
-			var P = F,
+			var P = B,
 				A = n("./src/reddit/components/SidebarAd/ListingPageSidebarAd.tsx"),
 				D = n("./src/reddit/components/SidebarContainer/index.tsx"),
 				R = n("./src/reddit/components/SidebarStickyBottom/index.tsx"),
@@ -622,13 +622,13 @@
 						className: Ie.a.bannerText
 					}, t))
 				},
-				Be = e => `/t/${e}?activeTab=communities`,
-				Fe = e => {
+				Fe = e => `/t/${e}?activeTab=communities`,
+				Be = e => {
 					const t = e.topic.getName();
 					return d.a.createElement("div", {
 						className: Ie.a.itemContainer
 					}, d.a.createElement(ve.a, {
-						to: Be(e.topic.url),
+						to: Fe(e.topic.url),
 						onClick: () => e.sendEvent(Object(je.c)(t))
 					}, t))
 				};
@@ -646,7 +646,7 @@
 						widgetKind: e.widget && e.widget.kind
 					}, d.a.createElement(Le, null), d.a.createElement("div", {
 						className: Ie.a.container
-					}, n.map(e => d.a.createElement(Fe, {
+					}, n.map(e => d.a.createElement(Be, {
 						key: e.url,
 						topic: e,
 						sendEvent: t
@@ -665,10 +665,10 @@
 			}
 			var Me = n("./src/reddit/selectors/experiments/utils.ts");
 			const Je = Object(u.a)(e => Object(We.c)(e, {
-					experimentName: Ae.kd,
+					experimentName: Ae.jd,
 					experimentEligibilitySelector: We.a
 				}), Me.a),
-				Ue = Object(u.a)(Je, e => e === Ae.md.Enabled);
+				Ue = Object(u.a)(Je, e => e === Ae.ld.Enabled);
 			var ze = n("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
 				Qe = n("./src/reddit/selectors/user.ts");
 			var qe = n("./src/reddit/selectors/experiments/uiSimplification.ts"),
@@ -701,7 +701,7 @@
 							return Object(We.c)(e, {
 								experimentEligibilitySelector: Qe.K,
 								experimentName: Ae.Db
-							}) === Ae.Gc
+							}) === Ae.Fc
 						}(e))
 					},
 					isNavbarLikeMwebEnabled: l.a,
@@ -2192,4 +2192,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~FrontpageSidebar.64bb7c928d1d816410cb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~FrontpageSidebar.6d7003d21d558d26a180.js.map

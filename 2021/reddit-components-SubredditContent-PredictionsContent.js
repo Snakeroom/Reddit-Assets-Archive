@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.8d9607d1d66e7178cd79.js
-// Retrieved at 10/12/2021, 11:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.33b9294cea29041b9284.js
+// Retrieved at 10/12/2021, 11:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SubredditContent-PredictionsContent"], {
 		"./node_modules/uuid/index.js": function(e, t, n) {
@@ -177,7 +177,7 @@
 						c = Object(y.j)(r, {
 							subredditId: i
 						}),
-						d = Object(h.o)(r);
+						d = Object(h.n)(r);
 					if (c) return Object(y.f)(r, {
 						subredditId: i
 					});
@@ -559,7 +559,7 @@
 					[y, _] = Object(r.useState)(!1),
 					[k, w] = Object(r.useState)(!1),
 					[C, T] = Object(r.useState)(null),
-					L = Object(c.e)(x.q),
+					L = Object(c.e)(x.p),
 					N = Object(c.e)(t => Object(g.b)(t, {
 						subredditId: e.id
 					})),
@@ -1227,4 +1227,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.8d9607d1d66e7178cd79.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.33b9294cea29041b9284.js.map

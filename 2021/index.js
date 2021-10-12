@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index.31aced4584da496f9904.js
-// Retrieved at 10/12/2021, 11:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index.0e8d4f3e184493bb363f.js
+// Retrieved at 10/12/2021, 11:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index"], {
 		"./src/reddit/components/Econ/Prediction/Confetti/index.m.less": function(e, t, n) {
@@ -135,9 +135,9 @@
 				T = n("./src/reddit/components/Econ/Prediction/VoteAnimation/index.tsx"),
 				N = n("./src/reddit/selectors/subreddit.ts"),
 				k = n("./src/reddit/components/Econ/Prediction/TournamentPostBody/v1/TournamentOverlay/index.m.less"),
-				w = n.n(k);
+				A = n.n(k);
 			const {
-				fbt: A
+				fbt: w
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), B = ({
 				postId: e,
 				subredditId: t,
@@ -148,14 +148,14 @@
 						subredditId: t
 					}));
 				return i.a.createElement(a.a, {
-					className: w.a.container,
+					className: A.a.container,
 					to: `${null==r?void 0:r.url}predictions/`,
 					onClick: () => o(m(e))
 				}, i.a.createElement("div", {
-					className: w.a.playTournament
-				}, n ? A._("View Tournament", null, {
+					className: A.a.playTournament
+				}, n ? w._("View Tournament", null, {
 					hk: "4rKPbx"
-				}) : A._("Keep Playing", null, {
+				}) : w._("Keep Playing", null, {
 					hk: "Xa82J"
 				})))
 			};
@@ -173,7 +173,7 @@
 			function H(e, t, n) {
 				const o = Object(s.d)(),
 					c = Object(s.e)(y.e),
-					d = Object(s.e)(r.r),
+					d = Object(s.e)(r.q),
 					a = Object(p.a)(),
 					l = Object(R.a)(),
 					{
@@ -237,7 +237,7 @@
 			}
 			var Q = n("./src/reddit/components/Econ/Prediction/TournamentPostBody/v1/TournamentPrediction/index.m.less"),
 				J = n.n(Q);
-			const K = ({
+			const q = ({
 				prediction: e,
 				tournamentId: t,
 				subredditId: n,
@@ -266,12 +266,12 @@
 					{
 						endsAt: N,
 						title: k,
-						status: w,
-						resolvedOptionId: A,
+						status: A,
+						resolvedOptionId: w,
 						options: L
 					} = e,
 					V = N < Date.now(),
-					D = w === g.b.Cancelled || w === g.b.CancelInProgress,
+					D = A === g.b.Cancelled || A === g.b.CancelInProgress,
 					M = null != I ? I : L;
 				return i.a.createElement(i.a.Fragment, null, i.a.createElement("div", {
 					className: Object(d.a)(J.a.poll, {
@@ -292,7 +292,7 @@
 					needsResolution: !1,
 					option: e,
 					onClick: () => O(e),
-					resolvedOptionId: A,
+					resolvedOptionId: w,
 					tournamentId: t,
 					userSelection: h,
 					userIsLoggedOut: !a,
@@ -323,7 +323,7 @@
 					isLastPrediction: c
 				}))
 			};
-			var q = n("./src/reddit/helpers/predictions/index.ts");
+			var K = n("./src/reddit/helpers/predictions/index.ts");
 			const W = ({
 				post: e
 			}) => {
@@ -334,14 +334,14 @@
 				} = e.predictionTournament, s = function(e) {
 					return i.a.useMemo(() => {
 						if (!e || !e.length) return;
-						const t = e.filter(e => !e.isSpoiler && !e.isNSFW).sort(q.c);
+						const t = e.filter(e => !e.isSpoiler && !e.isNSFW).sort(K.c);
 						return {
 							prediction: t[0],
 							isLastPrediction: t.length <= 1
 						}
 					}, [])
 				}(n);
-				return (null == s ? void 0 : s.prediction) && o !== c.a.Closed ? i.a.createElement(h, null, i.a.createElement(K, {
+				return (null == s ? void 0 : s.prediction) && o !== c.a.Closed ? i.a.createElement(h, null, i.a.createElement(q, {
 					subredditId: e.belongsTo.id,
 					tournamentId: t,
 					post: e,
@@ -584,7 +584,7 @@
 					const {
 						tournamentId: t,
 						status: n
-					} = e.predictionTournament, o = Object(s.e)(e => Object(C.h)(e, t)), r = i.a.useMemo(() => o.filter(e => !e.isSpoiler && !e.isNSFW && !e.userSelection && !e.resolvedOptionId && e.predictionStatus === g.b.Open && e.endsAt > Date.now()).sort(q.a).map(e => e.id), [o.length]).map(e => o.find(t => t.id === e)).filter(e => Boolean(e));
+					} = e.predictionTournament, o = Object(s.e)(e => Object(C.h)(e, t)), r = i.a.useMemo(() => o.filter(e => !e.isSpoiler && !e.isNSFW && !e.userSelection && !e.resolvedOptionId && e.predictionStatus === g.b.Open && e.endsAt > Date.now()).sort(K.a).map(e => e.id), [o.length]).map(e => o.find(t => t.id === e)).filter(e => Boolean(e));
 					return n === c.a.Closed ? i.a.createElement(E, {
 						postId: e.id
 					}) : i.a.createElement($, null, i.a.createElement(Ee, {
@@ -593,7 +593,7 @@
 					}))
 				},
 				xe = e => {
-					return Object(s.e)(r.w) ? i.a.createElement(fe, e) : i.a.createElement(W, e)
+					return Object(s.e)(r.v) ? i.a.createElement(fe, e) : i.a.createElement(W, e)
 				};
 			t.default = xe
 		},
@@ -712,4 +712,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.31aced4584da496f9904.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.0e8d4f3e184493bb363f.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/UserAchievementFlair.5e6a8b5f113451969068.js
-// Retrieved at 10/12/2021, 11:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/UserAchievementFlair.4b4c7eb2e523cebc79e0.js
+// Retrieved at 10/12/2021, 11:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["UserAchievementFlair"], {
 		"./src/reddit/components/Econ/PowerupsFlair/HoverPopup.m.less": function(e, t, n) {
@@ -39,8 +39,8 @@
 				d = n("./src/reddit/controls/Button/index.tsx"),
 				i = n("./src/reddit/helpers/trackers/features/powerupsFlair.ts"),
 				m = n("./src/reddit/hooks/useScrollGradient.ts"),
-				u = n("./src/reddit/hooks/useTracking.ts"),
-				l = n("./src/reddit/icons/svgs/PowerupTier2/index.tsx"),
+				l = n("./src/reddit/hooks/useTracking.ts"),
+				u = n("./src/reddit/icons/svgs/PowerupTier2/index.tsx"),
 				p = n("./src/reddit/selectors/gold/powerups/flairs.ts"),
 				f = n("./src/reddit/selectors/subreddit.ts"),
 				h = n("./src/reddit/components/Econ/PowerupsFlair/HoverPopup.m.less"),
@@ -60,7 +60,7 @@
 						subredditId: t
 					})),
 					I = Object(o.d)(),
-					k = Object(u.a)(),
+					k = Object(l.a)(),
 					{
 						container: j,
 						isScrollGradientVisible: O,
@@ -73,7 +73,7 @@
 					className: Object(r.a)(b.a.container, e)
 				}, c.a.createElement("div", {
 					className: b.a.header
-				}, c.a.createElement(l.a, {
+				}, c.a.createElement(u.a, {
 					className: b.a.powerupsLogo
 				}), y._("{r/community} {=achievements}", [y._param("r/community", v.displayText), y._param("=achievements", c.a.createElement("span", {
 					className: b.a.headerText
@@ -145,16 +145,16 @@
 						subredditId: t,
 						userId: n
 					})),
-					u = Object(o.e)(e => Object(p.f)(e, {
+					l = Object(o.e)(e => Object(p.f)(e, {
 						subredditId: t,
 						userId: n
 					})),
-					[l, f] = Object(s.useState)(!1);
+					[u, f] = Object(s.useState)(!1);
 				if (Object(o.e)(e => Object(p.e)(e, {
 						subredditId: t,
 						userId: n
-					}) && Object(I.m)(e))) return null;
-				const h = u ? [m, ...u.achievementTypes].filter(Boolean) : null;
+					}) && Object(I.l)(e))) return null;
+				const h = l ? [m, ...l.achievementTypes].filter(Boolean) : null;
 				if (!(!!i || !!m) || !h) return null;
 				const b = (null == m ? void 0 : m.type) === (null == i ? void 0 : i.type) ? null : m,
 					y = (b ? 1 : 0) + (i ? 1 : 0),
@@ -174,7 +174,7 @@
 					achievement: i
 				}), !!g && c.a.createElement("span", {
 					className: j.a.hiddenAchievementsCount
-				}, "+", g), a && l && c.a.createElement(v, {
+				}, "+", g), a && u && c.a.createElement(v, {
 					className: j.a.hoverPopup,
 					subredditId: t,
 					userId: n
@@ -192,7 +192,7 @@
 			})), n.d(t, "e", (function() {
 				return m
 			})), n.d(t, "a", (function() {
-				return u
+				return l
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var r = n("./src/reddit/constants/comments.ts"),
@@ -223,7 +223,7 @@
 						})) && !(c.depth <= n)););
 					return o.id
 				},
-				u = (e, t, n) => {
+				l = (e, t, n) => {
 					const {
 						commentLists: r,
 						comments: s
@@ -238,7 +238,7 @@
 								experimentName: c.E,
 								expEventOverride: t
 							});
-							return !!(Object(c.Se)(n) ? void 0 : n)
+							return !!(Object(c.Re)(n) ? void 0 : n)
 						})(n)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -384,7 +384,7 @@
 				}
 			};
 			const m = {};
-			var u = (e = m, t) => {
+			var l = (e = m, t) => {
 				switch (t.type) {
 					case a.c:
 					case a.g: {
@@ -400,8 +400,8 @@
 						return e
 				}
 			};
-			const l = {};
-			var p = (e = l, t) => {
+			const u = {};
+			var p = (e = u, t) => {
 					switch (t.type) {
 						case a.d:
 						case a.h: {
@@ -431,7 +431,7 @@
 				},
 				f = Object(r.c)({
 					error: i,
-					fullyLoaded: u,
+					fullyLoaded: l,
 					pending: p
 				}),
 				h = n("./src/reddit/actions/comment/constants.ts");
@@ -538,23 +538,23 @@
 							key: c,
 							moreCommentsItem: o,
 							moreComments: a
-						} = t.payload, d = r[o.postId], i = e[c], m = {}, u = i[o.id];
-						if (u && u.prev) {
+						} = t.payload, d = r[o.postId], i = e[c], m = {}, l = i[o.id];
+						if (l && l.prev) {
 							const {
 								id: e
-							} = u.prev;
+							} = l.prev;
 							m[e] = {
 								...i[e],
-								next: d.head || u.next
+								next: d.head || l.next
 							}
 						}
-						if (u && u.next) {
+						if (l && l.next) {
 							const {
 								id: e
-							} = u.next;
+							} = l.next;
 							m[e] = {
 								...i[e],
-								prev: d.tail || u.prev
+								prev: d.tail || l.prev
 							}
 						}
 						if (d.head && d.tail) {
@@ -570,7 +570,7 @@
 									moreCommentsDict: a,
 									continueThreadDict: s
 								});
-							u && (e.prev = u.prev, t.next = u.next)
+							l && (e.prev = l.prev, t.next = l.next)
 						}
 						return {
 							...e,
@@ -776,9 +776,9 @@
 			})), n.d(t, "C", (function() {
 				return A
 			})), n.d(t, "D", (function() {
-				return S
-			})), n.d(t, "E", (function() {
 				return M
+			})), n.d(t, "E", (function() {
+				return S
 			})), n.d(t, "r", (function() {
 				return H
 			})), n.d(t, "e", (function() {
@@ -792,9 +792,9 @@
 			})), n.d(t, "i", (function() {
 				return z
 			})), n.d(t, "F", (function() {
-				return U
-			})), n.d(t, "B", (function() {
 				return R
+			})), n.d(t, "B", (function() {
+				return U
 			})), n.d(t, "H", (function() {
 				return q
 			})), n.d(t, "p", (function() {
@@ -815,12 +815,12 @@
 				d = n("./src/reddit/models/Post/index.ts"),
 				i = n("./src/reddit/selectors/subreddit.ts"),
 				m = n("./src/reddit/selectors/commentSelector.ts"),
-				u = n("./src/lib/initializeClient/installReducer.ts"),
-				l = n("./src/reddit/reducers/features/comments/index.ts"),
+				l = n("./src/lib/initializeClient/installReducer.ts"),
+				u = n("./src/reddit/reducers/features/comments/index.ts"),
 				p = n("./src/reddit/reducers/pages/comments/index.ts");
-			Object(u.a)({
+			Object(l.a)({
 				features: {
-					comments: l.a
+					comments: u.a
 				},
 				pages: {
 					comments: p.a
@@ -953,10 +953,10 @@
 				A = (e, {
 					moreCommentsId: t
 				}) => e.moreComments.models[t],
-				S = (e, {
+				M = (e, {
 					moreCommentsId: t
 				}) => !!e.moreComments.api.pending[t],
-				M = (e, {
+				S = (e, {
 					commentsPageKey: t
 				}) => {
 					const n = e.pages.comments.keyToPostId[t];
@@ -998,13 +998,13 @@
 				z = (e, {
 					draftKey: t
 				}) => e.features.comments.drafts[t],
-				U = (e, {
+				R = (e, {
 					commentId: t
 				}) => {
 					const n = t ? e.features.comments.submit.error[t] : void 0;
 					return n && n.fields ? n.fields.map(e => e.msg) : void 0
 				},
-				R = (e, {
+				U = (e, {
 					commentId: t
 				}) => !!t && e.features.comments.submit.pending[t],
 				q = (e, {
@@ -1031,4 +1031,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UserAchievementFlair.5e6a8b5f113451969068.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UserAchievementFlair.4b4c7eb2e523cebc79e0.js.map
