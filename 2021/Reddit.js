@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.df6ed3e3adf4ec51aa94.js
-// Retrieved at 10/12/2021, 3:50:11 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.0ca5bd4aa144af7effef.js
+// Retrieved at 10/12/2021, 4:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit", "FrontpageSidebar"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -6667,13 +6667,13 @@
 					k = Object(p.e)(Lt.b),
 					w = Object(p.e)(Lt.d),
 					M = Object(p.e)(Ct.k),
-					N = Object(p.e)(lr.j),
-					I = Object(p.e)(lr.i),
+					N = Object(p.e)(lr.n),
+					I = Object(p.e)(lr.m),
 					T = Object(p.e)(or.a),
 					R = Object(p.e)(ar),
 					L = Object(p.e)(cr.a),
 					F = Object(p.e)(Ct.K),
-					D = Object(p.e)(lr.k),
+					D = Object(p.e)(lr.o),
 					U = Object(p.e)(Ct.X),
 					B = Object(p.e)(Lt.q),
 					G = Object(p.e)(e => Object(Qt.Z)(e, {
@@ -6686,7 +6686,7 @@
 						pageLayer: t
 					})),
 					W = Object(p.e)(dr.a),
-					V = Object(p.e)(lr.s),
+					V = Object(p.e)(lr.x),
 					K = Object(p.e)(Ct.eb),
 					Q = Object(mr.a)(H),
 					z = Object(mr.a)(n),
@@ -21080,4 +21080,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePo~5f1ac562", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250", "Governance~ModListing~Reddit~Subreddit", "Chat~Governance~Reddit", "Reddit~StandalonePostPage~reddit-components-MediumPost", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.df6ed3e3adf4ec51aa94.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.0ca5bd4aa144af7effef.js.map

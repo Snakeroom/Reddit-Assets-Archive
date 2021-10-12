@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.be10e16a8f674ae356a4.js
-// Retrieved at 10/12/2021, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.2d02ebc29c1abe18df87.js
+// Retrieved at 10/12/2021, 4:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "AchievementsActions", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -5829,11 +5829,11 @@
 			e.exports = JSON.parse('{"id":"92790c69eba6"}')
 		},
 		"./src/redditGQL/operations/SubscribedSubreddits.json": function(e) {
-			e.exports = JSON.parse('{"id":"d0b176d08b19"}')
+			e.exports = JSON.parse('{"id":"19853683e73a"}')
 		},
 		"./src/redditGQL/operations/UpdateAchievementFlairPreference.json": function(e) {
 			e.exports = JSON.parse('{"id":"1bc1df66f049"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.be10e16a8f674ae356a4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.2d02ebc29c1abe18df87.js.map
