@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditCreation.78f5fe3d5b0f53f62d58.js
-// Retrieved at 10/12/2021, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditCreation.d2905caa52b76e29f593.js
+// Retrieved at 10/12/2021, 3:50:11 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditCreation"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -193,9 +193,13 @@
 				mDisabled: "LvI7FSBTGgYo2skaf18Zv",
 				Subtext: "_1NdK7EwgYqUxJObBr3ym4o",
 				subtext: "_1NdK7EwgYqUxJObBr3ym4o",
+				RangeSlider: "_2J8tywkkd4Gotm3jZ2Gcv0",
+				rangeSlider: "_2J8tywkkd4Gotm3jZ2Gcv0",
 				isNightModeOn: "KUWYDFs7fIjkQNSOL_BR6",
 				Wrapper__LineBreak: "wVinKyEoajEmwhqwINYGd",
 				wrapperLineBreak: "wVinKyEoajEmwhqwINYGd",
+				ActionHintText: "_2sMk-Gi9c8T3BKYlxSopql",
+				actionHintText: "_2sMk-Gi9c8T3BKYlxSopql",
 				Link: "oFObIzV6ZJDQuG09BXh8u",
 				link: "oFObIzV6ZJDQuG09BXh8u",
 				SubtextLink: "_3MGA27y-8plrsOsPbyYwgs",
@@ -226,8 +230,6 @@
 				descriptionsRow: "H3CGfLrRo4H9tQdWd5vG9",
 				Circle: "_20H2GFMG6B0Lai4Q3DhIE2",
 				circle: "_20H2GFMG6B0Lai4Q3DhIE2",
-				RangeSlider: "_2J8tywkkd4Gotm3jZ2Gcv0",
-				rangeSlider: "_2J8tywkkd4Gotm3jZ2Gcv0",
 				RangeSliderInput: "_2ieOPsoffMpHmDwvrKLRjg",
 				rangeSliderInput: "_2ieOPsoffMpHmDwvrKLRjg",
 				Ticks: "_3BLGt0e8kYgLHkUbAeXTWG",
@@ -246,35 +248,37 @@
 		},
 		"./src/reddit/components/Settings/shared/Widgets.tsx": function(e, t, n) {
 			"use strict";
-			n.d(t, "m", (function() {
+			n.d(t, "n", (function() {
 				return Y
-			})), n.d(t, "j", (function() {
-				return X
-			})), n.d(t, "n", (function() {
-				return Z
 			})), n.d(t, "k", (function() {
-				return te
-			})), n.d(t, "l", (function() {
-				return re
+				return X
 			})), n.d(t, "o", (function() {
+				return Z
+			})), n.d(t, "f", (function() {
+				return $
+			})), n.d(t, "l", (function() {
+				return te
+			})), n.d(t, "m", (function() {
+				return re
+			})), n.d(t, "p", (function() {
 				return ie
-			})), n.d(t, "i", (function() {
+			})), n.d(t, "j", (function() {
 				return pe
 			})), n.d(t, "b", (function() {
 				return he
-			})), n.d(t, "f", (function() {
+			})), n.d(t, "g", (function() {
 				return xe
 			})), n.d(t, "a", (function() {
 				return be
 			})), n.d(t, "d", (function() {
 				return ve
-			})), n.d(t, "h", (function() {
+			})), n.d(t, "i", (function() {
 				return fe
 			})), n.d(t, "c", (function() {
 				return Ee
 			})), n.d(t, "e", (function() {
 				return ge
-			})), n.d(t, "g", (function() {
+			})), n.d(t, "h", (function() {
 				return _e
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
@@ -330,13 +334,13 @@
 				O = n("./src/reddit/controls/Typography/index.tsx"),
 				S = n("./src/reddit/icons/svgs/ArrowRight/index.tsx"),
 				I = n("./src/reddit/icons/svgs/Circle/index.tsx"),
-				j = n("./src/reddit/icons/svgs/OutboundLink/index.tsx"),
-				T = n("./node_modules/lodash/range.js"),
-				M = n.n(T),
+				T = n("./src/reddit/icons/svgs/OutboundLink/index.tsx"),
+				j = n("./node_modules/lodash/range.js"),
+				M = n.n(j),
 				D = n("./src/reddit/controls/Button/index.tsx"),
 				R = n("./src/reddit/layout/row/Inline/index.tsx"),
-				L = n("./src/reddit/models/Flair/index.ts"),
-				B = n("./src/reddit/selectors/tooltip.ts"),
+				B = n("./src/reddit/models/Flair/index.ts"),
+				L = n("./src/reddit/selectors/tooltip.ts"),
 				F = n("./src/reddit/selectors/user.ts"),
 				P = n("./src/reddit/components/Settings/shared/Widgets.m.less"),
 				A = n.n(P);
@@ -350,8 +354,8 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const G = Object(d.a)(h.a),
-				H = C.a.wrapped(I.a, "Circle", A.a),
+			const H = Object(d.a)(h.a),
+				G = C.a.wrapped(I.a, "Circle", A.a),
 				V = C.a.h3("Label", A.a),
 				Y = C.a.wrapped(O.c, "Subtext", A.a),
 				J = C.a.wrapped(u.a, "HoverTooltip", A.a),
@@ -381,7 +385,7 @@
 				})),
 				q = C.a.a("Link", A.a),
 				Z = C.a.wrapped(q, "SubtextLink", A.a),
-				U = C.a.wrapped(j.a, "LinkIcon", A.a),
+				U = C.a.wrapped(T.a, "LinkIcon", A.a),
 				$ = C.a.button("LinkButton", A.a),
 				ee = C.a.wrapped(S.a, "ArrowRight", A.a),
 				te = e => s.a.createElement(X, {
@@ -392,15 +396,15 @@
 					last: e.last
 				}, s.a.createElement(Q, {
 					className: e.textContainerClassName
-				}, s.a.createElement(V, null, e.label, e.isRequired && s.a.createElement(H, null)), s.a.createElement(Y, null, e.subtext)), s.a.createElement(z, null, e.children)),
+				}, s.a.createElement(V, null, e.label, e.isRequired && s.a.createElement(G, null)), s.a.createElement(Y, null, e.subtext)), s.a.createElement(z, null, e.children)),
 				ne = C.a.div("StyledFlair", A.a),
 				ae = C.a.wrapped(ne, "SpoilerFlair", A.a),
 				se = C.a.wrapped(ne, "NSFWFlair", A.a),
 				re = e => {
 					switch (e.flair) {
-						case L.f.Nsfw:
+						case B.f.Nsfw:
 							return s.a.createElement(se, null, "NSFW");
-						case L.f.Spoiler:
+						case B.f.Spoiler:
 							return s.a.createElement(ae, null, "SPOILER");
 						default:
 							return null
@@ -440,12 +444,13 @@
 					disabled: e.disabled,
 					inModal: e.inModal,
 					isNightModeOn: e.isNightModeOn,
-					direction: e.direction
+					direction: e.direction,
+					className: e.className
 				}, s.a.createElement(Q, {
 					style: {
 						flex: 5
 					}
-				}, !e.inModal && s.a.createElement(R.a, null, s.a.createElement(V, null, e.label)), s.a.createElement(Y, null, " ", s.a.createElement(me, {
+				}, !e.inModal && s.a.createElement(R.a, null, s.a.createElement(V, null, e.label)), !e.hideSubtext && s.a.createElement(Y, null, " ", s.a.createElement(me, {
 					style: {
 						color: e.ticks[e.value].color
 					}
@@ -465,7 +470,8 @@
 					step: e.step,
 					value: e.value,
 					onChange: e.onChange,
-					onInput: e.onChange
+					onInput: e.onChange,
+					disabled: e.disabled
 				}), s.a.createElement(ce, null, Object.keys(e.ticks).map((t, n) => s.a.createElement(de, {
 					key: t,
 					style: {
@@ -503,7 +509,9 @@
 					className: Object(l.a)({
 						[A.a.NoColor]: e.color && "none" === e.color
 					})
-				}, e.label), s.a.createElement(Y, null, e.subtext)), s.a.createElement(z, null, s.a.createElement($, {
+				}, e.label), s.a.createElement(Y, null, e.subtext)), s.a.createElement(z, null, !!e.hintText && s.a.createElement("div", {
+					className: A.a.ActionHintText
+				}, e.hintText), s.a.createElement($, {
 					onClick: e.onClick,
 					className: Object(l.a)({
 						[A.a.NoColor]: e.color && "none" === e.color
@@ -514,7 +522,7 @@
 					})
 				})))),
 				Ce = Object(o.c)({
-					isOpen: (e, t) => Object(B.b)(t.id)(e)
+					isOpen: (e, t) => Object(L.b)(t.id)(e)
 				}),
 				ve = Object(r.b)(Ce, (e, t) => ({
 					openDropdown: () => {
@@ -534,7 +542,7 @@
 					id: `SettingDropdown--${e.id}`
 				}, e.displayTitle || e.selected), s.a.createElement(v.b, {
 					className: A.a.DropdownTriangle
-				}), s.a.createElement(G, {
+				}), s.a.createElement(H, {
 					container: void 0,
 					isOpen: e.isOpen,
 					renderContentsHidden: !0,
@@ -896,19 +904,19 @@
 				O = n("./src/reddit/controls/TextButton/index.tsx"),
 				S = n("./src/reddit/helpers/trackers/emailInvite.ts"),
 				I = n("./src/reddit/helpers/trackers/screenview.ts"),
-				j = n("./src/reddit/helpers/trackers/subredditCreation.ts"),
-				T = n("./src/reddit/icons/svgs/Admin/index.tsx"),
+				T = n("./src/reddit/helpers/trackers/subredditCreation.ts"),
+				j = n("./src/reddit/icons/svgs/Admin/index.tsx"),
 				M = n("./src/reddit/icons/svgs/Close/index.tsx"),
 				D = n("./src/reddit/icons/svgs/Eye/index.tsx"),
 				R = n("./src/reddit/icons/svgs/Info/index.tsx"),
-				L = n("./src/reddit/icons/svgs/Lock/index.tsx"),
-				B = n("./src/reddit/icons/svgs/User/index.tsx"),
+				B = n("./src/reddit/icons/svgs/Lock/index.tsx"),
+				L = n("./src/reddit/icons/svgs/User/index.tsx"),
 				F = n("./src/reddit/models/Subreddit/index.ts"),
 				P = n("./src/reddit/models/SubredditRestrictions/index.ts"),
 				A = n("./src/reddit/selectors/experiments/emailInvite.ts"),
 				W = n("./src/reddit/selectors/subreddit.ts"),
-				G = n("./src/reddit/selectors/tags.ts"),
-				H = n("./src/reddit/selectors/user.ts"),
+				H = n("./src/reddit/selectors/tags.ts"),
+				G = n("./src/reddit/selectors/user.ts"),
 				V = n("./src/lib/formatApiError/index.ts");
 			const Y = (e, t) => {
 				if (!e) return {};
@@ -948,24 +956,24 @@
 				q = Q.a.wrapped(R.a, "Info", K.a),
 				Z = Q.a.wrapped(k.a, "RadioOption", K.a),
 				U = Q.a.wrapped(h.c, "Tooltip", K.a),
-				$ = Q.a.wrapped(B.a, "Public", K.a),
+				$ = Q.a.wrapped(L.a, "Public", K.a),
 				ee = Q.a.wrapped(D.a, "Restricted", K.a),
-				te = Q.a.wrapped(L.a, "Private", K.a),
-				ne = Q.a.wrapped(T.a, "Employee", K.a),
+				te = Q.a.wrapped(B.a, "Private", K.a),
+				ne = Q.a.wrapped(j.a, "Employee", K.a),
 				ae = Q.a.wrapped(M.a, "CloseButton", K.a),
 				se = Q.a.wrapped(y.b, "ErrorText", K.a),
 				re = Object(o.c)({
 					error: W.g,
 					isCreatePending: W.k,
 					isEmailInviteExperimentEnabled: A.a,
-					isEmployee: H.H,
+					isEmployee: G.H,
 					crosspostId: W.j,
-					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(H.ib)(e),
-					userIsSuspended: H.R,
-					allTags: G.e,
-					existingTags: G.f,
-					newTags: G.g,
-					selectedPrimaryTagId: G.h
+					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(G.ib)(e),
+					userIsSuspended: G.R,
+					allTags: H.e,
+					existingTags: H.f,
+					newTags: H.g,
+					selectedPrimaryTagId: H.h
 				}),
 				ie = Object(i.b)(re, e => ({
 					createCommunity: t => e(Object(m.h)(t)),
@@ -1083,9 +1091,9 @@
 							})
 						}, 2e3))
 					}, this.onValidateSubredditName = () => this.props.validateSubredditName(this.state.name), this.onCloseModal = () => {
-						this.props.sendEvent(Object(j.b)()), this.props.onCloseModal()
+						this.props.sendEvent(Object(T.b)()), this.props.onCloseModal()
 					}, this.onCancelCreation = () => {
-						this.props.onCloseModal(), this.props.sendEvent(Object(j.b)())
+						this.props.onCloseModal(), this.props.sendEvent(Object(T.b)())
 					}, this.onUpdateOver18 = () => this.update(!this.state.over18, "over18"), this.state = {
 						name: "",
 						type: F.f.Public,
@@ -1167,7 +1175,7 @@
 								hk: "3RsycS"
 							})
 						})))
-					}), u.name && r.a.createElement(se, null, u.name), r.a.createElement(x.k, {
+					}), u.name && r.a.createElement(se, null, u.name), r.a.createElement(x.l, {
 						label: a.fbt._("Community type", null, {
 							hk: "152EhZ"
 						}),
@@ -2029,4 +2037,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.78f5fe3d5b0f53f62d58.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.d2905caa52b76e29f593.js.map

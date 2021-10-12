@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.be8f78c3180dc0ef00fa.js
-// Retrieved at 10/12/2021, 11:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.ab40865f1cc811cad3b6.js
+// Retrieved at 10/12/2021, 3:50:11 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SubredditContent-PredictionsContent"], {
 		"./node_modules/uuid/index.js": function(e, t, n) {
@@ -221,7 +221,7 @@
 							isStartImmediately: !0,
 							subredditId: e,
 							predictionDrafts: i,
-							currency: c ? m.d.Coins : m.d.Tokens
+							currency: c ? m.g.Coins : m.g.Tokens
 						}),
 						{
 							createPredictionTournament: a
@@ -532,7 +532,7 @@
 					}(e, "allowPredictionContributors");
 				return void 0 === n ? null : i.a.createElement(b, null, i.a.createElement(m, null, o.fbt._("Predictions Submission Permissions", null, {
 					hk: "3rjmMV"
-				})), i.a.createElement(_.o, {
+				})), i.a.createElement(_.p, {
 					on: n,
 					onClick: () => {
 						t(Object(O.c)(!n)), r()
@@ -1227,4 +1227,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.be8f78c3180dc0ef00fa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.ab40865f1cc811cad3b6.js.map

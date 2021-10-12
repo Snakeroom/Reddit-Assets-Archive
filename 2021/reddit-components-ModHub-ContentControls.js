@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.74e7f98422ed39fb030a.js
-// Retrieved at 10/5/2021, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.5c40db5ed20acb6a0338.js
+// Retrieved at 10/12/2021, 3:50:11 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-ContentControls"], {
 		"./src/reddit/components/ModHub/ContentControls/FormPlaceholder/index.m.less": function(e, t, n) {
@@ -358,7 +358,7 @@
 				be = n("./src/reddit/featureFlags/component.tsx"),
 				pe = n("./src/reddit/components/ModHub/ContentControls/index.m.less"),
 				fe = n.n(pe);
-			const xe = he.a.wrapped(X.o, "toggleSetting", fe.a),
+			const xe = he.a.wrapped(X.p, "toggleSetting", fe.a),
 				ye = Object(be.a)("newPostRequirements", d.a.Fragment),
 				ke = () => d.a.createElement("a", {
 					className: fe.a.externalLink,
@@ -1807,4 +1807,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.74e7f98422ed39fb030a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.5c40db5ed20acb6a0338.js.map

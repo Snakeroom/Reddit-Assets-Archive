@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CommunitySettings-Notifications.c37a7eac01a6bef1ce49.js
-// Retrieved at 10/5/2021, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CommunitySettings-Notifications.cf406c29090504812968.js
+// Retrieved at 10/12/2021, 3:50:11 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CommunitySettings-Notifications"], {
 		"./src/reddit/components/CommunitySettings/Notifications/index.tsx": function(e, n, t) {
@@ -30,7 +30,7 @@
 					hk: "1HImbB"
 				})), i.a.createElement(a.a, null, r._("Mod Notifications", null, {
 					hk: "14WQtl"
-				})), i.a.createElement(d.o, {
+				})), i.a.createElement(d.p, {
 					on: m,
 					onClick: () => t(!m, "isModeratedSrMilestonePnEnabled"),
 					label: r._("Milestones", null, {
@@ -39,7 +39,7 @@
 					subtext: r._("Be notified when your community has moments like gaining 100 members or turning a year old", null, {
 						hk: "2EAadM"
 					})
-				}), i.a.createElement(d.o, {
+				}), i.a.createElement(d.p, {
 					on: o,
 					onClick: () => t(!o, "isModeratedSrContentFoundationPnEnabled"),
 					label: r._("Moderation", null, {
@@ -48,7 +48,7 @@
 					subtext: r._("Be notified when posts and comments get reported or controversial vote ratios", null, {
 						hk: "2i4ijA"
 					})
-				}), i.a.createElement(d.o, {
+				}), i.a.createElement(d.p, {
 					on: c,
 					onClick: () => t(!c, "isModeratedSrEngagementPnEnabled"),
 					label: r._("Engagement", null, {
@@ -63,4 +63,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CommunitySettings-Notifications.c37a7eac01a6bef1ce49.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CommunitySettings-Notifications.cf406c29090504812968.js.map

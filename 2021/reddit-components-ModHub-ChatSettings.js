@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ChatSettings.89257cb24b34b5ea017a.js
-// Retrieved at 10/5/2021, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ChatSettings.a7589c0f714f168cef25.js
+// Retrieved at 10/12/2021, 3:50:11 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-ChatSettings"], {
 		"./src/reddit/components/ModHub/ChatSettings/AccessDisabledBanner/index.m.less": function(e, t, s) {
@@ -109,7 +109,7 @@
 				U = s("./src/reddit/controls/OutboundLink/styled.tsx"),
 				P = s("./src/reddit/components/ModHub/ChatSettings/index.m.less"),
 				A = s.n(P);
-			const F = H.a.wrapped(I.o, "toggleSetting", A.a);
+			const F = H.a.wrapped(I.p, "toggleSetting", A.a);
 			var D = ({
 					controlState: e,
 					controlState: {
@@ -374,4 +374,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ChatSettings.89257cb24b34b5ea017a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ChatSettings.a7589c0f714f168cef25.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-CancelPredictionModal.f30e9a9cc3f79f0bbaad.js
-// Retrieved at 10/12/2021, 11:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-CancelPredictionModal.9e259291ea36d40b65ab.js
+// Retrieved at 10/12/2021, 3:50:11 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction-CancelPredictionModal"], {
 		"./node_modules/uuid/index.js": function(t, e, n) {
@@ -104,8 +104,8 @@
 					predictions: c.a
 				}
 			});
-			const P = Object(l.a)(I.e),
-				g = Object(l.a)(I.i),
+			const g = Object(l.a)(I.e),
+				P = Object(l.a)(I.i),
 				y = Object(l.a)(I.l),
 				k = Object(l.a)(I.h),
 				E = Object(l.a)(I.b),
@@ -131,7 +131,7 @@
 						subredditId: t,
 						...l
 					};
-					return r(P(p)), p
+					return r(g(p)), p
 				}, _ = ({
 					coinPackageId: t,
 					optionId: e,
@@ -146,7 +146,7 @@
 						postId: n,
 						price: o
 					});
-					return r(g({
+					return r(P({
 						pollId: n,
 						prediction: c,
 						price: o
@@ -221,7 +221,7 @@
 							isStartImmediately: !0,
 							subredditId: t,
 							predictionDrafts: i,
-							currency: d ? f.d.Coins : f.d.Tokens
+							currency: d ? f.g.Coins : f.g.Tokens
 						}),
 						{
 							createPredictionTournament: a
@@ -480,9 +480,9 @@
 			})), n.d(e, "f", (function() {
 				return I
 			})), n.d(e, "k", (function() {
-				return P
-			})), n.d(e, "b", (function() {
 				return g
+			})), n.d(e, "b", (function() {
+				return P
 			})), n.d(e, "n", (function() {
 				return y
 			})), n.d(e, "g", (function() {
@@ -574,14 +574,14 @@
 						input: e
 					}
 				}),
-				P = async (t, e) => {
+				g = async (t, e) => {
 					const n = await Object(o.a)(t, {
 						...f,
 						variables: e
 					});
 					if (!Object(r.c)(n) || n.error) throw new Error("Failed to fetch tournaments");
 					return n.body.data.subredditInfoByName.predictionTournaments || []
-				}, g = (t, e) => Object(o.a)(t, {
+				}, P = (t, e) => Object(o.a)(t, {
 					...i,
 					variables: {
 						input: e
@@ -739,4 +739,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-CancelPredictionModal.f30e9a9cc3f79f0bbaad.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-CancelPredictionModal.9e259291ea36d40b65ab.js.map

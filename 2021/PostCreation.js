@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.f347e467c6dea63787a0.js
-// Retrieved at 10/12/2021, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.b3c6a757509089628312.js
+// Retrieved at 10/12/2021, 3:50:11 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, n) {
@@ -1435,7 +1435,7 @@
 							isStartImmediately: !0,
 							subredditId: e,
 							predictionDrafts: s,
-							currency: i ? b.d.Coins : b.d.Tokens
+							currency: i ? b.g.Coins : b.g.Tokens
 						}),
 						{
 							createPredictionTournament: c
@@ -23440,4 +23440,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.f347e467c6dea63787a0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.b3c6a757509089628312.js.map

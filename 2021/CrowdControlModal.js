@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CrowdControlModal.86fe1572df40ac21aca2.js
-// Retrieved at 10/6/2021, 1:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CrowdControlModal.b6f7945971b679d7beb2.js
+// Retrieved at 10/12/2021, 3:50:11 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CrowdControlModal"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -218,7 +218,7 @@
 					postId: t.id,
 					showSubreddit: !0,
 					crowdControlPreview: !0
-				})), s.a.createElement(E.i, {
+				})), s.a.createElement(E.j, {
 					direction: "column",
 					inModal: !0,
 					ticks: w,
@@ -245,24 +245,24 @@
 			}
 			var y = n("./src/higherOrderComponents/asModal/index.tsx"),
 				O = n("./src/reddit/endpoints/crowdControl/index.ts"),
-				j = n("./src/lib/makeGqlRequest/index.ts"),
-				S = n("./src/redditGQL/operations/UpdateCrowdControlLevel.json");
-			const L = (e, t, n) => Object(j.a)(e, {
-				...S,
+				S = n("./src/lib/makeGqlRequest/index.ts"),
+				j = n("./src/redditGQL/operations/UpdateCrowdControlLevel.json");
+			const T = (e, t, n) => Object(S.a)(e, {
+				...j,
 				variables: {
 					postId: t,
 					level: n
 				}
 			});
-			var T = n("./src/reddit/selectors/posts.ts"),
+			var L = n("./src/reddit/selectors/posts.ts"),
 				I = n("./src/reddit/actions/modal.ts"),
 				M = n("./src/reddit/actions/toaster.ts"),
 				F = n("./src/reddit/components/CrowdControlModal/index.m.less"),
 				R = n.n(F);
 			const P = Object(l.c)({
-					post: T.g,
-					subredditCrowdControl: T.T,
-					subredditUrl: T.V
+					post: L.g,
+					subredditCrowdControl: L.T,
+					subredditUrl: L.V
 				}),
 				D = Object(o.b)(P, e => ({
 					onClose: () => e(Object(I.f)()),
@@ -307,7 +307,7 @@
 						this.setState({
 							pending: !0
 						});
-						const s = await L(e(), t.id, r);
+						const s = await T(e(), t.id, r);
 						if (s) {
 							if (s.ok) return a(), void n();
 							this.setState({
@@ -566,9 +566,13 @@
 				mDisabled: "LvI7FSBTGgYo2skaf18Zv",
 				Subtext: "_1NdK7EwgYqUxJObBr3ym4o",
 				subtext: "_1NdK7EwgYqUxJObBr3ym4o",
+				RangeSlider: "_2J8tywkkd4Gotm3jZ2Gcv0",
+				rangeSlider: "_2J8tywkkd4Gotm3jZ2Gcv0",
 				isNightModeOn: "KUWYDFs7fIjkQNSOL_BR6",
 				Wrapper__LineBreak: "wVinKyEoajEmwhqwINYGd",
 				wrapperLineBreak: "wVinKyEoajEmwhqwINYGd",
+				ActionHintText: "_2sMk-Gi9c8T3BKYlxSopql",
+				actionHintText: "_2sMk-Gi9c8T3BKYlxSopql",
 				Link: "oFObIzV6ZJDQuG09BXh8u",
 				link: "oFObIzV6ZJDQuG09BXh8u",
 				SubtextLink: "_3MGA27y-8plrsOsPbyYwgs",
@@ -599,8 +603,6 @@
 				descriptionsRow: "H3CGfLrRo4H9tQdWd5vG9",
 				Circle: "_20H2GFMG6B0Lai4Q3DhIE2",
 				circle: "_20H2GFMG6B0Lai4Q3DhIE2",
-				RangeSlider: "_2J8tywkkd4Gotm3jZ2Gcv0",
-				rangeSlider: "_2J8tywkkd4Gotm3jZ2Gcv0",
 				RangeSliderInput: "_2ieOPsoffMpHmDwvrKLRjg",
 				rangeSliderInput: "_2ieOPsoffMpHmDwvrKLRjg",
 				Ticks: "_3BLGt0e8kYgLHkUbAeXTWG",
@@ -619,35 +621,37 @@
 		},
 		"./src/reddit/components/Settings/shared/Widgets.tsx": function(e, t, n) {
 			"use strict";
-			n.d(t, "m", (function() {
+			n.d(t, "n", (function() {
 				return z
-			})), n.d(t, "j", (function() {
-				return K
-			})), n.d(t, "n", (function() {
-				return X
 			})), n.d(t, "k", (function() {
-				return te
-			})), n.d(t, "l", (function() {
-				return se
+				return J
 			})), n.d(t, "o", (function() {
+				return X
+			})), n.d(t, "f", (function() {
+				return $
+			})), n.d(t, "l", (function() {
+				return te
+			})), n.d(t, "m", (function() {
+				return se
+			})), n.d(t, "p", (function() {
 				return oe
-			})), n.d(t, "i", (function() {
+			})), n.d(t, "j", (function() {
 				return pe
 			})), n.d(t, "b", (function() {
 				return xe
-			})), n.d(t, "f", (function() {
+			})), n.d(t, "g", (function() {
 				return be
 			})), n.d(t, "a", (function() {
 				return he
 			})), n.d(t, "d", (function() {
 				return fe
-			})), n.d(t, "h", (function() {
+			})), n.d(t, "i", (function() {
 				return ve
 			})), n.d(t, "c", (function() {
 				return ge
 			})), n.d(t, "e", (function() {
 				return Ee
-			})), n.d(t, "g", (function() {
+			})), n.d(t, "h", (function() {
 				return we
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
@@ -701,11 +705,11 @@
 			}
 			var y = n("./src/reddit/controls/ToggleSwitch/index.tsx"),
 				O = n("./src/reddit/controls/Typography/index.tsx"),
-				j = n("./src/reddit/icons/svgs/ArrowRight/index.tsx"),
-				S = n("./src/reddit/icons/svgs/Circle/index.tsx"),
-				L = n("./src/reddit/icons/svgs/OutboundLink/index.tsx"),
-				T = n("./node_modules/lodash/range.js"),
-				I = n.n(T),
+				S = n("./src/reddit/icons/svgs/ArrowRight/index.tsx"),
+				j = n("./src/reddit/icons/svgs/Circle/index.tsx"),
+				T = n("./src/reddit/icons/svgs/OutboundLink/index.tsx"),
+				L = n("./node_modules/lodash/range.js"),
+				I = n.n(L),
 				M = n("./src/reddit/controls/Button/index.tsx"),
 				F = n("./src/reddit/layout/row/Inline/index.tsx"),
 				R = n("./src/reddit/models/Flair/index.ts"),
@@ -724,14 +728,14 @@
 				}).apply(this, arguments)
 			}
 			const G = Object(d.a)(x.a),
-				W = C.a.wrapped(S.a, "Circle", A.a),
+				W = C.a.wrapped(j.a, "Circle", A.a),
 				V = C.a.h3("Label", A.a),
 				z = C.a.wrapped(O.c, "Subtext", A.a),
 				Q = C.a.wrapped(u.a, "HoverTooltip", A.a),
 				U = C.a.div("ControlContainer", A.a),
 				q = C.a.div("TextContainer", A.a),
-				J = C.a.div("ActionContainer", A.a),
-				K = ({
+				K = C.a.div("ActionContainer", A.a),
+				J = ({
 					className: e,
 					direction: t,
 					isCreateCommunity: n,
@@ -754,10 +758,10 @@
 				})),
 				Y = C.a.a("Link", A.a),
 				X = C.a.wrapped(Y, "SubtextLink", A.a),
-				Z = C.a.wrapped(L.a, "LinkIcon", A.a),
+				Z = C.a.wrapped(T.a, "LinkIcon", A.a),
 				$ = C.a.button("LinkButton", A.a),
-				ee = C.a.wrapped(j.a, "ArrowRight", A.a),
-				te = e => r.a.createElement(K, {
+				ee = C.a.wrapped(S.a, "ArrowRight", A.a),
+				te = e => r.a.createElement(J, {
 					direction: e.direction,
 					disabled: e.disabled,
 					indent: e.indent,
@@ -765,7 +769,7 @@
 					last: e.last
 				}, r.a.createElement(q, {
 					className: e.textContainerClassName
-				}, r.a.createElement(V, null, e.label, e.isRequired && r.a.createElement(W, null)), r.a.createElement(z, null, e.subtext)), r.a.createElement(J, null, e.children)),
+				}, r.a.createElement(V, null, e.label, e.isRequired && r.a.createElement(W, null)), r.a.createElement(z, null, e.subtext)), r.a.createElement(K, null, e.children)),
 				ne = C.a.div("StyledFlair", A.a),
 				ae = C.a.wrapped(ne, "SpoilerFlair", A.a),
 				re = C.a.wrapped(ne, "NSFWFlair", A.a),
@@ -781,14 +785,14 @@
 				},
 				oe = e => {
 					const t = Object(o.a)();
-					return r.a.createElement(K, {
+					return r.a.createElement(J, {
 						className: e.className,
 						disabled: e.disabled,
 						indent: e.indent,
 						last: e.last
 					}, r.a.createElement(q, null, r.a.createElement(F.a, null, r.a.createElement("label", {
 						htmlFor: t
-					}, r.a.createElement(V, null, e.label))), r.a.createElement(z, null, e.subtext)), r.a.createElement(J, null, r.a.createElement(U, null, e.tooltip && r.a.createElement(Q, {
+					}, r.a.createElement(V, null, e.label))), r.a.createElement(z, null, e.subtext)), r.a.createElement(K, null, r.a.createElement(U, null, e.tooltip && r.a.createElement(Q, {
 						tooltipContentClass: e.tooltipContentClassName,
 						text: e.tooltip
 					}), r.a.createElement(y.a, {
@@ -807,22 +811,23 @@
 				ue = Object(l.c)({
 					isNightModeOn: D.X
 				}),
-				pe = Object(s.b)(ue)(e => r.a.createElement(K, {
+				pe = Object(s.b)(ue)(e => r.a.createElement(J, {
 					last: e.last,
 					indent: e.indent,
 					disabled: e.disabled,
 					inModal: e.inModal,
 					isNightModeOn: e.isNightModeOn,
-					direction: e.direction
+					direction: e.direction,
+					className: e.className
 				}, r.a.createElement(q, {
 					style: {
 						flex: 5
 					}
-				}, !e.inModal && r.a.createElement(F.a, null, r.a.createElement(V, null, e.label)), r.a.createElement(z, null, " ", r.a.createElement(me, {
+				}, !e.inModal && r.a.createElement(F.a, null, r.a.createElement(V, null, e.label)), !e.hideSubtext && r.a.createElement(z, null, " ", r.a.createElement(me, {
 					style: {
 						color: e.ticks[e.value].color
 					}
-				}, " ", e.ticks[e.value].text + ": ", " "), " ", e.subtext)), r.a.createElement(J, {
+				}, " ", e.ticks[e.value].text + ": ", " "), " ", e.subtext)), r.a.createElement(K, {
 					style: {
 						flex: 3,
 						margin: "20px 20px 0 0"
@@ -838,21 +843,22 @@
 					step: e.step,
 					value: e.value,
 					onChange: e.onChange,
-					onInput: e.onChange
+					onInput: e.onChange,
+					disabled: e.disabled
 				}), r.a.createElement(ce, null, Object.keys(e.ticks).map((t, n) => r.a.createElement(de, {
 					key: t,
 					style: {
 						color: t === e.value.toString() ? e.ticks[t].color : "#878A8C"
 					}
 				}, e.ticks[t].text))))))),
-				xe = e => r.a.createElement(K, {
+				xe = e => r.a.createElement(J, {
 					last: e.last,
 					indent: e.indent,
 					disabled: e.disabled
-				}, r.a.createElement(q, null, r.a.createElement(F.a, null, r.a.createElement(V, null, e.label)), r.a.createElement(z, null, e.subtext)), r.a.createElement(J, null, r.a.createElement(U, null, r.a.createElement(M.n, {
+				}, r.a.createElement(q, null, r.a.createElement(F.a, null, r.a.createElement(V, null, e.label)), r.a.createElement(z, null, e.subtext)), r.a.createElement(K, null, r.a.createElement(U, null, r.a.createElement(M.n, {
 					onClick: e.onClick
 				}, e.actionText)))),
-				be = e => r.a.createElement(K, {
+				be = e => r.a.createElement(J, {
 					className: e.className,
 					last: e.last,
 					indent: e.indent,
@@ -861,12 +867,12 @@
 					href: e.link,
 					onClick: e.onClick,
 					target: e.openInNewTab ? "_blank" : void 0
-				}, e.label, r.a.createElement(Z, null)), r.a.createElement(z, null, e.subtext)), r.a.createElement(J, null, r.a.createElement(Y, {
+				}, e.label, r.a.createElement(Z, null)), r.a.createElement(z, null, e.subtext)), r.a.createElement(K, null, r.a.createElement(Y, {
 					href: e.link,
 					onClick: e.onClick,
 					target: e.openInNewTab ? "_blank" : void 0
 				}, r.a.createElement(ee, null)))),
-				he = e => r.a.createElement(K, {
+				he = e => r.a.createElement(J, {
 					className: e.className,
 					disabled: e.disabled,
 					indent: e.indent,
@@ -876,7 +882,9 @@
 					className: Object(i.a)({
 						[A.a.NoColor]: e.color && "none" === e.color
 					})
-				}, e.label), r.a.createElement(z, null, e.subtext)), r.a.createElement(J, null, r.a.createElement($, {
+				}, e.label), r.a.createElement(z, null, e.subtext)), r.a.createElement(K, null, !!e.hintText && r.a.createElement("div", {
+					className: A.a.ActionHintText
+				}, e.hintText), r.a.createElement($, {
 					onClick: e.onClick,
 					className: Object(i.a)({
 						[A.a.NoColor]: e.color && "none" === e.color
@@ -895,11 +903,11 @@
 							tooltipId: t.id
 						}))
 					}
-				}))(e => r.a.createElement(K, {
+				}))(e => r.a.createElement(J, {
 					last: e.last,
 					indent: e.indent,
 					disabled: e.disabled
-				}, r.a.createElement(q, null, r.a.createElement(V, null, e.label), r.a.createElement(z, null, e.subtext)), r.a.createElement(J, null, (e => r.a.createElement("div", {
+				}, r.a.createElement(q, null, r.a.createElement(V, null, e.label), r.a.createElement(z, null, e.subtext)), r.a.createElement(K, null, (e => r.a.createElement("div", {
 					className: A.a.DropdownWrapper,
 					onClick: e.openDropdown
 				}, r.a.createElement("span", {
@@ -934,7 +942,7 @@
 						{
 							items: i
 						} = o;
-					return r.a.createElement(K, {
+					return r.a.createElement(J, {
 						disabled: e
 					}, r.a.createElement(q, null, r.a.createElement("label", {
 						htmlFor: o.id
@@ -942,7 +950,7 @@
 						className: o.labelClassname
 					}, o.label)), r.a.createElement(z, null, o.subtext)), r.a.createElement("div", {
 						className: A.a.Wrapper__LineBreak
-					}), r.a.createElement(K, {
+					}), r.a.createElement(J, {
 						last: t,
 						indent: !0,
 						disabled: e
@@ -960,13 +968,13 @@
 						value: e
 					}, t)))))
 				},
-				ge = e => r.a.createElement(K, {
+				ge = e => r.a.createElement(J, {
 					className: e.className,
 					direction: e.direction,
 					disabled: e.disabled,
 					indent: e.indent,
 					last: e.last
-				}, r.a.createElement(q, null, r.a.createElement(V, null, e.label), r.a.createElement(z, null, e.subtext)), r.a.createElement(J, null, e.children)),
+				}, r.a.createElement(q, null, r.a.createElement(V, null, e.label), r.a.createElement(z, null, e.subtext)), r.a.createElement(K, null, e.children)),
 				Ee = e => r.a.createElement(te, {
 					isCreateCommunity: e.isCreateCommunity,
 					isRequired: e.isRequired,
@@ -1849,4 +1857,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CrowdControlModal.86fe1572df40ac21aca2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CrowdControlModal.b6f7945971b679d7beb2.js.map
