@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor.3654c5c49f2a6815e465.js
-// Retrieved at 10/5/2021, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor.ac3045f295ad46cdf905.js
+// Retrieved at 10/12/2021, 12:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor"], {
 		"./src/lib/forEachGroup/index.ts": function(t, e, n) {
@@ -6153,30 +6153,22 @@
 					return t
 				}).apply(this, arguments)
 			}
-			const dc = {
-				input: {
-					channel: {
-						teamOwner: "CONTENT_AND_COMMUNITIES",
-						category: "USER_IS_TYPING_ON_POST"
-					}
-				}
-			};
 			Object(ks.b)({
 				draftToRTFJson: yi,
 				getMediaCount: D.g,
 				getPendingThumbnailUploads: D.i,
 				isAllMediaUploaded: D.m
 			});
-			const uc = "handled",
-				pc = "not-handled",
-				hc = /^\s*$/,
-				mc = 20,
-				gc = E.a.wrapped(dr.a, "FocusableContent", ac.a),
-				fc = E.a.div("Container", ac.a),
-				bc = E.a.wrapped(ec.a, "CurrentUserIcon", ac.a),
-				yc = t => `${T.b}-${t}`,
-				Ec = Object(h.b)(() => {
-					const t = (() => Object(m.a)(t => t.uploads, (t, e) => e.rteState.editorKey, (t, e) => a()(t, t => t.key.startsWith(yc(e)))))();
+			const dc = "handled",
+				uc = "not-handled",
+				pc = /^\s*$/,
+				hc = 20,
+				mc = E.a.wrapped(dr.a, "FocusableContent", ac.a),
+				gc = E.a.div("Container", ac.a),
+				fc = E.a.wrapped(ec.a, "CurrentUserIcon", ac.a),
+				bc = t => `${T.b}-${t}`,
+				yc = Object(h.b)(() => {
+					const t = (() => Object(m.a)(t => t.uploads, (t, e) => e.rteState.editorKey, (t, e) => a()(t, t => t.key.startsWith(bc(e)))))();
 					return Object(m.c)({
 						editorUploads: t,
 						emotesSpecialMembershipEnabled: v.d.spEmotes,
@@ -6192,15 +6184,16 @@
 							return Object(Ro.c)(t, {
 								subredditId: null === (n = e.destSubreddit) || void 0 === n ? void 0 : n.id
 							})
-						}
+						},
+						userIsTypingSubscriptionEnabled: v.d.userIsTypingOnPostSubscriptionEnabled
 					})
 				}, t => ({
 					onFetchEditorProducts: e => t(Object(x.e)(e)),
 					onTrackMediaDrop: e => t((t, n) => j.p(n(), e)),
 					retryUpload: e => t(T.c(e)),
-					startUploads: (e, n, o) => t(T.e(e, n, yc(o)))
+					startUploads: (e, n, o) => t(T.e(e, n, bc(o)))
 				}));
-			class Sc extends u.Component {
+			class Ec extends u.Component {
 				constructor(t) {
 					super(t), this.blockRenderMap = o.DefaultDraftBlockRenderMap.merge(mr, yr, Kn, bs, Cs, Fs, an), this.editorHeight = null, this.editorRef = null, this.editorRootStyleMutationObserver = null, this.linksControllerApi = null, this.suggestionDropdownApi = null, this.tableToolbarControllerApi = null, this.emotesTooltipApi = null, this.gifTooltipApi = null, this.updateSuggestionDropdownPosition = null, this.isJustAutocompleteSelected = !1, this.isJustLinkified = !1, this.isMouseDown = !1, this.isJustConvertedToList = !1, this.needSyncScroll = null, this.transforms = {
 						[B.BREAK_HEADER_ENTITY]: yo.b,
@@ -6214,7 +6207,7 @@
 						[K.c]: t => Object(yo.c)(w.k.BOLD, t),
 						[K.e]: t => Object(yo.c)(w.k.ITALIC, t),
 						[K.g]: t => Object(yo.c)(w.k.UNDERLINE, t)
-					}, this.setContainerRef = t => {
+					}, this.realtimeGQLVariables = void 0, this.setContainerRef = t => {
 						const {
 							domRef: e
 						} = this.props;
@@ -6225,13 +6218,13 @@
 						focusableContentRef: t
 					}), this.setUserStoppedTyping = i()(() => this.setState({
 						isUserTyping: !1
-					}), tc.e), this.rteStateChanged = (t, e) => {
+					}), tc.d), this.rteStateChanged = (t, e) => {
 						const n = {
 							...this.props.rteState,
 							isBound: !0,
 							editorState: t
 						};
-						this.props.onChange(n, e), this.props.isTypingIndicatorsPostShadowTestEnabled && e && (this.state.isUserTyping || this.setState({
+						this.props.onChange(n, e), this.props.userIsTypingSubscriptionEnabled && e && (this.state.isUserTyping || this.setState({
 							isUserTyping: !0
 						}), this.setUserStoppedTyping())
 					}, this.hideTooltips = () => {
@@ -6290,8 +6283,8 @@
 						const {
 							editorState: e
 						} = this.state;
-						if (this.isMouseDown) return uc;
-						if (Lt(e, t)) return uc;
+						if (this.isMouseDown) return dc;
+						if (Lt(e, t)) return dc;
 						let n = function(t, e) {
 							const n = t.getSelection(),
 								r = n.getFocusOffset();
@@ -6309,7 +6302,7 @@
 								return o.EditorState.push(t, r, "insert-characters")
 							}
 						}(e, t) || e;
-						return (n = yn(n, t) || n) !== e ? (this.onChange(n), uc) : pc
+						return (n = yn(n, t) || n) !== e ? (this.onChange(n), dc) : uc
 					}, this.keyBindingFN = t => {
 						const {
 							editorState: e
@@ -6356,7 +6349,7 @@
 								} = r;
 								e = Object(Mo.f)(e, t, n)
 							}
-							return this.onChange(e), this.isJustLinkified = !!r, uc
+							return this.onChange(e), this.isJustLinkified = !!r, dc
 						};
 						if (n === B.SUBMIT) this.props.onSubmit();
 						else {
@@ -6367,7 +6360,7 @@
 							if (n === B.LINKIFY_ON_SPACE) return r = Object(Mo.d)(e), s(Object(yo.a)(e));
 							if (n === B.LINKIFY_ON_ENTER && (r = Object(Mo.d)(e), !(n = this.enterKeyBinding(e, !1)))) return s(Object(yo.d)(e))
 						}
-						if (n === B.OPEN_LINK_TOOLTIP) return this.onToolbarLinkButtonClick(), uc;
+						if (n === B.OPEN_LINK_TOOLTIP) return this.onToolbarLinkButtonClick(), dc;
 						if (n === B.MAKE_PLAIN_BLOCK) {
 							return s(Object(yo.i)(w.n, e))
 						}
@@ -6378,7 +6371,7 @@
 							if (t) return s(t)
 						}
 						const c = o.RichUtils.handleKeyCommand(e, n);
-						return c ? s(c) : pc
+						return c ? s(c) : uc
 					}, this.handleOnTab = t => {
 						if (this.emotesTooltipApi && this.emotesTooltipApi.handleTabInEditor() || this.suggestionDropdownApi && this.suggestionDropdownApi.selectCurrent()) return void t.preventDefault();
 						const {
@@ -6398,7 +6391,7 @@
 						e && this.onChange(e), this.needSyncScroll = Ii.Down
 					}, this.handleReturn = t => {
 						const e = _t(this.state.editorState);
-						return e ? (this.onChange(e), t.preventDefault(), uc) : this.suggestionDropdownApi && this.suggestionDropdownApi.selectCurrent() ? (t.preventDefault(), uc) : pc
+						return e ? (this.onChange(e), t.preventDefault(), dc) : this.suggestionDropdownApi && this.suggestionDropdownApi.selectCurrent() ? (t.preventDefault(), dc) : uc
 					}, this.suppressAutocompleteForFocusedLink = () => {
 						const t = Object(Mo.b)(this.state.editorState);
 						t && this.state.suppressAutocompleteForLink !== t.entityKey && this.setState({
@@ -6441,9 +6434,9 @@
 						this.isMouseDown = !0
 					}, this.handleOnMouseUp = t => {
 						this.isMouseDown = !1
-					}, this.handleDroppedFiles = (t, e) => uc, this.handleDrop = (t, e, n) => uc, this.handleBlur = () => {
+					}, this.handleDroppedFiles = (t, e) => dc, this.handleDrop = (t, e, n) => dc, this.handleBlur = () => {
 						this.props.onBlur && this.props.onBlur()
-					}, this.handlePastedText = (t, e) => uc, this.onInternalSuggestionSelected = t => {
+					}, this.handlePastedText = (t, e) => dc, this.onInternalSuggestionSelected = t => {
 						this.onChange(Object(Mo.g)(this.state.editorState, t)), this.isJustAutocompleteSelected = !0
 					}, this.onToolbarEmoteButtonClick = t => {
 						this.gifTooltipApi && this.gifTooltipApi.closeTooltip(), this.emotesTooltipApi && this.emotesTooltipApi.toggleTooltip(t)
@@ -6484,7 +6477,7 @@
 						const {
 							files: e,
 							filesSource: n
-						} = t, o = e.slice(0, mc);
+						} = t, o = e.slice(0, hc);
 						await this.props.startUploads(o, n, this.props.rteState.editorKey), this.insertValidatedMedia()
 					}, this.onRetryUpload = t => {
 						this.props.retryUpload(t)
@@ -6524,23 +6517,36 @@
 						return e === w.a ? this.getAtomicBlocksRenderConfig() : e in As ? As[e] : void 0
 					}, this.renderToolbar = t => p.a.createElement(Fe.b, t), this.entityElementRegistry = So(), this.tableOnEnterHandler = new bn;
 					const {
-						activeEmotes: e,
-						editorType: n,
-						noBorder: r,
-						initialHeight: s,
-						initialMinHeight: c,
-						rteState: a
+						postId: e,
+						userIsTypingSubscriptionEnabled: n
 					} = t;
-					let l;
-					a.isBound ? l = a.editorState : Object(zn.G)(a.initialRTJSON) ? l = this.createInitialState(a.editorKey) : (l = o.EditorState.createWithContent($i(a.initialRTJSON, n, a.mediaMetadataMap, e), this.editorDecorators()), l = this.moveSelectionToEnd(l)), this.state = {
-						noBorder: r,
+					n && (this.realtimeGQLVariables = {
+						input: {
+							channel: {
+								teamOwner: "CONTENT_AND_COMMUNITIES",
+								category: "USER_IS_TYPING_ON_POST",
+								postID: e
+							}
+						}
+					});
+					const {
+						activeEmotes: r,
+						editorType: s,
+						noBorder: c,
+						initialHeight: a,
+						initialMinHeight: l,
+						rteState: d
+					} = t;
+					let u;
+					d.isBound ? u = d.editorState : Object(zn.G)(d.initialRTJSON) ? u = this.createInitialState(d.editorKey) : (u = o.EditorState.createWithContent($i(d.initialRTJSON, s, d.mediaMetadataMap, r), this.editorDecorators()), u = this.moveSelectionToEnd(u)), this.state = {
+						noBorder: c,
 						containerRef: null,
 						confirmModalOpen: !1,
-						editorState: l,
+						editorState: u,
 						focusableContentRef: null,
 						inited: !1,
-						initialHeight: s,
-						initialMinHeight: c,
+						initialHeight: a,
+						initialMinHeight: l,
 						isUserTyping: !1,
 						mediaToInsert: null,
 						suppressAutocompleteForLink: null
@@ -6601,7 +6607,7 @@
 					this.needSyncScroll && (Ki(this.needSyncScroll), this.needSyncScroll = null)
 				}
 				componentWillUnmount() {
-					if (this.props.rteRef && this.props.rteRef(null), this.insertValidatedMedia = () => {}, this.props.isTypingIndicatorsPostShadowTestEnabled && this.setUserStoppedTyping.cancel(), this.editorRef) {
+					if (this.props.rteRef && this.props.rteRef(null), this.insertValidatedMedia = () => {}, this.props.userIsTypingSubscriptionEnabled && this.setUserStoppedTyping.cancel(), this.editorRef) {
 						this.editorRef.refs.editor.removeEventListener("scroll", this.hideTooltips)
 					}
 					this.editorRootStyleMutationObserver && (this.editorRootStyleMutationObserver.disconnect(), this.editorRootStyleMutationObserver = null)
@@ -6631,10 +6637,10 @@
 						if (e && Object(Mo.d)(t)) return B.LINKIFY_ON_ENTER;
 						if (Object(w.r)(l) && d) return B.BREAK_HEADER_ENTITY;
 						if (Object(w.s)(l)) {
-							if (hc.test(a.getText())) return a.getDepth() > 0 ? B.REDUCE_LIST_INDENT : B.REMOVE_EXTRA_LIST_ITEM
+							if (pc.test(a.getText())) return a.getDepth() > 0 ? B.REDUCE_LIST_INDENT : B.REMOVE_EXTRA_LIST_ITEM
 						} else if (l === w.e) {
 							const t = n.getBlockBefore(s);
-							if (t && t.getType() === w.e && hc.test(t.getText()) && hc.test(a.getText())) return B.RESET_CURRENT_AND_PREVIOUS_BLOCKS
+							if (t && t.getType() === w.e && pc.test(t.getText()) && pc.test(a.getText())) return B.RESET_CURRENT_AND_PREVIOUS_BLOCKS
 						} else if (l === w.f) {
 							const t = n.getBlockBefore(s),
 								e = n.getBlockAfter(s);
@@ -6685,51 +6691,50 @@
 						isOverlay: m,
 						isCommentBoxDesignEnabled: g,
 						isTypingIndicatorsExperimentEnabled: f,
-						isTypingIndicatorsPostShadowTestEnabled: y,
-						onSubmit: E,
-						placeholderText: S,
-						postId: C,
-						shouldShowCommentGifsTooltip: k,
-						showSubmitButton: x = !1,
-						submitButtonClassName: T,
-						toolbarPosition: v = "top",
-						renderToolbar: j = this.renderToolbar
+						onSubmit: y,
+						placeholderText: E,
+						shouldShowCommentGifsTooltip: S,
+						showSubmitButton: C = !1,
+						submitButtonClassName: k,
+						toolbarPosition: x = "top",
+						renderToolbar: T = this.renderToolbar,
+						userIsTypingSubscriptionEnabled: v
 					} = this.props, {
-						editorKey: R
+						editorKey: j
 					} = u, {
-						containerRef: w,
-						editorState: B,
-						mediaToInsert: _,
-						confirmModalOpen: K,
-						isUserTyping: M
-					} = this.state, L = this.props.readOnly || !!_, D = I(B), N = this.isEmpty(), F = j({
+						containerRef: R,
+						editorState: w,
+						mediaToInsert: B,
+						confirmModalOpen: _,
+						isUserTyping: K
+					} = this.state, M = this.props.readOnly || !!B, L = I(w), D = this.isEmpty(), N = T({
 						allowMediaUploads: n,
 						destSubreddit: i,
-						editorKey: R,
-						editorState: B,
+						editorKey: j,
+						editorState: w,
 						isOverlay: !!m,
 						onChange: this.toolbarSetState,
 						onFilesSelect: this.onFilesSelect,
 						trackOnClick: this.props.trackToolbarClick,
-						readOnly: L,
+						readOnly: M,
 						onEmoteButtonClick: this.onToolbarEmoteButtonClick,
 						onGifButtonClick: this.onToolbarGifButtonClick,
 						onLinkButtonClick: this.onToolbarLinkButtonClick,
 						onMarkdownButtonClick: this.onToolbarMarkdownSwitchClick,
 						userCanUseGifs: !!e
-					}), P = !l && (!g || h);
-					return dc.input.channel.postID = C, p.a.createElement(fc, {
+					}), F = !l && (!g || h);
+					return p.a.createElement(gc, {
 						className: t,
 						innerRef: this.setContainerRef
-					}, y && M && p.a.createElement(O.a, {
-						variables: dc,
+					}, v && K && p.a.createElement(O.a, {
+						variables: this.realtimeGQLVariables,
 						onData: d.a,
 						queryKey: "userIsTypingOnPost"
 					}), g && p.a.createElement("div", {
 						className: ac.a.userIcon
-					}, p.a.createElement(bc, null)), p.a.createElement(gc, {
+					}, p.a.createElement(fc, null)), p.a.createElement(mc, {
 						className: Object(b.a)(a, {
-							[ac.a.showSubmitButton]: x,
+							[ac.a.showSubmitButton]: C,
 							[ac.a.mExpanded]: h,
 							[ac.a.mRedesign]: g,
 							[ac.a.typingIndicatorsFocusableContent]: f
@@ -6737,12 +6742,12 @@
 						noBorder: this.props.noBorder,
 						isFocused: this.isFocused(),
 						ref: this.setFocusableContentRef
-					}, P && "top" === v && F, w && p.a.createElement(bo, {
-						editorState: B,
-						readOnly: L,
+					}, F && "top" === x && N, R && p.a.createElement(bo, {
+						editorState: w,
+						readOnly: M,
 						onChange: this.onChange,
 						onSetApi: this.setTableToolbarControllerApi,
-						rteDomRef: w
+						rteDomRef: R
 					}), p.a.createElement("div", {
 						className: Object(b.a)(ac.a.editorWrapper, {
 							[ac.a.hasInitialHeight]: !!this.props.initialHeight,
@@ -6762,23 +6767,23 @@
 						onMouseUp: this.handleOnMouseUp
 					}, p.a.createElement("style", {
 						dangerouslySetInnerHTML: {
-							__html: `\n                .${nc.b}[${nc.d}="${D}-0-0"]::after {\n                  bottom: 0;\n                  color: var(--newCommunityTheme-actionIcon);\n                  content: '${S}';\n                  cursor: text;\n                  left: 0;\n                  position: absolute;\n                  top: 0;\n                }\n              `
+							__html: `\n                .${nc.b}[${nc.d}="${L}-0-0"]::after {\n                  bottom: 0;\n                  color: var(--newCommunityTheme-actionIcon);\n                  content: '${E}';\n                  cursor: text;\n                  left: 0;\n                  position: absolute;\n                  top: 0;\n                }\n              `
 						}
 					}), p.a.createElement(Rr, {
-						allowMediaUploads: n && !L,
+						allowMediaUploads: n && !M,
 						onBlockMove: this.onBlockMove,
 						onFilesDrop: this.onFilesDrop,
-						editorState: B,
+						editorState: w,
 						onChange: this.onChange
 					}, p.a.createElement(Co.Provider, {
 						value: this.entityElementRegistry
 					}, p.a.createElement(o.Editor, {
-						readOnly: L,
+						readOnly: M,
 						ref: this.setEditorRef,
 						blockRendererFn: this.blockRendererFn,
 						blockRenderMap: this.blockRenderMap,
-						editorKey: R,
-						editorState: B,
+						editorKey: j,
+						editorState: w,
 						keyBindingFn: this.keyBindingFN,
 						handleBeforeInput: this.handleBeforeInput,
 						handleKeyCommand: this.handleKeyCommand,
@@ -6795,36 +6800,36 @@
 						spellCheck: !0,
 						handleReturn: this.handleReturn,
 						customStyleMap: Ts()
-					})))), P && "bottom" === v && F, p.a.createElement(hs, {
-						editorState: B,
+					})))), F && "bottom" === x && N, p.a.createElement(hs, {
+						editorState: w,
 						entityElementRegistry: this.entityElementRegistry,
 						onSetApi: this.setLinksControllerApi,
 						onChange: this.onChange,
 						isTooltipAbove: f
 					}), c === zt.a.Comment && i && p.a.createElement(Ao, {
-						editorState: B,
+						editorState: w,
 						onChange: this.onChange,
 						onSetApi: this.setEmotesTooltipApi,
 						subreddit: i
-					}), (k || e) && i && p.a.createElement(rr, {
-						editorState: B,
+					}), (S || e) && i && p.a.createElement(rr, {
+						editorState: w,
 						onChange: this.onChange,
 						onSetApi: this.setGifTooltipApi,
 						subreddit: i,
 						userCanUseGifs: !!e
-					}), this.renderInternalLinkSuggestionDropdown(), x && p.a.createElement(oe.d, {
+					}), this.renderInternalLinkSuggestionDropdown(), C && p.a.createElement(oe.d, {
 						"aria-label": r.fbt._("submit", null, {
 							hk: "12XoZ8"
 						}),
-						className: Object(b.a)(T, ac.a.insetSubmitButton, {
-							[ac.a.emptyContent]: N,
+						className: Object(b.a)(k, ac.a.insetSubmitButton, {
+							[ac.a.emptyContent]: D,
 							[ac.a.focusedContent]: this.isFocused()
 						}),
-						disabled: N,
-						onClick: E,
+						disabled: D,
+						onClick: y,
 						tabIndex: -1,
 						type: "submit"
-					}, p.a.createElement(sc.a, null))), K && p.a.createElement(A.a, {
+					}, p.a.createElement(sc.a, null))), _ && p.a.createElement(A.a, {
 						toggleModal: this.toggleConfirmModal,
 						onConfirm: this.handleSwitchToMarkdownMode,
 						actionText: r.fbt._("Continue", null, {
@@ -6843,7 +6848,7 @@
 					}))
 				}
 			}
-			e.a = Ec(Object(Ps.b)(t => p.a.createElement(Sc, lc({
+			e.a = yc(Object(Ps.b)(t => p.a.createElement(Ec, lc({
 				key: t.rteState.editorKey
 			}, t))))
 		},
@@ -7537,14 +7542,11 @@
 				return s
 			})), n.d(e, "d", (function() {
 				return i
-			})), n.d(e, "e", (function() {
-				return c
 			}));
-			const o = "postTypingIndicator",
-				r = 37,
-				s = 2,
-				i = 6,
-				c = 1e4
+			const o = 37,
+				r = 2,
+				s = 6,
+				i = 1e4
 		},
 		"./src/reddit/controls/SubredditDropdown/index.m.less": function(t, e, n) {
 			t.exports = {
@@ -8007,4 +8009,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor.3654c5c49f2a6815e465.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor.ac3045f295ad46cdf905.js.map

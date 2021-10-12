@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.bb64b77c1e9daaddc39d.js
-// Retrieved at 10/12/2021, 11:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.79cfb4108fd7a946d460.js
+// Retrieved at 10/12/2021, 12:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-MediumPost"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -1277,9 +1277,9 @@
 				W = s("./src/reddit/selectors/posts.ts"),
 				q = s("./src/reddit/selectors/showPromotedCTA.ts"),
 				z = s("./src/reddit/components/MediumPost/MediumThumbnail.tsx"),
-				Q = s("./src/reddit/helpers/styles/mixins/index.m.less"),
-				X = s.n(Q),
-				Z = s("./src/reddit/selectors/i18n/index.ts"),
+				X = s("./src/reddit/helpers/styles/mixins/index.m.less"),
+				Z = s.n(X),
+				Q = s("./src/reddit/selectors/i18n/index.ts"),
 				J = s("./src/reddit/components/MediumPost/index.m.less"),
 				K = s.n(J);
 
@@ -1299,7 +1299,7 @@
 					isCurrentUserProfilePost: W.l,
 					showPromotedCTA: q.b,
 					moderatorPermissions: H.l,
-					shouldShowNsfwListingBelow: Z.b,
+					shouldShowNsfwListingBelow: Q.b,
 					showAwardsPlaque: U.a,
 					showEditFlair: G.a,
 					showMedia: L.s,
@@ -1322,8 +1322,8 @@
 						isOverlay: G,
 						isTopicPage: W,
 						isCommentCountAnimationEnabled: q,
-						isVoteCountAnimationEnabled: Q,
-						isCountAnimShadowTestEnabled: Z,
+						isVoteCountAnimationEnabled: X,
+						isCountAnimShadowTestEnabled: Q,
 						imageGalleryCurrentItem: J,
 						listingKey: $,
 						moderatorPermissions: ee,
@@ -1349,8 +1349,8 @@
 						source: Fe
 					} = De;
 					return o.a.createElement(o.a.Fragment, null, o.a.createElement(I.a, {
-						className: Object(d.a)(K.a.container, t, X.a.largeAndMediumPostStyles, X.a.largeAndMediumActiveStyles, Object(D.a)(e), {
-							[X.a.mUseRedditTheme]: e.redditStyle || e["data-redditstyle"]
+						className: Object(d.a)(K.a.container, t, Z.a.largeAndMediumPostStyles, Z.a.largeAndMediumActiveStyles, Object(D.a)(e), {
+							[Z.a.mUseRedditTheme]: e.redditStyle || e["data-redditstyle"]
 						}),
 						isOverlay: G,
 						style: Object(D.b)(e.flairStyleTemplate),
@@ -1365,8 +1365,8 @@
 						toggleCheckbox: _e,
 						flairStyleTemplate: Te,
 						redditStyle: ie,
-						isVoteCountAnimation: Q,
-						isCountAnimShadowTestEnabled: Z,
+						isVoteCountAnimation: X,
+						isCountAnimShadowTestEnabled: Q,
 						postId: oe,
 						triggerCelebratoryMoment: fe
 					}), o.a.createElement(T.a, {
@@ -1458,7 +1458,7 @@
 						hasModPostPerms: Ie,
 						hostPostData: M,
 						isCommentCountAnimation: q,
-						isCountAnimShadowTestEnabled: Z,
+						isCountAnimShadowTestEnabled: Q,
 						isOverlay: !!G,
 						listingKey: $,
 						modModeEnabled: te,
@@ -1783,9 +1783,9 @@
 						caretOnTop: !1
 					},
 					z = Object(i.e)(g.a),
-					Q = G.isSponsored && (z === p.s.NoLockIcon || z === p.s.PromotedGrey),
-					X = G.isRemoved && !G.modRemovalReason && !G.modNote && G.belongsTo.type === b.a.SUBREDDIT,
-					Z = B("Approve", G.id, W),
+					X = G.isSponsored && (z === p.s.NoLockIcon || z === p.s.PromotedGrey),
+					Z = G.isRemoved && !G.modRemovalReason && !G.modNote && G.belongsTo.type === b.a.SUBREDDIT,
+					Q = B("Approve", G.id, W),
 					J = B("Archived", G.id, W),
 					K = B("Automod", G.id, W),
 					$ = B("Lock", G.id, W),
@@ -1815,7 +1815,7 @@
 				}), r.a.createElement(u.c, N({
 					tooltipId: J,
 					text: D()
-				}, q))), G.isLocked && !Q && r.a.createElement(o.Fragment, null, r.a.createElement(T.a, {
+				}, q))), G.isLocked && !X && r.a.createElement(o.Fragment, null, r.a.createElement(T.a, {
 					isFilled: !0,
 					className: Object(a.a)(k.a.icon, k.a.lockIcon),
 					desc: F(),
@@ -1849,11 +1849,11 @@
 					isFilled: !0,
 					className: Object(a.a)(k.a.icon, k.a.approveIcon),
 					desc: Object(f.a)(G),
-					id: Z,
-					onMouseEnter: H(Z),
+					id: Q,
+					onMouseEnter: H(Q),
 					onMouseLeave: Y
 				}), r.a.createElement(u.c, N({
-					tooltipId: Z,
+					tooltipId: Q,
 					text: Object(f.a)(G)
 				}, q))), Object(_.a)(G) && !ie && r.a.createElement(o.Fragment, null, r.a.createElement(I.a, {
 					isFilled: !0,
@@ -1862,7 +1862,7 @@
 					id: te,
 					onMouseEnter: H(te),
 					onMouseLeave: Y
-				}), X && r.a.createElement(m.a, {
+				}), Z && r.a.createElement(m.a, {
 					className: k.a.addRemovalReason,
 					onClick: V,
 					text: n.fbt._("Add a removal reason", null, {
@@ -2320,7 +2320,7 @@
 						[w.a.isVisitedEnabled]: !t
 					})
 				}), n),
-				Q = ({
+				X = ({
 					disableVisited: e,
 					nowrap: t,
 					className: s,
@@ -2331,7 +2331,7 @@
 						[w.a.isVisitedEnabled]: !e
 					})
 				}, n),
-				X = Object(a.c)({
+				Z = Object(a.c)({
 					flairPosition: (e, {
 						pageLayer: t
 					}) => Object(p.q)(e, {
@@ -2340,14 +2340,14 @@
 					shouldOpenPostInNewTab: F.db,
 					isTournamentPredictionPostV2: D.u
 				}),
-				Z = e => {
+				Q = e => {
 					const {
 						post: t,
 						subreddit: s
 					} = e, {
 						isSponsored: n
 					} = t, o = Object(B.a)(), i = Object(Y.a)(m.Oc) === m.Sc.Enabled;
-					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return r.a.createElement(Q, {
+					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return r.a.createElement(X, {
 						nowrap: e.nowrap
 					}, r.a.createElement(J, e));
 					if (e.isCommentsPageAd && t.source && t.source.url) return r.a.createElement(b.b, {
@@ -2358,7 +2358,7 @@
 					}, r.a.createElement(J, e)); {
 						const c = t.media && Object(T.G)(t.media) ? Object(x.c)(t.id, s.name) : t.permalink,
 							a = e.isCommentPermalink ? Object(S.b)(c) : i ? Object(_.a)(c, void 0, o) : Object(_.a)(c);
-						return r.a.createElement(Q, {
+						return r.a.createElement(X, {
 							disableVisited: e.disableVisited,
 							nowrap: e.nowrap
 						}, n ? ((e, t) => {
@@ -2469,7 +2469,7 @@
 						post: a,
 						sendEvent: this.props.sendEvent,
 						showCategoryTag: !1
-					}), h && r.a.createElement(Z, W({}, this.props, {
+					}), h && r.a.createElement(Q, W({}, this.props, {
 						leftFlair: d ? b : void 0
 					})), c && r.a.createElement(N, {
 						className: w.a.pollMeta,
@@ -2493,7 +2493,7 @@
 				const t = Object(p.db)(),
 					s = Object(p.w)(t),
 					n = Object(V.a)(),
-					o = Object(i.e)(o => X(o, {
+					o = Object(i.e)(o => Z(o, {
 						...n,
 						...e,
 						isCommentPermalink: s,
@@ -4090,7 +4090,7 @@
 					experimentEligibilitySelector: o.a,
 					experimentName: n.cc
 				});
-				return !(!t || Object(n.Qe)(t))
+				return !(!t || Object(n.Me)(t))
 			}
 		},
 		"./src/reddit/selectors/i18n/index.ts": function(e, t, s) {
@@ -4106,7 +4106,7 @@
 				i = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const c = e => {
 					const t = Object(i.a)(e);
-					return Boolean(t) && !Object(o.Qe)(t)
+					return Boolean(t) && !Object(o.Me)(t)
 				},
 				a = Object(n.a)(c, r.d, (e, t) => e && !t)
 		},
@@ -4131,4 +4131,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.bb64b77c1e9daaddc39d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.79cfb4108fd7a946d460.js.map
