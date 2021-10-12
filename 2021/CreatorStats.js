@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CreatorStats.2f601ff0ec79020dea00.js
-// Retrieved at 10/11/2021, 6:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CreatorStats.ab416e60ee845d2d7038.js
+// Retrieved at 10/12/2021, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CreatorStats"], {
 		"./src/reddit/components/CreatorStats/index.m.less": function(t, e, a) {
@@ -113,8 +113,8 @@
 					}),
 					tooltipDescriptionText: t.isUserOp ? s.fbt._("Total amount of karma you’ve earned in this community", null, {
 						hk: "14lTnt"
-					}) : s.fbt._("Availabe only for the author of the post", null, {
-						hk: "2DFQRe"
+					}) : s.fbt._("Available only for the author of the post", null, {
+						hk: "4yp5u7"
 					})
 				}), null != (null === (a = t.postStats.shareCountTotals) || void 0 === a ? void 0 : a.totalCount) && r.a.createElement(S, {
 					statNumber: t.postStats.shareCountTotals.totalCount,
@@ -234,4 +234,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CreatorStats.2f601ff0ec79020dea00.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CreatorStats.ab416e60ee845d2d7038.js.map
