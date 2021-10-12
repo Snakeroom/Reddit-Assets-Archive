@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.c705e3fe2d2c889328ad.js
-// Retrieved at 10/12/2021, 4:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.89634dd7b2e6a44cdc6a.js
+// Retrieved at 10/12/2021, 5:20:17 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileFollowersPage", "ProfileFollowersAction"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -4197,10 +4197,11 @@
 				}).apply(this, arguments)
 			}
 			const I = d.e[1] + 24,
-				_ = v.f + 8 + 152 + 16,
-				O = _ + I + 8,
-				E = C.a.div("Container", y.a),
-				S = C.a.wrapped(({
+				_ = v.f + 8,
+				O = _ + 152 + 16,
+				E = O + I + 8,
+				S = C.a.div("Container", y.a),
+				j = C.a.wrapped(({
 					className: e,
 					isOverlay: t,
 					...s
@@ -4208,10 +4209,10 @@
 					className: e,
 					isOverlay: t,
 					style: {
-						top: "calc(100vh - 8px)"
+						top: `calc(100vh - ${t?_:8}px)`
 					}
 				}, s)), "BackToTop", y.a),
-				j = ({
+				k = ({
 					children: e,
 					className: t,
 					isFakeOverlay: s,
@@ -4222,11 +4223,11 @@
 						[y.a.StickyStylesFakeOverlay]: !!s
 					})
 				}, e);
-			class k extends o.Component {
+			class N extends o.Component {
 				constructor(e) {
 					super(e), this.containerEl = null, this.windowHeight = 1 / 0, this.getStickyContents = () => ({
-						shouldAdSticky: this.windowHeight > O,
-						shouldFooterSticky: this.windowHeight > _
+						shouldAdSticky: this.windowHeight > E,
+						shouldFooterSticky: this.windowHeight > O
 					}), this.updateState = () => {
 						if (this.isHidden()) return;
 						const {
@@ -4267,19 +4268,19 @@
 							pageLayer: o
 						}
 					} = this, d = this.state.isAdSticky && !(!t && !r);
-					return a.a.createElement(E, {
+					return a.a.createElement(S, {
 						className: n,
 						innerRef: this.setWrapperRef
-					}, a.a.createElement(j, {
+					}, a.a.createElement(k, {
 						isFakeOverlay: s,
 						isSticky: d
-					}, t, r, !i && a.a.createElement(f.a, null)), !this.props.hideBackToTop && a.a.createElement(S, {
+					}, t, r, !i && a.a.createElement(f.a, null)), !this.props.hideBackToTop && a.a.createElement(j, {
 						isOverlay: !!(null === (e = null == o ? void 0 : o.locationState) || void 0 === e ? void 0 : e.isOverlay)
 					}))
 				}
 			}
-			const N = Object(g.u)();
-			t.a = N(k)
+			const T = Object(g.u)();
+			t.a = T(N)
 		},
 		"./src/reddit/components/SidebarTrophyCase/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -6854,4 +6855,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.c705e3fe2d2c889328ad.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.89634dd7b2e6a44cdc6a.js.map

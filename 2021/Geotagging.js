@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Geotagging.ec109f35c7335fc71f36.js
-// Retrieved at 10/5/2021, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Geotagging.d87220f2838dd7b4a983.js
+// Retrieved at 10/12/2021, 5:20:17 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Geotagging"], {
 		"./node_modules/p-debounce/index.js": function(e, t, s) {
@@ -487,10 +487,11 @@
 				}).apply(this, arguments)
 			}
 			const v = c.e[1] + 24,
-				k = f.f + 8 + 152 + 16,
-				O = k + v + 8,
-				j = S.a.div("Container", E.a),
-				C = S.a.wrapped(({
+				k = f.f + 8,
+				O = k + 152 + 16,
+				j = O + v + 8,
+				C = S.a.div("Container", E.a),
+				N = S.a.wrapped(({
 					className: e,
 					isOverlay: t,
 					...s
@@ -498,10 +499,10 @@
 					className: e,
 					isOverlay: t,
 					style: {
-						top: "calc(100vh - 8px)"
+						top: `calc(100vh - ${t?k:8}px)`
 					}
 				}, s)), "BackToTop", E.a),
-				N = ({
+				w = ({
 					children: e,
 					className: t,
 					isFakeOverlay: s,
@@ -512,11 +513,11 @@
 						[E.a.StickyStylesFakeOverlay]: !!s
 					})
 				}, e);
-			class w extends a.Component {
+			class T extends a.Component {
 				constructor(e) {
 					super(e), this.containerEl = null, this.windowHeight = 1 / 0, this.getStickyContents = () => ({
-						shouldAdSticky: this.windowHeight > O,
-						shouldFooterSticky: this.windowHeight > k
+						shouldAdSticky: this.windowHeight > j,
+						shouldFooterSticky: this.windowHeight > O
 					}), this.updateState = () => {
 						if (this.isHidden()) return;
 						const {
@@ -557,19 +558,19 @@
 							pageLayer: a
 						}
 					} = this, c = this.state.isAdSticky && !(!t && !n);
-					return o.a.createElement(j, {
+					return o.a.createElement(C, {
 						className: r,
 						innerRef: this.setWrapperRef
-					}, o.a.createElement(N, {
+					}, o.a.createElement(w, {
 						isFakeOverlay: s,
 						isSticky: c
-					}, t, n, !i && o.a.createElement(g.a, null)), !this.props.hideBackToTop && o.a.createElement(C, {
+					}, t, n, !i && o.a.createElement(g.a, null)), !this.props.hideBackToTop && o.a.createElement(N, {
 						isOverlay: !!(null === (e = null == a ? void 0 : a.locationState) || void 0 === e ? void 0 : e.isOverlay)
 					}))
 				}
 			}
-			const T = Object(x.u)();
-			t.a = T(w)
+			const P = Object(x.u)();
+			t.a = P(T)
 		},
 		"./src/reddit/components/StructuredStyles/BladeDrawerController/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -1817,4 +1818,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.ec109f35c7335fc71f36.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.d87220f2838dd7b4a983.js.map

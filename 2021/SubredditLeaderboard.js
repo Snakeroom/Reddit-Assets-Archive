@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.2c7cf50dd64a5afb9f79.js
-// Retrieved at 10/12/2021, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.678b3749e3f0f7b3ba64.js
+// Retrieved at 10/12/2021, 5:20:17 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, n) {
@@ -437,10 +437,11 @@
 				}).apply(this, arguments)
 			}
 			const S = d.e[1] + 24,
-				C = f.f + 8 + 152 + 16,
-				v = C + S + 8,
-				O = E.a.div("Container", x.a),
-				j = E.a.wrapped(({
+				C = f.f + 8,
+				v = C + 152 + 16,
+				O = v + S + 8,
+				j = E.a.div("Container", x.a),
+				N = E.a.wrapped(({
 					className: e,
 					isOverlay: t,
 					...n
@@ -448,10 +449,10 @@
 					className: e,
 					isOverlay: t,
 					style: {
-						top: "calc(100vh - 8px)"
+						top: `calc(100vh - ${t?C:8}px)`
 					}
 				}, n)), "BackToTop", x.a),
-				N = ({
+				T = ({
 					children: e,
 					className: t,
 					isFakeOverlay: n,
@@ -462,11 +463,11 @@
 						[x.a.StickyStylesFakeOverlay]: !!n
 					})
 				}, e);
-			class T extends i.Component {
+			class w extends i.Component {
 				constructor(e) {
 					super(e), this.containerEl = null, this.windowHeight = 1 / 0, this.getStickyContents = () => ({
-						shouldAdSticky: this.windowHeight > v,
-						shouldFooterSticky: this.windowHeight > C
+						shouldAdSticky: this.windowHeight > O,
+						shouldFooterSticky: this.windowHeight > v
 					}), this.updateState = () => {
 						if (this.isHidden()) return;
 						const {
@@ -507,19 +508,19 @@
 							pageLayer: i
 						}
 					} = this, d = this.state.isAdSticky && !(!t && !s);
-					return o.a.createElement(O, {
+					return o.a.createElement(j, {
 						className: r,
 						innerRef: this.setWrapperRef
-					}, o.a.createElement(N, {
+					}, o.a.createElement(T, {
 						isFakeOverlay: n,
 						isSticky: d
-					}, t, s, !a && o.a.createElement(h.a, null)), !this.props.hideBackToTop && o.a.createElement(j, {
+					}, t, s, !a && o.a.createElement(h.a, null)), !this.props.hideBackToTop && o.a.createElement(N, {
 						isOverlay: !!(null === (e = null == i ? void 0 : i.locationState) || void 0 === e ? void 0 : e.isOverlay)
 					}))
 				}
 			}
-			const w = Object(y.u)();
-			t.a = w(T)
+			const L = Object(y.u)();
+			t.a = L(w)
 		},
 		"./src/reddit/components/StructuredStyles/BladeDrawerController/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -2611,4 +2612,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.2c7cf50dd64a5afb9f79.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.678b3749e3f0f7b3ba64.js.map

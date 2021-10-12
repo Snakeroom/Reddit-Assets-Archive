@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~933ffffc.22df9e37b31e4ba9da1d.js
-// Retrieved at 10/5/2021, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~933ffffc.1979879520a7c01f4988.js
+// Retrieved at 10/12/2021, 5:20:17 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~933ffffc"], {
 		"./src/lib/intersectionObserver/index.ts": function(e, t, s) {
@@ -1484,10 +1484,11 @@
 				}).apply(this, arguments)
 			}
 			const P = l.e[1] + 24,
-				R = g.f + 8 + 152 + 16,
-				S = R + P + 8,
-				I = y.a.div("Container", w.a),
-				O = y.a.wrapped(({
+				R = g.f + 8,
+				S = R + 152 + 16,
+				I = S + P + 8,
+				O = y.a.div("Container", w.a),
+				E = y.a.wrapped(({
 					className: e,
 					isOverlay: t,
 					...s
@@ -1495,10 +1496,10 @@
 					className: e,
 					isOverlay: t,
 					style: {
-						top: "calc(100vh - 8px)"
+						top: `calc(100vh - ${t?R:8}px)`
 					}
 				}, s)), "BackToTop", w.a),
-				E = ({
+				k = ({
 					children: e,
 					className: t,
 					isFakeOverlay: s,
@@ -1509,11 +1510,11 @@
 						[w.a.StickyStylesFakeOverlay]: !!s
 					})
 				}, e);
-			class k extends r.Component {
+			class _ extends r.Component {
 				constructor(e) {
 					super(e), this.containerEl = null, this.windowHeight = 1 / 0, this.getStickyContents = () => ({
-						shouldAdSticky: this.windowHeight > S,
-						shouldFooterSticky: this.windowHeight > R
+						shouldAdSticky: this.windowHeight > I,
+						shouldFooterSticky: this.windowHeight > S
 					}), this.updateState = () => {
 						if (this.isHidden()) return;
 						const {
@@ -1554,19 +1555,19 @@
 							pageLayer: r
 						}
 					} = this, l = this.state.isAdSticky && !(!t && !i);
-					return a.a.createElement(I, {
+					return a.a.createElement(O, {
 						className: n,
 						innerRef: this.setWrapperRef
-					}, a.a.createElement(E, {
+					}, a.a.createElement(k, {
 						isFakeOverlay: s,
 						isSticky: l
-					}, t, i, !o && a.a.createElement(f.a, null)), !this.props.hideBackToTop && a.a.createElement(O, {
+					}, t, i, !o && a.a.createElement(f.a, null)), !this.props.hideBackToTop && a.a.createElement(E, {
 						isOverlay: !!(null === (e = null == r ? void 0 : r.locationState) || void 0 === e ? void 0 : e.isOverlay)
 					}))
 				}
 			}
-			const _ = Object(C.u)();
-			t.a = _(k)
+			const M = Object(C.u)();
+			t.a = M(_)
 		},
 		"./src/reddit/components/Widgets/ThemedWidget/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -2157,4 +2158,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~933ffffc.22df9e37b31e4ba9da1d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~933ffffc.1979879520a7c01f4988.js.map

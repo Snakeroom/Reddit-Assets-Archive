@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.0419cf00330b96381ba3.js
-// Retrieved at 10/12/2021, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.9ea228a1f27a4816aa02.js
+// Retrieved at 10/12/2021, 5:20:17 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./src/lib/unicodeUtils/index.ts": function(e, t, s) {
@@ -3534,10 +3534,11 @@
 				}).apply(this, arguments)
 			}
 			const C = d.e[1] + 24,
-				y = x.f + 8 + 152 + 16,
-				O = y + C + 8,
-				w = E.a.div("Container", v.a),
-				j = E.a.wrapped(({
+				y = x.f + 8,
+				O = y + 152 + 16,
+				w = O + C + 8,
+				j = E.a.div("Container", v.a),
+				N = E.a.wrapped(({
 					className: e,
 					isOverlay: t,
 					...s
@@ -3545,10 +3546,10 @@
 					className: e,
 					isOverlay: t,
 					style: {
-						top: "calc(100vh - 8px)"
+						top: `calc(100vh - ${t?y:8}px)`
 					}
 				}, s)), "BackToTop", v.a),
-				N = ({
+				P = ({
 					children: e,
 					className: t,
 					isFakeOverlay: s,
@@ -3559,11 +3560,11 @@
 						[v.a.StickyStylesFakeOverlay]: !!s
 					})
 				}, e);
-			class P extends o.Component {
+			class S extends o.Component {
 				constructor(e) {
 					super(e), this.containerEl = null, this.windowHeight = 1 / 0, this.getStickyContents = () => ({
-						shouldAdSticky: this.windowHeight > O,
-						shouldFooterSticky: this.windowHeight > y
+						shouldAdSticky: this.windowHeight > w,
+						shouldFooterSticky: this.windowHeight > O
 					}), this.updateState = () => {
 						if (this.isHidden()) return;
 						const {
@@ -3604,19 +3605,19 @@
 							pageLayer: o
 						}
 					} = this, d = this.state.isAdSticky && !(!t && !n);
-					return a.a.createElement(w, {
+					return a.a.createElement(j, {
 						className: i,
 						innerRef: this.setWrapperRef
-					}, a.a.createElement(N, {
+					}, a.a.createElement(P, {
 						isFakeOverlay: s,
 						isSticky: d
-					}, t, n, !r && a.a.createElement(g.a, null)), !this.props.hideBackToTop && a.a.createElement(j, {
+					}, t, n, !r && a.a.createElement(g.a, null)), !this.props.hideBackToTop && a.a.createElement(N, {
 						isOverlay: !!(null === (e = null == o ? void 0 : o.locationState) || void 0 === e ? void 0 : e.isOverlay)
 					}))
 				}
 			}
-			const S = Object(f.u)();
-			t.a = S(P)
+			const T = Object(f.u)();
+			t.a = T(S)
 		},
 		"./src/reddit/components/SubredditIcon/EditableSubredditIcon.tsx": function(e, t, s) {
 			"use strict";
@@ -7484,4 +7485,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.0419cf00330b96381ba3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.9ea228a1f27a4816aa02.js.map
