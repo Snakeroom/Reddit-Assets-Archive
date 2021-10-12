@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.9da3df3694a56288f629.js
-// Retrieved at 10/12/2021, 11:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.4083aeaf90ecd1805e3e.js
+// Retrieved at 10/12/2021, 11:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "AchievementsActions", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -3126,7 +3126,7 @@
 					}
 					return !1
 				},
-				showUserFlairPreviewEnabled: Ce.y
+				showUserFlairPreviewEnabled: Ce.x
 			}), Le = Object(o.b)(Ae), Be = e => i.a.createElement(Re, {
 				onClick: e.onClick
 			}, i.a.createElement(ee.a, {
@@ -3238,7 +3238,7 @@
 						subredditId: t
 					}) => Object(Te.c)(e, {
 						subredditId: t
-					}) && !Object(Ce.y)(e)
+					}) && !Object(Ce.x)(e)
 				});
 			class Ot extends i.a.Component {
 				constructor(e) {
@@ -3349,7 +3349,7 @@
 						const n = Object(ne.B)(e, t);
 						return Object(Te.c)(e, {
 							subredditId: n
-						}) && Object(Ce.y)(e)
+						}) && Object(Ce.x)(e)
 					},
 					subreddit: (e, t) => Object(ne.w)(e, {
 						subredditName: t.listingName
@@ -5836,4 +5836,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.9da3df3694a56288f629.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.4083aeaf90ecd1805e3e.js.map

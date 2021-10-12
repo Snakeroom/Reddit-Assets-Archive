@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.545bc86c4b1b90ec5226.js
-// Retrieved at 10/12/2021, 11:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.6d35cfa28be9910b3af3.js
+// Retrieved at 10/12/2021, 11:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab"], {
 		"./src/higherOrderComponents/withMux/index.tsx": function(e, t, s) {
@@ -17,16 +17,16 @@
 			const h = Object(o.a)(e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.qd
+					experimentName: u.pd
 				});
-				return Object(u.Re)(t) ? void 0 : t
+				return Object(u.Qe)(t) ? void 0 : t
 			}, e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.rd
+					experimentName: u.qd
 				});
-				return Object(u.Re)(t) ? void 0 : t
-			}, (e, t) => e === u.td.Enabled && t === u.td.Enabled);
+				return Object(u.Qe)(t) ? void 0 : t
+			}, (e, t) => e === u.sd.Enabled && t === u.sd.Enabled);
 			var p = s("./src/config.ts");
 			var b = s("./src/reddit/selectors/user.ts");
 			const g = e => {
@@ -477,10 +477,10 @@
 				} : void 0
 			}, e.toggleTileLayout && n.a.createElement(g.a, {
 				className: S.a.tileIcon
-			}), e.currentSlide, "/", e.totalSlides), R = (e, t = 4) => {
+			}), e.currentSlide, "/", e.totalSlides), D = (e, t = 4) => {
 				let s = e - t;
 				return s < 0 && (s = 0), s
-			}, D = (e, t, s = 4) => {
+			}, R = (e, t, s = 4) => {
 				let i = e + s;
 				return i > t - 1 && (i = t - 1), i
 			};
@@ -513,7 +513,7 @@
 					X = Object(r.a)(H),
 					Z = Object(r.a)(F);
 				Object(i.useEffect)(() => {
-					(void 0 !== X && X !== H && H && $ < 0 && q < 0 || void 0 !== Z && Z !== F && H && ($ > F || q < F)) && (J(R(F, 1)), Q(D(F, p.length, 1)))
+					(void 0 !== X && X !== H && H && $ < 0 && q < 0 || void 0 !== Z && Z !== F && H && ($ > F || q < F)) && (J(D(F, 1)), Q(R(F, p.length, 1)))
 				}, [X, F, H, $, q, Z, p.length, A]);
 				const ee = Object(i.useRef)(),
 					te = Object(i.useCallback)(e => {
@@ -522,7 +522,7 @@
 								isIntersecting: t
 							} = e;
 							t ? ($ < 0 || q - $ == 0) && (ee.current = setTimeout(() => {
-								const e = D(q, p.length);
+								const e = R(q, p.length);
 								e !== q && Q(e)
 							}, 1e3)) : ($ < 0 || q - $ == 0) && clearTimeout(ee.current)
 						})
@@ -547,7 +547,7 @@
 						if (!G) return;
 						const e = F + 1;
 						if (e + 1 >= q) {
-							const e = D(q, p.length);
+							const e = R(q, p.length);
 							e !== q && Q(e)
 						}
 						se(e), K(u.b(A, e)), K(u.d(A, e + 1)), ie(e)
@@ -556,7 +556,7 @@
 						if (!U) return;
 						const e = F - 1;
 						if (e - 1 <= $) {
-							const e = R($);
+							const e = D($);
 							e !== $ && J(e)
 						}
 						const t = F + 1;
@@ -985,8 +985,8 @@
 				N = s("./src/reddit/components/Media/PollContainer/index.tsx"),
 				M = s("./src/reddit/components/Media/RichTextContainer/index.tsx"),
 				_ = s("./src/reddit/components/Media/TwitterEmbed/index.tsx"),
-				R = s("./src/reddit/components/Media/VideoBox/index.tsx"),
-				D = s("./src/reddit/components/PlayButton/index.tsx"),
+				D = s("./src/reddit/components/Media/VideoBox/index.tsx"),
+				R = s("./src/reddit/components/PlayButton/index.tsx"),
 				P = s("./src/reddit/components/RawHTMLDisplay/Media.tsx"),
 				A = s("./src/reddit/components/RichTextJson/index.tsx"),
 				V = s("./src/reddit/constants/componentSizes.ts"),
@@ -1477,7 +1477,7 @@
 								shouldBlur: oe,
 								source: h.preview.url,
 								originalSource: h.preview.url
-							})), l.a.createElement(D.a, null)))) : z.h.has(h.media.provider) ? h.media.provider === z.v.Twitter ? l.a.createElement(_.a, {
+							})), l.a.createElement(R.a, null)))) : z.h.has(h.media.provider) ? h.media.provider === z.v.Twitter ? l.a.createElement(_.a, {
 								canLoadContent: y,
 								embedBoxChildRef: this.storeChildRef,
 								mediaContainerProps: ae,
@@ -1517,7 +1517,7 @@
 								blurSrc: Z ? h.media.gifBackgroundImage : void 0
 							}), l.a.createElement(ue, {
 								isVisible: y
-							}, l.a.createElement(R.a, se({}, ee, {
+							}, l.a.createElement(D.a, se({}, ee, {
 								isNotCardView: u,
 								height: o ? void 0 : e,
 								width: o ? void 0 : t,
@@ -1547,7 +1547,7 @@
 								shouldBlur: oe,
 								source: e,
 								originalSource: e
-							})), l.a.createElement(D.a, null))));
+							})), l.a.createElement(R.a, null))));
 							const t = l.a.createElement(L.a, se({}, ae, {
 								alwaysWrapMedia: !0,
 								isVideo: !0
@@ -1956,4 +1956,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.545bc86c4b1b90ec5226.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.6d35cfa28be9910b3af3.js.map

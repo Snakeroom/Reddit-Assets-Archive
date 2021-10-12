@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~ModListing.b8318b1cb4f45341c374.js
-// Retrieved at 10/12/2021, 11:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~ModListing.1a57690049bb58f86b29.js
+// Retrieved at 10/12/2021, 11:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~ModListing"], {
 		"./src/reddit/actions/focusedVerticals/index.ts": function(e, t, s) {
@@ -884,8 +884,8 @@
 						hk: "1QaJzt"
 					})
 				};
-			var X = s("./src/reddit/components/StateSort/index.m.less"),
-				J = s.n(X);
+			var J = s("./src/reddit/components/StateSort/index.m.less"),
+				X = s.n(J);
 
 			function Z() {
 				return (Z = Object.assign || function(e) {
@@ -896,7 +896,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const $ = D.a.wrapped(v.a, "_Dropdown", J.a),
+			const $ = D.a.wrapped(v.a, "_Dropdown", X.a),
 				ee = Object(w.a)($),
 				te = e => {
 					return e.indexOf("_") > 0 && ne(e) === h.z.UnitedStates
@@ -959,7 +959,7 @@
 						isSelected: e.sort === n
 					}))
 				}))))
-			})), "Component", J.a);
+			})), "Component", X.a);
 			const de = {
 				[h.z.Everywhere]: () => y.fbt._("Everywhere", null, {
 					hk: "3ysAHX"
@@ -1473,7 +1473,7 @@
 		"./src/reddit/components/PostList/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "b", (function() {
-				return J
+				return X
 			})), s.d(t, "a", (function() {
 				return $
 			}));
@@ -1530,13 +1530,13 @@
 				return void 0 === l && (l = () => {
 					s && i.onBottomViewed(n, r), i.trackOnPostEnteredViewport(e, t, a, c)
 				}, F.set(d, l)), l
-			}, X = (e, t, s, n, r) => {
+			}, J = (e, t, s, n, r) => {
 				const o = `left-${e}-${t}`;
 				let i = K.get(o);
 				return void 0 === i && (i = o => {
 					s.trackOnPostExitedViewport(e, t, o, n, r)
 				}, K.set(o, i)), i
-			}, J = (e, t, s = !1) => {
+			}, X = (e, t, s = !1) => {
 				const n = `click-${e}`;
 				let r = G.get(n);
 				return void 0 === r && (r = (e, n, r, o, i) => {
@@ -1748,8 +1748,8 @@
 						let B = `post-list-item-[layout: ${n}]-[postId: ${e}]`;
 						this.props.listingBelowVariant && g && (B += `--${g}`);
 						const M = Q(e, n, s, g, y, S, this.props, t, this.props.hostPostData),
-							H = X(e, n, this.props, t, w),
-							z = J(e, this.props, c),
+							H = J(e, n, this.props, t, w),
+							z = X(e, this.props, c),
 							U = V.media && V.media.type === T.o.EMBED ? V.media.provider : null,
 							F = p && !R.isSponsored,
 							K = m && !R.isSponsored && !R.isScoreHidden,
@@ -2462,13 +2462,13 @@
 						experimentEligibilitySelector: o.K,
 						experimentName: n.jc
 					});
-					return !(!t || Object(n.Re)(t))
+					return !(!t || Object(n.Qe)(t))
 				},
 				a = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: o.K,
 						experimentName: n.jc
-					}) === n.Kc.ListingEnabled
+					}) === n.Jc.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, s) {
@@ -2582,4 +2582,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing.b8318b1cb4f45341c374.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing.1a57690049bb58f86b29.js.map
