@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index.7cb8fef0e9f6bb760882.js
-// Retrieved at 10/13/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index.2244926b2274f0a30c85.js
+// Retrieved at 10/13/2021, 5:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index"], {
 		"./src/reddit/components/Econ/Prediction/Confetti/index.m.less": function(e, t, n) {
@@ -173,7 +173,7 @@
 			function H(e, t, n) {
 				const o = Object(s.d)(),
 					c = Object(s.e)(y.e),
-					d = Object(s.e)(r.q),
+					d = Object(s.e)(r.p),
 					a = Object(p.a)(),
 					l = Object(R.a)(),
 					{
@@ -237,7 +237,7 @@
 			}
 			var Q = n("./src/reddit/components/Econ/Prediction/TournamentPostBody/v1/TournamentPrediction/index.m.less"),
 				J = n.n(Q);
-			const q = ({
+			const K = ({
 				prediction: e,
 				tournamentId: t,
 				subredditId: n,
@@ -323,7 +323,7 @@
 					isLastPrediction: c
 				}))
 			};
-			var K = n("./src/reddit/helpers/predictions/index.ts");
+			var q = n("./src/reddit/helpers/predictions/index.ts");
 			const W = ({
 				post: e
 			}) => {
@@ -334,14 +334,14 @@
 				} = e.predictionTournament, s = function(e) {
 					return i.a.useMemo(() => {
 						if (!e || !e.length) return;
-						const t = e.filter(e => !e.isSpoiler && !e.isNSFW).sort(K.c);
+						const t = e.filter(e => !e.isSpoiler && !e.isNSFW).sort(q.c);
 						return {
 							prediction: t[0],
 							isLastPrediction: t.length <= 1
 						}
 					}, [])
 				}(n);
-				return (null == s ? void 0 : s.prediction) && o !== c.a.Closed ? i.a.createElement(h, null, i.a.createElement(q, {
+				return (null == s ? void 0 : s.prediction) && o !== c.a.Closed ? i.a.createElement(h, null, i.a.createElement(K, {
 					subredditId: e.belongsTo.id,
 					tournamentId: t,
 					post: e,
@@ -584,7 +584,7 @@
 					const {
 						tournamentId: t,
 						status: n
-					} = e.predictionTournament, o = Object(s.e)(e => Object(C.h)(e, t)), r = i.a.useMemo(() => o.filter(e => !e.isSpoiler && !e.isNSFW && !e.userSelection && !e.resolvedOptionId && e.predictionStatus === g.b.Open && e.endsAt > Date.now()).sort(K.a).map(e => e.id), [o.length]).map(e => o.find(t => t.id === e)).filter(e => Boolean(e));
+					} = e.predictionTournament, o = Object(s.e)(e => Object(C.h)(e, t)), r = i.a.useMemo(() => o.filter(e => !e.isSpoiler && !e.isNSFW && !e.userSelection && !e.resolvedOptionId && e.predictionStatus === g.b.Open && e.endsAt > Date.now()).sort(q.a).map(e => e.id), [o.length]).map(e => o.find(t => t.id === e)).filter(e => Boolean(e));
 					return n === c.a.Closed ? i.a.createElement(E, {
 						postId: e.id
 					}) : i.a.createElement($, null, i.a.createElement(Ee, {
@@ -593,7 +593,7 @@
 					}))
 				},
 				xe = e => {
-					return Object(s.e)(r.v) ? i.a.createElement(fe, e) : i.a.createElement(W, e)
+					return Object(s.e)(r.u) ? i.a.createElement(fe, e) : i.a.createElement(W, e)
 				};
 			t.default = xe
 		},
@@ -712,4 +712,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.7cb8fef0e9f6bb760882.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.2244926b2274f0a30c85.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.e0f21e4f3d636440f7b2.js
-// Retrieved at 10/13/2021, 5:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.f370257d1288eb49ebf2.js
+// Retrieved at 10/13/2021, 5:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, n) {
@@ -1390,7 +1390,7 @@
 						i = Object(v.j)(r, {
 							subredditId: s
 						}),
-						a = Object(C.n)(r);
+						a = Object(C.m)(r);
 					if (i) return Object(v.f)(r, {
 						subredditId: s
 					});
@@ -8354,7 +8354,7 @@
 						pageLayer: t
 					}),
 					shouldOpenPostInNewTab: L.db,
-					isTournamentPredictionPostV2: R.v
+					isTournamentPredictionPostV2: R.u
 				}),
 				Y = e => {
 					const {
@@ -8362,7 +8362,7 @@
 						subreddit: n
 					} = e, {
 						isSponsored: o
-					} = t, r = Object(U.a)(), i = Object(W.a)(m.Mc) === m.Qc.Enabled;
+					} = t, r = Object(U.a)(), i = Object(W.a)(m.Lc) === m.Pc.Enabled;
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return s.a.createElement(Q, {
 						nowrap: e.nowrap
 					}, s.a.createElement(Z, e));
@@ -21822,7 +21822,7 @@
 							pageLayer: o
 						})), a = Object(s.e)(e => i && Object(be.h)(e, {
 							subredditId: i.id
-						})), c = Object(s.e)(pn.p);
+						})), c = Object(s.e)(pn.o);
 						return r.a.useEffect(() => i && i.allowPredictions ? a ? t(!0) : c ? void Promise.resolve(n(Object(an.h)(i.id))).then(e => t(Boolean(e))) : t(!1) : t(!1), [i, c]), e
 					}();
 					return r.a.createElement(jl, gl({}, e, {
@@ -22681,9 +22681,9 @@
 			var o = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const s = e => Object(r.c)(e, {
-				experimentName: o.rd,
+				experimentName: o.qd,
 				experimentEligibilitySelector: r.a
-			}) === o.wd.Enabled
+			}) === o.vd.Enabled
 		},
 		"./src/reddit/selectors/features/predictions/creation/index.ts": function(e, t, n) {
 			"use strict";
@@ -23342,4 +23342,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.e0f21e4f3d636440f7b2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.f370257d1288eb49ebf2.js.map

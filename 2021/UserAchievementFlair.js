@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/UserAchievementFlair.50e9232ca141a25d07b2.js
-// Retrieved at 10/13/2021, 5:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/UserAchievementFlair.0c11eb160ed1b3ace155.js
+// Retrieved at 10/13/2021, 5:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["UserAchievementFlair"], {
 		"./src/reddit/components/Econ/PowerupsFlair/HoverPopup.m.less": function(e, t, n) {
@@ -39,8 +39,8 @@
 				d = n("./src/reddit/controls/Button/index.tsx"),
 				i = n("./src/reddit/helpers/trackers/features/powerupsFlair.ts"),
 				m = n("./src/reddit/hooks/useScrollGradient.ts"),
-				l = n("./src/reddit/hooks/useTracking.ts"),
-				u = n("./src/reddit/icons/svgs/PowerupTier2/index.tsx"),
+				u = n("./src/reddit/hooks/useTracking.ts"),
+				l = n("./src/reddit/icons/svgs/PowerupTier2/index.tsx"),
 				p = n("./src/reddit/selectors/gold/powerups/flairs.ts"),
 				f = n("./src/reddit/selectors/subreddit.ts"),
 				h = n("./src/reddit/components/Econ/PowerupsFlair/HoverPopup.m.less"),
@@ -59,8 +59,8 @@
 					v = Object(o.e)(e => Object(f.Q)(e, {
 						subredditId: t
 					})),
-					I = Object(o.d)(),
-					k = Object(l.a)(),
+					k = Object(o.d)(),
+					I = Object(u.a)(),
 					{
 						container: j,
 						isScrollGradientVisible: O,
@@ -73,7 +73,7 @@
 					className: Object(r.a)(b.a.container, e)
 				}, c.a.createElement("div", {
 					className: b.a.header
-				}, c.a.createElement(u.a, {
+				}, c.a.createElement(l.a, {
 					className: b.a.powerupsLogo
 				}), y._("{r/community} {=achievements}", [y._param("r/community", v.displayText), y._param("=achievements", c.a.createElement("span", {
 					className: b.a.headerText
@@ -100,7 +100,7 @@
 					priority: d.b.Secondary,
 					className: b.a.ctaButton,
 					onClick: () => {
-						k(Object(i.a)()), I(Object(a.e)())
+						I(Object(i.a)()), k(Object(a.e)())
 					},
 					isFullWidth: !0
 				}, y._("View your achievements", null, {
@@ -120,9 +120,9 @@
 			})), c.a.createElement("div", {
 				className: b.a.flairName
 			}, c.a.createElement("span", null, e.name)));
-			var I = n("./src/reddit/selectors/experiments/econ/index.ts"),
-				k = n("./src/reddit/components/Econ/PowerupsFlair/UserAchievementFlair.m.less"),
-				j = n.n(k);
+			var k = n("./src/reddit/selectors/experiments/econ/index.ts"),
+				I = n("./src/reddit/components/Econ/PowerupsFlair/UserAchievementFlair.m.less"),
+				j = n.n(I);
 			const O = ({
 				achievement: e
 			}) => e ? c.a.createElement("img", {
@@ -145,16 +145,16 @@
 						subredditId: t,
 						userId: n
 					})),
-					l = Object(o.e)(e => Object(p.f)(e, {
+					u = Object(o.e)(e => Object(p.f)(e, {
 						subredditId: t,
 						userId: n
 					})),
-					[u, f] = Object(s.useState)(!1);
+					[l, f] = Object(s.useState)(!1);
 				if (Object(o.e)(e => Object(p.e)(e, {
 						subredditId: t,
 						userId: n
-					}) && Object(I.l)(e))) return null;
-				const h = l ? [m, ...l.achievementTypes].filter(Boolean) : null;
+					}) && Object(k.k)(e))) return null;
+				const h = u ? [m, ...u.achievementTypes].filter(Boolean) : null;
 				if (!(!!i || !!m) || !h) return null;
 				const b = (null == m ? void 0 : m.type) === (null == i ? void 0 : i.type) ? null : m,
 					y = (b ? 1 : 0) + (i ? 1 : 0),
@@ -174,7 +174,7 @@
 					achievement: i
 				}), !!g && c.a.createElement("span", {
 					className: j.a.hiddenAchievementsCount
-				}, "+", g), a && u && c.a.createElement(v, {
+				}, "+", g), a && l && c.a.createElement(v, {
 					className: j.a.hoverPopup,
 					subredditId: t,
 					userId: n
@@ -192,7 +192,7 @@
 			})), n.d(t, "e", (function() {
 				return m
 			})), n.d(t, "a", (function() {
-				return l
+				return u
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var r = n("./src/reddit/constants/comments.ts"),
@@ -223,7 +223,7 @@
 						})) && !(c.depth <= n)););
 					return o.id
 				},
-				l = (e, t, n) => {
+				u = (e, t, n) => {
 					const {
 						commentLists: r,
 						comments: s
@@ -238,7 +238,7 @@
 								experimentName: c.E,
 								expEventOverride: t
 							});
-							return !!(Object(c.Ke)(n) ? void 0 : n)
+							return !!(Object(c.Je)(n) ? void 0 : n)
 						})(n)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -384,7 +384,7 @@
 				}
 			};
 			const m = {};
-			var l = (e = m, t) => {
+			var u = (e = m, t) => {
 				switch (t.type) {
 					case a.c:
 					case a.g: {
@@ -400,8 +400,8 @@
 						return e
 				}
 			};
-			const u = {};
-			var p = (e = u, t) => {
+			const l = {};
+			var p = (e = l, t) => {
 					switch (t.type) {
 						case a.d:
 						case a.h: {
@@ -431,7 +431,7 @@
 				},
 				f = Object(r.c)({
 					error: i,
-					fullyLoaded: l,
+					fullyLoaded: u,
 					pending: p
 				}),
 				h = n("./src/reddit/actions/comment/constants.ts");
@@ -450,8 +450,8 @@
 				},
 				v = n("./node_modules/lodash/uniqBy.js"),
 				g = n.n(v),
-				I = n("./node_modules/lodash/values.js"),
-				k = n.n(I),
+				k = n("./node_modules/lodash/values.js"),
+				I = n.n(k),
 				j = n("./src/reddit/actions/comment/websocket/constants.ts");
 			const O = {};
 
@@ -467,7 +467,7 @@
 								comments: n,
 								key: r
 							} = t.payload, s = e[r] ? e[r] : [], c = function(e, t) {
-								return k()(e).map(e => {
+								return I()(e).map(e => {
 									const n = e.isStickied ? t && t.created || Math.round(Date.now() / 1e3) : e.created;
 									return {
 										id: e.id,
@@ -538,23 +538,23 @@
 							key: c,
 							moreCommentsItem: o,
 							moreComments: a
-						} = t.payload, d = r[o.postId], i = e[c], m = {}, l = i[o.id];
-						if (l && l.prev) {
+						} = t.payload, d = r[o.postId], i = e[c], m = {}, u = i[o.id];
+						if (u && u.prev) {
 							const {
 								id: e
-							} = l.prev;
+							} = u.prev;
 							m[e] = {
 								...i[e],
-								next: d.head || l.next
+								next: d.head || u.next
 							}
 						}
-						if (l && l.next) {
+						if (u && u.next) {
 							const {
 								id: e
-							} = l.next;
+							} = u.next;
 							m[e] = {
 								...i[e],
-								prev: d.tail || l.prev
+								prev: d.tail || u.prev
 							}
 						}
 						if (d.head && d.tail) {
@@ -570,7 +570,7 @@
 									moreCommentsDict: a,
 									continueThreadDict: s
 								});
-							l && (e.prev = l.prev, t.next = l.next)
+							u && (e.prev = u.prev, t.next = u.next)
 						}
 						return {
 							...e,
@@ -742,9 +742,9 @@
 			})), n.d(t, "x", (function() {
 				return v
 			})), n.d(t, "k", (function() {
-				return I
-			})), n.d(t, "g", (function() {
 				return k
+			})), n.d(t, "g", (function() {
+				return I
 			})), n.d(t, "G", (function() {
 				return j
 			})), n.d(t, "n", (function() {
@@ -815,12 +815,12 @@
 				d = n("./src/reddit/models/Post/index.ts"),
 				i = n("./src/reddit/selectors/subreddit.ts"),
 				m = n("./src/reddit/selectors/commentSelector.ts"),
-				l = n("./src/lib/initializeClient/installReducer.ts"),
-				u = n("./src/reddit/reducers/features/comments/index.ts"),
+				u = n("./src/lib/initializeClient/installReducer.ts"),
+				l = n("./src/reddit/reducers/features/comments/index.ts"),
 				p = n("./src/reddit/reducers/pages/comments/index.ts");
-			Object(l.a)({
+			Object(u.a)({
 				features: {
-					comments: u.a
+					comments: l.a
 				},
 				pages: {
 					comments: p.a
@@ -843,7 +843,7 @@
 					})
 				},
 				g = [],
-				I = Object(o.a)((e, t) => {
+				k = Object(o.a)((e, t) => {
 					const n = v(e, t),
 						r = n && n.id;
 					if (!r) return g;
@@ -859,7 +859,7 @@
 					} while (d);
 					return o
 				}),
-				k = (e, t) => y(e, t) ? e.pages.comments.keyToChatCommentLinks[t.commentsPageKey] : [],
+				I = (e, t) => y(e, t) ? e.pages.comments.keyToChatCommentLinks[t.commentsPageKey] : [],
 				j = (e, {
 					commentsPageKey: t
 				}) => {
@@ -1031,4 +1031,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UserAchievementFlair.50e9232ca141a25d07b2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UserAchievementFlair.0c11eb160ed1b3ace155.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.6e0049ec40fc5b6c0210.js
-// Retrieved at 10/13/2021, 5:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.58b8f187ff9b9b2cabbc.js
+// Retrieved at 10/13/2021, 5:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, n) {
@@ -519,8 +519,8 @@
 					}))
 				}
 			}
-			const I = Object(y.u)();
-			t.a = I(w)
+			const L = Object(y.u)();
+			t.a = L(w)
 		},
 		"./src/reddit/components/StructuredStyles/BladeDrawerController/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -2194,8 +2194,8 @@
 				N = n.n(j),
 				T = n("./node_modules/lodash/upperFirst.js"),
 				w = n.n(T),
-				I = n("./src/reddit/actions/pages/subredditLeaderboard.ts"),
-				L = n("./src/reddit/actions/subreddit/topSubreddits.ts"),
+				L = n("./src/reddit/actions/pages/subredditLeaderboard.ts"),
+				I = n("./src/reddit/actions/subreddit/topSubreddits.ts"),
 				P = n("./src/reddit/components/TopSubredditsWidget/SubredditRankItem.tsx"),
 				B = n("./src/reddit/components/TopSubredditsWidget/SubredditRankItemPlaceholder.tsx"),
 				D = n("./src/reddit/models/GoodContent/index.ts"),
@@ -2222,7 +2222,7 @@
 					isInLeaderboardEntryJoinOptimizationsExperiment: e => !(!Object(M.g)(e) || !Object(F.a)(e) && !Object(F.c)(e))
 				}),
 				J = Object(o.b)(H, e => ({
-					fetchMoreSubreddits: (t, n) => e(Object(L.b)(t, n))
+					fetchMoreSubreddits: (t, n) => e(Object(I.b)(t, n))
 				}));
 			class Q extends i.a.Component {
 				constructor() {
@@ -2254,7 +2254,7 @@
 						categoryName: t,
 						isMod: n,
 						rankings: s
-					} = this.props, r = O()(s), a = r && r.cursor, i = Object(I.checkIsModCategory)(t, n);
+					} = this.props, r = O()(s), a = r && r.cursor, i = Object(L.checkIsModCategory)(t, n);
 					return {
 						after: a,
 						categoryId: e === b.c ? b.f : e,
@@ -2483,7 +2483,7 @@
 				Ee = (e, {
 					match: t
 				}) => Object(g.b)(t.params.categoryName || ""),
-				_e = Object(m.Ie)(b.i),
+				_e = Object(m.He)(b.i),
 				Se = Object(d.c)({
 					categories: e => Object(ye.c)(e, {
 						categoriesOrder: _e
@@ -2612,4 +2612,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.6e0049ec40fc5b6c0210.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.58b8f187ff9b9b2cabbc.js.map

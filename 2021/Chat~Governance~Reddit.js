@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.bf2e1648dc74a2759efc.js
-// Retrieved at 10/13/2021, 5:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.9035a0b949d74179adb1.js
+// Retrieved at 10/13/2021, 5:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -2500,10 +2500,10 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("148282"),
+				buildNumber: Object(r.c)("148288"),
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
-				buildTimestamp: Object(r.b)("1634158760"),
+				buildTimestamp: Object(r.b)("1634160134"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -5038,14 +5038,14 @@
 					}))
 				},
 				z = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %cddffc15c418dc8ebe21e584909b1b0900528345c-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c9741545820b8b2a0d8652ed085340d3fd45ba54b-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${v.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "ddffc15c418dc8ebe21e584909b1b0900528345c-production",
+						release: "9741545820b8b2a0d8652ed085340d3fd45ba54b-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -5558,7 +5558,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "ddffc15c418dc8ebe21e584909b1b0900528345c-production",
+						releaseClient: "9741545820b8b2a0d8652ed085340d3fd45ba54b-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -7622,7 +7622,7 @@
 									icon: e.category_icon,
 									id: e.category_id,
 									name: e.category_name,
-									displayText: Object(c.Je)(e.category_name)
+									displayText: Object(c.Ie)(e.category_name)
 								};
 								i.push(r.id), t[r.id] = r
 							}), {
@@ -10235,7 +10235,7 @@
 								user: v
 							} = o(),
 							E = i && i.match && i.match.queryParams,
-							T = E && E[`experiment_${u.Bd}`];
+							T = E && E[`experiment_${u.Ad}`];
 						Object(h.g)(o()), e.pathname.split("/").some(e => "comments" === e), Object(f.i)(o());
 						if (s(R({
 								action: t,
@@ -11030,7 +11030,7 @@
 					const o = r(),
 						d = i && i.hasNewTabModifier;
 					let l = e.permalink;
-					if (Object(N.b)(e) && Object(x.c)(e) && Object(re.u)(o)) {
+					if (Object(N.b)(e) && Object(x.c)(e) && Object(re.t)(o)) {
 						const t = Object(y.U)(o, {
 							postId: e.id
 						});
@@ -14690,37 +14690,37 @@
 		},
 		"./src/reddit/constants/experiments.ts": function(e, t, i) {
 			"use strict";
-			i.d(t, "te", (function() {
+			i.d(t, "se", (function() {
 				return r
 			})), i.d(t, "C", (function() {
 				return s
-			})), i.d(t, "Rd", (function() {
+			})), i.d(t, "Qd", (function() {
 				return o
-			})), i.d(t, "se", (function() {
+			})), i.d(t, "re", (function() {
 				return d
-			})), i.d(t, "ie", (function() {
+			})), i.d(t, "he", (function() {
 				return a
-			})), i.d(t, "Pc", (function() {
+			})), i.d(t, "Oc", (function() {
 				return l
-			})), i.d(t, "Ed", (function() {
-				return u
-			})), i.d(t, "nd", (function() {
-				return c
-			})), i.d(t, "od", (function() {
-				return _
-			})), i.d(t, "Bd", (function() {
-				return m
-			})), i.d(t, "Cd", (function() {
-				return p
 			})), i.d(t, "Dd", (function() {
+				return u
+			})), i.d(t, "md", (function() {
+				return c
+			})), i.d(t, "nd", (function() {
+				return _
+			})), i.d(t, "Ad", (function() {
+				return m
+			})), i.d(t, "Bd", (function() {
+				return p
+			})), i.d(t, "Cd", (function() {
 				return h
 			})), i.d(t, "E", (function() {
 				return f
 			})), i.d(t, "Ab", (function() {
 				return b
-			})), i.d(t, "Id", (function() {
+			})), i.d(t, "Hd", (function() {
 				return g
-			})), i.d(t, "fe", (function() {
+			})), i.d(t, "ee", (function() {
 				return w
 			})), i.d(t, "Pb", (function() {
 				return y
@@ -14730,7 +14730,7 @@
 				return E
 			})), i.d(t, "K", (function() {
 				return T
-			})), i.d(t, "he", (function() {
+			})), i.d(t, "ge", (function() {
 				return S
 			})), i.d(t, "lb", (function() {
 				return O
@@ -14748,7 +14748,7 @@
 				return A
 			})), i.d(t, "w", (function() {
 				return j
-			})), i.d(t, "Ce", (function() {
+			})), i.d(t, "Be", (function() {
 				return D
 			})), i.d(t, "bb", (function() {
 				return P
@@ -14778,69 +14778,69 @@
 				return K
 			})), i.d(t, "hc", (function() {
 				return $
-			})), i.d(t, "zc", (function() {
+			})), i.d(t, "yc", (function() {
 				return z
-			})), i.d(t, "Ac", (function() {
+			})), i.d(t, "zc", (function() {
 				return Y
-			})), i.d(t, "Sd", (function() {
+			})), i.d(t, "Rd", (function() {
 				return Q
-			})), i.d(t, "Jc", (function() {
+			})), i.d(t, "Ic", (function() {
 				return J
-			})), i.d(t, "td", (function() {
+			})), i.d(t, "sd", (function() {
 				return X
-			})), i.d(t, "Oc", (function() {
+			})), i.d(t, "Nc", (function() {
 				return Z
 			})), i.d(t, "jb", (function() {
 				return ee
-			})), i.d(t, "sd", (function() {
+			})), i.d(t, "rd", (function() {
 				return te
 			})), i.d(t, "db", (function() {
 				return ie
-			})), i.d(t, "ee", (function() {
+			})), i.d(t, "de", (function() {
 				return ne
-			})), i.d(t, "Vc", (function() {
+			})), i.d(t, "Uc", (function() {
 				return re
 			})), i.d(t, "z", (function() {
 				return se
 			})), i.d(t, "y", (function() {
 				return oe
-			})), i.d(t, "Nc", (function() {
+			})), i.d(t, "Mc", (function() {
 				return de
-			})), i.d(t, "Td", (function() {
+			})), i.d(t, "Sd", (function() {
 				return ae
-			})), i.d(t, "Bc", (function() {
+			})), i.d(t, "Ac", (function() {
 				return le
-			})), i.d(t, "Wc", (function() {
+			})), i.d(t, "Vc", (function() {
 				return ue
-			})), i.d(t, "Be", (function() {
+			})), i.d(t, "Ae", (function() {
 				return ce
-			})), i.d(t, "kd", (function() {
+			})), i.d(t, "jd", (function() {
 				return _e
-			})), i.d(t, "Xd", (function() {
-				return me
-			})), i.d(t, "Zd", (function() {
-				return pe
-			})), i.d(t, "Vd", (function() {
-				return he
 			})), i.d(t, "Wd", (function() {
+				return me
+			})), i.d(t, "Yd", (function() {
+				return pe
+			})), i.d(t, "Ud", (function() {
+				return he
+			})), i.d(t, "Vd", (function() {
 				return fe
 			})), i.d(t, "j", (function() {
 				return be
 			})), i.d(t, "h", (function() {
 				return ge
-			})), i.d(t, "Yc", (function() {
+			})), i.d(t, "Xc", (function() {
 				return we
-			})), i.d(t, "Ud", (function() {
+			})), i.d(t, "Td", (function() {
 				return ye
 			})), i.d(t, "Cb", (function() {
 				return ve
-			})), i.d(t, "Gd", (function() {
+			})), i.d(t, "Fd", (function() {
 				return Ee
-			})), i.d(t, "je", (function() {
+			})), i.d(t, "ie", (function() {
 				return Te
-			})), i.d(t, "Yd", (function() {
+			})), i.d(t, "Xd", (function() {
 				return Se
-			})), i.d(t, "ke", (function() {
+			})), i.d(t, "je", (function() {
 				return Oe
 			})), i.d(t, "Bb", (function() {
 				return Ie
@@ -14852,13 +14852,13 @@
 				return Ce
 			})), i.d(t, "gc", (function() {
 				return Ne
-			})), i.d(t, "Fd", (function() {
+			})), i.d(t, "Ed", (function() {
 				return Ae
 			})), i.d(t, "pb", (function() {
 				return je
-			})), i.d(t, "qc", (function() {
+			})), i.d(t, "pc", (function() {
 				return De
-			})), i.d(t, "oc", (function() {
+			})), i.d(t, "nc", (function() {
 				return Pe
 			})), i.d(t, "vb", (function() {
 				return xe
@@ -14866,320 +14866,318 @@
 				return Le
 			})), i.d(t, "cb", (function() {
 				return Be
-			})), i.d(t, "Mc", (function() {
+			})), i.d(t, "Lc", (function() {
 				return ke
-			})), i.d(t, "hd", (function() {
+			})), i.d(t, "gd", (function() {
 				return Me
-			})), i.d(t, "vc", (function() {
+			})), i.d(t, "uc", (function() {
 				return Ue
-			})), i.d(t, "wc", (function() {
+			})), i.d(t, "vc", (function() {
 				return Ge
-			})), i.d(t, "tc", (function() {
+			})), i.d(t, "sc", (function() {
 				return Ve
 			})), i.d(t, "Yb", (function() {
 				return He
 			})), i.d(t, "Zb", (function() {
 				return qe
-			})), i.d(t, "ze", (function() {
+			})), i.d(t, "ye", (function() {
 				return We
 			})), i.d(t, "yb", (function() {
 				return Ke
 			})), i.d(t, "zb", (function() {
 				return $e
-			})), i.d(t, "sc", (function() {
+			})), i.d(t, "rc", (function() {
 				return ze
-			})), i.d(t, "jc", (function() {
+			})), i.d(t, "kc", (function() {
 				return Ye
 			})), i.d(t, "lc", (function() {
 				return Qe
-			})), i.d(t, "mc", (function() {
+			})), i.d(t, "jc", (function() {
 				return Je
-			})), i.d(t, "kc", (function() {
-				return Xe
 			})), i.d(t, "gb", (function() {
-				return Ze
+				return Xe
 			})), i.d(t, "hb", (function() {
-				return et
+				return Ze
 			})), i.d(t, "ib", (function() {
+				return et
+			})), i.d(t, "mc", (function() {
 				return tt
-			})), i.d(t, "nc", (function() {
-				return it
 			})), i.d(t, "Tb", (function() {
-				return nt
+				return it
 			})), i.d(t, "H", (function() {
-				return rt
+				return nt
 			})), i.d(t, "G", (function() {
-				return st
+				return rt
 			})), i.d(t, "mb", (function() {
+				return st
+			})), i.d(t, "qd", (function() {
 				return ot
-			})), i.d(t, "rd", (function() {
-				return dt
 			})), i.d(t, "r", (function() {
+				return dt
+			})), i.d(t, "fd", (function() {
 				return at
-			})), i.d(t, "gd", (function() {
+			})), i.d(t, "fe", (function() {
 				return lt
-			})), i.d(t, "ge", (function() {
+			})), i.d(t, "qe", (function() {
 				return ut
-			})), i.d(t, "re", (function() {
-				return ct
 			})), i.d(t, "ic", (function() {
-				return _t
+				return ct
 			})), i.d(t, "wb", (function() {
-				return mt
+				return _t
 			})), i.d(t, "n", (function() {
+				return mt
+			})), i.d(t, "ud", (function() {
 				return pt
-			})), i.d(t, "vd", (function() {
+			})), i.d(t, "Wc", (function() {
 				return ht
-			})), i.d(t, "Xc", (function() {
-				return ft
 			})), i.d(t, "nb", (function() {
-				return bt
+				return ft
 			})), i.d(t, "fb", (function() {
+				return bt
+			})), i.d(t, "Gd", (function() {
 				return gt
-			})), i.d(t, "Hd", (function() {
-				return wt
 			})), i.d(t, "J", (function() {
-				return yt
+				return wt
 			})), i.d(t, "I", (function() {
-				return vt
+				return yt
 			})), i.d(t, "ob", (function() {
+				return vt
+			})), i.d(t, "qc", (function() {
 				return Et
-			})), i.d(t, "rc", (function() {
+			})), i.d(t, "wc", (function() {
 				return Tt
 			})), i.d(t, "xc", (function() {
 				return St
-			})), i.d(t, "yc", (function() {
+			})), i.d(t, "De", (function() {
 				return Ot
-			})), i.d(t, "Ee", (function() {
-				return It
 			})), i.d(t, "L", (function() {
-				return Rt
-			})), i.d(t, "zd", (function() {
-				return Ft
-			})), i.d(t, "pc", (function() {
-				return Ct
-			})), i.d(t, "tb", (function() {
-				return Nt
-			})), i.d(t, "sb", (function() {
-				return At
-			})), i.d(t, "rb", (function() {
-				return jt
-			})), i.d(t, "qb", (function() {
-				return Dt
-			})), i.d(t, "ld", (function() {
-				return Pt
-			})), i.d(t, "He", (function() {
-				return xt
-			})), i.d(t, "o", (function() {
-				return Lt
-			})), i.d(t, "uc", (function() {
-				return Bt
+				return It
 			})), i.d(t, "yd", (function() {
-				return kt
-			})), i.d(t, "xd", (function() {
-				return Mt
+				return Rt
+			})), i.d(t, "oc", (function() {
+				return Ft
+			})), i.d(t, "tb", (function() {
+				return Ct
+			})), i.d(t, "sb", (function() {
+				return Nt
+			})), i.d(t, "rb", (function() {
+				return At
+			})), i.d(t, "qb", (function() {
+				return jt
+			})), i.d(t, "kd", (function() {
+				return Dt
 			})), i.d(t, "Ge", (function() {
-				return Ut
+				return Pt
+			})), i.d(t, "o", (function() {
+				return xt
+			})), i.d(t, "tc", (function() {
+				return Lt
+			})), i.d(t, "xd", (function() {
+				return Bt
+			})), i.d(t, "wd", (function() {
+				return kt
 			})), i.d(t, "Fe", (function() {
-				return Gt
+				return Mt
+			})), i.d(t, "Ee", (function() {
+				return Ut
 			})), i.d(t, "ub", (function() {
-				return Vt
-			})), i.d(t, "Cc", (function() {
+				return Gt
+			})), i.d(t, "Bc", (function() {
+				return Ht
+			})), i.d(t, "Je", (function() {
 				return qt
-			})), i.d(t, "Ke", (function() {
-				return Wt
-			})), i.d(t, "de", (function() {
-				return Yt
+			})), i.d(t, "ce", (function() {
+				return zt
+			})), i.d(t, "Dc", (function() {
+				return ti
 			})), i.d(t, "Ec", (function() {
 				return ii
-			})), i.d(t, "Fc", (function() {
-				return ni
-			})), i.d(t, "Hc", (function() {
-				return si
 			})), i.d(t, "Gc", (function() {
-				return ui
-			})), i.d(t, "xe", (function() {
-				return ci
-			})), i.d(t, "M", (function() {
-				return _i
+				return ri
+			})), i.d(t, "Fc", (function() {
+				return li
 			})), i.d(t, "we", (function() {
-				return mi
-			})), i.d(t, "ae", (function() {
+				return ui
+			})), i.d(t, "M", (function() {
+				return ci
+			})), i.d(t, "ve", (function() {
+				return _i
+			})), i.d(t, "Zd", (function() {
+				return pi
+			})), i.d(t, "Sc", (function() {
 				return hi
-			})), i.d(t, "Tc", (function() {
+			})), i.d(t, "ne", (function() {
 				return fi
-			})), i.d(t, "oe", (function() {
-				return bi
-			})), i.d(t, "Od", (function() {
+			})), i.d(t, "Nd", (function() {
+				return gi
+			})), i.d(t, "Kd", (function() {
 				return wi
 			})), i.d(t, "Ld", (function() {
-				return yi
-			})), i.d(t, "Md", (function() {
+				return vi
+			})), i.d(t, "pd", (function() {
 				return Ei
-			})), i.d(t, "qd", (function() {
+			})), i.d(t, "Md", (function() {
 				return Ti
-			})), i.d(t, "Nd", (function() {
-				return Si
 			})), i.d(t, "Lb", (function() {
-				return Fi
-			})), i.d(t, "Qd", (function() {
-				return Ni
-			})), i.d(t, "le", (function() {
-				return ji
-			})), i.d(t, "ue", (function() {
+				return Ri
+			})), i.d(t, "Pd", (function() {
+				return Ci
+			})), i.d(t, "ke", (function() {
+				return Ai
+			})), i.d(t, "te", (function() {
+				return Di
+			})), i.d(t, "Jd", (function() {
 				return Pi
-			})), i.d(t, "Kd", (function() {
-				return xi
-			})), i.d(t, "Lc", (function() {
-				return Li
-			})), i.d(t, "T", (function() {
-				return Bi
-			})), i.d(t, "ne", (function() {
-				return ki
-			})), i.d(t, "Gb", (function() {
-				return Mi
-			})), i.d(t, "Fb", (function() {
-				return Ui
-			})), i.d(t, "c", (function() {
-				return Hi
-			})), i.d(t, "f", (function() {
-				return qi
-			})), i.d(t, "e", (function() {
-				return Wi
-			})), i.d(t, "a", (function() {
-				return Ki
-			})), i.d(t, "O", (function() {
-				return $i
-			})), i.d(t, "A", (function() {
-				return zi
-			})), i.d(t, "De", (function() {
-				return Yi
-			})), i.d(t, "Db", (function() {
-				return Qi
-			})), i.d(t, "P", (function() {
-				return Ji
-			})), i.d(t, "v", (function() {
-				return Xi
-			})), i.d(t, "Sb", (function() {
-				return Zi
 			})), i.d(t, "Kc", (function() {
-				return on
-			})), i.d(t, "Sc", (function() {
-				return an
-			})), i.d(t, "ud", (function() {
-				return ln
-			})), i.d(t, "U", (function() {
-				return un
-			})), i.d(t, "B", (function() {
-				return _n
-			})), i.d(t, "ab", (function() {
-				return mn
-			})), i.d(t, "Uc", (function() {
-				return bn
-			})), i.d(t, "x", (function() {
-				return gn
+				return xi
+			})), i.d(t, "T", (function() {
+				return Li
+			})), i.d(t, "me", (function() {
+				return Bi
+			})), i.d(t, "Gb", (function() {
+				return ki
+			})), i.d(t, "Fb", (function() {
+				return Mi
+			})), i.d(t, "c", (function() {
+				return Vi
+			})), i.d(t, "f", (function() {
+				return Hi
+			})), i.d(t, "e", (function() {
+				return qi
+			})), i.d(t, "a", (function() {
+				return Wi
+			})), i.d(t, "O", (function() {
+				return Ki
+			})), i.d(t, "A", (function() {
+				return $i
+			})), i.d(t, "Ce", (function() {
+				return zi
+			})), i.d(t, "Db", (function() {
+				return Yi
+			})), i.d(t, "P", (function() {
+				return Qi
+			})), i.d(t, "v", (function() {
+				return Ji
+			})), i.d(t, "Sb", (function() {
+				return Xi
+			})), i.d(t, "Jc", (function() {
+				return sn
 			})), i.d(t, "Rc", (function() {
+				return dn
+			})), i.d(t, "td", (function() {
+				return an
+			})), i.d(t, "U", (function() {
+				return ln
+			})), i.d(t, "B", (function() {
+				return cn
+			})), i.d(t, "ab", (function() {
+				return _n
+			})), i.d(t, "Tc", (function() {
+				return fn
+			})), i.d(t, "x", (function() {
+				return bn
+			})), i.d(t, "Qc", (function() {
+				return gn
+			})), i.d(t, "ae", (function() {
 				return wn
-			})), i.d(t, "be", (function() {
+			})), i.d(t, "Yc", (function() {
 				return yn
-			})), i.d(t, "Zc", (function() {
-				return vn
 			})), i.d(t, "d", (function() {
-				return Fn
+				return Rn
 			})), i.d(t, "b", (function() {
+				return Fn
+			})), i.d(t, "dd", (function() {
 				return Cn
-			})), i.d(t, "ed", (function() {
+			})), i.d(t, "be", (function() {
 				return Nn
-			})), i.d(t, "ce", (function() {
-				return An
 			})), i.d(t, "Mb", (function() {
+				return An
+			})), i.d(t, "oe", (function() {
 				return jn
 			})), i.d(t, "pe", (function() {
 				return Dn
-			})), i.d(t, "qe", (function() {
-				return Pn
 			})), i.d(t, "Ib", (function() {
-				return xn
-			})), i.d(t, "fd", (function() {
-				return Gn
-			})), i.d(t, "Jd", (function() {
-				return qn
+				return Pn
+			})), i.d(t, "ed", (function() {
+				return Un
+			})), i.d(t, "Id", (function() {
+				return Hn
 			})), i.d(t, "Q", (function() {
-				return Wn
+				return qn
 			})), i.d(t, "s", (function() {
+				return Wn
+			})), i.d(t, "Pc", (function() {
 				return Kn
-			})), i.d(t, "Qc", (function() {
-				return $n
-			})), i.d(t, "jd", (function() {
-				return zn
-			})), i.d(t, "Ae", (function() {
-				return Qn
-			})), i.d(t, "S", (function() {
-				return rr
-			})), i.d(t, "ve", (function() {
-				return sr
-			})), i.d(t, "R", (function() {
-				return or
-			})), i.d(t, "bd", (function() {
-				return dr
-			})), i.d(t, "wd", (function() {
-				return ar
-			})), i.d(t, "u", (function() {
-				return lr
 			})), i.d(t, "id", (function() {
-				return ur
-			})), i.d(t, "me", (function() {
-				return cr
-			})), i.d(t, "Hb", (function() {
-				return mr
-			})), i.d(t, "Jb", (function() {
-				return pr
-			})), i.d(t, "Kb", (function() {
-				return hr
-			})), i.d(t, "t", (function() {
-				return fr
+				return $n
+			})), i.d(t, "ze", (function() {
+				return Yn
+			})), i.d(t, "S", (function() {
+				return nr
+			})), i.d(t, "ue", (function() {
+				return rr
+			})), i.d(t, "R", (function() {
+				return sr
 			})), i.d(t, "ad", (function() {
+				return or
+			})), i.d(t, "vd", (function() {
+				return dr
+			})), i.d(t, "u", (function() {
+				return ar
+			})), i.d(t, "hd", (function() {
+				return lr
+			})), i.d(t, "le", (function() {
+				return ur
+			})), i.d(t, "Hb", (function() {
+				return _r
+			})), i.d(t, "Jb", (function() {
+				return mr
+			})), i.d(t, "Kb", (function() {
+				return pr
+			})), i.d(t, "t", (function() {
+				return hr
+			})), i.d(t, "Zc", (function() {
+				return fr
+			})), i.d(t, "bd", (function() {
 				return br
-			})), i.d(t, "cd", (function() {
-				return gr
 			})), i.d(t, "Qb", (function() {
+				return gr
+			})), i.d(t, "Od", (function() {
 				return wr
-			})), i.d(t, "Pd", (function() {
-				return yr
-			})), i.d(t, "dd", (function() {
+			})), i.d(t, "cd", (function() {
+				return vr
+			})), i.d(t, "Hc", (function() {
 				return Tr
-			})), i.d(t, "Ic", (function() {
-				return Or
 			})), i.d(t, "N", (function() {
-				return Ir
+				return Sr
 			})), i.d(t, "Eb", (function() {
-				return Rr
-			})), i.d(t, "Ad", (function() {
-				return Fr
+				return Or
+			})), i.d(t, "zd", (function() {
+				return Ir
 			})), i.d(t, "Y", (function() {
-				return Cr
+				return Rr
 			})), i.d(t, "X", (function() {
-				return Nr
+				return Fr
 			})), i.d(t, "W", (function() {
-				return Ar
+				return Cr
 			})), i.d(t, "V", (function() {
+				return Nr
+			})), i.d(t, "od", (function() {
+				return Ar
+			})), i.d(t, "xe", (function() {
 				return jr
-			})), i.d(t, "pd", (function() {
-				return Dr
-			})), i.d(t, "ye", (function() {
-				return Pr
 			})), i.d(t, "Z", (function() {
-				return Br
+				return xr
 			})), i.d(t, "m", (function() {
-				return kr
-			})), i.d(t, "Dc", (function() {
+				return Lr
+			})), i.d(t, "Cc", (function() {
+				return Br
+			})), i.d(t, "He", (function() {
 				return Mr
+			})), i.d(t, "ld", (function() {
+				return Ur
 			})), i.d(t, "Ie", (function() {
 				return Gr
-			})), i.d(t, "md", (function() {
-				return Vr
-			})), i.d(t, "Je", (function() {
-				return Hr
 			}));
 			i("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = i("./node_modules/fbt/lib/FbtPublic.js");
@@ -15282,72 +15280,74 @@
 				Ke = "d2x_serp_redesign_layout_milestone1",
 				$e = "d2x_serp_redesign_layout_milestone2",
 				ze = "web_econ_prediction_end_time",
-				Ye = "web_econ_powerups_altruism_messaging",
-				Qe = "backend_econ_powerups_award",
-				Je = "web_econ_powerups_show_user_flair",
-				Xe = "web_econ_powerups_avatar_perk",
-				Ze = "d2x_geo_upsell_tier_0",
-				et = "d2x_geo_upsell_tier_1",
-				tt = "d2x_geo_upsell_tier_2",
-				it = "web_econ_supporter_flairs",
-				nt = "web_econ_talk_room_post",
-				rt = "ae_country_setting_d2x",
-				st = "ae_comment_toxicity_setting_r2",
-				ot = "d2x_inbox_exposure",
-				dt = "d2x_nav_click_events",
-				at = "web_econ_avatar_nft",
-				lt = "d2x_leaderboard_takeover",
-				ut = "forking_community_creation",
-				ct = "d2x_topic_chaining_onboarding",
-				_t = "backend_econ_payments_sandbox",
-				mt = "d2x_realtimegql_presence_load_test",
-				pt = "web2x_animation_count_v2",
-				ht = "nsfw_listing_below_content_v2",
-				ft = "d2x_inbox_ctas",
-				bt = "d2x_inbox_infinite_scroll",
-				gt = "d2x_dn_inbox_prompt",
-				wt = "promoted_flair_cleanup",
-				yt = "country_sites_enabled",
-				vt = "country_sites_admin_only",
-				Et = "d2x_inbox_policy_banner",
-				Tt = "web_econ_prediction_cancellation",
-				St = "web_econ_predictions_undo_choice",
-				Ot = "web_econ_prediction_undo_result",
-				It = "web2x_celebratory_moments",
-				Rt = "d2x_creator_stats",
-				Ft = "open_ai_pilot_v1",
-				Ct = "web_econ_predictions_approved_mod_users",
-				Nt = "d2x_join_optimizations_truncated",
-				At = "d2x_join_optimizations_leaderboard_entry",
-				jt = "d2x_join_optimizations_leaderboard_detail",
-				Dt = "d2x_join_optimizations_combined",
-				Pt = "d2x_mod_pn_settings",
-				xt = "web2x_typing_indicators_v2_m1",
-				Lt = "archive_toggle_d2x",
-				Bt = "web_econ_predictions_marketing_page_entry",
-				kt = "d2x_online_status_write_load_test",
-				Mt = "d2x_online_status_read_load_test",
-				Ut = "web2x_reading_indicators_write_load_test",
-				Gt = "web2x_reading_indicators_read_load_test",
-				Vt = "d2x_logged_out_mini_inbox";
-			var Ht;
+				Ye = "backend_econ_powerups_award",
+				Qe = "web_econ_powerups_show_user_flair",
+				Je = "web_econ_powerups_avatar_perk",
+				Xe = "d2x_geo_upsell_tier_0",
+				Ze = "d2x_geo_upsell_tier_1",
+				et = "d2x_geo_upsell_tier_2",
+				tt = "web_econ_supporter_flairs",
+				it = "web_econ_talk_room_post",
+				nt = "ae_country_setting_d2x",
+				rt = "ae_comment_toxicity_setting_r2",
+				st = "d2x_inbox_exposure",
+				ot = "d2x_nav_click_events",
+				dt = "web_econ_avatar_nft",
+				at = "d2x_leaderboard_takeover",
+				lt = "forking_community_creation",
+				ut = "d2x_topic_chaining_onboarding",
+				ct = "backend_econ_payments_sandbox",
+				_t = "d2x_realtimegql_presence_load_test",
+				mt = "web2x_animation_count_v2",
+				pt = "nsfw_listing_below_content_v2",
+				ht = "d2x_inbox_ctas",
+				ft = "d2x_inbox_infinite_scroll",
+				bt = "d2x_dn_inbox_prompt",
+				gt = "promoted_flair_cleanup",
+				wt = "country_sites_enabled",
+				yt = "country_sites_admin_only",
+				vt = "d2x_inbox_policy_banner",
+				Et = "web_econ_prediction_cancellation",
+				Tt = "web_econ_predictions_undo_choice",
+				St = "web_econ_prediction_undo_result",
+				Ot = "web2x_celebratory_moments",
+				It = "d2x_creator_stats",
+				Rt = "open_ai_pilot_v1",
+				Ft = "web_econ_predictions_approved_mod_users",
+				Ct = "d2x_join_optimizations_truncated",
+				Nt = "d2x_join_optimizations_leaderboard_entry",
+				At = "d2x_join_optimizations_leaderboard_detail",
+				jt = "d2x_join_optimizations_combined",
+				Dt = "d2x_mod_pn_settings",
+				Pt = "web2x_typing_indicators_v2_m1",
+				xt = "archive_toggle_d2x",
+				Lt = "web_econ_predictions_marketing_page_entry",
+				Bt = "d2x_online_status_write_load_test",
+				kt = "d2x_online_status_read_load_test",
+				Mt = "web2x_reading_indicators_write_load_test",
+				Ut = "web2x_reading_indicators_read_load_test",
+				Gt = "d2x_logged_out_mini_inbox";
+			var Vt;
 			! function(e) {
 				e.Control1 = "control_1", e.Control2 = "control_2"
-			}(Ht || (Ht = {}));
-			const qt = "enabled",
-				Wt = e => e === Ht.Control1 || e === Ht.Control2;
-			var Kt, $t, zt, Yt, Qt, Jt, Xt, Zt, ei, ti, ii, ni, ri, si, oi, di, ai, li, ui, ci, _i, mi, pi, hi, fi, bi, gi, wi, yi, vi, Ei, Ti, Si, Oi, Ii, Ri, Fi, Ci, Ni, Ai, ji, Di, Pi, xi, Li, Bi, ki, Mi, Ui, Gi, Vi, Hi, qi, Wi, Ki, $i, zi, Yi, Qi, Ji, Xi, Zi, en, tn, nn, rn, sn, on, dn, an, ln, un, cn, _n, mn, pn, hn, fn, bn, gn, wn, yn, vn, En, Tn, Sn, On, In, Rn, Fn, Cn, Nn, An, jn, Dn, Pn, xn, Ln, Bn, kn, Mn, Un, Gn, Vn, Hn, qn, Wn, Kn, $n, zn, Yn, Qn, Jn, Xn, Zn, er, tr, ir, nr, rr, sr, or, dr, ar, lr, ur, cr, _r, mr, pr, hr, fr, br, gr, wr, yr, vr, Er, Tr, Sr, Or, Ir, Rr, Fr, Cr, Nr, Ar, jr, Dr, Pr, xr, Lr, Br;
+			}(Vt || (Vt = {}));
+			const Ht = "enabled",
+				qt = e => e === Vt.Control1 || e === Vt.Control2;
+			var Wt, Kt, $t, zt, Yt, Qt, Jt, Xt, Zt, ei, ti, ii, ni, ri, si, oi, di, ai, li, ui, ci, _i, mi, pi, hi, fi, bi, gi, wi, yi, vi, Ei, Ti, Si, Oi, Ii, Ri, Fi, Ci, Ni, Ai, ji, Di, Pi, xi, Li, Bi, ki, Mi, Ui, Gi, Vi, Hi, qi, Wi, Ki, $i, zi, Yi, Qi, Ji, Xi, Zi, en, tn, nn, rn, sn, on, dn, an, ln, un, cn, _n, mn, pn, hn, fn, bn, gn, wn, yn, vn, En, Tn, Sn, On, In, Rn, Fn, Cn, Nn, An, jn, Dn, Pn, xn, Ln, Bn, kn, Mn, Un, Gn, Vn, Hn, qn, Wn, Kn, $n, zn, Yn, Qn, Jn, Xn, Zn, er, tr, ir, nr, rr, sr, or, dr, ar, lr, ur, cr, _r, mr, pr, hr, fr, br, gr, wr, yr, vr, Er, Tr, Sr, Or, Ir, Rr, Fr, Cr, Nr, Ar, jr, Dr, Pr, xr;
 			! function(e) {
+				e.Enabled = "enabled"
+			}(Wt || (Wt = {})),
+			function(e) {
 				e.Enabled = "enabled"
 			}(Kt || (Kt = {})),
 			function(e) {
 				e.Enabled = "enabled"
 			}($t || ($t = {})),
 			function(e) {
-				e.Enabled = "enabled"
+				e.Five = "five_percent", e.Ten = "ten_percent", e.Fifty = "fifty_percent"
 			}(zt || (zt = {})),
 			function(e) {
-				e.Five = "five_percent", e.Ten = "ten_percent", e.Fifty = "fifty_percent"
+				e.Enabled = "enabled"
 			}(Yt || (Yt = {})),
 			function(e) {
 				e.Enabled = "enabled"
@@ -15368,88 +15368,88 @@
 				e.Enabled = "enabled"
 			}(ti || (ti = {})),
 			function(e) {
-				e.Enabled = "enabled"
+				e.EnabledBanner = "enabled_banner", e.ControlBanner = "control_banner"
 			}(ii || (ii = {})),
 			function(e) {
-				e.EnabledBanner = "enabled_banner", e.ControlBanner = "control_banner"
+				e.Enabled = "enabled"
 			}(ni || (ni = {})),
 			function(e) {
-				e.Enabled = "enabled"
+				e.Enabled = "enabled", e.ListingEnabled = "listing_enabled"
 			}(ri || (ri = {})),
 			function(e) {
-				e.Enabled = "enabled", e.ListingEnabled = "listing_enabled"
+				e.Enabled = "enabled"
 			}(si || (si = {})),
 			function(e) {
-				e.Enabled = "enabled"
+				e.Variant1 = "variant_1"
 			}(oi || (oi = {})),
 			function(e) {
-				e.Variant1 = "variant_1"
+				e.Enabled = "enabled"
 			}(di || (di = {})),
 			function(e) {
-				e.Enabled = "enabled"
+				e.Variant1 = "variant_1", e.Variant2 = "variant_2", e.Variant3 = "variant_3"
 			}(ai || (ai = {})),
 			function(e) {
-				e.Variant1 = "variant_1", e.Variant2 = "variant_2", e.Variant3 = "variant_3"
+				e.Enabled = "enabled"
 			}(li || (li = {})),
 			function(e) {
-				e.Enabled = "enabled"
+				e.Treatment1 = "treatment_1"
 			}(ui || (ui = {})),
 			function(e) {
 				e.Treatment1 = "treatment_1"
 			}(ci || (ci = {})),
 			function(e) {
-				e.Treatment1 = "treatment_1"
+				e.Holdout = "holdout", e.AdHoldout = "ad_holdout"
 			}(_i || (_i = {})),
 			function(e) {
-				e.Holdout = "holdout", e.AdHoldout = "ad_holdout"
+				e.TestTreatment1 = "toast", e.TestTreatment2 = "popup", e.TestTreatment3 = "knoxses"
 			}(mi || (mi = {})),
 			function(e) {
-				e.TestTreatment1 = "toast", e.TestTreatment2 = "popup", e.TestTreatment3 = "knoxses"
+				e.Treatment1 = "treatment_1"
 			}(pi || (pi = {})),
 			function(e) {
-				e.Treatment1 = "treatment_1"
+				e.On = "on"
 			}(hi || (hi = {})),
 			function(e) {
-				e.On = "on"
+				e.ShowTopContent = "show_top_content"
 			}(fi || (fi = {})),
 			function(e) {
-				e.ShowTopContent = "show_top_content"
+				e.Rollout = "enabled", e.Holdout = "holdout"
 			}(bi || (bi = {})),
 			function(e) {
-				e.Rollout = "enabled", e.Holdout = "holdout"
+				e.Truncate = "truncate", e.SmallBanner = "small_banner", e.Both = "both"
 			}(gi || (gi = {})),
 			function(e) {
-				e.Truncate = "truncate", e.SmallBanner = "small_banner", e.Both = "both"
+				e.Max1 = "max_1", e.Max2 = "max_2"
 			}(wi || (wi = {})),
 			function(e) {
-				e.Max1 = "max_1", e.Max2 = "max_2"
+				e.Treatment1 = "treatment_1", e.Treatment2 = "treatment_2"
 			}(yi || (yi = {})),
 			function(e) {
-				e.Treatment1 = "treatment_1", e.Treatment2 = "treatment_2"
+				e.NoActions = "no_actions", e.NoAds = "no_ads", e.NoWidgets = "no_widgets", e.Combined = "combined"
 			}(vi || (vi = {})),
 			function(e) {
-				e.NoActions = "no_actions", e.NoAds = "no_ads", e.NoWidgets = "no_widgets", e.Combined = "combined"
+				e.Enabled = "enabled"
 			}(Ei || (Ei = {})),
 			function(e) {
-				e.Enabled = "enabled"
+				e.IdCard = "id_card", e.RailSwap = "rail_swap"
 			}(Ti || (Ti = {})),
 			function(e) {
-				e.IdCard = "id_card", e.RailSwap = "rail_swap"
+				e.Narrow = "narrow", e.NarrowCard = "narrow_card"
 			}(Si || (Si = {})),
 			function(e) {
-				e.Narrow = "narrow", e.NarrowCard = "narrow_card"
+				e.Lightbox = "lightbox"
 			}(Oi || (Oi = {})),
 			function(e) {
-				e.Lightbox = "lightbox"
+				e.Enabled = "enabled"
 			}(Ii || (Ii = {})),
 			function(e) {
-				e.Enabled = "enabled"
+				e.ShellRendered = "shell_rendered"
 			}(Ri || (Ri = {})),
 			function(e) {
-				e.ShellRendered = "shell_rendered"
+				e.Variant1 = "variant_1"
 			}(Fi || (Fi = {})),
 			function(e) {
-				e.Variant1 = "variant_1"
+				e.Enabled = "enabled"
 			}(Ci || (Ci = {})),
 			function(e) {
 				e.Enabled = "enabled"
@@ -15458,25 +15458,25 @@
 				e.Enabled = "enabled"
 			}(Ai || (Ai = {})),
 			function(e) {
-				e.Enabled = "enabled"
+				e.TopicsAndDescriptionRequired = "all_required", e.NoneRequired = "none_required"
 			}(ji || (ji = {})),
 			function(e) {
-				e.TopicsAndDescriptionRequired = "all_required", e.NoneRequired = "none_required"
+				e.NoCommunityWidgets = "no_community_widgets", e.NoRulesModerators = "no_rules_moderators", e.RelatedPostsDu = "related_posts_du"
 			}(Di || (Di = {})),
 			function(e) {
-				e.NoCommunityWidgets = "no_community_widgets", e.NoRulesModerators = "no_rules_moderators", e.RelatedPostsDu = "related_posts_du"
+				e.MediumHeight = "medium_height", e.OnlyTitles = "only_titles"
 			}(Pi || (Pi = {})),
 			function(e) {
-				e.MediumHeight = "medium_height", e.OnlyTitles = "only_titles"
+				e.CurrentThrottled = "current_throttled", e.CurrentUnthrottled = "current_unthrottled", e.CurrentUnthrottledCopy = "current_unthrottled_copy", e.NewPageUnthrottledCopy = "new_page_unthrottled_copy", e.NewPageUnthrottledCopyFields = "new_page_unthrottled_copy_fields", e.NewPopUnthrottledCopy = "new_pop_unthrottled_copy"
 			}(xi || (xi = {})),
 			function(e) {
-				e.CurrentThrottled = "current_throttled", e.CurrentUnthrottled = "current_unthrottled", e.CurrentUnthrottledCopy = "current_unthrottled_copy", e.NewPageUnthrottledCopy = "new_page_unthrottled_copy", e.NewPageUnthrottledCopyFields = "new_page_unthrottled_copy_fields", e.NewPopUnthrottledCopy = "new_pop_unthrottled_copy"
+				e.Treatment = "treatment"
 			}(Li || (Li = {})),
 			function(e) {
-				e.Treatment = "treatment"
+				e.SmIcon = "sm_icon", e.SmIconHc = "sm_icon_hc"
 			}(Bi || (Bi = {})),
 			function(e) {
-				e.SmIcon = "sm_icon", e.SmIconHc = "sm_icon_hc"
+				e.Enabled = "enabled"
 			}(ki || (ki = {})),
 			function(e) {
 				e.Enabled = "enabled"
@@ -15503,55 +15503,55 @@
 				e.Enabled = "enabled"
 			}(Ki || (Ki = {})),
 			function(e) {
-				e.Enabled = "enabled"
+				e.Enabled = "enabled", e.VariantA = "variant_a", e.VariantB = "variant_b"
 			}($i || ($i = {})),
 			function(e) {
-				e.Enabled = "enabled", e.VariantA = "variant_a", e.VariantB = "variant_b"
+				e.Enabled = "enabled"
 			}(zi || (zi = {})),
 			function(e) {
-				e.Enabled = "enabled"
+				e.Treatment = "treatment"
 			}(Yi || (Yi = {})),
 			function(e) {
-				e.Treatment = "treatment"
+				e.Enabled = "enabled"
 			}(Qi || (Qi = {})),
 			function(e) {
-				e.Enabled = "enabled"
+				e.Active = "active"
 			}(Ji || (Ji = {})),
 			function(e) {
-				e.Active = "active"
+				e.Enabled = "enabled"
 			}(Xi || (Xi = {})),
 			function(e) {
 				e.Enabled = "enabled"
 			}(Zi || (Zi = {})),
 			function(e) {
-				e.Enabled = "enabled"
+				e.SSO = "sso"
 			}(en || (en = {})),
 			function(e) {
-				e.SSO = "sso"
+				e.Linked = "linked"
 			}(tn || (tn = {})),
 			function(e) {
-				e.Linked = "linked"
+				e.Enabled = "enabled"
 			}(nn || (nn = {})),
 			function(e) {
-				e.Enabled = "enabled"
+				e.UpvoteOnly = "upvote_only", e.UpvoteDownvote = "upvote_downvote"
 			}(rn || (rn = {})),
 			function(e) {
-				e.UpvoteOnly = "upvote_only", e.UpvoteDownvote = "upvote_downvote"
+				e.Enabled = "enabled"
 			}(sn || (sn = {})),
 			function(e) {
 				e.Enabled = "enabled"
 			}(on || (on = {})),
 			function(e) {
-				e.Enabled = "enabled"
+				e.AdsControl = "ads_control", e.Nlp5Max = "nlp_5max", e.Nlp15Max = "nlp_15max", e.Search5Max = "search_5max"
 			}(dn || (dn = {})),
 			function(e) {
-				e.AdsControl = "ads_control", e.Nlp5Max = "nlp_5max", e.Nlp15Max = "nlp_15max", e.Search5Max = "search_5max"
+				e.MixedRecs = "mixed_recs", e.DeRecs = "de_recs"
 			}(an || (an = {})),
 			function(e) {
-				e.MixedRecs = "mixed_recs", e.DeRecs = "de_recs"
+				e.Onetap = "onetap", e.OnetapAuto = "onetap_auto"
 			}(ln || (ln = {})),
 			function(e) {
-				e.Onetap = "onetap", e.OnetapAuto = "onetap_auto"
+				e.Enabled = "enabled"
 			}(un || (un = {})),
 			function(e) {
 				e.Enabled = "enabled"
@@ -15569,28 +15569,28 @@
 				e.Enabled = "enabled"
 			}(hn || (hn = {})),
 			function(e) {
-				e.Enabled = "enabled"
+				e.AllItems = "all_items", e.TrendingSearch = "trending_search"
 			}(fn || (fn = {})),
 			function(e) {
-				e.AllItems = "all_items", e.TrendingSearch = "trending_search"
+				e.RotateEven = "rotate_even"
 			}(bn || (bn = {})),
 			function(e) {
-				e.RotateEven = "rotate_even"
+				e.ML = "ml"
 			}(gn || (gn = {})),
 			function(e) {
-				e.ML = "ml"
+				e.Redirect = "redirect"
 			}(wn || (wn = {})),
 			function(e) {
-				e.Redirect = "redirect"
+				e.Enabled = "enabled"
 			}(yn || (yn = {})),
 			function(e) {
 				e.Enabled = "enabled"
 			}(vn || (vn = {})),
 			function(e) {
-				e.Enabled = "enabled"
+				e.EnabledLogin = "enabled_login", e.EnabledLoginSignup = "enabled_login_signup"
 			}(En || (En = {})),
 			function(e) {
-				e.EnabledLogin = "enabled_login", e.EnabledLoginSignup = "enabled_login_signup"
+				e.Enabled = "enabled"
 			}(Tn || (Tn = {})),
 			function(e) {
 				e.Enabled = "enabled"
@@ -15617,10 +15617,10 @@
 				e.Enabled = "enabled"
 			}(An || (An = {})),
 			function(e) {
-				e.Enabled = "enabled"
+				e.Post = "post", e.Rules = "rules"
 			}(jn || (jn = {})),
 			function(e) {
-				e.Post = "post", e.Rules = "rules"
+				e.Enabled = "enabled"
 			}(Dn || (Dn = {})),
 			function(e) {
 				e.Enabled = "enabled"
@@ -15656,22 +15656,22 @@
 				e.Enabled = "enabled"
 			}(qn || (qn = {})),
 			function(e) {
-				e.Enabled = "enabled"
+				e.PromotedBlue = "promoted_blue", e.PromotedGrey = "promoted_grey", e.NoLockIcon = "no_lock_icon"
 			}(Wn || (Wn = {})),
 			function(e) {
-				e.PromotedBlue = "promoted_blue", e.PromotedGrey = "promoted_grey", e.NoLockIcon = "no_lock_icon"
+				e.Enabled = "enabled"
 			}(Kn || (Kn = {})),
 			function(e) {
-				e.Enabled = "enabled"
+				e.TenPosts = "enable_10_posts", e.FifteenPosts = "enable_15_posts"
 			}($n || ($n = {})),
 			function(e) {
-				e.TenPosts = "enable_10_posts", e.FifteenPosts = "enable_15_posts"
+				e.Enabled = "enabled"
 			}(zn || (zn = {})),
 			function(e) {
-				e.Enabled = "enabled"
+				e.Variant1 = "variant_1", e.Variant2 = "variant_2"
 			}(Yn || (Yn = {})),
 			function(e) {
-				e.Variant1 = "variant_1", e.Variant2 = "variant_2"
+				e.Enabled = "enabled"
 			}(Qn || (Qn = {})),
 			function(e) {
 				e.Enabled = "enabled"
@@ -15695,16 +15695,16 @@
 				e.Enabled = "enabled"
 			}(nr || (nr = {})),
 			function(e) {
-				e.Enabled = "enabled"
+				e.Enabled = "enabled", e.Enabled_noskip = "enabled_noskip", e.Enabled_noskip_no_preselect = "enabled_noskip_no_preselect"
 			}(rr || (rr = {})),
 			function(e) {
-				e.Enabled = "enabled", e.Enabled_noskip = "enabled_noskip", e.Enabled_noskip_no_preselect = "enabled_noskip_no_preselect"
+				e.Enabled = "enabled"
 			}(sr || (sr = {})),
 			function(e) {
-				e.Enabled = "enabled"
+				e.Tooltip_1st_time = "tooltip_1st_time", e.Tooltip_persist = "tooltip_persist", e.Banner_1st_time = "banner_1st_time"
 			}(or || (or = {})),
 			function(e) {
-				e.Tooltip_1st_time = "tooltip_1st_time", e.Tooltip_persist = "tooltip_persist", e.Banner_1st_time = "banner_1st_time"
+				e.Enabled = "enabled"
 			}(dr || (dr = {})),
 			function(e) {
 				e.Enabled = "enabled"
@@ -15722,25 +15722,25 @@
 				e.Enabled = "enabled"
 			}(_r || (_r = {})),
 			function(e) {
-				e.Enabled = "enabled"
+				e.Redesign = "redesign"
 			}(mr || (mr = {})),
 			function(e) {
 				e.Redesign = "redesign"
 			}(pr || (pr = {})),
 			function(e) {
-				e.Redesign = "redesign"
+				e.VoteCountOnly = "vote_count_only", e.CommentCountOnly = "comment_count_only", e.VoteAndCommentCount = "vote_and_comment_count"
 			}(hr || (hr = {})),
 			function(e) {
-				e.VoteCountOnly = "vote_count_only", e.CommentCountOnly = "comment_count_only", e.VoteAndCommentCount = "vote_and_comment_count"
+				e.SeePostCTAs = "see_post_ctas", e.ReplyCTAs = "reply_ctas", e.AllCTAs = "all_ctas"
 			}(fr || (fr = {})),
 			function(e) {
-				e.SeePostCTAs = "see_post_ctas", e.ReplyCTAs = "reply_ctas", e.AllCTAs = "all_ctas"
+				e.ContinuousScroll = "continuous_scroll"
 			}(br || (br = {})),
 			function(e) {
-				e.ContinuousScroll = "continuous_scroll"
+				e.Banner1stTime = "banner_1st_time", e.BannerPersist = "banner_persist"
 			}(gr || (gr = {})),
 			function(e) {
-				e.Banner1stTime = "banner_1st_time", e.BannerPersist = "banner_persist"
+				e.Enabled = "enabled"
 			}(wr || (wr = {})),
 			function(e) {
 				e.Enabled = "enabled"
@@ -15752,22 +15752,22 @@
 				e.Enabled = "enabled"
 			}(Er || (Er = {})),
 			function(e) {
-				e.Enabled = "enabled"
+				e.Supporter = "supporter_benefit", e.Community = "community_benefit"
 			}(Tr || (Tr = {})),
 			function(e) {
-				e.Enabled = "enabled"
+				e.TwoDayCooldown = "two_day_cooldown", e.FiveDayCooldown = "five_day_cooldown"
 			}(Sr || (Sr = {})),
 			function(e) {
-				e.Supporter = "supporter_benefit", e.Community = "community_benefit"
+				e.Bottom_sheet = "Bottom_sheet", e.Bottom_cell = "Bottom_cell", e.Bottom_cell_dismissible = "Bottom_cell_dismissible", e.Bottom_cell_dismissible_immediate_trigger = "Bottom_cell_dismissible_immediate_trigger", e.Bottom_cell_signup_upsell_copy = "Bottom_cell_signup_upsell_copy", e.Bottom_cell_surprise_install_copy = "Bottom_cell_surprise_install_copy"
 			}(Or || (Or = {})),
 			function(e) {
-				e.TwoDayCooldown = "two_day_cooldown", e.FiveDayCooldown = "five_day_cooldown"
+				e.UIChangesOnly = "ui_changes_only", e.RedditRecommendation = "reddit_recommendation", e.OpenAI = "open_ai", e.FilteredOpenAI = "filtered_open_ai"
 			}(Ir || (Ir = {})),
 			function(e) {
-				e.Bottom_sheet = "Bottom_sheet", e.Bottom_cell = "Bottom_cell", e.Bottom_cell_dismissible = "Bottom_cell_dismissible", e.Bottom_cell_dismissible_immediate_trigger = "Bottom_cell_dismissible_immediate_trigger", e.Bottom_cell_signup_upsell_copy = "Bottom_cell_signup_upsell_copy", e.Bottom_cell_surprise_install_copy = "Bottom_cell_surprise_install_copy"
+				e.Enabled = "enabled"
 			}(Rr || (Rr = {})),
 			function(e) {
-				e.UIChangesOnly = "ui_changes_only", e.RedditRecommendation = "reddit_recommendation", e.OpenAI = "open_ai", e.FilteredOpenAI = "filtered_open_ai"
+				e.Enabled = "enabled"
 			}(Fr || (Fr = {})),
 			function(e) {
 				e.Enabled = "enabled"
@@ -15779,185 +15779,178 @@
 				e.Enabled = "enabled"
 			}(Ar || (Ar = {})),
 			function(e) {
-				e.Enabled = "enabled"
+				e.UIChangesOnly = "ui_changes_only", e.TypingIndicators = "typing_indicators", e.IndicatorsPlusCTA = "indicators_plus_cta"
 			}(jr || (jr = {})),
 			function(e) {
 				e.Enabled = "enabled"
 			}(Dr || (Dr = {})),
 			function(e) {
-				e.UIChangesOnly = "ui_changes_only", e.TypingIndicators = "typing_indicators", e.IndicatorsPlusCTA = "indicators_plus_cta"
+				e.Enabled = "enabled"
 			}(Pr || (Pr = {})),
 			function(e) {
 				e.Enabled = "enabled"
-			}(xr || (xr = {})),
-			function(e) {
-				e.Enabled = "enabled"
-			}(Lr || (Lr = {})),
-			function(e) {
-				e.Enabled = "enabled"
-			}(Br || (Br = {}));
-			const kr = {
-					[Gt]: [qt],
-					[Ut]: [qt],
-					[kt]: [qt],
-					[Mt]: [qt],
-					[Bt]: [qt],
-					[Lt]: [qt],
-					[xt]: [Pr.UIChangesOnly, Pr.TypingIndicators, Pr.IndicatorsPlusCTA],
-					[_t]: [_r.Enabled],
-					[Ct]: [qt],
-					[it]: [qt],
-					[Ge]: [qt],
-					[Ft]: [Fr.UIChangesOnly, Fr.RedditRecommendation, Fr.OpenAI, Fr.FilteredOpenAI],
-					[Rt]: [qt],
-					[Pt]: [Dr.Enabled],
-					[Xe]: [Kt.Enabled],
-					[Vt]: [Br.Enabled],
-					[It]: [Ir.TwoDayCooldown, Ir.FiveDayCooldown],
-					[Ze]: [Rr.Bottom_sheet, Rr.Bottom_cell, Rr.Bottom_cell_dismissible, Rr.Bottom_cell_dismissible_immediate_trigger, Rr.Bottom_cell_signup_upsell_copy, Rr.Bottom_cell_surprise_install_copy],
-					[et]: [Rr.Bottom_sheet, Rr.Bottom_cell, Rr.Bottom_cell_dismissible],
-					[tt]: [Rr.Bottom_sheet, Rr.Bottom_cell, Rr.Bottom_cell_dismissible],
-					[N]: [Ki.Enabled],
-					[Qe]: [Or.Supporter, Or.Community],
-					[Je]: [$t.Enabled],
-					profile_follower_list_d2x: [qt],
-					[Ot]: [qt],
-					[St]: [qt],
-					[ut]: [cr.Enabled],
-					[Tt]: [Sr.Enabled],
-					[Et]: [Tr.Enabled],
-					[Ye]: [Er.Enabled],
-					[bt]: [gr.ContinuousScroll],
-					[gt]: [wr.BannerPersist, wr.Banner1stTime],
-					[ze]: [vr.Enabled],
-					[wt]: [yr.Enabled],
-					[gt]: [wr.Banner1stTime, wr.BannerPersist],
-					[vt]: [qt],
-					[yt]: [qt],
-					[pt]: [fr.VoteCountOnly, fr.CommentCountOnly, fr.VoteAndCommentCount],
-					[mt]: [mr.Enabled],
-					[Ke]: [pr.Redesign],
-					[$e]: [hr.Redesign],
-					[ct]: [sr.Enabled, sr.Enabled_noskip, sr.Enabled_noskip_no_preselect],
-					[dt]: [ar.Enabled],
-					[ft]: [br.SeePostCTAs, br.ReplyCTAs, br.AllCTAs],
-					[We]: [Qn.Variant1, Qn.Variant2],
-					[Ve]: [Yn.Enabled],
-					[Ue]: [qt],
-					[De]: [Vn.Enabled],
-					[rt]: [rr.Enabled],
-					[st]: [or.Enabled],
-					[ot]: [dr.Banner_1st_time, dr.Tooltip_1st_time, dr.Tooltip_persist],
-					[Me]: [zn.TenPosts, zn.FifteenPosts],
-					[Be]: [Kn.PromotedBlue, Kn.PromotedGrey, Kn.NoLockIcon],
-					[ke]: [$n.Enabled],
-					[Pe]: [Hn.Enabled],
-					[je]: [Gn.Enabled],
-					[xe]: [qn.Enabled],
-					[Le]: [Wn.Enabled],
-					[Ae]: [qt],
-					[Re]: [xn.Enabled],
-					[Oe]: [Pn.Enabled],
-					[Ie]: [qt],
-					[Ee]: [qt],
-					[Se]: [zt.Enabled],
-					[we]: [Nn.Enabled],
-					[ge]: [Cn.Enabled],
-					[be]: [Fn.Enabled],
-					[pe]: [Qt.Enabled],
-					[he]: [On.Enabled],
-					[fe]: [Rn.Enabled],
-					[me]: [Yt.Five, Yt.Ten, Yt.Fifty],
-					[_e]: [Tn.EnabledLogin, Tn.EnabledLoginSignup],
-					[ue]: [vn.Enabled],
-					[ce]: [En.Enabled],
-					[ae]: [yn.Redirect],
-					[le]: [Jt.Enabled],
-					[oe]: [gn.RotateEven],
-					[se]: [_n.Enabled],
-					[ie]: [mn.Enabled],
-					[te]: [cn.Enabled],
-					[ee]: [un.Onetap, un.OnetapAuto],
-					[Z]: [an.AdsControl, an.Nlp5Max, an.Nlp15Max, an.Search5Max],
-					[X]: [dn.Enabled],
-					d2x_chat_post_voting: [sn.UpvoteOnly, sn.UpvoteDownvote],
-					[Q]: [rn.Enabled],
-					guest_d2x_subreddit_subreddit_links_url: [nn.Linked],
-					post_level_crowd_control: [en.Enabled],
-					d2x_sso_settings: [tn.SSO],
-					[M]: [Zi.Enabled],
-					[k]: [ui.Enabled],
-					[K]: [qt],
-					[G]: [Zt.Enabled],
-					[He]: [ei.Enabled],
-					[qe]: [ti.Enabled],
-					[q]: [ii.Enabled],
-					[W]: [ni.ControlBanner, ni.EnabledBanner],
-					[V]: [ri.Enabled],
-					[$]: [si.Enabled],
-					[Y]: [di.Variant1],
-					[U]: [ai.Enabled],
-					econ_new_user_targeted_offer: [li.Variant1, li.Variant2, li.Variant3],
-					[j]: [zi.Enabled, zi.VariantA, zi.VariantB],
-					[R]: [Hi.Enabled],
-					[F]: [qi.Enabled],
-					polls_ga: [Vi.Enabled],
-					[S]: [ki.SmIcon, ki.SmIconHc],
-					[O]: [Mi.Enabled],
-					[I]: [Ui.Enabled],
-					[T]: [Bi.Treatment],
-					[E]: [Li.CurrentThrottled, Li.CurrentUnthrottled, Li.CurrentUnthrottledCopy, Li.NewPageUnthrottledCopy, Li.NewPageUnthrottledCopyFields, Li.NewPopUnthrottledCopy],
-					[v]: [xi.OnlyTitles, xi.MediumHeight],
-					[y]: [Pi.NoCommunityWidgets, Pi.NoRulesModerators, Pi.RelatedPostsDu],
-					community_creation_topics: [Di.TopicsAndDescriptionRequired, Di.NoneRequired],
-					[g]: [Ni.Enabled],
-					[w]: [ji.Enabled],
-					[f]: [Ri.Enabled],
-					desktop_seo_post_v2_lightbox: [Ii.Lightbox],
-					desktop_seo_post_v2_narrow: [Oi.Narrow, Oi.NarrowCard],
-					[h]: [Si.IdCard, Si.RailSwap],
-					[p]: [Ei.NoActions, Ei.NoAds, Ei.NoWidgets, Ei.Combined],
-					[m]: [yi.Max1, yi.Max2],
-					[u]: [wi.Truncate, wi.SmallBanner, wi.Both],
-					[l]: [fi.On],
-					[d]: [mi.Holdout, mi.AdHoldout],
-					[r]: [ci.Treatment1],
-					[s]: [_i.Treatment1],
-					[o]: [hi.Treatment1],
-					[a]: [bi.ShowTopContent],
-					[c]: [Ti.Enabled],
-					[_]: [Ti.Enabled],
-					[D]: [Yi.Enabled],
-					[P]: [Qi.Treatment],
-					[x]: [Ji.Enabled],
-					[L]: [Xi.Active],
-					[B]: [Xi.Active],
-					[A]: [$i.Enabled],
-					[ne]: [pn.Enabled],
-					[re]: [bn.AllItems, bn.TrendingSearch],
-					[de]: [wn.ML],
-					d2x_language_de_de: [In.Enabled],
-					[Te]: [Dn.Post, Dn.Rules],
-					[Fe]: [Ln.Enabled],
-					[Ce]: [Bn.Enabled],
-					[Ne]: [kn.Enabled],
-					[z]: [Un.Enabled],
-					d2x_language_fr_fr: [Jn.Enabled],
-					d2x_language_it_it: [Xn.Enabled],
-					d2x_language_pt_br: [Zn.Enabled],
-					d2x_language_pt_pt: [er.Enabled],
-					d2x_language_es_es: [tr.Enabled],
-					d2x_language_es_mx: [ir.Enabled],
-					[at]: [lr.Enabled],
+			}(xr || (xr = {}));
+			const Lr = {
+					[Ut]: [Ht],
+					[Mt]: [Ht],
+					[Bt]: [Ht],
+					[kt]: [Ht],
+					[Lt]: [Ht],
+					[xt]: [Ht],
+					[Pt]: [jr.UIChangesOnly, jr.TypingIndicators, jr.IndicatorsPlusCTA],
+					[ct]: [cr.Enabled],
+					[Ft]: [Ht],
+					[tt]: [Ht],
+					[Ge]: [Ht],
+					[Rt]: [Ir.UIChangesOnly, Ir.RedditRecommendation, Ir.OpenAI, Ir.FilteredOpenAI],
+					[It]: [Ht],
+					[Dt]: [Ar.Enabled],
+					[Je]: [Wt.Enabled],
+					[Gt]: [xr.Enabled],
+					[Ot]: [Sr.TwoDayCooldown, Sr.FiveDayCooldown],
+					[Xe]: [Or.Bottom_sheet, Or.Bottom_cell, Or.Bottom_cell_dismissible, Or.Bottom_cell_dismissible_immediate_trigger, Or.Bottom_cell_signup_upsell_copy, Or.Bottom_cell_surprise_install_copy],
+					[Ze]: [Or.Bottom_sheet, Or.Bottom_cell, Or.Bottom_cell_dismissible],
+					[et]: [Or.Bottom_sheet, Or.Bottom_cell, Or.Bottom_cell_dismissible],
+					[N]: [Wi.Enabled],
+					[Ye]: [Tr.Supporter, Tr.Community],
+					[Qe]: [Kt.Enabled],
+					profile_follower_list_d2x: [Ht],
+					[St]: [Ht],
+					[Tt]: [Ht],
 					[lt]: [ur.Enabled],
-					[Dt]: [jr.Enabled],
-					[jt]: [Ar.Enabled],
-					[At]: [Nr.Enabled],
-					[Nt]: [Cr.Enabled],
-					[nt]: [Lr.Enabled]
+					[Et]: [Er.Enabled],
+					[vt]: [vr.Enabled],
+					[ft]: [br.ContinuousScroll],
+					[bt]: [gr.BannerPersist, gr.Banner1stTime],
+					[ze]: [yr.Enabled],
+					[gt]: [wr.Enabled],
+					[bt]: [gr.Banner1stTime, gr.BannerPersist],
+					[yt]: [Ht],
+					[wt]: [Ht],
+					[mt]: [hr.VoteCountOnly, hr.CommentCountOnly, hr.VoteAndCommentCount],
+					[_t]: [_r.Enabled],
+					[Ke]: [mr.Redesign],
+					[$e]: [pr.Redesign],
+					[ut]: [rr.Enabled, rr.Enabled_noskip, rr.Enabled_noskip_no_preselect],
+					[ot]: [dr.Enabled],
+					[ht]: [fr.SeePostCTAs, fr.ReplyCTAs, fr.AllCTAs],
+					[We]: [Yn.Variant1, Yn.Variant2],
+					[Ve]: [zn.Enabled],
+					[Ue]: [Ht],
+					[De]: [Gn.Enabled],
+					[nt]: [nr.Enabled],
+					[rt]: [sr.Enabled],
+					[st]: [or.Banner_1st_time, or.Tooltip_1st_time, or.Tooltip_persist],
+					[Me]: [$n.TenPosts, $n.FifteenPosts],
+					[Be]: [Wn.PromotedBlue, Wn.PromotedGrey, Wn.NoLockIcon],
+					[ke]: [Kn.Enabled],
+					[Pe]: [Vn.Enabled],
+					[je]: [Un.Enabled],
+					[xe]: [Hn.Enabled],
+					[Le]: [qn.Enabled],
+					[Ae]: [Ht],
+					[Re]: [Pn.Enabled],
+					[Oe]: [Dn.Enabled],
+					[Ie]: [Ht],
+					[Ee]: [Ht],
+					[Se]: [$t.Enabled],
+					[we]: [Cn.Enabled],
+					[ge]: [Fn.Enabled],
+					[be]: [Rn.Enabled],
+					[pe]: [Yt.Enabled],
+					[he]: [Sn.Enabled],
+					[fe]: [In.Enabled],
+					[me]: [zt.Five, zt.Ten, zt.Fifty],
+					[_e]: [En.EnabledLogin, En.EnabledLoginSignup],
+					[ue]: [yn.Enabled],
+					[ce]: [vn.Enabled],
+					[ae]: [wn.Redirect],
+					[le]: [Qt.Enabled],
+					[oe]: [bn.RotateEven],
+					[se]: [cn.Enabled],
+					[ie]: [_n.Enabled],
+					[te]: [un.Enabled],
+					[ee]: [ln.Onetap, ln.OnetapAuto],
+					[Z]: [dn.AdsControl, dn.Nlp5Max, dn.Nlp15Max, dn.Search5Max],
+					[X]: [on.Enabled],
+					d2x_chat_post_voting: [rn.UpvoteOnly, rn.UpvoteDownvote],
+					[Q]: [nn.Enabled],
+					guest_d2x_subreddit_subreddit_links_url: [tn.Linked],
+					post_level_crowd_control: [Zi.Enabled],
+					d2x_sso_settings: [en.SSO],
+					[M]: [Xi.Enabled],
+					[k]: [li.Enabled],
+					[K]: [Ht],
+					[G]: [Xt.Enabled],
+					[He]: [Zt.Enabled],
+					[qe]: [ei.Enabled],
+					[q]: [ti.Enabled],
+					[W]: [ii.ControlBanner, ii.EnabledBanner],
+					[V]: [ni.Enabled],
+					[$]: [ri.Enabled],
+					[Y]: [oi.Variant1],
+					[U]: [di.Enabled],
+					econ_new_user_targeted_offer: [ai.Variant1, ai.Variant2, ai.Variant3],
+					[j]: [$i.Enabled, $i.VariantA, $i.VariantB],
+					[R]: [Vi.Enabled],
+					[F]: [Hi.Enabled],
+					polls_ga: [Gi.Enabled],
+					[S]: [Bi.SmIcon, Bi.SmIconHc],
+					[O]: [ki.Enabled],
+					[I]: [Mi.Enabled],
+					[T]: [Li.Treatment],
+					[E]: [xi.CurrentThrottled, xi.CurrentUnthrottled, xi.CurrentUnthrottledCopy, xi.NewPageUnthrottledCopy, xi.NewPageUnthrottledCopyFields, xi.NewPopUnthrottledCopy],
+					[v]: [Pi.OnlyTitles, Pi.MediumHeight],
+					[y]: [Di.NoCommunityWidgets, Di.NoRulesModerators, Di.RelatedPostsDu],
+					community_creation_topics: [ji.TopicsAndDescriptionRequired, ji.NoneRequired],
+					[g]: [Ci.Enabled],
+					[w]: [Ai.Enabled],
+					[f]: [Ii.Enabled],
+					desktop_seo_post_v2_lightbox: [Oi.Lightbox],
+					desktop_seo_post_v2_narrow: [Si.Narrow, Si.NarrowCard],
+					[h]: [Ti.IdCard, Ti.RailSwap],
+					[p]: [vi.NoActions, vi.NoAds, vi.NoWidgets, vi.Combined],
+					[m]: [wi.Max1, wi.Max2],
+					[u]: [gi.Truncate, gi.SmallBanner, gi.Both],
+					[l]: [hi.On],
+					[d]: [_i.Holdout, _i.AdHoldout],
+					[r]: [ui.Treatment1],
+					[s]: [ci.Treatment1],
+					[o]: [pi.Treatment1],
+					[a]: [fi.ShowTopContent],
+					[c]: [Ei.Enabled],
+					[_]: [Ei.Enabled],
+					[D]: [zi.Enabled],
+					[P]: [Yi.Treatment],
+					[x]: [Qi.Enabled],
+					[L]: [Ji.Active],
+					[B]: [Ji.Active],
+					[A]: [Ki.Enabled],
+					[ne]: [mn.Enabled],
+					[re]: [fn.AllItems, fn.TrendingSearch],
+					[de]: [gn.ML],
+					d2x_language_de_de: [On.Enabled],
+					[Te]: [jn.Post, jn.Rules],
+					[Fe]: [xn.Enabled],
+					[Ce]: [Ln.Enabled],
+					[Ne]: [Bn.Enabled],
+					[z]: [Mn.Enabled],
+					d2x_language_fr_fr: [Qn.Enabled],
+					d2x_language_it_it: [Jn.Enabled],
+					d2x_language_pt_br: [Xn.Enabled],
+					d2x_language_pt_pt: [Zn.Enabled],
+					d2x_language_es_es: [er.Enabled],
+					d2x_language_es_mx: [tr.Enabled],
+					[dt]: [ar.Enabled],
+					[at]: [lr.Enabled],
+					[jt]: [Nr.Enabled],
+					[At]: [Cr.Enabled],
+					[Nt]: [Fr.Enabled],
+					[Ct]: [Rr.Enabled],
+					[it]: [Pr.Enabled]
 				},
-				Mr = new Set([E, l, S, B, "guest_d2x_subreddit_subreddit_links_url", Z, ee, ne, de, ae, _e, Ee, Ae, Me, We, "shreddit_pdp_bucketing", dt, ct, mt, pt, Ft, ht, Ze, et, tt]),
-				Ur = {
+				Br = new Set([E, l, S, B, "guest_d2x_subreddit_subreddit_links_url", Z, ee, ne, de, ae, _e, Ee, Ae, Me, We, "shreddit_pdp_bucketing", ot, ut, _t, mt, Rt, pt, Xe, Ze, et]),
+				kr = {
 					NFL: () => n.fbt._("NFL", null, {
 						hk: "3ktT9l"
 					}),
@@ -16064,10 +16057,10 @@
 						hk: "nSJdn"
 					})
 				},
-				Gr = e => e.reduce((e, t, i) => (e[t] = i + 1, e), {}),
-				Vr = Gr(["NFL", "Discussion", "Relationships", "Sports", "Gaming", "News", "Beauty", "Health & Fitness", "Learning", "Parenting", "Tech", "Crypto", "Science", "Video Games", "TV", "Popcorn", "Vroom", "Food", "Outdoors", "Fashion", "Books & Writing", "Art & Design", "Nostalgia", "Music", "Travel", "Photography", "Funny", "Wholesome", "Memes", "Aww", "Pics & Gifs", "Mindblowing", "Videos", "Cringe", "Schadenfreude"]),
-				Hr = e => {
-					const t = Ur[e];
+				Mr = e => e.reduce((e, t, i) => (e[t] = i + 1, e), {}),
+				Ur = Mr(["NFL", "Discussion", "Relationships", "Sports", "Gaming", "News", "Beauty", "Health & Fitness", "Learning", "Parenting", "Tech", "Crypto", "Science", "Video Games", "TV", "Popcorn", "Vroom", "Food", "Outdoors", "Fashion", "Books & Writing", "Art & Design", "Nostalgia", "Music", "Travel", "Photography", "Funny", "Wholesome", "Memes", "Aww", "Pics & Gifs", "Mindblowing", "Videos", "Cringe", "Schadenfreude"]),
+				Gr = e => {
+					const t = kr[e];
 					return t && t() || e
 				}
 		},
@@ -24025,7 +24018,7 @@
 								position: "number" == typeof i ? i + 1 : void 0
 							}),
 							correlationId: m,
-							experiment: u.experiment(e, r.Oc),
+							experiment: u.experiment(e, r.Nc),
 							media: u.media(e, t),
 							mlModel: u.listingBelowMlModel(l, d),
 							noun: "post",
@@ -24130,7 +24123,7 @@
 								referralId: c
 							},
 							correlationId: y,
-							experiment: u.experiment(m, r.Oc),
+							experiment: u.experiment(m, r.Nc),
 							media: u.media(m, e),
 							mlModel: u.listingBelowMlModel(w, o),
 							noun: t,
@@ -24253,7 +24246,7 @@
 					let d = {};
 					return i && (d = {
 						correlationId: n,
-						experiment: u.experiment(e, r.vd),
+						experiment: u.experiment(e, r.ud),
 						mlModel: u.listingBelowMlModel(i, s)
 					}), d
 				}
@@ -25144,15 +25137,11 @@
 						}),
 						description: ""
 					}),
-					[o.HeroStatus]: e => ({
-						title: e ? r.fbt._("Supporter Status", null, {
-							hk: "Ktd1n"
-						}) : r.fbt._("Hero Status", null, {
+					[o.HeroStatus]: () => ({
+						title: r.fbt._("Hero Status", null, {
 							hk: "miGwE"
 						}),
-						description: e ? r.fbt._("Get on the supporters list and instantly access all perks", null, {
-							hk: "1Hzfaa"
-						}) : r.fbt._("Get on the heroes list and instantly access all perks", null, {
+						description: r.fbt._("Get on the heroes list and instantly access all perks", null, {
 							hk: "2bnnTY"
 						})
 					}),
@@ -30632,7 +30621,7 @@
 					})
 				},
 				y = new Set(["nba", "nfl"]),
-				v = Object(s.a)((e, t) => t.categoriesOrder || d.md, (e, t) => t.excludedCategories || y, e => e.features.categories.ids, e => e.features.categories.models, (e, t, i, n) => {
+				v = Object(s.a)((e, t) => t.categoriesOrder || d.ld, (e, t) => t.excludedCategories || y, e => e.features.categories.ids, e => e.features.categories.models, (e, t, i, n) => {
 					const r = {};
 					let s = 1e3;
 					const o = [];
@@ -31071,92 +31060,89 @@
 			const o = Object(n.a)(e => Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
 					experimentName: r.J
-				}), e => e === r.Cc),
+				}), e => e === r.Bc),
 				d = Object(n.a)(e => Object(s.c)(e, {
 					experimentEligibilitySelector: o,
 					experimentName: r.I
-				}), e => e === r.Cc)
+				}), e => e === r.Bc)
 		},
 		"./src/reddit/selectors/experiments/econ/index.ts": function(e, t, i) {
 			"use strict";
-			i.d(t, "t", (function() {
+			i.d(t, "s", (function() {
 				return s
-			})), i.d(t, "l", (function() {
-				return o
 			})), i.d(t, "k", (function() {
-				return d
-			})), i.d(t, "y", (function() {
-				return a
-			})), i.d(t, "o", (function() {
-				return l
-			})), i.d(t, "n", (function() {
-				return u
-			})), i.d(t, "w", (function() {
-				return c
+				return o
 			})), i.d(t, "j", (function() {
-				return _
-			})), i.d(t, "r", (function() {
-				return m
-			})), i.d(t, "i", (function() {
-				return p
-			})), i.d(t, "d", (function() {
-				return h
-			})), i.d(t, "f", (function() {
-				return f
-			})), i.d(t, "g", (function() {
-				return b
-			})), i.d(t, "h", (function() {
-				return g
-			})), i.d(t, "e", (function() {
-				return w
+				return d
+			})), i.d(t, "x", (function() {
+				return a
+			})), i.d(t, "n", (function() {
+				return l
 			})), i.d(t, "m", (function() {
+				return u
+			})), i.d(t, "v", (function() {
+				return c
+			})), i.d(t, "q", (function() {
+				return _
+			})), i.d(t, "i", (function() {
+				return m
+			})), i.d(t, "d", (function() {
+				return p
+			})), i.d(t, "f", (function() {
+				return h
+			})), i.d(t, "g", (function() {
+				return f
+			})), i.d(t, "h", (function() {
+				return b
+			})), i.d(t, "e", (function() {
+				return g
+			})), i.d(t, "l", (function() {
+				return w
+			})), i.d(t, "r", (function() {
 				return y
-			})), i.d(t, "s", (function() {
+			})), i.d(t, "t", (function() {
 				return v
 			})), i.d(t, "u", (function() {
 				return E
-			})), i.d(t, "v", (function() {
+			})), i.d(t, "o", (function() {
 				return T
 			})), i.d(t, "p", (function() {
 				return S
-			})), i.d(t, "q", (function() {
-				return O
 			})), i.d(t, "c", (function() {
-				return I
+				return O
 			})), i.d(t, "b", (function() {
-				return R
+				return I
 			})), i.d(t, "a", (function() {
+				return R
+			})), i.d(t, "w", (function() {
 				return F
-			})), i.d(t, "x", (function() {
-				return C
 			}));
 			var n = i("./src/reddit/constants/experiments.ts"),
 				r = i("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const s = Object(r.a)(n.uc),
-				o = Object(r.a)(n.nc),
-				d = Object(r.a)(n.kc),
-				a = Object(r.a)(n.mc),
-				l = Object(r.a)(n.yc),
-				u = Object(r.a)(n.rc),
-				c = Object(r.a)(n.xc),
-				_ = Object(r.a)(n.jc),
-				m = Object(r.a)(n.sc),
-				p = Object(r.a)(n.cc),
-				h = Object(r.a)(n.Wb),
-				f = Object(r.a)(n.Yb),
-				b = Object(r.a)(n.Zb),
-				g = Object(r.a)(n.bc),
-				w = Object(r.a)(n.Xb),
-				y = Object(r.a)(n.oc),
-				v = Object(r.a)(n.tc),
+			const s = Object(r.a)(n.tc),
+				o = Object(r.a)(n.mc),
+				d = Object(r.a)(n.jc),
+				a = Object(r.a)(n.lc),
+				l = Object(r.a)(n.xc),
+				u = Object(r.a)(n.qc),
+				c = Object(r.a)(n.wc),
+				_ = Object(r.a)(n.rc),
+				m = Object(r.a)(n.cc),
+				p = Object(r.a)(n.Wb),
+				h = Object(r.a)(n.Yb),
+				f = Object(r.a)(n.Zb),
+				b = Object(r.a)(n.bc),
+				g = Object(r.a)(n.Xb),
+				w = Object(r.a)(n.nc),
+				y = Object(r.a)(n.sc),
+				v = Object(r.a)(n.uc),
 				E = Object(r.a)(n.vc),
-				T = Object(r.a)(n.wc),
+				T = Object(r.a)(n.oc),
 				S = Object(r.a)(n.pc),
-				O = Object(r.a)(n.qc),
-				I = Object(r.a)(n.Tb),
-				R = Object(r.a)(n.fc),
-				F = Object(r.a)(n.ec),
-				C = (Object(r.a)(n.gc), Object(r.a)(n.zc))
+				O = Object(r.a)(n.Tb),
+				I = Object(r.a)(n.fc),
+				R = Object(r.a)(n.ec),
+				F = (Object(r.a)(n.gc), Object(r.a)(n.yc))
 		},
 		"./src/reddit/selectors/experiments/econ/simpleExperiment.ts": function(e, t, i) {
 			"use strict";
@@ -31170,7 +31156,7 @@
 					experimentEligibilitySelector: r.a,
 					experimentName: e
 				});
-				return !(!i || Object(n.Ke)(i))
+				return !(!i || Object(n.Je)(i))
 			}
 		},
 		"./src/reddit/selectors/experiments/goodVisitSearchFeed.ts": function(e, t, i) {
@@ -31183,8 +31169,8 @@
 				s = i("./src/reddit/selectors/meta.ts");
 			const o = e => Object(r.c)(e, {
 				experimentEligibilitySelector: e => !Object(s.d)(e),
-				experimentName: n.Mc
-			}) === n.Qc.Enabled
+				experimentName: n.Lc
+			}) === n.Pc.Enabled
 		},
 		"./src/reddit/selectors/experiments/index.ts": function(e, t, i) {
 			"use strict";
@@ -31225,7 +31211,7 @@
 						version: "-1"
 					}), i
 				},
-				u = (e, t) => Object(r.a)() || (null == e ? void 0 : e.isEmployee) || o.Dc.has(t.toLowerCase()),
+				u = (e, t) => Object(r.a)() || (null == e ? void 0 : e.isEmployee) || o.Cc.has(t.toLowerCase()),
 				c = (e, {
 					experimentName: t
 				}) => {
@@ -31268,11 +31254,11 @@
 			const u = Object(n.a)(d.c, l.J, l.K, a.f, a.e, e => Object(o.a)(e), (e, t, i, n, r, s) => !e && !t && !i && n && !!r && !r.isNSFW && !!s && !s.isNSFW),
 				c = e => Object(s.c)(e, {
 					experimentEligibilitySelector: u,
-					experimentName: r.Oc,
+					experimentName: r.Nc,
 					expEventOverride: !1
 				}),
-				_ = e => e === r.Sc.AdsControl,
-				m = e => e === r.Sc.Nlp15Max
+				_ = e => e === r.Rc.AdsControl,
+				m = e => e === r.Rc.Nlp15Max
 		},
 		"./src/reddit/selectors/experiments/magicLink.ts": function(e, t, i) {
 			"use strict";
@@ -31288,12 +31274,12 @@
 				d = i("./src/reddit/selectors/experiments/utils.ts");
 			const a = Object(n.a)(e => Object(s.c)(e, {
 					experimentEligibilitySelector: o.e,
-					experimentName: r.kd,
+					experimentName: r.jd,
 					expEventOverride: !1
 				}), d.a),
 				l = e => Object(s.c)(e, {
 					experimentEligibilitySelector: o.e,
-					experimentName: r.kd
+					experimentName: r.jd
 				})
 		},
 		"./src/reddit/selectors/experiments/nsfwListingBelow.ts": function(e, t, i) {
@@ -31311,7 +31297,7 @@
 			const u = Object(l.a)(n.c, a.J, a.K, d.f, d.e, n.b, (e, t, i, n, r, s) => !e && !t && !i && n && "DE" === s && !!r && r.isNSFW && !o.a.has(r.wls || o.b.NO_ADS)),
 				c = e => Object(s.c)(e, {
 					experimentEligibilitySelector: u,
-					experimentName: r.vd
+					experimentName: r.ud
 				})
 		},
 		"./src/reddit/selectors/experiments/postSeo.ts": function(e, t, i) {
@@ -31368,26 +31354,26 @@
 				g = e => {
 					const t = m(e);
 					return Object(s.c)(e, {
-						experimentName: r.Ed,
+						experimentName: r.Dd,
 						experimentEligibilitySelector: e => !Object(c.K)(e) && t
 					})
 				},
 				w = e => {
 					const t = m(e);
 					return Object(s.c)(e, {
-						experimentName: r.Bd,
+						experimentName: r.Ad,
 						experimentEligibilitySelector: () => t
 					})
 				},
 				y = e => {
 					const t = m(e);
 					return Object(s.c)(e, {
-						experimentName: r.Dd,
+						experimentName: r.Cd,
 						experimentEligibilitySelector: () => t
 					})
 				},
-				v = e => e === r.Nd.IdCard,
-				E = e => e === r.Nd.RailSwap,
+				v = e => e === r.Md.IdCard,
+				E = e => e === r.Md.RailSwap,
 				T = (e, t) => {
 					const i = Object(u.H)(e, {
 						postId: t
@@ -31396,7 +31382,7 @@
 				},
 				S = e => !!Object(s.b)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: r.Nc,
+					experimentName: r.Mc,
 					expEventOverride: !1
 				})
 		},
@@ -31459,13 +31445,13 @@
 					triggerName: o
 				}) => d => !(void 0 !== s && !s(d)) && (!!((e, t) => Object(l.c)(e) && Object(l.a)(e) === t)(d, o) || !(e => Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: n.ke
-				}) === n.qe.Enabled)(d) && Object(r.c)(d, {
+					experimentName: n.je
+				}) === n.pe.Enabled)(d) && Object(r.c)(d, {
 					experimentEligibilitySelector: i || r.a,
 					experimentName: e
 				}) === t),
 				c = u({
-					experimentName: n.td,
+					experimentName: n.sd,
 					triggerName: s.c.feed_scroll_1_page
 				}),
 				_ = u({
@@ -31493,11 +31479,11 @@
 				}),
 				f = e => h(e) || p(e) || c(e) || _(e) || m(e),
 				b = u({
-					experimentName: n.sd,
+					experimentName: n.rd,
 					triggerName: s.c.dismiss_post
 				}),
 				g = u({
-					experimentName: n.Be,
+					experimentName: n.Ae,
 					triggerName: s.c.videos_watched
 				})
 		},
@@ -31508,7 +31494,7 @@
 			}));
 			var n = i("./src/reddit/constants/experiments.ts");
 			const r = e => {
-				if (!Object(n.Ke)(e)) return e || void 0
+				if (!Object(n.Je)(e)) return e || void 0
 			}
 		},
 		"./src/reddit/selectors/features/predictions/tournaments/index.ts": function(e, t, i) {
@@ -41949,4 +41935,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.bf2e1648dc74a2759efc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.9035a0b949d74179adb1.js.map

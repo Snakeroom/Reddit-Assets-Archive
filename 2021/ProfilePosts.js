@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePosts.3ea18724ac4254c2081b.js
-// Retrieved at 10/13/2021, 5:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePosts.73fab202ffc92001f981.js
+// Retrieved at 10/13/2021, 5:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePosts", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -4509,7 +4509,7 @@
 					}
 				}),
 				_ = e => {
-					const t = Object(i.e)(e => Object(f.m)(e));
+					const t = Object(i.e)(e => Object(f.l)(e));
 					return o.a.createElement(a.a, {
 						className: e.className
 					}, o.a.createElement(g, {
@@ -6066,12 +6066,12 @@
 						rtJsonElementProps: o
 					});
 					switch (r) {
-						case b.ne.SmIcon:
+						case b.me.SmIcon:
 							return s.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: o
 							});
-						case b.ne.SmIconHc:
+						case b.me.SmIconHc:
 							return s.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -7425,13 +7425,13 @@
 						experimentEligibilitySelector: o.K,
 						experimentName: r.hc
 					});
-					return !(!t || Object(r.Ke)(t))
+					return !(!t || Object(r.Je)(t))
 				},
 				a = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: o.K,
 						experimentName: r.hc
-					}) === r.Hc.ListingEnabled
+					}) === r.Gc.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, n) {
@@ -7563,12 +7563,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: r.he
+						experimentName: r.ge
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === r.ne.SmIcon || t === r.ne.SmIconHc
+					return t === r.me.SmIcon || t === r.me.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -7612,4 +7612,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.3ea18724ac4254c2081b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.73fab202ffc92001f981.js.map

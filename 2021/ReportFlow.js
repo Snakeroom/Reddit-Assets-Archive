@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlow.f88ec72a30804fcbccef.js
-// Retrieved at 10/13/2021, 5:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlow.cd544cf763a07255468f.js
+// Retrieved at 10/13/2021, 5:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlow", "FrontpageSidebar", "ReportFlowNew"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, o) {
@@ -5974,9 +5974,9 @@
 					experimentName: r.Pb,
 					experimentEligibilitySelector: e => l(e, t)
 				}), e => e),
-				d = e => e === r.ue.NoCommunityWidgets,
-				u = e => e === r.ue.NoRulesModerators,
-				p = e => e === r.ue.RelatedPostsDu
+				d = e => e === r.te.NoCommunityWidgets,
+				u = e => e === r.te.NoRulesModerators,
+				p = e => e === r.te.RelatedPostsDu
 		},
 		"./src/reddit/selectors/tooltip.ts": function(e, t, o) {
 			"use strict";
@@ -6005,4 +6005,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.f88ec72a30804fcbccef.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.cd544cf763a07255468f.js.map
