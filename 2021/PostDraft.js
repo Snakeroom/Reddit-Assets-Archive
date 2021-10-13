@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostDraft.13eff714086f7950379d.js
-// Retrieved at 10/13/2021, 12:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostDraft.61f0c0e8fa52103de4f8.js
+// Retrieved at 10/13/2021, 3:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostDraft"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -3253,38 +3253,39 @@
 				}),
 				b = n("./node_modules/react-router-dom/esm/react-router-dom.js"),
 				f = n("./src/reddit/actions/postCollection/index.ts"),
-				x = n("./src/reddit/selectors/posts.ts"),
-				g = n("./src/reddit/components/HumanDate/index.tsx"),
-				E = n("./src/lib/constants/index.ts"),
-				_ = n("./src/reddit/components/Widgets/PostCollection/PostItem/index.m.less"),
-				v = n.n(_),
-				y = n("./src/reddit/components/Widgets/PostCollection/PostItem/OverflowMenu/index.tsx"),
-				C = n("./src/reddit/helpers/styles/mixins/loading.ts"),
-				w = n("./src/reddit/components/Widgets/PostCollection/PostItem/Placeholder.m.less"),
-				j = n.n(w);
+				x = n("./src/reddit/helpers/path/index.ts"),
+				g = n("./src/reddit/selectors/posts.ts"),
+				E = n("./src/reddit/components/HumanDate/index.tsx"),
+				_ = n("./src/lib/constants/index.ts"),
+				v = n("./src/reddit/components/Widgets/PostCollection/PostItem/index.m.less"),
+				y = n.n(v),
+				C = n("./src/reddit/components/Widgets/PostCollection/PostItem/OverflowMenu/index.tsx"),
+				w = n("./src/reddit/helpers/styles/mixins/loading.ts"),
+				j = n("./src/reddit/components/Widgets/PostCollection/PostItem/Placeholder.m.less"),
+				k = n.n(j);
 
-			function k({
+			function O({
 				className: e,
 				isLoading: t
 			}) {
-				const n = Object(C.a)({
+				const n = Object(w.a)({
 					isLoading: t
 				});
 				return o.a.createElement("div", {
-					className: Object(r.a)(j.a.Container, e)
+					className: Object(r.a)(k.a.Container, e)
 				}, o.a.createElement("div", {
-					className: j.a.Content
+					className: k.a.Content
 				}, o.a.createElement("div", {
-					className: Object(r.a)(j.a.Title, n)
+					className: Object(r.a)(k.a.Title, n)
 				}), o.a.createElement("div", {
-					className: Object(r.a)(j.a.Secondary, n)
+					className: Object(r.a)(k.a.Secondary, n)
 				})))
 			}
 			const {
-				fbt: O
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), S = ["right", "bottom"], I = ["right", "top"];
-			var T = Object(a.b)(() => Object(c.c)({
-					post: x.H
+				fbt: S
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), I = ["right", "bottom"], T = ["right", "top"];
+			var P = Object(a.b)(() => Object(c.c)({
+					post: g.H
 				}), (e, t) => ({
 					onRemovePostFromCollection: () => e(Object(f.g)(t.collectionId, t.postId))
 				}))(e => {
@@ -3293,39 +3294,39 @@
 						onRemovePostFromCollection: n
 					} = e;
 					return t ? o.a.createElement("div", {
-						className: v.a.container
+						className: y.a.container
 					}, o.a.createElement("div", {
-						className: v.a.content
+						className: y.a.content
 					}, o.a.createElement(b.a, {
-						className: v.a.title,
+						className: y.a.title,
 						target: "_blank",
-						to: t.permalink
+						to: Object(x.b)(t.permalink)
 					}, t.title), o.a.createElement("div", {
-						className: v.a.metaLine
-					}, O._("Posted · {timeAgo}", [O._param("timeAgo", o.a.createElement(g.d, {
-						seconds: t.created / E.Pb
+						className: y.a.metaLine
+					}, S._("Posted · {timeAgo}", [S._param("timeAgo", o.a.createElement(E.d, {
+						seconds: t.created / _.Pb
 					}))], {
 						hk: "ZVJpV"
-					}))), o.a.createElement(y.a, {
+					}))), o.a.createElement(C.a, {
 						onRemoveClick: n,
-						className: v.a.overflowMenu,
+						className: y.a.overflowMenu,
 						dropdownId: "collection-widget-item" + t.id,
 						postPermalink: t.permalink,
-						targetPosition: S,
-						tooltipPosition: I
-					})) : o.a.createElement(k, {
-						className: v.a.container,
+						targetPosition: I,
+						tooltipPosition: T
+					})) : o.a.createElement(O, {
+						className: y.a.container,
 						isLoading: !0
 					})
 				}),
-				P = n("./src/reddit/components/Widgets/PostCollection/index.m.less"),
-				L = n.n(P);
+				L = n("./src/reddit/components/Widgets/PostCollection/index.m.less"),
+				M = n.n(L);
 			const {
-				fbt: M
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), N = ["right", "bottom"], R = ["right", "top"];
-			class D extends o.a.PureComponent {
+				fbt: N
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), R = ["right", "bottom"], D = ["right", "top"];
+			class B extends o.a.PureComponent {
 				constructor() {
-					super(...arguments), this.renderItem = (e, t) => o.a.createElement(T, {
+					super(...arguments), this.renderItem = (e, t) => o.a.createElement(P, {
 						collectionId: this.props.collection.id,
 						key: e,
 						postId: e
@@ -3337,28 +3338,28 @@
 						collection: t
 					} = this.props, n = t.postIds.map(this.renderItem).reverse();
 					return o.a.createElement("div", {
-						className: Object(r.a)(e, L.a.container)
+						className: Object(r.a)(e, M.a.container)
 					}, o.a.createElement("div", {
-						className: L.a.topRow
-					}, M._("Collection", null, {
+						className: M.a.topRow
+					}, N._("Collection", null, {
 						hk: "1pY1s2"
 					}), o.a.createElement(i.a, {
-						className: L.a.menuButton,
+						className: M.a.menuButton,
 						collectionId: t.id,
 						isSubmitPage: !0,
 						permalink: t.permalink,
-						targetPosition: N,
-						tooltipPosition: R
+						targetPosition: R,
+						tooltipPosition: D
 					})), o.a.createElement("h4", {
-						className: L.a.collectionDescription
+						className: M.a.collectionDescription
 					}, t.title), o.a.createElement("div", {
-						className: L.a.listWrapper
+						className: M.a.listWrapper
 					}, o.a.createElement("div", {
-						className: L.a.listContainer
+						className: M.a.listContainer
 					}, n)), o.a.createElement(h, null))
 				}
 			}
-			t.a = D
+			t.a = B
 		},
 		"./src/reddit/components/Widgets/SubredditRules/Rule/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -4762,4 +4763,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.13eff714086f7950379d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.61f0c0e8fa52103de4f8.js.map
