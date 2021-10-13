@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/BottomCellWrapper.209cb5d4c74b1319fa13.js
-// Retrieved at 10/13/2021, 12:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/BottomCellWrapper.3c75ced3649b746ecba9.js
+// Retrieved at 10/13/2021, 2:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["BottomCellWrapper", "SignupUpsell"], {
 		"./src/reddit/components/ErrorBoundary/index.tsx": function(e, t, s) {
@@ -90,11 +90,11 @@
 				bottom: "_R8rvHygsKMBXCNwAdL_e",
 				large: "_2lu4yFbbiUGqY4Uhn9owfH",
 				left: "_2fdPtBgY9QQp3IoJ4RSl5a",
+				right: "_3i5-1Ua2cRJKiSBT2ub3BR",
 				bottomWrapper: "_1C-KIJ5LyGDleThUGtDLel",
 				emailButton: "_3un-bWnDBE66dHTwC_N-ad",
 				linkButton: "BdTWOFzZ7Er8XSx3Zbnr8",
 				appleButton: "IlFIYQfiM5oNODn120R3Q",
-				right: "_3i5-1Ua2cRJKiSBT2ub3BR",
 				closeButton: "_2qFn4QNDGodlEOt4HDqRcG"
 			}
 		},
@@ -231,7 +231,7 @@
 					}) : o.fbt._("Log in or sign up for the best experience", null, {
 						hk: "2LAHQy"
 					}),
-					y = w ? o.fbt._("Scan the QR code, it's super fun", null, {
+					F = w ? o.fbt._("Scan the QR code, it's super fun", null, {
 						hk: "1nNmn7"
 					}) : o.fbt._("Get the app", null, {
 						hk: "2NvKYa"
@@ -304,7 +304,7 @@
 					src: _
 				}), l.createElement("div", {
 					className: S.a.downloadAppLabel
-				}, y))))
+				}, F))))
 			}
 		},
 		"./src/reddit/hooks/promo/useIsPromoShown.ts": function(e, t, s) {
@@ -319,7 +319,7 @@
 				const {
 					promos: t
 				} = Object(o.a)();
-				return t.get(e) === n.a.Shown
+				return !!e && t.get(e) === n.a.Shown
 			}
 		},
 		"./src/reddit/hooks/promo/useIsSignupUpsellVariantEligible.ts": function(e, t, s) {
@@ -416,6 +416,8 @@
 					experimentName: e,
 					experimentEligibilitySelector: c,
 					throttledVariants: {
+						[o.Fb.Bottom_cell_dismissible]: e,
+						[o.Fb.Bottom_cell_dismissible_immediate_trigger]: e,
 						[o.Fb.Bottom_sheet]: e
 					},
 					expEventOverride: t
@@ -430,4 +432,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BottomCellWrapper.209cb5d4c74b1319fa13.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BottomCellWrapper.3c75ced3649b746ecba9.js.map

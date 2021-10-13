@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.d051364b7cec4680fc1f.js
-// Retrieved at 10/13/2021, 12:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.8a3f126671e545aa813f.js
+// Retrieved at 10/13/2021, 2:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage"], {
 		"./src/lib/makeLinkedPostsListingKey/index.ts": function(e, t, s) {
@@ -18,47 +18,48 @@
 		"./src/lib/promo/withShowSignupUpsell.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return h
+				return g
 			}));
 			var o = s("./node_modules/react/index.js");
 			var n = s("./node_modules/lodash/debounce.js"),
 				r = s.n(n),
-				i = s("./src/reddit/constants/experiments.ts"),
-				a = s("./src/reddit/constants/promo.ts"),
-				d = s("./src/reddit/hooks/usePromoContext.ts"),
-				c = s("./src/reddit/hooks/promo/useIsSignupUpsellVariantEligible.ts");
-			const l = 250,
-				m = 1e3;
+				i = s("./src/reddit/constants/elementIds.ts"),
+				a = s("./src/reddit/constants/experiments.ts"),
+				d = s("./src/reddit/constants/promo.ts"),
+				c = s("./src/reddit/hooks/usePromoContext.ts"),
+				l = s("./src/reddit/hooks/promo/useIsPromoShown.ts"),
+				m = s("./src/reddit/hooks/promo/useIsSignupUpsellVariantEligible.ts");
+			const p = 250,
+				u = 1e3;
 
-			function p(e = l) {
+			function h(e = p) {
 				const {
 					showPromo: t
-				} = Object(d.a)(), s = function() {
-					const e = Object(c.a)(i.Fb.Bottom_cell),
-						t = Object(c.a)(i.Fb.Bottom_cell_dismissible),
-						s = Object(c.a)(i.Fb.Bottom_cell_dismissible_immediate_trigger),
-						o = Object(c.a)(i.Fb.Bottom_cell_signup_upsell_copy),
-						n = Object(c.a)(i.Fb.Bottom_cell_surprise_install_copy),
-						r = Object(c.a)(i.Fb.Bottom_sheet);
-					return e || o || n ? a.b.SignupUpsellCell : t || s ? a.b.SignupUpsellCellDismissible : r ? a.b.SignupUpsellBottomSheet : null
-				}(), n = o.useRef(!1), p = Object(c.a)(i.Fb.Bottom_cell_dismissible_immediate_trigger);
-				return o.useEffect(() => {
-					s && p && !n.current && (t(s), n.current = !0)
-				}, [p, s, t]), o.useMemo(() => r()(e => {
-					var o;
-					if (!n.current && s && (null === (o = null == e ? void 0 : e.primaryChild) || void 0 === o ? void 0 : o.rectangle)) {
-						const {
-							top: o
-						} = e.primaryChild.rectangle;
-						o > 2 * window.innerHeight && (t(s), n.current = !0)
+				} = Object(c.a)(), s = function() {
+					const e = Object(m.a)(a.Fb.Bottom_cell),
+						t = Object(m.a)(a.Fb.Bottom_cell_dismissible),
+						s = Object(m.a)(a.Fb.Bottom_cell_dismissible_immediate_trigger),
+						o = Object(m.a)(a.Fb.Bottom_cell_signup_upsell_copy),
+						n = Object(m.a)(a.Fb.Bottom_cell_surprise_install_copy),
+						r = Object(m.a)(a.Fb.Bottom_sheet);
+					return e || o || n ? d.b.SignupUpsellCell : t || s ? d.b.SignupUpsellCellDismissible : r ? d.b.SignupUpsellBottomSheet : null
+				}(), n = Object(l.a)(s), h = Object(m.a)(a.Fb.Bottom_cell_dismissible_immediate_trigger);
+				return o.useMemo(() => r()(() => {
+					if (!n && s) {
+						const e = document.getElementById(i.d),
+							o = e ? e.scrollTop : window.scrollY,
+							n = window.innerHeight,
+							r = n / 3,
+							a = 2 * n;
+						o > (h ? r : a) && t(s)
 					}
 				}, e, {
-					maxWait: m
-				}), [s, t, e])
+					maxWait: u
+				}), [h, n, s, t, e])
 			}
 
-			function u() {
-				return (u = Object.assign || function(e) {
+			function b() {
+				return (b = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var o in s) Object.prototype.hasOwnProperty.call(s, o) && (e[o] = s[o])
@@ -67,12 +68,12 @@
 				}).apply(this, arguments)
 			}
 
-			function h(e) {
+			function g(e) {
 				const t = e.displayName || e.name || "Component";
 
 				function s(t) {
-					const s = p();
-					return o.createElement(e, u({
+					const s = h();
+					return o.createElement(e, b({
 						showSignupUpsell: s
 					}, t))
 				}
@@ -7009,6 +7010,21 @@
 					...n(t, e)
 				})
 		},
+		"./src/reddit/hooks/promo/useIsPromoShown.ts": function(e, t, s) {
+			"use strict";
+			s.d(t, "a", (function() {
+				return r
+			}));
+			var o = s("./src/reddit/constants/promo.ts"),
+				n = s("./src/reddit/hooks/usePromoContext.ts");
+
+			function r(e) {
+				const {
+					promos: t
+				} = Object(n.a)();
+				return !!e && t.get(e) === o.a.Shown
+			}
+		},
 		"./src/reddit/hooks/promo/useIsSignupUpsellVariantEligible.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
@@ -8756,6 +8772,8 @@
 					experimentName: e,
 					experimentEligibilitySelector: d,
 					throttledVariants: {
+						[n.Fb.Bottom_cell_dismissible]: e,
+						[n.Fb.Bottom_cell_dismissible_immediate_trigger]: e,
 						[n.Fb.Bottom_sheet]: e
 					},
 					expEventOverride: t
@@ -8960,4 +8978,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.d051364b7cec4680fc1f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.8a3f126671e545aa813f.js.map
