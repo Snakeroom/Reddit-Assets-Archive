@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.6eeb7b4ae9b5f891b0ba.js
-// Retrieved at 10/13/2021, 12:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.771eddc5225326136551.js
+// Retrieved at 10/13/2021, 2:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -1606,7 +1606,9 @@
 				}
 				renderLiveStatus() {
 					return this.isLive ? s.a.createElement("span", {
-						className: q.a.liveStatus
+						className: Object(d.a)(q.a.liveStatus, {
+							[q.a.compact]: this.props.layout === O.g.Compact
+						})
 					}, s.a.createElement(g.g, null)) : null
 				}
 				renderWatcherCount() {
@@ -3689,4 +3691,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.6eeb7b4ae9b5f891b0ba.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.771eddc5225326136551.js.map
