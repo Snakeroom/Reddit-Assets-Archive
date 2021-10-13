@@ -1,39 +1,39 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-TypingIndicators.334e74be73315f974419.js
-// Retrieved at 10/12/2021, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-TypingIndicators.52ed55b37531a5d9f228.js
+// Retrieved at 10/13/2021, 10:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-TypingIndicators"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, s, t) {
-			var o = t("./node_modules/lodash/_baseClamp.js"),
-				n = t("./node_modules/lodash/_copyArray.js"),
+			var n = t("./node_modules/lodash/_baseClamp.js"),
+				o = t("./node_modules/lodash/_copyArray.js"),
 				a = t("./node_modules/lodash/_shuffleSelf.js");
 			e.exports = function(e, s) {
-				return a(n(e), o(s, 0, e.length))
+				return a(o(e), n(s, 0, e.length))
 			}
 		},
 		"./node_modules/lodash/_baseRandom.js": function(e, s) {
 			var t = Math.floor,
-				o = Math.random;
+				n = Math.random;
 			e.exports = function(e, s) {
-				return e + t(o() * (s - e + 1))
+				return e + t(n() * (s - e + 1))
 			}
 		},
 		"./node_modules/lodash/_baseSampleSize.js": function(e, s, t) {
-			var o = t("./node_modules/lodash/_baseClamp.js"),
-				n = t("./node_modules/lodash/_shuffleSelf.js"),
+			var n = t("./node_modules/lodash/_baseClamp.js"),
+				o = t("./node_modules/lodash/_shuffleSelf.js"),
 				a = t("./node_modules/lodash/values.js");
 			e.exports = function(e, s) {
 				var t = a(e);
-				return n(t, o(s, 0, t.length))
+				return o(t, n(s, 0, t.length))
 			}
 		},
 		"./node_modules/lodash/_shuffleSelf.js": function(e, s, t) {
-			var o = t("./node_modules/lodash/_baseRandom.js");
+			var n = t("./node_modules/lodash/_baseRandom.js");
 			e.exports = function(e, s) {
 				var t = -1,
-					n = e.length,
-					a = n - 1;
-				for (s = void 0 === s ? n : s; ++t < s;) {
-					var r = o(t, a),
+					o = e.length,
+					a = o - 1;
+				for (s = void 0 === s ? o : s; ++t < s;) {
+					var r = n(t, a),
 						c = e[r];
 					e[r] = e[t], e[t] = c
 				}
@@ -41,20 +41,20 @@
 			}
 		},
 		"./node_modules/lodash/sampleSize.js": function(e, s, t) {
-			var o = t("./node_modules/lodash/_arraySampleSize.js"),
-				n = t("./node_modules/lodash/_baseSampleSize.js"),
+			var n = t("./node_modules/lodash/_arraySampleSize.js"),
+				o = t("./node_modules/lodash/_baseSampleSize.js"),
 				a = t("./node_modules/lodash/isArray.js"),
 				r = t("./node_modules/lodash/_isIterateeCall.js"),
 				c = t("./node_modules/lodash/toInteger.js");
 			e.exports = function(e, s, t) {
-				return s = (t ? r(e, s, t) : void 0 === s) ? 1 : c(s), (a(e) ? o : n)(e, s)
+				return s = (t ? r(e, s, t) : void 0 === s) ? 1 : c(s), (a(e) ? n : o)(e, s)
 			}
 		},
 		"./src/reddit/components/RandomBaseUserIcons/RandomBaseUserIcons.tsx": function(e, s, t) {
 			"use strict";
-			var o = t("./node_modules/@loadable/component/dist/loadable.esm.js"),
-				n = t("./node_modules/react/index.js"),
-				a = t.n(n),
+			var n = t("./node_modules/@loadable/component/dist/loadable.esm.js"),
+				o = t("./node_modules/react/index.js"),
+				a = t.n(o),
 				r = t("./src/lib/classNames/index.ts"),
 				c = t("./node_modules/lodash/sampleSize.js"),
 				d = t.n(c),
@@ -62,7 +62,7 @@
 				i = t("./src/reddit/hooks/useConstructor.ts"),
 				m = t("./src/reddit/components/RandomBaseUserIcons/index.m.less"),
 				u = t.n(m);
-			const p = Object(o.a)({
+			const p = Object(n.a)({
 					resolved: {},
 					chunkName: () => "reddit-components-UserIcon-PresenceDot",
 					isReady(e) {
@@ -82,32 +82,32 @@
 						return "./src/reddit/components/UserIcon/PresenceDot.tsx"
 					}
 				}),
-				h = 8,
-				_ = 20,
-				f = 3,
-				b = e => {
+				f = 8,
+				b = 20,
+				h = 3,
+				_ = e => {
 					const {
 						iconsKey: s,
 						memberIconClassName: t,
-						numVisibleIcons: o = f,
+						numVisibleIcons: n = h,
 						shouldOutlinePresenceDot: c,
 						shouldShowPresenceDot: m,
-						shouldUseColoredSilhouetteIcons: b,
-						numIconsToDrawFrom: j = (b ? h : _),
+						shouldUseColoredSilhouetteIcons: _,
+						numIconsToDrawFrom: j = (_ ? f : b),
 						wrapperClassName: I
-					} = e, g = Object(n.useRef)([]);
+					} = e, g = Object(o.useRef)([]);
 					return Object(i.a)(() => {
-						const e = Object(l.a)(s, j, b);
-						g.current = d()(e, o)
+						const e = Object(l.a)(s, j, _);
+						g.current = d()(e, n)
 					}), a.a.createElement("div", {
 						className: Object(r.a)(u.a.membersIcons, I)
 					}, g.current.map(({
 						color: e,
 						image: s
-					}, n) => {
-						return n === o - 1 && m ? a.a.createElement("div", {
+					}, o) => {
+						return o === n - 1 && m ? a.a.createElement("div", {
 							className: u.a.presenceWrapper,
-							key: n
+							key: o
 						}, a.a.createElement("img", {
 							className: Object(r.a)(u.a.memberIcon, t),
 							src: s,
@@ -121,7 +121,7 @@
 							})
 						})) : a.a.createElement("img", {
 							className: Object(r.a)(u.a.memberIcon, t),
-							key: n,
+							key: o,
 							src: s,
 							style: {
 								backgroundColor: e
@@ -129,7 +129,7 @@
 						})
 					}))
 				};
-			s.a = b
+			s.a = _
 		},
 		"./src/reddit/components/RandomBaseUserIcons/index.m.less": function(e, s, t) {
 			e.exports = {
@@ -142,9 +142,9 @@
 		"./src/reddit/components/TypingIndicators/index.tsx": function(e, s, t) {
 			"use strict";
 			t.r(s);
-			var o = t("./node_modules/fbt/lib/FbtPublic.js"),
-				n = t("./node_modules/react/index.js"),
-				a = t.n(n),
+			var n = t("./node_modules/fbt/lib/FbtPublic.js"),
+				o = t("./node_modules/react/index.js"),
+				a = t.n(o),
 				r = t("./src/realtime/GQLSubscription/async.tsx"),
 				c = t("./src/reddit/components/RandomBaseUserIcons/RandomBaseUserIcons.tsx"),
 				d = t("./src/reddit/helpers/trackers/commentsPage.ts"),
@@ -163,67 +163,82 @@
 			var m = t("./src/reddit/hooks/useClassNameOnMount.ts"),
 				u = t("./src/reddit/hooks/useTracking.ts"),
 				p = t("./src/reddit/components/TypingIndicators/index.m.less"),
-				h = t.n(p);
+				f = t.n(p);
 			s.default = e => {
-				const {
-					minNumUsersTyping: s,
-					postId: t
-				} = e, [d, l] = Object(n.useState)(0), p = Object(u.a)(), _ = Object(n.useMemo)(() => ({
-					input: {
-						channel: {
-							teamOwner: "CONTENT_AND_COMMUNITIES",
-							category: "POST_TYPING_INDICATOR",
-							postID: t
+				const s = Object(o.useRef)(null),
+					t = Object(o.useRef)(0),
+					{
+						minNumUsersTyping: d,
+						minTimeVisible: l,
+						postId: p
+					} = e,
+					[b, h] = Object(o.useState)(0),
+					[_, j] = Object(o.useState)(null),
+					I = Object(u.a)(),
+					g = Object(o.useMemo)(() => ({
+						input: {
+							channel: {
+								teamOwner: "CONTENT_AND_COMMUNITIES",
+								category: "POST_TYPING_INDICATOR",
+								postID: p
+							}
 						}
-					}
-				}), [t]), f = Object(n.useCallback)(e => {
-					const {
-						numUsers: s
-					} = e.subscribe.data;
-					s && s !== d && l(s)
-				}, [d]), {
-					className: b,
-					shouldMount: j,
-					onTransitionEnd: I
+					}), [p]),
+					v = Object(o.useCallback)(e => {
+						const {
+							numUsers: s
+						} = e.subscribe.data;
+						"number" == typeof s && s !== b && h(s)
+					}, [b]);
+				Object(o.useEffect)(() => {
+					if (b >= d) return t.current = b, void(_ || (s.current && clearTimeout(s.current), j(Date.now())));
+					if (!_) return;
+					const e = Date.now() - _;
+					e > l ? j(null) : s.current = setTimeout(() => j(null), l - e)
+				}, [_, l, b, d]);
+				const {
+					className: y,
+					shouldMount: O,
+					onTransitionEnd: C
 				} = Object(m.a)({
-					defaultClass: h.a.typingIndicator,
-					addedClass: h.a.isDisplayed,
-					mountCondition: d >= s
+					defaultClass: f.a.typingIndicator,
+					addedClass: f.a.isDisplayed,
+					mountCondition: !!_
 				});
-				return Object(n.useEffect)(() => {
-					j && p(i(t, d))
-				}, [j, t, p]), a.a.createElement(a.a.Fragment, null, a.a.createElement(r.a, {
-					variables: _,
-					onData: f,
+				return Object(o.useEffect)(() => {
+					O && I(i(p, b))
+				}, [O, p, I]), a.a.createElement(a.a.Fragment, null, a.a.createElement(r.a, {
+					variables: g,
+					onData: v,
 					queryKey: "postTypingIndicator"
-				}), j && a.a.createElement("div", {
-					className: b,
-					onTransitionEnd: I
+				}), O && a.a.createElement("div", {
+					className: y,
+					onTransitionEnd: C
 				}, a.a.createElement(c.a, {
-					iconsKey: t,
-					memberIconClassName: h.a.offsetMemberIcon,
-					numVisibleIcons: s,
+					iconsKey: p,
+					memberIconClassName: f.a.offsetMemberIcon,
+					numVisibleIcons: d,
 					shouldUseColoredSilhouetteIcons: !0,
-					wrapperClassName: h.a.offsetMembersIcons
+					wrapperClassName: f.a.offsetMembersIcons
 				}), a.a.createElement("div", {
-					className: h.a.numUsersTyping
-				}, o.fbt._("{number of people typing} people typing", [o.fbt._param("number of people typing", d >= 2 ? d.toString() : "0")], {
+					className: f.a.numUsersTyping
+				}, n.fbt._("{number of people typing} people typing", [n.fbt._param("number of people typing", t.current.toString())], {
 					hk: "1EaTEX"
 				})), a.a.createElement("div", {
-					className: h.a.typingDots
+					className: f.a.typingDots
 				}, a.a.createElement("span", {
-					className: h.a.dot
+					className: f.a.dot
 				}), a.a.createElement("span", {
-					className: h.a.dot
+					className: f.a.dot
 				}), a.a.createElement("span", {
-					className: h.a.dot
+					className: f.a.dot
 				}))))
 			}
 		},
 		"./src/reddit/helpers/getFakeUserIcons.ts": function(e, s, t) {
 			"use strict";
-			var o = t("./node_modules/lodash/memoize.js"),
-				n = t.n(o),
+			var n = t("./node_modules/lodash/memoize.js"),
+				o = t.n(n),
 				a = t("./src/reddit/constants/categories.tsx"),
 				r = t("./src/config.ts");
 			const c = Array.from({
@@ -233,36 +248,36 @@
 					length: 8
 				}).map((e, s) => `${r.a.processingAvatarImageUrl}/defaults/avatar_default_${s}.png`),
 				l = [];
-			s.a = n()((e, s = 3, t) => {
+			s.a = o()((e, s = 3, t) => {
 				if (!e || !s) return l;
-				const o = t ? d : c,
-					n = Array.from(e).reduce((e, s) => e + s.charCodeAt(0), 0);
+				const n = t ? d : c,
+					o = Array.from(e).reduce((e, s) => e + s.charCodeAt(0), 0);
 				return Array.from({
 					length: s
 				}).map((e, s) => ({
-					color: a.a[(n + s) % a.a.length],
-					image: o[(n + s) % o.length]
+					color: a.a[(o + s) % a.a.length],
+					image: n[(o + s) % n.length]
 				}))
 			}, (e, s = 3) => `${e}_${s}`)
 		},
 		"./src/reddit/hooks/useClassNameOnMount.ts": function(e, s, t) {
 			"use strict";
-			var o = t("./node_modules/react/index.js"),
-				n = t("./src/lib/classNames/index.ts");
+			var n = t("./node_modules/react/index.js"),
+				o = t("./src/lib/classNames/index.ts");
 			s.a = ({
 				defaultClass: e,
 				addedClass: s,
 				mountCondition: t
 			}) => {
-				const [a, r] = Object(o.useState)(e), [c, d] = Object(o.useState)(!1);
-				Object(o.useEffect)(() => {
+				const [a, r] = Object(n.useState)(e), [c, d] = Object(n.useState)(!1);
+				Object(n.useEffect)(() => {
 					t && d(!0)
-				}, [t]), Object(o.useEffect)(() => {
+				}, [t]), Object(n.useEffect)(() => {
 					c && (t ? window.setTimeout(() => {
-						r(Object(n.a)(e, s))
+						r(Object(o.a)(e, s))
 					}, 100) : r(e))
 				}, [s, e, t, c]);
-				const l = Object(o.useCallback)(() => {
+				const l = Object(n.useCallback)(() => {
 					t || d(!1)
 				}, [t]);
 				return {
@@ -275,15 +290,15 @@
 		"./src/reddit/hooks/useConstructor.ts": function(e, s, t) {
 			"use strict";
 			t.d(s, "a", (function() {
-				return n
+				return o
 			}));
-			var o = t("./node_modules/react/index.js");
+			var n = t("./node_modules/react/index.js");
 
-			function n(e) {
-				const s = Object(o.useRef)(!1);
+			function o(e) {
+				const s = Object(n.useRef)(!1);
 				s.current || (e(), s.current = !0)
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-TypingIndicators.334e74be73315f974419.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-TypingIndicators.52ed55b37531a5d9f228.js.map

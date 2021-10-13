@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.0b87e74a3228dea3b7a9.js
-// Retrieved at 10/13/2021, 10:20:10 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.e8289da53311cb359898.js
+// Retrieved at 10/13/2021, 10:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton", "reddit-components-RichTextEditor-Toolbar-GifButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, o) {
@@ -2807,6 +2807,7 @@
 							[re.a.isOverlay]: N
 						})
 					}, z && d.a.createElement(ue, {
+						minTimeVisible: Z.c,
 						minNumUsersTyping: Z.b,
 						postId: v
 					}), d.a.createElement(x.a, {
@@ -4182,7 +4183,7 @@
 					showEmoteButton: j,
 					gifsEnabled: w,
 					controlsState: O
-				} = e, T = p ? d.c : void 0, S = p ? h.a.overflowPopupMenu : void 0, R = p ? ["left", "top"] : void 0, F = p ? ["left", "bottom"] : void 0;
+				} = e, T = p ? d.d : void 0, S = p ? h.a.overflowPopupMenu : void 0, R = p ? ["left", "top"] : void 0, F = p ? ["left", "bottom"] : void 0;
 				return !b || p ? s.a.createElement(a.a, {
 					className: t,
 					oveflowMenuDropdownId: n,
@@ -4369,8 +4370,9 @@
 		"./src/reddit/components/TypingIndicators/index.m.less": function(e, t, o) {
 			e.exports = {
 				justifyCenter: "_1WevNRsphqv7-1U44SSi2a",
-				commentComposer: "_1Qf1b13Wfxrwm5CKS9cME2",
 				roundCorners: "_3-KjSdkLq0TxR6iPCUMV0a",
+				fadeOut: "hxgpjMmP5DkIH9qjzKU76",
+				commentComposer: "_1Qf1b13Wfxrwm5CKS9cME2",
 				isOverlay: "_3azyTJy_p5TQz2a8drvrCn",
 				richTextEditor: "_13Vh8SbdNDl0dufOVZLBRi",
 				footerButtons: "_2YOcnzi1qyJFKhP4cPf8dS",
@@ -4380,10 +4382,10 @@
 				typingIndicator: "xQIeDIIVr1yVZYxsz0ozp",
 				isDisplayed: "_3SppaUc9TkqJc-zbqJt-3h",
 				numUsersTyping: "_3TiTD1rBkrFHlvu6vJ2D_n",
+				offsetMembersIcons: "CnV1Edi-ImN72TXNKOCUu",
 				typingDots: "_3Sck3A9yG3NOFzt_N7zrlr",
 				dot: "_1fMgUDC_-k-rdiT8UGZ6j4",
 				typingAnimation: "_3Qj9QSvdQ5qft-VPaBowdQ",
-				offsetMembersIcons: "CnV1Edi-ImN72TXNKOCUu",
 				offsetMemberIcon: "KCCH40yFmIIE1YdtzgwrD"
 			}
 		},
@@ -5124,4 +5126,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.0b87e74a3228dea3b7a9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.e8289da53311cb359898.js.map

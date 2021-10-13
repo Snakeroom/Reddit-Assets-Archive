@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor.cd5dacdf32964f669bf1.js
-// Retrieved at 10/12/2021, 5:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor.9e73d88fa6faee904b33.js
+// Retrieved at 10/13/2021, 10:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor"], {
 		"./src/lib/forEachGroup/index.ts": function(t, e, n) {
@@ -6217,7 +6217,7 @@
 						focusableContentRef: t
 					}), this.setUserStoppedTyping = i()(() => this.setState({
 						isUserTyping: !1
-					}), tc.d), this.rteStateChanged = (t, e) => {
+					}), tc.e), this.rteStateChanged = (t, e) => {
 						const n = {
 							...this.props.rteState,
 							isBound: !0,
@@ -7537,15 +7537,18 @@
 				return o
 			})), n.d(e, "b", (function() {
 				return r
-			})), n.d(e, "c", (function() {
-				return s
 			})), n.d(e, "d", (function() {
+				return s
+			})), n.d(e, "e", (function() {
 				return i
+			})), n.d(e, "c", (function() {
+				return c
 			}));
 			const o = 37,
 				r = 2,
 				s = 6,
-				i = 1e4
+				i = 1e4,
+				c = 1e4
 		},
 		"./src/reddit/controls/SubredditDropdown/index.m.less": function(t, e, n) {
 			t.exports = {
@@ -8008,4 +8011,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor.cd5dacdf32964f669bf1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor.9e73d88fa6faee904b33.js.map
