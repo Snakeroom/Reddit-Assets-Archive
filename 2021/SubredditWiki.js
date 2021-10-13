@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.3af7f5cddec957a5b052.js
-// Retrieved at 10/12/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.297835aaadc665326cc5.js
+// Retrieved at 10/13/2021, 10:20:10 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./src/lib/unicodeUtils/index.ts": function(e, t, s) {
@@ -123,12 +123,12 @@
 				b = e => {
 					switch (e) {
 						case c.b.OFF:
-							return n.fbt._("Unfollowed, You’ll no longer receive updates.", null, {
-								hk: "3ysZF4"
+							return n.fbt._("Unfollowed. You won’t get updates on new activity anymore.", null, {
+								hk: "3e1CJR"
 							});
 						case c.b.FREQUENT:
-							return n.fbt._("Followed! You’ll receive updates when there’s new activity.", null, {
-								hk: "1sC6iH"
+							return n.fbt._("Followed! Now you’ll get updates on new activity.", null, {
+								hk: "3JzOOa"
 							});
 						case c.b.LOW:
 							return n.fbt._("Success! You will see fewer notifications from this community in the future.", null, {
@@ -7485,4 +7485,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.3af7f5cddec957a5b052.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.297835aaadc665326cc5.js.map

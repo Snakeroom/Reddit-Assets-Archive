@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.58e5bbfc3e00c3dd48d5.js
-// Retrieved at 10/13/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.4cf1965a81c19ca07598.js
+// Retrieved at 10/13/2021, 10:20:10 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit", "FrontpageSidebar"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -1876,8 +1876,8 @@
 							Object(U.tb)(null !== (d = null === (l = null === (c = o().pages) || void 0 === c ? void 0 : c.comments) || void 0 === l ? void 0 : l.followed) && void 0 !== d ? d : [], null === (u = o().user.account) || void 0 === u ? void 0 : u.id);
 							const e = a ? s.fbt._("Followed! You’ll receive updates when there’s new activity", null, {
 								hk: "1Dp5UH"
-							}) : s.fbt._("Unfollowed, You’ll no longer recieve updates on this comment", null, {
-								hk: "2fJsVC"
+							}) : s.fbt._("Unfollowed, You’ll no longer receive updates on this comment", null, {
+								hk: "1L9sav"
 							});
 							n(Object(b.f)({
 								kind: V.b.SuccessCommunityGreen,
@@ -21080,4 +21080,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePo~5f1ac562", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250", "Governance~ModListing~Reddit~Subreddit", "Chat~Governance~Reddit", "Reddit~StandalonePostPage~reddit-components-MediumPost", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.58e5bbfc3e00c3dd48d5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.4cf1965a81c19ca07598.js.map

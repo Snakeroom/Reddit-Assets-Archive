@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.2886046f3ab5713fc440.js
-// Retrieved at 10/12/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.fb798f842d468cb8601f.js
+// Retrieved at 10/13/2021, 10:20:10 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-NotificationUnit-Button"], {
 		"./src/reddit/actions/comment/authoring.ts": function(e, t, n) {
@@ -139,11 +139,11 @@
 				U = n("./src/reddit/helpers/localStorage/index.ts"),
 				F = n("./src/reddit/helpers/trackers/commentsPage.ts"),
 				H = n("./src/reddit/models/Comment/index.ts"),
-				J = n("./src/reddit/models/PostDraft/index.ts"),
-				W = n("./src/reddit/models/RichTextJson/index.ts"),
+				W = n("./src/reddit/models/PostDraft/index.ts"),
+				J = n("./src/reddit/models/RichTextJson/index.ts"),
 				B = n("./src/reddit/models/RichTextJson/nodeMakers.ts"),
-				V = n("./src/reddit/models/Toast/index.ts"),
-				G = n("./src/reddit/selectors/comments.ts"),
+				G = n("./src/reddit/models/Toast/index.ts"),
+				V = n("./src/reddit/selectors/comments.ts"),
 				q = n("./src/reddit/selectors/commentSelector.ts"),
 				$ = n("./src/reddit/selectors/platform.ts"),
 				Y = n("./src/reddit/selectors/posts.ts"),
@@ -202,7 +202,7 @@
 						let o;
 						o = g.body, u(ne({
 							...o,
-							headCommentId: Object(G.w)(j, {
+							headCommentId: Object(V.w)(j, {
 								commentsPageKey: t
 							}),
 							commentsPageKey: t,
@@ -222,7 +222,7 @@
 							error: g.error
 						})), u(Object(f.f)({
 							duration: f.a,
-							kind: V.b.Error,
+							kind: G.b.Error,
 							text: t
 						}))
 					}
@@ -297,10 +297,10 @@
 					apiContext: c
 				}) => {
 					const i = e === _.i.RICH_TEXT;
-					if (!t || "object" == typeof t && Object(W.G)(t)) r(pe({
+					if (!t || "object" == typeof t && Object(J.G)(t)) r(pe({
 						editorMode: e,
 						draftKey: n,
-						content: i ? W.i : ""
+						content: i ? J.i : ""
 					})), r(Object(u.c)(e));
 					else {
 						r(Object(u.b)(n));
@@ -314,7 +314,7 @@
 							})), r(Object(u.c)(e))
 						} else r(Object(u.a)(n)), r(Object(f.f)({
 							duration: f.a,
-							kind: V.b.Error,
+							kind: G.b.Error,
 							text: o.fbt._("Something went wrong", null, {
 								hk: "LWFS0"
 							})
@@ -326,10 +326,10 @@
 					singleOpen: n
 				}) => async (o, r) => {
 					const s = r(),
-						m = Object(c.a)(J.c.replyToComment, t);
+						m = Object(c.a)(W.c.replyToComment, t);
 					if (!Object(z.K)(r())) return o(Object(d.k)()), void o(Object(a.k)({
 						actionSource: a.a.Reply,
-						redirectUrl: Object(G.m)(r(), {
+						redirectUrl: Object(V.m)(r(), {
 							commentId: t
 						})
 					}));
@@ -359,12 +359,12 @@
 					let j;
 					if (j = O ? {
 							commentMode: p,
-							draftType: J.c.replyToComment,
+							draftType: W.c.replyToComment,
 							rtJson: f,
 							text: `${b}\n`
 						} : y || {
 							commentMode: p,
-							draftType: J.c.replyToComment,
+							draftType: W.c.replyToComment,
 							rtJson: f,
 							text: ""
 						}, Object(z.M)(s)) {
@@ -416,7 +416,7 @@
 							text: r,
 							commentMode: t,
 							rteState: null,
-							draftType: J.c.edit,
+							draftType: W.c.edit,
 							hasFocus: !0
 						}
 					})))
@@ -537,7 +537,7 @@
 				}) => {
 					var c, i, d, a, m, u;
 					n(Object(Q.c)());
-					const l = e => Object(f.f)(Object(f.e)(e, V.b.Error));
+					const l = e => Object(f.f)(Object(f.e)(e, G.b.Error));
 					if (((null === (i = null === (c = r().pages) || void 0 === c ? void 0 : c.comments) || void 0 === i ? void 0 : i.followed) || []).length === y.a) n(l(o.fbt._("You've reached your post follow limit", null, {
 						hk: "3ebRql"
 					})));
@@ -559,11 +559,11 @@
 							Object(U.tb)(null !== (m = null === (a = null === (d = r().pages) || void 0 === d ? void 0 : d.comments) || void 0 === a ? void 0 : a.followed) && void 0 !== m ? m : [], null === (u = r().user.account) || void 0 === u ? void 0 : u.id);
 							const e = c ? o.fbt._("Followed! You’ll receive updates when there’s new activity", null, {
 								hk: "1Dp5UH"
-							}) : o.fbt._("Unfollowed, You’ll no longer recieve updates on this comment", null, {
-								hk: "2fJsVC"
+							}) : o.fbt._("Unfollowed, You’ll no longer receive updates on this comment", null, {
+								hk: "1L9sav"
 							});
 							n(Object(f.f)({
-								kind: V.b.SuccessCommunityGreen,
+								kind: G.b.SuccessCommunityGreen,
 								text: e
 							}))
 						} else n(Object(Q.n)(i)), n(l(o.fbt._("Sorry, we had trouble doing that. Please try again.", null, {
@@ -591,11 +591,11 @@
 			})), n.d(t, "g", (function() {
 				return H
 			})), n.d(t, "f", (function() {
-				return J
+				return W
 			})), n.d(t, "o", (function() {
-				return V
-			})), n.d(t, "p", (function() {
 				return G
+			})), n.d(t, "p", (function() {
+				return V
 			})), n.d(t, "d", (function() {
 				return q
 			})), n.d(t, "a", (function() {
@@ -738,7 +738,7 @@
 						moreCommentsItem: c,
 						...f.error
 					}))
-				}, U = Object(f.a)(O.b, C.a.upvoted), F = Object(f.a)(O.b, C.a.downvoted), H = Object(c.a)(_.j), J = Object(c.a)(_.i), W = Object(c.a)(_.e), B = Object(c.a)(_.f), V = (Object(c.a)(_.c), Object(c.a)(_.d), ({
+				}, U = Object(f.a)(O.b, C.a.upvoted), F = Object(f.a)(O.b, C.a.downvoted), H = Object(c.a)(_.j), W = Object(c.a)(_.i), J = Object(c.a)(_.e), B = Object(c.a)(_.f), G = (Object(c.a)(_.c), Object(c.a)(_.d), ({
 					commentId: e,
 					commentsPageKey: t,
 					scrollToAndRemeasure: n
@@ -754,12 +754,12 @@
 							commentsPageKey: t
 						}),
 						a = i.depth;
-					o(W({
+					o(J({
 						commentId: e,
 						commentsPageKey: t,
 						isCollapsed: d
 					})), d || 0 !== a || n(e, !0), Object(l.d)()
-				}), G = ({
+				}), V = ({
 					commentId: e,
 					commentsPageKey: t
 				}) => async n => {
@@ -779,7 +779,7 @@
 							commentId: e.id,
 							commentsPageKey: t
 						});
-					r(W({
+					r(J({
 						commentId: i,
 						commentsPageKey: t,
 						isCollapsed: d
@@ -2021,15 +2021,15 @@
 			})), n.d(t, "v", (function() {
 				return H
 			})), n.d(t, "J", (function() {
-				return J
-			})), n.d(t, "f", (function() {
 				return W
+			})), n.d(t, "f", (function() {
+				return J
 			})), n.d(t, "i", (function() {
 				return B
 			})), n.d(t, "F", (function() {
-				return V
-			})), n.d(t, "B", (function() {
 				return G
+			})), n.d(t, "B", (function() {
+				return V
 			})), n.d(t, "H", (function() {
 				return q
 			})), n.d(t, "p", (function() {
@@ -2218,13 +2218,13 @@
 				H = (e, {
 					draftKey: t
 				}) => !!e.features.comments.submit.error[t],
-				J = (e, {
+				W = (e, {
 					draftKey: t
 				}) => {
 					const n = e.features.comments.submit.error[t];
 					return n && n.fields ? n.fields.map(e => e.msg) : []
 				},
-				W = (e, {
+				J = (e, {
 					draftKey: t
 				}) => {
 					const n = e.features.comments.drafts[t];
@@ -2233,13 +2233,13 @@
 				B = (e, {
 					draftKey: t
 				}) => e.features.comments.drafts[t],
-				V = (e, {
+				G = (e, {
 					commentId: t
 				}) => {
 					const n = t ? e.features.comments.submit.error[t] : void 0;
 					return n && n.fields ? n.fields.map(e => e.msg) : void 0
 				},
-				G = (e, {
+				V = (e, {
 					commentId: t
 				}) => !!t && e.features.comments.submit.pending[t],
 				q = (e, {
@@ -2296,4 +2296,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.2886046f3ab5713fc440.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.fb798f842d468cb8601f.js.map

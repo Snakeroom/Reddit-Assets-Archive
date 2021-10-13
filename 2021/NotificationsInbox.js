@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NotificationsInbox.759f037979cf4852b147.js
-// Retrieved at 10/7/2021, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationsInbox.878baf6842503547d4d5.js
+// Retrieved at 10/13/2021, 10:20:10 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationsInbox"], {
 		"./src/reddit/actions/pages/notificationsInbox.ts": function(e, t, n) {
@@ -60,12 +60,12 @@
 				f = e => {
 					switch (e) {
 						case d.b.OFF:
-							return i.fbt._("Unfollowed, You’ll no longer receive updates.", null, {
-								hk: "3ysZF4"
+							return i.fbt._("Unfollowed. You won’t get updates on new activity anymore.", null, {
+								hk: "3e1CJR"
 							});
 						case d.b.FREQUENT:
-							return i.fbt._("Followed! You’ll receive updates when there’s new activity.", null, {
-								hk: "1sC6iH"
+							return i.fbt._("Followed! Now you’ll get updates on new activity.", null, {
+								hk: "3JzOOa"
 							});
 						case d.b.LOW:
 							return i.fbt._("Success! You will see fewer notifications from this community in the future.", null, {
@@ -607,18 +607,18 @@
 			}
 			var A = Object(r.c)(F),
 				M = n("./src/reddit/selectors/appBadges.ts"),
-				U = n("./src/reddit/selectors/notificationsInbox.tsx"),
-				R = n("./src/reddit/selectors/tooltip.ts"),
+				R = n("./src/reddit/selectors/notificationsInbox.tsx"),
+				U = n("./src/reddit/selectors/tooltip.ts"),
 				B = n("./src/reddit/selectors/user.ts");
 			const W = Object(l.c)({
-				activeOverflowMenuId: R.a,
-				cursor: U.c,
-				earlierNotifications: U.b,
-				hasNextPage: U.d,
+				activeOverflowMenuId: U.a,
+				cursor: R.c,
+				earlierNotifications: R.b,
+				hasNextPage: R.d,
 				inboxBadgeCount: M.g,
 				isInboxPostEmbedEnabled: O.f,
-				isPending: U.e,
-				todayNotifications: U.i,
+				isPending: R.e,
+				todayNotifications: R.i,
 				userId: B.pb
 			});
 			var H = Object(d.b)(W, e => ({
@@ -643,33 +643,33 @@
 				}))(A),
 				G = n("./node_modules/fbt/lib/FbtPublic.js"),
 				J = n("./src/reddit/components/BadgeCounter/index.tsx"),
-				Q = n("./src/reddit/components/TabNav/index.tsx"),
-				z = n("./src/reddit/controls/InternalLink/index.tsx"),
+				z = n("./src/reddit/components/TabNav/index.tsx"),
+				Q = n("./src/reddit/controls/InternalLink/index.tsx"),
 				D = n("./src/reddit/hooks/useTracking.ts"),
 				q = n("./src/reddit/icons/fonts/index.tsx"),
 				K = n("./src/reddit/pages/NotificationsInbox/NavBar/index.m.less"),
-				Y = n.n(K);
-			const X = h.a.wrapped(J.a, "Badge", Y.a),
-				Z = h.a.wrapped(Q.a, "Tab", Y.a);
+				X = n.n(K);
+			const Y = h.a.wrapped(J.a, "Badge", X.a),
+				Z = h.a.wrapped(z.a, "Tab", X.a);
 			var V = e => {
 				const {
 					messagesTabBadgeCount: t,
 					notificationsTabBadgeCount: n
 				} = e, i = Object(D.a)(), a = !!t;
 				return s.a.createElement("div", {
-					className: Y.a.navContainer
+					className: X.a.navContainer
 				}, s.a.createElement("h1", {
-					className: Y.a.navHeader
+					className: X.a.navHeader
 				}, G.fbt._("Notifications", null, {
 					hk: "18kEAD"
 				})), s.a.createElement("nav", {
-					className: Y.a.navBar
+					className: X.a.navBar
 				}, s.a.createElement("ul", null, s.a.createElement("li", null, s.a.createElement(Z, {
 					active: !0,
 					to: "/notifications"
 				}, G.fbt._("Activity", null, {
 					hk: "24wHCv"
-				}), s.a.createElement(X, {
+				}), s.a.createElement(Y, {
 					isActive: !!n,
 					unreadCount: n
 				}))), s.a.createElement("li", null, s.a.createElement(Z, {
@@ -683,11 +683,11 @@
 					to: a ? "/message/unread" : "/message/messages"
 				}, G.fbt._("Messages", null, {
 					hk: "Xl3Wz"
-				}), s.a.createElement(X, {
+				}), s.a.createElement(Y, {
 					isActive: a,
 					unreadCount: t
 				}))), s.a.createElement("li", null, s.a.createElement("button", {
-					className: Y.a.navLink,
+					className: X.a.navLink,
 					onClick: () => {
 						e.markAllAsRead(), i(Object(E.g)({
 							isMiniInbox: !1
@@ -695,16 +695,16 @@
 					}
 				}, s.a.createElement(q.a, {
 					name: "mark_read",
-					className: Y.a.icon
+					className: X.a.icon
 				}), G.fbt._("Mark as read", null, {
 					hk: "3IycES"
-				}))), s.a.createElement("li", null, s.a.createElement(z.a, {
-					className: Y.a.navLink,
+				}))), s.a.createElement("li", null, s.a.createElement(Q.a, {
+					className: X.a.navLink,
 					onClick: () => i(Object(E.m)(E.b.Inbox)),
 					to: "/settings/notifications"
 				}, s.a.createElement(q.a, {
 					name: "settings",
-					className: Y.a.icon
+					className: X.a.icon
 				}), G.fbt._("Settings", null, {
 					hk: "1e9Jn"
 				}))))))
@@ -732,4 +732,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsInbox.759f037979cf4852b147.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsInbox.878baf6842503547d4d5.js.map

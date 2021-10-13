@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.c1e033b07ecbcef09e56.js
-// Retrieved at 10/13/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.6b13a2a2a05421239fc2.js
+// Retrieved at 10/13/2021, 10:20:10 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, n) {
@@ -928,8 +928,8 @@
 							Object(B.tb)(null !== (l = null === (d = null === (c = r().pages) || void 0 === c ? void 0 : c.comments) || void 0 === d ? void 0 : d.followed) && void 0 !== l ? l : [], null === (u = r().user.account) || void 0 === u ? void 0 : u.id);
 							const e = i ? o.fbt._("Followed! You’ll receive updates when there’s new activity", null, {
 								hk: "1Dp5UH"
-							}) : o.fbt._("Unfollowed, You’ll no longer recieve updates on this comment", null, {
-								hk: "2fJsVC"
+							}) : o.fbt._("Unfollowed, You’ll no longer receive updates on this comment", null, {
+								hk: "1L9sav"
 							});
 							n(Object(b.f)({
 								kind: K.b.SuccessCommunityGreen,
@@ -23489,4 +23489,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.c1e033b07ecbcef09e56.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.6b13a2a2a05421239fc2.js.map

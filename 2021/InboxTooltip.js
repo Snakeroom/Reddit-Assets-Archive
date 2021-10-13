@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InboxTooltip.fa787afb57490e3978e7.js
-// Retrieved at 10/7/2021, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InboxTooltip.e7b32535542d48c9b10d.js
+// Retrieved at 10/13/2021, 10:20:10 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InboxTooltip", "PushNotifications"], {
 		"./src/lib/notifications/token.ts": function(e, t, i) {
@@ -217,12 +217,12 @@
 				p = e => {
 					switch (e) {
 						case d.b.OFF:
-							return n.fbt._("Unfollowed, You’ll no longer receive updates.", null, {
-								hk: "3ysZF4"
+							return n.fbt._("Unfollowed. You won’t get updates on new activity anymore.", null, {
+								hk: "3e1CJR"
 							});
 						case d.b.FREQUENT:
-							return n.fbt._("Followed! You’ll receive updates when there’s new activity.", null, {
-								hk: "1sC6iH"
+							return n.fbt._("Followed! Now you’ll get updates on new activity.", null, {
+								hk: "3JzOOa"
 							});
 						case d.b.LOW:
 							return n.fbt._("Success! You will see fewer notifications from this community in the future.", null, {
@@ -537,4 +537,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InboxTooltip.fa787afb57490e3978e7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InboxTooltip.e7b32535542d48c9b10d.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/removalReasonActions.3a77fd216ddd6029492d.js
-// Retrieved at 10/12/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/removalReasonActions.546ca2c57bea5d4818d2.js
+// Retrieved at 10/13/2021, 10:20:10 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["removalReasonActions"], {
 		"./src/reddit/actions/bulkActions/index.ts": function(e, t, n) {
@@ -156,8 +156,8 @@
 				V = n("./src/reddit/models/Comment/index.ts"),
 				B = n("./src/reddit/models/PostDraft/index.ts"),
 				H = n("./src/reddit/models/RichTextJson/index.ts"),
-				J = n("./src/reddit/models/RichTextJson/nodeMakers.ts"),
-				$ = n("./src/reddit/models/Toast/index.ts"),
+				$ = n("./src/reddit/models/RichTextJson/nodeMakers.ts"),
+				J = n("./src/reddit/models/Toast/index.ts"),
 				G = n("./src/reddit/selectors/comments.ts"),
 				q = n("./src/reddit/selectors/commentSelector.ts"),
 				W = n("./src/reddit/selectors/platform.ts"),
@@ -237,7 +237,7 @@
 							error: g.error
 						})), u(Object(p.f)({
 							duration: p.a,
-							kind: $.b.Error,
+							kind: J.b.Error,
 							text: t
 						}))
 					}
@@ -329,7 +329,7 @@
 							})), s(Object(u.c)(e))
 						} else s(Object(u.a)(n)), s(Object(p.f)({
 							duration: p.a,
-							kind: $.b.Error,
+							kind: J.b.Error,
 							text: o.fbt._("Something went wrong", null, {
 								hk: "LWFS0"
 							})
@@ -362,11 +362,11 @@
 						const e = O.filter(e => !!e && 10 !== e.charCodeAt(0));
 						if (f === k.i.MARKDOWN) b = e.map(e => `> ${e}\n`).join("");
 						else {
-							const t = e.map(e => J.s(e, null)).map(e => J.l([e])),
-								n = J.s("", null),
-								o = J.l([n]);
+							const t = e.map(e => $.s(e, null)).map(e => $.l([e])),
+								n = $.s("", null),
+								o = $.l([n]);
 							p = {
-								document: [J.c(t), o]
+								document: [$.c(t), o]
 							}
 						}
 					}
@@ -552,7 +552,7 @@
 				}) => {
 					var c, d, a, i, m, u;
 					n(Object(X.c)());
-					const l = e => Object(p.f)(Object(p.e)(e, $.b.Error));
+					const l = e => Object(p.f)(Object(p.e)(e, J.b.Error));
 					if (((null === (d = null === (c = s().pages) || void 0 === c ? void 0 : c.comments) || void 0 === d ? void 0 : d.followed) || []).length === j.a) n(l(o.fbt._("You've reached your post follow limit", null, {
 						hk: "3ebRql"
 					})));
@@ -574,11 +574,11 @@
 							Object(U.tb)(null !== (m = null === (i = null === (a = s().pages) || void 0 === a ? void 0 : a.comments) || void 0 === i ? void 0 : i.followed) && void 0 !== m ? m : [], null === (u = s().user.account) || void 0 === u ? void 0 : u.id);
 							const e = c ? o.fbt._("Followed! You’ll receive updates when there’s new activity", null, {
 								hk: "1Dp5UH"
-							}) : o.fbt._("Unfollowed, You’ll no longer recieve updates on this comment", null, {
-								hk: "2fJsVC"
+							}) : o.fbt._("Unfollowed, You’ll no longer receive updates on this comment", null, {
+								hk: "1L9sav"
 							});
 							n(Object(p.f)({
-								kind: $.b.SuccessCommunityGreen,
+								kind: J.b.SuccessCommunityGreen,
 								text: e
 							}))
 						} else n(Object(X.n)(d)), n(l(o.fbt._("Sorry, we had trouble doing that. Please try again.", null, {
@@ -608,7 +608,7 @@
 			})), n.d(t, "f", (function() {
 				return B
 			})), n.d(t, "o", (function() {
-				return $
+				return J
 			})), n.d(t, "p", (function() {
 				return G
 			})), n.d(t, "d", (function() {
@@ -753,7 +753,7 @@
 						moreCommentsItem: c,
 						...p.error
 					}))
-				}, U = Object(p.a)(O.b, S.a.upvoted), F = Object(p.a)(O.b, S.a.downvoted), V = Object(c.a)(k.j), B = Object(c.a)(k.i), H = Object(c.a)(k.e), J = Object(c.a)(k.f), $ = (Object(c.a)(k.c), Object(c.a)(k.d), ({
+				}, U = Object(p.a)(O.b, S.a.upvoted), F = Object(p.a)(O.b, S.a.downvoted), V = Object(c.a)(k.j), B = Object(c.a)(k.i), H = Object(c.a)(k.e), $ = Object(c.a)(k.f), J = (Object(c.a)(k.c), Object(c.a)(k.d), ({
 					commentId: e,
 					commentsPageKey: t,
 					scrollToAndRemeasure: n
@@ -778,7 +778,7 @@
 					commentId: e,
 					commentsPageKey: t
 				}) => async n => {
-					n(J({
+					n($({
 						commentId: e,
 						commentsPageKey: t
 					}))
@@ -1342,8 +1342,8 @@
 				});
 			var B = n("./src/reddit/helpers/isPost.ts"),
 				H = n("./src/reddit/helpers/r2/normalizeCommentFromR2/index.ts"),
-				J = n("./src/reddit/helpers/routeKey/index.ts"),
-				$ = n("./src/reddit/models/ModQueue/index.ts"),
+				$ = n("./src/reddit/helpers/routeKey/index.ts"),
+				J = n("./src/reddit/models/ModQueue/index.ts"),
 				G = n("./src/reddit/models/PostDraft/index.ts"),
 				q = n("./src/reddit/models/RemovalReason/index.ts"),
 				W = n("./src/reddit/models/Toast/index.ts"),
@@ -1488,7 +1488,7 @@
 											},
 											n = Object(Q.f)(a),
 											o = a.platform.currentPage && a.platform.currentPage.routeMatch;
-										let s = n && o && Object(J.a)(o, a, a.posts.models[e.postId]);
+										let s = n && o && Object($.a)(o, a, a.posts.models[e.postId]);
 										if (s || (s = Object(I.a)(e.postId, null, {
 												sort: _.u,
 												hasSortParam: !0
@@ -1565,7 +1565,7 @@
 					if (b.ok) {
 						const o = {
 							ids: e,
-							operation: $.a.RemovalReason,
+							operation: J.a.RemovalReason,
 							username: m,
 							options: {
 								modNote: r,
@@ -2547,9 +2547,9 @@
 			})), n.d(t, "f", (function() {
 				return H
 			})), n.d(t, "i", (function() {
-				return J
-			})), n.d(t, "F", (function() {
 				return $
+			})), n.d(t, "F", (function() {
+				return J
 			})), n.d(t, "B", (function() {
 				return G
 			})), n.d(t, "H", (function() {
@@ -2752,10 +2752,10 @@
 					const n = e.features.comments.drafts[t];
 					return !!n && n.autofocusDisabled
 				},
-				J = (e, {
+				$ = (e, {
 					draftKey: t
 				}) => e.features.comments.drafts[t],
-				$ = (e, {
+				J = (e, {
 					commentId: t
 				}) => {
 					const n = t ? e.features.comments.submit.error[t] : void 0;
@@ -2818,4 +2818,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.3a77fd216ddd6029492d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.546ca2c57bea5d4818d2.js.map
