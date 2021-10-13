@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RealtimeGQLSubscriptionAsync.a585de1bfdb0a3e0cef1.js
-// Retrieved at 10/13/2021, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RealtimeGQLSubscriptionAsync.d8221826091d4da94e75.js
+// Retrieved at 10/13/2021, 12:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RealtimeGQLSubscriptionAsync"], {
 		"./src/realtime/GQLSubscription/index.tsx": function(e, n, t) {
@@ -111,7 +111,7 @@
         id
         ... on BasicMessage {
           data {
-            ... on PostTypingIndicatorMessageData {
+            ... on PostReadingCountMessageData {
               numUsers
             }
           }
@@ -144,7 +144,7 @@
 					name: "web2x",
 					version: "0.0.1"
 				},
-				I = r.a.memo(({
+				_ = r.a.memo(({
 					apolloClient: e,
 					onData: n,
 					onError: t,
@@ -192,7 +192,7 @@
 					}
 					return !1
 				})(e.uniqueKey));
-				return n && n.getInstance() && p && !b.current ? n && r.a.createElement(r.a.Fragment, null, r.a.createElement(I, m({}, e, {
+				return n && n.getInstance() && p && !b.current ? n && r.a.createElement(r.a.Fragment, null, r.a.createElement(_, m({}, e, {
 					apolloClient: n.getInstance(),
 					subscriptionQueries: p
 				})), r.a.createElement("span", {
@@ -202,4 +202,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RealtimeGQLSubscriptionAsync.a585de1bfdb0a3e0cef1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RealtimeGQLSubscriptionAsync.d8221826091d4da94e75.js.map
