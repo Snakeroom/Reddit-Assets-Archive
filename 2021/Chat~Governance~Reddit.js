@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.77994e0caa36a8641e64.js
-// Retrieved at 10/13/2021, 12:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.26dec5aef767b4ed87db.js
+// Retrieved at 10/13/2021, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -2500,10 +2500,10 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("148219"),
+				buildNumber: Object(r.c)("148227"),
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
-				buildTimestamp: Object(r.b)("1634141865"),
+				buildTimestamp: Object(r.b)("1634144232"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -5038,14 +5038,14 @@
 					}))
 				},
 				z = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c1fd9e2297709910239062ad596135695eda1d736-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %cf027756e8f80baf254a702c6c06d0978da9761bc-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${v.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "1fd9e2297709910239062ad596135695eda1d736-production",
+						release: "f027756e8f80baf254a702c6c06d0978da9761bc-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -5558,7 +5558,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "1fd9e2297709910239062ad596135695eda1d736-production",
+						releaseClient: "f027756e8f80baf254a702c6c06d0978da9761bc-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -9801,11 +9801,13 @@
 					}));
 					const G = i && Object(R.B)(d(), i),
 						V = Object(O.c)(w),
-						H = await Object(v.a)("searchResults", () => {
+						H = Object(F.eb)(w),
+						q = [a.a.PromotedTrend, a.a.Trending].includes(t.source),
+						W = await Object(v.a)("searchResults", () => {
 							var e;
 							const n = {
 									...t,
-									q: Object(O.b)(w) && t.q ? Object(y.a)(t.q, Object(F.eb)(w), "1" === t.include_over_18, [a.a.PromotedTrend, a.a.Trending].includes(t.source)) : t.q,
+									q: Object(O.b)(w) && !V && t.q ? Object(y.a)(t.q, H, "1" === t.include_over_18, q) : t.q,
 									type: (t.type || []).join(","),
 									b: !x
 								},
@@ -9817,6 +9819,7 @@
 							return s ? o = s : G && (o = [G]), V ? Object(g.a)({
 								context: m(),
 								isSerpRedesignLayoutM2: V,
+								nsfw: !Object(y.b)(H, "1" === t.include_over_18, q),
 								options: n,
 								subredditIds: o,
 								tokens: {
@@ -9832,7 +9835,7 @@
 								subredditName: i
 							})
 						});
-					if (H.ok) {
+					if (W.ok) {
 						const n = {
 								key: e,
 								type: U,
@@ -9841,7 +9844,7 @@
 								subredditName: i,
 								username: r
 							},
-							o = H.body;
+							o = W.body;
 						if (s(D({
 								categoryName: C,
 								...n,
@@ -9854,9 +9857,9 @@
 						}
 					} else s(P({
 						key: e,
-						error: H.error,
+						error: W.error,
 						type: U,
-						...H.body
+						...W.body
 					})), s(f.f({
 						id: M,
 						kind: T.b.Error,
@@ -12394,105 +12397,109 @@
 						} = p.platform.currentPage.urlParams,
 						I = h || s()(m, u.t),
 						R = Object(a.e)(I),
-						F = Object(y.b)(p) ? e : R.type,
-						C = {
+						F = Object(y.b)(p),
+						C = F ? e : R.type,
+						N = {
 							...R,
 							sort: R.category ? o.Vb.Relevance : R.sort,
 							t: R.category ? o.dc.DAY : R.t,
-							type: F
+							type: C
 						},
-						N = Object(a.b)(E, O, C),
-						A = Object(y.c)(p);
-					let j;
-					const D = {
+						A = Object(a.b)(E, O, N),
+						j = Object(y.c)(p);
+					let D;
+					const B = {
 						authors: null,
 						communities: null,
 						posts: null
 					};
-					if (F.indexOf(o.Xb.Posts) > -1) {
-						const e = p.listings.postOrder.loadMore[N];
+					if (C.indexOf(o.Xb.Posts) > -1) {
+						const e = p.listings.postOrder.loadMore[A];
 						if (!e) return;
-						const t = p.listings.postOrder.api.pending[N],
+						const t = p.listings.postOrder.api.pending[A],
 							i = p.listings.postOrder.fetchedTokens,
-							n = i[N] && i[N][e.token];
+							n = i[A] && i[A][e.token];
 						if (t || n) return;
-						j = e.token, D.posts = j
-					} else if (!A && (F.indexOf(o.Xb.Subreddits) > -1 || F.indexOf(o.Xb.Users) > -1)) {
-						const e = p.listings.listingOrder.loadMore[N];
+						D = e.token, B.posts = D
+					} else if (!j && (C.indexOf(o.Xb.Subreddits) > -1 || C.indexOf(o.Xb.Users) > -1)) {
+						const e = p.listings.listingOrder.loadMore[A];
 						if (!e) return;
-						const t = p.listings.listingOrder.api.pending[N],
+						const t = p.listings.listingOrder.api.pending[A],
 							i = p.listings.listingOrder.fetchedTokens,
-							n = i[N] && i[N][e.token];
+							n = i[A] && i[A][e.token];
 						if (t || n) return;
-						j = e.token
-					} else if (A && F.indexOf(o.Xb.Subreddits) > -1) {
-						const e = p.listings.communityOrder.loadMore[N];
+						D = e.token
+					} else if (j && C.indexOf(o.Xb.Subreddits) > -1) {
+						const e = p.listings.communityOrder.loadMore[A];
 						if (!e) return;
-						const t = p.listings.communityOrder.api.pending[N],
+						const t = p.listings.communityOrder.api.pending[A],
 							i = p.listings.communityOrder.fetchedTokens,
-							n = i[N] && i[N][e.token];
+							n = i[A] && i[A][e.token];
 						if (t || n) return;
-						j = e.token, D.communities = j
+						D = e.token, B.communities = D
 					} else {
-						if (!(A && F.indexOf(o.Xb.Users) > -1)) throw new Error("Should not attempt to fetch more results without a search type"); {
-							const e = p.listings.authorOrder.loadMore[N];
+						if (!(j && C.indexOf(o.Xb.Users) > -1)) throw new Error("Should not attempt to fetch more results without a search type"); {
+							const e = p.listings.authorOrder.loadMore[A];
 							if (!e) return;
-							const t = p.listings.authorOrder.api.pending[N],
+							const t = p.listings.authorOrder.api.pending[A],
 								i = p.listings.authorOrder.fetchedTokens,
-								n = i[N] && i[N][e.token];
+								n = i[A] && i[A][e.token];
 							if (t || n) return;
-							j = e.token, D.authors = j
+							D = e.token, B.authors = D
 						}
 					}
-					const B = `error-${N}`;
+					const k = `error-${A}`;
 					t(P({
-						fetchedToken: j,
-						key: N,
-						type: F
+						fetchedToken: D,
+						key: A,
+						type: C
 					}));
-					const k = {
-							...C,
-							q: Object(y.b)(p) && R.q ? Object(g.a)(R.q, Object(S.eb)(p), "1" === R.include_over_18, [a.a.PromotedTrend, a.a.Trending].includes(R.source)) : R.q,
-							after: j,
-							type: (F || []).join(","),
+					const M = [a.a.PromotedTrend, a.a.Trending].includes(R.source),
+						U = Object(S.eb)(p),
+						V = {
+							...N,
+							q: F && !j && R.q ? Object(g.a)(R.q, U, "1" === R.include_over_18, M) : R.q,
+							after: D,
+							type: (C || []).join(","),
 							b: !0
 						},
-						M = f && Object(T.B)(i(), f),
-						U = b ? null === (_ = Object(v.d)(p, {
+						H = f && Object(T.B)(i(), f),
+						q = b ? null === (_ = Object(v.d)(p, {
 							multiredditName: b,
 							username: O
 						})) || void 0 === _ ? void 0 : _.subredditIds : void 0;
-					let V = [];
-					U ? V = U : M && (V = [M]);
-					const H = await (A ? Object(c.a)({
+					let W = [];
+					q ? W = q : H && (W = [H]);
+					const K = await (j ? Object(c.a)({
 						context: d(),
-						isSerpRedesignLayoutM2: A,
-						options: k,
-						subredditIds: V,
-						tokens: D
+						isSerpRedesignLayoutM2: j,
+						nsfw: !Object(g.b)(U, "1" === R.include_over_18, M),
+						options: V,
+						subredditIds: W,
+						tokens: B
 					}) : Object(c.a)({
 						context: r(),
-						isSerpRedesignLayoutM2: A,
-						options: k,
+						isSerpRedesignLayoutM2: j,
+						options: V,
 						subredditName: E,
 						username: O
 					}));
-					H.ok ? (t(x({
-						key: N,
-						fetchedToken: j,
+					K.ok ? (t(x({
+						key: A,
+						fetchedToken: D,
 						meta: p.meta,
 						subredditOrMultiName: E,
-						type: F,
-						...H.body
-					})), t(l.g(B))) : (t(L({
-						key: N,
-						error: H.error,
-						fetchedToken: j,
+						type: C,
+						...K.body
+					})), t(l.g(k))) : (t(L({
+						key: A,
+						error: K.error,
+						fetchedToken: D,
 						meta: p.meta,
-						type: F,
-						...H.body
+						type: C,
+						...K.body
 					})), t(l.f({
-						id: B,
+						id: k,
 						kind: w.b.Error,
 						text: n.fbt._("Sorry, we couldn't load more search results.", null, {
 							hk: "3IDePs"
@@ -12500,7 +12507,7 @@
 						buttonText: n.fbt._("Retry", null, {
 							hk: "1XMjgA"
 						}),
-						buttonAction: G(F)
+						buttonAction: G(C)
 					})))
 				}, V = (e, t, i, n, r) => async (s, o) => {
 					const d = o();
@@ -17731,49 +17738,53 @@
 				}),
 				F = async ({
 					context: e,
-					options: t,
-					profileIds: i,
-					subredditIds: n,
-					tokens: s
+					nsfw: t,
+					options: i,
+					profileIds: n,
+					subredditIds: s,
+					tokens: d
 				}) => {
-					var d, a, l, _, p;
-					const m = [{
-							key: "profile_ids",
-							value: null !== (d = T(i)) && void 0 !== d ? d : null
+					var a, l, _, p, m;
+					const h = [{
+							key: "nsfw",
+							value: t ? "1" : "0"
 						}, {
-							key: "subreddit_ids",
+							key: "profile_ids",
 							value: null !== (a = T(n)) && void 0 !== a ? a : null
 						}, {
+							key: "subreddit_ids",
+							value: null !== (l = T(s)) && void 0 !== l ? l : null
+						}, {
 							key: "time_range",
-							value: (null == t ? void 0 : t.t) && "all" !== (null == t ? void 0 : t.t) ? null == t ? void 0 : t.t : null
+							value: (null == i ? void 0 : i.t) && "all" !== (null == i ? void 0 : i.t) ? null == i ? void 0 : i.t : null
 						}].filter(e => null !== e.value),
-						h = {
+						f = {
 							[r.Xb.Posts]: !1,
 							[r.Xb.Subreddits]: !1,
 							[r.Xb.Users]: !1
 						};
-					for (const r of null !== (_ = null === (l = null == t ? void 0 : t.type) || void 0 === l ? void 0 : l.split(",")) && void 0 !== _ ? _ : []) void 0 !== h[r] && (h[r] = !0);
-					const f = {
-							query: null !== (p = null == t ? void 0 : t.q) && void 0 !== p ? p : "",
-							sort: (null == t ? void 0 : t.sort) ? S[null == t ? void 0 : t.sort] : null,
-							filters: m,
+					for (const r of null !== (p = null === (_ = null == i ? void 0 : i.type) || void 0 === _ ? void 0 : _.split(",")) && void 0 !== p ? p : []) void 0 !== f[r] && (f[r] = !0);
+					const b = {
+							query: null !== (m = null == i ? void 0 : i.q) && void 0 !== m ? m : "",
+							sort: (null == i ? void 0 : i.sort) ? S[null == i ? void 0 : i.sort] : null,
+							filters: h,
 							productSurface: `${c.TelemetryAppName.web2x}-serp`,
-							includePosts: h[r.Xb.Posts],
-							includeCommunities: h[r.Xb.Subreddits],
-							includeAuthors: h[r.Xb.Users],
-							postsAfter: s.posts,
-							communitiesAfter: s.communities,
-							authorsAfter: s.authors
+							includePosts: f[r.Xb.Posts],
+							includeCommunities: f[r.Xb.Subreddits],
+							includeAuthors: f[r.Xb.Users],
+							postsAfter: d.posts,
+							communitiesAfter: d.communities,
+							authorsAfter: d.authors
 						},
-						b = await Object(o.a)(e, {
+						g = await Object(o.a)(e, {
 							...u,
-							variables: f
+							variables: b
 						}, {
 							traceRequestName: "general_search"
 						});
 					return {
-						...b,
-						body: E(b.body)
+						...g,
+						body: E(g.body)
 					}
 				};
 
@@ -23499,13 +23510,16 @@
 		},
 		"./src/reddit/helpers/search/getQueryWithNsfwSetting.ts": function(e, t, i) {
 			"use strict";
-			i.d(t, "a", (function() {
+			i.d(t, "b", (function() {
 				return r
+			})), i.d(t, "a", (function() {
+				return s
 			}));
 			const n = `${i("./src/lib/constants/index.ts").Mb}:on`,
-				r = (e, t, i, r) => {
-					return r || !(t && i) ? `${e} ${n}` : e
-				}
+				r = (e, t, i) => {
+					return i || !(e && t)
+				},
+				s = (e, t, i, s) => r(t, i, s) ? `${e} ${n}` : e
 		},
 		"./src/reddit/helpers/survey/config.json": function(e) {
 			e.exports = JSON.parse('{"survey_cooldown_days":182,"active_surveys":[{"experiment_name":"nps_survey_scroll_trigger","trigger_event":"feed_scroll_1_page","variants":{"enabled":{"survey_enabled":true,"trigger_threshold":2,"sample_factor":0.5}},"steps":[{"type":"NPS","question":"How likely are you to recommend Reddit to a friend?","follow_up_question":"What\'s your main reason for feeling that way?"}]},{"experiment_name":"d2x_nps_survey_dismiss_post_trigger","trigger_event":"dismiss_post","variants":{"enabled":{"survey_enabled":true,"trigger_threshold":3,"sample_factor":0.01}},"steps":[{"type":"NPS","question":"How likely are you to recommend Reddit to a friend?","follow_up_question":"What\'s your main reason for feeling that way?"}]},{"experiment_name":"survey_demo_nps_1","trigger_event":"feed_scroll_1_page","variants":{"enabled":{"survey_enabled":true,"trigger_threshold":1,"sample_factor":1}},"steps":[{"type":"NPS","question":"How likely are you to recommend Reddit to a friend?","follow_up_question":"What is the primary reason for your score?"}]},{"experiment_name":"survey_demo_combined_1","trigger_event":"mods_feed_scroll_1_page","variants":{"enabled":{"survey_enabled":true,"trigger_threshold":1,"sample_factor":1}},"steps":[{"type":"CSAT","question":"How would you rate your overall satisfaction with moderating on Reddit?","follow_up_question":"What is the primary reason for your score with moderating on Reddit?"},{"type":"CES","question":"How easy is it to use the Reddit moderation tools available on this device?","follow_up_question":"What is the primary reason for your score with moderation tools on this device?"}]},{"experiment_name":"d2x_search_survey","trigger_event":"search_view_trigger","variants":{"enabled":{"survey_enabled":true,"trigger_threshold":1,"sample_factor":0.05}},"steps":[{"type":"CSAT","question":"How would you rate your overall satisfaction with search on Reddit?","follow_up_question":"What is the primary reason for your score on overall satisfaction with search?"},{"type":"CSAT","question":"How would you rate the results found on the search results page on Reddit?","follow_up_question":"What is the primary reason for your score on the quality of search results?"},{"type":"CES","question":"How easy was it to use Reddit search?","follow_up_question":"What is the primary reason for your score on the ease of searching?"}]},{"experiment_name":"d2x_search_redesign_survey","trigger_event":"search_view_redesign_trigger","variants":{"enabled":{"survey_enabled":true,"trigger_threshold":1,"sample_factor":0.05}},"steps":[{"type":"CSAT","question":"How would you rate your overall satisfaction with search on Reddit?","follow_up_question":"What is the primary reason for your score on overall satisfaction with search?"},{"type":"CSAT","question":"How would you rate the results found on the search results page on Reddit?","follow_up_question":"What is the primary reason for your score on the quality of search results?"},{"type":"CES","question":"How easy was it to use Reddit search?","follow_up_question":"What is the primary reason for your score on the ease of searching?"}]},{"experiment_name":"d2x_chat_survey","trigger_event":"chat_view_trigger","variants":{"enabled":{"survey_enabled":true,"trigger_threshold":1,"sample_factor":0.15}},"steps":[{"type":"CSAT","question":"How would you rate your overall satisfaction with Reddit\'s chat?","follow_up_question":"What is the primary reason for your score?"}]},{"experiment_name":"d2x_mods_survey","trigger_event":"mods_feed_scroll_1_page","variants":{"enabled":{"survey_enabled":true,"trigger_threshold":1,"sample_factor":1}},"steps":[{"type":"CSAT","question":"How would you rate your overall satisfaction with moderating on Reddit?","follow_up_question":"What is the primary reason for your score with moderating on Reddit?"},{"type":"CES","question":"How easy is it to use the Reddit moderation tools available on this device?","follow_up_question":"What is the primary reason for your score with moderation tools on this device?"}]}]}')
@@ -41942,4 +41956,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.77994e0caa36a8641e64.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.26dec5aef767b4ed87db.js.map
