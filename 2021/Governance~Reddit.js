@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.0df13dc8e5d18a04a667.js
-// Retrieved at 10/13/2021, 6:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.d35377ed6fc3552aa18f.js
+// Retrieved at 10/13/2021, 7:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -16655,35 +16655,31 @@
 								t.forEach(t => {
 									n[t.id] = function({
 										wonAmount: e,
-										endsAt: t,
-										id: r,
-										title: s,
-										totalVoteCount: n,
-										totalStakeAmount: a,
-										status: c,
-										...o
+										id: t,
+										title: r,
+										totalVoteCount: s,
+										totalStakeAmount: n,
+										status: a,
+										...c
 									}, {
-										tournamentId: d,
-										subredditId: i,
-										creatorId: u,
-										createdAt: l
+										tournamentId: o,
+										subredditId: d,
+										creatorId: i
 									}) {
 										return {
-											id: r,
+											id: t,
 											isPrediction: !0,
-											predictionStatus: c,
-											title: s || "",
-											createdAt: l,
-											creatorId: u,
-											tournamentId: d,
-											subredditId: i,
+											predictionStatus: a,
+											title: r || "",
+											creatorId: i,
+											tournamentId: o,
+											subredditId: d,
 											userWonAmount: e,
-											endsAt: t,
-											postId: r,
-											totalStakeAmount: a || 0,
-											totalVoteCount: n || 0,
-											totalVoters: n || 0,
-											...o
+											postId: t,
+											totalStakeAmount: n || 0,
+											totalVoteCount: s || 0,
+											totalVoters: s || 0,
+											...c
 										}
 									}(t, {
 										tournamentId: e,
@@ -26273,7 +26269,7 @@
 			e.exports = JSON.parse('{"id":"de72339b938a"}')
 		},
 		"./src/redditGQL/operations/SubredditTopContent.json": function(e) {
-			e.exports = JSON.parse('{"id":"3ae99fe56f27"}')
+			e.exports = JSON.parse('{"id":"de27e4db7da3"}')
 		},
 		"./src/redditGQL/operations/UpdateScheduledPost.json": function(e) {
 			e.exports = JSON.parse('{"id":"f5276d63e133"}')
@@ -26295,4 +26291,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.0df13dc8e5d18a04a667.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.d35377ed6fc3552aa18f.js.map

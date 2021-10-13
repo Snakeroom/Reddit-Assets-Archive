@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index.9c051a0ffa8fc41f51ff.js
-// Retrieved at 10/13/2021, 6:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index.1d3b0f57fd2b318435f1.js
+// Retrieved at 10/13/2021, 7:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index"], {
 		"./src/reddit/components/Econ/Prediction/Confetti/index.m.less": function(e, t, n) {
@@ -127,8 +127,8 @@
 				}))
 			};
 			var g = n("./src/reddit/models/Prediction/index.ts"),
-				C = n("./src/reddit/selectors/poll/index.ts"),
-				y = n("./src/reddit/selectors/user.ts"),
+				y = n("./src/reddit/selectors/poll/index.ts"),
+				C = n("./src/reddit/selectors/user.ts"),
 				_ = n("./src/reddit/components/Econ/Prediction/PredictionModal/index.tsx"),
 				j = n("./src/reddit/components/Econ/Prediction/PredictionOption/index.tsx"),
 				S = n("./src/reddit/components/Econ/Prediction/PredictionOption/SneakPeek.tsx"),
@@ -160,9 +160,9 @@
 				})))
 			};
 			var L = n("./src/reddit/actions/economics/helpers/index.ts"),
-				V = n("./src/reddit/actions/economics/predictions/index.ts"),
-				D = n("./src/reddit/actions/post.ts"),
-				M = n("./src/reddit/components/Econ/Prediction/hooks/useDelayedUpvoteAnimation.tsx"),
+				D = n("./src/reddit/actions/economics/predictions/index.ts"),
+				M = n("./src/reddit/actions/post.ts"),
+				V = n("./src/reddit/components/Econ/Prediction/hooks/useDelayedUpvoteAnimation.tsx"),
 				F = n("./src/reddit/helpers/trackers/predictions.ts"),
 				R = n("./src/reddit/hooks/useToast.tsx"),
 				U = n("./src/reddit/models/Vote/index.ts");
@@ -172,13 +172,13 @@
 
 			function H(e, t, n) {
 				const o = Object(s.d)(),
-					c = Object(s.e)(y.e),
+					c = Object(s.e)(C.e),
 					d = Object(s.e)(r.p),
 					a = Object(p.a)(),
 					l = Object(R.a)(),
 					{
 						startDelayedUpvoteAnimation: u
-					} = Object(M.a)(n.id),
+					} = Object(V.a)(n.id),
 					{
 						id: m,
 						endsAt: v,
@@ -191,11 +191,11 @@
 					} = n,
 					[f, x] = i.a.useState(!1),
 					[I, h] = i.a.useState(null),
-					[C, _] = i.a.useState(!1),
+					[y, _] = i.a.useState(!1),
 					j = v < Date.now();
 				return {
 					isLoading: f,
-					isShowingVoteAnimation: C,
+					isShowingVoteAnimation: y,
 					selectedOption: b.find(({
 						id: e
 					}) => e === I),
@@ -213,14 +213,14 @@
 							selectedNumberTokens: t.amount
 						}));
 						try {
-							await o(Object(V.p)({
+							await o(Object(D.p)({
 								coinPackageId: t.id,
 								selectedOptionId: I,
 								price: t.amount,
 								pollId: m,
 								tournamentId: e,
 								tournamentPostId: n.id
-							})), d && E < U.a.upvoted && (o(Object(D.db)(O)), o(Object(D.db)(m)), u()), x(!1), h(null), _(!0)
+							})), d && E < U.a.upvoted && (o(Object(M.db)(O)), o(Object(M.db)(m)), u()), x(!1), h(null), _(!0)
 						} catch (i) {
 							x(!1), h(null), l(z._("Error: Failed to make prediction, please try again later", null, {
 								hk: "1tECsx"
@@ -244,9 +244,9 @@
 				post: r,
 				isLastPrediction: c
 			}) => {
-				const a = Object(s.e)(y.K),
-					l = Object(s.e)(y.X),
-					u = Object(s.e)(t => Object(C.g)(t, {
+				const a = Object(s.e)(C.K),
+					l = Object(s.e)(C.X),
+					u = Object(s.e)(t => Object(y.g)(t, {
 						postId: e.id
 					})),
 					[m, p] = Object(o.useState)(!1),
@@ -270,24 +270,24 @@
 						resolvedOptionId: w,
 						options: L
 					} = e,
-					V = N < Date.now(),
-					D = A === g.b.Cancelled || A === g.b.CancelInProgress,
-					M = null != I ? I : L;
+					D = N < Date.now(),
+					M = A === g.b.Cancelled || A === g.b.CancelInProgress,
+					V = null != I ? I : L;
 				return i.a.createElement(i.a.Fragment, null, i.a.createElement("div", {
 					className: Object(d.a)(J.a.poll, {
 						[J.a.nightMode]: l
 					})
 				}, i.a.createElement("p", {
 					className: J.a.pollQuestion
-				}, k), M.map(e => i.a.createElement(T.a, {
+				}, k), V.map(e => i.a.createElement(T.a, {
 					endsAt: N,
 					key: `prediction-option-${e.id}`,
 					isShowingVoteAnimation: b && h === e.id,
 					onAnimationEnd: x
 				}, i.a.createElement(j.a, {
 					disabled: b,
-					isCancelled: D,
-					isEnded: V,
+					isCancelled: M,
+					isEnded: D,
 					isSelected: h === e.id,
 					needsResolution: !1,
 					option: e,
@@ -296,11 +296,11 @@
 					tournamentId: t,
 					userSelection: h,
 					userIsLoggedOut: !a,
-					votePercentage: (h || V || m) && e.voteCount && (null == u ? void 0 : u.totalVoters) ? Math.floor(e.voteCount / u.totalVoters * 100) : null,
+					votePercentage: (h || D || m) && e.voteCount && (null == u ? void 0 : u.totalVoters) ? Math.floor(e.voteCount / u.totalVoters * 100) : null,
 					isShowingHint: m
-				}))), !D && i.a.createElement(S.a, {
+				}))), !M && i.a.createElement(S.a, {
 					disabled: b || m || !!h,
-					isEnded: V,
+					isEnded: D,
 					postId: r.id,
 					userSelection: h,
 					isShowingHint: m,
@@ -584,7 +584,7 @@
 					const {
 						tournamentId: t,
 						status: n
-					} = e.predictionTournament, o = Object(s.e)(e => Object(C.h)(e, t)), r = i.a.useMemo(() => o.filter(e => !e.isSpoiler && !e.isNSFW && !e.userSelection && !e.resolvedOptionId && e.predictionStatus === g.b.Open && e.endsAt > Date.now()).sort(q.a).map(e => e.id), [o.length]).map(e => o.find(t => t.id === e)).filter(e => Boolean(e));
+					} = e.predictionTournament, o = Object(s.e)(e => Object(y.h)(e, t)), r = i.a.useMemo(() => o.filter(e => !e.isSpoiler && !e.isNSFW && !e.userSelection && !e.resolvedOptionId && e.predictionStatus === g.b.Open && e.endsAt > Date.now()).sort(q.a).map(e => e.id), [o.length]).map(e => o.find(t => t.id === e)).filter(e => Boolean(e));
 					return n === c.a.Closed ? i.a.createElement(E, {
 						postId: e.id
 					}) : i.a.createElement($, null, i.a.createElement(Ee, {
@@ -673,15 +673,17 @@
 						i = n <= e.endsAt,
 						s = n <= t.endsAt,
 						r = e.status === o.b.Cancelled || e.status === o.b.CancelInProgress;
-					return r !== (t.status === o.b.Cancelled || t.status === o.b.CancelInProgress) ? r ? 1 : -1 : i !== s ? i ? -1 : 1 : i && e.selectedOptionId !== t.selectedOptionId ? e.selectedOptionId ? 1 : -1 : !e.resolvedOptionId != !t.resolvedOptionId ? e.resolvedOptionId ? 1 : -1 : i || e.selectedOptionId === t.selectedOptionId ? (e.totalVoteCount || 0) >= (t.totalVoteCount || 0) ? -1 : 1 : e.selectedOptionId ? -1 : 1
+					return r !== (t.status === o.b.Cancelled || t.status === o.b.CancelInProgress) ? r ? 1 : -1 : i !== s ? i ? -1 : 1 : i && e.selectedOptionId !== t.selectedOptionId ? e.selectedOptionId ? 1 : -1 : !e.resolvedOptionId != !t.resolvedOptionId ? e.resolvedOptionId ? 1 : -1 : i || e.selectedOptionId === t.selectedOptionId ? e.createdAt > t.createdAt ? -1 : 1 : e.selectedOptionId ? -1 : 1
 				},
 				s = (e, t) => i({
+					createdAt: e.createdAt,
 					endsAt: e.endsAt,
 					selectedOptionId: e.userSelection || null,
 					resolvedOptionId: e.resolvedOptionId,
 					totalVoteCount: e.totalVoteCount,
 					status: e.predictionStatus
 				}, {
+					createdAt: t.createdAt,
 					endsAt: t.endsAt,
 					selectedOptionId: t.userSelection || null,
 					resolvedOptionId: t.resolvedOptionId,
@@ -696,12 +698,14 @@
 						pollData: r
 					} = t;
 					return s && r ? i({
+						createdAt: e.created,
 						endsAt: null == s ? void 0 : s.votingEndTimestamp,
 						selectedOptionId: null !== (n = null == s ? void 0 : s.userSelection) && void 0 !== n ? n : null,
 						resolvedOptionId: null == s ? void 0 : s.resolvedOptionId,
 						totalVoteCount: null == s ? void 0 : s.totalVoteCount,
 						status: null == s ? void 0 : s.predictionStatus
 					}, {
+						createdAt: t.created,
 						endsAt: null == r ? void 0 : r.votingEndTimestamp,
 						selectedOptionId: null !== (o = null == r ? void 0 : r.userSelection) && void 0 !== o ? o : null,
 						resolvedOptionId: null == r ? void 0 : r.resolvedOptionId,
@@ -712,4 +716,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.9c051a0ffa8fc41f51ff.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.1d3b0f57fd2b318435f1.js.map

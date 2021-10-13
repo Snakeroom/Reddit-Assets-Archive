@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.69852b710cda6bb9e814.js
-// Retrieved at 10/13/2021, 6:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.559ad30ffdd870b575e5.js
+// Retrieved at 10/13/2021, 7:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~ModListing", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -12609,15 +12609,17 @@
 						r = n <= e.endsAt,
 						o = n <= t.endsAt,
 						i = e.status === s.b.Cancelled || e.status === s.b.CancelInProgress;
-					return i !== (t.status === s.b.Cancelled || t.status === s.b.CancelInProgress) ? i ? 1 : -1 : r !== o ? r ? -1 : 1 : r && e.selectedOptionId !== t.selectedOptionId ? e.selectedOptionId ? 1 : -1 : !e.resolvedOptionId != !t.resolvedOptionId ? e.resolvedOptionId ? 1 : -1 : r || e.selectedOptionId === t.selectedOptionId ? (e.totalVoteCount || 0) >= (t.totalVoteCount || 0) ? -1 : 1 : e.selectedOptionId ? -1 : 1
+					return i !== (t.status === s.b.Cancelled || t.status === s.b.CancelInProgress) ? i ? 1 : -1 : r !== o ? r ? -1 : 1 : r && e.selectedOptionId !== t.selectedOptionId ? e.selectedOptionId ? 1 : -1 : !e.resolvedOptionId != !t.resolvedOptionId ? e.resolvedOptionId ? 1 : -1 : r || e.selectedOptionId === t.selectedOptionId ? e.createdAt > t.createdAt ? -1 : 1 : e.selectedOptionId ? -1 : 1
 				},
 				o = (e, t) => r({
+					createdAt: e.createdAt,
 					endsAt: e.endsAt,
 					selectedOptionId: e.userSelection || null,
 					resolvedOptionId: e.resolvedOptionId,
 					totalVoteCount: e.totalVoteCount,
 					status: e.predictionStatus
 				}, {
+					createdAt: t.createdAt,
 					endsAt: t.endsAt,
 					selectedOptionId: t.userSelection || null,
 					resolvedOptionId: t.resolvedOptionId,
@@ -12632,12 +12634,14 @@
 						pollData: i
 					} = t;
 					return o && i ? r({
+						createdAt: e.created,
 						endsAt: null == o ? void 0 : o.votingEndTimestamp,
 						selectedOptionId: null !== (n = null == o ? void 0 : o.userSelection) && void 0 !== n ? n : null,
 						resolvedOptionId: null == o ? void 0 : o.resolvedOptionId,
 						totalVoteCount: null == o ? void 0 : o.totalVoteCount,
 						status: null == o ? void 0 : o.predictionStatus
 					}, {
+						createdAt: t.created,
 						endsAt: null == i ? void 0 : i.votingEndTimestamp,
 						selectedOptionId: null !== (s = null == i ? void 0 : i.userSelection) && void 0 !== s ? s : null,
 						resolvedOptionId: null == i ? void 0 : i.resolvedOptionId,
@@ -17265,7 +17269,7 @@
 			e.exports = JSON.parse('{"id":"d03522f8a8d4"}')
 		},
 		"./src/redditGQL/operations/SubredditGeoRecommendationViaFocusVertical.json": function(e) {
-			e.exports = JSON.parse('{"id":"da00c26e96b1"}')
+			e.exports = JSON.parse('{"id":"5c3cbc62be22"}')
 		},
 		"./src/redditGQL/operations/UpdateInboxActivitySeenState.json": function(e) {
 			e.exports = JSON.parse('{"id":"85d656894a08"}')
@@ -17278,4 +17282,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.69852b710cda6bb9e814.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.559ad30ffdd870b575e5.js.map

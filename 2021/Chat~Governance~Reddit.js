@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.54120b5e2f3f86ba921d.js
-// Retrieved at 10/13/2021, 6:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.e3cac0c08c98d561581c.js
+// Retrieved at 10/13/2021, 7:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -2500,10 +2500,10 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("148293"),
+				buildNumber: Object(r.c)("148300"),
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
-				buildTimestamp: Object(r.b)("1634162405"),
+				buildTimestamp: Object(r.b)("1634165493"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -5041,14 +5041,14 @@
 					}))
 				},
 				z = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %cc83c148ff2acba2401d14334e59ce8d10a653f97-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %ce7e9100598f8f36b1b4234f315f8705e715e1758-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${v.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "c83c148ff2acba2401d14334e59ce8d10a653f97-production",
+						release: "e7e9100598f8f36b1b4234f315f8705e715e1758-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -5561,7 +5561,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "c83c148ff2acba2401d14334e59ce8d10a653f97-production",
+						releaseClient: "e7e9100598f8f36b1b4234f315f8705e715e1758-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -21066,31 +21066,33 @@
 
 			function o({
 				title: e,
-				endsAt: t,
-				options: i,
-				isNsfw: r,
-				totalVoteCount: s,
-				totalStakeAmount: o,
-				wonAmount: a,
-				selectedOptionId: l,
-				resolvedOptionId: u,
-				voteUpdatesRemained: c,
-				status: _,
-				...p
+				createdAt: t,
+				endsAt: i,
+				options: r,
+				isNsfw: s,
+				totalVoteCount: o,
+				totalStakeAmount: a,
+				wonAmount: l,
+				selectedOptionId: u,
+				resolvedOptionId: c,
+				voteUpdatesRemained: _,
+				status: p,
+				...m
 			}) {
 				return {
 					title: e || "",
-					endsAt: new Date(Object(n.a)(t)).valueOf(),
-					options: i ? i.map(d) : [],
-					isNSFW: r,
-					totalVoteCount: null != s ? s : null,
-					totalStakeAmount: null != o ? o : null,
-					wonAmount: null != a ? a : null,
-					selectedOptionId: null != l ? l : null,
-					resolvedOptionId: null != u ? u : null,
-					status: null != _ ? _ : null,
-					voteUpdatesRemained: null != c ? c : null,
-					...p
+					createdAt: new Date(Object(n.a)(t)).valueOf(),
+					endsAt: new Date(Object(n.a)(i)).valueOf(),
+					options: r ? r.map(d) : [],
+					isNSFW: s,
+					totalVoteCount: null != o ? o : null,
+					totalStakeAmount: null != a ? a : null,
+					wonAmount: null != l ? l : null,
+					selectedOptionId: null != u ? u : null,
+					resolvedOptionId: null != c ? c : null,
+					status: null != p ? p : null,
+					voteUpdatesRemained: null != _ ? _ : null,
+					...m
 				}
 			}
 
@@ -30180,29 +30182,31 @@
 				title: t,
 				status: i,
 				resolvedOptionId: n,
-				votingEndTimestamp: r,
-				userWonAmount: s,
-				totalStakeAmount: o,
-				totalVoteCount: a,
-				userSelection: l,
-				isNSFW: u,
-				isSpoiler: c,
-				options: _
+				createdAt: r,
+				votingEndTimestamp: s,
+				userWonAmount: o,
+				totalStakeAmount: a,
+				totalVoteCount: l,
+				userSelection: u,
+				isNSFW: c,
+				isSpoiler: _,
+				options: p
 			}) {
 				return {
 					id: e,
 					title: t,
-					endsAt: r,
+					createdAt: r,
+					endsAt: s,
 					status: i,
 					voteUpdatesRemained: null,
-					isNSFW: u,
-					isSpoiler: c,
-					totalVoteCount: a,
-					totalStakeAmount: o,
-					wonAmount: s,
+					isNSFW: c,
+					isSpoiler: _,
+					totalVoteCount: l,
+					totalStakeAmount: a,
+					wonAmount: o,
 					resolvedOptionId: n,
-					selectedOptionId: l,
-					options: _.map(d)
+					selectedOptionId: u,
+					options: p.map(d)
 				}
 			}
 
@@ -37495,7 +37499,7 @@
 			e.exports = JSON.parse('{"id":"34910619f1e9"}')
 		},
 		"./src/redditGQL/operations/GeneralSearch.json": function(e) {
-			e.exports = JSON.parse('{"id":"863107978bf2"}')
+			e.exports = JSON.parse('{"id":"adf220960b50"}')
 		},
 		"./src/redditGQL/operations/ModeratedSubreddits.json": function(e) {
 			e.exports = JSON.parse('{"id":"3f04933af189"}')
@@ -37525,7 +37529,7 @@
 			e.exports = JSON.parse('{"id":"8d0e34deaa32"}')
 		},
 		"./src/redditGQL/operations/TopicBySlug.json": function(e) {
-			e.exports = JSON.parse('{"id":"f43505a7a95a"}')
+			e.exports = JSON.parse('{"id":"7403c2c89eca"}')
 		},
 		"./src/redditGQL/operations/UpdatePostFollowState.json": function(e) {
 			e.exports = JSON.parse('{"id":"6491fda8f22b"}')
@@ -41928,4 +41932,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.54120b5e2f3f86ba921d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.e3cac0c08c98d561581c.js.map
