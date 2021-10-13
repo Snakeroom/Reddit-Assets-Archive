@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.af18998937092af7efdd.js
-// Retrieved at 10/13/2021, 12:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.ea6e02416737c7771854.js
+// Retrieved at 10/13/2021, 5:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-MediumPost"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -2346,7 +2346,7 @@
 						subreddit: s
 					} = e, {
 						isSponsored: n
-					} = t, o = Object(B.a)(), i = Object(Y.a)(m.Nc) === m.Rc.Enabled;
+					} = t, o = Object(B.a)(), i = Object(Y.a)(m.Mc) === m.Qc.Enabled;
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return r.a.createElement(X, {
 						nowrap: e.nowrap
 					}, r.a.createElement(K, e));
@@ -4088,9 +4088,9 @@
 			const r = e => {
 				const t = Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
-					experimentName: n.bc
+					experimentName: n.ac
 				});
-				return !(!t || Object(n.Le)(t))
+				return !(!t || Object(n.Ke)(t))
 			}
 		},
 		"./src/reddit/selectors/i18n/index.ts": function(e, t, s) {
@@ -4106,7 +4106,7 @@
 				i = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const c = e => {
 					const t = Object(i.a)(e);
-					return Boolean(t) && !Object(o.Le)(t)
+					return Boolean(t) && !Object(o.Ke)(t)
 				},
 				a = Object(n.a)(c, r.d, (e, t) => e && !t)
 		},
@@ -4122,13 +4122,13 @@
 				r = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = s("./src/reddit/selectors/posts.ts");
 			const c = e => Object(r.c)(e, {
-					experimentName: o.Id,
+					experimentName: o.Hd,
 					experimentEligibilitySelector: r.a
 				}),
-				a = (e, t) => t === o.Qd.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				a = (e, t) => t === o.Pd.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				d = Object(n.a)(i.H, c, (e, t) => a(e, t)),
 				l = Object(n.a)((e, t) => t, c, (e, t) => a(e, t))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.af18998937092af7efdd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.ea6e02416737c7771854.js.map

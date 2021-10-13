@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~ModListing.4f8b06ed108f16f18d40.js
-// Retrieved at 10/13/2021, 12:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~ModListing.9e735d2d376627065481.js
+// Retrieved at 10/13/2021, 5:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~ModListing"], {
 		"./src/reddit/actions/focusedVerticals/index.ts": function(e, t, s) {
@@ -439,7 +439,7 @@
 			const x = "view--layout--FUE",
 				k = "LayoutSwitch--picker",
 				E = Object(c.a)(f.a),
-				I = {
+				j = {
 					[h.d.Card]: function(e) {
 						return o.a.createElement(w.a, O({}, e, {
 							name: "view_card"
@@ -456,7 +456,7 @@
 						}))
 					}
 				},
-				j = {
+				I = {
 					[h.d.Card]: () => n.fbt._("card", null, {
 						hk: "4qOOHu"
 					}),
@@ -503,7 +503,7 @@
 							layout: s,
 							onLayoutClick: n,
 							postLayout: r
-						} = this.props, i = s || h.e[r], a = e === i, c = I[e], l = j[e];
+						} = this.props, i = s || h.e[r], a = e === i, c = j[e], l = I[e];
 						return o.a.createElement(y.b, O({}, t, {
 							className: Object(d.a)(C.a.LayoutItem, {
 								[C.a.selected]: a,
@@ -627,8 +627,8 @@
 				x = s("./src/reddit/helpers/trackers/navigation.ts"),
 				k = s("./src/reddit/icons/svgs/Dropdown/index.tsx"),
 				E = s("./src/reddit/selectors/experiments/bestSortPopular.ts"),
-				I = s("./src/reddit/selectors/experiments/econLeaderboards.ts"),
-				j = s("./src/reddit/selectors/tooltip.ts"),
+				j = s("./src/reddit/selectors/experiments/econLeaderboards.ts"),
+				I = s("./src/reddit/selectors/tooltip.ts"),
 				N = s("./src/reddit/selectors/user.ts"),
 				P = s("./src/reddit/components/ListingSort/ListingSortIcon.tsx"),
 				L = s("./src/reddit/components/ListingSort/index.m.less"),
@@ -667,10 +667,10 @@
 					pageLayer: e => e
 				}),
 				K = Object(g.c)({
-					isAwardListingExperimentEnabled: I.a,
+					isAwardListingExperimentEnabled: j.a,
 					isBestSortPopularEnabled: E.a,
 					user: N.k,
-					dropdownIsOpen: (e, t) => Object(j.b)(t.dropdownId || V)(e),
+					dropdownIsOpen: (e, t) => Object(I.b)(t.dropdownId || V)(e),
 					isPopularPage: l.E
 				}),
 				G = Object(o.b)(K, (e, {
@@ -920,7 +920,7 @@
 				},
 				oe = Object(l.u)(),
 				ie = Object(g.c)({
-					dropdownIsOpen: Object(j.b)("StateSort--StateSortPicker")
+					dropdownIsOpen: Object(I.b)("StateSort--StateSortPicker")
 				}),
 				ae = Object(o.b)(ie, e => ({
 					onOpenDropdown: () => e(Object(f.h)({
@@ -1085,7 +1085,7 @@
 			const me = "CountrySort--CountrySortPicker",
 				he = Object(l.u)(),
 				be = Object(g.c)({
-					dropdownIsOpen: Object(j.b)(me)
+					dropdownIsOpen: Object(I.b)(me)
 				});
 			var ge = he(Object(o.b)(be, e => ({
 					onCloseDropdown: t => e(Object(f.j)({
@@ -1165,7 +1165,7 @@
 				Oe = D.a.div("ListingSortContainer", Se.a),
 				xe = Object(l.u)(),
 				ke = Object(g.c)({
-					dropdownIsOpen: Object(j.b)("TimeSort--SortPicker")
+					dropdownIsOpen: Object(I.b)("TimeSort--SortPicker")
 				});
 			var Ee = xe(Object(o.b)(ke, e => ({
 					onOpenDropdown: () => e(Object(f.h)({
@@ -1195,8 +1195,8 @@
 						e.onChange(t), e.sendEvent(Object(x.c)(t))
 					}
 				})))))))),
-				Ie = s("./src/reddit/constants/listings.ts"),
-				je = s("./src/reddit/controls/Button/index.tsx"),
+				je = s("./src/reddit/constants/listings.ts"),
+				Ie = s("./src/reddit/controls/Button/index.tsx"),
 				Ne = s("./src/reddit/icons/fonts/index.tsx"),
 				Pe = s("./src/reddit/selectors/meta.ts"),
 				Le = s("./src/reddit/components/GeneralCleanup/SortViewBar/ListingSort/index.m.less"),
@@ -1219,7 +1219,7 @@
 					isProfilePage: l.I,
 					pageLayer: e => e
 				}),
-				Me = Object(g.a)((e, t) => t.sortOptions, (e, t) => t.isFrontpage, E.a, N.k, l.E, I.a, Pe.i, (e, t, s, n, r, o, i) => {
+				Me = Object(g.a)((e, t) => t.sortOptions, (e, t) => t.isFrontpage, E.a, N.k, l.E, j.a, Pe.i, (e, t, s, n, r, o, i) => {
 					if (e) return {
 						isPopularPage: r,
 						sortOptions: e,
@@ -1248,10 +1248,10 @@
 						const {
 							sort: t
 						} = this.props;
-						return r.a.createElement(je.s, {
+						return r.a.createElement(Ie.s, {
 							className: Object(i.a)(Te.a.SortLink, e === t && Te.a.selected),
-							kind: je.a.InternalLink,
-							priority: je.b.Plain,
+							kind: Ie.a.InternalLink,
+							priority: Ie.b.Plain,
 							Icon: s => r.a.createElement(B, De({}, s, {
 								className: Object(i.a)(Te.a.SortIcon, s.className),
 								sort: e,
@@ -1272,7 +1272,7 @@
 						return r.a.createElement(r.a.Fragment, {
 							key: e
 						}, this.renderSortButton(e), i && r.a.createElement(ge, {
-							baseUrl: Ie.c[Ie.b.Popular],
+							baseUrl: je.c[je.b.Popular],
 							buttonClassName: Te.a.DropdownButton,
 							className: Te.a.CountrySort,
 							disabled: t,
@@ -1503,8 +1503,8 @@
 				x = s("./src/reddit/constants/adEvents.ts"),
 				k = s("./src/reddit/constants/componentSizes.ts"),
 				E = s("./src/reddit/constants/postLayout.ts"),
-				I = s("./src/reddit/controls/InternalLink/index.tsx"),
-				j = s("./src/reddit/controls/OutboundLink/index.tsx"),
+				j = s("./src/reddit/controls/InternalLink/index.tsx"),
+				I = s("./src/reddit/controls/OutboundLink/index.tsx"),
 				N = s("./src/reddit/helpers/getClickInfo.ts"),
 				P = s("./src/reddit/helpers/postComponentForLayout/index.tsx"),
 				L = s("./src/reddit/icons/svgs/ArrowRight/index.tsx"),
@@ -1547,7 +1547,7 @@
 						} = Object(b.t)(n, o);
 						if (e && e.outboundUrl) {
 							let t = e.outboundUrl;
-							r && (t = Object(j.a)(n.id, r, t).url), Object(R.a)(n, i), Object(S.e)(t, S.d.BLANK)
+							r && (t = Object(I.a)(n.id, r, t).url), Object(R.a)(n, i), Object(S.e)(t, S.d.BLANK)
 						}
 					} else t.openPost({
 						postOrComment: n,
@@ -1729,9 +1729,9 @@
 						triggerCelebratoryMoment: O,
 						triggerNewPostPill: x,
 						postIds: k
-					} = this.props, I = 0 === t, j = `post-${n}-${e}-${t}-${s?"last-index":""}-${y}-${g}-${S}`;
+					} = this.props, j = 0 === t, I = `post-${n}-${e}-${t}-${s?"last-index":""}-${y}-${g}-${S}`;
 					let N;
-					if (void 0 === (N = this.scrollChildCache.get(j))) {
+					if (void 0 === (N = this.scrollChildCache.get(I))) {
 						const {
 							inSubredditOrProfile: L,
 							postsById: D
@@ -1741,7 +1741,7 @@
 						});
 						const A = this.props.postComponentForLayout({
 							isCrosspost: !!R.crosspostRootId,
-							isFirstPost: I,
+							isFirstPost: j,
 							layout: n,
 							post: V
 						});
@@ -1773,7 +1773,7 @@
 								key: B,
 								availableWidth: m,
 								eventFactory: this.eventFactoryHandler,
-								first: I,
+								first: j,
 								forceLoadMedia: _,
 								hostPostData: o,
 								inSubredditOrProfile: L,
@@ -1802,7 +1802,7 @@
 								triggerCelebratoryMoment: G ? O : void 0,
 								onceInViewport: x
 							})
-						}, this.scrollChildCache.set(j, N)
+						}, this.scrollChildCache.set(I, N)
 					}
 					return N
 				}
@@ -1898,7 +1898,7 @@
 						viewportTopPadding: k.f
 					}, y), !o && S && u.a.createElement(q, {
 						className: H.a.seeMoreButton
-					}, u.a.createElement(I.a, {
+					}, u.a.createElement(j.a, {
 						className: H.a.seeMorePostsText,
 						to: Object(h.a)(S, {
 							type: f.Xb.Posts
@@ -2128,10 +2128,10 @@
 					},
 					surveyTriggerScrollCounted: () => e(Object(u.i)())
 				}),
-				I = e => Object(h.b)({
+				j = e => Object(h.b)({
 					...e
 				}),
-				j = (e, t, s, n) => {
+				I = (e, t, s, n) => {
 					const {
 						listingKey: r,
 						hostPostData: o,
@@ -2143,8 +2143,8 @@
 					...e,
 					...t,
 					...s,
-					postComponentForLayout: I,
-					postClickEventFactory: j
+					postComponentForLayout: j,
+					postClickEventFactory: I
 				}));
 			t.a = e => Object(p.c)(O(N(e)))
 		},
@@ -2460,15 +2460,15 @@
 			const i = e => {
 					const t = Object(r.c)(e, {
 						experimentEligibilitySelector: o.K,
-						experimentName: n.ic
+						experimentName: n.hc
 					});
-					return !(!t || Object(n.Le)(t))
+					return !(!t || Object(n.Ke)(t))
 				},
 				a = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: o.K,
-						experimentName: n.ic
-					}) === n.Ic.ListingEnabled
+						experimentName: n.hc
+					}) === n.Hc.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, s) {
@@ -2582,4 +2582,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing.4f8b06ed108f16f18d40.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing.9e735d2d376627065481.js.map

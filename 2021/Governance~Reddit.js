@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.6c015ed23ef110b5a105.js
-// Retrieved at 10/13/2021, 12:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.3c77632e4def04b108f1.js
+// Retrieved at 10/13/2021, 5:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -4005,7 +4005,7 @@
 			const j = e => S.d.reCaptchaEnterprise(e) && !Object(D.d)(e),
 				v = e => !!Object(T.c)(e, {
 					experimentEligibilitySelector: Object(g.d)(Object(g.b)(...a.d)),
-					experimentName: b.Td
+					experimentName: b.Sd
 				}),
 				w = Object(s.b)("LOAD_RECAPTCHA_ENTERPRISE"),
 				A = Object(s.b)("EXECUTE_RECAPTCHA_ENTERPRISE"),
@@ -5224,14 +5224,14 @@
 					}) && t(Object(c.db)(e))
 				}, _ = (e, t) => {
 					const r = Object(p.d)(e, {
-						experimentName: d.Ae
+						experimentName: d.ze
 					});
 					let n = "";
-					return (null == r ? void 0 : r.variant) === d.Be.Variant1 ? n = t ? s.fbt._("Was that a good post? Upvote it so it gets seen by more people", null, {
+					return (null == r ? void 0 : r.variant) === d.Ae.Variant1 ? n = t ? s.fbt._("Was that a good post? Upvote it so it gets seen by more people", null, {
 						hk: "2NOllx"
 					}) : s.fbt._("Was this a good post? Upvote it so it gets seen by more people", null, {
 						hk: "K1yBi"
-					}) : (null == r ? void 0 : r.variant) === d.Be.Variant2 && (n = t ? s.fbt._("If you enjoyed that post, upvote it so that more redditors will see it too.", null, {
+					}) : (null == r ? void 0 : r.variant) === d.Ae.Variant2 && (n = t ? s.fbt._("If you enjoyed that post, upvote it so that more redditors will see it too.", null, {
 						hk: "1Y6B4I"
 					}) : s.fbt._("If you enjoyed this post, upvote it so that more redditors will see it too.", null, {
 						hk: "HR9Ye"
@@ -5878,7 +5878,7 @@
 						subreddit: r
 					} = e, {
 						isSponsored: s
-					} = t, n = Object(G.a)(), c = Object(B.a)(p.Nc) === p.Rc.Enabled;
+					} = t, n = Object(G.a)(), c = Object(B.a)(p.Mc) === p.Qc.Enabled;
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return a.a.createElement($, {
 						nowrap: e.nowrap
 					}, a.a.createElement(z, e));
@@ -26067,7 +26067,7 @@
 				l = e => e === n.U.OnetapAuto,
 				p = e => e.user.googleOneTapEnabled,
 				b = Object(s.a)(o.K, i, (e, t) => !e && !!t),
-				f = Object(s.a)(o.K, i, (e, t) => !e && !!t && !Object(n.Le)(t))
+				f = Object(s.a)(o.K, i, (e, t) => !e && !!t && !Object(n.Ke)(t))
 		},
 		"./src/reddit/selectors/experiments/upvotePrompt.ts": function(e, t, r) {
 			"use strict";
@@ -26094,9 +26094,9 @@
 					if (!i(e, t)) return !1;
 					const r = Object(n.c)(e, {
 						experimentEligibilitySelector: n.a,
-						experimentName: s.Ae
+						experimentName: s.ze
 					});
-					return r === s.Be.Variant1 || r === s.Be.Variant2
+					return r === s.Ae.Variant1 || r === s.Ae.Variant2
 				}
 		},
 		"./src/reddit/selectors/scheduledPosts/index.ts": function(e, t, r) {
@@ -26294,4 +26294,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.6c015ed23ef110b5a105.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.3c77632e4def04b108f1.js.map

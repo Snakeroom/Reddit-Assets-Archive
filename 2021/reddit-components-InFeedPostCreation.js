@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.bb94d27d3630f8472a22.js
-// Retrieved at 10/13/2021, 12:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.53f4804d162789dd9941.js
+// Retrieved at 10/13/2021, 5:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-InFeedPostCreation"], {
 		"./src/reddit/components/InFeedPostCreation/index.m.less": function(e, t, n) {
@@ -37,11 +37,11 @@
 				_ = n("./src/reddit/icons/fonts/index.tsx"),
 				E = n("./src/reddit/selectors/experiments/presenceIndicator.ts"),
 				f = n("./src/reddit/selectors/subreddit.ts"),
-				U = n("./src/reddit/selectors/telemetry.ts"),
-				N = n("./src/reddit/selectors/user.ts"),
-				O = n("./src/reddit/components/InFeedPostCreation/index.m.less"),
-				C = n.n(O);
-			const P = l.a.wrapped(b.a, "CurrentUserIcon", C.a);
+				C = n("./src/reddit/selectors/telemetry.ts"),
+				U = n("./src/reddit/selectors/user.ts"),
+				N = n("./src/reddit/components/InFeedPostCreation/index.m.less"),
+				O = n.n(N);
+			const P = l.a.wrapped(b.a, "CurrentUserIcon", O.a);
 			var j;
 			! function(e) {
 				e.Media = "post-composer-du-media", e.Link = "post-composer-du-link"
@@ -67,9 +67,9 @@
 					}
 				},
 				T = Object(a.c)({
-					currentUser: N.k,
+					currentUser: U.k,
 					isPresenceConsumptionExpEnabled: E.c,
-					isPresenceTogglePref: N.P,
+					isPresenceTogglePref: U.P,
 					subreddit: f.w,
 					subredditAboutInfo: f.t
 				}),
@@ -122,25 +122,25 @@
 							source: "post_composer_du",
 							action: "click",
 							noun: h(e),
-							...U.defaults(t)
+							...C.defaults(t)
 						}))
 					},
 					f = () => {
 						E(d.Tb.POST), s(m)
 					},
-					N = t && n,
-					O = e ? o.a.createElement(x.a, {
-						className: C.a.UserIconWrapper,
+					U = t && n,
+					N = e ? o.a.createElement(x.a, {
+						className: O.a.UserIconWrapper,
 						to: e.url
 					}, o.a.createElement(P, {
-						className: C.a.UserIcon,
-						shouldShowPresenceIndicator: N
+						className: O.a.UserIcon,
+						shouldShowPresenceIndicator: U
 					})) : null;
 				return o.a.createElement("div", {
-					className: C.a.Container
-				}, O, o.a.createElement("input", {
+					className: O.a.Container
+				}, N, o.a.createElement("input", {
 					name: "createPost",
-					className: C.a.Input,
+					className: O.a.Input,
 					onChange: f,
 					onClick: f,
 					onKeyPress: f,
@@ -149,7 +149,7 @@
 					}),
 					type: "text"
 				}), b.media && o.a.createElement(I.s, {
-					className: C.a.Button,
+					className: O.a.Button,
 					"aria-label": L(),
 					priority: I.b.Plain,
 					kind: I.a.InternalLink,
@@ -166,7 +166,7 @@
 					tooltipId: j.Media,
 					text: L()
 				})), b.link && o.a.createElement(I.s, {
-					className: C.a.Button,
+					className: O.a.Button,
 					priority: I.b.Plain,
 					kind: I.a.InternalLink,
 					size: I.c.M,
@@ -254,28 +254,28 @@
 			const o = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.Hd
-					}) === r.Dc
+						experimentName: r.Gd
+					}) === r.Cc
 				},
 				c = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.Gd
-					}) === r.Dc
+						experimentName: r.Fd
+					}) === r.Cc
 				},
 				i = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.zd
-					}) === r.Dc
+						experimentName: r.yd
+					}) === r.Cc
 				},
 				a = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.yd
-					}) === r.Dc
+						experimentName: r.xd
+					}) === r.Cc
 				}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.bb94d27d3630f8472a22.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.53f4804d162789dd9941.js.map

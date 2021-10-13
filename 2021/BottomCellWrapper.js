@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/BottomCellWrapper.3c75ced3649b746ecba9.js
-// Retrieved at 10/13/2021, 2:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/BottomCellWrapper.027f1190847572bd8703.js
+// Retrieved at 10/13/2021, 5:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["BottomCellWrapper", "SignupUpsell"], {
 		"./src/reddit/components/ErrorBoundary/index.tsx": function(e, t, s) {
@@ -154,7 +154,7 @@
 					noun: f,
 					actionInfo: Object(_.actionInfo)(e)
 				}),
-				h = e => t => ({
+				E = e => t => ({
 					...Object(_.defaults)(t),
 					source: "popup",
 					action: "click",
@@ -164,7 +164,7 @@
 						type: e
 					})
 				}),
-				j = () => e => ({
+				h = () => e => ({
 					...Object(_.defaults)(e),
 					source: "popup",
 					action: "click",
@@ -173,7 +173,7 @@
 						popup_button_text: "login"
 					})
 				});
-			var E = s("./src/reddit/hooks/promo/useIsSignupUpsellVariantEligible.ts"),
+			var j = s("./src/reddit/hooks/promo/useIsSignupUpsellVariantEligible.ts"),
 				O = s("./src/reddit/selectors/experiments/signupUpsellExperiment.ts");
 			var v = s("./src/reddit/icons/svgs/AppleLogo/index.tsx"),
 				B = s("./src/reddit/icons/svgs/Close/index.tsx"),
@@ -202,12 +202,12 @@
 						const e = Object(i.e)(O.b),
 							t = Object(i.e)(O.d),
 							s = Object(i.e)(O.f),
-							o = Object(E.a)(b.Fb.Bottom_sheet),
-							l = Object(E.a)(b.Fb.Bottom_cell),
-							r = Object(E.a)(b.Fb.Bottom_cell_dismissible),
-							c = Object(E.a)(b.Fb.Bottom_cell_dismissible_immediate_trigger),
-							a = Object(E.a)(b.Fb.Bottom_cell_signup_upsell_copy),
-							d = Object(E.a)(b.Fb.Bottom_cell_surprise_install_copy);
+							o = Object(j.a)(b.Eb.Bottom_sheet),
+							l = Object(j.a)(b.Eb.Bottom_cell),
+							r = Object(j.a)(b.Eb.Bottom_cell_dismissible),
+							c = Object(j.a)(b.Eb.Bottom_cell_dismissible_immediate_trigger),
+							a = Object(j.a)(b.Eb.Bottom_cell_signup_upsell_copy),
+							d = Object(j.a)(b.Eb.Bottom_cell_surprise_install_copy);
 						let u;
 						if (e) u = L;
 						else if (t) u = I;
@@ -224,14 +224,14 @@
 						if (e && d) return `${p}bottom_cell_surprise_install_copy.png`;
 						throw new Error("Invalid variant for signup upsell")
 					}(),
-					f = Object(E.a)(b.Fb.Bottom_cell_signup_upsell_copy),
-					w = Object(E.a)(b.Fb.Bottom_cell_surprise_install_copy),
+					f = Object(j.a)(b.Eb.Bottom_cell_signup_upsell_copy),
+					w = Object(j.a)(b.Eb.Bottom_cell_surprise_install_copy),
 					D = f ? o.fbt._("Come join us, we have snacks", null, {
 						hk: "1LUl2W"
 					}) : o.fbt._("Log in or sign up for the best experience", null, {
 						hk: "2LAHQy"
 					}),
-					F = w ? o.fbt._("Scan the QR code, it's super fun", null, {
+					y = w ? o.fbt._("Scan the QR code, it's super fun", null, {
 						hk: "1nNmn7"
 					}) : o.fbt._("Get the app", null, {
 						hk: "2NvKYa"
@@ -259,7 +259,7 @@
 				}, l.createElement(m, {
 					Icon: N.a,
 					onClick: () => {
-						p(), s(h(g.Google))
+						p(), s(E(g.Google))
 					},
 					size: d.c.M,
 					iconClassName: S.a.googleIcon
@@ -268,7 +268,7 @@
 				})), l.createElement(m, {
 					Icon: v.a,
 					onClick: () => {
-						p(), s(h(g.Apple))
+						p(), s(E(g.Apple))
 					},
 					size: d.c.M,
 					iconClassName: S.a.appleIcon,
@@ -280,7 +280,7 @@
 				}, l.createElement(d.i, {
 					className: Object(r.a)(S.a.linkButton, S.a.emailButton),
 					onClick: () => {
-						p(), s(h(g.Reddit))
+						p(), s(E(g.Reddit))
 					},
 					redditStyle: !0,
 					size: d.c.XS
@@ -289,7 +289,7 @@
 				})), l.createElement(d.i, {
 					className: S.a.linkButton,
 					onClick: () => {
-						(() => u(Object(c.i)()))(), s(j())
+						(() => u(Object(c.i)()))(), s(h())
 					},
 					redditStyle: !0,
 					size: d.c.XS
@@ -304,7 +304,7 @@
 					src: _
 				}), l.createElement("div", {
 					className: S.a.downloadAppLabel
-				}, F))))
+				}, y))))
 			}
 		},
 		"./src/reddit/hooks/promo/useIsPromoShown.ts": function(e, t, s) {
@@ -416,9 +416,9 @@
 					experimentName: e,
 					experimentEligibilitySelector: c,
 					throttledVariants: {
-						[o.Fb.Bottom_cell_dismissible]: e,
-						[o.Fb.Bottom_cell_dismissible_immediate_trigger]: e,
-						[o.Fb.Bottom_sheet]: e
+						[o.Eb.Bottom_cell_dismissible]: e,
+						[o.Eb.Bottom_cell_dismissible_immediate_trigger]: e,
+						[o.Eb.Bottom_sheet]: e
 					},
 					expEventOverride: t
 				})
@@ -432,4 +432,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BottomCellWrapper.3c75ced3649b746ecba9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BottomCellWrapper.027f1190847572bd8703.js.map
