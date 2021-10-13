@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index.2f488e222b14225435aa.js
-// Retrieved at 10/12/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index.7cb8fef0e9f6bb760882.js
+// Retrieved at 10/13/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index"], {
 		"./src/reddit/components/Econ/Prediction/Confetti/index.m.less": function(e, t, n) {
@@ -712,4 +712,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.2f488e222b14225435aa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.7cb8fef0e9f6bb760882.js.map

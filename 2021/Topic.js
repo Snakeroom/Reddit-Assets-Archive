@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.a567ae7ffcd7c3e7e3e2.js
-// Retrieved at 10/11/2021, 6:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.3a63af41fea5424dfd11.js
+// Retrieved at 10/13/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -2367,9 +2367,15 @@
 						this.openTab(W.Communities)
 					}, this.onViewed = (e, t) => {
 						var s;
-						return Object(P.f)(Object(c.a)(C.b.Topic, null, {
-							topicSlug: null === (s = this.props.topic) || void 0 === s ? void 0 : s.slug
-						}), this.props.sort, t, e, this.props.timeSort)
+						return Object(P.f)({
+							key: Object(c.a)(C.b.Topic, null, {
+								topicSlug: null === (s = this.props.topic) || void 0 === s ? void 0 : s.slug
+							}),
+							sort: this.props.sort,
+							timerType: t,
+							timerMillis: e,
+							timeSort: this.props.timeSort
+						})
 					}, this.renderNoPosts = () => null, this.renderRelationship = (e, t) => i.a.createElement(Q, {
 						key: e.slug,
 						openTab: this.openTab,
@@ -2607,4 +2613,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.a567ae7ffcd7c3e7e3e2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.3a63af41fea5424dfd11.js.map

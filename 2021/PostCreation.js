@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.94e774b5ad74369f0b53.js
-// Retrieved at 10/12/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.c1e033b07ecbcef09e56.js
+// Retrieved at 10/13/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, n) {
@@ -14982,32 +14982,30 @@
 				return g
 			})), n.d(t, "l", (function() {
 				return C
-			})), n.d(t, "z", (function() {
-				return _
 			})), n.d(t, "h", (function() {
-				return x
+				return _
 			})), n.d(t, "y", (function() {
-				return E
+				return x
 			})), n.d(t, "w", (function() {
-				return v
+				return E
 			})), n.d(t, "d", (function() {
-				return O
+				return v
 			})), n.d(t, "j", (function() {
-				return y
+				return O
 			})), n.d(t, "c", (function() {
-				return k
+				return y
 			})), n.d(t, "g", (function() {
-				return S
+				return k
 			})), n.d(t, "b", (function() {
-				return j
+				return S
 			})), n.d(t, "k", (function() {
-				return P
+				return j
 			})), n.d(t, "i", (function() {
-				return T
+				return P
 			})), n.d(t, "t", (function() {
-				return w
+				return T
 			})), n.d(t, "e", (function() {
-				return I
+				return w
 			}));
 			var o = n("./src/reddit/models/Prediction/index.ts"),
 				r = n("./src/reddit/selectors/telemetry.ts");
@@ -15131,17 +15129,6 @@
 				}),
 				_ = () => e => ({
 					...Object(r.defaults)(e),
-					source: "global",
-					action: "view",
-					noun: "screen",
-					actionInfo: {
-						pageType: "community",
-						paneName: "predictions"
-					},
-					subreddit: Object(r.subreddit)(e)
-				}),
-				x = () => e => ({
-					...Object(r.defaults)(e),
 					source: "predictions",
 					action: "click",
 					noun: "leaderboard",
@@ -15150,7 +15137,7 @@
 						paneName: "predictions"
 					}
 				}),
-				E = () => e => ({
+				x = () => e => ({
 					...Object(r.defaults)(e),
 					source: "global",
 					action: "view",
@@ -15160,7 +15147,7 @@
 						reason: "predictions_tab"
 					}
 				}),
-				v = () => e => ({
+				E = () => e => ({
 					...Object(r.defaults)(e),
 					source: "global",
 					action: "view",
@@ -15169,19 +15156,19 @@
 						pageType: "mod_tool_predict"
 					}
 				}),
-				O = () => e => ({
+				v = () => e => ({
 					...Object(r.defaults)(e),
 					source: "mod_tool_predict",
 					action: "click",
 					noun: "end_tournament"
 				}),
-				y = () => e => ({
+				O = () => e => ({
 					...Object(r.defaults)(e),
 					source: "mod_tool_predict",
 					action: "click",
 					noun: "rename_tournament"
 				}),
-				k = e => t => ({
+				y = e => t => ({
 					...Object(r.defaults)(t),
 					source: "mod_tool_predict",
 					action: "click",
@@ -15194,37 +15181,37 @@
 						oldValue: e ? "0" : "1"
 					}
 				}),
-				S = () => e => ({
+				k = () => e => ({
 					...Object(r.defaults)(e),
 					source: "predictions",
 					action: "click",
 					noun: "next"
 				}),
-				j = () => e => ({
+				S = () => e => ({
 					...Object(r.defaults)(e),
 					source: "predictions",
 					action: "click",
 					noun: "add_more"
 				}),
-				P = () => e => ({
+				j = () => e => ({
 					...Object(r.defaults)(e),
 					source: "predictions",
 					action: "click",
 					noun: "start_tournament"
 				}),
-				T = () => e => ({
+				P = () => e => ({
 					...Object(r.defaults)(e),
 					source: "menu_links_bar",
 					action: "click",
 					noun: "predictions_tab"
 				}),
-				w = () => e => ({
+				T = () => e => ({
 					...Object(r.defaults)(e),
 					source: "predictions_tab",
 					action: "view",
 					noun: "predictions_how_it_works"
 				}),
-				I = () => e => ({
+				w = () => e => ({
 					...Object(r.defaults)(e),
 					source: "predictions_how_it_works",
 					action: "click",
@@ -23502,4 +23489,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.94e774b5ad74369f0b53.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.c1e033b07ecbcef09e56.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-pages-CommentsPage-OtherDiscussions.7a4c1d71b1eb930d5fd4.js
-// Retrieved at 10/5/2021, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-pages-CommentsPage-OtherDiscussions.6dab55f0b2644ec0a9e3.js
+// Retrieved at 10/13/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-pages-CommentsPage-OtherDiscussions"], {
 		"./src/reddit/pages/CommentsPage/OtherDiscussions/index.m.less": function(e, s, t) {
@@ -42,7 +42,7 @@
 				L = t.n(E);
 			const {
 				fbt: j
-			} = t("./node_modules/fbt/lib/FbtPublic.js"), v = a.a.div("Container", P.a), I = Object(r.b)(() => Object(o.c)({
+			} = t("./node_modules/fbt/lib/FbtPublic.js"), v = a.a.div("Container", P.a), k = Object(r.b)(() => Object(o.c)({
 				apiError: (e, {
 					postId: s
 				}) => Object(D.c)(e, {
@@ -59,7 +59,7 @@
 				}),
 				post: _.H
 			}));
-			s.default = Object(p.c)(I(({
+			s.default = Object(p.c)(k(({
 				apiError: e,
 				apiPending: s,
 				commentSort: t,
@@ -104,7 +104,12 @@
 					forcedLayout: b.g.Compact,
 					listingKey: y,
 					listingName: O.d.OtherDiscussions,
-					listingViewed: (e, s) => Object(h.f)(y, t, s, e),
+					listingViewed: (e, s) => Object(h.f)({
+						key: y,
+						sort: t,
+						timerType: s,
+						timerMillis: e
+					}),
 					noPostsComponent: () => i.a.createElement(l.b, null),
 					inSubredditOrProfile: !1,
 					preventScrollOnMount: !0
@@ -113,4 +118,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-pages-CommentsPage-OtherDiscussions.7a4c1d71b1eb930d5fd4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-pages-CommentsPage-OtherDiscussions.6dab55f0b2644ec0a9e3.js.map

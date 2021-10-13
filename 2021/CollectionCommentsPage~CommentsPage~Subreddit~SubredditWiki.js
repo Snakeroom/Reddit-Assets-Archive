@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.ee1ebb3534c86d930d14.js
-// Retrieved at 10/12/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.a2039f2f0d62bbc65ec8.js
+// Retrieved at 10/13/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"], {
 		"./src/lib/linkMatchers/index.ts": function(e, t, r) {
@@ -1794,8 +1794,6 @@
 						subredditId: e
 					}));
 				return Object(n.useEffect)(() => {
-					o && a(Object(D.z)())
-				}, [o, a]), Object(n.useEffect)(() => {
 					(async () => {
 						u && !d && (t(Object(R.l)(l.name)), c(!0))
 					})()
@@ -2954,32 +2952,30 @@
 				return g
 			})), r.d(t, "l", (function() {
 				return x
-			})), r.d(t, "z", (function() {
-				return v
 			})), r.d(t, "h", (function() {
-				return w
+				return v
 			})), r.d(t, "y", (function() {
-				return j
+				return w
 			})), r.d(t, "w", (function() {
-				return O
+				return j
 			})), r.d(t, "d", (function() {
-				return y
+				return O
 			})), r.d(t, "j", (function() {
-				return _
+				return y
 			})), r.d(t, "c", (function() {
-				return k
+				return _
 			})), r.d(t, "g", (function() {
-				return E
+				return k
 			})), r.d(t, "b", (function() {
-				return I
+				return E
 			})), r.d(t, "k", (function() {
-				return C
+				return I
 			})), r.d(t, "i", (function() {
-				return S
+				return C
 			})), r.d(t, "t", (function() {
-				return N
+				return S
 			})), r.d(t, "e", (function() {
-				return P
+				return N
 			}));
 			var n = r("./src/reddit/models/Prediction/index.ts"),
 				s = r("./src/reddit/selectors/telemetry.ts");
@@ -3103,17 +3099,6 @@
 				}),
 				v = () => e => ({
 					...Object(s.defaults)(e),
-					source: "global",
-					action: "view",
-					noun: "screen",
-					actionInfo: {
-						pageType: "community",
-						paneName: "predictions"
-					},
-					subreddit: Object(s.subreddit)(e)
-				}),
-				w = () => e => ({
-					...Object(s.defaults)(e),
 					source: "predictions",
 					action: "click",
 					noun: "leaderboard",
@@ -3122,7 +3107,7 @@
 						paneName: "predictions"
 					}
 				}),
-				j = () => e => ({
+				w = () => e => ({
 					...Object(s.defaults)(e),
 					source: "global",
 					action: "view",
@@ -3132,7 +3117,7 @@
 						reason: "predictions_tab"
 					}
 				}),
-				O = () => e => ({
+				j = () => e => ({
 					...Object(s.defaults)(e),
 					source: "global",
 					action: "view",
@@ -3141,19 +3126,19 @@
 						pageType: "mod_tool_predict"
 					}
 				}),
-				y = () => e => ({
+				O = () => e => ({
 					...Object(s.defaults)(e),
 					source: "mod_tool_predict",
 					action: "click",
 					noun: "end_tournament"
 				}),
-				_ = () => e => ({
+				y = () => e => ({
 					...Object(s.defaults)(e),
 					source: "mod_tool_predict",
 					action: "click",
 					noun: "rename_tournament"
 				}),
-				k = e => t => ({
+				_ = e => t => ({
 					...Object(s.defaults)(t),
 					source: "mod_tool_predict",
 					action: "click",
@@ -3166,37 +3151,37 @@
 						oldValue: e ? "0" : "1"
 					}
 				}),
-				E = () => e => ({
+				k = () => e => ({
 					...Object(s.defaults)(e),
 					source: "predictions",
 					action: "click",
 					noun: "next"
 				}),
-				I = () => e => ({
+				E = () => e => ({
 					...Object(s.defaults)(e),
 					source: "predictions",
 					action: "click",
 					noun: "add_more"
 				}),
-				C = () => e => ({
+				I = () => e => ({
 					...Object(s.defaults)(e),
 					source: "predictions",
 					action: "click",
 					noun: "start_tournament"
 				}),
-				S = () => e => ({
+				C = () => e => ({
 					...Object(s.defaults)(e),
 					source: "menu_links_bar",
 					action: "click",
 					noun: "predictions_tab"
 				}),
-				N = () => e => ({
+				S = () => e => ({
 					...Object(s.defaults)(e),
 					source: "predictions_tab",
 					action: "view",
 					noun: "predictions_how_it_works"
 				}),
-				P = () => e => ({
+				N = () => e => ({
 					...Object(s.defaults)(e),
 					source: "predictions_how_it_works",
 					action: "click",
@@ -3597,4 +3582,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.ee1ebb3534c86d930d14.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.a2039f2f0d62bbc65ec8.js.map

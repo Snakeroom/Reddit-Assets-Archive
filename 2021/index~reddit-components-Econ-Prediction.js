@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.72e1062f186208073945.js
-// Retrieved at 10/12/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.5f4d7a4e9da7c791030f.js
+// Retrieved at 10/13/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index~reddit-components-Econ-Prediction"], {
 		"./node_modules/lodash/_LazyWrapper.js": function(a, i, r) {
@@ -3514,32 +3514,30 @@
 				return u
 			})), r.d(i, "l", (function() {
 				return y
-			})), r.d(i, "z", (function() {
-				return G
 			})), r.d(i, "h", (function() {
-				return E
+				return G
 			})), r.d(i, "y", (function() {
-				return A
+				return E
 			})), r.d(i, "w", (function() {
-				return B
+				return A
 			})), r.d(i, "d", (function() {
-				return D
+				return B
 			})), r.d(i, "j", (function() {
-				return V
+				return D
 			})), r.d(i, "c", (function() {
-				return b
+				return V
 			})), r.d(i, "g", (function() {
-				return F
+				return b
 			})), r.d(i, "b", (function() {
-				return g
+				return F
 			})), r.d(i, "k", (function() {
-				return v
+				return g
 			})), r.d(i, "i", (function() {
-				return P
+				return v
 			})), r.d(i, "t", (function() {
-				return S
+				return P
 			})), r.d(i, "e", (function() {
-				return T
+				return S
 			}));
 			var t = r("./src/reddit/models/Prediction/index.ts"),
 				x = r("./src/reddit/selectors/telemetry.ts");
@@ -3663,17 +3661,6 @@
 				}),
 				G = () => a => ({
 					...Object(x.defaults)(a),
-					source: "global",
-					action: "view",
-					noun: "screen",
-					actionInfo: {
-						pageType: "community",
-						paneName: "predictions"
-					},
-					subreddit: Object(x.subreddit)(a)
-				}),
-				E = () => a => ({
-					...Object(x.defaults)(a),
 					source: "predictions",
 					action: "click",
 					noun: "leaderboard",
@@ -3682,7 +3669,7 @@
 						paneName: "predictions"
 					}
 				}),
-				A = () => a => ({
+				E = () => a => ({
 					...Object(x.defaults)(a),
 					source: "global",
 					action: "view",
@@ -3692,7 +3679,7 @@
 						reason: "predictions_tab"
 					}
 				}),
-				B = () => a => ({
+				A = () => a => ({
 					...Object(x.defaults)(a),
 					source: "global",
 					action: "view",
@@ -3701,19 +3688,19 @@
 						pageType: "mod_tool_predict"
 					}
 				}),
-				D = () => a => ({
+				B = () => a => ({
 					...Object(x.defaults)(a),
 					source: "mod_tool_predict",
 					action: "click",
 					noun: "end_tournament"
 				}),
-				V = () => a => ({
+				D = () => a => ({
 					...Object(x.defaults)(a),
 					source: "mod_tool_predict",
 					action: "click",
 					noun: "rename_tournament"
 				}),
-				b = a => i => ({
+				V = a => i => ({
 					...Object(x.defaults)(i),
 					source: "mod_tool_predict",
 					action: "click",
@@ -3726,37 +3713,37 @@
 						oldValue: a ? "0" : "1"
 					}
 				}),
-				F = () => a => ({
+				b = () => a => ({
 					...Object(x.defaults)(a),
 					source: "predictions",
 					action: "click",
 					noun: "next"
 				}),
-				g = () => a => ({
+				F = () => a => ({
 					...Object(x.defaults)(a),
 					source: "predictions",
 					action: "click",
 					noun: "add_more"
 				}),
-				v = () => a => ({
+				g = () => a => ({
 					...Object(x.defaults)(a),
 					source: "predictions",
 					action: "click",
 					noun: "start_tournament"
 				}),
-				P = () => a => ({
+				v = () => a => ({
 					...Object(x.defaults)(a),
 					source: "menu_links_bar",
 					action: "click",
 					noun: "predictions_tab"
 				}),
-				S = () => a => ({
+				P = () => a => ({
 					...Object(x.defaults)(a),
 					source: "predictions_tab",
 					action: "view",
 					noun: "predictions_how_it_works"
 				}),
-				T = () => a => ({
+				S = () => a => ({
 					...Object(x.defaults)(a),
 					source: "predictions_how_it_works",
 					action: "click",
@@ -4140,4 +4127,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.72e1062f186208073945.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.5f4d7a4e9da7c791030f.js.map

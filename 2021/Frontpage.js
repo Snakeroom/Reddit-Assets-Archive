@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.a00cf10d4860c4b4f2ef.js
-// Retrieved at 10/12/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.74e32d9e5c43ae1424d3.js
+// Retrieved at 10/13/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -3507,7 +3507,13 @@
 					super(e), this.renderEmptySubreddit = () => o.a.createElement(v.a, {
 						listingName: J.c,
 						sort: this.props.sort
-					}), this.onListingViewed = (e, t) => Object(D.f)(this.props.listingKey, this.props.sort, t, e, this.props.timeSort), this.componentDidMount = () => {
+					}), this.onListingViewed = (e, t) => Object(D.f)({
+						key: this.props.listingKey,
+						sort: this.props.sort,
+						timerType: t,
+						timerMillis: e,
+						timeSort: this.props.timeSort
+					}), this.componentDidMount = () => {
 						const {
 							cardViewExperimentVariant: e,
 							isLoggedIn: t,
@@ -4033,4 +4039,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.a00cf10d4860c4b4f2ef.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.74e32d9e5c43ae1424d3.js.map

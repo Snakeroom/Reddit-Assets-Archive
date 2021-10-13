@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.3da5137ae0b7078075b8.js
-// Retrieved at 10/12/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.eab8dc49ef1b5dc569f3.js
+// Retrieved at 10/13/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~ModListing", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -16062,7 +16062,14 @@
 							isCountAnimShadowTestEnabled: c,
 							listingKey: j,
 							listingName: Ce,
-							listingViewed: (e, t) => Object(ue.f)(j, le, t, e, xe),
+							listingViewed: (e, t) => Object(ue.f)({
+								key: j,
+								sort: le,
+								timerType: t,
+								timerMillis: e,
+								timeSort: xe,
+								isPredictionsPage: Pe
+							}),
 							triggerNewPostPill: nt ? this.renderNewPostPill : void 0,
 							noPostsComponent: () => d.a.createElement(U.a, {
 								isPredictionsPage: Pe,
@@ -17110,83 +17117,6 @@
 				}),
 				h = Object(o.a)(r.a, e => e === s.c.NotificationsSupported)
 		},
-		"./src/reddit/selectors/poll/index.ts": function(e, t, n) {
-			"use strict";
-			n.d(t, "a", (function() {
-				return a
-			})), n.d(t, "e", (function() {
-				return c
-			})), n.d(t, "g", (function() {
-				return d
-			})), n.d(t, "f", (function() {
-				return l
-			})), n.d(t, "h", (function() {
-				return u
-			})), n.d(t, "d", (function() {
-				return m
-			})), n.d(t, "b", (function() {
-				return p
-			})), n.d(t, "c", (function() {
-				return b
-			}));
-			n("./node_modules/core-js/modules/web.dom.iterable.js");
-			var s = n("./node_modules/reselect/es/index.js"),
-				r = n("./src/reddit/models/Comment/index.ts"),
-				o = n("./src/reddit/models/Prediction/index.ts"),
-				i = n("./src/reddit/selectors/commentSelector.ts");
-			const a = (e, {
-					postId: t
-				}) => e.posts.metaMap[t],
-				c = (e, {
-					postId: t
-				}) => {
-					const n = a(e, {
-						postId: t
-					});
-					if (n) return e.polls.models[n]
-				},
-				d = (e, {
-					postId: t
-				}) => {
-					const n = c(e, {
-						postId: t
-					});
-					return n && Object(o.c)(n) ? n : null
-				},
-				l = (e, {
-					commentId: t
-				}) => {
-					const n = Object(i.b)(e, {
-						commentId: t
-					});
-					return n && n.commentType === r.b.Prediction && d(e, n) || null
-				},
-				u = Object(s.a)(e => e.polls.models, (e, t) => t, (e, t) => Object.values(e).filter(e => Object(o.c)(e) && e.tournamentId === t)),
-				m = (e, {
-					postId: t
-				}) => {
-					const n = a(e, {
-						postId: t
-					});
-					if (n) return e.polls.rewards[n]
-				},
-				p = (e, {
-					postId: t
-				}) => {
-					const n = a(e, {
-						postId: t
-					});
-					if (n) return e.polls.results.byVotingPower[n]
-				},
-				b = (e, {
-					postId: t
-				}) => {
-					const n = a(e, {
-						postId: t
-					});
-					if (n) return e.polls.results.byVoters[n]
-				}
-		},
 		"./src/reddit/selectors/subredditMention.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "b", (function() {
@@ -17335,4 +17265,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.3da5137ae0b7078075b8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.eab8dc49ef1b5dc569f3.js.map

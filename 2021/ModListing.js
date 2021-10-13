@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.271ddf91bc5852c2a278.js
-// Retrieved at 10/12/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.82fa6a73271a4cee0ea7.js
+// Retrieved at 10/13/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -2732,7 +2732,12 @@
 				}));
 			class Le extends i.a.PureComponent {
 				constructor() {
-					super(...arguments), this.onViewed = (e, t) => Object(Ce.f)(this.props.listingKey, this.props.sort, t, e), this.renderEmptySubreddit = () => i.a.createElement(p.a, {
+					super(...arguments), this.onViewed = (e, t) => Object(Ce.f)({
+						key: this.props.listingKey,
+						sort: this.props.sort,
+						timerType: t,
+						timerMillis: e
+					}), this.renderEmptySubreddit = () => i.a.createElement(p.a, {
 						listingName: this.props.listingName,
 						sort: this.props.sort
 					})
@@ -4571,4 +4576,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.271ddf91bc5852c2a278.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.82fa6a73271a4cee0ea7.js.map
