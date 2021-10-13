@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241.fed0809bcdf14f9fcfa6.js
-// Retrieved at 10/12/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241.8f4d89639627d0cc3cd3.js
+// Retrieved at 10/13/2021, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241"], {
 		"./src/reddit/actions/downToChat.ts": function(e, t, r) {
@@ -161,6 +161,17 @@
 				const s = await (() => r.e("EconHelperActions").then(r.bind(null, "./src/reddit/actions/economics/helpers/index.ts")).then(e => e.fetchAll))();
 				await t(s(e))
 			}
+		},
+		"./src/reddit/actions/economics/powerups/flairs/async.ts": function(e, t, r) {
+			"use strict";
+			r.d(t, "b", (function() {
+				return n
+			})), r.d(t, "a", (function() {
+				return d
+			}));
+			var s = r("./src/lib/loadableAction/index.ts");
+			const n = Object(s.a)(() => r.e("AchievementsActions").then(r.bind(null, "./src/reddit/actions/economics/powerups/flairs/index.ts")).then(e => e.getSubredditUserCommentsPowerupsInfoFromCommentCollection)),
+				d = Object(s.a)(() => r.e("AchievementsActions").then(r.bind(null, "./src/reddit/actions/economics/powerups/flairs/index.ts")).then(e => e.getSubredditCurrentUserPowerupsFlairsAndSupporterInfo))
 		},
 		"./src/reddit/actions/economics/powerups/helpers.ts": function(e, t, r) {
 			"use strict";
@@ -339,33 +350,33 @@
 		"./src/reddit/actions/gold/powerups.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "n", (function() {
-				return j
+				return _
 			})), r.d(t, "k", (function() {
-				return E
+				return h
 			})), r.d(t, "l", (function() {
-				return v
-			})), r.d(t, "b", (function() {
 				return w
+			})), r.d(t, "b", (function() {
+				return A
 			})), r.d(t, "d", (function() {
-				return C
+				return k
 			})), r.d(t, "j", (function() {
-				return F
-			})), r.d(t, "a", (function() {
 				return M
-			})), r.d(t, "c", (function() {
+			})), r.d(t, "a", (function() {
 				return Q
-			})), r.d(t, "i", (function() {
+			})), r.d(t, "c", (function() {
 				return W
-			})), r.d(t, "h", (function() {
+			})), r.d(t, "i", (function() {
 				return $
-			})), r.d(t, "f", (function() {
+			})), r.d(t, "h", (function() {
 				return J
-			})), r.d(t, "g", (function() {
+			})), r.d(t, "f", (function() {
 				return H
-			})), r.d(t, "e", (function() {
+			})), r.d(t, "g", (function() {
 				return z
+			})), r.d(t, "e", (function() {
+				return V
 			})), r.d(t, "m", (function() {
-				return K
+				return Y
 			}));
 			r("./node_modules/core-js/modules/web.dom.iterable.js");
 			var s = r("./node_modules/fbt/lib/FbtPublic.js"),
@@ -382,12 +393,13 @@
 				f = r("./src/reddit/selectors/gold/powerups/benefitSettings.ts"),
 				m = r("./src/reddit/selectors/user.ts"),
 				O = r("./src/reddit/helpers/trackers/powerups.ts"),
-				g = r("./src/reddit/actions/gold/constants.ts");
-			const j = e => async (t, r, {
+				g = r("./src/reddit/actions/economics/powerups/flairs/async.ts"),
+				j = r("./src/reddit/actions/gold/constants.ts");
+			const _ = e => async (t, r, {
 				gqlContext: n
 			}) => {
 				if (!!r().user.powerups.fetched && !e) return;
-				t(_());
+				t(S());
 				const i = s.fbt._("Something went wrong", null, {
 					hk: "1IJNeH"
 				});
@@ -395,27 +407,27 @@
 					const e = await Object(l.j)(n());
 					if (e.ok) {
 						const r = e.body;
-						if (r.errors && r.errors.length) return void(await t(T(i)));
-						if (!r.data.identity) return void(await t(I(i)));
-						await t(S({
+						if (r.errors && r.errors.length) return void(await t(E(i)));
+						if (!r.data.identity) return void(await t(T(i)));
+						await t(I({
 							powerups: r.data.identity.powerups
 						}))
 					}
 				} catch (o) {
-					d.c.captureException(o), await t(T(i))
+					d.c.captureException(o), await t(E(i))
 				}
-			}, _ = Object(n.a)(g.Bb), S = Object(n.a)(g.Ab), I = Object(n.a)(g.zb), T = e => async (t, r) => {
-				await t(I(e)), t(Object(c.f)({
+			}, S = Object(n.a)(j.Bb), I = Object(n.a)(j.Ab), T = Object(n.a)(j.zb), E = e => async (t, r) => {
+				await t(T(e)), t(Object(c.f)({
 					kind: b.b.Error,
 					duration: c.a,
 					text: e
 				}))
-			}, E = (e, t) => async (e, r, {
+			}, h = (e, t) => async (e, r, {
 				gqlContext: n
 			}) => {
 				var i;
 				if (!!r().users.powerups.fetched) return;
-				e(h());
+				e(y());
 				const o = s.fbt._("Something went wrong", null, {
 					hk: "1IJNeH"
 				});
@@ -423,24 +435,24 @@
 					const r = await Object(l.g)(n(), t);
 					if (r.ok) {
 						const s = r.body;
-						if (s.errors && s.errors.length) return void(await e(D(o)));
-						if (!s.data.redditorInfoById) return void(await e(x(o)));
+						if (s.errors && s.errors.length) return void(await e(v(o)));
+						if (!s.data.redditorInfoById) return void(await e(D(o)));
 						const n = (null === (i = s.data.redditorInfoById.powerups) || void 0 === i ? void 0 : i.supportedSubreddits) || [];
-						await e(y({
+						await e(x({
 							supportedSubreddits: n,
 							userId: t
 						}))
 					}
 				} catch (a) {
-					d.c.captureException(a), await e(D(o))
+					d.c.captureException(a), await e(v(o))
 				}
-			}, h = Object(n.a)(g.hb), y = Object(n.a)(g.gb), x = Object(n.a)(g.fb), D = e => async (t, r) => {
-				await t(x(e)), t(Object(c.f)({
+			}, y = Object(n.a)(j.hb), x = Object(n.a)(j.gb), D = Object(n.a)(j.fb), v = e => async (t, r) => {
+				await t(D(e)), t(Object(c.f)({
 					kind: b.b.Error,
 					duration: c.a,
 					text: e
 				}))
-			}, v = (e, t = {}) => async (r, n, {
+			}, w = (e, t = {}) => async (r, n, {
 				gqlContext: i
 			}) => {
 				var o;
@@ -452,24 +464,24 @@
 					}) && (!t.fullData || Object(p.m)(a, {
 						subredditId: e
 					})) && !t.forceLoad) return;
-				r(k());
+				r(N());
 				const c = t.fullData ? l.i : l.h;
 				try {
 					const s = await c(i(), e, !!t.includeIdentity);
 					if (s.ok) {
 						const n = s.body;
-						if (null === (o = n.errors) || void 0 === o ? void 0 : o.length) return void(await r(P(n.errors[0].message)));
+						if (null === (o = n.errors) || void 0 === o ? void 0 : o.length) return void(await r(U(n.errors[0].message)));
 						if (t.fullData) {
 							const {
 								data: t
 							} = n;
-							w(r, e, t.subredditInfoById, t.identity)
+							A(r, e, t.subredditInfoById, t.identity)
 						} else {
 							const {
 								powerups: t = null,
 								powerupsSettings: s = null
 							} = n.data.subredditInfoById || {};
-							await r(N({
+							await r(R({
 								powerups: t,
 								subredditId: e,
 								benefitStatuses: null == s ? void 0 : s.benefitStatuses
@@ -477,11 +489,11 @@
 						}
 					}
 				} catch (u) {
-					d.c.captureException(u), await r(P(s.fbt._("Something went wrong", null, {
+					d.c.captureException(u), await r(U(s.fbt._("Something went wrong", null, {
 						hk: "1IJNeH"
 					})))
 				}
-			}, w = (e, t, r, s) => {
+			}, A = (e, t, r, s) => {
 				var n, d, i;
 				const {
 					powerups: o = null,
@@ -490,7 +502,7 @@
 					productOffers: u = null,
 					subredditAchievementFlairs: l
 				} = r || {}, b = null == s ? void 0 : s.powerups;
-				e(R({
+				e(L({
 					powerups: o,
 					benefitStatuses: null == a ? void 0 : a.benefitStatuses,
 					productOffers: null !== (n = null == u ? void 0 : u.offers) && void 0 !== n ? n : [],
@@ -500,33 +512,33 @@
 					userPowerups: b,
 					subredditAchievementFlairs: null != l ? l : []
 				}))
-			}, A = Object(n.a)(g.I), C = e => async (t, r, {
+			}, C = Object(n.a)(j.I), k = e => async (t, r, {
 				gqlContext: s
 			}) => {
 				try {
 					const r = await Object(l.e)(s(), e);
-					t(A({
+					t(C({
 						subredditsPowerupsInfo: r
 					}))
 				} catch (n) {
-					await t(P(n.message))
+					await t(U(n.message))
 				}
-			}, k = Object(n.a)(g.rb), N = Object(n.a)(g.qb), R = Object(n.a)(g.pb), L = Object(n.a)(g.ob), P = e => async (t, r) => {
-				await t(L(e)), t(Object(c.f)({
+			}, N = Object(n.a)(j.rb), R = Object(n.a)(j.qb), L = Object(n.a)(j.pb), P = Object(n.a)(j.ob), U = e => async (t, r) => {
+				await t(P(e)), t(Object(c.f)({
 					kind: b.b.Error,
 					duration: c.a,
 					text: e
 				}))
-			}, U = Object(n.a)(g.T), G = Object(n.a)(g.U), B = Object(n.a)(g.V), q = e => async (t, r) => {
-				await t(U(e)), t(Object(c.f)({
+			}, G = Object(n.a)(j.T), B = Object(n.a)(j.U), q = Object(n.a)(j.V), F = e => async (t, r) => {
+				await t(G(e)), t(Object(c.f)({
 					kind: b.b.Error,
 					duration: c.a,
 					text: e
 				}))
-			}, F = (e, t, r, n) => async (i, o, {
+			}, M = (e, t, r, n) => async (i, o, {
 				gqlContext: p
 			}) => {
-				i(G({
+				i(B({
 					subredditId: e,
 					powerupsCount: t,
 					isAnonymous: r,
@@ -542,17 +554,17 @@
 							input: d
 						});
 					let O = !1,
-						g = null;
+						j = null;
 					if (f.ok) {
 						const e = f.body;
-						O = e.data.reallocatePowerups.ok, g = e.data.reallocatePowerups.errors
+						O = e.data.reallocatePowerups.ok, j = e.data.reallocatePowerups.errors
 					}
-					const _ = Object(m.k)(o());
-					if (O && _) await i((e => async (t, r) => {
-						t(B(e)), t(v(e.subredditId, {
+					const S = Object(m.k)(o());
+					if (O && S) await i((e => async (t, r) => {
+						t(q(e)), await t(w(e.subredditId, {
 							forceLoad: !0,
 							fullData: !1
-						})), t(j(!0)), e.powerupsCount && (t(Object(a.g)(u.a.ECON_POWERUPS_PURCHASE)), e.powerupsCount > 0 ? t(Object(a.h)(u.a.ECON_POWERUPS_SUCCESS)) : t(Object(c.f)({
+						})), t(_(!0)), t(Object(g.a)(e.subredditId, !0)), e.powerupsCount && (t(Object(a.g)(u.a.ECON_POWERUPS_PURCHASE)), e.powerupsCount > 0 ? t(Object(a.h)(u.a.ECON_POWERUPS_SUCCESS)) : t(Object(c.f)({
 							kind: b.b.SuccessCommunityGreen,
 							duration: c.a,
 							text: s.fbt._("Your Powerup subscription has been canceled.", null, {
@@ -563,14 +575,14 @@
 						subredditId: e,
 						powerupsCount: t,
 						isAnonymous: r,
-						user: _,
+						user: S,
 						allocatedAt: n
 					}));
 					else {
-						const e = g && g[0] && g[0].message || s.fbt._("An unknown error occurred", null, {
+						const e = j && j[0] && j[0].message || s.fbt._("An unknown error occurred", null, {
 							hk: "2oAbwZ"
 						});
-						await i(q(e))
+						await i(F(e))
 					}
 				} catch (f) {
 					d.c.captureException(f);
@@ -578,23 +590,23 @@
 						t = e && e.message || s.fbt._("An unknown error occurred", null, {
 							hk: "2oAbwZ"
 						});
-					await i(q(t))
+					await i(F(t))
 				}
-			}, M = e => async (t, r, {
+			}, Q = e => async (t, r, {
 				gqlContext: s
 			}) => {
 				await Object(l.c)(s(), e)
-			}, Q = Object(n.a)(g.E), W = Object(n.a)(g.R), $ = e => Object(a.h)(u.a.ECON_SUPPORTERS_LIST, {
+			}, W = Object(n.a)(j.E), $ = Object(n.a)(j.R), J = e => Object(a.h)(u.a.ECON_SUPPORTERS_LIST, {
 				subredditId: e
-			}), J = e => async (t, r) => {
+			}), H = e => async (t, r) => {
 				const s = r();
 				return Object(m.k)(s) ? (Object(i.a)(Object(O.h)(e)(s)), t(Object(a.h)(u.a.ECON_POWERUPS_MARKETING))) : t(Object(o.i)())
-			}, H = e => async t => t(Object(a.h)(u.a.ECON_POWERUPS_PREMIUM_UPSELL, {
+			}, z = e => async t => t(Object(a.h)(u.a.ECON_POWERUPS_PREMIUM_UPSELL, {
 				subredditId: e
-			})), z = () => async (e, t) => {
+			})), V = () => async (e, t) => {
 				const r = t();
 				return Object(m.k)(r) ? e(Object(a.h)(u.a.ACHIEVEMENT_FLAIR)) : e(Object(o.i)())
-			}, V = Object(n.a)(g.N), K = (e, t) => async (r, s, {
+			}, K = Object(n.a)(j.N), Y = (e, t) => async (r, s, {
 				gqlContext: n
 			}) => {
 				const d = await Object(l.k)(n(), e, (e => Object.keys(e).map(t => ({
@@ -603,7 +615,7 @@
 				})))(t));
 				if (d.ok) {
 					const t = d.body.data.updatePowerupsSettings.powerupsSettings.benefitStatuses;
-					return r(V({
+					return r(K({
 						subredditId: e,
 						benefitStatuses: t
 					})), !0
@@ -5122,4 +5134,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241.fed0809bcdf14f9fcfa6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241.8f4d89639627d0cc3cd3.js.map
