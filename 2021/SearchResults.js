@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.6918c006535aa1afb4b7.js
-// Retrieved at 10/12/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.97dafe6a8ff6a91b7605.js
+// Retrieved at 10/13/2021, 12:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -5390,11 +5390,11 @@
 						subredditOrProfile: k,
 						subredditOrProfileAboutInfo: S
 					} = Object(i.e)(t => E(t, e)), I = Object(r.useCallback)(() => {
-						y(Object(h.o)(s.type, g, Object(f.b)({
+						y(Object(h.p)(s.type, g, Object(f.b)({
 							pageLayer: j
-						}))), y(Object(h.l)(g, j, s, o))
+						}))), y(Object(h.m)(g, j, s, o))
 					}, [y, g, j, o, s]), P = Object(r.useCallback)(e => {
-						e.preventDefault(), e.stopPropagation(), y(Object(h.l)(g, j, s, o))
+						e.preventDefault(), e.stopPropagation(), y(Object(h.m)(g, j, s, o))
 					}, [y, g, j, s, o]);
 					if (!k) return null;
 					const N = k.displayText,
@@ -5501,11 +5501,11 @@
 						subredditOrProfile: w,
 						subredditOrProfileAboutInfo: T
 					} = Object(i.e)(t => k(t, e)), L = Object(r.useCallback)(() => {
-						I(Object(x.o)(o.type, E, Object(v.b)({
+						I(Object(x.p)(o.type, E, Object(v.b)({
 							pageLayer: S
-						}))), I(Object(x.l)(E, S, o, O))
+						}))), I(Object(x.m)(E, S, o, O))
 					}, [I, E, S, O, o]), R = Object(r.useCallback)(e => {
-						e.preventDefault(), e.stopPropagation(), I(Object(x.l)(E, S, o, O))
+						e.preventDefault(), e.stopPropagation(), I(Object(x.m)(E, S, o, O))
 					}, [I, E, S, o, O]);
 					if (!w) return null;
 					const F = w.displayText,
@@ -6105,20 +6105,20 @@
 						...o,
 						id: e,
 						eventType: "post"
-					}, Object(Z.b)(r))), n(Object(G.m)(e, {
+					}, Object(Z.b)(r))), n(Object(G.n)(e, {
 						...o,
 						id: e,
 						eventType: "post"
-					}, a, i, c))) : "subreddit" === t ? (n(Object(G.q)({
+					}, a, i, c))) : "subreddit" === t ? (n(Object(G.r)({
 						...o,
 						id: e,
 						eventType: "subreddit"
-					}, Object(Z.b)(r))), n(Object(G.l)(o, a, void 0, i, e, c))) : "comments" === t && (((e, t, s = "post") => e(e => ({
+					}, Object(Z.b)(r))), n(Object(G.m)(o, a, void 0, i, e, c))) : "comments" === t && (((e, t, s = "post") => e(e => ({
 						...Object(G.c)(e, t),
 						action: "click",
 						noun: s,
 						source: "search_results"
-					})))(n, o, "comments"), n(Object(G.m)(e, {
+					})))(n, o, "comments"), n(Object(G.n)(e, {
 						...o,
 						id: e,
 						eventType: "post"
@@ -6127,11 +6127,11 @@
 				ne = Object(n.b)(se, (e, t) => ({
 					...Object(ee.b)(e),
 					trackOnPostEnteredViewport: e => {
-						t.sendEvent(Object(G.n)(t.listingKey, e, {
+						t.sendEvent(Object(G.o)(t.listingKey, e, {
 							...t.searchOptions,
 							id: e,
 							eventType: "post"
-						}, Object(Z.b)(t))), t.sendEvent(Object(G.p)(t.listingKey, e, {
+						}, Object(Z.b)(t))), t.sendEvent(Object(G.q)(t.listingKey, e, {
 							...t.searchOptions,
 							id: e,
 							eventType: "post"
@@ -6736,7 +6736,7 @@
 							communityApiPending: y
 						} = e,
 						O = Object(r.useCallback)(e => {
-							t(Object(Oe.l)(h, u, void 0, a, e))
+							t(Object(Oe.m)(h, u, void 0, a, e))
 						}, [a, u, h, t]),
 						E = Object(d.a)(h[ge.c]),
 						j = h.category,
@@ -7104,7 +7104,7 @@
 							post: t,
 							pageLayer: s
 						} = this.props;
-						t && (this.props.sendEvent(Object(Oe.r)(t.id, "search_result_post", this.props.searchOptions, this.props.searchDiscoveryUnit)), t.isSponsored ? (this.props.fireAdPixelsOfType(t, Qe.a.Click), t.source ? t.source.outboundUrl ? Object(qe.e)(t.source.outboundUrl, qe.d.BLANK) : Object(qe.e)(t.source.url, qe.d.BLANK) : Object(qe.e)(t.permalink, qe.d.BLANK)) : this.props.openLightbox({
+						t && (this.props.sendEvent(Object(Oe.s)(t.id, "search_result_post", this.props.searchOptions, this.props.searchDiscoveryUnit)), t.isSponsored ? (this.props.fireAdPixelsOfType(t, Qe.a.Click), t.source ? t.source.outboundUrl ? Object(qe.e)(t.source.outboundUrl, qe.d.BLANK) : Object(qe.e)(t.source.url, qe.d.BLANK) : Object(qe.e)(t.permalink, qe.d.BLANK)) : this.props.openLightbox({
 							pathname: Object(tt.b)(t.permalink),
 							state: Object(k.a)(s)
 						}))
@@ -7117,7 +7117,7 @@
 							searchOptions: n,
 							searchDiscoveryUnit: i
 						} = this.props;
-						r && this.props.sendEvent(Object(Oe.t)(r.id, n, i, t, s))
+						r && this.props.sendEvent(Object(Oe.u)(r.id, n, i, t, s))
 					}, this.itemPostClickEventFactory = (e, t) => {
 						const {
 							listingKey: s,
@@ -7276,7 +7276,7 @@
 					searchOptions: i,
 					searchDiscoveryUnit: o
 				} = e, a = Object(Ee.a)(), c = Object(r.useCallback)(e => {
-					a(Object(Oe.l)(i, s, void 0, t, e, o))
+					a(Object(Oe.m)(i, s, void 0, t, e, o))
 				}, [a, i, s, t, o]);
 				return n.a.createElement(P.b.Provider, {
 					value: c
@@ -7607,7 +7607,7 @@
 				} = b || y || {}, _ = (null == j ? void 0 : j.type) === X.o.EMBED && (null == j ? void 0 : j.provider) === X.v.Twitter, k = (null == j ? void 0 : j.type) === X.o.VIDEO || (null == j ? void 0 : j.type) === X.o.GIFVIDEO;
 
 				function S(e) {
-					e.stopPropagation(), e.preventDefault(), x(Object(Z.r)(y.id, "search_result_post", c, d)), y.isSponsored ? (f(Object(L.z)(y, V.a.Click)), y.source ? y.source.outboundUrl ? Object(T.e)(y.source.outboundUrl, T.d.BLANK) : Object(T.e)(y.source.url, T.d.BLANK) : Object(T.e)(y.permalink, T.d.BLANK)) : f(Object(z.a)({
+					e.stopPropagation(), e.preventDefault(), x(Object(Z.s)(y.id, "search_result_post", c, d)), y.isSponsored ? (f(Object(L.z)(y, V.a.Click)), y.source ? y.source.outboundUrl ? Object(T.e)(y.source.outboundUrl, T.d.BLANK) : Object(T.e)(y.source.url, T.d.BLANK) : Object(T.e)(y.permalink, T.d.BLANK)) : f(Object(z.a)({
 						pathname: Object(G.b)(y.permalink),
 						state: Object(K.a)(C)
 					}))
@@ -7615,7 +7615,7 @@
 
 				function I(e) {
 					y.isSponsored && k || S(e), y.isSponsored && function(e) {
-						k || (e.stopPropagation(), e.preventDefault()), x(Object(Z.t)(y.id, c, d, a, C))
+						k || (e.stopPropagation(), e.preventDefault()), x(Object(Z.u)(y.id, c, d, a, C))
 					}(e)
 				}
 				return y.isBlank ? i.a.createElement(R.BlankPost, {
@@ -8010,7 +8010,7 @@
 					}, this.onShare = () => {
 						this.props.sendEvent(Object(g.g)("trending_header", "share", this.props.searchOptions))
 					}, this.onShareMenuClick = e => {
-						this.props.sendEvent(Object(g.z)(e, this.props.searchOptions))
+						this.props.sendEvent(Object(g.A)(e, this.props.searchOptions))
 					}, this.state = {
 						isFollowed: !1
 					}
@@ -9137,7 +9137,7 @@
 							sendEvent: t,
 							subreddit: s
 						} = this.props;
-						t(Object(p.x)(!!s, e))
+						t(Object(p.y)(!!s, e))
 					}
 				}
 				render() {
@@ -9933,7 +9933,7 @@
 						hk: "tjjwf"
 					})
 				}, s.slice(0, 8).map(e => {
-					a(Object(l.s)("view", n));
+					a(Object(l.t)("view", n));
 					const t = {
 						...n,
 						q: e.q
@@ -9941,7 +9941,7 @@
 					return i.a.createElement(d.a, {
 						className: p.a.relatedQuery,
 						key: e.q,
-						onClick: e => a(Object(l.s)("click", t)),
+						onClick: e => a(Object(l.t)("click", t)),
 						to: Object(o.a)("/search", {
 							q: e.q
 						})
@@ -11546,9 +11546,9 @@
 			}));
 			var r = s("./src/reddit/constants/experiments.ts"),
 				n = s("./src/reddit/helpers/chooseVariant/index.ts");
-			const i = e => r.de.Treatment1 === Object(n.c)(e, {
+			const i = e => r.be.Treatment1 === Object(n.c)(e, {
 				experimentEligibilitySelector: n.a,
-				experimentName: r.Ud
+				experimentName: r.Sd
 			})
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, s) {
@@ -11841,10 +11841,10 @@
 				i = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				o = s("./src/reddit/selectors/posts.ts");
 			const a = e => Object(i.c)(e, {
-					experimentName: n.Kd,
+					experimentName: n.Id,
 					experimentEligibilitySelector: i.a
 				}),
-				c = (e, t) => t === n.Sd.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				c = (e, t) => t === n.Qd.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				d = Object(r.a)(o.H, a, (e, t) => c(e, t)),
 				l = Object(r.a)((e, t) => t, a, (e, t) => c(e, t))
 		},
@@ -11853,4 +11853,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.6918c006535aa1afb4b7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.97dafe6a8ff6a91b7605.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.80f2dd6f516941aa63ec.js
-// Retrieved at 10/13/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.fdd31ee3b81e27b24cf6.js
+// Retrieved at 10/13/2021, 12:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -5977,12 +5977,12 @@
 						rtJsonElementProps: o
 					});
 					switch (s) {
-						case b.qe.SmIcon:
+						case b.oe.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: o
 							});
-						case b.qe.SmIconHc:
+						case b.oe.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -8048,15 +8048,15 @@
 			const i = e => {
 					const t = Object(r.c)(e, {
 						experimentEligibilitySelector: o.K,
-						experimentName: s.kc
+						experimentName: s.ic
 					});
-					return !(!t || Object(s.Ne)(t))
+					return !(!t || Object(s.Le)(t))
 				},
 				a = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: o.K,
-						experimentName: s.kc
-					}) === s.Kc.ListingEnabled
+						experimentName: s.ic
+					}) === s.Ic.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, n) {
@@ -8188,12 +8188,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.ke
+						experimentName: s.ie
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.qe.SmIcon || t === s.qe.SmIconHc
+					return t === s.oe.SmIcon || t === s.oe.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -8222,4 +8222,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.80f2dd6f516941aa63ec.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.fdd31ee3b81e27b24cf6.js.map

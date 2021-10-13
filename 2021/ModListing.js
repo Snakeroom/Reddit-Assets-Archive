@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.82fa6a73271a4cee0ea7.js
-// Retrieved at 10/13/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.5bd4cb12eff94089cd1d.js
+// Retrieved at 10/13/2021, 12:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -1989,11 +1989,6 @@
 					action: "click",
 					noun: e
 				})
-		},
-		"./src/reddit/hooks/useTracking.ts": function(e, t, r) {
-			"use strict";
-			var n = r("./src/reddit/components/TrackingHelper/index.tsx");
-			t.a = n.b
 		},
 		"./src/reddit/icons/fonts/Downvote/index.m.less": function(e, t, r) {
 			e.exports = {
@@ -4510,9 +4505,9 @@
 			var n = r("./src/reddit/constants/experiments.ts"),
 				s = r("./src/reddit/helpers/chooseVariant/index.ts");
 			const o = e => Object(s.c)(e, {
-				experimentName: n.ud,
+				experimentName: n.sd,
 				experimentEligibilitySelector: s.a
-			}) === n.zd.Enabled
+			}) === n.xd.Enabled
 		},
 		"./src/reddit/selectors/modQueue.ts": function(e, t, r) {
 			"use strict";
@@ -4576,4 +4571,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.82fa6a73271a4cee0ea7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.5bd4cb12eff94089cd1d.js.map

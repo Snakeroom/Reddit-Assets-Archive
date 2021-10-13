@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.6ba985d64fbe257c8801.js
-// Retrieved at 10/12/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.6c015ed23ef110b5a105.js
+// Retrieved at 10/13/2021, 12:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -4005,7 +4005,7 @@
 			const j = e => S.d.reCaptchaEnterprise(e) && !Object(D.d)(e),
 				v = e => !!Object(T.c)(e, {
 					experimentEligibilitySelector: Object(g.d)(Object(g.b)(...a.d)),
-					experimentName: b.Vd
+					experimentName: b.Td
 				}),
 				w = Object(s.b)("LOAD_RECAPTCHA_ENTERPRISE"),
 				A = Object(s.b)("EXECUTE_RECAPTCHA_ENTERPRISE"),
@@ -5224,14 +5224,14 @@
 					}) && t(Object(c.db)(e))
 				}, _ = (e, t) => {
 					const r = Object(p.d)(e, {
-						experimentName: d.Ce
+						experimentName: d.Ae
 					});
 					let n = "";
-					return (null == r ? void 0 : r.variant) === d.De.Variant1 ? n = t ? s.fbt._("Was that a good post? Upvote it so it gets seen by more people", null, {
+					return (null == r ? void 0 : r.variant) === d.Be.Variant1 ? n = t ? s.fbt._("Was that a good post? Upvote it so it gets seen by more people", null, {
 						hk: "2NOllx"
 					}) : s.fbt._("Was this a good post? Upvote it so it gets seen by more people", null, {
 						hk: "K1yBi"
-					}) : (null == r ? void 0 : r.variant) === d.De.Variant2 && (n = t ? s.fbt._("If you enjoyed that post, upvote it so that more redditors will see it too.", null, {
+					}) : (null == r ? void 0 : r.variant) === d.Be.Variant2 && (n = t ? s.fbt._("If you enjoyed that post, upvote it so that more redditors will see it too.", null, {
 						hk: "1Y6B4I"
 					}) : s.fbt._("If you enjoyed this post, upvote it so that more redditors will see it too.", null, {
 						hk: "HR9Ye"
@@ -5878,7 +5878,7 @@
 						subreddit: r
 					} = e, {
 						isSponsored: s
-					} = t, n = Object(G.a)(), c = Object(B.a)(p.Pc) === p.Tc.Enabled;
+					} = t, n = Object(G.a)(), c = Object(B.a)(p.Nc) === p.Rc.Enabled;
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return a.a.createElement($, {
 						nowrap: e.nowrap
 					}, a.a.createElement(z, e));
@@ -6133,11 +6133,11 @@
 		"./src/reddit/components/SearchDropdown/index.tsx": function(e, t, r) {
 			"use strict";
 			r.d(t, "b", (function() {
-				return J
+				return z
 			})), r.d(t, "a", (function() {
-				return Z
+				return J
 			})), r.d(t, "c", (function() {
-				return re
+				return te
 			}));
 			var s = r("./node_modules/react/index.js"),
 				n = r.n(s),
@@ -6416,30 +6416,32 @@
 				H = r.n(B),
 				V = r("./src/reddit/components/HeaderSubredditSelector/LoadingListSection/index.m.less"),
 				q = r.n(V),
-				W = r("./node_modules/reselect/es/index.js"),
-				K = r("./src/reddit/constants/experiments.ts"),
-				Q = r("./src/reddit/helpers/chooseVariant/index.ts");
-			const $ = Object(W.a)(e => Object(Q.c)(e, {
-				experimentEligibilitySelector: Q.a,
-				experimentName: K.zb
-			}), e => e === K.Lb.Enabled);
-			var Y = r("./src/reddit/constants/parameters.ts");
+				W = r("./src/reddit/constants/parameters.ts"),
+				K = r("./src/reddit/helpers/trackers/searchResults.ts"),
+				Q = r("./src/reddit/hooks/useTracking.ts"),
+				$ = r("./src/reddit/selectors/telemetry.ts");
 
-			function X({
+			function Y({
 				searchOriginPage: e,
 				searchQuery: t,
 				onCloseDropdown: r
 			}) {
+				const s = Object(Q.a)();
 				return n.a.createElement(i.a, {
-					onClick: r,
+					onClick: function(e) {
+						s(Object(K.l)($.OriginElement.FullSearchButton, Object(l.e)({
+							q: t
+						}))), r(e)
+					},
 					to: {
 						pathname: "/search/",
 						state: {
 							[m.a.SearchOriginPage]: e
 						},
-						search: `${Y.p}=${encodeURI(t)}`
+						search: `${W.p}=${encodeURI(t)}`
 					},
-					className: Object(o.a)(T.a.listItem, b.a.item)
+					className: Object(o.a)(T.a.listItem, b.a.item),
+					"data-testid": "search-trigger-item"
 				}, n.a.createElement(_.a, {
 					name: "search"
 				}), n.a.createElement("span", {
@@ -6451,10 +6453,10 @@
 				}), "”"))
 			}
 			const {
-				fbt: z
-			} = r("./node_modules/fbt/lib/FbtPublic.js"), J = "SearchDropdown", Z = "SearchDropdownContent", ee = 5, te = Object(c.a)(G.a);
+				fbt: X
+			} = r("./node_modules/fbt/lib/FbtPublic.js"), z = "SearchDropdown", J = "SearchDropdownContent", Z = 5, ee = Object(c.a)(G.a);
 
-			function re({
+			function te({
 				container: e,
 				trendingItems: t,
 				isTrendingPending: r,
@@ -6482,31 +6484,30 @@
 			}) {
 				const C = Object(a.d)(),
 					[P, L] = Object(s.useState)(null),
-					x = Object(a.e)($),
-					U = function(e) {
+					x = function(e) {
 						const [t, r] = Object(s.useState)(null), n = Object(s.useCallback)(() => {
 							e && r(e.offsetWidth)
 						}, [e]);
 						return Object(s.useLayoutEffect)(n, [n]), Object(s.useEffect)(() => (window.addEventListener("resize", n), () => window.removeEventListener("resize", n)), [n]), t
 					}(e),
-					G = t.slice(0, ee),
-					[B, V] = Object(s.useState)(new Array(ee).fill(!1)),
-					W = x && E,
-					K = 0 === f.length && !u && !W;
+					U = t.slice(0, Z),
+					[G, B] = Object(s.useState)(new Array(Z).fill(!1)),
+					V = !!(null == E ? void 0 : E.trim()),
+					W = 0 === f.length && !u && !V;
 				Object(s.useLayoutEffect)(() => {
-					if (!r && i && document.getElementById(Z)) {
-						const e = Q();
-						V(e), G.forEach((t, r) => {
+					if (!r && i && document.getElementById(J)) {
+						const e = K();
+						B(e), U.forEach((t, r) => {
 							e[r] && C((e, r) => Object(N.y)(r(), t, N.a.SEARCH_DROPDOWN))
 						})
 					}
 				}, [r, i, C]);
-				const Q = () => {
-						const e = new Array(G.length).fill(!1);
-						return G.forEach((t, r) => {
+				const K = () => {
+						const e = new Array(U.length).fill(!1);
+						return U.forEach((t, r) => {
 							if (t.id) {
-								const s = document.getElementById(`${J}-${t.id}`),
-									n = document.getElementById(Z);
+								const s = document.getElementById(`${z}-${t.id}`),
+									n = document.getElementById(J);
 								if (s && n) {
 									const t = s.getBoundingClientRect(),
 										a = n.getBoundingClientRect();
@@ -6515,41 +6516,41 @@
 							}
 						}), e
 					},
-					Y = {
-						width: U ? `${U}px` : "inherit",
+					Q = {
+						width: x ? `${x}px` : "inherit",
 						marginTop: "7px",
 						overflow: "auto"
 					};
-				O && (Y.zIndex = F.g);
-				const re = Object(s.useMemo)(() => f.filter(e => e.isSubreddit), [f]);
-				return n.a.createElement(te, {
+				O && (Q.zIndex = F.g);
+				const $ = Object(s.useMemo)(() => f.filter(e => e.isSubreddit), [f]);
+				return n.a.createElement(ee, {
 					className: Object(o.a)(T.a.dropdown, H.a.listContainer),
-					id: Z,
+					id: J,
 					isFixed: O,
 					isOpen: i,
 					isOverlay: h,
-					tooltipId: J,
+					tooltipId: z,
 					noFocus: !0,
 					renderContentsHidden: !0,
-					style: Y,
+					style: Q,
 					onDropdownMounted: () => {
-						if (!r && G.length > 0) {
-							const e = Q();
-							V(e), G.forEach((t, r) => {
+						if (!r && U.length > 0) {
+							const e = K();
+							B(e), U.forEach((t, r) => {
 								e[r] && C((e, r) => Object(N.y)(r(), t, N.a.SEARCH_DROPDOWN))
 							})
 						}
 					},
 					onScroll: () => {
-						const e = Q();
-						G.forEach((t, r) => {
-							B[r] || !e[r] || t.post && t.post.isSponsored || C((e, r) => Object(N.y)(r(), t, N.a.SEARCH_DROPDOWN))
-						}), V(e)
+						const e = K();
+						U.forEach((t, r) => {
+							G[r] || !e[r] || t.post && t.post.isSponsored || C((e, r) => Object(N.y)(r(), t, N.a.SEARCH_DROPDOWN))
+						}), B(e)
 					}
 				}, f.map((e, t) => n.a.createElement(M, {
 					focusedItem: f[y],
 					indexOfItem: t,
-					subredditSuggestions: re,
+					subredditSuggestions: $,
 					item: e,
 					key: e.id,
 					onClearSearchQuery: S,
@@ -6557,7 +6558,7 @@
 					onSetRecentSearch: A,
 					nightmode: m,
 					onCloseDropdown: g
-				})), K && p.map((e, t) => n.a.createElement(j, {
+				})), W && p.map((e, t) => n.a.createElement(j, {
 					searchOriginPage: _,
 					activeTooltipId: P,
 					focusedItem: l[y],
@@ -6572,11 +6573,11 @@
 					toggleTooltip: L,
 					nightmode: m,
 					onCloseDropdown: g
-				})), K && !d && c && !r && t && n.a.createElement("div", {
+				})), W && !d && c && !r && t && n.a.createElement("div", {
 					className: Object(o.a)(b.a.title, T.a.listItemTitle, {
 						[T.a.mWithBorder]: !!p.length
 					})
-				}, z._("Trending today", null, {
+				}, X._("Trending today", null, {
 					hk: "3nAMpY"
 				})), (u || !d && r) && n.a.createElement(n.a.Fragment, null, n.a.createElement("div", {
 					className: Object(o.a)(T.a.loadingItem, q.a.item)
@@ -6588,8 +6589,8 @@
 					className: Object(o.a)(T.a.loadingItem, q.a.item)
 				}), n.a.createElement("div", {
 					className: Object(o.a)(T.a.loadingItem, q.a.item)
-				})), K && !d && c && G.map(e => n.a.createElement(k, {
-					id: `${J}-${e.id}`,
+				})), W && !d && c && U.map(e => n.a.createElement(k, {
+					id: `${z}-${e.id}`,
 					key: e.id,
 					focusedItem: l[y],
 					searchOriginPage: _,
@@ -6598,7 +6599,7 @@
 					onSetRecentSearch: A,
 					onUpdateSearchQuery: R,
 					trendingItem: e
-				})), W && n.a.createElement(X, {
+				})), V && n.a.createElement(Y, {
 					searchOriginPage: _,
 					searchQuery: E,
 					onCloseDropdown: g
@@ -26066,7 +26067,7 @@
 				l = e => e === n.U.OnetapAuto,
 				p = e => e.user.googleOneTapEnabled,
 				b = Object(s.a)(o.K, i, (e, t) => !e && !!t),
-				f = Object(s.a)(o.K, i, (e, t) => !e && !!t && !Object(n.Ne)(t))
+				f = Object(s.a)(o.K, i, (e, t) => !e && !!t && !Object(n.Le)(t))
 		},
 		"./src/reddit/selectors/experiments/upvotePrompt.ts": function(e, t, r) {
 			"use strict";
@@ -26093,9 +26094,9 @@
 					if (!i(e, t)) return !1;
 					const r = Object(n.c)(e, {
 						experimentEligibilitySelector: n.a,
-						experimentName: s.Ce
+						experimentName: s.Ae
 					});
-					return r === s.De.Variant1 || r === s.De.Variant2
+					return r === s.Be.Variant1 || r === s.Be.Variant2
 				}
 		},
 		"./src/reddit/selectors/scheduledPosts/index.ts": function(e, t, r) {
@@ -26293,4 +26294,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.6ba985d64fbe257c8801.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.6c015ed23ef110b5a105.js.map

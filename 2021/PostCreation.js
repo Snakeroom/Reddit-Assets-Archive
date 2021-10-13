@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.e2656f3e12e5e66bd535.js
-// Retrieved at 10/13/2021, 11:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.4cb1585ce022f4aafa4e.js
+// Retrieved at 10/13/2021, 12:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, n) {
@@ -8444,7 +8444,7 @@
 						subreddit: n
 					} = e, {
 						isSponsored: o
-					} = t, r = Object(U.a)(), i = Object(W.a)(m.Pc) === m.Tc.Enabled;
+					} = t, r = Object(U.a)(), i = Object(W.a)(m.Nc) === m.Rc.Enabled;
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return s.a.createElement(Q, {
 						nowrap: e.nowrap
 					}, s.a.createElement(Z, e));
@@ -15877,11 +15877,6 @@
 				}), t.current
 			}
 		},
-		"./src/reddit/hooks/useTracking.ts": function(e, t, n) {
-			"use strict";
-			var o = n("./src/reddit/components/TrackingHelper/index.tsx");
-			t.a = o.b
-		},
 		"./src/reddit/icons/fonts/Approve/index.tsx": function(e, t, n) {
 			"use strict";
 			var o = n("./node_modules/react/index.js"),
@@ -22811,9 +22806,9 @@
 			var o = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const s = e => Object(r.c)(e, {
-				experimentName: o.ud,
+				experimentName: o.sd,
 				experimentEligibilitySelector: r.a
-			}) === o.zd.Enabled
+			}) === o.xd.Enabled
 		},
 		"./src/reddit/selectors/experiments/replyWithUpvote.ts": function(e, t, n) {
 			"use strict";
@@ -22829,7 +22824,7 @@
 				return !(!t || (null == t ? void 0 : t.karma) && t.karma.fromPosts < 5 && t.karma.fromComments < 10) && Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
 					experimentName: o.yb
-				}) === o.Fc
+				}) === o.Dc
 			}
 		},
 		"./src/reddit/selectors/features/predictions/creation/index.ts": function(e, t, n) {
@@ -23489,4 +23484,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.e2656f3e12e5e66bd535.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.4cb1585ce022f4aafa4e.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.874c61f5622e18f5665b.js
-// Retrieved at 10/13/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.493e80c8e2064f8f0891.js
+// Retrieved at 10/13/2021, 12:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255"], {
 		"./src/lib/unicodeUtils/index.ts": function(e, t, s) {
@@ -856,8 +856,8 @@
 				const X = {
 						caretOnTop: !1
 					},
-					q = Object(a.e)(T.a),
-					K = G.isSponsored && (q === p.s.NoLockIcon || q === p.s.PromotedGrey),
+					K = Object(a.e)(T.a),
+					q = G.isSponsored && (K === p.s.NoLockIcon || K === p.s.PromotedGrey),
 					Y = G.isRemoved && !G.modRemovalReason && !G.modNote && G.belongsTo.type === b.a.SUBREDDIT,
 					z = A("Approve", G.id, V),
 					Z = A("Archived", G.id, V),
@@ -889,7 +889,7 @@
 				}), o.a.createElement(u.c, N({
 					tooltipId: Z,
 					text: R()
-				}, X))), G.isLocked && !K && o.a.createElement(r.Fragment, null, o.a.createElement(O.a, {
+				}, X))), G.isLocked && !q && o.a.createElement(r.Fragment, null, o.a.createElement(O.a, {
 					isFilled: !0,
 					className: Object(c.a)(w.a.icon, w.a.lockIcon),
 					desc: B(),
@@ -2354,12 +2354,12 @@
 						rtJsonElementProps: o
 					});
 					switch (n) {
-						case h.qe.SmIcon:
+						case h.oe.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: o
 							});
-						case h.qe.SmIconHc:
+						case h.oe.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -2859,12 +2859,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: n.ke
+						experimentName: n.ie
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === n.qe.SmIcon || t === n.qe.SmIconHc
+					return t === n.oe.SmIcon || t === n.oe.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -2887,4 +2887,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.874c61f5622e18f5665b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.493e80c8e2064f8f0891.js.map

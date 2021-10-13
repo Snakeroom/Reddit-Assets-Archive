@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.bdccbf00000237aa107a.js
-// Retrieved at 10/12/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.e7f62ed7d84f89ed7cdc.js
+// Retrieved at 10/13/2021, 12:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, r) {
@@ -1460,8 +1460,8 @@
 					}))
 				})),
 				M = r("./src/reddit/components/SEOTitle/index.tsx"),
-				L = r("./src/reddit/selectors/experiments/econ/index.ts"),
-				N = r("./src/reddit/selectors/user.ts"),
+				N = r("./src/reddit/selectors/experiments/econ/index.ts"),
+				L = r("./src/reddit/selectors/user.ts"),
 				D = r("./src/reddit/components/PostTitle/index.m.less"),
 				F = r.n(D),
 				U = r("./src/config.ts"),
@@ -1551,8 +1551,8 @@
 					}) => Object(p.q)(e, {
 						pageLayer: t
 					}),
-					shouldOpenPostInNewTab: N.db,
-					isTournamentPredictionPostV2: L.v
+					shouldOpenPostInNewTab: L.db,
+					isTournamentPredictionPostV2: N.v
 				}),
 				X = e => {
 					const {
@@ -1560,7 +1560,7 @@
 						subreddit: r
 					} = e, {
 						isSponsored: n
-					} = t, s = Object(B.a)(), i = Object(G.a)(m.Pc) === m.Tc.Enabled;
+					} = t, s = Object(B.a)(), i = Object(G.a)(m.Nc) === m.Rc.Enabled;
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return o.a.createElement(K, {
 						nowrap: e.nowrap
 					}, o.a.createElement(Z, e));
@@ -1855,21 +1855,21 @@
 					}
 				}
 			}
-			var L = r("./src/reddit/components/SidebarNativeAd/index.m.less"),
-				N = r.n(L);
-			const D = m.a.wrapped(d.d, "PostTopMeta", N.a),
-				F = m.a.div("BannerAdContainer", N.a),
+			var N = r("./src/reddit/components/SidebarNativeAd/index.m.less"),
+				L = r.n(N);
+			const D = m.a.wrapped(d.d, "PostTopMeta", L.a),
+				F = m.a.div("BannerAdContainer", L.a),
 				U = ({
 					children: e
 				}) => o.a.createElement("div", null, e),
-				B = m.a.div("PromotedPostContainer", N.a),
-				G = m.a.wrapped(S.a, "OutboundLinkIcon", N.a),
-				H = m.a.div("SourceLinkWrapper", N.a),
-				V = m.a.div("TopLine", N.a),
-				z = m.a.wrapped(c.c, "PostTitle", N.a),
-				W = m.a.div("PostMediaWrapper", N.a),
-				Y = m.a.div("BackgroundWrapper", N.a),
-				q = m.a.wrapped(h.a, "PostContainer", N.a),
+				B = m.a.div("PromotedPostContainer", L.a),
+				G = m.a.wrapped(S.a, "OutboundLinkIcon", L.a),
+				H = m.a.div("SourceLinkWrapper", L.a),
+				V = m.a.div("TopLine", L.a),
+				z = m.a.wrapped(c.c, "PostTitle", L.a),
+				W = m.a.div("PostMediaWrapper", L.a),
+				Y = m.a.div("BackgroundWrapper", L.a),
+				q = m.a.wrapped(h.a, "PostContainer", L.a),
 				K = 640,
 				Q = e => Object(I.a)(e.title, 100),
 				X = e => {
@@ -2205,9 +2205,9 @@
 			})), r.d(t, "clickConfirmAwardEvent", (function() {
 				return M
 			})), r.d(t, "clickGetPremiumEvent", (function() {
-				return L
-			})), r.d(t, "clickAddCoinsButtonEvent", (function() {
 				return N
+			})), r.d(t, "clickAddCoinsButtonEvent", (function() {
+				return L
 			})), r.d(t, "clickNextButtonEvent", (function() {
 				return D
 			})), r.d(t, "clickCloseGildModalEvent", (function() {
@@ -2356,7 +2356,7 @@
 						...l(t)
 					}
 				}),
-				L = (e, t) => r => ({
+				N = (e, t) => r => ({
 					...u(r, e),
 					source: "give_gold",
 					action: "click",
@@ -2366,7 +2366,7 @@
 						...l(t)
 					}
 				}),
-				N = e => t => ({
+				L = e => t => ({
 					...u(t, e),
 					source: "give_gold",
 					action: "click",
@@ -3849,4 +3849,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.bdccbf00000237aa107a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.e7f62ed7d84f89ed7cdc.js.map

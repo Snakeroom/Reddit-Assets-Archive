@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/BottomCellWrapper.c7ea76e718d27066263c.js
-// Retrieved at 10/12/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/BottomCellWrapper.209cb5d4c74b1319fa13.js
+// Retrieved at 10/13/2021, 12:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["BottomCellWrapper", "SignupUpsell"], {
 		"./src/reddit/components/ErrorBoundary/index.tsx": function(e, t, s) {
@@ -202,12 +202,12 @@
 						const e = Object(i.e)(O.b),
 							t = Object(i.e)(O.d),
 							s = Object(i.e)(O.f),
-							o = Object(E.a)(b.Gb.Bottom_sheet),
-							l = Object(E.a)(b.Gb.Bottom_cell),
-							r = Object(E.a)(b.Gb.Bottom_cell_dismissible),
-							c = Object(E.a)(b.Gb.Bottom_cell_dismissible_immediate_trigger),
-							a = Object(E.a)(b.Gb.Bottom_cell_signup_upsell_copy),
-							d = Object(E.a)(b.Gb.Bottom_cell_surprise_install_copy);
+							o = Object(E.a)(b.Fb.Bottom_sheet),
+							l = Object(E.a)(b.Fb.Bottom_cell),
+							r = Object(E.a)(b.Fb.Bottom_cell_dismissible),
+							c = Object(E.a)(b.Fb.Bottom_cell_dismissible_immediate_trigger),
+							a = Object(E.a)(b.Fb.Bottom_cell_signup_upsell_copy),
+							d = Object(E.a)(b.Fb.Bottom_cell_surprise_install_copy);
 						let u;
 						if (e) u = L;
 						else if (t) u = I;
@@ -224,8 +224,8 @@
 						if (e && d) return `${p}bottom_cell_surprise_install_copy.png`;
 						throw new Error("Invalid variant for signup upsell")
 					}(),
-					f = Object(E.a)(b.Gb.Bottom_cell_signup_upsell_copy),
-					w = Object(E.a)(b.Gb.Bottom_cell_surprise_install_copy),
+					f = Object(E.a)(b.Fb.Bottom_cell_signup_upsell_copy),
+					w = Object(E.a)(b.Fb.Bottom_cell_surprise_install_copy),
 					D = f ? o.fbt._("Come join us, we have snacks", null, {
 						hk: "1LUl2W"
 					}) : o.fbt._("Log in or sign up for the best experience", null, {
@@ -416,7 +416,7 @@
 					experimentName: e,
 					experimentEligibilitySelector: c,
 					throttledVariants: {
-						[o.Gb.Bottom_sheet]: e
+						[o.Fb.Bottom_sheet]: e
 					},
 					expEventOverride: t
 				})
@@ -430,4 +430,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BottomCellWrapper.c7ea76e718d27066263c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BottomCellWrapper.209cb5d4c74b1319fa13.js.map
