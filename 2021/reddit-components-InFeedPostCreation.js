@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.f3892ee84bfe0071d622.js
-// Retrieved at 10/12/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.9e75e584b6836b0bcd4a.js
+// Retrieved at 10/13/2021, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-InFeedPostCreation"], {
 		"./src/reddit/components/InFeedPostCreation/index.m.less": function(e, t, n) {
@@ -38,10 +38,10 @@
 				E = n("./src/reddit/selectors/experiments/presenceIndicator.ts"),
 				f = n("./src/reddit/selectors/subreddit.ts"),
 				U = n("./src/reddit/selectors/telemetry.ts"),
-				C = n("./src/reddit/selectors/user.ts"),
-				N = n("./src/reddit/components/InFeedPostCreation/index.m.less"),
-				O = n.n(N);
-			const P = l.a.wrapped(b.a, "CurrentUserIcon", O.a);
+				N = n("./src/reddit/selectors/user.ts"),
+				O = n("./src/reddit/components/InFeedPostCreation/index.m.less"),
+				C = n.n(O);
+			const P = l.a.wrapped(b.a, "CurrentUserIcon", C.a);
 			var j;
 			! function(e) {
 				e.Media = "post-composer-du-media", e.Link = "post-composer-du-link"
@@ -67,9 +67,9 @@
 					}
 				},
 				T = Object(a.c)({
-					currentUser: C.k,
-					isPresenceConsumptionExpEnabled: E.b,
-					isPresenceTogglePref: C.P,
+					currentUser: N.k,
+					isPresenceConsumptionExpEnabled: E.c,
+					isPresenceTogglePref: N.P,
 					subreddit: f.w,
 					subredditAboutInfo: f.t
 				}),
@@ -128,19 +128,19 @@
 					f = () => {
 						E(d.Tb.POST), s(m)
 					},
-					C = t && n,
-					N = e ? o.a.createElement(x.a, {
-						className: O.a.UserIconWrapper,
+					N = t && n,
+					O = e ? o.a.createElement(x.a, {
+						className: C.a.UserIconWrapper,
 						to: e.url
 					}, o.a.createElement(P, {
-						className: O.a.UserIcon,
-						shouldShowPresenceIndicator: C
+						className: C.a.UserIcon,
+						shouldShowPresenceIndicator: N
 					})) : null;
 				return o.a.createElement("div", {
-					className: O.a.Container
-				}, N, o.a.createElement("input", {
+					className: C.a.Container
+				}, O, o.a.createElement("input", {
 					name: "createPost",
-					className: O.a.Input,
+					className: C.a.Input,
 					onChange: f,
 					onClick: f,
 					onKeyPress: f,
@@ -149,7 +149,7 @@
 					}),
 					type: "text"
 				}), b.media && o.a.createElement(I.s, {
-					className: O.a.Button,
+					className: C.a.Button,
 					"aria-label": L(),
 					priority: I.b.Plain,
 					kind: I.a.InternalLink,
@@ -166,7 +166,7 @@
 					tooltipId: j.Media,
 					text: L()
 				})), b.link && o.a.createElement(I.s, {
-					className: O.a.Button,
+					className: C.a.Button,
 					priority: I.b.Plain,
 					kind: I.a.InternalLink,
 					size: I.c.M,
@@ -240,12 +240,14 @@
 		},
 		"./src/reddit/selectors/experiments/presenceIndicator.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "c", (function() {
+			n.d(t, "d", (function() {
 				return o
-			})), n.d(t, "b", (function() {
+			})), n.d(t, "c", (function() {
 				return c
-			})), n.d(t, "a", (function() {
+			})), n.d(t, "b", (function() {
 				return i
+			})), n.d(t, "a", (function() {
+				return a
 			}));
 			var r = n("./src/reddit/constants/experiments.ts"),
 				s = n("./src/reddit/helpers/chooseVariant/index.ts");
@@ -264,10 +266,16 @@
 				i = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
+						experimentName: r.Bd
+					}) === r.Fc
+				},
+				a = e => {
+					return Object(s.c)(e, {
+						experimentEligibilitySelector: s.a,
 						experimentName: r.Ad
 					}) === r.Fc
 				}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.f3892ee84bfe0071d622.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.9e75e584b6836b0bcd4a.js.map

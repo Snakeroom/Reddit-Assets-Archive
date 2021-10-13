@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RealtimeGQLSubscriptionAsync.2f52c0667269b1b53155.js
-// Retrieved at 10/7/2021, 11:00:10 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RealtimeGQLSubscriptionAsync.a585de1bfdb0a3e0cef1.js
+// Retrieved at 10/13/2021, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RealtimeGQLSubscriptionAsync"], {
 		"./src/realtime/GQLSubscription/index.tsx": function(e, n, t) {
@@ -202,4 +202,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RealtimeGQLSubscriptionAsync.2f52c0667269b1b53155.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RealtimeGQLSubscriptionAsync.a585de1bfdb0a3e0cef1.js.map
