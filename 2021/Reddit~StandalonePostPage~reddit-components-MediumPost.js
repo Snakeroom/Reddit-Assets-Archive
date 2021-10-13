@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-MediumPost.b9b6d4976b577b3d6bb1.js
-// Retrieved at 10/13/2021, 5:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-MediumPost.928f3f41c84c1cc01ab1.js
+// Retrieved at 10/13/2021, 6:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~StandalonePostPage~reddit-components-MediumPost"], {
 		"./src/lib/hooks/useTooltip.ts": function(e, t, r) {
@@ -381,18 +381,18 @@
 						})
 					}, []);
 				Object(a.a)(S, U);
-				const [V, B] = Object(n.useState)(!1), L = Object(n.useCallback)(e => {
+				const [V, L] = Object(n.useState)(!1), B = Object(n.useCallback)(e => {
 					e.forEach(e => {
 						const {
 							isIntersecting: t,
 							intersectionRatio: r
 						} = e, n = 1 !== r;
-						t ? B(!0) : n && B(!1)
+						t ? L(!0) : n && L(!1)
 					})
 				}, []), q = Object(n.useRef)({
 					rootMargin: "2000px 0px 2000px 0px"
 				});
-				Object(a.a)(S, L, q.current);
+				Object(a.a)(S, B, q.current);
 				const W = Object(c.a)(t);
 				Object(n.useEffect)(() => {
 					if (void 0 !== W && W !== t) {
@@ -1540,9 +1540,9 @@
 			})), r.d(t, "clickFilterEvent", (function() {
 				return V
 			})), r.d(t, "clickNextFiltersEvent", (function() {
-				return B
-			})), r.d(t, "clickPreviousFiltersEvent", (function() {
 				return L
+			})), r.d(t, "clickPreviousFiltersEvent", (function() {
+				return B
 			}));
 			var n = r("./src/reddit/models/Gold/Award.ts"),
 				s = r("./src/reddit/selectors/telemetry.ts"),
@@ -1736,13 +1736,13 @@
 						filterName: e.content.markdown
 					}
 				}),
-				B = () => e => ({
+				L = () => e => ({
 					...u(e),
 					source: "give_gold",
 					action: "click",
 					noun: "next_filters"
 				}),
-				L = () => e => ({
+				B = () => e => ({
 					...u(e),
 					source: "give_gold",
 					action: "click",
@@ -1786,7 +1786,7 @@
 					const {
 						thingId: r,
 						packageId: l
-					} = t, b = !!r, v = o.b(e), h = v ? Object(u.getAwardTypeFromAward)(v) : null, g = b ? h : c.o(e) ? d.GoldPurchaseType.Premium : d.GoldPurchaseType.Coins, O = r ? Object(p.a)(r) ? "comment" : "post" : void 0, j = l || c.t(e), w = [...Object(a.d)(e), ...Object(a.f)(e)].filter(e => e.mobileId === j)[0], y = t.offerContext || (v && 0 === v.coinPrice ? s.a.StorefrontFreeAward : Object(s.d)(w, b)), x = w ? Math.round(1e4 * (w.baselinePennies - w.pennies) / w.baselinePennies) / 100 : 0, _ = w ? Math.round(1e4 * (w.coins - w.baselineCoins) / w.coins) / 100 : 0, C = w ? w.baselinePennies !== w.pennies ? `${x}_percent_price` : w.baselineCoins !== w.coins ? `${_}_percent_bonus` : void 0 : void 0, k = g === d.GoldPurchaseType.Premium ? n.wb : w ? w.pennies : void 0;
+					} = t, b = !!r, v = o.b(e), h = v ? Object(u.getAwardTypeFromAward)(v) : null, g = b ? h : c.o(e) ? d.GoldPurchaseType.Premium : d.GoldPurchaseType.Coins, O = r ? Object(p.a)(r) ? "comment" : "post" : void 0, j = l || c.t(e), w = [...Object(a.d)(e), ...Object(a.f)(e)].filter(e => e.mobileId === j)[0], y = t.offerContext || (v && 0 === v.coinPrice ? s.a.StorefrontFreeAward : Object(s.d)(w, b)), x = w ? Math.round(1e4 * (w.baselinePennies - w.pennies) / w.baselinePennies) / 100 : 0, _ = w ? Math.round(1e4 * (w.coins - w.baselineCoins) / w.coins) / 100 : 0, C = w ? w.baselinePennies !== w.pennies ? `${x}_percent_price` : w.baselineCoins !== w.coins ? `${_}_percent_bonus` : void 0 : void 0, k = g === d.GoldPurchaseType.Premium ? n.xb : w ? w.pennies : void 0;
 					return {
 						...i.defaults(e),
 						comment: r ? i.comment(e, r) : null,
@@ -3394,7 +3394,7 @@
 			}));
 			var n = r("./src/lib/constants/index.ts");
 			const s = e => !o(e) && !!e.user.prefs.subscriptionsPinned,
-				o = e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== n.Kb.MODERATION_PAGES),
+				o = e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== n.Lb.MODERATION_PAGES),
 				a = e => e.user.prefs.reduceAnimationsFromAwards
 		},
 		"./src/reddit/singleton/EventSystem.ts": function(e, t, r) {
@@ -3455,4 +3455,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-MediumPost.b9b6d4976b577b3d6bb1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-MediumPost.928f3f41c84c1cc01ab1.js.map

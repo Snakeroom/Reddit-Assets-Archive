@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.92c5754f8cfe8086c106.js
-// Retrieved at 10/13/2021, 5:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.7f288ac657ad3cd9eda2.js
+// Retrieved at 10/13/2021, 6:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-InFeedPostCreation"], {
 		"./src/reddit/components/InFeedPostCreation/index.m.less": function(e, t, n) {
@@ -34,10 +34,10 @@
 				b = n("./src/reddit/components/UserIcon/CurrentUserIcon.tsx"),
 				I = n("./src/reddit/controls/Button/index.tsx"),
 				x = n("./src/reddit/controls/InternalLink/index.tsx"),
-				_ = n("./src/reddit/icons/fonts/index.tsx"),
-				E = n("./src/reddit/selectors/experiments/presenceIndicator.ts"),
-				f = n("./src/reddit/selectors/subreddit.ts"),
-				U = n("./src/reddit/selectors/telemetry.ts"),
+				U = n("./src/reddit/icons/fonts/index.tsx"),
+				_ = n("./src/reddit/selectors/experiments/presenceIndicator.ts"),
+				E = n("./src/reddit/selectors/subreddit.ts"),
+				f = n("./src/reddit/selectors/telemetry.ts"),
 				N = n("./src/reddit/selectors/user.ts"),
 				O = n("./src/reddit/components/InFeedPostCreation/index.m.less"),
 				C = n.n(O);
@@ -48,9 +48,9 @@
 			}(j || (j = {}));
 			const k = e => {
 					switch (e) {
-						case d.Tb.MEDIA:
+						case d.Ub.MEDIA:
 							return "?media=true";
-						case d.Tb.LINK_ONLY:
+						case d.Ub.LINK_ONLY:
 							return "?url";
 						default:
 							return ""
@@ -58,34 +58,34 @@
 				},
 				h = e => {
 					switch (e) {
-						case d.Tb.MEDIA:
+						case d.Ub.MEDIA:
 							return "media_post";
-						case d.Tb.LINK_ONLY:
+						case d.Ub.LINK_ONLY:
 							return "link_post";
 						default:
 							return "create_post"
 					}
 				},
-				T = Object(a.c)({
+				M = Object(a.c)({
 					currentUser: N.k,
-					isPresenceConsumptionExpEnabled: E.c,
+					isPresenceConsumptionExpEnabled: _.c,
 					isPresenceTogglePref: N.P,
-					subreddit: f.w,
-					subredditAboutInfo: f.t
+					subreddit: E.w,
+					subredditAboutInfo: E.t
 				}),
-				M = Object(c.b)(T, e => ({
+				L = Object(c.b)(M, e => ({
 					navigateTo: t => e(Object(i.b)(t)),
 					toggleTooltip: t => e(Object(u.h)({
 						tooltipId: t
 					}))
 				})),
-				L = () => r.fbt._("Create Media Post", null, {
+				g = () => r.fbt._("Create Media Post", null, {
 					hk: "3T3YMO"
 				}),
-				g = () => r.fbt._("Create Link Post", null, {
+				v = () => r.fbt._("Create Link Post", null, {
 					hk: "JUQfs"
 				});
-			t.default = Object(m.c)(M(({
+			t.default = Object(m.c)(L(({
 				currentUser: e,
 				isPresenceConsumptionExpEnabled: t,
 				isPresenceTogglePref: n,
@@ -117,16 +117,16 @@
 							media: (o || r) && !e.isNSFW
 						}
 					}(i, a),
-					E = e => {
+					_ = e => {
 						c(t => ({
 							source: "post_composer_du",
 							action: "click",
 							noun: h(e),
-							...U.defaults(t)
+							...f.defaults(t)
 						}))
 					},
-					f = () => {
-						E(d.Tb.POST), s(m)
+					E = () => {
+						_(d.Ub.POST), s(m)
 					},
 					N = t && n,
 					O = e ? o.a.createElement(x.a, {
@@ -141,47 +141,47 @@
 				}, O, o.a.createElement("input", {
 					name: "createPost",
 					className: C.a.Input,
-					onChange: f,
-					onClick: f,
-					onKeyPress: f,
+					onChange: E,
+					onClick: E,
+					onKeyPress: E,
 					placeholder: r.fbt._("Create Post", null, {
 						hk: "OcnKS"
 					}),
 					type: "text"
 				}), b.media && o.a.createElement(I.s, {
 					className: C.a.Button,
-					"aria-label": L(),
+					"aria-label": g(),
 					priority: I.b.Plain,
 					kind: I.a.InternalLink,
 					size: I.c.M,
 					id: j.Media,
-					onClick: () => E(d.Tb.MEDIA),
+					onClick: () => _(d.Ub.MEDIA),
 					onMouseEnter: () => u(j.Media),
 					onMouseLeave: () => u(j.Media),
-					to: m + k(d.Tb.MEDIA),
-					Icon: Object(_.b)("image_post"),
+					to: m + k(d.Ub.MEDIA),
+					Icon: Object(U.b)("image_post"),
 					isSquare: !0
 				}, o.a.createElement(p.c, {
 					caretOnTop: !0,
 					tooltipId: j.Media,
-					text: L()
+					text: g()
 				})), b.link && o.a.createElement(I.s, {
 					className: C.a.Button,
 					priority: I.b.Plain,
 					kind: I.a.InternalLink,
 					size: I.c.M,
-					"aria-label": g(),
+					"aria-label": v(),
 					id: j.Link,
-					onClick: () => E(d.Tb.LINK_ONLY),
+					onClick: () => _(d.Ub.LINK_ONLY),
 					onMouseEnter: () => u(j.Link),
 					onMouseLeave: () => u(j.Link),
-					to: m + k(d.Tb.LINK_ONLY),
-					Icon: Object(_.b)("link_post"),
+					to: m + k(d.Ub.LINK_ONLY),
+					Icon: Object(U.b)("link_post"),
 					isSquare: !0
 				}, o.a.createElement(p.c, {
 					caretOnTop: !0,
 					tooltipId: j.Media,
-					text: L()
+					text: g()
 				})))
 			}))
 		},
@@ -215,8 +215,8 @@
 					isPresenceUserPrefEnabled: d.P,
 					shouldHideNSFW: d.C
 				}),
-				_ = Object(c.b)(x);
-			t.a = _(e => {
+				U = Object(c.b)(x);
+			t.a = U(e => {
 				const {
 					currentUser: t,
 					shouldShowPresenceIndicator: n,
@@ -254,28 +254,28 @@
 			const o = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.Fd
-					}) === r.Bc
+						experimentName: r.Ed
+					}) === r.Ac
 				},
 				c = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.Ed
-					}) === r.Bc
+						experimentName: r.Dd
+					}) === r.Ac
 				},
 				i = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.xd
-					}) === r.Bc
+						experimentName: r.wd
+					}) === r.Ac
 				},
 				a = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.wd
-					}) === r.Bc
+						experimentName: r.vd
+					}) === r.Ac
 				}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.92c5754f8cfe8086c106.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.7f288ac657ad3cd9eda2.js.map

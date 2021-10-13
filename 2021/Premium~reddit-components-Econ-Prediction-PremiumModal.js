@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.9e1a26cd1980adea7f80.js
-// Retrieved at 10/13/2021, 5:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.f7b04516e51ade471146.js
+// Retrieved at 10/13/2021, 6:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Premium~reddit-components-Econ-Prediction-PremiumModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, r) {
@@ -222,10 +222,10 @@
 				k = r("./src/reddit/actions/modal.ts"),
 				v = r("./src/reddit/endpoints/gold/productOfferPurchase.ts"),
 				E = r("./src/reddit/models/Payments/index.ts");
-			const _ = () => n.fbt._("Something went wrong during payment", null, {
+			const x = () => n.fbt._("Something went wrong during payment", null, {
 					hk: "31kmAa"
 				}),
-				x = e => e.map(e => e.message).join(" : "),
+				_ = e => e.map(e => e.message).join(" : "),
 				w = (e, t, r) => async (a, s, {
 					gqlContext: i
 				}) => {
@@ -237,7 +237,7 @@
 								errors: t,
 								order: r
 							} = e.data.createEconOrder;
-						if (t && t.length) throw new Error(x(t));
+						if (t && t.length) throw new Error(_(t));
 						if (r) return r.id
 					}
 					throw new Error((() => n.fbt._("Something went wrong during order creation", null, {
@@ -267,7 +267,7 @@
 							pricePackage: e
 						}
 					}
-					let _, C, I = "";
+					let x, C, I = "";
 					try {
 						I = await c(w(t, a, k))
 					} catch (S) {
@@ -275,13 +275,13 @@
 					}
 					c(Object(h.stripeTokenPending)());
 					const N = Object(y.y)(m);
-					if (N || (_ = await c(Object(h.validateAndCreateStripeToken)(e)), C = Object(y.v)(m), _)) try {
+					if (N || (x = await c(Object(h.validateAndCreateStripeToken)(e)), C = Object(y.v)(m), x)) try {
 						const t = o()(),
-							n = N || C ? _ && C ? Object(v.h)(l(), t, I, _.id) : N ? Object(v.j)(l(), t, I, N) : null : Object(v.i)(l(), t, I, _.id),
+							n = N || C ? x && C ? Object(v.h)(l(), t, I, x.id) : N ? Object(v.j)(l(), t, I, N) : null : Object(v.i)(l(), t, I, x.id),
 							s = await n;
 						if (!(null == s ? void 0 : s.ok)) return void b();
 						const m = s.body.data.createEconPayment;
-						if (null === (u = null == m ? void 0 : m.errors) || void 0 === u ? void 0 : u.length) return void c(Object(h.stripeApiError)(x(m.errors)));
+						if (null === (u = null == m ? void 0 : m.errors) || void 0 === u ? void 0 : u.length) return void c(Object(h.stripeApiError)(_(m.errors)));
 						const {
 							ok: p,
 							payment: g,
@@ -296,7 +296,7 @@
 								} = t;
 							if (r) return void(r.message ? c(Object(h.stripeApiError)(r.message)) : b());
 							let n;
-							if (!(n = N ? await Object(v.e)(l(), o()(), g.id, N) : await Object(v.d)(l(), o()(), g.id, _.id, C)).ok) return void b();
+							if (!(n = N ? await Object(v.e)(l(), o()(), g.id, N) : await Object(v.d)(l(), o()(), g.id, x.id, C)).ok) return void b();
 							const a = n.body;
 							if (!a.data.confirmEconPayment.ok || a.data.confirmEconPayment.payment.status !== v.a.Paid) return void b()
 						} else if (p && g.status !== v.a.Paid) return void b();
@@ -359,7 +359,7 @@
 							m = await Object(v.g)(d(), c, P, e, n);
 						if (m && m.ok) {
 							const e = m.body.data.createEconPayment;
-							if (null === (l = null == e ? void 0 : e.errors) || void 0 === l ? void 0 : l.length) return s(Object(h.paypalApiError)(x(e.errors))), null;
+							if (null === (l = null == e ? void 0 : e.errors) || void 0 === l ? void 0 : l.length) return s(Object(h.paypalApiError)(_(e.errors))), null;
 							const n = Object(O.k)(i());
 							if (e.ok) {
 								const {
@@ -383,7 +383,7 @@
 					} catch (I) {
 						p.c.captureException(I)
 					}
-					return s(Object(h.paypalApiError)(_())), null
+					return s(Object(h.paypalApiError)(x())), null
 				}, N = (e, t) => async (r, n, {
 					gqlContext: a
 				}) => {
@@ -393,13 +393,13 @@
 							i = await Object(v.c)(a(), n, e, t);
 						if (i && i.ok) {
 							const e = i.body.data.confirmEconPayment;
-							if (null === (s = null == e ? void 0 : e.errors) || void 0 === s ? void 0 : s.length) return r(Object(h.paypalApiError)(x(e.errors))), !1;
+							if (null === (s = null == e ? void 0 : e.errors) || void 0 === s ? void 0 : s.length) return r(Object(h.paypalApiError)(_(e.errors))), !1;
 							if (e.ok && "PAID" === e.payment.status) return !0
 						}
 					} catch (i) {
 						p.c.captureException(i)
 					}
-					return r(Object(h.paypalApiError)(_())), !1
+					return r(Object(h.paypalApiError)(x())), !1
 				}, S = () => async (e, t, {
 					gqlContext: r
 				}) => {
@@ -433,7 +433,7 @@
 							{
 								errors: a
 							} = r.data.deleteEconPaymentMethod;
-						if (a && a.length) throw new Error(x(a))
+						if (a && a.length) throw new Error(_(a))
 					} catch (a) {
 						p.c.captureException(a)
 					}
@@ -514,8 +514,8 @@
 				k = Object(a.a)(f.Eb),
 				v = Object(a.a)(f.Cb),
 				E = Object(a.a)(f.Db),
-				_ = Object(a.a)(f.Hb),
-				x = Object(a.a)(f.Gb),
+				x = Object(a.a)(f.Hb),
+				_ = Object(a.a)(f.Gb),
 				w = Object(a.a)(f.Fb),
 				C = e => async t => {
 					t(Object(i.f)({
@@ -611,7 +611,7 @@
 					gqlContext: a
 				}) => {
 					var s;
-					t(_(e));
+					t(x(e));
 					try {
 						const r = await Object(d.b)(a(), e);
 						if (r.error) throw new Error(r.error.type);
@@ -630,7 +630,7 @@
 						const e = null !== (s = i.message) && void 0 !== s ? s : n.fbt._("Something went wrong", null, {
 							hk: "4yuT5m"
 						});
-						return t(x(e)), t(C(e)), !1
+						return t(_(e)), t(C(e)), !1
 					}
 				}
 		},
@@ -669,9 +669,9 @@
 			})), r.d(t, "savedCardsPending", (function() {
 				return E
 			})), r.d(t, "savedCardsSuccess", (function() {
-				return _
-			})), r.d(t, "loadSavedCards", (function() {
 				return x
+			})), r.d(t, "loadSavedCards", (function() {
+				return _
 			}));
 			var n = r("./node_modules/fbt/lib/FbtPublic.js"),
 				a = r("./src/lib/sentry/index.ts"),
@@ -720,7 +720,7 @@
 					} catch (s) {
 						a.c.captureException(s)
 					}
-				}, E = Object(s.a)(o.z), _ = Object(s.a)(o.A), x = () => async (e, t, {
+				}, E = Object(s.a)(o.z), x = Object(s.a)(o.A), _ = () => async (e, t, {
 					apiContext: r
 				}) => {
 					e(E());
@@ -734,9 +734,9 @@
 							expirationYear: e.exp_year,
 							last4: e.last4
 						}));
-						e(_(n)), n[0] && e(P(n[0].cardId))
+						e(x(n)), n[0] && e(P(n[0].cardId))
 					} catch (n) {
-						a.c.captureException(n), e(_([]))
+						a.c.captureException(n), e(x([]))
 					}
 				}
 		},
@@ -781,7 +781,7 @@
 					apiContext: n
 				}) => {
 					const s = Object(f.a)(r()),
-						i = (null == s ? void 0 : s.pennies) || o.wb,
+						i = (null == s ? void 0 : s.pennies) || o.xb,
 						l = Object(b.c)(b.a.GoldPayment);
 					t(Object(d.stripeTokenPending)());
 					const u = await t(Object(d.validateAndCreateStripeToken)(e));
@@ -1351,9 +1351,9 @@
 			})), r.d(t, "e", (function() {
 				return E
 			})), r.d(t, "d", (function() {
-				return _
-			})), r.d(t, "b", (function() {
 				return x
+			})), r.d(t, "b", (function() {
+				return _
 			})), r.d(t, "l", (function() {
 				return w
 			})), r.d(t, "k", (function() {
@@ -1447,7 +1447,7 @@
 						cardId: n
 					}
 				}),
-				_ = (e, t, r, n, a) => Object(h.a)(e, {
+				x = (e, t, r, n, a) => Object(h.a)(e, {
 					...o,
 					variables: {
 						nonce: t,
@@ -1456,7 +1456,7 @@
 						saveCard: a
 					}
 				}),
-				x = (e, t) => Object(h.a)(e, {
+				_ = (e, t) => Object(h.a)(e, {
 					...s,
 					variables: {
 						orderId: t
@@ -1918,19 +1918,19 @@
 				const v = P.find(e => e.frequency === m.c.Monthly),
 					E = P.find(e => e.frequency === m.c.Yearly);
 				if (!v || !E) return null;
-				const _ = null === (g = Object(b.j)(k, p.b.Month)) || void 0 === g ? void 0 : g[0],
-					x = null === (O = Object(b.j)(k, p.b.Year)) || void 0 === O ? void 0 : O[0];
-				if (!_ || !x) return null;
+				const x = null === (g = Object(b.j)(k, p.b.Month)) || void 0 === g ? void 0 : g[0],
+					_ = null === (O = Object(b.j)(k, p.b.Year)) || void 0 === O ? void 0 : O[0];
+				if (!x || !_) return null;
 				const w = {
-						price: _.price,
+						price: x.price,
 						packageId: v.mobileId,
-						currency: _.currency
+						currency: x.currency
 					},
 					C = {
-						price: x.price,
+						price: _.price,
 						packageId: E.mobileId,
 						bonusPct: E.bonusPct,
-						currency: x.currency
+						currency: _.currency
 					},
 					I = Object(c.b)(w.price, {
 						type: o.b.Real,
@@ -2024,8 +2024,8 @@
 				k = r("./src/reddit/actions/login.ts"),
 				v = r("./src/reddit/actions/gold/productOfferPurchase.ts"),
 				E = r("./src/reddit/actions/gold/productOffers.ts"),
-				_ = r("./src/reddit/actions/goldPurchaseModals/premiumPurchaseModal.ts"),
-				x = r("./src/reddit/actions/goldPurchaseModals/purchaseCatalog.ts"),
+				x = r("./src/reddit/actions/goldPurchaseModals/premiumPurchaseModal.ts"),
+				_ = r("./src/reddit/actions/goldPurchaseModals/purchaseCatalog.ts"),
 				w = r("./src/reddit/components/MarketingPageFooter/index.tsx"),
 				C = r("./src/reddit/models/Gold/ProductOffer.ts"),
 				I = r("./src/reddit/selectors/gold/purchaseCatalog.ts"),
@@ -2094,14 +2094,14 @@
 				V = Object(o.b)(q, (e, t) => ({
 					onManagePremium: () => e(Object(c.b)("/settings/premium")),
 					onOpenLoginModal: () => e(Object(k.i)()),
-					onPurchasePremium: (t, r) => e(Object(_.openWithBlob)({
+					onPurchasePremium: (t, r) => e(Object(x.openWithBlob)({
 						correlationId: r,
 						packageId: t
 					})),
 					onSetPremiumRenewalInterval: t => e(Object(v.i)({
 						renewInterval: t
 					})),
-					requestPurchaseCatalog: t => e(Object(x.b)(t)),
+					requestPurchaseCatalog: t => e(Object(_.b)(t)),
 					premiumProductOffersRequested: () => e(Object(E.c)(C.c.Premium))
 				}));
 			class Q extends i.a.Component {
@@ -2125,7 +2125,7 @@
 						sendEvent: a
 					} = this.props;
 					e.length || t || r(this.correlationId), n(), document.documentElement.scrollTop = document.body.scrollTop = 0;
-					const s = l.Kb.PREMIUM;
+					const s = l.Lb.PREMIUM;
 					y.c.has(s) && (a(Object(g.n)(O.TimerType.InApp, y.c.end(s))), a(Object(g.m)())), Object(m.a)()
 				}
 				render() {
@@ -2337,4 +2337,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.9e1a26cd1980adea7f80.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.f7b04516e51ade471146.js.map

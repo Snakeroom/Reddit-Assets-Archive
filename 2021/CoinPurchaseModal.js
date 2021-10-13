@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.7bf5e9e09d8cf69c2f6e.js
-// Retrieved at 10/7/2021, 8:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.a004ab98a8652086fcfd.js
+// Retrieved at 10/13/2021, 6:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinPurchaseModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, a) {
@@ -1114,7 +1114,7 @@
 					}, c.a.createElement(g.a, {
 						className: S.a.balance,
 						coinBalance: t
-					}), s === o.Fb ? e && e.pennyPrice && a ? c.a.createElement(A, {
+					}), s === o.Gb ? e && e.pennyPrice && a ? c.a.createElement(A, {
 						awardId: e.id,
 						className: Object(b.a)(S.a.purchaseButton, S.a.paypalCheckoutButton),
 						pennies: e.pennyPrice,
@@ -1122,7 +1122,7 @@
 					}) : r && c.a.createElement(A, {
 						className: Object(b.a)(S.a.purchaseButton, S.a.paypalCheckoutButton),
 						coinPackage: r
-					}) : null, s === o.Eb && c.a.createElement(y.k, {
+					}) : null, s === o.Fb && c.a.createElement(y.k, {
 						className: S.a.purchaseButton,
 						"data-redditstyle": !0,
 						disabled: i || n,
@@ -1245,7 +1245,7 @@
 					nightmode: e.nightmode,
 					selectedPayment: e.selectedPayment,
 					onPaymentSelected: e.onPaymentSelected
-				}), e.selectedPayment === o.Eb && c.a.createElement(u.a, {
+				}), e.selectedPayment === o.Fb && c.a.createElement(u.a, {
 					nightmode: e.nightmode
 				}), c.a.createElement("div", {
 					className: S.a.checkoutFooter
@@ -1255,9 +1255,9 @@
 					locale: t
 				}))], {
 					hk: "3dx6W8"
-				}))), e.selectedPayment === o.Fb && e.paypalErrorMessage && c.a.createElement("div", {
+				}))), e.selectedPayment === o.Gb && e.paypalErrorMessage && c.a.createElement("div", {
 					className: S.a.errorMessage
-				}, e.paypalErrorMessage), e.selectedPayment === o.Eb && e.stripeErrorMessage && c.a.createElement("div", {
+				}, e.paypalErrorMessage), e.selectedPayment === o.Fb && e.stripeErrorMessage && c.a.createElement("div", {
 					className: S.a.errorMessage
 				}, e.stripeErrorMessage), c.a.createElement("div", {
 					className: S.a.agreementLink
@@ -1816,4 +1816,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.7bf5e9e09d8cf69c2f6e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.a004ab98a8652086fcfd.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.7639fc443a74dcbbf87b.js
-// Retrieved at 10/13/2021, 5:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.e779418ac0ddd3928f28.js
+// Retrieved at 10/13/2021, 6:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction"], {
 		"./src/lib/constants/specialMembership.ts": function(e, t, n) {
@@ -16,9 +16,9 @@
 			}));
 			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
 				o = n("./src/lib/constants/index.ts");
-			const r = [o.mc, o.ob, o.A, o.P, o.jb, o.Pb],
+			const r = [o.nc, o.ob, o.A, o.P, o.jb, o.Qb],
 				i = {
-					[o.Pb]: e => s.fbt._({
+					[o.Qb]: e => s.fbt._({
 						"*": "{number} seconds",
 						_1: "1 second"
 					}, [s.fbt._plural(e, "number")], {
@@ -48,7 +48,7 @@
 					}, [s.fbt._plural(e, "number")], {
 						hk: "28DQqD"
 					}),
-					[o.mc]: e => s.fbt._({
+					[o.nc]: e => s.fbt._({
 						"*": "{number} years",
 						_1: "1 year"
 					}, [s.fbt._plural(e, "number")], {
@@ -56,7 +56,7 @@
 					})
 				},
 				c = {
-					[o.Pb]: e => s.fbt._("{amount}s", [s.fbt._param("amount", String(e))], {
+					[o.Qb]: e => s.fbt._("{amount}s", [s.fbt._param("amount", String(e))], {
 						hk: "F4qog"
 					}),
 					[o.jb]: e => s.fbt._("{amount}m", [s.fbt._param("amount", String(e))], {
@@ -71,13 +71,13 @@
 					[o.ob]: e => s.fbt._("{amount}m", [s.fbt._param("amount", String(e))], {
 						hk: "28feBj"
 					}),
-					[o.mc]: e => s.fbt._("{amount}y", [s.fbt._param("amount", String(e))], {
+					[o.nc]: e => s.fbt._("{amount}y", [s.fbt._param("amount", String(e))], {
 						hk: "10bv8G"
 					}),
 					[o.ob]: e => s.fbt._("{amount}m", [s.fbt._param("amount", String(e))], {
 						hk: "28feBj"
 					}),
-					[o.mc]: e => s.fbt._("{amount}y", [s.fbt._param("amount", String(e))], {
+					[o.nc]: e => s.fbt._("{amount}y", [s.fbt._param("amount", String(e))], {
 						hk: "10bv8G"
 					})
 				};
@@ -86,12 +86,12 @@
 				const a = Date.now(),
 					d = new Date(e).getTime(),
 					l = {
-						[o.mc]: "",
+						[o.nc]: "",
 						[o.ob]: "",
 						[o.A]: "",
 						[o.P]: "",
 						[o.jb]: "",
-						[o.Pb]: ""
+						[o.Qb]: ""
 					};
 				let u = d - a;
 				if (u <= 0) return s.fbt._("a moment", null, {
@@ -403,8 +403,8 @@
 					hk: "3SDSgH"
 				})),
 				g = n("./src/reddit/actions/post.ts"),
-				P = n("./src/reddit/components/Econ/Prediction/hooks/useDelayedUpvoteAnimation.tsx"),
-				v = n("./src/reddit/models/Vote/index.ts");
+				v = n("./src/reddit/components/Econ/Prediction/hooks/useDelayedUpvoteAnimation.tsx"),
+				P = n("./src/reddit/models/Vote/index.ts");
 			var O = n("./node_modules/fbt/lib/FbtPublic.js"),
 				x = n("./src/reddit/actions/economics/predictions/index.ts"),
 				C = n("./src/reddit/hooks/useToast.tsx");
@@ -484,14 +484,14 @@
 					totalVoters: _,
 					tournamentId: h,
 					userSelection: g,
-					predictionStatus: P,
-					voteUpdatesRemained: v
+					predictionStatus: v,
+					voteUpdatesRemained: P
 				} = t, O = Object(r.e)(t => {
 					const n = Object(u.g)(t, {
 						postId: e.id
 					});
 					return Boolean((null == n ? void 0 : n.userSelection) && !(null == n ? void 0 : n.resolvedOptionId) && Object(l.v)(t))
-				}), x = Object(r.e)(b.pb), C = Object(r.e)(b.K), [y, S] = Object(s.useState)(!1), I = m === x, k = p < Date.now(), j = k && I && !E, N = P === d.b.Cancelled || P === d.b.CancelInProgress;
+				}), x = Object(r.e)(b.pb), C = Object(r.e)(b.K), [y, S] = Object(s.useState)(!1), I = m === x, k = p < Date.now(), j = k && I && !E, N = v === d.b.Cancelled || v === d.b.CancelInProgress;
 				return o.a.useEffect(() => {
 					S(!1)
 				}, [g]), o.a.createElement("div", {
@@ -524,7 +524,7 @@
 					postId: e.id,
 					onReveal: () => S(!0)
 				}), !N && O && o.a.createElement(F.a, {
-					isLimitReached: 0 === v,
+					isLimitReached: 0 === P,
 					postId: e.id,
 					options: f,
 					selectedOptionId: g
@@ -616,10 +616,10 @@
 						n = Object(r.e)(l.p),
 						{
 							startDelayedUpvoteAnimation: s
-						} = Object(P.a)(e.id);
+						} = Object(v.a)(e.id);
 					return {
 						upvote: function() {
-							n && e.voteState < v.a.upvoted && (t(Object(g.db)(e.id)), s())
+							n && e.voteState < P.a.upvoted && (t(Object(g.db)(e.id)), s())
 						}
 					}
 				}(e), w = e => {
@@ -671,23 +671,23 @@
 				H = n.n(z),
 				Z = n("./src/reddit/components/Econ/Prediction/PredictionEducationMessage/EducationMessage/constants.ts"),
 				q = n("./src/reddit/components/Econ/Prediction/PredictionEducationMessage/EducationMessage/index.tsx"),
-				X = n("./src/reddit/components/Econ/Prediction/PredictionEducationMessage/PredictionEndedEducationMessage/index.m.less"),
-				J = n.n(X);
+				Q = n("./src/reddit/components/Econ/Prediction/PredictionEducationMessage/PredictionEndedEducationMessage/index.m.less"),
+				X = n.n(Q);
 			const {
-				fbt: Q
+				fbt: J
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 
 			function $({
 				didParticipate: e
 			}) {
-				const t = Q._("This prediction has ended", null, {
+				const t = J._("This prediction has ended", null, {
 						hk: "3VMLnq"
 					}),
-					n = o.a.createElement(o.a.Fragment, null, Q._("The outcome is pending.", null, {
+					n = o.a.createElement(o.a.Fragment, null, J._("The outcome is pending.", null, {
 						hk: "4tsv1U"
 					}), e && o.a.createElement("div", {
-						className: J.a.notificationBlurb
-					}, Q._("You'll be notified when the results are in.", null, {
+						className: X.a.notificationBlurb
+					}, J._("You'll be notified when the results are in.", null, {
 						hk: "45tyVv"
 					})));
 				return o.a.createElement("div", null, o.a.createElement(q.a, {
@@ -885,8 +885,8 @@
 					isCoins: b
 				}))
 			};
-			var Pe = n("./src/reddit/components/Econ/Tournament/Facepile/index.tsx"),
-				ve = n("./src/reddit/controls/InternalLink/index.tsx"),
+			var ve = n("./src/reddit/components/Econ/Tournament/Facepile/index.tsx"),
+				Pe = n("./src/reddit/controls/InternalLink/index.tsx"),
 				Oe = n("./src/reddit/hooks/usePageLayer.ts"),
 				xe = n("./src/reddit/icons/svgs/Chevron/index.tsx"),
 				Ce = n("./src/reddit/selectors/features/predictions/tournaments/index.ts"),
@@ -923,7 +923,7 @@
 					name: f,
 					totalParticipantsCount: E
 				} = u;
-				return o.a.createElement(ve.a, {
+				return o.a.createElement(Pe.a, {
 					className: Ie.a.tournamentLink,
 					to: `${d.url}predictions/`,
 					onClick: () => {
@@ -931,7 +931,7 @@
 							pageType: m ? "post_detail" : b ? "community" : p ? "profile" : "home"
 						})), window.scrollTo(0, 0)
 					}
-				}, o.a.createElement(Pe.a, {
+				}, o.a.createElement(ve.a, {
 					className: Ie.a.facepile,
 					subredditId: e
 				}), o.a.createElement("div", {
@@ -1545,9 +1545,9 @@
 			})), n.d(t, "w", (function() {
 				return g
 			})), n.d(t, "f", (function() {
-				return P
-			})), n.d(t, "i", (function() {
 				return v
+			})), n.d(t, "i", (function() {
+				return P
 			})), n.d(t, "q", (function() {
 				return O
 			})), n.d(t, "h", (function() {
@@ -1630,7 +1630,7 @@
 					}
 					return h.DontKnow
 				},
-				P = (e, t) => {
+				v = (e, t) => {
 					const n = e.user.account,
 						s = e.economics.subredditPremium[t];
 					if (n && s && s.status === u.a.Fetched) {
@@ -1648,13 +1648,13 @@
 					}
 				};
 
-			function v(e, t) {
+			function P(e, t) {
 				return (null == e ? void 0 : e.length) ? Object(o.a)(e.map(e => t[e]).filter(Boolean)) : f
 			}
 			const O = (e, t, n) => {
 					var o;
 					if (!s.d.spBadges(e)) return f;
-					return v(null === (o = e.users.appliedBadges[n]) || void 0 === o ? void 0 : o[t], e.badges.models)
+					return P(null === (o = e.users.appliedBadges[n]) || void 0 === o ? void 0 : o[t], e.badges.models)
 				},
 				x = (e, t) => {
 					const n = e.economics.subredditPremium[t.subredditId];
@@ -1820,4 +1820,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.7639fc443a74dcbbf87b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.e779418ac0ddd3928f28.js.map

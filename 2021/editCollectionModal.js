@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/editCollectionModal.23cc60c8d9168eed88de.js
-// Retrieved at 10/7/2021, 8:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/editCollectionModal.8c8870ed2b44cf1f564e.js
+// Retrieved at 10/13/2021, 6:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["editCollectionModal"], {
 		"./node_modules/lodash/union.js": function(e, t, n) {
@@ -26,7 +26,7 @@
 				shortMonths: o,
 				locale: r = s.C
 			} = {}) {
-				const i = new Date(e * s.Pb);
+				const i = new Date(e * s.Qb);
 				return a.a ? new Intl.DateTimeFormat(r, {
 					month: o ? "short" : "long",
 					day: t ? "numeric" : void 0,
@@ -617,7 +617,7 @@
 					const n = Object(r.a)(),
 						s = null != t ? t : n;
 					return a.a.createElement(a.a.Fragment, null, function(e, t = d.C) {
-						const n = e * d.Pb;
+						const n = e * d.Qb;
 						return new Date(n).toLocaleString(t, {
 							weekday: "short",
 							month: "short",
@@ -642,7 +642,7 @@
 
 			function x(e, t, n = !1, s = d.C) {
 				const a = Object(p.e)(e, t),
-					o = new Date(e * d.Pb);
+					o = new Date(e * d.Qb);
 				let r;
 				if (a === p.a.Live || n) return m.fbt._("Now", null, {
 					hk: "Prpcg"
@@ -1135,4 +1135,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/editCollectionModal.23cc60c8d9168eed88de.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/editCollectionModal.8c8870ed2b44cf1f564e.js.map

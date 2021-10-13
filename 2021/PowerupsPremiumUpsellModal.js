@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PowerupsPremiumUpsellModal.1c302a96dbfe566e3aab.js
-// Retrieved at 10/13/2021, 5:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PowerupsPremiumUpsellModal.60b73e08fcd6245b7e5c.js
+// Retrieved at 10/13/2021, 6:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PowerupsPremiumUpsellModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, r) {
@@ -750,7 +750,7 @@
 					apiContext: n
 				}) => {
 					const s = Object(f.a)(r()),
-						c = (null == s ? void 0 : s.pennies) || i.wb,
+						c = (null == s ? void 0 : s.pennies) || i.xb,
 						u = Object(b.c)(b.a.GoldPayment);
 					t(Object(d.stripeTokenPending)());
 					const l = await t(Object(d.validateAndCreateStripeToken)(e));
@@ -2011,4 +2011,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsPremiumUpsellModal.1c302a96dbfe566e3aab.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsPremiumUpsellModal.60b73e08fcd6245b7e5c.js.map

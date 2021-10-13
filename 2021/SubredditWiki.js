@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.59e77284b15a9f259e84.js
-// Retrieved at 10/13/2021, 5:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.3da6763eeafc58f47976.js
+// Retrieved at 10/13/2021, 6:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./src/lib/unicodeUtils/index.ts": function(e, t, s) {
@@ -3902,12 +3902,12 @@
 						rtJsonElementProps: r
 					});
 					switch (n) {
-						case h.me.SmIcon:
+						case h.le.SmIcon:
 							return i.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: r
 							});
-						case h.me.SmIconHc:
+						case h.le.SmIconHc:
 							return i.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -4180,7 +4180,7 @@
 				be = s.n(pe);
 			const he = 10,
 				ge = Object(c.a)((e, t) => t.subredditName, e => Object(w.a)(e, l.V.TOP, {
-					t: l.dc.WEEK
+					t: l.ec.WEEK
 				})),
 				xe = Object(c.c)({
 					discoveryUnit: e => Object(ue.c)(e, {
@@ -4258,7 +4258,7 @@
 					loadMorePosts: () => e(Object(j.r)({
 						sort: l.V.TOP,
 						subredditName: t,
-						t: l.dc.WEEK
+						t: l.ec.WEEK
 					}))
 				}))(Object(ae.c)(fe)),
 				ve = s("./src/config.ts"),
@@ -6759,7 +6759,7 @@
 						onMouseEnter: this.onShowTooltip,
 						onMouseLeave: this.onHideTooltip
 					}, " - ", o.a.createElement(p.d, {
-						seconds: b.valueOf() / c.Pb
+						seconds: b.valueOf() / c.Qb
 					}), o.a.createElement(_, {
 						text: b.toString(),
 						isOpen: a,
@@ -7457,12 +7457,12 @@
 				d = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: n.ge
+						experimentName: n.fe
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === n.me.SmIcon || t === n.me.SmIconHc
+					return t === n.le.SmIcon || t === n.le.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -7485,4 +7485,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.59e77284b15a9f259e84.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.3da6763eeafc58f47976.js.map

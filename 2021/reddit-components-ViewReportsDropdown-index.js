@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.2e98e839c26c144d8859.js
-// Retrieved at 10/13/2021, 5:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.375a3266048e661809c6.js
+// Retrieved at 10/13/2021, 6:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ViewReportsDropdown-index"], {
 		"./src/reddit/actions/comment/index.ts": function(e, t, o) {
@@ -23,11 +23,11 @@
 			})), o.d(t, "f", (function() {
 				return K
 			})), o.d(t, "o", (function() {
-				return M
-			})), o.d(t, "p", (function() {
 				return H
-			})), o.d(t, "d", (function() {
+			})), o.d(t, "p", (function() {
 				return V
+			})), o.d(t, "d", (function() {
+				return Z
 			})), o.d(t, "a", (function() {
 				return X
 			})), o.d(t, "b", (function() {
@@ -167,7 +167,7 @@
 						moreCommentsItem: d,
 						...f.error
 					}))
-				}, N = Object(u.a)(O.b, h.a.upvoted), U = Object(u.a)(O.b, h.a.downvoted), F = Object(d.a)(k.j), K = Object(d.a)(k.i), $ = Object(d.a)(k.e), Z = Object(d.a)(k.f), M = (Object(d.a)(k.c), Object(d.a)(k.d), ({
+				}, N = Object(u.a)(O.b, h.a.upvoted), U = Object(u.a)(O.b, h.a.downvoted), F = Object(d.a)(k.j), K = Object(d.a)(k.i), $ = Object(d.a)(k.e), M = Object(d.a)(k.f), H = (Object(d.a)(k.c), Object(d.a)(k.d), ({
 					commentId: e,
 					commentsPageKey: t,
 					scrollToAndRemeasure: o
@@ -188,15 +188,15 @@
 						commentsPageKey: t,
 						isCollapsed: c
 					})), c || 0 !== a || o(e, !0), Object(l.d)()
-				}), H = ({
+				}), V = ({
 					commentId: e,
 					commentsPageKey: t
 				}) => async o => {
-					o(Z({
+					o(M({
 						commentId: e,
 						commentsPageKey: t
 					}))
-				}, V = ({
+				}, Z = ({
 					commentLink: e,
 					commentsPageKey: t,
 					lineDepth: o,
@@ -353,7 +353,7 @@
 						commentId: e
 					});
 					if (!c) return;
-					const m = o === n.Zb.Snoozed,
+					const m = o === n.ac.Snoozed,
 						l = {
 							itemId: e,
 							reportText: t,
@@ -482,7 +482,7 @@
 			class T extends n.a.Component {
 				constructor() {
 					super(...arguments), this.tooltipTarget = null, this.setTooltipTargetRef = e => this.tooltipTarget = e, this.onSnoozeButtonClick = () => {
-						const e = this.props.isSnoozed ? c.Zb.None : c.Zb.Snoozed;
+						const e = this.props.isSnoozed ? c.ac.None : c.ac.Snoozed;
 						this.props.toggleSnooze(e);
 						const t = Object(j.l)(Object(f.a)(this.props.reportedThingId), this.props.isSnoozed, this.props.reportedThingId, this.props.reason);
 						this.props.sendEvent(t)
@@ -906,4 +906,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.2e98e839c26c144d8859.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.375a3266048e661809c6.js.map

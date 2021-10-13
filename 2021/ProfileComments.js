@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.4a741abcb3c7c2cbb4dc.js
-// Retrieved at 10/5/2021, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.8125991b19de158f9b27.js
+// Retrieved at 10/13/2021, 6:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments"], {
 		"./src/reddit/actions/pages/profileComments/index.ts": function(e, t, r) {
@@ -11,9 +11,9 @@
 			})), r.d(t, "profileCommentsFailed", (function() {
 				return q
 			})), r.d(t, "profileCommentsRequested", (function() {
-				return B
-			})), r.d(t, "moreItemsPending", (function() {
 				return K
+			})), r.d(t, "moreItemsPending", (function() {
+				return B
 			})), r.d(t, "moreItemsLoaded", (function() {
 				return D
 			})), r.d(t, "moreItemsFailed", (function() {
@@ -37,8 +37,8 @@
 				b = r("./src/reddit/actions/subreddit.ts"),
 				O = r("./src/reddit/constants/errors.ts"),
 				y = r("./src/reddit/constants/parameters.ts"),
-				j = r("./src/reddit/contexts/PageLayer/index.tsx"),
-				g = r("./src/config.ts"),
+				g = r("./src/reddit/contexts/PageLayer/index.tsx"),
+				j = r("./src/config.ts"),
 				x = r("./src/lib/addAllowQuarantinedParam/index.ts"),
 				C = r("./src/lib/constants/index.ts"),
 				P = r("./src/lib/makeApiRequest/index.ts"),
@@ -47,7 +47,7 @@
 				L = r("./src/reddit/models/RichTextJson/addEmotesAsImagesParam.ts"),
 				v = r("./src/reddit/models/RichTextJson/addRTJParam.ts");
 			const I = (e, t, r, s) => {
-				let o = Object(h.a)(Object(x.a)(Object(L.a)(Object(v.a)(`${g.a.gatewayUrl}/desktopapi/v1/user/${t}/comments`))));
+				let o = Object(h.a)(Object(x.a)(Object(L.a)(Object(v.a)(`${j.a.gatewayUrl}/desktopapi/v1/user/${t}/comments`))));
 				return s && (o = Object(w.a)(o)), Object(P.a)(e, {
 					data: r,
 					endpoint: o,
@@ -63,22 +63,22 @@
 			const F = Object(i.a)(T.f),
 				A = Object(i.a)(T.e),
 				q = Object(i.a)(T.d),
-				B = e => async (t, r, s) => {
+				K = e => async (t, r, s) => {
 					const {
 						queryParams: o,
 						params: n
 					} = e, {
 						sort: i,
-						t: j
+						t: g
 					} = Object(p.b)(o), {
-						profileName: g
-					} = n, x = Object(c.a)(`u_${g}`, i, e.queryParams), {
+						profileName: j
+					} = n, x = Object(c.a)(`u_${j}`, i, e.queryParams), {
 						profileCommentsPage: C
 					} = r(), P = C.commentIds[x], h = C.api.error[x], w = C.api.pending[x];
-					if (await t(f.d(g)), w || P && !h) {
+					if (await t(f.d(j)), w || P && !h) {
 						if (P) {
 							const e = Object(_.q)(r(), {
-								profileName: g
+								profileName: j
 							});
 							t(u.l({
 								title: e
@@ -89,12 +89,12 @@
 					const L = {
 						...a()(e.queryParams, [...y.l, y.h]),
 						sort: i,
-						t: Object(N.a)(i, j)
+						t: Object(N.a)(i, g)
 					};
 					t(F({
 						key: x
 					}));
-					const v = await Object(E.a)("profileComments", () => I(s.apiContext(), g, L, Object(k.a)(r())));
+					const v = await Object(E.a)("profileComments", () => I(s.apiContext(), j, L, Object(k.a)(r())));
 					if (!v.ok) return t(q({
 						account: v.body.data ? v.body.data.account : null,
 						error: v.body.reason ? {
@@ -102,15 +102,15 @@
 						} : v.error,
 						key: x
 					})), v.body.reason === O.a.DeletedProfile && t(Object(d.p)({
-						profileName: g
+						profileName: j
 					})), void t(u.m(v.status));
 					const S = v.body;
 					t(A({
 						key: x,
 						meta: r().meta,
 						...S
-					})), await Promise.all([t(Object(p.c)(g)), t(Object(b.q)()), t(Object(l.b)()), t(m.o(g))])
-				}, K = Object(i.a)(T.c), D = Object(i.a)(T.b), M = Object(i.a)(T.a), R = () => async (e, t, {
+					})), await Promise.all([t(Object(p.c)(j)), t(Object(b.q)()), t(Object(l.b)()), t(m.o(j))])
+				}, B = Object(i.a)(T.c), D = Object(i.a)(T.b), M = Object(i.a)(T.a), R = () => async (e, t, {
 					apiContext: r
 				}) => {
 					const s = t(),
@@ -133,12 +133,12 @@
 					const O = Object(S.b)(s, {
 							listingKey: f
 						}),
-						g = Object(S.c)(s, {
+						j = Object(S.c)(s, {
 							listingKey: f
 						}),
-						x = g && g[b.token];
+						x = j && j[b.token];
 					if (O || x) return;
-					e(K({
+					e(B({
 						key: f,
 						fetchedToken: b.token
 					}));
@@ -148,7 +148,7 @@
 						sort: m,
 						t: l,
 						...a()(i, y.l),
-						layout: Object(j.Q)(s, {}).toLowerCase()
+						layout: Object(g.Q)(s, {}).toLowerCase()
 					}, Object(k.a)(s));
 					if (C.ok) {
 						const t = Object(S.f)(s, {
@@ -201,8 +201,8 @@
 				b = r("./src/reddit/components/EmptyProfile/index.ts"),
 				O = r("./src/reddit/components/GeneralCleanup/SortViewBar/index.tsx"),
 				y = r("./src/reddit/components/JumpToContent/index.tsx"),
-				j = r("./src/lib/classNames/index.ts"),
-				g = r("./src/lib/CSSVariableProvider/withTheme.tsx"),
+				g = r("./src/lib/classNames/index.ts"),
+				j = r("./src/lib/CSSVariableProvider/withTheme.tsx"),
 				x = r("./src/lib/lessComponent.tsx"),
 				C = r("./src/reddit/components/ClassicPost/index.tsx"),
 				P = r("./src/reddit/components/OverviewChronoList/ListItem.tsx"),
@@ -248,7 +248,7 @@
 						})(e, t)
 					}
 				});
-			var B = A(Object(i.b)(q)(e => {
+			var K = A(Object(i.b)(q)(e => {
 				const {
 					comment: t,
 					itemId: r,
@@ -264,7 +264,7 @@
 					width: m,
 					...l
 				} = e;
-				return a.a.createElement(K, l, s && a.a.createElement(w.a, {
+				return a.a.createElement(B, l, s && a.a.createElement(w.a, {
 					isFirst: !0
 				}, n === v.g.Large ? a.a.createElement(T, S({}, e, {
 					availableWidth: m,
@@ -285,8 +285,8 @@
 					showModTools: c
 				})))
 			}));
-			const K = Object(g.a)(e => a.a.createElement("div", {
-				className: Object(j.a)(_.a.backgroundMargin, {
+			const B = Object(j.a)(e => a.a.createElement("div", {
+				className: Object(g.a)(_.a.backgroundMargin, {
 					[_.a.isFirstInCommentList]: e.isFirstInCommentList,
 					[_.a.isLastInCommentList]: e.isLastInCommentList
 				}),
@@ -374,7 +374,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const ae = e => a.a.createElement(B, ne({}, e, {
+			const ae = e => a.a.createElement(K, ne({}, e, {
 					allowModToolsUnderComments: !0
 				})),
 				ie = (e => Object(Q.c)(te(oe(e))))(D.a);
@@ -399,7 +399,7 @@
 				}).apply(this, arguments)
 			}
 			const ye = Object(I.u)(),
-				je = Object(c.a)(I.D, ee.eb, (e, {
+				ge = Object(c.a)(I.D, ee.eb, (e, {
 					location: t
 				}) => o()([...Object(m.a)(t.search)]), I.Q, (e, {
 					match: t
@@ -409,7 +409,7 @@
 					profileName: t.params.profileName
 				}), ee.K, (e, {
 					match: t
-				}) => Object(ee.f)(e, d.fc + t.params.profileName), (e, t, r, s, o, n, a, i) => {
+				}) => Object(ee.f)(e, d.gc + t.params.profileName), (e, t, r, s, o, n, a, i) => {
 					const {
 						sort: c,
 						t: d
@@ -427,14 +427,14 @@
 						timeSort: d
 					}
 				}),
-				ge = Object(i.b)(je, (e, t) => ({
+				je = Object(i.b)(ge, (e, t) => ({
 					onLoadMore: () => e(Object(p.moreItemsRequested)()),
 					onLayoutChange: () => e(Object(p.profileCommentsRequested)({
 						...t.match,
 						queryParams: o()([...Object(m.a)(t.location.search)])
 					}))
 				}));
-			t.default = ye(ge(e => {
+			t.default = ye(je(e => {
 				const {
 					contentGateInfo: t,
 					over18Prefs: r,
@@ -466,11 +466,11 @@
 					contentGateType: ue.a.ProfileDoesNotExist,
 					profileName: l
 				});
-				const j = l.toLowerCase(),
-					g = `/user/${l}/comments/`,
+				const g = l.toLowerCase(),
+					j = `/user/${l}/comments/`,
 					x = {
 						listingKey: n,
-						listingName: j
+						listingName: g
 					};
 				if (!r && o && !s) return a.a.createElement(f.default, {
 					contentGateType: ue.a.Nsfw,
@@ -478,8 +478,8 @@
 				});
 				const C = {
 					sort: p,
-					baseUrl: g,
-					sortOptions: d.Bb,
+					baseUrl: j,
+					sortOptions: d.Cb,
 					timeSort: u
 				};
 				return a.a.createElement(pe.a, {
@@ -490,7 +490,7 @@
 					})),
 					content: a.a.createElement(a.a.Fragment, null, a.a.createElement(O.a, C), a.a.createElement(y.a, null), a.a.createElement(ce, {
 						listingKey: n,
-						listingName: j,
+						listingName: g,
 						listingViewed: (e, t) => Object(le.o)(n, p, t, e, u),
 						noPostsComponent: () => a.a.createElement(b.b, {
 							profileName: l,
@@ -508,4 +508,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.4a741abcb3c7c2cbb4dc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.8125991b19de158f9b27.js.map

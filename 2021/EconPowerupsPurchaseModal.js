@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.082e56a9e79e8f305706.js
-// Retrieved at 10/13/2021, 5:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.ed6c316561f46a545cd4.js
+// Retrieved at 10/13/2021, 6:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsPurchaseModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, n) {
@@ -93,7 +93,7 @@
 						forceDecimals: b,
 						currency: f = t.currency || (t.type ? p(t.type) : a.c),
 						type: h = t.type || (t.currency ? m(t.currency) : a.b.Real)
-					} = t, w = Number(e), E = String(e);
+					} = t, w = Number(e), P = String(e);
 					switch (h) {
 						case a.b.Reddit: {
 							const e = a.e[f],
@@ -105,9 +105,9 @@
 						}
 						case a.b.Crypto: {
 							if (o) {
-								return Object(c.c)(E, d) + " " + f
+								return Object(c.c)(P, d) + " " + f
 							}
-							const e = Number(Object(c.b)(E, d));
+							const e = Number(Object(c.b)(P, d));
 							return Object(l.c)() ? new Intl.NumberFormat(n, {
 								style: "currency",
 								currency: f,
@@ -119,7 +119,7 @@
 						}
 						case a.b.Real:
 						default: {
-							const e = Number(Object(s.a)(E, b));
+							const e = Number(Object(s.a)(P, b));
 							return Object(l.c)() ? new Intl.NumberFormat(n, {
 								style: "currency",
 								currency: f,
@@ -167,9 +167,9 @@
 			})), n.d(t, "stripeApiError", (function() {
 				return w
 			})), n.d(t, "validateAndCreateStripeToken", (function() {
-				return E
-			})), n.d(t, "paypalApiError", (function() {
 				return P
+			})), n.d(t, "paypalApiError", (function() {
+				return E
 			})), n.d(t, "toggleRememberCard", (function() {
 				return g
 			})), n.d(t, "selectSavedCard", (function() {
@@ -200,7 +200,7 @@
 				f = Object(a.a)(c.G),
 				h = Object(a.a)(c.F),
 				w = Object(a.a)(c.D),
-				E = e => async (t, n) => {
+				P = e => async (t, n) => {
 					const s = n(),
 						a = Object(l.h)(s),
 						o = Object(l.l)(s),
@@ -222,7 +222,7 @@
 							message: e
 						}))
 					}
-				}, P = Object(a.a)(c.x), g = Object(a.a)(c.H), x = Object(a.a)(c.C), y = Object(a.a)(c.g), _ = e => async (t, n, {
+				}, E = Object(a.a)(c.x), g = Object(a.a)(c.H), x = Object(a.a)(c.C), y = Object(a.a)(c.g), _ = e => async (t, n, {
 					apiContext: r
 				}) => {
 					t(y(e));
@@ -419,8 +419,8 @@
 				f = n("./src/reddit/hooks/useLocale.ts"),
 				h = n("./src/reddit/hooks/useTracking.ts"),
 				w = n("./src/lib/constants/index.ts"),
-				E = n("./src/lib/localizeCurrency/index.ts"),
-				P = n("./src/reddit/helpers/trackers/powerups.ts"),
+				P = n("./src/lib/localizeCurrency/index.ts"),
+				E = n("./src/reddit/helpers/trackers/powerups.ts"),
 				g = n("./src/reddit/actions/gold/powerups.ts"),
 				x = n("./src/reddit/actions/gold/productOfferPurchase.ts"),
 				y = n("./src/reddit/actions/goldPurchaseModals/payment.ts"),
@@ -559,10 +559,10 @@
 						onClick: () => i(1)
 					})))
 				},
-				V = n("./src/reddit/components/Econ/PowerupsPurchaseModal/PowerupsPurchase/PowerupsProgressControl/ProgressBar/index.m.less"),
-				Y = n.n(V);
+				G = n("./src/reddit/components/Econ/PowerupsPurchaseModal/PowerupsPurchase/PowerupsProgressControl/ProgressBar/index.m.less"),
+				V = n.n(G);
 			const {
-				fbt: G
+				fbt: Y
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 			var Q = e => {
 					const {
@@ -577,20 +577,20 @@
 					return s.a.createElement("div", {
 						className: n
 					}, s.a.createElement("div", {
-						className: Y.a.titleRow
-					}, s.a.createElement("span", null, G._("Powerups", null, {
+						className: V.a.titleRow
+					}, s.a.createElement("span", null, Y._("Powerups", null, {
 						hk: "DrcXp"
 					})), s.a.createElement("span", null, r < a ? `${r}/${a}` : r)), s.a.createElement("div", {
-						className: Y.a.barRow
+						className: V.a.barRow
 					}, s.a.createElement("div", {
-						className: Y.a.track
+						className: V.a.track
 					}), s.a.createElement("div", {
-						className: Y.a.progress,
+						className: V.a.progress,
 						style: {
 							width: `${100*o}%`
 						}
 					}), t && s.a.createElement("div", {
-						className: Y.a.additionalProgress,
+						className: V.a.additionalProgress,
 						style: {
 							width: `${100*(c-o)}%`,
 							left: `${100*o}%`
@@ -689,18 +689,18 @@
 						stripeErrorMessage: u,
 						subredditId: m,
 						userPowerupsData: p
-					} = e, _ = Object(a.d)(), [O, j] = Object(r.useState)(w.Fb);
+					} = e, _ = Object(a.d)(), [O, j] = Object(r.useState)(w.Gb);
 					Object(r.useEffect)(() => {
 						_(Object(x.d)()), _(Object(y.selectPaymentMethod)(O))
 					}, []);
 					const v = Object(f.a)(),
 						I = Object(h.a)();
 					Object(r.useEffect)(() => {
-						I(Object(P.i)())
+						I(Object(E.i)())
 					}, []);
 					const T = Object(S.a)();
 					if (!d || !l) return o(), null;
-					const B = Object(E.b)(i * d, {
+					const B = Object(P.b)(i * d, {
 							locale: v
 						}),
 						A = !!(null == p ? void 0 : p.freeCount);
@@ -739,18 +739,18 @@
 						onPaymentSelected: e => {
 							j(e), _(Object(y.selectPaymentMethod)(e))
 						}
-					}), O === w.Eb && u && s.a.createElement("div", {
+					}), O === w.Fb && u && s.a.createElement("div", {
 						className: oe.a.errorMessage
-					}, u), O === w.Fb && c && s.a.createElement("div", {
+					}, u), O === w.Gb && c && s.a.createElement("div", {
 						className: oe.a.errorMessage
-					}, c), O === w.Eb && s.a.createElement(M.a, {
+					}, c), O === w.Fb && s.a.createElement(M.a, {
 						nightmode: n,
 						className: oe.a.stripeForm,
 						shouldDeleteCardWithGql: !0
-					}), O === w.Fb && s.a.createElement(z, {
+					}), O === w.Gb && s.a.createElement(z, {
 						className: oe.a.button,
 						subredditId: m
-					}), O === w.Eb && s.a.createElement(se, {
+					}), O === w.Fb && s.a.createElement(se, {
 						className: oe.a.button,
 						subredditId: m
 					}), s.a.createElement("p", {
@@ -804,7 +804,7 @@
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), fe = Object(p.u)(), he = Object(o.c)({
 				currentSubreddit: p.r
 			}), we = Object(a.b)(he);
-			const Ee = Object(c.a)(fe(we((function(e) {
+			const Pe = Object(c.a)(fe(we((function(e) {
 				const {
 					currentSubreddit: t
 				} = e, n = Object(a.d)(), r = () => n(Object(i.g)(m.a.ECON_POWERUPS_PURCHASE));
@@ -825,7 +825,7 @@
 					onCloseModal: r
 				})) : (r(), null)
 			}))));
-			t.default = e => s.a.createElement(Ee, pe({}, e, {
+			t.default = e => s.a.createElement(Pe, pe({}, e, {
 				className: Object(l.a)(e.className, me.a.modal)
 			}))
 		},
@@ -1068,4 +1068,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.082e56a9e79e8f305706.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.ed6c316561f46a545cd4.js.map

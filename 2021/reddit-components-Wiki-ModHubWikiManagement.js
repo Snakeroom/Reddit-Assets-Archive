@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.774e0bf30138afdacc3f.js
-// Retrieved at 10/5/2021, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.b111d61fbb4f2d225f26.js
+// Retrieved at 10/13/2021, 6:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Wiki-ModHubWikiManagement"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -1521,10 +1521,10 @@
 							});
 							break;
 						default:
-							return b === o.bc.WikiBanned ? s.a.createElement(se, {
+							return b === o.cc.WikiBanned ? s.a.createElement(se, {
 								subredditId: e.id,
 								subredditName: e.name
-							}) : b === o.bc.WikiContributors ? s.a.createElement(pe, {
+							}) : b === o.cc.WikiContributors ? s.a.createElement(pe, {
 								subredditName: e.name
 							}) : p && g && k ? s.a.createElement(a.a, {
 								comparisonRevisionId: Object(m.a)(k),
@@ -3240,7 +3240,7 @@
 						onMouseEnter: this.onShowTooltip,
 						onMouseLeave: this.onHideTooltip
 					}, " - ", a.a.createElement(h.d, {
-						seconds: p.valueOf() / l.Pb
+						seconds: p.valueOf() / l.Qb
 					}), a.a.createElement(E, {
 						text: p.toString(),
 						isOpen: r,
@@ -3367,4 +3367,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.774e0bf30138afdacc3f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.b111d61fbb4f2d225f26.js.map

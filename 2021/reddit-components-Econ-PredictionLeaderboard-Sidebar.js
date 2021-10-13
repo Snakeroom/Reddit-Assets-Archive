@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PredictionLeaderboard-Sidebar.6e68b7508dad9591df65.js
-// Retrieved at 10/13/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PredictionLeaderboard-Sidebar.9cf9f0e14a1dcc9de0b4.js
+// Retrieved at 10/13/2021, 6:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./src/reddit/components/Econ/Prediction/UnicornIcon/index.tsx": function(e, t, c) {
@@ -414,7 +414,7 @@
 						targetUserId: p.id
 					})),
 					to: `/user/${L}`,
-					disabled: p.displayName === d.E || p.displayName === d.Ib
+					disabled: p.displayName === d.E || p.displayName === d.Jb
 				}, r.a.createElement("div", {
 					className: b.a.leaderboardIcon
 				}, r.a.createElement(l.a, {
@@ -509,8 +509,8 @@
 				if (!(null === (i = null == c ? void 0 : c.topPredictorsRank) || void 0 === i ? void 0 : i.length) || L) return null;
 				const {
 					currentRank: j,
-					topPredictorsRank: I
-				} = c, g = Boolean(s) ? a.fbt._("Tournament leaderboard", null, {
+					topPredictorsRank: g
+				} = c, I = Boolean(s) ? a.fbt._("Tournament leaderboard", null, {
 					hk: "1WFLrI"
 				}) : a.fbt._("Top Predictors", null, {
 					hk: "3HCYxQ"
@@ -520,10 +520,10 @@
 					contentOnly: !0
 				}, n.a.createElement("h2", {
 					className: P.a.header
-				}, g), n.a.createElement(E.a, {
+				}, I), n.a.createElement(E.a, {
 					className: P.a.list,
 					currentRank: j,
-					topPredictorsRank: I.slice(0, _),
+					topPredictorsRank: g.slice(0, _),
 					tournamentId: s
 				}), n.a.createElement("div", {
 					className: P.a.openModalButtonContainer
@@ -567,4 +567,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PredictionLeaderboard-Sidebar.6e68b7508dad9591df65.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PredictionLeaderboard-Sidebar.9cf9f0e14a1dcc9de0b4.js.map

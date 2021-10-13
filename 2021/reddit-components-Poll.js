@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Poll.9b3805c9c668e4a14a0a.js
-// Retrieved at 10/7/2021, 8:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Poll.e868541e3c6b59ee18fe.js
+// Retrieved at 10/13/2021, 6:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Poll"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, n) {
@@ -31,7 +31,7 @@
 				shortMonths: o,
 				locale: i = r.C
 			} = {}) {
-				const a = new Date(e * r.Pb);
+				const a = new Date(e * r.Qb);
 				return s.a ? new Intl.DateTimeFormat(i, {
 					month: o ? "short" : "long",
 					day: t ? "numeric" : void 0,
@@ -64,9 +64,9 @@
 			}));
 			var r = n("./node_modules/fbt/lib/FbtPublic.js"),
 				s = n("./src/lib/constants/index.ts");
-			const o = [s.mc, s.ob, s.A, s.P, s.jb, s.Pb],
+			const o = [s.nc, s.ob, s.A, s.P, s.jb, s.Qb],
 				i = {
-					[s.Pb]: e => r.fbt._({
+					[s.Qb]: e => r.fbt._({
 						"*": "{number} seconds",
 						_1: "1 second"
 					}, [r.fbt._plural(e, "number")], {
@@ -96,7 +96,7 @@
 					}, [r.fbt._plural(e, "number")], {
 						hk: "28DQqD"
 					}),
-					[s.mc]: e => r.fbt._({
+					[s.nc]: e => r.fbt._({
 						"*": "{number} years",
 						_1: "1 year"
 					}, [r.fbt._plural(e, "number")], {
@@ -104,7 +104,7 @@
 					})
 				},
 				a = {
-					[s.Pb]: e => r.fbt._("{amount}s", [r.fbt._param("amount", String(e))], {
+					[s.Qb]: e => r.fbt._("{amount}s", [r.fbt._param("amount", String(e))], {
 						hk: "F4qog"
 					}),
 					[s.jb]: e => r.fbt._("{amount}m", [r.fbt._param("amount", String(e))], {
@@ -119,13 +119,13 @@
 					[s.ob]: e => r.fbt._("{amount}m", [r.fbt._param("amount", String(e))], {
 						hk: "28feBj"
 					}),
-					[s.mc]: e => r.fbt._("{amount}y", [r.fbt._param("amount", String(e))], {
+					[s.nc]: e => r.fbt._("{amount}y", [r.fbt._param("amount", String(e))], {
 						hk: "10bv8G"
 					}),
 					[s.ob]: e => r.fbt._("{amount}m", [r.fbt._param("amount", String(e))], {
 						hk: "28feBj"
 					}),
-					[s.mc]: e => r.fbt._("{amount}y", [r.fbt._param("amount", String(e))], {
+					[s.nc]: e => r.fbt._("{amount}y", [r.fbt._param("amount", String(e))], {
 						hk: "10bv8G"
 					})
 				};
@@ -134,12 +134,12 @@
 				const c = Date.now(),
 					l = new Date(e).getTime(),
 					d = {
-						[s.mc]: "",
+						[s.nc]: "",
 						[s.ob]: "",
 						[s.A]: "",
 						[s.P]: "",
 						[s.jb]: "",
-						[s.Pb]: ""
+						[s.Qb]: ""
 					};
 				let u = l - c;
 				if (u <= 0) return r.fbt._("a moment", null, {
@@ -227,7 +227,7 @@
 			})), n.d(t, "w", (function() {
 				return x
 			})), n.d(t, "x", (function() {
-				return P
+				return j
 			}));
 			const r = "GOVERNANCE__COMMUNITY_DETAILS_SUCCESS",
 				s = "GOVERNANCE__NEW_SUBREDDIT_SUGGESTED",
@@ -252,7 +252,7 @@
 				N = "GOVERNANCE__WALLETS_FETCH_FAILURE",
 				y = "GOVERNANCE__WALLETS_FETCH_PENDING",
 				x = "GOVERNANCE__WALLETS_FETCH_SUCCESS",
-				P = "GOVERNANCE__WALLET_REGISTRATION_MODAL_OPENED"
+				j = "GOVERNANCE__WALLET_REGISTRATION_MODAL_OPENED"
 		},
 		"./src/reddit/actions/governance/errorToast.ts": function(e, t, n) {
 			"use strict";
@@ -280,7 +280,7 @@
 			})), n.d(t, "c", (function() {
 				return N
 			})), n.d(t, "f", (function() {
-				return I
+				return P
 			})), n.d(t, "g", (function() {
 				return R
 			})), n.d(t, "d", (function() {
@@ -313,9 +313,9 @@
 				N = (Object(s.a)(h.f), Object(s.a)(h.g), Object(s.a)(h.h)),
 				y = Object(s.a)(h.i),
 				x = Object(s.a)(h.j),
-				P = Object(s.a)(h.k),
-				j = Object(s.a)(h.q),
-				I = Object(s.a)(h.r),
+				j = Object(s.a)(h.k),
+				I = Object(s.a)(h.q),
+				P = Object(s.a)(h.r),
 				T = Object(s.a)(h.s),
 				S = Object(s.a)(h.t),
 				L = Object(s.a)(h.u),
@@ -353,7 +353,7 @@
 								optionId: t,
 								options: e
 							}))
-						} else n(P(i.body));
+						} else n(j(i.body));
 						const s = r();
 						if ((c = s.polls.models[e]) && Object(u.d)(c)) {
 							const {
@@ -395,7 +395,7 @@
 						text: r.fbt._("Success! You just transferred {amount} {tokenName} to {recipient}", [r.fbt._param("amount", Object(o.a)(e.amount)), r.fbt._param("tokenName", (null === (d = Object(E.b)(s(), e.subredditId)) || void 0 === d ? void 0 : d.name) || ""), r.fbt._param("recipient", e.recipient)], {
 							hk: "3klrhq"
 						})
-					})), t && n(Object(i.f)())) : (n(j({
+					})), t && n(Object(i.f)())) : (n(I({
 						error: m.error
 					})), Object(g.a)(n, m.error))
 				}, V = e => async (t, n, {
@@ -509,7 +509,7 @@
 					const n = Object(i.a)(),
 						r = null != t ? t : n;
 					return s.a.createElement(s.a.Fragment, null, function(e, t = d.C) {
-						const n = e * d.Pb;
+						const n = e * d.Qb;
 						return new Date(n).toLocaleString(t, {
 							weekday: "short",
 							month: "short",
@@ -534,7 +534,7 @@
 
 			function f(e, t, n = !1, r = d.C) {
 				const s = Object(p.e)(e, t),
-					o = new Date(e * d.Pb);
+					o = new Date(e * d.Qb);
 				let i;
 				if (s === p.a.Live || n) return m.fbt._("Now", null, {
 					hk: "Prpcg"
@@ -622,7 +622,7 @@
 				return a.a.createElement("span", {
 					className: e.className
 				}, t ? c._("Voting closed {timeAgo}", [c._param("timeAgo", a.a.createElement(s.d, {
-					seconds: e.poll.endsAt / r.Pb
+					seconds: e.poll.endsAt / r.Qb
 				}))], {
 					hk: "3OERID"
 				}) : Object(o.a)(new Date(e.poll.endsAt)))
@@ -748,16 +748,16 @@
 				N = n("./src/reddit/models/Poll/index.ts"),
 				y = n("./src/reddit/selectors/poll/index.ts"),
 				x = n("./src/reddit/selectors/postCreations.ts"),
-				P = n("./src/reddit/selectors/posts.ts"),
-				j = n("./src/reddit/components/Poll/NoPollError/index.m.less"),
-				I = n.n(j);
+				j = n("./src/reddit/selectors/posts.ts"),
+				I = n("./src/reddit/components/Poll/NoPollError/index.m.less"),
+				P = n.n(I);
 			const {
 				fbt: T
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 
 			function S(e) {
 				return i.a.createElement("div", {
-					className: Object(l.a)(I.a.container, e.className)
+					className: Object(l.a)(P.a.container, e.className)
 				}, T._("Error: Could not load poll", null, {
 					hk: "WWRIU"
 				}))
@@ -808,10 +808,10 @@
 				fbt: Z
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 
-			function K(e) {
+			function Q(e) {
 				return "INPUT" === e.tagName
 			}
-			class z extends i.a.Component {
+			class K extends i.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						optionIsSelected: !1
@@ -826,7 +826,7 @@
 							r = function(e) {
 								for (const t of e)
 									if (t.checked) return parseInt(t.value)
-							}(Array.from(n.elements).filter(K));
+							}(Array.from(n.elements).filter(Q));
 						U()(r) || (this.props.onVoteSelection(t.options[r]), this.props.sendEvent(Object(R.g)(t.id, t.postId, r)))
 					}
 				}
@@ -868,10 +868,10 @@
 					})))
 				}
 			}
-			const Y = Object(c.c)({
+			const z = Object(c.c)({
 				userIsLoggedIn: e => !!e.user.account
 			});
-			var Q = Object(a.b)(Y)(Object(A.c)(z)),
+			var Y = Object(a.b)(z)(Object(A.c)(K)),
 				J = n("./src/reddit/components/Poll/PollBody/index.m.less"),
 				X = n.n(J);
 			class ee extends i.a.Component {
@@ -916,7 +916,7 @@
 						poll: r,
 						result: s,
 						subredditId: o
-					}) : i.a.createElement(Q, {
+					}) : i.a.createElement(Y, {
 						poll: r,
 						onVoteSelection: n,
 						voteInProgress: c,
@@ -1171,10 +1171,10 @@
 				poll: y.e,
 				pollId: y.a,
 				pollReward: y.d,
-				post: P.H,
+				post: j.H,
 				resultsByVoters: y.c,
 				resultsByVotingPower: y.b,
-				subredditOrProfile: P.U
+				subredditOrProfile: j.U
 			});
 			t.default = Object(a.b)(xe)(Ne)
 		},
@@ -1711,4 +1711,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Poll.9b3805c9c668e4a14a0a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Poll.e868541e3c6b59ee18fe.js.map

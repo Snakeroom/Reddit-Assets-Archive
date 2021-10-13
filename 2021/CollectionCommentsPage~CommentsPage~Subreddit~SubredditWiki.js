@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.421aed5db3a446e51f7f.js
-// Retrieved at 10/13/2021, 5:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.c738f9d18a2ff0b4f000.js
+// Retrieved at 10/13/2021, 6:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"], {
 		"./src/lib/linkMatchers/index.ts": function(e, t, r) {
@@ -122,9 +122,9 @@
 			})), r.d(t, "setSubredditUserAchievementFlair", (function() {
 				return P
 			})), r.d(t, "setSubredditUserSupporterFlair", (function() {
-				return F
-			})), r.d(t, "setSubredditUserPowerupsFlairsVisibility", (function() {
 				return L
+			})), r.d(t, "setSubredditUserPowerupsFlairsVisibility", (function() {
+				return T
 			}));
 			r("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = r("./node_modules/fbt/lib/FbtPublic.js"),
@@ -242,13 +242,13 @@
 							subredditId: e,
 							userId: a
 						});
-					r(T({
+					r(F({
 						subredditId: e,
 						userId: a,
 						achievementFlairType: t,
 						supporterFlairType: o
 					}))
-				}, F = (e, t) => async (r, n) => {
+				}, L = (e, t) => async (r, n) => {
 					const s = n(),
 						i = Object(f.k)(s);
 					if (!i) return;
@@ -257,13 +257,13 @@
 							subredditId: e,
 							userId: a
 						});
-					r(T({
+					r(F({
 						subredditId: e,
 						userId: a,
 						achievementFlairType: o,
 						supporterFlairType: t
 					}))
-				}, T = e => async (t, r, {
+				}, F = e => async (t, r, {
 					gqlContext: s
 				}) => {
 					const a = r(),
@@ -290,7 +290,7 @@
 							})
 						}))
 					}
-				}, L = (e, t) => async (r, s, {
+				}, T = (e, t) => async (r, s, {
 					gqlContext: a
 				}) => {
 					const o = s(),
@@ -456,7 +456,7 @@
 						pollId: t,
 						prediction: a.poll
 					})), a.poll
-				}, F = Object(l.a)(y.c), T = Object(l.a)(y.d), L = Object(l.a)(y.g), M = e => async (t, r, {
+				}, L = Object(l.a)(y.c), F = Object(l.a)(y.d), T = Object(l.a)(y.g), M = e => async (t, r, {
 					gqlContext: n
 				}) => {
 					const s = r(),
@@ -468,7 +468,7 @@
 					if (a) return Object(O.f)(s, {
 						subredditId: i
 					});
-					t(F({
+					t(L({
 						subredditId: i
 					}));
 					const d = await Object(u.k)(n(), {
@@ -486,10 +486,10 @@
 						})
 					});
 					const l = d.map(e => Object(p.a)(e));
-					return t(T({
+					return t(F({
 						subredditId: i,
 						tournaments: l
-					})), t(L({
+					})), t(T({
 						posts: c,
 						meta: s.meta
 					})), l
@@ -517,7 +517,7 @@
 					const {
 						tournament: c
 					} = d;
-					return t(T({
+					return t(F({
 						subredditId: e,
 						tournaments: [c]
 					})), c
@@ -1702,10 +1702,10 @@
 					rel: "noopener"
 				}, e.text))),
 				P = r("./src/reddit/selectors/subreddit.ts"),
-				F = r("./src/reddit/actions/subreddit.ts"),
-				T = r("./src/reddit/hooks/usePageLayer.ts");
+				L = r("./src/reddit/actions/subreddit.ts"),
+				F = r("./src/reddit/hooks/usePageLayer.ts");
 			const {
-				fbt: L
+				fbt: T
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), M = Object(a.c)({
 				isActive: (e, {
 					subredditId: t
@@ -1717,7 +1717,7 @@
 				})
 			});
 			var R = Object(i.b)(M, (e, t) => ({
-					onActivate: () => e(Object(F.p)({
+					onActivate: () => e(Object(L.p)({
 						subredditId: t.subredditId,
 						forceState: !0
 					}))
@@ -1726,7 +1726,7 @@
 					isActive: t,
 					onActivate: r
 				}) => {
-					const n = Object(T.a)();
+					const n = Object(F.a)();
 					return e ? s.a.createElement(y, {
 						className: x.a.metaNavLink,
 						to: e.url,
@@ -1734,7 +1734,7 @@
 						onClick: e => {
 							Object(d.G)(n) && !Object(d.N)(n) && e.preventDefault(), r()
 						}
-					}, L._("Polls", null, {
+					}, T._("Polls", null, {
 						hk: "1vWsZx"
 					})) : null
 				}),
@@ -1751,7 +1751,7 @@
 				subredditId: e
 			}) {
 				const t = Object(i.d)(),
-					r = Object(T.a)(),
+					r = Object(F.a)(),
 					a = Object(H.a)(),
 					o = Object(B.N)(r),
 					[d, c] = Object(n.useState)(!1),
@@ -1775,7 +1775,7 @@
 					className: x.a.predictionsFilter,
 					isActive: o,
 					onClick: () => {
-						t(Object(F.p)({
+						t(Object(L.p)({
 							subredditId: e,
 							forceState: !1
 						})), a(Object(D.i)())
@@ -1794,14 +1794,14 @@
 				fbt: V
 			} = r("./node_modules/fbt/lib/FbtPublic.js");
 			const q = Object(d.u)(),
-				J = [z.Kb.SUBREDDIT, z.Kb.COMMENTS, z.Kb.COLLECTION_COMMENTS],
+				J = [z.Lb.SUBREDDIT, z.Lb.COMMENTS, z.Lb.COLLECTION_COMMENTS],
 				Q = Object(a.c)({
 					isMetaFilterEnabled: (e, t) => !!e.subreddits.appliedFilters.meta[t.subredditId],
 					isPostsRoute: (e, t) => !!t.pageLayer && !!t.pageLayer.meta && J.indexOf(t.pageLayer.meta.name) > -1,
 					isPredictionsPage: (e, t) => !!t.pageLayer && Object(d.N)(t.pageLayer)
 				});
 			var K = q(Object(i.b)(Q, (e, t) => ({
-					onTurnOffMetaFilter: () => e(Object(F.p)({
+					onTurnOffMetaFilter: () => e(Object(L.p)({
 						subredditId: t.subredditId,
 						forceState: !1
 					}))
@@ -1870,7 +1870,7 @@
 					homeUrl: t,
 					isTopBannerVariant: r,
 					pageLayer: n
-				} = e, i = !!n && !!n.meta && n.meta.name === z.Kb.SUBREDDIT_WIKI, a = `wiki/${ie.i}`, o = t.endsWith("/") ? t + a : `${t}/${a}`;
+				} = e, i = !!n && !!n.meta && n.meta.name === z.Lb.SUBREDDIT_WIKI, a = `wiki/${ie.i}`, o = t.endsWith("/") ? t + a : `${t}/${a}`;
 				return s.a.createElement(O, {
 					isActive: i,
 					isTopBannerVariant: r,
@@ -2394,19 +2394,19 @@
 				N = r("./node_modules/fbt/lib/FbtPublic.js"),
 				S = r("./src/reddit/components/HumanDate/index.tsx"),
 				P = r("./src/reddit/controls/TextButton/index.tsx"),
-				F = r("./src/reddit/components/Widgets/Calendar/index.m.less"),
-				T = r.n(F);
-			const L = 100,
+				L = r("./src/reddit/components/Widgets/Calendar/index.m.less"),
+				F = r.n(L);
+			const T = 100,
 				M = {
 					isExpanded: !1
 				},
-				R = m.a.wrapped(o.a, "RawHTMLDisplay", T.a),
-				A = m.a.div("EventContainer", T.a),
-				B = m.a.div("EventTitle", T.a),
-				D = m.a.div("EventDate", T.a),
-				H = m.a.div("EventLocation", T.a),
-				W = m.a.div("EventDescription", T.a),
-				U = m.a.wrapped(P.a, "ToggleDescription", T.a);
+				R = m.a.wrapped(o.a, "RawHTMLDisplay", F.a),
+				A = m.a.div("EventContainer", F.a),
+				B = m.a.div("EventTitle", F.a),
+				D = m.a.div("EventDate", F.a),
+				H = m.a.div("EventLocation", F.a),
+				W = m.a.div("EventDescription", F.a),
+				U = m.a.wrapped(P.a, "ToggleDescription", F.a);
 			class G extends s.a.Component {
 				constructor(e) {
 					super(e), this.toggleDescriptionView = () => {
@@ -2420,7 +2420,7 @@
 						props: e,
 						state: t
 					} = this;
-					return e.text.length > L ? s.a.createElement(W, null, t.isExpanded ? e.text : e.text.slice(0, L), s.a.createElement(U, {
+					return e.text.length > T ? s.a.createElement(W, null, t.isExpanded ? e.text : e.text.slice(0, T), s.a.createElement(U, {
 						onClick: this.toggleDescriptionView
 					}, t.isExpanded ? N.fbt._("read less", null, {
 						hk: "2KdNS6"
@@ -2649,17 +2649,17 @@
 				Ne = r("./src/reddit/components/Widgets/TextArea/index.m.less"),
 				Se = r.n(Ne);
 			const Pe = m.a.div("WidgetContent", Se.a),
-				Fe = m.a.wrapped(o.a, "RawHTMLDisplay", Se.a);
-			var Te = e => s.a.createElement(d.a, {
+				Le = m.a.wrapped(o.a, "RawHTMLDisplay", Se.a);
+			var Fe = e => s.a.createElement(d.a, {
 					styles: e.widget.styles,
 					title: e.widget.shortName,
 					truncateThreshold: e.truncateThreshold,
 					widgetKind: e.widget.kind
-				}, s.a.createElement(Pe, null, s.a.createElement(Fe, {
+				}, s.a.createElement(Pe, null, s.a.createElement(Le, {
 					html: e.widget.textHtml || ""
 				}))),
-				Le = r("./src/reddit/components/Widgets/Base/index.tsx");
-			var Me = e => s.a.createElement(Le.b, null, "This widget hasn't been implemented yet!");
+				Te = r("./src/reddit/components/Widgets/Base/index.tsx");
+			var Me = e => s.a.createElement(Te.b, null, "This widget hasn't been implemented yet!");
 
 			function Re(e) {
 				const t = function(e) {
@@ -2667,7 +2667,7 @@
 						case "moderators":
 							return Ee;
 						case "textarea":
-							return Te;
+							return Fe;
 						case "button":
 							return C;
 						case "subreddit-rules":
@@ -2722,9 +2722,9 @@
 			})), r.d(t, "c", (function() {
 				return P
 			})), r.d(t, "e", (function() {
-				return F
+				return L
 			})), r.d(t, "l", (function() {
-				return T
+				return F
 			}));
 			var n = r("./src/lib/makeGqlRequest/index.ts"),
 				s = r("./src/lib/makeRequest/index.ts"),
@@ -2851,7 +2851,7 @@
 					});
 					if (!Object(s.c)(o) || !(null === (r = o.body.data.cancelPrediction) || void 0 === r ? void 0 : r.ok) || !(null === (i = o.body.data.cancelPrediction) || void 0 === i ? void 0 : i.poll)) throw new Error("Unable to cancel prediction");
 					return o.body.data.cancelPrediction.poll
-				}, F = async (e, t) => {
+				}, L = async (e, t) => {
 					var r, i;
 					const a = await Object(n.a)(e, {
 						...d,
@@ -2861,7 +2861,7 @@
 					});
 					if (!Object(s.c)(a) || !(null === (r = a.body.data.changePredictionVote) || void 0 === r ? void 0 : r.ok) || !(null === (i = a.body.data.changePredictionVote) || void 0 === i ? void 0 : i.poll)) throw new Error("Unable to change prediction.");
 					return a.body.data.changePredictionVote.poll
-				}, T = async (e, t) => {
+				}, F = async (e, t) => {
 					const r = await Object(n.a)(e, {
 						...m,
 						variables: t
@@ -3556,4 +3556,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.421aed5db3a446e51f7f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.c738f9d18a2ff0b4f000.js.map

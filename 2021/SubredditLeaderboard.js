@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.58b8f187ff9b9b2cabbc.js
-// Retrieved at 10/13/2021, 5:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.c86e1c9f7ce7cb985053.js
+// Retrieved at 10/13/2021, 6:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, n) {
@@ -2204,8 +2204,8 @@
 				R = n("./src/reddit/selectors/subreddit.ts"),
 				W = n("./src/reddit/selectors/subredditLeaderboard.ts"),
 				A = n("./src/reddit/selectors/user.ts");
-			const z = 25,
-				G = .5,
+			const G = 25,
+				z = .5,
 				H = Object(d.c)({
 					hasPreviousPage: (e, {
 						categoryId: t
@@ -2259,7 +2259,7 @@
 						after: a,
 						categoryId: e === b.c ? b.f : e,
 						filter: D.a,
-						first: z,
+						first: G,
 						isOnlyModIncluded: i
 					}
 				}
@@ -2292,7 +2292,7 @@
 						className: _.a.subredditRankingsList
 					}, r ? this.renderSubredditRankItems(c) : this.renderSubredditRankItemPlaceholders(), o && i.a.createElement(C.a, {
 						onChange: this.fetchMoreSubreddits,
-						threshold: G,
+						threshold: z,
 						rootMargin: "0px 0px 0px 0px"
 					}, i.a.createElement("li", null, i.a.createElement(B.a, {
 						large: !0
@@ -2483,7 +2483,7 @@
 				Ee = (e, {
 					match: t
 				}) => Object(g.b)(t.params.categoryName || ""),
-				_e = Object(m.He)(b.i),
+				_e = Object(m.Ge)(b.i),
 				Se = Object(d.c)({
 					categories: e => Object(ye.c)(e, {
 						categoriesOrder: _e
@@ -2612,4 +2612,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.58b8f187ff9b9b2cabbc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.c86e1c9f7ce7cb985053.js.map

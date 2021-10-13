@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-Content-ModQueue.54905a9cfeb08da778f8.js
-// Retrieved at 10/5/2021, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-Content-ModQueue.e3cbf80ab02c99348b59.js
+// Retrieved at 10/13/2021, 6:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-Content-ModQueue"], {
 		"./src/reddit/components/ModHub/Content/ModQueue.tsx": function(e, t, n) {
@@ -12,15 +12,15 @@
 				o = n("./src/lib/classNames/index.ts"),
 				i = n("./src/lib/constants/index.ts"),
 				u = n("./src/reddit/constants/postLayout.ts"),
-				l = n("./src/reddit/components/ModHub/InfoLink/index.tsx"),
-				c = n("./src/reddit/components/ModHub/StyledComponents/index.tsx"),
+				c = n("./src/reddit/components/ModHub/InfoLink/index.tsx"),
+				l = n("./src/reddit/components/ModHub/StyledComponents/index.tsx"),
 				m = n("./src/reddit/components/ModQueueList/index.tsx"),
 				p = n("./src/reddit/components/ModQueueList/LayoutNavigation.tsx"),
 				b = n("./src/reddit/components/ModHub/Content/index.m.less"),
 				_ = n.n(b);
-			t.default = e => r.a.createElement(c.a, {
+			t.default = e => r.a.createElement(l.a, {
 				className: Object(o.a)(_.a.container, e.layout === u.g.Large ? _.a.isLargePostLayout : void 0)
-			}, r.a.createElement(c.b, null, (e => {
+			}, r.a.createElement(l.b, null, (e => {
 				switch (e) {
 					case "modqueue":
 						return d.fbt._("Mod Queue", null, {
@@ -47,13 +47,13 @@
 							hk: "XBRcQ"
 						})
 				}
-			})(e.pageName), r.a.createElement(l.a, {
+			})(e.pageName), r.a.createElement(c.a, {
 				linkUrl: `${s.a.redditModHelpUrl}/hc/en-us/articles/360010090132`
 			})), r.a.createElement(p.a, {
 				hideSubredditFilter: !0,
 				postTypeFilter: e.postTypeFilter,
 				sendEventWithName: e.sendEventWithName,
-				showTypeFilter: e.pageName !== i.bc.Unmoderated,
+				showTypeFilter: e.pageName !== i.cc.Unmoderated,
 				subredditName: e.subredditName
 			}), r.a.createElement(m.a, {
 				after: e.after,
@@ -67,4 +67,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-Content-ModQueue.54905a9cfeb08da778f8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-Content-ModQueue.e3cbf80ab02c99348b59.js.map

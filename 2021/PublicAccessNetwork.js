@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.d2e5ff3d8d7e26b49568.js
-// Retrieved at 10/13/2021, 5:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.417b646dc99f5087a090.js
+// Retrieved at 10/13/2021, 6:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -284,16 +284,16 @@
 			const p = Object(a.a)(e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
-					experimentName: m.md
+					experimentName: m.ld
 				});
-				return Object(m.Je)(t) ? void 0 : t
+				return Object(m.Ie)(t) ? void 0 : t
 			}, e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
-					experimentName: m.nd
+					experimentName: m.md
 				});
-				return Object(m.Je)(t) ? void 0 : t
-			}, (e, t) => e === m.pd.Enabled && t === m.pd.Enabled);
+				return Object(m.Ie)(t) ? void 0 : t
+			}, (e, t) => e === m.od.Enabled && t === m.od.Enabled);
 			var h = s("./src/config.ts");
 			var b = s("./src/reddit/selectors/user.ts");
 			const v = e => {
@@ -745,7 +745,7 @@
 						commentId: e
 					});
 					if (!d) return;
-					const l = s === n.Zb.Snoozed,
+					const l = s === n.ac.Snoozed,
 						m = {
 							itemId: e,
 							reportText: t,
@@ -1442,9 +1442,9 @@
 							a = Object(ue.I)(s(), {
 								identifier: O.belongsTo
 							});
-						if (a && (e => z.ae.Redirect === Object(Y.b)(e, {
+						if (a && (e => z.Zd.Redirect === Object(Y.b)(e, {
 								experimentEligibilitySelector: ce,
-								experimentName: z.Sd
+								experimentName: z.Rd
 							}))(s())) return void t(Object(o.c)(a.url));
 						if ((O.media && O.media.type) === K.o.LIVEVIDEO) {
 							const e = `/rpan${O.belongsTo.type===V.a.SUBREDDIT?a.url:"/"}${Object(y.t)(O.id)}`;
@@ -1484,7 +1484,7 @@
 										reddaid: s().user.reddaid,
 										sourcePostId: l
 									},
-									range: x.dc.WEEK.toUpperCase(),
+									range: x.ec.WEEK.toUpperCase(),
 									sort: x.O.TOP,
 									subredditName: a.name
 								},
@@ -7922,7 +7922,7 @@
 						postId: t
 					}) || Object(a.H)(e))(e, t),
 					experimentName: o.L
-				}) === o.Bc
+				}) === o.Ac
 			}
 		},
 		"./src/reddit/selectors/experiments/reportingRevampDesktop.ts": function(e, t, s) {
@@ -7952,7 +7952,7 @@
 				a = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const i = e => {
 					const t = Object(a.a)(e);
-					return Boolean(t) && !Object(n.Je)(t)
+					return Boolean(t) && !Object(n.Ie)(t)
 				},
 				d = Object(o.a)(i, r.d, (e, t) => e && !t)
 		},
@@ -7973,4 +7973,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.d2e5ff3d8d7e26b49568.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.417b646dc99f5087a090.js.map

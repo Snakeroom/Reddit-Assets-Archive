@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.5a4524b85977c495e3c9.js
-// Retrieved at 10/7/2021, 8:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.7c6dfeba17df26013099.js
+// Retrieved at 10/13/2021, 6:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PremiumPurchaseModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, r) {
@@ -324,7 +324,7 @@
 					apiContext: n
 				}) => {
 					const s = Object(f.a)(r()),
-						c = (null == s ? void 0 : s.pennies) || o.wb,
+						c = (null == s ? void 0 : s.pennies) || o.xb,
 						l = Object(b.c)(b.a.GoldPayment);
 					t(Object(d.stripeTokenPending)());
 					const u = await t(Object(d.validateAndCreateStripeToken)(e));
@@ -463,8 +463,8 @@
 				E = r("./src/reddit/actions/modal.ts"),
 				v = r("./src/reddit/components/Gold/PaymentCompletePageFooter/index.tsx"),
 				k = r("./src/reddit/components/ModalStyledComponents/index.tsx"),
-				w = r("./src/reddit/constants/modals.ts"),
-				N = r("./src/reddit/helpers/createEmojiText/index.tsx"),
+				N = r("./src/reddit/constants/modals.ts"),
+				w = r("./src/reddit/helpers/createEmojiText/index.tsx"),
 				M = r("./src/reddit/hooks/useTracking.ts"),
 				I = r("./src/reddit/icons/fonts/Premium/index.tsx"),
 				T = r("./src/reddit/selectors/activeModal.ts"),
@@ -511,7 +511,7 @@
 						hk: "1RxPah"
 					}))), a.a.createElement("div", {
 						className: R.a.paymentCompleteTitleItemLast
-					}, Object(N.a)(C.fbt._("Find more about {anchor text} on Reddit.", [C.fbt._param("anchor text", ":loungeLink:")], {
+					}, Object(w.a)(C.fbt._("Find more about {anchor text} on Reddit.", [C.fbt._param("anchor text", ":loungeLink:")], {
 						hk: "2RGr1F"
 					}), {
 						":loungeLink:": a.a.createElement("a", {
@@ -526,7 +526,7 @@
 						"data-redditstyle": !0
 					}))), a.a.createElement(v.a, {
 						onCloseClick: () => {
-							c ? r(Object(E.h)(w.a.ECON_POWERUPS_PURCHASE)) : e()
+							c ? r(Object(E.h)(N.a.ECON_POWERUPS_PURCHASE)) : e()
 						},
 						buttonText: c ? C.fbt._("Use Your Premium Powerup", null, {
 							hk: "JJNaN"
@@ -674,8 +674,8 @@
 					}) : C.fbt._("month", null, {
 						hk: "1l20Gw"
 					}),
-					o = e.selectedPayment === l.Fb,
-					i = e.selectedPayment === l.Eb,
+					o = e.selectedPayment === l.Gb,
+					i = e.selectedPayment === l.Fb,
 					d = o ? K : Q;
 				return a.a.createElement(U.StripeProvider, {
 					stripe: t
@@ -786,9 +786,9 @@
 					premiumProductOffer: C,
 					premiumPrice: x
 				}) => {
-					let E = l.wb,
+					let E = l.xb,
 						v = !1;
-					C && x ? (E = x, v = j === _.b.Year) : r && (E = r ? r.pennies : l.wb, v = !!r && r.frequency === u.c.Yearly);
+					C && x ? (E = x, v = j === _.b.Year) : r && (E = r ? r.pennies : l.xb, v = !!r && r.frequency === u.c.Yearly);
 					const k = Object(n.useCallback)(e => {
 						if (27 === e.keyCode) return p()
 					}, [p]);
@@ -1116,4 +1116,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.5a4524b85977c495e3c9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.7c6dfeba17df26013099.js.map

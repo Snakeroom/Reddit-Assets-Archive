@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileFollowersAction.4ec1da38f0f273ba2808.js
-// Retrieved at 10/12/2021, 4:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileFollowersAction.df8d6b2f70d73ccd4224.js
+// Retrieved at 10/13/2021, 6:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileFollowersAction"], {
 		"./src/lib/makeOverviewConversationsItemKey/index.ts": function(e, t, s) {
@@ -33,7 +33,7 @@
 		"./src/reddit/actions/pages/followers/index.ts": function(e, t, s) {
 			"use strict";
 			s.r(t), s.d(t, "profileFollowersPageLoaded", (function() {
-				return y
+				return f
 			})), s.d(t, "moreProfileFollowersLoaded", (function() {
 				return v
 			})), s.d(t, "profileFollowersSearchLoaded", (function() {
@@ -95,13 +95,13 @@
 				p = s("./src/reddit/actions/pages/followers/constants.ts"),
 				m = s("./src/lib/initializeClient/installReducer.ts"),
 				b = s("./src/reddit/reducers/pages/followers/index.ts"),
-				f = s("./src/reddit/selectors/followers.ts");
+				y = s("./src/reddit/selectors/followers.ts");
 			Object(m.a)({
 				pages: {
 					followers: b.a
 				}
 			});
-			const y = Object(r.a)(p.b),
+			const f = Object(r.a)(p.b),
 				v = Object(r.a)(p.a),
 				h = Object(r.a)(p.e),
 				g = Object(r.a)(p.d),
@@ -117,7 +117,7 @@
 				}) => {
 					var o;
 					const i = [];
-					(null === (o = Object(f.a)(t())) || void 0 === o ? void 0 : o.length) || i.push(e(j(O))), await Promise.all(i)
+					(null === (o = Object(y.a)(t())) || void 0 === o ? void 0 : o.length) || i.push(e(j(O))), await Promise.all(i)
 				}, j = e => async (t, s, {
 					gqlContext: o
 				}) => {
@@ -139,7 +139,7 @@
 							data: s
 						} = a.body, o = c(s);
 						if (!o) return t(Object(n.d)()), void t(w());
-						(null == e ? void 0 : e.searchQuery) ? t(h(o)): (null == e ? void 0 : e.after) ? t(v(o)) : (null == e ? void 0 : e.after) || (null == e ? void 0 : e.searchQuery) || t(y(o))
+						(null == e ? void 0 : e.searchQuery) ? t(h(o)): (null == e ? void 0 : e.after) ? t(v(o)) : (null == e ? void 0 : e.after) || (null == e ? void 0 : e.searchQuery) || t(f(o))
 					}
 					a.ok || (t(Object(n.d)()), t(w()))
 				}, k = Object(r.a)(p.f), I = (e, t) => async (s, r, {
@@ -154,7 +154,7 @@
 					}));
 					const m = p.name;
 					if ((await Object(a.c)(d(), {
-							subredditNames: [`${i.fc}${p.name}`],
+							subredditNames: [`${i.gc}${p.name}`],
 							subscribe: t
 						})).ok) {
 						s(k({
@@ -215,8 +215,8 @@
 				p = s("./src/reddit/contexts/PageLayer/index.tsx"),
 				m = s("./src/reddit/selectors/listings.ts"),
 				b = s("./src/reddit/selectors/profile.ts"),
-				f = s("./src/reddit/selectors/profileOverviewChronoItems.ts"),
-				y = s("./src/reddit/selectors/user.ts"),
+				y = s("./src/reddit/selectors/profileOverviewChronoItems.ts"),
+				f = s("./src/reddit/selectors/user.ts"),
 				v = s("./src/lib/makeActionCreator/index.ts"),
 				h = s("./src/reddit/actions/changeUsername.ts"),
 				g = s("./src/reddit/actions/contentGate.ts"),
@@ -600,20 +600,20 @@
 							p = u[r].prev,
 							m = p && p.id || "",
 							b = o[l].head,
-							f = b && b.id || "",
-							y = {
-								id: f,
+							y = b && b.id || "",
+							f = {
+								id: y,
 								type: ae.a.Comment
 							},
 							v = {
 								...u,
 								[m]: {
 									...u[m],
-									next: y
+									next: f
 								},
 								...a,
-								[f]: {
-									...a[f],
+								[y]: {
+									...a[y],
 									prev: p
 								}
 							};
@@ -627,7 +627,7 @@
 				}
 			};
 			const be = {};
-			var fe = (e = be, t) => {
+			var ye = (e = be, t) => {
 				switch (t.type) {
 					case T.e:
 					case $.e: {
@@ -648,8 +648,8 @@
 						return e
 				}
 			};
-			const ye = {};
-			var ve = (e = ye, t) => {
+			const fe = {};
+			var ve = (e = fe, t) => {
 					switch (t.type) {
 						case T.e:
 						case $.e: {
@@ -673,7 +673,7 @@
 					api: Y,
 					extraComments: re,
 					keyToCommentThreadLinkSets: me,
-					keyToHeadCommentId: fe,
+					keyToHeadCommentId: ye,
 					keyToPostId: ve
 				}),
 				ge = Object(A.c)({
@@ -707,7 +707,7 @@
 						u = c.body,
 						{
 							pinned: p,
-							postIds: f
+							postIds: y
 						} = u;
 					if (c.ok) {
 						o(Oe({
@@ -715,7 +715,7 @@
 							meta: n.meta,
 							profileName: t,
 							...u,
-							postIds: f
+							postIds: y
 						}));
 						const s = Object(b.m)(i(), t);
 						o(Object(C.h)({
@@ -733,13 +733,13 @@
 					})), o(Object(j.m)(c.status))
 				}, Se = (e, t, s, o) => async (o, i, r) => {
 					const n = i(),
-						d = !!Object(f.f)(n, {
+						d = !!Object(y.f)(n, {
 							listingKey: e
 						}).length,
-						a = !!Object(f.a)(n, {
+						a = !!Object(y.a)(n, {
 							listingKey: e
 						});
-					if (!!Object(f.b)(n, {
+					if (!!Object(y.b)(n, {
 							listingKey: e
 						}) || d && !a) return;
 					o(je({
@@ -775,7 +775,7 @@
 						queryParams: l,
 						params: m
 					} = e, {
-						sort: f,
+						sort: y,
 						t: v
 					} = Object(n.a)(s(), l), {
 						profileName: g
@@ -785,16 +785,16 @@
 						R = g.toLowerCase(),
 						T = {
 							...i()(e.queryParams, u.l),
-							sort: f,
+							sort: y,
 							layout: _,
 							t: v
 						},
 						x = [t(k.d(R))];
 					if (_ === c.e[c.g.Compact]) {
-						const o = Object(S.a)(R, a.sb, f, e.queryParams);
+						const o = Object(S.a)(R, a.sb, y, e.queryParams);
 						s().pages.profileOverview.chrono.ids[o] ? C = !0 : x.push(t(Se(o, R, T, !0)))
 					} else {
-						const o = Object(S.a)(R, a.tb, f, e.queryParams);
+						const o = Object(S.a)(R, a.tb, y, e.queryParams);
 						s().listings.postOrder.ids[o] && !s().listings.postOrder.api.error[o] ? C = !0 : x.push(t(_e(o, R, T, !0)))
 					}
 					if (x.push(t(Object(r.b)())), await Promise.all(x), C) return;
@@ -802,12 +802,12 @@
 					if (!A.platform.currentPage) return;
 					if (200 !== A.platform.currentPage.status) return;
 					const F = Object(b.m)(s(), R),
-						P = Object(y.nb)(A, {
+						P = Object(f.nb)(A, {
 							userName: g
 						}).id;
 					t(j.l({
 						title: Te(s(), g)
-					})), Object(y.M)(A) && Object(y.Q)(A, g) && t(Object(h.f)());
+					})), Object(f.M)(A) && Object(f.Q)(A, g) && t(Object(h.f)());
 					const L = [t(Object(d.q)()), t(I.b(R, F)), t(k.b(R)), t(w.o(g)), t(k.g(g)), t(O.k(g, P))];
 					await Promise.all(L)
 				}, Te = (e, t) => Object(b.q)(e, {
@@ -1008,9 +1008,9 @@
 			})), s.d(t, "h", (function() {
 				return b
 			})), s.d(t, "g", (function() {
-				return f
-			})), s.d(t, "a", (function() {
 				return y
+			})), s.d(t, "a", (function() {
+				return f
 			})), s.d(t, "b", (function() {
 				return v
 			})), s.d(t, "d", (function() {
@@ -1760,7 +1760,7 @@
 						i = {};
 					return o.forEach(e => i[e] = s[e]), i
 				}),
-				f = Object(o.a)((e, {
+				y = Object(o.a)((e, {
 					listingKey: t
 				}) => {
 					const s = e.features.comments.models,
@@ -1770,7 +1770,7 @@
 						i = {};
 					return o.forEach(e => !!Object(a.a)(e) && (i[e] = s[e])), i
 				}),
-				y = (e, {
+				f = (e, {
 					listingKey: t
 				}) => e.pages.profileOverview.chrono.api.error[t],
 				v = (e, {
@@ -1788,4 +1788,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersAction.4ec1da38f0f273ba2808.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersAction.df8d6b2f70d73ccd4224.js.map

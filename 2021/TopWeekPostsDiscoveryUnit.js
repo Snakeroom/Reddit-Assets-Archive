@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.70005cf6667ed1ef20a8.js
-// Retrieved at 10/13/2021, 5:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.19fea025053272af1723.js
+// Retrieved at 10/13/2021, 6:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["TopWeekPostsDiscoveryUnit"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -96,9 +96,9 @@
 			}));
 			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
 				a = s("./src/lib/constants/index.ts");
-			const r = [a.mc, a.ob, a.A, a.P, a.jb, a.Pb],
+			const r = [a.nc, a.ob, a.A, a.P, a.jb, a.Qb],
 				i = {
-					[a.Pb]: e => n.fbt._({
+					[a.Qb]: e => n.fbt._({
 						"*": "{number} seconds",
 						_1: "1 second"
 					}, [n.fbt._plural(e, "number")], {
@@ -128,7 +128,7 @@
 					}, [n.fbt._plural(e, "number")], {
 						hk: "28DQqD"
 					}),
-					[a.mc]: e => n.fbt._({
+					[a.nc]: e => n.fbt._({
 						"*": "{number} years",
 						_1: "1 year"
 					}, [n.fbt._plural(e, "number")], {
@@ -136,7 +136,7 @@
 					})
 				},
 				o = {
-					[a.Pb]: e => n.fbt._("{amount}s", [n.fbt._param("amount", String(e))], {
+					[a.Qb]: e => n.fbt._("{amount}s", [n.fbt._param("amount", String(e))], {
 						hk: "F4qog"
 					}),
 					[a.jb]: e => n.fbt._("{amount}m", [n.fbt._param("amount", String(e))], {
@@ -151,13 +151,13 @@
 					[a.ob]: e => n.fbt._("{amount}m", [n.fbt._param("amount", String(e))], {
 						hk: "28feBj"
 					}),
-					[a.mc]: e => n.fbt._("{amount}y", [n.fbt._param("amount", String(e))], {
+					[a.nc]: e => n.fbt._("{amount}y", [n.fbt._param("amount", String(e))], {
 						hk: "10bv8G"
 					}),
 					[a.ob]: e => n.fbt._("{amount}m", [n.fbt._param("amount", String(e))], {
 						hk: "28feBj"
 					}),
-					[a.mc]: e => n.fbt._("{amount}y", [n.fbt._param("amount", String(e))], {
+					[a.nc]: e => n.fbt._("{amount}y", [n.fbt._param("amount", String(e))], {
 						hk: "10bv8G"
 					})
 				};
@@ -166,12 +166,12 @@
 				const c = Date.now(),
 					l = new Date(e).getTime(),
 					d = {
-						[a.mc]: "",
+						[a.nc]: "",
 						[a.ob]: "",
 						[a.A]: "",
 						[a.P]: "",
 						[a.jb]: "",
-						[a.Pb]: ""
+						[a.Qb]: ""
 					};
 				let m = l - c;
 				if (m <= 0) return n.fbt._("a moment", null, {
@@ -458,7 +458,7 @@
 					}, Object(k.b)(e.author, t)), r.a.createElement("span", {
 						className: N.a.timestamp
 					}, r.a.createElement(P.d, {
-						seconds: e.created / v.Pb
+						seconds: e.created / v.Qb
 					})))))
 				},
 				w = s("./src/reddit/icons/svgs/CircledPlanet/index.tsx"),
@@ -490,7 +490,7 @@
 					}, "•"), r.a.createElement("span", {
 						className: T.a.timestamp
 					}, r.a.createElement(P.d, {
-						seconds: e.created / v.Pb
+						seconds: e.created / v.Qb
 					})))))
 				},
 				D = s("./src/reddit/components/JSAPIContainers/index.tsx"),
@@ -1398,7 +1398,7 @@
 				return o.a.createElement("span", {
 					className: e.className
 				}, t ? c._("Voting closed {timeAgo}", [c._param("timeAgo", o.a.createElement(a.d, {
-					seconds: e.poll.endsAt / n.Pb
+					seconds: e.poll.endsAt / n.Qb
 				}))], {
 					hk: "3OERID"
 				}) : Object(r.a)(new Date(e.poll.endsAt)))
@@ -1705,7 +1705,7 @@
 						subreddit: s
 					} = e, {
 						isSponsored: n
-					} = t, a = Object(B.a)(), i = Object(R.a)(u.Lc) === u.Pc.Enabled;
+					} = t, a = Object(B.a)(), i = Object(R.a)(u.Kc) === u.Oc.Enabled;
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return r.a.createElement(K, {
 						nowrap: e.nowrap
 					}, r.a.createElement(Y, e));
@@ -2322,4 +2322,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.70005cf6667ed1ef20a8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.19fea025053272af1723.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.96c8ecf790dbe682ef4a.js
-// Retrieved at 10/13/2021, 5:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.ee4747bd7c646aa26b90.js
+// Retrieved at 10/13/2021, 6:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-NotificationUnit-Button"], {
 		"./src/reddit/actions/comment/authoring.ts": function(e, t, n) {
@@ -33,7 +33,7 @@
 			})), n.d(t, "j", (function() {
 				return xe
 			})), n.d(t, "d", (function() {
-				return Ie
+				return Ce
 			})), n.d(t, "c", (function() {
 				return ke
 			})), n.d(t, "i", (function() {
@@ -64,8 +64,8 @@
 				j = n("./src/redditGQL/operations/CommentToxicity.json"),
 				h = n("./src/lib/makeApiRequest/index.ts"),
 				x = n("./src/lib/makeGqlRequest/index.ts"),
-				C = n("./src/lib/omitHeaders/index.ts"),
-				I = n("./src/reddit/constants/headers.ts"),
+				I = n("./src/lib/omitHeaders/index.ts"),
+				C = n("./src/reddit/constants/headers.ts"),
 				g = n("./src/reddit/helpers/addRedesignIdentifier/index.ts"),
 				T = n("./src/reddit/helpers/genericServerError/index.ts"),
 				v = n("./src/reddit/helpers/r2/normalizeCommentFromR2/index.ts"),
@@ -106,7 +106,7 @@
 							document: e
 						})
 					}
-					return Object(h.a)(Object(C.a)(e, [I.a]), {
+					return Object(h.a)(Object(I.a)(e, [C.a]), {
 						method: r.ib.POST,
 						endpoint: Object(g.a)(Object(P.a)(Object(_.a)(`${e.apiUrl}/api/comment.json`))),
 						data: c
@@ -139,8 +139,8 @@
 				U = n("./src/reddit/helpers/localStorage/index.ts"),
 				F = n("./src/reddit/helpers/trackers/commentsPage.ts"),
 				H = n("./src/reddit/models/Comment/index.ts"),
-				J = n("./src/reddit/models/PostDraft/index.ts"),
-				W = n("./src/reddit/models/RichTextJson/index.ts"),
+				W = n("./src/reddit/models/PostDraft/index.ts"),
+				J = n("./src/reddit/models/RichTextJson/index.ts"),
 				B = n("./src/reddit/models/RichTextJson/nodeMakers.ts"),
 				G = n("./src/reddit/models/Toast/index.ts"),
 				V = n("./src/reddit/selectors/comments.ts"),
@@ -193,14 +193,14 @@
 						draft: s
 					}));
 					const x = j.user.account.displayText,
-						C = s.commentMode;
-					let I;
-					if (d ? (I = await Object(A.i)(y(), e, s, x), u(Object(l.a)({
+						I = s.commentMode;
+					let C;
+					if (d ? (C = await Object(A.i)(y(), e, s, x), u(Object(l.a)({
 							streamId: e,
-							level: I.body.automuteLevel
-						}))) : I = await E(y(), e, s, x, C), I.ok) {
+							level: C.body.automuteLevel
+						}))) : C = await E(y(), e, s, x, I), C.ok) {
 						let o;
-						o = I.body, u(ne({
+						o = C.body, u(ne({
 							...o,
 							headCommentId: Object(V.w)(j, {
 								commentsPageKey: t
@@ -213,20 +213,20 @@
 						});
 						u(Object(m.z)(r, O.a.CommentSubmitted))
 					} else {
-						I.error && I.error.type === r.Hb && F.i(j, de(s), e);
-						const t = I.error && I.error.fields && I.error.fields[0] ? I.error.fields[0].msg : o.fbt._("Something went wrong", null, {
+						C.error && C.error.type === r.Ib && F.i(j, de(s), e);
+						const t = C.error && C.error.fields && C.error.fields[0] ? C.error.fields[0].msg : o.fbt._("Something went wrong", null, {
 							hk: "LWFS0"
 						});
 						u(re({
 							draftKey: n,
-							error: I.error
+							error: C.error
 						})), u(Object(f.f)({
 							duration: f.a,
 							kind: G.b.Error,
 							text: t
 						}))
 					}
-					se(p(), t, c, I).then(() => I.ok && c === S.i.RICH_TEXT ? Object(L.b)(L.a.CommentComposer) : void 0), i || Object(b.d)()
+					se(p(), t, c, C).then(() => C.ok && c === S.i.RICH_TEXT ? Object(L.b)(L.a.CommentComposer) : void 0), i || Object(b.d)()
 				}, me = e => async (t, n, {
 					gqlContext: o
 				}) => {
@@ -280,7 +280,7 @@
 						depth: i + 1
 					}));
 					else {
-						if (y.error && y.error.type === r.Hb) {
+						if (y.error && y.error.type === r.Ib) {
 							const e = Object(q.b)(l, {
 								commentId: s
 							});
@@ -297,10 +297,10 @@
 					apiContext: c
 				}) => {
 					const i = e === S.i.RICH_TEXT;
-					if (!t || "object" == typeof t && Object(W.G)(t)) r(pe({
+					if (!t || "object" == typeof t && Object(J.G)(t)) r(pe({
 						editorMode: e,
 						draftKey: n,
-						content: i ? W.i : ""
+						content: i ? J.i : ""
 					})), r(Object(u.c)(e));
 					else {
 						r(Object(u.b)(n));
@@ -326,7 +326,7 @@
 					singleOpen: n
 				}) => async (o, r) => {
 					const s = r(),
-						m = Object(c.a)(J.c.replyToComment, t);
+						m = Object(c.a)(W.c.replyToComment, t);
 					if (!Object(z.K)(r())) return o(Object(d.k)()), void o(Object(a.k)({
 						actionSource: a.a.Reply,
 						redirectUrl: Object(V.m)(r(), {
@@ -359,12 +359,12 @@
 					let j;
 					if (j = O ? {
 							commentMode: p,
-							draftType: J.c.replyToComment,
+							draftType: W.c.replyToComment,
 							rtJson: f,
 							text: `${b}\n`
 						} : y || {
 							commentMode: p,
-							draftType: J.c.replyToComment,
+							draftType: W.c.replyToComment,
 							rtJson: f,
 							text: ""
 						}, Object(z.M)(s)) {
@@ -382,7 +382,7 @@
 						formData: j
 					}))
 				}, je = e => async t => {
-					t(Object(Q.p)(e)), t(Ie(e))
+					t(Object(Q.p)(e)), t(Ce(e))
 				}, he = ({
 					parentCommentId: e,
 					commentsPageKey: t
@@ -400,7 +400,7 @@
 				}, xe = (e, t) => n => n(fe({
 					draftKey: e,
 					formData: t
-				})), Ce = Object(s.a)(X.s), Ie = ({
+				})), Ie = Object(s.a)(X.s), Ce = ({
 					commentId: e,
 					commentMode: t,
 					commentsPageKey: n,
@@ -408,7 +408,7 @@
 					text: r
 				}) => async (s, c) => {
 					const i = c();
-					i.user.account && (F.d(i), s(Ce({
+					i.user.account && (F.d(i), s(Ie({
 						commentId: e,
 						commentsPageKey: n,
 						draftKey: o,
@@ -416,7 +416,7 @@
 							text: r,
 							commentMode: t,
 							rteState: null,
-							draftType: J.c.edit,
+							draftType: W.c.edit,
 							hasFocus: !0
 						}
 					})))
@@ -450,7 +450,7 @@
 									document: e
 								})
 							}
-							return Object(h.a)(Object(C.a)(e, [I.a]), {
+							return Object(h.a)(Object(I.a)(e, [C.a]), {
 								endpoint: Object(g.a)(Object(_.a)(Object(P.a)(`${e.apiUrl}/api/editusertext`))),
 								method: r.ib.POST,
 								data: i
@@ -495,7 +495,7 @@
 					n(Pe({
 						id: e
 					})), F.b(e, c);
-					const i = await ((e, t) => Object(h.a)(Object(C.a)(e, [I.a]), {
+					const i = await ((e, t) => Object(h.a)(Object(I.a)(e, [C.a]), {
 						endpoint: Object(g.a)(`${e.apiUrl}/api/del`),
 						method: r.ib.POST,
 						data: {
@@ -628,8 +628,8 @@
 				j = n("./src/reddit/models/Post/index.ts"),
 				h = n("./src/reddit/models/Toast/index.ts"),
 				x = n("./src/reddit/models/Vote/index.ts"),
-				C = n("./src/reddit/selectors/comments.ts"),
-				I = n("./src/reddit/selectors/commentSelector.ts"),
+				I = n("./src/reddit/selectors/comments.ts"),
+				C = n("./src/reddit/selectors/commentSelector.ts"),
 				g = n("./src/reddit/selectors/experiments/avatarsInComments.ts"),
 				T = n("./src/reddit/selectors/moderatingComments.ts"),
 				v = n("./src/reddit/selectors/user.ts"),
@@ -641,7 +641,7 @@
 				}) => {
 					if (!Object(v.K)(n())) return t(Object(a.k)()), void t(Object(m.k)({
 						actionSource: m.a.Save,
-						redirectUrl: Object(C.m)(n(), {
+						redirectUrl: Object(I.m)(n(), {
 							commentId: e
 						})
 					}));
@@ -674,7 +674,7 @@
 					}))
 				}, R = e => `viewing-comment-${e}`, E = o.a.telemetry.commentConsumedThreshold, w = e => async (t, n) => {
 					const r = n();
-					if (!Object(I.b)(r, {
+					if (!Object(C.b)(r, {
 							commentId: e
 						}) || Math.random() > o.a.telemetry.commentSampleRate) return;
 					O.c({
@@ -689,7 +689,7 @@
 				}, N = (e, t) => async (n, o) => {
 					const r = o(),
 						c = R(e);
-					if (Object(I.b)(r, {
+					if (Object(C.b)(r, {
 							commentId: e
 						}) && s.c.has(c)) {
 						const n = s.c.end(c);
@@ -737,14 +737,14 @@
 						moreCommentsItem: c,
 						...O.error
 					}))
-				}, M = Object(b.a)(p.b, x.a.upvoted), U = Object(b.a)(p.b, x.a.downvoted), F = Object(c.a)(k.j), H = Object(c.a)(k.i), J = Object(c.a)(k.e), W = Object(c.a)(k.f), B = (Object(c.a)(k.c), Object(c.a)(k.d), ({
+				}, M = Object(b.a)(p.b, x.a.upvoted), U = Object(b.a)(p.b, x.a.downvoted), F = Object(c.a)(k.j), H = Object(c.a)(k.i), W = Object(c.a)(k.e), J = Object(c.a)(k.f), B = (Object(c.a)(k.c), Object(c.a)(k.d), ({
 					commentId: e,
 					commentsPageKey: t,
 					scrollToAndRemeasure: n
 				}) => async (o, r) => {
 					const s = r(),
 						c = Object(y.i)(e),
-						i = Object(C.n)(s, {
+						i = Object(I.n)(s, {
 							commentLink: c,
 							commentsPageKey: t
 						}),
@@ -753,7 +753,7 @@
 							commentsPageKey: t
 						}),
 						a = i.depth;
-					o(J({
+					o(W({
 						commentId: e,
 						commentsPageKey: t,
 						isCollapsed: d
@@ -762,7 +762,7 @@
 					commentId: e,
 					commentsPageKey: t
 				}) => async n => {
-					n(W({
+					n(J({
 						commentId: e,
 						commentsPageKey: t
 					}))
@@ -778,7 +778,7 @@
 							commentId: e.id,
 							commentsPageKey: t
 						});
-					r(J({
+					r(W({
 						commentId: i,
 						commentsPageKey: t,
 						isCollapsed: d
@@ -829,11 +829,11 @@
 						content: m.i
 					})), void r(y(t));
 					r(b(x));
-					const C = await Object(c.a)(O(), t, j ? JSON.stringify(n) : n);
-					C.ok ? (r(f(x)), r(p({
+					const I = await Object(c.a)(O(), t, j ? JSON.stringify(n) : n);
+					I.ok ? (r(f(x)), r(p({
 						editorKey: e,
 						editorMode: t,
-						content: C.body.output
+						content: I.body.output
 					})), r(y(t))) : (r(f(x)), r(Object(s.f)({
 						duration: s.a,
 						kind: u.b.Error,
@@ -970,7 +970,7 @@
 				duration: m.a
 			};
 			t.default = e => {
-				var t, n, r, y, j, C, I, g;
+				var t, n, r, y, j, I, C, g;
 				const T = Object(c.d)(),
 					{
 						context: v,
@@ -988,8 +988,8 @@
 					D = null === (t = null == v ? void 0 : v.post) || void 0 === t ? void 0 : t.permalink,
 					L = A === O.a.PostReply ? N : null === (n = null == v ? void 0 : v.comment) || void 0 === n ? void 0 : n.id,
 					M = (null === (r = null == v ? void 0 : v.post) || void 0 === r ? void 0 : r.id) || (null === (j = null === (y = null == v ? void 0 : v.comment) || void 0 === y ? void 0 : y.postInfo) || void 0 === j ? void 0 : j.id),
-					U = null === (C = null == v ? void 0 : v.awarding) || void 0 === C ? void 0 : C.award.id,
-					F = null === (g = null === (I = null == v ? void 0 : v.awarding) || void 0 === I ? void 0 : I.awarder) || void 0 === g ? void 0 : g.id;
+					U = null === (I = null == v ? void 0 : v.awarding) || void 0 === I ? void 0 : I.award.id,
+					F = null === (g = null === (C = null == v ? void 0 : v.awarding) || void 0 === C ? void 0 : C.awarder) || void 0 === g ? void 0 : g.id;
 				return (() => {
 					switch (A) {
 						case O.a.LifecyclePostSuggestions:
@@ -1101,9 +1101,9 @@
 			})), n.d(t, "h", (function() {
 				return x
 			})), n.d(t, "e", (function() {
-				return C
-			})), n.d(t, "b", (function() {
 				return I
+			})), n.d(t, "b", (function() {
+				return C
 			}));
 			var o = n("./src/config.ts"),
 				r = n("./src/lib/constants/index.ts"),
@@ -1178,7 +1178,7 @@
 						id: t
 					}
 				}),
-				C = (e, t, n, c) => {
+				I = (e, t, n, c) => {
 					let i = Object(d.a)(Object(u.a)(Object(m.a)(`${o.a.gatewayUrl}/desktopapi/v1/morecomments/${t}`)));
 					return c && (i = Object(a.a)(i)), Object(s.a)(e, {
 						data: n,
@@ -1188,7 +1188,7 @@
 						traceRequestName: "more_comments"
 					})
 				},
-				I = (e, t, n, o) => Object(s.a)(Object(c.a)(e, [i.a]), {
+				C = (e, t, n, o) => Object(s.a)(Object(c.a)(e, [i.a]), {
 					endpoint: Object(d.a)(`${e.apiUrl}/api/distinguish/${n}`),
 					method: r.ib.POST,
 					data: {
@@ -1273,7 +1273,7 @@
 								experimentName: s.E,
 								expEventOverride: t
 							});
-							return !!(Object(s.Je)(n) ? void 0 : n)
+							return !!(Object(s.Ie)(n) ? void 0 : n)
 						})(n)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -1641,8 +1641,8 @@
 				j = n("./node_modules/lodash/uniqBy.js"),
 				h = n.n(j),
 				x = n("./node_modules/lodash/values.js"),
-				C = n.n(x),
-				I = n("./src/reddit/actions/comment/websocket/constants.ts");
+				I = n.n(x),
+				C = n("./src/reddit/actions/comment/websocket/constants.ts");
 			const g = {};
 
 			function T(e) {
@@ -1657,7 +1657,7 @@
 								comments: n,
 								key: o
 							} = t.payload, r = e[o] ? e[o] : [], s = function(e, t) {
-								return C()(e).map(e => {
+								return I()(e).map(e => {
 									const n = e.isStickied ? t && t.created || Math.round(Date.now() / 1e3) : e.created;
 									return {
 										id: e.id,
@@ -1672,9 +1672,9 @@
 								[o]: [...c]
 							}
 						}
-						case I.b:
-						case I.c:
-						case I.d:
+						case C.b:
+						case C.c:
+						case C.d:
 						case p.J:
 						case p.I: {
 							const {
@@ -1791,7 +1791,7 @@
 							}
 						}
 					}
-					case I.b:
+					case C.b:
 					case p.J: {
 						const {
 							comment: n,
@@ -1851,8 +1851,8 @@
 			const N = {};
 			var K = (e = N, t) => {
 				switch (t.type) {
-					case I.b:
-					case I.c:
+					case C.b:
+					case C.c:
 					case p.J: {
 						const {
 							comment: n,
@@ -1934,9 +1934,9 @@
 			})), n.d(t, "k", (function() {
 				return x
 			})), n.d(t, "g", (function() {
-				return C
-			})), n.d(t, "G", (function() {
 				return I
+			})), n.d(t, "G", (function() {
+				return C
 			})), n.d(t, "n", (function() {
 				return g
 			})), n.d(t, "o", (function() {
@@ -1976,9 +1976,9 @@
 			})), n.d(t, "v", (function() {
 				return H
 			})), n.d(t, "J", (function() {
-				return J
-			})), n.d(t, "f", (function() {
 				return W
+			})), n.d(t, "f", (function() {
+				return J
 			})), n.d(t, "i", (function() {
 				return B
 			})), n.d(t, "F", (function() {
@@ -2049,8 +2049,8 @@
 					} while (d);
 					return c
 				}),
-				C = (e, t) => y(e, t) ? e.pages.comments.keyToChatCommentLinks[t.commentsPageKey] : [],
-				I = (e, {
+				I = (e, t) => y(e, t) ? e.pages.comments.keyToChatCommentLinks[t.commentsPageKey] : [],
+				C = (e, {
 					commentsPageKey: t
 				}) => {
 					const n = e.pages.comments.keyToPostId[t];
@@ -2173,13 +2173,13 @@
 				H = (e, {
 					draftKey: t
 				}) => !!e.features.comments.submit.error[t],
-				J = (e, {
+				W = (e, {
 					draftKey: t
 				}) => {
 					const n = e.features.comments.submit.error[t];
 					return n && n.fields ? n.fields.map(e => e.msg) : []
 				},
-				W = (e, {
+				J = (e, {
 					draftKey: t
 				}) => {
 					const n = e.features.comments.drafts[t];
@@ -2251,4 +2251,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.96c8ecf790dbe682ef4a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.ee4747bd7c646aa26b90.js.map

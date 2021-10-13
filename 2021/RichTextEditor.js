@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.9efd846ec742f4de2d92.js
-// Retrieved at 10/13/2021, 5:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.5db0edf8ce4920f12b4b.js
+// Retrieved at 10/13/2021, 6:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton", "reddit-components-RichTextEditor-Toolbar-GifButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, o) {
@@ -938,7 +938,7 @@
 						});
 						u(Object(l.z)(s, f.a.CommentSubmitted))
 					} else {
-						E.error && E.error.type === s.Hb && L.i(g, ce(r), e);
+						E.error && E.error.type === s.Ib && L.i(g, ce(r), e);
 						const t = E.error && E.error.fields && E.error.fields[0] ? E.error.fields[0].msg : n.fbt._("Something went wrong", null, {
 							hk: "LWFS0"
 						});
@@ -1005,7 +1005,7 @@
 						depth: a + 1
 					}));
 					else {
-						if (_.error && _.error.type === s.Hb) {
+						if (_.error && _.error.type === s.Ib) {
 							const e = Object(X.b)(m, {
 								commentId: r
 							});
@@ -4753,22 +4753,22 @@
 			const i = e => {
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: n.Ge
+						experimentName: n.Fe
 					});
-					return t === n.xe.UIChangesOnly || t === n.xe.TypingIndicators || t === n.xe.IndicatorsPlusCTA
+					return t === n.we.UIChangesOnly || t === n.we.TypingIndicators || t === n.we.IndicatorsPlusCTA
 				},
 				a = e => {
 					const t = Object(r.d)(e, {
-							experimentName: n.Ge
+							experimentName: n.Fe
 						}),
 						o = null == t ? void 0 : t.variant;
-					return o === n.xe.TypingIndicators || o === n.xe.IndicatorsPlusCTA
+					return o === n.we.TypingIndicators || o === n.we.IndicatorsPlusCTA
 				},
 				c = e => {
 					const t = Object(r.d)(e, {
-						experimentName: n.Ge
+						experimentName: n.Fe
 					});
-					return (null == t ? void 0 : t.variant) === n.xe.IndicatorsPlusCTA
+					return (null == t ? void 0 : t.variant) === n.we.IndicatorsPlusCTA
 				}
 		},
 		"./src/reddit/selectors/moderatingComments.ts": function(e, t, o) {
@@ -4803,4 +4803,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.9efd846ec742f4de2d92.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.5db0edf8ce4920f12b4b.js.map

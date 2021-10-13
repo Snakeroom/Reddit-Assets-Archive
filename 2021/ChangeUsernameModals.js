@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChangeUsernameModals.2a3b9caf7f231bb7789e.js
-// Retrieved at 10/5/2021, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChangeUsernameModals.e77cd958bf4cb4586e60.js
+// Retrieved at 10/13/2021, 6:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChangeUsernameModals"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -98,7 +98,7 @@
 					} = e, [r, c] = Object(a.useState)([0, 0]), [i, l] = Object(a.useState)([]), [d, m] = Object(a.useState)(!1), u = Object(a.useCallback)(async () => {
 						m(!0), setTimeout(() => {
 							m(!1)
-						}, 10 * g.Pb);
+						}, 10 * g.Qb);
 						const e = await (e => Object(v.a)(Object(O.a)(e, [x.a]), {
 							endpoint: `${e.apiUrl}/api/v1/generate_username.json`,
 							method: g.ib.GET
@@ -151,8 +151,8 @@
 				T = n.n(y),
 				D = n("./src/reddit/components/Settings/accountModals.m.less"),
 				R = n.n(D);
-			const _ = 500,
-				Q = 20,
+			const Q = 500,
+				_ = 20,
 				L = 3,
 				K = () => s.fbt._("Great name! It's not taken, so it's all yours.", null, {
 					hk: "42rpS"
@@ -176,7 +176,7 @@
 				};
 			class Y extends o.a.Component {
 				constructor() {
-					super(...arguments), this.state = V, this.checkUsername = async e => e.length < L || e.length > Q ? {
+					super(...arguments), this.state = V, this.checkUsername = async e => e.length < L || e.length > _ ? {
 						error: H(),
 						state: C.a.Invalid
 					} : e === this.props.initialUsername ? F : await this.validateUsername(e), this.validateUsername = async e => {
@@ -204,7 +204,7 @@
 							error: t,
 							state: n
 						})
-					}, this.debounceCheckUsername = h()(this.callCheckUsername, _), this.handleContinue = async () => {
+					}, this.debounceCheckUsername = h()(this.callCheckUsername, Q), this.handleContinue = async () => {
 						const {
 							username: e
 						} = this.props, {
@@ -827,4 +827,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChangeUsernameModals.2a3b9caf7f231bb7789e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChangeUsernameModals.e77cd958bf4cb4586e60.js.map

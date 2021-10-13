@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.bcfe0df24f6f042200aa.js
-// Retrieved at 10/13/2021, 5:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.cc120004cb20aa79aea0.js
+// Retrieved at 10/13/2021, 6:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileFollowersPage", "ProfileFollowersAction"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -178,7 +178,7 @@
 					}));
 					const p = m.name;
 					if ((await Object(l.c)(a(), {
-							subredditNames: [`${n.fc}${m.name}`],
+							subredditNames: [`${n.gc}${m.name}`],
 							subscribe: t
 						})).ok) {
 						s(_({
@@ -3735,7 +3735,7 @@
 				})())))
 			};
 			h.defaultProps = {
-				minimizedLength: d.Qb
+				minimizedLength: d.Rb
 			}, t.a = h
 		},
 		"./src/reddit/components/SidebarFooter/index.m.less": function(e, t, s) {
@@ -6855,4 +6855,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.bcfe0df24f6f042200aa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.cc120004cb20aa79aea0.js.map

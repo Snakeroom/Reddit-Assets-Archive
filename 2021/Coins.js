@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Coins.e87635cdcfe0441c3b2d.js
-// Retrieved at 10/7/2021, 8:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Coins.0264a4ffe71c6b8892e9.js
+// Retrieved at 10/13/2021, 6:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Coins"], {
 		"./node_modules/lodash/times.js": function(e, t, a) {
@@ -214,7 +214,7 @@
 			})), a.d(t, "g", (function() {
 				return M
 			})), a.d(t, "h", (function() {
-				return G
+				return L
 			}));
 			var n = a("./node_modules/fbt/lib/FbtPublic.js"),
 				r = a("./src/lib/formatApiError/index.ts"),
@@ -463,7 +463,7 @@
 						const e = Object(r.a)(p);
 						a(Object(o.paypalApiError)(e))
 					}
-				}, G = (e, t) => async (s, i, {
+				}, L = (e, t) => async (s, i, {
 					apiContext: l
 				}) => {
 					const d = i(),
@@ -1518,9 +1518,9 @@
 				A = a("./src/reddit/contexts/PageLayer/index.tsx"),
 				S = a("./src/reddit/models/Gold/Coins/index.ts"),
 				M = a("./src/reddit/selectors/gold/purchaseCatalog.ts"),
-				G = a("./src/reddit/selectors/user.ts"),
-				L = a("./src/reddit/components/CoinPurchasePackage/index.m.less"),
-				D = a.n(L),
+				L = a("./src/reddit/selectors/user.ts"),
+				G = a("./src/reddit/components/CoinPurchasePackage/index.m.less"),
+				D = a.n(G),
 				R = a("./src/lib/classNames/index.ts"),
 				F = a("./src/lib/currency/currencies.ts"),
 				B = a("./src/lib/localizeCurrency/index.ts"),
@@ -1611,8 +1611,8 @@
 						className: Object(R.a)(r, W.a.packagePlaceholder, n, e)
 					})
 				},
-				K = a("./src/reddit/components/CollapsibleFAQ/index.tsx"),
-				J = a("./src/reddit/components/GildMarketingDescription/index.tsx"),
+				J = a("./src/reddit/components/CollapsibleFAQ/index.tsx"),
+				K = a("./src/reddit/components/GildMarketingDescription/index.tsx"),
 				Z = a("./src/reddit/components/MarketingPageFooter/index.tsx"),
 				$ = a("./src/reddit/components/PremiumMarketingBanner/index.m.less"),
 				ee = a.n($);
@@ -1720,8 +1720,8 @@
 					activeSaleConfig: M.a,
 					coinPackages: M.d,
 					dealCoinPackages: M.f,
-					isPremiumSubscriber: G.t,
-					isLoggedIn: G.K,
+					isPremiumSubscriber: L.t,
+					isLoggedIn: L.K,
 					premiumPackages: M.j,
 					purchaseCatalogPending: M.l
 				}),
@@ -1769,7 +1769,7 @@
 						requestPurchaseCatalog: a
 					} = this.props;
 					e.length || t || a(this.correlationId), document.documentElement.scrollTop = document.body.scrollTop = 0;
-					const n = u.Kb.COINS;
+					const n = u.Lb.COINS;
 					v.c.has(n) && (this.props.sendEvent(Object(y.b)(j.TimerType.InApp, v.c.end(n))), this.props.sendEvent(Object(y.a)())), Object(p.a)(), this.setTargetedOfferTimeout()
 				}
 				componentDidUpdate() {
@@ -1814,7 +1814,7 @@
 						hk: "3eScNB"
 					})), o.a.createElement("div", {
 						className: x.a.gridContainer
-					}, o.a.createElement(J.a, {
+					}, o.a.createElement(K.a, {
 						className: x.a.gridItem,
 						icon: o.a.createElement("img", {
 							src: `${n.a.assetPath}/img/gold/badges/award-silver-large.png`
@@ -1828,7 +1828,7 @@
 						":coin_price:": o.a.createElement("span", {
 							className: x.a.nowrap
 						}, o.a.createElement(ne.a, null), N.q.coinPrice)
-					})), o.a.createElement(J.a, {
+					})), o.a.createElement(K.a, {
 						className: x.a.gridItem,
 						icon: o.a.createElement("img", {
 							src: `${n.a.assetPath}/img/gold/badges/award-gold-large.png`
@@ -1845,7 +1845,7 @@
 						":coin_price:": o.a.createElement("span", {
 							className: x.a.nowrap
 						}, o.a.createElement(ne.a, null), N.n.coinPrice)
-					})), o.a.createElement(J.a, {
+					})), o.a.createElement(K.a, {
 						className: x.a.gridItem,
 						icon: o.a.createElement("img", {
 							src: `${n.a.assetPath}/img/gold/badges/award-platinum-large.png`
@@ -1911,7 +1911,7 @@
 						hk: "21x0aE"
 					})), o.a.createElement("div", {
 						className: x.a.faqs
-					}, S.b.map((e, t) => o.a.createElement(K.a, {
+					}, S.b.map((e, t) => o.a.createElement(J.a, {
 						defaultClosed: !0,
 						question: e.prompt(),
 						key: t
@@ -1925,4 +1925,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Coins.e87635cdcfe0441c3b2d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Coins.0264a4ffe71c6b8892e9.js.map

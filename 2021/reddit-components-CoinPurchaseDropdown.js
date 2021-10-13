@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.42175648af9ac70b20e9.js
-// Retrieved at 10/7/2021, 8:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.a342e39c3a65774a893e.js
+// Retrieved at 10/13/2021, 6:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CoinPurchaseDropdown"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, r) {
@@ -167,7 +167,7 @@
 			})), r.d(t, "g", (function() {
 				return M
 			})), r.d(t, "h", (function() {
-				return D
+				return L
 			}));
 			var n = r("./node_modules/fbt/lib/FbtPublic.js"),
 				o = r("./src/lib/formatApiError/index.ts"),
@@ -416,7 +416,7 @@
 						const e = Object(o.a)(p);
 						r(Object(i.paypalApiError)(e))
 					}
-				}, D = (e, t) => async (c, s, {
+				}, L = (e, t) => async (c, s, {
 					apiContext: d
 				}) => {
 					const l = s(),
@@ -634,7 +634,7 @@
 					apiContext: n
 				}) => {
 					const c = Object(h.a)(r()),
-						a = (null == c ? void 0 : c.pennies) || s.wb,
+						a = (null == c ? void 0 : c.pennies) || s.xb,
 						l = Object(m.c)(m.a.GoldPayment);
 					t(Object(d.stripeTokenPending)());
 					const u = await t(Object(d.validateAndCreateStripeToken)(e));
@@ -870,8 +870,8 @@
 				N = r("./src/reddit/actions/goldPurchaseModals/purchaseCatalog.ts"),
 				S = r("./src/reddit/actions/modal.ts"),
 				M = r("./src/reddit/constants/modals.ts"),
-				D = r("./src/reddit/contexts/PageLayer/index.tsx"),
-				L = r("./src/reddit/controls/LoadingIcon/index.tsx"),
+				L = r("./src/reddit/contexts/PageLayer/index.tsx"),
+				D = r("./src/reddit/controls/LoadingIcon/index.tsx"),
 				F = r("./src/reddit/featureFlags/index.ts"),
 				R = r("./src/reddit/helpers/correlationIdTracker.ts"),
 				U = r("./src/reddit/hooks/useLocale.ts"),
@@ -928,7 +928,7 @@
 					communityPointsConversionEnabled: F.d.spPointsCoinConversion,
 					communityPointsName: (e, t) => {
 						var r;
-						const n = Object(D.r)(e, t);
+						const n = Object(L.r)(e, t);
 						return null === (r = Object(H.b)(e, null == n ? void 0 : n.id)) || void 0 === r ? void 0 : r.name
 					},
 					isFreeAwardEventEnabled: e => Object(G.a)(e) && Object(K.g)(e),
@@ -968,7 +968,7 @@
 							sendEvent: o
 						} = this.props;
 						t && t(), o(l.c());
-						const c = (null === (e = null == n ? void 0 : n.meta) || void 0 === e ? void 0 : e.name) === w.Kb.PREMIUM;
+						const c = (null === (e = null == n ? void 0 : n.meta) || void 0 === e ? void 0 : e.name) === w.Lb.PREMIUM;
 						r(this.correlationId, c)
 					}, this.handleClickFreeAward = () => {
 						const {
@@ -1063,7 +1063,7 @@
 						className: e
 					}, o.a.createElement("div", {
 						className: Q.a.loaderContainer
-					}, o.a.createElement(L.a, {
+					}, o.a.createElement(D.a, {
 						sizePx: 80
 					}))) : s || !t.length ? o.a.createElement("div", {
 						className: e
@@ -1122,7 +1122,7 @@
 					}))
 				}
 			}
-			var te = Object(D.u)()(J(Object(i.c)(ee))),
+			var te = Object(L.u)()(J(Object(i.c)(ee))),
 				re = r("./src/reddit/components/CoinPurchaseDropdown/index.m.less"),
 				ne = r.n(re);
 			const {
@@ -1471,4 +1471,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.42175648af9ac70b20e9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.a342e39c3a65774a893e.js.map

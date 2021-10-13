@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.7dc0f0687864f57417c9.js
-// Retrieved at 10/13/2021, 5:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.5f87252705d7d1603836.js
+// Retrieved at 10/13/2021, 6:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/lib/delay/index.ts": function(e, t, n) {
@@ -26,7 +26,7 @@
 				shortMonths: o,
 				locale: a = r.C
 			} = {}) {
-				const i = new Date(e * r.Pb);
+				const i = new Date(e * r.Qb);
 				return s.a ? new Intl.DateTimeFormat(a, {
 					month: o ? "short" : "long",
 					day: t ? "numeric" : void 0,
@@ -640,7 +640,7 @@
 						type: e.type
 					} : {
 						id: Object(C.m)(d(), e.name),
-						name: `${s.fc}${e.name}`,
+						name: `${s.gc}${e.name}`,
 						type: e.type
 					});
 					if (!Object(j.K)(d())) return o(Object(c.k)({
@@ -1744,7 +1744,7 @@
 					const n = Object(a.a)(),
 						r = null != t ? t : n;
 					return s.a.createElement(s.a.Fragment, null, function(e, t = l.C) {
-						const n = e * l.Pb;
+						const n = e * l.Qb;
 						return new Date(n).toLocaleString(t, {
 							weekday: "short",
 							month: "short",
@@ -1769,7 +1769,7 @@
 
 			function f(e, t, n = !1, r = l.C) {
 				const s = Object(b.e)(e, t),
-					o = new Date(e * l.Pb);
+					o = new Date(e * l.Qb);
 				let a;
 				if (s === b.a.Live || n) return m.fbt._("Now", null, {
 					hk: "Prpcg"
@@ -4022,4 +4022,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.7dc0f0687864f57417c9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.5f87252705d7d1603836.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.defa4c787955a34057e6.js
-// Retrieved at 10/13/2021, 5:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.09000030914522dded0a.js
+// Retrieved at 10/13/2021, 6:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost", "Reddit~StandalonePostPage~reddit-components-MediumPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -481,9 +481,9 @@
 			}));
 			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
 				r = n("./src/lib/constants/index.ts");
-			const o = [r.mc, r.ob, r.A, r.P, r.jb, r.Pb],
+			const o = [r.nc, r.ob, r.A, r.P, r.jb, r.Qb],
 				i = {
-					[r.Pb]: e => s.fbt._({
+					[r.Qb]: e => s.fbt._({
 						"*": "{number} seconds",
 						_1: "1 second"
 					}, [s.fbt._plural(e, "number")], {
@@ -513,7 +513,7 @@
 					}, [s.fbt._plural(e, "number")], {
 						hk: "28DQqD"
 					}),
-					[r.mc]: e => s.fbt._({
+					[r.nc]: e => s.fbt._({
 						"*": "{number} years",
 						_1: "1 year"
 					}, [s.fbt._plural(e, "number")], {
@@ -521,7 +521,7 @@
 					})
 				},
 				a = {
-					[r.Pb]: e => s.fbt._("{amount}s", [s.fbt._param("amount", String(e))], {
+					[r.Qb]: e => s.fbt._("{amount}s", [s.fbt._param("amount", String(e))], {
 						hk: "F4qog"
 					}),
 					[r.jb]: e => s.fbt._("{amount}m", [s.fbt._param("amount", String(e))], {
@@ -536,13 +536,13 @@
 					[r.ob]: e => s.fbt._("{amount}m", [s.fbt._param("amount", String(e))], {
 						hk: "28feBj"
 					}),
-					[r.mc]: e => s.fbt._("{amount}y", [s.fbt._param("amount", String(e))], {
+					[r.nc]: e => s.fbt._("{amount}y", [s.fbt._param("amount", String(e))], {
 						hk: "10bv8G"
 					}),
 					[r.ob]: e => s.fbt._("{amount}m", [s.fbt._param("amount", String(e))], {
 						hk: "28feBj"
 					}),
-					[r.mc]: e => s.fbt._("{amount}y", [s.fbt._param("amount", String(e))], {
+					[r.nc]: e => s.fbt._("{amount}y", [s.fbt._param("amount", String(e))], {
 						hk: "10bv8G"
 					})
 				};
@@ -551,12 +551,12 @@
 				const c = Date.now(),
 					d = new Date(e).getTime(),
 					l = {
-						[r.mc]: "",
+						[r.nc]: "",
 						[r.ob]: "",
 						[r.A]: "",
 						[r.P]: "",
 						[r.jb]: "",
-						[r.Pb]: ""
+						[r.Qb]: ""
 					};
 				let u = d - c;
 				if (u <= 0) return s.fbt._("a moment", null, {
@@ -2643,7 +2643,7 @@
 				return a.a.createElement("span", {
 					className: e.className
 				}, t ? c._("Voting closed {timeAgo}", [c._param("timeAgo", a.a.createElement(r.d, {
-					seconds: e.poll.endsAt / s.Pb
+					seconds: e.poll.endsAt / s.Qb
 				}))], {
 					hk: "3OERID"
 				}) : Object(o.a)(new Date(e.poll.endsAt)))
@@ -3211,7 +3211,7 @@
 						subreddit: n
 					} = e, {
 						isSponsored: s
-					} = t, r = Object(B.a)(), i = Object(G.a)(m.Lc) === m.Pc.Enabled;
+					} = t, r = Object(B.a)(), i = Object(G.a)(m.Kc) === m.Oc.Enabled;
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return o.a.createElement(Q, {
 						nowrap: e.nowrap
 					}, o.a.createElement(Z, e));
@@ -4774,7 +4774,7 @@
 					const {
 						thingId: n,
 						packageId: l
-					} = t, f = !!n, _ = o.b(e), h = _ ? Object(u.getAwardTypeFromAward)(_) : null, E = f ? h : a.o(e) ? d.GoldPurchaseType.Premium : d.GoldPurchaseType.Coins, v = n ? Object(p.a)(n) ? "comment" : "post" : void 0, O = l || a.t(e), x = [...Object(i.d)(e), ...Object(i.f)(e)].filter(e => e.mobileId === O)[0], S = t.offerContext || (_ && 0 === _.coinPrice ? r.a.StorefrontFreeAward : Object(r.d)(x, f)), g = x ? Math.round(1e4 * (x.baselinePennies - x.pennies) / x.baselinePennies) / 100 : 0, C = x ? Math.round(1e4 * (x.coins - x.baselineCoins) / x.coins) / 100 : 0, y = x ? x.baselinePennies !== x.pennies ? `${g}_percent_price` : x.baselineCoins !== x.coins ? `${C}_percent_bonus` : void 0 : void 0, j = E === d.GoldPurchaseType.Premium ? s.wb : x ? x.pennies : void 0;
+					} = t, f = !!n, _ = o.b(e), h = _ ? Object(u.getAwardTypeFromAward)(_) : null, E = f ? h : a.o(e) ? d.GoldPurchaseType.Premium : d.GoldPurchaseType.Coins, v = n ? Object(p.a)(n) ? "comment" : "post" : void 0, O = l || a.t(e), x = [...Object(i.d)(e), ...Object(i.f)(e)].filter(e => e.mobileId === O)[0], S = t.offerContext || (_ && 0 === _.coinPrice ? r.a.StorefrontFreeAward : Object(r.d)(x, f)), g = x ? Math.round(1e4 * (x.baselinePennies - x.pennies) / x.baselinePennies) / 100 : 0, C = x ? Math.round(1e4 * (x.coins - x.baselineCoins) / x.coins) / 100 : 0, y = x ? x.baselinePennies !== x.pennies ? `${g}_percent_price` : x.baselineCoins !== x.coins ? `${C}_percent_bonus` : void 0 : void 0, j = E === d.GoldPurchaseType.Premium ? s.xb : x ? x.pennies : void 0;
 					return {
 						...c.defaults(e),
 						comment: n ? c.comment(e, n) : null,
@@ -6946,10 +6946,10 @@
 				o = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = n("./src/reddit/selectors/posts.ts");
 			const a = e => Object(o.c)(e, {
-					experimentName: r.Gd,
+					experimentName: r.Fd,
 					experimentEligibilitySelector: o.a
 				}),
-				c = (e, t) => t === r.Od.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				c = (e, t) => t === r.Nd.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				d = Object(s.a)(i.H, a, (e, t) => c(e, t)),
 				l = Object(s.a)((e, t) => t, a, (e, t) => c(e, t))
 		},
@@ -7048,7 +7048,7 @@
 			}));
 			var s = n("./src/lib/constants/index.ts");
 			const r = e => !o(e) && !!e.user.prefs.subscriptionsPinned,
-				o = e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== s.Kb.MODERATION_PAGES),
+				o = e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== s.Lb.MODERATION_PAGES),
 				i = e => e.user.prefs.reduceAnimationsFromAwards
 		},
 		"./src/reddit/singleton/EventSystem.ts": function(e, t, n) {
@@ -7109,4 +7109,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.defa4c787955a34057e6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.09000030914522dded0a.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.595ca7ae66472994c53b.js
-// Retrieved at 10/13/2021, 5:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.3166d9ae39af5ad87482.js
+// Retrieved at 10/13/2021, 6:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit", "FrontpageSidebar"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -1530,7 +1530,7 @@
 						});
 						u(Object(d.z)(o, f.a.CommentSubmitted))
 					} else {
-						C.error && C.error.type === o.Hb && B.i(v, ce(r), e);
+						C.error && C.error.type === o.Ib && B.i(v, ce(r), e);
 						const t = C.error && C.error.fields && C.error.fields[0] ? C.error.fields[0].msg : s.fbt._("Something went wrong", null, {
 							hk: "LWFS0"
 						});
@@ -1597,7 +1597,7 @@
 						depth: i + 1
 					}));
 					else {
-						if (g.error && g.error.type === o.Hb) {
+						if (g.error && g.error.type === o.Ib) {
 							const e = Object(Q.b)(m, {
 								commentId: r
 							});
@@ -2967,7 +2967,7 @@
 			const i = () => async (e, t) => {
 				const n = t();
 				Object(r.d)(n, {
-					experimentName: o.qe
+					experimentName: o.pe
 				})
 			};
 			t.default = () => async (e, t) => {
@@ -6545,9 +6545,9 @@
 				sr = n("./src/reddit/models/Search/index.ts"),
 				or = n("./src/reddit/selectors/experiments/trending.ts"),
 				rr = n("./src/reddit/helpers/chooseVariant/index.ts");
-			const ar = e => Object(Ct.H)(e) || Kt.we.Treatment1 === Object(rr.c)(e, {
+			const ar = e => Object(Ct.H)(e) || Kt.ve.Treatment1 === Object(rr.c)(e, {
 				experimentEligibilitySelector: rr.a,
-				experimentName: Kt.se
+				experimentName: Kt.re
 			});
 			var ir, cr = n("./src/reddit/selectors/experiments/uiSimplification.ts"),
 				lr = n("./src/reddit/selectors/searchResults.ts"),
@@ -7666,7 +7666,7 @@
 						clickSource: "nav"
 					})),
 					h = Object(p.e)(ac.i).startsWith("en");
-				if ((null === (n = null == a ? void 0 : a.meta) || void 0 === n ? void 0 : n.name) === y.Kb.AVATAR) return null;
+				if ((null === (n = null == a ? void 0 : a.meta) || void 0 === n ? void 0 : n.name) === y.Lb.AVATAR) return null;
 				!d && l && s(Object(Pa.a)()), u && r(_a.l);
 				const f = i && i.snoovatarFullBodyAsset ? o.fbt._("Style Avatar", null, {
 					hk: "1HIsKA"
@@ -9289,7 +9289,7 @@
 					}, this.confirmNavigate = e => {
 						const t = Object(Ua.a)(e.pathname, ol.a),
 							n = t && t.route && t.route.meta && t.route.meta.name;
-						return !n || n !== y.Kb.POST_CREATION && n !== y.Kb.PROFILE_OVERVIEW || (this.props.startChangeUsernameFlow(e.pathname), !1)
+						return !n || n !== y.Lb.POST_CREATION && n !== y.Lb.PROFILE_OVERVIEW || (this.props.startChangeUsernameFlow(e.pathname), !1)
 					}, this.exposeIFrameElement = e => {
 						this.setState({
 							googleOneTapIFrame: e
@@ -9431,7 +9431,7 @@
 					o = e.pageLayer,
 					r = B.a.accountManagerOrigin,
 					a = o ? o.url : "/",
-					i = o && o.meta && o.meta.name === y.Kb.EXPLORE ? encodeURIComponent(e.origin) : encodeURIComponent(e.origin + a);
+					i = o && o.meta && o.meta.name === y.Lb.EXPLORE ? encodeURIComponent(e.origin) : encodeURIComponent(e.origin + a);
 				return m.a.createElement(m.a.Fragment, null, s && m.a.createElement(Ea, {
 					sendNavClickInbox: () => e.sendEvent(Object(sl.s)({
 						badgeCount: t
@@ -10363,7 +10363,7 @@
 						} = this.props;
 						if (Object(Qt.x)(e)) {
 							const s = e && e.urlParams && e.urlParams.partialPostId,
-								o = `${y.Gb.Post}_${s}`,
+								o = `${y.Hb.Post}_${s}`,
 								r = t && s && t[o],
 								a = r && r.belongsTo.type === tm.a.PROFILE;
 							return !(!r || !Object(cm.a)(r) || a && !n)
@@ -10389,7 +10389,7 @@
 						const {
 							meta: t,
 							urlParams: n
-						} = a, s = t && (t.name === y.Kb.INDEX || t.name === y.Kb.SUBREDDIT && n.subredditName === As.b.Popular), o = Object(U.c)(this.props.frontpageSignupVariant), r = Object(U.c)(e.frontpageSignupVariant);
+						} = a, s = t && (t.name === y.Lb.INDEX || t.name === y.Lb.SUBREDDIT && n.subredditName === As.b.Popular), o = Object(U.c)(this.props.frontpageSignupVariant), r = Object(U.c)(e.frontpageSignupVariant);
 						s || o || !r ? o && !r && this.setState({
 							isSignupUpsellDisplayed: !1
 						}) : this.setState({
@@ -10431,8 +10431,8 @@
 					const x = Object(P.a)(this.previousLocation, d),
 						C = O || x ? this.previousLocation : d,
 						E = O || x ? this.previousPage : t,
-						j = !(!(E && E.meta && E.meta.name === y.Kb.SEARCH_RESULTS && E && E.queryParams) || E.queryParams[em.s]),
-						_ = !(!E || !E.meta || E.meta.name !== y.Kb.MODERATION_PAGES),
+						j = !(!(E && E.meta && E.meta.name === y.Lb.SEARCH_RESULTS && E && E.queryParams) || E.queryParams[em.s]),
+						_ = !(!E || !E.meta || E.meta.name !== y.Lb.MODERATION_PAGES),
 						S = Object(Qt.x)(E),
 						w = this.getIsPostCollection(),
 						M = f && !g,
@@ -10609,7 +10609,7 @@
 						routes: n
 					} = this.props, {
 						overlayScrollContainerEl: s
-					} = this.state, o = !(!t || !t.meta || t.meta.name === y.Kb.SUBREDDIT_CREATION || t.meta.name === y.Kb.PUBLIC_ACCESS_NETWORK), r = e;
+					} = this.state, o = !(!t || !t.meta || t.meta.name === y.Lb.SUBREDDIT_CREATION || t.meta.name === y.Lb.PUBLIC_ACCESS_NETWORK), r = e;
 					return m.a.createElement(gm, {
 						className: Object(v.a)(Object(Ku.b)(bm.a, this.props), {
 							[bm.a.mIsCommentsLightbox]: o,
@@ -12699,7 +12699,7 @@
 						page: i,
 						post: d,
 						isVoteCountAnimation: u
-					} = this.props, m = T[d && d.media ? d.media.type : x.o.EMBED], f = !d && (null === (e = null == i ? void 0 : i.meta) || void 0 === e ? void 0 : e.name) === l.Kb.META_MEMBERSHIP_PAYWALL_PAGE, v = d ? _.a : function({
+					} = this.props, m = T[d && d.media ? d.media.type : x.o.EMBED], f = !d && (null === (e = null == i ? void 0 : i.meta) || void 0 === e ? void 0 : e.name) === l.Lb.META_MEMBERSHIP_PAYWALL_PAGE, v = d ? _.a : function({
 						children: e,
 						postId: t
 					}) {
@@ -15379,13 +15379,13 @@
 				return Object(a.c)(e, {
 					expEventOverride: !1,
 					experimentEligibilitySelector: d,
-					experimentName: o.Ic
+					experimentName: o.Hc
 				})
 			}
 
 			function m(e) {
 				switch (e) {
-					case o.Jc.Enabled:
+					case o.Ic.Enabled:
 						return 18;
 					default:
 						return
@@ -15395,7 +15395,7 @@
 			}(s || (s = {}));
 			const p = e => {
 				switch (e) {
-					case o.Jc.Enabled:
+					case o.Ic.Enabled:
 						return s.Enabled;
 					default:
 						return s.NoBucket
@@ -17293,7 +17293,7 @@
 						currentPage: n
 					} = e.platform, s = Object(Dt.q)(e), o = null === (t = e.platform.currentPage) || void 0 === t ? void 0 : t.status, r = Ut.has(o), a = Object(Lt.l)(e, {
 						pageLayer: n
-					}), i = !(!a || !a.hideFromRobots), c = Gt(e), l = n && n.isRobotIndexable, d = s === _.Kb.COMMENTS || s === _.Kb.COLLECTION_COMMENTS, u = !(!n || !n.urlParams.partialCommentId), m = s === _.Kb.SEARCH_RESULTS || s === _.Kb.SUBREDDIT_LEADERBOARD || d && u;
+					}), i = !(!a || !a.hideFromRobots), c = Gt(e), l = n && n.isRobotIndexable, d = s === _.Lb.COMMENTS || s === _.Lb.COLLECTION_COMMENTS, u = !(!n || !n.urlParams.partialCommentId), m = s === _.Lb.SEARCH_RESULTS || s === _.Lb.SUBREDDIT_LEADERBOARD || d && u;
 					return i || r || c || (!1 === l || m) ? m ? "noindex" : "noindex,nofollow" : null
 				},
 				Gt = e => {
@@ -17524,7 +17524,7 @@
 					})
 				}),
 				Nn = "(display-mode: minimal-ui)";
-			const In = 3 * _.Pb;
+			const In = 3 * _.Qb;
 
 			function Tn(e) {
 				if (!window) return;
@@ -17575,9 +17575,9 @@
 				Kn = n("./src/reddit/selectors/experiments/postCommentFollow.ts");
 			const Qn = {
 					displayDelay: 15,
-					displayOnRoutes: [_.Kb.SUBREDDIT, _.Kb.COMMENTS],
-					experimentName: Hn.Oc,
-					experimentVariant: Hn.Sc.On,
+					displayOnRoutes: [_.Lb.SUBREDDIT, _.Lb.COMMENTS],
+					experimentName: Hn.Nc,
+					experimentVariant: Hn.Rc.On,
 					isSEOOnly: !0,
 					samplingRate: 25,
 					seed: Math.random()
@@ -17998,7 +17998,7 @@
 										e.listen(() => t(Object(Q.b)())), t(Object(Q.b)())
 									}), X().then(e => e.requestNotificationsPermissions).then(e => c.dispatch(e(u, !1, n)))
 								}
-								if (a === _.Kb.MULTIREDDIT && r.routeMatch) {
+								if (a === _.Lb.MULTIREDDIT && r.routeMatch) {
 									const {
 										multiredditName: e,
 										username: t
@@ -18519,7 +18519,7 @@
 					component: i,
 					exact: !0,
 					meta: {
-						name: o.Kb.ACKNOWLEDGEMENTS
+						name: o.Lb.ACKNOWLEDGEMENTS
 					},
 					path: a
 				};
@@ -18557,7 +18557,7 @@
 					component: i,
 					exact: !0,
 					meta: {
-						name: o.Kb.APPEAL
+						name: o.Lb.APPEAL
 					},
 					path: a
 				};
@@ -18598,7 +18598,7 @@
 					}),
 					exact: !0,
 					meta: {
-						name: o.Kb.AVATAR
+						name: o.Lb.AVATAR
 					},
 					path: i
 				};
@@ -18636,7 +18636,7 @@
 					component: i,
 					exact: !0,
 					meta: {
-						name: o.Kb.COINS
+						name: o.Lb.COINS
 					},
 					path: a
 				};
@@ -18674,7 +18674,7 @@
 					component: i,
 					exact: !0,
 					meta: {
-						name: o.Kb.COINS_MOBILE
+						name: o.Lb.COINS_MOBILE
 					},
 					path: a
 				};
@@ -18716,7 +18716,7 @@
 					component: c,
 					exact: !0,
 					meta: {
-						name: o.Kb.COLLECTION_COMMENTS
+						name: o.Lb.COLLECTION_COMMENTS
 					},
 					prefetches: [o.r.FRONTPAGE, o.r.COMMENTS_PAGE, o.r.SUBREDDIT]
 				},
@@ -18773,7 +18773,7 @@
 					path: t,
 					prefetches: [o.r.FRONTPAGE, o.r.SUBREDDIT]
 				}),
-				m = [u(o.Kb.COMMENTS, c), u(o.Kb.DUPLICATES, l), u(o.Kb.COMMENTS, d)];
+				m = [u(o.Lb.COMMENTS, c), u(o.Lb.DUPLICATES, l), u(o.Lb.COMMENTS, d)];
 			t.a = m
 		},
 		"./src/reddit/routes/econManagement/index.ts": function(e, t, n) {
@@ -18810,7 +18810,7 @@
 					}),
 					exact: !0,
 					meta: {
-						name: o.Kb.ECON_MANAGEMENT
+						name: o.Lb.ECON_MANAGEMENT
 					},
 					path: a
 				};
@@ -18848,7 +18848,7 @@
 					component: i,
 					exact: !0,
 					meta: {
-						name: o.Kb.FOLLOWERS
+						name: o.Lb.FOLLOWERS
 					},
 					path: a,
 					prefetches: [o.r.PROFILE_OVERVIEW]
@@ -18887,7 +18887,7 @@
 					component: i,
 					exact: !0,
 					meta: {
-						name: o.Kb.FRAMED_GILD
+						name: o.Lb.FRAMED_GILD
 					},
 					path: a
 				};
@@ -18925,7 +18925,7 @@
 					component: i,
 					exact: !0,
 					meta: {
-						name: o.Kb.FRAMED_MODAL
+						name: o.Lb.FRAMED_MODAL
 					},
 					path: a
 				};
@@ -18976,7 +18976,7 @@
 					...f,
 					path: p,
 					meta: {
-						name: a.Kb.INDEX
+						name: a.Lb.INDEX
 					},
 					routePredicate: l.K
 				},
@@ -18984,7 +18984,7 @@
 					...f,
 					path: p,
 					meta: {
-						name: a.Kb.INDEX,
+						name: a.Lb.INDEX,
 						telemetryPageType: "popular"
 					},
 					routePredicate: e => !Object(l.K)(e)
@@ -18993,7 +18993,7 @@
 					...f,
 					path: b,
 					meta: {
-						name: a.Kb.LISTING
+						name: a.Lb.LISTING
 					},
 					routePredicate: l.K
 				},
@@ -19001,7 +19001,7 @@
 					...f,
 					path: b,
 					meta: {
-						name: a.Kb.LISTING,
+						name: a.Lb.LISTING,
 						telemetryPageType: "popular"
 					},
 					routePredicate: e => !Object(l.K)(e)
@@ -19068,7 +19068,7 @@
 					component: c,
 					exact: !0,
 					meta: {
-						name: o.Kb.GEOTAGGING
+						name: o.Lb.GEOTAGGING
 					},
 					path: i,
 					prefetches: []
@@ -19110,7 +19110,7 @@
 					component: c,
 					exact: !0,
 					meta: {
-						name: a.Kb.INBOX_PAGES
+						name: a.Lb.INBOX_PAGES
 					},
 					path: d
 				};
@@ -19129,7 +19129,7 @@
 					chunk: c.r.EMPTY,
 					exact: !0,
 					meta: {
-						name: c.Kb.AVATAR_PROFILE
+						name: c.Lb.AVATAR_PROFILE
 					},
 					path: ["/user/me/avatar", "/u/me/avatar", "/user/:profileName/avatar"]
 				},
@@ -19144,7 +19144,7 @@
 					chunk: c.r.EMPTY,
 					exact: !0,
 					meta: {
-						name: c.Kb.EMAIL_VERIFICATION
+						name: c.Lb.EMAIL_VERIFICATION
 					},
 					path: "/verification/:verificationToken"
 				},
@@ -19161,7 +19161,7 @@
 					chunk: c.r.EMPTY,
 					exact: !0,
 					meta: {
-						name: c.Kb.EXPLORE
+						name: c.Lb.EXPLORE
 					},
 					path: ["/explore", "/explore/:categoryName"],
 					prefetches: [c.r.COMMENTS_PAGE, c.r.FRONTPAGE]
@@ -19187,7 +19187,7 @@
 				chunk: c.r.EMPTY,
 				exact: !0,
 				meta: {
-					name: c.Kb.ORIGINAL_CONTENT_REDIRECT
+					name: c.Lb.ORIGINAL_CONTENT_REDIRECT
 				}
 			}));
 			var T = [{
@@ -19198,7 +19198,7 @@
 					chunk: c.r.EMPTY,
 					exact: !0,
 					meta: {
-						name: c.Kb.ORIGINAL_CONTENT_REDIRECT
+						name: c.Lb.ORIGINAL_CONTENT_REDIRECT
 					}
 				}, ...I],
 				A = n("./src/reddit/routes/postCreation/index.ts"),
@@ -19209,7 +19209,7 @@
 					chunk: c.r.EMPTY,
 					exact: !0,
 					meta: {
-						name: c.Kb.POWERUP_REDIRECT
+						name: c.Lb.POWERUP_REDIRECT
 					},
 					path: "/powerup"
 				},
@@ -19219,7 +19219,7 @@
 					chunk: c.r.EMPTY,
 					exact: !0,
 					meta: {
-						name: c.Kb.PREDICTION_REDIRECT
+						name: c.Lb.PREDICTION_REDIRECT
 					},
 					path: "/prediction"
 				},
@@ -19248,7 +19248,7 @@
 					chunk: c.r.EMPTY,
 					exact: !0,
 					meta: {
-						name: c.Kb.PROFILE_ME
+						name: c.Lb.PROFILE_ME
 					},
 					path: ["/user/me", "/user/me/:rest(.*)"]
 				},
@@ -19269,7 +19269,7 @@
 					chunk: c.r.EMPTY,
 					exact: !0,
 					meta: {
-						name: c.Kb.PROFILE_REDIRECT
+						name: c.Lb.PROFILE_REDIRECT
 					},
 					path: ["/r/u_:profileName", "/r/u_:profileName/:rest(.*)", "/u/:profileName", "/u/:profileName/:rest(.*)"]
 				},
@@ -19287,7 +19287,7 @@
 					chunk: c.r.EMPTY,
 					exact: !0,
 					meta: {
-						name: c.Kb.PROFILE_REDIRECT
+						name: c.Lb.PROFILE_REDIRECT
 					},
 					path: ["/user/:profileName/submitted", "/user/:profileName/submitted/:rest(.*)"]
 				},
@@ -19304,7 +19304,7 @@
 					},
 					chunk: c.r.EMPTY,
 					meta: {
-						name: c.Kb.SETTINGS_REDIRECT
+						name: c.Lb.SETTINGS_REDIRECT
 					},
 					path: "/prefs/:page(deactivate|blocked)?"
 				}, {
@@ -19313,7 +19313,7 @@
 					},
 					chunk: c.r.EMPTY,
 					meta: {
-						name: c.Kb.SETTINGS_REDIRECT
+						name: c.Lb.SETTINGS_REDIRECT
 					},
 					path: ["/user/:username/about/edit", "/user/:username/about/edit/privacy"]
 				}],
@@ -19365,7 +19365,7 @@
 					}),
 					exact: !0,
 					meta: {
-						name: o.Kb.META_ARBITRUM_POINTS_MIGRATION_PAGE
+						name: o.Lb.META_ARBITRUM_POINTS_MIGRATION_PAGE
 					},
 					path: ["/web/points-migration/"]
 				},
@@ -19394,7 +19394,7 @@
 					}),
 					exact: !0,
 					meta: {
-						name: o.Kb.META_COMMUNITY_POINTS_LEARN_MORE_PAGE
+						name: o.Lb.META_COMMUNITY_POINTS_LEARN_MORE_PAGE
 					},
 					path: ["/community-points/", "/vault/", "/web/community-points/"]
 				},
@@ -19423,7 +19423,7 @@
 					}),
 					exact: !0,
 					meta: {
-						name: o.Kb.META_MEMBERSHIP_PAYWALL_PAGE
+						name: o.Lb.META_MEMBERSHIP_PAYWALL_PAGE
 					},
 					path: ["/web/special-membership/:subredditName", "/web/membership/:subredditName"]
 				},
@@ -19437,7 +19437,7 @@
 					chunk: o.r.EMPTY,
 					exact: !0,
 					meta: {
-						name: o.Kb.META_VAULT_BURN
+						name: o.Lb.META_VAULT_BURN
 					},
 					path: ["/vault/burn"]
 				};
@@ -19478,7 +19478,7 @@
 					component: c,
 					exact: !0,
 					meta: {
-						name: a.Kb.MODQUEUE_PAGES
+						name: a.Lb.MODQUEUE_PAGES
 					},
 					path: d
 				};
@@ -19502,8 +19502,8 @@
 				i = n("./src/lib/countrySites/index.ts"),
 				c = n("./src/lib/loadableAction/index.ts"),
 				l = n("./node_modules/react-router/esm/react-router.js");
-			const d = Object.keys(a.bc).map(e => a.bc[e]).join("|"),
-				u = [a.bc.Awards],
+			const d = Object.keys(a.cc).map(e => a.cc[e]).join("|"),
+				u = [a.cc.Awards],
 				m = u.join("|"),
 				p = e => `${e}about/scheduledposts`,
 				b = e => `${e}about/eventposts`,
@@ -19544,7 +19544,7 @@
 					component: f,
 					exact: !0,
 					meta: {
-						name: a.Kb.MODERATION_PAGES
+						name: a.Lb.MODERATION_PAGES
 					},
 					path: v,
 					prefetches: [a.r.SUBREDDIT]
@@ -19589,7 +19589,7 @@
 					component: c,
 					exact: !0,
 					meta: {
-						name: a.Kb.MULTIREDDIT
+						name: a.Lb.MULTIREDDIT
 					},
 					path: p,
 					prefetches: [a.r.SUBREDDIT]
@@ -19631,7 +19631,7 @@
 					component: i,
 					exact: !0,
 					meta: {
-						name: o.Kb.NOTIFICATIONS_INBOX
+						name: o.Lb.NOTIFICATIONS_INBOX
 					},
 					path: a,
 					prefetches: [o.r.FRONTPAGE]
@@ -19670,7 +19670,7 @@
 					component: i,
 					exact: !0,
 					meta: {
-						name: o.Kb.POST_DRAFT
+						name: o.Lb.POST_DRAFT
 					},
 					path: a,
 					prefetches: [o.r.POST_DRAFT]
@@ -19711,7 +19711,7 @@
 					}),
 					exact: !0,
 					meta: {
-						name: o.Kb.POWERUPS
+						name: o.Lb.POWERUPS
 					},
 					path: a
 				};
@@ -19751,7 +19751,7 @@
 					}),
 					exact: !0,
 					meta: {
-						name: o.Kb.PREDICTIONS,
+						name: o.Lb.PREDICTIONS,
 						isResponsive: !0
 					},
 					path: a
@@ -19790,7 +19790,7 @@
 					component: i,
 					exact: !0,
 					meta: {
-						name: o.Kb.PROFILE_COMMENTS
+						name: o.Lb.PROFILE_COMMENTS
 					},
 					path: a,
 					prefetches: [o.r.COMMENTS_PAGE]
@@ -19829,7 +19829,7 @@
 					component: i,
 					exact: !0,
 					meta: {
-						name: o.Kb.PROFILE_MODERATION
+						name: o.Lb.PROFILE_MODERATION
 					},
 					path: a
 				};
@@ -19867,7 +19867,7 @@
 					component: i,
 					exact: !0,
 					meta: {
-						name: o.Kb.PROFILE_OVERVIEW
+						name: o.Lb.PROFILE_OVERVIEW
 					},
 					path: a,
 					prefetches: [o.r.COMMENTS_PAGE]
@@ -19906,7 +19906,7 @@
 					component: i,
 					exact: !0,
 					meta: {
-						name: o.Kb.PROFILE_POSTS
+						name: o.Lb.PROFILE_POSTS
 					},
 					path: a,
 					prefetches: [o.r.COMMENTS_PAGE]
@@ -19949,7 +19949,7 @@
 					component: l,
 					exact: !0,
 					meta: {
-						name: a.Kb.PROFILE_PRIVATE
+						name: a.Lb.PROFILE_PRIVATE
 					},
 					path: u,
 					prefetches: [a.r.COMMENTS_PAGE]
@@ -19990,7 +19990,7 @@
 					component: i,
 					exact: !0,
 					meta: {
-						name: o.Kb.PROFILE_SNOOBUILDER
+						name: o.Lb.PROFILE_SNOOBUILDER
 					},
 					routePredicate: a.d.snoovatar30
 				};
@@ -20027,7 +20027,7 @@
 					component: a,
 					exact: !0,
 					meta: {
-						name: o.Kb.PUBLIC_ACCESS_NETWORK
+						name: o.Lb.PUBLIC_ACCESS_NETWORK
 					},
 					path: ["/rpan/r/:subredditName/:partialPostId?", "/rpan/:partialPostId?"],
 					prefetches: [o.r.PUBLIC_ACCESS_NETWORK]
@@ -20066,7 +20066,7 @@
 					component: i,
 					exact: !0,
 					meta: {
-						name: o.Kb.REPORT
+						name: o.Lb.REPORT
 					},
 					path: a
 				};
@@ -20104,7 +20104,7 @@
 					component: i,
 					exact: !0,
 					meta: {
-						name: o.Kb.SEARCH_RESULTS
+						name: o.Lb.SEARCH_RESULTS
 					},
 					path: a,
 					prefetches: [o.r.FRONTPAGE, o.r.SUBREDDIT, o.r.COMMENTS_PAGE]
@@ -20118,7 +20118,7 @@
 				r = n("./node_modules/@loadable/component/dist/loadable.esm.js"),
 				a = n("./src/lib/constants/index.ts"),
 				i = n("./src/lib/loadableAction/index.ts");
-			const c = Object.keys(a.Yb).map(e => a.Yb[e]).join("|"),
+			const c = Object.keys(a.Zb).map(e => a.Zb[e]).join("|"),
 				l = [{
 					action: Object(i.a)(() => Promise.all([n.e("vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PostCreation~Settings~~f8934a85"), n.e("vendors~ModStatsChart~Settings"), n.e("Settings")]).then(n.bind(null, "./src/reddit/actions/pages/settings.ts")).then(e => e.settingsPageRequested)),
 					component: Object(r.a)({
@@ -20144,7 +20144,7 @@
 					chunk: a.r.SETTINGS,
 					exact: !0,
 					meta: {
-						name: a.Kb.SETTINGS
+						name: a.Lb.SETTINGS
 					},
 					path: `/settings/:page(${c})?`
 				}, {
@@ -20172,7 +20172,7 @@
 					chunk: a.r.USER_DATA_REQUEST,
 					exact: !0,
 					meta: {
-						name: a.Kb.USER_DATA_REQUEST
+						name: a.Lb.USER_DATA_REQUEST
 					},
 					path: "/settings/data-request"
 				}];
@@ -20210,7 +20210,7 @@
 					component: i,
 					exact: !0,
 					meta: {
-						name: o.Kb.SUBREDDIT_LEADERBOARD,
+						name: o.Lb.SUBREDDIT_LEADERBOARD,
 						isResponsive: !0
 					},
 					path: a,
@@ -20256,7 +20256,7 @@
 					chunk: r.r.EMPTY,
 					exact: !0,
 					meta: {
-						name: r.Kb.SUBREDDIT_WIKI
+						name: r.Lb.SUBREDDIT_WIKI
 					},
 					path: u
 				}, b = {
@@ -20265,7 +20265,7 @@
 					component: l,
 					exact: !0,
 					meta: {
-						name: r.Kb.SUBREDDIT_WIKI
+						name: r.Lb.SUBREDDIT_WIKI
 					},
 					path: d,
 					prefetches: [r.r.SUBREDDIT]
@@ -20320,7 +20320,7 @@
 					}),
 					exact: !0,
 					meta: {
-						name: o.Kb.TALK
+						name: o.Lb.TALK
 					},
 					path: a
 				};
@@ -20359,7 +20359,7 @@
 					component: a,
 					exact: !0,
 					meta: {
-						name: o.Kb.TOPIC
+						name: o.Lb.TOPIC
 					},
 					prefetches: [o.r.COMMENTS_PAGE, o.r.FRONTPAGE]
 				};
@@ -20393,13 +20393,13 @@
 				y = e => e.accountManagerModalData.redirectUrl,
 				O = Object(a.a)((e, t) => t.path, (e, t) => t.uiMode, v, d.a, p.a, g.a, u.b, e => Object(b.c)(e, {
 					experimentEligibilitySelector: e => !Object(h.e)(e),
-					experimentName: l.de
+					experimentName: l.ce
 				}), m.a, f.i, (e, t, n, a, d, u, m, p, b, h) => {
 					let f = `${r.a.accountManagerOrigin}${e}`;
 					if (f = Object(i.a)(f, {
 							experiment_d2x_2020ify_buttons: "enabled"
 						}), p && (f = Object(i.a)(f, {
-							[`experiment_${l.de}`]: p
+							[`experiment_${l.ce}`]: p
 						})), d && (f = Object(i.a)(f, {
 							experiment_d2x_onboarding: "enabled"
 						})), e === c.c.GoogleOneTap) return Object(i.a)(f, {
@@ -20409,7 +20409,7 @@
 							[l.Nb]: a,
 							uiMode: t
 						})), b && (f = Object(i.a)(f, {
-							[`experiment_${l.jd}`]: b
+							[`experiment_${l.id}`]: b
 						})), u && (f = Object(i.a)(f, {
 							mweb_responsive_settings: "treatment"
 						})), h) {
@@ -20605,9 +20605,9 @@
 			const a = e => {
 				const t = Object(o.c)(e, {
 					experimentEligibilitySelector: r.K,
-					experimentName: s.zc
+					experimentName: s.yc
 				});
-				return !(!t || Object(s.Je)(t))
+				return !(!t || Object(s.Ie)(t))
 			}
 		},
 		"./src/reddit/selectors/experiments/frontpageSignup.ts": function(e, t, n) {
@@ -20639,14 +20639,14 @@
 					experimentEligibilitySelector: e => d(e, t),
 					experimentName: o.Nb,
 					throttledVariants: {
-						[o.Kc.CurrentThrottled]: o.Nb
+						[o.Jc.CurrentThrottled]: o.Nb
 					}
 				}), i.a),
-				m = e => e === o.Kc.CurrentThrottled,
-				p = e => e === o.Kc.CurrentThrottled || e === o.Kc.CurrentUnthrottled || e === o.Kc.CurrentUnthrottledCopy || e === o.Kc.NewPopUnthrottledCopy,
-				b = e => e === o.Kc.NewPopUnthrottledCopy,
-				h = e => e === o.Kc.NewPageUnthrottledCopy || e === o.Kc.NewPageUnthrottledCopyFields,
-				f = e => e === o.Kc.NewPageUnthrottledCopyFields
+				m = e => e === o.Jc.CurrentThrottled,
+				p = e => e === o.Jc.CurrentThrottled || e === o.Jc.CurrentUnthrottled || e === o.Jc.CurrentUnthrottledCopy || e === o.Jc.NewPopUnthrottledCopy,
+				b = e => e === o.Jc.NewPopUnthrottledCopy,
+				h = e => e === o.Jc.NewPageUnthrottledCopy || e === o.Jc.NewPageUnthrottledCopyFields,
+				f = e => e === o.Jc.NewPageUnthrottledCopyFields
 		},
 		"./src/reddit/selectors/experiments/navbarLikeMweb.ts": function(e, t, n) {
 			"use strict";
@@ -20656,9 +20656,9 @@
 			var s = n("./src/reddit/constants/experiments.ts"),
 				o = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const r = e => Object(o.c)(e, {
-				experimentName: s.qd,
+				experimentName: s.pd,
 				experimentEligibilitySelector: o.a
-			}) === s.vd.Enabled
+			}) === s.ud.Enabled
 		},
 		"./src/reddit/selectors/experiments/onboarding.ts": function(e, t, n) {
 			"use strict";
@@ -20675,7 +20675,7 @@
 				a = n("./src/reddit/selectors/experiments/utils.ts");
 			const i = Object(s.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: o.qe,
+					experimentName: o.pe,
 					expEventOverride: !1
 				}), e => e),
 				c = Object(s.a)(i, e => !!Object(a.a)(e)),
@@ -20697,7 +20697,7 @@
 					experimentName: o.vb,
 					experimentEligibilitySelector: a.e
 				}), i.a),
-				l = Object(s.a)(c, e => e === o.Id.Enabled),
+				l = Object(s.a)(c, e => e === o.Hd.Enabled),
 				d = Object(s.a)(e => Object(r.c)(e, {
 					experimentName: o.eb,
 					experimentEligibilitySelector: a.e
@@ -20720,26 +20720,26 @@
 			const r = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: s.Fd
-					}) === s.Bc
+						experimentName: s.Ed
+					}) === s.Ac
 				},
 				a = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: s.Ed
-					}) === s.Bc
+						experimentName: s.Dd
+					}) === s.Ac
 				},
 				i = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: s.xd
-					}) === s.Bc
+						experimentName: s.wd
+					}) === s.Ac
 				},
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: s.wd
-					}) === s.Bc
+						experimentName: s.vd
+					}) === s.Ac
 				}
 		},
 		"./src/reddit/selectors/experiments/trending.ts": function(e, t, n) {
@@ -20750,9 +20750,9 @@
 			var s = n("./src/reddit/constants/experiments.ts"),
 				o = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				r = n("./src/reddit/selectors/user.ts");
-			const a = e => Object(r.H)(e) || !(s.ve.Holdout === Object(o.c)(e, {
+			const a = e => Object(r.H)(e) || !(s.ue.Holdout === Object(o.c)(e, {
 				experimentEligibilitySelector: o.a,
-				experimentName: s.re
+				experimentName: s.qe
 			}))
 		},
 		"./src/reddit/selectors/experiments/uiSimplification.ts": function(e, t, n) {
@@ -20767,17 +20767,17 @@
 				o = n("./src/reddit/featureFlags/utils.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const a = ["AU", "CA", "GB", "US"],
-				i = new Set([s.Tc.AllItems, s.Tc.TrendingSearch]),
+				i = new Set([s.Sc.AllItems, s.Sc.TrendingSearch]),
 				c = e => {
 					const t = Object(r.c)(e, {
 						experimentEligibilitySelector: Object(o.d)(Object(o.b)(...a)),
-						experimentName: s.Uc
+						experimentName: s.Tc
 					});
 					return i.has(t)
 				},
-				l = e => s.Tc.AllItems === Object(r.c)(e, {
+				l = e => s.Sc.AllItems === Object(r.c)(e, {
 					experimentEligibilitySelector: Object(o.d)(Object(o.b)(...a)),
-					experimentName: s.Uc
+					experimentName: s.Tc
 				})
 		},
 		"./src/reddit/selectors/moderatingComments.ts": function(e, t, n) {
@@ -21036,4 +21036,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePo~5f1ac562", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250", "Governance~ModListing~Reddit~Subreddit", "Chat~Governance~Reddit", "Reddit~StandalonePostPage~reddit-components-MediumPost", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.595ca7ae66472994c53b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.3166d9ae39af5ad87482.js.map

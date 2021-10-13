@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlow.cd544cf763a07255468f.js
-// Retrieved at 10/13/2021, 5:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlow.9c8af205e8ad2c2d81fd.js
+// Retrieved at 10/13/2021, 6:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlow", "FrontpageSidebar", "ReportFlowNew"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, o) {
@@ -1049,7 +1049,7 @@
 				[r.S]: () => n.fbt._("Sorry, we accept only images (.png, .jpeg, .gif) and videos (.mp4, .mov)", null, {
 					hk: "1hw868"
 				}),
-				[r.jc]: () => n.fbt._("Video size must be less than {max file size}GB", [n.fbt._param("max file size", (r.eb / r.gb / 1024).toFixed(1))], {
+				[r.kc]: () => n.fbt._("Video size must be less than {max file size}GB", [n.fbt._param("max file size", (r.eb / r.gb / 1024).toFixed(1))], {
 					hk: "4FkABU"
 				})
 			}
@@ -4866,7 +4866,7 @@
 			var n = o("./src/lib/constants/index.ts"),
 				r = o("./src/lib/listingSort/index.ts");
 			t.a = (e, t) => {
-				if (e) return Object(r.a)(e) ? t || n.ec : void 0
+				if (e) return Object(r.a)(e) ? t || n.fc : void 0
 			}
 		},
 		"./src/reddit/helpers/graphql/normalizePostFlairStyleTemplateFromGql/index.ts": function(e, t, o) {
@@ -5974,9 +5974,9 @@
 					experimentName: r.Pb,
 					experimentEligibilitySelector: e => l(e, t)
 				}), e => e),
-				d = e => e === r.te.NoCommunityWidgets,
-				u = e => e === r.te.NoRulesModerators,
-				p = e => e === r.te.RelatedPostsDu
+				d = e => e === r.se.NoCommunityWidgets,
+				u = e => e === r.se.NoRulesModerators,
+				p = e => e === r.se.RelatedPostsDu
 		},
 		"./src/reddit/selectors/tooltip.ts": function(e, t, o) {
 			"use strict";
@@ -6005,4 +6005,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.cd544cf763a07255468f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.9c8af205e8ad2c2d81fd.js.map

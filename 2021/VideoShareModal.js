@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/VideoShareModal.7c858cae0494dbdbbc22.js
-// Retrieved at 10/13/2021, 5:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/VideoShareModal.e3c9a70a3903fffcbb16.js
+// Retrieved at 10/13/2021, 6:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["VideoShareModal"], {
 		"./src/reddit/actions/publicAccessNetwork/votes.ts": function(e, t, s) {
@@ -63,7 +63,7 @@
 					className: h.a.NewUserpic,
 					userId: t
 				});
-				const r = (e => e.replace(l.Gb.Account + "_", ""))(t),
+				const r = (e => e.replace(l.Hb.Account + "_", ""))(t),
 					{
 						avatar: o,
 						color: d
@@ -1750,4 +1750,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/VideoShareModal.7c858cae0494dbdbbc22.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/VideoShareModal.e3c9a70a3903fffcbb16.js.map

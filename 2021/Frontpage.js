@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.545ed0fbee97a978ed12.js
-// Retrieved at 10/13/2021, 5:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.b0d2209acf75183e502f.js
+// Retrieved at 10/13/2021, 6:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -687,7 +687,7 @@
 						m = c.listings.postOrder.api.error[i],
 						u = c.listings.postOrder.api.pending[i],
 						p = T.y in e.queryParams && e.queryParams[T.y].toUpperCase() || "",
-						h = p in l.dc && l.dc[p];
+						h = p in l.ec && l.ec[p];
 					if (u || d && !m && !t) return void(d && (a(S.l({
 						title: k.d()
 					})), c.sidebarPromotedPosts.firstFetch || window.addEventListener("load", () => {
@@ -740,7 +740,7 @@
 						m = Object(W.a)(L.b, i, d),
 						u = c.listings.postOrder.loadMore[m],
 						p = d[T.y] ? d[T.y].toUpperCase() : "",
-						h = p in l.dc && l.dc[p];
+						h = p in l.ec && l.ec[p];
 					if (u) {
 						const e = c.listings.postOrder.api.pending[m],
 							a = c.listings.postOrder.fetchedTokens,
@@ -797,7 +797,7 @@
 						r = s.platform.currentPage ? s.platform.currentPage.queryParams : {},
 						o = Object(W.a)(L.b, n, r),
 						i = r[T.y] ? r[T.y].toUpperCase() : "",
-						d = i in l.dc && l.dc[i],
+						d = i in l.ec && l.ec[i],
 						m = Object(q.a)(s),
 						u = Object(q.b)(m);
 					await t(ne(o, {
@@ -3460,7 +3460,7 @@
 				sort: a
 			}, s, c, n, r, o) => {
 				const i = S.y in t && t[S.y].toUpperCase(),
-					l = "string" == typeof i && i in z.dc ? z.dc[i] : z.ec,
+					l = "string" == typeof i && i in z.ec ? z.ec[i] : z.fc,
 					d = Object(p.a)(J.b, a, t),
 					m = e,
 					u = [];
@@ -3946,13 +3946,13 @@
 			const r = e => {
 					const t = Object(c.c)(e, {
 						experimentEligibilitySelector: c.a,
-						experimentName: s.De
+						experimentName: s.Ce
 					});
 					return t === s.N.TwoDayCooldown || t === s.N.FiveDayCooldown
 				},
 				o = e => {
 					const t = Object(n.d)(e, {
-							experimentName: s.De
+							experimentName: s.Ce
 						}),
 						a = null == t ? void 0 : t.variant;
 					return a === s.N.TwoDayCooldown ? 2 : a === s.N.FiveDayCooldown ? 5 : 0
@@ -3995,8 +3995,8 @@
 					return Object(c.c)(e, {
 						experimentEligibilitySelector: i,
 						experimentName: s.Ub
-					}) === s.Dc.Enabled
-				}(e) ? l.Achievements : t === s.Ec.ControlBanner ? l.CommunitySpacesControl : t === s.Ec.EnabledBanner ? l.CommunitySpaces : null
+					}) === s.Cc.Enabled
+				}(e) ? l.Achievements : t === s.Dc.ControlBanner ? l.CommunitySpacesControl : t === s.Dc.EnabledBanner ? l.CommunitySpaces : null
 			}! function(e) {
 				e.Achievements = "achievements", e.CommunitySpaces = "communitySpaces", e.CommunitySpacesControl = "communitySpaces--control"
 			}(l || (l = {}))
@@ -4057,4 +4057,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.545ed0fbee97a978ed12.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.b0d2209acf75183e502f.js.map
