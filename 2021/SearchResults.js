@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.a744208b5e7be7302d03.js
-// Retrieved at 10/14/2021, 7:00:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.8c4f4a1f59e7db7a0fe5.js
+// Retrieved at 10/14/2021, 7:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -4460,6 +4460,7 @@
 		"./src/reddit/components/PostRailAndVotes/index.m.less": function(e, t, s) {
 			e.exports = {
 				score: "_3a2ZHWaih05DgAOtvu6cIo",
+				allowPointerEvents: "_2iiIcja5xIjg-5sI4ECvcV",
 				checkbox: "_25sIJZLIxTa3eolXDWieo5"
 			}
 		},
@@ -4467,48 +4468,53 @@
 			"use strict";
 			var r = s("./node_modules/react/index.js"),
 				n = s.n(r),
-				i = s("./src/reddit/components/PostLeftRail/index.tsx"),
-				o = s("./src/reddit/components/VerticalVotes/index.tsx"),
-				a = s("./src/reddit/controls/Checkbox/index.tsx"),
-				c = s("./src/reddit/helpers/isPost.ts"),
-				d = s("./src/reddit/helpers/showReportIndicator/index.ts"),
-				l = s("./src/reddit/components/PostRailAndVotes/index.m.less"),
-				m = s.n(l);
+				i = s("./src/lib/classNames/index.ts"),
+				o = s("./src/reddit/components/PostLeftRail/index.tsx"),
+				a = s("./src/reddit/components/VerticalVotes/index.tsx"),
+				c = s("./src/reddit/controls/Checkbox/index.tsx"),
+				d = s("./src/reddit/helpers/isPost.ts"),
+				l = s("./src/reddit/helpers/showReportIndicator/index.ts"),
+				m = s("./src/reddit/components/PostRailAndVotes/index.m.less"),
+				u = s.n(m);
 			t.a = e => {
 				const {
 					model: t,
 					handleVote: s,
 					showBulkActionCheckbox: r = !1,
-					isCheckboxSelected: l = !1,
-					isCountAnimShadowTestEnabled: u,
-					toggleCheckbox: p = (() => {}),
-					flairStyleTemplate: h,
-					redditStyle: b,
-					isOverlay: C,
-					isVoteCountAnimation: x,
-					triggerCelebratoryMoment: f,
-					postId: g
-				} = e, y = `upvote-button-${t.id}${C?"-overlay":""}`;
-				return n.a.createElement(i.b, {
+					isCheckboxSelected: m = !1,
+					isCountAnimShadowTestEnabled: p,
+					toggleCheckbox: h = (() => {}),
+					flairStyleTemplate: b,
+					redditStyle: C,
+					isOverlay: x,
+					isVoteCountAnimation: f,
+					triggerCelebratoryMoment: g,
+					postId: y,
+					isReadingIndicatorsExperimentEnabled: v
+				} = e, O = `upvote-button-${t.id}${x?"-overlay":""}`;
+				return n.a.createElement(o.b, {
 					isRemoved: !!t.bannedBy,
-					isReported: Object(d.a)(t),
-					isSponsored: !!Object(c.b)(t) && t.isSponsored,
-					redditStyle: b
-				}, r && n.a.createElement(a.a, {
-					className: m.a.checkbox,
-					isCheckboxSelected: l,
-					toggleCheckbox: p
-				}), n.a.createElement(o.a, {
-					flairStyleTemplate: h,
+					isReported: Object(l.a)(t),
+					isSponsored: !!Object(d.b)(t) && t.isSponsored,
+					redditStyle: C
+				}, r && n.a.createElement(c.a, {
+					className: u.a.checkbox,
+					isCheckboxSelected: m,
+					toggleCheckbox: h
+				}), n.a.createElement(a.a, {
+					flairStyleTemplate: b,
 					model: t,
 					onVoteClick: s,
-					redditStyle: b,
-					upvoteTooltipId: y,
-					isVoteCountAnimation: x,
-					isCountAnimShadowTestEnabled: u,
-					triggerCelebratoryMoment: f,
-					postId: g,
-					scoreClassName: m.a.score
+					redditStyle: C,
+					upvoteTooltipId: O,
+					isVoteCountAnimation: f,
+					isCountAnimShadowTestEnabled: p,
+					triggerCelebratoryMoment: g,
+					postId: y,
+					scoreClassName: Object(i.a)(u.a.score, {
+						[u.a.allowPointerEvents]: v
+					}),
+					isReadingIndicatorsExperimentEnabled: v
 				}))
 			}
 		},
@@ -11853,4 +11859,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.a744208b5e7be7302d03.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.8c4f4a1f59e7db7a0fe5.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.9bebee0b677435d099e2.js
-// Retrieved at 10/14/2021, 7:00:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.985ac170b9a7fb2183de.js
+// Retrieved at 10/14/2021, 7:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, n) {
@@ -2220,6 +2220,7 @@
 		"./src/reddit/components/PostRailAndVotes/index.m.less": function(e, t, n) {
 			e.exports = {
 				score: "_3a2ZHWaih05DgAOtvu6cIo",
+				allowPointerEvents: "_2iiIcja5xIjg-5sI4ECvcV",
 				checkbox: "_25sIJZLIxTa3eolXDWieo5"
 			}
 		},
@@ -2227,48 +2228,53 @@
 			"use strict";
 			var s = n("./node_modules/react/index.js"),
 				o = n.n(s),
-				r = n("./src/reddit/components/PostLeftRail/index.tsx"),
-				a = n("./src/reddit/components/VerticalVotes/index.tsx"),
-				i = n("./src/reddit/controls/Checkbox/index.tsx"),
-				c = n("./src/reddit/helpers/isPost.ts"),
-				d = n("./src/reddit/helpers/showReportIndicator/index.ts"),
-				l = n("./src/reddit/components/PostRailAndVotes/index.m.less"),
-				m = n.n(l);
+				r = n("./src/lib/classNames/index.ts"),
+				a = n("./src/reddit/components/PostLeftRail/index.tsx"),
+				i = n("./src/reddit/components/VerticalVotes/index.tsx"),
+				c = n("./src/reddit/controls/Checkbox/index.tsx"),
+				d = n("./src/reddit/helpers/isPost.ts"),
+				l = n("./src/reddit/helpers/showReportIndicator/index.ts"),
+				m = n("./src/reddit/components/PostRailAndVotes/index.m.less"),
+				u = n.n(m);
 			t.a = e => {
 				const {
 					model: t,
 					handleVote: n,
 					showBulkActionCheckbox: s = !1,
-					isCheckboxSelected: l = !1,
-					isCountAnimShadowTestEnabled: u,
-					toggleCheckbox: p = (() => {}),
-					flairStyleTemplate: b,
-					redditStyle: x,
-					isOverlay: h,
-					isVoteCountAnimation: f,
-					triggerCelebratoryMoment: v,
-					postId: E
-				} = e, C = `upvote-button-${t.id}${h?"-overlay":""}`;
-				return o.a.createElement(r.b, {
+					isCheckboxSelected: m = !1,
+					isCountAnimShadowTestEnabled: p,
+					toggleCheckbox: b = (() => {}),
+					flairStyleTemplate: x,
+					redditStyle: h,
+					isOverlay: f,
+					isVoteCountAnimation: v,
+					triggerCelebratoryMoment: E,
+					postId: C,
+					isReadingIndicatorsExperimentEnabled: y
+				} = e, O = `upvote-button-${t.id}${f?"-overlay":""}`;
+				return o.a.createElement(a.b, {
 					isRemoved: !!t.bannedBy,
-					isReported: Object(d.a)(t),
-					isSponsored: !!Object(c.b)(t) && t.isSponsored,
-					redditStyle: x
-				}, s && o.a.createElement(i.a, {
-					className: m.a.checkbox,
-					isCheckboxSelected: l,
-					toggleCheckbox: p
-				}), o.a.createElement(a.a, {
-					flairStyleTemplate: b,
+					isReported: Object(l.a)(t),
+					isSponsored: !!Object(d.b)(t) && t.isSponsored,
+					redditStyle: h
+				}, s && o.a.createElement(c.a, {
+					className: u.a.checkbox,
+					isCheckboxSelected: m,
+					toggleCheckbox: b
+				}), o.a.createElement(i.a, {
+					flairStyleTemplate: x,
 					model: t,
 					onVoteClick: n,
-					redditStyle: x,
-					upvoteTooltipId: C,
-					isVoteCountAnimation: f,
-					isCountAnimShadowTestEnabled: u,
-					triggerCelebratoryMoment: v,
-					postId: E,
-					scoreClassName: m.a.score
+					redditStyle: h,
+					upvoteTooltipId: O,
+					isVoteCountAnimation: v,
+					isCountAnimShadowTestEnabled: p,
+					triggerCelebratoryMoment: E,
+					postId: C,
+					scoreClassName: Object(r.a)(u.a.score, {
+						[u.a.allowPointerEvents]: y
+					}),
+					isReadingIndicatorsExperimentEnabled: y
 				}))
 			}
 		},
@@ -3312,4 +3318,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.9bebee0b677435d099e2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.985ac170b9a7fb2183de.js.map

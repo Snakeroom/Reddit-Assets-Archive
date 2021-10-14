@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.b6c8b4628e958519da80.js
-// Retrieved at 10/14/2021, 7:00:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.d4151876cf123191aeab.js
+// Retrieved at 10/14/2021, 7:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48"], {
 		"./src/reddit/actions/eventPosts/index.ts": function(e, t, s) {
@@ -1625,30 +1625,31 @@
 						onHide: je,
 						addPostToCollection: Ee,
 						onReportClick: we,
-						isBlockedUserBannerEnabled: Ie
-					} = e, ye = Object(n.useCallback)(async () => {
+						isBlockedUserBannerEnabled: Ie,
+						shouldHideItems: ye
+					} = e, Pe = Object(n.useCallback)(async () => {
 						const e = Object(q.d)(q.a.GildingFlow, !0);
 						Oe(e, null == ge ? void 0 : ge.id);
 						const {
 							clickGildEvent: t
 						} = await Promise.resolve().then(s.bind(null, "./src/reddit/helpers/trackers/gild.ts"));
 						G(t(U.id))
-					}, [Oe, U, G, ge]), Pe = Object(n.useCallback)(() => {
+					}, [Oe, U, G, ge]), Te = Object(n.useCallback)(() => {
 						t && ve(t)
-					}, [t, ve]), Te = Object(n.useCallback)(() => {
+					}, [t, ve]), Se = Object(n.useCallback)(() => {
 						const e = Object($.t)(U.id, j);
 						ve(e)
-					}, [ve, j, U]), Se = Object(n.useCallback)(e => {
-						Ee(e.id, U.id).then(() => Pe())
-					}, [Ee, Pe, U]), Ne = Object(n.useCallback)((e, t) => {
+					}, [ve, j, U]), Ne = Object(n.useCallback)(e => {
+						Ee(e.id, U.id).then(() => Te())
+					}, [Ee, Te, U]), Me = Object(n.useCallback)((e, t) => {
 						G(Object(J.h)(U.id, e, j ? "post_detail" : "post", he, ue, void 0, null == t ? void 0 : t.referralId))
-					}, [ue, j, G, he, U]), Me = Object(n.useCallback)(() => {
-						_e(), Ne(U.saved ? "unsave" : "save")
-					}, [_e, U, Ne]), Fe = Object(n.useCallback)(() => {
-						je(!!U.hidden), Ne(U.hidden ? "unhide" : "hide")
-					}, [je, U, Ne]), Re = Object(n.useCallback)(() => {
-						we(), Ne("report")
-					}, [we, Ne]), Ae = Object(n.useMemo)(() => r.a.createElement(xe, {
+					}, [ue, j, G, he, U]), Fe = Object(n.useCallback)(() => {
+						_e(), Me(U.saved ? "unsave" : "save")
+					}, [_e, U, Me]), Re = Object(n.useCallback)(() => {
+						je(!!U.hidden), Me(U.hidden ? "unhide" : "hide")
+					}, [je, U, Me]), Ae = Object(n.useCallback)(() => {
+						we(), Me("report")
+					}, [we, Me]), Le = Object(n.useMemo)(() => r.a.createElement(xe, {
 						"data-click-id": "share"
 					}, r.a.createElement(X.a, {
 						className: me.a.shareIcon
@@ -1656,7 +1657,7 @@
 						className: me.a.shareText
 					}, o.fbt._("share", null, {
 						hk: "1eAfZg"
-					}))), []), Le = !!p && Object(ee.e)(p) === U.author, Be = Object(oe.a)("View--Reports", U.id, ce), De = Object(oe.a)(d.lc, U.id, ce), We = Object(T.c)(U), Ve = ke("-mod-actions-menu", U.id, j, E), Ue = Object(T.a)(U), Ge = U.postId, He = w === D.g.Large, qe = !C && He || x && I, Ke = !(j || C || f), Je = p && U.isGildable && !(U.authorIsBlocked && Ie), Qe = U.media && U.media.type === Y.o.LIVEVIDEO;
+					}))), []), Be = !!p && Object(ee.e)(p) === U.author, De = Object(oe.a)("View--Reports", U.id, ce), We = Object(oe.a)(d.lc, U.id, ce), Ve = Object(T.c)(U), Ue = ke("-mod-actions-menu", U.id, j, E), Ge = Object(T.a)(U), He = U.postId, qe = w === D.g.Large, Ke = !C && qe || x && I || ye, Je = !(j || C || f), Qe = p && U.isGildable && !(U.authorIsBlocked && Ie), ze = U.media && U.media.type === Y.o.LIVEVIDEO;
 					return r.a.createElement(r.a.Fragment, null, r.a.createElement("div", {
 						className: Object(c.a)(me.a.flatlistContainer, a)
 					}, r.a.createElement(v.a, {
@@ -1671,7 +1672,7 @@
 						numComments: U.numComments,
 						isCommentCountAnimation: pe,
 						isCountAnimShadowTestEnabled: g
-					}), Je && r.a.createElement(r.a.Fragment, null, r.a.createElement(H.a, {
+					}), Qe && r.a.createElement(r.a.Fragment, null, r.a.createElement(H.a, {
 						displayText: o.fbt._("Award", null, {
 							hk: "2fZCpE"
 						}),
@@ -1679,16 +1680,16 @@
 						flatlistItem: te.a.Gild,
 						isLoggedIn: !!p,
 						isUserOp: de,
-						onClick: ye,
+						onClick: Pe,
 						searchIgnoreClick: le,
 						skipRoleAttr: !0
 					}, r.a.createElement(Q.a, {
 						name: "award",
 						className: me.a.awardIcon,
-						id: De
+						id: We
 					})), r.a.createElement(y, {
 						postOrComment: U,
-						tooltipId: De
+						tooltipId: We
 					})), r.a.createElement(fe, {
 						className: Object(c.a)(me.a.rowContainer, Object(se.b)({
 							flatlistItem: te.a.Share,
@@ -1698,9 +1699,9 @@
 						dropdownId: ke("-share-menu", U.id, j, E),
 						permalink: U.permalink,
 						post: U,
-						sendEventWithName: Ne,
+						sendEventWithName: Me,
 						subredditType: null == ne ? void 0 : ne.type
-					}, Ae), Z && !qe && r.a.createElement(H.a, {
+					}, Le), Z && !Ke && r.a.createElement(H.a, {
 						displayText: o.fbt._("Edit post", null, {
 							hk: "Jq2Cr"
 						}),
@@ -1722,13 +1723,13 @@
 						flatlistItem: te.a.Save,
 						isLoggedIn: !!p,
 						isUserOp: de,
-						onClick: Me,
+						onClick: Fe,
 						searchIgnoreClick: le,
 						skipRoleAttr: !0
 					}, r.a.createElement(Q.a, {
 						name: U.saved ? "saved" : "save",
 						className: me.a.saveIcon
-					})), !U.isSponsored && !qe && r.a.createElement(H.a, {
+					})), !U.isSponsored && !Ke && r.a.createElement(H.a, {
 						displayText: U.hidden ? o.fbt._("unhide", null, {
 							hk: "151XLs"
 						}) : o.fbt._("hide", null, {
@@ -1738,13 +1739,13 @@
 						flatlistItem: te.a.Hide,
 						isLoggedIn: !!p,
 						isUserOp: de,
-						onClick: Fe,
+						onClick: Re,
 						searchIgnoreClick: le,
 						skipRoleAttr: !0
 					}, r.a.createElement(Q.a, {
 						name: "hide",
 						isFilled: U.hidden
-					})), !Le && !U.isSponsored && !qe && r.a.createElement(H.a, {
+					})), !Be && !U.isSponsored && !Ke && r.a.createElement(H.a, {
 						displayText: o.fbt._("report", null, {
 							hk: "1phfns"
 						}),
@@ -1752,7 +1753,7 @@
 						flatlistItem: te.a.Report,
 						isLoggedIn: !!p,
 						isUserOp: de,
-						onClick: Re,
+						onClick: Ae,
 						searchIgnoreClick: le,
 						skipRoleAttr: !0
 					}, r.a.createElement(Q.a, {
@@ -1764,29 +1765,29 @@
 						post: U,
 						sendEvent: G
 					}), x && r.a.createElement(P.a, {
-						dropdownId: Ve,
+						dropdownId: Ue,
 						onClick: () => G(Object(J.h)(U.id, "post_mod_action_menu"))
 					}, r.a.createElement(Ce, null), r.a.createElement(M.a, {
 						canEditFlair: b && !!z,
 						hasModFullPerms: h,
 						hasModPostPerms: x,
 						isOverlay: !!j,
-						isPostAuthor: Le,
+						isPostAuthor: Be,
 						modModeEnabled: I,
 						post: U,
-						tooltipId: Ve
-					})), x && We && !I && r.a.createElement(R.c, {
-						text: `${Ue}`,
+						tooltipId: Ue
+					})), x && Ve && !I && r.a.createElement(R.c, {
+						text: `${Ge}`,
 						onClick: () => {
-							W(Be), G(Object(J.h)(U.id, "post_report_menu"))
+							W(De), G(Object(J.h)(U.id, "post_report_menu"))
 						},
-						id: Be
+						id: De
 					}, r.a.createElement(B.a, {
 						model: U,
 						onIgnoreReports: () => {
 							L(), G(Object(K.k)(U.ignoreReports ? "restore_reports" : "ignore_reports", U.id))
 						},
-						tooltipId: Be
+						tooltipId: De
 					}), r.a.createElement(Q.a, {
 						className: me.a.icon,
 						name: U.ignoreReports ? "ignore_reports" : "report"
@@ -1795,6 +1796,7 @@
 					}, r.a.createElement(F.a, {
 						currentProfileName: l,
 						dropdownId: ke("-overflow-menu", U.id, j, E),
+						ignoreOverflowMenuBreakpoints: ye,
 						isCommentsPage: C,
 						isFixed: E,
 						isOverlay: !!j,
@@ -1803,7 +1805,7 @@
 						modModeWithPost: I && x,
 						pageLayer: V,
 						permalink: U.permalink,
-						postId: Ge,
+						postId: He,
 						sendEvent: G,
 						showEditPost: !!Z,
 						showEditFlair: !!z,
@@ -1812,9 +1814,9 @@
 						toggleEditStartTimeModal: ae
 					})), t === Object($.t)(U.id, j) && r.a.createElement(re.a, {
 						subredditId: U.belongsTo.id,
-						onClose: Pe,
+						onClose: Te,
 						postId: U.id,
-						onSelectCollection: Se,
+						onSelectCollection: Ne,
 						titleText: o.fbt._("Add post to a collection", null, {
 							hk: "38vSyF"
 						}),
@@ -1828,8 +1830,8 @@
 						schedule: Object(m.c)(U),
 						shouldShowDeleteButton: !1
 					}), t === Object($.u)(U.id, j) && r.a.createElement(ie.a, {
-						onCancel: Te,
-						onCollectionCreated: Se,
+						onCancel: Se,
+						onCollectionCreated: Ne,
 						subredditId: U.belongsTo.id
 					}), t === Object(N.b)(U.id, j) && r.a.createElement(N.a, {
 						flairs: U.flair,
@@ -1838,7 +1840,7 @@
 						onFlairChanged: A
 					}), r.a.createElement("div", {
 						className: me.a.flexSpacer
-					})), Ke && !Qe && r.a.createElement(O.a, {
+					})), Je && !ze && r.a.createElement(O.a, {
 						className: Object(c.a)(me.a.liveDiscussionWrapper, {
 							[me.a.large]: _
 						}),
@@ -3187,7 +3189,7 @@
 					const {
 						props: e
 					} = this, t = e.layout === D.g.Classic;
-					if (!(e.ignoreBreakpoints || e.modModeWithPost || e.userIsOp || !e.isCommentsPage && !t)) return Object(L.b)({
+					if (!(e.ignoreBreakpoints || e.ignoreOverflowMenuBreakpoints || e.modModeWithPost || e.userIsOp || !e.isCommentsPage && !t)) return Object(L.b)({
 						breakpointType: L.a.HideIfVWLarger,
 						flatlistItem: A.a.PostOverflowMenu,
 						isLoggedIn: !!e.currentUser,
@@ -4665,4 +4667,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.b6c8b4628e958519da80.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.d4151876cf123191aeab.js.map
