@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.80460210ad1aabac053c.js
-// Retrieved at 10/13/2021, 6:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.3d0c0940d73c38192a1c.js
+// Retrieved at 10/13/2021, 8:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~Subreddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, r) {
@@ -1974,15 +1974,15 @@
 					input: {
 						channel: {
 							teamOwner: "CONTENT_AND_COMMUNITIES",
-							category: "USER_IS_TYPING_ON_POST",
-							authorID: A
+							category: "ONLINE_STATUS_INDICATOR",
+							userID: A
 						}
 					}
 				}), [A]), M = Object(o.useCallback)(e => {
 					const {
-						numUsers: t
+						isOnline: t
 					} = e.subscribe.data;
-					t && t > 4 && B(!0)
+					B(t)
 				}, []), F = Object(o.useRef)(null), [G, W] = Object(o.useState)(!1), q = Object(o.useCallback)(e => {
 					e.forEach(e => {
 						const {
@@ -1992,7 +1992,7 @@
 						t ? W(!0) : n && W(!1)
 					})
 				}, []), z = Object(o.useRef)({
-					rootMargin: "1000px 0px 1000px 0px"
+					rootMargin: "750px 0px 1000px 0px"
 				});
 				return Object(u.a)(F, q, z.current), w ? R : i.a.createElement("div", {
 					className: Object(n.a)(O.a.userIconWrapper, {
@@ -2010,7 +2010,7 @@
 					onceInViewport: k
 				}), (S || j) && G && i.a.createElement(l.a, {
 					variables: H,
-					onData: j && !S ? v : M,
+					onData: S ? M : v,
 					queryKey: "isUserOnline"
 				}))
 			})
@@ -4885,4 +4885,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.80460210ad1aabac053c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.3d0c0940d73c38192a1c.js.map

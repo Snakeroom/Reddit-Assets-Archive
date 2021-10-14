@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.9bf3a88f13a768d6368f.js
-// Retrieved at 10/13/2021, 7:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.d7c9e37d5e6a60fc740e.js
+// Retrieved at 10/13/2021, 8:40:05 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var n, a, r = o[0], s = o[1], c = o[2], l = 0, P = []; l < r.length; l++) a = r[l], Object.prototype.hasOwnProperty.call(d, a) && d[a] && P.push(d[a][0]), d[a] = 0;
@@ -1405,7 +1405,7 @@
 						"translations/es_MX-json": "9b367ff60897f7959296",
 						"translations/fr_FR-json": "fc7ec3c73ad1e27b89bf",
 						"translations/it_IT-json": "355680f7c560f4c25b09",
-						"translations/pseudo_ext-json": "78f8c741a821b7b51312",
+						"translations/pseudo_ext-json": "5ff3f170fda9b4bd59de",
 						"translations/pseudo_long-json": "7a89d0240dc021aa7c27",
 						"translations/pseudo_short-json": "80043df3632609d664e1",
 						"translations/pt_BR-json": "8836abadccee54c2969a",
@@ -1421,8 +1421,8 @@
 						RedesignChat: "032ab50b50b0152edd77",
 						"vendors~CollectionCommentsPage~CommentsPage": "206ccecf4ac614ab5c95",
 						"CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki": "9a972844f1d0a80a0ec6",
-						CollectionCommentsPage: "b6976618aefe8cb48e33",
-						CommentsPage: "a14d5690e8c879bdaf49",
+						CollectionCommentsPage: "be7249a7542e46a44fb3",
+						CommentsPage: "63f6cea3fdc3b8efa9e9",
 						"vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PostCreation~Settings~~f8934a85": "fbf6b3871488094312c2",
 						CryptoHarbergerTaxManageModal: "266df9a3be635f331254",
 						HarbergerTaxManageModal: "1993dc06bb420513cd20",
@@ -1450,7 +1450,7 @@
 						"LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit": "97c4f00a33ba394832fe",
 						PublicAccessNetwork: "ff7f4fd37d4004e3b141",
 						"vendors~RealtimeGQLSubscriptionAsync": "3144a6231ee41b041496",
-						RealtimeGQLSubscriptionAsync: "d8221826091d4da94e75",
+						RealtimeGQLSubscriptionAsync: "225e5f6cb0c286624a70",
 						"vendors~SubredditWiki": "59f99c55936d8d8767dd",
 						SubredditWiki: "3da6763eeafc58f47976",
 						"vendors~xml2js": "d7030b892a98de038b49",
@@ -1667,4 +1667,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.9bf3a88f13a768d6368f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.d7c9e37d5e6a60fc740e.js.map

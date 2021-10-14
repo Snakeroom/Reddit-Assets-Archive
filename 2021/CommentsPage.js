@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.a14d5690e8c879bdaf49.js
-// Retrieved at 10/13/2021, 7:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.63f6cea3fdc3b8efa9e9.js
+// Retrieved at 10/13/2021, 8:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage"], {
 		"./src/lib/makeLinkedPostsListingKey/index.ts": function(e, t, s) {
@@ -3033,10 +3033,10 @@
 						}
 					}, [O, X, g, C, x]);
 					const ge = Object(i.useContext)(Mt),
-						Ce = k && !X && !Object(ae.f)(o) && (!Z || Z && ce) && !Object(ae.g)(o),
+						Ce = !X && !Object(ae.f)(o) && (!Z || Z && ce) && !Object(ae.g)(o),
 						xe = Object(i.useCallback)(() => {
-							Ce && !ce && Y && Y(o.id)
-						}, [o.id, Y, Ce, ce]),
+							Ce && k && !ce && Y && Y(o.id)
+						}, [o.id, Y, Ce, k, ce]),
 						fe = Object(jt.a)(o),
 						ve = !!z && Object($t.b)(o.profileImage);
 					return a.a.createElement(ds, {
@@ -3085,11 +3085,11 @@
 						nsfwIconUrl: Pt.a,
 						userName: o.author,
 						isHighlighted: E,
-						shouldShowPresenceIndicator: Ce,
+						shouldShowPresenceIndicator: Ce && k,
 						onPresenceIndicatorInViewport: xe,
 						isCommentAuthorBlocked: Object(ae.g)(o),
 						collapsed: r,
-						isOnlineStatusLoadTest: J
+						isOnlineStatusLoadTest: Ce && J
 					})) : a.a.createElement("div", {
 						className: Jt.a.UserIcon
 					}))), a.a.createElement(as, {
@@ -8952,4 +8952,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.a14d5690e8c879bdaf49.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.63f6cea3fdc3b8efa9e9.js.map

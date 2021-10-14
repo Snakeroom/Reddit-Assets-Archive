@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RealtimeGQLSubscriptionAsync.d8221826091d4da94e75.js
-// Retrieved at 10/13/2021, 12:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RealtimeGQLSubscriptionAsync.225e5f6cb0c286624a70.js
+// Retrieved at 10/13/2021, 8:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RealtimeGQLSubscriptionAsync"], {
 		"./src/realtime/GQLSubscription/index.tsx": function(e, n, t) {
@@ -90,8 +90,8 @@
         id
         ... on BasicMessage {
           data {
-            ... on PostTypingIndicatorMessageData {
-              numUsers
+            ... on UserOnlineStatusMessageData {
+              isOnline
             }
           }
         }
@@ -202,4 +202,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RealtimeGQLSubscriptionAsync.d8221826091d4da94e75.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RealtimeGQLSubscriptionAsync.225e5f6cb0c286624a70.js.map
