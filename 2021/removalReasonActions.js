@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/removalReasonActions.cf6889a2da4046ce740f.js
-// Retrieved at 10/13/2021, 6:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/removalReasonActions.933d5b58a880e26e282c.js
+// Retrieved at 10/14/2021, 1:40:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["removalReasonActions"], {
 		"./src/reddit/actions/bulkActions/index.ts": function(e, t, n) {
@@ -156,8 +156,8 @@
 				V = n("./src/reddit/models/Comment/index.ts"),
 				B = n("./src/reddit/models/PostDraft/index.ts"),
 				H = n("./src/reddit/models/RichTextJson/index.ts"),
-				$ = n("./src/reddit/models/RichTextJson/nodeMakers.ts"),
-				J = n("./src/reddit/models/Toast/index.ts"),
+				J = n("./src/reddit/models/RichTextJson/nodeMakers.ts"),
+				$ = n("./src/reddit/models/Toast/index.ts"),
 				G = n("./src/reddit/selectors/comments.ts"),
 				q = n("./src/reddit/selectors/commentSelector.ts"),
 				W = n("./src/reddit/selectors/platform.ts"),
@@ -237,7 +237,7 @@
 							error: g.error
 						})), u(Object(p.f)({
 							duration: p.a,
-							kind: J.b.Error,
+							kind: $.b.Error,
 							text: t
 						}))
 					}
@@ -329,7 +329,7 @@
 							})), s(Object(u.c)(e))
 						} else s(Object(u.a)(n)), s(Object(p.f)({
 							duration: p.a,
-							kind: J.b.Error,
+							kind: $.b.Error,
 							text: o.fbt._("Something went wrong", null, {
 								hk: "LWFS0"
 							})
@@ -362,11 +362,11 @@
 						const e = O.filter(e => !!e && 10 !== e.charCodeAt(0));
 						if (f === k.i.MARKDOWN) b = e.map(e => `> ${e}\n`).join("");
 						else {
-							const t = e.map(e => $.s(e, null)).map(e => $.l([e])),
-								n = $.s("", null),
-								o = $.l([n]);
+							const t = e.map(e => J.s(e, null)).map(e => J.l([e])),
+								n = J.s("", null),
+								o = J.l([n]);
 							p = {
-								document: [$.c(t), o]
+								document: [J.c(t), o]
 							}
 						}
 					}
@@ -552,7 +552,7 @@
 				}) => {
 					var c, d, a, i, m, u;
 					n(Object(X.c)());
-					const l = e => Object(p.f)(Object(p.e)(e, J.b.Error));
+					const l = e => Object(p.f)(Object(p.e)(e, $.b.Error));
 					if (((null === (d = null === (c = s().pages) || void 0 === c ? void 0 : c.comments) || void 0 === d ? void 0 : d.followed) || []).length === j.a) n(l(o.fbt._("You've reached your post follow limit", null, {
 						hk: "3ebRql"
 					})));
@@ -578,7 +578,7 @@
 								hk: "1L9sav"
 							});
 							n(Object(p.f)({
-								kind: J.b.SuccessCommunityGreen,
+								kind: $.b.SuccessCommunityGreen,
 								text: e
 							}))
 						} else n(Object(X.n)(d)), n(l(o.fbt._("Sorry, we had trouble doing that. Please try again.", null, {
@@ -608,9 +608,9 @@
 			})), n.d(t, "f", (function() {
 				return V
 			})), n.d(t, "o", (function() {
-				return $
-			})), n.d(t, "p", (function() {
 				return J
+			})), n.d(t, "p", (function() {
+				return $
 			})), n.d(t, "d", (function() {
 				return G
 			})), n.d(t, "a", (function() {
@@ -752,7 +752,7 @@
 						moreCommentsItem: c,
 						...O.error
 					}))
-				}, M = Object(b.a)(f.b, h.a.upvoted), U = Object(b.a)(f.b, h.a.downvoted), F = Object(c.a)(I.j), V = Object(c.a)(I.i), B = Object(c.a)(I.e), H = Object(c.a)(I.f), $ = (Object(c.a)(I.c), Object(c.a)(I.d), ({
+				}, M = Object(b.a)(f.b, h.a.upvoted), U = Object(b.a)(f.b, h.a.downvoted), F = Object(c.a)(I.j), V = Object(c.a)(I.i), B = Object(c.a)(I.e), H = Object(c.a)(I.f), J = (Object(c.a)(I.c), Object(c.a)(I.d), ({
 					commentId: e,
 					commentsPageKey: t,
 					scrollToAndRemeasure: n
@@ -773,7 +773,7 @@
 						commentsPageKey: t,
 						isCollapsed: a
 					})), a || 0 !== i || n(e, !0), Object(u.d)()
-				}), J = ({
+				}), $ = ({
 					commentId: e,
 					commentsPageKey: t
 				}) => async n => {
@@ -1341,8 +1341,8 @@
 				});
 			var B = n("./src/reddit/helpers/isPost.ts"),
 				H = n("./src/reddit/helpers/r2/normalizeCommentFromR2/index.ts"),
-				$ = n("./src/reddit/helpers/routeKey/index.ts"),
-				J = n("./src/reddit/models/ModQueue/index.ts"),
+				J = n("./src/reddit/helpers/routeKey/index.ts"),
+				$ = n("./src/reddit/models/ModQueue/index.ts"),
 				G = n("./src/reddit/models/PostDraft/index.ts"),
 				q = n("./src/reddit/models/RemovalReason/index.ts"),
 				W = n("./src/reddit/models/Toast/index.ts"),
@@ -1487,7 +1487,7 @@
 											},
 											n = Object(Q.f)(a),
 											o = a.platform.currentPage && a.platform.currentPage.routeMatch;
-										let s = n && o && Object($.a)(o, a, a.posts.models[e.postId]);
+										let s = n && o && Object(J.a)(o, a, a.posts.models[e.postId]);
 										if (s || (s = Object(I.a)(e.postId, null, {
 												sort: x.u,
 												hasSortParam: !0
@@ -1564,7 +1564,7 @@
 					if (b.ok) {
 						const o = {
 							ids: e,
-							operation: J.a.RemovalReason,
+							operation: $.a.RemovalReason,
 							username: m,
 							options: {
 								modNote: r,
@@ -1777,7 +1777,7 @@
 								experimentName: r.E,
 								expEventOverride: t
 							});
-							return !!(Object(r.Ie)(n) ? void 0 : n)
+							return !!(Object(r.Je)(n) ? void 0 : n)
 						})(n)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -2502,9 +2502,9 @@
 			})), n.d(t, "f", (function() {
 				return H
 			})), n.d(t, "i", (function() {
-				return $
-			})), n.d(t, "F", (function() {
 				return J
+			})), n.d(t, "F", (function() {
+				return $
 			})), n.d(t, "B", (function() {
 				return G
 			})), n.d(t, "H", (function() {
@@ -2707,10 +2707,10 @@
 					const n = e.features.comments.drafts[t];
 					return !!n && n.autofocusDisabled
 				},
-				$ = (e, {
+				J = (e, {
 					draftKey: t
 				}) => e.features.comments.drafts[t],
-				J = (e, {
+				$ = (e, {
 					commentId: t
 				}) => {
 					const n = t ? e.features.comments.submit.error[t] : void 0;
@@ -2773,4 +2773,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.cf6889a2da4046ce740f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.933d5b58a880e26e282c.js.map

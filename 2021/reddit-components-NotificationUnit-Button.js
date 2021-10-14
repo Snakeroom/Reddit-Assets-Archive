@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.ee4747bd7c646aa26b90.js
-// Retrieved at 10/13/2021, 6:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.d0dc255227a4c23d866d.js
+// Retrieved at 10/14/2021, 1:40:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-NotificationUnit-Button"], {
 		"./src/reddit/actions/comment/authoring.ts": function(e, t, n) {
@@ -139,8 +139,8 @@
 				U = n("./src/reddit/helpers/localStorage/index.ts"),
 				F = n("./src/reddit/helpers/trackers/commentsPage.ts"),
 				H = n("./src/reddit/models/Comment/index.ts"),
-				W = n("./src/reddit/models/PostDraft/index.ts"),
-				J = n("./src/reddit/models/RichTextJson/index.ts"),
+				J = n("./src/reddit/models/PostDraft/index.ts"),
+				W = n("./src/reddit/models/RichTextJson/index.ts"),
 				B = n("./src/reddit/models/RichTextJson/nodeMakers.ts"),
 				G = n("./src/reddit/models/Toast/index.ts"),
 				V = n("./src/reddit/selectors/comments.ts"),
@@ -297,10 +297,10 @@
 					apiContext: c
 				}) => {
 					const i = e === S.i.RICH_TEXT;
-					if (!t || "object" == typeof t && Object(J.G)(t)) r(pe({
+					if (!t || "object" == typeof t && Object(W.G)(t)) r(pe({
 						editorMode: e,
 						draftKey: n,
-						content: i ? J.i : ""
+						content: i ? W.i : ""
 					})), r(Object(u.c)(e));
 					else {
 						r(Object(u.b)(n));
@@ -326,7 +326,7 @@
 					singleOpen: n
 				}) => async (o, r) => {
 					const s = r(),
-						m = Object(c.a)(W.c.replyToComment, t);
+						m = Object(c.a)(J.c.replyToComment, t);
 					if (!Object(z.K)(r())) return o(Object(d.k)()), void o(Object(a.k)({
 						actionSource: a.a.Reply,
 						redirectUrl: Object(V.m)(r(), {
@@ -359,12 +359,12 @@
 					let j;
 					if (j = O ? {
 							commentMode: p,
-							draftType: W.c.replyToComment,
+							draftType: J.c.replyToComment,
 							rtJson: f,
 							text: `${b}\n`
 						} : y || {
 							commentMode: p,
-							draftType: W.c.replyToComment,
+							draftType: J.c.replyToComment,
 							rtJson: f,
 							text: ""
 						}, Object(z.M)(s)) {
@@ -416,7 +416,7 @@
 							text: r,
 							commentMode: t,
 							rteState: null,
-							draftType: W.c.edit,
+							draftType: J.c.edit,
 							hasFocus: !0
 						}
 					})))
@@ -737,7 +737,7 @@
 						moreCommentsItem: c,
 						...O.error
 					}))
-				}, M = Object(b.a)(p.b, x.a.upvoted), U = Object(b.a)(p.b, x.a.downvoted), F = Object(c.a)(k.j), H = Object(c.a)(k.i), W = Object(c.a)(k.e), J = Object(c.a)(k.f), B = (Object(c.a)(k.c), Object(c.a)(k.d), ({
+				}, M = Object(b.a)(p.b, x.a.upvoted), U = Object(b.a)(p.b, x.a.downvoted), F = Object(c.a)(k.j), H = Object(c.a)(k.i), J = Object(c.a)(k.e), W = Object(c.a)(k.f), B = (Object(c.a)(k.c), Object(c.a)(k.d), ({
 					commentId: e,
 					commentsPageKey: t,
 					scrollToAndRemeasure: n
@@ -753,7 +753,7 @@
 							commentsPageKey: t
 						}),
 						a = i.depth;
-					o(W({
+					o(J({
 						commentId: e,
 						commentsPageKey: t,
 						isCollapsed: d
@@ -762,7 +762,7 @@
 					commentId: e,
 					commentsPageKey: t
 				}) => async n => {
-					n(J({
+					n(W({
 						commentId: e,
 						commentsPageKey: t
 					}))
@@ -778,7 +778,7 @@
 							commentId: e.id,
 							commentsPageKey: t
 						});
-					r(W({
+					r(J({
 						commentId: i,
 						commentsPageKey: t,
 						isCollapsed: d
@@ -1273,7 +1273,7 @@
 								experimentName: s.E,
 								expEventOverride: t
 							});
-							return !!(Object(s.Ie)(n) ? void 0 : n)
+							return !!(Object(s.Je)(n) ? void 0 : n)
 						})(n)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -1976,9 +1976,9 @@
 			})), n.d(t, "v", (function() {
 				return H
 			})), n.d(t, "J", (function() {
-				return W
-			})), n.d(t, "f", (function() {
 				return J
+			})), n.d(t, "f", (function() {
+				return W
 			})), n.d(t, "i", (function() {
 				return B
 			})), n.d(t, "F", (function() {
@@ -2173,13 +2173,13 @@
 				H = (e, {
 					draftKey: t
 				}) => !!e.features.comments.submit.error[t],
-				W = (e, {
+				J = (e, {
 					draftKey: t
 				}) => {
 					const n = e.features.comments.submit.error[t];
 					return n && n.fields ? n.fields.map(e => e.msg) : []
 				},
-				J = (e, {
+				W = (e, {
 					draftKey: t
 				}) => {
 					const n = e.features.comments.drafts[t];
@@ -2251,4 +2251,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.ee4747bd7c646aa26b90.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.d0dc255227a4c23d866d.js.map

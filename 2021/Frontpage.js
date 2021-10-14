@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.79a0bc6312fcb6b9cd50.js
-// Retrieved at 10/13/2021, 7:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.ac178ecf757a0179b0e2.js
+// Retrieved at 10/14/2021, 1:40:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -609,8 +609,8 @@
 				S = a("./src/reddit/actions/platform.ts"),
 				I = a("./src/reddit/actions/toaster.ts"),
 				L = a("./src/reddit/constants/page.ts"),
-				T = a("./src/reddit/constants/parameters.ts"),
-				D = a("./src/reddit/constants/postLayout.ts"),
+				D = a("./src/reddit/constants/parameters.ts"),
+				T = a("./src/reddit/constants/postLayout.ts"),
 				Z = a("./src/reddit/contexts/PageLayer/index.tsx"),
 				q = a("./src/reddit/helpers/frontpageCardPostCountExperiment.ts"),
 				R = a("./src/reddit/helpers/getTimeSortForListing/index.ts"),
@@ -637,7 +637,7 @@
 					var o, i;
 					const l = c();
 					if (l.listings.postOrder.api.pending[e]) return;
-					const d = D.e[Object(Z.Q)(l, {})];
+					const d = T.e[Object(Z.Q)(l, {})];
 					t.isMobile = Object(r.e)(l.meta.userAgent), t.recentPostIds = l.posts.recent, t.layout = d, t.useMockData = !!l.platform.currentPage && (!!l.platform.currentPage.queryParams.useMockData && Object(H.b)(l)), a(ae({
 						key: e
 					})); {
@@ -686,7 +686,7 @@
 						d = c.listings.postOrder.ids[i],
 						m = c.listings.postOrder.api.error[i],
 						u = c.listings.postOrder.api.pending[i],
-						p = T.y in e.queryParams && e.queryParams[T.y].toUpperCase() || "",
+						p = D.y in e.queryParams && e.queryParams[D.y].toUpperCase() || "",
 						h = p in l.ec && l.ec[p];
 					if (u || d && !m && !t) return void(d && (a(S.l({
 						title: k.d()
@@ -697,8 +697,8 @@
 						f = Object(q.b)(b),
 						_ = [Object(q.c)(b)];
 					await a(ne(i, {
-						...n()(e.queryParams, T.l),
-						...n()(e.queryParams, T.k),
+						...n()(e.queryParams, D.l),
+						...n()(e.queryParams, D.k),
 						limit: f,
 						sort: o,
 						statsdPathsForExperiments: _,
@@ -739,7 +739,7 @@
 						d = c.platform.currentPage ? c.platform.currentPage.queryParams : {},
 						m = Object(W.a)(L.b, i, d),
 						u = c.listings.postOrder.loadMore[m],
-						p = d[T.y] ? d[T.y].toUpperCase() : "",
+						p = d[D.y] ? d[D.y].toUpperCase() : "",
 						h = p in l.ec && l.ec[p];
 					if (u) {
 						const e = c.listings.postOrder.api.pending[m],
@@ -752,17 +752,17 @@
 							}));
 							const e = !!c.platform.currentPage && !!c.platform.currentPage.queryParams.useMockData,
 								a = Object(q.a)(c),
-								o = D.a,
+								o = T.a,
 								l = [Object(q.c)(a)],
 								p = {
 									after: u.token,
 									dist: u.dist,
-									...n()(d, T.l),
+									...n()(d, D.l),
 									isMobile: Object(r.e)(c.meta.userAgent),
 									limit: o,
 									sort: i,
 									t: Object(R.a)(i, h),
-									layout: D.e[Object(Z.Q)(c, {})],
+									layout: T.e[Object(Z.Q)(c, {})],
 									useMockData: e
 								}; {
 								const e = c.platform.lastPage,
@@ -796,7 +796,7 @@
 						} = e,
 						r = s.platform.currentPage ? s.platform.currentPage.queryParams : {},
 						o = Object(W.a)(L.b, n, r),
-						i = r[T.y] ? r[T.y].toUpperCase() : "",
+						i = r[D.y] ? r[D.y].toUpperCase() : "",
 						d = i in l.ec && l.ec[i],
 						m = Object(q.a)(s),
 						u = Object(q.b)(m);
@@ -1474,14 +1474,14 @@
 							}
 						}
 					}, s]
-				})(t), L = Object(p.f)(l.a.AVATAR_LISTING_BANNER, m.c), [T, D] = Object(n.useState)(L ? P.Hidden : P.Visible);
+				})(t), L = Object(p.f)(l.a.AVATAR_LISTING_BANNER, m.c), [D, T] = Object(n.useState)(L ? P.Hidden : P.Visible);
 				if (Object(n.useEffect)(() => {
-						T === P.Visible && t !== _.a.Achievements && C(Object(h.o)(g))
-					}, [t, T, C, g]), Object(n.useEffect)(() => {
-						T === P.Visible && t === _.a.Achievements && C(Object(h.k)())
-					}, [t, T, C]), T === P.Hidden) return null;
+						D === P.Visible && t !== _.a.Achievements && C(Object(h.o)(g))
+					}, [t, D, C, g]), Object(n.useEffect)(() => {
+						D === P.Visible && t === _.a.Achievements && C(Object(h.k)())
+					}, [t, D, C]), D === P.Hidden) return null;
 				const Z = () => {
-						D(P.Visible), Object(p.ib)(l.a.AVATAR_LISTING_BANNER, !1, m.c)
+						T(P.Visible), Object(p.ib)(l.a.AVATAR_LISTING_BANNER, !1, m.c)
 					},
 					q = () => {
 						C(Object(h.d)(g)), O(Object(i.b)({
@@ -1491,7 +1491,7 @@
 					R = () => {
 						Object(p.ib)(l.a.AVATAR_LISTING_BANNER, !0, m.c), t === _.a.Achievements ? S() : q()
 					};
-				if (T === P.Dismissed) return r.a.createElement("div", {
+				if (D === P.Dismissed) return r.a.createElement("div", {
 					className: Object(c.a)(y.a.dismissedContainer, a)
 				}, r.a.createElement("div", {
 					className: y.a.dismissedText
@@ -1578,7 +1578,7 @@
 						[y.a.closeLight]: g
 					}),
 					onClick: () => {
-						D(P.Dismissed), Object(p.ib)(l.a.AVATAR_LISTING_BANNER, !0, m.c), t !== _.a.Achievements && C(Object(h.i)(g)), t === _.a.Achievements && C(Object(h.h)())
+						T(P.Dismissed), Object(p.ib)(l.a.AVATAR_LISTING_BANNER, !0, m.c), t !== _.a.Achievements && C(Object(h.i)(g)), t === _.a.Achievements && C(Object(h.h)())
 					}
 				}), r.a.createElement("div", {
 					className: y.a.contentWrapper
@@ -2750,9 +2750,9 @@
 			})), a.d(t, "d", (function() {
 				return L
 			})), a.d(t, "e", (function() {
-				return T
-			})), a.d(t, "w", (function() {
 				return D
+			})), a.d(t, "w", (function() {
+				return T
 			})), a.d(t, "F", (function() {
 				return Z
 			})), a.d(t, "f", (function() {
@@ -3017,14 +3017,14 @@
 					playback: i(a, e, t),
 					...o(a, e)
 				}),
-				T = (e, t) => a => ({
+				D = (e, t) => a => ({
 					source: "stream_player",
 					action: "click",
 					noun: "play",
 					playback: i(a, e, t),
 					...o(a, e)
 				}),
-				D = (e, t) => a => ({
+				T = (e, t) => a => ({
 					source: "stream_player",
 					action: "mute",
 					noun: "volume",
@@ -3374,8 +3374,8 @@
 				S = a("./src/reddit/constants/parameters.ts"),
 				I = a("./src/reddit/constants/postLayout.ts"),
 				L = a("./src/reddit/contexts/PageLayer/index.tsx"),
-				T = a("./src/reddit/helpers/frontpageCardPostCountExperiment.ts"),
-				D = a("./src/reddit/helpers/trackers/screenview.ts"),
+				D = a("./src/reddit/helpers/frontpageCardPostCountExperiment.ts"),
+				T = a("./src/reddit/helpers/trackers/screenview.ts"),
 				Z = a("./src/reddit/layout/page/Listing/index.tsx"),
 				q = a("./src/reddit/selectors/experiments/celebratoryMoments.ts"),
 				R = a("./src/reddit/selectors/experiments/econ/avatarBanner.ts"),
@@ -3455,7 +3455,7 @@
 				listingName: Y.R
 			}), e => Object(W.b)(e, {
 				listingName: Y.R
-			}), e => e, T.a, (e, {
+			}), e => e, D.a, (e, {
 				queryParams: t,
 				sort: a
 			}, s, c, n, r, o) => {
@@ -3523,7 +3523,7 @@
 					super(e), this.renderEmptySubreddit = () => o.a.createElement(v.a, {
 						listingName: J.c,
 						sort: this.props.sort
-					}), this.onListingViewed = (e, t) => Object(D.f)({
+					}), this.onListingViewed = (e, t) => Object(T.f)({
 						key: this.props.listingKey,
 						sort: this.props.sort,
 						timerType: t,
@@ -3537,7 +3537,7 @@
 						} = this.props;
 						u.a.read(() => {
 							const s = `${h.c.FrontPage}-${a}`,
-								c = [Object(T.c)(e)];
+								c = [Object(D.c)(e)];
 							Object(h.d)(s, t, c)
 						})
 					}
@@ -3567,9 +3567,9 @@
 						countrySort: this.props.countrySort,
 						sort: this.props.sort,
 						timeSort: this.props.timeSort
-					}, T = {}, D = a && !m;
+					}, D = {}, T = a && !m;
 					if (b === I.g.Large && t.forEach((e, t) => {
-							T[e] = Object(y.a)({
+							D[e] = Object(y.a)({
 								numInstance: t,
 								layout: b,
 								listingKey: f,
@@ -3581,16 +3581,16 @@
 							child: e,
 							idx: t
 						} = Object(C.a)({
-							children: T,
+							children: D,
 							desiredIndex: v,
 							layout: b,
 							listingKey: f,
 							listingName: Y.R,
 							sendEvent: k
 						});
-						T[t] = e
+						D[t] = e
 					}
-					e && (T[0] = {
+					e && (D[0] = {
 						estHeight: 180,
 						id: "avatar-listing-banner",
 						render: ({
@@ -3620,11 +3620,11 @@
 							shortTimer: !0,
 							handlePillClick: this.props.refreshFeed
 						}), u && o.a.createElement(ae, null), o.a.createElement(N.a, {
-							injectChildren: T,
+							injectChildren: D,
 							isCommentCountAnimationEnabled: s,
 							isVoteCountAnimationEnabled: h,
 							isCountAnimShadowTestEnabled: c,
-							triggerCelebratoryMoment: D ? _ : void 0,
+							triggerCelebratoryMoment: T ? _ : void 0,
 							noPostsComponent: this.renderEmptySubreddit,
 							key: "listing",
 							listingKey: f,
@@ -3700,9 +3700,9 @@
 			})), a.d(t, "k", (function() {
 				return L
 			})), a.d(t, "c", (function() {
-				return T
-			})), a.d(t, "f", (function() {
 				return D
+			})), a.d(t, "f", (function() {
+				return T
 			})), a.d(t, "a", (function() {
 				return R
 			})), a.d(t, "j", (function() {
@@ -3856,11 +3856,11 @@
 				S = Object(c.a)(Object(s.a)(k, E, (e, t) => e ? t[e] : void 0)),
 				I = Object(c.a)(Object(s.a)(w, E, (e, t) => e ? t[e] : void 0)),
 				L = Object(c.a)(Object(s.a)(P, E, (e, t) => e ? t[e] : void 0)),
-				T = (Object(c.a)(Object(s.a)(e => e.publicAccessNetwork.preloads.discoveryUnitThumbnails, E, (e, t) => Object.keys(e).filter(e => !!t[e]).map(a => ({
+				D = (Object(c.a)(Object(s.a)(e => e.publicAccessNetwork.preloads.discoveryUnitThumbnails, E, (e, t) => Object.keys(e).filter(e => !!t[e]).map(a => ({
 					...t[a],
 					preloadedPreviewUrl: e[a]
 				})))), Object(s.a)(k, e => e.publicAccessNetwork.preloads.streamPreviews, (e, t) => e && t[e])),
-				D = Object(s.a)((e, {
+				T = Object(s.a)((e, {
 					streamIdFromPath: t
 				}) => t ? x(e, t) : void 0, e => !e || e.chat_disabled || e.post.isArchived || e.post.isLocked);
 
@@ -3946,13 +3946,13 @@
 			const r = e => {
 					const t = Object(c.c)(e, {
 						experimentEligibilitySelector: c.a,
-						experimentName: s.Ce
+						experimentName: s.De
 					});
 					return t === s.N.TwoDayCooldown || t === s.N.FiveDayCooldown
 				},
 				o = e => {
 					const t = Object(n.d)(e, {
-							experimentName: s.Ce
+							experimentName: s.De
 						}),
 						a = null == t ? void 0 : t.variant;
 					return a === s.N.TwoDayCooldown ? 2 : a === s.N.FiveDayCooldown ? 5 : 0
@@ -4057,4 +4057,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.79a0bc6312fcb6b9cd50.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.ac178ecf757a0179b0e2.js.map

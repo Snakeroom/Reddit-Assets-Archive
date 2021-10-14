@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/UserAchievementFlair.a5e93b10b9f0085c5a60.js
-// Retrieved at 10/13/2021, 6:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/UserAchievementFlair.72897bb70d7440fe60f4.js
+// Retrieved at 10/14/2021, 1:40:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["UserAchievementFlair"], {
 		"./src/reddit/components/Econ/PowerupsFlair/HoverPopup.m.less": function(e, t, n) {
@@ -59,8 +59,8 @@
 					v = Object(o.e)(e => Object(f.Q)(e, {
 						subredditId: t
 					})),
-					I = Object(o.d)(),
-					k = Object(u.a)(),
+					k = Object(o.d)(),
+					I = Object(u.a)(),
 					{
 						container: j,
 						isScrollGradientVisible: O,
@@ -100,7 +100,7 @@
 					priority: d.b.Secondary,
 					className: b.a.ctaButton,
 					onClick: () => {
-						k(Object(i.a)()), I(Object(a.e)())
+						I(Object(i.a)()), k(Object(a.e)())
 					},
 					isFullWidth: !0
 				}, y._("View your achievements", null, {
@@ -120,9 +120,9 @@
 			})), c.a.createElement("div", {
 				className: b.a.flairName
 			}, c.a.createElement("span", null, e.name)));
-			var I = n("./src/reddit/selectors/experiments/econ/index.ts"),
-				k = n("./src/reddit/components/Econ/PowerupsFlair/UserAchievementFlair.m.less"),
-				j = n.n(k);
+			var k = n("./src/reddit/selectors/experiments/econ/index.ts"),
+				I = n("./src/reddit/components/Econ/PowerupsFlair/UserAchievementFlair.m.less"),
+				j = n.n(I);
 			const O = ({
 				achievement: e
 			}) => e ? c.a.createElement("img", {
@@ -153,7 +153,7 @@
 				if (Object(o.e)(e => Object(p.e)(e, {
 						subredditId: t,
 						userId: n
-					}) && Object(I.k)(e))) return null;
+					}) && Object(k.k)(e))) return null;
 				const h = u ? [m, ...u.achievementTypes].filter(Boolean) : null;
 				if (!(!!i || !!m) || !h) return null;
 				const b = (null == m ? void 0 : m.type) === (null == i ? void 0 : i.type) ? null : m,
@@ -238,7 +238,7 @@
 								experimentName: c.E,
 								expEventOverride: t
 							});
-							return !!(Object(c.Ie)(n) ? void 0 : n)
+							return !!(Object(c.Je)(n) ? void 0 : n)
 						})(n)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -450,8 +450,8 @@
 				},
 				v = n("./node_modules/lodash/uniqBy.js"),
 				g = n.n(v),
-				I = n("./node_modules/lodash/values.js"),
-				k = n.n(I),
+				k = n("./node_modules/lodash/values.js"),
+				I = n.n(k),
 				j = n("./src/reddit/actions/comment/websocket/constants.ts");
 			const O = {};
 
@@ -467,7 +467,7 @@
 								comments: n,
 								key: r
 							} = t.payload, s = e[r] ? e[r] : [], c = function(e, t) {
-								return k()(e).map(e => {
+								return I()(e).map(e => {
 									const n = e.isStickied ? t && t.created || Math.round(Date.now() / 1e3) : e.created;
 									return {
 										id: e.id,
@@ -742,9 +742,9 @@
 			})), n.d(t, "x", (function() {
 				return v
 			})), n.d(t, "k", (function() {
-				return I
-			})), n.d(t, "g", (function() {
 				return k
+			})), n.d(t, "g", (function() {
+				return I
 			})), n.d(t, "G", (function() {
 				return j
 			})), n.d(t, "n", (function() {
@@ -843,7 +843,7 @@
 					})
 				},
 				g = [],
-				I = Object(o.a)((e, t) => {
+				k = Object(o.a)((e, t) => {
 					const n = v(e, t),
 						r = n && n.id;
 					if (!r) return g;
@@ -859,7 +859,7 @@
 					} while (d);
 					return o
 				}),
-				k = (e, t) => y(e, t) ? e.pages.comments.keyToChatCommentLinks[t.commentsPageKey] : [],
+				I = (e, t) => y(e, t) ? e.pages.comments.keyToChatCommentLinks[t.commentsPageKey] : [],
 				j = (e, {
 					commentsPageKey: t
 				}) => {
@@ -1031,4 +1031,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UserAchievementFlair.a5e93b10b9f0085c5a60.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UserAchievementFlair.72897bb70d7440fe60f4.js.map
