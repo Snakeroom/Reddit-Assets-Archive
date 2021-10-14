@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.aee3926ec51056256c89.js
-// Retrieved at 10/13/2021, 7:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.55ab0d140291797899b8.js
+// Retrieved at 10/14/2021, 12:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -4251,26 +4251,13 @@
 				button: "_14uJB4G3tqOEYET63pRdyA",
 				hoverText: "_3GSO2RiUsPx69akefymMHH",
 				text: "_2RcDSmyTF8XzvMXlNYdfB3",
-				withHover: "_1eiwN-M8gLxB0Wrix2rZI9",
-				icon: "nVpAL8k7NeDtiXcPNAmaX"
-			}
-		},
-		"./src/reddit/components/MultiredditTopBar/FollowButton/index.m.less": function(e, t, n) {
-			e.exports = {
-				button: "_3d7Sfwey7uejnzrmv0eHPD",
-				isFollowed: "mmRAVpxPd7_dKF--axI5t"
+				withHover: "_1eiwN-M8gLxB0Wrix2rZI9"
 			}
 		},
 		"./src/reddit/components/MultiredditTopBar/OverflowMenu/index.m.less": function(e, t, n) {
 			e.exports = {
 				warning: "bX6SqXfzfxpv4GQbuIYVZ",
 				button: "_1qiH6rUwyms3uD12BWyHR5"
-			}
-		},
-		"./src/reddit/components/MultiredditTopBar/ShareMenu/index.m.less": function(e, t, n) {
-			e.exports = {
-				shareMenu: "_3mn7XQLztyLrhr3ZAQyl5y",
-				shareIcon: "_373yJBxVgon33agUR-lV0m"
 			}
 		},
 		"./src/reddit/components/MultiredditTopBar/VisibilitySwitch/index.m.less": function(e, t, n) {
@@ -4290,6 +4277,7 @@
 				layoutCard: "_1xUCmooih5FTp8z5c-oD6U",
 				actions: "_1T_vh62Hnliedh8W_NT8-m",
 				icon: "_2xtXouwF6uqK9UUpun6xXY",
+				overflowMenu: "_27e1BV0r3-wzYneMC7Io_V",
 				content: "_3zG_bpPw8e9TAPq07QCJya",
 				header: "_1-u63wf24mXQJg7YnYaR_O",
 				multiredditName: "_3I-SyNPeXukMGT4sLs6sFH",
@@ -7669,16 +7657,13 @@
 				}, s), n)),
 				Z = n("./src/reddit/components/TrackingHelper/index.tsx"),
 				Y = n("./src/reddit/helpers/trackers/customFeeds.ts"),
-				X = n("./src/reddit/icons/fonts/index.tsx"),
-				Q = n("./src/reddit/components/MultiredditTopBar/FollowButton/index.m.less"),
-				$ = n.n(Q);
-			const ee = Object(c.b)(null, (e, t) => ({
+				X = n("./src/reddit/icons/fonts/index.tsx");
+			const Q = Object(c.b)(null, (e, t) => ({
 				onFollowClick: () => {
 					e(Object(W.b)(t.multireddit.url)), t.multireddit.isFollowed ? t.sendEvent(Object(Y.g)(t.multireddit.url)) : t.sendEvent(Object(Y.d)(t.multireddit.url))
 				}
 			}));
-			var te = Object(Z.c)(ee(e => a.a.createElement(J, {
-					className: Object(v.a)($.a.button, e.multireddit.isFollowed ? $.a.isFollowed : null),
+			var $ = Object(Z.c)(Q(e => a.a.createElement(J, {
 					hoverText: e.multireddit.isFollowed ? s.fbt._("Unfollow", null, {
 						hk: "PezOE"
 					}) : void 0,
@@ -7692,56 +7677,57 @@
 						hk: "1DZLve"
 					})
 				}))),
-				ne = n("./src/reddit/components/ConfirmUserActionModal/index.tsx"),
-				se = n("./src/reddit/components/OverflowMenu/index.tsx"),
-				re = n("./src/reddit/controls/Dropdown/Row.tsx"),
-				oe = n("./src/reddit/selectors/activeModalId.ts"),
-				ie = n("./src/reddit/components/MultiredditTopBar/OverflowMenu/index.m.less"),
-				ae = n.n(ie);
-			const ce = Object(d.c)({
-				isConfirmDeleteOpen: e => "MULTIREDDIT_TOP_BAR_DELETE_CONFIRMATION" === Object(oe.a)(e),
+				ee = n("./src/reddit/components/ConfirmUserActionModal/index.tsx"),
+				te = n("./src/reddit/components/OverflowMenu/index.tsx"),
+				ne = n("./src/reddit/controls/Dropdown/Row.tsx"),
+				se = n("./src/reddit/selectors/activeModalId.ts"),
+				re = n("./src/reddit/components/MultiredditTopBar/OverflowMenu/index.m.less"),
+				oe = n.n(re);
+			const ie = Object(d.c)({
+				isConfirmDeleteOpen: e => "MULTIREDDIT_TOP_BAR_DELETE_CONFIRMATION" === Object(se.a)(e),
 				showOwnerButtons: (e, t) => Object(H.c)(e, t.multireddit.url)
 			});
-			var de = Object(c.b)(ce, (e, t) => ({
+			var ae = Object(c.b)(ie, (e, t) => ({
 					deleteConfirmed: () => e(Object(p.deleteRequested)(t.multireddit.url)),
 					onDuplicateClicked: () => e(Object(k.h)(E.a.MULTIREDDIT_DUPLICATE)),
 					onEdit: () => e(Object(k.h)(E.a.MULTIREDDIT_EDIT)),
 					toggleConfirmDelete: () => e(Object(k.i)("MULTIREDDIT_TOP_BAR_DELETE_CONFIRMATION"))
 				}))(Object(Z.c)(e => {
 					const {
-						deleteConfirmed: t,
-						isConfirmDeleteOpen: n,
-						multireddit: r,
-						onDuplicateClicked: o,
-						onEdit: i,
-						sendEvent: c,
-						showOwnerButtons: d,
-						toggleConfirmDelete: l
+						className: t,
+						deleteConfirmed: n,
+						isConfirmDeleteOpen: r,
+						multireddit: o,
+						onDuplicateClicked: i,
+						onEdit: c,
+						sendEvent: d,
+						showOwnerButtons: l,
+						toggleConfirmDelete: u
 					} = e;
-					return a.a.createElement(a.a.Fragment, null, a.a.createElement(se.b, {
-						className: ae.a.button,
+					return a.a.createElement(a.a.Fragment, null, a.a.createElement(te.b, {
+						className: Object(v.a)(oe.a.button, t),
 						dropdownId: "MULTIREDDIT_TOP_BAR_OVERFLOW",
 						targetPosition: ["right", "bottom"],
 						tooltipPosition: ["right", "top"]
-					}, d && a.a.createElement(re.b, {
+					}, l && a.a.createElement(ne.b, {
 						displayText: s.fbt._("Edit Details", null, {
 							hk: "q4B9D"
 						}),
-						onClick: i
-					}), a.a.createElement(re.b, {
+						onClick: c
+					}), a.a.createElement(ne.b, {
 						displayText: s.fbt._("Duplicate", null, {
 							hk: "4DZaW1"
 						}),
-						onClick: o
-					}), d && a.a.createElement(re.b, {
-						className: Object(v.a)(ae.a.warning),
+						onClick: i
+					}), l && a.a.createElement(ne.b, {
+						className: Object(v.a)(oe.a.warning),
 						displayText: s.fbt._("Delete Custom Feed", null, {
 							hk: "3QSOzN"
 						}),
-						onClick: l
-					})), n && a.a.createElement(ne.a, {
-						toggleModal: l,
-						onConfirm: t,
+						onClick: u
+					})), r && a.a.createElement(ee.a, {
+						toggleModal: u,
+						onConfirm: n,
 						actionText: s.fbt._("Delete", null, {
 							hk: "3PGKcp"
 						}),
@@ -7755,49 +7741,47 @@
 							hk: "2GGkLQ"
 						}),
 						trackClick: () => {
-							c(Object(Y.a)(r.url))
+							d(Object(Y.a)(o.url))
 						},
 						withOverlay: !0
 					}))
 				})),
-				le = n("./node_modules/lodash/noop.js"),
-				ue = n.n(le),
-				me = n("./src/config.ts"),
-				pe = n("./src/lib/copyToClipboard/index.ts"),
-				he = n("./src/reddit/actions/toaster.ts"),
-				be = n("./src/reddit/actions/tooltip.ts"),
-				fe = n("./src/reddit/components/OverlayAwareTooltip/index.tsx"),
-				ge = n("./src/reddit/controls/Dropdown/index.tsx"),
-				_e = n("./src/reddit/icons/fonts/Share/index.tsx"),
-				xe = n("./src/reddit/models/Toast/index.ts"),
-				ye = n("./src/reddit/selectors/tooltip.ts"),
-				ve = n("./src/reddit/components/MultiredditTopBar/ShareMenu/index.m.less"),
-				we = n.n(ve);
-			const ke = "MULTIREDDIT_TOP_BAR_SHARE",
-				Ee = Object(fe.a)(ge.a),
-				Ce = Object(d.c)({
-					isConfirmPublicOpen: e => "MULTIREDDIT_TOP_BAR_PUBLIC_CONFIRMATION" === Object(oe.a)(e),
-					isDropdownOpen: Object(ye.b)(ke),
+				ce = n("./node_modules/lodash/noop.js"),
+				de = n.n(ce),
+				le = n("./src/config.ts"),
+				ue = n("./src/lib/copyToClipboard/index.ts"),
+				me = n("./src/reddit/actions/toaster.ts"),
+				pe = n("./src/reddit/actions/tooltip.ts"),
+				he = n("./src/reddit/components/OverlayAwareTooltip/index.tsx"),
+				be = n("./src/reddit/controls/Dropdown/index.tsx"),
+				fe = n("./src/reddit/icons/fonts/Share/index.tsx"),
+				ge = n("./src/reddit/models/Toast/index.ts"),
+				_e = n("./src/reddit/selectors/tooltip.ts");
+			const xe = "MULTIREDDIT_TOP_BAR_SHARE",
+				ye = Object(he.a)(be.a),
+				ve = Object(d.c)({
+					isConfirmPublicOpen: e => "MULTIREDDIT_TOP_BAR_PUBLIC_CONFIRMATION" === Object(se.a)(e),
+					isDropdownOpen: Object(_e.b)(xe),
 					isUpdatePending: e => e.multireddits.api.edit.pending
 				}),
-				Oe = Object(c.b)(Ce, (e, t) => ({
+				we = Object(c.b)(ve, (e, t) => ({
 					copyLink: () => {
-						if (Object(pe.a)(me.a.redditUrl + t.multireddit.url)) {
-							const t = Object(he.e)(s.fbt._("Copied link!", null, {
+						if (Object(ue.a)(le.a.redditUrl + t.multireddit.url)) {
+							const t = Object(me.e)(s.fbt._("Copied link!", null, {
 								hk: "2IxdQz"
-							}), xe.b.SuccessCommunity);
-							e(Object(he.f)(t))
+							}), ge.b.SuccessCommunity);
+							e(Object(me.f)(t))
 						} else {
-							const t = Object(he.e)(s.fbt._("Something went wrong", null, {
+							const t = Object(me.e)(s.fbt._("Something went wrong", null, {
 								hk: "GmeVt"
-							}), xe.b.Error);
-							e(Object(he.f)(t))
+							}), ge.b.Error);
+							e(Object(me.f)(t))
 						}
 					},
 					toggleConfirmPublic: () => e(Object(k.i)("MULTIREDDIT_TOP_BAR_PUBLIC_CONFIRMATION")),
 					toggleDropdown: () => {
-						e(Object(be.h)({
-							tooltipId: ke
+						e(Object(pe.h)({
+							tooltipId: xe
 						})), t.sendEvent(Object(Y.e)(t.multireddit.url))
 					},
 					updateVisibility: n => e(Object(p.editRequested)({
@@ -7805,7 +7789,7 @@
 						visibility: n
 					}))
 				}));
-			class je extends a.a.Component {
+			class ke extends a.a.Component {
 				constructor() {
 					super(...arguments), this.onShareButtonClick = async () => {
 						this.props.multireddit.visibility === T.e.Private ? this.props.toggleConfirmPublic() : this.props.toggleDropdown()
@@ -7815,27 +7799,24 @@
 				}
 				render() {
 					return a.a.createElement(a.a.Fragment, null, a.a.createElement(J, {
-						className: we.a.shareMenu,
 						disabled: this.props.isUpdatePending,
-						icon: a.a.createElement(_e.a, {
-							className: we.a.shareIcon
-						}),
-						id: ke,
+						icon: a.a.createElement(fe.a, null),
+						id: xe,
 						onClick: this.onShareButtonClick,
 						text: s.fbt._("Share", null, {
 							hk: "2e7dE3"
 						})
-					}, a.a.createElement(Ee, {
+					}, a.a.createElement(ye, {
 						isOpen: this.props.isDropdownOpen,
-						tooltipId: ke,
+						tooltipId: xe,
 						targetPosition: ["right", "bottom"],
 						tooltipPosition: ["right", "top"]
-					}, a.a.createElement(re.b, {
+					}, a.a.createElement(ne.b, {
 						displayText: s.fbt._("Copy link", null, {
 							hk: "1RMEDS"
 						}),
 						onClick: this.props.copyLink
-					}))), this.props.isConfirmPublicOpen && a.a.createElement(ne.a, {
+					}))), this.props.isConfirmPublicOpen && a.a.createElement(ee.a, {
 						toggleModal: this.props.toggleConfirmPublic,
 						onConfirm: this.onMakePublicConfirm,
 						actionText: s.fbt._("Make public", null, {
@@ -7849,97 +7830,98 @@
 						}), a.a.createElement("br", null), a.a.createElement("br", null), s.fbt._("Would you like to make it public so you can share it with other people?", null, {
 							hk: "3IbJao"
 						})),
-						trackClick: ue.a,
+						trackClick: de.a,
 						withOverlay: !0
 					}))
 				}
 			}
-			var Se = Object(Z.c)(Oe(je)),
-				Te = n("./src/reddit/components/MultiredditTopBar/index.m.less"),
-				Ie = n.n(Te);
+			var Ee = Object(Z.c)(we(ke)),
+				Ce = n("./src/reddit/components/MultiredditTopBar/index.m.less"),
+				Oe = n.n(Ce);
 			const {
-				fbt: De
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), Ne = Object(d.c)({
+				fbt: je
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), Se = Object(d.c)({
 				isLoggedIn: V.K,
 				layout: (e, t) => R.e[Object(A.Q)(e, t)],
 				userIsOwner: (e, t) => Object(H.c)(e, t.multireddit.url)
-			}), Le = Object(c.b)(Ne), Fe = Object(A.u)(), Pe = {};
-			var Be = Fe(Le(e => a.a.createElement("div", {
-					className: Ie.a.container
+			}), Te = Object(c.b)(Se), Ie = Object(A.u)(), De = {};
+			var Ne = Ie(Te(e => a.a.createElement("div", {
+					className: Oe.a.container
 				}, a.a.createElement("div", {
-					className: Object(v.a)(Ie.a.layoutContainer, e.layout === R.d.Card ? Ie.a.layoutCard : null)
+					className: Object(v.a)(Oe.a.layoutContainer, e.layout === R.d.Card ? Oe.a.layoutCard : null)
 				}, a.a.createElement("img", {
-					className: Ie.a.icon,
+					className: Oe.a.icon,
 					src: e.multireddit.icon
 				}), a.a.createElement("div", {
-					className: Ie.a.content
+					className: Oe.a.content
 				}, a.a.createElement("div", {
-					className: Ie.a.header
+					className: Oe.a.header
 				}, a.a.createElement("h1", {
-					className: Ie.a.multiredditName
+					className: Oe.a.multiredditName
 				}, e.multireddit.displayText), e.multireddit.isNSFW && a.a.createElement(w.b, {
-					className: Ie.a.flair,
+					className: Oe.a.flair,
 					flair: {
 						type: U.f.Nsfw,
 						text: "nsfw"
 					}
 				})), a.a.createElement("div", {
-					className: Ie.a.meta
-				}, De._({
+					className: Oe.a.meta
+				}, je._({
 					"*": "{communitiesCount} communities in this custom feed",
 					_1: "1 community in this custom feed"
-				}, [De._plural(e.multireddit.subredditCount, "communitiesCount")], {
+				}, [je._plural(e.multireddit.subredditCount, "communitiesCount")], {
 					hk: "12Ej7M"
 				}), a.a.createElement("span", null, " • "), e.userIsOwner ? a.a.createElement(F, {
 					multireddit: e.multireddit
-				}) : a.a.createElement(a.a.Fragment, null, De._("Curated by {multiredditFeedAuthorLink}", [De._param("multiredditFeedAuthorLink", a.a.createElement(M.a, {
-					className: Ie.a.usernameLink,
+				}) : a.a.createElement(a.a.Fragment, null, je._("Curated by {multiredditFeedAuthorLink}", [je._param("multiredditFeedAuthorLink", a.a.createElement(M.a, {
+					className: Oe.a.usernameLink,
 					to: `/${Object(z.d)(Object(T.i)(e.multireddit.url))}`
 				}, Object(z.d)(Object(T.i)(e.multireddit.url))))], {
 					hk: "3AKmgH"
 				}))), a.a.createElement("div", {
-					className: Ie.a.descriptionContainer
+					className: Oe.a.descriptionContainer
 				}, e.multireddit.descriptionRtJson ? a.a.createElement(B.a, {
 					content: e.multireddit.descriptionRtJson,
-					rtJsonElementProps: Pe
+					rtJsonElementProps: De
 				}) : a.a.createElement(P.a, {
 					html: e.multireddit.descriptionHtml || e.multireddit.description
 				}))), a.a.createElement("div", {
-					className: Ie.a.actions
-				}, !e.userIsOwner && e.isLoggedIn && a.a.createElement(te, {
+					className: Oe.a.actions
+				}, !e.userIsOwner && e.isLoggedIn && a.a.createElement($, {
 					multireddit: e.multireddit
-				}), a.a.createElement(Se, {
+				}), a.a.createElement(Ee, {
 					multireddit: e.multireddit
-				}), e.isLoggedIn && a.a.createElement(de, {
-					multireddit: e.multireddit
+				}), e.isLoggedIn && a.a.createElement(ae, {
+					multireddit: e.multireddit,
+					className: Oe.a.overflowMenu
 				})))))),
-				Re = n("./src/reddit/icons/svgs/Planet/index.tsx"),
-				Ae = n("./src/reddit/layout/page/Listing/index.tsx"),
-				Me = n("./src/reddit/models/ContentGate.ts"),
-				ze = n("./src/reddit/pages/Multireddit/index.m.less"),
-				Ue = n.n(ze);
-			const He = e => a.a.createElement("div", {
-					className: Ue.a.emptyMessage
-				}, a.a.createElement(Re.a, {
-					className: Ue.a.planetIcon
+				Le = n("./src/reddit/icons/svgs/Planet/index.tsx"),
+				Fe = n("./src/reddit/layout/page/Listing/index.tsx"),
+				Pe = n("./src/reddit/models/ContentGate.ts"),
+				Be = n("./src/reddit/pages/Multireddit/index.m.less"),
+				Re = n.n(Be);
+			const Ae = e => a.a.createElement("div", {
+					className: Re.a.emptyMessage
+				}, a.a.createElement(Le.a, {
+					className: Re.a.planetIcon
 				}), a.a.createElement("div", {
-					className: Ue.a.emptyMessageText
+					className: Re.a.emptyMessageText
 				}, e.multireddit && 0 !== e.multireddit.subredditCount ? s.fbt._("There are no posts in this custom feed", null, {
 					hk: "16ubpi"
 				}) : s.fbt._("There are 0 communities in this custom feed", null, {
 					hk: "tKC2v"
 				}))),
-				Ve = Object(A.u)({
+				Me = Object(A.u)({
 					currentMultireddit: A.d,
 					pageLayer: e => e
 				}),
-				We = (e, {
+				ze = (e, {
 					match: t
 				}) => t.params.sort || l.V.HOT,
-				qe = (e, {
+				Ue = (e, {
 					location: t
 				}) => o()([...Object(u.a)(t.search)]),
-				Ge = (e, t) => {
+				He = (e, t) => {
 					const n = Object(A.e)(e, {
 						pageLayer: t.pageLayer
 					});
@@ -7955,22 +7937,22 @@
 						return Object(T.h)(s || "me", n)
 					}
 				},
-				Ke = Object(d.a)(We, qe, Ge, (e, t, n) => Object(m.a)(n, e, t)),
-				Je = Object(d.a)(qe, e => {
+				Ve = Object(d.a)(ze, Ue, He, (e, t, n) => Object(m.a)(n, e, t)),
+				We = Object(d.a)(Ue, e => {
 					const t = h.y in e && e[h.y].toUpperCase();
 					return "string" == typeof t && t in l.ec ? l.ec[t] : l.fc
 				}),
-				Ze = Object(d.c)({
-					listingKey: Ke,
-					listingName: Ge,
+				qe = Object(d.c)({
+					listingKey: Ve,
+					listingName: He,
 					multireddit: A.e,
 					over18Prefs: V.eb,
-					sort: We,
-					timeSort: Je
+					sort: ze,
+					timeSort: We
 				});
-			class Ye extends a.a.Component {
+			class Ge extends a.a.Component {
 				constructor() {
-					super(...arguments), this.noPosts = () => a.a.createElement(He, {
+					super(...arguments), this.noPosts = () => a.a.createElement(Ae, {
 						multireddit: this.props.multireddit
 					})
 				}
@@ -7989,8 +7971,8 @@
 						timeSort: i
 					} = this.props;
 					return s ? s.isNSFW && !r ? a.a.createElement(f.default, {
-						contentGateType: Me.a.NsfwCustomFeed
-					}) : a.a.createElement(Ae.a, {
+						contentGateType: Pe.a.NsfwCustomFeed
+					}) : a.a.createElement(Fe.a, {
 						className: this.props.className,
 						content: a.a.createElement(a.a.Fragment, null, s && a.a.createElement(g.a, {
 							sort: o,
@@ -8010,30 +7992,30 @@
 							onLoadMore: this.props.onLoadMorePosts,
 							inSubredditOrProfile: !1
 						})),
-						contentNavBar: s ? a.a.createElement(a.a.Fragment, null, Object(T.f)(s) && a.a.createElement(Be, {
+						contentNavBar: s ? a.a.createElement(a.a.Fragment, null, Object(T.f)(s) && a.a.createElement(Ne, {
 							multireddit: s
 						})) : null,
 						fitPageToContent: !0,
 						sidebar: s ? a.a.createElement(y.a, {
-							className: Ue.a.sidebar,
+							className: Re.a.sidebar,
 							listingKey: e,
 							listingName: t,
 							multireddit: s,
 							multiUsername: n
 						}) : null
 					}) : a.a.createElement(f.default, {
-						contentGateType: Me.a.CustomFeedDoesNotExist
+						contentGateType: Pe.a.CustomFeedDoesNotExist
 					})
 				}
 			}
-			const Xe = Ve(Object(c.b)(Ze, (e, t) => ({
+			const Ke = Me(Object(c.b)(qe, (e, t) => ({
 				onLoadMorePosts: () => e(Object(p.moreOfMyMultiRequested)({
 					sort: t.match.params.sort,
 					multiredditName: t.match.params.multiredditName,
 					username: t.match.params.username
 				}))
-			}))(Ye));
-			t.default = e => a.a.createElement(Xe, e)
+			}))(Ge));
+			t.default = e => a.a.createElement(Ke, e)
 		},
 		"./src/reddit/selectors/experiments/econLeaderboards.ts": function(e, t, n) {
 			"use strict";
@@ -8222,4 +8204,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.aee3926ec51056256c89.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.55ab0d140291797899b8.js.map
