@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.ff7fbf3a08066ec7140e.js
-// Retrieved at 10/14/2021, 7:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.4d31fb7d0b00f0f58811.js
+// Retrieved at 10/14/2021, 8:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost", "Reddit~StandalonePostPage~reddit-components-MediumPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -6851,83 +6851,100 @@
 		"./src/reddit/selectors/experiments/postActionBarAnimation.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return a
-			})), n.d(t, "b", (function() {
 				return c
-			})), n.d(t, "h", (function() {
+			})), n.d(t, "b", (function() {
 				return d
-			})), n.d(t, "d", (function() {
+			})), n.d(t, "h", (function() {
 				return l
-			})), n.d(t, "g", (function() {
+			})), n.d(t, "d", (function() {
 				return u
-			})), n.d(t, "f", (function() {
+			})), n.d(t, "g", (function() {
 				return m
-			})), n.d(t, "c", (function() {
+			})), n.d(t, "f", (function() {
 				return p
-			})), n.d(t, "e", (function() {
+			})), n.d(t, "c", (function() {
 				return b
+			})), n.d(t, "e", (function() {
+				return f
 			}));
 			var s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				o = n("./src/reddit/selectors/experiments/index.ts"),
-				i = n("./src/reddit/selectors/userPrefs.ts");
-			const a = 1e4,
-				c = e => {
+				i = n("./src/reddit/selectors/experiments/presence.ts"),
+				a = n("./src/reddit/selectors/userPrefs.ts");
+			const c = 1e4,
+				d = e => {
+					if (Object(i.a)(e)) return !1;
 					const t = Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
 						experimentName: s.n
 					});
 					return t === s.t.VoteCountOnly || t === s.t.CommentCountOnly || t === s.t.VoteAndCommentCount
 				},
-				d = e => {
-					if (Object(i.c)(e)) return !1;
+				l = e => {
+					if (Object(a.c)(e) || Object(i.a)(e)) return !1;
 					const t = Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
 						experimentName: s.n
 					});
 					return t === s.t.VoteCountOnly || t === s.t.VoteAndCommentCount
 				},
-				l = e => {
-					if (Object(i.c)(e)) return !1;
+				u = e => {
+					if (Object(a.c)(e) || Object(i.a)(e)) return !1;
 					const t = Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
 						experimentName: s.n
 					});
 					return t === s.t.CommentCountOnly || t === s.t.VoteAndCommentCount
 				},
-				u = (e, {
+				m = (e, {
 					post: t
-				}) => m(e, {
+				}) => p(e, {
 					postId: t.id
 				}),
-				m = (e, {
-					postId: t
-				}) => {
-					const n = e.posts.models[t];
-					if (Object(i.c)(e) || !n || n.isSponsored || n.isScoreHidden || n.score >= a) return !1;
-					const r = Object(o.d)(e, {
-							experimentName: s.n
-						}),
-						c = null == r ? void 0 : r.variant;
-					return c === s.t.VoteCountOnly || c === s.t.VoteAndCommentCount
-				},
 				p = (e, {
 					postId: t
 				}) => {
 					const n = e.posts.models[t];
-					if (Object(i.c)(e) || !n || n.isSponsored || n.numComments >= a) return !1;
+					if (Object(a.c)(e) || !n || n.isSponsored || n.isScoreHidden || n.score >= c || Object(i.a)(e)) return !1;
 					const r = Object(o.d)(e, {
 							experimentName: s.n
 						}),
-						c = null == r ? void 0 : r.variant;
-					return c === s.t.CommentCountOnly || c === s.t.VoteAndCommentCount
+						d = null == r ? void 0 : r.variant;
+					return d === s.t.VoteCountOnly || d === s.t.VoteAndCommentCount
 				},
-				b = e => {
+				b = (e, {
+					postId: t
+				}) => {
+					const n = e.posts.models[t];
+					if (Object(a.c)(e) || !n || n.isSponsored || n.numComments >= c || Object(i.a)(e)) return !1;
+					const r = Object(o.d)(e, {
+							experimentName: s.n
+						}),
+						d = null == r ? void 0 : r.variant;
+					return d === s.t.CommentCountOnly || d === s.t.VoteAndCommentCount
+				},
+				f = e => {
+					if (Object(i.a)(e)) return !1;
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
 						experimentName: s.wb
 					}) === s.Hb.Enabled
 				}
+		},
+		"./src/reddit/selectors/experiments/presence.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "a", (function() {
+				return o
+			}));
+			var s = n("./src/reddit/constants/experiments.ts"),
+				r = n("./src/reddit/helpers/chooseVariant/index.ts");
+			const o = e => {
+				return Object(r.c)(e, {
+					experimentEligibilitySelector: r.a,
+					experimentName: s.Dd
+				}) === s.Ac
+			}
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, n) {
 			"use strict";
@@ -7165,10 +7182,10 @@
 				o = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = n("./src/reddit/selectors/posts.ts");
 			const a = e => Object(o.c)(e, {
-					experimentName: r.Fd,
+					experimentName: r.Gd,
 					experimentEligibilitySelector: o.a
 				}),
-				c = (e, t) => t === r.Od.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				c = (e, t) => t === r.Pd.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				d = Object(s.a)(i.H, a, (e, t) => c(e, t)),
 				l = Object(s.a)((e, t) => t, a, (e, t) => c(e, t))
 		},
@@ -7328,4 +7345,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.ff7fbf3a08066ec7140e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.4d31fb7d0b00f0f58811.js.map

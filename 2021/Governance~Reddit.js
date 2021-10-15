@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.00d1ecbf68c4292a8720.js
-// Retrieved at 10/14/2021, 7:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.e3d273ef34a66f791b59.js
+// Retrieved at 10/14/2021, 8:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -4015,7 +4015,7 @@
 			const v = e => I.d.reCaptchaEnterprise(e) && !Object(D.d)(e),
 				j = e => !!Object(T.c)(e, {
 					experimentEligibilitySelector: Object(g.d)(Object(g.b)(...a.d)),
-					experimentName: b.Rd
+					experimentName: b.Sd
 				}),
 				A = Object(s.b)("LOAD_RECAPTCHA_ENTERPRISE"),
 				w = Object(s.b)("EXECUTE_RECAPTCHA_ENTERPRISE"),
@@ -5166,40 +5166,38 @@
 		"./src/reddit/actions/upvotePrompt.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
-				return y
+				return b
 			})), r.d(t, "b", (function() {
-				return m
+				return f
 			}));
 			var s = r("./node_modules/fbt/lib/FbtPublic.js"),
 				n = r("./src/config.ts"),
 				a = r("./src/lib/makeActionCreator/index.ts"),
 				c = r("./src/reddit/actions/post.ts"),
 				o = r("./src/reddit/actions/toaster.ts"),
-				d = r("./src/reddit/constants/experiments.ts"),
-				i = r("./src/reddit/helpers/localStorage/index.ts"),
-				u = r("./src/reddit/selectors/telemetry.ts");
-			const l = "upvote_prompt";
-			var p = r("./src/reddit/selectors/experiments/index.ts"),
-				b = r("./src/reddit/selectors/experiments/upvotePrompt.ts"),
-				f = r("./src/telemetry/index.ts");
-			const y = "INCREMENT_SEEN_COUNT_PER_SESS",
-				m = (e, t, r) => async (a, c) => {
-					const d = c(),
-						p = Object(i.A)(),
-						y = Date.now(),
-						m = p && y - p < 18e4,
-						h = Object(b.c)(d, {
+				d = r("./src/reddit/helpers/localStorage/index.ts"),
+				i = r("./src/reddit/selectors/telemetry.ts");
+			const u = "upvote_prompt";
+			var l = r("./src/reddit/selectors/upvotePrompt.ts"),
+				p = r("./src/telemetry/index.ts");
+			const b = "INCREMENT_SEEN_COUNT_PER_SESS",
+				f = (e, t, r) => async (a, c) => {
+					const b = c(),
+						f = Object(d.A)(),
+						_ = Date.now(),
+						O = f && _ - f < 18e4,
+						h = Object(l.c)(b, {
 							postId: e
 						}),
-						S = d.upvotePromptCountPerSess,
+						S = b.upvotePromptCountPerSess,
 						I = (() => {
-							const e = Object(i.z)();
+							const e = Object(d.z)();
 							if (!e) return [];
 							const t = Date.now();
 							return e.filter(e => t - e < 864e5)
 						})();
-					if (!e || !h || m || S >= 4 || I.length >= 3) return;
-					const g = _(d, t);
+					if (!e || !h || O || S >= 4 || I.length >= 3) return;
+					const g = m(b, t);
 					if (!g) return;
 					a(Object(o.f)({
 						text: g,
@@ -5207,46 +5205,38 @@
 							hk: "1u7UnZ"
 						}),
 						customIconAsset: `${n.a.assetPath}/img/snoo-upvote.png`,
-						duration: b.a,
-						buttonAction: E(e),
-						onClose: () => Object(f.a)((e => ({
-							source: l,
+						duration: l.a,
+						buttonAction: y(e),
+						onClose: () => Object(p.a)((e => ({
+							source: u,
 							action: "click",
 							noun: "close",
-							...Object(u.defaults)(e)
-						}))(d))
+							...Object(i.defaults)(e)
+						}))(b))
 					}));
 					const T = [...I, Date.now()].slice(Math.max(I.length + 1 - 3, 0));
-					Object(f.a)((e => ({
-						source: l,
+					Object(p.a)((e => ({
+						source: u,
 						action: "view",
-						noun: l,
-						...Object(u.defaults)(e)
-					}))(d)), Object(i.Db)(), Object(i.Cb)(T), a(O()), r && r()
-				}, E = e => async (t, r) => {
-					Object(f.a)((e => ({
-						source: l,
+						noun: u,
+						...Object(i.defaults)(e)
+					}))(b)), Object(d.Db)(), Object(d.Cb)(T), a(E()), r && r()
+				}, y = e => async (t, r) => {
+					Object(p.a)((e => ({
+						source: u,
 						action: "click",
 						noun: "upvote",
-						...Object(u.defaults)(e)
-					}))(r())), Object(b.c)(r(), {
+						...Object(i.defaults)(e)
+					}))(r())), Object(l.c)(r(), {
 						postId: e
 					}) && t(Object(c.db)(e))
-				}, _ = (e, t) => {
-					const r = Object(p.d)(e, {
-						experimentName: d.ze
-					});
-					let n = "";
-					return (null == r ? void 0 : r.variant) === d.Ae.Variant1 ? n = t ? s.fbt._("Was that a good post? Upvote it so it gets seen by more people", null, {
-						hk: "2NOllx"
-					}) : s.fbt._("Was this a good post? Upvote it so it gets seen by more people", null, {
-						hk: "K1yBi"
-					}) : (null == r ? void 0 : r.variant) === d.Ae.Variant2 && (n = t ? s.fbt._("If you enjoyed that post, upvote it so that more redditors will see it too.", null, {
+				}, m = (e, t) => {
+					return t ? s.fbt._("If you enjoyed that post, upvote it so that more redditors will see it too.", null, {
 						hk: "1Y6B4I"
 					}) : s.fbt._("If you enjoyed this post, upvote it so that more redditors will see it too.", null, {
 						hk: "HR9Ye"
-					})), n
-				}, O = Object(a.a)(y)
+					})
+				}, E = Object(a.a)(b)
 		},
 		"./src/reddit/actions/urlRequested.ts": function(e, t, r) {
 			"use strict";
@@ -26198,37 +26188,7 @@
 				l = e => e === n.U.OnetapAuto,
 				p = e => e.user.googleOneTapEnabled,
 				b = Object(s.a)(o.K, i, (e, t) => !e && !!t),
-				f = Object(s.a)(o.K, i, (e, t) => !e && !!t && !Object(n.Le)(t))
-		},
-		"./src/reddit/selectors/experiments/upvotePrompt.ts": function(e, t, r) {
-			"use strict";
-			r.d(t, "b", (function() {
-				return o
-			})), r.d(t, "a", (function() {
-				return d
-			})), r.d(t, "c", (function() {
-				return i
-			})), r.d(t, "d", (function() {
-				return u
-			}));
-			var s = r("./src/reddit/constants/experiments.ts"),
-				n = r("./src/reddit/helpers/chooseVariant/index.ts"),
-				a = r("./src/reddit/models/Vote/index.ts"),
-				c = r("./src/reddit/selectors/posts.ts");
-			const o = 5e3,
-				d = 12e3,
-				i = (e, t) => {
-					const r = Object(c.H)(e, t);
-					return r && (1 === (null == r ? void 0 : r.score) || 0 === (null == r ? void 0 : r.score)) && (null == r ? void 0 : r.voteState) === a.a.notVoted
-				},
-				u = (e, t) => {
-					if (!i(e, t)) return !1;
-					const r = Object(n.c)(e, {
-						experimentEligibilitySelector: n.a,
-						experimentName: s.ze
-					});
-					return r === s.Ae.Variant1 || r === s.Ae.Variant2
-				}
+				f = Object(s.a)(o.K, i, (e, t) => !e && !!t && !Object(n.Ke)(t))
 		},
 		"./src/reddit/selectors/scheduledPosts/index.ts": function(e, t, r) {
 			"use strict";
@@ -26371,6 +26331,24 @@
 				D = e => e.posts.scheduledPosts.api.pendingUpdate,
 				v = e => e.posts.scheduledPosts.api.creationToken
 		},
+		"./src/reddit/selectors/upvotePrompt.ts": function(e, t, r) {
+			"use strict";
+			r.d(t, "b", (function() {
+				return a
+			})), r.d(t, "a", (function() {
+				return c
+			})), r.d(t, "c", (function() {
+				return o
+			}));
+			var s = r("./src/reddit/models/Vote/index.ts"),
+				n = r("./src/reddit/selectors/posts.ts");
+			const a = 5e3,
+				c = 12e3,
+				o = (e, t) => {
+					const r = Object(n.H)(e, t);
+					return r && !r.isArchived && (1 === (null == r ? void 0 : r.score) || 0 === (null == r ? void 0 : r.score)) && (null == r ? void 0 : r.voteState) === s.a.notVoted
+				}
+		},
 		"./src/reddit/selectors/userDataRequest.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
@@ -26425,4 +26403,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.00d1ecbf68c4292a8720.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.e3d273ef34a66f791b59.js.map

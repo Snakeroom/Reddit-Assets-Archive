@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.663d85e7486b08eaa1e7.js
-// Retrieved at 10/14/2021, 7:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.980d2ebaf878c749fcea.js
+// Retrieved at 10/14/2021, 8:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-InFeedPostCreation"], {
 		"./src/reddit/components/InFeedPostCreation/index.m.less": function(e, t, n) {
@@ -35,12 +35,12 @@
 				I = n("./src/reddit/controls/Button/index.tsx"),
 				x = n("./src/reddit/controls/InternalLink/index.tsx"),
 				U = n("./src/reddit/icons/fonts/index.tsx"),
-				_ = n("./src/reddit/selectors/experiments/presenceIndicator.ts"),
-				E = n("./src/reddit/selectors/subreddit.ts"),
-				f = n("./src/reddit/selectors/telemetry.ts"),
-				N = n("./src/reddit/selectors/user.ts"),
-				O = n("./src/reddit/components/InFeedPostCreation/index.m.less"),
-				C = n.n(O);
+				_ = n("./src/reddit/selectors/experiments/onlineIndicator.ts"),
+				f = n("./src/reddit/selectors/subreddit.ts"),
+				E = n("./src/reddit/selectors/telemetry.ts"),
+				O = n("./src/reddit/selectors/user.ts"),
+				N = n("./src/reddit/components/InFeedPostCreation/index.m.less"),
+				C = n.n(N);
 			const P = l.a.wrapped(b.a, "CurrentUserIcon", C.a);
 			var j;
 			! function(e) {
@@ -67,11 +67,11 @@
 					}
 				},
 				M = Object(a.c)({
-					currentUser: N.k,
+					currentUser: O.k,
 					isPresenceConsumptionExpEnabled: _.c,
-					isPresenceTogglePref: N.P,
-					subreddit: E.w,
-					subredditAboutInfo: E.t
+					isPresenceTogglePref: O.P,
+					subreddit: f.w,
+					subredditAboutInfo: f.t
 				}),
 				L = Object(c.b)(M, e => ({
 					navigateTo: t => e(Object(i.b)(t)),
@@ -122,28 +122,28 @@
 							source: "post_composer_du",
 							action: "click",
 							noun: h(e),
-							...f.defaults(t)
+							...E.defaults(t)
 						}))
 					},
-					E = () => {
+					f = () => {
 						_(d.Ub.POST), s(m)
 					},
-					N = t && n,
-					O = e ? o.a.createElement(x.a, {
+					O = t && n,
+					N = e ? o.a.createElement(x.a, {
 						className: C.a.UserIconWrapper,
 						to: e.url
 					}, o.a.createElement(P, {
 						className: C.a.UserIcon,
-						shouldShowPresenceIndicator: N
+						shouldShowPresenceIndicator: O
 					})) : null;
 				return o.a.createElement("div", {
 					className: C.a.Container
-				}, O, o.a.createElement("input", {
+				}, N, o.a.createElement("input", {
 					name: "createPost",
 					className: C.a.Input,
-					onChange: E,
-					onClick: E,
-					onKeyPress: E,
+					onChange: f,
+					onClick: f,
+					onKeyPress: f,
 					placeholder: r.fbt._("Create Post", null, {
 						hk: "OcnKS"
 					}),
@@ -238,38 +238,41 @@
 				}))
 			})
 		},
-		"./src/reddit/selectors/experiments/presenceIndicator.ts": function(e, t, n) {
+		"./src/reddit/selectors/experiments/onlineIndicator.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "d", (function() {
-				return o
-			})), n.d(t, "c", (function() {
 				return c
-			})), n.d(t, "b", (function() {
+			})), n.d(t, "c", (function() {
 				return i
-			})), n.d(t, "a", (function() {
+			})), n.d(t, "b", (function() {
 				return a
+			})), n.d(t, "a", (function() {
+				return d
 			}));
 			var r = n("./src/reddit/constants/experiments.ts"),
-				s = n("./src/reddit/helpers/chooseVariant/index.ts");
-			const o = e => {
+				s = n("./src/reddit/helpers/chooseVariant/index.ts"),
+				o = n("./src/reddit/selectors/experiments/presence.ts");
+			const c = e => {
+					return Object(s.c)(e, {
+						experimentEligibilitySelector: s.a,
+						experimentName: r.Fd
+					}) === r.Ac
+				},
+				i = e => {
+					if (Object(o.a)(e)) return !1;
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
 						experimentName: r.Ed
 					}) === r.Ac
 				},
-				c = e => {
-					return Object(s.c)(e, {
-						experimentEligibilitySelector: s.a,
-						experimentName: r.Dd
-					}) === r.Ac
-				},
-				i = e => {
+				a = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
 						experimentName: r.wd
 					}) === r.Ac
 				},
-				a = e => {
+				d = e => {
+					if (Object(o.a)(e)) return !1;
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
 						experimentName: r.vd
@@ -278,4 +281,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.663d85e7486b08eaa1e7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.980d2ebaf878c749fcea.js.map

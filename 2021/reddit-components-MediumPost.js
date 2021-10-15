@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.bb3e2b18f53f38840ffe.js
-// Retrieved at 10/14/2021, 7:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.9871f1a15a2f8619493a.js
+// Retrieved at 10/14/2021, 8:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-MediumPost"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -1316,8 +1316,8 @@
 				q = s("./src/reddit/selectors/showPromotedCTA.ts"),
 				z = s("./src/reddit/components/MediumPost/MediumThumbnail.tsx"),
 				Q = s("./src/reddit/helpers/styles/mixins/index.m.less"),
-				X = s.n(Q),
-				K = s("./src/reddit/selectors/i18n/index.ts"),
+				K = s.n(Q),
+				X = s("./src/reddit/selectors/i18n/index.ts"),
 				Z = s("./src/reddit/components/MediumPost/index.m.less"),
 				J = s.n(Z);
 
@@ -1337,7 +1337,7 @@
 					isCurrentUserProfilePost: W.l,
 					showPromotedCTA: q.b,
 					moderatorPermissions: H.l,
-					shouldShowNsfwListingBelow: K.b,
+					shouldShowNsfwListingBelow: X.b,
 					showAwardsPlaque: U.a,
 					showEditFlair: G.a,
 					showMedia: A.s,
@@ -1361,7 +1361,7 @@
 						isTopicPage: W,
 						isCommentCountAnimationEnabled: q,
 						isVoteCountAnimationEnabled: Q,
-						isCountAnimShadowTestEnabled: K,
+						isCountAnimShadowTestEnabled: X,
 						imageGalleryCurrentItem: Z,
 						listingKey: $,
 						moderatorPermissions: ee,
@@ -1387,8 +1387,8 @@
 						source: Fe
 					} = De;
 					return o.a.createElement(o.a.Fragment, null, o.a.createElement(I.a, {
-						className: Object(d.a)(J.a.container, t, X.a.largeAndMediumPostStyles, X.a.largeAndMediumActiveStyles, Object(D.a)(e), {
-							[X.a.mUseRedditTheme]: e.redditStyle || e["data-redditstyle"]
+						className: Object(d.a)(J.a.container, t, K.a.largeAndMediumPostStyles, K.a.largeAndMediumActiveStyles, Object(D.a)(e), {
+							[K.a.mUseRedditTheme]: e.redditStyle || e["data-redditstyle"]
 						}),
 						isOverlay: G,
 						style: Object(D.b)(e.flairStyleTemplate),
@@ -1404,7 +1404,7 @@
 						flairStyleTemplate: Te,
 						redditStyle: ie,
 						isVoteCountAnimation: Q,
-						isCountAnimShadowTestEnabled: K,
+						isCountAnimShadowTestEnabled: X,
 						postId: oe,
 						triggerCelebratoryMoment: fe
 					}), o.a.createElement(T.a, {
@@ -1496,7 +1496,7 @@
 						hasModPostPerms: Ie,
 						hostPostData: M,
 						isCommentCountAnimation: q,
-						isCountAnimShadowTestEnabled: K,
+						isCountAnimShadowTestEnabled: X,
 						isOverlay: !!G,
 						listingKey: $,
 						modModeEnabled: te,
@@ -1822,8 +1822,8 @@
 					},
 					z = Object(i.e)(g.a),
 					Q = G.isSponsored && (z === p.s.NoLockIcon || z === p.s.PromotedGrey),
-					X = G.isRemoved && !G.modRemovalReason && !G.modNote && G.belongsTo.type === b.a.SUBREDDIT,
-					K = B("Approve", G.id, W),
+					K = G.isRemoved && !G.modRemovalReason && !G.modNote && G.belongsTo.type === b.a.SUBREDDIT,
+					X = B("Approve", G.id, W),
 					Z = B("Archived", G.id, W),
 					J = B("Automod", G.id, W),
 					$ = B("Lock", G.id, W),
@@ -1887,11 +1887,11 @@
 					isFilled: !0,
 					className: Object(c.a)(N.a.icon, N.a.approveIcon),
 					desc: Object(f.a)(G),
-					id: K,
-					onMouseEnter: H(K),
+					id: X,
+					onMouseEnter: H(X),
 					onMouseLeave: Y
 				}), r.a.createElement(u.c, k({
-					tooltipId: K,
+					tooltipId: X,
 					text: Object(f.a)(G)
 				}, q))), Object(_.a)(G) && !ie && r.a.createElement(o.Fragment, null, r.a.createElement(I.a, {
 					isFilled: !0,
@@ -1900,7 +1900,7 @@
 					id: te,
 					onMouseEnter: H(te),
 					onMouseLeave: Y
-				}), X && r.a.createElement(m.a, {
+				}), K && r.a.createElement(m.a, {
 					className: N.a.addRemovalReason,
 					onClick: V,
 					text: n.fbt._("Add a removal reason", null, {
@@ -2375,7 +2375,7 @@
 						[w.a.isVisitedEnabled]: !e
 					})
 				}, n),
-				X = Object(c.c)({
+				K = Object(c.c)({
 					flairPosition: (e, {
 						pageLayer: t
 					}) => Object(p.q)(e, {
@@ -2384,7 +2384,7 @@
 					shouldOpenPostInNewTab: F.db,
 					isTournamentPredictionPostV2: D.u
 				}),
-				K = e => {
+				X = e => {
 					const {
 						post: t,
 						subreddit: s
@@ -2513,7 +2513,7 @@
 						post: c,
 						sendEvent: this.props.sendEvent,
 						showCategoryTag: !1
-					}), h && r.a.createElement(K, W({}, this.props, {
+					}), h && r.a.createElement(X, W({}, this.props, {
 						leftFlair: d ? b : void 0
 					})), a && r.a.createElement(k, {
 						className: w.a.pollMeta,
@@ -2537,7 +2537,7 @@
 				const t = Object(p.db)(),
 					s = Object(p.w)(t),
 					n = Object(V.a)(),
-					o = Object(i.e)(o => X(o, {
+					o = Object(i.e)(o => K(o, {
 						...n,
 						...e,
 						isCommentPermalink: s,
@@ -4230,7 +4230,7 @@
 					experimentEligibilitySelector: o.a,
 					experimentName: n.ac
 				});
-				return !(!t || Object(n.Le)(t))
+				return !(!t || Object(n.Ke)(t))
 			}
 		},
 		"./src/reddit/selectors/i18n/index.ts": function(e, t, s) {
@@ -4246,7 +4246,7 @@
 				i = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const a = e => {
 					const t = Object(i.a)(e);
-					return Boolean(t) && !Object(o.Le)(t)
+					return Boolean(t) && !Object(o.Ke)(t)
 				},
 				c = Object(n.a)(a, r.d, (e, t) => e && !t)
 		},
@@ -4262,13 +4262,13 @@
 				r = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = s("./src/reddit/selectors/posts.ts");
 			const a = e => Object(r.c)(e, {
-					experimentName: o.Fd,
+					experimentName: o.Gd,
 					experimentEligibilitySelector: r.a
 				}),
-				c = (e, t) => t === o.Od.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				c = (e, t) => t === o.Pd.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				d = Object(n.a)(i.H, a, (e, t) => c(e, t)),
 				l = Object(n.a)((e, t) => t, a, (e, t) => c(e, t))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.bb3e2b18f53f38840ffe.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.9871f1a15a2f8619493a.js.map
