@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.3d6c42d5837690577f24.js
-// Retrieved at 10/14/2021, 8:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.a89222da9e5d6be453bf.js
+// Retrieved at 10/15/2021, 4:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -3213,7 +3213,7 @@
 				ke = (e, t, n) => {
 					let s = e.url;
 					return e.urlParams.sort || Object(l.I)(e) || (s = _e.a.join(s, t)), Object(p.a)(s, {
-						[K.y]: n
+						[K.z]: n
 					})
 				},
 				Ee = F.a.div("ListingSortContainer", ye.a),
@@ -7939,7 +7939,7 @@
 				},
 				Ve = Object(d.a)(ze, Ue, He, (e, t, n) => Object(m.a)(n, e, t)),
 				We = Object(d.a)(Ue, e => {
-					const t = h.y in e && e[h.y].toUpperCase();
+					const t = h.z in e && e[h.z].toUpperCase();
 					return "string" == typeof t && t in l.ec ? l.ec[t] : l.fc
 				}),
 				qe = Object(d.c)({
@@ -8204,4 +8204,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.3d6c42d5837690577f24.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.a89222da9e5d6be453bf.js.map

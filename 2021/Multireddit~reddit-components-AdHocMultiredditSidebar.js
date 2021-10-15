@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit~reddit-components-AdHocMultiredditSidebar.f8f2e3fbd65dad5a645d.js
-// Retrieved at 10/13/2021, 7:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit~reddit-components-AdHocMultiredditSidebar.db87175300a498ae9591.js
+// Retrieved at 10/15/2021, 4:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit~reddit-components-AdHocMultiredditSidebar"], {
 		"./node_modules/lodash/take.js": function(e, t, r) {
@@ -425,7 +425,7 @@
 							queryParams: x
 						} = a,
 						E = Object(l.a)(f, u, x),
-						y = b.y in x && x[b.y].toUpperCase() || "",
+						y = b.z in x && x[b.z].toUpperCase() || "",
 						O = o.ec[y] || !1,
 						S = Object(P.k)(s);
 					(h || S && S.displayText) && await e(Object(m.multiredditFeedRequested)(E, (h || S.displayText).toLowerCase(), p.toLowerCase(), {
@@ -808,7 +808,7 @@
 						O = h.listings.postOrder.ids[E],
 						_ = h.listings.postOrder.api.error[E],
 						C = h.listings.postOrder.api.pending[E],
-						v = b.y in e.queryParams && e.queryParams[b.y].toUpperCase() || "",
+						v = b.z in e.queryParams && e.queryParams[b.z].toUpperCase() || "",
 						T = v in l.ec && l.ec[v];
 					if (C || O && !_ && !t) return void(O && (r(u.l({
 						title: Object(g.f)(s(), m)
@@ -2658,4 +2658,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit~reddit-components-AdHocMultiredditSidebar.f8f2e3fbd65dad5a645d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit~reddit-components-AdHocMultiredditSidebar.db87175300a498ae9591.js.map

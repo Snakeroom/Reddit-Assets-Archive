@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.b111d61fbb4f2d225f26.js
-// Retrieved at 10/13/2021, 6:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.fe7abadeca9a2edd7255.js
+// Retrieved at 10/15/2021, 4:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Wiki-ModHubWikiManagement"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -1495,7 +1495,7 @@
 						wikiSubRoute: u,
 						wikiPageName: p,
 						pageName: b
-					} = n, g = i[l.B], k = i[l.C], f = l.D in i;
+					} = n, g = i[l.C], k = i[l.D], f = l.E in i;
 					switch (u) {
 						case c.m.Create:
 						case c.m.Edit:
@@ -1613,7 +1613,7 @@
 				} = t;
 				if (!n && !i) return e;
 				const s = {};
-				return n && (s[f.B] = Object(v.b)(n)), i && (s[f.C] = Object(v.b)(i)), Object(k.a)(e, s)
+				return n && (s[f.C] = Object(v.b)(n)), i && (s[f.D] = Object(v.b)(i)), Object(k.a)(e, s)
 			}
 			var w = n("./src/reddit/helpers/wiki/makeRevisionsListingKey.ts"),
 				E = n("./src/reddit/helpers/wiki/makeWikiPath.ts"),
@@ -2971,7 +2971,7 @@
 						displayText: i.fbt._("View page source", null, {
 							hk: "1d5vg5"
 						}),
-						href: `${d}/${r}?${C.D}`,
+						href: `${d}/${r}?${C.E}`,
 						onClick: this.onViewPageSourceClick
 					}), n && a.a.createElement(_.b, {
 						className: y.a.row,
@@ -3367,4 +3367,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.b111d61fbb4f2d225f26.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.fe7abadeca9a2edd7255.js.map

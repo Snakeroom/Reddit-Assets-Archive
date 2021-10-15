@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.f91a915d24e7ed6f3256.js
-// Retrieved at 10/14/2021, 8:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.9a94b8551c71b17fd366.js
+// Retrieved at 10/15/2021, 4:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./src/lib/unicodeUtils/index.ts": function(e, t, s) {
@@ -5132,7 +5132,7 @@
 				} = t;
 				if (!s && !n) return e;
 				const i = {};
-				return s && (i[f.B] = Object(k.b)(s)), n && (i[f.C] = Object(k.b)(n)), Object(x.a)(e, i)
+				return s && (i[f.C] = Object(k.b)(s)), n && (i[f.D] = Object(k.b)(n)), Object(x.a)(e, i)
 			}
 			var E = s("./src/reddit/helpers/wiki/makeRevisionsListingKey.ts"),
 				_ = s("./src/reddit/helpers/wiki/makeWikiPath.ts"),
@@ -6490,7 +6490,7 @@
 						displayText: n.fbt._("View page source", null, {
 							hk: "1d5vg5"
 						}),
-						href: `${d}/${a}?${C.D}`,
+						href: `${d}/${a}?${C.E}`,
 						onClick: this.onViewPageSourceClick
 					}), s && o.a.createElement(y.b, {
 						className: j.a.row,
@@ -7318,7 +7318,7 @@
 					} = e, {
 						wikiSubRoute: r,
 						wikiPageName: o
-					} = s, a = n[f.B], d = n[f.C], c = f.D in n;
+					} = s, a = n[f.C], d = n[f.D], c = f.E in n;
 					switch (r) {
 						case k.m.Create:
 						case k.m.Edit:
@@ -7485,4 +7485,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.f91a915d24e7ed6f3256.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.9a94b8551c71b17fd366.js.map

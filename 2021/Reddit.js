@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.7d2bf5fa887dbbcab658.js
-// Retrieved at 10/15/2021, 1:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.4c00f14521b0b4ec5fe1.js
+// Retrieved at 10/15/2021, 4:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit", "FrontpageSidebar"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -6814,7 +6814,7 @@
 									}
 								}
 								re(n), te();
-								const a = Object(er.b)({
+								const a = Object(er.a)({
 									subreddit: H,
 									multireddit: q,
 									searchItem: n,
@@ -18019,12 +18019,12 @@
 								const l = T.a.timing.domInteractive - T.a.timing.navigationStart;
 								Object(bn.k)(r.routeMatch, c.getState(), G.TimerType.Initial, l, r.urlParams);
 								const d = Object(S.a)(window.location.href);
-								d && d.get(nt.a) && history.replaceState(history.state, "", Object(k.a)(window.location.href, [nt.a])), Object(R.a)(d.get(nt.z)) && c.dispatch(Object(ae.f)({
+								d && d.get(nt.a) && history.replaceState(history.state, "", Object(k.a)(window.location.href, [nt.a])), Object(R.a)(d.get(nt.A)) && c.dispatch(Object(ae.f)({
 									kind: Gn.b.SuccessCommunity,
 									text: s.fbt._("Email verification complete", null, {
 										hk: "bqMP6"
 									})
-								})), d.get(nt.A) && (c.dispatch(Object(Q.a)(d.get(nt.A))), history.replaceState(history.state, "", Object(k.a)(window.location.href, [nt.A])));
+								})), d.get(nt.B) && (c.dispatch(Object(Q.a)(d.get(nt.B))), history.replaceState(history.state, "", Object(k.a)(window.location.href, [nt.B])));
 								let u = !1;
 								const m = Object(v.N)(t);
 								if ((Object(un.b)(et.a.JustLoggedIn) || m) && (c.dispatch(Object(ae.f)({
@@ -21083,4 +21083,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePo~5f1ac562", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250", "Governance~ModListing~Reddit~Subreddit", "Chat~Governance~Reddit", "Reddit~StandalonePostPage~reddit-components-MediumPost", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.7d2bf5fa887dbbcab658.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.4c00f14521b0b4ec5fe1.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.e3d273ef34a66f791b59.js
-// Retrieved at 10/14/2021, 8:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.ccfe077c11fbf2af343e.js
+// Retrieved at 10/15/2021, 4:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -7495,7 +7495,7 @@
 		},
 		"./src/reddit/helpers/getSearchUrl/index.ts": function(e, t, r) {
 			"use strict";
-			r.d(t, "b", (function() {
+			r.d(t, "a", (function() {
 				return c
 			}));
 			var s = r("./src/lib/search/index.ts"),
@@ -7509,22 +7509,22 @@
 				shouldSearchSubreddit: o,
 				includeNsfwResults: d
 			}) => {
-				let i, u;
+				let i;
+				const u = [];
 				if ("" !== r.searchQuery) {
 					if (r.isTypeaheadSuggestion) i = `/${r.isProfile?r.searchQuery.replace("u/","user/"):r.searchQuery}`;
 					else {
-						if (u = `${n.p}=${Object(s.b)(r.rawQuery||r.searchQuery)}`, i = "/search/", r.section !== a.c.trending && r.section !== a.c.recent || c && c.source && (u += `&source=${c.source}`), e && o ? (i = `/r/${e.name}${i}`, u = `${u}&${n.s}=1`) : !e && r.subredditOrProfileRestrictedName && (i = `/${r.subredditOrProfileRestrictedName}${i}`, u = `${u}&${n.s}=1`), t) {
-							i = `/user/${t.url.split("/")[2]}/m/${t.name}${i}`, u = `${u}&${n.s}=1&${n.j}=1`
+						if (u.push(`${n.p}=${Object(s.b)(r.rawQuery||r.searchQuery)}`), i = "/search/", r.section !== a.c.trending && r.section !== a.c.recent || c && c.source && u.push(`source=${c.source}`), e && o ? (i = `/r/${e.name}${i}`, u.push(`${n.s}=1`), u.push(`${n.x}=${e.isNSFW?"1":""}`)) : !e && r.subredditOrProfileRestrictedName && (i = `/${r.subredditOrProfileRestrictedName}${i}`, u.push(`${n.s}=1`)), t) {
+							i = `/user/${t.url.split("/")[2]}/m/${t.name}${i}`, u.push(`${n.s}=1`), u.push(`${n.x}=${t.isNSFW?"1":""}`), u.push(`${n.j}=1`)
 						}
-						c && c.category && (u = `${u}&${n.b}=${c.category}`), d && (u = `${u}&${n.i}=1`)
+						c && c.category && u.push(`${n.b}=${c.category}`), d && u.push(`${n.i}=1`)
 					}
 					return {
 						url: i,
-						qs: u
+						qs: u.join("&")
 					}
 				}
-			};
-			t.a = c
+			}
 		},
 		"./src/reddit/helpers/governanceErrorText/index.ts": function(e, t, r) {
 			"use strict";
@@ -26403,4 +26403,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.e3d273ef34a66f791b59.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.ccfe077c11fbf2af343e.js.map
