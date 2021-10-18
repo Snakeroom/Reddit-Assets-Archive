@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/removalReasonActions.68c380c79c2c2e8b34af.js
-// Retrieved at 10/14/2021, 8:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/removalReasonActions.e3757502ae14cb114b3b.js
+// Retrieved at 10/18/2021, 7:40:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["removalReasonActions"], {
 		"./src/reddit/actions/bulkActions/index.ts": function(e, t, n) {
@@ -58,7 +58,7 @@
 			})), n.d(t, "k", (function() {
 				return Te
 			})), n.d(t, "r", (function() {
-				return De
+				return Le
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var o = n("./node_modules/fbt/lib/FbtPublic.js"),
@@ -145,8 +145,8 @@
 					})
 				};
 			var T = n("./src/redditGQL/operations/UpdateCommentFollowState.json");
-			var D = n("./src/reddit/endpoints/post/index.tsx"),
-				L = n("./src/reddit/endpoints/post/convert.ts"),
+			var L = n("./src/reddit/endpoints/post/index.tsx"),
+				D = n("./src/reddit/endpoints/post/convert.ts"),
 				w = n("./src/reddit/endpoints/publicAccessNetwork/index.ts"),
 				K = n("./src/reddit/featureFlags/index.ts"),
 				N = n("./src/reddit/helpers/correlationIdTracker.ts"),
@@ -319,7 +319,7 @@
 					})), s(Object(u.c)(e));
 					else {
 						s(Object(u.b)(n));
-						const r = await Object(L.a)(c(), e, d ? t : JSON.stringify(t));
+						const r = await Object(D.a)(c(), e, d ? t : JSON.stringify(t));
 						if (r.ok) {
 							const t = r.body.output;
 							s(Object(u.a)(n)), s(fe({
@@ -542,12 +542,12 @@
 						[e]: {
 							sendReplies: s
 						}
-					})), (await Object(D.q)(o(), e, s)).ok || t(Object(X.i)({
+					})), (await Object(L.q)(o(), e, s)).ok || t(Object(X.i)({
 						[e]: {
 							sendReplies: !s
 						}
 					}))
-				}, De = (e, t) => async (n, s, {
+				}, Le = (e, t) => async (n, s, {
 					gqlContext: r
 				}) => {
 					var c, d, a, i, m, u;
@@ -596,7 +596,7 @@
 			})), n.d(t, "e", (function() {
 				return T
 			})), n.d(t, "h", (function() {
-				return D
+				return L
 			})), n.d(t, "l", (function() {
 				return N
 			})), n.d(t, "q", (function() {
@@ -701,7 +701,7 @@
 						commentId: e
 					}), P);
 					k[e] = c
-				}, D = (e, t) => async (n, o) => {
+				}, L = (e, t) => async (n, o) => {
 					const s = o(),
 						c = A(e);
 					if (Object(g.b)(s, {
@@ -710,7 +710,7 @@
 						const n = r.c.end(c);
 						!t && n < P && (clearTimeout(k[e]), delete k[e])
 					}
-				}, L = Object(c.a)(I.x), w = Object(c.a)(I.w), K = Object(c.a)(I.v), N = (e, t) => async (n, o, {
+				}, D = Object(c.a)(I.x), w = Object(c.a)(I.w), K = Object(c.a)(I.v), N = (e, t) => async (n, o, {
 					apiContext: s
 				}) => {
 					const r = o(),
@@ -723,7 +723,7 @@
 						} = u ? u.params : null;
 					if (!l) return;
 					const b = Object(y.s)(l);
-					n(L({
+					n(D({
 						moreCommentsId: c.id
 					}));
 					const O = await Object(p.e)(s(), b, {
@@ -1316,8 +1316,8 @@
 				A = n("./src/reddit/actions/comment/authoring.ts"),
 				P = n("./src/reddit/actions/comment/moderation.ts"),
 				T = n("./src/reddit/actions/modal.ts"),
-				D = n("./src/reddit/actions/post.ts"),
-				L = n("./src/reddit/actions/toaster.ts"),
+				L = n("./src/reddit/actions/post.ts"),
+				D = n("./src/reddit/actions/toaster.ts"),
 				w = n("./src/reddit/constants/modals.ts"),
 				K = n("./src/lib/makeApiRequest/index.ts"),
 				N = n("./src/lib/omitHeaders/index.ts"),
@@ -1389,7 +1389,7 @@
 						n(ne({
 							subredditId: e,
 							reason: r
-						})), n(Object(L.f)({
+						})), n(Object(D.f)({
 							kind: W.b.SuccessMod,
 							text: o.fbt._("Removal reason added!", null, {
 								hk: "2WSh8N"
@@ -1412,7 +1412,7 @@
 					d.ok ? (n(ce({
 						subredditId: e,
 						reason: t
-					})), n(Object(L.f)({
+					})), n(Object(D.f)({
 						kind: W.b.SuccessMod,
 						text: o.fbt._("Removal reason saved", null, {
 							hk: "28ScuL"
@@ -1430,7 +1430,7 @@
 					d.ok ? (n(me({
 						subredditId: e,
 						reasonId: t
-					})), n(Object(L.f)({
+					})), n(Object(D.f)({
 						kind: W.b.SuccessMod,
 						text: o.fbt._("Removal reason deleted", null, {
 							hk: "4xzgsa"
@@ -1452,7 +1452,7 @@
 						m = e[0],
 						u = Object(B.a)(m) ? q.e.Post : q.e.Comment,
 						l = u === q.e.Post ? a.posts.models[m] : a.features.comments.models[m],
-						b = u === q.e.Post ? D.R : E.i;
+						b = u === q.e.Post ? L.R : E.i;
 					if (!l || !i) return !1;
 					r(fe()), r(b({
 						[m]: {
@@ -1546,7 +1546,7 @@
 						m = i.user.account && i.user.account.displayText;
 					if (!m) return;
 					c(fe());
-					const u = Object(L.f)({
+					const u = Object(D.f)({
 							kind: W.b.SuccessMod,
 							text: o.fbt._({
 								"*": "Added removal reason for {number} posts/comments",
@@ -1777,7 +1777,7 @@
 								experimentName: r.E,
 								expEventOverride: t
 							});
-							return !!(Object(r.Ke)(n) ? void 0 : n)
+							return !!(Object(r.Le)(n) ? void 0 : n)
 						})(n)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -2370,8 +2370,8 @@
 						return e
 				}
 			};
-			const D = {};
-			var L = (e = D, t) => {
+			const L = {};
+			var D = (e = L, t) => {
 				switch (t.type) {
 					case g.b:
 					case g.c:
@@ -2436,7 +2436,7 @@
 				followed: j,
 				keyToChatCommentLinks: _,
 				keyToCommentThreadLinkSets: T,
-				keyToHeadCommentId: L,
+				keyToHeadCommentId: D,
 				keyToPostId: K,
 				ads: c
 			})
@@ -2480,9 +2480,9 @@
 			})), n.d(t, "t", (function() {
 				return T
 			})), n.d(t, "z", (function() {
-				return D
-			})), n.d(t, "I", (function() {
 				return L
+			})), n.d(t, "I", (function() {
+				return D
 			})), n.d(t, "s", (function() {
 				return w
 			})), n.d(t, "C", (function() {
@@ -2636,11 +2636,11 @@
 				T = (e, {
 					commentId: t
 				}) => !!(t && e.features.comments.focused && e.features.comments.focused[t]),
-				D = (e, {
+				L = (e, {
 					commentId: t,
 					commentsPageKey: n
 				}) => !!(t && e.features.comments.isEditing[n] && e.features.comments.isEditing[n][t]),
-				L = (e, {
+				D = (e, {
 					commentId: t,
 					commentsPageKey: n
 				}) => !!(t && e.features.comments.replyFormOpen[n] && e.features.comments.replyFormOpen[n][t]),
@@ -2773,4 +2773,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.68c380c79c2c2e8b34af.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.e3757502ae14cb114b3b.js.map

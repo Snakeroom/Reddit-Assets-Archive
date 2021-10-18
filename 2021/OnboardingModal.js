@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OnboardingModal.181e7a0a30381f157e6e.js
-// Retrieved at 10/15/2021, 4:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OnboardingModal.61c15dcec43c93d2b8ff.js
+// Retrieved at 10/18/2021, 7:40:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OnboardingModal"], {
 		"./node_modules/lodash/times.js": function(e, t, n) {
@@ -76,14 +76,14 @@
 								data: t
 							} = s.body;
 							if (_(t)) {
-								if (S(t)) {
+								if (x(t)) {
 									e(j({
 										recommendedSubredditIds: [],
 										interactedSubredditIds: [],
 										category: "",
 										lastLoadedEnv: "client"
 									})), b = !0
-								} else if (x(t)) {
+								} else if (S(t)) {
 									const n = t.focusVerticalSubredditRecommendations,
 										{
 											recommendedSubreddit: r,
@@ -118,15 +118,15 @@
 				}, _ = e => {
 					const t = e.focusVerticalSubredditRecommendations;
 					return !(!t || !t.focusRecommendations)
-				}, S = e => {
+				}, x = e => {
 					const t = e.focusVerticalSubredditRecommendations,
 						n = t && t.focusRecommendations;
 					return !(!n || 0 !== n.length)
-				}, x = e => {
+				}, S = e => {
 					const t = e.focusVerticalSubredditRecommendations,
 						n = t && t.focusRecommendations,
 						r = t && t.type;
-					return !!(n && !S(e) && r === d.GEO && n[0] && n[0].recommendedSubreddit && n[0].interactedSubreddit)
+					return !!(n && !x(e) && r === d.GEO && n[0] && n[0].recommendedSubreddit && n[0].interactedSubreddit)
 				}, I = () => async (e, t, n) => {
 					var r, s;
 					const i = t(),
@@ -194,8 +194,8 @@
 				k = n("./src/reddit/helpers/graphql/normalizeProfileFromGql/index.ts"),
 				y = n("./src/reddit/helpers/graphql/normalizeSubredditFromGql/index.ts"),
 				_ = n("./src/reddit/helpers/graphql/normalizeUserFromGql/index.ts"),
-				S = n("./src/reddit/selectors/platform.ts"),
-				x = n("./src/reddit/selectors/user.ts"),
+				x = n("./src/reddit/selectors/platform.ts"),
+				S = n("./src/reddit/selectors/user.ts"),
 				I = n("./src/redditGQL/operations/Frontpage.json");
 			const E = (e, t) => {
 					var n, r;
@@ -207,7 +207,7 @@
 						limit: d,
 						sort: l,
 						t: u
-					} = t, p = Object(x.T)(e) || Object(x.K)(e), g = Object(S.p)(e), f = {
+					} = t, p = Object(S.T)(e) || Object(S.K)(e), g = Object(x.p)(e), f = {
 						adContext: {
 							layout: c ? c.toUpperCase() : m.a.Card,
 							reddaid: e.user.reddaid,
@@ -388,9 +388,9 @@
 							n = e && e.url;
 						n && (t.clickUrl = n)
 					}
-					const m = null === (a = null === (c = Object(S.b)(d)) || void 0 === c ? void 0 : c.routeMatch) || void 0 === a ? void 0 : a.route.chunk,
-						b = Object(x.K)(d),
-						p = await Object(u.i)(() => C(o.gqlContext(), E(d, t), Object(x.T)(d), t.statsdPathsForExperiments), {
+					const m = null === (a = null === (c = Object(x.b)(d)) || void 0 === c ? void 0 : c.routeMatch) || void 0 === a ? void 0 : a.route.chunk,
+						b = Object(S.K)(d),
+						p = await Object(u.i)(() => C(o.gqlContext(), E(d, t), Object(S.T)(d), t.statsdPathsForExperiments), {
 							name: "fetchFrontpageData",
 							isLoggedIn: b,
 							page: m
@@ -458,8 +458,8 @@
 					var n, r;
 					const s = t();
 					if (Object(H.a)(s)) return;
-					const o = null === (r = null === (n = Object(S.b)(t())) || void 0 === n ? void 0 : n.routeMatch) || void 0 === r ? void 0 : r.route.chunk,
-						i = Object(x.K)(s);
+					const o = null === (r = null === (n = Object(x.b)(t())) || void 0 === n ? void 0 : n.routeMatch) || void 0 === r ? void 0 : r.route.chunk,
+						i = Object(S.K)(s);
 					return Object(u.i)(() => e(Object(J.d)()), {
 						name: "frontpageLinksRequested",
 						page: o,
@@ -512,7 +512,7 @@
 									t = e && e.url;
 								t && (b.clickUrl = t)
 							}
-							const g = () => C(r(), E(s, b), Object(x.T)(s), d),
+							const g = () => C(r(), E(s, b), Object(S.T)(s), d),
 								f = await g(),
 								O = {
 									...f.body,
@@ -678,17 +678,17 @@
 				y = n("./src/reddit/components/Onboarding/Celebration.m.less"),
 				_ = n.n(y);
 			const {
-				fbt: S
+				fbt: x
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
-			var x = () => i.a.createElement("div", {
+			var S = () => i.a.createElement("div", {
 					className: _.a.CelebrationBg
 				}, i.a.createElement("div", {
 					className: _.a.CelebrationTitle
-				}, S._("We're happy you're here!", null, {
+				}, x._("We're happy you're here!", null, {
 					hk: "1YMdHn"
 				})), i.a.createElement("div", {
 					className: _.a.CelebrationSubTitle
-				}, S._("Your home feed is being created now…", null, {
+				}, x._("Your home feed is being created now…", null, {
 					hk: "Onr1V"
 				})), i.a.createElement("div", null, i.a.createElement(k.a, {
 					className: _.a.LoadingSpinner,
@@ -1060,7 +1060,7 @@
 				ke = n("./src/reddit/endpoints/subreddit/local.ts"),
 				ye = n("./src/reddit/endpoints/subreddit/subscriptions.ts");
 			var _e = n("./src/redditGQL/operations/InterestTopicsByIds.json");
-			const Se = async (e, t) => {
+			const xe = async (e, t) => {
 				const n = await ((e, t) => {
 					const n = {
 						topicIds: [],
@@ -1105,7 +1105,7 @@
 						})(e))) || []
 					}
 				}))(e))(s) : null
-			}, xe = e => {
+			}, Se = e => {
 				var t;
 				return {
 					description: e.publicDescription,
@@ -1125,7 +1125,7 @@
 					} = n;
 					return e.map(({
 						id: e
-					}) => xe(t[e]))
+					}) => Se(t[e]))
 				}
 				return null
 			}, Ee = async e => {
@@ -1133,7 +1133,7 @@
 				if (null == t ? void 0 : t.length) {
 					const n = t.map(e => e.id),
 						r = await Object(ve.e)(e(), n);
-					if (r.ok) return Object.values(r.body).map(xe)
+					if (r.ok) return Object.values(r.body).map(Se)
 				}
 				return null
 			}, Ce = e => ({
@@ -1255,7 +1255,7 @@
 				const {
 					gqlContext: t,
 					apiContext: n
-				} = e, r = Object(c.d)(), s = Object(O.a)(), a = Object(c.e)(qe.c), m = a === be.we.Enabled_noskip || a === be.we.Enabled_noskip_no_preselect, b = a === be.we.Enabled_noskip_no_preselect, [p, g] = Object(o.useState)(ue.INTERESTS), [j, h] = Object(o.useState)([]), [k, y] = Object(o.useState)({}), [_, S] = Object(o.useState)(!1), [I, E] = Object(o.useState)([]), [C, T] = Object(o.useState)([]), [N, P] = Object(o.useState)({}), {
+				} = e, r = Object(c.d)(), s = Object(O.a)(), a = Object(c.e)(qe.c), m = a === be.xe.Enabled_noskip || a === be.xe.Enabled_noskip_no_preselect, b = a === be.xe.Enabled_noskip_no_preselect, [p, g] = Object(o.useState)(ue.INTERESTS), [j, h] = Object(o.useState)([]), [k, y] = Object(o.useState)({}), [_, x] = Object(o.useState)(!1), [I, E] = Object(o.useState)([]), [C, T] = Object(o.useState)([]), [N, P] = Object(o.useState)({}), {
 					avatarImage: R,
 					fetchRandomAvatar: A,
 					saveAvatar: w
@@ -1281,9 +1281,9 @@
 					q = Object(o.useCallback)(() => {
 						const e = Object.keys(k).filter(e => 0 === k[e].length || !k[e].find(e => k[e]));
 						E([]), e.length && async function() {
-							S(!0);
-							const n = await Se(t, e);
-							S(!1), n && E(n)
+							x(!0);
+							const n = await xe(t, e);
+							x(!1), n && E(n)
 						}()
 					}, [t, k]),
 					F = Object(o.useCallback)(async () => {
@@ -1316,7 +1316,7 @@
 					X = Object.keys(N).length,
 					J = Object.keys(k).length,
 					H = m && p === ue.INTERESTS && J < 3 || p === ue.COMMUNITIES && X < 1;
-				return p === ue.CELEBRATION || p === ue.AVATAR && !W ? i.a.createElement(x, null) : i.a.createElement("div", {
+				return p === ue.CELEBRATION || p === ue.AVATAR && !W ? i.a.createElement(S, null) : i.a.createElement("div", {
 					className: de.a.container
 				}, i.a.createElement("header", {
 					className: de.a.header
@@ -1955,4 +1955,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.181e7a0a30381f157e6e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.61c15dcec43c93d2b8ff.js.map
