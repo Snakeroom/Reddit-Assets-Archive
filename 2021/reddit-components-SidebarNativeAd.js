@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.3bc8ca4f515f501b641e.js
-// Retrieved at 10/14/2021, 8:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.7892340a23b9addb0f45.js
+// Retrieved at 10/18/2021, 3:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, r) {
@@ -975,22 +975,26 @@
 				g = (e, t, r) => async (n, s, {
 					apiContext: o
 				}) => {
-					const u = Object(m.b)(s()),
-						f = await (async (e, t, r, n, s) => Object(c.a)(Object(d.a)(e, [l.a]), {
+					var u, f, b, h;
+					const _ = Object(m.b)(s()),
+						g = await (async (e, t, r, n, s) => Object(c.a)(Object(d.a)(e, [l.a]), {
 							endpoint: `${i.a.snoovatarUrl}/api/snoovatar`,
 							method: a.ib.POST,
 							headers: {
 								"Content-Type": "application/json ",
-								"X-CSRF-Token": s
+								"X-CSRF-Token": s || ""
 							},
 							data: {
 								accessory_ids: t,
 								styles: r,
 								...n
 							}
-						}))(o(), e, t, r, u);
-					if (!f.ok) throw new Error("User avatar failed to save");
-					n(Object(p.A)(f.body))
+						}))(o(), e, t, r, _);
+					if (!g.ok) throw new Error("User avatar failed to save");
+					return n(Object(p.A)(g.body)), {
+						accountIcon: null === (f = null === (u = g.body) || void 0 === u ? void 0 : u.avatar) || void 0 === f ? void 0 : f.headshot_image_url,
+						fullBodySnoovatar: null === (h = null === (b = g.body) || void 0 === b ? void 0 : b.avatar) || void 0 === h ? void 0 : h.image_url
+					}
 				}, v = () => async (e, t, {
 					apiContext: r
 				}) => {
@@ -3849,4 +3853,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.3bc8ca4f515f501b641e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.7892340a23b9addb0f45.js.map

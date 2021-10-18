@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.4d31fb7d0b00f0f58811.js
-// Retrieved at 10/14/2021, 8:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.53e3bb0743280e9191ea.js
+// Retrieved at 10/18/2021, 3:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost", "Reddit~StandalonePostPage~reddit-components-MediumPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1274,22 +1274,26 @@
 				v = (e, t, n) => async (s, r, {
 					apiContext: o
 				}) => {
-					const u = Object(m.b)(r()),
-						b = await (async (e, t, n, s, r) => Object(c.a)(Object(d.a)(e, [l.a]), {
+					var u, b, f, _;
+					const h = Object(m.b)(r()),
+						v = await (async (e, t, n, s, r) => Object(c.a)(Object(d.a)(e, [l.a]), {
 							endpoint: `${i.a.snoovatarUrl}/api/snoovatar`,
 							method: a.ib.POST,
 							headers: {
 								"Content-Type": "application/json ",
-								"X-CSRF-Token": r
+								"X-CSRF-Token": r || ""
 							},
 							data: {
 								accessory_ids: t,
 								styles: n,
 								...s
 							}
-						}))(o(), e, t, n, u);
-					if (!b.ok) throw new Error("User avatar failed to save");
-					s(Object(p.A)(b.body))
+						}))(o(), e, t, n, h);
+					if (!v.ok) throw new Error("User avatar failed to save");
+					return s(Object(p.A)(v.body)), {
+						accountIcon: null === (b = null === (u = v.body) || void 0 === u ? void 0 : u.avatar) || void 0 === b ? void 0 : b.headshot_image_url,
+						fullBodySnoovatar: null === (_ = null === (f = v.body) || void 0 === f ? void 0 : f.avatar) || void 0 === _ ? void 0 : _.image_url
+					}
 				}, E = () => async (e, t, {
 					apiContext: n
 				}) => {
@@ -7345,4 +7349,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.4d31fb7d0b00f0f58811.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.53e3bb0743280e9191ea.js.map

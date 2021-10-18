@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.c7bd8813a4746f09843a.js
-// Retrieved at 10/18/2021, 2:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.3e8262f1aa25deff6e40.js
+// Retrieved at 10/18/2021, 3:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -1464,11 +1464,12 @@
 					return [async () => {
 						if (a) {
 							const e = a.snoovatar,
-								s = (null == e ? void 0 : e.accessories) || [],
-								n = Object(A.a)(s, [j.c, j.a, j.b]).map(e => e.id);
+								s = (null == e ? void 0 : e.styles) || {},
+								n = (null == e ? void 0 : e.accessories) || [],
+								o = Object(A.a)(n, [j.c, j.a, j.b]).map(e => e.id);
 							r(Object(h.b)());
 							try {
-								c(!0), t(Object(x.f)(M)), await t(Object(E.e)(n, null == e ? void 0 : e.styles, {
+								c(!0), t(Object(x.f)(M)), await t(Object(E.e)(o, s, {
 									set_avatar_to_profile: !0,
 									source: "anniversary_achievement"
 								}))
@@ -4060,4 +4061,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.c7bd8813a4746f09843a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.3e8262f1aa25deff6e40.js.map
