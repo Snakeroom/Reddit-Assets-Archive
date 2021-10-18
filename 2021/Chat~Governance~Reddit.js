@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.0c9e49b3ce47fd6fda8f.js
-// Retrieved at 10/18/2021, 4:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.090d5345b1f8f70ec2f2.js
+// Retrieved at 10/18/2021, 6:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -2500,10 +2500,10 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("148719"),
+				buildNumber: Object(r.c)("148736"),
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
-				buildTimestamp: Object(r.b)("1634585828"),
+				buildTimestamp: Object(r.b)("1634591067"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -5041,14 +5041,14 @@
 					}))
 				},
 				z = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c5686e10dfdeb8f74c8053d5ac2a58131128ec6a3-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c24d9d7c2877a9bc82b98f0296dafa1d6a3516104-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${v.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "5686e10dfdeb8f74c8053d5ac2a58131128ec6a3-production",
+						release: "24d9d7c2877a9bc82b98f0296dafa1d6a3516104-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -5561,7 +5561,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "5686e10dfdeb8f74c8053d5ac2a58131128ec6a3-production",
+						releaseClient: "24d9d7c2877a9bc82b98f0296dafa1d6a3516104-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -31339,26 +31339,24 @@
 		},
 		"./src/reddit/selectors/experiments/postSeo.ts": function(e, t, i) {
 			"use strict";
-			i.d(t, "j", (function() {
+			i.d(t, "i", (function() {
 				return p
 			})), i.d(t, "b", (function() {
 				return f
 			})), i.d(t, "e", (function() {
 				return b
-			})), i.d(t, "i", (function() {
-				return g
 			})), i.d(t, "g", (function() {
-				return w
+				return g
 			})), i.d(t, "h", (function() {
-				return y
+				return w
 			})), i.d(t, "c", (function() {
-				return v
+				return y
 			})), i.d(t, "f", (function() {
-				return E
+				return v
 			})), i.d(t, "a", (function() {
-				return T
+				return E
 			})), i.d(t, "d", (function() {
-				return S
+				return T
 			}));
 			var n = i("./node_modules/reselect/es/index.js"),
 				r = i("./src/reddit/constants/experiments.ts"),
@@ -31391,33 +31389,26 @@
 				g = e => {
 					const t = m(e);
 					return Object(s.c)(e, {
-						experimentName: r.Cd,
-						experimentEligibilitySelector: e => !Object(c.K)(e) && t
-					})
-				},
-				w = e => {
-					const t = m(e);
-					return Object(s.c)(e, {
 						experimentName: r.zd,
 						experimentEligibilitySelector: () => t
 					})
 				},
-				y = e => {
+				w = e => {
 					const t = m(e);
 					return Object(s.c)(e, {
 						experimentName: r.Bd,
 						experimentEligibilitySelector: () => t
 					})
 				},
-				v = e => e === r.Nd.IdCard,
-				E = e => e === r.Nd.RailSwap,
-				T = (e, t) => {
+				y = e => e === r.Nd.IdCard,
+				v = e => e === r.Nd.RailSwap,
+				E = (e, t) => {
 					const i = Object(u.H)(e, {
 						postId: t
 					});
 					return i && i.media && (Object(d.F)(i.media) || Object(d.I)(i.media)) ? i.media.altText : null
 				},
-				S = e => !!Object(s.b)(e, {
+				T = e => !!Object(s.b)(e, {
 					experimentEligibilitySelector: s.a,
 					experimentName: r.Lc,
 					expEventOverride: !1
@@ -41989,4 +41980,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.0c9e49b3ce47fd6fda8f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.090d5345b1f8f70ec2f2.js.map

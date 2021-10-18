@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~933ffffc.2960c1771550c73ca0f3.js
-// Retrieved at 10/14/2021, 1:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~933ffffc.3f2a7817c4ae4bea0794.js
+// Retrieved at 10/18/2021, 6:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~933ffffc"], {
 		"./src/lib/intersectionObserver/index.ts": function(e, t, s) {
@@ -1045,9 +1045,11 @@
 						renderableChildren: t
 					}, this.setRenderableChildrenIndexIncrement(), this.validateScrollPreservationProps(e), this.validateLoadMoreProps(e)
 				}
+				hasRenderedAllChildren() {
+					return !(this.state.renderableChildren.length < this.props.children.length) && (this.props.onAllChildrenRendered && this.props.onAllChildrenRendered(), !0)
+				}
 				populateRenderableChildrenIfLastChildIsVisible() {
-					if (this.isRenderableChildrenStateChangePending) return;
-					this.state.renderableChildren.length < this.props.children.length && u.a.read(() => {
+					this.isRenderableChildrenStateChangePending || this.hasRenderedAllChildren() || u.a.read(() => {
 						if (!this.isRenderableChildrenStateChangePending && this.lastElementIsAboutToBeVisible()) {
 							const e = this.getRenderableChildrenIndexIncrement();
 							this.populateRenderableChildrenFromProps(!1, e)
@@ -2158,4 +2160,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~933ffffc.2960c1771550c73ca0f3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~933ffffc.3f2a7817c4ae4bea0794.js.map

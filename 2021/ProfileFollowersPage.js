@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.b67a2e3334e106cd9f90.js
-// Retrieved at 10/15/2021, 4:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.f1b2555d0ff8a5d7bfac.js
+// Retrieved at 10/18/2021, 6:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileFollowersPage", "ProfileFollowersAction"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -3459,9 +3459,11 @@
 						renderableChildren: t
 					}, this.setRenderableChildrenIndexIncrement(), this.validateScrollPreservationProps(e), this.validateLoadMoreProps(e)
 				}
+				hasRenderedAllChildren() {
+					return !(this.state.renderableChildren.length < this.props.children.length) && (this.props.onAllChildrenRendered && this.props.onAllChildrenRendered(), !0)
+				}
 				populateRenderableChildrenIfLastChildIsVisible() {
-					if (this.isRenderableChildrenStateChangePending) return;
-					this.state.renderableChildren.length < this.props.children.length && h.a.read(() => {
+					this.isRenderableChildrenStateChangePending || this.hasRenderedAllChildren() || h.a.read(() => {
 						if (!this.isRenderableChildrenStateChangePending && this.lastElementIsAboutToBeVisible()) {
 							const e = this.getRenderableChildrenIndexIncrement();
 							this.populateRenderableChildrenFromProps(!1, e)
@@ -6855,4 +6857,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.b67a2e3334e106cd9f90.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.f1b2555d0ff8a5d7bfac.js.map
