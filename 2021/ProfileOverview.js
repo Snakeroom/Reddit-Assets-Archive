@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.4fd24f6a5cf58cb53627.js
-// Retrieved at 10/18/2021, 2:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.eec7136d3c7e46bcc649.js
+// Retrieved at 10/18/2021, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview"], {
 		"./node_modules/shallowequal/index.js": function(e, t) {
@@ -30,48 +30,35 @@
 		"./src/lib/promo/withShowSignupUpsell.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return f
+				return g
 			}));
 			var o = s("./node_modules/react/index.js");
-			var r = s("./node_modules/lodash/debounce.js"),
-				i = s.n(r),
-				n = s("./src/reddit/constants/elementIds.ts"),
-				d = s("./src/reddit/constants/experiments.ts"),
-				a = s("./src/reddit/constants/promo.ts"),
-				c = s("./src/reddit/hooks/usePromoContext.ts"),
-				l = s("./src/reddit/hooks/promo/useIsPromoShown.ts"),
-				m = s("./src/reddit/hooks/promo/useIsSignupUpsellVariantEligible.ts");
-			const p = 250,
-				u = 1e3;
 
-			function b(e = p) {
-				const {
-					showPromo: t
-				} = Object(c.a)(), s = function() {
-					const e = Object(m.a)(d.Eb.Bottom_cell),
-						t = Object(m.a)(d.Eb.Bottom_cell_dismissible),
-						s = Object(m.a)(d.Eb.Bottom_cell_dismissible_immediate_trigger),
-						o = Object(m.a)(d.Eb.Bottom_cell_signup_upsell_copy),
-						r = Object(m.a)(d.Eb.Bottom_cell_surprise_install_copy),
-						i = Object(m.a)(d.Eb.Bottom_sheet);
-					return e || o || r ? a.b.SignupUpsellCell : t || s ? a.b.SignupUpsellCellDismissible : i ? a.b.SignupUpsellBottomSheet : null
-				}(), r = Object(l.a)(s), b = Object(m.a)(d.Eb.Bottom_cell_dismissible_immediate_trigger);
-				return o.useMemo(() => i()(() => {
-					if (!r && s) {
-						const e = document.getElementById(n.d),
-							o = e ? e.scrollTop : window.scrollY,
-							r = window.innerHeight,
-							i = r / 3,
-							d = 2 * r;
-						o > (b ? i : d) && t(s)
-					}
-				}, e, {
-					maxWait: u
-				}), [b, r, s, t, e])
+			function r() {
+				return window
 			}
+			var i = s("./node_modules/lodash/debounce.js"),
+				n = s.n(i),
+				d = s("./src/reddit/constants/elementIds.ts"),
+				a = s("./src/reddit/constants/experiments.ts"),
+				c = s("./src/reddit/hooks/usePromoContext.ts"),
+				l = s("./src/reddit/constants/promo.ts"),
+				m = s("./src/reddit/hooks/promo/useIsSignupUpsellVariantEligible.ts");
+			var p = function() {
+					const e = Object(m.a)(a.Eb.Bottom_cell),
+						t = Object(m.a)(a.Eb.Bottom_cell_dismissible),
+						s = Object(m.a)(a.Eb.Bottom_cell_dismissible_immediate_trigger),
+						o = Object(m.a)(a.Eb.Bottom_cell_signup_upsell_copy),
+						r = Object(m.a)(a.Eb.Bottom_cell_surprise_install_copy),
+						i = Object(m.a)(a.Eb.Bottom_sheet);
+					return e || o || r ? l.b.SignupUpsellCell : t || s ? l.b.SignupUpsellCellDismissible : i ? l.b.SignupUpsellBottomSheet : null
+				},
+				u = s("./src/reddit/hooks/promo/useIsPromoShown.ts");
+			const b = 250,
+				h = 1e3;
 
-			function h() {
-				return (h = Object.assign || function(e) {
+			function f() {
+				return (f = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var o in s) Object.prototype.hasOwnProperty.call(s, o) && (e[o] = s[o])
@@ -80,12 +67,28 @@
 				}).apply(this, arguments)
 			}
 
-			function f(e) {
+			function g(e) {
 				const t = e.displayName || e.name || "Component";
 
 				function s(t) {
-					const s = b();
-					return o.createElement(e, h({
+					const s = function(e = b) {
+						const {
+							showPromo: t
+						} = Object(c.a)(), s = p(), i = Object(u.a)(s), l = Object(m.a)(a.Eb.Bottom_cell_dismissible_immediate_trigger);
+						return o.useMemo(() => n()(() => {
+							if (!i && s) {
+								const e = document.getElementById(d.d),
+									o = e ? e.scrollTop : r().scrollY,
+									i = r().innerHeight,
+									n = i / 3,
+									a = 2 * i;
+								o >= (l ? n : a) && t(s)
+							}
+						}, e, {
+							maxWait: h
+						}), [l, i, s, t, e])
+					}();
+					return o.createElement(e, f({
 						showSignupUpsell: s
 					}, t))
 				}
@@ -4381,4 +4384,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.4fd24f6a5cf58cb53627.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.eec7136d3c7e46bcc649.js.map

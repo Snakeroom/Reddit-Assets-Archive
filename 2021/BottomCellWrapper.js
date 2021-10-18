@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/BottomCellWrapper.3119401ddd1cf9b4be56.js
-// Retrieved at 10/18/2021, 2:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/BottomCellWrapper.afa411d17fa5c4377b3e.js
+// Retrieved at 10/18/2021, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["BottomCellWrapper", "SignupUpsell"], {
 		"./src/reddit/components/ErrorBoundary/index.tsx": function(e, t, s) {
@@ -57,7 +57,8 @@
 				children: e
 			}) {
 				return n.createElement(l.a, null, n.createElement("div", {
-					className: Object(o.a)(u.a.wrapper)
+					className: Object(o.a)(u.a.wrapper),
+					"data-testid": "bottom-cell-wrapper"
 				}, e))
 			}
 			t.default = function() {
@@ -133,43 +134,43 @@
 						className: p.a.buttonText
 					}, t))
 				},
-				_ = s("./src/reddit/constants/experiments.ts"),
-				b = s("./src/reddit/selectors/telemetry.ts");
+				b = s("./src/reddit/constants/experiments.ts"),
+				_ = s("./src/reddit/selectors/telemetry.ts");
 			const f = "sso_signup";
 			var g;
 			! function(e) {
 				e.Apple = "apple", e.Google = "google", e.Reddit = "reddit"
 			}(g || (g = {}));
 			const x = () => e => ({
-					...Object(b.defaults)(e),
+					...Object(_.defaults)(e),
 					source: "popup",
 					action: "view",
 					noun: f,
-					actionInfo: Object(b.actionInfo)(e)
+					actionInfo: Object(_.actionInfo)(e)
 				}),
 				C = () => e => ({
-					...Object(b.defaults)(e),
+					...Object(_.defaults)(e),
 					source: "popup",
 					action: "dismiss",
 					noun: f,
-					actionInfo: Object(b.actionInfo)(e)
+					actionInfo: Object(_.actionInfo)(e)
 				}),
 				E = e => t => ({
-					...Object(b.defaults)(t),
+					...Object(_.defaults)(t),
 					source: "popup",
 					action: "click",
 					noun: f,
-					actionInfo: Object(b.actionInfo)(t, {
+					actionInfo: Object(_.actionInfo)(t, {
 						popup_button_text: "signup",
 						type: e
 					})
 				}),
 				h = () => e => ({
-					...Object(b.defaults)(e),
+					...Object(_.defaults)(e),
 					source: "popup",
 					action: "click",
 					noun: f,
-					actionInfo: Object(b.actionInfo)(e, {
+					actionInfo: Object(_.actionInfo)(e, {
 						popup_button_text: "login"
 					})
 				});
@@ -197,16 +198,16 @@
 				}, [s]);
 				const u = Object(i.d)(),
 					p = () => u(Object(c.k)()),
-					b = function() {
+					_ = function() {
 						const e = Object(i.e)(N.b),
 							t = Object(i.e)(N.d),
 							s = Object(i.e)(N.f),
-							o = Object(j.a)(_.Eb.Bottom_sheet),
-							l = Object(j.a)(_.Eb.Bottom_cell),
-							r = Object(j.a)(_.Eb.Bottom_cell_dismissible),
-							c = Object(j.a)(_.Eb.Bottom_cell_dismissible_immediate_trigger),
-							a = Object(j.a)(_.Eb.Bottom_cell_signup_upsell_copy),
-							d = Object(j.a)(_.Eb.Bottom_cell_surprise_install_copy);
+							o = Object(j.a)(b.Eb.Bottom_sheet),
+							l = Object(j.a)(b.Eb.Bottom_cell),
+							r = Object(j.a)(b.Eb.Bottom_cell_dismissible),
+							c = Object(j.a)(b.Eb.Bottom_cell_dismissible_immediate_trigger),
+							a = Object(j.a)(b.Eb.Bottom_cell_signup_upsell_copy),
+							d = Object(j.a)(b.Eb.Bottom_cell_surprise_install_copy);
 						let u;
 						if (e) u = L;
 						else if (t) u = I;
@@ -223,8 +224,8 @@
 						if (e && d) return `${p}bottom_cell_surprise_install_copy.png`;
 						throw new Error("Invalid variant for signup upsell")
 					}(),
-					f = Object(j.a)(_.Eb.Bottom_cell_signup_upsell_copy),
-					w = Object(j.a)(_.Eb.Bottom_cell_surprise_install_copy),
+					f = Object(j.a)(b.Eb.Bottom_cell_signup_upsell_copy),
+					w = Object(j.a)(b.Eb.Bottom_cell_surprise_install_copy),
 					D = f ? o.fbt._("Come join us, we have snacks", null, {
 						hk: "1LUl2W"
 					}) : o.fbt._("Log in or sign up for the best experience", null, {
@@ -299,8 +300,11 @@
 				}), l.createElement("div", {
 					className: S.a.right
 				}, l.createElement("img", {
+					alt: o.fbt._("QR Code to get the Reddit app", null, {
+						hk: "2uYhIL"
+					}),
 					className: S.a.img,
-					src: b
+					src: _
 				}), l.createElement("div", {
 					className: S.a.downloadAppLabel
 				}, y))))
@@ -399,9 +403,9 @@
 			})), s.d(t, "b", (function() {
 				return m
 			})), s.d(t, "d", (function() {
-				return _
-			})), s.d(t, "f", (function() {
 				return b
+			})), s.d(t, "f", (function() {
+				return _
 			}));
 			var n = s("./node_modules/reselect/es/index.js"),
 				o = s("./src/reddit/constants/experiments.ts"),
@@ -426,9 +430,9 @@
 				u = a(o.hb, !0),
 				p = a(o.ib, !0),
 				m = a(o.gb, !1),
-				_ = a(o.hb, !1),
-				b = a(o.ib, !1)
+				b = a(o.hb, !1),
+				_ = a(o.ib, !1)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BottomCellWrapper.3119401ddd1cf9b4be56.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BottomCellWrapper.afa411d17fa5c4377b3e.js.map

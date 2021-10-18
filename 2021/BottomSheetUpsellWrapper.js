@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/BottomSheetUpsellWrapper.0b4ebae43b1fd833d8d6.js
-// Retrieved at 10/14/2021, 8:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/BottomSheetUpsellWrapper.ff4ba9fc39c71ccf1bf6.js
+// Retrieved at 10/18/2021, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["BottomSheetUpsellWrapper"], {
 		"./src/reddit/components/ErrorBoundary/index.tsx": function(e, t, s) {
@@ -48,13 +48,13 @@
 				l = s("./src/reddit/constants/promo.ts"),
 				c = s("./src/reddit/hooks/promo/useIsPromoShown.ts"),
 				d = s("./src/reddit/constants/experiments.ts"),
-				u = s("./src/reddit/contexts/ThrottlingContext/index.tsx"),
-				a = s("./src/reddit/hooks/usePromoContext.ts");
+				a = s("./src/reddit/contexts/ThrottlingContext/index.tsx"),
+				u = s("./src/reddit/hooks/usePromoContext.ts");
 
 			function p(e) {
 				const {
 					promos: t
-				} = Object(a.a)();
+				} = Object(u.a)();
 				return t.get(e) === l.a.Dismissed
 			}
 			var m = s("./src/reddit/components/Upsell/BottomSheetUpsellWrapper/index.m.less"),
@@ -64,7 +64,8 @@
 				children: e
 			}) {
 				return r.createElement(n.a, null, r.createElement("div", {
-					className: Object(o.a)(h.a.wrapper)
+					className: Object(o.a)(h.a.wrapper),
+					"data-testid": "bottom-sheet-upsell-wrapper"
 				}, e))
 			}
 			t.default = function() {
@@ -73,13 +74,13 @@
 						t = p(l.b.SignupUpsellCellDismissible),
 						{
 							throttleFeature: s
-						} = r.useContext(u.a[d.gb]),
+						} = r.useContext(a.a[d.gb]),
 						{
 							throttleFeature: o
-						} = r.useContext(u.a[d.hb]),
+						} = r.useContext(a.a[d.hb]),
 						{
 							throttleFeature: n
-						} = r.useContext(u.a[d.ib]);
+						} = r.useContext(a.a[d.ib]);
 					r.useEffect(() => {
 						function r() {
 							s(), o(), n()
@@ -89,7 +90,7 @@
 				}();
 				const {
 					dismissPromo: e
-				} = Object(a.a)();
+				} = Object(u.a)();
 				return Object(c.a)(l.b.SignupUpsellBottomSheet) ? r.createElement(x, null, r.createElement(i.a, {
 					onDismiss: () => e(l.b.SignupUpsellBottomSheet),
 					size: "large"
@@ -147,4 +148,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BottomSheetUpsellWrapper.0b4ebae43b1fd833d8d6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BottomSheetUpsellWrapper.ff4ba9fc39c71ccf1bf6.js.map

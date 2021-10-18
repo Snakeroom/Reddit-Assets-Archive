@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SignupUpsell.a55879b52a7d82c4b178.js
-// Retrieved at 10/18/2021, 2:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SignupUpsell.663f1529af89c607a756.js
+// Retrieved at 10/18/2021, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SignupUpsell"], {
 		"./src/reddit/components/Upsell/SSOButton/index.m.less": function(e, t, s) {
@@ -229,6 +229,9 @@
 				}), i.createElement("div", {
 					className: I.a.right
 				}, i.createElement("img", {
+					alt: l.fbt._("QR Code to get the Reddit app", null, {
+						hk: "2uYhIL"
+					}),
 					className: I.a.img,
 					src: b
 				}), i.createElement("div", {
@@ -338,4 +341,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SignupUpsell.a55879b52a7d82c4b178.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SignupUpsell.663f1529af89c607a756.js.map
