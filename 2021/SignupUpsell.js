@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SignupUpsell.b166aedb44803695ac1d.js
-// Retrieved at 10/14/2021, 8:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SignupUpsell.a55879b52a7d82c4b178.js
+// Retrieved at 10/18/2021, 2:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SignupUpsell"], {
 		"./src/reddit/components/Upsell/SSOButton/index.m.less": function(e, t, s) {
@@ -103,11 +103,11 @@
 						popup_button_text: "login"
 					})
 				});
-			var O = s("./src/reddit/hooks/promo/useIsSignupUpsellVariantEligible.ts"),
-				j = s("./src/reddit/selectors/experiments/signupUpsellExperiment.ts");
-			var v = s("./src/reddit/icons/svgs/AppleLogo/index.tsx"),
-				N = s("./src/reddit/icons/svgs/Close/index.tsx"),
-				B = s("./src/reddit/icons/svgs/GoogleLogo/index.tsx"),
+			var v = s("./src/reddit/hooks/promo/useIsSignupUpsellVariantEligible.ts"),
+				O = s("./src/reddit/icons/svgs/AppleLogo/index.tsx"),
+				j = s("./src/reddit/icons/svgs/Close/index.tsx"),
+				N = s("./src/reddit/icons/svgs/GoogleLogo/index.tsx"),
+				B = s("./src/reddit/selectors/experiments/signupUpsellExperiment.ts"),
 				w = s("./src/reddit/components/Upsell/SignupUpsell/index.m.less"),
 				I = s.n(w);
 			const L = {
@@ -121,7 +121,6 @@
 				onDismiss: e,
 				size: t
 			}) {
-				Object(o.e)(j.a), Object(o.e)(j.c), Object(o.e)(j.e);
 				const s = Object(a.b)();
 				i.useEffect(() => {
 					s(x())
@@ -129,15 +128,15 @@
 				const u = Object(o.d)(),
 					p = () => u(Object(r.k)()),
 					b = function() {
-						const e = Object(o.e)(j.b),
-							t = Object(o.e)(j.d),
-							s = Object(o.e)(j.f),
-							l = Object(O.a)(_.Eb.Bottom_sheet),
-							i = Object(O.a)(_.Eb.Bottom_cell),
-							c = Object(O.a)(_.Eb.Bottom_cell_dismissible),
-							r = Object(O.a)(_.Eb.Bottom_cell_dismissible_immediate_trigger),
-							a = Object(O.a)(_.Eb.Bottom_cell_signup_upsell_copy),
-							d = Object(O.a)(_.Eb.Bottom_cell_surprise_install_copy);
+						const e = Object(o.e)(B.b),
+							t = Object(o.e)(B.d),
+							s = Object(o.e)(B.f),
+							l = Object(v.a)(_.Eb.Bottom_sheet),
+							i = Object(v.a)(_.Eb.Bottom_cell),
+							c = Object(v.a)(_.Eb.Bottom_cell_dismissible),
+							r = Object(v.a)(_.Eb.Bottom_cell_dismissible_immediate_trigger),
+							a = Object(v.a)(_.Eb.Bottom_cell_signup_upsell_copy),
+							d = Object(v.a)(_.Eb.Bottom_cell_surprise_install_copy);
 						let u;
 						if (e) u = k;
 						else if (t) u = S;
@@ -154,8 +153,8 @@
 						if (e && d) return `${p}bottom_cell_surprise_install_copy.png`;
 						throw new Error("Invalid variant for signup upsell")
 					}(),
-					g = Object(O.a)(_.Eb.Bottom_cell_signup_upsell_copy),
-					w = Object(O.a)(_.Eb.Bottom_cell_surprise_install_copy),
+					g = Object(v.a)(_.Eb.Bottom_cell_signup_upsell_copy),
+					w = Object(v.a)(_.Eb.Bottom_cell_surprise_install_copy),
 					y = g ? l.fbt._("Come join us, we have snacks", null, {
 						hk: "1LUl2W"
 					}) : l.fbt._("Log in or sign up for the best experience", null, {
@@ -180,14 +179,14 @@
 						e(), s(C())
 					},
 					type: "button"
-				}, i.createElement(N.a, null)), i.createElement("div", {
+				}, i.createElement(j.a, null)), i.createElement("div", {
 					className: I.a.title
 				}, y), i.createElement("div", {
 					className: I.a.bottom
 				}, i.createElement("div", {
 					className: I.a.left
 				}, i.createElement(m, {
-					Icon: B.a,
+					Icon: N.a,
 					onClick: () => {
 						p(), s(E(f.Google))
 					},
@@ -196,7 +195,7 @@
 				}, l.fbt._("Continue with Google", null, {
 					hk: "1jIIEZ"
 				})), i.createElement(m, {
-					Icon: v.a,
+					Icon: O.a,
 					onClick: () => {
 						p(), s(E(f.Apple))
 					},
@@ -246,9 +245,9 @@
 				l = s("./src/reddit/selectors/experiments/signupUpsellExperiment.ts");
 
 			function i(e) {
-				const t = Object(n.e)(l.b) === e,
-					s = Object(n.e)(l.d) === e,
-					i = Object(n.e)(l.f) === e;
+				const t = Object(n.e)(l.a) === e,
+					s = Object(n.e)(l.c) === e,
+					i = Object(n.e)(l.e) === e;
 				return t || s || i
 			}
 		},
@@ -339,4 +338,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SignupUpsell.b166aedb44803695ac1d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SignupUpsell.a55879b52a7d82c4b178.js.map

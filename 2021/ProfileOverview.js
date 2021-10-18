@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.c4293ba0530e88334d32.js
-// Retrieved at 10/15/2021, 4:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.4fd24f6a5cf58cb53627.js
+// Retrieved at 10/18/2021, 2:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview"], {
 		"./node_modules/shallowequal/index.js": function(e, t) {
@@ -2489,9 +2489,9 @@
 				r = s("./src/reddit/selectors/experiments/signupUpsellExperiment.ts");
 
 			function i(e) {
-				const t = Object(o.e)(r.b) === e,
-					s = Object(o.e)(r.d) === e,
-					i = Object(o.e)(r.f) === e;
+				const t = Object(o.e)(r.a) === e,
+					s = Object(o.e)(r.c) === e,
+					i = Object(o.e)(r.e) === e;
 				return t || s || i
 			}
 		},
@@ -4381,4 +4381,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.c4293ba0530e88334d32.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.4fd24f6a5cf58cb53627.js.map
