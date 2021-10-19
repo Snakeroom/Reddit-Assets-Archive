@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.d7d71e65c7d938c41252.js
-// Retrieved at 10/19/2021, 5:20:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.343a5e5d18def51b2b14.js
+// Retrieved at 10/19/2021, 5:50:05 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var n, a, r = o[0], s = o[1], c = o[2], l = 0, P = []; l < r.length; l++) a = r[l], Object.prototype.hasOwnProperty.call(d, a) && d[a] && P.push(d[a][0]), d[a] = 0;
@@ -1409,7 +1409,7 @@
 						"translations/es_MX-json": "f8c16b4f89ba6cc46254",
 						"translations/fr_FR-json": "2135afc51072642bff73",
 						"translations/it_IT-json": "6b6ee78b7d3f54aa87a7",
-						"translations/pseudo_ext-json": "5881833d5089687c664f",
+						"translations/pseudo_ext-json": "39a4c026fb7f3b20fb45",
 						"translations/pseudo_long-json": "ed92759d342394b20cb4",
 						"translations/pseudo_short-json": "1c25e8d7ee684ae82b41",
 						"translations/pt_BR-json": "5cefa8f5f1a2ac08e011",
@@ -1417,7 +1417,7 @@
 						"vendors~AdminPanel": "e6e59f93c311ab1cce5c",
 						AdminPanel: "5dda4cc1d874e7e766a8",
 						"vendors~ChatMessageInput~CommentRichUnit~FlairEdit~MembershipPaywallPage~PostCreation~PostRichUnit~R~9deab1a0": "201e0a53b4d00907b96f",
-						"ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor": "282e9637687472562a48",
+						"ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor": "ddbf6ad1fef6be432c4b",
 						MembershipPaywallPage: "e7692bc8de834b536e21",
 						FlairEdit: "1a60d92e8e4a07b677d8",
 						"vendors~Chat~RedesignChat": "4ea3bc796c3ac26848b1",
@@ -1493,7 +1493,7 @@
 						removalReasonActions: "d2390f976782ff97cd52",
 						schedulePickerModal: "aa865922b4624ea25a07",
 						ChatMessageInput: "47831ef085165a2941fd",
-						RichTextEditor: "021778ef68e52fbdd5a1",
+						RichTextEditor: "943e722b70a71ea85728",
 						LiveVideoPlayer: "3ade7edd8ee3abdb817d",
 						"reddit-components-MediumPost": "6b93bd97d5c0e26253e2",
 						"reddit-components-ClassicPost": "094b4e5ff1c7af0a4883",
@@ -1664,4 +1664,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.d7d71e65c7d938c41252.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.343a5e5d18def51b2b14.js.map

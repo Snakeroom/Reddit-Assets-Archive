@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.021778ef68e52fbdd5a1.js
-// Retrieved at 10/19/2021, 5:20:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.943e722b70a71ea85728.js
+// Retrieved at 10/19/2021, 5:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton", "reddit-components-RichTextEditor-Toolbar-GifButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, o) {
@@ -4012,7 +4012,7 @@
 					showEmoteButton: k,
 					gifsEnabled: w,
 					controlsState: O
-				} = e, T = p ? d.d : void 0, F = p ? h.a.overflowPopupMenu : void 0, R = p ? ["left", "top"] : void 0, S = p ? ["left", "bottom"] : void 0;
+				} = e, T = p ? d.d : void 0, F = p ? h.a.overflowPopupMenu : void 0, R = p ? ["left", "top"] : void 0, S = p ? ["left", "bottom"] : void 0, I = !b && (k || w);
 				return !b || p ? s.a.createElement(a.a, {
 					className: t,
 					oveflowMenuDropdownId: n,
@@ -4022,7 +4022,7 @@
 					overflowMenuDropdownClassName: F,
 					overflowMenuTargetPosition: R,
 					overflowMenuTooltipPosition: S
-				}, !b && s.a.createElement("div", {
+				}, I && s.a.createElement("div", {
 					className: f.a.powerupButtons
 				}, k && s.a.createElement(u.default, {
 					controlsState: O,
@@ -4032,7 +4032,7 @@
 					controlsState: O,
 					onGifButtonClick: y,
 					userCanUseGifs: j
-				})), !b && (k || w) && s.a.createElement(_, null), Object(c.i)(b ? c.h : c.g, O, i, g, E), s.a.createElement(c.a, {
+				})), I && s.a.createElement(_, null), Object(c.i)(b ? c.h : c.g, O, i, g, E), s.a.createElement(c.a, {
 					controlsState: O,
 					trackOnClick: E,
 					onLinkButtonClick: v
@@ -4807,4 +4807,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.021778ef68e52fbdd5a1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.943e722b70a71ea85728.js.map

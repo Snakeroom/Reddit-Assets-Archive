@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor.282e9637687472562a48.js
-// Retrieved at 10/13/2021, 6:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor.ddbf6ad1fef6be432c4b.js
+// Retrieved at 10/19/2021, 5:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor"], {
 		"./src/lib/forEachGroup/index.ts": function(t, e, n) {
@@ -356,7 +356,7 @@
 		"./src/reddit/components/CollapseIntoOverflow/index.tsx": function(t, e, n) {
 			"use strict";
 			n.d(e, "a", (function() {
-				return g
+				return m
 			}));
 			var o = n("./src/lib/fastdom/index.ts"),
 				r = n("./node_modules/react/index.js"),
@@ -368,9 +368,8 @@
 				d = n.n(l);
 			const u = 33,
 				p = t => t.preventDefault(),
-				h = (t, e) => `${t===a.a.Post?"Post":"Comment"}--Overflow-Dropdown__${e}`,
-				m = t => t.reduce((t, e) => (Array.isArray(e) ? t += e.length : e && t++, t), 0);
-			class g extends s.a.Component {
+				h = (t, e) => `${t===a.a.Post?"Post":"Comment"}--Overflow-Dropdown__${e}`;
+			class m extends s.a.Component {
 				constructor(t) {
 					super(t), this.breakpoints = [], this.updateCurrentBreakpoint = () => {
 						o.a.read(() => {
@@ -392,13 +391,15 @@
 							})
 						})
 					};
-					const {
-						indexOfBreakpoint: e
-					} = t, n = Array.isArray(t.children) ? m(t.children) : 1;
-					this.state = {
-						indexOfCurrentBreakpoint: e || n - 1,
+					const e = this.getTotalNumCollapsibleItems();
+					this.state = this.calculateOverflowState(e)
+				}
+				calculateOverflowState(t) {
+					const e = this.props.indexOfBreakpoint;
+					return {
+						indexOfCurrentBreakpoint: e || t - 1,
 						shouldShowOverflow: !!e,
-						totalNumCollapsibleItems: n
+						totalNumCollapsibleItems: t
 					}
 				}
 				componentDidMount() {
@@ -406,6 +407,15 @@
 				}
 				componentWillUnmount() {
 					this.props.indexOfBreakpoint || window.removeEventListener("resize", this.updateCurrentBreakpoint)
+				}
+				componentDidUpdate() {
+					const t = this.getTotalNumCollapsibleItems();
+					t !== this.state.totalNumCollapsibleItems && o.a.write(() => {
+						this.breakpoints = [], this.setState(this.calculateOverflowState(t))
+					})
+				}
+				getTotalNumCollapsibleItems() {
+					return Array.isArray(this.props.children) ? this.props.children.reduce((t, e) => (Array.isArray(e) ? t += e.length : e && t++, t), 0) : 1
 				}
 				registerBreakpoint(t, e) {
 					this.breakpoints[e] = 0, o.a.read(() => {
@@ -1092,9 +1102,9 @@
 			})), n.d(e, "e", (function() {
 				return L
 			})), n.d(e, "h", (function() {
-				return D
-			})), n.d(e, "k", (function() {
 				return N
+			})), n.d(e, "k", (function() {
+				return D
 			})), n.d(e, "f", (function() {
 				return F
 			})), n.d(e, "a", (function() {
@@ -1239,8 +1249,8 @@
 				K = [E.b, E.e],
 				M = [E.j, E.g, E.k, E.i],
 				L = [E.d, E.l, E.h, E.a, E.c],
-				D = [E.b, E.e, E.l],
-				N = [E.j, E.a],
+				N = [E.b, E.e, E.l],
+				D = [E.j, E.a],
 				F = [E.g, E.k, E.i, E.d, E.h, E.c],
 				P = t => i.a.createElement(B, {
 					iconName: a.a.link_post,
@@ -2594,8 +2604,8 @@
 				K = n("./src/reddit/components/RichTextEditor/constants/draftEditorCommands.ts"),
 				M = n("./node_modules/lodash/escape.js"),
 				L = n.n(M),
-				D = n("./src/reddit/components/RichTextEditor/media/helpers.ts"),
-				N = n("./src/reddit/components/RichTextEditor/helpers/common.ts"),
+				N = n("./src/reddit/components/RichTextEditor/media/helpers.ts"),
+				D = n("./src/reddit/components/RichTextEditor/helpers/common.ts"),
 				F = n("./src/reddit/components/RichTextEditor/entity/entityTypes.ts"),
 				P = n("./node_modules/immutable/dist/immutable.js"),
 				U = n("./src/reddit/helpers/dom/index.ts"),
@@ -2830,7 +2840,7 @@
 						const r = Object(w.v)(n.first().getType()),
 							s = Object(w.v)(n.last().getType()),
 							i = n.toArray();
-						r && i.unshift(Object(N.h)()), s && i.push(Object(N.h)());
+						r && i.unshift(Object(D.h)()), s && i.push(Object(D.h)());
 						const c = o.BlockMapBuilder.createFromArray(i);
 						return Y.c(t, e, c)
 					})(t, e, n)
@@ -2975,7 +2985,7 @@
 					const {
 						selection: n,
 						editor: o
-					} = e, r = n.getStartKey(), s = n.getEndKey(), i = t.getKey(), c = o.refs.editor, a = Object(N.d)(i, c);
+					} = e, r = n.getStartKey(), s = n.getEndKey(), i = t.getKey(), c = o.refs.editor, a = Object(D.d)(i, c);
 					return a ? i === r || i === s ? Object(U.c)(a) : [a] : null
 				};
 			var Ot = (t, e, n) => {
@@ -3050,11 +3060,11 @@
 					let s = t;
 					if (Object(w.u)(n.getType()) ? s = s.set(s.keySeq().first(), n.merge({
 							type: w.n
-						})) : Object(w.o)(n.getType()) && (s = o.BlockMapBuilder.createFromArray([Object(N.h)(), ...s.toArray()])), Object(w.u)(r.getType()) || !Object(D.q)(e)) {
-						const t = Object(N.h)();
+						})) : Object(w.o)(n.getType()) && (s = o.BlockMapBuilder.createFromArray([Object(D.h)(), ...s.toArray()])), Object(w.u)(r.getType()) || !Object(N.q)(e)) {
+						const t = Object(D.h)();
 						s = s.set(t.getKey(), t)
 					} else if (Object(w.o)(r.getType())) {
-						const t = Object(N.h)().merge({
+						const t = Object(D.h)().merge({
 							type: w.j
 						});
 						s = s.set(t.getKey(), t)
@@ -3065,7 +3075,7 @@
 					const o = t.getBlockForKey(e.getStartKey());
 					if (Object(w.u)(o.getType())) {
 						const o = n.first(),
-							r = n.set(n.keySeq().first(), Object(N.h)(o.getKey(), o.getText()).merge({
+							r = n.set(n.keySeq().first(), Object(D.h)(o.getKey(), o.getText()).merge({
 								type: w.j
 							}));
 						return Y.c(t, e, r)
@@ -3101,7 +3111,7 @@
 				},
 				It = t => {
 					const e = Bt(t);
-					if (e) return Object(D.d)(t, e.first().getKey())
+					if (e) return Object(N.d)(t, e.first().getKey())
 				},
 				_t = t => {
 					const e = t.getSelection();
@@ -3113,7 +3123,7 @@
 							if (Object(w.u)(r.getType())) n = Y.d(n, e), n = o.Modifier.setBlockType(n, n.getSelectionAfter(), w.n);
 							else if (Object(w.o)(r.getType())) {
 							let r = n.getBlockAfter(e.getStartKey());
-							return r || (r = (t = Object(D.b)(t, e.getStartKey(), N.a.after)).getCurrentContent().getBlockAfter(e.getStartKey())), o.EditorState.forceSelection(t, Object(N.b)(r, !0))
+							return r || (r = (t = Object(N.b)(t, e.getStartKey(), D.a.after)).getCurrentContent().getBlockAfter(e.getStartKey())), o.EditorState.forceSelection(t, Object(D.b)(r, !0))
 						}
 						return o.EditorState.push(t, n, "split-block")
 					}
@@ -3125,7 +3135,7 @@
 						i = r.getBlockForKey(s);
 					if (!Object(w.o)(i.getType())) return;
 					const c = "up" === e ? r.getBlockBefore(s) : r.getBlockAfter(s);
-					return c ? o.EditorState.forceSelection(t, Object(N.b)(c, !0)) : Object(D.b)(t, s, "up" === e ? N.a.before : N.a.after)
+					return c ? o.EditorState.forceSelection(t, Object(D.b)(c, !0)) : Object(N.b)(t, s, "up" === e ? D.a.before : D.a.after)
 				},
 				Kt = (t, e) => {
 					if (t.shiftKey) return;
@@ -3141,18 +3151,18 @@
 					const n = t.getSelection();
 					return n.isCollapsed() && 0 === n.getStartOffset() && Object(w.o)(t.getCurrentContent().getBlockForKey(n.getStartKey()).getType())
 				};
-			var Dt = (t, e) => {
-					if (!Object(D.q)(e)) return t;
+			var Nt = (t, e) => {
+					if (!Object(N.q)(e)) return t;
 					const n = t.getSelection(),
 						o = t.getCurrentContent(),
 						r = o.getBlockForKey(n.getStartKey());
 					if (Object(w.o)(r.getType())) {
 						const e = o.getBlockAfter(r.getKey());
-						if (!e || !Object(w.u)(e.getType())) return Object(D.d)(t, r.getKey(), !1)
+						if (!e || !Object(w.u)(e.getType())) return Object(N.d)(t, r.getKey(), !1)
 					}
 					return t
 				},
-				Nt = n("./src/reddit/actions/modal.ts"),
+				Dt = n("./src/reddit/actions/modal.ts"),
 				Ft = n("./src/reddit/actions/upload.ts"),
 				Pt = n("./src/reddit/components/ThumbnailSelector/index.tsx"),
 				Ut = t => null,
@@ -3419,7 +3429,7 @@
 					if (i) d = "image" === Object(Ht.f)(i.metadata.mimetype);
 					else {
 						if (!c) return null;
-						d = c.type === D.a.Image || c.type === D.a.AnimatedImage
+						d = c.type === N.a.Image || c.type === N.a.AnimatedImage
 					}
 					const u = i ? i.metadata.height : c.height,
 						h = !i || i.status === Vt.a.SUCCESS,
@@ -3475,17 +3485,17 @@
 				}), p.a.createElement("br", null)),
 				Me = n("./src/reddit/components/MakeGifToggle/index.tsx"),
 				Le = n("./src/reddit/icons/svgs/ThumbnailSelect/index.tsx"),
-				De = n("./src/reddit/icons/svgs/Trash2/index.tsx"),
-				Ne = n("./src/reddit/layout/row/Inline/index.tsx"),
+				Ne = n("./src/reddit/icons/svgs/Trash2/index.tsx"),
+				De = n("./src/reddit/layout/row/Inline/index.tsx"),
 				Fe = n("./src/reddit/components/RichTextEditor/Toolbar/index.tsx"),
 				Pe = n("./src/reddit/components/RichTextEditor/Toolbar/FormatterButton/index.tsx"),
 				Ue = n("./src/reddit/components/RichTextEditor/Toolbar/formatterConfigs.tsx"),
 				He = n("./src/reddit/components/RichTextEditor/media/MediaBlock/Toolbar/index.m.less"),
 				ze = n.n(He);
 			const We = E.a.wrapped(Pe.default, "FormatterButton", ze.a),
-				qe = Object(Ue.f)(De.b),
+				qe = Object(Ue.f)(Ne.b),
 				Ve = Object(Ue.f)(Le.a),
-				Ge = E.a.wrapped(Ne.a, "ToolbarContent", ze.a);
+				Ge = E.a.wrapped(De.a, "ToolbarContent", ze.a);
 			var Ye = t => {
 					const {
 						alignCenter: e,
@@ -3495,7 +3505,7 @@
 						showVideoControls: i
 					} = t, c = n.getKey(), {
 						makeGif: a = !1
-					} = Object(D.h)(n) || {};
+					} = Object(N.h)(n) || {};
 					return p.a.createElement("div", {
 						className: Object(b.a)(ze.a.container, {
 							[ze.a.alignCenter]: e
@@ -3506,7 +3516,7 @@
 						isCompact: !0,
 						key: "make-gif",
 						on: a,
-						onClick: () => s(Object(D.r)(o, c, {
+						onClick: () => s(Object(N.r)(o, c, {
 							makeGif: !a
 						}))
 					}), i && t.showThumbnailButton && p.a.createElement(We, {
@@ -3518,7 +3528,7 @@
 						tooltipBelow: !0
 					}), i && p.a.createElement(Fe.c, null), p.a.createElement(We, {
 						Icon: qe,
-						onClick: () => s(Object(D.d)(o, c)),
+						onClick: () => s(Object(N.d)(o, c)),
 						tooltip: r.fbt._("Remove", null, {
 							hk: "3tYl0U"
 						}),
@@ -3529,7 +3539,7 @@
 				Je = n.n(Qe);
 			const Xe = t => `RTE_VIDEO_THUMBNAIL_SELECTOR_${t.getKey()}`,
 				Ze = Object(m.a)(t => t.uploads, (t, e) => {
-					const n = Object(D.h)(e.block);
+					const n = Object(N.h)(e.block);
 					return n && n.uploadInfo && n.uploadInfo.uploadKey
 				}, (t, e) => e ? t[e] : void 0),
 				$e = Object(h.b)((t, e) => ({
@@ -3538,7 +3548,7 @@
 					isRteVideoPosterEnabled: v.d.rteVideoPoster(t)
 				}), (t, e) => ({
 					onCancelUpload: e => t(Ft.i(e, !1)),
-					toggleVideoThumbnailsSelector: () => t(Object(Nt.i)(Xe(e.block)))
+					toggleVideoThumbnailsSelector: () => t(Object(Dt.i)(Xe(e.block)))
 				})),
 				tn = E.a.div("MediaContainer", Je.a),
 				en = E.a.div("Container", Je.a);
@@ -3566,7 +3576,7 @@
 					}, this.isSelected = () => {
 						const t = this.props.blockProps.getEditorState().getSelection(),
 							e = this.props.block.getKey();
-						return this.state.active && Object(D.n)(t, e)
+						return this.state.active && Object(N.n)(t, e)
 					}, this.onRetryUpload = () => {
 						const {
 							upload: t
@@ -3578,7 +3588,7 @@
 						t.dataTransfer.effectAllowed = "move", t.dataTransfer.setData(qt, this.props.block.getKey())
 					}, this.onRemove = () => {
 						const t = this.props.blockProps.getEditorState();
-						this.props.blockProps.onChange(Object(D.d)(t, this.props.block.getKey()))
+						this.props.blockProps.onChange(Object(N.d)(t, this.props.block.getKey()))
 					}, this.onCancelUpload = async () => {
 						this.props.upload && (await this.props.onCancelUpload(this.props.upload.key), this.selectBlock())
 					}, this.onToolbarStateChange = t => {
@@ -3588,24 +3598,24 @@
 					}, this.onThumbnailSelect = t => {
 						const e = this.props.blockProps.getEditorState(),
 							n = this.props.block.getKey();
-						let o = Object(D.r)(e, this.props.block.getKey(), {
+						let o = Object(N.r)(e, this.props.block.getKey(), {
 							thumbnail: t
 						});
-						o = Object(D.p)(o, n), this.props.blockProps.onChange(o), this.toggleVideoThumbnailsSelector()
+						o = Object(N.p)(o, n), this.props.blockProps.onChange(o), this.toggleVideoThumbnailsSelector()
 					}, this.state = {
 						active: !1,
 						isInSelection: !1
 					}
 				}
 				shouldComponentUpdate(t, e) {
-					return e.active !== this.state.active || e.isInSelection !== this.state.isInSelection || t.block !== this.props.block || t.upload !== this.props.upload || Object(D.n)(t.selection, t.block.getKey())
+					return e.active !== this.state.active || e.isInSelection !== this.state.isInSelection || t.block !== this.props.block || t.upload !== this.props.upload || Object(N.n)(t.selection, t.block.getKey())
 				}
 				componentDidMount() {
 					document.addEventListener("selectionchange", this.onNativeSelectionChange);
 					const {
 						selection: t
 					} = this.props;
-					t.getHasFocus() && Object(D.n)(t, this.props.block.getKey()) && this.selectBlock(), this.overlayContainer = Ut(!0)
+					t.getHasFocus() && Object(N.n)(t, this.props.block.getKey()) && this.selectBlock(), this.overlayContainer = Ut(!0)
 				}
 				componentWillUnmount() {
 					document.removeEventListener("selectionchange", this.onNativeSelectionChange)
@@ -3614,7 +3624,7 @@
 					const e = t.block.getKey(),
 						n = this.props.blockProps.getEditorState(),
 						o = n;
-					n !== o && this.props.blockProps.onChange(o), !this.state.active && t.selection !== this.props.selection && t.selection.getHasFocus() && Object(D.n)(t.selection, e) && this.selectBlock()
+					n !== o && this.props.blockProps.onChange(o), !this.state.active && t.selection !== this.props.selection && t.selection.getHasFocus() && Object(N.n)(t.selection, e) && this.selectBlock()
 				}
 				getToolbarOffset() {
 					if (!this.props.blockProps.rteFocusableContentRef || !this.rootContainer) return 0;
@@ -3632,7 +3642,7 @@
 						isRteVideoPosterEnabled: n,
 						offsetKey: o,
 						upload: r
-					} = this.props, s = Object(D.h)(t), i = s ? s.thumbnail : void 0, c = !!r && Object(Ht.l)(r.metadata.mimetype || ""), {
+					} = this.props, s = Object(N.h)(t), i = s ? s.thumbnail : void 0, c = !!r && Object(Ht.l)(r.metadata.mimetype || ""), {
 						active: a,
 						isInSelection: l
 					} = this.state, d = e.editorType === zt.a.Comment;
@@ -3682,18 +3692,18 @@
 					const {
 						contentState: e,
 						block: n
-					} = Object(N.e)(t.children[0]).props;
+					} = Object(D.e)(t.children[0]).props;
 					this.mediaBlockKey = e.getBlockBefore(n.getKey()).getKey()
 				}
 				render() {
 					const t = this.props.children[0],
-						e = Object(N.e)(t),
+						e = Object(D.e)(t),
 						{
 							block: n,
 							contentState: o
 						} = e.props,
 						s = o.getBlockForKey(this.mediaBlockKey),
-						i = Object(D.h)(s);
+						i = Object(N.h)(s);
 					if (!i || !(i.mediaAsset || i.uploadInfo && i.uploadInfo.mediaType)) return null;
 					const c = !n.getLength();
 					return p.a.createElement("div", {
@@ -4001,7 +4011,7 @@
 				},
 				_n = t => {
 					const e = p.a.Children.toArray(t),
-						n = Object(N.e)(e[0]),
+						n = Object(D.e)(e[0]),
 						{
 							selection: o,
 							contentState: r,
@@ -4010,7 +4020,7 @@
 						{
 							colCount: i
 						} = Object(Q.g)(s);
-					e.sort((t, e) => Object(Q.b)(Object(N.c)(t), Object(N.c)(e)));
+					e.sort((t, e) => Object(Q.b)(Object(D.c)(t), Object(D.c)(e)));
 					const c = z()(e, i);
 					let a, l, d = !1;
 					if (o.getAnchorKey() !== o.getFocusKey()) {
@@ -4089,7 +4099,7 @@
 					} = this.state;
 					let r;
 					o ? r = (t, e) => !0 : e && n && !Object(Q.h)(e, n) && (r = Object(Q.k)(e, n));
-					const s = t[0].map(t => Object(Q.g)(Object(N.e)(t).props.block).alignment),
+					const s = t[0].map(t => Object(Q.g)(Object(D.e)(t).props.block).alignment),
 						i = t.map((t, e) => p.a.createElement(vn, {
 							key: e
 						}, t.map((t, n) => p.a.createElement(Tn, {
@@ -4117,8 +4127,8 @@
 			});
 			var Mn = n("./node_modules/lodash/isEqual.js"),
 				Ln = n.n(Mn),
-				Dn = n("./src/reddit/components/RichTextEditor/Tooltip/index.tsx"),
-				Nn = n("./src/reddit/icons/svgs/FormattingAlignCenter/index.tsx"),
+				Nn = n("./src/reddit/components/RichTextEditor/Tooltip/index.tsx"),
+				Dn = n("./src/reddit/icons/svgs/FormattingAlignCenter/index.tsx"),
 				Fn = n("./src/reddit/icons/svgs/FormattingAlignLeft/index.tsx"),
 				Pn = n("./src/reddit/icons/svgs/FormattingAlignRight/index.tsx"),
 				Un = n("./src/reddit/icons/svgs/FormattingDeleteRow/index.tsx"),
@@ -4197,11 +4207,11 @@
 				eo = Qn(to, {
 					orientation: "vertical"
 				}),
-				no = Object(Ue.f)(Nn.a),
+				no = Object(Ue.f)(Dn.a),
 				oo = Object(Ue.f)(Fn.a),
 				ro = Object(Ue.f)(Pn.a),
-				so = Object(Ue.f)(De.b),
-				io = E.a.wrapped(Ne.a, "ToolbarContent", Gn.a),
+				so = Object(Ue.f)(Ne.b),
+				io = E.a.wrapped(De.a, "ToolbarContent", Gn.a),
 				co = t => p.a.createElement(Pe.default, Yn({}, t, {
 					className: Object(b.a)(Gn.a.formatterButton, t.className),
 					tooltipContentClass: Gn.a.tooltip
@@ -4363,7 +4373,7 @@
 						} = this.state;
 					return p.a.createElement("div", {
 						ref: this.setContainerRef
-					}, p.a.createElement(Dn.b, {
+					}, p.a.createElement(Nn.b, {
 						targetPosition: e
 					}, p.a.createElement(ho, {
 						className: t ? uo.a.isPressed : void 0,
@@ -4470,8 +4480,8 @@
 			const Ko = new Set([F.a.LINK]);
 			var Mo = n("./src/reddit/components/RichTextEditor/entity/link/helpers.tsx"),
 				Lo = n("./src/reddit/components/RichTextEditor/entity/link/decorator.m.less"),
-				Do = n.n(Lo);
-			const No = E.a.a("RegularLink", Do.a),
+				No = n.n(Lo);
+			const Do = E.a.a("RegularLink", No.a),
 				Fo = {
 					strategy: Mo.a,
 					component: ko(t => {
@@ -4479,7 +4489,7 @@
 							{
 								url: n
 							} = e.getData();
-						return p.a.createElement(No, {
+						return p.a.createElement(Do, {
 							href: n
 						}, t.children)
 					})
@@ -4648,14 +4658,14 @@
 						r = t.getCurrentContent();
 					if (n.isCollapsed() && 0 === n.getStartOffset()) {
 						const s = r.getBlockForKey(n.getEndKey());
-						if (Object(w.o)(s.getType())) return Object(D.d)(t, s.getKey());
+						if (Object(w.o)(s.getType())) return Object(N.d)(t, s.getKey());
 						if (Object(w.u)(s.getType())) {
 							const e = r.getBlockBefore(s.getKey());
-							return o.EditorState.forceSelection(t, Object(N.b)(e))
+							return o.EditorState.forceSelection(t, Object(D.b)(e))
 						}
-						if (!Object(D.q)(e) && Object(N.g)(s)) {
+						if (!Object(N.q)(e) && Object(D.g)(s)) {
 							const e = r.getBlockBefore(s.getKey());
-							if (e && Object(w.o)(e.getType())) return t = o.EditorState.push(t, Object(N.i)(r, s.getKey()), Z.f), o.EditorState.forceSelection(t, Object(N.b)(e))
+							if (e && Object(w.o)(e.getType())) return t = o.EditorState.push(t, Object(D.i)(r, s.getKey()), Z.f), o.EditorState.forceSelection(t, Object(D.b)(e))
 						}
 					}
 				})(t, e),
@@ -4677,11 +4687,11 @@
 					if (!n.isCollapsed()) return;
 					const s = r.getBlockForKey(n.getEndKey());
 					if (n.getEndOffset() === s.getLength()) {
-						if (Object(w.o)(s.getType())) return Object(D.d)(t, s.getKey()); {
+						if (Object(w.o)(s.getType())) return Object(N.d)(t, s.getKey()); {
 							const i = r.getBlockAfter(n.getEndKey());
 							if (i && Object(w.o)(i.getType())) {
-								if (Object(D.q)(e)) return Object(D.d)(t, i.getKey());
-								if (Object(N.g)(s)) return t = o.EditorState.push(t, Object(N.i)(r, s.getKey()), Z.f), o.EditorState.forceSelection(t, Object(N.b)(i))
+								if (Object(N.q)(e)) return Object(N.d)(t, i.getKey());
+								if (Object(D.g)(s)) return t = o.EditorState.push(t, Object(D.i)(r, s.getKey()), Z.f), o.EditorState.forceSelection(t, Object(D.b)(i))
 							}
 						}
 					}
@@ -4768,7 +4778,7 @@
 				xr = n("./src/reddit/components/RichTextEditor/DragController/index.m.less"),
 				Tr = n.n(xr);
 			const vr = E.a.div("DropLine", Tr.a),
-				jr = E.a.wrapped(Dn.b, "Tooltip", Tr.a);
+				jr = E.a.wrapped(Nn.b, "Tooltip", Tr.a);
 			class Rr extends u.Component {
 				constructor(t) {
 					super(t), this.dragCount = 0, this.setContainerRef = t => this.containerRef = t, this.preventDocumentDrop = t => {
@@ -4820,7 +4830,7 @@
 						} = this.props, s = Object(Or.b)(r, t);
 						if (!s) return void e();
 						t.preventDefault(), t.stopPropagation();
-						const i = s.isBefore ? N.a.before : N.a.after;
+						const i = s.isBefore ? D.a.before : D.a.after;
 						n ? this.props.onBlockMove(n, s.blockKey, i) : setTimeout(() => {
 							this.props.onFilesDrop(o, s.blockKey, i)
 						}), e()
@@ -4863,7 +4873,7 @@
 				Mr = n("./src/reddit/components/RichTextEditor/entity/cloneEntitiesInFragment.ts"),
 				Lr = n("./src/reddit/components/RichTextEditor/entity/applyEntityToContentBlock.ts");
 
-			function Dr(t, e, n) {
+			function Nr(t, e, n) {
 				const r = Object(o.convertFromHTML)(e, void 0, n);
 				if (r) {
 					const {
@@ -4880,7 +4890,7 @@
 				return [t, null]
 			}
 
-			function Nr(t, e, n) {
+			function Dr(t, e, n) {
 				const r = Kr()(e),
 					s = n && 1 === r.length ? n : o.CharacterMetadata.create(),
 					i = Br.a.processText(r, s).map(t => t.merge({
@@ -4932,21 +4942,21 @@
 				if (!(p = function(t, e, n) {
 						const o = t.getBlockForKey(e.getStartKey()),
 							r = t.getBlockForKey(e.getEndKey());
-						if (o.getType() === w.f || r.getType() === w.f) return Nr(0, n).map(t => t.merge({
+						if (o.getType() === w.f || r.getType() === w.f) return Dr(0, n).map(t => t.merge({
 							type: w.f,
 							depth: 0
 						}))
 					}(h, l, c.text)) && c.fragment && (p = c.fragment, [h, p] = Object(Mr.b)(h, p), p = vt(p, r)), !p && c.rtjson && (p = function(t) {
 						const e = JSON.parse(t);
 						return Object(o.convertFromRaw)(e).getBlockMap()
-					}(c.rtjson)), !p && c.html && ([h, p] = Dr(h, c.html, u)), !p && c.text) {
+					}(c.rtjson)), !p && c.html && ([h, p] = Nr(h, c.html, u)), !p && c.text) {
 					const t = function(t, e, n) {
 						return o.CharacterMetadata.create({
 							style: n,
 							entity: _r()(t, e)
 						})
 					}(h, l, d);
-					p = Nr(0, c.text, t), [h, p] = function(t, e) {
+					p = Dr(0, c.text, t), [h, p] = function(t, e) {
 						let n = t,
 							o = e;
 						return e.forEach(t => {
@@ -5259,9 +5269,9 @@
 					const {
 						isTooltipAbove: t
 					} = this.props;
-					return p.a.createElement(Dn.b, {
+					return p.a.createElement(Nn.b, {
 						onSetPositionUpdater: t => this.updateTooltipPosition = t,
-						trianglePlacement: t ? Dn.a.Below : Dn.a.Above
+						trianglePlacement: t ? Nn.a.Below : Nn.a.Above
 					}, this.renderEditorPopup() || this.renderDetailsPopup())
 				}
 			}
@@ -5335,13 +5345,13 @@
 					t && t.load && Ks.forEach(e => t.load(e))
 				};
 			var Ls = n("./src/reddit/components/RichTextEditor/UnorderedList/index.m.less"),
-				Ds = n.n(Ls);
-			const Ns = E.a.ul("UnorderedListWrapper", Ds.a),
+				Ns = n.n(Ls);
+			const Ds = E.a.ul("UnorderedListWrapper", Ns.a),
 				Fs = Object(P.Map)({
 					[w.i.UNORDERED]: {
 						element: "li",
 						aliasedElements: ["li"],
-						wrapper: p.a.createElement(Ns, null)
+						wrapper: p.a.createElement(Ds, null)
 					}
 				});
 			var Ps = n("./src/reddit/contexts/InsideOverlay.tsx"),
@@ -5742,7 +5752,7 @@
 					return Object(fi.r)(i, c)
 				},
 				Bi = (t, e, n) => {
-					const o = Object(D.h)(t);
+					const o = Object(N.h)(t);
 					if (!o) throw new Error("Invalid atomic block!");
 					const {
 						uploadInfo: r,
@@ -5755,7 +5765,7 @@
 							{
 								assetId: s,
 								thumbnailAssetId: a
-							} = Object(D.f)(o, n);
+							} = Object(N.f)(o, n);
 						return Object(Ht.j)(e) ? Object(fi.b)(s, c) : Object(Ht.k)(e) ? Object(fi.g)(s, c) : Object(fi.u)(s, c, a, i)
 					} {
 						const {
@@ -5764,13 +5774,13 @@
 						} = s;
 						let n;
 						switch (e) {
-							case D.a.AnimatedImage:
+							case N.a.AnimatedImage:
 								n = Object(fi.b)(t, c);
 								break;
-							case D.a.Image:
+							case N.a.Image:
 								n = Object(fi.g)(t, c);
 								break;
-							case D.a.Video:
+							case N.a.Video:
 								n = Object(fi.u)(t, c);
 								break;
 							default:
@@ -5805,23 +5815,23 @@
 					};
 					return t.createEntity(e, "MUTABLE", o)
 				},
-				Di = n("./node_modules/lodash/maxBy.js"),
-				Ni = n.n(Di);
+				Ni = n("./node_modules/lodash/maxBy.js"),
+				Di = n.n(Ni);
 			const Fi = (t, e) => {
 				if (!e) return (t => {
 					const e = t.id;
 					switch (t.e) {
 						case zn.m:
 							return {
-								assetId: e, type: D.a.Image
+								assetId: e, type: N.a.Image
 							};
 						case zn.a:
 							return {
-								assetId: e, type: D.a.AnimatedImage
+								assetId: e, type: N.a.AnimatedImage
 							};
 						case zn.D:
 							return {
-								assetId: e, type: D.a.Video
+								assetId: e, type: N.a.Video
 							}
 					}
 				})(t);
@@ -5833,7 +5843,7 @@
 						} = e;
 						return {
 							assetId: n,
-							type: D.a.Image,
+							type: N.a.Image,
 							imageUrl: t.u,
 							width: t.x,
 							height: t.y
@@ -5845,7 +5855,7 @@
 						} = e;
 						return {
 							assetId: n,
-							type: D.a.AnimatedImage,
+							type: N.a.AnimatedImage,
 							imageUrl: t.gif,
 							posterUrl: t.p,
 							dashUrl: t.mp4,
@@ -5864,11 +5874,11 @@
 						} = e;
 						let a;
 						if (s) {
-							a = Ni()(s, t => t.x).u
+							a = Di()(s, t => t.x).u
 						}
 						return {
 							assetId: n,
-							type: D.a.Video,
+							type: N.a.Video,
 							isGif: t,
 							dashUrl: o,
 							hlsUrl: r,
@@ -5893,7 +5903,7 @@
 						})
 					})];
 				if (n) {
-					const t = Object(N.h)(Object(o.genKey)(), s).merge({
+					const t = Object(D.h)(Object(o.genKey)(), s).merge({
 						type: w.j
 					});
 					a.push(t)
@@ -5919,7 +5929,7 @@
 						case zn.m:
 						case zn.a:
 						case zn.D:
-							return void t.blocks.push(...Pi(e, n.mediaMetadataMap, Object(D.q)(n.editorType)))
+							return void t.blocks.push(...Pi(e, n.mediaMetadataMap, Object(N.q)(n.editorType)))
 					}
 				},
 				zi = (t, e, n) => {
@@ -5971,7 +5981,7 @@
 					const a = t.content;
 					if (1 === e.length && (e[0].e === zn.m || e[0].e === zn.a)) {
 						const n = e[0];
-						if (Object(gi.f)(n.id)) return void t.blocks.push(...Pi(n, r.mediaMetadataMap, Object(D.q)(r.editorType)))
+						if (Object(gi.f)(n.id)) return void t.blocks.push(...Pi(n, r.mediaMetadataMap, Object(N.q)(r.editorType)))
 					}
 					const {
 						charList: l,
@@ -6155,9 +6165,9 @@
 			}
 			Object(ks.b)({
 				draftToRTFJson: yi,
-				getMediaCount: D.g,
-				getPendingThumbnailUploads: D.i,
-				isAllMediaUploaded: D.m
+				getMediaCount: N.g,
+				getPendingThumbnailUploads: N.i,
+				isAllMediaUploaded: N.m
 			});
 			const dc = "handled",
 				uc = "not-handled",
@@ -6250,7 +6260,7 @@
 							mediaToInsert: null
 						});
 						const c = i.filter(t => !!t.metadata.mimetype);
-						c.length && this.onChange(Object(D.l)(e, c, r, s))
+						c.length && this.onChange(Object(N.l)(e, c, r, s))
 					}, this.focus = () => this.editorRef && this.editorRef.focus(), this.blur = () => this.editorRef && this.editorRef.blur(), this.isFocused = () => this.state.editorState.getSelection().getHasFocus(), this.isEmpty = () => !this.state.editorState.getCurrentContent().hasText(), this.setEditorRef = t => this.editorRef = t, this.setSuggestionDropdownApi = t => this.suggestionDropdownApi = t, this.setLinksControllerApi = t => this.linksControllerApi = t, this.setTableToolbarControllerApi = t => this.tableToolbarControllerApi = t, this.setEmotesTooltipApi = t => this.emotesTooltipApi = t, this.setGifTooltipApi = t => this.gifTooltipApi = t, this.setSuggestionDropdownPositionUpdater = t => this.updateSuggestionDropdownPosition = t, this.getEditorState = () => this.state.editorState, this.setEditorState = (t, e) => {
 						const n = this.state.editorState.getCurrentContent() !== t.getCurrentContent();
 						n && this.props.readOnly || (this.setState({
@@ -6262,7 +6272,7 @@
 						n.getSelection().getHasFocus() || (n = o.EditorState.forceSelection(n, n.getSelection()), e && (n = o.EditorState.setInlineStyleOverride(n, e))), this.onChange(n)
 					}, this.onChange = (t, e) => {
 						let n = t;
-						n = kn(n, this.state.editorState), n = Dt(n, this.props.editorType), this.emotesTooltipApi && (n = Object(Oo.d)(n, this.state.editorState)), n = Wo(n, this.state.editorState), n = Object(nr.d)(n, this.state.editorState), this.setEditorState(n, e);
+						n = kn(n, this.state.editorState), n = Nt(n, this.props.editorType), this.emotesTooltipApi && (n = Object(Oo.d)(n, this.state.editorState)), n = Wo(n, this.state.editorState), n = Object(nr.d)(n, this.state.editorState), this.setEditorState(n, e);
 						let {
 							suppressAutocompleteForLink: o
 						} = this.state;
@@ -6406,7 +6416,7 @@
 						} = this.state;
 						if (!this.editorRef) return;
 						if (!Ot(e, this.editorRef, t)) return;
-						const n = lt(e) || It(e) || Object(D.e)(e);
+						const n = lt(e) || It(e) || Object(N.e)(e);
 						n && this.onChange(n)
 					}, this.handleOnPaste = t => {
 						const {
@@ -6425,7 +6435,7 @@
 							this.insertMediaFiles({
 								files: o,
 								blockKey: r,
-								insertionMode: N.a.after,
+								insertionMode: D.a.after,
 								filesSource: k.FileSource.Clipboard
 							}), t.stopPropagation()
 						}
@@ -6455,7 +6465,7 @@
 						} = this.props, n = ks.a.toRichTextJSON({
 							...this.props.rteState,
 							isBound: !0,
-							editorState: Object(D.c)(t)
+							editorState: Object(N.c)(t)
 						});
 						e && e(R.i.MARKDOWN, n), this.state.confirmModalOpen && this.toggleConfirmModal()
 					}, this.onToolbarMarkdownSwitchClick = () => {
@@ -6487,7 +6497,7 @@
 						this.insertMediaFiles({
 							files: t,
 							blockKey: n,
-							insertionMode: N.a.after,
+							insertionMode: D.a.after,
 							filesSource: k.FileSource.FileSelector
 						})
 					}, this.onFilesDrop = (t, e, n) => {
@@ -6500,7 +6510,7 @@
 					}, this.onBlockMove = (t, e, n) => {
 						const {
 							editorState: o
-						} = this.state, r = Object(D.o)(o, t, e, n);
+						} = this.state, r = Object(N.o)(o, t, e, n);
 						r && this.onChange(r)
 					}, this.getAtomicBlocksRenderConfig = () => ({
 						component: on,
@@ -6661,7 +6671,7 @@
 					const {
 						isChatPost: t
 					} = this.props, e = this.getLinkForAutocomplete();
-					return e ? p.a.createElement(Dn.b, {
+					return e ? p.a.createElement(Nn.b, {
 						aboveParent: t,
 						dropdown: !0,
 						onSetPositionUpdater: this.setSuggestionDropdownPositionUpdater
@@ -6706,7 +6716,7 @@
 						mediaToInsert: B,
 						confirmModalOpen: _,
 						isUserTyping: K
-					} = this.state, M = this.props.readOnly || !!B, L = I(w), D = this.isEmpty(), N = T({
+					} = this.state, M = this.props.readOnly || !!B, L = I(w), N = this.isEmpty(), D = T({
 						allowMediaUploads: n,
 						destSubreddit: i,
 						editorKey: j,
@@ -6741,7 +6751,7 @@
 						noBorder: this.props.noBorder,
 						isFocused: this.isFocused(),
 						ref: this.setFocusableContentRef
-					}, F && "top" === x && N, R && p.a.createElement(bo, {
+					}, F && "top" === x && D, R && p.a.createElement(bo, {
 						editorState: w,
 						readOnly: M,
 						onChange: this.onChange,
@@ -6799,7 +6809,7 @@
 						spellCheck: !0,
 						handleReturn: this.handleReturn,
 						customStyleMap: Ts()
-					})))), F && "bottom" === x && N, p.a.createElement(hs, {
+					})))), F && "bottom" === x && D, p.a.createElement(hs, {
 						editorState: w,
 						entityElementRegistry: this.entityElementRegistry,
 						onSetApi: this.setLinksControllerApi,
@@ -6821,10 +6831,10 @@
 							hk: "12XoZ8"
 						}),
 						className: Object(b.a)(k, ac.a.insetSubmitButton, {
-							[ac.a.emptyContent]: D,
+							[ac.a.emptyContent]: N,
 							[ac.a.focusedContent]: this.isFocused()
 						}),
-						disabled: D,
+						disabled: N,
 						onClick: y,
 						tabIndex: -1,
 						type: "submit"
@@ -8011,4 +8021,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor.282e9637687472562a48.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor.ddbf6ad1fef6be432c4b.js.map
