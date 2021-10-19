@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~PostCreation.d3dfd04d0efbe3cd2b11.js
-// Retrieved at 10/19/2021, 1:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~PostCreation.c6c17f02e38c2582d4ac.js
+// Retrieved at 10/19/2021, 3:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~PostCreation"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -1052,6 +1052,18 @@
 				var t = ++r;
 				return o(e) + t
 			}
+		},
+		"./node_modules/lodash/xorWith.js": function(e, t, n) {
+			var o = n("./node_modules/lodash/_arrayFilter.js"),
+				r = n("./node_modules/lodash/_baseRest.js"),
+				i = n("./node_modules/lodash/_baseXor.js"),
+				s = n("./node_modules/lodash/isArrayLikeObject.js"),
+				a = n("./node_modules/lodash/last.js"),
+				u = r((function(e) {
+					var t = a(e);
+					return t = "function" == typeof t ? t : void 0, i(o(e, s), void 0, t)
+				}));
+			e.exports = u
 		},
 		"./node_modules/react-autosize-textarea/lib/TextareaAutosize.js": function(e, t, n) {
 			"use strict";
@@ -2323,11 +2335,11 @@
 					})), d
 				}
 			}
-			var N = {
+			var W = {
 				passive: !0
 			};
 
-			function W(e) {
+			function N(e) {
 				return e.split("-")[0]
 			}
 
@@ -2343,7 +2355,7 @@
 				var t, n = e.reference,
 					o = e.element,
 					r = e.placement,
-					i = r ? W(r) : null,
+					i = r ? N(r) : null,
 					s = r ? q(r) : null,
 					a = n.x + n.width / 2 - o.width / 2,
 					u = n.y + n.height / 2 - o.height / 2;
@@ -2431,16 +2443,16 @@
 				}, l && U);
 				return u ? Object.assign(Object.assign({}, E), {}, ((O = {})[y] = h ? "0" : "", O[_] = m ? "0" : "", O.transform = (v.devicePixelRatio || 1) < 2 ? "translate(" + f + "px, " + p + "px)" : "translate3d(" + f + "px, " + p + "px, 0)", O)) : Object.assign(Object.assign({}, E), {}, ((t = {})[y] = h ? p + "px" : "", t[_] = m ? f + "px" : "", t.transform = "", t))
 			}
-			var $ = {
+			var X = {
 				left: "right",
 				right: "left",
 				bottom: "top",
 				top: "bottom"
 			};
 
-			function X(e) {
+			function $(e) {
 				return e.replace(/left|right|bottom|top/g, (function(e) {
-					return $[e]
+					return X[e]
 				}))
 			}
 			var Y = {
@@ -2629,12 +2641,12 @@
 								l = i(t.elements.popper),
 								c = [].concat(t.scrollParents.reference, t.scrollParents.popper);
 							return s && c.forEach((function(e) {
-									e.addEventListener("scroll", n.update, N)
-								})), u && l.addEventListener("resize", n.update, N),
+									e.addEventListener("scroll", n.update, W)
+								})), u && l.addEventListener("resize", n.update, W),
 								function() {
 									s && c.forEach((function(e) {
-										e.removeEventListener("scroll", n.update, N)
-									})), u && l.removeEventListener("resize", n.update, N)
+										e.removeEventListener("scroll", n.update, W)
+									})), u && l.removeEventListener("resize", n.update, W)
 								}
 						},
 						data: {}
@@ -2665,7 +2677,7 @@
 								i = n.adaptive,
 								s = void 0 === i || i,
 								a = {
-									placement: W(t.placement),
+									placement: N(t.placement),
 									popper: t.elements.popper,
 									popperRect: t.rects.popper,
 									gpuAcceleration: r
@@ -2741,7 +2753,7 @@
 								i = void 0 === r ? [0, 0] : r,
 								s = C.reduce((function(e, n) {
 									return e[n] = function(e, t, n) {
-										var o = W(e),
+										var o = N(e),
 											r = [k, w].indexOf(o) >= 0 ? -1 : 1,
 											i = "function" == typeof n ? n(Object.assign(Object.assign({}, t), {}, {
 												placement: e
@@ -2771,12 +2783,12 @@
 								n = e.options,
 								o = e.name;
 							if (!t.modifiersData[o]._skip) {
-								for (var r = n.mainAxis, i = void 0 === r || r, s = n.altAxis, a = void 0 === s || s, u = n.fallbackPlacements, l = n.padding, c = n.boundary, d = n.rootBoundary, f = n.altBoundary, p = n.flipVariations, m = void 0 === p || p, h = n.allowedAutoPlacements, _ = t.options.placement, y = W(_), v = u || (y === _ || !m ? [X(_)] : function(e) {
-										if (W(e) === O) return [];
-										var t = X(e);
+								for (var r = n.mainAxis, i = void 0 === r || r, s = n.altAxis, a = void 0 === s || s, u = n.fallbackPlacements, l = n.padding, c = n.boundary, d = n.rootBoundary, f = n.altBoundary, p = n.flipVariations, m = void 0 === p || p, h = n.allowedAutoPlacements, _ = t.options.placement, y = N(_), v = u || (y === _ || !m ? [$(_)] : function(e) {
+										if (N(e) === O) return [];
+										var t = $(e);
 										return [K(e), t, K(t)]
 									}(_)), g = [_].concat(v).reduce((function(e, n) {
-										return e.concat(W(n) === O ? function(e, t) {
+										return e.concat(N(n) === O ? function(e, t) {
 											void 0 === t && (t = {});
 											var n = t,
 												o = n.placement,
@@ -2797,7 +2809,7 @@
 														boundary: r,
 														rootBoundary: i,
 														padding: s
-													})[W(n)], t
+													})[N(n)], t
 												}), {});
 											return Object.keys(d).sort((function(e, t) {
 												return d[e] - d[t]
@@ -2812,11 +2824,11 @@
 										}) : n)
 									}), []), b = t.rects.reference, F = t.rects.popper, S = new Map, z = !0, T = g[0], A = 0; A < g.length; A++) {
 									var P = g[A],
-										R = W(P),
+										R = N(P),
 										M = q(P) === D,
 										B = [w, x].indexOf(R) >= 0,
 										L = B ? "width" : "height",
-										N = oe(t, {
+										W = oe(t, {
 											placement: P,
 											boundary: c,
 											rootBoundary: d,
@@ -2824,10 +2836,10 @@
 											padding: l
 										}),
 										V = B ? M ? j : k : M ? x : w;
-									b[L] > F[L] && (V = X(V));
-									var H = X(V),
+									b[L] > F[L] && (V = $(V));
+									var H = $(V),
 										U = [];
-									if (i && U.push(N[R] <= 0), a && U.push(N[V] <= 0, N[H] <= 0), U.every((function(e) {
+									if (i && U.push(W[R] <= 0), a && U.push(W[V] <= 0, W[H] <= 0), U.every((function(e) {
 											return e
 										}))) {
 										T = P, z = !1;
@@ -2844,8 +2856,8 @@
 												}))
 											}));
 											if (t) return T = t, "break"
-										}, $ = m ? 3 : 1; $ > 0; $--) {
-										if ("break" === Z($)) break
+										}, X = m ? 3 : 1; X > 0; X--) {
+										if ("break" === Z(X)) break
 									}
 								t.placement !== T && (t.modifiersData[o]._skip = !0, t.placement = T, t.reset = !0)
 							}
@@ -2880,7 +2892,7 @@
 									padding: d,
 									altBoundary: c
 								}),
-								v = W(t.placement),
+								v = N(t.placement),
 								g = q(t.placement),
 								O = !g,
 								E = V(v),
@@ -2903,25 +2915,25 @@
 										M = S[E],
 										B = S[E] + y[C],
 										L = S[E] - y[P],
-										N = p ? -T[R] / 2 : 0,
+										W = p ? -T[R] / 2 : 0,
 										H = g === D ? z[R] : T[R],
 										U = g === D ? -T[R] : -z[R],
 										Z = t.elements.arrow,
-										$ = p && Z ? h(Z) : {
+										X = p && Z ? h(Z) : {
 											width: 0,
 											height: 0
 										},
-										X = t.modifiersData["arrow#persistent"] ? t.modifiersData["arrow#persistent"].padding : {
+										$ = t.modifiersData["arrow#persistent"] ? t.modifiersData["arrow#persistent"].padding : {
 											top: 0,
 											right: 0,
 											bottom: 0,
 											left: 0
 										},
-										Y = X[C],
-										K = X[P],
-										G = re(0, z[R], $[R]),
-										J = O ? z[R] / 2 - N - G - Y - A : H - G - Y - A,
-										Q = O ? -z[R] / 2 + N + G + K + A : U + G + K + A,
+										Y = $[C],
+										K = $[P],
+										G = re(0, z[R], X[R]),
+										J = O ? z[R] / 2 - W - G - Y - A : H - G - Y - A,
+										Q = O ? -z[R] / 2 + W + G + K + A : U + G + K + A,
 										ee = t.elements.arrow && b(t.elements.arrow),
 										te = ee ? "y" === E ? ee.clientTop || 0 : ee.clientLeft || 0 : 0,
 										ne = t.modifiersData.offset ? t.modifiersData.offset[t.placement][E] : 0,
@@ -2950,7 +2962,7 @@
 								o = e.name,
 								r = n.elements.arrow,
 								i = n.modifiersData.popperOffsets,
-								s = W(n.placement),
+								s = N(n.placement),
 								a = V(s),
 								u = [k, j].indexOf(s) >= 0 ? "height" : "width";
 							if (r && i) {
@@ -3200,4 +3212,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~PostCreation.d3dfd04d0efbe3cd2b11.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~PostCreation.c6c17f02e38c2582d4ac.js.map

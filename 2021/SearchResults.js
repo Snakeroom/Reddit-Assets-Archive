@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.7809ffe778cd51e36325.js
-// Retrieved at 10/19/2021, 2:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.db316aa1a78997a2adb0.js
+// Retrieved at 10/19/2021, 3:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -743,6 +743,59 @@
 					}
 					if ("server" === a) return e(g({
 						lastLoadedEnv: "client"
+					}))
+				}
+		},
+		"./src/reddit/actions/pages/search/searchResultsRequested.ts": function(e, t, s) {
+			"use strict";
+			s.r(t), s.d(t, "searchResultsRequested", (function() {
+				return b
+			}));
+			s("./node_modules/core-js/modules/web.dom.iterable.js");
+			var r = s("./node_modules/fbt/lib/FbtPublic.js"),
+				n = s("./node_modules/lodash/pick.js"),
+				i = s.n(n),
+				o = s("./src/lib/constants/index.ts"),
+				a = s("./src/lib/makeSearchKey/index.ts"),
+				c = s("./src/lib/pageTitle.ts"),
+				d = s("./src/reddit/actions/pages/search/index.ts"),
+				l = s("./src/reddit/actions/platform.ts"),
+				m = s("./src/reddit/constants/parameters.ts"),
+				u = s("./src/reddit/helpers/isArrayEqual.ts"),
+				p = s("./src/reddit/selectors/experiments/serpRedesignLayout.ts");
+			const h = e => r.fbt._("reddit.com: search results - {query}", [r.fbt._param("query", e || "None")], {
+					hk: "1XOKAg"
+				}),
+				b = e => async (t, s) => {
+					const r = s(),
+						n = Object(p.c)(r),
+						b = Object(p.d)(r),
+						C = Object(a.e)(i()(e.queryParams, m.t), b),
+						x = {
+							...C,
+							type: Object(p.f)(r, C.type)
+						},
+						f = e.params.subredditName || e.params.multiredditName,
+						{
+							username: g
+						} = e.params,
+						y = Object(a.b)(f, g, x);
+					if (n && !Object(u.a)(x.type, [o.Yb.Subreddits, o.Yb.Users])) {
+						const e = {
+								...x,
+								type: [o.Yb.Subreddits, o.Yb.Users]
+							},
+							s = Object(a.b)(f, g, e);
+						await Promise.all([t(Object(d.d)(y, x, f, g)), b ? Promise.resolve() : t(Object(d.d)(s, e, f, g))])
+					} else await t(Object(d.d)(y, x, f, g));
+					let v = !1;
+					const {
+						type: O = []
+					} = x, E = O.indexOf(o.Yb.Posts) > -1, j = O.indexOf(o.Yb.Subreddits) > -1 || O.indexOf(o.Yb.Users) > -1;
+					E && r.listings.postOrder.api.error[y] && (v = !0), j && r.listings.listingOrder.api.error[y] && (v = !0), t(v ? l.l({
+						title: Object(c.d)()
+					}) : l.l({
+						title: h(x.q)
 					}))
 				}
 		},
@@ -11509,7 +11562,7 @@
 				}, [z, J]);
 				const Q = t.params.subredditName || t.params.multiredditName || "",
 					X = t.params.username,
-					$ = Object(l.e)(i()(z || {}, y.t)),
+					$ = Object(l.e)(i()(z || {}, y.t), K),
 					ee = W && $.restrict_sr,
 					te = Object(E.a)(K, $.type, ee),
 					se = {
@@ -12060,4 +12113,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.7809ffe778cd51e36325.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.db316aa1a78997a2adb0.js.map

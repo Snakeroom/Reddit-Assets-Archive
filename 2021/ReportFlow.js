@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlow.8c5b6dc06d6e3612f88c.js
-// Retrieved at 10/19/2021, 1:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlow.aeb30dba6cf8768de6ea.js
+// Retrieved at 10/19/2021, 3:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlow", "FrontpageSidebar", "ReportFlowNew"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, o) {
@@ -337,6 +337,18 @@
 				return n(e, (function(e, n, s) {
 					t(r, o(e), n, s)
 				})), r
+			}
+		},
+		"./node_modules/lodash/_baseXor.js": function(e, t, o) {
+			var n = o("./node_modules/lodash/_baseDifference.js"),
+				r = o("./node_modules/lodash/_baseFlatten.js"),
+				s = o("./node_modules/lodash/_baseUniq.js");
+			e.exports = function(e, t, o) {
+				var i = e.length;
+				if (i < 2) return i ? s(e[0]) : [];
+				for (var a = -1, l = Array(i); ++a < i;)
+					for (var c = e[a], d = -1; ++d < i;) d != a && (l[a] = n(l[a] || c, e[d], t, o));
+				return s(r(l, 1), t, o)
 			}
 		},
 		"./node_modules/lodash/_createInverter.js": function(e, t, o) {
@@ -6038,4 +6050,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.8c5b6dc06d6e3612f88c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.aeb30dba6cf8768de6ea.js.map

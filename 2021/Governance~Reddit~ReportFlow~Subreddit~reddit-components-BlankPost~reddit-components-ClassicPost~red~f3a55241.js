@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241.3136f4080cd724e367ac.js
-// Retrieved at 10/19/2021, 1:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241.10af42730ab33302bfe3.js
+// Retrieved at 10/19/2021, 3:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241"], {
 		"./src/reddit/actions/downToChat.ts": function(e, t, r) {
@@ -1096,7 +1096,7 @@
 				T = r("./src/reddit/actions/externalAccount.ts"),
 				E = r("./src/reddit/actions/gold/powerups.ts"),
 				x = r("./src/reddit/actions/meta.ts"),
-				v = r("./src/reddit/actions/pages/search.ts"),
+				v = r("./src/reddit/actions/pages/search/index.ts"),
 				w = r("./src/reddit/actions/platform.ts"),
 				D = r("./src/reddit/actions/publicAccessNetwork/api.ts"),
 				C = r("./src/reddit/actions/seo/linksModule.ts"),
@@ -1557,7 +1557,7 @@
 						page: B
 					});
 				if (y) {
-					const e = Object(g.i)(() => r(Object(v.searchDataRequested)(E, y, b)), {
+					const e = Object(g.i)(() => r(Object(v.d)(E, y, b)), {
 						name: "searchDataRequested",
 						isLoggedIn: F,
 						page: B
@@ -5780,4 +5780,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241.3136f4080cd724e367ac.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241.10af42730ab33302bfe3.js.map

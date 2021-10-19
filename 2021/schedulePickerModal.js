@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/schedulePickerModal.038b93075f0ad10f7c81.js
-// Retrieved at 10/13/2021, 6:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/schedulePickerModal.aa865922b4624ea25a07.js
+// Retrieved at 10/19/2021, 3:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["schedulePickerModal"], {
 		"./node_modules/lodash/_baseClamp.js": function(e, t) {
@@ -35,6 +35,18 @@
 		"./node_modules/lodash/range.js": function(e, t, n) {
 			var a = n("./node_modules/lodash/_createRange.js")();
 			e.exports = a
+		},
+		"./node_modules/lodash/xorWith.js": function(e, t, n) {
+			var a = n("./node_modules/lodash/_arrayFilter.js"),
+				s = n("./node_modules/lodash/_baseRest.js"),
+				o = n("./node_modules/lodash/_baseXor.js"),
+				i = n("./node_modules/lodash/isArrayLikeObject.js"),
+				r = n("./node_modules/lodash/last.js"),
+				l = s((function(e) {
+					var t = r(e);
+					return t = "function" == typeof t ? t : void 0, o(a(e, i), void 0, t)
+				}));
+			e.exports = l
 		},
 		"./src/reddit/components/FocusableContent/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -107,7 +119,7 @@
 						day: a
 					}
 				};
-			class C extends i.a.PureComponent {
+			class _ extends i.a.PureComponent {
 				constructor() {
 					super(...arguments), this.onChange = e => {
 						const t = {
@@ -167,7 +179,7 @@
 					}, e))))
 				}
 			}
-			var _ = C,
+			var C = _,
 				y = n("./src/reddit/components/PostCreationForm/SchedulePickerModal/DateInput/index.m.less"),
 				g = n.n(y);
 
@@ -191,7 +203,7 @@
 					type: "date"
 				}, e, {
 					onChange: t => e.onChange(t.target.value)
-				})) : i.a.createElement(_, e)
+				})) : i.a.createElement(C, e)
 			}
 		},
 		"./src/reddit/components/PostCreationForm/SchedulePickerModal/TimeInput/FallbackTimeInput/index.m.less": function(e, t, n) {
@@ -233,7 +245,7 @@
 					const n = +e.slice(-2);
 					if (Number.isInteger(n)) return n > t ? 0 : n
 				};
-			class C extends i.a.PureComponent {
+			class _ extends i.a.PureComponent {
 				constructor(e) {
 					super(e), this.callOnChange = () => {
 						let e = l()(+this.state.hour, 0, 24);
@@ -298,7 +310,7 @@
 					}))
 				}
 			}
-			var _ = C,
+			var C = _,
 				y = n("./src/reddit/components/PostCreationForm/SchedulePickerModal/TimeInput/index.m.less"),
 				g = n.n(y);
 
@@ -322,7 +334,7 @@
 					type: "time"
 				}, e, {
 					onChange: t => e.onChange(t.target.value)
-				})) : i.a.createElement(_, e)
+				})) : i.a.createElement(C, e)
 			}
 		},
 		"./src/reddit/components/PostCreationForm/SchedulePickerModal/TimezoneSelector/index.m.less": function(e, t, n) {
@@ -443,8 +455,8 @@
 				b = n("./src/reddit/controls/RadioInput/RadioOption/index.tsx"),
 				f = n("./src/reddit/helpers/scheduledPosts/index.ts"),
 				v = n("./src/reddit/helpers/trackers/postEvent.ts"),
-				C = n("./src/reddit/icons/svgs/Clear/index.tsx"),
-				_ = n("./src/reddit/layout/row/Inline/index.tsx"),
+				_ = n("./src/reddit/icons/svgs/Clear/index.tsx"),
+				C = n("./src/reddit/layout/row/Inline/index.tsx"),
 				y = n("./src/reddit/models/PostCreationForm/index.ts"),
 				g = n("./src/reddit/components/PostCreationForm/SchedulePickerModal/DateInput/index.tsx"),
 				E = n("./src/reddit/components/PostCreationForm/SchedulePickerModal/TimeInput/index.tsx"),
@@ -465,8 +477,8 @@
 				},
 				O = l.a.div("Container", k.a),
 				M = l.a.div("Content", k.a),
-				w = l.a.div("TitleRow", k.a),
-				j = l.a.hr("Hr", k.a),
+				j = l.a.div("TitleRow", k.a),
+				w = l.a.hr("Hr", k.a),
 				F = l.a.wrapped(E.a, "TimeInput", k.a),
 				I = l.a.div("TimeSelectionRow", k.a),
 				z = l.a.div("RadioOptionContent", k.a),
@@ -478,8 +490,8 @@
 				B = l.a.wrapped(h.n, "CancelButton", k.a),
 				K = l.a.wrapped(h.n, "DeleteButton", k.a),
 				V = l.a.div("ErrorMessage", k.a),
-				H = l.a.wrapped(C.a, "ClearIcon", k.a);
-			class U extends o.a.PureComponent {
+				H = l.a.wrapped(_.a, "ClearIcon", k.a);
+			class q extends o.a.PureComponent {
 				constructor(e) {
 					super(e), this.currentTimezone = Object(c.b)(), this.maxDate = Object(d.a)(), this.buildEventSchedule = () => ({
 						startDate: Object(f.a)(this.state.startDate, this.state.startTime),
@@ -595,7 +607,7 @@
 					const {
 						shouldShowSubmitTime: e
 					} = this.props, t = this.getValidationError();
-					return o.a.createElement(O, null, o.a.createElement(M, null, o.a.createElement(w, null, a.fbt._("When is the event?", null, {
+					return o.a.createElement(O, null, o.a.createElement(M, null, o.a.createElement(j, null, a.fbt._("When is the event?", null, {
 						hk: "2fTD7f"
 					})), o.a.createElement(I, null, a.fbt._("{start time}{to}{end time}", [a.fbt._param("start time", o.a.createElement("fieldset", null, o.a.createElement("legend", null, a.fbt._("Start time", null, {
 						hk: "3nqplI"
@@ -628,9 +640,9 @@
 					}), o.a.createElement(D.a, {
 						selectedTimezoneName: this.state.timezoneName,
 						onChange: this.onTimezoneChange
-					}))), e && o.a.createElement(o.a.Fragment, null, o.a.createElement(j, null), o.a.createElement("fieldset", null, o.a.createElement("legend", null, a.fbt._("When do you want to submit this post?", null, {
+					}))), e && o.a.createElement(o.a.Fragment, null, o.a.createElement(w, null), o.a.createElement("fieldset", null, o.a.createElement("legend", null, a.fbt._("When do you want to submit this post?", null, {
 						hk: "3kBgxg"
-					})), this.renderSubmitTimeRadio()))), o.a.createElement(L, null, o.a.createElement(_.a, null, this.props.schedule && this.props.shouldShowDeleteButton && o.a.createElement(K, {
+					})), this.renderSubmitTimeRadio()))), o.a.createElement(L, null, o.a.createElement(C.a, null, this.props.schedule && this.props.shouldShowDeleteButton && o.a.createElement(K, {
 						onClick: this.onDeleteButtonClick
 					}, o.a.createElement(H, null), a.fbt._("Clear", null, {
 						hk: "npkgK"
@@ -646,7 +658,7 @@
 					}))), t && o.a.createElement(V, null, t)))
 				}
 			}
-			t.default = Object(i.a)(Object(m.c)(U))
+			t.default = Object(i.a)(Object(m.c)(q))
 		},
 		"./src/reddit/components/PostCreationForm/SchedulePickerModal/utils.ts": function(e, t, n) {
 			"use strict";
@@ -660,6 +672,17 @@
 				e.setFullYear(e.getFullYear() + 1);
 				const [t] = Object(s.i)(Object(a.g)(e));
 				return t
+			}
+		},
+		"./src/reddit/helpers/isArrayEqual.ts": function(e, t, n) {
+			"use strict";
+			var a = n("./node_modules/lodash/isEqual.js"),
+				s = n.n(a),
+				o = n("./node_modules/lodash/xorWith.js"),
+				i = n.n(o);
+			t.a = (e, t) => {
+				const n = i()(e, t, s.a);
+				return !(!n || 0 !== n.length)
 			}
 		},
 		"./src/reddit/helpers/ordinal/index.ts": function(e, t, n) {
@@ -679,9 +702,9 @@
 			})), n.d(t, "i", (function() {
 				return v
 			})), n.d(t, "c", (function() {
-				return C
-			})), n.d(t, "d", (function() {
 				return _
+			})), n.d(t, "d", (function() {
+				return C
 			})), n.d(t, "f", (function() {
 				return y
 			})), n.d(t, "e", (function() {
@@ -785,7 +808,7 @@
 					const [t, n] = e.split("T");
 					return [t, b(n)]
 				},
-				C = e => {
+				_ = e => {
 					const [t, n] = v(e);
 					if (t && n) {
 						const e = Object(c.f)(f(t, n));
@@ -793,7 +816,7 @@
 					}
 					return ""
 				},
-				_ = e => {
+				C = e => {
 					const t = Object(c.d)(e);
 					let n, a = e;
 					if (t) {
@@ -913,4 +936,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/schedulePickerModal.038b93075f0ad10f7c81.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/schedulePickerModal.aa865922b4624ea25a07.js.map

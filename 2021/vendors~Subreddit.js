@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~Subreddit.59f0372d9bf383e006bb.js
-// Retrieved at 10/5/2021, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~Subreddit.65668ea5c8d76b43ecf4.js
+// Retrieved at 10/19/2021, 3:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~Subreddit"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, r) {
@@ -1205,6 +1205,18 @@
 			e.exports = function(e, t) {
 				var r = i(e);
 				return n(r, o(t, 0, r.length))
+			}
+		},
+		"./node_modules/lodash/_baseXor.js": function(e, t, r) {
+			var o = r("./node_modules/lodash/_baseDifference.js"),
+				n = r("./node_modules/lodash/_baseFlatten.js"),
+				i = r("./node_modules/lodash/_baseUniq.js");
+			e.exports = function(e, t, r) {
+				var s = e.length;
+				if (s < 2) return s ? i(e[0]) : [];
+				for (var a = -1, l = Array(s); ++a < s;)
+					for (var u = e[a], c = -1; ++c < s;) c != a && (l[a] = o(l[a] || u, e[c], t, r));
+				return i(n(l, 1), t, r)
 			}
 		},
 		"./node_modules/lodash/_createInverter.js": function(e, t, r) {
@@ -2420,11 +2432,11 @@
 				return e.split("-")[1]
 			}
 
-			function W(e) {
+			function U(e) {
 				return ["top", "bottom"].indexOf(e) >= 0 ? "x" : "y"
 			}
 
-			function U(e) {
+			function W(e) {
 				var t, r = e.reference,
 					o = e.element,
 					n = e.placement,
@@ -2463,7 +2475,7 @@
 							y: r.y
 						}
 				}
-				var u = i ? W(i) : null;
+				var u = i ? U(i) : null;
 				if (null != u) {
 					var c = "y" === u ? "height" : "width";
 					switch (s) {
@@ -2650,7 +2662,7 @@
 					O = e.elements[h ? v : p],
 					S = ee(a(O) ? O : O.contextElement || c(e.elements.popper), l, d),
 					E = n(g),
-					z = U({
+					z = W({
 						reference: E,
 						element: k,
 						strategy: "absolute",
@@ -2730,7 +2742,7 @@
 						fn: function(e) {
 							var t = e.state,
 								r = e.name;
-							t.modifiersData[r] = U({
+							t.modifiersData[r] = W({
 								reference: t.rects.reference,
 								element: t.rects.popper,
 								strategy: "absolute",
@@ -2908,11 +2920,11 @@
 											altBoundary: f,
 											padding: u
 										}),
-										W = L ? R ? j : k : R ? x : w;
-									g[B] > E[B] && (W = X(W));
-									var U = X(W),
+										U = L ? R ? j : k : R ? x : w;
+									g[B] > E[B] && (U = X(U));
+									var W = X(U),
 										Z = [];
-									if (i && Z.push(N[M] <= 0), a && Z.push(N[W] <= 0, N[U] <= 0), Z.every((function(e) {
+									if (i && Z.push(N[M] <= 0), a && Z.push(N[U] <= 0, N[W] <= 0), Z.every((function(e) {
 											return e
 										}))) {
 										T = P, I = !1;
@@ -2968,7 +2980,7 @@
 								y = q(t.placement),
 								v = V(t.placement),
 								O = !v,
-								D = W(y),
+								D = U(y),
 								E = "x" === D ? "y" : "x",
 								F = t.modifiersData.popperOffsets,
 								I = t.rects.reference,
@@ -2989,7 +3001,7 @@
 										L = F[D] + b[C],
 										B = F[D] - b[P],
 										N = p ? -T[M] / 2 : 0,
-										U = v === S ? I[M] : T[M],
+										W = v === S ? I[M] : T[M],
 										Z = v === S ? -T[M] : -I[M],
 										H = t.elements.arrow,
 										$ = p && H ? h(H) : {
@@ -3005,7 +3017,7 @@
 										G = X[C],
 										K = X[P],
 										Y = ne(0, I[M], $[M]),
-										J = O ? I[M] / 2 - N - Y - G - A : U - Y - G - A,
+										J = O ? I[M] / 2 - N - Y - G - A : W - Y - G - A,
 										Q = O ? -I[M] / 2 + N + Y + K + A : Z + Y + K + A,
 										ee = t.elements.arrow && g(t.elements.arrow),
 										te = ee ? "y" === D ? ee.clientTop || 0 : ee.clientLeft || 0 : 0,
@@ -3036,7 +3048,7 @@
 								n = r.elements.arrow,
 								i = r.modifiersData.popperOffsets,
 								s = q(r.placement),
-								a = W(s),
+								a = U(s),
 								l = [k, j].indexOf(s) >= 0 ? "height" : "width";
 							if (n && i) {
 								var u = r.modifiersData[o + "#persistent"].padding,
@@ -3318,4 +3330,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Subreddit.59f0372d9bf383e006bb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Subreddit.65668ea5c8d76b43ecf4.js.map
