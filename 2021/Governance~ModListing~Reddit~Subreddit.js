@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.866d3668083ed8a04749.js
-// Retrieved at 10/19/2021, 4:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.1f370dc51cce9529186f.js
+// Retrieved at 10/19/2021, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~Subreddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, r) {
@@ -1949,37 +1949,36 @@
 				j = Object(c.b)(y);
 			t.a = j(e => {
 				const {
-					authorId: t,
-					collapsed: r,
-					currentUser: c,
-					iconUrl: a,
-					isCommentAuthorBlocked: b,
-					isHighlighted: h,
-					isNft: y,
-					isNSFW: j,
-					isOnlineStatusLoadTest: w,
-					omitResponsivePresenceWrapper: k,
-					onPresenceIndicatorInViewport: S,
-					shouldShowPresenceIndicator: E,
-					user: x,
-					userName: T,
-					...C
-				} = e, P = !!c && Object(f.e)(c) === T, D = P ? c : x, N = D && D.accountIcon || a, L = x ? x.isNSFW : j, R = Object(d.a)(N) && !b, A = R ? i.a.createElement(_.a, {
-					headshot: N,
+					collapsed: t,
+					currentUser: r,
+					iconUrl: c,
+					isCommentAuthorBlocked: a,
+					isHighlighted: b,
+					isNft: h,
+					isNSFW: y,
+					isOnlineStatusLoadTest: j,
+					omitResponsivePresenceWrapper: w,
+					onPresenceIndicatorInViewport: k,
+					shouldShowPresenceIndicator: S,
+					user: E,
+					userName: x,
+					...T
+				} = e, C = !!r && Object(f.e)(r) === x, P = C ? r : E, D = P && P.accountIcon || c, N = E ? E.isNSFW : y, L = Object(d.a)(D) && !a, R = L ? i.a.createElement(_.a, {
+					headshot: D,
 					className: e.className
-				}) : i.a.createElement(m.b, I({}, C, {
-					iconUrl: b && r ? "https://www.redditstatic.com/avatars/defaults/avatar_default_3.png" : N,
-					isCurrentUser: P,
-					isNSFW: L
-				})), [U, B] = Object(o.useState)(!1), H = Object(o.useMemo)(() => ({
+				}) : i.a.createElement(m.b, I({}, T, {
+					iconUrl: a && t ? "https://www.redditstatic.com/avatars/defaults/avatar_default_3.png" : D,
+					isCurrentUser: C,
+					isNSFW: N
+				})), A = null == E ? void 0 : E.id, [U, B] = Object(o.useState)(!1), H = Object(o.useMemo)(() => ({
 					input: {
 						channel: {
 							teamOwner: "CONTENT_AND_COMMUNITIES",
 							category: "ONLINE_STATUS_INDICATOR",
-							userID: t
+							userID: A
 						}
 					}
-				}), [t]), M = Object(o.useCallback)(e => {
+				}), [A]), M = Object(o.useCallback)(e => {
 					const {
 						isOnline: t
 					} = e.subscribe.data;
@@ -1995,23 +1994,23 @@
 				}, []), z = Object(o.useRef)({
 					rootMargin: "750px 0px 1000px 0px"
 				});
-				return Object(u.a)(F, q, z.current), k ? A : i.a.createElement("div", {
+				return Object(u.a)(F, q, z.current), w ? R : i.a.createElement("div", {
 					className: Object(n.a)(O.a.userIconWrapper, {
-						[O.a.nftUserIcon]: y,
-						[O.a.hasHeadShotWrapper]: R
+						[O.a.nftUserIcon]: h,
+						[O.a.hasHeadShotWrapper]: L
 					}),
 					ref: F
-				}, y && i.a.createElement(g.a, {
+				}, h && i.a.createElement(g.a, {
 					className: O.a.nftAnimation,
 					assetUrl: `${s.a.assetPath}/img/snoovatars/nft_comment_animation.json`,
 					loop: !0
-				}), A, E && U && i.a.createElement(p.default, {
+				}), R, S && U && i.a.createElement(p.default, {
 					showPresence: !0,
-					isHighlighted: h,
-					onceInViewport: S
-				}), (E || w) && G && i.a.createElement(l.a, {
+					isHighlighted: b,
+					onceInViewport: k
+				}), (S || j) && G && i.a.createElement(l.a, {
 					variables: H,
-					onData: E ? M : v,
+					onData: S ? M : v,
 					queryKey: "isUserOnline"
 				}))
 			})
@@ -4888,4 +4887,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.866d3668083ed8a04749.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.1f370dc51cce9529186f.js.map

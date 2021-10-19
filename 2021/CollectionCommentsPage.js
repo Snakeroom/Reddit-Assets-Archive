@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.78200e5daa0a0396944c.js
-// Retrieved at 10/19/2021, 4:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.146daabe7c05b2e63f50.js
+// Retrieved at 10/19/2021, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -3124,7 +3124,7 @@
 						}
 					}, [v, Z, g, C, x]);
 					const ge = Object(i.useContext)(Mt),
-						Ce = !Z && !Object(ae.f)(o) && (!X || X && ce) && !Object(ae.g)(o) && k,
+						Ce = !Z && !Object(ae.f)(o) && (!X || X && ce) && !Object(ae.g)(o),
 						xe = Object(i.useCallback)(() => {
 							Ce && I && !ce && Y && Y(o.id)
 						}, [o.id, Y, Ce, I, ce]),
@@ -3180,8 +3180,7 @@
 						onPresenceIndicatorInViewport: xe,
 						isCommentAuthorBlocked: Object(ae.g)(o),
 						collapsed: r,
-						isOnlineStatusLoadTest: Ce && J,
-						authorId: o.authorId
+						isOnlineStatusLoadTest: Ce && J
 					})) : a.a.createElement("div", {
 						className: Jt.a.UserIcon
 					}))), a.a.createElement(as, {
@@ -7925,4 +7924,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.78200e5daa0a0396944c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.146daabe7c05b2e63f50.js.map
