@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlow.3c6cca083f650fd01794.js
-// Retrieved at 10/18/2021, 7:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlow.8c5b6dc06d6e3612f88c.js
+// Retrieved at 10/19/2021, 1:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlow", "FrontpageSidebar", "ReportFlowNew"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, o) {
@@ -385,6 +385,39 @@
 					return s(n(e, i))
 				}));
 			e.exports = a
+		},
+		"./node_modules/uuid/index.js": function(e, t, o) {
+			var n = o("./node_modules/uuid/v1.js"),
+				r = o("./node_modules/uuid/v4.js"),
+				s = r;
+			s.v1 = n, s.v4 = r, e.exports = s
+		},
+		"./node_modules/uuid/v1.js": function(e, t, o) {
+			var n, r, s = o("./node_modules/uuid/lib/rng-browser.js"),
+				i = o("./node_modules/uuid/lib/bytesToUuid.js"),
+				a = 0,
+				l = 0;
+			e.exports = function(e, t, o) {
+				var c = t && o || 0,
+					d = t || [],
+					u = (e = e || {}).node || n,
+					p = void 0 !== e.clockseq ? e.clockseq : r;
+				if (null == u || null == p) {
+					var m = s();
+					null == u && (u = n = [1 | m[0], m[1], m[2], m[3], m[4], m[5]]), null == p && (p = r = 16383 & (m[6] << 8 | m[7]))
+				}
+				var f = void 0 !== e.msecs ? e.msecs : (new Date).getTime(),
+					_ = void 0 !== e.nsecs ? e.nsecs : l + 1,
+					h = f - a + (_ - l) / 1e4;
+				if (h < 0 && void 0 === e.clockseq && (p = p + 1 & 16383), (h < 0 || f > a) && void 0 === e.nsecs && (_ = 0), _ >= 1e4) throw new Error("uuid.v1(): Can't create more than 10M uuids/sec");
+				a = f, l = _, r = p;
+				var b = (1e4 * (268435455 & (f += 122192928e5)) + _) % 4294967296;
+				d[c++] = b >>> 24 & 255, d[c++] = b >>> 16 & 255, d[c++] = b >>> 8 & 255, d[c++] = 255 & b;
+				var g = f / 4294967296 * 1e4 & 268435455;
+				d[c++] = g >>> 8 & 255, d[c++] = 255 & g, d[c++] = g >>> 24 & 15 | 16, d[c++] = g >>> 16 & 255, d[c++] = p >>> 8 | 128, d[c++] = 255 & p;
+				for (var w = 0; w < 6; ++w) d[c + w] = u[w];
+				return t || i(d)
+			}
 		},
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, o) {
 			e.exports = {
@@ -6005,4 +6038,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.3c6cca083f650fd01794.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.8c5b6dc06d6e3612f88c.js.map

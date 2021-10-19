@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-BlankPost.962f43b1f2dc7330e5ed.js
-// Retrieved at 10/5/2021, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-BlankPost.1b592675a40e0b6f31a5.js
+// Retrieved at 10/19/2021, 1:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-BlankPost"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, o, r) {
@@ -233,7 +233,7 @@
 				}].map(({
 					code: e
 				}) => e)),
-				a = {
+				s = {
 					af: ["af"],
 					ar: ["ar"],
 					be: ["be-BY"],
@@ -309,9 +309,9 @@
 					zh: ["zh"],
 					"zh-cn": ["zh-CN"]
 				},
-				s = Object.keys(a).reduce((e, o) => (n.has(o) && (e[o] = a[o]), e), {}),
-				l = Object.keys(s).reduce((e, o) => {
-					const r = s[o];
+				a = Object.keys(s).reduce((e, o) => (n.has(o) && (e[o] = s[o]), e), {}),
+				l = Object.keys(a).reduce((e, o) => {
+					const r = a[o];
 					return r && r.forEach(r => {
 						e[r] = o
 					}), e
@@ -334,12 +334,12 @@
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, o, r) {
 			"use strict";
 			r.d(o, "a", (function() {
-				return L
+				return x
 			}));
 			var t = r("./node_modules/react/index.js"),
 				n = r.n(t),
-				a = r("./node_modules/react-dom/index.js"),
-				s = (r("./node_modules/@researchgate/react-intersection-observer/node_modules/prop-types/index.js"), /^-?\d*\.?\d+(px|%)$/);
+				s = r("./node_modules/react-dom/index.js"),
+				a = (r("./node_modules/@researchgate/react-intersection-observer/node_modules/prop-types/index.js"), /^-?\d*\.?\d+(px|%)$/);
 
 			function l(e, o) {
 				return Array.isArray(e) && Array.isArray(o) && e.length === o.length ? e.some((function(r, t) {
@@ -352,18 +352,18 @@
 				void 0 === e && (e = {});
 				for (var o, r = e.root || null, t = function(e) {
 						var o = (e ? e.trim() : "0px").split(/\s+/).map((function(e) {
-								if (!s.test(e)) throw new Error("rootMargin must be a string literal containing pixels and/or percent values");
+								if (!a.test(e)) throw new Error("rootMargin must be a string literal containing pixels and/or percent values");
 								return e
 							})),
 							r = o[0],
 							t = void 0 === r ? "0px" : r,
 							n = o[1],
-							a = void 0 === n ? t : n,
+							s = void 0 === n ? t : n,
 							l = o[2],
 							d = void 0 === l ? t : l,
 							i = o[3];
-						return t + " " + a + " " + d + " " + (void 0 === i ? a : i)
-					}(e.rootMargin), n = Array.isArray(e.threshold) ? e.threshold : [null != e.threshold ? e.threshold : 0], a = d.keys(); o = a.next().value;) {
+						return t + " " + s + " " + d + " " + (void 0 === i ? s : i)
+					}(e.rootMargin), n = Array.isArray(e.threshold) ? e.threshold : [null != e.threshold ? e.threshold : 0], s = d.keys(); o = s.next().value;) {
 					if (!(r !== o.root || t !== o.rootMargin || l(n, o.thresholds))) return o
 				}
 				return null
@@ -405,12 +405,12 @@
 					}
 				});
 
-			function g(e) {
+			function m(e) {
 				if (void 0 === e) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
 				return e
 			}
 
-			function m(e, o, r) {
+			function g(e, o, r) {
 				return o in e ? Object.defineProperty(e, o, {
 					value: r,
 					enumerable: !0,
@@ -432,58 +432,58 @@
 						return o
 					}), {})
 				},
-				L = function(e) {
+				x = function(e) {
 					var o, r;
 
 					function t() {
 						for (var o, r = arguments.length, t = new Array(r), n = 0; n < r; n++) t[n] = arguments[n];
-						return m(g(o = e.call.apply(e, [this].concat(t)) || this), "handleChange", (function(e) {
+						return g(m(o = e.call.apply(e, [this].concat(t)) || this), "handleChange", (function(e) {
 							o.props.onChange(e, o.externalUnobserve)
-						})), m(g(o), "handleNode", (function(e) {
+						})), g(m(o), "handleNode", (function(e) {
 							var r = o.props.children;
 							if (null != r) {
 								var t = r.ref;
 								t && ("function" == typeof t ? t(e) : "object" == typeof t && (t.current = e))
 							}
-							o.targetNode = e && Object(a.findDOMNode)(e)
-						})), m(g(o), "observe", (function() {
-							return null != o.props.children && !o.props.disabled && (o.targetNode ? (o.observer = b(N(o.props)), o.target = o.targetNode, e = g(o), d.has(e.observer) || d.set(e.observer, new Set), d.get(e.observer).add(e), e.observer.observe(e.target), !0) : (v.errorReporter("ReactIntersectionObserver: Can't find DOM node in the provided children. Make sure to render at least one DOM node in the tree."), !1));
+							o.targetNode = e && Object(s.findDOMNode)(e)
+						})), g(m(o), "observe", (function() {
+							return null != o.props.children && !o.props.disabled && (o.targetNode ? (o.observer = b(N(o.props)), o.target = o.targetNode, e = m(o), d.has(e.observer) || d.set(e.observer, new Set), d.get(e.observer).add(e), e.observer.observe(e.target), !0) : (v.errorReporter("ReactIntersectionObserver: Can't find DOM node in the provided children. Make sure to render at least one DOM node in the tree."), !1));
 							var e
-						})), m(g(o), "unobserve", (function(e) {
+						})), g(m(o), "unobserve", (function(e) {
 							! function(e, o) {
 								if (d.has(e.observer)) {
 									var r = d.get(e.observer);
 									r.delete(e) && (r.size > 0 ? e.observer.unobserve(o) : (e.observer.disconnect(), d.delete(e.observer)))
 								}
-							}(g(o), e)
-						})), m(g(o), "externalUnobserve", (function() {
+							}(m(o), e)
+						})), g(m(o), "externalUnobserve", (function() {
 							o.unobserve(o.targetNode)
 						})), o
 					}
 					r = e, (o = t).prototype = Object.create(r.prototype), o.prototype.constructor = o, o.__proto__ = r;
-					var s = t.prototype;
-					return s.getSnapshotBeforeUpdate = function(e) {
+					var a = t.prototype;
+					return a.getSnapshotBeforeUpdate = function(e) {
 						var o = this;
 						this.prevTargetNode = this.targetNode;
 						var r = y.some((function(r) {
 							return l(o.props[r], e[r])
 						}));
 						return r && this.prevTargetNode && (e.disabled || this.unobserve(this.prevTargetNode)), r
-					}, s.componentDidUpdate = function(e, o, r) {
+					}, a.componentDidUpdate = function(e, o, r) {
 						var t = !1;
 						r || (t = this.prevTargetNode !== this.targetNode) && null != this.prevTargetNode && this.unobserve(this.prevTargetNode), (r || t) && this.observe()
-					}, s.componentDidMount = function() {
+					}, a.componentDidMount = function() {
 						this.observe()
-					}, s.componentWillUnmount = function() {
+					}, a.componentWillUnmount = function() {
 						this.targetNode && this.unobserve(this.targetNode)
-					}, s.render = function() {
+					}, a.render = function() {
 						var e = this.props.children;
 						return null != e ? n.a.cloneElement(n.a.Children.only(e), {
 							ref: this.handleNode
 						}) : null
 					}, t
 				}(n.a.Component);
-			m(L, "displayName", "IntersectionObserver")
+			g(x, "displayName", "IntersectionObserver")
 		},
 		"./node_modules/@researchgate/react-intersection-observer/node_modules/prop-types/factoryWithThrowingShims.js": function(e, o, r) {
 			"use strict";
@@ -491,10 +491,10 @@
 
 			function n() {}
 
-			function a() {}
-			a.resetWarningCache = n, e.exports = function() {
-				function e(e, o, r, n, a, s) {
-					if (s !== t) {
+			function s() {}
+			s.resetWarningCache = n, e.exports = function() {
+				function e(e, o, r, n, s, a) {
+					if (a !== t) {
 						var l = new Error("Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at http://fb.me/use-check-prop-types");
 						throw l.name = "Invariant Violation", l
 					}
@@ -523,7 +523,7 @@
 					oneOfType: o,
 					shape: o,
 					exact: o,
-					checkPropTypes: a,
+					checkPropTypes: s,
 					resetWarningCache: n
 				};
 				return r.PropTypes = r, r
@@ -539,8 +539,8 @@
 		"./node_modules/lodash/_baseInverter.js": function(e, o, r) {
 			var t = r("./node_modules/lodash/_baseForOwn.js");
 			e.exports = function(e, o, r, n) {
-				return t(e, (function(e, t, a) {
-					o(n, r(e), t, a)
+				return t(e, (function(e, t, s) {
+					o(n, r(e), t, s)
 				})), n
 			}
 		},
@@ -555,24 +555,24 @@
 		"./node_modules/lodash/findLastIndex.js": function(e, o, r) {
 			var t = r("./node_modules/lodash/_baseFindIndex.js"),
 				n = r("./node_modules/lodash/_baseIteratee.js"),
-				a = r("./node_modules/lodash/toInteger.js"),
-				s = Math.max,
+				s = r("./node_modules/lodash/toInteger.js"),
+				a = Math.max,
 				l = Math.min;
 			e.exports = function(e, o, r) {
 				var d = null == e ? 0 : e.length;
 				if (!d) return -1;
 				var i = d - 1;
-				return void 0 !== r && (i = a(r), i = r < 0 ? s(d + i, 0) : l(i, d - 1)), t(e, n(o, 3), i, !0)
+				return void 0 !== r && (i = s(r), i = r < 0 ? a(d + i, 0) : l(i, d - 1)), t(e, n(o, 3), i, !0)
 			}
 		},
 		"./node_modules/lodash/invert.js": function(e, o, r) {
 			var t = r("./node_modules/lodash/constant.js"),
 				n = r("./node_modules/lodash/_createInverter.js"),
-				a = r("./node_modules/lodash/identity.js"),
-				s = Object.prototype.toString,
+				s = r("./node_modules/lodash/identity.js"),
+				a = Object.prototype.toString,
 				l = n((function(e, o, r) {
-					null != o && "function" != typeof o.toString && (o = s.call(o)), e[o] = r
-				}), t(a));
+					null != o && "function" != typeof o.toString && (o = a.call(o)), e[o] = r
+				}), t(s));
 			e.exports = l
 		},
 		"./node_modules/lodash/uniqWith.js": function(e, o, r) {
@@ -584,12 +584,45 @@
 		"./node_modules/lodash/xor.js": function(e, o, r) {
 			var t = r("./node_modules/lodash/_arrayFilter.js"),
 				n = r("./node_modules/lodash/_baseRest.js"),
-				a = r("./node_modules/lodash/_baseXor.js"),
-				s = r("./node_modules/lodash/isArrayLikeObject.js"),
+				s = r("./node_modules/lodash/_baseXor.js"),
+				a = r("./node_modules/lodash/isArrayLikeObject.js"),
 				l = n((function(e) {
-					return a(t(e, s))
+					return s(t(e, a))
 				}));
 			e.exports = l
+		},
+		"./node_modules/uuid/index.js": function(e, o, r) {
+			var t = r("./node_modules/uuid/v1.js"),
+				n = r("./node_modules/uuid/v4.js"),
+				s = n;
+			s.v1 = t, s.v4 = n, e.exports = s
+		},
+		"./node_modules/uuid/v1.js": function(e, o, r) {
+			var t, n, s = r("./node_modules/uuid/lib/rng-browser.js"),
+				a = r("./node_modules/uuid/lib/bytesToUuid.js"),
+				l = 0,
+				d = 0;
+			e.exports = function(e, o, r) {
+				var i = o && r || 0,
+					c = o || [],
+					u = (e = e || {}).node || t,
+					b = void 0 !== e.clockseq ? e.clockseq : n;
+				if (null == u || null == b) {
+					var p = s();
+					null == u && (u = t = [1 | p[0], p[1], p[2], p[3], p[4], p[5]]), null == b && (b = n = 16383 & (p[6] << 8 | p[7]))
+				}
+				var h = void 0 !== e.msecs ? e.msecs : (new Date).getTime(),
+					f = void 0 !== e.nsecs ? e.nsecs : d + 1,
+					v = h - l + (f - d) / 1e4;
+				if (v < 0 && void 0 === e.clockseq && (b = b + 1 & 16383), (v < 0 || h > l) && void 0 === e.nsecs && (f = 0), f >= 1e4) throw new Error("uuid.v1(): Can't create more than 10M uuids/sec");
+				l = h, d = f, n = b;
+				var m = (1e4 * (268435455 & (h += 122192928e5)) + f) % 4294967296;
+				c[i++] = m >>> 24 & 255, c[i++] = m >>> 16 & 255, c[i++] = m >>> 8 & 255, c[i++] = 255 & m;
+				var g = h / 4294967296 * 1e4 & 268435455;
+				c[i++] = g >>> 8 & 255, c[i++] = 255 & g, c[i++] = g >>> 24 & 15 | 16, c[i++] = g >>> 16 & 255, c[i++] = b >>> 8 | 128, c[i++] = 255 & b;
+				for (var _ = 0; _ < 6; ++_) c[i + _] = u[_];
+				return o || a(c)
+			}
 		},
 		"./src/reddit/components/BlankPost/index.tsx": function(e, o, r) {
 			"use strict";
@@ -598,15 +631,15 @@
 			}));
 			var t = r("./node_modules/react/index.js"),
 				n = r.n(t),
-				a = r("./src/reddit/components/AdViewability/index.tsx"),
-				s = r("./src/reddit/connectors/PostViewable/index.ts"),
+				s = r("./src/reddit/components/AdViewability/index.tsx"),
+				a = r("./src/reddit/connectors/PostViewable/index.ts"),
 				l = r("./src/lib/classNames/index.ts"),
 				d = r("./src/reddit/contexts/Post/index.tsx");
-			const i = Object(s.a)(null),
+			const i = Object(a.a)(null),
 				c = ({
 					className: e,
 					post: o
-				}) => o.isSponsored ? n.a.createElement(a.a, {
+				}) => o.isSponsored ? n.a.createElement(s.a, {
 					post: o,
 					trackDisplay: !0
 				}, n.a.createElement("div", {
@@ -616,4 +649,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-BlankPost.962f43b1f2dc7330e5ed.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-BlankPost.1b592675a40e0b6f31a5.js.map

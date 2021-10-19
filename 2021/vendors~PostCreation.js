@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~PostCreation.30182d54e28a1c08e0d8.js
-// Retrieved at 10/5/2021, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~PostCreation.d3dfd04d0efbe3cd2b11.js
+// Retrieved at 10/19/2021, 1:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~PostCreation"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -2323,15 +2323,15 @@
 					})), d
 				}
 			}
-			var q = {
+			var N = {
 				passive: !0
 			};
 
-			function N(e) {
+			function W(e) {
 				return e.split("-")[0]
 			}
 
-			function W(e) {
+			function q(e) {
 				return e.split("-")[1]
 			}
 
@@ -2343,8 +2343,8 @@
 				var t, n = e.reference,
 					o = e.element,
 					r = e.placement,
-					i = r ? N(r) : null,
-					s = r ? W(r) : null,
+					i = r ? W(r) : null,
+					s = r ? q(r) : null,
 					a = n.x + n.width / 2 - o.width / 2,
 					u = n.y + n.height / 2 - o.height / 2;
 				switch (i) {
@@ -2629,12 +2629,12 @@
 								l = i(t.elements.popper),
 								c = [].concat(t.scrollParents.reference, t.scrollParents.popper);
 							return s && c.forEach((function(e) {
-									e.addEventListener("scroll", n.update, q)
-								})), u && l.addEventListener("resize", n.update, q),
+									e.addEventListener("scroll", n.update, N)
+								})), u && l.addEventListener("resize", n.update, N),
 								function() {
 									s && c.forEach((function(e) {
-										e.removeEventListener("scroll", n.update, q)
-									})), u && l.removeEventListener("resize", n.update, q)
+										e.removeEventListener("scroll", n.update, N)
+									})), u && l.removeEventListener("resize", n.update, N)
 								}
 						},
 						data: {}
@@ -2665,7 +2665,7 @@
 								i = n.adaptive,
 								s = void 0 === i || i,
 								a = {
-									placement: N(t.placement),
+									placement: W(t.placement),
 									popper: t.elements.popper,
 									popperRect: t.rects.popper,
 									gpuAcceleration: r
@@ -2741,7 +2741,7 @@
 								i = void 0 === r ? [0, 0] : r,
 								s = C.reduce((function(e, n) {
 									return e[n] = function(e, t, n) {
-										var o = N(e),
+										var o = W(e),
 											r = [k, w].indexOf(o) >= 0 ? -1 : 1,
 											i = "function" == typeof n ? n(Object.assign(Object.assign({}, t), {}, {
 												placement: e
@@ -2771,12 +2771,12 @@
 								n = e.options,
 								o = e.name;
 							if (!t.modifiersData[o]._skip) {
-								for (var r = n.mainAxis, i = void 0 === r || r, s = n.altAxis, a = void 0 === s || s, u = n.fallbackPlacements, l = n.padding, c = n.boundary, d = n.rootBoundary, f = n.altBoundary, p = n.flipVariations, m = void 0 === p || p, h = n.allowedAutoPlacements, _ = t.options.placement, y = N(_), v = u || (y === _ || !m ? [X(_)] : function(e) {
-										if (N(e) === O) return [];
+								for (var r = n.mainAxis, i = void 0 === r || r, s = n.altAxis, a = void 0 === s || s, u = n.fallbackPlacements, l = n.padding, c = n.boundary, d = n.rootBoundary, f = n.altBoundary, p = n.flipVariations, m = void 0 === p || p, h = n.allowedAutoPlacements, _ = t.options.placement, y = W(_), v = u || (y === _ || !m ? [X(_)] : function(e) {
+										if (W(e) === O) return [];
 										var t = X(e);
 										return [K(e), t, K(t)]
 									}(_)), g = [_].concat(v).reduce((function(e, n) {
-										return e.concat(N(n) === O ? function(e, t) {
+										return e.concat(W(n) === O ? function(e, t) {
 											void 0 === t && (t = {});
 											var n = t,
 												o = n.placement,
@@ -2786,9 +2786,9 @@
 												a = n.flipVariations,
 												u = n.allowedAutoPlacements,
 												l = void 0 === u ? C : u,
-												c = W(o),
+												c = q(o),
 												d = (c ? a ? I : I.filter((function(e) {
-													return W(e) === c
+													return q(e) === c
 												})) : E).filter((function(e) {
 													return l.indexOf(e) >= 0
 												})).reduce((function(t, n) {
@@ -2797,7 +2797,7 @@
 														boundary: r,
 														rootBoundary: i,
 														padding: s
-													})[N(n)], t
+													})[W(n)], t
 												}), {});
 											return Object.keys(d).sort((function(e, t) {
 												return d[e] - d[t]
@@ -2812,11 +2812,11 @@
 										}) : n)
 									}), []), b = t.rects.reference, F = t.rects.popper, S = new Map, z = !0, T = g[0], A = 0; A < g.length; A++) {
 									var P = g[A],
-										R = N(P),
-										M = W(P) === D,
+										R = W(P),
+										M = q(P) === D,
 										B = [w, x].indexOf(R) >= 0,
 										L = B ? "width" : "height",
-										q = oe(t, {
+										N = oe(t, {
 											placement: P,
 											boundary: c,
 											rootBoundary: d,
@@ -2827,7 +2827,7 @@
 									b[L] > F[L] && (V = X(V));
 									var H = X(V),
 										U = [];
-									if (i && U.push(q[R] <= 0), a && U.push(q[V] <= 0, q[H] <= 0), U.every((function(e) {
+									if (i && U.push(N[R] <= 0), a && U.push(N[V] <= 0, N[H] <= 0), U.every((function(e) {
 											return e
 										}))) {
 										T = P, z = !1;
@@ -2880,8 +2880,8 @@
 									padding: d,
 									altBoundary: c
 								}),
-								v = N(t.placement),
-								g = W(t.placement),
+								v = W(t.placement),
+								g = q(t.placement),
 								O = !g,
 								E = V(v),
 								F = "x" === E ? "y" : "x",
@@ -2903,7 +2903,7 @@
 										M = S[E],
 										B = S[E] + y[C],
 										L = S[E] - y[P],
-										q = p ? -T[R] / 2 : 0,
+										N = p ? -T[R] / 2 : 0,
 										H = g === D ? z[R] : T[R],
 										U = g === D ? -T[R] : -z[R],
 										Z = t.elements.arrow,
@@ -2920,8 +2920,8 @@
 										Y = X[C],
 										K = X[P],
 										G = re(0, z[R], $[R]),
-										J = O ? z[R] / 2 - q - G - Y - A : H - G - Y - A,
-										Q = O ? -z[R] / 2 + q + G + K + A : U + G + K + A,
+										J = O ? z[R] / 2 - N - G - Y - A : H - G - Y - A,
+										Q = O ? -z[R] / 2 + N + G + K + A : U + G + K + A,
 										ee = t.elements.arrow && b(t.elements.arrow),
 										te = ee ? "y" === E ? ee.clientTop || 0 : ee.clientLeft || 0 : 0,
 										ne = t.modifiersData.offset ? t.modifiersData.offset[t.placement][E] : 0,
@@ -2950,7 +2950,7 @@
 								o = e.name,
 								r = n.elements.arrow,
 								i = n.modifiersData.popperOffsets,
-								s = N(n.placement),
+								s = W(n.placement),
 								a = V(s),
 								u = [k, j].indexOf(s) >= 0 ? "height" : "width";
 							if (r && i) {
@@ -3193,39 +3193,6 @@
 		"./node_modules/uc.micro/properties/Any/regex.js": function(e, t) {
 			e.exports = /[\0-\uD7FF\uE000-\uFFFF]|[\uD800-\uDBFF][\uDC00-\uDFFF]|[\uD800-\uDBFF](?![\uDC00-\uDFFF])|(?:[^\uD800-\uDBFF]|^)[\uDC00-\uDFFF]/
 		},
-		"./node_modules/uuid/index.js": function(e, t, n) {
-			var o = n("./node_modules/uuid/v1.js"),
-				r = n("./node_modules/uuid/v4.js"),
-				i = r;
-			i.v1 = o, i.v4 = r, e.exports = i
-		},
-		"./node_modules/uuid/v1.js": function(e, t, n) {
-			var o, r, i = n("./node_modules/uuid/lib/rng-browser.js"),
-				s = n("./node_modules/uuid/lib/bytesToUuid.js"),
-				a = 0,
-				u = 0;
-			e.exports = function(e, t, n) {
-				var l = t && n || 0,
-					c = t || [],
-					d = (e = e || {}).node || o,
-					f = void 0 !== e.clockseq ? e.clockseq : r;
-				if (null == d || null == f) {
-					var p = i();
-					null == d && (d = o = [1 | p[0], p[1], p[2], p[3], p[4], p[5]]), null == f && (f = r = 16383 & (p[6] << 8 | p[7]))
-				}
-				var m = void 0 !== e.msecs ? e.msecs : (new Date).getTime(),
-					h = void 0 !== e.nsecs ? e.nsecs : u + 1,
-					_ = m - a + (h - u) / 1e4;
-				if (_ < 0 && void 0 === e.clockseq && (f = f + 1 & 16383), (_ < 0 || m > a) && void 0 === e.nsecs && (h = 0), h >= 1e4) throw new Error("uuid.v1(): Can't create more than 10M uuids/sec");
-				a = m, u = h, r = f;
-				var y = (1e4 * (268435455 & (m += 122192928e5)) + h) % 4294967296;
-				c[l++] = y >>> 24 & 255, c[l++] = y >>> 16 & 255, c[l++] = y >>> 8 & 255, c[l++] = 255 & y;
-				var v = m / 4294967296 * 1e4 & 268435455;
-				c[l++] = v >>> 8 & 255, c[l++] = 255 & v, c[l++] = v >>> 24 & 15 | 16, c[l++] = v >>> 16 & 255, c[l++] = f >>> 8 | 128, c[l++] = 255 & f;
-				for (var g = 0; g < 6; ++g) c[l + g] = d[g];
-				return t || s(c)
-			}
-		},
 		"./node_modules/webpack/buildin/amd-define.js": function(e, t) {
 			e.exports = function() {
 				throw new Error("define cannot be used indirect")
@@ -3233,4 +3200,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~PostCreation.30182d54e28a1c08e0d8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~PostCreation.d3dfd04d0efbe3cd2b11.js.map

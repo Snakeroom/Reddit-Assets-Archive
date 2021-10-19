@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index.1d3b0f57fd2b318435f1.js
-// Retrieved at 10/13/2021, 7:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index.df5165daa5eafc6d3a50.js
+// Retrieved at 10/19/2021, 1:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index"], {
 		"./src/reddit/components/Econ/Prediction/Confetti/index.m.less": function(e, t, n) {
@@ -213,7 +213,7 @@
 							selectedNumberTokens: t.amount
 						}));
 						try {
-							await o(Object(D.p)({
+							await o(Object(D.r)({
 								coinPackageId: t.id,
 								selectedOptionId: I,
 								price: t.amount,
@@ -716,4 +716,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.1d3b0f57fd2b318435f1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.df5165daa5eafc6d3a50.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePo~5f1ac562.998e8fd67305133d0023.js
-// Retrieved at 10/5/2021, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePo~5f1ac562.d78533bf62d5928ad5ad.js
+// Retrieved at 10/19/2021, 1:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePo~5f1ac562"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, r) {
@@ -420,12 +420,12 @@
 			}
 			var y = ["root", "rootMargin", "threshold"],
 				O = ["root", "rootMargin", "threshold", "disabled"],
-				x = Object.prototype,
-				j = x.hasOwnProperty,
-				w = x.toString,
+				j = Object.prototype,
+				x = j.hasOwnProperty,
+				w = j.toString,
 				_ = function(e) {
 					return y.reduce((function(t, r) {
-						if (j.call(e, r)) {
+						if (x.call(e, r)) {
 							var n = "root" === r && "[object String]" === w.call(e[r]);
 							t[r] = n ? document.querySelector(e[r]) : e[r]
 						}
@@ -755,23 +755,23 @@
 					return null
 				}(e) || t
 			}
-			var x = "top",
-				j = "bottom",
+			var j = "top",
+				x = "bottom",
 				w = "right",
 				_ = "left",
 				E = "auto",
-				k = [x, j, w, _],
+				k = [j, x, w, _],
 				L = "start",
-				S = "end",
-				M = "clippingParents",
+				M = "end",
+				S = "clippingParents",
 				A = "viewport",
 				D = "popper",
 				N = "reference",
 				T = k.reduce((function(e, t) {
-					return e.concat([t + "-" + L, t + "-" + S])
+					return e.concat([t + "-" + L, t + "-" + M])
 				}), []),
 				I = [].concat(k, [E]).reduce((function(e, t) {
-					return e.concat([t, t + "-" + L, t + "-" + S])
+					return e.concat([t, t + "-" + L, t + "-" + M])
 				}), []),
 				R = ["beforeRead", "read", "afterRead", "beforeMain", "main", "afterMain", "beforeWrite", "write", "afterWrite"];
 
@@ -792,13 +792,13 @@
 					}(e)
 				})), n
 			}
-			var B = {
+			var C = {
 				placement: "bottom",
 				modifiers: [],
 				strategy: "absolute"
 			};
 
-			function C() {
+			function B() {
 				for (var e = arguments.length, t = new Array(e), r = 0; r < e; r++) t[r] = arguments[r];
 				return !t.some((function(e) {
 					return !(e && "function" == typeof e.getBoundingClientRect)
@@ -811,13 +811,13 @@
 					r = t.defaultModifiers,
 					n = void 0 === r ? [] : r,
 					o = t.defaultOptions,
-					a = void 0 === o ? B : o;
+					a = void 0 === o ? C : o;
 				return function(e, t, r) {
 					void 0 === r && (r = a);
 					var o, i, l = {
 							placement: "bottom",
 							orderedModifiers: [],
-							options: Object.assign(Object.assign({}, B), a),
+							options: Object.assign(Object.assign({}, C), a),
 							modifiersData: {},
 							elements: {
 								reference: e,
@@ -877,7 +877,7 @@
 									var e = l.elements,
 										t = e.reference,
 										r = e.popper;
-									if (C(t, r)) {
+									if (B(t, r)) {
 										l.rects = {
 											reference: h(t, O(r), "fixed" === l.options.strategy),
 											popper: b(r)
@@ -916,7 +916,7 @@
 								f(), u = !0
 							}
 						};
-					if (!C(e, t)) return d;
+					if (!B(e, t)) return d;
 
 					function f() {
 						c.forEach((function(e) {
@@ -936,30 +936,30 @@
 				return e.split("-")[0]
 			}
 
-			function z(e) {
+			function q(e) {
 				return e.split("-")[1]
 			}
 
-			function F(e) {
+			function z(e) {
 				return ["top", "bottom"].indexOf(e) >= 0 ? "x" : "y"
 			}
 
-			function q(e) {
+			function F(e) {
 				var t, r = e.reference,
 					n = e.element,
 					o = e.placement,
 					a = o ? H(o) : null,
-					i = o ? z(o) : null,
+					i = o ? q(o) : null,
 					s = r.x + r.width / 2 - n.width / 2,
 					l = r.y + r.height / 2 - n.height / 2;
 				switch (a) {
-					case x:
+					case j:
 						t = {
 							x: s,
 							y: r.y - n.height
 						};
 						break;
-					case j:
+					case x:
 						t = {
 							x: s,
 							y: r.y + r.height
@@ -983,14 +983,14 @@
 							y: r.y
 						}
 				}
-				var c = a ? F(a) : null;
+				var c = a ? z(a) : null;
 				if (null != c) {
 					var u = "y" === c ? "height" : "width";
 					switch (i) {
 						case L:
 							t[c] = Math.floor(t[c]) - Math.floor(r[u] / 2 - n[u] / 2);
 							break;
-						case S:
+						case M:
 							t[c] = Math.floor(t[c]) + Math.ceil(r[u] / 2 - n[u] / 2)
 					}
 				}
@@ -1025,11 +1025,11 @@
 					h = i.hasOwnProperty("x"),
 					b = i.hasOwnProperty("y"),
 					m = _,
-					v = x,
+					v = j,
 					g = window;
 				if (c) {
 					var y = O(r);
-					y === a(r) && (y = u(r)), o === x && (v = j, p -= y.clientHeight - n.height, p *= l ? 1 : -1), o === _ && (m = w, f -= y.clientWidth - n.width, f *= l ? 1 : -1)
+					y === a(r) && (y = u(r)), o === j && (v = x, p -= y.clientHeight - n.height, p *= l ? 1 : -1), o === _ && (m = w, f -= y.clientWidth - n.width, f *= l ? 1 : -1)
 				}
 				var E, k = Object.assign({
 					position: s
@@ -1154,7 +1154,7 @@
 					n = r.placement,
 					a = void 0 === n ? e.placement : n,
 					i = r.boundary,
-					l = void 0 === i ? M : i,
+					l = void 0 === i ? S : i,
 					c = r.rootBoundary,
 					d = void 0 === c ? A : c,
 					f = r.elementContext,
@@ -1169,28 +1169,28 @@
 					_ = e.rects.popper,
 					E = e.elements[b ? y : p],
 					L = ee(s(E) ? E : E.contextElement || u(e.elements.popper), l, d),
-					S = o(O),
-					T = q({
-						reference: S,
+					M = o(O),
+					T = F({
+						reference: M,
 						element: _,
 						strategy: "absolute",
 						placement: a
 					}),
 					I = J(Object.assign(Object.assign({}, _), T)),
-					R = p === D ? I : S,
+					R = p === D ? I : M,
 					P = {
 						top: L.top - R.top + g.top,
 						bottom: R.bottom - L.bottom + g.bottom,
 						left: L.left - R.left + g.left,
 						right: R.right - L.right + g.right
 					},
-					B = e.modifiersData.offset;
-				if (p === D && B) {
-					var C = B[a];
+					C = e.modifiersData.offset;
+				if (p === D && C) {
+					var B = C[a];
 					Object.keys(P).forEach((function(e) {
-						var t = [w, j].indexOf(e) >= 0 ? 1 : -1,
-							r = [x, j].indexOf(e) >= 0 ? "y" : "x";
-						P[e] += C[r] * t
+						var t = [w, x].indexOf(e) >= 0 ? 1 : -1,
+							r = [j, x].indexOf(e) >= 0 ? "y" : "x";
+						P[e] += B[r] * t
 					}))
 				}
 				return P
@@ -1213,7 +1213,7 @@
 			}
 
 			function ie(e) {
-				return [x, w, j, _].some((function(t) {
+				return [j, w, x, _].some((function(t) {
 					return e[t] >= 0
 				}))
 			}
@@ -1250,7 +1250,7 @@
 						fn: function(e) {
 							var t = e.state,
 								r = e.name;
-							t.modifiersData[r] = q({
+							t.modifiersData[r] = F({
 								reference: t.rects.reference,
 								element: t.rects.popper,
 								strategy: "absolute",
@@ -1347,7 +1347,7 @@
 								i = I.reduce((function(e, r) {
 									return e[r] = function(e, t, r) {
 										var n = H(e),
-											o = [_, x].indexOf(n) >= 0 ? -1 : 1,
+											o = [_, j].indexOf(n) >= 0 ? -1 : 1,
 											a = "function" == typeof r ? r(Object.assign(Object.assign({}, t), {}, {
 												placement: e
 											})) : r,
@@ -1391,9 +1391,9 @@
 												s = r.flipVariations,
 												l = r.allowedAutoPlacements,
 												c = void 0 === l ? I : l,
-												u = z(n),
+												u = q(n),
 												d = (u ? s ? T : T.filter((function(e) {
-													return z(e) === u
+													return q(e) === u
 												})) : k).filter((function(e) {
 													return c.indexOf(e) >= 0
 												})).reduce((function(t, r) {
@@ -1415,12 +1415,12 @@
 											flipVariations: h,
 											allowedAutoPlacements: b
 										}) : r)
-									}), []), O = t.rects.reference, S = t.rects.popper, M = new Map, A = !0, D = y[0], N = 0; N < y.length; N++) {
+									}), []), O = t.rects.reference, M = t.rects.popper, S = new Map, A = !0, D = y[0], N = 0; N < y.length; N++) {
 									var R = y[N],
 										P = H(R),
-										B = z(R) === L,
-										C = [x, j].indexOf(P) >= 0,
-										U = C ? "width" : "height",
+										C = q(R) === L,
+										B = [j, x].indexOf(P) >= 0,
+										U = B ? "width" : "height",
 										W = ne(t, {
 											placement: R,
 											boundary: u,
@@ -1428,22 +1428,22 @@
 											altBoundary: f,
 											padding: c
 										}),
-										F = C ? B ? w : _ : B ? j : x;
-									O[U] > S[U] && (F = K(F));
-									var q = K(F),
+										z = B ? C ? w : _ : C ? x : j;
+									O[U] > M[U] && (z = K(z));
+									var F = K(z),
 										V = [];
-									if (a && V.push(W[P] <= 0), s && V.push(W[F] <= 0, W[q] <= 0), V.every((function(e) {
+									if (a && V.push(W[P] <= 0), s && V.push(W[z] <= 0, W[F] <= 0), V.every((function(e) {
 											return e
 										}))) {
 										D = R, A = !1;
 										break
 									}
-									M.set(R, V)
+									S.set(R, V)
 								}
 								if (A)
 									for (var G = function(e) {
 											var t = y.find((function(t) {
-												var r = M.get(t);
+												var r = S.get(t);
 												if (r) return r.slice(0, e).every((function(e) {
 													return e
 												}))
@@ -1486,11 +1486,11 @@
 									altBoundary: u
 								}),
 								g = H(t.placement),
-								y = z(t.placement),
+								y = q(t.placement),
 								E = !y,
-								k = F(g),
-								S = "x" === k ? "y" : "x",
-								M = t.modifiersData.popperOffsets,
+								k = z(g),
+								M = "x" === k ? "y" : "x",
+								S = t.modifiersData.popperOffsets,
 								A = t.rects.reference,
 								D = t.rects.popper,
 								N = "function" == typeof m ? m(Object.assign(Object.assign({}, t.rects), {}, {
@@ -1500,16 +1500,16 @@
 									x: 0,
 									y: 0
 								};
-							if (M) {
+							if (S) {
 								if (a) {
-									var I = "y" === k ? x : _,
-										R = "y" === k ? j : w,
+									var I = "y" === k ? j : _,
+										R = "y" === k ? x : w,
 										P = "y" === k ? "height" : "width",
-										B = M[k],
-										C = M[k] + v[I],
-										U = M[k] - v[R],
+										C = S[k],
+										B = S[k] + v[I],
+										U = S[k] - v[R],
 										W = p ? -D[P] / 2 : 0,
-										q = y === L ? A[P] : D[P],
+										F = y === L ? A[P] : D[P],
 										V = y === L ? -D[P] : -A[P],
 										G = t.elements.arrow,
 										$ = p && G ? b(G) : {
@@ -1525,22 +1525,22 @@
 										X = K[I],
 										Y = K[R],
 										Z = oe(0, A[P], $[P]),
-										J = E ? A[P] / 2 - W - Z - X - N : q - Z - X - N,
+										J = E ? A[P] / 2 - W - Z - X - N : F - Z - X - N,
 										Q = E ? -A[P] / 2 + W + Z + Y + N : V + Z + Y + N,
 										ee = t.elements.arrow && O(t.elements.arrow),
 										te = ee ? "y" === k ? ee.clientTop || 0 : ee.clientLeft || 0 : 0,
 										re = t.modifiersData.offset ? t.modifiersData.offset[t.placement][k] : 0,
-										ae = M[k] + J - re - te,
-										ie = M[k] + Q - re,
-										se = oe(p ? Math.min(C, ae) : C, B, p ? Math.max(U, ie) : U);
-									M[k] = se, T[k] = se - B
+										ae = S[k] + J - re - te,
+										ie = S[k] + Q - re,
+										se = oe(p ? Math.min(B, ae) : B, C, p ? Math.max(U, ie) : U);
+									S[k] = se, T[k] = se - C
 								}
 								if (s) {
-									var le = "x" === k ? x : _,
-										ce = "x" === k ? j : w,
-										ue = M[S],
+									var le = "x" === k ? j : _,
+										ce = "x" === k ? x : w,
+										ue = S[M],
 										de = oe(ue + v[le], ue, ue - v[ce]);
-									M[S] = de, T[S] = de - ue
+									S[M] = de, T[M] = de - ue
 								}
 								t.modifiersData[n] = T
 							}
@@ -1556,13 +1556,13 @@
 								o = r.elements.arrow,
 								a = r.modifiersData.popperOffsets,
 								i = H(r.placement),
-								s = F(i),
+								s = z(i),
 								l = [_, w].indexOf(i) >= 0 ? "height" : "width";
 							if (o && a) {
 								var c = r.modifiersData[n + "#persistent"].padding,
 									u = b(o),
-									d = "y" === s ? x : _,
-									f = "y" === s ? j : w,
+									d = "y" === s ? j : _,
+									f = "y" === s ? x : w,
 									p = r.rects.reference[l] + r.rects.reference[s] - a[s] - r.rects.popper[l],
 									h = a[s] - r.rects.reference[s],
 									m = O(o),
@@ -1572,8 +1572,8 @@
 									E = v - u[l] - c[f],
 									k = v / 2 - u[l] / 2 + g,
 									L = oe(y, k, E),
-									S = s;
-								r.modifiersData[n] = ((t = {})[S] = L, t.centerOffset = L - k, t)
+									M = s;
+								r.modifiersData[n] = ((t = {})[M] = L, t.centerOffset = L - k, t)
 							}
 						},
 						effect: function(e) {
@@ -1763,7 +1763,40 @@
 					throw i
 				}
 			}
+		},
+		"./node_modules/uuid/index.js": function(e, t, r) {
+			var n = r("./node_modules/uuid/v1.js"),
+				o = r("./node_modules/uuid/v4.js"),
+				a = o;
+			a.v1 = n, a.v4 = o, e.exports = a
+		},
+		"./node_modules/uuid/v1.js": function(e, t, r) {
+			var n, o, a = r("./node_modules/uuid/lib/rng-browser.js"),
+				i = r("./node_modules/uuid/lib/bytesToUuid.js"),
+				s = 0,
+				l = 0;
+			e.exports = function(e, t, r) {
+				var c = t && r || 0,
+					u = t || [],
+					d = (e = e || {}).node || n,
+					f = void 0 !== e.clockseq ? e.clockseq : o;
+				if (null == d || null == f) {
+					var p = a();
+					null == d && (d = n = [1 | p[0], p[1], p[2], p[3], p[4], p[5]]), null == f && (f = o = 16383 & (p[6] << 8 | p[7]))
+				}
+				var h = void 0 !== e.msecs ? e.msecs : (new Date).getTime(),
+					b = void 0 !== e.nsecs ? e.nsecs : l + 1,
+					m = h - s + (b - l) / 1e4;
+				if (m < 0 && void 0 === e.clockseq && (f = f + 1 & 16383), (m < 0 || h > s) && void 0 === e.nsecs && (b = 0), b >= 1e4) throw new Error("uuid.v1(): Can't create more than 10M uuids/sec");
+				s = h, l = b, o = f;
+				var v = (1e4 * (268435455 & (h += 122192928e5)) + b) % 4294967296;
+				u[c++] = v >>> 24 & 255, u[c++] = v >>> 16 & 255, u[c++] = v >>> 8 & 255, u[c++] = 255 & v;
+				var g = h / 4294967296 * 1e4 & 268435455;
+				u[c++] = g >>> 8 & 255, u[c++] = 255 & g, u[c++] = g >>> 24 & 15 | 16, u[c++] = g >>> 16 & 255, u[c++] = f >>> 8 | 128, u[c++] = 255 & f;
+				for (var y = 0; y < 6; ++y) u[c + y] = d[y];
+				return t || i(u)
+			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePo~5f1ac562.998e8fd67305133d0023.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePo~5f1ac562.d78533bf62d5928ad5ad.js.map

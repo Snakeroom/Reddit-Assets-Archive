@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.4139b6fd08410b0602f6.js
-// Retrieved at 10/18/2021, 7:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.9ed6df6d906deff94daf.js
+// Retrieved at 10/19/2021, 1:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost", "Reddit~StandalonePostPage~reddit-components-MediumPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1862,7 +1862,7 @@
 				fbt: m
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), p = ({
 				participantsCount: e
-			}) => 0 === e ? null : m._({
+			}) => m._({
 				"*": "· {total participated users} players",
 				_1: "· {total participated users} player"
 			}, [m._param("total participated users", Object(u.b)(e)), m._plural(e)], {
@@ -1898,7 +1898,7 @@
 					className: Object(s.a)(f.a.badge, f.a.ended)
 				}, _._("Ended", null, {
 					hk: "4s3hco"
-				})), u && o.a.createElement("span", {
+				})), u && t.totalParticipantsCount && o.a.createElement("span", {
 					className: f.a.predictions
 				}, o.a.createElement(p, {
 					participantsCount: t.totalParticipantsCount
@@ -7526,4 +7526,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.4139b6fd08410b0602f6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.9ed6df6d906deff94daf.js.map
