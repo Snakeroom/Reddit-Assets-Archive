@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.49c7b4eaa389960ee481.js
-// Retrieved at 10/19/2021, 2:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.f18b8816dbf7dcb4f516.js
+// Retrieved at 10/19/2021, 5:20:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1316,8 +1316,8 @@
 				F = n("./src/reddit/components/InfoTextTooltip/index.tsx");
 			const B = (e, t, n = !1) => `${e}${t}${n?"inOverlay":""}`;
 			var L = n("./src/reddit/components/Comments/Comment/TopMeta/cakeDay.m.less"),
-				P = n.n(L);
-			const R = ({
+				R = n.n(L);
+			const P = ({
 				className: e,
 				commentId: t,
 				renderedInOverlay: n
@@ -1331,7 +1331,7 @@
 						hk: "1xptSi"
 					});
 				return r.a.createElement(r.a.Fragment, null, r.a.createElement("img", {
-					className: Object(c.a)(P.a.cakedayIcon, e),
+					className: Object(c.a)(R.a.cakedayIcon, e),
 					src: `${A.a.assetPath}/img/powerups/flair_cakeday.png`,
 					alt: l,
 					id: d,
@@ -1689,7 +1689,7 @@
 					subredditDisplayText: b,
 					renderContractorBadge: w,
 					renderedInOverlay: p
-				}), a.isAuthorCakeday ? r.a.createElement(R, {
+				}), a.isAuthorCakeday ? r.a.createElement(P, {
 					className: ke.a.cakeDay,
 					commentId: a.id,
 					renderedInOverlay: p
@@ -1757,7 +1757,7 @@
 			const Fe = d.a.wrapped(v.b, "RightPositionedAuthorFlair", Ae.a),
 				Be = d.a.span("DeletedText", Ae.a),
 				Le = d.a.wrapped(g.a, "MetaSeparator", Ae.a),
-				Pe = Object(i.b)(() => Object(a.c)({
+				Re = Object(i.b)(() => Object(a.c)({
 					hasBadges: (e, {
 						comment: t
 					}) => !!Object(Ie.q)(e, t.subredditId, t.authorId).length,
@@ -1773,7 +1773,7 @@
 						subredditId: t.subredditId
 					})
 				}));
-			t.a = Pe(e => {
+			t.a = Re(e => {
 				const {
 					children: t,
 					className: n,
@@ -1813,7 +1813,7 @@
 					renderContractorBadge: !!C,
 					collapsed: s
 				}), j);
-				if (i.isDeleted) return r.a.createElement(Re, Me({}, e, {
+				if (i.isDeleted) return r.a.createElement(Pe, Me({}, e, {
 					className: Object(c.a)(n, Ae.a.container, {
 						[Ae.a.collapsed]: s
 					})
@@ -1895,7 +1895,7 @@
 					tooltipType: O ? y.c.Lightbox : void 0
 				}))
 			});
-			const Re = e => {
+			const Pe = e => {
 					const {
 						childrenInfo: t,
 						collapsed: n,
@@ -3853,13 +3853,13 @@
 				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = n("./src/reddit/selectors/posts.ts");
 			const a = e => Object(r.c)(e, {
-					experimentName: o.Gd,
+					experimentName: o.Hd,
 					experimentEligibilitySelector: r.a
 				}),
-				c = (e, t) => t === o.Pd.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				c = (e, t) => t === o.Qd.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				d = Object(s.a)(i.H, a, (e, t) => c(e, t)),
 				l = Object(s.a)((e, t) => t, a, (e, t) => c(e, t))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.49c7b4eaa389960ee481.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.f18b8816dbf7dcb4f516.js.map

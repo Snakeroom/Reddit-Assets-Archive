@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.b926220bd297d458544d.js
-// Retrieved at 10/19/2021, 2:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.be06d9f650c3324bd824.js
+// Retrieved at 10/19/2021, 5:20:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48"], {
 		"./src/reddit/actions/eventPosts/index.ts": function(e, t, s) {
@@ -1032,7 +1032,7 @@
 					postId: I,
 					isCommentCountAnimation: y,
 					isCountAnimShadowTestEnabled: T
-				} = e, S = c && !i && !m, M = i && !p, F = Object(O.a)(), R = Object(v.a)(h.Kc) === h.Oc.Enabled, A = r.a.createElement(N, {
+				} = e, S = c && !i && !m, M = i && !p, F = Object(O.a)(), R = Object(v.a)(h.Lc) === h.Pc.Enabled, A = r.a.createElement(N, {
 					hasModPostPerms: s,
 					isCountAnimShadowTestEnabled: !!T,
 					isChatPost: n,
@@ -3620,6 +3620,7 @@
 				dropdown: "PWY92ySDjTYrTAiutq4ty",
 				dropdownRow: "_2snJGyyGyyH38duHobOUKE",
 				linkIcon: "_1GObrri0j7y_9IWiGUfPjp",
+				chatIcon: "_1PhtucoKocd-ADJ-JDEoiC",
 				crosspostIcon: "_1m76BHzDzRsM1te7HBxUqd",
 				embedIcon: "_3MSdPVJwGxrpakz-e1MQhO",
 				modalBody: "T4VmKX-IOkP4UG-B4jUR-"
@@ -3631,11 +3632,11 @@
 				n = s("./node_modules/react/index.js"),
 				r = s.n(n),
 				i = s("./node_modules/react-redux/es/index.js"),
-				a = s("./node_modules/reselect/es/index.js"),
-				c = s("./node_modules/uuid/v4.js"),
-				d = s.n(c),
-				l = s("./src/config.ts"),
-				p = s("./src/lib/addQueryParams/index.ts"),
+				a = s("./node_modules/uuid/v4.js"),
+				c = s.n(a),
+				d = s("./src/config.ts"),
+				l = s("./src/lib/addQueryParams/index.ts"),
+				p = s("./src/reddit/actions/chat/toggle.ts"),
 				m = s("./src/reddit/actions/modal.ts"),
 				u = s("./src/reddit/actions/post.ts"),
 				b = s("./src/reddit/actions/publicAccessNetwork/streams.ts"),
@@ -3646,47 +3647,49 @@
 				O = s("./src/reddit/controls/Dropdown/index.tsx"),
 				v = s("./src/reddit/controls/Dropdown/Row.tsx"),
 				g = s("./src/reddit/helpers/publicAccessNetwork/index.ts"),
-				_ = s("./src/reddit/icons/fonts/index.tsx"),
-				j = s("./src/reddit/models/Post/index.ts"),
-				k = s("./src/reddit/models/Subreddit/index.ts"),
-				E = s("./src/reddit/routes/postCreation/constants.ts"),
-				w = s("./src/reddit/selectors/activeModalId.ts"),
-				I = s("./src/reddit/selectors/tooltip.ts"),
-				y = s("./src/reddit/components/ShareMenu/index.m.less"),
-				P = s.n(y);
-			const T = Object(x.a)(O.a),
-				S = d()(),
-				N = Object(i.b)(() => Object(a.c)({
-					dropdownIsOpen: (e, {
-						dropdownId: t
-					}) => Object(I.b)(t)(e),
-					videoShareModalOpen: (e, {
-						dropdownId: t
-					}) => Object(w.b)(Object(f.a)(t))(e)
-				})),
-				M = r.a.memo(e => {
+				_ = s("./src/reddit/helpers/trackers/shareToChat.ts"),
+				j = s("./src/reddit/hooks/useTracking.ts"),
+				k = s("./src/reddit/icons/fonts/index.tsx"),
+				E = s("./src/reddit/models/Post/index.ts"),
+				w = s("./src/reddit/models/Subreddit/index.ts"),
+				I = s("./src/reddit/routes/postCreation/constants.ts"),
+				y = s("./src/reddit/selectors/activeModalId.ts"),
+				P = s("./src/reddit/selectors/experiments/shareToChatButton.ts"),
+				T = s("./src/reddit/selectors/tooltip.ts"),
+				S = s("./src/reddit/components/ShareMenu/index.m.less"),
+				N = s.n(S);
+			const M = Object(x.a)(O.a),
+				F = c()(),
+				R = r.a.memo(e => {
 					const t = Object(i.d)(),
-						s = Object(n.useCallback)(() => {
+						s = Object(j.a)(),
+						a = Object(i.e)(P.a),
+						c = Object(i.e)(t => Object(T.b)(e.dropdownId)(t)),
+						x = Object(i.e)(t => Object(y.b)(Object(f.a)(e.dropdownId))(t)),
+						O = Object(n.useCallback)(() => {
 							t(Object(h.h)({
 								tooltipId: e.dropdownId
 							}))
 						}, [t, e.dropdownId]),
-						a = e => t(Object(u.D)(e)),
-						c = Object(n.useCallback)(() => {
+						S = e => t(Object(u.D)(e)),
+						R = Object(n.useCallback)(() => {
 							e.post && (t(Object(b.d)(e.post.id)), t(Object(m.i)(Object(f.a)(e.post.id))))
 						}, [t, e.post]),
-						d = !e.subredditType || e.subredditType === k.f.Public,
-						x = !!e.post && e.post.isCrosspostable && !e.post.isSponsored;
+						A = !e.subredditType || e.subredditType === w.f.Public,
+						L = !!e.post && e.post.isCrosspostable && !e.post.isSponsored,
+						B = Object(n.useCallback)(e => {
+							t(Object(p.f)(e)), s(Object(_.a)())
+						}, [t, s]);
 					return r.a.createElement("div", {
 						className: e.className,
-						onClick: s,
+						onClick: O,
 						id: e.dropdownId
-					}, e.children, r.a.createElement(T, {
-						className: P.a.dropdown,
-						isOpen: e.dropdownIsOpen,
+					}, e.children, r.a.createElement(M, {
+						className: N.a.dropdown,
+						isOpen: c,
 						tooltipId: e.dropdownId
 					}, r.a.createElement(v.b, {
-						className: P.a.dropdownRow,
+						className: N.a.dropdownRow,
 						displayText: o.fbt._("Copy link", null, {
 							hk: "1tCqox"
 						}),
@@ -3695,59 +3698,77 @@
 								permalink: t,
 								post: s
 							} = e;
-							if (s && Object(j.o)(s)) e.sendEventWithName("share_copy", {
-								referralId: S
-							}), c();
+							if (s && Object(E.o)(s)) e.sendEventWithName("share_copy", {
+								referralId: F
+							}), R();
 							else {
-								const s = Object(p.a)(t, {
+								const s = Object(l.a)(t, {
 									utm_source: "share",
 									utm_medium: "web2x",
 									context: 3
 								});
-								e.sendEventWithName("share_copy"), a(s)
+								e.sendEventWithName("share_copy"), S(s)
 							}
 						}
-					}, r.a.createElement(_.a, {
+					}, r.a.createElement(k.a, {
 						name: "link_post",
-						className: P.a.linkIcon
-					})), x && r.a.createElement(v.b, {
-						className: P.a.dropdownRow,
+						className: N.a.linkIcon
+					})), L && r.a.createElement(v.b, {
+						className: N.a.dropdownRow,
 						displayText: o.fbt._("crosspost", null, {
 							hk: "23zSN6"
 						}),
 						onClick: () => {
-							e.sendEventWithName("share_crosspost"), e.post && window.open(`${E.b}?source_id=${e.post.id}`, "_blank")
+							e.sendEventWithName("share_crosspost"), e.post && window.open(`${I.b}?source_id=${e.post.id}`, "_blank")
 						}
-					}, r.a.createElement(_.a, {
+					}, r.a.createElement(k.a, {
 						name: "crosspost",
-						className: P.a.crosspostIcon
-					})), d && r.a.createElement(v.b, {
-						className: P.a.dropdownRow,
+						className: N.a.crosspostIcon
+					})), A && r.a.createElement(v.b, {
+						className: N.a.dropdownRow,
 						displayText: o.fbt._("Embed", null, {
 							hk: "2CcsuC"
 						}),
 						onClick: () => {
-							e.sendEventWithName("share_embed"), window.open(`${l.a.rebedMediaUrl}/embed?url=${e.permalink}`, "RedditEmbed", "height=500,width=650,modal=yes,alwaysRaised=yes")
+							e.sendEventWithName("share_embed"), window.open(`${d.a.rebedMediaUrl}/embed?url=${e.permalink}`, "RedditEmbed", "height=500,width=650,modal=yes,alwaysRaised=yes")
 						}
-					}, r.a.createElement(_.a, {
+					}, r.a.createElement(k.a, {
 						name: "embed",
-						className: P.a.embedIcon
-					}))), e.videoShareModalOpen && e.post && r.a.createElement(f.b, {
-						className: P.a.modalBody,
+						className: N.a.embedIcon
+					})), a && r.a.createElement(v.b, {
+						className: N.a.dropdownRow,
+						displayText: o.fbt._("share to chat", null, {
+							hk: "3EuIWT"
+						}),
+						onClick: () => {
+							const {
+								permalink: t
+							} = e, s = Object(l.a)(t, {
+								utm_source: "share",
+								utm_medium: "web2x",
+								context: 3
+							});
+							B(s)
+						}
+					}, r.a.createElement(k.a, {
+						name: "chat",
+						className: N.a.chatIcon
+					}))), x && e.post && r.a.createElement(f.b, {
+						className: N.a.modalBody,
 						onClose: t => {
 							t && (e.sendEventWithName("copy_link", {
-								referralId: S
-							}), a(t)), c()
+								referralId: F
+							}), S(t)), R()
 						},
-						url: Object(p.a)(Object(g.a)(e.post.id), {
-							[C.q]: S,
+						url: Object(l.a)(Object(g.a)(e.post.id), {
+							[C.q]: F,
 							utm_source: "share",
 							utm_medium: "web2x",
 							utm_content: "rpan_stream"
 						})
 					}))
 				});
-			t.a = N(M)
+			t.a = R
 		},
 		"./src/reddit/components/ViewReportsDropdown/Loader.ts": function(e, t, s) {
 			"use strict";
@@ -4368,6 +4389,21 @@
 					} : s
 				}
 		},
+		"./src/reddit/helpers/trackers/shareToChat.ts": function(e, t, s) {
+			"use strict";
+			s.d(t, "a", (function() {
+				return r
+			}));
+			var o = s("./src/reddit/constants/tracking.ts"),
+				n = s("./src/reddit/selectors/telemetry.ts");
+			const r = () => e => ({
+				...Object(n.defaults)(e),
+				source: "post",
+				action: o.c.CLICK,
+				noun: "share_chat",
+				subreddit: Object(n.subreddit)(e)
+			})
+		},
 		"./src/reddit/icons/fonts/Approve/index.tsx": function(e, t, s) {
 			"use strict";
 			var o = s("./node_modules/react/index.js"),
@@ -4662,9 +4698,23 @@
 				experimentName: o.k
 			}) === o.f.Enabled
 		},
+		"./src/reddit/selectors/experiments/shareToChatButton.ts": function(e, t, s) {
+			"use strict";
+			s.d(t, "a", (function() {
+				return a
+			}));
+			var o = s("./node_modules/reselect/es/index.js"),
+				n = s("./src/reddit/constants/experiments.ts"),
+				r = s("./src/reddit/helpers/chooseVariant/index.ts"),
+				i = s("./src/reddit/selectors/user.ts");
+			const a = Object(o.a)(e => Object(r.c)(e, {
+				experimentEligibilitySelector: i.K,
+				experimentName: n.Ab
+			}), e => e === n.Bc)
+		},
 		"./src/redditGQL/operations/EventPostsBySubredditName.json": function(e) {
 			e.exports = JSON.parse('{"id":"9bbf7037ee9b"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.b926220bd297d458544d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.be06d9f650c3324bd824.js.map

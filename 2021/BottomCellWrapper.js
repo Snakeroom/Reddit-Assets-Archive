@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/BottomCellWrapper.34e7d0442d809bb03145.js
-// Retrieved at 10/18/2021, 7:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/BottomCellWrapper.3fadd4d32ac44c050f85.js
+// Retrieved at 10/19/2021, 5:20:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["BottomCellWrapper", "SignupUpsell"], {
 		"./src/reddit/components/ErrorBoundary/index.tsx": function(e, t, s) {
@@ -155,7 +155,7 @@
 					noun: f,
 					actionInfo: Object(_.actionInfo)(e)
 				}),
-				E = e => t => ({
+				h = e => t => ({
 					...Object(_.defaults)(t),
 					source: "popup",
 					action: "click",
@@ -165,7 +165,7 @@
 						type: e
 					})
 				}),
-				h = () => e => ({
+				E = () => e => ({
 					...Object(_.defaults)(e),
 					source: "popup",
 					action: "click",
@@ -202,12 +202,12 @@
 						const e = Object(i.e)(N.b),
 							t = Object(i.e)(N.d),
 							s = Object(i.e)(N.f),
-							o = Object(j.a)(b.Eb.Bottom_sheet),
-							l = Object(j.a)(b.Eb.Bottom_cell),
-							r = Object(j.a)(b.Eb.Bottom_cell_dismissible),
-							c = Object(j.a)(b.Eb.Bottom_cell_dismissible_immediate_trigger),
-							a = Object(j.a)(b.Eb.Bottom_cell_signup_upsell_copy),
-							d = Object(j.a)(b.Eb.Bottom_cell_surprise_install_copy);
+							o = Object(j.a)(b.Fb.Bottom_sheet),
+							l = Object(j.a)(b.Fb.Bottom_cell),
+							r = Object(j.a)(b.Fb.Bottom_cell_dismissible),
+							c = Object(j.a)(b.Fb.Bottom_cell_dismissible_immediate_trigger),
+							a = Object(j.a)(b.Fb.Bottom_cell_signup_upsell_copy),
+							d = Object(j.a)(b.Fb.Bottom_cell_surprise_install_copy);
 						let u;
 						if (e) u = L;
 						else if (t) u = I;
@@ -224,14 +224,14 @@
 						if (e && d) return `${p}bottom_cell_surprise_install_copy.png`;
 						throw new Error("Invalid variant for signup upsell")
 					}(),
-					f = Object(j.a)(b.Eb.Bottom_cell_signup_upsell_copy),
-					w = Object(j.a)(b.Eb.Bottom_cell_surprise_install_copy),
+					f = Object(j.a)(b.Fb.Bottom_cell_signup_upsell_copy),
+					w = Object(j.a)(b.Fb.Bottom_cell_surprise_install_copy),
 					D = f ? o.fbt._("Come join us, we have snacks", null, {
 						hk: "1LUl2W"
 					}) : o.fbt._("Log in or sign up for the best experience", null, {
 						hk: "2LAHQy"
 					}),
-					y = w ? o.fbt._("Scan the QR code, it's super fun", null, {
+					F = w ? o.fbt._("Scan the QR code, it's super fun", null, {
 						hk: "1nNmn7"
 					}) : o.fbt._("Get the app", null, {
 						hk: "2NvKYa"
@@ -259,7 +259,7 @@
 				}, l.createElement(m, {
 					Icon: B.a,
 					onClick: () => {
-						p(), s(E(g.Google))
+						p(), s(h(g.Google))
 					},
 					size: d.c.M,
 					iconClassName: S.a.googleIcon
@@ -268,7 +268,7 @@
 				})), l.createElement(m, {
 					Icon: v.a,
 					onClick: () => {
-						p(), s(E(g.Apple))
+						p(), s(h(g.Apple))
 					},
 					size: d.c.M,
 					iconClassName: S.a.appleIcon,
@@ -280,7 +280,7 @@
 				}, l.createElement(d.i, {
 					className: Object(r.a)(S.a.linkButton, S.a.emailButton),
 					onClick: () => {
-						p(), s(E(g.Reddit))
+						p(), s(h(g.Reddit))
 					},
 					redditStyle: !0,
 					size: d.c.XS
@@ -289,7 +289,7 @@
 				})), l.createElement(d.i, {
 					className: S.a.linkButton,
 					onClick: () => {
-						(() => u(Object(c.i)()))(), s(h())
+						(() => u(Object(c.i)()))(), s(E())
 					},
 					redditStyle: !0,
 					size: d.c.XS
@@ -307,7 +307,7 @@
 					src: _
 				}), l.createElement("div", {
 					className: S.a.downloadAppLabel
-				}, y))))
+				}, F))))
 			}
 		},
 		"./src/reddit/hooks/promo/useIsPromoShown.ts": function(e, t, s) {
@@ -419,9 +419,9 @@
 					experimentName: e,
 					experimentEligibilitySelector: c,
 					throttledVariants: {
-						[o.Eb.Bottom_cell_dismissible]: e,
-						[o.Eb.Bottom_cell_dismissible_immediate_trigger]: e,
-						[o.Eb.Bottom_sheet]: e
+						[o.Fb.Bottom_cell_dismissible]: e,
+						[o.Fb.Bottom_cell_dismissible_immediate_trigger]: e,
+						[o.Fb.Bottom_sheet]: e
 					},
 					expEventOverride: t
 				})
@@ -435,4 +435,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BottomCellWrapper.34e7d0442d809bb03145.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BottomCellWrapper.3fadd4d32ac44c050f85.js.map

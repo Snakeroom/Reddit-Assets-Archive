@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.c5926692e0171b2be6a8.js
-// Retrieved at 10/19/2021, 2:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.946d26e308607d4336b9.js
+// Retrieved at 10/19/2021, 5:20:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -343,12 +343,12 @@
 				d = a("./src/reddit/constants/promo.ts"),
 				m = a("./src/reddit/hooks/promo/useIsSignupUpsellVariantEligible.ts");
 			var u = function() {
-					const e = Object(m.a)(i.Eb.Bottom_cell),
-						t = Object(m.a)(i.Eb.Bottom_cell_dismissible),
-						a = Object(m.a)(i.Eb.Bottom_cell_dismissible_immediate_trigger),
-						s = Object(m.a)(i.Eb.Bottom_cell_signup_upsell_copy),
-						c = Object(m.a)(i.Eb.Bottom_cell_surprise_install_copy),
-						n = Object(m.a)(i.Eb.Bottom_sheet);
+					const e = Object(m.a)(i.Fb.Bottom_cell),
+						t = Object(m.a)(i.Fb.Bottom_cell_dismissible),
+						a = Object(m.a)(i.Fb.Bottom_cell_dismissible_immediate_trigger),
+						s = Object(m.a)(i.Fb.Bottom_cell_signup_upsell_copy),
+						c = Object(m.a)(i.Fb.Bottom_cell_surprise_install_copy),
+						n = Object(m.a)(i.Fb.Bottom_sheet);
 					return e || s || c ? d.b.SignupUpsellCell : t || a ? d.b.SignupUpsellCellDismissible : n ? d.b.SignupUpsellBottomSheet : null
 				},
 				p = a("./src/reddit/hooks/promo/useIsPromoShown.ts");
@@ -372,7 +372,7 @@
 					const a = function(e = h) {
 						const {
 							showPromo: t
-						} = Object(l.a)(), a = u(), n = Object(p.a)(a), d = Object(m.a)(i.Eb.Bottom_cell_dismissible_immediate_trigger);
+						} = Object(l.a)(), a = u(), n = Object(p.a)(a), d = Object(m.a)(i.Fb.Bottom_cell_dismissible_immediate_trigger);
 						return s.useMemo(() => r()(() => {
 							if (!n && a) {
 								const e = document.getElementById(o.d),
@@ -3929,7 +3929,7 @@
 				i = e => Object(r.c)(e, {
 					experimentEligibilitySelector: o,
 					experimentName: s.bb
-				}) === s.Db.Treatment
+				}) === s.Eb.Treatment
 		},
 		"./src/reddit/selectors/experiments/celebratoryMoments.ts": function(e, t, a) {
 			"use strict";
@@ -3950,13 +3950,13 @@
 			const r = e => {
 					const t = Object(c.c)(e, {
 						experimentEligibilitySelector: c.a,
-						experimentName: s.Ee
+						experimentName: s.Fe
 					});
 					return t === s.N.TwoDayCooldown || t === s.N.FiveDayCooldown
 				},
 				o = e => {
 					const t = Object(n.d)(e, {
-							experimentName: s.Ee
+							experimentName: s.Fe
 						}),
 						a = null == t ? void 0 : t.variant;
 					return a === s.N.TwoDayCooldown ? 2 : a === s.N.FiveDayCooldown ? 5 : 0
@@ -3979,7 +3979,7 @@
 			function r(e) {
 				return Object(c.c)(e, {
 					experimentEligibilitySelector: n.K,
-					experimentName: s.Vb
+					experimentName: s.Wb
 				})
 			}
 			const o = 31536e3;
@@ -3998,9 +3998,9 @@
 				return function(e) {
 					return Object(c.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: s.Ub
-					}) === s.Cc.Enabled
-				}(e) ? l.Achievements : t === s.Dc.ControlBanner ? l.CommunitySpacesControl : t === s.Dc.EnabledBanner ? l.CommunitySpaces : null
+						experimentName: s.Vb
+					}) === s.Dc.Enabled
+				}(e) ? l.Achievements : t === s.Ec.ControlBanner ? l.CommunitySpacesControl : t === s.Ec.EnabledBanner ? l.CommunitySpaces : null
 			}! function(e) {
 				e.Achievements = "achievements", e.CommunitySpaces = "communitySpaces", e.CommunitySpacesControl = "communitySpaces--control"
 			}(l || (l = {}))
@@ -4032,9 +4032,9 @@
 					experimentName: e,
 					experimentEligibilitySelector: i,
 					throttledVariants: {
-						[c.Eb.Bottom_cell_dismissible]: e,
-						[c.Eb.Bottom_cell_dismissible_immediate_trigger]: e,
-						[c.Eb.Bottom_sheet]: e
+						[c.Fb.Bottom_cell_dismissible]: e,
+						[c.Fb.Bottom_cell_dismissible_immediate_trigger]: e,
+						[c.Fb.Bottom_sheet]: e
 					},
 					expEventOverride: t
 				})
@@ -4061,4 +4061,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.c5926692e0171b2be6a8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.946d26e308607d4336b9.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OverlayDirectsEmptyState.ac97f956155856a0ad7e.js
-// Retrieved at 10/5/2021, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OverlayDirectsEmptyState.0d1ca3a69d7ee0433f93.js
+// Retrieved at 10/19/2021, 5:20:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OverlayDirectsEmptyState"], {
 		"./src/chat/components/OverlayDirectsEmptyState/index.m.less": function(e, t, a) {
@@ -21,120 +21,48 @@
 			a.r(t);
 			var n = a("./node_modules/fbt/lib/FbtPublic.js"),
 				r = a("./node_modules/react/index.js"),
-				o = a.n(r),
-				s = a("./node_modules/react-redux/es/index.js"),
-				c = a("./node_modules/react-router-redux/es/index.js"),
-				l = a("./src/config.ts"),
+				s = a.n(r),
+				c = a("./node_modules/react-redux/es/index.js"),
+				l = a("./node_modules/react-router-redux/es/index.js"),
+				o = a("./src/config.ts"),
 				i = a("./src/lib/lessComponent.tsx"),
-				d = a("./src/chat/components/OverlayNav/index.tsx"),
-				m = a("./src/chat/controls/Overlay/index.tsx"),
-				u = a("./src/chat/controls/OverlayControlBar/index.tsx"),
-				y = a("./src/chat/helpers/urls/index.ts"),
-				h = a("./src/chat/components/OverlayDirectsEmptyState/index.m.less"),
-				p = a.n(h);
-			const x = i.a.div("OverlayContent", p.a),
-				B = i.a.img("Image", p.a),
-				_ = i.a.div("Info", p.a),
-				O = i.a.h4("Header", p.a),
-				b = i.a.p("Text", p.a),
-				f = Object(s.b)(null, e => ({
+				m = a("./src/chat/components/OverlayNav/index.tsx"),
+				h = a("./src/chat/controls/Overlay/index.tsx"),
+				d = a("./src/chat/controls/OverlayControlBar/index.tsx"),
+				u = a("./src/chat/helpers/urls/index.ts"),
+				_ = a("./src/chat/components/OverlayDirectsEmptyState/index.m.less"),
+				x = a.n(_);
+			const f = i.a.div("OverlayContent", x.a),
+				v = i.a.img("Image", x.a),
+				p = i.a.div("Info", x.a),
+				y = i.a.h4("Header", x.a),
+				O = i.a.p("Text", x.a),
+				b = Object(c.b)(null, e => ({
 					onCreateMessage: () => {
-						const t = Object(y.getRedirectURL)(Object(y.channelUrl)("create"));
-						return e(Object(c.b)(t))
+						const t = Object(u.getRedirectURL)(Object(u.channelUrl)("create"));
+						return e(Object(l.b)(t))
 					}
 				}));
-			t.default = f(e => o.a.createElement(m.a, {
+			t.default = b(e => s.a.createElement(h.a, {
 				innerContent: !0
-			}, o.a.createElement(d.a, {
+			}, s.a.createElement(m.a, {
 				title: n.fbt._("Start chatting", null, {
 					hk: "3B5dRm"
 				})
-			}), o.a.createElement(x, null, o.a.createElement(B, {
-				src: `${l.a.assetPath}/img/chat/empty-hero.png`
-			}), o.a.createElement(_, null, o.a.createElement(O, null, n.fbt._("Start a direct chat", null, {
+			}), s.a.createElement(f, null, s.a.createElement(v, {
+				src: `${o.a.assetPath}/img/chat/empty-hero.png`
+			}), s.a.createElement(p, null, s.a.createElement(y, null, n.fbt._("Start a direct chat", null, {
 				hk: "4qVzlj"
-			})), o.a.createElement(b, null, n.fbt._("You can start a new direct chat with the button below or from someone's profile", null, {
+			})), s.a.createElement(O, null, n.fbt._("You can start a new direct chat with the button below or from someone's profile", null, {
 				hk: "3wS0vs"
-			})))), o.a.createElement(u.a, {
+			})))), s.a.createElement(d.a, {
 				primaryButtonText: n.fbt._("New Chat", null, {
 					hk: "33WSw"
 				}),
 				primaryButtonAction: e.onCreateMessage,
 				primaryButtonOnly: !0
 			})))
-		},
-		"./src/chat/controls/OverlayControlBar/index.m.less": function(e, t, a) {
-			e.exports = {
-				Button: "jKsK0jQWRidPglQ7Czk8y",
-				button: "jKsK0jQWRidPglQ7Czk8y",
-				NoBorderPrimaryButton: "_2_xFtB6XsnUOGk0YPukDeu",
-				noBorderPrimaryButton: "_2_xFtB6XsnUOGk0YPukDeu",
-				OverlayControlBar: "_3GhQcGD7m0hf9mkUK6I1JG",
-				overlayControlBar: "_3GhQcGD7m0hf9mkUK6I1JG",
-				NoHeaderText: "_1KR6Li0ovE5q7gSH0Rl19G",
-				noHeaderText: "_1KR6Li0ovE5q7gSH0Rl19G",
-				ButtonsWrapper: "_2-kvEgGOQg3X-keFfUpUa",
-				buttonsWrapper: "_2-kvEgGOQg3X-keFfUpUa",
-				HeaderText: "_3kD8pfjcLZgRDsMewcOmc4",
-				headerText: "_3kD8pfjcLZgRDsMewcOmc4"
-			}
-		},
-		"./src/chat/controls/OverlayControlBar/index.tsx": function(e, t, a) {
-			"use strict";
-			var n = a("./node_modules/fbt/lib/FbtPublic.js"),
-				r = a("./node_modules/react/index.js"),
-				o = a.n(r),
-				s = a("./node_modules/react-redux/es/index.js"),
-				c = a("./node_modules/react-router-redux/es/index.js"),
-				l = a("./src/config.ts"),
-				i = a("./src/lib/classNames/index.ts"),
-				d = a("./src/chat/controls/Button/index.tsx"),
-				m = a("./src/chat/controls/OverlayControlBar/index.m.less"),
-				u = a.n(m),
-				y = a("./src/chat/helpers/dom.ts");
-			const h = Object(s.b)(void 0, e => ({
-				onSubmit: () => {},
-				onCancel: Object(y.b)(() => e(Object(c.a)()))
-			}))(e => o.a.createElement("div", {
-				className: Object(i.a)({
-					[u.a.primary]: e.primaryButtonOnly,
-					[u.a.NoHeaderText]: !e.children
-				}, u.a.OverlayControlBar, e.className)
-			}, e.children && o.a.createElement("span", {
-				className: u.a.HeaderText
-			}, e.children), o.a.createElement("div", {
-				className: u.a.ButtonsWrapper
-			}, e.primaryButtonBlock && o.a.createElement(d.a, {
-				onClick: e.primaryButtonBlockAction || e.onCancel,
-				className: Object(i.a)(u.a.Button, u.a.NoBorderPrimaryButton),
-				secondary: !0,
-				noBorder: !0
-			}, e.primaryButtonBlockText || n.fbt._("Block", null, {
-				hk: "4CA4VX"
-			})), !e.primaryButtonOnly && (e.secondaryButtonCTLOptions ? o.a.createElement(d.a, {
-				className: u.a.Button,
-				href: `${l.a.redditHelpUrl}/en/categories/rules-reporting/suicide-response/what-do-i-do-if-someone-talks-about-seriously-hurting`,
-				secondary: !0
-			}, n.fbt._("Other Options", null, {
-				hk: "1RadlV"
-			})) : o.a.createElement(d.a, {
-				className: u.a.Button,
-				onClick: e.secondaryButtonAction || e.onCancel,
-				primary: !!e.secondaryButtonOnly,
-				secondary: !e.secondaryButtonOnly
-			}, e.secondaryButtonText || n.fbt._("Cancel", null, {
-				hk: "2TSLl5"
-			}))), !e.secondaryButtonOnly && o.a.createElement(d.a, {
-				className: u.a.Button,
-				type: "submit",
-				primary: !0,
-				onClick: e.primaryButtonAction || e.onSubmit,
-				disabled: e.primaryButtonDisabled
-			}, e.primaryButtonText || n.fbt._("Submit", null, {
-				hk: "4aU3dh"
-			})))));
-			h.displayName = "OverlayControlBar", t.a = h
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayDirectsEmptyState.ac97f956155856a0ad7e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayDirectsEmptyState.0d1ca3a69d7ee0433f93.js.map
