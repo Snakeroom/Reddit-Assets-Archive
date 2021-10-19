@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.241ecc7fed514e83ece9.js
-// Retrieved at 10/19/2021, 1:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.183755c5c7764da52ad0.js
+// Retrieved at 10/19/2021, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -5916,7 +5916,7 @@
 						postId: t.id,
 						source: t.source
 					}, a.a.createElement(X, e)); {
-						const o = t.media && Object(I.G)(t.media) ? Object(O.c)(t.id, r.name) : t.permalink,
+						const o = t.media && Object(I.H)(t.media) ? Object(O.c)(t.id, r.name) : t.permalink,
 							d = e.isCommentPermalink ? Object(_.b)(o) : c ? Object(m.a)(o, void 0, n) : Object(m.a)(o);
 						return a.a.createElement(K, {
 							disableVisited: e.disableVisited,
@@ -5973,7 +5973,7 @@
 						post: r
 					} = e, {
 						isSponsored: s
-					} = r, n = e.isCommentsPage ? q.SourceElement.PostLink : q.SourceElement.ListingPostLink, c = !t && !e.isCrosspost && e.size !== P.Large && !r.isSponsored && !(r.media && Object(I.G)(r.media)) && (r.source || r.media && (r.media.type === I.o.GIFVIDEO || r.media.type === I.o.IMAGE || r.media.type === I.o.EMBED));
+					} = r, n = e.isCommentsPage ? q.SourceElement.PostLink : q.SourceElement.ListingPostLink, c = !t && !e.isCrosspost && e.size !== P.Large && !r.isSponsored && !(r.media && Object(I.H)(r.media)) && (r.source || r.media && (r.media.type === I.o.GIFVIDEO || r.media.type === I.o.IMAGE || r.media.type === I.o.EMBED));
 					if (t || !e.isCommentsPage || e.isCommentPermalink || e.shouldLinkWrap) {
 						if (c) return a.a.createElement(y.a, {
 							className: e.outboundLinkClassName,
@@ -17979,7 +17979,7 @@
 							postId: r,
 							richtextContent: s
 						} = t.payload, n = e[r];
-						return n && n.media && Object(Sp.I)(n.media) ? {
+						return n && n.media && Object(Sp.J)(n.media) ? {
 							...e,
 							[r]: {
 								...n,
@@ -26403,4 +26403,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.241ecc7fed514e83ece9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.183755c5c7764da52ad0.js.map

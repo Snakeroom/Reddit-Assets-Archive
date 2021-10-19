@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.f0ba9b9778da3c10b824.js
-// Retrieved at 10/19/2021, 1:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.49c7b4eaa389960ee481.js
+// Retrieved at 10/19/2021, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -2308,6 +2308,10 @@
 						name: "poll_post",
 						className: s
 					});
+					if (n.audioRoom) return r.a.createElement(p.a, {
+						name: "audio",
+						className: s
+					});
 					switch (e) {
 						case b.o.GIFVIDEO:
 							return r.a.createElement(p.a, {
@@ -2354,7 +2358,7 @@
 					toggle: f,
 					useMediaIcons: x
 				} = e, g = n || b, E = o && !!n;
-				return g.media && !(("rtjson" === g.media.type || "text" === g.media.type) && !Object(u.a)(g)) || !!b.pollData ? r.a.createElement("button", {
+				return g.media && !(("rtjson" === g.media.type || "text" === g.media.type || "liveaudio" === g.media.type) && !Object(u.a)(g)) || !!b.pollData ? r.a.createElement("button", {
 					"aria-expanded": !!l,
 					"aria-haspopup": !0,
 					"aria-label": s.fbt._("Expand content", null, {
@@ -3530,6 +3534,20 @@
 				}
 			}, Array.isArray(e.children) && e.children[2])), 3)
 		},
+		"./src/reddit/models/Audio/index.ts": function(e, t, n) {
+			"use strict";
+			var s;
+
+			function o(e) {
+				return Boolean(e.audioRoom)
+			}
+			n.d(t, "a", (function() {
+					return o
+				})),
+				function(e) {
+					e.Unknown = "UNKNOWN", e.Twilio = "TWILIO"
+				}(s || (s = {}))
+		},
 		"./src/reddit/models/Gold/Powerups/powerupsFlair/index.ts": function(e, t, n) {
 			"use strict";
 			var s;
@@ -3844,4 +3862,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.f0ba9b9778da3c10b824.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.49c7b4eaa389960ee481.js.map

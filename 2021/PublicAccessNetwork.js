@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.e20cad64341f5a14d89e.js
-// Retrieved at 10/18/2021, 7:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.12e7400509cfb653265c.js
+// Retrieved at 10/19/2021, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1269,7 +1269,7 @@
 						listingKey: C
 					}), y = u && (l || !E || 0 === E.length), k = l, j = c, I = Object(me.H)(w, {
 						postId: b
-					}), R = !!I && !!I.media && (Object(K.I)(I.media) || Object(K.F)(I.media)) && !I.media.altText;
+					}), R = !!I && !!I.media && (Object(K.J)(I.media) || Object(K.F)(I.media)) && !I.media.altText;
 					if (!(_ || y || k || j || R || p)) return;
 					_ && t(Ae({
 						key: S
@@ -7839,4 +7839,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.e20cad64341f5a14d89e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.12e7400509cfb653265c.js.map

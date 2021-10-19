@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWelcomeMessageModal.9837bab2c5ae1e1a4334.js
-// Retrieved at 10/18/2021, 7:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWelcomeMessageModal.ddaafe6db9434a2527eb.js
+// Retrieved at 10/19/2021, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWelcomeMessageModal"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -482,7 +482,7 @@
 				},
 				I = e => {
 					const t = {};
-					return (!e.showFull && Object(g.J)(e.height, e.width) || e.shouldBlur) && (t.overflow = "hidden"), e.showFull || (t.maxHeight = `${g.j}px`, e.shouldBlur && (t.maxWidth = Object(g.J)(e.height, e.width) ? `${g.z}px` : `${e.width}px`)), e.showCentered && (t.margin = "0 auto"), e.isExpando && e.maxHeight && (t.maxHeight = `${e.maxHeight}px`), i.a.createElement("div", {
+					return (!e.showFull && Object(g.K)(e.height, e.width) || e.shouldBlur) && (t.overflow = "hidden"), e.showFull || (t.maxHeight = `${g.j}px`, e.shouldBlur && (t.maxWidth = Object(g.K)(e.height, e.width) ? `${g.z}px` : `${e.width}px`)), e.showCentered && (t.margin = "0 auto"), e.isExpando && e.maxHeight && (t.maxHeight = `${e.maxHeight}px`), i.a.createElement("div", {
 						className: Object(c.a)(S.a.container, e.className),
 						style: t
 					}, e.children)
@@ -536,7 +536,7 @@
 					onClick: e,
 					...t
 				}) => {
-					const s = Object(g.J)(t.height, t.width),
+					const s = Object(g.K)(t.height, t.width),
 						r = k(t.height) && s;
 					return i.a.createElement(I, C({}, t, {
 						className: `${s?`${w.a} `:""}${t.className||""}`
@@ -550,7 +550,7 @@
 						} : {},
 						target: "_blank",
 						rel: u.c
-					}, M(s, t)), t.isListing && !t.showFull && t.height > g.j && Object(g.J)(t.height, t.width) && i.a.createElement("div", {
+					}, M(s, t)), t.isListing && !t.showFull && t.height > g.j && Object(g.K)(t.height, t.width) && i.a.createElement("div", {
 						className: S.a.seeMore
 					}, n.fbt._("see full image", null, {
 						hk: "1Qygw5"
@@ -2595,4 +2595,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWelcomeMessageModal.9837bab2c5ae1e1a4334.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWelcomeMessageModal.ddaafe6db9434a2527eb.js.map

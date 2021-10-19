@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.c153794b552043e1e013.js
-// Retrieved at 10/19/2021, 1:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.34eec45243c3805e0ff0.js
+// Retrieved at 10/19/2021, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1059,8 +1059,8 @@
 				V = s("./src/reddit/constants/posts.ts"),
 				q = s("./src/reddit/featureFlags/index.ts"),
 				J = s("./src/reddit/helpers/getSubredditIcon/index.ts"),
-				G = s("./src/reddit/constants/tracking.ts");
-			var K = s("./src/reddit/selectors/inlineSubredditEditing.ts"),
+				K = s("./src/reddit/constants/tracking.ts");
+			var G = s("./src/reddit/selectors/inlineSubredditEditing.ts"),
 				Z = s("./src/reddit/selectors/subreddit.ts"),
 				Y = s("./src/reddit/selectors/user.ts"),
 				Q = s("./src/reddit/selectors/widgets.ts"),
@@ -1072,7 +1072,7 @@
 					spPollsEnabled: q.d.spPolls,
 					subredditInlineEditingEnabled: (e, {
 						subredditId: t
-					}) => Object(K.a)(e, {
+					}) => Object(G.a)(e, {
 						subredditId: t
 					}),
 					tournamentsEnabled: (e, {
@@ -1173,7 +1173,7 @@
 						return (e => t => ({
 							...N.defaults(t),
 							source: "id_banner",
-							action: G.c.CLICK,
+							action: K.c.CLICK,
 							noun: e,
 							subreddit: N.subreddit(t)
 						}))(e ? "unsubscribe" : "subscribe")
@@ -1979,7 +1979,7 @@
 				},
 				N = e => {
 					const t = {};
-					return (!e.showFull && Object(g.J)(e.height, e.width) || e.shouldBlur) && (t.overflow = "hidden"), e.showFull || (t.maxHeight = `${g.j}px`, e.shouldBlur && (t.maxWidth = Object(g.J)(e.height, e.width) ? `${g.z}px` : `${e.width}px`)), e.showCentered && (t.margin = "0 auto"), e.isExpando && e.maxHeight && (t.maxHeight = `${e.maxHeight}px`), i.a.createElement("div", {
+					return (!e.showFull && Object(g.K)(e.height, e.width) || e.shouldBlur) && (t.overflow = "hidden"), e.showFull || (t.maxHeight = `${g.j}px`, e.shouldBlur && (t.maxWidth = Object(g.K)(e.height, e.width) ? `${g.z}px` : `${e.width}px`)), e.showCentered && (t.margin = "0 auto"), e.isExpando && e.maxHeight && (t.maxHeight = `${e.maxHeight}px`), i.a.createElement("div", {
 						className: Object(c.a)(O.a.container, e.className),
 						style: t
 					}, e.children)
@@ -2033,7 +2033,7 @@
 					onClick: e,
 					...t
 				}) => {
-					const s = Object(g.J)(t.height, t.width),
+					const s = Object(g.K)(t.height, t.width),
 						r = S(t.height) && s;
 					return i.a.createElement(N, j({}, t, {
 						className: `${s?`${k.a} `:""}${t.className||""}`
@@ -2047,7 +2047,7 @@
 						} : {},
 						target: "_blank",
 						rel: u.c
-					}, P(s, t)), t.isListing && !t.showFull && t.height > g.j && Object(g.J)(t.height, t.width) && i.a.createElement("div", {
+					}, P(s, t)), t.isListing && !t.showFull && t.height > g.j && Object(g.K)(t.height, t.width) && i.a.createElement("div", {
 						className: O.a.seeMore
 					}, n.fbt._("see full image", null, {
 						hk: "1Qygw5"
@@ -4428,8 +4428,8 @@
 				q = s("./src/reddit/components/SidebarPostList/SmallPost/index.m.less"),
 				J = s.n(q);
 			const {
-				fbt: G
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), K = e => e.type === H.f.Nsfw || e.type === H.f.Spoiler, Z = Object(c.c)({
+				fbt: K
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), G = e => e.type === H.f.Nsfw || e.type === H.f.Spoiler, Z = Object(c.c)({
 				post: D.H,
 				subredditOrProfile: D.U
 			});
@@ -4459,7 +4459,7 @@
 						subredditOrProfile: r
 					} = this.props, i = {
 						post: t
-					}, o = Object(R.a)(Object(U.b)(i)), d = t.flair.filter(K);
+					}, o = Object(R.a)(Object(U.b)(i)), d = t.flair.filter(G);
 					return a.a.createElement("div", {
 						className: Object(S.a)(J.a.container, e, {
 							[J.a.redditStyle]: s
@@ -4485,17 +4485,17 @@
 						className: J.a.meta
 					}, Object(V.h)(r) ? Object(T.d)(r.displayText || r.name) : Object(T.c)(r.displayText || r.name)), a.a.createElement("span", {
 						className: J.a.meta
-					}, G._({
+					}, K._({
 						"*": "{score} points",
 						_1: "1 point"
-					}, [G._plural(t.score, "score", Object(W.b)(t.score))], {
+					}, [K._plural(t.score, "score", Object(W.b)(t.score))], {
 						hk: "1JZ0qm"
 					})), a.a.createElement("span", {
 						className: J.a.meta
-					}, G._({
+					}, K._({
 						"*": "{numComments} comments",
 						_1: "1 comment"
-					}, [G._plural(t.numComments, "numComments", Object(W.b)(t.numComments))], {
+					}, [K._plural(t.numComments, "numComments", Object(W.b)(t.numComments))], {
 						hk: "2UbjdS"
 					}))))
 				}
@@ -4749,8 +4749,8 @@
 				Ve = s("./src/reddit/components/Widgets/ModeratorOnboarding/index.m.less"),
 				qe = s.n(Ve);
 			const Je = "mod_onboarding_modal",
-				Ge = "mod_onboarding_widget",
-				Ke = Object(c.a)(Re.a, (e, t) => Object(We.b)(Ae.c.config)(e, {
+				Ke = "mod_onboarding_widget",
+				Ge = Object(c.a)(Re.a, (e, t) => Object(We.b)(Ae.c.config)(e, {
 					subredditId: t.subredditId
 				}), (e, t) => Object(ze.k)(e, {
 					subredditId: t.subredditId
@@ -4766,7 +4766,7 @@
 					super(e), this.confirmCloseModOnboarding = () => {
 						this.props.toggleCloseMenuModal(), this.setState({
 							visible: !1
-						}), Object(De.Gb)(Ge, !0, this.props.subredditId), this.props.sendEvent(Object(Be.d)("close"))
+						}), Object(De.Gb)(Ke, !0, this.props.subredditId), this.props.sendEvent(Object(Be.d)("close"))
 					}, this.customizeThemeColors = () => {
 						this.props.sendEvent(Object(Be.d)("theme_colors_link"))
 					}, this.customizeIcon = () => {
@@ -4792,7 +4792,7 @@
 						modHasEditedColors: s,
 						modHasEditedIcon: n,
 						subredditId: r
-					} = this.props, i = e && !(t && s && n) && (!Object(ve.a)() || !Object(De.E)(Ge, r));
+					} = this.props, i = e && !(t && s && n) && (!Object(ve.a)() || !Object(De.E)(Ke, r));
 					i !== this.state.visible && (this.setState({
 						visible: i
 					}), i && this.props.sendEvent(Object(Be.e)("mod_edu_banner")))
@@ -4877,7 +4877,7 @@
 					})) : null
 				}
 			}
-			var Ye = Object(d.b)(Ke, (e, {
+			var Ye = Object(d.b)(Ge, (e, {
 					subredditId: t,
 					subredditName: s
 				}) => ({
@@ -6204,4 +6204,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.c153794b552043e1e013.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.34eec45243c3805e0ff0.js.map

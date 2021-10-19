@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.59c2d1576ac074b41978.js
-// Retrieved at 10/13/2021, 6:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.e2a309fcfc5d99dc8266.js
+// Retrieved at 10/19/2021, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages~reddit-components-ModHub-Content-ModQueue"], {
 		"./node_modules/shallowequal/index.js": function(e, t) {
@@ -1736,7 +1736,7 @@
 						L = {
 							estHeight: Object(w.c)(R, o),
 							id: e,
-							isFocusable: !(!M.media || !(o === j.g.Large || o === j.g.Classic && Object(T.G)(M.media))) && (T.d.has(M.media.type) && (!W || !T.s.has(W)) && !M.isSpoiler),
+							isFocusable: !(!M.media || !(o === j.g.Large || o === j.g.Classic && Object(T.H)(M.media))) && (T.d.has(M.media.type) && (!W || !T.s.has(W)) && !M.isSpoiler),
 							trackOnEnteredViewport: D,
 							trackOnExitedViewport: Q,
 							render: ({
@@ -2164,4 +2164,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.59c2d1576ac074b41978.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.e2a309fcfc5d99dc8266.js.map

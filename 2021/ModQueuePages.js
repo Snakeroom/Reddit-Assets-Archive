@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.350af89714ff801ce5b7.js
-// Retrieved at 10/18/2021, 7:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.c3b916a7b27b0440b37a.js
+// Retrieved at 10/19/2021, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1175,12 +1175,12 @@
 						commentListNodeId: t
 					})), 5e3)
 				};
-			var J = s("./src/reddit/components/Comments/Comment/TopMeta/crowdControl.m.less"),
-				z = s.n(J);
+			var z = s("./src/reddit/components/Comments/Comment/TopMeta/crowdControl.m.less"),
+				J = s.n(z);
 			const {
 				fbt: q
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), X = () => o.a.createElement(C.a, {
-				className: z.a.crowdControlText
+				className: J.a.crowdControlText
 			}, q._("Crowd Control", null, {
 				hk: "4WgEW"
 			}));
@@ -2262,7 +2262,7 @@
 				},
 				P = e => {
 					const t = {};
-					return (!e.showFull && Object(v.J)(e.height, e.width) || e.shouldBlur) && (t.overflow = "hidden"), e.showFull || (t.maxHeight = `${v.j}px`, e.shouldBlur && (t.maxWidth = Object(v.J)(e.height, e.width) ? `${v.z}px` : `${e.width}px`)), e.showCentered && (t.margin = "0 auto"), e.isExpando && e.maxHeight && (t.maxHeight = `${e.maxHeight}px`), o.a.createElement("div", {
+					return (!e.showFull && Object(v.K)(e.height, e.width) || e.shouldBlur) && (t.overflow = "hidden"), e.showFull || (t.maxHeight = `${v.j}px`, e.shouldBlur && (t.maxWidth = Object(v.K)(e.height, e.width) ? `${v.z}px` : `${e.width}px`)), e.showCentered && (t.margin = "0 auto"), e.isExpando && e.maxHeight && (t.maxHeight = `${e.maxHeight}px`), o.a.createElement("div", {
 						className: Object(c.a)(O.a.container, e.className),
 						style: t
 					}, e.children)
@@ -2316,7 +2316,7 @@
 					onClick: e,
 					...t
 				}) => {
-					const s = Object(v.J)(t.height, t.width),
+					const s = Object(v.K)(t.height, t.width),
 						r = T(t.height) && s;
 					return o.a.createElement(P, k({}, t, {
 						className: `${s?`${I.a} `:""}${t.className||""}`
@@ -2330,7 +2330,7 @@
 						} : {},
 						target: "_blank",
 						rel: m.c
-					}, M(s, t)), t.isListing && !t.showFull && t.height > v.j && Object(v.J)(t.height, t.width) && o.a.createElement("div", {
+					}, M(s, t)), t.isListing && !t.showFull && t.height > v.j && Object(v.K)(t.height, t.width) && o.a.createElement("div", {
 						className: O.a.seeMore
 					}, n.fbt._("see full image", null, {
 						hk: "1Qygw5"
@@ -3784,7 +3784,7 @@
 							{
 								H: n,
 								D: r
-							} = J(e.a),
+							} = z(e.a),
 							{
 								c: i = []
 							} = e;
@@ -3921,7 +3921,7 @@
 						key: s
 					}, t) : t, n)
 				},
-				J = e => {
+				z = e => {
 					switch (e) {
 						case p.f:
 							return {
@@ -4124,10 +4124,10 @@
 			const V = N.g,
 				U = 5 * p.J,
 				G = 3,
-				J = Object(u.c)({
+				z = Object(u.c)({
 					isOverlayOpen: A.i
 				}),
-				z = Object(l.b)(J),
+				J = Object(l.b)(z),
 				q = {};
 
 			function X(e) {
@@ -4645,7 +4645,7 @@
 					return void 0 === e.onLoadMore || "loadMoreToken" in e
 				}
 			}
-			t.b = z(Object(F.b)(le))
+			t.b = J(Object(F.b)(le))
 		},
 		"./src/reddit/components/Scroller/getDocumentTop.ts": function(e, t, s) {
 			"use strict";
@@ -6046,7 +6046,7 @@
 					}
 				}),
 				G = Object(a.b)(U);
-			class J extends i.a.Component {
+			class z extends i.a.Component {
 				constructor() {
 					super(...arguments), this.sendEventWithName = e => () => this.props.sendEvent(t => ({
 						source: "bulk_mod_action",
@@ -6099,7 +6099,7 @@
 					}))
 				}
 			}
-			t.default = W(G(Object(u.c)(J)))
+			t.default = W(G(Object(u.c)(z)))
 		},
 		"./src/reddit/reducers/features/powerups/index.ts": function(e, t, s) {
 			"use strict";
@@ -6431,4 +6431,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.350af89714ff801ce5b7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.c3b916a7b27b0440b37a.js.map

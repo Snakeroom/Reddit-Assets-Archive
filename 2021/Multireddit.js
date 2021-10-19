@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.d365bf9dd709138d022e.js
-// Retrieved at 10/18/2021, 7:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.ab84144a4f59b544f729.js
+// Retrieved at 10/19/2021, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -3867,7 +3867,7 @@
 				},
 				I = e => {
 					const t = {};
-					return (!e.showFull && Object(_.J)(e.height, e.width) || e.shouldBlur) && (t.overflow = "hidden"), e.showFull || (t.maxHeight = `${_.j}px`, e.shouldBlur && (t.maxWidth = Object(_.J)(e.height, e.width) ? `${_.z}px` : `${e.width}px`)), e.showCentered && (t.margin = "0 auto"), e.isExpando && e.maxHeight && (t.maxHeight = `${e.maxHeight}px`), o.a.createElement("div", {
+					return (!e.showFull && Object(_.K)(e.height, e.width) || e.shouldBlur) && (t.overflow = "hidden"), e.showFull || (t.maxHeight = `${_.j}px`, e.shouldBlur && (t.maxWidth = Object(_.K)(e.height, e.width) ? `${_.z}px` : `${e.width}px`)), e.showCentered && (t.margin = "0 auto"), e.isExpando && e.maxHeight && (t.maxHeight = `${e.maxHeight}px`), o.a.createElement("div", {
 						className: Object(d.a)(O.a.container, e.className),
 						style: t
 					}, e.children)
@@ -3921,7 +3921,7 @@
 					onClick: e,
 					...t
 				}) => {
-					const n = Object(_.J)(t.height, t.width),
+					const n = Object(_.K)(t.height, t.width),
 						r = S(t.height) && n;
 					return o.a.createElement(I, j({}, t, {
 						className: `${n?`${k.a} `:""}${t.className||""}`
@@ -3935,7 +3935,7 @@
 						} : {},
 						target: "_blank",
 						rel: u.c
-					}, N(n, t)), t.isListing && !t.showFull && t.height > _.j && Object(_.J)(t.height, t.width) && o.a.createElement("div", {
+					}, N(n, t)), t.isListing && !t.showFull && t.height > _.j && Object(_.K)(t.height, t.width) && o.a.createElement("div", {
 						className: O.a.seeMore
 					}, s.fbt._("see full image", null, {
 						hk: "1Qygw5"
@@ -4621,7 +4621,7 @@
 						I = {
 							estHeight: Object(D.c)(P, s),
 							id: e,
-							isFocusable: !(!B.media || !(s === j.g.Large || s === j.g.Classic && Object(L.G)(B.media))) && (L.d.has(B.media.type) && (!H || !L.s.has(H)) && !B.isSpoiler),
+							isFocusable: !(!B.media || !(s === j.g.Large || s === j.g.Classic && Object(L.H)(B.media))) && (L.d.has(B.media.type) && (!H || !L.s.has(H)) && !B.isSpoiler),
 							trackOnEnteredViewport: M,
 							trackOnExitedViewport: z,
 							render: ({
@@ -8204,4 +8204,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.d365bf9dd709138d022e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.ab84144a4f59b544f729.js.map

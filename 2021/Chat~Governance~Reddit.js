@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.9a50a9828daf17fdd6f6.js
-// Retrieved at 10/19/2021, 2:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.2f71e9e16674263ba94b.js
+// Retrieved at 10/19/2021, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -2500,10 +2500,10 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("148822"),
+				buildNumber: Object(r.c)("148827"),
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
-				buildTimestamp: Object(r.b)("1634665544"),
+				buildTimestamp: Object(r.b)("1634666562"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -5041,14 +5041,14 @@
 					}))
 				},
 				z = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %ccdea61368fafcc400adb1a1bea5f714c539d4d0e-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c65a9e7a61f95592723f1bb0667fa780f0261cef8-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${v.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "cdea61368fafcc400adb1a1bea5f714c539d4d0e-production",
+						release: "65a9e7a61f95592723f1bb0667fa780f0261cef8-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -5561,7 +5561,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "cdea61368fafcc400adb1a1bea5f714c539d4d0e-production",
+						releaseClient: "65a9e7a61f95592723f1bb0667fa780f0261cef8-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -11047,7 +11047,7 @@
 						});
 						if (t) return n(Object(V.b)(`${t.url}predictions/`)), document.body.scrollTop = 0, void(document.documentElement.scrollTop = 0)
 					}
-					if (Object(N.b)(e) && e.media && Object(P.G)(e.media)) {
+					if (Object(N.b)(e) && e.media && Object(P.H)(e.media)) {
 						const {
 							id: t,
 							type: i
@@ -11070,7 +11070,7 @@
 						o = Object(y.H)(s, {
 							postId: e
 						});
-					if (!(o && o.media && Object(P.I)(o.media) && o.media.isRichtextPreview)) return;
+					if (!(o && o.media && Object(P.J)(o.media) && o.media.isRichtextPreview)) return;
 					const d = await ((e, t) => Object(k.a)(e, {
 						...U,
 						variables: t
@@ -25394,82 +25394,84 @@
 			"use strict";
 			i.d(t, "v", (function() {
 				return n
-			})), i.d(t, "K", (function() {
-				return o
 			})), i.d(t, "L", (function() {
-				return d
-			})), i.d(t, "G", (function() {
-				return a
-			})), i.d(t, "F", (function() {
-				return l
-			})), i.d(t, "E", (function() {
-				return u
-			})), i.d(t, "I", (function() {
-				return c
-			})), i.d(t, "o", (function() {
-				return _
-			})), i.d(t, "a", (function() {
-				return p
-			})), i.d(t, "j", (function() {
-				return m
-			})), i.d(t, "k", (function() {
-				return h
-			})), i.d(t, "l", (function() {
-				return f
-			})), i.d(t, "m", (function() {
-				return b
-			})), i.d(t, "z", (function() {
-				return g
-			})), i.d(t, "i", (function() {
-				return w
-			})), i.d(t, "p", (function() {
-				return y
-			})), i.d(t, "y", (function() {
-				return v
-			})), i.d(t, "c", (function() {
-				return E
-			})), i.d(t, "n", (function() {
-				return T
-			})), i.d(t, "q", (function() {
-				return S
-			})), i.d(t, "r", (function() {
-				return O
-			})), i.d(t, "e", (function() {
-				return I
-			})), i.d(t, "f", (function() {
-				return R
-			})), i.d(t, "t", (function() {
-				return F
-			})), i.d(t, "u", (function() {
-				return C
-			})), i.d(t, "h", (function() {
-				return N
-			})), i.d(t, "b", (function() {
-				return A
-			})), i.d(t, "s", (function() {
-				return j
-			})), i.d(t, "x", (function() {
-				return D
-			})), i.d(t, "w", (function() {
-				return P
-			})), i.d(t, "d", (function() {
-				return x
-			})), i.d(t, "g", (function() {
-				return L
-			})), i.d(t, "A", (function() {
-				return B
-			})), i.d(t, "D", (function() {
-				return k
-			})), i.d(t, "C", (function() {
-				return M
-			})), i.d(t, "J", (function() {
-				return U
-			})), i.d(t, "B", (function() {
-				return G
+				return o
 			})), i.d(t, "M", (function() {
-				return V
+				return d
 			})), i.d(t, "H", (function() {
+				return a
+			})), i.d(t, "G", (function() {
+				return l
+			})), i.d(t, "F", (function() {
+				return u
+			})), i.d(t, "E", (function() {
+				return c
+			})), i.d(t, "J", (function() {
+				return _
+			})), i.d(t, "o", (function() {
+				return p
+			})), i.d(t, "a", (function() {
+				return m
+			})), i.d(t, "j", (function() {
+				return h
+			})), i.d(t, "k", (function() {
+				return f
+			})), i.d(t, "l", (function() {
+				return b
+			})), i.d(t, "m", (function() {
+				return g
+			})), i.d(t, "z", (function() {
+				return w
+			})), i.d(t, "i", (function() {
+				return y
+			})), i.d(t, "p", (function() {
+				return v
+			})), i.d(t, "y", (function() {
+				return E
+			})), i.d(t, "c", (function() {
+				return T
+			})), i.d(t, "n", (function() {
+				return S
+			})), i.d(t, "q", (function() {
+				return O
+			})), i.d(t, "r", (function() {
+				return I
+			})), i.d(t, "e", (function() {
+				return R
+			})), i.d(t, "f", (function() {
+				return F
+			})), i.d(t, "t", (function() {
+				return C
+			})), i.d(t, "u", (function() {
+				return N
+			})), i.d(t, "h", (function() {
+				return A
+			})), i.d(t, "b", (function() {
+				return j
+			})), i.d(t, "s", (function() {
+				return D
+			})), i.d(t, "x", (function() {
+				return P
+			})), i.d(t, "w", (function() {
+				return x
+			})), i.d(t, "d", (function() {
+				return L
+			})), i.d(t, "g", (function() {
+				return B
+			})), i.d(t, "A", (function() {
+				return k
+			})), i.d(t, "D", (function() {
+				return M
+			})), i.d(t, "C", (function() {
+				return U
+			})), i.d(t, "K", (function() {
+				return G
+			})), i.d(t, "B", (function() {
+				return V
+			})), i.d(t, "N", (function() {
 				return H
+			})), i.d(t, "I", (function() {
+				return q
 			}));
 			i("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n, r = i("./node_modules/node-libs-browser/node_modules/url/url.js"),
@@ -25477,13 +25479,15 @@
 			! function(e) {
 				e.YouTube = "YouTube", e.Vimeo = "Vimeo", e.BandCamp = "BandCamp", e.Clyp = "Clyp", e.Gfycat = "Gfycat", e.GfycatOld = "gfycat", e.Giphy = "Giphy", e.Imgur = "Imgur", e.RedGIFS = "RedGIFS", e.SoundCloud = "SoundCloud", e.Spotify = "Spotify", e.Streamable = "Streamable", e.Twitch = "Twitch.tv", e.Twitter = "Twitter", e.IFrameEmbed = "iframe embed"
 			}(n || (n = {}));
-			const o = e => e.type === _.TEXT,
-				d = e => e.type === _.VIDEO,
-				a = e => e.type === _.LIVEVIDEO,
-				l = e => e.type === _.IMAGE,
-				u = e => e.type === _.GALLERY,
-				c = e => "rtjson" === e.type,
-				_ = {
+			const o = e => e.type === p.TEXT,
+				d = e => e.type === p.VIDEO,
+				a = e => e.type === p.LIVEVIDEO,
+				l = e => e.type === p.LIVEAUDIO,
+				u = e => e.type === p.IMAGE,
+				c = e => e.type === p.GALLERY,
+				_ = e => "rtjson" === e.type,
+				p = {
+					LIVEAUDIO: "liveaudio",
 					TEXT: "text",
 					VIDEO: "video",
 					IMAGE: "image",
@@ -25493,38 +25497,38 @@
 					LIVEVIDEO: "rpan",
 					GALLERY: "gallery"
 				},
-				p = new Set([_.TEXT, _.IMAGE, _.RTJSON, _.GALLERY]),
-				m = (new Set([n.YouTube, n.Vimeo, n.Streamable, n.Twitch, n.Gfycat, n.GfycatOld, n.RedGIFS]), 512),
-				h = 250,
-				f = 60,
-				b = 0,
-				g = 608,
-				w = 40,
-				y = 160,
-				v = 143.5,
-				E = .5625,
-				T = 869,
-				S = 273,
-				O = 486,
-				I = 700,
-				R = 822,
-				F = 363,
-				C = 645,
-				N = new Set([n.Clyp, n.Gfycat, n.GfycatOld, n.Giphy, n.RedGIFS, n.SoundCloud, n.Spotify, n.Twitter, n.Vimeo, n.YouTube]),
-				A = new Set([n.BandCamp, n.Gfycat, n.GfycatOld, n.Giphy, n.Imgur, n.RedGIFS, n.SoundCloud, n.Spotify, n.Streamable, n.Twitch, n.Twitter, n.YouTube, n.Vimeo]),
-				j = new Set([n.SoundCloud, n.Spotify, n.Streamable, n.Twitter, n.Vimeo, n.YouTube]),
-				D = new Set([n.Gfycat, n.GfycatOld, n.Imgur, n.RedGIFS]),
-				P = ["gif", "jpeg", "jpg", "png", "tiff"],
-				x = new Set([_.VIDEO, _.GIFVIDEO, _.EMBED, _.LIVEVIDEO]);
-			var L, B;
+				m = new Set([p.TEXT, p.IMAGE, p.RTJSON, p.GALLERY]),
+				h = (new Set([n.YouTube, n.Vimeo, n.Streamable, n.Twitch, n.Gfycat, n.GfycatOld, n.RedGIFS]), 512),
+				f = 250,
+				b = 60,
+				g = 0,
+				w = 608,
+				y = 40,
+				v = 160,
+				E = 143.5,
+				T = .5625,
+				S = 869,
+				O = 273,
+				I = 486,
+				R = 700,
+				F = 822,
+				C = 363,
+				N = 645,
+				A = new Set([n.Clyp, n.Gfycat, n.GfycatOld, n.Giphy, n.RedGIFS, n.SoundCloud, n.Spotify, n.Twitter, n.Vimeo, n.YouTube]),
+				j = new Set([n.BandCamp, n.Gfycat, n.GfycatOld, n.Giphy, n.Imgur, n.RedGIFS, n.SoundCloud, n.Spotify, n.Streamable, n.Twitch, n.Twitter, n.YouTube, n.Vimeo]),
+				D = new Set([n.SoundCloud, n.Spotify, n.Streamable, n.Twitter, n.Vimeo, n.YouTube]),
+				P = new Set([n.Gfycat, n.GfycatOld, n.Imgur, n.RedGIFS]),
+				x = ["gif", "jpeg", "jpg", "png", "tiff"],
+				L = new Set([p.VIDEO, p.GIFVIDEO, p.EMBED, p.LIVEVIDEO]);
+			var B, k;
 			! function(e) {
 				e.Mute = "mute", e.Pause = "pause", e.Play = "play"
-			}(L || (L = {})),
+			}(B || (B = {})),
 			function(e) {
 				e.Pause = "pauseVideo", e.Play = "playVideo", e.Mute = "mute"
-			}(B || (B = {}));
-			const k = e => e.source ? e.source.url : e.media && e.media.type !== _.VIDEO && e.media.type !== _.LIVEVIDEO && e.media.content ? e.media.content : "",
-				M = e => {
+			}(k || (k = {}));
+			const M = e => e.source ? e.source.url : e.media && e.media.type !== p.VIDEO && e.media.type !== p.LIVEVIDEO && e.media.type !== p.LIVEAUDIO && e.media.content ? e.media.content : "",
+				U = e => {
 					if (!d(e)) return;
 					const t = e;
 					let i;
@@ -25538,15 +25542,15 @@
 						if (t && t.pathname) return t.pathname.split("/")[1]
 					})(i)
 				},
-				U = (e, t) => {
+				G = (e, t) => {
 					return e / t > 16 / 9
 				},
-				G = (e, t, i) => i ? 100 * i : e && t ? e / t * 100 : 100 * E,
-				V = e => {
-					const t = k(e);
+				V = (e, t, i) => i ? 100 * i : e && t ? e / t * 100 : 100 * T,
+				H = e => {
+					const t = M(e);
 					return "v.redd.it" === s.a.parse(t).hostname
 				},
-				H = e => {
+				q = e => {
 					var t, i, n, r, s, o;
 					return (null === (t = e.media) || void 0 === t ? void 0 : t.hasOwnProperty("content")) || (null === (i = e.media) || void 0 === i ? void 0 : i.hasOwnProperty("dashUrl")) || (null === (n = e.media) || void 0 === n ? void 0 : n.hasOwnProperty("hlsUrl")) || (null === (r = e.media) || void 0 === r ? void 0 : r.hasOwnProperty("gallery")) || !!((null === (o = null === (s = e.media) || void 0 === s ? void 0 : s.richtextContent) || void 0 === o ? void 0 : o.document.length) > 0)
 				}
@@ -30343,7 +30347,7 @@
 				} : e,
 				b = e => t => {
 					const i = e[t.id];
-					return t && t.media && i && i.media && Object(a.I)(t.media) && t.media.isRichtextPreview && Object(a.I)(i.media) && !i.media.isRichtextPreview && (t.media.richtextContent = i.media.richtextContent, t.media.isRichtextPreview = !1), t
+					return t && t.media && i && i.media && Object(a.J)(t.media) && t.media.isRichtextPreview && Object(a.J)(i.media) && !i.media.isRichtextPreview && (t.media.richtextContent = i.media.richtextContent, t.media.isRichtextPreview = !1), t
 				},
 				g = e => t => {
 					const i = e[t.id];
@@ -31398,11 +31402,11 @@
 					const i = Object(u.U)(e, t);
 					return i && i.displayText || t && t.author && Object(o.d)(t.author)
 				},
-				h = (e, t, i) => Object(_.f)(e) && !Object(_.i)(e) && !!t && !!t.title && t.title.length <= 200 && !t.isNSFW && !!t.media && (Object(d.F)(t.media) || Object(d.I)(t.media)) && (e => !!e && !!e.media && (Object(d.F)(e.media) && (e => /https?:\/\/i\.redd\.it/.test(e))(e.media.content) || Object(d.I)(e.media) && e.media.richtextContent && e.media.richtextContent.document && e.media.richtextContent.document.some(({
+				h = (e, t, i) => Object(_.f)(e) && !Object(_.i)(e) && !!t && !!t.title && t.title.length <= 200 && !t.isNSFW && !!t.media && (Object(d.F)(t.media) || Object(d.J)(t.media)) && (e => !!e && !!e.media && (Object(d.F)(e.media) && (e => /https?:\/\/i\.redd\.it/.test(e))(e.media.content) || Object(d.J)(e.media) && e.media.richtextContent && e.media.richtextContent.document && e.media.richtextContent.document.some(({
 					e
 				}) => e === a.m)))(t) && (i && !t.media.altText || !i),
 				f = (e, t) => {
-					const i = !!t && !!t.media && (Object(d.F)(t.media) || Object(d.I)(t.media)) && t.media.altText;
+					const i = !!t && !!t.media && (Object(d.F)(t.media) || Object(d.J)(t.media)) && t.media.altText;
 					return h(e, t, !1) && !!i && i.length <= 250 && t.title.toLowerCase() !== i.toLowerCase()
 				},
 				b = Object(n.a)(c.K, p, (e, t) => !e && t),
@@ -31426,7 +31430,7 @@
 					const i = Object(u.H)(e, {
 						postId: t
 					});
-					return i && i.media && (Object(d.F)(i.media) || Object(d.I)(i.media)) ? i.media.altText : null
+					return i && i.media && (Object(d.F)(i.media) || Object(d.J)(i.media)) ? i.media.altText : null
 				},
 				T = e => !!Object(s.b)(e, {
 					experimentEligibilitySelector: s.a,
@@ -33869,7 +33873,7 @@
 						const e = Object.keys(i).length;
 						c.eventGlobalCount = e
 					}
-					if (t && t.media && Object(l.L)(t.media)) {
+					if (t && t.media && Object(l.M)(t.media)) {
 						const n = Object(g.h)(e, {
 								postId: t.id
 							}),
@@ -33965,7 +33969,7 @@
 					});
 					if (!i) return "";
 					let n = i.permalink;
-					if (i.media && Object(l.G)(i.media)) {
+					if (i.media && Object(l.H)(i.media)) {
 						const {
 							id: t,
 							type: r
@@ -42012,4 +42016,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.9a50a9828daf17fdd6f6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.2f71e9e16674263ba94b.js.map

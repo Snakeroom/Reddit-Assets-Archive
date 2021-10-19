@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.81c8c21b5487abd7abd7.js
-// Retrieved at 10/14/2021, 7:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.b3ef1e9ff63f9d17717b.js
+// Retrieved at 10/19/2021, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -851,7 +851,7 @@
 						j = {
 							estHeight: Object(N.c)(F, r),
 							id: e,
-							isFocusable: !(!B.media || !(r === O.g.Large || r === O.g.Classic && Object(k.G)(B.media))) && (k.d.has(B.media.type) && (!D || !k.s.has(D)) && !B.isSpoiler),
+							isFocusable: !(!B.media || !(r === O.g.Large || r === O.g.Classic && Object(k.H)(B.media))) && (k.d.has(B.media.type) && (!D || !k.s.has(D)) && !B.isSpoiler),
 							trackOnEnteredViewport: A,
 							trackOnExitedViewport: V,
 							render: ({
@@ -2613,4 +2613,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.81c8c21b5487abd7abd7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.b3ef1e9ff63f9d17717b.js.map

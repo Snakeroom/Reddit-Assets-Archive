@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.2121e8c64e8895f6eb76.js
-// Retrieved at 10/18/2021, 7:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.48c66ea37993606d5cc8.js
+// Retrieved at 10/19/2021, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-MediumPost"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -2400,7 +2400,7 @@
 						postId: t.id,
 						source: t.source
 					}, r.a.createElement(Z, e)); {
-						const a = t.media && Object(T.G)(t.media) ? Object(x.c)(t.id, s.name) : t.permalink,
+						const a = t.media && Object(T.H)(t.media) ? Object(x.c)(t.id, s.name) : t.permalink,
 							c = e.isCommentPermalink ? Object(S.b)(a) : i ? Object(_.a)(a, void 0, o) : Object(_.a)(a);
 						return r.a.createElement(Q, {
 							disableVisited: e.disableVisited,
@@ -2457,7 +2457,7 @@
 						post: s
 					} = e, {
 						isSponsored: n
-					} = s, o = e.isCommentsPage ? G.SourceElement.PostLink : G.SourceElement.ListingPostLink, i = !t && !e.isCrosspost && e.size !== N.Large && !s.isSponsored && !(s.media && Object(T.G)(s.media)) && (s.source || s.media && (s.media.type === T.o.GIFVIDEO || s.media.type === T.o.IMAGE || s.media.type === T.o.EMBED));
+					} = s, o = e.isCommentsPage ? G.SourceElement.PostLink : G.SourceElement.ListingPostLink, i = !t && !e.isCrosspost && e.size !== N.Large && !s.isSponsored && !(s.media && Object(T.H)(s.media)) && (s.source || s.media && (s.media.type === T.o.GIFVIDEO || s.media.type === T.o.IMAGE || s.media.type === T.o.EMBED));
 					if (t || !e.isCommentsPage || e.isCommentPermalink || e.shouldLinkWrap) {
 						if (i) return r.a.createElement(E.a, {
 							className: e.outboundLinkClassName,
@@ -4271,4 +4271,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.2121e8c64e8895f6eb76.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.48c66ea37993606d5cc8.js.map

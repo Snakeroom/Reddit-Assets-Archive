@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostDraft.17aba46638546eb334d8.js
-// Retrieved at 10/18/2021, 7:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostDraft.a2a0cf5963e525a49fa6.js
+// Retrieved at 10/19/2021, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostDraft"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -591,7 +591,7 @@
 						}))
 					}
 					return a
-				}, Y = Object(i.a)(a.l), K = Object(i.a)(a.m), X = Object(i.a)(a.k), q = e => async (t, n) => {
+				}, K = Object(i.a)(a.l), Y = Object(i.a)(a.m), X = Object(i.a)(a.k), q = e => async (t, n) => {
 					const s = n().platform.currentPage.locationState;
 					t(!(!s || !s[d.a.IsOverlay]) ? Object(w.a)(e.permalink) : Object(o.b)(Object(j.b)(e.permalink)))
 				}, Z = Object(i.a)(a.i), Q = Object(i.a)(a.j), $ = Object(i.a)(a.h), ee = Object(i.a)(a.p), te = Object(i.a)(a.o), ne = Object(i.a)(a.q), se = e => async t => {
@@ -628,10 +628,10 @@
 					})(o, a))), d && n.push(t(z(o, d))), void 0 !== r && n.push(t(((e, t) => async (n, o, {
 						apiContext: r
 					}) => {
-						n(Y());
+						n(K());
 						const i = await y(r(), e, t);
 						let a = !1;
-						if (i.ok) n(K({
+						if (i.ok) n(Y({
 							collectionId: e,
 							newDescription: t
 						})), n(Object(c.f)({
@@ -976,7 +976,7 @@
 				},
 				T = e => {
 					const t = {};
-					return (!e.showFull && Object(g.J)(e.height, e.width) || e.shouldBlur) && (t.overflow = "hidden"), e.showFull || (t.maxHeight = `${g.j}px`, e.shouldBlur && (t.maxWidth = Object(g.J)(e.height, e.width) ? `${g.z}px` : `${e.width}px`)), e.showCentered && (t.margin = "0 auto"), e.isExpando && e.maxHeight && (t.maxHeight = `${e.maxHeight}px`), r.a.createElement("div", {
+					return (!e.showFull && Object(g.K)(e.height, e.width) || e.shouldBlur) && (t.overflow = "hidden"), e.showFull || (t.maxHeight = `${g.j}px`, e.shouldBlur && (t.maxWidth = Object(g.K)(e.height, e.width) ? `${g.z}px` : `${e.width}px`)), e.showCentered && (t.margin = "0 auto"), e.isExpando && e.maxHeight && (t.maxHeight = `${e.maxHeight}px`), r.a.createElement("div", {
 						className: Object(d.a)(k.a.container, e.className),
 						style: t
 					}, e.children)
@@ -1030,7 +1030,7 @@
 					onClick: e,
 					...t
 				}) => {
-					const n = Object(g.J)(t.height, t.width),
+					const n = Object(g.K)(t.height, t.width),
 						o = S(t.height) && n;
 					return r.a.createElement(T, O({}, t, {
 						className: `${n?`${C.a} `:""}${t.className||""}`
@@ -1044,7 +1044,7 @@
 						} : {},
 						target: "_blank",
 						rel: u.c
-					}, L(n, t)), t.isListing && !t.showFull && t.height > g.j && Object(g.J)(t.height, t.width) && r.a.createElement("div", {
+					}, L(n, t)), t.isListing && !t.showFull && t.height > g.j && Object(g.K)(t.height, t.width) && r.a.createElement("div", {
 						className: k.a.seeMore
 					}, s.fbt._("see full image", null, {
 						hk: "1Qygw5"
@@ -4763,4 +4763,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.17aba46638546eb334d8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.a2a0cf5963e525a49fa6.js.map
