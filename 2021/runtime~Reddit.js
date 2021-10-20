@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.c49d7f21e01041b787cd.js
-// Retrieved at 10/20/2021, 5:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.38b10a6f1a05e6b68742.js
+// Retrieved at 10/20/2021, 6:30:04 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var n, a, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) a = r[l], Object.prototype.hasOwnProperty.call(d, a) && d[a] && b.push(d[a][0]), d[a] = 0;
@@ -1409,7 +1409,7 @@
 						"translations/es_MX-json": "2cb3c9367e80e18a76cb",
 						"translations/fr_FR-json": "11637437638b1b89b802",
 						"translations/it_IT-json": "39a8ea56bcc5400f02dd",
-						"translations/pseudo_ext-json": "ac436030222adbd5ef7a",
+						"translations/pseudo_ext-json": "e174cf99f9f39d4c1515",
 						"translations/pseudo_long-json": "f8e7f238513cd3c4ef5d",
 						"translations/pseudo_short-json": "b47be29641d4e1b141fd",
 						"translations/pt_BR-json": "819e2f3571bbd31c8fc7",
@@ -1533,7 +1533,7 @@
 						ChatEmpty: "21de50d8c962748df2ed",
 						ChatMinimize: "44c69e3b0034bf285b68",
 						ChatPage: "e7a4cc9709580c54e430",
-						ExternalLinkUnit: "7fa46e4a050341d47c2d",
+						ExternalLinkUnit: "79269709c0ed54221ea4",
 						InvitedChannelsPanel: "5c2050f23206e583258d",
 						OverlayBlockUser: "166c24df9ab0e02486c9",
 						OverlayChannelInvited: "d3aa2523ea774d388b8e",
@@ -1664,4 +1664,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.c49d7f21e01041b787cd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.38b10a6f1a05e6b68742.js.map

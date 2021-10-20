@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ExternalLinkUnit.7fa46e4a050341d47c2d.js
-// Retrieved at 10/5/2021, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ExternalLinkUnit.79269709c0ed54221ea4.js
+// Retrieved at 10/20/2021, 6:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ExternalLinkUnit"], {
 		"./src/chat/components/Message/RichUnit/ExternalLink/ExternalLinkUnit.m.less": function(e, t, a) {
@@ -42,135 +42,136 @@
 				r = a.n(n),
 				i = a("./src/lib/classNames/index.ts"),
 				l = a("./src/lib/opener/index.ts"),
-				c = a("./src/chat/components/Message/RichUnit/ExternalLink/ExternalLinkUnit.m.less"),
-				s = a.n(c);
-			const m = e => {
+				c = a("./src/chat/helpers/linkParser/index.ts"),
+				s = a("./src/chat/components/Message/RichUnit/ExternalLink/ExternalLinkUnit.m.less"),
+				m = a.n(s);
+			const o = e => {
 					const {
 						faviconUrl: t,
 						title: a
 					} = e;
 					return r.a.createElement("div", {
-						className: s.a.TitleContent
+						className: m.a.TitleContent
 					}, t ? r.a.createElement("img", {
-						className: s.a.Favicon,
+						className: m.a.Favicon,
 						src: t
 					}) : null, r.a.createElement("div", {
-						className: s.a.Title
+						className: m.a.Title
 					}, a))
 				},
-				o = e => {
+				d = e => {
 					const {
 						title: t,
 						link: a,
 						faviconUrl: n
 					} = e;
 					return r.a.createElement("div", {
-						className: s.a.HeaderContent
-					}, r.a.createElement(m, {
+						className: m.a.HeaderContent
+					}, r.a.createElement(o, {
 						title: t,
 						faviconUrl: n
 					}), r.a.createElement("span", {
-						className: s.a.Link
+						className: m.a.Link
 					}, a))
 				},
-				d = e => {
+				E = e => {
 					const {
 						name: t,
 						link: a,
 						faviconUrl: n
 					} = e;
 					return r.a.createElement("div", {
-						className: s.a.Header
-					}, r.a.createElement(o, {
+						className: m.a.Header
+					}, r.a.createElement(d, {
 						title: t,
 						link: a,
 						faviconUrl: n
 					}))
 				},
-				E = e => {
+				v = e => {
 					const {
 						thumbnailUrl: t,
 						title: a
 					} = e;
 					return r.a.createElement("div", {
-						className: s.a.ContentContainer
-					}, r.a.createElement(_, {
+						className: m.a.ContentContainer
+					}, r.a.createElement(k, {
 						url: t,
 						title: a
-					}))
-				},
-				v = e => {
-					const {
-						url: t
-					} = e;
-					return r.a.createElement("div", {
-						className: s.a.ImageContainer
-					}, r.a.createElement("img", {
-						className: s.a.Image,
-						src: t
 					}))
 				},
 				_ = e => {
 					const {
+						url: t
+					} = e;
+					return r.a.createElement("div", {
+						className: m.a.ImageContainer
+					}, r.a.createElement("img", {
+						className: m.a.Image,
+						src: t
+					}))
+				},
+				k = e => {
+					const {
 						url: t,
 						title: a
 					} = e;
 					return r.a.createElement("div", {
-						className: s.a.Content
-					}, t ? r.a.createElement(v, {
+						className: m.a.Content
+					}, t ? r.a.createElement(_, {
 						url: t
 					}) : null, r.a.createElement("div", {
-						className: s.a.Title
+						className: m.a.Title
 					}, a))
 				},
-				k = e => {
+				u = e => {
 					const {
 						providerDisplay: t
 					} = e;
 					return r.a.createElement("div", {
-						className: s.a.Footer,
+						className: m.a.Footer,
 						tabIndex: 0
 					}, r.a.createElement("div", {
-						className: s.a.ProviderDisplay
+						className: m.a.ProviderDisplay
 					}, t))
 				},
-				u = e => {
+				C = e => {
 					const {
 						darkBackground: t,
 						name: a = "",
 						href: n = "",
-						providerDisplay: c = "",
-						thumbnailUrl: m = "",
-						title: o = "",
-						faviconUrl: v = ""
+						providerDisplay: s = "",
+						thumbnailUrl: o = "",
+						title: d = "",
+						faviconUrl: _ = ""
 					} = e;
 					return r.a.createElement("button", {
 						onClick: e => {
 							((e, t) => {
-								e.stopPropagation(), Object(l.e)(t, "_blank")
+								e.stopPropagation(), Object(l.e)(Object(c.c)(t), "_blank")
 							})(e, n)
 						},
-						className: Object(i.a)(s.a.ExternalLinkUnit, {
-							[s.a.dark]: t
+						className: Object(i.a)(m.a.ExternalLinkUnit, {
+							[m.a.dark]: t
 						})
-					}, r.a.createElement(d, {
+					}, r.a.createElement(E, {
 						name: a,
 						link: n,
-						faviconUrl: v
-					}), m ? null : r.a.createElement("div", {
-						className: s.a.Delimiter
-					}), r.a.createElement(E, {
-						thumbnailUrl: m,
-						title: o,
+						faviconUrl: _
+					}), o ? null : r.a.createElement("div", {
+						className: m.a.Delimiter
+					}), r.a.createElement(v, {
+						thumbnailUrl: o,
+						title: d,
 						darkBackground: t
-					}), r.a.createElement(k, {
-						providerDisplay: c
+					}), r.a.createElement(u, {
+						providerDisplay: s
 					}))
 				};
 			t.default = e => r.a.createElement("div", {
-				className: s.a.RichUnitWrapper
-			}, r.a.createElement(u, e))
+				className: m.a.RichUnitWrapper
+			}, r.a.createElement(C, e))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ExternalLinkUnit.7fa46e4a050341d47c2d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ExternalLinkUnit.79269709c0ed54221ea4.js.map
