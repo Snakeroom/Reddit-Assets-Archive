@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.f32bbbe03652b44bd8f5.js
-// Retrieved at 10/19/2021, 1:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.fa48564d5c8122ba48ee.js
+// Retrieved at 10/20/2021, 11:10:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SubredditContent-PredictionsContent"], {
 		"./src/reddit/components/Econ/Prediction/hooks/useTournamentsQuery.ts": function(e, t, n) {
@@ -10,8 +10,8 @@
 			var o = n("./node_modules/react/index.js"),
 				r = n.n(o),
 				c = n("./node_modules/react-redux/es/index.js"),
-				a = n("./src/reddit/actions/economics/predictions/index.ts"),
-				s = n("./src/reddit/selectors/features/predictions/tournaments/index.ts"),
+				s = n("./src/reddit/actions/economics/predictions/index.ts"),
+				a = n("./src/reddit/selectors/features/predictions/tournaments/index.ts"),
 				i = n("./src/reddit/selectors/subreddit.ts");
 
 			function d(e) {
@@ -19,14 +19,14 @@
 					n = Object(c.e)(t => Object(i.Q)(t, {
 						subredditId: e
 					})),
-					o = Object(c.e)(t => Object(s.h)(t, {
+					o = Object(c.e)(t => Object(a.h)(t, {
 						subredditId: e
 					})),
-					d = Object(c.e)(t => Object(s.j)(t, {
+					d = Object(c.e)(t => Object(a.j)(t, {
 						subredditId: e
 					})),
 					l = r.a.useCallback(() => {
-						n.name && t(Object(a.l)(n.name))
+						n.name && t(Object(s.l)(n.name))
 					}, [n.name, t]);
 				return r.a.useEffect(() => {
 					d || o || l()
@@ -49,8 +49,8 @@
 			var o = n("./node_modules/react/index.js"),
 				r = n.n(o),
 				c = n("./src/higherOrderComponents/asModal/index.tsx"),
-				a = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
-				s = n("./src/reddit/constants/keycodes.ts"),
+				s = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
+				a = n("./src/reddit/constants/keycodes.ts"),
 				i = n("./src/reddit/controls/Button/index.tsx"),
 				d = n("./src/reddit/controls/LoadingIcon/index.tsx"),
 				l = n("./src/reddit/controls/TextButton/index.tsx"),
@@ -59,11 +59,11 @@
 				b = n.n(m),
 				p = n("./src/lib/lessComponent.tsx");
 			const f = p.a.wrapped(i.k, "PrimaryButton", b.a),
-				_ = p.a.wrapped(a.p, "ModalText", b.a);
+				_ = p.a.wrapped(s.p, "ModalText", b.a);
 			class h extends r.a.PureComponent {
 				constructor() {
 					super(...arguments), this.handleEscapeKey = e => {
-						e.keyCode === s.a.Escape && this.props.onClose()
+						e.keyCode === a.a.Escape && this.props.onClose()
 					}
 				}
 				componentDidMount() {
@@ -77,9 +77,9 @@
 						primaryButtonLoading: e,
 						secondaryButtonLoading: t
 					} = this.props;
-					return r.a.createElement(a.e, null, r.a.createElement(a.i, null, r.a.createElement(u.a, null, r.a.createElement(a.q, null, this.props.titleText), r.a.createElement(l.a, {
+					return r.a.createElement(s.e, null, r.a.createElement(s.i, null, r.a.createElement(u.a, null, r.a.createElement(s.q, null, this.props.titleText), r.a.createElement(l.a, {
 						onClick: this.props.onClose
-					}, r.a.createElement(a.b, null)))), r.a.createElement(a.l, null, r.a.createElement(_, null, this.props.bodyText)), r.a.createElement(a.g, null, r.a.createElement(a.a, {
+					}, r.a.createElement(s.b, null)))), r.a.createElement(s.l, null, r.a.createElement(_, null, this.props.bodyText)), r.a.createElement(s.g, null, r.a.createElement(s.a, {
 						onClick: this.props.onSecondaryAction
 					}, t ? r.a.createElement(d.a, {
 						sizePx: 16
@@ -119,8 +119,8 @@
 			var o = n("./node_modules/fbt/lib/FbtPublic.js"),
 				r = n("./node_modules/react/index.js"),
 				c = n.n(r),
-				a = n("./node_modules/react-redux/es/index.js"),
-				s = n("./src/lib/classNames/index.ts"),
+				s = n("./node_modules/react-redux/es/index.js"),
+				a = n("./src/lib/classNames/index.ts"),
 				i = n("./src/reddit/actions/economics/predictions/index.ts"),
 				d = n("./src/reddit/actions/toaster.ts"),
 				l = n("./src/reddit/components/Econ/Prediction/hooks/useTournamentsQuery.ts"),
@@ -140,13 +140,13 @@
 					className: e,
 					...t
 				}) => c.a.createElement("div", b({
-					className: Object(s.a)(m.a.card, e)
+					className: Object(a.a)(m.a.card, e)
 				}, t)),
 				f = ({
 					className: e,
 					...t
 				}) => c.a.createElement("h3", b({
-					className: Object(s.a)(m.a.title, e)
+					className: Object(a.a)(m.a.title, e)
 				}, t));
 			var _ = n("./src/reddit/controls/Button/index.tsx"),
 				h = n("./src/reddit/controls/LoadingIcon/index.tsx"),
@@ -189,8 +189,8 @@
 			}) => {
 				const t = Object(O.a)(),
 					[n, r] = function(e, t) {
-						const n = Object(a.d)(),
-							o = Object(a.e)(t => Object(P.S)(t, e)),
+						const n = Object(s.d)(),
+							o = Object(s.e)(t => Object(P.S)(t, e)),
 							r = o ? Boolean(o[t]) : void 0;
 						return [r, (o = !0) => {
 							const c = {
@@ -221,7 +221,7 @@
 			function A({
 				subreddit: e
 			}) {
-				const t = Object(a.d)(),
+				const t = Object(s.d)(),
 					n = Object(O.a)(),
 					[u, m] = Object(r.useState)(""),
 					[b, f] = Object(r.useState)(!1),
@@ -229,14 +229,14 @@
 					[v, P] = Object(r.useState)(!1),
 					[w, A] = Object(r.useState)(null);
 				Object(l.a)(e.name);
-				const I = Object(a.e)(k.o),
-					B = Object(a.e)(t => Object(g.b)(t, {
+				const I = Object(s.e)(k.o),
+					B = Object(s.e)(t => Object(g.b)(t, {
 						subredditId: e.id
 					})),
-					L = Object(a.e)(t => Object(g.j)(t, {
+					L = Object(s.e)(t => Object(g.j)(t, {
 						subredditId: e.id
 					})),
-					M = Object(a.e)(t => Object(g.g)(t, {
+					M = Object(s.e)(t => Object(g.g)(t, {
 						subredditId: e.id
 					}));
 				Object(r.useEffect)(() => {
@@ -277,7 +277,7 @@
 						hk: "bN9XA"
 					})
 				}), c.a.createElement("div", {
-					className: Object(s.a)(T.a.remainingCharacters, {
+					className: Object(a.a)(T.a.remainingCharacters, {
 						[T.a.maxCharacters]: (null == u ? void 0 : u.length) === N
 					})
 				}, B && B.name !== u && null !== w ? o.fbt._({
@@ -349,9 +349,9 @@
 		"./src/reddit/helpers/trackers/predictions.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "q", (function() {
-				return a
-			})), n.d(t, "r", (function() {
 				return s
+			})), n.d(t, "r", (function() {
+				return a
 			})), n.d(t, "s", (function() {
 				return i
 			})), n.d(t, "m", (function() {
@@ -402,13 +402,13 @@
 			var o = n("./src/reddit/models/Prediction/index.ts"),
 				r = n("./src/reddit/selectors/telemetry.ts");
 			const c = "poll",
-				a = e => ({
+				s = e => ({
 					...Object(r.defaults)(e),
 					source: c,
 					action: "select",
 					noun: "poll_option"
 				}),
-				s = e => ({
+				a = e => ({
 					...Object(r.defaults)(e),
 					source: c,
 					action: "select",
@@ -460,15 +460,15 @@
 					pollId: e,
 					currency: t,
 					amount: n
-				}) => a => {
-					const s = t === o.a.Coins ? n : void 0,
+				}) => s => {
+					const a = t === o.a.Coins ? n : void 0,
 						i = t === o.a.Tokens ? n : void 0;
 					return {
-						...Object(r.defaults)(a),
+						...Object(r.defaults)(s),
 						source: c,
 						action: "close",
 						noun: "prediction_modal",
-						poll: Object(r.poll)(a, e, !1, s, i)
+						poll: Object(r.poll)(s, e, !1, a, i)
 					}
 				},
 				p = e => ({
@@ -571,7 +571,8 @@
 					setting: {
 						value: e ? "1" : "0",
 						oldValue: e ? "0" : "1"
-					}
+					},
+					subreddit: Object(r.subreddit)(t)
 				}),
 				C = () => e => ({
 					...Object(r.defaults)(e),
@@ -612,4 +613,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.f32bbbe03652b44bd8f5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.fa48564d5c8122ba48ee.js.map
