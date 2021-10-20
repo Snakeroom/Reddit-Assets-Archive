@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.66042797c9fed57379ad.js
-// Retrieved at 10/20/2021, 3:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.f46d90d2bafcd58b6ebe.js
+// Retrieved at 10/20/2021, 4:10:04 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var n, a, r = o[0], s = o[1], c = o[2], l = 0, P = []; l < r.length; l++) a = r[l], Object.prototype.hasOwnProperty.call(d, a) && d[a] && P.push(d[a][0]), d[a] = 0;
@@ -1310,8 +1310,8 @@
 						"CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate": "f18b8816dbf7dcb4f516",
 						"CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki": "697b2faf3ee7fdd5f1c6",
 						"CollectionCommentsPage~CommentsPage~ProfileOverview": "8165e9e9f2a849779fff",
-						CollectionCommentsPage: "f59b4e2f91a890d652c5",
-						CommentsPage: "24c269ceaffd1fff41f5",
+						CollectionCommentsPage: "93424f43d072127a543a",
+						CommentsPage: "ce57d0971d42509c2a10",
 						"ProfileComments~ProfileOverview~ProfilePrivate": "c1b939703048d7e3f8d2",
 						ProfileOverview: "52d8491dcb3854621fe9",
 						ProfileComments: "d27f19c735066c7b95fc",
@@ -1409,7 +1409,7 @@
 						"translations/es_MX-json": "2cb3c9367e80e18a76cb",
 						"translations/fr_FR-json": "11637437638b1b89b802",
 						"translations/it_IT-json": "39a8ea56bcc5400f02dd",
-						"translations/pseudo_ext-json": "08cbc2b7f7a761a239cf",
+						"translations/pseudo_ext-json": "22097ceadb676f73d139",
 						"translations/pseudo_long-json": "f8e7f238513cd3c4ef5d",
 						"translations/pseudo_short-json": "b47be29641d4e1b141fd",
 						"translations/pt_BR-json": "819e2f3571bbd31c8fc7",
@@ -1664,4 +1664,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.66042797c9fed57379ad.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.f46d90d2bafcd58b6ebe.js.map
