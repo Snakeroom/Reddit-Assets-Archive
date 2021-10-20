@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.442b5e6404b96053bf72.js
-// Retrieved at 10/20/2021, 2:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.8ee984cdc940bed528d0.js
+// Retrieved at 10/20/2021, 5:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/lib/delay/index.ts": function(e, t, n) {
@@ -225,10 +225,10 @@
 							return e
 					}
 				},
-				L = n("./src/reddit/actions/inContextModeration.ts");
-			var A = (e = null, t) => {
+				A = n("./src/reddit/actions/inContextModeration.ts");
+			var L = (e = null, t) => {
 				switch (t.type) {
-					case L.a:
+					case A.a:
 						return t.payload;
 					default:
 						return e
@@ -359,7 +359,7 @@
 				V = Object(w.c)({
 					api: B,
 					fetchedTokens: T,
-					inContext: A,
+					inContext: L,
 					loadMore: H,
 					models: R,
 					search: Z,
@@ -544,7 +544,7 @@
 			})), n.d(t, "d", (function() {
 				return U
 			})), n.d(t, "c", (function() {
-				return L
+				return A
 			})), n.d(t, "a", (function() {
 				return F
 			})), n.d(t, "b", (function() {
@@ -708,7 +708,7 @@
 						});
 						o(Object(l.f)(Object(l.e)(s, g.b.Error)))
 					}
-				}, T = Object(o.a)(d.f), L = e => async (t, n, {
+				}, T = Object(o.a)(d.f), A = e => async (t, n, {
 					apiContext: r
 				}) => {
 					const s = n(),
@@ -746,7 +746,7 @@
 						text: y(),
 						kind: g.b.Error
 					}))))
-				}, A = Object(o.a)(d.d), F = e => async (t, n, {
+				}, L = Object(o.a)(d.d), F = e => async (t, n, {
 					apiContext: r
 				}) => {
 					const o = n().multireddits.models,
@@ -759,7 +759,7 @@
 						i = o[e];
 					if (!i) return void a();
 					const c = !i.isFavorited;
-					t(A({
+					t(L({
 						makeFavorite: c,
 						multiredditPath: e,
 						multiredditsModelsState: o
@@ -771,7 +771,7 @@
 							multipath: t,
 							api_type: "json"
 						}
-					}))(r(), e, c)).ok || (t(A({
+					}))(r(), e, c)).ok || (t(L({
 						makeFavorite: !c,
 						multiredditPath: e,
 						multiredditsModelsState: o
@@ -941,72 +941,67 @@
 				loadingIcon: "_3syvcMeczod-NOIewWIb8n",
 				EditButton: "_3A5WTC_rfbijxxWBmIP4Yx",
 				editButton: "_3A5WTC_rfbijxxWBmIP4Yx",
+				profileCard: "eHsnwmpOgtfnBAgrWXQKq",
 				EditIcon: "_3X4DuB4IpAlTY0XMdSI5q6",
 				editIcon: "_3X4DuB4IpAlTY0XMdSI5q6"
 			}
 		},
 		"./src/reddit/components/EditableImage/index.tsx": function(e, t, n) {
 			"use strict";
-			n.d(t, "a", (function() {
-				return p
-			}));
 			var r = n("./node_modules/react/index.js"),
 				s = n.n(r),
-				o = n("./src/lib/classNames/index.ts"),
-				a = n("./src/reddit/controls/ImageInput/index.tsx"),
-				i = n("./src/reddit/controls/LoadingIcon/index.tsx"),
-				c = n("./src/reddit/icons/fonts/index.tsx"),
-				d = n("./src/reddit/models/ApiRequestState/index.ts"),
-				l = n("./src/reddit/components/EditableImage/index.m.less"),
-				u = n.n(l);
+				o = n("./node_modules/react-redux/es/index.js"),
+				a = n("./src/lib/classNames/index.ts"),
+				i = n("./src/reddit/controls/ImageInput/index.tsx"),
+				c = n("./src/reddit/controls/LoadingIcon/index.tsx"),
+				d = n("./src/reddit/icons/fonts/index.tsx"),
+				l = n("./src/reddit/models/ApiRequestState/index.ts"),
+				u = n("./src/reddit/selectors/experiments/profileAvatarChangeFix.ts"),
+				m = n("./src/reddit/components/EditableImage/index.m.less"),
+				b = n.n(m);
 			const {
-				fbt: m
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), b = 80;
-			class p extends s.a.PureComponent {
-				constructor() {
-					super(...arguments), this.state = {
-						apiRequestId: null
-					}, this.selectFile = e => {
-						const t = Object(d.b)();
-						this.setState({
-							apiRequestId: t
-						}), this.props.onFileSelected(e, t)
-					}
-				}
-				render() {
-					const {
-						altText: e,
-						children: t,
-						className: n,
-						editButtonClassName: r,
-						isLoading: d,
-						imageUrl: l
-					} = this.props;
-					return s.a.createElement("div", {
-						className: Object(o.a)(u.a.Container, n)
-					}, s.a.createElement("label", {
-						className: u.a.HitBox
-					}, s.a.createElement("span", {
-						className: u.a.ImageContainer,
-						role: "presentation"
-					}, l ? s.a.createElement("img", {
-						alt: e,
-						className: u.a.Image,
-						src: l
-					}) : t), s.a.createElement(a.a, {
-						className: u.a.ImageUploader,
-						multiple: !1,
-						onChange: this.selectFile
-					}), !d && s.a.createElement("div", {
-						className: Object(o.a)(u.a.EditButton, r)
-					}, s.a.createElement(c.a, {
-						name: "add_media",
-						className: u.a.EditIcon
-					}))), d && s.a.createElement(i.a, {
-						className: u.a.LoadingIcon,
-						sizePx: b
-					}))
-				}
+				fbt: p
+			} = n("./node_modules/fbt/lib/FbtPublic.js");
+			t.a = ({
+				altText: e,
+				children: t,
+				className: n,
+				isProfileCard: r,
+				isLoading: m,
+				imageUrl: p,
+				onFileSelected: f
+			}) => {
+				const h = Object(o.e)(u.a);
+				return s.a.createElement("div", {
+					className: Object(a.a)(b.a.Container, n)
+				}, s.a.createElement("label", {
+					className: b.a.HitBox
+				}, s.a.createElement("span", {
+					className: b.a.ImageContainer,
+					role: "presentation"
+				}, p ? s.a.createElement("img", {
+					alt: e,
+					className: b.a.Image,
+					src: p
+				}) : t), s.a.createElement(i.a, {
+					className: b.a.ImageUploader,
+					multiple: !1,
+					onChange: e => {
+						const t = Object(l.b)();
+						f(e, t)
+					},
+					isPending: h ? m : void 0
+				}), !m && s.a.createElement("div", {
+					className: Object(a.a)(b.a.EditButton, {
+						[b.a.profileCard]: r
+					})
+				}, s.a.createElement(d.a, {
+					name: "add_media",
+					className: b.a.EditIcon
+				}))), m && s.a.createElement(c.a, {
+					className: b.a.LoadingIcon,
+					sizePx: 80
+				}))
 			}
 		},
 		"./src/reddit/components/Hovercards/AuthorHovercard/HoverCard.tsx": function(e, t, n) {
@@ -1050,8 +1045,8 @@
 					d: "M6.42528593,9.54562407 C4.41043013,8.02026355 3.10790651,5.60355545 3.10790651,2.88165092 L3.10790651,2.79711586 L3.19244157,2.79711586 C5.9143461,2.79711586 8.33136499,4.09963948 9.85641472,6.11449528 C8.02399304,6.25279712 6.56358777,7.7128916 6.42528593,9.54562407 Z M6.42528593,10.2560915 C6.56358777,12.088824 8.02399304,13.5489184 9.85641472,13.6872203 C8.33136499,15.7020761 5.9143461,17.0045997 3.19244157,17.0045997 L3.10790651,17.0045997 L3.10790651,16.9200646 C3.10790651,14.1981601 4.41043013,11.781452 6.42528593,10.2560915 Z M13.6872203,10.2560915 C15.7020761,11.781452 17.0045997,14.1981601 17.0045997,16.9200646 L17.0045997,17.0045997 L16.9200646,17.0045997 C14.1981601,17.0045997 11.7811412,15.7020761 10.2560915,13.6872203 C12.0885132,13.5489184 13.5486077,12.088824 13.6872203,10.2560915 Z M16.9200646,2.79711586 L17.0045997,2.79711586 L17.0045997,2.88165092 C17.0045997,5.60324465 15.7020761,8.02026355 13.6872203,9.54562407 C13.5489184,7.7128916 12.0885132,6.25279712 10.2560915,6.11449528 C11.7811412,4.09963948 14.1981601,2.79711586 16.9200646,2.79711586 Z M19.9403282,9.84895574 L20,9.90862755 L19.9403282,9.96829935 C18.9346096,10.9740179 17.7346469,11.6624192 16.46227,12.0474888 C15.9659373,11.2534187 15.3446668,10.5308304 14.6071606,9.90862755 C15.3446668,9.28642466 15.9659373,8.5638364 16.46227,7.76976629 C17.7346469,8.1548359 18.9346096,8.8432372 19.9403282,9.84895574 Z M9.90862755,5.39283938 C9.28642466,4.65533317 8.5638364,4.03406266 7.76976629,3.53772999 C8.1548359,2.26535306 8.8432372,1.06539035 9.84895574,0.0596718051 L9.90862755,0 L9.96829935,0.0596718051 C10.9740179,1.06539035 11.6624192,2.26535306 12.0474888,3.53772999 C11.2534187,4.03406266 10.5308304,4.65533317 9.90862755,5.39283938 Z M5.39283938,9.90862755 C4.65533317,10.5308304 4.03406266,11.2534187 3.53772999,12.0474888 C2.26535306,11.6624192 1.06539035,10.9740179 0.0596718051,9.96829935 L0,9.90862755 L0.0596718051,9.84895574 C1.06539035,8.8432372 2.26535306,8.1548359 3.53772999,7.76976629 C4.03406266,8.5638364 4.65533317,9.28642466 5.39283938,9.90862755 Z M9.90862755,14.6071606 C10.5308304,15.3446668 11.2534187,15.9659373 12.0474888,16.46227 C11.6624192,17.7346469 10.9740179,18.9346096 9.96829935,19.9403282 L9.90862755,20 L9.84895574,19.9403282 C8.8432372,18.9346096 8.1548359,17.7346469 7.76976629,16.46227 C8.5638364,15.9659373 9.28642466,15.3446668 9.90862755,14.6071606 Z"
 				}))),
 				T = n("./src/reddit/icons/svgs/Premium/index.tsx"),
-				L = n("./src/reddit/models/Gold/Award.ts"),
-				A = n("./src/reddit/models/User/index.ts"),
+				A = n("./src/reddit/models/Gold/Award.ts"),
+				L = n("./src/reddit/models/User/index.ts"),
 				F = n("./src/reddit/components/HumanDate/index.tsx"),
 				H = n("./src/reddit/components/ProfileIdCard/AwardedLastMonth.tsx"),
 				D = n("./src/reddit/components/ProfileIdCard/UserProfileOverview/UserSnoovatar/index.tsx"),
@@ -1242,7 +1237,7 @@
 					}, [I.fbt._plural(r.fromAwardsReceived)], {
 						hk: "3nzm9q"
 					}), s.a.createElement(ge, {
-						href: L.a,
+						href: A.a,
 						target: "_blank",
 						rel: "noopener noreferrer"
 					}, s.a.createElement(P.a, {
@@ -1253,7 +1248,7 @@
 					}, [I.fbt._plural(r.fromAwardsGiven)], {
 						hk: "4zXN3B"
 					}), s.a.createElement(ge, {
-						href: L.a,
+						href: A.a,
 						target: "_blank",
 						rel: "noopener noreferrer"
 					}, s.a.createElement(P.a, {
@@ -1298,7 +1293,7 @@
 					if (!v) return s.a.createElement(we, {
 						style: p
 					});
-					const N = !!r && Object(A.e)(r) === x,
+					const N = !!r && Object(L.e)(r) === x,
 						w = !!(null == r ? void 0 : r.snoovatarFullBodyAsset),
 						k = v.accountIcon || `${_.a.assetPath}/img/snoo_user_placeholder.png`,
 						P = l && l.flair,
@@ -1306,7 +1301,7 @@
 						U = g && g.templateIds && g.templateIds.length > 0,
 						T = g && g.displaySettings && g.displaySettings.isEnabled,
 						{
-							awardedLastMonth: L
+							awardedLastMonth: A
 						} = v,
 						F = !!v.snoovatarFullBodyAsset,
 						M = v.isNSFW && o;
@@ -1346,8 +1341,8 @@
 					})), s.a.createElement(Se, {
 						showAwardKarma: b,
 						user: v
-					}), L && s.a.createElement(H.a, {
-						recentAwardings: L,
+					}), A && s.a.createElement(H.a, {
+						recentAwardings: A,
 						topAwardIcon: h,
 						username: x
 					}), i && !N && !C && E && !y && s.a.createElement(ce, {
@@ -1390,7 +1385,7 @@
 				};
 			Ue.WrappedComponent = Pe;
 			var Te = Ue;
-			const Le = Object(a.c)({
+			const Ae = Object(a.c)({
 					activeTooltipId: f.a,
 					currentUser: h.k,
 					isLoggedIn: h.K,
@@ -1426,13 +1421,13 @@
 						return !n || n.acceptChats
 					}
 				}),
-				Ae = Object(o.b)(Le, (e, t) => ({
+				Le = Object(o.b)(Ae, (e, t) => ({
 					onClickSnoovatar: () => e(Object(i.b)({
 						clickSource: "user_hovercard"
 					})),
 					onHideTooltip: () => e(Object(c.i)())
 				}));
-			t.a = Ae(e => s.a.createElement("div", {
+			t.a = Le(e => s.a.createElement("div", {
 				className: e.className,
 				id: e.tooltipId,
 				onMouseLeave: e.onHideTooltip
@@ -2046,8 +2041,8 @@
 				B = 0,
 				U = "200px",
 				T = "250px",
-				L = "270px",
-				A = 100,
+				A = "270px",
+				L = 100,
 				F = .5,
 				H = 5;
 			class D extends o.a.Component {
@@ -2068,7 +2063,7 @@
 						} = this.props, o = n || t || r;
 						let a = 0;
 						for (const i in e) a += e[i];
-						return 0 === a ? o ? T : s ? U : L : (o && (a += A), a)
+						return 0 === a ? o ? T : s ? U : A : (o && (a += L), a)
 					}, this.setNotificationHeight = (e, t) => {
 						this.setState(n => ({
 							notificationHeights: {
@@ -3300,7 +3295,7 @@
 						type: "text",
 						value: n,
 						tabIndex: e.tabIndex
-					}), (!o || e.multiple) && s.a.createElement("input", {
+					}), (!o || e.multiple || void 0 !== e.isPending && !e.isPending) && s.a.createElement("input", {
 						id: e.inputId,
 						ref: e.inputRef,
 						name: e.name,
@@ -4022,4 +4017,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.442b5e6404b96053bf72.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.8ee984cdc940bed528d0.js.map

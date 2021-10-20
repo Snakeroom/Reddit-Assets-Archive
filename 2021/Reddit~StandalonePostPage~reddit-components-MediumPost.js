@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-MediumPost.551d036910d5b7472145.js
-// Retrieved at 10/19/2021, 5:20:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-MediumPost.77e545c9e12adf848f9d.js
+// Retrieved at 10/20/2021, 5:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~StandalonePostPage~reddit-components-MediumPost"], {
 		"./src/lib/hooks/useTooltip.ts": function(e, t, r) {
@@ -3061,21 +3061,21 @@
 				o = r("./src/reddit/helpers/chooseVariant/index.ts"),
 				a = r("./src/reddit/selectors/experiments/index.ts");
 			const c = Object(n.a)(e => Object(o.c)(e, {
-					experimentName: s.qb,
-					experimentEligibilitySelector: a.e
-				}), e => e === s.V.Enabled),
-				i = Object(n.a)(e => Object(o.c)(e, {
 					experimentName: s.rb,
 					experimentEligibilitySelector: a.e
 				}), e => e === s.W.Enabled),
-				d = Object(n.a)(e => Object(o.c)(e, {
+				i = Object(n.a)(e => Object(o.c)(e, {
 					experimentName: s.sb,
 					experimentEligibilitySelector: a.e
 				}), e => e === s.X.Enabled),
-				l = Object(n.a)(e => Object(o.c)(e, {
+				d = Object(n.a)(e => Object(o.c)(e, {
 					experimentName: s.tb,
 					experimentEligibilitySelector: a.e
-				}), e => e === s.Y.Enabled)
+				}), e => e === s.Y.Enabled),
+				l = Object(n.a)(e => Object(o.c)(e, {
+					experimentName: s.ub,
+					experimentEligibilitySelector: a.e
+				}), e => e === s.Z.Enabled)
 		},
 		"./src/reddit/selectors/experiments/postActionBarAnimation.ts": function(e, t, r) {
 			"use strict";
@@ -3108,7 +3108,7 @@
 						experimentEligibilitySelector: s.a,
 						experimentName: n.n
 					});
-					return t === n.t.VoteCountOnly || t === n.t.CommentCountOnly || t === n.t.VoteAndCommentCount
+					return t === n.u.VoteCountOnly || t === n.u.CommentCountOnly || t === n.u.VoteAndCommentCount
 				},
 				l = e => {
 					if (Object(c.c)(e) || Object(a.a)(e)) return !1;
@@ -3116,7 +3116,7 @@
 						experimentEligibilitySelector: s.a,
 						experimentName: n.n
 					});
-					return t === n.t.VoteCountOnly || t === n.t.VoteAndCommentCount
+					return t === n.u.VoteCountOnly || t === n.u.VoteAndCommentCount
 				},
 				u = e => {
 					if (Object(c.c)(e) || Object(a.a)(e)) return !1;
@@ -3124,7 +3124,7 @@
 						experimentEligibilitySelector: s.a,
 						experimentName: n.n
 					});
-					return t === n.t.CommentCountOnly || t === n.t.VoteAndCommentCount
+					return t === n.u.CommentCountOnly || t === n.u.VoteAndCommentCount
 				},
 				m = (e, {
 					post: t
@@ -3140,7 +3140,7 @@
 							experimentName: n.n
 						}),
 						d = null == s ? void 0 : s.variant;
-					return d === n.t.VoteCountOnly || d === n.t.VoteAndCommentCount
+					return d === n.u.VoteCountOnly || d === n.u.VoteAndCommentCount
 				},
 				f = (e, {
 					postId: t
@@ -3151,14 +3151,14 @@
 							experimentName: n.n
 						}),
 						d = null == s ? void 0 : s.variant;
-					return d === n.t.CommentCountOnly || d === n.t.VoteAndCommentCount
+					return d === n.u.CommentCountOnly || d === n.u.VoteAndCommentCount
 				},
 				b = e => {
 					if (Object(a.a)(e)) return !1;
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: n.wb
-					}) === n.Ib.Enabled
+						experimentName: n.xb
+					}) === n.Jb.Enabled
 				}
 		},
 		"./src/reddit/selectors/experiments/presence.ts": function(e, t, r) {
@@ -3171,8 +3171,8 @@
 			const o = e => {
 				return Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: n.Ed
-				}) === n.Bc
+					experimentName: n.Fd
+				}) === n.Cc
 			}
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, r) {
@@ -3555,4 +3555,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-MediumPost.551d036910d5b7472145.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-MediumPost.77e545c9e12adf848f9d.js.map

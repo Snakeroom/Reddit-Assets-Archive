@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxManageModal.266df9a3be635f331254.js
-// Retrieved at 10/13/2021, 6:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxManageModal.e2d0a754bd3598b7df08.js
+// Retrieved at 10/20/2021, 5:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CryptoHarbergerTaxManageModal"], {
 		"./src/reddit/actions/harbergerTax/actionCreators.ts": function(e, t, n) {
@@ -363,8 +363,8 @@
 				}))(Object(I.b)(y)),
 				w = n("./src/lib/classNames/index.ts"),
 				T = n("./src/lib/prettyPrintNumber/index.ts"),
-				B = n("./src/reddit/actions/modal.ts"),
-				P = n("./src/reddit/components/Governance/Token/index.tsx"),
+				P = n("./src/reddit/actions/modal.ts"),
+				B = n("./src/reddit/components/Governance/Token/index.tsx"),
 				U = n("./src/reddit/helpers/governance/tokens.ts"),
 				D = n("./src/reddit/selectors/crypto/points.ts"),
 				H = n("./src/reddit/components/Governance/HarbergerTaxWithCrypto/BannerManageModal/Controls/index.m.less"),
@@ -379,7 +379,7 @@
 				wallet: g.d
 			});
 			var L = Object(d.b)(M, e => ({
-					onClose: () => e(Object(B.f)())
+					onClose: () => e(Object(P.f)())
 				}))((function(e) {
 					var t;
 					return o.a.createElement("div", {
@@ -388,7 +388,7 @@
 						className: S.a.wallet
 					}, e.wallet && o.a.createElement(s.Fragment, null, A._("You have", null, {
 						hk: "TlDwo"
-					}), o.a.createElement(P.a, {
+					}), o.a.createElement(B.a, {
 						grey: !0,
 						className: S.a.token,
 						subredditId: e.subredditId
@@ -804,7 +804,7 @@
 						type: "text",
 						value: n,
 						tabIndex: e.tabIndex
-					}), (!s || e.multiple) && r.a.createElement("input", {
+					}), (!s || e.multiple || void 0 !== e.isPending && !e.isPending) && r.a.createElement("input", {
 						id: e.inputId,
 						ref: e.inputRef,
 						name: e.name,
@@ -1003,4 +1003,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxManageModal.266df9a3be635f331254.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxManageModal.e2d0a754bd3598b7df08.js.map

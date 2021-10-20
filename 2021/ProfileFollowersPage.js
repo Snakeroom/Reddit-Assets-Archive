@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.79529d65542f38775d36.js
-// Retrieved at 10/20/2021, 2:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.e0112a5d7d7445d2de77.js
+// Retrieved at 10/20/2021, 5:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileFollowersPage", "ProfileFollowersAction"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -1302,72 +1302,67 @@
 				loadingIcon: "_3syvcMeczod-NOIewWIb8n",
 				EditButton: "_3A5WTC_rfbijxxWBmIP4Yx",
 				editButton: "_3A5WTC_rfbijxxWBmIP4Yx",
+				profileCard: "eHsnwmpOgtfnBAgrWXQKq",
 				EditIcon: "_3X4DuB4IpAlTY0XMdSI5q6",
 				editIcon: "_3X4DuB4IpAlTY0XMdSI5q6"
 			}
 		},
 		"./src/reddit/components/EditableImage/index.tsx": function(e, t, s) {
 			"use strict";
-			s.d(t, "a", (function() {
-				return h
-			}));
 			var r = s("./node_modules/react/index.js"),
 				n = s.n(r),
-				i = s("./src/lib/classNames/index.ts"),
-				o = s("./src/reddit/controls/ImageInput/index.tsx"),
-				a = s("./src/reddit/controls/LoadingIcon/index.tsx"),
-				d = s("./src/reddit/icons/fonts/index.tsx"),
-				l = s("./src/reddit/models/ApiRequestState/index.ts"),
-				c = s("./src/reddit/components/EditableImage/index.m.less"),
-				u = s.n(c);
+				i = s("./node_modules/react-redux/es/index.js"),
+				o = s("./src/lib/classNames/index.ts"),
+				a = s("./src/reddit/controls/ImageInput/index.tsx"),
+				d = s("./src/reddit/controls/LoadingIcon/index.tsx"),
+				l = s("./src/reddit/icons/fonts/index.tsx"),
+				c = s("./src/reddit/models/ApiRequestState/index.ts"),
+				u = s("./src/reddit/selectors/experiments/profileAvatarChangeFix.ts"),
+				m = s("./src/reddit/components/EditableImage/index.m.less"),
+				p = s.n(m);
 			const {
-				fbt: m
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), p = 80;
-			class h extends n.a.PureComponent {
-				constructor() {
-					super(...arguments), this.state = {
-						apiRequestId: null
-					}, this.selectFile = e => {
-						const t = Object(l.b)();
-						this.setState({
-							apiRequestId: t
-						}), this.props.onFileSelected(e, t)
-					}
-				}
-				render() {
-					const {
-						altText: e,
-						children: t,
-						className: s,
-						editButtonClassName: r,
-						isLoading: l,
-						imageUrl: c
-					} = this.props;
-					return n.a.createElement("div", {
-						className: Object(i.a)(u.a.Container, s)
-					}, n.a.createElement("label", {
-						className: u.a.HitBox
-					}, n.a.createElement("span", {
-						className: u.a.ImageContainer,
-						role: "presentation"
-					}, c ? n.a.createElement("img", {
-						alt: e,
-						className: u.a.Image,
-						src: c
-					}) : t), n.a.createElement(o.a, {
-						className: u.a.ImageUploader,
-						multiple: !1,
-						onChange: this.selectFile
-					}), !l && n.a.createElement("div", {
-						className: Object(i.a)(u.a.EditButton, r)
-					}, n.a.createElement(d.a, {
-						name: "add_media",
-						className: u.a.EditIcon
-					}))), l && n.a.createElement(a.a, {
-						className: u.a.LoadingIcon,
-						sizePx: p
-					}))
-				}
+				fbt: h
+			} = s("./node_modules/fbt/lib/FbtPublic.js");
+			t.a = ({
+				altText: e,
+				children: t,
+				className: s,
+				isProfileCard: r,
+				isLoading: m,
+				imageUrl: h,
+				onFileSelected: b
+			}) => {
+				const f = Object(i.e)(u.a);
+				return n.a.createElement("div", {
+					className: Object(o.a)(p.a.Container, s)
+				}, n.a.createElement("label", {
+					className: p.a.HitBox
+				}, n.a.createElement("span", {
+					className: p.a.ImageContainer,
+					role: "presentation"
+				}, h ? n.a.createElement("img", {
+					alt: e,
+					className: p.a.Image,
+					src: h
+				}) : t), n.a.createElement(a.a, {
+					className: p.a.ImageUploader,
+					multiple: !1,
+					onChange: e => {
+						const t = Object(c.b)();
+						b(e, t)
+					},
+					isPending: f ? m : void 0
+				}), !m && n.a.createElement("div", {
+					className: Object(o.a)(p.a.EditButton, {
+						[p.a.profileCard]: r
+					})
+				}, n.a.createElement(l.a, {
+					name: "add_media",
+					className: p.a.EditIcon
+				}))), m && n.a.createElement(d.a, {
+					className: p.a.LoadingIcon,
+					sizePx: 80
+				}))
 			}
 		},
 		"./src/reddit/components/Hovercards/AuthorHovercard/HoverCard.tsx": function(e, t, s) {
@@ -5236,7 +5231,7 @@
 						type: "text",
 						value: s,
 						tabIndex: e.tabIndex
-					}), (!i || e.multiple) && n.a.createElement("input", {
+					}), (!i || e.multiple || void 0 !== e.isPending && !e.isPending) && n.a.createElement("input", {
 						id: e.inputId,
 						ref: e.inputRef,
 						name: e.name,
@@ -6857,4 +6852,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.79529d65542f38775d36.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.e0112a5d7d7445d2de77.js.map

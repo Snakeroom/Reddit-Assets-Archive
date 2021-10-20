@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.e9dd80f81c92e2fdeb72.js
-// Retrieved at 10/19/2021, 5:20:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.f6b5a0c25e3f5c99bc86.js
+// Retrieved at 10/20/2021, 5:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "AchievementsActions", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -3312,8 +3312,8 @@
 					showContributorRequestFlow: e => Object(re.q)(e, rt.e.Post),
 					showCreatePollButton: e => (e => Object(at.c)(e, {
 						experimentEligibilitySelector: at.a,
-						experimentName: ot.K
-					}) === ot.T.Treatment)(e) && !Object(Ke.g)(),
+						experimentName: ot.L
+					}) === ot.U.Treatment)(e) && !Object(Ke.g)(),
 					shouldShowFlairPreview: (e, {
 						listingName: t
 					}) => {
@@ -4608,7 +4608,7 @@
 						type: "text",
 						value: n,
 						tabIndex: e.tabIndex
-					}), (!i || e.multiple) && s.a.createElement("input", {
+					}), (!i || e.multiple || void 0 !== e.isPending && !e.isPending) && s.a.createElement("input", {
 						id: e.inputId,
 						ref: e.inputRef,
 						name: e.name,
@@ -5581,9 +5581,9 @@
 				s = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = n("./src/reddit/selectors/user.ts");
 			const o = e => {
-				return Object(i.H)(e) || r.M.Treatment1 === Object(s.c)(e, {
+				return Object(i.H)(e) || r.N.Treatment1 === Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: r.C
+					experimentName: r.D
 				})
 			}
 		},
@@ -5799,4 +5799,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.e9dd80f81c92e2fdeb72.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.f6b5a0c25e3f5c99bc86.js.map
