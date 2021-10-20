@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.314ded9e1e19491f5d05.js
-// Retrieved at 10/20/2021, 12:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.ac2c9624473fc356e434.js
+// Retrieved at 10/20/2021, 3:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -3509,12 +3509,14 @@
 				src: `${r.a.assetPath}/img/crisis-line-icon.png`
 			})), s.a.createElement(b, null, u._("Would you like Reddit to reach out to {username} ?", [u._param("username", s.a.createElement("span", null, "u/", e.username))], {
 				hk: "3RFVlj"
-			})), s.a.createElement(g, null, u._("We’ve partnered with {ctl} to provide redditors with support from trained Crisis Counselors, and will reach out (confidentially) to let {username} know that there are people who are here for them.", [u._param("ctl", s.a.createElement("a", {
+			})), s.a.createElement(g, null, u._("We’ve partnered with {=Crisis Text Line} to provide redditors with support from trained Crisis Counselors, and will reach out (confidentially) to let {username} know that there are people who are here for them.", [u._param("=Crisis Text Line", s.a.createElement("a", {
 				href: "https://www.crisistextline.org/",
 				target: "_blank",
 				rel: "noopener noreferrer"
-			}, "Crisis Text Line")), u._param("username", s.a.createElement("strong", null, "u/", e.username))], {
-				hk: "srFNa"
+			}, u._("Crisis Text Line", null, {
+				hk: "4ih1Mk"
+			}))), u._param("username", s.a.createElement("strong", null, "u/", e.username))], {
+				hk: "3eDxpt"
 			})));
 			var O = e => s.a.createElement("svg", {
 				className: e.className,
@@ -16713,4 +16715,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.314ded9e1e19491f5d05.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.ac2c9624473fc356e434.js.map
