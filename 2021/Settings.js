@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.b17531bb076a6c34ec4d.js
-// Retrieved at 10/19/2021, 5:20:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.ebf9de4418c453bfd0bd.js
+// Retrieved at 10/20/2021, 2:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, n) {
@@ -3865,7 +3865,7 @@
 					})
 				}), e.user.isGold && r.a.createElement(C.a, {
 					to: "/premium"
-				}, r.a.createElement(de, null))), r.a.createElement(me, null, e.user.username && r.a.createElement(pe, null, e.user.username, r.a.createElement(be, null, "•")), r.a.createElement(pe, null, r.a.createElement(R.d, {
+				}, r.a.createElement(de, null))), r.a.createElement(me, null, e.user.username && r.a.createElement(pe, null, e.user.username, r.a.createElement(be, null, "•")), r.a.createElement(pe, null, (e.user.createdUtc || e.user.created) && r.a.createElement(R.d, {
 					seconds: e.user.createdUtc || e.user.created
 				})))),
 				Ne = e => {
@@ -14376,4 +14376,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.b17531bb076a6c34ec4d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.ebf9de4418c453bfd0bd.js.map
