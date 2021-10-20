@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-CancelPredictionModal.befc1fc35182a33a17db.js
-// Retrieved at 10/19/2021, 1:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-CancelPredictionModal.7318d5dca4e78665e19a.js
+// Retrieved at 10/20/2021, 1:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction-CancelPredictionModal"], {
 		"./src/reddit/components/ConfirmUserActionModal/index.m.less": function(e, t, n) {
@@ -15,21 +15,21 @@
 				l = n("./node_modules/react/index.js"),
 				a = n.n(l),
 				d = n("./src/higherOrderComponents/asModal/index.tsx"),
-				i = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
-				c = n("./src/reddit/controls/TextButton/index.tsx"),
+				c = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
+				i = n("./src/reddit/controls/TextButton/index.tsx"),
 				s = n("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
 				r = n("./src/reddit/components/ConfirmUserActionModal/index.m.less"),
 				u = n.n(r);
 			const m = e => e.preventDefault();
-			t.a = Object(d.a)(e => a.a.createElement(i.e, null, a.a.createElement(i.i, null, a.a.createElement(s.a, null, a.a.createElement(i.q, null, e.headerText || o.fbt._("Confirm", null, {
+			t.a = Object(d.a)(e => a.a.createElement(c.e, null, a.a.createElement(c.i, null, a.a.createElement(s.a, null, a.a.createElement(c.q, null, e.headerText || o.fbt._("Confirm", null, {
 				hk: "2zlvKa"
-			})), a.a.createElement(c.a, {
+			})), a.a.createElement(i.a, {
 				onClick: () => {
 					e.onClose && e.onClose(), e.toggleModal && e.toggleModal()
 				}
-			}, a.a.createElement(i.b, null)))), a.a.createElement(i.l, null, a.a.createElement(i.p, {
+			}, a.a.createElement(c.b, null)))), a.a.createElement(c.l, null, a.a.createElement(c.p, {
 				className: u.a.ModalText
-			}, e.modalText)), a.a.createElement(i.g, null, !e.hideCancelButton && a.a.createElement(i.a, {
+			}, e.modalText)), a.a.createElement(c.g, null, !e.hideCancelButton && a.a.createElement(c.a, {
 				className: u.a.buttonWidth,
 				onMouseDown: m,
 				onClick: () => {
@@ -38,7 +38,7 @@
 				"data-redditstyle": !e.disableRedditStyle
 			}, e.cancelActionText || o.fbt._("Cancel", null, {
 				hk: "2TSLl5"
-			})), a.a.createElement(i.u, {
+			})), a.a.createElement(c.u, {
 				className: u.a.buttonWidth,
 				onMouseDown: m,
 				onClick: t => {
@@ -57,8 +57,8 @@
 				l = n("./node_modules/react/index.js"),
 				a = n.n(l),
 				d = n("./node_modules/react-redux/es/index.js"),
-				i = n("./src/reddit/actions/economics/predictions/index.ts"),
-				c = n("./src/reddit/actions/modal.ts"),
+				c = n("./src/reddit/actions/economics/predictions/index.ts"),
+				i = n("./src/reddit/actions/modal.ts"),
 				s = n("./src/reddit/components/ConfirmUserActionModal/index.tsx"),
 				r = n("./src/reddit/constants/modals.ts"),
 				u = n("./src/reddit/selectors/posts.ts");
@@ -68,11 +68,11 @@
 				if (!t) return null;
 				const {
 					totalVoteCount: n
-				} = t.pollData || {}, l = () => e(Object(c.g)(r.a.ECON_PREDICTIONS_CANCEL_PREDICTION));
+				} = t.pollData || {}, l = () => e(Object(i.g)(r.a.ECON_PREDICTIONS_CANCEL_PREDICTION));
 				return a.a.createElement(s.a, {
 					withOverlay: !0,
 					onConfirm: () => {
-						l(), e(Object(i.c)(t.postId))
+						l(), e(Object(c.c)(t.postId))
 					},
 					onCancel: l,
 					onClose: l,
@@ -91,16 +91,14 @@
 			};
 
 			function C(e) {
-				return 0 === e ? o.fbt._("Canceling this prediction will end any predictions that have already been made and notify the players.", null, {
-					hk: "2uuOFq"
-				}) : 1 === e ? o.fbt._("Canceling this prediction will end the 1 prediction that has already been made and notify the player.", null, {
-					hk: "4wD7xX"
-				}) : o.fbt._("Canceling this prediction will end the {votedUsersCount} predictions that have already been made and notify the players.", [o.fbt._param("votedUsersCount", e.toString())], {
-					hk: "2TTB5g"
+				return e <= 1 ? o.fbt._("Canceling this prediction will notify all players who have already made a prediction.", null, {
+					hk: "151M0Q"
+				}) : o.fbt._("Canceling this prediction will notify all {votedUsersCount} players who have already made a prediction.", [o.fbt._param("votedUsersCount", e.toString())], {
+					hk: "DemUc"
 				})
 			}
 			t.default = m
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-CancelPredictionModal.befc1fc35182a33a17db.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-CancelPredictionModal.7318d5dca4e78665e19a.js.map
