@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PowerupsPremiumUpsellModal.60b73e08fcd6245b7e5c.js
-// Retrieved at 10/13/2021, 6:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PowerupsPremiumUpsellModal.b06dddc953732b0e8eb8.js
+// Retrieved at 10/25/2021, 10:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PowerupsPremiumUpsellModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, r) {
@@ -1139,7 +1139,7 @@
 						className: D.a.powerupsButton,
 						priority: g.b.Secondary,
 						onClick: () => {
-							c(Object(m.u)()), t(Object(i.h)(l.a.ECON_POWERUPS_PURCHASE))
+							c(Object(m.w)()), t(Object(i.h)(l.a.ECON_POWERUPS_PURCHASE))
 						},
 						isFullWidth: !0
 					}, F._("{powerupPrice}/mo", [F._param("powerupPrice", Object(y.b)(d, {
@@ -1159,7 +1159,7 @@
 						premiumMonthly: a.premiumMonthly,
 						premiumAnnual: a.premiumAnnual,
 						onClickPrice: (e, r) => {
-							c(Object(m.v)(r)), t(Object(h.openWithBlob)({
+							c(Object(m.x)(r)), t(Object(h.openWithBlob)({
 								correlationId: a.correlationId,
 								packageId: e
 							}, {
@@ -1221,7 +1221,7 @@
 					t = Object(s.d)(),
 					r = Object(p.a)();
 				Object(n.useEffect)(() => {
-					e && (r(Object(m.w)()), Object(u.a)(), Object(d.a)())
+					e && (r(Object(m.y)()), Object(u.a)(), Object(d.a)())
 				}, []);
 				const c = () => t(Object(i.g)(l.a.ECON_POWERUPS_PREMIUM_UPSELL));
 				return e ? o.a.createElement(o.a.Fragment, null, o.a.createElement(a.a, {
@@ -2011,4 +2011,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsPremiumUpsellModal.60b73e08fcd6245b7e5c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsPremiumUpsellModal.b06dddc953732b0e8eb8.js.map

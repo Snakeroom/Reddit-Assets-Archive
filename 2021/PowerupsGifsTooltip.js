@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PowerupsGifsTooltip.a47a6dcc952bbcfa16d5.js
-// Retrieved at 10/7/2021, 4:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PowerupsGifsTooltip.c45294219e85ee659cec.js
+// Retrieved at 10/25/2021, 10:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PowerupsGifsTooltip"], {
 		"./src/reddit/components/RichTextEditor/media/GifTooltip/BaseTooltip.m.less": function(e, t, s) {
@@ -383,12 +383,12 @@
 					})))
 				}
 			}
-			const D = Object(h.c)({
+			const q = Object(h.c)({
 				hasGifProduct: (e, {
 					subreddit: t
 				}) => Object(_.v)(e, t.id)
 			});
-			t.a = Object(m.c)(Object(p.b)(D, e => ({
+			t.a = Object(m.c)(Object(p.b)(q, e => ({
 				showErrorToast: t => e(Object(u.f)({
 					text: t,
 					kind: y.b.Error,
@@ -424,7 +424,7 @@
 					s = Object(n.d)(),
 					[u, g] = Object(i.useState)(!1),
 					b = () => {
-						t(Object(l.D)()), s(Object(a.f)("gif_picker"))
+						t(Object(l.F)()), s(Object(a.f)("gif_picker"))
 					};
 				return o.a.createElement(p.a, {
 					editorState: e.editorState,
@@ -502,4 +502,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsGifsTooltip.a47a6dcc952bbcfa16d5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsGifsTooltip.c45294219e85ee659cec.js.map
