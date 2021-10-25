@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.f873b6ad666b0c649663.js
-// Retrieved at 10/25/2021, 2:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.57bd59f5884add77d5b2.js
+// Retrieved at 10/25/2021, 4:40:12 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -52,16 +52,16 @@
 			const p = Object(o.a)(e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.od
+					experimentName: u.nd
 				});
-				return Object(u.Pe)(t) ? void 0 : t
+				return Object(u.Ne)(t) ? void 0 : t
 			}, e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.pd
+					experimentName: u.od
 				});
-				return Object(u.Pe)(t) ? void 0 : t
-			}, (e, t) => e === u.rd.Enabled && t === u.rd.Enabled);
+				return Object(u.Ne)(t) ? void 0 : t
+			}, (e, t) => e === u.qd.Enabled && t === u.qd.Enabled);
 			var b = n("./src/config.ts");
 			var h = n("./src/reddit/selectors/user.ts");
 			const f = e => {
@@ -1481,19 +1481,19 @@
 			class ne extends s.Component {
 				constructor(e) {
 					super(e), this.observableElement = r.a.createRef(), this.videoRef = r.a.createRef(), this.videoSessionManager = null, this.timerId = "rpan-du-active-watch-timer-id", this.handleSuccessfulPlayback = () => {
-						Object(E.X)()
+						Object(E.W)()
 					}, this.handleUnsuccessfulPlayback = () => {
-						const e = Number(Object(E.M)());
+						const e = Number(Object(E.L)());
 						if (e) {
 							if (Date.now() - e >= J) {
-								Object(E.X)();
+								Object(E.W)();
 								const e = 30 * l.A,
 									t = Date.now() - e + X;
 								this.props.onHideRpanUnit(t, {
 									showToast: !1
 								})
 							}
-						} else Object(E.Ob)(Date.now())
+						} else Object(E.Mb)(Date.now())
 					}, this.onResourceRemoved = () => {
 						this.subscribeStats()
 					}, this.onError = () => {
@@ -3839,7 +3839,7 @@
 						postId: t
 					}) || Object(o.H)(e))(e, t),
 					experimentName: s.M
-				}) === s.Cc
+				}) === s.Bc
 			}
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, n) {
@@ -3970,4 +3970,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.f873b6ad666b0c649663.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.57bd59f5884add77d5b2.js.map

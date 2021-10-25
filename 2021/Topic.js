@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.b59c710995f14f749231.js
-// Retrieved at 10/25/2021, 2:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.8386784ea4796a88faf1.js
+// Retrieved at 10/25/2021, 4:40:12 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -606,8 +606,8 @@
 				R = s("./src/reddit/helpers/brandSafety/index.ts"),
 				F = s("./src/reddit/helpers/trackers/ads.ts"),
 				B = s("./src/lib/LRUCache/index.ts"),
-				M = s("./src/telemetry/index.ts"),
-				H = s("./src/telemetry/models/Timer.ts"),
+				H = s("./src/telemetry/index.ts"),
+				M = s("./src/telemetry/models/Timer.ts"),
 				A = s("./src/reddit/components/PostList/index.m.less"),
 				V = s.n(A);
 			const {
@@ -688,12 +688,12 @@
 					}), this.eventFactoryHandler = (e, t, s) => this.props.postClickEventFactory(e, t, s, this.props)
 				}
 				UNSAFE_componentWillMount() {
-					void 0 !== this.timerId && M.c.cancel(this.timerId), this.props.postIds.length && (this.timerId = M.c.start())
+					void 0 !== this.timerId && H.c.cancel(this.timerId), this.props.postIds.length && (this.timerId = H.c.start())
 				}
 				componentDidMount() {
 					if (this.checkAndSendScreenview(), this.viewportHeight = window.innerHeight, void 0 !== this.timerId) {
-						const e = M.c.end(this.timerId);
-						setTimeout(() => Object(M.b)(f.m.Redesign, {
+						const e = H.c.end(this.timerId);
+						setTimeout(() => Object(H.b)(f.m.Redesign, {
 							type: "mount",
 							component: "postList",
 							duration: e
@@ -701,14 +701,14 @@
 					}
 				}
 				UNSAFE_componentWillUpdate(e) {
-					void 0 !== this.timerId && M.c.cancel(this.timerId), e.postIds.length && (this.timerId = M.c.start()), (e.listingKey !== this.props.listingKey || e.postIds.length !== this.props.postIds.length && !this.isListLongEnough()) && (this.didRenderLastVisibleChild = !1)
+					void 0 !== this.timerId && H.c.cancel(this.timerId), e.postIds.length && (this.timerId = H.c.start()), (e.listingKey !== this.props.listingKey || e.postIds.length !== this.props.postIds.length && !this.isListLongEnough()) && (this.didRenderLastVisibleChild = !1)
 				}
 				componentDidUpdate(e) {
 					var t, s;
-					if (v.a.read(() => this.checkAndSendScreenview()), this.timerId && M.c.has(this.timerId)) {
-						const e = M.c.end(this.timerId);
+					if (v.a.read(() => this.checkAndSendScreenview()), this.timerId && H.c.has(this.timerId)) {
+						const e = H.c.end(this.timerId);
 						if (e < 10) return;
-						setTimeout(() => Object(M.b)(f.m.Redesign, {
+						setTimeout(() => Object(H.b)(f.m.Redesign, {
 							duration: e,
 							type: "mount",
 							component: "postList"
@@ -719,7 +719,7 @@
 					r && r !== (null === (s = e.postIds) || void 0 === s ? void 0 : s[0]) && this.props.onFirstPostChanged(r)
 				}
 				componentWillUnmount() {
-					this.timerId && M.c.cancel(this.timerId), this.scrollerRef = null, this.didRenderLastVisibleChild = !1
+					this.timerId && H.c.cancel(this.timerId), this.scrollerRef = null, this.didRenderLastVisibleChild = !1
 				}
 				isListLongEnough() {
 					const e = this.scrollerRef && Array.from(this.scrollerRef.children),
@@ -732,7 +732,7 @@
 						listingKey: t,
 						viewportDataLoaded: s
 					} = this.props;
-					return M.c.has(t) && (e || !this.renderingPlaceholder && (this.renderingEmpty || this.didRenderLastVisibleChild && (s || this.isListLongEnough())))
+					return H.c.has(t) && (e || !this.renderingPlaceholder && (this.renderingEmpty || this.didRenderLastVisibleChild && (s || this.isListLongEnough())))
 				}
 				checkAndSendScreenview() {
 					const {
@@ -741,9 +741,9 @@
 						sendEvent: s
 					} = this.props;
 					if (!this.shouldSendScreenview() || !t) return;
-					const r = M.c.end(e);
+					const r = H.c.end(e);
 					setTimeout(() => {
-						s(t(r, H.TimerType.InApp))
+						s(t(r, M.TimerType.InApp))
 					}, 0)
 				}
 				showPlaceholder() {
@@ -820,40 +820,38 @@
 						pageReferrer: _,
 						redditStyle: E,
 						shouldHideFlair: T,
-						triggerCelebratoryMoment: S,
-						triggerNewPostPill: C,
-						postIds: L
-					} = this.props, P = 0 === t, I = `post-${r}-${e}-${t}-${s?"last-index":""}-${v}-${g}-${_}`;
-					let j;
-					if (void 0 === (j = this.scrollChildCache.get(I))) {
+						triggerNewPostPill: S,
+						postIds: C
+					} = this.props, L = 0 === t, P = `post-${r}-${e}-${t}-${s?"last-index":""}-${v}-${g}-${_}`;
+					let I;
+					if (void 0 === (I = this.scrollChildCache.get(P))) {
 						const {
-							inSubredditOrProfile: w,
-							postsById: R
-						} = this.props, F = R[e], B = F.crosspostRootId && R[F.crosspostRootId] ? R[F.crosspostRootId] : F;
-						F.crosspostRootId && !R[F.crosspostRootId] && y.c.withScope(e => {
-							e.setExtra("errorType", f.s.API), e.setExtra("description", `Post ${F.id} is crosspost of ${F.crosspostRootId}, but ` + `${F.crosspostRootId} details are missing in the state`), y.c.captureMessage("Crosspost parent details are missing")
+							inSubredditOrProfile: j,
+							postsById: w
+						} = this.props, R = w[e], F = R.crosspostRootId && w[R.crosspostRootId] ? w[R.crosspostRootId] : R;
+						R.crosspostRootId && !w[R.crosspostRootId] && y.c.withScope(e => {
+							e.setExtra("errorType", f.s.API), e.setExtra("description", `Post ${R.id} is crosspost of ${R.crosspostRootId}, but ` + `${R.crosspostRootId} details are missing in the state`), y.c.captureMessage("Crosspost parent details are missing")
 						});
-						const M = this.props.postComponentForLayout({
-							isCrosspost: !!F.crosspostRootId,
-							isFirstPost: P,
+						const B = this.props.postComponentForLayout({
+							isCrosspost: !!R.crosspostRootId,
+							isFirstPost: L,
 							layout: r,
-							post: B
+							post: F
 						});
 						let H = `post-list-item-[layout: ${r}]-[postId: ${e}]`;
 						this.props.listingBelowVariant && g && (H += `--${g}`);
-						const A = Q(e, r, s, g, v, _, this.props, t, this.props.hostPostData),
-							V = Y(e, r, this.props, t, x),
-							W = Z(e, this.props, c),
-							D = B.media && B.media.type === k.o.EMBED ? B.media.provider : null,
-							U = p && !F.isSponsored,
-							J = m && !F.isSponsored && !F.isScoreHidden,
-							G = !F.isSponsored && !F.isArchived;
-						j = {
-							estHeight: Object(N.c)(F, r),
+						const M = Q(e, r, s, g, v, _, this.props, t, this.props.hostPostData),
+							A = Y(e, r, this.props, t, x),
+							V = Z(e, this.props, c),
+							W = F.media && F.media.type === k.o.EMBED ? F.media.provider : null,
+							D = p && !R.isSponsored,
+							U = m && !R.isSponsored && !R.isScoreHidden;
+						I = {
+							estHeight: Object(N.c)(R, r),
 							id: e,
-							isFocusable: !(!B.media || !(r === O.g.Large || r === O.g.Classic && Object(k.H)(B.media))) && (k.d.has(B.media.type) && (!D || !k.s.has(D)) && !B.isSpoiler),
-							trackOnEnteredViewport: A,
-							trackOnExitedViewport: V,
+							isFocusable: !(!F.media || !(r === O.g.Large || r === O.g.Classic && Object(k.H)(F.media))) && (k.d.has(F.media.type) && (!W || !k.s.has(W)) && !F.isSpoiler),
+							trackOnEnteredViewport: M,
+							trackOnExitedViewport: A,
 							render: ({
 								className: r,
 								height: p,
@@ -861,23 +859,23 @@
 								remeasure: f,
 								setScrollerChildRef: _,
 								shouldLoadInitially: y
-							}) => u.a.createElement(M, {
+							}) => u.a.createElement(B, {
 								className: r,
 								currentProfileName: i,
 								key: H,
 								availableWidth: m,
 								eventFactory: this.eventFactoryHandler,
-								first: P,
+								first: L,
 								forceLoadMedia: y,
 								hostPostData: n,
-								inSubredditOrProfile: w,
+								inSubredditOrProfile: j,
 								isCommentPermalink: o,
 								isCommentsPage: a,
 								isFrontpage: c,
 								isProfilePostListing: d,
 								isTopicPage: l,
-								isCommentCountAnimationEnabled: U,
-								isVoteCountAnimationEnabled: J,
+								isCommentCountAnimationEnabled: D,
+								isVoteCountAnimationEnabled: U,
 								isCountAnimShadowTestEnabled: b,
 								listingBelowVariant: h,
 								listingIndex: t,
@@ -885,20 +883,19 @@
 								listingName: v,
 								pageLayer: x,
 								last: s,
-								onClickPost: W,
+								onClickPost: V,
 								onSizeChanged: f,
 								postId: e,
-								postIds: L,
+								postIds: C,
 								redditStyle: E,
 								sendEvent: this.props.sendEvent,
 								scrollerItemRef: _,
 								shouldHideFlair: T,
-								triggerCelebratoryMoment: G ? S : void 0,
-								onceInViewport: C
+								onceInViewport: S
 							})
-						}, this.scrollChildCache.set(I, j)
+						}, this.scrollChildCache.set(P, I)
 					}
-					return j
+					return I
 				}
 				render() {
 					return this.hasPosts() ? (this.renderingEmpty = !1, this.renderingPlaceholder = !1, this.renderList()) : this.showPlaceholder() ? (this.renderingEmpty = !1, this.renderingPlaceholder = !0, this.renderPlaceholder()) : (this.renderingEmpty = !0, this.renderingPlaceholder = !1, this.renderEmpty())
@@ -1520,7 +1517,7 @@
 			}).map((e, t) => i.a.createElement(N, {
 				className: k.a.Subreddit,
 				key: t
-			})), M = {
+			})), H = {
 				enabled: !0,
 				id: "xd_103",
 				layout: p.c.Large,
@@ -1529,10 +1526,10 @@
 				unitType: p.e.SubredditListing,
 				url: ""
 			};
-			class H extends i.a.Component {
+			class M extends i.a.Component {
 				constructor() {
 					super(...arguments), this.onSeeMoreCommunities = () => {
-						this.props.onSeeMoreCommunities && (this.props.sendEvent(Object(u.z)(M)), this.props.onSeeMoreCommunities())
+						this.props.onSeeMoreCommunities && (this.props.sendEvent(Object(u.z)(H)), this.props.onSeeMoreCommunities())
 					}
 				}
 				render() {
@@ -1553,7 +1550,7 @@
 						className: k.a.SubredditList
 					}, r.length > 0 ? r.map(e => i.a.createElement(I, {
 						className: k.a.Subreddit,
-						discoveryUnit: M,
+						discoveryUnit: H,
 						key: e,
 						subredditId: e
 					})) : B), t.length > F && i.a.createElement(n.a, {
@@ -1566,7 +1563,7 @@
 					}))))
 				}
 			}
-			t.a = Object(d.c)(H)
+			t.a = Object(d.c)(M)
 		},
 		"./src/reddit/components/TopicSidebar/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -2028,8 +2025,8 @@
 				}
 			}
 			var B = F,
-				M = s("./src/reddit/pages/Topic/TopicHeader/index.m.less"),
-				H = s.n(M);
+				H = s("./src/reddit/pages/Topic/TopicHeader/index.m.less"),
+				M = s.n(H);
 
 			function A() {
 				return (A = Object.assign || function(e) {
@@ -2053,14 +2050,14 @@
 						parentRelatedTopics: e
 					} = this.props;
 					return e.length ? i.a.createElement("ul", {
-						className: H.a.parentRelatedTopics
+						className: M.a.parentRelatedTopics
 					}, e.map(({
 						namePlural: e,
 						url: t
 					}, s) => i.a.createElement("li", {
 						key: s
 					}, i.a.createElement(p.a, {
-						className: H.a.link,
+						className: M.a.link,
 						to: t
 					}, e)))) : V._("Topic on Reddit", null, {
 						hk: "3gTFev"
@@ -2080,19 +2077,19 @@
 						tabs: n
 					};
 					return i.a.createElement("div", {
-						className: Object(o.a)(H.a.Container, t)
+						className: Object(o.a)(M.a.Container, t)
 					}, i.a.createElement("div", {
-						className: Object(o.a)(H.a.Content, s === L.g.Large ? H.a.cardWidth : H.a.fullWidth)
+						className: Object(o.a)(M.a.Content, s === L.g.Large ? M.a.cardWidth : M.a.fullWidth)
 					}, i.a.createElement("div", {
-						className: H.a.Header
+						className: M.a.Header
 					}, i.a.createElement("div", {
-						className: H.a.Title
+						className: M.a.Title
 					}, i.a.createElement(f.b, {
 						type: f.a.TopicHeader
 					}, a)), i.a.createElement("div", {
-						className: H.a.Subtitle
+						className: M.a.Subtitle
 					}, this.renderSubtitleContent())), i.a.createElement("div", {
-						className: H.a.Tabs
+						className: M.a.Tabs
 					}, i.a.createElement(B, A({
 						tab: W.Posts
 					}, c), V._("Posts", null, {
@@ -2613,4 +2610,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.b59c710995f14f749231.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.8386784ea4796a88faf1.js.map

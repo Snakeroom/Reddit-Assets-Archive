@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.1294ef88b3775eb50807.js
-// Retrieved at 10/25/2021, 4:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.9e731082e832dbe5a70f.js
+// Retrieved at 10/25/2021, 4:40:12 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1176,12 +1176,12 @@
 					})), 5e3)
 				};
 			var z = s("./src/reddit/components/Comments/Comment/TopMeta/crowdControl.m.less"),
-				q = s.n(z);
+				J = s.n(z);
 			const {
-				fbt: J
+				fbt: q
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), X = () => o.a.createElement(C.a, {
-				className: q.a.crowdControlText
-			}, J._("Crowd Control", null, {
+				className: J.a.crowdControlText
+			}, q._("Crowd Control", null, {
 				hk: "4WgEW"
 			}));
 			var K = s("./src/reddit/components/Comments/Comment/TopMeta/edited.m.less"),
@@ -2919,10 +2919,9 @@
 					redditStyle: f,
 					isOverlay: x,
 					isVoteCountAnimation: v,
-					triggerCelebratoryMoment: g,
-					postId: C,
-					isReadingIndicatorsExperimentEnabled: y
-				} = e, E = `upvote-button-${t.id}${x?"-overlay":""}`;
+					postId: g,
+					isReadingIndicatorsExperimentEnabled: C
+				} = e, y = `upvote-button-${t.id}${x?"-overlay":""}`;
 				return r.a.createElement(i.b, {
 					isRemoved: !!t.bannedBy,
 					isReported: Object(l.a)(t),
@@ -2937,15 +2936,14 @@
 					model: t,
 					onVoteClick: s,
 					redditStyle: f,
-					upvoteTooltipId: E,
+					upvoteTooltipId: y,
 					isVoteCountAnimation: v,
 					isCountAnimShadowTestEnabled: p,
-					triggerCelebratoryMoment: g,
-					postId: C,
+					postId: g,
 					scoreClassName: Object(o.a)(u.a.score, {
-						[u.a.allowPointerEvents]: y
+						[u.a.allowPointerEvents]: C
 					}),
-					isReadingIndicatorsExperimentEnabled: y
+					isReadingIndicatorsExperimentEnabled: C
 				}))
 			}
 		},
@@ -4151,8 +4149,8 @@
 				z = Object(u.c)({
 					isOverlayOpen: A.i
 				}),
-				q = Object(l.b)(z),
-				J = {};
+				J = Object(l.b)(z),
+				q = {};
 
 			function X(e) {
 				return e === document
@@ -4484,8 +4482,8 @@
 					}), this.props.disableScrollCache && !this.props.preventScrollOnMount && Object(O.c)(this.scrollContainer, 0), this.setupScrollHandler(), h.a.write(() => {
 						if (!this.props.disableScrollCache) {
 							const e = this.getCacheKey(),
-								t = J[e];
-							i()(t) || (J[e] = void 0, this.scrollContainer && Object(O.c)(this.scrollContainer, t))
+								t = q[e];
+							i()(t) || (q[e] = void 0, this.scrollContainer && Object(O.c)(this.scrollContainer, t))
 						}
 						this.callOnScrollForItemsChanged(), this.props.onLastVisibleChildRendered && this.props.onLastVisibleChildRendered()
 					}), h.a.read(() => {
@@ -4514,7 +4512,7 @@
 				componentWillUnmount() {
 					if (this.callExitedViewportForUnmount(), this.cleanupScrollHandler(), clearTimeout(this.updateRenderableChildrenHandle), this.cancelPopulateRenderableChildrenWhenIdle(), this.scrollContainer && !this.props.disableScrollCache) {
 						const e = this.getCacheKey();
-						J[e] = this.lastRenderPosition
+						q[e] = this.lastRenderPosition
 					}
 					this.childMap = new k.a("id"), this.itemsInViewport = new k.a("id"), this.wrapperRefFNs = {}, this.childRefFns = {}, this.containerRef = null, this.loadMoreEl = void 0, this.scrollContainer = void 0, this.unmountItemsIdleId && (Object(m.cancelIdleCallback)(this.unmountItemsIdleId), this.unmountItemsIdleId = null)
 				}
@@ -4669,7 +4667,7 @@
 					return void 0 === e.onLoadMore || "loadMoreToken" in e
 				}
 			}
-			t.b = q(Object(F.b)(le))
+			t.b = J(Object(F.b)(le))
 		},
 		"./src/reddit/components/Scroller/getDocumentTop.ts": function(e, t, s) {
 			"use strict";
@@ -4797,12 +4795,12 @@
 						rtJsonElementProps: o
 					});
 					switch (n) {
-						case b.qe.SmIcon:
+						case b.pe.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: o
 							});
-						case b.qe.SmIconHc:
+						case b.pe.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -6427,12 +6425,12 @@
 				d = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: n.ke
+						experimentName: n.je
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === n.qe.SmIcon || t === n.qe.SmIconHc
+					return t === n.pe.SmIcon || t === n.pe.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -6455,4 +6453,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.1294ef88b3775eb50807.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.9e731082e832dbe5a70f.js.map

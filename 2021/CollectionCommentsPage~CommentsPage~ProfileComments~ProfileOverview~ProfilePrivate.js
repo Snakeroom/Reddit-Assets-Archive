@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.dbef3760f911c67a2c41.js
-// Retrieved at 10/25/2021, 2:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.91dd05440cb8e9b243a2.js
+// Retrieved at 10/25/2021, 4:40:12 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -2778,10 +2778,9 @@
 					redditStyle: f,
 					isOverlay: v,
 					isVoteCountAnimation: x,
-					triggerCelebratoryMoment: y,
-					postId: g,
-					isReadingIndicatorsExperimentEnabled: E
-				} = e, _ = `upvote-button-${t.id}${v?"-overlay":""}`;
+					postId: y,
+					isReadingIndicatorsExperimentEnabled: g
+				} = e, E = `upvote-button-${t.id}${v?"-overlay":""}`;
 				return o.a.createElement(i.b, {
 					isRemoved: !!t.bannedBy,
 					isReported: Object(l.a)(t),
@@ -2796,15 +2795,14 @@
 					model: t,
 					onVoteClick: n,
 					redditStyle: f,
-					upvoteTooltipId: _,
+					upvoteTooltipId: E,
 					isVoteCountAnimation: x,
 					isCountAnimShadowTestEnabled: p,
-					triggerCelebratoryMoment: y,
-					postId: g,
+					postId: y,
 					scoreClassName: Object(r.a)(u.a.score, {
-						[u.a.allowPointerEvents]: E
+						[u.a.allowPointerEvents]: g
 					}),
-					isReadingIndicatorsExperimentEnabled: E
+					isReadingIndicatorsExperimentEnabled: g
 				}))
 			}
 		},
@@ -3853,13 +3851,13 @@
 				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = n("./src/reddit/selectors/posts.ts");
 			const a = e => Object(r.c)(e, {
-					experimentName: o.Jd,
+					experimentName: o.Id,
 					experimentEligibilitySelector: r.a
 				}),
-				c = (e, t) => t === o.Sd.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				c = (e, t) => t === o.Rd.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				d = Object(s.a)(i.H, a, (e, t) => c(e, t)),
 				l = Object(s.a)((e, t) => t, a, (e, t) => c(e, t))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.dbef3760f911c67a2c41.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.91dd05440cb8e9b243a2.js.map

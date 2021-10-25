@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.5aee6a4e00e8f91449c9.js
-// Retrieved at 10/25/2021, 2:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.d31a8dd705c1287ad58f.js
+// Retrieved at 10/25/2021, 4:40:12 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -4477,40 +4477,38 @@
 						pageReferrer: y,
 						redditStyle: O,
 						shouldHideFlair: E,
-						triggerCelebratoryMoment: j,
-						triggerNewPostPill: _,
-						postIds: k
-					} = this.props, I = 0 === t, N = `post-${r}-${e}-${t}-${s?"last-index":""}-${f}-${C}-${y}`;
-					let P;
-					if (void 0 === (P = this.scrollChildCache.get(N))) {
+						triggerNewPostPill: j,
+						postIds: _
+					} = this.props, k = 0 === t, I = `post-${r}-${e}-${t}-${s?"last-index":""}-${f}-${C}-${y}`;
+					let N;
+					if (void 0 === (N = this.scrollChildCache.get(I))) {
 						const {
-							inSubredditOrProfile: T,
-							postsById: R
-						} = this.props, F = R[e], M = F.crosspostRootId && R[F.crosspostRootId] ? R[F.crosspostRootId] : F;
-						F.crosspostRootId && !R[F.crosspostRootId] && v.c.withScope(e => {
-							e.setExtra("errorType", x.s.API), e.setExtra("description", `Post ${F.id} is crosspost of ${F.crosspostRootId}, but ` + `${F.crosspostRootId} details are missing in the state`), v.c.captureMessage("Crosspost parent details are missing")
+							inSubredditOrProfile: P,
+							postsById: T
+						} = this.props, R = T[e], F = R.crosspostRootId && T[R.crosspostRootId] ? T[R.crosspostRootId] : R;
+						R.crosspostRootId && !T[R.crosspostRootId] && v.c.withScope(e => {
+							e.setExtra("errorType", x.s.API), e.setExtra("description", `Post ${R.id} is crosspost of ${R.crosspostRootId}, but ` + `${R.crosspostRootId} details are missing in the state`), v.c.captureMessage("Crosspost parent details are missing")
 						});
-						const A = this.props.postComponentForLayout({
-							isCrosspost: !!F.crosspostRootId,
-							isFirstPost: I,
+						const M = this.props.postComponentForLayout({
+							isCrosspost: !!R.crosspostRootId,
+							isFirstPost: k,
 							layout: r,
-							post: M
+							post: F
 						});
-						let B = `post-list-item-[layout: ${r}]-[postId: ${e}]`;
-						this.props.listingBelowVariant && C && (B += `--${C}`);
-						const D = Z(e, r, s, C, f, y, this.props, t, this.props.hostPostData),
-							U = J(e, r, this.props, t, g),
-							V = Q(e, this.props, c),
-							W = M.media && M.media.type === L.o.EMBED ? M.media.provider : null,
-							H = u && !F.isSponsored,
-							q = p && !F.isSponsored && !F.isScoreHidden,
-							K = !F.isSponsored && !F.isArchived;
-						P = {
-							estHeight: Object(w.c)(F, r),
+						let A = `post-list-item-[layout: ${r}]-[postId: ${e}]`;
+						this.props.listingBelowVariant && C && (A += `--${C}`);
+						const B = Z(e, r, s, C, f, y, this.props, t, this.props.hostPostData),
+							D = J(e, r, this.props, t, g),
+							U = Q(e, this.props, c),
+							V = F.media && F.media.type === L.o.EMBED ? F.media.provider : null,
+							W = u && !R.isSponsored,
+							H = p && !R.isSponsored && !R.isScoreHidden;
+						N = {
+							estHeight: Object(w.c)(R, r),
 							id: e,
-							isFocusable: !(!M.media || !(r === S.g.Large || r === S.g.Classic && Object(L.H)(M.media))) && (L.d.has(M.media.type) && (!W || !L.s.has(W)) && !M.isSpoiler),
-							trackOnEnteredViewport: D,
-							trackOnExitedViewport: U,
+							isFocusable: !(!F.media || !(r === S.g.Large || r === S.g.Classic && Object(L.H)(F.media))) && (L.d.has(F.media.type) && (!V || !L.s.has(V)) && !F.isSpoiler),
+							trackOnEnteredViewport: B,
+							trackOnExitedViewport: D,
 							render: ({
 								className: r,
 								height: u,
@@ -4518,23 +4516,23 @@
 								remeasure: x,
 								setScrollerChildRef: y,
 								shouldLoadInitially: v
-							}) => m.a.createElement(A, {
+							}) => m.a.createElement(M, {
 								className: r,
 								currentProfileName: n,
-								key: B,
+								key: A,
 								availableWidth: p,
 								eventFactory: this.eventFactoryHandler,
-								first: I,
+								first: k,
 								forceLoadMedia: v,
 								hostPostData: i,
-								inSubredditOrProfile: T,
+								inSubredditOrProfile: P,
 								isCommentPermalink: o,
 								isCommentsPage: a,
 								isFrontpage: c,
 								isProfilePostListing: d,
 								isTopicPage: l,
-								isCommentCountAnimationEnabled: H,
-								isVoteCountAnimationEnabled: q,
+								isCommentCountAnimationEnabled: W,
+								isVoteCountAnimationEnabled: H,
 								isCountAnimShadowTestEnabled: h,
 								listingBelowVariant: b,
 								listingIndex: t,
@@ -4542,20 +4540,19 @@
 								listingName: f,
 								pageLayer: g,
 								last: s,
-								onClickPost: V,
+								onClickPost: U,
 								onSizeChanged: x,
 								postId: e,
-								postIds: k,
+								postIds: _,
 								redditStyle: O,
 								sendEvent: this.props.sendEvent,
 								scrollerItemRef: y,
 								shouldHideFlair: E,
-								triggerCelebratoryMoment: K ? j : void 0,
-								onceInViewport: _
+								onceInViewport: j
 							})
-						}, this.scrollChildCache.set(N, P)
+						}, this.scrollChildCache.set(I, N)
 					}
-					return P
+					return N
 				}
 				render() {
 					return this.hasPosts() ? (this.renderingEmpty = !1, this.renderingPlaceholder = !1, this.renderList()) : this.showPlaceholder() ? (this.renderingEmpty = !1, this.renderingPlaceholder = !0, this.renderPlaceholder()) : (this.renderingEmpty = !0, this.renderingPlaceholder = !1, this.renderEmpty())
@@ -4725,10 +4722,9 @@
 					redditStyle: C,
 					isOverlay: x,
 					isVoteCountAnimation: f,
-					triggerCelebratoryMoment: g,
-					postId: y,
-					isReadingIndicatorsExperimentEnabled: v
-				} = e, O = `upvote-button-${t.id}${x?"-overlay":""}`;
+					postId: g,
+					isReadingIndicatorsExperimentEnabled: y
+				} = e, v = `upvote-button-${t.id}${x?"-overlay":""}`;
 				return n.a.createElement(o.b, {
 					isRemoved: !!t.bannedBy,
 					isReported: Object(l.a)(t),
@@ -4743,15 +4739,14 @@
 					model: t,
 					onVoteClick: s,
 					redditStyle: C,
-					upvoteTooltipId: O,
+					upvoteTooltipId: v,
 					isVoteCountAnimation: f,
 					isCountAnimShadowTestEnabled: p,
-					triggerCelebratoryMoment: g,
-					postId: y,
+					postId: g,
 					scoreClassName: Object(i.a)(u.a.score, {
-						[u.a.allowPointerEvents]: v
+						[u.a.allowPointerEvents]: y
 					}),
-					isReadingIndicatorsExperimentEnabled: v
+					isReadingIndicatorsExperimentEnabled: y
 				}))
 			}
 		},
@@ -11807,9 +11802,9 @@
 			}));
 			var r = s("./src/reddit/constants/experiments.ts"),
 				n = s("./src/reddit/helpers/chooseVariant/index.ts");
-			const i = e => r.de.Treatment1 === Object(n.c)(e, {
+			const i = e => r.ce.Treatment1 === Object(n.c)(e, {
 				experimentEligibilitySelector: n.a,
-				experimentName: r.Ud
+				experimentName: r.Td
 			})
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, s) {
@@ -12102,10 +12097,10 @@
 				i = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				o = s("./src/reddit/selectors/posts.ts");
 			const a = e => Object(i.c)(e, {
-					experimentName: n.Jd,
+					experimentName: n.Id,
 					experimentEligibilitySelector: i.a
 				}),
-				c = (e, t) => t === n.Sd.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				c = (e, t) => t === n.Rd.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				d = Object(r.a)(o.H, a, (e, t) => c(e, t)),
 				l = Object(r.a)((e, t) => t, a, (e, t) => c(e, t))
 		},
@@ -12114,4 +12109,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.5aee6a4e00e8f91449c9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.d31a8dd705c1287ad58f.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-RichTextEditor-Toolbar-EmoteButton.ab4f130c8206f05b2ea4.js
-// Retrieved at 10/5/2021, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-RichTextEditor-Toolbar-EmoteButton.4c1562cf5cdcb5c60246.js
+// Retrieved at 10/25/2021, 4:40:12 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-RichTextEditor-Toolbar-EmoteButton"], {
 		"./src/reddit/components/InfoTextTooltip/index.m.less": function(e, t, o) {
@@ -190,7 +190,7 @@
 				} = e, P = I ? Object(u.j)(m.b.EMOJI_PROMO_TOOLTIP_DISPLAY_COUNT_PER_SUBREDDIT, I) : 0, g = h && P < T && b && 0 === x.length, [w, y] = Object(n.useState)(g), N = Object(i.d)();
 				Object(n.useEffect)(() => {
 					w && I && setTimeout(() => {
-						Object(u.S)(m.b.EMOJI_PROMO_TOOLTIP_DISPLAY_COUNT_PER_SUBREDDIT, I), N(Object(a.f)({
+						Object(u.R)(m.b.EMOJI_PROMO_TOOLTIP_DISPLAY_COUNT_PER_SUBREDDIT, I), N(Object(a.f)({
 							tooltipId: f
 						}))
 					}, _)
@@ -247,4 +247,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-RichTextEditor-Toolbar-EmoteButton.ab4f130c8206f05b2ea4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-RichTextEditor-Toolbar-EmoteButton.4c1562cf5cdcb5c60246.js.map

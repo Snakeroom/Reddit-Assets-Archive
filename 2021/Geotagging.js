@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Geotagging.f2c19b1079f7c0228f72.js
-// Retrieved at 10/25/2021, 2:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Geotagging.e70d9a9b80eeb427f19f.js
+// Retrieved at 10/25/2021, 4:40:12 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Geotagging"], {
 		"./node_modules/p-debounce/index.js": function(e, t, s) {
@@ -1588,8 +1588,8 @@
 					actionInfo: G
 				}),
 				W = Q("select_location"),
-				H = Q("confirm_location"),
-				A = Q("undo_location"),
+				A = Q("confirm_location"),
+				H = Q("undo_location"),
 				J = U("verify_location"),
 				D = U("reject_location");
 
@@ -1627,8 +1627,8 @@
 			} = s("./node_modules/fbt/lib/FbtPublic.js");
 
 			function Y(e) {
-				const t = Object(b.B)(Z) || [];
-				t.push(e), Object(b.Eb)(Z, t)
+				const t = Object(b.A)(Z) || [];
+				t.push(e), Object(b.Cb)(Z, t)
 			}
 
 			function V(e) {
@@ -1693,7 +1693,7 @@
 					disabled: l,
 					onFocus: () => E(M(t)),
 					onPlace: function(e) {
-						c && !e && E(A(t, c.id)), d(e), e && E(W(t, e.id))
+						c && !e && E(H(t, c.id)), d(e), e && E(W(t, e.id))
 					},
 					onSubmit: async function({
 						place: e,
@@ -1714,7 +1714,7 @@
 							}),
 							duration: 5e3
 						}));
-						E(H(t, e.id)), f(), s(t.id), y()
+						E(A(t, e.id)), f(), s(t.id), y()
 					}
 				}))
 			}
@@ -1738,7 +1738,7 @@
 									id: "ChIJIQBpAG2ahYAR_6128GcTUEo"
 								})
 							});
-							const s = Object(b.B)(Z) || [];
+							const s = Object(b.A)(Z) || [];
 							a((t.data.geoContributableSubreddits || []).filter(e => !s.includes(e.id)))
 						}).catch(e => {
 							console.error(e), t(!0)
@@ -1818,4 +1818,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.f2c19b1079f7c0228f72.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.e70d9a9b80eeb427f19f.js.map

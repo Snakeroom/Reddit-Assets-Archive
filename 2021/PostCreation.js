@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.d04ee871a45b307083e2.js
-// Retrieved at 10/25/2021, 3:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.a3161eb7ca88403cb77b.js
+// Retrieved at 10/25/2021, 4:40:12 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, n) {
@@ -925,7 +925,7 @@
 								commentId: e,
 								followState: t
 							})).ok) {
-							Object(B.tb)(null !== (l = null === (d = null === (c = s().pages) || void 0 === c ? void 0 : c.comments) || void 0 === d ? void 0 : d.followed) && void 0 !== l ? l : [], null === (u = s().user.account) || void 0 === u ? void 0 : u.id);
+							Object(B.sb)(null !== (l = null === (d = null === (c = s().pages) || void 0 === c ? void 0 : c.comments) || void 0 === d ? void 0 : d.followed) && void 0 !== l ? l : [], null === (u = s().user.account) || void 0 === u ? void 0 : u.id);
 							const e = a ? o.fbt._("Followed! You’ll receive updates when there’s new activity", null, {
 								hk: "1Dp5UH"
 							}) : o.fbt._("Unfollowed, You’ll no longer receive updates on this comment", null, {
@@ -2185,7 +2185,7 @@
 						}),
 						kind: u.b.SuccessCommunity,
 						text: c
-					})), Object(i.qb)(s + 1)
+					})), Object(i.pb)(s + 1)
 				}
 		},
 		"./src/reddit/actions/postCreation/mediaUpload.ts": function(e, t, n) {
@@ -4119,18 +4119,13 @@
 						} = e;
 						(t || n) && o === U.a.Enter && this.onSubmit()
 					}, this.onSubmit = () => {
-						if (this.props.onSubmit({
-								commentMode: Y.i.MARKDOWN,
-								draftType: this.props.draftType,
-								editorState: null,
-								text: this.getCurrentText(),
-								validate: this.props.showWarningModal
-							}), this.onBlur(), this.props.triggerCelebratoryMoment) {
-							const {
-								postId: e
-							} = this.props;
-							this.props.triggerCelebratoryMoment(!1, e)
-						}
+						this.props.onSubmit({
+							commentMode: Y.i.MARKDOWN,
+							draftType: this.props.draftType,
+							editorState: null,
+							text: this.getCurrentText(),
+							validate: this.props.showWarningModal
+						}), this.onBlur()
 					}, this.userHasEnteredText = () => {
 						const {
 							text: e
@@ -8067,7 +8062,7 @@
 						subreddit: n
 					} = e, {
 						isSponsored: o
-					} = t, s = Object(U.a)(), a = Object(W.a)(m.Mc) === m.Qc.Enabled;
+					} = t, s = Object(U.a)(), a = Object(W.a)(m.Lc) === m.Pc.Enabled;
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return r.a.createElement(Q, {
 						nowrap: e.nowrap
 					}, r.a.createElement(Z, e));
@@ -15261,7 +15256,7 @@
 			function i(e, t) {
 				const n = Object(o.useRef)(null);
 				let r;
-				r = Object(s.B)(e);
+				r = Object(s.A)(e);
 				const [i, c] = Object(o.useState)(null != r ? r : t);
 				return Object(o.useEffect)(() => (n.current = a(e, c, t), () => {
 					var e;
@@ -15270,7 +15265,7 @@
 					var e;
 					null === (e = n.current) || void 0 === e || e.emit(i)
 				}, [i]), [i, function(t) {
-					Object(s.Eb)(e, t), c(t)
+					Object(s.Cb)(e, t), c(t)
 				}]
 			}
 		},
@@ -17208,7 +17203,7 @@
 						const {
 							doNotShowOriginalContentDisclaimerClicked: e
 						} = this.props;
-						e(), Object(it.nb)(ot.ORIGINAL_CONTENT_DISCLAIMER, !0), this.setState({
+						e(), Object(it.mb)(ot.ORIGINAL_CONTENT_DISCLAIMER, !0), this.setState({
 							showOCDisclaimer: !1
 						})
 					}, this.handleOriginalContentClick = () => {
@@ -17481,14 +17476,14 @@
 				Vt = n("./src/reddit/helpers/trackers/postCollection.ts");
 			const Ht = [{
 					id: at.d,
-					getShowTimesLeft: it.J,
-					setShowTimesLeft: it.Lb,
+					getShowTimesLeft: it.I,
+					setShowTimesLeft: it.Jb,
 					tooltipShown: Vt.n,
 					tooltipDismissed: Vt.m
 				}, {
 					id: at.c,
-					getShowTimesLeft: it.I,
-					setShowTimesLeft: it.Kb,
+					getShowTimesLeft: it.H,
+					setShowTimesLeft: it.Ib,
 					tooltipShown: Vt.f,
 					tooltipDismissed: Vt.e
 				}],
@@ -22193,21 +22188,21 @@
 				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				a = n("./src/reddit/selectors/experiments/index.ts");
 			const i = Object(o.a)(e => Object(r.c)(e, {
+					experimentName: s.qb,
+					experimentEligibilitySelector: a.e
+				}), e => e === s.V.Enabled),
+				c = Object(o.a)(e => Object(r.c)(e, {
 					experimentName: s.rb,
 					experimentEligibilitySelector: a.e
 				}), e => e === s.W.Enabled),
-				c = Object(o.a)(e => Object(r.c)(e, {
+				d = Object(o.a)(e => Object(r.c)(e, {
 					experimentName: s.sb,
 					experimentEligibilitySelector: a.e
 				}), e => e === s.X.Enabled),
-				d = Object(o.a)(e => Object(r.c)(e, {
+				l = Object(o.a)(e => Object(r.c)(e, {
 					experimentName: s.tb,
 					experimentEligibilitySelector: a.e
-				}), e => e === s.Y.Enabled),
-				l = Object(o.a)(e => Object(r.c)(e, {
-					experimentName: s.ub,
-					experimentEligibilitySelector: a.e
-				}), e => e === s.Z.Enabled)
+				}), e => e === s.Y.Enabled)
 		},
 		"./src/reddit/selectors/experiments/navbarLikeMweb.ts": function(e, t, n) {
 			"use strict";
@@ -22217,9 +22212,9 @@
 			var o = n("./src/reddit/constants/experiments.ts"),
 				s = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const r = e => Object(s.c)(e, {
-				experimentName: o.sd,
+				experimentName: o.rd,
 				experimentEligibilitySelector: s.a
-			}) === o.xd.Enabled
+			}) === o.wd.Enabled
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, n) {
 			"use strict";
@@ -22784,4 +22779,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.d04ee871a45b307083e2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.a3161eb7ca88403cb77b.js.map

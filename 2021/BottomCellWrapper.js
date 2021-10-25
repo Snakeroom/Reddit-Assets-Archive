@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/BottomCellWrapper.5c34da5b029892e92a44.js
-// Retrieved at 10/25/2021, 2:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/BottomCellWrapper.bb5264d080d05960d068.js
+// Retrieved at 10/25/2021, 4:40:12 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["BottomCellWrapper", "SignupUpsell"], {
 		"./src/reddit/components/ErrorBoundary/index.tsx": function(e, t, s) {
@@ -165,7 +165,7 @@
 						type: e
 					})
 				}),
-				j = () => e => ({
+				E = () => e => ({
 					...Object(_.defaults)(e),
 					source: "popup",
 					action: "click",
@@ -174,7 +174,7 @@
 						popup_button_text: "login"
 					})
 				});
-			var E = s("./src/reddit/hooks/promo/useIsSignupUpsellVariantEligible.ts"),
+			var j = s("./src/reddit/hooks/promo/useIsSignupUpsellVariantEligible.ts"),
 				v = s("./src/reddit/icons/svgs/AppleLogo/index.tsx"),
 				O = s("./src/reddit/icons/svgs/Close/index.tsx"),
 				B = s("./src/reddit/icons/svgs/GoogleLogo/index.tsx"),
@@ -202,12 +202,12 @@
 						const e = Object(i.e)(N.b),
 							t = Object(i.e)(N.d),
 							s = Object(i.e)(N.f),
-							o = Object(E.a)(b.Gb.Bottom_sheet),
-							l = Object(E.a)(b.Gb.Bottom_cell),
-							r = Object(E.a)(b.Gb.Bottom_cell_dismissible),
-							c = Object(E.a)(b.Gb.Bottom_cell_dismissible_immediate_trigger),
-							a = Object(E.a)(b.Gb.Bottom_cell_signup_upsell_copy),
-							d = Object(E.a)(b.Gb.Bottom_cell_surprise_install_copy);
+							o = Object(j.a)(b.Fb.Bottom_sheet),
+							l = Object(j.a)(b.Fb.Bottom_cell),
+							r = Object(j.a)(b.Fb.Bottom_cell_dismissible),
+							c = Object(j.a)(b.Fb.Bottom_cell_dismissible_immediate_trigger),
+							a = Object(j.a)(b.Fb.Bottom_cell_signup_upsell_copy),
+							d = Object(j.a)(b.Fb.Bottom_cell_surprise_install_copy);
 						let u;
 						if (e) u = L;
 						else if (t) u = I;
@@ -224,14 +224,14 @@
 						if (e && d) return `${p}bottom_cell_surprise_install_copy.png`;
 						throw new Error("Invalid variant for signup upsell")
 					}(),
-					f = Object(E.a)(b.Gb.Bottom_cell_signup_upsell_copy),
-					w = Object(E.a)(b.Gb.Bottom_cell_surprise_install_copy),
+					f = Object(j.a)(b.Fb.Bottom_cell_signup_upsell_copy),
+					w = Object(j.a)(b.Fb.Bottom_cell_surprise_install_copy),
 					D = f ? o.fbt._("Come join us, we have snacks", null, {
 						hk: "1LUl2W"
 					}) : o.fbt._("Log in or sign up for the best experience", null, {
 						hk: "2LAHQy"
 					}),
-					G = w ? o.fbt._("Scan the QR code, it's super fun", null, {
+					F = w ? o.fbt._("Scan the QR code, it's super fun", null, {
 						hk: "1nNmn7"
 					}) : o.fbt._("Get the app", null, {
 						hk: "2NvKYa"
@@ -289,7 +289,7 @@
 				})), l.createElement(d.i, {
 					className: S.a.linkButton,
 					onClick: () => {
-						(() => u(Object(c.i)()))(), s(j())
+						(() => u(Object(c.i)()))(), s(E())
 					},
 					redditStyle: !0,
 					size: d.c.XS
@@ -307,7 +307,7 @@
 					src: _
 				}), l.createElement("div", {
 					className: S.a.downloadAppLabel
-				}, G))))
+				}, F))))
 			}
 		},
 		"./src/reddit/hooks/promo/useIsPromoShown.ts": function(e, t, s) {
@@ -419,20 +419,20 @@
 					experimentName: e,
 					experimentEligibilitySelector: c,
 					throttledVariants: {
-						[o.Gb.Bottom_cell_dismissible]: e,
-						[o.Gb.Bottom_cell_dismissible_immediate_trigger]: e,
-						[o.Gb.Bottom_sheet]: e
+						[o.Fb.Bottom_cell_dismissible]: e,
+						[o.Fb.Bottom_cell_dismissible_immediate_trigger]: e,
+						[o.Fb.Bottom_sheet]: e
 					},
 					expEventOverride: t
 				})
 			}
-			const d = a(o.hb, !0),
-				u = a(o.ib, !0),
-				p = a(o.jb, !0),
-				m = a(o.hb, !1),
-				b = a(o.ib, !1),
-				_ = a(o.jb, !1)
+			const d = a(o.gb, !0),
+				u = a(o.hb, !0),
+				p = a(o.ib, !0),
+				m = a(o.gb, !1),
+				b = a(o.hb, !1),
+				_ = a(o.ib, !1)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BottomCellWrapper.5c34da5b029892e92a44.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BottomCellWrapper.bb5264d080d05960d068.js.map

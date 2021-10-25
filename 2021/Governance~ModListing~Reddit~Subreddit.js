@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.5255d4614041d8c6dad7.js
-// Retrieved at 10/25/2021, 2:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.d9725273629fc7c2120e.js
+// Retrieved at 10/25/2021, 4:40:12 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~Subreddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, r) {
@@ -824,7 +824,7 @@
 			})), r.d(t, "k", (function() {
 				return M
 			})), r.d(t, "j", (function() {
-				return K
+				return z
 			})), r.d(t, "e", (function() {
 				return Y
 			})), r.d(t, "d", (function() {
@@ -951,7 +951,7 @@
 							success: v.ok
 						}
 					})
-				}, G = Object(d.a)(U.l), W = Object(d.a)(U.k), q = Object(d.a)(U.j), K = e => async (t, r, {
+				}, G = Object(d.a)(U.l), W = Object(d.a)(U.k), q = Object(d.a)(U.j), z = e => async (t, r, {
 					apiContext: n
 				}) => {
 					t(G({
@@ -974,11 +974,11 @@
 						subredditId: e,
 						...i.error
 					}))
-				}, z = Object(d.a)(U.d), Y = e => async (t, r, n) => {
+				}, K = Object(d.a)(U.d), Y = e => async (t, r, n) => {
 					const o = r(),
 						i = o.structuredStyles.models[e] || {},
 						s = Object(L.X)(o);
-					t(z({
+					t(K({
 						isNightmodeOn: s,
 						styles: i,
 						subredditId: e
@@ -1989,18 +1989,18 @@
 						isOnline: t
 					} = e.subscribe.data;
 					H(t)
-				}, []), W = Object(o.useRef)(null), [q, K] = Object(o.useState)(!1), z = Object(o.useCallback)(e => {
+				}, []), W = Object(o.useRef)(null), [q, z] = Object(o.useState)(!1), K = Object(o.useCallback)(e => {
 					e.forEach(e => {
 						const {
 							isIntersecting: t,
 							intersectionRatio: r
 						} = e, n = 1 !== r;
-						t ? K(!0) : n && K(!1)
+						t ? z(!0) : n && z(!1)
 					})
 				}, []), Y = Object(o.useRef)({
 					rootMargin: "750px 0px 1000px 0px"
 				});
-				return Object(u.a)(W, z, Y.current), S ? B : i.a.createElement("div", {
+				return Object(u.a)(W, K, Y.current), S ? B : i.a.createElement("div", {
 					className: Object(n.a)(I.a.userIconWrapper, {
 						[I.a.nftUserIcon]: O,
 						[I.a.hasHeadShotWrapper]: U,
@@ -2531,7 +2531,7 @@
 					}
 				}),
 				c = (e, t) => {
-					t && (Object(o.Ab)(e.postId), Object(o.Jb)(t)), e.impressionIdStr ? Object(o.Bb)(e.impressionIdStr) : e.impressionId && Object(o.Bb)(e.impressionId)
+					t && (Object(o.yb)(e.postId), Object(o.Hb)(t)), e.impressionIdStr ? Object(o.zb)(e.impressionIdStr) : e.impressionId && Object(o.zb)(e.impressionId)
 				}
 		},
 		"./src/reddit/helpers/trackers/blade.ts": function(e, t, r) {
@@ -2697,9 +2697,9 @@
 			})), r.d(t, "g", (function() {
 				return q
 			})), r.d(t, "c", (function() {
-				return K
-			})), r.d(t, "A", (function() {
 				return z
+			})), r.d(t, "A", (function() {
+				return K
 			})), r.d(t, "h", (function() {
 				return Y
 			})), r.d(t, "b", (function() {
@@ -2986,14 +2986,14 @@
 						...M(e, t)
 					})
 				},
-				K = e => {
+				z = e => {
 					Object(p.a)({
 						...g(e),
 						noun: "social_connect_link",
 						action: n.c.CLICK
 					})
 				},
-				z = (e, t) => {
+				K = (e, t) => {
 					Object(p.a)({
 						...g(e),
 						noun: "twitter_share_checkbox",
@@ -3464,7 +3464,7 @@
 			})), r.d(t, "m", (function() {
 				return W
 			})), r.d(t, "t", (function() {
-				return z
+				return K
 			})), r.d(t, "w", (function() {
 				return Y
 			})), r.d(t, "e", (function() {
@@ -3611,7 +3611,7 @@
 							break;
 						case i.Lb.SETTINGS: {
 							const o = e;
-							Object(w.a)(K(r, n)(t)), o.match.params.page === i.Zb.Profile && Object(u.l)(t);
+							Object(w.a)(z(r, n)(t)), o.match.params.page === i.Zb.Profile && Object(u.l)(t);
 							break
 						}
 						case i.Lb.POST_CREATION:
@@ -3664,7 +3664,7 @@
 							}
 							break;
 						case i.Lb.PUBLIC_ACCESS_NETWORK:
-							m && Object(w.a)(z()(t));
+							m && Object(w.a)(K()(t));
 							break;
 						case i.Lb.GEOTAGGING:
 							m && Object(w.a)($()(t));
@@ -3962,14 +3962,14 @@
 					...S(r),
 					timer: j.timer(e, t)
 				}),
-				K = (e, t) => r => ({
+				z = (e, t) => r => ({
 					source: "global",
 					action: "view",
 					noun: "screen",
 					...S(r),
 					timer: j.timer(e, t)
 				}),
-				z = () => e => ({
+				K = () => e => ({
 					source: "global",
 					action: "view",
 					noun: "screen",
@@ -4793,33 +4793,33 @@
 				u = e => {
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: i.Ad
+						experimentName: i.zd
 					});
-					return t === i.Bd.UIChangesOnly || t === i.Bd.RedditRecommendation || t === i.Bd.OpenAI || t === i.Bd.FilteredOpenAI
+					return t === i.Ad.UIChangesOnly || t === i.Ad.RedditRecommendation || t === i.Ad.OpenAI || t === i.Ad.FilteredOpenAI
 				},
 				f = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: i.Ad
-					}) === i.Bd.UIChangesOnly
+						experimentName: i.zd
+					}) === i.Ad.UIChangesOnly
 				},
 				p = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: i.Ad
-					}) === i.Bd.RedditRecommendation
+						experimentName: i.zd
+					}) === i.Ad.RedditRecommendation
 				},
 				_ = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: i.Ad
-					}) === i.Bd.OpenAI
+						experimentName: i.zd
+					}) === i.Ad.OpenAI
 				},
 				m = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: i.Ad
-					}) === i.Bd.FilteredOpenAI
+						experimentName: i.zd
+					}) === i.Ad.FilteredOpenAI
 				},
 				b = e => e.creations.subredditRec.api.pending,
 				g = e => e.creations.subredditRec.api.error,
@@ -4900,12 +4900,12 @@
 					pageLayer: t
 				}) => Object(i.M)(t), (e, t, r) => !e && !t && r),
 				l = Object(n.a)((e, t) => Object(s.c)(e, {
-					experimentName: o.Rb,
+					experimentName: o.Qb,
 					experimentEligibilitySelector: e => a(e, t)
 				}), e => e),
-				d = e => e === o.Ae.NoCommunityWidgets,
-				u = e => e === o.Ae.NoRulesModerators,
-				f = e => e === o.Ae.RelatedPostsDu
+				d = e => e === o.ze.NoCommunityWidgets,
+				u = e => e === o.ze.NoRulesModerators,
+				f = e => e === o.ze.RelatedPostsDu
 		},
 		"./src/reddit/selectors/tooltip.ts": function(e, t, r) {
 			"use strict";
@@ -4919,4 +4919,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.5255d4614041d8c6dad7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.d9725273629fc7c2120e.js.map

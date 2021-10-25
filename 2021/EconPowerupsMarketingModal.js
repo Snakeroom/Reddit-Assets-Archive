@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.28d5331fd26b53294530.js
-// Retrieved at 10/25/2021, 2:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.99d372cd41170a1ea43f.js
+// Retrieved at 10/25/2021, 4:40:12 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsMarketingModal"], {
 		"./src/reddit/components/Econ/Common/BenefitTile/index.m.less": function(e, t, s) {
@@ -323,11 +323,11 @@
 				S = s.n(L);
 			const {
 				fbt: B
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), H = e => e.length % 2 == 1 ? [...e, O.a.More] : e;
-			var A = function(e) {
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), A = e => e.length % 2 == 1 ? [...e, O.a.More] : e;
+			var H = function(e) {
 					const {
 						className: t
-					} = e, s = Object(f.a)(), n = Object(r.e)(y), a = H(n);
+					} = e, s = Object(f.a)(), n = Object(r.e)(y), a = A(n);
 					return o.a.createElement("div", {
 						className: Object(i.a)(S.a.container, t)
 					}, a.map(e => O.c[e]().title && o.a.createElement(C.a, {
@@ -389,7 +389,7 @@
 				});
 				const O = () => c(Object(d.g)(b.a.ECON_POWERUPS_MARKETING)),
 					v = () => {
-						Object(E.Hb)(b.a.ECON_POWERUPS_MARKETING, !0), c(k ? Object(l.g)(t) : Object(d.h)(b.a.ECON_POWERUPS_PURCHASE))
+						Object(E.Fb)(b.a.ECON_POWERUPS_MARKETING, !0), c(k ? Object(l.g)(t) : Object(d.h)(b.a.ECON_POWERUPS_PURCHASE))
 					};
 				if (!t || !a || !s) return O(), null;
 				const M = D._("Unlock perks for the whole community", null, {
@@ -408,7 +408,7 @@
 						hk: "2HkBNV"
 					}),
 					subtitle: M
-				}), o.a.createElement(A, {
+				}), o.a.createElement(H, {
 					className: T.a.benefits
 				}), o.a.createElement("span", {
 					className: T.a.modDisclaimer
@@ -588,4 +588,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.28d5331fd26b53294530.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.99d372cd41170a1ea43f.js.map

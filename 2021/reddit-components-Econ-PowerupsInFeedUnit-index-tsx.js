@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.e52dead7bab78351d741.js
-// Retrieved at 10/25/2021, 10:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.a720dfe808533f32695a.js
+// Retrieved at 10/25/2021, 4:40:12 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-PowerupsInFeedUnit-index-tsx"], {
 		"./src/reddit/actions/snoovatar.ts": function(e, t, s) {
@@ -604,7 +604,7 @@
 					O(t)
 				}, [e, h, w, O]), Object(r.useEffect)(() => {
 					if (v === a.HIDDEN) return;
-					(() => v === a.UNLOCKED_COMMUNITY_GEAR ? s(Object(d.p)()) : v === a.POWERUPS_DEFAULT ? s(Object(d.v)()) : v === a.POWERUPS_COMMUNITY_GEAR ? s(Object(d.u)()) : v === a.UNLOCKED_UNAPPLIED_FROM_PREMIUM ? s(Object(d.s)()) : void 0)(), Object(i.S)(h, e)
+					(() => v === a.UNLOCKED_COMMUNITY_GEAR ? s(Object(d.p)()) : v === a.POWERUPS_DEFAULT ? s(Object(d.v)()) : v === a.POWERUPS_COMMUNITY_GEAR ? s(Object(d.u)()) : v === a.UNLOCKED_UNAPPLIED_FROM_PREMIUM ? s(Object(d.s)()) : void 0)(), Object(i.R)(h, e)
 				}, [v, O, h, e, s, w]), v) {
 					case a.POWERUPS_DEFAULT:
 					case a.POWERUPS_COMMUNITY_GEAR:
@@ -1007,4 +1007,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.e52dead7bab78351d741.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.a720dfe808533f32695a.js.map

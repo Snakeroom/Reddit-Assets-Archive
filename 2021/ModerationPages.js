@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.14c93a9b74e79e1c05cc.js
-// Retrieved at 10/25/2021, 4:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.779d9eaef39bf134966e.js
+// Retrieved at 10/25/2021, 4:40:12 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, s) {
@@ -6109,7 +6109,7 @@
 				E = s("./src/reddit/hooks/useExperimentVariant.ts");
 
 			function v(e) {
-				return Object(E.a)(x.md) === x.qd.Enabled ? r.a.createElement(f.a, null, r.a.createElement(h.a, null, r.a.createElement(b.a, {
+				return Object(E.a)(x.ld) === x.pd.Enabled ? r.a.createElement(f.a, null, r.a.createElement(h.a, null, r.a.createElement(b.a, {
 					subredditName: e.subredditName,
 					subredditId: e.subredditId
 				}))) : r.a.createElement(g.a, e)
@@ -6162,7 +6162,7 @@
 					update: a
 				} = e, d = Object(se.a)(), l = Object(i.d)(), [c, m] = Object(o.useState)(s), [u, p] = Object(o.useState)(!1), [h, b] = Object(o.useState)(!0);
 				return Object(o.useEffect)(() => {
-					b(Object(te.G)("location")), Object(te.Ib)("location")
+					b(Object(te.F)("location")), Object(te.Gb)("location")
 				}, []), r.a.createElement(r.a.Fragment, null, r.a.createElement(H.a, null, F.fbt._("Community Location", null, {
 					hk: "3aowzb"
 				})), r.a.createElement(W.l, {
@@ -7124,10 +7124,10 @@
 			}
 			var E = Object(r.b)(void 0, e => ({
 				onDismissTooltip: () => {
-					e(Object(l.i)()), Object(p.yb)()
+					e(Object(l.i)()), Object(p.xb)()
 				},
 				onViewTooltip: () => {
-					Object(p.Sb)()
+					Object(p.Qb)()
 				}
 			}))(Object(m.c)(x));
 			const v = "editable-primary-topic-idcard";
@@ -15632,10 +15632,9 @@
 					redditStyle: g,
 					isOverlay: f,
 					isVoteCountAnimation: x,
-					triggerCelebratoryMoment: E,
-					postId: v,
-					isReadingIndicatorsExperimentEnabled: C
-				} = e, _ = `upvote-button-${t.id}${f?"-overlay":""}`;
+					postId: E,
+					isReadingIndicatorsExperimentEnabled: v
+				} = e, C = `upvote-button-${t.id}${f?"-overlay":""}`;
 				return a.a.createElement(r.b, {
 					isRemoved: !!t.bannedBy,
 					isReported: Object(c.a)(t),
@@ -15650,15 +15649,14 @@
 					model: t,
 					onVoteClick: s,
 					redditStyle: g,
-					upvoteTooltipId: _,
+					upvoteTooltipId: C,
 					isVoteCountAnimation: x,
 					isCountAnimShadowTestEnabled: p,
-					triggerCelebratoryMoment: E,
-					postId: v,
+					postId: E,
 					scoreClassName: Object(o.a)(u.a.score, {
-						[u.a.allowPointerEvents]: C
+						[u.a.allowPointerEvents]: v
 					}),
-					isReadingIndicatorsExperimentEnabled: C
+					isReadingIndicatorsExperimentEnabled: v
 				}))
 			}
 		},
@@ -24659,7 +24657,7 @@
 				}
 				componentDidMount() {
 					this.setState({
-						locationSettingSeen: Object(V.G)("location")
+						locationSettingSeen: Object(V.F)("location")
 					})
 				}
 				render() {
@@ -25384,9 +25382,9 @@
 			const o = e => {
 				const t = Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: n.Bc
+					experimentName: n.Ac
 				});
-				return !(!t || Object(n.Pe)(t))
+				return !(!t || Object(n.Ne)(t))
 			}
 		},
 		"./src/reddit/selectors/gold/powerups/flairs.ts": function(e, t, s) {
@@ -25518,10 +25516,10 @@
 				o = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				r = s("./src/reddit/selectors/posts.ts");
 			const i = e => Object(o.c)(e, {
-					experimentName: a.Jd,
+					experimentName: a.Id,
 					experimentEligibilitySelector: o.a
 				}),
-				d = (e, t) => t === a.Sd.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				d = (e, t) => t === a.Rd.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				l = Object(n.a)(r.H, i, (e, t) => d(e, t)),
 				c = Object(n.a)((e, t) => t, i, (e, t) => d(e, t))
 		},
@@ -25800,4 +25798,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.14c93a9b74e79e1c05cc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.779d9eaef39bf134966e.js.map

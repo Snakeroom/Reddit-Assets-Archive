@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.c9217f64670f9dac256c.js
-// Retrieved at 10/25/2021, 3:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.11b86ec50924ac6e8125.js
+// Retrieved at 10/25/2021, 4:40:12 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, n) {
@@ -8944,7 +8944,7 @@
 			const Be = Object(l.a)(e => Object(Re.c)(e, {
 				experimentEligibilitySelector: A.K,
 				experimentName: Le.I
-			}), e => e === Le.T.Enabled);
+			}), e => e === Le.S.Enabled);
 			var Fe = n("./src/reddit/selectors/meta.ts"),
 				De = n("./src/reddit/components/Settings/AccountPrefsSection/index.m.less"),
 				Ue = n.n(De);
@@ -10379,7 +10379,7 @@
 				ms = Object(l.a)(e => Object(Re.c)(e, {
 					experimentEligibilitySelector: A.K,
 					experimentName: Le.H
-				}), e => e === Le.S.Enabled),
+				}), e => e === Le.R.Enabled),
 				ps = at.a.span("SubheaderLink", Mn.a),
 				bs = at.a.button("GenerateBackupCodesButton", Mn.a),
 				hs = at.a.wrapped(Ce.g, "ThirdPartyAuth", Mn.a),
@@ -12197,4 +12197,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.c9217f64670f9dac256c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.11b86ec50924ac6e8125.js.map
