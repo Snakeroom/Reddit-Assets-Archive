@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.043090a7997436bc71fc.js
-// Retrieved at 10/25/2021, 11:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.73f15f7a25dedb685f89.js
+// Retrieved at 10/25/2021, 11:50:04 AM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var n, a, r = o[0], s = o[1], c = o[2], l = 0, P = []; l < r.length; l++) a = r[l], Object.prototype.hasOwnProperty.call(d, a) && d[a] && P.push(d[a][0]), d[a] = 0;
@@ -1409,7 +1409,7 @@
 						"translations/es_MX-json": "94b30bcd23ea1739c622",
 						"translations/fr_FR-json": "646e57ff634a4e545d6a",
 						"translations/it_IT-json": "2a194baa300f0df93b10",
-						"translations/pseudo_ext-json": "964d4e7fbb3620f71927",
+						"translations/pseudo_ext-json": "fc911b1b5c6e1375e3dd",
 						"translations/pseudo_long-json": "1340372904b8c69e4b9d",
 						"translations/pseudo_short-json": "93d567f3050848df4ff6",
 						"translations/pt_BR-json": "0148d5686061f04fbfee",
@@ -1559,7 +1559,7 @@
 						ModPnSettingsSubredditList: "a92238d238ebe2ffd142",
 						PushNotificationSettings: "1327ae6bab3f82d8e172",
 						UpdateCardModal: "d7c808474fa9d0db2783",
-						"reddit-components-CommunitySettings-ModPnSettings": "9119700b4909d88a7d70",
+						"reddit-components-CommunitySettings-ModPnSettings": "e150af703dbcc923c609",
 						"reddit-components-Settings-CreatePasswordSSOModal": "31bbd64d2ba35fd1e1ad",
 						AwardCreationModal: "3a44d1adead639bd0df2",
 						"reddit-components-ModHub-Content-ModQueue": "e3cbf80ab02c99348b59",
@@ -1664,4 +1664,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.043090a7997436bc71fc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.73f15f7a25dedb685f89.js.map
