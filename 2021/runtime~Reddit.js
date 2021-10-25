@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.73f15f7a25dedb685f89.js
-// Retrieved at 10/25/2021, 11:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.897dac1d7899a80a0d68.js
+// Retrieved at 10/25/2021, 12:10:04 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var n, a, r = o[0], s = o[1], c = o[2], l = 0, P = []; l < r.length; l++) a = r[l], Object.prototype.hasOwnProperty.call(d, a) && d[a] && P.push(d[a][0]), d[a] = 0;
@@ -1409,7 +1409,7 @@
 						"translations/es_MX-json": "94b30bcd23ea1739c622",
 						"translations/fr_FR-json": "646e57ff634a4e545d6a",
 						"translations/it_IT-json": "2a194baa300f0df93b10",
-						"translations/pseudo_ext-json": "fc911b1b5c6e1375e3dd",
+						"translations/pseudo_ext-json": "21b951fd46aed30fc62a",
 						"translations/pseudo_long-json": "1340372904b8c69e4b9d",
 						"translations/pseudo_short-json": "93d567f3050848df4ff6",
 						"translations/pt_BR-json": "0148d5686061f04fbfee",
@@ -1597,8 +1597,8 @@
 						PowerupsGifsTooltip: "ab9d19a6764850d7c3b0",
 						SpecialMembershipsGifsTooltip: "76b91a65ca85eeccd123",
 						ChatReportFlow: "78d1e92dc46ea4ce3390",
-						"vendors~ModStatsChart": "b5ddeb9e3cf55c6f9638",
-						ModStatsChart: "d3d364cb66859b7c20ed"
+						"vendors~ModStatsChart": "805197141fd59abbbf7b",
+						ModStatsChart: "3aaefb443dd939432ddf"
 					} [e] + ".js"
 				}(e);
 				var c = new Error;
@@ -1664,4 +1664,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.73f15f7a25dedb685f89.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.897dac1d7899a80a0d68.js.map

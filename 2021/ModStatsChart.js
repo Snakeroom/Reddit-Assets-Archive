@@ -1,9 +1,9 @@
-// https://www.redditstatic.com/desktop2x/ModStatsChart.d3d364cb66859b7c20ed.js
-// Retrieved at 10/5/2021, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModStatsChart.3aaefb443dd939432ddf.js
+// Retrieved at 10/25/2021, 12:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModStatsChart"], {
-		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, o, s) {
-			var t = {
+		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, o, l) {
+			var s = {
 				"./af": "./node_modules/moment/locale/af.js",
 				"./af.js": "./node_modules/moment/locale/af.js",
 				"./ar": "./node_modules/moment/locale/ar.js",
@@ -270,23 +270,23 @@
 				"./zh-tw.js": "./node_modules/moment/locale/zh-tw.js"
 			};
 
-			function l(e) {
+			function t(e) {
 				var o = n(e);
-				return s(o)
+				return l(o)
 			}
 
 			function n(e) {
-				if (!s.o(t, e)) {
+				if (!l.o(s, e)) {
 					var o = new Error("Cannot find module '" + e + "'");
 					throw o.code = "MODULE_NOT_FOUND", o
 				}
-				return t[e]
+				return s[e]
 			}
-			l.keys = function() {
-				return Object.keys(t)
-			}, l.resolve = n, e.exports = l, l.id = "./node_modules/moment/locale sync recursive ^\\.\\/.*$"
+			t.keys = function() {
+				return Object.keys(s)
+			}, t.resolve = n, e.exports = t, t.id = "./node_modules/moment/locale sync recursive ^\\.\\/.*$"
 		},
-		"./src/reddit/components/ModHub/TrafficStats/ModStatsChart/index.m.less": function(e, o, s) {
+		"./src/reddit/components/ModHub/TrafficStats/ModStatsChart/index.m.less": function(e, o, l) {
 			e.exports = {
 				chart: "_2p8txefR8XSKki775xakki",
 				legend: "H4SAS-mcse1qgWuI4FX0I",
@@ -302,92 +302,100 @@
 				value: "_1lff8pbcelPewBg5akLLLQ"
 			}
 		},
-		"./src/reddit/components/ModHub/TrafficStats/ModStatsChart/index.tsx": function(e, o, s) {
+		"./src/reddit/components/ModHub/TrafficStats/ModStatsChart/index.tsx": function(e, o, l) {
 			"use strict";
-			s.r(o);
-			var t = s("./node_modules/fbt/lib/FbtPublic.js"),
-				l = s("./node_modules/polished/dist/polished.es.js"),
-				n = s("./node_modules/react/index.js"),
-				m = s.n(n),
-				d = s("./node_modules/react-chartjs-2/es/index.js"),
-				a = s("./src/lib/CSSVariableProvider/withTheme.tsx"),
-				c = s("./src/lib/prettyPrintNumber/index.ts"),
-				i = s("./src/reddit/components/RichTextEditor/Tooltip/index.tsx"),
-				u = s("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
-				j = s("./src/reddit/layout/twoCol/ExpandRight/index.tsx"),
-				r = s("./src/reddit/components/ModHub/TrafficStats/helpers.ts"),
-				_ = s("./src/reddit/constants/colors.ts"),
-				h = s("./src/reddit/models/StructuredStyles/index.ts"),
-				p = s("./src/reddit/models/Theme/NewColorSystem/index.ts");
-			const b = (e, o) => ({
-					animation: {
-						duration: 0
-					},
-					maintainAspectRatio: !1,
-					responsive: !1,
-					elements: {
-						point: {
-							borderWidth: .2,
-							hoverRadius: 5,
-							radius: .3,
-							hitRadius: 0
-						}
-					},
-					hover: {
-						intersect: !1,
-						animationDuration: 1e4
-					},
-					legend: {
-						display: !1
-					},
-					scales: {
-						xAxes: [{
-							gridLines: {
-								color: Object(p.a)(e).placeholder,
-								zeroLineColor: Object(p.a)(e).bodyText
-							},
-							ticks: {
-								autoSkip: !0,
-								beginAtZero: !0,
-								maxTicksLimit: o,
-								lineHeight: .1,
-								fontColor: Object(p.a)(e).bodyText,
-								maxRotation: 0,
-								minRotation: 0,
-								padding: 10,
-								callback: (o, s) => e.statsTime === r.b.Hour ? Object(r.l)(Object(r.g)(o)) : Object(r.n)(Object(r.g)(o), e.statsTime, 0 === s)
+			l.r(o);
+			l("./node_modules/chartjs-adapter-moment/dist/chartjs-adapter-moment.esm.js");
+			var s = l("./node_modules/fbt/lib/FbtPublic.js"),
+				t = l("./src/lib/CSSVariableProvider/withTheme.tsx"),
+				n = l("./src/lib/prettyPrintNumber/index.ts"),
+				m = l("./node_modules/polished/dist/polished.es.js"),
+				d = l("./node_modules/react/index.js"),
+				a = l.n(d),
+				c = l("./node_modules/react-chartjs-2/dist/index.modern.js"),
+				u = l("./src/reddit/components/RichTextEditor/Tooltip/index.tsx"),
+				i = l("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
+				j = l("./src/reddit/layout/twoCol/ExpandRight/index.tsx"),
+				r = l("./src/reddit/components/ModHub/TrafficStats/helpers.ts"),
+				_ = l("./src/reddit/constants/colors.ts"),
+				p = l("./src/reddit/models/StructuredStyles/index.ts"),
+				h = l("./src/reddit/models/Theme/NewColorSystem/index.ts");
+			const b = (e, o) => {
+					return {
+						animation: {
+							duration: 0
+						},
+						animations: {
+							active: {
+								duration: 1e4
 							}
-						}, {
-							gridLines: {
-								display: !1,
-								drawBorder: !1
-							},
-							ticks: {
-								autoSkip: !0,
-								maxTicksLimit: o,
-								lineHeight: .1,
-								fontColor: Object(p.a)(e).actionIcon,
-								maxRotation: 0,
-								minRotation: 0,
-								callback: o => e.statsTime === r.b.Hour ? Object(r.k)(Object(r.g)(o), e.statsTime) : ""
+						},
+						maintainAspectRatio: !1,
+						responsive: !1,
+						elements: {
+							point: {
+								borderWidth: .2,
+								hoverRadius: 5,
+								radius: .3,
+								hitRadius: 0
 							}
-						}],
-						yAxes: [{
-							gridLines: {
-								color: Object(p.a)(e).placeholder,
-								zeroLineColor: Object(p.a)(e).bodyText,
-								zeroLineWidth: 1
-							},
-							ticks: {
+						},
+						hover: {
+							intersect: !1
+						},
+						scales: {
+							x1: {
 								beginAtZero: !0,
-								fontColor: Object(p.a)(e).bodyText,
+								grid: {
+									color: o => 0 === o.tick.value ? Object(h.a)(e).bodyText : Object(h.a)(e).placeholder
+								},
+								ticks: {
+									font: {
+										lineHeight: .1
+									},
+									maxRotation: 0,
+									minRotation: 0,
+									maxTicksLimit: o,
+									color: Object(h.a)(e).bodyText,
+									padding: 10,
+									callback: function(o, l) {
+										return e.statsTime === r.b.Hour ? Object(r.l)(Object(r.g)(this.getLabelForValue(o))) : Object(r.n)(Object(r.g)(this.getLabelForValue(o)), e.statsTime, 0 === l)
+									}
+								}
+							},
+							x2: {
+								grid: {
+									display: !1,
+									drawBorder: !1
+								},
+								ticks: {
+									font: {
+										lineHeight: .1
+									},
+									maxRotation: 0,
+									minRotation: 0,
+									maxTicksLimit: o,
+									color: Object(h.a)(e).actionIcon,
+									callback: function(o) {
+										return e.statsTime === r.b.Hour ? Object(r.k)(Object(r.g)(this.getLabelForValue(o)), e.statsTime) : ""
+									}
+								}
+							},
+							y: {
+								beginAtZero: !0,
+								grid: {
+									color: o => 0 === o.tick.value ? Object(h.a)(e).bodyText : Object(h.a)(e).placeholder
+								},
 								suggestedMin: 0,
-								callback: e => Object(c.b)(e)
+								ticks: {
+									color: Object(h.a)(e).bodyText,
+									callback: e => Object(n.b)(e)
+								}
 							}
-						}]
+						}
 					}
-				}),
-				f = [_.b.alienblue, _.b.reported, _.b.orangered, h.b[7]],
+				},
+				f = [_.b.alienblue, _.b.reported, _.b.orangered, p.b[7]],
 				g = {
 					fill: !1,
 					lineTension: 0,
@@ -396,9 +404,9 @@
 					borderWidth: 1,
 					spanGaps: !0
 				},
-				k = (e, o, s) => ({
+				k = (e, o, l) => ({
 					...g,
-					label: s,
+					label: l,
 					backgroundColor: f[o],
 					borderColor: f[o],
 					pointBorderColor: f[o],
@@ -406,176 +414,189 @@
 					pointHoverBackgroundColor: f[o],
 					data: e
 				});
-			var w = s("./src/reddit/components/ModHub/TrafficStats/ModStatsChart/index.m.less"),
-				v = s.n(w);
-			const x = 62.5,
-				y = 65;
-			class z extends n.Component {
-				constructor(e) {
-					super(e), this.chartRef = m.a.createRef(), this.onClickLegend = e => {
-						const o = this.chartRef.current;
-						if (!(o && o.chartInstance && o.chartInstance.data && o.chartInstance.data.datasets)) return;
-						const s = o.chartInstance.data.datasets[e],
-							t = s.hidden;
-						o.chartInstance.getDatasetMeta(e).hidden = !t, s.hidden = !t;
-						const l = this.state.hideDatasetArr;
-						l[e] = !t, this.setState({
-							hideDatasetArr: l
-						}), o.chartInstance.update()
-					}, this.hideTooltip = e => {
-						"mouseout" === e.type && this.setState({
-							showTooltip: !1
-						})
-					}, this.tooltipOptions = e => {
-						const o = this.chartRef.current;
-						if (!o || !o.chartInstance.canvas || !o.chartInstance.data.labels) return;
-						const s = f[e.dataPoints[0].datasetIndex],
-							l = o.chartInstance.canvas.getBoundingClientRect(),
-							n = l.left + e.caretX - x,
-							m = l.top + e.caretY - y,
-							d = o.chartInstance.data.labels[e.dataPoints[0].index],
-							a = Object(r.g)(d),
-							c = e.dataPoints[0].yLabel;
-						let i = "";
-						i = this.props.statsView === r.d.Members ? 0 === e.dataPoints[0].datasetIndex ? t.fbt._("Joined", null, {
-							hk: "2vPXl8"
-						}) : t.fbt._("Left", null, {
-							hk: "1cy9rl"
-						}) : this.props.statsView === r.d.Pageviews ? t.fbt._("Viewed", null, {
-							hk: "3jFRbm"
-						}) : t.fbt._("Visited", null, {
-							hk: "Ub0qx"
-						}), this.setState({
-							color: s,
-							top: m,
-							left: n,
-							date: a,
-							value: c,
-							tooltipText: i,
-							showTooltip: !0
-						})
-					}, this.getOptions = () => ({
-						...b(this.props, this.props.statsTime === r.b.Hour ? 10 : 12),
-						tooltips: {
-							enabled: !1,
-							custom: this.tooltipOptions
-						},
-						onHover: this.hideTooltip
-					}), this.getLabels = () => {
-						const {
-							statsTime: e,
-							windowEnd: o,
-							windowStart: s
-						} = this.props;
-						return Object(r.p)(e, !0).slice(s, o).map(e => e.toString())
-					};
-					const o = e.statsView === r.d.Members ? 2 : 4,
-						s = new Array(o).fill(!1);
-					this.state = {
+			var v = l("./src/reddit/components/ModHub/TrafficStats/ModStatsChart/index.m.less"),
+				x = l.n(v);
+			o.default = Object(t.a)(({
+				data: e,
+				statsTime: o,
+				statsView: l,
+				theme: t,
+				windowEnd: _,
+				windowStart: p
+			}) => {
+				const h = l === r.d.Members ? 2 : 4,
+					g = Object(d.useRef)(null),
+					v = Object(d.useRef)(null),
+					y = function(e) {
+						const o = Object(d.useRef)(null);
+						return Object(d.useEffect)(() => {
+							o.current = e
+						}, [e]), o.current
+					}(l),
+					[w, O] = Object(d.useState)(new Array(h).fill(!1)),
+					[z, E] = Object(d.useState)(!1),
+					[T, R] = Object(d.useState)({
 						color: "",
-						date: 0,
-						hideDatasetArr: s,
+						date: "",
 						left: 0,
-						showTooltip: !1,
-						tooltipText: "",
 						top: 0,
-						value: 0
-					}
-				}
-				componentDidUpdate(e) {
-					if ((e.statsView !== this.props.statsView || e.statsTime !== this.props.statsTime || e.theme !== this.props.theme) && this.chartRef.current && (this.chartRef.current.chartInstance.options = this.getOptions(), this.chartRef.current.chartInstance.update(), e.statsView !== this.props.statsView)) {
-						const e = this.props.statsView === r.d.Members ? 2 : 4,
-							o = new Array(e).fill(!1);
-						this.setState({
-							hideDatasetArr: o
-						})
-					}
-				}
-				render() {
-					const {
-						statsTime: e,
-						statsView: o,
-						windowStart: s,
-						windowEnd: n
-					} = this.props;
-					let a = Object(r.o)(this.props.data, o, e);
-					if (e === r.b.Month) {
-						const e = (new Date).getMonth() + 1;
-						a = a.map(o => Object(r.s)(o, e))
-					}
-					const _ = {
-							labels: this.getLabels(),
-							datasets: o === r.d.Members ? [k(a[0].slice(s, n), 0, t.fbt._("Joined", null, {
-								hk: "29HSWZ"
-							})), k(a[1].slice(s, n), 1, t.fbt._("Left", null, {
-								hk: "2ENe3g"
-							}))] : [k(a[0].slice(s, n), 0, t.fbt._("New Reddit", null, {
-								hk: "3Kn6gy"
-							})), k(a[1].slice(s, n), 1, t.fbt._("Old Reddit", null, {
-								hk: "1YYCdo"
-							})), k(a[2].slice(s, n), 2, t.fbt._("Mobile Web", null, {
-								hk: "4whHjN"
-							})), k(a[3].slice(s, n), 3, t.fbt._("Reddit Apps", null, {
-								hk: "2PU6tU"
-							}))]
-						},
-						h = e === r.b.Hour ? Object(r.l)(this.state.date) : Object(r.k)(this.state.date, e);
-					return m.a.createElement("div", {
-						className: v.a.chart
-					}, m.a.createElement(u.a, null, m.a.createElement(d.a, {
-						data: _,
-						height: 300,
-						width: 940,
-						ref: this.chartRef,
-						options: this.getOptions()
-					}), m.a.createElement("div", {
-						className: v.a.legend
-					}, _.datasets.map((e, o) => {
-						const s = this.state.hideDatasetArr[o],
-							t = s && this.props.theme ? this.props.theme.newCommunityTheme.post : f[o],
-							n = s ? Object(l.f)(f[o], .5) : f[o];
-						return m.a.createElement("button", {
-							className: v.a.legendLine,
-							key: e.label,
-							onClick: () => this.onClickLegend(o)
-						}, m.a.createElement(j.a, {
-							className: v.a.expandRight
-						}, m.a.createElement("div", {
-							className: v.a.legendBlock,
-							style: {
-								backgroundColor: t,
-								border: `2px solid ${n}`
+						tooltipText: "",
+						value: ""
+					});
+				Object(d.useEffect)(() => {
+					z && null !== v.current && R(v.current)
+				}, [z]);
+				const P = Object(d.useCallback)(({
+						tooltip: e,
+						chart: t
+					}) => {
+						var n, m, d;
+						if (console.log("I have been in options"), !t || !t.canvas || !t.data.labels) return;
+						if (0 === e.opacity) return void E(!1);
+						const a = f[e.dataPoints[0].datasetIndex],
+							c = t.canvas.getBoundingClientRect(),
+							u = c.left + e.caretX - 62.5,
+							i = c.top + e.caretY - 65,
+							j = null === (m = null === (n = null == t ? void 0 : t.data) || void 0 === n ? void 0 : n.labels) || void 0 === m ? void 0 : m[null === (d = null == e ? void 0 : e.dataPoints[0]) || void 0 === d ? void 0 : d.dataIndex],
+							_ = Object(r.g)(j),
+							p = e.dataPoints[0].formattedValue;
+						let h = "";
+						h = l === r.d.Members ? 0 === e.dataPoints[0].datasetIndex ? s.fbt._("Joined", null, {
+							hk: "2vPXl8"
+						}) : s.fbt._("Left", null, {
+							hk: "1cy9rl"
+						}) : l === r.d.Pageviews ? s.fbt._("Viewed", null, {
+							hk: "3jFRbm"
+						}) : s.fbt._("Visited", null, {
+							hk: "Ub0qx"
+						});
+						const b = o === r.b.Hour ? Object(r.l)(_) : Object(r.k)(_, o);
+						v.current = {
+							color: a,
+							date: b,
+							left: u,
+							top: i,
+							tooltipText: h,
+							value: p
+						}, E(!0)
+					}, [o, l]),
+					S = {
+						...b({
+							data: e,
+							statsTime: o,
+							statsView: l,
+							theme: t,
+							windowEnd: _,
+							windowStart: p
+						}, o === r.b.Hour ? 10 : 12),
+						plugins: {
+							legend: {
+								display: !1
+							},
+							tooltip: {
+								enabled: !1,
+								external: P
 							}
-						}), m.a.createElement("span", {
-							className: v.a.legendLabel
-						}, e.label)))
-					}))), this.state.showTooltip && m.a.createElement(i.b, {
-						className: v.a.Tooltip,
-						targetPosition: {
-							top: this.state.top,
-							left: this.state.left
 						}
-					}, m.a.createElement("div", {
-						className: v.a.value,
-						style: {
-							color: this.state.color
-						}
-					}, Object(c.a)(this.state.value.toString())), m.a.createElement("div", {
-						className: v.a.dateLine
-					}, m.a.createElement("span", {
-						className: v.a.action
-					}, this.state.tooltipText), m.a.createElement("span", {
-						className: v.a.date
-					}, " ", e === r.b.Hour ? t.fbt._("at {tooltipDate}", [t.fbt._param("tooltipDate", h)], {
-						hk: "BRXaW"
-					}) : t.fbt._("on {tooltipDate}", [t.fbt._param("tooltipDate", h)], {
-						hk: "494Xs8"
-					})))))
+					};
+				Object(d.useEffect)(() => {
+					if (g.current && (g.current.options = S, g.current.update(), y !== l)) {
+						const e = l === r.d.Members ? 2 : 4,
+							o = new Array(e).fill(!1);
+						O(o)
+					}
+				}, [l, o, t, y, S]);
+				let C = Object(r.o)(e, l, o);
+				if (o === r.b.Month) {
+					const e = (new Date).getMonth() + 1;
+					C = C.map(o => Object(r.s)(o, e))
 				}
-			}
-			o.default = Object(a.a)(z)
+				const N = {
+						labels: Object(r.p)(o, !0).slice(p, _).map(e => e.toString()),
+						datasets: l === r.d.Members ? [k(C[0].slice(p, _), 0, s.fbt._("Joined", null, {
+							hk: "29HSWZ"
+						})), k(C[1].slice(p, _), 1, s.fbt._("Left", null, {
+							hk: "2ENe3g"
+						}))] : [k(C[0].slice(p, _), 0, s.fbt._("New Reddit", null, {
+							hk: "3Kn6gy"
+						})), k(C[1].slice(p, _), 1, s.fbt._("Old Reddit", null, {
+							hk: "1YYCdo"
+						})), k(C[2].slice(p, _), 2, s.fbt._("Mobile Web", null, {
+							hk: "4whHjN"
+						})), k(C[3].slice(p, _), 3, s.fbt._("Reddit Apps", null, {
+							hk: "2PU6tU"
+						}))]
+					},
+					{
+						color: M,
+						date: L,
+						left: B,
+						top: H,
+						tooltipText: D,
+						value: A
+					} = T;
+				return a.a.createElement("div", {
+					className: x.a.chart
+				}, a.a.createElement(i.a, null, a.a.createElement(c.a, {
+					data: N,
+					height: 300,
+					width: 940,
+					ref: g,
+					options: S
+				}), a.a.createElement("div", {
+					className: x.a.legend
+				}, N.datasets.map((e, o) => {
+					const l = w[o],
+						s = l && t ? t.newCommunityTheme.post : f[o],
+						n = l ? Object(m.f)(f[o], .5) : f[o];
+					return a.a.createElement("button", {
+						className: x.a.legendLine,
+						key: e.label,
+						onClick: () => (e => {
+							const o = g.current;
+							if (!o || !o.data || !o.data.datasets) return;
+							const l = o.data.datasets[e],
+								s = l.hidden;
+							o.getDatasetMeta(e).hidden = !s, l.hidden = !s;
+							const t = w;
+							t[e] = !s, O(t), o.update()
+						})(o)
+					}, a.a.createElement(j.a, {
+						className: x.a.expandRight
+					}, a.a.createElement("div", {
+						className: x.a.legendBlock,
+						style: {
+							backgroundColor: s,
+							border: `2px solid ${n}`
+						}
+					}), a.a.createElement("span", {
+						className: x.a.legendLabel
+					}, e.label)))
+				}))), z && a.a.createElement(u.b, {
+					className: x.a.Tooltip,
+					targetPosition: {
+						top: H,
+						left: B
+					}
+				}, a.a.createElement("div", {
+					className: x.a.value,
+					style: {
+						color: M
+					}
+				}, Object(n.a)(A.toString())), a.a.createElement("div", {
+					className: x.a.dateLine
+				}, a.a.createElement("span", {
+					className: x.a.action
+				}, D), a.a.createElement("span", {
+					className: x.a.date
+				}, " ", o === r.b.Hour ? s.fbt._("at {tooltipDate}", [s.fbt._param("tooltipDate", L)], {
+					hk: "BRXaW"
+				}) : s.fbt._("on {tooltipDate}", [s.fbt._param("tooltipDate", L)], {
+					hk: "494Xs8"
+				})))))
+			})
 		},
-		"./src/reddit/components/RichTextEditor/Tooltip/index.m.less": function(e, o, s) {
+		"./src/reddit/components/RichTextEditor/Tooltip/index.m.less": function(e, o, l) {
 			e.exports = {
 				tooltipBox: "tVQ1dB4n0mAWdcQNxFq-K",
 				dropdown: "_1akkpO3lymdoWGIc5tjIpm",
@@ -585,23 +606,23 @@
 				triangleBelow: "_1churYJpAwcb-tf0k1c46F"
 			}
 		},
-		"./src/reddit/components/RichTextEditor/Tooltip/index.tsx": function(e, o, s) {
+		"./src/reddit/components/RichTextEditor/Tooltip/index.tsx": function(e, o, l) {
 			"use strict";
-			s.d(o, "a", (function() {
+			l.d(o, "a", (function() {
 				return r
-			})), s.d(o, "b", (function() {
-				return h
+			})), l.d(o, "b", (function() {
+				return p
 			}));
-			var t = s("./node_modules/react/index.js"),
-				l = s.n(t),
-				n = s("./src/lib/classNames/index.ts"),
-				m = s("./src/lib/CSSVariableProvider/index.tsx"),
-				d = s("./src/reddit/helpers/dom/index.ts"),
-				a = s("./src/reddit/components/RichTextEditor/Tooltip/index.m.less"),
-				c = s.n(a);
-			const i = 8,
-				u = 16,
-				j = 15 + u / 2;
+			var s = l("./node_modules/react/index.js"),
+				t = l.n(s),
+				n = l("./src/lib/classNames/index.ts"),
+				m = l("./src/lib/CSSVariableProvider/index.tsx"),
+				d = l("./src/reddit/helpers/dom/index.ts"),
+				a = l("./src/reddit/components/RichTextEditor/Tooltip/index.m.less"),
+				c = l.n(a);
+			const u = 8,
+				i = 16,
+				j = 15 + i / 2;
 			var r;
 			! function(e) {
 				e[e.None = 0] = "None", e[e.Above = 1] = "Above", e[e.Below = 2] = "Below"
@@ -609,17 +630,17 @@
 			const _ = ({
 				isBelow: e = !1,
 				style: o
-			}) => l.a.createElement("div", {
+			}) => t.a.createElement("div", {
 				className: Object(n.a)(c.a.triangle, {
 					[c.a.triangleBelow]: e
 				}),
 				style: o
-			}, l.a.createElement("div", {
+			}, t.a.createElement("div", {
 				className: c.a.triangleBack
-			}), l.a.createElement("div", {
+			}), t.a.createElement("div", {
 				className: c.a.triangleFront
 			}));
-			class h extends t.Component {
+			class p extends s.Component {
 				constructor(e) {
 					super(e), this.containerRef = null, this.updateContainerRef = e => this.containerRef = e, this.setTargetPosition = e => {
 						e ? this.updatePositioning(e) : this.setState({
@@ -632,37 +653,37 @@
 				updatePositioning(e) {
 					if (!this.containerRef) return;
 					const o = this.containerRef.getBoundingClientRect(),
-						s = Math.round(o.width),
-						t = Math.round(o.height),
-						l = this.state.positioning;
+						l = Math.round(o.width),
+						s = Math.round(o.height),
+						t = this.state.positioning;
 					if (!e) {
-						if (!l) return;
-						if (l.tooltipWidth === s && l.tooltipHeight === t) return
+						if (!t) return;
+						if (t.tooltipWidth === l && t.tooltipHeight === s) return
 					}
-					const n = e ? e.bottom : l.target.bottom,
-						m = e ? e.top : l.target.top,
-						a = e ? e.left : l.target.left,
+					const n = e ? e.bottom : t.target.bottom,
+						m = e ? e.top : t.target.top,
+						a = e ? e.left : t.target.left,
 						c = Object(d.e)(this.containerRef);
-					let i, u, j;
+					let u, i, j;
 					if (c) {
 						const e = c.getBoundingClientRect();
-						i = e.bottom - (n || 0), u = a - e.left + c.scrollLeft, j = m - e.top + c.scrollTop
+						u = e.bottom - (n || 0), i = a - e.left + c.scrollLeft, j = m - e.top + c.scrollTop
 					} else {
 						const e = document.documentElement,
 							o = window.pageYOffset || e.scrollTop;
-						u = a + (window.pageXOffset || e.scrollLeft), j = m + o
+						i = a + (window.pageXOffset || e.scrollLeft), j = m + o
 					}
 					const r = {
 						target: {
 							top: m,
 							left: a
 						},
-						tooltipWidth: s,
-						tooltipHeight: t,
+						tooltipWidth: l,
+						tooltipHeight: s,
 						tooltip: {
 							top: j,
-							left: u,
-							bottom: i
+							left: i,
+							bottom: u
 						}
 					};
 					this.adjustPositionForTriangle(r, c), this.setState({
@@ -671,15 +692,15 @@
 				}
 				adjustPositionForTriangle(e, o) {
 					const {
-						trianglePlacement: s
+						trianglePlacement: l
 					} = this.props;
-					if (!s) return;
-					const t = o ? o.offsetWidth : document.documentElement.offsetWidth,
-						l = t ? Math.max(e.tooltip.left + e.tooltipWidth - t, 0) : 0;
-					e.tooltip.left -= l + j;
-					const n = l + j - u / 2;
+					if (!l) return;
+					const s = o ? o.offsetWidth : document.documentElement.offsetWidth,
+						t = s ? Math.max(e.tooltip.left + e.tooltipWidth - s, 0) : 0;
+					e.tooltip.left -= t + j;
+					const n = t + j - i / 2;
 					let m;
-					s === r.Above ? (e.tooltip.top += i, m = -i) : (e.tooltip.top -= e.tooltipHeight + i, m = e.tooltipHeight), e.triangle = {
+					l === r.Above ? (e.tooltip.top += u, m = -u) : (e.tooltip.top -= e.tooltipHeight + u, m = e.tooltipHeight), e.triangle = {
 						top: m,
 						left: n
 					}
@@ -697,34 +718,34 @@
 					const {
 						aboveParent: e,
 						dropdown: o,
-						trianglePlacement: s
+						trianglePlacement: l
 					} = this.props, {
-						positioning: t
-					} = this.state, d = t && void 0 !== t.triangle && l.a.createElement(_, {
-						isBelow: s === r.Below,
+						positioning: s
+					} = this.state, d = s && void 0 !== s.triangle && t.a.createElement(_, {
+						isBelow: l === r.Below,
 						style: {
-							top: t.triangle.top + "px",
-							left: t.triangle.left + "px"
+							top: s.triangle.top + "px",
+							left: s.triangle.left + "px"
 						}
 					});
-					let a = l.a.createElement("div", {
+					let a = t.a.createElement("div", {
 						className: Object(n.a)(c.a.tooltipBox, this.props.className, {
 							[c.a.dropdown]: o
 						}),
-						style: t ? {
-							left: t.tooltip.left,
+						style: s ? {
+							left: s.tooltip.left,
 							...e ? {
-								bottom: t.tooltip.bottom
+								bottom: s.tooltip.bottom
 							} : {
-								top: t.tooltip.top
+								top: s.tooltip.top
 							}
 						} : {},
 						ref: this.updateContainerRef
-					}, t && this.props.children && l.a.createElement(l.a.Fragment, null, d, this.props.children));
+					}, s && this.props.children && t.a.createElement(t.a.Fragment, null, d, this.props.children));
 					return this.props.usePortal && (a = Object(m.d)(a, this.props.portalContainer || document.body)), a
 				}
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModStatsChart.d3d364cb66859b7c20ed.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModStatsChart.3aaefb443dd939432ddf.js.map
