@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.e4aba646135400bebfe6.js
-// Retrieved at 10/25/2021, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.be2fcd965824679e36c2.js
+// Retrieved at 10/25/2021, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -5965,12 +5965,12 @@
 						rtJsonElementProps: o
 					});
 					switch (s) {
-						case b.pe.SmIcon:
+						case b.qe.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: o
 							});
-						case b.pe.SmIconHc:
+						case b.qe.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -7246,7 +7246,7 @@
 				a = n("./src/reddit/selectors/telemetry.ts");
 
 			function c() {
-				const e = Object(i.db)(),
+				const e = Object(i.eb)(),
 					t = e ? Object(a.getPageTypeFromCurrentPage)(e) : void 0,
 					n = "search_results" === t && Object(a.structureType)(e) === a.StructureType.Trending;
 				return {
@@ -8046,7 +8046,7 @@
 						experimentEligibilitySelector: o.K,
 						experimentName: s.jc
 					});
-					return !(!t || Object(s.Oe)(t))
+					return !(!t || Object(s.Pe)(t))
 				},
 				a = e => {
 					return Object(r.c)(e, {
@@ -8184,12 +8184,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.je
+						experimentName: s.ke
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.pe.SmIcon || t === s.pe.SmIconHc
+					return t === s.qe.SmIcon || t === s.qe.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -8218,4 +8218,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.e4aba646135400bebfe6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.be2fcd965824679e36c2.js.map

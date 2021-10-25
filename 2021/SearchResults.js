@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.c9def1cb1483a426c2f5.js
-// Retrieved at 10/25/2021, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.5aee6a4e00e8f91449c9.js
+// Retrieved at 10/25/2021, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -5081,7 +5081,7 @@
 						f = Object(i.useRef)(),
 						g = Object(i.useRef)(null),
 						E = [d.Yb.Users],
-						I = Object(b.db)(),
+						I = Object(b.eb)(),
 						N = Object(h.b)(),
 						P = Object(a.d)(),
 						{
@@ -5458,7 +5458,7 @@
 						f = Object(i.useRef)(),
 						g = Object(i.useRef)(null),
 						y = [d.Yb.Subreddits, d.Yb.Users],
-						S = Object(b.db)(),
+						S = Object(b.eb)(),
 						R = Object(h.b)(),
 						F = Object(a.d)(),
 						{
@@ -5628,7 +5628,7 @@
 						identifier: s,
 						listingKey: o,
 						searchOptions: g
-					} = e, y = Object(C.a)(), v = Object(b.a)(), j = Object(u.db)(), {
+					} = e, y = Object(C.a)(), v = Object(b.a)(), j = Object(u.eb)(), {
 						hideNSFWPref: _,
 						subredditOrProfile: k,
 						subredditOrProfileAboutInfo: S
@@ -5739,7 +5739,7 @@
 						listingKey: O,
 						searchOptions: E,
 						sidebar: j
-					} = e, S = Object(p.db)(), I = Object(g.a)(), N = Object(f.a)(), {
+					} = e, S = Object(p.eb)(), I = Object(g.a)(), N = Object(f.a)(), {
 						hideNSFWPref: P,
 						subredditOrProfile: w,
 						subredditOrProfileAboutInfo: T
@@ -6277,7 +6277,7 @@
 					return c.a.createElement(g.b, null, J)
 				}),
 				H = Object(T.b)((e => t => {
-					const s = Object(j.db)(),
+					const s = Object(j.eb)(),
 						r = ((e, {
 							postId: t
 						}) => ({
@@ -7051,7 +7051,7 @@
 						onViewed: c,
 						searchOptions: l,
 						tab: m
-					} = e, u = Object(d.a)(l.q || ""), p = Object(_.db)(), h = Object(_.O)(p), b = Object(_.V)(p), C = Object(i.e)(t => Object(x.d)(t, e)), f = void 0 === C || C;
+					} = e, u = Object(d.a)(l.q || ""), p = Object(_.eb)(), h = Object(_.O)(p), b = Object(_.V)(p), C = Object(i.e)(t => Object(x.d)(t, e)), f = void 0 === C || C;
 					return n.a.createElement(n.a.Fragment, null, h && n.a.createElement(fe.a, {
 						searchOptions: l,
 						url: Object(ve.a)(b)
@@ -7834,7 +7834,7 @@
 					showPromotedCTA: h
 				} = Object(o.e)(t => be(t, e)), b = Object(o.e)(e => Object(Q.d)(e, {
 					postId: s
-				})), C = Object(W.db)(), x = Object(U.b)(), f = Object(o.d)(), g = Object(le.a)(), {
+				})), C = Object(W.eb)(), x = Object(U.b)(), f = Object(o.d)(), g = Object(le.a)(), {
 					post: y,
 					subredditOrProfile: v
 				} = Object(H.d)(s), O = Object(n.useCallback)((e, t) => {
@@ -9326,7 +9326,7 @@
 					const {
 						isSerpRedesignLayout: t,
 						subreddit: s
-					} = Object(i.e)(t => Ee(t, e)), r = Object(c.db)(), o = Object(c.V)(r), l = Object(c.cb)(r), m = s && !!e.searchOptions.restrict_sr && !e.shouldHideGlobalSearchLink;
+					} = Object(i.e)(t => Ee(t, e)), r = Object(c.eb)(), o = Object(c.V)(r), l = Object(c.db)(r), m = s && !!e.searchOptions.restrict_sr && !e.shouldHideGlobalSearchLink;
 					return n.a.createElement(d.a, {
 						className: Object(a.a)(t ? Oe.a.ComponentRedesign : Oe.a.Component),
 						"data-testid": "search-results-subnav"
@@ -10022,7 +10022,7 @@
 			const _ = 129,
 				k = Object(b.u)({
 					filterName: e => Object(b.V)(e)[h.g],
-					url: e => Object(b.cb)(e)
+					url: e => Object(b.db)(e)
 				}),
 				S = Object(a.c)({
 					subredditId: (e, t) => Object(v.B)(e, t.subredditName)
@@ -11340,7 +11340,7 @@
 				L = Object(v.u)({
 					currentPageUrl: v.f,
 					queryParams: v.V,
-					shouldShowCovidBanner: v.ab
+					shouldShowCovidBanner: v.bb
 				}),
 				R = () => Object(d.c)({
 					headerContent: S.k,
@@ -11535,7 +11535,7 @@
 				match: t
 			}) {
 				const s = Object(c.d)(),
-					r = Object(v.db)(),
+					r = Object(v.eb)(),
 					n = Object(L.b)(),
 					F = Object(S.a)(),
 					V = Object(o.useRef)(!1),
@@ -11550,7 +11550,7 @@
 					})),
 					K = Object(c.e)(R.d),
 					z = Object(v.V)(r),
-					G = Object(v.ab)(r),
+					G = Object(v.bb)(r),
 					[Y, Z] = Object(o.useState)(!1),
 					J = Object(k.a)(z) || {};
 				Object(o.useEffect)(() => {
@@ -11807,9 +11807,9 @@
 			}));
 			var r = s("./src/reddit/constants/experiments.ts"),
 				n = s("./src/reddit/helpers/chooseVariant/index.ts");
-			const i = e => r.ce.Treatment1 === Object(n.c)(e, {
+			const i = e => r.de.Treatment1 === Object(n.c)(e, {
 				experimentEligibilitySelector: n.a,
-				experimentName: r.Td
+				experimentName: r.Ud
 			})
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, s) {
@@ -12102,10 +12102,10 @@
 				i = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				o = s("./src/reddit/selectors/posts.ts");
 			const a = e => Object(i.c)(e, {
-					experimentName: n.Id,
+					experimentName: n.Jd,
 					experimentEligibilitySelector: i.a
 				}),
-				c = (e, t) => t === n.Rd.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				c = (e, t) => t === n.Sd.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				d = Object(r.a)(o.H, a, (e, t) => c(e, t)),
 				l = Object(r.a)((e, t) => t, a, (e, t) => c(e, t))
 		},
@@ -12114,4 +12114,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.c9def1cb1483a426c2f5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.5aee6a4e00e8f91449c9.js.map

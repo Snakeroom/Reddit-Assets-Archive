@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CryptoVault.b082bf85ddcdbe95cf2e.js
-// Retrieved at 10/25/2021, 10:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CryptoVault.d959cdb51439210de8a2.js
+// Retrieved at 10/25/2021, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CryptoVault"], {
 		"./src/reddit/actions/economics/claims/constants.ts": function(e, t, n) {
@@ -177,7 +177,7 @@
 
 			function y(e) {
 				const t = Object(s.d)(),
-					n = Object(E.db)(),
+					n = Object(E.eb)(),
 					r = Object(s.e)(e => Object(E.r)(e, {
 						pageLayer: n
 					})),
@@ -244,7 +244,7 @@
 			}
 			t.default = function(e) {
 				const t = Object(o.d)(),
-					n = Object(a.db)(),
+					n = Object(a.eb)(),
 					r = Object(o.e)(e => Object(a.r)(e, {
 						pageLayer: n
 					})),
@@ -684,7 +684,7 @@
 			};
 
 			function u() {
-				const e = Object(i.db)(),
+				const e = Object(i.eb)(),
 					t = Object(r.e)(t => Object(i.r)(t, {
 						pageLayer: e
 					})),
@@ -702,4 +702,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CryptoVault.b082bf85ddcdbe95cf2e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CryptoVault.d959cdb51439210de8a2.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.8bc19710db59a4e69259.js
-// Retrieved at 10/25/2021, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.2ed240d5ce64b1a9c4c4.js
+// Retrieved at 10/25/2021, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-MediumPost"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -2534,7 +2534,7 @@
 				}
 			}
 			t.c = r.a.memo((function(e) {
-				const t = Object(p.db)(),
+				const t = Object(p.eb)(),
 					s = Object(p.w)(t),
 					n = Object(V.a)(),
 					o = Object(i.e)(o => X(o, {
@@ -4230,7 +4230,7 @@
 					experimentEligibilitySelector: o.a,
 					experimentName: n.cc
 				});
-				return !(!t || Object(n.Oe)(t))
+				return !(!t || Object(n.Pe)(t))
 			}
 		},
 		"./src/reddit/selectors/i18n/index.ts": function(e, t, s) {
@@ -4246,7 +4246,7 @@
 				i = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const c = e => {
 					const t = Object(i.a)(e);
-					return Boolean(t) && !Object(o.Oe)(t)
+					return Boolean(t) && !Object(o.Pe)(t)
 				},
 				a = Object(n.a)(c, r.d, (e, t) => e && !t)
 		},
@@ -4262,13 +4262,13 @@
 				r = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = s("./src/reddit/selectors/posts.ts");
 			const c = e => Object(r.c)(e, {
-					experimentName: o.Id,
+					experimentName: o.Jd,
 					experimentEligibilitySelector: r.a
 				}),
-				a = (e, t) => t === o.Rd.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				a = (e, t) => t === o.Sd.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				d = Object(n.a)(i.H, c, (e, t) => a(e, t)),
 				l = Object(n.a)((e, t) => t, c, (e, t) => a(e, t))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.8bc19710db59a4e69259.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.2ed240d5ce64b1a9c4c4.js.map

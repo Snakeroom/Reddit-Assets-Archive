@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.dffcedb4c026fed45bd7.js
-// Retrieved at 10/25/2021, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.a794d51cb3eebeefc1c4.js
+// Retrieved at 10/25/2021, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["TopWeekPostsDiscoveryUnit"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -1849,7 +1849,7 @@
 				}
 			}
 			t.c = r.a.memo((function(e) {
-				const t = Object(p.db)(),
+				const t = Object(p.eb)(),
 					s = Object(p.w)(t),
 					n = Object(H.a)(),
 					a = Object(i.e)(a => J(a, {
@@ -2322,4 +2322,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.dffcedb4c026fed45bd7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.a794d51cb3eebeefc1c4.js.map

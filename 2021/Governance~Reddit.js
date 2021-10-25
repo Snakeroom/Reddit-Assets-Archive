@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.1e75b9c9f3b3b910ab7f.js
-// Retrieved at 10/25/2021, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.5a8bce1de7c3980ab435.js
+// Retrieved at 10/25/2021, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -4027,7 +4027,7 @@
 			const v = e => S.d.reCaptchaEnterprise(e) && !Object(D.d)(e),
 				j = e => !!Object(T.c)(e, {
 					experimentEligibilitySelector: Object(g.d)(Object(g.b)(...a.d)),
-					experimentName: b.Ud
+					experimentName: b.Vd
 				}),
 				w = Object(s.b)("LOAD_RECAPTCHA_ENTERPRISE"),
 				A = Object(s.b)("EXECUTE_RECAPTCHA_ENTERPRISE"),
@@ -6062,7 +6062,7 @@
 				}
 			}
 			t.c = a.a.memo((function(e) {
-				const t = Object(b.db)(),
+				const t = Object(b.eb)(),
 					r = Object(b.w)(t),
 					s = Object(q.a)(),
 					n = Object(c.e)(n => $(n, {
@@ -26106,7 +26106,7 @@
 			};
 
 			function i() {
-				const e = Object(n.db)(),
+				const e = Object(n.eb)(),
 					t = Object(s.e)(t => Object(n.r)(t, {
 						pageLayer: e
 					})),
@@ -26214,7 +26214,7 @@
 				l = e => e === n.V.OnetapAuto,
 				p = e => e.user.googleOneTapEnabled,
 				b = Object(s.a)(o.K, i, (e, t) => !e && !!t),
-				f = Object(s.a)(o.K, i, (e, t) => !e && !!t && !Object(n.Oe)(t))
+				f = Object(s.a)(o.K, i, (e, t) => !e && !!t && !Object(n.Pe)(t))
 		},
 		"./src/reddit/selectors/scheduledPosts/index.ts": function(e, t, r) {
 			"use strict";
@@ -26429,4 +26429,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.1e75b9c9f3b3b910ab7f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.5a8bce1de7c3980ab435.js.map
