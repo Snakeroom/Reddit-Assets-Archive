@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.c7909956266fd3741296.js
-// Retrieved at 10/20/2021, 5:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.a6470bb0c50dd826e86b.js
+// Retrieved at 10/25/2021, 1:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -4841,21 +4841,21 @@
 			const Re = e => {
 					return Object(Me.c)(e, {
 						experimentEligibilitySelector: Me.a,
-						experimentName: Ne.Je
+						experimentName: Ne.Ke
 					}) === Ne.Cc
 				},
 				Fe = e => {
 					if (Object(Ae.a)(e)) return !1;
 					return Object(Me.c)(e, {
 						experimentEligibilitySelector: Me.a,
-						experimentName: Ne.Ie
+						experimentName: Ne.Je
 					}) === Ne.Cc
 				},
 				Be = e => {
 					if (Object(Ae.a)(e)) return !1;
 					return Object(Me.c)(e, {
 						experimentEligibilitySelector: Me.a,
-						experimentName: Ne.He
+						experimentName: Ne.Ie
 					}) === Ne.Cc
 				};
 			var De = s("./node_modules/fbt/lib/FbtPublic.js"),
@@ -5806,7 +5806,7 @@
 							baseUrl: s.base_url,
 							hostPostId: a,
 							isEligibleForLinkedPosts: n,
-							shouldShowLinkedPosts: n && !Object(x.Ne)(t) && !Object(w.a)(t),
+							shouldShowLinkedPosts: n && !Object(x.Oe)(t) && !Object(w.a)(t),
 							subreddit: o
 						}
 					}
@@ -5867,7 +5867,7 @@
 						hostPostData: d,
 						listingBelowVariant: c
 					} = e;
-					if (c && !Object(x.Ne)(c) && !Object(w.a)(c) && !i) return a.a.createElement("div", {
+					if (c && !Object(x.Oe)(c) && !Object(w.a)(c) && !i) return a.a.createElement("div", {
 						className: K.a.smallBanner
 					});
 					const {
@@ -7783,13 +7783,13 @@
 			const i = e => {
 					const t = Object(n.c)(e, {
 						experimentEligibilitySelector: n.a,
-						experimentName: o.Ge
+						experimentName: o.He
 					});
 					return t === o.O.TwoDayCooldown || t === o.O.FiveDayCooldown
 				},
 				a = e => {
 					const t = Object(r.d)(e, {
-							experimentName: o.Ge
+							experimentName: o.He
 						}),
 						s = null == t ? void 0 : t.variant;
 					return s === o.O.TwoDayCooldown ? 2 : s === o.O.FiveDayCooldown ? 5 : 0
@@ -7855,24 +7855,24 @@
 					if (Object(i.a)(e)) return !1;
 					const t = Object(n.c)(e, {
 						experimentEligibilitySelector: n.a,
-						experimentName: o.Ke
+						experimentName: o.Le
 					});
-					return t === o.Ce.UIChangesOnly || t === o.Ce.TypingIndicators || t === o.Ce.IndicatorsPlusCTA
+					return t === o.De.UIChangesOnly || t === o.De.TypingIndicators || t === o.De.IndicatorsPlusCTA
 				},
 				d = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(r.d)(e, {
-							experimentName: o.Ke
+							experimentName: o.Le
 						}),
 						s = null == t ? void 0 : t.variant;
-					return s === o.Ce.TypingIndicators || s === o.Ce.IndicatorsPlusCTA
+					return s === o.De.TypingIndicators || s === o.De.IndicatorsPlusCTA
 				},
 				c = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(r.d)(e, {
-						experimentName: o.Ke
+						experimentName: o.Le
 					});
-					return (null == t ? void 0 : t.variant) === o.Ce.IndicatorsPlusCTA
+					return (null == t ? void 0 : t.variant) === o.De.IndicatorsPlusCTA
 				}
 		},
 		"./src/reddit/selectors/isEligibleForCommentTruncation.ts": function(e, t, s) {
@@ -7934,4 +7934,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.c7909956266fd3741296.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.a6470bb0c50dd826e86b.js.map
