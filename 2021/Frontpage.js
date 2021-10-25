@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.231aa173a41f7faf8713.js
-// Retrieved at 10/25/2021, 4:40:12 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.cf0e6d085578e5b5b65b.js
+// Retrieved at 10/25/2021, 5:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -612,8 +612,8 @@
 				H = a("./src/reddit/selectors/runTimeEnvVars.ts"),
 				z = a("./src/lib/makeActionCreator/index.ts"),
 				K = a("./src/lib/makeListingKey/index.ts"),
-				W = a("./src/reddit/actions/ads/index.ts"),
-				G = a("./src/reddit/helpers/chooseVariant/index.ts"),
+				G = a("./src/reddit/actions/ads/index.ts"),
+				W = a("./src/reddit/helpers/chooseVariant/index.ts"),
 				Y = a("./src/reddit/reducers/sidebarPromotedPosts/models/index.ts"),
 				Q = a("./src/reddit/actions/seo/linksModule.ts"),
 				J = a("./src/reddit/selectors/seo/linksModule.ts"),
@@ -651,7 +651,7 @@
 							key: e,
 							meta: l.meta,
 							...t
-						})), a(I.g(b)), t.geoFilter && a(Object(P.k)(t.geoFilter)), a(Object(W.b)(Y.a.FRONTPAGE))
+						})), a(I.g(b)), t.geoFilter && a(Object(P.k)(t.geoFilter)), a(Object(G.b)(Y.a.FRONTPAGE))
 					} else a(ce({
 						error: h.error,
 						key: e,
@@ -682,7 +682,7 @@
 					if (u || d && !m && !t) return void(d && (a(S.l({
 						title: k.d()
 					})), c.sidebarPromotedPosts.firstFetch || window.addEventListener("load", () => {
-						a(Object(W.b)(Y.a.FRONTPAGE))
+						a(Object(G.b)(Y.a.FRONTPAGE))
 					})));
 					const b = Object(q.a)(c),
 						f = Object(q.b)(b),
@@ -696,8 +696,8 @@
 						t: Object(R.a)(o, h)
 					})), a(S.l({
 						title: k.d()
-					})), Object(G.c)(c, {
-						experimentEligibilitySelector: G.a,
+					})), Object(W.c)(c, {
+						experimentEligibilitySelector: W.a,
 						experimentName: "redesign_aa"
 					});
 					const g = Object(B.a)(c, {});
@@ -1548,7 +1548,7 @@
 					hk: "2Y4y3g"
 				}), K = w._("Learn more", null, {
 					hk: "2S4fxr"
-				}), W = `${s.a.assetPath}/img/snoovatars/` + (t === _.a.CommunitySpacesControl ? "CommunitySpace_Control.png" : "CommunitySquare.png");
+				}), G = `${s.a.assetPath}/img/snoovatars/` + (t === _.a.CommunitySpacesControl ? "CommunitySpace_Control.png" : "CommunitySquare.png");
 				return r.a.createElement("div", {
 					className: Object(c.a)(v.a.container, a),
 					"data-testid": "avatar-listing-banner"
@@ -1561,7 +1561,7 @@
 					alt: w._("Continue to Avatar Community Spaces", null, {
 						hk: "3qCfDX"
 					}),
-					src: W
+					src: G
 				}), t === _.a.Achievements && r.a.createElement("div", {
 					className: v.a.achievementsBannerWrapper,
 					onClick: R
@@ -3213,21 +3213,7 @@
 							slot: 40
 						}],
 						tags: ['powerups={"subreddit_i:"t5_4hmhx4"}'],
-						available_for_closet: !1
-					},
-					t5_2qqoq: {
-						id: "powerups_top_pennystocks",
-						section_id: "top_body_tops",
-						customizable_classes: ["body"],
-						capability_required: null,
-						state: "ENABLED",
-						assets: [{
-							accessory_id: "powerups_top_pennystocks",
-							image_url: "https://i.redd.it/snoovatar/snoo_assets/V1w2MVt_pt0_powerups_top_pennystocks.svg",
-							slot: 40
-						}],
-						tags: ['powerups={"subreddit_i:"t5_2qqoq"}'],
-						available_for_closet: !1
+						available_for_closet: !0
 					},
 					t5_37xo2: {
 						id: "powerups_top_roastme",
@@ -3241,7 +3227,7 @@
 							slot: 40
 						}],
 						tags: ['powerups={"subreddit_i:"t5_37xo2"}'],
-						available_for_closet: !1
+						available_for_closet: !0
 					},
 					t5_2qhta: {
 						id: "powerups_top_cats",
@@ -3255,7 +3241,7 @@
 							slot: 40
 						}],
 						tags: ['powerups={"subreddit_i:"t5_2qhta"}'],
-						available_for_closet: !1
+						available_for_closet: !0
 					},
 					t5_2qh55: {
 						id: "powerups_top_food",
@@ -3269,21 +3255,49 @@
 							slot: 40
 						}],
 						tags: ['powerups={"subreddit_i:"t5_2qh55"}'],
-						available_for_closet: !1
+						available_for_closet: !0
+					},
+					t5_3f1s6: {
+						id: "powerups_top_breathofthewild",
+						section_id: "top_body_tops",
+						customizable_classes: ["body"],
+						capability_required: null,
+						state: "enabled",
+						assets: [{
+							accessory_id: "powerups_top_breathofthewild",
+							image_url: "https://i.redd.it/snoovatar/snoo_assets/oahPwJK8sSk_powerups_top_breathofthewild.svg",
+							slot: 40
+						}],
+						tags: ['powerups={"subreddit_id":"t5_3f1s6"}'],
+						available_for_closet: !0
+					},
+					t5_mvcq5: {
+						id: "powerups_top_tiktokcringe",
+						section_id: "top_body_tops",
+						customizable_classes: ["body"],
+						capability_required: null,
+						state: "enabled",
+						assets: [{
+							accessory_id: "powerups_top_tiktokcringe",
+							image_url: "https://i.redd.it/snoovatar/snoo_assets/XlGK2-AG3V0_powerups_top_tiktokcringe.svg",
+							slot: 40
+						}],
+						tags: ['powerups={"subreddit_id":"t5_mvcq5"}'],
+						available_for_closet: !0
 					},
 					t5_4e4fpz: {
 						id: "powerups_top_qa_powerupsenabled",
 						section_id: "top_body_tops",
 						customizable_classes: ["body"],
 						capability_required: null,
-						state: "ENABLED",
+						state: "enabled",
 						assets: [{
 							accessory_id: "powerups_top_qa_powerupsenabled",
-							image_url: "https://i.redd.it/snoovatar/snoo_assets/V1w2MVt_pt0_powerups_top_qa_powerupsenabled.svg",
+							image_url: "https://i.redd.it/snoovatar/snoo_assets/oahPwJK8sSk_powerups_top_qa_powerupsenabled.svg",
 							slot: 40
 						}],
-						tags: ['powerups={"subreddit_i:"t5_4e4fpz"}'],
-						available_for_closet: !1
+						tags: ['powerups={"subreddit_id":"t5_4e4fpz"}'],
+						available_for_closet: !0
 					},
 					t5_4e4ib9: {
 						id: "powerups_top_qa_powerupsenabled2",
@@ -3297,7 +3311,7 @@
 							slot: 40
 						}],
 						tags: ['powerups={"subreddit_i:"t5_4e4ib9"}'],
-						available_for_closet: !1
+						available_for_closet: !0
 					},
 					t5_4y3poa: {
 						id: "powerups_top_qa_powerupsenabled3",
@@ -3311,7 +3325,7 @@
 							slot: 40
 						}],
 						tags: ['powerups={"subreddit_i:"t5_4y3poa"}'],
-						available_for_closet: !1
+						available_for_closet: !0
 					}
 				}
 		},
@@ -3378,8 +3392,8 @@
 				H = a("./src/reddit/selectors/PublicAccessNetwork/discoveryUnit.ts"),
 				z = a("./src/reddit/selectors/user.ts"),
 				K = a("./src/lib/constants/index.ts"),
-				W = a("./src/reddit/actions/publicAccessNetwork/constants.ts"),
-				G = a("./src/lib/objectSelector/index.ts"),
+				G = a("./src/reddit/actions/publicAccessNetwork/constants.ts"),
+				W = a("./src/lib/objectSelector/index.ts"),
 				Y = a("./src/reddit/constants/page.ts"),
 				Q = a("./src/reddit/pages/Frontpage/index.m.less"),
 				J = a.n(Q);
@@ -3396,7 +3410,7 @@
 			const {
 				fbt: $
 			} = a("./node_modules/fbt/lib/FbtPublic.js"), ee = Object(I.u)(), te = Object(l.c)({
-				queryParams: Object(G.a)((e, {
+				queryParams: Object(W.a)((e, {
 					location: t
 				}) => n()([...Object(m.a)(t.search)])),
 				sort: (e, {
@@ -3413,17 +3427,17 @@
 				isLoggedIn: z.K,
 				isPopular: I.E,
 				isRpanDuVisible: e => Object(H.a)(e, {
-					listingName: W.R
+					listingName: G.R
 				}),
 				rpanInjectionIndex: e => Object(H.b)(e, {
-					listingName: W.R
+					listingName: G.R
 				}),
 				layout: I.Q,
 				isInUISimplificationI18NExperiment: F.a
 			}), se = () => Object(l.a)(V.k, te, ae, e => Object(H.a)(e, {
-				listingName: W.R
+				listingName: G.R
 			}), e => Object(H.b)(e, {
-				listingName: W.R
+				listingName: G.R
 			}), e => e, L.a, (e, {
 				queryParams: t,
 				sort: a
@@ -3547,7 +3561,7 @@
 							desiredIndex: b,
 							layout: p,
 							listingKey: h,
-							listingName: W.R,
+							listingName: G.R,
 							sendEvent: f
 						});
 						P[t] = e
@@ -3984,4 +3998,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.231aa173a41f7faf8713.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.cf0e6d085578e5b5b65b.js.map
