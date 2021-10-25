@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.2c5d4c5d8b19e7b47ffe.js
-// Retrieved at 10/25/2021, 1:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.bbf1b5e75f02675ab5b9.js
+// Retrieved at 10/25/2021, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit", "FrontpageSidebar"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -18199,32 +18199,29 @@
 					isEditing: d.i,
 					layout: (e, t) => t.forcedLayout || Object(l.Q)(e, t)
 				}),
-				f = Object(r.b)(h),
-				g = ({
-					hideOnlyChildMargin: e,
-					disableFullscreen: t,
-					dispatch: n,
-					fitPageToContent: s,
-					forcedLayout: r,
-					isCollectionLayout: a,
-					isEditing: i,
-					layout: c,
-					pageLayer: l,
-					...d
-				}) => o.a.createElement("div", d);
+				f = Object(r.b)(h);
 			t.a = b(f(({
 				className: e,
-				...t
-			}) => o.a.createElement(g, p({
+				hideOnlyChildMargin: t,
+				disableFullscreen: n,
+				dispatch: s,
+				fitPageToContent: r,
+				forcedLayout: a,
+				isCollectionLayout: d,
+				isEditing: u,
+				layout: b,
+				pageLayer: h,
+				...f
+			}) => o.a.createElement("div", p({
 				className: Object(i.a)(e, m.a.styledContent, {
-					[m.a.mLargePostLayout]: t.layout === c.g.Large,
-					[m.a.mDisableFullScreen]: t.disableFullscreen && !t.isCollectionLayout,
-					[m.a.mClassicWidth]: t.isCollectionLayout,
-					[m.a.mIsEditing]: !!t.isEditing,
-					[m.a.mCanFlexFullWidth]: !t.fitPageToContent,
-					[m.a.onlyChildMargin]: !t.hideOnlyChildMargin
+					[m.a.mLargePostLayout]: b === c.g.Large || Object(l.N)(h),
+					[m.a.mDisableFullScreen]: n && !d,
+					[m.a.mClassicWidth]: d,
+					[m.a.mIsEditing]: !!u,
+					[m.a.mCanFlexFullWidth]: !r,
+					[m.a.onlyChildMargin]: !t
 				})
-			}, t))))
+			}, f))))
 		},
 		"./src/reddit/layout/page/Listing/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -21090,4 +21087,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePo~5f1ac562", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250", "Governance~ModListing~Reddit~Subreddit", "Chat~Governance~Reddit", "Reddit~StandalonePostPage~reddit-components-MediumPost", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.2c5d4c5d8b19e7b47ffe.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.bbf1b5e75f02675ab5b9.js.map

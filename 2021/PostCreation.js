@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.7cb4941b350554ab89c5.js
-// Retrieved at 10/25/2021, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.8a278776b6297f3264c9.js
+// Retrieved at 10/25/2021, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, n) {
@@ -16294,32 +16294,29 @@
 					isEditing: l.i,
 					layout: (e, t) => t.forcedLayout || Object(d.Q)(e, t)
 				}),
-				f = Object(r.b)(h),
-				g = ({
-					hideOnlyChildMargin: e,
-					disableFullscreen: t,
-					dispatch: n,
-					fitPageToContent: o,
-					forcedLayout: r,
-					isCollectionLayout: a,
-					isEditing: i,
-					layout: c,
-					pageLayer: d,
-					...l
-				}) => s.a.createElement("div", l);
+				f = Object(r.b)(h);
 			t.a = b(f(({
 				className: e,
-				...t
-			}) => s.a.createElement(g, p({
+				hideOnlyChildMargin: t,
+				disableFullscreen: n,
+				dispatch: o,
+				fitPageToContent: r,
+				forcedLayout: a,
+				isCollectionLayout: l,
+				isEditing: u,
+				layout: b,
+				pageLayer: h,
+				...f
+			}) => s.a.createElement("div", p({
 				className: Object(i.a)(e, m.a.styledContent, {
-					[m.a.mLargePostLayout]: t.layout === c.g.Large,
-					[m.a.mDisableFullScreen]: t.disableFullscreen && !t.isCollectionLayout,
-					[m.a.mClassicWidth]: t.isCollectionLayout,
-					[m.a.mIsEditing]: !!t.isEditing,
-					[m.a.mCanFlexFullWidth]: !t.fitPageToContent,
-					[m.a.onlyChildMargin]: !t.hideOnlyChildMargin
+					[m.a.mLargePostLayout]: b === c.g.Large || Object(d.N)(h),
+					[m.a.mDisableFullScreen]: n && !l,
+					[m.a.mClassicWidth]: l,
+					[m.a.mIsEditing]: !!u,
+					[m.a.mCanFlexFullWidth]: !r,
+					[m.a.onlyChildMargin]: !t
 				})
-			}, t))))
+			}, f))))
 		},
 		"./src/reddit/layout/page/Listing/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -22787,4 +22784,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.7cb4941b350554ab89c5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.8a278776b6297f3264c9.js.map

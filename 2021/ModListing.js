@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.e2211d601980130f99f4.js
-// Retrieved at 10/25/2021, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.a13d6a92ae03ced52605.js
+// Retrieved at 10/25/2021, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -2227,32 +2227,29 @@
 					isEditing: l.i,
 					layout: (e, t) => t.forcedLayout || Object(c.Q)(e, t)
 				}),
-				f = Object(o.b)(b),
-				y = ({
-					hideOnlyChildMargin: e,
-					disableFullscreen: t,
-					dispatch: r,
-					fitPageToContent: n,
-					forcedLayout: o,
-					isCollectionLayout: i,
-					isEditing: a,
-					layout: d,
-					pageLayer: c,
-					...l
-				}) => s.a.createElement("div", l);
+				f = Object(o.b)(b);
 			t.a = h(f(({
 				className: e,
-				...t
-			}) => s.a.createElement(y, p({
+				hideOnlyChildMargin: t,
+				disableFullscreen: r,
+				dispatch: n,
+				fitPageToContent: o,
+				forcedLayout: i,
+				isCollectionLayout: l,
+				isEditing: u,
+				layout: h,
+				pageLayer: b,
+				...f
+			}) => s.a.createElement("div", p({
 				className: Object(a.a)(e, m.a.styledContent, {
-					[m.a.mLargePostLayout]: t.layout === d.g.Large,
-					[m.a.mDisableFullScreen]: t.disableFullscreen && !t.isCollectionLayout,
-					[m.a.mClassicWidth]: t.isCollectionLayout,
-					[m.a.mIsEditing]: !!t.isEditing,
-					[m.a.mCanFlexFullWidth]: !t.fitPageToContent,
-					[m.a.onlyChildMargin]: !t.hideOnlyChildMargin
+					[m.a.mLargePostLayout]: h === d.g.Large || Object(c.N)(b),
+					[m.a.mDisableFullScreen]: r && !l,
+					[m.a.mClassicWidth]: l,
+					[m.a.mIsEditing]: !!u,
+					[m.a.mCanFlexFullWidth]: !o,
+					[m.a.onlyChildMargin]: !t
 				})
-			}, t))))
+			}, f))))
 		},
 		"./src/reddit/layout/page/Listing/index.m.less": function(e, t, r) {
 			e.exports = {
@@ -4571,4 +4568,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.e2211d601980130f99f4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.a13d6a92ae03ced52605.js.map
