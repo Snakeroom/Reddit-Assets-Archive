@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReadingIndicator.229c7b3c6b94b1021911.js
-// Retrieved at 10/14/2021, 7:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReadingIndicator.5aa5807d7215fee09ad7.js
+// Retrieved at 10/25/2021, 7:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReadingIndicator"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, s, n) {
@@ -249,7 +249,7 @@
 				}).map((e, s) => `${a.a.assetPath}/img/snoovatars/snoovatar_${s+1}.png`),
 				d = Array.from({
 					length: 8
-				}).map((e, s) => `${a.a.processingAvatarImageUrl}/defaults/avatar_default_${s}.png`),
+				}).map((e, s) => `${a.a.processingAvatarImageUrl}/defaults/v2/avatar_default_${s}.png`),
 				l = [];
 			s.a = t()((e, s = 3, n) => {
 				if (!e || !s) return l;
@@ -304,4 +304,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReadingIndicator.229c7b3c6b94b1021911.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReadingIndicator.5aa5807d7215fee09ad7.js.map

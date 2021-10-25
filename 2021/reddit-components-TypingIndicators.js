@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-TypingIndicators.52ed55b37531a5d9f228.js
-// Retrieved at 10/13/2021, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-TypingIndicators.93d131b6f0e1f6cf43f7.js
+// Retrieved at 10/25/2021, 7:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-TypingIndicators"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, s, t) {
@@ -246,7 +246,7 @@
 				}).map((e, s) => `${r.a.assetPath}/img/snoovatars/snoovatar_${s+1}.png`),
 				d = Array.from({
 					length: 8
-				}).map((e, s) => `${r.a.processingAvatarImageUrl}/defaults/avatar_default_${s}.png`),
+				}).map((e, s) => `${r.a.processingAvatarImageUrl}/defaults/v2/avatar_default_${s}.png`),
 				l = [];
 			s.a = o()((e, s = 3, t) => {
 				if (!e || !s) return l;
@@ -301,4 +301,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-TypingIndicators.52ed55b37531a5d9f228.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-TypingIndicators.93d131b6f0e1f6cf43f7.js.map

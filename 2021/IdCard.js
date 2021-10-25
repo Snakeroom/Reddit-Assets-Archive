@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.e1f96ff8e563b0cdc217.js
-// Retrieved at 10/25/2021, 4:40:12 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.9283b021c0463f9afe03.js
+// Retrieved at 10/25/2021, 7:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "AchievementsActions", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -4778,7 +4778,7 @@
 				}).map((e, t) => `${o.a.assetPath}/img/snoovatars/snoovatar_${t+1}.png`),
 				d = Array.from({
 					length: 8
-				}).map((e, t) => `${o.a.processingAvatarImageUrl}/defaults/avatar_default_${t}.png`),
+				}).map((e, t) => `${o.a.processingAvatarImageUrl}/defaults/v2/avatar_default_${t}.png`),
 				c = [];
 			t.a = s()((e, t = 3, n) => {
 				if (!e || !t) return c;
@@ -5800,4 +5800,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.e1f96ff8e563b0cdc217.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.9283b021c0463f9afe03.js.map

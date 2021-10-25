@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NewCommentPill.f7e6314a6ca14abb2800.js
-// Retrieved at 10/12/2021, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NewCommentPill.82d049df39532e763bd0.js
+// Retrieved at 10/25/2021, 7:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NewCommentPill"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, s) {
@@ -342,7 +342,7 @@
 				}).map((e, t) => `${a.a.assetPath}/img/snoovatars/snoovatar_${t+1}.png`),
 				l = Array.from({
 					length: 8
-				}).map((e, t) => `${a.a.processingAvatarImageUrl}/defaults/avatar_default_${t}.png`),
+				}).map((e, t) => `${a.a.processingAvatarImageUrl}/defaults/v2/avatar_default_${t}.png`),
 				d = [];
 			t.a = o()((e, t = 3, s) => {
 				if (!e || !t) return d;
@@ -370,4 +370,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NewCommentPill.f7e6314a6ca14abb2800.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NewCommentPill.82d049df39532e763bd0.js.map

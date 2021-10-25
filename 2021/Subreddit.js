@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.ffc7c1cbf7f8f859d1a8.js
-// Retrieved at 10/25/2021, 4:40:12 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.24692a2d878250dcd705.js
+// Retrieved at 10/25/2021, 7:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~ModListing", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -12615,7 +12615,7 @@
 				}).map((e, t) => `${i.a.assetPath}/img/snoovatars/snoovatar_${t+1}.png`),
 				c = Array.from({
 					length: 8
-				}).map((e, t) => `${i.a.processingAvatarImageUrl}/defaults/avatar_default_${t}.png`),
+				}).map((e, t) => `${i.a.processingAvatarImageUrl}/defaults/v2/avatar_default_${t}.png`),
 				d = [];
 			t.a = r()((e, t = 3, n) => {
 				if (!e || !t) return d;
@@ -17359,4 +17359,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.ffc7c1cbf7f8f859d1a8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.24692a2d878250dcd705.js.map
