@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SpecialMembershipsGifsTooltip.68baabf6a3f52c03cbf1.js
-// Retrieved at 10/5/2021, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SpecialMembershipsGifsTooltip.76b91a65ca85eeccd123.js
+// Retrieved at 10/25/2021, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SpecialMembershipsGifsTooltip"], {
 		"./src/reddit/components/RichTextEditor/media/GifTooltip/BaseTooltip.m.less": function(e, t, s) {
@@ -386,7 +386,7 @@
 			const D = Object(h.c)({
 				hasGifProduct: (e, {
 					subreddit: t
-				}) => Object(_.v)(e, t.id)
+				}) => Object(_.w)(e, t.id)
 			});
 			t.a = Object(m.c)(Object(p.b)(D, e => ({
 				showErrorToast: t => e(Object(u.f)({
@@ -573,4 +573,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SpecialMembershipsGifsTooltip.68baabf6a3f52c03cbf1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SpecialMembershipsGifsTooltip.76b91a65ca85eeccd123.js.map

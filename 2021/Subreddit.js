@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.ca749c38fe7aa621de49.js
-// Retrieved at 10/25/2021, 10:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.c2f5a549150682d55974.js
+// Retrieved at 10/25/2021, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~ModListing", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -8932,8 +8932,8 @@
 						ext: t,
 						s: n
 					}, s, r) => {
-						if (Object(p.f)(e)) {
-							const a = t || Object(p.e)(e);
+						if (Object(p.g)(e)) {
+							const a = t || Object(p.f)(e);
 							return o.a.createElement("div", {
 								className: Object(i.a)(x.a.MediaWrapper, {
 									[x.a.mHasCaption]: r
@@ -9241,7 +9241,7 @@
 						key: e
 					}, a.a.createElement("br", null)))(s);
 					const r = e.c[0];
-					return r.e !== p.m && r.e !== p.a || !Object(N.f)(r.id) ? a.a.createElement(c.j, {
+					return r.e !== p.m && r.e !== p.a || !Object(N.g)(r.id) ? a.a.createElement(c.j, {
 						key: s
 					}, U(e.c, t, n)) : Object(C.b)(r, s, t)
 				},
@@ -17338,4 +17338,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.ca749c38fe7aa621de49.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.c2f5a549150682d55974.js.map

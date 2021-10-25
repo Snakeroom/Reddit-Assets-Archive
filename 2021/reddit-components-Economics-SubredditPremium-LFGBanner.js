@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Economics-SubredditPremium-LFGBanner.8b2524005961fb0020cd.js
-// Retrieved at 10/13/2021, 6:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Economics-SubredditPremium-LFGBanner.30b6f7873b3fff954d20.js
+// Retrieved at 10/25/2021, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Economics-SubredditPremium-LFGBanner"], {
 		"./node_modules/lodash/_arraySample.js": function(e, t, n) {
@@ -253,9 +253,9 @@
 			})), n.d(t, "b", (function() {
 				return j
 			})), n.d(t, "d", (function() {
-				return w
-			})), n.d(t, "e", (function() {
 				return x
+			})), n.d(t, "e", (function() {
+				return w
 			})), n.d(t, "c", (function() {
 				return I
 			})), n.d(t, "f", (function() {
@@ -338,7 +338,7 @@
 						userId: i.id
 					})), Object(o.a)(t, r.error))
 				}
-			}, w = (e, t) => async (n, s, {
+			}, x = (e, t) => async (n, s, {
 				apiContext: r
 			}) => {
 				await n(S(e, !0));
@@ -351,7 +351,7 @@
 						placement: s.placement
 					})), n(Object(E.d)(b.c.MyBadges)))
 				}
-			}, x = e => async (t, n, {
+			}, w = e => async (t, n, {
 				apiContext: s
 			}) => {
 				const a = n().user.account,
@@ -574,8 +574,8 @@
 				v = n("./src/reddit/controls/Button/index.tsx"),
 				S = n("./src/reddit/endpoints/economics/banners.ts"),
 				j = n("./src/reddit/endpoints/economics/emojis.ts"),
-				w = n("./src/reddit/helpers/economics/membershipPage.ts"),
-				x = n("./src/reddit/helpers/governanceErrorText/index.ts"),
+				x = n("./src/reddit/helpers/economics/membershipPage.ts"),
+				w = n("./src/reddit/helpers/governanceErrorText/index.ts"),
 				I = n("./src/reddit/icons/svgs/Close/index.tsx"),
 				N = n("./src/reddit/models/Toast/index.ts"),
 				P = n("./src/reddit/selectors/economics.ts"),
@@ -1121,7 +1121,7 @@
 					}) => e.subreddits.models[t],
 					subscriberState: (e, {
 						subredditId: t
-					}) => Object(P.w)(e, t),
+					}) => Object(P.x)(e, t),
 					userIsLoggedIn: e => !!e.user.account
 				}),
 				Ce = Object(O.c)(Ee);
@@ -1132,14 +1132,14 @@
 				onError: t => e(Object(m.f)({
 					duration: 5e3,
 					kind: N.b.Error,
-					text: Object(x.a)(t)
+					text: Object(w.a)(t)
 				})),
 				onFetchDismissedBanners: () => e(Object(u.b)(t)),
 				onBadgeClaimed: n => {
 					e(Object(l.c)(t, n))
 				},
 				onOpenLandingPage: (t, n) => {
-					e(Object(a.b)(Object(w.a)(t.name, n)))
+					e(Object(a.b)(Object(x.a)(t.name, n)))
 				},
 				onUndismissBanner: () => e(Object(u.c)(t, S.a.LFG))
 			}))(Ce))
@@ -2022,7 +2022,7 @@
 				return g
 			})), n.d(t, "a", (function() {
 				return y
-			})), n.d(t, "w", (function() {
+			})), n.d(t, "x", (function() {
 				return _
 			})), n.d(t, "f", (function() {
 				return E
@@ -2032,14 +2032,14 @@
 				return C
 			})), n.d(t, "h", (function() {
 				return v
-			})), n.d(t, "y", (function() {
+			})), n.d(t, "z", (function() {
 				return S
 			})), n.d(t, "l", (function() {
 				return j
 			})), n.d(t, "n", (function() {
-				return w
-			})), n.d(t, "e", (function() {
 				return x
+			})), n.d(t, "e", (function() {
+				return w
 			})), n.d(t, "d", (function() {
 				return I
 			})), n.d(t, "j", (function() {
@@ -2050,22 +2050,24 @@
 				return A
 			})), n.d(t, "r", (function() {
 				return D
-			})), n.d(t, "x", (function() {
+			})), n.d(t, "y", (function() {
 				return T
-			})), n.d(t, "t", (function() {
-				return F
 			})), n.d(t, "u", (function() {
+				return F
+			})), n.d(t, "v", (function() {
 				return U
 			})), n.d(t, "b", (function() {
 				return L
-			})), n.d(t, "v", (function() {
+			})), n.d(t, "w", (function() {
 				return R
 			})), n.d(t, "s", (function() {
 				return G
-			})), n.d(t, "g", (function() {
+			})), n.d(t, "t", (function() {
 				return $
-			})), n.d(t, "m", (function() {
+			})), n.d(t, "g", (function() {
 				return q
+			})), n.d(t, "m", (function() {
+				return Y
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var s = n("./src/reddit/featureFlags/index.ts"),
@@ -2164,7 +2166,7 @@
 				return Object.keys(a).map(e => o[e]).find(e => e && e.type === c)
 			}
 
-			function w(e, t, n, s) {
+			function x(e, t, n, s) {
 				const r = e.economics.subredditPremium[t];
 				if (r && r.status === l.a.Fetched) {
 					if (n === a.a.Loyalty || n === a.a.Achievement) return r.data.collections[n];
@@ -2173,8 +2175,8 @@
 				return f
 			}
 
-			function x(e, t) {
-				const n = w(e, t, a.a.Loyalty).find(e => "membership" === e.id);
+			function w(e, t) {
+				const n = x(e, t, a.a.Loyalty).find(e => "membership" === e.id);
 				return n ? [].concat(n.locked, n.unlocked).filter(e => e.position).sort((e, t) => e.position - t.position) : f
 			}
 
@@ -2188,7 +2190,7 @@
 			}
 
 			function N(e, t) {
-				return w(e, t, a.a.Cosmetic, a.c.Gallery).some(e => e.locked.some(e => Object(i.f)(e) || !!e.price))
+				return x(e, t, a.a.Cosmetic, a.c.Gallery).some(e => e.locked.some(e => Object(i.f)(e) || !!e.price))
 			}
 			const P = e => {
 				const t = [],
@@ -2276,6 +2278,15 @@
 					return !!n && n.hasGifProduct
 				},
 				G = (e, t, n) => {
+					if (Object(p.r)(e, {
+							subredditId: t
+						})) return !0;
+					const s = "replyToPost" !== n && Object(m.b)(e, {
+						commentId: n
+					});
+					return !(!s || !Object(o.a)(s))
+				},
+				$ = (e, t, n) => {
 					if (!Object(b.b)(e, {
 							subredditId: t
 						})) return !1;
@@ -2285,18 +2296,18 @@
 					const r = "replyToPost" !== n && Object(m.b)(e, {
 						commentId: n
 					});
-					if (r && Object(o.a)(r)) return !0;
+					if (r && Object(o.b)(r)) return !0;
 					const i = s.d.spGiphy(e),
 						a = R(e, t);
 					return !(!i || !a) || i && a
 				},
-				$ = (e, t, n) => {
+				q = (e, t, n) => {
 					if (t) {
 						const s = e.economics.banners.dismissedBanners[t];
 						if (s && s.data) return !!s.data[n]
 					}
 				},
-				q = e => e.economics.pointsCopy.data
+				Y = e => e.economics.pointsCopy.data
 		},
 		"./src/reddit/selectors/products.ts": function(e, t, n) {
 			"use strict";
@@ -2331,4 +2342,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Economics-SubredditPremium-LFGBanner.8b2524005961fb0020cd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Economics-SubredditPremium-LFGBanner.30b6f7873b3fff954d20.js.map

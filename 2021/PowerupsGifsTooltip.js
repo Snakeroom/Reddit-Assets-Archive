@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PowerupsGifsTooltip.c45294219e85ee659cec.js
-// Retrieved at 10/25/2021, 10:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PowerupsGifsTooltip.ab9d19a6764850d7c3b0.js
+// Retrieved at 10/25/2021, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PowerupsGifsTooltip"], {
 		"./src/reddit/components/RichTextEditor/media/GifTooltip/BaseTooltip.m.less": function(e, t, s) {
@@ -117,11 +117,11 @@
 				_ = s("./src/reddit/selectors/economics.ts"),
 				w = s("./src/reddit/selectors/telemetry.ts"),
 				C = s("./src/reddit/components/RichTextEditor/helpers/common.ts"),
-				v = s("./src/reddit/components/RichTextEditor/media/helpers.ts");
-			let G;
+				G = s("./src/reddit/components/RichTextEditor/media/helpers.ts");
+			let v;
 
 			function I() {
-				G || (G = fetch("https://meta.redditmedia.com/public/fortnitebr/giphy_blacklist.json").then(e => e.json()))
+				v || (v = fetch("https://meta.redditmedia.com/public/fortnitebr/giphy_blacklist.json").then(e => e.json()))
 			}
 			var j = s("./node_modules/lodash/debounce.js"),
 				k = s.n(j),
@@ -245,7 +245,7 @@
 							}
 						});
 						const t = this.props.editorState,
-							s = Object(v.k)(t, e.id, e.url, e.hasDownsizedImage, e.width, e.height, t.getSelection().getEndKey(), C.a.after);
+							s = Object(G.k)(t, e.id, e.url, e.hasDownsizedImage, e.width, e.height, t.getSelection().getEndKey(), C.a.after);
 						this.props.onChange(s), this.props.onClose()
 					}
 				}
@@ -268,7 +268,7 @@
 					} = this.state;
 					!e && s && null !== t && (await
 						function(e) {
-							return I(), G.then(t => {
+							return I(), v.then(t => {
 								return !!e.split(" ").concat(e).find(e => -1 !== t.indexOf(e.toLowerCase()))
 							}).catch(() => !1)
 						}(s) || (this.setState({
@@ -386,7 +386,7 @@
 			const q = Object(h.c)({
 				hasGifProduct: (e, {
 					subreddit: t
-				}) => Object(_.v)(e, t.id)
+				}) => Object(_.w)(e, t.id)
 			});
 			t.a = Object(m.c)(Object(p.b)(q, e => ({
 				showErrorToast: t => e(Object(u.f)({
@@ -502,4 +502,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsGifsTooltip.c45294219e85ee659cec.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsGifsTooltip.ab9d19a6764850d7c3b0.js.map

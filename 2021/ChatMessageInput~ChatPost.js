@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.8b09bbd5c44a6f6e2241.js
-// Retrieved at 10/20/2021, 5:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.bc4161ccee98c355d6b7.js
+// Retrieved at 10/25/2021, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~ChatPost"], {
 		"./node_modules/lodash/_baseReduce.js": function(e, t) {
@@ -1295,8 +1295,8 @@
 						ext: t,
 						s: n
 					}, s, r) => {
-						if (Object(h.f)(e)) {
-							const i = t || Object(h.e)(e);
+						if (Object(h.g)(e)) {
+							const i = t || Object(h.f)(e);
 							return o.a.createElement("div", {
 								className: Object(a.a)(f.a.MediaWrapper, {
 									[f.a.mHasCaption]: r
@@ -1604,7 +1604,7 @@
 						key: e
 					}, i.a.createElement("br", null)))(s);
 					const r = e.c[0];
-					return r.e !== h.m && r.e !== h.a || !Object(S.f)(r.id) ? i.a.createElement(c.j, {
+					return r.e !== h.m && r.e !== h.a || !Object(S.g)(r.id) ? i.a.createElement(c.j, {
 						key: s
 					}, U(e.c, t, n)) : Object(C.b)(r, s, t)
 				},
@@ -2327,4 +2327,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.8b09bbd5c44a6f6e2241.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.bc4161ccee98c355d6b7.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.8768b149f817441b98a7.js
-// Retrieved at 10/20/2021, 5:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.a86bfc0d0df0f0e86a20.js
+// Retrieved at 10/25/2021, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, n) {
@@ -9832,7 +9832,7 @@
 				}
 			}
 			const eo = Object(l.c)({
-					stripeConnected: Jn.u
+					stripeConnected: Jn.v
 				}),
 				to = Object(a.b)(eo, e => ({
 					onError: t => e(Object(M.f)({
@@ -11524,7 +11524,7 @@
 				}],
 				da = Object(l.c)({
 					savedPayments: Jn.p,
-					userIsWhitelistedCreator: Jn.x,
+					userIsWhitelistedCreator: Jn.y,
 					allowNavigationCallback: ra.a,
 					isResponsiveSettingsEnabled: aa.a,
 					prefs: e => e.user.prefs,
@@ -11758,7 +11758,7 @@
 				return g
 			})), n.d(t, "a", (function() {
 				return v
-			})), n.d(t, "w", (function() {
+			})), n.d(t, "x", (function() {
 				return _
 			})), n.d(t, "f", (function() {
 				return y
@@ -11768,7 +11768,7 @@
 				return E
 			})), n.d(t, "h", (function() {
 				return j
-			})), n.d(t, "y", (function() {
+			})), n.d(t, "z", (function() {
 				return x
 			})), n.d(t, "l", (function() {
 				return w
@@ -11786,22 +11786,24 @@
 				return T
 			})), n.d(t, "r", (function() {
 				return L
-			})), n.d(t, "x", (function() {
+			})), n.d(t, "y", (function() {
 				return R
-			})), n.d(t, "t", (function() {
-				return B
 			})), n.d(t, "u", (function() {
+				return B
+			})), n.d(t, "v", (function() {
 				return F
 			})), n.d(t, "b", (function() {
 				return D
-			})), n.d(t, "v", (function() {
+			})), n.d(t, "w", (function() {
 				return U
 			})), n.d(t, "s", (function() {
 				return G
-			})), n.d(t, "g", (function() {
+			})), n.d(t, "t", (function() {
 				return H
-			})), n.d(t, "m", (function() {
+			})), n.d(t, "g", (function() {
 				return W
+			})), n.d(t, "m", (function() {
+				return z
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var o = n("./src/reddit/featureFlags/index.ts"),
@@ -12012,6 +12014,15 @@
 					return !!n && n.hasGifProduct
 				},
 				G = (e, t, n) => {
+					if (Object(p.r)(e, {
+							subredditId: t
+						})) return !0;
+					const o = "replyToPost" !== n && Object(m.b)(e, {
+						commentId: n
+					});
+					return !(!o || !Object(r.a)(o))
+				},
+				H = (e, t, n) => {
 					if (!Object(b.b)(e, {
 							subredditId: t
 						})) return !1;
@@ -12021,18 +12032,18 @@
 					const s = "replyToPost" !== n && Object(m.b)(e, {
 						commentId: n
 					});
-					if (s && Object(r.a)(s)) return !0;
+					if (s && Object(r.b)(s)) return !0;
 					const a = o.d.spGiphy(e),
 						i = U(e, t);
 					return !(!a || !i) || a && i
 				},
-				H = (e, t, n) => {
+				W = (e, t, n) => {
 					if (t) {
 						const o = e.economics.banners.dismissedBanners[t];
 						if (o && o.data) return !!o.data[n]
 					}
 				},
-				W = e => e.economics.pointsCopy.data
+				z = e => e.economics.pointsCopy.data
 		},
 		"./src/reddit/selectors/gold/productOffers.ts": function(e, t, n) {
 			"use strict";
@@ -12186,4 +12197,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.8768b149f817441b98a7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.a86bfc0d0df0f0e86a20.js.map

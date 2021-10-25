@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.6f91c3f92104e7b9b3ed.js
-// Retrieved at 10/20/2021, 5:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.eee331ade947caaccee1.js
+// Retrieved at 10/25/2021, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -5406,8 +5406,8 @@
 						ext: t,
 						s: n
 					}, s, r) => {
-						if (Object(p.f)(e)) {
-							const a = t || Object(p.e)(e);
+						if (Object(p.g)(e)) {
+							const a = t || Object(p.f)(e);
 							return o.a.createElement("div", {
 								className: Object(i.a)(g.a.MediaWrapper, {
 									[g.a.mHasCaption]: r
@@ -5715,7 +5715,7 @@
 						key: e
 					}, a.a.createElement("br", null)))(s);
 					const r = e.c[0];
-					return r.e !== p.m && r.e !== p.a || !Object(I.f)(r.id) ? a.a.createElement(c.j, {
+					return r.e !== p.m && r.e !== p.a || !Object(I.g)(r.id) ? a.a.createElement(c.j, {
 						key: s
 					}, z(e.c, t, n)) : Object(E.b)(r, s, t)
 				},
@@ -6821,52 +6821,66 @@
 		},
 		"./src/reddit/helpers/richTextJson/index.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "b", (function() {
-				return i
-			})), n.d(t, "f", (function() {
+			n.d(t, "c", (function() {
 				return a
-			})), n.d(t, "a", (function() {
+			})), n.d(t, "g", (function() {
 				return c
-			})), n.d(t, "e", (function() {
-				return d
-			})), n.d(t, "c", (function() {
+			})), n.d(t, "b", (function() {
+				return l
+			})), n.d(t, "a", (function() {
 				return u
-			})), n.d(t, "d", (function() {
+			})), n.d(t, "f", (function() {
 				return m
+			})), n.d(t, "d", (function() {
+				return h
+			})), n.d(t, "e", (function() {
+				return b
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var s = n("./src/reddit/models/RichTextJson/index.ts");
 			const r = "giphy|",
-				o = "|downsized";
+				o = "emote|",
+				i = "|downsized";
 
-			function i(e, t) {
-				return r + e + (t ? o : "")
-			}
-
-			function a(e) {
-				return e && 0 === e.indexOf(r)
+			function a(e, t) {
+				return r + e + (t ? i : "")
 			}
 
 			function c(e) {
-				const t = e && e.media && e.media.mediaMetadata;
-				return !!t && Object.keys(t).some(a)
+				return !!(null == e ? void 0 : e.startsWith(r))
 			}
 
 			function d(e) {
+				return !!(null == e ? void 0 : e.startsWith(o))
+			}
+
+			function l(e) {
+				var t;
+				const n = null === (t = null == e ? void 0 : e.media) || void 0 === t ? void 0 : t.mediaMetadata;
+				return !!n && Object.keys(n).some(c)
+			}
+
+			function u(e) {
+				var t;
+				const n = null === (t = null == e ? void 0 : e.media) || void 0 === t ? void 0 : t.mediaMetadata;
+				return !!n && Object.keys(n).some(d)
+			}
+
+			function m(e) {
 				let t = e.substring(r.length);
 				return t.indexOf("|") && (t = t.split("|")[0]), `https://giphy.com/gifs/${t}`
 			}
 
-			function l(e, t) {
-				return (Array.isArray(e) ? e : e.c && Array.isArray(e.c) ? e.c : []).reduce((e, n) => [...e, ...l(n, t)], !Array.isArray(e) && t(e) ? [e] : [])
+			function p(e, t) {
+				return (Array.isArray(e) ? e : e.c && Array.isArray(e.c) ? e.c : []).reduce((e, n) => [...e, ...p(n, t)], !Array.isArray(e) && t(e) ? [e] : [])
 			}
 
-			function u(e) {
-				return l(e, s.F).map(e => e.id)
+			function h(e) {
+				return p(e, s.F).map(e => e.id)
 			}
 
-			function m(e) {
-				return l(e, e => e.e === s.o).map(e => e.u)
+			function b(e) {
+				return p(e, e => e.e === s.o).map(e => e.u)
 			}
 		},
 		"./src/reddit/helpers/trackers/customFeeds.ts": function(e, t, n) {
@@ -8204,4 +8218,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.6f91c3f92104e7b9b3ed.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.eee331ade947caaccee1.js.map

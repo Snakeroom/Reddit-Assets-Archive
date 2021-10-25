@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.171d13e2d7b8cca6284d.js
-// Retrieved at 10/20/2021, 5:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.6379dc3a4a52eb17ddf2.js
+// Retrieved at 10/25/2021, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -3509,8 +3509,8 @@
 						ext: t,
 						s
 					}, n, r) => {
-						if (Object(p.f)(e)) {
-							const a = t || Object(p.e)(e);
+						if (Object(p.g)(e)) {
+							const a = t || Object(p.f)(e);
 							return o.a.createElement("div", {
 								className: Object(i.a)(x.a.MediaWrapper, {
 									[x.a.mHasCaption]: r
@@ -3818,7 +3818,7 @@
 						key: e
 					}, a.a.createElement("br", null)))(n);
 					const r = e.c[0];
-					return r.e !== p.m && r.e !== p.a || !Object(P.f)(r.id) ? a.a.createElement(d.j, {
+					return r.e !== p.m && r.e !== p.a || !Object(P.g)(r.id) ? a.a.createElement(d.j, {
 						key: n
 					}, H(e.c, t, s)) : Object(_.b)(r, n, t)
 				},
@@ -6431,4 +6431,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.171d13e2d7b8cca6284d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.6379dc3a4a52eb17ddf2.js.map

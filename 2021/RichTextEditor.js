@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.59915b9da76907124601.js
-// Retrieved at 10/20/2021, 5:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.8da914640031981482d7.js
+// Retrieved at 10/25/2021, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton", "reddit-components-RichTextEditor-Toolbar-GifButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, o) {
@@ -1793,7 +1793,7 @@
 				onEmoteButtonClick: o,
 				onGifButtonClick: n,
 				userCanUseGifs: s,
-				showEmoteButton: i,
+				emojisEnabled: i,
 				gifsEnabled: c,
 				controlsState: d,
 				isShowTypingIndicatorsFormattingTools: l
@@ -2436,7 +2436,7 @@
 					isTypingIndicatorsExperimentEnabled: a,
 					onTypingIndicatorsFormattingToolsClick: c,
 					showTypingIndicatorsFormattingTools: l,
-					showEmoteButton: u,
+					emojisEnabled: u,
 					gifsEnabled: p
 				}) => h => {
 					const {
@@ -2450,8 +2450,9 @@
 						destSubreddit: h.destSubreddit,
 						onEmoteButtonClick: h.onEmoteButtonClick,
 						onGifButtonClick: h.onGifButtonClick,
+						userCanUseEmojis: h.userCanUseEmojis,
 						userCanUseGifs: h.userCanUseGifs,
-						showEmoteButton: u,
+						emojisEnabled: u,
 						gifsEnabled: p,
 						controlsState: v,
 						isShowTypingIndicatorsFormattingTools: l
@@ -2471,7 +2472,7 @@
 					}, d.a.createElement(de, null, d.a.createElement(C.b, ee({}, h, {
 						isTypingIndicatorsExperimentEnabled: a,
 						isShowTypingIndicatorsFormattingTools: l,
-						showEmoteButton: u,
+						emojisEnabled: u,
 						gifsEnabled: p,
 						controlsState: v
 					})), d.a.createElement(ce, null), !a && d.a.createElement(ie, null, d.a.createElement(ae, {
@@ -2490,11 +2491,15 @@
 						} : void 0
 					},
 					draft: U.i,
-					userCanUseGifs: (e, t) => {
+					userCanUseEmojis: (e, t) => {
 						const o = Object(N.q)(e, t);
 						return Object(q.s)(e, o ? o.id : void 0, t.parentCommentId)
 					},
-					showEmoteButton: (e, t) => {
+					userCanUseGifs: (e, t) => {
+						const o = Object(N.q)(e, t);
+						return Object(q.t)(e, o ? o.id : void 0, t.parentCommentId)
+					},
+					emojisEnabled: (e, t) => {
 						const o = Object(N.q)(e, t),
 							n = null == o ? void 0 : o.id;
 						return Object(K.b)(e, {
@@ -2529,7 +2534,7 @@
 						isTypingIndicatorsExperimentEnabled: a,
 						onTypingIndicatorsFormattingToolsClick: c,
 						showTypingIndicatorsFormattingTools: d,
-						showEmoteButton: r,
+						emojisEnabled: r,
 						gifsEnabled: i
 					})), this.focus = () => {
 						this.editor && this.editor.focus()
@@ -2657,40 +2662,42 @@
 						postId: y,
 						submitButtonText: C,
 						isTopLevelComment: E,
-						userCanUseGifs: v,
-						userName: w,
-						showEmoteButton: O,
-						gifsEnabled: F,
-						isTypingIndicatorsExperimentEnabled: S,
-						isTypingIndicatorsUIEnabled: M,
-						isOverlay: B,
-						userIsTypingSubscriptionEnabled: N
+						userCanUseEmojis: v,
+						userCanUseGifs: w,
+						userName: O,
+						emojisEnabled: F,
+						gifsEnabled: S,
+						isTypingIndicatorsExperimentEnabled: M,
+						isTypingIndicatorsUIEnabled: B,
+						isOverlay: N,
+						userIsTypingSubscriptionEnabled: W
 					} = this.props, {
-						cancelModalText: W,
-						breakOut: H,
-						formHeight: U,
-						rteState: q,
-						showTypingIndicatorsFormattingTools: K
-					} = this.state, J = Object(R.a)(c), G = i.draftType === I.c.edit, V = l !== I.c.replyToPost;
-					return S ? d.a.createElement("div", {
+						cancelModalText: H,
+						breakOut: U,
+						formHeight: q,
+						rteState: K,
+						showTypingIndicatorsFormattingTools: J
+					} = this.state, G = Object(R.a)(c), V = i.draftType === I.c.edit, Z = l !== I.c.replyToPost;
+					return M ? d.a.createElement("div", {
 						className: Object(m.a)(Q.a.commentComposer, {
-							[Q.a.isOverlay]: B
+							[Q.a.isOverlay]: N
 						})
-					}, M && d.a.createElement(te, {
+					}, B && d.a.createElement(te, {
 						minTimeVisible: X.c,
 						minNumUsersTyping: X.b,
 						postId: y
 					}), d.a.createElement(g.a, {
 						className: Q.a.richTextEditor,
-						userCanUseGifs: v,
+						userCanUseEmojis: v,
+						userCanUseGifs: w,
 						dataTestId: j.c,
 						destSubreddit: r,
 						editorType: L.a.Comment,
 						initialMinHeight: X.a,
 						isCommentBoxDesignEnabled: p,
 						isExpanded: h,
-						isTypingIndicatorsExperimentEnabled: S,
-						rteState: q,
+						isTypingIndicatorsExperimentEnabled: M,
+						rteState: K,
 						rteRef: this.setRTEComponentRef,
 						domRef: this.setRTEDomElementRef,
 						noBorder: !0,
@@ -2707,8 +2714,8 @@
 						readOnly: x,
 						trackToolbarClick: this.onTrackToolbarClick,
 						toolbarPosition: "bottom",
-						renderToolbar: this.getToolbarRenderer(V, c, x, C, p, O, F, S, this.onTypingIndicatorsFormattingToolsClick, K),
-						userIsTypingSubscriptionEnabled: N
+						renderToolbar: this.getToolbarRenderer(Z, c, x, C, p, F, S, M, this.onTypingIndicatorsFormattingToolsClick, J),
+						userIsTypingSubscriptionEnabled: W
 					})) : d.a.createElement(ne, {
 						className: Object(m.a)(o, {
 							[$.a.isTopLevelComment]: E,
@@ -2716,26 +2723,27 @@
 						}),
 						ref: this.setEditorWrapperRef,
 						style: {
-							height: H ? U : void 0
+							height: U ? q : void 0
 						}
 					}, !p && E && d.a.createElement(se, null, d.a.createElement(le, null, s.fbt._("Comment as {authorLink}", [s.fbt._param("authorLink", d.a.createElement(f.a, {
-						author: w,
+						author: O,
 						isAuthorDeleted: !1
-					}, w))], {
+					}, O))], {
 						hk: "4pMWAk"
 					}))), d.a.createElement(T.a, {
-						breakOut: H,
+						breakOut: U,
 						depth: n,
-						isEditing: G
+						isEditing: V
 					}, d.a.createElement(g.a, {
-						userCanUseGifs: v,
+						userCanUseEmojis: v,
+						userCanUseGifs: w,
 						dataTestId: j.c,
 						destSubreddit: r,
 						editorType: L.a.Comment,
 						initialHeight: this.props.initialHeight,
 						isCommentBoxDesignEnabled: p,
 						isExpanded: h,
-						rteState: q,
+						rteState: K,
 						rteRef: this.setRTEComponentRef,
 						domRef: this.setRTEDomElementRef,
 						onBlur: this.handleBlur,
@@ -2753,16 +2761,16 @@
 						readOnly: x,
 						trackToolbarClick: this.onTrackToolbarClick,
 						toolbarPosition: "bottom",
-						renderToolbar: this.getToolbarRenderer(V, c, x, C, p, O, F),
-						userIsTypingSubscriptionEnabled: N
-					})), this.state.showError ? Object(k.c)(u) : null, e === J && d.a.createElement(_.a, {
+						renderToolbar: this.getToolbarRenderer(Z, c, x, C, p, F, S),
+						userIsTypingSubscriptionEnabled: W
+					})), this.state.showError ? Object(k.c)(u) : null, e === G && d.a.createElement(_.a, {
 						actionText: s.fbt._("Discard", null, {
 							hk: "1kJ5PR"
 						}),
 						cancelActionText: s.fbt._("Keep", null, {
 							hk: "1fDXd5"
 						}),
-						modalText: W,
+						modalText: H,
 						onConfirm: this.cancelForm,
 						toggleModal: t,
 						trackClick: a.a
@@ -2772,7 +2780,7 @@
 						withOverlay: !0
 					}), d.a.createElement(P.a, {
 						editKey: c,
-						hasValue: z.a.hasContent(q)
+						hasValue: z.a.hasContent(K)
 					}))
 				}
 			}
@@ -4009,7 +4017,7 @@
 					trackOnClick: E,
 					onLinkButtonClick: v,
 					userCanUseGifs: j,
-					showEmoteButton: k,
+					emojisEnabled: k,
 					gifsEnabled: w,
 					controlsState: O
 				} = e, T = p ? d.d : void 0, F = p ? h.a.overflowPopupMenu : void 0, R = p ? ["left", "top"] : void 0, S = p ? ["left", "bottom"] : void 0, I = !b && (k || w);
@@ -4807,4 +4815,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.59915b9da76907124601.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.8da914640031981482d7.js.map

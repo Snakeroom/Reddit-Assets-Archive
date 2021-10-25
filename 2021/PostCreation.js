@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.0e59c28d49e9c51d796f.js
-// Retrieved at 10/20/2021, 5:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.da341cb728332cf4409e.js
+// Retrieved at 10/25/2021, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, n) {
@@ -3842,7 +3842,7 @@
 				onEmoteButtonClick: n,
 				onGifButtonClick: o,
 				userCanUseGifs: s,
-				showEmoteButton: a,
+				emojisEnabled: a,
 				gifsEnabled: c,
 				controlsState: d,
 				isShowTypingIndicatorsFormattingTools: l
@@ -12713,7 +12713,7 @@
 					let t = [];
 					if (e.document) {
 						const n = e.document || [];
-						t = Object(r.c)(n)
+						t = Object(r.d)(n)
 					}
 					return t
 				},
@@ -22787,4 +22787,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.0e59c28d49e9c51d796f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.da341cb728332cf4409e.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MembershipPaywallPage.e7692bc8de834b536e21.js
-// Retrieved at 10/18/2021, 7:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MembershipPaywallPage.08e81c3dcc2ff1395f5b.js
+// Retrieved at 10/25/2021, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MembershipPaywallPage"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1322,7 +1322,7 @@
 			t.a = Object(u.a)("spSpecialMemberships", (function(e) {
 				const t = Object(n.useRef)(!0),
 					[s, r] = Object(p.a)(!1, t),
-					o = Object(a.e)(t => Object(h.w)(t, e.subredditId)),
+					o = Object(a.e)(t => Object(h.x)(t, e.subredditId)),
 					c = Object(n.useRef)(o);
 				return Object(n.useEffect)(() => () => {
 					t.current = !1
@@ -2076,7 +2076,7 @@
 			const W = Object(u.c)({
 				hasGifProduct: (e, {
 					subreddit: t
-				}) => Object(w.v)(e, t.id)
+				}) => Object(w.w)(e, t.id)
 			});
 			t.a = Object(h.c)(Object(m.b)(W, e => ({
 				showErrorToast: t => e(Object(p.f)({
@@ -5748,7 +5748,7 @@
 				}) => Object(I.r)(e, t.id),
 				userIsPremiumSubscriber: (e, {
 					subreddit: t
-				}) => Object(I.w)(e, t.id)
+				}) => Object(I.x)(e, t.id)
 			});
 			var qt = Object(At.b)(Object(a.b)(Ut, (e, {
 					subreddit: t,
@@ -6075,7 +6075,7 @@
 				userIsLoggedIn: e => !!e.user.account,
 				userIsPremiumSubscriber: (e, {
 					subredditId: t
-				}) => Object(I.w)(e, t)
+				}) => Object(I.x)(e, t)
 			});
 			var ys = Object(a.b)(vs, e => ({
 					openLoginModal: () => e(Object(tt.i)())
@@ -6671,7 +6671,7 @@
 				return g
 			})), s.d(t, "a", (function() {
 				return _
-			})), s.d(t, "w", (function() {
+			})), s.d(t, "x", (function() {
 				return x
 			})), s.d(t, "f", (function() {
 				return v
@@ -6681,7 +6681,7 @@
 				return w
 			})), s.d(t, "h", (function() {
 				return C
-			})), s.d(t, "y", (function() {
+			})), s.d(t, "z", (function() {
 				return k
 			})), s.d(t, "l", (function() {
 				return E
@@ -6699,22 +6699,24 @@
 				return F
 			})), s.d(t, "r", (function() {
 				return R
-			})), s.d(t, "x", (function() {
+			})), s.d(t, "y", (function() {
 				return A
-			})), s.d(t, "t", (function() {
-				return z
 			})), s.d(t, "u", (function() {
+				return z
+			})), s.d(t, "v", (function() {
 				return B
 			})), s.d(t, "b", (function() {
 				return D
-			})), s.d(t, "v", (function() {
+			})), s.d(t, "w", (function() {
 				return L
 			})), s.d(t, "s", (function() {
 				return H
-			})), s.d(t, "g", (function() {
+			})), s.d(t, "t", (function() {
 				return V
-			})), s.d(t, "m", (function() {
+			})), s.d(t, "g", (function() {
 				return W
+			})), s.d(t, "m", (function() {
+				return Z
 			}));
 			s("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = s("./src/reddit/featureFlags/index.ts"),
@@ -6925,6 +6927,15 @@
 					return !!s && s.hasGifProduct
 				},
 				H = (e, t, s) => {
+					if (Object(p.r)(e, {
+							subredditId: t
+						})) return !0;
+					const n = "replyToPost" !== s && Object(u.b)(e, {
+						commentId: s
+					});
+					return !(!n || !Object(a.a)(n))
+				},
+				V = (e, t, s) => {
 					if (!Object(h.b)(e, {
 							subredditId: t
 						})) return !1;
@@ -6934,18 +6945,18 @@
 					const i = "replyToPost" !== s && Object(u.b)(e, {
 						commentId: s
 					});
-					if (i && Object(a.a)(i)) return !0;
+					if (i && Object(a.b)(i)) return !0;
 					const r = n.d.spGiphy(e),
 						o = L(e, t);
 					return !(!r || !o) || r && o
 				},
-				V = (e, t, s) => {
+				W = (e, t, s) => {
 					if (t) {
 						const n = e.economics.banners.dismissedBanners[t];
 						if (n && n.data) return !!n.data[s]
 					}
 				},
-				W = e => e.economics.pointsCopy.data
+				Z = e => e.economics.pointsCopy.data
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, s) {
 			"use strict";
@@ -7001,4 +7012,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MembershipPaywallPage.e7692bc8de834b536e21.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MembershipPaywallPage.08e81c3dcc2ff1395f5b.js.map

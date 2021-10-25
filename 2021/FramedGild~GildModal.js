@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.f3b76c4a123677773bb7.js
-// Retrieved at 10/20/2021, 5:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.013ff5f9171d0f89b093.js
+// Retrieved at 10/25/2021, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -3823,8 +3823,8 @@
 						ext: t,
 						s
 					}, r, n) => {
-						if (Object(p.f)(e)) {
-							const i = t || Object(p.e)(e);
+						if (Object(p.g)(e)) {
+							const i = t || Object(p.f)(e);
 							return a.a.createElement("div", {
 								className: Object(o.a)(g.a.MediaWrapper, {
 									[g.a.mHasCaption]: n
@@ -4132,7 +4132,7 @@
 						key: e
 					}, i.a.createElement("br", null)))(r);
 					const n = e.c[0];
-					return n.e !== p.m && n.e !== p.a || !Object(N.f)(n.id) ? i.a.createElement(c.j, {
+					return n.e !== p.m && n.e !== p.a || !Object(N.g)(n.id) ? i.a.createElement(c.j, {
 						key: r
 					}, F(e.c, t, s)) : Object(E.b)(n, r, t)
 				},
@@ -5424,4 +5424,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.f3b76c4a123677773bb7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.013ff5f9171d0f89b093.js.map

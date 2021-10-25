@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.56c6b43059dbdede66f4.js
-// Retrieved at 10/5/2021, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.c79ccb698a4a9ca9657a.js
+// Retrieved at 10/25/2021, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityPointsLearnMore"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, r) {
@@ -1680,7 +1680,7 @@
 				return b
 			})), r.d(t, "a", (function() {
 				return v
-			})), r.d(t, "w", (function() {
+			})), r.d(t, "x", (function() {
 				return y
 			})), r.d(t, "f", (function() {
 				return _
@@ -1690,7 +1690,7 @@
 				return E
 			})), r.d(t, "h", (function() {
 				return j
-			})), r.d(t, "y", (function() {
+			})), r.d(t, "z", (function() {
 				return P
 			})), r.d(t, "l", (function() {
 				return x
@@ -1707,23 +1707,25 @@
 			})), r.d(t, "k", (function() {
 				return S
 			})), r.d(t, "r", (function() {
-				return I
-			})), r.d(t, "x", (function() {
+				return q
+			})), r.d(t, "y", (function() {
 				return L
-			})), r.d(t, "t", (function() {
-				return k
 			})), r.d(t, "u", (function() {
 				return O
+			})), r.d(t, "v", (function() {
+				return k
 			})), r.d(t, "b", (function() {
 				return U
-			})), r.d(t, "v", (function() {
+			})), r.d(t, "w", (function() {
 				return D
 			})), r.d(t, "s", (function() {
 				return F
-			})), r.d(t, "g", (function() {
+			})), r.d(t, "t", (function() {
 				return Y
-			})), r.d(t, "m", (function() {
+			})), r.d(t, "g", (function() {
 				return z
+			})), r.d(t, "m", (function() {
+				return V
 			}));
 			r("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = r("./src/reddit/featureFlags/index.ts"),
@@ -1889,7 +1891,7 @@
 					membershipAlt: "Supporter Membership"
 				},
 				S = (e, t) => Object.values(e.products.models).filter(e => e.type === u.a.Membership && t && e.subredditId === t),
-				q = (e, t) => {
+				I = (e, t) => {
 					if (!t) return {};
 					const r = M.prices;
 					S(e, t).forEach(e => {
@@ -1898,11 +1900,11 @@
 					const n = p(e, t);
 					return n && n.price && n.currency && (r[n.currency] = n.price), r
 				},
-				I = (e, t) => {
+				q = (e, t) => {
 					var r, n, o, i;
 					const a = (null === (i = null === (o = null === (n = null === (r = e.features) || void 0 === r ? void 0 : r.crypto) || void 0 === n ? void 0 : n.points) || void 0 === o ? void 0 : o[t || ""]) || void 0 === i ? void 0 : i.nomenclature) || M;
 					return {
-						prices: q(e, t),
+						prices: I(e, t),
 						member: a.member || M.member,
 						memberPlural: a.memberPlural || M.memberPlural,
 						memberAlt: a.memberAlt || M.memberAlt,
@@ -1915,11 +1917,11 @@
 					const t = e.economics.paymentSystems;
 					return !!(t.status === d.a.Fetched && t.data && t.data.tips && t.data.tips.usdr && t.data.tips.usdr.allowed)
 				},
-				k = (e, t) => {
+				O = (e, t) => {
 					const r = e.user.ownedBadges[t] || {};
 					return !!Object.keys(r).length
 				},
-				O = e => {
+				k = e => {
 					const t = e.economics.paymentSystems;
 					return t.status === d.a.Fetched && !!t.data && !!t.data.stripe && !!t.data.stripe.stripeAccountId
 				},
@@ -1934,6 +1936,15 @@
 					return !!r && r.hasGifProduct
 				},
 				F = (e, t, r) => {
+					if (Object(m.r)(e, {
+							subredditId: t
+						})) return !0;
+					const n = "replyToPost" !== r && Object(f.b)(e, {
+						commentId: r
+					});
+					return !(!n || !Object(i.a)(n))
+				},
+				Y = (e, t, r) => {
 					if (!Object(h.b)(e, {
 							subredditId: t
 						})) return !1;
@@ -1943,19 +1954,19 @@
 					const o = "replyToPost" !== r && Object(f.b)(e, {
 						commentId: r
 					});
-					if (o && Object(i.a)(o)) return !0;
+					if (o && Object(i.b)(o)) return !0;
 					const a = n.d.spGiphy(e),
 						s = D(e, t);
 					return !(!a || !s) || a && s
 				},
-				Y = (e, t, r) => {
+				z = (e, t, r) => {
 					if (t) {
 						const n = e.economics.banners.dismissedBanners[t];
 						if (n && n.data) return !!n.data[r]
 					}
 				},
-				z = e => e.economics.pointsCopy.data
+				V = e => e.economics.pointsCopy.data
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.56c6b43059dbdede66f4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.c79ccb698a4a9ca9657a.js.map

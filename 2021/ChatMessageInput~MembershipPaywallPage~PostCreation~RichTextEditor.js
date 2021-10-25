@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor.ddbf6ad1fef6be432c4b.js
-// Retrieved at 10/19/2021, 5:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor.ee6f062b3dc129f31cd2.js
+// Retrieved at 10/25/2021, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor"], {
 		"./src/lib/forEachGroup/index.ts": function(t, e, n) {
@@ -5786,7 +5786,7 @@
 							default:
 								throw new Error("Invalid media type")
 						}
-						return Object(gi.f)(t) ? Object(fi.l)([n]) : n
+						return Object(gi.g)(t) ? Object(fi.l)([n]) : n
 					}
 				};
 			var Ii, _i = n("./src/reddit/constants/componentSizes.ts"),
@@ -5981,7 +5981,7 @@
 					const a = t.content;
 					if (1 === e.length && (e[0].e === zn.m || e[0].e === zn.a)) {
 						const n = e[0];
-						if (Object(gi.f)(n.id)) return void t.blocks.push(...Pi(n, r.mediaMetadataMap, Object(N.q)(r.editorType)))
+						if (Object(gi.g)(n.id)) return void t.blocks.push(...Pi(n, r.mediaMetadataMap, Object(N.q)(r.editorType)))
 					}
 					const {
 						charList: l,
@@ -6688,87 +6688,89 @@
 				render() {
 					const {
 						className: t,
-						userCanUseGifs: e,
-						allowMediaUploads: n = !1,
-						dataTestId: s,
-						destSubreddit: i,
-						editorType: c,
-						focusableContentRTEClassName: a,
-						hideToolbar: l,
-						rteState: u,
-						isExpanded: h,
-						isOverlay: m,
-						isCommentBoxDesignEnabled: g,
-						isTypingIndicatorsExperimentEnabled: f,
-						onSubmit: y,
-						placeholderText: E,
-						shouldShowCommentGifsTooltip: S,
-						showSubmitButton: C = !1,
-						submitButtonClassName: k,
-						toolbarPosition: x = "top",
-						renderToolbar: T = this.renderToolbar,
-						userIsTypingSubscriptionEnabled: v
+						userCanUseEmojis: e,
+						userCanUseGifs: n,
+						allowMediaUploads: s = !1,
+						dataTestId: i,
+						destSubreddit: c,
+						editorType: a,
+						focusableContentRTEClassName: l,
+						hideToolbar: u,
+						rteState: h,
+						isExpanded: m,
+						isOverlay: g,
+						isCommentBoxDesignEnabled: f,
+						isTypingIndicatorsExperimentEnabled: y,
+						onSubmit: E,
+						placeholderText: S,
+						shouldShowCommentGifsTooltip: C,
+						showSubmitButton: k = !1,
+						submitButtonClassName: x,
+						toolbarPosition: T = "top",
+						renderToolbar: v = this.renderToolbar,
+						userIsTypingSubscriptionEnabled: j
 					} = this.props, {
-						editorKey: j
-					} = u, {
-						containerRef: R,
-						editorState: w,
-						mediaToInsert: B,
-						confirmModalOpen: _,
-						isUserTyping: K
-					} = this.state, M = this.props.readOnly || !!B, L = I(w), N = this.isEmpty(), D = T({
-						allowMediaUploads: n,
-						destSubreddit: i,
-						editorKey: j,
-						editorState: w,
-						isOverlay: !!m,
+						editorKey: R
+					} = h, {
+						containerRef: w,
+						editorState: B,
+						mediaToInsert: _,
+						confirmModalOpen: K,
+						isUserTyping: M
+					} = this.state, L = this.props.readOnly || !!_, N = I(B), D = this.isEmpty(), F = v({
+						allowMediaUploads: s,
+						destSubreddit: c,
+						editorKey: R,
+						editorState: B,
+						isOverlay: !!g,
 						onChange: this.toolbarSetState,
 						onFilesSelect: this.onFilesSelect,
 						trackOnClick: this.props.trackToolbarClick,
-						readOnly: M,
+						readOnly: L,
 						onEmoteButtonClick: this.onToolbarEmoteButtonClick,
 						onGifButtonClick: this.onToolbarGifButtonClick,
 						onLinkButtonClick: this.onToolbarLinkButtonClick,
 						onMarkdownButtonClick: this.onToolbarMarkdownSwitchClick,
-						userCanUseGifs: !!e
-					}), F = !l && (!g || h);
+						userCanUseEmojis: !!e,
+						userCanUseGifs: !!n
+					}), P = !u && (!f || m);
 					return p.a.createElement(gc, {
 						className: t,
 						innerRef: this.setContainerRef
-					}, v && K && p.a.createElement(O.a, {
+					}, j && M && p.a.createElement(O.a, {
 						variables: this.realtimeGQLVariables,
 						onData: d.a,
 						queryKey: "userIsTypingOnPost"
-					}), g && p.a.createElement("div", {
+					}), f && p.a.createElement("div", {
 						className: ac.a.userIcon
 					}, p.a.createElement(fc, null)), p.a.createElement(mc, {
-						className: Object(b.a)(a, {
-							[ac.a.showSubmitButton]: C,
-							[ac.a.mExpanded]: h,
-							[ac.a.mRedesign]: g,
-							[ac.a.typingIndicatorsFocusableContent]: f
+						className: Object(b.a)(l, {
+							[ac.a.showSubmitButton]: k,
+							[ac.a.mExpanded]: m,
+							[ac.a.mRedesign]: f,
+							[ac.a.typingIndicatorsFocusableContent]: y
 						}),
 						noBorder: this.props.noBorder,
 						isFocused: this.isFocused(),
 						ref: this.setFocusableContentRef
-					}, F && "top" === x && D, R && p.a.createElement(bo, {
-						editorState: w,
-						readOnly: M,
+					}, P && "top" === T && F, w && p.a.createElement(bo, {
+						editorState: B,
+						readOnly: L,
 						onChange: this.onChange,
 						onSetApi: this.setTableToolbarControllerApi,
-						rteDomRef: R
+						rteDomRef: w
 					}), p.a.createElement("div", {
 						className: Object(b.a)(ac.a.editorWrapper, {
 							[ac.a.hasInitialHeight]: !!this.props.initialHeight,
 							[ac.a.hasInitialMinHeight]: !!this.props.initialMinHeight,
 							[ac.a.noBorder]: !!this.props.noBorder,
-							[ac.a.isTypingIndicatorsEditor]: f
+							[ac.a.isTypingIndicatorsEditor]: y
 						}),
 						style: {
 							"--rte-initial-height": this.props.initialHeight ? `${this.props.initialHeight}px` : void 0,
 							"--rte-initial-min-height": this.props.initialMinHeight ? `${this.props.initialMinHeight}px` : void 0
 						},
-						"data-test-id": s,
+						"data-test-id": i,
 						onCopyCapture: this.handleOnCopy,
 						onCutCapture: this.handleOnCut,
 						onPasteCapture: this.handleOnPaste,
@@ -6776,23 +6778,23 @@
 						onMouseUp: this.handleOnMouseUp
 					}, p.a.createElement("style", {
 						dangerouslySetInnerHTML: {
-							__html: `\n                .${nc.b}[${nc.d}="${L}-0-0"]::after {\n                  bottom: 0;\n                  color: var(--newCommunityTheme-actionIcon);\n                  content: '${E}';\n                  cursor: text;\n                  left: 0;\n                  position: absolute;\n                  top: 0;\n                }\n              `
+							__html: `\n                .${nc.b}[${nc.d}="${N}-0-0"]::after {\n                  bottom: 0;\n                  color: var(--newCommunityTheme-actionIcon);\n                  content: '${S}';\n                  cursor: text;\n                  left: 0;\n                  position: absolute;\n                  top: 0;\n                }\n              `
 						}
 					}), p.a.createElement(Rr, {
-						allowMediaUploads: n && !M,
+						allowMediaUploads: s && !L,
 						onBlockMove: this.onBlockMove,
 						onFilesDrop: this.onFilesDrop,
-						editorState: w,
+						editorState: B,
 						onChange: this.onChange
 					}, p.a.createElement(Co.Provider, {
 						value: this.entityElementRegistry
 					}, p.a.createElement(o.Editor, {
-						readOnly: M,
+						readOnly: L,
 						ref: this.setEditorRef,
 						blockRendererFn: this.blockRendererFn,
 						blockRenderMap: this.blockRenderMap,
-						editorKey: j,
-						editorState: w,
+						editorKey: R,
+						editorState: B,
 						keyBindingFn: this.keyBindingFN,
 						handleBeforeInput: this.handleBeforeInput,
 						handleKeyCommand: this.handleKeyCommand,
@@ -6809,36 +6811,37 @@
 						spellCheck: !0,
 						handleReturn: this.handleReturn,
 						customStyleMap: Ts()
-					})))), F && "bottom" === x && D, p.a.createElement(hs, {
-						editorState: w,
+					})))), P && "bottom" === T && F, p.a.createElement(hs, {
+						editorState: B,
 						entityElementRegistry: this.entityElementRegistry,
 						onSetApi: this.setLinksControllerApi,
 						onChange: this.onChange,
-						isTooltipAbove: f
-					}), c === zt.a.Comment && i && p.a.createElement(Ao, {
-						editorState: w,
+						isTooltipAbove: y
+					}), a === zt.a.Comment && c && p.a.createElement(Ao, {
+						editorState: B,
 						onChange: this.onChange,
 						onSetApi: this.setEmotesTooltipApi,
-						subreddit: i
-					}), (S || e) && i && p.a.createElement(rr, {
-						editorState: w,
+						subreddit: c,
+						userCanUseEmojis: !!e
+					}), (C || n) && c && p.a.createElement(rr, {
+						editorState: B,
 						onChange: this.onChange,
 						onSetApi: this.setGifTooltipApi,
-						subreddit: i,
-						userCanUseGifs: !!e
-					}), this.renderInternalLinkSuggestionDropdown(), C && p.a.createElement(oe.d, {
+						subreddit: c,
+						userCanUseGifs: !!n
+					}), this.renderInternalLinkSuggestionDropdown(), k && p.a.createElement(oe.d, {
 						"aria-label": r.fbt._("submit", null, {
 							hk: "12XoZ8"
 						}),
-						className: Object(b.a)(k, ac.a.insetSubmitButton, {
-							[ac.a.emptyContent]: N,
+						className: Object(b.a)(x, ac.a.insetSubmitButton, {
+							[ac.a.emptyContent]: D,
 							[ac.a.focusedContent]: this.isFocused()
 						}),
-						disabled: N,
-						onClick: y,
+						disabled: D,
+						onClick: E,
 						tabIndex: -1,
 						type: "submit"
-					}, p.a.createElement(sc.a, null))), _ && p.a.createElement(A.a, {
+					}, p.a.createElement(sc.a, null))), K && p.a.createElement(A.a, {
 						toggleModal: this.toggleConfirmModal,
 						onConfirm: this.handleSwitchToMarkdownMode,
 						actionText: r.fbt._("Continue", null, {
@@ -7082,7 +7085,7 @@
 							data: Object(s.Map)({
 								mediaAsset: {
 									type: o.AnimatedImage,
-									assetId: Object(p.b)(e, i),
+									assetId: Object(p.c)(e, i),
 									imageUrl: n,
 									width: c,
 									height: a
@@ -8021,4 +8024,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor.ddbf6ad1fef6be432c4b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor.ee6f062b3dc129f31cd2.js.map

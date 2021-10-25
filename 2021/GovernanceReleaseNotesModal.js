@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.9dd22c2a4f89c8d13b87.js
-// Retrieved at 10/20/2021, 5:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.6b45277cd4da1017220a.js
+// Retrieved at 10/25/2021, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceReleaseNotesModal"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1979,8 +1979,8 @@
 						ext: t,
 						s: n
 					}, s, r) => {
-						if (Object(h.f)(e)) {
-							const a = t || Object(h.e)(e);
+						if (Object(h.g)(e)) {
+							const a = t || Object(h.f)(e);
 							return o.a.createElement("div", {
 								className: Object(i.a)(x.a.MediaWrapper, {
 									[x.a.mHasCaption]: r
@@ -2288,7 +2288,7 @@
 						key: e
 					}, a.a.createElement("br", null)))(s);
 					const r = e.c[0];
-					return r.e !== h.m && r.e !== h.a || !Object(S.f)(r.id) ? a.a.createElement(c.j, {
+					return r.e !== h.m && r.e !== h.a || !Object(S.g)(r.id) ? a.a.createElement(c.j, {
 						key: s
 					}, U(e.c, t, n)) : Object(j.b)(r, s, t)
 				},
@@ -2888,4 +2888,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.9dd22c2a4f89c8d13b87.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.6b45277cd4da1017220a.js.map
