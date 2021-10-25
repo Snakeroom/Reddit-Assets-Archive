@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.be2fcd965824679e36c2.js
-// Retrieved at 10/25/2021, 2:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.046890fae4bf3d01996b.js
+// Retrieved at 10/25/2021, 4:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -3752,6 +3752,34 @@
 				listingSort: "_1oAH8WzvQU6SeYEsM1msMu"
 			}
 		},
+		"./src/reddit/components/Media/BlurredContent.tsx": function(e, t, n) {
+			"use strict";
+			n.d(t, "b", (function() {
+				return c
+			})), n.d(t, "a", (function() {
+				return d
+			}));
+			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
+				r = n("./node_modules/react/index.js"),
+				o = n.n(r),
+				i = n("./src/reddit/components/Media/index.m.less"),
+				a = n.n(i);
+			const c = (e, t) => e && t ? s.fbt._("Click to see nsfw spoiler", null, {
+					hk: "4EdPWu"
+				}) : e ? s.fbt._("Click to see nsfw", null, {
+					hk: "4CErse"
+				}) : t ? s.fbt._("Click to see spoiler", null, {
+					hk: "1x3iUE"
+				}) : void 0,
+				d = ({
+					isNSFW: e,
+					isSpoiler: t
+				}) => o.a.createElement("div", {
+					className: a.a.unblurButtonContainer
+				}, o.a.createElement("button", {
+					className: a.a.unblurButton
+				}, c(e, t)))
+		},
 		"./src/reddit/components/Media/EmbedBox/index.m.less": function(e, t, n) {
 			e.exports = {
 				embedBox: "_3K6DCjWs2dQ93YYZDOHjib"
@@ -3806,8 +3834,7 @@
 				mShowCentered: "_1XWObl-3b9tPy64oaG6fax",
 				mShowBlurred: "_3oBPn1sFwq76ZAxXgwRhhn",
 				seeMore: "_3hUbl08LBz2mbXjy0iYhOS",
-				unblurButtonContainer: "c1UAj_LbgdGBuJFlKbnrQ",
-				unblurButton: "_2Ws3wFSVPzJhnW46FsoxLv"
+				imageLink: "_3m20hIKOhTTeMgPnfMbVNN"
 			}
 		},
 		"./src/reddit/components/Media/ImageBox/index.tsx": function(e, t, n) {
@@ -3825,18 +3852,18 @@
 				l = n("./src/lib/forceHttps/index.ts"),
 				u = n("./src/lib/opener/index.ts"),
 				m = n("./src/lib/permalinkToOverlayLocation/index.ts"),
-				p = n("./src/reddit/components/PlayButton/index.tsx"),
-				h = n("./src/reddit/constants/elementClassNames.ts"),
-				b = n("./src/reddit/controls/OutboundLink/index.tsx"),
-				f = n("./src/reddit/helpers/trackers/ads.ts"),
-				g = n("./src/reddit/hooks/useClickSourceData.ts"),
-				_ = n("./src/reddit/models/Media/index.ts"),
-				x = n("./src/reddit/selectors/experiments/goodVisitSearchFeed.ts"),
-				y = n("./src/reddit/selectors/posts.ts"),
-				v = n("./src/reddit/selectors/telemetry.ts"),
-				w = n("./src/reddit/selectors/user.ts"),
-				k = n("./src/reddit/constants/tracking.ts"),
-				E = n("./src/reddit/components/Media/blurredContent.ts"),
+				p = n("./src/reddit/components/Media/BlurredContent.tsx"),
+				h = n("./src/reddit/components/PlayButton/index.tsx"),
+				b = n("./src/reddit/constants/elementClassNames.ts"),
+				f = n("./src/reddit/controls/OutboundLink/index.tsx"),
+				g = n("./src/reddit/helpers/trackers/ads.ts"),
+				_ = n("./src/reddit/hooks/useClickSourceData.ts"),
+				x = n("./src/reddit/models/Media/index.ts"),
+				y = n("./src/reddit/selectors/experiments/goodVisitSearchFeed.ts"),
+				v = n("./src/reddit/selectors/posts.ts"),
+				w = n("./src/reddit/selectors/telemetry.ts"),
+				k = n("./src/reddit/selectors/user.ts"),
+				E = n("./src/reddit/constants/tracking.ts"),
 				C = n("./src/reddit/components/Media/ImageBox/index.m.less"),
 				O = n.n(C);
 
@@ -3849,14 +3876,14 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const S = e => e > 2 * _.e,
+			const S = e => e > 2 * x.e,
 				T = e => {
-					const t = Object(d.a)(O.a.image, h.g, e.className, {
+					const t = Object(d.a)(O.a.image, b.g, e.className, {
 							[O.a.mShowCentered]: e.showCentered,
 							[O.a.mShowBlurred]: e.shouldBlur
 						}),
 						n = {};
-					return e.showFull || e.isTall || (n.maxHeight = `${_.j}px`), e.isListing || e.isTall && S(e.height) || (n.maxHeight = `${_.e}px`), e.isExpando && e.maxHeight && (n.maxHeight = `${e.maxHeight}px`), e.isExpando && e.maxWidth && (n.maxWidth = `${e.maxWidth}px`), o.a.createElement("img", {
+					return e.showFull || e.isTall || (n.maxHeight = `${x.j}px`), e.isListing || e.isTall && S(e.height) || (n.maxHeight = `${x.e}px`), e.isExpando && e.maxHeight && (n.maxHeight = `${e.maxHeight}px`), e.isExpando && e.maxWidth && (n.maxWidth = `${e.maxWidth}px`), o.a.createElement("img", {
 						alt: e.altText || s.fbt._("Post image", null, {
 							hk: "3KfCgs"
 						}),
@@ -3867,15 +3894,15 @@
 				},
 				I = e => {
 					const t = {};
-					return (!e.showFull && Object(_.K)(e.height, e.width) || e.shouldBlur) && (t.overflow = "hidden"), e.showFull || (t.maxHeight = `${_.j}px`, e.shouldBlur && (t.maxWidth = Object(_.K)(e.height, e.width) ? `${_.z}px` : `${e.width}px`)), e.showCentered && (t.margin = "0 auto"), e.isExpando && e.maxHeight && (t.maxHeight = `${e.maxHeight}px`), o.a.createElement("div", {
+					return (!e.showFull && Object(x.K)(e.height, e.width) || e.shouldBlur) && (t.overflow = "hidden"), e.showFull || (t.maxHeight = `${x.j}px`, e.shouldBlur && (t.maxWidth = Object(x.K)(e.height, e.width) ? `${x.z}px` : `${e.width}px`)), e.showCentered && (t.margin = "0 auto"), e.isExpando && e.maxHeight && (t.maxHeight = `${e.maxHeight}px`), o.a.createElement("div", {
 						className: Object(d.a)(O.a.container, e.className),
 						style: t
 					}, e.children)
 				},
-				D = Object(i.b)(() => Object(c.a)(y.G, w.db, (e, {
+				D = Object(i.b)(() => Object(c.a)(v.G, k.db, (e, {
 					isSponsored: t,
 					postId: n
-				}) => t && n ? Object(y.b)(e, n) : null, x.a, v.actionInfo, y.H, (e, t, n, s, r, o) => ({
+				}) => t && n ? Object(v.b)(e, n) : null, y.a, w.actionInfo, v.H, (e, t, n, s, r, o) => ({
 					postPermalink: e,
 					shouldOpenPostInNewTab: t,
 					basePixelMetadata: n,
@@ -3884,16 +3911,16 @@
 					post: o
 				})));
 			t.a = D(e => {
-				const t = e.sendGoodVisitEvent ? Object(g.a)() : void 0;
+				const t = e.sendGoodVisitEvent ? Object(_.a)() : void 0;
 				return e.outboundUrl && !e.shouldBlur ? o.a.createElement("a", {
 					href: e.outboundUrl,
 					target: "_blank",
 					rel: u.a,
 					onMouseDown: t => {
-						e.source && e.outboundUrl && e.isSponsored && e.basePixelMetadata && Object(b.c)(t.currentTarget, e.postId, e.basePixelMetadata)
+						e.source && e.outboundUrl && e.isSponsored && e.basePixelMetadata && Object(f.c)(t.currentTarget, e.postId, e.basePixelMetadata)
 					},
 					onClick: () => {
-						e.isSponsored && e.post.postId && Object(f.a)(e.post, e.pageType)
+						e.isSponsored && e.post.postId && Object(g.a)(e.post, e.pageType)
 					}
 				}, L(e)) : e.isListing && e.postPermalink ? o.a.createElement(a.a, {
 					target: e.shouldOpenPostInNewTab ? "_blank" : void 0,
@@ -3903,7 +3930,7 @@
 			const N = (e, t) => o.a.createElement(T, {
 					altText: t.altText,
 					className: Object(d.a)(t.imageClassName, {
-						[k.a]: !e
+						[E.a]: !e
 					}),
 					height: t.height,
 					isExpando: !!t.isExpando,
@@ -3921,10 +3948,10 @@
 					onClick: e,
 					...t
 				}) => {
-					const n = Object(_.K)(t.height, t.width),
+					const n = Object(x.K)(t.height, t.width),
 						r = S(t.height) && n;
 					return o.a.createElement(I, j({}, t, {
-						className: `${n?`${k.a} `:""}${t.className||""}`
+						className: `${n?`${E.a} `:""}${t.className||""}`
 					}), t.isListing ? o.a.createElement("div", {
 						className: t.contentImageClassName
 					}, N(n, t)) : o.a.createElement("a", {
@@ -3934,18 +3961,18 @@
 							maxWidth: "50%"
 						} : {},
 						target: "_blank",
-						rel: u.c
-					}, N(n, t)), t.isListing && !t.showFull && t.height > _.j && Object(_.K)(t.height, t.width) && o.a.createElement("div", {
+						rel: u.c,
+						className: O.a.imageLink
+					}, N(n, t), t.shouldBlur && !t.isVideoThumbnail && o.a.createElement(p.a, {
+						isNSFW: !!t.isNSFW,
+						isSpoiler: !!t.isSpoiler
+					})), t.isListing && !t.showFull && t.height > x.j && Object(x.K)(t.height, t.width) && o.a.createElement("div", {
 						className: O.a.seeMore
 					}, s.fbt._("see full image", null, {
 						hk: "1Qygw5"
-					})), t.isVideoThumbnail && o.a.createElement(p.a, {
+					})), t.isVideoThumbnail && o.a.createElement(h.a, {
 						onClick: e
-					}), t.shouldBlur && !t.isVideoThumbnail && !t.isListing && o.a.createElement("div", {
-						className: O.a.unblurButtonContainer
-					}, o.a.createElement("button", {
-						className: O.a.unblurButton
-					}, Object(E.a)(!!t.isNSFW, !!t.isSpoiler))))
+					}))
 				}
 		},
 		"./src/reddit/components/Media/MediaContainer/index.m.less": function(e, t, n) {
@@ -4231,19 +4258,16 @@
 				}, R()))
 			}
 		},
-		"./src/reddit/components/Media/blurredContent.ts": function(e, t, n) {
-			"use strict";
-			n.d(t, "a", (function() {
-				return r
-			}));
-			var s = n("./node_modules/fbt/lib/FbtPublic.js");
-			const r = (e, t) => e && t ? s.fbt._("Click to see nsfw spoiler", null, {
-				hk: "4EdPWu"
-			}) : e ? s.fbt._("Click to see nsfw", null, {
-				hk: "4CErse"
-			}) : t ? s.fbt._("Click to see spoiler", null, {
-				hk: "1x3iUE"
-			}) : void 0
+		"./src/reddit/components/Media/index.m.less": function(e, t, n) {
+			e.exports = {
+				hiddenLink: "_3dhFVFchWAAFXfLFTa94n9",
+				visibilityWrapper: "_1NSbknF8ucHV2abfCZw2Z1",
+				displayNone: "_1Q2mF3u7v9hBVu_4bkC7R4",
+				galleryMediaContainer: "_3ozFpM1W8BRdrzkr_ssGxZ",
+				miniCardVideo: "_18_METUBD2i2iqGBz4ofw1",
+				unblurButtonContainer: "_3jrT7JqZwfGWyxKf4SYuRj",
+				unblurButton: "_2bcjL-4RRFQN5OUQMrcioo"
+			}
 		},
 		"./src/reddit/components/MultiredditTopBar/Button/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -5138,7 +5162,7 @@
 				a = n("./src/lib/classNames/index.ts"),
 				c = n("./src/lib/CSSVariableProvider/withTheme.tsx"),
 				d = n("./src/lib/sentry/index.ts"),
-				l = n("./src/reddit/components/Media/blurredContent.ts"),
+				l = n("./src/reddit/components/Media/BlurredContent.tsx"),
 				u = n("./src/reddit/constants/elementClassNames.ts"),
 				m = n("./src/reddit/helpers/styles/postBackgroundColor.ts"),
 				p = n("./src/reddit/helpers/styles/smartTextColor.ts"),
@@ -5196,7 +5220,7 @@
 					}, i.a.createElement("button", {
 						className: _.a.unblurButton,
 						onClick: d
-					}, Object(l.a)(!!o, !!c))));
+					}, Object(l.b)(!!o, !!c))));
 					if (-1 !== S)
 						for (let i = S; i <= T; i++) {
 							const e = C[i];
@@ -8218,4 +8242,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.be2fcd965824679e36c2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.046890fae4bf3d01996b.js.map
