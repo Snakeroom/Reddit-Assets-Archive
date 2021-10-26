@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CommunitySettings-ModPnSettings.e150af703dbcc923c609.js
-// Retrieved at 10/25/2021, 11:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CommunitySettings-ModPnSettings.e7208ec65f9355abcb2f.js
+// Retrieved at 10/26/2021, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CommunitySettings-ModPnSettings"], {
 		"./node_modules/lodash/times.js": function(e, t, n) {
@@ -60,8 +60,8 @@
 			}
 			var u = n("./src/reddit/selectors/telemetry.ts"),
 				g = n("./src/redditGQL/types.ts");
-			const m = Object.values(g.b),
-				p = Object.values(g.c),
+			const m = Object.values(g.c),
+				p = Object.values(g.d),
 				b = e => t => {
 					return {
 						source: "mod_pn_settings",
@@ -73,7 +73,7 @@
 						}
 					}
 				},
-				f = e => t => {
+				_ = e => t => {
 					return {
 						source: "mod_pn_settings",
 						action: "click",
@@ -84,7 +84,7 @@
 						}
 					}
 				},
-				_ = e => t => {
+				f = e => t => {
 					const n = u.defaults(t),
 						a = e.id,
 						s = e.id.toUpperCase();
@@ -115,9 +115,9 @@
 						noun: e.id
 					}
 				};
-			var x = n("./src/reddit/hooks/useTracking.ts"),
-				y = n("./src/reddit/components/CommunitySettings/ModPnSettings/index.m.less"),
-				h = n.n(y);
+			var y = n("./src/reddit/hooks/useTracking.ts"),
+				h = n("./src/reddit/components/CommunitySettings/ModPnSettings/index.m.less"),
+				x = n.n(h);
 
 			function E({
 				settingLayoutData: e,
@@ -127,7 +127,7 @@
 				currentRange: s,
 				onChange: o
 			}) {
-				const r = Object(x.a)(),
+				const r = Object(y.a)(),
 					{
 						ranges: d,
 						id: l,
@@ -140,7 +140,7 @@
 						color: "var(--newCommunityTheme-active)"
 					}, e), {}),
 					b = n ? a : s,
-					f = u.replace("{count}", `${b}`);
+					_ = u.replace("{count}", `${b}`);
 				return i.a.createElement(i.a.Fragment, null, i.a.createElement(c.p, {
 					on: !n,
 					onClick: () => {
@@ -165,10 +165,10 @@
 							currentRange: d[e.target.value]
 						})
 					},
-					label: f,
+					label: _,
 					disabled: n || t,
 					hideSubtext: !0,
-					className: h.a.RangeSetting
+					className: x.a.RangeSetting
 				}))
 			}
 
@@ -302,9 +302,9 @@
 			}
 			var P = n("./src/reddit/components/ModHub/StyledComponents/index.tsx"),
 				R = n("./src/reddit/components/StructuredStyles/Breadcrumbs/index.tsx"),
-				O = n("./src/reddit/components/TrackingHelper/index.tsx");
+				D = n("./src/reddit/components/TrackingHelper/index.tsx");
 
-			function D({
+			function O({
 				goBack: e,
 				layoutData: t,
 				pageId: n,
@@ -314,21 +314,21 @@
 				subredditName: d,
 				updateSetting: l
 			}) {
-				const u = Object(O.b)(),
+				const u = Object(D.b)(),
 					g = t.pages[n],
 					{
 						title: m,
 						description: p,
-						sections: f
+						sections: _
 					} = g;
 				return Object(o.useEffect)(() => {
 					u(b(n))
 				}, [u, n]), i.a.createElement(i.a.Fragment, null, i.a.createElement("div", {
-					className: h.a.TitleContainer
+					className: x.a.TitleContainer
 				}, r && i.a.createElement(c.f, {
 					onClick: e,
 					"data-testid": "mod-pns-back-button"
-				}, i.a.createElement(R.a, null)), i.a.createElement(P.b, null, m)), i.a.createElement(k.a, null, !!p && p.replace("{community}", d)), f.map(e => i.a.createElement(w, {
+				}, i.a.createElement(R.a, null)), i.a.createElement(P.b, null, m)), i.a.createElement(k.a, null, !!p && p.replace("{community}", d)), _.map(e => i.a.createElement(w, {
 					sectionId: e,
 					layoutData: t,
 					settings: s,
@@ -348,8 +348,8 @@
 						subredditIds: [t]
 					}
 				}),
-				G = (e, t) => "threshold" in t ? q(e, t) : H(e, t),
-				q = (e, t) => Object(N.a)(e, {
+				G = (e, t) => "threshold" in t ? H(e, t) : V(e, t),
+				H = (e, t) => Object(N.a)(e, {
 					...B,
 					variables: {
 						input: {
@@ -357,7 +357,7 @@
 						}
 					}
 				}),
-				H = (e, t) => Object(N.a)(e, {
+				V = (e, t) => Object(N.a)(e, {
 					...A,
 					variables: {
 						input: {
@@ -365,7 +365,7 @@
 						}
 					}
 				}),
-				V = e => {
+				q = e => {
 					const {
 						subredditsInfoByIds: t
 					} = e, n = {};
@@ -419,13 +419,13 @@
 				const {
 					subredditId: t,
 					subredditName: n
-				} = e, [a, c] = Object(o.useState)(null), [l, u] = Object(o.useState)({}), [b, S] = Object(o.useState)(!0), y = Object(Y.a)(), h = Object(r.d)(), E = Object(x.a)(), [L, v] = Object(o.useState)(["page__root"]);
+				} = e, [a, c] = Object(o.useState)(null), [l, u] = Object(o.useState)({}), [b, S] = Object(o.useState)(!0), h = Object(Y.a)(), x = Object(r.d)(), E = Object(y.a)(), [L, v] = Object(o.useState)(["page__root"]);
 				Object(o.useEffect)(() => {
 					(async () => {
-						const e = await I(y(), t);
+						const e = await I(h(), t);
 						if (e && e.ok) {
 							const n = e.body,
-								a = V(n.data)[t],
+								a = q(n.data)[t],
 								s = {};
 							Object.values(a.rows).map(e => {
 								if ("ModPnSettingsLayoutRowRange" === e.__typename) {
@@ -453,7 +453,7 @@
 									}
 								}
 							}), c(a), u(s), S(!1)
-						} else h(Object(d.d)())
+						} else x(Object(d.d)())
 					})()
 				}, []);
 				const C = Object(o.useCallback)(s()(async ({
@@ -466,7 +466,7 @@
 							return {
 								subredditId: t,
 								name: n,
-								status: e.isEnabled ? g.d.Enabled : g.d.Disabled
+								status: e.isEnabled ? g.e.Enabled : g.e.Disabled
 							}
 						}
 						if (p.includes(n)) {
@@ -479,8 +479,8 @@
 						}
 					}(n, t);
 					if (!a) return;
-					const s = await G(y(), a);
-					if (s.ok && E(_(n)), !s.ok) {
+					const s = await G(h(), a);
+					if (s.ok && E(f(n)), !s.ok) {
 						const {
 							id: t
 						} = e;
@@ -489,13 +489,13 @@
 							[t]: {
 								...e
 							}
-						}), h(Object(d.d)())
+						}), x(Object(d.d)())
 					}
 				}, K), []);
 				if (b || !a) return i.a.createElement(M.a, null);
 				const j = L[L.length - 1],
 					k = L.length > 1;
-				return i.a.createElement(D, {
+				return i.a.createElement(O, {
 					pageId: j,
 					showBackButton: k,
 					updateSetting: (e, t) => {
@@ -517,7 +517,7 @@
 					layoutData: a,
 					settings: l,
 					pushPage: e => {
-						v([...L, e]), E(f(e))
+						v([...L, e]), E(_(e))
 					},
 					goBack: () => {
 						if (1 === L.length) return;
@@ -620,21 +620,6 @@
 				}
 			}, s.a.createElement(u, null), t.title))))
 		},
-		"./src/reddit/hooks/useGqlContext.ts": function(e, t, n) {
-			"use strict";
-			n.d(t, "a", (function() {
-				return o
-			}));
-			var a = n("./node_modules/react/index.js"),
-				s = n("./src/reddit/contexts/ApiContext.tsx");
-
-			function o() {
-				const {
-					gqlContext: e
-				} = Object(a.useContext)(s.a);
-				return e
-			}
-		},
 		"./src/reddit/icons/svgs/Chevron/index.m.less": function(e, t, n) {
 			e.exports = {
 				chevron: "_1c_YBKkiW4FhhLJPkq9c1v"
@@ -672,4 +657,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CommunitySettings-ModPnSettings.e150af703dbcc923c609.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CommunitySettings-ModPnSettings.e7208ec65f9355abcb2f.js.map

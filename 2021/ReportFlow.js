@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlow.84a70a265eb33dc46594.js
-// Retrieved at 10/25/2021, 4:40:12 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlow.31eba9cb45b0bbedcc2c.js
+// Retrieved at 10/26/2021, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlow", "FrontpageSidebar", "ReportFlowNew"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, o) {
@@ -5857,6 +5857,18 @@
 				d: "M10,6.66666667 C8.15905083,6.66666667 6.66666667,8.15905083 6.66666667,10 C6.66666667,11.8409492 8.15905083,13.3333333 10,13.3333333 C11.8409492,13.3333333 13.3333333,11.8409492 13.3333333,10 C13.3333333,8.15905083 11.8409492,6.66666667 10,6.66666667 Z M10,0 C15.5228475,-1.01453063e-15 20,4.4771525 20,10 C20,15.5228475 15.5228475,20 10,20 C4.4771525,20 6.76353751e-16,15.5228475 0,10 C-6.76353751e-16,4.4771525 4.4771525,1.01453063e-15 10,0 Z"
 			})))
 		},
+		"./src/reddit/layout/row/Inline/index.m.less": function(e, t, o) {
+			e.exports = {
+				inlineRow: "XZK-LTFT5CgGo9MvPQQsy"
+			}
+		},
+		"./src/reddit/layout/row/Inline/index.tsx": function(e, t, o) {
+			"use strict";
+			var n = o("./src/lib/lessComponent.tsx"),
+				r = o("./src/reddit/layout/row/Inline/index.m.less"),
+				s = o.n(r);
+			t.a = n.a.div("inlineRow", s.a)
+		},
 		"./src/reddit/layout/row/InlineButton/index.m.less": function(e, t, o) {
 			e.exports = {
 				inlineButton: "_10K5i7NW6qcm-UoCtpB3aK"
@@ -6032,12 +6044,12 @@
 					pageLayer: t
 				}) => Object(s.M)(t), (e, t, o) => !e && !t && o),
 				c = Object(n.a)((e, t) => Object(i.c)(e, {
-					experimentName: r.Qb,
+					experimentName: r.Rb,
 					experimentEligibilitySelector: e => l(e, t)
 				}), e => e),
-				d = e => e === r.ze.NoCommunityWidgets,
-				u = e => e === r.ze.NoRulesModerators,
-				p = e => e === r.ze.RelatedPostsDu
+				d = e => e === r.Ae.NoCommunityWidgets,
+				u = e => e === r.Ae.NoRulesModerators,
+				p = e => e === r.Ae.RelatedPostsDu
 		},
 		"./src/reddit/selectors/tooltip.ts": function(e, t, o) {
 			"use strict";
@@ -6066,4 +6078,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.84a70a265eb33dc46594.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.31eba9cb45b0bbedcc2c.js.map

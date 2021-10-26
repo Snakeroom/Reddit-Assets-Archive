@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OverlayKickUser.8ba49aefa5559f54ae4c.js
-// Retrieved at 10/19/2021, 5:20:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OverlayKickUser.8eb864be46873246ddb4.js
+// Retrieved at 10/26/2021, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OverlayKickUser"], {
 		"./src/chat/components/OverlayKickUser/index.m.less": function(e, t, n) {
@@ -42,9 +42,9 @@
 			const x = "kickUser",
 				j = o.a.p("SubHeader", y.a),
 				E = o.a.span("Title", y.a),
-				H = o.a.span("Header", y.a),
-				f = o.a.wrapped(d.a, "Checkbox", y.a),
-				v = o.a.div("ListItem", y.a),
+				f = o.a.span("Header", y.a),
+				v = o.a.wrapped(d.a, "Checkbox", y.a),
+				H = o.a.div("ListItem", y.a),
 				C = o.a.div("OverlayContent", y.a);
 			var L;
 			! function(e) {
@@ -73,7 +73,7 @@
 				}),
 				S = Object(c.b)(D, e => ({
 					onKickUser: (t, n, a) => {
-						e(Object(i.p)(t, n, a)), e(Object(l.H)(a))
+						e(Object(i.p)(t, n, a)), e(Object(l.K)(a))
 					}
 				}));
 			class g extends r.Component {
@@ -100,7 +100,7 @@
 						message: e,
 						user: t
 					} = this.props, n = e && e.sender ? e.sender.nickname : t ? "u/" + t.name : "this user";
-					return s.a.createElement(s.a.Fragment, null, s.a.createElement(H, null, a.fbt._("Are you sure you want to kick {username} from this room?", [a.fbt._param("username", n)], {
+					return s.a.createElement(s.a.Fragment, null, s.a.createElement(f, null, a.fbt._("Are you sure you want to kick {username} from this room?", [a.fbt._param("username", n)], {
 						hk: "n1L3B"
 					})), s.a.createElement(j, null, a.fbt._("They'll be able to join again once the kick duration is over.", null, {
 						hk: "4zi1U1"
@@ -122,9 +122,9 @@
 						})
 					}), s.a.createElement(C, null, s.a.createElement(u.b, null, this.renderIntro(), s.a.createElement(E, null, a.fbt._("Kick Duration", null, {
 						hk: "4nENS8"
-					})), Object.keys(e).map(t => s.a.createElement(v, {
+					})), Object.keys(e).map(t => s.a.createElement(H, {
 						key: t
-					}, s.a.createElement(f, {
+					}, s.a.createElement(v, {
 						type: "radio",
 						name: x,
 						value: t
@@ -142,4 +142,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayKickUser.8ba49aefa5559f54ae4c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayKickUser.8eb864be46873246ddb4.js.map

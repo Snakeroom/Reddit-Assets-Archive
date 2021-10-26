@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.f6115ecbcfcf996f82fe.js
-// Retrieved at 10/26/2021, 2:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.2c1ba6facf271ae5835a.js
+// Retrieved at 10/26/2021, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~Subreddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, r) {
@@ -4793,33 +4793,33 @@
 				u = e => {
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: i.zd
+						experimentName: i.Ad
 					});
-					return t === i.Ad.UIChangesOnly || t === i.Ad.RedditRecommendation || t === i.Ad.OpenAI || t === i.Ad.FilteredOpenAI
+					return t === i.Bd.UIChangesOnly || t === i.Bd.RedditRecommendation || t === i.Bd.OpenAI || t === i.Bd.FilteredOpenAI
 				},
 				f = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: i.zd
-					}) === i.Ad.UIChangesOnly
+						experimentName: i.Ad
+					}) === i.Bd.UIChangesOnly
 				},
 				p = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: i.zd
-					}) === i.Ad.RedditRecommendation
+						experimentName: i.Ad
+					}) === i.Bd.RedditRecommendation
 				},
 				_ = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: i.zd
-					}) === i.Ad.OpenAI
+						experimentName: i.Ad
+					}) === i.Bd.OpenAI
 				},
 				m = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: i.zd
-					}) === i.Ad.FilteredOpenAI
+						experimentName: i.Ad
+					}) === i.Bd.FilteredOpenAI
 				},
 				b = e => e.creations.subredditRec.api.pending,
 				g = e => e.creations.subredditRec.api.error,
@@ -4900,12 +4900,12 @@
 					pageLayer: t
 				}) => Object(i.M)(t), (e, t, r) => !e && !t && r),
 				l = Object(n.a)((e, t) => Object(s.c)(e, {
-					experimentName: o.Qb,
+					experimentName: o.Rb,
 					experimentEligibilitySelector: e => a(e, t)
 				}), e => e),
-				d = e => e === o.ze.NoCommunityWidgets,
-				u = e => e === o.ze.NoRulesModerators,
-				f = e => e === o.ze.RelatedPostsDu
+				d = e => e === o.Ae.NoCommunityWidgets,
+				u = e => e === o.Ae.NoRulesModerators,
+				f = e => e === o.Ae.RelatedPostsDu
 		},
 		"./src/reddit/selectors/tooltip.ts": function(e, t, r) {
 			"use strict";
@@ -4919,4 +4919,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.f6115ecbcfcf996f82fe.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.2c1ba6facf271ae5835a.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePosts.b2067a36708d7b9145c8.js
-// Retrieved at 10/25/2021, 4:40:12 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePosts.0ad3f7c4673ad37b2312.js
+// Retrieved at 10/26/2021, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePosts", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -3571,7 +3571,7 @@
 			const b = 100,
 				f = b / 2 / 1e3;
 			var g = n("./src/lib/forceHttps/index.ts"),
-				_ = n("./src/reddit/hooks/usePrevious.ts");
+				_ = n("./src/lib/hooks/usePrevious.ts");
 
 			function x() {
 				return (x = Object.assign || function(e) {
@@ -6087,12 +6087,12 @@
 						rtJsonElementProps: o
 					});
 					switch (r) {
-						case b.pe.SmIcon:
+						case b.qe.SmIcon:
 							return s.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: o
 							});
-						case b.pe.SmIconHc:
+						case b.qe.SmIconHc:
 							return s.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -7444,15 +7444,15 @@
 			const i = e => {
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: o.K,
-						experimentName: r.ic
+						experimentName: r.jc
 					});
-					return !(!t || Object(r.Ne)(t))
+					return !(!t || Object(r.Oe)(t))
 				},
 				a = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: o.K,
-						experimentName: r.ic
-					}) === r.Gc.ListingEnabled
+						experimentName: r.jc
+					}) === r.Hc.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, n) {
@@ -7584,12 +7584,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: r.je
+						experimentName: r.ke
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === r.pe.SmIcon || t === r.pe.SmIconHc
+					return t === r.qe.SmIcon || t === r.qe.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -7633,4 +7633,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.b2067a36708d7b9145c8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.0ad3f7c4673ad37b2312.js.map

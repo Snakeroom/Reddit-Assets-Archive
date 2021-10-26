@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChangeUsernameModals.e77cd958bf4cb4586e60.js
-// Retrieved at 10/13/2021, 6:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChangeUsernameModals.62cf467c4badb18fecd0.js
+// Retrieved at 10/26/2021, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChangeUsernameModals"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -59,7 +59,7 @@
 			t.a = e => a.a.createElement(o.a, r({}, e, {
 				viewBox: "0 0 20 20"
 			}), a.a.createElement("path", {
-				d: "M18 9a1 1 0 0 1 1 1v2c0 2.757-2.243 5-5 5H5v1.5a.5.5 0 0 1-.82.384l-3-2.5a.497.497 0 0 1 0-.768l3-2.5A.5.5 0 0 1 5 13.5V15h9c1.654 0 3-1.346 3-3v-2a1 1 0 0 1 1-1zM2 11a1 1 0 0 1-1-1V8c0-2.757 2.243-5 5-5h9V1.5a.5.5 0 0 1 .82-.384l3 2.5a.497.497 0 0 1 0 .768l-3 2.5A.5.5 0 0 1 15 6.5V5H6C4.346 5 3 6.346 3 8v2a1 1 0 0 1-1 1z"
+				d: "M16.375 10A6.375 6.375 0 1 1 10 3.625h3.274L11.6 5.02l.8.96 3-2.5a.625.625 0 0 0 0-.96l-3-2.5-.8.96 1.674 1.4H10A7.625 7.625 0 1 0 17.625 10Zm-2.351-7L14 3.02v-.04Z"
 			}))
 		},
 		"./src/reddit/components/ChangeUsernameModals/index.tsx": function(e, t, n) {
@@ -160,10 +160,10 @@
 				P = () => s.fbt._("Sorry, this username is taken. Try another.", null, {
 					hk: "2HkykK"
 				}),
-				H = () => s.fbt._("Username must be between 3 and 20 characters.", null, {
+				J = () => s.fbt._("Username must be between 3 and 20 characters.", null, {
 					hk: "1V72yV"
 				}),
-				J = () => s.fbt._("Sorry, something went wrong. Try again later.", null, {
+				H = () => s.fbt._("Sorry, something went wrong. Try again later.", null, {
 					hk: "48Ga9f"
 				}),
 				V = {
@@ -177,7 +177,7 @@
 			class Y extends o.a.Component {
 				constructor() {
 					super(...arguments), this.state = V, this.checkUsername = async e => e.length < L || e.length > _ ? {
-						error: H(),
+						error: J(),
 						state: C.a.Invalid
 					} : e === this.props.initialUsername ? F : await this.validateUsername(e), this.validateUsername = async e => {
 						const {
@@ -192,7 +192,7 @@
 							error: s.error.fields[0].msg,
 							state: C.a.Invalid
 						} : {
-							error: J(),
+							error: H(),
 							state: C.a.Invalid
 						}
 					}, this.callCheckUsername = async e => {
@@ -267,8 +267,8 @@
 					}))))
 				}
 			}
-			var z = Object(E.b)(Y),
-				Z = n("./src/reddit/icons/svgs/Question/index.tsx"),
+			var Z = Object(E.b)(Y),
+				z = n("./src/reddit/icons/svgs/Question/index.tsx"),
 				W = n("./src/reddit/icons/svgs/SnooSuperhero/index.tsx");
 			var q = e => (Object(a.useEffect)(e.onView, []), o.a.createElement(I.a, {
 					bodyClassName: R.a.confirmModalBody,
@@ -280,7 +280,7 @@
 						[R.a.saveDescription]: e.isSaveConfirm
 					}),
 					headerClassName: R.a.confirmModalHeader,
-					icon: e.isSecondConfirm ? o.a.createElement(Z.a, null) : o.a.createElement(W.a, null),
+					icon: e.isSecondConfirm ? o.a.createElement(z.a, null) : o.a.createElement(W.a, null),
 					iconClassName: Object(A.a)(R.a.confirmModalIcon, {
 						[R.a.questionIcon]: e.isSecondConfirm
 					}),
@@ -430,7 +430,7 @@
 					primaryButtonText: E ? oe : se,
 					secondaryButtonText: ne,
 					username: f
-				}), t && o.a.createElement(z, {
+				}), t && o.a.createElement(Z, {
 					initialUsername: C || "",
 					isResponsive: u,
 					onClose: n,
@@ -827,4 +827,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChangeUsernameModals.e77cd958bf4cb4586e60.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChangeUsernameModals.62cf467c4badb18fecd0.js.map

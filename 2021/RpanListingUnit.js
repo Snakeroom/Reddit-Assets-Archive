@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.57bd59f5884add77d5b2.js
-// Retrieved at 10/25/2021, 4:40:12 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.2732d4322a44f253c6e6.js
+// Retrieved at 10/26/2021, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -52,16 +52,16 @@
 			const p = Object(o.a)(e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.nd
+					experimentName: u.od
 				});
-				return Object(u.Ne)(t) ? void 0 : t
+				return Object(u.Oe)(t) ? void 0 : t
 			}, e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.od
+					experimentName: u.pd
 				});
-				return Object(u.Ne)(t) ? void 0 : t
-			}, (e, t) => e === u.qd.Enabled && t === u.qd.Enabled);
+				return Object(u.Oe)(t) ? void 0 : t
+			}, (e, t) => e === u.rd.Enabled && t === u.rd.Enabled);
 			var b = n("./src/config.ts");
 			var h = n("./src/reddit/selectors/user.ts");
 			const f = e => {
@@ -526,9 +526,9 @@
 			}));
 			var s = n("./node_modules/react/index.js"),
 				r = n.n(s),
-				i = n("./src/realtime/GQLSubscription/async.tsx"),
-				o = n("./src/reddit/hooks/useIntersectionObserver.ts"),
-				a = n("./src/reddit/hooks/usePrevious.ts");
+				i = n("./src/lib/hooks/usePrevious.ts"),
+				o = n("./src/realtime/GQLSubscription/async.tsx"),
+				a = n("./src/reddit/hooks/useIntersectionObserver.ts");
 			const c = e => {
 				return Math.abs(e).toString().split("").map(e => parseInt(e))
 			};
@@ -588,7 +588,7 @@
 							}, u())), M.current > 0 && (k.current(M.current), M.current = 0)) : s && (F.current = !1)
 						})
 					}, []);
-				Object(o.a)(N, U);
+				Object(a.a)(N, U);
 				const [V, H] = Object(s.useState)(!1), G = Object(s.useCallback)(e => {
 					e.forEach(e => {
 						const {
@@ -600,8 +600,8 @@
 				}, []), Y = Object(s.useRef)({
 					rootMargin: "2000px 0px 2000px 0px"
 				});
-				Object(o.a)(N, G, Y.current);
-				const B = Object(a.a)(t);
+				Object(a.a)(N, G, Y.current);
+				const B = Object(i.a)(t);
 				Object(s.useEffect)(() => {
 					if (void 0 !== B && B !== t) {
 						const e = t - B;
@@ -652,7 +652,7 @@
 					role: "screen-reader"
 				}, [...T].reverse().join(""))), r.a.createElement("span", {
 					ref: N
-				}), V && r.a.createElement(i.a, {
+				}), V && r.a.createElement(o.a, {
 					variables: _,
 					onData: h ? m : f,
 					queryKey: g,
@@ -685,7 +685,7 @@
 						viewCountTotals: n,
 						shareCountTotals: r
 					} = t;
-					return (null == n ? void 0 : n.status) === s.a.Unavailable && (null == r ? void 0 : r.status) === s.a.Unavailable ? i.NotAvailableYet : !(null == n ? void 0 : n.totalCount) || n.totalCount < 10 ? i.NotAvailableYet : i.Available
+					return (null == n ? void 0 : n.status) === s.b.Unavailable && (null == r ? void 0 : r.status) === s.b.Unavailable ? i.NotAvailableYet : !(null == n ? void 0 : n.totalCount) || n.totalCount < 10 ? i.NotAvailableYet : i.Available
 				}
 		},
 		"./src/reddit/components/FlairPickerTitle/index.m.less": function(e, t, n) {
@@ -3838,8 +3838,8 @@
 					}) || !!Object(i.l)(e, {
 						postId: t
 					}) || Object(o.H)(e))(e, t),
-					experimentName: s.M
-				}) === s.Bc
+					experimentName: s.N
+				}) === s.Cc
 			}
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, n) {
@@ -3970,4 +3970,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.57bd59f5884add77d5b2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.2732d4322a44f253c6e6.js.map

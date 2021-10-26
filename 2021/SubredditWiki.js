@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.b6f63c5590099dcf4ad6.js
-// Retrieved at 10/25/2021, 4:40:12 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.9bdc2b28a2cd170fa374.js
+// Retrieved at 10/26/2021, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -4587,7 +4587,7 @@
 			const h = 100,
 				f = h / 2 / 1e3;
 			var g = s("./src/lib/forceHttps/index.ts"),
-				_ = s("./src/reddit/hooks/usePrevious.ts");
+				_ = s("./src/lib/hooks/usePrevious.ts");
 
 			function x() {
 				return (x = Object.assign || function(e) {
@@ -6821,12 +6821,12 @@
 						rtJsonElementProps: i
 					});
 					switch (n) {
-						case h.pe.SmIcon:
+						case h.qe.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: i
 							});
-						case h.pe.SmIconHc:
+						case h.qe.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -8963,9 +8963,9 @@
 			var n = s("./src/reddit/constants/experiments.ts"),
 				r = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = s("./src/reddit/selectors/user.ts");
-			const o = e => n.Tb.Enabled === Object(r.c)(e, {
+			const o = e => n.Ub.Enabled === Object(r.c)(e, {
 				experimentEligibilitySelector: i.K,
-				experimentName: n.Sb
+				experimentName: n.Tb
 			})
 		},
 		"./src/reddit/selectors/gold/powerups/flairs.ts": function(e, t, s) {
@@ -9108,12 +9108,12 @@
 				d = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: n.je
+						experimentName: n.ke
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === n.pe.SmIcon || t === n.pe.SmIconHc
+					return t === n.qe.SmIcon || t === n.qe.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -9286,4 +9286,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.b6f63c5590099dcf4ad6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.9bdc2b28a2cd170fa374.js.map

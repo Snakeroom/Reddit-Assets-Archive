@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWelcomeMessageModal.0f6d44780afc4d380160.js
-// Retrieved at 10/25/2021, 4:40:12 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWelcomeMessageModal.861caba1a41d96548a08.js
+// Retrieved at 10/26/2021, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWelcomeMessageModal"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -687,7 +687,7 @@
 			const b = 100,
 				x = b / 2 / 1e3;
 			var f = s("./src/lib/forceHttps/index.ts"),
-				g = s("./src/reddit/hooks/usePrevious.ts");
+				g = s("./src/lib/hooks/usePrevious.ts");
 
 			function v() {
 				return (v = Object.assign || function(e) {
@@ -2008,12 +2008,12 @@
 						rtJsonElementProps: i
 					});
 					switch (n) {
-						case b.pe.SmIcon:
+						case b.qe.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: i
 							});
-						case b.pe.SmIconHc:
+						case b.qe.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -2120,7 +2120,7 @@
 				experimentVariant: e => {
 					var t;
 					return null === (t = Object(v.d)(e, {
-						experimentName: m.le
+						experimentName: m.me
 					})) || void 0 === t ? void 0 : t.variant
 				},
 				user: y.k,
@@ -2202,7 +2202,7 @@
 					rtJsonElementProps: I
 				}) : null === (i = null == y ? void 0 : y.body) || void 0 === i ? void 0 : i.markdown)), r.a.createElement(d.g, {
 					className: T.a.modalFooter
-				}, u === m.re.Rules ? !j && r.a.createElement(p.s, {
+				}, u === m.se.Rules ? !j && r.a.createElement(p.s, {
 					priority: p.b.Secondary,
 					onClick: () => {
 						O(!0), _(b.b())
@@ -2591,12 +2591,12 @@
 				d = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: n.je
+						experimentName: n.ke
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === n.pe.SmIcon || t === n.pe.SmIconHc
+					return t === n.qe.SmIcon || t === n.qe.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -2619,4 +2619,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWelcomeMessageModal.0f6d44780afc4d380160.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWelcomeMessageModal.861caba1a41d96548a08.js.map

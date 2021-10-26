@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.9e731082e832dbe5a70f.js
-// Retrieved at 10/25/2021, 4:40:12 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.a208d0fbae633502926e.js
+// Retrieved at 10/26/2021, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1176,12 +1176,12 @@
 					})), 5e3)
 				};
 			var z = s("./src/reddit/components/Comments/Comment/TopMeta/crowdControl.m.less"),
-				J = s.n(z);
+				q = s.n(z);
 			const {
-				fbt: q
+				fbt: J
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), X = () => o.a.createElement(C.a, {
-				className: J.a.crowdControlText
-			}, q._("Crowd Control", null, {
+				className: q.a.crowdControlText
+			}, J._("Crowd Control", null, {
 				hk: "4WgEW"
 			}));
 			var K = s("./src/reddit/components/Comments/Comment/TopMeta/edited.m.less"),
@@ -2467,7 +2467,7 @@
 			const b = 100,
 				f = b / 2 / 1e3;
 			var x = s("./src/lib/forceHttps/index.ts"),
-				v = s("./src/reddit/hooks/usePrevious.ts");
+				v = s("./src/lib/hooks/usePrevious.ts");
 
 			function g() {
 				return (g = Object.assign || function(e) {
@@ -4149,8 +4149,8 @@
 				z = Object(u.c)({
 					isOverlayOpen: A.i
 				}),
-				J = Object(l.b)(z),
-				q = {};
+				q = Object(l.b)(z),
+				J = {};
 
 			function X(e) {
 				return e === document
@@ -4482,8 +4482,8 @@
 					}), this.props.disableScrollCache && !this.props.preventScrollOnMount && Object(O.c)(this.scrollContainer, 0), this.setupScrollHandler(), h.a.write(() => {
 						if (!this.props.disableScrollCache) {
 							const e = this.getCacheKey(),
-								t = q[e];
-							i()(t) || (q[e] = void 0, this.scrollContainer && Object(O.c)(this.scrollContainer, t))
+								t = J[e];
+							i()(t) || (J[e] = void 0, this.scrollContainer && Object(O.c)(this.scrollContainer, t))
 						}
 						this.callOnScrollForItemsChanged(), this.props.onLastVisibleChildRendered && this.props.onLastVisibleChildRendered()
 					}), h.a.read(() => {
@@ -4512,7 +4512,7 @@
 				componentWillUnmount() {
 					if (this.callExitedViewportForUnmount(), this.cleanupScrollHandler(), clearTimeout(this.updateRenderableChildrenHandle), this.cancelPopulateRenderableChildrenWhenIdle(), this.scrollContainer && !this.props.disableScrollCache) {
 						const e = this.getCacheKey();
-						q[e] = this.lastRenderPosition
+						J[e] = this.lastRenderPosition
 					}
 					this.childMap = new k.a("id"), this.itemsInViewport = new k.a("id"), this.wrapperRefFNs = {}, this.childRefFns = {}, this.containerRef = null, this.loadMoreEl = void 0, this.scrollContainer = void 0, this.unmountItemsIdleId && (Object(m.cancelIdleCallback)(this.unmountItemsIdleId), this.unmountItemsIdleId = null)
 				}
@@ -4667,7 +4667,7 @@
 					return void 0 === e.onLoadMore || "loadMoreToken" in e
 				}
 			}
-			t.b = J(Object(F.b)(le))
+			t.b = q(Object(F.b)(le))
 		},
 		"./src/reddit/components/Scroller/getDocumentTop.ts": function(e, t, s) {
 			"use strict";
@@ -4795,12 +4795,12 @@
 						rtJsonElementProps: o
 					});
 					switch (n) {
-						case b.pe.SmIcon:
+						case b.qe.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: o
 							});
-						case b.pe.SmIconHc:
+						case b.qe.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -6425,12 +6425,12 @@
 				d = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: n.je
+						experimentName: n.ke
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === n.pe.SmIcon || t === n.pe.SmIconHc
+					return t === n.qe.SmIcon || t === n.qe.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -6453,4 +6453,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.9e731082e832dbe5a70f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.a208d0fbae633502926e.js.map

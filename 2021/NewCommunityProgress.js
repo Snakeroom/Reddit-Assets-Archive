@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NewCommunityProgress.ce9e204600319effbfa3.js
-// Retrieved at 10/5/2021, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NewCommunityProgress.9e3b75cc8990ed076f1c.js
+// Retrieved at 10/26/2021, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NewCommunityProgress", "FrontpageSidebar"], {
 		"./src/lib/colors/constants.ts": function(C, e, t) {
@@ -68,6 +68,39 @@
 					coins: "#FFE600",
 					spoiler: "#D7DADC"
 				}
+		},
+		"./src/lib/hooks/useMutation.ts": function(C, e, t) {
+			"use strict";
+			t.d(e, "a", (function() {
+				return n
+			}));
+			var a = t("./node_modules/react/index.js"),
+				l = t("./src/reddit/hooks/useGqlContext.ts");
+
+			function n(C) {
+				const e = Object(l.a)(),
+					[t, n] = Object(a.useState)(!1),
+					[A, c] = Object(a.useState)(!1),
+					[r, i] = Object(a.useState)(null),
+					[s, L] = Object(a.useState)(null);
+				return [Object(a.useCallback)(async t => {
+					let a, l;
+					n(!0), c(!0);
+					try {
+						if ((l = (a = await C(e(), t)).body).error) throw new Error(l.error.message);
+						L(l.data)
+					} catch (r) {
+						i(r)
+					} finally {
+						n(!1)
+					}
+				}, [e, C]), {
+					data: s,
+					error: r,
+					pending: t,
+					called: A
+				}]
+			}
 		},
 		"./src/reddit/actions/subreddit/constants.ts": function(C, e, t) {
 			"use strict";
@@ -200,122 +233,122 @@
 				A = t("./src/reddit/components/NewCommunityProgress/index.m.less"),
 				c = t.n(A),
 				r = t("./src/lib/classNames/index.ts"),
-				i = t("./src/reddit/actions/modal.ts"),
-				s = t("./src/reddit/actions/subreddit/questions.ts"),
-				L = t("./src/redditGQL/operations/CompleteCommunityProgressCard.json"),
-				o = t("./src/redditGQL/operations/CompleteCommunityProgressModule.json"),
-				d = t("./src/redditGQL/operations/DismissCommunityProgressCard.json"),
-				f = t("./src/redditGQL/operations/DismissCommunityProgressCardV2.json"),
-				E = t("./src/lib/makeGqlRequest/index.ts");
-			const g = (C, e) => Object(E.a)(C, {
-					...d,
-					variables: e
-				}),
-				m = (C, e) => Object(E.a)(C, {
+				i = t("./src/lib/hooks/useMutation.ts"),
+				s = t("./src/reddit/actions/modal.ts"),
+				L = t("./src/reddit/actions/subreddit/questions.ts"),
+				o = t("./src/redditGQL/operations/CompleteCommunityProgressCard.json"),
+				d = t("./src/redditGQL/operations/CompleteCommunityProgressModule.json"),
+				f = t("./src/redditGQL/operations/DismissCommunityProgressCard.json"),
+				E = t("./src/redditGQL/operations/DismissCommunityProgressCardV2.json"),
+				g = t("./src/lib/makeGqlRequest/index.ts");
+			const m = (C, e) => Object(g.a)(C, {
 					...f,
 					variables: e
 				}),
-				p = (C, e) => Object(E.a)(C, {
-					...L,
+				p = (C, e) => Object(g.a)(C, {
+					...E,
 					variables: e
 				}),
-				B = (C, e) => Object(E.a)(C, {
+				B = (C, e) => Object(g.a)(C, {
 					...o,
 					variables: e
+				}),
+				M = (C, e) => Object(g.a)(C, {
+					...d,
+					variables: e
 				});
-			var M = t("./src/reddit/selectors/telemetry.ts");
+			var h = t("./src/reddit/selectors/telemetry.ts");
 
-			function h(C, e) {
+			function u(C, e) {
 				return {
 					moduleName: C.id,
 					cardName: e
 				}
 			}
-			const u = (C, e) => t => ({
-					...Object(M.defaults)(t),
+			const D = (C, e) => t => ({
+					...Object(h.defaults)(t),
 					source: "new_community_setup",
 					action: "view",
 					noun: "progress_module",
-					progressModule: h(C),
+					progressModule: u(C),
 					actionInfo: {
 						pageType: "community",
 						reason: e
 					},
-					subreddit: Object(M.subreddit)(t)
+					subreddit: Object(h.subreddit)(t)
 				}),
-				D = (C, e, t) => a => ({
-					...Object(M.defaults)(a),
+				w = (C, e, t) => a => ({
+					...Object(h.defaults)(a),
 					source: "new_community_setup",
 					action: "click",
 					noun: "card_action_button",
-					progressModule: h(C, e),
+					progressModule: u(C, e),
 					actionInfo: {
 						pageType: "community",
 						...t && {
 							reason: t
 						}
 					},
-					subreddit: Object(M.subreddit)(a)
+					subreddit: Object(h.subreddit)(a)
 				}),
-				w = C => e => ({
-					...Object(M.defaults)(e),
+				v = C => e => ({
+					...Object(h.defaults)(e),
 					source: "new_community_setup",
 					action: "click",
 					noun: "expand_progress_module",
-					progressModule: h(C),
+					progressModule: u(C),
 					actionInfo: {
 						pageType: "community",
 						reason: "expanded_module"
 					},
-					subreddit: Object(M.subreddit)(e)
+					subreddit: Object(h.subreddit)(e)
 				}),
-				v = C => e => ({
-					...Object(M.defaults)(e),
+				b = C => e => ({
+					...Object(h.defaults)(e),
 					source: "new_community_setup",
 					action: "click",
 					noun: "collapse_progress_module",
-					progressModule: h(C),
+					progressModule: u(C),
 					actionInfo: {
 						pageType: "community",
 						reason: "collapses_module"
 					},
-					subreddit: Object(M.subreddit)(e)
+					subreddit: Object(h.subreddit)(e)
 				}),
-				b = (C, e) => t => ({
-					...Object(M.defaults)(t),
+				P = (C, e) => t => ({
+					...Object(h.defaults)(t),
 					source: "new_community_setup",
 					action: "click",
 					noun: "card_menu_button",
-					progressModule: h(C, e),
+					progressModule: u(C, e),
 					actionInfo: {
 						pageType: "community"
 					},
-					subreddit: Object(M.subreddit)(t)
+					subreddit: Object(h.subreddit)(t)
 				}),
-				P = (C, e) => t => ({
-					...Object(M.defaults)(t),
+				I = (C, e) => t => ({
+					...Object(h.defaults)(t),
 					source: "new_community_setup",
 					action: "click",
 					noun: "dismiss",
-					progressModule: h(C, e),
+					progressModule: u(C, e),
 					actionInfo: {
 						pageType: "community"
 					},
-					subreddit: Object(M.subreddit)(t)
+					subreddit: Object(h.subreddit)(t)
 				}),
-				I = (C, e) => t => ({
-					...Object(M.defaults)(t),
+				Z = (C, e) => t => ({
+					...Object(h.defaults)(t),
 					source: "new_community_setup",
 					action: "click",
 					noun: "complete",
-					progressModule: h(C, e),
+					progressModule: u(C, e),
 					actionInfo: {
 						pageType: "community"
 					},
-					subreddit: Object(M.subreddit)(t)
+					subreddit: Object(h.subreddit)(t)
 				});
-			var Z = t("./src/reddit/hooks/useMutation.ts"),
-				Q = t("./src/reddit/hooks/useTracking.ts"),
+			var Q = t("./src/reddit/hooks/useTracking.ts"),
 				k = t("./src/reddit/icons/svgs/svgIcons.tsx"),
 				x = t("./src/reddit/models/NewCommunityProgress/index.ts"),
 				H = t("./src/reddit/selectors/activeModalId.ts"),
@@ -1543,7 +1576,7 @@
 				}, B) => {
 					var M, h;
 					const u = Object(n.d)(),
-						w = Object(Q.a)(),
+						D = Object(Q.a)(),
 						v = aC[a],
 						b = v ? Object(z.b)(v) : null !== (M = tC[a]) && void 0 !== M ? M : Object(z.b)("best"),
 						P = d ? R.h : R.g,
@@ -1552,7 +1585,7 @@
 					function Z(e) {
 						(function(C) {
 							return "CommunityProgressShareButton" === C.__typename
-						})(e) && (Object(S.a)(`https://reddit.com${f}`), u(Object(U.f)(Object(U.e)("Copied community URL to clipboard!", K.b.SuccessCommunityGreen)))), A && o(x.b.CTA_BUTTON_CLICK), w(D(E, C, e.buttonText))
+						})(e) && (Object(S.a)(`https://reddit.com${f}`), u(Object(U.f)(Object(U.e)("Copied community URL to clipboard!", K.b.SuccessCommunityGreen)))), A && o(x.b.CTA_BUTTON_CLICK), D(w(E, C, e.buttonText))
 					}
 					const k = (null == m ? void 0 : m.done) / (null == m ? void 0 : m.total) * 100 || 0,
 						H = lC(g, f);
@@ -1803,40 +1836,40 @@
 				subredditId: e,
 				progressModule: t
 			}) {
-				var A, L;
-				const o = t.id === x.c;
-				let d;
-				d = t.cards;
-				const f = Object(a.useRef)(null),
-					[E, M] = Object(a.useState)(!C),
-					h = Object(n.e)(O.X),
-					D = Object(n.e)(C => Object(N.W)(C, e)),
+				var A, o;
+				const d = t.id === x.c;
+				let f;
+				f = t.cards;
+				const E = Object(a.useRef)(null),
+					[g, h] = Object(a.useState)(!C),
+					u = Object(n.e)(O.X),
+					w = Object(n.e)(C => Object(N.W)(C, e)),
 					j = Object(Q.a)();
 				Object(a.useEffect)(() => {
-					j(u(t, E ? "expanded_module" : "collapses_module"))
-				}, [E]);
-				const [T] = Object(Z.a)(g), y = Object(n.d)();
-				const [F] = Object(Z.a)(m);
-				const [R, S] = Object(a.useState)(void 0), [U] = Object(Z.a)(p);
+					j(D(t, g ? "expanded_module" : "collapses_module"))
+				}, [g]);
+				const [T] = Object(i.a)(m), y = Object(n.d)();
+				const [F] = Object(i.a)(p);
+				const [R, S] = Object(a.useState)(void 0), [U] = Object(i.a)(B);
 				const G = Object(n.e)(H.a) === BC;
 				async function V() {
-					G && S(void 0), y(Object(i.i)(BC))
+					G && S(void 0), y(Object(s.i)(BC))
 				}
-				const [Y] = Object(Z.a)(B);
+				const [Y] = Object(i.a)(M);
 				const X = Object(a.useRef)(),
 					z = Object(a.useRef)(null),
-					K = d.findIndex(C => C.status === x.a.INITIAL || C.status === x.a.ACTIONED),
-					J = o ? 0 : K;
+					K = f.findIndex(C => C.status === x.a.INITIAL || C.status === x.a.ACTIONED),
+					J = d ? 0 : K;
 				if (Object(a.useEffect)(() => {
 						const C = (null == X ? void 0 : X.current) || z.current;
 						(null == C ? void 0 : C.parentNode) && (C.parentNode.scrollTop = (null == C ? void 0 : C.offsetTop) - C.parentNode.offsetTop - 20)
-					}, [X, t, E]), 0 === t.cards.length) return null;
-				const W = () => d.map((C, a) => {
-						if (o && a > 2) return;
+					}, [X, t, g]), 0 === t.cards.length) return null;
+				const W = () => f.map((C, a) => {
+						if (d && a > 2) return;
 						const n = {
 							key: C.id,
-							isInNCPControlGroup: o,
-							isNightMode: h,
+							isInNCPControlGroup: d,
+							isNightMode: u,
 							onClose: a => (async function(C, a) {
 								await T({
 									input: {
@@ -1844,37 +1877,37 @@
 										cardId: C,
 										action: a
 									}
-								}), j(P(t, C)), y(Object(s.b)(e))
+								}), j(I(t, C)), y(Object(L.b)(e))
 							})(C.id, a),
-							subredditUrl: null != D ? D : "",
+							subredditUrl: null != w ? w : "",
 							progressModule: t,
 							...C
 						};
-						return o ? l.a.createElement(cC, n) : l.a.createElement(cC, mC({}, n, {
+						return d ? l.a.createElement(cC, n) : l.a.createElement(cC, mC({}, n, {
 							ref: a === J ? X : void 0,
 							onActionCard: () => (async function(C) {
-								S(C), j(b(t, C)), V()
+								S(C), j(P(t, C)), V()
 							})(C.id)
 						}))
 					}),
-					q = 0 === (null === (A = t.progress) || void 0 === A ? void 0 : A.done) ? 0 : (null === (L = t.progress) || void 0 === L ? void 0 : L.done) ? t.progress.done / t.progress.total * 100 : void 0,
+					q = 0 === (null === (A = t.progress) || void 0 === A ? void 0 : A.done) ? 0 : (null === (o = t.progress) || void 0 === o ? void 0 : o.done) ? t.progress.done / t.progress.total * 100 : void 0,
 					_ = t.cards.find(C => C.status === x.a.INITIAL || C.status === x.a.ACTIONED);
 				return l.a.createElement(l.a.Fragment, null, l.a.createElement("details", {
-					ref: f,
-					open: E,
+					ref: E,
+					open: g,
 					className: Object(r.a)(c.a.ncpWidget, {
-						[c.a.og]: o
+						[c.a.og]: d
 					}),
 					onToggle: () => {
 						var C;
-						const e = !!(null === (C = f.current) || void 0 === C ? void 0 : C.open);
-						M(e), j(e ? w(t) : v(t))
+						const e = !!(null === (C = E.current) || void 0 === C ? void 0 : C.open);
+						h(e), j(e ? v(t) : b(t))
 					}
 				}, l.a.createElement("summary", {
 					className: Object(r.a)(c.a.ncpHeading, {
-						[c.a.v2]: !o
+						[c.a.v2]: !d
 					})
-				}, o ? l.a.createElement("span", {
+				}, d ? l.a.createElement("span", {
 					className: c.a.displayText
 				}, t.displayText) : (() => {
 					var C, e;
@@ -1889,19 +1922,19 @@
 						percentage: q,
 						ratioString: `${null===(C=t.progress)||void 0===C?void 0:C.done}/${null===(e=t.progress)||void 0===e?void 0:e.total}`
 					}))
-				})(), E ? l.a.createElement(k.c, {
+				})(), g ? l.a.createElement(k.c, {
 					className: Object(r.a)(c.a.chevron, {
-						[c.a.v2]: !o
+						[c.a.v2]: !d
 					})
 				}) : l.a.createElement(k.b, {
 					className: Object(r.a)(c.a.chevron, {
-						[c.a.v2]: !o
+						[c.a.v2]: !d
 					})
-				}), !E && l.a.createElement("div", {
+				}), !g && l.a.createElement("div", {
 					className: Object(r.a)(c.a.dot, {
-						[c.a.v2]: !o
+						[c.a.v2]: !d
 					})
-				})), o ? W() : l.a.createElement("div", {
+				})), d ? W() : l.a.createElement("div", {
 					className: c.a.cardContainer
 				}, W(), !_ && l.a.createElement(dC, {
 					isLastAvailable: t.isLastAvailable,
@@ -1912,7 +1945,7 @@
 								subredditId: e,
 								moduleId: C
 							}
-						}), y(Object(s.b)(e))
+						}), y(Object(L.b)(e))
 					},
 					ref: z
 				}))), G && l.a.createElement(sC, {
@@ -1923,7 +1956,7 @@
 								subredditId: e,
 								cardId: C
 							}
-						}), j(I(t, C)), y(Object(s.b)(e)), G && V()
+						}), j(Z(t, C)), y(Object(L.b)(e)), G && V()
 					}(R),
 					onDismissCard: () => R && async function(C) {
 						await F({
@@ -1931,7 +1964,7 @@
 								subredditId: e,
 								cardId: C
 							}
-						}), j(P(t, C)), y(Object(s.b)(e)), G && V()
+						}), j(I(t, C)), y(Object(L.b)(e)), G && V()
 					}(R),
 					withOverlay: !0
 				}))
@@ -2068,39 +2101,6 @@
 					gqlContext: C
 				} = Object(a.useContext)(l.a);
 				return C
-			}
-		},
-		"./src/reddit/hooks/useMutation.ts": function(C, e, t) {
-			"use strict";
-			t.d(e, "a", (function() {
-				return n
-			}));
-			var a = t("./node_modules/react/index.js"),
-				l = t("./src/reddit/hooks/useGqlContext.ts");
-
-			function n(C) {
-				const e = Object(l.a)(),
-					[t, n] = Object(a.useState)(!1),
-					[A, c] = Object(a.useState)(!1),
-					[r, i] = Object(a.useState)(null),
-					[s, L] = Object(a.useState)(null);
-				return [Object(a.useCallback)(async t => {
-					let a, l;
-					n(!0), c(!0);
-					try {
-						if ((l = (a = await C(e(), t)).body).error) throw new Error(l.error.message);
-						L(l.data)
-					} catch (r) {
-						i(r)
-					} finally {
-						n(!1)
-					}
-				}, [e, C]), {
-					data: s,
-					error: r,
-					pending: t,
-					called: A
-				}]
 			}
 		},
 		"./src/reddit/icons/svgs/Checkbox/index.m.less": function(C, e, t) {
@@ -2531,4 +2531,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NewCommunityProgress.ce9e204600319effbfa3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NewCommunityProgress.9e3b75cc8990ed076f1c.js.map

@@ -1,8 +1,8 @@
-// https://www.redditstatic.com/desktop2x/OverlayCreateChannel.36f5587ad8e16b9b1ddb.js
-// Retrieved at 10/19/2021, 5:20:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OverlayCreateChannel.bef71031e2f9df79f2c2.js
+// Retrieved at 10/26/2021, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OverlayCreateChannel"], {
-		"./src/chat/components/OverlayCreateChannel/index.m.less": function(e, t, s) {
+		"./src/chat/components/OverlayCreateChannel/index.m.less": function(e, t, n) {
 			e.exports = {
 				Content: "_1hC_Uia5BNA3T_u7HMpSZG",
 				content: "_1hC_Uia5BNA3T_u7HMpSZG",
@@ -12,6 +12,8 @@
 				scroller: "_3jTOQRN48SYTsqhBKHqC4Z",
 				ListItem: "_1xahoE-aw4Dlt5luSt2p4M",
 				listItem: "_1xahoE-aw4Dlt5luSt2p4M",
+				UserNotFound: "P_88R_H4Ww-L1MTF4iRkY",
+				userNotFound: "P_88R_H4Ww-L1MTF4iRkY",
 				ListItemHeader: "_3WOxEuf3YCyzuUH93Vlyc5",
 				listItemHeader: "_3WOxEuf3YCyzuUH93Vlyc5",
 				ChatListHeader: "f1Vn8P6AnRNELbDzUjx9e",
@@ -26,57 +28,72 @@
 				overlayContent: "_1ppnyRj_9LpVLO_D4hSmuD",
 				ChannelNameWrapper: "_3kiusu26cM8caGCqS2DjBs",
 				channelNameWrapper: "_3kiusu26cM8caGCqS2DjBs",
-				shown: "_2Mva-9o8IuN_QrvvZYRHyH"
+				shown: "_2Mva-9o8IuN_QrvvZYRHyH",
+				CopyInviteLink: "zBON5dtOZB94MwnSEa0f1",
+				copyInviteLink: "zBON5dtOZB94MwnSEa0f1",
+				LinkButton: "_2bL65Uh_dTxKAC0V5UemZT",
+				linkButton: "_2bL65Uh_dTxKAC0V5UemZT",
+				CopyInviteLinkContent: "_1WJFvb2J-BkKyg9BR3hNuM",
+				copyInviteLinkContent: "_1WJFvb2J-BkKyg9BR3hNuM",
+				CopyInviteLinkContentHeader: "_36Z3BkLCEma7aH8PCn9HqE",
+				copyInviteLinkContentHeader: "_36Z3BkLCEma7aH8PCn9HqE",
+				CopyInviteLinkContentBody: "zW47C_63NuY4bkUzwwmLj",
+				copyInviteLinkContentBody: "zW47C_63NuY4bkUzwwmLj",
+				SettingsButton: "_2HDk8OC1nlfD5GBh0lKbwh",
+				settingsButton: "_2HDk8OC1nlfD5GBh0lKbwh",
+				CopyInviteLinkPlaceholder: "_2LJZiLEkUqmR3pBIvFrosC",
+				copyInviteLinkPlaceholder: "_2LJZiLEkUqmR3pBIvFrosC"
 			}
 		},
-		"./src/chat/components/OverlayCreateChannel/index.tsx": function(e, t, s) {
+		"./src/chat/components/OverlayCreateChannel/index.tsx": function(e, t, n) {
 			"use strict";
-			s.r(t), s.d(t, "OverlayCreateChannel", (function() {
-				return he
+			n.r(t), n.d(t, "OverlayCreateChannel", (function() {
+				return le
 			}));
-			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
-				a = s("./node_modules/lodash/noop.js"),
-				r = s.n(a),
-				c = s("./node_modules/lodash/uniqBy.js"),
-				o = s.n(c),
-				i = s("./node_modules/react/index.js"),
-				l = s.n(i),
-				h = s("./node_modules/react-redux/es/index.js"),
-				m = s("./src/lib/classNames/index.ts"),
-				u = s("./src/chat/actions/channel.ts"),
-				d = s("./src/chat/actions/sendbird/index.ts"),
-				p = s("./src/chat/actions/tracking.ts"),
-				C = s("./src/chat/actions/user.ts"),
-				b = s("./src/chat/components/Scroller/index.tsx"),
-				f = s("./node_modules/lodash/last.js"),
-				x = s.n(f),
-				U = s("./src/lib/lessComponent.tsx"),
-				_ = s("./src/chat/constants/keys.ts"),
-				g = s("./src/chat/helpers/dom.ts"),
-				N = s("./src/chat/components/SearchBar/index.m.less"),
-				E = s.n(N);
-			const S = U.a.span("Bubble", E.a),
-				k = U.a.span("SearchBarLabel", E.a),
-				y = U.a.span("SearchBarField", E.a),
-				v = U.a.input("SearchBarInput", E.a),
-				B = U.a.wrapped(b.b, "SearchBarWrapper", E.a);
-			class L extends l.a.Component {
+			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
+				a = n("./node_modules/lodash/noop.js"),
+				r = n.n(a),
+				c = n("./node_modules/lodash/uniqBy.js"),
+				o = n.n(c),
+				i = n("./node_modules/react/index.js"),
+				l = n.n(i),
+				h = n("./node_modules/react-redux/es/index.js"),
+				m = n("./src/lib/classNames/index.ts"),
+				d = n("./src/chat/actions/channel.ts"),
+				u = n("./src/chat/actions/channel/dropdown.ts"),
+				p = n("./src/chat/actions/inviteLink/index.ts"),
+				C = n("./src/chat/actions/sendbird/index.ts"),
+				b = n("./src/chat/actions/tracking.ts"),
+				_ = n("./src/chat/actions/user.ts"),
+				N = n("./src/chat/components/Scroller/index.tsx"),
+				k = n("./node_modules/lodash/last.js"),
+				U = n.n(k),
+				x = n("./src/lib/lessComponent.tsx"),
+				f = n("./src/chat/constants/keys.ts"),
+				E = n("./src/chat/helpers/dom.ts"),
+				g = n("./src/chat/icons/svgs/Search/index.tsx"),
+				v = n("./src/chat/components/SearchBar/index.m.less"),
+				S = n.n(v);
+			const y = x.a.span("Bubble", S.a),
+				L = x.a.span("SearchBarField", S.a),
+				B = x.a.input("SearchBarInput", S.a);
+			class I extends l.a.Component {
 				constructor(e) {
 					super(e), this.bubbleRefs = {}, this.timeoutToken = null, this.onBubbleKey = e => t => {
 						switch (t.key) {
-							case _.f:
-							case _.e: {
+							case f.f:
+							case f.e: {
 								const t = this.searchBarInputRef.current;
 								return t && t.focus(), this.props.onUnselect(e.id)
 							}
-							case _.b: {
+							case f.b: {
 								const e = t.target;
 								if (e.previousElementSibling) {
 									e.previousElementSibling.focus()
 								}
 								break
 							}
-							case _.c: {
+							case f.c: {
 								const e = t.target;
 								if (e.nextElementSibling) {
 									e.nextElementSibling.focus()
@@ -86,7 +103,7 @@
 					}, this.onBubbleKey = this.onBubbleKey.bind(this), this.onFilterChange = this.onFilterChange.bind(this), this.stopEnter = this.stopEnter.bind(this), this.searchKeyHandler = this.searchKeyHandler.bind(this), this.searchBarInputRef = l.a.createRef()
 				}
 				stopEnter(e) {
-					e.key === _.g && e.preventDefault()
+					e.key === f.g && e.preventDefault()
 				}
 				onFilterChange(e) {
 					this.props.onFilterContacts(e.currentTarget.value)
@@ -95,20 +112,20 @@
 					const {
 						props: {
 							onFilterContacts: t,
-							onIdentifyContact: s,
-							onIdentifyContactTimeout: n
+							onIdentifyContact: n,
+							onIdentifyContactTimeout: s
 						}
 					} = this, a = e.currentTarget, r = () => a.value;
 					switch (this.timeoutToken && clearTimeout(this.timeoutToken), this.timeoutToken = setTimeout(() => {
-						r() && s(r())
-					}, n), e.key) {
-						case _.g:
-							return s(r());
-						case _.b:
-						case _.f:
-						case _.e:
+						r() && n(r())
+					}, s), e.key) {
+						case f.g:
+							return n(r());
+						case f.b:
+						case f.f:
+						case f.e:
 							if (0 === r().length) {
-								const e = x()(this.props.selectedContacts);
+								const e = U()(this.props.selectedContacts);
 								if (e && e.name) {
 									const t = this.bubbleRefs[e.name];
 									t && t.focus()
@@ -122,26 +139,31 @@
 						props: {
 							filter: e,
 							resetFilter: t,
-							selectedContacts: s,
-							onFilterReset: a
+							selectedContacts: n,
+							onFilterReset: a,
+							className: r
 						}
-					} = this, r = t ? "" : e;
-					return l.a.createElement(B, {
-						autoScrollBottom: !0
-					}, l.a.createElement(k, null, n.fbt._("To:", null, {
-						hk: "2eyFcf"
-					})), l.a.createElement(y, null, s && s.length > 0 && s.map((e, t) => l.a.createElement(S, {
+					} = this, c = t ? "" : e;
+					return l.a.createElement(N.b, {
+						autoScrollBottom: !0,
+						className: Object(m.a)(S.a.SearchBarWrapper, r)
+					}, l.a.createElement(g.a, {
+						className: S.a.SearchIcon
+					}), l.a.createElement(L, null, n && n.length > 0 && n.map((e, t) => l.a.createElement(y, {
 						key: `selected-contact-${t}`,
 						tabIndex: 0,
-						onKeyDown: Object(g.a)(this.onBubbleKey(e)),
+						onKeyDown: Object(E.a)(this.onBubbleKey(e)),
 						innerRef: t => {
 							t && (this.bubbleRefs[e.name] = t)
 						}
-					}, e.name)), l.a.createElement(v, {
+					}, e.name)), l.a.createElement(B, {
+						placeholder: n.length ? "" : s.fbt._("Search usernames", null, {
+							hk: "1akjTq"
+						}),
 						key: "search-bar",
 						type: "text",
 						autoFocus: !0,
-						value: r,
+						value: c,
 						onFocus: a,
 						onChange: this.onFilterChange,
 						onKeyDown: this.stopEnter,
@@ -150,148 +172,221 @@
 					})))
 				}
 			}
-			L.defaultProps = {
+			I.defaultProps = {
 				onIdentifyContactTimeout: 1e3
 			};
-			var O = s("./src/chat/controls/Checkbox/index.tsx"),
-				I = s("./src/chat/icons/Userpic/index.tsx"),
-				T = s("./src/chat/components/SelectableUser/index.m.less"),
-				R = s.n(T);
-			const A = U.a.wrapped(O.a, "Checkbox", R.a),
-				j = U.a.wrapped(I.a, "UserPic", R.a),
-				F = U.a.span("Name", R.a);
-			class w extends i.Component {
-				constructor() {
-					super(...arguments), this.CONTACT_FORM_NAME = "contactForm"
-				}
-				render() {
-					const {
-						contact: {
-							id: e,
-							name: t
-						},
-						formName: s,
-						isChecked: n,
-						onChange: a
-					} = this.props;
-					return l.a.createElement(A, {
-						type: "checkbox",
-						name: s,
-						value: t,
-						onChange: a,
-						checked: n(e),
-						id: e
-					}, l.a.createElement(j, {
-						userId: e
-					}), l.a.createElement(F, null, t))
-				}
-			}
-			var M = s("./src/chat/components/UnselectableUser/index.m.less"),
-				H = s.n(M);
-			const D = U.a.span("Wrapper", H.a),
-				P = U.a.span("Content", H.a),
-				W = U.a.wrapped(I.a, "UserPic", H.a),
-				G = U.a.span("Name", H.a),
-				q = U.a.span("Context", H.a);
-			class z extends i.Component {
-				render() {
-					const {
-						contact: {
-							id: e,
-							name: t
-						},
-						context: s
-					} = this.props;
-					return l.a.createElement(D, null, l.a.createElement(P, null, l.a.createElement(W, {
-						userId: e
-					}), l.a.createElement(G, null, t)), l.a.createElement(q, null, s))
-				}
-			}
-			var K = s("./src/chat/constants/channels.ts"),
-				V = s("./src/chat/controls/ChannelNameInput/index.tsx"),
-				Z = s("./src/chat/controls/Counter/index.tsx"),
-				Q = s("./src/chat/controls/Overlay/index.tsx"),
-				Y = s("./src/chat/controls/OverlayControlBar/index.tsx"),
-				X = s("./src/chat/controls/OverlayHeader/index.tsx"),
-				J = s("./src/chat/helpers/chatSelector.ts"),
-				$ = s("./src/chat/selectors/channels.ts"),
-				ee = s("./src/chat/selectors/contacts.ts"),
-				te = s("./src/chat/selectors/platform.ts"),
-				se = s("./src/chat/selectors/user.ts"),
-				ne = s("./src/chat/components/OverlayCreateChannel/index.m.less"),
-				ae = s.n(ne);
-			const re = "contactForm",
-				ce = ({
+			var O = n("./src/chat/components/UserMetaInfo/index.tsx"),
+				j = n("./src/chat/controls/Checkbox/index.tsx"),
+				T = n("./src/chat/icons/Userpic/index.tsx"),
+				w = n("./src/chat/components/SelectableUser/index.m.less"),
+				R = n.n(w);
+			var H = ({
+					formName: e,
+					contact: t,
+					contact: {
+						id: n,
+						name: s
+					},
+					onChange: a,
+					isChecked: r
+				}) => l.a.createElement(j.a, {
+					className: R.a.Checkbox,
+					type: "checkbox",
+					name: e,
+					value: s,
+					onChange: a,
+					checked: r(n),
+					id: n
+				}, l.a.createElement("div", {
+					className: R.a.UserInfoWrapper
+				}, l.a.createElement(T.a, {
+					className: R.a.UserPic,
+					userId: n,
+					width: "40px",
+					height: "40px"
+				}), l.a.createElement("div", {
+					className: R.a.UserMetaWrapper
+				}, l.a.createElement("div", {
+					className: R.a.Name
+				}, s), l.a.createElement(O.a, {
+					contact: t
+				})))),
+				F = n("./src/chat/components/UnselectableUser/index.m.less"),
+				M = n.n(F);
+			var W = ({
+					contact: e,
+					contact: {
+						id: t,
+						name: n
+					},
+					context: s
+				}) => l.a.createElement("span", {
+					className: M.a.Wrapper
+				}, l.a.createElement("span", {
+					className: M.a.Content
+				}, l.a.createElement(T.a, {
+					className: M.a.UserPic,
+					userId: t,
+					width: "40px",
+					height: "40px"
+				}), l.a.createElement("div", {
+					className: M.a.UserMetaWrapper
+				}, l.a.createElement("span", {
+					className: M.a.Name
+				}, n), l.a.createElement(O.a, {
+					contact: e
+				}))), l.a.createElement("span", {
+					className: M.a.Context
+				}, s)),
+				A = n("./src/chat/constants/channels.ts"),
+				D = n("./src/chat/controls/Button/index.tsx"),
+				P = n("./src/chat/controls/ChannelNameInput/index.tsx"),
+				q = n("./src/chat/controls/Counter/index.tsx"),
+				Z = n("./src/chat/controls/Overlay/index.tsx"),
+				z = n("./src/chat/controls/OverlayControlBar/index.tsx"),
+				G = n("./src/chat/controls/OverlayHeader/index.tsx"),
+				K = n("./src/chat/helpers/chatSelector.ts"),
+				V = n("./src/chat/icons/svgs/Link/index.tsx"),
+				J = n("./src/chat/selectors/channels.ts"),
+				Q = n("./src/chat/selectors/contacts.ts"),
+				Y = n("./src/chat/selectors/experiments.ts"),
+				X = n("./src/chat/selectors/inviteLink.ts"),
+				$ = n("./src/chat/selectors/platform.ts"),
+				ee = n("./src/chat/selectors/user.ts"),
+				te = n("./src/chat/components/OverlayCreateChannel/index.m.less"),
+				ne = n.n(te);
+			const se = "contactForm",
+				ae = ({
 					className: e,
 					children: t,
-					isShown: s
+					isShown: n
 				}) => l.a.createElement("div", {
-					className: Object(m.a)(ae.a.ChannelNameWrapper, e, {
-						[ae.a.shown]: s
+					className: Object(m.a)(ne.a.ChannelNameWrapper, e, {
+						[ne.a.shown]: n
 					})
 				}, t),
-				oe = e => e.toLocaleLowerCase(),
-				ie = Object(J.a)({
-					channelAction: e => Object(te.c)(e),
-					channel: e => Object($.m)(e),
-					contacts: ee.h,
-					currentUserName: se.b,
+				re = e => e.toLocaleLowerCase(),
+				ce = Object(K.a)({
+					channelAction: e => Object($.d)(e),
+					channel: e => Object(J.m)(e),
+					contacts: Q.h,
+					currentUserName: ee.b,
 					existingGroupUsers: e => {
-						const t = Object($.B)(e, "members");
+						const t = Object(J.B)(e, "members");
 						return t && t.map(e => e.id)
 					},
-					isCreatingChannel: $.L,
-					loadedContacts: ee.i,
-					knownContacts: ee.g,
-					memberCount: e => Object($.B)(e, "memberCount"),
-					selectedUsers: ee.j,
-					selectedUsersCount: ee.k
+					isCreatingChannel: J.L,
+					loadedContacts: Q.i,
+					knownContacts: Q.g,
+					memberCount: e => Object(J.B)(e, "memberCount"),
+					selectedUsers: Q.j,
+					selectedUsersCount: Q.k
 				}),
-				le = Object(h.b)(ie, e => ({
-					onCreateNewChannel: (t, s, n) => e(Object(u.A)(t, s, n)),
-					onInviteUsersToExistingChannel: t => e(Object(u.F)(t)),
-					onIdentifyContact: t => e(Object(d.j)({
+				oe = Object(h.b)(ce, e => ({
+					onCreateNewChannel: (t, n, s) => e(Object(d.A)(t, n, s)),
+					onInviteUsersToExistingChannel: t => e(Object(d.F)(t)),
+					onIdentifyContact: t => e(Object(C.j)({
 						username: t
 					})),
 					onCancelAndGoBack: () => {
-						e(Object(u.M)()), e(Object(p.j)())
+						e(Object(d.M)()), e(Object(b.j)())
 					},
-					onSelectUser: t => e(Object(C.m)(t)),
-					onUnselectUser: t => e(Object(C.t)(t)),
-					removeAllSelectedUsers: () => e(Object(C.s)()),
-					requestSuggestedContacts: () => e(Object(d.l)())
-				}));
-			class he extends l.a.Component {
+					onSelectUser: t => e(Object(_.m)(t)),
+					onUnselectUser: t => e(Object(_.t)(t)),
+					removeAllSelectedUsers: () => e(Object(_.s)()),
+					requestSuggestedContacts: () => e(Object(C.l)())
+				})),
+				ie = ({
+					channelId: e,
+					isHidden: t
+				}) => {
+					const n = Object(h.d)(),
+						a = Object(h.e)(Y.g),
+						r = Object(h.e)(Y.e),
+						c = Object(h.e)(ee.a),
+						o = e || c,
+						i = Object(h.e)(J.a),
+						m = Object(h.e)(e => Object(X.a)(e, o)),
+						d = Object(h.e)(e => Object(X.b)(e, o));
+					return a && e || r && !e ? l.a.createElement("span", {
+						className: ne.a.CopyInviteLink
+					}, l.a.createElement(D.b, {
+						className: ne.a.LinkButton
+					}, l.a.createElement(V.a, null)), l.a.createElement("div", {
+						className: ne.a.CopyInviteLinkContent
+					}, l.a.createElement("div", {
+						className: ne.a.CopyInviteLinkContentHeader
+					}, e ? s.fbt._("Invite with link", null, {
+						hk: "37SZLa"
+					}) : s.fbt._("Start a direct chat", null, {
+						hk: "3TR4iZ"
+					})), m && d && l.a.createElement("div", {
+						className: ne.a.CopyInviteLinkContentBody
+					}, `${s.fbt._("Limited to",null,{hk:"3uHU48"})} ${d} ${s.fbt._("invites",null,{hk:"iP9qt"})}. `, !e || i ? l.a.createElement("button", {
+						role: "button",
+						onClick: Object(E.b)(() => {
+							n(Object(u.b)(o, !e))
+						}),
+						className: ne.a.SettingsButton
+					}, s.fbt._("Edit link", null, {
+						hk: "2ryT90"
+					})) : null)), l.a.createElement(D.a, {
+						onClick: Object(E.b)(() => {
+							n(Object(p.e)(o, !e)), n(Object(b.o)(p.b.CHAT_SETTINGS))
+						}),
+						primary: !0,
+						disabled: t
+					}, s.fbt._("Copy Link", null, {
+						hk: "nnSxN"
+					}))) : null
+				};
+			class le extends l.a.Component {
 				constructor(e) {
-					super(e), this.isUserSelected = e => this.props.selectedUsers.includes(e), this.isCreateChannelURLAction = () => this.props.channelAction === K.a.CREATE, this.isInviteMembersURLAction = () => this.props.channelAction === K.a.INVITE_MEMBERS, this.isShareToNewChannelAction = () => this.props.channelAction === K.a.SHARE_NEW_CHANNEL, this.isExistingGroupUser = e => !(!(this.isInviteMembersURLAction() && this.props.existingGroupUsers && this.props.existingGroupUsers.includes(e)) || this.isUserSelected(e)), this.hasTooManyMembers = () => {
+					super(e), this.isUserSelected = e => this.props.selectedUsers.includes(e), this.isCreateChannelURLAction = () => this.props.channelAction === A.a.CREATE, this.isInviteMembersURLAction = () => this.props.channelAction === A.a.INVITE_MEMBERS, this.isShareToNewChannelAction = () => this.props.channelAction === A.a.SHARE_NEW_CHANNEL, this.isExistingGroupUser = e => !(!(this.isInviteMembersURLAction() && this.props.existingGroupUsers && this.props.existingGroupUsers.includes(e)) || this.isUserSelected(e)), this.hasTooManyMembers = () => {
 						const {
 							memberCount: e,
 							selectedUsersCount: t
 						} = this.props;
-						return t + (this.isInviteMembersURLAction() ? e : 0) > K.f
+						return t + (this.isInviteMembersURLAction() ? e : 0) > A.h
 					}, this.isSubmitDisabled = e => {
 						const {
 							isCreatingChannel: t,
-							selectedUsersCount: s
-						} = this.props, n = this.isCreateChannelURLAction(), a = this.isShareToNewChannelAction(), r = e < 0, c = s > 1, o = this.hasTooManyMembers();
-						return !s || t || (n || a) && c && (r || o) || !(n || a) && o
-					}, this.getInviteMembersText = () => n.fbt._("Add to group", null, {
-						hk: "4n0y9e"
-					}), this.primaryButtonText = () => this.isInviteMembersURLAction() ? this.getInviteMembersText() : n.fbt._("Start a chat", null, {
-						hk: "4BZNdM"
-					}), this.getBlockedContactText = e => e.isBlocked ? n.fbt._("blocked", null, {
-						hk: "34l2Jz"
-					}) : !1 === e.acceptChats ? n.fbt._("unable to message this account", null, {
-						hk: "SDEZ3"
-					}) : n.fbt._("already in group", null, {
-						hk: "2obrxR"
-					}), this.getOverlayTitle = () => this.isCreateChannelURLAction() || this.isShareToNewChannelAction() ? n.fbt._("Create Chat", null, {
-						hk: "1Qge6s"
-					}) : this.getInviteMembersText(), this.getOverlayMessage = () => {
+							selectedUsersCount: n
+						} = this.props, s = this.isCreateChannelURLAction(), a = this.isShareToNewChannelAction(), r = e < 0, c = n > 1, o = this.hasTooManyMembers();
+						return !n || t || (s || a) && c && (r || o) || !(s || a) && o
+					}, this.getInviteMembersText = () => s.fbt._("Invite Members", null, {
+						hk: "1ejIPa"
+					}), this.primaryButtonText = () => {
 						const {
 							selectedUsersCount: e
 						} = this.props;
-						return e === K.f ? n.fbt._("Maximum group size reached", null, {
+						return this.isInviteMembersURLAction() ? s.fbt._("Invite to Group", null, {
+							hk: "1obdqW"
+						}) : e > 1 ? s.fbt._("Start Group Chat", null, {
+							hk: "4rRvvK"
+						}) : s.fbt._("Start Chat", null, {
+							hk: "sHVDx"
+						})
+					}, this.getBlockedContactText = e => e.isBlocked ? s.fbt._("blocked", null, {
+						hk: "34l2Jz"
+					}) : !1 === e.acceptChats ? s.fbt._("unable to message this account", null, {
+						hk: "SDEZ3"
+					}) : s.fbt._("already in group", null, {
+						hk: "2obrxR"
+					}), this.getOverlayTitle = () => {
+						const {
+							selectedUsersCount: e
+						} = this.props;
+						return this.isCreateChannelURLAction() ? e > 1 ? s.fbt._("New Group", null, {
+							hk: "2UrrCc"
+						}) : s.fbt._("New Chat", null, {
+							hk: "2TYMUW"
+						}) : this.getInviteMembersText()
+					}, this.getOverlayMessage = () => {
+						const {
+							selectedUsersCount: e
+						} = this.props;
+						return e === A.h ? s.fbt._("Maximum group size reached", null, {
 							hk: "7hpRV"
 						}) : ""
 					}, this.getSelectedContacts = this.getSelectedContacts.bind(this), this.onContactsSelect = this.onContactsSelect.bind(this), this.onFilterContacts = this.onFilterContacts.bind(this), this.onFilterReset = this.onFilterReset.bind(this), this.onSubmit = this.onSubmit.bind(this), this.onCancel = this.onCancel.bind(this), this.handleChannelNameInput = this.handleChannelNameInput.bind(this), this.searchBarElement = l.a.createRef(), this.state = {
@@ -309,15 +404,15 @@
 				onContactsSelect(e) {
 					const t = e.target.id,
 						{
-							onSelectUser: s,
-							onUnselectUser: n,
+							onSelectUser: n,
+							onUnselectUser: s,
 							selectedUsers: a,
 							selectedUsersCount: r
 						} = this.props;
-					a.includes(t) ? n(t) : (r < K.f || r < 1) && (this.setState(e => ({
+					a.includes(t) ? s(t) : (r < A.h || r < 1) && (this.setState(e => ({
 						...e,
 						resetFilter: !0
-					})), s(t)), this.searchBarElement.current && this.searchBarElement.current.focus()
+					})), n(t)), this.searchBarElement.current && this.searchBarElement.current.focus()
 				}
 				onFilterContacts(e) {
 					this.setState({
@@ -339,13 +434,13 @@
 					const {
 						onCreateNewChannel: e,
 						onInviteUsersToExistingChannel: t,
-						messageValue: s
-					} = this.props, n = this.getSelectedContacts().map(e => e.id);
-					if (n && n.length) {
+						messageValue: n
+					} = this.props, s = this.getSelectedContacts().map(e => e.id);
+					if (s && s.length) {
 						const a = this.getGroupName();
-						if (this.isCreateChannelURLAction()) return e(n, a);
-						if (this.isShareToNewChannelAction()) return e(n, a, s);
-						t(n)
+						if (this.isCreateChannelURLAction()) return e(s, a);
+						if (this.isShareToNewChannelAction()) return e(s, a, n);
+						t(s)
 					}
 				}
 				onCancel() {
@@ -355,10 +450,10 @@
 					const {
 						loadedContacts: e,
 						selectedUsers: t
-					} = this.props, s = [];
+					} = this.props, n = [];
 					return t.map(t => {
-						for (const n in e) oe(e[n].id) === t && s.push(e[n])
-					}), s
+						for (const s in e) re(e[s].id) === t && n.push(e[s])
+					}), n
 				}
 				getFilteredContacts() {
 					const {
@@ -369,17 +464,17 @@
 							filter: t
 						}
 					} = this;
-					return t ? e.filter(e => oe(e.name).includes(oe(t)) && !e.isBlocked) : e
+					return t ? e.filter(e => re(e.name).includes(re(t)) && !e.isBlocked) : e
 				}
 				getLoadedContact() {
-					return this.props.loadedContacts.find(e => e && oe(e.name) === oe(this.state.filter))
+					return this.props.loadedContacts.find(e => e && re(e.name) === re(this.state.filter))
 				}
 				getIsValidUser(e) {
-					const t = this.props.knownContacts[oe(e)];
+					const t = this.props.knownContacts[re(e)];
 					return !t || !t.loaded || t.valid
 				}
 				availableCharacters(e) {
-					return K.e - e.length
+					return A.g - e.length
 				}
 				getGroupName() {
 					const e = this.state.groupName.trim();
@@ -387,124 +482,129 @@
 					let t = this.getSelectedContacts();
 					if (!t.length) return "";
 					let {
-						currentUserName: s
+						currentUserName: n
 					} = this.props;
-					for (; t.length && s.length + t[0].name.length <= K.e;) s = s + ", " + t[0].name, t = t.splice(1, t.length - 1);
-					return s
+					for (; t.length && n.length + t[0].name.length <= A.g;) n = n + ", " + t[0].name, t = t.splice(1, t.length - 1);
+					return n
 				}
 				render() {
 					const {
 						props: {
 							className: e,
 							onIdentifyContact: t,
-							selectedUsersCount: s
+							selectedUsersCount: n,
+							channel: a
 						},
 						state: {
-							filter: a,
-							resetFilter: c,
-							groupName: i
+							filter: c,
+							resetFilter: i,
+							groupName: h
 						},
-						isUserSelected: h,
-						isExistingGroupUser: m,
-						onFilterReset: u,
-						onFilterContacts: d,
-						onContactsSelect: p,
-						onSubmit: C,
-						onCancel: f
-					} = this, x = this.getSelectedContacts(), U = this.getFilteredContacts(), _ = this.getLoadedContact(), N = !!a && !_, E = !!_, S = !this.getIsValidUser(a), k = this.handleChannelNameInput, y = this.availableCharacters(i), v = this.isSubmitDisabled(y), B = this.primaryButtonText(), I = this.isCreateChannelURLAction(), T = this.isShareToNewChannelAction(), R = s >= K.f;
-					return l.a.createElement(Q.a, {
+						isUserSelected: d,
+						isExistingGroupUser: u,
+						onFilterReset: p,
+						onFilterContacts: C,
+						onContactsSelect: b,
+						onSubmit: _,
+						onCancel: k
+					} = this, U = this.getSelectedContacts(), x = this.getFilteredContacts(), f = this.getLoadedContact(), g = !!c && !f, v = !!f, S = !this.getIsValidUser(c), y = this.handleChannelNameInput, L = this.availableCharacters(h), B = this.isSubmitDisabled(L), O = this.primaryButtonText(), T = this.isCreateChannelURLAction(), w = this.isShareToNewChannelAction(), R = n >= A.h;
+					return l.a.createElement(Z.a, {
 						className: e,
-						onSubmit: Object(g.a)(C),
+						onSubmit: Object(E.a)(_),
 						innerContent: !0,
 						form: !0
 					}, l.a.createElement("div", {
-						className: ae.a.OverlayContent
-					}, l.a.createElement(X.a, {
+						className: ne.a.OverlayContent
+					}, l.a.createElement(G.a, {
 						message: this.getOverlayMessage(),
 						title: this.getOverlayTitle(),
 						warning: R
 					}), l.a.createElement("div", {
-						className: ae.a.Content
-					}, (I || T) && l.a.createElement(ce, {
-						isShown: s > 1
-					}, l.a.createElement(V.a, {
-						className: ae.a.ChannelNameInput,
-						handleChannelNameInput: k,
-						placeholder: n.fbt._("Group name", null, {
-							hk: "3YSrvu"
-						})
-					}, l.a.createElement(Z.a, {
-						count: y
-					}))), l.a.createElement(L, {
+						className: ne.a.Content
+					}, !w && l.a.createElement(ie, {
+						channelId: null == a ? void 0 : a.channelId,
+						isHidden: !!n
+					}), l.a.createElement(I, {
 						innerRef: this.searchBarElement,
-						filter: a,
-						resetFilter: c,
-						selectedContacts: x,
-						onFilterReset: u,
-						onFilterContacts: d,
+						filter: c,
+						resetFilter: i,
+						selectedContacts: U,
+						onFilterReset: p,
+						onFilterContacts: C,
 						onIdentifyContact: t,
 						onUnselect: this.props.onUnselectUser
-					}), l.a.createElement(b.b, {
-						className: ae.a.Scroller,
+					}), (T || w) && l.a.createElement(ae, {
+						isShown: n > 1
+					}, l.a.createElement(P.a, {
+						className: ne.a.ChannelNameInput,
+						handleChannelNameInput: y,
+						placeholder: s.fbt._("Name this group (optional)", null, {
+							hk: "29Zvnb"
+						})
+					}, l.a.createElement(q.a, {
+						count: L
+					}))), l.a.createElement(N.b, {
+						className: ne.a.Scroller,
 						loadMoreRows: r.a
-					}, o()(U, e => e.name).map(e => l.a.createElement("div", {
-						className: ae.a.ListItem,
+					}, o()(x, e => e.name).map(e => l.a.createElement("div", {
+						className: ne.a.ListItem,
 						key: e.name
-					}, m(e.id) || e.isBlocked || !1 === e.acceptChats ? l.a.createElement(z, {
+					}, u(e.id) || e.isBlocked || !1 === e.acceptChats ? l.a.createElement(W, {
 						contact: e,
 						context: this.getBlockedContactText(e)
-					}) : l.a.createElement(w, {
-						formName: re,
+					}) : l.a.createElement(H, {
+						formName: se,
 						contact: e,
-						onChange: p,
-						isChecked: h
-					}))), (N || E) && l.a.createElement("div", {
-						className: ae.a.ListItemHeader
+						onChange: b,
+						isChecked: d
+					}))), (g || v) && l.a.createElement("div", {
+						className: ne.a.ListItemHeader
 					}, l.a.createElement("h4", {
-						className: ae.a.ChatListHeader
-					}, n.fbt._("Click to add", null, {
+						className: ne.a.ChatListHeader
+					}, s.fbt._("Click to add", null, {
 						hk: "4khdH7"
-					}))), N && !E && l.a.createElement("div", {
-						className: ae.a.ListItem
-					}, l.a.createElement(O.a, {
-						className: ae.a.Checkbox,
+					}))), g && !v && l.a.createElement("div", {
+						className: Object(m.a)(ne.a.ListItem, ne.a.UserNotFound)
+					}, l.a.createElement(j.a, {
+						className: ne.a.Checkbox,
 						type: "checkbox",
 						disabled: !0,
-						name: re,
-						value: a,
-						onChange: p
+						name: se,
+						value: c,
+						onChange: b
 					}, l.a.createElement("span", {
-						className: ae.a.Name
-					}, a, S && l.a.createElement("span", {
-						className: ae.a.Error
-					}, n.fbt._("User doesn't exist", null, {
+						className: ne.a.Name
+					}, c, S && l.a.createElement("span", {
+						className: ne.a.Error
+					}, s.fbt._("User doesn't exist", null, {
 						hk: "2nKv7P"
-					}))))), E && _ && l.a.createElement("div", {
-						className: ae.a.ListItem
-					}, !I && !T && (m(_.id) || _.isBlocked) || !1 === _.acceptChats ? l.a.createElement(z, {
-						contact: _,
-						context: this.getBlockedContactText(_)
-					}) : l.a.createElement(w, {
-						formName: re,
-						contact: _,
-						onChange: p,
-						isChecked: h
-					})))), l.a.createElement(Y.a, {
-						primaryButtonText: B,
-						primaryButtonDisabled: v,
-						secondaryButtonAction: f
+					}))))), v && f && l.a.createElement("div", {
+						className: ne.a.ListItem
+					}, !T && !w && (u(f.id) || f.isBlocked) || !1 === f.acceptChats ? l.a.createElement(W, {
+						contact: f,
+						context: this.getBlockedContactText(f)
+					}) : l.a.createElement(H, {
+						formName: se,
+						contact: f,
+						onChange: b,
+						isChecked: d
+					})))), l.a.createElement(z.a, {
+						primaryButtonText: O,
+						primaryButtonDisabled: B,
+						secondaryButtonAction: k
 					})))
 				}
 			}
-			he.displayName = "OverlayCreateChannel";
-			t.default = le(he)
+			t.default = oe(le)
 		},
-		"./src/chat/components/SearchBar/index.m.less": function(e, t, s) {
+		"./src/chat/components/SearchBar/index.m.less": function(e, t, n) {
 			e.exports = {
 				SearchBarWrapper: "KhZg0bTs9OULHNVuM28-j",
 				searchBarWrapper: "KhZg0bTs9OULHNVuM28-j",
 				SearchBarLabel: "n8QUlQDkULMxz2adkFkZN",
 				searchBarLabel: "n8QUlQDkULMxz2adkFkZN",
+				SearchIcon: "_1fF5rR85aN7B4xWTLIhPjw",
+				searchIcon: "_1fF5rR85aN7B4xWTLIhPjw",
 				SearchBarField: "_3vilBtEofGPjLW8XnN__LH",
 				searchBarField: "_3vilBtEofGPjLW8XnN__LH",
 				SearchBarInput: "_2clRIy8wf_7H8xNNrUPaiU",
@@ -513,22 +613,28 @@
 				bubble: "_3Os5eNEJdv4w6tsQdtTT5d"
 			}
 		},
-		"./src/chat/components/SelectableUser/index.m.less": function(e, t, s) {
+		"./src/chat/components/SelectableUser/index.m.less": function(e, t, n) {
 			e.exports = {
 				Checkbox: "_245EMGvr6FxhYfqTf2m6Zk",
 				checkbox: "_245EMGvr6FxhYfqTf2m6Zk",
 				UserPic: "zW7z1umVHXoa1LGs0PhqY",
 				userPic: "zW7z1umVHXoa1LGs0PhqY",
 				Name: "_1HoUzT_zRlnm-zLSJPRh28",
-				name: "_1HoUzT_zRlnm-zLSJPRh28"
+				name: "_1HoUzT_zRlnm-zLSJPRh28",
+				UserInfoWrapper: "_9qboECu4INdyuSmkF-DNd",
+				userInfoWrapper: "_9qboECu4INdyuSmkF-DNd",
+				UserMetaWrapper: "_3DT169WjMBbQwP3HsZzHXU",
+				userMetaWrapper: "_3DT169WjMBbQwP3HsZzHXU"
 			}
 		},
-		"./src/chat/components/UnselectableUser/index.m.less": function(e, t, s) {
+		"./src/chat/components/UnselectableUser/index.m.less": function(e, t, n) {
 			e.exports = {
 				Wrapper: "oifWWeXtU7UUw2o2ujOPY",
 				wrapper: "oifWWeXtU7UUw2o2ujOPY",
 				Content: "Dfb74heOWSZF6_doPiIDe",
 				content: "Dfb74heOWSZF6_doPiIDe",
+				UserMetaWrapper: "_2TqNxQr37JywB7jjqZlOmU",
+				userMetaWrapper: "_2TqNxQr37JywB7jjqZlOmU",
 				UserPic: "_367xw6e_C8q7AIpViUzQ4",
 				userPic: "_367xw6e_C8q7AIpViUzQ4",
 				Name: "_2UYcL31wx648GQ4cbrbg8b",
@@ -539,4 +645,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayCreateChannel.36f5587ad8e16b9b1ddb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayCreateChannel.bef71031e2f9df79f2c2.js.map

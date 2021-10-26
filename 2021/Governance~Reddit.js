@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.1e2920422669ec9226b9.js
-// Retrieved at 10/25/2021, 4:40:12 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.f23e79e49e74f052c1d4.js
+// Retrieved at 10/26/2021, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -781,63 +781,50 @@
 		"./src/reddit/actions/chat/userSettings.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
-				return E
+				return b
 			})), r.d(t, "b", (function() {
-				return O
+				return y
 			})), r.d(t, "c", (function() {
-				return S
+				return _
 			}));
 			r("./node_modules/core-js/modules/web.dom.iterable.js");
 			var s = r("./node_modules/fbt/lib/FbtPublic.js"),
 				n = r("./src/lib/makeActionCreator/index.ts"),
 				a = r("./src/reddit/actions/toaster.ts"),
-				c = r("./src/config.ts"),
-				o = r("./src/lib/constants/index.ts"),
-				d = r("./src/lib/makeApiRequest/index.ts"),
-				i = r("./src/lib/omitHeaders/index.ts"),
-				u = r("./src/reddit/constants/headers.ts");
-			var l = r("./src/reddit/selectors/telemetry.ts");
-			var p = r("./src/reddit/models/Toast/index.ts"),
-				b = r("./src/telemetry/index.ts"),
-				f = r("./src/reddit/actions/chat/constants.ts");
-			const y = Object(n.a)("USER_SETTINGS__FETCH_PENDING"),
-				m = Object(n.a)("USER_SETTINGS__FETCH_FAILURE"),
-				E = "USER_SETTINGS__UPDATE_SUCCESS",
-				_ = Object(n.a)(E),
-				O = () => async (e, t, {
+				c = r("./src/reddit/endpoints/chat/userSettings.ts"),
+				o = r("./src/reddit/selectors/telemetry.ts");
+			var d = r("./src/reddit/models/Toast/index.ts"),
+				i = r("./src/telemetry/index.ts"),
+				u = r("./src/reddit/actions/chat/constants.ts");
+			const l = Object(n.a)("USER_SETTINGS__FETCH_PENDING"),
+				p = Object(n.a)("USER_SETTINGS__FETCH_FAILURE"),
+				b = "USER_SETTINGS__UPDATE_SUCCESS",
+				f = Object(n.a)(b),
+				y = () => async (e, t, {
 					apiContext: r
 				}) => {
-					e(y());
-					const s = await (e => Object(d.a)(Object(i.a)(e, [u.a]), {
-						endpoint: `${c.a.sendbirdServiceUrl}/api/v1/chat/me/settings`,
-						method: o.ib.GET
-					}))(r());
+					e(l());
+					const s = await Object(c.b)(r());
 					if (s.ok) {
 						const t = {
 							...s.body
 						};
-						e(_({
-							invitePolicy: f.a[t.invite_policy]
+						e(f({
+							invitePolicy: u.a[t.invite_policy]
 						}))
-					} else e(m(s.error))
-				}, h = Object(n.a)("USER_SETTINGS__SAVE_PENDING"), I = Object(n.a)("USER_SETTINGS__SAVE_FAILURE"), S = e => async (t, r, {
+					} else e(p(s.error))
+				}, m = Object(n.a)("USER_SETTINGS__SAVE_PENDING"), E = Object(n.a)("USER_SETTINGS__SAVE_FAILURE"), _ = e => async (t, r, {
 					apiContext: n
 				}) => {
-					const y = r(),
+					const l = r(),
 						{
-							invitePolicy: m
+							invitePolicy: p
 						} = e,
-						E = Object.keys(f.a).find(e => f.a[e] === m);
-					if (E) {
-						t(h());
-						const e = await (async (e, t) => Object(d.a)(Object(i.a)(t, [u.a]), {
-							endpoint: `${c.a.sendbirdServiceUrl}/api/v1/chat/me/settings`,
-							method: o.ib.PUT,
-							data: JSON.stringify({
-								invite_policy: e
-							})
-						}))(E, n());
-						if (Object(b.a)((e => t => ({
+						b = Object.keys(u.a).find(e => u.a[e] === p);
+					if (b) {
+						t(m());
+						const e = await Object(c.d)(b, n());
+						if (Object(i.a)((e => t => ({
 								source: "settings_privacy",
 								action: "save",
 								noun: "receive_chat_invites",
@@ -845,18 +832,18 @@
 									value: e,
 									oldValue: e
 								},
-								...Object(l.defaults)(t)
-							}))(E)(y)), e.ok) {
-							const e = f.a[E];
-							t(_({
+								...Object(o.defaults)(t)
+							}))(b)(l)), e.ok) {
+							const e = u.a[b];
+							t(f({
 								invitePolicy: e
 							})), t(Object(a.f)({
-								kind: p.b.SuccessCommunity,
+								kind: d.b.SuccessCommunity,
 								text: s.fbt._("Changes saved", null, {
 									hk: "4eTtdy"
 								})
 							}))
-						} else t(I(e.error))
+						} else t(E(e.error))
 					}
 				}
 		},
@@ -1616,7 +1603,7 @@
 					s || c || !Object(d.e)(a) && !Object(d.d)(a) || e(Object(n.f)())
 				}, f = e => {
 					Object(c.d)(e, {
-						experimentName: a.jb
+						experimentName: a.kb
 					})
 				}
 		},
@@ -4017,7 +4004,7 @@
 			const v = e => S.d.reCaptchaEnterprise(e) && !Object(D.d)(e),
 				j = e => !!Object(T.c)(e, {
 					experimentEligibilitySelector: Object(g.d)(Object(g.b)(...a.d)),
-					experimentName: b.Ud
+					experimentName: b.Vd
 				}),
 				w = Object(s.b)("LOAD_RECAPTCHA_ENTERPRISE"),
 				A = Object(s.b)("EXECUTE_RECAPTCHA_ENTERPRISE"),
@@ -5632,7 +5619,7 @@
 						viewCountTotals: r,
 						shareCountTotals: n
 					} = t;
-					return (null == r ? void 0 : r.status) === s.a.Unavailable && (null == n ? void 0 : n.status) === s.a.Unavailable ? a.NotAvailableYet : !(null == r ? void 0 : r.totalCount) || r.totalCount < 10 ? a.NotAvailableYet : a.Available
+					return (null == r ? void 0 : r.status) === s.b.Unavailable && (null == n ? void 0 : n.status) === s.b.Unavailable ? a.NotAvailableYet : !(null == r ? void 0 : r.totalCount) || r.totalCount < 10 ? a.NotAvailableYet : a.Available
 				}
 		},
 		"./src/reddit/components/HeaderSubredditSelector/ListItem/index.m.less": function(e, t, r) {
@@ -5908,7 +5895,7 @@
 						subreddit: r
 					} = e, {
 						isSponsored: s
-					} = t, n = Object(G.a)(), c = Object(B.a)(p.Lc) === p.Pc.Enabled;
+					} = t, n = Object(G.a)(), c = Object(B.a)(p.Mc) === p.Qc.Enabled;
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return a.a.createElement(K, {
 						nowrap: e.nowrap
 					}, a.a.createElement(X, e));
@@ -6930,6 +6917,45 @@
 					raw_json: 1
 				}
 			})
+		},
+		"./src/reddit/endpoints/chat/userSettings.ts": function(e, t, r) {
+			"use strict";
+			r.d(t, "c", (function() {
+				return l
+			})), r.d(t, "b", (function() {
+				return p
+			})), r.d(t, "d", (function() {
+				return b
+			})), r.d(t, "a", (function() {
+				return f
+			}));
+			var s = r("./src/config.ts"),
+				n = r("./src/lib/constants/index.ts"),
+				a = r("./src/lib/makeApiRequest/index.ts"),
+				c = r("./src/lib/omitHeaders/index.ts"),
+				o = r("./src/lib/makeGqlRequest/index.ts"),
+				d = r("./src/reddit/constants/headers.ts"),
+				i = r("./src/redditGQL/operations/CreateChatChannelInviteLink.json"),
+				u = r("./src/redditGQL/types.ts");
+			const l = e => Boolean(e && e.data && (null == e ? void 0 : e.errors)),
+				p = e => Object(a.a)(Object(c.a)(e, [d.a]), {
+					endpoint: `${s.a.sendbirdServiceUrl}/api/v1/chat/me/settings`,
+					method: n.ib.GET
+				}),
+				b = async (e, t) => Object(a.a)(Object(c.a)(t, [d.a]), {
+					endpoint: `${s.a.sendbirdServiceUrl}/api/v1/chat/me/settings`,
+					method: n.ib.PUT,
+					data: JSON.stringify({
+						invite_policy: e
+					})
+				}), f = e => Object(o.a)(e, {
+					...i,
+					variables: {
+						input: {
+							customType: u.a.Direct
+						}
+					}
+				})
 		},
 		"./src/reddit/endpoints/crowdControl/index.ts": function(e, t, r) {
 			"use strict";
@@ -26147,8 +26173,8 @@
 					}) || !!Object(a.l)(e, {
 						postId: t
 					}) || Object(c.H)(e))(e, t),
-					experimentName: s.M
-				}) === s.Bc
+					experimentName: s.N
+				}) === s.Cc
 			}
 		},
 		"./src/reddit/selectors/experiments/googleOneTap.ts": function(e, t, r) {
@@ -26174,14 +26200,14 @@
 			const d = Object(s.a)(c.c, e => !e),
 				i = Object(s.a)(e => Object(a.c)(e, {
 					experimentEligibilitySelector: e => d(e),
-					experimentName: n.jb,
+					experimentName: n.kb,
 					expEventOverride: !1
 				}), e => e),
-				u = e => e === n.U.Onetap,
-				l = e => e === n.U.OnetapAuto,
+				u = e => e === n.V.Onetap,
+				l = e => e === n.V.OnetapAuto,
 				p = e => e.user.googleOneTapEnabled,
 				b = Object(s.a)(o.K, i, (e, t) => !e && !!t),
-				f = Object(s.a)(o.K, i, (e, t) => !e && !!t && !Object(n.Ne)(t))
+				f = Object(s.a)(o.K, i, (e, t) => !e && !!t && !Object(n.Oe)(t))
 		},
 		"./src/reddit/selectors/scheduledPosts/index.ts": function(e, t, r) {
 			"use strict";
@@ -26396,4 +26422,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.1e2920422669ec9226b9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.f23e79e49e74f052c1d4.js.map

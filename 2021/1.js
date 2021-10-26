@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/1.8deac9ef4d24a33d01c8.js
-// Retrieved at 10/5/2021, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/1.dbb03ac01acd6ae4ac68.js
+// Retrieved at 10/26/2021, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	[1, "FrontpageSidebar"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -30,6 +30,39 @@
 		"./node_modules/lodash/range.js": function(e, t, n) {
 			var a = n("./node_modules/lodash/_createRange.js")();
 			e.exports = a
+		},
+		"./src/lib/hooks/useMutation.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "a", (function() {
+				return r
+			}));
+			var a = n("./node_modules/react/index.js"),
+				s = n("./src/reddit/hooks/useGqlContext.ts");
+
+			function r(e) {
+				const t = Object(s.a)(),
+					[n, r] = Object(a.useState)(!1),
+					[o, c] = Object(a.useState)(!1),
+					[i, l] = Object(a.useState)(null),
+					[d, u] = Object(a.useState)(null);
+				return [Object(a.useCallback)(async n => {
+					let a, s;
+					r(!0), c(!0);
+					try {
+						if ((s = (a = await e(t(), n)).body).error) throw new Error(s.error.message);
+						u(s.data)
+					} catch (i) {
+						l(i)
+					} finally {
+						r(!1)
+					}
+				}, [t, e]), {
+					data: d,
+					error: i,
+					pending: n,
+					called: o
+				}]
+			}
 		},
 		"./src/reddit/actions/subreddit/constants.ts": function(e, t, n) {
 			"use strict";
@@ -190,22 +223,23 @@
 				d = n("./node_modules/react-redux/es/index.js"),
 				u = n("./src/reddit/components/ContentSurvey/index.m.less"),
 				m = n.n(u),
-				h = n("./src/lib/sentry/index.ts"),
-				v = n("./src/reddit/actions/subreddit/constants.ts"),
-				p = n("./src/reddit/actions/toaster.ts"),
-				g = n("./node_modules/fbt/lib/FbtPublic.js"),
-				f = n("./node_modules/lodash/range.js"),
-				E = n.n(f),
-				x = n("./src/reddit/components/ModeratorSurvey/index.m.less"),
-				_ = n.n(x),
-				y = n("./src/lib/classNames/index.ts");
-			var w = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
-				C = n("./src/reddit/controls/Button/index.tsx"),
-				b = n("./src/reddit/controls/TextButton/index.tsx"),
-				S = n("./src/reddit/icons/svgs/Snoo/index.tsx"),
-				N = n("./src/reddit/icons/svgs/svgIcons.tsx");
+				h = n("./src/lib/hooks/useMutation.ts"),
+				v = n("./src/lib/sentry/index.ts"),
+				p = n("./src/reddit/actions/subreddit/constants.ts"),
+				g = n("./src/reddit/actions/toaster.ts"),
+				f = n("./node_modules/fbt/lib/FbtPublic.js"),
+				E = n("./node_modules/lodash/range.js"),
+				x = n.n(E),
+				_ = n("./src/reddit/components/ModeratorSurvey/index.m.less"),
+				y = n.n(_),
+				w = n("./src/lib/classNames/index.ts");
+			var C = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
+				b = n("./src/reddit/controls/Button/index.tsx"),
+				S = n("./src/reddit/controls/TextButton/index.tsx"),
+				N = n("./src/reddit/icons/svgs/Snoo/index.tsx"),
+				D = n("./src/reddit/icons/svgs/svgIcons.tsx");
 
-			function D(e) {
+			function k(e) {
 				const {
 					children: t,
 					activeSlide: n,
@@ -218,71 +252,70 @@
 					onClose: u = (() => {})
 				} = e, m = function e(t) {
 					return i.Children.toArray(t).reduce((t, n) => n ? n.type === l.a.Fragment ? [...t, ...e(n.props.children)] : [...t, n] : t, [])
-				}(t), h = m.length, v = h > 1 && n > 0, p = null != a ? a : n + 1, f = null != s ? s : h;
+				}(t), h = m.length, v = h > 1 && n > 0, p = null != a ? a : n + 1, g = null != s ? s : h;
 				return l.a.createElement("div", {
-					className: _.a.container
+					className: y.a.container
 				}, l.a.createElement("div", {
-					className: _.a.header
-				}, v ? l.a.createElement(b.a, {
-					className: _.a.headerButton,
+					className: y.a.header
+				}, v ? l.a.createElement(S.a, {
+					className: y.a.headerButton,
 					onClick: d
-				}, l.a.createElement(N.d, {
-					className: _.a.backIcon
-				}), l.a.createElement("div", null, g.fbt._("Back", null, {
+				}, l.a.createElement(D.d, {
+					className: y.a.backIcon
+				}), l.a.createElement("div", null, f.fbt._("Back", null, {
 					hk: "39TCGR"
-				}))) : l.a.createElement(b.a, {
-					className: _.a.headerButton,
+				}))) : l.a.createElement(S.a, {
+					className: y.a.headerButton,
 					onClick: u
-				}, l.a.createElement(w.b, null), l.a.createElement("div", null, g.fbt._("Close", null, {
+				}, l.a.createElement(C.b, null), l.a.createElement("div", null, f.fbt._("Close", null, {
 					hk: "4gbyAA"
-				}))), l.a.createElement(S.a, {
-					className: _.a.snoo
+				}))), l.a.createElement(N.a, {
+					className: y.a.snoo
 				})), l.a.createElement("div", {
-					className: _.a.slides,
+					className: y.a.slides,
 					style: {
 						transform: `translateX(${-600*n}px)`
 					}
 				}, m.map((e, t) => l.a.createElement("div", {
 					key: t,
-					className: _.a.slide,
+					className: y.a.slide,
 					"aria-hidden": n !== t,
 					"aria-current": n === t
 				}, e))), l.a.createElement("div", {
-					className: _.a.footer
+					className: y.a.footer
 				}, l.a.createElement("div", {
-					className: _.a.progressBar
-				}, f > 1 && E()(f).map((e, t) => l.a.createElement("div", {
+					className: y.a.progressBar
+				}, g > 1 && x()(g).map((e, t) => l.a.createElement("div", {
 					key: t,
-					className: Object(y.a)(_.a.progressSegment, {
-						[_.a.active]: t < p
+					className: Object(w.a)(y.a.progressSegment, {
+						[y.a.active]: t < p
 					})
 				}))), l.a.createElement("div", {
-					className: _.a.progress
-				}, f > 1 ? g.fbt._("{current} of {total}", [g.fbt._param("current", p), g.fbt._param("total", f)], {
+					className: y.a.progress
+				}, g > 1 ? f.fbt._("{current} of {total}", [f.fbt._param("current", p), f.fbt._param("total", g)], {
 					hk: "pZU46"
-				}) : ""), l.a.createElement(C.s, {
+				}) : ""), l.a.createElement(b.s, {
 					redditStyle: !0,
-					className: _.a.footerButton,
+					className: y.a.footerButton,
 					onClick: c,
 					disabled: r
-				}, null != o ? o : n === h - 1 ? g.fbt._("Submit", null, {
+				}, null != o ? o : n === h - 1 ? f.fbt._("Submit", null, {
 					hk: "4aU3dh"
-				}) : g.fbt._("Next", null, {
+				}) : f.fbt._("Next", null, {
 					hk: "2mEXAi"
 				}))))
 			}
-			var k = n("./src/redditGQL/operations/SubmitContentRatingSurvey.json"),
-				I = n("./src/lib/makeGqlRequest/index.ts");
-			var O, T = (e, t) => Object(I.a)(e, {
-					...k,
+			var I = n("./src/redditGQL/operations/SubmitContentRatingSurvey.json"),
+				O = n("./src/lib/makeGqlRequest/index.ts");
+			var T, j = (e, t) => Object(O.a)(e, {
+					...I,
 					variables: t
 				}),
-				j = n("./src/reddit/helpers/trackers/contentTag.ts"),
-				L = n("./src/reddit/hooks/useMutation.ts"),
+				L = n("./src/reddit/helpers/trackers/contentTag.ts"),
 				A = n("./src/reddit/hooks/useTracking.ts");
 			! function(e) {
 				e.Accepted = "ACCEPTED", e.Pending = "PENDING"
-			}(O || (O = {}));
+			}(T || (T = {}));
 			var M = n("./src/reddit/models/Toast/index.ts"),
 				R = n("./node_modules/lodash/mapValues.js"),
 				B = n.n(R),
@@ -340,55 +373,55 @@
 					subredditId: s,
 					survey: r,
 					onClose: o = (() => {})
-				} = e, [u, g] = Object(i.useState)({}), f = Object(d.d)(), E = H(null == r ? void 0 : r.questions, u), [{
-					surveyState: x,
-					activeSlide: _
-				}, y] = Object(i.useReducer)(({
+				} = e, [u, f] = Object(i.useState)({}), E = Object(d.d)(), x = H(null == r ? void 0 : r.questions, u), [{
+					surveyState: _,
+					activeSlide: y
+				}, w] = Object(i.useReducer)(({
 					activeSlide: e
 				}, t) => {
-					const n = "forward" === t ? Math.min(e + 1, E.length + 1) : Math.max(e - 1, 0);
+					const n = "forward" === t ? Math.min(e + 1, x.length + 1) : Math.max(e - 1, 0);
 					return {
-						surveyState: 0 === n ? q.Intro : n === E.length + 1 ? q.Tag : q.Survey,
+						surveyState: 0 === n ? q.Intro : n === x.length + 1 ? q.Tag : q.Survey,
 						activeSlide: n
 					}
 				}, {
 					surveyState: q.Intro,
 					activeSlide: 0
-				}), w = E[_ - 1], C = Object(A.a)();
+				}), C = x[y - 1], b = Object(A.a)();
 				Object(i.useEffect)(() => {
-					switch (_) {
+					switch (y) {
 						case 0:
-							return C(Object(j.c)());
+							return b(Object(L.c)());
 						case 1:
-							return C(Object(j.e)());
-						case E.length + 1:
-							return C(Object(j.n)())
+							return b(Object(L.e)());
+						case x.length + 1:
+							return b(Object(L.n)())
 					}
-					if (w) return C(Object(j.j)(w.pageType))
-				}, [_, C]);
-				const [b, {
-					pending: S,
-					error: N
-				}] = Object(L.a)(T);
+					if (C) return b(Object(L.j)(C.pageType))
+				}, [y, b]);
+				const [S, {
+					pending: N,
+					error: D
+				}] = Object(h.a)(j);
 				Object(i.useEffect)(() => {
-					N && (h.c.captureException(N), f(Object(p.f)(Object(p.e)(G._("An error occurred", null, {
+					D && (v.c.captureException(D), E(Object(g.f)(Object(g.e)(G._("An error occurred", null, {
 						hk: "1VDETi"
 					}), M.b.Error))))
-				}, [N, f]);
-				const [k, I] = Object(i.useState)(null);
+				}, [D, E]);
+				const [I, O] = Object(i.useState)(null);
 				if (!r) return null;
 				if (!r.isEligible) return null;
 
 				function R(e, t) {
-					g(Object(a.setIn)(u, [e], t)), C(Object(j.a)(w.pageType))
+					f(Object(a.setIn)(u, [e], t)), b(Object(L.a)(C.pageType))
 				}
-				const B = null !== (t = u[null == w ? void 0 : w.id]) && void 0 !== t ? t : {},
-					U = (null !== (n = null == w ? void 0 : w.answerOptions) && void 0 !== n ? n : []).map(e => e.id).some(e => B[e]),
-					F = x === q.Survey && _ > 1;
-				return l.a.createElement(D, {
-					activeSlide: _,
+				const B = null !== (t = u[null == C ? void 0 : C.id]) && void 0 !== t ? t : {},
+					U = (null !== (n = null == C ? void 0 : C.answerOptions) && void 0 !== n ? n : []).map(e => e.id).some(e => B[e]),
+					F = _ === q.Survey && y > 1;
+				return l.a.createElement(k, {
+					activeSlide: y,
 					advance: async function() {
-						if (x === q.Survey && _ === E.length && I(function(e, t) {
+						if (_ === q.Survey && y === x.length && O(function(e, t) {
 								var n;
 								let a = null,
 									s = [];
@@ -406,13 +439,13 @@
 									version: e.version,
 									createdAt: Date.now(),
 									isFromMod: !0,
-									status: O.Pending,
+									status: T.Pending,
 									rating: a,
 									ratingReasons: s
 								}
-							}(r, u)), x === q.Tag) {
-							if (S) return;
-							return C(Object(j.m)()), await b({
+							}(r, u)), _ === q.Tag) {
+							if (N) return;
+							return b(Object(L.m)()), await S({
 								input: {
 									subredditId: s,
 									version: r.version,
@@ -421,26 +454,26 @@
 										answerIds: W(e, u).map(e => e.id)
 									}))
 								}
-							}), f(Object(p.f)(Object(p.e)(G._("Thanks for setting up your Content Tag!", null, {
+							}), E(Object(g.f)(Object(g.e)(G._("Thanks for setting up your Content Tag!", null, {
 								hk: "3HW5GV"
-							}), M.b.SuccessCommunityGreen))), f({
-								type: v.z,
+							}), M.b.SuccessCommunityGreen))), E({
+								type: p.z,
 								payload: {
 									id: s,
-									response: k
+									response: I
 								}
-							}), void(N || o())
+							}), void(D || o())
 						}
-						y("forward"), w ? C(Object(j.i)(w.pageType, W(w, u).map(e => e.id))) : 0 === _ && C(Object(j.l)())
+						w("forward"), C ? b(Object(L.i)(C.pageType, W(C, u).map(e => e.id))) : 0 === y && b(Object(L.l)())
 					},
 					goBack: function() {
-						y("back"), w && C(Object(j.b)(w.pageType))
+						w("back"), C && b(Object(L.b)(C.pageType))
 					},
 					onClose: o,
-					progressCurrent: F ? _ - 1 : 0,
-					progressTotal: F ? E.length - 1 : 0,
-					disableNext: S || x === q.Survey && !U,
-					buttonText: z(x)
+					progressCurrent: F ? y - 1 : 0,
+					progressTotal: F ? x.length - 1 : 0,
+					disableNext: N || _ === q.Survey && !U,
+					buttonText: z(_)
 				}, l.a.createElement("div", {
 					className: m.a.result
 				}, l.a.createElement("p", {
@@ -489,7 +522,7 @@
 					hk: "4tG83R"
 				})))], {
 					hk: "2x33OC"
-				})), E.map(e => {
+				})), x.map(e => {
 					var t;
 					return l.a.createElement(Z, {
 						key: e.id,
@@ -497,7 +530,7 @@
 						selectedAnswers: null !== (t = u[e.id]) && void 0 !== t ? t : {},
 						onChange: R
 					})
-				}), k && l.a.createElement("div", {
+				}), I && l.a.createElement("div", {
 					key: "result",
 					className: m.a.result
 				}, l.a.createElement("p", {
@@ -505,19 +538,19 @@
 				}, G._("Your Content Tag:", null, {
 					hk: "2OUAzB"
 				})), l.a.createElement(P.a, {
-					ratingResponse: k,
+					ratingResponse: I,
 					subredditId: s
 				}, l.a.createElement("p", {
 					className: m.a.ratingAudience
-				}, k.rating.name), l.a.createElement("p", {
+				}, I.rating.name), l.a.createElement("p", {
 					className: m.a.ratingDescription
-				}, k.rating.description, " ", l.a.createElement("br", null), G._("(Note: Only moderators can see this tag.)", null, {
+				}, I.rating.description, " ", l.a.createElement("br", null), G._("(Note: Only moderators can see this tag.)", null, {
 					hk: "2PN50Z"
 				}))), l.a.createElement("p", {
 					className: m.a.reasonsHeader
 				}, G._("Posts and discussions include:", null, {
 					hk: "12MdUE"
-				})), l.a.createElement("ul", null, k.ratingReasons.map(e => l.a.createElement("li", {
+				})), l.a.createElement("ul", null, I.ratingReasons.map(e => l.a.createElement("li", {
 					key: e.id,
 					className: m.a.reason
 				}, e.contentRatingReasonText)))))
@@ -667,39 +700,6 @@
 					gqlContext: e
 				} = Object(a.useContext)(s.a);
 				return e
-			}
-		},
-		"./src/reddit/hooks/useMutation.ts": function(e, t, n) {
-			"use strict";
-			n.d(t, "a", (function() {
-				return r
-			}));
-			var a = n("./node_modules/react/index.js"),
-				s = n("./src/reddit/hooks/useGqlContext.ts");
-
-			function r(e) {
-				const t = Object(s.a)(),
-					[n, r] = Object(a.useState)(!1),
-					[o, c] = Object(a.useState)(!1),
-					[i, l] = Object(a.useState)(null),
-					[d, u] = Object(a.useState)(null);
-				return [Object(a.useCallback)(async n => {
-					let a, s;
-					r(!0), c(!0);
-					try {
-						if ((s = (a = await e(t(), n)).body).error) throw new Error(s.error.message);
-						u(s.data)
-					} catch (i) {
-						l(i)
-					} finally {
-						r(!1)
-					}
-				}, [t, e]), {
-					data: d,
-					error: i,
-					pending: n,
-					called: o
-				}]
 			}
 		},
 		"./src/reddit/hooks/useTheme.ts": function(e, t, n) {
@@ -1118,4 +1118,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/1.8deac9ef4d24a33d01c8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/1.dbb03ac01acd6ae4ac68.js.map

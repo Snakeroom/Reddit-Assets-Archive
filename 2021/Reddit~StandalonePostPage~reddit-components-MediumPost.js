@@ -1,7 +1,21 @@
-// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-MediumPost.e4decfbea47499839e19.js
-// Retrieved at 10/25/2021, 4:40:12 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-MediumPost.58a1e99cb0145c65da2d.js
+// Retrieved at 10/26/2021, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~StandalonePostPage~reddit-components-MediumPost"], {
+		"./src/lib/hooks/usePrevious.ts": function(e, t, r) {
+			"use strict";
+			r.d(t, "a", (function() {
+				return s
+			}));
+			var n = r("./node_modules/react/index.js");
+
+			function s(e) {
+				const t = Object(n.useRef)();
+				return Object(n.useEffect)(() => {
+					t.current = e
+				}), t.current
+			}
+		},
 		"./src/lib/hooks/useTooltip.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
@@ -322,9 +336,9 @@
 			}));
 			var n = r("./node_modules/react/index.js"),
 				s = r.n(n),
-				o = r("./src/realtime/GQLSubscription/async.tsx"),
-				a = r("./src/reddit/hooks/useIntersectionObserver.ts"),
-				c = r("./src/reddit/hooks/usePrevious.ts");
+				o = r("./src/lib/hooks/usePrevious.ts"),
+				a = r("./src/realtime/GQLSubscription/async.tsx"),
+				c = r("./src/reddit/hooks/useIntersectionObserver.ts");
 			const i = e => {
 				return Math.abs(e).toString().split("").map(e => parseInt(e))
 			};
@@ -384,7 +398,7 @@
 							}, u())), D.current > 0 && (T.current(D.current), D.current = 0)) : n && (G.current = !1)
 						})
 					}, []);
-				Object(a.a)(S, U);
+				Object(c.a)(S, U);
 				const [V, B] = Object(n.useState)(!1), L = Object(n.useCallback)(e => {
 					e.forEach(e => {
 						const {
@@ -396,8 +410,8 @@
 				}, []), q = Object(n.useRef)({
 					rootMargin: "2000px 0px 2000px 0px"
 				});
-				Object(a.a)(S, L, q.current);
-				const W = Object(c.a)(t);
+				Object(c.a)(S, L, q.current);
+				const W = Object(o.a)(t);
 				Object(n.useEffect)(() => {
 					if (void 0 !== W && W !== t) {
 						const e = t - W;
@@ -448,7 +462,7 @@
 					role: "screen-reader"
 				}, [...E].reverse().join(""))), s.a.createElement("span", {
 					ref: S
-				}), V && s.a.createElement(o.a, {
+				}), V && s.a.createElement(a.a, {
 					variables: O,
 					onData: b ? m : v,
 					queryKey: g,
@@ -2408,20 +2422,6 @@
 				return Object(o.b)(t)
 			}
 		},
-		"./src/reddit/hooks/usePrevious.ts": function(e, t, r) {
-			"use strict";
-			r.d(t, "a", (function() {
-				return s
-			}));
-			var n = r("./node_modules/react/index.js");
-
-			function s(e) {
-				const t = Object(n.useRef)();
-				return Object(n.useEffect)(() => {
-					t.current = e
-				}), t.current
-			}
-		},
 		"./src/reddit/icons/fonts/Downvote/index.m.less": function(e, t, r) {
 			e.exports = {
 				compactDownvote: "_2GCoZTwJW7199HSwNZwlHk",
@@ -3053,21 +3053,21 @@
 				o = r("./src/reddit/helpers/chooseVariant/index.ts"),
 				a = r("./src/reddit/selectors/experiments/index.ts");
 			const c = Object(n.a)(e => Object(o.c)(e, {
-					experimentName: s.qb,
-					experimentEligibilitySelector: a.e
-				}), e => e === s.V.Enabled),
-				i = Object(n.a)(e => Object(o.c)(e, {
 					experimentName: s.rb,
 					experimentEligibilitySelector: a.e
 				}), e => e === s.W.Enabled),
-				d = Object(n.a)(e => Object(o.c)(e, {
+				i = Object(n.a)(e => Object(o.c)(e, {
 					experimentName: s.sb,
 					experimentEligibilitySelector: a.e
 				}), e => e === s.X.Enabled),
-				l = Object(n.a)(e => Object(o.c)(e, {
+				d = Object(n.a)(e => Object(o.c)(e, {
 					experimentName: s.tb,
 					experimentEligibilitySelector: a.e
-				}), e => e === s.Y.Enabled)
+				}), e => e === s.Y.Enabled),
+				l = Object(n.a)(e => Object(o.c)(e, {
+					experimentName: s.ub,
+					experimentEligibilitySelector: a.e
+				}), e => e === s.Z.Enabled)
 		},
 		"./src/reddit/selectors/experiments/postActionBarAnimation.ts": function(e, t, r) {
 			"use strict";
@@ -3149,8 +3149,8 @@
 					if (Object(a.a)(e)) return !1;
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: n.wb
-					}) === n.Ib.Enabled
+						experimentName: n.xb
+					}) === n.Jb.Enabled
 				}
 		},
 		"./src/reddit/selectors/experiments/presence.ts": function(e, t, r) {
@@ -3163,8 +3163,8 @@
 			const o = e => {
 				return Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: n.Fd
-				}) === n.Bc
+					experimentName: n.Gd
+				}) === n.Cc
 			}
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, r) {
@@ -3547,4 +3547,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-MediumPost.e4decfbea47499839e19.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-MediumPost.58a1e99cb0145c65da2d.js.map

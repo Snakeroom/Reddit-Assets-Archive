@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OverlayReport.b73b145611950649b14a.js
-// Retrieved at 10/19/2021, 5:20:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OverlayReport.de03174070491bb4fefa.js
+// Retrieved at 10/26/2021, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OverlayReport"], {
 		"./src/chat/components/OverlayReport/index.tsx": function(e, t, s) {
@@ -29,11 +29,11 @@
 				}),
 				C = s("./src/chat/components/Scroller/index.tsx"),
 				w = s("./src/chat/constants/messages.ts");
-			const f = "reportReason";
-			var S;
+			const S = "reportReason";
+			var f;
 			! function(e) {
 				e.Threats = "threats", e.Violence = "violence", e.Personal = "personal", e.Impersonation = "impersonation", e.MinorSexualization = "minorSexualization"
-			}(S || (S = {}));
+			}(f || (f = {}));
 			var v = s("./src/chat/controls/Checkbox/index.tsx"),
 				O = s("./src/chat/controls/Overlay/index.tsx"),
 				F = s("./src/chat/controls/OverlayControlBar/index.tsx"),
@@ -56,7 +56,7 @@
 				}),
 				A = Object(c.b)(D, e => ({
 					onReportUser: (t, s) => {
-						e(Object(p.O)(s.id)), e((e => async (t, s, {
+						e(Object(p.S)(s.id)), e((e => async (t, s, {
 							apiContext: n
 						}) => {
 							const {
@@ -73,7 +73,7 @@
 						})).then(() => e(Object(l.a)()))
 					},
 					onReportMessage: (t, s, n) => {
-						e(Object(p.Q)(s.messageId, t)), e(((e, t, s) => async (n, r, {
+						e(Object(p.U)(s.messageId, t)), e(((e, t, s) => async (n, r, {
 							apiContext: o
 						}) => {
 							const a = Object(d.a)(e, t),
@@ -106,35 +106,35 @@
 						})
 					}, this.getReportReasonText = e => {
 						switch (e) {
-							case S.Threats:
+							case f.Threats:
 								return n.fbt._("Threatens, harrasses, or bullies", null, {
 									hk: "9lzw2"
 								});
-							case S.Violence:
+							case f.Violence:
 								return n.fbt._("It threatens violence or physical harm", null, {
 									hk: "2LziPg"
 								});
-							case S.Personal:
+							case f.Personal:
 								return n.fbt._("It's personal and confidential information", null, {
 									hk: "2w0qDN"
 								});
-							case S.Impersonation:
+							case f.Impersonation:
 								return n.fbt._("Impersonation", null, {
 									hk: "2dg9bu"
 								});
-							case S.MinorSexualization:
+							case f.MinorSexualization:
 								return n.fbt._("It's sexual or suggestive content involving minors", null, {
 									hk: "Ofq3r"
 								})
 						}
-					}, this.getUserReportFlow = () => o()(S, e => {
+					}, this.getUserReportFlow = () => o()(f, e => {
 						const t = this.getReportReasonText(e);
 						return i.a.createElement(M, {
 							key: t
 						}, i.a.createElement(B, {
 							type: "radio",
 							value: t,
-							name: f,
+							name: S,
 							onChange: e => this.selectReason({
 								reasonText: e.target.value
 							})
@@ -219,4 +219,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayReport.b73b145611950649b14a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayReport.de03174070491bb4fefa.js.map
