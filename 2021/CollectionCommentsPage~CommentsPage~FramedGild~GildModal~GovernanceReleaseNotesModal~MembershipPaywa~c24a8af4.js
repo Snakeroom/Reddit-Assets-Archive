@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~MembershipPaywa~c24a8af4.7e16b488dbaee443858a.js
-// Retrieved at 10/14/2021, 6:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~MembershipPaywa~c24a8af4.9f6bcca748425dffe592.js
+// Retrieved at 10/26/2021, 12:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~MembershipPaywa~c24a8af4"], {
 		"./src/lib/colors/constants.ts": function(e, t, s) {
@@ -1766,7 +1766,7 @@
 						src: this.props.blurImageSrc
 					}), l.a.createElement("video", {
 						style: {
-							backgroundImage: d ? "" : `url(${this.props.posterUrl})`,
+							backgroundImage: d || v && 0 !== v.currentTime ? "" : `url(${this.props.posterUrl})`,
 							backgroundColor: m.b
 						},
 						poster: this.props.posterUrl,
@@ -2445,4 +2445,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~MembershipPaywa~c24a8af4.7e16b488dbaee443858a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~MembershipPaywa~c24a8af4.9f6bcca748425dffe592.js.map
