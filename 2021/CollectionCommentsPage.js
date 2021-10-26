@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.79dfb53f806c0c7d68a9.js
-// Retrieved at 10/25/2021, 4:40:12 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.d94e37f1a7d0ce3f79c1.js
+// Retrieved at 10/26/2021, 11:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -4818,9 +4818,13 @@
 						experimentName: Ne.Ie
 					}) === Ne.Bc
 				},
-				Be = e => {
-					if (Object(Re.a)(e)) return !1;
-					return Object(Me.c)(e, {
+				Be = (e, {
+					postId: t
+				}) => {
+					const s = Object(V.H)(e, {
+						postId: t
+					});
+					return !(Object(Re.a)(e) || !s || s.isSponsored) && Object(Me.c)(e, {
 						experimentEligibilitySelector: Me.a,
 						experimentName: Ne.He
 					}) === Ne.Bc
@@ -7810,4 +7814,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.79dfb53f806c0c7d68a9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.d94e37f1a7d0ce3f79c1.js.map
