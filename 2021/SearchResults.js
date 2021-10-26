@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.d31a8dd705c1287ad58f.js
-// Retrieved at 10/25/2021, 4:40:12 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.e1b092f01d638d2e9543.js
+// Retrieved at 10/26/2021, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -773,7 +773,7 @@
 						C = Object(a.e)(i()(e.queryParams, m.t), b),
 						x = {
 							...C,
-							type: Object(p.f)(r, C.type)
+							type: Object(p.a)(n, b, C.type)
 						},
 						f = e.params.subredditName || e.params.multiredditName,
 						{
@@ -5435,7 +5435,8 @@
 					}) : Object(g.q)(e, {
 						listingKey: t
 					}),
-					isSerpExperimentOverride: f.c,
+					isSerpRedesignM1: f.c,
+					isSerpRedesignM2: f.d,
 					loadMore: (e, {
 						listingKey: t
 					}) => Object(f.d)(e) ? Object(g.s)(e, {
@@ -5452,33 +5453,34 @@
 					const c = new l.a(P),
 						f = Object(i.useRef)(),
 						g = Object(i.useRef)(null),
-						y = [d.Yb.Subreddits, d.Yb.Users],
-						S = Object(b.eb)(),
-						R = Object(h.b)(),
-						F = Object(a.d)(),
+						y = Object(b.eb)(),
+						S = Object(h.b)(),
+						R = Object(a.d)(),
 						{
-							identifiers: M,
-							listingKey: A,
-							searchOptions: B,
-							sidebar: D
+							identifiers: F,
+							listingKey: M,
+							searchOptions: A,
+							sidebar: B
 						} = e,
 						{
-							apiError: U,
-							apiPending: V,
-							isSerpExperimentOverride: W,
+							apiError: D,
+							apiPending: U,
+							isSerpRedesignM1: V,
+							isSerpRedesignM2: W,
 							loadMore: H,
 							viewportDataLoaded: q
 						} = Object(a.e)(t => L(t, e)),
 						K = {
-							component: W ? j.a : E.a,
-							identifierCount: D ? T : M.length,
-							placeholderComponent: W ? k.a : _.a,
-							placeholderCount: D ? T : w
+							component: V ? j.a : E.a,
+							identifierCount: B ? T : F.length,
+							placeholderComponent: V ? k.a : _.a,
+							placeholderCount: B ? T : w,
+							moreResultsTypes: W ? [d.Yb.Subreddits] : [d.Yb.Subreddits, d.Yb.Users]
 						},
 						z = () => {
 							if (!Q()) return;
-							const e = v.c.end(A);
-							R(Object(C.u)(A, B, O.TimerType.InApp, e, S))
+							const e = v.c.end(M);
+							S(Object(C.u)(M, A, O.TimerType.InApp, e, y))
 						},
 						G = () => {
 							const e = f.current && Array.from(f.current.children),
@@ -5502,11 +5504,11 @@
 							})
 						}
 					});
-					const Y = Object(x.a)(A),
-						Z = Object(x.a)(M.length);
+					const Y = Object(x.a)(M),
+						Z = Object(x.a)(F.length);
 					Object(i.useEffect)(() => {
-						g.current && v.c.cancel(g.current), M.length && (g.current = v.c.start()), (A !== Y || !G() && M.length !== Z) && (t.current = !1)
-					}, [g, A, M.length, Y, Z, t]), Object(i.useEffect)(() => () => {
+						g.current && v.c.cancel(g.current), F.length && (g.current = v.c.start()), (M !== Y || !G() && F.length !== Z) && (t.current = !1)
+					}, [g, M, F.length, Y, Z, t]), Object(i.useEffect)(() => () => {
 						g.current && v.c.cancel(g.current), f.current = void 0, t.current = !1
 					});
 					const J = () => {
@@ -5514,20 +5516,20 @@
 						},
 						Q = () => {
 							const e = G();
-							return v.c.has(A) && (U || !r && (s || t && (e || q)))
+							return v.c.has(M) && (D || !r && (s || t && (e || q)))
 						},
 						X = e => {
 							f.current = e instanceof Element ? e : void 0
 						},
 						$ = () => {
-							const e = M.slice(0, K.identifierCount).map((e, t) => ((e, t) => {
+							const e = F.slice(0, K.identifierCount).map((e, t) => ((e, t) => {
 								const s = {
-										...B,
+										...A,
 										id: e.id,
 										eventType: e.type
 									},
-									r = `community-search-${t}-${A}`,
-									n = Object(p.b)(e, A, R, s);
+									r = `community-search-${t}-${M}`,
+									n = Object(p.b)(e, M, S, s);
 								let i;
 								if (void 0 === (i = c.get(r))) {
 									const s = `community-search-item-[id:${e.id}]`,
@@ -5537,9 +5539,9 @@
 											first: 0 === t,
 											identifier: e,
 											key: s,
-											listingKey: A,
-											searchOptions: B,
-											sidebar: D
+											listingKey: M,
+											searchOptions: A,
+											sidebar: B
 										});
 									i = {
 										estHeight: N,
@@ -5551,17 +5553,17 @@
 								return c.set(r, i), i
 							})(e, t));
 							return o.a.createElement(u.b, {
-								key: A,
+								key: M,
 								innerRef: X,
 								loadMoreToken: H && H.token ? H.token : void 0,
 								onLastVisibleChildRendered: J,
 								onLoadMore: () => {
-									D || F(Object(m.q)(y))
+									B || R(Object(m.q)(K.moreResultsTypes))
 								}
 							}, e)
 						};
-					return (() => M.length > 0)() ? (s = !1, r = !1, $()) : (() => Boolean(U) || !1 === V)() ? (s = !0, r = !1, $()) : (s = !1, r = !0, (() => {
-						const e = !U,
+					return (() => F.length > 0)() ? (s = !1, r = !1, $()) : (() => Boolean(D) || !1 === U)() ? (s = !0, r = !1, $()) : (s = !1, r = !0, (() => {
+						const e = !D,
 							t = K.placeholderComponent;
 						return o.a.createElement("div", {
 							"data-testid": "communities-list-placeholder"
@@ -5569,7 +5571,7 @@
 							className: I.a.communityPlaceholder,
 							key: s,
 							isLoading: e,
-							sidebar: D
+							sidebar: B
 						})))
 					})())
 				}
@@ -8792,12 +8794,14 @@
 						description: "Title: Communities section on search page",
 						linkTitle: "See more communities",
 						linkDescription: "Link: View full list of communities",
+						linkTo: c.Yb.Subreddits,
 						noResults: "Text: There are no communities results for your query"
 					} : {
 						title: "Communities and People",
 						description: "Title: Communities and people section on search page",
 						linkTitle: "See more communities and people",
 						linkDescription: "Link: View full list of communities and people",
+						linkTo: [c.Yb.Subreddits, c.Yb.Users].join(","),
 						noResults: "Text: There are no communities or users results for your query"
 					}, i.a.createElement(u.a, {
 						"data-testid": "search-results-sidebar",
@@ -8822,7 +8826,7 @@
 						searchOptions: S,
 						sidebar: !0
 					}), T && i.a.createElement(x.a, {
-						to: Object(f.a)(y, P, [c.Yb.Subreddits, c.Yb.Users].join(","))
+						to: Object(f.a)(y, P, R.linkTo)
 					}, i.a.createElement("p", {
 						className: k.a.link
 					}, r.fbt._("{link}", [r.fbt._param("link", R.linkTitle), r.fbt._param("link description", R.linkDescription)], {
@@ -8844,7 +8848,7 @@
 						searchOptions: S,
 						sidebar: !0
 					}), L && i.a.createElement(x.a, {
-						to: Object(f.a)(y, P, [c.Yb.Users].join(","))
+						to: Object(f.a)(y, P, c.Yb.Users)
 					}, i.a.createElement("p", {
 						className: k.a.link
 					}, r.fbt._("See more people", null, {
@@ -11563,7 +11567,7 @@
 					te = Object(E.a)(K, $.type, ee),
 					se = {
 						...$,
-						type: Object(R.a)($.type)
+						type: Object(R.a)(!0, K, $.type)
 					},
 					re = Object(l.b)(Q, X, se),
 					ne = {
@@ -12109,4 +12113,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.d31a8dd705c1287ad58f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.e1b092f01d638d2e9543.js.map

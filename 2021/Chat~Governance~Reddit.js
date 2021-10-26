@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.9eda2e7425c948861dc6.js
-// Retrieved at 10/26/2021, 1:50:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.fdd03bb579f78716a7f3.js
+// Retrieved at 10/26/2021, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -2508,10 +2508,10 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("149495"),
+				buildNumber: Object(r.c)("149498"),
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
-				buildTimestamp: Object(r.b)("1635269302"),
+				buildTimestamp: Object(r.b)("1635270772"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -5049,14 +5049,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c98f761ae1fdece952509849d3ca4a111d63423fb-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c2fbe0e4cec62010f6dce5a10b1f310e5c80b41d1-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${v.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "98f761ae1fdece952509849d3ca4a111d63423fb-production",
+						release: "2fbe0e4cec62010f6dce5a10b1f310e5c80b41d1-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -5569,7 +5569,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "98f761ae1fdece952509849d3ca4a111d63423fb-production",
+						releaseClient: "2fbe0e4cec62010f6dce5a10b1f310e5c80b41d1-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -17765,28 +17765,36 @@
 							queryId: Object(l.c)(l.a.SearchResults),
 							structureType: s
 						},
-						E = {
+						E = y[r.Yb.Posts],
+						T = y[r.Yb.Subreddits],
+						R = y[r.Yb.Users],
+						F = E && T && R,
+						C = {
 							query: null !== (g = null == i ? void 0 : i.q) && void 0 !== g ? g : "",
 							sort: (null == i ? void 0 : i.sort) ? I[null == i ? void 0 : i.sort] : null,
 							filters: w,
 							productSurface: `${p.TelemetryAppName.web2x}-serp`,
-							includePosts: y[r.Yb.Posts],
-							includeCommunities: y[r.Yb.Subreddits],
-							includeAuthors: y[r.Yb.Users],
+							includePosts: E,
+							includeCommunities: T,
+							includeAuthors: R,
 							postsAfter: c.posts,
 							communitiesAfter: c.communities,
 							authorsAfter: c.authors,
-							searchInput: v
+							searchInput: v,
+							...F && {
+								communityRows: 6,
+								authorRows: 6
+							}
 						},
-						T = await Object(o.a)(e, {
+						N = await Object(o.a)(e, {
 							..._,
-							variables: E
+							variables: C
 						}, {
 							traceRequestName: "general_search"
 						});
 					return {
-						...T,
-						body: S(T.body)
+						...N,
+						body: S(N.body)
 					}
 				};
 
@@ -23451,11 +23459,11 @@
 						subredditName: d
 					} = n.params, {
 						username: a
-					} = n.params, u = Object(T.d)(t), c = Object(l.e)(r()(n.queryParams, m.t), u), _ = {
-						...c,
-						type: Object(T.f)(t, c.type)
+					} = n.params, u = Object(T.c)(t), c = Object(T.d)(t), _ = Object(l.e)(r()(n.queryParams, m.t), c), p = {
+						..._,
+						type: Object(T.a)(u, c, _.type)
 					};
-					return Object(l.b)(d, a, _)
+					return Object(l.b)(d, a, p)
 				},
 				D = (e, t, i) => {
 					const {
@@ -31420,10 +31428,8 @@
 				return c
 			})), i.d(t, "d", (function() {
 				return _
-			})), i.d(t, "f", (function() {
-				return p
 			})), i.d(t, "a", (function() {
-				return m
+				return p
 			}));
 			var n = i("./src/lib/constants/index.ts"),
 				r = i("./node_modules/lodash/isEmpty.js"),
@@ -31446,11 +31452,10 @@
 				_ = Object(a.a)(l, e => Object(d.c)(e, {
 					experimentEligibilitySelector: d.a,
 					experimentName: o.zb
-				}), (e, t) => e && t === o.Lb.Redesign),
-				p = (e, t) => l(e) ? m(t) : t;
+				}), (e, t) => e && t === o.Lb.Redesign);
 
-			function m(e) {
-				return e.includes(n.Yb.Posts) || s()(e) ? [n.Yb.Posts, n.Yb.Subreddits, n.Yb.Users] : e.includes(n.Yb.Users) || e.includes(n.Yb.Subreddits) ? [n.Yb.Users, n.Yb.Subreddits] : e
+			function p(e, t, i) {
+				return !e || t ? i : i.includes(n.Yb.Posts) || s()(i) ? [n.Yb.Posts, n.Yb.Subreddits, n.Yb.Users] : i.includes(n.Yb.Users) || i.includes(n.Yb.Subreddits) ? [n.Yb.Users, n.Yb.Subreddits] : i
 			}
 		},
 		"./src/reddit/selectors/experiments/survey.ts": function(e, t, i) {
@@ -37554,7 +37559,7 @@
 			e.exports = JSON.parse('{"id":"34910619f1e9"}')
 		},
 		"./src/redditGQL/operations/GeneralSearch.json": function(e) {
-			e.exports = JSON.parse('{"id":"da2e31500868"}')
+			e.exports = JSON.parse('{"id":"fdf15f57f8e2"}')
 		},
 		"./src/redditGQL/operations/ModeratedSubreddits.json": function(e) {
 			e.exports = JSON.parse('{"id":"3f04933af189"}')
@@ -42047,4 +42052,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.9eda2e7425c948861dc6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.fdd03bb579f78716a7f3.js.map
