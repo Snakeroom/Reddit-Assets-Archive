@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NotificationUnit.f8fc8f803654013c11ad.js
-// Retrieved at 10/26/2021, 2:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationUnit.b06489c27c6091233d1e.js
+// Retrieved at 10/27/2021, 1:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationUnit"], {
 		"./src/reddit/components/NotificationUnit/Avatar.tsx": function(e, t, i) {
@@ -161,7 +161,8 @@
 					isOverlayOff: !0,
 					isOpen: m,
 					tooltipId: O,
-					tooltipPosition: ["right", "top"]
+					tooltipPosition: ["right", "top"],
+					isFixed: !0
 				}, s.a.createElement("div", {
 					className: p.a.overflowMenuContainer
 				}, c && T(n.HideNotif), u && T(n.DecreaseSubredditUpdates), E && T(n.HideSubUpdates), b && T(n.HideNotifUpdate), x && T(n.HideAwarder)))
@@ -733,4 +734,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationUnit.f8fc8f803654013c11ad.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationUnit.b06489c27c6091233d1e.js.map
