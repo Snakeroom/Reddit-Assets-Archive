@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.e872efe26694c9348bf5.js
-// Retrieved at 10/27/2021, 12:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.00279c2b8748330a61d5.js
+// Retrieved at 10/27/2021, 4:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, n) {
@@ -9820,7 +9820,9 @@
 						subtext: o.fbt._("Mark all conversations and invites as read.", null, {
 							hk: "4kP4WC"
 						}),
-						onClick: dn.c
+						onClick: () => {
+							n(Object(dn.c)())
+						}
 					}))
 				},
 				qn = n("./src/reddit/components/Settings/Creator/Header/index.m.less"),
@@ -12304,4 +12306,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.e872efe26694c9348bf5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.00279c2b8748330a61d5.js.map
