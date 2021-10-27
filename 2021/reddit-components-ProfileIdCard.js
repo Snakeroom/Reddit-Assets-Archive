@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.afafd1104f009631ad55.js
-// Retrieved at 10/26/2021, 2:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.d59f81c7226c4141ac11.js
+// Retrieved at 10/27/2021, 12:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ProfileIdCard"], {
 		"./node_modules/lodash/compact.js": function(e, t) {
@@ -2792,38 +2792,51 @@
 		"./src/reddit/endpoints/chat/userSettings.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "c", (function() {
-				return u
-			})), r.d(t, "b", (function() {
 				return m
-			})), r.d(t, "d", (function() {
+			})), r.d(t, "b", (function() {
 				return p
-			})), r.d(t, "a", (function() {
+			})), r.d(t, "e", (function() {
 				return f
+			})), r.d(t, "d", (function() {
+				return b
+			})), r.d(t, "a", (function() {
+				return h
 			}));
 			var n = r("./src/config.ts"),
 				s = r("./src/lib/constants/index.ts"),
 				a = r("./src/lib/makeApiRequest/index.ts"),
-				o = r("./src/lib/omitHeaders/index.ts"),
-				i = r("./src/lib/makeGqlRequest/index.ts"),
-				c = r("./src/reddit/constants/headers.ts"),
-				d = r("./src/redditGQL/operations/CreateChatChannelInviteLink.json"),
-				l = r("./src/redditGQL/types.ts");
-			const u = e => Boolean(e && e.data && (null == e ? void 0 : e.errors)),
-				m = e => Object(a.a)(Object(o.a)(e, [c.a]), {
+				o = r("./src/lib/makeGqlRequest/index.ts"),
+				i = r("./src/lib/omitHeaders/index.ts"),
+				c = r("./src/redditGQL/operations/UpdateChatMessagesAsRead.json"),
+				d = r("./src/reddit/constants/headers.ts"),
+				l = r("./src/redditGQL/operations/CreateChatChannelInviteLink.json"),
+				u = r("./src/redditGQL/types.ts");
+			const m = e => Boolean(e && e.data && (null == e ? void 0 : e.errors)),
+				p = e => Object(a.a)(Object(i.a)(e, [d.a]), {
 					endpoint: `${n.a.sendbirdServiceUrl}/api/v1/chat/me/settings`,
 					method: s.ib.GET
 				}),
-				p = async (e, t) => Object(a.a)(Object(o.a)(t, [c.a]), {
+				f = async (e, t) => Object(a.a)(Object(i.a)(t, [d.a]), {
 					endpoint: `${n.a.sendbirdServiceUrl}/api/v1/chat/me/settings`,
 					method: s.ib.PUT,
 					data: JSON.stringify({
 						invite_policy: e
 					})
-				}), f = e => Object(i.a)(e, {
-					...d,
+				}), b = (e, t) => {
+					const r = {
+						channels: t
+					};
+					return Object(o.a)(e, {
+						...c,
+						variables: {
+							input: r
+						}
+					})
+				}, h = e => Object(o.a)(e, {
+					...l,
 					variables: {
 						input: {
-							customType: l.a.Direct
+							customType: u.a.Direct
 						}
 					}
 				})
@@ -3285,7 +3298,10 @@
 		},
 		"./src/redditGQL/operations/SubscribedSubreddits.json": function(e) {
 			e.exports = JSON.parse('{"id":"19853683e73a"}')
+		},
+		"./src/redditGQL/operations/UpdateChatMessagesAsRead.json": function(e) {
+			e.exports = JSON.parse('{"id":"bfc6fe51708d"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.afafd1104f009631ad55.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.d59f81c7226c4141ac11.js.map

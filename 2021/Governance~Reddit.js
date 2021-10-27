@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.f23e79e49e74f052c1d4.js
-// Retrieved at 10/26/2021, 2:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.30115b6953c3945bee5b.js
+// Retrieved at 10/27/2021, 12:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -784,8 +784,10 @@
 				return b
 			})), r.d(t, "b", (function() {
 				return y
-			})), r.d(t, "c", (function() {
+			})), r.d(t, "d", (function() {
 				return _
+			})), r.d(t, "c", (function() {
+				return O
 			}));
 			r("./node_modules/core-js/modules/web.dom.iterable.js");
 			var s = r("./node_modules/fbt/lib/FbtPublic.js"),
@@ -823,7 +825,7 @@
 						b = Object.keys(u.a).find(e => u.a[e] === p);
 					if (b) {
 						t(m());
-						const e = await Object(c.d)(b, n());
+						const e = await Object(c.e)(b, n());
 						if (Object(i.a)((e => t => ({
 								source: "settings_privacy",
 								action: "save",
@@ -845,6 +847,10 @@
 							}))
 						} else t(E(e.error))
 					}
+				}, O = () => async (e, t, {
+					gqlContext: r
+				}) => {
+					await Object(c.d)(r(), [])
 				}
 		},
 		"./src/reddit/actions/claimgold.ts": function(e, t, r) {
@@ -6921,38 +6927,51 @@
 		"./src/reddit/endpoints/chat/userSettings.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "c", (function() {
-				return l
-			})), r.d(t, "b", (function() {
 				return p
-			})), r.d(t, "d", (function() {
+			})), r.d(t, "b", (function() {
 				return b
-			})), r.d(t, "a", (function() {
+			})), r.d(t, "e", (function() {
 				return f
+			})), r.d(t, "d", (function() {
+				return y
+			})), r.d(t, "a", (function() {
+				return m
 			}));
 			var s = r("./src/config.ts"),
 				n = r("./src/lib/constants/index.ts"),
 				a = r("./src/lib/makeApiRequest/index.ts"),
-				c = r("./src/lib/omitHeaders/index.ts"),
-				o = r("./src/lib/makeGqlRequest/index.ts"),
-				d = r("./src/reddit/constants/headers.ts"),
-				i = r("./src/redditGQL/operations/CreateChatChannelInviteLink.json"),
-				u = r("./src/redditGQL/types.ts");
-			const l = e => Boolean(e && e.data && (null == e ? void 0 : e.errors)),
-				p = e => Object(a.a)(Object(c.a)(e, [d.a]), {
+				c = r("./src/lib/makeGqlRequest/index.ts"),
+				o = r("./src/lib/omitHeaders/index.ts"),
+				d = r("./src/redditGQL/operations/UpdateChatMessagesAsRead.json"),
+				i = r("./src/reddit/constants/headers.ts"),
+				u = r("./src/redditGQL/operations/CreateChatChannelInviteLink.json"),
+				l = r("./src/redditGQL/types.ts");
+			const p = e => Boolean(e && e.data && (null == e ? void 0 : e.errors)),
+				b = e => Object(a.a)(Object(o.a)(e, [i.a]), {
 					endpoint: `${s.a.sendbirdServiceUrl}/api/v1/chat/me/settings`,
 					method: n.ib.GET
 				}),
-				b = async (e, t) => Object(a.a)(Object(c.a)(t, [d.a]), {
+				f = async (e, t) => Object(a.a)(Object(o.a)(t, [i.a]), {
 					endpoint: `${s.a.sendbirdServiceUrl}/api/v1/chat/me/settings`,
 					method: n.ib.PUT,
 					data: JSON.stringify({
 						invite_policy: e
 					})
-				}), f = e => Object(o.a)(e, {
-					...i,
+				}), y = (e, t) => {
+					const r = {
+						channels: t
+					};
+					return Object(c.a)(e, {
+						...d,
+						variables: {
+							input: r
+						}
+					})
+				}, m = e => Object(c.a)(e, {
+					...u,
 					variables: {
 						input: {
-							customType: u.a.Direct
+							customType: l.a.Direct
 						}
 					}
 				})
@@ -26402,6 +26421,9 @@
 		"./src/redditGQL/operations/SubredditTopContent.json": function(e) {
 			e.exports = JSON.parse('{"id":"de27e4db7da3"}')
 		},
+		"./src/redditGQL/operations/UpdateChatMessagesAsRead.json": function(e) {
+			e.exports = JSON.parse('{"id":"bfc6fe51708d"}')
+		},
 		"./src/redditGQL/operations/UpdateScheduledPost.json": function(e) {
 			e.exports = JSON.parse('{"id":"f5276d63e133"}')
 		},
@@ -26422,4 +26444,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.f23e79e49e74f052c1d4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.30115b6953c3945bee5b.js.map

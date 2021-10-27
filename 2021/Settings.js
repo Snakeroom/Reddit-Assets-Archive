@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.86c7c6c2b304760ebaaf.js
-// Retrieved at 10/26/2021, 2:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.e872efe26694c9348bf5.js
+// Retrieved at 10/27/2021, 12:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, n) {
@@ -9745,7 +9745,7 @@
 							n(Object(un.h)(e))
 						}, [n]),
 						g = Object(s.useCallback)(e => {
-							n(Object(dn.c)(e))
+							n(Object(dn.d)(e))
 						}, [n]),
 						v = Object(s.useMemo)(() => Object(cn.b)(u.invitePolicy), [u]),
 						_ = Object(s.useMemo)(() => Dn(e), [e]);
@@ -9810,6 +9810,17 @@
 						subtext: o.fbt._("Copy a link to invite someone to a direct chatroom with you.", null, {
 							hk: "3e88hJ"
 						})
+					}), r.a.createElement(Ce.b, {
+						actionText: o.fbt._("Mark as Read", null, {
+							hk: "1SSWPI"
+						}),
+						label: o.fbt._("Mark all as read", null, {
+							hk: "4aTQrk"
+						}),
+						subtext: o.fbt._("Mark all conversations and invites as read.", null, {
+							hk: "4kP4WC"
+						}),
+						onClick: dn.c
 					}))
 				},
 				qn = n("./src/reddit/components/Settings/Creator/Header/index.m.less"),
@@ -10486,7 +10497,7 @@
 					openSSOCreatePasswordFor2FAModal: () => e(Object(y.h)(ke.h)),
 					removeWhitelisted: t => e(Object(un.h)(t)),
 					removeBlocked: t => e(Object(ls.g)(t)),
-					saveChatSettings: t => e(Object(dn.c)(t)),
+					saveChatSettings: t => e(Object(dn.d)(t)),
 					enable2FA: () => e(Object(_.e)()),
 					disable2FA: () => e(Object(_.d)()),
 					generateBackupCodes: () => e(Object(_.a)())
@@ -12293,4 +12304,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.86c7c6c2b304760ebaaf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.e872efe26694c9348bf5.js.map
