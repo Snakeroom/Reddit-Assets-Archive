@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.543aeefa38946ab794ee.js
-// Retrieved at 10/26/2021, 2:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.c39fabc1a3ae4b48b905.js
+// Retrieved at 10/27/2021, 4:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, s) {
@@ -6085,7 +6085,8 @@
 				ratingReason: "_254fRg3JX4apEtqVAAXfbm",
 				promptText: "RqDOw50ARYjx_TliwJR0l",
 				surveyButton: "_7aZGYzh7hj5VihV4LcNzP",
-				previewButton: "_2OmdANJm2jP7a_6G2-JCqg"
+				previewButton: "_2OmdANJm2jP7a_6G2-JCqg",
+				crowdControlLevelSetting: "_3Y9FV8OvxbRG6Hgsb2exNG"
 			}
 		},
 		"./src/reddit/components/CommunitySettings/index.tsx": function(e, t, s) {
@@ -6704,11 +6705,12 @@
 					allowDiscovery: i,
 					contentVisible: d,
 					crowdControlMode: c,
-					crowdControlLevel: m,
-					crowdControlChatLevel: u,
-					excludeBannedModqueue: p,
-					toxicityThresholdChatLevel: b
-				} = n, g = {
+					crowdControlFilter: m,
+					crowdControlLevel: u,
+					crowdControlChatLevel: p,
+					excludeBannedModqueue: b,
+					toxicityThresholdChatLevel: g
+				} = n, x = {
 					0: {
 						text: "Off",
 						color: "#787C7E",
@@ -6735,8 +6737,8 @@
 				})), r.a.createElement(H.a, null, F.fbt._("Safety", null, {
 					hk: "2QSter"
 				})), r.a.createElement(W.p, {
-					on: p,
-					onClick: () => o(!p, "excludeBannedModqueue"),
+					on: b,
+					onClick: () => o(!b, "excludeBannedModqueue"),
 					label: F.fbt._("Exclude posts by site-wide banned users", null, {
 						hk: "Kmfy0"
 					}),
@@ -6753,35 +6755,46 @@
 						hk: "13Z3pC"
 					})
 				}), r.a.createElement(W.j, {
-					ticks: g,
+					className: oe.a.crowdControlLevelSetting,
+					ticks: x,
 					min: 0,
-					max: Object.keys(g).length - 1,
+					max: Object.keys(x).length - 1,
 					step: 1,
-					value: m,
+					value: u,
 					onChange: e => o(e.target.value, "crowdControlLevel"),
 					label: F.fbt._("Adjust Crowd Control", null, {
 						hk: "4oJUSP"
 					}),
-					subtext: F.fbt._("{subText}", [F.fbt._param("subText", g[m].subText)], {
+					subtext: F.fbt._("{subText}", [F.fbt._param("subText", x[u].subText)], {
 						hk: "3ZFhAV"
 					})
+				}), r.a.createElement(W.p, {
+					indent: !0,
+					on: m,
+					onClick: () => o(!m, "crowdControlFilter"),
+					label: F.fbt._("Hold crowd controlled comments for review", null, {
+						hk: "1c0Z06"
+					}),
+					subtext: F.fbt._("Instead of collapsing crowd controlled comments will be held for review in mod queue.", null, {
+						hk: "1QBJUP"
+					})
 				}), (t || s) && r.a.createElement(r.a.Fragment, null, r.a.createElement(W.j, {
-					ticks: g,
+					ticks: x,
 					min: 0,
-					max: Object.keys(g).length - 1,
+					max: Object.keys(x).length - 1,
 					step: 1,
-					value: u,
+					value: p,
 					onChange: e => o(e.target.value, "crowdControlChatLevel"),
 					label: F.fbt._("Adjust Crowd Control for Chat Posts", null, {
 						hk: "vTy7k"
 					}),
-					subtext: F.fbt._("{subText}", [F.fbt._param("subText", g[u].subText)], {
+					subtext: F.fbt._("{subText}", [F.fbt._param("subText", x[p].subText)], {
 						hk: "12hf9Y"
 					})
 				}), r.a.createElement(W.p, {
-					on: !!Number(b),
+					on: !!Number(g),
 					onClick: () => {
-						o(Number(b) ? "0" : "1", "toxicityThresholdChatLevel")
+						o(Number(g) ? "0" : "1", "toxicityThresholdChatLevel")
 					},
 					label: F.fbt._("Collapse Toxic Messages in Chat Post", null, {
 						hk: "1Pk3G5"
@@ -22850,6 +22863,7 @@
 					contentVisible: o.dc.Safety,
 					crowdControlChatLevel: o.dc.Safety,
 					crowdControlLevel: o.dc.Safety,
+					crowdControlFilter: o.dc.Safety,
 					crowdControlMode: o.dc.Safety,
 					disableContributorRequests: o.dc.Community,
 					excludeBannedModqueue: o.dc.Safety,
@@ -25798,4 +25812,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.543aeefa38946ab794ee.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.c39fabc1a3ae4b48b905.js.map
