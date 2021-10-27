@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.f539a8e9741f63526942.js
-// Retrieved at 10/27/2021, 4:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.9cfdd17191293ac89e02.js
+// Retrieved at 10/27/2021, 5:10:04 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var n, a, r = o[0], s = o[1], c = o[2], l = 0, P = []; l < r.length; l++) a = r[l], Object.prototype.hasOwnProperty.call(d, a) && d[a] && P.push(d[a][0]), d[a] = 0;
@@ -1405,7 +1405,7 @@
 						"translations/es_MX-json": "a893351aa45212c884eb",
 						"translations/fr_FR-json": "2364b6cb850129a29a7b",
 						"translations/it_IT-json": "dccc4ebdfdfd5a40741a",
-						"translations/pseudo_ext-json": "040cb9af2785698ff438",
+						"translations/pseudo_ext-json": "dfbb1b6f93666486f4d9",
 						"translations/pseudo_long-json": "040fbb4d21e686441c7f",
 						"translations/pseudo_short-json": "d1100d4199668827f711",
 						"translations/pt_BR-json": "c594e4fa7ff3a543f9d0",
@@ -1413,8 +1413,8 @@
 						"vendors~AdminPanel": "e6e59f93c311ab1cce5c",
 						AdminPanel: "7e0e662315c68c0559a0",
 						"vendors~ChatMessageInput~CommentRichUnit~FlairEdit~MembershipPaywallPage~PostCreation~PostRichUnit~R~9deab1a0": "201e0a53b4d00907b96f",
-						"ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor": "ee6f062b3dc129f31cd2",
-						MembershipPaywallPage: "ee97c1759ba3d7e3753b",
+						"ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor": "6ffbaee7ef28d0f32b3d",
+						MembershipPaywallPage: "8168c7a60893b7cc2f4b",
 						FlairEdit: "1a60d92e8e4a07b677d8",
 						"vendors~Chat~RedesignChat": "4ea3bc796c3ac26848b1",
 						"Chat~RedesignChat": "8b59e7cd25e6a44a0035",
@@ -1589,8 +1589,8 @@
 						GivePremiumModal: "fd18566c9bcffb274b69",
 						"reddit-components-TypingIndicators": "93d131b6f0e1f6cf43f7",
 						ColorPickerDropdown: "a3deef95bace61d04faf",
-						PowerupsGifsTooltip: "ab9d19a6764850d7c3b0",
-						SpecialMembershipsGifsTooltip: "76b91a65ca85eeccd123",
+						PowerupsGifsTooltip: "434098f1e987abb08d1d",
+						SpecialMembershipsGifsTooltip: "1d4169638a2e00888f87",
 						ChatReportFlow: "591676e25264c0a16aa6",
 						"vendors~ModStatsChart": "805197141fd59abbbf7b",
 						ModStatsChart: "3aaefb443dd939432ddf"
@@ -1659,4 +1659,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.f539a8e9741f63526942.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.9cfdd17191293ac89e02.js.map

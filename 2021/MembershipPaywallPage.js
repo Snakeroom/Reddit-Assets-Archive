@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MembershipPaywallPage.ee97c1759ba3d7e3753b.js
-// Retrieved at 10/25/2021, 2:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MembershipPaywallPage.8168c7a60893b7cc2f4b.js
+// Retrieved at 10/27/2021, 5:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MembershipPaywallPage"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1835,7 +1835,9 @@
 					}
 				}
 				componentDidMount() {
-					this.elementRef && !1 !== this.props.autofocus && this.elementRef.focus()
+					this.elementRef && !1 !== this.props.autofocus && this.elementRef.focus({
+						preventScroll: !!this.props.preventScrollOnMount
+					})
 				}
 				render() {
 					const {
@@ -2038,7 +2040,8 @@
 					}, d.a.createElement(z, {
 						autofocus: this.props.autofocus,
 						onChange: this.onQueryChange,
-						className: D.a.searchBox
+						className: D.a.searchBox,
+						preventScrollOnMount: this.props.preventSearchBoxScrollOnMount
 					}), !this.props.title && d.a.createElement(v.a, {
 						className: D.a.closeIcon,
 						onClick: () => this.props.onClose(!0)
@@ -7012,4 +7015,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MembershipPaywallPage.ee97c1759ba3d7e3753b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MembershipPaywallPage.8168c7a60893b7cc2f4b.js.map
