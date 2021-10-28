@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityAwards.c127f9057ce8bc07bcd1.js
-// Retrieved at 10/13/2021, 6:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityAwards.d296c85333bcf9d1419e.js
+// Retrieved at 10/28/2021, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityAwards"], {
 		"./src/reddit/actions/gold/communityAwards/communityAwards.ts": function(e, t, r) {
@@ -200,7 +200,7 @@
 							a = n.manageableAwards || [], t(N({
 								awards: n.optionalAwards || [],
 								subredditOrProfileId: e
-							})), t(k({
+							})), t(D({
 								subredditOrProfileId: e,
 								disabled: !n.isAwardCreationAllowed
 							}))
@@ -219,7 +219,7 @@
 						duration: o.a,
 						text: e
 					}))
-				}, k = Object(n.a)(O.d), D = e => e.map(({
+				}, D = Object(n.a)(O.d), k = e => e.map(({
 					tag: e,
 					content: t
 				}) => ({
@@ -260,7 +260,7 @@
 								const r = await Object(m.g)(s(), a, t);
 								if (r.ok) {
 									const a = r.body,
-										d = D(a.data.profileByName.awardingTray.sortedUsableTags);
+										d = k(a.data.profileByName.awardingTray.sortedUsableTags);
 									await n(Q({
 										awards: a.data.profileByName.sortedUsableAwards,
 										tags: d,
@@ -275,7 +275,7 @@
 								const r = await Object(m.f)(s(), e, t);
 								if (r.ok) {
 									const a = r.body,
-										d = D(a.data.subredditInfoById.awardingTray.sortedUsableTags);
+										d = k(a.data.subredditInfoById.awardingTray.sortedUsableTags);
 									await n(Q({
 										awards: a.data.subredditInfoById.sortedUsableAwards,
 										tags: d,
@@ -387,22 +387,20 @@
 				return a
 			})), r.d(t, "b", (function() {
 				return n
-			})), r.d(t, "e", (function() {
-				return d
-			})), r.d(t, "f", (function() {
-				return i
-			})), r.d(t, "g", (function() {
-				return s
 			})), r.d(t, "d", (function() {
-				return o
-			})), r.d(t, "j", (function() {
-				return c
-			})), r.d(t, "i", (function() {
-				return u
-			})), r.d(t, "h", (function() {
-				return b
+				return d
+			})), r.d(t, "e", (function() {
+				return i
+			})), r.d(t, "f", (function() {
+				return s
 			})), r.d(t, "c", (function() {
-				return l
+				return o
+			})), r.d(t, "i", (function() {
+				return c
+			})), r.d(t, "h", (function() {
+				return u
+			})), r.d(t, "g", (function() {
+				return b
 			}));
 			const a = "ModerationPage--Modal--AddAward",
 				n = "ModerationPage--Modal--DeleteAwardConfirmation",
@@ -412,8 +410,7 @@
 				o = .2,
 				c = .1,
 				u = .1,
-				b = 500,
-				l = "https://reddit.zendesk.com/hc/en-us/articles/360050641932"
+				b = 500
 		},
 		"./src/reddit/endpoints/gold/communityAwards.ts": function(e, t, r) {
 			"use strict";
@@ -695,4 +692,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityAwards.c127f9057ce8bc07bcd1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityAwards.d296c85333bcf9d1419e.js.map

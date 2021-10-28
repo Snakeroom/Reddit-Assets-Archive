@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.20d0bdd6daaac0d8c537.js
-// Retrieved at 10/28/2021, 2:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.a344beadc0b40fda6d95.js
+// Retrieved at 10/28/2021, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-PowerupsInFeedUnit-index-tsx"], {
 		"./src/reddit/actions/snoovatar.ts": function(e, t, s) {
@@ -287,9 +287,9 @@
 				h = s("./src/reddit/components/PowerupsCtaButton/index.tsx"),
 				w = s("./src/reddit/components/PowerupsSidebar/PowerupsBackground.tsx"),
 				f = s("./src/reddit/components/Econ/PowerupsInFeedUnit/PostUnlock/ApplyFromPremiumUnit.m.less"),
-				g = s.n(f);
+				N = s.n(f);
 			const {
-				fbt: N
+				fbt: g
 			} = s("./node_modules/fbt/lib/FbtPublic.js");
 			var y = ({
 					subredditId: e,
@@ -301,21 +301,21 @@
 							subredditId: e
 						}).displayText);
 					return o.a.createElement("div", {
-						className: Object(v.a)(g.a.container, t)
+						className: Object(v.a)(N.a.container, t)
 					}, o.a.createElement("img", {
-						className: g.a.powerupsIcon,
+						className: N.a.powerupsIcon,
 						src: `${E.a.assetPath}/img/powerups/powerups-rangers.png`,
 						"data-testid": "powerups-icon-rangers"
 					}), o.a.createElement("h2", {
-						className: g.a.title
-					}, N._("Use your Powerup to support {subreddit name}", [N._param("subreddit name", r)], {
+						className: N.a.title
+					}, g._("Use your Powerup to support {subreddit name}", [g._param("subreddit name", r)], {
 						hk: "2OMTwG"
 					})), o.a.createElement("h3", {
-						className: g.a.subtitle
-					}, N._("Go ahead, show them some love!", null, {
+						className: N.a.subtitle
+					}, g._("Go ahead, show them some love!", null, {
 						hk: "3NzF6j"
 					})), o.a.createElement(h.a, {
-						className: g.a.button,
+						className: N.a.button,
 						onClick: () => {
 							a(Object(d.r)()), s(Object(O.f)("in_feed_unit"))
 						}
@@ -333,7 +333,7 @@
 				x = s("./src/reddit/actions/toaster.ts"),
 				D = s("./src/reddit/actions/urlRequested.ts"),
 				R = s("./src/reddit/components/Econ/Common/ModalCloseButton/index.tsx"),
-				M = s("./src/reddit/constants/gold.ts"),
+				M = s("./src/reddit/constants/avatars.ts"),
 				S = s("./src/reddit/controls/LoadingIcon/index.tsx"),
 				T = s("./src/reddit/helpers/avatar/index.ts"),
 				L = s("./src/reddit/models/Avatar/accessories.ts"),
@@ -344,7 +344,7 @@
 			const {
 				fbt: G
 			} = s("./node_modules/fbt/lib/FbtPublic.js");
-			var Y = Object(I.a)(({
+			var K = Object(I.a)(({
 				subredditId: e,
 				closeModal: t
 			}) => {
@@ -357,11 +357,11 @@
 				}, [a, s]);
 				const _ = async () => a(Object(D.a)("/user/me", !0)), p = G._("Nice! Ready to update your avatar?", null, {
 					hk: "20KFjx"
-				}), m = G._("Avatars and avatar visual elements © Reddit.", null, {
-					hk: "2Y4y3g"
-				}), b = G._("Learn more", null, {
-					hk: "2S4fxr"
-				});
+				}), {
+					legalCopy: m,
+					learnMoreText: b,
+					url: v
+				} = M.a;
 				return o.a.createElement(o.a.Fragment, null, o.a.createElement("div", {
 					className: W.a.modal
 				}, o.a.createElement("div", {
@@ -377,12 +377,12 @@
 					src: `${E.a.assetPath}/img/powerups/communityGear/${e}.png`
 				}), o.a.createElement("div", {
 					className: W.a.legalTextContainer
-				}, o.a.createElement("span", null, m), o.a.createElement("a", {
-					href: M.c,
+				}, o.a.createElement("span", null, m()), o.a.createElement("a", {
+					href: v,
 					target: j.d.BLANK,
 					className: W.a.learnMoreLink,
 					rel: j.c
-				}, b))), o.a.createElement("div", {
+				}, b()))), o.a.createElement("div", {
 					className: W.a.buttonsRow
 				}, o.a.createElement(U.s, {
 					className: W.a.button,
@@ -436,7 +436,7 @@
 				}))))))
 			});
 			const {
-				fbt: K
+				fbt: Y
 			} = s("./node_modules/fbt/lib/FbtPublic.js");
 			var H = ({
 					className: e,
@@ -455,11 +455,11 @@
 						className: P.a.headerText
 					}, o.a.createElement("h2", {
 						className: P.a.title
-					}, K._("Get the most out of Powerups", null, {
+					}, Y._("Get the most out of Powerups", null, {
 						hk: "4mSV6O"
 					})), o.a.createElement("h3", {
 						className: P.a.subtitle
-					}, K._("Show your support with exclusive gear", null, {
+					}, Y._("Show your support with exclusive gear", null, {
 						hk: "2rq6cz"
 					})))), o.a.createElement("div", {
 						className: P.a.contentWrapper
@@ -476,9 +476,9 @@
 							s(Object(d.m)()), (() => n(!0))()
 						},
 						isFullWidth: !0
-					}, K._("Wear your community gear", null, {
+					}, Y._("Wear your community gear", null, {
 						hk: "1Tt2q6"
-					})))), a && o.a.createElement(Y, {
+					})))), a && o.a.createElement(K, {
 						withOverlay: !0,
 						closeModal: i,
 						onOverlayClick: i,
@@ -611,39 +611,21 @@
 				}
 			}
 		},
-		"./src/reddit/constants/gold.ts": function(e, t, s) {
+		"./src/reddit/constants/avatars.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return a
-			})), s.d(t, "b", (function() {
 				return r
-			})), s.d(t, "e", (function() {
-				return o
-			})), s.d(t, "f", (function() {
-				return n
-			})), s.d(t, "g", (function() {
-				return i
-			})), s.d(t, "d", (function() {
-				return c
-			})), s.d(t, "j", (function() {
-				return d
-			})), s.d(t, "i", (function() {
-				return l
-			})), s.d(t, "h", (function() {
-				return u
-			})), s.d(t, "c", (function() {
-				return _
 			}));
-			const a = "ModerationPage--Modal--AddAward",
-				r = "ModerationPage--Modal--DeleteAwardConfirmation",
-				o = 20,
-				n = 4,
-				i = 1e4,
-				c = .2,
-				d = .1,
-				l = .1,
-				u = 500,
-				_ = "https://reddit.zendesk.com/hc/en-us/articles/360050641932"
+			var a = s("./node_modules/fbt/lib/FbtPublic.js");
+			const r = {
+				legalCopy: () => a.fbt._("Avatars and avatar visual elements © Reddit and its licensors.", null, {
+					hk: "ZgN7P"
+				}),
+				learnMoreText: () => a.fbt._("Learn more", null, {
+					hk: "1rlvT"
+				}),
+				url: "https://reddit.zendesk.com/hc/en-us/articles/360050641932"
+			}
 		},
 		"./src/reddit/helpers/avatar/index.ts": function(e, t, s) {
 			"use strict";
@@ -1004,4 +986,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.20d0bdd6daaac0d8c537.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.a344beadc0b40fda6d95.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.65dd3bcbd379d2070503.js
-// Retrieved at 10/28/2021, 11:20:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.d3bd074cc1bdf565aab9.js
+// Retrieved at 10/28/2021, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -3238,22 +3238,20 @@
 				return s
 			})), n.d(t, "b", (function() {
 				return o
-			})), n.d(t, "e", (function() {
-				return r
-			})), n.d(t, "f", (function() {
-				return i
-			})), n.d(t, "g", (function() {
-				return a
 			})), n.d(t, "d", (function() {
-				return c
-			})), n.d(t, "j", (function() {
-				return d
-			})), n.d(t, "i", (function() {
-				return l
-			})), n.d(t, "h", (function() {
-				return m
+				return r
+			})), n.d(t, "e", (function() {
+				return i
+			})), n.d(t, "f", (function() {
+				return a
 			})), n.d(t, "c", (function() {
-				return u
+				return c
+			})), n.d(t, "i", (function() {
+				return d
+			})), n.d(t, "h", (function() {
+				return l
+			})), n.d(t, "g", (function() {
+				return m
 			}));
 			const s = "ModerationPage--Modal--AddAward",
 				o = "ModerationPage--Modal--DeleteAwardConfirmation",
@@ -3263,8 +3261,7 @@
 				c = .2,
 				d = .1,
 				l = .1,
-				m = 500,
-				u = "https://reddit.zendesk.com/hc/en-us/articles/360050641932"
+				m = 500
 		},
 		"./src/reddit/controls/Checkbox/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -3861,4 +3858,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.65dd3bcbd379d2070503.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.d3bd074cc1bdf565aab9.js.map

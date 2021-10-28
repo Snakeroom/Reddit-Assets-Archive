@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AwardCreationModal.3a44d1adead639bd0df2.js
-// Retrieved at 10/7/2021, 8:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AwardCreationModal.abbd0f8eb182d80830e3.js
+// Retrieved at 10/28/2021, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AwardCreationModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, a) {
@@ -93,7 +93,7 @@
 						forceDecimals: p,
 						currency: g = t.currency || (t.type ? h(t.type) : r.c),
 						type: b = t.type || (t.currency ? u(t.currency) : r.b.Real)
-					} = t, C = Number(e), f = String(e);
+					} = t, f = Number(e), C = String(e);
 					switch (b) {
 						case r.b.Reddit: {
 							const e = r.e[g],
@@ -101,13 +101,13 @@
 							return Object(l.c)() ? new Intl.NumberFormat(a, {
 								currencyDisplay: "symbol",
 								...c
-							}).format(C) + " " + t : m(C, o, a, t)
+							}).format(f) + " " + t : m(f, o, a, t)
 						}
 						case r.b.Crypto: {
 							if (o) {
-								return Object(i.c)(f, d) + " " + g
+								return Object(i.c)(C, d) + " " + g
 							}
-							const e = Number(Object(i.b)(f, d));
+							const e = Number(Object(i.b)(C, d));
 							return Object(l.c)() ? new Intl.NumberFormat(a, {
 								style: "currency",
 								currency: g,
@@ -119,7 +119,7 @@
 						}
 						case r.b.Real:
 						default: {
-							const e = Number(Object(s.a)(f, p));
+							const e = Number(Object(s.a)(C, p));
 							return Object(l.c)() ? new Intl.NumberFormat(a, {
 								style: "currency",
 								currency: g,
@@ -208,8 +208,8 @@
 				p = (a("./node_modules/core-js/modules/web.dom.iterable.js"), a("./node_modules/fbt/lib/FbtPublic.js")),
 				g = a("./src/reddit/components/AwardCreationModal/index.m.less"),
 				b = a.n(g),
-				C = a("./src/higherOrderComponents/asModal/index.tsx"),
-				f = a("./src/lib/classNames/index.ts"),
+				f = a("./src/higherOrderComponents/asModal/index.tsx"),
+				C = a("./src/lib/classNames/index.ts"),
 				E = a("./src/lib/localizeCurrency/index.ts"),
 				y = a("./src/reddit/constants/colors.ts"),
 				w = a("./src/reddit/constants/gold.ts"),
@@ -226,8 +226,8 @@
 				P = a("./src/lib/currency/currencies.ts"),
 				F = a("./src/lib/timezone/index.ts"),
 				M = a("./src/reddit/models/PostCreationForm/index.ts"),
-				j = a("./src/reddit/components/PostCreationForm/SchedulePickerModal/DateInput/index.tsx"),
-				A = a("./src/reddit/components/PostCreationForm/SchedulePickerModal/TimeInput/index.tsx"),
+				A = a("./src/reddit/components/PostCreationForm/SchedulePickerModal/DateInput/index.tsx"),
+				j = a("./src/reddit/components/PostCreationForm/SchedulePickerModal/TimeInput/index.tsx"),
 				U = a("./src/reddit/components/PostCreationForm/SchedulePickerModal/TimezoneSelector/index.tsx"),
 				R = a("./src/reddit/components/AwardCreationModal/AwardImagePreview/index.m.less"),
 				L = a.n(R);
@@ -242,11 +242,11 @@
 						onRemove: a
 					} = this.props;
 					return s.a.createElement("div", {
-						className: Object(f.a)(L.a.previewComponent, e)
+						className: Object(C.a)(L.a.previewComponent, e)
 					}, s.a.createElement("div", {
 						className: L.a.preview
 					}, s.a.createElement("div", {
-						className: Object(f.a)(L.a.previewImg, L.a.largeSizeImg),
+						className: Object(C.a)(L.a.previewImg, L.a.largeSizeImg),
 						style: {
 							backgroundImage: `url(${t})`
 						}
@@ -255,16 +255,16 @@
 					}))), s.a.createElement("div", {
 						className: L.a.preview
 					}, s.a.createElement("div", {
-						className: Object(f.a)(L.a.previewImg, L.a.normalSizeImg),
+						className: Object(C.a)(L.a.previewImg, L.a.normalSizeImg),
 						style: {
 							backgroundImage: `url(${t})`
 						}
 					}), s.a.createElement("span", null, z._("Normal", null, {
 						hk: "337tns"
 					}))), s.a.createElement("div", {
-						className: Object(f.a)(L.a.preview, L.a.previewLast)
+						className: Object(C.a)(L.a.preview, L.a.previewLast)
 					}, s.a.createElement("div", {
-						className: Object(f.a)(L.a.previewImg, L.a.smallSizeImg),
+						className: Object(C.a)(L.a.previewImg, L.a.smallSizeImg),
 						style: {
 							backgroundImage: `url(${t})`
 						}
@@ -306,10 +306,10 @@
 					return a ? s.a.createElement(H.a, {
 						className: e
 					}) : s.a.createElement(K.a, {
-						className: Object(f.a)(e, Y.a.fileDrop),
+						className: Object(C.a)(e, Y.a.fileDrop),
 						onDrop: r,
 						render: e => s.a.createElement("label", {
-							className: Object(f.a)(Y.a.fileDropContent, e && Y.a.fileIsOver || ""),
+							className: Object(C.a)(Y.a.fileDropContent, e && Y.a.fileIsOver || ""),
 							onKeyDown: this.handleLabelKeydown,
 							tabIndex: 0
 						}, s.a.createElement("div", {
@@ -397,7 +397,7 @@
 						imageUploadInProgress: r
 					} = this.state, o = !1 === a ? Y.a.invalid : "";
 					return s.a.createElement("div", {
-						className: Object(f.a)(e, Y.a.imageUploader, o)
+						className: Object(C.a)(e, Y.a.imageUploader, o)
 					}, s.a.createElement(Q, {
 						id: t,
 						isUploading: r,
@@ -507,8 +507,8 @@
 				}, r)
 			};
 			const be = "CommunityAwardCreationModalImageInput",
-				Ce = 15,
-				fe = 30,
+				fe = 15,
+				Ce = 30,
 				Ee = 2097152,
 				ye = 512,
 				we = 512,
@@ -517,11 +517,11 @@
 				Te = 500,
 				xe = e => {
 					const t = e || 0;
-					return t >= w.g ? t * w.i : t * w.d
+					return t >= w.f ? t * w.h : t * w.c
 				},
 				Se = e => {
 					const t = e || 0;
-					return t >= w.g ? t * w.j : 0
+					return t >= w.f ? t * w.i : 0
 				},
 				Ne = e => e.slice(0, 5),
 				Oe = (e, t) => `${e}T${Ne(t)}:00`,
@@ -644,11 +644,11 @@
 							startTime: h,
 							endDate: g,
 							endTime: b,
-							nameValue: C,
-							selectedPackage: f,
+							nameValue: f,
+							selectedPackage: C,
 							websocket: E
 						} = this.state;
-						if (!(o && C && r && E)) return;
+						if (!(o && f && r && E)) return;
 						if (E.readyState !== E.OPEN) {
 							return this.handleImageRemoval(), void n(p.fbt._("There was an error creating the award. Please try again.", null, {
 								hk: "1pkgpd"
@@ -660,7 +660,7 @@
 						w.setTime(w.getTime()), v.setTime(v.getTime());
 						const I = d ? w.toISOString() : void 0,
 							T = d ? v.toISOString() : void 0;
-						c ? await a(C, o, i, l, f.monthsOfPremium, I, T) : await t(C, o, i, l, r, I, T);
+						c ? await a(f, o, i, l, C.monthsOfPremium, I, T) : await t(f, o, i, l, r, I, T);
 						const x = await y;
 						if (!x.ok) {
 							return this.handleImageRemoval(), void n(p.fbt._("There was an error creating the award. Please try again.", null, {
@@ -787,7 +787,7 @@
 						nameValue: m
 					} = this.state, u = e.filter(e => e.awardType === I.f.Moderator);
 					return s.a.createElement("section", {
-						className: Object(f.a)(t, b.a.communityAwardCreationModal)
+						className: Object(C.a)(t, b.a.communityAwardCreationModal)
 					}, s.a.createElement(x.i, null, s.a.createElement(_.a, null, s.a.createElement(x.q, null, p.fbt._("Create Award", null, {
 						hk: "JQtjM"
 					})), s.a.createElement(D.a, {
@@ -801,7 +801,7 @@
 						hk: "3PlUgw"
 					})), s.a.createElement(N.b, {
 						className: b.a.nameInput,
-						maxLength: fe,
+						maxLength: Ce,
 						name: "awardName",
 						onFocus: this.handleNameFocus,
 						onBlur: this.handleNameBlur,
@@ -813,7 +813,7 @@
 						value: m
 					})), s.a.createElement("div", {
 						className: b.a.formSubtext
-					}, fe - m.length)), s.a.createElement("div", {
+					}, Ce - m.length)), s.a.createElement("div", {
 						className: b.a.formSection
 					}, s.a.createElement("label", {
 						className: b.a.formLabelText,
@@ -845,8 +845,8 @@
 						hk: "2A77pK"
 					})), s.a.createElement("span", null, p.fbt._("File size limited to {maxImageFileSize}MB", [p.fbt._param("maxImageFileSize", Ee / 1048576)], {
 						hk: "2iX7Vn"
-					}))))), u.length < w.f && s.a.createElement("div", {
-						className: Object(f.a)(b.a.formSection, b.a.modToggleSection)
+					}))))), u.length < w.e && s.a.createElement("div", {
+						className: Object(C.a)(b.a.formSection, b.a.modToggleSection)
 					}, s.a.createElement("label", null, 0 !== this.costOptions.length && s.a.createElement(k.a, {
 						activeColorOverride: y.b.moderator,
 						className: b.a.modToggle,
@@ -857,7 +857,7 @@
 					}, p.fbt._("Exclusive for Mods", null, {
 						hk: "1d7p5V"
 					})))), this.renderCostDropdown(), o && s.a.createElement("div", {
-						className: Object(f.a)(b.a.formSection, b.a.modToggleSection)
+						className: Object(C.a)(b.a.formSection, b.a.modToggleSection)
 					}, s.a.createElement("label", null, s.a.createElement(k.a, {
 						activeColorOverride: y.b.moderator,
 						className: b.a.modToggle,
@@ -878,7 +878,7 @@
 						disabled: !this.inputsAreValid() || n,
 						onClick: this.handleSubmit
 					}, n ? s.a.createElement(O.a, {
-						sizePx: Ce
+						sizePx: fe
 					}) : p.fbt._("Create", null, {
 						hk: "42PxFO"
 					})))))
@@ -956,10 +956,10 @@
 						className: b.a.formLabelText
 					}, p.fbt._("Start Date and Time", null, {
 						hk: "SAI4F"
-					})), s.a.createElement(j.a, {
+					})), s.a.createElement(A.a, {
 						onChange: this.onStartDateChange,
 						value: this.state.startDate
-					}), s.a.createElement(A.a, {
+					}), s.a.createElement(j.a, {
 						className: b.a.timeInput,
 						onChange: this.onStartTimeChange,
 						value: this.state.startTime
@@ -969,10 +969,10 @@
 						className: b.a.formLabelText
 					}, p.fbt._("End Date and Time", null, {
 						hk: "zCwiW"
-					})), s.a.createElement(j.a, {
+					})), s.a.createElement(A.a, {
 						onChange: this.onEndDateChange,
 						value: this.state.endDate
-					}), s.a.createElement(A.a, {
+					}), s.a.createElement(j.a, {
 						className: b.a.timeInput,
 						onChange: this.onEndTimeChange,
 						value: this.state.endTime
@@ -990,11 +990,11 @@
 					})))) : null
 				}
 			}
-			var Pe = Object(C.a)(_e),
+			var Pe = Object(f.a)(_e),
 				Fe = a("./src/reddit/controls/NumberInput/index.tsx");
 			const Me = "GlobalAwardCreationModalImageInput",
-				je = 15,
-				Ae = 30,
+				Ae = 15,
+				je = 30,
 				Ue = 2097152,
 				Re = 512,
 				Le = 512,
@@ -1128,8 +1128,8 @@
 							imageHeight: h,
 							imageUrl: g,
 							imageWidth: b,
-							isNew: C,
-							isTemporary: f,
+							isNew: f,
+							isTemporary: C,
 							nameValue: E,
 							pennyDonate: y,
 							pennyPrice: w,
@@ -1150,8 +1150,8 @@
 							D = Object(F.f)(He(T, x)),
 							k = Object(F.f)(He(c, d));
 						D.setTime(D.getTime()), k.setTime(k.getTime());
-						const _ = f ? D.toISOString() : void 0,
-							P = f ? k.toISOString() : void 0;
+						const _ = C ? D.toISOString() : void 0,
+							P = C ? k.toISOString() : void 0;
 						await t({
 							awardName: E,
 							awardSubType: v,
@@ -1166,7 +1166,7 @@
 							imageHeight: h,
 							imageUrl: g,
 							imageWidth: b,
-							isNew: C,
+							isNew: f,
 							pennyDonate: y,
 							pennyPrice: w,
 							startDate: _,
@@ -1178,8 +1178,8 @@
 								hk: "1pkgpd"
 							}))
 						}
-						const j = M.award;
-						j.awardType = j.awardType.toUpperCase(), n(j), this.props.sendEvent(Object(u.b)(this.state.imageUrl, this.imageDraft, j))
+						const A = M.award;
+						A.awardType = A.awardType.toUpperCase(), n(A), this.props.sendEvent(Object(u.b)(this.state.imageUrl, this.imageDraft, A))
 					}, this.onStartDateChange = e => {
 						this.setState({
 							startDate: e
@@ -1293,7 +1293,7 @@
 						nameValue: c
 					} = this.state;
 					return s.a.createElement("section", {
-						className: Object(f.a)(e, b.a.communityAwardCreationModal)
+						className: Object(C.a)(e, b.a.communityAwardCreationModal)
 					}, s.a.createElement(x.i, null, s.a.createElement(_.a, null, s.a.createElement(x.q, null, p.fbt._("Create Award", null, {
 						hk: "JQtjM"
 					})), s.a.createElement(D.a, {
@@ -1307,7 +1307,7 @@
 						hk: "3PlUgw"
 					})), s.a.createElement(N.b, {
 						className: b.a.nameInput,
-						maxLength: Ae,
+						maxLength: je,
 						name: "awardName",
 						onChange: this.handleNameChange,
 						placeholder: p.fbt._("Name of Award", null, {
@@ -1317,7 +1317,7 @@
 						value: c
 					})), s.a.createElement("div", {
 						className: b.a.formSubtext
-					}, Ae - c.length)), s.a.createElement("div", {
+					}, je - c.length)), s.a.createElement("div", {
 						className: b.a.formSection
 					}, s.a.createElement("label", {
 						className: b.a.formLabelText,
@@ -1367,7 +1367,7 @@
 					}, p.fbt._('Use "{coinSymbol}" for the coin symbol', [p.fbt._param("coinSymbol", "%{coin_symbol}")], {
 						hk: "40lFWr"
 					}))), this.renderCostSelector(), s.a.createElement("div", {
-						className: Object(f.a)(b.a.formSection, b.a.modToggleSection)
+						className: Object(C.a)(b.a.formSection, b.a.modToggleSection)
 					}, s.a.createElement("label", null, s.a.createElement(k.a, {
 						activeColorOverride: y.b.moderator,
 						className: b.a.modToggle,
@@ -1388,7 +1388,7 @@
 						disabled: !this.inputsAreValid() || a,
 						onClick: this.handleSubmit
 					}, a ? s.a.createElement(O.a, {
-						sizePx: je
+						sizePx: Ae
 					}) : p.fbt._("Create", null, {
 						hk: "42PxFO"
 					})))))
@@ -1456,10 +1456,10 @@
 						className: b.a.formLabelText
 					}, p.fbt._("Start Date and Time", null, {
 						hk: "SAI4F"
-					})), s.a.createElement(j.a, {
+					})), s.a.createElement(A.a, {
 						onChange: this.onStartDateChange,
 						value: this.state.startDate
-					}), s.a.createElement(A.a, {
+					}), s.a.createElement(j.a, {
 						className: b.a.timeInput,
 						onChange: this.onStartTimeChange,
 						value: this.state.startTime
@@ -1469,10 +1469,10 @@
 						className: b.a.formLabelText
 					}, p.fbt._("End Date and Time", null, {
 						hk: "zCwiW"
-					})), s.a.createElement(j.a, {
+					})), s.a.createElement(A.a, {
 						onChange: this.onEndDateChange,
 						value: this.state.endDate
-					}), s.a.createElement(A.a, {
+					}), s.a.createElement(j.a, {
 						className: b.a.timeInput,
 						onChange: this.onEndTimeChange,
 						value: this.state.endTime
@@ -1501,7 +1501,7 @@
 						pennyPrice: l
 					} = this.state;
 					return s.a.createElement(s.a.Fragment, null, this.renderIconFormatDropdown(), this.renderAwardSubTypeDropdown(), s.a.createElement("div", {
-						className: Object(f.a)(b.a.formSection, b.a.modToggleSection)
+						className: Object(C.a)(b.a.formSection, b.a.modToggleSection)
 					}, s.a.createElement("label", null, s.a.createElement(k.a, {
 						activeColorOverride: y.b.moderator,
 						className: b.a.modToggle,
@@ -1581,7 +1581,7 @@
 					}))))
 				}
 			}
-			var Xe = Object(C.a)(qe);
+			var Xe = Object(f.a)(qe);
 
 			function Ye() {
 				return (Ye = Object.assign || function(e) {
@@ -1623,8 +1623,8 @@
 						imageWidth: p,
 						isNew: g,
 						pennyPrice: b,
-						pennyDonate: C,
-						startDate: f,
+						pennyDonate: f,
+						startDate: C,
 						subredditCoinReward: E
 					}) => e(Object(d.e)({
 						awardSubType: a,
@@ -1641,9 +1641,9 @@
 						iconHeight: u,
 						isNew: g,
 						pennyPrice: b,
-						pennyDonate: C,
+						pennyDonate: f,
 						name: t,
-						startsAt: f,
+						startsAt: C,
 						subredditCoinReward: E
 					})),
 					onCreateAwardFailed: t => e(Object(d.b)(t)),
@@ -1739,7 +1739,7 @@
 						month: "short"
 					})
 				},
-				C = e => {
+				f = e => {
 					const [t, a, n] = e.split("-").map(Number);
 					return {
 						year: t,
@@ -1747,11 +1747,11 @@
 						day: n
 					}
 				};
-			class f extends o.a.PureComponent {
+			class C extends o.a.PureComponent {
 				constructor() {
 					super(...arguments), this.onChange = e => {
 						const t = {
-								...C(this.props.value),
+								...f(this.props.value),
 								...e
 							},
 							{
@@ -1783,7 +1783,7 @@
 						year: e,
 						month: t,
 						day: a
-					} = C(this.props.value);
+					} = f(this.props.value);
 					return o.a.createElement(u, {
 						className: this.props.className
 					}, o.a.createElement(h, {
@@ -1807,7 +1807,7 @@
 					}, e))))
 				}
 			}
-			var E = f,
+			var E = C,
 				y = a("./src/reddit/components/PostCreationForm/SchedulePickerModal/DateInput/index.m.less"),
 				w = a.n(y);
 
@@ -1869,11 +1869,11 @@
 				p = u.a.input("Input", m.a),
 				g = u.a.span("Delimiter", m.a),
 				b = e => ("0" + e).slice(-2),
-				C = (e, t) => {
+				f = (e, t) => {
 					const a = +e.slice(-2);
 					if (Number.isInteger(a)) return a > t ? 0 : a
 				};
-			class f extends o.a.PureComponent {
+			class C extends o.a.PureComponent {
 				constructor(e) {
 					super(e), this.callOnChange = () => {
 						let e = l()(+this.state.hour, 0, 24);
@@ -1885,12 +1885,12 @@
 						const a = `${b(e)}:${b(t)}`;
 						this.props.onChange(a)
 					}, this.onChangeHour = e => {
-						const t = C(e.target.value, 24);
+						const t = f(e.target.value, 24);
 						void 0 !== t && this.setState({
 							hour: t
 						}, this.callOnChange)
 					}, this.onChangeMinute = e => {
-						const t = C(e.target.value, 59);
+						const t = f(e.target.value, 59);
 						void 0 !== t && this.setState({
 							minute: t
 						}, this.callOnChange)
@@ -1938,7 +1938,7 @@
 					}))
 				}
 			}
-			var E = f,
+			var E = C,
 				y = a("./src/reddit/components/PostCreationForm/SchedulePickerModal/TimeInput/index.m.less"),
 				w = a.n(y);
 
@@ -2204,4 +2204,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AwardCreationModal.3a44d1adead639bd0df2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AwardCreationModal.abbd0f8eb182d80830e3.js.map
