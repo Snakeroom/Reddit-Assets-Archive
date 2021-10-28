@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.9a24ee4d6c8099c53b7c.js
-// Retrieved at 10/27/2021, 1:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.53d06e2a08601463e6b1.js
+// Retrieved at 10/28/2021, 11:20:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, n) {
@@ -21002,7 +21002,7 @@
 			var _l = n("./src/reddit/components/PostCreationForm/index.m.less"),
 				El = n.n(_l);
 			const xl = ne.a.div("FormContent", El.a),
-				vl = ne.a.wrapped(x.a, "CrosspostBox", El.a),
+				vl = ne.a.wrapped(x.c, "CrosspostBox", El.a),
 				Ol = ne.a.div("FormContainer", El.a),
 				yl = ne.a.div("TabContent", El.a),
 				kl = Object(y.u)({
@@ -22781,4 +22781,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.9a24ee4d6c8099c53b7c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.53d06e2a08601463e6b1.js.map

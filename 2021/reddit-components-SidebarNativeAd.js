@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.f5300f9aab4955bdec59.js
-// Retrieved at 10/26/2021, 2:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.9cc685c1704a7c737e65.js
+// Retrieved at 10/28/2021, 11:20:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, r) {
@@ -1369,10 +1369,11 @@
 				const {
 					post: t
 				} = e;
-				return t.crosspostRootId ? s.a.createElement(o.a, {
+				return t.crosspostRootId ? s.a.createElement(o.c, {
 					postId: t.crosspostRootId,
 					mediaProps: {
 						...e,
+						availableWidth: e.availableWidth ? e.availableWidth - 2 * o.b - 2 * o.a : void 0,
 						crosspost: t,
 						primaryContent: !1
 					}
@@ -1473,10 +1474,10 @@
 				G = r("./src/reddit/hooks/useExperimentVariant.ts"),
 				H = r("./src/reddit/hooks/usePostContext.ts"),
 				V = r("./src/reddit/hooks/useTheme.ts"),
-				z = r("./src/telemetry/models/Outbound.ts");
+				W = r("./src/telemetry/models/Outbound.ts");
 
-			function W() {
-				return (W = Object.assign || function(e) {
+			function z() {
+				return (z = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var r = arguments[t];
 						for (var n in r) Object.prototype.hasOwnProperty.call(r, n) && (e[n] = r[n])
@@ -1533,7 +1534,7 @@
 					titleColor: r,
 					children: n,
 					...s
-				}) => o.a.createElement(a.a, W({}, s, {
+				}) => o.a.createElement(a.a, z({}, s, {
 					className: Object(l.a)(e, F.a.styledLink, {
 						[F.a.isVisitedEnabled]: !t
 					})
@@ -1631,7 +1632,7 @@
 						post: r
 					} = e, {
 						isSponsored: n
-					} = r, s = e.isCommentsPage ? z.SourceElement.PostLink : z.SourceElement.ListingPostLink, i = !t && !e.isCrosspost && e.size !== P.Large && !r.isSponsored && !(r.media && Object(O.H)(r.media)) && (r.source || r.media && (r.media.type === O.o.GIFVIDEO || r.media.type === O.o.IMAGE || r.media.type === O.o.EMBED));
+					} = r, s = e.isCommentsPage ? W.SourceElement.PostLink : W.SourceElement.ListingPostLink, i = !t && !e.isCrosspost && e.size !== P.Large && !r.isSponsored && !(r.media && Object(O.H)(r.media)) && (r.source || r.media && (r.media.type === O.o.GIFVIDEO || r.media.type === O.o.IMAGE || r.media.type === O.o.EMBED));
 					if (t || !e.isCommentsPage || e.isCommentPermalink || e.shouldLinkWrap) {
 						if (i) return o.a.createElement(b.a, {
 							className: e.outboundLinkClassName,
@@ -1687,7 +1688,7 @@
 						post: c,
 						sendEvent: this.props.sendEvent,
 						showCategoryTag: !1
-					}), E && o.a.createElement(X, W({}, this.props, {
+					}), E && o.a.createElement(X, z({}, this.props, {
 						leftFlair: d ? f : void 0
 					})), a && o.a.createElement(R, {
 						className: F.a.pollMeta,
@@ -1719,7 +1720,7 @@
 					})),
 					a = Object(V.a)(),
 					c = Object(u.b)();
-				return n ? o.a.createElement(J, W({
+				return n ? o.a.createElement(J, z({
 					pageLayer: t,
 					isCommentPermalink: r
 				}, n, s, e, {
@@ -1870,8 +1871,8 @@
 				G = m.a.wrapped(S.a, "OutboundLinkIcon", L.a),
 				H = m.a.div("SourceLinkWrapper", L.a),
 				V = m.a.div("TopLine", L.a),
-				z = m.a.wrapped(c.c, "PostTitle", L.a),
-				W = m.a.div("PostMediaWrapper", L.a),
+				W = m.a.wrapped(c.c, "PostTitle", L.a),
+				z = m.a.div("PostMediaWrapper", L.a),
 				Y = m.a.div("BackgroundWrapper", L.a),
 				q = m.a.wrapped(h.a, "PostContainer", L.a),
 				K = 640,
@@ -1922,7 +1923,7 @@
 						tooltipType: s ? d.c.Lightbox : void 0,
 						post: e,
 						showTimestamp: !1
-					})), o.a.createElement(z, {
+					})), o.a.createElement(W, {
 						post: e,
 						size: c.b.Large,
 						format: Q
@@ -1931,7 +1932,7 @@
 						isSponsored: !0,
 						postId: e.id,
 						source: e.source
-					}, Object(u.a)(e), o.a.createElement(G, null))), o.a.createElement(W, null, e.media && o.a.createElement(a.a, {
+					}, Object(u.a)(e), o.a.createElement(G, null))), o.a.createElement(z, null, e.media && o.a.createElement(a.a, {
 						isListing: !0,
 						isNotCardView: !0,
 						showCentered: !0,
@@ -3853,4 +3854,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.f5300f9aab4955bdec59.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.9cc685c1704a7c737e65.js.map

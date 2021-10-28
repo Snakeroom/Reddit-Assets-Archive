@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.8b0989dbd3ccd5a0b681.js
-// Retrieved at 10/26/2021, 2:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.f04ed14a01938142cea7.js
+// Retrieved at 10/28/2021, 11:20:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CompactPost", "Reddit~StandalonePostPage~reddit-components-MediumPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1657,8 +1657,8 @@
 				G = n("./src/reddit/components/PostBadges/index.tsx"),
 				V = n("./src/reddit/components/PostContainer/index.tsx"),
 				Y = n("./src/reddit/components/PostFlairPicker/index.tsx"),
-				H = n("./src/reddit/components/PostLeftRail/index.tsx"),
-				W = n("./src/reddit/components/PostMedia/index.tsx"),
+				W = n("./src/reddit/components/PostLeftRail/index.tsx"),
+				H = n("./src/reddit/components/PostMedia/index.tsx"),
 				z = n("./src/reddit/components/PostModModeDropdown/index.tsx"),
 				q = n("./src/reddit/components/PostOverflowMenu/index.tsx"),
 				Q = n("./src/reddit/components/PostTitle/index.tsx"),
@@ -1765,7 +1765,7 @@
 						isOverlay: g,
 						isProfilePostListing: C,
 						inSubredditOrProfile: P = !1,
-						layout: W,
+						layout: H,
 						moderatorPermissions: X,
 						modModeEnabled: $,
 						onClickPost: ne,
@@ -1784,9 +1784,9 @@
 						sendEvent: ye,
 						shouldShowGalleryTileOption: Te,
 						showPromotedCTA: we
-					} = this.props, ke = !!ue.media && ue.media.type === f.o.RTJSON, Ae = fe && ke, Pe = Object(Y.b)(ue.id, g), Ne = Object(ce.a)(X), Re = Object(ae.a)(X), De = Object(ie.a)(X), Le = `-mod-actions-menu-${ue.id}`, Fe = `voting-arrows-${ue.id}`, Me = !!o && Object(_.e)(o) === ue.author, Ue = Object(M.c)(ue), Be = Object(R.a)("View--Reports", ue.id, Ce), Ge = Object(M.a)(ue), Ve = !(g || h || O), Ye = ue.media && ue.media.type === f.o.LIVEVIDEO, He = e => ye(Object(b.h)(ue.id, e)), We = Object(c.t)(ue, v), {
+					} = this.props, ke = !!ue.media && ue.media.type === f.o.RTJSON, Ae = fe && ke, Pe = Object(Y.b)(ue.id, g), Ne = Object(ce.a)(X), Re = Object(ae.a)(X), De = Object(ie.a)(X), Le = `-mod-actions-menu-${ue.id}`, Fe = `voting-arrows-${ue.id}`, Me = !!o && Object(_.e)(o) === ue.author, Ue = Object(M.c)(ue), Be = Object(R.a)("View--Reports", ue.id, Ce), Ge = Object(M.a)(ue), Ve = !(g || h || O), Ye = ue.media && ue.media.type === f.o.LIVEVIDEO, We = e => ye(Object(b.h)(ue.id, e)), He = Object(c.t)(ue, v), {
 						source: ze
-					} = We, qe = r.a.createElement(V.a, {
+					} = He, qe = r.a.createElement(V.a, {
 						className: Object(d.a)(ve.a.compactPostStyles, he.a.postContainer, Object(p.a)(this.props), t),
 						isOverlay: g,
 						style: {
@@ -1803,7 +1803,7 @@
 					}, r.a.createElement("div", {
 						className: he.a.leftRail,
 						style: {
-							borderColor: Object(H.c)({
+							borderColor: Object(W.c)({
 								isRemoved: !!ue.bannedBy,
 								isReported: Object(m.a)(ue),
 								isSponsored: ue.isSponsored,
@@ -1890,14 +1890,14 @@
 					}), r.a.createElement(U.a, {
 						className: he.a.modToolsFlatlist,
 						isOverlay: !1,
-						layout: W,
+						layout: H,
 						modModeEnabled: $,
 						post: ue,
 						sendEvent: ye,
 						showIconsOnly: !0
 					}), Ne && r.a.createElement(L.a, {
 						dropdownId: Le,
-						onClick: () => He("post_mod_action_menu")
+						onClick: () => We("post_mod_action_menu")
 					}, r.a.createElement(N.b, null), r.a.createElement(z.a, {
 						canEditFlair: Re && Se,
 						hasModPostPerms: Ne,
@@ -1910,13 +1910,13 @@
 					})), Ne && Ue && !$ && r.a.createElement(J.c, {
 						text: `${Ge}`,
 						onClick: () => {
-							this.props.onOpenReportsDropdown(Be), He("post_report_menu")
+							this.props.onOpenReportsDropdown(Be), We("post_report_menu")
 						},
 						id: Be
 					}, r.a.createElement(te.a, {
 						model: ue,
 						onIgnoreReports: () => {
-							oe(), He(ue.ignoreReports ? "restore_reports" : "ignore_reports")
+							oe(), We(ue.ignoreReports ? "restore_reports" : "ignore_reports")
 						},
 						tooltipId: Be
 					}), ue.ignoreReports ? r.a.createElement(pe.a, null) : r.a.createElement(be.a, null)), r.a.createElement(q.a, {
@@ -1924,7 +1924,7 @@
 						isCommentsPage: h,
 						isOverlay: !1,
 						isProfilePostListing: C,
-						layout: W,
+						layout: H,
 						permalink: ue.permalink,
 						sendEvent: ye,
 						showEditPost: Ae,
@@ -1949,7 +1949,7 @@
 						className: he.a.adLinkWrapper
 					}, r.a.createElement(y.a, {
 						post: ue,
-						adLinkContent: We,
+						adLinkContent: He,
 						isCompact: !0
 					})), $ && Ne && Ue && r.a.createElement("div", {
 						className: he.a.compactPostRow
@@ -1977,7 +1977,7 @@
 				}, e.post.crosspostRootId ? r.a.createElement("div", {
 					className: he.a.crosspostMediaWrapper
 				}, ye(e.post, e.scrollerItemRef, e.shouldShowGalleryTileOption, e.isGalleryTileLayoutDefault)) : ye(e.post, e.scrollerItemRef, e.shouldShowGalleryTileOption, e.isGalleryTileLayoutDefault)),
-				ye = (e, t, n, s) => r.a.createElement(W.a, {
+				ye = (e, t, n, s) => r.a.createElement(H.a, {
 					isExpando: !0,
 					isGalleryTileLayoutDefault: s,
 					isListing: !0,
@@ -2130,17 +2130,17 @@
 					rootMargin: "2000px 0px 2000px 0px"
 				});
 				Object(i.a)(A, V, Y.current);
-				const H = Object(o.a)(t);
+				const W = Object(o.a)(t);
 				Object(s.useEffect)(() => {
-					if (void 0 !== H && H !== t) {
-						const e = t - H;
+					if (void 0 !== W && W !== t) {
+						const e = t - W;
 						M.current ? (P.current(e), b && b()) : F.current += e
 					}
 					return () => {
 						clearTimeout(D.current), clearTimeout(L.current), clearTimeout(N.current)
 					}
 				}, [t]);
-				const W = Object(s.useCallback)(() => j(!0), [j]),
+				const H = Object(s.useCallback)(() => j(!0), [j]),
 					z = 0 === y.length,
 					q = C || z,
 					Q = Object(s.useRef)(((e, t) => `${t}_${e}_count_anim`)(v, n));
@@ -2160,7 +2160,7 @@
 						"aria-hidden": !0,
 						className: l.a.digitDeltaWrapper,
 						key: t,
-						onTransitionEnd: W,
+						onTransitionEnd: H,
 						style: S && y.length > 0 && !C ? {
 							transform: `translateY(-${O&&n.length>1?100:100*(n.length-1)}%)`,
 							transitionDuration: `${(O?500:750)/1e3}s`
@@ -3234,10 +3234,11 @@
 				const {
 					post: t
 				} = e;
-				return t.crosspostRootId ? r.a.createElement(o.a, {
+				return t.crosspostRootId ? r.a.createElement(o.c, {
 					postId: t.crosspostRootId,
 					mediaProps: {
 						...e,
+						availableWidth: e.availableWidth ? e.availableWidth - 2 * o.b - 2 * o.a : void 0,
 						crosspost: t,
 						primaryContent: !1
 					}
@@ -3338,10 +3339,10 @@
 				G = n("./src/reddit/hooks/useExperimentVariant.ts"),
 				V = n("./src/reddit/hooks/usePostContext.ts"),
 				Y = n("./src/reddit/hooks/useTheme.ts"),
-				H = n("./src/telemetry/models/Outbound.ts");
+				W = n("./src/telemetry/models/Outbound.ts");
 
-			function W() {
-				return (W = Object.assign || function(e) {
+			function H() {
+				return (H = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var s in n) Object.prototype.hasOwnProperty.call(n, s) && (e[s] = n[s])
@@ -3398,7 +3399,7 @@
 					titleColor: n,
 					children: s,
 					...r
-				}) => o.a.createElement(i.a, W({}, r, {
+				}) => o.a.createElement(i.a, H({}, r, {
 					className: Object(l.a)(e, M.a.styledLink, {
 						[M.a.isVisitedEnabled]: !t
 					})
@@ -3496,7 +3497,7 @@
 						post: n
 					} = e, {
 						isSponsored: s
-					} = n, r = e.isCommentsPage ? H.SourceElement.PostLink : H.SourceElement.ListingPostLink, a = !t && !e.isCrosspost && e.size !== P.Large && !n.isSponsored && !(n.media && Object(S.H)(n.media)) && (n.source || n.media && (n.media.type === S.o.GIFVIDEO || n.media.type === S.o.IMAGE || n.media.type === S.o.EMBED));
+					} = n, r = e.isCommentsPage ? W.SourceElement.PostLink : W.SourceElement.ListingPostLink, a = !t && !e.isCrosspost && e.size !== P.Large && !n.isSponsored && !(n.media && Object(S.H)(n.media)) && (n.source || n.media && (n.media.type === S.o.GIFVIDEO || n.media.type === S.o.IMAGE || n.media.type === S.o.EMBED));
 					if (t || !e.isCommentsPage || e.isCommentPermalink || e.shouldLinkWrap) {
 						if (a) return o.a.createElement(f.a, {
 							className: e.outboundLinkClassName,
@@ -3552,7 +3553,7 @@
 						post: c,
 						sendEvent: this.props.sendEvent,
 						showCategoryTag: !1
-					}), O && o.a.createElement(Z, W({}, this.props, {
+					}), O && o.a.createElement(Z, H({}, this.props, {
 						leftFlair: d ? b : void 0
 					})), i && o.a.createElement(N, {
 						className: M.a.pollMeta,
@@ -3584,7 +3585,7 @@
 					})),
 					i = Object(Y.a)(),
 					c = Object(u.b)();
-				return s ? o.a.createElement($, W({
+				return s ? o.a.createElement($, H({
 					pageLayer: t,
 					isCommentPermalink: n
 				}, s, r, e, {
@@ -7386,4 +7387,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.8b0989dbd3ccd5a0b681.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.f04ed14a01938142cea7.js.map

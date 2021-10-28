@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.9f1ef2ee151dc7dba80a.js
-// Retrieved at 10/26/2021, 2:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.05aafb68cd0a133a8f8c.js
+// Retrieved at 10/28/2021, 11:20:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255"], {
 		"./src/lib/unicodeUtils/index.ts": function(e, t, s) {
@@ -58,6 +58,11 @@
 		},
 		"./src/reddit/components/CrosspostBox/index.tsx": function(e, t, s) {
 			"use strict";
+			s.d(t, "b", (function() {
+				return j
+			})), s.d(t, "a", (function() {
+				return S
+			}));
 			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
 				r = s("./node_modules/react/index.js"),
 				o = s.n(r),
@@ -88,22 +93,24 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const j = O.a.div("Container", g.a),
-				S = O.a.div("PostMetaWrapper", g.a),
-				I = O.a.wrapped(p.c, "PostTitle", g.a),
-				k = O.a.div("FlatList", g.a),
-				C = O.a.div("FlatItem", g.a),
-				T = O.a.span("FlatListDotSpacer", g.a),
-				L = O.a.wrapped(j, "LinkContainer", g.a),
-				P = O.a.div("Content", g.a),
-				w = O.a.div("ThumbnailContainer", g.a),
-				N = Object(c.c)({
+			const j = 8,
+				S = 1,
+				I = O.a.div("Container", g.a),
+				k = O.a.div("PostMetaWrapper", g.a),
+				C = O.a.wrapped(p.c, "PostTitle", g.a),
+				T = O.a.div("FlatList", g.a),
+				L = O.a.div("FlatItem", g.a),
+				P = O.a.span("FlatListDotSpacer", g.a),
+				w = O.a.wrapped(I, "LinkContainer", g.a),
+				N = O.a.div("Content", g.a),
+				M = O.a.div("ThumbnailContainer", g.a),
+				R = Object(c.c)({
 					isCurrentUserProfilePost: E.l,
 					isTopicPage: e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== x.Lb.TOPIC),
 					shouldOpenPostInNewTab: v.db
 				}),
-				M = Object(a.b)(N);
-			t.a = Object(f.b)(M(e => {
+				B = Object(a.b)(R);
+			t.c = Object(f.b)(B(e => {
 				const {
 					className: t,
 					isCurrentUserProfilePost: s,
@@ -124,21 +131,21 @@
 						tooltipType: `CrosspostBox--${r.isListing}`
 					},
 					d = t;
-				return a && !a.media ? o.a.createElement(L, {
+				return a && !a.media ? o.a.createElement(w, {
 					className: d
-				}, o.a.createElement(P, null, o.a.createElement(S, null, o.a.createElement(m.a, c)), R(a), a.source && o.a.createElement(b.a, {
+				}, o.a.createElement(N, null, o.a.createElement(k, null, o.a.createElement(m.a, c)), F(a), a.source && o.a.createElement(b.a, {
 					post: a
-				}), F(e)), H(e)) : o.a.createElement(j, {
+				}), H(e)), U(e)) : o.a.createElement(I, {
 					className: d
-				}, o.a.createElement(S, null, o.a.createElement(m.a, c)), R(a), B(e), F(e))
+				}, o.a.createElement(k, null, o.a.createElement(m.a, c)), F(a), D(e), H(e))
 			}));
-			const R = e => o.a.createElement(I, {
+			const F = e => o.a.createElement(C, {
 					isCrosspost: !0,
 					post: e,
 					shouldLinkWrap: !0,
 					size: p.b.Small
 				}),
-				B = e => {
+				D = e => {
 					const {
 						mediaProps: t,
 						post: s
@@ -152,20 +159,20 @@
 						scrollerItemRef: t.scrollerItemRef
 					})))
 				},
-				F = e => {
+				H = e => {
 					const {
 						post: t
 					} = e, {
 						score: s
 					} = t;
-					return o.a.createElement(k, null, o.a.createElement(C, null, n.fbt._({
+					return o.a.createElement(T, null, o.a.createElement(L, null, n.fbt._({
 						"*": "{point count} points",
 						_1: "1 point"
 					}, [n.fbt._plural(s, "point count", Object(l.b)(s))], {
 						hk: "PNZhd"
-					})), o.a.createElement(T, null), o.a.createElement(C, null, D(e)))
+					})), o.a.createElement(P, null), o.a.createElement(L, null, A(e)))
 				},
-				D = e => {
+				A = e => {
 					const {
 						post: t,
 						shouldOpenPostInNewTab: s
@@ -183,7 +190,7 @@
 						hk: "xPYWL"
 					}))
 				},
-				H = e => o.a.createElement(w, null, o.a.createElement(h.a, {
+				U = e => o.a.createElement(M, null, o.a.createElement(h.a, {
 					post: e.post
 				}))
 		},
@@ -2911,4 +2918,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.9f1ef2ee151dc7dba80a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.05aafb68cd0a133a8f8c.js.map
