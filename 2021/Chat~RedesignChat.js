@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.8b59e7cd25e6a44a0035.js
-// Retrieved at 10/26/2021, 2:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.8d5bb552bb6d9ab572ad.js
+// Retrieved at 10/28/2021, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -502,18 +502,19 @@
 					}
 					e(Ve()), Object(x.b)("Error fetching invited channels")
 				}, Je = () => async (e, t) => {
+					var n;
 					e(ze());
-					const n = await B.a.getExistingChannels(f.b.JOINED).catch(t => {
+					const a = await B.a.getExistingChannels(f.b.JOINED).catch(t => {
 						Object(x.b)(t), e(We())
 					});
-					if (n) {
+					if (a) {
 						const {
-							hasMoreChannels: a
-						} = n, s = Object(S.f)(n.channels), r = Object(M.v)(t());
+							hasMoreChannels: s
+						} = a, r = Object(S.f)(a.channels), c = Object(M.v)(t()) + (null === (n = a.channels) || void 0 === n ? void 0 : n.length);
 						return e(Ze({
-							channels: s,
-							hasMoreChannels: a
-						})), void(a && r < g.a.InitChannels && e(Je()))
+							channels: r,
+							hasMoreChannels: s
+						})), void(s && c < g.a.InitChannels && e(Je()))
 					}
 					e(We())
 				}, $e = () => async (e, t) => {
@@ -6054,7 +6055,7 @@
 				channels: t,
 				chatUnitTypeData: n,
 				message: a,
-				hasMoreJoinedChannels: s,
+				shouldShowChannels: s,
 				searchRef: r,
 				channelsFilter: o,
 				setChannelsFilter: i,
@@ -6064,7 +6065,7 @@
 			}, c.a.createElement(Aa, {
 				chatUnitTypeData: n,
 				message: a
-			}), !s && c.a.createElement("div", {
+			}), s && c.a.createElement("div", {
 				className: Fa.a.SearchInput
 			}, c.a.createElement("label", {
 				htmlFor: "channelSearch",
@@ -6090,11 +6091,11 @@
 				className: Fa.a.NewChatIcon
 			}), Ha._("new chat", null, {
 				hk: "2JtgH4"
-			}))), s && c.a.createElement("div", {
+			}))), !s && c.a.createElement("div", {
 				className: Fa.a.LoadingIndicator
 			}, Ha._("Loading Channels", null, {
 				hk: "7Nhm8"
-			})), t && !s && c.a.createElement(Ve.b, {
+			})), t && s && c.a.createElement(Ve.b, {
 				className: Fa.a.Scroller
 			}, t.map(t => c.a.createElement(Ga, {
 				channelId: t.channelId,
@@ -6112,32 +6113,33 @@
 						[d, u] = Object(r.useState)([]),
 						[h, m] = Object(r.useState)(""),
 						[p, b] = Object(r.useState)(!1),
-						g = Object(o.e)(_.F),
-						f = Object(r.useCallback)(() => {
+						g = Object(o.e)(_.v),
+						f = Object(r.useMemo)(() => g >= oa.a.InitChannels, [g]),
+						O = Object(r.useCallback)(() => {
 							const n = Object(Me.getShareToNewChatUrl)(e);
 							t(Object(be.b)(n))
 						}, [t, e]),
-						O = Object(r.useCallback)((e, t) => {
+						E = Object(r.useCallback)((e, t) => {
 							u(n => e ? [...n, t] : n.filter(e => e !== t))
 						}, []),
-						E = Object(r.useMemo)(() => Object(Me.getChatUnitType)(e), [e]),
-						v = Object(r.useMemo)(() => !Boolean(d.length), [d]),
-						j = Object(r.useMemo)(() => Ha._({
+						v = Object(r.useMemo)(() => Object(Me.getChatUnitType)(e), [e]),
+						j = Object(r.useMemo)(() => !Boolean(d.length), [d]),
+						C = Object(r.useMemo)(() => Ha._({
 							"*": "Share to {amount of chats} chats",
 							_1: "Share to {amount of chats} chat"
 						}, [Ha._param("amount of chats", d.length || ""), Ha._plural(d.length)], {
 							hk: "2O8DGN"
 						}), [d]);
 					Object(r.useEffect)(() => {
-						t(Object(H.e)(E))
-					}, [E, t]), Object(r.useEffect)(() => {
+						t(Object(H.e)(v))
+					}, [v, t]), Object(r.useEffect)(() => {
 						(null == a ? void 0 : a.current) && a.current.focus()
 					}, []), Object(r.useEffect)(() => {
-						if (!g) {
+						if (f) {
 							const e = n.getState();
-							Object(_.e)(e).length ? i(Object(_.e)(e)) : f()
+							Object(_.e)(e).length ? i(Object(_.e)(e)) : O()
 						}
-					}, [n, g, f]);
+					}, [n, O, f]);
 					return c.a.createElement(Pa.a, null, c.a.createElement(Ra.a, {
 						title: Ha._("Share to chat", null, {
 							hk: "MfUYD"
@@ -6145,18 +6147,18 @@
 					}), c.a.createElement(Va, {
 						channels: s,
 						channelsFilter: h,
-						chatUnitTypeData: E,
-						hasMoreJoinedChannels: g,
+						chatUnitTypeData: v,
+						shouldShowChannels: f,
 						message: e,
-						onChannelClick: O,
+						onChannelClick: E,
 						onClickCreateNewChannel: () => {
-							f()
+							O()
 						},
 						searchRef: a,
 						setChannelsFilter: m
 					}), c.a.createElement(Ua.a, {
-						primaryButtonText: j,
-						primaryButtonDisabled: v || p,
+						primaryButtonText: C,
+						primaryButtonDisabled: j || p,
 						secondaryButtonAction: () => {
 							t(Object(R.M)())
 						},
@@ -10080,7 +10082,8 @@
 					}, s.a.createElement(R, null))), s.a.createElement(T.b, {
 						loadMoreRows: () => {
 							!t && a && n()
-						}
+						},
+						isLoadMoreRowsComplete: () => !!t || !a
 					}, s.a.createElement("div", {
 						className: G.a.Body
 					}, s.a.createElement(v, null), s.a.createElement(M, null))))
@@ -17199,4 +17202,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.8b59e7cd25e6a44a0035.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.8d5bb552bb6d9ab572ad.js.map
