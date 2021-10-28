@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReadingIndicator.5aa5807d7215fee09ad7.js
-// Retrieved at 10/25/2021, 7:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReadingIndicator.f33d28b3703fe25b1f2f.js
+// Retrieved at 10/28/2021, 11:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReadingIndicator"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, s, n) {
@@ -304,4 +304,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReadingIndicator.5aa5807d7215fee09ad7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReadingIndicator.f33d28b3703fe25b1f2f.js.map

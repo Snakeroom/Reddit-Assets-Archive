@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.717d3b48a3916b4af5eb.js
-// Retrieved at 10/28/2021, 11:20:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.643bdcfc610a570aa0d2.js
+// Retrieved at 10/28/2021, 11:50:05 AM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var n, a, r = o[0], s = o[1], c = o[2], l = 0, P = []; l < r.length; l++) a = r[l], Object.prototype.hasOwnProperty.call(d, a) && d[a] && P.push(d[a][0]), d[a] = 0;
@@ -800,7 +800,7 @@
 					IdCard: "cbbad04994ab955e4071",
 					MuxEmbed: "31d6cfe0d16ae931b73c",
 					NewCommentPill: "0894d997bf075e88c18d",
-					ReadingIndicator: "2cc774fb83b6ecc6f9ad",
+					ReadingIndicator: "cb5111d240398d3efd38",
 					ReportFlowNew: "9b4cecf115860aff4fb0",
 					ReredditLink: "3e28d2c18e37eb5d3c53",
 					RichTextJsonEmoteTooltip: "deaaaf2d410de4862d87",
@@ -1405,7 +1405,7 @@
 						"translations/es_MX-json": "a893351aa45212c884eb",
 						"translations/fr_FR-json": "2364b6cb850129a29a7b",
 						"translations/it_IT-json": "dccc4ebdfdfd5a40741a",
-						"translations/pseudo_ext-json": "cb68c6e8628fc15f7dee",
+						"translations/pseudo_ext-json": "8fa5f8094dd79c96f702",
 						"translations/pseudo_long-json": "040fbb4d21e686441c7f",
 						"translations/pseudo_short-json": "d1100d4199668827f711",
 						"translations/pt_BR-json": "c594e4fa7ff3a543f9d0",
@@ -1466,7 +1466,7 @@
 						IdCard: "621bdc23de20ffc66e45",
 						MuxEmbed: "982b3400754d822142c4",
 						NewCommentPill: "82d049df39532e763bd0",
-						ReadingIndicator: "5aa5807d7215fee09ad7",
+						ReadingIndicator: "f33d28b3703fe25b1f2f",
 						ReportFlowNew: "6dac5c46458b0531713b",
 						ReredditLink: "d89d3daf5c8ab0e831ef",
 						RichTextJsonEmoteTooltip: "f7ef6d496dcbbbc999a2",
@@ -1659,4 +1659,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.717d3b48a3916b4af5eb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.643bdcfc610a570aa0d2.js.map
