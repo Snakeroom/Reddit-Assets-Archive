@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.7afa87444399a330ae27.js
-// Retrieved at 10/28/2021, 6:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.2c18d5e316eb6664ee68.js
+// Retrieved at 10/28/2021, 6:40:04 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var n, a, r = o[0], s = o[1], c = o[2], l = 0, P = []; l < r.length; l++) a = r[l], Object.prototype.hasOwnProperty.call(d, a) && d[a] && P.push(d[a][0]), d[a] = 0;
@@ -843,7 +843,7 @@
 					Trending: "88a1eb1d6f3796bacd5d",
 					"reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts": "d33aad66e2bf25eb4f6d",
 					"reddit-components-InFeedPostCreation": "0e244fc4fac29ee24e0a",
-					"reddit-components-TabBadger-Component": "7017e81e05fbb2a09262",
+					"reddit-components-TabBadger-Component": "52beb878d4033b50d0bb",
 					RpanListingUnit: "a7c3489492ca78715983",
 					StructuredStyles: "e440d34ffcf84b7abc50",
 					CryptoLibEthers: "31d6cfe0d16ae931b73c",
@@ -1407,7 +1407,7 @@
 						"translations/es_MX-json": "c47e5e720c5e029cd944",
 						"translations/fr_FR-json": "0fba551f3e85097bd949",
 						"translations/it_IT-json": "484aeecbe19f6bcf33c9",
-						"translations/pseudo_ext-json": "8fee8503246fb1d8f807",
+						"translations/pseudo_ext-json": "2d4ca7ef10379f208ef8",
 						"translations/pseudo_long-json": "8939a99c4727d678edfb",
 						"translations/pseudo_short-json": "6d1e762870168f85d1da",
 						"translations/pt_BR-json": "c992563c670ecbb1de4d",
@@ -1510,7 +1510,7 @@
 						Trending: "6453c844278d870e92df",
 						"reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts": "575c3f55710a2537d59f",
 						"reddit-components-InFeedPostCreation": "a356585196c15ba3d007",
-						"reddit-components-TabBadger-Component": "d72a15c1493c50c7ce2f",
+						"reddit-components-TabBadger-Component": "34346bd2e60a7adbc2a3",
 						RpanListingUnit: "2a5e839b5b342bbd372a",
 						StructuredStyles: "dd65948a94665939f694",
 						CryptoLibEthers: "c693308c5ad86d73dff2",
@@ -1661,4 +1661,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.7afa87444399a330ae27.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.2c18d5e316eb6664ee68.js.map
