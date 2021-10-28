@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.0409b3bb59a250370aab.js
-// Retrieved at 10/27/2021, 1:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.2418b6bee82f286ab5ae.js
+// Retrieved at 10/28/2021, 10:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index~reddit-components-Econ-Prediction"], {
 		"./node_modules/lodash/_LazyWrapper.js": function(a, i, r) {
@@ -1739,6 +1739,7 @@
 					"aria-label": d,
 					className: l.additionalOptionButton,
 					disabled: o,
+					isFullWidth: !0,
 					onClick: () => {
 						c && (h(!0), e(Object(E.a)(a))), c || (s(Object(n.s)("CHANGE_PREDICTION")), e(Object(E.b)(a)))
 					}
@@ -1924,6 +1925,7 @@
 					}),
 					className: A.additionalOptionButton,
 					disabled: a,
+					isFullWidth: !0,
 					onClick: () => {
 						if (!_) return E(Object(s.f)({
 							postId: h
@@ -3502,4 +3504,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.0409b3bb59a250370aab.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.2418b6bee82f286ab5ae.js.map
