@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.8d5bb552bb6d9ab572ad.js
-// Retrieved at 10/28/2021, 1:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.8d453b30e9574814d69c.js
+// Retrieved at 10/28/2021, 4:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -6113,33 +6113,34 @@
 						[d, u] = Object(r.useState)([]),
 						[h, m] = Object(r.useState)(""),
 						[p, b] = Object(r.useState)(!1),
-						g = Object(o.e)(_.v),
-						f = Object(r.useMemo)(() => g >= oa.a.InitChannels, [g]),
-						O = Object(r.useCallback)(() => {
+						g = Object(o.e)(_.F),
+						f = Object(o.e)(_.v),
+						O = Object(r.useMemo)(() => f >= oa.a.InitChannels || !g, [f, g]),
+						E = Object(r.useCallback)(() => {
 							const n = Object(Me.getShareToNewChatUrl)(e);
 							t(Object(be.b)(n))
 						}, [t, e]),
-						E = Object(r.useCallback)((e, t) => {
+						v = Object(r.useCallback)((e, t) => {
 							u(n => e ? [...n, t] : n.filter(e => e !== t))
 						}, []),
-						v = Object(r.useMemo)(() => Object(Me.getChatUnitType)(e), [e]),
-						j = Object(r.useMemo)(() => !Boolean(d.length), [d]),
-						C = Object(r.useMemo)(() => Ha._({
+						j = Object(r.useMemo)(() => Object(Me.getChatUnitType)(e), [e]),
+						C = Object(r.useMemo)(() => !Boolean(d.length), [d]),
+						I = Object(r.useMemo)(() => Ha._({
 							"*": "Share to {amount of chats} chats",
 							_1: "Share to {amount of chats} chat"
 						}, [Ha._param("amount of chats", d.length || ""), Ha._plural(d.length)], {
 							hk: "2O8DGN"
 						}), [d]);
 					Object(r.useEffect)(() => {
-						t(Object(H.e)(v))
-					}, [v, t]), Object(r.useEffect)(() => {
+						t(Object(H.e)(j))
+					}, [j, t]), Object(r.useEffect)(() => {
 						(null == a ? void 0 : a.current) && a.current.focus()
 					}, []), Object(r.useEffect)(() => {
-						if (f) {
+						if (O) {
 							const e = n.getState();
-							Object(_.e)(e).length ? i(Object(_.e)(e)) : O()
+							Object(_.e)(e).length ? i(Object(_.e)(e)) : E()
 						}
-					}, [n, O, f]);
+					}, [n, E, O]);
 					return c.a.createElement(Pa.a, null, c.a.createElement(Ra.a, {
 						title: Ha._("Share to chat", null, {
 							hk: "MfUYD"
@@ -6147,18 +6148,18 @@
 					}), c.a.createElement(Va, {
 						channels: s,
 						channelsFilter: h,
-						chatUnitTypeData: v,
-						shouldShowChannels: f,
+						chatUnitTypeData: j,
+						shouldShowChannels: O,
 						message: e,
-						onChannelClick: E,
+						onChannelClick: v,
 						onClickCreateNewChannel: () => {
-							O()
+							E()
 						},
 						searchRef: a,
 						setChannelsFilter: m
 					}), c.a.createElement(Ua.a, {
-						primaryButtonText: C,
-						primaryButtonDisabled: j || p,
+						primaryButtonText: I,
+						primaryButtonDisabled: C || p,
 						secondaryButtonAction: () => {
 							t(Object(R.M)())
 						},
@@ -17202,4 +17203,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.8d5bb552bb6d9ab572ad.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.8d453b30e9574814d69c.js.map
