@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.f1f656a155cae839e0a7.js
-// Retrieved at 10/26/2021, 2:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.d5995016aa65b3959070.js
+// Retrieved at 10/28/2021, 9:30:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -4878,6 +4878,7 @@
 				mediaWrapper: "_1psVAAiSmYVB_YK5TsT7mN",
 				marginCancel: "_2Hinle4K74HK6s2WgEMwXA",
 				twitterEmbed: "GvFZl4E7FJWNEgWpOi-f1",
+				promotedTrend: "_1p_ho4rXajjQ5jSOI3DO9B",
 				mediaContent: "_1YA190EaEjb8shjVnRdqVf",
 				textMediaWrapper: "gFNBTv7Sftp7j3rlmZin6",
 				textMedia: "_1eWnkq7LE-By6f08Vq_9G-",
@@ -7914,7 +7915,8 @@
 					const t = !!y.source && Object(T.a)(y.source.url) || !!y.thumbnail && Object(T.a)(y.thumbnail.url),
 						s = !j && t,
 						n = Object(r.a)(pe.a.mediaWrapper, {
-							[pe.a.marginCancel]: h && !!y.source
+							[pe.a.marginCancel]: h && !!y.source,
+							[pe.a.promotedTrend]: y.isSponsored
 						});
 					if (s) e = i.a.createElement("div", {
 						className: n
@@ -12113,4 +12115,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.f1f656a155cae839e0a7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.d5995016aa65b3959070.js.map
