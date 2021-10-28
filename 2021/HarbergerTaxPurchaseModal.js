@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/HarbergerTaxPurchaseModal.9dedf445c33e4808ae86.js
-// Retrieved at 10/25/2021, 2:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/HarbergerTaxPurchaseModal.7cf77b1ba5024cff8ab2.js
+// Retrieved at 10/28/2021, 5:10:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["HarbergerTaxPurchaseModal"], {
 		"./src/reddit/actions/economics/subredditPremium/actionCreators.ts": function(e, t, r) {
@@ -176,8 +176,8 @@
 						const n = {};
 						return e && e.bannerBackgroundImage !== t.bannerBackgroundImage && t.bannerBackgroundImage !== r.bannerBackgroundImage ? n.bannerBackgroundImage = t.bannerBackgroundImage : !e && t.bannerBackgroundImage && (n.bannerBackgroundImage = t.bannerBackgroundImage), e && e.bannerBackgroundImagePosition === t.bannerBackgroundImagePosition || (n.bannerBackgroundImagePosition = t.bannerBackgroundImagePosition), n
 					}(p.content, e.content, h),
-					j = !a()(v);
-				(f || j) && t(Object(o.i)({
+					I = !a()(v);
+				(f || I) && t(Object(o.i)({
 					productId: "mainHeader",
 					subredditId: i
 				})), f ? g.push(u(n(), {
@@ -188,7 +188,7 @@
 						owner: p.owner || "",
 						ownerId: p.ownerId || ""
 					}]
-				})) : g.push(Promise.resolve()), j && g.push(function(e, t) {
+				})) : g.push(Promise.resolve()), I && g.push(function(e, t) {
 					return Object(l.a)(e, {
 						method: "patch",
 						endpoint: `${d.a.metaUrl}/communities/${t.subredditId}`,
@@ -204,8 +204,8 @@
 					subredditId: i,
 					content: v
 				}));
-				const [I, O] = await Promise.all(g);
-				f && I.ok && j && O.ok ? (t(Object(o.j)({
+				const [j, O] = await Promise.all(g);
+				f && j.ok && I && O.ok ? (t(Object(o.j)({
 					productId: "mainHeader",
 					subredditId: i,
 					mainHeader: {
@@ -217,7 +217,7 @@
 				})), t(Object(c.l)({
 					subredditId: i,
 					styles: v
-				}))) : f && I.ok ? (t(Object(o.j)({
+				}))) : f && j.ok ? (t(Object(o.j)({
 					productId: "mainHeader",
 					subredditId: i,
 					mainHeader: {
@@ -226,7 +226,7 @@
 						price: e.newPrice || p.price,
 						content: p.content
 					}
-				})), j && !O.ok && Object(s.a)(t, O.error)) : j && O.ok ? (t(Object(o.j)({
+				})), I && !O.ok && Object(s.a)(t, O.error)) : I && O.ok ? (t(Object(o.j)({
 					productId: "mainHeader",
 					subredditId: i,
 					mainHeader: {
@@ -238,10 +238,10 @@
 				})), t(Object(c.l)({
 					subredditId: i,
 					styles: v
-				})), f && !I.ok && Object(s.a)(t, I.error)) : (f && Object(s.a)(t, I.error), j && (t(Object(o.h)({
+				})), f && !j.ok && Object(s.a)(t, j.error)) : (f && Object(s.a)(t, j.error), I && (t(Object(o.h)({
 					productId: "mainHeader",
 					subredditId: i,
-					error: I.error
+					error: j.error
 				})), Object(s.a)(t, O.error)))
 			}
 		},
@@ -259,9 +259,9 @@
 			r.d(t, "b", (function() {
 				return N
 			})), r.d(t, "c", (function() {
-				return H
-			})), r.d(t, "a", (function() {
 				return P
+			})), r.d(t, "a", (function() {
+				return H
 			}));
 			var n = r("./node_modules/react/index.js"),
 				a = r.n(n),
@@ -288,10 +288,10 @@
 					getComponent: () => r.e("CustomBadgeHovercardTooltip").then(r.bind(null, "./src/reddit/components/Badges/UserDisplay/AddCustomTooltip/tooltip.tsx")).then(e => e.default)
 				}),
 				v = r("./src/reddit/components/Badges/UserDisplay/index.m.less"),
-				j = r.n(v);
+				I = r.n(v);
 
-			function I() {
-				return (I = Object.assign || function(e) {
+			function j() {
+				return (j = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var r = arguments[t];
 						for (var n in r) Object.prototype.hasOwnProperty.call(r, n) && (e[n] = r[n])
@@ -300,19 +300,19 @@
 				}).apply(this, arguments)
 			}
 			const O = "add-custom-badge-tooltip",
-				w = 100,
-				E = 2 * w,
+				E = 100,
+				w = 2 * E,
 				y = 24;
 			class N extends a.a.Component {
 				constructor() {
 					super(...arguments), this.mouseOverTooltip = void 0, this.enterTimeout = void 0, this.exitTimeout = void 0, this.handleMouseEnter = e => {
 						this.mouseOverTooltip && this.mouseOverTooltip !== e ? this.props.onShowTooltip(e) : (clearTimeout(this.enterTimeout), this.enterTimeout = window.setTimeout(() => {
 							this.mouseOverTooltip === e && this.props.onShowTooltip(e)
-						}, w)), this.mouseOverTooltip = e
+						}, E)), this.mouseOverTooltip = e
 					}, this.handleMouseLeave = () => {
 						clearTimeout(this.exitTimeout), clearTimeout(this.enterTimeout), this.mouseOverTooltip = void 0, this.exitTimeout = window.setTimeout(() => {
 							this.mouseOverTooltip || (clearTimeout(this.enterTimeout), this.props.onHideTooltip())
-						}, E)
+						}, w)
 					}
 				}
 				render() {
@@ -320,23 +320,23 @@
 						badges: e
 					} = this.props;
 					if (this.props.usePlaceholder && !e.length) return a.a.createElement("img", {
-						className: Object(i.a)(j.a.image, this.props.className),
+						className: Object(i.a)(I.a.image, this.props.className),
 						src: `${c.a.assetPath}/img/badges/placeholder.png`
 					});
 					const t = `${O}-${this.props.uniqueIdentifier}`,
 						r = this.props.badgeSize || y;
 					return a.a.createElement(n.Fragment, null, this.props.showAddCustom && a.a.createElement("div", {
-						className: j.a.wrapper,
+						className: I.a.wrapper,
 						id: t,
 						onMouseEnter: () => this.handleMouseEnter(t),
 						onMouseLeave: () => this.handleMouseLeave()
 					}, a.a.createElement("button", {
-						className: j.a.addCustomLink,
+						className: I.a.addCustomLink,
 						onClick: this.props.onOpenUploadDialog
 					}, a.a.createElement(x.a, {
-						className: j.a.addCustom
+						className: I.a.addCustom
 					})), a.a.createElement(f, {
-						className: j.a.badgeHovercard,
+						className: I.a.badgeHovercard,
 						subredditId: this.props.subredditId,
 						targetPosition: ["left", "bottom"],
 						tooltipId: t,
@@ -348,12 +348,12 @@
 						return a.a.createElement(n.Fragment, {
 							key: `badges-fragement-${e.id}`
 						}, a.a.createElement("div", {
-							className: Object(i.a)(j.a.wrapper, this.props.className),
+							className: Object(i.a)(I.a.wrapper, this.props.className),
 							key: `wrapper-${e.id}`,
 							onMouseEnter: () => this.handleMouseEnter(s),
 							onMouseLeave: () => this.handleMouseLeave()
 						}, a.a.createElement("img", {
-							className: j.a.image,
+							className: I.a.image,
 							id: s,
 							key: e.id,
 							src: t.url2x,
@@ -364,7 +364,7 @@
 						}), this.props.useHovercard ? a.a.createElement(m, {
 							badge: e,
 							correlationId: this.props.correlationId,
-							className: j.a.badgeHovercard,
+							className: I.a.badgeHovercard,
 							key: `tooltip-${e.id}`,
 							subredditId: this.props.subredditId,
 							targetPosition: ["left", "bottom"],
@@ -392,7 +392,7 @@
 					allBadges: e => e.badges.models,
 					useHovercard: p.d.spSpecialMemberships
 				}),
-				C = Object(o.c)({
+				T = Object(o.c)({
 					badgeIds: (e, {
 						subredditId: t
 					}) => {
@@ -403,7 +403,7 @@
 					allBadges: e => e.badges.models,
 					useHovercard: p.d.spSpecialMemberships
 				}),
-				T = e => ({
+				B = e => ({
 					onShowTooltip: t => e(Object(l.f)({
 						tooltipId: t
 					})),
@@ -411,18 +411,18 @@
 					onOpenUploadDialog: () => e(Object(d.j)())
 				});
 
-			function B(e) {
+			function C(e) {
 				const {
 					badgeIds: t,
 					allBadges: r,
 					...n
 				} = e, s = t.map(e => r[e]).filter(Boolean);
-				return a.a.createElement(N, I({
+				return a.a.createElement(N, j({
 					badges: s
 				}, n))
 			}
-			const H = Object(s.b)(_, T)(B),
-				P = Object(s.b)(C, T)(B)
+			const P = Object(s.b)(_, B)(C),
+				H = Object(s.b)(T, B)(C)
 		},
 		"./src/reddit/components/Governance/HarbergerTax/BannerPurchaseModal/Controls/index.m.less": function(e, t, r) {
 			e.exports = {
@@ -474,9 +474,9 @@
 				g = r("./src/reddit/controls/LoadingIcon/index.tsx"),
 				f = r("./src/reddit/selectors/gov.ts"),
 				v = r("./src/reddit/components/Governance/HarbergerTax/BannerPurchaseModal/Controls/index.m.less"),
-				j = r.n(v);
+				I = r.n(v);
 			const {
-				fbt: I
+				fbt: j
 			} = r("./node_modules/fbt/lib/FbtPublic.js");
 			const O = Object(u.c)({
 				cost: f.b,
@@ -484,7 +484,7 @@
 				currentOwnerName: (e, t) => Object(f.c)(e, t).owner,
 				isPurchasing: e => !!e.products.api.purchase.pending.mainHeader
 			});
-			var w = Object(l.b)(O, e => ({
+			var E = Object(l.b)(O, e => ({
 					onPurchase: t => e(Object(b.b)(t))
 				}))((function(e) {
 					const {
@@ -495,24 +495,24 @@
 						subredditId: i
 					} = e, d = r || "0";
 					return a.a.createElement("div", {
-						className: Object(o.a)(j.a.container, t)
+						className: Object(o.a)(I.a.container, t)
 					}, a.a.createElement("div", {
-						className: j.a.owner
-					}, s && a.a.createElement(n.Fragment, null, I._("Owned by", null, {
+						className: I.a.owner
+					}, s && a.a.createElement(n.Fragment, null, j._("Owned by", null, {
 						hk: "b9B87"
 					}), a.a.createElement(p.c, {
-						className: j.a.ownerBadge,
+						className: I.a.ownerBadge,
 						subredditId: i,
 						uniqueIdentifier: "banner-purchase-modal",
 						userId: s
 					}), a.a.createElement("span", {
-						className: j.a.username
+						className: I.a.username
 					}, c))), a.a.createElement("div", {
-						className: j.a.purchase
+						className: I.a.purchase
 					}, a.a.createElement("div", {
-						className: j.a.cost
+						className: I.a.cost
 					}, a.a.createElement(h.a, {
-						className: j.a.token,
+						className: I.a.token,
 						subredditId: i
 					}), Object(m.a)(d)), a.a.createElement(x.k, {
 						onClick: () => e.onPurchase({
@@ -521,11 +521,11 @@
 						})
 					}, e.isPurchasing ? a.a.createElement(g.a, {
 						sizePx: 20
-					}) : I._("buy", null, {
+					}) : j._("buy", null, {
 						hk: "4dbO8f"
 					}))))
 				})),
-				E = r("./node_modules/fbt/lib/FbtPublic.js");
+				w = r("./node_modules/fbt/lib/FbtPublic.js");
 
 			function y(e) {
 				return a.a.createElement("svg", {
@@ -675,7 +675,7 @@
 			var k = r("./src/reddit/components/Governance/HarbergerTax/BannerPurchaseModal/Upsell/index.m.less"),
 				_ = r.n(k);
 
-			function C(e) {
+			function T(e) {
 				const {
 					className: t,
 					subredditName: r,
@@ -693,11 +693,11 @@
 					className: _.a.textSection
 				}, a.a.createElement("div", {
 					className: _.a.title
-				}, E.fbt._("Buy r/{subredditName}'s Top Banner with {tokenName}", [E.fbt._param("subredditName", r), E.fbt._param("tokenName", n)], {
+				}, w.fbt._("Buy r/{subredditName}'s Top Banner with {tokenName}", [w.fbt._param("subredditName", r), w.fbt._param("tokenName", n)], {
 					hk: "1v5pFU"
 				})), a.a.createElement("div", {
 					className: _.a.text
-				}, E.fbt._("Set the image to whatever you want", null, {
+				}, w.fbt._("Set the image to whatever you want", null, {
 					hk: "saxQd"
 				})))), a.a.createElement("div", {
 					className: _.a.section
@@ -709,26 +709,26 @@
 					className: _.a.textSection
 				}, a.a.createElement("div", {
 					className: _.a.title
-				}, E.fbt._("Hamburger Tax", null, {
+				}, w.fbt._("Hamburger Tax", null, {
 					hk: "3eNLF3"
 				})), a.a.createElement("ul", {
 					className: _.a.text
-				}, a.a.createElement("li", null, E.fbt._("The owner sets the price for the banner", null, {
+				}, a.a.createElement("li", null, w.fbt._("The owner sets the price for the banner", null, {
 					hk: "19Rdj7"
-				})), a.a.createElement("li", null, E.fbt._("They pay a daily tax rate of 1% by burning {tokenName}", [E.fbt._param("tokenName", n)], {
+				})), a.a.createElement("li", null, w.fbt._("They pay a daily tax rate of 1% by burning {tokenName}", [w.fbt._param("tokenName", n)], {
 					hk: "3WaZar"
-				})), a.a.createElement("li", null, E.fbt._("If the owner cannot pay the tax, the price goes to 0", null, {
+				})), a.a.createElement("li", null, w.fbt._("If the owner cannot pay the tax, the price goes to 0", null, {
 					hk: "26y0Y5"
-				})), a.a.createElement("li", null, E.fbt._("Anyone can buy the banner at its advertised price", null, {
+				})), a.a.createElement("li", null, w.fbt._("Anyone can buy the banner at its advertised price", null, {
 					hk: "4hc3Nw"
-				})), a.a.createElement("li", null, E.fbt._("The owner cannot refuse to sell it at that price", null, {
+				})), a.a.createElement("li", null, w.fbt._("The owner cannot refuse to sell it at that price", null, {
 					hk: "4bvKhT"
 				}))))))
 			}
-			var T = r("./src/reddit/components/Governance/HarbergerTax/BannerPurchaseModal/index.m.less"),
-				B = r.n(T);
+			var B = r("./src/reddit/components/Governance/HarbergerTax/BannerPurchaseModal/index.m.less"),
+				C = r.n(B);
 			const {
-				fbt: H
+				fbt: P
 			} = r("./node_modules/fbt/lib/FbtPublic.js");
 			t.default = Object(i.a)("spHarberger", Object(s.a)((function(e) {
 				const {
@@ -738,17 +738,17 @@
 					subreddit: n
 				} = Object(d.c)();
 				return r && n ? a.a.createElement("div", {
-					className: Object(o.a)(B.a.container, t)
+					className: Object(o.a)(C.a.container, t)
 				}, a.a.createElement(c.a, {
-					className: B.a.title
-				}, H._("Buy Banner", null, {
+					className: C.a.title
+				}, P._("Buy Banner", null, {
 					hk: "3Mp8CG"
-				})), a.a.createElement(C, {
+				})), a.a.createElement(T, {
 					pointsName: r.name,
 					subredditId: n.id,
 					subredditName: n.name
-				}), a.a.createElement(w, {
-					className: B.a.controls,
+				}), a.a.createElement(E, {
+					className: C.a.controls,
 					subredditId: n.id
 				})) : null
 			})))
@@ -908,36 +908,6 @@
 				})
 			}
 		},
-		"./src/reddit/icons/svgs/AddSquare/index.tsx": function(e, t, r) {
-			"use strict";
-			r.d(t, "a", (function() {
-				return s
-			}));
-			var n = r("./node_modules/react/index.js"),
-				a = r.n(n);
-
-			function s(e) {
-				return a.a.createElement("svg", {
-					className: e.className,
-					viewBox: "0 0 20 20",
-					xmlns: "http://www.w3.org/2000/svg"
-				}, a.a.createElement("rect", {
-					fill: "transparent",
-					height: "18",
-					rx: "4.5",
-					strokeDasharray: "2 2",
-					strokeLinejoin: "round",
-					strokeWidth: "1",
-					width: "18",
-					x: "1",
-					y: "1"
-				}), a.a.createElement("path", {
-					clipRule: "evenodd",
-					d: "M13 9H11V7C11 6.7235 10.7765 6.5 10.5 6.5H9.5C9.2235 6.5 9 6.7235 9 7V9H7C6.724 9 6.5 9.2235 6.5 9.5V10.5C6.5 10.7765 6.724 11 7 11H9V13C9 13.2765 9.2235 13.5 9.5 13.5H10.5C10.7765 13.5 11 13.2765 11 13V11H13C13.2765 11 13.5 10.7765 13.5 10.5V9.5C13.5 9.2235 13.2765 9 13 9Z",
-					fillRule: "evenodd"
-				}))
-			}
-		},
 		"./src/reddit/selectors/gov.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
@@ -992,4 +962,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/HarbergerTaxPurchaseModal.9dedf445c33e4808ae86.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/HarbergerTaxPurchaseModal.7cf77b1ba5024cff8ab2.js.map

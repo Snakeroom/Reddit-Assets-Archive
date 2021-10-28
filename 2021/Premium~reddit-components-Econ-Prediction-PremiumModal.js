@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.f7b04516e51ade471146.js
-// Retrieved at 10/13/2021, 6:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.378ca9cf28c88c0c8354.js
+// Retrieved at 10/28/2021, 5:10:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Premium~reddit-components-Econ-Prediction-PremiumModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, r) {
@@ -180,7 +180,7 @@
 		"./src/reddit/actions/gold/productOfferPurchase.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "b", (function() {
-				return w
+				return E
 			})), r.d(t, "j", (function() {
 				return C
 			})), r.d(t, "g", (function() {
@@ -196,9 +196,9 @@
 			})), r.d(t, "h", (function() {
 				return U
 			})), r.d(t, "e", (function() {
-				return H
-			})), r.d(t, "i", (function() {
 				return F
+			})), r.d(t, "i", (function() {
+				return q
 			}));
 			var n = r("./node_modules/fbt/lib/FbtPublic.js"),
 				a = r("./node_modules/lodash/omit.js"),
@@ -221,12 +221,12 @@
 				P = r("./src/reddit/actions/gold/powerups.ts"),
 				k = r("./src/reddit/actions/modal.ts"),
 				v = r("./src/reddit/endpoints/gold/productOfferPurchase.ts"),
-				E = r("./src/reddit/models/Payments/index.ts");
+				_ = r("./src/reddit/models/Payments/index.ts");
 			const x = () => n.fbt._("Something went wrong during payment", null, {
 					hk: "31kmAa"
 				}),
-				_ = e => e.map(e => e.message).join(" : "),
-				w = (e, t, r) => async (a, s, {
+				w = e => e.map(e => e.message).join(" : "),
+				E = (e, t, r) => async (a, s, {
 					gqlContext: i
 				}) => {
 					const c = o()(),
@@ -237,7 +237,7 @@
 								errors: t,
 								order: r
 							} = e.data.createEconOrder;
-						if (t && t.length) throw new Error(_(t));
+						if (t && t.length) throw new Error(w(t));
 						if (r) return r.id
 					}
 					throw new Error((() => n.fbt._("Something went wrong during order creation", null, {
@@ -260,7 +260,7 @@
 					};
 					else if (f) {
 						const e = Object(g.d)(m, {
-							provider: E.b.Stripe
+							provider: _.b.Stripe
 						});
 						if (!e) return;
 						k.premium = {
@@ -269,7 +269,7 @@
 					}
 					let x, C, I = "";
 					try {
-						I = await c(w(t, a, k))
+						I = await c(E(t, a, k))
 					} catch (S) {
 						return p.c.captureException(S), void(S.message && c(Object(h.stripeApiError)(S.message)))
 					}
@@ -281,7 +281,7 @@
 							s = await n;
 						if (!(null == s ? void 0 : s.ok)) return void b();
 						const m = s.body.data.createEconPayment;
-						if (null === (u = null == m ? void 0 : m.errors) || void 0 === u ? void 0 : u.length) return void c(Object(h.stripeApiError)(_(m.errors)));
+						if (null === (u = null == m ? void 0 : m.errors) || void 0 === u ? void 0 : u.length) return void c(Object(h.stripeApiError)(w(m.errors)));
 						const {
 							ok: p,
 							payment: g,
@@ -306,7 +306,7 @@
 							powerupsCount: a,
 							user: j,
 							isAnonymous: r
-						})) : f && c(H({
+						})) : f && c(F({
 							user: j
 						})))
 					} catch (S) {
@@ -326,7 +326,7 @@
 					};
 					else if (b) {
 						const e = Object(g.d)(m, {
-							provider: E.b.PayPal
+							provider: _.b.PayPal
 						});
 						if (!e) return null;
 						y.premium = {
@@ -335,7 +335,7 @@
 					}
 					let P = "";
 					try {
-						P = await s(w(e, r, y))
+						P = await s(E(e, r, y))
 					} catch (I) {
 						return p.c.captureException(I), I.message && s(Object(h.paypalApiError)(I.message)), null
 					}
@@ -359,7 +359,7 @@
 							m = await Object(v.g)(d(), c, P, e, n);
 						if (m && m.ok) {
 							const e = m.body.data.createEconPayment;
-							if (null === (l = null == e ? void 0 : e.errors) || void 0 === l ? void 0 : l.length) return s(Object(h.paypalApiError)(_(e.errors))), null;
+							if (null === (l = null == e ? void 0 : e.errors) || void 0 === l ? void 0 : l.length) return s(Object(h.paypalApiError)(w(e.errors))), null;
 							const n = Object(O.k)(i());
 							if (e.ok) {
 								const {
@@ -375,7 +375,7 @@
 									powerupsCount: r,
 									user: n,
 									isAnonymous: t
-								})) : b && s(H({
+								})) : b && s(F({
 									user: n
 								})), null
 							}
@@ -393,7 +393,7 @@
 							i = await Object(v.c)(a(), n, e, t);
 						if (i && i.ok) {
 							const e = i.body.data.confirmEconPayment;
-							if (null === (s = null == e ? void 0 : e.errors) || void 0 === s ? void 0 : s.length) return r(Object(h.paypalApiError)(_(e.errors))), !1;
+							if (null === (s = null == e ? void 0 : e.errors) || void 0 === s ? void 0 : s.length) return r(Object(h.paypalApiError)(w(e.errors))), !1;
 							if (e.ok && "PAID" === e.payment.status) return !0
 						}
 					} catch (i) {
@@ -433,7 +433,7 @@
 							{
 								errors: a
 							} = r.data.deleteEconPaymentMethod;
-						if (a && a.length) throw new Error(_(a))
+						if (a && a.length) throw new Error(w(a))
 					} catch (a) {
 						p.c.captureException(a)
 					}
@@ -475,13 +475,13 @@
 						forceLoad: !0,
 						fullData: !1
 					})), t(Object(k.g)(d.a.ECON_POWERUPS_PURCHASE)), t(Object(k.h)(d.a.ECON_POWERUPS_SUCCESS))
-				}, D = Object(m.a)(f.W), H = ({
+				}, D = Object(m.a)(f.W), F = ({
 					user: e
 				}) => async t => {
 					await t(Object(P.n)(!0)), t(D({
 						user: e
 					}))
-				}, F = Object(m.a)(f.ab)
+				}, q = Object(m.a)(f.ab)
 		},
 		"./src/reddit/actions/gold/productOffers.ts": function(e, t, r) {
 			"use strict";
@@ -513,10 +513,10 @@
 				P = Object(a.a)(f.X),
 				k = Object(a.a)(f.Eb),
 				v = Object(a.a)(f.Cb),
-				E = Object(a.a)(f.Db),
+				_ = Object(a.a)(f.Db),
 				x = Object(a.a)(f.Hb),
-				_ = Object(a.a)(f.Gb),
-				w = Object(a.a)(f.Fb),
+				w = Object(a.a)(f.Gb),
+				E = Object(a.a)(f.Fb),
 				C = e => async t => {
 					t(Object(i.f)({
 						kind: c.b.Error,
@@ -596,7 +596,7 @@
 						if (t.ok) {
 							const r = t.body;
 							if (null === (a = r.errors) || void 0 === a ? void 0 : a.length) throw new Error(r.errors[0].message);
-							return void e(E({
+							return void e(_({
 								subscriptions: null !== (o = null === (i = r.data.identity) || void 0 === i ? void 0 : i.econSubscriptions) && void 0 !== o ? o : []
 							}))
 						}
@@ -621,7 +621,7 @@
 									errors: a
 								} = n.data.cancelEconRecurringPayment;
 							if (null == a ? void 0 : a.length) throw new Error(a[0].message);
-							t(w({
+							t(E({
 								orderId: e
 							}))
 						}
@@ -630,7 +630,7 @@
 						const e = null !== (s = i.message) && void 0 !== s ? s : n.fbt._("Something went wrong", null, {
 							hk: "4yuT5m"
 						});
-						return t(_(e)), t(C(e)), !1
+						return t(w(e)), t(C(e)), !1
 					}
 				}
 		},
@@ -667,11 +667,11 @@
 			})), r.d(t, "deleteSavedCard", (function() {
 				return v
 			})), r.d(t, "savedCardsPending", (function() {
-				return E
+				return _
 			})), r.d(t, "savedCardsSuccess", (function() {
 				return x
 			})), r.d(t, "loadSavedCards", (function() {
-				return _
+				return w
 			}));
 			var n = r("./node_modules/fbt/lib/FbtPublic.js"),
 				a = r("./src/lib/sentry/index.ts"),
@@ -720,10 +720,10 @@
 					} catch (s) {
 						a.c.captureException(s)
 					}
-				}, E = Object(s.a)(o.z), x = Object(s.a)(o.A), _ = () => async (e, t, {
+				}, _ = Object(s.a)(o.z), x = Object(s.a)(o.A), w = () => async (e, t, {
 					apiContext: r
 				}) => {
-					e(E());
+					e(_());
 					try {
 						const t = await Object(i.b)(r());
 						if (t.error) throw new Error(t.error.type);
@@ -1349,13 +1349,13 @@
 			})), r.d(t, "c", (function() {
 				return v
 			})), r.d(t, "e", (function() {
-				return E
+				return _
 			})), r.d(t, "d", (function() {
 				return x
 			})), r.d(t, "b", (function() {
-				return _
-			})), r.d(t, "l", (function() {
 				return w
+			})), r.d(t, "l", (function() {
+				return E
 			})), r.d(t, "k", (function() {
 				return C
 			}));
@@ -1439,7 +1439,7 @@
 						token: n
 					}
 				}),
-				E = (e, t, r, n) => Object(h.a)(e, {
+				_ = (e, t, r, n) => Object(h.a)(e, {
 					...c,
 					variables: {
 						nonce: t,
@@ -1456,13 +1456,13 @@
 						saveCard: a
 					}
 				}),
-				_ = (e, t) => Object(h.a)(e, {
+				w = (e, t) => Object(h.a)(e, {
 					...s,
 					variables: {
 						orderId: t
 					}
 				}),
-				w = e => Object(h.a)(e, {
+				E = e => Object(h.a)(e, {
 					...f,
 					variables: {}
 				}),
@@ -1579,61 +1579,6 @@
 						premiumMarketingBenefit: e
 					}
 				})
-		},
-		"./src/reddit/icons/svgs/PremiumLogo/index.tsx": function(e, t, r) {
-			"use strict";
-			var n = r("./node_modules/react/index.js"),
-				a = r.n(n);
-			t.a = e => a.a.createElement("svg", {
-				className: e.className,
-				viewBox: "0 0 630 96",
-				xmlns: "http://www.w3.org/2000/svg"
-			}, a.a.createElement("path", {
-				fill: "#ff4500",
-				d: "M95.349,6.185a3.136,3.136,0,0,0-2.458-1.2H88.517A164.2,164.2,0,0,1,48.761.1a2.962,2.962,0,0,0-1.5,0A164.2,164.2,0,0,1,7.509,4.988H3.125A3.111,3.111,0,0,0,.1,8.858,164.1,164.1,0,0,1,5,48.614V67.819A20.392,20.392,0,0,0,25.362,88.186a33.738,33.738,0,0,1,20.721,7.151,3.126,3.126,0,0,0,3.85,0,33.734,33.734,0,0,1,20.721-7.151A20.391,20.391,0,0,0,91.02,67.819V48.614A164.147,164.147,0,0,1,95.913,8.858,3.119,3.119,0,0,0,95.349,6.185Z"
-			}), a.a.createElement("path", {
-				fill: "#fff",
-				d: "M79.992,48a7,7,0,0,0-11.855-5.036,34.261,34.261,0,0,0-18.72-5.939l3.189-15,10.418,2.215a5.008,5.008,0,1,0,.512-2.447L51.9,19.318a1.25,1.25,0,0,0-1.483.963l-3.561,16.74a34.368,34.368,0,0,0-18.994,5.93,7,7,0,1,0-7.706,11.432,13.771,13.771,0,0,0-.167,2.117c0,10.77,12.536,19.5,28,19.5s28-8.73,28-19.5a13.851,13.851,0,0,0-.164-2.1A7,7,0,0,0,79.992,48ZM32,53a5,5,0,1,1,5,5A5.007,5.007,0,0,1,32,53ZM59.88,66.212c-3.412,3.408-9.951,3.673-11.874,3.673s-8.463-.265-11.872-3.673a1.3,1.3,0,1,1,1.833-1.832c2.151,2.151,6.752,2.914,10.039,2.914s7.889-.764,10.043-2.915a1.3,1.3,0,1,1,1.831,1.833ZM59,58a5,5,0,1,1,5-5A5.006,5.006,0,0,1,59,58Z"
-			}), a.a.createElement("path", {
-				fill: "#ff4500",
-				d: "M157.1,75.454H144.637l-9.8-17.217q-1.416.069-2.157.068h-4.11V75.454H117.515V25.793h17.924a20.921,20.921,0,0,1,8.861,1.8,14.209,14.209,0,0,1,6.132,5.238,14.742,14.742,0,0,1,2.223,8.187,16.721,16.721,0,0,1-1.971,8.07,15.976,15.976,0,0,1-5.643,5.979ZM128.566,49.31h5.559a9.153,9.153,0,0,0,4.009-.843,6.444,6.444,0,0,0,2.729-2.392,6.61,6.61,0,0,0,.977-3.605,6.53,6.53,0,0,0-.994-3.6,6.46,6.46,0,0,0-2.83-2.392,10.222,10.222,0,0,0-4.295-.842h-5.155Z"
-			}), a.a.createElement("path", {
-				fill: "#ff4500",
-				d: "M190.659,60.765H166.267a9.356,9.356,0,0,0,3.453,4.969,9.772,9.772,0,0,0,5.913,1.8,16.426,16.426,0,0,0,4.885-.774,12.255,12.255,0,0,0,3.841-1.82l3.3,7.952a17.24,17.24,0,0,1-5.223,2.256,25.442,25.442,0,0,1-6.637.843,20.944,20.944,0,0,1-10.141-2.358,16.56,16.56,0,0,1-6.7-6.571,19.369,19.369,0,0,1-2.359-9.635,19.506,19.506,0,0,1,2.426-9.821,17.172,17.172,0,0,1,6.519-6.587,17.812,17.812,0,0,1,8.945-2.325,17.062,17.062,0,0,1,8.474,2.14,15.607,15.607,0,0,1,6.03,6.014,17.519,17.519,0,0,1,2.207,8.827A24.352,24.352,0,0,1,190.659,60.765Zm-9.265-6.671a6.819,6.819,0,0,0-1.937-5.121,7.005,7.005,0,0,0-5.1-1.887,7.868,7.868,0,0,0-5.374,1.9,9.209,9.209,0,0,0-2.881,5.105Z"
-			}), a.a.createElement("path", {
-				fill: "#ff4500",
-				d: "M222.464,23.569H233.11V75.454H222.969V71.107H222.8a14.246,14.246,0,0,1-10.984,4.886,16.227,16.227,0,0,1-14.453-8.676,20.341,20.341,0,0,1-2.325-9.956,20.057,20.057,0,0,1,2.409-10.09,16.53,16.53,0,0,1,6.317-6.418,16.889,16.889,0,0,1,8.389-2.19,14.771,14.771,0,0,1,5.576,1.027,13.657,13.657,0,0,1,4.5,2.949h.236Zm-3.892,42.08a8.72,8.72,0,0,0,3.184-3.385,10.184,10.184,0,0,0,1.18-4.936,10.386,10.386,0,0,0-1.129-4.886,8.422,8.422,0,0,0-3.133-3.369,8.588,8.588,0,0,0-4.532-1.213,8.682,8.682,0,0,0-4.532,1.2,8.429,8.429,0,0,0-3.15,3.336,10.152,10.152,0,0,0-1.145,4.868,10.585,10.585,0,0,0,1.128,4.919,8.55,8.55,0,0,0,3.151,3.436,8.81,8.81,0,0,0,8.978.033Z"
-			}), a.a.createElement("path", {
-				fill: "#ff4500",
-				d: "M264.848,23.569h10.646V75.454H265.353V71.107h-.168A14.246,14.246,0,0,1,254.2,75.993a16.227,16.227,0,0,1-14.453-8.676,20.341,20.341,0,0,1-2.325-9.956,20.057,20.057,0,0,1,2.409-10.09,16.523,16.523,0,0,1,6.317-6.418,16.886,16.886,0,0,1,8.389-2.19,14.771,14.771,0,0,1,5.576,1.027,13.657,13.657,0,0,1,4.5,2.949h.236Zm-3.892,42.08a8.728,8.728,0,0,0,3.184-3.385,10.183,10.183,0,0,0,1.179-4.936,10.374,10.374,0,0,0-1.129-4.886,8.412,8.412,0,0,0-3.132-3.369,8.591,8.591,0,0,0-4.532-1.213,8.679,8.679,0,0,0-4.532,1.2,8.422,8.422,0,0,0-3.15,3.336,10.152,10.152,0,0,0-1.145,4.868,10.585,10.585,0,0,0,1.128,4.919,8.55,8.55,0,0,0,3.151,3.436,8.81,8.81,0,0,0,8.978.033Z"
-			}), a.a.createElement("path", {
-				fill: "#ff4500",
-				d: "M284.456,34.148a6.617,6.617,0,0,1-2.342-8.928,6.192,6.192,0,0,1,2.342-2.324,6.561,6.561,0,0,1,3.3-.843,6.493,6.493,0,0,1,3.268,12.1,6.6,6.6,0,0,1-6.57,0Zm8.591,41.306H282.4V39.2h10.646Z"
-			}), a.a.createElement("path", {
-				fill: "#ff4500",
-				d: "M315.418,39.2H323.2v9.063h-7.783V75.454H304.772V48.265h-7.749V39.2h7.749V28.825h10.646Z"
-			}), a.a.createElement("path", {
-				fill: "#ff4500",
-				d: "M367.428,27.8a14.469,14.469,0,0,1,6.317,5.71,16.7,16.7,0,0,1,2.19,8.659A17.514,17.514,0,0,1,373.7,51.1a15.51,15.51,0,0,1-6.318,6.031,19.809,19.809,0,0,1-9.4,2.156h-6.166V75.454H340.761V25.793h16.913A22.1,22.1,0,0,1,367.428,27.8ZM357.405,49.545a8.728,8.728,0,0,0,4.076-.909,6.562,6.562,0,0,0,2.7-2.51,7.005,7.005,0,0,0,.943-3.622,6.126,6.126,0,0,0-2.173-5.021A8.958,8.958,0,0,0,357,35.631h-5.188V49.545Z"
-			}), a.a.createElement("path", {
-				fill: "#ff4500",
-				d: "M404.775,38.882a5.377,5.377,0,0,1,1.651.522l-4.279,10.175a5.732,5.732,0,0,0-1.263-.388,8.251,8.251,0,0,0-1.736-.185,8.08,8.08,0,0,0-3.622.876,7.359,7.359,0,0,0-2.914,2.628,7.721,7.721,0,0,0-1.145,4.312V75.454H380.82V39.2h10.344v5.087h.2a15.107,15.107,0,0,1,4.582-4.025,12.458,12.458,0,0,1,6.367-1.6A13.1,13.1,0,0,1,404.775,38.882Z"
-			}), a.a.createElement("path", {
-				fill: "#ff4500",
-				d: "M440.151,60.765H415.758a9.367,9.367,0,0,0,3.453,4.969,9.776,9.776,0,0,0,5.914,1.8,16.431,16.431,0,0,0,4.885-.774,12.255,12.255,0,0,0,3.841-1.82l3.3,7.952a17.234,17.234,0,0,1-5.222,2.256,25.447,25.447,0,0,1-6.637.843,20.941,20.941,0,0,1-10.141-2.358,16.562,16.562,0,0,1-6.7-6.571,19.379,19.379,0,0,1-2.358-9.635,19.5,19.5,0,0,1,2.426-9.821,17.172,17.172,0,0,1,6.519-6.587,17.812,17.812,0,0,1,8.945-2.325,17.062,17.062,0,0,1,8.474,2.14,15.613,15.613,0,0,1,6.03,6.014,17.519,17.519,0,0,1,2.207,8.827A24.352,24.352,0,0,1,440.151,60.765Zm-9.265-6.671a6.819,6.819,0,0,0-1.937-5.121,7.006,7.006,0,0,0-5.105-1.887,7.869,7.869,0,0,0-5.374,1.9,9.213,9.213,0,0,0-2.88,5.105Z"
-			}), a.a.createElement("path", {
-				fill: "#ff4500",
-				d: "M493.282,40.7a10.863,10.863,0,0,1,3.74,5.121,19.607,19.607,0,0,1,1.078,6.52V75.454H487.386v-21.8a7.294,7.294,0,0,0-1.246-4.564,4.257,4.257,0,0,0-3.572-1.6,4.976,4.976,0,0,0-3.857,1.6,6.515,6.515,0,0,0-1.466,4.564v21.8H466.6v-21.8a7.288,7.288,0,0,0-1.247-4.564,4.294,4.294,0,0,0-3.6-1.6,4.955,4.955,0,0,0-3.857,1.617,6.637,6.637,0,0,0-1.466,4.616V75.454H445.777V39.2h10.141v4.615h.169a12.481,12.481,0,0,1,4.312-3.84,11.742,11.742,0,0,1,5.559-1.314,10.357,10.357,0,0,1,5.256,1.28,9.366,9.366,0,0,1,3.572,3.774h.2a12.728,12.728,0,0,1,4.868-3.757,15.291,15.291,0,0,1,6.284-1.3A11.461,11.461,0,0,1,493.282,40.7Z"
-			}), a.a.createElement("path", {
-				fill: "#ff4500",
-				d: "M506.826,34.148a6.617,6.617,0,0,1-2.342-8.928,6.2,6.2,0,0,1,2.342-2.324,6.561,6.561,0,0,1,3.3-.843,6.493,6.493,0,0,1,3.268,12.1,6.6,6.6,0,0,1-6.57,0Zm8.591,41.306H504.771V39.2h10.646Z"
-			}), a.a.createElement("path", {
-				fill: "#ff4500",
-				d: "M544.763,39.2h10.646V75.487H545.133V70.7h-.269a11.143,11.143,0,0,1-4.549,3.892,14.315,14.315,0,0,1-6.367,1.431,11.771,11.771,0,0,1-6.351-1.667,10.928,10.928,0,0,1-4.111-4.632,15.394,15.394,0,0,1-1.431-6.773V39.2H532.7V60.6a7.073,7.073,0,0,0,1.516,4.885,5.337,5.337,0,0,0,4.178,1.685,6.3,6.3,0,0,0,4.582-1.735,6.524,6.524,0,0,0,1.786-4.9Z"
-			}), a.a.createElement("path", {
-				fill: "#ff4500",
-				d: "M609.652,40.7a10.863,10.863,0,0,1,3.74,5.121,19.607,19.607,0,0,1,1.078,6.52V75.454H603.756v-21.8a7.294,7.294,0,0,0-1.246-4.564,4.257,4.257,0,0,0-3.572-1.6,4.978,4.978,0,0,0-3.857,1.6,6.52,6.52,0,0,0-1.466,4.564v21.8H582.969v-21.8a7.288,7.288,0,0,0-1.247-4.564,4.294,4.294,0,0,0-3.605-1.6,4.955,4.955,0,0,0-3.857,1.617,6.637,6.637,0,0,0-1.466,4.616V75.454H562.147V39.2h10.142v4.615h.168a12.475,12.475,0,0,1,4.313-3.84,11.737,11.737,0,0,1,5.559-1.314,10.356,10.356,0,0,1,5.255,1.28,9.366,9.366,0,0,1,3.572,3.774h.2a12.723,12.723,0,0,1,4.869-3.757,15.283,15.283,0,0,1,6.283-1.3A11.459,11.459,0,0,1,609.652,40.7Z"
-			}))
 		},
 		"./src/reddit/models/Gold/Premium/index.ts": function(e, t, r) {
 			"use strict";
@@ -1916,25 +1861,25 @@
 					hk: "13LAq1"
 				})));
 				const v = P.find(e => e.frequency === m.c.Monthly),
-					E = P.find(e => e.frequency === m.c.Yearly);
-				if (!v || !E) return null;
+					_ = P.find(e => e.frequency === m.c.Yearly);
+				if (!v || !_) return null;
 				const x = null === (g = Object(b.j)(k, p.b.Month)) || void 0 === g ? void 0 : g[0],
-					_ = null === (O = Object(b.j)(k, p.b.Year)) || void 0 === O ? void 0 : O[0];
-				if (!x || !_) return null;
-				const w = {
+					w = null === (O = Object(b.j)(k, p.b.Year)) || void 0 === O ? void 0 : O[0];
+				if (!x || !w) return null;
+				const E = {
 						price: x.price,
 						packageId: v.mobileId,
 						currency: x.currency
 					},
 					C = {
-						price: _.price,
-						packageId: E.mobileId,
-						bonusPct: E.bonusPct,
-						currency: _.currency
+						price: w.price,
+						packageId: _.mobileId,
+						bonusPct: _.bonusPct,
+						currency: w.currency
 					},
-					I = Object(c.b)(w.price, {
+					I = Object(c.b)(E.price, {
 						type: o.b.Real,
-						currency: w.currency,
+						currency: E.currency,
 						locale: j
 					}),
 					N = Object(c.b)(C.price, {
@@ -1958,10 +1903,10 @@
 				}))), s.a.createElement(l.s, {
 					className: y.a.premiumMonthlyButton,
 					onClick: () => {
-						r(w.packageId, p.b.Month)
+						r(E.packageId, p.b.Month)
 					},
 					priority: l.b.Secondary
-				}, w && n.fbt._("{monthly price}/Month", [n.fbt._param("monthly price", I)], {
+				}, E && n.fbt._("{monthly price}/Month", [n.fbt._param("monthly price", I)], {
 					hk: "3xMnhy"
 				})), s.a.createElement("div", {
 					className: y.a.renewalSubtext
@@ -2000,7 +1945,7 @@
 		"./src/reddit/pages/Premium/index.tsx": function(e, t, r) {
 			"use strict";
 			r.r(t), r.d(t, "PAID_PREMIUM_SUBTEXT", (function() {
-				return F
+				return q
 			}));
 			var n = r("./src/config.ts"),
 				a = r("./node_modules/fbt/lib/FbtPublic.js"),
@@ -2023,10 +1968,10 @@
 				P = r.n(j),
 				k = r("./src/reddit/actions/login.ts"),
 				v = r("./src/reddit/actions/gold/productOfferPurchase.ts"),
-				E = r("./src/reddit/actions/gold/productOffers.ts"),
+				_ = r("./src/reddit/actions/gold/productOffers.ts"),
 				x = r("./src/reddit/actions/goldPurchaseModals/premiumPurchaseModal.ts"),
-				_ = r("./src/reddit/actions/goldPurchaseModals/purchaseCatalog.ts"),
-				w = r("./src/reddit/components/MarketingPageFooter/index.tsx"),
+				w = r("./src/reddit/actions/goldPurchaseModals/purchaseCatalog.ts"),
+				E = r("./src/reddit/components/MarketingPageFooter/index.tsx"),
 				C = r("./src/reddit/models/Gold/ProductOffer.ts"),
 				I = r("./src/reddit/selectors/gold/purchaseCatalog.ts"),
 				N = r("./src/reddit/selectors/user.ts"),
@@ -2040,7 +1985,7 @@
 				R = r("./src/reddit/selectors/claimgold.ts"),
 				U = r("./src/reddit/pages/Premium/RedeemGiftCode/index.m.less"),
 				D = r.n(U);
-			const H = () => {
+			const F = () => {
 					const e = Object(G.a)(),
 						t = Object(o.d)(),
 						r = Object(o.e)(R.a),
@@ -2080,10 +2025,10 @@
 						hk: "1d2cH2"
 					}))))
 				},
-				F = a.fbt._("* Powerup, custom app icons, and welcome gifts are only available through a paid Reddit Premium subscription.", null, {
+				q = a.fbt._("* Powerup, custom app icons, and welcome gifts are only available through a paid Reddit Premium subscription.", null, {
 					hk: "23BUsR"
 				}),
-				q = Object(d.c)({
+				Q = Object(d.c)({
 					goldExpiration: e => e.user.account && e.user.account.goldExpiration || 0,
 					isGold: N.s,
 					isPremiumSubscriber: N.t,
@@ -2091,7 +2036,7 @@
 					premiumPackages: I.j,
 					purchaseCatalogPending: I.l
 				}),
-				V = Object(o.b)(q, (e, t) => ({
+				W = Object(o.b)(Q, (e, t) => ({
 					onManagePremium: () => e(Object(c.b)("/settings/premium")),
 					onOpenLoginModal: () => e(Object(k.i)()),
 					onPurchasePremium: (t, r) => e(Object(x.openWithBlob)({
@@ -2101,10 +2046,10 @@
 					onSetPremiumRenewalInterval: t => e(Object(v.i)({
 						renewInterval: t
 					})),
-					requestPurchaseCatalog: t => e(Object(_.b)(t)),
-					premiumProductOffersRequested: () => e(Object(E.c)(C.c.Premium))
+					requestPurchaseCatalog: t => e(Object(w.b)(t)),
+					premiumProductOffersRequested: () => e(Object(_.c)(C.c.Premium))
 				}));
-			class Q extends i.a.Component {
+			class H extends i.a.Component {
 				constructor() {
 					super(...arguments), this.correlationId = Object(b.d)(b.a.GoldPayment, !1), this.onClickPrice = (e, t) => {
 						this.onPurchase(e, h.c, t)
@@ -2147,7 +2092,7 @@
 						onClickManagePremium: this.onClickManagePremium
 					}), i.a.createElement("div", {
 						className: P.a.paidPremiumSubtext
-					}, F), i.a.createElement(H, null), this.renderFAQSection()), i.a.createElement(w.a, {
+					}, q), i.a.createElement(F, null), this.renderFAQSection()), i.a.createElement(E.a, {
 						className: P.a.footer
 					}))
 				}
@@ -2220,7 +2165,7 @@
 					Object(b.b)(b.a.GoldPayment)
 				}
 			}
-			t.default = V(Object(p.c)(Q))
+			t.default = W(Object(p.c)(H))
 		},
 		"./src/reddit/selectors/gold/productOffers.ts": function(e, t, r) {
 			"use strict";
@@ -2337,4 +2282,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.f7b04516e51ade471146.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.378ca9cf28c88c0c8354.js.map

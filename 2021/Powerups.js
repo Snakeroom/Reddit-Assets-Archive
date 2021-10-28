@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Powerups.03d3e06f55578f746a9c.js
-// Retrieved at 10/5/2021, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Powerups.939037423c19d78d03ca.js
+// Retrieved at 10/28/2021, 5:10:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Powerups"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, a, t) {
@@ -708,20 +708,6 @@
 				return Object(n.d)()
 			}
 		},
-		"./src/reddit/icons/svgs/ChevronUp/index.tsx": function(e, a, t) {
-			"use strict";
-			var n = t("./node_modules/react/index.js"),
-				l = t.n(n);
-			a.a = e => l.a.createElement("svg", {
-				className: e.className,
-				viewBox: "0 0 12 12",
-				xmlns: "http://www.w3.org/2000/svg"
-			}, l.a.createElement("g", null, l.a.createElement("polygon", {
-				fill: "inherit",
-				transform: "translate(6.029200, 6.044700) scale(1, -1) translate(-6.029200, -6.044700)",
-				points: "11.0584 4.0602 6.0292 9.0894 1 4.0602 2.0608 3 6.0292 6.9684 9.9982 3"
-			})))
-		},
 		"./src/reddit/pages/Powerups/Communities.m.less": function(e, a, t) {
 			e.exports = {
 				communitiesContainer: "_2VWS7ATKcPK8kFgPYzh06g",
@@ -1410,4 +1396,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Powerups.03d3e06f55578f746a9c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Powerups.939037423c19d78d03ca.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.30115b6953c3945bee5b.js
-// Retrieved at 10/27/2021, 12:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.05e7c7ec3d0e26d15060.js
+// Retrieved at 10/28/2021, 5:10:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -1609,7 +1609,7 @@
 					s || c || !Object(d.e)(a) && !Object(d.d)(a) || e(Object(n.f)())
 				}, f = e => {
 					Object(c.d)(e, {
-						experimentName: a.kb
+						experimentName: a.lb
 					})
 				}
 		},
@@ -4010,7 +4010,7 @@
 			const v = e => S.d.reCaptchaEnterprise(e) && !Object(D.d)(e),
 				j = e => !!Object(T.c)(e, {
 					experimentEligibilitySelector: Object(g.d)(Object(g.b)(...a.d)),
-					experimentName: b.Vd
+					experimentName: b.Xd
 				}),
 				w = Object(s.b)("LOAD_RECAPTCHA_ENTERPRISE"),
 				A = Object(s.b)("EXECUTE_RECAPTCHA_ENTERPRISE"),
@@ -5665,10 +5665,13 @@
 				subredditIcon: "_3fvJBCH6c6P0NvMwoqK9MJ",
 				unknownIcon: "_1hCoGzhwFdfF2vGbt8IjSy",
 				userIcon: "E6V2eHU4CpJuLWzneTk0Z",
+				wrappedRedditDropdown: "XUd7bCU9SM6ycr6f242KD",
+				wrappedRedditLogoActive: "_3kzPDKtqN0MnLhOsSJVKHZ",
 				coinIcon: "JisrPypso_3RK4iDgDdke",
 				modQueueIcon: "_2L4XuYlbElLC5REx1XpdG_",
 				premiumIcon: "_2ulegyMhoTE_WCFyBC-IBx",
 				publicAccessNetworkIcon: "_3jFEC4X3IL9Zr-pzUzyCp7",
+				wrappedRedditLogo: "_29Am3nlgySiqDV_UaDXD69",
 				itemModQueue: "_1VemFsujoJ-6RR82VRSPeM",
 				listContainer: "TMMvbwyeh9yuHKmQWHrE3",
 				multiPlusButton: "_3mvXSuBIpYAdAsBJSB-1G5",
@@ -5901,7 +5904,7 @@
 						subreddit: r
 					} = e, {
 						isSponsored: s
-					} = t, n = Object(G.a)(), c = Object(B.a)(p.Mc) === p.Qc.Enabled;
+					} = t, n = Object(G.a)(), c = Object(B.a)(p.Oc) === p.Sc.Enabled;
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return a.a.createElement(K, {
 						nowrap: e.nowrap
 					}, a.a.createElement(X, e));
@@ -26193,7 +26196,7 @@
 						postId: t
 					}) || Object(c.H)(e))(e, t),
 					experimentName: s.N
-				}) === s.Cc
+				}) === s.Ec
 			}
 		},
 		"./src/reddit/selectors/experiments/googleOneTap.ts": function(e, t, r) {
@@ -26219,14 +26222,14 @@
 			const d = Object(s.a)(c.c, e => !e),
 				i = Object(s.a)(e => Object(a.c)(e, {
 					experimentEligibilitySelector: e => d(e),
-					experimentName: n.kb,
+					experimentName: n.lb,
 					expEventOverride: !1
 				}), e => e),
 				u = e => e === n.V.Onetap,
 				l = e => e === n.V.OnetapAuto,
 				p = e => e.user.googleOneTapEnabled,
 				b = Object(s.a)(o.K, i, (e, t) => !e && !!t),
-				f = Object(s.a)(o.K, i, (e, t) => !e && !!t && !Object(n.Oe)(t))
+				f = Object(s.a)(o.K, i, (e, t) => !e && !!t && !Object(n.Qe)(t))
 		},
 		"./src/reddit/selectors/scheduledPosts/index.ts": function(e, t, r) {
 			"use strict";
@@ -26444,4 +26447,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.30115b6953c3945bee5b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.05e7c7ec3d0e26d15060.js.map

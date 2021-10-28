@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Appeal.d936c9ad043cbd961e6a.js
-// Retrieved at 10/13/2021, 6:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Appeal.639b01d60e9ef5fd9aeb.js
+// Retrieved at 10/28/2021, 5:10:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Appeal"], {
 		"./src/lib/validateEmail/index.ts": function(e, a, t) {
@@ -38,9 +38,9 @@
 			})), t.d(a, "a", (function() {
 				return f
 			})), t.d(a, "b", (function() {
-				return g
-			})), t.d(a, "c", (function() {
 				return _
+			})), t.d(a, "c", (function() {
+				return g
 			}));
 			var n = t("./node_modules/react/index.js"),
 				l = t.n(n),
@@ -93,7 +93,7 @@
 						[d.a.mInvalid]: e.state === b.Invalid
 					})
 				}, e.state === b.Valid && l.a.createElement(o.a, null), e.state === b.Invalid && l.a.createElement(h, null, "!")))),
-				g = e => {
+				_ = e => {
 					const {
 						backgroundColorState: a,
 						className: t,
@@ -119,7 +119,7 @@
 						onKeyDown: c
 					})))
 				},
-				_ = e => {
+				g = e => {
 					const {
 						backgroundColorState: a,
 						className: t,
@@ -182,19 +182,6 @@
 				r = t.n(l);
 			a.a = n.a.input("input", r.a)
 		},
-		"./src/reddit/icons/svgs/Checkmark/index.tsx": function(e, a, t) {
-			"use strict";
-			var n = t("./node_modules/react/index.js"),
-				l = t.n(n);
-			a.a = e => l.a.createElement("svg", {
-				className: e.className,
-				viewBox: "0 0 20 22",
-				xmlns: "http://www.w3.org/2000/svg"
-			}, l.a.createElement("g", null, l.a.createElement("path", {
-				d: "M8.9310375,15.1995 C8.70135,15.41825 8.38963125,15.541375 8.0647875,15.541375 C8.052975,15.541375 8.04181875,15.54075 8.03000625,15.54075 C7.69335,15.531375 7.37506875,15.39075 7.15063125,15.151375 L4.0879125,11.88075 C3.637725,11.400125 3.68169375,10.662625 4.18700625,10.23325 C4.6916625,9.805125 5.4660375,9.846375 5.91688125,10.327625 L8.115975,12.676375 L14.8550063,6.25825 C15.3327563,5.802625 16.1091,5.802625 16.5875063,6.25825 C17.0659125,6.71325 17.0659125,7.452625 16.5875063,7.907625 L8.9310375,15.1995 Z",
-				fill: "inherit"
-			})))
-		},
 		"./src/reddit/pages/AppealPage/index.m.less": function(e, a, t) {
 			e.exports = {
 				content: "_3MnGFxJCm1MO2z_Wyl13KK",
@@ -242,22 +229,22 @@
 				b = t("./src/reddit/controls/CheckboxWithLabel/index.tsx"),
 				f = t("./src/reddit/controls/Form/index.tsx"),
 				x = t("./src/lib/constants/index.ts"),
-				g = t("./src/lib/makeApiRequest/index.ts"),
-				_ = t("./src/lib/omitHeaders/index.ts"),
-				C = t("./src/reddit/constants/headers.ts"),
-				k = t("./src/reddit/helpers/addRedesignIdentifier/index.ts");
-			const E = (e, a, t) => Object(g.a)(Object(_.a)(e, [C.a]), {
+				_ = t("./src/lib/makeApiRequest/index.ts"),
+				g = t("./src/lib/omitHeaders/index.ts"),
+				k = t("./src/reddit/constants/headers.ts"),
+				C = t("./src/reddit/helpers/addRedesignIdentifier/index.ts");
+			const y = (e, a, t) => Object(_.a)(Object(g.a)(e, [k.a]), {
 					method: x.ib.POST,
-					endpoint: Object(k.a)(`${e.apiUrl}/api/appeal`),
+					endpoint: Object(C.a)(`${e.apiUrl}/api/appeal`),
 					data: {
 						api_type: "json",
 						description: a,
 						email: t
 					}
 				}),
-				y = e => Object(g.a)(Object(_.a)(e, [C.a]), {
+				E = e => Object(_.a)(Object(g.a)(e, [k.a]), {
 					method: x.ib.GET,
-					endpoint: Object(k.a)(`${e.apiUrl}/api/eligible_for_appeal`),
+					endpoint: Object(C.a)(`${e.apiUrl}/api/eligible_for_appeal`),
 					data: {
 						api_type: "json"
 					}
@@ -268,11 +255,11 @@
 				S = Object(s.c)({
 					currentUser: v.k
 				}),
-				w = Object(i.b)(S, e => ({
+				D = Object(i.b)(S, e => ({
 					logoutUser: () => e(Object(p.q)()),
-					onSubmitAppeal: (a, t) => e(E(a, t))
+					onSubmitAppeal: (a, t) => e(y(a, t))
 				}));
-			class D extends r.a.Component {
+			class w extends r.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						appealError: null,
@@ -289,7 +276,7 @@
 						policyCheckboxDirty: !0,
 						submitWasClicked: !1
 					}, this.componentDidMount = async () => {
-						const e = await y(this.props.apiContext());
+						const e = await E(this.props.apiContext());
 						e.ok && this.setState({
 							canShowWarning: !0,
 							eligibleForAppeal: !!e.body
@@ -326,7 +313,7 @@
 							this.setState({
 								appealPending: !0
 							});
-							const t = await E(e.apiContext(), a.description, a.email ? a.email : void 0);
+							const t = await y(e.apiContext(), a.description, a.email ? a.email : void 0);
 							t.ok ? this.setState({
 								appealSuccess: !0
 							}) : this.setState({
@@ -371,7 +358,7 @@
 							emailValid: p,
 							policyCheckboxChecked: u,
 							policyCheckboxDirty: x,
-							submitWasClicked: g
+							submitWasClicked: _
 						} = t;
 						return r.a.createElement(r.a.Fragment, null, l && e && this.renderWarning(), r.a.createElement(f.a, {
 							className: d.a.appealForm,
@@ -404,7 +391,7 @@
 							label: n.fbt._("Username", null, {
 								hk: "1vE7k6"
 							}),
-							state: g ? m.d.Valid : void 0,
+							state: _ ? m.d.Valid : void 0,
 							value: a.currentUser.displayText
 						}), r.a.createElement("div", {
 							className: d.a.appealFormFieldComment
@@ -533,8 +520,8 @@
 					})), a.appealSuccess ? this.renderConfirmationPage() : this.renderForm(t))
 				}
 			}
-			a.default = Object(u.b)(w(D))
+			a.default = Object(u.b)(D(w))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Appeal.d936c9ad043cbd961e6a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Appeal.639b01d60e9ef5fd9aeb.js.map

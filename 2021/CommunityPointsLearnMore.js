@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.c79ccb698a4a9ca9657a.js
-// Retrieved at 10/25/2021, 10:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.9c090bf63a42e867a8bf.js
+// Retrieved at 10/28/2021, 5:10:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityPointsLearnMore"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, r) {
@@ -1421,19 +1421,6 @@
 					subreddit: Object(n.subredditById)(t, e)
 				})
 		},
-		"./src/reddit/icons/svgs/ArrowRightThin/index.tsx": function(e, t, r) {
-			"use strict";
-			var n = r("./node_modules/react/index.js"),
-				o = r.n(n);
-			t.a = e => o.a.createElement("svg", {
-				className: e.className,
-				viewBox: "0 0 16 16",
-				version: "1.1",
-				xmlns: "http://www.w3.org/2000/svg"
-			}, o.a.createElement("path", {
-				d: "M8.56569 0.234315C8.25327 -0.0781049 7.74673 -0.0781049 7.43431 0.234315C7.12189 0.546734 7.12189 1.05327 7.43431 1.36569L13.2686 7.2H0.8C0.358172 7.2 0 7.55817 0 8C0 8.44183 0.358172 8.8 0.8 8.8H13.2686L7.43431 14.6343C7.12189 14.9467 7.12189 15.4533 7.43431 15.7657C7.74673 16.0781 8.25327 16.0781 8.56569 15.7657L15.7657 8.56569C16.0781 8.25327 16.0781 7.74673 15.7657 7.43431L8.56569 0.234315Z"
-			}))
-		},
 		"./src/reddit/models/Payments/index.ts": function(e, t, r) {
 			"use strict";
 			var n, o, i, a;
@@ -1705,7 +1692,7 @@
 			})), r.d(t, "p", (function() {
 				return T
 			})), r.d(t, "k", (function() {
-				return S
+				return I
 			})), r.d(t, "r", (function() {
 				return q
 			})), r.d(t, "y", (function() {
@@ -1881,7 +1868,7 @@
 			! function(e) {
 				e[e.Fetched = 0] = "Fetched", e[e.Fetching = 1] = "Fetching", e[e.NotFetched = 2] = "NotFetched"
 			}(R || (R = {}));
-			const M = {
+			const S = {
 					prices: {},
 					member: "Supporter",
 					memberPlural: "Supporters",
@@ -1890,11 +1877,11 @@
 					membership: "Membership",
 					membershipAlt: "Supporter Membership"
 				},
-				S = (e, t) => Object.values(e.products.models).filter(e => e.type === u.a.Membership && t && e.subredditId === t),
-				I = (e, t) => {
+				I = (e, t) => Object.values(e.products.models).filter(e => e.type === u.a.Membership && t && e.subredditId === t),
+				M = (e, t) => {
 					if (!t) return {};
-					const r = M.prices;
-					S(e, t).forEach(e => {
+					const r = S.prices;
+					I(e, t).forEach(e => {
 						e.price && e.currency && (r[e.currency] = e.price)
 					});
 					const n = p(e, t);
@@ -1902,15 +1889,15 @@
 				},
 				q = (e, t) => {
 					var r, n, o, i;
-					const a = (null === (i = null === (o = null === (n = null === (r = e.features) || void 0 === r ? void 0 : r.crypto) || void 0 === n ? void 0 : n.points) || void 0 === o ? void 0 : o[t || ""]) || void 0 === i ? void 0 : i.nomenclature) || M;
+					const a = (null === (i = null === (o = null === (n = null === (r = e.features) || void 0 === r ? void 0 : r.crypto) || void 0 === n ? void 0 : n.points) || void 0 === o ? void 0 : o[t || ""]) || void 0 === i ? void 0 : i.nomenclature) || S;
 					return {
-						prices: I(e, t),
-						member: a.member || M.member,
-						memberPlural: a.memberPlural || M.memberPlural,
-						memberAlt: a.memberAlt || M.memberAlt,
-						memberAltPlural: a.memberAltPlural || M.memberAltPlural,
-						membership: a.membership || M.membership,
-						membershipAlt: a.membershipAlt || M.membershipAlt
+						prices: M(e, t),
+						member: a.member || S.member,
+						memberPlural: a.memberPlural || S.memberPlural,
+						memberAlt: a.memberAlt || S.memberAlt,
+						memberAltPlural: a.memberAltPlural || S.memberAltPlural,
+						membership: a.membership || S.membership,
+						membershipAlt: a.membershipAlt || S.membershipAlt
 					}
 				},
 				L = e => {
@@ -1969,4 +1956,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.c79ccb698a4a9ca9657a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.9c090bf63a42e867a8bf.js.map

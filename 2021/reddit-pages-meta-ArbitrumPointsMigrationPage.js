@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-pages-meta-ArbitrumPointsMigrationPage.d63c79ab9220d9e3d820.js
-// Retrieved at 10/25/2021, 4:40:12 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-pages-meta-ArbitrumPointsMigrationPage.90d1c09ffc89d34585e1.js
+// Retrieved at 10/28/2021, 5:10:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-pages-meta-ArbitrumPointsMigrationPage", "CryptoLibEthers"], {
 		"./node_modules/@ethersproject/address/lib.esm/index.js": function(e, t, n) {
@@ -605,8 +605,8 @@
 						return a && (e = i << 2, t = r[o], a > 0 && (l[e] = 255 & t), a > 1 && (l[e + 1] = t >> 8 & 255), a > 2 && (l[e + 2] = t >> 16 & 255)), l
 					};
 					var x = function(e) {
-						var t, n, r, s, a, o, l, u, c, d, m, p, h, g, f, b, y, E, v, w, x, N, _, T, O, A, C, j, k, R, S, M, I, P, U, B, L, F, D, G, H, V, W, z, X, $, q, K, Y, J, Z, Q, ee, te, ne, re, se, ae, oe, ie, le, ue, ce;
-						for (r = 0; r < 48; r += 2) s = e[0] ^ e[10] ^ e[20] ^ e[30] ^ e[40], a = e[1] ^ e[11] ^ e[21] ^ e[31] ^ e[41], o = e[2] ^ e[12] ^ e[22] ^ e[32] ^ e[42], l = e[3] ^ e[13] ^ e[23] ^ e[33] ^ e[43], u = e[4] ^ e[14] ^ e[24] ^ e[34] ^ e[44], c = e[5] ^ e[15] ^ e[25] ^ e[35] ^ e[45], d = e[6] ^ e[16] ^ e[26] ^ e[36] ^ e[46], m = e[7] ^ e[17] ^ e[27] ^ e[37] ^ e[47], t = (p = e[8] ^ e[18] ^ e[28] ^ e[38] ^ e[48]) ^ (o << 1 | l >>> 31), n = (h = e[9] ^ e[19] ^ e[29] ^ e[39] ^ e[49]) ^ (l << 1 | o >>> 31), e[0] ^= t, e[1] ^= n, e[10] ^= t, e[11] ^= n, e[20] ^= t, e[21] ^= n, e[30] ^= t, e[31] ^= n, e[40] ^= t, e[41] ^= n, t = s ^ (u << 1 | c >>> 31), n = a ^ (c << 1 | u >>> 31), e[2] ^= t, e[3] ^= n, e[12] ^= t, e[13] ^= n, e[22] ^= t, e[23] ^= n, e[32] ^= t, e[33] ^= n, e[42] ^= t, e[43] ^= n, t = o ^ (d << 1 | m >>> 31), n = l ^ (m << 1 | d >>> 31), e[4] ^= t, e[5] ^= n, e[14] ^= t, e[15] ^= n, e[24] ^= t, e[25] ^= n, e[34] ^= t, e[35] ^= n, e[44] ^= t, e[45] ^= n, t = u ^ (p << 1 | h >>> 31), n = c ^ (h << 1 | p >>> 31), e[6] ^= t, e[7] ^= n, e[16] ^= t, e[17] ^= n, e[26] ^= t, e[27] ^= n, e[36] ^= t, e[37] ^= n, e[46] ^= t, e[47] ^= n, t = d ^ (s << 1 | a >>> 31), n = m ^ (a << 1 | s >>> 31), e[8] ^= t, e[9] ^= n, e[18] ^= t, e[19] ^= n, e[28] ^= t, e[29] ^= n, e[38] ^= t, e[39] ^= n, e[48] ^= t, e[49] ^= n, g = e[0], f = e[1], $ = e[11] << 4 | e[10] >>> 28, q = e[10] << 4 | e[11] >>> 28, j = e[20] << 3 | e[21] >>> 29, k = e[21] << 3 | e[20] >>> 29, ie = e[31] << 9 | e[30] >>> 23, le = e[30] << 9 | e[31] >>> 23, V = e[40] << 18 | e[41] >>> 14, W = e[41] << 18 | e[40] >>> 14, P = e[2] << 1 | e[3] >>> 31, U = e[3] << 1 | e[2] >>> 31, b = e[13] << 12 | e[12] >>> 20, y = e[12] << 12 | e[13] >>> 20, K = e[22] << 10 | e[23] >>> 22, Y = e[23] << 10 | e[22] >>> 22, R = e[33] << 13 | e[32] >>> 19, S = e[32] << 13 | e[33] >>> 19, ue = e[42] << 2 | e[43] >>> 30, ce = e[43] << 2 | e[42] >>> 30, te = e[5] << 30 | e[4] >>> 2, ne = e[4] << 30 | e[5] >>> 2, B = e[14] << 6 | e[15] >>> 26, L = e[15] << 6 | e[14] >>> 26, E = e[25] << 11 | e[24] >>> 21, v = e[24] << 11 | e[25] >>> 21, J = e[34] << 15 | e[35] >>> 17, Z = e[35] << 15 | e[34] >>> 17, M = e[45] << 29 | e[44] >>> 3, I = e[44] << 29 | e[45] >>> 3, T = e[6] << 28 | e[7] >>> 4, O = e[7] << 28 | e[6] >>> 4, re = e[17] << 23 | e[16] >>> 9, se = e[16] << 23 | e[17] >>> 9, F = e[26] << 25 | e[27] >>> 7, D = e[27] << 25 | e[26] >>> 7, w = e[36] << 21 | e[37] >>> 11, x = e[37] << 21 | e[36] >>> 11, Q = e[47] << 24 | e[46] >>> 8, ee = e[46] << 24 | e[47] >>> 8, z = e[8] << 27 | e[9] >>> 5, X = e[9] << 27 | e[8] >>> 5, A = e[18] << 20 | e[19] >>> 12, C = e[19] << 20 | e[18] >>> 12, ae = e[29] << 7 | e[28] >>> 25, oe = e[28] << 7 | e[29] >>> 25, G = e[38] << 8 | e[39] >>> 24, H = e[39] << 8 | e[38] >>> 24, N = e[48] << 14 | e[49] >>> 18, _ = e[49] << 14 | e[48] >>> 18, e[0] = g ^ ~b & E, e[1] = f ^ ~y & v, e[10] = T ^ ~A & j, e[11] = O ^ ~C & k, e[20] = P ^ ~B & F, e[21] = U ^ ~L & D, e[30] = z ^ ~$ & K, e[31] = X ^ ~q & Y, e[40] = te ^ ~re & ae, e[41] = ne ^ ~se & oe, e[2] = b ^ ~E & w, e[3] = y ^ ~v & x, e[12] = A ^ ~j & R, e[13] = C ^ ~k & S, e[22] = B ^ ~F & G, e[23] = L ^ ~D & H, e[32] = $ ^ ~K & J, e[33] = q ^ ~Y & Z, e[42] = re ^ ~ae & ie, e[43] = se ^ ~oe & le, e[4] = E ^ ~w & N, e[5] = v ^ ~x & _, e[14] = j ^ ~R & M, e[15] = k ^ ~S & I, e[24] = F ^ ~G & V, e[25] = D ^ ~H & W, e[34] = K ^ ~J & Q, e[35] = Y ^ ~Z & ee, e[44] = ae ^ ~ie & ue, e[45] = oe ^ ~le & ce, e[6] = w ^ ~N & g, e[7] = x ^ ~_ & f, e[16] = R ^ ~M & T, e[17] = S ^ ~I & O, e[26] = G ^ ~V & P, e[27] = H ^ ~W & U, e[36] = J ^ ~Q & z, e[37] = Z ^ ~ee & X, e[46] = ie ^ ~ue & te, e[47] = le ^ ~ce & ne, e[8] = N ^ ~g & b, e[9] = _ ^ ~f & y, e[18] = M ^ ~T & A, e[19] = I ^ ~O & C, e[28] = V ^ ~P & B, e[29] = W ^ ~U & L, e[38] = Q ^ ~z & $, e[39] = ee ^ ~X & q, e[48] = ue ^ ~te & re, e[49] = ce ^ ~ne & se, e[0] ^= i[r], e[1] ^= i[r + 1]
+						var t, n, r, s, a, o, l, u, c, d, m, p, h, g, f, b, y, E, v, w, x, N, _, T, O, A, j, k, C, R, S, I, P, M, U, B, F, L, D, G, V, H, W, z, X, $, q, Y, K, J, Z, Q, ee, te, ne, re, se, ae, oe, ie, le, ue, ce;
+						for (r = 0; r < 48; r += 2) s = e[0] ^ e[10] ^ e[20] ^ e[30] ^ e[40], a = e[1] ^ e[11] ^ e[21] ^ e[31] ^ e[41], o = e[2] ^ e[12] ^ e[22] ^ e[32] ^ e[42], l = e[3] ^ e[13] ^ e[23] ^ e[33] ^ e[43], u = e[4] ^ e[14] ^ e[24] ^ e[34] ^ e[44], c = e[5] ^ e[15] ^ e[25] ^ e[35] ^ e[45], d = e[6] ^ e[16] ^ e[26] ^ e[36] ^ e[46], m = e[7] ^ e[17] ^ e[27] ^ e[37] ^ e[47], t = (p = e[8] ^ e[18] ^ e[28] ^ e[38] ^ e[48]) ^ (o << 1 | l >>> 31), n = (h = e[9] ^ e[19] ^ e[29] ^ e[39] ^ e[49]) ^ (l << 1 | o >>> 31), e[0] ^= t, e[1] ^= n, e[10] ^= t, e[11] ^= n, e[20] ^= t, e[21] ^= n, e[30] ^= t, e[31] ^= n, e[40] ^= t, e[41] ^= n, t = s ^ (u << 1 | c >>> 31), n = a ^ (c << 1 | u >>> 31), e[2] ^= t, e[3] ^= n, e[12] ^= t, e[13] ^= n, e[22] ^= t, e[23] ^= n, e[32] ^= t, e[33] ^= n, e[42] ^= t, e[43] ^= n, t = o ^ (d << 1 | m >>> 31), n = l ^ (m << 1 | d >>> 31), e[4] ^= t, e[5] ^= n, e[14] ^= t, e[15] ^= n, e[24] ^= t, e[25] ^= n, e[34] ^= t, e[35] ^= n, e[44] ^= t, e[45] ^= n, t = u ^ (p << 1 | h >>> 31), n = c ^ (h << 1 | p >>> 31), e[6] ^= t, e[7] ^= n, e[16] ^= t, e[17] ^= n, e[26] ^= t, e[27] ^= n, e[36] ^= t, e[37] ^= n, e[46] ^= t, e[47] ^= n, t = d ^ (s << 1 | a >>> 31), n = m ^ (a << 1 | s >>> 31), e[8] ^= t, e[9] ^= n, e[18] ^= t, e[19] ^= n, e[28] ^= t, e[29] ^= n, e[38] ^= t, e[39] ^= n, e[48] ^= t, e[49] ^= n, g = e[0], f = e[1], $ = e[11] << 4 | e[10] >>> 28, q = e[10] << 4 | e[11] >>> 28, k = e[20] << 3 | e[21] >>> 29, C = e[21] << 3 | e[20] >>> 29, ie = e[31] << 9 | e[30] >>> 23, le = e[30] << 9 | e[31] >>> 23, H = e[40] << 18 | e[41] >>> 14, W = e[41] << 18 | e[40] >>> 14, M = e[2] << 1 | e[3] >>> 31, U = e[3] << 1 | e[2] >>> 31, b = e[13] << 12 | e[12] >>> 20, y = e[12] << 12 | e[13] >>> 20, Y = e[22] << 10 | e[23] >>> 22, K = e[23] << 10 | e[22] >>> 22, R = e[33] << 13 | e[32] >>> 19, S = e[32] << 13 | e[33] >>> 19, ue = e[42] << 2 | e[43] >>> 30, ce = e[43] << 2 | e[42] >>> 30, te = e[5] << 30 | e[4] >>> 2, ne = e[4] << 30 | e[5] >>> 2, B = e[14] << 6 | e[15] >>> 26, F = e[15] << 6 | e[14] >>> 26, E = e[25] << 11 | e[24] >>> 21, v = e[24] << 11 | e[25] >>> 21, J = e[34] << 15 | e[35] >>> 17, Z = e[35] << 15 | e[34] >>> 17, I = e[45] << 29 | e[44] >>> 3, P = e[44] << 29 | e[45] >>> 3, T = e[6] << 28 | e[7] >>> 4, O = e[7] << 28 | e[6] >>> 4, re = e[17] << 23 | e[16] >>> 9, se = e[16] << 23 | e[17] >>> 9, L = e[26] << 25 | e[27] >>> 7, D = e[27] << 25 | e[26] >>> 7, w = e[36] << 21 | e[37] >>> 11, x = e[37] << 21 | e[36] >>> 11, Q = e[47] << 24 | e[46] >>> 8, ee = e[46] << 24 | e[47] >>> 8, z = e[8] << 27 | e[9] >>> 5, X = e[9] << 27 | e[8] >>> 5, A = e[18] << 20 | e[19] >>> 12, j = e[19] << 20 | e[18] >>> 12, ae = e[29] << 7 | e[28] >>> 25, oe = e[28] << 7 | e[29] >>> 25, G = e[38] << 8 | e[39] >>> 24, V = e[39] << 8 | e[38] >>> 24, N = e[48] << 14 | e[49] >>> 18, _ = e[49] << 14 | e[48] >>> 18, e[0] = g ^ ~b & E, e[1] = f ^ ~y & v, e[10] = T ^ ~A & k, e[11] = O ^ ~j & C, e[20] = M ^ ~B & L, e[21] = U ^ ~F & D, e[30] = z ^ ~$ & Y, e[31] = X ^ ~q & K, e[40] = te ^ ~re & ae, e[41] = ne ^ ~se & oe, e[2] = b ^ ~E & w, e[3] = y ^ ~v & x, e[12] = A ^ ~k & R, e[13] = j ^ ~C & S, e[22] = B ^ ~L & G, e[23] = F ^ ~D & V, e[32] = $ ^ ~Y & J, e[33] = q ^ ~K & Z, e[42] = re ^ ~ae & ie, e[43] = se ^ ~oe & le, e[4] = E ^ ~w & N, e[5] = v ^ ~x & _, e[14] = k ^ ~R & I, e[15] = C ^ ~S & P, e[24] = L ^ ~G & H, e[25] = D ^ ~V & W, e[34] = Y ^ ~J & Q, e[35] = K ^ ~Z & ee, e[44] = ae ^ ~ie & ue, e[45] = oe ^ ~le & ce, e[6] = w ^ ~N & g, e[7] = x ^ ~_ & f, e[16] = R ^ ~I & T, e[17] = S ^ ~P & O, e[26] = G ^ ~H & M, e[27] = V ^ ~W & U, e[36] = J ^ ~Q & z, e[37] = Z ^ ~ee & X, e[46] = ie ^ ~ue & te, e[47] = le ^ ~ce & ne, e[8] = N ^ ~g & b, e[9] = _ ^ ~f & y, e[18] = I ^ ~T & A, e[19] = P ^ ~O & j, e[28] = H ^ ~M & B, e[29] = W ^ ~U & F, e[38] = Q ^ ~z & $, e[39] = ee ^ ~X & q, e[48] = ue ^ ~te & re, e[49] = ce ^ ~ne & se, e[0] ^= i[r], e[1] ^= i[r + 1]
 					};
 					if (s) e.exports = h;
 					else
@@ -1463,77 +1463,6 @@
 				})
 			}
 		},
-		"./src/reddit/icons/svgs/CheckmarkFitted/index.tsx": function(e, t, n) {
-			"use strict";
-			var r = n("./node_modules/react/index.js"),
-				s = n.n(r);
-			t.a = e => s.a.createElement("svg", {
-				className: e.className,
-				viewBox: "3 4 14 14",
-				xmlns: "http://www.w3.org/2000/svg"
-			}, s.a.createElement("g", null, s.a.createElement("path", {
-				d: "M8.9310375,15.1995 C8.70135,15.41825 8.38963125,15.541375 8.0647875,15.541375 C8.052975,15.541375 8.04181875,15.54075 8.03000625,15.54075 C7.69335,15.531375 7.37506875,15.39075 7.15063125,15.151375 L4.0879125,11.88075 C3.637725,11.400125 3.68169375,10.662625 4.18700625,10.23325 C4.6916625,9.805125 5.4660375,9.846375 5.91688125,10.327625 L8.115975,12.676375 L14.8550063,6.25825 C15.3327563,5.802625 16.1091,5.802625 16.5875063,6.25825 C17.0659125,6.71325 17.0659125,7.452625 16.5875063,7.907625 L8.9310375,15.1995 Z",
-				fill: "inherit"
-			})))
-		},
-		"./src/reddit/icons/svgs/Clear/index.tsx": function(e, t, n) {
-			"use strict";
-			var r = n("./node_modules/react/index.js"),
-				s = n.n(r);
-			t.a = e => s.a.createElement("svg", {
-				className: e.className,
-				onClick: e.onClick,
-				onMouseUp: e.onMouseUp,
-				xmlns: "http://www.w3.org/2000/svg",
-				viewBox: "0 0 40 40"
-			}, s.a.createElement("path", {
-				d: "M20 2.5C10.3 2.5 2.5 10.3 2.5 20c0 9.7 7.8 17.5 17.5 17.5S37.5 29.7 37.5 20C37.5 10.3 29.7 2.5 20 2.5zM24.2 27.7L20 23.5l-4.2 4.2c-1.1 1.1-2.5 1.1-3.5 0-1.1-1.1-1.1-2.4 0-3.5l4.2-4.2-4.2-4.2c-1.1-1.1-1.1-2.5 0-3.5 1.1-1.1 2.4-1.1 3.5 0l4.2 4.2 4.2-4.2c1.1-1.1 2.5-1.1 3.5 0 1.1 1.1 1.1 2.4 0 3.5L23.5 20l4.2 4.2c1.1 1.1 1.1 2.5 0 3.5C26.7 28.8 25.3 28.8 24.2 27.7z"
-			}))
-		},
-		"./src/reddit/icons/svgs/Plus/index.tsx": function(e, t, n) {
-			"use strict";
-			var r = n("./node_modules/react/index.js"),
-				s = n.n(r);
-			t.a = e => s.a.createElement("svg", {
-				className: e.className,
-				viewBox: "0 0 20 20",
-				version: "1.1"
-			}, s.a.createElement("g", {
-				stroke: "none"
-			}, s.a.createElement("g", {
-				transform: "translate(-34.000000, -136.000000)",
-				fill: "inherit"
-			}, s.a.createElement("path", {
-				d: "M45.2,147.2 L48.8,147.2 C49.46272,147.2 50,146.66272 50,146 C50,145.33728 49.46272,144.8 48.8,144.8 L45.2,144.8 L45.2,141.2 C45.2,140.53728 44.66272,140 44,140 C43.33728,140 42.8,140.53728 42.8,141.2 L42.8,144.8 L39.2,144.8 C38.53728,144.8 38,145.33728 38,146 C38,146.66272 38.53728,147.2 39.2,147.2 L42.8,147.2 L42.8,150.8 C42.8,151.46272 43.33728,152 44,152 C44.66272,152 45.2,151.46272 45.2,150.8 L45.2,147.2 Z"
-			}))))
-		},
-		"./src/reddit/icons/svgs/Trash2/index.m.less": function(e, t, n) {
-			e.exports = {
-				icon: "_1Fa4RPHlhrfUZuNaXK2-eP"
-			}
-		},
-		"./src/reddit/icons/svgs/Trash2/index.tsx": function(e, t, n) {
-			"use strict";
-			n.d(t, "a", (function() {
-				return l
-			}));
-			var r = n("./node_modules/react/index.js"),
-				s = n.n(r),
-				a = n("./src/lib/classNames/index.ts"),
-				o = n("./src/reddit/icons/svgs/Trash2/index.m.less"),
-				i = n.n(o);
-			const l = e => s.a.createElement("svg", {
-				className: Object(a.a)(i.a.icon, e.className),
-				viewBox: "0 0 20 20",
-				xmlns: "http://www.w3.org/2000/svg",
-				onClick: e.onClick
-			}, s.a.createElement("path", {
-				d: "M16.5,2H12.71l-.85-.85A.5.5,0,0,0,11.5,1h-3a.5.5,0,0,0-.35.15L7.29,2H3.5a.5.5,0,0,0-.5.5v1a.5.5,0,0,0,.5.5h13a.5.5,0,0,0,.5-.5v-1A.5.5,0,0,0,16.5,2Z"
-			}), s.a.createElement("path", {
-				d: "M16.5,5H3.5a.5.5,0,0,0-.5.5v12A1.5,1.5,0,0,0,4.5,19h11A1.5,1.5,0,0,0,17,17.5V5.5A.5.5,0,0,0,16.5,5ZM6.75,15.5a.75.75,0,0,1-1.5,0v-7a.75.75,0,0,1,1.5,0Zm4,0a.75.75,0,0,1-1.5,0v-7a.75.75,0,0,1,1.5,0Zm4,0a.75.75,0,0,1-1.5,0v-7a.75.75,0,0,1,1.5,0Z"
-			}));
-			t.b = l
-		},
 		"./src/reddit/pages/meta/ArbitrumPointsMigrationPage/index.m.less": function(e, t, n) {
 			e.exports = {
 				container: "_1qKwjdihVjHUENiDeGX6f2",
@@ -1548,7 +1477,7 @@
 		"./src/reddit/pages/meta/ArbitrumPointsMigrationPage/index.tsx": function(e, t, n) {
 			"use strict";
 			n.r(t), n.d(t, "ArbitrumPointsMigrationPage", (function() {
-				return V
+				return H
 			})), n.d(t, "default", (function() {
 				return z
 			}));
@@ -2020,7 +1949,7 @@
 				if (!d) throw new Error("No L2 transaction were found in L1 tx: " + c.transactionHashTxHash);
 				return console.log("seqnumbs", d), d
 			}
-			async function C(e, t, n, r) {
+			async function j(e, t, n, r) {
 				const a = await t.getBlockNumber();
 				for (console.log("block number", a); Date.now() < r;) {
 					const t = new s.ethers.Contract(N, p, n),
@@ -2051,27 +1980,27 @@
 				}
 				throw new Error(`Timed out while trying to find redeemable ticket ${e}.`)
 			}
-			async function j(e, t) {
+			async function k(e, t) {
 				const n = new s.ethers.providers.JsonRpcProvider(Object(m.i)(m.a.ArbitrumRinkeby)),
 					r = new s.ethers.Contract(e, h.a, n);
 				return await r.balanceOf(t)
 			}
-			var k = n("./src/reddit/helpers/localStorage/index.ts"),
+			var C = n("./src/reddit/helpers/localStorage/index.ts"),
 				R = n("./src/reddit/selectors/user.ts"),
 				S = n("./src/reddit/icons/svgs/CheckmarkFitted/index.tsx"),
-				M = n("./src/reddit/icons/svgs/Clear/index.tsx"),
-				I = n("./src/reddit/pages/meta/ArbitrumPointsMigrationPage/index.m.less"),
-				P = n.n(I);
+				I = n("./src/reddit/icons/svgs/Clear/index.tsx"),
+				P = n("./src/reddit/pages/meta/ArbitrumPointsMigrationPage/index.m.less"),
+				M = n.n(P);
 			const U = () => o.a.createElement(d.a, {
-					className: P.a.loading
+					className: M.a.loading
 				}),
 				B = () => o.a.createElement(S.a, {
-					className: P.a.succeeded
+					className: M.a.succeeded
 				}),
-				L = () => o.a.createElement(M.a, {
-					className: P.a.failed
+				F = () => o.a.createElement(I.a, {
+					className: M.a.failed
 				}),
-				F = "5391184";
+				L = "5391184";
 
 			function D({
 				destinationAddress: e,
@@ -2089,18 +2018,18 @@
 							try {
 								const a = new s.ethers.providers.Web3Provider(Object(w.c)()).getSigner();
 								if (u) {
-									if (n === F) {
+									if (n === L) {
 										const n = await async function(e, t) {
 											const n = new s.ethers.providers.JsonRpcProvider(Object(m.i)(m.a.ArbitrumRinkeby));
 											let r = null;
-											for (const s of t) r = await v(s, n), console.log(`Looking for ticket ${r} corresponding to SEQ ${s}`), await C(r, n, e, Date.now() + _);
+											for (const s of t) r = await v(s, n), console.log(`Looking for ticket ${r} corresponding to SEQ ${s}`), await j(r, n, e, Date.now() + _);
 											return console.log("All tickets redeemed!"), r
 										}(a, t.seqNums);
-										p(n), g(!0), r(), b(await j(t.l2ContractAddress, e))
+										p(n), g(!0), r(), b(await k(t.l2ContractAddress, e))
 									}
 								} else {
 									if ("4" !== n) throw new Error("Wallet must be set to Rinkeby Test Network");
-									t.seqNums = await A(a, e, t.l1ContractAddress, t.balance), t.originalL2Balance = await j(t.l2ContractAddress, e), r(t), c(!0)
+									t.seqNums = await A(a, e, t.l1ContractAddress, t.balance), t.originalL2Balance = await k(t.l2ContractAddress, e), r(t), c(!0)
 								}
 							} catch (a) {
 								throw console.error("Got error while running migration: ", a), l(a.message || a), a
@@ -2124,9 +2053,9 @@
 				}
 				return i ? y.push(o.a.createElement("p", {
 					key: "error"
-				}, o.a.createElement(L, null), " Encountered an error: ", i.toString())) : u ? h ? f || y.push(o.a.createElement("p", {
+				}, o.a.createElement(F, null), " Encountered an error: ", i.toString())) : u ? h ? f || y.push(o.a.createElement("p", {
 					key: "l2-pending"
-				}, o.a.createElement(U, null), " Loading L2 balance...")) : n !== F ? (y.push(o.a.createElement("p", {
+				}, o.a.createElement(U, null), " Loading L2 balance...")) : n !== L ? (y.push(o.a.createElement("p", {
 					key: "change-network"
 				}, o.a.createElement(U, null), " ", o.a.createElement("b", null, "Great! Now you'll need to switch networks to the Arbitrum chain."), " ", "Here are the instructions for MetaMask specifically:")), y.push(o.a.createElement("ol", {
 					key: "instructions"
@@ -2138,11 +2067,11 @@
 			}
 			const G = "arb-migration-l1";
 
-			function H(e) {
-				e ? Object(k.Cb)(G, e) : window.localStorage && window.localStorage.removeItem(G)
+			function V(e) {
+				e ? Object(C.Cb)(G, e) : window.localStorage && window.localStorage.removeItem(G)
 			}
 
-			function V() {
+			function H() {
 				const e = Object(i.d)(),
 					t = Object(w.c)(),
 					n = Object(i.e)(R.K),
@@ -2150,7 +2079,7 @@
 					[p, h] = Object(a.useState)(Object(w.e)()),
 					[g, f] = Object(a.useState)(function() {
 						var e, t;
-						const n = Object(k.A)(G);
+						const n = Object(C.A)(G);
 						return n && (n.balance = r.a.from(n.balance), n.seqNums = null === (e = n.seqNums) || void 0 === e ? void 0 : e.map(e => r.a.from(e)), n.originalL2Balance = null !== (t = n.originalL2Balance) && void 0 !== t ? t : r.a.from(n.originalL2Balance)), n
 					}()),
 					[b, y] = Object(a.useState)((null == g ? void 0 : g.destinationAddress) || ""),
@@ -2181,7 +2110,7 @@
 					destinationAddress: b,
 					migration: g,
 					network: p,
-					saveMigrationState: H
+					saveMigrationState: V
 				}) : o.a.createElement(o.a.Fragment, null, o.a.createElement("p", null, o.a.createElement("b", null, "Please select a destination wallet address for the ", g.name, ":")), N.map(e => o.a.createElement("p", {
 					key: e
 				}, o.a.createElement(u.k, {
@@ -2207,9 +2136,9 @@
 				}, "Connect to wallet") : o.a.createElement("b", null, "Please install ", o.a.createElement("a", {
 					href: "https://metamask.io/"
 				}, "MetaMask"), " or an equivalent wallet."))) : o.a.createElement("p", null, o.a.createElement("b", null, "Please log in to contiue.")), o.a.createElement("div", {
-					className: P.a.container
+					className: M.a.container
 				}, o.a.createElement("h1", {
-					className: P.a.header
+					className: M.a.header
 				}, "Let's get those Points moved over"), o.a.createElement("p", null, "If you moved your Moons or Bricks out of your Vault, you will need to migrate them using this tool in order to get them onto our new system. This tool will help walk you through the necessary steps."), T)
 			}
 
@@ -2227,17 +2156,17 @@
 				}, o.a.createElement(u.k, {
 					onClick: () => e(t)
 				}, s.ethers.utils.formatEther(t.balance), " ", t.name)))) : o.a.createElement(o.a.Fragment, null, o.a.createElement("p", {
-					className: P.a.error
+					className: M.a.error
 				}, o.a.createElement("b", null, "No Points to migrate")), o.a.createElement("p", null, "Hmmm... I can't find any unmigrated points for your connected address: ", o.a.createElement("b", null, t), "."), o.a.createElement("ul", null, o.a.createElement("li", null, "If your Points were already in your Vault, they have already been migrated."), o.a.createElement("li", null, "If your Points were in a different wallet, make sure you send them to this address to migrate them. Or connect that wallet with this wallet software/extension."), o.a.createElement("li", null, "If you sent your Points to your Vault instead of this address, you will need to import your Vault into this wallet software (e.g. MetaMask). You can do this by using the 12-word phrase available in Vault Settings."))) : o.a.createElement("p", null, o.a.createElement("b", null, "Loading Points balances...", " ", o.a.createElement(d.a, {
-					className: P.a.loadingSpinner,
+					className: M.a.loadingSpinner,
 					sizePx: 14
 				})))
 			}
 
 			function z() {
-				return o.a.createElement(V, null)
+				return o.a.createElement(H, null)
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-pages-meta-ArbitrumPointsMigrationPage.d63c79ab9220d9e3d820.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-pages-meta-ArbitrumPointsMigrationPage.90d1c09ffc89d34585e1.js.map

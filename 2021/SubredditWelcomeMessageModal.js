@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWelcomeMessageModal.861caba1a41d96548a08.js
-// Retrieved at 10/26/2021, 2:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWelcomeMessageModal.609bcacbf86bbd26d8b8.js
+// Retrieved at 10/28/2021, 5:10:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWelcomeMessageModal"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -507,14 +507,14 @@
 						style: s
 					})
 				},
-				N = e => {
+				I = e => {
 					const t = {};
 					return (!e.showFull && Object(v.K)(e.height, e.width) || e.shouldBlur) && (t.overflow = "hidden"), e.showFull || (t.maxHeight = `${v.j}px`, e.shouldBlur && (t.maxWidth = Object(v.K)(e.height, e.width) ? `${v.z}px` : `${e.width}px`)), e.showCentered && (t.margin = "0 auto"), e.isExpando && e.maxHeight && (t.maxHeight = `${e.maxHeight}px`), i.a.createElement("div", {
 						className: Object(c.a)(S.a.container, e.className),
 						style: t
 					}, e.children)
 				},
-				I = Object(o.b)(() => Object(d.a)(E.G, w.db, (e, {
+				N = Object(o.b)(() => Object(d.a)(E.G, w.db, (e, {
 					isSponsored: t,
 					postId: s
 				}) => t && s ? Object(E.b)(e, s) : null, _.a, y.actionInfo, E.H, (e, t, s, n, r, i) => ({
@@ -525,7 +525,7 @@
 					pageType: r.pageType,
 					post: i
 				})));
-			t.a = I(e => {
+			t.a = N(e => {
 				const t = e.sendGoodVisitEvent ? Object(g.a)() : void 0;
 				return e.outboundUrl && !e.shouldBlur ? i.a.createElement("a", {
 					href: e.outboundUrl,
@@ -565,7 +565,7 @@
 				}) => {
 					const s = Object(v.K)(t.height, t.width),
 						r = k(t.height) && s;
-					return i.a.createElement(N, C({}, t, {
+					return i.a.createElement(I, C({}, t, {
 						className: `${s?`${j.a} `:""}${t.className||""}`
 					}), t.isListing ? i.a.createElement("div", {
 						className: t.contentImageClassName
@@ -792,12 +792,12 @@
 					k(e ? Object(l.r)(p) : Object(l.E)(p))
 				}
 
-				function N() {
+				function I() {
 					return k(Object(l.z)({
 						postId: p
 					}))
 				}
-				const I = r()(e => {
+				const N = r()(e => {
 					if (s) return;
 					const {
 						target: t
@@ -806,7 +806,7 @@
 				}, 200);
 
 				function M(e) {
-					e.persist(), I(e)
+					e.persist(), N(e)
 				}
 
 				function L(e) {
@@ -850,7 +850,7 @@
 						onLoadStart: R,
 						onLoadedData: L,
 						onLoadedMetadata: B,
-						onPause: N,
+						onPause: I,
 						onPlaying: H,
 						onTimeUpdate: M,
 						shouldLoad: h,
@@ -1137,9 +1137,9 @@
 			})), s.d(t, "q", (function() {
 				return T
 			})), s.d(t, "s", (function() {
-				return N
-			})), s.d(t, "r", (function() {
 				return I
+			})), s.d(t, "r", (function() {
+				return N
 			})), s.d(t, "a", (function() {
 				return M
 			})), s.d(t, "w", (function() {
@@ -1172,8 +1172,8 @@
 				C = d.a.td("Tdl", a.a),
 				k = d.a.td("Tdc", a.a),
 				T = d.a.td("Tdr", a.a),
-				N = d.a.th("Thl", a.a),
-				I = d.a.th("Thc", a.a),
+				I = d.a.th("Thl", a.a),
+				N = d.a.th("Thc", a.a),
 				M = (d.a.th("Thr", a.a), d.a.wrapped(e => r.a.createElement(i.b, e), "A", a.a)),
 				L = d.a.wrapped(c.a, "A", a.a)
 		},
@@ -1663,8 +1663,8 @@
 				C = s("./src/reddit/helpers/crypto/vaultActionLink.ts"),
 				k = s("./src/reddit/helpers/isComment.ts"),
 				T = s("./src/reddit/helpers/isPost.ts"),
-				N = s("./src/reddit/helpers/richTextJson/index.ts"),
-				I = s("./src/reddit/helpers/trackers/getRichTextSourceElement.ts");
+				I = s("./src/reddit/helpers/richTextJson/index.ts"),
+				N = s("./src/reddit/helpers/trackers/getRichTextSourceElement.ts");
 			const M = (e, t, s) => {
 					const n = e.c || [],
 						r = e.l,
@@ -1778,7 +1778,7 @@
 						key: e
 					}, a.a.createElement("br", null)))(n);
 					const r = e.c[0];
-					return r.e !== p.m && r.e !== p.a || !Object(N.g)(r.id) ? a.a.createElement(d.j, {
+					return r.e !== p.m && r.e !== p.a || !Object(I.g)(r.id) ? a.a.createElement(d.j, {
 						key: n
 					}, A(e.c, t, s)) : Object(j.b)(r, n, t)
 				},
@@ -1820,7 +1820,7 @@
 								title: e.a
 							}, n);
 							let r, i;
-							const o = Object(I.a)(t),
+							const o = Object(N.a)(t),
 								c = t.renderingObjectInfo;
 							return c && Object(T.b)(c) && (r = c.postId), c && Object(k.b)(c) && (i = c.id, r = c.postId), a.a.createElement(d.a, {
 								href: e.u,
@@ -2008,12 +2008,12 @@
 						rtJsonElementProps: i
 					});
 					switch (n) {
-						case b.qe.SmIcon:
+						case b.se.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: i
 							});
-						case b.qe.SmIconHc:
+						case b.se.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -2113,14 +2113,14 @@
 				k = s("./src/reddit/components/SubredditWelcomeMessageModal/index.m.less"),
 				T = s.n(k);
 			const {
-				fbt: N
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), I = {}, M = Object(o.c)({
+				fbt: I
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), N = {}, M = Object(o.c)({
 				currentSubredditId: _.c,
 				currentSubredditName: _.d,
 				experimentVariant: e => {
 					var t;
 					return null === (t = Object(v.d)(e, {
-						experimentName: m.me
+						experimentName: m.oe
 					})) || void 0 === t ? void 0 : t.variant
 				},
 				user: y.k,
@@ -2172,7 +2172,7 @@
 					target: "_blank"
 				}, r.a.createElement(x.a, null)), j && r.a.createElement("span", {
 					className: T.a.modalTitle
-				}, N._("Rules", null, {
+				}, I._("Rules", null, {
 					hk: "27tW75"
 				}))), r.a.createElement(h.a, {
 					className: T.a.icon,
@@ -2194,27 +2194,27 @@
 					primaryColor: E.color
 				})), r.a.createElement("div", {
 					className: T.a.welcomeTitle
-				}, N._("Welcome{username}", [N._param("username", `, ${null==w?void 0:w.displayText}!`)], {
+				}, I._("Welcome{username}", [I._param("username", `, ${null==w?void 0:w.displayText}!`)], {
 					hk: "uui4X"
 				})), (null === (t = null == y ? void 0 : y.body) || void 0 === t ? void 0 : t.richtext) ? r.a.createElement(c.a, {
 					className: T.a.welcomeMessageText,
 					content: JSON.parse(null === (s = null == y ? void 0 : y.body) || void 0 === s ? void 0 : s.richtext),
-					rtJsonElementProps: I
+					rtJsonElementProps: N
 				}) : null === (i = null == y ? void 0 : y.body) || void 0 === i ? void 0 : i.markdown)), r.a.createElement(d.g, {
 					className: T.a.modalFooter
-				}, u === m.se.Rules ? !j && r.a.createElement(p.s, {
+				}, u === m.ue.Rules ? !j && r.a.createElement(p.s, {
 					priority: p.b.Secondary,
 					onClick: () => {
 						O(!0), _(b.b())
 					}
-				}, N._("View Rules", null, {
+				}, I._("View Rules", null, {
 					hk: "35MgXX"
 				})) : r.a.createElement(p.s, {
 					priority: p.b.Secondary,
 					onClick: () => _(b.a()),
 					to: `/r/${a}/submit`,
 					kind: p.a.InternalLink
-				}, N._("Create a Post", null, {
+				}, I._("Create a Post", null, {
 					hk: "EVHG4"
 				})), r.a.createElement(p.s, {
 					className: T.a.modalSubmitButton,
@@ -2508,19 +2508,6 @@
 			}, r.a.createElement(o.a, null, e.desc))
 		},
 		"./src/reddit/icons/fonts/commonStyles.m.less": function(e, t, s) {},
-		"./src/reddit/icons/svgs/Pagination/back.tsx": function(e, t, s) {
-			"use strict";
-			var n = s("./node_modules/react/index.js"),
-				r = s.n(n);
-			t.a = e => r.a.createElement("svg", {
-				className: e.className,
-				onClick: e.onClick,
-				viewBox: "0 0 20 20",
-				xmlns: "http://www.w3.org/2000/svg"
-			}, r.a.createElement("path", {
-				d: "M16,9H6.41l4.29-4.29A1,1,0,0,0,9.29,3.29l-6,6a1,1,0,0,0,0,1.41l6,6a1,1,0,0,0,1.41-1.41L6.41,11H16a1,1,0,0,0,0-2Z"
-			}))
-		},
 		"./src/reddit/layout/threeCol/ExpandCenter/index.m.less": function(e, t, s) {
 			e.exports = {
 				leftAndRight: "_3P6gMBKOhtWWrytWm-8hc",
@@ -2591,12 +2578,12 @@
 				d = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: n.ke
+						experimentName: n.me
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === n.qe.SmIcon || t === n.qe.SmIconHc
+					return t === n.se.SmIcon || t === n.se.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -2619,4 +2606,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWelcomeMessageModal.861caba1a41d96548a08.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWelcomeMessageModal.609bcacbf86bbd26d8b8.js.map

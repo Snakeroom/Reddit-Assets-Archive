@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Geotagging.e70d9a9b80eeb427f19f.js
-// Retrieved at 10/25/2021, 4:40:12 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Geotagging.4406b4ab9f54fa8e7b65.js
+// Retrieved at 10/28/2021, 5:10:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Geotagging"], {
 		"./node_modules/p-debounce/index.js": function(e, t, s) {
@@ -90,7 +90,7 @@
 				}(t, h, x(b, l)), {
 					highlightValue: S,
 					selectedIndex: v,
-					onKeyDown: O,
+					onKeyDown: k,
 					isClosed: j,
 					setClosed: C
 				} = function(e, t, s) {
@@ -122,7 +122,7 @@
 					className: Object(c.a)(y.a.geoInput, u),
 					name: N,
 					disabled: o,
-					onKeyDown: O,
+					onKeyDown: k,
 					value: S && S.name || t,
 					placeholder: n.fbt._("Add location", null, {
 						hk: "1BaqFd"
@@ -134,7 +134,7 @@
 						g(!0), d()
 					},
 					onBlur: () => g(!1)
-				}), f.length && !j ? i.a.createElement(k, {
+				}), f.length && !j ? i.a.createElement(O, {
 					id: l,
 					items: f.map(e => e.name),
 					selectedIndex: v,
@@ -145,7 +145,7 @@
 				}) : null)
 			}
 
-			function k(e) {
+			function O(e) {
 				const {
 					id: t,
 					items: s,
@@ -164,7 +164,7 @@
 					})
 				}, e)))
 			}
-			const O = () => {};
+			const k = () => {};
 
 			function j(e) {
 				const {
@@ -172,9 +172,9 @@
 					initialValue: s,
 					initialPlace: a,
 					disabled: l = !1,
-					onFocus: u = O,
-					onPlace: m = O,
-					onValue: b = O,
+					onFocus: u = k,
+					onPlace: m = k,
+					onValue: b = k,
 					inputClassName: p
 				} = e, h = function() {
 					const [e, t] = Object(r.useState)(!1);
@@ -487,9 +487,9 @@
 				}).apply(this, arguments)
 			}
 			const v = c.e[1] + 24,
-				k = f.f + 8,
-				O = k + 152 + 16,
-				j = O + v + 8,
+				O = f.f + 8,
+				k = O + 152 + 16,
+				j = k + v + 8,
 				C = S.a.div("Container", E.a),
 				N = S.a.wrapped(({
 					className: e,
@@ -499,7 +499,7 @@
 					className: e,
 					isOverlay: t,
 					style: {
-						top: `calc(100vh - ${t?k:8}px)`
+						top: `calc(100vh - ${t?O:8}px)`
 					}
 				}, s)), "BackToTop", E.a),
 				w = ({
@@ -517,7 +517,7 @@
 				constructor(e) {
 					super(e), this.containerEl = null, this.windowHeight = 1 / 0, this.getStickyContents = () => ({
 						shouldAdSticky: this.windowHeight > j,
-						shouldFooterSticky: this.windowHeight > O
+						shouldFooterSticky: this.windowHeight > k
 					}), this.updateState = () => {
 						if (this.isHidden()) return;
 						const {
@@ -619,17 +619,17 @@
 				E = s.n(_);
 			const {
 				fbt: S
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), y = u.a.div("BladeContainer", E.a), v = u.a.wrapped(h.a, "CloseIcon", E.a), k = u.a.div("LoadingTitleContainer", E.a), O = u.a.div("LoadingNavContainer", E.a), j = u.a.div("ShortLoadingNav", E.a), C = u.a.wrapped(p.a, "ThemedChevron", E.a), N = ({
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), y = u.a.div("BladeContainer", E.a), v = u.a.wrapped(h.a, "CloseIcon", E.a), O = u.a.div("LoadingTitleContainer", E.a), k = u.a.div("LoadingNavContainer", E.a), j = u.a.div("ShortLoadingNav", E.a), C = u.a.wrapped(p.a, "ThemedChevron", E.a), N = ({
 				...e
 			}) => a.a.createElement(y, null, a.a.createElement(v, null), a.a.createElement(b.k, null, a.a.createElement(b.p, null, S._("Back to mod tools", null, {
 				hk: "1YCI0W"
-			})), a.a.createElement(b.o, null, a.a.createElement(k, null, a.a.createElement("div", {
+			})), a.a.createElement(b.o, null, a.a.createElement(O, null, a.a.createElement("div", {
 				className: Object(l.a)(E.a.LoadingTitle, e.isLoading && E.a.loading)
-			})), a.a.createElement(O, null, a.a.createElement("div", {
+			})), a.a.createElement(k, null, a.a.createElement("div", {
 				className: Object(l.a)(E.a.LoadingNav, e.isLoading && E.a.loading)
-			}), a.a.createElement(C, null)), a.a.createElement(O, null, a.a.createElement(j, null), a.a.createElement(C, null)), a.a.createElement(O, null, a.a.createElement("div", {
+			}), a.a.createElement(C, null)), a.a.createElement(k, null, a.a.createElement(j, null), a.a.createElement(C, null)), a.a.createElement(k, null, a.a.createElement("div", {
 				className: Object(l.a)(E.a.LoadingNav, e.isLoading && E.a.loading)
-			}), a.a.createElement(C, null)), a.a.createElement(O, null, a.a.createElement(j, null), a.a.createElement(C, null)), a.a.createElement(O, null, a.a.createElement("div", {
+			}), a.a.createElement(C, null)), a.a.createElement(k, null, a.a.createElement(j, null), a.a.createElement(C, null)), a.a.createElement(k, null, a.a.createElement("div", {
 				className: Object(l.a)(E.a.LoadingNav, e.isLoading && E.a.loading)
 			}), a.a.createElement(C, null))))), w = Object(d.a)({
 				getComponent: () => Object(m.a)(() => Promise.all([s.e("vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PostCreation~Settings~~f8934a85"), s.e("StructuredStyles")]).then(s.bind(null, "./src/reddit/components/StructuredStyles/BladeDrawer/index.tsx"))).then(e => e.default),
@@ -956,11 +956,11 @@
 				S = s("./src/reddit/helpers/name/index.ts"),
 				y = s("./src/reddit/models/Widgets/index.ts"),
 				v = s("./src/reddit/selectors/subreddit.ts"),
-				k = s("./src/reddit/selectors/user.ts"),
-				O = s("./src/reddit/components/TopicSidebar/SubredditList/Subreddit/index.m.less"),
-				j = s.n(O);
+				O = s("./src/reddit/selectors/user.ts"),
+				k = s("./src/reddit/components/TopicSidebar/SubredditList/Subreddit/index.m.less"),
+				j = s.n(k);
 			const C = Object(h.c)({
-				isLoggedIn: k.K,
+				isLoggedIn: O.K,
 				subreddit: v.Q,
 				subredditAboutInfo: v.s
 			});
@@ -1167,8 +1167,8 @@
 					const t = S(e);
 					return Object(x.f)(t)
 				};
-			var k = s("./src/reddit/components/Widgets/ThemedWidget/index.m.less"),
-				O = s.n(k);
+			var O = s("./src/reddit/components/Widgets/ThemedWidget/index.m.less"),
+				k = s.n(O);
 			const {
 				fbt: j
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), C = Object(u.u)(), N = Object(i.b)(() => Object(a.c)({
@@ -1224,33 +1224,33 @@
 						title: c,
 						titleClassName: l,
 						truncateThreshold: u
-					} = this.props, b = s ? O.a.widgetContentOnly : O.a.widgetContent, p = !n && this.props.styles, h = p ? this.getWidgetBackgroundStyles() : {}, g = p ? this.getWidgetHeaderStyles() : {};
+					} = this.props, b = s ? k.a.widgetContentOnly : k.a.widgetContent, p = !n && this.props.styles, h = p ? this.getWidgetBackgroundStyles() : {}, g = p ? this.getWidgetHeaderStyles() : {};
 					return r.a.createElement("div", {
-						className: Object(o.a)(t, O.a.widgetBackground, {
-							[O.a.redditStyle]: n,
-							[O.a.clickable]: !!a,
-							[O.a.truncatedGradient]: this.state.isTruncated && !this.props.noGradient
+						className: Object(o.a)(t, k.a.widgetBackground, {
+							[k.a.redditStyle]: n,
+							[k.a.clickable]: !!a,
+							[k.a.truncatedGradient]: this.state.isTruncated && !this.props.noGradient
 						}),
 						"data-redditstyle": n,
 						onClick: a,
 						style: h
 					}, c && r.a.createElement("div", {
-						className: O.a.widgetHeader,
+						className: k.a.widgetHeader,
 						style: g
 					}, r.a.createElement("div", {
-						className: Object(o.a)(O.a.widgetTitle, l)
+						className: Object(o.a)(k.a.widgetTitle, l)
 					}, r.a.createElement(d.b, {
 						type: d.a.Widget
 					}, c)), i), r.a.createElement("div", {
 						className: Object(o.a)(b, {
-							[O.a.truncated]: this.state.isTruncated
+							[k.a.truncated]: this.state.isTruncated
 						}),
 						ref: this.contentRef,
 						style: {
 							maxHeight: this.state.isTruncated ? u : "none"
 						}
 					}, e), this.state.isTruncated && r.a.createElement(m.q, {
-						className: O.a.seeMore,
+						className: k.a.seeMore,
 						onClick: this.handleSeeMoreClick
 					}, j._("See More", null, {
 						hk: "4w47Qu"
@@ -1400,63 +1400,6 @@
 				return e
 			}
 		},
-		"./src/reddit/icons/svgs/Chevron/index.m.less": function(e, t, s) {
-			e.exports = {
-				chevron: "_1c_YBKkiW4FhhLJPkq9c1v"
-			}
-		},
-		"./src/reddit/icons/svgs/Chevron/index.tsx": function(e, t, s) {
-			"use strict";
-			var n = s("./node_modules/react/index.js"),
-				r = s.n(n),
-				i = s("./src/lib/classNames/index.ts"),
-				a = s("./src/reddit/icons/svgs/Chevron/index.m.less"),
-				o = s.n(a);
-			t.a = e => r.a.createElement("svg", {
-				className: Object(i.a)(o.a.chevron, e.className),
-				viewBox: "0 0 9 14",
-				xmlns: "http://www.w3.org/2000/svg"
-			}, r.a.createElement("g", {
-				transform: "translate(-6.000000, -3.000000)"
-			}, r.a.createElement("polygon", {
-				fill: "none",
-				points: "0 20 20 20 20 0 0 0"
-			}), r.a.createElement("polygon", {
-				fill: "inherit",
-				points: "7.47566213 3 14.4756621 10 7.47566213 17 6 15.5239203 11.5239203 10 6 4.47566213"
-			})))
-		},
-		"./src/reddit/icons/svgs/HamburgerClose/index.tsx": function(e, t, s) {
-			"use strict";
-			var n = s("./node_modules/react/index.js"),
-				r = s.n(n);
-			t.a = ({
-				className: e
-			}) => r.a.createElement("svg", {
-				xmlns: "http://www.w3.org/2000/svg",
-				height: "20",
-				width: "20",
-				viewBox: "0 0 20 20"
-			}, r.a.createElement("path", {
-				d: "M11.41 10l4.29-4.29a1 1 0 0 0-1.41-1.41L10 8.59l-4.29-4.3a1 1 0 0 0-1.42 1.42L8.59 10l-4.3 4.29A1 1 0 1 0 5.7 15.7l4.3-4.29 4.29 4.29a1 1 0 0 0 1.41-1.41z",
-				fill: "inherit"
-			}))
-		},
-		"./src/reddit/icons/svgs/Location/index.tsx": function(e, t, s) {
-			"use strict";
-			var n = s("./node_modules/react/index.js"),
-				r = s.n(n);
-			t.a = e => r.a.createElement("svg", {
-				className: e.className,
-				viewBox: "0 0 13 16",
-				xmlns: "http://www.w3.org/2000/svg"
-			}, r.a.createElement("path", {
-				d: "m10.4442 10.9445c-1.381 0-2.5-1.119-2.5-2.5s1.119-2.5 2.5-2.5 2.5 1.119 2.5 2.5-1.119 2.5-2.5 2.5m0-8.944c-3.554 0-6.444 2.891-6.444 6.444 0 3.32 5.143 8.658 5.73 9.256.189.192.446.3.714.3.269 0 .526-.108.714-.3.587-.598 5.73-5.936 5.73-9.256 0-3.553-2.89-6.444-6.444-6.444",
-				fill: "inherit",
-				fillRule: "evenodd",
-				transform: "translate(-4 -2)"
-			}))
-		},
 		"./src/reddit/pages/Geotagging/index.m.less": function(e, t, s) {
 			e.exports = {
 				Container: "_2yH_bZH7lpry9aDdEOc6oE",
@@ -1534,9 +1477,9 @@
 					to: "/"
 				}, r.a.createElement(_.k, null, "Go Home")))
 			}
-			var k = s("./src/config.ts");
+			var O = s("./src/config.ts");
 			const {
-				fbt: O
+				fbt: k
 			} = s("./node_modules/fbt/lib/FbtPublic.js");
 
 			function j() {
@@ -1544,14 +1487,14 @@
 					className: S.a.header
 				}, r.a.createElement("img", {
 					className: S.a.headerImage,
-					src: `${k.a.assetPath}/img/mtm-snoo.png`
+					src: `${O.a.assetPath}/img/mtm-snoo.png`
 				}), r.a.createElement("div", null, r.a.createElement("p", {
 					className: S.a.headerText1
-				}, O._("Okay, lets do this", null, {
+				}, k._("Okay, lets do this", null, {
 					hk: "1AIkwG"
 				})), r.a.createElement("p", {
 					className: S.a.headerText2
-				}, O._("Thank you for your help. Add a location to the communities below, and we will do the rest.", null, {
+				}, k._("Thank you for your help. Add a location to the communities below, and we will do the rest.", null, {
 					hk: "fVUF3"
 				}))))
 			}
@@ -1590,8 +1533,8 @@
 				W = Q("select_location"),
 				A = Q("confirm_location"),
 				H = Q("undo_location"),
-				J = U("verify_location"),
-				D = U("reject_location");
+				D = U("verify_location"),
+				J = U("reject_location");
 
 			function Q(e) {
 				return (t, s) => () => ({
@@ -1682,12 +1625,12 @@
 				})), r.a.createElement(_.n, {
 					className: S.a.rejectButton,
 					onClick: function() {
-						b(!0), E(D(t, t.geoPlace.id))
+						b(!0), E(J(t, t.geoPlace.id))
 					}
 				}, "No"), r.a.createElement(_.k, {
 					className: S.a.verifyButton,
 					onClick: function() {
-						Y(t.id), E(J(t, t.geoPlace.id)), f(), s(t.id), y()
+						Y(t.id), E(D(t, t.geoPlace.id)), f(), s(t.id), y()
 					}
 				}, "Yes")) : r.a.createElement(N.a, {
 					disabled: l,
@@ -1818,4 +1761,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.e70d9a9b80eeb427f19f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.4406b4ab9f54fa8e7b65.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinsMobile.3e60aa10263578820bfe.js
-// Retrieved at 10/13/2021, 6:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinsMobile.bd5d9cbd84848be3614f.js
+// Retrieved at 10/28/2021, 5:10:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinsMobile"], {
 		"./src/reddit/components/CollapsibleFAQ/index.m.less": function(e, t, a) {
@@ -114,20 +114,6 @@
 				}, e))
 			}
 		},
-		"./src/reddit/icons/svgs/ChevronUp/index.tsx": function(e, t, a) {
-			"use strict";
-			var n = a("./node_modules/react/index.js"),
-				s = a.n(n);
-			t.a = e => s.a.createElement("svg", {
-				className: e.className,
-				viewBox: "0 0 12 12",
-				xmlns: "http://www.w3.org/2000/svg"
-			}, s.a.createElement("g", null, s.a.createElement("polygon", {
-				fill: "inherit",
-				transform: "translate(6.029200, 6.044700) scale(1, -1) translate(-6.029200, -6.044700)",
-				points: "11.0584 4.0602 6.0292 9.0894 1 4.0602 2.0608 3 6.0292 6.9684 9.9982 3"
-			})))
-		},
 		"./src/reddit/models/Gold/Coins/index.ts": function(e, t, a) {
 			"use strict";
 			a.d(t, "a", (function() {
@@ -232,7 +218,7 @@
 				g = a("./src/reddit/components/CollapsibleFAQ/index.tsx"),
 				_ = a("./src/reddit/components/GildMarketingDescription/index.tsx"),
 				x = a("./src/reddit/icons/fonts/Coin/index.tsx");
-			class v extends r.a.Component {
+			class C extends r.a.Component {
 				componentDidMount() {
 					Object(c.d)(c.a.GoldPayment, !1);
 					const e = o.Lb.COINS;
@@ -329,8 +315,8 @@
 					Object(c.b)(c.a.GoldPayment)
 				}
 			}
-			t.default = Object(l.c)(v)
+			t.default = Object(l.c)(C)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinsMobile.3e60aa10263578820bfe.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinsMobile.bd5d9cbd84848be3614f.js.map

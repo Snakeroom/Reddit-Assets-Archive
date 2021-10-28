@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/UserAchievementFlair.db231eabc64b92e299d5.js
-// Retrieved at 10/26/2021, 2:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/UserAchievementFlair.dd608315a3f575b3a1ff.js
+// Retrieved at 10/28/2021, 5:10:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["UserAchievementFlair"], {
 		"./src/reddit/components/Econ/PowerupsFlair/HoverPopup.m.less": function(e, t, n) {
@@ -238,7 +238,7 @@
 								experimentName: c.G,
 								expEventOverride: t
 							});
-							return !!(Object(c.Oe)(n) ? void 0 : n)
+							return !!(Object(c.Qe)(n) ? void 0 : n)
 						})(n)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -794,11 +794,11 @@
 			})), n.d(t, "F", (function() {
 				return U
 			})), n.d(t, "B", (function() {
-				return R
-			})), n.d(t, "H", (function() {
-				return q
-			})), n.d(t, "p", (function() {
 				return Q
+			})), n.d(t, "H", (function() {
+				return R
+			})), n.d(t, "p", (function() {
+				return q
 			})), n.d(t, "K", (function() {
 				return X
 			})), n.d(t, "y", (function() {
@@ -1004,13 +1004,13 @@
 					const n = t ? e.features.comments.submit.error[t] : void 0;
 					return n && n.fields ? n.fields.map(e => e.msg) : void 0
 				},
-				R = (e, {
+				Q = (e, {
 					commentId: t
 				}) => !!t && e.features.comments.submit.pending[t],
-				q = (e, {
+				R = (e, {
 					commentId: t
 				}) => !!t && e.features.comments.models[t].sendReplies,
-				Q = e => e.features.comments.visitHighlightFilter,
+				q = e => e.features.comments.visitHighlightFilter,
 				X = (e, t) => {
 					const n = Object(m.b)(e, t);
 					if (n) return Object(i.V)(e, n)
@@ -1031,4 +1031,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UserAchievementFlair.db231eabc64b92e299d5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UserAchievementFlair.dd608315a3f575b3a1ff.js.map
