@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.99d372cd41170a1ea43f.js
-// Retrieved at 10/25/2021, 4:40:12 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.6729e5712f6a143d259f.js
+// Retrieved at 10/28/2021, 2:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsMarketingModal"], {
 		"./src/reddit/components/Econ/Common/BenefitTile/index.m.less": function(e, t, s) {
@@ -13,36 +13,36 @@
 		},
 		"./src/reddit/components/Econ/Common/BenefitTile/index.tsx": function(e, t, s) {
 			"use strict";
-			var n = s("./node_modules/react/index.js"),
-				o = s.n(n),
-				r = s("./src/lib/classNames/index.ts"),
+			var o = s("./node_modules/react/index.js"),
+				r = s.n(o),
+				n = s("./src/lib/classNames/index.ts"),
 				a = s("./src/reddit/components/Econ/Common/NewIcon/index.tsx"),
 				c = s("./src/reddit/components/Econ/Common/BenefitTile/index.m.less"),
-				i = s.n(c);
+				l = s.n(c);
 			const {
-				fbt: l
+				fbt: i
 			} = s("./node_modules/fbt/lib/FbtPublic.js");
 			t.a = ({
 				className: e,
 				description: t,
 				iconUrl: s,
-				onClick: n,
+				onClick: o,
 				title: c,
-				isNew: l
-			}) => o.a.createElement("div", {
-				className: Object(r.a)(e, i.a.container),
-				onClick: n
-			}, l && o.a.createElement(a.a, {
-				className: i.a.new
-			}), o.a.createElement("div", {
-				className: i.a.icon,
+				isNew: i
+			}) => r.a.createElement("div", {
+				className: Object(n.a)(e, l.a.container),
+				onClick: o
+			}, i && r.a.createElement(a.a, {
+				className: l.a.new
+			}), r.a.createElement("div", {
+				className: l.a.icon,
 				style: {
 					backgroundImage: `url('${s}')`
 				}
-			}), c && o.a.createElement("h3", {
-				className: i.a.title
-			}, c), t && o.a.createElement("p", {
-				className: i.a.description
+			}), c && r.a.createElement("h3", {
+				className: l.a.title
+			}, c), t && r.a.createElement("p", {
+				className: l.a.description
 			}, t))
 		},
 		"./src/reddit/components/Econ/Common/JoinHeroes/index.m.less": function(e, t, s) {
@@ -64,13 +64,13 @@
 			s.d(t, "a", (function() {
 				return p
 			}));
-			var n = s("./node_modules/react/index.js"),
-				o = s.n(n),
-				r = s("./node_modules/react-redux/es/index.js"),
+			var o = s("./node_modules/react/index.js"),
+				r = s.n(o),
+				n = s("./node_modules/react-redux/es/index.js"),
 				a = s("./src/lib/classNames/index.ts"),
 				c = s("./src/reddit/components/PowerupsSidebar/PowerupsCountAndProgress/PowerupsProgressBar.tsx"),
-				i = s("./src/reddit/components/UserIcon/index.tsx"),
-				l = s("./src/reddit/selectors/gold/powerups/index.ts"),
+				l = s("./src/reddit/components/UserIcon/index.tsx"),
+				i = s("./src/reddit/selectors/gold/powerups/index.ts"),
 				d = s("./src/reddit/components/Econ/Common/JoinHeroes/index.m.less"),
 				m = s.n(d);
 			const {
@@ -80,64 +80,64 @@
 				subredditId: t,
 				onClick: s
 			}) => {
-				const n = Object(r.e)(e => Object(l.k)(e, {
+				const o = Object(n.e)(e => Object(i.k)(e, {
 						subredditId: t
 					})),
-					d = Object(r.e)(e => Object(l.m)(e, {
+					d = Object(n.e)(e => Object(i.m)(e, {
 						subredditId: t
 					}));
-				if (!n) return null;
+				if (!o) return null;
 				const {
 					tier: p,
 					count: b,
-					tiersInfo: w,
-					supportersCount: h
-				} = n, E = w[1].powerupsCost, x = p >= 2, _ = (null == d ? void 0 : d.filter(e => {
+					tiersInfo: h,
+					supportersCount: w
+				} = o, E = h[1].powerupsCost, _ = p >= 2, x = (null == d ? void 0 : d.filter(e => {
 					var t;
 					return !!(null === (t = e.supporterInfo) || void 0 === t ? void 0 : t.displayName)
 				}).slice(0, 2)) || [], f = Math.min(b, E) / E, k = E - b;
-				return o.a.createElement("div", {
+				return r.a.createElement("div", {
 					className: Object(a.a)(m.a.container, e, {
 						[m.a.containerClickable]: !!s
 					}),
 					"data-testid": "join-heroes",
 					onClick: () => null == s ? void 0 : s(b)
-				}, o.a.createElement("div", {
+				}, r.a.createElement("div", {
 					className: m.a.heroes
-				}, !!_.length && o.a.createElement("div", {
+				}, !!x.length && r.a.createElement("div", {
 					className: Object(a.a)(m.a.heroesAvatarContainer, {
-						[m.a.twoAvatarsContainer]: _.length > 1
+						[m.a.twoAvatarsContainer]: x.length > 1
 					})
-				}, _.map(e => {
+				}, x.map(e => {
 					var t, s;
-					return o.a.createElement("div", {
+					return r.a.createElement("div", {
 						className: m.a.heroesAvatar,
 						key: e.supporterInfo.id
-					}, o.a.createElement(i.a, {
+					}, r.a.createElement(l.a, {
 						className: m.a.heroImage,
 						userName: e.supporterInfo.displayName,
 						iconUrl: null === (t = e.supporterInfo.icon) || void 0 === t ? void 0 : t.url,
 						isNSFW: !!(null === (s = e.supporterInfo.profile) || void 0 === s ? void 0 : s.isNsfw)
 					}))
-				})), o.a.createElement("div", {
+				})), r.a.createElement("div", {
 					className: m.a.heroesTitle
-				}, (() => h ? u._({
+				}, (() => w ? u._({
 					"*": "Join {subreddit supporters} heroes",
 					_1: "Join 1 hero"
-				}, [u._plural(h, "subreddit supporters")], {
+				}, [u._plural(w, "subreddit supporters")], {
 					hk: "2UisaO"
 				}) : u._("Be the first hero!", null, {
 					hk: "3TGmi4"
-				}))())), o.a.createElement("p", {
+				}))())), r.a.createElement("p", {
 					className: m.a.title
-				}, x ? u._("Community perks are now unlocked!", null, {
+				}, _ ? u._("Community perks are now unlocked!", null, {
 					hk: "3xbTTM"
 				}) : u._({
 					"*": "{powerups needed} more Powerups will unlock perks for the community",
 					_1: "{powerups needed} more Powerup will unlock perks for the community"
 				}, [u._param("powerups needed", k), u._plural(k)], {
 					hk: "2aHf4k"
-				})), o.a.createElement(c.a, {
+				})), r.a.createElement(c.a, {
 					className: m.a.progressBar,
 					progress: f
 				}))
@@ -146,6 +146,7 @@
 		"./src/reddit/components/Econ/Common/ModalCloseButton/index.m.less": function(e, t, s) {
 			e.exports = {
 				closeButton: "zV6beQLWIuWX5Q9SvWfDR",
+				highContrast: "_19iGSTvU7FOqhpDpMWKtDr",
 				closeIcon: "_17EZNlAorafFssuT6Gw_Zg"
 			}
 		},
@@ -154,25 +155,28 @@
 			s.d(t, "a", (function() {
 				return d
 			}));
-			var n = s("./src/lib/classNames/index.ts"),
-				o = s("./node_modules/react/index.js"),
-				r = s.n(o),
+			var o = s("./src/lib/classNames/index.ts"),
+				r = s("./node_modules/react/index.js"),
+				n = s.n(r),
 				a = s("./src/reddit/components/ModalStyledComponents/index.tsx"),
 				c = s("./src/reddit/components/Econ/Common/ModalCloseButton/index.m.less"),
-				i = s.n(c);
+				l = s.n(c);
 			const {
-				fbt: l
+				fbt: i
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), d = ({
 				className: e,
-				onClick: t
-			}) => r.a.createElement("button", {
-				onClick: t,
-				className: Object(n.a)(e, i.a.closeButton),
-				"aria-label": l._("Close", null, {
+				highContrast: t,
+				onClick: s
+			}) => n.a.createElement("button", {
+				onClick: s,
+				className: Object(o.a)(l.a.closeButton, {
+					[l.a.highContrast]: t
+				}, e),
+				"aria-label": i._("Close", null, {
 					hk: "3Qarlp"
 				})
-			}, r.a.createElement(a.b, {
-				className: i.a.closeIcon
+			}, n.a.createElement(a.b, {
+				className: l.a.closeIcon
 			}))
 		},
 		"./src/reddit/components/Econ/Common/NewIcon/index.m.less": function(e, t, s) {
@@ -183,51 +187,22 @@
 		"./src/reddit/components/Econ/Common/NewIcon/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return l
+				return i
 			}));
-			var n = s("./node_modules/react/index.js"),
-				o = s.n(n),
-				r = s("./src/lib/classNames/index.ts"),
+			var o = s("./node_modules/react/index.js"),
+				r = s.n(o),
+				n = s("./src/lib/classNames/index.ts"),
 				a = s("./src/reddit/components/Econ/Common/NewIcon/index.m.less"),
 				c = s.n(a);
 			const {
-				fbt: i
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), l = ({
+				fbt: l
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), i = ({
 				className: e
-			}) => o.a.createElement("span", {
-				className: Object(r.a)(c.a.new, e)
-			}, i._("NEW", null, {
+			}) => r.a.createElement("span", {
+				className: Object(n.a)(c.a.new, e)
+			}, l._("NEW", null, {
 				hk: "2P5bsM"
 			}))
-		},
-		"./src/reddit/components/Econ/Common/PowerupRotatingBolt/index.m.less": function(e, t, s) {
-			e.exports = {
-				image: "_2UM9VBeA7xU3ro_DBfudN2"
-			}
-		},
-		"./src/reddit/components/Econ/Common/PowerupRotatingBolt/index.tsx": function(e, t, s) {
-			"use strict";
-			s.d(t, "a", (function() {
-				return i
-			}));
-			var n = s("./src/config.ts"),
-				o = s("./node_modules/react/index.js"),
-				r = s.n(o),
-				a = s("./src/reddit/components/Econ/Common/PowerupRotatingBolt/index.m.less"),
-				c = s.n(a);
-			const i = e => r.a.createElement("div", {
-				className: e.className
-			}, r.a.createElement("picture", null, r.a.createElement("source", {
-				srcSet: `${n.a.assetPath}/img/powerups/rotating-bolt.webp`,
-				type: "image/webp"
-			}), r.a.createElement("source", {
-				srcSet: `${n.a.assetPath}/img/powerups/powerup.png`,
-				type: "image/png"
-			}), r.a.createElement("img", {
-				className: c.a.image,
-				src: `${n.a.assetPath}/img/powerups/powerup.png`,
-				alt: "Rotating Powerups bolt"
-			})))
 		},
 		"./src/reddit/components/Econ/PowerupsMarketingModal/Benefits/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -238,28 +213,24 @@
 		"./src/reddit/components/Econ/PowerupsMarketingModal/Header/index.m.less": function(e, t, s) {
 			e.exports = {
 				container: "_3-wzlsd2L9K9BE7yms9IhJ",
-				imageContainer: "_2moFyXtJlZerLLuTvZ9TYQ",
 				title: "_258n2TylpikH2fhZLhlAgr",
 				subtitle: "_1AYSLhpiU1fIwgPPxu2Xuy"
 			}
 		},
 		"./src/reddit/components/Econ/PowerupsMarketingModal/Header/index.tsx": function(e, t, s) {
 			"use strict";
-			var n = s("./src/lib/classNames/index.ts"),
-				o = s("./node_modules/react/index.js"),
-				r = s.n(o),
-				a = s("./src/reddit/components/Econ/Common/PowerupRotatingBolt/index.tsx"),
-				c = s("./src/reddit/components/Econ/PowerupsMarketingModal/Header/index.m.less"),
-				i = s.n(c);
-			t.a = e => r.a.createElement("header", {
-				className: Object(n.a)(i.a.container, e.className)
-			}, r.a.createElement(a.a, {
-				className: i.a.imageContainer
-			}), r.a.createElement("div", null, r.a.createElement("h2", {
-				className: i.a.title
-			}, e.title), r.a.createElement("h3", {
-				className: i.a.subtitle
-			}, e.subtitle)))
+			var o = s("./src/lib/classNames/index.ts"),
+				r = s("./node_modules/react/index.js"),
+				n = s.n(r),
+				a = s("./src/reddit/components/Econ/PowerupsMarketingModal/Header/index.m.less"),
+				c = s.n(a);
+			t.a = e => n.a.createElement("header", {
+				className: Object(o.a)(c.a.container, e.className)
+			}, n.a.createElement("h2", {
+				className: c.a.title
+			}, e.title), n.a.createElement("h3", {
+				className: c.a.subtitle
+			}, e.subtitle))
 		},
 		"./src/reddit/components/Econ/PowerupsMarketingModal/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -268,7 +239,6 @@
 				main: "_1PP4a1vxBKAZclzVmYW7SH",
 				gradient: "_2Bq8PY3y9RL7e9UlI8wEtn",
 				visible: "_1Pb0dx1erhwXfa-5ouIBhb",
-				benefits: "_2aogHH2E_wc_wy_T88G9sw",
 				modDisclaimer: "_1Cj6AeKuH51FKrEs9jZiDz",
 				howItWorksTitle: "Pv4vj5-Zps24hD9scZUdd",
 				howItWorksList: "_48giMwZjdVcsSk4RNOioH",
@@ -287,51 +257,51 @@
 		"./src/reddit/components/Econ/PowerupsMarketingModal/index.tsx": function(e, t, s) {
 			"use strict";
 			s.r(t);
-			var n = s("./node_modules/react/index.js"),
-				o = s.n(n),
-				r = s("./node_modules/react-redux/es/index.js"),
-				a = s("./node_modules/reselect/es/index.js"),
-				c = s("./src/higherOrderComponents/asModal/index.tsx"),
+			var o = s("./node_modules/react/index.js"),
+				r = s.n(o),
+				n = s("./node_modules/react-redux/es/index.js"),
+				a = s("./src/reddit/components/PowerupsSidebar/PowerupsBackground.tsx"),
+				c = s("./node_modules/reselect/es/index.js"),
+				l = s("./src/higherOrderComponents/asModal/index.tsx"),
 				i = s("./src/lib/classNames/index.ts"),
-				l = s("./src/reddit/actions/gold/powerups.ts"),
-				d = s("./src/reddit/actions/modal.ts"),
-				m = s("./src/reddit/components/Econ/Common/JoinHeroes/index.tsx"),
-				u = s("./src/reddit/components/Econ/Common/ModalCloseButton/index.tsx"),
-				p = s("./src/reddit/components/Econ/PowerupsPurchaseModal/async.tsx"),
-				b = s("./src/reddit/constants/modals.ts"),
+				d = s("./src/reddit/actions/gold/powerups.ts"),
+				m = s("./src/reddit/actions/modal.ts"),
+				u = s("./src/reddit/components/Econ/Common/JoinHeroes/index.tsx"),
+				p = s("./src/reddit/components/Econ/Common/ModalCloseButton/index.tsx"),
+				b = s("./src/reddit/components/Econ/PowerupsPurchaseModal/async.tsx"),
+				h = s("./src/reddit/constants/modals.ts"),
 				w = s("./src/reddit/contexts/PageLayer/index.tsx"),
-				h = s("./src/reddit/controls/Button/index.tsx"),
-				E = s("./src/reddit/helpers/localStorage/index.ts"),
+				E = s("./src/reddit/controls/Button/index.tsx"),
+				_ = s("./src/reddit/helpers/localStorage/index.ts"),
 				x = s("./src/reddit/helpers/trackers/powerups.ts"),
-				_ = s("./src/reddit/hooks/useScrollGradient.ts"),
-				f = s("./src/reddit/hooks/useTracking.ts"),
-				k = s("./src/reddit/selectors/gold/powerups/index.ts"),
+				f = s("./src/reddit/hooks/useScrollGradient.ts"),
+				k = s("./src/reddit/hooks/useTracking.ts"),
+				N = s("./src/reddit/selectors/gold/powerups/index.ts"),
 				g = s("./src/reddit/selectors/subreddit.ts"),
-				N = s("./src/reddit/selectors/user.ts"),
-				P = s("./src/reddit/components/Econ/PowerupsPremiumUpsellModal/async.tsx"),
-				j = s("./src/config.ts"),
+				P = s("./src/reddit/selectors/user.ts"),
+				j = (s("./src/reddit/components/Econ/PowerupsPremiumUpsellModal/async.tsx"), s("./src/config.ts")),
 				C = s("./src/reddit/components/Econ/Common/BenefitTile/index.tsx"),
 				O = s("./src/reddit/models/Gold/Powerups/index.ts"),
 				v = s("./src/reddit/selectors/experiments/econ/index.ts"),
 				M = s("./src/reddit/selectors/experiments/econ/powerupsAward.ts");
 			const I = [O.a.CommentRecognition, O.a.PowerupsAward, O.a.CommunityGear, O.a.CommentsWithGifs, O.a.CommentsWithEmoji, O.a.Achievements, O.a.HeroStatus, O.a.HdVideo],
-				y = Object(a.a)([M.b, v.j], (e, t) => {
+				S = Object(c.a)([M.b, v.j], (e, t) => {
 					let s = I;
 					return e || (s = s.filter(e => e !== O.a.PowerupsAward)), t || (s = s.filter(e => e !== O.a.CommunityGear)), s
 				});
-			var L = s("./src/reddit/components/Econ/PowerupsMarketingModal/Benefits/index.m.less"),
-				S = s.n(L);
+			var y = s("./src/reddit/components/Econ/PowerupsMarketingModal/Benefits/index.m.less"),
+				L = s.n(y);
 			const {
 				fbt: B
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), A = e => e.length % 2 == 1 ? [...e, O.a.More] : e;
 			var H = function(e) {
 					const {
 						className: t
-					} = e, s = Object(f.a)(), n = Object(r.e)(y), a = A(n);
-					return o.a.createElement("div", {
-						className: Object(i.a)(S.a.container, t)
-					}, a.map(e => O.c[e]().title && o.a.createElement(C.a, {
-						className: S.a.benefit,
+					} = e, s = Object(k.a)(), o = Object(n.e)(S), a = A(o);
+					return r.a.createElement("div", {
+						className: Object(i.a)(L.a.container, t)
+					}, a.map(e => O.c[e]().title && r.a.createElement(C.a, {
+						className: L.a.benefit,
 						description: O.c[e]().description,
 						iconUrl: `${j.a.assetPath}/img/powerups/${e}_v3.png`,
 						key: `cell_${e}`,
@@ -342,26 +312,26 @@
 						isNew: O.c[e]().isNew
 					})))
 				},
-				R = s("./src/reddit/components/Econ/PowerupsMarketingModal/Header/index.tsx"),
+				T = s("./src/reddit/components/Econ/PowerupsMarketingModal/Header/index.tsx"),
 				W = s("./src/reddit/components/Econ/PowerupsMarketingModal/index.m.less"),
-				T = s.n(W);
+				R = s.n(W);
 
-			function F() {
-				return (F = Object.assign || function(e) {
+			function D() {
+				return (D = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
-						for (var n in s) Object.prototype.hasOwnProperty.call(s, n) && (e[n] = s[n])
+						for (var o in s) Object.prototype.hasOwnProperty.call(s, o) && (e[o] = s[o])
 					}
 					return e
 				}).apply(this, arguments)
 			}
 			const {
-				fbt: D
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), G = Object(w.u)(), U = Object(a.c)({
+				fbt: F
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), U = Object(w.u)(), G = Object(c.c)({
 				currentSubredditId: w.n,
 				powerups: (e, t) => {
 					const s = Object(w.n)(e, t);
-					return s ? Object(k.k)(e, {
+					return s ? Object(N.k)(e, {
 						subredditId: s
 					}) : null
 				},
@@ -371,104 +341,177 @@
 						subredditId: s
 					}) : null
 				}
-			}), Y = Object(r.b)(U);
-			const V = Object(c.a)(G(Y((function(e) {
+			}), Y = Object(n.b)(G);
+			const V = Object(l.a)(U(Y((function(e) {
 				const {
 					currentSubredditId: t,
 					powerups: s,
-					subreddit: a
-				} = e, c = Object(r.d)(), w = Object(f.a)(), k = Object(r.e)(e => !Object(N.s)(e)), {
+					subreddit: c
+				} = e, l = Object(n.d)(), w = Object(k.a)();
+				let N = Object(n.e)(e => !Object(P.s)(e));
+				N = !1;
+				const {
 					container: g,
 					isScrollGradientVisible: j,
 					calculateGradientVisibility: C
-				} = Object(_.a)(!0);
-				Object(n.useEffect)(() => {
-					k ? Object(P.a)() : Object(p.a)()
-				}, [k]), Object(n.useLayoutEffect)(() => {
+				} = Object(f.a)(!0);
+				Object(o.useEffect)(() => {
+					Object(b.a)()
+				}, [!1]), Object(o.useLayoutEffect)(() => {
 					C()
 				});
-				const O = () => c(Object(d.g)(b.a.ECON_POWERUPS_MARKETING)),
+				const O = () => l(Object(m.g)(h.a.ECON_POWERUPS_MARKETING)),
 					v = () => {
-						Object(E.Fb)(b.a.ECON_POWERUPS_MARKETING, !0), c(k ? Object(l.g)(t) : Object(d.h)(b.a.ECON_POWERUPS_PURCHASE))
+						Object(_.Fb)(h.a.ECON_POWERUPS_MARKETING, !0), l(Object(m.h)(h.a.ECON_POWERUPS_PURCHASE))
 					};
-				if (!t || !a || !s) return O(), null;
-				const M = D._("Unlock perks for the whole community", null, {
+				if (!t || !c || !s) return O(), null;
+				const M = F._("Unlock perks for the whole community", null, {
 					hk: "faCTq"
 				});
-				return o.a.createElement(o.a.Fragment, null, o.a.createElement("div", {
-					className: T.a.container
-				}, o.a.createElement("div", {
-					className: Object(i.a)(T.a.main),
+				return r.a.createElement(r.a.Fragment, null, r.a.createElement("div", {
+					className: R.a.container
+				}, r.a.createElement("div", {
+					className: Object(i.a)(R.a.main),
 					ref: g,
 					onScroll: C
-				}, o.a.createElement(u.a, {
-					onClick: O
-				}), o.a.createElement(R.a, {
-					title: D._("Powerup {r/community}", [D._param("r/community", a.displayText)], {
+				}, r.a.createElement(p.a, {
+					onClick: O,
+					highContrast: !0
+				}), r.a.createElement(T.a, {
+					title: F._("Powerup {r/community}", [F._param("r/community", c.displayText)], {
 						hk: "2HkBNV"
 					}),
 					subtitle: M
-				}), o.a.createElement(H, {
-					className: T.a.benefits
-				}), o.a.createElement("span", {
-					className: T.a.modDisclaimer
-				}, D._("Mods may choose to opt out of some perks.", null, {
+				}), r.a.createElement(H, null), r.a.createElement("span", {
+					className: R.a.modDisclaimer
+				}, F._("Mods may choose to opt out of some perks.", null, {
 					hk: "3W2PR1"
-				})), o.a.createElement("h2", {
-					className: T.a.howItWorksTitle
-				}, D._("How it works", null, {
+				})), r.a.createElement("h2", {
+					className: R.a.howItWorksTitle
+				}, F._("How it works", null, {
 					hk: "1S8XOX"
-				})), o.a.createElement("ul", {
-					className: T.a.howItWorksList
-				}, o.a.createElement("li", {
-					className: T.a.howItWorksStep
-				}, o.a.createElement("h3", {
-					className: T.a.howItWorksSubtitle
-				}, D._("Buy a monthly Powerup subscription", null, {
+				})), r.a.createElement("ul", {
+					className: R.a.howItWorksList
+				}, r.a.createElement("li", {
+					className: R.a.howItWorksStep
+				}, r.a.createElement("h3", {
+					className: R.a.howItWorksSubtitle
+				}, F._("Buy a monthly Powerup subscription", null, {
 					hk: "1xgdW6"
-				})), o.a.createElement("p", {
-					className: T.a.howItWorksDesc
-				}, D._("Purchase a Powerup or apply your monthly Powerup included with paid Reddit Premium", null, {
+				})), r.a.createElement("p", {
+					className: R.a.howItWorksDesc
+				}, F._("Purchase a Powerup or apply your monthly Powerup included with paid Reddit Premium", null, {
 					hk: "2rBQGS"
-				}))), o.a.createElement("li", {
-					className: T.a.howItWorksStep
-				}, o.a.createElement("h3", {
-					className: T.a.howItWorksSubtitle
-				}, D._("Help unlock perks for your community", null, {
+				}))), r.a.createElement("li", {
+					className: R.a.howItWorksStep
+				}, r.a.createElement("h3", {
+					className: R.a.howItWorksSubtitle
+				}, F._("Help unlock perks for your community", null, {
 					hk: "4qBTJD"
-				})), o.a.createElement(m.a, {
-					className: T.a.joinHeroes,
+				})), r.a.createElement(u.a, {
+					className: R.a.joinHeroes,
 					subredditId: t,
 					onClick: e => {
-						w(Object(x.e)("powerups_modal")), e ? c(Object(l.h)(a.id)) : v()
+						w(Object(x.e)("powerups_modal")), e ? l(Object(d.h)(c.id)) : v()
 					}
-				})), o.a.createElement("li", {
-					className: T.a.howItWorksStep
-				}, o.a.createElement("h3", {
-					className: T.a.howItWorksSubtitle
-				}, D._("Unlock perks for yourself", null, {
+				})), r.a.createElement("li", {
+					className: R.a.howItWorksStep
+				}, r.a.createElement("h3", {
+					className: R.a.howItWorksSubtitle
+				}, F._("Unlock perks for yourself", null, {
 					hk: "4dQOvK"
-				})), o.a.createElement("p", {
-					className: T.a.howItWorksDesc
-				}, D._("Get instant access to perks, a hero badge, and a spot on the heroes list", null, {
+				})), r.a.createElement("p", {
+					className: R.a.howItWorksDesc
+				}, F._("Get instant access to perks, a hero badge, and a spot on the heroes list", null, {
 					hk: "3uxTLG"
-				}))))), o.a.createElement("div", {
-					className: T.a.footer
-				}, o.a.createElement(h.s, {
-					className: T.a.footerButton,
+				}))))), r.a.createElement("div", {
+					className: R.a.footer
+				}, r.a.createElement(E.s, {
+					className: R.a.footerButton,
 					onClick: v,
-					priority: h.b.Primary
-				}, D._("Powerup This Community", null, {
+					priority: E.b.Primary
+				}, F._("Powerup This Community", null, {
 					hk: "3gjy90"
-				})), o.a.createElement("div", {
-					className: Object(i.a)(T.a.gradient, {
-						[T.a.visible]: j
+				})), r.a.createElement("div", {
+					className: Object(i.a)(R.a.gradient, {
+						[R.a.visible]: j
 					})
-				}))))
+				})), r.a.createElement(a.a, {
+					space: a.b.MODAL
+				})))
 			}))));
-			t.default = e => o.a.createElement(V, F({}, e, {
-				className: Object(i.a)(e.className, T.a.modal)
+			t.default = e => r.a.createElement(V, D({}, e, {
+				className: Object(i.a)(e.className, R.a.modal)
 			}))
+		},
+		"./src/reddit/components/PowerupsSidebar/PowerupsBackground.m.less": function(e, t, s) {
+			e.exports = {
+				background: "XVwx9Y9K0HdxTdtF2BPW0",
+				isModal: "UtfYccpr1yXmbqvp5V4xO",
+				isInFeedUnit: "_2hif8-1kZa1knghBW2qHUl",
+				colorBlockCorner: "_3cb-_dMe8EWVymoglw4OyK",
+				isNightmodeOn: "_2aTpeK-XP6gqT5wf5i532u",
+				colorBlockThrough: "_1oWuVmyyrm-f2cYxR7EV9F",
+				circle: "NsyhNpI3rn1O5dhzAooci",
+				circleStriped: "_3wLmFEQT-lNFxQtTZSBM-A",
+				circleDotted: "_2Y6YoeMfdGRReebFzEkb1a",
+				circleOrangeHollow: "_2MNXM_uf6rOUZgaO42Wnl0",
+				circleGreenHollow: "_1ThCjjX1kI9WTSqGhdfbEY",
+				circleYellowHollow: "_2tVCe8UCeeIcsfKn_uIZKT"
+			}
+		},
+		"./src/reddit/components/PowerupsSidebar/PowerupsBackground.tsx": function(e, t, s) {
+			"use strict";
+			s.d(t, "b", (function() {
+				return o
+			})), s.d(t, "a", (function() {
+				return u
+			}));
+			var o, r = s("./src/config.ts"),
+				n = s("./src/lib/classNames/index.ts"),
+				a = s("./node_modules/react/index.js"),
+				c = s.n(a),
+				l = s("./node_modules/react-redux/es/index.js"),
+				i = s("./src/reddit/selectors/user.ts"),
+				d = s("./src/reddit/components/PowerupsSidebar/PowerupsBackground.m.less"),
+				m = s.n(d);
+			! function(e) {
+				e[e.SIDEBAR = 0] = "SIDEBAR", e[e.MODAL = 1] = "MODAL", e[e.INFEED_UNIT = 2] = "INFEED_UNIT"
+			}(o || (o = {}));
+			const u = ({
+				space: e
+			}) => {
+				const t = Object(l.e)(i.X),
+					s = e === o.MODAL,
+					a = e === o.INFEED_UNIT;
+				return c.a.createElement("div", {
+					className: Object(n.a)(m.a.background, {
+						[m.a.isNightmodeOn]: t,
+						[m.a.isModal]: s,
+						[m.a.isInFeedUnit]: a
+					})
+				}, c.a.createElement("div", {
+					className: m.a.colorBlockCorner
+				}), c.a.createElement("div", {
+					className: m.a.colorBlockThrough
+				}), c.a.createElement("div", {
+					className: m.a.circleStriped,
+					style: {
+						backgroundImage: t ? `url(${r.a.assetPath}/img/powerups/linecircle-lightblue.png)` : `url(${r.a.assetPath}/img/powerups/linecircle-blue.png)`
+					}
+				}), c.a.createElement("div", {
+					className: m.a.circleOrangeHollow
+				}), c.a.createElement("div", {
+					className: m.a.circleDotted,
+					style: {
+						backgroundImage: `url(${r.a.assetPath}/img/powerups/dotcircle.png)`
+					}
+				}), c.a.createElement("div", {
+					className: m.a.circleGreenHollow
+				}), c.a.createElement("div", {
+					className: m.a.circleYellowHollow
+				}))
+			}
 		},
 		"./src/reddit/components/PowerupsSidebar/PowerupsCountAndProgress/PowerupsProgressBar.tsx": function(e, t, s) {
 			"use strict";
@@ -477,32 +520,32 @@
 			})), s.d(t, "a", (function() {
 				return m
 			}));
-			var n = s("./node_modules/@researchgate/react-intersection-observer/lib/es/index.js"),
-				o = s("./node_modules/react/index.js"),
-				r = s.n(o),
+			var o = s("./node_modules/@researchgate/react-intersection-observer/lib/es/index.js"),
+				r = s("./node_modules/react/index.js"),
+				n = s.n(r),
 				a = s("./src/lib/classNames/index.ts"),
 				c = s("./src/reddit/icons/svgs/PowerupTier2/index.tsx"),
-				i = s("./src/reddit/components/PowerupsSidebar/PowerupsCountAndProgress/index.m.less"),
-				l = s.n(i);
-			const d = Object(o.forwardRef)((function({
+				l = s("./src/reddit/components/PowerupsSidebar/PowerupsCountAndProgress/index.m.less"),
+				i = s.n(l);
+			const d = Object(r.forwardRef)((function({
 					className: e,
 					progress: t
 				}, s) {
-					const n = 100 * t;
-					return r.a.createElement("div", {
-						className: Object(a.a)(l.a.barRow, e),
+					const o = 100 * t;
+					return n.a.createElement("div", {
+						className: Object(a.a)(i.a.barRow, e),
 						ref: s
-					}, r.a.createElement("div", {
-						className: l.a.track
-					}), r.a.createElement("div", {
-						className: l.a.progress,
+					}, n.a.createElement("div", {
+						className: i.a.track
+					}), n.a.createElement("div", {
+						className: i.a.progress,
 						style: {
-							width: `${n}%`
+							width: `${o}%`
 						}
-					}, r.a.createElement(c.a, {
-						className: Object(a.a)(l.a.icon, {
-							[l.a.empty]: 0 === t,
-							[l.a.full]: t >= 1
+					}, n.a.createElement(c.a, {
+						className: Object(a.a)(i.a.icon, {
+							[i.a.empty]: 0 === t,
+							[i.a.full]: t >= 1
 						})
 					})))
 				})),
@@ -510,13 +553,13 @@
 					className: e,
 					progress: t
 				}) => {
-					const [s, a] = Object(o.useState)(!1), c = s ? t : 0;
-					return r.a.createElement(n.a, {
+					const [s, a] = Object(r.useState)(!1), c = s ? t : 0;
+					return n.a.createElement(o.a, {
 						onChange: e => {
 							s || e.intersectionRatio < .75 || a(!0)
 						},
 						threshold: .75
-					}, r.a.createElement(d, {
+					}, n.a.createElement(d, {
 						className: e,
 						progress: c
 					}))
@@ -536,30 +579,30 @@
 		"./src/reddit/hooks/useScrollGradient.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return o
+				return r
 			}));
-			var n = s("./node_modules/react/index.js");
+			var o = s("./node_modules/react/index.js");
 
-			function o(e) {
-				const [t, s] = Object(n.useState)(e), o = Object(n.useRef)(null);
+			function r(e) {
+				const [t, s] = Object(o.useState)(e), r = Object(o.useRef)(null);
 				return {
-					container: o,
+					container: r,
 					isScrollGradientVisible: t,
 					calculateGradientVisibility: () => {
-						const e = o.current;
+						const e = r.current;
 						if (!e) return;
 						const t = e.getBoundingClientRect().height,
-							n = Math.ceil(e.scrollTop + t) >= e.scrollHeight;
-						s(!n)
+							o = Math.ceil(e.scrollTop + t) >= e.scrollHeight;
+						s(!o)
 					}
 				}
 			}
 		},
 		"./src/reddit/icons/svgs/PowerupTier2/index.tsx": function(e, t, s) {
 			"use strict";
-			var n = s("./node_modules/react/index.js"),
-				o = s.n(n);
-			t.a = e => o.a.createElement("svg", {
+			var o = s("./node_modules/react/index.js"),
+				r = s.n(o);
+			t.a = e => r.a.createElement("svg", {
 				className: e.className,
 				viewBox: "0 0 74 74",
 				fill: "none",
@@ -569,23 +612,23 @@
 				onMouseLeave: e.onMouseLeave,
 				id: e.id,
 				"data-testid": "bolt-tier2"
-			}, e.title && o.a.createElement("title", null, e.title), o.a.createElement("path", {
+			}, e.title && r.a.createElement("title", null, e.title), r.a.createElement("path", {
 				d: "M28.03 73.65h-.08a3.47 3.47 0 01-2.48-1.15l-6.93-7.59a3.47 3.47 0 01-.69-3.63l4.5-10.73H19.6a3.47 3.47 0 01-2.56-1.15L10.1 41.8a3.47 3.47 0 01-.67-3.65L24.86 2.62A3.47 3.47 0 0128.02.54l29.8-.2a3.47 3.47 0 012.55 1.16L67.3 9.1a3.47 3.47 0 01.16 4.5l-7.5 9.54c.27.16.51.36.72.6l6.94 7.58a3.47 3.47 0 01-.12 4.82L30.47 72.66c-.65.64-1.53 1-2.44 1zM25.1 61.9l3.06 3.31L60.3 33.53l-3.64-4.03h-3.47a3.47 3.47 0 01-2.72-5.62l9.75-12.32-3.93-4.28-25.96.17L16.7 38.8l4.4 4.8h6.45a3.47 3.47 0 013.2 4.81L25.1 61.9z",
 				fill: "#000"
-			}), o.a.createElement("path", {
+			}), r.a.createElement("path", {
 				d: "M34.1 11.6l22.76-7.78 6.99 7.58-17.58 22.21 10.94-7.58 6.98 7.58L27.1 70.18l-6.98-7.58L28.77 47l-10.1.06-7-7.58 22.43-27.9z",
 				fill: "#FF7A00"
-			}), o.a.createElement("path", {
+			}), r.a.createElement("path", {
 				d: "M27.11 4.01l29.75-.2L39.3 26.04H57.2L20.11 62.6l9.69-23.1-18.12-.01L27.1 4z",
 				fill: "#FFD15C"
-			}), o.a.createElement("path", {
+			}), r.a.createElement("path", {
 				d: "M35.79 35.25H17.77l11.74-27 18.8-.13-17.53 22.16h16.28l-17 17.75 5.73-12.78z",
 				fill: "#FFF5C7"
-			}), o.a.createElement("path", {
+			}), r.a.createElement("path", {
 				d: "M54.32 26.03H36.77l20-3.03-2.45 3.03zM26.1 48.32l4.34-10.37-7.97 10.14 3.64.23z",
 				fill: "#000"
 			}))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.99d372cd41170a1ea43f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.6729e5712f6a143d259f.js.map
