@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.3945d31e0d3eed46657e.js
-// Retrieved at 11/1/2021, 4:30:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.f13e7e383824cb48880b.js
+// Retrieved at 11/1/2021, 5:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -368,7 +368,7 @@
 						if (o.ok) {
 							const e = function(e, t) {
 									return {
-										channelId: Object(N.e)(e.channel_url),
+										channelId: Object(N.f)(e.channel_url),
 										channelSendbirdUrl: e.channel_url,
 										channelState: Object(N.b)(t),
 										fetchingFirstMessage: !1,
@@ -476,7 +476,7 @@
 					const n = t().channels.models;
 					await e(Ye(n)), e(qe()), e(Ne())
 				}, Ye = e => async t => {
-					const n = Object(N.c)(e, [S.a.Direct, S.a.Group]);
+					const n = Object(N.c)(e, [S.b.Direct, S.b.Group]);
 					if (!n) return;
 					const a = {};
 					for (const e in n) {
@@ -494,7 +494,7 @@
 					if (a) {
 						const {
 							hasMoreChannels: s
-						} = a, c = Object(S.e)(a.channels), r = Object(M.u)(n());
+						} = a, c = Object(S.f)(a.channels), r = Object(M.u)(n());
 						return t(Ye(c)), t(Ke({
 							channels: c,
 							hasMoreChannels: s
@@ -512,7 +512,7 @@
 					if (a) {
 						const {
 							hasMoreChannels: s
-						} = a, c = Object(S.e)(a.channels), r = Object(M.v)(t()) + (null === (n = a.channels) || void 0 === n ? void 0 : n.length);
+						} = a, c = Object(S.f)(a.channels), r = Object(M.v)(t()) + (null === (n = a.channels) || void 0 === n ? void 0 : n.length);
 						return e(Ze({
 							channels: c,
 							hasMoreChannels: s
@@ -2899,7 +2899,7 @@
 						i = r && r.name,
 						d = Object(j.x)(c),
 						u = Object(j.j)(c) || h.b.JOINED,
-						p = d && d.type === f.a.Direct,
+						p = d && d.type === f.b.Direct,
 						b = Object(j.m)(c);
 					if (!b) throw new g.a("currentChannel", b);
 					const O = b.channelId;
@@ -3127,29 +3127,30 @@
 				u = n("./node_modules/fbt/lib/FbtPublic.js"),
 				h = n("./src/chat/constants/messages.ts"),
 				m = n("./src/chat/helpers/linkParser/index.ts"),
-				p = n("./src/chat/models/Message/index.ts"),
+				p = n("./src/chat/models/Channel/index.ts"),
 				b = n("./src/chat/selectors/experiments.ts"),
 				g = n("./src/chat/components/Message/Preview.m.less"),
 				f = n.n(g);
 			const O = e => {
 					const {
 						message: t,
-						isInvited: n
-					} = e, a = (({
+						isInvited: n,
+						channelData: a
+					} = e, r = (({
 						currentUserId: e,
 						isGroup: t,
 						message: n
 					}) => t && n && n.sender ? e === n.sender.userId ? u.fbt._("You:", null, {
 						hk: "wP43r"
-					}) : `${n.sender.nickname}:` : "")(e), r = Object(c.e)(b.l);
+					}) : `${n.sender.nickname}:` : "")(e), o = Object(c.e)(b.l);
+					if (n && (null == a ? void 0 : a.creationReason) === p.a.AWARDING) return s.a.createElement(s.a.Fragment, null, [r, " ", u.fbt._("Sent a note with an award", null, {
+						hk: "4FSnF0"
+					})]);
 					if (!t) return null;
 					if (t.messageData.collapsedInvitePreview) return s.a.createElement(s.a.Fragment, null, [u.fbt._("Wants to message you", null, {
 						hk: "3CbciS"
 					})]);
-					if ((null == t ? void 0 : t.messageType) === h.d.SYSTEM && (null == t ? void 0 : t.customType) === p.a.AWARDING) return s.a.createElement(s.a.Fragment, null, [a, " ", u.fbt._("Sent a note with an award", null, {
-						hk: "4FSnF0"
-					})]);
-					if (n && !r) return s.a.createElement(s.a.Fragment, null, [u.fbt._("Wants to message you", null, {
+					if (n && !o) return s.a.createElement(s.a.Fragment, null, [u.fbt._("Wants to message you", null, {
 						hk: "3CbciS"
 					})]);
 					switch (t.messageData.type) {
@@ -3157,37 +3158,37 @@
 							const {
 								value: e
 							} = t.messageData;
-							return s.a.createElement(s.a.Fragment, null, [a, " ", Object(m.b)(e) ? u.fbt._("Shared a link", null, {
+							return s.a.createElement(s.a.Fragment, null, [r, " ", Object(m.b)(e) ? u.fbt._("Shared a link", null, {
 								hk: "4bNVW7"
 							}) : e])
 						}
 						case h.c.USER_POST:
 						case h.c.POST:
-							return s.a.createElement(s.a.Fragment, null, [a, " ", u.fbt._("Shared a post", null, {
+							return s.a.createElement(s.a.Fragment, null, [r, " ", u.fbt._("Shared a post", null, {
 								hk: "1hd8l1"
 							}), " ", t.messageData.subreddit]);
 						case h.c.COMMENT:
-							return s.a.createElement(s.a.Fragment, null, [a, " ", u.fbt._("Shared a comment", null, {
+							return s.a.createElement(s.a.Fragment, null, [r, " ", u.fbt._("Shared a comment", null, {
 								hk: "1cCjoi"
 							}), " ", t.messageData.subreddit]);
 						case h.c.EMBED:
-							return s.a.createElement(s.a.Fragment, null, [a, " ", u.fbt._("Shared a link", null, {
+							return s.a.createElement(s.a.Fragment, null, [r, " ", u.fbt._("Shared a link", null, {
 								hk: "4bNVW7"
 							}), " ", t.messageData.value]);
 						case h.c.SUBREDDIT:
-							return s.a.createElement(s.a.Fragment, null, [a, " ", u.fbt._("Shared a community", null, {
+							return s.a.createElement(s.a.Fragment, null, [r, " ", u.fbt._("Shared a community", null, {
 								hk: "t78ZE"
 							}), " ", t.messageData.subreddit]);
 						case h.c.SNOOMOJI:
-							return s.a.createElement(s.a.Fragment, null, [a, " ", u.fbt._("Sent a Snoomoji", null, {
+							return s.a.createElement(s.a.Fragment, null, [r, " ", u.fbt._("Sent a Snoomoji", null, {
 								hk: "4hD30K"
 							})]);
 						case h.c.GIF:
-							return s.a.createElement(s.a.Fragment, null, [a, " ", u.fbt._("Sent a Gif", null, {
+							return s.a.createElement(s.a.Fragment, null, [r, " ", u.fbt._("Sent a Gif", null, {
 								hk: "2DVhUf"
 							})]);
 						case h.c.IMAGE:
-							return s.a.createElement(s.a.Fragment, null, [a, " ", u.fbt._("Sent a Media File", null, {
+							return s.a.createElement(s.a.Fragment, null, [r, " ", u.fbt._("Sent a Media File", null, {
 								hk: "43eCZI"
 							})]);
 						default:
@@ -3219,66 +3220,67 @@
 			}, t);
 			var N = ({
 					channelId: e,
-					currentUserId: t,
-					isGroup: n,
-					isSelected: r,
-					channelState: o,
-					message: u,
-					unread: h,
-					mentionCount: m = 0,
-					unreadMessageCount: p = 0
+					channelData: t,
+					currentUserId: n,
+					isGroup: r,
+					isSelected: o,
+					channelState: u,
+					message: h,
+					unread: m,
+					mentionCount: p = 0,
+					unreadMessageCount: g = 0
 				}) => {
-					var g;
-					const f = Object(c.e)(t => Object(I.t)(t, e)),
-						O = Object(c.e)(t => Object(I.k)(t, e)),
-						x = Object(c.e)(t => Object(I.J)(t, {
+					var f;
+					const O = Object(c.e)(t => Object(I.t)(t, e)),
+						x = Object(c.e)(t => Object(I.k)(t, e)),
+						N = Object(c.e)(t => Object(I.J)(t, {
 							channelId: e
 						})),
-						N = Object(c.e)(b.o),
-						w = o === v.b.INVITED,
-						k = Object(a.useMemo)(() => w ? Object(C.channelAction)(e, v.a.VIEW_INVITE) : Object(C.channelUrl)(e), [w, e]),
-						M = Object(a.useMemo)(() => Object(C.getRedirectURL)(k), [k]),
-						T = Object(a.useMemo)(() => n ? m : p, [m, p, n]);
+						w = Object(c.e)(b.o),
+						k = u === v.b.INVITED,
+						M = Object(a.useMemo)(() => k ? Object(C.channelAction)(e, v.a.VIEW_INVITE) : Object(C.channelUrl)(e), [k, e]),
+						T = Object(a.useMemo)(() => Object(C.getRedirectURL)(M), [M]),
+						L = Object(a.useMemo)(() => r ? p : g, [p, g, r]);
 					return s.a.createElement(i.a, {
-						to: M,
+						to: T,
 						className: Object(l.a)(y.a.ChatListItem, {
-							[y.a.selected]: r,
-							[y.a.unread]: h
+							[y.a.selected]: o,
+							[y.a.unread]: m
 						})
-					}, (null == f ? void 0 : f.firstUser) && s.a.createElement(d.a, {
+					}, (null == O ? void 0 : O.firstUser) && s.a.createElement(d.a, {
 						className: y.a.ChatIcon,
-						userId: f.firstUser.id,
-						secondUserId: null === (g = f.secondUser) || void 0 === g ? void 0 : g.id
+						userId: O.firstUser.id,
+						secondUserId: null === (f = O.secondUser) || void 0 === f ? void 0 : f.id
 					}), s.a.createElement("div", {
 						className: y.a.ItemTitle
 					}, s.a.createElement(S, {
-						unread: h || w,
-						active: r
+						unread: m || k,
+						active: o
 					}, s.a.createElement("span", {
 						className: y.a.ChannelName
-					}, O)), s.a.createElement("div", {
+					}, x)), s.a.createElement("div", {
 						className: y.a.Description
 					}, s.a.createElement(E, {
-						currentUserId: t,
-						isGroup: n,
-						isInvited: w,
-						isUnread: h,
-						isActive: r,
-						message: u
+						currentUserId: n,
+						isGroup: r,
+						isInvited: k,
+						isUnread: m,
+						isActive: o,
+						message: h,
+						channelData: t
 					}), s.a.createElement(j.b, {
-						count: T
-					}))), x && N && s.a.createElement(_.a, {
+						count: L
+					}))), N && w && s.a.createElement(_.a, {
 						className: y.a.NotificationDisabledIcon,
 						isFilled: !0
 					}))
 				},
-				w = n("./src/chat/models/Channel/index.ts"),
-				k = n("./src/chat/selectors/user.ts");
+				w = n("./src/chat/selectors/user.ts");
 			t.a = ({
 				channels: e
 			}) => {
 				const t = Object(c.d)(),
-					n = Object(c.e)(k.a),
+					n = Object(c.e)(w.a),
 					i = Object(c.e)(I.n),
 					l = Object(r.a)(i),
 					d = Object(c.e)(e => l && Object(I.l)(e, l)),
@@ -3286,21 +3288,23 @@
 						t(Object(o.d)())
 					}, [t]);
 				return Object(a.useEffect)(() => {
-					l !== i && d === w.a.Group && u()
+					l !== i && d === p.b.Group && u()
 				}, [l, i, d, u]), s.a.createElement(s.a.Fragment, null, e.map(e => {
 					const {
 						channelId: t,
 						lastMessage: a,
 						channelState: c,
 						unreadMessageCount: r,
-						unreadMentionCount: o
+						unreadMentionCount: o,
+						channelData: l
 					} = e;
 					return s.a.createElement(N, {
 						key: t,
 						channelId: t,
+						channelData: l,
 						channelState: c,
 						isSelected: t === i,
-						isGroup: e.type === w.a.Group,
+						isGroup: e.type === p.b.Group,
 						message: a,
 						unread: !!r,
 						mentionCount: o,
@@ -4041,7 +4045,7 @@
 						userId: e.id
 					}), r.a.createElement("span", {
 						className: re.a.UserTitle
-					}, `${e.name}${t<n.length-1?",":""}`)))), t.type === ae.a.Group && r.a.createElement("div", {
+					}, `${e.name}${t<n.length-1?",":""}`)))), t.type === ae.b.Group && r.a.createElement("div", {
 						className: re.a.IconButtons
 					}, a && r.a.createElement(G.b, {
 						className: re.a.IconButton,
@@ -4158,7 +4162,7 @@
 			}(Se || (Se = {}));
 			const {
 				Group: De
-			} = ae.a, Pe = {
+			} = ae.b, Pe = {
 				shrug: "¯\\_(ツ)_/¯",
 				tableflip: "(╯°□°）╯︵ ┻━┻",
 				unflip: "┬─┬ ノ( ゜-゜ノ)",
@@ -4197,7 +4201,7 @@
 					} = c;
 				if (t && e && r) {
 					const n = Object(_.h)(a(), t);
-					if ((null == n ? void 0 : n.type) === ae.a.Group) {
+					if ((null == n ? void 0 : n.type) === ae.b.Group) {
 						if (e === ge.D) return;
 						let n = [];
 						const c = Object(Ae.c)(a(), e);
@@ -4272,7 +4276,7 @@
 				}) => async (t, n) => {
 					if (e) {
 						const a = Object(_.h)(n(), e);
-						(null == a ? void 0 : a.type) === ae.a.Group && t(Object(Y.j)())
+						(null == a ? void 0 : a.type) === ae.b.Group && t(Object(Y.j)())
 					}
 				}
 			}, {
@@ -4324,7 +4328,7 @@
 					const o = _e(e);
 					if (t && o && r) {
 						const e = Object(_.h)(a(), t);
-						if ((null == e ? void 0 : e.type) === ae.a.Group) {
+						if ((null == e ? void 0 : e.type) === ae.b.Group) {
 							if (o === ge.D) return;
 							let e;
 							const c = Object(Ae.c)(a(), o);
@@ -5573,7 +5577,7 @@
 				}) => {
 					const {
 						sender: o
-					} = t, l = n === ae.a.Group, d = c === (null == o ? void 0 : o.userId);
+					} = t, l = n === ae.b.Group, d = c === (null == o ? void 0 : o.userId);
 					return (!a || !s) && (null == o ? void 0 : o.nickname) && (null == o ? void 0 : o.userId) && l ? r.a.createElement("span", {
 						className: Object(i.a)(zn.a.UserName, {
 							[zn.a.currentUser]: Boolean(d && c)
@@ -5770,7 +5774,7 @@
 					const t = Object(o.e)(e => e.typingIndicator.usernames);
 					return (null == t ? void 0 : t.length) ? r.a.createElement("span", {
 						className: Object(i.a)(ca.a.IndicatorText)
-					}, ((e, t) => e === ae.a.Direct ? Q.fbt._("is typing...", null, {
+					}, ((e, t) => e === ae.b.Direct ? Q.fbt._("is typing...", null, {
 						hk: "UTaH4"
 					}) : 1 === t.length ? Q.fbt._("{firstUser} is typing...", [Q.fbt._param("firstUser", t[0])], {
 						hk: "480JMK"
@@ -5823,7 +5827,7 @@
 						return n ? n.name : t.name
 					}, this.getTitle = () => {
 						switch (this.props.channel.type) {
-							case ae.a.Group:
+							case ae.b.Group:
 								return this.props.channel.name;
 							default:
 								return this.getOtherMemberName()
@@ -6487,7 +6491,7 @@
 					}) : Es._("Mark as spam", null, {
 						hk: "3Iy1wd"
 					}), [m]),
-					v = Object(c.useMemo)(() => (null == d ? void 0 : d.type) === ae.a.Direct, [d]),
+					v = Object(c.useMemo)(() => (null == d ? void 0 : d.type) === ae.b.Direct, [d]),
 					j = Object(c.useMemo)(() => v ? Es._("Chat Request", null, {
 						hk: "1sWJM0"
 					}) : Es._("Group invite", null, {
@@ -9224,7 +9228,7 @@
 							...y.arrowProps.style,
 							borderBottom: "5px solid var(--prompt-tooltip-background)"
 						}
-					}, N = Object(a.useMemo)(() => (null == t ? void 0 : t.type) === te.a.Group, [t]), w = N && v && !C && (_ || I);
+					}, N = Object(a.useMemo)(() => (null == t ? void 0 : t.type) === te.b.Group, [t]), w = N && v && !C && (_ || I);
 					Object(a.useEffect)(() => {
 						N && setTimeout(() => {
 							null == y || y.show()
@@ -9297,9 +9301,9 @@
 						} = e,
 						F = (() => {
 							if (t) switch (t.type) {
-								case te.a.Direct:
+								case te.b.Direct:
 									return D.c.directChannel.filter(e => D.d.muteBadging(e, o, d) && D.d.unmuteBadging(e, o, d) && D.d.muteNotifs(e, i) && D.d.unmuteNotifs(e, i) && D.d.changeTheme(e, l));
-								case te.a.Group:
+								case te.b.Group:
 									return D.c.groupChannel.filter(e => D.d.muteBadging(e, o, d) && D.d.unmuteBadging(e, o, d) && D.d.muteNotifs(e, i) && D.d.unmuteNotifs(e, i) && D.d.changeTheme(e, l) && D.d.linkSettings(e, h && p))
 							}
 						})();
@@ -9535,12 +9539,12 @@
 						d = Object(c.d)();
 					return s.a.createElement("span", {
 						onClick: Object(De.b)(() => {
-							l && n === te.a.Group && (d(Object(i.e)(t)), d(Object(u.o)(i.b.EASY_ACCESS)))
+							l && n === te.b.Group && (d(Object(i.e)(t)), d(Object(u.o)(i.b.EASY_ACCESS)))
 						}),
 						className: Object(r.a)(Re.a.UserProfileTitle, {
-							[Re.a.easyAccess]: l && n === te.a.Group
+							[Re.a.easyAccess]: l && n === te.b.Group
 						})
-					}, e, l && n === te.a.Group && s.a.createElement(Y.a, {
+					}, e, l && n === te.b.Group && s.a.createElement(Y.a, {
 						className: Re.a.LinkIcon
 					}))
 				},
@@ -10692,11 +10696,11 @@
 					n = Object(s.useCallback)(t => {
 						e(Object(i.d)({
 							filter: t
-						})), e(Object(l.D)(Object(u.g)(t)))
+						})), e(Object(l.D)(Object(u.h)(t)))
 					}, [e]);
 				return c.a.createElement("div", {
 					className: p.a.ChannelsFilter
-				}, Object.values(u.b).map(e => c.a.createElement(d.a, {
+				}, Object.values(u.c).map(e => c.a.createElement(d.a, {
 					key: e,
 					onClick: () => n(e),
 					className: Object(o.a)(p.a.ChannelsFilterItem, {
@@ -13452,7 +13456,7 @@
 				s = n("./src/chat/actions/channelsFilter/index.ts"),
 				c = n("./src/chat/models/Channel/index.ts");
 			const r = {
-				filter: c.b.ALL
+				filter: c.c.ALL
 			};
 			var o = (e = r, t) => {
 					switch (t.type) {
@@ -13516,7 +13520,7 @@
 						const {
 							channels: n,
 							hasMoreChannels: a
-						} = t.payload, s = Object(E.c)(n, [c.a.Direct, c.a.Group]);
+						} = t.payload, s = Object(E.c)(n, [c.b.Direct, c.b.Group]);
 						if (!s) return e;
 						const r = Object.keys(s),
 							o = a && !!r.length;
@@ -13587,7 +13591,7 @@
 							const {
 								channels: n,
 								hasMoreChannels: a
-							} = t.payload, s = Object(E.c)(n, [c.a.Direct, c.a.Group]);
+							} = t.payload, s = Object(E.c)(n, [c.b.Direct, c.b.Group]);
 							if (!s) return e;
 							const r = Object.keys(s),
 								o = a && !!r.length;
@@ -15724,14 +15728,14 @@
 				onReceiveInvite() {
 					const e = new this.self.ChannelHandler;
 					e.onUserReceivedInvitation = e => {
-						const t = Object(w.f)(e);
+						const t = Object(w.g)(e);
 						this.dispatch(Object(u.P)(t))
 					}, this.self.addChannelHandler("RECEIVE_CHANNEL_INVITE", e), this.channelUniqueHandlerID.push("RECEIVE_CHANNEL_INVITE")
 				}
 				onReceiveMessage() {
 					const e = new this.self.ChannelHandler;
 					e.onMessageReceived = (e, t) => {
-						const n = Object(w.f)(e);
+						const n = Object(w.g)(e);
 						this.dispatch(Object(u.O)(n));
 						const a = Object(M.c)(t);
 						a && this.dispatch(Object(E.x)(a))
@@ -15740,7 +15744,7 @@
 				onUpdateMessage() {
 					const e = new this.self.ChannelHandler;
 					e.onMessageUpdated = (e, t) => {
-						const n = Object(w.f)(e);
+						const n = Object(w.g)(e);
 						this.dispatch(Object(u.O)(n));
 						const a = Object(M.c)(t);
 						a && this.dispatch(Object(E.x)(a))
@@ -15755,7 +15759,7 @@
 				onTypingStatusUpdated() {
 					const e = new this.self.ChannelHandler;
 					e.onTypingStatusUpdated = e => {
-						const t = Object(k.e)(e.url),
+						const t = Object(k.f)(e.url),
 							n = e.getTypingMembers().map(e => e.nickname);
 						this.dispatch(Object(_.b)({
 							channelId: t,
@@ -15772,7 +15776,7 @@
 							a = new this.self.ChannelHandler,
 							s = e[n];
 						a[n] = e => {
-							const t = Object(w.f)(e);
+							const t = Object(w.g)(e);
 							this.dispatch(Object(u.P)(t, !0))
 						}, this.self.addChannelHandler(s, a), this.channelUniqueHandlerID.push(s)
 					})
@@ -15780,42 +15784,42 @@
 				onChannelChanged() {
 					const e = new this.self.ChannelHandler;
 					e.onChannelChanged = e => {
-						const t = Object(w.f)(e);
+						const t = Object(w.g)(e);
 						this.dispatch(Object(u.P)(t))
 					}, this.self.addChannelHandler("ON_CHANNEL_CHANGED", e), this.channelUniqueHandlerID.push("ON_CHANNEL_CHANGED")
 				}
 				onChannelDeleted() {
 					const e = new this.self.ChannelHandler;
 					e.onChannelDeleted = e => {
-						const t = Object(k.e)(e);
+						const t = Object(k.f)(e);
 						this.dispatch(g(t))
 					}, this.self.addChannelHandler("ON_CHANNEL_DELETED", e), this.channelUniqueHandlerID.push("ON_CHANNEL_DELETED")
 				}
 				onChannelMuted() {
 					const e = new this.self.ChannelHandler;
 					e.onUserMuted = e => {
-						const t = Object(w.f)(e);
+						const t = Object(w.g)(e);
 						this.dispatch(Object(u.P)(t))
 					}, this.self.addChannelHandler("ON_CHANNEL_MUTED", e), this.channelUniqueHandlerID.push("ON_CHANNEL_MUTED")
 				}
 				onChannelUnmuted() {
 					const e = new this.self.ChannelHandler;
 					e.onUserUnmuted = e => {
-						const t = Object(w.f)(e);
+						const t = Object(w.g)(e);
 						this.dispatch(Object(u.P)(t))
 					}, this.self.addChannelHandler("ON_CHANNEL_UNMUTED", e), this.channelUniqueHandlerID.push("ON_CHANNEL_UNMUTED")
 				}
 				onChannelLocked() {
 					const e = new this.self.ChannelHandler;
 					e.onChannelFrozen = e => {
-						const t = Object(w.f)(e);
+						const t = Object(w.g)(e);
 						this.dispatch(Object(u.P)(t))
 					}, this.self.addChannelHandler("ON_CHANNEL_LOCKED", e), this.channelUniqueHandlerID.push("ON_CHANNEL_LOCKED")
 				}
 				onChannelUnlocked() {
 					const e = new this.self.ChannelHandler;
 					e.onChannelUnfrozen = e => {
-						const t = Object(w.f)(e);
+						const t = Object(w.g)(e);
 						this.dispatch(Object(u.P)(t))
 					}, this.self.addChannelHandler("ON_CHANNEL_UNLOCKED", e), this.channelUniqueHandlerID.push("ON_CHANNEL_UNLOCKED")
 				}
@@ -15838,7 +15842,7 @@
 					return new Promise((t, n) => {
 						this.getChannelByChannelId(e).then(e => {
 							if (!e) return t();
-							const n = Object(w.f)(e);
+							const n = Object(w.g)(e);
 							if (!n) return t();
 							this.dispatch(Object(u.Q)(n)), t(n)
 						}).catch(e => {
@@ -15861,7 +15865,7 @@
 						this.getChannelByChannelId(c).then(t => {
 							if (!t) return a(s());
 							this.channels[c] = t;
-							const r = Object(w.f)(t);
+							const r = Object(w.g)(t);
 							this.updatePartialChannelModel(r, e.channelState), this.switchChannel(t, n).then(([e]) => a(s({
 								messageListData: e
 							}))).catch(() => a(s()))
@@ -15899,7 +15903,7 @@
 				onUserKicked() {
 					const e = new this.self.ChannelHandler;
 					e.onUserBanned = (e, t) => {
-						const n = Object(w.f)(e);
+						const n = Object(w.g)(e);
 						n && this.dispatch(O(n, t.userId))
 					}, this.self.addChannelHandler("CHANNEL_USER_KICKED", e), this.channelUniqueHandlerID.push("CHANNEL_USER_KICKED")
 				}
@@ -17177,4 +17181,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.3945d31e0d3eed46657e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.f13e7e383824cb48880b.js.map
