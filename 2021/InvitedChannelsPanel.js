@@ -1,8 +1,8 @@
-// https://www.redditstatic.com/desktop2x/InvitedChannelsPanel.9ddc0680db8c46acfa2c.js
-// Retrieved at 10/26/2021, 2:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InvitedChannelsPanel.a68df8031c3dfa0c8165.js
+// Retrieved at 11/1/2021, 4:30:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InvitedChannelsPanel"], {
-		"./src/chat/components/Sidebar/InvitedChannelsPanel/index.m.less": function(e, n, t) {
+		"./src/chat/components/Sidebar/InvitedChannelsPanel/index.m.less": function(e, t, n) {
 			e.exports = {
 				BackIcon: "_1OJ2pt-ycWAx9wyn0hB9Gy",
 				backIcon: "_1OJ2pt-ycWAx9wyn0hB9Gy",
@@ -12,53 +12,59 @@
 				body: "icybbcUny1_io4kpNrmVw"
 			}
 		},
-		"./src/chat/components/Sidebar/InvitedChannelsPanel/index.tsx": function(e, n, t) {
+		"./src/chat/components/Sidebar/InvitedChannelsPanel/index.tsx": function(e, t, n) {
 			"use strict";
-			t.r(n);
-			var s = t("./node_modules/fbt/lib/FbtPublic.js"),
-				c = t("./node_modules/lodash/values.js"),
-				a = t.n(c),
-				r = t("./node_modules/react/index.js"),
-				l = t.n(r),
-				d = t("./node_modules/react-redux/es/index.js"),
-				o = t("./src/chat/actions/sidebar.ts"),
-				i = t("./src/chat/components/ChatList/index.tsx"),
-				h = t("./src/chat/components/Scroller/index.tsx"),
-				m = t("./src/chat/controls/ChannelsFilter/index.tsx"),
-				b = t("./src/chat/icons/svgs/ArrowLeft/index.tsx"),
-				_ = t("./src/chat/reducers/sidebar/sideBarAppearance/index.ts"),
-				u = t("./src/chat/selectors/channels.ts"),
-				x = t("./src/chat/selectors/experiments.ts"),
-				p = t("./src/chat/actions/tracking.ts"),
-				v = t("./src/chat/components/Sidebar/InvitedChannelsPanel/index.m.less"),
-				C = t.n(v);
-			n.default = () => {
-				const e = Object(d.d)();
-				Object(r.useEffect)(() => {
-					e(Object(p.Z)())
+			n.r(t);
+			var c = n("./node_modules/fbt/lib/FbtPublic.js"),
+				s = n("./node_modules/lodash/values.js"),
+				a = n.n(s),
+				o = n("./node_modules/react/index.js"),
+				r = n.n(o),
+				l = n("./node_modules/react-redux/es/index.js"),
+				d = n("./src/chat/actions/channel.ts"),
+				i = n("./src/chat/actions/sidebar.ts"),
+				h = n("./src/chat/actions/tracking.ts"),
+				m = n("./src/chat/components/ChatList/index.tsx"),
+				b = n("./src/chat/components/Scroller/index.tsx"),
+				_ = n("./src/chat/components/SkeletonPlaceholder/SkeletonPlaceholder.tsx"),
+				x = n("./src/chat/controls/ChannelsFilter/index.tsx"),
+				u = n("./src/chat/icons/svgs/ArrowLeft/index.tsx"),
+				p = n("./src/chat/reducers/sidebar/sideBarAppearance/index.ts"),
+				j = n("./src/chat/selectors/channels.ts"),
+				E = n("./src/chat/selectors/experiments.ts"),
+				O = n("./src/chat/components/Sidebar/InvitedChannelsPanel/index.m.less"),
+				v = n.n(O);
+			t.default = () => {
+				const e = Object(l.d)();
+				Object(o.useEffect)(() => {
+					e(Object(h.Z)())
 				}, [e]);
-				const n = Object(d.e)(u.d),
-					t = Object(d.e)(x.d),
-					c = Object(r.useCallback)(() => {
-						e(Object(o.e)(_.a.CHANNELS))
-					}, [e]);
-				return l.a.createElement(l.a.Fragment, null, l.a.createElement("button", {
-					className: C.a.Header,
-					onClick: c
-				}, l.a.createElement(b.a, {
-					className: C.a.BackIcon,
+				const t = Object(l.e)(j.d),
+					n = Object(l.e)(E.d),
+					s = Object(l.e)(j.E),
+					O = Object(l.e)(j.b);
+				return r.a.createElement(r.a.Fragment, null, r.a.createElement("button", {
+					className: v.a.Header,
+					onClick: () => {
+						e(Object(i.e)(p.a.CHANNELS))
+					}
+				}, r.a.createElement(u.a, {
+					className: v.a.BackIcon,
 					isFilled: !0
-				}), s.fbt._("Invites", null, {
+				}), c.fbt._("Invites", null, {
 					hk: "2zUosI"
-				})), l.a.createElement(h.b, null, l.a.createElement("div", {
-					className: C.a.Body
-				}, t && l.a.createElement(m.a, {
-					isForInvitedChannels: !0
-				}), l.a.createElement(i.a, {
-					channels: a()(n)
-				}))))
+				})), r.a.createElement(b.b, {
+					loadMoreRows: () => {
+						e(Object(d.D)())
+					},
+					isLoadMoreRowsComplete: () => !s || !!O
+				}, r.a.createElement("div", {
+					className: v.a.Body
+				}, n && r.a.createElement(x.a, null), r.a.createElement(m.a, {
+					channels: a()(t)
+				}), O && r.a.createElement(_.d, null))))
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InvitedChannelsPanel.9ddc0680db8c46acfa2c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InvitedChannelsPanel.a68df8031c3dfa0c8165.js.map
