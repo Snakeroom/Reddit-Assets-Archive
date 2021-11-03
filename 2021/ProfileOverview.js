@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.3144783f8db886eecb32.js
-// Retrieved at 10/28/2021, 5:10:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.37c1097d9914adba3549.js
+// Retrieved at 11/3/2021, 10:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, s) {
@@ -2638,19 +2638,20 @@
 						postIds: Ne,
 						onceInViewport: Te
 					} = e, Le = !!e.redditStyle || !!e["data-redditstyle"], Re = Le ? void 0 : p, Be = Object(c.a)(ue), Me = pe && Be, Fe = Object(d.a)(ue), Ae = Object(l.a)(ue), De = Object(D.c)(we), ze = !!we.media && we.media.type === v.o.RTJSON, Ue = Ee && ze, He = s ? s - H.a : void 0, We = !(K && q || ee), Ve = (e => e === ae.Pd.OnlyTitles)(xe) && !Object(oe.a)(we), Ke = (e => e === ae.Pd.MediumHeight)(xe) && !Object(oe.a)(we), Ge = (e => {
+						var t;
 						const {
-							post: t,
-							postIds: s,
-							posts: o
+							post: s,
+							postIds: o,
+							posts: n
 						} = e;
-						if (!Object(w.q)(t)) return;
-						const n = s && 0 === s.indexOf(t.id),
-							r = s && 1 === s.indexOf(t.id),
-							a = o && o[1] && Object(w.q)(o[1]);
+						if (!Object(w.q)(s) || (null === (t = s.pollData) || void 0 === t ? void 0 : t.isPrediction)) return;
+						const r = o && 0 === o.indexOf(s.id),
+							a = o && 1 === o.indexOf(s.id),
+							i = n && n[1] && Object(w.q)(n[1]);
 						return {
-							hasTopCompactPostStyles: n && a,
-							hasBottomCompactPostStyles: r,
-							showPinnnedHeader: n
+							hasTopCompactPostStyles: r && i,
+							hasBottomCompactPostStyles: a,
+							showPinnnedHeader: r
 						}
 					})(e), qe = !!(null == O ? void 0 : O.shouldShowLinkedPosts), Xe = (!_ || qe || ke) && !we.isSponsored, Ye = Object(j.t)(we, k), {
 						source: Qe
@@ -5144,4 +5145,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.3144783f8db886eecb32.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.37c1097d9914adba3549.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.5bbbadbb1d99f63c1a07.js
-// Retrieved at 11/2/2021, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.f94d71bf26554ee70c00.js
+// Retrieved at 11/3/2021, 10:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost", "Reddit~StandalonePostPage~reddit-components-MediumPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -2615,19 +2615,20 @@
 						postIds: Ae,
 						onceInViewport: Pe
 					} = e, Ne = !!e.redditStyle || !!e["data-redditstyle"], Fe = Ne ? void 0 : p, Le = Object(l.a)(me), Re = pe && Le, De = Object(c.a)(me), Me = Object(d.a)(me), Ue = Object(U.c)(Ee), Ve = !!Ee.media && Ee.media.type === _.o.RTJSON, Be = Ie && Ve, Ge = s ? s - G.a : void 0, He = !(Y && q || ee), We = (e => e === ie.Pd.OnlyTitles)(ge) && !Object(ne.a)(Ee), Ye = (e => e === ie.Pd.MediumHeight)(ge) && !Object(ne.a)(Ee), ze = (e => {
+						var t;
 						const {
-							post: t,
-							postIds: s,
-							posts: n
+							post: s,
+							postIds: n,
+							posts: r
 						} = e;
-						if (!Object(E.q)(t)) return;
-						const r = s && 0 === s.indexOf(t.id),
-							o = s && 1 === s.indexOf(t.id),
-							i = n && n[1] && Object(E.q)(n[1]);
+						if (!Object(E.q)(s) || (null === (t = s.pollData) || void 0 === t ? void 0 : t.isPrediction)) return;
+						const o = n && 0 === n.indexOf(s.id),
+							i = n && 1 === n.indexOf(s.id),
+							a = r && r[1] && Object(E.q)(r[1]);
 						return {
-							hasTopCompactPostStyles: r && i,
-							hasBottomCompactPostStyles: o,
-							showPinnnedHeader: r
+							hasTopCompactPostStyles: o && a,
+							hasBottomCompactPostStyles: i,
+							showPinnnedHeader: o
 						}
 					})(e), qe = !!(null == S ? void 0 : S.shouldShowLinkedPosts), Ke = (!C || qe || we) && !Ee.isSponsored, Qe = Object(T.t)(Ee, w), {
 						source: Ze
@@ -8397,4 +8398,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.5bbbadbb1d99f63c1a07.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.f94d71bf26554ee70c00.js.map
