@@ -1,7 +1,7 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.375a3266048e661809c6.js
-// Retrieved at 10/13/2021, 6:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.36521ddacaea876f4a3f.js
+// Retrieved at 11/3/2021, 2:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
-	["reddit-components-ViewReportsDropdown-index"], {
+	["reddit-components-ViewReportsDropdown-index", "FrontpageSidebar"], {
 		"./src/reddit/actions/comment/index.ts": function(e, t, o) {
 			"use strict";
 			o.d(t, "i", (function() {
@@ -17,9 +17,9 @@
 			})), o.d(t, "q", (function() {
 				return N
 			})), o.d(t, "j", (function() {
-				return U
-			})), o.d(t, "g", (function() {
 				return F
+			})), o.d(t, "g", (function() {
+				return U
 			})), o.d(t, "f", (function() {
 				return K
 			})), o.d(t, "o", (function() {
@@ -137,7 +137,7 @@
 							partialPostId: p
 						} = l ? l.params : null;
 					if (!p) return;
-					const u = Object(x.s)(p);
+					const u = Object(x.t)(p);
 					o(D({
 						moreCommentsId: d.id
 					}));
@@ -167,7 +167,7 @@
 						moreCommentsItem: d,
 						...f.error
 					}))
-				}, N = Object(u.a)(O.b, h.a.upvoted), U = Object(u.a)(O.b, h.a.downvoted), F = Object(d.a)(k.j), K = Object(d.a)(k.i), $ = Object(d.a)(k.e), M = Object(d.a)(k.f), H = (Object(d.a)(k.c), Object(d.a)(k.d), ({
+				}, N = Object(u.a)(O.b, h.a.upvoted), F = Object(u.a)(O.b, h.a.downvoted), U = Object(d.a)(k.j), K = Object(d.a)(k.i), $ = Object(d.a)(k.e), M = Object(d.a)(k.f), H = (Object(d.a)(k.c), Object(d.a)(k.d), ({
 					commentId: e,
 					commentsPageKey: t,
 					scrollToAndRemeasure: o
@@ -906,4 +906,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.375a3266048e661809c6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.36521ddacaea876f4a3f.js.map

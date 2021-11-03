@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.1ccf80789c73137cd04e.js
-// Retrieved at 11/3/2021, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.9b4663097a3ab970bc4c.js
+// Retrieved at 11/3/2021, 2:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditMentionWithIcon"], {
 		"./src/reddit/actions/subredditMention/constants.ts": function(e, t, s) {
@@ -50,7 +50,7 @@
 					if (l.topContent.pending[c] || p[c]) return;
 					t(u({
 						subredditName: c
-					})), t(Object(i.x)());
+					})), t(Object(i.z)());
 					const f = await ((e, t) => Object(r.a)(e, {
 						...o,
 						variables: t
@@ -898,8 +898,8 @@
 				}))(H),
 				W = s("./src/reddit/contexts/PageLayer/index.tsx"),
 				K = s("./src/reddit/helpers/styles/mixins/loading.ts"),
-				V = s("./src/reddit/components/SubredditMention/MiniPost/Placeholder.m.less"),
-				z = s.n(V);
+				z = s("./src/reddit/components/SubredditMention/MiniPost/Placeholder.m.less"),
+				V = s.n(z);
 			const Q = Object(W.u)(),
 				J = Object(c.c)({
 					isFakeSubreddit: W.y
@@ -913,27 +913,27 @@
 					return o.a.createElement("div", {
 						className: Object(w.a)(A.a.container, e)
 					}, o.a.createElement("div", {
-						className: z.a.mainBody
+						className: V.a.mainBody
 					}, o.a.createElement("div", {
-						className: z.a.content
+						className: V.a.content
 					}, o.a.createElement("div", null, o.a.createElement("div", {
-						className: Object(w.a)(z.a.title, n)
+						className: Object(w.a)(V.a.title, n)
 					}), t && o.a.createElement("div", {
-						className: Object(w.a)(z.a.meta, n)
+						className: Object(w.a)(V.a.meta, n)
 					})), o.a.createElement("div", {
-						className: z.a.flatlist
+						className: V.a.flatlist
 					}, o.a.createElement("div", {
-						className: Object(w.a)(z.a.flatlistExpando, n)
+						className: Object(w.a)(V.a.flatlistExpando, n)
 					}), o.a.createElement("div", {
-						className: z.a.flatlistSeparator
+						className: V.a.flatlistSeparator
 					}), o.a.createElement("div", {
-						className: Object(w.a)(z.a.flatlistItemOne, n)
+						className: Object(w.a)(V.a.flatlistItemOne, n)
 					}), o.a.createElement("div", {
-						className: Object(w.a)(z.a.flatlistItemTwo, n)
+						className: Object(w.a)(V.a.flatlistItemTwo, n)
 					}))), o.a.createElement("div", {
-						className: z.a.thumbnailContainer
+						className: V.a.thumbnailContainer
 					}, o.a.createElement("div", {
-						className: Object(w.a)(z.a.thumbnail, n)
+						className: Object(w.a)(V.a.thumbnail, n)
 					}))))
 				})),
 				X = s("./src/reddit/components/SubredditMention/SubredditIcon/index.tsx"),
@@ -1731,9 +1731,9 @@
 			})), s.d(t, "h", (function() {
 				return K
 			})), s.d(t, "m", (function() {
-				return V
-			})), s.d(t, "f", (function() {
 				return z
+			})), s.d(t, "f", (function() {
+				return V
 			})), s.d(t, "g", (function() {
 				return Q
 			})), s.d(t, "i", (function() {
@@ -1980,7 +1980,7 @@
 						actionInfo: G(e, 0, s)
 					})
 				},
-				V = (e, t, s) => {
+				z = (e, t, s) => {
 					const i = H();
 					return e => ({
 						...f(e, i),
@@ -1991,7 +1991,7 @@
 						noun: n.ITEM_SUBREDDIT
 					})
 				},
-				z = (e, t, s) => {
+				V = (e, t, s) => {
 					const i = H();
 					return e => ({
 						...f(e, i),
@@ -2247,4 +2247,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.1ccf80789c73137cd04e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.9b4663097a3ab970bc4c.js.map

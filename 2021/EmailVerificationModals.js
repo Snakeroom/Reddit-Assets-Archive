@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EmailVerificationModals.ea504d0c202f572a097e.js
-// Retrieved at 10/28/2021, 5:10:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EmailVerificationModals.0fdf10d518424360ea21.js
+// Retrieved at 11/3/2021, 2:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EmailVerificationModals"], {
 		"./src/lib/colors/constants.ts": function(e, t, a) {
@@ -377,7 +377,7 @@
 				}),
 				V = Object(o.b)(z, e => ({
 					resendEmail: () => e(Object(p.x)()),
-					toggleEmailDigests: t => e(Object(J.F)({
+					toggleEmailDigests: t => e(Object(J.H)({
 						emailDigests: t
 					}))
 				}));
@@ -969,4 +969,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EmailVerificationModals.ea504d0c202f572a097e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EmailVerificationModals.0fdf10d518424360ea21.js.map

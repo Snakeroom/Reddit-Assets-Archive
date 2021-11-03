@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.190c048eb5c21d42136e.js
-// Retrieved at 11/3/2021, 1:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.6b0d0091dbedb0f31168.js
+// Retrieved at 11/3/2021, 2:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, r) {
@@ -2490,7 +2490,7 @@
 				subredditName: t
 			}) => ({
 				continueToQuarantinedSubreddit: async () => {
-					await e(b.A(t)), window.location.reload()
+					await e(b.C(t)), window.location.reload()
 				},
 				setNSFWPreference: async () => {
 					await e(Object(m.l)())
@@ -3785,7 +3785,7 @@
 					hideNSFWPref: i.C
 				}),
 				d = Object(n.b)(o, e => ({
-					imageUpdateRequested: (t, r) => e(Object(a.z)(t, r))
+					imageUpdateRequested: (t, r) => e(Object(a.B)(t, r))
 				}));
 			t.a = d
 		},
@@ -5141,4 +5141,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.190c048eb5c21d42136e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.6b0d0091dbedb0f31168.js.map

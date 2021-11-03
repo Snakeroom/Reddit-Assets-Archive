@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Poll.1b356100d9e8e8813457.js
-// Retrieved at 11/1/2021, 10:30:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Poll.61564bd687fea8f96afb.js
+// Retrieved at 11/3/2021, 2:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Poll"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, n) {
@@ -827,7 +827,7 @@
 								for (const t of e)
 									if (t.checked) return parseInt(t.value)
 							}(Array.from(n.elements).filter(Q));
-						U()(r) || (this.props.onVoteSelection(t.options[r]), this.props.sendEvent(Object(R.g)(t.id, t.postId, r)))
+						U()(r) || (this.props.onVoteSelection(t.options[r]), this.props.sendEvent(Object(R.h)(t.id, t.postId, r)))
 					}
 				}
 				render() {
@@ -881,7 +881,7 @@
 							poll: e,
 							sendEvent: t
 						} = this.props;
-						e && t(Object(R.f)(e.id, e.postId))
+						e && t(Object(R.g)(e.id, e.postId))
 					}
 				}
 				componentDidMount() {
@@ -1711,4 +1711,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Poll.1b356100d9e8e8813457.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Poll.61564bd687fea8f96afb.js.map

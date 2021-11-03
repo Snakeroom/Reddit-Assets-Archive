@@ -1,47 +1,7 @@
-// https://www.redditstatic.com/desktop2x/0.c126b70d108cd58c07e8.js
-// Retrieved at 10/28/2021, 5:10:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/0.75477c5e1bb4b784e62a.js
+// Retrieved at 11/3/2021, 2:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	[0, "FrontpageSidebar"], {
-		"./src/reddit/contexts/ApiContext.tsx": function(e, s, t) {
-			"use strict";
-			t.d(s, "a", (function() {
-				return r
-			})), t.d(s, "b", (function() {
-				return l
-			}));
-			var a = t("./node_modules/react/index.js"),
-				n = t.n(a);
-
-			function c() {
-				return (c = Object.assign || function(e) {
-					for (var s = 1; s < arguments.length; s++) {
-						var t = arguments[s];
-						for (var a in t) Object.prototype.hasOwnProperty.call(t, a) && (e[a] = t[a])
-					}
-					return e
-				}).apply(this, arguments)
-			}
-			const i = {
-					apiContext: () => {
-						throw new Error("Component attempted to make an API request with no ApiContext")
-					},
-					gqlContext: () => {
-						throw new Error("Component attempted to make an API request with no GqlContext")
-					}
-				},
-				r = Object(a.createContext)(i);
-
-			function l(e) {
-				const s = s => n.a.createElement(r.Consumer, null, ({
-					apiContext: t,
-					gqlContext: a
-				}) => n.a.createElement(e, c({
-					apiContext: t,
-					gqlContext: a
-				}, s)));
-				return s.displayName = `WithApiContext(${e.displayName||e.name})`, s
-			}
-		},
 		"./src/reddit/icons/svgs/AddCollection/index.tsx": function(e, s, t) {
 			"use strict";
 			var a = t("./node_modules/react/index.js"),
@@ -4742,4 +4702,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/0.c126b70d108cd58c07e8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/0.75477c5e1bb4b784e62a.js.map

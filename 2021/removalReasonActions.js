@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/removalReasonActions.26717626f3a1a6b2d96e.js
-// Retrieved at 11/3/2021, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/removalReasonActions.1be038d40faa6b72d077.js
+// Retrieved at 11/3/2021, 2:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["removalReasonActions"], {
 		"./src/reddit/actions/bulkActions/index.ts": function(e, t, n) {
@@ -722,7 +722,7 @@
 							partialPostId: l
 						} = u ? u.params : null;
 					if (!l) return;
-					const b = Object(y.s)(l);
+					const b = Object(y.t)(l);
 					n(L({
 						moreCommentsId: c.id
 					}));
@@ -1777,7 +1777,7 @@
 								experimentName: r.G,
 								expEventOverride: t
 							});
-							return !!(Object(r.Ue)(n) ? void 0 : n)
+							return !!(Object(r.Ve)(n) ? void 0 : n)
 						})(n)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -2615,7 +2615,7 @@
 					if (e.platform.currentPage && e.platform.currentPage.urlParams && e.platform.currentPage.urlParams.partialPostId) {
 						const {
 							partialPostId: t
-						} = e.platform.currentPage.urlParams, n = Object(a.s)(t);
+						} = e.platform.currentPage.urlParams, n = Object(a.t)(t);
 						return Array.from(new Set(Object.keys(e.features.comments.models).filter(t => e.features.comments.models[t].postId === n && e.features.comments.models[t].author !== r.D).map(t => e.features.comments.models[t].author)))
 					}
 					return []
@@ -2773,4 +2773,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.26717626f3a1a6b2d96e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.1be038d40faa6b72d077.js.map

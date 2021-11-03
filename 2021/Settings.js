@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.f75a60592d9d54eabe2b.js
-// Retrieved at 11/3/2021, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.a12f87cb5c9e72f70a31.js
+// Retrieved at 11/3/2021, 2:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, n) {
@@ -2778,7 +2778,7 @@
 				R = n("./src/reddit/selectors/externalAccount.ts");
 			const U = e => async (t, n) => {
 				await t(Object(A.t)());
-				const f = [t(Object(P.x)(!0)), t(Object(p.a)())];
+				const f = [t(Object(P.s)()), t(Object(P.z)(!0)), t(Object(p.a)())];
 				n().economics.paymentSystems.status === L.a.NotFetched && f.push(t((() => async (e, t, {
 					apiContext: n
 				}) => {
@@ -5475,7 +5475,7 @@
 					hideNSFWPref: a.C
 				}),
 				c = Object(r.b)(i, e => ({
-					imageUpdateRequested: (t, n) => e(Object(o.z)(t, n))
+					imageUpdateRequested: (t, n) => e(Object(o.B)(t, n))
 				}));
 			t.a = c
 		},
@@ -12138,21 +12138,22 @@
 				isResponsiveSettingsEnabled: e,
 				prefs: {
 					autoplayVideo: t,
-					hideNSFW: n,
-					openPostInNewTab: s,
-					over18: a,
-					privateFeeds: i,
-					reduceAnimationsFromAwards: c,
-					rememberCommunitySort: l,
-					sort: d,
-					stylesEnabled: m,
-					useMarkdown: p,
-					layout: b,
-					rememberCommunityLayout: h
+					feedRecommendationsEnabled: n,
+					hideNSFW: s,
+					openPostInNewTab: a,
+					over18: i,
+					privateFeeds: c,
+					reduceAnimationsFromAwards: l,
+					rememberCommunitySort: d,
+					sort: m,
+					stylesEnabled: p,
+					useMarkdown: b,
+					layout: h,
+					rememberCommunityLayout: f
 				},
-				update: f
+				update: g
 			}) {
-				const g = Object(u.a)({
+				const v = Object(u.a)({
 					[Mr.a["m-responsive"]]: e
 				});
 				return o.a.createElement(Ye.a, null, o.a.createElement(Ke.b, {
@@ -12162,8 +12163,8 @@
 				})), o.a.createElement(Oe.a, null, r.fbt._("Content Preferences", null, {
 					hk: "76osn"
 				})), o.a.createElement(xe.p, {
-					on: a,
-					onClick: () => f(!a, "over18"),
+					on: i,
+					onClick: () => g(!i, "over18"),
 					label: r.fbt._("Adult content", null, {
 						hk: "4les43"
 					}),
@@ -12171,18 +12172,27 @@
 						hk: "Ni5mW"
 					})
 				}), o.a.createElement(xe.p, {
-					disabled: !a,
+					disabled: !i,
 					label: r.fbt._("Safe browsing mode", null, {
 						hk: "CeEkN"
 					}),
-					on: !!a && n,
-					onClick: () => f(!n, "hideNSFW"),
+					on: !!i && s,
+					onClick: () => g(!s, "hideNSFW"),
 					subtext: r.fbt._("Blur thumbnails and media preview for anything labeled NSFW (not safe for work)", null, {
 						hk: "403VoR"
 					})
 				}), o.a.createElement(xe.p, {
+					label: r.fbt._("Enable home feed recommendations", null, {
+						hk: "17H8xj"
+					}),
+					on: !!n,
+					onClick: () => g(!n, "feedRecommendationsEnabled"),
+					subtext: r.fbt._("Allow us to introduce recommended posts in your home feed.", null, {
+						hk: "EK7rr"
+					})
+				}), o.a.createElement(xe.p, {
 					on: t,
-					onClick: () => f(!t, "autoplayVideo"),
+					onClick: () => g(!t, "autoplayVideo"),
 					label: r.fbt._("Autoplay media", null, {
 						hk: "4huarG"
 					}),
@@ -12190,8 +12200,8 @@
 						hk: "1YYoIq"
 					})
 				}), o.a.createElement(xe.p, {
-					on: c,
-					onClick: () => f(!c, "reduceAnimationsFromAwards"),
+					on: l,
+					onClick: () => g(!l, "reduceAnimationsFromAwards"),
 					label: r.fbt._("Reduce Animations", null, {
 						hk: "329Lwa"
 					}),
@@ -12199,8 +12209,8 @@
 						hk: "1sut6Z"
 					})
 				}), o.a.createElement(xe.p, {
-					on: !!m,
-					onClick: () => f(!m, "stylesEnabled"),
+					on: !!p,
+					onClick: () => g(!p, "stylesEnabled"),
 					label: r.fbt._("Community themes", null, {
 						hk: "8TpCA"
 					}),
@@ -12208,17 +12218,17 @@
 						hk: "2EVyTQ"
 					})
 				}), o.a.createElement(xr, {
-					className: g,
+					className: v,
 					dropdownPrefix: "subreddit-sort-setting",
-					fullSort: d,
+					fullSort: m,
 					onChange: e => {
-						d !== e && f(e, "sort")
+						m !== e && g(e, "sort")
 					}
 				}), o.a.createElement(xe.p, {
-					className: g,
+					className: v,
 					indent: !0,
-					on: !!l,
-					onClick: () => f(!l, "rememberCommunitySort"),
+					on: !!d,
+					onClick: () => g(!d, "rememberCommunitySort"),
 					label: r.fbt._("Remember per community", null, {
 						hk: "44RHeL"
 					}),
@@ -12226,20 +12236,20 @@
 						hk: "2zgrQz"
 					})
 				}), o.a.createElement(Ar, {
-					className: g,
+					className: v,
 					dropdownPrefix: "subreddit-view-setting",
 					label: r.fbt._("Global content view", null, {
 						hk: "1tWTJK"
 					}),
-					layout: b,
-					onChange: e => f(e, "layout"),
+					layout: h,
+					onChange: e => g(e, "layout"),
 					subtext: r.fbt._("Choose how you would like content displayed in feeds. This control is also found above your feed.", null, {
 						hk: "1NyVGg"
 					})
 				}), o.a.createElement(xe.p, {
-					className: g,
-					on: !!h,
-					onClick: () => f(!h, "rememberCommunityLayout"),
+					className: v,
+					on: !!f,
+					onClick: () => g(!f, "rememberCommunityLayout"),
 					label: r.fbt._("Remember per community", null, {
 						hk: "42Ianh"
 					}),
@@ -12248,9 +12258,9 @@
 					}),
 					indent: !0
 				}), o.a.createElement(xe.p, {
-					className: g,
-					on: !!s,
-					onClick: () => f(!s, "openPostInNewTab"),
+					className: v,
+					on: !!a,
+					onClick: () => g(!a, "openPostInNewTab"),
 					label: r.fbt._("Open posts in new tab", null, {
 						hk: "eOvQi"
 					}),
@@ -12258,20 +12268,20 @@
 						hk: "l3HZX"
 					})
 				}), o.a.createElement(Oe.a, {
-					className: g
+					className: v
 				}, r.fbt._("Post Preferences", null, {
 					hk: "35wQ1I"
 				})), o.a.createElement(xe.p, {
-					className: g,
-					on: !!p,
-					onClick: () => f(!p, "useMarkdown"),
+					className: v,
+					on: !!b,
+					onClick: () => g(!b, "useMarkdown"),
 					label: r.fbt._("Default to markdown", null, {
 						hk: "1gcz1a"
 					}),
 					subtext: r.fbt._("When posting, your input will default to markdown text instead of fancy pants", null, {
 						hk: "3kF1IP"
 					})
-				}), i && o.a.createElement(o.a.Fragment, null, o.a.createElement(Oe.a, null, r.fbt._("RSS Feeds", null, {
+				}), c && o.a.createElement(o.a.Fragment, null, o.a.createElement(Oe.a, null, r.fbt._("RSS Feeds", null, {
 					hk: "2xkYfd"
 				})), o.a.createElement(xe.g, {
 					label: r.fbt._("List of your RSS feeds", null, {
@@ -13112,12 +13122,12 @@
 				}
 			}
 			const no = Object(a.b)(Hs, e => ({
-					imageDeleteRequested: t => e(Object(Es.y)(t)),
-					imagesUpdateRequested: (t, n) => e(Object(Es.z)(t, n)),
+					imageDeleteRequested: t => e(Object(Es.A)(t)),
+					imagesUpdateRequested: (t, n) => e(Object(Es.B)(t, n)),
 					onClickSnoovatar: () => e(Object(ks.b)({
 						clickSource: "profile_overview"
 					})),
-					save: (t, n) => e(Object(Es.E)(t, n)),
+					save: (t, n) => e(Object(Es.G)(t, n)),
 					toggleNSFWModal: () => e(Object(y.i)("ProfileForm_NSFWConfirmDialogID"))
 				}))(Object(O.c)(to)),
 				ro = Object(c.c)({
@@ -13671,7 +13681,7 @@
 				ga = Object(Ve.u)(),
 				va = Object(a.b)(fa, (e, t) => ({
 					changeTab: t => e(Object(i.b)(`/settings/${t}`)),
-					updatePrefs: t => e(Object(Es.F)(t)),
+					updatePrefs: t => e(Object(Es.H)(t)),
 					onPageViewed: () => e(Object(h.a)())
 				})),
 				_a = {
@@ -14188,7 +14198,7 @@
 			const a = e => Object(s.c)(e, {
 				experimentName: r.E,
 				experimentEligibilitySelector: () => Object(o.J)(e)
-			}) === r.Gc
+			}) === r.Hc
 		},
 		"./src/reddit/selectors/gold/productOffers.ts": function(e, t, n) {
 			"use strict";
@@ -14342,4 +14352,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.f75a60592d9d54eabe2b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.a12f87cb5c9e72f70a31.js.map

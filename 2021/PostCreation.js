@@ -1,7 +1,7 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.7eb4b244c05a5d64cae9.js
-// Retrieved at 11/3/2021, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.d94f6194ee064307d373.js
+// Retrieved at 11/3/2021, 2:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
-	["PostCreation", "ContributorRequestButton"], {
+	["PostCreation", "ContributorRequestButton", "FrontpageSidebar"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, n) {
 			e.exports = {
 				overlay: "_1DK52RbaamLOWw5UPaht_S",
@@ -1090,7 +1090,7 @@
 							partialPostId: m
 						} = u ? u.params : null;
 					if (!m) return;
-					const p = Object(x.s)(m);
+					const p = Object(x.t)(m);
 					n(M({
 						moreCommentsId: a.id
 					}));
@@ -2989,7 +2989,7 @@
 						e.type === s.H.BAD_CAPTCHA_ERROR ? t(ee()) : e.type === s.H.VALIDATION_ERROR ? t(X(e)) : e.type === s.H.SUBMIT_VALIDATION_ERROR ? t($(e)) : t(J(e))
 					}
 					const E = Object(K.n)(c.kind),
-						_ = C.ok && C.body && C.body.id && Object(O.s)(C.body.id),
+						_ = C.ok && C.body && C.body.id && Object(O.t)(C.body.id),
 						w = n();
 					A.v(w, E, _, e.correlationId)
 				}
@@ -8098,7 +8098,7 @@
 						subreddit: n
 					} = e, {
 						isSponsored: s
-					} = t, o = Object(U.a)(), a = Object(W.a)(m.Qc) === m.Vc.Enabled;
+					} = t, o = Object(U.a)(), a = Object(W.a)(m.Rc) === m.Wc.Enabled;
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return r.a.createElement(Q, {
 						nowrap: e.nowrap
 					}, r.a.createElement(Z, e));
@@ -23173,9 +23173,9 @@
 			var s = n("./src/reddit/constants/experiments.ts"),
 				o = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const r = e => Object(o.c)(e, {
-				experimentName: s.yd,
+				experimentName: s.zd,
 				experimentEligibilitySelector: o.a
-			}) === s.Dd.Enabled
+			}) === s.Ed.Enabled
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, n) {
 			"use strict";
@@ -23743,4 +23743,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.7eb4b244c05a5d64cae9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.d94f6194ee064307d373.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.a157d716534d8a8e3a06.js
-// Retrieved at 11/3/2021, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.c90622d8fad97bf900c8.js
+// Retrieved at 11/3/2021, 2:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -52,16 +52,16 @@
 			const p = Object(o.a)(e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.ud
+					experimentName: u.vd
 				});
-				return Object(u.Ue)(t) ? void 0 : t
+				return Object(u.Ve)(t) ? void 0 : t
 			}, e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.vd
+					experimentName: u.wd
 				});
-				return Object(u.Ue)(t) ? void 0 : t
-			}, (e, t) => e === u.xd.Enabled && t === u.xd.Enabled);
+				return Object(u.Ve)(t) ? void 0 : t
+			}, (e, t) => e === u.yd.Enabled && t === u.yd.Enabled);
 			var h = s("./src/config.ts");
 			var b = s("./src/reddit/selectors/user.ts");
 			const f = e => {
@@ -1078,17 +1078,17 @@
 					rootMargin: "2000px 0px 2000px 0px"
 				});
 				Object(i.a)(N, B, W.current);
-				const G = Object(a.a)(t);
+				const Y = Object(a.a)(t);
 				Object(r.useEffect)(() => {
-					if (void 0 !== G && G !== t) {
-						const e = t - G;
+					if (void 0 !== Y && Y !== t) {
+						const e = t - Y;
 						V.current ? (A.current(e), h && h()) : M.current += e
 					}
 					return () => {
 						clearTimeout(L.current), clearTimeout(D.current), clearTimeout(R.current)
 					}
 				}, [t]);
-				const Y = Object(r.useCallback)(() => y(!0), [y]),
+				const G = Object(r.useCallback)(() => y(!0), [y]),
 					K = 0 === I.length,
 					z = O || K,
 					Z = Object(r.useRef)(((e, t) => `${t}_${e}_count_anim`)(v, s));
@@ -1108,7 +1108,7 @@
 						"aria-hidden": !0,
 						className: l.a.digitDeltaWrapper,
 						key: t,
-						onTransitionEnd: Y,
+						onTransitionEnd: G,
 						style: w && I.length > 0 && !O ? {
 							transform: `translateY(-${C&&s.length>1?100:100*(s.length-1)}%)`,
 							transitionDuration: `${(C?500:750)/1e3}s`
@@ -2097,8 +2097,8 @@
 				H = s("./src/reddit/controls/InternalLink/index.tsx"),
 				B = s("./src/reddit/controls/Score/index.tsx"),
 				W = s("./src/reddit/icons/fonts/index.tsx"),
-				G = s("./src/reddit/helpers/styles/mixins/index.m.less"),
-				Y = s.n(G),
+				Y = s("./src/reddit/helpers/styles/mixins/index.m.less"),
+				G = s.n(Y),
 				K = s("./src/reddit/components/PublicAccessNetwork/ListingUnit/index.m.less"),
 				z = s.n(K);
 			const {
@@ -2134,7 +2134,7 @@
 				inRpanDUPreloadExperiment: S.b,
 				inRpanDuTargetingExperiment: S.c
 			}), (e, t) => ({
-				onHideRpanUnit: (s, r) => e(Object(h.B)(t.listingName, s, {
+				onHideRpanUnit: (s, r) => e(Object(h.D)(t.listingName, s, {
 					showToast: r.showToast
 				})),
 				openOverlay: t => e(Object(w.a)(t)),
@@ -2317,9 +2317,9 @@
 					} = this.props, t = e === C.g.Classic ? this.renderClassicContent() : e === C.g.Compact ? this.renderCompactContent() : this.renderLargeContent();
 					return n.a.createElement("div", {
 						className: Object(d.a)(z.a.container, {
-							[Y.a.largeAndMediumPostStyles]: e === C.g.Large || e === C.g.Medium,
-							[Y.a.classicPostStyles]: e === C.g.Classic,
-							[Y.a.compactPostStyles]: e === C.g.Compact,
+							[G.a.largeAndMediumPostStyles]: e === C.g.Large || e === C.g.Medium,
+							[G.a.classicPostStyles]: e === C.g.Classic,
+							[G.a.compactPostStyles]: e === C.g.Compact,
 							[z.a.large]: e === C.g.Large || e === C.g.Medium,
 							[z.a.classic]: e === C.g.Classic,
 							[z.a.compact]: e === C.g.Compact
@@ -2844,9 +2844,9 @@
 		"./src/reddit/components/PublicAccessNetwork/Theater/Overlay/refresh.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "c", (function() {
-				return G
-			})), s.d(t, "h", (function() {
 				return Y
+			})), s.d(t, "h", (function() {
+				return G
 			})), s.d(t, "g", (function() {
 				return K
 			})), s.d(t, "p", (function() {
@@ -2925,11 +2925,11 @@
 				B = s.n(H);
 			const {
 				fbt: W
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), G = ({
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), Y = ({
 				children: e
 			}) => n.a.createElement("div", {
 				className: B.a.broadcastStatus
-			}, e), Y = ({
+			}, e), G = ({
 				onClick: e
 			}) => n.a.createElement("button", {
 				onClick: e
@@ -3683,7 +3683,7 @@
 						}),
 						R = Object(_.a)(),
 						P = Object(i.useCallback)(() => {
-							R(Object(v.n)(a))
+							R(Object(v.s)(a))
 						}, [R, a]),
 						L = !e.isScoreHidden && f && s < w.a,
 						D = Object(g.a)(k);
@@ -3732,7 +3732,7 @@
 				const t = [];
 				for (const {
 						node: s
-					} of e) t.push(Object(r.e)(s));
+					} of e) t.push(Object(r.f)(s));
 				return t
 			}
 		},
@@ -5487,7 +5487,7 @@
 						postId: t
 					}) || Object(o.H)(e))(e, t),
 					experimentName: r.N
-				}) === r.Gc
+				}) === r.Hc
 			}
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, s) {
@@ -5618,4 +5618,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.a157d716534d8a8e3a06.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.c90622d8fad97bf900c8.js.map

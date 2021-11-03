@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AdminPanel.cf76955ba3f117e8ca22.js
-// Retrieved at 11/3/2021, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AdminPanel.97960c97e458700ab563.js
+// Retrieved at 11/3/2021, 2:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AdminPanel"], {
 		"./src/reddit/components/AdminPanel/CopyLink/index.m.less": function(e, t, n) {
@@ -707,7 +707,7 @@
 			var at = e => {
 					const t = ["control_1", "control_2", ...He.m[e.experimentName]];
 					if (!t) return null;
-					const n = He.Hc.has(e.experimentName);
+					const n = He.Ic.has(e.experimentName);
 					return a.a.createElement(G.a, {
 						className: e.className
 					}, a.a.createElement(Ye, null, `${e.experimentName}${n?"*":""}`), a.a.createElement(Ze, {
@@ -854,7 +854,7 @@
 					i = Object(s.useCallback)(() => {
 						const n = Date.now(),
 							s = t ? n - Number(t) * It : 0;
-						e(Object(At.F)({
+						e(Object(At.H)({
 							surveyLastSeenTime: s
 						}, !1)), Object(Tt.Ob)(s)
 					}, [e, t]);
@@ -914,7 +914,7 @@
 					r = Object(u.e)(Lt.b),
 					o = Object(u.d)(),
 					i = Object(s.useCallback)(() => {
-						o(Object(Dt.a)()), Object(Tt.Ob)(0), o(Object(At.F)({
+						o(Object(Dt.a)()), Object(Tt.Ob)(0), o(Object(At.H)({
 							surveyLastSeenTime: 0
 						}, !1))
 					}, [o]),
@@ -1698,4 +1698,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AdminPanel.cf76955ba3f117e8ca22.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AdminPanel.97960c97e458700ab563.js.map
