@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.17a54f030a472f5bc43b.js
-// Retrieved at 11/3/2021, 2:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.58ab64053137f979c124.js
+// Retrieved at 11/3/2021, 4:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -638,9 +638,9 @@
 				V = a("./src/reddit/helpers/frontpageCardPostCountExperiment.ts"),
 				H = a("./src/reddit/helpers/getTimeSortForListing/index.ts"),
 				K = a("./src/reddit/models/Toast/index.ts"),
-				z = a("./src/reddit/selectors/experiments/frontpageSignup.ts"),
-				G = a("./src/reddit/selectors/frontpage.ts"),
-				W = a("./src/reddit/selectors/goldPurchaseModals.ts"),
+				G = a("./src/reddit/selectors/experiments/frontpageSignup.ts"),
+				W = a("./src/reddit/selectors/frontpage.ts"),
+				z = a("./src/reddit/selectors/goldPurchaseModals.ts"),
 				J = a("./src/reddit/selectors/runTimeEnvVars.ts"),
 				Y = a("./src/lib/makeActionCreator/index.ts"),
 				Q = a("./src/lib/makeListingKey/index.ts"),
@@ -713,7 +713,7 @@
 				}, pe = (e, t) => async (a, s) => {
 					var c;
 					const n = s(),
-						o = Object(G.a)(n),
+						o = Object(W.a)(n),
 						{
 							sort: i = o
 						} = e.params,
@@ -721,7 +721,7 @@
 						m = n.listings.postOrder.ids[d],
 						u = n.listings.postOrder.api.error[d],
 						p = n.listings.postOrder.api.pending[d],
-						h = F.z in e.queryParams && e.queryParams[F.z].toUpperCase() || "",
+						h = F.A in e.queryParams && e.queryParams[F.A].toUpperCase() || "",
 						b = h in l.ec && l.ec[h];
 					if (p || m && !u && !t) return void(m && (a(D.m({
 						title: I.d()
@@ -746,8 +746,8 @@
 						experimentEligibilitySelector: O.a,
 						experimentName: "redesign_aa"
 					});
-					const v = Object(z.a)(n, {});
-					Object(z.e)(v) && a(Object(L.k)())
+					const v = Object(G.a)(n, {});
+					Object(G.e)(v) && a(Object(L.k)())
 				}, he = () => async (e, t) => {
 					var a, s;
 					const c = t();
@@ -764,19 +764,19 @@
 				}, fe = Object(Y.a)(ne.d), _e = e => async (t, a) => {
 					const s = a(),
 						c = s.platform.currentPage.routeMatch.match;
-					Object(W.o)(s) || Object(W.u)(s) || (e || t(fe()), await t(be(c, !0)))
+					Object(z.o)(s) || Object(z.u)(s) || (e || t(fe()), await t(be(c, !0)))
 				}, ge = Object(Y.a)(ne.g), ve = Object(Y.a)(ne.f), ye = Object(Y.a)(ne.e), Ee = e => async (t, a, {
 					gqlContext: s
 				}) => {
 					const c = a(),
-						o = Object(G.a)(c),
+						o = Object(W.a)(c),
 						{
 							sort: i = o
 						} = e,
 						d = c.platform.currentPage ? c.platform.currentPage.queryParams : {},
 						m = Object(Q.a)(q.b, i, d),
 						u = c.listings.postOrder.loadMore[m],
-						p = d[F.z] ? d[F.z].toUpperCase() : "",
+						p = d[F.A] ? d[F.A].toUpperCase() : "",
 						h = p in l.ec && l.ec[p];
 					if (u) {
 						const e = c.listings.postOrder.api.pending[m],
@@ -833,13 +833,13 @@
 					}
 				}, xe = e => async (t, a) => {
 					const s = a(),
-						c = Object(G.a)(s),
+						c = Object(W.a)(s),
 						{
 							sort: r = c
 						} = e,
 						n = s.platform.currentPage ? s.platform.currentPage.queryParams : {},
 						o = Object(Q.a)(q.b, r, n),
-						i = n[F.z] ? n[F.z].toUpperCase() : "",
+						i = n[F.A] ? n[F.A].toUpperCase() : "",
 						d = i in l.ec && l.ec[i],
 						m = Object(V.a)(s),
 						u = Object(V.b)(m);
@@ -1599,9 +1599,9 @@
 					}
 				}(t), {
 					legalCopy: K,
-					learnMoreText: z,
-					url: G
-				} = l.a, W = `${s.a.assetPath}/img/snoovatars/` + (t === _.a.CommunitySpacesControl ? "CommunitySpace_Control.png" : "CommunitySquare.png");
+					learnMoreText: G,
+					url: W
+				} = l.a, z = `${s.a.assetPath}/img/snoovatars/` + (t === _.a.CommunitySpacesControl ? "CommunitySpace_Control.png" : "CommunitySquare.png");
 				return n.a.createElement("div", {
 					className: Object(c.a)(v.a.container, a),
 					"data-testid": "avatar-listing-banner"
@@ -1614,7 +1614,7 @@
 					alt: P._("Continue to Avatar Community Spaces", null, {
 						hk: "3qCfDX"
 					}),
-					src: W
+					src: z
 				}), t === _.a.Achievements && n.a.createElement("div", {
 					className: v.a.achievementsBannerWrapper,
 					onClick: q
@@ -1642,9 +1642,9 @@
 				}, I ? H : V)), t === _.a.Achievements && n.a.createElement("div", {
 					className: v.a.legalTextContainer
 				}, K(), n.a.createElement("a", {
-					href: G,
+					href: W,
 					className: v.a.learnMoreLink
-				}, z())))
+				}, G())))
 			}
 		},
 		"./src/reddit/components/DiscoveryUnit/CommunityCrossPollination/ScrollChildFactory.tsx": function(e, t, a) {
@@ -3385,9 +3385,9 @@
 				V = a("./src/reddit/selectors/meta.ts"),
 				H = a("./src/reddit/selectors/PublicAccessNetwork/discoveryUnit.ts"),
 				K = a("./src/reddit/selectors/user.ts"),
-				z = a("./src/lib/constants/index.ts"),
-				G = a("./src/reddit/actions/publicAccessNetwork/constants.ts"),
-				W = a("./src/lib/objectSelector/index.ts"),
+				G = a("./src/lib/constants/index.ts"),
+				W = a("./src/reddit/actions/publicAccessNetwork/constants.ts"),
+				z = a("./src/lib/objectSelector/index.ts"),
 				J = a("./src/reddit/constants/page.ts"),
 				Y = a("./src/reddit/pages/Frontpage/index.m.less"),
 				Q = a.n(Y);
@@ -3404,7 +3404,7 @@
 			const {
 				fbt: $
 			} = a("./node_modules/fbt/lib/FbtPublic.js"), ee = Object(I.u)(), te = Object(l.c)({
-				queryParams: Object(W.a)((e, {
+				queryParams: Object(z.a)((e, {
 					location: t
 				}) => r()([...Object(m.a)(t.search)])),
 				sort: (e, {
@@ -3421,23 +3421,23 @@
 				isLoggedIn: K.K,
 				isPopular: I.E,
 				isRpanDuVisible: e => Object(H.a)(e, {
-					listingName: G.R
+					listingName: W.R
 				}),
 				rpanInjectionIndex: e => Object(H.b)(e, {
-					listingName: G.R
+					listingName: W.R
 				}),
 				layout: I.Q,
 				isInUISimplificationI18NExperiment: F.a
 			}), se = () => Object(l.a)(V.k, te, ae, e => Object(H.a)(e, {
-				listingName: G.R
+				listingName: W.R
 			}), e => Object(H.b)(e, {
-				listingName: G.R
+				listingName: W.R
 			}), e => e, L.a, (e, {
 				queryParams: t,
 				sort: a
 			}, s, c, r, n, o) => {
-				const i = w.z in t && t[w.z].toUpperCase(),
-					l = "string" == typeof i && i in z.ec ? z.ec[i] : z.fc,
+				const i = w.A in t && t[w.A].toUpperCase(),
+					l = "string" == typeof i && i in G.ec ? G.ec[i] : G.fc,
 					d = Object(p.a)(J.b, a, t),
 					m = e,
 					u = [];
@@ -3555,7 +3555,7 @@
 							desiredIndex: b,
 							layout: p,
 							listingKey: h,
-							listingName: G.R,
+							listingName: W.R,
 							sendEvent: f
 						});
 						w[t] = e
@@ -3992,4 +3992,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.17a54f030a472f5bc43b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.58ab64053137f979c124.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.725ffd8fc66c0cbd63c4.js
-// Retrieved at 11/3/2021, 2:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.f90b2c89a44defd4818b.js
+// Retrieved at 11/3/2021, 4:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -1849,7 +1849,7 @@
 					viewportDataLoaded: E.a,
 					pageReferrer: p.T,
 					postListPlaceholderComponent: () => g.a,
-					isNpsScrollSurveyEnabled: v.d
+					isNpsScrollSurveyEnabled: v.e
 				},
 				L = Object(i.c)(C),
 				O = e => ({
@@ -1874,7 +1874,7 @@
 					trackOnPostExitedViewport: (t, s, r, i, n) => {
 						e(d.O(t, r, i, n))
 					},
-					surveyTriggerScrollCounted: () => e(Object(u.i)())
+					surveyTriggerScrollCounted: () => e(Object(u.k)())
 				}),
 				j = e => Object(b.b)({
 					...e
@@ -2764,4 +2764,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.725ffd8fc66c0cbd63c4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.f90b2c89a44defd4818b.js.map

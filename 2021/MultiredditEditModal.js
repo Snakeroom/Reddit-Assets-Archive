@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MultiredditEditModal.f7a685010b8d329277a4.js
-// Retrieved at 11/3/2021, 2:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MultiredditEditModal.b67568f840b22e5ea224.js
+// Retrieved at 11/3/2021, 4:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MultiredditEditModal"], {
 		"./src/reddit/actions/multireddit/index.ts": function(e, t, i) {
@@ -17,13 +17,13 @@
 			})), i.d(t, "myMultiredditsReceived", (function() {
 				return U
 			})), i.d(t, "myMultiredditsRequested", (function() {
-				return z
+				return A
 			})), i.d(t, "createFailure", (function() {
 				return H
 			})), i.d(t, "createPending", (function() {
-				return A
-			})), i.d(t, "createSuccess", (function() {
 				return K
+			})), i.d(t, "createSuccess", (function() {
+				return z
 			})), i.d(t, "createRequested", (function() {
 				return Q
 			})), i.d(t, "reloadCurrentMultiredditFeedRequested", (function() {
@@ -213,7 +213,7 @@
 						...w.body,
 						...Object(v.a)(l, b, S)
 					}))
-				}, W = Object(l.a)(M.t), U = Object(l.a)(M.u), z = (e, t = !1) => async (i, r, {
+				}, W = Object(l.a)(M.t), U = Object(l.a)(M.u), A = (e, t = !1) => async (i, r, {
 					apiContext: s,
 					gqlContext: n
 				}) => {
@@ -235,7 +235,7 @@
 							multiredditsModelsState: d.multireddits.models
 						}))
 					}
-				}, H = Object(l.a)(M.e), A = Object(l.a)(M.f), K = Object(l.a)(M.g), Q = ({
+				}, H = Object(l.a)(M.e), K = Object(l.a)(M.f), z = Object(l.a)(M.g), Q = ({
 					description: e,
 					displayName: t,
 					shouldNavigate: i
@@ -245,7 +245,7 @@
 					const l = n(),
 						c = Object(I.k)(l);
 					if (!c) return;
-					s(A());
+					s(K());
 					const m = await ((e, t, i) => Object(f.a)(Object(h.a)(e, [x.a]), {
 						endpoint: Object(y.a)(`${e.apiUrl}/api/multi`),
 						data: {
@@ -262,7 +262,7 @@
 						const {
 							id: e
 						} = c;
-						if (await s(K({
+						if (await s(z({
 								multireddit: S(m.body.data),
 								multiredditsModelsState: l.multireddits.models,
 								userId: e
@@ -297,7 +297,7 @@
 							queryParams: x
 						} = o,
 						y = Object(c.a)(h, u, x),
-						O = b.z in x && x[b.z].toUpperCase() || "",
+						O = b.A in x && x[b.A].toUpperCase() || "",
 						g = a.ec[O] || !1,
 						j = Object(I.k)(r);
 					(f || j && j.displayText) && await e(Object(m.multiredditFeedRequested)(y, (f || j.displayText).toLowerCase(), p.toLowerCase(), {
@@ -680,7 +680,7 @@
 						g = f.listings.postOrder.ids[y],
 						v = f.listings.postOrder.api.error[y],
 						w = f.listings.postOrder.api.pending[y],
-						T = b.z in e.queryParams && e.queryParams[b.z].toUpperCase() || "",
+						T = b.A in e.queryParams && e.queryParams[b.A].toUpperCase() || "",
 						E = T in c.ec && c.ec[T];
 					if (w || g && !v && !t) return void(g && (i(u.m({
 						title: Object(_.f)(r(), m)
@@ -1519,4 +1519,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MultiredditEditModal.f7a685010b8d329277a4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MultiredditEditModal.b67568f840b22e5ea224.js.map

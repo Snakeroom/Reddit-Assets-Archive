@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.045f8254aeaf961aa76d.js
-// Retrieved at 11/3/2021, 2:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.cb772bfaa85f7b033800.js
+// Retrieved at 11/3/2021, 4:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments", "reddit-components-ContentGate"], {
 		"./node_modules/linkify-it/index.js": function(e, t, r) {
@@ -324,9 +324,9 @@
 			})), r.d(t, "profileCommentsLoaded", (function() {
 				return I
 			})), r.d(t, "profileCommentsFailed", (function() {
-				return T
-			})), r.d(t, "profileCommentsRequested", (function() {
 				return A
+			})), r.d(t, "profileCommentsRequested", (function() {
+				return T
 			})), r.d(t, "moreItemsPending", (function() {
 				return B
 			})), r.d(t, "moreItemsLoaded", (function() {
@@ -377,8 +377,8 @@
 				N = r("./src/reddit/actions/pages/profileComments/constants.ts");
 			const L = Object(i.a)(N.f),
 				I = Object(i.a)(N.e),
-				T = Object(i.a)(N.d),
-				A = e => async (t, r, n) => {
+				A = Object(i.a)(N.d),
+				T = e => async (t, r, n) => {
 					const {
 						queryParams: a,
 						params: s
@@ -410,7 +410,7 @@
 						key: w
 					}));
 					const S = await Object(D.a)("profileComments", () => O(n.apiContext(), y, E, Object(F.a)(r())));
-					if (!S.ok) return t(T({
+					if (!S.ok) return t(A({
 						account: S.body.data ? S.body.data.account : null,
 						error: S.body.reason ? {
 							type: S.body.reason
@@ -616,10 +616,10 @@
 				}),
 				L = r("./src/reddit/contexts/PageLayer/index.tsx"),
 				I = r("./src/reddit/controls/Button/index.tsx"),
-				T = r("./src/chat/controls/Svg/index.tsx");
+				A = r("./src/chat/controls/Svg/index.tsx");
 
-			function A() {
-				return (A = Object.assign || function(e) {
+			function T() {
+				return (T = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var r = arguments[t];
 						for (var n in r) Object.prototype.hasOwnProperty.call(r, n) && (e[n] = r[n])
@@ -627,7 +627,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var B = e => s.a.createElement(T.a, A({}, e, {
+			var B = e => s.a.createElement(A.a, T({}, e, {
 					viewBox: "-1 -1 21 21"
 				}), s.a.createElement("path", {
 					d: "M16.64,2.32a4.5,4.5,0,0,0-7,5.57L4.85,12.69,3.59,13.95h0L2.34,15.2a1,1,0,0,0,0,1.41l1.25,1.25h0l.42.42a1,1,0,0,0,1.41-1.41L5,16.46H5a.78.78,0,0,1,0-1.09.79.79,0,0,1,1.09,0h0l.42.42a1,1,0,0,0,1.41-1.41L7.52,14h0L7,13.4l4.1-4.1a4.5,4.5,0,0,0,5.57-7Zm-1.41,5a2.5,2.5,0,1,1,0-3.54A2.5,2.5,0,0,1,15.22,7.27Z"
@@ -1303,8 +1303,8 @@
 				L = r.n(N),
 				I = r("./src/lib/lessComponent.tsx");
 
-			function T() {
-				return (T = Object.assign || function(e) {
+			function A() {
+				return (A = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var r = arguments[t];
 						for (var n in r) Object.prototype.hasOwnProperty.call(r, n) && (e[n] = r[n])
@@ -1312,18 +1312,18 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const A = "ListingSort--SortPicker",
+			const T = "ListingSort--SortPicker",
 				B = Object(y.a)(I.a.wrapped(v.a, "Dropdown", L.a)),
 				R = I.a.wrapped(P.a, "ListingSortIcon", L.a),
 				U = (I.a.wrapped(O.b, "DropdownTriangle", L.a), I.a.div("Title", L.a)),
-				q = I.a.wrapped(e => a.a.createElement(C.b, T({}, e, {
+				q = I.a.wrapped(e => a.a.createElement(C.b, A({}, e, {
 					noHover: !0,
 					isSelected: !1
 				})), "Row", L.a),
 				H = ({
 					disabled: e,
 					...t
-				}) => a.a.createElement("div", T({}, t, {
+				}) => a.a.createElement("div", A({}, t, {
 					className: Object(o.a)(L.a.SortWrapper, t.className, {
 						[L.a.isDisabled]: e
 					})
@@ -1338,7 +1338,7 @@
 					isAwardListingExperimentEnabled: D.a,
 					isBestSortPopularEnabled: j.a,
 					user: z.k,
-					dropdownIsOpen: (e, t) => Object(F.b)(t.dropdownId || A)(e),
+					dropdownIsOpen: (e, t) => Object(F.b)(t.dropdownId || T)(e),
 					isPopularPage: d.E
 				}),
 				W = Object(s.b)(G, (e, {
@@ -1346,7 +1346,7 @@
 					pageLayer: r
 				}) => ({
 					onOpenDropdown: () => e(Object(f.h)({
-						tooltipId: t || A
+						tooltipId: t || T
 					}))
 				}));
 			var Z = I.a.wrapped(V(W(Object(c.c)(e => a.a.createElement("div", {
@@ -1359,14 +1359,14 @@
 				}, e.children || a.a.createElement(q, {
 					className: e.buttonClassName,
 					displayText: Object(k.a)(e.sort),
-					id: e.dropdownId || A,
+					id: e.dropdownId || T,
 					showDropdownTriangle: !0
 				}, a.a.createElement(R, {
 					sort: e.sort
-				}))), a.a.createElement(x.a.Consumer, null, t => a.a.createElement(B, T({
+				}))), a.a.createElement(x.a.Consumer, null, t => a.a.createElement(B, A({
 					className: e.dropdownClassName,
 					isOpen: e.dropdownIsOpen,
-					tooltipId: e.dropdownId || A
+					tooltipId: e.dropdownId || T
 				}, t, {
 					renderContentsHidden: !0
 				}), e.disabled ? a.a.createElement(M, null, g.fbt._("Coming soon", null, {
@@ -1868,7 +1868,7 @@
 						state: {
 							[w.b.FeedLoadReason]: w.a.SortChange
 						},
-						search: `${K.z}=${t}`
+						search: `${K.A}=${t}`
 					},
 					isSelected: e.timeSort === t,
 					onClick: () => {
@@ -1891,8 +1891,8 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const Te = new Set([h.V.CONTROVERSIAL, h.V.TOP]),
-				Ae = new Set([h.V.CONTROVERSIAL, h.V.RISING]),
+			const Ae = new Set([h.V.CONTROVERSIAL, h.V.TOP]),
+				Te = new Set([h.V.CONTROVERSIAL, h.V.RISING]),
 				Be = "ListingSort--Overflow",
 				Re = Object(d.u)({
 					isFrontpage: d.z,
@@ -1980,7 +1980,7 @@
 					return !n.startsWith("en") && (r ? e === h.V.AWARDED && (t === h.V.HOT || t === h.V.TOP) : e === h.V.BEST && t === h.V.TOP)
 				}
 				isOverflowSort(e) {
-					return Ae.has(e) || this.isLocaleDependentSortOverflow(e)
+					return Te.has(e) || this.isLocaleDependentSortOverflow(e)
 				}
 				render() {
 					const {
@@ -1990,7 +1990,7 @@
 						sort: n,
 						sortOptions: s,
 						timeSort: i
-					} = this.props, l = !t && Te.has(n), c = Ae.has(n), d = s.filter(e => !this.isOverflowSort(e)), u = s.filter(e => this.isOverflowSort(e) && e !== n);
+					} = this.props, l = !t && Ae.has(n), c = Te.has(n), d = s.filter(e => !this.isOverflowSort(e)), u = s.filter(e => this.isOverflowSort(e) && e !== n);
 					return a.a.createElement(a.a.Fragment, null, a.a.createElement(Z, Ie({}, this.props, {
 						buttonClassName: Le.a.DropdownButton,
 						className: Object(o.a)(Le.a.SortDropdown, e),
@@ -2474,7 +2474,7 @@
 					currentProfileName: O.i,
 					pageLayer: e => e
 				}),
-				T = Object(l.c)({
+				A = Object(l.c)({
 					comment: (e, {
 						itemId: t
 					}) => Object(D.b)(e, {
@@ -2491,7 +2491,7 @@
 						})(e, t)
 					}
 				});
-			var A = I(Object(i.b)(T)(e => {
+			var T = I(Object(i.b)(A)(e => {
 				const {
 					comment: t,
 					itemId: r,
@@ -2617,7 +2617,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const oe = e => o.a.createElement(A, se({}, e, {
+			const oe = e => o.a.createElement(T, se({}, e, {
 					allowModToolsUnderComments: !0
 				})),
 				ie = (e => Object(G.c)(te(ae(e))))(R.a);
@@ -2751,4 +2751,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.045f8254aeaf961aa76d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.cb772bfaa85f7b033800.js.map

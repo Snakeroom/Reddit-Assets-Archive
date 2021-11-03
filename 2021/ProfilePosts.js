@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePosts.2b40a6ea647245d104f8.js
-// Retrieved at 11/3/2021, 2:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePosts.2e50ceeb0dccfc4b3cf4.js
+// Retrieved at 11/3/2021, 4:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePosts", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -2831,7 +2831,7 @@
 						state: {
 							[y.b.FeedLoadReason]: y.a.SortChange
 						},
-						search: `${Y.z}=${t}`
+						search: `${Y.A}=${t}`
 					},
 					isSelected: e.timeSort === t,
 					onClick: () => {
@@ -6305,12 +6305,12 @@
 						rtJsonElementProps: o
 					});
 					switch (s) {
-						case b.xe.SmIcon:
+						case b.Ce.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: o
 							});
-						case b.xe.SmIconHc:
+						case b.Ce.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -6889,7 +6889,7 @@
 					viewportDataLoaded: E.a,
 					pageReferrer: p.T,
 					postListPlaceholderComponent: () => f.a,
-					isNpsScrollSurveyEnabled: _.d
+					isNpsScrollSurveyEnabled: _.e
 				},
 				C = Object(r.c)(O),
 				j = e => ({
@@ -6914,7 +6914,7 @@
 					trackOnPostExitedViewport: (t, n, s, r, o) => {
 						e(d.O(t, s, r, o))
 					},
-					surveyTriggerScrollCounted: () => e(Object(u.i)())
+					surveyTriggerScrollCounted: () => e(Object(u.k)())
 				}),
 				S = e => Object(h.b)({
 					...e
@@ -7555,7 +7555,7 @@
 						experimentEligibilitySelector: o.K,
 						experimentName: s.mc
 					});
-					return !(!t || Object(s.Ve)(t))
+					return !(!t || Object(s.af)(t))
 				},
 				a = e => {
 					return Object(r.c)(e, {
@@ -7693,12 +7693,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.re
+						experimentName: s.we
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.xe.SmIcon || t === s.xe.SmIconHc
+					return t === s.Ce.SmIcon || t === s.Ce.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -7745,4 +7745,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.2b40a6ea647245d104f8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.2e50ceeb0dccfc4b3cf4.js.map

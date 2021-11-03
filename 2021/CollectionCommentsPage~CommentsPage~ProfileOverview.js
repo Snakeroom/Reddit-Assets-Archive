@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileOverview.970752af2140267a3351.js
-// Retrieved at 11/3/2021, 2:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileOverview.c2d5b37a51b10e4c0fac.js
+// Retrieved at 11/3/2021, 4:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ProfileOverview"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -668,9 +668,9 @@
 				T = s("./src/reddit/hooks/useTracking.ts"),
 				B = s("./src/reddit/icons/fonts/index.tsx"),
 				N = s("./src/reddit/components/OneFeed/Footer.m.less"),
-				V = s.n(N);
+				R = s.n(N);
 			const {
-				fbt: R
+				fbt: V
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), q = async ({
 				dispatch: e,
 				gqlContext: t,
@@ -691,42 +691,42 @@
 				seeLessLikeThisCommunity: s,
 				seeLessOfThisPostClick: o
 			}) => m.a.createElement("div", {
-				className: V.a.SeeFewerPostsView
+				className: R.a.SeeFewerPostsView
 			}, m.a.createElement("div", {
-				className: V.a.Title
-			}, R._("What would you like to see less of?", null, {
+				className: R.a.Title
+			}, V._("What would you like to see less of?", null, {
 				hk: "mw3bZ"
 			})), m.a.createElement("div", null, m.a.createElement("button", {
-				className: V.a.Button,
+				className: R.a.Button,
 				onClick: o
-			}, R._("This individual post", null, {
+			}, V._("This individual post", null, {
 				hk: "103pQH"
 			}))), m.a.createElement("hr", {
-				className: V.a.Divider
+				className: R.a.Divider
 			}), m.a.createElement("div", null, m.a.createElement("button", {
-				className: V.a.Button,
+				className: R.a.Button,
 				onClick: t
-			}, R._("Posts from this community", null, {
+			}, V._("Posts from this community", null, {
 				hk: "RacDp"
 			}))), !!e && m.a.createElement(m.a.Fragment, null, m.a.createElement("hr", {
-				className: V.a.Divider
+				className: R.a.Divider
 			}), m.a.createElement("div", null, m.a.createElement("button", {
-				className: V.a.Button,
+				className: R.a.Button,
 				onClick: s
-			}, R._("Posts from communities similar to {subreddit name}", [R._param("subreddit name", e)], {
+			}, V._("Posts from communities similar to {subreddit name}", [V._param("subreddit name", e)], {
 				hk: "3pCPAD"
 			}))))), Z = () => m.a.createElement("div", {
-				className: V.a.ThankYouView
+				className: R.a.ThankYouView
 			}, m.a.createElement("div", {
-				className: V.a.Title
+				className: R.a.Title
 			}, m.a.createElement(B.a, {
 				name: "checkmark",
-				className: V.a.Icon
-			}), R._("Thanks for letting us know!", null, {
+				className: R.a.Icon
+			}), V._("Thanks for letting us know!", null, {
 				hk: "2VBsFC"
 			})), m.a.createElement("div", {
-				className: V.a.Subtitle
-			}, R._("Your feedback improves your feed.", null, {
+				className: R.a.Subtitle
+			}, V._("Your feedback improves your feed.", null, {
 				hk: "2WLaqS"
 			})));
 			var U = Object(D.b)(({
@@ -778,10 +778,10 @@
 							}), n.current = !0, r(Object(z.m)(p)))
 						}, [i, e, p, h, r, d]);
 					return c && c !== j.a.None ? m.a.createElement("div", {
-						className: Object(g.a)(V.a.Footer, {
-							[V.a.ClassicLayout]: t === C.g.Classic,
-							[V.a.CompactLayout]: t === C.g.Compact,
-							[V.a.LargeLayout]: t === C.g.Large
+						className: Object(g.a)(R.a.Footer, {
+							[R.a.ClassicLayout]: t === C.g.Classic,
+							[R.a.CompactLayout]: t === C.g.Compact,
+							[R.a.LargeLayout]: t === C.g.Large
 						})
 					}, c === j.a.SeeFewerPostsView && m.a.createElement(M, {
 						displayText: _,
@@ -1054,14 +1054,14 @@
 						const T = ye(e, o, s, b, g, x, this.props, t, this.props.hostPostData),
 							B = xe(e, o, this.props, t, y),
 							N = ve(e, this.props, c),
-							V = L.media && L.media.type === oe.o.EMBED ? L.media.provider : null,
-							R = u && !A.isSponsored,
+							R = L.media && L.media.type === oe.o.EMBED ? L.media.provider : null,
+							V = u && !A.isSponsored,
 							q = p && !A.isSponsored && !A.isScoreHidden,
 							M = !!(null == A ? void 0 : A.recommendationContext);
 						P = {
 							estHeight: Object(te.c)(A, o),
 							id: e,
-							isFocusable: !(!L.media || !(o === C.g.Large || o === C.g.Classic && Object(oe.H)(L.media))) && (oe.d.has(L.media.type) && (!V || !oe.s.has(V)) && !L.isSpoiler),
+							isFocusable: !(!L.media || !(o === C.g.Large || o === C.g.Classic && Object(oe.H)(L.media))) && (oe.d.has(L.media.type) && (!R || !oe.s.has(R)) && !L.isSpoiler),
 							trackOnEnteredViewport: T,
 							trackOnExitedViewport: B,
 							render: ({
@@ -1082,7 +1082,7 @@
 								forceLoadMedia: C,
 								hostPostData: r,
 								inSubredditOrProfile: O,
-								isCommentCountAnimationEnabled: R,
+								isCommentCountAnimationEnabled: V,
 								isCommentPermalink: n,
 								isCommentsPage: a,
 								isCountAnimShadowTestEnabled: h,
@@ -1282,14 +1282,14 @@
 				shouldShowSubscribeButton: T,
 				showCornerOutboundLink: B,
 				showSubreddit: N,
-				showSubredditIcon: V,
-				subredditOrProfile: R,
+				showSubredditIcon: R,
+				subredditOrProfile: V,
 				isFollowed: q,
 				shouldShowFollowButton: M,
 				onFollowPostClick: Z
 			}) => {
 				const U = i || L,
-					H = R && Object(k.h)(R),
+					H = V && Object(k.h)(V),
 					K = Object(n.e)(e => {
 						if (!H) return !0;
 						const t = Object(E.tb)(e, I.author || "");
@@ -1297,15 +1297,15 @@
 					});
 				return r.a.createElement("div", {
 					className: Object(a.a)(w.a.container, e)
-				}, N && R && r.a.createElement("div", {
+				}, N && V && r.a.createElement("div", {
 					className: w.a.subredditIconWrapper
 				}, r.a.createElement(h.a, {
 					"data-click-id": "subreddit",
-					to: R.url
-				}, V && r.a.createElement(p.b, {
+					to: V.url
+				}, R && r.a.createElement(p.b, {
 					className: Object(a.a)(w.a.subredditIcon, C),
 					shouldHideNsfwIcon: F,
-					subredditOrProfile: R
+					subredditOrProfile: V
 				}))), r.a.createElement("div", {
 					className: w.a.everythingElseWrapper
 				}, N && r.a.createElement(d.h, {
@@ -1318,10 +1318,10 @@
 					tooltipType: A ? m.c.Lightbox : void 0,
 					post: I,
 					showSub: N,
-					subredditOrProfile: R
+					subredditOrProfile: V
 				}), r.a.createElement(u.a, {
 					className: w.a.postBadges,
-					displayText: R ? R.displayText : null,
+					displayText: V ? V.displayText : null,
 					inSubredditOrProfile: D,
 					isCompactPinnedPost: O,
 					post: I,
@@ -1330,11 +1330,11 @@
 					isPostDetail: P,
 					thing: I,
 					tooltipType: A ? m.c.Lightbox : void 0
-				})), R && K && N && T && !S && r.a.createElement(_.a, {
+				})), V && K && N && T && !S && r.a.createElement(_.a, {
 					className: w.a.SubscribeButton,
 					getEventFactory: e => Object(y.i)(I.id, e ? "unsubscribe" : "subscribe", "post", z, j),
 					identifier: {
-						name: R.name,
+						name: V.name,
 						type: H ? b.a.PROFILE : b.a.SUBREDDIT
 					},
 					postId: I.id,
@@ -1414,7 +1414,7 @@
 					viewportDataLoaded: k.a,
 					pageReferrer: p.T,
 					postListPlaceholderComponent: () => b.a,
-					isNpsScrollSurveyEnabled: f.d
+					isNpsScrollSurveyEnabled: f.e
 				},
 				j = Object(i.c)(w),
 				C = e => ({
@@ -1439,7 +1439,7 @@
 					trackOnPostExitedViewport: (t, s, o, i, r) => {
 						e(d.O(t, o, i, r))
 					},
-					surveyTriggerScrollCounted: () => e(Object(u.i)())
+					surveyTriggerScrollCounted: () => e(Object(u.k)())
 				}),
 				D = e => Object(h.b)({
 					...e
@@ -1517,7 +1517,7 @@
 					experimentEligibilitySelector: i.a,
 					experimentName: o.fc
 				});
-				return !(!t || Object(o.Ve)(t))
+				return !(!t || Object(o.af)(t))
 			}
 		},
 		"./src/reddit/selectors/experiments/signupUpsellExperiment.ts": function(e, t, s) {
@@ -1680,7 +1680,7 @@
 				n = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const a = e => {
 					const t = Object(n.a)(e);
-					return Boolean(t) && !Object(i.Ve)(t)
+					return Boolean(t) && !Object(i.af)(t)
 				},
 				c = Object(o.a)(a, r.d, (e, t) => e && !t)
 		},
@@ -1692,4 +1692,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileOverview.970752af2140267a3351.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileOverview.c2d5b37a51b10e4c0fac.js.map

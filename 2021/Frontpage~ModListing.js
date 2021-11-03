@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~ModListing.4450c81ee1591d0b723c.js
-// Retrieved at 11/3/2021, 2:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~ModListing.ce8f8e549b5fc679b778.js
+// Retrieved at 11/3/2021, 4:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~ModListing"], {
 		"./src/reddit/actions/focusedVerticals/index.ts": function(e, t, s) {
@@ -653,7 +653,7 @@
 					noHover: !0,
 					isSelected: !1
 				})), "Row", D.a),
-				z = ({
+				U = ({
 					disabled: e,
 					...t
 				}) => r.a.createElement("div", V({}, t, {
@@ -661,7 +661,7 @@
 						[D.a.isDisabled]: e
 					})
 				})),
-				U = R.a.div("DropdownRowDisabled", D.a),
+				z = R.a.div("DropdownRowDisabled", D.a),
 				K = Object(l.u)({
 					isFrontpage: l.z,
 					isProfilePage: l.I,
@@ -687,7 +687,7 @@
 					onClick: e.onOpenDropdown
 				}, !1 !== e.showTitle && r.a.createElement(H, null, y.fbt._("Sort", null, {
 					hk: "2BfINq"
-				})), r.a.createElement(z, {
+				})), r.a.createElement(U, {
 					disabled: e.disabled
 				}, e.children || r.a.createElement(M, {
 					className: e.buttonClassName,
@@ -702,7 +702,7 @@
 					tooltipId: e.dropdownId || A
 				}, t, {
 					renderContentsHidden: !0
-				}), e.disabled ? r.a.createElement(U, null, y.fbt._("Coming soon", null, {
+				}), e.disabled ? r.a.createElement(z, null, y.fbt._("Coming soon", null, {
 					hk: "taPqm"
 				})) : (e.sortOptions || ((e, t, s, n, r) => {
 					const o = [b.V.HOT, b.V.NEW, b.V.TOP, b.V.RISING];
@@ -941,7 +941,7 @@
 				return r.a.createElement("div", {
 					className: e.className,
 					onClick: e.onOpenDropdown
-				}, r.a.createElement(z, {
+				}, r.a.createElement(U, {
 					className: e.wrapperClassName,
 					disabled: e.disabled
 				}, r.a.createElement(M, {
@@ -1112,7 +1112,7 @@
 					return r.a.createElement(r.a.Fragment, null, r.a.createElement("div", {
 						className: Object(a.a)(pe.a.countrySort, e.className),
 						onClick: () => e.dropdownIsOpen ? e.onCloseDropdown(be) : e.onOpenDropdown(be)
-					}, r.a.createElement(z, {
+					}, r.a.createElement(U, {
 						className: e.wrapperClassName,
 						disabled: e.disabled
 					}, r.a.createElement(M, {
@@ -1180,7 +1180,7 @@
 				}))(Object(d.c)(e => r.a.createElement(ke, {
 					className: e.className,
 					onClick: e.onOpenDropdown
-				}, r.a.createElement(z, {
+				}, r.a.createElement(U, {
 					className: e.wrapperClassName,
 					disabled: !1
 				}, r.a.createElement(M, {
@@ -1201,7 +1201,7 @@
 						state: {
 							[S.b.FeedLoadReason]: S.a.SortChange
 						},
-						search: `${Y.z}=${t}`
+						search: `${Y.A}=${t}`
 					},
 					isSelected: e.timeSort === t,
 					onClick: () => {
@@ -1361,9 +1361,9 @@
 					}))))
 				}
 			}
-			var ze = Be(Object(o.b)(He)(Object(d.c)(Me))),
-				Ue = s("./src/reddit/components/GeneralCleanup/SortViewBar/index.m.less"),
-				Ke = s.n(Ue);
+			var Ue = Be(Object(o.b)(He)(Object(d.c)(Me))),
+				ze = s("./src/reddit/components/GeneralCleanup/SortViewBar/index.m.less"),
+				Ke = s.n(ze);
 			const Ge = Object(l.u)({
 					isProfilePage: l.I,
 					pageLayer: e => e
@@ -1412,7 +1412,7 @@
 						className: Object(a.a)(Ke.a.Container, t),
 						onBlur: this.blurListingBroadcast,
 						onFocus: this.focusListingBroadcast
-					}, r.a.createElement(ze, {
+					}, r.a.createElement(Ue, {
 						baseUrl: e,
 						disabled: n,
 						geopopularSort: s,
@@ -1592,7 +1592,7 @@
 				} catch (a) {
 					e(Object(k.d)())
 				}
-			}, z = ({
+			}, U = ({
 				displayText: e,
 				seeLessFromThisCommunity: t,
 				seeLessLikeThisCommunity: s,
@@ -1622,7 +1622,7 @@
 				onClick: s
 			}, H._("Posts from communities similar to {subreddit name}", [H._param("subreddit name", e)], {
 				hk: "3pCPAD"
-			}))))), U = () => p.a.createElement("div", {
+			}))))), z = () => p.a.createElement("div", {
 				className: B.a.ThankYouView
 			}, p.a.createElement("div", {
 				className: B.a.Title
@@ -1690,12 +1690,12 @@
 							[B.a.CompactLayout]: t === E.g.Compact,
 							[B.a.LargeLayout]: t === E.g.Large
 						})
-					}, c === x.a.SeeFewerPostsView && p.a.createElement(z, {
+					}, c === x.a.SeeFewerPostsView && p.a.createElement(U, {
 						displayText: h,
 						seeLessFromThisCommunity: y,
 						seeLessLikeThisCommunity: w,
 						seeLessOfThisPostClick: g
-					}), c === x.a.ThankYouView && p.a.createElement(U, null)) : null
+					}), c === x.a.ThankYouView && p.a.createElement(z, null)) : null
 				}),
 				G = s("./src/reddit/components/PostList/LoadMore.tsx"),
 				q = s("./src/reddit/components/PostList/SomethingWrong.tsx"),
@@ -1964,7 +1964,7 @@
 							B = T.media && T.media.type === ne.o.EMBED ? T.media.provider : null,
 							H = u && !L.isSponsored,
 							M = m && !L.isSponsored && !L.isScoreHidden,
-							z = !!(null == L ? void 0 : L.recommendationContext);
+							U = !!(null == L ? void 0 : L.recommendationContext);
 						N = {
 							estHeight: Object(te.c)(L, n),
 							id: e,
@@ -2013,7 +2013,7 @@
 								scrollerItemRef: C,
 								sendEvent: this.props.sendEvent,
 								shouldHideFlair: v
-							}), z && p.a.createElement(K, {
+							}), U && p.a.createElement(K, {
 								post: T,
 								layout: n
 							}))
@@ -2316,7 +2316,7 @@
 					viewportDataLoaded: C.a,
 					pageReferrer: m.T,
 					postListPlaceholderComponent: () => g.a,
-					isNpsScrollSurveyEnabled: y.d
+					isNpsScrollSurveyEnabled: y.e
 				},
 				x = Object(r.c)(k),
 				E = e => ({
@@ -2341,7 +2341,7 @@
 					trackOnPostExitedViewport: (t, s, n, r, o) => {
 						e(d.O(t, n, r, o))
 					},
-					surveyTriggerScrollCounted: () => e(Object(u.i)())
+					surveyTriggerScrollCounted: () => e(Object(u.k)())
 				}),
 				j = e => Object(b.b)({
 					...e
@@ -2654,7 +2654,7 @@
 						experimentEligibilitySelector: o.K,
 						experimentName: n.mc
 					});
-					return !(!t || Object(n.Ve)(t))
+					return !(!t || Object(n.af)(t))
 				},
 				i = e => {
 					return Object(r.c)(e, {
@@ -2777,4 +2777,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing.4450c81ee1591d0b723c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing.ce8f8e549b5fc679b778.js.map
