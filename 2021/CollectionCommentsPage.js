@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.a8821173a22a5379a73d.js
-// Retrieved at 11/1/2021, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.3f8804ae2a45b87bc638.js
+// Retrieved at 11/3/2021, 11:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -197,7 +197,7 @@
 							r = Object(i.c)(s.title, n.name).toString();
 						return Object(a.a)(r, f.c, o.hb)
 					})(s(), P) || Object(i.d)();
-					t(m.l({
+					t(m.m({
 						title: L
 					}));
 					const R = s().posts.models[g];
@@ -222,7 +222,7 @@
 						collectionId: e
 					});
 					const l = await j(a.apiContext(), e, t, s, o);
-					if (n(Object(m.m)(l.status)), l.ok) {
+					if (n(Object(m.n)(l.status)), l.ok) {
 						if (!(t = t || l.body.collections[e].primaryPostId)) return;
 						const s = Object(_.a)(l.body, t, c);
 						n(q({
@@ -278,7 +278,7 @@
 						e && e.numComments && e.numComments > U.MIN_NUM_COMMENTS_TO_TRUNCATE && (P.truncate = U.NUM_COMMENTS_TRUNCATE)
 					}
 					let k, w = await Object(L.a)("comments", () => j(u.apiContext(), e, t, s, P));
-					if (i(Object(m.m)(w.status)), w.ok && (t = t || w.body.collections[e].primaryPostId)) {
+					if (i(Object(m.n)(w.status)), w.ok && (t = t || w.body.collections[e].primaryPostId)) {
 						const e = Object.keys(w.body.posts).filter(e => !!w.body.posts[e].isMeta),
 							s = Object(B.H)(a(), {
 								postId: t
@@ -322,7 +322,7 @@
 						}))
 					} else x && (i(Object(l.subredditPending)({
 						key: h
-					})), w = await Object(L.a)("subreddit", () => Object(I.a)(u.apiContext(), x, {})), i(Object(m.m)(w.status))), i(Object(l.handleSubredditPageApiError)(w, x)), i(G({
+					})), w = await Object(L.a)("subreddit", () => Object(I.a)(u.apiContext(), x, {})), i(Object(m.n)(w.status))), i(Object(l.handleSubredditPageApiError)(w, x)), i(G({
 						error: w.error,
 						key: h,
 						...w.body
@@ -1028,7 +1028,7 @@
 							});
 							0
 						}
-						t(Object(_.p)()), t(L.l({
+						t(Object(_.p)()), t(L.m({
 							title: r
 						}));
 						const c = s().posts.instances[l] ? e.queryParams.instanceId : v.postId;
@@ -1038,7 +1038,7 @@
 							});
 							await Promise.all(e.map(e => t(n.c(e))))
 						}
-					} else t(L.l({
+					} else t(L.m({
 						title: I.d()
 					}));
 					const {
@@ -1105,7 +1105,7 @@
 						}) || null,
 						[B, D] = await Promise.all([M, F]);
 					let V;
-					if (n(Object(L.m)(B.status)), B.ok) {
+					if (n(Object(L.n)(B.status)), B.ok) {
 						const t = Object.keys(B.body.posts).filter(e => !!B.body.posts[e].isMeta),
 							s = B.body.posts[e];
 						if (t.length) {
@@ -1179,7 +1179,7 @@
 						let e;
 						m && (n(Object(x.subredditPending)({
 							key: l
-						})), e = await Object(Ce.a)("subreddit", () => Object(E.a)(i.apiContext(), m, {})), n(Object(L.m)(e.status)), n(Object(x.handleSubredditPageApiError)(e, m))), n(ht({
+						})), e = await Object(Ce.a)("subreddit", () => Object(E.a)(i.apiContext(), m, {})), n(Object(L.n)(e.status)), n(Object(x.handleSubredditPageApiError)(e, m))), n(ht({
 							error: B.error,
 							key: l,
 							...e ? e.body : B.body
@@ -1193,7 +1193,7 @@
 						l = Object(y.a)(r.apiContext(), e, t, s, Object(Y.a)(a), ot(a)),
 						m = d && c && Object(P.d)(r.gqlContext(), Object(q.e)(c)) || null,
 						[p, u] = await Promise.all([l, m]);
-					if (o(Object(L.m)(p.status)), p.ok) {
+					if (o(Object(L.n)(p.status)), p.ok) {
 						if (u && u.ok) {
 							const {
 								data: e
@@ -6392,8 +6392,8 @@
 			t.default = Object(x.a)(e => {
 				const {
 					state: t
-				} = e.location, s = i()(t, p.a.IsOverlay, !1), o = i()(t, p.a.CloseLocation, null), r = i()(t, p.a.ScrollOnLoad, !1);
-				r && Object(h.c)(p.a.ScrollOnLoad);
+				} = e.location, s = i()(t, p.b.IsOverlay, !1), o = i()(t, p.b.CloseLocation, null), r = i()(t, p.b.ScrollOnLoad, !1);
+				r && Object(h.c)(p.b.ScrollOnLoad);
 				const a = e.match.params,
 					{
 						partialCommentId: c,
@@ -6734,8 +6734,8 @@
 				Ct = e => {
 					const {
 						state: t
-					} = e.location, s = a()(t, U.a.IsOverlay, !1), o = a()(t, U.a.CloseLocation, null), n = a()(t, U.a.ScrollOnLoad, !1);
-					n && Object(Ye.c)(U.a.ScrollOnLoad);
+					} = e.location, s = a()(t, U.b.IsOverlay, !1), o = a()(t, U.b.CloseLocation, null), n = a()(t, U.b.ScrollOnLoad, !1);
+					n && Object(Ye.c)(U.b.ScrollOnLoad);
 					const {
 						partialCommentId: r,
 						partialPostId: i,
@@ -7702,4 +7702,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.a8821173a22a5379a73d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.3f8804ae2a45b87bc638.js.map

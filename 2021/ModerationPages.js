@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.a4190cb274f4201532f4.js
-// Retrieved at 11/1/2021, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.b2af506957e2ce33d0b6.js
+// Retrieved at 11/3/2021, 11:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -934,7 +934,7 @@
 					} else J && k ? await z(k)(t, s, r) : ee && oe ? await Object(w.e)(oe)(t, s, r) : Y && oe ? await Promise.all([z(k, oe)(t, s, r), Object(V.g)(oe, u.a.communitySettings)(t, s, r), Object(D.b)(oe)(t, s, r)]) : Q || X ? await z(k, S)(t, s, r) : Z && oe ? await Object(d.i)({
 						subredditId: oe
 					})(t, s, r) : $ && k ? await Object(g.eventPostsRequested)(k)(t, s, r) : z && await z(fe, S)(t, s, r);
-					k && oe && !q.subreddits.rules[oe] && await A.o(k)(t, s, r), t(M.l({
+					k && oe && !q.subreddits.rules[oe] && await A.o(k)(t, s, r), t(M.m({
 						title: ae
 					}))
 				}
@@ -22250,4 +22250,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.a4190cb274f4201532f4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.b2af506957e2ce33d0b6.js.map

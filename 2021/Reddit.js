@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.a56159b791609849c95f.js
-// Retrieved at 11/3/2021, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.59b614420f03c1db66e7.js
+// Retrieved at 11/3/2021, 11:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -2990,7 +2990,7 @@
 				a = n("./src/reddit/selectors/user.ts"),
 				i = n("./src/reddit/actions/login.ts");
 			t.a = () => async (e, t) => {
-				e(Object(o.l)({
+				e(Object(o.m)({
 					title: Object(s.a)()
 				})), await e(Object(r.t)()), Object(a.K)(t()) || e(Object(i.i)())
 			}
@@ -3008,7 +3008,7 @@
 				const n = t(),
 					l = Object(c.K)(n),
 					d = Object(c.H)(n);
-				l && d || await e(Object(s.c)("/")), e(Object(r.l)({
+				l && d || await e(Object(s.c)("/")), e(Object(r.m)({
 					title: "Econ control panel"
 				})), await e(Object(o.c)());
 				n.platform.currentPage.queryParams[i.b]
@@ -3063,7 +3063,7 @@
 				c = n("./src/reddit/selectors/moderatorPermissions.ts"),
 				l = n("./src/reddit/selectors/user.ts");
 			t.a = () => async (e, t) => {
-				if (e(Object(r.l)({
+				if (e(Object(r.m)({
 						title: Object(s.g)()
 					})), await e(Object(i.t)()), !Object(l.K)(t())) return;
 				await e(Object(a.q)());
@@ -3079,7 +3079,7 @@
 				a = n("./src/reddit/actions/users.ts"),
 				i = n("./src/reddit/selectors/user.ts");
 			t.a = () => async (e, t) => {
-				e(Object(o.l)({
+				e(Object(o.m)({
 					title: Object(s.h)()
 				})), await e(Object(a.t)()), Object(i.K)(t()) && await e(Object(r.q)())
 			}
@@ -3089,7 +3089,7 @@
 			var s = n("./src/lib/pageTitle.ts"),
 				o = n("./src/reddit/actions/platform.ts");
 			t.a = () => async e => {
-				e(Object(o.l)({
+				e(Object(o.m)({
 					title: Object(s.n)()
 				}))
 			}
@@ -3099,7 +3099,7 @@
 			var s = n("./src/lib/pageTitle.ts"),
 				o = n("./src/reddit/actions/platform.ts");
 			t.a = () => async e => {
-				e(Object(o.l)({
+				e(Object(o.m)({
 					title: Object(s.o)()
 				}))
 			}
@@ -3464,7 +3464,7 @@
 					}, this.onSubscribe = e => {
 						this.props.onSubscriptionsChanged && this.props.onSubscriptionsChanged(e || [])
 					}, this.onLogIn = () => {
-						this.props.redirectUrl ? this.redirectTo(this.props.redirectUrl) : (Object(_.a)(x.a.JustLoggedIn, !0), window.location.reload(!0))
+						this.props.redirectUrl ? this.redirectTo(this.props.redirectUrl) : (Object(_.a)(x.b.JustLoggedIn, !0), window.location.reload(!0))
 					}, this.onChangePassword = () => {
 						this.props.redirectUrl ? this.redirectTo(this.props.redirectUrl) : window.location.reload(!0)
 					}, this.onSignUp = (e, t) => {
@@ -6786,7 +6786,7 @@
 								search: t,
 								state: {
 									fromPage: n,
-									[rr.a.SearchOriginPage]: s
+									[rr.b.SearchOriginPage]: s
 								}
 							})))
 						})(t.url, t.qs, {
@@ -10455,7 +10455,7 @@
 					onUnpinSubscriptions: () => e(Object(_.j)()),
 					onPostDismissTrigger: () => e(Object(S.h)())
 				})),
-				wm = (e, t) => !(!e.state || !e.state[rr.a.IsOverlay] || t === e);
+				wm = (e, t) => !(!e.state || !e.state[rr.b.IsOverlay] || t === e);
 			class Nm extends m.a.Component {
 				constructor(e) {
 					super(e), this.previousHistory = this.props.history, this.previousLocation = this.props.location, this.previousPage = this.props.currentPage, this.isNarrowScreen = !1, this.isWideScreen = !1, this.didCountSurveyTrigger = !1, this.resizeHandler = d()(() => {
@@ -10491,7 +10491,7 @@
 					const {
 						isNpsSurveyEnabled: t,
 						location: n
-					} = this.props, s = n.state && n.state[rr.a.IsOverlay], o = Object(P.a)(this.previousLocation, e.location);
+					} = this.props, s = n.state && n.state[rr.b.IsOverlay], o = Object(P.a)(this.previousLocation, e.location);
 					t && s && o && !this.didCountSurveyTrigger && (this.props.onPostDismissTrigger(), this.didCountSurveyTrigger = !0);
 					const r = Object(P.a)(this.previousLocation, this.props.location),
 						a = s ? this.previousPage : this.props.currentPage;
@@ -10534,10 +10534,10 @@
 						isSignupUpsellDisplayed: f,
 						isSignupUpsellHidden: g
 					} = this.state, v = this.context, O = wm(d, this.previousLocation);
-					d.state && d.state[rr.a.IsOverlay] && !O ? d.state[rr.a.IsOverlay] = !1 : d.state && (this.previousLocation === d || d.state[rr.a.CloseLocation] && this.previousLocation.state && this.previousLocation.state[rr.a.CloseLocation] && this.previousLocation.state[rr.a.CloseLocation] === d.state[rr.a.CloseLocation] ? d.state[rr.a.CloseLocation] = {
+					d.state && d.state[rr.b.IsOverlay] && !O ? d.state[rr.b.IsOverlay] = !1 : d.state && (this.previousLocation === d || d.state[rr.b.CloseLocation] && this.previousLocation.state && this.previousLocation.state[rr.b.CloseLocation] && this.previousLocation.state[rr.b.CloseLocation] === d.state[rr.b.CloseLocation] ? d.state[rr.b.CloseLocation] = {
 						...this.previousLocation,
-						state: c()(this.previousLocation.state, rr.a.CloseLocation)
-					} : d.state[rr.a.CloseLocation] = this.previousLocation);
+						state: c()(this.previousLocation.state, rr.b.CloseLocation)
+					} : d.state[rr.b.CloseLocation] = this.previousLocation);
 					const x = Object(P.a)(this.previousLocation, d),
 						C = O || x ? this.previousLocation : d,
 						E = O || x ? this.previousPage : t,
@@ -10701,7 +10701,7 @@
 								location: e,
 								onClickOutsideOverlay: t
 							} = this.props;
-							t(e.state[rr.a.CloseLocation])
+							t(e.state[rr.b.CloseLocation])
 						}
 					}, this.onOverlayMouseDown = e => {
 						this.mouseDownInWrapper = e.target === this.state.overlayScrollContainerEl && e.clientX <= window.innerWidth - 17
@@ -17167,7 +17167,7 @@
 			}
 			var Qt = "undefined" != typeof document ? e => t => n => {
 					const s = t(n);
-					if (n.type === ee.e) {
+					if (n.type === ee.f) {
 						const t = e.getState(),
 							s = Object(v.J)(t),
 							{
@@ -17264,7 +17264,7 @@
 							routeKey: t
 						}))
 					};
-					if (n.type === ee.a) {
+					if (n.type === ee.b) {
 						const s = e.getState(),
 							o = (s.platform.currentPage.urlParams.subredditName || "").toLowerCase(),
 							a = Object(hn.B)(s, o) || "",
@@ -17279,7 +17279,7 @@
 							const e = Object(fn.b)(c, s, Object(dn.a)(s));
 							if (e && U.c.has(e)) {
 								const t = U.c.end(e);
-								!Object(Ut.i)(s) && Object(un.b)(et.a.IsOverlay) || Object(bn.k)(c, s, G.TimerType.UserCancelled, t)
+								!Object(Ut.i)(s) && Object(un.b)(et.b.IsOverlay) || Object(bn.k)(c, s, G.TimerType.UserCancelled, t)
 							}
 						}
 						const l = n.payload.routeMatch;
@@ -17580,9 +17580,9 @@
 					getUserConfirmation(e, t) {
 						const n = js;
 						if (!n) return;
-						n.dispatch(Object(ee.k)({
+						n.dispatch(Object(ee.l)({
 							allowNavigationCallback: (e = !1) => {
-								t(e), n.dispatch(Object(ee.j)())
+								t(e), n.dispatch(Object(ee.k)())
 							}
 						}))
 					}
@@ -17711,7 +17711,7 @@
 						function(e) {
 							const t = String(e.split("/")[1]).toLowerCase();
 							return "framedgild" === t || "framedmodal" === t
-						}(e.location.pathname) || n.dispatch(Object(ee.g)());
+						}(e.location.pathname) || n.dispatch(Object(ee.h)());
 					const s = Object(v.X)(n.getState());
 					n.dispatch(Object(re.c)({
 						nightmode: s
@@ -17725,10 +17725,10 @@
 						const e = Zt.b.createTraceFromId(o);
 						Zt.b.setParent(e)
 					}
-					n.dispatch(Object(ee.h)(t));
+					n.dispatch(Object(ee.i)(t));
 					e.listen((e, s) => {
 						const o = Object(I.a)(Object(i.e)(e), t, n.getState());
-						n.dispatch(Object(ee.i)(e, s, o))
+						n.dispatch(Object(ee.j)(e, s, o))
 					});
 					const r = n.getState(),
 						{
@@ -17844,11 +17844,11 @@
 								})), d.get(nt.B) && (c.dispatch(Object(Q.a)(d.get(nt.B))), history.replaceState(history.state, "", Object(k.a)(window.location.href, [nt.B])));
 								let u = !1;
 								const m = Object(v.N)(t);
-								if ((Object(un.b)(et.a.JustLoggedIn) || m) && (c.dispatch(Object(ae.f)({
+								if ((Object(un.b)(et.b.JustLoggedIn) || m) && (c.dispatch(Object(ae.f)({
 										text: s.fbt._("Successfully logged in!", null, {
 											hk: "2POUVB"
 										})
-									})), u = !0, Object(un.c)(et.a.JustLoggedIn), history.replaceState(history.state, "", Object(k.a)(window.location.href, [nt.o]))), Object(un.b)(et.a.JustLoggedOut) && (u = !0, Object(un.c)(et.a.JustLoggedOut)), Y().then(({
+									})), u = !0, Object(un.c)(et.b.JustLoggedIn), history.replaceState(history.state, "", Object(k.a)(window.location.href, [nt.o]))), Object(un.b)(et.b.JustLoggedOut) && (u = !0, Object(un.c)(et.b.JustLoggedOut)), Y().then(({
 										subscribeToPermissionsChange: e
 									}) => c.dispatch(e())), !1 !== Ke.T()) {
 									let n;
@@ -20941,4 +20941,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePo~5f1ac562", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250", "Governance~ModListing~Reddit~Subreddit", "Chat~Governance~Reddit", 0, "Reddit~StandalonePostPage~reddit-components-MediumPost", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.a56159b791609849c95f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.59b614420f03c1db66e7.js.map

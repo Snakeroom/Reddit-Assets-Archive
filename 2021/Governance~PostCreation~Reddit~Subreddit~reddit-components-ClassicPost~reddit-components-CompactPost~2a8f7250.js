@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.62cac29c17063a61ef06.js
-// Retrieved at 10/28/2021, 5:10:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.bd069ce30e156cc2d9e7.js
+// Retrieved at 11/3/2021, 11:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250"], {
 		"./src/lib/humanizeDate/index.ts": function(e, t, n) {
@@ -1797,29 +1797,26 @@
 							originElement: "post_flair",
 							queryId: Object(r.c)(r.a.SearchResults),
 							originPageType: n.platform.currentPage ? s.getPageTypeFromCurrentPage(n.platform.currentPage) : void 0
-						}
+						},
+						feed: s.feed(n)
 					}
 				}
 		},
 		"./src/reddit/hooks/useClickSourceData.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return c
+				return i
 			}));
-			var r = n("./node_modules/uuid/v4.js"),
-				s = n.n(r),
-				o = n("./src/reddit/constants/history.ts"),
-				i = n("./src/reddit/contexts/PageLayer/index.tsx"),
-				a = n("./src/reddit/selectors/telemetry.ts");
+			var r = n("./node_modules/react/index.js"),
+				s = n("./node_modules/react-redux/es/index.js"),
+				o = n("./src/reddit/helpers/clickSourceData/index.ts");
 
-			function c() {
-				const e = Object(i.eb)(),
-					t = e ? Object(a.getPageTypeFromCurrentPage)(e) : void 0,
-					n = "search_results" === t && Object(a.structureType)(e) === a.StructureType.Trending;
-				return {
-					[o.a.ClickSource]: n ? "search_results_trending" : t,
-					[o.a.ClickId]: s()()
-				}
+			function i() {
+				const e = Object(s.e)(e => e.platform.currentPage),
+					[t, n] = Object(r.useState)({});
+				return Object(r.useEffect)(() => {
+					n(Object(o.a)(e))
+				}, [e]), t
 			}
 		},
 		"./src/reddit/hooks/useLocale.ts": function(e, t, n) {
@@ -2567,4 +2564,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.62cac29c17063a61ef06.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.bd069ce30e156cc2d9e7.js.map

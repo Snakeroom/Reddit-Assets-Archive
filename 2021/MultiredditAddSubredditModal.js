@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MultiredditAddSubredditModal.26839df95f06f2efb89d.js
-// Retrieved at 10/28/2021, 5:10:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MultiredditAddSubredditModal.e619c4d127a95113ab9e.js
+// Retrieved at 11/3/2021, 11:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MultiredditAddSubredditModal"], {
 		"./node_modules/lodash/without.js": function(e, t, r) {
@@ -691,7 +691,7 @@
 						S = f.listings.postOrder.api.pending[g],
 						v = p.z in e.queryParams && e.queryParams[p.z].toUpperCase() || "",
 						w = v in l.ec && l.ec[v];
-					if (S || j && !_ && !t) return void(j && (r(u.l({
+					if (S || j && !_ && !t) return void(j && (r(u.m({
 						title: Object(C.f)(i(), m)
 					})), f.sidebarPromotedPosts.firstFetch || r(Object(N.b)(E.a.MULTIREDDIT))));
 					await r(I(g, o, s, {
@@ -701,7 +701,7 @@
 						t: Object(x.a)(c, w)
 					}, !0));
 					const P = i();
-					Object(C.d)(P, m) && r(u.l({
+					Object(C.d)(P, m) && r(u.m({
 						title: Object(C.f)(i(), m)
 					})), Object(F.c)(P, r, e)
 				}
@@ -1435,4 +1435,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MultiredditAddSubredditModal.26839df95f06f2efb89d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MultiredditAddSubredditModal.e619c4d127a95113ab9e.js.map

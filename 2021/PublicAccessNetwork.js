@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.68c896e40401a37b7a18.js
-// Retrieved at 10/28/2021, 5:10:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.7de3138334a9ddc7c021.js
+// Retrieved at 11/3/2021, 11:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1448,7 +1448,7 @@
 							});
 							0
 						}
-						t(Object(I.p)()), t(P.l({
+						t(Object(I.p)()), t(P.m({
 							title: n
 						}));
 						const c = s().posts.instances[l] ? e.queryParams.instanceId : w.postId;
@@ -1458,7 +1458,7 @@
 							});
 							await Promise.all(e.map(e => t(r.c(e))))
 						}
-					} else t(P.l({
+					} else t(P.m({
 						title: k.d()
 					}));
 					const {
@@ -1525,7 +1525,7 @@
 						}) || null,
 						[B, V] = await Promise.all([L, D]);
 					let U;
-					if (r(Object(P.m)(B.status)), B.ok) {
+					if (r(Object(P.n)(B.status)), B.ok) {
 						const t = Object.keys(B.body.posts).filter(e => !!B.body.posts[e].isMeta),
 							s = B.body.posts[e];
 						if (t.length) {
@@ -1599,7 +1599,7 @@
 						let e;
 						m && (r(Object(S.subredditPending)({
 							key: l
-						})), e = await Object(ge.a)("subreddit", () => Object(C.a)(a.apiContext(), m, {})), r(Object(P.m)(e.status)), r(Object(S.handleSubredditPageApiError)(e, m))), r(ht({
+						})), e = await Object(ge.a)("subreddit", () => Object(C.a)(a.apiContext(), m, {})), r(Object(P.n)(e.status)), r(Object(S.handleSubredditPageApiError)(e, m))), r(ht({
 							error: B.error,
 							key: l,
 							...e ? e.body : B.body
@@ -1613,7 +1613,7 @@
 						l = Object(_.a)(n.apiContext(), e, t, s, Object(J.a)(i), ot(i)),
 						m = d && c && Object(E.d)(n.gqlContext(), Object(W.e)(c)) || null,
 						[u, p] = await Promise.all([l, m]);
-					if (o(Object(P.m)(u.status)), u.ok) {
+					if (o(Object(P.n)(u.status)), u.ok) {
 						if (p && p.ok) {
 							const {
 								data: e
@@ -1671,7 +1671,7 @@
 			const i = e => async (e, t) => {
 				const s = t(),
 					i = o.j();
-				e(r.l({
+				e(r.m({
 					title: i
 				})), Object(a.K)(s) || await e(n.t())
 			}
@@ -5795,7 +5795,7 @@
 					isNightMode: ze.X
 				}),
 				br = Object(n.b)(hr, (e, t) => ({
-					closeLocation: () => e(Object(a.b)(t.location.state[De.a.CloseLocation])),
+					closeLocation: () => e(Object(a.b)(t.location.state[De.b.CloseLocation])),
 					fetchBroadcasterProfileInfo: t => e(Object(R.d)(t, !0)),
 					fetchPostForStream: t => e(Object(I.a)(t)),
 					subscribeConfig: () => e(D.a.subscribeConfig(t.related || t.subreddit)),
@@ -6613,4 +6613,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.68c896e40401a37b7a18.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.7de3138334a9ddc7c021.js.map

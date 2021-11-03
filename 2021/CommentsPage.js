@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.bc5edca4a75615c18ed4.js
-// Retrieved at 11/1/2021, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.448d7317d5c1e28b9924.js
+// Retrieved at 11/3/2021, 11:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -777,7 +777,7 @@
 							});
 							0
 						}
-						t(Object(_.p)()), t(L.l({
+						t(Object(_.p)()), t(L.m({
 							title: r
 						}));
 						const c = s().posts.instances[l] ? e.queryParams.instanceId : v.postId;
@@ -787,7 +787,7 @@
 							});
 							await Promise.all(e.map(e => t(n.c(e))))
 						}
-					} else t(L.l({
+					} else t(L.m({
 						title: j.d()
 					}));
 					const {
@@ -854,7 +854,7 @@
 						}) || null,
 						[B, D] = await Promise.all([A, F]);
 					let V;
-					if (n(Object(L.m)(B.status)), B.ok) {
+					if (n(Object(L.n)(B.status)), B.ok) {
 						const t = Object.keys(B.body.posts).filter(e => !!B.body.posts[e].isMeta),
 							s = B.body.posts[e];
 						if (t.length) {
@@ -928,7 +928,7 @@
 						let e;
 						m && (n(Object(x.subredditPending)({
 							key: l
-						})), e = await Object(Ce.a)("subreddit", () => Object(E.a)(i.apiContext(), m, {})), n(Object(L.m)(e.status)), n(Object(x.handleSubredditPageApiError)(e, m))), n(ht({
+						})), e = await Object(Ce.a)("subreddit", () => Object(E.a)(i.apiContext(), m, {})), n(Object(L.n)(e.status)), n(Object(x.handleSubredditPageApiError)(e, m))), n(ht({
 							error: B.error,
 							key: l,
 							...e ? e.body : B.body
@@ -942,7 +942,7 @@
 						l = Object(y.a)(r.apiContext(), e, t, s, Object(Y.a)(a), ot(a)),
 						m = d && c && Object(k.d)(r.gqlContext(), Object(G.e)(c)) || null,
 						[p, u] = await Promise.all([l, m]);
-					if (o(Object(L.m)(p.status)), p.ok) {
+					if (o(Object(L.n)(p.status)), p.ok) {
 						if (u && u.ok) {
 							const {
 								data: e
@@ -6408,8 +6408,8 @@
 				Ct = e => {
 					const {
 						state: t
-					} = e.location, s = a()(t, U.a.IsOverlay, !1), o = a()(t, U.a.CloseLocation, null), n = a()(t, U.a.ScrollOnLoad, !1);
-					n && Object(Ye.c)(U.a.ScrollOnLoad);
+					} = e.location, s = a()(t, U.b.IsOverlay, !1), o = a()(t, U.b.CloseLocation, null), n = a()(t, U.b.ScrollOnLoad, !1);
+					n && Object(Ye.c)(U.b.ScrollOnLoad);
 					const {
 						partialCommentId: r,
 						partialPostId: i,
@@ -7376,4 +7376,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.bc5edca4a75615c18ed4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.448d7317d5c1e28b9924.js.map

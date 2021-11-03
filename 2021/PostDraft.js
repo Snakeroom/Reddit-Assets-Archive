@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostDraft.9d4865c96558cb6c470a.js
-// Retrieved at 11/1/2021, 10:30:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostDraft.4997bd492a0e3ed17a8a.js
+// Retrieved at 11/3/2021, 11:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostDraft"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -593,7 +593,7 @@
 					return a
 				}, z = Object(i.a)(a.l), Y = Object(i.a)(a.m), X = Object(i.a)(a.k), q = e => async (t, n) => {
 					const s = n().platform.currentPage.locationState;
-					t(!(!s || !s[c.a.IsOverlay]) ? Object(w.a)(e.permalink) : Object(o.b)(Object(O.b)(e.permalink)))
+					t(!(!s || !s[c.b.IsOverlay]) ? Object(w.a)(e.permalink) : Object(o.b)(Object(O.b)(e.permalink)))
 				}, Z = Object(i.a)(a.i), Q = Object(i.a)(a.j), $ = Object(i.a)(a.h), ee = Object(i.a)(a.p), te = Object(i.a)(a.o), ne = Object(i.a)(a.q), se = e => async t => {
 					const n = [],
 						{
@@ -4580,4 +4580,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.9d4865c96558cb6c470a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.4997bd492a0e3ed17a8a.js.map

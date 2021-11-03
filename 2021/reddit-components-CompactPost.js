@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.c28f1951ba5c42bd19e2.js
-// Retrieved at 11/3/2021, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.83627dcbcdea3dc09e0a.js
+// Retrieved at 11/3/2021, 11:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CompactPost", "Reddit~StandalonePostPage~reddit-components-MediumPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -4724,7 +4724,8 @@
 					...u(t, e),
 					source: Object(i.a)(e) ? "comment" : "post",
 					action: "click",
-					noun: "give_gold"
+					noun: "give_gold",
+					feed: r.feed(t)
 				}),
 				p = e => t => ({
 					...u(t, e),
@@ -4736,7 +4737,8 @@
 					...u(t, e),
 					source: Object(i.a)(e) ? "comment" : "post",
 					action: "click",
-					noun: "add_award"
+					noun: "add_award",
+					feed: r.feed(t)
 				}),
 				b = (e, t) => s => ({
 					...u(s, t),
@@ -8213,4 +8215,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.c28f1951ba5c42bd19e2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.83627dcbcdea3dc09e0a.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-pages-PaypalFinishPage.edca42ff383eb58b54c0.js
-// Retrieved at 10/28/2021, 5:10:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-pages-PaypalFinishPage.6a86696a5251db7744bb.js
+// Retrieved at 11/3/2021, 11:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-pages-PaypalFinishPage"], {
 		"./src/reddit/actions/gold/productOfferPurchase.ts": function(e, t, r) {
@@ -670,7 +670,7 @@
 					}, 1500)) : k(E.Error)
 				};
 				Object(n.useEffect)(() => {
-					x(Object(i.l)({
+					x(Object(i.m)({
 						title: c.e[C]()
 					})), l ? S() : ((() => e.postMessage({
 						type: "paypal-finish.cancel"
@@ -808,4 +808,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-pages-PaypalFinishPage.edca42ff383eb58b54c0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-pages-PaypalFinishPage.6a86696a5251db7744bb.js.map

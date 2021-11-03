@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.e1641ccb54b743f6238f.js
-// Retrieved at 11/2/2021, 11:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.88253be9374b28e89324.js
+// Retrieved at 11/3/2021, 11:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, n) {
@@ -2035,7 +2035,7 @@
 					return i
 				}, q = Object(a.a)(i.l), Q = Object(a.a)(i.m), Y = Object(a.a)(i.k), J = e => async (t, n) => {
 					const s = n().platform.currentPage.locationState;
-					t(!(!s || !s[d.a.IsOverlay]) ? Object(y.a)(e.permalink) : Object(o.b)(Object(k.b)(e.permalink)))
+					t(!(!s || !s[d.b.IsOverlay]) ? Object(y.a)(e.permalink) : Object(o.b)(Object(k.b)(e.permalink)))
 				}, Z = Object(a.a)(i.i), X = Object(a.a)(i.j), $ = Object(a.a)(i.h), ee = Object(a.a)(i.p), te = Object(a.a)(i.o), ne = Object(a.a)(i.q), se = e => async t => {
 					const n = [],
 						{
@@ -13785,7 +13785,8 @@
 					...u(t, e),
 					source: Object(i.a)(e) ? "comment" : "post",
 					action: "click",
-					noun: "give_gold"
+					noun: "give_gold",
+					feed: o.feed(t)
 				}),
 				p = e => t => ({
 					...u(t, e),
@@ -13797,7 +13798,8 @@
 					...u(t, e),
 					source: Object(i.a)(e) ? "comment" : "post",
 					action: "click",
-					noun: "add_award"
+					noun: "add_award",
+					feed: o.feed(t)
 				}),
 				b = (e, t) => n => ({
 					...u(n, t),
@@ -23741,4 +23743,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.e1641ccb54b743f6238f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.88253be9374b28e89324.js.map

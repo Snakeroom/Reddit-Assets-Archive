@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InboxPages.aebf2ce7c9ce180a78a8.js
-// Retrieved at 10/5/2021, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InboxPages.cddabc5a97c392af65ed.js
+// Retrieved at 11/3/2021, 11:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InboxPages"], {
 		"./src/reddit/components/IFrame/index.m.less": function(e, t, s) {
@@ -25,9 +25,9 @@
 				i = s("./src/lib/addQueryParams/index.ts"),
 				a = s("./src/lib/classNames/index.ts"),
 				l = s("./src/lib/env/index.ts"),
-				u = s("./src/reddit/actions/platform.ts"),
-				m = s("./src/reddit/components/IFrame/index.m.less"),
-				p = s.n(m);
+				m = s("./src/reddit/actions/platform.ts"),
+				u = s("./src/reddit/components/IFrame/index.m.less"),
+				p = s.n(u);
 			class b extends n.a.Component {
 				constructor() {
 					super(...arguments), this.ref = null
@@ -80,7 +80,7 @@
 					nightmode: x.X
 				}),
 				j = Object(d.b)(S, e => ({
-					onTitleChange: t => e(u.l({
+					onTitleChange: t => e(m.m({
 						title: t
 					}))
 				})),
@@ -160,4 +160,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InboxPages.aebf2ce7c9ce180a78a8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InboxPages.cddabc5a97c392af65ed.js.map

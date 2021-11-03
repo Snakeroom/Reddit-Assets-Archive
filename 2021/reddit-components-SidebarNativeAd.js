@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.5d4fd8c1d020aeec6be4.js
-// Retrieved at 10/28/2021, 5:10:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.be8c8bca8b1bd75e1e45.js
+// Retrieved at 11/3/2021, 11:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, r) {
@@ -2254,7 +2254,8 @@
 					...u(t, e),
 					source: Object(a.a)(e) ? "comment" : "post",
 					action: "click",
-					noun: "give_gold"
+					noun: "give_gold",
+					feed: s.feed(t)
 				}),
 				p = e => t => ({
 					...u(t, e),
@@ -2266,7 +2267,8 @@
 					...u(t, e),
 					source: Object(a.a)(e) ? "comment" : "post",
 					action: "click",
-					noun: "add_award"
+					noun: "add_award",
+					feed: s.feed(t)
 				}),
 				b = (e, t) => r => ({
 					...u(r, t),
@@ -3998,4 +4000,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.5d4fd8c1d020aeec6be4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.be8c8bca8b1bd75e1e45.js.map

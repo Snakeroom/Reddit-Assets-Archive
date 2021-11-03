@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-MediumPost.b3ae68d78fd48e7ac614.js
-// Retrieved at 11/3/2021, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-MediumPost.a605baaa0c6d1222c3dd.js
+// Retrieved at 11/3/2021, 11:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~StandalonePostPage~reddit-components-MediumPost"], {
 		"./src/lib/hooks/usePrevious.ts": function(e, t, r) {
@@ -1667,7 +1667,8 @@
 					...u(t, e),
 					source: Object(c.a)(e) ? "comment" : "post",
 					action: "click",
-					noun: "give_gold"
+					noun: "give_gold",
+					feed: s.feed(t)
 				}),
 				p = e => t => ({
 					...u(t, e),
@@ -1679,7 +1680,8 @@
 					...u(t, e),
 					source: Object(c.a)(e) ? "comment" : "post",
 					action: "click",
-					noun: "add_award"
+					noun: "add_award",
+					feed: s.feed(t)
 				}),
 				b = (e, t) => r => ({
 					...u(r, t),
@@ -3470,4 +3472,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-MediumPost.b3ae68d78fd48e7ac614.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-MediumPost.a605baaa0c6d1222c3dd.js.map

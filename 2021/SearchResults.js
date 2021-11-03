@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.d4c64acfb6a0cff8b1de.js
-// Retrieved at 11/1/2021, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.9076d2217aab6bfb15ea.js
+// Retrieved at 11/3/2021, 11:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -792,9 +792,9 @@
 					const {
 						type: O = []
 					} = x, E = O.indexOf(o.Yb.Posts) > -1, j = O.indexOf(o.Yb.Subreddits) > -1 || O.indexOf(o.Yb.Users) > -1;
-					E && r.listings.postOrder.api.error[g] && (v = !0), j && r.listings.listingOrder.api.error[g] && (v = !0), t(v ? l.l({
+					E && r.listings.postOrder.api.error[g] && (v = !0), j && r.listings.listingOrder.api.error[g] && (v = !0), t(v ? l.m({
 						title: Object(c.d)()
-					}) : l.l({
+					}) : l.m({
 						title: h(x.q)
 					}))
 				}
@@ -5360,7 +5360,7 @@
 							to: {
 								pathname: "/search",
 								state: {
-									[y.a.SearchOriginPage]: Object(g.b)(y.a.SearchOriginPage)
+									[y.b.SearchOriginPage]: Object(g.b)(y.b.SearchOriginPage)
 								},
 								search: Object(p.a)("", {
 									...m,
@@ -8430,7 +8430,7 @@
 						to: {
 							pathname: i.pathname,
 							state: {
-								[w.a.SearchOriginPage]: Object(R.b)(w.a.SearchOriginPage)
+								[w.b.SearchOriginPage]: Object(R.b)(w.b.SearchOriginPage)
 							},
 							search: Object(c.c)(v, x, {
 								type: [a.Yb.Subreddits, a.Yb.Users].join(",")
@@ -9057,7 +9057,7 @@
 						to: {
 							pathname: S.a.parseUrl(e).url,
 							state: {
-								[N.a.SearchOriginPage]: Object(w.b)(N.a.SearchOriginPage)
+								[N.b.SearchOriginPage]: Object(w.b)(N.b.SearchOriginPage)
 							},
 							search: e.replace(S.a.parseUrl(e).url + "?", "")
 						},
@@ -10765,7 +10765,7 @@
 				return {
 					pathname: e.pathname,
 					state: {
-						[i.a.SearchOriginPage]: Object(o.b)(i.a.SearchOriginPage)
+						[i.b.SearchOriginPage]: Object(o.b)(i.b.SearchOriginPage)
 					},
 					search: Object(n.c)(a, t, {
 						type: s
@@ -11886,4 +11886,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.d4c64acfb6a0cff8b1de.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.9076d2217aab6bfb15ea.js.map

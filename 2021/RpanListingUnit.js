@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.a223e4141cd2ede0cf66.js
-// Retrieved at 11/2/2021, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.57b0d5def4eb7e260b6e.js
+// Retrieved at 11/3/2021, 11:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -4011,7 +4011,8 @@
 					...u(t, e),
 					source: Object(i.a)(e) ? "comment" : "post",
 					action: "click",
-					noun: "give_gold"
+					noun: "give_gold",
+					feed: n.feed(t)
 				}),
 				p = e => t => ({
 					...u(t, e),
@@ -4023,7 +4024,8 @@
 					...u(t, e),
 					source: Object(i.a)(e) ? "comment" : "post",
 					action: "click",
-					noun: "add_award"
+					noun: "add_award",
+					feed: n.feed(t)
 				}),
 				b = (e, t) => s => ({
 					...u(s, t),
@@ -5616,4 +5618,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.a223e4141cd2ede0cf66.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.57b0d5def4eb7e260b6e.js.map
