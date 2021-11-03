@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.2f945324da50a2addb0e.js
-// Retrieved at 11/3/2021, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.10915857ec2bee358b88.js
+// Retrieved at 11/3/2021, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost", "Reddit~StandalonePostPage~reddit-components-MediumPost", "FrontpageSidebar"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -2112,7 +2112,7 @@
 						viewCountTotals: s,
 						shareCountTotals: r
 					} = t;
-					return (null == s ? void 0 : s.status) === n.b.Unavailable && (null == r ? void 0 : r.status) === n.b.Unavailable ? o.NotAvailableYet : !(null == s ? void 0 : s.totalCount) || s.totalCount < 10 ? o.NotAvailableYet : o.Available
+					return (null == s ? void 0 : s.status) === n.c.Unavailable && (null == r ? void 0 : r.status) === n.c.Unavailable ? o.NotAvailableYet : !(null == s ? void 0 : s.totalCount) || s.totalCount < 10 ? o.NotAvailableYet : o.Available
 				}
 		},
 		"./src/reddit/components/Econ/Audio/MuteIcon.tsx": function(e, t, s) {
@@ -3549,7 +3549,7 @@
 						subreddit: s
 					} = e, {
 						isSponsored: n
-					} = t, r = Object(V.a)(), a = Object(B.a)(m.Rc) === m.Wc.Enabled;
+					} = t, r = Object(V.a)(), a = Object(B.a)(m.Sc) === m.Xc.Enabled;
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return o.a.createElement(Q, {
 						nowrap: e.nowrap
 					}, o.a.createElement(X, e));
@@ -7878,7 +7878,7 @@
 						postId: t
 					}) || Object(a.H)(e))(e, t),
 					experimentName: n.N
-				}) === n.Hc
+				}) === n.Ic
 			}
 		},
 		"./src/reddit/selectors/experiments/joinOptimizations.ts": function(e, t, s) {
@@ -7897,19 +7897,19 @@
 				o = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				a = s("./src/reddit/selectors/experiments/index.ts");
 			const i = Object(n.a)(e => Object(o.c)(e, {
-					experimentName: r.sb,
+					experimentName: r.tb,
 					experimentEligibilitySelector: a.e
 				}), e => e === r.W.Enabled),
 				c = Object(n.a)(e => Object(o.c)(e, {
-					experimentName: r.tb,
+					experimentName: r.ub,
 					experimentEligibilitySelector: a.e
 				}), e => e === r.X.Enabled),
 				d = Object(n.a)(e => Object(o.c)(e, {
-					experimentName: r.ub,
+					experimentName: r.vb,
 					experimentEligibilitySelector: a.e
 				}), e => e === r.Y.Enabled),
 				l = Object(n.a)(e => Object(o.c)(e, {
-					experimentName: r.vb,
+					experimentName: r.wb,
 					experimentEligibilitySelector: a.e
 				}), e => e === r.Z.Enabled)
 		},
@@ -7993,8 +7993,8 @@
 					if (Object(a.a)(e)) return !1;
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: n.zb
-					}) === n.Mb.Enabled
+						experimentName: n.Ab
+					}) === n.Nb.Enabled
 				}
 		},
 		"./src/reddit/selectors/experiments/presence.ts": function(e, t, s) {
@@ -8007,8 +8007,8 @@
 			const o = e => {
 				return Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: n.Sd
-				}) === n.Hc
+					experimentName: n.Td
+				}) === n.Ic
 			}
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, s) {
@@ -8247,10 +8247,10 @@
 				o = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				a = s("./src/reddit/selectors/posts.ts");
 			const i = e => Object(o.c)(e, {
-					experimentName: r.Vd,
+					experimentName: r.Wd,
 					experimentEligibilitySelector: o.a
 				}),
-				c = (e, t) => t === r.ee.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				c = (e, t) => t === r.fe.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				d = Object(n.a)(a.H, i, (e, t) => c(e, t)),
 				l = Object(n.a)((e, t) => t, i, (e, t) => c(e, t))
 		},
@@ -8410,4 +8410,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.2f945324da50a2addb0e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.10915857ec2bee358b88.js.map

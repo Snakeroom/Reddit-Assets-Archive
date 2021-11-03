@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.14daca3964e3a59747d2.js
-// Retrieved at 11/3/2021, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.2e2b0badaae78c42a493.js
+// Retrieved at 11/3/2021, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -6204,12 +6204,12 @@
 						rtJsonElementProps: o
 					});
 					switch (s) {
-						case b.Ce.SmIcon:
+						case b.De.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: o
 							});
-						case b.Ce.SmIconHc:
+						case b.De.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -8284,15 +8284,15 @@
 			const i = e => {
 					const t = Object(r.c)(e, {
 						experimentEligibilitySelector: o.K,
-						experimentName: s.mc
+						experimentName: s.nc
 					});
-					return !(!t || Object(s.af)(t))
+					return !(!t || Object(s.bf)(t))
 				},
 				a = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: o.K,
-						experimentName: s.mc
-					}) === s.Mc.ListingEnabled
+						experimentName: s.nc
+					}) === s.Nc.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, n) {
@@ -8424,12 +8424,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.we
+						experimentName: s.xe
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.Ce.SmIcon || t === s.Ce.SmIconHc
+					return t === s.De.SmIcon || t === s.De.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -8461,4 +8461,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.14daca3964e3a59747d2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.2e2b0badaae78c42a493.js.map

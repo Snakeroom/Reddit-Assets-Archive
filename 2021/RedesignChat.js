@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RedesignChat.3646fc7a7f48da77a579.js
-// Retrieved at 11/3/2021, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RedesignChat.21d797674d2699bb479d.js
+// Retrieved at 11/3/2021, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RedesignChat"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -120,10 +120,10 @@
 				H = n("./src/chat/customMiddleware/iframeDispatcher.ts"),
 				Q = n("./src/chat/customMiddleware/inviteLinkSettings.ts"),
 				$ = n("./src/chat/customMiddleware/lastSelectedChannel.ts"),
-				K = n("./src/chat/customMiddleware/loggedOutPreferencesSync.ts"),
-				V = n("./src/chat/customMiddleware/sendbirdToken.ts"),
+				W = n("./src/chat/customMiddleware/loggedOutPreferencesSync.ts"),
+				K = n("./src/chat/customMiddleware/sendbirdToken.ts"),
 				Y = n("./src/chat/customMiddleware/settingsDropdown.ts"),
-				W = n("./src/chat/customMiddleware/title.ts"),
+				V = n("./src/chat/customMiddleware/title.ts"),
 				J = n("./src/chat/customMiddleware/tokenRefresher.ts"),
 				X = n("./src/chat/customMiddleware/tracking.ts"),
 				Z = n("./src/chat/customMiddleware/unreadMessageCount.ts"),
@@ -268,7 +268,7 @@
 						routes: ge.a,
 						apiContext: pe.apiContext,
 						gqlContext: fe.gqlContext
-					}), pe.middleware, J.a, Y.a, V.a, H.a, K.a, Object(X.a)(t), F.a, z.a, L.a, G.a, Z.a, $.a, W.a, ee.a, Q.a],
+					}), pe.middleware, J.a, Y.a, K.a, H.a, W.a, Object(X.a)(t), F.a, z.a, L.a, G.a, Z.a, $.a, V.a, ee.a, Q.a],
 					modifyInitialData: ({
 						initialData: t,
 						browserHistory: n
@@ -774,10 +774,10 @@
 				a = n("./src/reddit/selectors/experiments/index.ts"),
 				i = n("./src/reddit/selectors/experiments/utils.ts");
 			const o = Object(s.a)(e => Object(c.c)(e, {
-					experimentName: r.dd,
+					experimentName: r.ed,
 					experimentEligibilitySelector: a.e
 				}), i.a),
-				d = Object(s.a)(o, e => e === r.gd.Enabled)
+				d = Object(s.a)(o, e => e === r.hd.Enabled)
 		},
 		"./src/reddit/selectors/experiments/inboxRedesign.ts": function(e, t, n) {
 			"use strict";
@@ -810,45 +810,45 @@
 				a = n("./src/reddit/selectors/experiments/index.ts"),
 				i = n("./src/reddit/selectors/experiments/utils.ts");
 			const o = Object(s.a)(e => Object(c.c)(e, {
-					experimentName: r.rb,
+					experimentName: r.sb,
 					experimentEligibilitySelector: a.e
 				}), i.a),
-				d = Object(s.a)(o, e => e === r.md.Enabled),
+				d = Object(s.a)(o, e => e === r.nd.Enabled),
 				u = Object(s.a)(e => Object(c.c)(e, {
-					experimentName: r.fd,
+					experimentName: r.gd,
 					experimentEligibilitySelector: a.e
 				}), i.a),
-				l = Object(s.a)(d, u, (e, t) => e && t === r.ld.Enabled),
+				l = Object(s.a)(d, u, (e, t) => e && t === r.md.Enabled),
 				b = Object(s.a)(e => Object(c.c)(e, {
-					experimentName: r.Ab,
+					experimentName: r.Bb,
 					experimentEligibilitySelector: a.e
 				}), i.a),
-				m = Object(s.a)(d, b, (e, t) => e && t === r.Nb.Enabled),
+				m = Object(s.a)(d, b, (e, t) => e && t === r.Ob.Enabled),
 				h = Object(s.a)(e => Object(c.c)(e, {
-					experimentName: r.ob,
-					experimentEligibilitySelector: a.e
-				}), i.a),
-				g = Object(s.a)(h, e => e === r.id.Banner_1st_time),
-				p = Object(s.a)(h, e => e === r.id.Tooltip_persist),
-				f = Object(s.a)(h, e => e === r.id.Tooltip_1st_time),
-				j = Object(s.a)(e => Object(c.c)(e, {
 					experimentName: r.pb,
 					experimentEligibilitySelector: a.e
 				}), i.a),
-				x = Object(s.a)(j, e => e === r.jd.ContinuousScroll),
+				g = Object(s.a)(h, e => e === r.jd.Banner_1st_time),
+				p = Object(s.a)(h, e => e === r.jd.Tooltip_persist),
+				f = Object(s.a)(h, e => e === r.jd.Tooltip_1st_time),
+				j = Object(s.a)(e => Object(c.c)(e, {
+					experimentName: r.qb,
+					experimentEligibilitySelector: a.e
+				}), i.a),
+				x = Object(s.a)(j, e => e === r.kd.ContinuousScroll),
 				O = Object(s.a)(e => Object(c.c)(e, {
 					experimentName: r.hb,
 					experimentEligibilitySelector: a.e
 				}), i.a),
-				C = Object(s.a)(O, e => e === r.Vb.Banner1stTime),
-				E = Object(s.a)(O, e => e === r.Vb.BannerPersist),
+				C = Object(s.a)(O, e => e === r.Wb.Banner1stTime),
+				E = Object(s.a)(O, e => e === r.Wb.BannerPersist),
 				v = Object(s.a)(e => Object(c.c)(e, {
-					experimentName: r.qb,
+					experimentName: r.rb,
 					experimentEligibilitySelector: a.e
 				}), i.a),
-				_ = Object(s.a)(v, e => e === r.kd.Enabled),
+				_ = Object(s.a)(v, e => e === r.ld.Enabled),
 				N = Object(s.a)(e => Object(c.c)(e, {
-					experimentName: r.wb,
+					experimentName: r.xb,
 					experimentEligibilitySelector: () => !0
 				}), i.a),
 				w = Object(s.a)(N, e => e === r.ab.Enabled)
@@ -858,4 +858,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.3646fc7a7f48da77a579.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.21d797674d2699bb479d.js.map

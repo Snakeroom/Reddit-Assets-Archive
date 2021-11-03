@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.21272aa8063f061bab95.js
-// Retrieved at 11/3/2021, 5:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.773e2e76e6dcaef784e9.js
+// Retrieved at 11/3/2021, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton", "FrontpageSidebar"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, n) {
@@ -910,7 +910,7 @@
 						[e]: {
 							sendReplies: o
 						}
-					})), (await Object(D.n)(s(), e, o)).ok || t(Object(Z.i)({
+					})), (await Object(D.o)(s(), e, o)).ok || t(Object(Z.i)({
 						[e]: {
 							sendReplies: !o
 						}
@@ -1030,7 +1030,7 @@
 					}));
 					const r = n().features.comments.models[e];
 					if (!r) return;
-					const a = r.isSaved ? h.k : h.g;
+					const a = r.isSaved ? h.m : h.i;
 					if (t(j({
 							[e]: {
 								isSaved: !r.isSaved
@@ -1094,7 +1094,7 @@
 					n(M({
 						moreCommentsId: a.id
 					}));
-					const f = await Object(h.e)(o(), p, {
+					const f = await Object(h.f)(o(), p, {
 						token: a.token
 					}, Object(O.a)(r));
 					if (f.ok) {
@@ -8098,7 +8098,7 @@
 						subreddit: n
 					} = e, {
 						isSponsored: s
-					} = t, o = Object(U.a)(), a = Object(W.a)(m.Rc) === m.Wc.Enabled;
+					} = t, o = Object(U.a)(), a = Object(W.a)(m.Sc) === m.Xc.Enabled;
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return r.a.createElement(Q, {
 						nowrap: e.nowrap
 					}, r.a.createElement(Z, e));
@@ -12155,120 +12155,162 @@
 		},
 		"./src/reddit/endpoints/comment/index.tsx": function(e, t, n) {
 			"use strict";
-			n.d(t, "g", (function() {
-				return m
-			})), n.d(t, "k", (function() {
-				return p
-			})), n.d(t, "d", (function() {
-				return h
-			})), n.d(t, "j", (function() {
-				return b
-			})), n.d(t, "a", (function() {
+			n.d(t, "i", (function() {
 				return f
-			})), n.d(t, "f", (function() {
+			})), n.d(t, "m", (function() {
 				return g
-			})), n.d(t, "c", (function() {
-				return x
-			})), n.d(t, "i", (function() {
-				return C
-			})), n.d(t, "h", (function() {
-				return v
 			})), n.d(t, "e", (function() {
+				return x
+			})), n.d(t, "l", (function() {
+				return C
+			})), n.d(t, "a", (function() {
+				return v
+			})), n.d(t, "h", (function() {
 				return E
-			})), n.d(t, "b", (function() {
+			})), n.d(t, "d", (function() {
 				return _
+			})), n.d(t, "k", (function() {
+				return O
+			})), n.d(t, "j", (function() {
+				return y
+			})), n.d(t, "f", (function() {
+				return k
+			})), n.d(t, "g", (function() {
+				return w
+			})), n.d(t, "b", (function() {
+				return j
+			})), n.d(t, "c", (function() {
+				return P
 			}));
 			var s = n("./src/config.ts"),
-				o = n("./src/lib/constants/index.ts"),
-				r = n("./src/lib/makeApiRequest/index.ts"),
-				a = n("./src/lib/omitHeaders/index.ts"),
-				i = n("./src/reddit/constants/headers.ts"),
-				c = n("./src/reddit/helpers/addRedesignIdentifier/index.ts"),
-				d = n("./src/reddit/models/Comment/addProfileImgParam.ts"),
-				l = n("./src/reddit/models/RichTextJson/addEmotesAsImagesParam.ts"),
-				u = n("./src/reddit/models/RichTextJson/addRTJParam.ts");
-			const m = (e, t) => Object(r.a)(Object(a.a)(e, [i.a]), {
-					endpoint: Object(c.a)(`${e.apiUrl}/api/save`),
-					method: o.ib.POST,
+				o = n("./src/redditGQL/operations/UpdateCommentDistinguishState.json"),
+				r = n("./src/redditGQL/operations/UpdateCommentStickyState.json"),
+				a = n("./src/redditGQL/types.ts"),
+				i = n("./src/lib/constants/index.ts"),
+				c = n("./src/lib/makeApiRequest/index.ts"),
+				d = n("./src/lib/makeGqlRequest/index.ts"),
+				l = n("./src/lib/omitHeaders/index.ts"),
+				u = n("./src/reddit/constants/headers.ts"),
+				m = n("./src/reddit/helpers/addRedesignIdentifier/index.ts"),
+				p = n("./src/reddit/models/Comment/addProfileImgParam.ts"),
+				h = n("./src/reddit/models/RichTextJson/addEmotesAsImagesParam.ts"),
+				b = n("./src/reddit/models/RichTextJson/addRTJParam.ts");
+			const f = (e, t) => Object(c.a)(Object(l.a)(e, [u.a]), {
+					endpoint: Object(m.a)(`${e.apiUrl}/api/save`),
+					method: i.ib.POST,
 					data: {
 						id: t
 					}
 				}),
-				p = (e, t) => Object(r.a)(Object(a.a)(e, [i.a]), {
-					endpoint: Object(c.a)(`${e.apiUrl}/api/unsave`),
-					method: o.ib.POST,
+				g = (e, t) => Object(c.a)(Object(l.a)(e, [u.a]), {
+					endpoint: Object(m.a)(`${e.apiUrl}/api/unsave`),
+					method: i.ib.POST,
 					data: {
 						id: t
 					}
 				}),
-				h = (e, t) => Object(r.a)(Object(a.a)(e, [i.a]), {
-					endpoint: Object(c.a)(`${e.apiUrl}/api/lock`),
-					method: o.ib.POST,
+				x = (e, t) => Object(c.a)(Object(l.a)(e, [u.a]), {
+					endpoint: Object(m.a)(`${e.apiUrl}/api/lock`),
+					method: i.ib.POST,
 					data: {
 						id: t
 					}
 				}),
-				b = (e, t) => Object(r.a)(Object(a.a)(e, [i.a]), {
-					endpoint: Object(c.a)(`${e.apiUrl}/api/unlock`),
-					method: o.ib.POST,
+				C = (e, t) => Object(c.a)(Object(l.a)(e, [u.a]), {
+					endpoint: Object(m.a)(`${e.apiUrl}/api/unlock`),
+					method: i.ib.POST,
 					data: {
 						id: t
 					}
 				}),
-				f = (e, t) => Object(r.a)(Object(a.a)(e, [i.a]), {
-					endpoint: Object(c.a)(`${e.apiUrl}/api/approve`),
-					method: o.ib.POST,
+				v = (e, t) => Object(c.a)(Object(l.a)(e, [u.a]), {
+					endpoint: Object(m.a)(`${e.apiUrl}/api/approve`),
+					method: i.ib.POST,
 					data: {
 						id: t
 					}
 				}),
-				g = (e, t, n) => Object(r.a)(Object(a.a)(e, [i.a]), {
-					endpoint: Object(c.a)(`${e.apiUrl}/api/remove`),
-					method: o.ib.POST,
+				E = (e, t, n) => Object(c.a)(Object(l.a)(e, [u.a]), {
+					endpoint: Object(m.a)(`${e.apiUrl}/api/remove`),
+					method: i.ib.POST,
 					data: {
 						id: t,
 						spam: n
 					}
 				}),
-				x = (e, t) => Object(r.a)(Object(a.a)(e, [i.a]), {
+				_ = (e, t) => Object(c.a)(Object(l.a)(e, [u.a]), {
 					endpoint: `${e.apiUrl}/api/ignore_reports`,
-					method: o.ib.POST,
+					method: i.ib.POST,
 					data: {
 						id: t
 					}
 				}),
-				C = (e, t) => Object(r.a)(Object(a.a)(e, [i.a]), {
+				O = (e, t) => Object(c.a)(Object(l.a)(e, [u.a]), {
 					endpoint: `${e.apiUrl}/api/unignore_reports`,
-					method: o.ib.POST,
+					method: i.ib.POST,
 					data: {
 						id: t
 					}
 				}),
-				v = (e, t) => Object(r.a)(Object(a.a)(e, [i.a]), {
+				y = (e, t) => Object(c.a)(Object(l.a)(e, [u.a]), {
 					endpoint: `${e.apiUrl}/api/show_comment`,
-					method: o.ib.POST,
+					method: i.ib.POST,
 					data: {
 						id: t
 					}
 				}),
-				E = (e, t, n, a) => {
-					let i = Object(c.a)(Object(u.a)(Object(l.a)(`${s.a.gatewayUrl}/desktopapi/v1/morecomments/${t}`)));
-					return a && (i = Object(d.a)(i)), Object(r.a)(e, {
+				k = (e, t, n, o) => {
+					let r = Object(m.a)(Object(b.a)(Object(h.a)(`${s.a.gatewayUrl}/desktopapi/v1/morecomments/${t}`)));
+					return o && (r = Object(p.a)(r)), Object(c.a)(e, {
 						data: n,
-						endpoint: i,
-						method: o.ib.POST,
+						endpoint: r,
+						method: i.ib.POST,
 						type: "json",
 						traceRequestName: "more_comments"
 					})
 				},
-				_ = (e, t, n, s) => Object(r.a)(Object(a.a)(e, [i.a]), {
-					endpoint: Object(c.a)(`${e.apiUrl}/api/distinguish/${n}`),
-					method: o.ib.POST,
+				w = (e, t, n, s) => Object(c.a)(Object(l.a)(e, [u.a]), {
+					endpoint: Object(m.a)(`${e.apiUrl}/api/distinguish/${n}`),
+					method: i.ib.POST,
 					data: {
 						id: t,
 						sticky: s
 					}
+				}),
+				S = {
+					[i.F.NONE]: a.d.None,
+					[i.F.MODERATOR]: a.d.ModDistinguished,
+					[i.F.ADMIN]: a.d.AdminDistinguished,
+					[i.F.ALUMNI_ADMIN]: a.d.AlumniDistinguished
+				};
+
+			function j(e, t, n) {
+				const s = function(e, t) {
+					return {
+						input: {
+							commentId: e,
+							distinguishState: t === i.F.NONE ? a.b.None : a.b.Distinguished,
+							distinguishType: S[t]
+						}
+					}
+				}(t, n);
+				return Object(d.a)(e, {
+					...o,
+					variables: s
 				})
+			}
+
+			function P(e, t, n) {
+				return Object(d.a)(e, {
+					...r,
+					variables: {
+						input: {
+							commentId: t,
+							sticky: n
+						}
+					}
+				})
+			}
 		},
 		"./src/reddit/endpoints/governance/badges.ts": function(e, t, n) {
 			"use strict";
@@ -23149,19 +23191,19 @@
 				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				a = n("./src/reddit/selectors/experiments/index.ts");
 			const i = Object(s.a)(e => Object(r.c)(e, {
-					experimentName: o.sb,
+					experimentName: o.tb,
 					experimentEligibilitySelector: a.e
 				}), e => e === o.W.Enabled),
 				c = Object(s.a)(e => Object(r.c)(e, {
-					experimentName: o.tb,
+					experimentName: o.ub,
 					experimentEligibilitySelector: a.e
 				}), e => e === o.X.Enabled),
 				d = Object(s.a)(e => Object(r.c)(e, {
-					experimentName: o.ub,
+					experimentName: o.vb,
 					experimentEligibilitySelector: a.e
 				}), e => e === o.Y.Enabled),
 				l = Object(s.a)(e => Object(r.c)(e, {
-					experimentName: o.vb,
+					experimentName: o.wb,
 					experimentEligibilitySelector: a.e
 				}), e => e === o.Z.Enabled)
 		},
@@ -23173,9 +23215,9 @@
 			var s = n("./src/reddit/constants/experiments.ts"),
 				o = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const r = e => Object(o.c)(e, {
-				experimentName: s.Cd,
+				experimentName: s.Dd,
 				experimentEligibilitySelector: o.a
-			}) === s.Jd.Enabled
+			}) === s.Kd.Enabled
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, n) {
 			"use strict";
@@ -23735,12 +23777,18 @@
 		"./src/redditGQL/operations/SubredditScheduledPosts.json": function(e) {
 			e.exports = JSON.parse('{"id":"de72339b938a"}')
 		},
+		"./src/redditGQL/operations/UpdateCommentDistinguishState.json": function(e) {
+			e.exports = JSON.parse('{"id":"e1f407c8ceba"}')
+		},
 		"./src/redditGQL/operations/UpdateCommentFollowState.json": function(e) {
 			e.exports = JSON.parse('{"id":"0a2ed51664c5"}')
+		},
+		"./src/redditGQL/operations/UpdateCommentStickyState.json": function(e) {
+			e.exports = JSON.parse('{"id":"236938d65d55"}')
 		},
 		"./src/redditGQL/operations/UpdateScheduledPost.json": function(e) {
 			e.exports = JSON.parse('{"id":"f5276d63e133"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.21272aa8063f061bab95.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.773e2e76e6dcaef784e9.js.map

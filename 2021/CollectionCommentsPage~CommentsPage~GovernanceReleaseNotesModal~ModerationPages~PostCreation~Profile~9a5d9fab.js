@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.76e1ab5995f80984f100.js
-// Retrieved at 11/3/2021, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.d42f0763d34887289fe8.js
+// Retrieved at 11/3/2021, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab"], {
 		"./src/higherOrderComponents/withMux/index.tsx": function(e, t, s) {
@@ -17,16 +17,16 @@
 			const h = Object(a.a)(e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.wd
+					experimentName: u.xd
 				});
-				return Object(u.af)(t) ? void 0 : t
+				return Object(u.bf)(t) ? void 0 : t
 			}, e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.xd
+					experimentName: u.yd
 				});
-				return Object(u.af)(t) ? void 0 : t
-			}, (e, t) => e === u.Bd.Enabled && t === u.Bd.Enabled);
+				return Object(u.bf)(t) ? void 0 : t
+			}, (e, t) => e === u.Cd.Enabled && t === u.Cd.Enabled);
 			var p = s("./src/config.ts");
 			var b = s("./src/reddit/selectors/user.ts");
 			const g = e => {
@@ -57,7 +57,7 @@
 				}).apply(this, arguments)
 			}
 			const O = (e => t => ((e, t) => `${e}(${(e=>e.displayName||e.name||"Component")(t)})`)(e, t))("WithMux"),
-				w = {
+				I = {
 					anonymousUserId: "t2_anonymous",
 					debug: !1,
 					disableCookies: !0,
@@ -78,14 +78,14 @@
 					envKey: m,
 					localStorageSaltKey: f,
 					localStorageViewerUserIdKey: E,
-					playerName: I,
+					playerName: w,
 					playerVersion: C,
 					respectDoNotTrack: S,
 					saltLength: j,
 					saltTimeToLive: T,
 					viewerUserIdLength: L
 				} = {
-					...w,
+					...I,
 					...t
 				};
 				class M extends i.Component {
@@ -235,7 +235,7 @@
 						}
 					}
 				}
-				M.displayName = O(e), M.ANONYMOUS_USER_ID = s, M.DEBUG = l, M.DISABLE_COOKIES = u, M.DURATION_LIVE = 1 / 0, M.ENV_KEY = m, M.LOCAL_STORAGE_SALT_KEY = f, M.LOCAL_STORAGE_VIEWER_USER_ID_KEY = E, M.PLAYER_NAME = I, M.PLAYER_VERSION = C, M.RESPECT_DO_NOT_TRACK = S, M.SALT_LENGTH = j, M.SALT_TIME_TO_LIVE = T, M.STREAM_TYPE_LIVE = "live", M.STREAM_TYPE_ON_DEMAND = "on-demand", M.VIEWER_USER_ID_LENGTH = L;
+				M.displayName = O(e), M.ANONYMOUS_USER_ID = s, M.DEBUG = l, M.DISABLE_COOKIES = u, M.DURATION_LIVE = 1 / 0, M.ENV_KEY = m, M.LOCAL_STORAGE_SALT_KEY = f, M.LOCAL_STORAGE_VIEWER_USER_ID_KEY = E, M.PLAYER_NAME = w, M.PLAYER_VERSION = C, M.RESPECT_DO_NOT_TRACK = S, M.SALT_LENGTH = j, M.SALT_TIME_TO_LIVE = T, M.STREAM_TYPE_LIVE = "live", M.STREAM_TYPE_ON_DEMAND = "on-demand", M.VIEWER_USER_ID_LENGTH = L;
 				const N = Object(i.forwardRef)((e, t) => n.a.createElement(M, y({}, e, {
 						forwardedRef: t
 					}))),
@@ -354,8 +354,8 @@
 				v = s("./src/reddit/constants/adEvents.ts"),
 				y = s("./src/reddit/constants/keycodes.ts"),
 				O = s("./src/reddit/helpers/mediaGallery/index.tsx"),
-				w = s("./src/reddit/models/Media/index.ts"),
-				I = s("./src/reddit/selectors/media.ts"),
+				I = s("./src/reddit/models/Media/index.ts"),
+				w = s("./src/reddit/selectors/media.ts"),
 				C = s("./src/reddit/components/Media/GalleryBox/index.m.less"),
 				S = s.n(C);
 			const {
@@ -400,7 +400,7 @@
 					left: "0px"
 				} : {
 					left: s > t ? "-100%" : "100%"
-				}, g = Object(O.c)(l), x = a.y > g && Object(w.K)(a.y, a.x), f = x ? {} : {
+				}, g = Object(O.c)(l), x = a.y > g && Object(I.K)(a.y, a.x), f = x ? {} : {
 					maxHeight: "100%"
 				};
 				let v;
@@ -506,7 +506,7 @@
 						subredditName: W,
 						isVisible: H
 					} = e,
-					F = Object(o.e)(e => Object(I.b)(e, A)),
+					F = Object(o.e)(e => Object(w.b)(e, A)),
 					U = F > 0,
 					G = F < p.length - 1,
 					K = Object(h.a)(),
@@ -578,11 +578,11 @@
 							n = Object(O.g)(i),
 							o = n.x / n.y < 1,
 							a = Object(O.h)(e),
-							r = Object(O.i)(e || {}, Object(O.c)(s), w.p);
+							r = Object(O.i)(e || {}, Object(O.c)(s), I.p);
 						return s || r || a || o ? {
 							height: t
 						} : {
-							paddingBottom: `${Object(w.B)(n.y,n.x)}%`
+							paddingBottom: `${Object(I.B)(n.y,n.x)}%`
 						}
 					})(T, b, g);
 				return n.a.createElement("div", {
@@ -599,7 +599,7 @@
 						o = T && T[i];
 					if (!o || !o.s) return null;
 					const a = [...o && o.s ? [o.s] : [], ...o && o.p ? o.p : []],
-						r = Object(O.d)(w.y, a);
+						r = Object(O.d)(I.y, a);
 					if (!r) return null;
 					const d = o.s;
 					return n.a.createElement("div", {
@@ -848,12 +848,12 @@
 					onIframeLoaded: b,
 					embedBoxChildRef: y,
 					source: O,
-					title: w,
-					postId: I
+					title: I,
+					postId: w
 				} = e, [C, S] = Object(n.useState)(!1), j = Object(d.a)(t), T = Object(n.useRef)(), {
 					height: L,
 					isDeleted: M
-				} = Object(a.e)(e => e.mediaEmbed[I] || {}), N = M ? E : L || v;
+				} = Object(a.e)(e => e.mediaEmbed[w] || {}), N = M ? E : L || v;
 
 				function _(e) {
 					var t;
@@ -893,7 +893,7 @@
 					showCentered: s.showCentered,
 					showFull: !0,
 					source: O,
-					title: w,
+					title: I,
 					width: f
 				}), s.isListing && N > p.j && o.a.createElement("div", {
 					className: g.a.seeMore
@@ -968,8 +968,8 @@
 				v = s("./src/lib/sentry/index.ts"),
 				y = s("./src/lib/truncateText/index.ts"),
 				O = s("./src/reddit/components/AdViewability/index.tsx"),
-				w = s("./src/reddit/components/Governance/VaultActionLink/async.ts"),
-				I = s("./src/reddit/components/HTML5StreamPlayer/index.tsx"),
+				I = s("./src/reddit/components/Governance/VaultActionLink/async.ts"),
+				w = s("./src/reddit/components/HTML5StreamPlayer/index.tsx"),
 				C = s("./src/reddit/components/Media/constants.ts"),
 				S = s("./src/reddit/components/Media/EmbedBox/index.tsx"),
 				j = s("./src/reddit/components/Media/GalleryBox/index.tsx"),
@@ -1033,7 +1033,7 @@
 				}, {
 					ssr: !1
 				}),
-				ne = Object(m.a)(I.b, {
+				ne = Object(m.a)(w.b, {
 					playerName: "Reddit Player"
 				}),
 				oe = 300,
@@ -1336,13 +1336,13 @@
 						subredditOrProfileDisplayText: E
 					} = this.props, {
 						canLoadContent: y,
-						forcePause: I,
+						forcePause: w,
 						shouldPause: C,
 						shouldStop: V,
 						viewportWidth: k
 					} = this.state;
 					if (!h.media) return null;
-					const B = I || C,
+					const B = w || C,
 						$ = V,
 						{
 							source: z,
@@ -1419,7 +1419,7 @@
 								rtJsonElementProps: Ee(this.props),
 								renderMediaAsLinks: d,
 								shouldBlur: ae
-							}), l.a.createElement(w.b, {
+							}), l.a.createElement(I.b, {
 								content: n
 							})), l.a.createElement(M.a, {
 								postId: h.id,
@@ -1582,7 +1582,7 @@
 								url: h.media.hlsUrl
 							}));
 						case Y.o.IMAGE:
-							const I = this.state.viewportHeight - 2 * de,
+							const w = this.state.viewportHeight - 2 * de,
 								V = this.state.viewportWidth - 2 * de;
 							let k = z;
 							return this.props.isMiniCard && !this.props.isMiniCardHQPreviews && (h.thumbnail && Object(x.a)(h.thumbnail.url) ? k = h.thumbnail.url : h.preview && Object(x.a)(h.preview.url) && (k = h.preview.url)), l.a.createElement(L.a, se({}, oe, {
@@ -1600,7 +1600,7 @@
 								isNSFW: this.isNSFW(),
 								isCrosspost: !!s,
 								isSpoiler: this.isSpoiler(),
-								maxHeight: a ? I : void 0,
+								maxHeight: a ? w : void 0,
 								maxWidth: a ? V : void 0,
 								postId: h.id,
 								shouldBlur: ae,
@@ -1889,4 +1889,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.76e1ab5995f80984f100.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.d42f0763d34887289fe8.js.map

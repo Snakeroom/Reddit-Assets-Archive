@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.b3fbf646b2d132e755e8.js
-// Retrieved at 11/3/2021, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.a2955d947409eae8f114.js
+// Retrieved at 11/3/2021, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -52,16 +52,16 @@
 			const p = Object(o.a)(e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.wd
+					experimentName: u.xd
 				});
-				return Object(u.af)(t) ? void 0 : t
+				return Object(u.bf)(t) ? void 0 : t
 			}, e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.xd
+					experimentName: u.yd
 				});
-				return Object(u.af)(t) ? void 0 : t
-			}, (e, t) => e === u.Bd.Enabled && t === u.Bd.Enabled);
+				return Object(u.bf)(t) ? void 0 : t
+			}, (e, t) => e === u.Cd.Enabled && t === u.Cd.Enabled);
 			var h = s("./src/config.ts");
 			var b = s("./src/reddit/selectors/user.ts");
 			const f = e => {
@@ -1162,7 +1162,7 @@
 						viewCountTotals: s,
 						shareCountTotals: n
 					} = t;
-					return (null == s ? void 0 : s.status) === r.b.Unavailable && (null == n ? void 0 : n.status) === r.b.Unavailable ? a.NotAvailableYet : !(null == s ? void 0 : s.totalCount) || s.totalCount < 10 ? a.NotAvailableYet : a.Available
+					return (null == s ? void 0 : s.status) === r.c.Unavailable && (null == n ? void 0 : n.status) === r.c.Unavailable ? a.NotAvailableYet : !(null == s ? void 0 : s.totalCount) || s.totalCount < 10 ? a.NotAvailableYet : a.Available
 				}
 		},
 		"./src/reddit/components/Econ/DefaultAvatar/index.m.less": function(e, t, s) {
@@ -5487,7 +5487,7 @@
 						postId: t
 					}) || Object(o.H)(e))(e, t),
 					experimentName: r.N
-				}) === r.Hc
+				}) === r.Ic
 			}
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, s) {
@@ -5618,4 +5618,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.b3fbf646b2d132e755e8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.a2955d947409eae8f114.js.map

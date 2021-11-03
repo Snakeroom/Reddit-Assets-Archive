@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SignupUpsell.6ddc4d54fe32a36eea74.js
-// Retrieved at 11/3/2021, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SignupUpsell.3b80701c2934b566beca.js
+// Retrieved at 11/3/2021, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SignupUpsell"], {
 		"./src/reddit/components/Upsell/SSOButton/index.m.less": function(e, t, s) {
@@ -116,8 +116,8 @@
 					L: "large"
 				},
 				w = "d2x_geo_upsell_tier_0",
-				J = "d2x_geo_upsell_tier_1",
-				U = "d2x_geo_upsell_tier_2";
+				U = "d2x_geo_upsell_tier_1",
+				y = "d2x_geo_upsell_tier_2";
 			t.default = function({
 				onDismiss: e,
 				size: t
@@ -139,18 +139,18 @@
 						const e = Object(l.e)(S.b),
 							t = Object(l.e)(S.d),
 							s = Object(l.e)(S.f),
-							i = Object(N.a)(b.Jb.Bottom_sheet),
-							o = Object(N.a)(b.Jb.Bottom_cell),
-							c = Object(N.a)(b.Jb.Bottom_cell_dismissible),
-							r = Object(N.a)(b.Jb.Bottom_cell_dismissible_immediate_trigger),
-							a = Object(N.a)(b.Jb.Bottom_cell_signup_upsell_copy),
-							d = Object(N.a)(b.Jb.Bottom_cell_surprise_install_copy);
+							i = Object(N.a)(b.Kb.Bottom_sheet),
+							o = Object(N.a)(b.Kb.Bottom_cell),
+							c = Object(N.a)(b.Kb.Bottom_cell_dismissible),
+							r = Object(N.a)(b.Kb.Bottom_cell_dismissible_immediate_trigger),
+							a = Object(N.a)(b.Kb.Bottom_cell_signup_upsell_copy),
+							d = Object(N.a)(b.Kb.Bottom_cell_surprise_install_copy);
 						let u;
 						if (e) u = w;
-						else if (t) u = J;
+						else if (t) u = U;
 						else {
 							if (!s) throw new Error("Not eligible for signup upsell");
-							u = U
+							u = y
 						}
 						const p = `${n.a.assetPath}/img/upsell/appQrCode/${u}/`;
 						if (i) return `${p}bottom_sheet.png`;
@@ -161,14 +161,14 @@
 						if (e && d) return `${p}bottom_cell_surprise_install_copy.png`;
 						throw new Error("Invalid variant for signup upsell")
 					}(),
-					v = Object(N.a)(b.Jb.Bottom_cell_signup_upsell_copy),
-					y = Object(N.a)(b.Jb.Bottom_cell_surprise_install_copy),
-					D = v ? i.fbt._("Come join us, we have snacks", null, {
+					v = Object(N.a)(b.Kb.Bottom_cell_signup_upsell_copy),
+					D = Object(N.a)(b.Kb.Bottom_cell_surprise_install_copy),
+					K = v ? i.fbt._("Come join us, we have snacks", null, {
 						hk: "1LUl2W"
 					}) : i.fbt._("Log in or sign up for the best experience", null, {
 						hk: "2LAHQy"
 					}),
-					A = y ? i.fbt._("Scan the QR code, it's super fun", null, {
+					A = D ? i.fbt._("Scan the QR code, it's super fun", null, {
 						hk: "1nNmn7"
 					}) : i.fbt._("Get the app", null, {
 						hk: "2NvKYa"
@@ -189,7 +189,7 @@
 					type: "button"
 				}, o.createElement(k.a, null)), o.createElement("div", {
 					className: C.a.title
-				}, D), o.createElement("div", {
+				}, K), o.createElement("div", {
 					className: C.a.bottom
 				}, o.createElement("div", {
 					className: C.a.left
@@ -289,9 +289,9 @@
 					experimentName: e,
 					experimentEligibilitySelector: r,
 					throttledVariants: {
-						[i.Jb.Bottom_cell_dismissible]: e,
-						[i.Jb.Bottom_cell_dismissible_immediate_trigger]: e,
-						[i.Jb.Bottom_sheet]: e
+						[i.Kb.Bottom_cell_dismissible]: e,
+						[i.Kb.Bottom_cell_dismissible_immediate_trigger]: e,
+						[i.Kb.Bottom_sheet]: e
 					},
 					expEventOverride: t
 				})
@@ -305,4 +305,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SignupUpsell.6ddc4d54fe32a36eea74.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SignupUpsell.3b80701c2934b566beca.js.map

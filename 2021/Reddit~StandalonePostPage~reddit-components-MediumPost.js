@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-MediumPost.3456381436ee10289f76.js
-// Retrieved at 11/3/2021, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-MediumPost.06075de5fdf7380bd3e7.js
+// Retrieved at 11/3/2021, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~StandalonePostPage~reddit-components-MediumPost"], {
 		"./src/lib/hooks/usePrevious.ts": function(e, t, r) {
@@ -2978,19 +2978,19 @@
 				o = r("./src/reddit/helpers/chooseVariant/index.ts"),
 				a = r("./src/reddit/selectors/experiments/index.ts");
 			const c = Object(n.a)(e => Object(o.c)(e, {
-					experimentName: s.sb,
+					experimentName: s.tb,
 					experimentEligibilitySelector: a.e
 				}), e => e === s.W.Enabled),
 				i = Object(n.a)(e => Object(o.c)(e, {
-					experimentName: s.tb,
+					experimentName: s.ub,
 					experimentEligibilitySelector: a.e
 				}), e => e === s.X.Enabled),
 				d = Object(n.a)(e => Object(o.c)(e, {
-					experimentName: s.ub,
+					experimentName: s.vb,
 					experimentEligibilitySelector: a.e
 				}), e => e === s.Y.Enabled),
 				l = Object(n.a)(e => Object(o.c)(e, {
-					experimentName: s.vb,
+					experimentName: s.wb,
 					experimentEligibilitySelector: a.e
 				}), e => e === s.Z.Enabled)
 		},
@@ -3074,8 +3074,8 @@
 					if (Object(a.a)(e)) return !1;
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: n.zb
-					}) === n.Mb.Enabled
+						experimentName: n.Ab
+					}) === n.Nb.Enabled
 				}
 		},
 		"./src/reddit/selectors/experiments/presence.ts": function(e, t, r) {
@@ -3088,8 +3088,8 @@
 			const o = e => {
 				return Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: n.Sd
-				}) === n.Hc
+					experimentName: n.Td
+				}) === n.Ic
 			}
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, r) {
@@ -3472,4 +3472,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-MediumPost.3456381436ee10289f76.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-MediumPost.06075de5fdf7380bd3e7.js.map

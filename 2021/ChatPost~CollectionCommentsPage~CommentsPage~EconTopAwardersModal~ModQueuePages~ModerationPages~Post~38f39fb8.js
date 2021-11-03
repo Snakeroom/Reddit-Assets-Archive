@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.f2aa213ebd477624c989.js
-// Retrieved at 11/3/2021, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.0012e6631a9271cd526b.js
+// Retrieved at 11/3/2021, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8"], {
 		"./src/reddit/actions/economics/subredditPremium/actionCreators.ts": function(e, t, r) {
@@ -1885,7 +1885,7 @@
 						showTimestamp: B = !0,
 						subredditOrProfile: M,
 						tooltipType: L
-					} = e, R = Object(o.d)(), H = Object(f.a)(), D = Object(o.e)(Z.a), G = Object(o.e)(te.d), Q = Object(o.e)(te.g) || ["popular", "all"].includes(G || ""), q = !(!v.isSponsored || !D || Object(l.af)(D));
+					} = e, R = Object(o.d)(), H = Object(f.a)(), D = Object(o.e)(Z.a), G = Object(o.e)(te.d), Q = Object(o.e)(te.g) || ["popular", "all"].includes(G || ""), q = !(!v.isSponsored || !D || Object(l.bf)(D));
 					Object(s.useEffect)(() => {
 						q && R(Object(p.d)(v.author))
 					}, []);
@@ -2870,15 +2870,15 @@
 			const a = e => {
 					const t = Object(n.c)(e, {
 						experimentEligibilitySelector: o.K,
-						experimentName: s.mc
+						experimentName: s.nc
 					});
-					return !(!t || Object(s.af)(t))
+					return !(!t || Object(s.bf)(t))
 				},
 				i = e => {
 					return Object(n.c)(e, {
 						experimentEligibilitySelector: o.K,
-						experimentName: s.mc
-					}) === s.Mc.ListingEnabled
+						experimentName: s.nc
+					}) === s.Nc.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/gold/topAwarded.ts": function(e, t, r) {
@@ -2938,4 +2938,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.f2aa213ebd477624c989.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.0012e6631a9271cd526b.js.map

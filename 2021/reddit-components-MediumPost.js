@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.be8f7b07adaaf49d9886.js
-// Retrieved at 11/3/2021, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.627fd404a6638cfafa0c.js
+// Retrieved at 11/3/2021, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-MediumPost"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -1042,7 +1042,7 @@
 						viewCountTotals: s,
 						shareCountTotals: o
 					} = t;
-					return (null == s ? void 0 : s.status) === n.b.Unavailable && (null == o ? void 0 : o.status) === n.b.Unavailable ? r.NotAvailableYet : !(null == s ? void 0 : s.totalCount) || s.totalCount < 10 ? r.NotAvailableYet : r.Available
+					return (null == s ? void 0 : s.status) === n.c.Unavailable && (null == o ? void 0 : o.status) === n.c.Unavailable ? r.NotAvailableYet : !(null == s ? void 0 : s.totalCount) || s.totalCount < 10 ? r.NotAvailableYet : r.Available
 				}
 		},
 		"./src/reddit/components/EventPost/EventMetaHeader/index.m.less": function(e, t, s) {
@@ -2386,7 +2386,7 @@
 						subreddit: s
 					} = e, {
 						isSponsored: n
-					} = t, o = Object(B.a)(), i = Object(V.a)(m.Rc) === m.Wc.Enabled;
+					} = t, o = Object(B.a)(), i = Object(V.a)(m.Sc) === m.Xc.Enabled;
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return r.a.createElement(Z, {
 						nowrap: e.nowrap
 					}, r.a.createElement(K, e));
@@ -4463,7 +4463,7 @@
 						postId: t
 					}) || Object(i.H)(e))(e, t),
 					experimentName: n.N
-				}) === n.Hc
+				}) === n.Ic
 			}
 		},
 		"./src/reddit/selectors/experiments/econAwardsPlaque.ts": function(e, t, s) {
@@ -4476,9 +4476,9 @@
 			const r = e => {
 				const t = Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
-					experimentName: n.fc
+					experimentName: n.gc
 				});
-				return !(!t || Object(n.af)(t))
+				return !(!t || Object(n.bf)(t))
 			}
 		},
 		"./src/reddit/selectors/i18n/index.ts": function(e, t, s) {
@@ -4494,7 +4494,7 @@
 				i = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const a = e => {
 					const t = Object(i.a)(e);
-					return Boolean(t) && !Object(o.af)(t)
+					return Boolean(t) && !Object(o.bf)(t)
 				},
 				c = Object(n.a)(a, r.d, (e, t) => e && !t)
 		},
@@ -4510,13 +4510,13 @@
 				r = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = s("./src/reddit/selectors/posts.ts");
 			const a = e => Object(r.c)(e, {
-					experimentName: o.Vd,
+					experimentName: o.Wd,
 					experimentEligibilitySelector: r.a
 				}),
-				c = (e, t) => t === o.ee.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				c = (e, t) => t === o.fe.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				d = Object(n.a)(i.H, a, (e, t) => c(e, t)),
 				l = Object(n.a)((e, t) => t, a, (e, t) => c(e, t))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.be8f7b07adaaf49d9886.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.627fd404a6638cfafa0c.js.map
