@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.a2cc6ca011c51f2af241.js
-// Retrieved at 11/3/2021, 2:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.31c73484a9ad5fbff07f.js
+// Retrieved at 11/3/2021, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~Subreddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, r) {
@@ -1960,23 +1960,25 @@
 					isHighlighted: h,
 					isNft: I,
 					isNSFW: j,
-					isOnlineStatusLoadTest: w,
-					isProfileIcon: k,
-					omitResponsivePresenceWrapper: S,
-					onPresenceIndicatorInViewport: E,
-					shouldShowPresenceIndicator: x,
-					user: T,
-					userName: C,
-					isProfileAvatarChangeFixEnabled: P,
-					...D
-				} = e, N = !!c && Object(f.e)(c) === C, L = N ? c : T, R = L && L.accountIcon || a, A = T ? T.isNSFW : j, U = Object(d.a)(R) && !b, B = U ? i.a.createElement(_.a, {
-					headshot: R,
+					shouldUseOnlineOverride: w,
+					isOnlineOverrideValue: k,
+					isOnlineStatusLoadTest: S,
+					isProfileIcon: E,
+					omitResponsivePresenceWrapper: x,
+					onPresenceIndicatorInViewport: T,
+					shouldShowPresenceIndicator: C,
+					user: P,
+					userName: D,
+					isProfileAvatarChangeFixEnabled: N,
+					...L
+				} = e, R = !!c && Object(f.e)(c) === D, A = R ? c : P, U = A && A.accountIcon || a, B = P ? P.isNSFW : j, H = Object(d.a)(U) && !b, F = H ? i.a.createElement(_.a, {
+					headshot: U,
 					className: e.className
-				}) : i.a.createElement(m.b, v({}, D, {
-					iconUrl: b && r ? "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_3.png" : R,
-					isCurrentUser: N,
-					isNSFW: A
-				})), [H, F] = Object(o.useState)(!1), M = Object(o.useMemo)(() => ({
+				}) : i.a.createElement(m.b, v({}, L, {
+					iconUrl: b && r ? "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_3.png" : U,
+					isCurrentUser: R,
+					isNSFW: B
+				})), [M, G] = Object(o.useState)(!1), W = Object(o.useMemo)(() => ({
 					input: {
 						channel: {
 							teamOwner: "CONTENT_AND_COMMUNITIES",
@@ -1984,40 +1986,40 @@
 							userID: t
 						}
 					}
-				}), [t]), G = Object(o.useCallback)(e => {
+				}), [t]), q = Object(o.useCallback)(e => {
 					const {
 						isOnline: t
 					} = e.subscribe.data;
-					F(t)
-				}, []), W = Object(o.useRef)(null), [q, z] = Object(o.useState)(!1), K = Object(o.useCallback)(e => {
+					G(t)
+				}, []), z = Object(o.useRef)(null), [K, Y] = Object(o.useState)(!1), V = Object(o.useCallback)(e => {
 					e.forEach(e => {
 						const {
 							isIntersecting: t,
 							intersectionRatio: r
 						} = e, n = 1 !== r;
-						t ? z(!0) : n && z(!1)
+						t ? Y(!0) : n && Y(!1)
 					})
-				}, []), Y = Object(o.useRef)({
+				}, []), Q = Object(o.useRef)({
 					rootMargin: "750px 0px 1000px 0px"
 				});
-				return Object(u.a)(W, K, Y.current), S ? B : i.a.createElement("div", {
+				return Object(u.a)(z, V, Q.current), x ? F : i.a.createElement("div", {
 					className: Object(n.a)(O.a.userIconWrapper, {
 						[O.a.nftUserIcon]: I,
-						[O.a.hasHeadShotWrapper]: U,
-						[O.a.isProfileIcon]: k && P
+						[O.a.hasHeadShotWrapper]: H,
+						[O.a.isProfileIcon]: E && N
 					}),
-					ref: W
+					ref: z
 				}, I && i.a.createElement(g.a, {
 					className: O.a.nftAnimation,
 					assetUrl: `${s.a.assetPath}/img/snoovatars/nft_comment_animation.json`,
 					loop: !0
-				}), B, x && H && i.a.createElement(p.default, {
+				}), F, C && (M || w && k) && i.a.createElement(p.default, {
 					showPresence: !0,
 					isHighlighted: h,
-					onceInViewport: E
-				}), (x || w) && q && i.a.createElement(l.a, {
-					variables: M,
-					onData: x ? G : y,
+					onceInViewport: T
+				}), (C || S) && !w && K && i.a.createElement(l.a, {
+					variables: W,
+					onData: C ? q : y,
 					queryKey: "isUserOnline"
 				}))
 			})
@@ -4919,4 +4921,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.a2cc6ca011c51f2af241.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.31c73484a9ad5fbff07f.js.map

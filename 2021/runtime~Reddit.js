@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.d46ae0100b729803d1aa.js
-// Retrieved at 11/3/2021, 2:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.b2bc541025c6b455c9ec.js
+// Retrieved at 11/3/2021, 3:50:04 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var n, a, r = o[0], s = o[1], c = o[2], l = 0, P = []; l < r.length; l++) a = r[l], Object.prototype.hasOwnProperty.call(d, a) && d[a] && P.push(d[a][0]), d[a] = 0;
@@ -800,7 +800,7 @@
 					HarbergerTaxBannerPurchaseCTA: "a8576f0c16cb09aecc82",
 					IdCard: "661e57bc7fd17c99fd74",
 					MuxEmbed: "31d6cfe0d16ae931b73c",
-					NewCommentPill: "0894d997bf075e88c18d",
+					NewCommentPill: "2a7eb882eab708ce0b69",
 					ReadingIndicator: "cb5111d240398d3efd38",
 					ReportFlowNew: "9b4cecf115860aff4fb0",
 					ReredditLink: "3e28d2c18e37eb5d3c53",
@@ -1306,8 +1306,8 @@
 						"CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate": "fcbf9f7db1843c0b3b1f",
 						"CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki": "5071d804d85fbe4c242f",
 						"CollectionCommentsPage~CommentsPage~ProfileOverview": "970752af2140267a3351",
-						CollectionCommentsPage: "2e86a102ea866c1390c7",
-						CommentsPage: "d3f43ac3526bc916e5f1",
+						CollectionCommentsPage: "28a0985bb21fbb92e604",
+						CommentsPage: "230d55e7ec6d181c6fb1",
 						"ProfileComments~ProfileOverview~ProfilePrivate": "b1c11ef53f210c58f514",
 						ProfileOverview: "d2894e8eeda511f069fa",
 						ProfileComments: "045f8254aeaf961aa76d",
@@ -1407,7 +1407,7 @@
 						"translations/es_MX-json": "75789ae64ac5ddeab37c",
 						"translations/fr_FR-json": "f7a63d354b30fcd95ea6",
 						"translations/it_IT-json": "79ccc19c5147318bd7f3",
-						"translations/pseudo_ext-json": "bfb56997bf8a029cd9b0",
+						"translations/pseudo_ext-json": "52fd17cdf1c72b5ab1bb",
 						"translations/pseudo_long-json": "c963c30f68af05f7790b",
 						"translations/pseudo_short-json": "721ccf093bdb6523ccdf",
 						"translations/pt_BR-json": "06ad33cd5d7064b8e861",
@@ -1467,7 +1467,7 @@
 						HarbergerTaxBannerPurchaseCTA: "1322810c1a2ef3bca677",
 						IdCard: "47ce321d46dbc1e11f3d",
 						MuxEmbed: "982b3400754d822142c4",
-						NewCommentPill: "82d049df39532e763bd0",
+						NewCommentPill: "8b63541cca0fda427858",
 						ReadingIndicator: "d68cab98e20fdacdbf48",
 						ReportFlowNew: "032b3b3bfde718b5bf77",
 						ReredditLink: "d89d3daf5c8ab0e831ef",
@@ -1661,4 +1661,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.d46ae0100b729803d1aa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.b2bc541025c6b455c9ec.js.map
