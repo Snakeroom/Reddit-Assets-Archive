@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GoldPurchasePaymentActions.c6979fa5fca945ed68f3.js
-// Retrieved at 10/13/2021, 6:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GoldPurchasePaymentActions.dea3a2f7c015a29bde0c.js
+// Retrieved at 11/3/2021, 12:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GoldPurchasePaymentActions"], {
 		"./src/reddit/actions/goldPurchaseModals/payment.ts": function(e, t, r) {
@@ -603,7 +603,7 @@
 				l = e => e.features.goldPurchase.packageOfferModal.packageId,
 				p = e => e.features.goldPurchase.premiumPurchaseModal.renewInterval,
 				b = e => {
-					const t = Object(n.j)(e),
+					const t = Object(n.k)(e),
 						r = (e => e.features.goldPurchase.premiumPurchaseModal.packageId)(e);
 					return t.length && r && t.find(e => e.mobileId === r) || null
 				},
@@ -630,4 +630,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GoldPurchasePaymentActions.c6979fa5fca945ed68f3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GoldPurchasePaymentActions.dea3a2f7c015a29bde0c.js.map

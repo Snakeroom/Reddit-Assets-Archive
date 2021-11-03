@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OnboardingModal.32071d32a4a6098df415.js
-// Retrieved at 11/3/2021, 11:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OnboardingModal.93c4395b2a5143639b38.js
+// Retrieved at 11/3/2021, 12:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OnboardingModal"], {
 		"./node_modules/lodash/times.js": function(e, t, n) {
@@ -361,8 +361,8 @@
 				M = n("./src/reddit/constants/postLayout.ts"),
 				q = n("./src/reddit/contexts/PageLayer/index.tsx"),
 				B = n("./src/reddit/helpers/frontpageCardPostCountExperiment.ts"),
-				D = n("./src/reddit/helpers/getTimeSortForListing/index.ts"),
-				V = n("./src/reddit/models/Toast/index.ts"),
+				V = n("./src/reddit/helpers/getTimeSortForListing/index.ts"),
+				D = n("./src/reddit/models/Toast/index.ts"),
 				G = n("./src/reddit/selectors/experiments/frontpageSignup.ts"),
 				U = n("./src/reddit/selectors/frontpage.ts"),
 				W = n("./src/reddit/selectors/goldPurchaseModals.ts"),
@@ -424,7 +424,7 @@
 							...O.body
 						})), n(A.f({
 							id: j,
-							kind: V.b.Error,
+							kind: D.b.Error,
 							text: r.fbt._("Sorry, we couldn't load posts for this page.", null, {
 								hk: "36ypKx"
 							}),
@@ -465,7 +465,7 @@
 						limit: O,
 						sort: a,
 						statsdPathsForExperiments: j,
-						t: Object(D.a)(a, g)
+						t: Object(V.a)(a, g)
 					})), n(P.m({
 						title: T.d()
 					})), Object(X.c)(i, {
@@ -524,7 +524,7 @@
 									isMobile: Object(i.e)(s.meta.userAgent),
 									limit: d,
 									sort: a,
-									t: Object(D.a)(a, p),
+									t: Object(V.a)(a, p),
 									layout: M.e[Object(q.Q)(s, {})],
 									useMockData: e
 								}; {
@@ -572,7 +572,7 @@
 					await t(de(c, {
 						limit: m,
 						sort: o,
-						t: Object(D.a)(o, l),
+						t: Object(V.a)(o, l),
 						isRefresh: !0
 					}))
 				}
@@ -777,8 +777,8 @@
 				M = n("./src/reddit/icons/svgs/CommunityDefault/filled.tsx"),
 				q = n("./src/reddit/icons/svgs/Plus/index.tsx"),
 				B = n("./src/reddit/icons/svgs/Positive/index.tsx"),
-				D = n("./src/reddit/components/Onboarding/CommunityPicker.m.less"),
-				V = n.n(D);
+				V = n("./src/reddit/components/Onboarding/CommunityPicker.m.less"),
+				D = n.n(V);
 			const {
 				fbt: G
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), U = () => G._("Recommended for you", null, {
@@ -799,12 +799,12 @@
 					n(e.topicId, !c), a(!c)
 				}, [e.topicId, c, n]);
 				return i.a.createElement(i.a.Fragment, null, i.a.createElement("div", {
-					className: V.a.RecommendedHeader
+					className: D.a.RecommendedHeader
 				}, i.a.createElement("span", {
-					className: V.a.SectionTitle
+					className: D.a.SectionTitle
 				}, e.topicTitle), i.a.createElement("button", {
 					onClick: d,
-					className: V.a.SelectAllLink
+					className: D.a.SelectAllLink
 				}, c && G._("Deselect All", null, {
 					hk: "4u0XYF"
 				}), !c && null !== c && G._("Select All", null, {
@@ -862,35 +862,35 @@
 						l(Object(F.d)(!r, a, s)), c(e)
 					}, [e, r, s, l, c, a]);
 				return i.a.createElement("div", {
-					className: Object(d.a)(V.a.CommunityRow, {
-						[V.a.Selected]: r
+					className: Object(d.a)(D.a.CommunityRow, {
+						[D.a.Selected]: r
 					}),
 					onClick: u
 				}, i.a.createElement("div", {
-					className: V.a.IconSection
+					className: D.a.IconSection
 				}, n && i.a.createElement("img", {
-					className: V.a.IconWrapper,
+					className: D.a.IconWrapper,
 					src: n
 				}), !n && i.a.createElement(M.a, {
-					className: V.a.CommunityNoIcon
+					className: D.a.CommunityNoIcon
 				})), i.a.createElement("div", {
-					className: V.a.TextSection
+					className: D.a.TextSection
 				}, i.a.createElement("div", {
-					className: V.a.Info
+					className: D.a.Info
 				}, s), i.a.createElement("div", {
-					className: V.a.Description
+					className: D.a.Description
 				}, t)), i.a.createElement("div", {
-					className: V.a.ButtonSection
+					className: D.a.ButtonSection
 				}, r && i.a.createElement(B.a, {
-					className: V.a.SelectedIcon
+					className: D.a.SelectedIcon
 				}), !r && i.a.createElement(q.a, {
-					className: V.a.SelectIcon
+					className: D.a.SelectIcon
 				})))
 			}, K = ({
 				showMore: e,
 				text: t
 			}) => i.a.createElement("div", {
-				className: V.a.MoreRecommendations
+				className: D.a.MoreRecommendations
 			}, i.a.createElement("button", {
 				onClick: e
 			}, !t && G._("More recommendations", null, {
@@ -910,7 +910,7 @@
 					return Object(o.useEffect)(() => {
 						a(Object(F.g)())
 					}, [a]), i.a.createElement("div", {
-						className: V.a.CommunityListWrapper
+						className: D.a.CommunityListWrapper
 					}, n.length > 0 && i.a.createElement(W, {
 						community: {
 							communities: n,
@@ -1260,7 +1260,7 @@
 					r.ok = !1
 				}
 				return r
-			}, De = async (e, t, n, r) => {
+			}, Ve = async (e, t, n, r) => {
 				const s = Object.keys(n),
 					o = Object.keys(r),
 					i = [],
@@ -1279,11 +1279,11 @@
 					c.ok = !1
 				}
 				return c
-			}, Ve = Object(a.a)(e => {
+			}, De = Object(a.a)(e => {
 				const {
 					gqlContext: t,
 					apiContext: n
-				} = e, r = Object(c.d)(), s = Object(O.a)(), a = Object(c.e)(we.c), m = a === ue.De.Enabled_noskip || a === ue.De.Enabled_noskip_no_preselect, b = a === ue.De.Enabled_noskip_no_preselect, [p, g] = Object(o.useState)(de.INTERESTS), [j, h] = Object(o.useState)([]), [k, y] = Object(o.useState)({}), [I, _] = Object(o.useState)(!1), [x, E] = Object(o.useState)([]), [C, T] = Object(o.useState)([]), [N, R] = Object(o.useState)({}), {
+				} = e, r = Object(c.d)(), s = Object(O.a)(), a = Object(c.e)(we.c), m = a === ue.Ee.Enabled_noskip || a === ue.Ee.Enabled_noskip_no_preselect, b = a === ue.Ee.Enabled_noskip_no_preselect, [p, g] = Object(o.useState)(de.INTERESTS), [j, h] = Object(o.useState)([]), [k, y] = Object(o.useState)({}), [I, _] = Object(o.useState)(!1), [x, E] = Object(o.useState)([]), [C, T] = Object(o.useState)([]), [N, R] = Object(o.useState)({}), {
 					avatarImage: P,
 					fetchRandomAvatar: A,
 					saveAvatar: L
@@ -1317,28 +1317,28 @@
 					B = Object(o.useCallback)(async () => {
 						s(Object(F.j)()), g(de.COMMUNITIES), q()
 					}, [q, s]),
-					D = Object(o.useCallback)(async () => {
+					V = Object(o.useCallback)(async () => {
 						s(Object(F.e)()), A(), g(de.AVATAR);
-						const e = await De(n, t, N, k);
+						const e = await Ve(n, t, N, k);
 						e.ok ? e.reload && r(Object(l.frontpageReloaded)()) : r(qe())
 					}, [n, r, A, t, N, k, s]),
-					V = Object(o.useCallback)(() => {
+					D = Object(o.useCallback)(() => {
 						g(de.CELEBRATION), M()
 					}, [M]),
 					G = Object(o.useCallback)(() => {
-						L(), V()
-					}, [L, V]),
-					U = (() => p === de.INTERESTS ? B : p === de.COMMUNITIES ? D : G)(),
+						L(), D()
+					}, [L, D]),
+					U = (() => p === de.INTERESTS ? B : p === de.COMMUNITIES ? V : G)(),
 					W = Object(c.e)(e => p === de.AVATAR && Object(Le.e)(e));
 				Object(o.useEffect)(() => {
-					p !== de.AVATAR || W || V()
-				}, [W, p, V]);
+					p !== de.AVATAR || W || D()
+				}, [W, p, D]);
 				const z = Object(o.useCallback)(() => {
 						p === de.COMMUNITIES ? g(de.INTERESTS) : p === de.AVATAR && g(de.COMMUNITIES)
 					}, [p]),
 					Z = Object(o.useCallback)(() => {
-						p === de.INTERESTS ? (s(Object(F.i)()), w()) : p === de.AVATAR && (s(Object(f.a)("skip")), V())
-					}, [w, s, p, V]),
+						p === de.INTERESTS ? (s(Object(F.i)()), w()) : p === de.AVATAR && (s(Object(f.a)("skip")), D())
+					}, [w, s, p, D]),
 					Q = [de.COMMUNITIES, de.AVATAR].includes(p),
 					K = p === de.AVATAR || p === de.INTERESTS && !m,
 					X = Object.keys(N).length,
@@ -1404,7 +1404,7 @@
 					hk: "15wNPy"
 				}))))
 			});
-			t.default = Object(be.b)(e => i.a.createElement(Ve, Fe({}, e, {
+			t.default = Object(be.b)(e => i.a.createElement(De, Fe({}, e, {
 				className: Object(d.a)(e.className, ce.a.modal),
 				onOverlayClick: s.a,
 				overlayClassName: ce.a.overlay
@@ -1888,4 +1888,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.32071d32a4a6098df415.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.93c4395b2a5143639b38.js.map

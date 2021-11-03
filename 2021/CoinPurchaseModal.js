@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.a004ab98a8652086fcfd.js
-// Retrieved at 10/13/2021, 6:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.7468045ce9273a22bb32.js
+// Retrieved at 11/3/2021, 12:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinPurchaseModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, a) {
@@ -245,14 +245,14 @@
 				}, N = (e, t, a) => async (n, c) => {
 					await n(Object(d.c)(e, a));
 					const s = c(),
-						o = Object(O.n)(s);
+						o = Object(O.p)(s);
 					if (0 !== o.length) n(w({
 						correlationId: a,
 						packageId: o[0].mobileId,
 						thingId: t
 					}));
 					else {
-						const e = Object(O.k)(s),
+						const e = Object(O.m)(s),
 							t = r.fbt._("Unable to create purchase request.", null, {
 								hk: "lgfDj"
 							});
@@ -1417,10 +1417,10 @@
 					stripeErrorMessage: k.j,
 					stripeTokenPending: k.m,
 					paypalErrorMessage: k.d,
-					purchaseCatalogError: P.k,
-					purchaseCatalogPending: P.l,
+					purchaseCatalogError: P.m,
+					purchaseCatalogPending: P.n,
 					purchasePackageId: k.t,
-					recommendedPackages: P.n,
+					recommendedPackages: P.p,
 					userName: e => {
 						const t = Object(x.k)(e);
 						return `u/${Object(O.e)(t)}`
@@ -1816,4 +1816,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.a004ab98a8652086fcfd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.7468045ce9273a22bb32.js.map

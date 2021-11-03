@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/UserAchievementFlair.dd608315a3f575b3a1ff.js
-// Retrieved at 10/28/2021, 5:10:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/UserAchievementFlair.bfb0ac8e39e2cae6972a.js
+// Retrieved at 11/3/2021, 12:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["UserAchievementFlair"], {
 		"./src/reddit/components/Econ/PowerupsFlair/HoverPopup.m.less": function(e, t, n) {
@@ -238,7 +238,7 @@
 								experimentName: c.G,
 								expEventOverride: t
 							});
-							return !!(Object(c.Qe)(n) ? void 0 : n)
+							return !!(Object(c.Re)(n) ? void 0 : n)
 						})(n)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -792,13 +792,13 @@
 			})), n.d(t, "i", (function() {
 				return z
 			})), n.d(t, "F", (function() {
-				return U
-			})), n.d(t, "B", (function() {
-				return Q
-			})), n.d(t, "H", (function() {
 				return R
-			})), n.d(t, "p", (function() {
+			})), n.d(t, "B", (function() {
+				return U
+			})), n.d(t, "H", (function() {
 				return q
+			})), n.d(t, "p", (function() {
+				return Q
 			})), n.d(t, "K", (function() {
 				return X
 			})), n.d(t, "y", (function() {
@@ -998,19 +998,19 @@
 				z = (e, {
 					draftKey: t
 				}) => e.features.comments.drafts[t],
-				U = (e, {
+				R = (e, {
 					commentId: t
 				}) => {
 					const n = t ? e.features.comments.submit.error[t] : void 0;
 					return n && n.fields ? n.fields.map(e => e.msg) : void 0
 				},
-				Q = (e, {
+				U = (e, {
 					commentId: t
 				}) => !!t && e.features.comments.submit.pending[t],
-				R = (e, {
+				q = (e, {
 					commentId: t
 				}) => !!t && e.features.comments.models[t].sendReplies,
-				q = e => e.features.comments.visitHighlightFilter,
+				Q = e => e.features.comments.visitHighlightFilter,
 				X = (e, t) => {
 					const n = Object(m.b)(e, t);
 					if (n) return Object(i.V)(e, n)
@@ -1031,4 +1031,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UserAchievementFlair.dd608315a3f575b3a1ff.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UserAchievementFlair.bfb0ac8e39e2cae6972a.js.map

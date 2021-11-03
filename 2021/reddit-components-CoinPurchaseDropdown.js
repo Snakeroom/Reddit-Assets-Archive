@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.06463883e3302043435a.js
-// Retrieved at 10/25/2021, 2:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.832d1b6bf187360c1922.js
+// Retrieved at 11/3/2021, 12:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CoinPurchaseDropdown"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, r) {
@@ -214,14 +214,14 @@
 				}, A = (e, t, r) => async (o, c) => {
 					await o(Object(d.c)(e, r));
 					const a = c(),
-						s = Object(j.n)(a);
+						s = Object(j.p)(a);
 					if (0 !== s.length) o(P({
 						correlationId: r,
 						packageId: s[0].mobileId,
 						thingId: t
 					}));
 					else {
-						const e = Object(j.k)(a),
+						const e = Object(j.m)(a),
 							t = n.fbt._("Unable to create purchase request.", null, {
 								hk: "lgfDj"
 							});
@@ -933,9 +933,9 @@
 					},
 					isFreeAwardEventEnabled: e => Object(G.a)(e) && Object(K.g)(e),
 					isPremiumSubscriber: z.t,
-					premiumPackages: K.j,
-					purchaseCatalogError: K.k,
-					purchaseCatalogPending: K.l
+					premiumPackages: K.k,
+					purchaseCatalogError: K.m,
+					purchaseCatalogPending: K.n
 				}),
 				J = Object(P.b)(X, e => ({
 					onClickClaimFreeAward: () => e(Object(S.h)(M.a.ECON_CLAIM_FREE_AWARD_MODAL)),
@@ -1471,4 +1471,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.06463883e3302043435a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.832d1b6bf187360c1922.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GoldTargetedOfferModal.0f036fb63798a9dd4bda.js
-// Retrieved at 10/13/2021, 6:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GoldTargetedOfferModal.e628584845f80dbd162e.js
+// Retrieved at 11/3/2021, 12:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GoldTargetedOfferModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, r) {
@@ -214,14 +214,14 @@
 				}, A = (e, t, r) => async (c, a) => {
 					await c(Object(d.c)(e, r));
 					const o = a(),
-						s = Object(y.n)(o);
+						s = Object(y.p)(o);
 					if (0 !== s.length) c(E({
 						correlationId: r,
 						packageId: s[0].mobileId,
 						thingId: t
 					}));
 					else {
-						const e = Object(y.k)(o),
+						const e = Object(y.m)(o),
 							t = n.fbt._("Unable to create purchase request.", null, {
 								hk: "lgfDj"
 							});
@@ -1156,4 +1156,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GoldTargetedOfferModal.0f036fb63798a9dd4bda.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GoldTargetedOfferModal.e628584845f80dbd162e.js.map

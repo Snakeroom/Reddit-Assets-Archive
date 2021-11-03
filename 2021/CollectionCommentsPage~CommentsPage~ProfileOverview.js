@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileOverview.d72a07e4fcf12c8a092f.js
-// Retrieved at 10/28/2021, 5:10:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileOverview.aa2b20f0000b7a0e0c25.js
+// Retrieved at 11/3/2021, 12:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ProfileOverview"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -584,7 +584,7 @@
 		"./src/reddit/components/PostList/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "b", (function() {
-				return Q
+				return Y
 			})), s.d(t, "a", (function() {
 				return X
 			}));
@@ -647,7 +647,7 @@
 				return void 0 === n && (n = o => {
 					s.trackOnPostExitedViewport(e, t, o, r, i)
 				}, U.set(o, n)), n
-			}, Q = (e, t, s = !1) => {
+			}, Y = (e, t, s = !1) => {
 				const r = `click-${e}`;
 				let i = K.get(r);
 				return void 0 === i && (i = (e, r, i, o, n) => {
@@ -666,7 +666,7 @@
 						isFrontpage: s
 					})
 				}, K.set(r, i)), i
-			}, Y = (e, t) => {
+			}, Q = (e, t) => {
 				const s = [...e];
 				return Object.keys(t).map(e => parseInt(e, 10)).sort((e, t) => t - e).forEach(e => {
 					s.splice(e, 0, t[e])
@@ -859,7 +859,7 @@
 						this.props.listingBelowVariant && b && (T += `--${b}`);
 						const N = W(e, r, s, b, f, x, this.props, t, this.props.hostPostData),
 							R = J(e, r, this.props, t, y),
-							V = Q(e, this.props, c),
+							V = Y(e, this.props, c),
 							M = L.media && L.media.type === A.o.EMBED ? L.media.provider : null,
 							q = p && !I.isSponsored,
 							Z = m && !I.isSponsored && !I.isScoreHidden;
@@ -983,7 +983,7 @@
 						const r = t === s.length - 1;
 						return this.scrollChildForPost(e, t, r, a)
 					});
-					i && (f = Y(f, i));
+					i && (f = Q(f, i));
 					const y = this.props.measureScrollFPS ? `post-listings-${a}` : void 0,
 						x = c ? Object(r.e)(c) : null,
 						v = x || n;
@@ -1317,7 +1317,7 @@
 					experimentEligibilitySelector: i.a,
 					experimentName: r.ec
 				});
-				return !(!t || Object(r.Qe)(t))
+				return !(!t || Object(r.Re)(t))
 			}
 		},
 		"./src/reddit/selectors/experiments/signupUpsellExperiment.ts": function(e, t, s) {
@@ -1480,7 +1480,7 @@
 				n = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const a = e => {
 					const t = Object(n.a)(e);
-					return Boolean(t) && !Object(i.Qe)(t)
+					return Boolean(t) && !Object(i.Re)(t)
 				},
 				c = Object(r.a)(a, o.d, (e, t) => e && !t)
 		},
@@ -1489,4 +1489,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileOverview.d72a07e4fcf12c8a092f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileOverview.aa2b20f0000b7a0e0c25.js.map
