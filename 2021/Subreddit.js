@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.5c31a06f054baea4ad06.js
-// Retrieved at 11/2/2021, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.e792a36c6e65a0426d59.js
+// Retrieved at 11/3/2021, 11:00:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~ModListing", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -11325,9 +11325,12 @@
 						"--verticalvotes-customdownvote-inactive": `url(${t.downvoteInactive})`
 					}, {
 						theme: s,
-						...i
+						isNightMode: i,
+						voteState: a,
+						compact: c,
+						...l
 					} = e;
-					return r.a.createElement("button", N({}, i, {
+					return r.a.createElement("button", N({}, l, {
 						className: Object(o.a)(w.a.customDownvote, I(e), {
 							[w.a.voted]: e.voteState === d.a.downvoted
 						}, e.className),
@@ -11342,9 +11345,12 @@
 						"--verticalvotes-customupvote-inactive": `url(${t.upvoteInactive})`
 					}, {
 						theme: s,
-						...i
+						isNightMode: i,
+						voteState: a,
+						compact: c,
+						...l
 					} = e;
-					return r.a.createElement("button", N({}, i, {
+					return r.a.createElement("button", N({}, l, {
 						className: Object(o.a)(w.a.customUpvote, I(e), {
 							[w.a.voted]: e.voteState === d.a.upvoted
 						}, e.className),
@@ -18105,4 +18111,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.5c31a06f054baea4ad06.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.e792a36c6e65a0426d59.js.map

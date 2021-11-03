@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.d81b4c980d6d91616694.js
-// Retrieved at 10/28/2021, 5:10:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.afc77268834f5dbbb678.js
+// Retrieved at 11/3/2021, 11:00:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -518,7 +518,7 @@
 		"./src/reddit/actions/pages/modListing/index.ts": function(e, t, r) {
 			"use strict";
 			r.r(t), r.d(t, "modListingDataPending", (function() {
-				return M
+				return L
 			})), r.d(t, "modListingDataLoaded", (function() {
 				return T
 			})), r.d(t, "modListingDataFailed", (function() {
@@ -592,14 +592,14 @@
 				S = r("./src/reddit/models/Toast/index.ts"),
 				k = r("./src/reddit/routes/modListing/index.ts"),
 				N = r("./src/reddit/selectors/user.ts"),
-				L = r("./src/reddit/actions/pages/modListing/constants.ts");
-			const M = Object(a.a)(L.f),
-				T = Object(a.a)(L.e),
-				B = Object(a.a)(L.d),
+				M = r("./src/reddit/actions/pages/modListing/constants.ts");
+			const L = Object(a.a)(M.f),
+				T = Object(a.a)(M.e),
+				B = Object(a.a)(M.d),
 				P = (e, t) => async (r, s, o) => {
 					const i = s();
 					if (i.listings.postOrder.api.pending[e]) return;
-					r(M({
+					r(L({
 						key: e
 					}));
 					const a = await Object(w.a)("modListing", () => x(o.apiContext(), t)),
@@ -645,7 +645,7 @@
 							hk: "3RYtBz"
 						})
 					})), Object(C.h)(s(), !0)
-				}, F = Object(a.a)(L.i), D = Object(a.a)(L.h), A = Object(a.a)(L.g), U = e => async (t, r, {
+				}, F = Object(a.a)(M.i), D = Object(a.a)(M.h), A = Object(a.a)(M.g), U = e => async (t, r, {
 					apiContext: n
 				}) => {
 					const s = r(),
@@ -694,12 +694,12 @@
 				const t = m.z in e && e[m.z].toUpperCase() || "";
 				return t in i.ec && i.ec[t]
 			}
-			const q = Object(a.a)(L.c),
-				W = Object(a.a)(L.b),
-				K = Object(a.a)(L.a),
-				V = Object(a.a)(L.l),
-				Q = Object(a.a)(L.k),
-				G = Object(a.a)(L.j),
+			const q = Object(a.a)(M.c),
+				W = Object(a.a)(M.b),
+				K = Object(a.a)(M.a),
+				V = Object(a.a)(M.l),
+				Q = Object(a.a)(M.k),
+				G = Object(a.a)(M.j),
 				J = (e, t) => async (r, n, {
 					apiContext: s
 				}) => {
@@ -1041,9 +1041,9 @@
 			})), r.d(t, "r", (function() {
 				return N
 			})), r.d(t, "a", (function() {
-				return L
-			})), r.d(t, "s", (function() {
 				return M
+			})), r.d(t, "s", (function() {
+				return L
 			})), r.d(t, "c", (function() {
 				return T
 			}));
@@ -1084,8 +1084,8 @@
 				S = s.a.textarea("TextArea", u.a),
 				k = s.a.wrapped(a.k, "WarningButton", u.a),
 				N = s.a.wrapped(a.k, "PrimaryButton", u.a),
-				L = s.a.wrapped(a.n, "CancelButton", u.a),
-				M = s.a.wrapped(a.q, "RemoveButton", u.a),
+				M = s.a.wrapped(a.n, "CancelButton", u.a),
+				L = s.a.wrapped(a.q, "RemoveButton", u.a),
 				T = ({
 					className: e,
 					...t
@@ -1272,9 +1272,9 @@
 			r.d(t, "a", (function() {
 				return N
 			})), r.d(t, "b", (function() {
-				return L
-			})), r.d(t, "c", (function() {
 				return M
+			})), r.d(t, "c", (function() {
+				return L
 			})), r.d(t, "d", (function() {
 				return T
 			}));
@@ -1357,16 +1357,19 @@
 						"--verticalvotes-customdownvote-inactive": `url(${t.downvoteInactive})`
 					}, {
 						theme: n,
-						...i
+						isNightMode: i,
+						voteState: a,
+						compact: d,
+						...l
 					} = e;
-					return s.a.createElement("button", S({}, i, {
+					return s.a.createElement("button", S({}, l, {
 						className: Object(o.a)(C.a.customDownvote, k(e), {
 							[C.a.voted]: e.voteState === c.a.downvoted
 						}, e.className),
 						style: r
 					}))
 				}),
-				L = Object(i.a)(e => {
+				M = Object(i.a)(e => {
 					const {
 						voteIcons: t
 					} = Object(j.a)(e), r = {
@@ -1374,16 +1377,19 @@
 						"--verticalvotes-customupvote-inactive": `url(${t.upvoteInactive})`
 					}, {
 						theme: n,
-						...i
+						isNightMode: i,
+						voteState: a,
+						compact: d,
+						...l
 					} = e;
-					return s.a.createElement("button", S({}, i, {
+					return s.a.createElement("button", S({}, l, {
 						className: Object(o.a)(C.a.customUpvote, k(e), {
 							[C.a.voted]: e.voteState === c.a.upvoted
 						}, e.className),
 						style: r
 					}))
 				}),
-				M = b,
+				L = b,
 				T = O
 		},
 		"./src/reddit/connectors/connectClickToToggleEditor.ts": function(e, t, r) {
@@ -1588,9 +1594,9 @@
 			})), r.d(t, "d", (function() {
 				return N
 			})), r.d(t, "h", (function() {
-				return L
-			})), r.d(t, "i", (function() {
 				return M
+			})), r.d(t, "i", (function() {
+				return L
 			}));
 			var n = r("./node_modules/react/index.js"),
 				s = r.n(n),
@@ -1769,14 +1775,14 @@
 					kind: h.Button,
 					className: Object(o.a)(e, d.a.ChatButton)
 				}, t)),
-				L = ({
+				M = ({
 					className: e,
 					...t
 				}) => s.a.createElement(b, c({
 					kind: h.Button,
 					className: Object(o.a)(e, d.a.InlineTextButton)
 				}, t)),
-				M = ({
+				L = ({
 					className: e,
 					...t
 				}) => s.a.createElement(b, c({
@@ -2335,13 +2341,13 @@
 					sidebar: S,
 					sidebars: k,
 					trendingUnit: N,
-					subredditId: L
-				} = e, M = N ? "28px" : "0", T = I ? {
+					subredditId: M
+				} = e, L = N ? "28px" : "0", T = I ? {
 					marginRight: `${d.q}px`,
-					marginTop: M
+					marginTop: L
 				} : {
 					marginLeft: `${d.q}px`,
-					marginTop: M
+					marginTop: L
 				}, B = S && s.a.createElement("div", {
 					className: Object(a.a)(h.a.sidebar, E ? h.a["m-collectionLayout"] : h.a.defaultLayout),
 					style: T
@@ -2358,7 +2364,7 @@
 				const F = g ? `${j||l.a+2*d.m}px` : "100%",
 					D = Object(n.useContext)(u.a);
 				return s.a.createElement(m.a, {
-					subredditId: L
+					subredditId: M
 				}, s.a.createElement("div", {
 					className: Object(a.a)(h.a.outerContainer, c.i, r, {
 						[h.a.outerContainerExp]: D
@@ -2466,7 +2472,7 @@
 				k = r.n(S);
 			const {
 				fbt: N
-			} = r("./node_modules/fbt/lib/FbtPublic.js"), L = Object(g.a)(e => i.a.createElement(_.e, {
+			} = r("./node_modules/fbt/lib/FbtPublic.js"), M = Object(g.a)(e => i.a.createElement(_.e, {
 				className: k.a.modalBody
 			}, i.a.createElement(_.i, null, i.a.createElement(j.a, null, i.a.createElement(_.q, {
 				className: k.a.modalTitle
@@ -2485,7 +2491,7 @@
 			})), i.a.createElement(O.b, {
 				isSidebar: !1,
 				subredditsOrProfilesIds: e.moderatedCommunitiesIds
-			})))), M = e => i.a.createElement(i.a.Fragment, null, i.a.createElement("div", {
+			})))), L = e => i.a.createElement(i.a.Fragment, null, i.a.createElement("div", {
 				className: k.a.feedDetailsTitle
 			}, i.a.createElement(I.a, {
 				className: k.a.modIcon
@@ -2513,10 +2519,10 @@
 						moderatedCommunitiesIds: r,
 						toggleModal: n
 					} = e;
-					return r ? i.a.createElement(i.a.Fragment, null, i.a.createElement(M, {
+					return r ? i.a.createElement(i.a.Fragment, null, i.a.createElement(L, {
 						moderatedCommunitiesIds: r,
 						onSeeMoreDetails: n
-					}), t && i.a.createElement(L, {
+					}), t && i.a.createElement(M, {
 						moderatedCommunitiesIds: r,
 						onCloseModal: n,
 						onOverlayClick: n,
@@ -2753,12 +2759,12 @@
 						timeSort: d
 					}
 				}),
-				Le = Object(a.b)(Ne, (e, t) => ({
+				Me = Object(a.b)(Ne, (e, t) => ({
 					onLoadMorePosts: () => e(m.moreModListingRequested({
 						sort: t.match.params.sort
 					}))
 				}));
-			class Me extends i.a.PureComponent {
+			class Le extends i.a.PureComponent {
 				constructor() {
 					super(...arguments), this.onViewed = (e, t) => Object(Ce.f)({
 						key: this.props.listingKey,
@@ -2792,7 +2798,7 @@
 					}))
 				}
 			}
-			t.default = Le(Me)
+			t.default = Me(Le)
 		},
 		"./src/reddit/reducers/pages/modHub/index.ts": function(e, t, r) {
 			"use strict";
@@ -3017,8 +3023,8 @@
 				}),
 				k = r("./node_modules/lodash/merge.js"),
 				N = r.n(k),
-				L = r("./node_modules/lodash/omit.js"),
-				M = r.n(L);
+				M = r("./node_modules/lodash/omit.js"),
+				L = r.n(M);
 			const T = {};
 			var B = (e = T, t) => {
 				switch (t.type) {
@@ -3038,7 +3044,7 @@
 						const {
 							subredditId: r,
 							userName: n
-						} = t.payload, s = M()(e[r], n);
+						} = t.payload, s = L()(e[r], n);
 						return {
 							...e,
 							[r]: s
@@ -3587,7 +3593,7 @@
 				}
 			};
 			const Ne = {};
-			var Le = (e = Ne, t) => {
+			var Me = (e = Ne, t) => {
 				switch (t.type) {
 					case s.F: {
 						const {
@@ -3612,7 +3618,7 @@
 						return e
 				}
 			};
-			var Me = (e = null, t) => {
+			var Le = (e = null, t) => {
 				switch (t.type) {
 					case s.J:
 					case s.I:
@@ -3635,7 +3641,7 @@
 					}
 				},
 				Be = Object(n.c)({
-					error: Me,
+					error: Le,
 					pending: Te
 				}),
 				Pe = r("./node_modules/lodash/isEqual.js"),
@@ -3774,7 +3780,7 @@
 					invitePending: je,
 					loadMoreModerators: ke,
 					loadMoreEditableModerators: Ce,
-					models: Le,
+					models: Me,
 					search: De,
 					userOrder: Qe
 				}),
@@ -3824,7 +3830,7 @@
 							const {
 								ids: r
 							} = t.payload;
-							return M()(e, r)
+							return L()(e, r)
 						}
 						case Xe.c: {
 							const {
@@ -4120,8 +4126,8 @@
 					error: St,
 					pending: kt
 				});
-			const Lt = {};
-			var Mt = (e = Lt, t) => {
+			const Mt = {};
+			var Lt = (e = Mt, t) => {
 				switch (t.type) {
 					case Xe.m: {
 						const {
@@ -4164,7 +4170,7 @@
 				},
 				Pt = Object(n.c)({
 					api: Nt,
-					itemOrder: Mt,
+					itemOrder: Lt,
 					loadMore: Bt
 				});
 			var Rt = (e = null, t) => {
@@ -4604,4 +4610,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.d81b4c980d6d91616694.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.afc77268834f5dbbb678.js.map
