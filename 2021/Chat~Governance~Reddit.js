@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.30dbe0dd2cc2a9d38ba1.js
-// Retrieved at 11/3/2021, 11:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.6302889b2ede1d0c6d72.js
+// Retrieved at 11/3/2021, 11:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3292,10 +3292,10 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("150480"),
+				buildNumber: Object(r.c)("150485"),
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
-				buildTimestamp: Object(r.b)("1635951826"),
+				buildTimestamp: Object(r.b)("1635953421"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -5835,14 +5835,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c1c55546578f6ea3d7fd7b5d50f999558b4791084-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c1ee2a7a4593a677d7b876e299dc14ebc662984ee-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${v.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "1c55546578f6ea3d7fd7b5d50f999558b4791084-production",
+						release: "1ee2a7a4593a677d7b876e299dc14ebc662984ee-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(x.d)(), new d.Integrations.Breadcrumbs({
@@ -6355,7 +6355,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "1c55546578f6ea3d7fd7b5d50f999558b4791084-production",
+						releaseClient: "1ee2a7a4593a677d7b876e299dc14ebc662984ee-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -39113,11 +39113,15 @@
 					let T = e.get(a.c);
 					const S = _.a;
 					f.htmlResponseStreaming;
+					const O = {
+						...S(),
+						secure: !0,
+						sameSite: "none"
+					};
 					if (E) {
 						if (s.allowSetEmptyLoid && l.a in r.headers) {
-							const s = c(r.headers[l.a], T),
-								o = S();
-							y(e, a.b, r.headers[l.a], o, n.statsAppName), t.dispatch(i.loidReceived(s))
+							const s = c(r.headers[l.a], T);
+							y(e, a.b, r.headers[l.a], O, n.statsAppName), t.dispatch(i.loidReceived(s))
 						}
 						if (l.c in r.headers) {
 							const s = r.headers[l.c],
@@ -39138,9 +39142,8 @@
 						if (a.c in u && (T = u[a.c]), a.b in u)
 							if (s.allowSetEmptyLoid && !g) {
 								const r = u[a.b],
-									s = c(r, T),
-									o = S();
-								y(e, a.b, r, o, n.statsAppName), t.dispatch(i.loidReceived(s))
+									s = c(r, T);
+								y(e, a.b, r, O, n.statsAppName), t.dispatch(i.loidReceived(s))
 							} else g || Object(p.a)(h.a.logSample.failToSetLOID) && m.c.captureMessage("LOID failing to be set on user without LOID");
 						if (a.g in u) {
 							const r = u[a.g];
@@ -42932,4 +42935,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.30dbe0dd2cc2a9d38ba1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.6302889b2ede1d0c6d72.js.map
