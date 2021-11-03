@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Talk.364cf87a19296b590088.js
-// Retrieved at 10/28/2021, 5:10:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Talk.a1094557351733ae54ff.js
+// Retrieved at 11/3/2021, 1:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Talk"], {
 		"./src/reddit/components/CollapsibleFAQ/index.m.less": function(e, a, t) {
@@ -339,121 +339,157 @@
 				d = t("./src/reddit/selectors/telemetry.ts");
 			var u = t("./src/reddit/hooks/useTracking.ts"),
 				k = t("./src/reddit/icons/fonts/index.tsx"),
-				g = t("./node_modules/react-redux/es/index.js"),
+				g = t("./node_modules/fbt/lib/FbtPublic.js"),
+				h = t("./node_modules/react-redux/es/index.js"),
 				p = t("./node_modules/react-router-dom/esm/react-router-dom.js");
-			const h = "https://forms.gle/U6BS6Q8dCCFy14Gw8",
-				_ = "https://reddit.zendesk.com/hc/en-us/articles/4405459143316";
-			var E = t("./src/reddit/selectors/user.ts"),
-				N = t("./src/reddit/pages/Talk/CommunitiesWithTalk.m.less"),
-				b = t.n(N);
-			const {
-				fbt: f
-			} = t("./node_modules/fbt/lib/FbtPublic.js"), v = [{
-				title: "Identity & Relationships",
-				subreddits: ["r/lgbt", "r/relationship_advice"],
-				imageName: "relationships"
-			}, {
-				title: "Finance & Crypto",
-				subreddits: ["r/wallstreetbets", "r/dogecoin"],
-				imageName: "finance"
-			}, {
-				title: "Stories & Knowledge",
-				subreddits: ["r/nosleep", "r/unresolvedmysteries"],
-				imageName: "stories"
-			}, {
-				title: "Sports, Media & Culture",
-				subreddits: ["r/movies", "r/kpop"],
-				imageName: "media"
-			}, {
-				title: "Health & Fitness",
-				subreddits: ["r/meditation", "r/keto"],
-				imageName: "health"
-			}], y = ({
-				title: e,
-				subreddits: a,
-				imageName: t
-			}) => i.a.createElement("div", {
-				className: b.a.communityCell
-			}, i.a.createElement("div", {
-				className: b.a.communityImageBackgroundCircle
-			}, i.a.createElement("img", {
-				alt: `Community group art for category ${e}`,
-				className: b.a.communityImage,
-				src: `${l.a.assetPath}/img/talk/${t}.png`
-			})), i.a.createElement("h3", {
-				className: b.a.communityTitle
-			}, f._("{topic title}", [f._param("topic title", e)], {
-				hk: "eda29"
-			})), i.a.createElement("h4", {
-				className: b.a.communityDescription
-			}, a.map(e => i.a.createElement(p.a, {
-				className: b.a.communityLink,
-				key: e,
-				to: e,
-				target: r.d.BLANK,
-				rel: r.c
-			}, e)))), w = () => {
-				const e = Object(g.e)(E.X);
-				return i.a.createElement("div", {
-					className: Object(s.a)(b.a.communitiesSection, {
-						[b.a.isNightmodeOn]: e
+			const _ = "https://forms.gle/U6BS6Q8dCCFy14Gw8",
+				E = "https://reddit.zendesk.com/hc/en-us/articles/4405459143316";
+			var f = t("./src/reddit/selectors/user.ts"),
+				b = t("./src/reddit/pages/Talk/CommunitiesWithTalk.m.less"),
+				N = t.n(b);
+			const y = [{
+					key: "relationships",
+					title: g.fbt._("Identity & Relationships", null, {
+						hk: "4AIB1A"
+					}),
+					subreddits: ["r/lgbt", "r/relationship_advice"],
+					imageName: "relationships",
+					imageAlt: g.fbt._("Community group art for category Identity & Relationships", null, {
+						hk: "4FdoUD"
 					})
+				}, {
+					key: "finance",
+					title: g.fbt._("Finance & Crypto", null, {
+						hk: "3I1ibc"
+					}),
+					subreddits: ["r/wallstreetbets", "r/dogecoin"],
+					imageName: "finance",
+					imageAlt: g.fbt._("Community group art for category Finance & Crypto", null, {
+						hk: "18ZrHU"
+					})
+				}, {
+					key: "stories",
+					title: g.fbt._("Stories & Knowledge", null, {
+						hk: "rXzmD"
+					}),
+					subreddits: ["r/nosleep", "r/unresolvedmysteries"],
+					imageName: "stories",
+					imageAlt: g.fbt._("Community group art for category Stories & Knowledge", null, {
+						hk: "2pHtMt"
+					})
+				}, {
+					key: "media",
+					title: g.fbt._("Sports, Media & Culture", null, {
+						hk: "1HPwAm"
+					}),
+					subreddits: ["r/movies", "r/kpop"],
+					imageName: "media",
+					imageAlt: g.fbt._("Community group art for category Sports, Media & Culture", null, {
+						hk: "2vY4Rf"
+					})
+				}, {
+					key: "health",
+					title: g.fbt._("Health & Fitness", null, {
+						hk: "3mvSbc"
+					}),
+					subreddits: ["r/meditation", "r/keto"],
+					imageName: "health",
+					imageAlt: g.fbt._("Community group art for category Health & Fitness", null, {
+						hk: "3qhrGI"
+					})
+				}],
+				v = g.fbt._("Powerups Bolt", null, {
+					hk: "1GoCTw"
+				}),
+				w = ({
+					title: e,
+					subreddits: a,
+					imageName: t,
+					imageAlt: n
+				}) => i.a.createElement("div", {
+					className: N.a.communityCell
 				}, i.a.createElement("div", {
-					className: b.a.communitiesContentWrapper
+					className: N.a.communityImageBackgroundCircle
 				}, i.a.createElement("img", {
-					alt: "Powerups Bolt",
-					className: b.a.communitiesSectionBoltImage,
-					src: `${l.a.assetPath}/img/talk/communities-hosting.svg`
-				}), i.a.createElement("h2", {
-					className: b.a.communitiesSectionTitle
-				}, f._("Check out the communities hosting talks", null, {
-					hk: "2eOJeR"
-				})), i.a.createElement(m.b, {
-					className: b.a.ctaButtonContainer,
-					href: _,
-					rel: r.a,
-					target: "_blank"
-				}, i.a.createElement(o.j, {
-					className: b.a.ctaButton,
-					priority: o.b.Primary
-				}, f._("See Upcoming Talks", null, {
-					hk: "42fDp9"
-				}))), i.a.createElement("div", {
-					className: Object(s.a)(b.a.communitiesSectionGrid, b.a.contentWrapper)
-				}, v.map(({
-					title: e,
-					subreddits: a,
-					imageName: t
-				}) => i.a.createElement(y, {
+					alt: n,
+					className: N.a.communityImage,
+					src: `${l.a.assetPath}/img/talk/${t}.png`
+				})), i.a.createElement("h3", {
+					className: N.a.communityTitle
+				}, e), i.a.createElement("h4", {
+					className: N.a.communityDescription
+				}, a.map(e => i.a.createElement(p.a, {
+					className: N.a.communityLink,
 					key: e,
-					title: e,
-					subreddits: a,
-					imageName: t
-				})))))
-			};
-			var C = t("./src/reddit/components/CollapsibleFAQ/index.tsx"),
-				T = t("./src/reddit/pages/Talk/RadialCircle.m.less"),
-				q = t.n(T);
-			const I = ({
+					to: e,
+					target: r.d.BLANK,
+					rel: r.c
+				}, e)))),
+				C = () => {
+					const e = Object(h.e)(f.X);
+					return i.a.createElement("div", {
+						className: Object(s.a)(N.a.communitiesSection, {
+							[N.a.isNightmodeOn]: e
+						})
+					}, i.a.createElement("div", {
+						className: N.a.communitiesContentWrapper
+					}, i.a.createElement("img", {
+						alt: v,
+						className: N.a.communitiesSectionBoltImage,
+						src: `${l.a.assetPath}/img/talk/communities-hosting.svg`
+					}), i.a.createElement("h2", {
+						className: N.a.communitiesSectionTitle
+					}, g.fbt._("Check out the communities hosting talks", null, {
+						hk: "2eOJeR"
+					})), i.a.createElement(m.b, {
+						className: N.a.ctaButtonContainer,
+						href: E,
+						rel: r.a,
+						target: "_blank"
+					}, i.a.createElement(o.j, {
+						className: N.a.ctaButton,
+						priority: o.b.Primary
+					}, g.fbt._("See Upcoming Talks", null, {
+						hk: "42fDp9"
+					}))), i.a.createElement("div", {
+						className: Object(s.a)(N.a.communitiesSectionGrid, N.a.contentWrapper)
+					}, y.map(({
+						key: e,
+						title: a,
+						subreddits: t,
+						imageName: l,
+						imageAlt: n
+					}) => i.a.createElement(w, {
+						key: e,
+						title: a,
+						subreddits: t,
+						imageName: l,
+						imageAlt: n
+					})))))
+				};
+			var T = t("./src/reddit/components/CollapsibleFAQ/index.tsx"),
+				q = t("./src/reddit/pages/Talk/RadialCircle.m.less"),
+				I = t.n(q);
+			const B = ({
 				className: e
 			}) => i.a.createElement("div", {
-				className: Object(s.a)(q.a.radialCircle, e),
+				className: Object(s.a)(I.a.radialCircle, e),
 				style: {
 					backgroundImage: `url(${l.a.assetPath}/img/talk/radial-circle.svg)`
 				}
 			});
-			var B = t("./src/reddit/pages/Talk/FaqSection.m.less"),
-				F = t.n(B);
+			var F = t("./src/reddit/pages/Talk/FaqSection.m.less"),
+				x = t.n(F);
 			const {
-				fbt: x
-			} = t("./node_modules/fbt/lib/FbtPublic.js"), O = [{
-				prompt: () => x._("How do I host a Reddit Talk?", null, {
+				fbt: O
+			} = t("./node_modules/fbt/lib/FbtPublic.js"), A = [{
+				prompt: () => O._("How do I host a Reddit Talk?", null, {
 					hk: "3uLwRL"
 				}),
 				answer: function() {
-					return x._("Only moderators of select subreddits can host Talks during our pilot (8/2021 - 9/2021). If you want to participate (and you're not already in the pilot), please sign up for our {waitlist signup form link}.", [x._param("waitlist signup form link", i.a.createElement(m.b, {
-						className: F.a.externalLink,
-						href: h,
+					return O._("Only moderators of select subreddits can host Talks during our pilot (8/2021 - 9/2021). If you want to participate (and you're not already in the pilot), please sign up for our {waitlist signup form link}.", [O._param("waitlist signup form link", i.a.createElement(m.b, {
+						className: x.a.externalLink,
+						href: _,
 						rel: r.a,
 						target: "_blank"
 					}, "Talk waitlist"))], {
@@ -461,50 +497,50 @@
 					})
 				}
 			}, {
-				prompt: () => x._("How do I discover Talks on Reddit?", null, {
+				prompt: () => O._("How do I discover Talks on Reddit?", null, {
 					hk: "49NTWP"
 				}),
 				answer: function() {
-					return i.a.createElement(i.a.Fragment, null, x._("Reddit Talk will be available on iOS and Android for the official Reddit App to start. When a Talk goes live, it becomes a post that people can discover in Home and subreddit feeds. Reddit will also send Talk notifications to your subreddit's members.", null, {
+					return i.a.createElement(i.a.Fragment, null, O._("Reddit Talk will be available on iOS and Android for the official Reddit App to start. When a Talk goes live, it becomes a post that people can discover in Home and subreddit feeds. Reddit will also send Talk notifications to your subreddit's members.", null, {
 						hk: "1x93GI"
-					}), i.a.createElement("br", null), i.a.createElement("br", null), x._("{=Check out all of our upcoming talks here}", [x._param("=Check out all of our upcoming talks here", i.a.createElement(m.b, {
-						className: F.a.externalLink,
-						href: _,
+					}), i.a.createElement("br", null), i.a.createElement("br", null), O._("{=Check out all of our upcoming talks here}", [O._param("=Check out all of our upcoming talks here", i.a.createElement(m.b, {
+						className: x.a.externalLink,
+						href: E,
 						rel: r.a,
 						target: "_blank"
-					}, x._("Check out all of our upcoming talks here", null, {
+					}, O._("Check out all of our upcoming talks here", null, {
 						hk: "1QRcwN"
 					})))], {
 						hk: "2UjCyD"
 					}), ".")
 				}
 			}, {
-				prompt: () => x._("How are Talks moderated?", null, {
+				prompt: () => O._("How are Talks moderated?", null, {
 					hk: "4tibrb"
 				}),
 				answer: function() {
-					return i.a.createElement(i.a.Fragment, null, x._("The host of each Talk decides who to invite to speak and can also mute speakers and remove them from the Talk. During the pilot, only select subreddit moderators can host Talks.", null, {
+					return i.a.createElement(i.a.Fragment, null, O._("The host of each Talk decides who to invite to speak and can also mute speakers and remove them from the Talk. During the pilot, only select subreddit moderators can host Talks.", null, {
 						hk: "1JswM6"
-					}), i.a.createElement("br", null), i.a.createElement("br", null), x._("After the pilot, we plan to:", null, {
+					}), i.a.createElement("br", null), i.a.createElement("br", null), O._("After the pilot, we plan to:", null, {
 						hk: "3Sdq5K"
 					}), i.a.createElement("br", null), i.a.createElement("br", null), i.a.createElement("ul", null, i.a.createElement("li", {
-						className: F.a.faqListItem
-					}, x._("Let mods select who can host Talks in their subreddit. A great host is a mini-moderator of the room and can take action on offenders without the mod having to be there.", null, {
+						className: x.a.faqListItem
+					}, O._("Let mods select who can host Talks in their subreddit. A great host is a mini-moderator of the room and can take action on offenders without the mod having to be there.", null, {
 						hk: "2Iii3u"
 					})), i.a.createElement("li", {
-						className: F.a.faqListItem
-					}, x._("Let mods review Talk reports in mod queue. We'll also have an admin team reviewing Talk reports internally.", null, {
+						className: x.a.faqListItem
+					}, O._("Let mods review Talk reports in mod queue. We'll also have an admin team reviewing Talk reports internally.", null, {
 						hk: "1wiMyy"
 					}))))
 				}
 			}, {
-				prompt: () => x._("How can I participate in a Talk in my favorite subreddit?", null, {
+				prompt: () => O._("How can I participate in a Talk in my favorite subreddit?", null, {
 					hk: "ivlBO"
 				}),
 				answer: function() {
-					return x._("If you want to participate in a Talk, please sign up for our {waitlist signup form link} and we'll get back to you as soon as possible.", [x._param("waitlist signup form link", i.a.createElement(m.b, {
-						className: F.a.externalLink,
-						href: h,
+					return O._("If you want to participate in a Talk, please sign up for our {waitlist signup form link} and we'll get back to you as soon as possible.", [O._param("waitlist signup form link", i.a.createElement(m.b, {
+						className: x.a.externalLink,
+						href: _,
 						rel: r.a,
 						target: "_blank"
 					}, "Talk waitlist"))], {
@@ -512,93 +548,93 @@
 					})
 				}
 			}], L = () => i.a.createElement("div", {
-				className: F.a.faqSection
+				className: x.a.faqSection
 			}, i.a.createElement("div", {
-				className: Object(s.a)(F.a.faqSectionContent, F.a.contentWrapper)
-			}, i.a.createElement(j, null), i.a.createElement(A, null), i.a.createElement(S, null), i.a.createElement("h2", {
-				className: F.a.faqHeading
-			}, x._("Questions about Reddit Talk", null, {
+				className: Object(s.a)(x.a.faqSectionContent, x.a.contentWrapper)
+			}, i.a.createElement(j, null), i.a.createElement(S, null), i.a.createElement(R, null), i.a.createElement("h2", {
+				className: x.a.faqHeading
+			}, O._("Questions about Reddit Talk", null, {
 				hk: "G9C1l"
 			})), i.a.createElement("div", {
-				className: F.a.faqs
-			}, O.map(({
+				className: x.a.faqs
+			}, A.map(({
 				prompt: e,
 				answer: a
-			}, t) => i.a.createElement(C.a, {
+			}, t) => i.a.createElement(T.a, {
 				defaultClosed: !0,
 				question: e(),
 				key: t
 			}, a()))), i.a.createElement("h3", {
-				className: F.a.faqMoreQuestionsHeading
-			}, x._("Have more questions? We've got answers.", null, {
+				className: x.a.faqMoreQuestionsHeading
+			}, O._("Have more questions? We've got answers.", null, {
 				hk: "3Entyj"
 			})), i.a.createElement(o.s, {
-				className: F.a.fullFaqsButton,
+				className: x.a.fullFaqsButton,
 				priority: o.b.Secondary,
 				href: "https://reddithelp.com/hc/en-us/articles/4404349195284",
 				kind: o.a.ExternalLink,
 				target: "_blank"
-			}, x._("View Full FAQs", null, {
+			}, O._("View Full FAQs", null, {
 				hk: "1eOLlL"
 			})), i.a.createElement("h2", {
-				className: F.a.faqTryOutHeading
-			}, x._("Try out Reddit Talk", null, {
+				className: x.a.faqTryOutHeading
+			}, O._("Try out Reddit Talk", null, {
 				hk: "2dbBQh"
 			})), i.a.createElement("h3", {
-				className: F.a.faqTryOutSubheading
-			}, x._("Ok, you've made it to the bottom of the page. What do you think? Is Reddit Talk for your community?", null, {
+				className: x.a.faqTryOutSubheading
+			}, O._("Ok, you've made it to the bottom of the page. What do you think? Is Reddit Talk for your community?", null, {
 				hk: "2SYIjJ"
 			})), i.a.createElement(m.b, {
-				className: F.a.ctaButtonContainer,
-				href: h,
+				className: x.a.ctaButtonContainer,
+				href: _,
 				rel: r.a,
 				target: "_blank"
 			}, i.a.createElement(o.j, {
 				priority: o.b.Primary,
-				className: F.a.ctaLetsDoThisButton
-			}, x._("Let's Do This!", null, {
+				className: x.a.ctaLetsDoThisButton
+			}, O._("Let's Do This!", null, {
 				hk: "39lVPQ"
-			}))), i.a.createElement(R, null))), j = () => i.a.createElement(i.a.Fragment, null, i.a.createElement("div", {
-				className: Object(s.a)(F.a.faqQuestionMark, F.a.faqQuestionMarkWithBolt)
+			}))), i.a.createElement(Q, null))), j = () => i.a.createElement(i.a.Fragment, null, i.a.createElement("div", {
+				className: Object(s.a)(x.a.faqQuestionMark, x.a.faqQuestionMarkWithBolt)
 			}), i.a.createElement("div", {
-				className: F.a.circleFaqYellowWithBolt
-			})), A = () => i.a.createElement(i.a.Fragment, null, i.a.createElement(I, {
-				className: F.a.circleFaqRadialTop
+				className: x.a.circleFaqYellowWithBolt
+			})), S = () => i.a.createElement(i.a.Fragment, null, i.a.createElement(B, {
+				className: x.a.circleFaqRadialTop
 			}), i.a.createElement("div", {
-				className: F.a.circleFaqCyanSmall
+				className: x.a.circleFaqCyanSmall
 			}), i.a.createElement("div", {
-				className: F.a.circleFaqYellowSmall
+				className: x.a.circleFaqYellowSmall
 			}), i.a.createElement("div", {
-				className: F.a.circleFaqCyanBig
+				className: x.a.circleFaqCyanBig
 			}), i.a.createElement("div", {
-				className: F.a.circleFaqOrange
+				className: x.a.circleFaqOrange
 			}), i.a.createElement("div", {
-				className: F.a.circleFaqBlueHollow
-			})), S = () => i.a.createElement(i.a.Fragment, null, i.a.createElement("div", {
-				className: Object(s.a)(F.a.faqQuestionMark, F.a.faqQuestionMarkTopLeft)
+				className: x.a.circleFaqBlueHollow
+			})), R = () => i.a.createElement(i.a.Fragment, null, i.a.createElement("div", {
+				className: Object(s.a)(x.a.faqQuestionMark, x.a.faqQuestionMarkTopLeft)
 			}), i.a.createElement("div", {
-				className: Object(s.a)(F.a.faqQuestionMark, F.a.faqQuestionMarkTopRight)
+				className: Object(s.a)(x.a.faqQuestionMark, x.a.faqQuestionMarkTopRight)
 			}), i.a.createElement("div", {
-				className: Object(s.a)(F.a.faqQuestionMark, F.a.faqQuestionMarkLeft)
+				className: Object(s.a)(x.a.faqQuestionMark, x.a.faqQuestionMarkLeft)
 			}), i.a.createElement("div", {
-				className: Object(s.a)(F.a.faqQuestionMark, F.a.faqQuestionMarkBottomRight)
-			})), R = () => i.a.createElement("div", {
-				className: F.a.ctaButtonCirlcesAndBolt
+				className: Object(s.a)(x.a.faqQuestionMark, x.a.faqQuestionMarkBottomRight)
+			})), Q = () => i.a.createElement("div", {
+				className: x.a.ctaButtonCirlcesAndBolt
 			}, i.a.createElement("div", {
-				className: F.a.circleFaqCtaYellowBig
-			}, i.a.createElement(I, {
-				className: F.a.circleFaqCtaRadial
+				className: x.a.circleFaqCtaYellowBig
+			}, i.a.createElement(B, {
+				className: x.a.circleFaqCtaRadial
 			}), i.a.createElement("img", {
 				alt: "Redditors chatting",
-				className: F.a.imgInCircleFaqCtaYellow,
+				className: x.a.imgInCircleFaqCtaYellow,
 				src: `${l.a.assetPath}/img/talk/talk-footer-art.png`
 			})), i.a.createElement("div", {
-				className: F.a.circleFaqCtaCyanHollow
+				className: x.a.circleFaqCtaCyanHollow
 			}));
-			var Q = t("./src/reddit/pages/Talk/index.m.less"),
-				M = t.n(Q);
+			var M = t("./src/reddit/pages/Talk/index.m.less"),
+				W = t.n(M);
 			const {
-				fbt: W
+				fbt: H
 			} = t("./node_modules/fbt/lib/FbtPublic.js");
 			a.default = () => {
 				const e = Object(u.a)();
@@ -614,75 +650,75 @@
 					}))())
 				}, [e]);
 				return i.a.createElement(i.a.Fragment, null, i.a.createElement("div", {
-					className: M.a.headingSection
+					className: W.a.headingSection
 				}, i.a.createElement("div", {
-					className: Object(s.a)(M.a.background, M.a.contentWrapper)
+					className: Object(s.a)(W.a.background, W.a.contentWrapper)
 				}, i.a.createElement("div", {
-					className: M.a.diagonalLayoutSecondary
+					className: W.a.diagonalLayoutSecondary
 				}), i.a.createElement("div", {
-					className: M.a.diagonalLayoutPrimary,
+					className: W.a.diagonalLayoutPrimary,
 					style: {
 						backgroundImage: `url(${l.a.assetPath}/img/talk/grid-single-rectangle.svg)`
 					}
 				}), i.a.createElement("div", {
-					className: Object(s.a)(M.a.circle, M.a.circleYellowBig)
+					className: Object(s.a)(W.a.circle, W.a.circleYellowBig)
 				}), i.a.createElement("div", {
-					className: Object(s.a)(M.a.circle, M.a.circleOrangeTop)
-				}), i.a.createElement(I, {
-					className: M.a.radialCircleTopRight
-				}), i.a.createElement(I, {
-					className: M.a.radialCircleBottomRight
-				}), i.a.createElement(I, {
-					className: M.a.radialCircleBottomLeft
-				}), i.a.createElement(I, {
-					className: M.a.radialCircleTopLeft
+					className: Object(s.a)(W.a.circle, W.a.circleOrangeTop)
+				}), i.a.createElement(B, {
+					className: W.a.radialCircleTopRight
+				}), i.a.createElement(B, {
+					className: W.a.radialCircleBottomRight
+				}), i.a.createElement(B, {
+					className: W.a.radialCircleBottomLeft
+				}), i.a.createElement(B, {
+					className: W.a.radialCircleTopLeft
 				}), i.a.createElement("div", {
-					className: Object(s.a)(M.a.circle, M.a.circleBlue)
+					className: Object(s.a)(W.a.circle, W.a.circleBlue)
 				})), i.a.createElement("div", {
-					className: Object(s.a)(M.a.contentWrapper, M.a.headingContent)
+					className: Object(s.a)(W.a.contentWrapper, W.a.headingContent)
 				}, i.a.createElement("div", {
-					className: M.a.headingText
+					className: W.a.headingText
 				}, i.a.createElement("h1", {
-					className: M.a.heading
+					className: W.a.heading
 				}, i.a.createElement("img", {
-					className: M.a.logo,
+					className: W.a.logo,
 					src: `${l.a.assetPath}/img/talk/reddit-talk-logo.svg`,
-					alt: W._("Reddit Talk", null, {
+					alt: H._("Reddit Talk", null, {
 						hk: "XNl4V"
 					})
 				})), i.a.createElement("h2", {
-					className: M.a.subheading
-				}, W._("Live audio talks in your favorite communities", null, {
+					className: W.a.subheading
+				}, H._("Live audio talks in your favorite communities", null, {
 					hk: "pdWzZ"
 				})), i.a.createElement("p", {
-					className: Object(s.a)(M.a.description, M.a.bodyText)
-				}, W._("A new way for redditors to host AMAs, Q&As, or just hang out and have fun.", null, {
+					className: Object(s.a)(W.a.description, W.a.bodyText)
+				}, H._("A new way for redditors to host AMAs, Q&As, or just hang out and have fun.", null, {
 					hk: "3mWLSE"
 				})), i.a.createElement("div", {
-					className: Object(s.a)(M.a.modWarning, M.a.bodyText)
+					className: Object(s.a)(W.a.modWarning, W.a.bodyText)
 				}, i.a.createElement("div", {
-					className: M.a.modWarningTop
+					className: W.a.modWarningTop
 				}, i.a.createElement(k.a, {
 					name: "mod",
-					className: M.a.modWarningIcon
-				})), W._("{=During our pilot, only moderators in participating communities can start talks. If you’re not a mod and are interested in hosting a talk,let us know}", [W._param("=During our pilot, only moderators in participating communities can start talks. If you’re not a mod and are interested in hosting a talk,let us know", i.a.createElement("div", null, W._("During our pilot, only moderators in participating communities can start talks. If you’re not a mod and are interested in hosting a talk, {=let us know}.", [W._param("=let us know", i.a.createElement(m.b, {
-					className: M.a.inlineCta,
-					href: h,
+					className: W.a.modWarningIcon
+				})), H._("{=During our pilot, only moderators in participating communities can start talks. If you’re not a mod and are interested in hosting a talk,let us know}", [H._param("=During our pilot, only moderators in participating communities can start talks. If you’re not a mod and are interested in hosting a talk,let us know", i.a.createElement("div", null, H._("During our pilot, only moderators in participating communities can start talks. If you’re not a mod and are interested in hosting a talk, {=let us know}.", [H._param("=let us know", i.a.createElement(m.b, {
+					className: W.a.inlineCta,
+					href: _,
 					rel: r.a,
 					target: "_blank"
-				}, W._("let us know", null, {
+				}, H._("let us know", null, {
 					hk: "2F4ah1"
 				})))], {
 					hk: "3k7tgj"
 				})))], {
 					hk: "1fKzj6"
 				})), i.a.createElement(m.b, {
-					className: M.a.ctaButtonContainer,
-					href: h,
+					className: W.a.ctaButtonContainer,
+					href: _,
 					rel: r.a,
 					target: "_blank"
 				}, i.a.createElement(o.j, {
-					className: M.a.ctaButton,
+					className: W.a.ctaButton,
 					priority: o.b.Primary,
 					onClick: () => e((() => e => ({
 						...d.defaults(e),
@@ -690,26 +726,26 @@
 						action: "click",
 						noun: "try_talk_cta"
 					}))())
-				}, W._("Try it out", null, {
+				}, H._("Try it out", null, {
 					hk: "4yOsEn"
 				})))), i.a.createElement("div", {
-					className: M.a.headingArt
+					className: W.a.headingArt
 				}, i.a.createElement("div", {
-					className: M.a.talkMarketingImageContainer
+					className: W.a.talkMarketingImageContainer
 				}, i.a.createElement("img", {
 					alt: "Reddit Talk Art",
-					className: M.a.talkMarketingImage,
+					className: W.a.talkMarketingImage,
 					src: `${l.a.assetPath}/img/talk/talk-header-art.png`
 				})))), i.a.createElement("div", {
-					className: M.a.headingSectionGridBg,
+					className: W.a.headingSectionGridBg,
 					style: {
 						backgroundImage: `url(${l.a.assetPath}/img/talk/grid-single-rectangle.svg)`
 					}
-				})), i.a.createElement(w, null), i.a.createElement(L, null), i.a.createElement(c.a, {
-					className: M.a.footer
+				})), i.a.createElement(C, null), i.a.createElement(L, null), i.a.createElement(c.a, {
+					className: W.a.footer
 				}))
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Talk.364cf87a19296b590088.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Talk.a1094557351733ae54ff.js.map

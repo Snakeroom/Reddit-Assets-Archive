@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.f13e7e383824cb48880b.js
-// Retrieved at 11/1/2021, 5:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.22ad1a60f825c8902da7.js
+// Retrieved at 11/3/2021, 1:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -494,7 +494,7 @@
 					if (a) {
 						const {
 							hasMoreChannels: s
-						} = a, c = Object(S.f)(a.channels), r = Object(M.u)(n());
+						} = a, c = Object(S.g)(a.channels), r = Object(M.u)(n());
 						return t(Ye(c)), t(Ke({
 							channels: c,
 							hasMoreChannels: s
@@ -512,7 +512,7 @@
 					if (a) {
 						const {
 							hasMoreChannels: s
-						} = a, c = Object(S.f)(a.channels), r = Object(M.v)(t()) + (null === (n = a.channels) || void 0 === n ? void 0 : n.length);
+						} = a, c = Object(S.g)(a.channels), r = Object(M.v)(t()) + (null === (n = a.channels) || void 0 === n ? void 0 : n.length);
 						return e(Ze({
 							channels: c,
 							hasMoreChannels: s
@@ -10678,37 +10678,34 @@
 		"./src/chat/controls/ChannelsFilter/index.tsx": function(e, t, n) {
 			"use strict";
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
-			var a = n("./node_modules/fbt/lib/FbtPublic.js"),
-				s = n("./node_modules/react/index.js"),
-				c = n.n(s),
-				r = n("./node_modules/react-redux/es/index.js"),
-				o = n("./src/lib/classNames/index.ts"),
-				i = n("./src/chat/actions/channelsFilter/index.ts"),
-				l = n("./src/chat/actions/tracking.ts"),
-				d = n("./src/chat/controls/Button/index.tsx"),
-				u = n("./src/chat/models/Channel/index.ts"),
-				h = n("./src/chat/selectors/channelsFilter.ts"),
-				m = n("./src/chat/controls/ChannelsFilter/index.m.less"),
-				p = n.n(m);
+			var a = n("./node_modules/react/index.js"),
+				s = n.n(a),
+				c = n("./node_modules/react-redux/es/index.js"),
+				r = n("./src/lib/classNames/index.ts"),
+				o = n("./src/chat/actions/channelsFilter/index.ts"),
+				i = n("./src/chat/actions/tracking.ts"),
+				l = n("./src/chat/controls/Button/index.tsx"),
+				d = n("./src/chat/models/Channel/index.ts"),
+				u = n("./src/chat/selectors/channelsFilter.ts"),
+				h = n("./src/chat/controls/ChannelsFilter/index.m.less"),
+				m = n.n(h);
 			t.a = () => {
-				const e = Object(r.d)(),
-					t = Object(r.e)(h.a),
-					n = Object(s.useCallback)(t => {
-						e(Object(i.d)({
+				const e = Object(c.d)(),
+					t = Object(c.e)(u.a),
+					n = Object(a.useCallback)(t => {
+						e(Object(o.d)({
 							filter: t
-						})), e(Object(l.D)(Object(u.h)(t)))
+						})), e(Object(i.D)(Object(d.i)(t)))
 					}, [e]);
-				return c.a.createElement("div", {
-					className: p.a.ChannelsFilter
-				}, Object.values(u.c).map(e => c.a.createElement(d.a, {
+				return s.a.createElement("div", {
+					className: m.a.ChannelsFilter
+				}, Object.values(d.c).map(e => s.a.createElement(l.a, {
 					key: e,
 					onClick: () => n(e),
-					className: Object(o.a)(p.a.ChannelsFilterItem, {
-						[p.a.selected]: t === e
+					className: Object(r.a)(m.a.ChannelsFilterItem, {
+						[m.a.selected]: t === e
 					})
-				}, a.fbt._("{FilterName}", [a.fbt._param("FilterName", e)], {
-					hk: "43TtvD"
-				}))))
+				}, d.d[e]())))
 			}
 		},
 		"./src/chat/controls/Checkbox/index.m.less": function(e, t, n) {
@@ -15728,14 +15725,14 @@
 				onReceiveInvite() {
 					const e = new this.self.ChannelHandler;
 					e.onUserReceivedInvitation = e => {
-						const t = Object(w.g)(e);
+						const t = Object(w.h)(e);
 						this.dispatch(Object(u.P)(t))
 					}, this.self.addChannelHandler("RECEIVE_CHANNEL_INVITE", e), this.channelUniqueHandlerID.push("RECEIVE_CHANNEL_INVITE")
 				}
 				onReceiveMessage() {
 					const e = new this.self.ChannelHandler;
 					e.onMessageReceived = (e, t) => {
-						const n = Object(w.g)(e);
+						const n = Object(w.h)(e);
 						this.dispatch(Object(u.O)(n));
 						const a = Object(M.c)(t);
 						a && this.dispatch(Object(E.x)(a))
@@ -15744,7 +15741,7 @@
 				onUpdateMessage() {
 					const e = new this.self.ChannelHandler;
 					e.onMessageUpdated = (e, t) => {
-						const n = Object(w.g)(e);
+						const n = Object(w.h)(e);
 						this.dispatch(Object(u.O)(n));
 						const a = Object(M.c)(t);
 						a && this.dispatch(Object(E.x)(a))
@@ -15776,7 +15773,7 @@
 							a = new this.self.ChannelHandler,
 							s = e[n];
 						a[n] = e => {
-							const t = Object(w.g)(e);
+							const t = Object(w.h)(e);
 							this.dispatch(Object(u.P)(t, !0))
 						}, this.self.addChannelHandler(s, a), this.channelUniqueHandlerID.push(s)
 					})
@@ -15784,7 +15781,7 @@
 				onChannelChanged() {
 					const e = new this.self.ChannelHandler;
 					e.onChannelChanged = e => {
-						const t = Object(w.g)(e);
+						const t = Object(w.h)(e);
 						this.dispatch(Object(u.P)(t))
 					}, this.self.addChannelHandler("ON_CHANNEL_CHANGED", e), this.channelUniqueHandlerID.push("ON_CHANNEL_CHANGED")
 				}
@@ -15798,28 +15795,28 @@
 				onChannelMuted() {
 					const e = new this.self.ChannelHandler;
 					e.onUserMuted = e => {
-						const t = Object(w.g)(e);
+						const t = Object(w.h)(e);
 						this.dispatch(Object(u.P)(t))
 					}, this.self.addChannelHandler("ON_CHANNEL_MUTED", e), this.channelUniqueHandlerID.push("ON_CHANNEL_MUTED")
 				}
 				onChannelUnmuted() {
 					const e = new this.self.ChannelHandler;
 					e.onUserUnmuted = e => {
-						const t = Object(w.g)(e);
+						const t = Object(w.h)(e);
 						this.dispatch(Object(u.P)(t))
 					}, this.self.addChannelHandler("ON_CHANNEL_UNMUTED", e), this.channelUniqueHandlerID.push("ON_CHANNEL_UNMUTED")
 				}
 				onChannelLocked() {
 					const e = new this.self.ChannelHandler;
 					e.onChannelFrozen = e => {
-						const t = Object(w.g)(e);
+						const t = Object(w.h)(e);
 						this.dispatch(Object(u.P)(t))
 					}, this.self.addChannelHandler("ON_CHANNEL_LOCKED", e), this.channelUniqueHandlerID.push("ON_CHANNEL_LOCKED")
 				}
 				onChannelUnlocked() {
 					const e = new this.self.ChannelHandler;
 					e.onChannelUnfrozen = e => {
-						const t = Object(w.g)(e);
+						const t = Object(w.h)(e);
 						this.dispatch(Object(u.P)(t))
 					}, this.self.addChannelHandler("ON_CHANNEL_UNLOCKED", e), this.channelUniqueHandlerID.push("ON_CHANNEL_UNLOCKED")
 				}
@@ -15842,7 +15839,7 @@
 					return new Promise((t, n) => {
 						this.getChannelByChannelId(e).then(e => {
 							if (!e) return t();
-							const n = Object(w.g)(e);
+							const n = Object(w.h)(e);
 							if (!n) return t();
 							this.dispatch(Object(u.Q)(n)), t(n)
 						}).catch(e => {
@@ -15865,7 +15862,7 @@
 						this.getChannelByChannelId(c).then(t => {
 							if (!t) return a(s());
 							this.channels[c] = t;
-							const r = Object(w.g)(t);
+							const r = Object(w.h)(t);
 							this.updatePartialChannelModel(r, e.channelState), this.switchChannel(t, n).then(([e]) => a(s({
 								messageListData: e
 							}))).catch(() => a(s()))
@@ -15903,7 +15900,7 @@
 				onUserKicked() {
 					const e = new this.self.ChannelHandler;
 					e.onUserBanned = (e, t) => {
-						const n = Object(w.g)(e);
+						const n = Object(w.h)(e);
 						n && this.dispatch(O(n, t.userId))
 					}, this.self.addChannelHandler("CHANNEL_USER_KICKED", e), this.channelUniqueHandlerID.push("CHANNEL_USER_KICKED")
 				}
@@ -17181,4 +17178,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.f13e7e383824cb48880b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.22ad1a60f825c8902da7.js.map

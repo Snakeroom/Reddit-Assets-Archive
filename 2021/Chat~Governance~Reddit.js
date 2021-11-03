@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.9f6b70c8d7ed147a822b.js
-// Retrieved at 11/3/2021, 12:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.dfed0ba2b8aedb2daeac.js
+// Retrieved at 11/3/2021, 1:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -1466,53 +1466,68 @@
 		},
 		"./src/chat/models/Channel/index.ts": function(e, t, i) {
 			"use strict";
-			i.d(t, "d", (function() {
+			i.d(t, "e", (function() {
 				return n
 			})), i.d(t, "c", (function() {
 				return r
+			})), i.d(t, "d", (function() {
+				return c
 			})), i.d(t, "b", (function() {
-				return s
-			})), i.d(t, "a", (function() {
-				return o
-			})), i.d(t, "g", (function() {
 				return _
-			})), i.d(t, "f", (function() {
+			})), i.d(t, "a", (function() {
 				return p
-			})), i.d(t, "e", (function() {
-				return h
 			})), i.d(t, "h", (function() {
+				return m
+			})), i.d(t, "g", (function() {
+				return h
+			})), i.d(t, "f", (function() {
 				return b
+			})), i.d(t, "i", (function() {
+				return w
 			}));
-			var n, r, s, o, d = i("./src/chat/constants/channels.ts"),
-				a = i("./src/chat/models/Channel/utils.ts"),
-				l = i("./src/chat/models/Message/index.ts"),
-				u = i("./src/chat/models/User/inviter.ts"),
-				c = i("./src/chat/models/User/member.ts");
+			var n, r, s = i("./node_modules/fbt/lib/FbtPublic.js"),
+				o = i("./src/chat/constants/channels.ts"),
+				d = i("./src/chat/models/Channel/utils.ts"),
+				a = i("./src/chat/models/Message/index.ts"),
+				l = i("./src/chat/models/User/inviter.ts"),
+				u = i("./src/chat/models/User/member.ts");
 			! function(e) {
 				e.Invited = "invited", e.Joined = "joined"
 			}(n || (n = {})),
 			function(e) {
 				e.ALL = "All", e.DirectsOnly = "DMs", e.GroupsOnly = "Group"
-			}(r || (r = {})),
-			function(e) {
+			}(r || (r = {}));
+			const c = {
+				[r.ALL]: () => s.fbt._("All", null, {
+					hk: "1l1mY5"
+				}),
+				[r.DirectsOnly]: () => s.fbt._("DMs", null, {
+					hk: "3YXgZ2"
+				}),
+				[r.GroupsOnly]: () => s.fbt._("Group", null, {
+					hk: "2MEwAN"
+				})
+			};
+			var _, p;
+			! function(e) {
 				e[e.Direct = 0] = "Direct", e[e.Group = 1] = "Group"
-			}(s || (s = {})),
+			}(_ || (_ = {})),
 			function(e) {
 				e.AWARDING = "awarding"
-			}(o || (o = {}));
-			d.b.UNSORTED, s.Direct;
+			}(p || (p = {}));
+			o.b.UNSORTED, _.Direct;
 
-			function _(e, t) {
+			function m(e, t) {
 				const {
 					createdAt: i,
 					customType: n,
 					data: r,
-					memberCount: o,
-					name: d,
-					isDistinct: _,
+					memberCount: s,
+					name: o,
+					isDistinct: c,
 					isHidden: p,
-					unreadMessageCount: b,
-					unreadMentionCount: g,
+					unreadMessageCount: m,
+					unreadMentionCount: h,
 					myCountPreference: w,
 					inviter: y,
 					lastMessage: v,
@@ -1526,28 +1541,28 @@
 					coverUrl: C
 				} = e;
 				return {
-					channelId: Object(a.f)(T),
+					channelId: Object(d.f)(T),
 					channelSendbirdUrl: T,
-					channelState: Object(a.b)(t, S),
+					channelState: Object(d.b)(t, S),
 					createdAt: Number(i),
-					channelData: Object(a.e)(r),
+					channelData: Object(d.e)(r),
 					customType: n,
 					data: r,
 					maxLengthMessage: -1,
-					memberCount: o,
-					name: d,
+					memberCount: s,
+					name: o,
 					isFrozen: O,
 					isHidden: p,
 					isNotifsMuted: !I,
-					isModerator: h(F),
-					isUserMuted: f(R),
-					isMuted: m(w),
-					inviter: Object(u.a)(y),
-					type: _ ? s.Direct : s.Group,
-					lastMessage: v ? Object(l.c)(v) : void 0,
-					unreadMessageCount: b,
-					unreadMentionCount: g,
-					members: Object(c.a)(E),
+					isModerator: b(F),
+					isUserMuted: g(R),
+					isMuted: f(w),
+					inviter: Object(l.a)(y),
+					type: c ? _.Direct : _.Group,
+					lastMessage: v ? Object(a.c)(v) : void 0,
+					unreadMessageCount: m,
+					unreadMentionCount: h,
+					members: Object(u.a)(E),
 					fetchingFirstMessage: !1,
 					fetchingMessages: !1,
 					fetchingMessagesError: !1,
@@ -1558,18 +1573,18 @@
 				}
 			}
 
-			function p(e) {
+			function h(e) {
 				const t = {};
 				for (let i = 0, n = e.length; i < n; i++) {
-					const n = _(e[i]);
+					const n = m(e[i]);
 					n && (t[n.channelId] = n)
 				}
 				return t
 			}
-			const m = e => e === d.c.Off,
-				h = e => "operator" === e,
-				f = e => "muted" === e,
-				b = e => e === r.ALL ? "all" : e === r.DirectsOnly ? "direct" : "group"
+			const f = e => e === o.c.Off,
+				b = e => "operator" === e,
+				g = e => "muted" === e,
+				w = e => e === r.ALL ? "all" : e === r.DirectsOnly ? "direct" : "group"
 		},
 		"./src/chat/models/Channel/utils.ts": function(e, t, i) {
 			"use strict";
@@ -2001,7 +2016,7 @@
 				profileUrl: e.profile_url || e.profileUrl,
 				state: e.state,
 				isBlockedByMe: e.isBlockedByMe,
-				isModerator: Object(n.e)(e.role)
+				isModerator: Object(n.f)(e.role)
 			})).filter(Boolean) || []
 		},
 		"./src/chat/reducers/sidebar/sideBarAppearance/index.ts": function(e, t, i) {
@@ -2352,7 +2367,7 @@
 						if (n) return n.type === a.b.Group ? n.name && "Group Channel" !== n.name ? n.name : n.members.map(e => e.name).join(", ") : null === (i = null == r ? void 0 : r.firstUser) || void 0 === i ? void 0 : i.name
 					}
 				},
-				Z = Object(s.a)(b, e => (null == e ? void 0 : e.type) === a.b.Direct && (null == e ? void 0 : e.members.some(e => e.state === a.d.Invited))),
+				Z = Object(s.a)(b, e => (null == e ? void 0 : e.type) === a.b.Direct && (null == e ? void 0 : e.members.some(e => e.state === a.e.Invited))),
 				ee = Object(s.a)((e, t) => f(e, t), e => null == e ? void 0 : e.type),
 				te = (Object(s.a)((e, t) => f(e, t), e => Boolean(null == e ? void 0 : e.members.some(e => e.isBlockedByMe))), (e, t) => {
 					return Object.values(e.channels.models).find(e => e.type === a.b.Direct && e.members.some(e => e.name === t))
@@ -2644,7 +2659,7 @@
 					id: e.id,
 					name: e.name,
 					isBlockedByMe: (null == i ? void 0 : i.isBlocked) || e.isBlocked || t.isBlockedByMe,
-					isModerator: Object(s.e)(t.role),
+					isModerator: Object(s.f)(t.role),
 					isNSFW: Boolean(null == i ? void 0 : i.isNSFW),
 					profileUrl: e.profileImg || (null == i ? void 0 : i.profileImg) || t.profileUrl,
 					state: t.state
@@ -3292,10 +3307,10 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("150493"),
+				buildNumber: Object(r.c)("150502"),
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
-				buildTimestamp: Object(r.b)("1635955535"),
+				buildTimestamp: Object(r.b)("1635956726"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -5835,14 +5850,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c117a90dab7f492ec33edc8d18f841983f6475c23-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c476e7ece477039a065e827e36f7968f35245c113-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${v.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "117a90dab7f492ec33edc8d18f841983f6475c23-production",
+						release: "476e7ece477039a065e827e36f7968f35245c113-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(x.d)(), new d.Integrations.Breadcrumbs({
@@ -6355,7 +6370,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "117a90dab7f492ec33edc8d18f841983f6475c23-production",
+						releaseClient: "476e7ece477039a065e827e36f7968f35245c113-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -42957,4 +42972,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.9f6b70c8d7ed147a822b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.dfed0ba2b8aedb2daeac.js.map
