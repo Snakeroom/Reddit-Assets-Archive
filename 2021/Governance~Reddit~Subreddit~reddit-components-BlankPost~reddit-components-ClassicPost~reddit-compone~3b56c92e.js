@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.e24cadc61bc3091b14a4.js
-// Retrieved at 11/3/2021, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.3d973252f497289ebe31.js
+// Retrieved at 11/3/2021, 5:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e"], {
 		"./src/lib/addAllowQuarantinedParam/index.ts": function(e, t, s) {
@@ -983,7 +983,7 @@
 					s(P({
 						postId: e,
 						profileId: T
-					})), (await Object(c.t)(m(), e, f, !0)).ok ? (s(C({
+					})), (await Object(c.q)(m(), e, f, !0)).ok ? (s(C({
 						postId: e,
 						profileId: T
 					})), t || s(R(e, k))) : (s(v({
@@ -1279,7 +1279,7 @@
 					t(A(e)), Object(n.a)(e) && t((e => async (t, s, {
 						apiContext: r
 					}) => {
-						const n = await Object(a.f)(r(), e);
+						const n = await Object(a.e)(r(), e);
 						n.ok && n.body && n.body.json && n.body.json.data && t(C(n.body.json.data))
 					})(e))
 				}, W = Object(i.a)(g.E), K = (e, t) => async (s, n) => {
@@ -3231,4 +3231,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.e24cadc61bc3091b14a4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.3d973252f497289ebe31.js.map

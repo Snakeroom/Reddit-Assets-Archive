@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.68e31d91e21aa2ded63a.js
-// Retrieved at 11/3/2021, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.9d549c164f8edd48339f.js
+// Retrieved at 11/3/2021, 5:00:05 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var n, a, r = o[0], s = o[1], c = o[2], l = 0, P = []; l < r.length; l++) a = r[l], Object.prototype.hasOwnProperty.call(d, a) && d[a] && P.push(d[a][0]), d[a] = 0;
@@ -1379,7 +1379,7 @@
 						ProfileModeration: "b2c6662230980f264dad",
 						PushNotifications: "a11e122009341aa77370",
 						Report: "a6df38d43ba55e3a03c4",
-						ReportPage: "4c977079d92efc0d5e4e",
+						ReportPage: "604a6dee9613d0c63690",
 						RequestToJoinPrivateSubredditModal: "c20db8d8470e421a82b9",
 						ShortcutWrapper: "b737bf6eac0f1f995ff8",
 						SnoovatarModal: "4384a60aeed72855dc36",
@@ -1407,7 +1407,7 @@
 						"translations/es_MX-json": "75789ae64ac5ddeab37c",
 						"translations/fr_FR-json": "f7a63d354b30fcd95ea6",
 						"translations/it_IT-json": "79ccc19c5147318bd7f3",
-						"translations/pseudo_ext-json": "f2dd058ee75bc4958b5b",
+						"translations/pseudo_ext-json": "2db3719e36956bd14039",
 						"translations/pseudo_long-json": "c963c30f68af05f7790b",
 						"translations/pseudo_short-json": "721ccf093bdb6523ccdf",
 						"translations/pt_BR-json": "06ad33cd5d7064b8e861",
@@ -1426,7 +1426,7 @@
 						HarbergerTaxManageModal: "59a27c5b26c5c924a1ac",
 						SubredditPremiumUploadModal: "b4343c4b42d1bca524b9",
 						"vendors~PostCreation": "c6c17f02e38c2582d4ac",
-						PostCreation: "692a9d4c7684634db621",
+						PostCreation: "21272aa8063f061bab95",
 						"vendors~ModStatsChart~Settings": "b500f4dfb4a94d20681b",
 						Settings: "3a903742b586e686fc01",
 						"vendors~ModerationPages": "aa8af2f2c9217a5def77",
@@ -1463,13 +1463,13 @@
 						CreatorStats: "783609a0bed6d0c8b6b1",
 						CryptoVault: "21d804ddc60948cf487b",
 						EconomicsSubredditPremiumSidebarCards: "1f56d00b0d4520ec89e6",
-						ReportFlow: "e065ca504fb0f985b970",
+						ReportFlow: "11acbd68f86917e94a3e",
 						HarbergerTaxBannerPurchaseCTA: "1322810c1a2ef3bca677",
 						IdCard: "bbf11d170db1c51fff6b",
 						MuxEmbed: "982b3400754d822142c4",
 						NewCommentPill: "8b63541cca0fda427858",
 						ReadingIndicator: "d68cab98e20fdacdbf48",
-						ReportFlowNew: "032b3b3bfde718b5bf77",
+						ReportFlowNew: "f1e1f62d66f941afacc1",
 						ReredditLink: "d89d3daf5c8ab0e831ef",
 						RichTextJsonEmoteTooltip: "f7ef6d496dcbbbc999a2",
 						SubredditMentionWithIcon: "d67c85221e770ad617c1",
@@ -1487,10 +1487,10 @@
 						"reddit-components-ProfileIdCard": "5c15521d1b2eedefdbc7",
 						"reddit-components-ViewReportsDropdown-index": "fcb179ae011224fcfadf",
 						"reddit-pages-CommentsPage-OtherDiscussions": "6dab55f0b2644ec0a9e3",
-						removalReasonActions: "b0002814bef20ffaffcc",
+						removalReasonActions: "ff7ac1cee436ece9a10c",
 						schedulePickerModal: "aa865922b4624ea25a07",
 						ChatMessageInput: "9f2378313164cfc2a1a8",
-						RichTextEditor: "e6a5d8884c4b64fd96be",
+						RichTextEditor: "8f5c625f849e49893e11",
 						LiveVideoPlayer: "f66bde574a4cc9cdec65",
 						"reddit-components-MediumPost": "be8f7b07adaaf49d9886",
 						"reddit-components-ClassicPost": "2f945324da50a2addb0e",
@@ -1515,11 +1515,11 @@
 						StructuredStyles: "f60cb1d2eb7e3e15cd0d",
 						CryptoLibEthers: "c693308c5ad86d73dff2",
 						JsonEMEntityView: "5a8f6080a8368c160406",
-						"reddit-components-CrisisFlow-CrisisFlowPage": "4d70a446d1715ff2cbc1",
+						"reddit-components-CrisisFlow-CrisisFlowPage": "c6cfb548dc142bf00141",
 						"reddit-pages-PaypalFinishPage": "94e69ee108cbffafd4fe",
 						"reddit-components-Governance-TransactionModals-TransferTransactionModal": "4e8180b11bcfdd38050d",
-						"reddit-components-NotificationUnit-Button": "991e3bf83c6c232a90f8",
-						CrisisFlow: "7652ab4515608b2cdab5",
+						"reddit-components-NotificationUnit-Button": "1fd159b4aef0dccd8568",
+						CrisisFlow: "2f3a5e06ea30ec988e06",
 						EmailInvitePaintedDoor: "7b911c54532321238346",
 						GifTooltip: "88bae6f6b3457f31cfbb",
 						PowerupsEmotesTooltip: "4f998424a043916f5aca",
@@ -1661,4 +1661,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.68e31d91e21aa2ded63a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.9d549c164f8edd48339f.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.692a9d4c7684634db621.js
-// Retrieved at 11/3/2021, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.21272aa8063f061bab95.js
+// Retrieved at 11/3/2021, 5:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton", "FrontpageSidebar"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, n) {
@@ -910,7 +910,7 @@
 						[e]: {
 							sendReplies: o
 						}
-					})), (await Object(D.q)(s(), e, o)).ok || t(Object(Z.i)({
+					})), (await Object(D.n)(s(), e, o)).ok || t(Object(Z.i)({
 						[e]: {
 							sendReplies: !o
 						}
@@ -23743,4 +23743,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.692a9d4c7684634db621.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.21272aa8063f061bab95.js.map
