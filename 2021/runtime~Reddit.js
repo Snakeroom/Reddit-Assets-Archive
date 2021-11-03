@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.d3c6e63c0edb37a68e47.js
-// Retrieved at 11/3/2021, 11:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.a70ca562fe023f81d455.js
+// Retrieved at 11/3/2021, 12:10:39 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var n, a, r = o[0], s = o[1], c = o[2], l = 0, P = []; l < r.length; l++) a = r[l], Object.prototype.hasOwnProperty.call(d, a) && d[a] && P.push(d[a][0]), d[a] = 0;
@@ -798,7 +798,7 @@
 					EconomicsSubredditPremiumSidebarCards: "a44fdfe118e2d2974673",
 					ReportFlow: "b21a77eb171b2255b91d",
 					HarbergerTaxBannerPurchaseCTA: "a8576f0c16cb09aecc82",
-					IdCard: "cbbad04994ab955e4071",
+					IdCard: "661e57bc7fd17c99fd74",
 					MuxEmbed: "31d6cfe0d16ae931b73c",
 					NewCommentPill: "0894d997bf075e88c18d",
 					ReadingIndicator: "cb5111d240398d3efd38",
@@ -1341,7 +1341,7 @@
 						CryptoHarbergerTaxPurchaseModal: "2ef49a6e047169ddf688",
 						EconHelperActions: "f499f62061148ed3d441",
 						EconManagement: "2d8d7f0a8bf76e228b90",
-						EconPowerupsFlairModal: "5da59d157a78394a009b",
+						EconPowerupsFlairModal: "8342e5554f2100db5582",
 						EconPowerupsMarketingModal: "084db7c899435dc9544b",
 						EmailCollectionBanner: "1bc511ba80681449662e",
 						EmailVerificationModals: "ea504d0c202f572a097e",
@@ -1407,7 +1407,7 @@
 						"translations/es_MX-json": "d563098a8499b139e7ff",
 						"translations/fr_FR-json": "ec4be11a683c489c45fb",
 						"translations/it_IT-json": "b403767b46d0c34c18ef",
-						"translations/pseudo_ext-json": "6a71de22bc1f47b73768",
+						"translations/pseudo_ext-json": "e0837ddb85af9db289c3",
 						"translations/pseudo_long-json": "512a507a8c2086d41e67",
 						"translations/pseudo_short-json": "589414822a54fa2e051b",
 						"translations/pt_BR-json": "800f236fc877b0c0db5e",
@@ -1465,7 +1465,7 @@
 						EconomicsSubredditPremiumSidebarCards: "d48222e45ca30d7f4d1d",
 						ReportFlow: "2713f9aa62f1346b82fe",
 						HarbergerTaxBannerPurchaseCTA: "1322810c1a2ef3bca677",
-						IdCard: "7ea221daec0438bc1d4f",
+						IdCard: "263ee91e4ede007f48e5",
 						MuxEmbed: "982b3400754d822142c4",
 						NewCommentPill: "82d049df39532e763bd0",
 						ReadingIndicator: "f33d28b3703fe25b1f2f",
@@ -1661,4 +1661,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.d3c6e63c0edb37a68e47.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.a70ca562fe023f81d455.js.map
