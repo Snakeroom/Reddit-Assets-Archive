@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.49af2befab3ed454099a.js
-// Retrieved at 11/3/2021, 12:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.efcb6b384d7e95f803c3.js
+// Retrieved at 11/3/2021, 1:20:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -7774,14 +7774,14 @@
 					hasAuthorsResults: t,
 					listingKey: s,
 					searchOptions: r
-				} = e, n = r.is_multi || r.category, o = t && !Object(y.a)(r.q), c = Object(a.a)(r.q || "");
-				return i.a.createElement(i.a.Fragment, null, o ? i.a.createElement(f, {
+				} = e, n = r.is_multi || r.category, c = t && !Object(y.a)(r.q), d = Object(a.a)(r.q || ""), l = Object(o.e)(t => Object(p.c)(t, e)), m = void 0 === l || l;
+				return i.a.createElement(i.a.Fragment, null, c || m ? i.a.createElement(f, {
 					key: "authorsPreview",
 					listingKey: s,
 					searchOptions: r
 				}) : !n && i.a.createElement(v.a, {
 					searchOptions: r,
-					query: c,
+					query: d,
 					type: g.b.People
 				}))
 			}
@@ -11886,4 +11886,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.49af2befab3ed454099a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.efcb6b384d7e95f803c3.js.map
