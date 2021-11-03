@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileOverview.aa2b20f0000b7a0e0c25.js
-// Retrieved at 11/3/2021, 12:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileOverview.d6aa87bca83ed0edb607.js
+// Retrieved at 11/3/2021, 1:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ProfileOverview"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -1317,7 +1317,7 @@
 					experimentEligibilitySelector: i.a,
 					experimentName: r.ec
 				});
-				return !(!t || Object(r.Re)(t))
+				return !(!t || Object(r.Se)(t))
 			}
 		},
 		"./src/reddit/selectors/experiments/signupUpsellExperiment.ts": function(e, t, s) {
@@ -1480,7 +1480,7 @@
 				n = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const a = e => {
 					const t = Object(n.a)(e);
-					return Boolean(t) && !Object(i.Re)(t)
+					return Boolean(t) && !Object(i.Se)(t)
 				},
 				c = Object(r.a)(a, o.d, (e, t) => e && !t)
 		},
@@ -1489,4 +1489,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileOverview.aa2b20f0000b7a0e0c25.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileOverview.d6aa87bca83ed0edb607.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.f6085213eb4b4a0baef1.js
-// Retrieved at 11/3/2021, 12:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.1cdb1c52f667a5fc68b8.js
+// Retrieved at 11/3/2021, 1:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -619,8 +619,8 @@
 				G = a("./src/lib/makeListingKey/index.ts"),
 				W = a("./src/reddit/actions/ads/index.ts"),
 				Y = a("./src/reddit/helpers/chooseVariant/index.ts"),
-				Q = a("./src/reddit/helpers/trackers/feed.ts"),
-				J = a("./src/reddit/reducers/sidebarPromotedPosts/models/index.ts"),
+				J = a("./src/reddit/helpers/trackers/feed.ts"),
+				Q = a("./src/reddit/reducers/sidebarPromotedPosts/models/index.ts"),
 				X = a("./src/reddit/actions/seo/linksModule.ts"),
 				$ = a("./src/reddit/selectors/seo/linksModule.ts"),
 				ee = a("./src/reddit/actions/publicAccessNetwork/api.ts"),
@@ -662,9 +662,9 @@
 							meta: u.meta,
 							correlationId: h,
 							...s
-						})), a(S.g(g)), s.geoFilter && a(Object(w.k)(s.geoFilter)), a(Object(W.b)(J.a.FRONTPAGE));
+						})), a(S.g(g)), s.geoFilter && a(Object(w.k)(s.geoFilter)), a(Object(W.b)(Q.a.FRONTPAGE));
 						const r = null === (d = null === (l = Object(j.b)(u)) || void 0 === l ? void 0 : l.locationState) || void 0 === d ? void 0 : d[L.b.FeedLoadReason];
-						Object(Q.b)(t.isRefresh ? L.a.UserRefresh : null != r ? r : L.a.InitialLoad)(c())
+						Object(J.b)(t.isRefresh ? L.a.UserRefresh : null != r ? r : L.a.InitialLoad)(c())
 					} else {
 						a(ie({
 							error: _.error,
@@ -682,7 +682,7 @@
 							buttonAction: le(e, t)
 						}));
 						const r = _.error;
-						Object(Q.a)(r ? `${_.status}:${r.type}` : "Failed to load post listing for frontpage")(c())
+						Object(J.a)(r ? `${_.status}:${r.type}` : "Failed to load post listing for frontpage")(c())
 					}
 				}, de = (e, t) => async (a, s) => {
 					var c;
@@ -702,7 +702,7 @@
 					})), (null === (c = n.listings.postOrder.correlationIds) || void 0 === c ? void 0 : c[d]) && a(I.o({
 						correlationId: n.listings.postOrder.correlationIds[d]
 					})), n.sidebarPromotedPosts.firstFetch || window.addEventListener("load", () => {
-						a(Object(W.b)(J.a.FRONTPAGE))
+						a(Object(W.b)(Q.a.FRONTPAGE))
 					})));
 					const f = Object(q.a)(n),
 						_ = Object(q.b)(f),
@@ -792,7 +792,7 @@
 								fetchedToken: u.token,
 								meta: c.meta,
 								...g
-							})), Object(Q.b)(L.a.NextPageLoad)(a());
+							})), Object(J.b)(L.a.NextPageLoad)(a());
 							else {
 								t(_e({
 									key: m,
@@ -801,7 +801,7 @@
 									...g
 								}));
 								const e = _.error;
-								Object(Q.a)(e ? `${_.status}:${e.type}` : "More posts for frontpage failed")(a())
+								Object(J.a)(e ? `${_.status}:${e.type}` : "More posts for frontpage failed")(a())
 							}
 						}
 					}
@@ -3363,8 +3363,8 @@
 				G = a("./src/reddit/actions/publicAccessNetwork/constants.ts"),
 				W = a("./src/lib/objectSelector/index.ts"),
 				Y = a("./src/reddit/constants/page.ts"),
-				Q = a("./src/reddit/pages/Frontpage/index.m.less"),
-				J = a.n(Q);
+				J = a("./src/reddit/pages/Frontpage/index.m.less"),
+				Q = a.n(J);
 
 			function X() {
 				return (X = Object.assign || function(e) {
@@ -3545,18 +3545,18 @@
 						})
 					});
 					const S = o.a.createElement(E.default, {
-						className: J.a.sidebar,
+						className: Q.a.sidebar,
 						listingKey: h,
 						listingName: Y.c
 					});
 					return o.a.createElement(D.a, {
-						className: Object(d.a)(J.a.Container, this.props.className),
+						className: Object(d.a)(Q.a.Container, this.props.className),
 						fitPageToContent: !0,
 						trendingUnit: k && o.a.createElement(oe, {
 							showCardView: p === I.g.Large
 						}),
 						content: o.a.createElement(n.Fragment, null, k && o.a.createElement(C.a, {
-							className: J.a.duHeader
+							className: Q.a.duHeader
 						}, $._("Popular posts", null, {
 							hk: "36DJb4"
 						})), o.a.createElement(y.a, null), i && o.a.createElement(A.a, null), o.a.createElement(x.a, P), o.a.createElement(j.a, null), o.a.createElement(M.a, {
@@ -3904,8 +3904,8 @@
 					return Object(c.c)(e, {
 						experimentEligibilitySelector: i,
 						experimentName: s.Yb
-					}) === s.Hc.Enabled
-				}(e) ? l.Achievements : t === s.Ic.ControlBanner ? l.CommunitySpacesControl : t === s.Ic.EnabledBanner ? l.CommunitySpaces : null
+					}) === s.Ic.Enabled
+				}(e) ? l.Achievements : t === s.Jc.ControlBanner ? l.CommunitySpacesControl : t === s.Jc.EnabledBanner ? l.CommunitySpaces : null
 			}! function(e) {
 				e.Achievements = "achievements", e.CommunitySpaces = "communitySpaces", e.CommunitySpacesControl = "communitySpaces--control"
 			}(l || (l = {}))
@@ -3966,4 +3966,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.f6085213eb4b4a0baef1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.1cdb1c52f667a5fc68b8.js.map

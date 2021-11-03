@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PowerupsPremiumUpsellModal.87ddba50e5220f42d502.js
-// Retrieved at 11/3/2021, 12:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PowerupsPremiumUpsellModal.29fd9ab1d3bf16c9d5ef.js
+// Retrieved at 11/3/2021, 1:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PowerupsPremiumUpsellModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, r) {
@@ -1033,9 +1033,9 @@
 					i = function() {
 						var e, t;
 						const r = Object(c.d)(),
-							o = Object(c.e)(I.k),
+							o = Object(c.e)(I.l),
 							s = Object(c.e)(C.e),
-							a = Object(c.e)(I.n);
+							a = Object(c.e)(I.o);
 						Object(n.useEffect)(() => {
 							o.length || a || r(Object(E.b)()), s || r(Object(v.c)(x.c.Premium))
 						});
@@ -1060,7 +1060,7 @@
 					d = Object(c.e)(t => Object(C.a)(t, {
 						subredditId: e
 					})),
-					u = Object(c.e)(I.i),
+					u = Object(c.e)(I.j),
 					l = Q.map(e => S.b[e]());
 				return o.a.createElement("div", {
 					className: F.a.container
@@ -1897,4 +1897,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsPremiumUpsellModal.87ddba50e5220f42d502.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsPremiumUpsellModal.29fd9ab1d3bf16c9d5ef.js.map

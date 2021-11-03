@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Coins.47c8cbf218c2b3559698.js
-// Retrieved at 11/3/2021, 12:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Coins.368cad086d81984c64f5.js
+// Retrieved at 11/3/2021, 1:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Coins"], {
 		"./node_modules/lodash/times.js": function(e, t, a) {
@@ -261,14 +261,14 @@
 				}, I = (e, t, a) => async (r, s) => {
 					await r(Object(l.c)(e, a));
 					const c = s(),
-						i = Object(O.p)(c);
+						i = Object(O.q)(c);
 					if (0 !== i.length) r(E({
 						correlationId: a,
 						packageId: i[0].mobileId,
 						thingId: t
 					}));
 					else {
-						const e = Object(O.m)(c),
+						const e = Object(O.n)(c),
 							t = n.fbt._("Unable to create purchase request.", null, {
 								hk: "lgfDj"
 							});
@@ -1636,8 +1636,8 @@
 					dealCoinPackages: G.f,
 					isPremiumSubscriber: M.t,
 					isLoggedIn: M.K,
-					premiumPackages: G.k,
-					purchaseCatalogPending: G.n
+					premiumPackages: G.l,
+					purchaseCatalogPending: G.o
 				}),
 				pe = Object(l.b)(ue, (e, t) => ({
 					onRouteToManagePremium: () => e(Object(d.b)("/settings/gold")),
@@ -1839,4 +1839,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Coins.47c8cbf218c2b3559698.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Coins.368cad086d81984c64f5.js.map

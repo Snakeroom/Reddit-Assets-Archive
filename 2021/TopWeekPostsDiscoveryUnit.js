@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.23efb3f35e91a8aa91e9.js
-// Retrieved at 11/3/2021, 12:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.b22efa0a3590de6d1f1e.js
+// Retrieved at 11/3/2021, 1:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["TopWeekPostsDiscoveryUnit"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -497,8 +497,8 @@
 				F = s("./src/reddit/components/Media/index.tsx"),
 				W = s("./src/reddit/components/MiniCardPost/MetaLine/index.tsx"),
 				A = s("./src/reddit/components/MiniCardPost/Thumbnail/index.tsx"),
-				B = s("./src/reddit/components/PostBackgroundWrapper/index.tsx"),
-				U = s("./src/reddit/components/PostContainer/index.tsx"),
+				U = s("./src/reddit/components/PostBackgroundWrapper/index.tsx"),
+				B = s("./src/reddit/components/PostContainer/index.tsx"),
 				R = s("./src/reddit/components/PostTitle/index.tsx"),
 				H = s("./src/reddit/connectors/miniCardPost.ts"),
 				V = s("./src/reddit/contexts/Post/index.tsx"),
@@ -572,7 +572,7 @@
 					}, O)));
 					const j = !_ && !k;
 					let N;
-					return v && (N = Object(G.h)(v) ? Object(K.m)(v) : Object(K.n)(v)), r.a.createElement(U.a, {
+					return v && (N = Object(G.h)(v) ? Object(K.m)(v) : Object(K.n)(v)), r.a.createElement(B.a, {
 						className: Object(c.a)(ee.a.container, X.a.largeAndMediumActiveStyles, X.a.largeAndMediumPostStyles, Z.a.postContainer, Object(z.a)(this.props), s),
 						post: p,
 						onClick: u,
@@ -583,7 +583,7 @@
 							...this.props.style
 						},
 						"data-click-id": this.props["data-click-id"]
-					}, r.a.createElement(B.a, {
+					}, r.a.createElement(U.a, {
 						className: Z.a.backgroundWrapper,
 						flairStyleTemplate: o
 					}, r.a.createElement("div", {
@@ -1059,24 +1059,24 @@
 				},
 				W = s("./node_modules/fbt/lib/FbtPublic.js"),
 				A = s("./src/lib/prettyPrintNumber/index.ts"),
-				B = s("./src/reddit/components/DiscoveryUnit/InFeedChaining/Post/Footer/index.m.less"),
-				U = s.n(B);
+				U = s("./src/reddit/components/DiscoveryUnit/InFeedChaining/Post/Footer/index.m.less"),
+				B = s.n(U);
 			var R = e => {
 					const {
 						className: t,
 						post: s
 					} = e;
 					return a.a.createElement("div", {
-						className: Object(o.a)(U.a.footer, t)
+						className: Object(o.a)(B.a.footer, t)
 					}, a.a.createElement("span", {
-						className: U.a.metaText
+						className: B.a.metaText
 					}, W.fbt._({
 						"*": "{number} points",
 						_1: "1 score"
 					}, [W.fbt._plural(s.score, "number", Object(A.b)(s.score))], {
 						hk: "2ncFte"
 					})), a.a.createElement("span", {
-						className: U.a.metaText
+						className: B.a.metaText
 					}, W.fbt._({
 						"*": "{number} comments",
 						_1: "1 comment"
@@ -1609,8 +1609,8 @@
 				F = s("./src/reddit/selectors/user.ts"),
 				W = s("./src/reddit/components/PostTitle/index.m.less"),
 				A = s.n(W),
-				B = s("./src/config.ts"),
-				U = s("./src/reddit/hooks/useClickSourceData.ts"),
+				U = s("./src/config.ts"),
+				B = s("./src/reddit/hooks/useClickSourceData.ts"),
 				R = s("./src/reddit/hooks/useExperimentVariant.ts"),
 				H = s("./src/reddit/hooks/usePostContext.ts"),
 				V = s("./src/reddit/hooks/useTheme.ts"),
@@ -1705,7 +1705,7 @@
 						subreddit: s
 					} = e, {
 						isSponsored: n
-					} = t, a = Object(U.a)(), i = Object(R.a)(u.Pc) === u.Tc.Enabled;
+					} = t, a = Object(B.a)(), i = Object(R.a)(u.Qc) === u.Uc.Enabled;
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return r.a.createElement(K, {
 						nowrap: e.nowrap
 					}, r.a.createElement(Y, e));
@@ -1843,7 +1843,7 @@
 					}), r.a.createElement("div", {
 						className: A.a.postTitleVisibility,
 						dangerouslySetInnerHTML: {
-							__html: `\n              <img alt="" src="${B.a.assetPath}/img/renderTimingPixel.png" style="width: 1px; height: 1px;" onLoad="(__markFirstPostVisible || function(){})();" />\n            `
+							__html: `\n              <img alt="" src="${U.a.assetPath}/img/renderTimingPixel.png" style="width: 1px; height: 1px;" onLoad="(__markFirstPostVisible || function(){})();" />\n            `
 						}
 					}), this.getDynamicStyleTags())
 				}
@@ -2382,4 +2382,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.23efb3f35e91a8aa91e9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.b22efa0a3590de6d1f1e.js.map

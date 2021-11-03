@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.832d1b6bf187360c1922.js
-// Retrieved at 11/3/2021, 12:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.055d6a0fc78c5d6d6a80.js
+// Retrieved at 11/3/2021, 1:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CoinPurchaseDropdown"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, r) {
@@ -151,7 +151,7 @@
 			r.d(t, "c", (function() {
 				return P
 			})), r.d(t, "a", (function() {
-				return k
+				return w
 			})), r.d(t, "e", (function() {
 				return E
 			})), r.d(t, "b", (function() {
@@ -192,14 +192,14 @@
 				_ = Object(c.a)(y.c),
 				P = e => async (t, r) => {
 					t(x(e)), t(Object(l.h)(s.a.ECON_COIN_PURCHASE))
-				}, k = () => async (e, t) => {
+				}, w = () => async (e, t) => {
 					e(_()), e(Object(l.g)(s.a.ECON_COIN_PURCHASE))
-				}, w = Object(c.a)(y.u), E = ({
+				}, k = Object(c.a)(y.u), E = ({
 					correlationId: e,
 					packageId: t
 				}) => async (r, n) => {
 					const o = n();
-					Object(j.e)(o, t) ? (r(w({
+					Object(j.e)(o, t) ? (r(k({
 						correlationId: e,
 						packageId: t
 					})), r(Object(l.i)(s.a.GOLD_TARGETED_OFFER_MODAL))) : a.c.captureMessage(`Tried to show targeted offer, but could not find package id: ${t}`)
@@ -214,14 +214,14 @@
 				}, A = (e, t, r) => async (o, c) => {
 					await o(Object(d.c)(e, r));
 					const a = c(),
-						s = Object(j.p)(a);
+						s = Object(j.q)(a);
 					if (0 !== s.length) o(P({
 						correlationId: r,
 						packageId: s[0].mobileId,
 						thingId: t
 					}));
 					else {
-						const e = Object(j.m)(a),
+						const e = Object(j.n)(a),
 							t = n.fbt._("Unable to create purchase request.", null, {
 								hk: "lgfDj"
 							});
@@ -297,7 +297,7 @@
 							return void a(Object(i.stripeApiError)(e))
 						}
 						const P = _.id,
-							w = {
+							k = {
 								gildType: P,
 								isAnonymous: s,
 								message: C
@@ -306,7 +306,7 @@
 								coins: u,
 								context: d(),
 								correlationId: g,
-								gildParams: w,
+								gildParams: k,
 								isOldReddit: c,
 								offerContext: Object(O.d)(t, !0),
 								pennies: b,
@@ -322,7 +322,7 @@
 							const {
 								gildSuccessful: t
 							} = await r.e("gildActions").then(r.bind(null, "./src/reddit/actions/gold/gild.ts"));
-							a(k()), a(Object(i.paymentCompleted)({
+							a(w()), a(Object(i.paymentCompleted)({
 								confirmed: !1
 							}));
 							const {
@@ -452,7 +452,7 @@
 							const e = Object(o.a)(x.error);
 							c(Object(i.paypalApiError)(e))
 						} else {
-							c(k());
+							c(w());
 							const {
 								all_awardings: e,
 								awarder_karma_received: t,
@@ -522,9 +522,9 @@
 			})), r.d(t, "savedCardsPending", (function() {
 				return P
 			})), r.d(t, "savedCardsSuccess", (function() {
-				return k
-			})), r.d(t, "loadSavedCards", (function() {
 				return w
+			})), r.d(t, "loadSavedCards", (function() {
+				return k
 			}));
 			var n = r("./node_modules/fbt/lib/FbtPublic.js"),
 				o = r("./src/lib/sentry/index.ts"),
@@ -573,7 +573,7 @@
 					} catch (c) {
 						o.c.captureException(c)
 					}
-				}, P = Object(c.a)(s.z), k = Object(c.a)(s.A), w = () => async (e, t, {
+				}, P = Object(c.a)(s.z), w = Object(c.a)(s.A), k = () => async (e, t, {
 					apiContext: r
 				}) => {
 					e(P());
@@ -587,9 +587,9 @@
 							expirationYear: e.exp_year,
 							last4: e.last4
 						}));
-						e(k(n)), n[0] && e(y(n[0].cardId))
+						e(w(n)), n[0] && e(y(n[0].cardId))
 					} catch (n) {
-						o.c.captureException(n), e(k([]))
+						o.c.captureException(n), e(w([]))
 					}
 				}
 		},
@@ -860,8 +860,8 @@
 				},
 				_ = r("./node_modules/fbt/lib/FbtPublic.js"),
 				P = r("./node_modules/react-redux/es/index.js"),
-				k = r("./node_modules/reselect/es/index.js"),
-				w = r("./src/lib/constants/index.ts"),
+				w = r("./node_modules/reselect/es/index.js"),
+				k = r("./src/lib/constants/index.ts"),
 				E = r("./src/lib/currency/currencies.ts"),
 				v = r("./src/lib/localizeCurrency/index.ts"),
 				I = r("./src/lib/opener/index.ts"),
@@ -923,7 +923,7 @@
 				},
 				$ = r("./src/reddit/components/CompactCoinPurchaseList/index.m.less"),
 				Q = r.n($);
-			const X = Object(k.c)({
+			const X = Object(w.c)({
 					coinPackages: K.d,
 					communityPointsConversionEnabled: F.d.spPointsCoinConversion,
 					communityPointsName: (e, t) => {
@@ -933,9 +933,9 @@
 					},
 					isFreeAwardEventEnabled: e => Object(G.a)(e) && Object(K.g)(e),
 					isPremiumSubscriber: z.t,
-					premiumPackages: K.k,
-					purchaseCatalogError: K.m,
-					purchaseCatalogPending: K.n
+					premiumPackages: K.l,
+					purchaseCatalogError: K.n,
+					purchaseCatalogPending: K.o
 				}),
 				J = Object(P.b)(X, e => ({
 					onClickClaimFreeAward: () => e(Object(S.h)(M.a.ECON_CLAIM_FREE_AWARD_MODAL)),
@@ -968,7 +968,7 @@
 							sendEvent: o
 						} = this.props;
 						t && t(), o(l.c());
-						const c = (null === (e = null == n ? void 0 : n.meta) || void 0 === e ? void 0 : e.name) === w.Lb.PREMIUM;
+						const c = (null === (e = null == n ? void 0 : n.meta) || void 0 === e ? void 0 : e.name) === k.Lb.PREMIUM;
 						r(this.correlationId, c)
 					}, this.handleClickFreeAward = () => {
 						const {
@@ -1471,4 +1471,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.832d1b6bf187360c1922.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.055d6a0fc78c5d6d6a80.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-PremiumModal.2c3f3119f5baafe35045.js
-// Retrieved at 11/3/2021, 12:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-PremiumModal.d9d8cd59dfda88db9271.js
+// Retrieved at 11/3/2021, 1:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction-PremiumModal"], {
 		"./src/reddit/components/Econ/Prediction/PremiumModal/index.m.less": function(e, t, a) {
@@ -40,9 +40,9 @@
 				P = a("./src/reddit/helpers/trackers/premium.ts"),
 				_ = a("./src/reddit/hooks/useTracking.ts"),
 				f = a("./src/reddit/icons/fonts/index.tsx"),
-				k = a("./src/reddit/icons/svgs/PremiumLogo/index.tsx"),
-				x = a("./src/reddit/models/Gold/ProductOffer.ts"),
-				E = a("./src/reddit/pages/Premium/index.tsx"),
+				x = a("./src/reddit/icons/svgs/PremiumLogo/index.tsx"),
+				E = a("./src/reddit/models/Gold/ProductOffer.ts"),
+				k = a("./src/reddit/pages/Premium/index.tsx"),
 				O = a("./src/reddit/pages/Premium/BenefitsSection/index.tsx"),
 				j = a("./src/reddit/pages/Premium/PremiumButtons/index.tsx"),
 				B = a("./src/reddit/selectors/gold/purchaseCatalog.ts"),
@@ -60,13 +60,13 @@
 			}) => {
 				const o = Object(c.d)(),
 					d = Object(_.a)(),
-					N = Object(c.e)(B.k),
-					v = Object(c.e)(B.n),
+					N = Object(c.e)(B.l),
+					v = Object(c.e)(B.o),
 					I = Object(h.d)(h.a.GoldPayment, !1);
 				Object(r.useEffect)(() => {
 					Object(p.a)()
 				}, []), Object(r.useEffect)(() => {
-					N.length || v || o(Object(g.b)(I)), o(Object(m.c)(x.c.Premium))
+					N.length || v || o(Object(g.b)(I)), o(Object(m.c)(E.c.Premium))
 				});
 				return s.a.createElement(s.a.Fragment, null, s.a.createElement("div", {
 					className: w.a.background,
@@ -86,7 +86,7 @@
 					className: w.a.prediction
 				}, s.a.createElement("div", {
 					className: w.a.logo
-				}, s.a.createElement(k.a, null)), s.a.createElement("h2", {
+				}, s.a.createElement(x.a, null)), s.a.createElement("h2", {
 					className: w.a.title
 				}, e), s.a.createElement("h3", {
 					className: w.a.description
@@ -111,7 +111,7 @@
 					}
 				}), s.a.createElement("div", {
 					className: w.a.paidPremiumSubtext
-				}, E.PAID_PREMIUM_SUBTEXT)))
+				}, k.PAID_PREMIUM_SUBTEXT)))
 			});
 			const {
 				fbt: I
@@ -170,4 +170,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-PremiumModal.2c3f3119f5baafe35045.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-PremiumModal.d9d8cd59dfda88db9271.js.map

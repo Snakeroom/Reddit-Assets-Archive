@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/UserAchievementFlair.bfb0ac8e39e2cae6972a.js
-// Retrieved at 11/3/2021, 12:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/UserAchievementFlair.995d31b43ba080ce9321.js
+// Retrieved at 11/3/2021, 1:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["UserAchievementFlair"], {
 		"./src/reddit/components/Econ/PowerupsFlair/HoverPopup.m.less": function(e, t, n) {
@@ -238,7 +238,7 @@
 								experimentName: c.G,
 								expEventOverride: t
 							});
-							return !!(Object(c.Re)(n) ? void 0 : n)
+							return !!(Object(c.Se)(n) ? void 0 : n)
 						})(n)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -776,9 +776,9 @@
 			})), n.d(t, "C", (function() {
 				return A
 			})), n.d(t, "D", (function() {
-				return M
-			})), n.d(t, "E", (function() {
 				return S
+			})), n.d(t, "E", (function() {
+				return M
 			})), n.d(t, "r", (function() {
 				return H
 			})), n.d(t, "e", (function() {
@@ -792,9 +792,9 @@
 			})), n.d(t, "i", (function() {
 				return z
 			})), n.d(t, "F", (function() {
-				return R
-			})), n.d(t, "B", (function() {
 				return U
+			})), n.d(t, "B", (function() {
+				return R
 			})), n.d(t, "H", (function() {
 				return q
 			})), n.d(t, "p", (function() {
@@ -953,10 +953,10 @@
 				A = (e, {
 					moreCommentsId: t
 				}) => e.moreComments.models[t],
-				M = (e, {
+				S = (e, {
 					moreCommentsId: t
 				}) => !!e.moreComments.api.pending[t],
-				S = (e, {
+				M = (e, {
 					commentsPageKey: t
 				}) => {
 					const n = e.pages.comments.keyToPostId[t];
@@ -998,13 +998,13 @@
 				z = (e, {
 					draftKey: t
 				}) => e.features.comments.drafts[t],
-				R = (e, {
+				U = (e, {
 					commentId: t
 				}) => {
 					const n = t ? e.features.comments.submit.error[t] : void 0;
 					return n && n.fields ? n.fields.map(e => e.msg) : void 0
 				},
-				U = (e, {
+				R = (e, {
 					commentId: t
 				}) => !!t && e.features.comments.submit.pending[t],
 				q = (e, {
@@ -1031,4 +1031,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UserAchievementFlair.bfb0ac8e39e2cae6972a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UserAchievementFlair.995d31b43ba080ce9321.js.map
