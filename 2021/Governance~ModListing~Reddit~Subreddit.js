@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.2239ba977b66665f7945.js
-// Retrieved at 11/3/2021, 1:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.e04b3eef6f09e8995f65.js
+// Retrieved at 11/3/2021, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~Subreddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, r) {
@@ -883,22 +883,22 @@
 				A = r("./src/telemetry/index.ts"),
 				U = r("./src/reddit/actions/structuredStyles/constants.ts");
 			const B = Object(d.a)(U.m),
-				F = {
+				H = {
 					bannerBackgroundImage: ["bannerBackgroundImagePosition"],
 					bannerPositionedImage: ["bannerPositionedImagePosition", "secondaryBannerPositionedImage"]
 				},
-				H = e => {
+				F = e => {
 					const t = {
 						...e
 					};
 					return Object.keys(e).forEach(r => {
-						F[r] && !e[r] && F[r].forEach(e => t[e] = null)
+						H[r] && !e[r] && H[r].forEach(e => t[e] = null)
 					}), t
 				},
 				M = (e, t, r, n) => async (o, i, s) => {
 					const {
 						apiContext: c
-					} = s, a = i(), d = H(t), p = a.structuredStyles.models[e];
+					} = s, a = i(), d = F(t), p = a.structuredStyles.models[e];
 					let m;
 					for (const e in d)
 						if (d[e] !== p[e]) {
@@ -1018,7 +1018,7 @@
 						}))
 					})(e)(t, r, n), Object(j.g)(e, !1)(t, r, n)
 				}, V = Object(d.a)(U.c), Q = e => async (t, r, n) => {
-					const o = H(e),
+					const o = F(e),
 						i = r();
 					for (const e in o)
 						if (Object(T.l)(e))
@@ -1976,7 +1976,7 @@
 					iconUrl: b && r ? "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_3.png" : R,
 					isCurrentUser: N,
 					isNSFW: A
-				})), [F, H] = Object(o.useState)(!1), M = Object(o.useMemo)(() => ({
+				})), [H, F] = Object(o.useState)(!1), M = Object(o.useMemo)(() => ({
 					input: {
 						channel: {
 							teamOwner: "CONTENT_AND_COMMUNITIES",
@@ -1988,7 +1988,7 @@
 					const {
 						isOnline: t
 					} = e.subscribe.data;
-					H(t)
+					F(t)
 				}, []), W = Object(o.useRef)(null), [q, z] = Object(o.useState)(!1), K = Object(o.useCallback)(e => {
 					e.forEach(e => {
 						const {
@@ -2011,7 +2011,7 @@
 					className: v.a.nftAnimation,
 					assetUrl: `${s.a.assetPath}/img/snoovatars/nft_comment_animation.json`,
 					loop: !0
-				}), B, x && F && i.a.createElement(p.default, {
+				}), B, x && H && i.a.createElement(p.default, {
 					showPresence: !0,
 					isHighlighted: h,
 					onceInViewport: E
@@ -2689,7 +2689,7 @@
 			})), r.d(t, "e", (function() {
 				return B
 			})), r.d(t, "n", (function() {
-				return H
+				return F
 			})), r.d(t, "i", (function() {
 				return G
 			})), r.d(t, "f", (function() {
@@ -2891,7 +2891,7 @@
 						action: n.c.CLICK
 					})
 				},
-				F = (e, t) => {
+				H = (e, t) => {
 					if (t) {
 						const r = u.subredditById(e, t);
 						if (r) return {
@@ -2903,7 +2903,7 @@
 						}
 					}
 				},
-				H = (e, t) => {
+				F = (e, t) => {
 					const {
 						draftId: r,
 						destSubreddit: n
@@ -2936,7 +2936,7 @@
 					}
 					return {
 						postDraft: s,
-						...F(e, n.id)
+						...H(e, n.id)
 					}
 				},
 				M = (e, t) => {
@@ -2962,21 +2962,21 @@
 					}
 					return {
 						postDraft: n,
-						...F(e, t.subredditId)
+						...H(e, t.subredditId)
 					}
 				},
 				G = (e, t) => {
 					Object(p.a)({
 						noun: "draft_load",
 						...g(e),
-						...H(e, t)
+						...F(e, t)
 					})
 				},
 				W = (e, t) => {
 					Object(p.a)({
 						noun: t.draftId ? "draft_update" : "draft_create",
 						...g(e),
-						...H(e, t)
+						...F(e, t)
 					})
 				},
 				q = (e, t) => {
@@ -3003,7 +3003,7 @@
 				Y = (e, t, r) => {
 					Object(p.a)({
 						...g(e),
-						...H(e, t),
+						...F(e, t),
 						noun: "draft_share",
 						action: r ? n.c.ENABLE : n.c.DISABLE
 					})
@@ -3128,9 +3128,9 @@
 			})), r.d(t, "a", (function() {
 				return B
 			})), r.d(t, "A", (function() {
-				return F
-			})), r.d(t, "d", (function() {
 				return H
+			})), r.d(t, "d", (function() {
+				return F
 			})), r.d(t, "l", (function() {
 				return M
 			})), r.d(t, "F", (function() {
@@ -3382,7 +3382,7 @@
 						emojiCount: e
 					}
 				}),
-				F = (e, t) => r => ({
+				H = (e, t) => r => ({
 					source: t,
 					action: "save",
 					noun: "custom_emojis",
@@ -3392,7 +3392,7 @@
 						emojiCount: e
 					}
 				}),
-				H = (e = 1, t) => r => ({
+				F = (e = 1, t) => r => ({
 					source: t,
 					action: "delete",
 					noun: "custom_emojis",
@@ -3456,7 +3456,7 @@
 			})), r.d(t, "g", (function() {
 				return U
 			})), r.d(t, "b", (function() {
-				return H
+				return F
 			})), r.d(t, "a", (function() {
 				return M
 			})), r.d(t, "n", (function() {
@@ -3625,14 +3625,14 @@
 								draftId: o
 							} = e.match.params, i = Object(s.a)(e.match.params);
 							if (!i) return;
-							F(t, i, o, r, n);
+							H(t, i, o, r, n);
 							break
 						}
 						case i.Lb.SUBREDDIT_WIKI:
 							Object(w.a)(Q(r, n)(t));
 							break;
 						case i.Lb.COINS:
-							Object(w.a)(H(r, n)(t)), Object(w.a)(M()(t));
+							Object(w.a)(F(r, n)(t)), Object(w.a)(M()(t));
 							break;
 						case i.Lb.PREMIUM:
 							Object(w.a)(G(r, n)(t)), Object(w.a)(W()(t));
@@ -3906,7 +3906,7 @@
 						actionInfo: j.actionInfo(e)
 					})
 				},
-				F = (e, t, r, n, o) => {
+				H = (e, t, r, n, o) => {
 					const i = e.creations.api.page.pending[t],
 						s = !e.creations.api.page.error[t] && !i && !!r,
 						c = Object(y.h)(e, r);
@@ -3925,7 +3925,7 @@
 						...c ? Object(d.n)(e, c) : {}
 					})
 				},
-				H = (e, t) => r => ({
+				F = (e, t) => r => ({
 					source: "coins_marketing",
 					action: "view",
 					noun: "page",
@@ -4130,7 +4130,7 @@
 			})), r.d(t, "j", (function() {
 				return B
 			})), r.d(t, "l", (function() {
-				return F
+				return H
 			}));
 			var n = r("./src/lib/constants/index.ts"),
 				o = r("./src/reddit/constants/posts.ts"),
@@ -4497,7 +4497,7 @@
 				})
 			}
 
-			function F(e, t) {
+			function H(e, t) {
 				return r => ({
 					...u(r),
 					source: "search",
@@ -4793,33 +4793,33 @@
 				u = e => {
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: i.Ed
+						experimentName: i.Gd
 					});
-					return t === i.Fd.UIChangesOnly || t === i.Fd.RedditRecommendation || t === i.Fd.OpenAI || t === i.Fd.FilteredOpenAI
+					return t === i.Hd.UIChangesOnly || t === i.Hd.RedditRecommendation || t === i.Hd.OpenAI || t === i.Hd.FilteredOpenAI
 				},
 				f = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: i.Ed
-					}) === i.Fd.UIChangesOnly
+						experimentName: i.Gd
+					}) === i.Hd.UIChangesOnly
 				},
 				p = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: i.Ed
-					}) === i.Fd.RedditRecommendation
+						experimentName: i.Gd
+					}) === i.Hd.RedditRecommendation
 				},
 				_ = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: i.Ed
-					}) === i.Fd.OpenAI
+						experimentName: i.Gd
+					}) === i.Hd.OpenAI
 				},
 				m = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: i.Ed
-					}) === i.Fd.FilteredOpenAI
+						experimentName: i.Gd
+					}) === i.Hd.FilteredOpenAI
 				},
 				b = e => e.creations.subredditRec.api.pending,
 				g = e => e.creations.subredditRec.api.error,
@@ -4903,9 +4903,9 @@
 					experimentName: o.Tb,
 					experimentEligibilitySelector: e => a(e, t)
 				}), e => e),
-				d = e => e === o.Ee.NoCommunityWidgets,
-				u = e => e === o.Ee.NoRulesModerators,
-				f = e => e === o.Ee.RelatedPostsDu
+				d = e => e === o.Ge.NoCommunityWidgets,
+				u = e => e === o.Ge.NoRulesModerators,
+				f = e => e === o.Ge.RelatedPostsDu
 		},
 		"./src/reddit/selectors/tooltip.ts": function(e, t, r) {
 			"use strict";
@@ -4919,4 +4919,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.2239ba977b66665f7945.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.e04b3eef6f09e8995f65.js.map

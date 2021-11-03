@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileOverview.d6aa87bca83ed0edb607.js
-// Retrieved at 11/3/2021, 1:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileOverview.a486004d1d1aa77c24f3.js
+// Retrieved at 11/3/2021, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ProfileOverview"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -629,7 +629,7 @@
 				V = s.n(R);
 			const {
 				fbt: M
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), q = 500, Z = new B.a(q), U = new B.a(q), K = new B.a(q), $ = {
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), q = 500, U = new B.a(q), Z = new B.a(q), K = new B.a(q), $ = {
 				LARGE: 1,
 				MEDIUM: 1,
 				CLASSIC: 3,
@@ -637,16 +637,16 @@
 				SEARCH: 3
 			}, H = y.a.div("SeeMore", V.a), G = y.a.wrapped(z.a, "ArrowRight", V.a), W = (e, t, s, r, i, o, n, a, c) => {
 				const d = `entered-${e}-${t}-${s?`last-${r}-${i}`:""}-${o}`;
-				let l = Z.get(d);
+				let l = U.get(d);
 				return void 0 === l && (l = () => {
 					s && n.onBottomViewed(r, i), n.trackOnPostEnteredViewport(e, t, a, c)
-				}, Z.set(d, l)), l
+				}, U.set(d, l)), l
 			}, J = (e, t, s, r, i) => {
 				const o = `left-${e}-${t}`;
-				let n = U.get(o);
+				let n = Z.get(o);
 				return void 0 === n && (n = o => {
 					s.trackOnPostExitedViewport(e, t, o, r, i)
-				}, U.set(o, n)), n
+				}, Z.set(o, n)), n
 			}, Y = (e, t, s = !1) => {
 				const r = `click-${e}`;
 				let i = K.get(r);
@@ -862,7 +862,7 @@
 							V = Y(e, this.props, c),
 							M = L.media && L.media.type === A.o.EMBED ? L.media.provider : null,
 							q = p && !I.isSponsored,
-							Z = m && !I.isSponsored && !I.isScoreHidden;
+							U = m && !I.isSponsored && !I.isScoreHidden;
 						P = {
 							estHeight: Object(S.c)(I, r),
 							id: e,
@@ -892,7 +892,7 @@
 								isProfilePostListing: d,
 								isTopicPage: l,
 								isCommentCountAnimationEnabled: q,
-								isVoteCountAnimationEnabled: Z,
+								isVoteCountAnimationEnabled: U,
 								isCountAnimShadowTestEnabled: h,
 								listingBelowVariant: _,
 								listingIndex: t,
@@ -1086,9 +1086,9 @@
 				subredditOrProfile: V,
 				isFollowed: M,
 				shouldShowFollowButton: q,
-				onFollowPostClick: Z
+				onFollowPostClick: U
 			}) => {
-				const U = i || A,
+				const Z = i || A,
 					K = V && Object(k.h)(V),
 					$ = Object(n.e)(e => {
 						if (!K) return !0;
@@ -1126,7 +1126,7 @@
 					isCompactPinnedPost: O,
 					post: L,
 					tooltipType: z ? p.c.Lightbox : void 0
-				}), !U && o.a.createElement(c.a, {
+				}), !Z && o.a.createElement(c.a, {
 					isPostDetail: P,
 					thing: L,
 					tooltipType: z ? p.c.Lightbox : void 0
@@ -1148,7 +1148,7 @@
 					className: F.a.outboundLinkIcon
 				})), q && $ && o.a.createElement(l.a, {
 					isFilled: !!M,
-					onClick: Z,
+					onClick: U,
 					hasTooltip: !0,
 					tooltipText: r.fbt._("Follow post to stay updated", null, {
 						hk: "26UP9Z"
@@ -1317,7 +1317,7 @@
 					experimentEligibilitySelector: i.a,
 					experimentName: r.ec
 				});
-				return !(!t || Object(r.Se)(t))
+				return !(!t || Object(r.Ue)(t))
 			}
 		},
 		"./src/reddit/selectors/experiments/signupUpsellExperiment.ts": function(e, t, s) {
@@ -1480,7 +1480,7 @@
 				n = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const a = e => {
 					const t = Object(n.a)(e);
-					return Boolean(t) && !Object(i.Se)(t)
+					return Boolean(t) && !Object(i.Ue)(t)
 				},
 				c = Object(r.a)(a, o.d, (e, t) => e && !t)
 		},
@@ -1489,4 +1489,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileOverview.d6aa87bca83ed0edb607.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileOverview.a486004d1d1aa77c24f3.js.map

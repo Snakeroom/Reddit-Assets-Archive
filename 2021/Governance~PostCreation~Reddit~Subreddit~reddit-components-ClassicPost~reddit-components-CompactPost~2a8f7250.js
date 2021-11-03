@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.96b3d0a7469c5a360f0d.js
-// Retrieved at 11/3/2021, 1:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.e1a4ae99de2e07834e1f.js
+// Retrieved at 11/3/2021, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250"], {
 		"./src/lib/humanizeDate/index.ts": function(e, t, n) {
@@ -95,7 +95,7 @@
 			})), n.d(t, "a", (function() {
 				return R
 			})), n.d(t, "b", (function() {
-				return W
+				return U
 			}));
 			var r = n("./node_modules/fbt/lib/FbtPublic.js"),
 				s = n("./src/lib/constants/index.ts"),
@@ -323,7 +323,7 @@
 						multiredditPath: e,
 						multiredditsModelsState: o
 					})), i())
-				}, M = Object(o.a)(d.e), W = e => async (t, n, {
+				}, M = Object(o.a)(d.e), U = e => async (t, n, {
 					apiContext: o
 				}) => {
 					const i = n(),
@@ -494,7 +494,7 @@
 		"./src/reddit/components/Flair/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "c", (function() {
-				return U
+				return W
 			})), n.d(t, "a", (function() {
 				return H
 			})), n.d(t, "b", (function() {
@@ -614,7 +614,7 @@
 						ref: this.setTooltipTargetRef,
 						style: {
 							backgroundColor: this.props.backgroundColor || Object(T.a)(this.props).flair,
-							color: `${U(this.props)}`
+							color: `${W(this.props)}`
 						}
 					}, this.props.text, this.props.isSelected && c.a.createElement(w, {
 						to: "./",
@@ -643,7 +643,7 @@
 				}
 			}
 			const M = Object(m.a)(R),
-				W = Object(m.a)(e => {
+				U = Object(m.a)(e => {
 					let t = "",
 						n = !1;
 					const r = e.richtext.map((r, s) => {
@@ -673,7 +673,7 @@
 						style: {
 							...s,
 							backgroundColor: e.backgroundColor || Object(T.a)(e).flair,
-							color: `${U(e)}`
+							color: `${W(e)}`
 						}
 					}, r, e.isSelected && c.a.createElement(w, {
 						to: "./",
@@ -696,9 +696,9 @@
 						to: e.to
 					})
 				}),
-				U = e => !e.textColor || e.textColor && !e.backgroundColor ? Object(T.a)(e).postFlairText : "transparent" === e.backgroundColor ? Object(k.a)(Object(T.a)(e).post, O.b.black, O.b.white) : e.textColor === _.e.Dark ? O.b.black : O.b.white,
+				W = e => !e.textColor || e.textColor && !e.backgroundColor ? Object(T.a)(e).postFlairText : "transparent" === e.backgroundColor ? Object(k.a)(Object(T.a)(e).post, O.b.black, O.b.white) : e.textColor === _.e.Dark ? O.b.black : O.b.white,
 				H = p.a.wrapped(M, "TextFlair", S.a),
-				K = p.a.wrapped(W, "RichTextFlair", S.a),
+				K = p.a.wrapped(U, "RichTextFlair", S.a),
 				B = e => {
 					switch (e.type) {
 						case "spoiler":
@@ -1428,7 +1428,7 @@
 						placeholderImage: y,
 						redditStyle: f,
 						theme: C
-					}), E = M(e), N = d ? v.SourceElement.PostImage : v.SourceElement.ListingPostImage, F = U(b, t, I, _, O, C, E, l, x, h, f, u, m, p, s), w = Object(j.D)(b);
+					}), E = M(e), N = d ? v.SourceElement.PostImage : v.SourceElement.ListingPostImage, F = W(b, t, I, _, O, C, E, l, x, h, f, u, m, p, s), w = Object(j.D)(b);
 					return Object(r.a)(w) && !h && w.indexOf("redditmedia") < 0 ? o.a.createElement("div", {
 						className: Object(i.a)(T.a.container, k ? T.a.usePreview : "", n)
 					}, o.a.createElement(g.b, {
@@ -1453,13 +1453,13 @@
 						media: o,
 						thumbnail: i
 					} = e || t;
-					return r && s ? s.url : t.isSponsored && s && "default" === i.url ? s.url : W(o) ? o.scrubberThumbSource : i.url
+					return r && s ? s.url : t.isSponsored && s && "default" === i.url ? s.url : U(o) ? o.scrubberThumbSource : i.url
 				},
-				W = e => !!e && e.type === j.o.LIVEVIDEO,
-				U = (e, t, n, s, a, c, l, u, m, p, b, f, h, x, y) => {
+				U = e => !!e && e.type === j.o.LIVEVIDEO,
+				W = (e, t, n, s, a, c, l, u, m, p, b, f, h, x, y) => {
 					const g = e.source && !e.isSponsored || !1;
 					if (Object(r.a)(l)) {
-						const n = W(e.media),
+						const n = U(e.media),
 							r = n ? {
 								errorSrc: d.U
 							} : {},
@@ -1628,7 +1628,7 @@
 								experimentName: o.G,
 								expEventOverride: t
 							});
-							return !!(Object(o.Se)(n) ? void 0 : n)
+							return !!(Object(o.Ue)(n) ? void 0 : n)
 						})(n)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -2310,9 +2310,9 @@
 			})), n.d(t, "E", (function() {
 				return M
 			})), n.d(t, "r", (function() {
-				return W
-			})), n.d(t, "e", (function() {
 				return U
+			})), n.d(t, "e", (function() {
+				return W
 			})), n.d(t, "v", (function() {
 				return H
 			})), n.d(t, "J", (function() {
@@ -2499,10 +2499,10 @@
 					}
 					return null
 				},
-				W = (e, {
+				U = (e, {
 					id: t
 				}) => e.continueThreads.models[t],
-				U = (e, {
+				W = (e, {
 					commentId: t
 				}) => {
 					const n = t ? e.features.comments.models[t] : void 0;
@@ -2564,4 +2564,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.96b3d0a7469c5a360f0d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.e1a4ae99de2e07834e1f.js.map

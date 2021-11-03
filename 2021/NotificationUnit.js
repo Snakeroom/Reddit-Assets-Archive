@@ -1,11 +1,11 @@
-// https://www.redditstatic.com/desktop2x/NotificationUnit.b0ac3f98f7600b37c435.js
-// Retrieved at 11/3/2021, 1:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationUnit.4f6658da79f041910893.js
+// Retrieved at 11/3/2021, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationUnit"], {
 		"./src/reddit/components/NotificationUnit/Avatar.tsx": function(e, t, i) {
 			"use strict";
 			i.d(t, "a", (function() {
-				return b
+				return p
 			}));
 			var n = i("./src/config.ts"),
 				a = i("./node_modules/react/index.js"),
@@ -30,12 +30,12 @@
 				c = i("./src/reddit/components/NotificationUnit/index.m.less"),
 				m = i.n(c);
 			const u = `${n.a.assetPath}/img/cake_day.png`,
-				b = e => {
+				p = e => {
 					const {
 						avatar: t,
 						iconType: i,
 						messageType: n
-					} = e, a = l[i] || s.a.notification_fill, c = n === r.a.CakeDay, b = t && t.isNsfw, p = t && t.url;
+					} = e, a = l[i] || s.a.notification_fill, c = n === r.a.CakeDay, p = t && t.isNsfw, b = t && t.url;
 					return o.a.createElement("span", {
 						className: m.a.avatarContainer
 					}, ((e, t, i) => t ? o.a.createElement("span", {
@@ -47,7 +47,7 @@
 					}) : o.a.createElement("img", {
 						className: m.a.avatar,
 						src: i || ""
-					}))(c, b, p), o.a.createElement("span", {
+					}))(c, p, b), o.a.createElement("span", {
 						className: m.a.notificationIconContainer
 					}, o.a.createElement(d.a, {
 						name: a,
@@ -70,13 +70,13 @@
 				c = i("./src/reddit/components/OverlayAwareTooltip/index.tsx"),
 				m = i("./src/reddit/controls/Dropdown/index.tsx"),
 				u = i("./src/reddit/components/NotificationUnit/index.m.less"),
-				b = i.n(u);
+				p = i.n(u);
 			! function(e) {
 				e.HideNotif = "HideNotif", e.HideNotifUpdate = "HideNotifUpdate", e.HideSubUpdates = "HideSubUpdates", e.HideAwarder = "HideAwarder", e.DecreaseSubredditUpdates = "DecreaseSubredditUpdates"
 			}(n || (n = {}));
-			const p = d.a.wrapped(m.a, "StyledDropdown", b.a),
-				f = Object(l.a)(p),
-				v = Object(c.a)(p, [r.a.Click]);
+			const b = d.a.wrapped(m.a, "StyledDropdown", p.a),
+				f = Object(l.a)(b),
+				v = Object(c.a)(b, [r.a.Click]);
 			f.displayName = "UnawareDropdown", v.displayName = "AwareDropdown";
 			const E = e => {
 				const {
@@ -88,7 +88,7 @@
 					isHideNotifEligible: c,
 					isOpen: m,
 					isToggleLowUpdateFromSubredditEligible: u,
-					isToggleNotificationUpdateEligible: p,
+					isToggleNotificationUpdateEligible: b,
 					isToggleUpdateFromSubredditEligible: E,
 					isBlockAwarderEligible: x,
 					hideSubredditNotifications: N,
@@ -150,7 +150,7 @@
 							text: c
 						} = o;
 						return s.a.createElement("button", {
-							className: b.a.overflowMenuOption,
+							className: p.a.overflowMenuOption,
 							onClick: d,
 							type: "button"
 						}, c)
@@ -164,8 +164,8 @@
 					tooltipPosition: ["right", "top"],
 					isFixed: !0
 				}, s.a.createElement("div", {
-					className: b.a.overflowMenuContainer
-				}, c && T(n.HideNotif), u && T(n.DecreaseSubredditUpdates), E && T(n.HideSubUpdates), p && T(n.HideNotifUpdate), x && T(n.HideAwarder)))
+					className: p.a.overflowMenuContainer
+				}, c && T(n.HideNotif), u && T(n.DecreaseSubredditUpdates), E && T(n.HideSubUpdates), b && T(n.HideNotifUpdate), x && T(n.HideAwarder)))
 			}
 		},
 		"./src/reddit/components/NotificationUnit/PostEmbed.tsx": function(e, t, i) {
@@ -205,9 +205,9 @@
 					d: "M14.672 5.384l-4.056-4.056a3.689 3.689 0 00-5.232 0L1.328 5.384a3.688 3.688 0 000 5.232l4.056 4.056a3.688 3.688 0 005.232 0l4.056-4.056a3.689 3.689 0 000-5.232zM8.928 3.952L8.704 9.36H7.296l-.24-5.408h1.872zm-.04 7.648a.96.96 0 01-.368.368 1.05 1.05 0 01-.52.136A1.033 1.033 0 017.48 12a1 1 0 01-.376-.376 1.072 1.072 0 010-1.04.944.944 0 01.376-.376.96.96 0 01.52-.144.975.975 0 01.52.144.928.928 0 01.368.376 1.024 1.024 0 010 1.048V11.6z"
 				})),
 				u = i("./src/reddit/icons/svgs/Trash2/index.tsx"),
-				b = i("./src/reddit/models/NotificationInbox/index.ts"),
-				p = i("./src/reddit/components/NotificationUnit/index.m.less"),
-				f = i.n(p);
+				p = i("./src/reddit/models/NotificationInbox/index.ts"),
+				b = i("./src/reddit/components/NotificationUnit/index.m.less"),
+				f = i.n(b);
 			const v = r.a.wrapped(u.b, "StateIcon", f.a);
 			v.displayName = "Trash";
 			const E = r.a.wrapped(d, "StateIcon", f.a);
@@ -258,16 +258,16 @@
 					},
 					isUnread: u
 				}) => {
-					var p, h;
-					const w = r === b.c.Deleted,
-						I = r && r !== b.c.Deleted,
+					var b, h;
+					const w = r === p.c.Deleted,
+						I = r && r !== p.c.Deleted,
 						A = Object(s.a)(f.a.postEmbedContainer, {
 							[f.a.unread]: u
 						}),
 						U = Object(s.a)(f.a.postEmbedContent, {
 							[f.a.deleted]: w || I
 						}),
-						S = (null === (h = null === (p = null == a ? void 0 : a.obfuscated) || void 0 === p ? void 0 : p.content) || void 0 === h ? void 0 : h.url) && c.url,
+						S = (null === (h = null === (b = null == a ? void 0 : a.obfuscated) || void 0 === b ? void 0 : b.content) || void 0 === h ? void 0 : h.url) && c.url,
 						C = null == c ? void 0 : c.url;
 					return o.a.createElement("span", {
 						className: A
@@ -316,13 +316,13 @@
 					isInTooltip: n,
 					isOverflowMenuOpen: c,
 					isToggleLowUpdateFromSubredditEligible: u,
-					isToggleNotificationUpdateEligible: b,
-					isToggleUpdateFromSubredditEligible: p,
+					isToggleNotificationUpdateEligible: p,
+					isToggleUpdateFromSubredditEligible: b,
 					sendInboxClickOverflow: f,
 					sentAt: v,
 					setActiveOverflowMenuId: E,
 					title: x
-				} = e, N = i || b || p || u, g = Object(o.a)(m.a.menuButton, {
+				} = e, N = i || p || b || u, g = Object(o.a)(m.a.menuButton, {
 					[m.a.isOpen]: c
 				}), O = Date.parse(v) / s.Qb;
 				return a.a.createElement("span", {
@@ -360,8 +360,8 @@
 				c = i("./src/reddit/components/NotificationUnit/OverflowMenu.tsx"),
 				m = i("./src/reddit/components/NotificationUnit/PostEmbed.tsx"),
 				u = i("./src/reddit/components/NotificationUnit/TopBar.tsx"),
-				b = i("./src/reddit/controls/InternalLink/index.tsx"),
-				p = i("./src/reddit/helpers/trackers/inbox.ts"),
+				p = i("./src/reddit/controls/InternalLink/index.tsx"),
+				b = i("./src/reddit/helpers/trackers/inbox.ts"),
 				f = i("./src/reddit/hooks/useTracking.ts"),
 				v = i("./src/reddit/models/NotificationInbox/index.ts"),
 				E = i("./node_modules/react-redux/es/index.js"),
@@ -435,7 +435,7 @@
 						readAt: se,
 						sentAt: re,
 						title: le
-					} = K, de = null == Q ? void 0 : Q.messageType, ce = null === (i = null === (t = null == Q ? void 0 : Q.comment) || void 0 === t ? void 0 : t.parent) || void 0 === i ? void 0 : i.id, me = null === (n = null == Q ? void 0 : Q.post) || void 0 === n ? void 0 : n.id, ue = null == Q ? void 0 : Q.post, be = null === (T = null == Q ? void 0 : Q.subreddit) || void 0 === T ? void 0 : T.id, pe = null == Q ? void 0 : Q.isBodyHidden, fe = null == Q ? void 0 : Q.isPostHidden, ve = !se, Ee = `notif-${Z?"tooltip":""}-menu-${oe}`, xe = Ee === z, Ne = de === v.a.CommentReply ? ce : me, ge = Object(r.a)(e.className, h.a.notificationItem, {
+					} = K, de = null == Q ? void 0 : Q.messageType, ce = null === (i = null === (t = null == Q ? void 0 : Q.comment) || void 0 === t ? void 0 : t.parent) || void 0 === i ? void 0 : i.id, me = null === (n = null == Q ? void 0 : Q.post) || void 0 === n ? void 0 : n.id, ue = null == Q ? void 0 : Q.post, pe = null === (T = null == Q ? void 0 : Q.subreddit) || void 0 === T ? void 0 : T.id, be = null == Q ? void 0 : Q.isBodyHidden, fe = null == Q ? void 0 : Q.isPostHidden, ve = !se, Ee = `notif-${Z?"tooltip":""}-menu-${oe}`, xe = Ee === z, Ne = de === v.a.CommentReply ? ce : me, ge = Object(r.a)(e.className, h.a.notificationItem, {
 						[h.a.unread]: ve,
 						[h.a.isNightMode]: H
 					}), Oe = L || B || F, Te = {
@@ -444,18 +444,18 @@
 						isViewed: !0,
 						type: de
 					}, he = Q.messageType === v.a.AwardReceived, we = he ? null === (S = null == Q ? void 0 : Q.awarding) || void 0 === S ? void 0 : S.id : "", Ie = null === (_ = null === (C = null == Q ? void 0 : Q.awarding) || void 0 === C ? void 0 : C.target) || void 0 === _ ? void 0 : _.permalink, Ae = null === (y = null == Q ? void 0 : Q.awarding) || void 0 === y ? void 0 : y.award.id, Ue = null === (M = null == Q ? void 0 : Q.post) || void 0 === M ? void 0 : M.permalink, Se = he && Ie ? Ie : Ue || X, Ce = null === (k = null === (j = null == Q ? void 0 : Q.awarding) || void 0 === j ? void 0 : j.awarder) || void 0 === k ? void 0 : k.isAcceptingChats, _e = e => {
-						R(Object(p.k)({
+						R(Object(b.k)({
 							...Te,
 							actionInfoType: e
 						}))
 					}, ye = e => {
-						R(Object(p.t)({
+						R(Object(b.t)({
 							...Te,
 							actionInfoType: e
 						}))
 					}, Me = () => {
 						e.markNotificationAsRead(oe, de)
-					}, je = e => R(Object(p.i)({
+					}, je = e => R(Object(b.i)({
 						...Te,
 						...e
 					})), ke = s.a.createElement(s.a.Fragment, null, s.a.createElement(d.a, {
@@ -472,7 +472,7 @@
 						isToggleNotificationUpdateEligible: ie,
 						isToggleUpdateFromSubredditEligible: ne,
 						isToggleLowUpdateFromSubredditEligible: te,
-						sendInboxClickOverflow: () => R(Object(p.j)({
+						sendInboxClickOverflow: () => R(Object(b.j)({
 							...Te,
 							awardId: Ae
 						})),
@@ -482,7 +482,7 @@
 					}), Y && ue && !fe && s.a.createElement(m.a, {
 						isUnread: ve,
 						post: ue
-					}), Y && !pe && s.a.createElement("span", {
+					}), Y && !be && s.a.createElement("span", {
 						className: h.a.body
 					}, J), !Y && s.a.createElement("span", {
 						className: h.a.body
@@ -506,7 +506,7 @@
 								duration: x.a
 							}))) : Z && q && q(), je({
 								awardId: Ae,
-								position: p.c.FIRST
+								position: b.c.FIRST
 							})
 						},
 						onMouseDown: Me,
@@ -514,7 +514,7 @@
 					}, Re = null === (D = Object(l.a)(Se)) || void 0 === D ? void 0 : D.host, Pe = "reddit.com" === Re || "www.reddit.com" === Re;
 					return s.a.createElement(s.a.Fragment, null, s.a.createElement("li", {
 						className: ge
-					}, Pe ? s.a.createElement(b.a, w({}, De, {
+					}, Pe ? s.a.createElement(p.a, w({}, De, {
 						to: Se
 					}), ke) : s.a.createElement("a", w({}, De, {
 						href: Se,
@@ -522,34 +522,34 @@
 						rel: "noopener noreferrer"
 					}), ke)), s.a.createElement(c.a, {
 						decreaseSubUpdates: () => {
-							const t = p.d.DecreaseSubredditUpdates;
-							e.isInTooltip && e.setActiveOverflowMenuId(A), be && e.decreaseSubredditNotifications(be, () => ye(t)), _e(t)
+							const t = b.d.DecreaseSubredditUpdates;
+							e.isInTooltip && e.setActiveOverflowMenuId(A), pe && e.decreaseSubredditNotifications(pe, () => ye(t)), _e(t)
 						},
 						disableNotificationUpdates: () => {
-							e.isInTooltip && e.setActiveOverflowMenuId(A), e.disableNotificationUpdates(Ne), _e(p.d.HideSubreddit)
+							e.isInTooltip && e.setActiveOverflowMenuId(A), e.disableNotificationUpdates(Ne), _e(b.d.HideSubreddit)
 						},
 						hideNotification: () => {
-							e.isInTooltip && e.setActiveOverflowMenuId(A), e.hideNotification(oe), _e(p.d.HideUpdates)
+							e.isInTooltip && e.setActiveOverflowMenuId(A), e.hideNotification(oe), _e(b.d.HideUpdates)
 						},
 						hideSubredditNotifications: () => {
-							const t = p.d.HideSubreddit;
-							e.isInTooltip && e.setActiveOverflowMenuId(A), e.hideSubredditNotifications(be, () => ye(t)), _e(t)
+							const t = b.d.HideSubreddit;
+							e.isInTooltip && e.setActiveOverflowMenuId(A), e.hideSubredditNotifications(pe, () => ye(t)), _e(t)
 						},
 						blockAwarder: () => {
-							e.isInTooltip && e.setActiveOverflowMenuId(A), e.blockAwarder(we), _e(p.d.BlockAwarder)
+							e.isInTooltip && e.setActiveOverflowMenuId(A), e.blockAwarder(we), _e(b.d.BlockAwarder)
 						},
 						isInTooltip: Z,
 						isHideNotifEligible: ee,
 						isOpen: xe,
 						isToggleLowUpdateFromSubredditEligible: te,
 						isToggleNotificationUpdateEligible: ie,
-						isToggleUpdateFromSubredditEligible: !(!ne || !be),
+						isToggleUpdateFromSubredditEligible: !(!ne || !pe),
 						isBlockAwarderEligible: he,
-						sendInboxViewOverflow: () => R(Object(p.r)(Te)),
+						sendInboxViewOverflow: () => R(Object(b.r)(Te)),
 						tooltipId: Ee
 					}), s.a.createElement(a.a, {
 						onChange: e => {
-							e.isIntersecting && !V && (R(Object(p.q)(Te)), W(!0))
+							e.isIntersecting && !V && (R(Object(b.q)(Te)), W(!0))
 						},
 						rootMargin: "0px 0px 0px 0px",
 						threshold: U
@@ -618,7 +618,7 @@
 			})), i.d(t, "b", (function() {
 				return u
 			})), i.d(t, "d", (function() {
-				return b
+				return p
 			}));
 			var n = i("./node_modules/fbt/lib/FbtPublic.js"),
 				a = i("./node_modules/react/index.js"),
@@ -652,7 +652,7 @@
 						});
 					return o.a.createElement(c, a, d)
 				},
-				b = e => o.a.createElement(c, null, n.fbt._({
+				p = e => o.a.createElement(c, null, n.fbt._({
 					"*": "{number} comments",
 					_1: "1 comment"
 				}, [n.fbt._plural(e, "number", Object(r.b)(e))], {
@@ -725,13 +725,13 @@
 				r = i("./src/reddit/selectors/user.ts");
 			const l = e => Object(r.J)(e) || Object(r.K)(e),
 				d = Object(n.a)(e => Object(o.c)(e, {
-					experimentName: a.bd,
+					experimentName: a.dd,
 					experimentEligibilitySelector: l
 				}), s.a),
-				c = Object(n.a)(d, e => e === a.ed.SeePostCTAs),
-				m = Object(n.a)(d, e => e === a.ed.ReplyCTAs),
-				u = Object(n.a)(d, e => e === a.ed.AllCTAs)
+				c = Object(n.a)(d, e => e === a.gd.SeePostCTAs),
+				m = Object(n.a)(d, e => e === a.gd.ReplyCTAs),
+				u = Object(n.a)(d, e => e === a.gd.AllCTAs)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationUnit.b0ac3f98f7600b37c435.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationUnit.4f6658da79f041910893.js.map

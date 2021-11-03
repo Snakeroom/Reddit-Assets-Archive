@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditTopContent.27830e9f93034554a509.js
-// Retrieved at 11/3/2021, 1:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditTopContent.9d8fb48b2670cd5dda99.js
+// Retrieved at 11/3/2021, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditTopContent"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -458,8 +458,8 @@
 					})))))
 				},
 				M = s("./src/reddit/components/JSAPIContainers/index.tsx"),
-				A = s("./src/reddit/components/Media/index.tsx"),
-				V = s("./src/reddit/components/MiniCardPost/MetaLine/index.tsx"),
+				V = s("./src/reddit/components/Media/index.tsx"),
+				A = s("./src/reddit/components/MiniCardPost/MetaLine/index.tsx"),
 				U = s("./src/reddit/components/MiniCardPost/Thumbnail/index.tsx"),
 				W = s("./src/reddit/components/PostBackgroundWrapper/index.tsx"),
 				F = s("./src/reddit/components/PostContainer/index.tsx"),
@@ -511,7 +511,7 @@
 					} = this.props, {
 						media: v
 					} = a || p, _ = !v && !!p.source && Object(g.a)(p.source.url);
-					let O = v && r.a.createElement(A.a, {
+					let O = v && r.a.createElement(V.a, {
 							autoplayPref: e,
 							availableWidth: t,
 							className: Y.a.media,
@@ -564,7 +564,7 @@
 						post: p,
 						size: B.b.Large,
 						titleColor: o && o.postTitleColor
-					}), E && k && r.a.createElement(V.a, {
+					}), E && k && r.a.createElement(A.a, {
 						className: ee.a.metaLine,
 						crosspostSubredditOrProfile: n,
 						hideNSFWPref: d,
@@ -935,9 +935,9 @@
 				g = s("./src/reddit/constants/experiments.ts"),
 				f = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				C = s("./src/reddit/selectors/user.ts");
-			const E = e => Object(C.H)(e) || g.ve.ShowTopContent === Object(f.c)(e, {
+			const E = e => Object(C.H)(e) || g.xe.ShowTopContent === Object(f.c)(e, {
 				experimentEligibilitySelector: f.a,
-				experimentName: g.pe
+				experimentName: g.re
 			});
 			var y = s("./src/reddit/selectors/subreddit.ts"),
 				k = s("./src/reddit/components/DiscoveryUnit/SubredditTopContentDiscoveryUnit/index.m.less"),
@@ -1355,9 +1355,9 @@
 				})),
 				D = s("./src/reddit/components/SEOTitle/index.tsx"),
 				M = s("./src/reddit/selectors/experiments/econ/index.ts"),
-				A = s("./src/reddit/selectors/user.ts"),
-				V = s("./src/reddit/components/PostTitle/index.m.less"),
-				U = s.n(V),
+				V = s("./src/reddit/selectors/user.ts"),
+				A = s("./src/reddit/components/PostTitle/index.m.less"),
+				U = s.n(A),
 				W = s("./src/config.ts"),
 				F = s("./src/reddit/hooks/useClickSourceData.ts"),
 				B = s("./src/reddit/hooks/useExperimentVariant.ts"),
@@ -1445,7 +1445,7 @@
 					}) => Object(p.q)(e, {
 						pageLayer: t
 					}),
-					shouldOpenPostInNewTab: A.db,
+					shouldOpenPostInNewTab: V.db,
 					isTournamentPredictionPostV2: M.u
 				}),
 				Y = e => {
@@ -1454,7 +1454,7 @@
 						subreddit: s
 					} = e, {
 						isSponsored: a
-					} = t, n = Object(F.a)(), i = Object(B.a)(u.Qc) === u.Uc.Enabled;
+					} = t, n = Object(F.a)(), i = Object(B.a)(u.Qc) === u.Vc.Enabled;
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return r.a.createElement(Z, {
 						nowrap: e.nowrap
 					}, r.a.createElement(J, e));
@@ -1998,4 +1998,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.27830e9f93034554a509.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.9d8fb48b2670cd5dda99.js.map

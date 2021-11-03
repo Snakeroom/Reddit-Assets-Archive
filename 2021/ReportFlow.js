@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlow.c4d93939378bf370219c.js
-// Retrieved at 11/3/2021, 1:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlow.45c73d7e373ff059de17.js
+// Retrieved at 11/3/2021, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlow", "FrontpageSidebar", "ReportFlowNew"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, o) {
@@ -1318,7 +1318,7 @@
 			})), o.d(t, "reportFlowOpened", (function() {
 				return q
 			})), o.d(t, "reportFlowClosed", (function() {
-				return G
+				return K
 			}));
 			var n = o("./node_modules/fbt/lib/FbtPublic.js"),
 				r = o("./src/lib/makeActionCreator/index.ts"),
@@ -1516,7 +1516,7 @@
 						m = `error-report-${i}`;
 					if (u.ok) o(F({
 						id: i
-					})), o(c.g(m)), !t.isAbuseOfReportButton && d && o(G());
+					})), o(c.g(m)), !t.isAbuseOfReportButton && d && o(K());
 					else {
 						o(A({
 							id: i
@@ -1552,13 +1552,13 @@
 							postId: p ? u.features.comments.models[e].postId : u.posts.models[e].id
 						}),
 						v = h && Object(_.o)(w) || p && W(w, u);
-					v || u.reportRules.sitewideRules && u.reportRules.sitewideRules.length || n(Object(a.d)()), !v || u.reportRules.liveStreamingRules && u.reportRules.liveStreamingRules.length || n(Object(a.c)()), x && n(Object(l.o)(x.name, x.type)), n(B(e)), n(U(!!t)), o && n(M(o)), x && n(K(x.name))
-				}, H = Object(r.a)(v.g), K = e => async (t, o, {
+					v || u.reportRules.sitewideRules && u.reportRules.sitewideRules.length || n(Object(a.d)()), !v || u.reportRules.liveStreamingRules && u.reportRules.liveStreamingRules.length || n(Object(a.c)()), x && n(Object(l.o)(x.name, x.type)), n(B(e)), n(U(!!t)), o && n(M(o)), x && n(G(x.name))
+				}, H = Object(r.a)(v.g), G = e => async (t, o, {
 					apiContext: n
 				}) => {
 					const r = await Object(u.a)(n());
 					t(H(r.ok && !!r.body[e]))
-				}, G = () => async (e, t, {
+				}, K = () => async (e, t, {
 					apiContext: o
 				}) => {
 					e(B(null))
@@ -1844,7 +1844,7 @@
 							success: v.ok
 						}
 					})
-				}, H = Object(d.a)(D.l), K = Object(d.a)(D.k), G = Object(d.a)(D.j), W = e => async (t, o, {
+				}, H = Object(d.a)(D.l), G = Object(d.a)(D.k), K = Object(d.a)(D.j), W = e => async (t, o, {
 					apiContext: n
 				}) => {
 					t(H({
@@ -1857,13 +1857,13 @@
 					if (s.ok) {
 						const n = o().structuredStyles.models[e],
 							r = n ? n.mobileKeyColor : null;
-						t(K({
+						t(G({
 							subredditId: e,
 							styles: {
 								mobileKeyColor: r
 							}
 						}))
-					} else t(G({
+					} else t(K({
 						subredditId: e,
 						...s.error
 					}))
@@ -2810,8 +2810,8 @@
 				}, n.fbt._("Close", null, {
 					hk: "4gbyAA"
 				})))),
-				K = o("./src/reddit/actions/userBlocks.ts"),
-				G = o("./src/reddit/models/WhitelistAndBlocked.ts"),
+				G = o("./src/reddit/actions/userBlocks.ts"),
+				K = o("./src/reddit/models/WhitelistAndBlocked.ts"),
 				W = o("./src/reddit/icons/svgs/ProfileSlashed/index.tsx"),
 				z = o("./src/reddit/components/ReportFlow/FinalPage/index.m.less"),
 				Y = o.n(z);
@@ -2835,14 +2835,14 @@
 						const {
 							blockUserPending: t
 						} = this.props;
-						t.new !== G.a.pending && this.props.onBlockUser(e)
+						t.new !== K.a.pending && this.props.onBlockUser(e)
 					}, this.getBlockUserHeaderText = () => {
 						const {
 							authorName: e,
 							blockedUser: t,
 							blockUserPending: o
 						} = this.props;
-						return o.new === G.a.pending ? n.fbt._("Pending...", null, {
+						return o.new === K.a.pending ? n.fbt._("Pending...", null, {
 							hk: "4x1oRk"
 						}) : t ? n.fbt._("{username} is blocked", [n.fbt._param("username", e)], {
 							hk: "3jnr1Z"
@@ -2889,7 +2889,7 @@
 			}
 			var se = Object(i.b)(ne, (e, {}) => ({
 					onBlockUser: t => {
-						e(Object(K.h)(t))
+						e(Object(G.h)(t))
 					}
 				}))(re),
 				ie = o("./src/reddit/components/AccordionSection/index.tsx"),
@@ -3179,8 +3179,8 @@
 					onClick: e.onClosePressed
 				}, s.a.createElement(Me, null))),
 				He = o("./src/reddit/models/Post/index.ts"),
-				Ke = o("./src/reddit/models/ReportFlow/index.ts"),
-				Ge = o("./src/reddit/selectors/commentSelector.ts"),
+				Ge = o("./src/reddit/models/ReportFlow/index.ts"),
+				Ke = o("./src/reddit/selectors/commentSelector.ts"),
 				We = o("./src/reddit/selectors/experiments/crisisTextLine.ts"),
 				ze = o("./src/reddit/selectors/posts.ts"),
 				Ye = o("./src/reddit/components/ReportFlow/_ReportFlow.m.less"),
@@ -3190,7 +3190,7 @@
 				Je = Object(a.c)({
 					comment: (e, {
 						commentId: t
-					}) => t ? Object(Ge.b)(e, {
+					}) => t ? Object(Ke.b)(e, {
 						commentId: t
 					}) : null,
 					isLiveStreaming: (e, {
@@ -3274,9 +3274,9 @@
 					const {
 						state: e,
 						props: t
-					} = this, o = t.commentId ? Ke.a.Comment : Ke.a.Post, r = t.commentId ? t.reportedPending[t.commentId] : t.postId && t.reportedPending[t.postId], i = t.subredditRules, a = t.subredditOrProfile ? t.subredditOrProfile.id : null, l = new Array;
+					} = this, o = t.commentId ? Ge.a.Comment : Ge.a.Post, r = t.commentId ? t.reportedPending[t.commentId] : t.postId && t.reportedPending[t.postId], i = t.subredditRules, a = t.subredditOrProfile ? t.subredditOrProfile.id : null, l = new Array;
 					if (a && i[a])
-						for (const n of i[a].rules) n.kind !== o && n.kind !== Ke.a.All || l.push(0 !== n.violationReason.length ? n.violationReason : n.shortName);
+						for (const n of i[a].rules) n.kind !== o && n.kind !== Ge.a.All || l.push(0 !== n.violationReason.length ? n.violationReason : n.shortName);
 					const c = this.props.isLiveStreaming ? t.liveStreamingRules : t.sitewideRules;
 					return s.a.createElement(Ne, {
 						isLiveStreaming: t.isLiveStreaming,
@@ -3347,7 +3347,7 @@
 							username: e
 						}))
 					}
-					const o = (t.commentId ? Ke.a.Comment : Ke.a.Post) === Ke.a.Post ? n.fbt._("Report post", null, {
+					const o = (t.commentId ? Ge.a.Comment : Ge.a.Post) === Ge.a.Post ? n.fbt._("Report post", null, {
 						hk: "1OIyCi"
 					}) : t.isLiveStreaming ? n.fbt._("Report chat message", null, {
 						hk: "2gGA1m"
@@ -3510,7 +3510,7 @@
 						return e ? JSON.parse(e) : null
 					}
 				};
-			class K extends l.a.Component {
+			class G extends l.a.Component {
 				constructor(e) {
 					super(e), this.getItemMetadata = () => {
 						const {
@@ -3681,7 +3681,7 @@
 					}))
 				}
 			}
-			t.default = Object(E.b)(q(K))
+			t.default = Object(E.b)(q(G))
 		},
 		"./src/reddit/components/ReportFlow/_ReportFlowNewModal.tsx": function(e, t, o) {
 			"use strict";
@@ -5289,7 +5289,7 @@
 			})), o.d(t, "F", (function() {
 				return H
 			})), o.d(t, "I", (function() {
-				return K
+				return G
 			}));
 			var n = o("./src/reddit/helpers/correlationIdTracker.ts"),
 				r = o("./src/reddit/selectors/telemetry.ts");
@@ -5570,7 +5570,7 @@
 					...s(e),
 					correlationId: Object(n.d)(n.a.PowerupsFlow, !0)
 				}),
-				K = (e, t, o) => n => ({
+				G = (e, t, o) => n => ({
 					source: "powerups_settings",
 					action: "click",
 					noun: e,
@@ -6047,9 +6047,9 @@
 					experimentName: r.Tb,
 					experimentEligibilitySelector: e => l(e, t)
 				}), e => e),
-				d = e => e === r.Ee.NoCommunityWidgets,
-				u = e => e === r.Ee.NoRulesModerators,
-				p = e => e === r.Ee.RelatedPostsDu
+				d = e => e === r.Ge.NoCommunityWidgets,
+				u = e => e === r.Ge.NoRulesModerators,
+				p = e => e === r.Ge.RelatedPostsDu
 		},
 		"./src/reddit/selectors/tooltip.ts": function(e, t, o) {
 			"use strict";
@@ -6078,4 +6078,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.c4d93939378bf370219c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.45c73d7e373ff059de17.js.map
