@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241.15efb4b85885d9df76a5.js
-// Retrieved at 11/4/2021, 6:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241.dd6f3eea4b05cf8dcd1d.js
+// Retrieved at 11/4/2021, 7:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241"], {
 		"./src/reddit/actions/authorFlair.ts": function(e, t, r) {
@@ -6289,24 +6289,10 @@
 			var s;
 			r.d(t, "a", (function() {
 					return s
-				})), r.d(t, "b", (function() {
-					return n
 				})),
 				function(e) {
 					e.Off = "OFF", e.Lenient = "LENIENT", e.Moderate = "MODERATE", e.Strict = "STRICT"
-				}(s || (s = {}));
-			const n = e => {
-				switch (e) {
-					case "harassment_comments_in_model":
-					case "harassment_posts_in_model":
-						return "Abuse Filter";
-					case "hate_comments_in_model":
-					case "hate_posts_in_model":
-						return "Identity Filter";
-					default:
-						return null
-				}
-			}
+				}(s || (s = {}))
 		},
 		"./src/reddit/models/Duplicates/index.ts": function(e, t, r) {
 			"use strict";
@@ -7770,4 +7756,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241.15efb4b85885d9df76a5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241.dd6f3eea4b05cf8dcd1d.js.map
