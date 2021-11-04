@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.2fc446cf875bac450143.js
-// Retrieved at 11/4/2021, 10:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.399adcb29e77d8c4b74d.js
+// Retrieved at 11/4/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton", "FrontpageSidebar"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, n) {
@@ -2204,18 +2204,22 @@
 		},
 		"./src/reddit/actions/postCreation/mediaUpload.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "f", (function() {
+			n.d(t, "h", (function() {
 				return M
 			})), n.d(t, "b", (function() {
 				return L
 			})), n.d(t, "a", (function() {
 				return A
-			})), n.d(t, "c", (function() {
-				return B
-			})), n.d(t, "e", (function() {
-				return U
 			})), n.d(t, "d", (function() {
+				return B
+			})), n.d(t, "f", (function() {
+				return U
+			})), n.d(t, "e", (function() {
 				return W
+			})), n.d(t, "g", (function() {
+				return V
+			})), n.d(t, "c", (function() {
+				return G
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
@@ -2226,10 +2230,8 @@
 				c = n("./src/lib/makeActionCreator/index.ts"),
 				d = n("./src/reddit/actions/toaster.ts"),
 				l = n("./src/reddit/actions/upload.ts"),
-				u = n("./src/reddit/actions/wrappedReddit/constants.ts");
-			n("./src/lib/makeGqlRequest/index.ts"), n("./src/redditGQL/operations/PersonalizedYearInReview.json");
-			Object(c.a)(u.d), Object(c.a)(u.c), Object(c.a)(u.b), Object(c.a)(u.e), Object(c.a)(u.a);
-			var m = n("./src/reddit/components/PostCreationForm/MediaInput/ImageGalleryDrop/constants.ts"),
+				u = n("./src/reddit/actions/wrappedReddit/index.ts"),
+				m = n("./src/reddit/components/PostCreationForm/MediaInput/ImageGalleryDrop/constants.ts"),
 				p = n("./src/lib/makeApiRequest/index.ts"),
 				h = n("./src/lib/omitHeaders/index.ts"),
 				b = n("./src/reddit/constants/headers.ts");
@@ -2568,6 +2570,34 @@
 						items: p ? f : [...i, ...f],
 						selectedKey: g ? b[0] : b[b.length - 1]
 					}))
+				}, V = (e, t, n) => async s => {
+					s(Object(l.j)(A, !0));
+					const o = await s(U([e], t, A));
+					o.length && s(Object(u.a)({
+						uploadCard: {
+							[n]: o[0]
+						}
+					}))
+				}, G = e => async (t, n) => {
+					const s = n(),
+						r = Object(j.U)(s),
+						{
+							uploadCard: a
+						} = Object(j.qb)(s),
+						i = a[e];
+					if (!i) return;
+					const c = [{
+						uploadKey: i,
+						caption: "",
+						url: ""
+					}];
+					t(Object(T.g)({
+						submissionType: o.Ub.MEDIA
+					})), t(Object(T.d)({
+						...r,
+						items: c,
+						selectedKey: i
+					}))
 				}
 		},
 		"./src/reddit/actions/postCreation/submit.ts": function(e, t, n) {
@@ -2829,7 +2859,7 @@
 						u = M.d.rteVideoPoster(a),
 						m = oe(a),
 						p = l === s.Ub.MEDIA;
-					m && (u || p) && (await n(q.f(m)), oe(o())) || (e === y.r.Draft ? await n(Object(c.r)(t.draftId)) : e === y.r.ScheduledPost && Object(V.r)(a) ? await n(ae(t)) : e === y.r.ScheduledPost ? await n(ie(t)) : await n(ce(t)))
+					m && (u || p) && (await n(q.h(m)), oe(o())) || (e === y.r.Draft ? await n(Object(c.r)(t.draftId)) : e === y.r.ScheduledPost && Object(V.r)(a) ? await n(ae(t)) : e === y.r.ScheduledPost ? await n(ie(t)) : await n(ce(t)))
 				}, ae = e => async (t, n, {
 					gqlContext: s
 				}) => {
@@ -3744,6 +3774,51 @@
 				r = "WRAPPED_REDDIT_CARDS_FAILED",
 				a = "WRAPPED_REDDIT_RESET",
 				i = "WRAPPED_REDDIT_ADD_UPLOAD"
+		},
+		"./src/reddit/actions/wrappedReddit/index.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "c", (function() {
+				return l
+			})), n.d(t, "a", (function() {
+				return u
+			})), n.d(t, "b", (function() {
+				return m
+			}));
+			var s = n("./src/lib/makeActionCreator/index.ts"),
+				o = n("./src/reddit/actions/wrappedReddit/constants.ts"),
+				r = n("./src/lib/makeGqlRequest/index.ts"),
+				a = n("./src/redditGQL/operations/PersonalizedYearInReview.json");
+			const i = Object(s.a)(o.d),
+				c = Object(s.a)(o.c),
+				d = Object(s.a)(o.b),
+				l = Object(s.a)(o.e),
+				u = Object(s.a)(o.a),
+				m = () => async (e, t, {
+					gqlContext: n
+				}) => {
+					var s, o;
+					e(i());
+					const l = await (async (e, t) => {
+						return await Object(r.a)(e, {
+							...a,
+							variables: t
+						})
+					})(n(), {});
+					if (!l.ok) {
+						const t = l.error;
+						return void e(d({
+							error: t
+						}))
+					}
+					const u = l.body,
+						m = ((null === (o = null === (s = null == u ? void 0 : u.data) || void 0 === s ? void 0 : s.personalizedYearInReview) || void 0 === o ? void 0 : o.cards) || []).map((e, t) => ({
+							...e,
+							id: `wrapped_reddit${t}`
+						}));
+					e(c({
+						cards: m
+					}))
+				}
 		},
 		"./src/reddit/components/CommentCreation/ExpandingFormDiv.m.less": function(e, t, n) {
 			e.exports = {
@@ -20179,7 +20254,7 @@
 				}),
 				Ga = Object(r.b)(Va, e => ({
 					onChange: t => e(i.d(t)),
-					startMediaGalleryUploads: (t, n) => e(M.d(t, n)),
+					startMediaGalleryUploads: (t, n) => e(M.e(t, n)),
 					removeUpload: t => e(F.i(t, !0)),
 					toggleThumbnailModal: () => e(i.y(Ua)),
 					toggleRemovePrompt: () => e(i.y(Ta))
@@ -22341,7 +22416,7 @@
 					onUnmount: () => e((e, t) => {
 						e(F.j(M.a, !0)), e(F.i(g.n, !0))
 					}),
-					onUploadPendingThumbnails: t => e(M.f(t)),
+					onUploadPendingThumbnails: t => e(M.h(t)),
 					startChangeUsernameFlow: () => e(Object(N.f)())
 				}), (e, t, n) => ({
 					...e,
@@ -23793,4 +23868,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.2fc446cf875bac450143.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.399adcb29e77d8c4b74d.js.map

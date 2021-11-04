@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.1e797eaf59496f399e96.js
-// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.bbcbd78fb590a2210d76.js
+// Retrieved at 11/4/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -2671,18 +2671,22 @@
 		},
 		"./src/reddit/actions/postCreation/mediaUpload.ts": function(e, t, r) {
 			"use strict";
-			r.d(t, "f", (function() {
+			r.d(t, "h", (function() {
 				return N
 			})), r.d(t, "b", (function() {
 				return x
 			})), r.d(t, "a", (function() {
 				return U
-			})), r.d(t, "c", (function() {
-				return F
-			})), r.d(t, "e", (function() {
-				return G
 			})), r.d(t, "d", (function() {
+				return F
+			})), r.d(t, "f", (function() {
+				return G
+			})), r.d(t, "e", (function() {
 				return B
+			})), r.d(t, "g", (function() {
+				return q
+			})), r.d(t, "c", (function() {
+				return H
 			}));
 			r("./node_modules/core-js/modules/web.dom.iterable.js");
 			var s = r("./node_modules/fbt/lib/FbtPublic.js"),
@@ -2693,10 +2697,8 @@
 				d = r("./src/lib/makeActionCreator/index.ts"),
 				i = r("./src/reddit/actions/toaster.ts"),
 				u = r("./src/reddit/actions/upload.ts"),
-				l = r("./src/reddit/actions/wrappedReddit/constants.ts");
-			r("./src/lib/makeGqlRequest/index.ts"), r("./src/redditGQL/operations/PersonalizedYearInReview.json");
-			Object(d.a)(l.d), Object(d.a)(l.c), Object(d.a)(l.b), Object(d.a)(l.e), Object(d.a)(l.a);
-			var p = r("./src/reddit/components/PostCreationForm/MediaInput/ImageGalleryDrop/constants.ts"),
+				l = r("./src/reddit/actions/wrappedReddit/index.ts"),
+				p = r("./src/reddit/components/PostCreationForm/MediaInput/ImageGalleryDrop/constants.ts"),
 				b = r("./src/lib/makeApiRequest/index.ts"),
 				f = r("./src/lib/omitHeaders/index.ts"),
 				y = r("./src/reddit/constants/headers.ts");
@@ -3035,6 +3037,34 @@
 						items: b ? m : [...o, ...m],
 						selectedKey: E ? y[0] : y[y.length - 1]
 					}))
+				}, q = (e, t, r) => async s => {
+					s(Object(u.j)(U, !0));
+					const n = await s(G([e], t, U));
+					n.length && s(Object(l.a)({
+						uploadCard: {
+							[r]: n[0]
+						}
+					}))
+				}, H = e => async (t, r) => {
+					const s = r(),
+						a = Object(w.U)(s),
+						{
+							uploadCard: c
+						} = Object(w.qb)(s),
+						o = c[e];
+					if (!o) return;
+					const d = [{
+						uploadKey: o,
+						caption: "",
+						url: ""
+					}];
+					t(Object(P.g)({
+						submissionType: n.Ub.MEDIA
+					})), t(Object(P.d)({
+						...a,
+						items: d,
+						selectedKey: o
+					}))
 				}
 		},
 		"./src/reddit/actions/postCreation/submit.ts": function(e, t, r) {
@@ -3296,7 +3326,7 @@
 						l = N.d.rteVideoPoster(c),
 						p = ne(c),
 						b = u === s.Ub.MEDIA;
-					p && (l || b) && (await r(Q.f(p)), ne(n())) || (e === T.r.Draft ? await r(Object(d.r)(t.draftId)) : e === T.r.ScheduledPost && Object(q.r)(c) ? await r(ce(t)) : e === T.r.ScheduledPost ? await r(oe(t)) : await r(de(t)))
+					p && (l || b) && (await r(Q.h(p)), ne(n())) || (e === T.r.Draft ? await r(Object(d.r)(t.draftId)) : e === T.r.ScheduledPost && Object(q.r)(c) ? await r(ce(t)) : e === T.r.ScheduledPost ? await r(oe(t)) : await r(de(t)))
 				}, ce = e => async (t, r, {
 					gqlContext: s
 				}) => {
@@ -5536,6 +5566,51 @@
 				a = "WRAPPED_REDDIT_CARDS_FAILED",
 				c = "WRAPPED_REDDIT_RESET",
 				o = "WRAPPED_REDDIT_ADD_UPLOAD"
+		},
+		"./src/reddit/actions/wrappedReddit/index.ts": function(e, t, r) {
+			"use strict";
+			r.d(t, "c", (function() {
+				return u
+			})), r.d(t, "a", (function() {
+				return l
+			})), r.d(t, "b", (function() {
+				return p
+			}));
+			var s = r("./src/lib/makeActionCreator/index.ts"),
+				n = r("./src/reddit/actions/wrappedReddit/constants.ts"),
+				a = r("./src/lib/makeGqlRequest/index.ts"),
+				c = r("./src/redditGQL/operations/PersonalizedYearInReview.json");
+			const o = Object(s.a)(n.d),
+				d = Object(s.a)(n.c),
+				i = Object(s.a)(n.b),
+				u = Object(s.a)(n.e),
+				l = Object(s.a)(n.a),
+				p = () => async (e, t, {
+					gqlContext: r
+				}) => {
+					var s, n;
+					e(o());
+					const u = await (async (e, t) => {
+						return await Object(a.a)(e, {
+							...c,
+							variables: t
+						})
+					})(r(), {});
+					if (!u.ok) {
+						const t = u.error;
+						return void e(i({
+							error: t
+						}))
+					}
+					const l = u.body,
+						p = ((null === (n = null === (s = null == l ? void 0 : l.data) || void 0 === s ? void 0 : s.personalizedYearInReview) || void 0 === n ? void 0 : n.cards) || []).map((e, t) => ({
+							...e,
+							id: `wrapped_reddit${t}`
+						}));
+					e(d({
+						cards: p
+					}))
+				}
 		},
 		"./src/reddit/components/BlankPost/index.tsx": function(e, t, r) {
 			"use strict";
@@ -26561,4 +26636,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.1e797eaf59496f399e96.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.bbcbd78fb590a2210d76.js.map

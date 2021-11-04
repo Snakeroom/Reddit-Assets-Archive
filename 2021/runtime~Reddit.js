@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.5bb67eb3459aa0b535ce.js
-// Retrieved at 11/4/2021, 2:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.320c8323310b42cef3e5.js
+// Retrieved at 11/4/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var n, a, r = o[0], s = o[1], c = o[2], l = 0, P = []; l < r.length; l++) a = r[l], Object.prototype.hasOwnProperty.call(d, a) && d[a] && P.push(d[a][0]), d[a] = 0;
@@ -612,6 +612,7 @@
 					1: "daeea1b9f1bde141f528",
 					2: "31d6cfe0d16ae931b73c",
 					3: "31d6cfe0d16ae931b73c",
+					4: "31d6cfe0d16ae931b73c",
 					AchievementsActions: "31d6cfe0d16ae931b73c",
 					Acknowledgements: "f3bbb5a3854ac8647b5e",
 					Appeal: "13d51d1035e7e0c414db",
@@ -727,7 +728,7 @@
 					UserDataRequestPage: "4819b651cde10df74777",
 					UserFlair: "31d6cfe0d16ae931b73c",
 					UserZoomIntegration: "31d6cfe0d16ae931b73c",
-					WrappedReddit: "bd6c235c416a9dce401f",
+					WrappedReddit: "2c3f0d8548c81f540d9b",
 					"css-vars-ponyfill": "31d6cfe0d16ae931b73c",
 					getFlairData: "31d6cfe0d16ae931b73c",
 					givePremiumTrackers: "31d6cfe0d16ae931b73c",
@@ -1277,8 +1278,9 @@
 						ModStatsChart: "ModStatsChart"
 					} [e] || e) + "." + {
 						1: "de2c3db54b434d5cd5b0",
-						2: "a0367bf8299f18834041",
-						3: "5ccdc12d8c4f8f499e18",
+						2: "75af9e3bf9695fb3719d",
+						3: "444a98b6e936695426db",
+						4: "c20aa2216e8e7d233a67",
 						AchievementsActions: "37dd9e3ab6339f27d7db",
 						Acknowledgements: "6d867a94a1f7e243c390",
 						Appeal: "514e6ac8a50c7101e9df",
@@ -1394,7 +1396,7 @@
 						UserDataRequestPage: "146153ff47093ac72dc9",
 						UserFlair: "e93a4c6affd527586447",
 						UserZoomIntegration: "e14a378bfc910ff0887f",
-						WrappedReddit: "db16ffc6d2f243d8967f",
+						WrappedReddit: "3f26814d25294abde666",
 						"css-vars-ponyfill": "8e6cec8301d069e523d7",
 						getFlairData: "8563b237c585d9b19859",
 						givePremiumTrackers: "e4fba3c98b24b6139c73",
@@ -1407,7 +1409,7 @@
 						"translations/es_MX-json": "130ae8313945bdcc2b54",
 						"translations/fr_FR-json": "ed2946c0bbb4ef0f7c66",
 						"translations/it_IT-json": "d1c2b78bba709de2a593",
-						"translations/pseudo_ext-json": "a3b9c2865dec8fbcfec3",
+						"translations/pseudo_ext-json": "4e83eeca2353d59c1644",
 						"translations/pseudo_long-json": "04ac0a58d13d03c23453",
 						"translations/pseudo_short-json": "6a8e74d37fe94a99c902",
 						"translations/pt_BR-json": "a356685bf328114e33fc",
@@ -1415,7 +1417,7 @@
 						"vendors~AdminPanel": "e6e59f93c311ab1cce5c",
 						AdminPanel: "891f005da235cbe3d4b7",
 						"vendors~ChatMessageInput~CommentRichUnit~FlairEdit~MembershipPaywallPage~PostCreation~PostRichUnit~R~9deab1a0": "201e0a53b4d00907b96f",
-						"ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor": "0a108b24491ed61679d2",
+						"ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor": "a734b23e46d0a0dd8c07",
 						MembershipPaywallPage: "037b89b9fa692e1008f4",
 						FlairEdit: "1f6fd01ad76c4977fdd9",
 						"vendors~Chat~RedesignChat": "4ea3bc796c3ac26848b1",
@@ -1426,7 +1428,7 @@
 						HarbergerTaxManageModal: "569e5e867628754b0bf0",
 						SubredditPremiumUploadModal: "8be3215ece17a334f95d",
 						"vendors~PostCreation": "c6c17f02e38c2582d4ac",
-						PostCreation: "2fc446cf875bac450143",
+						PostCreation: "399adcb29e77d8c4b74d",
 						"vendors~ModStatsChart~Settings": "b500f4dfb4a94d20681b",
 						Settings: "edb8c2c4d95303746f9b",
 						"vendors~ModerationPages": "aa8af2f2c9217a5def77",
@@ -1484,7 +1486,7 @@
 						"reddit-components-Governance-CommunityCard": "fc1127ae461286cc0ced",
 						"reddit-components-Governance-Leaderboard": "64e684ba5db7fbe945f0",
 						"reddit-components-Poll": "fe2f526fdefa41e7fb14",
-						"reddit-components-ProfileIdCard": "8d8461b2fe2249d034ce",
+						"reddit-components-ProfileIdCard": "49100d2ae698d904238b",
 						"reddit-components-ViewReportsDropdown-index": "f4e66c1ce73c787ff1ae",
 						"reddit-pages-CommentsPage-OtherDiscussions": "6dab55f0b2644ec0a9e3",
 						removalReasonActions: "b51e67a7fd5908f688e4",
@@ -1661,4 +1663,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.5bb67eb3459aa0b535ce.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.320c8323310b42cef3e5.js.map

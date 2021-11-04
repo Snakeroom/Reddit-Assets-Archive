@@ -1,8 +1,25 @@
-// https://www.redditstatic.com/desktop2x/WrappedReddit.db16ffc6d2f243d8967f.js
-// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/WrappedReddit.3f26814d25294abde666.js
+// Retrieved at 11/4/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["WrappedReddit"], {
-		"./src/reddit/pages/WrappedReddit/Carousel/index.m.less": function(e, t, a) {
+		"./src/reddit/components/Media/LoadingIcon/index.m.less": function(e, a, t) {
+			e.exports = {
+				image: "_1Wd26c2ichqUxeZVJStEJT"
+			}
+		},
+		"./src/reddit/components/Media/LoadingIcon/index.tsx": function(e, a, t) {
+			"use strict";
+			var r = t("./node_modules/react/index.js"),
+				n = t.n(r),
+				s = t("./src/config.ts"),
+				c = t("./src/reddit/components/Media/LoadingIcon/index.m.less"),
+				d = t.n(c);
+			a.a = () => n.a.createElement("img", {
+				className: d.a.image,
+				src: `${s.a.assetPath}/img/loading.gif`
+			})
+		},
+		"./src/reddit/pages/WrappedReddit/Carousel/index.m.less": function(e, a, t) {
 			e.exports = {
 				carousel: "sLLDRdg6QdhlK0LqJvfi7",
 				buttonsWrapper: "KpMLEPYvCluY4sZ6rhE7",
@@ -23,10 +40,13 @@
 				insideShareButton: "Nf-4TwYJpRnohoJ0kMSpu",
 				insideShareIcon: "rQKftyqwxND8EFiz0CzYQ",
 				iconWrapper: "_1asObEzjpwdReuE9Bjn4PH",
-				iconText: "_3cs2BRYR0xBmODNjHSk3t0"
+				iconText: "_3cs2BRYR0xBmODNjHSk3t0",
+				errorWrapper: "_1ZRrGoOUoptUUgD4Tr4U5P",
+				errorLogo: "_2rrrjqRbJDkq99piHf7HKC",
+				errorText: "_233NC14AqjwsEthl0fLrl"
 			}
 		},
-		"./src/reddit/pages/WrappedReddit/DefaultCard/index.m.less": function(e, t, a) {
+		"./src/reddit/pages/WrappedReddit/DefaultCard/index.m.less": function(e, a, t) {
 			e.exports = {
 				contentWrapper: "gm49hjCsGC6TOzPjtcfYV",
 				headingWrapper: "_24k045l9p3KDMtBndy9dkk",
@@ -47,428 +67,371 @@
 				description: "qOk0ywerqWadQwFvIHmed"
 			}
 		},
-		"./src/reddit/pages/WrappedReddit/index.tsx": function(e, t, a) {
+		"./src/reddit/pages/WrappedReddit/IntroCard/index.m.less": function(e, a, t) {
+			e.exports = {
+				contentWrapper: "_3G9nsgDv_QAtyy9Sy90WB5",
+				headingWrapper: "_1Fnc3lN9e3VGmm1Q1srN_V",
+				bodyText: "_19OVfdV4OoiTBCIdKot7FW",
+				background: "_2nhN8fMIahqnfWDfLN6mDt",
+				headingSection: "_1rgd_jhstUBS7RUWAWUKBZ",
+				headingContent: "_3a02NtIIg5KCPM3nf7sFYl",
+				headingArt: "_2Er9lyRkujKAo5BgnKlpFu",
+				headingText: "_2AbCbprFcK0Oo-P3ZlzbAT",
+				defaultCardImageContainer: "_2xKAygFy26biGt-X0hqN-2",
+				defaultCardImage: "_3F1R7cLwSXh8m6Le8WoaEP",
+				fallbackStaticImage: "_3Q4K0nhnTwi46cpt66_LQv",
+				heading: "_3K2dQHeJZGf0MkLRh-q561",
+				isNightmodeOn: "_33diCevkIKDt3sqYN_XgaS",
+				wrappedRedditLogo: "_1-8UHSFDZFr58nwpoEbllb",
+				wrappedRedditPic: "_3XcbdPlmIdOjK6h00ktIcQ",
+				subheading: "_1R6lB8BZ2-1frKA9NSurma",
+				description: "_2yXI3F5cIPJsH6psxur-1k"
+			}
+		},
+		"./src/reddit/pages/WrappedReddit/index.tsx": function(e, a, t) {
 			"use strict";
-			a.r(t);
-			var r = a("./node_modules/react/index.js"),
-				i = a.n(r),
-				d = a("./src/lib/classNames/index.ts"),
-				n = a("./src/reddit/controls/Button/index.tsx"),
-				u = (a("./node_modules/core-js/modules/web.dom.iterable.js"), a("./src/config.ts")),
-				l = a("./node_modules/lodash/upperFirst.js"),
-				o = a.n(l),
-				c = a("./src/higherOrderComponents/asModal/index.tsx"),
-				p = a("./src/reddit/icons/svgs/Close/index.tsx"),
-				s = a("./src/reddit/icons/svgs/Download/index.tsx"),
-				f = a("./src/reddit/icons/svgs/PostImage/index.tsx"),
-				m = a("./src/reddit/pages/WrappedReddit/Carousel/index.m.less"),
-				g = a.n(m);
+			t.r(a);
+			var r, n = t("./node_modules/react/index.js"),
+				s = t.n(n),
+				c = t("./node_modules/react-redux/es/index.js"),
+				d = t("./node_modules/react-router-redux/es/index.js"),
+				i = t("./src/lib/classNames/index.ts"),
+				l = t("./src/telemetry/models/Media.ts"),
+				o = t("./src/reddit/actions/postCreation/mediaUpload.ts"),
+				m = t("./src/reddit/actions/wrappedReddit/index.ts"),
+				p = t("./src/reddit/components/Media/LoadingIcon/index.tsx"),
+				u = t("./src/reddit/controls/Button/index.tsx");
+			! function(e) {
+				e.Common = "COMMON", e.Rare = "RARE", e.Epic = "EPIC", e.Legendary = "LEGENDARY"
+			}(r || (r = {}));
+			const g = "PersonalizedYearInReviewIntroCard";
+			var b = t("./src/lib/formatApiError/index.ts"),
+				h = t("./src/reddit/icons/svgs/Snoo/index.tsx"),
+				E = t("./src/reddit/pages/WrappedReddit/Carousel/index.m.less"),
+				_ = t.n(E);
+			var f = ({
+					error: e
+				}) => s.a.createElement("div", {
+					className: _.a.errorWrapper
+				}, s.a.createElement(h.a, {
+					className: _.a.errorLogo
+				}), s.a.createElement("h1", {
+					className: _.a.errorText
+				}, Object(b.a)(e))),
+				N = (t("./node_modules/core-js/modules/web.dom.iterable.js"), t("./src/config.ts")),
+				v = t("./node_modules/lodash/upperFirst.js"),
+				C = t.n(v),
+				x = t("./src/higherOrderComponents/asModal/index.tsx"),
+				w = t("./src/reddit/icons/svgs/Close/index.tsx"),
+				j = t("./src/reddit/icons/svgs/Download/index.tsx"),
+				k = t("./src/reddit/icons/svgs/PostImage/index.tsx");
 			const {
-				fbt: w
-			} = a("./node_modules/fbt/lib/FbtPublic.js");
-			var _;
+				fbt: O
+			} = t("./node_modules/fbt/lib/FbtPublic.js");
+			var R;
 			! function(e) {
 				e.facebook = "facebook", e.twitter = "twitter", e.whatsapp = "whatsapp", e.instagram = "instagram", e.discord = "discord"
-			}(_ || (_ = {}));
-			var h = Object(c.a)(({
-					closeModal: e
-				}) => i.a.createElement("div", {
-					className: g.a.container,
+			}(R || (R = {}));
+			var I = Object(x.a)(({
+					closeModal: e,
+					postCard: a,
+					downloadCard: t
+				}) => s.a.createElement("div", {
+					className: _.a.container,
 					"data-testid": "wrapped-reddit-share-modal"
-				}, i.a.createElement("h1", {
-					className: g.a.title
-				}, w._("Share", null, {
+				}, s.a.createElement("h1", {
+					className: _.a.title
+				}, O._("Share", null, {
 					hk: "Je0uL"
-				})), i.a.createElement("button", {
-					className: g.a.closeButton,
+				})), s.a.createElement("button", {
+					className: _.a.closeButton,
 					onClick: e
-				}, i.a.createElement(p.a, {
-					className: g.a.closeIcon
-				})), i.a.createElement("div", {
-					className: g.a.insideShareIconsWrapper
-				}, i.a.createElement("div", {
-					className: g.a.iconWrapper
-				}, i.a.createElement("button", {
-					className: g.a.insideShareButton
-				}, i.a.createElement(f.a, {
-					className: g.a.insideShareIcon
-				})), i.a.createElement("h2", {
-					className: g.a.iconText
-				}, w._("Post", null, {
+				}, s.a.createElement(w.a, {
+					className: _.a.closeIcon
+				})), s.a.createElement("div", {
+					className: _.a.insideShareIconsWrapper
+				}, s.a.createElement("div", {
+					className: _.a.iconWrapper
+				}, s.a.createElement("button", {
+					className: _.a.insideShareButton,
+					onClick: a
+				}, s.a.createElement(k.a, {
+					className: _.a.insideShareIcon
+				})), s.a.createElement("h2", {
+					className: _.a.iconText
+				}, O._("Post", null, {
 					hk: "3eAGdj"
-				}))), i.a.createElement("div", {
-					className: g.a.iconWrapper
-				}, i.a.createElement("button", {
-					className: g.a.insideShareButton
-				}, i.a.createElement(s.a, {
-					className: g.a.insideShareIcon
-				})), i.a.createElement("h2", {
-					className: g.a.iconText
-				}, w._("Download", null, {
+				}))), s.a.createElement("div", {
+					className: _.a.iconWrapper
+				}, s.a.createElement("button", {
+					className: _.a.insideShareButton,
+					onClick: t
+				}, s.a.createElement(j.a, {
+					className: _.a.insideShareIcon
+				})), s.a.createElement("h2", {
+					className: _.a.iconText
+				}, O._("Download", null, {
 					hk: "2Og0hf"
-				})))), i.a.createElement("div", {
-					className: g.a.outsideShareIconsWrapper
-				}, Object.values(_).map(e => i.a.createElement("div", {
+				})))), s.a.createElement("div", {
+					className: _.a.outsideShareIconsWrapper
+				}, Object.values(R).map(e => s.a.createElement("div", {
 					key: e,
-					className: g.a.iconWrapper
-				}, i.a.createElement("button", {
-					className: g.a.outsideShareButton
-				}, i.a.createElement("img", {
-					className: g.a.outsideShareIcon,
+					className: _.a.iconWrapper
+				}, s.a.createElement("button", {
+					className: _.a.outsideShareButton
+				}, s.a.createElement("img", {
+					className: _.a.outsideShareIcon,
 					alt: e,
-					src: `${u.a.assetPath}/img/social-networks/${e}.png`
-				})), i.a.createElement("h2", {
-					className: g.a.iconText
-				}, o()(e))))))),
-				b = a("./src/reddit/icons/svgs/Snoo/index.tsx"),
-				k = a("./src/reddit/pages/WrappedReddit/DefaultCard/index.m.less"),
-				y = a.n(k);
+					src: `${N.a.assetPath}/img/social-networks/${e}.png`
+				})), s.a.createElement("h2", {
+					className: _.a.iconText
+				}, C()(e))))))),
+				S = t("./src/reddit/pages/WrappedReddit/DefaultCard/index.m.less"),
+				y = t.n(S);
 			const {
-				fbt: Y
-			} = a("./node_modules/fbt/lib/FbtPublic.js");
-			var x, R = ({
+				fbt: W
+			} = t("./node_modules/fbt/lib/FbtPublic.js");
+			var L = ({
 				card: {
 					title: e,
-					subtitle: t,
-					id: a,
-					backGroundUrl: r,
-					pictureUrl: n
+					subtitle: a,
+					id: t
 				}
-			}) => i.a.createElement(i.a.Fragment, null, i.a.createElement("div", {
-				id: a,
+			}) => s.a.createElement(s.a.Fragment, null, s.a.createElement("div", {
+				id: t,
 				className: y.a.headingSection
-			}, i.a.createElement("div", {
-				className: Object(d.a)(y.a.background, y.a.contentWrapper),
+			}, s.a.createElement("div", {
+				className: Object(i.a)(y.a.background, y.a.contentWrapper),
 				style: {
-					background: `url(${u.a.assetPath}${r}) no-repeat center center fixed`,
+					background: `url(${N.a.assetPath}/img/wrappedreddit/defaultcard/main_bg_YIR_d2x.png) no-repeat center center fixed`,
 					backgroundSize: "cover"
 				}
-			}), i.a.createElement("div", {
-				className: Object(d.a)(y.a.headingWrapper, y.a.headingContent)
-			}, i.a.createElement("div", {
+			}), s.a.createElement("div", {
+				className: Object(i.a)(y.a.headingWrapper, y.a.headingContent)
+			}, s.a.createElement("div", {
 				className: y.a.headingText
-			}, i.a.createElement("h1", {
-				className: Object(d.a)(y.a.heading)
-			}, i.a.createElement(b.a, {
+			}, s.a.createElement("h1", {
+				className: Object(i.a)(y.a.heading)
+			}, s.a.createElement(h.a, {
 				className: y.a.wrappedRedditLogo
-			})), i.a.createElement("h1", {
-				className: Object(d.a)(y.a.heading)
-			}, e), i.a.createElement("h2", {
+			})), s.a.createElement("h1", {
+				className: Object(i.a)(y.a.heading)
+			}, e), s.a.createElement("h2", {
 				className: y.a.subheading
-			}, t)), i.a.createElement("div", {
+			}, a)), s.a.createElement("div", {
 				className: y.a.headingArt
-			}, i.a.createElement("div", {
+			}, s.a.createElement("div", {
 				className: y.a.defaultCardImageContainer
-			}, i.a.createElement("picture", {
+			}, s.a.createElement("div", {
 				className: y.a.defaultCardImage
-			}, i.a.createElement("source", {
-				srcSet: `${u.a.assetPath}${n}`,
-				type: "image/png"
-			}), i.a.createElement("img", {
+			}, s.a.createElement("img", {
 				alt: "card pictire",
 				className: y.a.fallbackStaticImage,
-				src: `${u.a.assetPath}${n}`
+				src: `${N.a.assetPath}/img/wrappedreddit/defaultcard/main_artwork_YIR@2x.png`
 			})))))));
-			! function(e) {
-				e.default = "default"
-			}(x || (x = {}));
+
+			function P() {
+				return (P = Object.assign || function(e) {
+					for (var a = 1; a < arguments.length; a++) {
+						var t = arguments[a];
+						for (var r in t) Object.prototype.hasOwnProperty.call(t, r) && (e[r] = t[r])
+					}
+					return e
+				}).apply(this, arguments)
+			}
+			const D = e => new Promise(a => {
+				const t = (e => e.replace(/https|http/i, "https"))(e),
+					r = new XMLHttpRequest;
+				r.onload = function() {
+					const e = new FileReader;
+					e.onloadend = function() {
+						a(e.result)
+					}, e.readAsDataURL(r.response)
+				}, r.open("GET", t), r.responseType = "blob", r.send()
+			});
+			var T = ({
+					src: e,
+					lowSrc: a = e,
+					errorSrc: t = a,
+					...r
+				}) => {
+					const c = Object(n.createRef)();
+					return D(e).then(e => {
+						c.current && e && (c.current.src = e)
+					}).catch(() => {
+						c.current && (c.current.src = t)
+					}), s.a.createElement("img", P({
+						ref: c,
+						src: a
+					}, r))
+				},
+				A = t("./src/reddit/pages/WrappedReddit/IntroCard/index.m.less"),
+				B = t.n(A);
 			const {
-				fbt: I
-			} = a("./node_modules/fbt/lib/FbtPublic.js"), v = 6;
-			var U = function(e) {
-				var t;
-				const {
-					cards: a
-				} = e, [u, l] = Object(r.useState)(0), [o, c] = Object(r.useState)(!1), [p, s] = Object(r.useState)(1), f = p * v >= a.length, m = e => () => {
-					l(e)
-				}, w = i.a.useCallback(() => c(!0), []), _ = i.a.useCallback(() => c(!1), []), b = e => () => {
-					s(e ? p - 1 : f ? 1 : p + 1), l(e ? v - 1 : 0)
-				}, k = a.length > v, y = a.length > v && p > 1, Y = (p - 1) * v, U = Y + v, H = Y + u;
-				return i.a.createElement(i.a.Fragment, null, (e => {
-					switch (e.type) {
-						case x.default:
-						default:
-							return i.a.createElement(R, {
-								card: e
-							})
+				fbt: F
+			} = t("./node_modules/fbt/lib/FbtPublic.js");
+			var K = ({
+					card: {
+						title: e,
+						subtitle: a,
+						id: t,
+						templateImageUrl: r
 					}
-				})(a[H]), i.a.createElement("div", {
-					className: g.a.carousel
-				}, i.a.createElement("div", {
-					className: g.a.buttonsWrapper
-				}, i.a.createElement(n.k, {
-					className: g.a.ctaButton,
-					priority: n.c.Primary,
-					onClick: w
-				}, I._("Share", null, {
-					hk: "2JaG4S"
-				})), k && i.a.createElement(n.k, {
-					className: g.a.ctaButton,
-					priority: n.c.Primary,
-					onClick: () => {
-						const e = u + 1 === v;
-						e && s(f ? 1 : p + 1), l(e ? 0 : u + 1)
-					}
-				}, I._("Next", null, {
-					hk: "2tKyCG"
-				}))), i.a.createElement("div", {
-					className: g.a.pager
-				}, y && i.a.createElement("button", {
-					onClick: b(!0)
-				}, i.a.createElement("div", {
-					className: Object(d.a)(g.a.nextDot)
-				})), a.slice(Y, U).map((e, t) => i.a.createElement("button", {
-					key: t,
-					onClick: m(t)
-				}, i.a.createElement("div", {
-					className: Object(d.a)(g.a.progressDot, {
-						[g.a.active]: t === u
-					})
-				}))), k && i.a.createElement("button", {
-					onClick: b()
-				}, i.a.createElement("div", {
-					className: Object(d.a)(g.a.nextDot)
-				})), o && i.a.createElement(h, {
-					id: null === (t = a[H]) || void 0 === t ? void 0 : t.id,
-					withOverlay: !0,
-					closeModal: _,
-					onOverlayClick: _,
-					className: g.a.modalBody,
-					overlayClassName: g.a.modalOverlay
-				}))))
-			};
-			const H = [{
-					id: "1",
-					type: x.default,
-					title: "How was your Yir?",
-					subtitle: "Hello u/furtivepuffin! Thank you for redditing with us since June 19th, 2017.",
-					backGroundUrl: "/img/wrappedreddit/defaultcard/main_bg_YIR_d2x.png",
-					pictureUrl: "/img/wrappedreddit/defaultcard/main_artwork_YIR@2x.png"
-				}, {
-					id: "2",
-					type: x.default,
-					title: "How was your Yir? 2",
-					subtitle: "Hello u/furtivepuffin! Thank you for redditing with us since June 19th, 2017. 2",
-					backGroundUrl: "/img/wrappedreddit/defaultcard/main_bg_YIR_d2x.png",
-					pictureUrl: "/img/wrappedreddit/defaultcard/main_artwork_YIR@2x.png"
-				}, {
-					id: "3",
-					type: x.default,
-					title: "How was your Yir? 3",
-					subtitle: "Hello u/furtivepuffin! Thank you for redditing with us since June 19th, 2017. 3",
-					backGroundUrl: "/img/wrappedreddit/defaultcard/main_bg_YIR_d2x.png",
-					pictureUrl: "/img/wrappedreddit/defaultcard/main_artwork_YIR@2x.png"
-				}, {
-					id: "4",
-					type: x.default,
-					title: "How was your Yir?4",
-					subtitle: "Hello u/furtivepuffin! Thank you for redditing with us since June 19th, 2017.",
-					backGroundUrl: "/img/wrappedreddit/defaultcard/main_bg_YIR_d2x.png",
-					pictureUrl: "/img/wrappedreddit/defaultcard/main_artwork_YIR@2x.png"
-				}, {
-					id: "5",
-					type: x.default,
-					title: "How was your Yir?5",
-					subtitle: "Hello u/furtivepuffin! Thank you for redditing with us since June 19th, 2017. 2",
-					backGroundUrl: "/img/wrappedreddit/defaultcard/main_bg_YIR_d2x.png",
-					pictureUrl: "/img/wrappedreddit/defaultcard/main_artwork_YIR@2x.png"
-				}, {
-					id: "6",
-					type: x.default,
-					title: "How was your Yir?6",
-					subtitle: "Hello u/furtivepuffin! Thank you for redditing with us since June 19th, 2017. 3",
-					backGroundUrl: "/img/wrappedreddit/defaultcard/main_bg_YIR_d2x.png",
-					pictureUrl: "/img/wrappedreddit/defaultcard/main_artwork_YIR@2x.png"
-				}, {
-					id: "7",
-					type: x.default,
-					title: "How was your Yir?7",
-					subtitle: "Hello u/furtivepuffin! Thank you for redditing with us since June 19th, 2017.",
-					backGroundUrl: "/img/wrappedreddit/defaultcard/main_bg_YIR_d2x.png",
-					pictureUrl: "/img/wrappedreddit/defaultcard/main_artwork_YIR@2x.png"
-				}, {
-					id: "8",
-					type: x.default,
-					title: "How was your Yir?8",
-					subtitle: "Hello u/furtivepuffin! Thank you for redditing with us since June 19th, 2017. 2",
-					backGroundUrl: "/img/wrappedreddit/defaultcard/main_bg_YIR_d2x.png",
-					pictureUrl: "/img/wrappedreddit/defaultcard/main_artwork_YIR@2x.png"
-				}, {
-					id: "9",
-					type: x.default,
-					title: "How was your Yir?9",
-					subtitle: "Hello u/furtivepuffin! Thank you for redditing with us since June 19th, 2017. 3",
-					backGroundUrl: "/img/wrappedreddit/defaultcard/main_bg_YIR_d2x.png",
-					pictureUrl: "/img/wrappedreddit/defaultcard/main_artwork_YIR@2x.png"
-				}, {
-					id: "10",
-					type: x.default,
-					title: "How was your Yir?10",
-					subtitle: "Hello u/furtivepuffin! Thank you for redditing with us since June 19th, 2017. 3",
-					backGroundUrl: "/img/wrappedreddit/defaultcard/main_bg_YIR_d2x.png",
-					pictureUrl: "/img/wrappedreddit/defaultcard/main_artwork_YIR@2x.png"
-				}, {
-					id: "11",
-					type: x.default,
-					title: "How was your Yir?11",
-					subtitle: "Hello u/furtivepuffin! Thank you for redditing with us since June 19th, 2017.",
-					backGroundUrl: "/img/wrappedreddit/defaultcard/main_bg_YIR_d2x.png",
-					pictureUrl: "/img/wrappedreddit/defaultcard/main_artwork_YIR@2x.png"
-				}, {
-					id: "12",
-					type: x.default,
-					title: "How was your Yir? 12",
-					subtitle: "Hello u/furtivepuffin! Thank you for redditing with us since June 19th, 2017. 2",
-					backGroundUrl: "/img/wrappedreddit/defaultcard/main_bg_YIR_d2x.png",
-					pictureUrl: "/img/wrappedreddit/defaultcard/main_artwork_YIR@2x.png"
-				}, {
-					id: "13",
-					type: x.default,
-					title: "How was your Yir? 13",
-					subtitle: "Hello u/furtivepuffin! Thank you for redditing with us since June 19th, 2017. 3",
-					backGroundUrl: "/img/wrappedreddit/defaultcard/main_bg_YIR_d2x.png",
-					pictureUrl: "/img/wrappedreddit/defaultcard/main_artwork_YIR@2x.png"
-				}, {
-					id: "14",
-					type: x.default,
-					title: "How was your Yir?14",
-					subtitle: "Hello u/furtivepuffin! Thank you for redditing with us since June 19th, 2017.",
-					backGroundUrl: "/img/wrappedreddit/defaultcard/main_bg_YIR_d2x.png",
-					pictureUrl: "/img/wrappedreddit/defaultcard/main_artwork_YIR@2x.png"
-				}, {
-					id: "15",
-					type: x.default,
-					title: "How was your Yir?15",
-					subtitle: "Hello u/furtivepuffin! Thank you for redditing with us since June 19th, 2017. 2",
-					backGroundUrl: "/img/wrappedreddit/defaultcard/main_bg_YIR_d2x.png",
-					pictureUrl: "/img/wrappedreddit/defaultcard/main_artwork_YIR@2x.png"
-				}, {
-					id: "16",
-					type: x.default,
-					title: "How was your Yir?16",
-					subtitle: "Hello u/furtivepuffin! Thank you for redditing with us since June 19th, 2017. 3",
-					backGroundUrl: "/img/wrappedreddit/defaultcard/main_bg_YIR_d2x.png",
-					pictureUrl: "/img/wrappedreddit/defaultcard/main_artwork_YIR@2x.png"
-				}, {
-					id: "17",
-					type: x.default,
-					title: "How was your Yir?17",
-					subtitle: "Hello u/furtivepuffin! Thank you for redditing with us since June 19th, 2017.",
-					backGroundUrl: "/img/wrappedreddit/defaultcard/main_bg_YIR_d2x.png",
-					pictureUrl: "/img/wrappedreddit/defaultcard/main_artwork_YIR@2x.png"
-				}, {
-					id: "18",
-					type: x.default,
-					title: "How was your Yir?18",
-					subtitle: "Hello u/furtivepuffin! Thank you for redditing with us since June 19th, 2017. 2",
-					backGroundUrl: "/img/wrappedreddit/defaultcard/main_bg_YIR_d2x.png",
-					pictureUrl: "/img/wrappedreddit/defaultcard/main_artwork_YIR@2x.png"
-				}, {
-					id: "19",
-					type: x.default,
-					title: "How was your Yir?19",
-					subtitle: "Hello u/furtivepuffin! Thank you for redditing with us since June 19th, 2017. 3",
-					backGroundUrl: "/img/wrappedreddit/defaultcard/main_bg_YIR_d2x.png",
-					pictureUrl: "/img/wrappedreddit/defaultcard/main_artwork_YIR@2x.png"
-				}, {
-					id: "20",
-					type: x.default,
-					title: "How was your Yir?20",
-					subtitle: "Hello u/furtivepuffin! Thank you for redditing with us since June 19th, 2017. 3",
-					backGroundUrl: "/img/wrappedreddit/defaultcard/main_bg_YIR_d2x.png",
-					pictureUrl: "/img/wrappedreddit/defaultcard/main_artwork_YIR@2x.png"
-				}, {
-					id: "21",
-					type: x.default,
-					title: "How was your Yir?21",
-					subtitle: "Hello u/furtivepuffin! Thank you for redditing with us since June 19th, 2017.",
-					backGroundUrl: "/img/wrappedreddit/defaultcard/main_bg_YIR_d2x.png",
-					pictureUrl: "/img/wrappedreddit/defaultcard/main_artwork_YIR@2x.png"
-				}, {
-					id: "22",
-					type: x.default,
-					title: "How was your Yir? 22",
-					subtitle: "Hello u/furtivepuffin! Thank you for redditing with us since June 19th, 2017. 2",
-					backGroundUrl: "/img/wrappedreddit/defaultcard/main_bg_YIR_d2x.png",
-					pictureUrl: "/img/wrappedreddit/defaultcard/main_artwork_YIR@2x.png"
-				}, {
-					id: "23",
-					type: x.default,
-					title: "How was your Yir? 23",
-					subtitle: "Hello u/furtivepuffin! Thank you for redditing with us since June 19th, 2017. 3",
-					backGroundUrl: "/img/wrappedreddit/defaultcard/main_bg_YIR_d2x.png",
-					pictureUrl: "/img/wrappedreddit/defaultcard/main_artwork_YIR@2x.png"
-				}, {
-					id: "24",
-					type: x.default,
-					title: "How was your Yir?24",
-					subtitle: "Hello u/furtivepuffin! Thank you for redditing with us since June 19th, 2017.",
-					backGroundUrl: "/img/wrappedreddit/defaultcard/main_bg_YIR_d2x.png",
-					pictureUrl: "/img/wrappedreddit/defaultcard/main_artwork_YIR@2x.png"
-				}, {
-					id: "25",
-					type: x.default,
-					title: "How was your Yir?25",
-					subtitle: "Hello u/furtivepuffin! Thank you for redditing with us since June 19th, 2017. 2",
-					backGroundUrl: "/img/wrappedreddit/defaultcard/main_bg_YIR_d2x.png",
-					pictureUrl: "/img/wrappedreddit/defaultcard/main_artwork_YIR@2x.png"
-				}, {
-					id: "26",
-					type: x.default,
-					title: "How was your Yir?26",
-					subtitle: "Hello u/furtivepuffin! Thank you for redditing with us since June 19th, 2017. 3",
-					backGroundUrl: "/img/wrappedreddit/defaultcard/main_bg_YIR_d2x.png",
-					pictureUrl: "/img/wrappedreddit/defaultcard/main_artwork_YIR@2x.png"
-				}, {
-					id: "27",
-					type: x.default,
-					title: "How was your Yir?27",
-					subtitle: "Hello u/furtivepuffin! Thank you for redditing with us since June 19th, 2017.",
-					backGroundUrl: "/img/wrappedreddit/defaultcard/main_bg_YIR_d2x.png",
-					pictureUrl: "/img/wrappedreddit/defaultcard/main_artwork_YIR@2x.png"
-				}, {
-					id: "28",
-					type: x.default,
-					title: "How was your Yir?28",
-					subtitle: "Hello u/furtivepuffin! Thank you for redditing with us since June 19th, 2017. 2",
-					backGroundUrl: "/img/wrappedreddit/defaultcard/main_bg_YIR_d2x.png",
-					pictureUrl: "/img/wrappedreddit/defaultcard/main_artwork_YIR@2x.png"
-				}, {
-					id: "29",
-					type: x.default,
-					title: "How was your Yir?29",
-					subtitle: "Hello u/furtivepuffin! Thank you for redditing with us since June 19th, 2017. 3",
-					backGroundUrl: "/img/wrappedreddit/defaultcard/main_bg_YIR_d2x.png",
-					pictureUrl: "/img/wrappedreddit/defaultcard/main_artwork_YIR@2x.png"
-				}, {
-					id: "30",
-					type: x.default,
-					title: "How was your Yir?30",
-					subtitle: "Hello u/furtivepuffin! Thank you for redditing with us since June 19th, 2017. 3",
-					backGroundUrl: "/img/wrappedreddit/defaultcard/main_bg_YIR_d2x.png",
-					pictureUrl: "/img/wrappedreddit/defaultcard/main_artwork_YIR@2x.png"
-				}, {
-					id: "31",
-					type: x.default,
-					title: "How was your Yir?31",
-					subtitle: "Hello u/furtivepuffin! Thank you for redditing with us since June 19th, 2017.",
-					backGroundUrl: "/img/wrappedreddit/defaultcard/main_bg_YIR_d2x.png",
-					pictureUrl: "/img/wrappedreddit/defaultcard/main_artwork_YIR@2x.png"
-				}, {
-					id: "32",
-					type: x.default,
-					title: "How was your Yir?32",
-					subtitle: "Hello u/furtivepuffin! Thank you for redditing with us since June 19th, 2017. 2",
-					backGroundUrl: "/img/wrappedreddit/defaultcard/main_bg_YIR_d2x.png",
-					pictureUrl: "/img/wrappedreddit/defaultcard/main_artwork_YIR@2x.png"
-				}],
+				}) => {
+					const n = s.a.useMemo(() => s.a.createElement(T, {
+						src: r,
+						alt: "Intro Card Pictire",
+						className: B.a.fallbackStaticImage
+					}), [r]);
+					return s.a.createElement(s.a.Fragment, null, s.a.createElement("div", {
+						id: t,
+						className: B.a.headingSection
+					}, s.a.createElement("div", {
+						className: Object(i.a)(B.a.background, B.a.contentWrapper),
+						style: {
+							background: `url(${N.a.assetPath}/img/wrappedreddit/defaultcard/main_bg_YIR_d2x.png) no-repeat center center fixed`,
+							backgroundSize: "cover"
+						}
+					}), s.a.createElement("div", {
+						className: Object(i.a)(B.a.headingWrapper, B.a.headingContent)
+					}, s.a.createElement("div", {
+						className: B.a.headingText
+					}, s.a.createElement("h1", {
+						className: Object(i.a)(B.a.heading)
+					}, s.a.createElement(h.a, {
+						className: B.a.wrappedRedditLogo
+					})), s.a.createElement("h1", {
+						className: Object(i.a)(B.a.heading)
+					}, e), s.a.createElement("h2", {
+						className: B.a.subheading
+					}, a)), s.a.createElement("div", {
+						className: B.a.headingArt
+					}, s.a.createElement("div", {
+						className: B.a.defaultCardImageContainer
+					}, s.a.createElement("div", {
+						className: B.a.defaultCardImage
+					}, n))))))
+				},
+				M = t("./src/reddit/routes/postCreation/constants.ts");
+			const Y = () => t.e(2).then(t.bind(null, "./node_modules/html-to-image/es/index.js")),
 				{
-					fbt: E
-				} = a("./node_modules/fbt/lib/FbtPublic.js");
-			t.default = () => i.a.createElement(U, {
-				cards: H
-			})
+					fbt: U
+				} = t("./node_modules/fbt/lib/FbtPublic.js");
+			var G = () => {
+				var e;
+				const a = Object(c.d)(),
+					t = Object(c.e)(e => e.wrappedReddit.isCardsLoading),
+					r = Object(c.e)(e => e.wrappedReddit.cards),
+					b = Object(c.e)(e => e.wrappedReddit.cardsLoadingError),
+					h = Object(c.e)(e => e.wrappedReddit.uploadCard),
+					[E, N] = Object(n.useState)(0),
+					[v, C] = Object(n.useState)(!1),
+					[x, w] = Object(n.useState)(1),
+					j = 6 * x >= r.length,
+					k = r.length > 6,
+					O = r.length > 6 && x > 1,
+					R = 6 * (x - 1),
+					S = R + 6,
+					y = R + E;
+				s.a.useEffect(() => {
+					a(m.c()), a(m.b())
+				}, []);
+				const W = s.a.useCallback(() => C(!0), []),
+					P = s.a.useCallback(() => C(!1), []),
+					D = e => () => {
+						N(e)
+					},
+					T = e => () => {
+						w(e ? x - 1 : j ? 1 : x + 1), N(e ? 5 : 0)
+					},
+					A = s.a.useCallback(async () => {
+						var e;
+						const a = (null === (e = r[y]) || void 0 === e ? void 0 : e.id) || "",
+							t = document.getElementById(a);
+						if (t) {
+							const e = await Y(),
+								r = await e.toPng(t);
+							if (r) {
+								const e = document.createElement("a");
+								e.download = `card_${a}.png`, e.href = r, e.click()
+							}
+						}
+					}, [y, r]),
+					B = s.a.useCallback(async () => {
+						var e;
+						const t = (null === (e = r[y]) || void 0 === e ? void 0 : e.id) || "";
+						h[t] || await (async e => {
+							const t = document.getElementById(e);
+							if (t) {
+								const r = await Y(),
+									n = await r.toBlob(t);
+								if (n) {
+									const t = new File([n], `${e}.png`, {
+										type: n.type
+									});
+									await a(o.g(t, l.FileSource.Clipboard, e))
+								}
+							}
+						})(t), a(Object(d.b)(M.b)), a(o.c(t))
+					}, [y, r, h]);
+				return s.a.createElement(s.a.Fragment, null, t && s.a.createElement(p.a, null), b && s.a.createElement(f, {
+					error: b
+				}), r.length ? s.a.createElement(s.a.Fragment, null, r[y] && (e => (e => e.__typename === g)(e) ? s.a.createElement(K, {
+					card: e
+				}) : s.a.createElement(L, {
+					card: e
+				}))(r[y]), s.a.createElement("div", {
+					className: _.a.carousel
+				}, s.a.createElement("div", {
+					className: _.a.buttonsWrapper
+				}, s.a.createElement(u.k, {
+					className: _.a.ctaButton,
+					priority: u.c.Primary,
+					onClick: W
+				}, U._("Share", null, {
+					hk: "2JaG4S"
+				})), k && s.a.createElement(u.k, {
+					className: _.a.ctaButton,
+					priority: u.c.Primary,
+					onClick: () => {
+						const e = E + 1 === 6;
+						e && w(j ? 1 : x + 1), N(e ? 0 : E + 1)
+					}
+				}, U._("Next", null, {
+					hk: "2tKyCG"
+				}))), s.a.createElement("div", {
+					className: _.a.pager
+				}, O && s.a.createElement("button", {
+					onClick: T(!0)
+				}, s.a.createElement("div", {
+					className: Object(i.a)(_.a.nextDot)
+				})), r.slice(R, S).map((e, a) => s.a.createElement("button", {
+					key: a,
+					onClick: D(a)
+				}, s.a.createElement("div", {
+					className: Object(i.a)(_.a.progressDot, {
+						[_.a.active]: a === E
+					})
+				}))), k && s.a.createElement("button", {
+					onClick: T()
+				}, s.a.createElement("div", {
+					className: Object(i.a)(_.a.nextDot)
+				})))), v && s.a.createElement(I, {
+					id: (null === (e = r[y]) || void 0 === e ? void 0 : e.id) || "",
+					withOverlay: !0,
+					closeModal: P,
+					onOverlayClick: P,
+					className: _.a.modalBody,
+					overlayClassName: _.a.modalOverlay,
+					downloadCard: A,
+					postCard: B
+				})) : s.a.createElement(s.a.Fragment, null))
+			};
+			const {
+				fbt: Q
+			} = t("./node_modules/fbt/lib/FbtPublic.js");
+			a.default = () => s.a.createElement(G, null)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/WrappedReddit.db16ffc6d2f243d8967f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/WrappedReddit.3f26814d25294abde666.js.map

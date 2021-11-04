@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor.0a108b24491ed61679d2.js
-// Retrieved at 11/4/2021, 2:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor.a734b23e46d0a0dd8c07.js
+// Retrieved at 11/4/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor"], {
 		"./src/lib/forEachGroup/index.ts": function(t, e, n) {
@@ -6199,8 +6199,8 @@
 				}, t => ({
 					onFetchEditorProducts: e => t(Object(T.e)(e)),
 					onTrackMediaDrop: e => t((t, n) => v.p(n(), e)),
-					retryUpload: e => t(x.c(e)),
-					startUploads: (e, n, o) => t(x.e(e, n, bc(o)))
+					retryUpload: e => t(x.d(e)),
+					startUploads: (e, n, o) => t(x.f(e, n, bc(o)))
 				}));
 			class Ec extends u.Component {
 				constructor(t) {
@@ -7859,4 +7859,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor.0a108b24491ed61679d2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor.a734b23e46d0a0dd8c07.js.map
