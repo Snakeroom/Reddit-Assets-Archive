@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.0e40d13991b0d01e4927.js
-// Retrieved at 11/4/2021, 10:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.494d1019136e25aa8e54.js
+// Retrieved at 11/4/2021, 2:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton", "reddit-components-RichTextEditor-Toolbar-GifButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, o) {
@@ -2673,8 +2673,8 @@
 							[Q.a.isOverlay]: N
 						})
 					}, B && d.a.createElement(te, {
-						minTimeVisible: G.c,
-						minNumUsersTyping: G.b,
+						minTimeVisible: G.e,
+						minNumUsersTyping: G.d,
 						postId: y
 					}), d.a.createElement(g.a, {
 						className: Q.a.richTextEditor,
@@ -2683,7 +2683,7 @@
 						dataTestId: j.c,
 						destSubreddit: r,
 						editorType: L.a.Comment,
-						initialMinHeight: G.a,
+						initialMinHeight: G.c,
 						isCommentBoxDesignEnabled: p,
 						isExpanded: h,
 						isTypingIndicatorsExperimentEnabled: M,
@@ -4009,7 +4009,7 @@
 					emojisEnabled: k,
 					gifsEnabled: w,
 					controlsState: O
-				} = e, T = p ? d.d : void 0, F = p ? h.a.overflowPopupMenu : void 0, R = p ? ["left", "top"] : void 0, S = p ? ["left", "bottom"] : void 0, D = !b && (k || w);
+				} = e, T = p ? d.f : void 0, F = p ? h.a.overflowPopupMenu : void 0, R = p ? ["left", "top"] : void 0, S = p ? ["left", "bottom"] : void 0, D = !b && (k || w);
 				return !b || p ? s.a.createElement(a.a, {
 					className: t,
 					oveflowMenuDropdownId: n,
@@ -5024,4 +5024,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.0e40d13991b0d01e4927.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.494d1019136e25aa8e54.js.map

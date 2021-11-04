@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor.7b47415ec5408bb92501.js
-// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor.0a108b24491ed61679d2.js
+// Retrieved at 11/4/2021, 2:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor"], {
 		"./src/lib/forEachGroup/index.ts": function(t, e, n) {
@@ -6227,7 +6227,7 @@
 						focusableContentRef: t
 					}), this.setUserStoppedTyping = i()(() => this.setState({
 						isUserTyping: !1
-					}), tc.e), this.rteStateChanged = (t, e) => {
+					}), tc.g), this.rteStateChanged = (t, e) => {
 						const n = {
 							...this.props.rteState,
 							isBound: !0,
@@ -7551,18 +7551,24 @@
 				return o
 			})), n.d(e, "b", (function() {
 				return r
-			})), n.d(e, "d", (function() {
-				return s
-			})), n.d(e, "e", (function() {
-				return i
 			})), n.d(e, "c", (function() {
+				return s
+			})), n.d(e, "d", (function() {
+				return i
+			})), n.d(e, "f", (function() {
 				return c
+			})), n.d(e, "g", (function() {
+				return a
+			})), n.d(e, "e", (function() {
+				return l
 			}));
-			const o = 37,
-				r = 2,
-				s = 6,
-				i = 1e4,
-				c = 1e4
+			const o = 2e3,
+				r = 3e4,
+				s = 37,
+				i = 2,
+				c = 6,
+				a = 1e4,
+				l = 1e4
 		},
 		"./src/reddit/controls/SubredditDropdown/index.m.less": function(t, e, n) {
 			t.exports = {
@@ -7853,4 +7859,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor.7b47415ec5408bb92501.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor.0a108b24491ed61679d2.js.map
