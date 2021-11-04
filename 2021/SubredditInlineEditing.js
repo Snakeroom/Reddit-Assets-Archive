@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditInlineEditing.774187eb4d2c779a6198.js
-// Retrieved at 11/3/2021, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditInlineEditing.5502ee24bfe6f01c338f.js
+// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditInlineEditing"], {
 		"./src/reddit/components/CommunityTopics/NumTopicsSelected.tsx": function(e, t, s) {
@@ -71,7 +71,7 @@
 						className: b.a.title
 					}, e)), i.a.createElement("p", {
 						className: b.a.tooltipBody
-					}, t), i.a.createElement(h.k, {
+					}, t), i.a.createElement(h.l, {
 						className: b.a.gotIt,
 						onClick: this.props.onDismissTooltip
 					}, s || g._("Got it", null, {
@@ -1647,4 +1647,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditInlineEditing.774187eb4d2c779a6198.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditInlineEditing.5502ee24bfe6f01c338f.js.map

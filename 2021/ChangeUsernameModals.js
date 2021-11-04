@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChangeUsernameModals.71c02985aae94277ff88.js
-// Retrieved at 11/3/2021, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChangeUsernameModals.fbc906377b4943d90737.js
+// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChangeUsernameModals"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -258,7 +258,7 @@
 						onSuggestedUsernameClick: this.onSuggestedUsernameClickHandler
 					}), r.a.createElement("div", {
 						className: B.a.buttonWrapper
-					}, r.a.createElement(M.k, {
+					}, r.a.createElement(M.l, {
 						className: Object(b.a)(B.a.commonBtn, B.a.primaryBtn),
 						disabled: !c,
 						onClick: this.handleContinue
@@ -267,9 +267,9 @@
 					}))))
 				}
 			}
-			var q = Object(E.b)(X),
-				J = n("./src/reddit/icons/svgs/Question/index.tsx"),
-				Z = n("./src/reddit/icons/svgs/SnooSuperhero/index.tsx");
+			var J = Object(E.b)(X),
+				Z = n("./src/reddit/icons/svgs/Question/index.tsx"),
+				q = n("./src/reddit/icons/svgs/SnooSuperhero/index.tsx");
 			var Y = e => (Object(a.useEffect)(e.onView, []), r.a.createElement(I.a, {
 					bodyClassName: R.a.confirmModalBody,
 					className: Object(b.a)(R.a.confirmModalContainer, {
@@ -280,7 +280,7 @@
 						[R.a.saveDescription]: e.isSaveConfirm
 					}),
 					headerClassName: R.a.confirmModalHeader,
-					icon: e.isSecondConfirm ? r.a.createElement(J.a, null) : r.a.createElement(Z.a, null),
+					icon: e.isSecondConfirm ? r.a.createElement(Z.a, null) : r.a.createElement(q.a, null),
 					iconClassName: Object(b.a)(R.a.confirmModalIcon, {
 						[R.a.questionIcon]: e.isSecondConfirm
 					}),
@@ -291,11 +291,11 @@
 					className: B.a.usernamePrefix
 				}, "u/"), e.username), r.a.createElement("div", {
 					className: B.a.buttonWrapper
-				}, r.a.createElement(M.k, {
+				}, r.a.createElement(M.l, {
 					className: Object(b.a)(B.a.commonBtn, B.a.primaryBtn),
 					disabled: e.isSaving,
 					onClick: e.onPrimaryButtonClick
-				}, e.primaryButtonText()), r.a.createElement(M.q, {
+				}, e.primaryButtonText()), r.a.createElement(M.r, {
 					className: Object(b.a)(B.a.commonBtn, B.a.secondaryBtn),
 					disabled: e.isSaving,
 					onClick: e.onSecondaryButtonClick
@@ -430,7 +430,7 @@
 					primaryButtonText: E ? re : se,
 					secondaryButtonText: ne,
 					username: _
-				}), t && r.a.createElement(q, {
+				}), t && r.a.createElement(J, {
 					initialUsername: f || "",
 					isResponsive: u,
 					onClose: n,
@@ -749,4 +749,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChangeUsernameModals.71c02985aae94277ff88.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChangeUsernameModals.fbc906377b4943d90737.js.map

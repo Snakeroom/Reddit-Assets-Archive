@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SupportersListModal.9819213b3dc0c453f5c1.js
-// Retrieved at 11/3/2021, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SupportersListModal.2c5547c5eb3f2311d767.js
+// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SupportersListModal"], {
 		"./src/reddit/components/Econ/Common/ModalCloseButton/index.m.less": function(e, t, s) {
@@ -55,8 +55,8 @@
 				onClick: t
 			}) => {
 				const s = Object(o.e)(c.v);
-				return n.a.createElement(a.s, {
-					priority: a.b.Primary,
+				return n.a.createElement(a.t, {
+					priority: a.c.Primary,
 					className: e,
 					onClick: t,
 					isFullWidth: !0
@@ -227,8 +227,8 @@
 						}
 					}, o.a.createElement(d.b, {
 						supporter: e.data.supporter
-					}))))))), n && o.a.createElement(c.s, {
-						priority: c.b.Secondary,
+					}))))))), n && o.a.createElement(c.t, {
+						priority: c.c.Secondary,
 						className: l.a.expandButton,
 						onClick: s,
 						isFullWidth: !0
@@ -501,4 +501,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SupportersListModal.9819213b3dc0c453f5c1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SupportersListModal.2c5547c5eb3f2311d767.js.map

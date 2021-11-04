@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CryptoVault.21d804ddc60948cf487b.js
-// Retrieved at 11/3/2021, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CryptoVault.7edd73b7acc4b56368cc.js
+// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CryptoVault"], {
 		"./src/reddit/actions/economics/claims/constants.ts": function(e, t, n) {
@@ -204,11 +204,11 @@
 				const E = Object(c.a)(e),
 					O = Object(b.a)(Object(d.a)(E)),
 					p = null === (s = null == O ? void 0 : O.subreddit) || void 0 === s ? void 0 : s.toLowerCase();
-				return O && p && p === t.name.toLowerCase() ? o.a.createElement(_.s, {
-					priority: _.b.Plain,
+				return O && p && p === t.name.toLowerCase() ? o.a.createElement(_.t, {
+					priority: _.c.Plain,
 					onClick: () => n(Object(a.h)(m.a.CRYPTO_BURN_POINTS, O)),
 					className: N.a.vaultActionPill,
-					size: _.c.XS
+					size: _.d.XS
 				}, O.cta || r.fbt._("Burn", null, {
 					hk: "4p3rvM"
 				}), o.a.createElement(l.a, {
@@ -702,4 +702,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CryptoVault.21d804ddc60948cf487b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CryptoVault.7edd73b7acc4b56368cc.js.map

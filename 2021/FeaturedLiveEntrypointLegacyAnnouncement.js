@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointLegacyAnnouncement.498181185d1943ccef1c.js
-// Retrieved at 10/28/2021, 5:10:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointLegacyAnnouncement.92f67ce4f7aee3e8a43d.js
+// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FeaturedLiveEntrypointLegacyAnnouncement"], {
 		"./src/reddit/components/FeaturedLiveEntrypoint/LegacyAnnouncement/index.m.less": function(e, n, t) {
@@ -69,7 +69,7 @@
 					onClick: y
 				})), c.a.createElement("div", {
 					className: Object(i.a)(A.a.Description, A.a.isAnnouncement)
-				}, "function" == typeof n.description ? n.description() : n.description), c.a.createElement(o.l, {
+				}, "function" == typeof n.description ? n.description() : n.description), c.a.createElement(o.m, {
 					className: A.a.Button,
 					target: "_blank",
 					href: n.url,
@@ -79,4 +79,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointLegacyAnnouncement.498181185d1943ccef1c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointLegacyAnnouncement.92f67ce4f7aee3e8a43d.js.map

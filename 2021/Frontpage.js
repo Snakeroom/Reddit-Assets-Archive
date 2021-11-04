@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.429c24e094b4c2d1a344.js
-// Retrieved at 11/3/2021, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.61ed99045fcc373525ee.js
+// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -1542,7 +1542,7 @@
 					className: v.a.dismissedText
 				}, P._("Ok, we won't show you this again.", null, {
 					hk: "4z33KK"
-				})), n.a.createElement(u.s, {
+				})), n.a.createElement(u.t, {
 					onClick: Z
 				}, P._("undo", null, {
 					hk: "1A9z3Y"
@@ -1635,7 +1635,7 @@
 					className: v.a.copyTextHeading
 				}, B), n.a.createElement("p", {
 					className: v.a.copyTextDescription
-				}, U)), n.a.createElement(u.j, {
+				}, U)), n.a.createElement(u.k, {
 					onClick: q,
 					className: v.a.continueButton,
 					disabled: !!I
@@ -3930,8 +3930,8 @@
 					return Object(c.c)(e, {
 						experimentEligibilitySelector: i,
 						experimentName: s.ac
-					}) === s.Kc.Enabled
-				}(e) ? l.Achievements : t === s.Lc.ControlBanner ? l.CommunitySpacesControl : t === s.Lc.EnabledBanner ? l.CommunitySpaces : null
+					}) === s.Lc.Enabled
+				}(e) ? l.Achievements : t === s.Mc.ControlBanner ? l.CommunitySpacesControl : t === s.Mc.EnabledBanner ? l.CommunitySpaces : null
 			}! function(e) {
 				e.Achievements = "achievements", e.CommunitySpaces = "communitySpaces", e.CommunitySpacesControl = "communitySpaces--control"
 			}(l || (l = {}))
@@ -3992,4 +3992,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.429c24e094b4c2d1a344.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.61ed99045fcc373525ee.js.map

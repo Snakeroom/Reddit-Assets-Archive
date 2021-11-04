@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.73cb0b9d7c188e38bd45.js
-// Retrieved at 11/3/2021, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.8d8461b2fe2249d034ce.js
+// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ProfileIdCard"], {
 		"./node_modules/lodash/compact.js": function(e, t) {
@@ -565,7 +565,7 @@
 				onAddUserToQuickReplyList: b,
 				children: h
 			}) => {
-				return o.a.createElement(d.s, {
+				return o.a.createElement(d.t, {
 					onClick: t => {
 						if (f && f(t), e(), p === n.awardNotification) return b();
 						s(Object(l.b)(a))
@@ -1616,7 +1616,7 @@
 				let O = null;
 				_ || (O = e ? "user_hovercard" : "profile_overview");
 				const C = Object(s.useCallback)(() => v(Object(m.f)(e ? "user_hovercard" : "profile_overview", t)), [e, v, t]);
-				return o.a.createElement(u.s, {
+				return o.a.createElement(u.t, {
 					onClick: () => {
 						r ? (v(m.g), _ && I === f.a.notVoted && x(Object(c.db)(_))) : C();
 						const e = r ? "postify" : "copy";
@@ -1673,7 +1673,7 @@
 				isOwnProfile: n,
 				onClick: d
 			}) {
-				return s.a.createElement(a.s, {
+				return s.a.createElement(a.t, {
 					onClick: d,
 					isFullWidth: !0,
 					className: Object(o.a)(l.a.snoovatarButton, {
@@ -2350,25 +2350,25 @@
 						expanded: t
 					} = this.state, r = this.makeMenuItems();
 					if (0 === r.length) return null;
-					const n = (t ? r : []).map(e => e.url ? e.isInternalLink ? s.a.createElement(f.s, {
-						kind: f.a.InternalLink,
-						priority: f.b.Plain,
-						size: f.c.XS,
+					const n = (t ? r : []).map(e => e.url ? e.isInternalLink ? s.a.createElement(f.t, {
+						kind: f.b.InternalLink,
+						priority: f.c.Plain,
+						size: f.d.XS,
 						key: e.url,
 						onClick: e.onClick,
 						to: e.url,
 						className: X.a.menuItem
-					}, e.text) : s.a.createElement(f.s, {
-						kind: f.a.ExternalLink,
-						priority: f.b.Plain,
-						size: f.c.XS,
+					}, e.text) : s.a.createElement(f.t, {
+						kind: f.b.ExternalLink,
+						priority: f.c.Plain,
+						size: f.d.XS,
 						key: e.url,
 						href: e.url,
 						onClick: e.onClick,
 						className: X.a.menuItem
-					}, e.text) : s.a.createElement(f.s, {
-						priority: f.b.Plain,
-						size: f.c.XS,
+					}, e.text) : s.a.createElement(f.t, {
+						priority: f.c.Plain,
+						size: f.d.XS,
 						className: X.a.menuItem,
 						key: e.text,
 						onClick: e.onClick
@@ -2393,7 +2393,7 @@
 						className: X.a.container
 					}, n, s.a.createElement("div", {
 						className: X.a.expandContainer
-					}, s.a.createElement(f.q, {
+					}, s.a.createElement(f.r, {
 						className: X.a.expandButton,
 						onClick: this.moreOptionsToggled
 					}, o)), e && s.a.createElement(G, null), this.state.showCrisisModal && s.a.createElement(D.b, {
@@ -2485,7 +2485,7 @@
 				currentUserHasSubreddit: t
 			}) => s.a.createElement("div", {
 				className: ne.a.actionItem
-			}, s.a.createElement(f.m, {
+			}, s.a.createElement(f.n, {
 				className: ne.a.button,
 				to: t ? `/user/${e}/submit` : "/submit"
 			}, oe._("New Post", null, {
@@ -2499,19 +2499,19 @@
 				sendEvent: a
 			}) => s.a.createElement("div", {
 				className: ne.a.actionItem
-			}, r && !n ? s.a.createElement(f.n, {
+			}, r && !n ? s.a.createElement(f.o, {
 				className: ne.a.button,
 				onClick: () => t(e, r)
 			}, oe._("Unfollow", null, {
 				hk: "1nM1SO"
-			})) : n ? s.a.createElement(f.k, {
+			})) : n ? s.a.createElement(f.l, {
 				className: ne.a.button,
 				onClick: () => {
 					o(e), a(Object(b.h)(e))
 				}
 			}, oe._("Unblock", null, {
 				hk: "2d6Cyx"
-			})) : s.a.createElement(f.k, {
+			})) : s.a.createElement(f.l, {
 				className: ne.a.button,
 				onClick: () => t(e, r)
 			}, oe._("Follow", null, {
@@ -3226,7 +3226,7 @@
 			const a = e => Object(s.c)(e, {
 				experimentName: n.E,
 				experimentEligibilitySelector: () => Object(o.J)(e)
-			}) === n.Ic
+			}) === n.Jc
 		},
 		"./src/reddit/selectors/experiments/crisisTextLine.ts": function(e, t, r) {
 			"use strict";
@@ -3286,4 +3286,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.73cb0b9d7c188e38bd45.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.8d8461b2fe2249d034ce.js.map

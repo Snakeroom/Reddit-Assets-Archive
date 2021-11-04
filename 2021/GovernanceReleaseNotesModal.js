@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.1e669c8e28d165e6b850.js
-// Retrieved at 11/3/2021, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.c57e0d11899a9afb6505.js
+// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceReleaseNotesModal"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -755,12 +755,12 @@
 			function N(e) {
 				return o.a.createElement("div", {
 					className: Object(p.a)(S.a.container, e.className)
-				}, !e.isFirst && o.a.createElement(T.n, {
+				}, !e.isFirst && o.a.createElement(T.o, {
 					className: S.a.prev,
 					onClick: e.onPrevSlide
 				}, o.a.createElement(k.a, {
 					className: S.a.arrow
-				})), o.a.createElement(T.k, {
+				})), o.a.createElement(T.l, {
 					onClick: e.isLast ? e.onClose : e.onNextSlide
 				}, e.isLast ? s.fbt._("done", null, {
 					hk: "2XjG3a"
@@ -2542,12 +2542,12 @@
 						rtJsonElementProps: o
 					});
 					switch (s) {
-						case b.De.SmIcon:
+						case b.Ee.SmIcon:
 							return r.a.createElement(h, {
 								subredditName: n,
 								rtJsonElementProps: o
 							});
-						case b.De.SmIconHc:
+						case b.Ee.SmIconHc:
 							return r.a.createElement(h, {
 								subredditName: n,
 								isHoverable: !0,
@@ -2861,12 +2861,12 @@
 				d = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.xe
+						experimentName: s.ye
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === s.De.SmIcon || t === s.De.SmIconHc
+					return t === s.Ee.SmIcon || t === s.Ee.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -2889,4 +2889,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.1e669c8e28d165e6b850.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.c57e0d11899a9afb6505.js.map

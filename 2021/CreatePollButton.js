@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CreatePollButton.421ba7ad1c1c18e8fab4.js
-// Retrieved at 10/25/2021, 4:40:12 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CreatePollButton.ce705ab720f1b9badda9.js
+// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CreatePollButton"], {
 		"./src/reddit/components/ConfirmUserActionModal/index.m.less": function(e, a, t) {
@@ -87,7 +87,7 @@
 					}
 				}
 				render() {
-					return this.state.isDismissed || !h.includes(this.props.listingName.toLowerCase()) ? null : n.a.createElement(n.a.Fragment, null, n.a.createElement(c.k, {
+					return this.state.isDismissed || !h.includes(this.props.listingName.toLowerCase()) ? null : n.a.createElement(n.a.Fragment, null, n.a.createElement(c.l, {
 						className: p.a.CreatePostButton,
 						onClick: this.onCreatePostButtonClick
 					}, s.fbt._("Submit a poll", null, {
@@ -113,4 +113,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CreatePollButton.421ba7ad1c1c18e8fab4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CreatePollButton.ce705ab720f1b9badda9.js.map

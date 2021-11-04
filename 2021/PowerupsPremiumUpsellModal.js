@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PowerupsPremiumUpsellModal.82c5a5a15c8ec6146b12.js
-// Retrieved at 11/3/2021, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PowerupsPremiumUpsellModal.78b19dc6a524ac798d60.js
+// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PowerupsPremiumUpsellModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, r) {
@@ -1072,9 +1072,9 @@
 					body: o.a.createElement(U, {
 						items: l
 					}),
-					buttons: d && o.a.createElement(j.s, {
+					buttons: d && o.a.createElement(j.t, {
 						className: F.a.powerupsButton,
-						priority: j.b.Secondary,
+						priority: j.c.Secondary,
 						onClick: () => {
 							s(Object(p.w)()), t(Object(a.h)(m.a.ECON_POWERUPS_PURCHASE))
 						},
@@ -1131,16 +1131,16 @@
 				onClickPrice: n
 			}) => o.a.createElement("div", {
 				className: F.a.premiumButtons
-			}, o.a.createElement(j.s, {
+			}, o.a.createElement(j.t, {
 				className: F.a.powerupsButton,
-				priority: j.b.Secondary,
+				priority: j.c.Secondary,
 				onClick: () => n(e.packageId, x.b.Month),
 				isFullWidth: !0
 			}, q._("{premiumMonthlyPrice}/mo", [q._param("premiumMonthlyPrice", Object(y.b)(e.price, {
 				locale: r
 			}))], {
 				hk: "4i6SO9"
-			})), o.a.createElement(j.j, {
+			})), o.a.createElement(j.k, {
 				className: F.a.powerupsButton,
 				onClick: () => n(t.packageId, x.b.Year),
 				isFullWidth: !0
@@ -1897,4 +1897,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsPremiumUpsellModal.82c5a5a15c8ec6146b12.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsPremiumUpsellModal.78b19dc6a524ac798d60.js.map

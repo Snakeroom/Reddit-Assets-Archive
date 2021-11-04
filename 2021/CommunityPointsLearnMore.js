@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.7e2ffe9ff30b61127f35.js
-// Retrieved at 11/3/2021, 5:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.102b4d9a4d3abb1d933c.js
+// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityPointsLearnMore"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, n) {
@@ -1758,7 +1758,7 @@
 						className: N.a.title
 					}, b), i.a.createElement(y, {
 						onComplete: () => t(!0)
-					}), e && i.a.createElement(i.a.Fragment, null, i.a.createElement(c.k, {
+					}), e && i.a.createElement(i.a.Fragment, null, i.a.createElement(c.l, {
 						className: N.a.createVaultButton,
 						onClick: () => {
 							g(Object(u.b)()), f ? window.location.href = `${r.a.redditUrl}/vault/` : s(!0)
@@ -1944,10 +1944,10 @@
 				className: U.a.bodyText
 			}, Y._("Add a custom token to your subreddit. Earn rewards, encourge quality content, and unlock premium features.", null, {
 				hk: "1czVLN"
-			})), i.a.createElement(c.s, {
+			})), i.a.createElement(c.t, {
 				className: U.a.waitlistButton,
-				priority: c.b.Primary,
-				kind: c.a.ExternalLink,
+				priority: c.c.Primary,
+				kind: c.b.ExternalLink,
 				href: "https://docs.google.com/forms/d/1xSpGcBc0TP3GpfNgo3F0pV86OQYiEwUcsWBu3-RtfiU/viewform",
 				target: "_blank"
 			}, Y._("Join Waitlist", null, {
@@ -1982,11 +1982,11 @@
 					hk: "2r0fjb"
 				})))], {
 					hk: "46EaYu"
-				})), i.a.createElement(c.s, {
+				})), i.a.createElement(c.t, {
 					Icon: Object(S.b)("topic_reading"),
 					className: H.a.docsButton,
 					iconClassName: H.a.docsIcon,
-					priority: c.b.Secondary,
+					priority: c.c.Secondary,
 					onClick: () => n(!0)
 				}, K._("A New Frontier", null, {
 					hk: "4GrPd2"
@@ -2017,12 +2017,12 @@
 				className: Z.a.subtitle
 			}, X._("Want to know more?", null, {
 				hk: "3vbn1B"
-			})), i.a.createElement(c.s, {
+			})), i.a.createElement(c.t, {
 				Icon: Object(S.b)("topic_reading"),
 				className: Z.a.docsButton,
 				iconClassName: Z.a.docsIcon,
-				priority: c.b.Secondary,
-				kind: c.a.InternalLink,
+				priority: c.c.Secondary,
+				kind: c.b.InternalLink,
 				to: "/community-points/docs"
 			}, i.a.createElement("span", {
 				className: Z.a.docTextFull
@@ -2204,10 +2204,10 @@
 				className: ce.a.body
 			}, ue._("We are looking for a select few subreddits to join our crypto experiment. If you are a moderator, add yourself to the list and we’ll be in touch!", null, {
 				hk: "3MTU6s"
-			})), i.a.createElement(c.s, {
+			})), i.a.createElement(c.t, {
 				className: ce.a.waitlistButton,
-				priority: c.b.Primary,
-				kind: c.a.ExternalLink,
+				priority: c.c.Primary,
+				kind: c.b.ExternalLink,
 				href: "https://docs.google.com/forms/d/1xSpGcBc0TP3GpfNgo3F0pV86OQYiEwUcsWBu3-RtfiU/viewform",
 				target: "_blank"
 			}, ue._("Join Waitlist", null, {
@@ -2575,4 +2575,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.7e2ffe9ff30b61127f35.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.102b4d9a4d3abb1d933c.js.map

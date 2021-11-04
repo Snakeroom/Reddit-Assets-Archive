@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SpecialMembershipsGifsTooltip.1d4169638a2e00888f87.js
-// Retrieved at 10/27/2021, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SpecialMembershipsGifsTooltip.26be333b23c4514d9262.js
+// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SpecialMembershipsGifsTooltip"], {
 		"./src/reddit/components/RichTextEditor/media/GifTooltip/BaseTooltip.m.less": function(e, t, s) {
@@ -462,7 +462,7 @@
 					className: m.a.description
 				}, f._("Get a Special Membership to use GIFs in all of your comments {subredditName} .", [f._param("subredditName", `r/${e.subredditName}`)], {
 					hk: "dQagV"
-				})), o.a.createElement(d.r, {
+				})), o.a.createElement(d.s, {
 					className: m.a.unlockButton,
 					to: Object(l.a)(e.subredditName, e.correlationId)
 				}, o.a.createElement(h.a, {
@@ -576,4 +576,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SpecialMembershipsGifsTooltip.1d4169638a2e00888f87.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SpecialMembershipsGifsTooltip.26be333b23c4514d9262.js.map

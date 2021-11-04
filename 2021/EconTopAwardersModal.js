@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.a7af0ad0348a23c5ba81.js
-// Retrieved at 11/3/2021, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.f87be7f051e7272c7614.js
+// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconTopAwardersModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, r) {
@@ -578,7 +578,7 @@
 				onAddUserToQuickReplyList: f,
 				children: v
 			}) => {
-				return s.a.createElement(d.s, {
+				return s.a.createElement(d.t, {
 					onClick: t => {
 						if (b && b(t), e(), p === n.awardNotification) return f();
 						a(Object(l.b)(o))
@@ -1078,7 +1078,7 @@
 					className: ee.a.infoDesc
 				}, re._("Award publicly and your username will show up on this leaderboard!", null, {
 					hk: "3reZYa"
-				})), a.a.createElement(O.k, {
+				})), a.a.createElement(O.l, {
 					className: ee.a.cta,
 					onClick: P
 				}, a.a.createElement(C.a, {
@@ -2002,7 +2002,7 @@
 				let g = null;
 				_ || (g = e ? "user_hovercard" : "profile_overview");
 				const w = Object(a.useCallback)(() => h(Object(m.f)(e ? "user_hovercard" : "profile_overview", t)), [e, h, t]);
-				return s.a.createElement(u.s, {
+				return s.a.createElement(u.t, {
 					onClick: () => {
 						r ? (h(m.g), _ && E === b.a.notVoted && I(Object(i.db)(_))) : w();
 						const e = r ? "postify" : "copy";
@@ -2059,7 +2059,7 @@
 				isOwnProfile: n,
 				onClick: d
 			}) {
-				return a.a.createElement(o.s, {
+				return a.a.createElement(o.t, {
 					onClick: d,
 					isFullWidth: !0,
 					className: Object(s.a)(l.a.snoovatarButton, {
@@ -2432,16 +2432,16 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const m = (e, t, r) => null != r ? r : t ? e : o.b.Plain,
+			const m = (e, t, r) => null != r ? r : t ? e : o.c.Plain,
 				p = ({
 					border: e,
 					priority: t,
 					small: r,
 					...n
-				}) => s.a.createElement(o.s, u({}, n, {
-					priority: m(o.b.Primary, e, t),
+				}) => s.a.createElement(o.t, u({}, n, {
+					priority: m(o.c.Primary, e, t),
 					className: Object(l.a)(n.className, d.a.BaseButton),
-					size: r ? o.c.S : o.c.M
+					size: r ? o.d.S : o.d.M
 				})),
 				b = e => s.a.createElement(s.a.Fragment, null, s.a.createElement("span", {
 					className: d.a.UnsubscribeButtonDefault
@@ -2462,10 +2462,10 @@
 					priority: r,
 					small: n,
 					...a
-				}) => s.a.createElement(o.s, u({}, a, {
-					priority: m(o.b.Secondary, t, r),
+				}) => s.a.createElement(o.t, u({}, a, {
+					priority: m(o.c.Secondary, t, r),
 					className: Object(l.a)(a.className, d.a.BaseButton),
-					size: n ? o.c.S : o.c.M,
+					size: n ? o.d.S : o.d.M,
 					text: b(e)
 				}));
 			class v extends s.a.Component {
@@ -2704,4 +2704,4 @@
 		"./src/reddit/icons/fonts/commonStyles.m.less": function(e, t, r) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.a7af0ad0348a23c5ba81.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.f87be7f051e7272c7614.js.map

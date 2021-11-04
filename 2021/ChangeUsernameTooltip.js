@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChangeUsernameTooltip.5c7a1677c328a71b4ca0.js
-// Retrieved at 11/3/2021, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChangeUsernameTooltip.2965a9ae8035fa08d7b8.js
+// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChangeUsernameTooltip"], {
 		"./src/reddit/components/ChangeUsernameTooltip/index.m.less": function(e, n, t) {
@@ -65,12 +65,12 @@
 						className: m.a.usernamePrefix
 					}, "u/"), this.props.username), a.a.createElement("div", {
 						className: m.a.buttonWrapper
-					}, a.a.createElement(u.k, {
+					}, a.a.createElement(u.l, {
 						className: Object(c.a)(m.a.commonBtn, m.a.primaryBtn),
 						onClick: this.onChangeUsernameModalOpen
 					}, s.fbt._("Change Username", null, {
 						hk: "1nRhNE"
-					})), a.a.createElement(u.q, {
+					})), a.a.createElement(u.r, {
 						className: Object(c.a)(m.a.commonBtn, m.a.secondaryBtn),
 						onClick: this.onKeepUsernameModalOpen
 					}, s.fbt._("Keep Username", null, {
@@ -203,4 +203,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChangeUsernameTooltip.5c7a1677c328a71b4ca0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChangeUsernameTooltip.2965a9ae8035fa08d7b8.js.map

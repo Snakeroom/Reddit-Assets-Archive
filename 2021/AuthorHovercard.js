@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.a5d5a401558cd89df23c.js
-// Retrieved at 11/3/2021, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.521c1630f6a0d8de8c76.js
+// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/lib/delay/index.ts": function(e, t, n) {
@@ -898,7 +898,7 @@
 				onAddUserToQuickReplyList: f,
 				children: h
 			}) => {
-				return o.a.createElement(d.s, {
+				return o.a.createElement(d.t, {
 					onClick: t => {
 						if (p && p(t), e(), b === r.awardNotification) return f();
 						s(Object(l.b)(a))
@@ -1815,27 +1815,27 @@
 				className: d.a.bannerTitleContainer
 			}, l && o.a.createElement("h4", {
 				className: d.a.bannerTitle
-			}, l), n && o.a.createElement(a.s, {
+			}, l), n && o.a.createElement(a.t, {
 				onClick: u,
 				Icon: Object(i.b)("close_fill"),
 				className: Object(r.a)(d.a.closeIcon, d.a.closeButton),
-				size: a.c.XXS,
-				priority: a.b.Plain
+				size: a.d.XXS,
+				priority: a.c.Plain
 			})), s && o.a.createElement("p", {
 				className: d.a.bannerDescription
 			}, s), o.a.createElement("div", {
 				className: d.a.bannerButtonsContainer
-			}, c && o.a.createElement(a.s, {
+			}, c && o.a.createElement(a.t, {
 				text: c,
-				priority: a.b.Tertiary,
+				priority: a.c.Tertiary,
 				className: Object(r.a)(d.a.button, d.a.primaryButton),
-				size: a.c.XS,
+				size: a.d.XS,
 				onClick: m
-			}), t && o.a.createElement(a.s, {
+			}), t && o.a.createElement(a.t, {
 				text: t,
 				onClick: u,
-				priority: a.b.Plain,
-				size: a.c.XS,
+				priority: a.c.Plain,
+				size: a.d.XS,
 				className: Object(r.a)(d.a.button, d.a.closeButton)
 			})))
 		},
@@ -2645,7 +2645,7 @@
 				let C = null;
 				_ || (C = e ? "user_hovercard" : "profile_overview");
 				const O = Object(s.useCallback)(() => v(Object(m.f)(e ? "user_hovercard" : "profile_overview", t)), [e, v, t]);
-				return o.a.createElement(u.s, {
+				return o.a.createElement(u.t, {
 					onClick: () => {
 						n ? (v(m.g), _ && g === p.a.notVoted && I(Object(c.db)(_))) : O();
 						const e = n ? "postify" : "copy";
@@ -2702,7 +2702,7 @@
 				isOwnProfile: r,
 				onClick: d
 			}) {
-				return s.a.createElement(a.s, {
+				return s.a.createElement(a.t, {
 					onClick: d,
 					isFullWidth: !0,
 					className: Object(o.a)(l.a.snoovatarButton, {
@@ -3116,16 +3116,16 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const m = (e, t, n) => null != n ? n : t ? e : a.b.Plain,
+			const m = (e, t, n) => null != n ? n : t ? e : a.c.Plain,
 				b = ({
 					border: e,
 					priority: t,
 					small: n,
 					...r
-				}) => o.a.createElement(a.s, u({}, r, {
-					priority: m(a.b.Primary, e, t),
+				}) => o.a.createElement(a.t, u({}, r, {
+					priority: m(a.c.Primary, e, t),
 					className: Object(l.a)(r.className, d.a.BaseButton),
-					size: n ? a.c.S : a.c.M
+					size: n ? a.d.S : a.d.M
 				})),
 				p = e => o.a.createElement(o.a.Fragment, null, o.a.createElement("span", {
 					className: d.a.UnsubscribeButtonDefault
@@ -3146,10 +3146,10 @@
 					priority: n,
 					small: r,
 					...s
-				}) => o.a.createElement(a.s, u({}, s, {
-					priority: m(a.b.Secondary, t, n),
+				}) => o.a.createElement(a.t, u({}, s, {
+					priority: m(a.c.Secondary, t, n),
 					className: Object(l.a)(s.className, d.a.BaseButton),
-					size: r ? a.c.S : a.c.M,
+					size: r ? a.d.S : a.d.M,
 					text: p(e)
 				}));
 			class h extends o.a.Component {
@@ -3904,13 +3904,13 @@
 						hk: "27V2PG"
 					})), !t && o.a.createElement("div", {
 						className: b.a.emptyStateLoggedOutContainer
-					}, o.a.createElement(l.i, {
+					}, o.a.createElement(l.j, {
 						onClick: () => n(Object(d.i)())
 					}, r.fbt._("Log In", null, {
 						hk: "ZR3pC"
 					})), o.a.createElement("span", {
 						className: b.a.emptyStateDivider
-					}), o.a.createElement(l.i, {
+					}), o.a.createElement(l.j, {
 						onClick: () => n(Object(d.k)())
 					}, r.fbt._("Sign Up", null, {
 						hk: "3Jd0SI"
@@ -3999,4 +3999,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.a5d5a401558cd89df23c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.521c1630f6a0d8de8c76.js.map

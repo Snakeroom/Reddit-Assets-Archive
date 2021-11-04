@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeHovercardTooltip.b18fe0f2d231fa9f0803.js
-// Retrieved at 10/28/2021, 5:10:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeHovercardTooltip.46c471bda4e031b4072a.js
+// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumBadgeHovercardTooltip"], {
 		"./node_modules/lodash/flattenDeep.js": function(e, t, r) {
@@ -1012,7 +1012,7 @@
 					}, i.a.createElement(w.a, {
 						className: j.a.benefits,
 						subredditId: e.subredditId
-					})), i.a.createElement(I.m, {
+					})), i.a.createElement(I.n, {
 						className: j.a.link,
 						disabled: !e.subreddit,
 						to: Object(N.a)(t, r),
@@ -1039,7 +1039,7 @@
 					const t = e.correlationId || u()();
 					return i.a.createElement("footer", {
 						className: Object(m.a)(e.className, M.a.container)
-					}, i.a.createElement("div", null), i.a.createElement(I.k, {
+					}, i.a.createElement("div", null), i.a.createElement(I.l, {
 						onClick: r => {
 							r.stopPropagation(), e.sendEvent(e => ({
 								correlationId: t,
@@ -1065,7 +1065,7 @@
 					const t = e.correlationId || u()();
 					return i.a.createElement("footer", {
 						className: Object(m.a)(F.a.container, e.className)
-					}, i.a.createElement("div", null), i.a.createElement(I.k, {
+					}, i.a.createElement("div", null), i.a.createElement(I.l, {
 						onClick: r => {
 							r.stopPropagation(), e.sendEvent(e => ({
 								correlationId: t,
@@ -1096,7 +1096,7 @@
 				}))((function(e) {
 					return i.a.createElement("footer", {
 						className: Object(m.a)(e.className, U.a.container)
-					}, i.a.createElement("div", null), i.a.createElement(I.k, {
+					}, i.a.createElement("div", null), i.a.createElement(I.l, {
 						onClick: t => {
 							t.stopPropagation(), e.onOpen()
 						}
@@ -3014,4 +3014,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeHovercardTooltip.b18fe0f2d231fa9f0803.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeHovercardTooltip.46c471bda4e031b4072a.js.map

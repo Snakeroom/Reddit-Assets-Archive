@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NewCommunityProgress.eb6c0e8e24243702cbb4.js
-// Retrieved at 11/3/2021, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NewCommunityProgress.edf3dc7214c54328040e.js
+// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NewCommunityProgress"], {
 		"./src/lib/colors/constants.ts": function(C, e, t) {
@@ -1676,15 +1676,15 @@
 								style: t
 							},
 							A = !!(null == e ? void 0 : e.startsWith(j.a.redditUrl));
-						return e ? A ? l.a.createElement(V.s, CC({}, a, {
+						return e ? A ? l.a.createElement(V.t, CC({}, a, {
 							key: C.buttonText,
-							kind: V.a.InternalLink,
+							kind: V.b.InternalLink,
 							to: e
-						}), C.buttonText) : l.a.createElement(V.s, CC({}, a, {
+						}), C.buttonText) : l.a.createElement(V.t, CC({}, a, {
 							key: C.buttonText,
-							kind: V.a.ExternalLink,
+							kind: V.b.ExternalLink,
 							href: e
-						}), C.buttonText) : l.a.createElement(V.s, CC({}, a, {
+						}), C.buttonText) : l.a.createElement(V.t, CC({}, a, {
 							key: C.buttonText
 						}), C.buttonText)
 					}))))
@@ -1708,19 +1708,19 @@
 					className: r.a.modalMain
 				}, cC.fbt._("If you remove this task, you won’t be able to see it anymore.", null, {
 					hk: "ycdgz"
-				})), l.a.createElement(S.g, null, l.a.createElement(V.s, {
+				})), l.a.createElement(S.g, null, l.a.createElement(V.t, {
 					className: r.a.modalButton,
 					onClick: e,
-					priority: V.b.Secondary
+					priority: V.c.Secondary
 				}, cC.fbt._("Cancel", null, {
 					hk: "2TSLl5"
-				})), l.a.createElement(V.s, {
+				})), l.a.createElement(V.t, {
 					className: r.a.modalButton,
 					onClick: t,
-					priority: V.b.Secondary
+					priority: V.c.Secondary
 				}, cC.fbt._("Mark as complete", null, {
 					hk: "4kKkLF"
-				})), l.a.createElement(V.s, {
+				})), l.a.createElement(V.t, {
 					className: r.a.modalButton,
 					onClick: a
 				}, cC.fbt._("Remove", null, {
@@ -2104,4 +2104,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NewCommunityProgress.eb6c0e8e24243702cbb4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NewCommunityProgress.edf3dc7214c54328040e.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-CreatingTournamentBanner.ceb48a6ec531922e9e4d.js
-// Retrieved at 10/19/2021, 1:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-CreatingTournamentBanner.829289aefa466af59922.js
+// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction-CreatingTournamentBanner"], {
 		"./src/reddit/components/Econ/Prediction/CreatingTournamentBanner/index.m.less": function(e, t, n) {
@@ -55,7 +55,7 @@
 					className: x.a.description
 				}, p._("This may take up to a few minutes. No progress will be lost if you leave", null, {
 					hk: "3vuTHr"
-				})), s.a.createElement(c.k, {
+				})), s.a.createElement(c.l, {
 					className: Object(d.a)(x.a.button, x.a.reloadButton, {
 						[x.a.isLoading]: n
 					}),
@@ -75,4 +75,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-CreatingTournamentBanner.ceb48a6ec531922e9e4d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-CreatingTournamentBanner.829289aefa466af59922.js.map

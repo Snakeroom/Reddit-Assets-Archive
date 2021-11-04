@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/StructuredStyles.f60cb1d2eb7e3e15cd0d.js
-// Retrieved at 11/3/2021, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/StructuredStyles.c7f6d9498bc3d6a34c36.js
+// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["StructuredStyles", "FrontpageSidebar"], {
 		"./node_modules/linkify-it/index.js": function(e, t, n) {
@@ -2150,7 +2150,7 @@
 				Sn = n("./src/reddit/controls/Button/index.tsx"),
 				In = n("./src/reddit/components/StructuredStyles/Forms/WidgetColorPicker/index.m.less"),
 				wn = n.n(In);
-			const Dn = s.a.wrapped(Sn.q, "TertiaryButton", wn.a),
+			const Dn = s.a.wrapped(Sn.r, "TertiaryButton", wn.a),
 				Tn = Object(c.c)({
 					savedStructuredStyles: Y.k
 				});
@@ -6744,10 +6744,10 @@
 			}
 			const b = i.a.wrapped(m.a, "CloseIcon", p.a),
 				f = i.a.wrapped(u.a, "ThemedChevron", p.a),
-				E = i.a.wrapped(l.k, "Button", p.a),
-				x = i.a.wrapped(l.q, "TertiaryButton", p.a),
+				E = i.a.wrapped(l.l, "Button", p.a),
+				x = i.a.wrapped(l.r, "TertiaryButton", p.a),
 				v = i.a.div("SubFormTitle", p.a),
-				_ = i.a.wrapped(l.n, "SecondaryButton", p.a),
+				_ = i.a.wrapped(l.o, "SecondaryButton", p.a),
 				C = i.a.wrapped(x, "DeleteButton", p.a),
 				y = (i.a.section("ModalBody", p.a), i.a.header("ModalHeader", p.a), i.a.h2("ModalTitle", p.a), i.a.div("ModalMain", p.a), i.a.p("ModalText", p.a), i.a.footer("ModalFooter", p.a), e => r.a.createElement(c, g({}, e, {
 					className: Object(s.a)(p.a.ToggleInput, {
@@ -7830,11 +7830,11 @@
 					className: E.a.titleContainer
 				}, l.a.createElement("span", {
 					className: E.a.titleText
-				}, n), l.a.createElement(b.s, {
+				}, n), l.a.createElement(b.t, {
 					className: E.a.srCreationButton,
 					onClick: r,
-					priority: b.b.Plain,
-					size: b.c.XS
+					priority: b.c.Plain,
+					size: b.d.XS
 				}, a.fbt._("Create New", null, {
 					hk: "3WP7G4"
 				}))) : n && l.a.createElement("div", {
@@ -9255,4 +9255,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/StructuredStyles.f60cb1d2eb7e3e15cd0d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/StructuredStyles.c7f6d9498bc3d6a34c36.js.map

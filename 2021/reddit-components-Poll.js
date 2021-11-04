@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Poll.f87860fd622cd0833ae5.js
-// Retrieved at 11/3/2021, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Poll.fe2f526fdefa41e7fb14.js
+// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Poll"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, n) {
@@ -849,7 +849,7 @@
 						className: W.a.controlRow
 					}, i.a.createElement("div", {
 						className: W.a.buttonContainer
-					}, i.a.createElement(H.n, {
+					}, i.a.createElement(H.o, {
 						className: F.n,
 						disabled: this.props.voteInProgress || !this.props.userIsLoggedIn || !this.state.optionIsSelected,
 						type: "submit"
@@ -1711,4 +1711,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Poll.f87860fd622cd0833ae5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Poll.fe2f526fdefa41e7fb14.js.map

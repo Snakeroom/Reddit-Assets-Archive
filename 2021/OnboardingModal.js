@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OnboardingModal.5c4a9fcebb192b4de304.js
-// Retrieved at 11/3/2021, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OnboardingModal.4f49e2a6f8db8dcde7d3.js
+// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OnboardingModal"], {
 		"./node_modules/lodash/times.js": function(e, t, n) {
@@ -207,7 +207,7 @@
 			var C = n("./src/reddit/selectors/platform.ts"),
 				T = n("./src/reddit/selectors/user.ts"),
 				N = n("./src/redditGQL/operations/Frontpage.json");
-			const R = (e, t) => {
+			const P = (e, t) => {
 					var n, s;
 					const {
 						after: r,
@@ -240,7 +240,7 @@
 						ad: g.ad
 					}), r && (O.after = Object(a.a)(r)), O
 				},
-				P = async (e, t, n, s) => {
+				R = async (e, t, n, s) => {
 					const r = Date.now(),
 						o = await ((e, t) => Object(l.a)(e, {
 							...N,
@@ -426,7 +426,7 @@
 					t.correlationId = p;
 					const f = null === (a = null === (c = Object(C.b)(m)) || void 0 === c ? void 0 : c.routeMatch) || void 0 === a ? void 0 : a.route.chunk,
 						g = Object(T.K)(m),
-						O = await Object(u.i)(() => P(o.gqlContext(), R(m, t), Object(T.T)(m), t.statsdPathsForExperiments), {
+						O = await Object(u.i)(() => R(o.gqlContext(), P(m, t), Object(T.T)(m), t.statsdPathsForExperiments), {
 							name: "fetchFrontpageData",
 							isLoggedIn: g,
 							page: f
@@ -559,7 +559,7 @@
 								t && (f.clickUrl = t)
 							}
 							f.correlationId = r.listings.postOrder.correlationIds[u];
-							const g = () => P(s(), R(r, f), Object(T.T)(r), b),
+							const g = () => R(s(), P(r, f), Object(T.T)(r), b),
 								O = await g(),
 								j = {
 									...O.body,
@@ -752,9 +752,9 @@
 				C = n("./src/reddit/controls/Button/index.tsx"),
 				T = n("./src/reddit/icons/fonts/index.tsx"),
 				N = n("./src/reddit/components/Onboarding/AvatarPicker/AvatarPicker.m.less"),
-				R = n.n(N);
+				P = n.n(N);
 			const {
-				fbt: P
+				fbt: R
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 			var A = ({
 					avatarImage: e,
@@ -773,27 +773,27 @@
 							url: a
 						} = E.a;
 					return i.a.createElement("div", {
-						className: R.a.avatarPicker
+						className: P.a.avatarPicker
 					}, i.a.createElement("div", {
-						className: R.a.dynamicSizeWrapper
+						className: P.a.dynamicSizeWrapper
 					}, e ? i.a.createElement("img", {
 						"data-testid": "preview-image",
 						src: `data:image/png;base64,${encodeURIComponent(e)}`,
-						className: R.a.previewImage
+						className: P.a.previewImage
 					}) : i.a.createElement(y.a, {
-						className: R.a.loader
+						className: P.a.loader
 					}), i.a.createElement("div", {
-						className: R.a.legalTextContainer
+						className: P.a.legalTextContainer
 					}, r(), i.a.createElement("a", {
 						href: a,
-						className: R.a.learnMoreLink
-					}, c()))), i.a.createElement(C.s, {
-						className: R.a.randomizeButton,
-						priority: C.b.Secondary,
+						className: P.a.learnMoreLink
+					}, c()))), i.a.createElement(C.t, {
+						className: P.a.randomizeButton,
+						priority: C.c.Secondary,
 						onClick: s,
 						Icon: Object(T.b)("random"),
-						iconClassName: R.a.icon
-					}, P._("Randomize", null, {
+						iconClassName: P.a.icon
+					}, R._("Randomize", null, {
 						hk: "uwAa8"
 					})))
 				},
@@ -997,11 +997,11 @@
 					l = Object(o.useCallback)(() => {
 						a(Object(M.h)(!n, !s, c)), r(t)
 					}, [t, n, s, a, r, c]);
-				return i.a.createElement(C.s, {
+				return i.a.createElement(C.t, {
 					className: Object(d.a)($.a.InterestButton, {
 						[$.a.Selected]: n
 					}),
-					kind: C.a.Button,
+					kind: C.b.Button,
 					onClick: l,
 					style: se(e, n, s)
 				}, c)
@@ -1225,7 +1225,7 @@
 				})(e),
 				Te = n("./src/redditGQL/operations/InterestTopics.json"),
 				Ne = n("./src/redditGQL/operations/UpdateTopicPreferences.json");
-			const Re = async e => {
+			const Pe = async e => {
 				const t = await (e => {
 					const t = {
 						first: 500,
@@ -1242,7 +1242,7 @@
 				const n = t.body,
 					s = null == n ? void 0 : n.data.interestTopics;
 				return s ? Ce(s) : null
-			}, Pe = (e, t) => ((e, t) => Object(fe.a)(e, {
+			}, Re = (e, t) => ((e, t) => Object(fe.a)(e, {
 				...Ne,
 				variables: t
 			}))(e(), {
@@ -1299,7 +1299,7 @@
 				if (r.length && i.push(((e, t) => Object(ke.c)(e(), {
 						subredditIds: t,
 						subscribe: !0
-					}))(e, r)), o.length && i.push(Pe(t, o)), i.length) try {
+					}))(e, r)), o.length && i.push(Re(t, o)), i.length) try {
 					(await Promise.all(i)).some(({
 						ok: e
 					}) => !e) ? c.ok = !1 : c.reload = !0
@@ -1311,14 +1311,14 @@
 				const {
 					gqlContext: t,
 					apiContext: n
-				} = e, s = Object(c.d)(), r = Object(j.a)(), a = Object(c.e)(Fe.c), b = a === me.Oe.Enabled_noskip || a === me.Oe.Enabled_noskip_no_preselect, p = a === me.Oe.Enabled_noskip_no_preselect, [f, g] = Object(o.useState)(le.INTERESTS), [h, v] = Object(o.useState)([]), [y, I] = Object(o.useState)({}), [_, S] = Object(o.useState)(!1), [E, C] = Object(o.useState)([]), [T, N] = Object(o.useState)([]), [R, P] = Object(o.useState)({}), {
+				} = e, s = Object(c.d)(), r = Object(j.a)(), a = Object(c.e)(Fe.c), b = a === me.Pe.Enabled_noskip || a === me.Pe.Enabled_noskip_no_preselect, p = a === me.Pe.Enabled_noskip_no_preselect, [f, g] = Object(o.useState)(le.INTERESTS), [h, v] = Object(o.useState)([]), [y, I] = Object(o.useState)({}), [_, S] = Object(o.useState)(!1), [E, C] = Object(o.useState)([]), [T, N] = Object(o.useState)([]), [P, R] = Object(o.useState)({}), {
 					avatarImage: A,
 					fetchRandomAvatar: L,
 					saveAvatar: w
 				} = k();
 				Object(o.useEffect)(() => {
 					!async function() {
-						const e = await Re(t);
+						const e = await Pe(t);
 						e && v(e)
 					}()
 				}, [t]), Object(o.useEffect)(() => {
@@ -1329,7 +1329,7 @@
 								preSelectedCommunities: o,
 								recommendedCommunities: i
 							} = e;
-						r ? (P(o), N(i)) : s(Ve())
+						r ? (R(o), N(i)) : s(Ve())
 					}()
 				}, [n, s, t, p]);
 				const F = Object(c.e)(e => Object(Me.f)(e)),
@@ -1350,9 +1350,9 @@
 					}, [V, r]),
 					G = Object(o.useCallback)(async () => {
 						r(Object(M.e)()), L(), g(le.AVATAR);
-						const e = await Ge(n, t, R, y);
+						const e = await Ge(n, t, P, y);
 						e.ok ? e.reload && s(Object(l.frontpageReloaded)()) : s(Ve())
-					}, [n, s, L, t, R, y, r]),
+					}, [n, s, L, t, P, y, r]),
 					U = Object(o.useCallback)(() => {
 						g(le.CELEBRATION), B()
 					}, [B]),
@@ -1372,7 +1372,7 @@
 					}, [q, r, f, U]),
 					X = [le.COMMUNITIES, le.AVATAR].includes(f),
 					J = f === le.AVATAR || f === le.INTERESTS && !b,
-					H = Object.keys(R).length,
+					H = Object.keys(P).length,
 					Y = Object.keys(y).length,
 					$ = b && f === le.INTERESTS && Y < 3 || f === le.COMMUNITIES && H < 1;
 				return f === le.CELEBRATION || f === le.AVATAR && !Z ? i.a.createElement(x, null) : i.a.createElement("div", {
@@ -1419,9 +1419,9 @@
 					interests: h,
 					loadingCommunities: _,
 					recommendedCommunities: T,
-					selectedCommunities: R,
+					selectedCommunities: P,
 					selectedInterests: y,
-					setSelectedCommunities: P,
+					setSelectedCommunities: R,
 					setSelectedInterests: I
 				}), i.a.createElement("div", {
 					className: Object(d.a)(ae.a.continueButtonWrapper, {
@@ -1919,4 +1919,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.5c4a9fcebb192b4de304.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.4f49e2a6f8db8dcde7d3.js.map

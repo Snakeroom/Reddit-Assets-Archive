@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CrowdControlModal.2953c46c1d5b8cd79502.js
-// Retrieved at 11/3/2021, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CrowdControlModal.d55ead51275bb58bd224.js
+// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CrowdControlModal"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -889,7 +889,7 @@
 					last: e.last,
 					indent: e.indent,
 					disabled: e.disabled
-				}, o.a.createElement(z, null, o.a.createElement(M.a, null, o.a.createElement(Q, null, e.label)), o.a.createElement(V, null, e.subtext)), o.a.createElement(K, null, o.a.createElement(q, null, o.a.createElement(L.n, {
+				}, o.a.createElement(z, null, o.a.createElement(M.a, null, o.a.createElement(Q, null, e.label)), o.a.createElement(V, null, e.subtext)), o.a.createElement(K, null, o.a.createElement(q, null, o.a.createElement(L.o, {
 					onClick: e.onClick
 				}, e.actionText)))),
 				be = e => o.a.createElement(J, {
@@ -1379,7 +1379,7 @@
 						className: b.a.detailsContainer
 					}, t), d.a.createElement(p.a, {
 						className: b.a.buttonRow
-					}, d.a.createElement(u.k, {
+					}, d.a.createElement(u.l, {
 						className: b.a.confirmButton,
 						onClick: e.onConfirmed
 					}, r.fbt._("Ok", null, {
@@ -1734,4 +1734,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CrowdControlModal.2953c46c1d5b8cd79502.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CrowdControlModal.d55ead51275bb58bd224.js.map

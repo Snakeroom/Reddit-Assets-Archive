@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconManagement.2d8d7f0a8bf76e228b90.js
-// Retrieved at 10/5/2021, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconManagement.a8f2c07a674e243862f8.js
+// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconManagement"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, a, t) {
@@ -155,7 +155,7 @@
 						className: g.a.actionContainer
 					}, e.typename, " actions:", " ", s.a.createElement("div", {
 						className: g.a.buttonContainer
-					}, t.map(t => s.a.createElement(v.s, {
+					}, t.map(t => s.a.createElement(v.t, {
 						key: t.name,
 						className: g.a.actionButton,
 						onClick: () => (t => {
@@ -236,7 +236,7 @@
 								[e.name]: a
 							})
 						})(e, a.target.checked)
-					}))), s.a.createElement(v.s, {
+					}))), s.a.createElement(v.t, {
 						className: g.a.actionButton,
 						onClick: async () => {
 							u(!0), await l(Object(i.a)(t, a, o)), u(!1), n()
@@ -410,4 +410,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconManagement.2d8d7f0a8bf76e228b90.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconManagement.a8f2c07a674e243862f8.js.map

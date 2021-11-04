@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.4aee4353c64875f04d6d.js
-// Retrieved at 11/3/2021, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.e38a36d137345ea177eb.js
+// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~ChatPost"], {
 		"./node_modules/lodash/_baseReduce.js": function(e, t) {
@@ -74,7 +74,7 @@
 				defaultImage: e,
 				userId: t
 			}) => {
-				const n = Object(c.e)(h.y),
+				const n = Object(c.e)(h.z),
 					{
 						processingAvatarImageUrl: r
 					} = s.a;
@@ -1933,12 +1933,12 @@
 						rtJsonElementProps: o
 					});
 					switch (s) {
-						case b.De.SmIcon:
+						case b.Ee.SmIcon:
 							return r.a.createElement(h, {
 								subredditName: n,
 								rtJsonElementProps: o
 							});
-						case b.De.SmIconHc:
+						case b.Ee.SmIconHc:
 							return r.a.createElement(h, {
 								subredditName: n,
 								isHoverable: !0,
@@ -2002,7 +2002,7 @@
 						className: b.a.detailsContainer
 					}, t), d.a.createElement(h.a, {
 						className: b.a.buttonRow
-					}, d.a.createElement(m.k, {
+					}, d.a.createElement(m.l, {
 						className: b.a.confirmButton,
 						onClick: e.onConfirmed
 					}, s.fbt._("Ok", null, {
@@ -2323,12 +2323,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: s.xe
+						experimentName: s.ye
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.De.SmIcon || t === s.De.SmIconHc
+					return t === s.Ee.SmIcon || t === s.Ee.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -2351,4 +2351,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.4aee4353c64875f04d6d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.e38a36d137345ea177eb.js.map

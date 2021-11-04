@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.38a92b14a0ba81db72ca.js
-// Retrieved at 11/3/2021, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.df1020326523f799f9cf.js
+// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-PowerupsInFeedUnit-index-tsx"], {
 		"./src/reddit/actions/snoovatar.ts": function(e, t, s) {
@@ -384,15 +384,15 @@
 					rel: j.c
 				}, b()))), o.a.createElement("div", {
 					className: W.a.buttonsRow
-				}, o.a.createElement(U.s, {
+				}, o.a.createElement(U.t, {
 					className: W.a.button,
-					priority: U.b.Secondary,
+					priority: U.c.Secondary,
 					onClick: t
 				}, G._("Go Back", null, {
 					hk: "1EHXc5"
-				})), o.a.createElement(U.s, {
+				})), o.a.createElement(U.t, {
 					className: W.a.button,
-					priority: U.b.Primary,
+					priority: U.c.Primary,
 					onClick: async () => {
 						if (s(Object(d.n)()), !i) return;
 						const r = i.snoovatar,
@@ -470,8 +470,8 @@
 						src: `${E.a.assetPath}/img/powerups/communityGear/withoutLegs/${t}.png`
 					})), o.a.createElement("div", {
 						className: P.a.buttonWrapper
-					}, o.a.createElement(U.s, {
-						priority: U.b.Secondary,
+					}, o.a.createElement(U.t, {
+						priority: U.c.Secondary,
 						onClick: () => {
 							s(Object(d.m)()), (() => n(!0))()
 						},
@@ -986,4 +986,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.38a92b14a0ba81db72ca.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.df1020326523f799f9cf.js.map

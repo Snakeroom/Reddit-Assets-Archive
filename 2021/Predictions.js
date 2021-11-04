@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Predictions.0c4dcda094655aad629b.js
-// Retrieved at 11/3/2021, 1:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Predictions.da2fc0dfa350bc655488.js
+// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Predictions", "Powerups"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, a) {
@@ -532,14 +532,14 @@
 						text: n,
 						disabled: r
 					})
-				})), !r && !o && s.a.createElement(m.s, {
+				})), !r && !o && s.a.createElement(m.t, {
 					className: w.a.selectAllButton,
 					onClick: () => {
 						t(d ? [] : i.map(({
 							id: e
 						}) => e))
 					},
-					priority: m.b.Secondary,
+					priority: m.c.Secondary,
 					isFullWidth: !0
 				}, d ? f._("Deselect all", null, {
 					hk: "46i6br"
@@ -564,13 +564,13 @@
 				}) : S._("Turn on Powerups", null, {
 					hk: "AuDZE"
 				});
-				return s.a.createElement(m.j, {
+				return s.a.createElement(m.k, {
 					className: Object(l.a)(e, v.a.button, {
 						[v.a.loading]: n
 					}),
 					disabled: t || n,
 					onClick: a,
-					priority: m.b.Primary,
+					priority: m.c.Primary,
 					isFullWidth: !0
 				}, n ? s.a.createElement(E.a, {
 					sizePx: 12,
@@ -702,11 +702,11 @@
 					className: x.a.successText
 				}, P._("Let your community know about Powerups with a pinned post", null, {
 					hk: "3bII20"
-				})), s.a.createElement(m.s, {
+				})), s.a.createElement(m.t, {
 					className: x.a.successButton,
 					to: `/${i[0].displayText}/submit`,
-					kind: m.a.InternalLink,
-					priority: m.b.Primary,
+					kind: m.b.InternalLink,
+					priority: m.c.Primary,
 					isFullWidth: !0
 				}, P._("Spread the word", null, {
 					hk: "1f68Nj"
@@ -1047,11 +1047,11 @@
 				className: u.a.faqMoreQuestionsHeading
 			}, p._("Have more questions? We've got answers.", null, {
 				hk: "3Entyj"
-			})), s.a.createElement(c.s, {
+			})), s.a.createElement(c.t, {
 				className: u.a.fullFaqsButton,
-				priority: c.b.Secondary,
+				priority: c.c.Secondary,
 				href: "https://mods.reddithelp.com/hc/en-us/articles/4403699823629",
-				kind: c.a.ExternalLink,
+				kind: c.b.ExternalLink,
 				target: "_blank"
 			}, p._("View Full FAQs", null, {
 				hk: "1eOLlL"
@@ -1063,10 +1063,10 @@
 				className: u.a.faqTryOutSubheading
 			}, p._("Ok, you've made it to the bottom of the page. What do you think? Are Powerups for your community?", null, {
 				hk: "3062Vv"
-			})), s.a.createElement(c.j, {
+			})), s.a.createElement(c.k, {
 				onClick: e,
 				disabled: !(null == t ? void 0 : t.length),
-				priority: c.b.Primary,
+				priority: c.c.Primary,
 				className: u.a.ctaLetsDoThisButton
 			}, p._("Let's Do This!", null, {
 				hk: "6CnFH"
@@ -1460,10 +1460,10 @@
 					hk: "2euXqd"
 				})))], {
 					hk: "2FL5at"
-				})), s.a.createElement(m.j, {
+				})), s.a.createElement(m.k, {
 					onClick: w,
 					disabled: !(null == t ? void 0 : t.length),
-					priority: m.b.Primary,
+					priority: m.c.Primary,
 					className: M.a.ctaButton
 				}, W._("Turn on Powerups", null, {
 					hk: "4E97KH"
@@ -1748,7 +1748,7 @@
 								noun: "close"
 							}))()), n()
 						};
-						return s.a.createElement(f.j, {
+						return s.a.createElement(f.k, {
 							onClick: e,
 							isFullWidth: !0
 						}, y._("Close", null, {
@@ -1757,7 +1757,7 @@
 					}
 					return s.a.createElement("a", {
 						href: `${t}submit?type=${w.wb}`
-					}, s.a.createElement(f.j, {
+					}, s.a.createElement(f.k, {
 						onClick: () => {
 							const e = a.find(({
 								subredditUrl: e
@@ -1797,14 +1797,14 @@
 				className: O.a.headerImage,
 				alt: "Predictor Snoos",
 				src: `${n.a.assetPath}/img/econ/predictions/predictor_snoos.png`
-			}))), s.a.createElement(f.s, {
+			}))), s.a.createElement(f.t, {
 				"aria-label": N.fbt._("Close", null, {
 					hk: "26np07"
 				}),
 				className: O.a.closeButton,
 				Icon: Object(S.b)("close"),
 				onClick: t,
-				priority: f.b.Plain
+				priority: f.c.Plain
 			}), s.a.createElement("div", {
 				className: O.a.body
 			}, e));
@@ -2025,9 +2025,9 @@
 						className: V.a.faqMoreQuestionsHeading
 					}, N.fbt._("Have more questions? We've got answers.", null, {
 						hk: "3Entyj"
-					})), s.a.createElement(f.s, {
+					})), s.a.createElement(f.t, {
 						className: V.a.fullFaqsButton,
-						priority: f.b.Secondary,
+						priority: f.c.Secondary,
 						href: "https://mods.reddithelp.com/hc/en-us/articles/4409834282509",
 						onClick: () => {
 							e((() => e => ({
@@ -2037,7 +2037,7 @@
 								noun: "view_full_faqs"
 							}))())
 						},
-						kind: f.a.ExternalLink,
+						kind: f.b.ExternalLink,
 						target: "_blank"
 					}, N.fbt._("View Full FAQs", null, {
 						hk: "1eOLlL"
@@ -2161,7 +2161,7 @@
 					hk: "4tXdPf"
 				})))], {
 					hk: "kXZNE"
-				})), s.a.createElement(f.j, {
+				})), s.a.createElement(f.k, {
 					onClick: () => {
 						e((() => e => ({
 							...Object(g.defaults)(e),
@@ -2170,7 +2170,7 @@
 							noun: "start_predictions_modal"
 						}))()), m()
 					},
-					priority: f.b.Primary,
+					priority: f.c.Primary,
 					className: ee.a.ctaButton
 				}, te._("Turn on Predictions", null, {
 					hk: "2zU4Cm"
@@ -2249,7 +2249,7 @@
 					className: ee.a.tryOutSubheading
 				}, te._("Create a tournament and get your community predicting!", null, {
 					hk: "utApr"
-				})), s.a.createElement(f.j, {
+				})), s.a.createElement(f.k, {
 					onClick: () => {
 						e((() => e => ({
 							...Object(g.defaults)(e),
@@ -2258,7 +2258,7 @@
 							noun: "lets_do_this"
 						}))()), m()
 					},
-					priority: f.b.Primary,
+					priority: f.c.Primary,
 					className: ee.a.ctaLetsDoThisButton
 				}, te._("Let's Do This!", null, {
 					hk: "2rvUWV"
@@ -2325,4 +2325,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Predictions.0c4dcda094655aad629b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Predictions.da2fc0dfa350bc655488.js.map

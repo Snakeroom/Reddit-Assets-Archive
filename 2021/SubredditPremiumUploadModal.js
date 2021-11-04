@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumUploadModal.b4343c4b42d1bca524b9.js
-// Retrieved at 11/3/2021, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumUploadModal.8be3215ece17a334f95d.js
+// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumUploadModal"], {
 		"./src/reddit/components/Economics/SubredditPremium/UploadModal/ImageUpload/index.m.less": function(e, t, a) {
@@ -399,7 +399,7 @@
 					image: a,
 					name: s,
 					description: t
-				}) : r.a.createElement(ne, e)), r.a.createElement(m.g, null, r.a.createElement(g.k, {
+				}) : r.a.createElement(ne, e)), r.a.createElement(m.g, null, r.a.createElement(g.l, {
 					onClick: n
 				}, se._("Okay", null, {
 					hk: "406S0g"
@@ -740,7 +740,7 @@
 						onClick: this.closeModal
 					}, Ce._("Cancel", null, {
 						hk: "2TSLl5"
-					})), r.a.createElement(g.k, {
+					})), r.a.createElement(g.l, {
 						className: _e.a.submitButton,
 						disabled: !this.canSubmit(),
 						onClick: this.upload
@@ -1233,4 +1233,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumUploadModal.b4343c4b42d1bca524b9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumUploadModal.8be3215ece17a334f95d.js.map

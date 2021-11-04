@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.0636e69fdf9ca8302ccf.js
-// Retrieved at 11/3/2021, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.6e19fb3580ff7c45ed55.js
+// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceWalletRegistration"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -143,9 +143,9 @@
 			})), n.d(t, "t", (function() {
 				return x
 			})), n.d(t, "u", (function() {
-				return k
-			})), n.d(t, "v", (function() {
 				return y
+			})), n.d(t, "v", (function() {
+				return k
 			})), n.d(t, "w", (function() {
 				return N
 			})), n.d(t, "x", (function() {
@@ -171,8 +171,8 @@
 				g = "GOVERNANCE__TRANSFER_MODAL_OPENED",
 				_ = "GOVERNANCE__TRANSFER_PENDING",
 				x = "GOVERNANCE__TRANSFER_SUCCESS",
-				k = "GOVERNANCE__WALLETS_FETCH_FAILURE",
-				y = "GOVERNANCE__WALLETS_FETCH_PENDING",
+				y = "GOVERNANCE__WALLETS_FETCH_FAILURE",
+				k = "GOVERNANCE__WALLETS_FETCH_PENDING",
 				N = "GOVERNANCE__WALLETS_FETCH_SUCCESS",
 				O = "GOVERNANCE__WALLET_REGISTRATION_MODAL_OPENED"
 		},
@@ -200,7 +200,7 @@
 			})), n.d(t, "b", (function() {
 				return _
 			})), n.d(t, "c", (function() {
-				return k
+				return y
 			})), n.d(t, "f", (function() {
 				return j
 			})), n.d(t, "g", (function() {
@@ -232,8 +232,8 @@
 			const g = Object(s.a)(C.b),
 				_ = Object(s.a)(C.c),
 				x = Object(s.a)(C.e),
-				k = (Object(s.a)(C.f), Object(s.a)(C.g), Object(s.a)(C.h)),
-				y = Object(s.a)(C.i),
+				y = (Object(s.a)(C.f), Object(s.a)(C.g), Object(s.a)(C.h)),
+				k = Object(s.a)(C.i),
 				N = Object(s.a)(C.j),
 				O = Object(s.a)(C.k),
 				w = Object(s.a)(C.q),
@@ -283,7 +283,7 @@
 							} = c, t = s.posts.models[e];
 							t && t.voteState === f.a.notVoted && n(Object(i.db)(e))
 						}
-					} else n(y({
+					} else n(k({
 						pollId: e,
 						error: o.error || o.errors[0].message
 					})), Object(E.a)(n, o.error || o.errors[0].messsage)
@@ -615,7 +615,7 @@
 					style: {
 						backgroundImage: t
 					}
-				}), s.a.createElement(f.k, {
+				}), s.a.createElement(f.l, {
 					className: E.a.button,
 					onClick: e.onNextStep
 				}, g._("Start", null, {
@@ -626,9 +626,9 @@
 			}
 			var x = n("./src/reddit/icons/svgs/Link/index.tsx");
 			const {
-				fbt: k
+				fbt: y
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
-			class y extends s.a.Component {
+			class k extends s.a.Component {
 				componentDidMount() {
 					this.intervalId = window.setInterval(() => {
 						Object(l.d)() && (this.props.onNextStep(), window.clearInterval(this.intervalId))
@@ -645,11 +645,11 @@
 						className: E.a.text
 					}, s.a.createElement("div", {
 						className: E.a.header
-					}, k._("Connect Reddit to MetaMask", null, {
+					}, y._("Connect Reddit to MetaMask", null, {
 						hk: "1uL476"
 					})), s.a.createElement("div", {
 						className: E.a.body
-					}, k._("This will allow Reddit to see your wallet’s public key and allow Reddit to request your signature on messages and transactions.", null, {
+					}, y._("This will allow Reddit to see your wallet’s public key and allow Reddit to request your signature on messages and transactions.", null, {
 						hk: "1IBG48"
 					}))), s.a.createElement("div", {
 						className: E.a.cta
@@ -658,10 +658,10 @@
 						style: {
 							backgroundImage: e
 						}
-					}), s.a.createElement(f.n, {
+					}), s.a.createElement(f.o, {
 						className: E.a.button,
 						onClick: l.b
-					}, k._("Connect", null, {
+					}, y._("Connect", null, {
 						hk: "3rApnz"
 					}), s.a.createElement(x.a, {
 						className: E.a.buttonIcon
@@ -721,21 +721,21 @@
 						style: {
 							backgroundImage: n
 						}
-					}), t ? s.a.createElement(f.k, {
+					}), t ? s.a.createElement(f.l, {
 						className: E.a.button,
 						onClick: this.props.onNextStep
 					}, I._("Continue", null, {
 						hk: "4aMeJj"
 					}), s.a.createElement(v.a, {
 						className: E.a.buttonIcon
-					})) : e ? s.a.createElement(f.k, {
+					})) : e ? s.a.createElement(f.l, {
 						className: E.a.button,
 						onClick: j.a
 					}, I._("Reload page", null, {
 						hk: "14fa9z"
 					}), s.a.createElement(N.a, {
 						className: E.a.buttonIcon
-					})) : s.a.createElement(f.o, {
+					})) : s.a.createElement(f.p, {
 						className: E.a.button,
 						href: R,
 						target: "_blank",
@@ -797,7 +797,7 @@
 					style: {
 						backgroundImage: t
 					}
-				}), s.a.createElement(f.k, {
+				}), s.a.createElement(f.l, {
 					className: E.a.button,
 					onClick: () => {
 						var e, t;
@@ -900,7 +900,7 @@
 						onClick: this.toggleApprovalCheckbox
 					}, F.fbt._("I understand and agree to allow Reddit to publicly display my wallet address linked to my username", null, {
 						hk: "1fQEnc"
-					}))), s.a.createElement(f.n, {
+					}))), s.a.createElement(f.o, {
 						className: E.a.button,
 						onClick: this.runVerification,
 						disabled: !e
@@ -941,7 +941,7 @@
 					style: {
 						backgroundImage: t
 					}
-				}), s.a.createElement(f.n, {
+				}), s.a.createElement(f.o, {
 					className: E.a.button,
 					onClick: e.onNextStep
 				}, F.fbt._("Next", null, {
@@ -1089,7 +1089,7 @@
 						subredditId: r
 					} = this.props, {
 						activeTab: a
-					} = this.state, i = a === Y.About ? _ : a === Y.MetaMask ? M : a === Y.Wallet ? q : a === Y.Connect ? y : a === Y.Verify ? $ : L;
+					} = this.state, i = a === Y.About ? _ : a === Y.MetaMask ? M : a === Y.Wallet ? q : a === Y.Connect ? k : a === Y.Verify ? $ : L;
 					return s.a.createElement("article", {
 						className: Object(o.a)(Q.a.container, e)
 					}, s.a.createElement(J.a, {
@@ -1872,4 +1872,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.0636e69fdf9ca8302ccf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.6e19fb3580ff7c45ed55.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.00ee71180ed889c7e8ea.js
-// Retrieved at 11/3/2021, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.26420c5e8ec53187a4de.js
+// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"], {
 		"./src/lib/linkMatchers/index.ts": function(e, t, r) {
@@ -625,8 +625,8 @@
 				onClick: t
 			}) => {
 				const r = Object(i.e)(o.v);
-				return s.a.createElement(a.s, {
-					priority: a.b.Primary,
+				return s.a.createElement(a.t, {
+					priority: a.c.Primary,
 					className: e,
 					onClick: t,
 					isFullWidth: !0
@@ -929,8 +929,8 @@
 						}
 					}, i.a.createElement(l.b, {
 						supporter: e.data.supporter
-					}))))))), s && i.a.createElement(o.s, {
-						priority: o.b.Secondary,
+					}))))))), s && i.a.createElement(o.t, {
+						priority: o.c.Secondary,
 						className: c.a.expandButton,
 						onClick: r,
 						isFullWidth: !0
@@ -1820,7 +1820,7 @@
 					})
 				}
 				renderButton() {
-					return i.a.createElement(g.q, {
+					return i.a.createElement(g.r, {
 						className: k.a.flairFilterButton,
 						onMouseDown: this.trackFlairOverflowClick,
 						onClick: this.onToggleCollapse
@@ -2096,12 +2096,12 @@
 						button: t,
 						overrideColors: r
 					} = e, n = Object(h.a)(e).button;
-					return s.a.createElement(c.s, {
+					return s.a.createElement(c.t, {
 						className: k(t),
 						style: y(t, r, n),
 						isFullWidth: !0,
-						size: c.c.S,
-						priority: c.b.Secondary
+						size: c.d.S,
+						priority: c.c.Secondary
 					}, t.kind === g.k.Text && s.a.createElement("span", {
 						className: t.hoverState ? _.a.vanishingTextButtonText : void 0
 					}, t.text), t.hoverState && t.hoverState.kind === g.k.Text && s.a.createElement("span", {
@@ -2335,9 +2335,9 @@
 						title: I.fbt._("Moderators", null, {
 							hk: "3AMICc"
 						})
-					}, (r.mods && r.mods.length || n) && s.a.createElement(c.s, {
-						kind: c.a.InternalLink,
-						priority: c.b.Secondary,
+					}, (r.mods && r.mods.length || n) && s.a.createElement(c.t, {
+						kind: c.b.InternalLink,
+						priority: c.c.Secondary,
 						className: ge.a.MessageModsButton,
 						rel: ce.c,
 						target: ce.d.BLANK,
@@ -2866,4 +2866,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.00ee71180ed889c7e8ea.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.26420c5e8ec53187a4de.js.map

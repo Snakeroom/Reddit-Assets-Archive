@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReredditLink.d89d3daf5c8ab0e831ef.js
-// Retrieved at 10/5/2021, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReredditLink.da49ee0bbf081e92fdeb.js
+// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReredditLink"], {
 		"./src/reddit/components/Widgets/ReredditLink/ImageBlock/index.m.less": function(e, t, n) {
@@ -96,10 +96,10 @@
 						l = Object(r.useCallback)(() => {
 							i(Object(c.a)(n, e))
 						}, [n, e, i]);
-					return s.a.createElement(u.s, {
+					return s.a.createElement(u.t, {
 						className: b.a.Button,
 						href: `${o.a.redditUrl}/posts/${a}`,
-						kind: u.a.ExternalLink,
+						kind: u.b.ExternalLink,
 						onClick: l,
 						target: "_blank"
 					}, t)
@@ -152,4 +152,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReredditLink.d89d3daf5c8ab0e831ef.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReredditLink.da49ee0bbf081e92fdeb.js.map

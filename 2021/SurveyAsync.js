@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SurveyAsync.176f4e730accd1850b89.js
-// Retrieved at 10/28/2021, 5:10:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SurveyAsync.c6f9e0fc3b60c19d5251.js
+// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SurveyAsync"], {
 		"./src/reddit/components/CharacterCountdown/index.m.less": function(e, t, n) {
@@ -193,7 +193,7 @@
 					className: C.a.optionsWrapper
 				}, Array.from({
 					length: e === c.a.NPS ? 11 : 7
-				}).map((a, o) => s.a.createElement(f.n, {
+				}).map((a, o) => s.a.createElement(f.o, {
 					className: Object(u.a)(C.a.option, {
 						[C.a.isSelected]: t === o
 					}),
@@ -253,7 +253,7 @@
 					onNumberSelected: e
 				}), s.a.createElement(v, {
 					type: o.type
-				}), s.a.createElement(f.k, {
+				}), s.a.createElement(f.l, {
 					className: C.a.submitBtn,
 					onClick: t,
 					disabled: void 0 === n
@@ -279,7 +279,7 @@
 					className: C.a.characterCountdown,
 					text: o,
 					maxChars: 240
-				}), s.a.createElement(f.k, {
+				}), s.a.createElement(f.l, {
 					className: C.a.submitBtn,
 					onClick: t
 				}, a.fbt._("Done", null, {
@@ -329,8 +329,8 @@
 					onStepComplete: y,
 					uiStep: N,
 					setActiveStepNum: g,
-					setUIStep: k,
-					setIsFollowUp: O
+					setUIStep: O,
+					setIsFollowUp: k
 				} = Object(m.b)({
 					activeSurvey: e,
 					selectedNumber: d,
@@ -364,8 +364,8 @@
 					setIsSurveyDismissed: u,
 					setActiveStepNum: g,
 					setActiveSurvey: t,
-					setUIStep: k,
-					setIsFollowUp: O,
+					setUIStep: O,
+					setIsFollowUp: k,
 					shouldMount: T,
 					uiStep: N
 				}), -1 !== _ || n ? T ? s.a.createElement(s.a.Fragment, null, w && s.a.createElement(r.a, {
@@ -464,4 +464,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SurveyAsync.176f4e730accd1850b89.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SurveyAsync.c6f9e0fc3b60c19d5251.js.map

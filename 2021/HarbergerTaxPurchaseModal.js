@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/HarbergerTaxPurchaseModal.2b00b0f408865e92927e.js
-// Retrieved at 11/3/2021, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/HarbergerTaxPurchaseModal.6b00ab169e1125089125.js
+// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["HarbergerTaxPurchaseModal"], {
 		"./src/reddit/actions/economics/subredditPremium/actionCreators.ts": function(e, t, r) {
@@ -514,7 +514,7 @@
 					}, a.a.createElement(h.a, {
 						className: I.a.token,
 						subredditId: i
-					}), Object(m.a)(d)), a.a.createElement(x.k, {
+					}), Object(m.a)(d)), a.a.createElement(x.l, {
 						onClick: () => e.onPurchase({
 							subredditId: i,
 							currentPrice: d
@@ -962,4 +962,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/HarbergerTaxPurchaseModal.2b00b0f408865e92927e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/HarbergerTaxPurchaseModal.6b00ab169e1125089125.js.map

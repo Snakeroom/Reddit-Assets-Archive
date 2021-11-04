@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.e1479ef0a10d7e15a8db.js
-// Retrieved at 11/3/2021, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.425fa4c08815d2923919.js
+// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -1033,7 +1033,7 @@
 					className: x.a.StateContainer
 				}, i.a.createElement(y, null), i.a.createElement(I, null, n.fbt._("That comment is missing", null, {
 					hk: "1i1U0i"
-				})), i.a.createElement(u.m, {
+				})), i.a.createElement(u.n, {
 					to: Object(b.b)(e)
 				}, n.fbt._("View all comments", null, {
 					hk: "2CgaIx"
@@ -1056,7 +1056,7 @@
 					isLoggedOut: !1
 				}) : n.fbt._("Sorry, comments couldn't load!", null, {
 					hk: "2h6LDi"
-				})), i.a.createElement(u.k, {
+				})), i.a.createElement(u.l, {
 					onClick: t
 				}, n.fbt._("Retry", null, {
 					hk: "NOuNi"
@@ -2555,7 +2555,7 @@
 						key: "nextActiveCommentsSection",
 						ref: this._refNextActiveComments,
 						className: mo.a.ScrollerSection
-					}, this.state.chunks[this.state.activeChunkIndex + 1])), c.a.createElement(po, null, c.a.createElement(co.k, {
+					}, this.state.chunks[this.state.activeChunkIndex + 1])), c.a.createElement(po, null, c.a.createElement(co.l, {
 						className: o,
 						onClick: () => this.scrollToLastBottomChunk()
 					}, this.state.newCommentsCount, " ", te.fbt._({
@@ -3392,4 +3392,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.e1479ef0a10d7e15a8db.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.425fa4c08815d2923919.js.map

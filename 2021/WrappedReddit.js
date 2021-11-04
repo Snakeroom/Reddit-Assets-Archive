@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/WrappedReddit.4511a8bfffe3d980c282.js
-// Retrieved at 10/28/2021, 5:10:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/WrappedReddit.db16ffc6d2f243d8967f.js
+// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["WrappedReddit"], {
 		"./src/reddit/pages/WrappedReddit/Carousel/index.m.less": function(e, t, a) {
@@ -196,15 +196,15 @@
 					className: g.a.carousel
 				}, i.a.createElement("div", {
 					className: g.a.buttonsWrapper
-				}, i.a.createElement(n.j, {
+				}, i.a.createElement(n.k, {
 					className: g.a.ctaButton,
-					priority: n.b.Primary,
+					priority: n.c.Primary,
 					onClick: w
 				}, I._("Share", null, {
 					hk: "2JaG4S"
-				})), k && i.a.createElement(n.j, {
+				})), k && i.a.createElement(n.k, {
 					className: g.a.ctaButton,
-					priority: n.b.Primary,
+					priority: n.c.Primary,
 					onClick: () => {
 						const e = u + 1 === v;
 						e && s(f ? 1 : p + 1), l(e ? 0 : u + 1)
@@ -471,4 +471,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/WrappedReddit.4511a8bfffe3d980c282.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/WrappedReddit.db16ffc6d2f243d8967f.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.6ce19a973433082eabdb.js
-// Retrieved at 11/3/2021, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.0c56ca06f822f7c905ac.js
+// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "AchievementsActions", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -1800,11 +1800,11 @@
 						className: n,
 						isContributorRequestPending: s
 					} = this.props;
-					return i.a.createElement(u.s, {
-						priority: e === b.b.ContentGate ? u.b.Secondary : u.b.Primary,
+					return i.a.createElement(u.t, {
+						priority: e === b.b.ContentGate ? u.c.Secondary : u.c.Primary,
 						className: Object(a.a)(t ? null : h.a.RequestButton, n),
 						onClick: this.onRequest,
-						size: t ? u.c.S : u.c.M,
+						size: t ? u.d.S : u.d.M,
 						disabled: s
 					}, s ? r.fbt._("Request Pending", null, {
 						hk: "hVswi"
@@ -1867,7 +1867,7 @@
 				userIsSuspended: c,
 				onClick: l
 			}) => {
-				return i.a.createElement(p.s, {
+				return i.a.createElement(p.t, {
 					className: e,
 					disabled: c || d,
 					onClick: e => {
@@ -1875,7 +1875,7 @@
 					},
 					onMouseEnter: n,
 					onMouseLeave: s,
-					priority: p.b.Secondary,
+					priority: p.c.Secondary,
 					id: E,
 					isFullWidth: !0
 				}, r.fbt._("Create Community", null, {
@@ -2864,7 +2864,7 @@
 					...d
 				}) => {
 					const c = `${Object(w.a)(a)||"/"}submit`;
-					return i.a.createElement(k.m, P({}, d, {
+					return i.a.createElement(k.n, P({}, d, {
 						onClick: e => {
 							o(e => ({
 								action: "click",
@@ -2938,7 +2938,7 @@
 						ref: this.setTextRef
 					}, t || o, e), s && r && i.a.createElement("div", {
 						className: J.a.showMore
-					}, "...", i.a.createElement(k.q, {
+					}, "...", i.a.createElement(k.r, {
 						className: J.a.showFullDescriptionButton,
 						onClick: this.showFullDescription
 					}, K._("MORE", null, {
@@ -3111,7 +3111,7 @@
 				Te = n.n(ve);
 			const {
 				fbt: Se
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), Ie = z.a.div("FlairSettingsContainer", Te.a), Oe = z.a.div("FlairPreviewWrapper", Te.a), je = z.a.div("PreviewTitle", Te.a), ke = z.a.wrapped(k.q, "TertiaryButton", Te.a), we = z.a.wrapped(ke, "IconButton", Te.a), Fe = Object(m.c)({
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), Ie = z.a.div("FlairSettingsContainer", Te.a), Oe = z.a.div("FlairPreviewWrapper", Te.a), je = z.a.div("PreviewTitle", Te.a), ke = z.a.wrapped(k.r, "TertiaryButton", Te.a), we = z.a.wrapped(ke, "IconButton", Te.a), Fe = Object(m.c)({
 				currentUser: N.k,
 				isAchievementFlairModalEnabled: (e, t) => Object(xe.h)(e, {
 					subredditId: t.subredditId
@@ -3213,7 +3213,7 @@
 				ft = n("./src/reddit/helpers/trackers/idCard.ts"),
 				ht = n("./src/reddit/components/IdCard/CommunityOptions/index.m.less"),
 				_t = n.n(ht);
-			const gt = z.a.wrapped(k.s, "TertiaryButton", _t.a),
+			const gt = z.a.wrapped(k.t, "TertiaryButton", _t.a),
 				Et = Object(m.c)({
 					stylesDisabledForSubreddit: N.jb,
 					stylesDisabledGlobally: N.kb
@@ -3268,8 +3268,8 @@
 						className: _t.a.container,
 						onClick: this.onContainerClick
 					}, i.a.createElement(gt, {
-						kind: k.a.Button,
-						priority: k.b.Plain,
+						kind: k.b.Button,
+						priority: k.c.Plain,
 						isFullWidth: !0,
 						className: Object(p.a)(_t.a.expandButton, {
 							[_t.a.redditStyle]: e
@@ -3430,7 +3430,7 @@
 						}), b && this.renderCreatePostButtons(), t && !o && !s && !a && i.a.createElement(O.a, {
 							className: jt.a.CreateCommunityButton,
 							eventSource: "id_card"
-						}), m && i.a.createElement(k.p, {
+						}), m && i.a.createElement(k.q, {
 							className: jt.a.VisitCommunityButton,
 							onClick: this.handleVisitCommunityClick,
 							to: a.url
@@ -4347,16 +4347,16 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const m = (e, t, n) => null != n ? n : t ? e : o.b.Plain,
+			const m = (e, t, n) => null != n ? n : t ? e : o.c.Plain,
 				p = ({
 					border: e,
 					priority: t,
 					small: n,
 					...r
-				}) => i.a.createElement(o.s, u({}, r, {
-					priority: m(o.b.Primary, e, t),
+				}) => i.a.createElement(o.t, u({}, r, {
+					priority: m(o.c.Primary, e, t),
 					className: Object(l.a)(r.className, c.a.BaseButton),
-					size: n ? o.c.S : o.c.M
+					size: n ? o.d.S : o.d.M
 				})),
 				b = e => i.a.createElement(i.a.Fragment, null, i.a.createElement("span", {
 					className: c.a.UnsubscribeButtonDefault
@@ -4377,10 +4377,10 @@
 					priority: n,
 					small: r,
 					...s
-				}) => i.a.createElement(o.s, u({}, s, {
-					priority: m(o.b.Secondary, t, n),
+				}) => i.a.createElement(o.t, u({}, s, {
+					priority: m(o.c.Secondary, t, n),
 					className: Object(l.a)(s.className, c.a.BaseButton),
-					size: r ? o.c.S : o.c.M,
+					size: r ? o.d.S : o.d.M,
 					text: b(e)
 				}));
 			class h extends i.a.Component {
@@ -4676,7 +4676,7 @@
 				a = n("./src/reddit/controls/ToggleSwitch/index.m.less"),
 				d = n.n(a);
 			t.a = Object(r.memo)(Object(r.forwardRef)((e, t) => {
-				const n = e.size || o.c.XS;
+				const n = e.size || o.d.XS;
 				return s.a.createElement("button", {
 					"aria-checked": e.on,
 					className: Object(i.a)(d.a.toggleSwitch, e.className, d.a[n], {
@@ -5799,4 +5799,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.6ce19a973433082eabdb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.0c56ca06f822f7c905ac.js.map

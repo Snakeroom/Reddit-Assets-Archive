@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.e20576a33e71466cdb3f.js
-// Retrieved at 11/3/2021, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.836caa6d35ca7354a8a1.js
+// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd", "FrontpageSidebar"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, r) {
@@ -1413,7 +1413,7 @@
 			r.d(t, "b", (function() {
 				return P
 			})), r.d(t, "a", (function() {
-				return q
+				return Y
 			}));
 			var n = r("./node_modules/polished/dist/polished.es.js"),
 				s = r("./node_modules/react/index.js"),
@@ -1487,7 +1487,7 @@
 			}! function(e) {
 				e[e.ExtraLarge = 0] = "ExtraLarge", e[e.Large = 1] = "Large", e[e.Medium = 2] = "Medium", e[e.Small = 3] = "Small", e[e.ExtraSmall = 4] = "ExtraSmall"
 			}(P || (P = {}));
-			const q = ({
+			const Y = ({
 					size: e,
 					titleColor: t,
 					titleType: r,
@@ -1528,7 +1528,7 @@
 						type: r
 					}, s) : s)
 				},
-				Y = ({
+				q = ({
 					className: e,
 					disableVisited: t,
 					titleColor: r,
@@ -1557,7 +1557,7 @@
 						pageLayer: t
 					}),
 					shouldOpenPostInNewTab: N.db,
-					isTournamentPredictionPostV2: L.u
+					isTournamentPredictionPostV2: L.v
 				}),
 				X = e => {
 					const {
@@ -1565,7 +1565,7 @@
 						subreddit: r
 					} = e, {
 						isSponsored: n
-					} = t, s = Object(B.a)(), i = Object(G.a)(m.Sc) === m.Xc.Enabled;
+					} = t, s = Object(B.a)(), i = Object(G.a)(m.Tc) === m.Yc.Enabled;
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return o.a.createElement(K, {
 						nowrap: e.nowrap
 					}, o.a.createElement(Z, e));
@@ -1590,7 +1590,7 @@
 								postId: e.id,
 								source: r
 							}, o.a.createElement(Z, t)) : o.a.createElement(Z, t)
-						})(t, e) : o.a.createElement(Y, {
+						})(t, e) : o.a.createElement(q, {
 							className: e.titleLinkClassName,
 							"data-click-id": "body",
 							disableVisited: e.disableVisited,
@@ -1611,7 +1611,7 @@
 						return e.length >= 250 ? e.slice(0, 250 - "...".length) + "..." : e
 					})(s));
 					const i = e.isCommentsPage ? M.a.PostComments : M.a.PostItem;
-					return o.a.createElement(q, {
+					return o.a.createElement(Y, {
 						className: e.titleClassName,
 						nowrap: e.nowrap,
 						redditStyle: e.redditStyle || e.isCommentsPage,
@@ -1873,8 +1873,8 @@
 				V = m.a.div("TopLine", N.a),
 				z = m.a.wrapped(c.c, "PostTitle", N.a),
 				W = m.a.div("PostMediaWrapper", N.a),
-				q = m.a.div("BackgroundWrapper", N.a),
-				Y = m.a.wrapped(h.a, "PostContainer", N.a),
+				Y = m.a.div("BackgroundWrapper", N.a),
+				q = m.a.wrapped(h.a, "PostContainer", N.a),
 				K = 640,
 				Q = e => Object(S.a)(e.title, 100),
 				X = e => {
@@ -1917,7 +1917,7 @@
 						})
 					}, l = o.a.createElement(M, {
 						post: e
-					})) : (i = B, l = o.a.createElement(q, {
+					})) : (i = B, l = o.a.createElement(Y, {
 						style: Z(this.props)
 					}, o.a.createElement(V, null, o.a.createElement(D, {
 						tooltipType: s ? d.c.Lightbox : void 0,
@@ -1939,7 +1939,7 @@
 						post: e,
 						availableWidth: K,
 						shouldLoad: !0
-					})))), o.a.createElement(i, m, o.a.createElement(Y, {
+					})))), o.a.createElement(i, m, o.a.createElement(q, {
 						className: t,
 						isOverlay: s,
 						post: e,
@@ -4000,4 +4000,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.e20576a33e71466cdb3f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.836caa6d35ca7354a8a1.js.map

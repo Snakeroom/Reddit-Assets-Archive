@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.00f4089204bc4a76ce8a.js
-// Retrieved at 11/3/2021, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.7baa4d105cb65305ee9c.js
+// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -954,10 +954,10 @@
 						name: "notification_frequent",
 						className: O.a.notificationIcon,
 						isFilled: !0
-					})), r.a.createElement(I.s, {
+					})), r.a.createElement(I.t, {
 						className: O.a.subscribeButton,
-						priority: I.b.Primary,
-						size: I.c.M,
+						priority: I.c.Primary,
+						size: I.d.M,
 						text: v.fbt._("Get updates", null, {
 							hk: "3Ntvs6"
 						}),
@@ -1298,7 +1298,7 @@
 				const i = h._("Start Chatting", null, {
 					hk: "3KfdZ4"
 				});
-				return r.a.createElement(c.s, {
+				return r.a.createElement(c.t, {
 					className: b.a.button,
 					text: i,
 					Icon: t ? l.a : void 0,
@@ -2506,7 +2506,7 @@
 				let E = null;
 				y || (E = e ? "user_hovercard" : "profile_overview");
 				const k = Object(r.useCallback)(() => g(Object(m.f)(e ? "user_hovercard" : "profile_overview", t)), [e, g, t]);
-				return i.a.createElement(u.s, {
+				return i.a.createElement(u.t, {
 					onClick: () => {
 						s ? (g(m.g), y && v === b.a.notVoted && x(Object(d.db)(y))) : k();
 						const e = s ? "postify" : "copy";
@@ -3971,7 +3971,7 @@
 				}) => a.a.createElement("div", {
 					className: Object(n.a)(e, m.a.container),
 					style: s
-				}, a.a.createElement(l.k, {
+				}, a.a.createElement(l.l, {
 					className: m.a.button,
 					onClick: () => b(t)
 				}, p._("Back to Top", null, {
@@ -4363,12 +4363,12 @@
 						rtJsonElementProps: i
 					});
 					switch (n) {
-						case h.De.SmIcon:
+						case h.Ee.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: i
 							});
-						case h.De.SmIconHc:
+						case h.Ee.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -4620,7 +4620,7 @@
 						showSubredditMeta: !1,
 						showSubredditName: Object(_.a)(Object(T.g)(s)),
 						trendingPost: f
-					})), x.map(this.renderSmallPost), e, y.map(this.renderSmallPost), d && a.a.createElement(N.q, {
+					})), x.map(this.renderSmallPost), e, y.map(this.renderSmallPost), d && a.a.createElement(N.r, {
 						className: $.a.SeeMore,
 						onClick: this.showMorePosts
 					}, n || ee._("See More", null, {
@@ -4885,7 +4885,7 @@
 						className: qe.a.unchecked
 					}), n.fbt._("Customize colors", null, {
 						hk: "40coBA"
-					})), a.a.createElement(N.p, {
+					})), a.a.createElement(N.q, {
 						to: `/r/${i}?styling=true`,
 						className: qe.a.button,
 						onClick: this.customizeAppearance
@@ -5234,10 +5234,10 @@
 					useTertiaryButton: e.useTertiaryButton,
 					showTertiaryButtonOnHover: e.showTertiaryButtonOnHover,
 					onTertiaryButtonClick: e.onTertiaryButtonClick
-				})))), e.bottomButtonText && e.onBottomButtonClick && i.a.createElement(f.s, {
+				})))), e.bottomButtonText && e.onBottomButtonClick && i.a.createElement(f.t, {
 					className: C.a.bottomButton,
-					kind: f.a.Button,
-					priority: f.b.Plain,
+					kind: f.b.Button,
+					priority: f.c.Plain,
 					onClick: e.onBottomButtonClick
 				}, e.bottomButtonText)))),
 				j = Object(d.c)({
@@ -5287,7 +5287,7 @@
 				}))), e.useTertiaryButton && e.tertiaryButtonText && e.onTertiaryButtonClick ? e.isLoading ? i.a.createElement(_.a, {
 					className: Object(c.a)(C.a.communityCta, C.a.smallLoadingIcon),
 					sizePx: 12
-				}) : i.a.createElement(f.s, {
+				}) : i.a.createElement(f.t, {
 					className: Object(c.a)(C.a.communityCta, {
 						[C.a.showOnHover]: e.showTertiaryButtonOnHover
 					}),
@@ -5505,7 +5505,7 @@
 						style: {
 							maxHeight: this.state.isTruncated ? u : "none"
 						}
-					}, e), this.state.isTruncated && r.a.createElement(m.q, {
+					}, e), this.state.isTruncated && r.a.createElement(m.r, {
 						className: w.a.seeMore,
 						onClick: this.handleSeeMoreClick
 					}, O._("See More", null, {
@@ -6158,12 +6158,12 @@
 				d = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: n.xe
+						experimentName: n.ye
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === n.De.SmIcon || t === n.De.SmIconHc
+					return t === n.Ee.SmIcon || t === n.Ee.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -6186,4 +6186,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.00f4089204bc4a76ce8a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.7baa4d105cb65305ee9c.js.map

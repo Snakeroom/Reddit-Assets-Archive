@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.3679a7d5e935317a21fb.js
-// Retrieved at 11/3/2021, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.853b4725df5a0f3a6e9b.js
+// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki~reddit-components-Wiki-ModHubWikiManagement"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, i) {
@@ -674,20 +674,20 @@
 					}, o.a.createElement("div", {
 						ref: this.reasonElementRef,
 						className: O.a.reasonText
-					}, a.reason), !m && o.a.createElement(b.h, {
+					}, a.reason), !m && o.a.createElement(b.i, {
 						className: O.a.moreButton,
 						onClick: this.onShowMoreButtonClick
 					}, n.fbt._("more", null, {
 						hk: "2IGYPS"
 					})))), o.a.createElement("td", null, o.a.createElement("div", {
 						className: O.a.buttons
-					}, o.a.createElement(b.r, {
+					}, o.a.createElement(b.s, {
 						className: O.a.viewButton,
 						onClick: this.onViewClick,
 						to: h
 					}, n.fbt._("View", null, {
 						hk: "4imNnh"
-					})), g && o.a.createElement(o.a.Fragment, null, o.a.createElement(b.q, {
+					})), g && o.a.createElement(o.a.Fragment, null, o.a.createElement(b.r, {
 						className: O.a.hideShowButton,
 						disabled: this.state.isHideRequestPending,
 						onClick: this.onToggleHiddenClick
@@ -695,7 +695,7 @@
 						hk: "3YKyhU"
 					}) : n.fbt._("Hide", null, {
 						hk: "30nwHP"
-					})), o.a.createElement(b.q, {
+					})), o.a.createElement(b.r, {
 						className: O.a.revertButton,
 						onClick: this.onRevertClick
 					}, n.fbt._("Revert", null, {
@@ -839,7 +839,7 @@
 						className: O.a.content
 					}, !a && o.a.createElement("div", {
 						className: O.a.compareBar
-					}, o.a.createElement(b.r, {
+					}, o.a.createElement(b.s, {
 						className: O.a.compareButton,
 						disabled: g.length < 2,
 						onClick: this.onCompareClick,
@@ -1448,7 +1448,7 @@
 						onClick: this.props.onCancel
 					}, n.fbt._("Cancel", null, {
 						hk: "2TSLl5"
-					})), o.a.createElement(M.k, {
+					})), o.a.createElement(M.l, {
 						onClick: this.onSaveButtonClick,
 						disabled: e
 					}, e ? o.a.createElement(D.a, {
@@ -1617,12 +1617,12 @@
 							className: Object(d.a)(this.props.topBarClassName, Y.a.topBar, {
 								[Y.a.modHubTopBarExp]: e
 							})
-						}, o.a.createElement(M.n, {
+						}, o.a.createElement(M.o, {
 							onClick: this.onCancel,
 							disabled: l
 						}, n.fbt._("Cancel", null, {
 							hk: "2TSLl5"
-						})), o.a.createElement(M.k, {
+						})), o.a.createElement(M.l, {
 							disabled: !v,
 							onClick: this.showRevisionReasonModal
 						}, n.fbt._("Save", null, {
@@ -1930,12 +1930,12 @@
 						revision: i.revision
 					}), a.a.createElement("div", {
 						className: M.a.flexSpacer
-					}), u && a.a.createElement(b.p, {
+					}), u && a.a.createElement(b.q, {
 						className: M.a.button,
 						to: `/r/${r}/about/wiki/settings/${o}`
 					}, n.fbt._("Page settings", null, {
 						hk: "2IAvWU"
-					})), l && m && a.a.createElement(b.m, {
+					})), l && m && a.a.createElement(b.n, {
 						className: M.a.button,
 						to: Object(s.c)(f, {
 							[h.a]: !0
@@ -1984,11 +1984,11 @@
 					title: c
 				} = e;
 				let l = null;
-				return i && t ? l = n.createElement(s.m, {
+				return i && t ? l = n.createElement(s.n, {
 					className: a.a.button,
 					onClick: e.onButtonClick,
 					to: t
-				}, i) : i && d && (l = n.createElement(s.k, {
+				}, i) : i && d && (l = n.createElement(s.l, {
 					className: a.a.button,
 					onClick: e.onButtonClick
 				}, i)), n.createElement("div", {
@@ -2059,7 +2059,7 @@
 				} = e;
 				return s.a.createElement("div", {
 					className: Object(o.a)(n, d.a.container)
-				}, r, i && t && s.a.createElement(a.r, {
+				}, r, i && t && s.a.createElement(a.s, {
 					className: d.a.linkButton,
 					to: t
 				}, i))
@@ -2157,4 +2157,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.3679a7d5e935317a21fb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.853b4725df5a0f3a6e9b.js.map

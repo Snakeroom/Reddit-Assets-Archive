@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.0012e6631a9271cd526b.js
-// Retrieved at 11/3/2021, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.43e534e61af82f9dbb93.js
+// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8"], {
 		"./src/reddit/actions/economics/subredditPremium/actionCreators.ts": function(e, t, r) {
@@ -868,14 +868,14 @@
 							hk: "24QeOL"
 						}), h.b.SuccessAward))), e.onClose()
 					},
-					m = o.a.createElement(o.a.Fragment, null, o.a.createElement(Ie.n, {
+					m = o.a.createElement(o.a.Fragment, null, o.a.createElement(Ie.o, {
 						onClick: () => {
 							t(Object(x.clickReportAward)(e.award, e.thing.id)), i(ye.REPORT_COMMUNITY_AWARD)
 						},
 						className: Ce.a.reportStepButton
 					}, s.fbt._("This community award violates Reddit's rules.", null, {
 						hk: "2ObuGq"
-					})), o.a.createElement(Ie.n, {
+					})), o.a.createElement(Ie.o, {
 						onClick: () => {
 							t(Object(x.clickFlagAwardUsage)(e.award, e.thing.id)), i(ye.FLAG_USAGE)
 						},
@@ -1885,7 +1885,7 @@
 						showTimestamp: B = !0,
 						subredditOrProfile: M,
 						tooltipType: L
-					} = e, R = Object(o.d)(), H = Object(f.a)(), D = Object(o.e)(Z.a), G = Object(o.e)(te.d), Q = Object(o.e)(te.g) || ["popular", "all"].includes(G || ""), q = !(!v.isSponsored || !D || Object(l.bf)(D));
+					} = e, R = Object(o.d)(), H = Object(f.a)(), D = Object(o.e)(Z.a), G = Object(o.e)(te.d), Q = Object(o.e)(te.g) || ["popular", "all"].includes(G || ""), q = !(!v.isSponsored || !D || Object(l.cf)(D));
 					Object(s.useEffect)(() => {
 						q && R(Object(p.d)(v.author))
 					}, []);
@@ -2872,13 +2872,13 @@
 						experimentEligibilitySelector: o.K,
 						experimentName: s.nc
 					});
-					return !(!t || Object(s.bf)(t))
+					return !(!t || Object(s.cf)(t))
 				},
 				i = e => {
 					return Object(n.c)(e, {
 						experimentEligibilitySelector: o.K,
 						experimentName: s.nc
-					}) === s.Nc.ListingEnabled
+					}) === s.Oc.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/gold/topAwarded.ts": function(e, t, r) {
@@ -2938,4 +2938,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.0012e6631a9271cd526b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.43e534e61af82f9dbb93.js.map

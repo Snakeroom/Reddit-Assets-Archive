@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Settings-CreatePasswordSSOModal.3524a2c584b4b94452d2.js
-// Retrieved at 11/3/2021, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Settings-CreatePasswordSSOModal.e95fbd10996bf172806b.js
+// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Settings-CreatePasswordSSOModal"], {
 		"./src/reddit/components/EmailCollection/Envelope/index.m.less": function(e, t, s) {
@@ -75,7 +75,7 @@
 					})
 				}, a.a.createElement("div", {
 					className: h.a.buttonWrapper
-				}, a.a.createElement(b.k, {
+				}, a.a.createElement(b.l, {
 					className: Object(m.a)(h.a.commonBtn, h.a.primaryBtn),
 					onClick: e.onClose,
 					redditStyle: !0
@@ -100,14 +100,14 @@
 					title: e.title
 				}, a.a.createElement("div", {
 					className: h.a.buttonWrapper
-				}, a.a.createElement(b.n, {
+				}, a.a.createElement(b.o, {
 					onClick: () => {
 						t(Object(v.b)("cancel")), e.onClose()
 					},
 					redditStyle: !0
 				}, c.fbt._("Cancel", null, {
 					hk: "2TSLl5"
-				})), a.a.createElement(b.k, {
+				})), a.a.createElement(b.l, {
 					className: Object(m.a)(h.a.commonBtn, h.a.primaryBtn),
 					onClick: () => {
 						t(Object(v.b)("continue")), e.handleContinueClick()
@@ -332,4 +332,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Settings-CreatePasswordSSOModal.3524a2c584b4b94452d2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Settings-CreatePasswordSSOModal.e95fbd10996bf172806b.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.e7d3f44d655012a60ad6.js
-// Retrieved at 11/3/2021, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.4d171835a3aa286f0b66.js
+// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -705,9 +705,9 @@
 							i = Object(pe.I)(s(), {
 								identifier: v.belongsTo
 							});
-						if (i && (e => J.re.Redirect === Object(X.b)(e, {
+						if (i && (e => J.se.Redirect === Object(X.b)(e, {
 								experimentEligibilitySelector: ce,
-								experimentName: J.je
+								experimentName: J.ke
 							}))(s())) return void t(Object(o.c)(i.url));
 						if ((v.media && v.media.type) === H.o.LIVEVIDEO) {
 							const e = `/rpan${v.belongsTo.type===D.a.SUBREDDIT?i.url:"/"}${Object(P.u)(v.id)}`;
@@ -1149,10 +1149,10 @@
 				hk: "1KD7Eh"
 			})), n.a.createElement("div", {
 				className: p.a.CTAButtons
-			}, n.a.createElement(c.s, {
+			}, n.a.createElement(c.t, {
 				className: p.a.LoginLink,
-				kind: c.a.ExternalLink,
-				priority: c.b.Secondary,
+				kind: c.b.ExternalLink,
+				priority: c.c.Secondary,
 				href: Object(a.a)(s, m, "/login"),
 				onClick: e => {
 					Object(i.a)(e) && (e.preventDefault(), e.stopPropagation(), o(), h(Object(l.a)("user_convert")))
@@ -1160,12 +1160,12 @@
 				"data-redditstyle": !0
 			}, u._("Log In", null, {
 				hk: "ZR3pC"
-			})), n.a.createElement(c.s, {
+			})), n.a.createElement(c.t, {
 				className: Object(r.a)(p.a.SignupLink, {
 					[p.a.LiveStreamingSignupLink]: t
 				}),
-				kind: c.a.ExternalLink,
-				priority: c.b.Primary,
+				kind: c.b.ExternalLink,
+				priority: c.c.Primary,
 				href: Object(a.a)(s, m, "/register"),
 				onClick: e => {
 					Object(i.a)(e) && (e.preventDefault(), e.stopPropagation(), d(), h(Object(l.c)("user_convert")))
@@ -1897,7 +1897,7 @@
 					className: y.a.StateContainer
 				}, a.a.createElement(E, null), a.a.createElement(P, null, o.fbt._("That comment is missing", null, {
 					hk: "1i1U0i"
-				})), a.a.createElement(u.m, {
+				})), a.a.createElement(u.n, {
 					to: Object(b.b)(e)
 				}, o.fbt._("View all comments", null, {
 					hk: "2CgaIx"
@@ -1920,7 +1920,7 @@
 					isLoggedOut: !1
 				}) : o.fbt._("Sorry, comments couldn't load!", null, {
 					hk: "2h6LDi"
-				})), a.a.createElement(u.k, {
+				})), a.a.createElement(u.l, {
 					onClick: t
 				}, o.fbt._("Retry", null, {
 					hk: "NOuNi"
@@ -3122,7 +3122,7 @@
 							[Us.a.isActive]: t
 						}),
 						onClick: e => ((e, t) => {
-							s ? (c(Object(Ms.a)()), i === Rs.Ad.ThrottledDaily ? (As.a.throttleFeature(Rs.Bd.Daily), m(e)) : i === Rs.Ad.ThrottledWeekly ? (As.a.throttleFeature(Rs.Bd.Weekly), m(e)) : m(e)) : o()
+							s ? (c(Object(Ms.a)()), i === Rs.Bd.ThrottledDaily ? (As.a.throttleFeature(Rs.Cd.Daily), m(e)) : i === Rs.Bd.ThrottledWeekly ? (As.a.throttleFeature(Rs.Cd.Weekly), m(e)) : m(e)) : o()
 						})(e)
 					}, Vs._({
 						"*": "{number of more replies hidden} more replies",
@@ -3885,7 +3885,7 @@
 							"--commentswrapper-gradient-color": Object(c.a)(this.props).body,
 							maxHeight: l ? u : "unset"
 						}
-					}, t), g && n.a.createElement(d.k, {
+					}, t), g && n.a.createElement(d.l, {
 						className: m.a.MoreCommentsButton,
 						onClick: o,
 						"data-redditstyle": !0
@@ -4606,15 +4606,15 @@
 			const Me = e => {
 					return Object(Re.c)(e, {
 						experimentEligibilitySelector: Re.a,
-						experimentName: Ne.Xe
-					}) === Ne.Ic
+						experimentName: Ne.Ye
+					}) === Ne.Jc
 				},
 				Fe = e => {
 					if (Object(Ae.a)(e)) return !1;
 					return Object(Re.c)(e, {
 						experimentEligibilitySelector: Re.a,
-						experimentName: Ne.We
-					}) === Ne.Ic
+						experimentName: Ne.Xe
+					}) === Ne.Jc
 				},
 				Be = (e, {
 					postId: t
@@ -4624,8 +4624,8 @@
 					});
 					return !(Object(Ae.a)(e) || !s || s.isSponsored) && Object(Re.c)(e, {
 						experimentEligibilitySelector: Re.a,
-						experimentName: Ne.Ve
-					}) === Ne.Ic
+						experimentName: Ne.We
+					}) === Ne.Jc
 				};
 			var De = s("./node_modules/fbt/lib/FbtPublic.js"),
 				Ue = s("./src/reddit/constants/colors.ts"),
@@ -5069,7 +5069,7 @@
 					showPromotedCTA: Te,
 					subredditOrProfile: Ne,
 					userIsOp: Re
-				} = e, Ae = Object(ve.b)(), [Me, Fe] = Object(r.useState)(ce.authorIsBlocked), Be = Object(T.I)(ce), De = Object(a.e)(e => Boolean(ce.predictionTournament) && Object(Le.t)(e)), Ue = Object(a.e)(e => Object(Ie.a)(e)), Ve = Object(a.e)(e => Object(Le.c)(e)), We = Object(c.a)(ce), He = F || B || D;
+				} = e, Ae = Object(ve.b)(), [Me, Fe] = Object(r.useState)(ce.authorIsBlocked), Be = Object(T.I)(ce), De = Object(a.e)(e => Boolean(ce.predictionTournament) && Object(Le.u)(e)), Ue = Object(a.e)(e => Object(Ie.a)(e)), Ve = Object(a.e)(e => Object(Le.c)(e)), We = Object(c.a)(ce), He = F || B || D;
 				Object(r.useEffect)(() => {
 					M && R && Y()
 				}, []);
@@ -5126,7 +5126,7 @@
 							crosspost: t,
 							isCommentPermalink: s,
 							post: o
-						} = e, n = Object(a.e)(e => Boolean(o.predictionTournament) && Object(Le.t)(e)), r = Object(a.e)(e => Object(_e.a)(o) && Object(Le.c)(e));
+						} = e, n = Object(a.e)(e => Boolean(o.predictionTournament) && Object(Le.u)(e)), r = Object(a.e)(e => Object(_e.a)(o) && Object(Le.c)(e));
 						return s ? Ee.g.Classic : n ? Ee.g.Large : r ? Ee.g.Large : t ? Ee.g.Large : o.media && !bt(o) ? Ee.g.Large : Ee.g.Medium
 					})(e);
 				if (kt === Ee.g.Classic) {
@@ -5573,7 +5573,7 @@
 							baseUrl: s.base_url,
 							hostPostId: a,
 							isEligibleForLinkedPosts: n,
-							shouldShowLinkedPosts: n && !Object(x.bf)(t) && !Object(w.a)(t),
+							shouldShowLinkedPosts: n && !Object(x.cf)(t) && !Object(w.a)(t),
 							subreddit: o
 						}
 					}
@@ -5634,7 +5634,7 @@
 						hostPostData: d,
 						listingBelowVariant: c
 					} = e;
-					if (c && !Object(x.bf)(c) && !Object(w.a)(c) && !i) return a.a.createElement("div", {
+					if (c && !Object(x.cf)(c) && !Object(w.a)(c) && !i) return a.a.createElement("div", {
 						className: K.a.smallBanner
 					});
 					const {
@@ -5645,7 +5645,7 @@
 						hk: "2g363L"
 					}) : Object(w.b)(c) ? o.fbt._("More posts like this", null, {
 						hk: "Maj0v"
-					}) : t === x.Id.DeRecs ? o.fbt._("Popular Posts Near You", null, {
+					}) : t === x.Jd.DeRecs ? o.fbt._("Popular Posts Near You", null, {
 						hk: "22vlW0"
 					}) : o.fbt._("More posts you may like", null, {
 						hk: "33WdfT"
@@ -7327,8 +7327,8 @@
 				r = s("./src/reddit/selectors/meta.ts");
 			const i = e => Object(n.c)(e, {
 				experimentEligibilitySelector: e => !Object(r.d)(e) && "US" === Object(r.b)(e),
-				experimentName: o.ke
-			}) === o.se.Enabled
+				experimentName: o.le
+			}) === o.te.Enabled
 		},
 		"./src/reddit/selectors/experiments/typingIndicators.ts": function(e, t, s) {
 			"use strict";
@@ -7347,24 +7347,24 @@
 					if (Object(i.a)(e)) return !1;
 					const t = Object(n.c)(e, {
 						experimentEligibilitySelector: n.a,
-						experimentName: o.Ye
+						experimentName: o.Ze
 					});
-					return t === o.Re.UIChangesOnly || t === o.Re.TypingIndicators || t === o.Re.IndicatorsPlusCTA
+					return t === o.Se.UIChangesOnly || t === o.Se.TypingIndicators || t === o.Se.IndicatorsPlusCTA
 				},
 				d = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(r.d)(e, {
-							experimentName: o.Ye
+							experimentName: o.Ze
 						}),
 						s = null == t ? void 0 : t.variant;
-					return s === o.Re.TypingIndicators || s === o.Re.IndicatorsPlusCTA
+					return s === o.Se.TypingIndicators || s === o.Se.IndicatorsPlusCTA
 				},
 				c = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(r.d)(e, {
-						experimentName: o.Ye
+						experimentName: o.Ze
 					});
-					return (null == t ? void 0 : t.variant) === o.Re.IndicatorsPlusCTA
+					return (null == t ? void 0 : t.variant) === o.Se.IndicatorsPlusCTA
 				}
 		},
 		"./src/reddit/selectors/isEligibleForCommentTruncation.ts": function(e, t, s) {
@@ -7426,4 +7426,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.e7d3f44d655012a60ad6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.4d171835a3aa286f0b66.js.map

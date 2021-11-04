@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxPurchaseModal.24fca0b55f8f17371e00.js
-// Retrieved at 11/3/2021, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxPurchaseModal.f9f3eb31cd372ce4bc09.js
+// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CryptoHarbergerTaxPurchaseModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -405,7 +405,7 @@
 				}, a.a.createElement(p.a, {
 					className: g.a.token,
 					subredditId: l
-				}), Object(u.a)(Object(b.b)(d, null == c ? void 0 : c.displayConversion))), a.a.createElement(h.k, {
+				}), Object(u.a)(Object(b.b)(d, null == c ? void 0 : c.displayConversion))), a.a.createElement(h.l, {
 					onClick: e.onPurchase
 				}, E._("Proceed to Purchase", null, {
 					hk: "21Rymw"
@@ -820,7 +820,7 @@
 					})), a.a.createElement(H.a, {
 						amount: v.toFixed(2),
 						subredditId: c
-					})), a.a.createElement(h.k, {
+					})), a.a.createElement(h.l, {
 						disabled: !s.address,
 						onClick: this.handlePurchase
 					}, J.fbt._("Buy", null, {
@@ -1072,7 +1072,7 @@
 						className: b.a.detailsContainer
 					}, t), l.a.createElement(p.a, {
 						className: b.a.buttonRow
-					}, l.a.createElement(m.k, {
+					}, l.a.createElement(m.l, {
 						className: b.a.confirmButton,
 						onClick: e.onConfirmed
 					}, r.fbt._("Ok", null, {
@@ -1623,4 +1623,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxPurchaseModal.24fca0b55f8f17371e00.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxPurchaseModal.f9f3eb31cd372ce4bc09.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit~reddit-components-AdHocMultiredditSidebar.c8e2eaf4b9cc889155c4.js
-// Retrieved at 11/3/2021, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit~reddit-components-AdHocMultiredditSidebar.c2e00622bcdfd75968df.js
+// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit~reddit-components-AdHocMultiredditSidebar"], {
 		"./node_modules/lodash/take.js": function(e, t, r) {
@@ -1003,7 +1003,7 @@
 					key: t.url,
 					to: t.url,
 					onMouseDown: e.onSubredditClick ? () => e.onSubredditClick(t) : void 0
-				}, r)), c > 0 && l && n.a.createElement(o.q, {
+				}, r)), c > 0 && l && n.a.createElement(o.r, {
 					onClick: i
 				}, s.fbt._("See more", null, {
 					hk: "QYkk2"
@@ -1198,7 +1198,7 @@
 						className: Object(u.a)(W.a.FadingDescription, {
 							[W.a.shouldFade]: i
 						})
-					}, e), i && o.a.createElement(A.q, {
+					}, e), i && o.a.createElement(A.r, {
 						onClick: t
 					}, s.fbt._("Read more", null, {
 						hk: "i0AXN"
@@ -1504,7 +1504,7 @@
 						value: b
 					}), !a && (n || b.length > 0) && (e ? o.a.createElement(ue.a, {
 						sizePx: Ie
-					}) : o.a.createElement(A.q, {
+					}) : o.a.createElement(A.r, {
 						className: _e.a.addButton,
 						onClick: this.onSubmit
 					}, s.fbt._("Add", null, {
@@ -1533,7 +1533,7 @@
 						useTertiaryButton: !0
 					}))), t.length > je && o.a.createElement("div", {
 						className: _e.a.expandButtonContainer
-					}, o.a.createElement(A.q, {
+					}, o.a.createElement(A.r, {
 						className: _e.a.expandButton,
 						onClick: this.onToggleExpand
 					}, m ? s.fbt._("show less", null, {
@@ -1875,7 +1875,7 @@
 					}) : s.fbt._("View Less", null, {
 						hk: "1M72mK"
 					});
-					return o.a.createElement(l.q, {
+					return o.a.createElement(l.r, {
 						onClick: _
 					}, f ? o.a.createElement(u.a, {
 						sizePx: 10
@@ -2259,11 +2259,11 @@
 					className: E.a.titleContainer
 				}, o.a.createElement("span", {
 					className: E.a.titleText
-				}, r), o.a.createElement(f.s, {
+				}, r), o.a.createElement(f.t, {
 					className: E.a.srCreationButton,
 					onClick: i,
-					priority: f.b.Plain,
-					size: f.c.XS
+					priority: f.c.Plain,
+					size: f.d.XS
 				}, s.fbt._("Create New", null, {
 					hk: "3WP7G4"
 				}))) : r && o.a.createElement("div", {
@@ -2658,4 +2658,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit~reddit-components-AdHocMultiredditSidebar.c8e2eaf4b9cc889155c4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit~reddit-components-AdHocMultiredditSidebar.c2e00622bcdfd75968df.js.map

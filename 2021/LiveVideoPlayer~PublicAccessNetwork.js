@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork.7414e81db19384fb619f.js
-// Retrieved at 11/3/2021, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork.098d2ba2188fb4314b0f.js
+// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["LiveVideoPlayer~PublicAccessNetwork"], {
 		"./src/lib/VideoSession/VideoSessionManager.ts": function(e, t, s) {
@@ -604,7 +604,7 @@
 				defaultImage: e,
 				userId: t
 			}) => {
-				const s = Object(c.e)(h.y),
+				const s = Object(c.e)(h.z),
 					{
 						processingAvatarImageUrl: a
 					} = r.a;
@@ -1206,9 +1206,9 @@
 		"./src/reddit/components/PublicAccessNetwork/Theater/Overlay/refresh.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "c", (function() {
-				return K
-			})), s.d(t, "h", (function() {
 				return z
+			})), s.d(t, "h", (function() {
+				return K
 			})), s.d(t, "g", (function() {
 				return Y
 			})), s.d(t, "p", (function() {
@@ -1287,11 +1287,11 @@
 				H = s.n(W);
 			const {
 				fbt: U
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), K = ({
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), z = ({
 				children: e
 			}) => a.a.createElement("div", {
 				className: H.a.broadcastStatus
-			}, e), z = ({
+			}, e), K = ({
 				onClick: e
 			}) => a.a.createElement("button", {
 				onClick: e
@@ -2589,8 +2589,8 @@
 			const i = Object(r.a)(e => Object(n.c)(e, {
 				experimentEligibilitySelector: o.K,
 				experimentName: a.Eb
-			}), e => e === a.Ic)
+			}), e => e === a.Jc)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork.7414e81db19384fb619f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork.098d2ba2188fb4314b0f.js.map

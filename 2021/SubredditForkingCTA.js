@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditForkingCTA.61b85e67741ecbbe25b1.js
-// Retrieved at 11/3/2021, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditForkingCTA.b6c23e5ff84803a9b774.js
+// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditForkingCTA"], {
 		"./src/reddit/components/CreateCommunityButton/index.m.less": function(t, _, e) {
@@ -53,7 +53,7 @@
 				userIsSuspended: l,
 				onClick: c
 			}) => {
-				return r.a.createElement(m.s, {
+				return r.a.createElement(m.t, {
 					className: t,
 					disabled: l || i,
 					onClick: t => {
@@ -61,7 +61,7 @@
 					},
 					onMouseEnter: e,
 					onMouseLeave: o,
-					priority: m.b.Secondary,
+					priority: m.c.Secondary,
 					id: h,
 					isFullWidth: !0
 				}, n.fbt._("Create Community", null, {
@@ -207,16 +207,16 @@
 				z = o.a.div("ModalAnnotation", d.a),
 				B = o.a.div("ModalMain", d.a),
 				C = o.a.textarea("TextArea", d.a),
-				S = o.a.wrapped(s.k, "WarningButton", d.a),
-				T = o.a.wrapped(s.k, "PrimaryButton", d.a),
-				E = o.a.wrapped(s.n, "CancelButton", d.a),
-				F = o.a.wrapped(s.q, "RemoveButton", d.a),
+				S = o.a.wrapped(s.l, "WarningButton", d.a),
+				T = o.a.wrapped(s.l, "PrimaryButton", d.a),
+				E = o.a.wrapped(s.o, "CancelButton", d.a),
+				F = o.a.wrapped(s.r, "RemoveButton", d.a),
 				I = ({
 					className: t,
 					..._
-				}) => a.a.createElement(s.s, u({
-					kind: s.a.Button,
-					priority: s.b.Primary,
+				}) => a.a.createElement(s.t, u({
+					kind: s.b.Button,
+					priority: s.c.Primary,
 					className: Object(n.a)(d.a.ConfirmButton, t)
 				}, _))
 		},
@@ -238,10 +238,10 @@
 				m = e("./src/reddit/helpers/chooseVariant/index.ts"),
 				p = e("./src/reddit/selectors/experiments/utils.ts");
 			const y = Object(d.a)(t => Object(m.c)(t, {
-					experimentName: u.we,
+					experimentName: u.xe,
 					experimentEligibilitySelector: m.a
 				}), p.a),
-				x = Object(d.a)(y, t => t === u.Ce.Enabled);
+				x = Object(d.a)(y, t => t === u.De.Enabled);
 			var f = e("./src/reddit/selectors/posts.ts"),
 				b = e("./src/reddit/components/CreateCommunityButton/index.tsx"),
 				h = e("./src/reddit/components/TrackingHelper/index.tsx");
@@ -1285,41 +1285,43 @@
 		},
 		"./src/reddit/controls/Button/index.tsx": function(t, _, e) {
 			"use strict";
-			e.d(_, "c", (function() {
+			e.d(_, "d", (function() {
 				return d
-			})), e.d(_, "b", (function() {
+			})), e.d(_, "c", (function() {
 				return u
-			})), e.d(_, "g", (function() {
-				return m
-			})), e.d(_, "a", (function() {
-				return p
-			})), e.d(_, "l", (function() {
-				return h
-			})), e.d(_, "m", (function() {
-				return k
-			})), e.d(_, "k", (function() {
-				return g
-			})), e.d(_, "o", (function() {
-				return j
-			})), e.d(_, "p", (function() {
-				return w
-			})), e.d(_, "n", (function() {
-				return v
-			})), e.d(_, "r", (function() {
-				return q
-			})), e.d(_, "q", (function() {
-				return z
-			})), e.d(_, "e", (function() {
-				return B
-			})), e.d(_, "f", (function() {
-				return C
-			})), e.d(_, "j", (function() {
-				return S
-			})), e.d(_, "d", (function() {
-				return T
 			})), e.d(_, "h", (function() {
-				return E
+				return m
+			})), e.d(_, "b", (function() {
+				return p
+			})), e.d(_, "a", (function() {
+				return y
+			})), e.d(_, "m", (function() {
+				return h
+			})), e.d(_, "n", (function() {
+				return k
+			})), e.d(_, "l", (function() {
+				return g
+			})), e.d(_, "p", (function() {
+				return j
+			})), e.d(_, "q", (function() {
+				return w
+			})), e.d(_, "o", (function() {
+				return v
+			})), e.d(_, "s", (function() {
+				return q
+			})), e.d(_, "r", (function() {
+				return z
+			})), e.d(_, "f", (function() {
+				return B
+			})), e.d(_, "g", (function() {
+				return C
+			})), e.d(_, "k", (function() {
+				return S
+			})), e.d(_, "e", (function() {
+				return T
 			})), e.d(_, "i", (function() {
+				return E
+			})), e.d(_, "j", (function() {
 				return F
 			}));
 			var n = e("./node_modules/react/index.js"),
@@ -1514,7 +1516,7 @@
 					className: Object(r.a)(t, i.a.PlainLinkButton),
 					priority: u.PlainLink
 				}, _));
-			_.s = y
+			_.t = y
 		},
 		"./src/reddit/controls/Input/ModalInput.tsx": function(t, _, e) {
 			"use strict";
@@ -1586,4 +1588,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditForkingCTA.61b85e67741ecbbe25b1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditForkingCTA.b6c23e5ff84803a9b774.js.map

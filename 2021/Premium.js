@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Premium.ffa998ed96f61b6ea650.js
-// Retrieved at 11/3/2021, 1:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Premium.8e1ff649d29c89c657a5.js
+// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Premium"], {
 		"./src/reddit/controls/Button/index.m.less": function(e, t, n) {
@@ -44,41 +44,43 @@
 		},
 		"./src/reddit/controls/Button/index.tsx": function(e, t, n) {
 			"use strict";
-			n.d(t, "c", (function() {
+			n.d(t, "d", (function() {
 				return u
-			})), n.d(t, "b", (function() {
+			})), n.d(t, "c", (function() {
 				return m
-			})), n.d(t, "g", (function() {
-				return f
-			})), n.d(t, "a", (function() {
-				return p
-			})), n.d(t, "l", (function() {
-				return b
-			})), n.d(t, "m", (function() {
-				return P
-			})), n.d(t, "k", (function() {
-				return k
-			})), n.d(t, "o", (function() {
-				return x
-			})), n.d(t, "p", (function() {
-				return O
-			})), n.d(t, "n", (function() {
-				return S
-			})), n.d(t, "r", (function() {
-				return B
-			})), n.d(t, "q", (function() {
-				return v
-			})), n.d(t, "e", (function() {
-				return E
-			})), n.d(t, "f", (function() {
-				return C
-			})), n.d(t, "j", (function() {
-				return j
-			})), n.d(t, "d", (function() {
-				return w
 			})), n.d(t, "h", (function() {
-				return N
+				return f
+			})), n.d(t, "b", (function() {
+				return p
+			})), n.d(t, "a", (function() {
+				return h
+			})), n.d(t, "m", (function() {
+				return b
+			})), n.d(t, "n", (function() {
+				return P
+			})), n.d(t, "l", (function() {
+				return k
+			})), n.d(t, "p", (function() {
+				return x
+			})), n.d(t, "q", (function() {
+				return O
+			})), n.d(t, "o", (function() {
+				return S
+			})), n.d(t, "s", (function() {
+				return B
+			})), n.d(t, "r", (function() {
+				return v
+			})), n.d(t, "f", (function() {
+				return E
+			})), n.d(t, "g", (function() {
+				return C
+			})), n.d(t, "k", (function() {
+				return j
+			})), n.d(t, "e", (function() {
+				return w
 			})), n.d(t, "i", (function() {
+				return N
+			})), n.d(t, "j", (function() {
 				return I
 			}));
 			var a = n("./node_modules/react/index.js"),
@@ -273,7 +275,7 @@
 					className: Object(i.a)(e, d.a.PlainLinkButton),
 					priority: m.PlainLink
 				}, t));
-			t.s = h
+			t.t = h
 		},
 		"./src/reddit/endpoints/gold/productCatalog/index.ts": function(e, t, n) {
 			"use strict";
@@ -808,4 +810,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.ffa998ed96f61b6ea650.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.8e1ff649d29c89c657a5.js.map

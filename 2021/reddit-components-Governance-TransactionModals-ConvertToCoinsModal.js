@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.40fa92e43058652d6465.js
-// Retrieved at 11/3/2021, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.f7537e86ff4797a016e2.js
+// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-ConvertToCoinsModal"], {
 		"./src/reddit/actions/gold/econPurchase.ts": function(e, t, n) {
@@ -1151,7 +1151,7 @@
 					})
 				})), a.a.createElement("div", {
 					className: h.a.footer
-				}, a.a.createElement(m.k, {
+				}, a.a.createElement(m.l, {
 					onClick: e.onContinue
 				}, d.fbt._("Convert {pointsName}", [d.fbt._param("pointsName", n)], {
 					hk: "4CnbBc"
@@ -1475,7 +1475,7 @@
 						className: b.a.detailsContainer
 					}, t), l.a.createElement(p.a, {
 						className: b.a.buttonRow
-					}, l.a.createElement(m.k, {
+					}, l.a.createElement(m.l, {
 						className: b.a.confirmButton,
 						onClick: e.onConfirmed
 					}, r.fbt._("Ok", null, {
@@ -2211,4 +2211,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.40fa92e43058652d6465.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.f7537e86ff4797a016e2.js.map

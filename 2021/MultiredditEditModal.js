@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MultiredditEditModal.b67568f840b22e5ea224.js
-// Retrieved at 11/3/2021, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MultiredditEditModal.40a7d2e8d863a21445f5.js
+// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MultiredditEditModal"], {
 		"./src/reddit/actions/multireddit/index.ts": function(e, t, i) {
@@ -936,7 +936,7 @@
 						className: E.a.labelDescription
 					}, r.fbt._("Public Custom Feeds are visible to anyone with the link. Private is only viewable by you, the owner.", null, {
 						hk: "1RAkt7"
-					}))), n.a.createElement("div", null, n.a.createElement(y.q, {
+					}))), n.a.createElement("div", null, n.a.createElement(y.r, {
 						className: E.a.dropdownBtn,
 						id: M,
 						onClick: t
@@ -1519,4 +1519,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MultiredditEditModal.b67568f840b22e5ea224.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MultiredditEditModal.40a7d2e8d863a21445f5.js.map

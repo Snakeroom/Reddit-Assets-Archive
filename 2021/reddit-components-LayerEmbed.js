@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LayerEmbed.2522aa8d388fe992e7e2.js
-// Retrieved at 10/5/2021, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LayerEmbed.da97b90421bf496812b7.js
+// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LayerEmbed"], {
 		"./src/reddit/components/LayerEmbed/index.m.less": function(e, t, r) {
@@ -188,7 +188,7 @@
 				m = r("./src/reddit/components/PostCreationForm/Prompt/PromptModal.m.less"),
 				p = r.n(m),
 				y = r("./src/lib/lessComponent.tsx");
-			const x = y.a.wrapped(c.k, "PrimaryButton", p.a),
+			const x = y.a.wrapped(c.l, "PrimaryButton", p.a),
 				h = y.a.wrapped(s.p, "ModalText", p.a);
 			class E extends o.a.PureComponent {
 				constructor() {
@@ -224,4 +224,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LayerEmbed.2522aa8d388fe992e7e2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LayerEmbed.da97b90421bf496812b7.js.map

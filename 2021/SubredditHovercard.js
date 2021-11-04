@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditHovercard.b70b36a9d9527b72b712.js
-// Retrieved at 10/6/2021, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditHovercard.d982cef32400a99476a2.js
+// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditHovercard"], {
 		"./src/reddit/components/CommunityType/index.m.less": function(e, t, n) {
@@ -350,7 +350,7 @@
 					subredditAboutInfo: m
 				}), s.a.createElement(O.a, {
 					subreddit: u
-				}), s.a.createElement(w, null, Object(j.a)(m.publicDescription || "", 140)), s.a.createElement(S.m, {
+				}), s.a.createElement(w, null, Object(j.a)(m.publicDescription || "", 140)), s.a.createElement(S.n, {
 					onClick: v,
 					to: `${u.url}`,
 					target: a ? "_blank" : void 0,
@@ -798,41 +798,43 @@
 		},
 		"./src/reddit/controls/Button/index.tsx": function(e, t, n) {
 			"use strict";
-			n.d(t, "c", (function() {
+			n.d(t, "d", (function() {
 				return u
-			})), n.d(t, "b", (function() {
+			})), n.d(t, "c", (function() {
 				return m
-			})), n.d(t, "g", (function() {
-				return p
-			})), n.d(t, "a", (function() {
-				return b
-			})), n.d(t, "l", (function() {
-				return E
-			})), n.d(t, "m", (function() {
-				return O
-			})), n.d(t, "k", (function() {
-				return x
-			})), n.d(t, "o", (function() {
-				return N
-			})), n.d(t, "p", (function() {
-				return I
-			})), n.d(t, "n", (function() {
-				return S
-			})), n.d(t, "r", (function() {
-				return j
-			})), n.d(t, "q", (function() {
-				return _
-			})), n.d(t, "e", (function() {
-				return C
-			})), n.d(t, "f", (function() {
-				return T
-			})), n.d(t, "j", (function() {
-				return P
-			})), n.d(t, "d", (function() {
-				return k
 			})), n.d(t, "h", (function() {
-				return B
+				return p
+			})), n.d(t, "b", (function() {
+				return b
+			})), n.d(t, "a", (function() {
+				return v
+			})), n.d(t, "m", (function() {
+				return E
+			})), n.d(t, "n", (function() {
+				return O
+			})), n.d(t, "l", (function() {
+				return x
+			})), n.d(t, "p", (function() {
+				return N
+			})), n.d(t, "q", (function() {
+				return I
+			})), n.d(t, "o", (function() {
+				return S
+			})), n.d(t, "s", (function() {
+				return j
+			})), n.d(t, "r", (function() {
+				return _
+			})), n.d(t, "f", (function() {
+				return C
+			})), n.d(t, "g", (function() {
+				return T
+			})), n.d(t, "k", (function() {
+				return P
+			})), n.d(t, "e", (function() {
+				return k
 			})), n.d(t, "i", (function() {
+				return B
+			})), n.d(t, "j", (function() {
 				return g
 			}));
 			var r = n("./node_modules/react/index.js"),
@@ -1027,7 +1029,7 @@
 					className: Object(o.a)(e, a.a.PlainLinkButton),
 					priority: m.PlainLink
 				}, t));
-			t.s = v
+			t.t = v
 		},
 		"./src/reddit/controls/IconTooltip/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -1152,4 +1154,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditHovercard.b70b36a9d9527b72b712.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditHovercard.d982cef32400a99476a2.js.map

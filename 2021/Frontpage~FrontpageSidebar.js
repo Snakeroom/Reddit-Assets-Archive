@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~FrontpageSidebar.d2627f76e32b4b32701b.js
-// Retrieved at 11/3/2021, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~FrontpageSidebar.c27ad9eceb0e1069971c.js
+// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~FrontpageSidebar"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, n) {
@@ -139,7 +139,7 @@
 						className: y.a.description
 					}, E._("The best Reddit experience, with monthly Coins", null, {
 						hk: "2n1ct3"
-					})))), d.a.createElement(_.j, {
+					})))), d.a.createElement(_.k, {
 						isFullWidth: !0,
 						onClick: t
 					}, E._("Try Now", null, {
@@ -193,7 +193,7 @@
 					className: I.a.SectionContent
 				}, s), d.a.createElement("div", {
 					className: I.a.SectionFooter
-				}, d.a.createElement(_.q, {
+				}, d.a.createElement(_.r, {
 					className: I.a.SectionButton,
 					onClick: a
 				}, n ? O.fbt._("Less", null, {
@@ -325,7 +325,7 @@
 						className: ee.a.description
 					}, te._("{subreddits list} and more are looking for moderators!", [te._param("subreddits list", d.a.createElement("strong", null, e.map(H.c).join(", ") + (e.length > 1 ? "," : "")))], {
 						hk: "2Tb946"
-					}))), d.a.createElement(_.m, {
+					}))), d.a.createElement(_.n, {
 						className: ee.a.button,
 						to: `/r/${re}?utm_source=reddit&utm_medium=fp_banner&utm_campaign=subreddit_adoption_week`
 					}, te._("Go Now", null, {
@@ -665,10 +665,10 @@
 			}
 			var Me = n("./src/reddit/selectors/experiments/utils.ts");
 			const Je = Object(u.a)(e => Object(We.c)(e, {
-					experimentName: Ae.od,
+					experimentName: Ae.pd,
 					experimentEligibilitySelector: We.a
 				}), Me.a),
-				Ue = Object(u.a)(Je, e => e === Ae.qd.Enabled);
+				Ue = Object(u.a)(Je, e => e === Ae.rd.Enabled);
 			var ze = n("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
 				Qe = n("./src/reddit/selectors/user.ts");
 			var qe = n("./src/reddit/selectors/experiments/uiSimplification.ts"),
@@ -701,7 +701,7 @@
 							return Object(We.c)(e, {
 								experimentEligibilitySelector: Qe.K,
 								experimentName: Ae.Gb
-							}) === Ae.Ic
+							}) === Ae.Jc
 						}(e))
 					},
 					isNavbarLikeMwebEnabled: l.a,
@@ -1100,10 +1100,10 @@
 						} = this.props, k = this.state.isHovered, x = Object(c.a)({
 							type: t.type,
 							key: k ? "unsubscribe" : "subscribed"
-						}), y = n || !u && k ? void 0 : Object(d.b)("checkmark"), E = n ? o.c.XSP : b || (u ? o.c.XS : o.c.S);
-						return r.a.createElement(o.s, m({
+						}), y = n || !u && k ? void 0 : Object(d.b)("checkmark"), E = n ? o.d.XSP : b || (u ? o.d.XS : o.d.S);
+						return r.a.createElement(o.t, m({
 							className: e,
-							priority: _.shouldReverseColor ? o.b.Primary : o.b.Secondary,
+							priority: _.shouldReverseColor ? o.c.Primary : o.c.Secondary,
 							Icon: y,
 							text: n ? x : !u && x,
 							onClick: this.onClick,
@@ -1130,10 +1130,10 @@
 						} = this.props, k = Object(c.a)({
 							type: t.type,
 							key: "subscribe"
-						}), x = n ? o.c.XSP : b || (u ? o.c.XS : o.c.S);
-						return r.a.createElement(o.s, m({
+						}), x = n ? o.d.XSP : b || (u ? o.d.XS : o.d.S);
+						return r.a.createElement(o.t, m({
 							className: e,
-							priority: _.shouldReverseColor ? o.b.Secondary : o.b.Primary,
+							priority: _.shouldReverseColor ? o.c.Secondary : o.c.Primary,
 							Icon: n ? void 0 : Object(d.b)("add"),
 							size: x,
 							text: n ? k : !u && k,
@@ -1365,7 +1365,7 @@
 							name: e.subreddit.name,
 							type: m.a.SUBREDDIT
 						},
-						size: b.c.XSP
+						size: b.d.XSP
 					})))
 				}
 		},
@@ -1528,7 +1528,7 @@
 					key: e
 				}))),
 				T = e => {
-					const t = e.isSecondaryButton ? f.p : f.m,
+					const t = e.isSecondaryButton ? f.q : f.n,
 						n = e.linkColor ? {
 							backgroundColor: e.linkColor,
 							color: "white"
@@ -1927,16 +1927,16 @@
 			}
 			t.a = e => {
 				const t = e.to ? {
-					kind: i.a.InternalLink,
+					kind: i.b.InternalLink,
 					to: e.to
 				} : {};
-				return r.a.createElement(i.s, c({
+				return r.a.createElement(i.t, c({
 					className: Object(a.a)(d.a.Chip, {
 						[d.a.isWide]: e.wide
 					}),
 					onClick: e.onClick,
-					priority: i.b.Tertiary,
-					size: i.c.XS,
+					priority: i.c.Tertiary,
+					size: i.d.XS,
 					text: e.children
 				}, t))
 			}
@@ -2192,4 +2192,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~FrontpageSidebar.d2627f76e32b4b32701b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~FrontpageSidebar.c27ad9eceb0e1069971c.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.adb05a5f50315ecea8e6.js
-// Retrieved at 11/3/2021, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.a716b5cabf2df71c9ad1.js
+// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceTransferPointsModal", "CryptoLibEthers"], {
 		"./node_modules/@ethersproject/address/lib.esm/index.js": function(e, t, r) {
@@ -1295,7 +1295,7 @@
 						style: {
 							color: f ? void 0 : E.b.warning
 						}
-					}, Object(g.a)(Object(m.b)(d, null == o ? void 0 : o.displayConversion)))), s.a.createElement(x.k, {
+					}, Object(g.a)(Object(m.b)(d, null == o ? void 0 : o.displayConversion)))), s.a.createElement(x.l, {
 						disabled: !y,
 						className: w.a.button,
 						tabIndex: i,
@@ -1566,7 +1566,7 @@
 						className: ae.a.description
 					}, ie._("Tipping with Donuts is now managed on donut.finance.", null, {
 						hk: "48pHUg"
-					})), s.a.createElement(x.l, {
+					})), s.a.createElement(x.m, {
 						redditStyle: !0,
 						className: ae.a.button,
 						href: a,
@@ -1745,7 +1745,7 @@
 						className: p.a.detailsContainer
 					}, t), l.a.createElement(h.a, {
 						className: p.a.buttonRow
-					}, l.a.createElement(m.k, {
+					}, l.a.createElement(m.l, {
 						className: p.a.confirmButton,
 						onClick: e.onConfirmed
 					}, n.fbt._("Ok", null, {
@@ -2180,4 +2180,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.adb05a5f50315ecea8e6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.a716b5cabf2df71c9ad1.js.map

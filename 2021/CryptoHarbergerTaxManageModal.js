@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxManageModal.be89c0e89f1ff4293894.js
-// Retrieved at 11/3/2021, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxManageModal.675f3fa3bfc31b39fa71.js
+// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CryptoHarbergerTaxManageModal"], {
 		"./src/reddit/actions/harbergerTax/actionCreators.ts": function(e, t, n) {
@@ -394,13 +394,13 @@
 						subredditId: e.subredditId
 					}), Object(T.a)(Object(U.b)(e.wallet.amount, null === (t = e.pointsDetails) || void 0 === t ? void 0 : t.displayConversion)))), o.a.createElement("div", {
 						className: S.a.buttons
-					}, o.a.createElement(b.n, {
+					}, o.a.createElement(b.o, {
 						className: S.a.button,
 						tabIndex: e.tabIndex,
 						onClick: e.onClose
 					}, A._("Cancel", null, {
 						hk: "2TSLl5"
-					})), o.a.createElement(b.k, {
+					})), o.a.createElement(b.l, {
 						className: Object(w.a)(S.a.button, S.a.save),
 						disabled: !e.submitEnabled,
 						tabIndex: e.tabIndex ? e.tabIndex + 1 : void 0,
@@ -459,7 +459,7 @@
 						className: L.a.manageDescription
 					}, R._("Change the banner price and top up your balance in the Aragorn DApp", null, {
 						hk: "4f5PNI"
-					})), o.a.createElement(b.o, {
+					})), o.a.createElement(b.p, {
 						href: K[e.id],
 						target: "_blank"
 					}, R._("Open in Aragon", null, {
@@ -978,4 +978,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxManageModal.be89c0e89f1ff4293894.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxManageModal.675f3fa3bfc31b39fa71.js.map

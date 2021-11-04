@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.0f732971f0cc9aef9fb7.js
-// Retrieved at 11/3/2021, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.c0f678a9a2f494ace5bc.js
+// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinPurchaseModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, a) {
@@ -1122,7 +1122,7 @@
 					}) : r && c.a.createElement(A, {
 						className: Object(b.a)(S.a.purchaseButton, S.a.paypalCheckoutButton),
 						coinPackage: r
-					}) : null, s === o.Fb && c.a.createElement(y.k, {
+					}) : null, s === o.Fb && c.a.createElement(y.l, {
 						className: S.a.purchaseButton,
 						"data-redditstyle": !0,
 						disabled: i || n,
@@ -1592,7 +1592,7 @@
 				onCloseClick: t
 			}) => n.a.createElement("div", {
 				className: o.a.purchaseFooter
-			}, n.a.createElement(c.k, {
+			}, n.a.createElement(c.l, {
 				className: o.a.purchaseButton,
 				"data-redditstyle": !0,
 				onClick: t
@@ -1816,4 +1816,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.0f732971f0cc9aef9fb7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.c0f678a9a2f494ace5bc.js.map

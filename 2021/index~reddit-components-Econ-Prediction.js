@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.4ee04998975e8bfcb507.js
-// Retrieved at 11/3/2021, 1:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.96998a1b6660f3d1da05.js
+// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index~reddit-components-Econ-Prediction"], {
 		"./node_modules/lodash/_LazyWrapper.js": function(a, i, r) {
@@ -1038,7 +1038,7 @@
 					userSelection: b,
 					predictionStatus: F,
 					voteUpdatesRemained: g
-				} = a, v = Object(n.e)(i => Boolean((null == a ? void 0 : a.userSelection) && !(null == a ? void 0 : a.resolvedOptionId) && Object(f.v)(i))), P = Object(n.e)(i => (null == a ? void 0 : a.tournamentId) ? Object(u.a)(i, a.tournamentId) : null), S = Object(n.e)(y.X), T = Object(n.e)(y.pb), _ = Object(n.e)(y.K), [O, j] = Object(x.useState)(!1), C = e === T, N = m < Date.now(), I = N && C && !B, w = F === d.b.Cancelled || F === d.b.CancelInProgress;
+				} = a, v = Object(n.e)(i => Boolean((null == a ? void 0 : a.userSelection) && !(null == a ? void 0 : a.resolvedOptionId) && Object(f.w)(i))), P = Object(n.e)(i => (null == a ? void 0 : a.tournamentId) ? Object(u.a)(i, a.tournamentId) : null), S = Object(n.e)(y.X), T = Object(n.e)(y.pb), _ = Object(n.e)(y.K), [O, j] = Object(x.useState)(!1), C = e === T, N = m < Date.now(), I = N && C && !B, w = F === d.b.Cancelled || F === d.b.CancelInProgress;
 				return Object(x.useEffect)(() => {
 					j(!1)
 				}, [b, a]), k.a.createElement("div", A({
@@ -1256,14 +1256,14 @@
 					k(D(e)), o(!0), setTimeout(() => o(!1), 400)
 				}, [e]), x.a.createElement("div", {
 					className: b.a.header
-				}, x.a.createElement(y.s, {
+				}, x.a.createElement(y.t, {
 					"aria-label": F._("Close", null, {
 						hk: "40q8CL"
 					}),
 					className: b.a.closeButton,
 					Icon: Object(G.b)("close"),
 					onClick: a,
-					priority: y.b.Plain
+					priority: y.c.Plain
 				}), x.a.createElement("h3", {
 					className: Object(s.a)(b.a.colorCommentary, {
 						[b.a.hasAddedCoins]: !!e
@@ -1379,14 +1379,14 @@
 					className: z.a.description
 				}, K._("Welcome to tournament play! Claim your tokens, make predictions, and climb up the leaderboard.", null, {
 					hk: "1tajkZ"
-				})), x.a.createElement(y.s, {
+				})), x.a.createElement(y.t, {
 					"aria-label": K._("Close", null, {
 						hk: "40q8CL"
 					}),
 					className: z.a.closeButton,
 					Icon: Object(G.b)("close"),
 					onClick: a,
-					priority: y.b.Plain
+					priority: y.c.Plain
 				})), x.a.createElement("div", {
 					className: z.a.body
 				}, x.a.createElement("div", {
@@ -1726,7 +1726,7 @@
 			}) => {
 				const s = Object(k.d)(),
 					e = Object(A.a)(),
-					m = Object(k.e)(S.u),
+					m = Object(k.e)(S.v),
 					l = m ? O.a : C.a,
 					c = Object(k.e)(T.t),
 					[p, h] = Object(t.useState)(!1),
@@ -1735,7 +1735,7 @@
 					}) : N._("You've already changed your answer twice", null, {
 						hk: "h33B"
 					});
-				return x.a.createElement(x.a.Fragment, null, x.a.createElement(v.j, {
+				return x.a.createElement(x.a.Fragment, null, x.a.createElement(v.k, {
 					"aria-label": d,
 					className: l.additionalOptionButton,
 					disabled: o,
@@ -1816,14 +1816,14 @@
 					}, [n, a]);
 					return x.a.createElement("div", {
 						className: B.a.modal
-					}, x.a.createElement(o.s, {
+					}, x.a.createElement(o.t, {
 						"aria-label": D._("Close", null, {
 							hk: "10CQyx"
 						}),
 						className: B.a.closeButton,
 						Icon: Object(E.b)("close"),
 						onClick: k,
-						priority: o.b.Plain
+						priority: o.c.Plain
 					}), x.a.createElement("header", {
 						className: B.a.header
 					}, x.a.createElement("div", {
@@ -1860,8 +1860,8 @@
 						className: B.a.subtitle
 					}, D._("Reddit Premium members can see what others have picked before making a prediction.", null, {
 						hk: "R7Vkp"
-					}))), x.a.createElement(o.s, {
-						priority: o.b.Primary,
+					}))), x.a.createElement(o.t, {
+						priority: o.c.Primary,
 						className: B.a.button,
 						onClick: () => {
 							n(Object(s.d)({
@@ -1897,7 +1897,7 @@
 			}) => {
 				const G = Object(k.d)(),
 					E = Object(m.a)(),
-					A = Object(k.e)(f.u) ? F.a : v.a,
+					A = Object(k.e)(f.v) ? F.a : v.a,
 					[B, D] = Object(t.useState)(!1),
 					[b, g] = Object(e.a)("hasSeenPredictionSneakPeek", !1),
 					S = !!p,
@@ -1919,7 +1919,7 @@
 					className: A.star4
 				}), x.a.createElement(d, {
 					className: A.star5
-				})), x.a.createElement(o.j, {
+				})), x.a.createElement(o.k, {
 					"aria-label": P._("Sneak a peek", null, {
 						hk: "1VQ7WW"
 					}),
@@ -2044,7 +2044,7 @@
 				isShowingHint: b,
 				...F
 			}, g) => {
-				const v = Object(k.e)(l.u),
+				const v = Object(k.e)(l.v),
 					P = Object(k.e)(c.X),
 					S = !!A,
 					T = E === G.id,
@@ -3504,4 +3504,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.4ee04998975e8bfcb507.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.96998a1b6660f3d1da05.js.map

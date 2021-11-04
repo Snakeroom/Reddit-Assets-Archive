@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.97ed7cede63fa0a4d6f6.js
-// Retrieved at 11/3/2021, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.ed9b3e67ce4f11c6dc75.js
+// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost", "Reddit~StandalonePostPage~reddit-components-MediumPost", "FrontpageSidebar"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1917,7 +1917,7 @@
 				const t = e.predictionTournament,
 					s = t.status === c.a.Live,
 					r = t.status === c.a.Closed,
-					u = Object(i.e)(d.u),
+					u = Object(i.e)(d.v),
 					m = Object(i.e)(t => Object(l.U)(t, {
 						postId: e.id
 					}));
@@ -2557,7 +2557,7 @@
 					showAwardsPlaque: w.a,
 					isTournamentPost: (e, {
 						post: t
-					}) => Boolean(t.predictionTournament) && Object(S.t)(e),
+					}) => Boolean(t.predictionTournament) && Object(S.u)(e),
 					isAudioRoomPostEnabled: S.c
 				}), (e, {
 					postId: t
@@ -2616,7 +2616,7 @@
 						postId: Pe,
 						postIds: Ne,
 						onceInViewport: Le
-					} = e, Fe = !!e.redditStyle || !!e["data-redditstyle"], Re = Fe ? void 0 : p, De = Object(l.a)(fe), Me = be && De, Ue = Object(c.a)(fe), Ve = Object(d.a)(fe), Be = Object(U.c)(Oe), Ge = !!Oe.media && Oe.media.type === _.o.RTJSON, He = Ae && Ge, We = s ? s - H.a : void 0, Ye = !!Oe.recommendationContext, ze = !(z && K || se) || Ye && K, qe = (e => e === ce.ae.OnlyTitles)(Se) && !Object(oe.a)(Oe), Ke = (e => e === ce.ae.MediumHeight)(Se) && !Object(oe.a)(Oe), Ze = (e => {
+					} = e, Fe = !!e.redditStyle || !!e["data-redditstyle"], Re = Fe ? void 0 : p, De = Object(l.a)(fe), Me = be && De, Ue = Object(c.a)(fe), Ve = Object(d.a)(fe), Be = Object(U.c)(Oe), Ge = !!Oe.media && Oe.media.type === _.o.RTJSON, He = Ae && Ge, We = s ? s - H.a : void 0, Ye = !!Oe.recommendationContext, ze = !(z && K || se) || Ye && K, qe = (e => e === ce.be.OnlyTitles)(Se) && !Object(oe.a)(Oe), Ke = (e => e === ce.be.MediumHeight)(Se) && !Object(oe.a)(Oe), Ze = (e => {
 						var t;
 						const {
 							post: s,
@@ -3554,7 +3554,7 @@
 						pageLayer: t
 					}),
 					shouldOpenPostInNewTab: R.db,
-					isTournamentPredictionPostV2: F.u
+					isTournamentPredictionPostV2: F.v
 				}),
 				Q = e => {
 					const {
@@ -3562,7 +3562,7 @@
 						subreddit: s
 					} = e, {
 						isSponsored: n
-					} = t, r = Object(V.a)(), i = Object(B.a)(m.Sc) === m.Xc.Enabled;
+					} = t, r = Object(V.a)(), i = Object(B.a)(m.Tc) === m.Yc.Enabled;
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return o.a.createElement(K, {
 						nowrap: e.nowrap
 					}, o.a.createElement(J, e));
@@ -3840,7 +3840,7 @@
 						type: Y ? v.a.PROFILE : v.a.SUBREDDIT
 					},
 					postId: F.id,
-					size: h.c.XS
+					size: h.d.XS
 				}), D && o.a.createElement(x.b, {
 					isSponsored: F.isSponsored,
 					postId: F.id,
@@ -7885,7 +7885,7 @@
 						postId: t
 					}) || Object(i.H)(e))(e, t),
 					experimentName: n.N
-				}) === n.Ic
+				}) === n.Jc
 			}
 		},
 		"./src/reddit/selectors/experiments/econAwardsPlaque.ts": function(e, t, s) {
@@ -7900,7 +7900,7 @@
 					experimentEligibilitySelector: r.a,
 					experimentName: n.gc
 				});
-				return !(!t || Object(n.bf)(t))
+				return !(!t || Object(n.cf)(t))
 			}
 		},
 		"./src/reddit/selectors/experiments/joinOptimizations.ts": function(e, t, s) {
@@ -8029,8 +8029,8 @@
 			const o = e => {
 				return Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: n.Td
-				}) === n.Ic
+					experimentName: n.Ud
+				}) === n.Jc
 			}
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, s) {
@@ -8270,7 +8270,7 @@
 				i = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const a = e => {
 					const t = Object(i.a)(e);
-					return Boolean(t) && !Object(r.bf)(t)
+					return Boolean(t) && !Object(r.cf)(t)
 				},
 				c = Object(n.a)(a, o.d, (e, t) => e && !t)
 		},
@@ -8286,10 +8286,10 @@
 				o = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = s("./src/reddit/selectors/posts.ts");
 			const a = e => Object(o.c)(e, {
-					experimentName: r.Wd,
+					experimentName: r.Xd,
 					experimentEligibilitySelector: o.a
 				}),
-				c = (e, t) => t === r.fe.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				c = (e, t) => t === r.ge.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				d = Object(n.a)(i.H, a, (e, t) => c(e, t)),
 				l = Object(n.a)((e, t) => t, a, (e, t) => c(e, t))
 		},
@@ -8449,4 +8449,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.97ed7cede63fa0a4d6f6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.ed9b3e67ce4f11c6dc75.js.map

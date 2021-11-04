@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ContributorRequestButton.6bdfdc65001345946d74.js
-// Retrieved at 11/3/2021, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ContributorRequestButton.605bc75d5eab4f534107.js
+// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ContributorRequestButton"], {
 		"./src/reddit/components/ContributorRequestFlow/ContributorRequestButton/index.m.less": function(t, e, s) {
@@ -58,11 +58,11 @@
 						className: s,
 						isContributorRequestPending: n
 					} = this.props;
-					return o.a.createElement(a.s, {
-						priority: t === m.b.ContentGate ? a.b.Secondary : a.b.Primary,
+					return o.a.createElement(a.t, {
+						priority: t === m.b.ContentGate ? a.c.Secondary : a.c.Primary,
 						className: Object(i.a)(e ? null : p.a.RequestButton, s),
 						onClick: this.onRequest,
-						size: e ? a.c.S : a.c.M,
+						size: e ? a.d.S : a.d.M,
 						disabled: n
 					}, n ? r.fbt._("Request Pending", null, {
 						hk: "hVswi"
@@ -122,4 +122,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ContributorRequestButton.6bdfdc65001345946d74.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ContributorRequestButton.605bc75d5eab4f534107.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/1.d5d210315d75e17beff8.js
-// Retrieved at 10/28/2021, 5:10:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/1.de2c3db54b434d5cd5b0.js
+// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	[1], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -294,7 +294,7 @@
 					className: b.a.progress
 				}, y > 1 ? g.fbt._("{current} of {total}", [g.fbt._param("current", p), g.fbt._param("total", y)], {
 					hk: "pZU46"
-				}) : ""), u.a.createElement(I.s, {
+				}) : ""), u.a.createElement(I.t, {
 					redditStyle: !0,
 					className: b.a.footerButton,
 					onClick: i,
@@ -691,4 +691,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/1.d5d210315d75e17beff8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/1.de2c3db54b434d5cd5b0.js.map

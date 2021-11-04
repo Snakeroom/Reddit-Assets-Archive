@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumBlockchainCheckoutModal.daa8ea6f9fcdb1deb9d1.js
-// Retrieved at 10/25/2021, 2:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumBlockchainCheckoutModal.c47d30797cafd7e3f79a.js
+// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumBlockchainCheckoutModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -89,13 +89,13 @@
 				w = s("./src/reddit/selectors/gov.ts"),
 				E = s("./src/reddit/components/Governance/WalletAmount/index.m.less"),
 				_ = s.n(E);
-			const k = Object(l.c)({
+			const N = Object(l.c)({
 				latestWallet: w.d,
 				pointsDetails: (e, {
 					subredditId: t
 				}) => Object(g.b)(e, t)
 			});
-			var N = Object(d.b)(k)((function(e) {
+			var k = Object(d.b)(N)((function(e) {
 					var t;
 					const s = e.latestWallet && e.latestWallet.amount || "0";
 					return c.a.createElement("div", {
@@ -279,10 +279,10 @@
 						hk: "2rNfw8"
 					})), c.a.createElement("div", {
 						className: Z.a.purchase
-					}, c.a.createElement(N, {
+					}, c.a.createElement(k, {
 						className: Z.a.walletAmount,
 						subredditId: i
-					}), c.a.createElement(C.k, {
+					}), c.a.createElement(C.l, {
 						className: Z.a.purchaseButton,
 						onClick: this.onPurchase,
 						"data-redditstyle": !0,
@@ -470,7 +470,7 @@
 						className: b.a.detailsContainer
 					}, t), d.a.createElement(p.a, {
 						className: b.a.buttonRow
-					}, d.a.createElement(m.k, {
+					}, d.a.createElement(m.l, {
 						className: b.a.confirmButton,
 						onClick: e.onConfirmed
 					}, n.fbt._("Ok", null, {
@@ -1053,4 +1053,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumBlockchainCheckoutModal.daa8ea6f9fcdb1deb9d1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumBlockchainCheckoutModal.c47d30797cafd7e3f79a.js.map

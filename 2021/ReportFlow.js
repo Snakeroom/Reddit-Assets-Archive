@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlow.e8daada4635fa057cd25.js
-// Retrieved at 11/3/2021, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlow.78ff1b2c0fb5b840d22a.js
+// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlow", "FrontpageSidebar", "ReportFlowNew"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, o) {
@@ -2761,7 +2761,7 @@
 			const y = d.a.div("ContentPolicyHolder", O.a),
 				E = d.a.div("Header", O.a),
 				S = d.a.div("Description", O.a),
-				k = d.a.wrapped(b.n, "CloseButton", O.a),
+				k = d.a.wrapped(b.o, "CloseButton", O.a),
 				R = d.a.div("RadioOptionsSectionHeader", O.a),
 				I = d.a.wrapped(w.b, "DropdownRow", O.a),
 				j = d.a.div("PickerWrapper", O.a),
@@ -3072,7 +3072,7 @@
 				Ie = o("./src/reddit/models/Subreddit/index.ts"),
 				je = o("./src/reddit/components/ReportFlow/FirstPage/index.m.less"),
 				Te = o.n(je);
-			const Pe = d.a.wrapped(b.k, "SubmitButton", Te.a);
+			const Pe = d.a.wrapped(b.l, "SubmitButton", Te.a);
 			class Le extends s.a.Component {
 				constructor(e) {
 					super(e), this.state = {
@@ -4291,41 +4291,43 @@
 		},
 		"./src/reddit/controls/Button/index.tsx": function(e, t, o) {
 			"use strict";
-			o.d(t, "c", (function() {
+			o.d(t, "d", (function() {
 				return u
-			})), o.d(t, "b", (function() {
+			})), o.d(t, "c", (function() {
 				return p
-			})), o.d(t, "g", (function() {
-				return m
-			})), o.d(t, "a", (function() {
-				return f
-			})), o.d(t, "l", (function() {
-				return w
-			})), o.d(t, "m", (function() {
-				return x
-			})), o.d(t, "k", (function() {
-				return v
-			})), o.d(t, "o", (function() {
-				return O
-			})), o.d(t, "p", (function() {
-				return C
-			})), o.d(t, "n", (function() {
-				return y
-			})), o.d(t, "r", (function() {
-				return E
-			})), o.d(t, "q", (function() {
-				return S
-			})), o.d(t, "e", (function() {
-				return k
-			})), o.d(t, "f", (function() {
-				return R
-			})), o.d(t, "j", (function() {
-				return I
-			})), o.d(t, "d", (function() {
-				return j
 			})), o.d(t, "h", (function() {
-				return T
+				return m
+			})), o.d(t, "b", (function() {
+				return f
+			})), o.d(t, "a", (function() {
+				return _
+			})), o.d(t, "m", (function() {
+				return w
+			})), o.d(t, "n", (function() {
+				return x
+			})), o.d(t, "l", (function() {
+				return v
+			})), o.d(t, "p", (function() {
+				return O
+			})), o.d(t, "q", (function() {
+				return C
+			})), o.d(t, "o", (function() {
+				return y
+			})), o.d(t, "s", (function() {
+				return E
+			})), o.d(t, "r", (function() {
+				return S
+			})), o.d(t, "f", (function() {
+				return k
+			})), o.d(t, "g", (function() {
+				return R
+			})), o.d(t, "k", (function() {
+				return I
+			})), o.d(t, "e", (function() {
+				return j
 			})), o.d(t, "i", (function() {
+				return T
+			})), o.d(t, "j", (function() {
 				return P
 			}));
 			var n = o("./node_modules/react/index.js"),
@@ -4520,7 +4522,7 @@
 					className: Object(s.a)(e, l.a.PlainLinkButton),
 					priority: p.PlainLink
 				}, t));
-			t.s = _
+			t.t = _
 		},
 		"./src/reddit/controls/Dropdown/Row.tsx": function(e, t, o) {
 			"use strict";
@@ -6226,9 +6228,9 @@
 					experimentName: r.Vb,
 					experimentEligibilitySelector: e => l(e, t)
 				}), e => e),
-				d = e => e === r.Ne.NoCommunityWidgets,
-				u = e => e === r.Ne.NoRulesModerators,
-				p = e => e === r.Ne.RelatedPostsDu
+				d = e => e === r.Oe.NoCommunityWidgets,
+				u = e => e === r.Oe.NoRulesModerators,
+				p = e => e === r.Oe.RelatedPostsDu
 		},
 		"./src/reddit/selectors/tooltip.ts": function(e, t, o) {
 			"use strict";
@@ -6257,4 +6259,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.e8daada4635fa057cd25.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.78ff1b2c0fb5b840d22a.js.map

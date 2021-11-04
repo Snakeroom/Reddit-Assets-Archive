@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ChatSettings.69afd2fdeef561347436.js
-// Retrieved at 11/3/2021, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ChatSettings.dd7fb692ee15cd4b81c6.js
+// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-ChatSettings"], {
 		"./src/reddit/components/ModHub/ChatSettings/AccessDisabledBanner/index.m.less": function(e, t, s) {
@@ -322,7 +322,7 @@
 						className: A.a.container
 					}, c.a.createElement(Y.c, {
 						className: A.a.topBar
-					}, c.a.createElement(X.k, {
+					}, c.a.createElement(X.l, {
 						disabled: t || !i,
 						onClick: this.onSaveClick
 					}, e.hasJustSaved ? n.fbt._("Saved", null, {
@@ -374,4 +374,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ChatSettings.69afd2fdeef561347436.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ChatSettings.dd7fb692ee15cd4b81c6.js.map

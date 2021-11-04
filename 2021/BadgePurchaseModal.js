@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/BadgePurchaseModal.2f64897548002825d177.js
-// Retrieved at 11/3/2021, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/BadgePurchaseModal.76746850fbdd8f842e00.js
+// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["BadgePurchaseModal"], {
 		"./src/reddit/actions/economics/subredditPremium/actionCreators.ts": function(e, t, s) {
@@ -112,8 +112,8 @@
 					afterClose: e.afterClose
 				}))
 			}
-			var k = s("./src/reddit/components/Badges/PurchaseModal/PostPurchase/index.m.less"),
-				P = s.n(k);
+			var P = s("./src/reddit/components/Badges/PurchaseModal/PostPurchase/index.m.less"),
+				k = s.n(P);
 			const {
 				fbt: y
 			} = s("./node_modules/fbt/lib/FbtPublic.js");
@@ -171,44 +171,44 @@
 					}, y._("You got a new badge!", null, {
 						hk: "13PLeW"
 					})), r.a.createElement("div", {
-						className: P.a.content
+						className: k.a.content
 					}, function(e) {
 						const t = Object(j.d)(128, 128, e);
 						return r.a.createElement(n.Fragment, null, r.a.createElement(_.a, {
-							className: P.a.sunburst
+							className: k.a.sunburst
 						}), r.a.createElement("img", {
-							className: P.a.image,
+							className: k.a.image,
 							src: t.url2x,
 							srcSet: `${t.url}, ${t.url2x} 2x`
 						}))
 					}(e), function(e, t) {
 						return r.a.createElement("div", {
-							className: P.a.expiry
+							className: k.a.expiry
 						}, y._("Expires in {clock}{timeLeft}", [y._param("clock", r.a.createElement(x.a, {
-							className: P.a.clock
+							className: k.a.clock
 						})), y._param("timeLeft", Object(u.a)(new Date(Date.now() + 1e3 * t.duration), !0))], {
 							hk: "1nLM5D"
 						}))
 					}(0, d)), r.a.createElement("footer", {
-						className: P.a.footer
+						className: k.a.footer
 					}, function(e, t) {
 						return r.a.createElement("div", {
-							className: P.a.wallet
+							className: k.a.wallet
 						}, y._("You have {token}{amount}", [y._param("token", r.a.createElement(f.a, {
 							grey: !0,
-							className: P.a.tokenSymbol,
+							className: k.a.tokenSymbol,
 							subredditId: t
 						})), y._param("amount", Object(l.a)(e.amount))], {
 							hk: "2uBJCn"
 						}))
 					}(a, d.subredditId), function(e, t, s) {
 						return r.a.createElement("div", {
-							className: P.a.controls
-						}, r.a.createElement(g.q, {
+							className: k.a.controls
+						}, r.a.createElement(g.r, {
 							onClick: () => s(e.subredditId)
 						}, y._("Done", null, {
 							hk: "36WZte"
-						})), r.a.createElement(g.k, {
+						})), r.a.createElement(g.l, {
 							onClick: () => t(e.subredditId, e.id)
 						}, y._("Apply badge", null, {
 							hk: "4nWjqv"
@@ -280,7 +280,7 @@
 							className: D.a.tokenSymbol,
 							subredditId: e.subredditId
 						}), Object(l.a)(e.price))
-					}(e.product), (t = e.purchaseInProgress, s = e.tokenName, n = e.onPurchase, r.a.createElement(g.k, {
+					}(e.product), (t = e.purchaseInProgress, s = e.tokenName, n = e.onPurchase, r.a.createElement(g.l, {
 						onClick: n
 					}, t ? r.a.createElement(C.a, {
 						className: D.a.loadingIcon,
@@ -290,15 +290,15 @@
 					}))))) : null;
 					var t, s, n, c
 				})),
-				q = s("./src/reddit/components/Badges/PurchaseModal/index.m.less"),
-				T = s.n(q);
+				T = s("./src/reddit/components/Badges/PurchaseModal/index.m.less"),
+				q = s.n(T);
 			const z = Object(d.c)({
 					alreadyOwned: i.b
 				}),
 				R = Object(c.b)(z);
 			t.default = Object(a.a)(R((function(e) {
 				return r.a.createElement("div", {
-					className: Object(o.a)(T.a.container, e.className)
+					className: Object(o.a)(q.a.container, e.className)
 				}, e.alreadyOwned ? r.a.createElement(B, {
 					productId: e.productId
 				}) : r.a.createElement(H, {
@@ -506,4 +506,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BadgePurchaseModal.2f64897548002825d177.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BadgePurchaseModal.76746850fbdd8f842e00.js.map

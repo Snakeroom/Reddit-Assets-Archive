@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor.d58e012367b0ac6726e3.js
-// Retrieved at 11/3/2021, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor.7b47415ec5408bb92501.js
+// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor"], {
 		"./src/lib/forEachGroup/index.ts": function(t, e, n) {
@@ -843,9 +843,9 @@
 					role: "button",
 					tabIndex: -1
 				};
-				return r.a.createElement(c.s, p({}, S, {
-					size: c.c.S,
-					priority: c.b.Plain,
+				return r.a.createElement(c.t, p({}, S, {
+					size: c.d.S,
+					priority: c.c.Plain,
 					isSquare: !0,
 					Icon: m ? Object(a.b)(m) : g
 				}), r.a.createElement(l.a, {
@@ -884,9 +884,9 @@
 					isConverting: (t, e) => Object(u.a)(t, e.draftKey)
 				}),
 				b = Object(i.b)(f);
-			e.a = s.a.memo(b(t => s.a.createElement(l.s, {
-				priority: l.b.Plain,
-				size: l.c.XS,
+			e.a = s.a.memo(b(t => s.a.createElement(l.t, {
+				priority: l.c.Plain,
+				size: l.d.XS,
 				text: s.a.createElement(s.a.Fragment, null, t.isConverting && s.a.createElement(m, {
 					sizePx: 12
 				}), o.fbt._("Markdown Mode", null, {
@@ -3208,8 +3208,8 @@
 				re = n("./src/reddit/components/RichTextEditor/media/MediaBlock/MediaView/StatusBar/index.m.less"),
 				se = n.n(re);
 			const ie = E.a.div("ControlRow", se.a),
-				ce = E.a.wrapped(oe.s, "Button", se.a),
-				ae = E.a.wrapped(oe.s, "ErrButton", se.a),
+				ce = E.a.wrapped(oe.t, "Button", se.a),
+				ae = E.a.wrapped(oe.t, "ErrButton", se.a),
 				le = E.a.div("Status", se.a),
 				de = E.a.wrapped(ne.a, "ProgressBar", se.a),
 				ue = E.a.div("ErrorLine", se.a),
@@ -3248,22 +3248,22 @@
 					}, d), p.a.createElement("div", {
 						className: se.a.ButtonsContainer
 					}, l ? [p.a.createElement(ae, {
-						kind: oe.a.Button,
-						priority: oe.b.Plain,
+						kind: oe.b.Button,
+						priority: oe.c.Plain,
 						key: "remove",
 						onClick: s
 					}, r.fbt._("Remove", null, {
 						hk: "3tYl0U"
 					})), p.a.createElement(ae, {
-						kind: oe.a.Button,
-						priority: oe.b.Plain,
+						kind: oe.b.Button,
+						priority: oe.c.Plain,
 						key: "retry",
 						onClick: o
 					}, r.fbt._("Retry", null, {
 						hk: "3sO2HB"
 					}))] : p.a.createElement(ce, {
-						kind: oe.a.Button,
-						priority: oe.b.Plain,
+						kind: oe.b.Button,
+						priority: oe.c.Plain,
 						disabled: 100 === a,
 						onClick: n
 					}, r.fbt._("Cancel", null, {
@@ -5015,7 +5015,7 @@
 				ns = E.a.label("Label", Zr.a),
 				os = E.a.div("HintAndButtonRow", Zr.a),
 				rs = E.a.span("InvalidUrlHint", Zr.a),
-				ss = E.a.wrapped(oe.k, "SubmitButton", Zr.a),
+				ss = E.a.wrapped(oe.l, "SubmitButton", Zr.a),
 				is = t => {
 					t && (t.focus(), t.select())
 				},
@@ -6830,7 +6830,7 @@
 						preventSearchBoxScrollOnMount: y,
 						subreddit: c,
 						userCanUseGifs: !!n
-					}), this.renderInternalLinkSuggestionDropdown(), k && p.a.createElement(oe.d, {
+					}), this.renderInternalLinkSuggestionDropdown(), k && p.a.createElement(oe.e, {
 						"aria-label": r.fbt._("submit", null, {
 							hk: "12XoZ8"
 						}),
@@ -7454,8 +7454,8 @@
 					src: t.thumbnail.url
 				})),
 				R = u.a.wrapped(b.a, "ButtonRow", E.a),
-				B = h.k,
-				I = u.a.wrapped(h.n, "CancelButton", E.a),
+				B = h.l,
+				I = u.a.wrapped(h.o, "CancelButton", E.a),
 				w = (t, e) => {
 					if (1 === t) return [0];
 					const n = c()(0, e, e / (t - 1));
@@ -7853,4 +7853,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor.d58e012367b0ac6726e3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor.7b47415ec5408bb92501.js.map

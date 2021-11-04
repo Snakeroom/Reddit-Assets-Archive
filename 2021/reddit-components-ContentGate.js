@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.589a139e748194bf5e59.js
-// Retrieved at 11/3/2021, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.637cedc2bd982ab6f530.js
+// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, n) {
@@ -202,7 +202,7 @@
 				W = n.n(z);
 			const {
 				fbt: K
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), Z = u.a.wrapped(U, "PrivateKey", W.a), Y = u.a.div("ButtonsContainer", W.a), J = u.a.div("Container", W.a), V = u.a.div("ContainerExp", W.a), Q = u.a.div("Description", W.a), X = u.a.div("PrivateSubredditDetails", W.a), $ = u.a.div("PrivateSubredditDescription", W.a), ee = u.a.h3("PrivateSubredditName", W.a), te = u.a.a("Link", W.a), ne = u.a.wrapped(q.m, "LinkRouterButton", W.a), re = u.a.wrapped(q.l, "LinkButton", W.a), ae = u.a.wrapped(q.p, "SecondaryLinkRouterButton", W.a), oe = u.a.wrapped(q.o, "SecondaryLinkButton", W.a), ie = u.a.wrapped(ne, "GoHomeLinkButton", W.a), se = u.a.wrapped(_.a, "CreateCommunityButton", W.a), le = u.a.img("Image", W.a), ce = u.a.img("ImagePlaceholder", W.a), ue = u.a.wrapped(ne, "LeftLinkRouterButton", W.a), de = u.a.wrapped(re, "LeftLinkButton", W.a), me = u.a.wrapped(oe, "SecondaryLeftLinkButton", W.a), he = u.a.wrapped(ae, "SecondaryLeftLinkRouterButton", W.a), pe = u.a.h3("Title", W.a), _e = u.a.div("PageBody", W.a), be = u.a.div("QuarantineMessageWrapper", W.a), ke = Object(c.c)({
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), Z = u.a.wrapped(U, "PrivateKey", W.a), Y = u.a.div("ButtonsContainer", W.a), J = u.a.div("Container", W.a), V = u.a.div("ContainerExp", W.a), Q = u.a.div("Description", W.a), X = u.a.div("PrivateSubredditDetails", W.a), $ = u.a.div("PrivateSubredditDescription", W.a), ee = u.a.h3("PrivateSubredditName", W.a), te = u.a.a("Link", W.a), ne = u.a.wrapped(q.n, "LinkRouterButton", W.a), re = u.a.wrapped(q.m, "LinkButton", W.a), ae = u.a.wrapped(q.q, "SecondaryLinkRouterButton", W.a), oe = u.a.wrapped(q.p, "SecondaryLinkButton", W.a), ie = u.a.wrapped(ne, "GoHomeLinkButton", W.a), se = u.a.wrapped(_.a, "CreateCommunityButton", W.a), le = u.a.img("Image", W.a), ce = u.a.img("ImagePlaceholder", W.a), ue = u.a.wrapped(ne, "LeftLinkRouterButton", W.a), de = u.a.wrapped(re, "LeftLinkButton", W.a), me = u.a.wrapped(oe, "SecondaryLeftLinkButton", W.a), he = u.a.wrapped(ae, "SecondaryLeftLinkRouterButton", W.a), pe = u.a.h3("Title", W.a), _e = u.a.div("PageBody", W.a), be = u.a.div("QuarantineMessageWrapper", W.a), ke = Object(c.c)({
 				isLoggedIn: I.J,
 				origin: G.j,
 				user: I.k,
@@ -563,7 +563,7 @@
 				userIsSuspended: c,
 				onClick: u
 			}) => {
-				return o.a.createElement(h.s, {
+				return o.a.createElement(h.t, {
 					className: e,
 					disabled: c || l,
 					onClick: e => {
@@ -571,7 +571,7 @@
 					},
 					onMouseEnter: n,
 					onMouseLeave: a,
-					priority: h.b.Secondary,
+					priority: h.c.Secondary,
 					id: E,
 					isFullWidth: !0
 				}, r.fbt._("Create Community", null, {
@@ -605,4 +605,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.589a139e748194bf5e59.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.637cedc2bd982ab6f530.js.map

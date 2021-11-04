@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.09c131137458fdc626a7.js
-// Retrieved at 11/3/2021, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.f217165c2137a866f823.js
+// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns", "FrontpageSidebar"], {
 		"./src/reddit/actions/comment/index.ts": function(e, t, s) {
@@ -960,12 +960,12 @@
 						onChange: this.setSelectedFlair
 					}), a.a.createElement("div", {
 						className: C.a.buttonsRow
-					}, a.a.createElement(x.k, {
+					}, a.a.createElement(x.l, {
 						disabled: !l,
 						onClick: this.onApply
 					}, n.fbt._("Apply", null, {
 						hk: "3mAjVQ"
-					})), a.a.createElement(x.n, {
+					})), a.a.createElement(x.o, {
 						className: C.a.clearButton,
 						onClick: this.onClear
 					}, n.fbt._("Clear Flair", null, {
@@ -2376,4 +2376,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.09c131137458fdc626a7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.f217165c2137a866f823.js.map

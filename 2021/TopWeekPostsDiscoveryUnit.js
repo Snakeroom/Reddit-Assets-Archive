@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.c993fe90e99937bcd778.js
-// Retrieved at 11/3/2021, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.fdb315323079c1745d11.js
+// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["TopWeekPostsDiscoveryUnit", "FrontpageSidebar"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -1125,7 +1125,7 @@
 							name: i.name,
 							type: c
 						},
-						size: q.c.XXS,
+						size: q.d.XXS,
 						small: !0
 					}))
 				},
@@ -1697,7 +1697,7 @@
 						pageLayer: t
 					}),
 					shouldOpenPostInNewTab: F.db,
-					isTournamentPredictionPostV2: D.u
+					isTournamentPredictionPostV2: D.v
 				}),
 				Z = e => {
 					const {
@@ -1705,7 +1705,7 @@
 						subreddit: s
 					} = e, {
 						isSponsored: n
-					} = t, a = Object(U.a)(), i = Object(R.a)(u.Sc) === u.Xc.Enabled;
+					} = t, a = Object(U.a)(), i = Object(R.a)(u.Tc) === u.Yc.Enabled;
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return r.a.createElement(K, {
 						nowrap: e.nowrap
 					}, r.a.createElement(Y, e));
@@ -2023,10 +2023,10 @@
 						} = this.props, C = this.state.isHovered, y = Object(l.a)({
 							type: t.type,
 							key: C ? "unsubscribe" : "subscribed"
-						}), E = s || !m && C ? void 0 : Object(c.b)("checkmark"), v = s ? o.c.XSP : p || (m ? o.c.XS : o.c.S);
-						return a.a.createElement(o.s, u({
+						}), E = s || !m && C ? void 0 : Object(c.b)("checkmark"), v = s ? o.d.XSP : p || (m ? o.d.XS : o.d.S);
+						return a.a.createElement(o.t, u({
 							className: e,
-							priority: g.shouldReverseColor ? o.b.Primary : o.b.Secondary,
+							priority: g.shouldReverseColor ? o.c.Primary : o.c.Secondary,
 							Icon: E,
 							text: s ? y : !m && y,
 							onClick: this.onClick,
@@ -2053,10 +2053,10 @@
 						} = this.props, C = Object(l.a)({
 							type: t.type,
 							key: "subscribe"
-						}), y = s ? o.c.XSP : p || (m ? o.c.XS : o.c.S);
-						return a.a.createElement(o.s, u({
+						}), y = s ? o.d.XSP : p || (m ? o.d.XS : o.d.S);
+						return a.a.createElement(o.t, u({
 							className: e,
-							priority: g.shouldReverseColor ? o.b.Secondary : o.b.Primary,
+							priority: g.shouldReverseColor ? o.c.Secondary : o.c.Primary,
 							Icon: s ? void 0 : Object(c.b)("add"),
 							size: y,
 							text: s ? C : !m && C,
@@ -2382,4 +2382,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.c993fe90e99937bcd778.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.fdb315323079c1745d11.js.map

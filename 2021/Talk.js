@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Talk.a1094557351733ae54ff.js
-// Retrieved at 11/3/2021, 1:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Talk.83370347f76a9a5ebe48.js
+// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Talk"], {
 		"./src/reddit/components/CollapsibleFAQ/index.m.less": function(e, a, t) {
@@ -446,9 +446,9 @@
 						href: E,
 						rel: r.a,
 						target: "_blank"
-					}, i.a.createElement(o.j, {
+					}, i.a.createElement(o.k, {
 						className: N.a.ctaButton,
-						priority: o.b.Primary
+						priority: o.c.Primary
 					}, g.fbt._("See Upcoming Talks", null, {
 						hk: "42fDp9"
 					}))), i.a.createElement("div", {
@@ -551,7 +551,7 @@
 				className: x.a.faqSection
 			}, i.a.createElement("div", {
 				className: Object(s.a)(x.a.faqSectionContent, x.a.contentWrapper)
-			}, i.a.createElement(j, null), i.a.createElement(S, null), i.a.createElement(R, null), i.a.createElement("h2", {
+			}, i.a.createElement(S, null), i.a.createElement(j, null), i.a.createElement(R, null), i.a.createElement("h2", {
 				className: x.a.faqHeading
 			}, O._("Questions about Reddit Talk", null, {
 				hk: "G9C1l"
@@ -568,11 +568,11 @@
 				className: x.a.faqMoreQuestionsHeading
 			}, O._("Have more questions? We've got answers.", null, {
 				hk: "3Entyj"
-			})), i.a.createElement(o.s, {
+			})), i.a.createElement(o.t, {
 				className: x.a.fullFaqsButton,
-				priority: o.b.Secondary,
+				priority: o.c.Secondary,
 				href: "https://reddithelp.com/hc/en-us/articles/4404349195284",
-				kind: o.a.ExternalLink,
+				kind: o.b.ExternalLink,
 				target: "_blank"
 			}, O._("View Full FAQs", null, {
 				hk: "1eOLlL"
@@ -589,16 +589,16 @@
 				href: _,
 				rel: r.a,
 				target: "_blank"
-			}, i.a.createElement(o.j, {
-				priority: o.b.Primary,
+			}, i.a.createElement(o.k, {
+				priority: o.c.Primary,
 				className: x.a.ctaLetsDoThisButton
 			}, O._("Let's Do This!", null, {
 				hk: "39lVPQ"
-			}))), i.a.createElement(Q, null))), j = () => i.a.createElement(i.a.Fragment, null, i.a.createElement("div", {
+			}))), i.a.createElement(Q, null))), S = () => i.a.createElement(i.a.Fragment, null, i.a.createElement("div", {
 				className: Object(s.a)(x.a.faqQuestionMark, x.a.faqQuestionMarkWithBolt)
 			}), i.a.createElement("div", {
 				className: x.a.circleFaqYellowWithBolt
-			})), S = () => i.a.createElement(i.a.Fragment, null, i.a.createElement(B, {
+			})), j = () => i.a.createElement(i.a.Fragment, null, i.a.createElement(B, {
 				className: x.a.circleFaqRadialTop
 			}), i.a.createElement("div", {
 				className: x.a.circleFaqCyanSmall
@@ -717,9 +717,9 @@
 					href: _,
 					rel: r.a,
 					target: "_blank"
-				}, i.a.createElement(o.j, {
+				}, i.a.createElement(o.k, {
 					className: W.a.ctaButton,
-					priority: o.b.Primary,
+					priority: o.c.Primary,
 					onClick: () => e((() => e => ({
 						...d.defaults(e),
 						source: "talk_landing_page",
@@ -748,4 +748,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Talk.a1094557351733ae54ff.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Talk.83370347f76a9a5ebe48.js.map

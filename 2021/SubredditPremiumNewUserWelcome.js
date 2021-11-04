@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.554c3fd8bb31ad802386.js
-// Retrieved at 11/3/2021, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.34d5f2119e0218d79a93.js
+// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumNewUserWelcome"], {
 		"./node_modules/lodash/flattenDeep.js": function(e, t, n) {
@@ -741,8 +741,8 @@
 			var x = n("./node_modules/react-router-dom/esm/react-router-dom.js"),
 				M = n("./src/config.ts"),
 				B = n("./src/reddit/helpers/economics/membershipPage.ts"),
-				k = n("./src/reddit/components/Economics/SubredditPremium/NewUserWelcome/Message/index.m.less"),
-				T = n.n(k);
+				T = n("./src/reddit/components/Economics/SubredditPremium/NewUserWelcome/Message/index.m.less"),
+				k = n.n(T);
 			const D = Object(o.c)({
 				meta: (e, {
 					subreddit: t
@@ -750,22 +750,22 @@
 			});
 			var R = Object(l.c)(Object(c.b)(D)((function(e) {
 					return s.a.createElement("div", {
-						className: Object(a.a)(T.a.container, e.className)
+						className: Object(a.a)(k.a.container, e.className)
 					}, y.fbt._("This community is a part of an exclusive experiment run by Reddit Admins.", null, {
 						hk: "1lZWqG"
 					}), " ", y.fbt._("Hundreds of followers have paid for a", null, {
 						hk: "b6O0n"
 					}), s.a.createElement("div", {
-						className: T.a.branding
+						className: k.a.branding
 					}, s.a.createElement("img", {
-						className: T.a.crown,
+						className: k.a.crown,
 						src: `${M.a.assetPath}/img/memberships/paywall/fortnitebr/Crown.gif`
 					}), e.meta.memberAlt), y.fbt._("subscription.", null, {
 						hk: "2NkoEp"
 					}), " ", y.fbt._("They benefit by getting unique features that Reddit doesn't provide in any other community.", null, {
 						hk: "xffSH"
 					}), " ", s.a.createElement(x.a, {
-						className: T.a.link,
+						className: k.a.link,
 						to: Object(B.a)(e.subreddit.name, e.correlationId),
 						onClick: () => e.sendEvent(t => ({
 							source: "meta",
@@ -825,7 +825,7 @@
 						badge: t,
 						subredditId: n,
 						type: g.a.Achievement
-					}), s.a.createElement(G.k, {
+					}), s.a.createElement(G.l, {
 						onClick: this.onApply
 					}, y.fbt._("apply", null, {
 						hk: "3BGbhR"
@@ -2052,7 +2052,7 @@
 			})), n.d(t, "k", (function() {
 				return B
 			})), n.d(t, "r", (function() {
-				return T
+				return k
 			})), n.d(t, "y", (function() {
 				return D
 			})), n.d(t, "u", (function() {
@@ -2236,7 +2236,7 @@
 					membershipAlt: "Supporter Membership"
 				},
 				B = (e, t) => Object.values(e.products.models).filter(e => e.type === a.a.Membership && t && e.subredditId === t),
-				k = (e, t) => {
+				T = (e, t) => {
 					if (!t) return {};
 					const n = M.prices;
 					B(e, t).forEach(e => {
@@ -2245,11 +2245,11 @@
 					const r = _(e, t);
 					return r && r.price && r.currency && (n[r.currency] = r.price), n
 				},
-				T = (e, t) => {
+				k = (e, t) => {
 					var n, r, s, c;
 					const o = (null === (c = null === (s = null === (r = null === (n = e.features) || void 0 === n ? void 0 : n.crypto) || void 0 === r ? void 0 : r.points) || void 0 === s ? void 0 : s[t || ""]) || void 0 === c ? void 0 : c.nomenclature) || M;
 					return {
-						prices: k(e, t),
+						prices: T(e, t),
 						member: o.member || M.member,
 						memberPlural: o.memberPlural || M.memberPlural,
 						memberAlt: o.memberAlt || M.memberAlt,
@@ -2345,4 +2345,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.554c3fd8bb31ad802386.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.34d5f2119e0218d79a93.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.e11d2ed51cc159317c01.js
-// Retrieved at 11/3/2021, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.9ddf104e3e75031e39c0.js
+// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -2853,12 +2853,12 @@
 						onChange: this.setSelectedFlair
 					}), i.a.createElement("div", {
 						className: I.a.buttonsRow
-					}, i.a.createElement(f.k, {
+					}, i.a.createElement(f.l, {
 						disabled: !l,
 						onClick: this.onApply
 					}, r.fbt._("Apply", null, {
 						hk: "3mAjVQ"
-					})), i.a.createElement(f.n, {
+					})), i.a.createElement(f.o, {
 						className: I.a.clearButton,
 						onClick: this.onClear
 					}, r.fbt._("Clear Flair", null, {
@@ -4812,12 +4812,12 @@
 						rtJsonElementProps: o
 					});
 					switch (s) {
-						case b.De.SmIcon:
+						case b.Ee.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: o
 							});
-						case b.De.SmIconHc:
+						case b.Ee.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -4965,7 +4965,7 @@
 						style: {
 							maxHeight: this.state.isTruncated ? m : "none"
 						}
-					}, e), this.state.isTruncated && r.a.createElement(u.q, {
+					}, e), this.state.isTruncated && r.a.createElement(u.r, {
 						className: w.a.seeMore,
 						onClick: this.handleSeeMoreClick
 					}, O._("See More", null, {
@@ -6401,12 +6401,12 @@
 				d = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.xe
+						experimentName: s.ye
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === s.De.SmIcon || t === s.De.SmIconHc
+					return t === s.Ee.SmIcon || t === s.Ee.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -6429,4 +6429,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.e11d2ed51cc159317c01.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.9ddf104e3e75031e39c0.js.map

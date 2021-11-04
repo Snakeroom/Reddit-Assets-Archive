@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.3d2b3901e3ef2f4684b2.js
-// Retrieved at 11/3/2021, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.8f7aac2f475daa52b8f2.js
+// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -2204,7 +2204,7 @@
 				userIsSuspended: d,
 				onClick: l
 			}) => {
-				return o.a.createElement(p.s, {
+				return o.a.createElement(p.t, {
 					className: e,
 					disabled: d || c,
 					onClick: e => {
@@ -2212,7 +2212,7 @@
 					},
 					onMouseEnter: s,
 					onMouseLeave: n,
-					priority: p.b.Secondary,
+					priority: p.c.Secondary,
 					id: y,
 					isFullWidth: !0
 				}, r.fbt._("Create Community", null, {
@@ -6020,7 +6020,7 @@
 							subscribeEventFactory: e => {
 								if (!e) return Object(m.b)(i.type, E)
 							},
-							priority: h.b.Tertiary
+							priority: h.c.Tertiary
 						});
 					return n.a.createElement(b.a, {
 						"data-testid": `${i.type}-link`,
@@ -6970,7 +6970,7 @@
 						},
 						getEventFactory: this.props.getSubscribeEventFactory,
 						onClick: t => this.onSubscribeClick(t, e),
-						size: D.c.S
+						size: D.d.S
 					}))))
 				}
 			}
@@ -8546,12 +8546,12 @@
 						isHeaderContent: !0,
 						subredditIcons: u,
 						suffix: y
-					}), a && n && (this.state.isFollowed ? i.a.createElement(x.n, {
+					}), a && n && (this.state.isFollowed ? i.a.createElement(x.o, {
 						className: E.a.follow,
 						onClick: this.onFollow
 					}, r.fbt._("Unfollow", null, {
 						hk: "ddl2J"
-					})) : i.a.createElement(x.k, {
+					})) : i.a.createElement(x.l, {
 						className: E.a.follow,
 						onClick: this.onFollow
 					}, i.a.createElement(v.a, {
@@ -8574,14 +8574,14 @@
 				const t = r.fbt._("Share", null, {
 					hk: "1PIfHd"
 				});
-				return i.a.createElement(x.s, {
+				return i.a.createElement(x.t, {
 					className: E.a.share,
 					"data-click-id": "share",
 					onClick: e,
 					text: t,
 					Icon: g.a,
-					priority: x.b.Plain,
-					size: x.c.XS
+					priority: x.c.Plain,
+					size: x.d.XS
 				})
 			});
 			var I = k,
@@ -9559,7 +9559,7 @@
 				Ce = s.n(be);
 			const {
 				fbt: xe
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), fe = ue.a.wrapped(pe.q, "TertiaryButton", Ce.a), ye = ue.a.wrapped(fe, "AllRedditResultsButton", Ce.a), ge = e => {
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), fe = ue.a.wrapped(pe.r, "TertiaryButton", Ce.a), ye = ue.a.wrapped(fe, "AllRedditResultsButton", Ce.a), ge = e => {
 				const t = Object(P.b)();
 				return n.a.createElement(I.a, {
 					to: Object(he.a)(e.queryParams)
@@ -9929,16 +9929,16 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const u = (e, t, s) => null != s ? s : t ? e : i.b.Plain,
+			const u = (e, t, s) => null != s ? s : t ? e : i.c.Plain,
 				p = ({
 					border: e,
 					priority: t,
 					small: s,
 					...r
-				}) => o.a.createElement(i.s, m({}, r, {
-					priority: u(i.b.Primary, e, t),
+				}) => o.a.createElement(i.t, m({}, r, {
+					priority: u(i.c.Primary, e, t),
 					className: Object(l.a)(r.className, d.a.BaseButton),
-					size: s ? i.c.S : i.c.M
+					size: s ? i.d.S : i.d.M
 				})),
 				h = e => o.a.createElement(o.a.Fragment, null, o.a.createElement("span", {
 					className: d.a.UnsubscribeButtonDefault
@@ -9959,10 +9959,10 @@
 					priority: s,
 					small: r,
 					...n
-				}) => o.a.createElement(i.s, m({}, n, {
-					priority: u(i.b.Secondary, t, s),
+				}) => o.a.createElement(i.t, m({}, n, {
+					priority: u(i.c.Secondary, t, s),
 					className: Object(l.a)(n.className, d.a.BaseButton),
-					size: r ? i.c.S : i.c.M,
+					size: r ? i.d.S : i.d.M,
 					text: h(e)
 				}));
 			class C extends o.a.Component {
@@ -10337,7 +10337,7 @@
 					})
 				}
 				renderButton() {
-					return o.a.createElement(C.q, {
+					return o.a.createElement(C.r, {
 						className: E.a.flairFilterButton,
 						onMouseDown: this.trackFlairOverflowClick,
 						onClick: this.onToggleCollapse
@@ -11823,9 +11823,9 @@
 			}));
 			var r = s("./src/reddit/constants/experiments.ts"),
 				n = s("./src/reddit/helpers/chooseVariant/index.ts");
-			const o = e => r.qe.Treatment1 === Object(n.c)(e, {
+			const o = e => r.re.Treatment1 === Object(n.c)(e, {
 				experimentEligibilitySelector: n.a,
-				experimentName: r.he
+				experimentName: r.ie
 			})
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, s) {
@@ -12118,10 +12118,10 @@
 				o = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = s("./src/reddit/selectors/posts.ts");
 			const a = e => Object(o.c)(e, {
-					experimentName: n.Wd,
+					experimentName: n.Xd,
 					experimentEligibilitySelector: o.a
 				}),
-				c = (e, t) => t === n.fe.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				c = (e, t) => t === n.ge.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				d = Object(r.a)(i.H, a, (e, t) => c(e, t)),
 				l = Object(r.a)((e, t) => t, a, (e, t) => c(e, t))
 		},
@@ -12133,4 +12133,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.3d2b3901e3ef2f4684b2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.8f7aac2f475daa52b8f2.js.map

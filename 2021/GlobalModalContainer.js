@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GlobalModalContainer.e1ca24863b0abcba1fa3.js
-// Retrieved at 11/3/2021, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GlobalModalContainer.352cd584d522fe9d7d96.js
+// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GlobalModalContainer"], {
 		"./src/reddit/components/ConfirmModal/index.m.less": function(e, t, n) {
@@ -35,10 +35,10 @@
 				className: r.a.text
 			}, e.children), a.a.createElement("div", {
 				className: r.a.buttonWrapper
-			}, e.cancelText && a.a.createElement(l.n, {
+			}, e.cancelText && a.a.createElement(l.o, {
 				className: r.a.secondaryButton,
 				onClick: e.onCancel
-			}, e.cancelText), a.a.createElement(l.k, {
+			}, e.cancelText), a.a.createElement(l.l, {
 				className: r.a.primaryButton,
 				onClick: e.onAccept
 			}, e.acceptText)))))
@@ -78,4 +78,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GlobalModalContainer.e1ca24863b0abcba1fa3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GlobalModalContainer.352cd584d522fe9d7d96.js.map

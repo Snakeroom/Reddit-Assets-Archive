@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.991c7c69f1fc67f9f121.js
-// Retrieved at 11/3/2021, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.657510bc361b66cb7abc.js
+// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-NotificationUnit-Button"], {
 		"./src/reddit/actions/comment/authoring.ts": function(e, t, n) {
@@ -915,7 +915,7 @@
 				onAddUserToQuickReplyList: p,
 				children: O
 			}) => {
-				return s.a.createElement(a.s, {
+				return s.a.createElement(a.t, {
 					onClick: t => {
 						if (f && f(t), e(), b === o.awardNotification) return p();
 						r(Object(m.b)(c))
@@ -1000,10 +1000,10 @@
 									position: f.c.SECOND
 								}) : (e.preventDefault(), T(Object(m.f)(x)))
 							};
-							return s.a.createElement(l.s, {
+							return s.a.createElement(l.t, {
 								onClick: e,
 								isFullWidth: S,
-								priority: l.b.Tertiary,
+								priority: l.c.Tertiary,
 								redditStyle: !0,
 								className: Object(i.a)(h.a.notificationButton, {
 									[h.a.isUnread]: P,
@@ -1031,10 +1031,10 @@
 									})
 								} else e.preventDefault(), T(Object(m.f)(x))
 							};
-							return s.a.createElement(l.s, {
+							return s.a.createElement(l.t, {
 								onClick: e,
 								isFullWidth: S,
-								priority: l.b.Tertiary,
+								priority: l.c.Tertiary,
 								redditStyle: !0,
 								className: Object(i.a)(h.a.notificationButton, {
 									[h.a.isUnread]: P,
@@ -1060,7 +1060,7 @@
 								contextId: F,
 								onClick: e,
 								isFullWidth: S,
-								priority: l.b.Tertiary,
+								priority: l.c.Tertiary,
 								redditStyle: !0,
 								eventSource: u.a.awardNotification,
 								className: Object(i.a)(h.a.notificationButton, {
@@ -1315,7 +1315,7 @@
 								experimentName: s.G,
 								expEventOverride: t
 							});
-							return !!(Object(s.bf)(n) ? void 0 : n)
+							return !!(Object(s.cf)(n) ? void 0 : n)
 						})(n)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -2299,4 +2299,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.991c7c69f1fc67f9f121.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.657510bc361b66cb7abc.js.map

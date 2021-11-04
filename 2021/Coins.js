@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Coins.8a67f46c169ae47ba3d9.js
-// Retrieved at 11/3/2021, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Coins.e602f8c471c9159f4d19.js
+// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Coins"], {
 		"./node_modules/lodash/times.js": function(e, t, a) {
@@ -1500,9 +1500,9 @@
 						className: Object(D.a)(R.a.description, y)
 					}, u), o.a.createElement("div", {
 						className: R.a.ctaContainer
-					}, o.a.createElement(U.s, {
-						kind: U.a.Button,
-						priority: U.b.Primary,
+					}, o.a.createElement(U.t, {
+						kind: U.b.Button,
+						priority: U.c.Primary,
 						className: Object(D.a)(R.a.cta, y),
 						onClick: s
 					}, g), j && o.a.createElement("div", {
@@ -1551,12 +1551,12 @@
 					className: ee.a.premiumDescription
 				}, te._("Get {Number of monthly coins} coins every month with Reddit Premium and browse ads-free", [te._param("Number of monthly coins", l)], {
 					hk: "42dB3q"
-				})), a ? o.a.createElement(U.k, {
+				})), a ? o.a.createElement(U.l, {
 					className: ee.a.premiumCTA,
 					onClick: s
 				}, te._("Manage", null, {
 					hk: "4BQsAp"
-				})) : o.a.createElement(U.k, {
+				})) : o.a.createElement(U.l, {
 					className: ee.a.premiumCTA,
 					onClick: r
 				}, te._("Upgrade", null, {
@@ -1621,7 +1621,7 @@
 					className: ie.a.heroDescription
 				}, oe._("Coins are a virtual good you can use to award exemplary posts or comments. Support Reddit and encourage your favorite contributors to keep making Reddit better.", null, {
 					hk: "3rPVMo"
-				})), o.a.createElement(U.f, {
+				})), o.a.createElement(U.g, {
 					className: ie.a.heroCTA,
 					onClick: r
 				}, oe._("Get Coins", null, {
@@ -1839,4 +1839,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Coins.8a67f46c169ae47ba3d9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Coins.e602f8c471c9159f4d19.js.map

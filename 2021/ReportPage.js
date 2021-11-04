@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportPage.4bd86c6ac2154980ed61.js
-// Retrieved at 11/3/2021, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportPage.70b1211d3b14ba36b0e7.js
+// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportPage"], {
 		"./src/lib/formatPythonString/index.ts": function(e, t, n) {
@@ -1066,8 +1066,8 @@
 				S = c.a.div("OptionHeader", _.a),
 				v = c.a.div("OptionDescription", _.a),
 				P = c.a.header("Header", m.a),
-				k = c.a.footer("Footer", m.a),
-				F = c.a.div("Description", m.a),
+				F = c.a.footer("Footer", m.a),
+				k = c.a.div("Description", m.a),
 				w = c.a.a("Link", m.a),
 				O = c.a.a("RedirectToRedditLink", m.a),
 				I = "https://www.reddithelp.com/en/categories/rules-reporting/account-and-community-restrictions/what-report-abuse";
@@ -1082,9 +1082,9 @@
 						hk: "1bc2jS"
 					})))], {
 						hk: "3sQZ0g"
-					}))), this.renderWithoutOptions = () => s.a.createElement(s.a.Fragment, null, s.a.createElement(F, null, p.fbt._("We will investigate the content you reported and reach out if we have any additional questions.", null, {
+					}))), this.renderWithoutOptions = () => s.a.createElement(s.a.Fragment, null, s.a.createElement(k, null, p.fbt._("We will investigate the content you reported and reach out if we have any additional questions.", null, {
 						hk: "2tRkyQ"
-					})), s.a.createElement(k, null, s.a.createElement(O, {
+					})), s.a.createElement(F, null, s.a.createElement(O, {
 						href: "/"
 					}, p.fbt._("Redirect back to your home in Reddit universe", null, {
 						hk: "1pMLva"
@@ -1098,7 +1098,7 @@
 						className: e.className
 					}, s.a.createElement(P, null, p.fbt._("Thank you for your report.", null, {
 						hk: "2l8iOp"
-					})), e.chosenRule.isAbuseOfReportButton ? s.a.createElement(s.a.Fragment, null, s.a.createElement(F, null, p.fbt._("We've received your report. Here are some things you can do:", null, {
+					})), e.chosenRule.isAbuseOfReportButton ? s.a.createElement(s.a.Fragment, null, s.a.createElement(k, null, p.fbt._("We've received your report. Here are some things you can do:", null, {
 						hk: "12EkwP"
 					})), this.renderAbuseOfReportButtonOption()) : this.renderWithoutOptions())
 				}
@@ -1506,11 +1506,11 @@
 				_e = n.n(Ee);
 			const ye = c.a.header("Header", m.a),
 				Se = c.a.wrapped(be.a, "Footer", _e.a),
-				ve = c.a.wrapped(xe.k, "SubmitButton", _e.a),
+				ve = c.a.wrapped(xe.l, "SubmitButton", _e.a),
 				Pe = Object(o.c)({
 					initialReason: e => e.reportPage.initialReason
 				});
-			class ke extends s.a.Component {
+			class Fe extends s.a.Component {
 				constructor(e) {
 					super(e), this.onSubmit = () => {
 						this.setState({
@@ -1596,7 +1596,7 @@
 					}))
 				}
 			}
-			var Fe = Object(a.b)(Pe)(ke),
+			var ke = Object(a.b)(Pe)(Fe),
 				we = n("./src/reddit/contexts/ApiContext.tsx"),
 				Oe = n("./src/reddit/endpoints/accounts/index.ts"),
 				Ie = n("./src/reddit/endpoints/post/report.ts"),
@@ -1794,7 +1794,7 @@
 					} = this, {
 						chosenReasonPayload: n
 					} = t;
-					return s.a.createElement(Fe, {
+					return s.a.createElement(ke, {
 						chosenReasonPayload: n,
 						dirtyFields: t.dirtyFields,
 						fieldsValidity: t.fieldsValidity,
@@ -1836,4 +1836,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportPage.4bd86c6ac2154980ed61.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportPage.70b1211d3b14ba36b0e7.js.map

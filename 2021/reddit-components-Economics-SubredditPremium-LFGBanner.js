@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Economics-SubredditPremium-LFGBanner.58064c4396f579e642b6.js
-// Retrieved at 11/3/2021, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Economics-SubredditPremium-LFGBanner.b7e20dbce44d82f0056f.js
+// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Economics-SubredditPremium-LFGBanner"], {
 		"./node_modules/lodash/_arraySample.js": function(e, t, n) {
@@ -599,7 +599,7 @@
 					src: e.img
 				}), o.a.createElement("div", {
 					className: D.a.description
-				}, e.description), o.a.createElement(C.q, {
+				}, e.description), o.a.createElement(C.r, {
 					className: D.a.button,
 					onClick: e.onClaim
 				}, e.cta))
@@ -923,7 +923,7 @@
 							onToggleDropdown: () => this.setState(e => ({
 								visibleDropdown: e.visibleDropdown ? void 0 : "playerType"
 							}))
-						}), o.a.createElement(C.k, {
+						}), o.a.createElement(C.l, {
 							className: he.a.button,
 							disabled: !n || !r || !i,
 							onClick: () => {
@@ -1070,7 +1070,7 @@
 						className: _e.a.dismissedText
 					}, s.fbt._("Ok, we won't show you this again.", null, {
 						hk: "4z33KK"
-					})), o.a.createElement(C.k, {
+					})), o.a.createElement(C.l, {
 						onClick: this.handleUndoDismiss
 					}, s.fbt._("undo", null, {
 						hk: "1A9z3Y"
@@ -2302,4 +2302,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Economics-SubredditPremium-LFGBanner.58064c4396f579e642b6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Economics-SubredditPremium-LFGBanner.b7e20dbce44d82f0056f.js.map

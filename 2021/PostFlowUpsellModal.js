@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostFlowUpsellModal.55f776f8c389a3e4b330.js
-// Retrieved at 11/3/2021, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostFlowUpsellModal.03a3ce68e1614318c543.js
+// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostFlowUpsellModal"], {
 		"./src/reddit/components/PostFlowUpsellModal/index.m.less": function(e, t, o) {
@@ -55,18 +55,18 @@
 					hk: "3C3CAV"
 				})), a.a.createElement(c.g, {
 					className: O.a.modalFooter
-				}, a.a.createElement(m.s, {
+				}, a.a.createElement(m.t, {
 					onClick: o,
-					priority: m.b.Secondary
+					priority: m.c.Secondary
 				}, E._("Continue", null, {
 					hk: "3Huqfz"
-				})), a.a.createElement(m.s, {
+				})), a.a.createElement(m.t, {
 					className: O.a.modalSubmitButton,
 					onClick: () => {
 						e.closeModal(), t(Object(_.e)())
 					},
 					to: `/r/${e.currentSubredditName}/submit`,
-					kind: m.a.InternalLink
+					kind: m.b.InternalLink
 				}, E._("Create A Post", null, {
 					hk: "YXi2q"
 				}))))
@@ -74,4 +74,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostFlowUpsellModal.55f776f8c389a3e4b330.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostFlowUpsellModal.03a3ce68e1614318c543.js.map

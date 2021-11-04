@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.ffbd1d2de788db02dca1.js
-// Retrieved at 11/3/2021, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.3c2577c59103ac90220c.js
+// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -284,16 +284,16 @@
 			const p = Object(a.a)(e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
-					experimentName: m.xd
+					experimentName: m.yd
 				});
-				return Object(m.bf)(t) ? void 0 : t
+				return Object(m.cf)(t) ? void 0 : t
 			}, e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
-					experimentName: m.yd
+					experimentName: m.zd
 				});
-				return Object(m.bf)(t) ? void 0 : t
-			}, (e, t) => e === m.Cd.Enabled && t === m.Cd.Enabled);
+				return Object(m.cf)(t) ? void 0 : t
+			}, (e, t) => e === m.Dd.Enabled && t === m.Dd.Enabled);
 			var h = s("./src/config.ts");
 			var b = s("./src/reddit/selectors/user.ts");
 			const v = e => {
@@ -1388,9 +1388,9 @@
 							a = Object(ue.I)(s(), {
 								identifier: w.belongsTo
 							});
-						if (a && (e => z.re.Redirect === Object(Y.b)(e, {
+						if (a && (e => z.se.Redirect === Object(Y.b)(e, {
 								experimentEligibilitySelector: ce,
-								experimentName: z.je
+								experimentName: z.ke
 							}))(s())) return void t(Object(o.c)(a.url));
 						if ((w.media && w.media.type) === K.o.LIVEVIDEO) {
 							const e = `/rpan${w.belongsTo.type===V.a.SUBREDDIT?a.url:"/"}${Object(y.u)(w.id)}`;
@@ -2309,10 +2309,10 @@
 				hk: "1KD7Eh"
 			})), r.a.createElement("div", {
 				className: u.a.CTAButtons
-			}, r.a.createElement(c.s, {
+			}, r.a.createElement(c.t, {
 				className: u.a.LoginLink,
-				kind: c.a.ExternalLink,
-				priority: c.b.Secondary,
+				kind: c.b.ExternalLink,
+				priority: c.c.Secondary,
 				href: Object(i.a)(s, m, "/login"),
 				onClick: e => {
 					Object(a.a)(e) && (e.preventDefault(), e.stopPropagation(), o(), h(Object(l.a)("user_convert")))
@@ -2320,12 +2320,12 @@
 				"data-redditstyle": !0
 			}, p._("Log In", null, {
 				hk: "ZR3pC"
-			})), r.a.createElement(c.s, {
+			})), r.a.createElement(c.t, {
 				className: Object(n.a)(u.a.SignupLink, {
 					[u.a.LiveStreamingSignupLink]: t
 				}),
-				kind: c.a.ExternalLink,
-				priority: c.b.Primary,
+				kind: c.b.ExternalLink,
+				priority: c.c.Primary,
 				href: Object(i.a)(s, m, "/register"),
 				onClick: e => {
 					Object(a.a)(e) && (e.preventDefault(), e.stopPropagation(), d(), h(Object(l.c)("user_convert")))
@@ -2561,7 +2561,7 @@
 				handleGiveAward: c,
 				sendEvent: l
 			}) => {
-				return n.a.createElement(i.d, {
+				return n.a.createElement(i.e, {
 					className: Object(a.a)(k.a.ChatButton, {
 						[k.a.LivestreamingChatButton]: r,
 						[k.a.leftPad]: !t
@@ -3326,7 +3326,7 @@
 				}) => Object(w.Q)(e, {
 					subredditId: t
 				}).name
-			}), P = Object(n.b)(I, j), M = d.a.wrapped(l.a, "CharacterCountdown", y.a), T = d.a.div("EmptyState", y.a), L = d.a.wrapped(m.o, "ModNoteDescription", y.a), A = d.a.wrapped(u.k, "PrimaryButton", y.a), N = d.a.wrapped(b.a, "RadioOption", y.a), D = d.a.span("BoldText", y.a), B = d.a.wrapped(m.t, "ModNoteInput", y.a), V = d.a.wrapped(m.t, "MessageInput", y.a), F = d.a.wrapped(g.a, "Info", y.a), U = d.a.div("SmallInfoText", y.a), H = d.a.div("FormOptionsContainer", y.a), K = d.a.wrapped(m.g, "ModalFooter", y.a), q = d.a.div("FooterRow", y.a), W = d.a.wrapped(q, "ButtonRow", y.a);
+			}), P = Object(n.b)(I, j), M = d.a.wrapped(l.a, "CharacterCountdown", y.a), T = d.a.div("EmptyState", y.a), L = d.a.wrapped(m.o, "ModNoteDescription", y.a), A = d.a.wrapped(u.l, "PrimaryButton", y.a), N = d.a.wrapped(b.a, "RadioOption", y.a), D = d.a.span("BoldText", y.a), B = d.a.wrapped(m.t, "ModNoteInput", y.a), V = d.a.wrapped(m.t, "MessageInput", y.a), F = d.a.wrapped(g.a, "Info", y.a), U = d.a.div("SmallInfoText", y.a), H = d.a.div("FormOptionsContainer", y.a), K = d.a.wrapped(m.g, "ModalFooter", y.a), q = d.a.div("FooterRow", y.a), W = d.a.wrapped(q, "ButtonRow", y.a);
 			class G extends r.a.Component {
 				constructor(e) {
 					super(e), this.onSelectRemovalType = e => {
@@ -3422,7 +3422,7 @@
 					}), r.a.createElement(p.a, {
 						to: `/r/${e.subredditName}/about/removal`,
 						target: "_blank"
-					}, r.a.createElement(u.q, {
+					}, r.a.createElement(u.r, {
 						onClick: e.toggleModal,
 						"data-redditstyle": !0
 					}, x._("Add a removal reason", null, {
@@ -3450,7 +3450,7 @@
 					})), r.a.createElement(q, null, r.a.createElement(M, {
 						maxChars: f.b,
 						text: t.modNote.trim()
-					})), r.a.createElement(W, null, r.a.createElement(u.n, {
+					})), r.a.createElement(W, null, r.a.createElement(u.o, {
 						onClick: this.onCancel,
 						"data-redditstyle": !0
 					}, x._("Cancel", null, {
@@ -3880,7 +3880,7 @@
 						}
 					}))), r.a.createElement(Z, {
 						className: z.a.ModalFooter
-					}, r.a.createElement(W.k, {
+					}, r.a.createElement(W.l, {
 						onClick: t,
 						className: z.a.Button,
 						"data-redditstyle": !0
@@ -3907,10 +3907,10 @@
 					hk: "1rcEDr"
 				})))], {
 					hk: "ODJOz"
-				})), r.a.createElement(W.s, {
+				})), r.a.createElement(W.t, {
 					className: ae.a.bannerButton,
-					kind: W.a.Button,
-					priority: W.b.Primary,
+					kind: W.b.Button,
+					priority: W.c.Primary,
 					onClick: e,
 					"data-redditstyle": !0
 				}, b.fbt._("Learn more", null, {
@@ -3964,7 +3964,7 @@
 					}), r.a.createElement(Oe.a, {
 						to: `/r/${e.subredditName}/about/removal`,
 						target: "_blank"
-					}, r.a.createElement(W.q, {
+					}, r.a.createElement(W.r, {
 						onClick: e.toggleRemovalReasonModal,
 						"data-redditstyle": !0
 					}, Ce._("Add a removal reason", null, {
@@ -5361,7 +5361,7 @@
 				className: z.a.ModalText
 			}, t), r.a.createElement(go, {
 				className: z.a.ModalFooter
-			}, r.a.createElement(W.k, {
+			}, r.a.createElement(W.l, {
 				onClick: e,
 				className: z.a.Button,
 				"data-redditstyle": !0
@@ -6604,7 +6604,7 @@
 				a = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const i = e => {
 					const t = Object(a.a)(e);
-					return Boolean(t) && !Object(r.bf)(t)
+					return Boolean(t) && !Object(r.cf)(t)
 				},
 				d = Object(o.a)(i, n.d, (e, t) => e && !t)
 		},
@@ -6625,4 +6625,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.ffbd1d2de788db02dca1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.3c2577c59103ac90220c.js.map

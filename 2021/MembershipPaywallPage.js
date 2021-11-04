@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MembershipPaywallPage.0071bc5cf8fa12339e81.js
-// Retrieved at 11/3/2021, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MembershipPaywallPage.037b89b9fa692e1008f4.js
+// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MembershipPaywallPage"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -3053,7 +3053,7 @@
 						className: b.a.detailsContainer
 					}, t), l.a.createElement(p.a, {
 						className: b.a.buttonRow
-					}, l.a.createElement(u.k, {
+					}, l.a.createElement(u.l, {
 						className: b.a.confirmButton,
 						onClick: e.onConfirmed
 					}, i.fbt._("Ok", null, {
@@ -5345,14 +5345,14 @@
 			}
 
 			function Qt(e) {
-				return !e.wallet || new Ot.BigNumber(e.wallet.amount).isLessThan(new Ot.BigNumber(e.tokenPrice)) ? n.a.createElement(Pt.k, {
+				return !e.wallet || new Ot.BigNumber(e.wallet.amount).isLessThan(new Ot.BigNumber(e.tokenPrice)) ? n.a.createElement(Pt.l, {
 					className: Xt.a.notEnoughTokens,
 					disabled: !0
 				}, Yt._("Not enough {token-name}", [Yt._param("token-name", e.tokenName)], {
 					hk: "4urJTo"
 				})) : n.a.createElement("div", {
 					className: Xt.a.tokenPurchase
-				}, n.a.createElement(Pt.k, {
+				}, n.a.createElement(Pt.l, {
 					onClick: e.onPayWithTokens,
 					className: Xt.a.tokenPurchaseButton
 				}, Yt._("Pay with {token-name}", [Yt._param("token-name", e.tokenName)], {
@@ -6565,4 +6565,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MembershipPaywallPage.0071bc5cf8fa12339e81.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MembershipPaywallPage.037b89b9fa692e1008f4.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.d59628adbcc00ff40b51.js
-// Retrieved at 11/3/2021, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.af028be0f0189bf20a7b.js
+// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, n) {
@@ -414,7 +414,7 @@
 				}) => o.a.createElement("div", {
 					className: Object(r.a)(e, m.a.container),
 					style: n
-				}, o.a.createElement(l.k, {
+				}, o.a.createElement(l.l, {
 					className: m.a.button,
 					onClick: () => p(t)
 				}, b._("Back to Top", null, {
@@ -767,10 +767,10 @@
 						} = this.props, k = this.state.isHovered, E = Object(c.a)({
 							type: t.type,
 							key: k ? "unsubscribe" : "subscribed"
-						}), x = n || !u && k ? void 0 : Object(d.b)("checkmark"), _ = n ? o.c.XSP : b || (u ? o.c.XS : o.c.S);
-						return s.a.createElement(o.s, m({
+						}), x = n || !u && k ? void 0 : Object(d.b)("checkmark"), _ = n ? o.d.XSP : b || (u ? o.d.XS : o.d.S);
+						return s.a.createElement(o.t, m({
 							className: e,
-							priority: y.shouldReverseColor ? o.b.Primary : o.b.Secondary,
+							priority: y.shouldReverseColor ? o.c.Primary : o.c.Secondary,
 							Icon: x,
 							text: n ? E : !u && E,
 							onClick: this.onClick,
@@ -797,10 +797,10 @@
 						} = this.props, k = Object(c.a)({
 							type: t.type,
 							key: "subscribe"
-						}), E = n ? o.c.XSP : b || (u ? o.c.XS : o.c.S);
-						return s.a.createElement(o.s, m({
+						}), E = n ? o.d.XSP : b || (u ? o.d.XS : o.d.S);
+						return s.a.createElement(o.t, m({
 							className: e,
-							priority: y.shouldReverseColor ? o.b.Secondary : o.b.Primary,
+							priority: y.shouldReverseColor ? o.c.Secondary : o.c.Primary,
 							Icon: n ? void 0 : Object(d.b)("add"),
 							size: E,
 							text: n ? k : !u && k,
@@ -1072,7 +1072,7 @@
 							name: e.subreddit.name,
 							type: m.a.SUBREDDIT
 						},
-						size: b.c.XSP
+						size: b.d.XSP
 					})))
 				}
 		},
@@ -1235,7 +1235,7 @@
 					key: e
 				}))),
 				N = e => {
-					const t = e.isSecondaryButton ? f.p : f.m,
+					const t = e.isSecondaryButton ? f.q : f.n,
 						n = e.linkColor ? {
 							backgroundColor: e.linkColor,
 							color: "white"
@@ -1461,7 +1461,7 @@
 						style: {
 							maxHeight: this.state.isTruncated ? u : "none"
 						}
-					}, e), this.state.isTruncated && s.a.createElement(m.q, {
+					}, e), this.state.isTruncated && s.a.createElement(m.r, {
 						className: v.a.seeMore,
 						onClick: this.handleSeeMoreClick
 					}, O._("See More", null, {
@@ -1772,16 +1772,16 @@
 			}
 			t.a = e => {
 				const t = e.to ? {
-					kind: i.a.InternalLink,
+					kind: i.b.InternalLink,
 					to: e.to
 				} : {};
-				return s.a.createElement(i.s, c({
+				return s.a.createElement(i.t, c({
 					className: Object(a.a)(d.a.Chip, {
 						[d.a.isWide]: e.wide
 					}),
 					onClick: e.onClick,
-					priority: i.b.Tertiary,
-					size: i.c.XS,
+					priority: i.c.Tertiary,
+					size: i.d.XS,
 					text: e.children
 				}, t))
 			}
@@ -2358,7 +2358,7 @@
 						className: Object(c.a)(Z.a.header, s)
 					}, i.a.createElement("h2", null, r || te._("Categories", null, {
 						hk: "46zLMb"
-					}))), this.renderCategoryList(), o && i.a.createElement($.q, {
+					}))), this.renderCategoryList(), o && i.a.createElement($.r, {
 						className: Object(c.a)(Z.a.button, e),
 						onClick: this.toggleExpanded
 					}, o && !this.state.isExpanded ? te._("Show More", null, {
@@ -2431,7 +2431,7 @@
 				xe = (e, {
 					match: t
 				}) => Object(g.b)(t.params.categoryName || ""),
-				_e = Object(m.Ze)(b.i),
+				_e = Object(m.af)(b.i),
 				Se = Object(d.c)({
 					categories: e => Object(ye.c)(e, {
 						categoriesOrder: _e
@@ -2560,4 +2560,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.d59628adbcc00ff40b51.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.af028be0f0189bf20a7b.js.map

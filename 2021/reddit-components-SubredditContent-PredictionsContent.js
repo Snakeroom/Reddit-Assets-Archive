@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.e3e3789ffa67bd49ea61.js
-// Retrieved at 11/3/2021, 1:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.0fa6ca34116ebb585d54.js
+// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SubredditContent-PredictionsContent"], {
 		"./src/reddit/components/Econ/Prediction/hooks/useTournamentsQuery.ts": function(e, t, n) {
@@ -58,7 +58,7 @@
 				m = n("./src/reddit/components/PostCreationForm/Prompt/PromptModal.m.less"),
 				b = n.n(m),
 				p = n("./src/lib/lessComponent.tsx");
-			const f = p.a.wrapped(i.k, "PrimaryButton", b.a),
+			const f = p.a.wrapped(i.l, "PrimaryButton", b.a),
 				_ = p.a.wrapped(s.p, "ModalText", b.a);
 			class h extends r.a.PureComponent {
 				constructor() {
@@ -153,8 +153,8 @@
 				j = n("./src/reddit/helpers/trackers/predictions.ts"),
 				O = n("./src/reddit/hooks/useTracking.ts"),
 				x = n("./src/reddit/models/Toast/index.ts"),
-				k = n("./src/reddit/selectors/experiments/econ/index.ts"),
-				g = n("./src/reddit/selectors/features/predictions/tournaments/index.ts"),
+				g = n("./src/reddit/selectors/experiments/econ/index.ts"),
+				k = n("./src/reddit/selectors/features/predictions/tournaments/index.ts"),
 				E = n("./src/reddit/components/PostCreationForm/Prompt/PromptModal.tsx");
 
 			function y({
@@ -229,14 +229,14 @@
 					[v, P] = Object(r.useState)(!1),
 					[w, A] = Object(r.useState)(null);
 				Object(l.a)(e.name);
-				const I = Object(s.e)(k.o),
-					B = Object(s.e)(t => Object(g.b)(t, {
+				const I = Object(s.e)(g.o),
+					B = Object(s.e)(t => Object(k.b)(t, {
 						subredditId: e.id
 					})),
-					L = Object(s.e)(t => Object(g.j)(t, {
+					L = Object(s.e)(t => Object(k.j)(t, {
 						subredditId: e.id
 					})),
-					M = Object(s.e)(t => Object(g.g)(t, {
+					M = Object(s.e)(t => Object(k.g)(t, {
 						subredditId: e.id
 					}));
 				Object(r.useEffect)(() => {
@@ -285,7 +285,7 @@
 					_1: "1 character remaining"
 				}, [o.fbt._plural(w, "remaining characters")], {
 					hk: "1dBRgv"
-				}) : c.a.createElement(c.a.Fragment, null, " ")), c.a.createElement(_.k, {
+				}) : c.a.createElement(c.a.Fragment, null, " ")), c.a.createElement(_.l, {
 					className: T.a.button,
 					disabled: !u || !B || L || !F,
 					onClick: async () => {
@@ -315,7 +315,7 @@
 					className: T.a.endConditions
 				}, o.fbt._("Tournament can only be ended after its predictions are ended and resolved", null, {
 					hk: "2AgZtm"
-				})), c.a.createElement(_.k, {
+				})), c.a.createElement(_.l, {
 					className: T.a.button,
 					disabled: !B || !M || L,
 					onClick: U
@@ -379,9 +379,9 @@
 			})), n.d(t, "y", (function() {
 				return x
 			})), n.d(t, "w", (function() {
-				return k
-			})), n.d(t, "d", (function() {
 				return g
+			})), n.d(t, "d", (function() {
+				return k
 			})), n.d(t, "j", (function() {
 				return E
 			})), n.d(t, "c", (function() {
@@ -539,7 +539,7 @@
 						reason: "predictions_tab"
 					}
 				}),
-				k = () => e => ({
+				g = () => e => ({
 					...Object(r.defaults)(e),
 					source: "global",
 					action: "view",
@@ -548,7 +548,7 @@
 						pageType: "mod_tool_predict"
 					}
 				}),
-				g = () => e => ({
+				k = () => e => ({
 					...Object(r.defaults)(e),
 					source: "mod_tool_predict",
 					action: "click",
@@ -615,4 +615,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.e3e3789ffa67bd49ea61.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.0fa6ca34116ebb585d54.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.a7c2eed49dfc916d49da.js
-// Retrieved at 11/3/2021, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.1e797eaf59496f399e96.js
+// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -4013,7 +4013,7 @@
 			const v = e => S.d.reCaptchaEnterprise(e) && !Object(D.d)(e),
 				j = e => !!Object(T.c)(e, {
 					experimentEligibilitySelector: Object(g.d)(Object(g.b)(...a.d)),
-					experimentName: b.ie
+					experimentName: b.je
 				}),
 				w = Object(s.b)("LOAD_RECAPTCHA_ENTERPRISE"),
 				A = Object(s.b)("EXECUTE_RECAPTCHA_ENTERPRISE"),
@@ -5918,7 +5918,7 @@
 						pageLayer: t
 					}),
 					shouldOpenPostInNewTab: x.db,
-					isTournamentPredictionPostV2: k.u
+					isTournamentPredictionPostV2: k.v
 				}),
 				z = e => {
 					const {
@@ -5926,7 +5926,7 @@
 						subreddit: r
 					} = e, {
 						isSponsored: s
-					} = t, n = Object(G.a)(), c = Object(B.a)(p.Sc) === p.Xc.Enabled;
+					} = t, n = Object(G.a)(), c = Object(B.a)(p.Tc) === p.Yc.Enabled;
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return a.a.createElement(K, {
 						nowrap: e.nowrap
 					}, a.a.createElement(X, e));
@@ -26307,7 +26307,7 @@
 						postId: t
 					}) || Object(c.H)(e))(e, t),
 					experimentName: s.N
-				}) === s.Ic
+				}) === s.Jc
 			}
 		},
 		"./src/reddit/selectors/experiments/googleOneTap.ts": function(e, t, r) {
@@ -26340,7 +26340,7 @@
 				l = e => e === n.V.OnetapAuto,
 				p = e => e.user.googleOneTapEnabled,
 				b = Object(s.a)(o.K, i, (e, t) => !e && !!t),
-				f = Object(s.a)(o.K, i, (e, t) => !e && !!t && !Object(n.bf)(t))
+				f = Object(s.a)(o.K, i, (e, t) => !e && !!t && !Object(n.cf)(t))
 		},
 		"./src/reddit/selectors/scheduledPosts/index.ts": function(e, t, r) {
 			"use strict";
@@ -26561,4 +26561,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.a7c2eed49dfc916d49da.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.1e797eaf59496f399e96.js.map

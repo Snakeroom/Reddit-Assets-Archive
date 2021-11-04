@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.82e36eaa8393fc339254.js
-// Retrieved at 11/3/2021, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.935ae44eccf4f5c0587b.js
+// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Premium~reddit-components-Econ-Prediction-PremiumModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, r) {
@@ -1863,7 +1863,7 @@
 					className: Object(i.a)(y.a.buttons, e, {
 						[y.a.hero]: !!t
 					})
-				}, s.a.createElement(l.j, {
+				}, s.a.createElement(l.k, {
 					className: y.a.button,
 					onClick: a
 				}, n.fbt._("Manage Premium", null, {
@@ -1900,7 +1900,7 @@
 					className: Object(i.a)(y.a.buttons, e, {
 						[y.a.hero]: !!t
 					})
-				}, s.a.createElement(l.j, {
+				}, s.a.createElement(l.k, {
 					className: y.a.premiumAnnualButton,
 					onClick: () => r(C.packageId, p.b.Year)
 				}, !!C && n.fbt._("{annual price}/Year", [n.fbt._param("annual price", N)], {
@@ -1909,12 +1909,12 @@
 					className: y.a.premiumDiscountBadge
 				}, n.fbt._("Save {annual-month-discount}", [n.fbt._param("annual-month-discount", `${C.bonusPct}%`)], {
 					hk: "TgjzN"
-				}))), s.a.createElement(l.s, {
+				}))), s.a.createElement(l.t, {
 					className: y.a.premiumMonthlyButton,
 					onClick: () => {
 						r(E.packageId, p.b.Month)
 					},
-					priority: l.b.Secondary
+					priority: l.c.Secondary
 				}, E && n.fbt._("{monthly price}/Month", [n.fbt._param("monthly price", I)], {
 					hk: "3xMnhy"
 				})), s.a.createElement("div", {
@@ -2001,12 +2001,12 @@
 						n = Object(o.e)(R.b);
 					return i.a.createElement("div", {
 						className: D.a.container
-					}, i.a.createElement(A.s, {
+					}, i.a.createElement(A.t, {
 						className: D.a.redeemCodeLink,
 						onClick: () => {
 							e(h.d()), t(Object(B.i)())
 						},
-						priority: A.b.Plain
+						priority: A.c.Plain
 					}, a.fbt._("Redeem a Gift Code", null, {
 						hk: "10i0AM"
 					})), i.a.createElement("form", {
@@ -2027,9 +2027,9 @@
 							e.stopPropagation(), t(Object(B.j)(e.target.value))
 						},
 						value: r
-					}), i.a.createElement(A.s, {
+					}), i.a.createElement(A.t, {
 						className: D.a.redeemButton,
-						priority: A.b.Plain
+						priority: A.c.Plain
 					}, a.fbt._("Redeem", null, {
 						hk: "1d2cH2"
 					}))))
@@ -2160,11 +2160,11 @@
 					}))) : s()
 				}
 				renderFAQSection() {
-					return i.a.createElement(A.s, {
+					return i.a.createElement(A.t, {
 						className: j.a.faqButton,
 						href: "https://reddit.zendesk.com/hc/en-us/articles/360043034412-What-is-a-Reddit-premium-membership-",
-						kind: A.a.ExternalLink,
-						priority: A.b.Plain,
+						kind: A.b.ExternalLink,
+						priority: A.c.Plain,
 						target: "_blank"
 					}, a.fbt._("Visit the Reddit Premium FAQs", null, {
 						hk: "22gM46"
@@ -2291,4 +2291,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.82e36eaa8393fc339254.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.935ae44eccf4f5c0587b.js.map

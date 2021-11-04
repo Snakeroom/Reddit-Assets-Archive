@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.fb264bd63631111f341c.js
-// Retrieved at 11/3/2021, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.254850afad918e12a1ec.js
+// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction"], {
 		"./src/lib/constants/specialMembership.ts": function(e, t, n) {
@@ -275,7 +275,7 @@
 					className: l.a.newBadge
 				}, u._("New", null, {
 					hk: "2N0EBb"
-				}))), p && o.a.createElement(i.s, {
+				}))), p && o.a.createElement(i.t, {
 					"aria-label": u._("Close", null, {
 						hk: "2UjnU"
 					}),
@@ -284,7 +284,7 @@
 					onClick: () => {
 						E(!0), n && n()
 					},
-					priority: i.b.Plain
+					priority: i.c.Plain
 				})), e)
 			}
 		},
@@ -459,10 +459,10 @@
 				}) {
 					return o.a.createElement(o.a.Fragment, null, o.a.createElement("div", {
 						className: w.a.header
-					}, o.a.createElement(N.s, {
+					}, o.a.createElement(N.t, {
 						className: w.a.closeButton,
 						Icon: Object(A.b)("close"),
-						priority: N.b.Plain,
+						priority: N.c.Plain,
 						onClick: n
 					}), o.a.createElement("h1", null, v.fbt._("Confirm Your Answer", null, {
 						hk: "4yIXaD"
@@ -476,22 +476,22 @@
 						hk: "1M6iWL"
 					})), o.a.createElement("div", {
 						className: w.a.actions
-					}, o.a.createElement(N.n, {
+					}, o.a.createElement(N.o, {
 						disabled: e,
 						onClick: n,
-						priority: N.b.Secondary,
+						priority: N.c.Secondary,
 						redditStyle: !0,
-						size: N.c.S
+						size: N.d.S
 					}, v.fbt._("Cancel", null, {
 						hk: "2TSLl5"
-					})), o.a.createElement(N.k, {
+					})), o.a.createElement(N.l, {
 						className: w.a.submitButton,
 						disabled: e,
 						onClick: () => {
 							s()
 						},
 						redditStyle: !0,
-						size: N.c.S
+						size: N.d.S
 					}, v.fbt._("Submit", null, {
 						hk: "4aU3dh"
 					})))))
@@ -524,7 +524,7 @@
 					const n = Object(u.g)(t, {
 						postId: e.id
 					});
-					return Boolean((null == n ? void 0 : n.userSelection) && !(null == n ? void 0 : n.resolvedOptionId) && Object(l.v)(t))
+					return Boolean((null == n ? void 0 : n.userSelection) && !(null == n ? void 0 : n.resolvedOptionId) && Object(l.w)(t))
 				}), y = Object(r.e)(p.pb), x = Object(r.e)(p.K), [C, I] = Object(s.useState)(!1), S = m === y, j = b < Date.now(), k = j && S && !E, N = P === d.b.Cancelled || P === d.b.CancelInProgress;
 				return o.a.useEffect(() => {
 					I(!1)
@@ -571,7 +571,7 @@
 				post: e,
 				prediction: t
 			}) => {
-				const [n, i] = Object(s.useState)(!1), c = Object(r.e)(l.u), a = Object(r.e)(p.pb), {
+				const [n, i] = Object(s.useState)(!1), c = Object(r.e)(l.v), a = Object(r.e)(p.pb), {
 					isLoading: u,
 					selectedVoteOption: m,
 					setVoteOptionId: b,
@@ -893,7 +893,7 @@
 					totalStakeAmount: i,
 					tournamentId: a,
 					totalVoters: u
-				} = e, m = Object(r.e)(l.u), b = Boolean(a), p = !b;
+				} = e, m = Object(r.e)(l.v), b = Boolean(a), p = !b;
 				return n === d.b.Cancelled || n === d.b.CancelInProgress ? o.a.createElement("div", {
 					className: Object(c.a)(me.a.container, {
 						[me.a.v2]: m
@@ -989,7 +989,7 @@
 					post: b.H,
 					subredditOrProfile: b.U,
 					userId: p.pb,
-					isPredictionsTournamentPostV2Enabled: l.u
+					isPredictionsTournamentPostV2Enabled: l.v
 				}),
 				Be = Object(a.u)({
 					isCommentsPage: a.x,
@@ -1835,4 +1835,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.fb264bd63631111f341c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.254850afad918e12a1ec.js.map

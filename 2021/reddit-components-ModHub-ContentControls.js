@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.5871c3250faf5afa187c.js
-// Retrieved at 11/3/2021, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.a4d9bf4fe560fe5347d7.js
+// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-ContentControls"], {
 		"./src/reddit/components/ModHub/ContentControls/FormPlaceholder/index.m.less": function(e, t, n) {
@@ -1726,7 +1726,7 @@
 						className: fe.a.container
 					}, d.a.createElement(f.c, {
 						className: fe.a.topBar
-					}, d.a.createElement(y.k, {
+					}, d.a.createElement(y.l, {
 						disabled: t || !i,
 						onClick: this.onSaveClick
 					}, e.hasJustSaved ? s.fbt._("Saved", null, {
@@ -1807,4 +1807,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.5871c3250faf5afa187c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.a4d9bf4fe560fe5347d7.js.map

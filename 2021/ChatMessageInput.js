@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput.9f2378313164cfc2a1a8.js
-// Retrieved at 11/3/2021, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput.5d04d509c61151739e98.js
+// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput"], {
 		"./node_modules/draft-js/dist/Draft.css": function(e, t, s) {},
@@ -603,7 +603,7 @@
 				handleGiveAward: u,
 				sendEvent: d
 			}) => {
-				return o.a.createElement(i.d, {
+				return o.a.createElement(i.e, {
 					className: Object(a.a)(E.a.ChatButton, {
 						[E.a.LivestreamingChatButton]: n,
 						[E.a.leftPad]: !t
@@ -706,7 +706,7 @@
 				R = 1e3,
 				T = "chat_submission_from_rte",
 				M = p.a.form("Form", B.a),
-				U = p.a.wrapped(j.d, "ChatButton", B.a),
+				U = p.a.wrapped(j.e, "ChatButton", B.a),
 				q = p.a.div("CloseIconWrap", B.a),
 				Z = p.a.div("Reply", B.a),
 				G = p.a.div("ReplyAuthor", B.a),
@@ -1972,4 +1972,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.9f2378313164cfc2a1a8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.5d04d509c61151739e98.js.map

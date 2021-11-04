@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.f360602cefddce55d64f.js
-// Retrieved at 11/3/2021, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.500ada2178a6910d1084.js
+// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsFlairModal"], {
 		"./src/reddit/actions/economics/powerups/flairs/index.ts": function(e, t, r) {
@@ -720,8 +720,8 @@
 					onClick: () => {
 						o(Object(x.H)()), p()
 					}
-				}) : d ? null : i.a.createElement(E.s, {
-					priority: E.b.Primary,
+				}) : d ? null : i.a.createElement(E.t, {
+					priority: E.c.Primary,
 					className: Q.a.powerupButton,
 					isFullWidth: !0,
 					onClick: () => {
@@ -846,9 +846,9 @@
 					className: re.a.flairText
 				}, se._("User Flair", null, {
 					hk: "3DaU0r"
-				})), i.a.createElement(E.s, {
+				})), i.a.createElement(E.t, {
 					className: re.a.editButton,
-					priority: E.b.Plain,
+					priority: E.c.Plain,
 					onClick: () => {
 						const e = a ? Object(c.e)(a) : null;
 						o(Object(U.a)()), s(Object(X.b)({
@@ -1015,8 +1015,8 @@
 				onClick: t
 			}) => {
 				const r = Object(n.e)(a.v);
-				return i.a.createElement(o.s, {
-					priority: o.b.Primary,
+				return i.a.createElement(o.t, {
+					priority: o.c.Primary,
 					className: e,
 					onClick: t,
 					isFullWidth: !0
@@ -1335,4 +1335,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.f360602cefddce55d64f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.500ada2178a6910d1084.js.map
