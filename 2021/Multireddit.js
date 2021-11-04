@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.7c8e5fde27ce575b5cdc.js
-// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.0a665dab9c4bdcf42692.js
+// Retrieved at 11/4/2021, 1:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -3280,13 +3280,14 @@
 			}
 			const Be = new Set([h.V.CONTROVERSIAL, h.V.TOP]),
 				Re = new Set([h.V.CONTROVERSIAL, h.V.RISING]),
-				Ae = "ListingSort--Overflow",
-				Me = Object(l.u)({
+				Ae = new Set([h.V.CONTROVERSIAL]),
+				Me = "ListingSort--Overflow",
+				ze = Object(l.u)({
 					isFrontpage: l.z,
 					isProfilePage: l.I,
 					pageLayer: e => e
 				}),
-				ze = Object(f.a)((e, t) => t.sortOptions, (e, t) => t.isFrontpage, S.a, D.k, l.E, T.a, Ne.i, (e, t, n, s, r, o, i) => {
+				Ue = Object(f.a)((e, t) => t.sortOptions, (e, t) => t.isFrontpage, S.a, D.k, l.E, T.a, Ne.i, (e, t, n, s, r, o, i) => {
 					if (e) return {
 						isPopularPage: r,
 						sortOptions: e,
@@ -3299,7 +3300,7 @@
 						locale: i
 					}
 				});
-			class Ue extends r.a.Component {
+			class He extends r.a.Component {
 				constructor() {
 					super(...arguments), this.changeSort = e => {
 						this.props.onChange(e), this.props.sendEvent(Object(O.a)(e))
@@ -3358,7 +3359,7 @@
 						}))
 					}
 				}
-				isLocaleDependentSortOverflow(e) {
+				isLocaleDependentOverflowSort(e) {
 					const {
 						sort: t,
 						isPopularPage: n,
@@ -3366,8 +3367,14 @@
 					} = this.props;
 					return !s.startsWith("en") && (n ? e === h.V.AWARDED && (t === h.V.HOT || t === h.V.TOP) : e === h.V.BEST && t === h.V.TOP)
 				}
+				isWideSortCurrentSelected(e) {
+					const {
+						sort: t
+					} = this.props, n = new Set([h.V.TOP, h.V.NEW]);
+					return Ae.has(t) && n.has(e)
+				}
 				isOverflowSort(e) {
-					return Re.has(e) || this.isLocaleDependentSortOverflow(e)
+					return Re.has(e) || this.isLocaleDependentOverflowSort(e) || this.isWideSortCurrentSelected(e)
 				}
 				render() {
 					const {
@@ -3401,7 +3408,7 @@
 					}), u.length > 0 && r.a.createElement(K, Pe({}, this.props, {
 						className: Object(i.a)(Fe.a.SortOverflow, e),
 						dropdownClassName: Fe.a.Dropdown,
-						dropdownId: Ae,
+						dropdownId: Me,
 						rowClassName: Fe.a.DropdownRow,
 						rowIconClassName: Fe.a.DropdownRowIcon,
 						rowSelectedClassName: Fe.a.DropdownRowSelected,
@@ -3409,20 +3416,20 @@
 						sortOptions: u
 					}), r.a.createElement("button", {
 						className: Fe.a.SortOverflowButton,
-						id: Ae
+						id: Me
 					}, r.a.createElement(De.a, {
 						name: "overflow_horizontal"
 					}))))
 				}
 			}
-			var He = Me(Object(o.b)(ze)(Object(d.c)(Ue))),
-				Ve = n("./src/reddit/components/GeneralCleanup/SortViewBar/index.m.less"),
-				We = n.n(Ve);
-			const qe = Object(l.u)({
+			var Ve = ze(Object(o.b)(Ue)(Object(d.c)(He))),
+				We = n("./src/reddit/components/GeneralCleanup/SortViewBar/index.m.less"),
+				qe = n.n(We);
+			const Ge = Object(l.u)({
 					isProfilePage: l.I,
 					pageLayer: e => e
 				}),
-				Ge = Object(o.b)(null, (e, {
+				Ke = Object(o.b)(null, (e, {
 					subredditId: t
 				}) => ({
 					updateSortPreference: (n, s) => {
@@ -3435,7 +3442,7 @@
 						}
 					}
 				}));
-			class Ke extends r.a.Component {
+			class Ye extends r.a.Component {
 				constructor() {
 					super(...arguments), this.blurListingBroadcast = () => {
 						u.a.setState({
@@ -3463,10 +3470,10 @@
 						updateSortPreference: u
 					} = this.props;
 					return r.a.createElement("div", {
-						className: Object(i.a)(We.a.Container, t),
+						className: Object(i.a)(qe.a.Container, t),
 						onBlur: this.blurListingBroadcast,
 						onFocus: this.focusListingBroadcast
-					}, r.a.createElement(He, {
+					}, r.a.createElement(Ve, {
 						baseUrl: e,
 						disabled: s,
 						geopopularSort: n,
@@ -3476,12 +3483,12 @@
 						sortOptions: c,
 						timeSort: l
 					}), !o && r.a.createElement(m.a, {
-						className: We.a.LayoutSwitch,
+						className: qe.a.LayoutSwitch,
 						subredditId: d
 					}))
 				}
 			}
-			t.a = qe(Ge(Object(d.c)(Ke)))
+			t.a = Ge(Ke(Object(d.c)(Ye)))
 		},
 		"./src/reddit/components/Governance/VaultActionLink/async.ts": function(e, t, n) {
 			"use strict";
@@ -8461,4 +8468,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.7c8e5fde27ce575b5cdc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.0a665dab9c4bdcf42692.js.map

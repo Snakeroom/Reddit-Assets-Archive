@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.0563738498c38cd31d81.js
-// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.97dd30c141848a9ae688.js
+// Retrieved at 11/4/2021, 1:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, s) {
@@ -309,9 +309,9 @@
 							return e
 					}
 				},
-				H = s("./src/lib/omitKey/index.ts");
-			const W = {};
-			var V = (e = W, t) => {
+				W = s("./src/lib/omitKey/index.ts");
+			const H = {};
+			var V = (e = H, t) => {
 					switch (t.type) {
 						case E.b:
 						case T.b: {
@@ -326,7 +326,7 @@
 									dist: o,
 									token: n
 								}
-							} : Object(H.a)(e, s)
+							} : Object(W.a)(e, s)
 						}
 						default:
 							return e
@@ -993,21 +993,21 @@
 				D = s("./src/reddit/models/ContentGate.ts"),
 				U = s("./src/lib/constants/index.ts"),
 				z = s("./src/reddit/selectors/platform.ts"),
-				H = s("./src/reddit/selectors/user.ts");
-			var W = s("./src/reddit/selectors/meta.ts"),
+				W = s("./src/reddit/selectors/user.ts");
+			var H = s("./src/reddit/selectors/meta.ts"),
 				V = s("./src/reddit/components/ContentGate/index.m.less"),
 				K = s.n(V);
 			const {
 				fbt: G
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), q = c.a.wrapped(A, "PrivateKey", K.a), X = c.a.div("ButtonsContainer", K.a), Y = c.a.div("Container", K.a), Q = c.a.div("ContainerExp", K.a), J = c.a.div("Description", K.a), Z = c.a.div("PrivateSubredditDetails", K.a), $ = c.a.div("PrivateSubredditDescription", K.a), ee = c.a.h3("PrivateSubredditName", K.a), te = c.a.a("Link", K.a), se = c.a.wrapped(B.n, "LinkRouterButton", K.a), oe = c.a.wrapped(B.m, "LinkButton", K.a), ne = c.a.wrapped(B.q, "SecondaryLinkRouterButton", K.a), re = c.a.wrapped(B.p, "SecondaryLinkButton", K.a), ae = c.a.wrapped(se, "GoHomeLinkButton", K.a), ie = c.a.wrapped(h.a, "CreateCommunityButton", K.a), de = c.a.img("Image", K.a), le = c.a.img("ImagePlaceholder", K.a), ce = c.a.wrapped(se, "LeftLinkRouterButton", K.a), me = c.a.wrapped(oe, "LeftLinkButton", K.a), ue = c.a.wrapped(re, "SecondaryLeftLinkButton", K.a), pe = c.a.wrapped(ne, "SecondaryLeftLinkRouterButton", K.a), be = c.a.h3("Title", K.a), he = c.a.div("PageBody", K.a), fe = c.a.div("QuarantineMessageWrapper", K.a), ye = Object(l.c)({
-				isLoggedIn: H.J,
-				origin: W.j,
-				user: H.k,
+				isLoggedIn: W.J,
+				origin: H.j,
+				user: W.k,
 				isPrivateSubredditContributorRequestPending: e => (e => {
-					if (!Object(H.K)(e)) return !1;
+					if (!Object(W.K)(e)) return !1;
 					const t = Object(z.d)(e);
 					if (!t) return !1;
-					const s = Object(H.f)(e, t);
+					const s = Object(W.f)(e, t);
 					if (!s) return !1;
 					if (!s.privateSubreddit) return !1;
 					const {
@@ -1678,7 +1678,7 @@
 					noHover: !0,
 					isSelected: !1
 				})), "Row", R.a),
-				H = ({
+				W = ({
 					disabled: e,
 					...t
 				}) => n.a.createElement("div", F({}, t, {
@@ -1686,7 +1686,7 @@
 						[R.a.isDisabled]: e
 					})
 				})),
-				W = B.a.div("DropdownRowDisabled", R.a),
+				H = B.a.div("DropdownRowDisabled", R.a),
 				V = Object(c.u)({
 					isFrontpage: c.z,
 					isProfilePage: c.I,
@@ -1712,7 +1712,7 @@
 					onClick: e.onOpenDropdown
 				}, !1 !== e.showTitle && n.a.createElement(U, null, g.fbt._("Sort", null, {
 					hk: "2BfINq"
-				})), n.a.createElement(H, {
+				})), n.a.createElement(W, {
 					disabled: e.disabled
 				}, e.children || n.a.createElement(z, {
 					className: e.buttonClassName,
@@ -1727,7 +1727,7 @@
 					tooltipId: e.dropdownId || M
 				}, t, {
 					renderContentsHidden: !0
-				}), e.disabled ? n.a.createElement(W, null, g.fbt._("Coming soon", null, {
+				}), e.disabled ? n.a.createElement(H, null, g.fbt._("Coming soon", null, {
 					hk: "taPqm"
 				})) : (e.sortOptions || ((e, t, s, o, n) => {
 					const r = [b.V.HOT, b.V.NEW, b.V.TOP, b.V.RISING];
@@ -1966,7 +1966,7 @@
 				return n.a.createElement("div", {
 					className: e.className,
 					onClick: e.onOpenDropdown
-				}, n.a.createElement(H, {
+				}, n.a.createElement(W, {
 					className: e.wrapperClassName,
 					disabled: e.disabled
 				}, n.a.createElement(z, {
@@ -2137,7 +2137,7 @@
 					return n.a.createElement(n.a.Fragment, null, n.a.createElement("div", {
 						className: Object(a.a)(ue.a.countrySort, e.className),
 						onClick: () => e.dropdownIsOpen ? e.onCloseDropdown(be) : e.onOpenDropdown(be)
-					}, n.a.createElement(H, {
+					}, n.a.createElement(W, {
 						className: e.wrapperClassName,
 						disabled: e.disabled
 					}, n.a.createElement(z, {
@@ -2205,7 +2205,7 @@
 				}))(Object(l.c)(e => n.a.createElement(_e, {
 					className: e.className,
 					onClick: e.onOpenDropdown
-				}, n.a.createElement(H, {
+				}, n.a.createElement(W, {
 					className: e.wrapperClassName,
 					disabled: !1
 				}, n.a.createElement(z, {
@@ -2251,13 +2251,14 @@
 			}
 			const Fe = new Set([b.V.CONTROVERSIAL, b.V.TOP]),
 				Me = new Set([b.V.CONTROVERSIAL, b.V.RISING]),
-				Ae = "ListingSort--Overflow",
-				De = Object(c.u)({
+				Ae = new Set([b.V.CONTROVERSIAL]),
+				De = "ListingSort--Overflow",
+				Ue = Object(c.u)({
 					isFrontpage: c.z,
 					isProfilePage: c.I,
 					pageLayer: e => e
 				}),
-				Ue = Object(f.a)((e, t) => t.sortOptions, (e, t) => t.isFrontpage, j.a, N.k, c.E, E.a, Te.i, (e, t, s, o, n, r, a) => {
+				ze = Object(f.a)((e, t) => t.sortOptions, (e, t) => t.isFrontpage, j.a, N.k, c.E, E.a, Te.i, (e, t, s, o, n, r, a) => {
 					if (e) return {
 						isPopularPage: n,
 						sortOptions: e,
@@ -2270,7 +2271,7 @@
 						locale: a
 					}
 				});
-			class ze extends n.a.Component {
+			class We extends n.a.Component {
 				constructor() {
 					super(...arguments), this.changeSort = e => {
 						this.props.onChange(e), this.props.sendEvent(Object(P.a)(e))
@@ -2329,7 +2330,7 @@
 						}))
 					}
 				}
-				isLocaleDependentSortOverflow(e) {
+				isLocaleDependentOverflowSort(e) {
 					const {
 						sort: t,
 						isPopularPage: s,
@@ -2337,8 +2338,14 @@
 					} = this.props;
 					return !o.startsWith("en") && (s ? e === b.V.AWARDED && (t === b.V.HOT || t === b.V.TOP) : e === b.V.BEST && t === b.V.TOP)
 				}
+				isWideSortCurrentSelected(e) {
+					const {
+						sort: t
+					} = this.props, s = new Set([b.V.TOP, b.V.NEW]);
+					return Ae.has(t) && s.has(e)
+				}
 				isOverflowSort(e) {
-					return Me.has(e) || this.isLocaleDependentSortOverflow(e)
+					return Me.has(e) || this.isLocaleDependentOverflowSort(e) || this.isWideSortCurrentSelected(e)
 				}
 				render() {
 					const {
@@ -2372,7 +2379,7 @@
 					}), m.length > 0 && n.a.createElement(q, Be({}, this.props, {
 						className: Object(a.a)(Re.a.SortOverflow, e),
 						dropdownClassName: Re.a.Dropdown,
-						dropdownId: Ae,
+						dropdownId: De,
 						rowClassName: Re.a.DropdownRow,
 						rowIconClassName: Re.a.DropdownRowIcon,
 						rowSelectedClassName: Re.a.DropdownRowSelected,
@@ -2380,20 +2387,20 @@
 						sortOptions: m
 					}), n.a.createElement("button", {
 						className: Re.a.SortOverflowButton,
-						id: Ae
+						id: De
 					}, n.a.createElement(Ne.a, {
 						name: "overflow_horizontal"
 					}))))
 				}
 			}
-			var He = De(Object(r.b)(Ue)(Object(l.c)(ze))),
-				We = s("./src/reddit/components/GeneralCleanup/SortViewBar/index.m.less"),
-				Ve = s.n(We);
-			const Ke = Object(c.u)({
+			var He = Ue(Object(r.b)(ze)(Object(l.c)(We))),
+				Ve = s("./src/reddit/components/GeneralCleanup/SortViewBar/index.m.less"),
+				Ke = s.n(Ve);
+			const Ge = Object(c.u)({
 					isProfilePage: c.I,
 					pageLayer: e => e
 				}),
-				Ge = Object(r.b)(null, (e, {
+				qe = Object(r.b)(null, (e, {
 					subredditId: t
 				}) => ({
 					updateSortPreference: (s, o) => {
@@ -2406,7 +2413,7 @@
 						}
 					}
 				}));
-			class qe extends n.a.Component {
+			class Xe extends n.a.Component {
 				constructor() {
 					super(...arguments), this.blurListingBroadcast = () => {
 						m.a.setState({
@@ -2434,7 +2441,7 @@
 						updateSortPreference: m
 					} = this.props;
 					return n.a.createElement("div", {
-						className: Object(a.a)(Ve.a.Container, t),
+						className: Object(a.a)(Ke.a.Container, t),
 						onBlur: this.blurListingBroadcast,
 						onFocus: this.focusListingBroadcast
 					}, n.a.createElement(He, {
@@ -2447,12 +2454,12 @@
 						sortOptions: d,
 						timeSort: c
 					}), !r && n.a.createElement(u.a, {
-						className: Ve.a.LayoutSwitch,
+						className: Ke.a.LayoutSwitch,
 						subredditId: l
 					}))
 				}
 			}
-			t.a = Ke(Ge(Object(l.c)(qe)))
+			t.a = Ge(qe(Object(l.c)(Xe)))
 		},
 		"./src/reddit/components/LargePost/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -2517,8 +2524,8 @@
 				D = s("./src/reddit/components/ModModeReports/helpers.ts"),
 				U = s("./src/reddit/components/OneFeed/PostRecommendationContext.tsx"),
 				z = s("./src/reddit/components/PostBackgroundWrapper/index.tsx"),
-				H = s("./src/reddit/components/PostContainer/index.tsx"),
-				W = s("./src/reddit/components/PostLeftRail/index.tsx"),
+				W = s("./src/reddit/components/PostContainer/index.tsx"),
+				H = s("./src/reddit/components/PostLeftRail/index.tsx"),
 				V = s("./src/reddit/components/PostMedia/index.tsx"),
 				K = s("./src/reddit/components/PostOverflowMenu/index.tsx"),
 				G = s("./src/reddit/icons/fonts/Sticky/index.tsx"),
@@ -2657,7 +2664,7 @@
 						postId: Te,
 						postIds: Le,
 						onceInViewport: Re
-					} = e, Be = !!e.redditStyle || !!e["data-redditstyle"], Fe = Be ? void 0 : p, Me = Object(c.a)(be), Ae = he && Me, De = Object(d.a)(be), Ue = Object(l.a)(be), ze = Object(D.c)(Ce), He = !!Ce.media && Ce.media.type === v.o.RTJSON, We = Ne && He, Ve = s ? s - W.a : void 0, Ke = !!Ce.recommendationContext, Ge = !(G && X || se) || Ke && X, qe = (e => e === de.be.OnlyTitles)(Oe) && !Object(re.a)(Ce), Xe = (e => e === de.be.MediumHeight)(Oe) && !Object(re.a)(Ce), Ye = (e => {
+					} = e, Be = !!e.redditStyle || !!e["data-redditstyle"], Fe = Be ? void 0 : p, Me = Object(c.a)(be), Ae = he && Me, De = Object(d.a)(be), Ue = Object(l.a)(be), ze = Object(D.c)(Ce), We = !!Ce.media && Ce.media.type === v.o.RTJSON, He = Ne && We, Ve = s ? s - H.a : void 0, Ke = !!Ce.recommendationContext, Ge = !(G && X || se) || Ke && X, qe = (e => e === de.be.OnlyTitles)(Oe) && !Object(re.a)(Ce), Xe = (e => e === de.be.MediumHeight)(Oe) && !Object(re.a)(Ce), Ye = (e => {
 						var t;
 						const {
 							post: s,
@@ -2683,7 +2690,7 @@
 							t && (null == Re || Re(ue))
 						})
 					}, [Re, ue]);
-					return Object(g.a)(et, tt), n.a.createElement(y.b, null, n.a.createElement(H.a, {
+					return Object(g.a)(et, tt), n.a.createElement(y.b, null, n.a.createElement(W.a, {
 						className: Object(E.a)(xe.a.container, r, ge.a.largeAndMediumPostStyles, ge.a.largeAndMediumActiveStyles, Object(m.a)(e), {
 							[ge.a.mUseRedditTheme]: Be,
 							promotedvideolink: Ce.isSponsored && !(Ce.media && v.a.has(Ce.media.type)),
@@ -2809,7 +2816,7 @@
 						onIgnoreReports: ve,
 						onOpenReportsDropdown: we,
 						post: Ce,
-						showEditPost: We,
+						showEditPost: He,
 						showEditFlair: je,
 						useFlatlistBreakpoints: Object(K.b)({
 							editPost: !1,
@@ -3547,7 +3554,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const H = Object(M.a)(U.a.wrapped(e => {
+			const W = Object(M.a)(U.a.wrapped(e => {
 				const {
 					className: t,
 					itemIds: s
@@ -3558,7 +3565,7 @@
 					})
 				}, e))
 			}, "Component", D.a));
-			var W = e => a.a.createElement(H, z({}, e, {
+			var H = e => a.a.createElement(W, z({}, e, {
 					itemComponent: B.a
 				})),
 				V = s("./src/reddit/components/PostList/index.tsx"),
@@ -3818,8 +3825,8 @@
 				De = s("./src/lib/CSSVariableProvider/withTheme.tsx"),
 				Ue = s("./src/lib/isUrl/index.ts"),
 				ze = s("./src/reddit/components/JSAPIContainers/index.tsx"),
-				He = s("./src/reddit/components/Media/index.tsx"),
-				We = s("./src/reddit/components/PostBackgroundWrapper/index.tsx"),
+				We = s("./src/reddit/components/Media/index.tsx"),
+				He = s("./src/reddit/components/PostBackgroundWrapper/index.tsx"),
 				Ve = s("./src/reddit/components/PostContainer/index.tsx"),
 				Ke = s("./src/reddit/components/PostFlairPicker/index.tsx"),
 				Ge = s("./src/reddit/components/PostTitle/index.tsx"),
@@ -3973,7 +3980,7 @@
 						userIsOp: x
 					} = e, {
 						media: C
-					} = n || h, O = C && C.type, k = Object(Ke.b)(h.id), _ = O === Je.o.RTJSON, P = x && _, S = Object(Qe.a)(u), j = Object(Xe.a)(u), E = Object(Ye.a)(u), I = C && O !== Je.o.RTJSON && O !== Je.o.TEXT, N = !C && !!h.source && Object(Ue.a)(h.source.url), T = C && a.a.createElement(He.a, {
+					} = n || h, O = C && C.type, k = Object(Ke.b)(h.id), _ = O === Je.o.RTJSON, P = x && _, S = Object(Qe.a)(u), j = Object(Xe.a)(u), E = Object(Ye.a)(u), I = C && O !== Je.o.RTJSON && O !== Je.o.TEXT, N = !C && !!h.source && Object(Ue.a)(h.source.url), T = C && a.a.createElement(We.a, {
 						autoplayPref: t,
 						availableWidth: s,
 						className: xt.a.media,
@@ -3999,7 +4006,7 @@
 						post: h,
 						onClick: b,
 						eventFactory: d
-					}, a.a.createElement(We.a, {
+					}, a.a.createElement(He.a, {
 						className: xt.a.backgroundWrapper,
 						flairStyleTemplate: l
 					}, I && T, a.a.createElement("div", {
@@ -4086,10 +4093,10 @@
 				arePinnedPostsLoaded: J.a,
 				currentUser: _t.k,
 				pinnedPostIds: J.P
-			}), Ht = Object(i.b)(zt, e => ({
+			}), Wt = Object(i.b)(zt, e => ({
 				openPost: t => e(Object(Ae.K)(t))
 			}));
-			class Wt extends a.a.Component {
+			class Ht extends a.a.Component {
 				constructor() {
 					super(...arguments), this.containerRef = null, this.state = {
 						showEducation: !1,
@@ -4162,7 +4169,7 @@
 					})), s)
 				}
 			}
-			var Vt = Object(u.u)()(Ht(Wt)),
+			var Vt = Object(u.u)()(Wt(Ht)),
 				Kt = s("./src/reddit/components/ProfileSidebar/index.tsx"),
 				Gt = s("./src/reddit/helpers/trackers/screenview.ts"),
 				qt = s("./src/reddit/layout/page/Listing/index.tsx"),
@@ -4360,7 +4367,7 @@
 							timeSort: h
 						};
 					let x;
-					return x = t === be.g.Compact ? a.a.createElement(W, Qt({}, v, {
+					return x = t === be.g.Compact ? a.a.createElement(H, Qt({}, v, {
 						onLoadMore: this.props.onLoadMoreChronoItems,
 						onTryAgain: i
 					})) : a.a.createElement(a.a.Fragment, null, u && a.a.createElement(Vt, {
@@ -5169,4 +5176,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.0563738498c38cd31d81.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.97dd30c141848a9ae688.js.map
