@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlow.dde59a1238c6e26b84ce.js
-// Retrieved at 11/4/2021, 6:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlow.1052170bf946de65d931.js
+// Retrieved at 11/4/2021, 7:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlow", "FrontpageSidebar", "ReportFlowNew"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -4261,46 +4261,6 @@
 				l = 100,
 				c = 100
 		},
-		"./src/reddit/contexts/ApiContext.tsx": function(e, t, n) {
-			"use strict";
-			n.d(t, "a", (function() {
-				return a
-			})), n.d(t, "b", (function() {
-				return l
-			}));
-			var o = n("./node_modules/react/index.js"),
-				r = n.n(o);
-
-			function s() {
-				return (s = Object.assign || function(e) {
-					for (var t = 1; t < arguments.length; t++) {
-						var n = arguments[t];
-						for (var o in n) Object.prototype.hasOwnProperty.call(n, o) && (e[o] = n[o])
-					}
-					return e
-				}).apply(this, arguments)
-			}
-			const i = {
-					apiContext: () => {
-						throw new Error("Component attempted to make an API request with no ApiContext")
-					},
-					gqlContext: () => {
-						throw new Error("Component attempted to make an API request with no GqlContext")
-					}
-				},
-				a = Object(o.createContext)(i);
-
-			function l(e) {
-				const t = t => r.a.createElement(a.Consumer, null, ({
-					apiContext: n,
-					gqlContext: o
-				}) => r.a.createElement(e, s({
-					apiContext: n,
-					gqlContext: o
-				}, t)));
-				return t.displayName = `WithApiContext(${e.displayName||e.name})`, t
-			}
-		},
 		"./src/reddit/controls/Button/index.m.less": function(e, t, n) {
 			e.exports = {
 				Button: "_2iuoyPiKHN3kfOoeIQalDT",
@@ -6851,4 +6811,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.dde59a1238c6e26b84ce.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.1052170bf946de65d931.js.map

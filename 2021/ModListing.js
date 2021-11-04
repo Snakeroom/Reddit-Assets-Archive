@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.f4bfebbab5240ffb8a8e.js
-// Retrieved at 11/4/2021, 6:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.bc6b0e53ae580ee1b21f.js
+// Retrieved at 11/4/2021, 7:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -1878,18 +1878,6 @@
 				mIsInteractive: "qW0l8Af61EP35WIG6vnGk",
 				mIsActive: "Z3lT0VGlALek4Q9j0ZQCr",
 				mIsVoteable: "_3edNsMs0PNfyQYofMNVhsG"
-			}
-		},
-		"./src/reddit/helpers/brandSafety/index.ts": function(e, t, r) {
-			"use strict";
-			r.d(t, "a", (function() {
-				return s
-			}));
-			var n = r("./src/reddit/models/WhitelistStatus/index.ts");
-			const s = (e, t) => {
-				const r = e.some(e => e.isNSFW),
-					s = t.some(e => e.wls === n.b.NO_ADS);
-				return !r && !s
 			}
 		},
 		"./src/reddit/helpers/isListingFocused/index.tsx": function(e, t, r) {
@@ -4612,4 +4600,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.f4bfebbab5240ffb8a8e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.bc6b0e53ae580ee1b21f.js.map

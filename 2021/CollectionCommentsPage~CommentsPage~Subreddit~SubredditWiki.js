@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.48c0da7bc326687a01b7.js
-// Retrieved at 11/4/2021, 6:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.a4c626b5fc4cc8894f51.js
+// Retrieved at 11/4/2021, 7:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"], {
 		"./src/lib/linkMatchers/index.ts": function(e, t, r) {
@@ -120,9 +120,9 @@
 			})), r.d(t, "getSubredditUserCommentsPowerupsInfoFromCommentCollection", (function() {
 				return C
 			})), r.d(t, "setSubredditUserAchievementFlair", (function() {
-				return T
-			})), r.d(t, "setSubredditUserSupporterFlair", (function() {
 				return P
+			})), r.d(t, "setSubredditUserSupporterFlair", (function() {
+				return T
 			})), r.d(t, "setSubredditUserPowerupsFlairsVisibility", (function() {
 				return L
 			}));
@@ -233,7 +233,7 @@
 					Object.values(t).forEach(e => {
 						s.add(e.authorId)
 					}), await r(E(e, Array.from(s)))
-				}, T = (e, t) => async (r, n) => {
+				}, P = (e, t) => async (r, n) => {
 					const s = n(),
 						i = Object(g.k)(s);
 					if (!i) return;
@@ -248,7 +248,7 @@
 						achievementFlairType: t,
 						supporterFlairType: o
 					}))
-				}, P = (e, t) => async (r, n) => {
+				}, T = (e, t) => async (r, n) => {
 					const s = n(),
 						i = Object(g.k)(s);
 					if (!i) return;
@@ -1173,7 +1173,7 @@
 						const t = this.resolve(e);
 						return !1 !== this.resolved[t] && !!r.m[t]
 					},
-					importAsync: () => Promise.all([r.e("CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~MembershipPaywa~c24a8af4"), r.e("ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8"), r.e("CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab"), r.e("CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255"), r.e("reddit-components-SidebarNativeAd")]).then(r.bind(null, "./src/reddit/components/SidebarNativeAd/index.tsx")),
+					importAsync: () => Promise.all([r.e("CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~MembershipPaywa~c24a8af4"), r.e("CollectionCommentsPage~CommentsPage~Frontpage~GovernanceReleaseNotesModal~ModListing~ModQueuePages~M~eb6c0aee"), r.e("ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8"), r.e("CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab"), r.e("CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255"), r.e("reddit-components-SidebarNativeAd")]).then(r.bind(null, "./src/reddit/components/SidebarNativeAd/index.tsx")),
 					requireAsync(e) {
 						const t = this.resolve(e);
 						return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
@@ -1440,8 +1440,8 @@
 					target: "_blank",
 					rel: "noopener"
 				}, e.text))),
-				T = r("./src/reddit/selectors/subreddit.ts"),
-				P = r("./src/reddit/actions/subreddit.ts"),
+				P = r("./src/reddit/selectors/subreddit.ts"),
+				T = r("./src/reddit/actions/subreddit.ts"),
 				F = r("./src/reddit/hooks/usePageLayer.ts");
 			const {
 				fbt: L
@@ -1451,12 +1451,12 @@
 				}) => Boolean(e.subreddits.appliedFilters.meta[t]),
 				subreddit: (e, {
 					subredditId: t
-				}) => Object(T.Q)(e, {
+				}) => Object(P.Q)(e, {
 					subredditId: t
 				})
 			});
-			var A = Object(i.b)(B, (e, t) => ({
-					onActivate: () => e(Object(P.p)({
+			var R = Object(i.b)(B, (e, t) => ({
+					onActivate: () => e(Object(T.p)({
 						subredditId: t.subredditId,
 						forceState: !0
 					}))
@@ -1477,7 +1477,7 @@
 						hk: "1vWsZx"
 					})) : null
 				}),
-				R = r("./src/reddit/actions/economics/predictions/index.ts"),
+				A = r("./src/reddit/actions/economics/predictions/index.ts"),
 				M = r("./src/reddit/contexts/PageLayer/selectors.ts"),
 				D = r("./src/reddit/helpers/trackers/predictions.ts"),
 				W = r("./src/reddit/hooks/useTracking.ts"),
@@ -1494,10 +1494,10 @@
 					a = Object(W.a)(),
 					o = Object(M.N)(r),
 					[d, c] = Object(n.useState)(!1),
-					l = Object(i.e)(t => Object(T.Q)(t, {
+					l = Object(i.e)(t => Object(P.Q)(t, {
 						subredditId: e
 					})),
-					u = Object(i.e)(t => Object(T.K)(t, {
+					u = Object(i.e)(t => Object(P.K)(t, {
 						subredditId: e
 					})),
 					m = Object(i.e)(t => Object(H.d)(t, {
@@ -1507,12 +1507,12 @@
 						subredditId: e
 					}));
 				return Object(n.useEffect)(() => {
-					!u || d || m || o || (t(Object(R.m)(l.name)), c(!0))
+					!u || d || m || o || (t(Object(A.m)(l.name)), c(!0))
 				}, [u, d, m, o, t, l.name]), u && m ? s.a.createElement(k, {
 					className: x.a.predictionsFilter,
 					isActive: o,
 					onClick: () => {
-						t(Object(P.p)({
+						t(Object(T.p)({
 							subredditId: e,
 							forceState: !1
 						})), a(Object(D.i)())
@@ -1538,7 +1538,7 @@
 					isPredictionsPage: (e, t) => !!t.pageLayer && Object(d.N)(t.pageLayer)
 				});
 			var K = q(Object(i.b)(J, (e, t) => ({
-					onTurnOffMetaFilter: () => e(Object(P.p)({
+					onTurnOffMetaFilter: () => e(Object(T.p)({
 						subredditId: t.subredditId,
 						forceState: !1
 					}))
@@ -1617,7 +1617,7 @@
 					hk: "1miZk"
 				}))
 			};
-			const ce = Object(c.a)("spPolls", A),
+			const ce = Object(c.a)("spPolls", R),
 				le = Object(d.u)(),
 				ue = Object(a.c)({
 					layout: d.Q,
@@ -1791,7 +1791,7 @@
 					isFlairFilter: t,
 					forceSmallEmojis: !0
 				})));
-			class T extends i.a.Component {
+			class P extends i.a.Component {
 				constructor(e) {
 					super(e), this.flairListRef = i.a.createRef(), this.trackFlairWidgetClick = e => {
 						this.props.sendEvent(Object(v.f)(e))
@@ -1891,7 +1891,7 @@
 					}, i.a.createElement(S, null, a && this.renderSelectedFlairFilter(a), !a && this.renderFlairFilters(s), o && this.renderButton()))
 				}
 			}
-			t.a = E(I(Object(m.c)(T)))
+			t.a = E(I(Object(m.c)(P)))
 		},
 		"./src/reddit/components/Widgets/SubredditRules/Rule/index.m.less": function(e, t, r) {
 			e.exports = {
@@ -2024,7 +2024,7 @@
 		"./src/reddit/components/Widgets/Widget/index.tsx": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
-				return Re
+				return Ae
 			}));
 			var n = r("./node_modules/react/index.js"),
 				s = r.n(n),
@@ -2130,28 +2130,28 @@
 					overrideColors: e.forceRedditStyle || e.isNightmodeOn
 				})))),
 				C = r("./node_modules/fbt/lib/FbtPublic.js"),
-				T = r("./src/reddit/components/HumanDate/index.tsx"),
-				P = r("./src/reddit/controls/TextButton/index.tsx"),
+				P = r("./src/reddit/components/HumanDate/index.tsx"),
+				T = r("./src/reddit/controls/TextButton/index.tsx"),
 				F = r("./src/reddit/components/Widgets/Calendar/index.m.less"),
 				L = r.n(F);
 			const B = 100,
-				A = {
+				R = {
 					isExpanded: !1
 				},
-				R = m.a.wrapped(o.a, "RawHTMLDisplay", L.a),
+				A = m.a.wrapped(o.a, "RawHTMLDisplay", L.a),
 				M = m.a.div("EventContainer", L.a),
 				D = m.a.div("EventTitle", L.a),
 				W = m.a.div("EventDate", L.a),
 				H = m.a.div("EventLocation", L.a),
 				U = m.a.div("EventDescription", L.a),
-				V = m.a.wrapped(P.a, "ToggleDescription", L.a);
+				V = m.a.wrapped(T.a, "ToggleDescription", L.a);
 			class G extends s.a.Component {
 				constructor(e) {
 					super(e), this.toggleDescriptionView = () => {
 						this.setState({
 							isExpanded: !this.state.isExpanded
 						})
-					}, this.state = A
+					}, this.state = R
 				}
 				render() {
 					const {
@@ -2174,9 +2174,9 @@
 					widgetKind: e.widget.kind
 				}, e.widget.data.map((t, r) => s.a.createElement(M, {
 					key: `${r}-${t.title}`
-				}, s.a.createElement(D, null, t.titleHtml ? s.a.createElement(R, {
+				}, s.a.createElement(D, null, t.titleHtml ? s.a.createElement(A, {
 					html: t.titleHtml
-				}) : t.title), e.widget.configuration.showDate && t.startTime && s.a.createElement(W, null, s.a.createElement(T.a, {
+				}) : t.title), e.widget.configuration.showDate && t.startTime && s.a.createElement(W, null, s.a.createElement(P.a, {
 					seconds: t.startTime,
 					showDay: !0
 				}), !t.allDay && e.widget.configuration.showTime && s.a.createElement("span", null, " • ", (e => {
@@ -2184,7 +2184,7 @@
 						r = t.getHours(),
 						n = t.getMinutes();
 					return n < 10 ? `${r}:0${n}` : `${r}:${n}`
-				})(t.startTime), " ")), t.location && e.widget.configuration.showLocation && s.a.createElement(H, null, t.locationHtml ? s.a.createElement(R, {
+				})(t.startTime), " ")), t.location && e.widget.configuration.showLocation && s.a.createElement(H, null, t.locationHtml ? s.a.createElement(A, {
 					html: t.locationHtml
 				}) : t.location), t.description && e.widget.configuration.showDescription && s.a.createElement(G, {
 					text: t.description
@@ -2385,21 +2385,21 @@
 				Ie = r("./src/reddit/components/Widgets/PostFlair/index.tsx"),
 				Se = r("./src/reddit/components/Widgets/SubredditRules/index.tsx"),
 				Ce = r("./src/reddit/components/Widgets/TextArea/index.m.less"),
-				Te = r.n(Ce);
-			const Pe = m.a.div("WidgetContent", Te.a),
-				Fe = m.a.wrapped(o.a, "RawHTMLDisplay", Te.a);
+				Pe = r.n(Ce);
+			const Te = m.a.div("WidgetContent", Pe.a),
+				Fe = m.a.wrapped(o.a, "RawHTMLDisplay", Pe.a);
 			var Le = e => s.a.createElement(d.a, {
 					styles: e.widget.styles,
 					title: e.widget.shortName,
 					truncateThreshold: e.truncateThreshold,
 					widgetKind: e.widget.kind
-				}, s.a.createElement(Pe, null, s.a.createElement(Fe, {
+				}, s.a.createElement(Te, null, s.a.createElement(Fe, {
 					html: e.widget.textHtml || ""
 				}))),
 				Be = r("./src/reddit/components/Widgets/Base/index.tsx");
-			var Ae = e => s.a.createElement(Be.b, null, "This widget hasn't been implemented yet!");
+			var Re = e => s.a.createElement(Be.b, null, "This widget hasn't been implemented yet!");
 
-			function Re(e) {
+			function Ae(e) {
 				const t = function(e) {
 					switch (e.kind) {
 						case "moderators":
@@ -2421,7 +2421,7 @@
 						case "post-flair":
 							return Ie.a;
 						default:
-							return Ae
+							return Re
 					}
 				}(e.widget);
 				return s.a.createElement(t, {
@@ -2429,18 +2429,6 @@
 					subredditName: e.subredditName,
 					truncateThreshold: e.truncateThreshold
 				})
-			}
-		},
-		"./src/reddit/helpers/brandSafety/index.ts": function(e, t, r) {
-			"use strict";
-			r.d(t, "a", (function() {
-				return s
-			}));
-			var n = r("./src/reddit/models/WhitelistStatus/index.ts");
-			const s = (e, t) => {
-				const r = e.some(e => e.isNSFW),
-					s = t.some(e => e.wls === n.b.NO_ADS);
-				return !r && !s
 			}
 		},
 		"./src/reddit/helpers/createBannerProperties/index.ts": function(e, t, r) {
@@ -2867,4 +2855,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.48c0da7bc326687a01b7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.a4c626b5fc4cc8894f51.js.map

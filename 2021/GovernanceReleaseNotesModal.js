@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.fe49e3eda4d71ae801b0.js
-// Retrieved at 11/4/2021, 6:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.dd0b685f28493a17c77e.js
+// Retrieved at 11/4/2021, 7:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceReleaseNotesModal"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -499,6 +499,22 @@
 				return d(e, o(t, 4), n, c, r)
 			}
 		},
+		"./node_modules/lodash/times.js": function(e, t, n) {
+			var s = n("./node_modules/lodash/_baseTimes.js"),
+				r = n("./node_modules/lodash/_castFunction.js"),
+				o = n("./node_modules/lodash/toInteger.js"),
+				i = 9007199254740991,
+				a = 4294967295,
+				d = Math.min;
+			e.exports = function(e, t) {
+				if ((e = o(e)) < 1 || e > i) return [];
+				var n = a,
+					c = d(e, a);
+				t = r(t), e -= a;
+				for (var l = s(c, t); ++n < e;) t(n);
+				return l
+			}
+		},
 		"./node_modules/shallowequal/index.js": function(e, t) {
 			e.exports = function(e, t, n, s) {
 				var r = n ? n.call(s, e, t) : void 0;
@@ -522,47 +538,6 @@
 			e.exports = function() {
 				throw new Error("define cannot be used indirect")
 			}
-		},
-		"./src/lib/intersectionObserver/index.ts": function(e, t, n) {
-			"use strict";
-			n.d(t, "a", (function() {
-				return i
-			})), n.d(t, "b", (function() {
-				return a
-			}));
-			n("./node_modules/core-js/modules/web.dom.iterable.js");
-			let s;
-			const r = new Map,
-				o = new Map;
-			"undefined" != typeof window && (n("./node_modules/intersection-observer/intersection-observer.js"), s = new IntersectionObserver(e => {
-				e.forEach(e => {
-					const t = e.target,
-						n = e.intersectionRatio > 0;
-					if (n !== !!o.get(t)) {
-						o.set(t, n);
-						const s = r.get(t);
-						if (s) {
-							s(e, n && !!o.get(t))
-						}
-					}
-				})
-			}, {
-				threshold: [.001]
-			}));
-			const i = (e, t) => {
-					try {
-						r.set(e, t), s && s.observe(e)
-					} catch (n) {
-						0
-					}
-				},
-				a = e => {
-					try {
-						r.delete(e), s && s.unobserve(e)
-					} catch (t) {
-						0
-					}
-				}
 		},
 		"./src/lib/unicodeUtils/index.ts": function(e, t, n) {
 			"use strict";
@@ -2389,18 +2364,18 @@
 						f: n,
 						t: r
 					} = e, o = [];
-					if (!n) return W(0, r, t);
+					if (!n) return G(0, r, t);
 					const i = Object(s.a)(r);
 					let a = 0,
 						d = 0;
 					const c = n.length;
 					for (; a < c; a++) {
 						const [e, t, s] = n[a], c = t + s, l = i[t], u = i[c] - l;
-						l > d && o.push(W(0, r.substr(d, l - d), `between${a}`)), o.push(W(e, r.substr(l, u), a)), d = l + u
+						l > d && o.push(G(0, r.substr(d, l - d), `between${a}`)), o.push(G(e, r.substr(l, u), a)), d = l + u
 					}
-					return d < r.length && o.push(W(0, r.substr(d), `remaining${a}`)), o
+					return d < r.length && o.push(G(0, r.substr(d), `remaining${a}`)), o
 				},
-				G = {
+				W = {
 					[h.j.monospace]: d.h,
 					[h.j.bold]: d.b,
 					[h.j.italic]: d.f,
@@ -2409,9 +2384,9 @@
 					[h.j.subscript]: d.l,
 					[h.j.superscript]: d.m
 				},
-				W = (e, t, n) => {
+				G = (e, t, n) => {
 					let s = t;
-					return s = o()(G, (t, s, r) => e & parseInt(r, 10) ? a.a.createElement(s, {
+					return s = o()(W, (t, s, r) => e & parseInt(r, 10) ? a.a.createElement(s, {
 						key: n
 					}, t) : t, s)
 				},
@@ -2584,6 +2559,18 @@
 					} = e, i = o;
 					return s ? r.a.createElement(t, i) : void 0 !== n ? r.a.createElement(n, i) : null
 				})
+			}
+		},
+		"./src/reddit/helpers/brandSafety/index.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "a", (function() {
+				return r
+			}));
+			var s = n("./src/reddit/models/WhitelistStatus/index.ts");
+			const r = (e, t) => {
+				const n = e.some(e => e.isNSFW),
+					r = t.some(e => e.wls === s.b.NO_ADS);
+				return !n && !r
 			}
 		},
 		"./src/reddit/helpers/styles/mixins/loading.m.less": function(e, t, n) {
@@ -2889,4 +2876,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.fe49e3eda4d71ae801b0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.dd0b685f28493a17c77e.js.map
