@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeManagement.8f89ba9b00ecb1732002.js
-// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeManagement.f21fbe513cb1698b542f.js
+// Retrieved at 11/4/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumBadgeManagement"], {
 		"./node_modules/lodash/_LazyWrapper.js": function(e, t, s) {
@@ -1158,13 +1158,13 @@
 					subredditId: s,
 					type: a
 				}) => {
-					if (!Object(c.e)(t) && a === l.a.Achievement && i.a[t.id]) {
+					if (!Object(c.e)(t) && a === l.a.Achievement && i.b[t.id]) {
 						const a = Object(u.a)(e, {
 							subredditId: s
 						});
 						if (a) return {
 							complete: parseInt(a.amount),
-							total: i.a[t.id]
+							total: i.b[t.id]
 						}
 					}
 				}
@@ -2671,15 +2671,19 @@
 		"./src/reddit/components/Economics/SubredditPremium/constants.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return d
-			})), s.d(t, "b", (function() {
 				return o
+			})), s.d(t, "b", (function() {
+				return i
+			})), s.d(t, "c", (function() {
+				return c
 			}));
 			s("./node_modules/core-js/modules/web.dom.iterable.js");
-			var a = s("./node_modules/lodash/flattenDeep.js"),
-				n = s.n(a),
-				r = s("./src/reddit/components/Economics/SubredditPremium/LFGBanner/models.ts");
-			const d = {
+			var a = s("./src/config.ts"),
+				n = s("./node_modules/lodash/flattenDeep.js"),
+				r = s.n(n),
+				d = s("./src/reddit/components/Economics/SubredditPremium/LFGBanner/models.ts");
+			const o = `${a.a.assetPath}/img/memberships/paywall/crown.gif`,
+				i = {
 					karma_10k_badge: 1e4,
 					karma_20k_badge: 2e4,
 					karma_50k_badge: 5e4,
@@ -2687,7 +2691,7 @@
 					karma_150k_badge: 15e4,
 					karma_200k_badge: 2e5
 				},
-				o = new Set(n()(Object.keys(r.a).map(e => Object.keys(r.b).map(t => Object.keys(r.c).map(s => `${s}_${e}_${t}_badge`)))))
+				c = new Set(r()(Object.keys(d.a).map(e => Object.keys(d.b).map(t => Object.keys(d.c).map(s => `${s}_${e}_${t}_badge`)))))
 		},
 		"./src/reddit/controls/LoadingIcon/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -3444,4 +3448,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeManagement.8f89ba9b00ecb1732002.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeManagement.f21fbe513cb1698b542f.js.map
