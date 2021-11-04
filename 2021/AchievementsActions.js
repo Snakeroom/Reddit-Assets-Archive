@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AchievementsActions.37dd9e3ab6339f27d7db.js
-// Retrieved at 10/12/2021, 11:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AchievementsActions.7a19206090d152609d35.js
+// Retrieved at 11/4/2021, 4:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AchievementsActions"], {
 		"./src/reddit/actions/economics/powerups/constants.ts": function(e, r, t) {
@@ -142,7 +142,7 @@
 					!r && s || await t(P(e, [n.id]))
 				}, j = e => async (r, t) => {
 					if (!e) return !1;
-					await r(Object(a.l)(e, {
+					await r(Object(a.m)(e, {
 						fullData: !0
 					}));
 					const d = t();
@@ -561,4 +561,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AchievementsActions.37dd9e3ab6339f27d7db.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AchievementsActions.7a19206090d152609d35.js.map

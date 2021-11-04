@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditTopContent.649fd079467bcd28553d.js
-// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditTopContent.a9fa21bd3e609bbc35f0.js
+// Retrieved at 11/4/2021, 4:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditTopContent", "FrontpageSidebar"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -468,9 +468,9 @@
 				H = s("./src/reddit/contexts/Post/index.tsx"),
 				Q = s("./src/reddit/helpers/canPreviewSelfText/index.ts"),
 				q = s("./src/reddit/helpers/styles/mixins/index.tsx"),
-				z = s("./src/reddit/models/Media/index.ts"),
-				G = s("./src/reddit/models/Subreddit/index.ts"),
-				Z = s("./src/reddit/models/Widgets/index.ts"),
+				z = s("./src/reddit/helpers/widgets/index.tsx"),
+				G = s("./src/reddit/models/Media/index.ts"),
+				Z = s("./src/reddit/models/Subreddit/index.ts"),
 				K = s("./src/reddit/components/MiniCardPost/index.m.less"),
 				Y = s.n(K),
 				J = s("./src/reddit/helpers/styles/mixins/index.m.less"),
@@ -515,7 +515,7 @@
 							autoplayPref: e,
 							availableWidth: t,
 							className: Y.a.media,
-							forceAspectRatio: z.c,
+							forceAspectRatio: G.c,
 							imageBoxClassName: Y.a.mediaImageBox,
 							imageBoxContentImageClassName: Y.a.mediaImageBoxContentImage,
 							isListing: !0,
@@ -529,14 +529,14 @@
 							showFull: !1
 						}),
 						P = !1;
-					v && O && (v.type !== z.o.RTJSON && v.type !== z.o.TEXT ? (O = r.a.createElement("div", {
+					v && O && (v.type !== G.o.RTJSON && v.type !== G.o.TEXT ? (O = r.a.createElement("div", {
 						className: ee.a.mediaWrapper
 					}, O), P = !0) : v && v.content && Object(Q.a)(p) && (O = r.a.createElement("div", {
 						className: ee.a.textWrapper
 					}, O)));
 					const j = !P && !_;
 					let N;
-					return k && (N = Object(G.h)(k) ? Object(Z.m)(k) : Object(Z.n)(k)), r.a.createElement(F.a, {
+					return k && (N = Object(Z.h)(k) ? Object(z.b)(k) : Object(z.c)(k)), r.a.createElement(F.a, {
 						className: Object(c.a)(ee.a.container, X.a.largeAndMediumActiveStyles, X.a.largeAndMediumPostStyles, Y.a.postContainer, Object(q.a)(this.props), s),
 						post: p,
 						onClick: u,
@@ -1998,4 +1998,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.649fd079467bcd28553d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.a9fa21bd3e609bbc35f0.js.map

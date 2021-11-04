@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EmailVerificationModals.bd9087cdc7d9c11ee9b8.js
-// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EmailVerificationModals.729ec2b28bc56db06e2f.js
+// Retrieved at 11/4/2021, 4:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EmailVerificationModals"], {
 		"./src/lib/colors/constants.ts": function(e, t, a) {
@@ -700,7 +700,7 @@
 					})), i.a.createElement(k, null, this.props.user && this.props.user.hasAndroidSubscription && this.renderPremiumNotificationMessage({
 						platform: "android",
 						isMobile: !0
-					}), this.props.user && this.props.user.hasIOSSubscription && this.renderPremiumNotificationMessage({
+					}), this.props.user && this.props.user.hasIosSubscription && this.renderPremiumNotificationMessage({
 						platform: "ios",
 						isMobile: !0
 					}), this.props.user && this.props.user.hasPaypalSubscription && this.renderPremiumNotificationMessage({
@@ -969,4 +969,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EmailVerificationModals.bd9087cdc7d9c11ee9b8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EmailVerificationModals.729ec2b28bc56db06e2f.js.map

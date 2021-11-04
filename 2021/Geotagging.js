@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Geotagging.fb0a8d96233460c6b0be.js
-// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Geotagging.fbe8ddc1df7549b1e1d7.js
+// Retrieved at 11/4/2021, 4:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Geotagging"], {
 		"./node_modules/p-debounce/index.js": function(e, t, s) {
@@ -954,7 +954,7 @@
 				_ = s("./src/reddit/constants/posts.ts"),
 				E = s("./src/reddit/controls/InternalLink/index.tsx"),
 				S = s("./src/reddit/helpers/name/index.ts"),
-				y = s("./src/reddit/models/Widgets/index.ts"),
+				y = s("./src/reddit/helpers/widgets/index.tsx"),
 				v = s("./src/reddit/selectors/subreddit.ts"),
 				O = s("./src/reddit/selectors/user.ts"),
 				k = s("./src/reddit/components/TopicSidebar/SubredditList/Subreddit/index.m.less"),
@@ -974,7 +974,7 @@
 							subredditAboutInfo: n
 						} = this.props;
 						if (!s) return;
-						const r = Object(y.n)(s, n);
+						const r = Object(y.c)(s, n);
 						t(Object(u.p)(e, r))
 					}
 				}
@@ -1748,7 +1748,7 @@
 			}
 		},
 		"./src/redditGQL/operations/GeoContributableSubreddits.json": function(e) {
-			e.exports = JSON.parse('{"id":"283ba5791293"}')
+			e.exports = JSON.parse('{"id":"534aaec9778e"}')
 		},
 		"./src/redditGQL/operations/GeoPlaceAutocomplete.json": function(e) {
 			e.exports = JSON.parse('{"id":"8a89fd7c7db1"}')
@@ -1761,4 +1761,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.fb0a8d96233460c6b0be.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.fbe8ddc1df7549b1e1d7.js.map

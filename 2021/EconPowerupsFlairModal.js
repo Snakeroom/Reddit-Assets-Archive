@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.500ada2178a6910d1084.js
-// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.632f4d7f783c61de50ed.js
+// Retrieved at 11/4/2021, 4:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsFlairModal"], {
 		"./src/reddit/actions/economics/powerups/flairs/index.ts": function(e, t, r) {
@@ -13,9 +13,9 @@
 			})), r.d(t, "onSubredditUserPowerupsFlairPreferenceUpdateSuccess", (function() {
 				return F
 			})), r.d(t, "onSubredditUserPowerupsFlairPreferenceUpdateFailed", (function() {
-				return P
-			})), r.d(t, "onSubredditUserPowerupsFlairVisibilityUpdate", (function() {
 				return g
+			})), r.d(t, "onSubredditUserPowerupsFlairVisibilityUpdate", (function() {
+				return P
 			})), r.d(t, "getSubredditUserPowerupsFlairsAndSupporterInfo", (function() {
 				return E
 			})), r.d(t, "getSubredditCurrentUserPowerupsFlairsAndSupporterInfo", (function() {
@@ -70,8 +70,8 @@
 				O = Object(i.a)(v.i),
 				y = Object(i.a)(v.f),
 				F = Object(i.a)(v.g),
-				P = Object(i.a)(v.e),
-				g = Object(i.a)(v.h),
+				g = Object(i.a)(v.e),
+				P = Object(i.a)(v.h),
 				E = (e, t) => async (r, s, {
 					gqlContext: i
 				}) => {
@@ -111,7 +111,7 @@
 					!t && o || await r(E(e, [n.id]))
 				}, _ = e => async (t, r) => {
 					if (!e) return !1;
-					await t(Object(l.l)(e, {
+					await t(Object(l.m)(e, {
 						fullData: !0
 					}));
 					const s = r();
@@ -189,7 +189,7 @@
 					try {
 						await c(i(), l, v, w), t(F(e))
 					} catch (j) {
-						t(P(e)), n.c.captureException(j), t(Object(u.f)({
+						t(g(e)), n.c.captureException(j), t(Object(u.f)({
 							duration: u.a,
 							kind: p.b.Error,
 							text: s.fbt._("Failed to set preferred achievement flair", null, {
@@ -209,14 +209,14 @@
 							userId: l
 						},
 						b = [Object(f.h)(a, m), Object(f.i)(a, m)].filter(Boolean);
-					r(g({
+					r(P({
 						...m,
 						isHidden: t
 					}));
 					try {
 						await c(o(), e, b, t)
 					} catch (v) {
-						r(g({
+						r(P({
 							...m,
 							isHidden: !t
 						})), n.c.captureException(v), r(Object(u.f)({
@@ -325,8 +325,8 @@
 			}
 			const y = "add-custom-badge-tooltip",
 				F = 100,
-				P = 2 * F,
-				g = 24;
+				g = 2 * F,
+				P = 24;
 			class E extends i.a.Component {
 				constructor() {
 					super(...arguments), this.mouseOverTooltip = void 0, this.enterTimeout = void 0, this.exitTimeout = void 0, this.handleMouseEnter = e => {
@@ -336,7 +336,7 @@
 					}, this.handleMouseLeave = () => {
 						clearTimeout(this.exitTimeout), clearTimeout(this.enterTimeout), this.mouseOverTooltip = void 0, this.exitTimeout = window.setTimeout(() => {
 							this.mouseOverTooltip || (clearTimeout(this.enterTimeout), this.props.onHideTooltip())
-						}, P)
+						}, g)
 					}
 				}
 				render() {
@@ -348,7 +348,7 @@
 						src: `${a.a.assetPath}/img/badges/placeholder.png`
 					});
 					const t = `${y}-${this.props.uniqueIdentifier}`,
-						r = this.props.badgeSize || g;
+						r = this.props.badgeSize || P;
 					return i.a.createElement(s.Fragment, null, this.props.showAddCustom && i.a.createElement("div", {
 						className: I.a.wrapper,
 						id: t,
@@ -590,8 +590,8 @@
 				O = r.n(I),
 				y = r("./src/reddit/actions/economics/powerups/flairs/index.ts"),
 				F = r("./src/reddit/actions/gold/powerups.ts"),
-				P = r("./src/reddit/components/Econ/PowerupsMarketingModal/async.tsx"),
-				g = r("./src/reddit/components/PowerupsCtaButton/index.tsx"),
+				g = r("./src/reddit/components/Econ/PowerupsMarketingModal/async.tsx"),
+				P = r("./src/reddit/components/PowerupsCtaButton/index.tsx"),
 				E = r("./src/reddit/controls/Button/index.tsx"),
 				x = r("./src/reddit/helpers/trackers/powerups.ts"),
 				_ = r("./src/reddit/hooks/useTracking.ts"),
@@ -690,10 +690,10 @@
 						l(Object(y.setSubredditUserAchievementFlair)(t, e))
 					},
 					p = () => {
-						l(Object(F.f)("user_flair_picker"))
+						l(Object(F.g)("user_flair_picker"))
 					};
 				return Object(s.useEffect)(() => {
-					Object(P.a)()
+					Object(g.a)()
 				}, []), i.a.createElement("div", {
 					className: Object(b.a)(Q.a.container, e)
 				}, i.a.createElement("h4", {
@@ -716,7 +716,7 @@
 					flair: e,
 					key: e.type,
 					onSelect: u
-				}))), (() => d && !c ? i.a.createElement(g.a, {
+				}))), (() => d && !c ? i.a.createElement(P.a, {
 					onClick: () => {
 						o(Object(x.H)()), p()
 					}
@@ -777,7 +777,7 @@
 						subredditId: e
 					}));
 				if (Object(s.useEffect)(() => {
-						Object(P.a)()
+						Object(g.a)()
 					}, []), !a) return null;
 				return i.a.createElement("div", null, i.a.createElement(z, {
 					className: Y.a.flairsSection,
@@ -817,10 +817,10 @@
 						const t = !d;
 						o(Object(y.setSubredditUserPowerupsFlairsVisibility)(e, t)), r(Object(U.d)(t))
 					}
-				})), i.a.createElement(g.a, {
+				})), i.a.createElement(P.a, {
 					className: Y.a.button,
 					onClick: () => {
-						r(Object(x.G)()), o(Object(F.f)("user_flair_picker"))
+						r(Object(x.G)()), o(Object(F.g)("user_flair_picker"))
 					}
 				}))
 			};
@@ -1335,4 +1335,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.500ada2178a6910d1084.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.632f4d7f783c61de50ed.js.map

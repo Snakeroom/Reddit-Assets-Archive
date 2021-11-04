@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.8599abd104a15e758fbf.js
-// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.dfa7a651afa0f22d62e5.js
+// Retrieved at 11/4/2021, 4:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditMentionWithIcon"], {
 		"./src/reddit/actions/subredditMention/constants.ts": function(e, t, s) {
@@ -896,44 +896,44 @@
 			var G = Object(d.b)(q, (e, t) => ({
 					openLightbox: t => e(Object(B.a)(t.permalink))
 				}))(H),
-				W = s("./src/reddit/contexts/PageLayer/index.tsx"),
-				K = s("./src/reddit/helpers/styles/mixins/loading.ts"),
-				z = s("./src/reddit/components/SubredditMention/MiniPost/Placeholder.m.less"),
-				V = s.n(z);
-			const Q = Object(W.u)(),
+				K = s("./src/reddit/contexts/PageLayer/index.tsx"),
+				z = s("./src/reddit/helpers/styles/mixins/loading.ts"),
+				V = s("./src/reddit/components/SubredditMention/MiniPost/Placeholder.m.less"),
+				W = s.n(V);
+			const Q = Object(K.u)(),
 				J = Object(c.c)({
-					isFakeSubreddit: W.y
+					isFakeSubreddit: K.y
 				});
 			var Y = Q(Object(d.b)(J)(({
 					className: e,
 					showSubreddit: t,
 					...s
 				}) => {
-					const n = Object(K.a)(s);
+					const n = Object(z.a)(s);
 					return o.a.createElement("div", {
 						className: Object(w.a)(A.a.container, e)
 					}, o.a.createElement("div", {
-						className: V.a.mainBody
+						className: W.a.mainBody
 					}, o.a.createElement("div", {
-						className: V.a.content
+						className: W.a.content
 					}, o.a.createElement("div", null, o.a.createElement("div", {
-						className: Object(w.a)(V.a.title, n)
+						className: Object(w.a)(W.a.title, n)
 					}), t && o.a.createElement("div", {
-						className: Object(w.a)(V.a.meta, n)
+						className: Object(w.a)(W.a.meta, n)
 					})), o.a.createElement("div", {
-						className: V.a.flatlist
+						className: W.a.flatlist
 					}, o.a.createElement("div", {
-						className: Object(w.a)(V.a.flatlistExpando, n)
+						className: Object(w.a)(W.a.flatlistExpando, n)
 					}), o.a.createElement("div", {
-						className: V.a.flatlistSeparator
+						className: W.a.flatlistSeparator
 					}), o.a.createElement("div", {
-						className: Object(w.a)(V.a.flatlistItemOne, n)
+						className: Object(w.a)(W.a.flatlistItemOne, n)
 					}), o.a.createElement("div", {
-						className: Object(w.a)(V.a.flatlistItemTwo, n)
+						className: Object(w.a)(W.a.flatlistItemTwo, n)
 					}))), o.a.createElement("div", {
-						className: V.a.thumbnailContainer
+						className: W.a.thumbnailContainer
 					}, o.a.createElement("div", {
-						className: Object(w.a)(V.a.thumbnail, n)
+						className: Object(w.a)(W.a.thumbnail, n)
 					}))))
 				})),
 				X = s("./src/reddit/components/SubredditMention/SubredditIcon/index.tsx"),
@@ -1727,13 +1727,13 @@
 			})), s.d(t, "o", (function() {
 				return q
 			})), s.d(t, "n", (function() {
-				return W
-			})), s.d(t, "h", (function() {
 				return K
-			})), s.d(t, "m", (function() {
+			})), s.d(t, "h", (function() {
 				return z
-			})), s.d(t, "f", (function() {
+			})), s.d(t, "m", (function() {
 				return V
+			})), s.d(t, "f", (function() {
+				return W
 			})), s.d(t, "g", (function() {
 				return Q
 			})), s.d(t, "i", (function() {
@@ -1756,8 +1756,8 @@
 				o = (s("./src/reddit/constants/categories.tsx"), s("./src/reddit/constants/tracking.ts")),
 				d = s("./src/reddit/helpers/correlationIdTracker.ts"),
 				c = s("./src/reddit/helpers/trackers/searchResults.ts"),
-				a = s("./src/reddit/models/DiscoveryUnit/index.ts"),
-				l = (s("./src/reddit/models/Widgets/index.ts"), s("./src/reddit/selectors/posts.ts")),
+				a = (s("./src/reddit/helpers/widgets/index.tsx"), s("./src/reddit/models/DiscoveryUnit/index.ts")),
+				l = s("./src/reddit/selectors/posts.ts"),
 				u = s("./src/reddit/selectors/telemetry.ts"),
 				b = s("./src/reddit/selectors/widgets.ts"),
 				m = s("./src/telemetry/index.ts");
@@ -1965,7 +1965,7 @@
 				G = (e, t, s) => u.actionInfo(e, {
 					position: s
 				}),
-				W = (e, t, s) => {
+				K = (e, t, s) => {
 					const n = H();
 					return e => ({
 						...h(e, n),
@@ -1973,14 +1973,14 @@
 						subreddit: u.subredditById(e, t)
 					})
 				},
-				K = (e, t, s) => {
+				z = (e, t, s) => {
 					const n = H();
 					return e => ({
 						...I(e, n, t),
 						actionInfo: G(e, 0, s)
 					})
 				},
-				z = (e, t, s) => {
+				V = (e, t, s) => {
 					const i = H();
 					return e => ({
 						...f(e, i),
@@ -1991,7 +1991,7 @@
 						noun: n.ITEM_SUBREDDIT
 					})
 				},
-				V = (e, t, s) => {
+				W = (e, t, s) => {
 					const i = H();
 					return e => ({
 						...f(e, i),
@@ -2167,12 +2167,12 @@
 			var n = s("./src/lib/objectSelector/index.ts"),
 				i = s("./src/reddit/constants/posts.ts"),
 				r = s("./src/reddit/helpers/name/index.ts"),
-				o = s("./src/reddit/models/Widgets/index.ts"),
+				o = s("./src/reddit/helpers/widgets/index.tsx"),
 				d = s("./src/reddit/selectors/profile.ts"),
 				c = s("./src/reddit/selectors/subreddit.ts");
 			const a = [],
 				l = e => e.widgets.models,
-				u = Object(n.a)((e, t) => Object(o.w)(t) ? e.widgets.models[t.widgetId] : Object(o.q)(t.widgetKind)),
+				u = Object(n.a)((e, t) => Object(o.l)(t) ? e.widgets.models[t.widgetId] : Object(o.f)(t.widgetKind)),
 				b = (e, t) => e.widgets.idCardIds[t.subredditId],
 				m = (e, t) => {
 					let s = t.subredditId;
@@ -2237,14 +2237,14 @@
 				})
 		},
 		"./src/redditGQL/operations/SubredditTopContent.json": function(e) {
-			e.exports = JSON.parse('{"id":"de27e4db7da3"}')
+			e.exports = JSON.parse('{"id":"324b69e315f1"}')
 		},
 		"./src/redditGQL/operations/SubredditsWithAboutInfo.json": function(e) {
-			e.exports = JSON.parse('{"id":"f7acb37105fc"}')
+			e.exports = JSON.parse('{"id":"305b59285ca4"}')
 		},
 		"./src/redditGQL/operations/SubscribedSubreddits.json": function(e) {
-			e.exports = JSON.parse('{"id":"19853683e73a"}')
+			e.exports = JSON.parse('{"id":"13af47cf5fb3"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.8599abd104a15e758fbf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.dfa7a651afa0f22d62e5.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.fa01c11e197580b4d7a9.js
-// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.8e36c2ab5ff82590cecd.js
+// Retrieved at 11/4/2021, 4:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PowerupsEmotesTooltip"], {
 		"./src/reddit/actions/economics/powerups/constants.ts": function(e, t, o) {
@@ -525,7 +525,7 @@
 				}))))), !r && n.a.createElement(_.t, {
 					className: I.a.unlockButton,
 					onClick: () => {
-						l(Object(i.E)()), c(Object(E.f)("emote_picker"))
+						l(Object(i.E)()), c(Object(E.g)("emote_picker"))
 					},
 					priority: _.c.Primary
 				}, d.fbt._("Unlock Emojis", null, {
@@ -739,4 +739,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.fa01c11e197580b4d7a9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.8e36c2ab5ff82590cecd.js.map

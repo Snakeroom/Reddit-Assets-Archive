@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.61ed99045fcc373525ee.js
-// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.9be5c94543800e9ab2b1.js
+// Retrieved at 11/4/2021, 4:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -466,7 +466,7 @@
 						sort: d,
 						t: m,
 						correlationId: h
-					} = t, b = Object(M.T)(e) || Object(M.K)(e), f = Object(k.p)(e), _ = {
+					} = t, b = Object(M.T)(e) || Object(M.K)(e), f = Object(k.q)(e), _ = {
 						adContext: {
 							layout: o ? o.toUpperCase() : u.a.Card,
 							reddaid: e.user.reddaid,
@@ -2510,7 +2510,7 @@
 				d = a("./src/reddit/selectors/posts.ts");
 			const m = Object(n.c)({
 					postCount: d.M,
-					previousPageIsOverlay: l.o,
+					previousPageIsOverlay: l.p,
 					tabBadged: e => e.tabBadged
 				}),
 				u = Object(r.b)(m);
@@ -3988,8 +3988,8 @@
 				c = e => e.live.announcements
 		},
 		"./src/redditGQL/operations/Frontpage.json": function(e) {
-			e.exports = JSON.parse('{"id":"c0acbf8e49be"}')
+			e.exports = JSON.parse('{"id":"844423b37429"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.61ed99045fcc373525ee.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.9be5c94543800e9ab2b1.js.map

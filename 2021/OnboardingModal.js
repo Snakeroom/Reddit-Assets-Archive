@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OnboardingModal.4f49e2a6f8db8dcde7d3.js
-// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OnboardingModal.3c66b67dc89991471ca4.js
+// Retrieved at 11/4/2021, 4:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OnboardingModal"], {
 		"./node_modules/lodash/times.js": function(e, t, n) {
@@ -218,7 +218,7 @@
 						sort: l,
 						t: u,
 						correlationId: p
-					} = t, f = Object(T.T)(e) || Object(T.K)(e), g = Object(C.p)(e), O = {
+					} = t, f = Object(T.T)(e) || Object(T.K)(e), g = Object(C.q)(e), O = {
 						adContext: {
 							layout: c ? c.toUpperCase() : m.a.Card,
 							reddaid: e.user.reddaid,
@@ -381,8 +381,8 @@
 				L = n("./src/reddit/actions/login.ts"),
 				w = n("./src/reddit/actions/meta.ts"),
 				F = n("./src/reddit/actions/platform.ts"),
-				M = n("./src/reddit/actions/toaster.ts"),
-				q = n("./src/reddit/constants/history.ts"),
+				q = n("./src/reddit/actions/toaster.ts"),
+				M = n("./src/reddit/constants/history.ts"),
 				B = n("./src/reddit/constants/page.ts"),
 				V = n("./src/reddit/constants/parameters.ts"),
 				D = n("./src/reddit/constants/postLayout.ts"),
@@ -440,15 +440,15 @@
 							meta: m.meta,
 							correlationId: p,
 							...s
-						})), n(M.g(j)), s.geoFilter && n(Object(w.k)(s.geoFilter)), n(Object(Y.b)(ee.a.FRONTPAGE));
-						const o = null === (l = null === (d = Object(C.b)(m)) || void 0 === d ? void 0 : d.locationState) || void 0 === l ? void 0 : l[q.b.FeedLoadReason];
-						Object($.b)(t.isRefresh ? q.a.UserRefresh : null != o ? o : q.a.InitialLoad)(r())
+						})), n(q.g(j)), s.geoFilter && n(Object(w.k)(s.geoFilter)), n(Object(Y.b)(ee.a.FRONTPAGE));
+						const o = null === (l = null === (d = Object(C.b)(m)) || void 0 === d ? void 0 : d.locationState) || void 0 === l ? void 0 : l[M.b.FeedLoadReason];
+						Object($.b)(t.isRefresh ? M.a.UserRefresh : null != o ? o : M.a.InitialLoad)(r())
 					} else {
 						n(ue({
 							error: O.error,
 							key: e,
 							...O.body
-						})), n(M.f({
+						})), n(q.f({
 							id: j,
 							kind: z.b.Error,
 							text: s.fbt._("Sorry, we couldn't load posts for this page.", null, {
@@ -570,7 +570,7 @@
 								fetchedToken: m.token,
 								meta: r.meta,
 								...j
-							})), Object($.b)(q.a.NextPageLoad)(n());
+							})), Object($.b)(M.a.NextPageLoad)(n());
 							else {
 								t(ve({
 									key: u,
@@ -800,8 +800,8 @@
 				L = n("./node_modules/lodash/times.js"),
 				w = n.n(L),
 				F = n("./src/reddit/components/TopSubredditsWidget/SubredditRankItemPlaceholder.tsx"),
-				M = n("./src/reddit/helpers/trackers/onboarding.ts"),
-				q = n("./src/reddit/icons/svgs/CommunityDefault/filled.tsx"),
+				q = n("./src/reddit/helpers/trackers/onboarding.ts"),
+				M = n("./src/reddit/icons/svgs/CommunityDefault/filled.tsx"),
 				B = n("./src/reddit/icons/svgs/Plus/index.tsx"),
 				V = n("./src/reddit/icons/svgs/Positive/index.tsx"),
 				D = n("./src/reddit/components/Onboarding/CommunityPicker.m.less"),
@@ -860,7 +860,7 @@
 					u = e.slice(0, a ? void 0 : 4),
 					m = "recommended" === t ? "" : s,
 					b = Object(o.useCallback)(() => {
-						d(!0), c(Object(M.f)(s))
+						d(!0), c(Object(q.f)(s))
 					}, [c, s]);
 				return i.a.createElement(i.a.Fragment, null, u.map(e => i.a.createElement(K, {
 					communityId: e.id,
@@ -886,7 +886,7 @@
 			}) => {
 				const l = Object(j.a)(),
 					u = Object(o.useCallback)(() => {
-						l(Object(M.d)(!s, a, r)), c(e)
+						l(Object(q.d)(!s, a, r)), c(e)
 					}, [e, s, r, l, c, a]);
 				return i.a.createElement("div", {
 					className: Object(d.a)(G.a.CommunityRow, {
@@ -898,7 +898,7 @@
 				}, n && i.a.createElement("img", {
 					className: G.a.IconWrapper,
 					src: n
-				}), !n && i.a.createElement(q.a, {
+				}), !n && i.a.createElement(M.a, {
 					className: G.a.CommunityNoIcon
 				})), i.a.createElement("div", {
 					className: G.a.TextSection
@@ -935,7 +935,7 @@
 				}) => {
 					const a = Object(j.a)();
 					return Object(o.useEffect)(() => {
-						a(Object(M.g)())
+						a(Object(q.g)())
 					}, [a]), i.a.createElement("div", {
 						className: G.a.CommunityListWrapper
 					}, n.length > 0 && i.a.createElement(z, {
@@ -995,7 +995,7 @@
 			}) => {
 				const a = Object(j.a)(),
 					l = Object(o.useCallback)(() => {
-						a(Object(M.h)(!n, !s, c)), r(t)
+						a(Object(q.h)(!n, !s, c)), r(t)
 					}, [t, n, s, a, r, c]);
 				return i.a.createElement(C.t, {
 					className: Object(d.a)($.a.InterestButton, {
@@ -1019,7 +1019,7 @@
 				}) => {
 					const s = Object(j.a)();
 					return Object(o.useEffect)(() => {
-						s(Object(M.k)())
+						s(Object(q.k)())
 					}, [s]), i.a.createElement("div", {
 						className: $.a.InterestListButtons
 					}, i.a.createElement(te, {
@@ -1254,10 +1254,10 @@
 				Le = n("./src/reddit/icons/svgs/svgIcons.tsx"),
 				we = n("./src/reddit/selectors/experiments/econ/index.ts"),
 				Fe = n("./src/reddit/selectors/experiments/onboarding.ts"),
-				Me = n("./src/reddit/selectors/experiments/survey.ts");
+				qe = n("./src/reddit/selectors/experiments/survey.ts");
 
-			function qe() {
-				return (qe = Object.assign || function(e) {
+			function Me() {
+				return (Me = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var s in n) Object.prototype.hasOwnProperty.call(n, s) && (e[s] = n[s])
@@ -1332,11 +1332,11 @@
 						r ? (R(o), N(i)) : s(Ve())
 					}()
 				}, [n, s, t, p]);
-				const F = Object(c.e)(e => Object(Me.f)(e)),
-					q = Object(o.useCallback)(() => {
+				const F = Object(c.e)(e => Object(qe.f)(e)),
+					M = Object(o.useCallback)(() => {
 						s(Object(u.g)(be.a.ONBOARDING_MODAL_D2X)), F && s(Object(m.f)())
 					}, [s, F]),
-					B = Object(o.useCallback)((e = 3e3) => setTimeout(q, e), [q]),
+					B = Object(o.useCallback)((e = 3e3) => setTimeout(M, e), [M]),
 					V = Object(o.useCallback)(() => {
 						const e = Object.keys(y).filter(e => 0 === y[e].length || !y[e].find(e => y[e]));
 						C([]), e.length && async function() {
@@ -1346,10 +1346,10 @@
 						}()
 					}, [t, y]),
 					D = Object(o.useCallback)(async () => {
-						r(Object(M.j)()), g(le.COMMUNITIES), V()
+						r(Object(q.j)()), g(le.COMMUNITIES), V()
 					}, [V, r]),
 					G = Object(o.useCallback)(async () => {
-						r(Object(M.e)()), L(), g(le.AVATAR);
+						r(Object(q.e)()), L(), g(le.AVATAR);
 						const e = await Ge(n, t, P, y);
 						e.ok ? e.reload && s(Object(l.frontpageReloaded)()) : s(Ve())
 					}, [n, s, L, t, P, y, r]),
@@ -1368,8 +1368,8 @@
 						f === le.COMMUNITIES ? g(le.INTERESTS) : f === le.AVATAR && g(le.COMMUNITIES)
 					}, [f]),
 					K = Object(o.useCallback)(() => {
-						f === le.INTERESTS ? (r(Object(M.i)()), q()) : f === le.AVATAR && (r(Object(O.a)("skip")), U())
-					}, [q, r, f, U]),
+						f === le.INTERESTS ? (r(Object(q.i)()), M()) : f === le.AVATAR && (r(Object(O.a)("skip")), U())
+					}, [M, r, f, U]),
 					X = [le.COMMUNITIES, le.AVATAR].includes(f),
 					J = f === le.AVATAR || f === le.INTERESTS && !b,
 					H = Object.keys(P).length,
@@ -1435,7 +1435,7 @@
 					hk: "15wNPy"
 				}))))
 			});
-			t.default = Object(pe.b)(e => i.a.createElement(Ue, qe({}, e, {
+			t.default = Object(pe.b)(e => i.a.createElement(Ue, Me({}, e, {
 				className: Object(d.a)(e.className, ae.a.modal),
 				onOverlayClick: r.a,
 				overlayClassName: ae.a.overlay
@@ -1900,10 +1900,10 @@
 				}
 		},
 		"./src/redditGQL/operations/Frontpage.json": function(e) {
-			e.exports = JSON.parse('{"id":"c0acbf8e49be"}')
+			e.exports = JSON.parse('{"id":"844423b37429"}')
 		},
 		"./src/redditGQL/operations/GetNearbySubreddits.json": function(e) {
-			e.exports = JSON.parse('{"id":"70094bc311f7"}')
+			e.exports = JSON.parse('{"id":"aff6d12aa0c2"}')
 		},
 		"./src/redditGQL/operations/InterestTopics.json": function(e) {
 			e.exports = JSON.parse('{"id":"c49069ffb9a9"}')
@@ -1912,11 +1912,11 @@
 			e.exports = JSON.parse('{"id":"a4ae094d69e5"}')
 		},
 		"./src/redditGQL/operations/SubredditGeoRecommendationViaFocusVertical.json": function(e) {
-			e.exports = JSON.parse('{"id":"5c3cbc62be22"}')
+			e.exports = JSON.parse('{"id":"5e5c77150e44"}')
 		},
 		"./src/redditGQL/operations/UpdateTopicPreferences.json": function(e) {
 			e.exports = JSON.parse('{"id":"a48d141a1878"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.4f49e2a6f8db8dcde7d3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.3c66b67dc89991471ca4.js.map

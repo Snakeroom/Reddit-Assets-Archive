@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.edb8c2c4d95303746f9b.js
-// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.7bb989273143251ae457.js
+// Retrieved at 11/4/2021, 4:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, n) {
@@ -2294,14 +2294,14 @@
 						})))
 					}
 				}, U = Object(m.a)(h.S), F = e => async (t, n) => {
-					t(U(e)), t(Object(x.l)(e.subredditId, {
+					t(U(e)), t(Object(x.m)(e.subredditId, {
 						forceLoad: !0,
 						fullData: !1
 					})), t(Object(j.g)(l.a.ECON_POWERUPS_PURCHASE)), t(Object(j.h)(l.a.ECON_POWERUPS_SUCCESS))
 				}, D = Object(m.a)(h.W), G = ({
 					user: e
 				}) => async t => {
-					await t(Object(x.n)(!0)), t(D({
+					await t(Object(x.o)(!0)), t(D({
 						user: e
 					}))
 				}, H = Object(m.a)(h.ab)
@@ -2796,7 +2796,7 @@
 				} = e.params;
 				if (v === o.Zb.Gold) return void t(Object(s.c)("/settings/premium"));
 				const _ = [];
-				v === o.Zb.Profile && (_.push(t(Object(I.a)())), _.push(t(Object(N.g)()))), v === o.Zb.Account && (_.push(t(Object(b.o)())), _.push(t(Object(d.b)()))), v === o.Zb.Notifications && _.push(t(O())), v !== o.Zb.Privacy && v !== o.Zb.Messaging || _.push(t(Object(l.b)())), v === o.Zb.Premium && (_.push(t(Object(I.a)())), _.push(t(Object(h.n)(!0)))), await Promise.all(_); {
+				v === o.Zb.Profile && (_.push(t(Object(I.a)())), _.push(t(Object(N.g)()))), v === o.Zb.Account && (_.push(t(Object(b.o)())), _.push(t(Object(d.b)()))), v === o.Zb.Notifications && _.push(t(O())), v !== o.Zb.Privacy && v !== o.Zb.Messaging || _.push(t(Object(l.b)())), v === o.Zb.Premium && (_.push(t(Object(I.a)())), _.push(t(Object(h.o)(!0)))), await Promise.all(_); {
 					const e = n(),
 						o = e.platform.currentPage,
 						{
@@ -6358,7 +6358,7 @@
 					})), o.a.createElement(C, null, this.props.user && this.props.user.hasAndroidSubscription && this.renderPremiumNotificationMessage({
 						platform: "android",
 						isMobile: !0
-					}), this.props.user && this.props.user.hasIOSSubscription && this.renderPremiumNotificationMessage({
+					}), this.props.user && this.props.user.hasIosSubscription && this.renderPremiumNotificationMessage({
 						platform: "ios",
 						isMobile: !0
 					}), this.props.user && this.props.user.hasPaypalSubscription && this.renderPremiumNotificationMessage({
@@ -6745,7 +6745,7 @@
 						hk: "2EKYNO"
 					}))), i.a.createElement(T.g, null, i.a.createElement(T.r, {
 						onClick: () => {
-							n.isPremium ? o(Object(N.j)(s.id, -n.powerups, n.isAnonymous, n.allocatedAt)) : o(Object(A.a)(n.id, s.id, n.allocatedAt)), r()
+							n.isPremium ? o(Object(N.k)(s.id, -n.powerups, n.isAnonymous, n.allocatedAt)) : o(Object(A.a)(n.id, s.id, n.allocatedAt)), r()
 						},
 						"data-redditstyle": !0
 					}, L._("Confirm", null, {
@@ -6894,7 +6894,7 @@
 					isPremiumImprovedCancellationEnabled: C.y,
 					goldExpiration: me.o,
 					hasAndroidSubscription: me.p,
-					hasIOSSubscription: me.u,
+					hasIosSubscription: me.v,
 					hasStripeSubscription: me.y,
 					hasPaypalSubscription: me.w,
 					isGold: me.s,
@@ -6998,7 +6998,7 @@
 						premiumBenefitsModalIsOpen: t,
 						togglePremiumBenefitsModal: n,
 						hasAndroidSubscription: s,
-						hasIOSSubscription: a,
+						hasIosSubscription: a,
 						hasPaypalSubscription: c,
 						hasStripeSubscription: l,
 						isGold: d,
@@ -14352,4 +14352,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.edb8c2c4d95303746f9b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.7bb989273143251ae457.js.map

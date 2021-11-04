@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.a5449ae054cf194f49dd.js
-// Retrieved at 11/4/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.d24f6ac569bc2770d8f3.js
+// Retrieved at 11/4/2021, 4:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -3297,13 +3297,13 @@
 				return d
 			}));
 			var s = n("./src/lib/loadableAction/index.ts");
-			const o = Object(s.a)(() => n.e("UserFlair").then(n.bind(null, "./src/reddit/actions/userFlair/userFlair.ts")).then(e => e.userFlairChanged)),
-				r = Object(s.a)(() => n.e("UserFlair").then(n.bind(null, "./src/reddit/actions/userFlair/userFlair.ts")).then(e => e.toggleUserFlairInSubreddit)),
-				a = Object(s.a)(() => n.e("UserFlair").then(n.bind(null, "./src/reddit/actions/userFlair/userFlair.ts")).then(e => e.toggleAssignOwnFlairPermission)),
-				i = Object(s.a)(() => n.e("UserFlair").then(n.bind(null, "./src/reddit/actions/userFlair/userFlair.ts")).then(e => e.saveUserFlairTemplate)),
-				c = Object(s.a)(() => n.e("UserFlair").then(n.bind(null, "./src/reddit/actions/userFlair/userFlair.ts")).then(e => e.deleteUserFlairTemplate)),
-				l = Object(s.a)(() => n.e("UserFlair").then(n.bind(null, "./src/reddit/actions/userFlair/userFlair.ts")).then(e => e.reorderUserFlairTemplates)),
-				d = Object(s.a)(() => n.e("UserFlair").then(n.bind(null, "./src/reddit/actions/userFlair/userFlair.ts")).then(e => e.userFlairLoadedAndModalOpened))
+			const o = Object(s.a)(() => Promise.resolve().then(n.bind(null, "./src/reddit/actions/userFlair/userFlair.ts")).then(e => e.userFlairChanged)),
+				r = Object(s.a)(() => Promise.resolve().then(n.bind(null, "./src/reddit/actions/userFlair/userFlair.ts")).then(e => e.toggleUserFlairInSubreddit)),
+				a = Object(s.a)(() => Promise.resolve().then(n.bind(null, "./src/reddit/actions/userFlair/userFlair.ts")).then(e => e.toggleAssignOwnFlairPermission)),
+				i = Object(s.a)(() => Promise.resolve().then(n.bind(null, "./src/reddit/actions/userFlair/userFlair.ts")).then(e => e.saveUserFlairTemplate)),
+				c = Object(s.a)(() => Promise.resolve().then(n.bind(null, "./src/reddit/actions/userFlair/userFlair.ts")).then(e => e.deleteUserFlairTemplate)),
+				l = Object(s.a)(() => Promise.resolve().then(n.bind(null, "./src/reddit/actions/userFlair/userFlair.ts")).then(e => e.reorderUserFlairTemplates)),
+				d = Object(s.a)(() => Promise.resolve().then(n.bind(null, "./src/reddit/actions/userFlair/userFlair.ts")).then(e => e.userFlairLoadedAndModalOpened))
 		},
 		"./src/reddit/components/AccountManagerModal/IFrame/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -4241,7 +4241,7 @@
 					username: null,
 					subredditId: null
 				})),
-				openAchiementFlairModal: () => e(Object(ct.e)())
+				openAchiementFlairModal: () => e(Object(ct.f)())
 			}))(Nt);
 			var Mt = Object(Ne.a)(Object(A.c)(It)),
 				Tt = n("./src/reddit/selectors/bannedUser.ts"),
@@ -6756,7 +6756,7 @@
 					D = Object(p.e)(Ct.K),
 					F = Object(p.e)(br.o),
 					U = Object(p.e)(Ct.X),
-					B = Object(p.e)(Lt.q),
+					B = Object(p.e)(Lt.r),
 					G = Object(p.e)(e => Object(Qt.Z)(e, {
 						pageLayer: t
 					})),
@@ -9082,7 +9082,7 @@
 					navbarLikeMweb: Fi.a,
 					nightmode: Ct.X,
 					showPresence: Ct.P,
-					url: Lt.t
+					url: Lt.u
 				}), (e, t) => ({
 					closeUserDropdown: () => e(Object(Qr.j)({
 						tooltipId: "USER_DROPDOWN_ID"
@@ -10459,7 +10459,7 @@
 							pageLayer: t
 						})
 					},
-					hasInvalidSession: Ct.v,
+					hasInvalidSession: Ct.u,
 					isLoggedIn: Ct.K,
 					isNpsSurveyEnabled: gm.d,
 					isOnboardingQueryParamEnabled: ym.a,
@@ -12799,13 +12799,13 @@
 				k = n.n(S);
 			const w = Object(i.c)({
 					isInCategoriesExperiment: E.a,
-					post: j.m,
+					post: j.n,
 					isVoteCountAnimation: (e, {
 						page: t,
 						post: n
 					}) => {
 						if (!t && !n) return !1;
-						const s = t && Object(j.m)(e, {
+						const s = t && Object(j.n)(e, {
 							page: t
 						}) || n;
 						return !!s && Object(P.g)(e, {
@@ -15785,7 +15785,7 @@
 				o = n("./src/reddit/selectors/platform.ts"),
 				r = n("./src/reddit/selectors/telemetry.ts");
 			const a = e => {
-					const t = Object(o.n)(e);
+					const t = Object(o.o)(e);
 					return {
 						actionInfo: Object(r.actionInfo)(e),
 						post: t && Object(r.post)(e, t) || null,
@@ -15895,7 +15895,7 @@
 				l = n("./src/telemetry/index.ts");
 			const d = "comment_composer",
 				u = e => {
-					const t = Object(i.n)(e);
+					const t = Object(i.o)(e);
 					return {
 						source: d,
 						action: s.c.CLICK,
@@ -17304,7 +17304,7 @@
 					var t;
 					const {
 						currentPage: n
-					} = e.platform, s = Object(Ut.q)(e), o = null === (t = e.platform.currentPage) || void 0 === t ? void 0 : t.status, r = Bt.has(o), a = Object(Dt.l)(e, {
+					} = e.platform, s = Object(Ut.r)(e), o = null === (t = e.platform.currentPage) || void 0 === t ? void 0 : t.status, r = Bt.has(o), a = Object(Dt.l)(e, {
 						pageLayer: n
 					}), i = !(!a || !a.hideFromRobots), c = Ht(e), l = n && n.isRobotIndexable, d = s === _.Lb.COMMENTS || s === _.Lb.COLLECTION_COMMENTS, u = !(!n || !n.urlParams.partialCommentId), m = s === _.Lb.SEARCH_RESULTS || s === _.Lb.SUBREDDIT_LEADERBOARD || d && u;
 					return i || r || c || (!1 === l || m) ? m ? "noindex" : "noindex,nofollow" : null
@@ -21072,7 +21072,7 @@
 				i = n("./src/reddit/selectors/platform.ts"),
 				c = n("./src/reddit/selectors/user.ts");
 			const l = e => {
-					const t = Object(i.p)(e);
+					const t = Object(i.q)(e);
 					return Boolean((null == t ? void 0 : t[r.u]) && Object(o.a)(t[r.u]))
 				},
 				d = Object(s.a)(c.K, c.J, a.a, l, (e, t, n, s) => (e || t) && n && s)
@@ -21179,7 +21179,7 @@
 		}
 	},
 	[
-		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePo~5f1ac562", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250", "Governance~ModListing~Reddit~Subreddit", "Chat~Governance~Reddit", 0, "Reddit~StandalonePostPage~reddit-components-MediumPost", "Governance~Reddit"]
+		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePo~5f1ac562", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241", "Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Governance~ModListing~Reddit~Subreddit", "Chat~Governance~Reddit", 0, "Reddit~StandalonePostPage~reddit-components-MediumPost", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.a5449ae054cf194f49dd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.d24f6ac569bc2770d8f3.js.map

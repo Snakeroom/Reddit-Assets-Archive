@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.494d1019136e25aa8e54.js
-// Retrieved at 11/4/2021, 2:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.eb64b2e1a9fe7d6b06f9.js
+// Retrieved at 11/4/2021, 4:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton", "reddit-components-RichTextEditor-Toolbar-GifButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, o) {
@@ -4573,7 +4573,7 @@
 				d = o("./src/telemetry/index.ts");
 			const l = "comment_composer",
 				u = e => {
-					const t = Object(a.n)(e);
+					const t = Object(a.o)(e);
 					return {
 						source: l,
 						action: n.c.CLICK,
@@ -5024,4 +5024,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.494d1019136e25aa8e54.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.eb64b2e1a9fe7d6b06f9.js.map

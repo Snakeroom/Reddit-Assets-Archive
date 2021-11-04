@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.df1020326523f799f9cf.js
-// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.88fc27d58c4d961ecaf2.js
+// Retrieved at 11/4/2021, 4:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-PowerupsInFeedUnit-index-tsx"], {
 		"./src/reddit/actions/snoovatar.ts": function(e, t, s) {
@@ -287,9 +287,9 @@
 				h = s("./src/reddit/components/PowerupsCtaButton/index.tsx"),
 				w = s("./src/reddit/components/PowerupsSidebar/PowerupsBackground.tsx"),
 				f = s("./src/reddit/components/Econ/PowerupsInFeedUnit/PostUnlock/ApplyFromPremiumUnit.m.less"),
-				N = s.n(f);
+				g = s.n(f);
 			const {
-				fbt: g
+				fbt: N
 			} = s("./node_modules/fbt/lib/FbtPublic.js");
 			var y = ({
 					subredditId: e,
@@ -301,23 +301,23 @@
 							subredditId: e
 						}).displayText);
 					return o.a.createElement("div", {
-						className: Object(v.a)(N.a.container, t)
+						className: Object(v.a)(g.a.container, t)
 					}, o.a.createElement("img", {
-						className: N.a.powerupsIcon,
+						className: g.a.powerupsIcon,
 						src: `${E.a.assetPath}/img/powerups/powerups-rangers.png`,
 						"data-testid": "powerups-icon-rangers"
 					}), o.a.createElement("h2", {
-						className: N.a.title
-					}, g._("Use your Powerup to support {subreddit name}", [g._param("subreddit name", r)], {
+						className: g.a.title
+					}, N._("Use your Powerup to support {subreddit name}", [N._param("subreddit name", r)], {
 						hk: "2OMTwG"
 					})), o.a.createElement("h3", {
-						className: N.a.subtitle
-					}, g._("Go ahead, show them some love!", null, {
+						className: g.a.subtitle
+					}, N._("Go ahead, show them some love!", null, {
 						hk: "3NzF6j"
 					})), o.a.createElement(h.a, {
-						className: N.a.button,
+						className: g.a.button,
 						onClick: () => {
-							a(Object(d.r)()), s(Object(O.f)("in_feed_unit"))
+							a(Object(d.r)()), s(Object(O.g)("in_feed_unit"))
 						}
 					}), o.a.createElement(w.a, {
 						space: w.b.INFEED_UNIT
@@ -530,12 +530,12 @@
 					className: Q.a.supporters,
 					subredditId: t,
 					onClick: e => {
-						i(Object(d.e)("post_upsell")), r(e ? Object(O.h)(t) : Object(O.f)("in_feed_unit"))
+						i(Object(d.e)("post_upsell")), r(e ? Object(O.i)(t) : Object(O.g)("in_feed_unit"))
 					}
 				}), o.a.createElement(h.a, {
 					className: Q.a.button,
 					onClick: () => {
-						s === a.POWERUPS_DEFAULT ? i(Object(d.q)()) : i(Object(d.t)()), r(Object(O.f)("in_feed_unit"))
+						s === a.POWERUPS_DEFAULT ? i(Object(d.q)()) : i(Object(d.t)()), r(Object(O.g)("in_feed_unit"))
 					}
 				}), o.a.createElement(w.a, {
 					space: w.b.INFEED_UNIT
@@ -986,4 +986,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.df1020326523f799f9cf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.88fc27d58c4d961ecaf2.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.97dd30c141848a9ae688.js
-// Retrieved at 11/4/2021, 1:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.da788f0b95d9787f3b60.js
+// Retrieved at 11/4/2021, 4:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, s) {
@@ -774,7 +774,7 @@
 					t(O.m({
 						title: Ee(s(), v)
 					})), Object(f.M)(N) && Object(f.Q)(N, v) && t(Object(g.f)());
-					const R = [t(Object(i.q)()), t(_.b(j, T)), t(k.b(j)), t(w.o(v)), t(k.g(v)), t(x.k(v, L))];
+					const R = [t(Object(i.q)()), t(_.b(j, T)), t(k.b(j)), t(w.o(v)), t(k.g(v)), t(x.l(v, L))];
 					await Promise.all(R)
 				}, Ee = (e, t) => Object(b.q)(e, {
 					profileName: t
@@ -5176,4 +5176,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.97dd30c141848a9ae688.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.da788f0b95d9787f3b60.js.map

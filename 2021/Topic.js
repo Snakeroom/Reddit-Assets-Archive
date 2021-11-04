@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.a115c59b4e9a2a6812d9.js
-// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.52050296726f568cb6ec.js
+// Retrieved at 11/4/2021, 4:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -1621,7 +1621,7 @@
 				x = s("./src/reddit/constants/posts.ts"),
 				_ = s("./src/reddit/controls/InternalLink/index.tsx"),
 				y = s("./src/reddit/helpers/name/index.ts"),
-				E = s("./src/reddit/models/Widgets/index.ts"),
+				E = s("./src/reddit/helpers/widgets/index.tsx"),
 				T = s("./src/reddit/selectors/subreddit.ts"),
 				S = s("./src/reddit/selectors/user.ts"),
 				C = s("./src/reddit/components/TopicSidebar/SubredditList/Subreddit/index.m.less"),
@@ -1641,7 +1641,7 @@
 							subredditAboutInfo: r
 						} = this.props;
 						if (!s) return;
-						const i = Object(E.n)(s, r);
+						const i = Object(E.c)(s, r);
 						t(Object(u.p)(e, i))
 					}
 				}
@@ -2757,11 +2757,11 @@
 				}
 		},
 		"./src/redditGQL/operations/SubredditGeoRecommendationViaFocusVertical.json": function(e) {
-			e.exports = JSON.parse('{"id":"5c3cbc62be22"}')
+			e.exports = JSON.parse('{"id":"5e5c77150e44"}')
 		},
 		"./src/redditGQL/operations/UpdateRecommendationPreferences.json": function(e) {
 			e.exports = JSON.parse('{"id":"fa7b23e7dbc7"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.a115c59b4e9a2a6812d9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.52050296726f568cb6ec.js.map

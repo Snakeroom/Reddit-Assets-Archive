@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit~reddit-components-AdHocMultiredditSidebar.c2e00622bcdfd75968df.js
-// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit~reddit-components-AdHocMultiredditSidebar.17e1b086e3f592a6f937.js
+// Retrieved at 11/4/2021, 4:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit~reddit-components-AdHocMultiredditSidebar"], {
 		"./node_modules/lodash/take.js": function(e, t, r) {
@@ -410,7 +410,7 @@
 				}) => {
 					const s = t(),
 						i = Object(P.k)(s),
-						d = Object(k.i)(s) ? Object(k.l)(s) : Object(k.b)(s),
+						d = Object(k.i)(s) ? Object(k.m)(s) : Object(k.b)(s),
 						a = d && d.routeMatch && d.routeMatch.match;
 					if (!a) return;
 					const c = a.params,
@@ -1257,10 +1257,10 @@
 				le = r("./src/reddit/constants/keycodes.ts"),
 				ue = r("./src/reddit/controls/LoadingIcon/index.tsx"),
 				me = r("./src/reddit/helpers/name/index.ts"),
-				pe = r("./src/reddit/icons/svgs/Close/index.tsx"),
-				be = r("./src/reddit/icons/svgs/Search/index.tsx"),
-				he = r("./src/reddit/models/Toast/index.ts"),
-				fe = r("./src/reddit/models/Widgets/index.ts"),
+				pe = r("./src/reddit/helpers/widgets/index.tsx"),
+				be = r("./src/reddit/icons/svgs/Close/index.tsx"),
+				he = r("./src/reddit/icons/svgs/Search/index.tsx"),
+				fe = r("./src/reddit/models/Toast/index.ts"),
 				xe = r("./src/reddit/controls/SubredditPicker/Picker/SubredditDropdown/index.tsx"),
 				Ee = r("./src/reddit/selectors/subredditAutocomplete.ts");
 			const ye = Object(c.c)({
@@ -1324,7 +1324,7 @@
 					multireddit: t
 				}) => ({
 					addSubredditRequested: (r, s) => {
-						const i = s ? Object(fe.l)(s) : void 0;
+						const i = s ? Object(pe.a)(s) : void 0;
 						e(Object(oe.addSubredditRequested)({
 							communityInfo: i,
 							identifier: r,
@@ -1333,7 +1333,7 @@
 					},
 					errorToast: t => e(Object(ce.f)({
 						text: t,
-						kind: he.b.Error
+						kind: fe.b.Error
 					})),
 					removeSubredditRequested: ({
 						id: r,
@@ -1490,10 +1490,10 @@
 						className: _e.a.bubbleIcon
 					}), o.a.createElement("span", {
 						className: _e.a.text
-					}, `r/${n.name}`), o.a.createElement(pe.a, {
+					}, `r/${n.name}`), o.a.createElement(be.a, {
 						className: _e.a.closeIcon,
 						onClick: this.onChoiceRemoved
-					})) : o.a.createElement(be.a, {
+					})) : o.a.createElement(he.a, {
 						className: _e.a.searchIcon
 					}), o.a.createElement("input", {
 						className: Object(u.a)(_e.a.input, {
@@ -1710,7 +1710,7 @@
 					trackSeeMoreClicked: () => e((e, t) => Qe.a(t())),
 					trackSubredditClicked: r => {
 						if (!t) return;
-						const s = Object(fe.n)(r);
+						const s = Object(pe.c)(r);
 						e((e, r) => Qe.b(r(), s, t.name))
 					}
 				}));
@@ -2645,17 +2645,17 @@
 			t.a = s.a.div("rightAligned", n.a)
 		},
 		"./src/redditGQL/operations/AllUserMultireddits.json": function(e) {
-			e.exports = JSON.parse('{"id":"d54ae287661c"}')
+			e.exports = JSON.parse('{"id":"d5a173c1e5e2"}')
 		},
 		"./src/redditGQL/operations/MultiredditListing.json": function(e) {
-			e.exports = JSON.parse('{"id":"931066327274"}')
+			e.exports = JSON.parse('{"id":"ecf76105fc04"}')
 		},
 		"./src/redditGQL/operations/SubredditRecommendations.json": function(e) {
-			e.exports = JSON.parse('{"id":"3d59de103384"}')
+			e.exports = JSON.parse('{"id":"074eb98957ec"}')
 		},
 		"./src/redditGQL/operations/SubredditTypeaheadSearch.json": function(e) {
 			e.exports = JSON.parse('{"id":"20edc5ee12df"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit~reddit-components-AdHocMultiredditSidebar.c2e00622bcdfd75968df.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit~reddit-components-AdHocMultiredditSidebar.17e1b086e3f592a6f937.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-pages-PaypalFinishPage.94e69ee108cbffafd4fe.js
-// Retrieved at 11/3/2021, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-pages-PaypalFinishPage.9c4303aee5d03b57d9c6.js
+// Retrieved at 11/4/2021, 4:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-pages-PaypalFinishPage"], {
 		"./src/reddit/actions/gold/productOfferPurchase.ts": function(e, t, r) {
@@ -296,14 +296,14 @@
 						})))
 					}
 				}, q = Object(p.a)(m.S), T = e => async (t, r) => {
-					t(q(e)), t(Object(P.l)(e.subredditId, {
+					t(q(e)), t(Object(P.m)(e.subredditId, {
 						forceLoad: !0,
 						fullData: !1
 					})), t(Object(h.g)(c.a.ECON_POWERUPS_PURCHASE)), t(Object(h.h)(c.a.ECON_POWERUPS_SUCCESS))
 				}, U = Object(p.a)(m.W), M = ({
 					user: e
 				}) => async t => {
-					await t(Object(P.n)(!0)), t(U({
+					await t(Object(P.o)(!0)), t(U({
 						user: e
 					}))
 				}, J = Object(p.a)(m.ab)
@@ -808,4 +808,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-pages-PaypalFinishPage.94e69ee108cbffafd4fe.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-pages-PaypalFinishPage.9c4303aee5d03b57d9c6.js.map

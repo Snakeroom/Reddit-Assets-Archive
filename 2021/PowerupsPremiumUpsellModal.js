@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PowerupsPremiumUpsellModal.78b19dc6a524ac798d60.js
-// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PowerupsPremiumUpsellModal.da60a0a9c1d3dde75a49.js
+// Retrieved at 11/4/2021, 4:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PowerupsPremiumUpsellModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, r) {
@@ -440,14 +440,14 @@
 						})))
 					}
 				}, B = Object(m.a)(f.S), D = e => async (t, r) => {
-					t(B(e)), t(Object(P.l)(e.subredditId, {
+					t(B(e)), t(Object(P.m)(e.subredditId, {
 						forceLoad: !0,
 						fullData: !1
 					})), t(Object(w.g)(d.a.ECON_POWERUPS_PURCHASE)), t(Object(w.h)(d.a.ECON_POWERUPS_SUCCESS))
 				}, R = Object(m.a)(f.W), F = ({
 					user: e
 				}) => async t => {
-					await t(Object(P.n)(!0)), t(R({
+					await t(Object(P.o)(!0)), t(R({
 						user: e
 					}))
 				}, q = Object(m.a)(f.ab)
@@ -1154,7 +1154,7 @@
 			const {
 				fbt: K
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), V = () => {
-				const e = Object(c.e)(f.r),
+				const e = Object(c.e)(f.s),
 					t = Object(c.d)(),
 					r = Object(b.a)();
 				Object(n.useEffect)(() => {
@@ -1897,4 +1897,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsPremiumUpsellModal.78b19dc6a524ac798d60.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsPremiumUpsellModal.da60a0a9c1d3dde75a49.js.map

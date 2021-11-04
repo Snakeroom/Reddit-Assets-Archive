@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.43a1bb1c803fbe13daf2.js
-// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.bc2f83da4e42a1be1468.js
+// Retrieved at 11/4/2021, 4:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsMarketingModal"], {
 		"./src/reddit/components/Econ/Common/BenefitTile/index.m.less": function(e, t, s) {
@@ -360,7 +360,7 @@
 				});
 				const v = () => i(Object(m.g)(h.a.ECON_POWERUPS_MARKETING)),
 					I = () => {
-						Object(E.Fb)(h.a.ECON_POWERUPS_MARKETING, !0), i(N ? Object(d.g)(t) : Object(m.h)(h.a.ECON_POWERUPS_PURCHASE))
+						Object(E.Fb)(h.a.ECON_POWERUPS_MARKETING, !0), i(N ? Object(d.h)(t) : Object(m.h)(h.a.ECON_POWERUPS_PURCHASE))
 					};
 				if (!t || !c || !s) return v(), null;
 				const M = U._("Unlock perks for the whole community", null, {
@@ -410,7 +410,7 @@
 					className: L.a.joinHeroes,
 					subredditId: t,
 					onClick: e => {
-						w(Object(x.e)("powerups_modal")), e ? i(Object(d.h)(c.id)) : I()
+						w(Object(x.e)("powerups_modal")), e ? i(Object(d.i)(c.id)) : I()
 					}
 				})), r.a.createElement("li", {
 					className: L.a.howItWorksStep
@@ -598,4 +598,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.43a1bb1c803fbe13daf2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.bc2f83da4e42a1be1468.js.map

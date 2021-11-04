@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.8f7aac2f475daa52b8f2.js
-// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.7490deb1d3ed486839c3.js
+// Retrieved at 11/4/2021, 4:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -2552,9 +2552,9 @@
 				H = s("./src/reddit/contexts/Post/index.tsx"),
 				q = s("./src/reddit/helpers/canPreviewSelfText/index.ts"),
 				K = s("./src/reddit/helpers/styles/mixins/index.tsx"),
-				z = s("./src/reddit/models/Media/index.ts"),
-				Y = s("./src/reddit/models/Subreddit/index.ts"),
-				G = s("./src/reddit/models/Widgets/index.ts"),
+				z = s("./src/reddit/helpers/widgets/index.tsx"),
+				Y = s("./src/reddit/models/Media/index.ts"),
+				G = s("./src/reddit/models/Subreddit/index.ts"),
 				Z = s("./src/reddit/components/MiniCardPost/index.m.less"),
 				J = s.n(Z),
 				Q = s("./src/reddit/helpers/styles/mixins/index.m.less"),
@@ -2599,7 +2599,7 @@
 							autoplayPref: e,
 							availableWidth: t,
 							className: J.a.media,
-							forceAspectRatio: z.c,
+							forceAspectRatio: Y.c,
 							imageBoxClassName: J.a.mediaImageBox,
 							imageBoxContentImageClassName: J.a.mediaImageBoxContentImage,
 							isListing: !0,
@@ -2613,14 +2613,14 @@
 							showFull: !1
 						}),
 						k = !1;
-					E && _ && (E.type !== z.o.RTJSON && E.type !== z.o.TEXT ? (_ = o.a.createElement("div", {
+					E && _ && (E.type !== Y.o.RTJSON && E.type !== Y.o.TEXT ? (_ = o.a.createElement("div", {
 						className: ee.a.mediaWrapper
 					}, _), k = !0) : E && E.content && Object(q.a)(p) && (_ = o.a.createElement("div", {
 						className: ee.a.textWrapper
 					}, _)));
 					const S = !k && !j;
 					let I;
-					return O && (I = Object(Y.h)(O) ? Object(G.m)(O) : Object(G.n)(O)), o.a.createElement(U.a, {
+					return O && (I = Object(G.h)(O) ? Object(z.b)(O) : Object(z.c)(O)), o.a.createElement(U.a, {
 						className: Object(c.a)(ee.a.container, X.a.largeAndMediumActiveStyles, X.a.largeAndMediumPostStyles, J.a.postContainer, Object(K.a)(this.props), s),
 						post: p,
 						onClick: u,
@@ -12126,11 +12126,11 @@
 				l = Object(r.a)((e, t) => t, a, (e, t) => c(e, t))
 		},
 		"./src/redditGQL/operations/SubredditGeoRecommendationViaFocusVertical.json": function(e) {
-			e.exports = JSON.parse('{"id":"5c3cbc62be22"}')
+			e.exports = JSON.parse('{"id":"5e5c77150e44"}')
 		},
 		"./src/redditGQL/operations/UpdateRecommendationPreferences.json": function(e) {
 			e.exports = JSON.parse('{"id":"fa7b23e7dbc7"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.8f7aac2f475daa52b8f2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.7490deb1d3ed486839c3.js.map

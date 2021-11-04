@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.f37750aa55f8d72e5d11.js
-// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.c32c402439fff0765d1d.js
+// Retrieved at 11/4/2021, 4:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileFollowersPage", "ProfileFollowersAction"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -832,7 +832,7 @@
 					t(w.m({
 						title: ke(s(), y)
 					})), Object(f.M)(T) && Object(f.Q)(T, y) && t(Object(g.f)());
-					const F = [t(Object(a.q)()), t(O.b(j, P)), t(_.b(j)), t(x.o(y)), t(_.g(y)), t(C.k(y, R))];
+					const F = [t(Object(a.q)()), t(O.b(j, P)), t(_.b(j)), t(x.o(y)), t(_.g(y)), t(C.l(y, R))];
 					await Promise.all(F)
 				}, ke = (e, t) => Object(h.q)(e, {
 					profileName: t
@@ -6706,8 +6706,8 @@
 				}) => e.pages.profileOverview.chrono.fetchedTokens[t]
 		},
 		"./src/redditGQL/operations/ProfileFollowers.json": function(e) {
-			e.exports = JSON.parse('{"id":"b2111d06f587"}')
+			e.exports = JSON.parse('{"id":"fe780a440dbd"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.f37750aa55f8d72e5d11.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.c32c402439fff0765d1d.js.map
