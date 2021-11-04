@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.075e724d6881477fef30.js
-// Retrieved at 11/4/2021, 4:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.598ef696371dbd13b0a8.js
+// Retrieved at 11/4/2021, 6:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton", "FrontpageSidebar"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, n) {
@@ -8075,7 +8075,7 @@
 						subreddit: n
 					} = e, {
 						isSponsored: s
-					} = t, o = Object(U.a)(), a = Object(W.a)(m.Tc) === m.Yc.Enabled;
+					} = t, o = Object(U.a)(), a = Object(W.a)(m.Sc) === m.Xc.Enabled;
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return r.a.createElement(Q, {
 						nowrap: e.nowrap
 					}, r.a.createElement(Z, e));
@@ -23016,21 +23016,21 @@
 				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				a = n("./src/reddit/selectors/experiments/index.ts");
 			const i = Object(s.a)(e => Object(r.c)(e, {
+					experimentName: o.sb,
+					experimentEligibilitySelector: a.e
+				}), e => e === o.V.Enabled),
+				c = Object(s.a)(e => Object(r.c)(e, {
 					experimentName: o.tb,
 					experimentEligibilitySelector: a.e
 				}), e => e === o.W.Enabled),
-				c = Object(s.a)(e => Object(r.c)(e, {
+				d = Object(s.a)(e => Object(r.c)(e, {
 					experimentName: o.ub,
 					experimentEligibilitySelector: a.e
 				}), e => e === o.X.Enabled),
-				d = Object(s.a)(e => Object(r.c)(e, {
+				l = Object(s.a)(e => Object(r.c)(e, {
 					experimentName: o.vb,
 					experimentEligibilitySelector: a.e
-				}), e => e === o.Y.Enabled),
-				l = Object(s.a)(e => Object(r.c)(e, {
-					experimentName: o.wb,
-					experimentEligibilitySelector: a.e
-				}), e => e === o.Z.Enabled)
+				}), e => e === o.Y.Enabled)
 		},
 		"./src/reddit/selectors/experiments/navbarLikeMweb.ts": function(e, t, n) {
 			"use strict";
@@ -23040,9 +23040,9 @@
 			var s = n("./src/reddit/constants/experiments.ts"),
 				o = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const r = e => Object(o.c)(e, {
-				experimentName: s.Ed,
+				experimentName: s.Dd,
 				experimentEligibilitySelector: o.a
-			}) === s.Ld.Enabled
+			}) === s.Kd.Enabled
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, n) {
 			"use strict";
@@ -23532,4 +23532,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.075e724d6881477fef30.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.598ef696371dbd13b0a8.js.map

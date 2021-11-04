@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.7490deb1d3ed486839c3.js
-// Retrieved at 11/4/2021, 4:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.2326e25f57ed664695a4.js
+// Retrieved at 11/4/2021, 6:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -11823,9 +11823,9 @@
 			}));
 			var r = s("./src/reddit/constants/experiments.ts"),
 				n = s("./src/reddit/helpers/chooseVariant/index.ts");
-			const o = e => r.re.Treatment1 === Object(n.c)(e, {
+			const o = e => r.qe.Treatment1 === Object(n.c)(e, {
 				experimentEligibilitySelector: n.a,
-				experimentName: r.ie
+				experimentName: r.he
 			})
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, s) {
@@ -12118,10 +12118,10 @@
 				o = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = s("./src/reddit/selectors/posts.ts");
 			const a = e => Object(o.c)(e, {
-					experimentName: n.Xd,
+					experimentName: n.Wd,
 					experimentEligibilitySelector: o.a
 				}),
-				c = (e, t) => t === n.ge.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				c = (e, t) => t === n.fe.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				d = Object(r.a)(i.H, a, (e, t) => c(e, t)),
 				l = Object(r.a)((e, t) => t, a, (e, t) => c(e, t))
 		},
@@ -12133,4 +12133,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.7490deb1d3ed486839c3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.2326e25f57ed664695a4.js.map

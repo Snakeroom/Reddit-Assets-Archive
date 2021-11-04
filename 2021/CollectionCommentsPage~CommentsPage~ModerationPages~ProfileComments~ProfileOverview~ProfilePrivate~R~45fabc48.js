@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.c461c41d5aa4b0be2781.js
-// Retrieved at 11/4/2021, 4:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.ed2a1228c2faf7d00eaf.js
+// Retrieved at 11/4/2021, 6:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48"], {
 		"./src/reddit/actions/eventPosts/index.ts": function(e, t, s) {
@@ -198,7 +198,7 @@
 			})), s.d(t, "h", (function() {
 				return K
 			})), s.d(t, "f", (function() {
-				return Y
+				return X
 			})), s.d(t, "d", (function() {
 				return oe
 			}));
@@ -461,10 +461,10 @@
 						}))
 					}
 					return a
-				}, J = Object(i.a)(a.l), Q = Object(i.a)(a.m), z = Object(i.a)(a.k), Y = e => async (t, s) => {
+				}, J = Object(i.a)(a.l), Q = Object(i.a)(a.m), z = Object(i.a)(a.k), X = e => async (t, s) => {
 					const o = s().platform.currentPage.locationState;
 					t(!(!o || !o[d.b.IsOverlay]) ? Object(j.a)(e.permalink) : Object(n.b)(Object(E.b)(e.permalink)))
-				}, X = Object(i.a)(a.i), Z = Object(i.a)(a.j), $ = Object(i.a)(a.h), ee = Object(i.a)(a.p), te = Object(i.a)(a.o), se = Object(i.a)(a.q), oe = e => async t => {
+				}, Y = Object(i.a)(a.i), Z = Object(i.a)(a.j), $ = Object(i.a)(a.h), ee = Object(i.a)(a.p), te = Object(i.a)(a.o), se = Object(i.a)(a.q), oe = e => async t => {
 					const s = [],
 						{
 							collectionId: n,
@@ -476,7 +476,7 @@
 					a && s.push(t(((e, t) => async (s, n, {
 						apiContext: r
 					}) => {
-						s(X());
+						s(Y());
 						const i = await _(r(), e, t);
 						let a = !1;
 						return i.ok ? (s(Z({
@@ -1032,7 +1032,7 @@
 					postId: I,
 					isCommentCountAnimation: y,
 					isCountAnimShadowTestEnabled: T
-				} = e, S = c && !i && !m, M = i && !p, F = Object(O.a)(), R = Object(v.a)(h.Tc) === h.Yc.Enabled, A = r.a.createElement(N, {
+				} = e, S = c && !i && !m, M = i && !p, F = Object(O.a)(), R = Object(v.a)(h.Sc) === h.Xc.Enabled, A = r.a.createElement(N, {
 					hasModPostPerms: s,
 					isCountAnimShadowTestEnabled: !!T,
 					isChatPost: n,
@@ -1488,8 +1488,8 @@
 				J = s("./src/reddit/helpers/trackers/post.ts"),
 				Q = s("./src/reddit/icons/fonts/index.tsx"),
 				z = s("./src/reddit/icons/fonts/ModActions/index.tsx"),
-				Y = s("./src/reddit/icons/fonts/Share/index.tsx"),
-				X = s("./src/reddit/models/Media/index.ts"),
+				X = s("./src/reddit/icons/fonts/Share/index.tsx"),
+				Y = s("./src/reddit/models/Media/index.ts"),
 				Z = s("./src/reddit/models/NewStructuredStyles/index.ts"),
 				$ = s("./src/reddit/models/PostCreationForm/index.ts"),
 				ee = s("./src/reddit/models/User/index.ts"),
@@ -1653,13 +1653,13 @@
 						we(), Me("report")
 					}, [we, Me]), Le = Object(n.useMemo)(() => r.a.createElement(xe, {
 						"data-click-id": "share"
-					}, r.a.createElement(Y.a, {
+					}, r.a.createElement(X.a, {
 						className: me.a.shareIcon
 					}), r.a.createElement("span", {
 						className: me.a.shareText
 					}, o.fbt._("share", null, {
 						hk: "1eAfZg"
-					}))), []), Be = !!p && Object(ee.e)(p) === U.author, De = Object(oe.a)("View--Reports", U.id, ce), We = Object(oe.a)(d.lc, U.id, ce), Ve = Object(T.c)(U), Ue = je("-mod-actions-menu", U.id, k, E), Ge = Object(T.a)(U), He = U.postId, qe = w === D.g.Large, Ke = !C && qe || x && I || ye, Je = !(k || C || f), Qe = p && U.isGildable && !(U.authorIsBlocked && Ie), ze = U.media && U.media.type === X.o.LIVEVIDEO, Ye = !!U.recommendationContext;
+					}))), []), Be = !!p && Object(ee.e)(p) === U.author, De = Object(oe.a)("View--Reports", U.id, ce), We = Object(oe.a)(d.lc, U.id, ce), Ve = Object(T.c)(U), Ue = je("-mod-actions-menu", U.id, k, E), Ge = Object(T.a)(U), He = U.postId, qe = w === D.g.Large, Ke = !C && qe || x && I || ye, Je = !(k || C || f), Qe = p && U.isGildable && !(U.authorIsBlocked && Ie), ze = U.media && U.media.type === Y.o.LIVEVIDEO, Xe = !!U.recommendationContext;
 					return r.a.createElement(r.a.Fragment, null, r.a.createElement("div", {
 						className: Object(c.a)(me.a.flatlistContainer, a)
 					}, r.a.createElement(v.a, {
@@ -1803,7 +1803,7 @@
 						isFixed: E,
 						isOverlay: !!k,
 						isProfilePostListing: j,
-						isRecommendationPost: Ye,
+						isRecommendationPost: Xe,
 						layout: w,
 						modModeWithPost: I && x,
 						pageLayer: V,
@@ -2496,8 +2496,8 @@
 				J = S.a.div("DetailsContainer", G.a),
 				Q = S.a.wrapped(O.a, "ButtonRow", G.a),
 				z = S.a.div("CloseWrapper", G.a),
-				Y = S.a.wrapped(x.a, "Close", G.a),
-				X = S.a.div("Empty", G.a),
+				X = S.a.wrapped(x.a, "Close", G.a),
+				Y = S.a.div("Empty", G.a),
 				Z = S.a.img("EmptyImage", G.a),
 				$ = S.a.p("EmptyText", G.a),
 				ee = S.a.div("FilterWrapper", G.a),
@@ -2551,14 +2551,14 @@
 					document.removeEventListener("keydown", this.handleEscapeKey)
 				}
 				renderNoCollections() {
-					return i.a.createElement(X, null, i.a.createElement(Z, {
+					return i.a.createElement(Y, null, i.a.createElement(Z, {
 						src: H
 					}), i.a.createElement($, null, n.fbt._("Your collections will live here", null, {
 						hk: "FCxWg"
 					})))
 				}
 				renderNoFilterMatches() {
-					return i.a.createElement(X, null, i.a.createElement($, null, n.fbt._("No collection matching filter", null, {
+					return i.a.createElement(Y, null, i.a.createElement($, null, n.fbt._("No collection matching filter", null, {
 						hk: "2vawdK"
 					}), ";"))
 				}
@@ -2582,7 +2582,7 @@
 						hk: "3yKovS"
 					}), i.a.createElement(z, {
 						onClick: this.close
-					}, i.a.createElement(Y, {
+					}, i.a.createElement(X, {
 						"data-redditstyle": !0
 					}))), i.a.createElement(ee, null, i.a.createElement(se, null), i.a.createElement(te, {
 						placeholder: n.fbt._("Find a collection", null, {
@@ -2970,8 +2970,8 @@
 				J = s("./src/reddit/helpers/trackers/post.ts"),
 				Q = s("./src/reddit/models/Post/index.ts"),
 				z = s("./src/reddit/models/Subreddit/index.ts"),
-				Y = s("./src/reddit/selectors/activeModalId.ts"),
-				X = s("./src/reddit/selectors/gold/purchaseCatalog.ts"),
+				X = s("./src/reddit/selectors/activeModalId.ts"),
+				Y = s("./src/reddit/selectors/gold/purchaseCatalog.ts"),
 				Z = s("./src/reddit/selectors/posts.ts"),
 				$ = s("./src/reddit/selectors/subreddit.ts"),
 				ee = s("./src/reddit/selectors/user.ts"),
@@ -3054,7 +3054,7 @@
 					[W.a.Hide]: r
 				}),
 				Ce = Object(a.b)(() => Object(c.c)({
-					claimedFreeAward: X.b,
+					claimedFreeAward: Y.b,
 					isFutureEvent: ce.i,
 					isPinned: Z.q,
 					subredditAboutInfo: Z.I,
@@ -3089,7 +3089,7 @@
 					reportingRevampEnabled: te.a,
 					videoShareModalOpen: (e, {
 						postId: t
-					}) => Object(Y.a)(e) === Object(U.a)(t)
+					}) => Object(X.a)(e) === Object(U.a)(t)
 				}), (e, {
 					postId: t,
 					isOverlay: s,
@@ -4714,12 +4714,12 @@
 				i = s("./src/reddit/selectors/user.ts");
 			const a = Object(o.a)(e => Object(r.c)(e, {
 				experimentEligibilitySelector: i.K,
-				experimentName: n.Eb
-			}), e => e === n.Jc)
+				experimentName: n.Db
+			}), e => e === n.Ic)
 		},
 		"./src/redditGQL/operations/EventPostsBySubredditName.json": function(e) {
 			e.exports = JSON.parse('{"id":"2459cc1203bd"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.c461c41d5aa4b0be2781.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.ed2a1228c2faf7d00eaf.js.map

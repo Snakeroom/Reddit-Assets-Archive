@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-MediumPost.37f17dfd5e791618d3c0.js
-// Retrieved at 11/4/2021, 4:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-MediumPost.0f6897cca37251060e3f.js
+// Retrieved at 11/4/2021, 6:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~StandalonePostPage~reddit-components-MediumPost"], {
 		"./src/lib/hooks/usePrevious.ts": function(e, t, r) {
@@ -421,9 +421,9 @@
 						clearTimeout(R.current), clearTimeout(M.current), clearTimeout(N.current)
 					}
 				}, [t]);
-				const K = Object(n.useCallback)(() => C(!0), [C]),
-					z = 0 === k.length,
-					H = y || z,
+				const z = Object(n.useCallback)(() => C(!0), [C]),
+					K = 0 === k.length,
+					H = y || K,
 					Y = Object(n.useRef)(((e, t) => `${t}_${e}_count_anim`)(h, r));
 				return s.a.createElement(s.a.Fragment, null, !b && s.a.createElement("div", {
 					className: l.a.countAnimation
@@ -441,7 +441,7 @@
 						"aria-hidden": !0,
 						className: l.a.digitDeltaWrapper,
 						key: t,
-						onTransitionEnd: K,
+						onTransitionEnd: z,
 						style: x && k.length > 0 && !y ? {
 							transform: `translateY(-${j&&r.length>1?100:100*(r.length-1)}%)`,
 							transitionDuration: `${(j?500:750)/1e3}s`
@@ -2824,21 +2824,21 @@
 				o = r("./src/reddit/helpers/chooseVariant/index.ts"),
 				a = r("./src/reddit/selectors/experiments/index.ts");
 			const c = Object(n.a)(e => Object(o.c)(e, {
+					experimentName: s.sb,
+					experimentEligibilitySelector: a.e
+				}), e => e === s.V.Enabled),
+				i = Object(n.a)(e => Object(o.c)(e, {
 					experimentName: s.tb,
 					experimentEligibilitySelector: a.e
 				}), e => e === s.W.Enabled),
-				i = Object(n.a)(e => Object(o.c)(e, {
+				d = Object(n.a)(e => Object(o.c)(e, {
 					experimentName: s.ub,
 					experimentEligibilitySelector: a.e
 				}), e => e === s.X.Enabled),
-				d = Object(n.a)(e => Object(o.c)(e, {
+				l = Object(n.a)(e => Object(o.c)(e, {
 					experimentName: s.vb,
 					experimentEligibilitySelector: a.e
-				}), e => e === s.Y.Enabled),
-				l = Object(n.a)(e => Object(o.c)(e, {
-					experimentName: s.wb,
-					experimentEligibilitySelector: a.e
-				}), e => e === s.Z.Enabled)
+				}), e => e === s.Y.Enabled)
 		},
 		"./src/reddit/selectors/experiments/postActionBarAnimation.ts": function(e, t, r) {
 			"use strict";
@@ -2871,7 +2871,7 @@
 						experimentEligibilitySelector: s.a,
 						experimentName: n.n
 					});
-					return t === n.u.VoteCountOnly || t === n.u.CommentCountOnly || t === n.u.VoteAndCommentCount
+					return t === n.t.VoteCountOnly || t === n.t.CommentCountOnly || t === n.t.VoteAndCommentCount
 				},
 				l = e => {
 					if (Object(c.c)(e) || Object(a.a)(e)) return !1;
@@ -2879,7 +2879,7 @@
 						experimentEligibilitySelector: s.a,
 						experimentName: n.n
 					});
-					return t === n.u.VoteCountOnly || t === n.u.VoteAndCommentCount
+					return t === n.t.VoteCountOnly || t === n.t.VoteAndCommentCount
 				},
 				u = e => {
 					if (Object(c.c)(e) || Object(a.a)(e)) return !1;
@@ -2887,7 +2887,7 @@
 						experimentEligibilitySelector: s.a,
 						experimentName: n.n
 					});
-					return t === n.u.CommentCountOnly || t === n.u.VoteAndCommentCount
+					return t === n.t.CommentCountOnly || t === n.t.VoteAndCommentCount
 				},
 				m = (e, {
 					post: t
@@ -2903,7 +2903,7 @@
 							experimentName: n.n
 						}),
 						d = null == s ? void 0 : s.variant;
-					return d === n.u.VoteCountOnly || d === n.u.VoteAndCommentCount
+					return d === n.t.VoteCountOnly || d === n.t.VoteAndCommentCount
 				},
 				f = (e, {
 					postId: t
@@ -2914,14 +2914,14 @@
 							experimentName: n.n
 						}),
 						d = null == s ? void 0 : s.variant;
-					return d === n.u.CommentCountOnly || d === n.u.VoteAndCommentCount
+					return d === n.t.CommentCountOnly || d === n.t.VoteAndCommentCount
 				},
 				b = e => {
 					if (Object(a.a)(e)) return !1;
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: n.Ab
-					}) === n.Nb.Enabled
+						experimentName: n.zb
+					}) === n.Mb.Enabled
 				}
 		},
 		"./src/reddit/selectors/experiments/presence.ts": function(e, t, r) {
@@ -2934,8 +2934,8 @@
 			const o = e => {
 				return Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: n.Ud
-				}) === n.Jc
+					experimentName: n.Td
+				}) === n.Ic
 			}
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, r) {
@@ -3234,4 +3234,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-MediumPost.37f17dfd5e791618d3c0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-MediumPost.0f6897cca37251060e3f.js.map

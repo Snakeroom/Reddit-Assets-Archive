@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241.ff33d63931c467e8f898.js
-// Retrieved at 11/4/2021, 4:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241.15efb4b85885d9df76a5.js
+// Retrieved at 11/4/2021, 6:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241"], {
 		"./src/reddit/actions/authorFlair.ts": function(e, t, r) {
@@ -3547,7 +3547,7 @@
 					S = Object(_.q)(c, f.e.Post);
 				if (!l || !b || (I || S || m)) return;
 				const E = Object(O.a)(c);
-				(E === o.Ge.Post || E === o.Ge.Rules) && (Object(n.a)(Object(p.d)()(c)), await t(Object(d.h)(a.a.SUBREDDIT_WELCOME_MESSAGE)))
+				(E === o.Fe.Post || E === o.Fe.Rules) && (Object(n.a)(Object(p.d)()(c)), await t(Object(d.h)(a.a.SUBREDDIT_WELCOME_MESSAGE)))
 			}, T = e => async (t, r) => {
 				let s = r(),
 					n = Object(g.a)(s, e);
@@ -6866,10 +6866,10 @@
 				i = r("./src/reddit/helpers/chooseVariant/index.ts"),
 				d = r("./src/reddit/selectors/user.ts");
 			const o = e => Object(i.c)(e, {
-					experimentName: n.qc,
+					experimentName: n.pc,
 					experimentEligibilitySelector: d.K
 				}),
-				a = Object(s.a)(o, e => e === n.Pc.Community || e === n.Pc.Supporter)
+				a = Object(s.a)(o, e => e === n.Oc.Community || e === n.Oc.Supporter)
 		},
 		"./src/reddit/selectors/experiments/gqlSubredditPage.ts": function(e, t, r) {
 			"use strict";
@@ -6882,12 +6882,12 @@
 				n = r("./src/reddit/helpers/chooseVariant/index.ts");
 			const i = e => Object(n.c)(e, {
 					experimentEligibilitySelector: n.a,
-					experimentName: s.ob
-				}) === s.Mb.Enabled,
+					experimentName: s.nb
+				}) === s.Lb.Enabled,
 				d = e => Object(n.c)(e, {
 					experimentEligibilitySelector: n.a,
-					experimentName: s.nb
-				}) === s.Lb.Enabled
+					experimentName: s.mb
+				}) === s.Kb.Enabled
 		},
 		"./src/reddit/selectors/experiments/publicAccessNetwork.ts": function(e, t, r) {
 			"use strict";
@@ -6912,52 +6912,52 @@
 			}));
 			var s = r("./src/reddit/constants/experiments.ts"),
 				n = r("./src/reddit/helpers/chooseVariant/index.ts");
-			const i = e => s.he.Enabled === Object(n.c)(e, {
+			const i = e => s.ge.Enabled === Object(n.c)(e, {
 					experimentEligibilitySelector: n.a,
-					experimentName: s.pe
+					experimentName: s.oe
 				}),
-				d = e => s.he.Enabled === Object(n.c)(e, {
+				d = e => s.ge.Enabled === Object(n.c)(e, {
 					experimentEligibilitySelector: n.a,
-					experimentName: s.Zd
+					experimentName: s.Yd
 				}),
-				o = e => s.Ce.Enabled === Object(n.c)(e, {
+				o = e => s.Be.Enabled === Object(n.c)(e, {
 					experimentEligibilitySelector: n.a,
-					experimentName: s.we
+					experimentName: s.ve
 				}),
 				a = (e, t, r) => {
 					const i = r(e, t);
-					return !(!i || !i.meter) && (i.meter.enabled && o(e) && s.Ve.Enabled === Object(n.c)(e, {
+					return !(!i || !i.meter) && (i.meter.enabled && o(e) && s.Ue.Enabled === Object(n.c)(e, {
 						experimentEligibilitySelector: n.a,
-						experimentName: s.Ue
+						experimentName: s.Te
 					}))
 				},
 				c = e => Object(n.c)(e, {
 					experimentEligibilitySelector: n.a,
-					experimentName: s.oe
+					experimentName: s.ne
 				}),
 				u = e => {
 					switch (e) {
-						case s.ue.Five:
+						case s.te.Five:
 							return .05;
-						case s.ue.Ten:
+						case s.te.Ten:
 							return .1;
-						case s.ue.Fifty:
+						case s.te.Fifty:
 							return .5;
 						default:
 							return .01
 					}
 				},
-				l = e => s.he.Enabled === Object(n.c)(e, {
+				l = e => s.ge.Enabled === Object(n.c)(e, {
 					experimentEligibilitySelector: n.a,
-					experimentName: s.qe
+					experimentName: s.pe
 				}),
-				b = e => s.he.Enabled === Object(n.c)(e, {
+				b = e => s.ge.Enabled === Object(n.c)(e, {
+					experimentEligibilitySelector: n.a,
+					experimentName: s.le
+				}),
+				p = e => s.ge.Enabled === Object(n.c)(e, {
 					experimentEligibilitySelector: n.a,
 					experimentName: s.me
-				}),
-				p = e => s.he.Enabled === Object(n.c)(e, {
-					experimentEligibilitySelector: n.a,
-					experimentName: s.ne
 				})
 		},
 		"./src/reddit/selectors/experiments/subredditWelcomeMessage.ts": function(e, t, r) {
@@ -6971,7 +6971,7 @@
 				d = r("./src/reddit/selectors/experiments/index.ts"),
 				o = r("./src/reddit/selectors/experiments/utils.ts");
 			const a = Object(s.a)(e => Object(i.c)(e, {
-				experimentName: n.Ae,
+				experimentName: n.ze,
 				experimentEligibilitySelector: d.e
 			}), o.a)
 		},
@@ -7770,4 +7770,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241.ff33d63931c467e8f898.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241.15efb4b85885d9df76a5.js.map

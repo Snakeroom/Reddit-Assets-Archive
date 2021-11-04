@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.13c8e1948f1789a381c3.js
-// Retrieved at 11/4/2021, 4:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.4ecb3049137fb5c1a9e5.js
+// Retrieved at 11/4/2021, 6:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-NotificationUnit-Button"], {
 		"./src/reddit/actions/comment/authoring.ts": function(e, t, n) {
@@ -1312,10 +1312,10 @@
 						return !(!t.isStickied || !((e, t) => {
 							const n = Object(c.c)(e, {
 								experimentEligibilitySelector: c.a,
-								experimentName: s.G,
+								experimentName: s.F,
 								expEventOverride: t
 							});
-							return !!(Object(s.cf)(n) ? void 0 : n)
+							return !!(Object(s.bf)(n) ? void 0 : n)
 						})(n)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -2299,4 +2299,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.13c8e1948f1789a381c3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.4ecb3049137fb5c1a9e5.js.map
