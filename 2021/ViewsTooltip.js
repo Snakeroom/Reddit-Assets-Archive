@@ -1,7 +1,7 @@
-// https://www.redditstatic.com/desktop2x/ModStatsChart.97cc78b019910b908d9f.js
+// https://www.redditstatic.com/desktop2x/ViewsTooltip.cf2e343375d91bfddd77.js
 // Retrieved at 11/8/2021, 4:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
-	["ModStatsChart"], {
+	["ViewsTooltip"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, o, l) {
 			var s = {
 				"./af": "./node_modules/moment/locale/af.js",
@@ -270,7 +270,7 @@
 				"./zh-tw.js": "./node_modules/moment/locale/zh-tw.js"
 			};
 
-			function t(e) {
+			function m(e) {
 				var o = n(e);
 				return l(o)
 			}
@@ -282,470 +282,321 @@
 				}
 				return s[e]
 			}
-			t.keys = function() {
+			m.keys = function() {
 				return Object.keys(s)
-			}, t.resolve = n, e.exports = t, t.id = "./node_modules/moment/locale sync recursive ^\\.\\/.*$"
+			}, m.resolve = n, e.exports = m, m.id = "./node_modules/moment/locale sync recursive ^\\.\\/.*$"
 		},
-		"./src/reddit/components/ModHub/TrafficStats/ModStatsChart/index.m.less": function(e, o, l) {
-			e.exports = {
-				chart: "_2p8txefR8XSKki775xakki",
-				legend: "H4SAS-mcse1qgWuI4FX0I",
-				legendLine: "_2Q4MhIPLudGIQKAKbNlYH9",
-				expandRight: "_3m3_3x11MBkfWjHhLEoG9a",
-				legendBlock: "_3jydo7Ow1M3RCNn4i59P1e",
-				legendLabel: "TfEWOpGmYyveN2jfv5E6d",
-				Tooltip: "_2xR_MnACeDRHe5IudVfVYz",
-				tooltip: "_2xR_MnACeDRHe5IudVfVYz",
-				dateLine: "_2RKN7eYkEnWWE5nVWSfO1U",
-				action: "_1whJkJ8uCGsOGPH38Uq7oh",
-				date: "_2NRVSoW7gsMEozVD3K8bZU",
-				value: "_1lff8pbcelPewBg5akLLLQ"
-			}
-		},
-		"./src/reddit/components/ModHub/TrafficStats/ModStatsChart/index.tsx": function(e, o, l) {
+		"./src/reddit/components/CreatorStats/ViewsTooltip.tsx": function(e, o, l) {
 			"use strict";
 			l.r(o);
 			l("./node_modules/chartjs-adapter-moment/dist/chartjs-adapter-moment.esm.js");
 			var s = l("./node_modules/fbt/lib/FbtPublic.js"),
-				t = l("./src/lib/CSSVariableProvider/withTheme.tsx"),
-				n = l("./src/lib/prettyPrintNumber/index.ts"),
-				m = l("./node_modules/polished/dist/polished.es.js"),
+				m = l("./node_modules/moment/moment.js"),
+				n = l.n(m),
 				d = l("./node_modules/react/index.js"),
-				a = l.n(d),
-				c = l("./node_modules/react-chartjs-2/dist/index.modern.js"),
-				u = l("./src/reddit/components/RichTextEditor/Tooltip/index.tsx"),
-				i = l("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
-				j = l("./src/reddit/layout/twoCol/ExpandRight/index.tsx"),
-				r = l("./src/reddit/components/ModHub/TrafficStats/helpers.ts"),
-				_ = l("./src/reddit/constants/colors.ts"),
-				p = l("./src/reddit/models/StructuredStyles/index.ts"),
-				b = l("./src/reddit/models/Theme/NewColorSystem/index.ts");
-			const h = (e, o) => {
+				t = l.n(d),
+				a = l("./node_modules/react-chartjs-2/dist/index.modern.js"),
+				u = l("./src/lib/CSSVariableProvider/withTheme.tsx"),
+				c = l("./src/lib/prettyPrintNumber/index.ts"),
+				j = l("./src/reddit/models/Theme/NewColorSystem/index.ts"),
+				_ = l("./src/reddit/components/CreatorStats/index.m.less"),
+				r = l.n(_);
+			const i = [{
+				date: "2021092900",
+				value: 43
+			}, {
+				date: "2021092901",
+				value: 3
+			}, {
+				date: "2021092902",
+				value: 5
+			}, {
+				date: "2021092903",
+				value: 6
+			}, {
+				date: "2021092904",
+				value: 8
+			}, {
+				date: "2021092905",
+				value: 10
+			}, {
+				date: "2021092906",
+				value: 15
+			}, {
+				date: "2021092907",
+				value: 20
+			}, {
+				date: "2021092908",
+				value: 4
+			}, {
+				date: "2021092909",
+				value: 2
+			}, {
+				date: "2021092910",
+				value: 1
+			}, {
+				date: "2021092911",
+				value: 1
+			}, {
+				date: "2021093000",
+				value: 8
+			}, {
+				date: "2021093001",
+				value: 10
+			}, {
+				date: "2021093002",
+				value: 12
+			}, {
+				date: "2021093003",
+				value: 17
+			}, {
+				date: "2021093004",
+				value: 20
+			}, {
+				date: "2021093005",
+				value: 25
+			}, {
+				date: "2021093006",
+				value: 13
+			}, {
+				date: "2021093007",
+				value: 10
+			}, {
+				date: "2021093008",
+				value: 10
+			}, {
+				date: "2021093009",
+				value: 6
+			}, {
+				date: "2021093010",
+				value: 3
+			}, {
+				date: "2021093011",
+				value: 1
+			}];
+			var h = l("./src/reddit/constants/colors.ts");
+			const b = Math.floor(4 * Math.random()),
+				p = ({
+					views: e,
+					lastHourViews: o
+				}) => {
+					const l = {
+							icon: "https://www.redditstatic.com/gold/awards/icon/Superheart_256.png",
+							text: [{
+								header: s.fbt._("Nice job!", null, {
+									hk: "2EGSfr"
+								}),
+								description: s.fbt._("Your post is picking up steam", null, {
+									hk: "1XEz5d"
+								})
+							}, {
+								header: s.fbt._("Well done!", null, {
+									hk: "2ZDy9q"
+								}),
+								description: s.fbt._("Your post is getting seen", null, {
+									hk: "3DsSt2"
+								})
+							}, {
+								header: s.fbt._("Cool!", null, {
+									hk: "7ThuU"
+								}),
+								description: s.fbt._("People are starting to see your post", null, {
+									hk: "1UABfM"
+								})
+							}, {
+								header: s.fbt._("Getting there!", null, {
+									hk: "2Fy7r1"
+								}),
+								description: s.fbt._("Your post is making the rounds", null, {
+									hk: "49XzPh"
+								})
+							}]
+						},
+						m = {
+							icon: "https://i.redd.it/award_images/t5_22cerq/s5edqq9abef41_StonksRising.png",
+							text: [{
+								header: s.fbt._("Your post is rising!", null, {
+									hk: "1BmzPp"
+								}),
+								description: s.fbt._("People are really into this", null, {
+									hk: "4kYun5"
+								})
+							}, {
+								header: s.fbt._("On the rise!", null, {
+									hk: "2CWnyR"
+								}),
+								description: s.fbt._("More people are seeing this", null, {
+									hk: "2lrtHO"
+								})
+							}, {
+								header: s.fbt._("Moving on up!", null, {
+									hk: "2PYa6q"
+								}),
+								description: s.fbt._("This post is hot-hot-hot", null, {
+									hk: "4kPP7S"
+								})
+							}, {
+								header: s.fbt._("Check you out!", null, {
+									hk: "1SAvsd"
+								}),
+								description: s.fbt._("A lot of eyes are on your post", null, {
+									hk: "LMaoM"
+								})
+							}]
+						},
+						n = {
+							icon: "https://i.redd.it/award_images/t5_22cerq/kqr00h8b7q161_BurningCash.png",
+							text: [{
+								header: s.fbt._("You’re on fireeeee!", null, {
+									hk: "43XEC7"
+								}),
+								description: s.fbt._("This is one of your best posts yet!", null, {
+									hk: "3pRYqa"
+								})
+							}, {
+								header: s.fbt._("Are you kidding me?!", null, {
+									hk: "3QyCDK"
+								}),
+								description: s.fbt._("This is one for the books!", null, {
+									hk: "35adEM"
+								})
+							}, {
+								header: s.fbt._("Woah!", null, {
+									hk: "1eWOxd"
+								}),
+								description: s.fbt._("This post has over 500 views!", null, {
+									hk: "49uE2U"
+								})
+							}, {
+								header: s.fbt._("Unstoppable!", null, {
+									hk: "fxKlQ"
+								}),
+								description: s.fbt._("Over 500 views? What?!", null, {
+									hk: "2e1p7F"
+								})
+							}]
+						},
+						d = ((e, o) => o >= 10 ? m : e >= 500 ? n : l)(e, o),
+						a = d.text[b];
+					return t.a.createElement("div", {
+						className: r.a.copyContainer
+					}, t.a.createElement("div", null, t.a.createElement("span", {
+						className: r.a.copyHeader
+					}, a.header), t.a.createElement("span", {
+						className: r.a.copyDescription
+					}, " ", a.description)), t.a.createElement("div", null, t.a.createElement("img", {
+						src: d.icon,
+						alt: s.fbt._("copy award icon", null, {
+							hk: "3rifVz"
+						}),
+						className: r.a.copyAwardIcon
+					})))
+				},
+				k = () => {
+					const e = i[0].date,
+						o = new Date(parseInt(e.substring(0, 4), 10), parseInt(e.substring(4, 6)) - 1, parseInt(e.substring(6, 8)));
 					return {
-						animation: {
-							duration: 0
-						},
-						animations: {
-							active: {
-								duration: 1e4
-							}
-						},
-						maintainAspectRatio: !1,
-						responsive: !1,
-						elements: {
-							point: {
-								borderWidth: .2,
-								hoverRadius: 5,
-								radius: .3,
-								hitRadius: 0
-							}
-						},
-						hover: {
-							intersect: !1
-						},
-						scales: {
-							x1: {
-								beginAtZero: !0,
-								grid: {
-									color: o => 0 === o.tick.value ? Object(b.a)(e).bodyText : Object(b.a)(e).placeholder
-								},
-								ticks: {
-									font: {
-										lineHeight: .1
-									},
-									maxRotation: 0,
-									minRotation: 0,
-									maxTicksLimit: o,
-									color: Object(b.a)(e).bodyText,
-									padding: 10,
-									callback: function(o, l) {
-										return e.statsTime === r.b.Hour ? Object(r.l)(Object(r.g)(this.getLabelForValue(o))) : Object(r.n)(Object(r.g)(this.getLabelForValue(o)), e.statsTime, 0 === l)
-									}
-								}
-							},
-							x2: {
-								grid: {
-									display: !1,
-									drawBorder: !1
-								},
-								ticks: {
-									font: {
-										lineHeight: .1
-									},
-									maxRotation: 0,
-									minRotation: 0,
-									maxTicksLimit: o,
-									color: Object(b.a)(e).actionIcon,
-									callback: function(o) {
-										return e.statsTime === r.b.Hour ? Object(r.k)(Object(r.g)(this.getLabelForValue(o)), e.statsTime) : ""
-									}
-								}
-							},
-							y: {
-								beginAtZero: !0,
-								grid: {
-									color: o => 0 === o.tick.value ? Object(b.a)(e).bodyText : Object(b.a)(e).placeholder
-								},
-								suggestedMin: 0,
-								ticks: {
-									color: Object(b.a)(e).bodyText,
-									callback: e => Object(n.b)(e)
-								}
-							}
-						}
+						min: o.getTime(),
+						max: o.getTime() + 1728e5
 					}
 				},
-				f = [_.b.alienblue, _.b.reported, _.b.orangered, p.b[7]],
-				g = {
-					fill: !1,
-					lineTension: 0,
-					borderDash: [],
-					borderDashOffset: 0,
-					borderWidth: 1,
-					spanGaps: !0
-				},
-				k = (e, o, l) => ({
-					...g,
-					label: l,
-					backgroundColor: f[o],
-					borderColor: f[o],
-					pointBorderColor: f[o],
-					pointBackgroundColor: f[o],
-					pointHoverBackgroundColor: f[o],
-					data: e
-				});
-			var v = l("./src/reddit/components/ModHub/TrafficStats/ModStatsChart/index.m.less"),
-				x = l.n(v);
-			o.default = Object(t.a)(({
-				data: e,
-				statsTime: o,
-				statsView: l,
-				theme: t,
-				windowEnd: _,
-				windowStart: p
-			}) => {
-				const b = l === r.d.Members ? 2 : 4,
-					g = Object(d.useRef)(null),
-					v = Object(d.useRef)(null),
-					y = function(e) {
-						const o = Object(d.useRef)(null);
-						return Object(d.useEffect)(() => {
-							o.current = e
-						}, [e]), o.current
-					}(l),
-					[w, O] = Object(d.useState)(new Array(b).fill(!1)),
-					[z, E] = Object(d.useState)(!1),
-					[T, R] = Object(d.useState)({
-						color: "",
-						date: "",
-						left: 0,
-						top: 0,
-						tooltipText: "",
-						value: ""
-					});
-				Object(d.useEffect)(() => {
-					z && null !== v.current && R(v.current)
-				}, [z]);
-				const P = Object(d.useCallback)(({
-						tooltip: e,
-						chart: t
-					}) => {
-						var n, m, d;
-						if (console.log("I have been in options"), !t || !t.canvas || !t.data.labels) return;
-						if (0 === e.opacity) return void E(!1);
-						const a = f[e.dataPoints[0].datasetIndex],
-							c = t.canvas.getBoundingClientRect(),
-							u = c.left + e.caretX - 62.5,
-							i = c.top + e.caretY - 65,
-							j = null === (m = null === (n = null == t ? void 0 : t.data) || void 0 === n ? void 0 : n.labels) || void 0 === m ? void 0 : m[null === (d = null == e ? void 0 : e.dataPoints[0]) || void 0 === d ? void 0 : d.dataIndex],
-							_ = Object(r.g)(j),
-							p = e.dataPoints[0].formattedValue;
-						let b = "";
-						b = l === r.d.Members ? 0 === e.dataPoints[0].datasetIndex ? s.fbt._("Joined", null, {
-							hk: "2vPXl8"
-						}) : s.fbt._("Left", null, {
-							hk: "1cy9rl"
-						}) : l === r.d.Pageviews ? s.fbt._("Viewed", null, {
-							hk: "3jFRbm"
-						}) : s.fbt._("Visited", null, {
-							hk: "Ub0qx"
-						});
-						const h = o === r.b.Hour ? Object(r.l)(_) : Object(r.k)(_, o);
-						v.current = {
-							color: a,
-							date: h,
-							left: u,
-							top: i,
-							tooltipText: b,
-							value: p
-						}, E(!0)
-					}, [o, l]),
-					S = {
-						...h({
-							data: e,
-							statsTime: o,
-							statsView: l,
-							theme: t,
-							windowEnd: _,
-							windowStart: p
-						}, o === r.b.Hour ? 10 : 12),
-						plugins: {
-							legend: {
-								display: !1
-							},
-							tooltip: {
-								enabled: !1,
-								external: P
-							}
+				v = {
+					labels: i.map(({
+						date: e
+					}) => e),
+					datasets: [{
+						data: i.map(({
+							value: e
+						}) => e),
+						backgroundColor: h.b.op,
+						borderRadius: 2
+					}]
+				};
+			o.default = Object(u.a)(e => {
+				const o = {
+					plugins: {
+						legend: {
+							display: !1
+						},
+						tooltip: {
+							enabled: !1
 						}
-					};
-				Object(d.useEffect)(() => {
-					if (g.current && (g.current.options = S, g.current.update(), y !== l)) {
-						const e = l === r.d.Members ? 2 : 4,
-							o = new Array(e).fill(!1);
-						O(o)
-					}
-				}, [l, o, t, y, S]);
-				let C = Object(r.o)(e, l, o);
-				if (o === r.b.Month) {
-					const e = (new Date).getMonth() + 1;
-					C = C.map(o => Object(r.s)(o, e))
-				}
-				const N = {
-						labels: Object(r.p)(o, !0).slice(p, _).map(e => e.toString()),
-						datasets: l === r.d.Members ? [k(C[0].slice(p, _), 0, s.fbt._("Joined", null, {
-							hk: "29HSWZ"
-						})), k(C[1].slice(p, _), 1, s.fbt._("Left", null, {
-							hk: "2ENe3g"
-						}))] : [k(C[0].slice(p, _), 0, s.fbt._("New Reddit", null, {
-							hk: "3Kn6gy"
-						})), k(C[1].slice(p, _), 1, s.fbt._("Old Reddit", null, {
-							hk: "1YYCdo"
-						})), k(C[2].slice(p, _), 2, s.fbt._("Mobile Web", null, {
-							hk: "4whHjN"
-						})), k(C[3].slice(p, _), 3, s.fbt._("Reddit Apps", null, {
-							hk: "2PU6tU"
-						}))]
 					},
-					{
-						color: M,
-						date: L,
-						left: B,
-						top: H,
-						tooltipText: D,
-						value: A
-					} = T;
-				return a.a.createElement("div", {
-					className: x.a.chart
-				}, a.a.createElement(i.a, null, a.a.createElement(c.b, {
-					data: N,
-					height: 300,
-					width: 940,
-					ref: g,
-					options: S
-				}), a.a.createElement("div", {
-					className: x.a.legend
-				}, N.datasets.map((e, o) => {
-					const l = w[o],
-						s = l && t ? t.newCommunityTheme.post : f[o],
-						n = l ? Object(m.f)(f[o], .5) : f[o];
-					return a.a.createElement("button", {
-						className: x.a.legendLine,
-						key: e.label,
-						onClick: () => (e => {
-							const o = g.current;
-							if (!o || !o.data || !o.data.datasets) return;
-							const l = o.data.datasets[e],
-								s = l.hidden;
-							o.getDatasetMeta(e).hidden = !s, l.hidden = !s;
-							const t = w;
-							t[e] = !s, O(t), o.update()
-						})(o)
-					}, a.a.createElement(j.a, {
-						className: x.a.expandRight
-					}, a.a.createElement("div", {
-						className: x.a.legendBlock,
-						style: {
-							backgroundColor: s,
-							border: `2px solid ${n}`
+					scales: {
+						x: {
+							...k(),
+							type: "time",
+							time: {
+								unit: "hour",
+								parser: "YYYYMMDDHH"
+							},
+							ticks: {
+								callback: (e, o, l) => {
+									switch (!0) {
+										case o === l.length - 1:
+											return "";
+										case "12AM" === e:
+											return n()(l[o].value).format("DD MMM");
+										case o % 6 == 0:
+											return e;
+										default:
+											return ""
+									}
+								}
+							},
+							grid: {
+								color: o => {
+									var l;
+									return (null === (l = null == o ? void 0 : o.tick) || void 0 === l ? void 0 : l.label) ? Object(j.a)(e).placeholder : ""
+								},
+								drawBorder: !1
+							}
+						},
+						y: {
+							ticks: {
+								count: 3,
+								stepSize: 10,
+								callback: e => Object(c.b)(e)
+							},
+							grid: {
+								color: o => 2 === (null == o ? void 0 : o.index) ? "" : Object(j.a)(e).placeholder,
+								drawBorder: !1
+							}
 						}
-					}), a.a.createElement("span", {
-						className: x.a.legendLabel
-					}, e.label)))
-				}))), z && a.a.createElement(u.b, {
-					className: x.a.Tooltip,
-					targetPosition: {
-						top: H,
-						left: B
 					}
-				}, a.a.createElement("div", {
-					className: x.a.value,
-					style: {
-						color: M
-					}
-				}, Object(n.a)(A.toString())), a.a.createElement("div", {
-					className: x.a.dateLine
-				}, a.a.createElement("span", {
-					className: x.a.action
-				}, D), a.a.createElement("span", {
-					className: x.a.date
-				}, " ", o === r.b.Hour ? s.fbt._("at {tooltipDate}", [s.fbt._param("tooltipDate", L)], {
-					hk: "BRXaW"
-				}) : s.fbt._("on {tooltipDate}", [s.fbt._param("tooltipDate", L)], {
-					hk: "494Xs8"
+				};
+				return t.a.createElement(t.a.Fragment, null, t.a.createElement(p, {
+					views: e.totalCount,
+					lastHourViews: e.lastHourCount
+				}), t.a.createElement("div", {
+					className: r.a.graphTitle
+				}, s.fbt._("First 48 hours", null, {
+					hk: "1ynLLb"
+				})), t.a.createElement(a.a, {
+					height: 100,
+					data: v,
+					options: o
+				}), t.a.createElement("div", {
+					className: r.a.barContainerStats
+				}, t.a.createElement("div", {
+					className: r.a.graphSingleStat
+				}, t.a.createElement("div", {
+					className: r.a.statNumber
+				}, Object(c.b)(e.totalCount)), t.a.createElement("div", {
+					className: r.a.statDescription
+				}, s.fbt._("Total views", null, {
+					hk: "4sCYIU"
+				}))), t.a.createElement("div", {
+					className: `${r.a.graphSingleStat} ${r.a.pastHourStat}`
+				}, t.a.createElement("div", {
+					className: r.a.statNumber
+				}, Object(c.b)(e.lastHourCount)), t.a.createElement("div", {
+					className: r.a.statDescription
+				}, s.fbt._("In the past hour", null, {
+					hk: "2B71ms"
 				})))))
 			})
-		},
-		"./src/reddit/components/RichTextEditor/Tooltip/index.m.less": function(e, o, l) {
-			e.exports = {
-				tooltipBox: "tVQ1dB4n0mAWdcQNxFq-K",
-				dropdown: "_1akkpO3lymdoWGIc5tjIpm",
-				triangle: "_2O2U-Vhc1mg9O7DOwp50Aa",
-				triangleBack: "_3IfYYXUMUzn2OvoiMUNcaQ",
-				triangleFront: "_3CtwSTtkmKXvzDo3TmCp9C",
-				triangleBelow: "_1churYJpAwcb-tf0k1c46F"
-			}
-		},
-		"./src/reddit/components/RichTextEditor/Tooltip/index.tsx": function(e, o, l) {
-			"use strict";
-			l.d(o, "a", (function() {
-				return r
-			})), l.d(o, "b", (function() {
-				return p
-			}));
-			var s = l("./node_modules/react/index.js"),
-				t = l.n(s),
-				n = l("./src/lib/classNames/index.ts"),
-				m = l("./src/lib/CSSVariableProvider/index.tsx"),
-				d = l("./src/reddit/helpers/dom/index.ts"),
-				a = l("./src/reddit/components/RichTextEditor/Tooltip/index.m.less"),
-				c = l.n(a);
-			const u = 8,
-				i = 16,
-				j = 15 + i / 2;
-			var r;
-			! function(e) {
-				e[e.None = 0] = "None", e[e.Above = 1] = "Above", e[e.Below = 2] = "Below"
-			}(r || (r = {}));
-			const _ = ({
-				isBelow: e = !1,
-				style: o
-			}) => t.a.createElement("div", {
-				className: Object(n.a)(c.a.triangle, {
-					[c.a.triangleBelow]: e
-				}),
-				style: o
-			}, t.a.createElement("div", {
-				className: c.a.triangleBack
-			}), t.a.createElement("div", {
-				className: c.a.triangleFront
-			}));
-			class p extends s.Component {
-				constructor(e) {
-					super(e), this.containerRef = null, this.updateContainerRef = e => this.containerRef = e, this.setTargetPosition = e => {
-						e ? this.updatePositioning(e) : this.setState({
-							positioning: null
-						})
-					}, this.state = {
-						positioning: null
-					}
-				}
-				updatePositioning(e) {
-					if (!this.containerRef) return;
-					const o = this.containerRef.getBoundingClientRect(),
-						l = Math.round(o.width),
-						s = Math.round(o.height),
-						t = this.state.positioning;
-					if (!e) {
-						if (!t) return;
-						if (t.tooltipWidth === l && t.tooltipHeight === s) return
-					}
-					const n = e ? e.bottom : t.target.bottom,
-						m = e ? e.top : t.target.top,
-						a = e ? e.left : t.target.left,
-						c = Object(d.e)(this.containerRef);
-					let u, i, j;
-					if (c) {
-						const e = c.getBoundingClientRect();
-						u = e.bottom - (n || 0), i = a - e.left + c.scrollLeft, j = m - e.top + c.scrollTop
-					} else {
-						const e = document.documentElement,
-							o = window.pageYOffset || e.scrollTop;
-						i = a + (window.pageXOffset || e.scrollLeft), j = m + o
-					}
-					const r = {
-						target: {
-							top: m,
-							left: a
-						},
-						tooltipWidth: l,
-						tooltipHeight: s,
-						tooltip: {
-							top: j,
-							left: i,
-							bottom: u
-						}
-					};
-					this.adjustPositionForTriangle(r, c), this.setState({
-						positioning: r
-					})
-				}
-				adjustPositionForTriangle(e, o) {
-					const {
-						trianglePlacement: l
-					} = this.props;
-					if (!l) return;
-					const s = o ? o.offsetWidth : document.documentElement.offsetWidth,
-						t = s ? Math.max(e.tooltip.left + e.tooltipWidth - s, 0) : 0;
-					e.tooltip.left -= t + j;
-					const n = t + j - i / 2;
-					let m;
-					l === r.Above ? (e.tooltip.top += u, m = -u) : (e.tooltip.top -= e.tooltipHeight + u, m = e.tooltipHeight), e.triangle = {
-						top: m,
-						left: n
-					}
-				}
-				componentDidUpdate(e, o) {
-					e.targetPosition !== this.props.targetPosition ? this.setTargetPosition(this.props.targetPosition || null) : this.updatePositioning()
-				}
-				componentDidMount() {
-					this.setTargetPosition(this.props.targetPosition || null), this.props.onSetPositionUpdater && this.props.onSetPositionUpdater(this.setTargetPosition)
-				}
-				componentWillUnmount() {
-					this.props.onSetPositionUpdater && this.props.onSetPositionUpdater(null)
-				}
-				render() {
-					const {
-						aboveParent: e,
-						dropdown: o,
-						trianglePlacement: l
-					} = this.props, {
-						positioning: s
-					} = this.state, d = s && void 0 !== s.triangle && t.a.createElement(_, {
-						isBelow: l === r.Below,
-						style: {
-							top: s.triangle.top + "px",
-							left: s.triangle.left + "px"
-						}
-					});
-					let a = t.a.createElement("div", {
-						className: Object(n.a)(c.a.tooltipBox, this.props.className, {
-							[c.a.dropdown]: o
-						}),
-						style: s ? {
-							left: s.tooltip.left,
-							...e ? {
-								bottom: s.tooltip.bottom
-							} : {
-								top: s.tooltip.top
-							}
-						} : {},
-						ref: this.updateContainerRef
-					}, s && this.props.children && t.a.createElement(t.a.Fragment, null, d, this.props.children));
-					return this.props.usePortal && (a = Object(m.d)(a, this.props.portalContainer || document.body)), a
-				}
-			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModStatsChart.97cc78b019910b908d9f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ViewsTooltip.cf2e343375d91bfddd77.js.map
