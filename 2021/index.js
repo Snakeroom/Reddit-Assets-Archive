@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index.a6cb176eb565c8f624cc.js
-// Retrieved at 11/8/2021, 10:50:15 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index.7924ea269fa4a4b07dd5.js
+// Retrieved at 11/8/2021, 1:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index"], {
 		"./src/reddit/components/Econ/Audio/MuteIcon.tsx": function(e, t, n) {
@@ -548,7 +548,7 @@
 				} = e.predictionTournament, s = function(e) {
 					return i.a.useMemo(() => {
 						if (!e || !e.length) return;
-						const t = e.filter(e => !e.isSpoiler && !e.isNSFW).sort(K.c);
+						const t = e.filter(e => !e.isSpoiler && !e.isNSFW && e.status === _.b.Open && !e.selectedOptionId).sort(K.c);
 						return {
 							prediction: t[0],
 							isLastPrediction: t.length <= 1
@@ -943,4 +943,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.a6cb176eb565c8f624cc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.7924ea269fa4a4b07dd5.js.map
