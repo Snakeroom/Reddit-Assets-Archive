@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.5a8b58de9fd739cc5c6f.js
-// Retrieved at 11/8/2021, 10:50:15 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.e3bdf522f87f73506fea.js
+// Retrieved at 11/8/2021, 11:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -703,8 +703,8 @@
 				}),
 				h = e => async (t, s) => {
 					const r = s(),
-						n = Object(p.c)(r),
-						h = Object(p.d)(r),
+						n = Object(p.d)(r),
+						h = Object(p.e)(r),
 						C = Object(a.e)(i()(e.queryParams, m.t), h),
 						x = {
 							...C,
@@ -4845,13 +4845,13 @@
 				apiPending: N.q,
 				identifiers: (e, {
 					listingKey: t
-				}) => Object(S.d)(e) ? Object(N.d)(e, {
+				}) => Object(S.e)(e) ? Object(N.d)(e, {
 					listingKey: t
 				}) : Object(N.l)(e, {
 					listingKey: t
 				}),
 				loadMore: N.t,
-				isSerpExperimentOverride: S.c
+				isSerpExperimentOverride: S.d
 			}), A = 36, B = 5, D = Object(m.b)(M), U = (e, t) => () => e(e => ({
 				...Object(k.c)(e),
 				source: "search",
@@ -5020,23 +5020,23 @@
 				L = Object(c.c)({
 					apiError: (e, {
 						listingKey: t
-					}) => Object(f.d)(e) ? Object(y.e)(e, {
+					}) => Object(f.e)(e) ? Object(y.e)(e, {
 						listingKey: t
 					}) : Object(y.p)(e, {
 						listingKey: t
 					}),
 					apiPending: (e, {
 						listingKey: t
-					}) => Object(f.d)(e) ? Object(y.f)(e, {
+					}) => Object(f.e)(e) ? Object(y.f)(e, {
 						listingKey: t
 					}) : Object(y.q)(e, {
 						listingKey: t
 					}),
-					isSerpRedesignM1: f.c,
-					isSerpRedesignM2: f.d,
+					isSerpRedesignM1: f.d,
+					isSerpRedesignM2: f.e,
 					loadMore: (e, {
 						listingKey: t
-					}) => Object(f.d)(e) ? Object(y.s)(e, {
+					}) => Object(f.e)(e) ? Object(y.s)(e, {
 						listingKey: t
 					}) : Object(y.t)(e, {
 						listingKey: t
@@ -5909,7 +5909,7 @@
 					...se.d,
 					layout: X.v,
 					viewportDataLoaded: $.a,
-					isSerpExperimentOverride: Z.c,
+					isSerpExperimentOverride: Z.d,
 					postIds: (e, {
 						heroPostId: t,
 						listingKey: s,
@@ -5918,7 +5918,7 @@
 						searchDiscoveryUnit: i
 					}) => {
 						const o = i && i.postOrder,
-							a = Object(Z.c)(e),
+							a = Object(Z.d)(e),
 							c = Object(ee.a)(Object(te.b)(e));
 						if (o && o.length > 0) {
 							if (t) {
@@ -7703,7 +7703,7 @@
 					location: n,
 					searchOptions: a,
 					tab: c
-				} = e, d = Object(o.e)(e => Object(Me.d)(e)), l = Object(o.e)(s => d ? Object(p.h)(s, {
+				} = e, d = Object(o.e)(e => Object(Me.e)(e)), l = Object(o.e)(s => d ? Object(p.h)(s, {
 					listingKey: t
 				}) : Object(p.i)(s, e)), m = Object(o.e)(e => Object(p.g)(e, {
 					listingKey: t
@@ -7759,7 +7759,7 @@
 					listingName: r,
 					searchOptions: b,
 					tab: h
-				} = e, C = b.is_multi || b.category, x = Object(i.e)(m.c), f = Object(i.e)(t => Object(u.h)(t, e)), y = t && !Object(l.a)(b.q), v = Object(o.a)(b.q || ""), g = void 0 === f || f;
+				} = e, C = b.is_multi || b.category, x = Object(i.e)(m.d), f = Object(i.e)(t => Object(u.h)(t, e)), y = t && !Object(l.a)(b.q), v = Object(o.a)(b.q || ""), g = void 0 === f || f;
 				return n.a.createElement(n.a.Fragment, null, x ? y || g ? n.a.createElement(a.a, {
 					key: "communitiesPreview",
 					listingKey: s,
@@ -8149,12 +8149,13 @@
 				const h = Object(m.a)(),
 					g = Object(o.e)(v.eb),
 					O = Object(o.e)(y.w),
-					E = Object(o.e)(f.d),
+					E = Object(o.e)(f.e),
 					j = Object(o.e)(f.b),
-					_ = Object(o.e)(f.e),
-					k = O === x.c.Trending,
-					S = s[d.c] || s.q || "",
-					N = {
+					_ = Object(o.e)(f.c),
+					k = Object(o.e)(f.f),
+					S = O === x.c.Trending,
+					N = s[d.c] || s.q || "",
+					I = {
 						condition: !0,
 						active: e === c.h.Posts,
 						target: p.a.Posts,
@@ -8164,7 +8165,7 @@
 							hk: "vNVpl"
 						})
 					},
-					I = {
+					P = {
 						condition: !s.is_multi && !s.restrict_sr,
 						active: e === c.h.Listings,
 						target: p.a.CommunitiesAndUsers,
@@ -8174,7 +8175,7 @@
 							hk: "1RJS0U"
 						})
 					},
-					P = {
+					w = {
 						condition: !s.is_multi && !s.restrict_sr,
 						active: e === c.h.Listings,
 						target: p.a.Communities,
@@ -8184,7 +8185,13 @@
 							hk: "45NgGC"
 						})
 					},
-					w = {
+					T = {
+						...w,
+						text: r.fbt._("Communities and People", null, {
+							hk: "1RJS0U"
+						})
+					},
+					L = {
 						condition: !s.is_multi && !s.restrict_sr,
 						active: e === c.h.Authors,
 						target: p.a.Authors,
@@ -8194,15 +8201,15 @@
 							hk: "Ttxbf"
 						})
 					},
-					T = [N, ...E ? [P, w] : [I]],
-					L = j && g && !k && (!_ || "1" !== s.sr_nsfw);
+					F = [I, ...E ? j ? [w, L] : [T] : [P]],
+					A = _ && g && !S && (!k || "1" !== s.sr_nsfw);
 				return i.a.createElement("div", {
 					"data-testid": "search-results-nav",
 					className: M.a.searchResultsNav
 				}, i.a.createElement("div", {
 					className: M.a.pillRow,
 					role: "tablist"
-				}, T.filter(e => e.condition).map(e => {
+				}, F.filter(e => e.condition).map(e => {
 					const {
 						active: r,
 						key: n,
@@ -8211,7 +8218,7 @@
 					} = e;
 					return i.a.createElement(u.a, {
 						key: n,
-						to: Object(l.a)(t, S, a),
+						to: Object(l.a)(t, N, a),
 						"aria-selected": r,
 						role: "tab",
 						className: M.a.pillElement,
@@ -8225,7 +8232,7 @@
 					}, o))
 				})), n && i.a.createElement("div", {
 					className: M.a.searchSwitcherContainer
-				}, n), L && i.a.createElement("div", {
+				}, n), A && i.a.createElement("div", {
 					className: M.a.nsfwToggleContainer
 				}, i.a.createElement(R, {
 					searchOptions: s
@@ -8332,7 +8339,7 @@
 					}),
 					communityIdentifiers: (e, {
 						listingKey: t
-					}) => Object(y.d)(e) ? Object(v.d)(e, {
+					}) => Object(y.e)(e) ? Object(v.d)(e, {
 						listingKey: t
 					}) : Object(v.l)(e, {
 						listingKey: t
@@ -8340,7 +8347,7 @@
 					isLoggedIn: O.K,
 					hasCommunityResults: (e, {
 						listingKey: t
-					}) => Object(y.d)(e) ? Object(v.h)(e, {
+					}) => Object(y.e)(e) ? Object(v.h)(e, {
 						listingKey: t
 					}) : Object(v.i)(e, {
 						listingKey: t
@@ -8350,7 +8357,8 @@
 					}) => Object(v.g)(e, {
 						listingKey: t
 					}),
-					serpRedesignLayoutM2: e => Object(y.d)(e),
+					peopleSerpRedesignLayoutM2: e => Object(y.b)(e),
+					serpRedesignLayoutM2: e => Object(y.e)(e),
 					subredditId: (e, {
 						listingName: t
 					}) => Object(g.B)(e, t),
@@ -8382,26 +8390,40 @@
 					location: v,
 					idCardWidget: g,
 					isLoggedIn: O,
-					postFlairWidgets: E,
-					relatedQueries: _,
-					searchOptions: S,
-					serpRedesignLayoutM2: N,
-					subredditId: I
+					peopleSerpRedesignLayoutM2: E,
+					postFlairWidgets: _,
+					relatedQueries: S,
+					searchOptions: N,
+					serpRedesignLayoutM2: I,
+					subredditId: P
 				}) => {
-					const P = S.q || "",
-						w = Boolean(I && S.restrict_sr),
-						T = s.length - m.e >= 1,
-						L = e.length - m.e >= 1;
-					let R;
-					return R = N ? {
-						title: "Communities",
+					const w = N.q || "",
+						T = Boolean(P && N.restrict_sr),
+						L = s.length - m.e >= 1,
+						R = e.length - m.e >= 1;
+					let F;
+					return F = I ? E ? {
+						title: r.fbt._("Communities", null, {
+							hk: "3FBMAP"
+						}),
 						description: "Title: Communities section on search page",
 						linkTitle: "See more communities",
 						linkDescription: "Link: View full list of communities",
 						linkTo: c.Yb.Subreddits,
 						noResults: "Text: There are no communities results for your query"
 					} : {
-						title: "Communities and People",
+						title: r.fbt._("Communities and People", null, {
+							hk: "OgL26"
+						}),
+						description: "Title: Communities and people section on search page",
+						linkTitle: "See more communities and people",
+						linkDescription: "Link: View full list of communities and people",
+						linkTo: c.Yb.Subreddits,
+						noResults: "Text: There are no communities or users results for your query"
+					} : {
+						title: r.fbt._("Communities and People", null, {
+							hk: "OgL26"
+						}),
 						description: "Title: Communities and people section on search page",
 						linkTitle: "See more communities and people",
 						linkDescription: "Link: View full list of communities and people",
@@ -8410,9 +8432,9 @@
 					}, i.a.createElement(u.a, {
 						"data-testid": "search-results-sidebar",
 						className: t
-					}, w ? i.a.createElement(i.a.Fragment, null, g && i.a.createElement(l.a, {
+					}, T ? i.a.createElement(i.a.Fragment, null, g && i.a.createElement(l.a, {
 						listingName: y
-					}), E && E.map((e, t) => i.a.createElement(p.a, {
+					}), _ && _.map((e, t) => i.a.createElement(p.a, {
 						key: `widgetSpacer-${t}`
 					}, i.a.createElement(h.a, {
 						subredditName: y,
@@ -8422,37 +8444,37 @@
 						"data-testid": "communities-list"
 					}, i.a.createElement("h4", {
 						className: k.a.header
-					}, r.fbt._("{title}", [r.fbt._param("title", R.title), r.fbt._param("description", R.description)], {
+					}, r.fbt._("{title}", [r.fbt._param("title", F.title), r.fbt._param("description", F.description)], {
 						hk: "1gfp1L"
-					})), o ? i.a.createElement(i.a.Fragment, null, !S.is_multi && i.a.createElement(m.a, {
+					})), o ? i.a.createElement(i.a.Fragment, null, !N.is_multi && i.a.createElement(m.a, {
 						identifiers: s,
 						listingKey: a,
-						searchOptions: S,
+						searchOptions: N,
 						sidebar: !0
-					}), T && i.a.createElement(x.a, {
-						to: Object(f.a)(v, P, R.linkTo)
+					}), L && i.a.createElement(x.a, {
+						to: Object(f.a)(v, w, F.linkTo)
 					}, i.a.createElement("p", {
 						className: k.a.link
-					}, r.fbt._("{link}", [r.fbt._param("link", R.linkTitle), r.fbt._param("link description", R.linkDescription)], {
+					}, r.fbt._("{link}", [r.fbt._param("link", F.linkTitle), r.fbt._param("link description", F.linkDescription)], {
 						hk: "2nAtmm"
 					})))) : i.a.createElement("p", {
 						className: k.a.noResults
-					}, r.fbt._("No results", [r.fbt._param("no results", R.noResults)], {
+					}, r.fbt._("No results", [r.fbt._param("no results", F.noResults)], {
 						hk: "ANbEn"
-					}))), N && i.a.createElement("div", {
+					}))), E && i.a.createElement("div", {
 						className: k.a.container,
 						"data-testid": "authors-list"
 					}, i.a.createElement("h4", {
 						className: k.a.header
 					}, r.fbt._("People", null, {
 						hk: "2M8TqB"
-					})), n ? i.a.createElement(i.a.Fragment, null, !S.is_multi && i.a.createElement(j.a, {
+					})), n ? i.a.createElement(i.a.Fragment, null, !N.is_multi && i.a.createElement(j.a, {
 						identifiers: e,
 						listingKey: a,
-						searchOptions: S,
+						searchOptions: N,
 						sidebar: !0
-					}), L && i.a.createElement(x.a, {
-						to: Object(f.a)(v, P, c.Yb.Users)
+					}), R && i.a.createElement(x.a, {
+						to: Object(f.a)(v, w, c.Yb.Users)
 					}, i.a.createElement("p", {
 						className: k.a.link
 					}, r.fbt._("See more people", null, {
@@ -8463,11 +8485,11 @@
 						hk: "3qx6oy"
 					}))), O && i.a.createElement("div", {
 						className: k.a.container
-					}, i.a.createElement(d.a, null))), S.q && _ && _.length > 0 && i.a.createElement(p.a, {
+					}, i.a.createElement(d.a, null))), N.q && S && S.length > 0 && i.a.createElement(p.a, {
 						key: "widgetSpacer-relatedQueries"
 					}, i.a.createElement(C.a, {
-						searchOptions: S,
-						relatedQueries: _
+						searchOptions: N,
+						relatedQueries: S
 					})), i.a.createElement(b.a, null))
 				},
 				I = e => {
@@ -8922,7 +8944,7 @@
 			var ge = s("./src/reddit/components/SearchResultsSubNav/index.m.less"),
 				Oe = s.n(ge);
 			const Ee = Object(o.c)({
-					isSerpRedesignLayout: l.c,
+					isSerpRedesignLayout: l.d,
 					subreddit: m.w
 				}),
 				je = e => {
@@ -11268,7 +11290,7 @@
 						location: t,
 						match: s
 					};
-					return Object(o.e)(a.c) ? i.a.createElement(d, r) : i.a.createElement(c, r)
+					return Object(o.e)(a.d) ? i.a.createElement(d, r) : i.a.createElement(c, r)
 				};
 			t.default = l
 		},
@@ -11542,7 +11564,7 @@
 					q = Object(c.e)(e => Object(P.c)(e, {
 						pageLayer: r
 					})),
-					K = Object(c.e)(R.d),
+					K = Object(c.e)(R.e),
 					z = Object(O.V)(r),
 					G = Object(O.bb)(r),
 					[Y, J] = Object(o.useState)(!1),
@@ -12117,4 +12139,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.5a8b58de9fd739cc5c6f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.e3bdf522f87f73506fea.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.c75cb087b1943690fe21.js
-// Retrieved at 11/8/2021, 11:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.bcccaa8d9082f3c091c0.js
+// Retrieved at 11/8/2021, 11:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3307,10 +3307,10 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("150871"),
+				buildNumber: Object(r.c)("150874"),
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
-				buildTimestamp: Object(r.b)("1636386983"),
+				buildTimestamp: Object(r.b)("1636388795"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -5863,14 +5863,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c0ce5b736215c9c57e73924cff1838331142577ee-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %cca95359e9e358080fdcac4070bd1f51e6348c99e-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${v.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "0ce5b736215c9c57e73924cff1838331142577ee-production",
+						release: "ca95359e9e358080fdcac4070bd1f51e6348c99e-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(x.d)(), new d.Integrations.Breadcrumbs({
@@ -6383,7 +6383,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "0ce5b736215c9c57e73924cff1838331142577ee-production",
+						releaseClient: "ca95359e9e358080fdcac4070bd1f51e6348c99e-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -10643,15 +10643,15 @@
 						type: G
 					}));
 					const V = i && Object(E.B)(I(), i),
-						H = Object(y.d)(D),
+						H = Object(y.e)(D),
 						q = Object(S.eb)(D),
 						W = [o.a.PromotedTrend, o.a.Trending].includes(t.source),
-						K = Object(y.e)(D) && "1" === t.sr_nsfw,
+						K = Object(y.f)(D) && "1" === t.sr_nsfw,
 						$ = await Object(f.a)("searchResults", () => {
 							var e;
 							const n = {
 									...t,
-									q: Object(y.b)(D) && !H && t.q ? Object(h.a)(t.q, q, "1" === t.include_over_18, W, K) : t.q,
+									q: Object(y.c)(D) && !H && t.q ? Object(h.a)(t.q, q, "1" === t.include_over_18, W, K) : t.q,
 									type: (t.type || []).join(","),
 									b: !B
 								},
@@ -13234,10 +13234,10 @@
 							username: I
 						} = p.platform.currentPage.urlParams,
 						R = h || s()(m, u.t),
-						F = Object(y.c)(p),
-						C = Object(y.b)(p),
-						N = Object(y.e)(p),
-						A = Object(y.d)(p),
+						F = Object(y.d)(p),
+						C = Object(y.c)(p),
+						N = Object(y.f)(p),
+						A = Object(y.e)(p),
 						j = Object(a.e)(R, A),
 						D = N && "1" === j.sr_nsfw,
 						P = F ? e : j.type,
@@ -16641,7 +16641,7 @@
 				e.Redesign = "redesign", e.RedesignSafe = "redesign_safe", e.RedesignCommunityUnsafe = "redesign_community_unsafe"
 			}(Nr || (Nr = {})),
 			function(e) {
-				e.Redesign = "redesign"
+				e.Redesign = "redesign", e.People = "people"
 			}(Ar || (Ar = {})),
 			function(e) {
 				e.VoteCountOnly = "vote_count_only", e.CommentCountOnly = "comment_count_only", e.VoteAndCommentCount = "vote_and_comment_count"
@@ -16778,7 +16778,7 @@
 					[gt]: [jr.VoteCountOnly, jr.CommentCountOnly, jr.VoteAndCommentCount],
 					[bt]: [Cr.Enabled],
 					[We]: [Nr.Redesign, Nr.RedesignSafe, Nr.RedesignCommunityUnsafe],
-					[Ke]: [Ar.Redesign],
+					[Ke]: [Ar.Redesign, Ar.People],
 					[ht]: [yr.Enabled, yr.Enabled_noskip, yr.Enabled_noskip_no_preselect],
 					[ct]: [Sr.Enabled],
 					[yt]: [Dr.SeePostCTAs, Dr.ReplyCTAs, Dr.AllCTAs],
@@ -18774,7 +18774,7 @@
 							searchInput: v,
 							...O && {
 								communityRows: 6,
-								authorRows: 6
+								authorRows: 50
 							}
 						},
 						R = await Object(o.a)(e, {
@@ -24346,7 +24346,7 @@
 						subredditName: d
 					} = n.params, {
 						username: a
-					} = n.params, u = Object(T.c)(t), c = Object(T.d)(t), _ = Object(l.e)(r()(n.queryParams, m.t), c), p = {
+					} = n.params, u = Object(T.d)(t), c = Object(T.e)(t), _ = Object(l.e)(r()(n.queryParams, m.t), c), p = {
 						..._,
 						type: Object(T.a)(u, c, _.type)
 					};
@@ -32370,16 +32370,18 @@
 		},
 		"./src/reddit/selectors/experiments/serpRedesignLayout.ts": function(e, t, i) {
 			"use strict";
-			i.d(t, "c", (function() {
+			i.d(t, "d", (function() {
 				return l
-			})), i.d(t, "b", (function() {
+			})), i.d(t, "c", (function() {
 				return u
-			})), i.d(t, "e", (function() {
+			})), i.d(t, "f", (function() {
 				return c
-			})), i.d(t, "d", (function() {
+			})), i.d(t, "e", (function() {
 				return _
-			})), i.d(t, "a", (function() {
+			})), i.d(t, "b", (function() {
 				return p
+			})), i.d(t, "a", (function() {
+				return m
 			}));
 			var n = i("./src/lib/constants/index.ts"),
 				r = i("./node_modules/lodash/isEmpty.js"),
@@ -32402,9 +32404,13 @@
 				_ = Object(a.a)(l, e => Object(d.c)(e, {
 					experimentEligibilitySelector: d.a,
 					experimentName: o.Cb
-				}), (e, t) => e && t === o.Pb.Redesign);
+				}), (e, t) => e && (t === o.Pb.Redesign || t === o.Pb.People)),
+				p = Object(a.a)(l, e => Object(d.c)(e, {
+					experimentEligibilitySelector: d.a,
+					experimentName: o.Cb
+				}), (e, t) => e && t === o.Pb.People);
 
-			function p(e, t, i) {
+			function m(e, t, i) {
 				return !e || t ? i : i.includes(n.Yb.Posts) || s()(i) ? [n.Yb.Posts, n.Yb.Subreddits, n.Yb.Users] : i.includes(n.Yb.Users) || i.includes(n.Yb.Subreddits) ? [n.Yb.Users, n.Yb.Subreddits] : i
 			}
 		},
@@ -35477,7 +35483,7 @@
 				C = (e, t) => !!((e, {
 					listingKey: t
 				}) => e.listings.postOrder.api.pending[t])(e, t) || Object(r.N)(e, t).length > 0,
-				N = e => Object(s.c)(e) ? n.g.Search : n.g.Classic
+				N = e => Object(s.d)(e) ? n.g.Search : n.g.Classic
 		},
 		"./src/reddit/selectors/seo/index.ts": function(e, t, i) {
 			"use strict";
@@ -38574,7 +38580,7 @@
 			e.exports = JSON.parse('{"id":"34910619f1e9"}')
 		},
 		"./src/redditGQL/operations/GeneralSearch.json": function(e) {
-			e.exports = JSON.parse('{"id":"c74252242041"}')
+			e.exports = JSON.parse('{"id":"d9d17e03c3fe"}')
 		},
 		"./src/redditGQL/operations/ModeratedSubreddits.json": function(e) {
 			e.exports = JSON.parse('{"id":"6103843fc7be"}')
@@ -43099,4 +43105,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.c75cb087b1943690fe21.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.bcccaa8d9082f3c091c0.js.map
