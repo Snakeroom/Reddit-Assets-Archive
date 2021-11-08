@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlow.69385d09b9404aa9e1f6.js
-// Retrieved at 11/8/2021, 10:50:15 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlow.8d9d5f80c6383524842b.js
+// Retrieved at 11/8/2021, 5:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlow", "FrontpageSidebar", "ReportFlowNew"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -327,9 +327,7 @@
 				return r && (o = `${o}-${r.toUpperCase()}`), o
 			};
 			const l = new Set(Object.keys(a));
-			t.isISOLocaleSupported = e => !!e && l.has(e);
-			const c = new Set([o.PSEUDO_LONG_LOCALE, o.PSEUDO_SHORT_LOCALE, o.PSEUDO_EXT_LOCALE]);
-			t.isPseudoLocale = e => !!e && c.has(e)
+			t.isISOLocaleSupported = e => !!e && l.has(e), t.isPseudoLocale = e => !!e && Object.values(o.PseudoLocale).includes(e)
 		},
 		"./node_modules/lodash/_baseInverter.js": function(e, t, n) {
 			var o = n("./node_modules/lodash/_baseForOwn.js");
@@ -6811,4 +6809,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.69385d09b9404aa9e1f6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.8d9d5f80c6383524842b.js.map

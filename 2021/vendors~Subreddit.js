@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~Subreddit.65668ea5c8d76b43ecf4.js
-// Retrieved at 10/19/2021, 3:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~Subreddit.589e7dd69c4c3adf4e5b.js
+// Retrieved at 11/8/2021, 5:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~Subreddit"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, r) {
@@ -327,9 +327,7 @@
 				return n && (o = `${o}-${n.toUpperCase()}`), o
 			};
 			const l = new Set(Object.keys(a));
-			t.isISOLocaleSupported = e => !!e && l.has(e);
-			const u = new Set([o.PSEUDO_LONG_LOCALE, o.PSEUDO_SHORT_LOCALE, o.PSEUDO_EXT_LOCALE]);
-			t.isPseudoLocale = e => !!e && u.has(e)
+			t.isISOLocaleSupported = e => !!e && l.has(e), t.isPseudoLocale = e => !!e && Object.values(o.PseudoLocale).includes(e)
 		},
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, r) {
 			"use strict";
@@ -2290,14 +2288,14 @@
 				strategy: "absolute"
 			};
 
-			function L() {
+			function B() {
 				for (var e = arguments.length, t = new Array(e), r = 0; r < e; r++) t[r] = arguments[r];
 				return !t.some((function(e) {
 					return !(e && "function" == typeof e.getBoundingClientRect)
 				}))
 			}
 
-			function B(e) {
+			function L(e) {
 				void 0 === e && (e = {});
 				var t = e,
 					r = t.defaultModifiers,
@@ -2369,7 +2367,7 @@
 									var e = l.elements,
 										t = e.reference,
 										r = e.popper;
-									if (L(t, r)) {
+									if (B(t, r)) {
 										l.rects = {
 											reference: m(t, g(r), "fixed" === l.options.strategy),
 											popper: h(r)
@@ -2408,7 +2406,7 @@
 								f(), c = !0
 							}
 						};
-					if (!L(e, t)) return d;
+					if (!B(e, t)) return d;
 
 					function f() {
 						u.forEach((function(e) {
@@ -2432,11 +2430,11 @@
 				return e.split("-")[1]
 			}
 
-			function U(e) {
+			function W(e) {
 				return ["top", "bottom"].indexOf(e) >= 0 ? "x" : "y"
 			}
 
-			function W(e) {
+			function U(e) {
 				var t, r = e.reference,
 					o = e.element,
 					n = e.placement,
@@ -2475,7 +2473,7 @@
 							y: r.y
 						}
 				}
-				var u = i ? U(i) : null;
+				var u = i ? W(i) : null;
 				if (null != u) {
 					var c = "y" === u ? "height" : "width";
 					switch (s) {
@@ -2662,7 +2660,7 @@
 					O = e.elements[h ? v : p],
 					S = ee(a(O) ? O : O.contextElement || c(e.elements.popper), l, d),
 					E = n(g),
-					z = W({
+					z = U({
 						reference: E,
 						element: k,
 						strategy: "absolute",
@@ -2678,11 +2676,11 @@
 					},
 					R = e.modifiersData.offset;
 				if (p === T && R) {
-					var L = R[i];
+					var B = R[i];
 					Object.keys(M).forEach((function(e) {
 						var t = [j, x].indexOf(e) >= 0 ? 1 : -1,
 							r = [w, x].indexOf(e) >= 0 ? "y" : "x";
-						M[e] += L[r] * t
+						M[e] += B[r] * t
 					}))
 				}
 				return M
@@ -2709,7 +2707,7 @@
 					return e[t] >= 0
 				}))
 			}
-			var ae = B({
+			var ae = L({
 					defaultModifiers: [{
 						name: "eventListeners",
 						enabled: !0,
@@ -2742,7 +2740,7 @@
 						fn: function(e) {
 							var t = e.state,
 								r = e.name;
-							t.modifiersData[r] = W({
+							t.modifiersData[r] = U({
 								reference: t.rects.reference,
 								element: t.rects.popper,
 								strategy: "absolute",
@@ -2911,8 +2909,8 @@
 									var P = v[A],
 										M = q(P),
 										R = V(P) === S,
-										L = [w, x].indexOf(M) >= 0,
-										B = L ? "width" : "height",
+										B = [w, x].indexOf(M) >= 0,
+										L = B ? "width" : "height",
 										N = oe(t, {
 											placement: P,
 											boundary: c,
@@ -2920,11 +2918,11 @@
 											altBoundary: f,
 											padding: u
 										}),
-										U = L ? R ? j : k : R ? x : w;
-									g[B] > E[B] && (U = X(U));
-									var W = X(U),
+										W = B ? R ? j : k : R ? x : w;
+									g[L] > E[L] && (W = X(W));
+									var U = X(W),
 										Z = [];
-									if (i && Z.push(N[M] <= 0), a && Z.push(N[U] <= 0, N[W] <= 0), Z.every((function(e) {
+									if (i && Z.push(N[M] <= 0), a && Z.push(N[W] <= 0, N[U] <= 0), Z.every((function(e) {
 											return e
 										}))) {
 										T = P, I = !1;
@@ -2980,7 +2978,7 @@
 								y = q(t.placement),
 								v = V(t.placement),
 								O = !v,
-								D = U(y),
+								D = W(y),
 								E = "x" === D ? "y" : "x",
 								F = t.modifiersData.popperOffsets,
 								I = t.rects.reference,
@@ -2998,10 +2996,10 @@
 										P = "y" === D ? x : j,
 										M = "y" === D ? "height" : "width",
 										R = F[D],
-										L = F[D] + b[C],
-										B = F[D] - b[P],
+										B = F[D] + b[C],
+										L = F[D] - b[P],
 										N = p ? -T[M] / 2 : 0,
-										W = v === S ? I[M] : T[M],
+										U = v === S ? I[M] : T[M],
 										Z = v === S ? -T[M] : -I[M],
 										H = t.elements.arrow,
 										$ = p && H ? h(H) : {
@@ -3017,14 +3015,14 @@
 										G = X[C],
 										K = X[P],
 										Y = ne(0, I[M], $[M]),
-										J = O ? I[M] / 2 - N - Y - G - A : W - Y - G - A,
+										J = O ? I[M] / 2 - N - Y - G - A : U - Y - G - A,
 										Q = O ? -I[M] / 2 + N + Y + K + A : Z + Y + K + A,
 										ee = t.elements.arrow && g(t.elements.arrow),
 										te = ee ? "y" === D ? ee.clientTop || 0 : ee.clientLeft || 0 : 0,
 										re = t.modifiersData.offset ? t.modifiersData.offset[t.placement][D] : 0,
 										ie = F[D] + J - re - te,
 										se = F[D] + Q - re,
-										ae = ne(p ? Math.min(L, ie) : L, R, p ? Math.max(B, se) : B);
+										ae = ne(p ? Math.min(B, ie) : B, R, p ? Math.max(L, se) : L);
 									F[D] = ae, z[D] = ae - R
 								}
 								if (a) {
@@ -3048,7 +3046,7 @@
 								n = r.elements.arrow,
 								i = r.modifiersData.popperOffsets,
 								s = q(r.placement),
-								a = U(s),
+								a = W(s),
 								l = [k, j].indexOf(s) >= 0 ? "height" : "width";
 							if (n && i) {
 								var u = r.modifiersData[o + "#persistent"].padding,
@@ -3330,4 +3328,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Subreddit.65668ea5c8d76b43ecf4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Subreddit.589e7dd69c4c3adf4e5b.js.map

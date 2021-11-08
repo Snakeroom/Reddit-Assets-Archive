@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-BlankPost.0909fa08e9489926064c.js
-// Retrieved at 10/19/2021, 3:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-BlankPost.ae71727770d61f849417.js
+// Retrieved at 11/8/2021, 5:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-BlankPost"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, o, r) {
@@ -327,14 +327,12 @@
 				return t && (n = `${n}-${t.toUpperCase()}`), n
 			};
 			const d = new Set(Object.keys(l));
-			o.isISOLocaleSupported = e => !!e && d.has(e);
-			const i = new Set([n.PSEUDO_LONG_LOCALE, n.PSEUDO_SHORT_LOCALE, n.PSEUDO_EXT_LOCALE]);
-			o.isPseudoLocale = e => !!e && i.has(e)
+			o.isISOLocaleSupported = e => !!e && d.has(e), o.isPseudoLocale = e => !!e && Object.values(n.PseudoLocale).includes(e)
 		},
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, o, r) {
 			"use strict";
 			r.d(o, "a", (function() {
-				return x
+				return O
 			}));
 			var n = r("./node_modules/react/index.js"),
 				t = r.n(n),
@@ -410,7 +408,7 @@
 				return e
 			}
 
-			function _(e, o, r) {
+			function g(e, o, r) {
 				return o in e ? Object.defineProperty(e, o, {
 					value: r,
 					enumerable: !0,
@@ -418,45 +416,45 @@
 					writable: !0
 				}) : e[o] = r, e
 			}
-			var g = ["root", "rootMargin", "threshold"],
+			var _ = ["root", "rootMargin", "threshold"],
 				y = ["root", "rootMargin", "threshold", "disabled"],
 				j = Object.prototype,
-				O = j.hasOwnProperty,
-				k = j.toString,
+				k = j.hasOwnProperty,
+				x = j.toString,
 				N = function(e) {
-					return g.reduce((function(o, r) {
-						if (O.call(e, r)) {
-							var n = "root" === r && "[object String]" === k.call(e[r]);
+					return _.reduce((function(o, r) {
+						if (k.call(e, r)) {
+							var n = "root" === r && "[object String]" === x.call(e[r]);
 							o[r] = n ? document.querySelector(e[r]) : e[r]
 						}
 						return o
 					}), {})
 				},
-				x = function(e) {
+				O = function(e) {
 					var o, r;
 
 					function n() {
 						for (var o, r = arguments.length, n = new Array(r), t = 0; t < r; t++) n[t] = arguments[t];
-						return _(m(o = e.call.apply(e, [this].concat(n)) || this), "handleChange", (function(e) {
+						return g(m(o = e.call.apply(e, [this].concat(n)) || this), "handleChange", (function(e) {
 							o.props.onChange(e, o.externalUnobserve)
-						})), _(m(o), "handleNode", (function(e) {
+						})), g(m(o), "handleNode", (function(e) {
 							var r = o.props.children;
 							if (null != r) {
 								var n = r.ref;
 								n && ("function" == typeof n ? n(e) : "object" == typeof n && (n.current = e))
 							}
 							o.targetNode = e && Object(s.findDOMNode)(e)
-						})), _(m(o), "observe", (function() {
+						})), g(m(o), "observe", (function() {
 							return null != o.props.children && !o.props.disabled && (o.targetNode ? (o.observer = b(N(o.props)), o.target = o.targetNode, e = m(o), d.has(e.observer) || d.set(e.observer, new Set), d.get(e.observer).add(e), e.observer.observe(e.target), !0) : (v.errorReporter("ReactIntersectionObserver: Can't find DOM node in the provided children. Make sure to render at least one DOM node in the tree."), !1));
 							var e
-						})), _(m(o), "unobserve", (function(e) {
+						})), g(m(o), "unobserve", (function(e) {
 							! function(e, o) {
 								if (d.has(e.observer)) {
 									var r = d.get(e.observer);
 									r.delete(e) && (r.size > 0 ? e.observer.unobserve(o) : (e.observer.disconnect(), d.delete(e.observer)))
 								}
 							}(m(o), e)
-						})), _(m(o), "externalUnobserve", (function() {
+						})), g(m(o), "externalUnobserve", (function() {
 							o.unobserve(o.targetNode)
 						})), o
 					}
@@ -483,7 +481,7 @@
 						}) : null
 					}, n
 				}(t.a.Component);
-			_(x, "displayName", "IntersectionObserver")
+			g(O, "displayName", "IntersectionObserver")
 		},
 		"./node_modules/@researchgate/react-intersection-observer/node_modules/prop-types/factoryWithThrowingShims.js": function(e, o, r) {
 			"use strict";
@@ -630,9 +628,9 @@
 				l = h, d = f, t = b;
 				var m = (1e4 * (268435455 & (h += 122192928e5)) + f) % 4294967296;
 				c[i++] = m >>> 24 & 255, c[i++] = m >>> 16 & 255, c[i++] = m >>> 8 & 255, c[i++] = 255 & m;
-				var _ = h / 4294967296 * 1e4 & 268435455;
-				c[i++] = _ >>> 8 & 255, c[i++] = 255 & _, c[i++] = _ >>> 24 & 15 | 16, c[i++] = _ >>> 16 & 255, c[i++] = b >>> 8 | 128, c[i++] = 255 & b;
-				for (var g = 0; g < 6; ++g) c[i + g] = u[g];
+				var g = h / 4294967296 * 1e4 & 268435455;
+				c[i++] = g >>> 8 & 255, c[i++] = 255 & g, c[i++] = g >>> 24 & 15 | 16, c[i++] = g >>> 16 & 255, c[i++] = b >>> 8 | 128, c[i++] = 255 & b;
+				for (var _ = 0; _ < 6; ++_) c[i + _] = u[_];
 				return o || a(c)
 			}
 		},
@@ -661,4 +659,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-BlankPost.0909fa08e9489926064c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-BlankPost.ae71727770d61f849417.js.map
