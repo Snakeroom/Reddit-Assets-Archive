@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241.3941a64d5ebf52c64b83.js
-// Retrieved at 11/8/2021, 10:50:15 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241.d1751a1aea1ea0c61d11.js
+// Retrieved at 11/8/2021, 5:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241"], {
 		"./src/reddit/actions/authorFlair.ts": function(e, t, r) {
@@ -1971,7 +1971,7 @@
 				se.layout = ie.e[Object(de.Q)(N, {})], K && (se.forceGeopopular = !0), o(Fe({
 					key: e
 				}));
-				const ne = Object(V.l)(N) && Object(ye.b)(N);
+				const ne = !$ && Object(V.l)(N) && Object(ye.b)(N);
 				let be;
 				if (r.sort === u.V.AWARDED && K) be = Object(oe.a)(c.gqlContext(), {
 					top: 0,
@@ -4826,7 +4826,7 @@
 						t: T
 					} = r, h = Object(g.T)(e), y = Object(_.q)(e), A = Object(i.a)(t), x = Object(d.a)(t), R = Object(j.P)(e, {
 						subredditId: Object(j.B)(e, t)
-					}).length > 0, D = {
+					}).length > 0, D = (null === (n = e.user.account) || void 0 === n ? void 0 : n.username) || (null === (o = e.user.account) || void 0 === o ? void 0 : o.displayText), C = {
 						name: t,
 						includeIdentity: h && !e.user.account,
 						adContext: {
@@ -4834,28 +4834,26 @@
 							reddaid: e.user.reddaid
 						},
 						isFake: x,
-						includeAppliedFlair: s && !0,
+						includeAppliedFlair: !x && h && !!D && s,
 						includePowerups: s && !x,
 						includeQuestions: s && h && !x,
 						includeRecents: x && S && S.length > 0 || !1,
-						includeRedditorKarma: s && h && !(null === (o = null === (n = e.user.account) || void 0 === n ? void 0 : n.karma) || void 0 === o ? void 0 : o.total),
+						includeRedditorKarma: s && h && !(null === (c = null === (a = e.user.account) || void 0 === a ? void 0 : a.karma) || void 0 === c ? void 0 : c.total),
 						includeRules: s && !x && !R,
-						includeSubredditLinks: s && !h,
-						includeTopicLinks: s && !h,
+						includeSubredditLinks: s && !x && !h,
+						includeTopicLinks: s && !x && !h,
 						includeTrending: x,
-						includeWelcome: s && !0,
+						includeWelcome: s && !x && !0,
 						isAdHocMulti: A,
 						isAll: t === l.d.All,
 						isPopular: t === l.d.Popular,
 						recentPostIds: S || [],
 						subredditNames: A ? t.split("+") : [],
-						...h && {
-							username: (null === (a = e.user.account) || void 0 === a ? void 0 : a.username) || (null === (c = e.user.account) || void 0 === c ? void 0 : c.displayText)
-						}
+						username: h && D && s ? D : ""
 					};
-					return E && (D.sort = E.toUpperCase()), T && (D.range = T.toUpperCase()), O ? D.pageSize = Object(p.a)(m) : I && (D.pageSize = I), y && y.ad && (D.forceAds = {
+					return E && (C.sort = E.toUpperCase()), T && (C.range = T.toUpperCase()), O ? C.pageSize = Object(p.a)(m) : I && (C.pageSize = I), y && y.ad && (C.forceAds = {
 						ad: y.ad
-					}), (y && y.geo_filter || f) && (D.region = y && y.geo_filter || f), b && (D.after = btoa(b)), D
+					}), (y && y.geo_filter || f) && (C.region = y && y.geo_filter || f), b && (C.after = btoa(b)), C
 				},
 				E = async (e, t, r) => {
 					const s = Date.now(),
@@ -7435,10 +7433,16 @@
 				}) => e.features.userFlair[t],
 				u = (e, {
 					subredditId: t
-				}) => !e.features.userFlair[t] || e.features.userFlair[t].displaySettings.isEnabled,
+				}) => {
+					var r, s;
+					return null === (r = e.features.userFlair[t]) || void 0 === r || !r.displaySettings || !!(null === (s = e.features.userFlair[t].displaySettings) || void 0 === s ? void 0 : s.isEnabled)
+				},
 				l = (e, {
 					subredditId: t
-				}) => e.features.userFlair[t] ? e.features.userFlair[t].displaySettings.position : n.b.Right,
+				}) => {
+					var r, s;
+					return (null === (r = e.features.userFlair[t]) || void 0 === r ? void 0 : r.displaySettings) ? null === (s = e.features.userFlair[t].displaySettings) || void 0 === s ? void 0 : s.position : n.b.Right
+				},
 				b = Object(s.a)((e, {
 					subredditId: t
 				}) => {
@@ -7756,4 +7760,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241.3941a64d5ebf52c64b83.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241.d1751a1aea1ea0c61d11.js.map
