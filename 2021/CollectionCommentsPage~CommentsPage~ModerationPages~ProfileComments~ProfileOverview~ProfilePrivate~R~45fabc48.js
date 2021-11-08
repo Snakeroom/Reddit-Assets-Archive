@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.3be5926db8b241d449b5.js
-// Retrieved at 11/8/2021, 10:50:15 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.e3d8506aa6ac69a65831.js
+// Retrieved at 11/8/2021, 6:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48"], {
 		"./src/reddit/actions/eventPosts/index.ts": function(e, t, s) {
@@ -2029,7 +2029,7 @@
 		"./src/reddit/components/ModToolsFlatlist/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "b", (function() {
-				return A
+				return R
 			}));
 			var o = s("./node_modules/fbt/lib/FbtPublic.js"),
 				n = s("./node_modules/react/index.js"),
@@ -2062,14 +2062,7 @@
 				S = s("./src/reddit/icons/fonts/Remove/index.tsx"),
 				N = s("./src/reddit/components/ModToolsFlatlist/index.m.less"),
 				M = s.n(N);
-			const F = (e, t) => e ? t === I.k ? o.fbt._("Confirm removal", null, {
-					hk: "1t5tKM"
-				}) : o.fbt._("removed", null, {
-					hk: "35ZTch"
-				}) : o.fbt._("remove", null, {
-					hk: "3LWMcS"
-				}),
-				R = ({
+			const F = ({
 					className: e,
 					textClassName: t,
 					isOverlay: s,
@@ -2082,9 +2075,15 @@
 						totalVoteCount: _
 					} = a.pollData || {}, g = () => {
 						d(!1), f(Object(l.S)(a.id, !1)), a.isRemoved && a.bannedBy === I.k ? h(Object(C.i)(a.id, "confirm_remove")) : h(Object(C.i)(a.id, "remove"))
-					}, k = () => f(Object(p.h)({
+					}, k = ((e, t) => e ? t === I.k ? o.fbt._("Confirm removal", null, {
+						hk: "1t5tKM"
+					}) : o.fbt._("removed", null, {
+						hk: "35ZTch"
+					}) : o.fbt._("remove", null, {
+						hk: "3LWMcS"
+					}))(a.isRemoved, a.bannedBy), j = R("Remove", a.id, s), E = () => n && f(Object(p.h)({
 						tooltipId: j
-					})), j = A("Remove", a.id, s), E = r.a.useMemo(() => _ ? 1 === _ ? o.fbt._("Removing this post will cancel the 1 prediction that has already been made.", null, {
+					})), w = r.a.useMemo(() => _ ? 1 === _ ? o.fbt._("Removing this post will cancel the 1 prediction that has already been made.", null, {
 						hk: "hVYeT"
 					}) : o.fbt._("Removing this post will cancel the {votedUsersCount} predictions that have already been made.", [o.fbt._param("votedUsersCount", _.toString())], {
 						hk: "47oACN"
@@ -2094,19 +2093,20 @@
 					return r.a.createElement(r.a.Fragment, null, r.a.createElement(x.d, {
 						className: e,
 						textClassName: t,
-						key: "removeButton",
 						id: j,
-						text: n ? void 0 : F(a.isRemoved, a.bannedBy),
+						text: n ? void 0 : k,
 						disabled: a.isRemoved && a.bannedBy !== I.k,
-						onMouseEnter: k,
-						onMouseLeave: k,
+						onMouseEnter: E,
+						onMouseLeave: E,
 						onClick: () => {
 							O ? v ? b(!0) : d(!0) : g()
 						}
-					}, r.a.createElement(S.a, null), r.a.createElement(m.c, {
+					}, r.a.createElement(S.a, {
+						desc: n ? k : void 0
+					}), n && r.a.createElement(m.c, {
 						className: M.a.tooltip,
 						tooltipId: j,
-						text: F(a.isRemoved, a.bannedBy)
+						text: k
 					})), u && r.a.createElement(P.a, {
 						title: o.fbt._("This post can't be removed", null, {
 							hk: "2GbryD"
@@ -2117,7 +2117,7 @@
 						onClose: () => b(!u)
 					}), c && r.a.createElement(y.a, {
 						withOverlay: !0,
-						modalText: E,
+						modalText: w,
 						actionText: o.fbt._("Remove", null, {
 							hk: "2DXJl4"
 						}),
@@ -2129,13 +2129,13 @@
 						toggleModal: () => d(!c)
 					}))
 				},
-				A = (e, t, s = !1) => `ModToolsFlatlist-${e}${t}${s?"inOverlay":""}`,
-				L = (e, t) => Object(w.b)({
+				R = (e, t, s = !1) => `ModToolsFlatlist-${e}${t}${s?"inOverlay":""}`,
+				A = (e, t) => Object(w.b)({
 					breakpointType: w.a.HideIfVWSmaller,
 					flatlistItem: e,
 					postLayout: t
 				}),
-				B = Object(i.b)(() => Object(a.c)({
+				L = Object(i.b)(() => Object(a.c)({
 					activeModalId: g.a,
 					canEditFlair: (e, {
 						post: t
@@ -2155,7 +2155,7 @@
 					onSpamPost: () => e(Object(l.S)(t.id, !0)),
 					onFlairPost: t => () => e(Object(d.i)(t))
 				}));
-			t.a = B(e => {
+			t.a = L(e => {
 				const {
 					canEditFlair: t,
 					className: s,
@@ -2169,17 +2169,7 @@
 					post: y,
 					sendEvent: P,
 					showIconsOnly: T
-				} = e, S = Object(i.d)(), N = Object(f.a)(l), F = Object(b.b)(y), B = !(!y.approvedBy || !F), D = Object(h.b)(y.id, a), W = N && g && !y.isSponsored, V = t && g;
-				let U, G;
-				const H = A("Approve", y.id, a),
-					q = A("Spam", y.id, a),
-					K = () => S(Object(p.h)({
-						tooltipId: H
-					})),
-					J = () => S(Object(p.h)({
-						tooltipId: q
-					}));
-				T || (U = ((e, t) => e ? o.fbt._("reapprove", null, {
+				} = e, S = Object(i.d)(), N = Object(f.a)(l), L = Object(b.b)(y), B = !(!y.approvedBy || !L), D = Object(h.b)(y.id, a), W = N && g && !y.isSponsored, V = t && g, U = ((e, t) => e ? o.fbt._("reapprove", null, {
 					hk: "OJvB1"
 				}) : t ? o.fbt._("approved", null, {
 					hk: "2bWAFI"
@@ -2189,36 +2179,41 @@
 					hk: "3GPrkZ"
 				}) : o.fbt._("spam", null, {
 					hk: "3ebJLg"
-				}))(y.isSpam));
-				const Q = a ? void 0 : d;
+				}))(y.isSpam), H = R("Approve", y.id, a), q = R("Spam", y.id, a), K = () => T && S(Object(p.h)({
+					tooltipId: H
+				})), J = () => T && S(Object(p.h)({
+					tooltipId: q
+				})), Q = a ? void 0 : d;
 				return r.a.createElement("div", {
 					className: Object(c.a)(M.a.container, s)
 				}, W && r.a.createElement(n.Fragment, null, r.a.createElement(x.b, {
-					className: L(E.a.Approve, Q),
+					className: A(E.a.Approve, Q),
 					key: "approveButton",
-					text: U,
+					text: T ? void 0 : U,
 					textClassName: Object(w.c)(Q),
-					disabled: !!y.approvedBy && !F,
+					disabled: !!y.approvedBy && !L,
 					id: H,
 					onMouseEnter: K,
 					onMouseLeave: K,
 					onClick: () => {
 						k(), P(Object(C.i)(y.id, "approve"))
 					}
-				}, r.a.createElement(O.a, null), r.a.createElement(m.c, {
+				}, r.a.createElement(O.a, {
+					desc: T ? U : void 0
+				}), T && r.a.createElement(m.c, {
 					className: M.a.tooltip,
 					tooltipId: H,
 					text: U
-				})), r.a.createElement(R, {
-					className: L(E.a.Remove, Q),
+				})), r.a.createElement(F, {
+					className: A(E.a.Remove, Q),
 					textClassName: Object(w.c)(Q),
 					isOverlay: a,
 					iconOnly: T,
 					post: y
 				}), r.a.createElement(x.d, {
-					className: L(E.a.Spam, Q),
+					className: A(E.a.Spam, Q),
 					key: "removeSpamButton",
-					text: G,
+					text: T ? void 0 : G,
 					textClassName: Object(w.c)(Q),
 					disabled: y.isSpam,
 					id: q,
@@ -2227,12 +2222,14 @@
 					onClick: () => {
 						I(), P(Object(C.i)(y.id, "spam"))
 					}
-				}, r.a.createElement(v.a, null), r.a.createElement(m.c, {
+				}, r.a.createElement(v.a, {
+					desc: T ? G : void 0
+				}), T && r.a.createElement(m.c, {
 					className: M.a.tooltip,
 					tooltipId: q,
 					text: G
 				}))), V && r.a.createElement(x.c, {
-					className: L(E.a.Flair, Q),
+					className: A(E.a.Flair, Q),
 					key: "tagButton",
 					onClick: () => {
 						j(D)(), P(Object(C.i)(y.id, "post_flair_picker"))
@@ -4722,4 +4719,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.3be5926db8b241d449b5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.e3d8506aa6ac69a65831.js.map
