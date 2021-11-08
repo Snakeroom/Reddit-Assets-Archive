@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.ef5006089f8cc1e878fa.js
-// Retrieved at 11/4/2021, 7:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.61a903d3fb2e7c2c5735.js
+// Retrieved at 11/8/2021, 10:40:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -3918,8 +3918,8 @@
 					return Object(c.c)(e, {
 						experimentEligibilitySelector: i,
 						experimentName: s.Zb
-					}) === s.Kc.Enabled
-				}(e) ? l.Achievements : t === s.Lc.ControlBanner ? l.CommunitySpacesControl : t === s.Lc.EnabledBanner ? l.CommunitySpaces : null
+					}) === s.Lc.Enabled
+				}(e) ? l.Achievements : t === s.Mc.ControlBanner ? l.CommunitySpacesControl : t === s.Mc.EnabledBanner ? l.CommunitySpaces : null
 			}! function(e) {
 				e.Achievements = "achievements", e.CommunitySpaces = "communitySpaces", e.CommunitySpacesControl = "communitySpaces--control"
 			}(l || (l = {}))
@@ -3980,4 +3980,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.ef5006089f8cc1e878fa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.61a903d3fb2e7c2c5735.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PredictionLeaderboard-Sidebar.c7d92914fc2257770686.js
-// Retrieved at 11/8/2021, 10:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PredictionLeaderboard-Sidebar.d0b05aa306274ec497c8.js
+// Retrieved at 11/8/2021, 10:40:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./src/reddit/components/Econ/Prediction/UnicornIcon/index.tsx": function(e, t, c) {
@@ -322,7 +322,8 @@
 				avatar: "KajS3NI16AuxmHTMwUM9Y",
 				name: "_1XaIj4-_6OJb20sL98YYiD",
 				score: "_3ebMVpO-ahVFbOZDTJpx9U",
-				icon: "_2Xw8EThjahawQ2bJketixZ"
+				icon: "_2Xw8EThjahawQ2bJketixZ",
+				rankBadge: "_1oPIwF1dXcLbArFfx2gunM"
 			}
 		},
 		"./src/reddit/components/Econ/PredictionLeaderboard/Predictor/index.tsx": function(e, t, c) {
@@ -383,6 +384,7 @@
 					isNSFW: !!(null == L ? void 0 : L.isNsfw),
 					userName: null != j ? j : ""
 				}), n.a.createElement(i.a, {
+					className: E.a.rankBadge,
 					rank: c
 				})), n.a.createElement("div", {
 					className: E.a.name
@@ -612,4 +614,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PredictionLeaderboard-Sidebar.c7d92914fc2257770686.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PredictionLeaderboard-Sidebar.d0b05aa306274ec497c8.js.map
