@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.e50b97972f7e3a9d1366.js
-// Retrieved at 11/8/2021, 10:40:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.6821a75c9fa4e600f08e.js
+// Retrieved at 11/8/2021, 10:50:15 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsMarketingModal"], {
 		"./src/reddit/components/Econ/Common/BenefitTile/index.m.less": function(e, t, s) {
@@ -13,9 +13,9 @@
 		},
 		"./src/reddit/components/Econ/Common/BenefitTile/index.tsx": function(e, t, s) {
 			"use strict";
-			var o = s("./node_modules/react/index.js"),
-				r = s.n(o),
-				n = s("./src/lib/classNames/index.ts"),
+			var o = s("./src/lib/classNames/index.ts"),
+				r = s("./node_modules/react/index.js"),
+				n = s.n(r),
 				a = s("./src/reddit/components/Econ/Common/NewIcon/index.tsx"),
 				c = s("./src/reddit/components/Econ/Common/BenefitTile/index.m.less"),
 				i = s.n(c);
@@ -26,22 +26,24 @@
 				className: e,
 				description: t,
 				iconUrl: s,
-				onClick: o,
+				onClick: r,
 				title: c,
 				isNew: l
-			}) => r.a.createElement("div", {
-				className: Object(n.a)(e, i.a.container),
-				onClick: o
-			}, l && r.a.createElement(a.a, {
+			}) => n.a.createElement("div", {
+				className: Object(o.a)(e, i.a.container),
+				onClick: r,
+				"data-testid": "benefit-tile"
+			}, l && n.a.createElement(a.a, {
 				className: i.a.new
-			}), r.a.createElement("div", {
+			}), n.a.createElement("div", {
 				className: i.a.icon,
 				style: {
 					backgroundImage: `url('${s}')`
 				}
-			}), c && r.a.createElement("h3", {
-				className: i.a.title
-			}, c), t && r.a.createElement("p", {
+			}), c && n.a.createElement("h3", {
+				className: i.a.title,
+				"data-testid": "benefit-title"
+			}, c), t && n.a.createElement("p", {
 				className: i.a.description
 			}, t))
 		},
@@ -598,4 +600,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.e50b97972f7e3a9d1366.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.6821a75c9fa4e600f08e.js.map

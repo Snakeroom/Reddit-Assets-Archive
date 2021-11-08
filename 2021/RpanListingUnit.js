@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.4b74e86058b5ab2f9f0f.js
-// Retrieved at 11/8/2021, 10:40:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.181a80df62f8d5595458.js
+// Retrieved at 11/8/2021, 10:50:15 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -52,16 +52,16 @@
 			const p = Object(o.a)(e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.yd
+					experimentName: u.zd
 				});
-				return Object(u.cf)(t) ? void 0 : t
+				return Object(u.df)(t) ? void 0 : t
 			}, e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.zd
+					experimentName: u.Ad
 				});
-				return Object(u.cf)(t) ? void 0 : t
-			}, (e, t) => e === u.Dd.Enabled && t === u.Dd.Enabled);
+				return Object(u.df)(t) ? void 0 : t
+			}, (e, t) => e === u.Ed.Enabled && t === u.Ed.Enabled);
 			var h = s("./src/config.ts");
 			var b = s("./src/reddit/selectors/user.ts");
 			const f = e => {
@@ -937,7 +937,7 @@
 				defaultImage: e,
 				userId: t
 			}) => {
-				const s = Object(c.e)(p.A),
+				const s = Object(c.e)(p.B),
 					{
 						processingAvatarImageUrl: n
 					} = r.a;
@@ -5487,7 +5487,7 @@
 						postId: t
 					}) || Object(o.H)(e))(e, t),
 					experimentName: r.M
-				}) === r.Jc
+				}) === r.Kc
 			}
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, s) {
@@ -5618,4 +5618,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.4b74e86058b5ab2f9f0f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.181a80df62f8d5595458.js.map

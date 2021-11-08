@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.65e47ae2e41b442d9fe5.js
-// Retrieved at 11/8/2021, 10:40:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.970b0a00f41768901291.js
+// Retrieved at 11/8/2021, 10:50:15 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -284,16 +284,16 @@
 			const p = Object(a.a)(e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
-					experimentName: m.yd
+					experimentName: m.zd
 				});
-				return Object(m.cf)(t) ? void 0 : t
+				return Object(m.df)(t) ? void 0 : t
 			}, e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
-					experimentName: m.zd
+					experimentName: m.Ad
 				});
-				return Object(m.cf)(t) ? void 0 : t
-			}, (e, t) => e === m.Dd.Enabled && t === m.Dd.Enabled);
+				return Object(m.df)(t) ? void 0 : t
+			}, (e, t) => e === m.Ed.Enabled && t === m.Ed.Enabled);
 			var h = s("./src/config.ts");
 			var b = s("./src/reddit/selectors/user.ts");
 			const v = e => {
@@ -1388,9 +1388,9 @@
 							a = Object(ue.I)(s(), {
 								identifier: w.belongsTo
 							});
-						if (a && (e => z.se.Redirect === Object(Y.b)(e, {
+						if (a && (e => z.te.Redirect === Object(Y.b)(e, {
 								experimentEligibilitySelector: ce,
-								experimentName: z.ke
+								experimentName: z.le
 							}))(s())) return void t(Object(o.c)(a.url));
 						if ((w.media && w.media.type) === K.o.LIVEVIDEO) {
 							const e = `/rpan${w.belongsTo.type===V.a.SUBREDDIT?a.url:"/"}${Object(y.u)(w.id)}`;
@@ -6604,7 +6604,7 @@
 				a = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const i = e => {
 					const t = Object(a.a)(e);
-					return Boolean(t) && !Object(r.cf)(t)
+					return Boolean(t) && !Object(r.df)(t)
 				},
 				d = Object(o.a)(i, n.d, (e, t) => e && !t)
 		},
@@ -6625,4 +6625,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.65e47ae2e41b442d9fe5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.970b0a00f41768901291.js.map

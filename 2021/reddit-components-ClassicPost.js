@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.3968c3e61374e3230b03.js
-// Retrieved at 11/8/2021, 10:40:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.24380358640309737ec0.js
+// Retrieved at 11/8/2021, 10:50:15 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost", "Reddit~StandalonePostPage~reddit-components-MediumPost", "FrontpageSidebar"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -3446,7 +3446,7 @@
 						subreddit: s
 					} = e, {
 						isSponsored: n
-					} = t, r = Object(U.a)(), a = Object(B.a)(m.Tc) === m.Yc.Enabled;
+					} = t, r = Object(U.a)(), a = Object(B.a)(m.Uc) === m.Zc.Enabled;
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return o.a.createElement(K, {
 						nowrap: e.nowrap
 					}, o.a.createElement(X, e));
@@ -7507,7 +7507,7 @@
 						postId: t
 					}) || Object(a.H)(e))(e, t),
 					experimentName: n.M
-				}) === n.Jc
+				}) === n.Kc
 			}
 		},
 		"./src/reddit/selectors/experiments/joinOptimizations.ts": function(e, t, s) {
@@ -7636,8 +7636,8 @@
 			const o = e => {
 				return Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: n.Ud
-				}) === n.Jc
+					experimentName: n.Vd
+				}) === n.Kc
 			}
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, s) {
@@ -7876,10 +7876,10 @@
 				o = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				a = s("./src/reddit/selectors/posts.ts");
 			const i = e => Object(o.c)(e, {
-					experimentName: r.Xd,
+					experimentName: r.Yd,
 					experimentEligibilitySelector: o.a
 				}),
-				c = (e, t) => t === r.ge.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				c = (e, t) => t === r.he.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				d = Object(n.a)(a.H, i, (e, t) => c(e, t)),
 				l = Object(n.a)((e, t) => t, i, (e, t) => c(e, t))
 		},
@@ -7955,4 +7955,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.3968c3e61374e3230b03.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.24380358640309737ec0.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.f0a555a977f6a34d225e.js
-// Retrieved at 11/8/2021, 10:40:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.db960e24f6e3cbe687a0.js
+// Retrieved at 11/8/2021, 10:50:15 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, n) {
@@ -6708,8 +6708,8 @@
 				benefitKey: e,
 				options: t
 			}) => {
-				const n = f.b[e](t),
-					r = f.a[e](t),
+				const n = f.d[e](t),
+					r = f.c[e](t),
 					s = `${u.a.assetPath}/img/gold/premium-marketing/benefits-icons/${e}.png`;
 				return i.a.createElement("div", {
 					className: y.a.benefitUnit,
@@ -6756,7 +6756,7 @@
 						className: y.a.contentWrapper
 					}, u, i.a.createElement("div", {
 						className: y.a.benefitsGrid
-					}, f.c.map(e => i.a.createElement(x, {
+					}, f.e.map(e => i.a.createElement(x, {
 						key: e.key,
 						benefitKey: e.key,
 						telemetryTag: e.telemetryTag,
@@ -10465,12 +10465,16 @@
 		},
 		"./src/reddit/pages/Premium/BenefitsSection/constants.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "c", (function() {
+			n.d(t, "e", (function() {
 				return s
-			})), n.d(t, "b", (function() {
-				return o
 			})), n.d(t, "a", (function() {
+				return o
+			})), n.d(t, "b", (function() {
 				return a
+			})), n.d(t, "d", (function() {
+				return i
+			})), n.d(t, "c", (function() {
+				return c
 			}));
 			var r = n("./node_modules/fbt/lib/FbtPublic.js");
 			const s = [{
@@ -10501,6 +10505,15 @@
 					telemetryTag: "premium_awards"
 				}],
 				o = {
+					key: "premium-more",
+					telemetryTag: "more_benefits"
+				},
+				a = {
+					key: "premium-bonus",
+					asterisk: !0,
+					telemetryTag: "coin_bonus"
+				},
+				i = {
 					"premium-avatars": () => r.fbt._("Exclusive Avatar Gear", null, {
 						hk: "1f1QJb"
 					}),
@@ -10533,7 +10546,7 @@
 						hk: "2W5D7B"
 					})
 				},
-				a = {
+				c = {
 					"premium-avatars": () => r.fbt._("Outfit your avatar with the best gear and accessories", null, {
 						hk: "2HjLMS"
 					}),
@@ -14257,7 +14270,7 @@
 			const a = e => Object(s.c)(e, {
 				experimentName: r.D,
 				experimentEligibilitySelector: () => Object(o.J)(e)
-			}) === r.Jc
+			}) === r.Kc
 		},
 		"./src/reddit/selectors/gold/productOffers.ts": function(e, t, n) {
 			"use strict";
@@ -14411,4 +14424,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.f0a555a977f6a34d225e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.db960e24f6e3cbe687a0.js.map

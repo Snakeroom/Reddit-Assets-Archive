@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.43d2010ab1817ed6173d.js
-// Retrieved at 11/8/2021, 10:40:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.1d7a9ae38da93dc5616f.js
+// Retrieved at 11/8/2021, 10:50:15 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255"], {
 		"./src/lib/unicodeUtils/index.ts": function(e, t, s) {
@@ -133,19 +133,19 @@
 					d = t;
 				return i && !i.media ? o.a.createElement(w, {
 					className: d
-				}, o.a.createElement(N, null, o.a.createElement(k, null, o.a.createElement(m.a, c)), D(i), i.source && o.a.createElement(b.a, {
+				}, o.a.createElement(N, null, o.a.createElement(k, null, o.a.createElement(m.a, c)), F(i), i.source && o.a.createElement(b.a, {
 					post: i
 				}), H(e)), A(e)) : o.a.createElement(I, {
 					className: d
-				}, o.a.createElement(k, null, o.a.createElement(m.a, c)), D(i), F(e), H(e))
+				}, o.a.createElement(k, null, o.a.createElement(m.a, c)), F(i), D(e), H(e))
 			}));
-			const D = e => o.a.createElement(C, {
+			const F = e => o.a.createElement(C, {
 					isCrosspost: !0,
 					post: e,
 					shouldLinkWrap: !0,
 					size: p.b.Small
 				}),
-				F = e => {
+				D = e => {
 					const {
 						mediaProps: t,
 						post: s
@@ -717,7 +717,7 @@
 					n || N(e), o || R(e), C(Object(l.C)(p))
 				}
 
-				function D() {
+				function F() {
 					const e = {};
 					return I && (e.margin = "0 auto"), j || (e.maxHeight = `${m.e}px`), i.a.createElement(_, {
 						autoplay: t,
@@ -743,7 +743,7 @@
 						width: g
 					})
 				}
-				return j ? D() : i.a.createElement("div", {
+				return j ? F() : i.a.createElement("div", {
 					className: Object(d.a)(O.a.container, S, {
 						[O.a.centered]: I
 					})
@@ -751,7 +751,7 @@
 					href: k,
 					target: "_blank",
 					rel: "noopener noreferrer"
-				}, D()))
+				}, F()))
 			}
 		},
 		"./src/reddit/components/Media/index.m.less": function(e, t, s) {
@@ -836,10 +836,10 @@
 				B = e => n.fbt._("Moderator of {community name}", [n.fbt._param("community name", e)], {
 					hk: "nJqIB"
 				}),
-				D = () => n.fbt._("Stickied post", null, {
+				F = () => n.fbt._("Stickied post", null, {
 					hk: "3qSaBs"
 				}),
-				F = () => n.fbt._("Pinned post", null, {
+				D = () => n.fbt._("Pinned post", null, {
 					hk: "2oxErI"
 				}),
 				H = (e, t, s) => {
@@ -930,23 +930,23 @@
 				}, V))), s && Object(k.r)(W) && !l && o.a.createElement(r.Fragment, null, o.a.createElement(I.a, {
 					isFilled: !0,
 					className: Object(c.a)(P.a.icon, P.a.stickyIcon),
-					desc: D(),
+					desc: F(),
 					id: se,
 					onMouseEnter: J(se),
 					onMouseLeave: U
 				}), o.a.createElement(u.c, w({
 					tooltipId: se,
-					text: D()
+					text: F()
 				}, V))), T && h && o.a.createElement(r.Fragment, null, o.a.createElement(I.a, {
 					isFilled: !0,
 					className: Object(c.a)(P.a.icon, P.a.stickyIcon),
-					desc: F(),
+					desc: D(),
 					id: ne,
 					onMouseEnter: J(ne),
 					onMouseLeave: U
 				}), o.a.createElement(u.c, w({
 					tooltipId: ne,
-					text: F()
+					text: D()
 				}, V))), (W.isApproved || W.approvedBy) && o.a.createElement(r.Fragment, null, o.a.createElement(_.a, {
 					isFilled: !0,
 					className: Object(c.a)(P.a.icon, P.a.approveIcon),
@@ -1832,7 +1832,7 @@
 			})), s.d(t, "f", (function() {
 				return B
 			})), s.d(t, "h", (function() {
-				return F
+				return D
 			})), s.d(t, "g", (function() {
 				return H
 			})), s.d(t, "i", (function() {
@@ -1958,7 +1958,7 @@
 					if (!r) return;
 					const o = r.length,
 						i = [];
-					for (let a = 0; a < o; a++) i.push(D(r[a], t, s, a));
+					for (let a = 0; a < o; a++) i.push(F(r[a], t, s, a));
 					return a.a.createElement(c.c, {
 						key: n
 					}, i)
@@ -1977,14 +1977,14 @@
 						const e = r[l].c;
 						e && e.length && o.push(a.a.createElement(c.g, {
 							key: l
-						}, e.map((e, n) => D(e, t, s, n))))
+						}, e.map((e, n) => F(e, t, s, n))))
 					}
 					const d = e.o ? c.i : c.v;
 					return a.a.createElement(d, {
 						key: n
 					}, o)
 				},
-				D = (e, t, s, n) => {
+				F = (e, t, s, n) => {
 					switch (e.e) {
 						case p.b:
 							return M(e, t, s, n);
@@ -1999,10 +1999,10 @@
 						case p.u:
 							return H(e, t, s, n);
 						case p.z:
-							return F(e, t, s, n)
+							return D(e, t, s, n)
 					}
 				},
-				F = (e, t, s, n) => {
+				D = (e, t, s, n) => {
 					const r = e.c,
 						o = e.h,
 						i = r.length,
@@ -2371,12 +2371,12 @@
 						rtJsonElementProps: o
 					});
 					switch (n) {
-						case h.Ee.SmIcon:
+						case h.Fe.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: o
 							});
-						case h.Ee.SmIconHc:
+						case h.Fe.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -2855,12 +2855,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: n.ye
+						experimentName: n.ze
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === n.Ee.SmIcon || t === n.Ee.SmIconHc
+					return t === n.Fe.SmIcon || t === n.Fe.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -2883,4 +2883,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.43d2010ab1817ed6173d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.1d7a9ae38da93dc5616f.js.map

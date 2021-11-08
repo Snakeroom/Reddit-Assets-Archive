@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.9b68c6dbde72f6dd131e.js
-// Retrieved at 11/8/2021, 10:40:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.6601601be402a37e9cf4.js
+// Retrieved at 11/8/2021, 10:50:15 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -3992,7 +3992,7 @@
 			const j = e => S.d.reCaptchaEnterprise(e) && !Object(v.d)(e),
 				D = e => !!Object(T.c)(e, {
 					experimentEligibilitySelector: Object(g.d)(Object(g.b)(...a.d)),
-					experimentName: b.je
+					experimentName: b.ke
 				}),
 				w = Object(s.b)("LOAD_RECAPTCHA_ENTERPRISE"),
 				A = Object(s.b)("EXECUTE_RECAPTCHA_ENTERPRISE"),
@@ -5892,7 +5892,7 @@
 						subreddit: r
 					} = e, {
 						isSponsored: s
-					} = t, n = Object(G.a)(), c = Object(B.a)(p.Tc) === p.Yc.Enabled;
+					} = t, n = Object(G.a)(), c = Object(B.a)(p.Uc) === p.Zc.Enabled;
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return a.a.createElement(K, {
 						nowrap: e.nowrap
 					}, a.a.createElement(X, e));
@@ -26273,7 +26273,7 @@
 						postId: t
 					}) || Object(c.H)(e))(e, t),
 					experimentName: s.M
-				}) === s.Jc
+				}) === s.Kc
 			}
 		},
 		"./src/reddit/selectors/experiments/googleOneTap.ts": function(e, t, r) {
@@ -26306,7 +26306,7 @@
 				l = e => e === n.U.OnetapAuto,
 				p = e => e.user.googleOneTapEnabled,
 				b = Object(s.a)(o.K, i, (e, t) => !e && !!t),
-				f = Object(s.a)(o.K, i, (e, t) => !e && !!t && !Object(n.cf)(t))
+				f = Object(s.a)(o.K, i, (e, t) => !e && !!t && !Object(n.df)(t))
 		},
 		"./src/reddit/selectors/scheduledPosts/index.ts": function(e, t, r) {
 			"use strict";
@@ -26527,4 +26527,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.9b68c6dbde72f6dd131e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.6601601be402a37e9cf4.js.map

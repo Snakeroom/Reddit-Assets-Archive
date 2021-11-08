@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlow.03b593a5970d91b69223.js
-// Retrieved at 11/8/2021, 10:40:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlow.69385d09b9404aa9e1f6.js
+// Retrieved at 11/8/2021, 10:50:15 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlow", "FrontpageSidebar", "ReportFlowNew"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -1757,7 +1757,7 @@
 			})), n.d(t, "j", (function() {
 				return W
 			})), n.d(t, "e", (function() {
-				return Y
+				return Q
 			})), n.d(t, "d", (function() {
 				return V
 			})), n.d(t, "g", (function() {
@@ -1864,7 +1864,7 @@
 									name: e
 								});
 								t && Object(k.j)(t) && (y[e] = n[e])
-							} Object.keys(y).length && r(Q(y)), r(Object(u.e)(o)), r(B({
+							} Object.keys(y).length && r(Y(y)), r(Object(u.e)(o)), r(B({
 							subredditId: e,
 							styles: {
 								...d,
@@ -1905,7 +1905,7 @@
 						subredditId: e,
 						...s.error
 					}))
-				}, z = Object(d.a)(A.d), Y = e => async (t, n, o) => {
+				}, z = Object(d.a)(A.d), Q = e => async (t, n, o) => {
 					const r = n(),
 						s = r.structuredStyles.models[e] || {},
 						i = Object(N.X)(r);
@@ -1948,7 +1948,7 @@
 							error: l.error
 						}))
 					})(e)(t, n, o), Object(y.g)(e, !1)(t, n, o)
-				}, Q = Object(d.a)(A.c), V = e => async (t, n, o) => {
+				}, Y = Object(d.a)(A.c), V = e => async (t, n, o) => {
 					const r = M(e),
 						s = n();
 					for (const e in r)
@@ -1964,7 +1964,7 @@
 									name: e
 								});
 								n && t(Object(p.h)(n))
-							} t(Q(r))
+							} t(Y(r))
 				}, X = Object(d.a)(A.f), J = (e, t, n) => async (o, r, s) => {
 					const i = r(),
 						a = n || i.structuredStyles.isEditing,
@@ -1980,7 +1980,7 @@
 						const n = await Object(p.g)(r(), c, t, k.a.StructuredStyles);
 						if (n) {
 							const t = n.url;
-							o(Object(p.j)(n)), o(Q({
+							o(Object(p.j)(n)), o(Y({
 								[e]: t
 							}))
 						}
@@ -2029,7 +2029,7 @@
 					}) ? t(Object(m.i)(C.a.BLADE_UNSAVED_CHANGES)) : t(re()))
 				}, ie = e => async (t, n) => {
 					const o = n();
-					Object(P.i)(o) || t(Object(N.X)(o) ? Object(m.i)(C.a.BLADE_NIGHTMODE) : Y(e))
+					Object(P.i)(o) || t(Object(N.X)(o) ? Object(m.i)(C.a.BLADE_NIGHTMODE) : Q(e))
 				}, ae = Object(d.a)(A.i), le = Object(d.a)(A.h), ce = Object(d.a)(A.g), de = (e, t) => async (n, o, {
 					gqlContext: r,
 					apiContext: s
@@ -2853,15 +2853,15 @@
 				G = n("./src/reddit/models/WhitelistAndBlocked.ts"),
 				W = n("./src/reddit/icons/svgs/ProfileSlashed/index.tsx"),
 				z = n("./src/reddit/components/ReportFlow/FinalPage/index.m.less"),
-				Y = n.n(z);
-			const Q = d.a.wrapped(f.a, "blockUserHolder", Y.a),
-				V = d.a.wrapped(W.a, "BlockUserIcon", Y.a),
-				X = d.a.div("BlockUserHeader", Y.a),
-				J = d.a.div("OptionHolder", Y.a),
-				Z = d.a.div("OptionHeader", Y.a),
-				$ = d.a.div("OptionDescription", Y.a),
-				ee = d.a.a("Link", Y.a),
-				te = d.a.wrapped(f.a, "footer", Y.a),
+				Q = n.n(z);
+			const Y = d.a.wrapped(f.a, "blockUserHolder", Q.a),
+				V = d.a.wrapped(W.a, "BlockUserIcon", Q.a),
+				X = d.a.div("BlockUserHeader", Q.a),
+				J = d.a.div("OptionHolder", Q.a),
+				Z = d.a.div("OptionHeader", Q.a),
+				$ = d.a.div("OptionDescription", Q.a),
+				ee = d.a.a("Link", Q.a),
+				te = d.a.wrapped(f.a, "footer", Q.a),
 				ne = "https://www.reddithelp.com/en/categories/rules-reporting/account-and-community-restrictions/what-report-abuse",
 				oe = Object(a.c)({
 					blockUserPending: e => e.user.blocked.api,
@@ -2901,7 +2901,7 @@
 						const {
 							props: e
 						} = this, t = this.getBlockUserHeaderText();
-						return s.a.createElement(Q, {
+						return s.a.createElement(Y, {
 							onClick: () => this.onBlockAuthor(e.authorName)
 						}, s.a.createElement(V, null), s.a.createElement("div", null, s.a.createElement(X, null, t), s.a.createElement($, null, o.fbt._("You won't see posts or comments from {username}. You can change this later in your preference.", [o.fbt._param("username", e.authorName)], {
 							hk: "2iUUlN"
@@ -3222,10 +3222,10 @@
 				Ge = n("./src/reddit/selectors/commentSelector.ts"),
 				We = n("./src/reddit/selectors/experiments/crisisTextLine.ts"),
 				ze = n("./src/reddit/selectors/posts.ts"),
-				Ye = n("./src/reddit/components/ReportFlow/_ReportFlow.m.less"),
-				Qe = n.n(Ye);
-			const Ve = d.a.div("CloseWrapper", Qe.a),
-				Xe = d.a.wrapped(De.a, "Close", Qe.a),
+				Qe = n("./src/reddit/components/ReportFlow/_ReportFlow.m.less"),
+				Ye = n.n(Qe);
+			const Ve = d.a.div("CloseWrapper", Ye.a),
+				Xe = d.a.wrapped(De.a, "Close", Ye.a),
 				Je = Object(a.c)({
 					comment: (e, {
 						commentId: t
@@ -3400,7 +3400,7 @@
 				}
 				render() {
 					return s.a.createElement("div", {
-						className: Qe.a.Wrapper
+						className: Ye.a.Wrapper
 					}, this.getContent())
 				}
 			}
@@ -5449,9 +5449,9 @@
 			})), n.d(t, "A", (function() {
 				return z
 			})), n.d(t, "h", (function() {
-				return Y
-			})), n.d(t, "b", (function() {
 				return Q
+			})), n.d(t, "b", (function() {
+				return Y
 			})), n.d(t, "r", (function() {
 				return X
 			})), n.d(t, "q", (function() {
@@ -5748,7 +5748,7 @@
 						action: Object(f.getToggleAction)(t)
 					})
 				},
-				Y = (e, t, n) => {
+				Q = (e, t, n) => {
 					Object(m.a)({
 						...h(e),
 						...M(e, t),
@@ -5756,7 +5756,7 @@
 						action: n ? o.c.ENABLE : o.c.DISABLE
 					})
 				},
-				Q = e => {
+				Y = e => {
 					Object(m.a)({
 						...h(e),
 						noun: "create_community",
@@ -6679,33 +6679,33 @@
 				u = e => {
 					const t = Object(i.c)(e, {
 						experimentEligibilitySelector: i.a,
-						experimentName: s.Od
+						experimentName: s.Pd
 					});
-					return t === s.Pd.UIChangesOnly || t === s.Pd.RedditRecommendation || t === s.Pd.OpenAI || t === s.Pd.FilteredOpenAI
+					return t === s.Qd.UIChangesOnly || t === s.Qd.RedditRecommendation || t === s.Qd.OpenAI || t === s.Qd.FilteredOpenAI
 				},
 				p = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: i.a,
-						experimentName: s.Od
-					}) === s.Pd.UIChangesOnly
+						experimentName: s.Pd
+					}) === s.Qd.UIChangesOnly
 				},
 				m = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: i.a,
-						experimentName: s.Od
-					}) === s.Pd.RedditRecommendation
+						experimentName: s.Pd
+					}) === s.Qd.RedditRecommendation
 				},
 				f = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: i.a,
-						experimentName: s.Od
-					}) === s.Pd.OpenAI
+						experimentName: s.Pd
+					}) === s.Qd.OpenAI
 				},
 				_ = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: i.a,
-						experimentName: s.Od
-					}) === s.Pd.FilteredOpenAI
+						experimentName: s.Pd
+					}) === s.Qd.FilteredOpenAI
 				},
 				b = e => e.creations.subredditRec.api.pending,
 				h = e => e.creations.subredditRec.api.error,
@@ -6780,9 +6780,9 @@
 					experimentName: r.Ub,
 					experimentEligibilitySelector: e => l(e, t)
 				}), e => e),
-				d = e => e === r.Oe.NoCommunityWidgets,
-				u = e => e === r.Oe.NoRulesModerators,
-				p = e => e === r.Oe.RelatedPostsDu
+				d = e => e === r.Pe.NoCommunityWidgets,
+				u = e => e === r.Pe.NoRulesModerators,
+				p = e => e === r.Pe.RelatedPostsDu
 		},
 		"./src/reddit/selectors/tooltip.ts": function(e, t, n) {
 			"use strict";
@@ -6811,4 +6811,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.03b593a5970d91b69223.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.69385d09b9404aa9e1f6.js.map
