@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.b63c72ed60573dad0232.js
-// Retrieved at 11/4/2021, 7:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.6364e97a50e8bc15423d.js
+// Retrieved at 11/8/2021, 10:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton", "FrontpageSidebar"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, n) {
@@ -22505,56 +22505,60 @@
 		},
 		"./src/reddit/helpers/trackers/predictions.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "q", (function() {
+			n.d(t, "r", (function() {
 				return i
-			})), n.d(t, "r", (function() {
-				return a
 			})), n.d(t, "s", (function() {
+				return a
+			})), n.d(t, "t", (function() {
 				return c
-			})), n.d(t, "m", (function() {
-				return d
-			})), n.d(t, "v", (function() {
-				return l
-			})), n.d(t, "o", (function() {
-				return u
-			})), n.d(t, "p", (function() {
-				return m
 			})), n.d(t, "n", (function() {
+				return d
+			})), n.d(t, "w", (function() {
+				return l
+			})), n.d(t, "p", (function() {
+				return u
+			})), n.d(t, "q", (function() {
+				return m
+			})), n.d(t, "o", (function() {
 				return p
 			})), n.d(t, "a", (function() {
 				return h
-			})), n.d(t, "u", (function() {
+			})), n.d(t, "v", (function() {
 				return b
 			})), n.d(t, "f", (function() {
 				return f
-			})), n.d(t, "x", (function() {
+			})), n.d(t, "z", (function() {
 				return g
-			})), n.d(t, "l", (function() {
+			})), n.d(t, "m", (function() {
 				return E
 			})), n.d(t, "h", (function() {
 				return x
-			})), n.d(t, "y", (function() {
+			})), n.d(t, "A", (function() {
 				return C
-			})), n.d(t, "w", (function() {
+			})), n.d(t, "y", (function() {
 				return v
-			})), n.d(t, "d", (function() {
-				return y
-			})), n.d(t, "j", (function() {
-				return O
-			})), n.d(t, "c", (function() {
-				return _
-			})), n.d(t, "g", (function() {
-				return k
-			})), n.d(t, "b", (function() {
-				return S
 			})), n.d(t, "k", (function() {
+				return y
+			})), n.d(t, "x", (function() {
+				return O
+			})), n.d(t, "d", (function() {
+				return _
+			})), n.d(t, "j", (function() {
+				return k
+			})), n.d(t, "c", (function() {
+				return S
+			})), n.d(t, "g", (function() {
 				return j
-			})), n.d(t, "i", (function() {
+			})), n.d(t, "b", (function() {
 				return T
-			})), n.d(t, "t", (function() {
+			})), n.d(t, "l", (function() {
 				return w
-			})), n.d(t, "e", (function() {
+			})), n.d(t, "i", (function() {
 				return I
+			})), n.d(t, "u", (function() {
+				return P
+			})), n.d(t, "e", (function() {
+				return N
 			}));
 			var o = n("./src/reddit/models/Prediction/index.ts"),
 				s = n("./src/reddit/selectors/telemetry.ts");
@@ -22702,22 +22706,41 @@
 					action: "view",
 					noun: "screen",
 					actionInfo: {
-						pageType: "mod_tool_predict"
+						pageType: "all_time_community_predictors",
+						reason: "predictions_tab"
 					}
 				}),
 				y = () => e => ({
+					...Object(s.defaults)(e),
+					source: "predictions",
+					action: "click",
+					noun: "see_all",
+					actionInfo: {
+						pageType: "all_time_community_predictors"
+					}
+				}),
+				O = () => e => ({
+					...Object(s.defaults)(e),
+					source: "global",
+					action: "view",
+					noun: "screen",
+					actionInfo: {
+						pageType: "mod_tool_predict"
+					}
+				}),
+				_ = () => e => ({
 					...Object(s.defaults)(e),
 					source: "mod_tool_predict",
 					action: "click",
 					noun: "end_tournament"
 				}),
-				O = () => e => ({
+				k = () => e => ({
 					...Object(s.defaults)(e),
 					source: "mod_tool_predict",
 					action: "click",
 					noun: "rename_tournament"
 				}),
-				_ = e => t => ({
+				S = e => t => ({
 					...Object(s.defaults)(t),
 					source: "mod_tool_predict",
 					action: "click",
@@ -22731,38 +22754,38 @@
 					},
 					subreddit: Object(s.subreddit)(t)
 				}),
-				k = () => e => ({
+				j = () => e => ({
 					...Object(s.defaults)(e),
 					source: "predictions",
 					action: "click",
 					noun: "next"
 				}),
-				S = () => e => ({
+				T = () => e => ({
 					...Object(s.defaults)(e),
 					source: "predictions",
 					action: "click",
 					noun: "add_more"
 				}),
-				j = () => e => ({
+				w = () => e => ({
 					...Object(s.defaults)(e),
 					source: "predictions",
 					action: "click",
 					noun: "start_tournament"
 				}),
-				T = () => e => ({
+				I = () => e => ({
 					...Object(s.defaults)(e),
 					source: "menu_links_bar",
 					action: "click",
 					noun: "predictions_tab"
 				}),
-				w = () => e => ({
+				P = () => e => ({
 					...Object(s.defaults)(e),
 					source: "predictions_tab",
 					action: "view",
 					noun: "predictions_how_it_works",
 					subreddit: Object(s.subreddit)(e)
 				}),
-				I = () => e => ({
+				N = () => e => ({
 					...Object(s.defaults)(e),
 					source: "predictions_how_it_works",
 					action: "click",
@@ -26797,7 +26820,7 @@
 						}),
 						primaryButtonLoading: i,
 						onPrimaryAction: async () => {
-							n(Object(dn.k)()), c(!0), t(Object(an.b)({
+							n(Object(dn.l)()), c(!0), t(Object(an.b)({
 								prediction: {
 									formData: d,
 									formState: l
@@ -29089,7 +29112,7 @@
 					c(Object(a.k)({
 						oldType: n,
 						type: me.a.Prediction
-					})), l(dn.r)
+					})), l(dn.s)
 				}, [c, n, l]);
 				return Object(o.useEffect)(() => {
 					m === h.wb && f()
@@ -29101,7 +29124,7 @@
 						c(Object(a.k)({
 							oldType: n,
 							type: me.a.GA
-						})), l(dn.q)
+						})), l(dn.r)
 					},
 					title: d.fbt._("Poll", null, {
 						hk: "2uKNlH"
@@ -29124,8 +29147,8 @@
 					className: xc.a.education
 				}, s.a.createElement(dc.a, {
 					isTokens: e,
-					onClose: () => l(dn.m),
-					onView: () => l(dn.s),
+					onClose: () => l(dn.n),
+					onView: () => l(dn.t),
 					storageKey: cc.a.creation
 				})))
 			}
@@ -31794,4 +31817,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.b63c72ed60573dad0232.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.6364e97a50e8bc15423d.js.map

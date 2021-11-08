@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index.5cb122052e95ffede3bf.js
-// Retrieved at 11/4/2021, 4:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index.751d8c06d9f2762ff569.js
+// Retrieved at 11/8/2021, 10:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index"], {
 		"./src/reddit/components/Econ/Audio/MuteIcon.tsx": function(e, t, n) {
@@ -422,7 +422,7 @@
 							hk: "22UWEr"
 						})), void g(null);
 						if (!m || !P) throw new Error("Invalid arguments, optionId and pollId must be strings");
-						x(!0), d(Object(D.p)({
+						x(!0), d(Object(D.q)({
 							pollId: m,
 							selectedNumberTokens: t.amount
 						}));
@@ -943,4 +943,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.5cb122052e95ffede3bf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.751d8c06d9f2762ff569.js.map
