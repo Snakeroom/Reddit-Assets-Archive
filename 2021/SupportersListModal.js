@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SupportersListModal.941eec8a086fbfc29da0.js
-// Retrieved at 11/4/2021, 4:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SupportersListModal.8d4c55a57fbd41eff115.js
+// Retrieved at 11/9/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SupportersListModal"], {
 		"./src/reddit/components/Econ/Common/ModalCloseButton/index.m.less": function(e, t, s) {
@@ -119,12 +119,12 @@
 						score: u
 					}),
 					N = !!(null === (t = null == b ? void 0 : b.profile) || void 0 === t ? void 0 : t.isNsfw),
-					_ = Object(a.c)(b),
-					f = Object(a.a)(u),
+					f = Object(a.c)(b),
+					_ = Object(a.a)(u),
 					S = n.a.createElement(p, {
 						userName: x,
 						isNsfw: N,
-						iconUrl: _
+						iconUrl: f
 					});
 				return n.a.createElement("div", {
 					className: Object(o.a)(r, m.a.container)
@@ -138,7 +138,7 @@
 					className: m.a.user
 				}, S), n.a.createElement("div", {
 					className: m.a.counter
-				}, n.a.createElement(f, {
+				}, n.a.createElement(_, {
 					className: m.a.powerupIcon
 				}), u))
 			}
@@ -179,11 +179,11 @@
 				}
 			});
 
-			function _(e, t) {
+			function f(e, t) {
 				const s = t || m;
 				return e.slice(0, s).map(N)
 			}
-			const f = () => ({
+			const _ = () => ({
 					width: p,
 					height: Object(a.spring)(0)
 				}),
@@ -195,7 +195,7 @@
 			class h extends o.a.Component {
 				constructor(e) {
 					super(e), this.state = {
-						items: _(e.supporters, e.maxSupporters)
+						items: f(e.supporters, e.maxSupporters)
 					}
 				}
 				render() {
@@ -207,7 +207,7 @@
 					return o.a.createElement(o.a.Fragment, null, o.a.createElement("div", {
 						className: Object(r.a)(l.a.container, e)
 					}, o.a.createElement(a.TransitionMotion, {
-						willLeave: f,
+						willLeave: _,
 						willEnter: S,
 						styles: this.state.items.map(e => ({
 							...e,
@@ -238,7 +238,7 @@
 				}
 				static getDerivedStateFromProps(e) {
 					return {
-						items: _(e.supporters, e.maxSupporters)
+						items: f(e.supporters, e.maxSupporters)
 					}
 				}
 			}
@@ -264,8 +264,6 @@
 				subheading: "_1akYW4Hm06hc_CYf8ti4ch",
 				supportersContainer: "_2nsnGlUWjPDLPfUYMrKQIE",
 				footer: "_1Db5CXe1DecnWF6czNCFXp",
-				scrollGradient: "IXi_z31DcLZ0h0F211hHJ",
-				gradientVisible: "_3tGFcEPAbYK5gHd5pS-cZK",
 				ctaButton: "_1ytVq8M9vMl0g5eS_HICcx",
 				Icon: "_3lJhvYnKhKB3EvB1ZTTSgm",
 				icon: "_3lJhvYnKhKB3EvB1ZTTSgm",
@@ -281,43 +279,42 @@
 				n = s.n(r),
 				o = s("./node_modules/react-redux/es/index.js"),
 				a = s("./src/higherOrderComponents/asModal/index.tsx"),
-				c = s("./src/lib/classNames/index.ts"),
-				i = s("./src/reddit/actions/gold/powerups.ts"),
-				l = s("./src/reddit/actions/modal.ts"),
-				d = s("./src/reddit/actions/toaster.ts"),
-				u = s("./src/reddit/components/Econ/Common/ModalCloseButton/index.tsx"),
-				m = s("./src/reddit/components/Econ/PowerupsMarketingModal/async.tsx"),
-				p = s("./src/reddit/components/PowerupsCtaButton/index.tsx"),
-				b = s("./src/reddit/components/PowerupsSidebar/Supporters/index.tsx"),
-				x = s("./src/reddit/components/PowerupsSidebar/common/utils.ts"),
-				N = s("./src/reddit/components/PowerupsSidebar/SupportersListModal/SupporterListItem/index.m.less"),
-				_ = s.n(N),
+				c = s("./src/reddit/actions/gold/powerups.ts"),
+				i = s("./src/reddit/actions/modal.ts"),
+				l = s("./src/reddit/actions/toaster.ts"),
+				d = s("./src/reddit/components/Econ/Common/ModalCloseButton/index.tsx"),
+				u = s("./src/reddit/components/Econ/PowerupsMarketingModal/async.tsx"),
+				m = s("./src/reddit/components/PowerupsCtaButton/index.tsx"),
+				p = s("./src/reddit/components/PowerupsSidebar/Supporters/index.tsx"),
+				b = s("./src/reddit/components/PowerupsSidebar/common/utils.ts"),
+				x = s("./src/reddit/components/PowerupsSidebar/SupportersListModal/SupporterListItem/index.m.less"),
+				N = s.n(x),
 				f = s("./src/reddit/components/UserIcon/index.tsx"),
-				S = s("./src/reddit/controls/InternalLink/index.tsx"),
-				h = s("./src/reddit/helpers/trackers/powerups.ts"),
-				E = s("./src/reddit/hooks/useTracking.ts");
+				_ = s("./src/reddit/controls/InternalLink/index.tsx"),
+				S = s("./src/reddit/helpers/trackers/powerups.ts"),
+				h = s("./src/reddit/hooks/useTracking.ts");
 			const {
-				fbt: g
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), j = e => n.a.createElement(n.a.Fragment, null, n.a.createElement("div", {
-				className: _.a.supporterImageContainer
+				fbt: E
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), g = e => n.a.createElement(n.a.Fragment, null, n.a.createElement("div", {
+				className: N.a.supporterImageContainer
 			}, n.a.createElement(f.a, {
 				userName: e.name,
 				iconUrl: e.iconUrl,
 				isNSFW: e.isNsfw,
-				className: _.a.supporterImage
+				className: N.a.supporterImage
 			})), n.a.createElement("div", {
-				className: _.a.supporterName
-			}, e.name, " ", e.isCurrentUser && g._("(you)", null, {
+				className: N.a.supporterName
+			}, e.name, " ", e.isCurrentUser && E._("(you)", null, {
 				hk: "3foyZr"
-			}))), v = e => e.isAnonymousUser ? n.a.createElement("div", {
+			}))), j = e => e.isAnonymousUser ? n.a.createElement("div", {
 				className: e.className
-			}, e.children) : n.a.createElement(S.a, {
+			}, e.children) : n.a.createElement(_.a, {
 				className: e.className,
 				to: `/user/${e.name}/`,
 				onClick: e.onClick
-			}, e.children), w = e => {
+			}, e.children), v = e => {
 				var t;
-				const s = Object(E.a)(),
+				const s = Object(h.a)(),
 					{
 						supporter: r,
 						currentUser: o,
@@ -328,38 +325,39 @@
 					l = !!o && o.id === (null == c ? void 0 : c.id),
 					d = r.score,
 					u = i ? Math.min(a, 999) : null,
-					m = Object(x.b)({
+					m = Object(b.b)({
 						displayName: i,
 						score: d
 					}),
-					p = Object(x.c)(c),
-					b = Boolean(null === (t = null == c ? void 0 : c.profile) || void 0 === t ? void 0 : t.isNsfw),
-					N = Object(x.a)(d);
+					p = Object(b.c)(c),
+					x = Boolean(null === (t = null == c ? void 0 : c.profile) || void 0 === t ? void 0 : t.isNsfw),
+					f = Object(b.a)(d);
 				return n.a.createElement("div", {
-					className: _.a.supporter
+					className: N.a.supporter
 				}, n.a.createElement("div", {
-					className: _.a.supporterRank
-				}, u), n.a.createElement(v, {
-					className: _.a.user,
+					className: N.a.supporterRank
+				}, u), n.a.createElement(j, {
+					className: N.a.user,
 					name: m,
 					isAnonymousUser: !c,
 					onClick: () => {
-						c && s(Object(h.j)(c.id, c.displayName))
+						c && s(Object(S.j)(c.id, c.displayName))
 					}
-				}, n.a.createElement(j, {
+				}, n.a.createElement(g, {
 					name: m,
 					iconUrl: p,
-					isNsfw: b,
+					isNsfw: x,
 					isCurrentUser: l
-				})), n.a.createElement(N, {
-					className: _.a.powerupIcon
+				})), n.a.createElement(f, {
+					className: N.a.powerupIcon
 				}), n.a.createElement("div", {
-					className: _.a.score
+					className: N.a.score
 				}, d))
 			};
-			var C = s("./src/reddit/constants/modals.ts"),
-				O = s("./src/reddit/hooks/useScrollGradient.ts"),
-				k = s("./src/reddit/models/Toast/index.ts"),
+			var w = s("./src/reddit/components/ScrollGradient/index.tsx"),
+				C = s("./src/reddit/constants/modals.ts"),
+				k = s("./src/reddit/hooks/useScrollGradient.ts"),
+				O = s("./src/reddit/models/Toast/index.ts"),
 				P = s("./src/reddit/selectors/gold/powerups/index.ts"),
 				y = s("./src/reddit/selectors/platform.ts"),
 				I = s("./src/reddit/selectors/user.ts"),
@@ -369,7 +367,7 @@
 				fbt: B
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), L = e => ({
 				data: e,
-				key: Object(b.b)(e)
+				key: Object(p.b)(e)
 			});
 			t.default = Object(a.a)(() => {
 				const e = Object(o.e)(I.k),
@@ -377,34 +375,34 @@
 					s = Object(o.e)(e => t ? Object(P.n)(e, {
 						subredditId: t.id
 					}) : []),
-					[a, b] = Object(r.useState)([]);
+					[a, p] = Object(r.useState)([]);
 				Object(r.useEffect)(() => {
 					var e;
-					b(null !== (e = null == s ? void 0 : s.map(L)) && void 0 !== e ? e : [])
-				}, [s, b]);
-				const x = Object(o.d)(),
-					N = Object(E.a)();
+					p(null !== (e = null == s ? void 0 : s.map(L)) && void 0 !== e ? e : [])
+				}, [s, p]);
+				const b = Object(o.d)(),
+					x = Object(h.a)();
 				Object(r.useEffect)(() => {
-					N(Object(h.f)())
-				}, [N]), Object(r.useEffect)(() => {
-					Object(m.a)()
+					x(Object(S.f)())
+				}, [x]), Object(r.useEffect)(() => {
+					Object(u.a)()
 				}, []);
-				const _ = () => {
-						x(Object(l.g)(C.a.ECON_SUPPORTERS_LIST))
+				const N = () => {
+						b(Object(i.g)(C.a.ECON_SUPPORTERS_LIST))
 					},
 					{
 						container: f,
-						isScrollGradientVisible: S,
-						calculateGradientVisibility: g
-					} = Object(O.a)(!0);
+						isScrollGradientVisible: _,
+						calculateGradientVisibility: E
+					} = Object(k.a)(!0);
 				return Object(r.useEffect)(() => {
-					g()
+					E()
 				}), t ? n.a.createElement("div", {
 					className: U.a.container
 				}, n.a.createElement("div", {
 					className: U.a.header
-				}, n.a.createElement(u.a, {
-					onClick: _
+				}, n.a.createElement(d.a, {
+					onClick: N
 				}), n.a.createElement("h3", {
 					className: U.a.heading
 				}, B._("Community Heroes", null, {
@@ -413,31 +411,30 @@
 					className: U.a.subheading
 				}, t.displayText)), n.a.createElement("div", {
 					className: U.a.supportersContainer,
-					onScroll: g,
+					onScroll: E,
 					ref: f
-				}, a.map((t, s) => n.a.createElement(w, {
+				}, a.map((t, s) => n.a.createElement(v, {
 					key: t.key,
 					supporter: t.data,
 					currentUser: e,
 					rank: s + 1
 				}))), n.a.createElement("div", {
 					className: U.a.footer
-				}, n.a.createElement("div", {
-					className: Object(c.a)(U.a.scrollGradient, {
-						[U.a.gradientVisible]: S
-					})
-				}), n.a.createElement(p.a, {
+				}, n.a.createElement(w.a, {
+					className: U.a.scrollGradient,
+					isVisible: _
+				}), n.a.createElement(m.a, {
 					className: U.a.ctaButton,
 					onClick: () => {
-						N(Object(h.C)()), x(Object(i.g)("supporters_list_modal"))
+						x(Object(S.C)()), b(Object(c.g)("supporters_list_modal"))
 					}
-				}))) : (x(Object(d.f)({
-					kind: k.b.Error,
-					duration: d.a,
+				}))) : (b(Object(l.f)({
+					kind: O.b.Error,
+					duration: l.a,
 					text: B._("Something went wrong", null, {
 						hk: "1IJNeH"
 					})
-				})), _(), null)
+				})), N(), null)
 			})
 		},
 		"./src/reddit/components/PowerupsSidebar/common/utils.ts": function(e, t, s) {
@@ -477,6 +474,31 @@
 				hk: "8kyEI"
 			}).toString()
 		},
+		"./src/reddit/components/ScrollGradient/index.m.less": function(e, t, s) {
+			e.exports = {
+				gradient: "_3-kakYRJykUyPafukcDzry",
+				visible: "_24Ju7hkI6TbfWdJ0X4gSqu"
+			}
+		},
+		"./src/reddit/components/ScrollGradient/index.tsx": function(e, t, s) {
+			"use strict";
+			s.d(t, "a", (function() {
+				return i
+			}));
+			var r = s("./src/lib/classNames/index.ts"),
+				n = s("./node_modules/react/index.js"),
+				o = s.n(n),
+				a = s("./src/reddit/components/ScrollGradient/index.m.less"),
+				c = s.n(a);
+			const i = ({
+				className: e,
+				isVisible: t
+			}) => o.a.createElement("div", {
+				className: Object(r.a)(c.a.gradient, e, {
+					[c.a.visible]: t
+				})
+			})
+		},
 		"./src/reddit/hooks/useScrollGradient.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
@@ -501,4 +523,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SupportersListModal.941eec8a086fbfc29da0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SupportersListModal.8d4c55a57fbd41eff115.js.map
