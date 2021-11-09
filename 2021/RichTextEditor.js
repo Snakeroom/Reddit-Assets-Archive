@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.caa285460d374e89acc8.js
-// Retrieved at 11/9/2021, 3:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.5bd5582711ed37940581.js
+// Retrieved at 11/9/2021, 6:20:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton", "reddit-components-RichTextEditor-Toolbar-GifButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, o) {
@@ -2509,8 +2509,8 @@
 						})
 					},
 					isTypingIndicatorsUIEnabled: X.b,
-					isTypingIndicatorsReadTestEnabled: X.d,
-					isTypingIndicatorsWriteTestEnabled: X.e
+					isTypingIndicatorsReadTestEnabled: (e, t) => !!t.isTopLevelComment && Object(X.d)(e),
+					isTypingIndicatorsWriteTestEnabled: (e, t) => !!t.isTopLevelComment && Object(X.e)(e)
 				}),
 				pe = (e, t) => ({
 					cancelModalToggled: () => e(Object(M.i)(Object(F.a)(t.draftKey)))
@@ -5060,4 +5060,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.caa285460d374e89acc8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.5bd5582711ed37940581.js.map
