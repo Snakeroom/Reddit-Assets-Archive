@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.dbc0b65ee154be092f38.js
-// Retrieved at 11/9/2021, 1:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.db14837e97c3825722f3.js
+// Retrieved at 11/9/2021, 2:00:04 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var n, a, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) a = r[l], Object.prototype.hasOwnProperty.call(d, a) && d[a] && b.push(d[a][0]), d[a] = 0;
@@ -1325,7 +1325,7 @@
 						SubredditWelcomeMessageModal: "c6c5b92caf12a13c30b5",
 						"Frontpage~ModListing": "78618dd2f65ef2790147",
 						"Frontpage~FrontpageSidebar": "c2c7a019277caaf57375",
-						Frontpage: "c6e1b9f0b024074ef791",
+						Frontpage: "4f35bc0896987c229c5e",
 						Topic: "60feb4252f7e46d36974",
 						CommunityAwards: "6a7b67bf65757c7014f9",
 						CommunityPointsLearnMore: "77125fc9ad43477c1a05",
@@ -1359,7 +1359,7 @@
 						NotificationUnit: "f4e5ab4d2c97a020a79c",
 						NotificationsInbox: "cfd3063197e374b8b1ab",
 						NotificationsPrePromptLoader: "463f4b278336cd387262",
-						OnboardingModal: "5ee92264262f96649ce9",
+						OnboardingModal: "df0518dc34d9d296bd48",
 						PostFlowUpsellModal: "03a3ce68e1614318c543",
 						PowerupSuccessModal: "b7b3810606ba83326cc3",
 						Powerups: "671049861bdfb55f6d6c",
@@ -1655,4 +1655,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.dbc0b65ee154be092f38.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.db14837e97c3825722f3.js.map
