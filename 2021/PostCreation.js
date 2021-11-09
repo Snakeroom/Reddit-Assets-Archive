@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.822ae948a30660f2744f.js
-// Retrieved at 11/9/2021, 3:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.71621efdce22363c4a2e.js
+// Retrieved at 11/9/2021, 5:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton", "FrontpageSidebar"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, n) {
@@ -29677,7 +29677,8 @@
 					postRequirements: T.pb,
 					rteState: T.gb,
 					shouldAllowBodyText: T.ib,
-					subreddit: _.r
+					subreddit: _.r,
+					isPredictionCreationTabEnabled: pn.q
 				}),
 				Id = Object(r.b)(wd, (e, {
 					onChange: t,
@@ -29696,7 +29697,10 @@
 					},
 					onToggleEditorMode: (t, n) => e(Ra.d(g.h.POST_CREATION, t, n)),
 					onTrackToolbarClick: (t, n) => e((e, o) => k.E(o(), t, n)),
-					onUpdatePoll: t => e(Object(Ma.b)(t))
+					onUpdatePoll: t => e(Object(Ma.b)(t)),
+					setSubmissionType: t => e(a.g({
+						submissionType: t
+					}))
 				}));
 			class Pd extends s.a.Component {
 				constructor() {
@@ -29707,6 +29711,14 @@
 					}, this.onToggleEditorMode = async (e, t) => {
 						await this.props.onToggleEditorMode(e, t), e === g.i.RICH_TEXT ? this.rteRef && this.rteRef.focus() : this.markdownEditorRef && this.markdownEditorRef.focus()
 					}, this.setRteRef = e => this.rteRef = e, this.setMarkdownEditorRef = e => this.markdownEditorRef = e
+				}
+				componentDidMount() {
+					const {
+						isPredictionCreationTabEnabled: e,
+						pageLayer: t,
+						setSubmissionType: n
+					} = this.props;
+					e && (null == t ? void 0 : t.queryParams.type) === h.wb && n(h.Ub.PREDICTION)
 				}
 				renderEditor() {
 					const {
@@ -30164,7 +30176,7 @@
 							if (!t) return;
 							const o = Object(gl.a)(t.url, n);
 							t.url !== o && e(Object(m.c)(o))
-						})(e, t.pageLayer, ["url", "media", "onlyTitle", "text", "selftext"])
+						})(e, t.pageLayer, ["url", "media", "onlyTitle", "text", "selftext", "type"])
 					}
 				}));
 			class Sl extends s.a.PureComponent {
@@ -31921,4 +31933,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.822ae948a30660f2744f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.71621efdce22363c4a2e.js.map
