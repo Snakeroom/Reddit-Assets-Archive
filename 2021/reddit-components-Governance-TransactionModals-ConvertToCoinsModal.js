@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.2bf4dbafe342006356ff.js
-// Retrieved at 11/4/2021, 4:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.6b7b0e91e9004ff3686f.js
+// Retrieved at 11/9/2021, 12:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-ConvertToCoinsModal"], {
 		"./src/reddit/actions/gold/econPurchase.ts": function(e, t, n) {
@@ -45,11 +45,11 @@
 			"use strict";
 			n.d(t, "b", (function() {
 				return M
-			})), n.d(t, "j", (function() {
+			})), n.d(t, "k", (function() {
 				return N
-			})), n.d(t, "g", (function() {
+			})), n.d(t, "h", (function() {
 				return I
-			})), n.d(t, "f", (function() {
+			})), n.d(t, "g", (function() {
 				return k
 			})), n.d(t, "d", (function() {
 				return _
@@ -57,12 +57,14 @@
 				return z
 			})), n.d(t, "a", (function() {
 				return T
-			})), n.d(t, "h", (function() {
+			})), n.d(t, "i", (function() {
 				return F
 			})), n.d(t, "e", (function() {
 				return R
-			})), n.d(t, "i", (function() {
+			})), n.d(t, "j", (function() {
 				return V
+			})), n.d(t, "f", (function() {
+				return Q
 			}));
 			var r = n("./node_modules/fbt/lib/FbtPublic.js"),
 				a = n("./node_modules/lodash/omit.js"),
@@ -345,7 +347,7 @@
 					await t(Object(x.o)(!0)), t(B({
 						user: e
 					}))
-				}, V = Object(m.a)(b.ab)
+				}, V = Object(m.a)(b.ab), Q = () => async e => e(Object(j.h)(l.a.ECON_PREMIUM_FEEDBACK))
 		},
 		"./src/reddit/actions/gold/productOffers.ts": function(e, t, n) {
 			"use strict";
@@ -2211,4 +2213,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.2bf4dbafe342006356ff.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.6b7b0e91e9004ff3686f.js.map

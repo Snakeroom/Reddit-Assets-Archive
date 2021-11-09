@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.6a60ff925848cd8232bb.js
-// Retrieved at 11/4/2021, 4:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.89c4b8f35b5a2c268588.js
+// Retrieved at 11/9/2021, 12:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsPurchaseModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, r) {
@@ -441,7 +441,7 @@
 							t && t.type && ("paypal-finish.success.framedmodal" === t.type ? (b(), m && m.close()) : "paypal-finish.cancel.framedmodal" === t.type && m && m.close())
 						},
 						b = () => {
-							l(Object(_.h)({
+							l(Object(_.i)({
 								subredditId: i,
 								powerupsCount: a,
 								user: r,
@@ -452,7 +452,7 @@
 						onClick: async () => {
 							if (!c) return;
 							u(!0);
-							const e = await l(Object(_.g)(c, o, a, B.c.Powerups, i));
+							const e = await l(Object(_.h)(c, o, a, B.c.Powerups, i));
 							if (e) {
 								const {
 									url: t
@@ -623,7 +623,7 @@
 					} = e, m = Object(o.d)(), [p, b] = Object(n.useState)(!1), f = d || i;
 					return s.a.createElement(A.l, {
 						onClick: async () => {
-							l && c && (b(!0), await m(Object(_.j)(l, c, r, a, B.c.Powerups, u)), b(!1))
+							l && c && (b(!0), await m(Object(_.k)(l, c, r, a, B.c.Powerups, u)), b(!1))
 						},
 						className: t,
 						disabled: f || !l || p
@@ -1000,4 +1000,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.6a60ff925848cd8232bb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.89c4b8f35b5a2c268588.js.map

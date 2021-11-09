@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.7995b089421f3c74ed5a.js
-// Retrieved at 11/4/2021, 4:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.a8e0d14e3dd5f9305a5d.js
+// Retrieved at 11/9/2021, 12:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PremiumPurchaseModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, r) {
@@ -589,7 +589,7 @@
 						onClick: async () => {
 							if (!r) return;
 							l(!0);
-							const e = await o(Object(D.g)(r, !1, t, c));
+							const e = await o(Object(D.h)(r, !1, t, c));
 							(null == e ? void 0 : e.url) && m(e.url), l(!1)
 						},
 						className: e,
@@ -620,7 +620,7 @@
 						u = i || c;
 					return a.a.createElement(Y.t, {
 						onClick: () => {
-							o && r && l(Object(D.j)(o, r, t, n, d))
+							o && r && l(Object(D.k)(o, r, t, n, d))
 						},
 						className: e,
 						disabled: u || !o
@@ -1116,4 +1116,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.7995b089421f3c74ed5a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.a8e0d14e3dd5f9305a5d.js.map

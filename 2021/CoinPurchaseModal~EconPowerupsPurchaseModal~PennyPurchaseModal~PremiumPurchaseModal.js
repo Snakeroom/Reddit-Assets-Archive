@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinPurchaseModal~EconPowerupsPurchaseModal~PennyPurchaseModal~PremiumPurchaseModal.71571193e49ce3f1cd64.js
-// Retrieved at 11/8/2021, 7:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinPurchaseModal~EconPowerupsPurchaseModal~PennyPurchaseModal~PremiumPurchaseModal.e584f20b46bb581a57b7.js
+// Retrieved at 11/9/2021, 12:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinPurchaseModal~EconPowerupsPurchaseModal~PennyPurchaseModal~PremiumPurchaseModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, r) {
@@ -786,11 +786,11 @@
 			"use strict";
 			r.d(t, "b", (function() {
 				return w
-			})), r.d(t, "j", (function() {
+			})), r.d(t, "k", (function() {
 				return S
-			})), r.d(t, "g", (function() {
+			})), r.d(t, "h", (function() {
 				return k
-			})), r.d(t, "f", (function() {
+			})), r.d(t, "g", (function() {
 				return N
 			})), r.d(t, "d", (function() {
 				return T
@@ -798,12 +798,14 @@
 				return R
 			})), r.d(t, "a", (function() {
 				return q
-			})), r.d(t, "h", (function() {
+			})), r.d(t, "i", (function() {
 				return B
 			})), r.d(t, "e", (function() {
 				return W
-			})), r.d(t, "i", (function() {
+			})), r.d(t, "j", (function() {
 				return G
+			})), r.d(t, "f", (function() {
+				return Q
 			}));
 			var n = r("./node_modules/fbt/lib/FbtPublic.js"),
 				o = r("./node_modules/lodash/omit.js"),
@@ -1086,7 +1088,7 @@
 					await t(Object(E.o)(!0)), t(F({
 						user: e
 					}))
-				}, G = Object(p.a)(y.ab)
+				}, G = Object(p.a)(y.ab), Q = () => async e => e(Object(j.h)(d.a.ECON_PREMIUM_FEEDBACK))
 		},
 		"./src/reddit/components/CheckoutForm/index.m.less": function(e, t, r) {
 			e.exports = {
@@ -1958,4 +1960,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal~EconPowerupsPurchaseModal~PennyPurchaseModal~PremiumPurchaseModal.71571193e49ce3f1cd64.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal~EconPowerupsPurchaseModal~PennyPurchaseModal~PremiumPurchaseModal.e584f20b46bb581a57b7.js.map
