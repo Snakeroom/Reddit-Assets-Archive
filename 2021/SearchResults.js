@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.bb71958fce67d2eaa509.js
-// Retrieved at 11/9/2021, 3:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.0415f978f9f058ca2ca4.js
+// Retrieved at 11/9/2021, 6:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -6286,7 +6286,7 @@
 						largeSubredditIcon: !0,
 						linkUrl: `/r/${this.props.name}`,
 						subredditIcon: {
-							url: this.props.iconUrl
+							url: this.props.iconUrl || void 0
 						},
 						titleText: `r/${this.props.name}`,
 						primaryColor: this.props.primaryColor,
@@ -12135,8 +12135,8 @@
 			}) => e.tracking.viewportDataLoaded[t]
 		},
 		"./src/redditGQL/operations/SubredditGeoRecommendationViaFocusVertical.json": function(e) {
-			e.exports = JSON.parse('{"id":"5e5c77150e44"}')
+			e.exports = JSON.parse('{"id":"eb4503c11ddd"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.bb71958fce67d2eaa509.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.0415f978f9f058ca2ca4.js.map

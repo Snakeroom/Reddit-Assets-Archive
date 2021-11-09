@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlow.3a63dcde094db0b05898.js
-// Retrieved at 11/9/2021, 3:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlow.e8e754cce921e6feb5a6.js
+// Retrieved at 11/9/2021, 6:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlow", "FrontpageSidebar", "ReportFlowNew"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -5006,7 +5006,8 @@
 			"use strict";
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			t.a = e => {
-				const t = {
+				var t;
+				const n = {
 					menuPosition: e.menuPosition ? e.menuPosition.toLowerCase() : void 0,
 					bannerCommunityNameFormat: e.bannerCommunityNameFormat ? e.bannerCommunityNameFormat.toLowerCase() : void 0,
 					bannerShowCommunityIcon: e.bannerShowCommunityIcon ? e.bannerShowCommunityIcon.toLowerCase() : void 0,
@@ -5022,7 +5023,7 @@
 					backgroundImage: e.backgroundImage || void 0,
 					bannerBackgroundImage: e.bannerBackgroundImage || void 0,
 					bannerPositionedImage: e.bannerPositionedImage || void 0,
-					communityIcon: e.icon || void 0,
+					communityIcon: e.icon || (null === (t = e.legacyIcon) || void 0 === t ? void 0 : t.url) || void 0,
 					menuBackgroundImage: e.menuBackgroundImage || void 0,
 					postBackgroundImage: e.postBackgroundImage || void 0,
 					postDownvoteIconActive: e.postDownvoteIconActive || void 0,
@@ -5050,9 +5051,9 @@
 					sidebarWidgetBackgroundColor: e.sidebarWidgetBackgroundColor || void 0,
 					secondaryBannerPositionedImage: e.secondaryBannerPositionedImage || void 0
 				};
-				return Object.keys(t).forEach(e => {
-					void 0 === t[e] && delete t[e]
-				}), t
+				return Object.keys(n).forEach(e => {
+					void 0 === n[e] && delete n[e]
+				}), n
 			}
 		},
 		"./src/reddit/helpers/matchRedditUrls/index.ts": function(e, t, n) {
@@ -6810,4 +6811,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.3a63dcde094db0b05898.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.e8e754cce921e6feb5a6.js.map

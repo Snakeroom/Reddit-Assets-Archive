@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241.7936096ba8c1cfa57c93.js
-// Retrieved at 11/9/2021, 3:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241.72c0a52eafa8ebe64d29.js
+// Retrieved at 11/9/2021, 6:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241"], {
 		"./src/reddit/actions/authorFlair.ts": function(e, t, r) {
@@ -5400,6 +5400,7 @@
 			r.d(t, "b", (function() {
 				return M
 			}));
+			r("./node_modules/core-js/modules/web.dom.iterable.js");
 			var s = r("./src/lib/assertNever.ts"),
 				n = r("./src/lib/env/index.ts"),
 				i = r("./src/lib/sentry/index.ts"),
@@ -5547,10 +5548,13 @@
 					data: e.events.map(e => ({
 						allDay: e.isAllDay,
 						description: e.description.markdown,
-						endTime: e.endsAt,
+						descriptionHtml: e.description.html,
+						endTime: Math.round(Date.parse(e.endsAt) / 1e3),
 						location: e.location.markdown,
-						startTime: e.startsAt,
-						title: e.title.markdown
+						locationHtml: e.location.html,
+						startTime: Math.round(Date.parse(e.startsAt) / 1e3),
+						title: e.title.markdown,
+						titleHtml: e.title.html
 					})),
 					googleCalendarId: e.googleCalendarId,
 					moderator: null,
@@ -5561,20 +5565,23 @@
 					...F(e),
 					kind: h.i.CommunityList,
 					shortName: e.shortName,
-					data: e.communities.map(e => ({
-						name: e.name,
-						type: "subreddit",
-						id: e.id,
-						bannerBackgroundColor: e.styles.bannerBackgroundColor,
-						bannerBackgroundImage: e.styles.bannerBackgroundImage,
-						communityIcon: e.styles.icon,
-						displayText: e.name,
-						subscribers: e.subscribersCount,
-						iconUrl: e.styles.icon,
-						isSubscribed: e.isSubscribed,
-						primaryColor: e.styles.primaryColor,
-						isNSFW: e.isNsfw
-					}))
+					data: e.communities.map(e => {
+						var t;
+						return {
+							name: e.name,
+							type: "subreddit",
+							id: e.id,
+							bannerBackgroundColor: e.styles.bannerBackgroundColor,
+							bannerBackgroundImage: e.styles.bannerBackgroundImage,
+							communityIcon: e.styles.icon,
+							displayText: e.name,
+							subscribers: e.subscribersCount,
+							iconUrl: e.styles.icon || (null === (t = e.styles.legacyIcon) || void 0 === t ? void 0 : t.url) || null,
+							isSubscribed: e.isSubscribed,
+							primaryColor: e.styles.primaryColor,
+							isNSFW: e.isNsfw
+						}
+					})
 				}),
 				C = e => ({
 					...F(e),
@@ -5714,7 +5721,7 @@
 						structuredStyles: {},
 						subredditAboutInfo: {},
 						subredditLinks: {},
-						subredditPermissions: {},
+						subredditPermissions: void 0,
 						subredditRules: [],
 						subreddits: {},
 						subredditTopicLinks: void 0,
@@ -5830,7 +5837,7 @@
 							},
 							flairTemplate: T
 						}
-					}, D.subredditAboutInfo = Object(m.a)(p), p.modPermissions && (D.subredditPermissions = Object(g.a)(p.modPermissions)), p.welcomeMessage && (D.welcomeMessage = p.welcomeMessage), p.rules && (D.subredditRules = Object(I.a)(p.rules).rules), ((null == p ? void 0 : p.answerableQuestions) || p.contentRatingSurvey || p.communityProgressModule) && (D.questions = {
+					}, D.subredditAboutInfo = Object(m.a)(p), p.modPermissions && (D.subredditPermissions = Object.keys(p.modPermissions).length > 0 ? Object(g.a)(p.modPermissions) : void 0), p.welcomeMessage && (D.welcomeMessage = p.welcomeMessage), p.rules && (D.subredditRules = Object(I.a)(p.rules).rules), ((null == p ? void 0 : p.answerableQuestions) || p.contentRatingSurvey || p.communityProgressModule) && (D.questions = {
 						answerableQuestions: null == p ? void 0 : p.answerableQuestions,
 						contentRatingSurvey: null == p ? void 0 : p.contentRatingSurvey,
 						communityProgressModule: null == p ? void 0 : p.communityProgressModule
@@ -7600,7 +7607,7 @@
 				})
 		},
 		"./src/redditGQL/operations/AddPredictionDrafts.json": function(e) {
-			e.exports = JSON.parse('{"id":"f2c4f7004211"}')
+			e.exports = JSON.parse('{"id":"bfb235db94e8"}')
 		},
 		"./src/redditGQL/operations/CancelPrediction.json": function(e) {
 			e.exports = JSON.parse('{"id":"fac88c91fec8"}')
@@ -7615,7 +7622,7 @@
 			e.exports = JSON.parse('{"id":"e443629d50b0"}')
 		},
 		"./src/redditGQL/operations/CreatePredictionTournament.json": function(e) {
-			e.exports = JSON.parse('{"id":"8f67f3a95b01"}')
+			e.exports = JSON.parse('{"id":"6491762f5b86"}')
 		},
 		"./src/redditGQL/operations/CreateSubredditTags.json": function(e) {
 			e.exports = JSON.parse('{"id":"80c9a3cd96b8"}')
@@ -7627,7 +7634,7 @@
 			e.exports = JSON.parse('{"id":"059b6d024156"}')
 		},
 		"./src/redditGQL/operations/EndPredictionTournament.json": function(e) {
-			e.exports = JSON.parse('{"id":"739b96f8b89e"}')
+			e.exports = JSON.parse('{"id":"d98d0217c7b0"}')
 		},
 		"./src/redditGQL/operations/FetchContentControls.json": function(e) {
 			e.exports = JSON.parse('{"id":"90868f8cfd19"}')
@@ -7660,7 +7667,7 @@
 			e.exports = JSON.parse('{"id":"ba4eb4e2972f"}')
 		},
 		"./src/redditGQL/operations/GetTournaments.json": function(e) {
-			e.exports = JSON.parse('{"id":"d4bc3d409850"}')
+			e.exports = JSON.parse('{"id":"c4ca40b80f98"}')
 		},
 		"./src/redditGQL/operations/GetTournamentsBaseInfo.json": function(e) {
 			e.exports = JSON.parse('{"id":"cebfc8734cec"}')
@@ -7699,7 +7706,7 @@
 			e.exports = JSON.parse('{"id":"29aee4089528"}')
 		},
 		"./src/redditGQL/operations/SubredditPage.json": function(e) {
-			e.exports = JSON.parse('{"id":"7028744c2cf3"}')
+			e.exports = JSON.parse('{"id":"e29d9a429328"}')
 		},
 		"./src/redditGQL/operations/SubredditPageExtra.json": function(e) {
 			e.exports = JSON.parse('{"id":"925a39d18b3e"}')
@@ -7720,7 +7727,7 @@
 			e.exports = JSON.parse('{"id":"1cd60899cb27"}')
 		},
 		"./src/redditGQL/operations/TopAwardedPosts.json": function(e) {
-			e.exports = JSON.parse('{"id":"b0929b21a0e6"}')
+			e.exports = JSON.parse('{"id":"d9fdd5693532"}')
 		},
 		"./src/redditGQL/operations/TopAwardersLeaderboard.json": function(e) {
 			e.exports = JSON.parse('{"id":"750ff4a757de"}')
@@ -7735,7 +7742,7 @@
 			e.exports = JSON.parse('{"id":"699ae1616006"}')
 		},
 		"./src/redditGQL/operations/UpdatePredictionTournament.json": function(e) {
-			e.exports = JSON.parse('{"id":"d1ae0d88890f"}')
+			e.exports = JSON.parse('{"id":"7ef2c359c4c9"}')
 		},
 		"./src/redditGQL/operations/UpdateSubredditNotificationSettings.json": function(e) {
 			e.exports = JSON.parse('{"id":"0af4f630a2e1"}')
@@ -7760,4 +7767,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241.7936096ba8c1cfa57c93.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241.72c0a52eafa8ebe64d29.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.21db2f248d283dff7074.js
-// Retrieved at 11/9/2021, 3:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.69599d05de2c75f89b5b.js
+// Retrieved at 11/9/2021, 6:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -25573,6 +25573,7 @@
 				});
 			const GT = {};
 			var BT = (e = GT, t) => {
+					var r, s, n;
 					switch (t.type) {
 						case G.b:
 						case G.f:
@@ -25582,16 +25583,16 @@
 						case De.PAGE_LOADED:
 						case Cs.PAGE_LOADED: {
 							const {
-								structuredStyles: r
+								structuredStyles: a
 							} = t.payload;
-							if (!(r && r.data && r.data.content)) return e;
-							const s = r.data.content.widgets.layout.idCardWidget,
-								n = Object.keys(t.payload.subredditAboutInfo || {});
-							if (1 !== n.length) return e;
-							const a = n[0];
+							if (!(null === (n = null === (s = null === (r = null == a ? void 0 : a.data) || void 0 === r ? void 0 : r.content) || void 0 === s ? void 0 : s.widgets) || void 0 === n ? void 0 : n.layout)) return e;
+							const c = a.data.content.widgets.layout.idCardWidget,
+								o = Object.keys(t.payload.subredditAboutInfo || {});
+							if (1 !== o.length) return e;
+							const d = o[0];
 							return {
 								...e,
-								[a]: s
+								[d]: c
 							}
 						}
 						default:
@@ -25601,6 +25602,7 @@
 				qT = r("./src/reddit/actions/widgets/constants.ts");
 			const VT = {};
 			var HT = (e = VT, t) => {
+					var r;
 					switch (t.type) {
 						case G.b:
 						case G.f:
@@ -25609,18 +25611,18 @@
 						case W.SUBREDDIT_LOADED:
 						case De.PAGE_LOADED: {
 							const {
-								structuredStyles: r
+								structuredStyles: s
 							} = t.payload;
-							if (!(r && r.data && r.data.content)) return e;
-							const s = r.data.content.widgets.items,
-								n = r.data.content.widgets.layout.topbar.order.filter(e => s[e] && "menu" === s[e].kind);
-							if (!n.length) return e;
-							const a = Object.keys(t.payload.subredditAboutInfo || {});
-							if (1 !== a.length) return e;
-							const c = a[0];
+							if (!(s && s.data && s.data.content)) return e;
+							const n = null === (r = s.data.content.widgets) || void 0 === r ? void 0 : r.items,
+								a = s.data.content.widgets.layout.topbar.order.filter(e => n[e] && "menu" === n[e].kind);
+							if (!a.length) return e;
+							const c = Object.keys(t.payload.subredditAboutInfo || {});
+							if (1 !== c.length) return e;
+							const o = c[0];
 							return {
 								...e,
-								[c]: n[0]
+								[o]: a[0]
 							}
 						}
 						case qT.g: {
@@ -26505,7 +26507,7 @@
 			e.exports = JSON.parse('{"id":"de72339b938a"}')
 		},
 		"./src/redditGQL/operations/SubredditTopContent.json": function(e) {
-			e.exports = JSON.parse('{"id":"324b69e315f1"}')
+			e.exports = JSON.parse('{"id":"44ae8a381403"}')
 		},
 		"./src/redditGQL/operations/UpdateChatMessagesAsRead.json": function(e) {
 			e.exports = JSON.parse('{"id":"bfc6fe51708d"}')
@@ -26530,4 +26532,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.21db2f248d283dff7074.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.69599d05de2c75f89b5b.js.map
