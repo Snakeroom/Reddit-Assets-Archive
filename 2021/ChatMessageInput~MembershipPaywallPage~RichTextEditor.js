@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.19c064da3328854bfd56.js
-// Retrieved at 11/4/2021, 7:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.bf418622c2440db6ef82.js
+// Retrieved at 11/9/2021, 3:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./src/lib/forEachGroup/index.ts": function(t, e, n) {
@@ -6233,7 +6233,7 @@
 							isBound: !0,
 							editorState: t
 						};
-						this.props.onChange(n, e), this.props.userIsTypingSubscriptionEnabled && e && (this.state.isUserTyping || this.setState({
+						this.props.onChange(n, e), this.props.isTypingIndicatorsWriteTestEnabled && e && (this.state.isUserTyping || this.setState({
 							isUserTyping: !0
 						}), this.setUserStoppedTyping())
 					}, this.hideTooltips = () => {
@@ -6527,7 +6527,7 @@
 					}, this.renderToolbar = t => p.a.createElement(Pe.b, t), this.entityElementRegistry = So(), this.tableOnEnterHandler = new bn;
 					const {
 						postId: e,
-						userIsTypingSubscriptionEnabled: n
+						isTypingIndicatorsWriteTestEnabled: n
 					} = t;
 					n && (this.realtimeGQLVariables = {
 						input: {
@@ -6616,7 +6616,7 @@
 					this.needSyncScroll && (Ki(this.needSyncScroll), this.needSyncScroll = null)
 				}
 				componentWillUnmount() {
-					if (this.props.rteRef && this.props.rteRef(null), this.insertValidatedMedia = () => {}, this.props.userIsTypingSubscriptionEnabled && this.setUserStoppedTyping.cancel(), this.editorRef) {
+					if (this.props.rteRef && this.props.rteRef(null), this.insertValidatedMedia = () => {}, this.props.isTypingIndicatorsWriteTestEnabled && this.setUserStoppedTyping.cancel(), this.editorRef) {
 						this.editorRef.refs.editor.removeEventListener("scroll", this.hideTooltips)
 					}
 					this.editorRootStyleMutationObserver && (this.editorRootStyleMutationObserver.disconnect(), this.editorRootStyleMutationObserver = null)
@@ -6708,7 +6708,7 @@
 						submitButtonClassName: T,
 						toolbarPosition: x = "top",
 						renderToolbar: j = this.renderToolbar,
-						userIsTypingSubscriptionEnabled: v
+						isTypingIndicatorsWriteTestEnabled: v
 					} = this.props, {
 						editorKey: R
 					} = h, {
@@ -7859,4 +7859,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.19c064da3328854bfd56.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.bf418622c2440db6ef82.js.map
