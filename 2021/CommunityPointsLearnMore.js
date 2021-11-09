@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.dadcd37ff1a6771c44ec.js
-// Retrieved at 11/4/2021, 4:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.77125fc9ad43477c1a05.js
+// Retrieved at 11/9/2021, 1:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityPointsLearnMore"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, n) {
@@ -7,12 +7,12 @@
 			var r = {
 				single_source_shortest_paths: function(e, t, n) {
 					var o = {},
-						i = {};
-					i[t] = 0;
-					var a, s, d, l, c, u, m, h = r.PriorityQueue.make();
+						a = {};
+					a[t] = 0;
+					var i, s, c, l, d, u, m, h = r.PriorityQueue.make();
 					for (h.push(t, 0); !h.empty();)
-						for (d in s = (a = h.pop()).value, l = a.cost, c = e[s] || {}) c.hasOwnProperty(d) && (u = l + c[d], m = i[d], (void 0 === i[d] || m > u) && (i[d] = u, h.push(d, u), o[d] = s));
-					if (void 0 !== n && void 0 === i[n]) {
+						for (c in s = (i = h.pop()).value, l = i.cost, d = e[s] || {}) d.hasOwnProperty(c) && (u = l + d[c], m = a[c], (void 0 === a[c] || m > u) && (a[c] = u, h.push(c, u), o[c] = s));
+					if (void 0 !== n && void 0 === a[n]) {
 						var f = ["Could not find a path from ", t, " to ", n, "."].join("");
 						throw new Error(f)
 					}
@@ -56,36 +56,36 @@
 		"./node_modules/qrcode/lib/browser.js": function(e, t, n) {
 			var r = n("./node_modules/qrcode/lib/can-promise.js"),
 				o = n("./node_modules/qrcode/lib/core/qrcode.js"),
-				i = n("./node_modules/qrcode/lib/renderer/canvas.js"),
-				a = n("./node_modules/qrcode/lib/renderer/svg-tag.js");
+				a = n("./node_modules/qrcode/lib/renderer/canvas.js"),
+				i = n("./node_modules/qrcode/lib/renderer/svg-tag.js");
 
-			function s(e, t, n, i, a) {
+			function s(e, t, n, a, i) {
 				var s = [].slice.call(arguments, 1),
-					d = s.length,
-					l = "function" == typeof s[d - 1];
+					c = s.length,
+					l = "function" == typeof s[c - 1];
 				if (!l && !r()) throw new Error("Callback required as last argument");
 				if (!l) {
-					if (d < 1) throw new Error("Too few arguments provided");
-					return 1 === d ? (n = t, t = i = void 0) : 2 !== d || t.getContext || (i = n, n = t, t = void 0), new Promise((function(r, a) {
+					if (c < 1) throw new Error("Too few arguments provided");
+					return 1 === c ? (n = t, t = a = void 0) : 2 !== c || t.getContext || (a = n, n = t, t = void 0), new Promise((function(r, i) {
 						try {
-							var s = o.create(n, i);
-							r(e(s, t, i))
-						} catch (d) {
-							a(d)
+							var s = o.create(n, a);
+							r(e(s, t, a))
+						} catch (c) {
+							i(c)
 						}
 					}))
 				}
-				if (d < 2) throw new Error("Too few arguments provided");
-				2 === d ? (a = n, n = t, t = i = void 0) : 3 === d && (t.getContext && void 0 === a ? (a = i, i = void 0) : (a = i, i = n, n = t, t = void 0));
+				if (c < 2) throw new Error("Too few arguments provided");
+				2 === c ? (i = n, n = t, t = a = void 0) : 3 === c && (t.getContext && void 0 === i ? (i = a, a = void 0) : (i = a, a = n, n = t, t = void 0));
 				try {
-					var c = o.create(n, i);
-					a(null, e(c, t, i))
+					var d = o.create(n, a);
+					i(null, e(d, t, a))
 				} catch (u) {
-					a(u)
+					i(u)
 				}
 			}
-			t.create = o.create, t.toCanvas = s.bind(null, i.render), t.toDataURL = s.bind(null, i.renderToDataURL), t.toString = s.bind(null, (function(e, t, n) {
-				return a.render(e, n)
+			t.create = o.create, t.toCanvas = s.bind(null, a.render), t.toDataURL = s.bind(null, a.renderToDataURL), t.toString = s.bind(null, (function(e, t, n) {
+				return i.render(e, n)
 			}))
 		},
 		"./node_modules/qrcode/lib/can-promise.js": function(e, t) {
@@ -97,11 +97,11 @@
 			var r = n("./node_modules/qrcode/lib/core/utils.js").getSymbolSize;
 			t.getRowColCoords = function(e) {
 				if (1 === e) return [];
-				for (var t = Math.floor(e / 7) + 2, n = r(e), o = 145 === n ? 26 : 2 * Math.ceil((n - 13) / (2 * t - 2)), i = [n - 7], a = 1; a < t - 1; a++) i[a] = i[a - 1] - o;
-				return i.push(6), i.reverse()
+				for (var t = Math.floor(e / 7) + 2, n = r(e), o = 145 === n ? 26 : 2 * Math.ceil((n - 13) / (2 * t - 2)), a = [n - 7], i = 1; i < t - 1; i++) a[i] = a[i - 1] - o;
+				return a.push(6), a.reverse()
 			}, t.getPositions = function(e) {
-				for (var n = [], r = t.getRowColCoords(e), o = r.length, i = 0; i < o; i++)
-					for (var a = 0; a < o; a++) 0 === i && 0 === a || 0 === i && a === o - 1 || i === o - 1 && 0 === a || n.push([r[i], r[a]]);
+				for (var n = [], r = t.getRowColCoords(e), o = r.length, a = 0; a < o; a++)
+					for (var i = 0; i < o; i++) 0 === a && 0 === i || 0 === a && i === o - 1 || a === o - 1 && 0 === i || n.push([r[a], r[i]]);
 				return n
 			}
 		},
@@ -109,23 +109,23 @@
 			var r = n("./node_modules/qrcode/lib/core/mode.js"),
 				o = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", " ", "$", "%", "*", "+", "-", ".", "/", ":"];
 
-			function i(e) {
+			function a(e) {
 				this.mode = r.ALPHANUMERIC, this.data = e
 			}
-			i.getBitsLength = function(e) {
+			a.getBitsLength = function(e) {
 				return 11 * Math.floor(e / 2) + e % 2 * 6
-			}, i.prototype.getLength = function() {
+			}, a.prototype.getLength = function() {
 				return this.data.length
-			}, i.prototype.getBitsLength = function() {
-				return i.getBitsLength(this.data.length)
-			}, i.prototype.write = function(e) {
+			}, a.prototype.getBitsLength = function() {
+				return a.getBitsLength(this.data.length)
+			}, a.prototype.write = function(e) {
 				var t;
 				for (t = 0; t + 2 <= this.data.length; t += 2) {
 					var n = 45 * o.indexOf(this.data[t]);
 					n += o.indexOf(this.data[t + 1]), e.put(n, 11)
 				}
 				this.data.length % 2 && e.put(o.indexOf(this.data[t]), 6)
-			}, e.exports = i
+			}, e.exports = a
 		},
 		"./node_modules/qrcode/lib/core/bit-buffer.js": function(e, t) {
 			function n() {
@@ -170,23 +170,23 @@
 			var r = n("./node_modules/qrcode/lib/utils/typedarray-buffer.js"),
 				o = n("./node_modules/qrcode/lib/core/mode.js");
 
-			function i(e) {
+			function a(e) {
 				this.mode = o.BYTE, this.data = r.from(e)
 			}
-			i.getBitsLength = function(e) {
+			a.getBitsLength = function(e) {
 				return 8 * e
-			}, i.prototype.getLength = function() {
+			}, a.prototype.getLength = function() {
 				return this.data.length
-			}, i.prototype.getBitsLength = function() {
-				return i.getBitsLength(this.data.length)
-			}, i.prototype.write = function(e) {
+			}, a.prototype.getBitsLength = function() {
+				return a.getBitsLength(this.data.length)
+			}, a.prototype.write = function(e) {
 				for (var t = 0, n = this.data.length; t < n; t++) e.put(this.data[t], 8)
-			}, e.exports = i
+			}, e.exports = a
 		},
 		"./node_modules/qrcode/lib/core/error-correction-code.js": function(e, t, n) {
 			var r = n("./node_modules/qrcode/lib/core/error-correction-level.js"),
 				o = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 1, 2, 2, 4, 1, 2, 4, 4, 2, 4, 4, 4, 2, 4, 6, 5, 2, 4, 6, 6, 2, 5, 8, 8, 4, 5, 8, 8, 4, 5, 8, 11, 4, 8, 10, 11, 4, 9, 12, 16, 4, 9, 16, 16, 6, 10, 12, 18, 6, 10, 17, 16, 6, 11, 16, 19, 6, 13, 18, 21, 7, 14, 21, 25, 8, 16, 20, 25, 8, 17, 23, 25, 9, 17, 23, 34, 9, 18, 25, 30, 10, 20, 27, 32, 12, 21, 29, 35, 12, 23, 34, 37, 12, 25, 34, 40, 13, 26, 35, 42, 14, 28, 38, 45, 15, 29, 40, 48, 16, 31, 43, 51, 17, 33, 45, 54, 18, 35, 48, 57, 19, 37, 51, 60, 19, 38, 53, 63, 20, 40, 56, 66, 21, 43, 59, 70, 22, 45, 62, 74, 24, 47, 65, 77, 25, 49, 68, 81],
-				i = [7, 10, 13, 17, 10, 16, 22, 28, 15, 26, 36, 44, 20, 36, 52, 64, 26, 48, 72, 88, 36, 64, 96, 112, 40, 72, 108, 130, 48, 88, 132, 156, 60, 110, 160, 192, 72, 130, 192, 224, 80, 150, 224, 264, 96, 176, 260, 308, 104, 198, 288, 352, 120, 216, 320, 384, 132, 240, 360, 432, 144, 280, 408, 480, 168, 308, 448, 532, 180, 338, 504, 588, 196, 364, 546, 650, 224, 416, 600, 700, 224, 442, 644, 750, 252, 476, 690, 816, 270, 504, 750, 900, 300, 560, 810, 960, 312, 588, 870, 1050, 336, 644, 952, 1110, 360, 700, 1020, 1200, 390, 728, 1050, 1260, 420, 784, 1140, 1350, 450, 812, 1200, 1440, 480, 868, 1290, 1530, 510, 924, 1350, 1620, 540, 980, 1440, 1710, 570, 1036, 1530, 1800, 570, 1064, 1590, 1890, 600, 1120, 1680, 1980, 630, 1204, 1770, 2100, 660, 1260, 1860, 2220, 720, 1316, 1950, 2310, 750, 1372, 2040, 2430];
+				a = [7, 10, 13, 17, 10, 16, 22, 28, 15, 26, 36, 44, 20, 36, 52, 64, 26, 48, 72, 88, 36, 64, 96, 112, 40, 72, 108, 130, 48, 88, 132, 156, 60, 110, 160, 192, 72, 130, 192, 224, 80, 150, 224, 264, 96, 176, 260, 308, 104, 198, 288, 352, 120, 216, 320, 384, 132, 240, 360, 432, 144, 280, 408, 480, 168, 308, 448, 532, 180, 338, 504, 588, 196, 364, 546, 650, 224, 416, 600, 700, 224, 442, 644, 750, 252, 476, 690, 816, 270, 504, 750, 900, 300, 560, 810, 960, 312, 588, 870, 1050, 336, 644, 952, 1110, 360, 700, 1020, 1200, 390, 728, 1050, 1260, 420, 784, 1140, 1350, 450, 812, 1200, 1440, 480, 868, 1290, 1530, 510, 924, 1350, 1620, 540, 980, 1440, 1710, 570, 1036, 1530, 1800, 570, 1064, 1590, 1890, 600, 1120, 1680, 1980, 630, 1204, 1770, 2100, 660, 1260, 1860, 2220, 720, 1316, 1950, 2310, 750, 1372, 2040, 2430];
 			t.getBlocksCount = function(e, t) {
 				switch (t) {
 					case r.L:
@@ -203,13 +203,13 @@
 			}, t.getTotalCodewordsCount = function(e, t) {
 				switch (t) {
 					case r.L:
-						return i[4 * (e - 1) + 0];
+						return a[4 * (e - 1) + 0];
 					case r.M:
-						return i[4 * (e - 1) + 1];
+						return a[4 * (e - 1) + 1];
 					case r.Q:
-						return i[4 * (e - 1) + 2];
+						return a[4 * (e - 1) + 2];
 					case r.H:
-						return i[4 * (e - 1) + 3];
+						return a[4 * (e - 1) + 3];
 					default:
 						return
 				}
@@ -268,40 +268,40 @@
 			var r = n("./node_modules/qrcode/lib/core/utils.js"),
 				o = r.getBCHDigit(1335);
 			t.getEncodedBits = function(e, t) {
-				for (var n = e.bit << 3 | t, i = n << 10; r.getBCHDigit(i) - o >= 0;) i ^= 1335 << r.getBCHDigit(i) - o;
-				return 21522 ^ (n << 10 | i)
+				for (var n = e.bit << 3 | t, a = n << 10; r.getBCHDigit(a) - o >= 0;) a ^= 1335 << r.getBCHDigit(a) - o;
+				return 21522 ^ (n << 10 | a)
 			}
 		},
 		"./node_modules/qrcode/lib/core/galois-field.js": function(e, t, n) {
 			var r = n("./node_modules/qrcode/lib/utils/typedarray-buffer.js"),
 				o = r.alloc(512),
-				i = r.alloc(256);
+				a = r.alloc(256);
 			! function() {
-				for (var e = 1, t = 0; t < 255; t++) o[t] = e, i[e] = t, 256 & (e <<= 1) && (e ^= 285);
+				for (var e = 1, t = 0; t < 255; t++) o[t] = e, a[e] = t, 256 & (e <<= 1) && (e ^= 285);
 				for (t = 255; t < 512; t++) o[t] = o[t - 255]
 			}(), t.log = function(e) {
 				if (e < 1) throw new Error("log(" + e + ")");
-				return i[e]
+				return a[e]
 			}, t.exp = function(e) {
 				return o[e]
 			}, t.mul = function(e, t) {
-				return 0 === e || 0 === t ? 0 : o[i[e] + i[t]]
+				return 0 === e || 0 === t ? 0 : o[a[e] + a[t]]
 			}
 		},
 		"./node_modules/qrcode/lib/core/kanji-data.js": function(e, t, n) {
 			var r = n("./node_modules/qrcode/lib/core/mode.js"),
 				o = n("./node_modules/qrcode/lib/core/utils.js");
 
-			function i(e) {
+			function a(e) {
 				this.mode = r.KANJI, this.data = e
 			}
-			i.getBitsLength = function(e) {
+			a.getBitsLength = function(e) {
 				return 13 * e
-			}, i.prototype.getLength = function() {
+			}, a.prototype.getLength = function() {
 				return this.data.length
-			}, i.prototype.getBitsLength = function() {
-				return i.getBitsLength(this.data.length)
-			}, i.prototype.write = function(e) {
+			}, a.prototype.getBitsLength = function() {
+				return a.getBitsLength(this.data.length)
+			}, a.prototype.write = function(e) {
 				var t;
 				for (t = 0; t < this.data.length; t++) {
 					var n = o.toSJIS(this.data[t]);
@@ -312,7 +312,7 @@
 					}
 					n = 192 * (n >>> 8 & 255) + (255 & n), e.put(n, 13)
 				}
-			}, e.exports = i
+			}, e.exports = a
 		},
 		"./node_modules/qrcode/lib/core/mask-pattern.js": function(e, t) {
 			t.Patterns = {
@@ -328,9 +328,9 @@
 			var n = 3,
 				r = 3,
 				o = 40,
-				i = 10;
+				a = 10;
 
-			function a(e, n, r) {
+			function i(e, n, r) {
 				switch (e) {
 					case t.Patterns.PATTERN000:
 						return (n + r) % 2 == 0;
@@ -357,39 +357,39 @@
 			}, t.from = function(e) {
 				return t.isValid(e) ? parseInt(e, 10) : void 0
 			}, t.getPenaltyN1 = function(e) {
-				for (var t = e.size, r = 0, o = 0, i = 0, a = null, s = null, d = 0; d < t; d++) {
-					o = i = 0, a = s = null;
+				for (var t = e.size, r = 0, o = 0, a = 0, i = null, s = null, c = 0; c < t; c++) {
+					o = a = 0, i = s = null;
 					for (var l = 0; l < t; l++) {
-						var c = e.get(d, l);
-						c === a ? o++ : (o >= 5 && (r += n + (o - 5)), a = c, o = 1), (c = e.get(l, d)) === s ? i++ : (i >= 5 && (r += n + (i - 5)), s = c, i = 1)
+						var d = e.get(c, l);
+						d === i ? o++ : (o >= 5 && (r += n + (o - 5)), i = d, o = 1), (d = e.get(l, c)) === s ? a++ : (a >= 5 && (r += n + (a - 5)), s = d, a = 1)
 					}
-					o >= 5 && (r += n + (o - 5)), i >= 5 && (r += n + (i - 5))
+					o >= 5 && (r += n + (o - 5)), a >= 5 && (r += n + (a - 5))
 				}
 				return r
 			}, t.getPenaltyN2 = function(e) {
 				for (var t = e.size, n = 0, o = 0; o < t - 1; o++)
-					for (var i = 0; i < t - 1; i++) {
-						var a = e.get(o, i) + e.get(o, i + 1) + e.get(o + 1, i) + e.get(o + 1, i + 1);
-						4 !== a && 0 !== a || n++
+					for (var a = 0; a < t - 1; a++) {
+						var i = e.get(o, a) + e.get(o, a + 1) + e.get(o + 1, a) + e.get(o + 1, a + 1);
+						4 !== i && 0 !== i || n++
 					}
 				return n * r
 			}, t.getPenaltyN3 = function(e) {
-				for (var t = e.size, n = 0, r = 0, i = 0, a = 0; a < t; a++) {
-					r = i = 0;
-					for (var s = 0; s < t; s++) r = r << 1 & 2047 | e.get(a, s), s >= 10 && (1488 === r || 93 === r) && n++, i = i << 1 & 2047 | e.get(s, a), s >= 10 && (1488 === i || 93 === i) && n++
+				for (var t = e.size, n = 0, r = 0, a = 0, i = 0; i < t; i++) {
+					r = a = 0;
+					for (var s = 0; s < t; s++) r = r << 1 & 2047 | e.get(i, s), s >= 10 && (1488 === r || 93 === r) && n++, a = a << 1 & 2047 | e.get(s, i), s >= 10 && (1488 === a || 93 === a) && n++
 				}
 				return n * o
 			}, t.getPenaltyN4 = function(e) {
 				for (var t = 0, n = e.data.length, r = 0; r < n; r++) t += e.data[r];
-				return Math.abs(Math.ceil(100 * t / n / 5) - 10) * i
+				return Math.abs(Math.ceil(100 * t / n / 5) - 10) * a
 			}, t.applyMask = function(e, t) {
 				for (var n = t.size, r = 0; r < n; r++)
-					for (var o = 0; o < n; o++) t.isReserved(o, r) || t.xor(o, r, a(e, o, r))
+					for (var o = 0; o < n; o++) t.isReserved(o, r) || t.xor(o, r, i(e, o, r))
 			}, t.getBestMask = function(e, n) {
-				for (var r = Object.keys(t.Patterns).length, o = 0, i = 1 / 0, a = 0; a < r; a++) {
-					n(a), t.applyMask(a, e);
+				for (var r = Object.keys(t.Patterns).length, o = 0, a = 1 / 0, i = 0; i < r; i++) {
+					n(i), t.applyMask(i, e);
 					var s = t.getPenaltyN1(e) + t.getPenaltyN2(e) + t.getPenaltyN3(e) + t.getPenaltyN4(e);
-					t.applyMask(a, e), s < i && (i = s, o = a)
+					t.applyMask(i, e), s < a && (a = s, o = i)
 				}
 				return o
 			}
@@ -472,93 +472,93 @@
 			var r = n("./node_modules/qrcode/lib/utils/typedarray-buffer.js"),
 				o = n("./node_modules/qrcode/lib/core/galois-field.js");
 			t.mul = function(e, t) {
-				for (var n = r.alloc(e.length + t.length - 1), i = 0; i < e.length; i++)
-					for (var a = 0; a < t.length; a++) n[i + a] ^= o.mul(e[i], t[a]);
+				for (var n = r.alloc(e.length + t.length - 1), a = 0; a < e.length; a++)
+					for (var i = 0; i < t.length; i++) n[a + i] ^= o.mul(e[a], t[i]);
 				return n
 			}, t.mod = function(e, t) {
 				for (var n = r.from(e); n.length - t.length >= 0;) {
-					for (var i = n[0], a = 0; a < t.length; a++) n[a] ^= o.mul(t[a], i);
+					for (var a = n[0], i = 0; i < t.length; i++) n[i] ^= o.mul(t[i], a);
 					for (var s = 0; s < n.length && 0 === n[s];) s++;
 					n = n.slice(s)
 				}
 				return n
 			}, t.generateECPolynomial = function(e) {
-				for (var n = r.from([1]), i = 0; i < e; i++) n = t.mul(n, [1, o.exp(i)]);
+				for (var n = r.from([1]), a = 0; a < e; a++) n = t.mul(n, [1, o.exp(a)]);
 				return n
 			}
 		},
 		"./node_modules/qrcode/lib/core/qrcode.js": function(e, t, n) {
 			var r = n("./node_modules/qrcode/lib/utils/typedarray-buffer.js"),
 				o = n("./node_modules/qrcode/lib/core/utils.js"),
-				i = n("./node_modules/qrcode/lib/core/error-correction-level.js"),
-				a = n("./node_modules/qrcode/lib/core/bit-buffer.js"),
+				a = n("./node_modules/qrcode/lib/core/error-correction-level.js"),
+				i = n("./node_modules/qrcode/lib/core/bit-buffer.js"),
 				s = n("./node_modules/qrcode/lib/core/bit-matrix.js"),
-				d = n("./node_modules/qrcode/lib/core/alignment-pattern.js"),
+				c = n("./node_modules/qrcode/lib/core/alignment-pattern.js"),
 				l = n("./node_modules/qrcode/lib/core/finder-pattern.js"),
-				c = n("./node_modules/qrcode/lib/core/mask-pattern.js"),
+				d = n("./node_modules/qrcode/lib/core/mask-pattern.js"),
 				u = n("./node_modules/qrcode/lib/core/error-correction-code.js"),
 				m = n("./node_modules/qrcode/lib/core/reed-solomon-encoder.js"),
 				h = n("./node_modules/qrcode/lib/core/version.js"),
 				f = n("./node_modules/qrcode/lib/core/format-info.js"),
-				p = n("./node_modules/qrcode/lib/core/mode.js"),
-				g = n("./node_modules/qrcode/lib/core/segments.js"),
+				g = n("./node_modules/qrcode/lib/core/mode.js"),
+				p = n("./node_modules/qrcode/lib/core/segments.js"),
 				b = n("./node_modules/qrcode/node_modules/isarray/index.js");
 
-			function v(e, t, n) {
-				var r, o, i = e.size,
-					a = f.getEncodedBits(t, n);
-				for (r = 0; r < 15; r++) o = 1 == (a >> r & 1), r < 6 ? e.set(r, 8, o, !0) : r < 8 ? e.set(r + 1, 8, o, !0) : e.set(i - 15 + r, 8, o, !0), r < 8 ? e.set(8, i - r - 1, o, !0) : r < 9 ? e.set(8, 15 - r - 1 + 1, o, !0) : e.set(8, 15 - r - 1, o, !0);
-				e.set(i - 8, 8, 1, !0)
+			function y(e, t, n) {
+				var r, o, a = e.size,
+					i = f.getEncodedBits(t, n);
+				for (r = 0; r < 15; r++) o = 1 == (i >> r & 1), r < 6 ? e.set(r, 8, o, !0) : r < 8 ? e.set(r + 1, 8, o, !0) : e.set(a - 15 + r, 8, o, !0), r < 8 ? e.set(8, a - r - 1, o, !0) : r < 9 ? e.set(8, 15 - r - 1 + 1, o, !0) : e.set(8, 15 - r - 1, o, !0);
+				e.set(a - 8, 8, 1, !0)
 			}
 
-			function y(e, t, n) {
-				var i = new a;
+			function v(e, t, n) {
+				var a = new i;
 				n.forEach((function(t) {
-					i.put(t.mode.bit, 4), i.put(t.getLength(), p.getCharCountIndicator(t.mode, e)), t.write(i)
+					a.put(t.mode.bit, 4), a.put(t.getLength(), g.getCharCountIndicator(t.mode, e)), t.write(a)
 				}));
 				var s = 8 * (o.getSymbolTotalCodewords(e) - u.getTotalCodewordsCount(e, t));
-				for (i.getLengthInBits() + 4 <= s && i.put(0, 4); i.getLengthInBits() % 8 != 0;) i.putBit(0);
-				for (var d = (s - i.getLengthInBits()) / 8, l = 0; l < d; l++) i.put(l % 2 ? 17 : 236, 8);
+				for (a.getLengthInBits() + 4 <= s && a.put(0, 4); a.getLengthInBits() % 8 != 0;) a.putBit(0);
+				for (var c = (s - a.getLengthInBits()) / 8, l = 0; l < c; l++) a.put(l % 2 ? 17 : 236, 8);
 				return function(e, t, n) {
-					for (var i = o.getSymbolTotalCodewords(t), a = u.getTotalCodewordsCount(t, n), s = i - a, d = u.getBlocksCount(t, n), l = d - i % d, c = Math.floor(i / d), h = Math.floor(s / d), f = h + 1, p = c - h, g = new m(p), b = 0, v = new Array(d), y = new Array(d), _ = 0, P = r.from(e.buffer), E = 0; E < d; E++) {
+					for (var a = o.getSymbolTotalCodewords(t), i = u.getTotalCodewordsCount(t, n), s = a - i, c = u.getBlocksCount(t, n), l = c - a % c, d = Math.floor(a / c), h = Math.floor(s / c), f = h + 1, g = d - h, p = new m(g), b = 0, y = new Array(c), v = new Array(c), _ = 0, P = r.from(e.buffer), E = 0; E < c; E++) {
 						var w = E < l ? h : f;
-						v[E] = P.slice(b, b + w), y[E] = g.encode(v[E]), b += w, _ = Math.max(_, w)
+						y[E] = P.slice(b, b + w), v[E] = p.encode(y[E]), b += w, _ = Math.max(_, w)
 					}
-					var x, C, k = r.alloc(i),
+					var k, C, x = r.alloc(a),
 						N = 0;
-					for (x = 0; x < _; x++)
-						for (C = 0; C < d; C++) x < v[C].length && (k[N++] = v[C][x]);
-					for (x = 0; x < p; x++)
-						for (C = 0; C < d; C++) k[N++] = y[C][x];
-					return k
-				}(i, e, t)
+					for (k = 0; k < _; k++)
+						for (C = 0; C < c; C++) k < y[C].length && (x[N++] = y[C][k]);
+					for (k = 0; k < g; k++)
+						for (C = 0; C < c; C++) x[N++] = v[C][k];
+					return x
+				}(a, e, t)
 			}
 
 			function _(e, t, n, r) {
-				var i;
-				if (b(e)) i = g.fromArray(e);
+				var a;
+				if (b(e)) a = p.fromArray(e);
 				else {
 					if ("string" != typeof e) throw new Error("Invalid data");
-					var a = t;
-					if (!a) {
-						var u = g.rawSplit(e);
-						a = h.getBestVersionForData(u, n)
+					var i = t;
+					if (!i) {
+						var u = p.rawSplit(e);
+						i = h.getBestVersionForData(u, n)
 					}
-					i = g.fromString(e, a || 40)
+					a = p.fromString(e, i || 40)
 				}
-				var m = h.getBestVersionForData(i, n);
+				var m = h.getBestVersionForData(a, n);
 				if (!m) throw new Error("The amount of data is too big to be stored in a QR Code");
 				if (t) {
 					if (t < m) throw new Error("\nThe chosen QR Code version cannot contain this amount of data.\nMinimum version required to store current data is: " + m + ".\n")
 				} else t = m;
-				var f = y(t, n, i),
-					p = o.getSymbolSize(t),
-					_ = new s(p);
+				var f = v(t, n, a),
+					g = o.getSymbolSize(t),
+					_ = new s(g);
 				return function(e, t) {
 						for (var n = e.size, r = l.getPositions(t), o = 0; o < r.length; o++)
-							for (var i = r[o][0], a = r[o][1], s = -1; s <= 7; s++)
-								if (!(i + s <= -1 || n <= i + s))
-									for (var d = -1; d <= 7; d++) a + d <= -1 || n <= a + d || (s >= 0 && s <= 6 && (0 === d || 6 === d) || d >= 0 && d <= 6 && (0 === s || 6 === s) || s >= 2 && s <= 4 && d >= 2 && d <= 4 ? e.set(i + s, a + d, !0, !0) : e.set(i + s, a + d, !1, !0))
+							for (var a = r[o][0], i = r[o][1], s = -1; s <= 7; s++)
+								if (!(a + s <= -1 || n <= a + s))
+									for (var c = -1; c <= 7; c++) i + c <= -1 || n <= i + c || (s >= 0 && s <= 6 && (0 === c || 6 === c) || c >= 0 && c <= 6 && (0 === s || 6 === s) || s >= 2 && s <= 4 && c >= 2 && c <= 4 ? e.set(a + s, i + c, !0, !0) : e.set(a + s, i + c, !1, !0))
 					}(_, t),
 					function(e) {
 						for (var t = e.size, n = 8; n < t - 8; n++) {
@@ -567,85 +567,85 @@
 						}
 					}(_),
 					function(e, t) {
-						for (var n = d.getPositions(t), r = 0; r < n.length; r++)
-							for (var o = n[r][0], i = n[r][1], a = -2; a <= 2; a++)
-								for (var s = -2; s <= 2; s++) - 2 === a || 2 === a || -2 === s || 2 === s || 0 === a && 0 === s ? e.set(o + a, i + s, !0, !0) : e.set(o + a, i + s, !1, !0)
-					}(_, t), v(_, n, 0), t >= 7 && function(e, t) {
-						for (var n, r, o, i = e.size, a = h.getEncodedBits(t), s = 0; s < 18; s++) n = Math.floor(s / 3), r = s % 3 + i - 8 - 3, o = 1 == (a >> s & 1), e.set(n, r, o, !0), e.set(r, n, o, !0)
+						for (var n = c.getPositions(t), r = 0; r < n.length; r++)
+							for (var o = n[r][0], a = n[r][1], i = -2; i <= 2; i++)
+								for (var s = -2; s <= 2; s++) - 2 === i || 2 === i || -2 === s || 2 === s || 0 === i && 0 === s ? e.set(o + i, a + s, !0, !0) : e.set(o + i, a + s, !1, !0)
+					}(_, t), y(_, n, 0), t >= 7 && function(e, t) {
+						for (var n, r, o, a = e.size, i = h.getEncodedBits(t), s = 0; s < 18; s++) n = Math.floor(s / 3), r = s % 3 + a - 8 - 3, o = 1 == (i >> s & 1), e.set(n, r, o, !0), e.set(r, n, o, !0)
 					}(_, t),
 					function(e, t) {
-						for (var n = e.size, r = -1, o = n - 1, i = 7, a = 0, s = n - 1; s > 0; s -= 2)
+						for (var n = e.size, r = -1, o = n - 1, a = 7, i = 0, s = n - 1; s > 0; s -= 2)
 							for (6 === s && s--;;) {
-								for (var d = 0; d < 2; d++)
-									if (!e.isReserved(o, s - d)) {
+								for (var c = 0; c < 2; c++)
+									if (!e.isReserved(o, s - c)) {
 										var l = !1;
-										a < t.length && (l = 1 == (t[a] >>> i & 1)), e.set(o, s - d, l), -1 === --i && (a++, i = 7)
+										i < t.length && (l = 1 == (t[i] >>> a & 1)), e.set(o, s - c, l), -1 === --a && (i++, a = 7)
 									} if ((o += r) < 0 || n <= o) {
 									o -= r, r = -r;
 									break
 								}
 							}
-					}(_, f), isNaN(r) && (r = c.getBestMask(_, v.bind(null, _, n))), c.applyMask(r, _), v(_, n, r), {
+					}(_, f), isNaN(r) && (r = d.getBestMask(_, y.bind(null, _, n))), d.applyMask(r, _), y(_, n, r), {
 						modules: _,
 						version: t,
 						errorCorrectionLevel: n,
 						maskPattern: r,
-						segments: i
+						segments: a
 					}
 			}
 			t.create = function(e, t) {
 				if (void 0 === e || "" === e) throw new Error("No input text");
-				var n, r, a = i.M;
-				return void 0 !== t && (a = i.from(t.errorCorrectionLevel, i.M), n = h.from(t.version), r = c.from(t.maskPattern), t.toSJISFunc && o.setToSJISFunction(t.toSJISFunc)), _(e, n, a, r)
+				var n, r, i = a.M;
+				return void 0 !== t && (i = a.from(t.errorCorrectionLevel, a.M), n = h.from(t.version), r = d.from(t.maskPattern), t.toSJISFunc && o.setToSJISFunction(t.toSJISFunc)), _(e, n, i, r)
 			}
 		},
 		"./node_modules/qrcode/lib/core/reed-solomon-encoder.js": function(e, t, n) {
 			var r = n("./node_modules/qrcode/lib/utils/typedarray-buffer.js"),
 				o = n("./node_modules/qrcode/lib/core/polynomial.js"),
-				i = n("./node_modules/node-libs-browser/node_modules/buffer/index.js").Buffer;
+				a = n("./node_modules/node-libs-browser/node_modules/buffer/index.js").Buffer;
 
-			function a(e) {
+			function i(e) {
 				this.genPoly = void 0, this.degree = e, this.degree && this.initialize(this.degree)
 			}
-			a.prototype.initialize = function(e) {
+			i.prototype.initialize = function(e) {
 				this.degree = e, this.genPoly = o.generateECPolynomial(this.degree)
-			}, a.prototype.encode = function(e) {
+			}, i.prototype.encode = function(e) {
 				if (!this.genPoly) throw new Error("Encoder not initialized");
 				var t = r.alloc(this.degree),
-					n = i.concat([e, t], e.length + this.degree),
-					a = o.mod(n, this.genPoly),
-					s = this.degree - a.length;
+					n = a.concat([e, t], e.length + this.degree),
+					i = o.mod(n, this.genPoly),
+					s = this.degree - i.length;
 				if (s > 0) {
-					var d = r.alloc(this.degree);
-					return a.copy(d, s), d
+					var c = r.alloc(this.degree);
+					return i.copy(c, s), c
 				}
-				return a
-			}, e.exports = a
+				return i
+			}, e.exports = i
 		},
 		"./node_modules/qrcode/lib/core/regex.js": function(e, t) {
 			var n = "(?:[u3000-u303F]|[u3040-u309F]|[u30A0-u30FF]|[uFF00-uFFEF]|[u4E00-u9FAF]|[u2605-u2606]|[u2190-u2195]|u203B|[u2010u2015u2018u2019u2025u2026u201Cu201Du2225u2260]|[u0391-u0451]|[u00A7u00A8u00B1u00B4u00D7u00F7])+",
 				r = "(?:(?![A-Z0-9 $%*+\\-./:]|" + (n = n.replace(/u/g, "\\u")) + ")(?:.|[\r\n]))+";
 			t.KANJI = new RegExp(n, "g"), t.BYTE_KANJI = new RegExp("[^A-Z0-9 $%*+\\-./:]+", "g"), t.BYTE = new RegExp(r, "g"), t.NUMERIC = new RegExp("[0-9]+", "g"), t.ALPHANUMERIC = new RegExp("[A-Z $%*+\\-./:]+", "g");
 			var o = new RegExp("^" + n + "$"),
-				i = new RegExp("^[0-9]+$"),
-				a = new RegExp("^[A-Z0-9 $%*+\\-./:]+$");
+				a = new RegExp("^[0-9]+$"),
+				i = new RegExp("^[A-Z0-9 $%*+\\-./:]+$");
 			t.testKanji = function(e) {
 				return o.test(e)
 			}, t.testNumeric = function(e) {
-				return i.test(e)
-			}, t.testAlphanumeric = function(e) {
 				return a.test(e)
+			}, t.testAlphanumeric = function(e) {
+				return i.test(e)
 			}
 		},
 		"./node_modules/qrcode/lib/core/segments.js": function(e, t, n) {
 			var r = n("./node_modules/qrcode/lib/core/mode.js"),
 				o = n("./node_modules/qrcode/lib/core/numeric-data.js"),
-				i = n("./node_modules/qrcode/lib/core/alphanumeric-data.js"),
-				a = n("./node_modules/qrcode/lib/core/byte-data.js"),
+				a = n("./node_modules/qrcode/lib/core/alphanumeric-data.js"),
+				i = n("./node_modules/qrcode/lib/core/byte-data.js"),
 				s = n("./node_modules/qrcode/lib/core/kanji-data.js"),
-				d = n("./node_modules/qrcode/lib/core/regex.js"),
+				c = n("./node_modules/qrcode/lib/core/regex.js"),
 				l = n("./node_modules/qrcode/lib/core/utils.js"),
-				c = n("./node_modules/dijkstrajs/dijkstra.js");
+				d = n("./node_modules/dijkstrajs/dijkstra.js");
 
 			function u(e) {
 				return unescape(encodeURIComponent(e)).length
@@ -662,9 +662,9 @@
 			}
 
 			function h(e) {
-				var t, n, o = m(d.NUMERIC, r.NUMERIC, e),
-					i = m(d.ALPHANUMERIC, r.ALPHANUMERIC, e);
-				return l.isKanjiModeEnabled() ? (t = m(d.BYTE, r.BYTE, e), n = m(d.KANJI, r.KANJI, e)) : (t = m(d.BYTE_KANJI, r.BYTE, e), n = []), o.concat(i, t, n).sort((function(e, t) {
+				var t, n, o = m(c.NUMERIC, r.NUMERIC, e),
+					a = m(c.ALPHANUMERIC, r.ALPHANUMERIC, e);
+				return l.isKanjiModeEnabled() ? (t = m(c.BYTE, r.BYTE, e), n = m(c.KANJI, r.KANJI, e)) : (t = m(c.BYTE_KANJI, r.BYTE, e), n = []), o.concat(a, t, n).sort((function(e, t) {
 					return e.index - t.index
 				})).map((function(e) {
 					return {
@@ -680,52 +680,52 @@
 					case r.NUMERIC:
 						return o.getBitsLength(e);
 					case r.ALPHANUMERIC:
-						return i.getBitsLength(e);
+						return a.getBitsLength(e);
 					case r.KANJI:
 						return s.getBitsLength(e);
 					case r.BYTE:
-						return a.getBitsLength(e)
+						return i.getBitsLength(e)
 				}
 			}
 
-			function p(e, t) {
-				var n, d = r.getBestModeForData(e);
-				if ((n = r.from(t, d)) !== r.BYTE && n.bit < d.bit) throw new Error('"' + e + '" cannot be encoded with mode ' + r.toString(n) + ".\n Suggested mode is: " + r.toString(d));
+			function g(e, t) {
+				var n, c = r.getBestModeForData(e);
+				if ((n = r.from(t, c)) !== r.BYTE && n.bit < c.bit) throw new Error('"' + e + '" cannot be encoded with mode ' + r.toString(n) + ".\n Suggested mode is: " + r.toString(c));
 				switch (n !== r.KANJI || l.isKanjiModeEnabled() || (n = r.BYTE), n) {
 					case r.NUMERIC:
 						return new o(e);
 					case r.ALPHANUMERIC:
-						return new i(e);
+						return new a(e);
 					case r.KANJI:
 						return new s(e);
 					case r.BYTE:
-						return new a(e)
+						return new i(e)
 				}
 			}
 			t.fromArray = function(e) {
 				return e.reduce((function(e, t) {
-					return "string" == typeof t ? e.push(p(t, null)) : t.data && e.push(p(t.data, t.mode)), e
+					return "string" == typeof t ? e.push(g(t, null)) : t.data && e.push(g(t.data, t.mode)), e
 				}), [])
 			}, t.fromString = function(e, n) {
 				for (var o = function(e, t) {
 						for (var n = {}, o = {
 								start: {}
-							}, i = ["start"], a = 0; a < e.length; a++) {
-							for (var s = e[a], d = [], l = 0; l < s.length; l++) {
-								var c = s[l],
-									u = "" + a + l;
-								d.push(u), n[u] = {
-									node: c,
+							}, a = ["start"], i = 0; i < e.length; i++) {
+							for (var s = e[i], c = [], l = 0; l < s.length; l++) {
+								var d = s[l],
+									u = "" + i + l;
+								c.push(u), n[u] = {
+									node: d,
 									lastCount: 0
 								}, o[u] = {};
-								for (var m = 0; m < i.length; m++) {
-									var h = i[m];
-									n[h] && n[h].node.mode === c.mode ? (o[h][u] = f(n[h].lastCount + c.length, c.mode) - f(n[h].lastCount, c.mode), n[h].lastCount += c.length) : (n[h] && (n[h].lastCount = c.length), o[h][u] = f(c.length, c.mode) + 4 + r.getCharCountIndicator(c.mode, t))
+								for (var m = 0; m < a.length; m++) {
+									var h = a[m];
+									n[h] && n[h].node.mode === d.mode ? (o[h][u] = f(n[h].lastCount + d.length, d.mode) - f(n[h].lastCount, d.mode), n[h].lastCount += d.length) : (n[h] && (n[h].lastCount = d.length), o[h][u] = f(d.length, d.mode) + 4 + r.getCharCountIndicator(d.mode, t))
 								}
 							}
-							i = d
+							a = c
 						}
-						for (m = 0; m < i.length; m++) o[i[m]].end = 0;
+						for (m = 0; m < a.length; m++) o[a[m]].end = 0;
 						return {
 							map: o,
 							table: n
@@ -768,13 +768,13 @@
 							}
 						}
 						return t
-					}(h(e, l.isKanjiModeEnabled())), n), i = c.find_path(o.map, "start", "end"), a = [], s = 1; s < i.length - 1; s++) a.push(o.table[i[s]].node);
+					}(h(e, l.isKanjiModeEnabled())), n), a = d.find_path(o.map, "start", "end"), i = [], s = 1; s < a.length - 1; s++) i.push(o.table[a[s]].node);
 				return t.fromArray(function(e) {
 					return e.reduce((function(e, t) {
 						var n = e.length - 1 >= 0 ? e[e.length - 1] : null;
 						return n && n.mode === t.mode ? (e[e.length - 1].data += t.data, e) : (e.push(t), e)
 					}), [])
-				}(a))
+				}(i))
 			}, t.rawSplit = function(e) {
 				return t.fromArray(h(e, l.isKanjiModeEnabled()))
 			}
@@ -807,20 +807,20 @@
 		"./node_modules/qrcode/lib/core/version.js": function(e, t, n) {
 			var r = n("./node_modules/qrcode/lib/core/utils.js"),
 				o = n("./node_modules/qrcode/lib/core/error-correction-code.js"),
-				i = n("./node_modules/qrcode/lib/core/error-correction-level.js"),
-				a = n("./node_modules/qrcode/lib/core/mode.js"),
+				a = n("./node_modules/qrcode/lib/core/error-correction-level.js"),
+				i = n("./node_modules/qrcode/lib/core/mode.js"),
 				s = n("./node_modules/qrcode/lib/core/version-check.js"),
-				d = n("./node_modules/qrcode/node_modules/isarray/index.js"),
+				c = n("./node_modules/qrcode/node_modules/isarray/index.js"),
 				l = r.getBCHDigit(7973);
 
-			function c(e, t) {
-				return a.getCharCountIndicator(e, t) + 4
+			function d(e, t) {
+				return i.getCharCountIndicator(e, t) + 4
 			}
 
 			function u(e, t) {
 				var n = 0;
 				return e.forEach((function(e) {
-					var r = c(e.mode, t);
+					var r = d(e.mode, t);
 					n += r + e.getBitsLength()
 				})), n
 			}
@@ -828,27 +828,27 @@
 				return s.isValid(e) ? parseInt(e, 10) : t
 			}, t.getCapacity = function(e, t, n) {
 				if (!s.isValid(e)) throw new Error("Invalid QR Code version");
-				void 0 === n && (n = a.BYTE);
-				var i = 8 * (r.getSymbolTotalCodewords(e) - o.getTotalCodewordsCount(e, t));
-				if (n === a.MIXED) return i;
-				var d = i - c(n, e);
+				void 0 === n && (n = i.BYTE);
+				var a = 8 * (r.getSymbolTotalCodewords(e) - o.getTotalCodewordsCount(e, t));
+				if (n === i.MIXED) return a;
+				var c = a - d(n, e);
 				switch (n) {
-					case a.NUMERIC:
-						return Math.floor(d / 10 * 3);
-					case a.ALPHANUMERIC:
-						return Math.floor(d / 11 * 2);
-					case a.KANJI:
-						return Math.floor(d / 13);
-					case a.BYTE:
+					case i.NUMERIC:
+						return Math.floor(c / 10 * 3);
+					case i.ALPHANUMERIC:
+						return Math.floor(c / 11 * 2);
+					case i.KANJI:
+						return Math.floor(c / 13);
+					case i.BYTE:
 					default:
-						return Math.floor(d / 8)
+						return Math.floor(c / 8)
 				}
 			}, t.getBestVersionForData = function(e, n) {
-				var r, o = i.from(n, i.M);
-				if (d(e)) {
+				var r, o = a.from(n, a.M);
+				if (c(e)) {
 					if (e.length > 1) return function(e, n) {
 						for (var r = 1; r <= 40; r++) {
-							if (u(e, r) <= t.getCapacity(r, n, a.MIXED)) return r
+							if (u(e, r) <= t.getCapacity(r, n, i.MIXED)) return r
 						}
 					}(e, o);
 					if (0 === e.length) return 1;
@@ -868,28 +868,28 @@
 			var r = n("./node_modules/qrcode/lib/renderer/utils.js");
 			t.render = function(e, t, n) {
 				var o = n,
-					i = t;
-				void 0 !== o || t && t.getContext || (o = t, t = void 0), t || (i = function() {
+					a = t;
+				void 0 !== o || t && t.getContext || (o = t, t = void 0), t || (a = function() {
 					try {
 						return document.createElement("canvas")
 					} catch (e) {
 						throw new Error("You need to specify a canvas element")
 					}
 				}()), o = r.getOptions(o);
-				var a = r.getImageWidth(e.modules.size, o),
-					s = i.getContext("2d"),
-					d = s.createImageData(a, a);
-				return r.qrToImageData(d.data, e, o),
+				var i = r.getImageWidth(e.modules.size, o),
+					s = a.getContext("2d"),
+					c = s.createImageData(i, i);
+				return r.qrToImageData(c.data, e, o),
 					function(e, t, n) {
 						e.clearRect(0, 0, t.width, t.height), t.style || (t.style = {}), t.height = n, t.width = n, t.style.height = n + "px", t.style.width = n + "px"
-					}(s, i, a), s.putImageData(d, 0, 0), i
+					}(s, a, i), s.putImageData(c, 0, 0), a
 			}, t.renderToDataURL = function(e, n, r) {
 				var o = r;
 				void 0 !== o || n && n.getContext || (o = n, n = void 0), o || (o = {});
-				var i = t.render(e, n, o),
-					a = o.type || "image/png",
+				var a = t.render(e, n, o),
+					i = o.type || "image/png",
 					s = o.rendererOpts || {};
-				return i.toDataURL(a, s.quality)
+				return a.toDataURL(i, s.quality)
 			}
 		},
 		"./node_modules/qrcode/lib/renderer/svg-tag.js": function(e, t, n) {
@@ -901,26 +901,26 @@
 				return n < 1 ? r + " " + t + '-opacity="' + n.toFixed(2).slice(1) + '"' : r
 			}
 
-			function i(e, t, n) {
+			function a(e, t, n) {
 				var r = e + t;
 				return void 0 !== n && (r += " " + n), r
 			}
 			t.render = function(e, t, n) {
-				var a = r.getOptions(t),
+				var i = r.getOptions(t),
 					s = e.modules.size,
-					d = e.modules.data,
-					l = s + 2 * a.margin,
-					c = a.color.light.a ? "<path " + o(a.color.light, "fill") + ' d="M0 0h' + l + "v" + l + 'H0z"/>' : "",
-					u = "<path " + o(a.color.dark, "stroke") + ' d="' + function(e, t, n) {
-						for (var r = "", o = 0, a = !1, s = 0, d = 0; d < e.length; d++) {
-							var l = Math.floor(d % t),
-								c = Math.floor(d / t);
-							l || a || (a = !0), e[d] ? (s++, d > 0 && l > 0 && e[d - 1] || (r += a ? i("M", l + n, .5 + c + n) : i("m", o, 0), o = 0, a = !1), l + 1 < t && e[d + 1] || (r += i("h", s), s = 0)) : o++
+					c = e.modules.data,
+					l = s + 2 * i.margin,
+					d = i.color.light.a ? "<path " + o(i.color.light, "fill") + ' d="M0 0h' + l + "v" + l + 'H0z"/>' : "",
+					u = "<path " + o(i.color.dark, "stroke") + ' d="' + function(e, t, n) {
+						for (var r = "", o = 0, i = !1, s = 0, c = 0; c < e.length; c++) {
+							var l = Math.floor(c % t),
+								d = Math.floor(c / t);
+							l || i || (i = !0), e[c] ? (s++, c > 0 && l > 0 && e[c - 1] || (r += i ? a("M", l + n, .5 + d + n) : a("m", o, 0), o = 0, i = !1), l + 1 < t && e[c + 1] || (r += a("h", s), s = 0)) : o++
 						}
 						return r
-					}(d, s, a.margin) + '"/>',
+					}(c, s, i.margin) + '"/>',
 					m = 'viewBox="0 0 ' + l + " " + l + '"',
-					h = '<svg xmlns="http://www.w3.org/2000/svg" ' + (a.width ? 'width="' + a.width + '" height="' + a.width + '" ' : "") + m + ' shape-rendering="crispEdges">' + c + u + "</svg>\n";
+					h = '<svg xmlns="http://www.w3.org/2000/svg" ' + (i.width ? 'width="' + i.width + '" height="' + i.width + '" ' : "") + m + ' shape-rendering="crispEdges">' + d + u + "</svg>\n";
 				return "function" == typeof n && n(null, h), h
 			}
 		},
@@ -963,11 +963,11 @@
 				var r = t.getScale(e, n);
 				return Math.floor((e + 2 * n.margin) * r)
 			}, t.qrToImageData = function(e, n, r) {
-				for (var o = n.modules.size, i = n.modules.data, a = t.getScale(o, r), s = Math.floor((o + 2 * r.margin) * a), d = r.margin * a, l = [r.color.light, r.color.dark], c = 0; c < s; c++)
+				for (var o = n.modules.size, a = n.modules.data, i = t.getScale(o, r), s = Math.floor((o + 2 * r.margin) * i), c = r.margin * i, l = [r.color.light, r.color.dark], d = 0; d < s; d++)
 					for (var u = 0; u < s; u++) {
-						var m = 4 * (c * s + u),
+						var m = 4 * (d * s + u),
 							h = r.color.light;
-						if (c >= d && u >= d && c < s - d && u < s - d) h = l[i[Math.floor((c - d) / a) * o + Math.floor((u - d) / a)] ? 1 : 0];
+						if (d >= c && u >= c && d < s - c && u < s - c) h = l[a[Math.floor((d - c) / i) * o + Math.floor((u - c) / i)] ? 1 : 0];
 						e[m++] = h.r, e[m++] = h.g, e[m++] = h.b, e[m] = h.a
 					}
 			}
@@ -975,7 +975,7 @@
 		"./node_modules/qrcode/lib/utils/typedarray-buffer.js": function(e, t, n) {
 			"use strict";
 			var r = n("./node_modules/qrcode/node_modules/isarray/index.js");
-			i.TYPED_ARRAY_SUPPORT = function() {
+			a.TYPED_ARRAY_SUPPORT = function() {
 				try {
 					var e = new Uint8Array(1);
 					return e.__proto__ = {
@@ -988,17 +988,17 @@
 					return !1
 				}
 			}();
-			var o = i.TYPED_ARRAY_SUPPORT ? 2147483647 : 1073741823;
+			var o = a.TYPED_ARRAY_SUPPORT ? 2147483647 : 1073741823;
 
-			function i(e, t, n) {
-				return i.TYPED_ARRAY_SUPPORT || this instanceof i ? "number" == typeof e ? d(this, e) : function(e, t, n, r) {
+			function a(e, t, n) {
+				return a.TYPED_ARRAY_SUPPORT || this instanceof a ? "number" == typeof e ? c(this, e) : function(e, t, n, r) {
 					if ("number" == typeof t) throw new TypeError('"value" argument must not be a number');
 					if ("undefined" != typeof ArrayBuffer && t instanceof ArrayBuffer) return function(e, t, n, r) {
 						if (n < 0 || t.byteLength < n) throw new RangeError("'offset' is out of bounds");
 						if (t.byteLength < n + (r || 0)) throw new RangeError("'length' is out of bounds");
 						var o;
 						o = void 0 === n && void 0 === r ? new Uint8Array(t) : void 0 === r ? new Uint8Array(t, n) : new Uint8Array(t, n, r);
-						i.TYPED_ARRAY_SUPPORT ? o.__proto__ = i.prototype : o = l(e, o);
+						a.TYPED_ARRAY_SUPPORT ? o.__proto__ = a.prototype : o = l(e, o);
 						return o
 					}(e, t, n, r);
 					if ("string" == typeof t) return function(e, t) {
@@ -1009,8 +1009,8 @@
 						return r
 					}(e, t);
 					return function(e, t) {
-						if (i.isBuffer(t)) {
-							var n = 0 | a(t.length),
+						if (a.isBuffer(t)) {
+							var n = 0 | i(t.length),
 								r = s(e, n);
 							return 0 === r.length ? r : (t.copy(r, 0, 0, n), r)
 						}
@@ -1021,81 +1021,81 @@
 						var o;
 						throw new TypeError("First argument must be a string, Buffer, ArrayBuffer, Array, or array-like object.")
 					}(e, t)
-				}(this, e, t, n) : new i(e, t, n)
+				}(this, e, t, n) : new a(e, t, n)
 			}
 
-			function a(e) {
+			function i(e) {
 				if (e >= o) throw new RangeError("Attempt to allocate Buffer larger than maximum size: 0x" + o.toString(16) + " bytes");
 				return 0 | e
 			}
 
 			function s(e, t) {
 				var n;
-				return i.TYPED_ARRAY_SUPPORT ? (n = new Uint8Array(t)).__proto__ = i.prototype : (null === (n = e) && (n = new i(t)), n.length = t), n
+				return a.TYPED_ARRAY_SUPPORT ? (n = new Uint8Array(t)).__proto__ = a.prototype : (null === (n = e) && (n = new a(t)), n.length = t), n
 			}
 
-			function d(e, t) {
-				var n = s(e, t < 0 ? 0 : 0 | a(t));
-				if (!i.TYPED_ARRAY_SUPPORT)
+			function c(e, t) {
+				var n = s(e, t < 0 ? 0 : 0 | i(t));
+				if (!a.TYPED_ARRAY_SUPPORT)
 					for (var r = 0; r < t; ++r) n[r] = 0;
 				return n
 			}
 
 			function l(e, t) {
-				for (var n = t.length < 0 ? 0 : 0 | a(t.length), r = s(e, n), o = 0; o < n; o += 1) r[o] = 255 & t[o];
+				for (var n = t.length < 0 ? 0 : 0 | i(t.length), r = s(e, n), o = 0; o < n; o += 1) r[o] = 255 & t[o];
 				return r
 			}
 
-			function c(e, t) {
+			function d(e, t) {
 				var n;
 				t = t || 1 / 0;
-				for (var r = e.length, o = null, i = [], a = 0; a < r; ++a) {
-					if ((n = e.charCodeAt(a)) > 55295 && n < 57344) {
+				for (var r = e.length, o = null, a = [], i = 0; i < r; ++i) {
+					if ((n = e.charCodeAt(i)) > 55295 && n < 57344) {
 						if (!o) {
 							if (n > 56319) {
-								(t -= 3) > -1 && i.push(239, 191, 189);
+								(t -= 3) > -1 && a.push(239, 191, 189);
 								continue
 							}
-							if (a + 1 === r) {
-								(t -= 3) > -1 && i.push(239, 191, 189);
+							if (i + 1 === r) {
+								(t -= 3) > -1 && a.push(239, 191, 189);
 								continue
 							}
 							o = n;
 							continue
 						}
 						if (n < 56320) {
-							(t -= 3) > -1 && i.push(239, 191, 189), o = n;
+							(t -= 3) > -1 && a.push(239, 191, 189), o = n;
 							continue
 						}
 						n = 65536 + (o - 55296 << 10 | n - 56320)
-					} else o && (t -= 3) > -1 && i.push(239, 191, 189);
+					} else o && (t -= 3) > -1 && a.push(239, 191, 189);
 					if (o = null, n < 128) {
 						if ((t -= 1) < 0) break;
-						i.push(n)
+						a.push(n)
 					} else if (n < 2048) {
 						if ((t -= 2) < 0) break;
-						i.push(n >> 6 | 192, 63 & n | 128)
+						a.push(n >> 6 | 192, 63 & n | 128)
 					} else if (n < 65536) {
 						if ((t -= 3) < 0) break;
-						i.push(n >> 12 | 224, n >> 6 & 63 | 128, 63 & n | 128)
+						a.push(n >> 12 | 224, n >> 6 & 63 | 128, 63 & n | 128)
 					} else {
 						if (!(n < 1114112)) throw new Error("Invalid code point");
 						if ((t -= 4) < 0) break;
-						i.push(n >> 18 | 240, n >> 12 & 63 | 128, n >> 6 & 63 | 128, 63 & n | 128)
+						a.push(n >> 18 | 240, n >> 12 & 63 | 128, n >> 6 & 63 | 128, 63 & n | 128)
 					}
 				}
-				return i
+				return a
 			}
 
 			function u(e) {
-				return i.isBuffer(e) ? e.length : "undefined" != typeof ArrayBuffer && "function" == typeof ArrayBuffer.isView && (ArrayBuffer.isView(e) || e instanceof ArrayBuffer) ? e.byteLength : ("string" != typeof e && (e = "" + e), 0 === e.length ? 0 : c(e).length)
+				return a.isBuffer(e) ? e.length : "undefined" != typeof ArrayBuffer && "function" == typeof ArrayBuffer.isView && (ArrayBuffer.isView(e) || e instanceof ArrayBuffer) ? e.byteLength : ("string" != typeof e && (e = "" + e), 0 === e.length ? 0 : d(e).length)
 			}
-			i.TYPED_ARRAY_SUPPORT && (i.prototype.__proto__ = Uint8Array.prototype, i.__proto__ = Uint8Array, "undefined" != typeof Symbol && Symbol.species && i[Symbol.species] === i && Object.defineProperty(i, Symbol.species, {
+			a.TYPED_ARRAY_SUPPORT && (a.prototype.__proto__ = Uint8Array.prototype, a.__proto__ = Uint8Array, "undefined" != typeof Symbol && Symbol.species && a[Symbol.species] === a && Object.defineProperty(a, Symbol.species, {
 				value: null,
 				configurable: !0,
 				enumerable: !1,
 				writable: !1
-			})), i.prototype.write = function(e, t, n) {
+			})), a.prototype.write = function(e, t, n) {
 				void 0 === t ? (n = this.length, t = 0) : void 0 === n && "string" == typeof t ? (n = this.length, t = 0) : isFinite(t) && (t |= 0, isFinite(n) ? n |= 0 : n = void 0);
 				var r = this.length - t;
 				if ((void 0 === n || n > r) && (n = r), e.length > 0 && (n < 0 || t < 0) || t > this.length) throw new RangeError("Attempt to write outside buffer bounds");
@@ -1103,32 +1103,32 @@
 					return function(e, t, n, r) {
 						for (var o = 0; o < r && !(o + n >= t.length || o >= e.length); ++o) t[o + n] = e[o];
 						return o
-					}(c(t, e.length - n), e, n, r)
+					}(d(t, e.length - n), e, n, r)
 				}(this, e, t, n)
-			}, i.prototype.slice = function(e, t) {
+			}, a.prototype.slice = function(e, t) {
 				var n, r = this.length;
-				if ((e = ~~e) < 0 ? (e += r) < 0 && (e = 0) : e > r && (e = r), (t = void 0 === t ? r : ~~t) < 0 ? (t += r) < 0 && (t = 0) : t > r && (t = r), t < e && (t = e), i.TYPED_ARRAY_SUPPORT)(n = this.subarray(e, t)).__proto__ = i.prototype;
+				if ((e = ~~e) < 0 ? (e += r) < 0 && (e = 0) : e > r && (e = r), (t = void 0 === t ? r : ~~t) < 0 ? (t += r) < 0 && (t = 0) : t > r && (t = r), t < e && (t = e), a.TYPED_ARRAY_SUPPORT)(n = this.subarray(e, t)).__proto__ = a.prototype;
 				else {
 					var o = t - e;
-					n = new i(o, void 0);
-					for (var a = 0; a < o; ++a) n[a] = this[a + e]
+					n = new a(o, void 0);
+					for (var i = 0; i < o; ++i) n[i] = this[i + e]
 				}
 				return n
-			}, i.prototype.copy = function(e, t, n, r) {
+			}, a.prototype.copy = function(e, t, n, r) {
 				if (n || (n = 0), r || 0 === r || (r = this.length), t >= e.length && (t = e.length), t || (t = 0), r > 0 && r < n && (r = n), r === n) return 0;
 				if (0 === e.length || 0 === this.length) return 0;
 				if (t < 0) throw new RangeError("targetStart out of bounds");
 				if (n < 0 || n >= this.length) throw new RangeError("sourceStart out of bounds");
 				if (r < 0) throw new RangeError("sourceEnd out of bounds");
 				r > this.length && (r = this.length), e.length - t < r - n && (r = e.length - t + n);
-				var o, a = r - n;
+				var o, i = r - n;
 				if (this === e && n < t && t < r)
-					for (o = a - 1; o >= 0; --o) e[o + t] = this[o + n];
-				else if (a < 1e3 || !i.TYPED_ARRAY_SUPPORT)
-					for (o = 0; o < a; ++o) e[o + t] = this[o + n];
-				else Uint8Array.prototype.set.call(e, this.subarray(n, n + a), t);
-				return a
-			}, i.prototype.fill = function(e, t, n) {
+					for (o = i - 1; o >= 0; --o) e[o + t] = this[o + n];
+				else if (i < 1e3 || !a.TYPED_ARRAY_SUPPORT)
+					for (o = 0; o < i; ++o) e[o + t] = this[o + n];
+				else Uint8Array.prototype.set.call(e, this.subarray(n, n + i), t);
+				return i
+			}, a.prototype.fill = function(e, t, n) {
 				if ("string" == typeof e) {
 					if ("string" == typeof t ? (t = 0, n = this.length) : "string" == typeof n && (n = this.length), 1 === e.length) {
 						var r = e.charCodeAt(0);
@@ -1141,32 +1141,32 @@
 				if (t >>>= 0, n = void 0 === n ? this.length : n >>> 0, e || (e = 0), "number" == typeof e)
 					for (o = t; o < n; ++o) this[o] = e;
 				else {
-					var a = i.isBuffer(e) ? e : new i(e),
-						s = a.length;
-					for (o = 0; o < n - t; ++o) this[o + t] = a[o % s]
+					var i = a.isBuffer(e) ? e : new a(e),
+						s = i.length;
+					for (o = 0; o < n - t; ++o) this[o + t] = i[o % s]
 				}
 				return this
-			}, i.concat = function(e, t) {
+			}, a.concat = function(e, t) {
 				if (!r(e)) throw new TypeError('"list" argument must be an Array of Buffers');
 				if (0 === e.length) return s(null, 0);
 				var n;
 				if (void 0 === t)
 					for (t = 0, n = 0; n < e.length; ++n) t += e[n].length;
-				var o = d(null, t),
-					a = 0;
+				var o = c(null, t),
+					i = 0;
 				for (n = 0; n < e.length; ++n) {
 					var l = e[n];
-					if (!i.isBuffer(l)) throw new TypeError('"list" argument must be an Array of Buffers');
-					l.copy(o, a), a += l.length
+					if (!a.isBuffer(l)) throw new TypeError('"list" argument must be an Array of Buffers');
+					l.copy(o, i), i += l.length
 				}
 				return o
-			}, i.byteLength = u, i.prototype._isBuffer = !0, i.isBuffer = function(e) {
+			}, a.byteLength = u, a.prototype._isBuffer = !0, a.isBuffer = function(e) {
 				return !(null == e || !e._isBuffer)
 			}, e.exports.alloc = function(e) {
-				var t = new i(e);
+				var t = new a(e);
 				return t.fill(0), t
 			}, e.exports.from = function(e) {
-				return new i(e)
+				return new a(e)
 			}
 		},
 		"./node_modules/qrcode/node_modules/isarray/index.js": function(e, t) {
@@ -1189,27 +1189,27 @@
 			}));
 			var r = n("./node_modules/react/index.js"),
 				o = n.n(r),
-				i = n("./src/reddit/constants/colors.ts"),
-				a = n("./src/reddit/helpers/styles/smartTextColor.ts"),
+				a = n("./src/reddit/constants/colors.ts"),
+				i = n("./src/reddit/helpers/styles/smartTextColor.ts"),
 				s = n("./src/reddit/components/Governance/TransactionModals/Common/Bullet.m.less"),
-				d = n.n(s);
+				c = n.n(s);
 
 			function l(e) {
 				const {
 					index: t,
 					children: n,
 					color: r
-				} = e, s = r && Object(a.a)(r, void 0, i.b.white);
+				} = e, s = r && Object(i.a)(r, void 0, a.b.white);
 				return o.a.createElement("div", {
-					className: d.a.bullet
+					className: c.a.bullet
 				}, o.a.createElement("div", {
-					className: d.a.circle,
+					className: c.a.circle,
 					style: {
 						backgroundColor: r,
 						color: s
 					}
 				}, o.a.createElement("span", {
-					className: d.a.number
+					className: c.a.number
 				}, t)), o.a.createElement("div", null, n))
 			}
 		},
@@ -1217,11 +1217,11 @@
 			"use strict";
 			var r = n("./node_modules/qrcode/lib/browser.js"),
 				o = n.n(r),
-				i = n("./node_modules/react/index.js"),
-				a = n.n(i),
+				a = n("./node_modules/react/index.js"),
+				i = n.n(a),
 				s = n("./src/lib/CSSVariableProvider/withTheme.tsx"),
-				d = n("./src/reddit/models/Theme/NewColorSystem/index.ts");
-			class l extends a.a.Component {
+				c = n("./src/reddit/models/Theme/NewColorSystem/index.ts");
+			class l extends i.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						dataURL: null
@@ -1236,8 +1236,8 @@
 				async updateDataURL() {
 					const e = await o.a.toDataURL(this.props.url, {
 						color: {
-							dark: Object(d.a)(this.props).titleText,
-							light: Object(d.a)(this.props).body
+							dark: Object(c.a)(this.props).titleText,
+							light: Object(c.a)(this.props).body
 						},
 						margin: 0,
 						scale: this.props.scale || 3
@@ -1250,7 +1250,7 @@
 					const {
 						dataURL: e
 					} = this.state;
-					return e && a.a.createElement("img", {
+					return e && i.a.createElement("img", {
 						src: e,
 						className: this.props.className
 					})
@@ -1278,26 +1278,26 @@
 			}));
 			var r = n("./node_modules/react/index.js"),
 				o = n.n(r),
-				i = n("./node_modules/react-redux/es/index.js"),
-				a = n("./node_modules/reselect/es/index.js"),
+				a = n("./node_modules/react-redux/es/index.js"),
+				i = n("./node_modules/reselect/es/index.js"),
 				s = n("./src/higherOrderComponents/asModal/index.tsx"),
-				d = n("./src/lib/addQueryParams/index.ts"),
+				c = n("./src/lib/addQueryParams/index.ts"),
 				l = n("./src/reddit/icons/svgs/Close/index.tsx"),
-				c = n("./src/reddit/selectors/user.ts"),
+				d = n("./src/reddit/selectors/user.ts"),
 				u = n("./src/reddit/components/Governance/TransactionModals/Common/Bullet.tsx"),
 				m = n("./src/reddit/components/Governance/TransactionModals/Common/QRCode.tsx"),
 				h = n("./src/reddit/components/Governance/TransactionModals/CreateVaultModal/index.m.less"),
 				f = n.n(h);
 			const {
-				fbt: p
+				fbt: g
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
-			const g = Object(a.c)({
+			const p = Object(i.c)({
 					userId: e => {
-						const t = Object(c.k)(e);
+						const t = Object(d.k)(e);
 						return t ? t.id : ""
 					}
 				}),
-				b = Object(i.b)(g)((function(e) {
+				b = Object(a.b)(p)((function(e) {
 					const {
 						onClose: t,
 						userId: n
@@ -1308,7 +1308,7 @@
 						className: f.a.header
 					}, o.a.createElement("div", {
 						className: f.a.title
-					}, p._("Create Your Vault on Your Smartphone", null, {
+					}, g._("Create Your Vault on Your Smartphone", null, {
 						hk: "247Dqn"
 					})), o.a.createElement(l.a, {
 						className: f.a.closeButton,
@@ -1319,30 +1319,30 @@
 						className: f.a.leftSection
 					}, o.a.createElement("div", {
 						className: f.a.sectionHeader
-					}, p._("Use the mobile app to create a Vault", null, {
+					}, g._("Use the mobile app to create a Vault", null, {
 						hk: "4DKtAt"
 					})), o.a.createElement("div", {
 						className: f.a.content
 					}, o.a.createElement(u.a, {
 						index: "1"
-					}, p._("Get the official Reddit app for iOS or Android", null, {
+					}, g._("Get the official Reddit app for iOS or Android", null, {
 						hk: "420pUH"
 					})), o.a.createElement(u.a, {
 						index: "2"
-					}, p._("Log in to your Reddit account", null, {
+					}, g._("Log in to your Reddit account", null, {
 						hk: "3G7IZ2"
 					})), o.a.createElement(u.a, {
 						index: "3"
-					}, p._("Open your Camera, scan the QR code & follow the URL", null, {
+					}, g._("Open your Camera, scan the QR code & follow the URL", null, {
 						hk: "FWSNM"
 					})), o.a.createElement(u.a, {
 						index: "4"
-					}, p._("Or, open the Reddit app and tap your profile photo at the top. Then tap Vault, and follow the instructions", null, {
+					}, g._("Or, open the Reddit app and tap your profile photo at the top. Then tap Vault, and follow the instructions", null, {
 						hk: "3C5vxO"
 					})))), o.a.createElement("section", {
 						className: f.a.rightSection
 					}, o.a.createElement(m.a, {
-						url: Object(d.a)("http://www.reddit.com/vault/", {
+						url: Object(c.a)("http://www.reddit.com/vault/", {
 							u: n
 						}),
 						scale: 5
@@ -1353,17 +1353,17 @@
 		"./src/reddit/helpers/trackers/communityPoints.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "e", (function() {
-				return i
-			})), n.d(t, "d", (function() {
 				return a
+			})), n.d(t, "d", (function() {
+				return i
 			})), n.d(t, "c", (function() {
 				return s
 			})), n.d(t, "h", (function() {
-				return d
+				return c
 			})), n.d(t, "f", (function() {
 				return l
 			})), n.d(t, "g", (function() {
-				return c
+				return d
 			})), n.d(t, "b", (function() {
 				return u
 			})), n.d(t, "a", (function() {
@@ -1377,10 +1377,10 @@
 					noun: "feed_claim_points_banner",
 					subreddit: Object(r.subreddit)(t)
 				}),
-				i = () => o("view"),
-				a = () => o("tap"),
+				a = () => o("view"),
+				i = () => o("tap"),
 				s = () => o("dismiss"),
-				d = () => e => ({
+				c = () => e => ({
 					...Object(r.defaults)(e),
 					source: "meta",
 					action: "view",
@@ -1398,7 +1398,7 @@
 						reason: "learn_more"
 					}
 				}),
-				c = e => t => ({
+				d = e => t => ({
 					...Object(r.defaults)(t),
 					source: "meta",
 					action: "view",
@@ -1423,11 +1423,11 @@
 		},
 		"./src/reddit/models/Payments/index.ts": function(e, t, n) {
 			"use strict";
-			var r, o, i, a;
+			var r, o, a, i;
 			n.d(t, "b", (function() {
 					return o
 				})), n.d(t, "a", (function() {
-					return i
+					return a
 				})),
 				function(e) {
 					e.PayPal = "paypal", e.Stripe = "stripe"
@@ -1437,10 +1437,10 @@
 				}(o || (o = {})),
 				function(e) {
 					e.NewPayPal = "new-paypal", e.NewStripe = "new-stripe", e.SavedPayPal = "saved-paypal", e.SavedStripe = "saved-stripe"
-				}(i || (i = {})),
+				}(a || (a = {})),
 				function(e) {
 					e.Comment = "comment", e.Post = "post", e.Profile = "profile", e.Subreddit = "subreddit"
-				}(a || (a = {}))
+				}(i || (i = {}))
 		},
 		"./src/reddit/models/Product/index.ts": function(e, t, n) {
 			"use strict";
@@ -1492,6 +1492,26 @@
 				imageSection: "_3QpGuKfkNV6u59h-14CkFU"
 			}
 		},
+		"./src/reddit/pages/meta/CommunityPointsLearnMorePage/Footer/index.m.less": function(e, t, n) {
+			e.exports = {
+				container: "_39s4Rg_2-Yvhg8_j7HmwHz",
+				content: "_21JaPYggXVyLsz9Gm0gafa",
+				logo: "_1suWmsdOylQibxtvENDH0J",
+				link: "FSlJwTR_glxbHijEQl1LP",
+				spacer: "_2M28l0MkIvJi8JhKE7Puf"
+			}
+		},
+		"./src/reddit/pages/meta/CommunityPointsLearnMorePage/Header/index.m.less": function(e, t, n) {
+			e.exports = {
+				container: "_3hCEJSoCggYeV4_Vzkfj6p",
+				logo: "I0sVgzsD8iUdHKzDn3w8a",
+				snoo: "iCZwiIk1X_P-1bWrMlBo9",
+				wordmark: "_3IIgVNEfc4FHb6Uabcf5XO",
+				sections: "_2dnnlMMF10lQC5D3XckQWq",
+				sectionText: "_3fpURPqNv7UjrUQUoOgWlU",
+				joinWaitlist: "_35PGwOCrj4RRPhOFBN4lI9"
+			}
+		},
 		"./src/reddit/pages/meta/CommunityPointsLearnMorePage/Sections/Benefits/expandableText.m.less": function(e, t, n) {
 			e.exports = {
 				container: "_1pYG3qIuM4DcrXBl4ngRLH",
@@ -1531,20 +1551,8 @@
 				textContainer: "_1KUhJVhvhYgJy3UP7AVh8A",
 				title: "_1_XEsvgDaW6Ipmo8_EbUvx",
 				body: "_30rAKfIDOJdS0e_nAZ0SUC",
-				docsButton: "_1XLDJdCSJvNIHR52do04mJ",
-				docsIcon: "P5Cwi2ev6eMkDVIzzDWOS"
-			}
-		},
-		"./src/reddit/pages/meta/CommunityPointsLearnMorePage/Sections/FAQ/index.m.less": function(e, t, n) {
-			e.exports = {
-				background: "_2ge27xQx1Gt9ZLEAF5G56e",
-				snoo: "_2w697DOO736IN0y8x1G_r5",
-				title: "l9spizGObzGL5_M9I4t7W",
-				subtitle: "_1knd7dCNDtGNteCtEtWMI4",
-				docsButton: "_3WXyHuUGgkzB-1Qc3roRsZ",
-				docsIcon: "_1Y7YQr9nJOHYMXIJV9bR10",
-				docTextShort: "_9B9hYKnRsbpS0xQ6bTVI_",
-				docTextFull: "_1cBiAI3Lmkt0Hm6YzkDtth"
+				button: "_1PiFEnhFGjcOJ8DJpZEZrs",
+				buttonIcon: "_5enw_h_QNP0edxOuTIgVT"
 			}
 		},
 		"./src/reddit/pages/meta/CommunityPointsLearnMorePage/Sections/Features/feature.m.less": function(e, t, n) {
@@ -1586,11 +1594,14 @@
 				title: "_3-_ejcDFGp596JkkqRsIsD",
 				body: "_1JRBoMFbhlLJke-WjiF9tg",
 				imageSection: "_26XceelGMk4WXZndVXPgs0",
+				imageContainer: "_21z1zXdwaOJ6ayQtKtWS5c",
 				image: "_39n5c2gafF2Zu9YWqEe6cM"
 			}
 		},
 		"./src/reddit/pages/meta/CommunityPointsLearnMorePage/index.m.less": function(e, t, n) {
 			e.exports = {
+				anchor: "_1ms_1DEhbPfoWXTh7V61HA",
+				anchorParent: "_31htbIEbYEE6IxL_i638-C",
 				containerPadding: "_3QgQYeMEeB78hap31D9Da5",
 				container: "_2hno-FBggC-9UCyeqfnHlk",
 				offline: "_3e_2rDbDAsM6SoOvSxKCaB",
@@ -1612,235 +1623,336 @@
 		},
 		"./src/reddit/pages/meta/CommunityPointsLearnMorePage/index.tsx": function(e, t, n) {
 			"use strict";
-			n.r(t);
+			n.r(t), n.d(t, "Anchor", (function() {
+				return je
+			}));
 			var r = n("./src/config.ts"),
 				o = n("./node_modules/react/index.js"),
-				i = n.n(o),
-				a = n("./node_modules/react-redux/es/index.js"),
+				a = n.n(o),
+				i = n("./node_modules/react-redux/es/index.js"),
 				s = n("./src/reddit/selectors/experiments/econ/meta.ts"),
-				d = n("./src/lib/getParsedUserAgent/index.ts"),
-				l = n("./src/reddit/components/Governance/TransactionModals/CreateVaultModal/index.tsx"),
-				c = n("./src/reddit/controls/Button/index.tsx"),
-				u = n("./src/reddit/helpers/trackers/communityPoints.ts"),
-				m = n("./src/reddit/hooks/useTracking.ts"),
-				h = n("./src/reddit/selectors/economics.ts"),
-				f = n("./src/lib/classNames/index.ts"),
-				p = n("./src/reddit/icons/svgs/ArrowRightThin/index.tsx"),
-				g = n("./src/reddit/pages/meta/CommunityPointsLearnMorePage/Carousel/index.m.less"),
-				b = n.n(g);
+				c = n("./src/reddit/icons/svgs/Snoo/index.tsx"),
+				l = n("./src/reddit/pages/meta/CommunityPointsLearnMorePage/Footer/index.m.less"),
+				d = n.n(l);
+			const {
+				fbt: u
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), m = () => a.a.createElement("div", {
+				className: d.a.container
+			}, a.a.createElement("footer", {
+				className: d.a.content
+			}, a.a.createElement(c.a, {
+				className: d.a.logo
+			}), a.a.createElement("span", {
+				className: d.a.copyright
+			}, u._("© 2021 Reddit, Inc.", null, {
+				hk: "2AJJq2"
+			})), a.a.createElement("span", {
+				className: d.a.spacer
+			}), a.a.createElement("a", {
+				className: d.a.link,
+				href: "https://www.redditinc.com/policies/previews-terms",
+				target: "_blank",
+				rel: "noopener noreferrer"
+			}, u._("Community Points Terms of Service", null, {
+				hk: "33aKSn"
+			}))));
+			var h = n("./node_modules/fbt/lib/FbtPublic.js"),
+				f = n("./node_modules/react-router-dom/esm/react-router-dom.js"),
+				g = n("./src/lib/loadableAction/index.ts"),
+				p = n("./src/reddit/controls/Button/index.tsx"),
+				b = n("./src/reddit/icons/svgs/Wordmark/index.tsx"),
+				y = n("./src/reddit/pages/meta/CommunityPointsLearnMorePage/Header/index.m.less"),
+				v = n.n(y);
+			const _ = () => {
+					const e = Object(i.d)();
+					return a.a.createElement("header", {
+						className: v.a.container
+					}, a.a.createElement(f.a, {
+						"aria-label": h.fbt._("Home", null, {
+							hk: "3PmGmU"
+						}),
+						className: v.a.logo,
+						to: "/",
+						onClick: () => e(Object(g.a)(() => Promise.all([n.e("CollectionCommentsPage~CommentsPage~Frontpage~GovernanceReleaseNotesModal~ModListing~ModQueuePages~M~eb6c0aee"), n.e("Frontpage~ModListing"), n.e("Frontpage~FrontpageSidebar"), n.e("Frontpage")]).then(n.bind(null, "./src/reddit/actions/frontpage/index.ts")).then(e => e.frontpageReloaded))(!0))
+					}, a.a.createElement(c.a, {
+						className: v.a.snoo
+					}), a.a.createElement(b.a, {
+						className: v.a.wordmark
+					})), a.a.createElement("div", {
+						className: v.a.sections
+					}, P.map(({
+						displayText: e,
+						link: t
+					}) => a.a.createElement("a", {
+						href: t,
+						key: e,
+						className: v.a.sectionText
+					}, e))), a.a.createElement(p.t, {
+						className: v.a.joinWaitlist,
+						priority: p.c.Secondary,
+						kind: p.b.ExternalLink,
+						href: "https://docs.google.com/forms/d/1xSpGcBc0TP3GpfNgo3F0pV86OQYiEwUcsWBu3-RtfiU/viewform",
+						target: "_blank",
+						rel: "noopener noreferrer"
+					}, h.fbt._("Join Waitlist", null, {
+						hk: "4rpEy2"
+					})))
+				},
+				P = [{
+					displayText: h.fbt._("Token", null, {
+						hk: "3pTjX0"
+					}),
+					link: "#token"
+				}, {
+					displayText: h.fbt._("Benefits", null, {
+						hk: "2J9q91"
+					}),
+					link: "#benefits"
+				}, {
+					displayText: h.fbt._("Features", null, {
+						hk: "31VVaC"
+					}),
+					link: "#features"
+				}, {
+					displayText: h.fbt._("Vault", null, {
+						hk: "3pQLt1"
+					}),
+					link: "#vault"
+				}, {
+					displayText: h.fbt._("Future", null, {
+						hk: "39h3VE"
+					}),
+					link: "#future"
+				}, {
+					displayText: h.fbt._("Enroll", null, {
+						hk: "3ZbEx3"
+					}),
+					link: "#enroll"
+				}];
+			var E = n("./src/lib/getParsedUserAgent/index.ts"),
+				w = n("./src/reddit/components/Governance/TransactionModals/CreateVaultModal/index.tsx"),
+				k = n("./src/reddit/helpers/trackers/communityPoints.ts"),
+				C = n("./src/reddit/hooks/useTracking.ts"),
+				x = n("./src/reddit/selectors/economics.ts"),
+				N = n("./src/lib/classNames/index.ts"),
+				j = n("./src/reddit/icons/svgs/ArrowRightThin/index.tsx"),
+				S = n("./src/reddit/pages/meta/CommunityPointsLearnMorePage/Carousel/index.m.less"),
+				A = n.n(S);
 
-			function v(e, t = !0) {
+			function T(e, t = !0) {
 				return `${r.a.assetPath}/img/communityPoints/learnMore/slide${e}${t?"@2x":""}.png`
 			}
-			var y = function(e) {
-					const [t, n] = Object(o.useState)(0), r = Object(a.e)(h.m), s = r && r.learnMore.pages || [], d = s.map(e => e.body).reduce((e, t) => t.length > e.length ? t : e, ""), l = t => {
+			var B = function(e) {
+					const [t, n] = Object(o.useState)(0), r = Object(i.e)(x.m), s = r && r.learnMore.pages || [], c = s.map(e => e.body).reduce((e, t) => t.length > e.length ? t : e, ""), l = t => {
 						n(t), t + 1 === s.length && e.onComplete()
 					};
-					return i.a.createElement("div", {
-						className: b.a.carousel
-					}, i.a.createElement("div", {
-						className: b.a.imageContainer
-					}, s.map((e, n) => i.a.createElement("img", {
-						src: v(n),
-						srcSet: `${v(n,!1)}, ${v(n)} 2x`,
-						className: Object(f.a)(b.a.image, {
-							[b.a.before]: n < t,
-							[b.a.active]: n === t,
-							[b.a.after]: n > t
+					return a.a.createElement("div", {
+						className: A.a.carousel
+					}, a.a.createElement("div", {
+						className: A.a.imageContainer
+					}, s.map((e, n) => a.a.createElement("img", {
+						src: T(n),
+						srcSet: `${T(n,!1)}, ${T(n)} 2x`,
+						className: Object(N.a)(A.a.image, {
+							[A.a.before]: n < t,
+							[A.a.active]: n === t,
+							[A.a.after]: n > t
 						}),
 						key: n
-					}))), i.a.createElement("div", {
-						className: b.a.textContainer
-					}, i.a.createElement("div", {
-						className: b.a.hiddenText
-					}, i.a.createElement("div", {
-						className: b.a.slideTitle
-					}, s[0] && s[0].title), d), s.map((e, n) => i.a.createElement("div", {
-						className: Object(f.a)(b.a.text, {
-							[b.a.before]: n < t,
-							[b.a.active]: n === t,
-							[b.a.after]: n > t
+					}))), a.a.createElement("div", {
+						className: A.a.textContainer
+					}, a.a.createElement("div", {
+						className: A.a.hiddenText
+					}, a.a.createElement("div", {
+						className: A.a.slideTitle
+					}, s[0] && s[0].title), c), s.map((e, n) => a.a.createElement("div", {
+						className: Object(N.a)(A.a.text, {
+							[A.a.before]: n < t,
+							[A.a.active]: n === t,
+							[A.a.after]: n > t
 						}),
 						key: n
-					}, i.a.createElement("div", {
-						className: b.a.slideTitle
-					}, e.title), e.body))), t < s.length - 1 && i.a.createElement("div", {
-						className: b.a.pager
-					}, s.map((e, n) => i.a.createElement("button", {
+					}, a.a.createElement("div", {
+						className: A.a.slideTitle
+					}, e.title), e.body))), t < s.length - 1 && a.a.createElement("div", {
+						className: A.a.pager
+					}, s.map((e, n) => a.a.createElement("button", {
 						key: n,
 						onClick: () => l(n)
-					}, i.a.createElement("div", {
-						className: Object(f.a)(b.a.progressDot, {
-							[b.a.active]: n === t
+					}, a.a.createElement("div", {
+						className: Object(N.a)(A.a.progressDot, {
+							[A.a.active]: n === t
 						})
-					}))), i.a.createElement("button", {
+					}))), a.a.createElement("button", {
 						"aria-label": "Next",
-						className: b.a.nextButton,
+						className: A.a.nextButton,
 						onClick: () => l(t + 1)
-					}, i.a.createElement(p.a, {
-						className: b.a.arrowIcon
+					}, a.a.createElement(j.a, {
+						className: A.a.arrowIcon
 					}))))
 				},
-				_ = n("./src/reddit/icons/svgs/ChevronDown/index.tsx"),
-				P = n("./src/reddit/pages/meta/CommunityPointsLearnMorePage/FAQ/index.m.less"),
-				E = n.n(P);
+				M = n("./src/reddit/icons/svgs/ChevronDown/index.tsx"),
+				I = n("./src/reddit/pages/meta/CommunityPointsLearnMorePage/FAQ/index.m.less"),
+				R = n.n(I);
 
-			function w(e) {
-				const [t, n] = Object(o.useState)(!1), r = Object(m.a)();
-				return i.a.createElement("div", {
-					className: E.a.section
-				}, i.a.createElement("div", {
-					className: E.a.sectionTitle,
+			function F(e) {
+				const [t, n] = Object(o.useState)(!1), r = Object(C.a)();
+				return a.a.createElement("div", {
+					className: R.a.section
+				}, a.a.createElement("div", {
+					className: R.a.sectionTitle,
 					onClick: () => {
-						t || r(Object(u.g)(e.id)), n(!t)
+						t || r(Object(k.g)(e.id)), n(!t)
 					}
-				}, e.title, i.a.createElement("button", {
-					className: Object(f.a)(E.a.expando, {
-						[E.a.expanded]: t
+				}, e.title, a.a.createElement("button", {
+					className: Object(N.a)(R.a.expando, {
+						[R.a.expanded]: t
 					}),
 					"aria-label": "Expand"
-				}, i.a.createElement(_.a, {
-					className: E.a.chevron
-				}))), t && i.a.createElement("div", {
-					className: E.a.text
+				}, a.a.createElement(M.a, {
+					className: R.a.chevron
+				}))), t && a.a.createElement("div", {
+					className: R.a.text
 				}, e.children))
 			}
 
-			function x(e) {
+			function O(e) {
 				const t = `${r.a.assetPath}/img/communityPoints/faq/${e.id}`;
-				return i.a.createElement("img", {
+				return a.a.createElement("img", {
 					src: t + ".png",
 					srcSet: `${t}.png, ${t}@2x.png 2x`
 				})
 			}
-			var C = function() {
-					const e = Object(a.e)(h.m),
-						t = Object(m.a)();
+			var L = function() {
+					const e = Object(i.e)(x.m),
+						t = Object(C.a)();
 					Object(o.useEffect)(() => {
-						t(Object(u.f)())
+						t(Object(k.f)())
 					}, [t]);
 					const n = e && e.faq || [];
-					return i.a.createElement("div", {
-						className: E.a.container
-					}, i.a.createElement("div", {
-						className: E.a.title
-					}, "Frequently Asked Questions"), n.map(e => e.pages.map(e => i.a.createElement(w, {
+					return a.a.createElement("div", {
+						className: R.a.container
+					}, a.a.createElement("div", {
+						className: R.a.title
+					}, "Frequently Asked Questions"), n.map(e => e.pages.map(e => a.a.createElement(F, {
 						id: e.analyticsPageName,
 						title: e.title,
 						key: e.analyticsPageName
-					}, e.sections.map((e, t) => "text" in e ? i.a.createElement("div", {
+					}, e.sections.map((e, t) => "text" in e ? a.a.createElement("div", {
 						dangerouslySetInnerHTML: {
 							__html: e.text
 						},
-						className: E.a.subSection,
+						className: R.a.subSection,
 						key: t
-					}) : "image" in e ? i.a.createElement("div", {
-						className: E.a.imageSection,
+					}) : "image" in e ? a.a.createElement("div", {
+						className: R.a.imageSection,
 						key: t
-					}, i.a.createElement(x, {
+					}, a.a.createElement(O, {
 						id: e.image
 					})) : null)))))
 				},
-				k = n("./src/reddit/pages/meta/CommunityPointsLearnMorePage/old.m.less"),
-				N = n.n(k);
+				q = n("./src/reddit/pages/meta/CommunityPointsLearnMorePage/old.m.less"),
+				D = n.n(q);
 			const {
-				fbt: j
+				fbt: U
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
-			var D = function() {
-					const [e, t] = Object(o.useState)(!1), [n, s] = Object(o.useState)(!1), f = Object(a.e)(d.e), p = Object(a.e)(h.m), g = Object(m.a)();
+			var Y = function() {
+					const [e, t] = Object(o.useState)(!1), [n, s] = Object(o.useState)(!1), c = Object(i.e)(E.e), l = Object(i.e)(x.m), d = Object(C.a)();
 					Object(o.useEffect)(() => {
-						g(Object(u.h)())
-					}, [g]);
-					const b = p && p.learnMore.title;
-					return i.a.createElement("div", {
-						className: N.a.container
-					}, i.a.createElement("div", {
-						className: N.a.title
-					}, b), i.a.createElement(y, {
+						d(Object(k.h)())
+					}, [d]);
+					const u = l && l.learnMore.title;
+					return a.a.createElement("div", {
+						className: D.a.container
+					}, a.a.createElement("div", {
+						className: D.a.title
+					}, u), a.a.createElement(B, {
 						onComplete: () => t(!0)
-					}), e && i.a.createElement(i.a.Fragment, null, i.a.createElement(c.l, {
-						className: N.a.createVaultButton,
+					}), e && a.a.createElement(a.a.Fragment, null, a.a.createElement(p.l, {
+						className: D.a.createVaultButton,
 						onClick: () => {
-							g(Object(u.b)()), f ? window.location.href = `${r.a.redditUrl}/vault/` : s(!0)
+							d(Object(k.b)()), c ? window.location.href = `${r.a.redditUrl}/vault/` : s(!0)
 						}
-					}, j._("Create My Vault", null, {
+					}, U._("Create My Vault", null, {
 						hk: "3ZzMgD"
-					})), i.a.createElement(C, null)), n && i.a.createElement(l.b, {
+					})), a.a.createElement(L, null)), n && a.a.createElement(w.b, {
 						onClose: () => s(!1)
 					}))
 				},
-				S = n("./src/reddit/icons/fonts/index.tsx"),
-				A = n("./src/reddit/pages/meta/CommunityPointsLearnMorePage/Sections/Benefits/expandableText.m.less"),
-				B = n.n(A);
+				J = n("./src/reddit/icons/fonts/index.tsx"),
+				V = n("./src/reddit/pages/meta/CommunityPointsLearnMorePage/Sections/Benefits/expandableText.m.less"),
+				z = n.n(V);
 			const {
-				fbt: T
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), M = ({
+				fbt: G
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), H = ({
 				className: e,
 				data: t,
 				isExpanded: n,
 				isHidden: r,
 				onClickExpand: o,
-				onClickHide: a
-			}) => i.a.createElement("div", {
-				className: Object(f.a)(B.a.container, e, {
-					[B.a.expanded]: n,
-					[B.a.hidden]: r
+				onClickHide: i
+			}) => a.a.createElement("div", {
+				className: Object(N.a)(z.a.container, e, {
+					[z.a.expanded]: n,
+					[z.a.hidden]: r
 				})
-			}, i.a.createElement("div", {
-				className: B.a.imageSection,
+			}, a.a.createElement("div", {
+				className: z.a.imageSection,
 				style: {
 					backgroundColor: t.backgroundColor
 				}
-			}, i.a.createElement("img", {
-				className: Object(f.a)(B.a.image, {
-					[B.a.expanded]: n
+			}, a.a.createElement("img", {
+				className: Object(N.a)(z.a.image, {
+					[z.a.expanded]: n
 				}),
 				src: t.imageSrc
-			})), i.a.createElement("div", {
-				className: Object(f.a)(B.a.textSection, {
-					[B.a.expanded]: n
+			})), a.a.createElement("div", {
+				className: Object(N.a)(z.a.textSection, {
+					[z.a.expanded]: n
 				})
-			}, i.a.createElement("h5", {
-				className: B.a.title
-			}, t.title), i.a.createElement("p", {
-				className: B.a.subtitle
-			}, t.subtitle), n && i.a.createElement("p", {
-				className: B.a.body
-			}, t.body), i.a.createElement("button", {
-				onClick: n ? a : o,
-				className: Object(f.a)(B.a.expandButton, {
-					[B.a.expanded]: n
+			}, a.a.createElement("h5", {
+				className: z.a.title
+			}, t.title), a.a.createElement("p", {
+				className: z.a.subtitle
+			}, t.subtitle), n && a.a.createElement("p", {
+				className: z.a.body
+			}, t.body), a.a.createElement("button", {
+				onClick: n ? i : o,
+				className: Object(N.a)(z.a.expandButton, {
+					[z.a.expanded]: n
 				}),
-				"aria-label": n ? T._("Collapse", null, {
+				"aria-label": n ? G._("Collapse", null, {
 					hk: "LToWq"
-				}) : T._("Expand", null, {
+				}) : G._("Expand", null, {
 					hk: "4jMW0g"
 				})
-			}, i.a.createElement(S.a, {
+			}, a.a.createElement(J.a, {
 				name: "add",
-				className: Object(f.a)(B.a.plusIcon, {
-					[B.a.expanded]: n
+				className: Object(N.a)(z.a.plusIcon, {
+					[z.a.expanded]: n
 				})
 			}))));
-			var R = n("./src/reddit/pages/meta/CommunityPointsLearnMorePage/Sections/Benefits/index.m.less"),
-				I = n.n(R);
+			var W = n("./src/reddit/pages/meta/CommunityPointsLearnMorePage/Sections/Benefits/index.m.less"),
+				K = n.n(W);
 			const {
-				fbt: F
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), O = ({
+				fbt: Q
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), Z = ({
 				className: e
 			}) => {
 				const [t, n] = Object(o.useState)(null);
-				return i.a.createElement("div", {
+				return a.a.createElement("div", {
 					className: e
-				}, i.a.createElement("h2", {
-					className: I.a.title
-				}, F._("Upgrade Your Community", null, {
-					hk: "3jl64"
-				})), i.a.createElement("div", {
-					className: Object(f.a)(I.a.benefitsContainer, {
-						[I.a.expanded]: null !== t
+				}, a.a.createElement(je, {
+					anchorId: "benefits"
+				}), a.a.createElement("h2", {
+					className: K.a.title
+				}, Q._("A Crypto Token For Your Subreddit", null, {
+					hk: "3bUutJ"
+				})), a.a.createElement("div", {
+					className: Object(N.a)(K.a.benefitsContainer, {
+						[K.a.expanded]: null !== t
 					})
-				}, q.map((e, r) => i.a.createElement(M, {
+				}, X.map((e, r) => a.a.createElement(H, {
 					key: r,
 					data: e,
 					isExpanded: null !== t && r === t,
@@ -1848,427 +1960,412 @@
 					onClickExpand: () => n(r),
 					onClickHide: () => n(null)
 				}))))
-			}, q = [{
-				title: F._("Reward the community", null, {
-					hk: "20eiec"
+			}, X = [{
+				title: Q._("Reward the community", null, {
+					hk: "3N3rjy"
 				}),
-				subtitle: F._("Contributors and moderators get paid with something valuable for the hours they put in.", null, {
-					hk: "Z3EsH"
+				subtitle: Q._("Contributors and moderators earn something valuable for all the hours they put in.", null, {
+					hk: "18nDpt"
 				}),
-				body: F._("Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here.", null, {
-					hk: "1jRf62"
+				body: Q._("Community Points are a way for Redditors to own a piece of their favorite communities. Moderators or content creators earn Points by contributing to the community, and they can spend their Points on premium features, display their Points as reputation in the community, and vote with their Points to weigh in on community decisions.", null, {
+					hk: "3j6IlL"
 				}),
-				imageSrc: `${r.a.assetPath}/img/communityPoints/landingPage/reward_the_community.png`,
+				imageSrc: `${r.a.assetPath}/img/communityPoints/landingPage/reward_the_community_v2.png`,
 				backgroundColor: "#E2D399"
 			}, {
-				title: F._("Unlock premium features", null, {
-					hk: "47Txu5"
+				title: Q._("Unlock premium features", null, {
+					hk: "3ViYA7"
 				}),
-				subtitle: F._("Users buy premium features with Points, including subreddit memberships and awards.", null, {
-					hk: "2BjnGu"
+				subtitle: Q._("Users buy premium features with Points, including subreddit memberships and awards.", null, {
+					hk: "WdM90"
 				}),
-				body: F._("Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here.", null, {
-					hk: "1jRf62"
+				body: Q._("Community Points unlock special features in subreddits that adopt them. For example, they can be used to purchase Special Memberships, which give users access to community-themed badges, highlighted usernames, and the ability to embed rich media in their comments. Or they can be converted to Coins that can be used in the subreddit to give out awards.", null, {
+					hk: "19OcvD"
 				}),
-				imageSrc: `${r.a.assetPath}/img/communityPoints/landingPage/premium_features.png`,
+				imageSrc: `${r.a.assetPath}/img/communityPoints/landingPage/premium_features_v2.png`,
 				backgroundColor: "#B3F1FF"
 			}, {
-				title: F._("Encourage higher-quality content and conversation", null, {
-					hk: "42NBY6"
+				title: Q._("Encourage higher quality content and conversation", null, {
+					hk: "2s1Jao"
 				}),
-				subtitle: F._("Communities shape the kind of content and behavior they want by using Points as incentives.", null, {
-					hk: "2NJX7w"
+				subtitle: Q._("Communities can use Points as a powerful incentive to shape content and behavior.", null, {
+					hk: "2j4vIy"
 				}),
-				body: F._("Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here.", null, {
-					hk: "1jRf62"
+				body: Q._("Community Points introduce a powerful incentive system that communities can customize to their needs. Want to see more long-form text posts and comments? Reward this kind of content more. Want to see fewer low-effort memes? Give out fewer Points for them. (Or reward memes even more, it’s up to you and your community!)", null, {
+					hk: "3DIGJc"
 				}),
-				imageSrc: `${r.a.assetPath}/img/communityPoints/landingPage/hq_content.png`,
+				imageSrc: `${r.a.assetPath}/img/communityPoints/landingPage/hq_content_v2.png`,
 				backgroundColor: "#E3D7F4"
 			}, {
-				title: F._("Get input from the community", null, {
-					hk: "4mer7B"
+				title: Q._("Get input from the community", null, {
+					hk: "1J5W40"
 				}),
-				subtitle: F._("Weighted polls help make decisions about the subreddit, including how Points get distributed.", null, {
-					hk: "LkS73"
+				subtitle: Q._("Weighted polls allow the community to make decisions, including how Points get distributed.", null, {
+					hk: "1GuG82"
 				}),
-				body: F._("Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here.", null, {
-					hk: "1jRf62"
+				body: Q._("Subreddits can create polls where votes are weighted according to how many Points users have earned in the community. Instead of seeing only the loudest comments, measure how long-term members actually feel and use this mechanism to evolve how your community makes decisions.", null, {
+					hk: "SD836"
 				}),
-				imageSrc: `${r.a.assetPath}/img/communityPoints/landingPage/get_input.png`,
+				imageSrc: `${r.a.assetPath}/img/communityPoints/landingPage/get_input_v2.png`,
 				backgroundColor: "#A7EAD0"
 			}, {
-				title: F._("Bring the community together", null, {
-					hk: "KdoQx"
+				title: Q._("Bring the community together", null, {
+					hk: "2zbu5V"
 				}),
-				subtitle: F._("Give out Points as prizes for events and contests and integrate Points with community bots.", null, {
-					hk: "3Zo0xV"
+				subtitle: Q._("Give out Points as prizes for events and contests and integrate Points with community bots.", null, {
+					hk: "3zebTN"
 				}),
-				body: F._("Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here.", null, {
-					hk: "1jRf62"
+				body: Q._("Points are a flexible tool you can use for many purposes in your community. Community Points can be prizes for community events and contests, such as a trivia thread or design contest. Points can also be used with bots you already have in the community, for example to provide different flairs or actions for users based on their community reputation.", null, {
+					hk: "SskIg"
 				}),
-				imageSrc: `${r.a.assetPath}/img/communityPoints/landingPage/community_together.png`,
+				imageSrc: `${r.a.assetPath}/img/communityPoints/landingPage/community_together_v2.png`,
 				backgroundColor: "#FFC2C2"
 			}, {
-				title: F._("Customize your Points", null, {
-					hk: "58EIg"
+				title: Q._("Customize your Points", null, {
+					hk: "4jECbt"
 				}),
-				subtitle: F._("Each subreddit creates its own Community Points token, with a custom name and symbol.", null, {
-					hk: "v2GBi"
+				subtitle: Q._("Each subreddit can have its own Community Points token, with a custom name and symbol.", null, {
+					hk: "4q59ee"
 				}),
-				body: F._("Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here. Dive deep into details here.", null, {
-					hk: "1jRf62"
+				body: Q._("Every subreddit’s Community Points are unique to it. These tokens live on the blockchain, not on Reddit’s servers – which means they are owned and controlled fully by the community.", null, {
+					hk: "3g37A7"
 				}),
-				imageSrc: `${r.a.assetPath}/img/communityPoints/landingPage/customize_points.png`,
+				imageSrc: `${r.a.assetPath}/img/communityPoints/landingPage/customize_points_v2.png`,
 				backgroundColor: "#DDDDDD"
 			}];
-			var L = n("./src/reddit/pages/meta/CommunityPointsLearnMorePage/Sections/CommunityPoints/index.m.less"),
-				U = n.n(L);
+			var $ = n("./src/reddit/pages/meta/CommunityPointsLearnMorePage/Sections/CommunityPoints/index.m.less"),
+				ee = n.n($);
 			const {
-				fbt: Y
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), G = ({
+				fbt: te
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), ne = ({
 				className: e
-			}) => i.a.createElement("div", {
-				className: Object(f.a)(U.a.container, e)
-			}, i.a.createElement("img", {
-				className: U.a.mainScene,
-				src: `${r.a.assetPath}/img/communityPoints/landingPage/main_scene.jpg`
-			}), i.a.createElement("h3", {
-				className: U.a.title
-			}, Y._("Community Points", null, {
+			}) => a.a.createElement("div", {
+				className: Object(N.a)(ee.a.container, e)
+			}, a.a.createElement(je, {
+				anchorId: "token"
+			}), a.a.createElement("img", {
+				className: ee.a.mainScene,
+				src: `${r.a.assetPath}/img/communityPoints/landingPage/main_scene_v2.png`
+			}), a.a.createElement("h3", {
+				className: ee.a.title
+			}, te._("Community Points", null, {
 				hk: "eQ16B"
-			})), i.a.createElement("h2", {
-				className: U.a.subtitle
-			}, Y._("Crypto Tokens for Subreddits", null, {
-				hk: "vIU4T"
-			})), i.a.createElement("p", {
-				className: U.a.bodyText
-			}, Y._("Add a custom token to your subreddit. Earn rewards, encourge quality content, and unlock premium features.", null, {
-				hk: "1czVLN"
-			})), i.a.createElement(c.t, {
-				className: U.a.waitlistButton,
-				priority: c.c.Primary,
-				kind: c.b.ExternalLink,
+			})), a.a.createElement("h2", {
+				className: ee.a.subtitle
+			}, te._("Own a Piece of Your Community", null, {
+				hk: "1nDRCc"
+			})), a.a.createElement("p", {
+				className: ee.a.bodyText
+			}, te._("Add a crypto token to your subreddit. Earn rewards, encourage quality content, and unlock premium features.", null, {
+				hk: "1DXWKh"
+			})), a.a.createElement(p.t, {
+				className: ee.a.waitlistButton,
+				priority: p.c.Primary,
+				kind: p.b.ExternalLink,
 				href: "https://docs.google.com/forms/d/1xSpGcBc0TP3GpfNgo3F0pV86OQYiEwUcsWBu3-RtfiU/viewform",
-				target: "_blank"
-			}, Y._("Join Waitlist", null, {
+				target: "_blank",
+				rel: "noopener noreferrer"
+			}, te._("Join Waitlist", null, {
 				hk: "4rpEy2"
 			})));
-			var V = n("./src/higherOrderComponents/asModal/index.tsx");
-			const J = Object(V.a)(y);
-			var z = n("./src/reddit/pages/meta/CommunityPointsLearnMorePage/Sections/CryptoFuture/index.m.less"),
-				H = n.n(z);
+			var re = n("./src/higherOrderComponents/asModal/index.tsx");
+			const oe = Object(re.a)(B);
+			var ae = n("./src/reddit/pages/meta/CommunityPointsLearnMorePage/Sections/CryptoFuture/index.m.less"),
+				ie = n.n(ae);
 			const {
-				fbt: K
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), W = ({
+				fbt: se
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), ce = ({
 				className: e
 			}) => {
 				const [t, n] = Object(o.useState)(!1);
-				return i.a.createElement(i.a.Fragment, null, i.a.createElement("div", {
-					className: Object(f.a)(e, H.a.container)
-				}, i.a.createElement("img", {
-					className: H.a.image,
-					src: `${r.a.assetPath}/img/communityPoints/landingPage/step_into_the_crypto_future.png`
-				}), i.a.createElement("div", {
-					className: H.a.textContainer
-				}, i.a.createElement("h3", {
-					className: H.a.title
-				}, K._("Step into the Crypto Future", null, {
+				return a.a.createElement(a.a.Fragment, null, a.a.createElement("div", {
+					className: Object(N.a)(e, ie.a.container)
+				}, a.a.createElement(je, {
+					anchorId: "future"
+				}), a.a.createElement("img", {
+					className: ie.a.image,
+					src: `${r.a.assetPath}/img/communityPoints/landingPage/crypto_future_v2.png`
+				}), a.a.createElement("div", {
+					className: ie.a.textContainer
+				}, a.a.createElement("h3", {
+					className: ie.a.title
+				}, se._("Step into the Crypto Future", null, {
 					hk: "49h4QX"
-				})), i.a.createElement("div", {
-					className: H.a.body
-				}, K._("{=Communities are the lifeblood of the Internet. But on today’s Internet, they are not in charge of their own destiny. Instead, they are controlled by the large platforms that hold all the power online. It is time for a change.}{=Community Points are the first step towards a different future for online communities. These tokens live on the blockchain, not on Reddit’s servers, which means they are truly owned by the community. As Community Points migrate from beta onto the main Ethereum blockchain, your community will benefit from even greater control and independence – on and off of Reddit.}", [K._param("=Communities are the lifeblood of the Internet. But on today’s Internet, they are not in charge of their own destiny. Instead, they are controlled by the large platforms that hold all the power online. It is time for a change.", i.a.createElement("p", null, K._("Communities are the lifeblood of the Internet. But on today’s Internet, they are not in charge of their own destiny. Instead, they are controlled by the large platforms that hold all the power online. It is time for a change.", null, {
+				})), a.a.createElement("div", {
+					className: ie.a.body
+				}, se._("{=Communities are the lifeblood of the Internet. But on today’s Internet, they are not in charge of their own destiny. Instead, they are controlled by the large platforms that hold all the power online. It is time for a change.}{=Community Points are the first step towards a different future for online communities. These tokens live on the blockchain, not on Reddit’s servers, which means they are truly owned by the community. As Community Points migrate from beta onto the main Ethereum blockchain, your community will benefit from even greater control and independence – on and off of Reddit.}", [se._param("=Communities are the lifeblood of the Internet. But on today’s Internet, they are not in charge of their own destiny. Instead, they are controlled by the large platforms that hold all the power online. It is time for a change.", a.a.createElement("p", null, se._("Communities are the lifeblood of the Internet. But on today’s Internet, they are not in charge of their own destiny. Instead, they are controlled by the large platforms that hold all the power online. It is time for a change.", null, {
 					hk: "2hgLEC"
-				}))), K._param("=Community Points are the first step towards a different future for online communities. These tokens live on the blockchain, not on Reddit’s servers, which means they are truly owned by the community. As Community Points migrate from beta onto the main Ethereum blockchain, your community will benefit from even greater control and independence – on and off of Reddit.", i.a.createElement("p", null, K._("Community Points are the first step towards a different future for online communities. These tokens live on the blockchain, not on Reddit’s servers, which means they are truly owned by the community. As Community Points migrate from beta onto the main Ethereum blockchain, your community will benefit from even greater control and independence – on and off of Reddit.", null, {
+				}))), se._param("=Community Points are the first step towards a different future for online communities. These tokens live on the blockchain, not on Reddit’s servers, which means they are truly owned by the community. As Community Points migrate from beta onto the main Ethereum blockchain, your community will benefit from even greater control and independence – on and off of Reddit.", a.a.createElement("p", null, se._("Community Points are the first step towards a different future for online communities. These tokens live on the blockchain, not on Reddit’s servers, which means they are truly owned by the community. As Community Points migrate from beta onto the main Ethereum blockchain, your community will benefit from even greater control and independence – on and off of Reddit.", null, {
 					hk: "2r0fjb"
 				})))], {
 					hk: "46EaYu"
-				})), i.a.createElement(c.t, {
-					Icon: Object(S.b)("topic_reading"),
-					className: H.a.docsButton,
-					iconClassName: H.a.docsIcon,
-					priority: c.c.Secondary,
+				})), a.a.createElement(p.t, {
+					Icon: Object(J.b)("topic_reading"),
+					className: ie.a.button,
+					iconClassName: ie.a.buttonIcon,
+					priority: p.c.Secondary,
 					onClick: () => n(!0)
-				}, K._("A New Frontier", null, {
+				}, se._("A New Frontier", null, {
 					hk: "4GrPd2"
-				})))), t && i.a.createElement(J, {
+				})))), t && a.a.createElement(oe, {
 					withOverlay: !0,
 					onOverlayClick: () => n(!1),
 					onComplete: () => {}
 				}))
 			};
-			var Q = n("./src/reddit/pages/meta/CommunityPointsLearnMorePage/Sections/FAQ/index.m.less"),
-				Z = n.n(Q);
-			const {
-				fbt: X
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), $ = ({
-				className: e
-			}) => i.a.createElement("div", {
-				className: e
-			}, i.a.createElement("div", {
-				className: Z.a.background
-			}, i.a.createElement("img", {
-				className: Z.a.snoo,
-				src: `${r.a.assetPath}/img/communityPoints/landingPage/faq.png`
-			}), i.a.createElement("h3", {
-				className: Z.a.title
-			}, X._("Some FAQs about", null, {
-				hk: "2sbM1D"
-			})), i.a.createElement("h2", {
-				className: Z.a.subtitle
-			}, X._("Want to know more?", null, {
-				hk: "3vbn1B"
-			})), i.a.createElement(c.t, {
-				Icon: Object(S.b)("topic_reading"),
-				className: Z.a.docsButton,
-				iconClassName: Z.a.docsIcon,
-				priority: c.c.Secondary,
-				kind: c.b.InternalLink,
-				to: "/community-points/docs"
-			}, i.a.createElement("span", {
-				className: Z.a.docTextFull
-			}, X._("Community Points Documentation", null, {
-				hk: "3nnz6o"
-			})), i.a.createElement("span", {
-				className: Z.a.docTextShort
-			}, X._("Community Points Doc", null, {
-				hk: "1E9Ckc"
-			})))));
-			var ee = n("./src/reddit/pages/meta/CommunityPointsLearnMorePage/Sections/Features/feature.m.less"),
-				te = n.n(ee);
-			const {
-				fbt: ne
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), re = ({
-				className: e,
-				data: t
-			}) => i.a.createElement("div", {
-				className: Object(f.a)(te.a.container, e),
-				style: {
-					backgroundColor: t.backgroundColor
-				}
-			}, i.a.createElement("div", {
-				className: te.a.textSection
-			}, i.a.createElement("div", {
-				className: te.a.textContainer
-			}, i.a.createElement("h4", {
-				className: te.a.title
-			}, t.title), t.body)), i.a.createElement("div", {
-				className: te.a.imageSection
-			}, i.a.createElement("img", {
-				className: te.a.image,
-				src: t.imageSrc
-			})));
-			var oe = n("./src/reddit/pages/meta/CommunityPointsLearnMorePage/Sections/Features/index.m.less"),
-				ie = n.n(oe);
-			const {
-				fbt: ae
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), se = ({
-				className: e
-			}) => i.a.createElement("div", {
-				className: e
-			}, i.a.createElement("h3", {
-				className: ie.a.title
-			}, ae._("Look & Feel", null, {
-				hk: "eE7iN"
-			})), i.a.createElement("h2", {
-				className: ie.a.subtitle
-			}, ae._("Community Points Features", null, {
-				hk: "13RfC7"
-			})), de.map(e => i.a.createElement(re, {
-				className: ie.a.featureContainer,
-				key: e.title,
-				data: e
-			}))), de = [{
-				title: ae._("Reputation", null, {
-					hk: "bj2EH"
-				}),
-				body: i.a.createElement("p", {
-					className: ie.a.bodyText
-				}, ae._("Token balances are displayed next to usernames in posts and comment threads to show people’s reputation in the community. This allows people to easily identify the community’s biggest contributors in threads and conversations.", null, {
-					hk: "3YOW3f"
-				})),
-				imageSrc: `${r.a.assetPath}/img/communityPoints/landingPage/reputation.png`,
-				backgroundColor: "#FF5C0033"
-			}, {
-				title: ae._("Special Memberships", null, {
-					hk: "2Y3ChU"
-				}),
-				body: ae._("{=Use Community Points to purchase a Special Membership in the subreddit. Memberships give users access to several premium features.}{=Badges}{=Personalize your presence on the subreddit with loyalty and style badges, and add a highlighted color to your username.}{=GIFs}{=Embed GIFs directly inside your comments.}{=Animated Emojis}{=Add custom emojis to your comments.}", [ae._param("=Use Community Points to purchase a Special Membership in the subreddit. Memberships give users access to several premium features.", i.a.createElement("p", {
-					className: ie.a.bodyText
-				}, ae._("Use Community Points to purchase a Special Membership in the subreddit. Memberships give users access to several premium features.", null, {
-					hk: "42knGQ"
-				}))), ae._param("=Badges", i.a.createElement("h6", {
-					className: ie.a.bodyTitle
-				}, ae._("Badges", null, {
-					hk: "1J0tam"
-				}))), ae._param("=Personalize your presence on the subreddit with loyalty and style badges, and add a highlighted color to your username.", i.a.createElement("p", {
-					className: ie.a.bodyDetail
-				}, ae._("Personalize your presence on the subreddit with loyalty and style badges, and add a highlighted color to your username.", null, {
-					hk: "eFakC"
-				}))), ae._param("=GIFs", i.a.createElement("h6", {
-					className: ie.a.bodyTitle
-				}, ae._("GIFs", null, {
-					hk: "2OpVx0"
-				}))), ae._param("=Embed GIFs directly inside your comments.", i.a.createElement("p", {
-					className: ie.a.bodyDetail
-				}, ae._("Embed GIFs directly inside your comments.", null, {
-					hk: "Dyx2t"
-				}))), ae._param("=Animated Emojis", i.a.createElement("h6", {
-					className: ie.a.bodyTitle
-				}, ae._("Animated Emojis", null, {
-					hk: "4yKqQF"
-				}))), ae._param("=Add custom emojis to your comments.", i.a.createElement("p", {
-					className: ie.a.bodyDetail
-				}, ae._("Add custom emojis to your comments.", null, {
-					hk: "1Dyof7"
-				})))], {
-					hk: "34nghy"
-				}),
-				imageSrc: `${r.a.assetPath}/img/communityPoints/landingPage/special_memberships.png`,
-				backgroundColor: "#D4F6FF"
-			}, {
-				title: ae._("Awards", null, {
-					hk: "10gXo4"
-				}),
-				body: i.a.createElement("p", {
-					className: ie.a.bodyText
-				}, ae._("Use Community Points to buy Reddit Coins and gift awards in the subreddit.", null, {
-					hk: "3dG5MQ"
-				})),
-				imageSrc: `${r.a.assetPath}/img/communityPoints/landingPage/awards.png`,
-				backgroundColor: "#00CC7833"
-			}, {
-				title: ae._("Polls & Voting", null, {
-					hk: "3Ztp1s"
-				}),
-				body: ae._("{=Community Points enable a new type of poll where votes are weighted according to the number of tokens a user has earned.}{=Points-based polls can be marked as special Governance Polls to make decisions in the subreddit. For example, Governance Polls can be used to get input on subreddit rules or change Points distribution rules.}", [ae._param("=Community Points enable a new type of poll where votes are weighted according to the number of tokens a user has earned.", i.a.createElement("p", {
-					className: ie.a.bodyText
-				}, ae._("Community Points enable a new type of poll where votes are weighted according to the number of tokens a user has earned.", null, {
-					hk: "2EnWSj"
-				}))), ae._param("=Points-based polls can be marked as special Governance Polls to make decisions in the subreddit. For example, Governance Polls can be used to get input on subreddit rules or change Points distribution rules.", i.a.createElement("p", {
-					className: ie.a.bodyText
-				}, ae._("Points-based polls can be marked as special Governance Polls to make decisions in the subreddit. For example, Governance Polls can be used to get input on subreddit rules or change Points distribution rules.", null, {
-					hk: "k0r1b"
-				})))], {
-					hk: "14IRO2"
-				}),
-				imageSrc: `${r.a.assetPath}/img/communityPoints/landingPage/polls.png`,
-				backgroundColor: "#FFD63533"
-			}, {
-				title: ae._("Tipping & Transfers", null, {
-					hk: "4uM4IS"
-				}),
-				body: ae._("{=Community Points enable a new type of poll where votes are weighted according to the number of tokens a user has earned.}{=Points-based polls can be marked as special Governance Polls to make decisions in the subreddit. For example, Governance Polls can be used to get input on subreddit rules or change Points distribution rules.}", [ae._param("=Community Points enable a new type of poll where votes are weighted according to the number of tokens a user has earned.", i.a.createElement("p", {
-					className: ie.a.bodyText
-				}, ae._("Community Points enable a new type of poll where votes are weighted according to the number of tokens a user has earned.", null, {
-					hk: "2EnWSj"
-				}))), ae._param("=Points-based polls can be marked as special Governance Polls to make decisions in the subreddit. For example, Governance Polls can be used to get input on subreddit rules or change Points distribution rules.", i.a.createElement("p", {
-					className: ie.a.bodyText
-				}, ae._("Points-based polls can be marked as special Governance Polls to make decisions in the subreddit. For example, Governance Polls can be used to get input on subreddit rules or change Points distribution rules.", null, {
-					hk: "k0r1b"
-				})))], {
-					hk: "15V3tA"
-				}),
-				imageSrc: `${r.a.assetPath}/img/communityPoints/landingPage/tipping.png`,
-				backgroundColor: "#F86AEA33"
-			}, {
-				title: ae._("Creator Rewards", null, {
-					hk: "3fuNix"
-				}),
-				body: i.a.createElement("p", {
-					className: ie.a.bodyText
-				}, ae._("Community Points enable a new type of poll where votes are weighted according to the number of tokens a user has earned. Points-based polls can be marked as special Governance Polls to make decisions in the subreddit. For example, Governance Polls can be used to get input on subreddit rules or change Points distribution rules.", null, {
-					hk: "2BhOe9"
-				})),
-				imageSrc: `${r.a.assetPath}/img/communityPoints/landingPage/creator_rewards.png`,
-				backgroundColor: "#FFF9F3"
-			}];
-			var le = n("./src/reddit/pages/meta/CommunityPointsLearnMorePage/Sections/JoinWaitlist/index.m.less"),
-				ce = n.n(le);
+			var le = n("./src/reddit/pages/meta/CommunityPointsLearnMorePage/Sections/Features/feature.m.less"),
+				de = n.n(le);
 			const {
 				fbt: ue
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), me = ({
-				className: e
-			}) => i.a.createElement("div", {
-				className: Object(f.a)(e, ce.a.container)
-			}, i.a.createElement("div", {
-				className: ce.a.backgroundContainer
-			}, i.a.createElement("h3", {
-				className: ce.a.title
-			}, ue._("Join Waitlist", null, {
-				hk: "2yTXN4"
-			})), i.a.createElement("h2", {
-				className: ce.a.subtitle
-			}, ue._("Want to see Community Points in your subreddit?", null, {
-				hk: "3a9HLq"
-			})), i.a.createElement("p", {
-				className: ce.a.body
-			}, ue._("We are looking for a select few subreddits to join our crypto experiment. If you are a moderator, add yourself to the list and we’ll be in touch!", null, {
-				hk: "3MTU6s"
-			})), i.a.createElement(c.t, {
-				className: ce.a.waitlistButton,
-				priority: c.c.Primary,
-				kind: c.b.ExternalLink,
-				href: "https://docs.google.com/forms/d/1xSpGcBc0TP3GpfNgo3F0pV86OQYiEwUcsWBu3-RtfiU/viewform",
-				target: "_blank"
-			}, ue._("Join Waitlist", null, {
-				hk: "p3fEV"
-			})), i.a.createElement("img", {
-				className: ce.a.moon,
-				src: `${r.a.assetPath}/img/communityPoints/landingPage/moon.png`
-			}), i.a.createElement("img", {
-				className: ce.a.rocket,
-				src: `${r.a.assetPath}/img/communityPoints/landingPage/rocket.png`
+				className: e,
+				data: t
+			}) => a.a.createElement("div", {
+				className: Object(N.a)(de.a.container, e),
+				style: {
+					backgroundColor: t.backgroundColor
+				}
+			}, a.a.createElement("div", {
+				className: de.a.textSection
+			}, a.a.createElement("div", {
+				className: de.a.textContainer
+			}, a.a.createElement("h4", {
+				className: de.a.title
+			}, t.title), t.body)), a.a.createElement("div", {
+				className: de.a.imageSection
+			}, a.a.createElement("img", {
+				className: de.a.image,
+				src: t.imageSrc
 			})));
-			var he = n("./src/reddit/pages/meta/CommunityPointsLearnMorePage/Sections/Vault/index.m.less"),
+			var he = n("./src/reddit/pages/meta/CommunityPointsLearnMorePage/Sections/Features/index.m.less"),
 				fe = n.n(he);
 			const {
-				fbt: pe
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), ge = ({
+				fbt: ge
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), pe = ({
 				className: e
-			}) => i.a.createElement("div", {
-				className: Object(f.a)(e, fe.a.background)
-			}, i.a.createElement("div", {
-				className: fe.a.textSection
-			}, i.a.createElement("div", {
-				className: fe.a.textContainer
-			}, i.a.createElement("h2", {
+			}) => a.a.createElement("div", {
+				className: e
+			}, a.a.createElement(je, {
+				anchorId: "features"
+			}), a.a.createElement("h3", {
 				className: fe.a.title
-			}, pe._("Vault", null, {
-				hk: "Ydv9k"
-			})), i.a.createElement("p", {
-				className: fe.a.body
-			}, pe._("A crypto wallet built into the Reddit app. See Points balances and send Points to Redditors at the tap of a button.", null, {
-				hk: "1NZGlE"
-			})))), i.a.createElement("div", {
-				className: fe.a.imageSection
-			}, i.a.createElement("img", {
-				className: fe.a.image,
-				src: `${r.a.assetPath}/img/communityPoints/landingPage/vault.png`
+			}, ge._("Look & Feel", null, {
+				hk: "eE7iN"
+			})), a.a.createElement("h2", {
+				className: fe.a.subtitle
+			}, ge._("Community Points Features", null, {
+				hk: "13RfC7"
+			})), be.map(e => a.a.createElement(me, {
+				className: fe.a.featureContainer,
+				key: e.title,
+				data: e
+			}))), be = [{
+				title: ge._("Reputation", null, {
+					hk: "3HnL3J"
+				}),
+				body: ge._("{=Community Points let users show their reputation in the community. As a crypto token, they can take this reputation anywhere they want on the Internet.}{=On Reddit, token balances are displayed next to usernames, so people can easily identify the community’s biggest contributors in threads and conversations.}", [ge._param("=Community Points let users show their reputation in the community. As a crypto token, they can take this reputation anywhere they want on the Internet.", a.a.createElement("p", {
+					className: fe.a.bodyText
+				}, ge._("Community Points let users show their reputation in the community. As a crypto token, they can take this reputation anywhere they want on the Internet.", null, {
+					hk: "3DV4zt"
+				}))), ge._param("=On Reddit, token balances are displayed next to usernames, so people can easily identify the community’s biggest contributors in threads and conversations.", a.a.createElement("p", {
+					className: fe.a.bodyText
+				}, ge._("On Reddit, token balances are displayed next to usernames, so people can easily identify the community’s biggest contributors in threads and conversations.", null, {
+					hk: "1nOePX"
+				})))], {
+					hk: "3p1JXi"
+				}),
+				imageSrc: `${r.a.assetPath}/img/communityPoints/landingPage/reputation_v2.png`,
+				backgroundColor: "#FF5C0033"
+			}, {
+				title: ge._("Special Memberships", null, {
+					hk: "k936y"
+				}),
+				body: ge._("{=Use Community Points to purchase a Special Membership in the subreddit. Memberships have several features that communities can choose from.}{=Badges}{=Personalize your presence on the subreddit with loyalty and style badges, and add a highlighted color to your username.}{=GIFs}{=Embed GIFs directly inside your comments.}{=Animated Emojis}{=Add custom emojis to your comments.}", [ge._param("=Use Community Points to purchase a Special Membership in the subreddit. Memberships have several features that communities can choose from.", a.a.createElement("p", {
+					className: fe.a.bodyText
+				}, ge._("Use Community Points to purchase a Special Membership in the subreddit. Memberships have several features that communities can choose from.", null, {
+					hk: "302NJu"
+				}))), ge._param("=Badges", a.a.createElement("h6", {
+					className: fe.a.bodyTitle
+				}, ge._("Badges", null, {
+					hk: "25z4mj"
+				}))), ge._param("=Personalize your presence on the subreddit with loyalty and style badges, and add a highlighted color to your username.", a.a.createElement("p", {
+					className: fe.a.bodyDetail
+				}, ge._("Personalize your presence on the subreddit with loyalty and style badges, and add a highlighted color to your username.", null, {
+					hk: "34lPS1"
+				}))), ge._param("=GIFs", a.a.createElement("h6", {
+					className: fe.a.bodyTitle
+				}, ge._("GIFs", null, {
+					hk: "4onXMo"
+				}))), ge._param("=Embed GIFs directly inside your comments.", a.a.createElement("p", {
+					className: fe.a.bodyDetail
+				}, ge._("Embed GIFs directly inside your comments.", null, {
+					hk: "3GLGQs"
+				}))), ge._param("=Animated Emojis", a.a.createElement("h6", {
+					className: fe.a.bodyTitle
+				}, ge._("Animated Emojis", null, {
+					hk: "3WKumb"
+				}))), ge._param("=Add custom emojis to your comments.", a.a.createElement("p", {
+					className: fe.a.bodyDetail
+				}, ge._("Add custom emojis to your comments.", null, {
+					hk: "2SkL04"
+				})))], {
+					hk: "3kbMM4"
+				}),
+				imageSrc: `${r.a.assetPath}/img/communityPoints/landingPage/special_memberships_v2.png`,
+				backgroundColor: "#D4F6FF"
+			}, {
+				title: ge._("Awards", null, {
+					hk: "1Jm1g6"
+				}),
+				body: a.a.createElement("p", {
+					className: fe.a.bodyText
+				}, ge._("Community Points can be used to buy Reddit Coins that only work in the subreddit. Use these subreddit-specific Coins to make it rain awards in the community!", null, {
+					hk: "3sdqI1"
+				})),
+				imageSrc: `${r.a.assetPath}/img/communityPoints/landingPage/awards_v2.png`,
+				backgroundColor: "#00CC7833"
+			}, {
+				title: ge._("Polls & Voting", null, {
+					hk: "s6RHW"
+				}),
+				body: ge._("{=Community Points enable a new type of poll where votes are weighted according to the number of tokens a user has earned from their contributions.}{=Points-based polls can be marked as special Governance Polls to make decisions in the subreddit. For example, Governance Polls can be used to get input on subreddit rules or change Points distribution rules.}", [ge._param("=Community Points enable a new type of poll where votes are weighted according to the number of tokens a user has earned from their contributions.", a.a.createElement("p", {
+					className: fe.a.bodyText
+				}, ge._("Community Points enable a new type of poll where votes are weighted according to the number of tokens a user has earned from their contributions.", null, {
+					hk: "1ZAiQ8"
+				}))), ge._param("=Points-based polls can be marked as special Governance Polls to make decisions in the subreddit. For example, Governance Polls can be used to get input on subreddit rules or change Points distribution rules.", a.a.createElement("p", {
+					className: fe.a.bodyText
+				}, ge._("Points-based polls can be marked as special Governance Polls to make decisions in the subreddit. For example, Governance Polls can be used to get input on subreddit rules or change Points distribution rules.", null, {
+					hk: "1KSTP8"
+				})))], {
+					hk: "4qNyEY"
+				}),
+				imageSrc: `${r.a.assetPath}/img/communityPoints/landingPage/polls_v2.png`,
+				backgroundColor: "#FFD63533"
+			}, {
+				title: ge._("Tipping & Transfers", null, {
+					hk: "PnLps"
+				}),
+				body: ge._("{=If someone makes a great post or comment, tip them with Points! Community Points can be sent to any Redditor with a crypto Vault, or to any Ethereum blockchain address.}", [ge._param("=If someone makes a great post or comment, tip them with Points! Community Points can be sent to any Redditor with a crypto Vault, or to any Ethereum blockchain address.", a.a.createElement("p", {
+					className: fe.a.bodyText
+				}, ge._("If someone makes a great post or comment, tip them with Points! Community Points can be sent to any Redditor with a crypto Vault, or to any Ethereum blockchain address.", null, {
+					hk: "ohD3U"
+				})))], {
+					hk: "3G3NZv"
+				}),
+				imageSrc: `${r.a.assetPath}/img/communityPoints/landingPage/tipping_v2.png`,
+				backgroundColor: "#F86AEA33"
+			}, {
+				title: ge._("Creator Rewards", null, {
+					hk: "aJzBg"
+				}),
+				body: a.a.createElement("p", {
+					className: fe.a.bodyText
+				}, ge._("Creators can be rewarded for making things for the subreddit, such as designing badges or community merchandise. Developers can be paid in Points to make community bots.", null, {
+					hk: "4cH9Td"
+				})),
+				imageSrc: `${r.a.assetPath}/img/communityPoints/landingPage/creator_rewards_v2.png`,
+				backgroundColor: "#FFF9F3"
+			}];
+			var ye = n("./src/reddit/pages/meta/CommunityPointsLearnMorePage/Sections/JoinWaitlist/index.m.less"),
+				ve = n.n(ye);
+			const {
+				fbt: _e
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), Pe = ({
+				className: e
+			}) => a.a.createElement("div", {
+				className: Object(N.a)(e, ve.a.container)
+			}, a.a.createElement(je, {
+				anchorId: "enroll"
+			}), a.a.createElement("div", {
+				className: ve.a.backgroundContainer
+			}, a.a.createElement("h3", {
+				className: ve.a.title
+			}, _e._("Join Waitlist", null, {
+				hk: "2yTXN4"
+			})), a.a.createElement("h2", {
+				className: ve.a.subtitle
+			}, _e._("Want to see Community Points in your subreddit?", null, {
+				hk: "3a9HLq"
+			})), a.a.createElement("p", {
+				className: ve.a.body
+			}, _e._("We are looking for a select few subreddits to join our crypto experiment. If you are a moderator, add yourself to the list and we’ll be in touch!", null, {
+				hk: "3MTU6s"
+			})), a.a.createElement(p.t, {
+				className: ve.a.waitlistButton,
+				priority: p.c.Primary,
+				kind: p.b.ExternalLink,
+				href: "https://docs.google.com/forms/d/1xSpGcBc0TP3GpfNgo3F0pV86OQYiEwUcsWBu3-RtfiU/viewform",
+				target: "_blank",
+				rel: "noopener noreferrer"
+			}, _e._("Join Waitlist", null, {
+				hk: "p3fEV"
+			})), a.a.createElement("img", {
+				className: ve.a.moon,
+				src: `${r.a.assetPath}/img/communityPoints/landingPage/moon_v2.png`
+			}), a.a.createElement("img", {
+				className: ve.a.rocket,
+				src: `${r.a.assetPath}/img/communityPoints/landingPage/rocket_v2.png`
 			})));
-			var be = n("./src/reddit/pages/meta/CommunityPointsLearnMorePage/index.m.less"),
-				ve = n.n(be);
+			var Ee = n("./src/reddit/pages/meta/CommunityPointsLearnMorePage/Sections/Vault/index.m.less"),
+				we = n.n(Ee);
+			const {
+				fbt: ke
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), Ce = ({
+				className: e
+			}) => a.a.createElement("div", {
+				className: Object(N.a)(e, we.a.background)
+			}, a.a.createElement(je, {
+				anchorId: "vault"
+			}), a.a.createElement("div", {
+				className: we.a.textSection
+			}, a.a.createElement("div", {
+				className: we.a.textContainer
+			}, a.a.createElement("h2", {
+				className: we.a.title
+			}, ke._("Vault", null, {
+				hk: "Ydv9k"
+			})), a.a.createElement("p", {
+				className: we.a.body
+			}, ke._("A crypto wallet built into the Reddit app. See Points balances and send Points to Redditors at the tap of a button.", null, {
+				hk: "1NZGlE"
+			})))), a.a.createElement("div", {
+				className: we.a.imageSection
+			}, a.a.createElement("div", {
+				className: we.a.imageContainer
+			}, a.a.createElement("img", {
+				className: we.a.image,
+				src: `${r.a.assetPath}/img/communityPoints/landingPage/vault_v2.png`
+			}))));
+			var xe = n("./src/reddit/pages/meta/CommunityPointsLearnMorePage/index.m.less"),
+				Ne = n.n(xe);
 			t.default = () => {
-				return Object(a.e)(s.a) ? i.a.createElement("div", {
-					className: ve.a.container
-				}, i.a.createElement(G, {
-					className: ve.a.communityPointsSection
-				}), i.a.createElement(O, {
-					className: ve.a.benefitsSection
-				}), i.a.createElement("img", {
-					className: ve.a.spiral,
-					src: `${r.a.assetPath}/img/communityPoints/landingPage/spiral.png`
-				}), i.a.createElement(se, {
-					className: ve.a.featuresSection
-				}), i.a.createElement($, {
-					className: ve.a.faqSection
-				}), i.a.createElement(ge, {
-					className: ve.a.vaultSection
-				}), i.a.createElement(W, {
-					className: ve.a.cryptoFutureSection
-				}), i.a.createElement(me, {
-					className: ve.a.joinWaitlistSection
-				})) : i.a.createElement(D, null)
-			}
+				return Object(i.e)(s.a) ? a.a.createElement(a.a.Fragment, null, a.a.createElement("div", {
+					className: Ne.a.container
+				}, a.a.createElement(_, null), a.a.createElement(ne, {
+					className: Ne.a.communityPointsSection
+				}), a.a.createElement(Z, {
+					className: Ne.a.benefitsSection
+				}), a.a.createElement("img", {
+					className: Ne.a.spiral,
+					src: `${r.a.assetPath}/img/communityPoints/landingPage/spiral_v2.png`
+				}), a.a.createElement(pe, {
+					className: Ne.a.featuresSection
+				}), a.a.createElement(Ce, {
+					className: Ne.a.vaultSection
+				}), a.a.createElement(ce, {
+					className: Ne.a.cryptoFutureSection
+				}), a.a.createElement(Pe, {
+					className: Ne.a.joinWaitlistSection
+				})), a.a.createElement(m, null)) : a.a.createElement(Y, null)
+			};
+			const je = ({
+				anchorId: e
+			}) => a.a.createElement("div", {
+				className: Ne.a.anchorParent
+			}, a.a.createElement("a", {
+				id: e,
+				className: Ne.a.anchor
+			}))
 		},
 		"./src/reddit/pages/meta/CommunityPointsLearnMorePage/old.m.less": function(e, t, n) {
 			e.exports = {
@@ -2281,13 +2378,13 @@
 		"./src/reddit/selectors/economics.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "c", (function() {
-				return g
+				return p
 			})), n.d(t, "o", (function() {
 				return b
 			})), n.d(t, "a", (function() {
-				return v
-			})), n.d(t, "x", (function() {
 				return y
+			})), n.d(t, "x", (function() {
+				return v
 			})), n.d(t, "f", (function() {
 				return _
 			})), n.d(t, "i", (function() {
@@ -2297,57 +2394,57 @@
 			})), n.d(t, "h", (function() {
 				return w
 			})), n.d(t, "z", (function() {
-				return x
+				return k
 			})), n.d(t, "l", (function() {
 				return C
 			})), n.d(t, "n", (function() {
-				return k
+				return x
 			})), n.d(t, "e", (function() {
 				return N
 			})), n.d(t, "d", (function() {
 				return j
 			})), n.d(t, "j", (function() {
-				return D
-			})), n.d(t, "p", (function() {
 				return S
+			})), n.d(t, "p", (function() {
+				return A
 			})), n.d(t, "k", (function() {
-				return T
+				return M
 			})), n.d(t, "r", (function() {
 				return R
 			})), n.d(t, "y", (function() {
-				return I
-			})), n.d(t, "u", (function() {
 				return F
-			})), n.d(t, "v", (function() {
+			})), n.d(t, "u", (function() {
 				return O
+			})), n.d(t, "v", (function() {
+				return L
 			})), n.d(t, "b", (function() {
 				return q
 			})), n.d(t, "w", (function() {
-				return L
+				return D
 			})), n.d(t, "s", (function() {
 				return U
 			})), n.d(t, "t", (function() {
 				return Y
 			})), n.d(t, "g", (function() {
-				return G
+				return J
 			})), n.d(t, "m", (function() {
 				return V
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var r = n("./src/reddit/featureFlags/index.ts"),
 				o = n("./src/reddit/helpers/economics/sortBadges.ts"),
-				i = n("./src/reddit/helpers/richTextJson/index.ts"),
-				a = n("./src/reddit/models/Badge/index.ts"),
+				a = n("./src/reddit/helpers/richTextJson/index.ts"),
+				i = n("./src/reddit/models/Badge/index.ts"),
 				s = n("./src/reddit/models/Badge/managementPage.ts"),
-				d = n("./src/reddit/models/Payments/index.ts"),
+				c = n("./src/reddit/models/Payments/index.ts"),
 				l = n("./src/reddit/models/Product/index.ts"),
-				c = n("./src/reddit/reducers/economics/paymentSystems/index.ts"),
+				d = n("./src/reddit/reducers/economics/paymentSystems/index.ts"),
 				u = n("./src/reddit/reducers/economics/subredditPremium/index.ts"),
 				m = n("./src/reddit/selectors/commentSelector.ts"),
 				h = n("./src/reddit/selectors/gold/powerups/index.ts"),
 				f = n("./src/reddit/selectors/gold/powerups/benefitSettings.ts");
-			const p = [],
-				g = (e, t) => {
+			const g = [],
+				p = (e, t) => {
 					const n = e.economics.subredditPremium[t];
 					if (n && n.status === u.a.Fetched) {
 						const e = n.data.subscription,
@@ -2360,30 +2457,30 @@
 					return null
 				},
 				b = (e, t) => {
-					const n = g(e, t);
+					const n = p(e, t);
 					return n && n.endsAt || null
 				};
-			var v;
+			var y;
 			! function(e) {
 				e[e.DontKnow = 0] = "DontKnow", e[e.NotSubscribed = 1] = "NotSubscribed", e[e.Subscribed = 2] = "Subscribed"
-			}(v || (v = {}));
-			const y = (e, t) => {
+			}(y || (y = {}));
+			const v = (e, t) => {
 					const n = e.economics.subredditPremium[t];
 					if (n && n.status === u.a.Fetched) {
 						const n = b(e, t),
 							r = Date.now();
-						return n && r < n ? v.Subscribed : v.NotSubscribed
+						return n && r < n ? y.Subscribed : y.NotSubscribed
 					}
-					return v.DontKnow
+					return y.DontKnow
 				},
 				_ = (e, t) => {
 					const n = e.user.account,
 						r = e.economics.subredditPremium[t];
 					if (n && r && r.status === u.a.Fetched) {
-						const r = ((e.users.appliedBadges[n.id] || {})[t] || p).map(t => e.badges.models[t]).filter(Boolean);
+						const r = ((e.users.appliedBadges[n.id] || {})[t] || g).map(t => e.badges.models[t]).filter(Boolean);
 						if (r) return {
-							[s.a.Loyalty]: r.find(e => e.placement === a.a.First),
-							[s.a.Achievement]: r.find(e => e.placement === a.a.Second),
+							[s.a.Loyalty]: r.find(e => e.placement === i.a.First),
+							[s.a.Achievement]: r.find(e => e.placement === i.a.Second),
 							[s.a.Cosmetic]: r.find(e => !e.placement)
 						}
 					}
@@ -2395,11 +2492,11 @@
 				};
 
 			function P(e, t) {
-				return (null == e ? void 0 : e.length) ? Object(o.a)(e.map(e => t[e]).filter(Boolean)) : p
+				return (null == e ? void 0 : e.length) ? Object(o.a)(e.map(e => t[e]).filter(Boolean)) : g
 			}
 			const E = (e, t, n) => {
 					var o;
-					if (!r.d.spBadges(e)) return p;
+					if (!r.d.spBadges(e)) return g;
 					return P(null === (o = e.users.appliedBadges[n]) || void 0 === o ? void 0 : o[t], e.badges.models)
 				},
 				w = (e, t) => {
@@ -2413,7 +2510,7 @@
 					}
 				};
 
-			function x(e, t) {
+			function k(e, t) {
 				const n = (e.economics.me.data.specialMemberships || {})[t];
 				return !!(n && n.settings && n.settings.optOut)
 			}
@@ -2423,70 +2520,70 @@
 					badge: n,
 					subredditId: r
 				} = t, o = e.user.account ? e.user.account.id : void 0;
-				if (Object(a.e)(n) && n.userId === o) return n;
-				const i = e.badges.models,
+				if (Object(i.e)(n) && n.userId === o) return n;
+				const a = e.badges.models,
 					s = e.user.ownedBadges[r] || {},
-					d = Object(a.e)(n) ? n.type : n.id;
-				return Object.keys(s).map(e => i[e]).find(e => e && e.type === d)
+					c = Object(i.e)(n) ? n.type : n.id;
+				return Object.keys(s).map(e => a[e]).find(e => e && e.type === c)
 			}
 
-			function k(e, t, n, r) {
+			function x(e, t, n, r) {
 				const o = e.economics.subredditPremium[t];
 				if (o && o.status === u.a.Fetched) {
 					if (n === s.a.Loyalty || n === s.a.Achievement) return o.data.collections[n];
 					if (n === s.a.Cosmetic && r) return o.data.collections[n][r]
 				}
-				return p
+				return g
 			}
 
 			function N(e, t) {
-				const n = k(e, t, s.a.Loyalty).find(e => "membership" === e.id);
-				return n ? [].concat(n.locked, n.unlocked).filter(e => e.position).sort((e, t) => e.position - t.position) : p
+				const n = x(e, t, s.a.Loyalty).find(e => "membership" === e.id);
+				return n ? [].concat(n.locked, n.unlocked).filter(e => e.position).sort((e, t) => e.position - t.position) : g
 			}
 
 			function j(e, t) {
 				const n = e.economics.subredditPremium[t];
 				if (n && n.status === u.a.Fetched) {
 					const e = n.data.collections[s.a.Cosmetic];
-					return Object.values(e).reduce((e, t) => e.concat(t), []).reduce((e, t) => e.concat(t.locked, t.unlocked), []).filter(a.f)
+					return Object.values(e).reduce((e, t) => e.concat(t), []).reduce((e, t) => e.concat(t.locked, t.unlocked), []).filter(i.f)
 				}
-				return p
+				return g
 			}
 
-			function D(e, t) {
-				return k(e, t, s.a.Cosmetic, s.c.Gallery).some(e => e.locked.some(e => Object(a.f)(e) || !!e.price))
+			function S(e, t) {
+				return x(e, t, s.a.Cosmetic, s.c.Gallery).some(e => e.locked.some(e => Object(i.f)(e) || !!e.price))
 			}
-			const S = e => {
+			const A = e => {
 				const t = [],
 					n = e.economics.paymentSystems;
-				if (n.status === c.a.Fetched && n.data.stripe && n.data.stripe.sources) {
+				if (n.status === d.a.Fetched && n.data.stripe && n.data.stripe.sources) {
 					const e = n.data.stripe.sources;
 					for (const n in e) {
 						const r = e[n];
 						t.push({
 							display: `${r.brand} •••• ${r.last4}`,
 							id: n,
-							type: d.a.SavedStripe
+							type: c.a.SavedStripe
 						})
 					}
 				}
-				if (n.status === c.a.Fetched && n.data.braintree && n.data.braintree.sources) {
+				if (n.status === d.a.Fetched && n.data.braintree && n.data.braintree.sources) {
 					const e = n.data.braintree.sources;
 					for (const n in e) {
 						const r = e[n];
 						"PayPal" === r.brand && t.push({
 							display: "PayPal",
 							id: r.id,
-							type: d.a.SavedPayPal
+							type: c.a.SavedPayPal
 						})
 					}
 				}
 				return t
 			};
-			var A;
+			var T;
 			! function(e) {
 				e[e.Fetched = 0] = "Fetched", e[e.Fetching = 1] = "Fetching", e[e.NotFetched = 2] = "NotFetched"
-			}(A || (A = {}));
+			}(T || (T = {}));
 			const B = {
 					prices: {},
 					member: "Supporter",
@@ -2496,40 +2593,40 @@
 					membership: "Membership",
 					membershipAlt: "Supporter Membership"
 				},
-				T = (e, t) => Object.values(e.products.models).filter(e => e.type === l.a.Membership && t && e.subredditId === t),
-				M = (e, t) => {
+				M = (e, t) => Object.values(e.products.models).filter(e => e.type === l.a.Membership && t && e.subredditId === t),
+				I = (e, t) => {
 					if (!t) return {};
 					const n = B.prices;
-					T(e, t).forEach(e => {
+					M(e, t).forEach(e => {
 						e.price && e.currency && (n[e.currency] = e.price)
 					});
-					const r = g(e, t);
+					const r = p(e, t);
 					return r && r.price && r.currency && (n[r.currency] = r.price), n
 				},
 				R = (e, t) => {
-					var n, r, o, i;
-					const a = (null === (i = null === (o = null === (r = null === (n = e.features) || void 0 === n ? void 0 : n.crypto) || void 0 === r ? void 0 : r.points) || void 0 === o ? void 0 : o[t || ""]) || void 0 === i ? void 0 : i.nomenclature) || B;
+					var n, r, o, a;
+					const i = (null === (a = null === (o = null === (r = null === (n = e.features) || void 0 === n ? void 0 : n.crypto) || void 0 === r ? void 0 : r.points) || void 0 === o ? void 0 : o[t || ""]) || void 0 === a ? void 0 : a.nomenclature) || B;
 					return {
-						prices: M(e, t),
-						member: a.member || B.member,
-						memberPlural: a.memberPlural || B.memberPlural,
-						memberAlt: a.memberAlt || B.memberAlt,
-						memberAltPlural: a.memberAltPlural || B.memberAltPlural,
-						membership: a.membership || B.membership,
-						membershipAlt: a.membershipAlt || B.membershipAlt
+						prices: I(e, t),
+						member: i.member || B.member,
+						memberPlural: i.memberPlural || B.memberPlural,
+						memberAlt: i.memberAlt || B.memberAlt,
+						memberAltPlural: i.memberAltPlural || B.memberAltPlural,
+						membership: i.membership || B.membership,
+						membershipAlt: i.membershipAlt || B.membershipAlt
 					}
 				},
-				I = e => {
+				F = e => {
 					const t = e.economics.paymentSystems;
-					return !!(t.status === c.a.Fetched && t.data && t.data.tips && t.data.tips.usdr && t.data.tips.usdr.allowed)
+					return !!(t.status === d.a.Fetched && t.data && t.data.tips && t.data.tips.usdr && t.data.tips.usdr.allowed)
 				},
-				F = (e, t) => {
+				O = (e, t) => {
 					const n = e.user.ownedBadges[t] || {};
 					return !!Object.keys(n).length
 				},
-				O = e => {
+				L = e => {
 					const t = e.economics.paymentSystems;
-					return t.status === c.a.Fetched && !!t.data && !!t.data.stripe && !!t.data.stripe.stripeAccountId
+					return t.status === d.a.Fetched && !!t.data && !!t.data.stripe && !!t.data.stripe.stripeAccountId
 				},
 				q = (e, {
 					subredditId: t
@@ -2537,7 +2634,7 @@
 					if (!t) return;
 					return e.economics.emotes[t]
 				},
-				L = (e, t) => {
+				D = (e, t) => {
 					const n = t && e.economics.gifs[t];
 					return !!n && n.hasGifProduct
 				},
@@ -2548,7 +2645,7 @@
 					const r = "replyToPost" !== n && Object(m.b)(e, {
 						commentId: n
 					});
-					return !(!r || !Object(i.a)(r))
+					return !(!r || !Object(a.a)(r))
 				},
 				Y = (e, t, n) => {
 					if (!Object(f.b)(e, {
@@ -2560,12 +2657,12 @@
 					const o = "replyToPost" !== n && Object(m.b)(e, {
 						commentId: n
 					});
-					if (o && Object(i.b)(o)) return !0;
-					const a = r.d.spGiphy(e),
-						s = L(e, t);
-					return !(!a || !s) || a && s
+					if (o && Object(a.b)(o)) return !0;
+					const i = r.d.spGiphy(e),
+						s = D(e, t);
+					return !(!i || !s) || i && s
 				},
-				G = (e, t, n) => {
+				J = (e, t, n) => {
 					if (t) {
 						const r = e.economics.banners.dismissedBanners[t];
 						if (r && r.data) return !!r.data[n]
@@ -2575,4 +2672,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.dadcd37ff1a6771c44ec.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.77125fc9ad43477c1a05.js.map
