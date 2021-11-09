@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.b8d92a6af9b27619b792.js
-// Retrieved at 11/8/2021, 7:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.566b8cc53ca224ed3814.js
+// Retrieved at 11/9/2021, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -14343,9 +14343,10 @@
 						const {
 							key: r,
 							error: s,
-							type: n
+							success: n,
+							type: a
 						} = t.payload;
-						return -1 === n.indexOf(Ce.Yb.Users) ? e : {
+						return -1 === a.indexOf(Ce.Yb.Users) || n && n.authors ? e : {
 							...e,
 							[r]: s
 						}
@@ -14489,9 +14490,10 @@
 						const {
 							key: r,
 							error: s,
-							type: n
+							success: n,
+							type: a
 						} = t.payload;
-						return -1 === n.indexOf(Ce.Yb.Subreddits) ? e : {
+						return -1 === a.indexOf(Ce.Yb.Subreddits) || n && n.communities ? e : {
 							...e,
 							[r]: s
 						}
@@ -14913,9 +14915,10 @@
 							const {
 								error: r,
 								key: s,
-								type: n
+								success: n,
+								type: a
 							} = t.payload;
-							return -1 === n.indexOf(Ce.Yb.Posts) ? e : {
+							return -1 === a.indexOf(Ce.Yb.Posts) || n && n.posts ? e : {
 								...e,
 								[s]: r
 							}
@@ -26527,4 +26530,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.b8d92a6af9b27619b792.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.566b8cc53ca224ed3814.js.map
