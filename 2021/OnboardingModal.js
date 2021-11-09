@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OnboardingModal.aedc7bf1daac5de44eb6.js
-// Retrieved at 11/8/2021, 10:50:15 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OnboardingModal.5ee92264262f96649ce9.js
+// Retrieved at 11/8/2021, 7:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OnboardingModal"], {
 		"./node_modules/lodash/times.js": function(e, t, n) {
@@ -390,8 +390,8 @@
 				U = n("./src/reddit/helpers/frontpageCardPostCountExperiment.ts"),
 				W = n("./src/reddit/helpers/getTimeSortForListing/index.ts"),
 				z = n("./src/reddit/models/Toast/index.ts"),
-				Q = n("./src/reddit/selectors/experiments/frontpageSignup.ts"),
-				Z = n("./src/reddit/selectors/frontpage.ts"),
+				Z = n("./src/reddit/selectors/experiments/frontpageSignup.ts"),
+				Q = n("./src/reddit/selectors/frontpage.ts"),
 				K = n("./src/reddit/selectors/goldPurchaseModals.ts"),
 				X = n("./src/reddit/selectors/runTimeEnvVars.ts"),
 				J = n("./src/lib/makeActionCreator/index.ts"),
@@ -465,7 +465,7 @@
 				}, be = (e, t) => async (n, s) => {
 					var r;
 					const i = s(),
-						c = Object(Z.a)(i),
+						c = Object(Q.a)(i),
 						{
 							sort: a = c
 						} = e.params,
@@ -498,8 +498,8 @@
 						experimentEligibilitySelector: S.a,
 						experimentName: "redesign_aa"
 					});
-					const h = Object(Q.a)(i, {});
-					Object(Q.e)(h) && n(Object(L.k)())
+					const h = Object(Z.a)(i, {});
+					Object(Z.e)(h) && n(Object(L.k)())
 				}, pe = () => async (e, t) => {
 					var n, s;
 					const r = t();
@@ -521,7 +521,7 @@
 					gqlContext: s
 				}) => {
 					const r = n(),
-						c = Object(Z.a)(r),
+						c = Object(Q.a)(r),
 						{
 							sort: a = c
 						} = e,
@@ -585,7 +585,7 @@
 					}
 				}, ye = e => async (t, n) => {
 					const s = n(),
-						r = Object(Z.a)(s),
+						r = Object(Q.a)(s),
 						{
 							sort: o = r
 						} = e,
@@ -836,18 +836,18 @@
 					hk: "4u0XYF"
 				}), !c && null !== c && U._("Select All", null, {
 					hk: "3izh21"
-				}))), i.a.createElement(i.a.Fragment, null, i.a.createElement(Z, {
+				}))), i.a.createElement(i.a.Fragment, null, i.a.createElement(Q, {
 					communities: e.communities,
 					communityId: e.topicId,
 					selected: t,
 					toggleSelection: s,
 					topicTitle: e.topicTitle
 				})))
-			}, Q = () => i.a.createElement(i.a.Fragment, null, w()(5, e => i.a.createElement(F.a, {
+			}, Z = () => i.a.createElement(i.a.Fragment, null, w()(5, e => i.a.createElement(F.a, {
 				key: e,
 				fullWidth: !0,
 				large: !0
-			}))), Z = ({
+			}))), Q = ({
 				communities: e,
 				communityId: t,
 				selected: n,
@@ -947,7 +947,7 @@
 						selected: s,
 						toggleAll: c,
 						toggleSelection: r
-					}), (!!e.length || t) && i.a.createElement(i.a.Fragment, null, t && i.a.createElement(Q, null), e.map(e => i.a.createElement(z, {
+					}), (!!e.length || t) && i.a.createElement(i.a.Fragment, null, t && i.a.createElement(Z, null), e.map(e => i.a.createElement(z, {
 						key: e.topicId,
 						community: e,
 						selected: s,
@@ -1311,7 +1311,7 @@
 				const {
 					gqlContext: t,
 					apiContext: n
-				} = e, s = Object(c.d)(), r = Object(j.a)(), a = Object(c.e)(Fe.c), b = a === me.Qe.Enabled_noskip || a === me.Qe.Enabled_noskip_no_preselect, p = a === me.Qe.Enabled_noskip_no_preselect, [f, g] = Object(o.useState)(le.INTERESTS), [h, v] = Object(o.useState)([]), [y, I] = Object(o.useState)({}), [_, S] = Object(o.useState)(!1), [E, C] = Object(o.useState)([]), [T, N] = Object(o.useState)([]), [R, P] = Object(o.useState)({}), {
+				} = e, s = Object(c.d)(), r = Object(j.a)(), a = Object(c.e)(Fe.c), b = a === me.Re.Enabled_noskip || a === me.Re.Enabled_noskip_no_preselect, p = a === me.Re.Enabled_noskip_no_preselect, [f, g] = Object(o.useState)(le.INTERESTS), [h, v] = Object(o.useState)([]), [y, I] = Object(o.useState)({}), [_, S] = Object(o.useState)(!1), [E, C] = Object(o.useState)([]), [T, N] = Object(o.useState)([]), [R, P] = Object(o.useState)({}), {
 					avatarImage: A,
 					fetchRandomAvatar: L,
 					saveAvatar: w
@@ -1360,11 +1360,11 @@
 						w(), U()
 					}, [w, U]),
 					z = (() => f === le.INTERESTS ? D : f === le.COMMUNITIES ? G : W)(),
-					Q = Object(c.e)(e => f === le.AVATAR && Object(we.e)(e));
+					Z = Object(c.e)(e => f === le.AVATAR && Object(we.e)(e));
 				Object(o.useEffect)(() => {
-					f !== le.AVATAR || Q || U()
-				}, [Q, f, U]);
-				const Z = Object(o.useCallback)(() => {
+					f !== le.AVATAR || Z || U()
+				}, [Z, f, U]);
+				const Q = Object(o.useCallback)(() => {
 						f === le.COMMUNITIES ? g(le.INTERESTS) : f === le.AVATAR && g(le.COMMUNITIES)
 					}, [f]),
 					K = Object(o.useCallback)(() => {
@@ -1375,7 +1375,7 @@
 					H = Object.keys(R).length,
 					Y = Object.keys(y).length,
 					$ = b && f === le.INTERESTS && Y < 3 || f === le.COMMUNITIES && H < 1;
-				return f === le.CELEBRATION || f === le.AVATAR && !Q ? i.a.createElement(x, null) : i.a.createElement("div", {
+				return f === le.CELEBRATION || f === le.AVATAR && !Z ? i.a.createElement(x, null) : i.a.createElement("div", {
 					className: ae.a.container
 				}, i.a.createElement("header", {
 					className: ae.a.header
@@ -1383,7 +1383,7 @@
 					className: ae.a.headerBar
 				}, i.a.createElement("div", null, X && i.a.createElement(Le.d, {
 					className: ae.a.backButton,
-					onClick: Z
+					onClick: Q
 				})), i.a.createElement(Ae.a, {
 					className: ae.a.snooIcon
 				}), i.a.createElement("div", {
@@ -1919,4 +1919,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.aedc7bf1daac5de44eb6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.5ee92264262f96649ce9.js.map

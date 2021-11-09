@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.316d73b094d4f61667e2.js
-// Retrieved at 11/8/2021, 10:50:15 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.ccc10c1d7f357cfa60bf.js
+// Retrieved at 11/8/2021, 7:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Premium~reddit-components-Econ-Prediction-PremiumModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, r) {
@@ -1802,7 +1802,7 @@
 				const t = Object(o.e)(b.l),
 					r = Object(o.e)(b.m),
 					i = Object(o.e)(b.j),
-					h = Object(o.e)(p.A),
+					h = Object(o.e)(p.B),
 					y = Object(o.e)(f.X),
 					O = Object(u.a)();
 				if (!(null == t ? void 0 : t.length)) return s.a.createElement("div", null, s.a.createElement(d.a, {
@@ -2312,4 +2312,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.316d73b094d4f61667e2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.ccc10c1d7f357cfa60bf.js.map

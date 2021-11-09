@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.b9d75171db9969ffe822.js
-// Retrieved at 11/8/2021, 10:50:15 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.b9393eeb2f1f7a957d62.js
+// Retrieved at 11/8/2021, 7:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-MediumPost"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -1218,9 +1218,9 @@
 				z = s("./src/reddit/selectors/postFlair.ts"),
 				G = s("./src/reddit/selectors/posts.ts"),
 				Z = s("./src/reddit/selectors/showPromotedCTA.ts"),
-				K = s("./src/reddit/components/MediumPost/MediumThumbnail.tsx"),
-				Q = s("./src/reddit/helpers/styles/mixins/index.m.less"),
-				X = s.n(Q),
+				Q = s("./src/reddit/components/MediumPost/MediumThumbnail.tsx"),
+				K = s("./src/reddit/helpers/styles/mixins/index.m.less"),
+				X = s.n(K),
 				J = s("./src/reddit/selectors/i18n/index.ts"),
 				$ = s("./src/reddit/components/MediumPost/index.m.less"),
 				ee = s.n($);
@@ -1264,7 +1264,7 @@
 						isOverlay: z,
 						isTopicPage: G,
 						isCommentCountAnimationEnabled: Z,
-						isVoteCountAnimationEnabled: Q,
+						isVoteCountAnimationEnabled: K,
 						isCountAnimShadowTestEnabled: J,
 						imageGalleryCurrentItem: $,
 						listingKey: te,
@@ -1306,7 +1306,7 @@
 						toggleCheckbox: he,
 						flairStyleTemplate: Ce,
 						redditStyle: ce,
-						isVoteCountAnimation: Q,
+						isVoteCountAnimation: K,
 						isCountAnimShadowTestEnabled: J,
 						postId: ie
 					}), o.a.createElement(y.a, {
@@ -1357,7 +1357,7 @@
 						className: ee.a.sourceLink,
 						isCommentsPage: Y,
 						post: re
-					})), !we && Le && o.a.createElement(K.a, {
+					})), !we && Le && o.a.createElement(Q.a, {
 						crosspost: s ? re : void 0,
 						hasModPostPerms: ye,
 						isCommentsPage: Y,
@@ -1783,8 +1783,8 @@
 					z = Object(i.e)(I.a),
 					G = Y.isSponsored && (z === p.s.NoLockIcon || z === p.s.PromotedGrey),
 					Z = Y.isRemoved && !Y.modRemovalReason && !Y.modNote && Y.belongsTo.type === b.a.SUBREDDIT,
-					K = U("Approve", Y.id, W),
-					Q = U("Archived", Y.id, W),
+					Q = U("Approve", Y.id, W),
+					K = U("Archived", Y.id, W),
 					X = U("Lock", Y.id, W),
 					J = U("Mod", Y.id, W),
 					$ = U("Remove", Y.id, W),
@@ -1805,11 +1805,11 @@
 					isFilled: !0,
 					className: Object(c.a)(N.a.icon, N.a.archivedIcon),
 					desc: A(),
-					id: Q,
-					onMouseEnter: H(Q),
+					id: K,
+					onMouseEnter: H(K),
 					onMouseLeave: B
 				}), r.a.createElement(u.c, L({
-					tooltipId: Q,
+					tooltipId: K,
 					text: A()
 				}, q))), Y.isLocked && !G && r.a.createElement(o.Fragment, null, r.a.createElement(O.a, {
 					isFilled: !0,
@@ -1845,11 +1845,11 @@
 					isFilled: !0,
 					className: Object(c.a)(N.a.icon, N.a.approveIcon),
 					desc: Object(x.a)(Y),
-					id: K,
-					onMouseEnter: H(K),
+					id: Q,
+					onMouseEnter: H(Q),
 					onMouseLeave: B
 				}), r.a.createElement(u.c, L({
-					tooltipId: K,
+					tooltipId: Q,
 					text: Object(x.a)(Y)
 				}, q))), Object(E.a)(Y) && r.a.createElement(o.Fragment, null, r.a.createElement(C.a, {
 					isFilled: !0,
@@ -2320,22 +2320,22 @@
 						[D.a.isVisitedEnabled]: !e
 					})
 				}, n),
-				K = Object(c.c)({
+				Q = Object(c.c)({
 					flairPosition: (e, {
 						pageLayer: t
 					}) => Object(p.q)(e, {
 						pageLayer: t
 					}),
 					shouldOpenPostInNewTab: F.db,
-					isTournamentPredictionPostV2: M.w
+					isTournamentPredictionPostV2: M.x
 				}),
-				Q = e => {
+				K = e => {
 					const {
 						post: t,
 						subreddit: s
 					} = e, {
 						isSponsored: n
-					} = t, o = Object(B.a)(), i = Object(V.a)(m.Uc) === m.Zc.Enabled;
+					} = t, o = Object(B.a)(), i = Object(V.a)(m.Vc) === m.ad.Enabled;
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return r.a.createElement(Z, {
 						nowrap: e.nowrap
 					}, r.a.createElement(X, e));
@@ -2458,7 +2458,7 @@
 						post: c,
 						sendEvent: this.props.sendEvent,
 						showCategoryTag: !1
-					}), S && r.a.createElement(Q, q({}, this.props, {
+					}), S && r.a.createElement(K, q({}, this.props, {
 						leftFlair: d ? b : void 0
 					})), a && r.a.createElement(w, {
 						className: D.a.pollMeta,
@@ -2482,7 +2482,7 @@
 				const t = Object(p.eb)(),
 					s = Object(p.w)(t),
 					n = Object(H.a)(),
-					o = Object(i.e)(o => K(o, {
+					o = Object(i.e)(o => Q(o, {
 						...n,
 						...e,
 						isCommentPermalink: s,
@@ -4534,7 +4534,7 @@
 						postId: t
 					}) || Object(i.H)(e))(e, t),
 					experimentName: n.M
-				}) === n.Kc
+				}) === n.Lc
 			}
 		},
 		"./src/reddit/selectors/experiments/econAwardsPlaque.ts": function(e, t, s) {
@@ -4549,7 +4549,7 @@
 					experimentEligibilitySelector: o.a,
 					experimentName: n.fc
 				});
-				return !(!t || Object(n.df)(t))
+				return !(!t || Object(n.ef)(t))
 			}
 		},
 		"./src/reddit/selectors/i18n/index.ts": function(e, t, s) {
@@ -4565,7 +4565,7 @@
 				i = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const a = e => {
 					const t = Object(i.a)(e);
-					return Boolean(t) && !Object(o.df)(t)
+					return Boolean(t) && !Object(o.ef)(t)
 				},
 				c = Object(n.a)(a, r.d, (e, t) => e && !t)
 		},
@@ -4581,13 +4581,13 @@
 				r = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = s("./src/reddit/selectors/posts.ts");
 			const a = e => Object(r.c)(e, {
-					experimentName: o.Yd,
+					experimentName: o.Zd,
 					experimentEligibilitySelector: r.a
 				}),
-				c = (e, t) => t === o.he.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				c = (e, t) => t === o.ie.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				d = Object(n.a)(i.H, a, (e, t) => c(e, t)),
 				l = Object(n.a)((e, t) => t, a, (e, t) => c(e, t))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.b9d75171db9969ffe822.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.b9393eeb2f1f7a957d62.js.map

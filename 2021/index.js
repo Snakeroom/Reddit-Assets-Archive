@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index.7924ea269fa4a4b07dd5.js
-// Retrieved at 11/8/2021, 1:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index.9066cc229b8994de11de.js
+// Retrieved at 11/8/2021, 7:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index"], {
 		"./src/reddit/components/Econ/Audio/MuteIcon.tsx": function(e, t, n) {
@@ -150,7 +150,7 @@
 			}) => {
 				const {
 					audioRoom: t
-				} = e, [n, d] = Object(i.useState)(new Set), [v, b] = Object(i.useState)(new Set), E = Object(a.e)(c.X), [O, f] = Object(i.useState)(-1), h = e => {
+				} = e, [n, d] = Object(i.useState)(new Set), [v, b] = Object(i.useState)(new Set), E = Object(a.e)(c.X), [O, f] = Object(i.useState)(-1), x = e => {
 					const t = e ? Array.from(v) : Array.from(n);
 					return null == t ? void 0 : t.map((t, n) => {
 						return e ? s.a.createElement("div", {
@@ -181,11 +181,11 @@
 							className: l.a.muteIcon
 						})))
 					})
-				}, x = () => Math.floor(40 * Math.random() + 1);
+				}, h = () => Math.floor(40 * Math.random() + 1);
 				return Object(i.useEffect)(() => {
 					const e = new Set;
 					for (; e.size < 13;) {
-						const t = x();
+						const t = h();
 						e.has(t) || (n.size < 6 ? n.add(t) : v.size < 7 && v.add(t), e.add(t))
 					}
 					d(n), b(v)
@@ -203,9 +203,9 @@
 					"data-testid": "audioroom-card-live"
 				}, s.a.createElement("div", {
 					className: Object(r.a)(l.a.userRow)
-				}, h(!1)), s.a.createElement("div", {
+				}, x(!1)), s.a.createElement("div", {
 					className: Object(r.a)(l.a.userRow, l.a.isListener)
-				}, h(!0))) : s.a.createElement("div", {
+				}, x(!0))) : s.a.createElement("div", {
 					className: l.a.endedContainer,
 					"data-testid": "audioroom-card-ended"
 				}, s.a.createElement(u.a, {
@@ -272,7 +272,7 @@
 		"./src/reddit/components/Econ/Prediction/TournamentPostBody/index.tsx": function(e, t, n) {
 			"use strict";
 			n.r(t), n.d(t, "TournamentPostBody", (function() {
-				return xe
+				return he
 			}));
 			var o = n("./node_modules/react/index.js"),
 				i = n.n(o),
@@ -317,8 +317,8 @@
 					hk: "1QaAgH"
 				}))
 			};
-			var h = n("./src/reddit/components/Econ/Prediction/TournamentPostBody/v1/PredictionContainer/index.m.less"),
-				x = n.n(h);
+			var x = n("./src/reddit/components/Econ/Prediction/TournamentPostBody/v1/PredictionContainer/index.m.less"),
+				h = n.n(x);
 
 			function P() {
 				return (P = Object.assign || function(e) {
@@ -334,7 +334,7 @@
 				...t
 			}) => {
 				return i.a.createElement("div", P({}, t, {
-					className: Object(c.a)(e, x.a.container),
+					className: Object(c.a)(e, h.a.container),
 					onClick: e => {
 						e.stopPropagation()
 					}
@@ -403,12 +403,12 @@
 						id: O,
 						voteState: f
 					} = n,
-					[h, x] = i.a.useState(!1),
+					[x, h] = i.a.useState(!1),
 					[P, g] = i.a.useState(null),
 					[I, j] = i.a.useState(!1),
 					C = v < Date.now();
 				return {
-					isLoading: h,
+					isLoading: x,
 					isShowingVoteAnimation: I,
 					selectedOption: b.find(({
 						id: e
@@ -422,7 +422,7 @@
 							hk: "22UWEr"
 						})), void g(null);
 						if (!m || !P) throw new Error("Invalid arguments, optionId and pollId must be strings");
-						x(!0), d(Object(D.q)({
+						h(!0), d(Object(D.q)({
 							pollId: m,
 							selectedNumberTokens: t.amount
 						}));
@@ -434,9 +434,9 @@
 								pollId: m,
 								tournamentId: e,
 								tournamentPostId: n.id
-							})), c && f < z.a.upvoted && (o(Object(F.db)(O)), o(Object(F.db)(m)), u()), x(!1), g(null), j(!0)
+							})), c && f < z.a.upvoted && (o(Object(F.db)(O)), o(Object(F.db)(m)), u()), h(!1), g(null), j(!0)
 						} catch (i) {
-							x(!1), g(null), l(H._("Error: Failed to make prediction, please try again later", null, {
+							h(!1), g(null), l(H._("Error: Failed to make prediction, please try again later", null, {
 								hk: "1tECsx"
 							}))
 						}
@@ -470,8 +470,8 @@
 						selectedOption: E,
 						selectOption: O,
 						predict: f,
-						cancelAction: h,
-						hideAnimation: x
+						cancelAction: x,
+						hideAnimation: h
 					} = U(t, e, a),
 					{
 						options: P,
@@ -497,7 +497,7 @@
 					endsAt: k,
 					key: `prediction-option-${e.id}`,
 					isShowingVoteAnimation: b && g === e.id,
-					onAnimationEnd: x
+					onAnimationEnd: h
 				}, i.a.createElement(C.a, {
 					disabled: b,
 					isCancelled: F,
@@ -523,8 +523,8 @@
 				})), !!E && i.a.createElement(j.b, {
 					className: Y.a.modal,
 					isCreatingVote: v,
-					onOverlayClick: h,
-					onCancel: h,
+					onOverlayClick: x,
+					onCancel: x,
 					onPredict: f,
 					option: E,
 					pollId: e.id,
@@ -803,7 +803,7 @@
 						count: t.length
 					}))
 				},
-				he = ({
+				xe = ({
 					post: e
 				}) => {
 					const {
@@ -817,10 +817,10 @@
 						predictions: a
 					}))
 				},
-				xe = e => {
-					return Object(s.e)(a.w) ? i.a.createElement(he, e) : i.a.createElement(Q, e)
+				he = e => {
+					return Object(s.e)(a.x) ? i.a.createElement(xe, e) : i.a.createElement(Q, e)
 				};
-			t.default = xe
+			t.default = he
 		},
 		"./src/reddit/components/Econ/Prediction/TournamentPostBody/v1/PredictionContainer/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -943,4 +943,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.7924ea269fa4a4b07dd5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.9066cc229b8994de11de.js.map

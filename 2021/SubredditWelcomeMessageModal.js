@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWelcomeMessageModal.3c084fb22a9ad0c4b6fe.js
-// Retrieved at 11/8/2021, 10:50:15 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWelcomeMessageModal.c6c5b92caf12a13c30b5.js
+// Retrieved at 11/8/2021, 7:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWelcomeMessageModal"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -2008,12 +2008,12 @@
 						rtJsonElementProps: i
 					});
 					switch (n) {
-						case b.Fe.SmIcon:
+						case b.Ge.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: i
 							});
-						case b.Fe.SmIconHc:
+						case b.Ge.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -2120,7 +2120,7 @@
 				experimentVariant: e => {
 					var t;
 					return null === (t = Object(v.d)(e, {
-						experimentName: m.Be
+						experimentName: m.Ce
 					})) || void 0 === t ? void 0 : t.variant
 				},
 				user: y.k,
@@ -2202,7 +2202,7 @@
 					rtJsonElementProps: N
 				}) : null === (i = null == y ? void 0 : y.body) || void 0 === i ? void 0 : i.markdown)), r.a.createElement(d.g, {
 					className: T.a.modalFooter
-				}, u === m.He.Rules ? !j && r.a.createElement(p.t, {
+				}, u === m.Ie.Rules ? !j && r.a.createElement(p.t, {
 					priority: p.c.Secondary,
 					onClick: () => {
 						O(!0), _(b.b())
@@ -2578,12 +2578,12 @@
 				d = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: n.ze
+						experimentName: n.Ae
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === n.Fe.SmIcon || t === n.Fe.SmIconHc
+					return t === n.Ge.SmIcon || t === n.Ge.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -2606,4 +2606,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWelcomeMessageModal.3c084fb22a9ad0c4b6fe.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWelcomeMessageModal.c6c5b92caf12a13c30b5.js.map

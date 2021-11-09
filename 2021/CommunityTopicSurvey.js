@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.ba54e05e4fc60320f6eb.js
-// Retrieved at 11/8/2021, 10:50:15 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.306c2a9b02d0a2d2682b.js
+// Retrieved at 11/8/2021, 7:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityTopicSurvey"], {
 		"./node_modules/react-uid/dist/es2015/hooks.js": function(e, t, n) {
@@ -143,7 +143,7 @@
 		"./src/reddit/components/CommunityTopicSurvey/index.tsx": function(e, t, n) {
 			"use strict";
 			n.r(t), n.d(t, "default", (function() {
-				return F
+				return L
 			}));
 			var r = n("./node_modules/fbt/lib/FbtPublic.js"),
 				s = n("./node_modules/react/index.js"),
@@ -274,7 +274,7 @@
 				return 0 === n.length ? o.a.createElement(o.a.Fragment, null, t) : o.a.createElement(o.a.Fragment, null, n[0], o.a.createElement(U.a, {
 					isFeatureFlagEnabled: !0,
 					isUserInTreatment: !0,
-					userVariant: N.Fe.SmIconHc,
+					userVariant: N.Ge.SmIconHc,
 					subredditName: n[1].split("/")[1],
 					rtJsonElementProps: {}
 				}), n[2])
@@ -368,7 +368,7 @@
 				})))
 			}
 
-			function F(e) {
+			function L(e) {
 				var t;
 				const {
 					subredditId: n,
@@ -863,12 +863,12 @@
 						rtJsonElementProps: o
 					});
 					switch (r) {
-						case p.Fe.SmIcon:
+						case p.Ge.SmIcon:
 							return s.a.createElement(_, {
 								subredditName: n,
 								rtJsonElementProps: o
 							});
-						case p.Fe.SmIconHc:
+						case p.Ge.SmIconHc:
 							return s.a.createElement(_, {
 								subredditName: n,
 								isHoverable: !0,
@@ -1139,12 +1139,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: r.ze
+						experimentName: r.Ae
 					}) || ""
 				},
 				u = e => {
 					const t = c(e);
-					return t === r.Fe.SmIcon || t === r.Fe.SmIconHc
+					return t === r.Ge.SmIcon || t === r.Ge.SmIconHc
 				},
 				a = (e, {
 					subredditName: t
@@ -1170,4 +1170,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.ba54e05e4fc60320f6eb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.306c2a9b02d0a2d2682b.js.map

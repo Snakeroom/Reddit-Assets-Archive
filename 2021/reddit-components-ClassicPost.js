@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.24380358640309737ec0.js
-// Retrieved at 11/8/2021, 10:50:15 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.a2fbcacb1a28024b5a9e.js
+// Retrieved at 11/8/2021, 7:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost", "Reddit~StandalonePostPage~reddit-components-MediumPost", "FrontpageSidebar"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -3438,7 +3438,7 @@
 						pageLayer: t
 					}),
 					shouldOpenPostInNewTab: L.db,
-					isTournamentPredictionPostV2: F.w
+					isTournamentPredictionPostV2: F.x
 				}),
 				Z = e => {
 					const {
@@ -3446,7 +3446,7 @@
 						subreddit: s
 					} = e, {
 						isSponsored: n
-					} = t, r = Object(U.a)(), a = Object(B.a)(m.Uc) === m.Zc.Enabled;
+					} = t, r = Object(U.a)(), a = Object(B.a)(m.Vc) === m.ad.Enabled;
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return o.a.createElement(K, {
 						nowrap: e.nowrap
 					}, o.a.createElement(X, e));
@@ -7507,7 +7507,7 @@
 						postId: t
 					}) || Object(a.H)(e))(e, t),
 					experimentName: n.M
-				}) === n.Kc
+				}) === n.Lc
 			}
 		},
 		"./src/reddit/selectors/experiments/joinOptimizations.ts": function(e, t, s) {
@@ -7636,8 +7636,8 @@
 			const o = e => {
 				return Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: n.Vd
-				}) === n.Kc
+					experimentName: n.Wd
+				}) === n.Lc
 			}
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, s) {
@@ -7876,10 +7876,10 @@
 				o = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				a = s("./src/reddit/selectors/posts.ts");
 			const i = e => Object(o.c)(e, {
-					experimentName: r.Yd,
+					experimentName: r.Zd,
 					experimentEligibilitySelector: o.a
 				}),
-				c = (e, t) => t === r.he.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				c = (e, t) => t === r.ie.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				d = Object(n.a)(a.H, i, (e, t) => c(e, t)),
 				l = Object(n.a)((e, t) => t, i, (e, t) => c(e, t))
 		},
@@ -7955,4 +7955,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.24380358640309737ec0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.a2fbcacb1a28024b5a9e.js.map

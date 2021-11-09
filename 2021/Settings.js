@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.8c73c12e6112a80c4df7.js
-// Retrieved at 11/8/2021, 5:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.077dac8485b8cc0fd970.js
+// Retrieved at 11/8/2021, 7:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, n) {
@@ -6958,7 +6958,7 @@
 				fe = Object(E.c)({
 					cancelSubscriptionModalIsOpen: Object(ue.b)("settings_optout_modal_id"),
 					premiumBenefitsModalIsOpen: Object(ue.b)("premium_benefits_modal_id"),
-					isPremiumImprovedCancellationEnabled: C.z,
+					isPremiumImprovedCancellationEnabled: C.A,
 					goldExpiration: me.o,
 					hasAndroidSubscription: me.p,
 					hasIosSubscription: me.v,
@@ -14256,7 +14256,7 @@
 			const a = e => Object(s.c)(e, {
 				experimentName: r.D,
 				experimentEligibilitySelector: () => Object(o.J)(e)
-			}) === r.Kc
+			}) === r.Lc
 		},
 		"./src/reddit/selectors/gold/productOffers.ts": function(e, t, n) {
 			"use strict";
@@ -14410,4 +14410,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.8c73c12e6112a80c4df7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.077dac8485b8cc0fd970.js.map

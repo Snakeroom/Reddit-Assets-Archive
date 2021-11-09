@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.6821a75c9fa4e600f08e.js
-// Retrieved at 11/8/2021, 10:50:15 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.0b11928d690d886feec4.js
+// Retrieved at 11/8/2021, 7:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsMarketingModal"], {
 		"./src/reddit/components/Econ/Common/BenefitTile/index.m.less": function(e, t, s) {
@@ -600,4 +600,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.6821a75c9fa4e600f08e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.0b11928d690d886feec4.js.map

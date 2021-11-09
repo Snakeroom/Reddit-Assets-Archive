@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.8ad9556cd4c436cf8aee.js
-// Retrieved at 11/8/2021, 10:50:15 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.a9c2cb0f22714eee81f4.js
+// Retrieved at 11/8/2021, 7:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton", "reddit-components-RichTextEditor-Toolbar-GifButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, o) {
@@ -3628,8 +3628,8 @@
 					errorMessages: _.j,
 					hasError: _.k,
 					markdownDraft: _.l,
-					pending: _.Y,
-					postRequirements: _.nb,
+					pending: _.ab,
+					postRequirements: _.pb,
 					rteDraft: _.m,
 					subreddit: T.r,
 					uploads: e => e.uploads,
@@ -4966,24 +4966,24 @@
 					if (Object(i.a)(e)) return !1;
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: n.af
+						experimentName: n.bf
 					});
-					return t === n.Te.UIChangesOnly || t === n.Te.TypingIndicators || t === n.Te.IndicatorsPlusCTA
+					return t === n.Ue.UIChangesOnly || t === n.Ue.TypingIndicators || t === n.Ue.IndicatorsPlusCTA
 				},
 				c = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(r.d)(e, {
-							experimentName: n.af
+							experimentName: n.bf
 						}),
 						o = null == t ? void 0 : t.variant;
-					return o === n.Te.TypingIndicators || o === n.Te.IndicatorsPlusCTA
+					return o === n.Ue.TypingIndicators || o === n.Ue.IndicatorsPlusCTA
 				},
 				d = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(r.d)(e, {
-						experimentName: n.af
+						experimentName: n.bf
 					});
-					return (null == t ? void 0 : t.variant) === n.Te.IndicatorsPlusCTA
+					return (null == t ? void 0 : t.variant) === n.Ue.IndicatorsPlusCTA
 				}
 		},
 		"./src/reddit/selectors/moderatingComments.ts": function(e, t, o) {
@@ -5024,4 +5024,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.8ad9556cd4c436cf8aee.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.a9c2cb0f22714eee81f4.js.map
