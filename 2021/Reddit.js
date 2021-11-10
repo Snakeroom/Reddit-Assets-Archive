@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.bd7fd60683520b5191b7.js
-// Retrieved at 11/10/2021, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.4cdfb998980150a77e4d.js
+// Retrieved at 11/10/2021, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -9341,7 +9341,7 @@
 					email: Ct.n,
 					hasUnreadChatMessages: ul.f,
 					inboxBadgeCount: ul.g,
-					isAvatarQuickCreateEnabled: e => (e => {
+					isAvatarQuickCreateEnabled: e => Object(qs.g)(e) && (e => {
 						const t = Da(e),
 							n = (new Date).getTime(),
 							s = Object(Bt.x)();
@@ -9351,7 +9351,7 @@
 							return !!(s.id === t.id && e && s.eventViews <= t.max_event_views) || s.id !== t.id && e
 						}
 						return !1
-					})(e) && Object(qs.g)(e),
+					})(e),
 					isChangeUsernameTooltipShowing: e => e.isChangeUsernameTooltipShowing,
 					isCustomizeFlyoutShowing: e => e.user.isCustomizeFlyoutShowing,
 					isEmailVerificationTooltipShowing: e => e.isEmailVerificationTooltipShowing,
@@ -21421,4 +21421,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePo~5f1ac562", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241", "Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Governance~ModListing~Reddit~Subreddit", "Chat~Governance~Reddit", 0, "Reddit~StandalonePostPage~reddit-components-MediumPost", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.bd7fd60683520b5191b7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.4cdfb998980150a77e4d.js.map
