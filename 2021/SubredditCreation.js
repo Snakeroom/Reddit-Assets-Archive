@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditCreation.087c0abc160f57eaba86.js
-// Retrieved at 11/9/2021, 3:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditCreation.ee43fcd53846b4cba953.js
+// Retrieved at 11/10/2021, 9:20:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditCreation"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -359,8 +359,8 @@
 				V = C.a.h3("Label", W.a),
 				Y = C.a.wrapped(S.c, "Subtext", W.a),
 				J = C.a.wrapped(u.a, "HoverTooltip", W.a),
-				K = C.a.div("ControlContainer", W.a),
-				Q = C.a.div("TextContainer", W.a),
+				Q = C.a.div("ControlContainer", W.a),
+				K = C.a.div("TextContainer", W.a),
 				z = C.a.div("ActionContainer", W.a),
 				X = ({
 					className: e,
@@ -394,7 +394,7 @@
 					indent: e.indent,
 					isCreateCommunity: e.isCreateCommunity,
 					last: e.last
-				}, r.a.createElement(Q, {
+				}, r.a.createElement(K, {
 					className: e.textContainerClassName
 				}, r.a.createElement(V, null, e.label, e.isRequired && r.a.createElement(H, null)), r.a.createElement(Y, null, e.subtext)), r.a.createElement(z, null, e.children)),
 				ne = C.a.div("StyledFlair", W.a),
@@ -417,9 +417,9 @@
 						disabled: e.disabled,
 						indent: e.indent,
 						last: e.last
-					}, r.a.createElement(Q, null, r.a.createElement(M.a, null, r.a.createElement("label", {
+					}, r.a.createElement(K, null, r.a.createElement(M.a, null, r.a.createElement("label", {
 						htmlFor: t
-					}, r.a.createElement(V, null, e.label))), r.a.createElement(Y, null, e.subtext)), r.a.createElement(z, null, r.a.createElement(K, null, e.tooltip && r.a.createElement(J, {
+					}, r.a.createElement(V, null, e.label))), r.a.createElement(Y, null, e.subtext)), r.a.createElement(z, null, r.a.createElement(Q, null, e.tooltip && r.a.createElement(J, {
 						tooltipContentClass: e.tooltipContentClassName,
 						text: e.tooltip
 					}), r.a.createElement(w.a, {
@@ -446,7 +446,7 @@
 					isNightModeOn: e.isNightModeOn,
 					direction: e.direction,
 					className: e.className
-				}, r.a.createElement(Q, {
+				}, r.a.createElement(K, {
 					style: {
 						flex: 5
 					}
@@ -482,7 +482,7 @@
 					last: e.last,
 					indent: e.indent,
 					disabled: e.disabled
-				}, r.a.createElement(Q, null, r.a.createElement(M.a, null, r.a.createElement(V, null, e.label)), r.a.createElement(Y, null, e.subtext)), r.a.createElement(z, null, r.a.createElement(K, null, r.a.createElement(R.o, {
+				}, r.a.createElement(K, null, r.a.createElement(M.a, null, r.a.createElement(V, null, e.label)), r.a.createElement(Y, null, e.subtext)), r.a.createElement(z, null, r.a.createElement(Q, null, r.a.createElement(R.o, {
 					onClick: e.onClick
 				}, e.actionText)))),
 				be = e => r.a.createElement(X, {
@@ -490,7 +490,7 @@
 					last: e.last,
 					indent: e.indent,
 					disabled: e.disabled
-				}, r.a.createElement(Q, null, r.a.createElement(q, {
+				}, r.a.createElement(K, null, r.a.createElement(q, {
 					href: e.link,
 					onClick: e.onClick,
 					target: e.openInNewTab ? "_blank" : void 0
@@ -504,7 +504,7 @@
 					disabled: e.disabled,
 					indent: e.indent,
 					last: e.last
-				}, r.a.createElement(Q, null, r.a.createElement($, {
+				}, r.a.createElement(K, null, r.a.createElement($, {
 					onClick: e.onClick,
 					className: Object(l.a)({
 						[W.a.NoColor]: e.color && "none" === e.color
@@ -534,7 +534,7 @@
 					last: e.last,
 					indent: e.indent,
 					disabled: e.disabled
-				}, r.a.createElement(Q, null, r.a.createElement(V, null, e.label), r.a.createElement(Y, null, e.subtext)), r.a.createElement(z, null, (e => r.a.createElement("div", {
+				}, r.a.createElement(K, null, r.a.createElement(V, null, e.label), r.a.createElement(Y, null, e.subtext)), r.a.createElement(z, null, (e => r.a.createElement("div", {
 					className: W.a.DropdownWrapper,
 					onClick: e.openDropdown
 				}, r.a.createElement("span", {
@@ -571,7 +571,7 @@
 						} = o;
 					return r.a.createElement(X, {
 						disabled: e
-					}, r.a.createElement(Q, null, r.a.createElement("label", {
+					}, r.a.createElement(K, null, r.a.createElement("label", {
 						htmlFor: o.id
 					}, r.a.createElement(V, {
 						className: o.labelClassname
@@ -601,7 +601,7 @@
 					disabled: e.disabled,
 					indent: e.indent,
 					last: e.last
-				}, r.a.createElement(Q, null, r.a.createElement(V, null, e.label), r.a.createElement(Y, null, e.subtext)), r.a.createElement(z, null, e.children)),
+				}, r.a.createElement(K, null, r.a.createElement(V, null, e.label), r.a.createElement(Y, null, e.subtext)), r.a.createElement(z, null, e.children)),
 				_e = e => r.a.createElement(te, {
 					isCreateCommunity: e.isCreateCommunity,
 					isRequired: e.isRequired,
@@ -949,19 +949,19 @@
 				}
 			};
 			var J = n("./src/reddit/components/SubredditCreationModal/index.m.less"),
-				K = n.n(J),
-				Q = n("./src/lib/lessComponent.tsx");
+				Q = n.n(J),
+				K = n("./src/lib/lessComponent.tsx");
 			const z = 21,
 				X = "create-title-info",
-				q = Q.a.wrapped(M.a, "Info", K.a),
-				U = Q.a.wrapped(w.a, "RadioOption", K.a),
-				Z = Q.a.wrapped(h.c, "Tooltip", K.a),
-				$ = Q.a.wrapped(F.a, "Public", K.a),
-				ee = Q.a.wrapped(R.a, "Restricted", K.a),
-				te = Q.a.wrapped(B.a, "Private", K.a),
-				ne = Q.a.wrapped(j.a, "Employee", K.a),
-				ae = Q.a.wrapped(D.a, "CloseButton", K.a),
-				re = Q.a.wrapped(k.b, "ErrorText", K.a),
+				q = K.a.wrapped(M.a, "Info", Q.a),
+				U = K.a.wrapped(w.a, "RadioOption", Q.a),
+				Z = K.a.wrapped(h.c, "Tooltip", Q.a),
+				$ = K.a.wrapped(F.a, "Public", Q.a),
+				ee = K.a.wrapped(R.a, "Restricted", Q.a),
+				te = K.a.wrapped(B.a, "Private", Q.a),
+				ne = K.a.wrapped(j.a, "Employee", Q.a),
+				ae = K.a.wrapped(D.a, "CloseButton", Q.a),
+				re = K.a.wrapped(k.b, "ErrorText", Q.a),
 				se = Object(i.c)({
 					error: A.g,
 					isCreatePending: A.k,
@@ -990,15 +990,15 @@
 					showButton: !0,
 					value: "public"
 				}, s.a.createElement("div", {
-					className: K.a.radioContent
+					className: Q.a.radioContent
 				}, s.a.createElement("div", null, s.a.createElement($, null)), s.a.createElement("div", {
-					className: K.a.radioContainer
+					className: Q.a.radioContainer
 				}, s.a.createElement("div", {
-					className: K.a.sublabel
+					className: Q.a.sublabel
 				}, a.fbt._("Public", null, {
 					hk: "DK992"
 				})), s.a.createElement("div", {
-					className: Object(c.a)(K.a.metafieldDescription, K.a.radioDescription)
+					className: Object(c.a)(Q.a.metafieldDescription, Q.a.radioDescription)
 				}, a.fbt._("Anyone can view, post, and comment to this community", null, {
 					hk: "1PfFUA"
 				}))))), s.a.createElement(U, {
@@ -1006,29 +1006,29 @@
 					showButton: !0,
 					value: "restricted"
 				}, s.a.createElement("div", {
-					className: K.a.radioContent
+					className: Q.a.radioContent
 				}, s.a.createElement("div", null, s.a.createElement(ee, null)), s.a.createElement("div", {
-					className: K.a.radioContainer
+					className: Q.a.radioContainer
 				}, s.a.createElement("div", {
-					className: K.a.sublabel
+					className: Q.a.sublabel
 				}, a.fbt._("Restricted", null, {
 					hk: "1iBTDq"
 				})), s.a.createElement("div", {
-					className: Object(c.a)(K.a.metafieldDescription, K.a.radioDescription)
+					className: Object(c.a)(Q.a.metafieldDescription, Q.a.radioDescription)
 				}, Object(P.g)(t))))), s.a.createElement(U, {
 					key: "private",
 					showButton: !0,
 					value: "private"
 				}, s.a.createElement("div", {
-					className: K.a.radioContent
+					className: Q.a.radioContent
 				}, s.a.createElement("div", null, s.a.createElement(te, null)), s.a.createElement("div", {
-					className: K.a.radioContainer
+					className: Q.a.radioContainer
 				}, s.a.createElement("div", {
-					className: K.a.sublabel
+					className: Q.a.sublabel
 				}, a.fbt._("Private", null, {
 					hk: "3q5SYn"
 				})), s.a.createElement("div", {
-					className: Object(c.a)(K.a.metafieldDescription, K.a.radioDescription)
+					className: Object(c.a)(Q.a.metafieldDescription, Q.a.radioDescription)
 				}, a.fbt._("Only approved users can view and submit to this community", null, {
 					hk: "3z8OI6"
 				}))))), s.a.createElement(U, {
@@ -1037,15 +1037,15 @@
 					value: "employees_only",
 					hidden: !e
 				}, s.a.createElement("div", {
-					className: K.a.radioContent
+					className: Q.a.radioContent
 				}, s.a.createElement("div", null, s.a.createElement(ne, null)), s.a.createElement("div", {
-					className: K.a.radioContainer
+					className: Q.a.radioContainer
 				}, s.a.createElement("div", {
-					className: K.a.sublabel
+					className: Q.a.sublabel
 				}, a.fbt._("Employees only", null, {
 					hk: "1arrQC"
 				})), s.a.createElement("div", {
-					className: Object(c.a)(K.a.metafieldDescription, K.a.radioDescription)
+					className: Object(c.a)(Q.a.metafieldDescription, Q.a.radioDescription)
 				}, a.fbt._("Only Reddit employees can view and submit to this community", null, {
 					hk: "3ty23C"
 				})))))];
@@ -1131,21 +1131,21 @@
 						waitingForSuccessfulCommunity: C
 					} = this.state;
 					return s.a.createElement(E, {
-						className: K.a.subredditCreation
+						className: Q.a.subredditCreation
 					}, s.a.createElement("div", {
-						className: K.a.container
+						className: Q.a.container
 					}, s.a.createElement("h1", {
-						className: K.a.title
+						className: Q.a.title
 					}, a.fbt._("Create a community", null, {
 						hk: "SlFa7"
 					}), s.a.createElement(ae, {
 						onClick: this.onCloseModal
 					})), d ? s.a.createElement("h2", {
-						className: K.a.sublabel
+						className: Q.a.sublabel
 					}, a.fbt._("To prevent spam, accounts must be at least 30 days old and have enough positive karma to create communities.", null, {
 						hk: "44qhJp"
 					})) : m ? s.a.createElement("h2", {
-						className: K.a.sublabel
+						className: Q.a.sublabel
 					}, a.fbt._("Accounts banned from the site can not create communities until the ban is lifted.", null, {
 						hk: "3trJMZ"
 					})) : s.a.createElement(s.a.Fragment, null, s.a.createElement(b.e, {
@@ -1153,22 +1153,22 @@
 						label: a.fbt._("Name", null, {
 							hk: "3OIzgl"
 						}),
-						textContainerClassName: K.a.fullWidthTextContainer,
+						textContainerClassName: Q.a.fullWidthTextContainer,
 						onBlur: this.onValidateSubredditName,
 						onChange: this.onNameChange,
 						maxChars: z,
 						value: this.state.name,
 						subtext: s.a.createElement("span", {
-							className: K.a.subtextContainer
+							className: Q.a.subtextContainer
 						}, a.fbt._("Community names including capitalization cannot be changed.", null, {
 							hk: "VjrZg"
 						}), s.a.createElement("span", {
 							id: X,
 							onMouseEnter: i,
 							onMouseLeave: o,
-							className: K.a.info
+							className: Q.a.info
 						}, s.a.createElement(q, null), s.a.createElement(Z, {
-							className: K.a.StyledTooltip,
+							className: Q.a.StyledTooltip,
 							caretOnTop: !0,
 							tooltipId: X,
 							text: a.fbt._('Names cannot have spaces (e.g., "r/bookclub" not "r/book club"), must be between 3-21 characters, and underscores ("_") are the only special characters allowed. Avoid using solely trademarked names (e.g., "r/FansOfAcme" not "r/Acme").', null, {
@@ -1181,17 +1181,17 @@
 						}),
 						direction: "column",
 						isCreateCommunity: !0,
-						textContainerClassName: K.a.fullWidthTextContainer
+						textContainerClassName: Q.a.fullWidthTextContainer
 					}, s.a.createElement(N.a, {
 						value: this.state.type,
 						name: "type",
 						onChange: this.onTypeChange
 					}, ie(r, "post"))), s.a.createElement("div", {
-						className: Object(c.a)(K.a.field, {
-							[K.a.isCreatePending]: t
+						className: Object(c.a)(Q.a.field, {
+							[Q.a.isCreatePending]: t
 						})
 					}, s.a.createElement("div", {
-						className: K.a.subtitle
+						className: Q.a.subtitle
 					}, a.fbt._("Adult content", null, {
 						hk: "20arB"
 					})), s.a.createElement(y.a, {
@@ -1200,36 +1200,36 @@
 						onChange: this.onUpdateOver18,
 						disabled: t
 					}, s.a.createElement("div", {
-						className: K.a.nsfw
+						className: Q.a.nsfw
 					}, "NSFW"), s.a.createElement("div", {
-						className: K.a.sublabel
+						className: Q.a.sublabel
 					}, a.fbt._("18+ year old community", null, {
 						hk: "1XxZMV"
 					})))), n && s.a.createElement("div", {
-						className: Object(c.a)(K.a.field, {
-							[K.a.isCreatePending]: t
+						className: Object(c.a)(Q.a.field, {
+							[Q.a.isCreatePending]: t
 						})
 					}, s.a.createElement(S.a, {
-						className: K.a.textButton,
+						className: Q.a.textButton,
 						onClick: this.onInviteViaEmailClick
 					}, a.fbt._("Invite members via email", null, {
 						hk: "2uViIf"
 					}))), u.generic && s.a.createElement(re, null, u.generic), C && s.a.createElement("div", {
-						className: K.a.pendingText
+						className: Q.a.pendingText
 					}, a.fbt._("Your community is being created...", null, {
 						hk: "3dSTrq"
 					})), s.a.createElement("div", {
-						className: K.a.buttonContainer
+						className: Q.a.buttonContainer
 					}, s.a.createElement(g.t, {
 						disabled: t,
-						className: K.a.createButton,
+						className: Q.a.createButton,
 						onClick: this.onCancelCreation,
 						priority: g.c.Secondary
 					}, a.fbt._("Cancel", null, {
 						hk: "2TSLl5"
 					})), s.a.createElement(g.t, {
 						disabled: t,
-						className: K.a.createButton,
+						className: Q.a.createButton,
 						onClick: this.onCreateCommunityClick
 					}, a.fbt._("Create Community", null, {
 						hk: "QE8Y3"
@@ -1804,11 +1804,11 @@
 			const s = e => {
 				const t = Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: a.Kc
+					experimentName: a.Wc
 				});
-				return !(!t || Object(a.gf)(t))
+				return !(!t || Object(a.sf)(t))
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.087c0abc160f57eaba86.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.ee43fcd53846b4cba953.js.map

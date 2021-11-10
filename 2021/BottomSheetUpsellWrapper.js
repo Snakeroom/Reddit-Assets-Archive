@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/BottomSheetUpsellWrapper.37c20deb57dd260f9938.js
-// Retrieved at 11/9/2021, 3:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/BottomSheetUpsellWrapper.9b9b8dd4306701baf0f7.js
+// Retrieved at 11/10/2021, 9:20:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["BottomSheetUpsellWrapper"], {
 		"./src/reddit/components/ErrorBoundary/index.tsx": function(e, t, s) {
@@ -49,12 +49,12 @@
 				c = s("./src/reddit/hooks/promo/useIsPromoShown.ts"),
 				d = s("./src/reddit/constants/experiments.ts"),
 				a = s("./src/reddit/contexts/ThrottlingContext/index.tsx"),
-				u = s("./src/reddit/hooks/usePromoContext.ts");
+				p = s("./src/reddit/hooks/usePromoContext.ts");
 
-			function p(e) {
+			function u(e) {
 				const {
 					promos: t
-				} = Object(u.a)();
+				} = Object(p.a)();
 				return t.get(e) === l.a.Dismissed
 			}
 			var m = s("./src/reddit/components/Upsell/BottomSheetUpsellWrapper/index.m.less"),
@@ -70,17 +70,17 @@
 			}
 			t.default = function() {
 				! function() {
-					const e = p(l.b.SignupUpsellBottomSheet),
-						t = p(l.b.SignupUpsellCellDismissible),
+					const e = u(l.b.SignupUpsellBottomSheet),
+						t = u(l.b.SignupUpsellCellDismissible),
 						{
 							throttleFeature: s
-						} = r.useContext(a.a[d.hb]),
+						} = r.useContext(a.a[d.nb]),
 						{
 							throttleFeature: o
-						} = r.useContext(a.a[d.ib]),
+						} = r.useContext(a.a[d.ob]),
 						{
 							throttleFeature: n
-						} = r.useContext(a.a[d.jb]);
+						} = r.useContext(a.a[d.pb]);
 					r.useEffect(() => {
 						function r() {
 							s(), o(), n()
@@ -90,7 +90,7 @@
 				}();
 				const {
 					dismissPromo: e
-				} = Object(u.a)();
+				} = Object(p.a)();
 				return Object(c.a)(l.b.SignupUpsellBottomSheet) ? r.createElement(x, null, r.createElement(i.a, {
 					onDismiss: () => e(l.b.SignupUpsellBottomSheet),
 					size: "large"
@@ -148,4 +148,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BottomSheetUpsellWrapper.37c20deb57dd260f9938.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BottomSheetUpsellWrapper.9b9b8dd4306701baf0f7.js.map

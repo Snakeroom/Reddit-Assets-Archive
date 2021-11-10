@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OnboardingModal.804363bc153869edbf77.js
-// Retrieved at 11/9/2021, 6:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OnboardingModal.ae7e3ee10c53f993e3a6.js
+// Retrieved at 11/10/2021, 9:20:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OnboardingModal"], {
 		"./node_modules/lodash/times.js": function(e, t, n) {
@@ -200,7 +200,7 @@
 			const E = e => {
 				const t = Object(S.c)(e, {
 					experimentEligibilitySelector: S.a,
-					experimentName: _.xb
+					experimentName: _.Jb
 				});
 				return !!Object(x.a)(t)
 			};
@@ -401,8 +401,8 @@
 				Z = n("./src/reddit/selectors/experiments/frontpageSignup.ts"),
 				Q = n("./src/reddit/selectors/frontpage.ts"),
 				K = n("./src/reddit/selectors/goldPurchaseModals.ts"),
-				X = n("./src/reddit/selectors/runTimeEnvVars.ts"),
-				J = n("./src/lib/makeActionCreator/index.ts"),
+				J = n("./src/reddit/selectors/runTimeEnvVars.ts"),
+				X = n("./src/lib/makeActionCreator/index.ts"),
 				H = n("./src/lib/makeListingKey/index.ts"),
 				Y = n("./src/reddit/actions/ads/index.ts"),
 				$ = n("./src/reddit/helpers/trackers/feed.ts"),
@@ -415,15 +415,15 @@
 				ie = n("./src/reddit/actions/frontpage/constants.ts"),
 				ce = n("./node_modules/uuid/v4.js"),
 				ae = n.n(ce);
-			const de = Object(J.a)(ie.c),
-				le = Object(J.a)(ie.b),
-				ue = Object(J.a)(ie.a),
+			const de = Object(X.a)(ie.c),
+				le = Object(X.a)(ie.b),
+				ue = Object(X.a)(ie.a),
 				me = (e, t) => async (n, s, o) => {
 					var c, a, d, l;
 					const u = s();
 					if (u.listings.postOrder.api.pending[e]) return;
 					const b = D.e[Object(G.Q)(u, {})];
-					t.isMobile = Object(i.e)(u.meta.userAgent), t.recentPostIds = u.posts.recent, t.layout = b, t.useMockData = !!u.platform.currentPage && (!!u.platform.currentPage.queryParams.useMockData && Object(X.b)(u)), n(de({
+					t.isMobile = Object(i.e)(u.meta.userAgent), t.recentPostIds = u.posts.recent, t.layout = b, t.useMockData = !!u.platform.currentPage && (!!u.platform.currentPage.queryParams.useMockData && Object(J.b)(u)), n(de({
 						key: e
 					})); {
 						const e = u.platform.currentPage,
@@ -521,11 +521,11 @@
 					})
 				}, fe = (e, t) => async n => {
 					await Promise.all([n(Object(c.b)()), n(be(e, t)), n(pe()), n(Object(re.c)(se.R))])
-				}, ge = Object(J.a)(ie.d), Oe = e => async (t, n) => {
+				}, ge = Object(X.a)(ie.d), Oe = e => async (t, n) => {
 					const r = n(),
 						s = r.platform.currentPage.routeMatch.match;
 					Object(K.o)(r) || Object(K.u)(r) || (e || t(ge()), await t(fe(s, !0)))
-				}, je = Object(J.a)(ie.g), he = Object(J.a)(ie.f), ve = Object(J.a)(ie.e), ke = e => async (t, n, {
+				}, je = Object(X.a)(ie.g), he = Object(X.a)(ie.f), ve = Object(X.a)(ie.e), ke = e => async (t, n, {
 					gqlContext: r
 				}) => {
 					const s = n(),
@@ -879,7 +879,7 @@
 					prefixedName: e.prefixedName,
 					toggleSelection: s,
 					topicTitle: r
-				})), l && !a && i.a.createElement(X, {
+				})), l && !a && i.a.createElement(J, {
 					text: m,
 					showMore: b
 				}))
@@ -921,7 +921,7 @@
 				}), !r && i.a.createElement(B.a, {
 					className: G.a.SelectIcon
 				})))
-			}, X = ({
+			}, J = ({
 				showMore: e,
 				text: t
 			}) => i.a.createElement("div", {
@@ -933,7 +933,7 @@
 			}), t && U._("More in {topic-title}", [U._param("topic-title", t)], {
 				hk: "4afv7s"
 			})));
-			var J = ({
+			var X = ({
 					communitiesByTopic: e,
 					loadingCommunities: t,
 					recommendedCommunities: n,
@@ -1100,7 +1100,7 @@
 					interests: s,
 					selected: l,
 					toggleSelection: g
-				}), e === le.COMMUNITIES && i.a.createElement(J, {
+				}), e === le.COMMUNITIES && i.a.createElement(X, {
 					communitiesByTopic: n,
 					loadingCommunities: c,
 					recommendedCommunities: a,
@@ -1319,7 +1319,7 @@
 				const {
 					gqlContext: t,
 					apiContext: n
-				} = e, r = Object(c.d)(), s = Object(j.a)(), a = Object(c.e)(Fe.c), b = a === me.Re.Enabled_noskip || a === me.Re.Enabled_noskip_no_preselect, p = a === me.Re.Enabled_noskip_no_preselect, [f, g] = Object(o.useState)(le.INTERESTS), [h, v] = Object(o.useState)([]), [y, I] = Object(o.useState)({}), [_, S] = Object(o.useState)(!1), [E, C] = Object(o.useState)([]), [T, N] = Object(o.useState)([]), [R, P] = Object(o.useState)({}), {
+				} = e, r = Object(c.d)(), s = Object(j.a)(), a = Object(c.e)(Fe.c), b = a === me.df.Enabled_noskip || a === me.df.Enabled_noskip_no_preselect, p = a === me.df.Enabled_noskip_no_preselect, [f, g] = Object(o.useState)(le.INTERESTS), [h, v] = Object(o.useState)([]), [y, I] = Object(o.useState)({}), [_, S] = Object(o.useState)(!1), [E, C] = Object(o.useState)([]), [T, N] = Object(o.useState)([]), [R, P] = Object(o.useState)({}), {
 					avatarImage: A,
 					fetchRandomAvatar: L,
 					saveAvatar: w
@@ -1378,8 +1378,8 @@
 					K = Object(o.useCallback)(() => {
 						f === le.INTERESTS ? (s(Object(M.i)()), q()) : f === le.AVATAR && (s(Object(O.a)("skip")), U())
 					}, [q, s, f, U]),
-					X = [le.COMMUNITIES, le.AVATAR].includes(f),
-					J = f === le.AVATAR || f === le.INTERESTS && !b,
+					J = [le.COMMUNITIES, le.AVATAR].includes(f),
+					X = f === le.AVATAR || f === le.INTERESTS && !b,
 					H = Object.keys(R).length,
 					Y = Object.keys(y).length,
 					$ = b && f === le.INTERESTS && Y < 3 || f === le.COMMUNITIES && H < 1;
@@ -1389,14 +1389,14 @@
 					className: ae.a.header
 				}, i.a.createElement("div", {
 					className: ae.a.headerBar
-				}, i.a.createElement("div", null, X && i.a.createElement(Le.d, {
+				}, i.a.createElement("div", null, J && i.a.createElement(Le.d, {
 					className: ae.a.backButton,
 					onClick: Q
 				})), i.a.createElement(Ae.a, {
 					className: ae.a.snooIcon
 				}), i.a.createElement("div", {
 					className: ae.a.skipContainer
-				}, J && i.a.createElement("button", {
+				}, X && i.a.createElement("button", {
 					className: ae.a.skipButton,
 					onClick: K
 				}, Be._("Skip", null, {
@@ -1927,4 +1927,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.804363bc153869edbf77.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.ae7e3ee10c53f993e3a6.js.map

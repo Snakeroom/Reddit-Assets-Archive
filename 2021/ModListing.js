@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.c54ade7ab5d8649478e3.js
-// Retrieved at 11/9/2021, 3:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.60704feb2ec95518f727.js
+// Retrieved at 11/10/2021, 9:20:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -504,9 +504,9 @@
 			})), r.d(t, "unhideSubredditPending", (function() {
 				return Q
 			})), r.d(t, "unhideSubredditFailed", (function() {
-				return G
-			})), r.d(t, "toggleHiddenSubreddit", (function() {
 				return J
+			})), r.d(t, "toggleHiddenSubreddit", (function() {
+				return G
 			})), r.d(t, "hideSubreddit", (function() {
 				return X
 			})), r.d(t, "unhideSubreddit", (function() {
@@ -659,13 +659,13 @@
 				W = Object(a.a)(M.a),
 				V = Object(a.a)(M.l),
 				Q = Object(a.a)(M.k),
-				G = Object(a.a)(M.j),
-				J = (e, t) => async (r, n, {
+				J = Object(a.a)(M.j),
+				G = (e, t) => async (r, n, {
 					apiContext: s
 				}) => {
 					const o = n(),
 						i = Object(N.k)(o),
-						[a, d, c, l] = t ? [K, q, W, _] : [Q, V, G, j];
+						[a, d, c, l] = t ? [K, q, W, _] : [Q, V, J, j];
 					if (!i || !i.displayText) return;
 					const {
 						currentPage: u
@@ -674,7 +674,7 @@
 					r(a(e));
 					const m = await l(s(), i.displayText, e);
 					m.ok ? (await r(F(u.routeMatch.match, !0)), r(d(e))) : r(c(m.body))
-				}, X = e => J(e, !0), z = e => J(e, !1)
+				}, X = e => G(e, !0), z = e => G(e, !1)
 		},
 		"./src/reddit/actions/shortcuts/utils.ts": function(e, t, r) {
 			"use strict";
@@ -2543,8 +2543,8 @@
 			var W = r("./src/reddit/constants/keycodes.ts"),
 				V = r("./src/reddit/layout/row/Inline/index.tsx"),
 				Q = r("./src/reddit/components/ModListingSidebar/HideCommunities/HideInput/index.m.less"),
-				G = r.n(Q);
-			const J = Object(d.c)({
+				J = r.n(Q);
+			const G = Object(d.c)({
 				apiError: e => e.modListingPage.filteredSubreddits.api.error,
 				isApiPending: K
 			});
@@ -2571,7 +2571,7 @@
 						props: e
 					} = this;
 					return i.a.createElement(i.a.Fragment, null, i.a.createElement(V.a, null, i.a.createElement("input", {
-						className: G.a.input,
+						className: J.a.input,
 						onChange: this.onChange,
 						onKeyPress: this.onKeyPress,
 						placeholder: v.fbt._("r/community", null, {
@@ -2582,17 +2582,17 @@
 						"aria-label": v.fbt._("Hide", null, {
 							hk: "1BnFmX"
 						}),
-						className: G.a.hideButton,
+						className: J.a.hideButton,
 						disabled: !this.canSubmitInput(),
 						onClick: this.submitInput
 					}, v.fbt._("Hide", null, {
 						hk: "1BnFmX"
 					}))), e.apiError && e.apiError.explanation && i.a.createElement("div", {
-						className: G.a.errorText
+						className: J.a.errorText
 					}, e.apiError.explanation))
 				}
 			}
-			var z = Object(a.b)(J, e => ({
+			var z = Object(a.b)(G, e => ({
 					hide: t => e(Object(m.hideSubreddit)(t))
 				}))(Object(F.c)(X)),
 				Y = r("./src/lib/lessComponent.tsx"),
@@ -3170,7 +3170,7 @@
 				}),
 				V = r("./src/reddit/actions/moderationLog/constants.ts");
 			const Q = {};
-			var G = (e = Q, t) => {
+			var J = (e = Q, t) => {
 				switch (t.type) {
 					case V.b: {
 						const {
@@ -3190,8 +3190,8 @@
 						return e
 				}
 			};
-			const J = {};
-			var X = (e = J, t) => {
+			const G = {};
+			var X = (e = G, t) => {
 					switch (t.type) {
 						case V.b: {
 							const {
@@ -3213,7 +3213,7 @@
 					}
 				},
 				z = Object(n.c)({
-					itemOrder: G,
+					itemOrder: J,
 					models: X
 				});
 			var Y = (e = null, t) => {
@@ -3763,7 +3763,7 @@
 					data: Ve,
 					api: Ke
 				}),
-				Ge = Object(n.c)({
+				Je = Object(n.c)({
 					editableModerators: ae,
 					editableUserOrder: be,
 					invitedModerators: je,
@@ -3774,13 +3774,13 @@
 					search: De,
 					userOrder: Qe
 				}),
-				Je = r("./src/reddit/actions/bulkActions/constants.ts");
+				Ge = r("./src/reddit/actions/bulkActions/constants.ts");
 			var Xe = (e = null, t) => {
 					switch (t.type) {
-						case Je.c:
-						case Je.b:
+						case Ge.c:
+						case Ge.b:
 							return null;
-						case Je.a:
+						case Ge.a:
 							return t.payload;
 						default:
 							return e
@@ -3789,10 +3789,10 @@
 				ze = r("./src/reddit/actions/modQueue/constants.ts");
 			var Ye = (e = !1, t) => {
 					switch (t.type) {
-						case Je.c:
+						case Ge.c:
 							return !0;
-						case Je.b:
-						case Je.a:
+						case Ge.b:
+						case Ge.a:
 						case ze.s:
 						case ze.r:
 							return !1;
@@ -3836,7 +3836,7 @@
 			const rt = {};
 			var nt = (e = rt, t) => {
 					switch (t.type) {
-						case Je.b: {
+						case Ge.b: {
 							const {
 								operation: e,
 								ids: r
@@ -4262,8 +4262,8 @@
 					error: Wt,
 					pending: Vt
 				});
-			const Gt = {};
-			var Jt = (e = Gt, t) => {
+			const Jt = {};
+			var Gt = (e = Jt, t) => {
 				switch (t.type) {
 					case ze.v: {
 						const {
@@ -4306,7 +4306,7 @@
 				},
 				Yt = Object(n.c)({
 					api: Qt,
-					itemOrder: Jt,
+					itemOrder: Gt,
 					loadMore: zt
 				}),
 				Zt = Object(n.c)({
@@ -4521,7 +4521,7 @@
 				approvedSubmitters: w,
 				flairedUsers: W,
 				moderationLog: oe,
-				moderators: Ge,
+				moderators: Je,
 				modQueue: Zt,
 				muted: vr
 			})
@@ -4534,9 +4534,9 @@
 			var n = r("./src/reddit/constants/experiments.ts"),
 				s = r("./src/reddit/helpers/chooseVariant/index.ts");
 			const o = e => Object(s.c)(e, {
-				experimentName: n.Gd,
+				experimentName: n.Sd,
 				experimentEligibilitySelector: s.a
-			}) === n.Nd.Enabled
+			}) === n.Zd.Enabled
 		},
 		"./src/reddit/selectors/modQueue.ts": function(e, t, r) {
 			"use strict";
@@ -4600,4 +4600,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.c54ade7ab5d8649478e3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.60704feb2ec95518f727.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.86ef5bea54813400c823.js
-// Retrieved at 11/9/2021, 6:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.3f68c664ee85ee842add.js
+// Retrieved at 11/10/2021, 9:20:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -343,12 +343,12 @@
 				d = a("./src/reddit/constants/promo.ts"),
 				m = a("./src/reddit/hooks/promo/useIsSignupUpsellVariantEligible.ts");
 			var u = function() {
-					const e = Object(m.a)(i.Jb.Bottom_cell),
-						t = Object(m.a)(i.Jb.Bottom_cell_dismissible),
-						a = Object(m.a)(i.Jb.Bottom_cell_dismissible_immediate_trigger),
-						s = Object(m.a)(i.Jb.Bottom_cell_signup_upsell_copy),
-						c = Object(m.a)(i.Jb.Bottom_cell_surprise_install_copy),
-						r = Object(m.a)(i.Jb.Bottom_sheet);
+					const e = Object(m.a)(i.Vb.Bottom_cell),
+						t = Object(m.a)(i.Vb.Bottom_cell_dismissible),
+						a = Object(m.a)(i.Vb.Bottom_cell_dismissible_immediate_trigger),
+						s = Object(m.a)(i.Vb.Bottom_cell_signup_upsell_copy),
+						c = Object(m.a)(i.Vb.Bottom_cell_surprise_install_copy),
+						r = Object(m.a)(i.Vb.Bottom_sheet);
 					return e || s || c ? d.b.SignupUpsellCell : t || a ? d.b.SignupUpsellCellDismissible : r ? d.b.SignupUpsellBottomSheet : null
 				},
 				p = a("./src/reddit/hooks/promo/useIsPromoShown.ts");
@@ -372,7 +372,7 @@
 					const a = function(e = h) {
 						const {
 							showPromo: t
-						} = Object(l.a)(), a = u(), r = Object(p.a)(a), d = Object(m.a)(i.Jb.Bottom_cell_dismissible_immediate_trigger);
+						} = Object(l.a)(), a = u(), r = Object(p.a)(a), d = Object(m.a)(i.Vb.Bottom_cell_dismissible_immediate_trigger);
 						return s.useMemo(() => n()(() => {
 							if (!r && a) {
 								const e = document.getElementById(o.d),
@@ -448,7 +448,7 @@
 			const C = e => {
 				const t = Object(O.c)(e, {
 					experimentEligibilitySelector: O.a,
-					experimentName: j.xb
+					experimentName: j.Jb
 				});
 				return !!Object(N.a)(t)
 			};
@@ -649,9 +649,9 @@
 				G = a("./src/reddit/selectors/experiments/frontpageSignup.ts"),
 				z = a("./src/reddit/selectors/frontpage.ts"),
 				W = a("./src/reddit/selectors/goldPurchaseModals.ts"),
-				J = a("./src/reddit/selectors/runTimeEnvVars.ts"),
-				Y = a("./src/lib/makeActionCreator/index.ts"),
-				Q = a("./src/lib/makeListingKey/index.ts"),
+				Y = a("./src/reddit/selectors/runTimeEnvVars.ts"),
+				Q = a("./src/lib/makeActionCreator/index.ts"),
+				J = a("./src/lib/makeListingKey/index.ts"),
 				X = a("./src/reddit/actions/ads/index.ts"),
 				$ = a("./src/reddit/helpers/trackers/feed.ts"),
 				ee = a("./src/reddit/reducers/sidebarPromotedPosts/models/index.ts"),
@@ -663,15 +663,15 @@
 				ne = a("./src/reddit/actions/frontpage/constants.ts"),
 				oe = a("./node_modules/uuid/v4.js"),
 				ie = a.n(oe);
-			const le = Object(Y.a)(ne.c),
-				de = Object(Y.a)(ne.b),
-				me = Object(Y.a)(ne.a),
+			const le = Object(Q.a)(ne.c),
+				de = Object(Q.a)(ne.b),
+				me = Object(Q.a)(ne.a),
 				ue = (e, t) => async (a, c, r) => {
 					var o, i, l, d;
 					const m = c();
 					if (m.listings.postOrder.api.pending[e]) return;
 					const p = B.e[Object(U.Q)(m, {})];
-					t.isMobile = Object(n.e)(m.meta.userAgent), t.recentPostIds = m.posts.recent, t.layout = p, t.useMockData = !!m.platform.currentPage && (!!m.platform.currentPage.queryParams.useMockData && Object(J.b)(m)), a(le({
+					t.isMobile = Object(n.e)(m.meta.userAgent), t.recentPostIds = m.posts.recent, t.layout = p, t.useMockData = !!m.platform.currentPage && (!!m.platform.currentPage.queryParams.useMockData && Object(Y.b)(m)), a(le({
 						key: e
 					})); {
 						const e = m.platform.currentPage,
@@ -725,7 +725,7 @@
 						{
 							sort: i = o
 						} = e.params,
-						d = Object(Q.a)(q.b, i, e.queryParams),
+						d = Object(J.a)(q.b, i, e.queryParams),
 						m = n.listings.postOrder.ids[d],
 						u = n.listings.postOrder.api.error[d],
 						p = n.listings.postOrder.api.pending[d],
@@ -769,11 +769,11 @@
 					})
 				}, be = (e, t) => async a => {
 					await Promise.all([a(Object(o.b)()), a(pe(e, t)), a(he()), a(Object(se.c)(ce.R))])
-				}, fe = Object(Y.a)(ne.d), _e = e => async (t, a) => {
+				}, fe = Object(Q.a)(ne.d), _e = e => async (t, a) => {
 					const s = a(),
 						c = s.platform.currentPage.routeMatch.match;
 					Object(W.o)(s) || Object(W.u)(s) || (e || t(fe()), await t(be(c, !0)))
-				}, ge = Object(Y.a)(ne.g), ve = Object(Y.a)(ne.f), ye = Object(Y.a)(ne.e), Ee = e => async (t, a, {
+				}, ge = Object(Q.a)(ne.g), ve = Object(Q.a)(ne.f), ye = Object(Q.a)(ne.e), Ee = e => async (t, a, {
 					gqlContext: s
 				}) => {
 					const c = a(),
@@ -782,7 +782,7 @@
 							sort: i = o
 						} = e,
 						d = c.platform.currentPage ? c.platform.currentPage.queryParams : {},
-						m = Object(Q.a)(q.b, i, d),
+						m = Object(J.a)(q.b, i, d),
 						u = c.listings.postOrder.loadMore[m],
 						p = d[F.A] ? d[F.A].toUpperCase() : "",
 						h = p in l.ec && l.ec[p];
@@ -846,7 +846,7 @@
 							sort: r = c
 						} = e,
 						n = s.platform.currentPage ? s.platform.currentPage.queryParams : {},
-						o = Object(Q.a)(q.b, r, n),
+						o = Object(J.a)(q.b, r, n),
 						i = n[F.A] ? n[F.A].toUpperCase() : "",
 						d = i in l.ec && l.ec[i],
 						m = Object(V.a)(s),
@@ -3384,9 +3384,9 @@
 				G = a("./src/lib/constants/index.ts"),
 				z = a("./src/reddit/actions/publicAccessNetwork/constants.ts"),
 				W = a("./src/lib/objectSelector/index.ts"),
-				J = a("./src/reddit/constants/page.ts"),
-				Y = a("./src/reddit/pages/Frontpage/index.m.less"),
-				Q = a.n(Y);
+				Y = a("./src/reddit/constants/page.ts"),
+				Q = a("./src/reddit/pages/Frontpage/index.m.less"),
+				J = a.n(Q);
 
 			function X() {
 				return (X = Object.assign || function(e) {
@@ -3434,7 +3434,7 @@
 			}, s, c, r, n, o) => {
 				const i = w.A in t && t[w.A].toUpperCase(),
 					l = "string" == typeof i && i in G.ec ? G.ec[i] : G.fc,
-					d = Object(p.a)(J.b, a, t),
+					d = Object(p.a)(Y.b, a, t),
 					m = e,
 					u = [];
 				c && u.push(r);
@@ -3490,7 +3490,7 @@
 			class ie extends o.a.Component {
 				constructor(e) {
 					super(e), this.renderEmptySubreddit = () => o.a.createElement(v.a, {
-						listingName: J.c,
+						listingName: Y.c,
 						sort: this.props.sort
 					}), this.onListingViewed = (e, t) => Object(T.f)({
 						key: this.props.listingKey,
@@ -3539,7 +3539,7 @@
 								numInstance: t,
 								layout: p,
 								listingKey: h,
-								listingName: J.c,
+								listingName: Y.c,
 								listingPosition: e
 							})
 						}), m) {
@@ -3567,18 +3567,18 @@
 						})
 					});
 					const S = o.a.createElement(E.default, {
-						className: Q.a.sidebar,
+						className: J.a.sidebar,
 						listingKey: h,
-						listingName: J.c
+						listingName: Y.c
 					});
 					return o.a.createElement(D.a, {
-						className: Object(d.a)(Q.a.Container, this.props.className),
+						className: Object(d.a)(J.a.Container, this.props.className),
 						fitPageToContent: !0,
 						trendingUnit: M && o.a.createElement(oe, {
 							showCardView: p === I.g.Large
 						}),
 						content: o.a.createElement(n.Fragment, null, M && o.a.createElement(C.a, {
-							className: Q.a.duHeader
+							className: J.a.duHeader
 						}, $._("Popular posts", null, {
 							hk: "36DJb4"
 						})), o.a.createElement(y.a, null), i && o.a.createElement(A.a, null), o.a.createElement(x.a, P), o.a.createElement(j.a, null), o.a.createElement(k.a, {
@@ -3593,7 +3593,7 @@
 							noPostsComponent: this.renderEmptySubreddit,
 							key: "listing",
 							listingKey: h,
-							listingName: J.c,
+							listingName: Y.c,
 							listingViewed: this.onListingViewed,
 							onLoadMore: this.props.onLoadMorePosts,
 							onScroll: v
@@ -3889,8 +3889,8 @@
 			const o = e => c.e[Object(r.Q)(e, {})] === c.d.Card,
 				i = e => Object(n.c)(e, {
 					experimentEligibilitySelector: o,
-					experimentName: s.cb
-				}) === s.Ib.Treatment
+					experimentName: s.ib
+				}) === s.Ub.Treatment
 		},
 		"./src/reddit/selectors/experiments/econ/avatarBanner.ts": function(e, t, a) {
 			"use strict";
@@ -3906,7 +3906,7 @@
 			function n(e) {
 				return Object(c.c)(e, {
 					experimentEligibilitySelector: r.K,
-					experimentName: s.ac
+					experimentName: s.mc
 				})
 			}
 			const o = 31536e3;
@@ -3925,9 +3925,9 @@
 				return function(e) {
 					return Object(c.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: s.Zb
-					}) === s.Nc.Enabled
-				}(e) ? l.Achievements : t === s.Oc.ControlBanner ? l.CommunitySpacesControl : t === s.Oc.EnabledBanner ? l.CommunitySpaces : null
+						experimentName: s.lc
+					}) === s.Zc.Enabled
+				}(e) ? l.Achievements : t === s.ad.ControlBanner ? l.CommunitySpacesControl : t === s.ad.EnabledBanner ? l.CommunitySpaces : null
 			}! function(e) {
 				e.Achievements = "achievements", e.CommunitySpaces = "communitySpaces", e.CommunitySpacesControl = "communitySpaces--control"
 			}(l || (l = {}))
@@ -3959,19 +3959,19 @@
 					experimentName: e,
 					experimentEligibilitySelector: i,
 					throttledVariants: {
-						[c.Jb.Bottom_cell_dismissible]: e,
-						[c.Jb.Bottom_cell_dismissible_immediate_trigger]: e,
-						[c.Jb.Bottom_sheet]: e
+						[c.Vb.Bottom_cell_dismissible]: e,
+						[c.Vb.Bottom_cell_dismissible_immediate_trigger]: e,
+						[c.Vb.Bottom_sheet]: e
 					},
 					expEventOverride: t
 				})
 			}
-			const d = l(c.hb, !0),
-				m = l(c.ib, !0),
-				u = l(c.jb, !0),
-				p = l(c.hb, !1),
-				h = l(c.ib, !1),
-				b = l(c.jb, !1)
+			const d = l(c.nb, !0),
+				m = l(c.ob, !0),
+				u = l(c.pb, !0),
+				p = l(c.nb, !1),
+				h = l(c.ob, !1),
+				b = l(c.pb, !1)
 		},
 		"./src/reddit/selectors/live.ts": function(e, t, a) {
 			"use strict";
@@ -3988,4 +3988,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.86ef5bea54813400c823.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.3f68c664ee85ee842add.js.map
