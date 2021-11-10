@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241.424dc11498fd7e08d3e5.js
-// Retrieved at 11/10/2021, 9:20:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241.b5009167cbff81827495.js
+// Retrieved at 11/10/2021, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241"], {
 		"./src/reddit/actions/authorFlair.ts": function(e, t, r) {
@@ -5502,7 +5502,7 @@
 					descriptionHtml: e.description.html,
 					descriptionRichtext: e.description.richtext,
 					buttons: e.buttons.map(e => {
-						var t, r, s, n, i, d, o;
+						var t, r, s, n, i, d, o, a;
 						return {
 							text: e.text,
 							hoverState: e.hoverState.kind === h.e.Image ? {
@@ -5510,22 +5510,22 @@
 								url: (null === (t = e.hoverState.media.source) || void 0 === t ? void 0 : t.url) || "",
 								height: (null === (r = e.hoverState.media.source) || void 0 === r ? void 0 : r.dimensions.height) || 0,
 								width: (null === (s = e.hoverState.media.source) || void 0 === s ? void 0 : s.dimensions.width) || 0
-							} : {
+							} : (null === (n = e.hoverState) || void 0 === n ? void 0 : n.kind) ? {
 								kind: h.k.Text,
 								text: e.hoverState.text,
 								color: e.hoverState.color,
 								fillColor: e.hoverState.fillColor,
 								textColor: e.hoverState.textColor
-							},
+							} : void 0,
 							...e.kind === h.e.Image ? {
 								kind: h.k.Image,
 								linkUrl: e.media.linkUrl,
-								url: (null === (n = e.media.source) || void 0 === n ? void 0 : n.url) || "",
-								height: (null === (i = e.media.source) || void 0 === i ? void 0 : i.dimensions.height) || 0,
-								width: (null === (d = e.media.source) || void 0 === d ? void 0 : d.dimensions.width) || 0
+								url: (null === (i = e.media.source) || void 0 === i ? void 0 : i.url) || "",
+								height: (null === (d = e.media.source) || void 0 === d ? void 0 : d.dimensions.height) || 0,
+								width: (null === (o = e.media.source) || void 0 === o ? void 0 : o.dimensions.width) || 0
 							} : {
 								kind: h.k.Text,
-								url: (null === (o = e.media.source) || void 0 === o ? void 0 : o.url) || "",
+								url: (null === (a = e.media.source) || void 0 === a ? void 0 : a.url) || "",
 								color: e.color,
 								fillColor: e.fillColor,
 								textColor: e.textColor
@@ -7706,7 +7706,7 @@
 			e.exports = JSON.parse('{"id":"29aee4089528"}')
 		},
 		"./src/redditGQL/operations/SubredditPage.json": function(e) {
-			e.exports = JSON.parse('{"id":"e29d9a429328"}')
+			e.exports = JSON.parse('{"id":"f7731a7685e5"}')
 		},
 		"./src/redditGQL/operations/SubredditPageExtra.json": function(e) {
 			e.exports = JSON.parse('{"id":"925a39d18b3e"}')
@@ -7767,4 +7767,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241.424dc11498fd7e08d3e5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241.b5009167cbff81827495.js.map
