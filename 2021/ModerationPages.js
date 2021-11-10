@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.184ae6bcc8eca8dcf3a7.js
-// Retrieved at 11/10/2021, 9:20:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.bf98a9c6267145bea9ee.js
+// Retrieved at 11/10/2021, 9:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -22362,7 +22362,7 @@
 				o = n("./src/reddit/selectors/experiments/joinOptimizations.ts"),
 				i = n("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(s.b)(() => Object(a.c)({
-				isInJoinOptimizationsExperiment: e => Object(o.a)(e) || Object(o.b)(e) || Object(o.c)(e) || Object(o.d)(e),
+				isInJoinOptimizationsExperiment: e => Object(o.a)(e) || Object(o.c)(e) || Object(o.d)(e) || Object(o.g)(e),
 				userIsSubscriber: i.cb
 			}), (e, {
 				identifier: t
@@ -26138,4 +26138,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.184ae6bcc8eca8dcf3a7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.bf98a9c6267145bea9ee.js.map

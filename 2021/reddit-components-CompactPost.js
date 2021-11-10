@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.6941e5bc7b160add98db.js
-// Retrieved at 11/10/2021, 9:20:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.ddb41ed3ced537a3e534.js
+// Retrieved at 11/10/2021, 9:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CompactPost", "Reddit~StandalonePostPage~reddit-components-MediumPost", "FrontpageSidebar"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -3733,7 +3733,7 @@
 				a = s("./src/reddit/selectors/experiments/joinOptimizations.ts"),
 				i = s("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(n.b)(() => Object(r.c)({
-				isInJoinOptimizationsExperiment: e => Object(a.a)(e) || Object(a.b)(e) || Object(a.c)(e) || Object(a.d)(e),
+				isInJoinOptimizationsExperiment: e => Object(a.a)(e) || Object(a.c)(e) || Object(a.d)(e) || Object(a.g)(e),
 				userIsSubscriber: i.cb
 			}), (e, {
 				identifier: t
@@ -7369,6 +7369,12 @@
 				return d
 			})), s.d(t, "d", (function() {
 				return l
+			})), s.d(t, "g", (function() {
+				return u
+			})), s.d(t, "e", (function() {
+				return m
+			})), s.d(t, "f", (function() {
+				return p
 			}));
 			var n = s("./node_modules/reselect/es/index.js"),
 				r = s("./src/reddit/constants/experiments.ts"),
@@ -7378,31 +7384,34 @@
 					experimentName: r.yb,
 					experimentEligibilitySelector: a.e
 				}), e => e === r.V.Enabled),
-				c = (Object(n.a)(e => Object(o.c)(e, {
+				c = Object(n.a)(e => Object(o.c)(e, {
 					experimentName: r.zb,
 					experimentEligibilitySelector: a.e
-				}), e => e === r.W.Enabled), Object(n.a)(e => Object(o.c)(e, {
+				}), e => e === r.W.Enabled),
+				d = Object(n.a)(e => Object(o.c)(e, {
 					experimentName: r.Bb,
 					experimentEligibilitySelector: a.e
-				}), e => e === r.Y.Enabled)),
-				d = Object(n.a)(e => Object(o.c)(e, {
+				}), e => e === r.Y.Enabled),
+				l = Object(n.a)(e => Object(o.c)(e, {
 					experimentName: r.Cb,
 					experimentEligibilitySelector: a.e
 				}), e => e === r.Z.Enabled),
-				l = Object(n.a)(e => Object(o.c)(e, {
+				u = Object(n.a)(e => Object(o.c)(e, {
 					experimentName: r.Gb,
 					experimentEligibilitySelector: a.e
-				}), e => e === r.db.Enabled);
+				}), e => e === r.db.Enabled),
+				m = (Object(n.a)(e => Object(o.c)(e, {
+					experimentName: r.Ab,
+					experimentEligibilitySelector: a.e
+				}), e => e === r.X.Enabled), Object(n.a)(e => Object(o.c)(e, {
+					experimentName: r.Db,
+					experimentEligibilitySelector: a.e
+				}), e => e === r.ab.Enabled)),
+				p = Object(n.a)(e => Object(o.c)(e, {
+					experimentName: r.Eb,
+					experimentEligibilitySelector: a.e
+				}), e => e === r.bb.Enabled);
 			Object(n.a)(e => Object(o.c)(e, {
-				experimentName: r.Ab,
-				experimentEligibilitySelector: a.e
-			}), e => e === r.X.Enabled), Object(n.a)(e => Object(o.c)(e, {
-				experimentName: r.Db,
-				experimentEligibilitySelector: a.e
-			}), e => e === r.ab.Enabled), Object(n.a)(e => Object(o.c)(e, {
-				experimentName: r.Eb,
-				experimentEligibilitySelector: a.e
-			}), e => e === r.bb.Enabled), Object(n.a)(e => Object(o.c)(e, {
 				experimentName: r.Hb,
 				experimentEligibilitySelector: a.e
 			}), e => e === r.eb.Enabled), Object(n.a)(e => Object(o.c)(e, {
@@ -7823,4 +7832,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.6941e5bc7b160add98db.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.ddb41ed3ced537a3e534.js.map

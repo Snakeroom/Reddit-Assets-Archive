@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.0c62af51cdc6c21db65e.js
-// Retrieved at 11/10/2021, 9:20:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.e8980f0c7f00e6bfb872.js
+// Retrieved at 11/10/2021, 9:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, n) {
@@ -8618,7 +8618,7 @@
 				a = n("./src/reddit/selectors/experiments/joinOptimizations.ts"),
 				i = n("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(r.b)(() => Object(s.c)({
-				isInJoinOptimizationsExperiment: e => Object(a.a)(e) || Object(a.b)(e) || Object(a.c)(e) || Object(a.d)(e),
+				isInJoinOptimizationsExperiment: e => Object(a.a)(e) || Object(a.c)(e) || Object(a.d)(e) || Object(a.g)(e),
 				userIsSubscriber: i.cb
 			}), (e, {
 				identifier: t
@@ -14426,4 +14426,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.0c62af51cdc6c21db65e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.e8980f0c7f00e6bfb872.js.map

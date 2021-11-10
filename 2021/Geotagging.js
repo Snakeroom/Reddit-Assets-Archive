@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Geotagging.fbe8ddc1df7549b1e1d7.js
-// Retrieved at 11/4/2021, 4:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Geotagging.d7dae5597336c0a05391.js
+// Retrieved at 11/10/2021, 9:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Geotagging"], {
 		"./node_modules/p-debounce/index.js": function(e, t, s) {
@@ -1267,7 +1267,7 @@
 				a = s("./src/reddit/selectors/experiments/joinOptimizations.ts"),
 				o = s("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(n.b)(() => Object(r.c)({
-				isInJoinOptimizationsExperiment: e => Object(a.a)(e) || Object(a.b)(e) || Object(a.c)(e) || Object(a.d)(e),
+				isInJoinOptimizationsExperiment: e => Object(a.a)(e) || Object(a.c)(e) || Object(a.d)(e) || Object(a.g)(e),
 				userIsSubscriber: o.cb
 			}), (e, {
 				identifier: t
@@ -1761,4 +1761,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.fbe8ddc1df7549b1e1d7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.d7dae5597336c0a05391.js.map

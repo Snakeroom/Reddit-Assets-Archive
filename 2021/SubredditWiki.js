@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.939a09030746464f7b09.js
-// Retrieved at 11/10/2021, 9:20:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.2042c0ef2a86de92492a.js
+// Retrieved at 11/10/2021, 9:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -573,6 +573,38 @@
 					onClick: e.onClick
 				}, e.children)
 			}, "Component", d.a)
+		},
+		"./src/lib/pubsub/index.ts": function(e, t, s) {
+			"use strict";
+			s.d(t, "a", (function() {
+				return n
+			}));
+			class n {
+				constructor() {
+					this.listenerMap = {}
+				}
+				_resetListenerMap() {
+					this.listenerMap = {}
+				}
+				_resetKey(e) {
+					this.listenerMap[e] = []
+				}
+				reset(e) {
+					e ? this._resetKey(e) : this._resetListenerMap()
+				}
+				addListeners(e, ...t) {
+					this.listenerMap[e] || (this.listenerMap[e] = []), this.listenerMap[e].push(...t)
+				}
+				removeListeners(e, ...t) {
+					if (!this.listenerMap[e] || !this.listenerMap[e].length) return !1;
+					const s = t.length,
+						n = this.listenerMap[e].length;
+					return this.listenerMap[e] = this.listenerMap[e].filter(e => !t.includes(e)), this.listenerMap[e].length - n === s
+				}
+				publish(e) {
+					return !(!this.listenerMap[e] || !this.listenerMap[e].length) && (this.listenerMap[e].forEach(e => e()), !0)
+				}
+			}
 		},
 		"./src/lib/unicodeUtils/index.ts": function(e, t, s) {
 			"use strict";
@@ -5025,35 +5057,38 @@
 		},
 		"./src/reddit/components/IdCard/helpers.ts": function(e, t, s) {
 			"use strict";
-			s.d(t, "e", (function() {
-				return a
-			})), s.d(t, "c", (function() {
+			s.d(t, "f", (function() {
 				return d
 			})), s.d(t, "d", (function() {
 				return c
-			})), s.d(t, "b", (function() {
+			})), s.d(t, "e", (function() {
 				return l
-			})), s.d(t, "a", (function() {
+			})), s.d(t, "c", (function() {
 				return u
+			})), s.d(t, "b", (function() {
+				return m
+			})), s.d(t, "a", (function() {
+				return b
 			}));
 			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
 				r = s("./src/config.ts"),
-				i = s("./src/reddit/constants/listings.ts"),
-				o = s("./src/reddit/constants/page.ts");
-			const a = e => e && e.toLowerCase() === i.b.Popular,
-				d = e => e && e.toLowerCase() === i.b.All,
-				c = e => e && e === o.c,
-				l = (e, t = 40, s = 68) => ({
+				i = s("./src/lib/pubsub/index.ts"),
+				o = s("./src/reddit/constants/listings.ts"),
+				a = s("./src/reddit/constants/page.ts");
+			const d = e => e && e.toLowerCase() === o.b.Popular,
+				c = e => e && e.toLowerCase() === o.b.All,
+				l = e => e && e === a.c,
+				u = (e, t = 40, s = 68) => ({
 					height: s,
 					image: e,
 					width: t
 				}),
-				u = ({
+				m = ({
 					listingName: e,
 					subreddit: t,
 					idCardWidget: s
 				}) => {
-					let o, u, m, p, b;
+					let i, a, m, p, b;
 					const h = s && s.subscribersText || n.fbt._("Members", null, {
 							hk: "1dldMb"
 						}),
@@ -5061,28 +5096,30 @@
 							hk: "36JX70"
 						});
 					let g, _;
-					return c(e) ? (o = `${r.a.assetPath}/img/id-cards/home-banner@2x.png`, m = l(`url('${r.a.assetPath}/img/id-cards/snoo-home@2x.png')`), b = i.c[i.b.Home], u = n.fbt._("Your personal Reddit frontpage. Come here to check in with your favorite communities.", null, {
+					return l(e) ? (i = `${r.a.assetPath}/img/id-cards/home-banner@2x.png`, m = u(`url('${r.a.assetPath}/img/id-cards/snoo-home@2x.png')`), b = o.c[o.b.Home], a = n.fbt._("Your personal Reddit frontpage. Come here to check in with your favorite communities.", null, {
 						hk: "2MHNRd"
 					}), p = n.fbt._("Home", null, {
 						hk: "9xVXB"
-					})) : d(e) ? (o = `${r.a.assetPath}/img/id-cards/banner@2x.png`, u = n.fbt._("The most active posts from all of Reddit. Come here to see new posts rising and be a part of the conversation.", null, {
+					})) : c(e) ? (i = `${r.a.assetPath}/img/id-cards/banner@2x.png`, a = n.fbt._("The most active posts from all of Reddit. Come here to see new posts rising and be a part of the conversation.", null, {
 						hk: "1JjI5"
-					}), m = l(`url('${r.a.assetPath}/img/id-cards/snoo-home@2x.png')`), p = "r/all", b = i.c[i.b.All]) : a(e) ? (o = `${r.a.assetPath}/img/id-cards/banner@2x.png`, u = n.fbt._("The best posts on Reddit for you, pulled from the most active communities on Reddit. Check here to see the most shared, upvoted, and commented content on the internet.", null, {
+					}), m = u(`url('${r.a.assetPath}/img/id-cards/snoo-home@2x.png')`), p = "r/all", b = o.c[o.b.All]) : d(e) ? (i = `${r.a.assetPath}/img/id-cards/banner@2x.png`, a = n.fbt._("The best posts on Reddit for you, pulled from the most active communities on Reddit. Check here to see the most shared, upvoted, and commented content on the internet.", null, {
 						hk: "4dykC2"
-					}), m = l(`url('${r.a.assetPath}/img/id-cards/snoo-home@2x.png')`), p = "r/popular", b = i.c[i.b.Popular]) : e && (u = s && s.description, m = l(""), p = t.displayText, b = t.url, _ = s && s.subscribersCount, g = s && s.currentlyViewingCount), {
+					}), m = u(`url('${r.a.assetPath}/img/id-cards/snoo-home@2x.png')`), p = "r/popular", b = o.c[o.b.Popular]) : e && (a = s && s.description, m = u(""), p = t.displayText, b = t.url, _ = s && s.subscribersCount, g = s && s.currentlyViewingCount), {
 						snooBackground: m,
-						description: u,
+						description: a,
 						titleText: p,
 						url: b,
 						subscribersCount: _,
 						subscribersText: h,
 						currentlyViewingText: f,
 						currentlyViewingCount: g,
-						...o ? {
-							bannerBackgroundImage: o
+						...i ? {
+							bannerBackgroundImage: i
 						} : {}
 					}
-				}
+				},
+				p = new i.a,
+				b = e => p.publish(e ? "VISIBLE" : "NOT_VISIBLE")
 		},
 		"./src/reddit/components/IdCard/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -8554,7 +8591,7 @@
 				f = s("./src/reddit/components/IdCard/async.tsx"),
 				g = s("./src/lib/isFakeSubreddit/index.ts"),
 				_ = s("./src/reddit/components/IdCard/helpers.ts"),
-				x = e => !Object(g.a)(e) || Object(_.c)(e) || Object(_.d)(e) || Object(_.e)(e),
+				x = e => !Object(g.a)(e) || Object(_.d)(e) || Object(_.e)(e) || Object(_.f)(e),
 				v = s("./src/reddit/components/JSAPIContainers/index.tsx"),
 				y = s("./src/reddit/components/PowerupsSidebar/index.tsx"),
 				k = s("./src/reddit/components/SidebarAd/ListingPageSidebarAd.tsx"),
@@ -8990,7 +9027,7 @@
 						titleText: n.fbt._("Add community style", null, {
 							hk: "4lRD5A"
 						}),
-						snooBackground: Object(_.b)(`url('${ve.a.assetPath}/img/id-cards/snoo-artist@2x.png')`)
+						snooBackground: Object(_.c)(`url('${ve.a.assetPath}/img/id-cards/snoo-artist@2x.png')`)
 					}), a.a.createElement("div", {
 						className: Object(I.a)(ze.a.Description, qe.a.description)
 					}, n.fbt._("Styling your community helps attract members. For assistance, take a look at the {=Customize Appearance Overview} . Here are some great ways to get started.", [n.fbt._param("=Customize Appearance Overview", a.a.createElement("a", {
@@ -9836,7 +9873,7 @@
 				o = s("./src/reddit/selectors/experiments/joinOptimizations.ts"),
 				a = s("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(n.b)(() => Object(r.c)({
-				isInJoinOptimizationsExperiment: e => Object(o.a)(e) || Object(o.b)(e) || Object(o.c)(e) || Object(o.d)(e),
+				isInJoinOptimizationsExperiment: e => Object(o.a)(e) || Object(o.c)(e) || Object(o.d)(e) || Object(o.g)(e),
 				userIsSubscriber: a.cb
 			}), (e, {
 				identifier: t
@@ -11335,4 +11372,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.939a09030746464f7b09.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.2042c0ef2a86de92492a.js.map

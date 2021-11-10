@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.d72b27f604f32bfc6d11.js
-// Retrieved at 11/10/2021, 9:20:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.3d3da2bd4d2dcf2c650a.js
+// Retrieved at 11/10/2021, 9:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, n) {
@@ -898,8 +898,8 @@
 				}).apply(this, arguments)
 			}
 			const E = Object(i.c)({
-					isInLeaderboardDetailJoinOptimizationsExperiment: e => !(!Object(y.h)(e) || !Object(f.a)(e) && !Object(f.b)(e)),
-					isInLeaderboardEntryJoinOptimizationsExperiment: e => !(!Object(y.g)(e) || !Object(f.a)(e) && !Object(f.c)(e))
+					isInLeaderboardDetailJoinOptimizationsExperiment: e => !(!Object(y.h)(e) || !Object(f.a)(e) && !Object(f.c)(e)),
+					isInLeaderboardEntryJoinOptimizationsExperiment: e => !(!Object(y.g)(e) || !Object(f.a)(e) && !Object(f.d)(e))
 				}),
 				x = Object(a.b)(E, e => ({
 					updateSubredditModels: t => e(Object(o.a)({
@@ -1479,7 +1479,7 @@
 				i = n("./src/reddit/selectors/experiments/joinOptimizations.ts"),
 				o = n("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(r.b)(() => Object(s.c)({
-				isInJoinOptimizationsExperiment: e => Object(i.a)(e) || Object(i.b)(e) || Object(i.c)(e) || Object(i.d)(e),
+				isInJoinOptimizationsExperiment: e => Object(i.a)(e) || Object(i.c)(e) || Object(i.d)(e) || Object(i.g)(e),
 				userIsSubscriber: o.cb
 			}), (e, {
 				identifier: t
@@ -2166,8 +2166,8 @@
 						categoryId: t
 					}) => Object(W.L)(e, t),
 					subreddits: W.X,
-					isInLeaderboardDetailJoinOptimizationsExperiment: e => !(!Object(R.h)(e) || !Object(F.a)(e) && !Object(F.b)(e)),
-					isInLeaderboardEntryJoinOptimizationsExperiment: e => !(!Object(R.g)(e) || !Object(F.a)(e) && !Object(F.c)(e))
+					isInLeaderboardDetailJoinOptimizationsExperiment: e => !(!Object(R.h)(e) || !Object(F.a)(e) && !Object(F.c)(e)),
+					isInLeaderboardEntryJoinOptimizationsExperiment: e => !(!Object(R.g)(e) || !Object(F.a)(e) && !Object(F.d)(e))
 				}),
 				J = Object(o.b)(H, e => ({
 					fetchMoreSubreddits: (t, n) => e(Object(L.b)(t, n))
@@ -2560,4 +2560,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.d72b27f604f32bfc6d11.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.3d3da2bd4d2dcf2c650a.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~FrontpageSidebar.9e68e28a54a423a30338.js
-// Retrieved at 11/10/2021, 9:20:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~FrontpageSidebar.56d5d83b30eea567a434.js
+// Retrieved at 11/10/2021, 9:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~FrontpageSidebar"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, n) {
@@ -1191,8 +1191,8 @@
 				}).apply(this, arguments)
 			}
 			const x = Object(i.c)({
-					isInLeaderboardDetailJoinOptimizationsExperiment: e => !(!Object(_.h)(e) || !Object(f.a)(e) && !Object(f.b)(e)),
-					isInLeaderboardEntryJoinOptimizationsExperiment: e => !(!Object(_.g)(e) || !Object(f.a)(e) && !Object(f.c)(e))
+					isInLeaderboardDetailJoinOptimizationsExperiment: e => !(!Object(_.h)(e) || !Object(f.a)(e) && !Object(f.c)(e)),
+					isInLeaderboardEntryJoinOptimizationsExperiment: e => !(!Object(_.g)(e) || !Object(f.a)(e) && !Object(f.d)(e))
 				}),
 				y = Object(a.b)(x, e => ({
 					updateSubredditModels: t => e(Object(o.a)({
@@ -2192,4 +2192,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~FrontpageSidebar.9e68e28a54a423a30338.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~FrontpageSidebar.56d5d83b30eea567a434.js.map

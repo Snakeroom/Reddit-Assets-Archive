@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.d33dfd0c84292801086f.js
-// Retrieved at 11/10/2021, 9:20:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.0dcf479139d5498a3dbb.js
+// Retrieved at 11/10/2021, 9:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -10479,7 +10479,7 @@
 				o = s("./src/reddit/selectors/experiments/joinOptimizations.ts"),
 				a = s("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(r.b)(() => Object(n.c)({
-				isInJoinOptimizationsExperiment: e => Object(o.a)(e) || Object(o.b)(e) || Object(o.c)(e) || Object(o.d)(e),
+				isInJoinOptimizationsExperiment: e => Object(o.a)(e) || Object(o.c)(e) || Object(o.d)(e) || Object(o.g)(e),
 				userIsSubscriber: a.cb
 			}), (e, {
 				identifier: t
@@ -12139,4 +12139,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.d33dfd0c84292801086f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.0dcf479139d5498a3dbb.js.map

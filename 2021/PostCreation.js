@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.441897a4189987154cd4.js
-// Retrieved at 11/10/2021, 9:20:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.76afff7f80b55b8eafca.js
+// Retrieved at 11/10/2021, 9:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton", "FrontpageSidebar"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, n) {
@@ -17637,7 +17637,7 @@
 				i = n("./src/reddit/selectors/experiments/joinOptimizations.ts"),
 				a = n("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(o.b)(() => Object(s.c)({
-				isInJoinOptimizationsExperiment: e => Object(i.a)(e) || Object(i.b)(e) || Object(i.c)(e) || Object(i.d)(e),
+				isInJoinOptimizationsExperiment: e => Object(i.a)(e) || Object(i.c)(e) || Object(i.d)(e) || Object(i.g)(e),
 				userIsSubscriber: a.cb
 			}), (e, {
 				identifier: t
@@ -31572,6 +31572,12 @@
 				return d
 			})), n.d(t, "d", (function() {
 				return l
+			})), n.d(t, "g", (function() {
+				return u
+			})), n.d(t, "e", (function() {
+				return m
+			})), n.d(t, "f", (function() {
+				return p
 			}));
 			var o = n("./node_modules/reselect/es/index.js"),
 				s = n("./src/reddit/constants/experiments.ts"),
@@ -31581,31 +31587,34 @@
 					experimentName: s.yb,
 					experimentEligibilitySelector: i.e
 				}), e => e === s.V.Enabled),
-				c = (Object(o.a)(e => Object(r.c)(e, {
+				c = Object(o.a)(e => Object(r.c)(e, {
 					experimentName: s.zb,
 					experimentEligibilitySelector: i.e
-				}), e => e === s.W.Enabled), Object(o.a)(e => Object(r.c)(e, {
+				}), e => e === s.W.Enabled),
+				d = Object(o.a)(e => Object(r.c)(e, {
 					experimentName: s.Bb,
 					experimentEligibilitySelector: i.e
-				}), e => e === s.Y.Enabled)),
-				d = Object(o.a)(e => Object(r.c)(e, {
+				}), e => e === s.Y.Enabled),
+				l = Object(o.a)(e => Object(r.c)(e, {
 					experimentName: s.Cb,
 					experimentEligibilitySelector: i.e
 				}), e => e === s.Z.Enabled),
-				l = Object(o.a)(e => Object(r.c)(e, {
+				u = Object(o.a)(e => Object(r.c)(e, {
 					experimentName: s.Gb,
 					experimentEligibilitySelector: i.e
-				}), e => e === s.db.Enabled);
+				}), e => e === s.db.Enabled),
+				m = (Object(o.a)(e => Object(r.c)(e, {
+					experimentName: s.Ab,
+					experimentEligibilitySelector: i.e
+				}), e => e === s.X.Enabled), Object(o.a)(e => Object(r.c)(e, {
+					experimentName: s.Db,
+					experimentEligibilitySelector: i.e
+				}), e => e === s.ab.Enabled)),
+				p = Object(o.a)(e => Object(r.c)(e, {
+					experimentName: s.Eb,
+					experimentEligibilitySelector: i.e
+				}), e => e === s.bb.Enabled);
 			Object(o.a)(e => Object(r.c)(e, {
-				experimentName: s.Ab,
-				experimentEligibilitySelector: i.e
-			}), e => e === s.X.Enabled), Object(o.a)(e => Object(r.c)(e, {
-				experimentName: s.Db,
-				experimentEligibilitySelector: i.e
-			}), e => e === s.ab.Enabled), Object(o.a)(e => Object(r.c)(e, {
-				experimentName: s.Eb,
-				experimentEligibilitySelector: i.e
-			}), e => e === s.bb.Enabled), Object(o.a)(e => Object(r.c)(e, {
 				experimentName: s.Hb,
 				experimentEligibilitySelector: i.e
 			}), e => e === s.eb.Enabled), Object(o.a)(e => Object(r.c)(e, {
@@ -32176,4 +32185,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.441897a4189987154cd4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.76afff7f80b55b8eafca.js.map
