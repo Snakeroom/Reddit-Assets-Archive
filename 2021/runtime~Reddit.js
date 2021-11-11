@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.d96220e5ef3931d3c895.js
-// Retrieved at 11/11/2021, 12:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.8a1063f87fd00673a48a.js
+// Retrieved at 11/11/2021, 12:50:05 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var n, a, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) a = r[l], Object.prototype.hasOwnProperty.call(d, a) && d[a] && b.push(d[a][0]), d[a] = 0;
@@ -1419,7 +1419,7 @@
 						"vendors~PostCreation": "d0db3c84f219bebed2c6",
 						PostCreation: "9675b488a3249d5688fb",
 						"vendors~ModStatsChart~Settings~ViewsTooltip": "ca7c845d62fd39d960b6",
-						Settings: "14cd72174d87b057285b",
+						Settings: "d0bbbb2daf13c59f0415",
 						"vendors~ModerationPages": "345c2d1c2b51a95d38c2",
 						ModerationPages: "53e4ecf0aa5e7dd1ee1e",
 						"vendors~CryptoLibEthers~reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-compon~fb9f1732": "5b16d2c71f22938e781d",
@@ -1655,4 +1655,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.d96220e5ef3931d3c895.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.8a1063f87fd00673a48a.js.map
