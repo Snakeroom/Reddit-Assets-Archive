@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.27fa65d48ab796a13f79.js
-// Retrieved at 11/10/2021, 7:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.8ed2e0bf75f098eb240d.js
+// Retrieved at 11/10/2021, 7:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -2974,7 +2974,7 @@
 			const i = () => async (e, t) => {
 				const n = t();
 				Object(r.d)(n, {
-					experimentName: o.Ze
+					experimentName: o.bf
 				})
 			};
 			t.default = () => async (e, t) => {
@@ -6628,9 +6628,9 @@
 				cr = n("./src/reddit/helpers/trackers/searchResults.ts"),
 				lr = n("./src/reddit/models/Search/index.ts"),
 				dr = n("./src/reddit/selectors/experiments/trending.ts");
-			const ur = e => Object(Ct.H)(e) || Qt.ff.Treatment1 === Object(Vs.c)(e, {
+			const ur = e => Object(Ct.H)(e) || Qt.hf.Treatment1 === Object(Vs.c)(e, {
 				experimentEligibilitySelector: Vs.a,
-				experimentName: Qt.bf
+				experimentName: Qt.df
 			});
 			var mr, pr = n("./src/reddit/selectors/experiments/uiSimplification.ts"),
 				br = n("./src/reddit/selectors/searchResults.ts"),
@@ -18096,14 +18096,14 @@
 							}))
 						}), Rn(n), Object(B.d)("enabled" === Object(vn.c)(n.getState(), {
 							experimentEligibilitySelector: vn.a,
-							experimentName: Ze.We,
+							experimentName: Ze.Ye,
 							expEventOverride: !1
 						})), Object(B.c)("enabled" === Object(vn.c)(n.getState(), {
 							experimentEligibilitySelector: vn.a,
-							experimentName: Ze.Ye
+							experimentName: Ze.af
 						})), Object(B.g)("enabled" === Object(vn.c)(n.getState(), {
 							experimentEligibilitySelector: vn.a,
-							experimentName: Ze.Xe
+							experimentName: Ze.Ze
 						})), Object(B.f)(Es.gqlContext), window.addEventListener("beforeunload", () => {
 							const e = n.getState();
 							Object(L.b)("sendV2Event", Object(xn.a)("tab_closed")(e))
@@ -20670,11 +20670,11 @@
 		"./src/reddit/selectors/accountManager.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return O
+				return C
 			})), n.d(t, "b", (function() {
-				return x
+				return E
 			})), n.d(t, "c", (function() {
-				return P
+				return _
 			}));
 			var s = n("./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js"),
 				o = n("./node_modules/@reddit/i18n-tools/runtime/helpers/locale/constants.js"),
@@ -20693,27 +20693,33 @@
 			}), e => e === l.nd.Enabled);
 			var h = n("./src/reddit/selectors/experiments/magicLink.ts"),
 				f = n("./src/reddit/selectors/experiments/moreRepliesSignup.ts"),
-				g = n("./src/reddit/selectors/experiments/onboarding.ts");
-			var v = n("./src/reddit/selectors/meta.ts"),
-				y = n("./src/reddit/selectors/responsiveSettings.ts");
-			const O = e => e.accountManagerModalData.actionSource,
-				x = e => e.accountManagerModalData.redirectUrl,
-				C = Object(a.c)({
+				g = n("./src/reddit/selectors/experiments/onboarding.ts"),
+				v = n("./src/lib/getParsedUserAgent/index.ts");
+			const y = Object(a.a)(e => Object(m.c)(e, {
+				experimentEligibilitySelector: e => Object(v.g)(e.meta.userAgent) && Object(p.f)(e),
+				experimentName: l.Je
+			}), e => e === l.Re.Enabled);
+			var O = n("./src/reddit/selectors/meta.ts"),
+				x = n("./src/reddit/selectors/responsiveSettings.ts");
+			const C = e => e.accountManagerModalData.actionSource,
+				E = e => e.accountManagerModalData.redirectUrl,
+				P = Object(a.c)({
 					frontpageSignupVariant: d.a,
 					googleOneTapVariant: u.b,
 					magicLinkVariant: h.a,
 					moreRepliesSignupVariant: f.c,
 					ssoLoginLinkVariant: e => Object(m.c)(e, {
 						experimentEligibilitySelector: e => !Object(p.e)(e),
-						experimentName: l.Je
+						experimentName: l.Ke
 					})
 				}),
-				E = Object(a.c)({
+				j = Object(a.c)({
 					isGoogleSsoGisEnabled: b,
 					isMoreRepliesSignupEnabled: f.a,
-					isOnboardingEnabled: g.a
+					isOnboardingEnabled: g.a,
+					isSafariOneTapEnabled: y
 				}),
-				P = Object(a.a)((e, t) => t.path, (e, t) => t.uiMode, O, y.a, v.i, C, E, (e, t, n, a, d, u, m) => {
+				_ = Object(a.a)((e, t) => t.path, (e, t) => t.uiMode, C, x.a, O.i, P, j, (e, t, n, a, d, u, m) => {
 					const {
 						frontpageSignupVariant: p,
 						googleOneTapVariant: b,
@@ -20723,36 +20729,39 @@
 					} = u, {
 						isGoogleSsoGisEnabled: v,
 						isMoreRepliesSignupEnabled: y,
-						isOnboardingEnabled: O
+						isOnboardingEnabled: O,
+						isSafariOneTapEnabled: x
 					} = m;
-					let x = `${r.a.accountManagerOrigin}${e}`;
-					if (x = Object(i.a)(x, {
+					let C = `${r.a.accountManagerOrigin}${e}`;
+					if (C = Object(i.a)(C, {
 							experiment_d2x_2020ify_buttons: "enabled"
-						}), h && (x = Object(i.a)(x, {
-							[`experiment_${l.Je}`]: h
-						})), v && (x = Object(i.a)(x, {
+						}), h && (C = Object(i.a)(C, {
+							[`experiment_${l.Ke}`]: h
+						})), v && (C = Object(i.a)(C, {
 							[`experiment_${l.id}`]: "enabled"
-						})), y && (x = Object(i.a)(x, {
+						})), y && (C = Object(i.a)(C, {
 							[`experiment_${l.Kd}`]: g
-						})), O && (x = Object(i.a)(x, {
+						})), O && (C = Object(i.a)(C, {
 							experiment_d2x_onboarding: "enabled"
-						})), e === c.c.GoogleOneTap) return Object(i.a)(x, {
+						})), x && (C = Object(i.a)(C, {
+							[`experiment_${l.Je}`]: "enabled"
+						})), e === c.c.GoogleOneTap) return Object(i.a)(C, {
 						[l.qb]: b
 					});
-					if (p && (x = Object(i.a)(x, {
+					if (p && (C = Object(i.a)(C, {
 							[l.ec]: p,
 							uiMode: t
-						})), f && (x = Object(i.a)(x, {
+						})), f && (C = Object(i.a)(C, {
 							[`experiment_${l.Hd}`]: f
-						})), a && (x = Object(i.a)(x, {
+						})), a && (C = Object(i.a)(C, {
 							mweb_responsive_settings: "treatment"
 						})), d) {
 						const e = Object(s.isoLocaleToR2Language)(d);
-						d !== o.DEFAULT_LOCALE && e && (x = Object(i.a)(x, {
+						d !== o.DEFAULT_LOCALE && e && (C = Object(i.a)(C, {
 							lang: e
 						}))
 					}
-					return e === c.c.Index || e === c.c.ChangePassword ? x : x = Object(i.a)(x, {
+					return e === c.c.Index || e === c.c.ChangePassword ? C : C = Object(i.a)(C, {
 						actionSource: n
 					})
 				})
@@ -20950,7 +20959,7 @@
 					experimentEligibilitySelector: r.K,
 					experimentName: s.Vc
 				});
-				return !(!t || Object(s.sf)(t))
+				return !(!t || Object(s.uf)(t))
 			}
 		},
 		"./src/reddit/selectors/experiments/frontpageSignup.ts": function(e, t, n) {
@@ -21051,7 +21060,7 @@
 				a = n("./src/reddit/selectors/experiments/utils.ts");
 			const i = Object(s.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: o.Ze,
+					experimentName: o.bf,
 					expEventOverride: !1
 				}), e => e),
 				c = Object(s.a)(i, e => !!Object(a.a)(e)),
@@ -21129,9 +21138,9 @@
 			var s = n("./src/reddit/constants/experiments.ts"),
 				o = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				r = n("./src/reddit/selectors/user.ts");
-			const a = e => Object(r.H)(e) || !(s.ef.Holdout === Object(o.c)(e, {
+			const a = e => Object(r.H)(e) || !(s.gf.Holdout === Object(o.c)(e, {
 				experimentEligibilitySelector: o.a,
-				experimentName: s.af
+				experimentName: s.cf
 			}))
 		},
 		"./src/reddit/selectors/experiments/uiSimplification.ts": function(e, t, n) {
@@ -21421,4 +21430,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePo~5f1ac562", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241", "Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Governance~ModListing~Reddit~Subreddit", "Chat~Governance~Reddit", 0, "Reddit~StandalonePostPage~reddit-components-MediumPost", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.27fa65d48ab796a13f79.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.8ed2e0bf75f098eb240d.js.map

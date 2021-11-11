@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.4470aa2b06de7f98f851.js
-// Retrieved at 11/10/2021, 9:20:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.19f9b1406dcaf3495494.js
+// Retrieved at 11/10/2021, 7:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -5173,14 +5173,14 @@
 			const Be = e => {
 					return Object(Re.c)(e, {
 						experimentEligibilitySelector: Re.a,
-						experimentName: Ae.mf
+						experimentName: Ae.of
 					}) === Ae.Xc
 				},
 				De = e => {
 					if (Object(Me.a)(e)) return !1;
 					return Object(Re.c)(e, {
 						experimentEligibilitySelector: Re.a,
-						experimentName: Ae.lf
+						experimentName: Ae.nf
 					}) === Ae.Xc
 				},
 				Ve = (e, {
@@ -5191,7 +5191,7 @@
 					});
 					return !(Object(Me.a)(e) || !s || s.isSponsored) && Object(Re.c)(e, {
 						experimentEligibilitySelector: Re.a,
-						experimentName: Ae.kf
+						experimentName: Ae.mf
 					}) === Ae.Xc
 				};
 			var Ue = s("./node_modules/fbt/lib/FbtPublic.js"),
@@ -6279,7 +6279,7 @@
 							baseUrl: s.base_url,
 							hostPostId: a,
 							isEligibleForLinkedPosts: n,
-							shouldShowLinkedPosts: n && !Object(x.sf)(t) && !Object(P.a)(t),
+							shouldShowLinkedPosts: n && !Object(x.uf)(t) && !Object(P.a)(t),
 							subreddit: o
 						}
 					}
@@ -6340,7 +6340,7 @@
 						hostPostData: d,
 						listingBelowVariant: c
 					} = e;
-					if (c && !Object(x.sf)(c) && !Object(P.a)(c) && !i) return a.a.createElement("div", {
+					if (c && !Object(x.uf)(c) && !Object(P.a)(c) && !i) return a.a.createElement("div", {
 						className: z.a.smallBanner
 					});
 					const {
@@ -8184,7 +8184,7 @@
 					experimentEligibilitySelector: n.a,
 					experimentName: o.rc
 				});
-				return !(!t || Object(o.sf)(t))
+				return !(!t || Object(o.uf)(t))
 			}
 		},
 		"./src/reddit/selectors/experiments/resonatePilot.ts": function(e, t, s) {
@@ -8262,37 +8262,37 @@
 					if (Object(i.a)(e)) return !1;
 					return Object(n.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.of
+						experimentName: o.qf
 					}) === o.Xc
 				},
 				d = e => {
 					return Object(n.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.pf
+						experimentName: o.rf
 					}) === o.Xc
 				},
 				c = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(n.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.nf
+						experimentName: o.pf
 					});
-					return t === o.gf.UIChangesOnly || t === o.gf.TypingIndicators || t === o.gf.IndicatorsPlusCTA
+					return t === o.if.UIChangesOnly || t === o.if.TypingIndicators || t === o.if.IndicatorsPlusCTA
 				},
 				l = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(r.d)(e, {
-							experimentName: o.nf
+							experimentName: o.pf
 						}),
 						s = null == t ? void 0 : t.variant;
-					return s === o.gf.TypingIndicators || s === o.gf.IndicatorsPlusCTA
+					return s === o.if.TypingIndicators || s === o.if.IndicatorsPlusCTA
 				},
 				m = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(r.d)(e, {
-						experimentName: o.nf
+						experimentName: o.pf
 					});
-					return (null == t ? void 0 : t.variant) === o.gf.IndicatorsPlusCTA
+					return (null == t ? void 0 : t.variant) === o.if.IndicatorsPlusCTA
 				}
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, s) {
@@ -8414,7 +8414,7 @@
 				i = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const a = e => {
 					const t = Object(i.a)(e);
-					return Boolean(t) && !Object(n.sf)(t)
+					return Boolean(t) && !Object(n.uf)(t)
 				},
 				d = Object(o.a)(a, r.d, (e, t) => e && !t)
 		},
@@ -8480,4 +8480,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.4470aa2b06de7f98f851.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.19f9b1406dcaf3495494.js.map

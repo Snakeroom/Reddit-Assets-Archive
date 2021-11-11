@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.c710f67fa609002b5a58.js
-// Retrieved at 11/10/2021, 11:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.f9a46b410e8ad947749d.js
+// Retrieved at 11/10/2021, 7:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~ModListing", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -10518,12 +10518,12 @@
 						rtJsonElementProps: a
 					});
 					switch (s) {
-						case h.Se.SmIcon:
+						case h.Ue.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: a
 							});
-						case h.Se.SmIconHc:
+						case h.Ue.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -18087,7 +18087,7 @@
 						experimentEligibilitySelector: a.K,
 						experimentName: s.yc
 					});
-					return !(!t || Object(s.sf)(t))
+					return !(!t || Object(s.uf)(t))
 				},
 				i = e => {
 					return Object(r.c)(e, {
@@ -18356,9 +18356,9 @@
 			var s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				a = n("./src/reddit/selectors/user.ts");
-			const o = e => Object(a.H)(e) || !(s.ef.Holdout === Object(r.c)(e, {
+			const o = e => Object(a.H)(e) || !(s.gf.Holdout === Object(r.c)(e, {
 				experimentEligibilitySelector: r.a,
-				experimentName: s.af
+				experimentName: s.cf
 			}))
 		},
 		"./src/reddit/selectors/experiments/uiSimplification.ts": function(e, t, n) {
@@ -18729,12 +18729,12 @@
 				c = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: s.Me
+						experimentName: s.Ne
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.Se.SmIcon || t === s.Se.SmIconHc
+					return t === s.Ue.SmIcon || t === s.Ue.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -18863,4 +18863,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.c710f67fa609002b5a58.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.f9a46b410e8ad947749d.js.map
