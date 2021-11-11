@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.9ac03bd197a4a7a1d18f.js
-// Retrieved at 11/11/2021, 10:50:11 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.d96220e5ef3931d3c895.js
+// Retrieved at 11/11/2021, 12:10:05 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var n, a, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) a = r[l], Object.prototype.hasOwnProperty.call(d, a) && d[a] && b.push(d[a][0]), d[a] = 0;
@@ -1356,7 +1356,7 @@
 						MultiredditAddSubredditModal: "17051e64c5b6ea6b64bb",
 						MultiredditCreateModal: "9057999ccc2cc1fa36c2",
 						MultiredditEditModal: "aa1a3c2ffd66cc6ca4bc",
-						NotificationUnit: "adff79b0444652ba2d66",
+						NotificationUnit: "313ec4e7a94bc35ad1ed",
 						NotificationsInbox: "cfd3063197e374b8b1ab",
 						NotificationsPrePromptLoader: "463f4b278336cd387262",
 						OnboardingModal: "417c0c55ec9db4299229",
@@ -1510,7 +1510,7 @@
 						"reddit-components-CrisisFlow-CrisisFlowPage": "2bd5a8dc6e69bdc7ec35",
 						"reddit-pages-PaypalFinishPage": "defd31b2186336eb9e42",
 						"reddit-components-Governance-TransactionModals-TransferTransactionModal": "e5753e28dbcaf3fc2473",
-						"reddit-components-NotificationUnit-Button": "9b2d3bbd9dadc57ed59c",
+						"reddit-components-NotificationUnit-Button": "7500a7054e4d926f09ae",
 						CrisisFlow: "b55542fde1c50c862a3d",
 						EmailInvitePaintedDoor: "7b911c54532321238346",
 						GifTooltip: "88bae6f6b3457f31cfbb",
@@ -1655,4 +1655,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.9ac03bd197a4a7a1d18f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.d96220e5ef3931d3c895.js.map

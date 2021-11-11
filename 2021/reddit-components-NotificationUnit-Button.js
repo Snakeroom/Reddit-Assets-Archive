@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.9b2d3bbd9dadc57ed59c.js
-// Retrieved at 11/10/2021, 7:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.7500a7054e4d926f09ae.js
+// Retrieved at 11/11/2021, 12:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-NotificationUnit-Button"], {
 		"./src/reddit/actions/comment/authoring.ts": function(e, t, n) {
@@ -970,44 +970,44 @@
 				duration: m.a
 			};
 			t.default = e => {
-				var t, n, r, y, j, I, g, C;
-				const T = Object(c.d)(),
+				var t, n, r, y, j, I, g, C, T;
+				const v = Object(c.d)(),
 					{
-						context: v,
-						deeplinkUrl: k,
-						isFullWidth: S,
-						isUnread: P,
-						isInboxCTAsAllEnabled: R,
-						isInboxCTAsReplyEnabled: _,
-						isInboxCTAsSeePostEnabled: E,
-						isNightMode: N,
-						notificationId: w,
-						onEvent: A
+						context: k,
+						deeplinkUrl: S,
+						isFullWidth: P,
+						isUnread: R,
+						isInboxCTAsAllEnabled: _,
+						isInboxCTAsReplyEnabled: E,
+						isInboxCTAsSeePostEnabled: N,
+						isNightMode: w,
+						notificationId: A,
+						onEvent: D
 					} = e,
-					D = null == v ? void 0 : v.messageType,
-					K = null === (t = null == v ? void 0 : v.post) || void 0 === t ? void 0 : t.permalink,
-					L = D === O.a.PostReply ? w : null === (n = null == v ? void 0 : v.comment) || void 0 === n ? void 0 : n.id,
-					M = (null === (r = null == v ? void 0 : v.post) || void 0 === r ? void 0 : r.id) || (null === (j = null === (y = null == v ? void 0 : v.comment) || void 0 === y ? void 0 : y.postInfo) || void 0 === j ? void 0 : j.id),
-					U = null === (I = null == v ? void 0 : v.awarding) || void 0 === I ? void 0 : I.award.id,
-					F = null === (C = null === (g = null == v ? void 0 : v.awarding) || void 0 === g ? void 0 : g.awarder) || void 0 === C ? void 0 : C.id;
+					K = null == k ? void 0 : k.messageType,
+					L = null === (t = null == k ? void 0 : k.post) || void 0 === t ? void 0 : t.permalink,
+					M = K === O.a.PostReply ? A : null === (n = null == k ? void 0 : k.comment) || void 0 === n ? void 0 : n.id,
+					U = (null === (r = null == k ? void 0 : k.post) || void 0 === r ? void 0 : r.id) || (null === (j = null === (y = null == k ? void 0 : k.comment) || void 0 === y ? void 0 : y.postInfo) || void 0 === j ? void 0 : j.id),
+					F = null === (g = null === (I = null == k ? void 0 : k.awarding) || void 0 === I ? void 0 : I.award) || void 0 === g ? void 0 : g.id,
+					H = null === (T = null === (C = null == k ? void 0 : k.awarding) || void 0 === C ? void 0 : C.awarder) || void 0 === T ? void 0 : T.id;
 				return (() => {
-					switch (D) {
+					switch (K) {
 						case O.a.LifecyclePostSuggestions:
 						case O.a.SubredditRecommendation: {
-							if (!E && !R) return null;
+							if (!N && !_) return null;
 							const e = e => {
-								K ? A({
+								L ? D({
 									position: f.c.SECOND
-								}) : (e.preventDefault(), T(Object(m.f)(x)))
+								}) : (e.preventDefault(), v(Object(m.f)(x)))
 							};
 							return s.a.createElement(l.t, {
 								onClick: e,
-								isFullWidth: S,
+								isFullWidth: P,
 								priority: l.c.Tertiary,
 								redditStyle: !0,
 								className: Object(i.a)(h.a.notificationButton, {
-									[h.a.isUnread]: P,
-									[h.a.isNightMode]: N
+									[h.a.isUnread]: R,
+									[h.a.isNightMode]: w
 								})
 							}, s.a.createElement(p.a, {
 								name: "text_post",
@@ -1018,27 +1018,27 @@
 						}
 						case O.a.PostReply:
 						case O.a.CommentReply: {
-							if (!_ && !R) return null;
+							if (!E && !_) return null;
 							const e = e => {
-								if (M && L) {
-									const e = Object(d.a)(M, L, Object(b.c)(k)),
+								if (U && M) {
+									const e = Object(d.a)(U, M, Object(b.c)(S)),
 										t = {
-											parentCommentId: L,
+											parentCommentId: M,
 											commentsPageKey: e
 										};
-									T(Object(a.g)(t)), A({
+									v(Object(a.g)(t)), D({
 										position: f.c.SECOND
 									})
-								} else e.preventDefault(), T(Object(m.f)(x))
+								} else e.preventDefault(), v(Object(m.f)(x))
 							};
 							return s.a.createElement(l.t, {
 								onClick: e,
-								isFullWidth: S,
+								isFullWidth: P,
 								priority: l.c.Tertiary,
 								redditStyle: !0,
 								className: Object(i.a)(h.a.notificationButton, {
-									[h.a.isUnread]: P,
-									[h.a.isNightMode]: N
+									[h.a.isUnread]: R,
+									[h.a.isNightMode]: w
 								})
 							}, s.a.createElement(p.a, {
 								name: "reply",
@@ -1048,24 +1048,24 @@
 							}))
 						}
 						case O.a.AwardReceived: {
-							if (!F) return null;
+							if (!H) return null;
 							const e = e => {
-								e.preventDefault(), F ? A({
+								F && (e.preventDefault(), H ? D({
 									position: f.c.SECOND,
-									awardId: U
-								}) : T(Object(m.f)(x))
+									awardId: F
+								}) : v(Object(m.f)(x)))
 							};
 							return s.a.createElement(u.b, {
-								userId: F,
-								contextId: F,
+								userId: H,
+								contextId: H,
 								onClick: e,
-								isFullWidth: S,
+								isFullWidth: P,
 								priority: l.c.Tertiary,
 								redditStyle: !0,
 								eventSource: u.a.awardNotification,
 								className: Object(i.a)(h.a.notificationButton, {
-									[h.a.isUnread]: P,
-									[h.a.isNightMode]: N
+									[h.a.isUnread]: R,
+									[h.a.isNightMode]: w
 								})
 							}, s.a.createElement(p.a, {
 								name: "chat_new",
@@ -2299,4 +2299,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.9b2d3bbd9dadc57ed59c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.7500a7054e4d926f09ae.js.map
