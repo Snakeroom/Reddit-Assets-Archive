@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.d85a68c9dcbd24e2540d.js
-// Retrieved at 11/8/2021, 7:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.7ac22af966ffab807b15.js
+// Retrieved at 11/11/2021, 4:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./src/reddit/actions/economics/predictions/modTools.ts": function(e, t, s) {
@@ -574,7 +574,7 @@
 					onSpoilerPost: A,
 					post: W
 				}) => {
-					var B, V, H, G;
+					var B, G, V, H;
 					const K = Object(r.e)(y.r),
 						U = Object(r.e)(e => {
 							var t;
@@ -636,12 +636,12 @@
 							hk: "3uXoIh"
 						})
 					}), Q && o.a.createElement(I.e, {
-						disabled: Boolean((null === (B = W.pollData) || void 0 === B ? void 0 : B.resolvedOptionId) || (null === (V = W.pollData) || void 0 === V ? void 0 : V.predictionStatus) === D.b.Cancelled),
+						disabled: Boolean((null === (B = W.pollData) || void 0 === B ? void 0 : B.resolvedOptionId) || (null === (G = W.pollData) || void 0 === G ? void 0 : G.predictionStatus) === D.b.Cancelled),
 						displayText: E.fbt._("Cancel Prediction", null, {
 							hk: "hgWFW"
 						}),
 						onClick: u
-					}, o.a.createElement(I.i, null)), K && (null === (H = W.pollData) || void 0 === H ? void 0 : H.isPrediction) && !(null === (G = W.pollData) || void 0 === G ? void 0 : G.resolvedOptionId) && o.a.createElement(I.e, {
+					}, o.a.createElement(I.i, null)), K && (null === (V = W.pollData) || void 0 === V ? void 0 : V.isPrediction) && !(null === (H = W.pollData) || void 0 === H ? void 0 : H.resolvedOptionId) && o.a.createElement(I.e, {
 						displayText: E.fbt._("Update the end date", null, {
 							hk: "FjDpu"
 						}),
@@ -695,14 +695,14 @@
 					isProfilePage: f.I,
 					pageLayer: e => e
 				}),
-				V = Object(a.c)({
+				G = Object(a.c)({
 					layout: f.Q,
 					isDropdownOpen: (e, {
 						tooltipId: t
 					}) => Object(C.b)(t)(e),
 					isModToMemberShareEnabled: _.d.modToMemberShare
 				}),
-				H = Object(r.b)(V, (e, {
+				V = Object(r.b)(G, (e, {
 					post: t
 				}) => ({
 					onApprovePost: () => e(Object(l.s)(t.id)),
@@ -730,8 +730,8 @@
 					onSpoilerPost: () => e(Object(l.X)(t.id)),
 					onStickyPost: () => e(Object(l.bb)(t.id))
 				})),
-				G = Object(p.a)(h.a);
-			t.default = B(H(Object(b.c)(({
+				H = Object(p.a)(h.a);
+			t.default = B(V(Object(b.c)(({
 				canEditFlair: e,
 				hasModFullPerms: t,
 				hasModPostPerms: s,
@@ -761,10 +761,10 @@
 				sendEvent: I,
 				tooltipId: S
 			}) => {
-				const F = y.distinguishType === i.F.MODERATOR,
-					L = F ? i.F.NONE : i.F.MODERATOR,
+				const F = y.distinguishType === i.G.MODERATOR,
+					L = F ? i.G.NONE : i.G.MODERATOR,
 					T = Object(u.b)(y.id, a);
-				return o.a.createElement(G, {
+				return o.a.createElement(H, {
 					className: W.a.dropdown,
 					isOpen: n,
 					tooltipId: S
@@ -1291,4 +1291,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.d85a68c9dcbd24e2540d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.7ac22af966ffab807b15.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.1ce3ad9fe1ad85e6f0b0.js
-// Retrieved at 11/11/2021, 2:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.e6103f13519aa37f93b1.js
+// Retrieved at 11/11/2021, 4:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton", "reddit-components-RichTextEditor-Toolbar-GifButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, o) {
@@ -832,7 +832,7 @@
 						})
 					}
 					return Object(x.a)(Object(v.a)(e, [E.a]), {
-						method: s.ib.POST,
+						method: s.jb.POST,
 						endpoint: Object(C.a)(Object(T.a)(Object(R.a)(`${e.apiUrl}/api/comment.json`))),
 						data: i
 					}).then(e => e.ok ? e.body.json ? e.body.json.errors.length ? {
@@ -868,10 +868,10 @@
 				U = o("./src/reddit/models/RichTextJson/index.ts"),
 				q = o("./src/reddit/models/RichTextJson/nodeMakers.ts"),
 				K = o("./src/reddit/models/Toast/index.ts"),
-				V = o("./src/reddit/selectors/comments.ts"),
-				G = o("./src/reddit/selectors/commentSelector.ts"),
-				X = o("./src/reddit/selectors/platform.ts"),
-				J = o("./src/reddit/selectors/posts.ts"),
+				G = o("./src/reddit/selectors/comments.ts"),
+				V = o("./src/reddit/selectors/commentSelector.ts"),
+				J = o("./src/reddit/selectors/platform.ts"),
+				X = o("./src/reddit/selectors/posts.ts"),
 				Z = o("./src/reddit/selectors/user.ts"),
 				Q = o("./src/reddit/actions/comment/index.ts"),
 				Y = o("./src/reddit/actions/comment/constants.ts");
@@ -900,7 +900,7 @@
 					gqlContext: c
 				}) => {
 					const l = a(),
-						u = Object(X.e)(l);
+						u = Object(J.e)(l);
 					let m = "";
 					if (u && (m = u.name), A.d.enableToxicityWarning(l)) {
 						if (!(await F(c(), m, n, s))) return void i(Object(d.i)(ie))
@@ -927,18 +927,18 @@
 						let n;
 						n = E.body, u(oe({
 							...n,
-							headCommentId: Object(V.w)(g, {
+							headCommentId: Object(G.w)(g, {
 								commentsPageKey: t
 							}),
 							commentsPageKey: t,
 							draftKey: o
 						}));
-						const s = Object(J.H)(b(), {
+						const s = Object(X.H)(b(), {
 							postId: e
 						});
 						u(Object(l.z)(s, f.a.CommentSubmitted))
 					} else {
-						E.error && E.error.type === s.Ib && L.i(g, ce(r), e);
+						E.error && E.error.type === s.Jb && L.i(g, ce(r), e);
 						const t = E.error && E.error.fields && E.error.fields[0] ? E.error.fields[0].msg : n.fbt._("Something went wrong", null, {
 							hk: "LWFS0"
 						});
@@ -962,7 +962,7 @@
 						draftKey: a,
 						formData: c,
 						editorMode: l
-					} = e, u = o(), m = Object(X.e)(u);
+					} = e, u = o(), m = Object(J.e)(u);
 					let p = "";
 					if (m && (p = m.name), A.d.enableToxicityWarning(u)) {
 						if (!(await F(n(), p, c, l))) return void t(Object(d.i)(ie))
@@ -1005,8 +1005,8 @@
 						depth: a + 1
 					}));
 					else {
-						if (_.error && _.error.type === s.Ib) {
-							const e = Object(G.b)(m, {
+						if (_.error && _.error.type === s.Jb) {
+							const e = Object(V.b)(m, {
 								commentId: r
 							});
 							if (!e) return;
@@ -1054,7 +1054,7 @@
 						l = Object(i.a)(H.c.replyToComment, t);
 					if (!Object(Z.K)(s())) return n(Object(c.k)()), void n(Object(d.k)({
 						actionSource: d.a.Reply,
-						redirectUrl: Object(V.m)(s(), {
+						redirectUrl: Object(G.m)(s(), {
 							commentId: t
 						})
 					}));
@@ -1177,7 +1177,7 @@
 							}
 							return Object(x.a)(Object(v.a)(e, [E.a]), {
 								endpoint: Object(C.a)(Object(R.a)(Object(T.a)(`${e.apiUrl}/api/editusertext`))),
-								method: s.ib.POST,
+								method: s.jb.POST,
 								data: a
 							}).then(e => e.ok ? e.body.json ? e.body.json.errors.length ? {
 								...e,
@@ -1222,7 +1222,7 @@
 					})), L.b(e, i);
 					const a = await ((e, t) => Object(x.a)(Object(v.a)(e, [E.a]), {
 						endpoint: Object(C.a)(`${e.apiUrl}/api/del`),
-						method: s.ib.POST,
+						method: s.jb.POST,
 						data: {
 							id: t
 						}
@@ -1322,11 +1322,11 @@
 			})), o.d(t, "p", (function() {
 				return K
 			})), o.d(t, "d", (function() {
-				return V
+				return G
 			})), o.d(t, "a", (function() {
-				return X
-			})), o.d(t, "b", (function() {
 				return J
+			})), o.d(t, "b", (function() {
+				return X
 			})), o.d(t, "n", (function() {
 				return Z
 			})), o.d(t, "c", (function() {
@@ -1491,7 +1491,7 @@
 						commentId: e,
 						commentsPageKey: t
 					}))
-				}, V = ({
+				}, G = ({
 					commentLink: e,
 					commentsPageKey: t,
 					lineDepth: o,
@@ -1508,9 +1508,9 @@
 						commentsPageKey: t,
 						isCollapsed: c
 					})), 0 === o && n(a, !0), Object(u.d)()
-				}, G = Object(i.a)(w.r), X = e => t => t(G({
+				}, V = Object(i.a)(w.r), J = e => t => t(V({
 					draftKey: e
-				})), J = Object(i.a)(w.a), Z = Object(i.a)(w.E), Q = Object(i.a)(w.b), Y = Object(i.a)(w.u)
+				})), X = Object(i.a)(w.a), Z = Object(i.a)(w.E), Q = Object(i.a)(w.b), Y = Object(i.a)(w.u)
 		},
 		"./src/reddit/actions/economics/me/thunkedActions.ts": function(e, t, o) {
 			"use strict";
@@ -1556,7 +1556,7 @@
 						const t = `https://${r.pointsDocsBaseUrl}v1.json?web`,
 							o = await Object(s.b)({
 								endpoint: t,
-								method: n.ib.GET
+								method: n.jb.GET
 							});
 						o.ok && o.body && e(u(o.body))
 					}
@@ -1991,10 +1991,10 @@
 				U = o("./src/reddit/constants/componentTestIds.ts"),
 				q = o("./src/reddit/selectors/activeModalId.ts"),
 				K = o("./src/reddit/selectors/comments.ts"),
-				V = o("./src/reddit/selectors/editorContent.ts"),
-				G = o("./src/reddit/actions/modal.ts"),
-				X = o("./src/reddit/components/ResizableAutosizeTextarea/index.tsx"),
-				J = o("./src/reddit/models/PostCreationForm/index.ts"),
+				G = o("./src/reddit/selectors/editorContent.ts"),
+				V = o("./src/reddit/actions/modal.ts"),
+				J = o("./src/reddit/components/ResizableAutosizeTextarea/index.tsx"),
+				X = o("./src/reddit/models/PostCreationForm/index.ts"),
 				Z = o("./src/reddit/models/PostDraft/index.ts"),
 				Q = o("./src/reddit/models/User/index.ts"),
 				Y = o("./src/reddit/components/CommentCreation/MarkdownCommentForm/index.m.less"),
@@ -2005,7 +2005,7 @@
 				ne = j.a.span("FormHeaderText", $.a),
 				se = j.a.button("HelpButton", $.a),
 				re = j.a.wrapped(g.a, "HelpIcon", $.a),
-				ie = j.a.wrapped(X.a, "ResizableAutosizeTextarea", $.a),
+				ie = j.a.wrapped(J.a, "ResizableAutosizeTextarea", $.a),
 				ae = j.a.wrapped(y.a, "FormFooter", $.a),
 				ce = j.a.wrapped(b.a, "CurrentUserIcon", $.a),
 				de = e => r.a.createElement(se, {
@@ -2021,10 +2021,10 @@
 					userName: e => e.user.account ? Object(Q.e)(e.user.account) : "",
 					pending: (e, t) => e.features.comments.submit.pending[t.draftKey],
 					draft: K.i,
-					isConverting: (e, t) => Object(V.a)(e, t.draftKey)
+					isConverting: (e, t) => Object(G.a)(e, t.draftKey)
 				}), (e, t) => ({
-					cancelModalToggled: () => e(Object(G.i)(Object(W.a)(t.draftKey))),
-					helpModalToggled: () => e(Object(G.i)(h.b))
+					cancelModalToggled: () => e(Object(V.i)(Object(W.a)(t.draftKey))),
+					helpModalToggled: () => e(Object(V.i)(h.b))
 				}));
 			class be extends r.a.Component {
 				constructor(e) {
@@ -2071,7 +2071,7 @@
 						(t || o) && n === L.a.Enter && this.onSubmit()
 					}, this.onSubmit = () => {
 						this.props.onSubmit({
-							commentMode: J.i.MARKDOWN,
+							commentMode: X.i.MARKDOWN,
 							draftType: this.props.draftType,
 							editorState: null,
 							text: this.getCurrentText(),
@@ -2218,11 +2218,11 @@
 						canSubmit: this.userHasEnteredText()
 					}, r.a.createElement(O, null, e => "compact" === e ? r.a.createElement(B, {
 						buttonRef: e => this.switchModeBtn = e,
-						onClick: () => w(J.i.RICH_TEXT, S, b),
+						onClick: () => w(X.i.RICH_TEXT, S, b),
 						isConverting: this.props.isConverting
 					}) : r.a.createElement("div", null, r.a.createElement(ee, {
 						innerRef: e => this.switchModeBtn = e,
-						onClick: () => w(J.i.RICH_TEXT, S, b)
+						onClick: () => w(X.i.RICH_TEXT, S, b)
 					}, n.fbt._("Switch to Fancy Pants Editor", null, {
 						hk: "ousUG"
 					}), this.props.isConverting && r.a.createElement(te, {
@@ -2373,10 +2373,10 @@
 				U = o("./src/reddit/selectors/comments.ts"),
 				q = o("./src/reddit/selectors/economics.ts"),
 				K = o("./src/reddit/selectors/gold/enabledFeatures.ts"),
-				V = o("./src/reddit/components/TrackingHelper/index.tsx"),
-				G = o("./src/reddit/components/TypingIndicators/constants.ts"),
-				X = o("./src/reddit/helpers/trackers/commentsPage.ts"),
-				J = o("./src/reddit/selectors/experiments/typingIndicators.ts"),
+				G = o("./src/reddit/components/TrackingHelper/index.tsx"),
+				V = o("./src/reddit/components/TypingIndicators/constants.ts"),
+				J = o("./src/reddit/helpers/trackers/commentsPage.ts"),
+				X = o("./src/reddit/selectors/experiments/typingIndicators.ts"),
 				Z = o("./src/reddit/components/TypingIndicators/index.m.less"),
 				Q = o.n(Z),
 				Y = o("./src/reddit/components/CommentCreation/RichtextCommentForm/index.m.less"),
@@ -2508,9 +2508,9 @@
 							subredditId: n
 						})
 					},
-					isTypingIndicatorsUIEnabled: J.b,
-					isTypingIndicatorsReadTestEnabled: (e, t) => !!t.isTopLevelComment && Object(J.d)(e),
-					isTypingIndicatorsWriteTestEnabled: (e, t) => !!t.isTopLevelComment && Object(J.e)(e)
+					isTypingIndicatorsUIEnabled: X.b,
+					isTypingIndicatorsReadTestEnabled: (e, t) => !!t.isTopLevelComment && Object(X.d)(e),
+					isTypingIndicatorsWriteTestEnabled: (e, t) => !!t.isTopLevelComment && Object(X.e)(e)
 				}),
 				pe = (e, t) => ({
 					cancelModalToggled: () => e(Object(M.i)(Object(F.a)(t.draftKey)))
@@ -2588,9 +2588,9 @@
 						const e = !this.state.showTypingIndicatorsFormattingTools;
 						this.setState({
 							showTypingIndicatorsFormattingTools: e
-						}), this.props.sendEvent(Object(X.h)("formatting_tools", e))
+						}), this.props.sendEvent(Object(J.h)("formatting_tools", e))
 					}, this.onTrackToolbarClick = (e, t) => {
-						Object(O.d)(O.a.CommentComposer, !1), this.props.sendEvent(Object(X.h)(e, t))
+						Object(O.d)(O.a.CommentComposer, !1), this.props.sendEvent(Object(J.h)(e, t))
 					};
 					const {
 						postId: t,
@@ -2679,17 +2679,17 @@
 					} = this.props, {
 						cancelModalText: q,
 						breakOut: K,
-						formHeight: V,
-						rteState: X,
-						showTypingIndicatorsFormattingTools: J
+						formHeight: G,
+						rteState: J,
+						showTypingIndicatorsFormattingTools: X
 					} = this.state, Z = Object(F.a)(c), Y = i.draftType === I.c.edit, ee = l !== I.c.replyToPost;
 					return B ? d.a.createElement("div", {
 						className: Object(m.a)(Q.a.commentComposer, {
 							[Q.a.isOverlay]: W
 						})
 					}, N && d.a.createElement(te, {
-						minTimeVisible: G.e,
-						minNumUsersTyping: G.d,
+						minTimeVisible: V.e,
+						minNumUsersTyping: V.d,
 						postId: v
 					}), d.a.createElement(x.a, {
 						className: Q.a.richTextEditor,
@@ -2698,11 +2698,11 @@
 						dataTestId: k.c,
 						destSubreddit: r,
 						editorType: L.a.Comment,
-						initialMinHeight: G.c,
+						initialMinHeight: V.c,
 						isCommentBoxDesignEnabled: p,
 						isExpanded: h,
 						isTypingIndicatorsExperimentEnabled: B,
-						rteState: X,
+						rteState: J,
 						rteRef: this.setRTEComponentRef,
 						domRef: this.setRTEDomElementRef,
 						noBorder: !0,
@@ -2719,7 +2719,7 @@
 						readOnly: y,
 						trackToolbarClick: this.onTrackToolbarClick,
 						toolbarPosition: "bottom",
-						renderToolbar: this.getToolbarRenderer(ee, c, y, E, p, S, M, B, this.onTypingIndicatorsFormattingToolsClick, J),
+						renderToolbar: this.getToolbarRenderer(ee, c, y, E, p, S, M, B, this.onTypingIndicatorsFormattingToolsClick, X),
 						isTypingIndicatorsWriteTestEnabled: U
 					})) : d.a.createElement(ne, {
 						className: Object(m.a)(o, {
@@ -2728,7 +2728,7 @@
 						}),
 						ref: this.setEditorWrapperRef,
 						style: {
-							height: K ? V : void 0
+							height: K ? G : void 0
 						}
 					}, H && !N && d.a.createElement(f.a, {
 						variables: this.realtimeGQLVariables,
@@ -2752,7 +2752,7 @@
 						initialHeight: this.props.initialHeight,
 						isCommentBoxDesignEnabled: p,
 						isExpanded: h,
-						rteState: X,
+						rteState: J,
 						rteRef: this.setRTEComponentRef,
 						domRef: this.setRTEDomElementRef,
 						onBlur: this.handleBlur,
@@ -2789,11 +2789,11 @@
 						withOverlay: !0
 					}), d.a.createElement(z.a, {
 						editKey: c,
-						hasValue: P.a.hasContent(X)
+						hasValue: P.a.hasContent(J)
 					}))
 				}
 			}
-			t.a = be(he(Object(V.c)(fe)))
+			t.a = be(he(Object(G.c)(fe)))
 		},
 		"./src/reddit/components/CommentCreation/ToolbarSelector.m.less": function(e, t, o) {
 			e.exports = {
@@ -3617,9 +3617,9 @@
 					})(r, s, o);
 				return i ? [i] : (e => {
 					const t = [];
-					return e.image > v.Z && t.push(n.fbt._("Post may not contain more that 20 images", null, {
+					return e.image > v.ab && t.push(n.fbt._("Post may not contain more that 20 images", null, {
 						hk: "1Szc36"
-					})), e.video + e.gifvideo > v.cb && t.push(n.fbt._("Post may not contain more that 5 videos", null, {
+					})), e.video + e.gifvideo > v.db && t.push(n.fbt._("Post may not contain more that 5 videos", null, {
 						hk: "2WhZ8k"
 					})), t
 				})(r)
@@ -4376,42 +4376,42 @@
 				b = o("./src/reddit/models/RichTextJson/addRTJParam.ts");
 			const f = (e, t) => Object(c.a)(Object(l.a)(e, [u.a]), {
 					endpoint: Object(m.a)(`${e.apiUrl}/api/save`),
-					method: a.ib.POST,
+					method: a.jb.POST,
 					data: {
 						id: t
 					}
 				}),
 				_ = (e, t) => Object(c.a)(Object(l.a)(e, [u.a]), {
 					endpoint: Object(m.a)(`${e.apiUrl}/api/unsave`),
-					method: a.ib.POST,
+					method: a.jb.POST,
 					data: {
 						id: t
 					}
 				}),
 				g = (e, t) => Object(c.a)(Object(l.a)(e, [u.a]), {
 					endpoint: Object(m.a)(`${e.apiUrl}/api/lock`),
-					method: a.ib.POST,
+					method: a.jb.POST,
 					data: {
 						id: t
 					}
 				}),
 				x = (e, t) => Object(c.a)(Object(l.a)(e, [u.a]), {
 					endpoint: Object(m.a)(`${e.apiUrl}/api/unlock`),
-					method: a.ib.POST,
+					method: a.jb.POST,
 					data: {
 						id: t
 					}
 				}),
 				y = (e, t) => Object(c.a)(Object(l.a)(e, [u.a]), {
 					endpoint: Object(m.a)(`${e.apiUrl}/api/approve`),
-					method: a.ib.POST,
+					method: a.jb.POST,
 					data: {
 						id: t
 					}
 				}),
 				v = (e, t, o) => Object(c.a)(Object(l.a)(e, [u.a]), {
 					endpoint: Object(m.a)(`${e.apiUrl}/api/remove`),
-					method: a.ib.POST,
+					method: a.jb.POST,
 					data: {
 						id: t,
 						spam: o
@@ -4419,21 +4419,21 @@
 				}),
 				E = (e, t) => Object(c.a)(Object(l.a)(e, [u.a]), {
 					endpoint: `${e.apiUrl}/api/ignore_reports`,
-					method: a.ib.POST,
+					method: a.jb.POST,
 					data: {
 						id: t
 					}
 				}),
 				C = (e, t) => Object(c.a)(Object(l.a)(e, [u.a]), {
 					endpoint: `${e.apiUrl}/api/unignore_reports`,
-					method: a.ib.POST,
+					method: a.jb.POST,
 					data: {
 						id: t
 					}
 				}),
 				j = (e, t) => Object(c.a)(Object(l.a)(e, [u.a]), {
 					endpoint: `${e.apiUrl}/api/show_comment`,
-					method: a.ib.POST,
+					method: a.jb.POST,
 					data: {
 						id: t
 					}
@@ -4443,24 +4443,24 @@
 					return s && (r = Object(p.a)(r)), Object(c.a)(e, {
 						data: o,
 						endpoint: r,
-						method: a.ib.POST,
+						method: a.jb.POST,
 						type: "json",
 						traceRequestName: "more_comments"
 					})
 				},
 				w = (e, t, o, n) => Object(c.a)(Object(l.a)(e, [u.a]), {
 					endpoint: Object(m.a)(`${e.apiUrl}/api/distinguish/${o}`),
-					method: a.ib.POST,
+					method: a.jb.POST,
 					data: {
 						id: t,
 						sticky: n
 					}
 				}),
 				O = {
-					[a.F.NONE]: i.d.None,
-					[a.F.MODERATOR]: i.d.ModDistinguished,
-					[a.F.ADMIN]: i.d.AdminDistinguished,
-					[a.F.ALUMNI_ADMIN]: i.d.AlumniDistinguished
+					[a.G.NONE]: i.d.None,
+					[a.G.MODERATOR]: i.d.ModDistinguished,
+					[a.G.ADMIN]: i.d.AdminDistinguished,
+					[a.G.ALUMNI_ADMIN]: i.d.AlumniDistinguished
 				};
 
 			function T(e, t, o) {
@@ -4468,7 +4468,7 @@
 					return {
 						input: {
 							commentId: e,
-							distinguishState: t === a.F.NONE ? i.b.None : i.b.Distinguished,
+							distinguishState: t === a.G.NONE ? i.b.None : i.b.Distinguished,
 							distinguishType: O[t]
 						}
 					}
@@ -4505,7 +4505,7 @@
 				};
 				return t === c.i.MARKDOWN ? d.richtext_json = o : d.markdown_text = o, Object(s.a)(Object(r.a)(e, [i.a]), {
 					endpoint: Object(a.a)(`${e.apiUrl}/api/convert_rte_body_format`),
-					method: n.ib.POST,
+					method: n.jb.POST,
 					data: d
 				})
 			}
@@ -4989,37 +4989,37 @@
 					if (Object(i.a)(e)) return !1;
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: n.qf
-					}) === n.Xc
+						experimentName: n.sf
+					}) === n.Zc
 				},
 				c = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: n.rf
-					}) === n.Xc
+						experimentName: n.tf
+					}) === n.Zc
 				},
 				d = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: n.pf
+						experimentName: n.rf
 					});
-					return t === n.if.UIChangesOnly || t === n.if.TypingIndicators || t === n.if.IndicatorsPlusCTA
+					return t === n.kf.UIChangesOnly || t === n.kf.TypingIndicators || t === n.kf.IndicatorsPlusCTA
 				},
 				l = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(r.d)(e, {
-							experimentName: n.pf
+							experimentName: n.rf
 						}),
 						o = null == t ? void 0 : t.variant;
-					return o === n.if.TypingIndicators || o === n.if.IndicatorsPlusCTA
+					return o === n.kf.TypingIndicators || o === n.kf.IndicatorsPlusCTA
 				},
 				u = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(r.d)(e, {
-						experimentName: n.pf
+						experimentName: n.rf
 					});
-					return (null == t ? void 0 : t.variant) === n.if.IndicatorsPlusCTA
+					return (null == t ? void 0 : t.variant) === n.kf.IndicatorsPlusCTA
 				}
 		},
 		"./src/reddit/selectors/moderatingComments.ts": function(e, t, o) {
@@ -5060,4 +5060,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.1ce3ad9fe1ad85e6f0b0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.e6103f13519aa37f93b1.js.map

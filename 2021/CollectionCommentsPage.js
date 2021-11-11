@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.668de669a4b6b4d7e16f.js
-// Retrieved at 11/4/2021, 7:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.2d86accdb1642a484562.js
+// Retrieved at 11/11/2021, 4:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage"], {
 		"./src/lib/makeCollectionCommentsPageKey/index.ts": function(t, e, s) {
@@ -57,7 +57,7 @@
 			var T = (t, e, s, n, c) => Object(x.a)(t, {
 					data: c,
 					endpoint: _(e, s, n),
-					method: o.ib.GET
+					method: o.jb.GET
 				}),
 				k = s("./src/reddit/endpoints/page/subredditPage.ts"),
 				E = s("./src/reddit/helpers/canonicalUrls.ts"),
@@ -119,7 +119,7 @@
 								identifier: e
 							}),
 							c = Object(r.c)(s.title, n.name).toString();
-						return Object(d.a)(c, y.c, o.hb)
+						return Object(d.a)(c, y.c, o.ib)
 					})(s(), h) || Object(r.d)();
 					e(m.m({
 						title: w
@@ -330,4 +330,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.668de669a4b6b4d7e16f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.2d86accdb1642a484562.js.map

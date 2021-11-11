@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconHelperActions.c9dc06f13765125c20f7.js
-// Retrieved at 11/3/2021, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconHelperActions.71a72cf4a75b5f52fa38.js
+// Retrieved at 11/11/2021, 4:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconHelperActions"], {
 		"./node_modules/lodash/_LazyWrapper.js": function(e, t, r) {
@@ -131,7 +131,7 @@
 				f = 16,
 				b = 128,
 				h = 512;
-			e.exports = function e(t, r, g, E, y, O, j, v, S, C) {
+			e.exports = function e(t, r, g, E, y, j, O, v, S, C) {
 				var A = r & b,
 					I = r & m,
 					N = r & _,
@@ -142,7 +142,7 @@
 					for (var _ = arguments.length, p = Array(_), f = _; f--;) p[f] = arguments[f];
 					if (P) var b = i(m),
 						h = o(p, b);
-					if (E && (p = n(p, E, y, P)), O && (p = s(p, O, j, P)), _ -= h, P && _ < C) {
+					if (E && (p = n(p, E, y, P)), j && (p = s(p, j, O, P)), _ -= h, P && _ < C) {
 						var T = u(p, b);
 						return c(t, r, e, m.placeholder, g, p, T, v, S, C - _)
 					}
@@ -181,8 +181,8 @@
 				var E = t & a;
 				t |= E ? u : l, (t &= ~(E ? l : u)) & i || (t &= ~(d | c));
 				var y = [e, t, _, E ? p : void 0, E ? f : void 0, E ? void 0 : p, E ? void 0 : f, b, h, g],
-					O = r.apply(void 0, y);
-				return n(e) && s(O, y), O.placeholder = m, o(O, e, t)
+					j = r.apply(void 0, y);
+				return n(e) && s(j, y), j.placeholder = m, o(j, e, t)
 			}
 		},
 		"./node_modules/lodash/_createWrap.js": function(e, t, r) {
@@ -204,18 +204,18 @@
 				g = 32,
 				E = 64,
 				y = Math.max;
-			e.exports = function(e, t, r, O, j, v, S, C) {
+			e.exports = function(e, t, r, j, O, v, S, C) {
 				var A = t & f;
 				if (!A && "function" != typeof e) throw new TypeError(_);
-				var I = O ? O.length : 0;
-				if (I || (t &= ~(g | E), O = j = void 0), S = void 0 === S ? S : y(m(S), 0), C = void 0 === C ? C : m(C), I -= j ? j.length : 0, t & E) {
-					var N = O,
-						P = j;
-					O = j = void 0
+				var I = j ? j.length : 0;
+				if (I || (t &= ~(g | E), j = O = void 0), S = void 0 === S ? S : y(m(S), 0), C = void 0 === C ? C : m(C), I -= O ? O.length : 0, t & E) {
+					var N = j,
+						P = O;
+					j = O = void 0
 				}
 				var w = A ? void 0 : i(e),
-					D = [e, t, r, O, j, N, P, v, S, C];
-				if (w && a(D, w), e = D[0], t = D[1], r = D[2], O = D[3], j = D[4], !(C = D[9] = void 0 === D[9] ? A ? 0 : e.length : y(D[9] - I, 0)) && t & (b | h) && (t &= ~(b | h)), t && t != p) T = t == b || t == h ? o(e, t, C) : t != g && t != (p | g) || j.length ? d.apply(void 0, D) : c(e, t, r, O);
+					D = [e, t, r, j, O, N, P, v, S, C];
+				if (w && a(D, w), e = D[0], t = D[1], r = D[2], j = D[3], O = D[4], !(C = D[9] = void 0 === D[9] ? A ? 0 : e.length : y(D[9] - I, 0)) && t & (b | h) && (t &= ~(b | h)), t && t != p) T = t == b || t == h ? o(e, t, C) : t != g && t != (p | g) || O.length ? d.apply(void 0, D) : c(e, t, r, j);
 				else var T = s(e, t, r);
 				return l((w ? n : u)(T, D), e, t)
 			}
@@ -643,7 +643,7 @@
 						const t = `https://${o.pointsDocsBaseUrl}v1.json?web`,
 							r = await Object(s.b)({
 								endpoint: t,
-								method: n.ib.GET
+								method: n.jb.GET
 							});
 						r.ok && r.body && e(l(r.body))
 					}
@@ -782,12 +782,12 @@
 				E = r("./src/reddit/actions/economics/me/thunkedActions.ts"),
 				y = r("./src/reddit/actions/economics/subredditPremium/actionCreators.ts");
 
-			function O(e) {
+			function j(e) {
 				return !!e && "removeBadge" === e.type
 			}
 
-			function j(e) {
-				if (!O(e)) return e
+			function O(e) {
+				if (!j(e)) return e
 			}
 			const v = () => async (e, t, {
 				apiContext: r
@@ -823,10 +823,10 @@
 					let r, s;
 					r = e.placement === _.a.First ? c[p.a.Loyalty] : e.placement === _.a.Second ? c[p.a.Achievement] : c[p.a.Cosmetic], t(Object(y.a)({
 						...e,
-						badge: j(e.badge),
+						badge: O(e.badge),
 						currentAppliedBadges: i,
 						userId: d.id
-					})), O(e.badge) && r ? s = await Object(a.a)(n(), e.subredditId, r.id, !1) : O(e.badge) || (s = await Object(a.a)(n(), e.subredditId, e.badge.id)), s && !s.ok && (t(Object(y.a)({
+					})), j(e.badge) && r ? s = await Object(a.a)(n(), e.subredditId, r.id, !1) : j(e.badge) || (s = await Object(a.a)(n(), e.subredditId, e.badge.id)), s && !s.ok && (t(Object(y.a)({
 						...e,
 						badge: r,
 						currentAppliedBadges: i,
@@ -962,9 +962,9 @@
 			})), r.d(t, "r", (function() {
 				return y
 			})), r.d(t, "s", (function() {
-				return O
-			})), r.d(t, "t", (function() {
 				return j
+			})), r.d(t, "t", (function() {
+				return O
 			})), r.d(t, "u", (function() {
 				return v
 			})), r.d(t, "v", (function() {
@@ -992,8 +992,8 @@
 				g = "GOVERNANCE__RELEASE_NOTES_SUCCESS",
 				E = "GOVERNANCE__TRANSFER_FAILURE",
 				y = "GOVERNANCE__TRANSFER_MODAL_OPENED",
-				O = "GOVERNANCE__TRANSFER_PENDING",
-				j = "GOVERNANCE__TRANSFER_SUCCESS",
+				j = "GOVERNANCE__TRANSFER_PENDING",
+				O = "GOVERNANCE__TRANSFER_SUCCESS",
 				v = "GOVERNANCE__WALLETS_FETCH_FAILURE",
 				S = "GOVERNANCE__WALLETS_FETCH_PENDING",
 				C = "GOVERNANCE__WALLETS_FETCH_SUCCESS",
@@ -1309,7 +1309,7 @@
 			function d(e, t) {
 				return Object(o.a)(e, {
 					endpoint: `${n.a.metaUrl}/communities/${t.subredditId}/me`,
-					method: s.ib.GET
+					method: s.jb.GET
 				})
 			}
 		},
@@ -1380,7 +1380,7 @@
 			function d(e, t) {
 				return Object(o.a)(e, {
 					endpoint: `${n.a.metaUrl}/wallets/${t.subredditId}/me`,
-					method: s.ib.GET
+					method: s.jb.GET
 				}).then(e => {
 					if (e.ok) {
 						const r = e.body,
@@ -1402,7 +1402,7 @@
 						"X-HTTP-Method-Override": "GET"
 					},
 					endpoint: `${n.a.metaUrl}/wallets/${t.subredditId}`,
-					method: s.ib.POST,
+					method: s.jb.POST,
 					data: t.userIds
 				}).then(e => e.ok ? {
 					...e,
@@ -1909,9 +1909,9 @@
 			})), r.d(t, "f", (function() {
 				return y
 			})), r.d(t, "i", (function() {
-				return O
-			})), r.d(t, "q", (function() {
 				return j
+			})), r.d(t, "q", (function() {
+				return O
 			})), r.d(t, "h", (function() {
 				return v
 			})), r.d(t, "z", (function() {
@@ -2012,13 +2012,13 @@
 					}
 				};
 
-			function O(e, t) {
+			function j(e, t) {
 				return (null == e ? void 0 : e.length) ? Object(s.a)(e.map(e => t[e]).filter(Boolean)) : f
 			}
-			const j = (e, t, r) => {
+			const O = (e, t, r) => {
 					var s;
 					if (!n.d.spBadges(e)) return f;
-					return O(null === (s = e.users.appliedBadges[r]) || void 0 === s ? void 0 : s[t], e.badges.models)
+					return j(null === (s = e.users.appliedBadges[r]) || void 0 === s ? void 0 : s[t], e.badges.models)
 				},
 				v = (e, t) => {
 					const r = e.economics.subredditPremium[t.subredditId];
@@ -2224,4 +2224,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconHelperActions.c9dc06f13765125c20f7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconHelperActions.71a72cf4a75b5f52fa38.js.map

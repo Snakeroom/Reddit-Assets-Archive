@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.f816971377a42e30fcd2.js
-// Retrieved at 11/10/2021, 7:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.aba5276f4c8e80dba164.js
+// Retrieved at 11/11/2021, 4:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -532,11 +532,11 @@
 				x = (e, t) => Object(h.a)(e, {
 					data: t,
 					endpoint: Object(y.a)(Object(g.a)(`${p.a.gatewayUrl}/desktopapi/v1/mod`)),
-					method: i.ib.GET
+					method: i.jb.GET
 				});
 			const O = (e, t, r, n) => Object(h.a)(Object(b.a)(e, [f.a]), {
 					endpoint: `${e.apiUrl}/api/filter/user/${t}/f/mod/${Object(v.c)(r)}`,
-					method: n ? i.ib.PUT : i.ib.DELETE,
+					method: n ? i.jb.PUT : i.jb.DELETE,
 					data: {
 						model: JSON.stringify({
 							name: Object(v.h)(r)
@@ -585,7 +585,7 @@
 					})))
 				}, F = (e, t) => async (r, s) => {
 					const {
-						sort: a = i.W
+						sort: a = i.X
 					} = e.params, l = Object(k.d)(e.path), p = l ? u.f : u.e, h = Object(d.a)(p, a, e.queryParams), b = s(), f = b.listings.postOrder.ids[h], y = b.listings.postOrder.api.error[h];
 					if (b.listings.postOrder.api.pending[h] || f && !y && !t) return void(f && r(c.m({
 						title: n.fbt._("Subreddits you moderate", null, {
@@ -612,7 +612,7 @@
 						a = s.platform.currentPage;
 					if (!a) return;
 					const {
-						sort: c = i.W
+						sort: c = i.X
 					} = e, l = a.queryParams, p = Object(k.d)(a.url), h = p ? u.f : u.e, b = Object(d.a)(h, c, l), f = s.listings.postOrder.loadMore[b];
 					if (!f) return;
 					const y = s.listings.postOrder.api.pending[b],
@@ -652,7 +652,7 @@
 
 			function U(e) {
 				const t = m.A in e && e[m.A].toUpperCase() || "";
-				return t in i.ec && i.ec[t]
+				return t in i.fc && i.fc[t]
 			}
 			const q = Object(a.a)(M.c),
 				K = Object(a.a)(M.b),
@@ -2614,7 +2614,7 @@
 							subredditName: t.subredditName
 						});
 						if (!r) {
-							const r = (e => e.startsWith(c.gc) ? e.slice(2) : e)(t.subredditName);
+							const r = (e => e.startsWith(c.hc) ? e.slice(2) : e)(t.subredditName);
 							return r && Object(re.j)(e, {
 								profileName: r
 							}) || null
@@ -2732,12 +2732,12 @@
 					location: t
 				}) => t.search, (e, {
 					match: t
-				}) => t.params.sort || c.V.HOT, (e, {
+				}) => t.params.sort || c.W.HOT, (e, {
 					match: t
 				}) => Object(q.d)(t.path), ke.j, ke.d, (e, t, r, n, o) => {
 					const i = s()([...Object(l.a)(e)]),
 						a = Ie.A in i && i[Ie.A].toUpperCase(),
-						d = "string" == typeof a && a in c.ec ? c.ec[a] : c.fc,
+						d = "string" == typeof a && a in c.fc ? c.fc[a] : c.gc,
 						m = r ? Ee.f : Ee.e;
 					return {
 						filtered: r,
@@ -4534,9 +4534,9 @@
 			var n = r("./src/reddit/constants/experiments.ts"),
 				s = r("./src/reddit/helpers/chooseVariant/index.ts");
 			const o = e => Object(s.c)(e, {
-				experimentName: n.Sd,
+				experimentName: n.Ud,
 				experimentEligibilitySelector: s.a
-			}) === n.Zd.Enabled
+			}) === n.be.Enabled
 		},
 		"./src/reddit/selectors/modQueue.ts": function(e, t, r) {
 			"use strict";
@@ -4600,4 +4600,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.f816971377a42e30fcd2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.aba5276f4c8e80dba164.js.map

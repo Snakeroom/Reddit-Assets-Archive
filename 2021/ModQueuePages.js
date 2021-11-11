@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.c70d5ba4551352be3385.js
-// Retrieved at 11/10/2021, 7:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.3444018419fe01bf79e9.js
+// Retrieved at 11/11/2021, 4:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -744,7 +744,7 @@
 			}) => {
 				const w = Object(p.b)(t),
 					S = t.isApproved && w,
-					N = !t.isRemoved || t.bannedBy === c.k,
+					N = !t.isRemoved || t.bannedBy === c.l,
 					M = a,
 					P = e => E(Object(x.a)(e, t.id));
 				return o.a.createElement("div", {
@@ -761,13 +761,13 @@
 				}, o.a.createElement(_.a, {
 					className: T.a.icon
 				})), N && o.a.createElement(o.a.Fragment, null, o.a.createElement(j.a, {
-					text: t.bannedBy === c.k ? s.fbt._("Confirm Removal", null, {
+					text: t.bannedBy === c.l ? s.fbt._("Confirm Removal", null, {
 						hk: "3JozXJ"
 					}) : s.fbt._("Remove", null, {
 						hk: "3tYl0U"
 					}),
 					onClick: () => {
-						b(), t.bannedBy === c.k ? P("confirm_remove") : P("remove")
+						b(), t.bannedBy === c.l ? P("confirm_remove") : P("remove")
 					}
 				}, o.a.createElement(y.a, {
 					className: T.a.icon
@@ -957,7 +957,7 @@
 				isCommentAuthorBlocked: Object(k.g)(n),
 				collapsed: i
 			}, o.a.createElement(I.b, {
-				ignore: Object(k.f)(n) || !!n.distinguishType && n.distinguishType !== j.F.NONE,
+				ignore: Object(k.f)(n) || !!n.distinguishType && n.distinguishType !== j.G.NONE,
 				subredditId: n.subredditId,
 				userId: n.authorId
 			}, o.a.createElement(h, {
@@ -1224,7 +1224,7 @@
 				be = e => {
 					const t = Object(a.d)(),
 						n = function(e) {
-							return e.isAdmin ? le.Admin : e.isMod ? le.Mod : e.isOp ? le.Op : e.distinguishType === j.F.ALUMNI_ADMIN ? le.AlumniAdmin : e.authorIsContractor ? le.Contractor : null
+							return e.isAdmin ? le.Admin : e.isMod ? le.Mod : e.isOp ? le.Op : e.distinguishType === j.G.ALUMNI_ADMIN ? le.AlumniAdmin : e.authorIsContractor ? le.Contractor : null
 						}(e.comment);
 					if (!n) return null;
 					if (n === le.Contractor && !e.renderContractorBadge) return null;
@@ -2600,7 +2600,7 @@
 			})), n.d(t, "c", (function() {
 				return a
 			}));
-			const s = n("./src/lib/constants/index.ts").k.toLowerCase(),
+			const s = n("./src/lib/constants/index.ts").l.toLowerCase(),
 				r = e => "string" == typeof e.bannedBy && e.bannedBy.toLowerCase() === s,
 				o = e => !!e.bannedBy && !!e.collapsedBecauseCrowdControl,
 				a = e => r(e) || o(e)
@@ -5061,12 +5061,12 @@
 						rtJsonElementProps: o
 					});
 					switch (s) {
-						case b.Ue.SmIcon:
+						case b.We.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: o
 							});
-						case b.Ue.SmIconHc:
+						case b.We.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -6650,12 +6650,12 @@
 				d = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: s.Ne
+						experimentName: s.Pe
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === s.Ue.SmIcon || t === s.Ue.SmIconHc
+					return t === s.We.SmIcon || t === s.We.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -6678,4 +6678,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.c70d5ba4551352be3385.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.3444018419fe01bf79e9.js.map

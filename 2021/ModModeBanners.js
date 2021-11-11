@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModModeBanners.b0ae6a53400f775639e9.js
-// Retrieved at 11/4/2021, 7:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModModeBanners.892a9e343e629bfe11ea.js
+// Retrieved at 11/11/2021, 4:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModModeBanners", "FrontpageSidebar"], {
 		"./src/reddit/actions/comment/index.ts": function(e, t, s) {
@@ -13,21 +13,21 @@
 			})), s.d(t, "h", (function() {
 				return N
 			})), s.d(t, "l", (function() {
-				return F
-			})), s.d(t, "q", (function() {
 				return L
-			})), s.d(t, "j", (function() {
+			})), s.d(t, "q", (function() {
 				return P
-			})), s.d(t, "g", (function() {
+			})), s.d(t, "j", (function() {
 				return U
+			})), s.d(t, "g", (function() {
+				return F
 			})), s.d(t, "f", (function() {
 				return z
 			})), s.d(t, "o", (function() {
-				return H
+				return G
 			})), s.d(t, "p", (function() {
-				return Z
+				return H
 			})), s.d(t, "d", (function() {
-				return W
+				return Z
 			})), s.d(t, "a", (function() {
 				return Q
 			})), s.d(t, "b", (function() {
@@ -125,7 +125,7 @@
 						const s = r.c.end(c);
 						!t && s < w && (clearTimeout(k[e]), delete k[e])
 					}
-				}, D = Object(c.a)(y.x), A = Object(c.a)(y.w), B = Object(c.a)(y.v), F = (e, t) => async (s, o, {
+				}, D = Object(c.a)(y.x), A = Object(c.a)(y.w), B = Object(c.a)(y.v), L = (e, t) => async (s, o, {
 					apiContext: n
 				}) => {
 					const r = o(),
@@ -167,7 +167,7 @@
 						moreCommentsItem: c,
 						...f.error
 					}))
-				}, L = Object(p.a)(O.b, R.a.upvoted), P = Object(p.a)(O.b, R.a.downvoted), U = Object(c.a)(y.j), z = Object(c.a)(y.i), K = Object(c.a)(y.e), $ = Object(c.a)(y.f), H = (Object(c.a)(y.c), Object(c.a)(y.d), ({
+				}, P = Object(p.a)(O.b, R.a.upvoted), U = Object(p.a)(O.b, R.a.downvoted), F = Object(c.a)(y.j), z = Object(c.a)(y.i), K = Object(c.a)(y.e), $ = Object(c.a)(y.f), G = (Object(c.a)(y.c), Object(c.a)(y.d), ({
 					commentId: e,
 					commentsPageKey: t,
 					scrollToAndRemeasure: s
@@ -188,7 +188,7 @@
 						commentsPageKey: t,
 						isCollapsed: i
 					})), i || 0 !== a || s(e, !0), Object(m.d)()
-				}), Z = ({
+				}), H = ({
 					commentId: e,
 					commentsPageKey: t
 				}) => async s => {
@@ -196,7 +196,7 @@
 						commentId: e,
 						commentsPageKey: t
 					}))
-				}, W = ({
+				}, Z = ({
 					commentLink: e,
 					commentsPageKey: t,
 					lineDepth: s,
@@ -213,7 +213,7 @@
 						commentsPageKey: t,
 						isCollapsed: i
 					})), 0 === s && o(d, !0), Object(m.d)()
-				}, G = Object(c.a)(y.r), Q = e => t => t(G({
+				}, W = Object(c.a)(y.r), Q = e => t => t(W({
 					draftKey: e
 				})), q = Object(c.a)(y.a), J = Object(c.a)(y.E), X = Object(c.a)(y.b), V = Object(c.a)(y.u)
 		},
@@ -355,7 +355,7 @@
 						commentId: e
 					});
 					if (!i) return;
-					const l = s === n.ac.Snoozed,
+					const l = s === n.bc.Snoozed,
 						m = {
 							itemId: e,
 							reportText: t,
@@ -388,8 +388,8 @@
 					if (o(Object(x.i)({
 							[e]: {
 								distinguishType: t,
-								isAdmin: t === n.F.ADMIN,
-								isMod: t === n.F.MODERATOR,
+								isAdmin: t === n.G.ADMIN,
+								isMod: t === n.G.MODERATOR,
 								isStickied: !!s
 							}
 						})), s && p && p !== e && o(Object(x.i)({
@@ -408,7 +408,7 @@
 						id: e,
 						postId: u,
 						commentsPageKey: Object(c.a)(u, null, {
-							sort: n.t.CONFIDENCE,
+							sort: n.u.CONFIDENCE,
 							...a.platform.currentPage.queryParams
 						})
 					})) : (o(Object(x.i)({
@@ -656,7 +656,7 @@
 			class I extends n.a.Component {
 				constructor() {
 					super(...arguments), this.tooltipTarget = null, this.setTooltipTargetRef = e => this.tooltipTarget = e, this.onSnoozeButtonClick = () => {
-						const e = this.props.isSnoozed ? i.ac.None : i.ac.Snoozed;
+						const e = this.props.isSnoozed ? i.bc.None : i.bc.Snoozed;
 						this.props.toggleSnooze(e);
 						const t = Object(j.l)(Object(f.a)(this.props.reportedThingId), this.props.isSnoozed, this.props.reportedThingId, this.props.reason);
 						this.props.sendEvent(t)
@@ -780,42 +780,42 @@
 				O = s("./src/reddit/models/RichTextJson/addRTJParam.ts");
 			const f = (e, t) => Object(i.a)(Object(l.a)(e, [m.a]), {
 					endpoint: Object(u.a)(`${e.apiUrl}/api/save`),
-					method: d.ib.POST,
+					method: d.jb.POST,
 					data: {
 						id: t
 					}
 				}),
 				j = (e, t) => Object(i.a)(Object(l.a)(e, [m.a]), {
 					endpoint: Object(u.a)(`${e.apiUrl}/api/unsave`),
-					method: d.ib.POST,
+					method: d.jb.POST,
 					data: {
 						id: t
 					}
 				}),
 				x = (e, t) => Object(i.a)(Object(l.a)(e, [m.a]), {
 					endpoint: Object(u.a)(`${e.apiUrl}/api/lock`),
-					method: d.ib.POST,
+					method: d.jb.POST,
 					data: {
 						id: t
 					}
 				}),
 				g = (e, t) => Object(i.a)(Object(l.a)(e, [m.a]), {
 					endpoint: Object(u.a)(`${e.apiUrl}/api/unlock`),
-					method: d.ib.POST,
+					method: d.jb.POST,
 					data: {
 						id: t
 					}
 				}),
 				R = (e, t) => Object(i.a)(Object(l.a)(e, [m.a]), {
 					endpoint: Object(u.a)(`${e.apiUrl}/api/approve`),
-					method: d.ib.POST,
+					method: d.jb.POST,
 					data: {
 						id: t
 					}
 				}),
 				h = (e, t, s) => Object(i.a)(Object(l.a)(e, [m.a]), {
 					endpoint: Object(u.a)(`${e.apiUrl}/api/remove`),
-					method: d.ib.POST,
+					method: d.jb.POST,
 					data: {
 						id: t,
 						spam: s
@@ -823,21 +823,21 @@
 				}),
 				v = (e, t) => Object(i.a)(Object(l.a)(e, [m.a]), {
 					endpoint: `${e.apiUrl}/api/ignore_reports`,
-					method: d.ib.POST,
+					method: d.jb.POST,
 					data: {
 						id: t
 					}
 				}),
 				C = (e, t) => Object(i.a)(Object(l.a)(e, [m.a]), {
 					endpoint: `${e.apiUrl}/api/unignore_reports`,
-					method: d.ib.POST,
+					method: d.jb.POST,
 					data: {
 						id: t
 					}
 				}),
 				T = (e, t) => Object(i.a)(Object(l.a)(e, [m.a]), {
 					endpoint: `${e.apiUrl}/api/show_comment`,
-					method: d.ib.POST,
+					method: d.jb.POST,
 					data: {
 						id: t
 					}
@@ -847,24 +847,24 @@
 					return n && (r = Object(p.a)(r)), Object(i.a)(e, {
 						data: s,
 						endpoint: r,
-						method: d.ib.POST,
+						method: d.jb.POST,
 						type: "json",
 						traceRequestName: "more_comments"
 					})
 				},
 				y = (e, t, s, o) => Object(i.a)(Object(l.a)(e, [m.a]), {
 					endpoint: Object(u.a)(`${e.apiUrl}/api/distinguish/${s}`),
-					method: d.ib.POST,
+					method: d.jb.POST,
 					data: {
 						id: t,
 						sticky: o
 					}
 				}),
 				k = {
-					[d.F.NONE]: c.d.None,
-					[d.F.MODERATOR]: c.d.ModDistinguished,
-					[d.F.ADMIN]: c.d.AdminDistinguished,
-					[d.F.ALUMNI_ADMIN]: c.d.AlumniDistinguished
+					[d.G.NONE]: c.d.None,
+					[d.G.MODERATOR]: c.d.ModDistinguished,
+					[d.G.ADMIN]: c.d.AdminDistinguished,
+					[d.G.ALUMNI_ADMIN]: c.d.AlumniDistinguished
 				};
 
 			function E(e, t, s) {
@@ -872,7 +872,7 @@
 					return {
 						input: {
 							commentId: e,
-							distinguishState: t === d.F.NONE ? c.b.None : c.b.Distinguished,
+							distinguishState: t === d.G.NONE ? c.b.None : c.b.Distinguished,
 							distinguishType: k[t]
 						}
 					}
@@ -1063,4 +1063,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModModeBanners.b0ae6a53400f775639e9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModModeBanners.892a9e343e629bfe11ea.js.map

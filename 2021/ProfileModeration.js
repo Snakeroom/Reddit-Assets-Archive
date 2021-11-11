@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileModeration.9cc20f63aad79a4e1ce8.js
-// Retrieved at 11/11/2021, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileModeration.718b51e6fb984406fa76.js
+// Retrieved at 11/11/2021, 4:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileModeration"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -299,7 +299,7 @@
 			n.d(t, "n", (function() {
 				return U
 			})), n.d(t, "k", (function() {
-				return V
+				return J
 			})), n.d(t, "o", (function() {
 				return X
 			})), n.d(t, "f", (function() {
@@ -409,8 +409,8 @@
 				q = x.a.wrapped(m.a, "HoverTooltip", B.a),
 				Y = x.a.div("ControlContainer", B.a),
 				Q = x.a.div("TextContainer", B.a),
-				J = x.a.div("ActionContainer", B.a),
-				V = ({
+				V = x.a.div("ActionContainer", B.a),
+				J = ({
 					className: e,
 					direction: t,
 					isCreateCommunity: n,
@@ -436,7 +436,7 @@
 				Z = x.a.wrapped(j.a, "LinkIcon", B.a),
 				$ = x.a.button("LinkButton", B.a),
 				ee = x.a.wrapped(O.a, "ArrowRight", B.a),
-				te = e => r.a.createElement(V, {
+				te = e => r.a.createElement(J, {
 					direction: e.direction,
 					disabled: e.disabled,
 					indent: e.indent,
@@ -444,7 +444,7 @@
 					last: e.last
 				}, r.a.createElement(Q, {
 					className: e.textContainerClassName
-				}, r.a.createElement(z, null, e.label, e.isRequired && r.a.createElement(A, null)), r.a.createElement(U, null, e.subtext)), r.a.createElement(J, null, e.children)),
+				}, r.a.createElement(z, null, e.label, e.isRequired && r.a.createElement(A, null)), r.a.createElement(U, null, e.subtext)), r.a.createElement(V, null, e.children)),
 				ne = x.a.div("StyledFlair", B.a),
 				ae = x.a.wrapped(ne, "SpoilerFlair", B.a),
 				re = x.a.wrapped(ne, "NSFWFlair", B.a),
@@ -460,14 +460,14 @@
 				},
 				se = e => {
 					const t = Object(s.a)();
-					return r.a.createElement(V, {
+					return r.a.createElement(J, {
 						className: e.className,
 						disabled: e.disabled,
 						indent: e.indent,
 						last: e.last
 					}, r.a.createElement(Q, null, r.a.createElement(L.a, null, r.a.createElement("label", {
 						htmlFor: t
-					}, r.a.createElement(z, null, e.label))), r.a.createElement(U, null, e.subtext)), r.a.createElement(J, null, r.a.createElement(Y, null, e.tooltip && r.a.createElement(q, {
+					}, r.a.createElement(z, null, e.label))), r.a.createElement(U, null, e.subtext)), r.a.createElement(V, null, r.a.createElement(Y, null, e.tooltip && r.a.createElement(q, {
 						tooltipContentClass: e.tooltipContentClassName,
 						text: e.tooltip
 					}), r.a.createElement(N.a, {
@@ -486,7 +486,7 @@
 				me = Object(l.c)({
 					isNightModeOn: D.X
 				}),
-				pe = Object(o.b)(me)(e => r.a.createElement(V, {
+				pe = Object(o.b)(me)(e => r.a.createElement(J, {
 					last: e.last,
 					indent: e.indent,
 					disabled: e.disabled,
@@ -502,7 +502,7 @@
 					style: {
 						color: e.ticks[e.value].color
 					}
-				}, " ", e.ticks[e.value].text + ": ", " "), " ", e.subtext)), r.a.createElement(J, {
+				}, " ", e.ticks[e.value].text + ": ", " "), " ", e.subtext)), r.a.createElement(V, {
 					style: {
 						flex: 3,
 						margin: "20px 20px 0 0"
@@ -526,14 +526,14 @@
 						color: t === e.value.toString() ? e.ticks[t].color : "#878A8C"
 					}
 				}, e.ticks[t].text))))))),
-				he = e => r.a.createElement(V, {
+				he = e => r.a.createElement(J, {
 					last: e.last,
 					indent: e.indent,
 					disabled: e.disabled
-				}, r.a.createElement(Q, null, r.a.createElement(L.a, null, r.a.createElement(z, null, e.label)), r.a.createElement(U, null, e.subtext)), r.a.createElement(J, null, r.a.createElement(Y, null, r.a.createElement(F.o, {
+				}, r.a.createElement(Q, null, r.a.createElement(L.a, null, r.a.createElement(z, null, e.label)), r.a.createElement(U, null, e.subtext)), r.a.createElement(V, null, r.a.createElement(Y, null, r.a.createElement(F.o, {
 					onClick: e.onClick
 				}, e.actionText)))),
-				fe = e => r.a.createElement(V, {
+				fe = e => r.a.createElement(J, {
 					className: e.className,
 					last: e.last,
 					indent: e.indent,
@@ -542,12 +542,12 @@
 					href: e.link,
 					onClick: e.onClick,
 					target: e.openInNewTab ? "_blank" : void 0
-				}, e.label, r.a.createElement(Z, null)), r.a.createElement(U, null, e.subtext)), r.a.createElement(J, null, r.a.createElement(K, {
+				}, e.label, r.a.createElement(Z, null)), r.a.createElement(U, null, e.subtext)), r.a.createElement(V, null, r.a.createElement(K, {
 					href: e.link,
 					onClick: e.onClick,
 					target: e.openInNewTab ? "_blank" : void 0
 				}, r.a.createElement(ee, null)))),
-				be = e => r.a.createElement(V, {
+				be = e => r.a.createElement(J, {
 					className: e.className,
 					disabled: e.disabled,
 					indent: e.indent,
@@ -557,7 +557,7 @@
 					className: Object(i.a)({
 						[B.a.NoColor]: e.color && "none" === e.color
 					})
-				}, e.label), r.a.createElement(U, null, e.subtext)), r.a.createElement(J, null, !!e.hintText && r.a.createElement("div", {
+				}, e.label), r.a.createElement(U, null, e.subtext)), r.a.createElement(V, null, !!e.hintText && r.a.createElement("div", {
 					className: B.a.ActionHintText
 				}, e.hintText), r.a.createElement($, {
 					onClick: e.onClick,
@@ -578,11 +578,11 @@
 							tooltipId: t.id
 						}))
 					}
-				}))(e => r.a.createElement(V, {
+				}))(e => r.a.createElement(J, {
 					last: e.last,
 					indent: e.indent,
 					disabled: e.disabled
-				}, r.a.createElement(Q, null, r.a.createElement(z, null, e.label), r.a.createElement(U, null, e.subtext)), r.a.createElement(J, null, (e => r.a.createElement("div", {
+				}, r.a.createElement(Q, null, r.a.createElement(z, null, e.label), r.a.createElement(U, null, e.subtext)), r.a.createElement(V, null, (e => r.a.createElement("div", {
 					className: B.a.DropdownWrapper,
 					onClick: e.openDropdown
 				}, r.a.createElement("span", {
@@ -617,7 +617,7 @@
 						{
 							items: i
 						} = s;
-					return r.a.createElement(V, {
+					return r.a.createElement(J, {
 						disabled: e
 					}, r.a.createElement(Q, null, r.a.createElement("label", {
 						htmlFor: s.id
@@ -625,7 +625,7 @@
 						className: s.labelClassname
 					}, s.label)), r.a.createElement(U, null, s.subtext)), r.a.createElement("div", {
 						className: B.a.Wrapper__LineBreak
-					}), r.a.createElement(V, {
+					}), r.a.createElement(J, {
 						last: t,
 						indent: !0,
 						disabled: e
@@ -643,13 +643,13 @@
 						value: e
 					}, t)))))
 				},
-				_e = e => r.a.createElement(V, {
+				_e = e => r.a.createElement(J, {
 					className: e.className,
 					direction: e.direction,
 					disabled: e.disabled,
 					indent: e.indent,
 					last: e.last
-				}, r.a.createElement(Q, null, r.a.createElement(z, null, e.label), r.a.createElement(U, null, e.subtext)), r.a.createElement(J, null, e.children)),
+				}, r.a.createElement(Q, null, r.a.createElement(z, null, e.label), r.a.createElement(U, null, e.subtext)), r.a.createElement(V, null, e.children)),
 				ve = e => r.a.createElement(te, {
 					isCreateCommunity: e.isCreateCommunity,
 					isRequired: e.isRequired,
@@ -949,7 +949,7 @@
 						}, () => this.forceUnsticky = !1)) : k() >= w && this.setState({
 							sticky: !0
 						})
-					}, c.J), this.forceUnsticky = !1, this.wrapperRef = null, this.state = {
+					}, c.K), this.forceUnsticky = !1, this.wrapperRef = null, this.state = {
 						sticky: !1
 					}
 				}
@@ -1716,4 +1716,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileModeration.9cc20f63aad79a4e1ce8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileModeration.718b51e6fb984406fa76.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CrisisFlow.b55542fde1c50c862a3d.js
-// Retrieved at 11/4/2021, 7:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CrisisFlow.a2642bcab29ca64bdc5c.js
+// Retrieved at 11/11/2021, 4:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CrisisFlow", "reddit-components-CrisisFlow-CrisisFlowPage"], {
 		"./src/reddit/actions/reportFlow/index.ts": function(e, s, t) {
@@ -375,7 +375,7 @@
 				e.Rule = "rule", e.SiteRule = "siteRule", e.Other = "other", e.FileComplaint = "fileComplaint", e.CrisisTextLine = "crisisTextLine"
 			}(m || (m = {}));
 			const p = (e, s) => Object(r.a)(Object(o.a)(e, [a.a]), {
-					method: n.ib.POST,
+					method: n.jb.POST,
 					endpoint: Object(l.a)(`${e.apiUrl}/api/report`),
 					data: C(s)
 				}),
@@ -408,7 +408,7 @@
 					}
 				},
 				h = (e, s, t) => Object(r.a)(Object(o.a)(e, [a.a]), {
-					method: n.ib.POST,
+					method: n.jb.POST,
 					endpoint: Object(l.a)(`${e.apiUrl}/api/report`),
 					data: w(s, t)
 				}),
@@ -629,4 +629,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CrisisFlow.b55542fde1c50c862a3d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CrisisFlow.a2642bcab29ca64bdc5c.js.map

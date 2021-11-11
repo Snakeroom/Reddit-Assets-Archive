@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/BannedUserModal.e757a46701be8dd41846.js
-// Retrieved at 11/11/2021, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/BannedUserModal.3c7f8db0913ff840f0f6.js
+// Retrieved at 11/11/2021, 4:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["BannedUserModal"], {
 		"./src/reddit/actions/inContextModeration.ts": function(e, t, n) {
@@ -50,7 +50,7 @@
 				x = n("./src/reddit/models/RichTextJson/addRTJParam.ts");
 			const _ = (e, t, n) => Object(p.a)(Object(b.a)(e, [h.a]), {
 				endpoint: Object(f.a)(Object(x.a)(`${e.apiUrl}/api/v1/${t}/banned`)),
-				method: m.ib.GET,
+				method: m.jb.GET,
 				data: n
 			});
 			var y = n("./src/reddit/helpers/normalizeUsername/index.tsx"),
@@ -311,7 +311,7 @@
 					t.username = Object(y.a)(t.username), r(Object(d.h)(n));
 					const x = await ((e, t, n) => Object(p.a)(Object(b.a)(e, [h.a]), {
 						endpoint: `${e.apiUrl}${t}api/friend`,
-						method: m.ib.POST,
+						method: m.jb.POST,
 						data: {
 							api_type: "json",
 							ban_reason: n.reason,
@@ -353,7 +353,7 @@
 					const d = r().subreddits.models[e].url,
 						i = await ((e, t, n) => Object(p.a)(Object(b.a)(e, [h.a]), {
 							endpoint: `${e.apiUrl}${t}api/unfriend`,
-							method: m.ib.POST,
+							method: m.jb.POST,
 							data: {
 								api_type: "json",
 								id: n,
@@ -1138,4 +1138,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BannedUserModal.e757a46701be8dd41846.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BannedUserModal.3c7f8db0913ff840f0f6.js.map

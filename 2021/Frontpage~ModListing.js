@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~ModListing.667ae88a540f1a7039a6.js
-// Retrieved at 11/11/2021, 10:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~ModListing.0ad9b03044d01db72bd7.js
+// Retrieved at 11/11/2021, 4:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~ModListing"], {
 		"./src/reddit/actions/focusedVerticals/index.ts": function(e, t, n) {
@@ -315,12 +315,12 @@
 				_ = g.a.wrapped(p.n, "SubmitLink", h.a),
 				S = e => {
 					switch (e) {
-						case d.V.RISING:
+						case d.W.RISING:
 							return s.fbt._("Create a new post and take all the glory", null, {
 								hk: "1NhXUe"
 							});
-						case d.V.TOP:
-						case d.V.CONTROVERSIAL:
+						case d.W.TOP:
+						case d.W.CONTROVERSIAL:
 							return null;
 						default:
 							return s.fbt._("Be the first to till this fertile land.", null, {
@@ -339,12 +339,12 @@
 						className: h.a.PrimaryText
 					}, (e => {
 						switch (e) {
-							case d.V.RISING:
+							case d.W.RISING:
 								return s.fbt._("Looks like nothing is rising fast enough in this subreddit", null, {
 									hk: "kJ3Te"
 								});
-							case d.V.TOP:
-							case d.V.CONTROVERSIAL:
+							case d.W.TOP:
+							case d.W.CONTROVERSIAL:
 								return s.fbt._("No posts were found using the {listing sort option} sort. Try changing the sort.", [s.fbt._param("listing sort option", o()(e))], {
 									hk: "48BeCW"
 								});
@@ -642,8 +642,8 @@
 				D = n.n(L),
 				R = n("./src/lib/lessComponent.tsx");
 
-			function V() {
-				return (V = Object.assign || function(e) {
+			function A() {
+				return (A = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var s in n) Object.prototype.hasOwnProperty.call(n, s) && (e[s] = n[s])
@@ -651,68 +651,68 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const B = "ListingSort--SortPicker",
-				M = Object(y.a)(R.a.wrapped(x.a, "Dropdown", D.a)),
-				A = R.a.wrapped(P.a, "ListingSortIcon", D.a),
-				z = (R.a.wrapped(E.b, "DropdownTriangle", D.a), R.a.div("Title", D.a)),
-				H = R.a.wrapped(e => r.a.createElement(O.b, V({}, e, {
+			const W = "ListingSort--SortPicker",
+				B = Object(y.a)(R.a.wrapped(x.a, "Dropdown", D.a)),
+				M = R.a.wrapped(P.a, "ListingSortIcon", D.a),
+				H = (R.a.wrapped(E.b, "DropdownTriangle", D.a), R.a.div("Title", D.a)),
+				F = R.a.wrapped(e => r.a.createElement(O.b, A({}, e, {
 					noHover: !0,
 					isSelected: !1
 				})), "Row", D.a),
-				F = ({
+				U = ({
 					disabled: e,
 					...t
-				}) => r.a.createElement("div", V({}, t, {
+				}) => r.a.createElement("div", A({}, t, {
 					className: Object(a.a)(D.a.SortWrapper, t.className, {
 						[D.a.isDisabled]: e
 					})
 				})),
-				U = R.a.div("DropdownRowDisabled", D.a),
-				W = Object(l.u)({
+				K = R.a.div("DropdownRowDisabled", D.a),
+				G = Object(l.u)({
 					isFrontpage: l.z,
 					isProfilePage: l.I,
 					pageLayer: e => e
 				}),
-				K = Object(f.c)({
+				V = Object(f.c)({
 					isAwardListingExperimentEnabled: j.a,
 					isBestSortPopularEnabled: N.a,
 					user: T.k,
-					dropdownIsOpen: (e, t) => Object(I.b)(t.dropdownId || B)(e),
+					dropdownIsOpen: (e, t) => Object(I.b)(t.dropdownId || W)(e),
 					isPopularPage: l.E
 				}),
-				G = Object(o.b)(K, (e, {
+				z = Object(o.b)(V, (e, {
 					dropdownId: t,
 					pageLayer: n
 				}) => ({
 					onOpenDropdown: () => e(Object(g.h)({
-						tooltipId: t || B
+						tooltipId: t || W
 					}))
 				}));
-			var q = R.a.wrapped(W(G(Object(d.c)(e => r.a.createElement("div", {
+			var q = R.a.wrapped(G(z(Object(d.c)(e => r.a.createElement("div", {
 					className: e.className,
 					onClick: e.onOpenDropdown
-				}, !1 !== e.showTitle && r.a.createElement(z, null, w.fbt._("Sort", null, {
+				}, !1 !== e.showTitle && r.a.createElement(H, null, w.fbt._("Sort", null, {
 					hk: "2BfINq"
-				})), r.a.createElement(F, {
+				})), r.a.createElement(U, {
 					disabled: e.disabled
-				}, e.children || r.a.createElement(H, {
+				}, e.children || r.a.createElement(F, {
 					className: e.buttonClassName,
 					displayText: Object(S.a)(e.sort),
-					id: e.dropdownId || B,
+					id: e.dropdownId || W,
 					showDropdownTriangle: !0
-				}, r.a.createElement(A, {
+				}, r.a.createElement(M, {
 					sort: e.sort
-				}))), r.a.createElement(k.a.Consumer, null, t => r.a.createElement(M, V({
+				}))), r.a.createElement(k.a.Consumer, null, t => r.a.createElement(B, A({
 					className: e.dropdownClassName,
 					isOpen: e.dropdownIsOpen,
-					tooltipId: e.dropdownId || B
+					tooltipId: e.dropdownId || W
 				}, t, {
 					renderContentsHidden: !0
-				}), e.disabled ? r.a.createElement(U, null, w.fbt._("Coming soon", null, {
+				}), e.disabled ? r.a.createElement(K, null, w.fbt._("Coming soon", null, {
 					hk: "taPqm"
 				})) : (e.sortOptions || ((e, t, n, s, r) => {
-					const o = [b.V.HOT, b.V.NEW, b.V.TOP, b.V.RISING];
-					return (e && (n || s) || t && s) && o.unshift(b.V.BEST), t && r && o.splice(3, 0, b.V.AWARDED), o
+					const o = [b.W.HOT, b.W.NEW, b.W.TOP, b.W.RISING];
+					return (e && (n || s) || t && s) && o.unshift(b.W.BEST), t && r && o.splice(3, 0, b.W.AWARDED), o
 				})(e.isFrontpage, e.isPopularPage, e.user, e.isBestSortPopularEnabled, e.isAwardListingExperimentEnabled)).map(t => r.a.createElement(O.b, {
 					className: Object(a.a)(e.rowClassName, e.sort === t ? e.rowSelectedClassName : void 0),
 					displayText: Object(S.a)(t),
@@ -729,7 +729,7 @@
 					},
 					isSelected: e.sort === t,
 					key: t
-				}, r.a.createElement(A, {
+				}, r.a.createElement(M, {
 					className: e.rowIconClassName,
 					sort: t
 				}))))))))), "ListingSort", D.a),
@@ -739,160 +739,160 @@
 					return t && t() || ""
 				},
 				J = {
-					[b.bc.AllStates]: () => w.fbt._("All", null, {
+					[b.cc.AllStates]: () => w.fbt._("All", null, {
 						hk: "3FfdRL"
 					}),
-					[b.bc.Alaska]: () => w.fbt._("alaska", null, {
+					[b.cc.Alaska]: () => w.fbt._("alaska", null, {
 						hk: "3PQz70"
 					}),
-					[b.bc.Alabama]: () => w.fbt._("alabama", null, {
+					[b.cc.Alabama]: () => w.fbt._("alabama", null, {
 						hk: "1Ain9C"
 					}),
-					[b.bc.Arkansas]: () => w.fbt._("arkansas", null, {
+					[b.cc.Arkansas]: () => w.fbt._("arkansas", null, {
 						hk: "3MSLfs"
 					}),
-					[b.bc.Arizona]: () => w.fbt._("arizona", null, {
+					[b.cc.Arizona]: () => w.fbt._("arizona", null, {
 						hk: "PjKyy"
 					}),
-					[b.bc.California]: () => w.fbt._("california", null, {
+					[b.cc.California]: () => w.fbt._("california", null, {
 						hk: "4fS2Uy"
 					}),
-					[b.bc.Colorado]: () => w.fbt._("colorado", null, {
+					[b.cc.Colorado]: () => w.fbt._("colorado", null, {
 						hk: "2FU5sm"
 					}),
-					[b.bc.Connecticut]: () => w.fbt._("connecticut", null, {
+					[b.cc.Connecticut]: () => w.fbt._("connecticut", null, {
 						hk: "3HJ97l"
 					}),
-					[b.bc.DistrictOfColumbia]: () => w.fbt._("district of columbia", null, {
+					[b.cc.DistrictOfColumbia]: () => w.fbt._("district of columbia", null, {
 						hk: "43sboQ"
 					}),
-					[b.bc.Delaware]: () => w.fbt._("delaware", null, {
+					[b.cc.Delaware]: () => w.fbt._("delaware", null, {
 						hk: "1sMYnC"
 					}),
-					[b.bc.Florida]: () => w.fbt._("florida", null, {
+					[b.cc.Florida]: () => w.fbt._("florida", null, {
 						hk: "1ahnDc"
 					}),
-					[b.bc.Georgia]: () => w.fbt._("georgia", null, {
+					[b.cc.Georgia]: () => w.fbt._("georgia", null, {
 						hk: "3O8sgW"
 					}),
-					[b.bc.Hawaii]: () => w.fbt._("hawaii", null, {
+					[b.cc.Hawaii]: () => w.fbt._("hawaii", null, {
 						hk: "11be3k"
 					}),
-					[b.bc.Iowa]: () => w.fbt._("iowa", null, {
+					[b.cc.Iowa]: () => w.fbt._("iowa", null, {
 						hk: "15vW0A"
 					}),
-					[b.bc.Idaho]: () => w.fbt._("idaho", null, {
+					[b.cc.Idaho]: () => w.fbt._("idaho", null, {
 						hk: "12whY2"
 					}),
-					[b.bc.Illinois]: () => w.fbt._("illinois", null, {
+					[b.cc.Illinois]: () => w.fbt._("illinois", null, {
 						hk: "4F6qqr"
 					}),
-					[b.bc.Indiana]: () => w.fbt._("indiana", null, {
+					[b.cc.Indiana]: () => w.fbt._("indiana", null, {
 						hk: "1Xvs3I"
 					}),
-					[b.bc.Kansas]: () => w.fbt._("kansas", null, {
+					[b.cc.Kansas]: () => w.fbt._("kansas", null, {
 						hk: "4yvtHS"
 					}),
-					[b.bc.Kentucky]: () => w.fbt._("kentucky", null, {
+					[b.cc.Kentucky]: () => w.fbt._("kentucky", null, {
 						hk: "3iqD7X"
 					}),
-					[b.bc.Louisiana]: () => w.fbt._("louisiana", null, {
+					[b.cc.Louisiana]: () => w.fbt._("louisiana", null, {
 						hk: "1pM17K"
 					}),
-					[b.bc.Massachusetts]: () => w.fbt._("massachusetts", null, {
+					[b.cc.Massachusetts]: () => w.fbt._("massachusetts", null, {
 						hk: "3Hx5EP"
 					}),
-					[b.bc.Maryland]: () => w.fbt._("maryland", null, {
+					[b.cc.Maryland]: () => w.fbt._("maryland", null, {
 						hk: "62JHL"
 					}),
-					[b.bc.Maine]: () => w.fbt._("maine", null, {
+					[b.cc.Maine]: () => w.fbt._("maine", null, {
 						hk: "2Sh6yp"
 					}),
-					[b.bc.Michigan]: () => w.fbt._("michigan", null, {
+					[b.cc.Michigan]: () => w.fbt._("michigan", null, {
 						hk: "2fnY28"
 					}),
-					[b.bc.Minnesota]: () => w.fbt._("minnesota", null, {
+					[b.cc.Minnesota]: () => w.fbt._("minnesota", null, {
 						hk: "4diMsG"
 					}),
-					[b.bc.Missouri]: () => w.fbt._("missouri", null, {
+					[b.cc.Missouri]: () => w.fbt._("missouri", null, {
 						hk: "3QuF4u"
 					}),
-					[b.bc.Mississippi]: () => w.fbt._("mississippi", null, {
+					[b.cc.Mississippi]: () => w.fbt._("mississippi", null, {
 						hk: "28v1kQ"
 					}),
-					[b.bc.Montana]: () => w.fbt._("montana", null, {
+					[b.cc.Montana]: () => w.fbt._("montana", null, {
 						hk: "20sZYn"
 					}),
-					[b.bc.NorthCarolina]: () => w.fbt._("north carolina", null, {
+					[b.cc.NorthCarolina]: () => w.fbt._("north carolina", null, {
 						hk: "BUaf7"
 					}),
-					[b.bc.NorthDakota]: () => w.fbt._("north dakota", null, {
+					[b.cc.NorthDakota]: () => w.fbt._("north dakota", null, {
 						hk: "1WRpz0"
 					}),
-					[b.bc.Nebraska]: () => w.fbt._("nebraska", null, {
+					[b.cc.Nebraska]: () => w.fbt._("nebraska", null, {
 						hk: "XUJCr"
 					}),
-					[b.bc.NewHampshire]: () => w.fbt._("new hampshire", null, {
+					[b.cc.NewHampshire]: () => w.fbt._("new hampshire", null, {
 						hk: "ga6kK"
 					}),
-					[b.bc.NewJersey]: () => w.fbt._("new jersey", null, {
+					[b.cc.NewJersey]: () => w.fbt._("new jersey", null, {
 						hk: "3Sz9QN"
 					}),
-					[b.bc.NewMexico]: () => w.fbt._("new mexico", null, {
+					[b.cc.NewMexico]: () => w.fbt._("new mexico", null, {
 						hk: "i2870"
 					}),
-					[b.bc.Nevada]: () => w.fbt._("nevada", null, {
+					[b.cc.Nevada]: () => w.fbt._("nevada", null, {
 						hk: "2DsBxU"
 					}),
-					[b.bc.NewYork]: () => w.fbt._("new york", null, {
+					[b.cc.NewYork]: () => w.fbt._("new york", null, {
 						hk: "2wKULo"
 					}),
-					[b.bc.Ohio]: () => w.fbt._("ohio", null, {
+					[b.cc.Ohio]: () => w.fbt._("ohio", null, {
 						hk: "1KDnKA"
 					}),
-					[b.bc.Oklahoma]: () => w.fbt._("oklahoma", null, {
+					[b.cc.Oklahoma]: () => w.fbt._("oklahoma", null, {
 						hk: "2P0Ita"
 					}),
-					[b.bc.Oregon]: () => w.fbt._("oregon", null, {
+					[b.cc.Oregon]: () => w.fbt._("oregon", null, {
 						hk: "3CqdY4"
 					}),
-					[b.bc.Pennsylvania]: () => w.fbt._("pennsylvania", null, {
+					[b.cc.Pennsylvania]: () => w.fbt._("pennsylvania", null, {
 						hk: "2skMK"
 					}),
-					[b.bc.RhodeIsland]: () => w.fbt._("rhode island", null, {
+					[b.cc.RhodeIsland]: () => w.fbt._("rhode island", null, {
 						hk: "120MAU"
 					}),
-					[b.bc.SouthCarolina]: () => w.fbt._("south carolina", null, {
+					[b.cc.SouthCarolina]: () => w.fbt._("south carolina", null, {
 						hk: "3JyeG9"
 					}),
-					[b.bc.SouthDakota]: () => w.fbt._("south dakota", null, {
+					[b.cc.SouthDakota]: () => w.fbt._("south dakota", null, {
 						hk: "4to42L"
 					}),
-					[b.bc.Tennessee]: () => w.fbt._("tennessee", null, {
+					[b.cc.Tennessee]: () => w.fbt._("tennessee", null, {
 						hk: "gHo1c"
 					}),
-					[b.bc.Texas]: () => w.fbt._("texas", null, {
+					[b.cc.Texas]: () => w.fbt._("texas", null, {
 						hk: "3dgz4M"
 					}),
-					[b.bc.Utah]: () => w.fbt._("utah", null, {
+					[b.cc.Utah]: () => w.fbt._("utah", null, {
 						hk: "22zf2i"
 					}),
-					[b.bc.Virginia]: () => w.fbt._("virginia", null, {
+					[b.cc.Virginia]: () => w.fbt._("virginia", null, {
 						hk: "1dvXBl"
 					}),
-					[b.bc.Vermont]: () => w.fbt._("vermont", null, {
+					[b.cc.Vermont]: () => w.fbt._("vermont", null, {
 						hk: "1Cdmbu"
 					}),
-					[b.bc.Washington]: () => w.fbt._("washington", null, {
+					[b.cc.Washington]: () => w.fbt._("washington", null, {
 						hk: "hhztG"
 					}),
-					[b.bc.Wisconsin]: () => w.fbt._("wisconsin", null, {
+					[b.cc.Wisconsin]: () => w.fbt._("wisconsin", null, {
 						hk: "3SOyMZ"
 					}),
-					[b.bc.WestVirginia]: () => w.fbt._("west virginia", null, {
+					[b.cc.WestVirginia]: () => w.fbt._("west virginia", null, {
 						hk: "1jIKYD"
 					}),
-					[b.bc.Wyoming]: () => w.fbt._("wyoming", null, {
+					[b.cc.Wyoming]: () => w.fbt._("wyoming", null, {
 						hk: "1QaJzt"
 					})
 				};
@@ -911,13 +911,13 @@
 			const ee = R.a.wrapped(x.a, "_Dropdown", Z.a),
 				te = Object(y.a)(ee),
 				ne = e => {
-					return e.indexOf("_") > 0 && re(e) === b.z.UnitedStates
+					return e.indexOf("_") > 0 && re(e) === b.A.UnitedStates
 				},
 				se = e => {
 					if (ne(e)) {
 						return e.split("_")[1]
 					}
-					return b.bc.AllStates
+					return b.cc.AllStates
 				},
 				re = e => {
 					if (e && e.indexOf("_") > 0) {
@@ -939,18 +939,18 @@
 						tooltipId: "StateSort--StateSortPicker"
 					})),
 					onClickLink: (t, n) => {
-						e(Object(h.b)(t)), e(Object(c.v)(b.z.UnitedStates + "_" + n))
+						e(Object(h.b)(t)), e(Object(c.v)(b.A.UnitedStates + "_" + n))
 					}
 				}));
 			var de = R.a.wrapped(ae(ce(e => {
-				const t = `${e.baseUrl}?${Y.h}=${b.z.UnitedStates}`;
+				const t = `${e.baseUrl}?${Y.h}=${b.A.UnitedStates}`;
 				return r.a.createElement("div", {
 					className: e.className,
 					onClick: e.onOpenDropdown
-				}, r.a.createElement(F, {
+				}, r.a.createElement(U, {
 					className: e.wrapperClassName,
 					disabled: e.disabled
-				}, r.a.createElement(H, {
+				}, r.a.createElement(F, {
 					className: e.buttonClassName,
 					displayText: e.showStateAbbreviations && e.sort ? e.sort : Q(e.sort),
 					id: "StateSort--StateSortPicker",
@@ -961,10 +961,10 @@
 					tooltipId: "StateSort--StateSortPicker"
 				}, n, {
 					renderContentsHidden: !0
-				}), Object.keys(b.bc).map(n => {
-					const s = b.bc[n];
+				}), Object.keys(b.cc).map(n => {
+					const s = b.cc[n];
 					return r.a.createElement("div", {
-						onClick: () => e.onClickLink((e => e === b.bc.AllStates ? t : `${t}_${e}`)(s), oe(s))
+						onClick: () => e.onClickLink((e => e === b.cc.AllStates ? t : `${t}_${e}`)(s), oe(s))
 					}, r.a.createElement(O.b, {
 						className: Object(a.a)(e.rowClassName, e.sort === s ? e.rowSelectedClassName : void 0),
 						displayText: Q(s),
@@ -973,112 +973,112 @@
 				}))))
 			})), "Component", Z.a);
 			const le = {
-				[b.z.Everywhere]: () => w.fbt._("Everywhere", null, {
+				[b.A.Everywhere]: () => w.fbt._("Everywhere", null, {
 					hk: "3ysAHX"
 				}),
-				[b.z.UnitedStates]: () => w.fbt._("United States", null, {
+				[b.A.UnitedStates]: () => w.fbt._("United States", null, {
 					hk: "qrsat"
 				}),
-				[b.z.Argentina]: () => w.fbt._("Argentina", null, {
+				[b.A.Argentina]: () => w.fbt._("Argentina", null, {
 					hk: "1tWd87"
 				}),
-				[b.z.Australia]: () => w.fbt._("Australia", null, {
+				[b.A.Australia]: () => w.fbt._("Australia", null, {
 					hk: "2c0yTh"
 				}),
-				[b.z.Bulgaria]: () => w.fbt._("Bulgaria", null, {
+				[b.A.Bulgaria]: () => w.fbt._("Bulgaria", null, {
 					hk: "2mbkzD"
 				}),
-				[b.z.Canada]: () => w.fbt._("Canada", null, {
+				[b.A.Canada]: () => w.fbt._("Canada", null, {
 					hk: "1bnYIf"
 				}),
-				[b.z.Chile]: () => w.fbt._("Chile", null, {
+				[b.A.Chile]: () => w.fbt._("Chile", null, {
 					hk: "2eNYaZ"
 				}),
-				[b.z.Colombia]: () => w.fbt._("Colombia", null, {
+				[b.A.Colombia]: () => w.fbt._("Colombia", null, {
 					hk: "2sw6kC"
 				}),
-				[b.z.Croatia]: () => w.fbt._("Croatia", null, {
+				[b.A.Croatia]: () => w.fbt._("Croatia", null, {
 					hk: "4vRKYu"
 				}),
-				[b.z.CzechRepublic]: () => w.fbt._("Czech Republic", null, {
+				[b.A.CzechRepublic]: () => w.fbt._("Czech Republic", null, {
 					hk: "21xzwE"
 				}),
-				[b.z.Finland]: () => w.fbt._("Finland", null, {
+				[b.A.Finland]: () => w.fbt._("Finland", null, {
 					hk: "jmDeD"
 				}),
-				[b.z.France]: () => w.fbt._("France", null, {
+				[b.A.France]: () => w.fbt._("France", null, {
 					hk: "1fX2Y8"
 				}),
-				[b.z.Germany]: () => w.fbt._("Germany", null, {
+				[b.A.Germany]: () => w.fbt._("Germany", null, {
 					hk: "2mADuB"
 				}),
-				[b.z.Greece]: () => w.fbt._("Greece", null, {
+				[b.A.Greece]: () => w.fbt._("Greece", null, {
 					hk: "UUFTD"
 				}),
-				[b.z.Hungary]: () => w.fbt._("Hungary", null, {
+				[b.A.Hungary]: () => w.fbt._("Hungary", null, {
 					hk: "4tz4jk"
 				}),
-				[b.z.Iceland]: () => w.fbt._("Iceland", null, {
+				[b.A.Iceland]: () => w.fbt._("Iceland", null, {
 					hk: "4mwr9S"
 				}),
-				[b.z.India]: () => w.fbt._("India", null, {
+				[b.A.India]: () => w.fbt._("India", null, {
 					hk: "omZ5C"
 				}),
-				[b.z.Ireland]: () => w.fbt._("Ireland", null, {
+				[b.A.Ireland]: () => w.fbt._("Ireland", null, {
 					hk: "3rG4DM"
 				}),
-				[b.z.Italy]: () => w.fbt._("Italy", null, {
+				[b.A.Italy]: () => w.fbt._("Italy", null, {
 					hk: "3EvGjk"
 				}),
-				[b.z.Japan]: () => w.fbt._("Japan", null, {
+				[b.A.Japan]: () => w.fbt._("Japan", null, {
 					hk: "3EAE8v"
 				}),
-				[b.z.Malaysia]: () => w.fbt._("Malaysia", null, {
+				[b.A.Malaysia]: () => w.fbt._("Malaysia", null, {
 					hk: "MgsVM"
 				}),
-				[b.z.Mexico]: () => w.fbt._("Mexico", null, {
+				[b.A.Mexico]: () => w.fbt._("Mexico", null, {
 					hk: "4ibMpW"
 				}),
-				[b.z.NewZealand]: () => w.fbt._("New Zealand", null, {
+				[b.A.NewZealand]: () => w.fbt._("New Zealand", null, {
 					hk: "3LwpKe"
 				}),
-				[b.z.Philippines]: () => w.fbt._("Philippines", null, {
+				[b.A.Philippines]: () => w.fbt._("Philippines", null, {
 					hk: "jokzr"
 				}),
-				[b.z.Poland]: () => w.fbt._("Poland", null, {
+				[b.A.Poland]: () => w.fbt._("Poland", null, {
 					hk: "2v19X3"
 				}),
-				[b.z.Portugal]: () => w.fbt._("Portugal", null, {
+				[b.A.Portugal]: () => w.fbt._("Portugal", null, {
 					hk: "2HNYp5"
 				}),
-				[b.z.PuertoRico]: () => w.fbt._("Puerto Rico", null, {
+				[b.A.PuertoRico]: () => w.fbt._("Puerto Rico", null, {
 					hk: "22QgWG"
 				}),
-				[b.z.Romania]: () => w.fbt._("Romania", null, {
+				[b.A.Romania]: () => w.fbt._("Romania", null, {
 					hk: "5HuLT"
 				}),
-				[b.z.Serbia]: () => w.fbt._("Serbia", null, {
+				[b.A.Serbia]: () => w.fbt._("Serbia", null, {
 					hk: "3ly2Z0"
 				}),
-				[b.z.Singapore]: () => w.fbt._("Singapore", null, {
+				[b.A.Singapore]: () => w.fbt._("Singapore", null, {
 					hk: "3qEBqp"
 				}),
-				[b.z.Spain]: () => w.fbt._("Spain", null, {
+				[b.A.Spain]: () => w.fbt._("Spain", null, {
 					hk: "44RpFE"
 				}),
-				[b.z.Sweden]: () => w.fbt._("Sweden", null, {
+				[b.A.Sweden]: () => w.fbt._("Sweden", null, {
 					hk: "A5nWO"
 				}),
-				[b.z.Taiwan]: () => w.fbt._("Taiwan", null, {
+				[b.A.Taiwan]: () => w.fbt._("Taiwan", null, {
 					hk: "IHujb"
 				}),
-				[b.z.Thailand]: () => w.fbt._("Thailand", null, {
+				[b.A.Thailand]: () => w.fbt._("Thailand", null, {
 					hk: "1c8zJr"
 				}),
-				[b.z.Turkey]: () => w.fbt._("Turkey", null, {
+				[b.A.Turkey]: () => w.fbt._("Turkey", null, {
 					hk: "11Xk7x"
 				}),
-				[b.z.UnitedKingdom]: () => w.fbt._("United Kingdom", null, {
+				[b.A.UnitedKingdom]: () => w.fbt._("United Kingdom", null, {
 					hk: "rs1fl"
 				})
 			};
@@ -1118,12 +1118,12 @@
 					return r.a.createElement(r.a.Fragment, null, r.a.createElement("div", {
 						className: Object(a.a)(pe.a.countrySort, e.className),
 						onClick: () => e.dropdownIsOpen ? e.onCloseDropdown(be) : e.onOpenDropdown(be)
-					}, r.a.createElement(F, {
+					}, r.a.createElement(U, {
 						className: e.wrapperClassName,
 						disabled: e.disabled
-					}, r.a.createElement(H, {
+					}, r.a.createElement(F, {
 						className: e.buttonClassName,
-						displayText: (() => t in le ? le[t]() : le[b.z.Everywhere]())(),
+						displayText: (() => t in le ? le[t]() : le[b.A.Everywhere]())(),
 						id: be,
 						showDropdownTriangle: !0
 					})), r.a.createElement(k.a.Consumer, null, n => r.a.createElement(te, me({
@@ -1132,8 +1132,8 @@
 						tooltipId: be
 					}, n, {
 						renderContentsHidden: !0
-					}), Object.keys(b.z).map(n => {
-						const o = b.z[n];
+					}), Object.keys(b.A).map(n => {
+						const o = b.A[n];
 						return r.a.createElement("div", {
 							key: o,
 							onClick: () => e.onClickLink(`${s}${oe(o)}`, o)
@@ -1142,7 +1142,7 @@
 							displayText: le[o](),
 							isSelected: t === o
 						}))
-					})))), t === b.z.UnitedStates && r.a.createElement(de, {
+					})))), t === b.A.UnitedStates && r.a.createElement(de, {
 						baseUrl: e.baseUrl,
 						buttonClassName: e.buttonClassName,
 						className: e.stateSortClassName,
@@ -1186,10 +1186,10 @@
 				}))(Object(d.c)(e => r.a.createElement(ve, {
 					className: e.className,
 					onClick: e.onOpenDropdown
-				}, r.a.createElement(F, {
+				}, r.a.createElement(U, {
 					className: e.wrapperClassName,
 					disabled: !1
-				}, r.a.createElement(H, {
+				}, r.a.createElement(F, {
 					className: e.buttonClassName,
 					displayText: Object(S.b)(e.timeSort),
 					id: "TimeSort--SortPicker",
@@ -1198,7 +1198,7 @@
 					className: e.dropdownClassName,
 					isOpen: e.dropdownIsOpen,
 					tooltipId: "TimeSort--SortPicker"
-				}, t), [b.ec.HOUR, b.ec.DAY, b.ec.WEEK, b.ec.MONTH, b.ec.YEAR, b.ec.ALL].map(t => r.a.createElement(O.b, {
+				}, t), [b.fc.HOUR, b.fc.DAY, b.fc.WEEK, b.fc.MONTH, b.fc.YEAR, b.fc.ALL].map(t => r.a.createElement(O.b, {
 					className: Object(a.a)(e.rowClassName, e.timeSort === t ? e.rowSelectedClassName : void 0),
 					key: `time_sort_${t}`,
 					displayText: Object(S.b)(t),
@@ -1230,29 +1230,29 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const Ve = new Set([b.V.CONTROVERSIAL, b.V.TOP]),
-				Be = new Set([b.V.CONTROVERSIAL, b.V.RISING]),
-				Me = new Set([b.V.CONTROVERSIAL]),
-				Ae = "ListingSort--Overflow",
-				ze = Object(l.u)({
+			const Ae = new Set([b.W.CONTROVERSIAL, b.W.TOP]),
+				We = new Set([b.W.CONTROVERSIAL, b.W.RISING]),
+				Be = new Set([b.W.CONTROVERSIAL]),
+				Me = "ListingSort--Overflow",
+				He = Object(l.u)({
 					isFrontpage: l.z,
 					isProfilePage: l.I,
 					pageLayer: e => e
 				}),
-				He = Object(f.a)((e, t) => t.sortOptions, (e, t) => t.isFrontpage, N.a, T.k, l.E, j.a, Pe.i, (e, t, n, s, r, o, a) => {
+				Fe = Object(f.a)((e, t) => t.sortOptions, (e, t) => t.isFrontpage, N.a, T.k, l.E, j.a, Pe.i, (e, t, n, s, r, o, a) => {
 					if (e) return {
 						isPopularPage: r,
 						sortOptions: e,
 						locale: a
 					};
-					const i = [b.V.HOT, b.V.NEW, b.V.TOP, b.V.RISING];
-					return (t && (s || n) || r && n) && i.unshift(b.V.BEST), r && o && i.splice(3, 0, b.V.AWARDED), {
+					const i = [b.W.HOT, b.W.NEW, b.W.TOP, b.W.RISING];
+					return (t && (s || n) || r && n) && i.unshift(b.W.BEST), r && o && i.splice(3, 0, b.W.AWARDED), {
 						isPopularPage: r,
 						sortOptions: i,
 						locale: a
 					}
 				});
-			class Fe extends r.a.Component {
+			class Ue extends r.a.Component {
 				constructor() {
 					super(...arguments), this.changeSort = e => {
 						this.props.onChange(e), this.props.sendEvent(Object(C.a)(e))
@@ -1272,7 +1272,7 @@
 							className: Object(a.a)(De.a.SortLink, e === t && De.a.selected),
 							kind: Ie.b.InternalLink,
 							priority: Ie.c.Plain,
-							Icon: n => r.a.createElement(A, Re({}, n, {
+							Icon: n => r.a.createElement(M, Re({}, n, {
 								className: Object(a.a)(De.a.SortIcon, n.className),
 								sort: e,
 								isFilled: e === t
@@ -1293,7 +1293,7 @@
 							geopopularSort: n,
 							isPopularPage: s,
 							sort: o
-						} = this.props, a = s && !!n && e === b.V.HOT && o === b.V.HOT;
+						} = this.props, a = s && !!n && e === b.W.HOT && o === b.W.HOT;
 						return r.a.createElement(r.a.Fragment, {
 							key: e
 						}, this.renderSortButton(e), a && r.a.createElement(ge, {
@@ -1317,16 +1317,16 @@
 						isPopularPage: n,
 						locale: s
 					} = this.props;
-					return !s.startsWith("en") && (n ? e === b.V.AWARDED && (t === b.V.HOT || t === b.V.TOP) : e === b.V.BEST && t === b.V.TOP)
+					return !s.startsWith("en") && (n ? e === b.W.AWARDED && (t === b.W.HOT || t === b.W.TOP) : e === b.W.BEST && t === b.W.TOP)
 				}
 				isWideSortCurrentSelected(e) {
 					const {
 						sort: t
-					} = this.props, n = new Set([b.V.TOP, b.V.NEW]);
-					return Me.has(t) && n.has(e)
+					} = this.props, n = new Set([b.W.TOP, b.W.NEW]);
+					return Be.has(t) && n.has(e)
 				}
 				isOverflowSort(e) {
-					return Be.has(e) || this.isLocaleDependentOverflowSort(e) || this.isWideSortCurrentSelected(e)
+					return We.has(e) || this.isLocaleDependentOverflowSort(e) || this.isWideSortCurrentSelected(e)
 				}
 				render() {
 					const {
@@ -1336,7 +1336,7 @@
 						sort: s,
 						sortOptions: o,
 						timeSort: i
-					} = this.props, c = !t && Ve.has(s), d = Be.has(s), l = o.filter(e => !this.isOverflowSort(e)), u = o.filter(e => this.isOverflowSort(e) && e !== s);
+					} = this.props, c = !t && Ae.has(s), d = We.has(s), l = o.filter(e => !this.isOverflowSort(e)), u = o.filter(e => this.isOverflowSort(e) && e !== s);
 					return r.a.createElement(r.a.Fragment, null, r.a.createElement(q, Re({}, this.props, {
 						buttonClassName: De.a.DropdownButton,
 						className: Object(a.a)(De.a.SortDropdown, e),
@@ -1355,12 +1355,12 @@
 						onChange: n,
 						rowClassName: De.a.DropdownRow,
 						rowSelectedClassName: De.a.DropdownRowSelected,
-						timeSort: i || b.fc,
+						timeSort: i || b.gc,
 						wrapperClassName: De.a.DropdownSortWrapper
 					}), u.length > 0 && r.a.createElement(q, Re({}, this.props, {
 						className: Object(a.a)(De.a.SortOverflow, e),
 						dropdownClassName: De.a.Dropdown,
-						dropdownId: Ae,
+						dropdownId: Me,
 						rowClassName: De.a.DropdownRow,
 						rowIconClassName: De.a.DropdownRowIcon,
 						rowSelectedClassName: De.a.DropdownRowSelected,
@@ -1368,16 +1368,16 @@
 						sortOptions: u
 					}), r.a.createElement("button", {
 						className: De.a.SortOverflowButton,
-						id: Ae
+						id: Me
 					}, r.a.createElement(Te.a, {
 						name: "overflow_horizontal"
 					}))))
 				}
 			}
-			var Ue = ze(Object(o.b)(He)(Object(d.c)(Fe))),
-				We = n("./src/reddit/components/GeneralCleanup/SortViewBar/index.m.less"),
-				Ke = n.n(We);
-			const Ge = Object(l.u)({
+			var Ke = He(Object(o.b)(Fe)(Object(d.c)(Ue))),
+				Ge = n("./src/reddit/components/GeneralCleanup/SortViewBar/index.m.less"),
+				Ve = n.n(Ge);
+			const ze = Object(l.u)({
 					isProfilePage: l.I,
 					pageLayer: e => e
 				}),
@@ -1422,10 +1422,10 @@
 						updateSortPreference: u
 					} = this.props;
 					return r.a.createElement("div", {
-						className: Object(a.a)(Ke.a.Container, t),
+						className: Object(a.a)(Ve.a.Container, t),
 						onBlur: this.blurListingBroadcast,
 						onFocus: this.focusListingBroadcast
-					}, r.a.createElement(Ue, {
+					}, r.a.createElement(Ke, {
 						baseUrl: e,
 						disabled: s,
 						geopopularSort: n,
@@ -1435,12 +1435,12 @@
 						sortOptions: c,
 						timeSort: l
 					}), !o && r.a.createElement(p.a, {
-						className: Ke.a.LayoutSwitch,
+						className: Ve.a.LayoutSwitch,
 						subredditId: d
 					}))
 				}
 			}
-			t.a = Ge(qe(Object(d.c)(Ye)))
+			t.a = ze(qe(Object(d.c)(Ye)))
 		},
 		"./src/reddit/components/ListingPostList/index.tsx": function(e, t, n) {
 			"use strict";
@@ -1461,13 +1461,13 @@
 				c = n("./src/reddit/controls/Dropdown/index.m.less"),
 				d = n.n(c);
 			const l = {
-				[a.V.BEST]: "best",
-				[a.V.HOT]: "hot",
-				[a.V.NEW]: "new",
-				[a.V.CONTROVERSIAL]: "controversial",
-				[a.V.TOP]: "top",
-				[a.V.RISING]: "rising",
-				[a.V.AWARDED]: "award"
+				[a.W.BEST]: "best",
+				[a.W.HOT]: "hot",
+				[a.W.NEW]: "new",
+				[a.W.CONTROVERSIAL]: "controversial",
+				[a.W.TOP]: "top",
+				[a.W.RISING]: "rising",
+				[a.W.AWARDED]: "award"
 			};
 
 			function u({
@@ -1866,7 +1866,7 @@
 						this.windowHeight = window.innerHeight
 					}, this.handleResize = o()(() => {
 						this.updateMeasurements(), this.updateState()
-					}, c.J), this.setWrapperRef = e => this.containerEl = e || null, this.state = {
+					}, c.K), this.setWrapperRef = e => this.containerEl = e || null, this.state = {
 						isAdSticky: !0,
 						isFooterSticky: !0
 					}
@@ -2170,25 +2170,25 @@
 			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
 				r = n("./src/lib/constants/index.ts");
 			const o = {
-					[r.V.BEST]: () => s.fbt._("Best", null, {
+					[r.W.BEST]: () => s.fbt._("Best", null, {
 						hk: "dpKzI"
 					}),
-					[r.V.HOT]: () => s.fbt._("Hot", null, {
+					[r.W.HOT]: () => s.fbt._("Hot", null, {
 						hk: "Et75P"
 					}),
-					[r.V.NEW]: () => s.fbt._("New", null, {
+					[r.W.NEW]: () => s.fbt._("New", null, {
 						hk: "CDmNl"
 					}),
-					[r.V.CONTROVERSIAL]: () => s.fbt._("Controversial", null, {
+					[r.W.CONTROVERSIAL]: () => s.fbt._("Controversial", null, {
 						hk: "4dqPOJ"
 					}),
-					[r.V.RISING]: () => s.fbt._("Rising", null, {
+					[r.W.RISING]: () => s.fbt._("Rising", null, {
 						hk: "4gCzg6"
 					}),
-					[r.V.TOP]: () => s.fbt._("Top", null, {
+					[r.W.TOP]: () => s.fbt._("Top", null, {
 						hk: "40Uy9p"
 					}),
-					[r.V.AWARDED]: () => s.fbt._("Awarded", null, {
+					[r.W.AWARDED]: () => s.fbt._("Awarded", null, {
 						hk: "1B7nSa"
 					})
 				},
@@ -2197,22 +2197,22 @@
 					return t && t() || ""
 				},
 				i = {
-					[r.ec.HOUR]: () => s.fbt._("Now", null, {
+					[r.fc.HOUR]: () => s.fbt._("Now", null, {
 						hk: "ZmhY"
 					}),
-					[r.ec.DAY]: () => s.fbt._("Today", null, {
+					[r.fc.DAY]: () => s.fbt._("Today", null, {
 						hk: "40Ugu1"
 					}),
-					[r.ec.WEEK]: () => s.fbt._("This Week", null, {
+					[r.fc.WEEK]: () => s.fbt._("This Week", null, {
 						hk: "14tmoK"
 					}),
-					[r.ec.MONTH]: () => s.fbt._("This Month", null, {
+					[r.fc.MONTH]: () => s.fbt._("This Month", null, {
 						hk: "34dbM3"
 					}),
-					[r.ec.YEAR]: () => s.fbt._("This Year", null, {
+					[r.fc.YEAR]: () => s.fbt._("This Year", null, {
 						hk: "14RJsa"
 					}),
-					[r.ec.ALL]: () => s.fbt._("All Time", null, {
+					[r.fc.ALL]: () => s.fbt._("All Time", null, {
 						hk: "3qt6Ct"
 					})
 				},
@@ -2672,15 +2672,15 @@
 			const a = e => {
 					const t = Object(r.c)(e, {
 						experimentEligibilitySelector: o.K,
-						experimentName: s.yc
+						experimentName: s.Ac
 					});
-					return !(!t || Object(s.uf)(t))
+					return !(!t || Object(s.wf)(t))
 				},
 				i = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: o.K,
-						experimentName: s.yc
-					}) === s.cd.ListingEnabled
+						experimentName: s.Ac
+					}) === s.ed.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, n) {
@@ -2803,4 +2803,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing.667ae88a540f1a7039a6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing.0ad9b03044d01db72bd7.js.map

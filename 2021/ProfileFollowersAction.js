@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileFollowersAction.b14f81634f282a1e5f7d.js
-// Retrieved at 11/4/2021, 4:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileFollowersAction.11a48fb86d20f71754a8.js
+// Retrieved at 11/11/2021, 4:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileFollowersAction"], {
 		"./src/lib/makeOverviewConversationsItemKey/index.ts": function(e, t, s) {
@@ -154,7 +154,7 @@
 					}));
 					const m = p.name;
 					if ((await Object(a.c)(d(), {
-							subredditNames: [`${i.gc}${p.name}`],
+							subredditNames: [`${i.hc}${p.name}`],
 							subscribe: t
 						})).ok) {
 						s(k({
@@ -791,10 +791,10 @@
 						},
 						x = [t(k.d(R))];
 					if (_ === c.e[c.g.Compact]) {
-						const o = Object(S.a)(R, a.sb, y, e.queryParams);
+						const o = Object(S.a)(R, a.tb, y, e.queryParams);
 						s().pages.profileOverview.chrono.ids[o] ? C = !0 : x.push(t(Se(o, R, T, !0)))
 					} else {
-						const o = Object(S.a)(R, a.tb, y, e.queryParams);
+						const o = Object(S.a)(R, a.ub, y, e.queryParams);
 						s().listings.postOrder.ids[o] && !s().listings.postOrder.api.error[o] ? C = !0 : x.push(t(_e(o, R, T, !0)))
 					}
 					if (x.push(t(Object(r.b)())), await Promise.all(x), C) return;
@@ -832,7 +832,7 @@
 					data: s,
 					endpoint: Object(d.a)(Object(i.a)(Object(l.a)(Object(a.a)(`${o.a.gatewayUrl}/desktopapi/v1/user/${t}/conversations`)))),
 					traceRequestName: "get_profile_conversations",
-					method: r.ib.GET
+					method: r.jb.GET
 				}).then(e => "pinned" in e.body ? e : "postIds" in e.body ? {
 					...e,
 					body: {
@@ -843,7 +843,7 @@
 				u = (e, t, s) => Object(n.a)(e, {
 					data: s,
 					endpoint: Object(d.a)(Object(i.a)(Object(a.a)(`${o.a.gatewayUrl}/desktopapi/v1/user/${t}/overview`))),
-					method: r.ib.GET
+					method: r.jb.GET
 				}).then(e => "pinned" in e.body ? e : "overviewIds" in e.body ? {
 					...e,
 					body: {
@@ -1788,4 +1788,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersAction.b14f81634f282a1e5f7d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersAction.11a48fb86d20f71754a8.js.map

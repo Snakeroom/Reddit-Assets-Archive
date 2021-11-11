@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/editCollectionModal.3f2d11a7e0d00b2b94b9.js
-// Retrieved at 11/11/2021, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/editCollectionModal.dc90b86b5cd172da102c.js
+// Retrieved at 11/11/2021, 4:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["editCollectionModal"], {
 		"./node_modules/lodash/union.js": function(e, t, n) {
@@ -24,9 +24,9 @@
 				showDay: t,
 				useUtc: n,
 				shortMonths: o,
-				locale: r = s.C
+				locale: r = s.D
 			} = {}) {
-				const i = new Date(e * s.Qb);
+				const i = new Date(e * s.Rb);
 				return a.a ? new Intl.DateTimeFormat(r, {
 					month: o ? "short" : "long",
 					day: t ? "numeric" : void 0,
@@ -38,7 +38,7 @@
 		"./src/lib/humanizeUTCDate/index.tsx": function(e, t, n) {
 			"use strict";
 			var s = n("./src/lib/constants/index.ts");
-			t.a = (e, t = s.C) => {
+			t.a = (e, t = s.D) => {
 				return new Date(1e3 * e).toLocaleString(t, {
 					weekday: "short",
 					month: "short",
@@ -187,11 +187,11 @@
 				y = n("./src/reddit/layout/row/Inline/index.tsx"),
 				S = n("./src/reddit/models/PostCollection/index.ts"),
 				L = n("./src/reddit/selectors/postCollection.ts"),
-				O = n("./src/reddit/components/EditCollectionModal/index.m.less"),
-				T = n.n(O);
+				D = n("./src/reddit/components/EditCollectionModal/index.m.less"),
+				O = n.n(D);
 
-			function P() {
-				return (P = Object.assign || function(e) {
+			function T() {
+				return (T = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var s in n) Object.prototype.hasOwnProperty.call(n, s) && (e[s] = n[s])
@@ -199,16 +199,16 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const N = 10,
-				D = ({
+			const P = 10,
+				N = ({
 					label: e,
 					...t
 				}) => r.a.createElement("div", {
-					className: T.a.fieldWrapper
+					className: O.a.fieldWrapper
 				}, r.a.createElement("label", {
-					className: T.a.Label
-				}, e), r.a.createElement(h.i, P({
-					className: T.a.textArea,
+					className: O.a.Label
+				}, e), r.a.createElement(h.i, T({
+					className: O.a.textArea,
 					disabled: !1
 				}, t)), r.a.createElement(u.a, {
 					maxChars: t.maxLength,
@@ -218,9 +218,9 @@
 					onLayoutChange: e,
 					displayLayout: t
 				}) => r.a.createElement("div", {
-					className: T.a.layoutTypeWrapper
+					className: O.a.layoutTypeWrapper
 				}, r.a.createElement("div", {
-					className: T.a.layoutTypeTitle
+					className: O.a.layoutTypeTitle
 				}, s.fbt._("Layout type", null, {
 					hk: "39DMVQ"
 				})), r.a.createElement(f.a, {
@@ -228,33 +228,33 @@
 					onChange: e,
 					value: t
 				}, r.a.createElement(C.a, {
-					className: T.a.layoutOptionWrapper,
+					className: O.a.layoutOptionWrapper,
 					key: S.a.TIMELINE,
 					showButton: !0,
 					value: S.a.TIMELINE
 				}, r.a.createElement("div", {
-					className: T.a.optionTextWrapper
+					className: O.a.optionTextWrapper
 				}, r.a.createElement("div", {
-					className: T.a.layoutTitle
+					className: O.a.layoutTitle
 				}, s.fbt._("Standard", null, {
 					hk: "4opAgU"
 				})), r.a.createElement("div", {
-					className: T.a.layoutSubTitle
+					className: O.a.layoutSubTitle
 				}, s.fbt._("Best for event or discussion collections", null, {
 					hk: "3v88sS"
 				})))), r.a.createElement(C.a, {
-					className: T.a.layoutOptionWrapper,
+					className: O.a.layoutOptionWrapper,
 					key: S.a.GALLERY,
 					showButton: !0,
 					value: S.a.GALLERY
 				}, r.a.createElement("div", {
-					className: T.a.optionTextWrapper
+					className: O.a.optionTextWrapper
 				}, r.a.createElement("div", {
-					className: T.a.layoutTitle
+					className: O.a.layoutTitle
 				}, s.fbt._("Gallery", null, {
 					hk: "sR5xJ"
 				})), r.a.createElement("div", {
-					className: T.a.layoutSubTitle
+					className: O.a.layoutSubTitle
 				}, s.fbt._("Best for image heavy or meme collections", null, {
 					hk: "4Btcmq"
 				})))))),
@@ -266,8 +266,8 @@
 					description: o,
 					displayLayout: i
 				}) => r.a.createElement("div", {
-					className: T.a.editCollectionWrapper
-				}, r.a.createElement(D, {
+					className: O.a.editCollectionWrapper
+				}, r.a.createElement(N, {
 					label: s.fbt._("Title", null, {
 						hk: "1cdKLH"
 					}),
@@ -278,7 +278,7 @@
 					maxLength: v.e,
 					rows: 1,
 					value: a
-				}), r.a.createElement(D, {
+				}), r.a.createElement(N, {
 					label: s.fbt._("Description", null, {
 						hk: "iNZtt"
 					}),
@@ -294,8 +294,8 @@
 					displayLayout: i
 				})),
 				F = e => r.a.createElement("button", {
-					className: Object(a.a)(e.className, T.a.Tab, {
-						[T.a.selected]: e.active
+					className: Object(a.a)(e.className, O.a.Tab, {
+						[O.a.selected]: e.active
 					}),
 					onClick: e.onClick
 				}, e.children),
@@ -397,12 +397,12 @@
 					if (!o) return;
 					const i = o[e];
 					return i && r.a.createElement(p.a, {
-						className: T.a.dragItem,
+						className: O.a.dragItem,
 						isDragging: n,
 						isOver: s,
 						canDrop: a
 					}, r.a.createElement("div", {
-						className: T.a.PostTitle
+						className: O.a.PostTitle
 					}, i.title), r.a.createElement(m.b, {
 						post: i
 					}))
@@ -418,20 +418,20 @@
 						title: i
 					} = this.state, c = this.hasUnsavedTitle() || this.hasUnsavedDescription() || this.hasUnsavedOrder() || this.hasUnsavedLayout();
 					return r.a.createElement("div", {
-						className: T.a.Wrapper
+						className: O.a.Wrapper
 					}, r.a.createElement("div", {
-						className: T.a.TopRow
+						className: O.a.TopRow
 					}, r.a.createElement("div", {
-						className: T.a.modalTitle
+						className: O.a.modalTitle
 					}, s.fbt._("Edit collection", null, {
 						hk: "2uoDhJ"
 					}), r.a.createElement("div", {
-						className: T.a.closeWrapper,
+						className: O.a.closeWrapper,
 						onClick: this.props.onClose
 					}, r.a.createElement(_.a, {
-						className: T.a.Close
+						className: O.a.Close
 					})))), r.a.createElement(y.a, {
-						className: T.a.InlineRow
+						className: O.a.InlineRow
 					}, r.a.createElement(F, {
 						active: !a,
 						onClick: this.onCollectionTabClick
@@ -443,7 +443,7 @@
 					}, s.fbt._("Posts", null, {
 						hk: "1ojLYW"
 					}))), r.a.createElement("div", {
-						className: T.a.bodyContainer
+						className: O.a.bodyContainer
 					}, a ? r.a.createElement(E.a, {
 						getReactKey: this.getReactKey,
 						onDrop: this.handleReorder,
@@ -457,15 +457,15 @@
 						displayLayout: n,
 						onLayoutChange: this.onLayoutChange
 					})), r.a.createElement("div", {
-						className: T.a.FooterWrapper
+						className: O.a.FooterWrapper
 					}, r.a.createElement(b.t, {
 						kind: b.b.Button,
 						priority: b.c.Primary,
 						onClick: this.handleSave,
 						disabled: !c || e
 					}, e ? r.a.createElement(g.a, {
-						className: T.a.loadingIcon,
-						sizePx: N
+						className: O.a.loadingIcon,
+						sizePx: P
 					}) : s.fbt._("Save", null, {
 						hk: "26UTYg"
 					}))))
@@ -616,8 +616,8 @@
 				}) {
 					const n = Object(r.a)(),
 						s = null != t ? t : n;
-					return a.a.createElement(a.a.Fragment, null, function(e, t = l.C) {
-						const n = e * l.Qb;
+					return a.a.createElement(a.a.Fragment, null, function(e, t = l.D) {
+						const n = e * l.Rb;
 						return new Date(n).toLocaleString(t, {
 							weekday: "short",
 							month: "short",
@@ -633,29 +633,29 @@
 				m = n("./node_modules/fbt/lib/FbtPublic.js"),
 				p = n("./src/lib/eventTools/index.ts");
 
-			function h(e, t = l.C) {
+			function h(e, t = l.D) {
 				return e.toLocaleDateString(t, {
 					month: "numeric",
 					day: "numeric"
 				})
 			}
 
-			function x(e, t, n = !1, s = l.C) {
+			function x(e, t, n = !1, s = l.D) {
 				const a = Object(p.e)(e, t),
-					o = new Date(e * l.Qb);
+					o = new Date(e * l.Rb);
 				let r;
 				if (a === p.a.Live || n) return m.fbt._("Now", null, {
 					hk: "Prpcg"
 				});
 				return a === p.a.Future ? r = Object(p.d)(e) ? m.fbt._("Today", null, {
 					hk: "1sZpnp"
-				}).toString() : Object(p.b)(e) >= 5 ? h(o, s) : function(e, t = l.C) {
+				}).toString() : Object(p.b)(e) >= 5 ? h(o, s) : function(e, t = l.D) {
 					return e.toLocaleDateString(t, {
 						weekday: "long"
 					})
 				}(o, s) : a === p.a.Past && (r = Object(p.d)(e) ? m.fbt._("Today", null, {
 					hk: "1sZpnp"
-				}).toString() : h(o, s)), `${r} @ ${function(e,t=l.C){return e.toLocaleTimeString(t,{hour12:!0,hour:"numeric",minute:"2-digit"}).replace(/ /g,"").toUpperCase()}(o,s)}`
+				}).toString() : h(o, s)), `${r} @ ${function(e,t=l.D){return e.toLocaleTimeString(t,{hour12:!0,hour:"numeric",minute:"2-digit"}).replace(/ /g,"").toUpperCase()}(o,s)}`
 			}
 			var v = function({
 				startTime: e,
@@ -1111,4 +1111,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/editCollectionModal.3f2d11a7e0d00b2b94b9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/editCollectionModal.dc90b86b5cd172da102c.js.map

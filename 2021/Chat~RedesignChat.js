@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.244fbcac27e1ca2af3c2.js
-// Retrieved at 11/10/2021, 7:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.c93470f936f0c496e92f.js
+// Retrieved at 11/11/2021, 4:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -1159,7 +1159,7 @@
 							url: n
 						}) => Object(g.b)({
 							endpoint: "https://api.embed.ly/1/extract",
-							method: b.ib.GET,
+							method: b.jb.GET,
 							data: {
 								key: f,
 								url: n,
@@ -1334,7 +1334,7 @@
 							subredditsNames: [],
 							userPostsIds: []
 						},
-						l = e => e.startsWith(d.Hb.Comment) || e.startsWith(d.Hb.Post);
+						l = e => e.startsWith(d.Ib.Comment) || e.startsWith(d.Ib.Post);
 					for (const o in e) {
 						const t = s()(e[o].reduce((e, t) => t && (l(t) || "subreddit" === o) && e.push(t) && e || e, []));
 						switch (o) {
@@ -1654,7 +1654,7 @@
 						} = r.user;
 					if (l && o) {
 						let n;
-						const r = Object(a.c)(s.p.CHAT, s.x.CHAT_SENDBIRD_SESSION_KEY, o.id),
+						const r = Object(a.c)(s.q.CHAT, s.y.CHAT_SENDBIRD_SESSION_KEY, o.id),
 							d = Object(a.b)(r);
 						if (d && d.token) n = d;
 						else {
@@ -1676,12 +1676,12 @@
 						}))
 					}
 					t(m())
-				}, f = "SENDBIRD__ADD_MEMBERS_TO_KNOWN_CONTACTS", O = Object(c.a)(f), E = "SENDBIRD__SET_REDDIT_CONTACT_LIST", v = 6 * s.P, j = Object(c.a)(E), C = () => async (e, t, {
+				}, f = "SENDBIRD__ADD_MEMBERS_TO_KNOWN_CONTACTS", O = Object(c.a)(f), E = "SENDBIRD__SET_REDDIT_CONTACT_LIST", v = 6 * s.Q, j = Object(c.a)(E), C = () => async (e, t, {
 					apiContext: n
 				}) => {
 					const c = t(),
 						r = c.contacts.models,
-						o = Object(a.c)(s.p.CHAT, s.x.CHAT_SENDBIRD_CONTACTS_KEY, c.user.account.id),
+						o = Object(a.c)(s.q.CHAT, s.y.CHAT_SENDBIRD_CONTACTS_KEY, c.user.account.id),
 						d = Object(a.b)(o);
 					if (d && d.version === l.a) return void e(j(d.data));
 					const u = t().user.session;
@@ -1696,7 +1696,7 @@
 				}, _ = "SENDBIRD__IDENTIFY_CONTACT_BEGIN", I = "SENDBIRD__IDENTIFY_CONTACT_END", x = Object(c.a)(_), y = Object(c.a)(I), S = e => async (t, n, {
 					apiContext: a
 				}) => {
-					if (e.username === s.D) return;
+					if (e.username === s.E) return;
 					Object(d.c)(n(), e.username) || (t(x({
 						username: e.username
 					})), Object(o.b)(a(), e.username).then(n => {
@@ -1818,7 +1818,7 @@
 						const t = await ((e, t) => Object(c.a)(e, {
 							data: t,
 							endpoint: "/refreshproxy",
-							method: s.ib.POST
+							method: s.jb.POST
 						}))(n(), a);
 						if (t.ok) {
 							const n = t.body;
@@ -1851,7 +1851,7 @@
 					if (a.sitewideRules && a.sitewideRules.length) return;
 					const l = await (e => Object(c.a)(Object(r.a)(e, [o.a]), {
 						endpoint: `${e.apiUrl}/api/sitewide_rules.json`,
-						method: s.ib.GET
+						method: s.jb.GET
 					}))(n());
 					if (l.ok) {
 						const {
@@ -2615,7 +2615,7 @@
 				const c = await Object(i.b)({
 					data: d(e, t.uploadLeaseHeaders),
 					endpoint: t.uploadLeaseUrl,
-					method: r.ib.POST,
+					method: r.jb.POST,
 					type: null,
 					setup: a
 				});
@@ -4202,7 +4202,7 @@
 				if (t && e && r) {
 					const n = Object(_.h)(a(), t);
 					if ((null == n ? void 0 : n.type) === ae.b.Group) {
-						if (e === ge.D) return;
+						if (e === ge.E) return;
 						let n = [];
 						const c = Object(Ae.c)(a(), e);
 						if (c) n = [{
@@ -4329,7 +4329,7 @@
 					if (t && o && r) {
 						const e = Object(_.h)(a(), t);
 						if ((null == e ? void 0 : e.type) === ae.b.Group) {
-							if (o === ge.D) return;
+							if (o === ge.E) return;
 							let e;
 							const c = Object(Ae.c)(a(), o);
 							if (c) e = c.id;
@@ -4915,7 +4915,7 @@
 				constructor(e) {
 					super(e), this.fetchedFilter = "", this.isMount = !1, this.fetchSubredditChannelUsers = tt()((e = "") => {
 						this.props.fetchSubredditChannelUsers(e)
-					}, ge.Qb, {
+					}, ge.Rb, {
 						leading: !0,
 						trailing: !1
 					}), this.onArrowUpListener = e => {
@@ -5650,7 +5650,7 @@
 							var n;
 							const a = t[e + 1];
 							return null === (n = null == a ? void 0 : a.sender) || void 0 === n ? void 0 : n.userId
-						})(o, i), f = p === u, O = g === u, E = l - h < 5 * ge.jb, v = m && m - l < 5 * ge.jb, j = !O || O && !v, C = n.messageType === ve.d.SYSTEM && ((e, t) => {
+						})(o, i), f = p === u, O = g === u, E = l - h < 5 * ge.kb, v = m && m - l < 5 * ge.kb, j = !O || O && !v, C = n.messageType === ve.d.SYSTEM && ((e, t) => {
 							const {
 								mentionType: n,
 								mentionedUsers: a,
@@ -10352,8 +10352,8 @@
 				className: l.a.UserMetaInfo
 			}, ((e, t) => {
 				const n = (new Date).getTime(),
-					s = Math.round(Math.abs((e - n) / r.A)),
-					c = Math.round(Math.abs((e - n) / r.nc));
+					s = Math.round(Math.abs((e - n) / r.B)),
+					c = Math.round(Math.abs((e - n) / r.oc));
 				let i = "";
 				const l = `${s}${a.fbt._("d",null,{hk:"1d5Wxl"})}`,
 					d = `${c}${a.fbt._("y",null,{hk:"3DaEfY"})}`;
@@ -11455,7 +11455,7 @@
 							const t = e.getState();
 							e.dispatch(Object(d.sizeChanged)(h.a.EMBED));
 							const a = t.platform.currentPage;
-							a && a.meta && a.meta.name === o.Lb.CHAT_MINIMIZE && e.dispatch(Object(l.M)());
+							a && a.meta && a.meta.name === o.Mb.CHAT_MINIMIZE && e.dispatch(Object(l.M)());
 							const {
 								action: s,
 								noun: c,
@@ -11528,7 +11528,7 @@
 			let o;
 			const i = e => {
 				const t = e.user.account && e.user.account.id;
-				return o = Object(a.c)(s.p.CHAT, s.x.CHAT_LAST_SELECTED_CHANNEL_ID_KEY, t || "unknown"), Object(a.b)(o)
+				return o = Object(a.c)(s.q.CHAT, s.y.CHAT_LAST_SELECTED_CHANNEL_ID_KEY, t || "unknown"), Object(a.b)(o)
 			};
 			t.a = e => {
 				if ("undefined" == typeof window) return r.a;
@@ -11539,11 +11539,11 @@
 						}
 					} = t,
 					i = n && n.id || "unknown";
-				return o = Object(a.c)(s.p.CHAT, s.x.CHAT_LAST_SELECTED_CHANNEL_ID_KEY, i), e => t => {
+				return o = Object(a.c)(s.q.CHAT, s.y.CHAT_LAST_SELECTED_CHANNEL_ID_KEY, i), e => t => {
 					const n = e(t);
 					switch (t.type) {
 						case c.a:
-							Object(a.d)(o, t.payload, s.ob)
+							Object(a.d)(o, t.payload, s.pb)
 					}
 					return n
 				}
@@ -11610,7 +11610,7 @@
 			const j = (e, t) => {
 				const n = t && t.type === o.SIZE_CHANGED ? t.payload : e.container.size,
 					a = n === p.a.MINIMIZED || n === p.a.HIDDEN,
-					s = t && t.type === l.a ? t.payload && t.payload.routeMatch && t.payload.routeMatch.route.meta.name === c.Lb.CHAT_MINIMIZE : e.platform.currentPage && e.platform.currentPage.meta && e.platform.currentPage.meta.name === c.Lb.CHAT_MINIMIZE;
+					s = t && t.type === l.a ? t.payload && t.payload.routeMatch && t.payload.routeMatch.route.meta.name === c.Mb.CHAT_MINIMIZE : e.platform.currentPage && e.platform.currentPage.meta && e.platform.currentPage.meta.name === c.Mb.CHAT_MINIMIZE;
 				return !a && s
 			};
 			t.a = e => {
@@ -11632,7 +11632,7 @@
 					})(a) : s()(() => e.dispatch(Object(d.k)()))
 				};
 				let a;
-				Object(E.a)(e.getState()) === c.Lb.CHAT_MINIMIZE ? s()(async () => {
+				Object(E.a)(e.getState()) === c.Mb.CHAT_MINIMIZE ? s()(async () => {
 					j(e.getState()) ? n() : (await e.dispatch(Object(d.k)(!1)), e.getState().sendbird.session.token && await e.dispatch(Object(i.c)()))
 				}) : n();
 				return i => g => {
@@ -11647,7 +11647,7 @@
 							const t = g.payload !== p.a.MINIMIZED && g.payload !== p.a.HIDDEN;
 							t && (clearTimeout(a), a = null), I && t && !x && n(), !x || g.payload !== p.a.HIDDEN && g.payload !== p.a.MINIMIZED || (a = setTimeout(() => {
 								e.dispatch(Object(h.f)())
-							}, 10 * c.jb));
+							}, 10 * c.kb));
 							break
 						}
 						case l.a: {
@@ -11709,7 +11709,7 @@
 				r = n("./src/chat/actions/channel.ts"),
 				o = n("./src/chat/actions/session.ts"),
 				i = n("./src/chat/helpers/errors.ts");
-			const l = 5 * c.jb;
+			const l = 5 * c.kb;
 			t.a = e => {
 				const t = s()(() => {
 					e.dispatch(Object(o.d)())
@@ -11871,8 +11871,8 @@
 				i = n("./src/lib/constants/index.ts");
 			let l, d;
 			const u = s()(e => {
-				Object(o.d)(l, e, 5 * i.jb)
-			}, 5 * i.Qb, {
+				Object(o.d)(l, e, 5 * i.kb)
+			}, 5 * i.Rb, {
 				leading: !1,
 				trailing: !0
 			});
@@ -11880,7 +11880,7 @@
 			const m = () => {
 				h && clearInterval(h), h = setInterval(() => {
 					void 0 === Object(o.b)(l) && Object(c.c)()
-				}, 5 * i.jb)
+				}, 5 * i.kb)
 			};
 			t.a = e => {
 				if ("undefined" == typeof window) return r.a;
@@ -11894,7 +11894,7 @@
 						}
 					} = t,
 					s = n && n.id || "unknown";
-				l = Object(o.c)(i.p.CHAT, i.x.CHAT_UNREAD_MESSAGE_COUNT_KEY, s), u(a.unreadMessages), m();
+				l = Object(o.c)(i.q.CHAT, i.y.CHAT_UNREAD_MESSAGE_COUNT_KEY, s), u(a.unreadMessages), m();
 				try {
 					window.parent.addEventListener("focus", m)
 				} catch (h) {}
@@ -11926,7 +11926,7 @@
 				s = n("./src/lib/makeApiRequest/index.ts");
 			const c = async e => Object(s.a)(e, {
 				endpoint: `${e.apiUrl}/api/v1/me`,
-				method: a.ib.GET,
+				method: a.jb.GET,
 				data: {
 					raw_json: 1
 				}
@@ -11936,10 +11936,10 @@
 					raw_json: 1
 				},
 				endpoint: `${e.apiUrl}/api/block_user`,
-				method: a.ib.POST
+				method: a.jb.POST
 			}), o = async (e, t) => Object(s.a)(e, {
 				endpoint: `${e.apiUrl}/user/${t}/about`,
-				method: a.ib.GET,
+				method: a.jb.GET,
 				data: {
 					raw_json: 1
 				}
@@ -11996,7 +11996,7 @@
 					return Boolean(null === (t = null == e ? void 0 : e.data) || void 0 === t ? void 0 : t.redditorsInfoByIds)
 				},
 				d = (e, t) => Object(s.a)(e, {
-					method: a.ib.POST,
+					method: a.jb.POST,
 					endpoint: `${e.apiUrl}/api/report_user`,
 					data: {
 						reason: t.reason,
@@ -12006,7 +12006,7 @@
 				u = (e, t, n) => {
 					const c = Object(i.c)(t, n);
 					return Object(s.a)(e, {
-						method: a.ib.POST,
+						method: a.jb.POST,
 						endpoint: `${e.apiUrl}/api/report_user`,
 						data: {
 							details: JSON.stringify(c),
@@ -12016,7 +12016,7 @@
 					})
 				},
 				h = e => Object(s.a)(e, {
-					method: a.ib.GET,
+					method: a.jb.GET,
 					endpoint: `${e.apiUrl}/prefs/blocked.json`
 				}),
 				m = e => Object(c.a)(e, {
@@ -12104,7 +12104,7 @@
 					minute: "2-digit"
 				}).format,
 				o = e => {
-					const t = c - s.A,
+					const t = c - s.B,
 						n = new Date(c).setDate(1),
 						r = new Date(n).setMonth(0),
 						o = new Date(e);
@@ -12310,7 +12310,7 @@
 						className: n,
 						style: u
 					});
-					const h = (e => e.replace(l.Hb.Account + "_", ""))(i),
+					const h = (e => e.replace(l.Ib.Account + "_", ""))(i),
 						{
 							avatar: g,
 							color: f
@@ -12771,7 +12771,7 @@
 
 			function r(e) {
 				if (e.contact_account_id || e.id) return {
-					id: e.contact_account_id || `${a.Hb.Account}_${e.id}`,
+					id: e.contact_account_id || `${a.Ib.Account}_${e.id}`,
 					name: e.name,
 					created: 1e3 * e.created_utc,
 					profileImg: e.profile_img,
@@ -13386,7 +13386,7 @@
 			}));
 			var a = n("./src/lib/constants/index.ts"),
 				s = n("./src/lib/convertToCamelCase/index.ts");
-			const c = `${a.Hb.Account}_`,
+			const c = `${a.Ib.Account}_`,
 				r = e => {
 					if (null == e ? void 0 : e.length) return e.reduce((e, t) => {
 						const n = function(e) {
@@ -15049,7 +15049,7 @@
 						return e
 				}
 			};
-			const Wt = n("./src/lib/constants/index.ts").C;
+			const Wt = n("./src/lib/constants/index.ts").D;
 			var Kt = Object(Bt.a)((e = Wt, t) => (t.type, e), Wt);
 			const Zt = {
 				blob: "",
@@ -15318,11 +15318,11 @@
 				}),
 				i = {
 					action: c.b,
-					chunk: s.r.CHAT,
+					chunk: s.s.CHAT,
 					component: o,
 					exact: !0,
 					meta: {
-						name: s.Lb.CHAT
+						name: s.Mb.CHAT
 					},
 					path: "/chat/"
 				},
@@ -15349,11 +15349,11 @@
 			l.preload();
 			const d = {
 					action: c.b,
-					chunk: s.r.CHAT_EMPTY,
+					chunk: s.s.CHAT_EMPTY,
 					component: l,
 					exact: !0,
 					meta: {
-						name: s.Lb.CHAT_EMPTY
+						name: s.Mb.CHAT_EMPTY
 					},
 					path: "/chat/empty/"
 				},
@@ -15380,43 +15380,43 @@
 			u.preload();
 			const h = {
 					action: c.c,
-					chunk: s.r.CHAT_MINIMIZE,
+					chunk: s.s.CHAT_MINIMIZE,
 					component: u,
 					exact: !0,
 					meta: {
-						name: s.Lb.CHAT_MINIMIZE
+						name: s.Mb.CHAT_MINIMIZE
 					},
 					path: "/chat/minimize/"
 				},
 				m = ["/chat/", "/chat/:action(share|share_new)/", "/chat/channel/:action(create)/", "/chat/channel/:channelId/:action(block|hide|delete|invite|invite_link_settings|invited|kick|members|leave|nsfw|report)?/:attr(invite|message|user)?/:attrId?"],
 				p = {
 					action: c.a,
-					chunk: s.r.CHAT,
+					chunk: s.s.CHAT,
 					component: o,
 					exact: !0,
 					meta: {
-						name: s.Lb.CHAT
+						name: s.Mb.CHAT
 					},
 					path: m
 				},
 				b = ["/chat/user_id/:userIds/"],
 				g = {
 					action: c.e,
-					chunk: s.r.CHAT,
+					chunk: s.s.CHAT,
 					component: o,
 					exact: !0,
 					meta: {
-						name: s.Lb.CHAT
+						name: s.Mb.CHAT
 					},
 					path: b
 				},
 				f = {
 					action: c.d,
-					chunk: s.r.CHAT,
+					chunk: s.s.CHAT,
 					component: o,
 					exact: !0,
 					meta: {
-						name: s.Lb.CHAT
+						name: s.Mb.CHAT
 					},
 					path: ["/chat/share"]
 				};
@@ -15427,10 +15427,10 @@
 			var a = n("./src/lib/constants/index.ts");
 			var s = {
 				action: n("./src/chat/actions/page.ts").b,
-				chunk: a.r.CHAT,
+				chunk: a.s.CHAT,
 				exact: !0,
 				meta: {
-					name: a.Lb.CHAT
+					name: a.Mb.CHAT
 				},
 				path: "/chat/*"
 			};
@@ -15707,7 +15707,7 @@
 					e.onReconnectSucceeded = () => {
 						this.dispatch(Object(j.h)(t)), this.dispatch(Object(C.g)({
 							toast: S.a.ConnectionOpen
-						})), Object(i.setTimeout)(() => this.dispatch(Object(C.d)()), 3 * l.Qb);
+						})), Object(i.setTimeout)(() => this.dispatch(Object(C.d)()), 3 * l.Rb);
 						this.dispatch(Object(E.v)(!0)), this.dispatch(Object(u.C)())
 					}, this.self.addConnectionHandler("RECONNECT_SUCCEEDED", e), this.connectionUniqueHandlerID.push("RECONNECT_SUCCEEDED")
 				}
@@ -17178,4 +17178,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.244fbcac27e1ca2af3c2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.c93470f936f0c496e92f.js.map

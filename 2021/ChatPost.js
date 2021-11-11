@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.3bed13ee48f870673a2a.js
-// Retrieved at 11/10/2021, 7:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.b4bd021598858da70f1d.js
+// Retrieved at 11/11/2021, 4:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -200,7 +200,7 @@
 				isCommentAuthorBlocked: Object(E.g)(o),
 				collapsed: i
 			}, r.a.createElement(O.b, {
-				ignore: Object(E.f)(o) || !!o.distinguishType && o.distinguishType !== T.F.NONE,
+				ignore: Object(E.f)(o) || !!o.distinguishType && o.distinguishType !== T.G.NONE,
 				subredditId: o.subredditId,
 				userId: o.authorId
 			}, r.a.createElement(h, {
@@ -297,14 +297,14 @@
 			var q = o("./src/reddit/components/Comments/Comment/TopMeta/crowdControl.m.less"),
 				z = o.n(q);
 			const {
-				fbt: J
-			} = o("./node_modules/fbt/lib/FbtPublic.js"), Q = () => r.a.createElement(_.a, {
+				fbt: G
+			} = o("./node_modules/fbt/lib/FbtPublic.js"), J = () => r.a.createElement(_.a, {
 				className: z.a.crowdControlText
-			}, J._("Crowd Control", null, {
+			}, G._("Crowd Control", null, {
 				hk: "4WgEW"
 			}));
-			var G = o("./src/reddit/components/Comments/Comment/TopMeta/edited.m.less"),
-				Y = o.n(G);
+			var Q = o("./src/reddit/components/Comments/Comment/TopMeta/edited.m.less"),
+				Y = o.n(Q);
 			const {
 				fbt: X
 			} = o("./node_modules/fbt/lib/FbtPublic.js"), Z = ({
@@ -467,7 +467,7 @@
 				be = e => {
 					const t = Object(a.d)(),
 						o = function(e) {
-							return e.isAdmin ? le.Admin : e.isMod ? le.Mod : e.isOp ? le.Op : e.distinguishType === T.F.ALUMNI_ADMIN ? le.AlumniAdmin : e.authorIsContractor ? le.Contractor : null
+							return e.isAdmin ? le.Admin : e.isMod ? le.Mod : e.isOp ? le.Op : e.distinguishType === T.G.ALUMNI_ADMIN ? le.AlumniAdmin : e.authorIsContractor ? le.Contractor : null
 						}(e.comment);
 					if (!o) return null;
 					if (o === le.Contractor && !e.renderContractorBadge) return null;
@@ -565,7 +565,7 @@
 					isLivestreaming: p,
 					renderedInOverlay: h,
 					collapsed: o
-				})), s && r.a.createElement(Q, null), r.a.createElement(be, {
+				})), s && r.a.createElement(J, null), r.a.createElement(be, {
 					className: xe.a.role,
 					comment: i,
 					subredditDisplayText: T,
@@ -736,7 +736,7 @@
 					isStrong: !!m,
 					renderedInOverlay: T,
 					collapsed: n
-				}), s && r.a.createElement(Q, null), s && r.a.createElement(_.c, {
+				}), s && r.a.createElement(J, null), s && r.a.createElement(_.c, {
 					className: Se.a.metaText,
 					key: "crowdControlSeparator"
 				}), p && !N && r.a.createElement(we, {
@@ -1340,11 +1340,11 @@
 				j = e => {
 					switch (e) {
 						case y.e.Admin:
-							return m.F.ADMIN;
+							return m.G.ADMIN;
 						case y.e.Moderator:
-							return m.F.MODERATOR;
+							return m.G.MODERATOR;
 						case y.e.Alumni:
-							return m.F.ALUMNI_ADMIN;
+							return m.G.ALUMNI_ADMIN;
 						default:
 							return ""
 					}
@@ -1478,9 +1478,9 @@
 				V = o("./src/reddit/selectors/commentSelector.ts"),
 				q = o("./src/reddit/selectors/moderatorPermissions.ts"),
 				z = o("./src/reddit/actions/comment/websocket/constants.ts");
-			const J = Object(C.a)(z.b),
-				Q = Object(C.a)(z.c),
-				G = Object(C.a)(z.a),
+			const G = Object(C.a)(z.b),
+				J = Object(C.a)(z.c),
+				Q = Object(C.a)(z.a),
 				Y = Object(C.a)(z.d),
 				X = {},
 				Z = (e, t, o, n) => async (s, r) => {
@@ -1515,14 +1515,14 @@
 											const t = Object(K.w)(i, {
 												commentsPageKey: e
 											});
-											s(J({
+											s(G({
 												authorFlair: o,
 												comment: a,
 												commentsPageKey: e,
 												headCommentId: t,
 												numComments: r
 											}))
-										} else s(Q({
+										} else s(J({
 											authorFlair: o,
 											comment: a,
 											commentsPageKey: e,
@@ -1541,7 +1541,7 @@
 									if (i && c) {
 										const o = N(0, n, t.payload),
 											r = t.payload.total_comment_count;
-										s(Q({
+										s(J({
 											authorFlair: o,
 											comment: c,
 											commentsPageKey: e,
@@ -1557,7 +1557,7 @@
 										i = Object(V.b)(a, {
 											commentId: o
 										});
-									i && s(Q({
+									i && s(J({
 										comment: {
 											...i,
 											score: n
@@ -1572,7 +1572,7 @@
 										n = Object(V.b)(o, {
 											commentId: e
 										});
-									n && !n.isDeleted ? s(G({
+									n && !n.isDeleted ? s(Q({
 										id: e
 									})) : X[e] = L.DELETE_COMMENT;
 									break
@@ -1588,7 +1588,7 @@
 										c = !!e && !!Object(q.l)(n, {
 											postId: e
 										});
-									!a || a.isRemoved && a.isDeleted || i || c ? X[o] = L.REMOVE_COMMENT : s(G({
+									!a || a.isRemoved && a.isDeleted || i || c ? X[o] = L.REMOVE_COMMENT : s(Q({
 										id: o
 									}));
 									break
@@ -1775,9 +1775,9 @@
 			var Ve = o("./src/reddit/components/ConfirmUserActionModal/index.tsx"),
 				qe = o("./src/reddit/components/HumanDate/index.tsx"),
 				ze = o("./src/reddit/components/ModModeReports/helpers.ts"),
-				Je = o("./src/reddit/components/ReportFlow/index.tsx"),
-				Qe = o("./src/reddit/components/ReportFlow/new.tsx"),
-				Ge = o("./src/reddit/components/TrackingHelper/index.tsx"),
+				Ge = o("./src/reddit/components/ReportFlow/index.tsx"),
+				Je = o("./src/reddit/components/ReportFlow/new.tsx"),
+				Qe = o("./src/reddit/components/TrackingHelper/index.tsx"),
 				Ye = o("./src/reddit/icons/svgs/Approve/index.tsx"),
 				Xe = o("./src/reddit/icons/svgs/Edit/index.tsx"),
 				Ze = o("./src/reddit/icons/svgs/Flag/index.tsx"),
@@ -1883,7 +1883,7 @@
 					deleteComment: () => o && e(Object(Ee.h)(t.id, t.postId)),
 					onDeleteClick: () => e(Object(Te.i)(gt(t.id))),
 					toggleDeleteCommentModal: () => e(Object(Te.i)(gt(t.id)))
-				}))(Object(Ge.c)(e => {
+				}))(Object(Qe.c)(e => {
 					const {
 						comment: t,
 						className: o,
@@ -1919,7 +1919,7 @@
 						spamTooltipId: R,
 						toggleDeleteCommentModal: L,
 						timestampUpdateTrigger: P
-					} = e, F = !!s && s.id === t.authorId, B = Object(ze.b)(t), D = t.isApproved && B, U = !t.bannedBy || t.bannedBy === m.k, W = {
+					} = e, F = !!s && s.id === t.authorId, B = Object(ze.b)(t), D = t.isApproved && B, U = !t.bannedBy || t.bannedBy === m.l, W = {
 						comment: t,
 						onHideTooltip: f,
 						onShowTooltip: x,
@@ -1948,7 +1948,7 @@
 						}),
 						trackingNoun: "reply"
 					}, e), c.a.createElement(ht, null)), u && F && c.a.createElement(He, dt({
-						onClick: () => I(H ? m.F.NONE : m.F.MODERATOR),
+						onClick: () => I(H ? m.G.NONE : m.G.MODERATOR),
 						tooltipId: A,
 						tooltipText: H ? te.fbt._("Undistinguish", null, {
 							hk: "20neZu"
@@ -1969,15 +1969,15 @@
 							hk: "4oVcnd"
 						}),
 						trackingNoun: "report"
-					}, e), c.a.createElement(mt, null)), T && (() => e.reportingRevampEnabled ? c.a.createElement(Qe.a, {
+					}, e), c.a.createElement(mt, null)), T && (() => e.reportingRevampEnabled ? c.a.createElement(Je.a, {
 						withOverlay: !0,
-						overlayCustomStyles: Je.b,
+						overlayCustomStyles: Ge.b,
 						postId: t.postId,
 						commentId: t.id
-					}) : c.a.createElement(Je.a, {
+					}) : c.a.createElement(Ge.a, {
 						withOverlay: !0,
 						commentId: t.id,
-						overlayCustomStyles: Je.b,
+						overlayCustomStyles: Ge.b,
 						postId: t.postId
 					}))(), F && !p && c.a.createElement(He, dt({
 						onClick: v,
@@ -1989,12 +1989,12 @@
 					}, W), c.a.createElement(pt, null)), u && U ? c.a.createElement(He, dt({
 						onClick: g,
 						tooltipId: S,
-						tooltipText: t.bannedBy === m.k ? te.fbt._("Confirm removal", null, {
+						tooltipText: t.bannedBy === m.l ? te.fbt._("Confirm removal", null, {
 							hk: "3q7g1J"
 						}) : te.fbt._("Remove", null, {
 							hk: "3tYl0U"
 						}),
-						trackingNoun: t.bannedBy === m.k ? "confirm_remove" : "remove"
+						trackingNoun: t.bannedBy === m.l ? "confirm_remove" : "remove"
 					}, W), c.a.createElement(bt, null)) : F && c.a.createElement(He, dt({
 						onClick: C,
 						tooltipId: a,
@@ -2098,9 +2098,9 @@
 				Bt = o("./src/reddit/constants/experiments.ts"),
 				Dt = o("./src/reddit/helpers/chooseVariant/index.ts");
 			const Ut = e => Object(Dt.c)(e, {
-				experimentName: Bt.kb,
+				experimentName: Bt.lb,
 				experimentEligibilitySelector: Dt.a
-			}) === Bt.gb.Enabled;
+			}) === Bt.hb.Enabled;
 			var Wt = o("./src/reddit/selectors/communityAwards.ts");
 			const Ht = (e, {
 				commentId: t
@@ -2114,9 +2114,9 @@
 				Vt = o("./src/reddit/selectors/poll/index.ts"),
 				qt = o("./src/reddit/components/CommentsChat/Comment/index.m.less"),
 				zt = o.n(qt);
-			const Jt = 250,
-				Qt = 10,
-				Gt = re.a.wrapped(Ft.b, "ErrorText", zt.a),
+			const Gt = 250,
+				Jt = 10,
+				Qt = re.a.wrapped(Ft.b, "ErrorText", zt.a),
 				Yt = re.a.wrapped(ce.a, "TopMeta", zt.a),
 				Xt = re.a.span("DeleteText", zt.a),
 				Zt = re.a.wrapped(Nt, "Reply", zt.a),
@@ -2175,7 +2175,7 @@
 					}
 				}
 				componentDidMount() {
-					this.elemRef && this.elemRef.current && this.elemRef.current.scrollHeight > Jt && !this.props.associatedAward && !this.props.isLivestreaming && this.setState({
+					this.elemRef && this.elemRef.current && this.elemRef.current.scrollHeight > Gt && !this.props.associatedAward && !this.props.isLivestreaming && this.setState({
 						isTruncated: !0
 					})
 				}
@@ -2189,9 +2189,9 @@
 					} = this.state, n = t !== e.isExpanded || o !== e.isTruncated;
 					if (this.elemRef && this.elemRef.current && n) {
 						const e = this.elemRef.current;
-						let o = Jt;
+						let o = Gt;
 						if (t) {
-							o = e.scrollHeight + Qt;
+							o = e.scrollHeight + Jt;
 							const t = () => {
 								e.style.maxHeight = "", e.removeEventListener("transitionend", t)
 							};
@@ -2310,7 +2310,7 @@
 						commentsPageKey: r,
 						isLivestreaming: m,
 						timestampUpdateTrigger: v
-					})]), n.isDeleted && c.a.createElement(so, null), I && a && a.map((e, t) => c.a.createElement(Gt, {
+					})]), n.isDeleted && c.a.createElement(so, null), I && a && a.map((e, t) => c.a.createElement(Qt, {
 						key: `${t}-${e}`
 					}, e)), !l && y && c.a.createElement("button", {
 						className: Object(se.a)(zt.a.CommentReadMoreButton, {
@@ -2567,8 +2567,8 @@
 					loadMoreComments: o => e(Object(b.l)(t.commentsPageKey, o)),
 					loadBlockedRedditors: () => e(Object(h.g)()),
 					loadComments: async () => await e(Object($.commentsPageDataRequested)(t.postId, void 0, {
-						sort: m.t.CHAT
-					}, m.t.CHAT))
+						sort: m.u.CHAT
+					}, m.u.CHAT))
 				}));
 			class xo extends c.a.Component {
 				constructor(e) {
@@ -2745,7 +2745,7 @@
 					}))
 				}
 			}
-			t.default = ko(Object(Ge.c)(xo))
+			t.default = ko(Object(Qe.c)(xo))
 		},
 		"./src/reddit/components/Econ/PowerupsFlair/UserAchievementFlair.async.ts": function(e, t, o) {
 			"use strict";
@@ -2874,25 +2874,25 @@
 				isLoggedOut: t
 			}) {
 				switch (e.type) {
-					case s.H.AUTHORIZATION_ERROR:
+					case s.I.AUTHORIZATION_ERROR:
 						return t ? n.fbt._("You might need to be logged in to do that.", null, {
 							hk: "1313fG"
 						}) : n.fbt._("It looks like you aren't allowed to do that.", null, {
 							hk: "5tQod"
 						});
-					case s.H.VALIDATION_ERROR:
+					case s.I.VALIDATION_ERROR:
 						return n.fbt._("We weren't able to handle your request.", null, {
 							hk: "4umMwv"
 						});
-					case s.H.NOT_FOUND_ERROR:
+					case s.I.NOT_FOUND_ERROR:
 						return n.fbt._("Sorry, there doesn't seem to be anything here.", null, {
 							hk: "2UmS4e"
 						});
-					case s.H.SERVER_ERROR:
+					case s.I.SERVER_ERROR:
 						return n.fbt._("Sorry, for some reason reddit can't be reached.", null, {
 							hk: "1Sxl7y"
 						});
-					case s.H.LIKELY_UBLOCK_ERROR:
+					case s.I.LIKELY_UBLOCK_ERROR:
 						return n.fbt._("It looks like one or more software blocking extensions you are using may be interfering with Reddit's ability to serve you content. Please try disabling them or changing the rules you use.", null, {
 							hk: "6Gh68"
 						});
@@ -3367,4 +3367,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.3bed13ee48f870673a2a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.b4bd021598858da70f1d.js.map

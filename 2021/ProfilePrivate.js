@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePrivate.817911df6e1f6aec036e.js
-// Retrieved at 11/11/2021, 10:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePrivate.dd368f6a2b7c2ea089c4.js
+// Retrieved at 11/11/2021, 4:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePrivate"], {
 		"./src/reddit/actions/pages/profilePrivate/index.ts": function(e, t, i) {
@@ -76,7 +76,7 @@
 					} = e, k = "ADMIN" === d, S = "MODERATOR" === d, _ = s ? Object(f.b)(s) : void 0, T = i && i.__typename === C.c.AvailableRedditor && i.isCakeDayNow || !1, R = i && i.__typename === C.c.AvailableRedditor && i.isPremiumMember || !1, L = {
 						allAwardings: _,
 						associatedAward: t,
-						author: i && Object(P.b)(i) || v.D,
+						author: i && Object(P.b)(i) || v.E,
 						authorId: i && i.id || "",
 						body: o && o.html || "",
 						bodyMD: o && o.markdown || "",
@@ -1378,4 +1378,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.817911df6e1f6aec036e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.dd368f6a2b7c2ea089c4.js.map

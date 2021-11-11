@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PredictionLeaderboard-Sidebar.d0b05aa306274ec497c8.js
-// Retrieved at 11/8/2021, 10:40:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PredictionLeaderboard-Sidebar.b9239abf39fa3a9ae200.js
+// Retrieved at 11/11/2021, 4:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./src/reddit/components/Econ/Prediction/UnicornIcon/index.tsx": function(e, t, c) {
@@ -375,7 +375,7 @@
 						targetUserId: b.id
 					})),
 					to: `/user/${j}`,
-					disabled: b.displayName === d.E || b.displayName === d.Jb
+					disabled: b.displayName === d.F || b.displayName === d.Kb
 				}, n.a.createElement("div", {
 					className: E.a.leaderboardIcon
 				}, n.a.createElement(o.a, {
@@ -614,4 +614,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PredictionLeaderboard-Sidebar.d0b05aa306274ec497c8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PredictionLeaderboard-Sidebar.b9239abf39fa3a9ae200.js.map

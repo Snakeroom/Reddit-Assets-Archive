@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Coins.623de8f926b69d429013.js
-// Retrieved at 11/4/2021, 4:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Coins.241c274dd33b9509b2fc.js
+// Retrieved at 11/11/2021, 4:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Coins"], {
 		"./node_modules/lodash/times.js": function(e, t, a) {
@@ -235,12 +235,12 @@
 				O = a("./src/reddit/selectors/gold/purchaseCatalog.ts"),
 				_ = a("./src/reddit/selectors/goldPurchaseModals.ts"),
 				y = a("./src/reddit/actions/goldPurchaseModals/constants.ts");
-			const w = Object(s.a)(y.q),
-				j = Object(s.a)(y.c),
+			const j = Object(s.a)(y.q),
+				w = Object(s.a)(y.c),
 				E = e => async (t, a) => {
-					t(w(e)), t(Object(d.h)(i.a.ECON_COIN_PURCHASE))
+					t(j(e)), t(Object(d.h)(i.a.ECON_COIN_PURCHASE))
 				}, x = () => async (e, t) => {
-					e(j()), e(Object(d.g)(i.a.ECON_COIN_PURCHASE))
+					e(w()), e(Object(d.g)(i.a.ECON_COIN_PURCHASE))
 				}, C = Object(s.a)(y.u), v = ({
 					correlationId: e,
 					packageId: t
@@ -329,21 +329,21 @@
 						k = Object(_.r)(d) || Object(b.d)(b.a.GoldPayment, !1);
 					let O, y;
 					c(Object(o.stripeTokenPending)());
-					const w = Object(_.y)(d);
-					if (w || (O = await c(Object(o.validateAndCreateStripeToken)(e)), y = Object(_.v)(d), O)) try {
+					const j = Object(_.y)(d);
+					if (j || (O = await c(Object(o.validateAndCreateStripeToken)(e)), y = Object(_.v)(d), O)) try {
 						const {
 							gildModalThingId: e,
 							isAnonymous: i,
 							message: _,
-							selectedAward: j
+							selectedAward: w
 						} = d.gild;
-						if (!e || !j.id) {
+						if (!e || !w.id) {
 							const e = n.fbt._("Gilding unknown thing", null, {
 								hk: "2Jiujp"
 							});
 							return void c(Object(o.stripeApiError)(e))
 						}
-						const E = j.id,
+						const E = w.id,
 							C = {
 								gildType: E,
 								isAnonymous: i,
@@ -358,7 +358,7 @@
 								offerContext: Object(f.d)(t, !0),
 								pennies: u,
 								rememberCard: y,
-								savedCardId: w || void 0,
+								savedCardId: j || void 0,
 								thingId: e,
 								token: O
 							});
@@ -390,8 +390,8 @@
 								treatmentTags: i
 							})), void Object(b.b)(b.a.GoldPayment)
 						}
-					} catch (j) {
-						const e = Object(r.a)(j);
+					} catch (w) {
+						const e = Object(r.a)(w);
 						c(Object(o.stripeApiError)(e))
 					} else {
 						const e = n.fbt._("Looks like something went wrong validating your credit card.", null, {
@@ -483,7 +483,7 @@
 							hk: "4DkIS3"
 						})));
 						const y = _.id,
-							w = await Object(u.d)({
+							j = await Object(u.d)({
 								context: l(),
 								offerContext: Object(f.d)(t, !0),
 								orderId: e,
@@ -495,8 +495,8 @@
 								isAnonymous: i,
 								correlationId: m
 							});
-						if (w.error) {
-							const e = Object(r.a)(w.error);
+						if (j.error) {
+							const e = Object(r.a)(j.error);
 							s(Object(o.paypalApiError)(e))
 						} else {
 							s(x());
@@ -506,7 +506,7 @@
 								coins: n,
 								subreddit_coins: r,
 								treatment_tags: i
-							} = w.body;
+							} = j.body;
 							s(Object(o.paymentCompleted)({
 								coins: n,
 								confirmed: !0
@@ -563,9 +563,9 @@
 			})), a.d(t, "selectSavedCard", (function() {
 				return y
 			})), a.d(t, "_deleteSavedCard", (function() {
-				return w
-			})), a.d(t, "deleteSavedCard", (function() {
 				return j
+			})), a.d(t, "deleteSavedCard", (function() {
+				return w
 			})), a.d(t, "savedCardsPending", (function() {
 				return E
 			})), a.d(t, "savedCardsSuccess", (function() {
@@ -610,10 +610,10 @@
 							message: e
 						}))
 					}
-				}, O = Object(s.a)(i.x), _ = Object(s.a)(i.H), y = Object(s.a)(i.C), w = Object(s.a)(i.g), j = e => async (t, a, {
+				}, O = Object(s.a)(i.x), _ = Object(s.a)(i.H), y = Object(s.a)(i.C), j = Object(s.a)(i.g), w = e => async (t, a, {
 					apiContext: n
 				}) => {
-					t(w(e));
+					t(j(e));
 					try {
 						const t = await Object(c.a)(n(), e);
 						if (t.error) throw new Error(t.error.type)
@@ -647,7 +647,7 @@
 			})), a.d(t, "c", (function() {
 				return _
 			})), a.d(t, "a", (function() {
-				return w
+				return j
 			}));
 			var n = a("./node_modules/fbt/lib/FbtPublic.js"),
 				r = a("./src/lib/env/index.ts"),
@@ -706,7 +706,7 @@
 						});
 						a(O(e))
 					}
-				}, y = Object(s.a)(u.h), w = () => async (e, t, {
+				}, y = Object(s.a)(u.h), j = () => async (e, t, {
 					gqlContext: a
 				}) => {
 					var s, o;
@@ -1094,7 +1094,7 @@
 					d = `${t.apiUrl}/api/v2/gold/paypal/initiate_premium_payment`,
 					m = Object(i.a)(d);
 				return Object(r.a)(Object(s.a)(t, [c.a]), {
-					method: n.ib.POST,
+					method: n.jb.POST,
 					endpoint: m,
 					data: l
 				}).then(o.c)
@@ -1110,7 +1110,7 @@
 					correlation_id: i
 				};
 				return Object(r.a)(Object(s.a)(e, [c.a]), {
-					method: n.ib.POST,
+					method: n.jb.POST,
 					endpoint: `${e.apiUrl}/api/v2/gold/paypal/create_coin_purchase_order`,
 					data: l
 				}).then(o.c)
@@ -1128,7 +1128,7 @@
 					thing_id: i
 				};
 				return Object(r.a)(Object(s.a)(e, [c.a]), {
-					method: n.ib.POST,
+					method: n.jb.POST,
 					endpoint: `${e.apiUrl}/api/v2/gold/paypal/create_award_purchase_order`,
 					data: d
 				}).then(o.c)
@@ -1148,7 +1148,7 @@
 					correlation_id: d
 				};
 				return Object(r.a)(Object(s.a)(e, [c.a]), {
-					method: n.ib.POST,
+					method: n.jb.POST,
 					endpoint: `${e.apiUrl}/api/v2/gold/paypal/execute_coin_order`,
 					data: m
 				}).then(o.c)
@@ -1176,7 +1176,7 @@
 					thing_id: b
 				};
 				return Object(r.a)(Object(s.a)(t, [c.a]), {
-					method: n.ib.POST,
+					method: n.jb.POST,
 					endpoint: `${t.apiUrl}/api/v2/gold/paypal/execute_coin_with_gild_order`,
 					data: h
 				}).then(o.c)
@@ -1198,7 +1198,7 @@
 					thing_id: m
 				};
 				return Object(r.a)(Object(s.a)(t, [c.a]), {
-					method: n.ib.POST,
+					method: n.jb.POST,
 					endpoint: `${t.apiUrl}/api/v2/gold/paypal/execute_award_purchase_order`,
 					data: u
 				}).then(o.c)
@@ -1419,8 +1419,8 @@
 					action: "click",
 					noun: "get_premium"
 				});
-			var w = a("./src/reddit/helpers/trackers/screenview.ts"),
-				j = a("./src/telemetry/index.ts"),
+			var j = a("./src/reddit/helpers/trackers/screenview.ts"),
+				w = a("./src/telemetry/index.ts"),
 				E = a("./src/telemetry/models/Timer.ts"),
 				x = a("./src/reddit/pages/CoinsPage/index.m.less"),
 				C = a.n(x),
@@ -1465,7 +1465,7 @@
 						currency: F.a
 					}), k = n ? b.marketing["4x"].url : b.marketing["2x"].url, O = d > 0 && `${Object(B.a)(d,{locale:c})}%`, _ = r.fbt._("bonus", null, {
 						hk: "L8mcp"
-					}), y = n ? R.a.large : "", w = i !== m, j = l !== h;
+					}), y = n ? R.a.large : "", j = i !== m, w = l !== h;
 					return o.a.createElement("div", {
 						className: Object(D.a)(t, R.a.coinPurchasePackage, y)
 					}, o.a.createElement("div", {
@@ -1490,7 +1490,7 @@
 						className: R.a.priceCoinIcon
 					}), o.a.createElement("div", null, o.a.createElement("div", {
 						className: R.a.priceValue
-					}, f), w && o.a.createElement("div", {
+					}, f), j && o.a.createElement("div", {
 						className: Object(D.a)(R.a.priceCurrency, R.a.crossout)
 					}, Object(B.b)(i, {
 						locale: c,
@@ -1505,7 +1505,7 @@
 						priority: U.c.Primary,
 						className: Object(D.a)(R.a.cta, y),
 						onClick: s
-					}, g), j && o.a.createElement("div", {
+					}, g), w && o.a.createElement("div", {
 						className: R.a.priceCrossout
 					}, Object(B.b)(l, {
 						locale: c
@@ -1683,8 +1683,8 @@
 						requestPurchaseCatalog: a
 					} = this.props;
 					e.length || t || a(this.correlationId), document.documentElement.scrollTop = document.body.scrollTop = 0;
-					const n = u.Lb.COINS;
-					j.c.has(n) && (this.props.sendEvent(Object(w.b)(E.TimerType.InApp, j.c.end(n))), this.props.sendEvent(Object(w.a)())), Object(p.a)(), this.setTargetedOfferTimeout()
+					const n = u.Mb.COINS;
+					w.c.has(n) && (this.props.sendEvent(Object(j.b)(E.TimerType.InApp, w.c.end(n))), this.props.sendEvent(Object(j.a)())), Object(p.a)(), this.setTargetedOfferTimeout()
 				}
 				componentDidUpdate() {
 					!this.targetedOfferTimerId && this.props.dealCoinPackages.length && this.setTargetedOfferTimeout()
@@ -1839,4 +1839,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Coins.623de8f926b69d429013.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Coins.241c274dd33b9509b2fc.js.map

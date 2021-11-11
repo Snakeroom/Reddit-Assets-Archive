@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.5f0c8df4a3f20c117ad1.js
-// Retrieved at 11/10/2021, 7:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.983a9e978b01d9e2ab2c.js
+// Retrieved at 11/11/2021, 4:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -52,16 +52,16 @@
 			const p = Object(o.a)(e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.Md
+					experimentName: u.Od
 				});
-				return Object(u.uf)(t) ? void 0 : t
+				return Object(u.wf)(t) ? void 0 : t
 			}, e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.Nd
+					experimentName: u.Pd
 				});
-				return Object(u.uf)(t) ? void 0 : t
-			}, (e, t) => e === u.Rd.Enabled && t === u.Rd.Enabled);
+				return Object(u.wf)(t) ? void 0 : t
+			}, (e, t) => e === u.Td.Enabled && t === u.Td.Enabled);
 			var h = s("./src/config.ts");
 			var b = s("./src/reddit/selectors/user.ts");
 			const f = e => {
@@ -949,7 +949,7 @@
 					className: b.a.NewUserpic,
 					userId: t
 				});
-				const a = (e => e.replace(d.Hb.Account + "_", ""))(t),
+				const a = (e => e.replace(d.Ib.Account + "_", ""))(t),
 					{
 						avatar: o,
 						color: l
@@ -2103,7 +2103,7 @@
 				z = s.n(K);
 			const {
 				fbt: Z
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), q = 20, J = l.mc, Q = l.mc, X = Object(c.a)(L.a, {
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), q = 20, J = l.nc, Q = l.nc, X = Object(c.a)(L.a, {
 				playerName: "RPAN DU Video Player"
 			}), $ = Object(a.b)(() => Object(o.c)({
 				autoplay: j.b,
@@ -2161,7 +2161,7 @@
 						if (e) {
 							if (Date.now() - e >= J) {
 								Object(E.W)();
-								const e = 30 * l.A,
+								const e = 30 * l.B,
 									t = Date.now() - e + Q;
 								this.props.onHideRpanUnit(t, {
 									showToast: !1
@@ -3752,23 +3752,23 @@
 					for (const t of e) {
 						const e = t[0] || "";
 						switch (e) {
-							case r.H.NO_STRIPE_SUBSCRIPTION:
-							case r.H.USER_DOESNT_EXIST:
-							case r.H.USER_REQUIRED_ERROR:
-							case r.H.VALIDATION_ERROR:
+							case r.I.NO_STRIPE_SUBSCRIPTION:
+							case r.I.USER_DOESNT_EXIST:
+							case r.I.USER_REQUIRED_ERROR:
+							case r.I.VALIDATION_ERROR:
 								return e;
-							case r.H.NO_USER:
-							case r.H.NO_TEXT:
-							case r.H.NO_URL:
-								return r.H.VALIDATION_ERROR;
-							case r.H.CREDIT_CARD_FAILURE:
-							case r.H.CREDIT_CARD_FAILURE_GENERIC:
-								return r.H.CREDIT_CARD_FAILURE;
+							case r.I.NO_USER:
+							case r.I.NO_TEXT:
+							case r.I.NO_URL:
+								return r.I.VALIDATION_ERROR;
+							case r.I.CREDIT_CARD_FAILURE:
+							case r.I.CREDIT_CARD_FAILURE_GENERIC:
+								return r.I.CREDIT_CARD_FAILURE;
 							default:
-								if (e.startsWith("SUBMIT_VALIDATION")) return r.H.SUBMIT_VALIDATION_ERROR
+								if (e.startsWith("SUBMIT_VALIDATION")) return r.I.SUBMIT_VALIDATION_ERROR
 						}
 					}
-					return r.H.VALIDATION_ERROR
+					return r.I.VALIDATION_ERROR
 				},
 				a = e => {
 					const t = e.body;
@@ -4227,7 +4227,7 @@
 					const {
 						thingId: s,
 						packageId: l
-					} = t, b = !!s, f = a.b(e), v = f ? Object(u.getAwardTypeFromAward)(f) : null, g = b ? v : i.o(e) ? d.GoldPurchaseType.Premium : d.GoldPurchaseType.Coins, _ = s ? Object(p.a)(s) ? "comment" : "post" : void 0, C = l || i.t(e), E = [...Object(o.d)(e), ...Object(o.f)(e)].filter(e => e.mobileId === C)[0], w = t.offerContext || (f && 0 === f.coinPrice ? n.a.StorefrontFreeAward : Object(n.d)(E, b)), x = E ? Math.round(1e4 * (E.baselinePennies - E.pennies) / E.baselinePennies) / 100 : 0, O = E ? Math.round(1e4 * (E.coins - E.baselineCoins) / E.coins) / 100 : 0, y = E ? E.baselinePennies !== E.pennies ? `${x}_percent_price` : E.baselineCoins !== E.coins ? `${O}_percent_bonus` : void 0 : void 0, I = g === d.GoldPurchaseType.Premium ? r.xb : E ? E.pennies : void 0;
+					} = t, b = !!s, f = a.b(e), v = f ? Object(u.getAwardTypeFromAward)(f) : null, g = b ? v : i.o(e) ? d.GoldPurchaseType.Premium : d.GoldPurchaseType.Coins, _ = s ? Object(p.a)(s) ? "comment" : "post" : void 0, C = l || i.t(e), E = [...Object(o.d)(e), ...Object(o.f)(e)].filter(e => e.mobileId === C)[0], w = t.offerContext || (f && 0 === f.coinPrice ? n.a.StorefrontFreeAward : Object(n.d)(E, b)), x = E ? Math.round(1e4 * (E.baselinePennies - E.pennies) / E.baselinePennies) / 100 : 0, O = E ? Math.round(1e4 * (E.coins - E.baselineCoins) / E.coins) / 100 : 0, y = E ? E.baselinePennies !== E.pennies ? `${x}_percent_price` : E.baselineCoins !== E.coins ? `${O}_percent_bonus` : void 0 : void 0, I = g === d.GoldPurchaseType.Premium ? r.yb : E ? E.pennies : void 0;
 					return {
 						...c.defaults(e),
 						comment: s ? c.comment(e, s) : null,
@@ -5487,7 +5487,7 @@
 						postId: t
 					}) || Object(o.H)(e))(e, t),
 					experimentName: r.M
-				}) === r.Xc
+				}) === r.Zc
 			}
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, s) {
@@ -5618,4 +5618,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.5f0c8df4a3f20c117ad1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.983a9e978b01d9e2ab2c.js.map

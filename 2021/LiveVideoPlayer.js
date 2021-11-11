@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.f03c28332f6d7436baf5.js
-// Retrieved at 11/4/2021, 7:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.a2889a454a381ad3005a.js
+// Retrieved at 11/11/2021, 4:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["LiveVideoPlayer"], {
 		"./node_modules/lodash/isUndefined.js": function(e, t) {
@@ -115,8 +115,8 @@
 				}),
 				_ = Object(a.a)(l.c),
 				E = Object(a.a)(l.b),
-				P = Object(a.a)(l.a),
-				j = Object(a.a)(l.h),
+				j = Object(a.a)(l.a),
+				P = Object(a.a)(l.h),
 				V = (Object(a.a)(l.i), Object(a.a)(l.g), () => async (e, t, {
 					gqlContext: s
 				}) => {
@@ -127,7 +127,7 @@
 					if (n.ok) {
 						const t = S(n.body.data);
 						e(_(t))
-					} else e(P({
+					} else e(j({
 						error: n.error
 					}))
 				}),
@@ -141,7 +141,7 @@
 						type: e.type
 					} : {
 						id: Object(L.m)(l(), e.name),
-						name: `${n.gc}${e.name}`,
+						name: `${n.hc}${e.name}`,
 						type: e.type
 					});
 					if (!Object(y.K)(l())) return a(Object(d.k)({
@@ -159,7 +159,7 @@
 						}
 						if (!e.length && !m.length) return
 					}
-					if (a(j({
+					if (a(P({
 							identifiers: m,
 							nameIdentifiers: e,
 							profileModels: l().profiles.models,
@@ -195,7 +195,7 @@
 							text: 1 === e.length && "profile" === e[0].type ? t ? n : r : t ? d : l
 						}))
 					} else {
-						a(j({
+						a(P({
 							identifiers: m,
 							nameIdentifiers: e,
 							profileModels: l().profiles.models,
@@ -265,7 +265,7 @@
 						multiredditPath: e,
 						multiredditsModelsState: a
 					})), (await ((e, t, s) => Object(h.a)(Object(m.a)(e, [p.a]), {
-						method: n.ib.POST,
+						method: n.jb.POST,
 						endpoint: `${e.apiUrl}/api/multi/favorite`,
 						data: {
 							make_favorite: s ? "true" : "false",
@@ -303,7 +303,7 @@
 						multiredditPath: e,
 						multiredditsModelsState: r
 					})), (await ((e, t, s) => Object(h.a)(Object(m.a)(e, [p.a]), {
-						method: n.ib.POST,
+						method: n.jb.POST,
 						endpoint: `${e.apiUrl}/api/multi/subscribe`,
 						data: {
 							action: s ? "sub" : "unsub",
@@ -414,8 +414,8 @@
 				O = s("./src/reddit/selectors/media.ts"),
 				_ = s("./src/reddit/selectors/platform.ts"),
 				E = s("./src/reddit/selectors/PublicAccessNetwork/api.ts"),
-				P = s("./src/reddit/selectors/PublicAccessNetwork/streams.ts"),
-				j = s("./src/reddit/selectors/user.ts"),
+				j = s("./src/reddit/selectors/PublicAccessNetwork/streams.ts"),
+				P = s("./src/reddit/selectors/user.ts"),
 				V = s("./src/reddit/selectors/video.ts"),
 				I = s("./src/reddit/components/PublicAccessNetwork/LiveVideoPlayer/index.m.less"),
 				T = s.n(I);
@@ -424,14 +424,14 @@
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), R = Object(l.a)(b.a, {
 				playerName: "RPAN Listing Player"
 			}), N = 3e3, A = Object(d.c)({
-				autoplay: j.b,
+				autoplay: P.b,
 				isOverlayOpen: _.i,
 				mutedInFeed: V.i,
 				unavailableVideoUrl: E.o,
 				volumeInFeed: O.d,
 				currentStream: (e, {
 					postId: t
-				}) => Object(P.l)(e, t)
+				}) => Object(j.l)(e, t)
 			}), B = Object(r.b)(A, (e, t) => ({
 				setMutedInFeed: t => e(Object(C.G)(t)),
 				setVideoVolume: t => e(Object(m.h)(t)),
@@ -839,7 +839,7 @@
 					subredditNames: s,
 					subscribe: i
 				}) => Object(a.a)(Object(r.a)(e, [d.a]), {
-					method: n.ib.POST,
+					method: n.jb.POST,
 					endpoint: Object(l.a)(`${e.apiUrl}/api/subscribe`),
 					data: {
 						action: i ? "sub" : "unsub",
@@ -849,7 +849,7 @@
 					}
 				}),
 				u = (e, t, s) => Object(a.a)(Object(r.a)(e, [d.a]), {
-					method: n.ib.POST,
+					method: n.jb.POST,
 					endpoint: `${e.apiUrl}/api/favorite`,
 					data: {
 						make_favorite: s ? "true" : "false",
@@ -1115,4 +1115,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer.f03c28332f6d7436baf5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer.a2889a454a381ad3005a.js.map

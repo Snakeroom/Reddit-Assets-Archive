@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/VideoShareModal.56a5810028c810acf760.js
-// Retrieved at 11/8/2021, 7:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/VideoShareModal.736ad16e038945b25bde.js
+// Retrieved at 11/11/2021, 4:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["VideoShareModal"], {
 		"./src/reddit/actions/publicAccessNetwork/votes.ts": function(e, t, s) {
@@ -63,7 +63,7 @@
 					className: v.a.NewUserpic,
 					userId: t
 				});
-				const r = (e => e.replace(i.Hb.Account + "_", ""))(t),
+				const r = (e => e.replace(i.Ib.Account + "_", ""))(t),
 					{
 						avatar: o,
 						color: d
@@ -549,7 +549,7 @@
 		"./src/reddit/components/PublicAccessNetwork/Theater/Overlay/refresh.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "c", (function() {
-				return Z
+				return H
 			})), s.d(t, "h", (function() {
 				return K
 			})), s.d(t, "g", (function() {
@@ -629,8 +629,8 @@
 				U = s("./src/reddit/components/PublicAccessNetwork/Theater/Overlay/refresh.m.less"),
 				W = s.n(U);
 			const {
-				fbt: H
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), Z = ({
+				fbt: Z
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), H = ({
 				children: e
 			}) => n.a.createElement("div", {
 				className: W.a.broadcastStatus
@@ -638,13 +638,13 @@
 				onClick: e
 			}) => n.a.createElement("button", {
 				onClick: e
-			}, n.a.createElement(z, null)), z = () => H._("{=Live}", [H._param("=Live", n.a.createElement("span", {
+			}, n.a.createElement(z, null)), z = () => Z._("{=Live}", [Z._param("=Live", n.a.createElement("span", {
 				className: W.a.live
-			}, H._("Live", null, {
+			}, Z._("Live", null, {
 				hk: "8x90I"
 			})))], {
 				hk: "3ZBbO0"
-			}), Y = () => H._("Recorded live", null, {
+			}), Y = () => Z._("Recorded live", null, {
 				hk: "2seH5c"
 			}), q = ({
 				onSubscribe: e,
@@ -667,7 +667,7 @@
 					className: W.a.plusIcon
 				}), n.a.createElement("span", {
 					className: W.a.joinText
-				}, H._("Join", null, {
+				}, Z._("Join", null, {
 					hk: "3n0zBz"
 				})))
 			}, Q = ({
@@ -693,7 +693,7 @@
 					isFixed: !0
 				}, n.a.createElement("div", {
 					className: W.a.dropdownLabel
-				}, H._("Pick a Community", null, {
+				}, Z._("Pick a Community", null, {
 					hk: "4AfDwd"
 				})), o.map(t => n.a.createElement(b.b, {
 					className: W.a.dropdownRow,
@@ -716,19 +716,19 @@
 				count: Math.max(1, e.unique_watchers)
 			})), G = ({
 				count: e
-			}) => H._({
+			}) => Z._({
 				"*": "{number of watchers} watchers",
 				_1: "1 watcher"
-			}, [H._plural(e, "number of watchers", Object(i.b)(e, {
+			}, [Z._plural(e, "number of watchers", Object(i.b)(e, {
 				displayFull: !0
 			}))], {
 				hk: "3F0Nj0"
 			}), X = ({
 				count: e
-			}) => H._({
+			}) => Z._({
 				"*": "{number of views} views",
 				_1: "1 view"
-			}, [H._plural(e, "number of views", Object(i.b)(e, {
+			}, [Z._plural(e, "number of views", Object(i.b)(e, {
 				displayFull: !0
 			}))], {
 				hk: "tSTjT"
@@ -747,7 +747,7 @@
 					icon: n.a.createElement(k.a, null)
 				}, n.a.createElement(b.b, {
 					className: W.a.menuOverflowItem,
-					displayText: H._("Copy Link", null, {
+					displayText: Z._("Copy Link", null, {
 						hk: "2oo038"
 					}),
 					iconWrapperClassName: W.a.overflowItemShareIconWrapper,
@@ -758,7 +758,7 @@
 					className: W.a.linkIcon
 				})), n.a.createElement(b.b, {
 					className: W.a.menuOverflowItem,
-					displayText: H._("Crosspost", null, {
+					displayText: Z._("Crosspost", null, {
 						hk: "QSd6Z"
 					}),
 					iconWrapperClassName: W.a.overflowItemShareIconWrapper,
@@ -769,7 +769,7 @@
 					className: W.a.overflowItemIcon
 				})), o && n.a.createElement(b.b, {
 					className: W.a.menuOverflowItem,
-					displayText: H._("Share to Chat", null, {
+					displayText: Z._("Share to Chat", null, {
 						hk: "2uVgxZ"
 					}),
 					iconWrapperClassName: W.a.overflowItemShareIconWrapper,
@@ -808,7 +808,7 @@
 				}
 			}, n.a.createElement(b.b, {
 				className: W.a.overflowItem,
-				displayText: H._("View rules", null, {
+				displayText: Z._("View rules", null, {
 					hk: "haY6r"
 				}),
 				iconWrapperClassName: W.a.overflowItemIconWrapper,
@@ -818,7 +818,7 @@
 				className: W.a.overflowItemIcon
 			})), n.a.createElement(b.b, {
 				className: W.a.overflowItem,
-				displayText: H._("Stream from desktop", null, {
+				displayText: Z._("Stream from desktop", null, {
 					hk: "4dOdik"
 				}),
 				iconWrapperClassName: W.a.overflowItemIconWrapper,
@@ -828,7 +828,7 @@
 				className: W.a.overflowItemIcon
 			})), n.a.createElement(b.b, {
 				className: W.a.overflowItem,
-				displayText: H._("Visit community", null, {
+				displayText: Z._("Visit community", null, {
 					hk: "2KViLk"
 				}),
 				iconWrapperClassName: W.a.overflowItemIconWrapper,
@@ -858,7 +858,7 @@
 				})
 			})(m)), n.a.createElement(b.b, {
 				className: W.a.overflowItem,
-				displayText: H._("Report", null, {
+				displayText: Z._("Report", null, {
 					hk: "4oVcnd"
 				}),
 				iconWrapperClassName: W.a.overflowItemIconWrapper,
@@ -868,7 +868,7 @@
 				className: W.a.overflowItemIcon
 			})), n.a.createElement(b.b, {
 				className: W.a.overflowItem,
-				displayText: H._("Hide", null, {
+				displayText: Z._("Hide", null, {
 					hk: "15vs9C"
 				}),
 				iconWrapperClassName: W.a.overflowItemIconWrapper,
@@ -878,16 +878,16 @@
 				className: W.a.overflowItemIcon
 			})), o && n.a.createElement(n.a.Fragment, null, n.a.createElement(b.b, {
 				className: W.a.headerItem,
-				displayText: H._("Mod Actions", null, {
+				displayText: Z._("Mod Actions", null, {
 					hk: "19zCiw"
 				}),
 				key: `${ne}-modaction`,
 				onClick: () => {}
 			}), n.a.createElement(b.b, {
 				className: W.a.overflowItem,
-				displayText: r ? H._("Unlock comments", null, {
+				displayText: r ? Z._("Unlock comments", null, {
 					hk: "Btg6R"
-				}) : H._("Lock comments", null, {
+				}) : Z._("Lock comments", null, {
 					hk: "3Ew6q9"
 				}),
 				iconWrapperClassName: W.a.overflowItemIconWrapper,
@@ -899,7 +899,7 @@
 				className: W.a.overflowItemIcon
 			})), n.a.createElement(b.b, {
 				className: W.a.endBroadcastItem,
-				displayText: H._("Remove broadcast", null, {
+				displayText: Z._("Remove broadcast", null, {
 					hk: "3GaDuI"
 				}),
 				iconWrapperClassName: W.a.overflowItemIconWrapper,
@@ -995,7 +995,7 @@
 				}),
 				onClick: e,
 				value: "upvote",
-				"aria-label": H._("Upvote", null, {
+				"aria-label": Z._("Upvote", null, {
 					hk: "Ufd6r"
 				})
 			}, n.a.createElement(g.a, {
@@ -1009,7 +1009,7 @@
 				}),
 				onClick: e,
 				value: "downvote",
-				"aria-label": H._("Downvote", null, {
+				"aria-label": Z._("Downvote", null, {
 					hk: "ZDRA3"
 				})
 			}, n.a.createElement(N.a, {
@@ -1022,11 +1022,11 @@
 				children: e
 			}) => n.a.createElement("div", {
 				className: W.a.prompt
-			}, e), me = () => n.a.createElement(de, null, H._("Connection issues", null, {
+			}, e), me = () => n.a.createElement(de, null, Z._("Connection issues", null, {
 				hk: "hIrnJ"
-			})), ue = () => n.a.createElement(de, null, H._("Tuning...", null, {
+			})), ue = () => n.a.createElement(de, null, Z._("Tuning...", null, {
 				hk: "3dG7Ks"
-			})), pe = () => n.a.createElement(de, null, H._("Broadcast paused", null, {
+			})), pe = () => n.a.createElement(de, null, Z._("Broadcast paused", null, {
 				hk: "jxvku"
 			})), he = ({
 				onClickCrosspost: e,
@@ -1046,7 +1046,7 @@
 				className: W.a.awardPromptWrapper
 			}, n.a.createElement("div", {
 				className: W.a.awardPromptLabel
-			}, H._("Award this broadcast to give it more airtime", null, {
+			}, Z._("Award this broadcast to give it more airtime", null, {
 				hk: "20jmEz"
 			})), n.a.createElement(R.a, {
 				onClick: e
@@ -1064,9 +1064,9 @@
 			}) => {
 				const {
 					name: a
-				} = e, r = xe(a), o = fe(a), c = we(a, !o), l = o ? H._("Unfollow u/{name}", [H._param("name", a)], {
+				} = e, r = xe(a), o = fe(a), c = we(a, !o), l = o ? Z._("Unfollow u/{name}", [Z._param("name", a)], {
 					hk: "2n0wqa"
-				}) : H._("Follow u/{name}", [H._param("name", a)], {
+				}) : Z._("Follow u/{name}", [Z._param("name", a)], {
 					hk: "20X8Bw"
 				}), i = n.a.createElement("button", {
 					className: W.a.subscribeToProfileButton,
@@ -1464,7 +1464,7 @@
 			})), s.d(t, "e", (function() {
 				return W
 			})), s.d(t, "g", (function() {
-				return H
+				return Z
 			}));
 			s("./node_modules/core-js/modules/web.dom.iterable.js");
 			var a = s("./node_modules/reselect/es/index.js"),
@@ -1642,7 +1642,7 @@
 				}),
 				U = Object(a.a)(A, R, u.b, l.b, l.o, (e, t, s, a, n) => s ? a : e ? t === F.LIVE || t === F.VOD ? e.stream.hls_url : n : void 0),
 				W = Object(a.a)(A, R, D, (e, t, s) => e ? t === F.LIVE ? e.broadcast_time : t === F.VOD && s < e.broadcast_time ? s : 0 : 0),
-				H = (e, t) => {
+				Z = (e, t) => {
 					const s = p(e);
 					return !!s && s[t] && s[t].chat_disabled
 				}
@@ -1666,4 +1666,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/VideoShareModal.56a5810028c810acf760.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/VideoShareModal.736ad16e038945b25bde.js.map

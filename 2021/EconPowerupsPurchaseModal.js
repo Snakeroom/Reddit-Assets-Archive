@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.89c4b8f35b5a2c268588.js
-// Retrieved at 11/9/2021, 12:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.67ce1d6227dce874920b.js
+// Retrieved at 11/11/2021, 4:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsPurchaseModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, r) {
@@ -470,8 +470,8 @@
 						hk: "1T4BEy"
 					}))
 				}))),
-				W = r("./src/reddit/components/Econ/PowerupsPurchaseModal/PowerupsPurchase/PowerupsPremiumButton/index.m.less"),
-				H = r.n(W);
+				H = r("./src/reddit/components/Econ/PowerupsPurchaseModal/PowerupsPurchase/PowerupsPremiumButton/index.m.less"),
+				W = r.n(H);
 			const {
 				fbt: z
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), K = ({
@@ -487,10 +487,10 @@
 					onClick: () => {
 						c(Object(E.k)(t, a, r))
 					},
-					className: Object(l.a)(e, H.a.button),
+					className: Object(l.a)(e, W.a.button),
 					disabled: n
 				}, n ? s.a.createElement(U.a, {
-					className: H.a.loadingIcon,
+					className: W.a.loadingIcon,
 					sizePx: 12
 				}) : z._({
 					"*": "Apply Your Powerups",
@@ -660,7 +660,7 @@
 						stripeErrorMessage: u,
 						subredditId: m,
 						userPowerupsData: p
-					} = e, b = Object(o.d)(), [O, N] = Object(n.useState)(w.Gb);
+					} = e, b = Object(o.d)(), [O, N] = Object(n.useState)(w.Hb);
 					Object(n.useEffect)(() => {
 						b(Object(_.d)()), b(Object(x.selectPaymentMethod)(O))
 					}, []);
@@ -710,18 +710,18 @@
 						onPaymentSelected: e => {
 							N(e), b(Object(x.selectPaymentMethod)(e))
 						}
-					}), O === w.Fb && u && s.a.createElement("div", {
+					}), O === w.Gb && u && s.a.createElement("div", {
 						className: ce.a.errorMessage
-					}, u), O === w.Gb && c && s.a.createElement("div", {
+					}, u), O === w.Hb && c && s.a.createElement("div", {
 						className: ce.a.errorMessage
-					}, c), O === w.Fb && s.a.createElement(M.a, {
+					}, c), O === w.Gb && s.a.createElement(M.a, {
 						nightmode: r,
 						className: ce.a.stripeForm,
 						shouldDeleteCardWithGql: !0
-					}), O === w.Gb && s.a.createElement(R, {
+					}), O === w.Hb && s.a.createElement(R, {
 						className: ce.a.button,
 						subredditId: m
-					}), O === w.Fb && s.a.createElement(oe, {
+					}), O === w.Gb && s.a.createElement(oe, {
 						className: ce.a.button,
 						subredditId: m
 					}), s.a.createElement("p", {
@@ -1000,4 +1000,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.89c4b8f35b5a2c268588.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.67ce1d6227dce874920b.js.map

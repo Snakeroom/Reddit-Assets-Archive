@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.a0d36f435bdd8821ab83.js
-// Retrieved at 11/4/2021, 4:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.7bb8fa2977565a4b3d8e.js
+// Retrieved at 11/11/2021, 4:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PennyPurchaseModal"], {
 		"./src/lib/loadRedditAdsPixel.ts": function(e, a, t) {
@@ -207,7 +207,7 @@
 			const {
 				fbt: A
 			} = t("./node_modules/fbt/lib/FbtPublic.js");
-			class F extends r.a.Component {
+			class D extends r.a.Component {
 				constructor() {
 					super(...arguments), this.onCompletePurchaseClick = () => {
 						const {
@@ -235,7 +235,7 @@
 					}, r.a.createElement(g.a, {
 						className: S.a.balance,
 						coinBalance: a
-					}), c === o.Gb ? e && e.pennyPrice && t ? r.a.createElement(B, {
+					}), c === o.Hb ? e && e.pennyPrice && t ? r.a.createElement(B, {
 						awardId: e.id,
 						className: Object(h.a)(S.a.purchaseButton, S.a.paypalCheckoutButton),
 						pennies: e.pennyPrice,
@@ -243,7 +243,7 @@
 					}) : n && r.a.createElement(B, {
 						className: Object(h.a)(S.a.purchaseButton, S.a.paypalCheckoutButton),
 						coinPackage: n
-					}) : null, c === o.Fb && r.a.createElement(P.l, {
+					}) : null, c === o.Gb && r.a.createElement(P.l, {
 						className: S.a.purchaseButton,
 						"data-redditstyle": !0,
 						disabled: l || s,
@@ -253,7 +253,7 @@
 					})))
 				}
 			}
-			var D = Object(c.injectStripe)(Object(b.c)(F)),
+			var F = Object(c.injectStripe)(Object(b.c)(D)),
 				R = t("./src/reddit/components/ModalStyledComponents/index.tsx"),
 				G = t("./src/reddit/icons/fonts/Coin/index.tsx");
 			const {
@@ -366,7 +366,7 @@
 					nightmode: e.nightmode,
 					selectedPayment: e.selectedPayment,
 					onPaymentSelected: e.onPaymentSelected
-				}), e.selectedPayment === o.Fb && r.a.createElement(m.a, {
+				}), e.selectedPayment === o.Gb && r.a.createElement(m.a, {
 					nightmode: e.nightmode
 				}), r.a.createElement("div", {
 					className: S.a.checkoutFooter
@@ -376,9 +376,9 @@
 					locale: a
 				}))], {
 					hk: "3dx6W8"
-				}))), e.selectedPayment === o.Gb && e.paypalErrorMessage && r.a.createElement("div", {
+				}))), e.selectedPayment === o.Hb && e.paypalErrorMessage && r.a.createElement("div", {
 					className: S.a.errorMessage
-				}, e.paypalErrorMessage), e.selectedPayment === o.Fb && e.stripeErrorMessage && r.a.createElement("div", {
+				}, e.paypalErrorMessage), e.selectedPayment === o.Gb && e.stripeErrorMessage && r.a.createElement("div", {
 					className: S.a.errorMessage
 				}, e.stripeErrorMessage), r.a.createElement("div", {
 					className: S.a.agreementLink
@@ -404,7 +404,7 @@
 					}, n.fbt._("Reddit User Agreement", null, {
 						hk: "11z9fY"
 					}))
-				}))), r.a.createElement(D, {
+				}))), r.a.createElement(F, {
 					award: e.selectedAward,
 					coinBalance: e.coinBalance,
 					gildThingId: e.gildThingId,
@@ -676,4 +676,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PennyPurchaseModal.a0d36f435bdd8821ab83.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PennyPurchaseModal.7bb8fa2977565a4b3d8e.js.map

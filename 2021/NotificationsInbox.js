@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NotificationsInbox.01901073e0b5dca26440.js
-// Retrieved at 11/11/2021, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationsInbox.b2f26a9846ebe0d56441.js
+// Retrieved at 11/11/2021, 4:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationsInbox"], {
 		"./src/reddit/actions/pages/notificationsInbox.ts": function(e, t, n) {
@@ -391,7 +391,7 @@
 						}, () => this.forceUnsticky = !1)) : O() >= y && this.setState({
 							sticky: !0
 						})
-					}, d.J), this.forceUnsticky = !1, this.wrapperRef = null, this.state = {
+					}, d.K), this.forceUnsticky = !1, this.wrapperRef = null, this.state = {
 						sticky: !1
 					}
 				}
@@ -601,15 +601,15 @@
 					updateInboxActivitySeenState: () => e(Object(m.j)())
 				}))(A),
 				G = n("./node_modules/fbt/lib/FbtPublic.js"),
-				J = n("./src/reddit/components/BadgeCounter/index.tsx"),
-				z = n("./src/reddit/components/TabNav/index.tsx"),
+				z = n("./src/reddit/components/BadgeCounter/index.tsx"),
+				J = n("./src/reddit/components/TabNav/index.tsx"),
 				Q = n("./src/reddit/controls/InternalLink/index.tsx"),
 				D = n("./src/reddit/hooks/useTracking.ts"),
 				q = n("./src/reddit/icons/fonts/index.tsx"),
 				K = n("./src/reddit/pages/NotificationsInbox/NavBar/index.m.less"),
 				X = n.n(K);
-			const Y = h.a.wrapped(J.a, "Badge", X.a),
-				V = h.a.wrapped(z.a, "Tab", X.a);
+			const Y = h.a.wrapped(z.a, "Badge", X.a),
+				V = h.a.wrapped(J.a, "Tab", X.a);
 			var Z = e => {
 				const {
 					messagesTabBadgeCount: t,
@@ -691,4 +691,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsInbox.01901073e0b5dca26440.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsInbox.b2f26a9846ebe0d56441.js.map
