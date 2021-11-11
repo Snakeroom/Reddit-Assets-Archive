@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PowerupsGifsTooltip.73e8da66131b49cd9161.js
-// Retrieved at 11/4/2021, 4:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PowerupsGifsTooltip.ed303c0dd29c5ca784db.js
+// Retrieved at 11/11/2021, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PowerupsGifsTooltip"], {
 		"./src/reddit/components/RichTextEditor/media/GifTooltip/BaseTooltip.m.less": function(e, t, s) {
@@ -117,11 +117,11 @@
 				_ = s("./src/reddit/selectors/economics.ts"),
 				v = s("./src/reddit/selectors/telemetry.ts"),
 				w = s("./src/reddit/components/RichTextEditor/helpers/common.ts"),
-				S = s("./src/reddit/components/RichTextEditor/media/helpers.ts");
-			let C;
+				C = s("./src/reddit/components/RichTextEditor/media/helpers.ts");
+			let S;
 
 			function G() {
-				C || (C = fetch("https://meta.redditmedia.com/public/fortnitebr/giphy_blacklist.json").then(e => e.json()))
+				S || (S = fetch("https://meta.redditmedia.com/public/fortnitebr/giphy_blacklist.json").then(e => e.json()))
 			}
 			var O = s("./node_modules/lodash/debounce.js"),
 				I = s.n(O),
@@ -185,16 +185,16 @@
 			});
 			var L = Object(p.b)(P)(M),
 				U = s("./src/reddit/components/RichTextEditor/media/GifTooltip/GifTooltipBody.m.less"),
-				A = s.n(U);
-			const F = 4,
-				H = r()((function() {
+				F = s.n(U);
+			const A = 4,
+				z = r()((function() {
 					const e = Object(b.a)("https://api.giphy.com/v1/gifs/trending", {
 						api_key: g.a.giphyApiKey,
 						rating: x
 					});
 					return fetch(e).then(E)
 				}));
-			class z extends d.a.Component {
+			class H extends d.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						columns: [
@@ -247,7 +247,7 @@
 							}
 						});
 						const t = this.props.editorState,
-							s = Object(S.k)(t, e.id, e.url, e.hasDownsizedImage, e.width, e.height, t.getSelection().getEndKey(), w.a.after);
+							s = Object(C.k)(t, e.id, e.url, e.hasDownsizedImage, e.width, e.height, t.getSelection().getEndKey(), w.a.after);
 						this.props.onChange(s), this.props.onClose()
 					}
 				}
@@ -258,7 +258,7 @@
 					this.mounted = !1
 				}
 				loadTrendingGifs() {
-					H().then(e => {
+					z().then(e => {
 						this.state.query || this.addGiphyResults(e)
 					})
 				}
@@ -270,7 +270,7 @@
 					} = this.state;
 					!e && s && null !== t && (await
 						function(e) {
-							return G(), C.then(t => {
+							return G(), S.then(t => {
 								return !!e.split(" ").concat(e).find(e => -1 !== t.indexOf(e.toLowerCase()))
 							}).catch(() => !1)
 						}(s) || (this.setState({
@@ -304,7 +304,7 @@
 						if ("gif" !== e.type || "r" === e.rating || "pg-13" === e.rating) return;
 						const i = this.getSimplifiedResult(e),
 							o = s.reduce((e, t, i) => t < s[e] ? i : e, 0);
-						t[o].push(i), s[o] += i.fixedWidthHeight + F
+						t[o].push(i), s[o] += i.fixedWidthHeight + A
 					});
 					const i = e.pagination.offset + e.pagination.count;
 					this.setState({
@@ -333,40 +333,40 @@
 						loading: t
 					} = this.state;
 					return d.a.createElement("div", {
-						className: A.a.tooltip
+						className: F.a.tooltip
 					}, d.a.createElement("div", {
-						className: Object(o.a)(A.a.header, {
-							[A.a.headerWithTitleLine]: !!this.props.title
+						className: Object(o.a)(F.a.header, {
+							[F.a.headerWithTitleLine]: !!this.props.title
 						})
 					}, this.props.title && d.a.createElement("div", {
-						className: A.a.titleLine
+						className: F.a.titleLine
 					}, d.a.createElement("span", {
-						className: A.a.title
+						className: F.a.title
 					}, this.props.title), d.a.createElement(T.a, {
-						className: A.a.closeIcon,
+						className: F.a.closeIcon,
 						onClick: () => this.props.onClose(!0)
 					})), d.a.createElement("div", {
-						className: A.a.searchLine
+						className: F.a.searchLine
 					}, d.a.createElement(L, {
 						autofocus: this.props.autofocus,
 						onChange: this.onQueryChange,
-						className: A.a.searchBox,
+						className: F.a.searchBox,
 						preventScrollOnMount: this.props.preventSearchBoxScrollOnMount
 					}), !this.props.title && d.a.createElement(T.a, {
-						className: A.a.closeIcon,
+						className: F.a.closeIcon,
 						onClick: () => this.props.onClose(!0)
 					}))), d.a.createElement("div", {
-						className: A.a.body,
+						className: F.a.body,
 						onScroll: this.onScroll
 					}, d.a.createElement("div", {
-						className: Object(o.a)(A.a.results, {
-							[A.a.disabled]: this.props.disabled
+						className: Object(o.a)(F.a.results, {
+							[F.a.disabled]: this.props.disabled
 						})
 					}, e.map((e, t) => d.a.createElement("div", {
-						className: A.a.column,
+						className: F.a.column,
 						key: t
 					}, e.map(e => d.a.createElement("button", {
-						className: A.a.gifResult,
+						className: F.a.gifResult,
 						key: e.url,
 						onClick: () => this.onResultClick(e),
 						style: {
@@ -374,15 +374,15 @@
 						},
 						disabled: this.props.disabled
 					}, d.a.createElement("img", {
-						className: A.a.gifResultImage,
+						className: F.a.gifResultImage,
 						src: e.url
 					})))))), t && d.a.createElement("div", {
-						className: A.a.loadingSpinner
+						className: F.a.loadingSpinner
 					}, d.a.createElement(f.a, {
 						sizePx: 20,
 						center: !0
 					})), this.props.children, d.a.createElement("div", {
-						className: A.a.whiteScrim
+						className: F.a.whiteScrim
 					})))
 				}
 			}
@@ -397,7 +397,7 @@
 					kind: y.b.Error,
 					duration: 5e3
 				}))
-			}))(z))
+			}))(H))
 		},
 		"./src/reddit/components/RichTextEditor/media/GifTooltip/Powerups/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -459,8 +459,8 @@
 					className: m.a.unlockButton,
 					onClick: b,
 					priority: a.c.Primary
-				}, f._("Unlock Gifs", null, {
-					hk: "2HenIS"
+				}, f._("Unlock GIFs", null, {
+					hk: "4tqic4"
 				})), null)))
 			}
 		},
@@ -506,4 +506,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsGifsTooltip.73e8da66131b49cd9161.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsGifsTooltip.ed303c0dd29c5ca784db.js.map
