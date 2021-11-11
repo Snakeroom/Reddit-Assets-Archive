@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.76afff7f80b55b8eafca.js
-// Retrieved at 11/10/2021, 9:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.1408081c7a108f0d2421.js
+// Retrieved at 11/10/2021, 7:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton", "FrontpageSidebar"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, n) {
@@ -30070,8 +30070,8 @@
 				tooltipContent: d.fbt._("The main color used to style the tournament.", null, {
 					hk: "2QKzZn"
 				})
-			}, d.fbt._("Tournament Themes", null, {
-				hk: "jjUdn"
+			}, d.fbt._("Tournament Theme", null, {
+				hk: "4nMPA"
 			})), s.a.createElement(Fd, {
 				tooltipId: "prediction-question",
 				tooltipContent: d.fbt._("This should be a question about a future event that can only be answered after the event has passed. You can add more questions later.", null, {
@@ -32185,4 +32185,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.76afff7f80b55b8eafca.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.1408081c7a108f0d2421.js.map
