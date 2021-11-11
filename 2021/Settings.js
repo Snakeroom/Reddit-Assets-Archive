@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.9876b44b0283ac538d3f.js
-// Retrieved at 11/11/2021, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.9abe4d22ac60cdbd6d65.js
+// Retrieved at 11/11/2021, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, n) {
@@ -2317,12 +2317,14 @@
 		},
 		"./src/reddit/actions/gold/productOffers.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "c", (function() {
+			n.d(t, "d", (function() {
 				return P
-			})), n.d(t, "b", (function() {
+			})), n.d(t, "c", (function() {
 				return A
-			})), n.d(t, "a", (function() {
+			})), n.d(t, "b", (function() {
 				return T
+			})), n.d(t, "a", (function() {
+				return M
 			}));
 			var r = n("./node_modules/fbt/lib/FbtPublic.js"),
 				s = n("./src/lib/makeActionCreator/index.ts"),
@@ -2464,6 +2466,21 @@
 						});
 						return t(w(e)), t(S(e)), !1
 					}
+				}, M = e => async t => {
+					const n = await t(T(e));
+					return n ? (t(Object(a.f)({
+						duration: a.a,
+						kind: c.b.SuccessCommunity,
+						text: r.fbt._("Changes saved", null, {
+							hk: "2GeuMT"
+						})
+					})), t(A())) : t(Object(a.f)({
+						duration: a.a,
+						kind: c.b.Error,
+						text: r.fbt._("Something went wrong!", null, {
+							hk: "1k6gx9"
+						})
+					})), n
 				}
 		},
 		"./src/reddit/actions/goldPurchaseModals/payment.ts": function(e, t, n) {
@@ -6944,8 +6961,8 @@
 						onClick: () => {
 							t(Object(x.f)())
 						}
-					}, r.fbt._("YES, CANCEL", null, {
-						hk: "4y9xev"
+					}, r.fbt._("CANCEL MY SUBSCRIPTION", null, {
+						hk: "1U3O5g"
 					}))))
 				}),
 				ne = n("./src/reddit/components/Settings/shared/Heading.tsx"),
@@ -6992,8 +7009,8 @@
 					togglePremiumBenefitsModal: () => e(Object(p.i)("premium_benefits_modal_id")),
 					requestPurchaseCatalog: () => e(Object(m.b)()),
 					toggleUpdateCardModal: () => e(Object(p.i)(ye)),
-					requestProductOfferSubscriptions: () => e(Object(u.b)()),
-					requestCancelProductOfferSubscription: t => e(Object(u.a)(t)),
+					requestProductOfferSubscriptions: () => e(Object(u.c)()),
+					requestCancelProductOfferSubscription: t => e(Object(u.b)(t)),
 					showUpdateCardSuccessToast: () => {
 						const t = r.fbt._("You successfully updated your payment information!", null, {
 							hk: "3m4P1N"
@@ -14427,4 +14444,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.9876b44b0283ac538d3f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.9abe4d22ac60cdbd6d65.js.map
