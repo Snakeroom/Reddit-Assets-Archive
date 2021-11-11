@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.067c20f30fc261915735.js
-// Retrieved at 11/11/2021, 4:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.0b2d9d6fa40f49f79aec.js
+// Retrieved at 11/11/2021, 4:50:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -5860,46 +5860,6 @@
 				}
 			}
 		},
-		"./src/reddit/components/SubscribeButton/helpers/actionTemplateSource.ts": function(e, t, n) {
-			"use strict";
-			n.d(t, "a", (function() {
-				return i
-			}));
-			var r = n("./node_modules/fbt/lib/FbtPublic.js");
-			const s = ({
-					type: e
-				}) => "subreddit" === e ? "subredditActions" : "profileActions",
-				o = {
-					subredditActions: {
-						subscribe: () => r.fbt._("Join", null, {
-							hk: "3Nhj3V"
-						}),
-						subscribed: () => r.fbt._("Joined", null, {
-							hk: "1YGago"
-						}),
-						unsubscribe: () => r.fbt._("Leave", null, {
-							hk: "299znK"
-						})
-					},
-					profileActions: {
-						subscribe: () => r.fbt._("Follow", null, {
-							hk: "18PRa5"
-						}),
-						subscribed: () => r.fbt._("Following", null, {
-							hk: "sjS3y"
-						}),
-						unsubscribe: () => r.fbt._("Unfollow", null, {
-							hk: "3c0uwF"
-						})
-					}
-				},
-				i = ({
-					type: e,
-					key: t
-				}) => o[s({
-					type: e
-				})][t]()
-		},
 		"./src/reddit/components/SubscribeButton/index.tsx": function(e, t, n) {
 			"use strict";
 			var r = n("./src/reddit/components/TrackingHelper/index.tsx"),
@@ -6361,24 +6321,6 @@
 					postClickEventFactory: T
 				}));
 			t.a = e => Object(m.c)(E(D(e)))
-		},
-		"./src/reddit/connectors/SubscribeButton/index.ts": function(e, t, n) {
-			"use strict";
-			var r = n("./node_modules/react-redux/es/index.js"),
-				s = n("./node_modules/reselect/es/index.js"),
-				o = n("./src/reddit/actions/subscription/index.ts"),
-				i = n("./src/reddit/selectors/experiments/joinOptimizations.ts"),
-				a = n("./src/reddit/selectors/subreddit.ts");
-			t.a = Object(r.b)(() => Object(s.c)({
-				isInJoinOptimizationsExperiment: e => Object(i.a)(e) || Object(i.c)(e) || Object(i.d)(e) || Object(i.g)(e),
-				userIsSubscriber: a.cb
-			}), (e, {
-				identifier: t
-			}) => ({
-				onSubscribe: () => e(o.d([t], !0)),
-				onSubscriptionsRequested: () => e(o.e()),
-				onUnsubscribe: () => e(o.d([t], !1))
-			}))
 		},
 		"./src/reddit/constants/listingSorts.ts": function(e, t, n) {
 			"use strict";
@@ -8039,4 +7981,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.067c20f30fc261915735.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.0b2d9d6fa40f49f79aec.js.map

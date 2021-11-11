@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.b119df0a59d6e0eab5ab.js
-// Retrieved at 11/11/2021, 4:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.4fcc5566d248f24f1212.js
+// Retrieved at 11/11/2021, 4:50:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~ModListing", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -6519,18 +6519,24 @@
 		},
 		"./src/reddit/components/IdCard/helpers.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "f", (function() {
+			n.d(t, "h", (function() {
 				return c
-			})), n.d(t, "d", (function() {
+			})), n.d(t, "f", (function() {
 				return d
-			})), n.d(t, "e", (function() {
+			})), n.d(t, "g", (function() {
 				return l
-			})), n.d(t, "c", (function() {
+			})), n.d(t, "e", (function() {
 				return u
-			})), n.d(t, "b", (function() {
+			})), n.d(t, "d", (function() {
 				return m
-			})), n.d(t, "a", (function() {
+			})), n.d(t, "i", (function() {
+				return p
+			})), n.d(t, "b", (function() {
 				return b
+			})), n.d(t, "a", (function() {
+				return h
+			})), n.d(t, "c", (function() {
+				return f
 			}));
 			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
 				r = n("./src/config.ts"),
@@ -6581,7 +6587,9 @@
 					}
 				},
 				p = new a.a,
-				b = e => p.publish(e ? "VISIBLE" : "NOT_VISIBLE")
+				b = "VISIBLE",
+				h = "NOT_VISIBLE",
+				f = e => p.publish(e ? b : h)
 		},
 		"./src/reddit/components/IdCard/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -10564,7 +10572,7 @@
 				f = n("./src/reddit/components/IdCard/async.tsx"),
 				x = n("./src/lib/isFakeSubreddit/index.ts"),
 				g = n("./src/reddit/components/IdCard/helpers.ts"),
-				v = e => !Object(x.a)(e) || Object(g.d)(e) || Object(g.e)(e) || Object(g.f)(e),
+				v = e => !Object(x.a)(e) || Object(g.f)(e) || Object(g.g)(e) || Object(g.h)(e),
 				E = n("./src/reddit/components/JSAPIContainers/index.tsx"),
 				y = n("./src/reddit/components/PowerupsSidebar/index.tsx"),
 				_ = n("./src/reddit/components/SidebarAd/ListingPageSidebarAd.tsx"),
@@ -11000,7 +11008,7 @@
 						titleText: s.fbt._("Add community style", null, {
 							hk: "4lRD5A"
 						}),
-						snooBackground: Object(g.c)(`url('${Ee.a.assetPath}/img/id-cards/snoo-artist@2x.png')`)
+						snooBackground: Object(g.e)(`url('${Ee.a.assetPath}/img/id-cards/snoo-artist@2x.png')`)
 					}), i.a.createElement("div", {
 						className: Object(N.a)(Ve.a.Description, qe.a.description)
 					}, s.fbt._("Styling your community helps attract members. For assistance, take a look at the {=Customize Appearance Overview} . Here are some great ways to get started.", [s.fbt._param("=Customize Appearance Overview", i.a.createElement("a", {
@@ -18865,4 +18873,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.b119df0a59d6e0eab5ab.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.4fcc5566d248f24f1212.js.map
