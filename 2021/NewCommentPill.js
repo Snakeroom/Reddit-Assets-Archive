@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NewCommentPill.dcda9100fc7e4bddcea4.js
-// Retrieved at 11/9/2021, 3:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NewCommentPill.901ed200a8cf19b950cd.js
+// Retrieved at 11/11/2021, 10:50:11 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NewCommentPill"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, s) {
@@ -57,120 +57,137 @@
 		"./src/reddit/components/NewCommentPill/index.tsx": function(e, t, s) {
 			"use strict";
 			s.r(t), s.d(t, "trackNewCommentPill", (function() {
-				return g
+				return B
 			}));
 			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
-				o = s("./node_modules/react/index.js"),
-				r = s.n(o),
-				a = s("./node_modules/react-redux/es/index.js"),
-				c = s("./src/realtime/GQLSubscription/async.tsx"),
-				l = s("./src/reddit/components/Pill/index.tsx"),
-				d = s("./src/reddit/components/Pill/PillButton/index.tsx"),
-				i = s("./src/reddit/components/RandomBaseUserIcons/RandomBaseUserIcons.tsx"),
-				m = s("./src/reddit/components/TrackingHelper/index.tsx"),
-				u = s("./src/reddit/constants/componentSizes.ts"),
-				p = s("./src/reddit/constants/elementIds.ts"),
-				b = s("./src/reddit/constants/tracking.ts"),
-				_ = s("./src/reddit/hooks/useIntersectionObserver.ts"),
-				f = s("./src/reddit/hooks/usePostContext.ts"),
-				h = s("./src/reddit/selectors/experiments/typingIndicators.ts"),
-				j = s("./src/reddit/selectors/subreddit.ts"),
-				O = s("./src/reddit/selectors/telemetry.ts"),
-				v = s("./src/lib/classNames/index.ts"),
-				C = s("./src/reddit/components/NewCommentPill/index.m.less"),
-				I = s.n(C);
-			const g = (e, t) => s => ({
+				o = s("./src/lib/constants/index.ts"),
+				r = s("./src/lib/fastdom/index.ts"),
+				a = s("./node_modules/react/index.js"),
+				c = s.n(a),
+				l = s("./node_modules/react-redux/es/index.js"),
+				d = s("./node_modules/react-router-redux/es/index.js"),
+				i = s("./src/realtime/GQLSubscription/async.tsx"),
+				m = s("./src/reddit/components/CommentSort/index.tsx"),
+				u = s("./src/reddit/components/Pill/index.tsx"),
+				p = s("./src/reddit/components/Pill/PillButton/index.tsx"),
+				b = s("./src/reddit/components/RandomBaseUserIcons/RandomBaseUserIcons.tsx"),
+				_ = s("./src/reddit/components/TrackingHelper/index.tsx"),
+				f = s("./src/reddit/constants/componentSizes.ts"),
+				h = s("./src/reddit/constants/elementIds.ts"),
+				j = s("./src/reddit/constants/tracking.ts"),
+				O = s("./src/reddit/hooks/useIntersectionObserver.ts"),
+				v = s("./src/reddit/hooks/usePostContext.ts"),
+				C = s("./src/reddit/selectors/experiments/typingIndicators.ts"),
+				x = s("./src/reddit/selectors/subreddit.ts"),
+				I = s("./src/reddit/selectors/telemetry.ts"),
+				g = s("./src/lib/classNames/index.ts"),
+				N = s("./src/reddit/components/NewCommentPill/index.m.less"),
+				y = s.n(N);
+			const w = `?sort=${o.t.NEW}`,
+				B = (e, t) => s => ({
 					source: "post",
 					action: e,
 					noun: "new_comment_pill",
-					post: Object(O.post)(s, t.id),
-					subreddit: Object(j.I)(s, {
+					post: Object(I.post)(s, t.id),
+					subreddit: Object(x.I)(s, {
 						identifier: t.belongsTo
 					})
 				}),
-				x = (e, {
+				E = (e, {
 					type: t,
 					delta: s
 				}) => "add" === t ? e + (s || 0) : 0;
-			t.default = Object(m.c)(({
+			t.default = Object(_.c)(({
 				sendEvent: e,
 				postId: t,
 				isOverlay: s,
-				intersectionRef: m
+				intersectionRef: o
 			}) => {
-				const j = Object(o.useRef)(null),
+				const _ = Object(a.useRef)(null),
 					{
-						post: O
-					} = Object(f.a)() || {},
-					C = Object(o.useRef)(null),
-					[N, y] = Object(o.useReducer)(x, 0),
-					w = Object(a.e)(h.a),
-					[A, B] = Object(o.useState)(!1),
-					[E, P] = Object(o.useState)(!0);
-				Object(o.useEffect)(() => {
-					C.current = m || null
-				}, [m]);
-				const T = Object(o.useCallback)(([e]) => {
-					m && e.boundingClientRect.top < u.f && (P(!1), B(!1))
-				}, [m]);
-				Object(_.a)(C, T), Object(o.useEffect)(() => {
-					if (!A || E) return;
+						post: x
+					} = Object(v.a)() || {},
+					I = Object(a.useRef)(null),
+					[N, T] = Object(a.useReducer)(E, 0),
+					A = Object(l.e)(C.a),
+					[P, S] = Object(a.useState)(!1),
+					[U, k] = Object(a.useState)(!0);
+				Object(a.useEffect)(() => {
+					I.current = o || null
+				}, [o]);
+				const D = Object(a.useCallback)(([e]) => {
+					o && e.boundingClientRect.top < f.f && (k(!1), S(!1))
+				}, [o]);
+				Object(O.a)(I, D), Object(a.useEffect)(() => {
+					if (!P || U) return;
 					const e = () => {
-							B(!1)
+							S(!1)
 						},
-						t = s ? document.getElementById(p.d) : document;
+						t = s ? document.getElementById(h.d) : document;
 					return null == t || t.addEventListener("scroll", e), () => null == t ? void 0 : t.removeEventListener("scroll", e)
-				}, [E, s, A]);
-				const S = Object(o.useMemo)(() => ({
-					input: {
-						channel: {
-							teamOwner: "CONTENT_AND_COMMUNITIES",
-							category: "COMMENT_COUNT_UPDATE",
-							postID: t
+				}, [U, s, P]);
+				const R = Object(a.useMemo)(() => ({
+						input: {
+							channel: {
+								teamOwner: "CONTENT_AND_COMMUNITIES",
+								category: "COMMENT_COUNT_UPDATE",
+								postID: t
+							}
 						}
-					}
-				}), [t]);
-				Object(o.useEffect)(() => {
-					N && B(!0)
-				}, [N]), Object(o.useEffect)(() => {
-					A && O ? (j.current && clearTimeout(j.current), e(g(b.c.VIEW, O))) : j.current = setTimeout(() => y({
+					}), [t]),
+					J = Object(l.d)(),
+					z = Object(a.useCallback)(() => {
+						if (!x) return;
+						e(B(j.c.CLICK, x)), S(!1), (() => J(Object(d.b)(`${window.location.pathname}${w}`)))(), r.a.read(() => {
+							const e = document.getElementById(m.a);
+							if (e) {
+								const t = e.offsetTop - 50;
+								r.a.write(() => window.scrollTo({
+									top: t,
+									behavior: "smooth"
+								}))
+							}
+						})
+					}, [x]);
+				Object(a.useEffect)(() => {
+					N && S(!0)
+				}, [N]), Object(a.useEffect)(() => {
+					P && x ? (_.current && clearTimeout(_.current), e(B(j.c.VIEW, x))) : _.current = setTimeout(() => T({
 						type: "reset"
 					}), 1e3)
-				}, [A, e, O]);
-				const U = Object(o.useCallback)(e => {
+				}, [P, e, x]);
+				const L = Object(a.useCallback)(e => {
 					const {
 						topLevelCommentCountChange: t
 					} = e.subscribe.data;
-					t && y({
+					t && T({
 						type: "add",
 						delta: t
 					})
 				}, []);
-				return w ? r.a.createElement(r.a.Fragment, null, r.a.createElement(c.a, {
-					variables: S,
-					onData: U,
+				return A ? c.a.createElement(c.a.Fragment, null, c.a.createElement(i.a, {
+					variables: R,
+					onData: L,
 					queryKey: "topLevelCommentCountChange"
-				}), r.a.createElement("div", {
-					className: Object(v.a)(I.a.wrapper, {
-						[I.a.isOverlayWrapper]: s,
-						[I.a.wrapperVisible]: A
+				}), c.a.createElement("div", {
+					className: Object(g.a)(y.a.wrapper, {
+						[y.a.isOverlayWrapper]: s,
+						[y.a.wrapperVisible]: P
 					})
-				}, r.a.createElement(l.a, {
-					className: I.a.pillContainer
-				}, r.a.createElement(d.a, {
-					className: I.a.pillButton,
-					onClick: () => {
-						O && (e(g(b.c.CLICK, O)), B(!1), window.location.search = "sort=new")
-					},
-					variant: d.b.BUTTON
-				}, r.a.createElement(i.a, {
+				}, c.a.createElement(u.a, {
+					className: y.a.pillContainer
+				}, c.a.createElement(p.a, {
+					className: y.a.pillButton,
+					onClick: z,
+					variant: p.b.BUTTON
+				}, c.a.createElement(b.a, {
 					iconsKey: t,
 					shouldShowPresenceDot: !0,
 					shouldUseColoredSilhouetteIcons: !0,
 					shouldOutlinePresenceDot: !0,
-					memberIconClassName: I.a.memberIcon
-				}), r.a.createElement("span", {
-					className: I.a.newCommentsText
+					memberIconClassName: y.a.memberIcon
+				}), c.a.createElement("span", {
+					className: y.a.newCommentsText
 				}, N > 1 ? n.fbt._("{number of new comments} new comments", [n.fbt._param("number of new comments", N.toString())], {
 					hk: "2jSNSA"
 				}) : n.fbt._("1 new comment", null, {
@@ -370,4 +387,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NewCommentPill.dcda9100fc7e4bddcea4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NewCommentPill.901ed200a8cf19b950cd.js.map

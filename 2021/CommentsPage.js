@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.9fe9d3d3c36b17f242c3.js
-// Retrieved at 11/11/2021, 10:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.bff67699c55641c5070c.js
+// Retrieved at 11/11/2021, 10:50:11 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -1590,6 +1590,9 @@
 		},
 		"./src/reddit/components/CommentSort/index.tsx": function(e, t, s) {
 			"use strict";
+			s.d(t, "a", (function() {
+				return Q
+			}));
 			var o = s("./node_modules/fbt/lib/FbtPublic.js"),
 				n = s("./node_modules/react/index.js"),
 				r = s.n(n),
@@ -1979,7 +1982,7 @@
 					}))
 				}
 			}
-			t.a = ee(Object(k.c)(te))
+			t.b = ee(Object(k.c)(te))
 		},
 		"./src/reddit/components/Comments/Comment/ExpandButton/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -7864,7 +7867,7 @@
 					if (j.contestMode && A.push(m.a.createElement(Re.a, {
 							hasModeratorPostPermissions: a,
 							key: "contestModeBanner"
-						})), !u && !_ && A.push(m.a.createElement(Pe.a, {
+						})), !u && !_ && A.push(m.a.createElement(Pe.b, {
 							commentId: o,
 							elementRef: this.updateCommentSortRef,
 							isOverlay: f,
@@ -8480,4 +8483,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.9fe9d3d3c36b17f242c3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.bff67699c55641c5070c.js.map
