@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.7500a7054e4d926f09ae.js
-// Retrieved at 11/11/2021, 12:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.fd956ccc33a4fe5edaff.js
+// Retrieved at 11/11/2021, 2:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-NotificationUnit-Button"], {
 		"./src/reddit/actions/comment/authoring.ts": function(e, t, n) {
@@ -1050,7 +1050,7 @@
 						case O.a.AwardReceived: {
 							if (!H) return null;
 							const e = e => {
-								F && (e.preventDefault(), H ? D({
+								e.preventDefault(), F && (H ? D({
 									position: f.c.SECOND,
 									awardId: F
 								}) : v(Object(m.f)(x)))
@@ -2299,4 +2299,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.7500a7054e4d926f09ae.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.fd956ccc33a4fe5edaff.js.map
