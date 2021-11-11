@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.546dd8c1c78138944e79.js
-// Retrieved at 11/10/2021, 7:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.afbb6388d74a2680a368.js
+// Retrieved at 11/11/2021, 10:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -3991,8 +3991,8 @@
 				c = e => e.live.announcements
 		},
 		"./src/redditGQL/operations/Frontpage.json": function(e) {
-			e.exports = JSON.parse('{"id":"3f6c2c8a1279"}')
+			e.exports = JSON.parse('{"id":"3eef17bc180f"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.546dd8c1c78138944e79.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.afbb6388d74a2680a368.js.map
