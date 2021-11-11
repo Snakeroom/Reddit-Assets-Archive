@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241.231cd7b1c381174a1b61.js
-// Retrieved at 11/11/2021, 4:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241.203fdc131b211f26a6bf.js
+// Retrieved at 11/11/2021, 5:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241"], {
 		"./src/reddit/actions/authorFlair.ts": function(e, t, r) {
@@ -5428,63 +5428,65 @@
 						rules: t,
 						widgets: r,
 						name: s
-					} = e;
-					if (!r) return null;
-					const n = {
-							items: {},
-							layout: {
-								topbar: {
-									order: []
-								},
-								sidebar: {
-									order: []
-								},
-								moderatorWidget: "",
-								idCardWidget: ""
-							}
-						},
-						{
-							orderedSidebarWidgets: i,
-							orderedTopbarWidgets: d
-						} = r;
-					for (const o of d) {
-						if (o.__typename !== h.d.Menu) break;
-						n.items[o.id] = A(o), n.layout.topbar.order.push(o.id)
+					} = e, n = {
+						items: {},
+						layout: {
+							topbar: {
+								order: []
+							},
+							sidebar: {
+								order: []
+							},
+							moderatorWidget: "",
+							idCardWidget: ""
+						}
+					};
+					if (!r) {
+						const e = new Error(`Subreddit widgets: widgets not loaded, upstream error on subreddit ${s} `);
+						return i.c.captureException(e), n
 					}
-					for (const o of i) switch (o.__typename !== h.c.IdCard && o.__typename !== h.c.Moderators && n.layout.sidebar.order.push(o.id), o.__typename) {
+					const {
+						orderedSidebarWidgets: d,
+						orderedTopbarWidgets: o
+					} = r;
+					for (const i of o) {
+						if (i.__typename !== h.d.Menu) break;
+						n.items[i.id] = A(i), n.layout.topbar.order.push(i.id)
+					}
+					for (const i of d) switch (i.__typename !== h.c.IdCard && i.__typename !== h.c.Moderators && n.layout.sidebar.order.push(i.id), i.__typename) {
 						case h.c.Button:
-							n.items[o.id] = x(o);
+							n.items[i.id] = x(i);
 							break;
 						case h.c.Calendar:
-							n.items[o.id] = R(o);
+							n.items[i.id] = R(i);
 							break;
 						case h.c.CommunityList:
-							n.items[o.id] = D(o);
+							n.items[i.id] = D(i);
 							break;
 						case h.c.Custom:
-							n.items[o.id] = C(o);
+							n.items[i.id] = C(i);
 							break;
 						case h.c.IdCard:
-							n.items[o.id] = v(o), n.layout.idCardWidget = o.id;
+							n.items[i.id] = v(i), n.layout.idCardWidget = i.id;
 							break;
 						case h.c.Image:
-							n.items[o.id] = N(o);
+							n.items[i.id] = N(i);
 							break;
 						case h.c.Moderators:
-							n.items[o.id] = w(o), n.layout.moderatorWidget = o.id;
+							n.items[i.id] = w(i), n.layout.moderatorWidget = i.id;
 							break;
 						case h.c.PostFlair:
-							n.items[o.id] = P(o);
+							n.items[i.id] = P(i);
 							break;
 						case h.c.SubredditRules:
-							n.items[o.id] = U({
-								widget: o,
+							n.items[i.id] = U({
+								widget: i,
 								rules: t,
 								name: s
 							});
 							break;
 						case h.c.TextArea:
-							n.items[o.id] = G(o)
+							n.items[i.id] = G(i)
 					}
 					return n
 				};
@@ -7767,4 +7769,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241.231cd7b1c381174a1b61.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241.203fdc131b211f26a6bf.js.map
