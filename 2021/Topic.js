@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.addc25e1c8202b91f176.js
-// Retrieved at 11/11/2021, 10:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.1dfb7ae65bb6597769f9.js
+// Retrieved at 11/11/2021, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -985,6 +985,7 @@
 				homePageBreadcrumb: "_2iNJX36LR2tMHx_unzEkVM",
 				HomePageTitle: "_1JmnMJclrTwTPpAip5U_Hm",
 				homePageTitle: "_1JmnMJclrTwTPpAip5U_Hm",
+				breadcrumbTitle: "_24r4TaTKqNLBGA3VgswFrN",
 				HomePageGroup: "_306gA2lxjCHX44ssikUp3O",
 				homePageGroup: "_306gA2lxjCHX44ssikUp3O",
 				FormPageTitle: "_1Omf6afKRpv3RKNCWjIyJ4",
@@ -2196,7 +2197,7 @@
 			! function(e) {
 				e.Communities = "communities", e.Posts = "posts", e.RelatedTopics = "relatedTopics"
 			}(A || (A = {}));
-			class J extends r.a.Component {
+			class V extends r.a.Component {
 				renderSubtitleContent() {
 					const {
 						parentRelatedTopics: e
@@ -2257,7 +2258,7 @@
 					})))))
 				}
 			}
-			var V = J,
+			var J = V,
 				U = s("./src/reddit/pages/Topic/Relationship/index.m.less"),
 				G = s.n(U);
 			const {
@@ -2303,8 +2304,8 @@
 					})))
 				}
 			}
-			var Y = Q,
-				q = s("./src/lib/prettyPrintNumber/index.ts"),
+			var q = Q,
+				Y = s("./src/lib/prettyPrintNumber/index.ts"),
 				Z = s("./src/reddit/components/Flair/index.tsx"),
 				X = s("./src/reddit/components/SubredditIcon/index.tsx"),
 				$ = s("./src/reddit/components/SubscribeButton/index.tsx"),
@@ -2353,7 +2354,7 @@
 					}, ae._({
 						"*": "{subscribers count} members",
 						_1: "member"
-					}, [ae._plural(n.subscribers, "subscribers count", Object(q.b)(n.subscribers))], {
+					}, [ae._plural(n.subscribers, "subscribers count", Object(Y.b)(n.subscribers))], {
 						hk: "48BXj1"
 					})), n.isNSFW && r.a.createElement(Z.b, {
 						flair: le
@@ -2525,7 +2526,7 @@
 							timerMillis: e,
 							timeSort: this.props.timeSort
 						})
-					}, this.renderNoPosts = () => null, this.renderRelationship = (e, t) => r.a.createElement(Y, {
+					}, this.renderNoPosts = () => null, this.renderRelationship = (e, t) => r.a.createElement(q, {
 						key: e.slug,
 						openTab: this.openTab,
 						relationship: e,
@@ -2638,7 +2639,7 @@
 							className: Ce.a.SidebarRight,
 							listingName: x
 						}, L)],
-						navBar: r.a.createElement(V, {
+						navBar: r.a.createElement(J, {
 							activeTab: f,
 							layout: h,
 							onTabClick: this.openTab,
@@ -2771,4 +2772,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.addc25e1c8202b91f176.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.1dfb7ae65bb6597769f9.js.map

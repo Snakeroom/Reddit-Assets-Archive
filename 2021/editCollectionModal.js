@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/editCollectionModal.c2ad0cf8399b6abe9597.js
-// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/editCollectionModal.3f2d11a7e0d00b2b94b9.js
+// Retrieved at 11/11/2021, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["editCollectionModal"], {
 		"./node_modules/lodash/union.js": function(e, t, n) {
@@ -179,8 +179,8 @@
 				x = n("./src/reddit/constants/keycodes.ts"),
 				v = n("./src/reddit/constants/postCreation.ts"),
 				b = n("./src/reddit/controls/Button/index.tsx"),
-				f = n("./src/reddit/controls/LoadingIcon/index.tsx"),
-				g = n("./src/reddit/controls/RadioInput/index.tsx"),
+				g = n("./src/reddit/controls/LoadingIcon/index.tsx"),
+				f = n("./src/reddit/controls/RadioInput/index.tsx"),
 				C = n("./src/reddit/controls/RadioInput/RadioOption/index.tsx"),
 				E = n("./src/reddit/controls/Sortable/index.tsx"),
 				_ = n("./src/reddit/icons/svgs/Close/index.tsx"),
@@ -188,10 +188,10 @@
 				S = n("./src/reddit/models/PostCollection/index.ts"),
 				L = n("./src/reddit/selectors/postCollection.ts"),
 				O = n("./src/reddit/components/EditCollectionModal/index.m.less"),
-				P = n.n(O);
+				T = n.n(O);
 
-			function T() {
-				return (T = Object.assign || function(e) {
+			function P() {
+				return (P = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var s in n) Object.prototype.hasOwnProperty.call(n, s) && (e[s] = n[s])
@@ -199,16 +199,16 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const D = 10,
-				N = ({
+			const N = 10,
+				D = ({
 					label: e,
 					...t
 				}) => r.a.createElement("div", {
-					className: P.a.fieldWrapper
+					className: T.a.fieldWrapper
 				}, r.a.createElement("label", {
-					className: P.a.Label
-				}, e), r.a.createElement(h.i, T({
-					className: P.a.textArea,
+					className: T.a.Label
+				}, e), r.a.createElement(h.i, P({
+					className: T.a.textArea,
 					disabled: !1
 				}, t)), r.a.createElement(u.a, {
 					maxChars: t.maxLength,
@@ -218,43 +218,43 @@
 					onLayoutChange: e,
 					displayLayout: t
 				}) => r.a.createElement("div", {
-					className: P.a.layoutTypeWrapper
+					className: T.a.layoutTypeWrapper
 				}, r.a.createElement("div", {
-					className: P.a.layoutTypeTitle
+					className: T.a.layoutTypeTitle
 				}, s.fbt._("Layout type", null, {
 					hk: "39DMVQ"
-				})), r.a.createElement(g.a, {
+				})), r.a.createElement(f.a, {
 					name: "type",
 					onChange: e,
 					value: t
 				}, r.a.createElement(C.a, {
-					className: P.a.layoutOptionWrapper,
+					className: T.a.layoutOptionWrapper,
 					key: S.a.TIMELINE,
 					showButton: !0,
 					value: S.a.TIMELINE
 				}, r.a.createElement("div", {
-					className: P.a.optionTextWrapper
+					className: T.a.optionTextWrapper
 				}, r.a.createElement("div", {
-					className: P.a.layoutTitle
+					className: T.a.layoutTitle
 				}, s.fbt._("Standard", null, {
 					hk: "4opAgU"
 				})), r.a.createElement("div", {
-					className: P.a.layoutSubTitle
+					className: T.a.layoutSubTitle
 				}, s.fbt._("Best for event or discussion collections", null, {
 					hk: "3v88sS"
 				})))), r.a.createElement(C.a, {
-					className: P.a.layoutOptionWrapper,
+					className: T.a.layoutOptionWrapper,
 					key: S.a.GALLERY,
 					showButton: !0,
 					value: S.a.GALLERY
 				}, r.a.createElement("div", {
-					className: P.a.optionTextWrapper
+					className: T.a.optionTextWrapper
 				}, r.a.createElement("div", {
-					className: P.a.layoutTitle
+					className: T.a.layoutTitle
 				}, s.fbt._("Gallery", null, {
 					hk: "sR5xJ"
 				})), r.a.createElement("div", {
-					className: P.a.layoutSubTitle
+					className: T.a.layoutSubTitle
 				}, s.fbt._("Best for image heavy or meme collections", null, {
 					hk: "4Btcmq"
 				})))))),
@@ -266,8 +266,8 @@
 					description: o,
 					displayLayout: i
 				}) => r.a.createElement("div", {
-					className: P.a.editCollectionWrapper
-				}, r.a.createElement(N, {
+					className: T.a.editCollectionWrapper
+				}, r.a.createElement(D, {
 					label: s.fbt._("Title", null, {
 						hk: "1cdKLH"
 					}),
@@ -278,7 +278,7 @@
 					maxLength: v.e,
 					rows: 1,
 					value: a
-				}), r.a.createElement(N, {
+				}), r.a.createElement(D, {
 					label: s.fbt._("Description", null, {
 						hk: "iNZtt"
 					}),
@@ -294,8 +294,8 @@
 					displayLayout: i
 				})),
 				F = e => r.a.createElement("button", {
-					className: Object(a.a)(e.className, P.a.Tab, {
-						[P.a.selected]: e.active
+					className: Object(a.a)(e.className, T.a.Tab, {
+						[T.a.selected]: e.active
 					}),
 					onClick: e.onClick
 				}, e.children),
@@ -397,12 +397,12 @@
 					if (!o) return;
 					const i = o[e];
 					return i && r.a.createElement(p.a, {
-						className: P.a.dragItem,
+						className: T.a.dragItem,
 						isDragging: n,
 						isOver: s,
 						canDrop: a
 					}, r.a.createElement("div", {
-						className: P.a.PostTitle
+						className: T.a.PostTitle
 					}, i.title), r.a.createElement(m.b, {
 						post: i
 					}))
@@ -418,20 +418,20 @@
 						title: i
 					} = this.state, c = this.hasUnsavedTitle() || this.hasUnsavedDescription() || this.hasUnsavedOrder() || this.hasUnsavedLayout();
 					return r.a.createElement("div", {
-						className: P.a.Wrapper
+						className: T.a.Wrapper
 					}, r.a.createElement("div", {
-						className: P.a.TopRow
+						className: T.a.TopRow
 					}, r.a.createElement("div", {
-						className: P.a.modalTitle
+						className: T.a.modalTitle
 					}, s.fbt._("Edit collection", null, {
 						hk: "2uoDhJ"
 					}), r.a.createElement("div", {
-						className: P.a.closeWrapper,
+						className: T.a.closeWrapper,
 						onClick: this.props.onClose
 					}, r.a.createElement(_.a, {
-						className: P.a.Close
+						className: T.a.Close
 					})))), r.a.createElement(y.a, {
-						className: P.a.InlineRow
+						className: T.a.InlineRow
 					}, r.a.createElement(F, {
 						active: !a,
 						onClick: this.onCollectionTabClick
@@ -443,7 +443,7 @@
 					}, s.fbt._("Posts", null, {
 						hk: "1ojLYW"
 					}))), r.a.createElement("div", {
-						className: P.a.bodyContainer
+						className: T.a.bodyContainer
 					}, a ? r.a.createElement(E.a, {
 						getReactKey: this.getReactKey,
 						onDrop: this.handleReorder,
@@ -457,15 +457,15 @@
 						displayLayout: n,
 						onLayoutChange: this.onLayoutChange
 					})), r.a.createElement("div", {
-						className: P.a.FooterWrapper
+						className: T.a.FooterWrapper
 					}, r.a.createElement(b.t, {
 						kind: b.b.Button,
 						priority: b.c.Primary,
 						onClick: this.handleSave,
 						disabled: !c || e
-					}, e ? r.a.createElement(f.a, {
-						className: P.a.loadingIcon,
-						sizePx: D
+					}, e ? r.a.createElement(g.a, {
+						className: T.a.loadingIcon,
+						sizePx: N
 					}) : s.fbt._("Save", null, {
 						hk: "26UTYg"
 					}))))
@@ -512,8 +512,8 @@
 				x = n.n(h),
 				v = n("./src/lib/lessComponent.tsx");
 			const b = v.a.span("PostEventFutureText", x.a),
-				f = v.a.span("PostEventPastText", x.a),
-				g = v.a.span("PostEventNowText", x.a),
+				g = v.a.span("PostEventPastText", x.a),
+				f = v.a.span("PostEventNowText", x.a),
 				C = v.a.span("Container", x.a),
 				E = v.a.wrapped(u, "CalendarIcon", x.a),
 				_ = v.a.wrapped(m, "LiveIcon", x.a),
@@ -556,11 +556,11 @@
 							className: e
 						})
 					}
-					if (i) u = a.a.createElement(g, null, a.a.createElement(_, null), l);
+					if (i) u = a.a.createElement(f, null, a.a.createElement(_, null), l);
 					else if (d === o.a.Future) u = a.a.createElement(b, null, a.a.createElement(E, null), l);
 					else {
 						if (d !== o.a.Past) return null;
-						u = a.a.createElement(f, null, a.a.createElement(E, null), l)
+						u = a.a.createElement(g, null, a.a.createElement(E, null), l)
 					}
 					return a.a.createElement(C, {
 						className: e
@@ -713,6 +713,7 @@
 				homePageBreadcrumb: "_2iNJX36LR2tMHx_unzEkVM",
 				HomePageTitle: "_1JmnMJclrTwTPpAip5U_Hm",
 				homePageTitle: "_1JmnMJclrTwTPpAip5U_Hm",
+				breadcrumbTitle: "_24r4TaTKqNLBGA3VgswFrN",
 				HomePageGroup: "_306gA2lxjCHX44ssikUp3O",
 				homePageGroup: "_306gA2lxjCHX44ssikUp3O",
 				FormPageTitle: "_1Omf6afKRpv3RKNCWjIyJ4",
@@ -768,9 +769,9 @@
 			})), n.d(t, "e", (function() {
 				return b
 			})), n.d(t, "b", (function() {
-				return f
-			})), n.d(t, "c", (function() {
 				return g
+			})), n.d(t, "c", (function() {
+				return f
 			})), n.d(t, "d", (function() {
 				return C
 			})), n.d(t, "j", (function() {
@@ -791,8 +792,8 @@
 				x = s.a.div("FormGroupDescription", o.a),
 				v = s.a.div("FormItem", o.a),
 				b = s.a.h3("FormElementTitle", o.a),
-				f = s.a.div("FormElementDescription", o.a),
-				g = s.a.div("FormElementError", o.a),
+				g = s.a.div("FormElementDescription", o.a),
+				f = s.a.div("FormElementError", o.a),
 				C = s.a.div("FormElementSubGroup", o.a),
 				E = s.a.li("FormListItem", o.a)
 		},
@@ -836,9 +837,9 @@
 			})), n.d(t, "i", (function() {
 				return b
 			})), n.d(t, "h", (function() {
-				return f
-			})), n.d(t, "g", (function() {
 				return g
+			})), n.d(t, "g", (function() {
+				return f
 			}));
 			var s = n("./src/lib/lessComponent.tsx"),
 				a = n("./src/reddit/controls/Input/ModalInput.tsx"),
@@ -855,8 +856,8 @@
 				x = s.a.wrapped(o.a, "Checkbox", l.a),
 				v = s.a.wrapped(r.a, "CheckboxSelected", l.a),
 				b = s.a.textarea("Textarea", l.a),
-				f = s.a.label("StyledLabel", l.a),
-				g = s.a.input("StyledFileInput", l.a)
+				g = s.a.label("StyledLabel", l.a),
+				f = s.a.input("StyledFileInput", l.a)
 		},
 		"./src/reddit/components/StructuredStyles/StyledComponents/navs.m.less": function(e, t, n) {
 			e.exports = {
@@ -1110,4 +1111,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/editCollectionModal.c2ad0cf8399b6abe9597.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/editCollectionModal.3f2d11a7e0d00b2b94b9.js.map

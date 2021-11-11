@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/BannedUserModal.e65eff95bfed834b1776.js
-// Retrieved at 11/4/2021, 4:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/BannedUserModal.e757a46701be8dd41846.js
+// Retrieved at 11/11/2021, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["BannedUserModal"], {
 		"./src/reddit/actions/inContextModeration.ts": function(e, t, n) {
@@ -56,8 +56,8 @@
 			var y = n("./src/reddit/helpers/normalizeUsername/index.tsx"),
 				g = n("./src/reddit/models/SubredditModeration/index.ts"),
 				C = n("./src/reddit/models/Toast/index.ts"),
-				S = n("./src/reddit/selectors/activeModalId.ts"),
-				w = n("./src/reddit/selectors/bannedUser.ts"),
+				w = n("./src/reddit/selectors/activeModalId.ts"),
+				S = n("./src/reddit/selectors/bannedUser.ts"),
 				k = n("./src/reddit/selectors/subreddit.ts"),
 				E = n("./src/reddit/selectors/user.ts"),
 				j = n("./src/reddit/actions/subredditModeration/constants.ts"),
@@ -106,8 +106,8 @@
 					error: v,
 					pending: R
 				});
-			const B = {};
-			var T = (e = B, t) => {
+			const T = {};
+			var B = (e = T, t) => {
 					switch (t.type) {
 						case j.n: {
 							const {
@@ -256,7 +256,7 @@
 				},
 				z = Object(M.c)({
 					api: N,
-					fetchedTokens: T,
+					fetchedTokens: B,
 					inContext: D,
 					loadMore: L,
 					models: q,
@@ -382,7 +382,7 @@
 				}, ie = (e, t) => async (n, s) => {
 					const r = s();
 					await Promise.all([(async () => {
-						if (!Object(S.b)(u.a.BAN_USER)(r) && !Object(k.N)(r, {
+						if (!Object(w.b)(u.a.BAN_USER)(r) && !Object(k.N)(r, {
 								subredditId: e
 							})) {
 							const t = Object(k.Q)(r, {
@@ -395,7 +395,7 @@
 							userName: t
 						});
 						if (!s) return;
-						const a = Object(w.h)(r, {
+						const a = Object(S.h)(r, {
 							subredditId: e
 						});
 						a && a[s.id] || await n($(e, {
@@ -600,8 +600,8 @@
 				y = n("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
 				g = n("./src/reddit/models/ApiRequestState/index.ts"),
 				C = n("./src/reddit/models/SubredditModeration/index.ts"),
-				S = n("./src/reddit/selectors/apiRequestState.ts"),
-				w = n("./src/reddit/selectors/bannedUser.ts"),
+				w = n("./src/reddit/selectors/apiRequestState.ts"),
+				S = n("./src/reddit/selectors/bannedUser.ts"),
 				k = n("./src/reddit/components/BannedUserList/AddBannedUserModal/DaysInput.tsx"),
 				E = n("./src/reddit/components/BannedUserList/AddBannedUserModal/RulesDropdown.tsx"),
 				j = n("./src/reddit/components/BannedUserList/AddBannedUserModal/_AddBannedUserModal.m.less"),
@@ -611,20 +611,20 @@
 				I = l.a.wrapped(x.a, "Unban", O.a),
 				R = l.a.wrapped(p.s, "UnbanButton", O.a),
 				N = l.a.wrapped(p.p, "ModalText", O.a),
-				B = l.a.div("DescriptionText", O.a),
-				T = l.a.span("Bullet", O.a),
-				U = l.a.wrapped(B, "VisibilityNote", O.a),
+				T = l.a.div("DescriptionText", O.a),
+				B = l.a.span("Bullet", O.a),
+				U = l.a.wrapped(T, "VisibilityNote", O.a),
 				D = l.a.wrapped(p.g, "ModalFooter", O.a),
 				P = l.a.div("FooterRow", O.a),
 				L = Object(d.c)({
-					apiRequestStates: S.a,
+					apiRequestStates: w.a,
 					user(e, t) {
 						if (t.user) return t.user;
 						const {
 							username: n,
 							subredditId: s
 						} = t;
-						return n ? Object(w.b)(e, {
+						return n ? Object(S.b)(e, {
 							username: n,
 							subredditId: s
 						}) : void 0
@@ -767,7 +767,7 @@
 						togglePermanent: this.togglePermanent
 					})), a.a.createElement(D, null, a.a.createElement(P, null, a.a.createElement(N, null, s.fbt._("Note to include in ban message", null, {
 						hk: "44jlkB"
-					}), a.a.createElement(T, null, "•"))), a.a.createElement(P, null, a.a.createElement(p.t, {
+					}), a.a.createElement(B, null, "•"))), a.a.createElement(P, null, a.a.createElement(p.t, {
 						onChange: e => this.setState({
 							banMessage: e.currentTarget.value
 						}),
@@ -783,7 +783,7 @@
 						onClick: this.onRemove
 					}, a.a.createElement(I, null), s.fbt._("Unban", null, {
 						hk: "3zNsVi"
-					})) : a.a.createElement(U, null, a.a.createElement(T, null, "•"), s.fbt._("Visible to banned user", null, {
+					})) : a.a.createElement(U, null, a.a.createElement(B, null, "•"), s.fbt._("Visible to banned user", null, {
 						hk: "1PQbxq"
 					})), a.a.createElement(_.a, null, a.a.createElement(p.a, {
 						onClick: e.toggleModal,
@@ -838,6 +838,7 @@
 				homePageBreadcrumb: "_2iNJX36LR2tMHx_unzEkVM",
 				HomePageTitle: "_1JmnMJclrTwTPpAip5U_Hm",
 				homePageTitle: "_1JmnMJclrTwTPpAip5U_Hm",
+				breadcrumbTitle: "_24r4TaTKqNLBGA3VgswFrN",
 				HomePageGroup: "_306gA2lxjCHX44ssikUp3O",
 				homePageGroup: "_306gA2lxjCHX44ssikUp3O",
 				FormPageTitle: "_1Omf6afKRpv3RKNCWjIyJ4",
@@ -1137,4 +1138,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BannedUserModal.e65eff95bfed834b1776.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BannedUserModal.e757a46701be8dd41846.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SurveyAsync.c6f9e0fc3b60c19d5251.js
-// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SurveyAsync.66d929792c4a6f48736f.js
+// Retrieved at 11/11/2021, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SurveyAsync"], {
 		"./src/reddit/components/CharacterCountdown/index.m.less": function(e, t, n) {
@@ -82,6 +82,7 @@
 				homePageBreadcrumb: "_2iNJX36LR2tMHx_unzEkVM",
 				HomePageTitle: "_1JmnMJclrTwTPpAip5U_Hm",
 				homePageTitle: "_1JmnMJclrTwTPpAip5U_Hm",
+				breadcrumbTitle: "_24r4TaTKqNLBGA3VgswFrN",
 				HomePageGroup: "_306gA2lxjCHX44ssikUp3O",
 				homePageGroup: "_306gA2lxjCHX44ssikUp3O",
 				FormPageTitle: "_1Omf6afKRpv3RKNCWjIyJ4",
@@ -129,9 +130,9 @@
 			})), n.d(t, "h", (function() {
 				return p
 			})), n.d(t, "a", (function() {
-				return f
-			})), n.d(t, "g", (function() {
 				return b
+			})), n.d(t, "g", (function() {
+				return f
 			})), n.d(t, "i", (function() {
 				return h
 			})), n.d(t, "e", (function() {
@@ -156,8 +157,8 @@
 				u = a.a.div("FormPageSection", s.a),
 				d = a.a.div("FormGroup", s.a),
 				p = a.a.h2("FormGroupTitle", s.a),
-				f = a.a.div("FormElement", s.a),
-				b = a.a.div("FormGroupDescription", s.a),
+				b = a.a.div("FormElement", s.a),
+				f = a.a.div("FormGroupDescription", s.a),
 				h = a.a.div("FormItem", s.a),
 				C = a.a.h3("FormElementTitle", s.a),
 				_ = a.a.div("FormElementDescription", s.a),
@@ -181,8 +182,8 @@
 				u = n("./src/lib/classNames/index.ts"),
 				d = n("./src/reddit/components/CharacterCountdown/index.tsx"),
 				p = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
-				f = n("./src/reddit/controls/Button/index.tsx"),
-				b = n("./src/reddit/icons/svgs/Chevron/index.tsx"),
+				b = n("./src/reddit/controls/Button/index.tsx"),
+				f = n("./src/reddit/icons/svgs/Chevron/index.tsx"),
 				h = n("./src/reddit/components/Survey/index.m.less"),
 				C = n.n(h);
 			const _ = ({
@@ -193,7 +194,7 @@
 					className: C.a.optionsWrapper
 				}, Array.from({
 					length: e === c.a.NPS ? 11 : 7
-				}).map((a, o) => s.a.createElement(f.o, {
+				}).map((a, o) => s.a.createElement(b.o, {
 					className: Object(u.a)(C.a.option, {
 						[C.a.isSelected]: t === o
 					}),
@@ -209,7 +210,7 @@
 						[m, d] = Object(o.useState)(!1),
 						{
 							className: p,
-							shouldMount: f,
+							shouldMount: b,
 							onTransitionEnd: h
 						} = Object(i.a)({
 							defaultClass: C.a.introToast,
@@ -219,7 +220,7 @@
 						_ = e => {
 							e && e.stopPropagation(), d(!0)
 						};
-					return Object(o.useEffect)(() => (n.current = window.setTimeout(_, 1e4), () => window.clearTimeout(n.current)), []), f ? s.a.createElement("div", {
+					return Object(o.useEffect)(() => (n.current = window.setTimeout(_, 1e4), () => window.clearTimeout(n.current)), []), b ? s.a.createElement("div", {
 						className: p,
 						onClick: () => {
 							window.clearTimeout(n.current), c(!0)
@@ -236,7 +237,7 @@
 						hk: "1MmTHK"
 					})), " ", a.fbt._("Take our one-minute survey.", null, {
 						hk: "3mB3oh"
-					})), s.a.createElement(b.a, {
+					})), s.a.createElement(f.a, {
 						className: Object(u.a)(C.a.icon, C.a.chevron)
 					})) : null
 				},
@@ -253,7 +254,7 @@
 					onNumberSelected: e
 				}), s.a.createElement(v, {
 					type: o.type
-				}), s.a.createElement(f.l, {
+				}), s.a.createElement(b.l, {
 					className: C.a.submitBtn,
 					onClick: t,
 					disabled: void 0 === n
@@ -279,7 +280,7 @@
 					className: C.a.characterCountdown,
 					text: o,
 					maxChars: 240
-				}), s.a.createElement(f.l, {
+				}), s.a.createElement(b.l, {
 					className: C.a.submitBtn,
 					onClick: t
 				}, a.fbt._("Done", null, {
@@ -323,7 +324,7 @@
 				activeSurvey: e,
 				setActiveSurvey: t
 			}) {
-				const [n, u] = Object(o.useState)(!1), [d, p] = Object(o.useState)(void 0), [f, b] = Object(o.useState)(""), h = Object(o.useCallback)(e => b(e.target.value), []), {
+				const [n, u] = Object(o.useState)(!1), [d, p] = Object(o.useState)(void 0), [b, f] = Object(o.useState)(""), h = Object(o.useCallback)(e => f(e.target.value), []), {
 					activeStepNum: _,
 					isFollowUp: v,
 					onStepComplete: y,
@@ -336,18 +337,18 @@
 					selectedNumber: d,
 					setIsSurveyDismissed: u,
 					setSelectedNumber: p,
-					setTextResponse: b,
-					textResponse: f
+					setTextResponse: f,
+					textResponse: b
 				}), {
 					className: F,
 					shouldMount: T,
-					onTransitionEnd: j
+					onTransitionEnd: w
 				} = Object(i.a)({
 					defaultClass: C.a.surveyContainer,
 					addedClass: C.a.isOpen,
 					mountCondition: !n && _ > -1
 				}), {
-					isLeavingModalShowing: w,
+					isLeavingModalShowing: j,
 					onClose: L,
 					onLeaveCancel: M,
 					onLeaveConfirm: A
@@ -355,8 +356,8 @@
 					activeSurvey: e,
 					activeStepNum: _,
 					isFollowUp: v,
-					textResponse: f,
-					setTextResponse: b,
+					textResponse: b,
+					setTextResponse: f,
 					setIsSurveyDismissed: u
 				});
 				return Object(m.c)({
@@ -368,7 +369,7 @@
 					setIsFollowUp: k,
 					shouldMount: T,
 					uiStep: N
-				}), -1 !== _ || n ? T ? s.a.createElement(s.a.Fragment, null, w && s.a.createElement(r.a, {
+				}), -1 !== _ || n ? T ? s.a.createElement(s.a.Fragment, null, j && s.a.createElement(r.a, {
 					actionText: a.fbt._("Finish Survey", null, {
 						hk: "18Lvjs"
 					}),
@@ -386,7 +387,7 @@
 					onClose: M
 				}), s.a.createElement("div", {
 					className: F,
-					onTransitionEnd: j
+					onTransitionEnd: w
 				}, s.a.createElement(l.a, {
 					className: C.a.closeBtn,
 					onClick: L
@@ -400,7 +401,7 @@
 					onStepComplete: y,
 					onTextChange: h,
 					step: e.steps[_],
-					text: f
+					text: b
 				}) : s.a.createElement(E, {
 					step: e.steps[_],
 					selectedNumber: d,
@@ -464,4 +465,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SurveyAsync.c6f9e0fc3b60c19d5251.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SurveyAsync.66d929792c4a6f48736f.js.map

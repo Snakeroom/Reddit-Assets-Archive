@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.8fd7578f737241a65cc6.js
-// Retrieved at 11/10/2021, 7:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.d45120ac510ab3e97499.js
+// Retrieved at 11/11/2021, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, n) {
@@ -613,6 +613,7 @@
 				homePageBreadcrumb: "_2iNJX36LR2tMHx_unzEkVM",
 				HomePageTitle: "_1JmnMJclrTwTPpAip5U_Hm",
 				homePageTitle: "_1JmnMJclrTwTPpAip5U_Hm",
+				breadcrumbTitle: "_24r4TaTKqNLBGA3VgswFrN",
 				HomePageGroup: "_306gA2lxjCHX44ssikUp3O",
 				homePageGroup: "_306gA2lxjCHX44ssikUp3O",
 				FormPageTitle: "_1Omf6afKRpv3RKNCWjIyJ4",
@@ -2152,8 +2153,8 @@
 				W = n("./src/reddit/selectors/subreddit.ts"),
 				M = n("./src/reddit/selectors/subredditLeaderboard.ts"),
 				A = n("./src/reddit/selectors/user.ts");
-			const z = 25,
-				G = .5,
+			const G = 25,
+				z = .5,
 				H = Object(d.c)({
 					hasPreviousPage: (e, {
 						categoryId: t
@@ -2207,7 +2208,7 @@
 						after: a,
 						categoryId: e === b.c ? b.f : e,
 						filter: D.a,
-						first: z,
+						first: G,
 						isOnlyModIncluded: i
 					}
 				}
@@ -2240,7 +2241,7 @@
 						className: _.a.subredditRankingsList
 					}, s ? this.renderSubredditRankItems(c) : this.renderSubredditRankItemPlaceholders(), o && i.a.createElement(C.a, {
 						onChange: this.fetchMoreSubreddits,
-						threshold: G,
+						threshold: z,
 						rootMargin: "0px 0px 0px 0px"
 					}, i.a.createElement("li", null, i.a.createElement(B.a, {
 						large: !0
@@ -2252,8 +2253,8 @@
 				K = n("./src/reddit/components/CategoryPickerWidget/index.m.less"),
 				Z = n.n(K);
 
-			function X() {
-				return (X = Object.assign || function(e) {
+			function V() {
+				return (V = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -2261,7 +2262,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const V = e => {
+			const X = e => {
 				const {
 					category: t,
 					children: n,
@@ -2269,7 +2270,7 @@
 					isActive: s,
 					tabIndex: a
 				} = e, o = Object(c.a)(Z.a.categoryLink, s && Z.a.active, r);
-				return i.a.createElement("li", null, i.a.createElement(U.a, X({}, t.anchorProps, {
+				return i.a.createElement("li", null, i.a.createElement(U.a, V({}, t.anchorProps, {
 					className: o,
 					"data-active": s,
 					onMouseDown: () => e.onSendEventClick(t.name),
@@ -2329,7 +2330,7 @@
 						}
 					}, s, e && e.map((e, r) => {
 						const s = a + r * n;
-						return i.a.createElement(V, {
+						return i.a.createElement(X, {
 							category: e,
 							className: t,
 							isActive: h(e.name),
@@ -2560,4 +2561,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.8fd7578f737241a65cc6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.d45120ac510ab3e97499.js.map

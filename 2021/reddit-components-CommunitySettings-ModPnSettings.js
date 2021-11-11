@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CommunitySettings-ModPnSettings.abd60e7587b792a39407.js
-// Retrieved at 11/3/2021, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CommunitySettings-ModPnSettings.59729efdfe3494bfa683.js
+// Retrieved at 11/11/2021, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CommunitySettings-ModPnSettings"], {
 		"./node_modules/lodash/times.js": function(e, t, n) {
@@ -7,15 +7,15 @@
 				o = n("./node_modules/lodash/_castFunction.js"),
 				s = n("./node_modules/lodash/toInteger.js"),
 				i = 9007199254740991,
-				d = 4294967295,
-				r = Math.min;
+				r = 4294967295,
+				d = Math.min;
 			e.exports = function(e, t) {
 				if ((e = s(e)) < 1 || e > i) return [];
-				var n = d,
-					c = r(e, d);
-				t = o(t), e -= d;
-				for (var u = a(c, t); ++n < e;) t(n);
-				return u
+				var n = r,
+					c = d(e, r);
+				t = o(t), e -= r;
+				for (var l = a(c, t); ++n < e;) t(n);
+				return l
 			}
 		},
 		"./src/reddit/components/CommunitySettings/ModPnSettings/index.m.less": function(e, t, n) {
@@ -38,11 +38,11 @@
 				o = n.n(a),
 				s = n("./node_modules/react/index.js"),
 				i = n.n(s),
-				d = n("./node_modules/react-redux/es/index.js"),
-				r = n("./src/reddit/actions/toaster.ts"),
+				r = n("./node_modules/react-redux/es/index.js"),
+				d = n("./src/reddit/actions/toaster.ts"),
 				c = n("./src/reddit/components/Settings/shared/Widgets.tsx");
 
-			function u({
+			function l({
 				displayValue: e,
 				pageLayoutData: t,
 				pushPage: n
@@ -58,7 +58,7 @@
 					color: "none"
 				})
 			}
-			var l = n("./src/reddit/selectors/telemetry.ts"),
+			var u = n("./src/reddit/selectors/telemetry.ts"),
 				g = n("./src/redditGQL/types.ts");
 			const m = Object.values(g.e),
 				p = Object.values(g.f),
@@ -68,7 +68,7 @@
 						action: "view",
 						noun: "mod_pn_settings",
 						actionInfo: {
-							...l.defaults(t).actionInfo,
+							...u.defaults(t).actionInfo,
 							paneName: e
 						}
 					}
@@ -79,13 +79,13 @@
 						action: "click",
 						noun: "mod_pn_settings",
 						actionInfo: {
-							...l.defaults(t).actionInfo,
+							...u.defaults(t).actionInfo,
 							paneName: e
 						}
 					}
 				},
 				_ = e => t => {
-					const n = l.defaults(t),
+					const n = u.defaults(t),
 						a = e.id,
 						o = e.id.toUpperCase();
 					if (p.includes(o)) {
@@ -127,27 +127,27 @@
 				currentRange: o,
 				onChange: s
 			}) {
-				const d = Object(y.a)(),
+				const r = Object(y.a)(),
 					{
-						ranges: r,
-						id: u,
-						rangeTitle: l,
+						ranges: d,
+						id: l,
+						rangeTitle: u,
 						title: g,
 						description: m
 					} = e,
-					p = r.reduce((e, t, n) => (e[n] = {
+					p = d.reduce((e, t, n) => (e[n] = {
 						text: t,
 						color: "var(--newCommunityTheme-active)"
 					}, e), {}),
 					b = n ? a : o,
-					S = l.replace("{count}", `${b}`);
+					S = u.replace("{count}", `${b}`);
 				return i.a.createElement(i.a.Fragment, null, i.a.createElement(c.p, {
 					on: !n,
 					onClick: () => {
-						s(u, {
+						s(l, {
 							isAuto: !n
-						}), d(f({
-							id: u,
+						}), r(f({
+							id: l,
 							isAuto: !n
 						}))
 					},
@@ -157,12 +157,12 @@
 				}), i.a.createElement(c.j, {
 					ticks: p,
 					min: 0,
-					max: r.length - 1,
+					max: d.length - 1,
 					step: 1,
-					value: r.indexOf(b),
+					value: d.indexOf(b),
 					onChange: e => {
-						s(u, {
-							currentRange: r[e.target.value]
+						s(l, {
+							currentRange: d[e.target.value]
 						})
 					},
 					label: S,
@@ -201,11 +201,11 @@
 				const {
 					title: o,
 					description: s,
-					id: d
+					id: r
 				} = a;
 				return i.a.createElement(c.p, {
 					on: t,
-					onClick: () => n(d, {
+					onClick: () => n(r, {
 						isEnabled: !t
 					}),
 					label: o,
@@ -232,7 +232,7 @@
 			}) {
 				switch (a.__typename) {
 					case "ModPnSettingsLayoutRowPage":
-						return i.a.createElement(u, {
+						return i.a.createElement(l, {
 							pageLayoutData: a,
 							pushPage: n,
 							displayValue: a.displayValue ? v(a.id, t, o) : null
@@ -280,18 +280,18 @@
 			}) {
 				const s = e.sections[n],
 					{
-						title: d,
-						rows: r
+						title: r,
+						rows: d
 					} = s,
-					c = r.map(t => e.rows[t]),
-					[u] = c.filter(e => "ModPnSettingsLayoutRowSectionToggle" === e.__typename);
-				let l = !1;
-				if (u) {
-					const e = a[u.id];
-					l = !e.isEnabled
+					c = d.map(t => e.rows[t]),
+					[l] = c.filter(e => "ModPnSettingsLayoutRowSectionToggle" === e.__typename);
+				let u = !1;
+				if (l) {
+					const e = a[l.id];
+					u = !e.isEnabled
 				}
-				return i.a.createElement("div", null, !!d && i.a.createElement(k.a, null, d), c.map(n => i.a.createElement(j, {
-					isSectionDisabled: l,
+				return i.a.createElement("div", null, !!r && i.a.createElement(k.a, null, r), c.map(n => i.a.createElement(j, {
+					isSectionDisabled: u,
 					key: n.id,
 					layoutData: e,
 					pushPage: t,
@@ -300,9 +300,9 @@
 					updateSetting: o
 				})))
 			}
-			var P = n("./src/reddit/components/ModHub/StyledComponents/index.tsx"),
-				w = n("./src/reddit/components/StructuredStyles/Breadcrumbs/index.tsx"),
-				D = n("./src/reddit/components/TrackingHelper/index.tsx");
+			var D = n("./src/reddit/components/ModHub/StyledComponents/index.tsx"),
+				P = n("./src/reddit/components/StructuredStyles/Breadcrumbs/index.tsx"),
+				w = n("./src/reddit/components/TrackingHelper/index.tsx");
 
 			function O({
 				goBack: e,
@@ -310,11 +310,11 @@
 				pageId: n,
 				pushPage: a,
 				settings: o,
-				showBackButton: d,
-				subredditName: r,
-				updateSetting: u
+				showBackButton: r,
+				subredditName: d,
+				updateSetting: l
 			}) {
-				const l = Object(D.b)(),
+				const u = Object(w.b)(),
 					g = t.pages[n],
 					{
 						title: m,
@@ -322,34 +322,34 @@
 						sections: S
 					} = g;
 				return Object(s.useEffect)(() => {
-					l(b(n))
-				}, [l, n]), i.a.createElement(i.a.Fragment, null, i.a.createElement("div", {
+					u(b(n))
+				}, [u, n]), i.a.createElement(i.a.Fragment, null, i.a.createElement("div", {
 					className: E.a.TitleContainer
-				}, d && i.a.createElement(c.f, {
+				}, r && i.a.createElement(c.f, {
 					onClick: e,
 					"data-testid": "mod-pns-back-button"
-				}, i.a.createElement(w.a, null)), i.a.createElement(P.b, null, m)), i.a.createElement(k.a, null, !!p && p.replace("{community}", r)), S.map(e => i.a.createElement(R, {
+				}, i.a.createElement(P.a, null)), i.a.createElement(D.b, null, m)), i.a.createElement(k.a, null, !!p && p.replace("{community}", d)), S.map(e => i.a.createElement(R, {
 					sectionId: e,
 					layoutData: t,
 					settings: o,
-					updateSetting: u,
+					updateSetting: l,
 					pushPage: a,
 					key: e
 				})))
 			}
 			var M = n("./src/reddit/components/Settings/Notifications/LoadingState/index.tsx"),
-				T = n("./src/lib/makeGqlRequest/index.ts"),
-				N = n("./src/redditGQL/operations/GetModPnSettingsLayout.json"),
+				N = n("./src/lib/makeGqlRequest/index.ts"),
+				T = n("./src/redditGQL/operations/GetModPnSettingsLayout.json"),
 				A = n("./src/redditGQL/operations/UpdateModPnSettingStatus.json"),
 				B = n("./src/redditGQL/operations/UpdateModPnSettingThreshold.json");
-			const I = (e, t) => Object(T.a)(e, {
-					...N,
+			const I = (e, t) => Object(N.a)(e, {
+					...T,
 					variables: {
 						subredditIds: [t]
 					}
 				}),
 				G = (e, t) => "threshold" in t ? H(e, t) : V(e, t),
-				H = (e, t) => Object(T.a)(e, {
+				H = (e, t) => Object(N.a)(e, {
 					...B,
 					variables: {
 						input: {
@@ -357,7 +357,7 @@
 						}
 					}
 				}),
-				V = (e, t) => Object(T.a)(e, {
+				V = (e, t) => Object(N.a)(e, {
 					...A,
 					variables: {
 						input: {
@@ -419,7 +419,7 @@
 				const {
 					subredditId: t,
 					subredditName: n
-				} = e, [a, c] = Object(s.useState)(null), [u, l] = Object(s.useState)({}), [b, f] = Object(s.useState)(!0), h = Object(Y.a)(), E = Object(d.d)(), x = Object(y.a)(), [L, C] = Object(s.useState)(["page__root"]);
+				} = e, [a, c] = Object(s.useState)(null), [l, u] = Object(s.useState)({}), [b, f] = Object(s.useState)(!0), h = Object(Y.a)(), E = Object(r.d)(), x = Object(y.a)(), [L, C] = Object(s.useState)(["page__root"]);
 				Object(s.useEffect)(() => {
 					(async () => {
 						const e = await I(h(), t);
@@ -452,8 +452,8 @@
 										isEnabled: n
 									}
 								}
-							}), c(a), l(o), f(!1)
-						} else E(Object(r.d)())
+							}), c(a), u(o), f(!1)
+						} else E(Object(d.d)())
 					})()
 				}, []);
 				const v = Object(s.useCallback)(o()(async ({
@@ -484,12 +484,12 @@
 						const {
 							id: t
 						} = e;
-						l({
-							...u,
+						u({
+							...l,
 							[t]: {
 								...e
 							}
-						}), E(Object(r.d)())
+						}), E(Object(d.d)())
 					}
 				}, U), []);
 				if (b || !a) return i.a.createElement(M.a, null);
@@ -499,13 +499,13 @@
 					pageId: j,
 					showBackButton: k,
 					updateSetting: (e, t) => {
-						const n = u[e],
+						const n = l[e],
 							a = {
-								...u[e],
+								...l[e],
 								...t
 							};
-						l({
-							...u,
+						u({
+							...l,
 							[e]: {
 								...a
 							}
@@ -515,7 +515,7 @@
 						})
 					},
 					layoutData: a,
-					settings: u,
+					settings: l,
 					pushPage: e => {
 						C([...L, e]), x(S(e))
 					},
@@ -543,16 +543,16 @@
 			n.d(t, "a", (function() {
 				return i
 			})), n.d(t, "b", (function() {
-				return d
-			})), n.d(t, "c", (function() {
 				return r
+			})), n.d(t, "c", (function() {
+				return d
 			}));
 			var a = n("./src/lib/lessComponent.tsx"),
 				o = n("./src/reddit/components/ModHub/StyledComponents/index.m.less"),
 				s = n.n(o);
 			const i = a.a.div("ContentContainer", s.a),
-				d = a.a.div("PageTitle", s.a),
-				r = a.a.div("TopBar", s.a)
+				r = a.a.div("PageTitle", s.a),
+				d = a.a.div("TopBar", s.a)
 		},
 		"./src/reddit/components/Settings/Notifications/LoadingState/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -573,17 +573,17 @@
 				o = n.n(a),
 				s = n("./src/lib/lessComponent.tsx"),
 				i = n("./node_modules/lodash/times.js"),
-				d = n.n(i),
-				r = n("./src/reddit/components/Settings/Notifications/LoadingState/index.m.less"),
-				c = n.n(r);
-			const u = s.a.div("LoadingSectionHeader", c.a),
-				l = s.a.div("LoadingToggleWrapper", c.a),
+				r = n.n(i),
+				d = n("./src/reddit/components/Settings/Notifications/LoadingState/index.m.less"),
+				c = n.n(d);
+			const l = s.a.div("LoadingSectionHeader", c.a),
+				u = s.a.div("LoadingToggleWrapper", c.a),
 				g = s.a.span("LoadingToggleName", c.a),
 				m = s.a.span("LoadingToggleButton", c.a);
 			t.a = () => o.a.createElement("div", {
 				role: "alert",
 				"aria-busy": "true"
-			}, o.a.createElement(u, null), d()(5, e => o.a.createElement(l, {
+			}, o.a.createElement(l, null), r()(5, e => o.a.createElement(u, {
 				key: e
 			}, o.a.createElement(g, null), o.a.createElement(m, null))))
 		},
@@ -594,31 +594,34 @@
 				BreadcrumbElement: "_32_k0a9y4N9cAnw6gApo5X",
 				breadcrumbElement: "_32_k0a9y4N9cAnw6gApo5X",
 				BreadcrumbContainer: "_1PgkMUbe7dhkAqRt4-VPGe",
-				breadcrumbContainer: "_1PgkMUbe7dhkAqRt4-VPGe"
+				breadcrumbContainer: "_1PgkMUbe7dhkAqRt4-VPGe",
+				breadcrumbTitle: "_2N7RnlFNJblZD8KUBuiBEQ"
 			}
 		},
 		"./src/reddit/components/StructuredStyles/Breadcrumbs/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return l
+				return u
 			}));
 			var a = n("./node_modules/react/index.js"),
 				o = n.n(a),
 				s = n("./src/lib/lessComponent.tsx"),
 				i = n("./src/reddit/components/TrackingHelper/index.tsx"),
-				d = n("./src/reddit/helpers/trackers/blade.ts"),
-				r = n("./src/reddit/icons/svgs/Chevron/index.tsx"),
+				r = n("./src/reddit/helpers/trackers/blade.ts"),
+				d = n("./src/reddit/icons/svgs/Chevron/index.tsx"),
 				c = n("./src/reddit/components/StructuredStyles/Breadcrumbs/index.m.less"),
-				u = n.n(c);
-			const l = s.a.wrapped(r.a, "StyledChevron", u.a),
-				g = s.a.div("BreadcrumbElement", u.a),
-				m = s.a.div("BreadcrumbContainer", u.a);
+				l = n.n(c);
+			const u = s.a.wrapped(d.a, "StyledChevron", l.a),
+				g = s.a.div("BreadcrumbElement", l.a),
+				m = s.a.div("BreadcrumbContainer", l.a);
 			t.b = Object(i.c)(e => o.a.createElement(m, null, e.breadcrumbs.map(t => o.a.createElement(g, {
 				key: t.title,
 				onClick: () => {
-					e.sendEvent(Object(d.a)()), e.onNavigate(t)
+					e.sendEvent(Object(r.a)()), e.onNavigate(t)
 				}
-			}, o.a.createElement(l, null), t.title))))
+			}, o.a.createElement(u, null), o.a.createElement("span", {
+				className: l.a.breadcrumbTitle
+			}, t.title)))))
 		},
 		"./src/redditGQL/operations/GetModPnSettingsLayout.json": function(e) {
 			e.exports = JSON.parse('{"id":"7e96f2bfcc6c"}')
@@ -631,4 +634,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CommunitySettings-ModPnSettings.abd60e7587b792a39407.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CommunitySettings-ModPnSettings.59729efdfe3494bfa683.js.map
