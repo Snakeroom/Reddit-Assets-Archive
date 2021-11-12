@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlow.5c07bb3cf88d09258ef6.js
-// Retrieved at 11/11/2021, 4:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlow.43c802d2aaeea0fe5300.js
+// Retrieved at 11/11/2021, 7:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlow", "FrontpageSidebar", "ReportFlowNew"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -6680,33 +6680,33 @@
 				u = e => {
 					const t = Object(i.c)(e, {
 						experimentEligibilitySelector: i.a,
-						experimentName: s.ee
+						experimentName: s.ce
 					});
-					return t === s.fe.UIChangesOnly || t === s.fe.RedditRecommendation || t === s.fe.OpenAI || t === s.fe.FilteredOpenAI
+					return t === s.de.UIChangesOnly || t === s.de.RedditRecommendation || t === s.de.OpenAI || t === s.de.FilteredOpenAI
 				},
 				p = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: i.a,
-						experimentName: s.ee
-					}) === s.fe.UIChangesOnly
+						experimentName: s.ce
+					}) === s.de.UIChangesOnly
 				},
 				m = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: i.a,
-						experimentName: s.ee
-					}) === s.fe.RedditRecommendation
+						experimentName: s.ce
+					}) === s.de.RedditRecommendation
 				},
 				f = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: i.a,
-						experimentName: s.ee
-					}) === s.fe.OpenAI
+						experimentName: s.ce
+					}) === s.de.OpenAI
 				},
 				_ = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: i.a,
-						experimentName: s.ee
-					}) === s.fe.FilteredOpenAI
+						experimentName: s.ce
+					}) === s.de.FilteredOpenAI
 				},
 				b = e => e.creations.subredditRec.api.pending,
 				h = e => e.creations.subredditRec.api.error,
@@ -6781,9 +6781,9 @@
 					experimentName: r.ic,
 					experimentEligibilitySelector: e => l(e, t)
 				}), e => e),
-				d = e => e === r.gf.NoCommunityWidgets,
-				u = e => e === r.gf.NoRulesModerators,
-				p = e => e === r.gf.RelatedPostsDu
+				d = e => e === r.ef.NoCommunityWidgets,
+				u = e => e === r.ef.NoRulesModerators,
+				p = e => e === r.ef.RelatedPostsDu
 		},
 		"./src/reddit/selectors/tooltip.ts": function(e, t, n) {
 			"use strict";
@@ -6812,4 +6812,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.5c07bb3cf88d09258ef6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.43c802d2aaeea0fe5300.js.map

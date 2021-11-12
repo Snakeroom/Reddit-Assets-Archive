@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-TypingIndicators.679839c6091cdc2fcd8e.js
-// Retrieved at 11/4/2021, 2:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-TypingIndicators.e4053b493994786bcf08.js
+// Retrieved at 11/11/2021, 7:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-TypingIndicators"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, s, t) {
@@ -193,7 +193,7 @@
 							numUsers: s
 						} = e.subscribe.data, t = () => {
 							y.current && clearTimeout(y.current), y.current = setTimeout(() => {
-								I(null), y.current = null
+								_(0), I(null), y.current = null
 							}, p.b)
 						}, n = () => setTimeout(() => {
 							C.current ? (_(C.current), C.current = null, v.current = n(), t()) : v.current = null
@@ -217,7 +217,7 @@
 				});
 				return Object(o.useEffect)(() => {
 					S && g(u(f, h))
-				}, [S, f, g]), r.a.createElement(r.a.Fragment, null, r.a.createElement(a.a, {
+				}, [S, f, g, h]), r.a.createElement(r.a.Fragment, null, r.a.createElement(a.a, {
 					variables: O,
 					onData: N,
 					queryKey: "postTypingIndicator"
@@ -311,4 +311,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-TypingIndicators.679839c6091cdc2fcd8e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-TypingIndicators.e4053b493994786bcf08.js.map

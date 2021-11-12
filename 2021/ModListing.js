@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.aba5276f4c8e80dba164.js
-// Retrieved at 11/11/2021, 4:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.36b115ce1152348468fb.js
+// Retrieved at 11/11/2021, 7:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -4534,9 +4534,9 @@
 			var n = r("./src/reddit/constants/experiments.ts"),
 				s = r("./src/reddit/helpers/chooseVariant/index.ts");
 			const o = e => Object(s.c)(e, {
-				experimentName: n.Ud,
+				experimentName: n.Sd,
 				experimentEligibilitySelector: s.a
-			}) === n.be.Enabled
+			}) === n.Zd.Enabled
 		},
 		"./src/reddit/selectors/modQueue.ts": function(e, t, r) {
 			"use strict";
@@ -4600,4 +4600,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.aba5276f4c8e80dba164.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.36b115ce1152348468fb.js.map

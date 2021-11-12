@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReadingIndicator.0af628821e7d76842ded.js
-// Retrieved at 11/4/2021, 2:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReadingIndicator.1510fe0fff1a13f7f52d.js
+// Retrieved at 11/11/2021, 7:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReadingIndicator"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, s, n) {
@@ -197,7 +197,7 @@
 							numUsers: s
 						} = e.subscribe.data, n = () => {
 							j.current && clearTimeout(j.current), j.current = setTimeout(() => {
-								S(null), j.current = null
+								g(0), S(null), j.current = null
 							}, 3e4)
 						}, t = () => setTimeout(() => {
 							I.current ? (g(I.current), I.current = null, _.current = t(), n()) : _.current = null
@@ -225,7 +225,7 @@
 				}), D = Object(m.a)();
 				return Object(a.useEffect)(() => {
 					x && D(Object(u.r)(r, O))
-				}, [D, x, r]), c.a.createElement(c.a.Fragment, null, n && c.a.createElement(d.a, {
+				}, [D, x, r, O]), c.a.createElement(c.a.Fragment, null, n && c.a.createElement(d.a, {
 					variables: p,
 					onData: o.a,
 					queryKey: "userIsReadingPost"
@@ -313,4 +313,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReadingIndicator.0af628821e7d76842ded.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReadingIndicator.1510fe0fff1a13f7f52d.js.map
