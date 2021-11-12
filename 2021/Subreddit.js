@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.0dda879ae3ecd1eb264c.js
-// Retrieved at 11/11/2021, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.9b2d72018befeca629d4.js
+// Retrieved at 11/12/2021, 3:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~ModListing", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -5561,25 +5561,24 @@
 				x = n("./src/reddit/actions/tooltip.ts"),
 				g = n("./node_modules/fbt/lib/FbtPublic.js"),
 				v = n("./src/higherOrderComponents/asTooltip.tsx"),
-				E = n("./src/reddit/constants/history.ts"),
-				y = n("./src/reddit/constants/listingSorts.ts"),
-				_ = n("./src/reddit/contexts/Tooltip.ts"),
-				O = n("./src/reddit/controls/Dropdown/index.tsx"),
-				C = n("./src/reddit/controls/Dropdown/Row.tsx"),
-				j = n("./src/reddit/helpers/path/index.ts"),
-				S = n("./src/reddit/helpers/trackers/navigation.ts"),
-				w = n("./src/reddit/icons/svgs/Dropdown/index.tsx"),
-				N = n("./src/reddit/selectors/experiments/bestSortPopular.ts"),
-				k = n("./src/reddit/selectors/experiments/econLeaderboards.ts"),
-				I = n("./src/reddit/selectors/tooltip.ts"),
-				P = n("./src/reddit/selectors/user.ts"),
-				T = n("./src/reddit/components/ListingSort/ListingSortIcon.tsx"),
-				L = n("./src/reddit/components/ListingSort/index.m.less"),
-				A = n.n(L),
-				B = n("./src/lib/lessComponent.tsx");
+				E = n("./src/reddit/constants/listingSorts.ts"),
+				y = n("./src/reddit/contexts/Tooltip.ts"),
+				_ = n("./src/reddit/controls/Dropdown/index.tsx"),
+				O = n("./src/reddit/controls/Dropdown/Row.tsx"),
+				C = n("./src/reddit/helpers/path/index.ts"),
+				j = n("./src/reddit/helpers/trackers/navigation.ts"),
+				S = n("./src/reddit/icons/svgs/Dropdown/index.tsx"),
+				w = n("./src/reddit/selectors/experiments/bestSortPopular.ts"),
+				N = n("./src/reddit/selectors/experiments/econLeaderboards.ts"),
+				k = n("./src/reddit/selectors/tooltip.ts"),
+				I = n("./src/reddit/selectors/user.ts"),
+				P = n("./src/reddit/components/ListingSort/ListingSortIcon.tsx"),
+				T = n("./src/reddit/components/ListingSort/index.m.less"),
+				L = n.n(T),
+				A = n("./src/lib/lessComponent.tsx");
 
-			function D() {
-				return (D = Object.assign || function(e) {
+			function B() {
+				return (B = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var s in n) Object.prototype.hasOwnProperty.call(n, s) && (e[s] = n[s])
@@ -5587,94 +5586,89 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const F = "ListingSort--SortPicker",
-				M = Object(v.a)(B.a.wrapped(O.a, "Dropdown", A.a)),
-				R = B.a.wrapped(T.a, "ListingSortIcon", A.a),
-				U = (B.a.wrapped(w.b, "DropdownTriangle", A.a), B.a.div("Title", A.a)),
-				W = B.a.wrapped(e => r.a.createElement(C.b, D({}, e, {
+			const D = "ListingSort--SortPicker",
+				F = Object(v.a)(A.a.wrapped(_.a, "Dropdown", L.a)),
+				M = A.a.wrapped(P.a, "ListingSortIcon", L.a),
+				R = (A.a.wrapped(S.b, "DropdownTriangle", L.a), A.a.div("Title", L.a)),
+				U = A.a.wrapped(e => r.a.createElement(O.b, B({}, e, {
 					noHover: !0,
 					isSelected: !1
-				})), "Row", A.a),
-				H = ({
+				})), "Row", L.a),
+				W = ({
 					disabled: e,
 					...t
-				}) => r.a.createElement("div", D({}, t, {
-					className: Object(o.a)(A.a.SortWrapper, t.className, {
-						[A.a.isDisabled]: e
+				}) => r.a.createElement("div", B({}, t, {
+					className: Object(o.a)(L.a.SortWrapper, t.className, {
+						[L.a.isDisabled]: e
 					})
 				})),
-				V = B.a.div("DropdownRowDisabled", A.a),
-				G = Object(l.u)({
+				H = A.a.div("DropdownRowDisabled", L.a),
+				V = Object(l.u)({
 					isFrontpage: l.z,
 					isProfilePage: l.I,
 					pageLayer: e => e
 				}),
-				q = Object(f.c)({
-					isAwardListingExperimentEnabled: k.a,
-					isBestSortPopularEnabled: N.a,
-					user: P.k,
-					dropdownIsOpen: (e, t) => Object(I.b)(t.dropdownId || F)(e),
+				G = Object(f.c)({
+					isAwardListingExperimentEnabled: N.a,
+					isBestSortPopularEnabled: w.a,
+					user: I.k,
+					dropdownIsOpen: (e, t) => Object(k.b)(t.dropdownId || D)(e),
 					isPopularPage: l.E
 				}),
-				K = Object(a.b)(q, (e, {
+				q = Object(a.b)(G, (e, {
 					dropdownId: t,
 					pageLayer: n
 				}) => ({
 					onOpenDropdown: () => e(Object(x.h)({
-						tooltipId: t || F
+						tooltipId: t || D
 					}))
 				}));
-			var z = B.a.wrapped(G(K(Object(d.c)(e => r.a.createElement("div", {
+			var K = A.a.wrapped(V(q(Object(d.c)(e => r.a.createElement("div", {
 					className: e.className,
 					onClick: e.onOpenDropdown
-				}, !1 !== e.showTitle && r.a.createElement(U, null, g.fbt._("Sort", null, {
+				}, !1 !== e.showTitle && r.a.createElement(R, null, g.fbt._("Sort", null, {
 					hk: "2BfINq"
-				})), r.a.createElement(H, {
+				})), r.a.createElement(W, {
 					disabled: e.disabled
-				}, e.children || r.a.createElement(W, {
+				}, e.children || r.a.createElement(U, {
 					className: e.buttonClassName,
-					displayText: Object(y.a)(e.sort),
-					id: e.dropdownId || F,
+					displayText: Object(E.a)(e.sort),
+					id: e.dropdownId || D,
 					showDropdownTriangle: !0
-				}, r.a.createElement(R, {
+				}, r.a.createElement(M, {
 					sort: e.sort
-				}))), r.a.createElement(_.a.Consumer, null, t => r.a.createElement(M, D({
+				}))), r.a.createElement(y.a.Consumer, null, t => r.a.createElement(F, B({
 					className: e.dropdownClassName,
 					isOpen: e.dropdownIsOpen,
-					tooltipId: e.dropdownId || F
+					tooltipId: e.dropdownId || D
 				}, t, {
 					renderContentsHidden: !0
-				}), e.disabled ? r.a.createElement(V, null, g.fbt._("Coming soon", null, {
+				}), e.disabled ? r.a.createElement(H, null, g.fbt._("Coming soon", null, {
 					hk: "taPqm"
 				})) : (e.sortOptions || ((e, t, n, s, r) => {
 					const a = [b.W.HOT, b.W.NEW, b.W.TOP, b.W.RISING];
 					return (e && (n || s) || t && s) && a.unshift(b.W.BEST), t && r && a.splice(3, 0, b.W.AWARDED), a
-				})(e.isFrontpage, e.isPopularPage, e.user, e.isBestSortPopularEnabled, e.isAwardListingExperimentEnabled)).map(t => r.a.createElement(C.b, {
+				})(e.isFrontpage, e.isPopularPage, e.user, e.isBestSortPopularEnabled, e.isAwardListingExperimentEnabled)).map(t => r.a.createElement(O.b, {
 					className: Object(o.a)(e.rowClassName, e.sort === t ? e.rowSelectedClassName : void 0),
-					displayText: Object(y.a)(t),
+					displayText: Object(E.a)(t),
 					onClick: () => {
-						e.onChange(t), e.sendEvent(Object(S.a)(t))
+						e.onChange(t), e.sendEvent(Object(j.a)(t))
 					},
-					href: {
-						pathname: e.isProfilePage ? Object(p.a)(e.baseUrl, {
-							sort: t
-						}) : Object(j.a)(e.baseUrl, `${t}/`),
-						state: {
-							[E.b.FeedLoadReason]: E.a.SortChange
-						}
-					},
+					href: e.isProfilePage ? Object(p.a)(e.baseUrl, {
+						sort: t
+					}) : Object(C.a)(e.baseUrl, `${t}/`),
 					isSelected: e.sort === t,
 					key: t
-				}, r.a.createElement(R, {
+				}, r.a.createElement(M, {
 					className: e.rowIconClassName,
 					sort: t
-				}))))))))), "ListingSort", A.a),
-				Q = n("./src/reddit/constants/parameters.ts");
-			const Y = e => {
-					const t = J[e];
+				}))))))))), "ListingSort", L.a),
+				z = n("./src/reddit/constants/parameters.ts");
+			const Q = e => {
+					const t = Y[e];
 					return t && t() || ""
 				},
-				J = {
+				Y = {
 					[b.cc.AllStates]: () => g.fbt._("All", null, {
 						hk: "3FfdRL"
 					}),
@@ -5832,11 +5826,11 @@
 						hk: "1QaJzt"
 					})
 				};
-			var Z = n("./src/reddit/components/StateSort/index.m.less"),
-				X = n.n(Z);
+			var J = n("./src/reddit/components/StateSort/index.m.less"),
+				Z = n.n(J);
 
-			function $() {
-				return ($ = Object.assign || function(e) {
+			function X() {
+				return (X = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var s in n) Object.prototype.hasOwnProperty.call(n, s) && (e[s] = n[s])
@@ -5844,33 +5838,33 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const ee = B.a.wrapped(O.a, "_Dropdown", X.a),
-				te = Object(v.a)(ee),
-				ne = e => {
-					return e.indexOf("_") > 0 && re(e) === b.A.UnitedStates
+			const $ = A.a.wrapped(_.a, "_Dropdown", Z.a),
+				ee = Object(v.a)($),
+				te = e => {
+					return e.indexOf("_") > 0 && se(e) === b.A.UnitedStates
 				},
-				se = e => {
-					if (ne(e)) {
+				ne = e => {
+					if (te(e)) {
 						return e.split("_")[1]
 					}
 					return b.cc.AllStates
 				},
-				re = e => {
+				se = e => {
 					if (e && e.indexOf("_") > 0) {
 						return e.split("_")[0]
 					}
 					return e
 				},
-				ae = e => {
-					const t = re(e),
-						n = se(e);
-					return ne(e) ? `${t}_${n}` : t
+				re = e => {
+					const t = se(e),
+						n = ne(e);
+					return te(e) ? `${t}_${n}` : t
 				},
-				oe = Object(l.u)(),
-				ie = Object(f.c)({
-					dropdownIsOpen: Object(I.b)("StateSort--StateSortPicker")
+				ae = Object(l.u)(),
+				oe = Object(f.c)({
+					dropdownIsOpen: Object(k.b)("StateSort--StateSortPicker")
 				}),
-				ce = Object(a.b)(ie, e => ({
+				ie = Object(a.b)(oe, e => ({
 					onOpenDropdown: () => e(Object(x.h)({
 						tooltipId: "StateSort--StateSortPicker"
 					})),
@@ -5878,20 +5872,20 @@
 						e(Object(h.b)(t)), e(Object(c.v)(b.A.UnitedStates + "_" + n))
 					}
 				}));
-			var de = B.a.wrapped(oe(ce(e => {
-				const t = `${e.baseUrl}?${Q.h}=${b.A.UnitedStates}`;
+			var ce = A.a.wrapped(ae(ie(e => {
+				const t = `${e.baseUrl}?${z.h}=${b.A.UnitedStates}`;
 				return r.a.createElement("div", {
 					className: e.className,
 					onClick: e.onOpenDropdown
-				}, r.a.createElement(H, {
+				}, r.a.createElement(W, {
 					className: e.wrapperClassName,
 					disabled: e.disabled
-				}, r.a.createElement(W, {
+				}, r.a.createElement(U, {
 					className: e.buttonClassName,
-					displayText: e.showStateAbbreviations && e.sort ? e.sort : Y(e.sort),
+					displayText: e.showStateAbbreviations && e.sort ? e.sort : Q(e.sort),
 					id: "StateSort--StateSortPicker",
 					showDropdownTriangle: !0
-				})), r.a.createElement(_.a.Consumer, null, n => r.a.createElement(te, $({
+				})), r.a.createElement(y.a.Consumer, null, n => r.a.createElement(ee, X({
 					className: e.dropdownClassName,
 					isOpen: e.dropdownIsOpen,
 					tooltipId: "StateSort--StateSortPicker"
@@ -5900,15 +5894,15 @@
 				}), Object.keys(b.cc).map(n => {
 					const s = b.cc[n];
 					return r.a.createElement("div", {
-						onClick: () => e.onClickLink((e => e === b.cc.AllStates ? t : `${t}_${e}`)(s), ae(s))
-					}, r.a.createElement(C.b, {
+						onClick: () => e.onClickLink((e => e === b.cc.AllStates ? t : `${t}_${e}`)(s), re(s))
+					}, r.a.createElement(O.b, {
 						className: Object(o.a)(e.rowClassName, e.sort === s ? e.rowSelectedClassName : void 0),
-						displayText: Y(s),
+						displayText: Q(s),
 						isSelected: e.sort === s
 					}))
 				}))))
-			})), "Component", X.a);
-			const le = {
+			})), "Component", Z.a);
+			const de = {
 				[b.A.Everywhere]: () => g.fbt._("Everywhere", null, {
 					hk: "3ysAHX"
 				}),
@@ -6018,7 +6012,8 @@
 					hk: "rs1fl"
 				})
 			};
-			var ue = n("./src/reddit/components/CountrySort/index.m.less"),
+			var le = n("./src/reddit/constants/history.ts"),
+				ue = n("./src/reddit/components/CountrySort/index.m.less"),
 				me = n.n(ue);
 
 			function pe() {
@@ -6033,7 +6028,7 @@
 			const be = "CountrySort--CountrySortPicker",
 				he = Object(l.u)(),
 				fe = Object(f.c)({
-					dropdownIsOpen: Object(I.b)(be)
+					dropdownIsOpen: Object(k.b)(be)
 				});
 			var xe = he(Object(a.b)(fe, e => ({
 					onCloseDropdown: t => e(Object(x.j)({
@@ -6044,25 +6039,25 @@
 					})),
 					onClickLink: (t, n) => {
 						e(Object(h.b)(t, {
-							[E.b.FeedLoadReason]: E.a.GeoModeChange
+							[le.b.FeedLoadReason]: le.a.GeoModeChange
 						})), e(Object(c.v)(n))
 					}
 				}))(e => {
-					const t = re(e.sort),
-						n = se(e.sort),
-						s = `${e.baseUrl}?${Q.h}=`;
+					const t = se(e.sort),
+						n = ne(e.sort),
+						s = `${e.baseUrl}?${z.h}=`;
 					return r.a.createElement(r.a.Fragment, null, r.a.createElement("div", {
 						className: Object(o.a)(me.a.countrySort, e.className),
 						onClick: () => e.dropdownIsOpen ? e.onCloseDropdown(be) : e.onOpenDropdown(be)
-					}, r.a.createElement(H, {
+					}, r.a.createElement(W, {
 						className: e.wrapperClassName,
 						disabled: e.disabled
-					}, r.a.createElement(W, {
+					}, r.a.createElement(U, {
 						className: e.buttonClassName,
-						displayText: (() => t in le ? le[t]() : le[b.A.Everywhere]())(),
+						displayText: (() => t in de ? de[t]() : de[b.A.Everywhere]())(),
 						id: be,
 						showDropdownTriangle: !0
-					})), r.a.createElement(_.a.Consumer, null, n => r.a.createElement(te, pe({
+					})), r.a.createElement(y.a.Consumer, null, n => r.a.createElement(ee, pe({
 						className: e.dropdownClassName,
 						isOpen: e.dropdownIsOpen,
 						tooltipId: be
@@ -6072,13 +6067,13 @@
 						const a = b.A[n];
 						return r.a.createElement("div", {
 							key: a,
-							onClick: () => e.onClickLink(`${s}${ae(a)}`, a)
-						}, r.a.createElement(C.b, {
+							onClick: () => e.onClickLink(`${s}${re(a)}`, a)
+						}, r.a.createElement(O.b, {
 							className: Object(o.a)(e.rowClassName, t === a ? e.rowSelectedClassName : void 0),
-							displayText: le[a](),
+							displayText: de[a](),
 							isSelected: t === a
 						}))
-					})))), t === b.A.UnitedStates && r.a.createElement(de, {
+					})))), t === b.A.UnitedStates && r.a.createElement(ce, {
 						baseUrl: e.baseUrl,
 						buttonClassName: e.buttonClassName,
 						className: e.stateSortClassName,
@@ -6105,15 +6100,17 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const Oe = Object(v.a)(O.a),
-				Ce = (e, t) => {
-					let n = e.url;
-					return e.urlParams.sort || Object(l.I)(e) || (n = ve.a.join(n, t)), n
+			const Oe = Object(v.a)(_.a),
+				Ce = (e, t, n) => {
+					let s = e.url;
+					return e.urlParams.sort || Object(l.I)(e) || (s = ve.a.join(s, t)), Object(p.a)(s, {
+						[z.A]: n
+					})
 				},
-				je = B.a.div("ListingSortContainer", ye.a),
+				je = A.a.div("ListingSortContainer", ye.a),
 				Se = Object(l.u)(),
 				we = Object(f.c)({
-					dropdownIsOpen: Object(I.b)("TimeSort--SortPicker")
+					dropdownIsOpen: Object(k.b)("TimeSort--SortPicker")
 				});
 			var Ne = Se(Object(a.b)(we, e => ({
 					onOpenDropdown: () => e(Object(x.h)({
@@ -6122,32 +6119,26 @@
 				}))(Object(d.c)(e => r.a.createElement(je, {
 					className: e.className,
 					onClick: e.onOpenDropdown
-				}, r.a.createElement(H, {
+				}, r.a.createElement(W, {
 					className: e.wrapperClassName,
 					disabled: !1
-				}, r.a.createElement(W, {
+				}, r.a.createElement(U, {
 					className: e.buttonClassName,
-					displayText: Object(y.b)(e.timeSort),
+					displayText: Object(E.b)(e.timeSort),
 					id: "TimeSort--SortPicker",
 					showDropdownTriangle: !0
-				})), r.a.createElement(_.a.Consumer, null, t => r.a.createElement(Oe, _e({
+				})), r.a.createElement(y.a.Consumer, null, t => r.a.createElement(Oe, _e({
 					className: e.dropdownClassName,
 					isOpen: e.dropdownIsOpen,
 					tooltipId: "TimeSort--SortPicker"
-				}, t), [b.fc.HOUR, b.fc.DAY, b.fc.WEEK, b.fc.MONTH, b.fc.YEAR, b.fc.ALL].map(t => r.a.createElement(C.b, {
+				}, t), [b.fc.HOUR, b.fc.DAY, b.fc.WEEK, b.fc.MONTH, b.fc.YEAR, b.fc.ALL].map(t => r.a.createElement(O.b, {
 					className: Object(o.a)(e.rowClassName, e.timeSort === t ? e.rowSelectedClassName : void 0),
 					key: `time_sort_${t}`,
-					displayText: Object(y.b)(t),
-					href: {
-						pathname: new URL(Ce(e.pageLayer, e.listingSort), "https://fallback.hostname").pathname,
-						state: {
-							[E.b.FeedLoadReason]: E.a.SortChange
-						},
-						search: `${Q.A}=${t}`
-					},
+					displayText: Object(E.b)(t),
+					href: Ce(e.pageLayer, e.listingSort, t),
 					isSelected: e.timeSort === t,
 					onClick: () => {
-						e.onChange(t), e.sendEvent(Object(S.c)(t))
+						e.onChange(t), e.sendEvent(Object(j.c)(t))
 					}
 				})))))))),
 				ke = n("./src/reddit/constants/listings.ts"),
@@ -6175,7 +6166,7 @@
 					isProfilePage: l.I,
 					pageLayer: e => e
 				}),
-				We = Object(f.a)((e, t) => t.sortOptions, (e, t) => t.isFrontpage, N.a, P.k, l.E, k.a, Te.i, (e, t, n, s, r, a, o) => {
+				We = Object(f.a)((e, t) => t.sortOptions, (e, t) => t.isFrontpage, w.a, I.k, l.E, N.a, Te.i, (e, t, n, s, r, a, o) => {
 					if (e) return {
 						isPopularPage: r,
 						sortOptions: e,
@@ -6191,7 +6182,7 @@
 			class He extends r.a.Component {
 				constructor() {
 					super(...arguments), this.changeSort = e => {
-						this.props.onChange(e), this.props.sendEvent(Object(S.a)(e))
+						this.props.onChange(e), this.props.sendEvent(Object(j.a)(e))
 					}, this.getSortUrl = e => {
 						const {
 							baseUrl: t,
@@ -6199,7 +6190,7 @@
 						} = this.props;
 						return n ? Object(p.a)(t, {
 							sort: e
-						}) : Object(j.a)(t, `${e}/`)
+						}) : Object(C.a)(t, `${e}/`)
 					}, this.renderSortButton = e => {
 						const {
 							sort: t
@@ -6208,19 +6199,14 @@
 							className: Object(o.a)(Ae.a.SortLink, e === t && Ae.a.selected),
 							kind: Ie.b.InternalLink,
 							priority: Ie.c.Plain,
-							Icon: n => r.a.createElement(R, Be({}, n, {
+							Icon: n => r.a.createElement(M, Be({}, n, {
 								className: Object(o.a)(Ae.a.SortIcon, n.className),
 								sort: e,
 								isFilled: e === t
 							})),
-							text: Object(y.a)(e),
+							text: Object(E.a)(e),
 							onClick: () => this.changeSort(e),
-							to: {
-								pathname: this.getSortUrl(e),
-								state: {
-									[E.b.FeedLoadReason]: E.a.SortChange
-								}
-							},
+							to: this.getSortUrl(e),
 							key: e
 						})
 					}, this.renderSort = e => {
@@ -6273,7 +6259,7 @@
 						sortOptions: a,
 						timeSort: i
 					} = this.props, c = !t && De.has(s), d = Fe.has(s), l = a.filter(e => !this.isOverflowSort(e)), u = a.filter(e => this.isOverflowSort(e) && e !== s);
-					return r.a.createElement(r.a.Fragment, null, r.a.createElement(z, Be({}, this.props, {
+					return r.a.createElement(r.a.Fragment, null, r.a.createElement(K, Be({}, this.props, {
 						buttonClassName: Ae.a.DropdownButton,
 						className: Object(o.a)(Ae.a.SortDropdown, e),
 						rowClassName: Ae.a.DropdownRow,
@@ -6293,7 +6279,7 @@
 						rowSelectedClassName: Ae.a.DropdownRowSelected,
 						timeSort: i || b.gc,
 						wrapperClassName: Ae.a.DropdownSortWrapper
-					}), u.length > 0 && r.a.createElement(z, Be({}, this.props, {
+					}), u.length > 0 && r.a.createElement(K, Be({}, this.props, {
 						className: Object(o.a)(Ae.a.SortOverflow, e),
 						dropdownClassName: Ae.a.Dropdown,
 						dropdownId: Re,
@@ -18864,4 +18850,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.0dda879ae3ecd1eb264c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.9b2d72018befeca629d4.js.map
