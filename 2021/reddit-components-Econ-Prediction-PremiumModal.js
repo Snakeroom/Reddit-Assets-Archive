@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-PremiumModal.61ccfd1bc4f72a4c22d1.js
-// Retrieved at 11/11/2021, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-PremiumModal.eeb20e87f50a6f2f9002.js
+// Retrieved at 11/15/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction-PremiumModal"], {
 		"./src/reddit/components/Econ/Prediction/PremiumModal/index.m.less": function(e, t, a) {
@@ -46,10 +46,10 @@
 				O = a("./src/reddit/pages/Premium/BenefitsSection/index.tsx"),
 				j = a("./src/reddit/pages/Premium/PremiumButtons/index.tsx"),
 				B = a("./src/reddit/selectors/gold/purchaseCatalog.ts"),
-				N = a("./src/reddit/components/Econ/Prediction/PremiumModal/index.m.less"),
-				w = a.n(N);
+				C = a("./src/reddit/components/Econ/Prediction/PremiumModal/index.m.less"),
+				N = a.n(C);
 			const {
-				fbt: C
+				fbt: w
 			} = a("./node_modules/fbt/lib/FbtPublic.js");
 			var v = Object(d.a)(({
 				title: e,
@@ -60,45 +60,47 @@
 			}) => {
 				const o = Object(c.d)(),
 					d = Object(_.a)(),
-					N = Object(c.e)(B.l),
+					C = Object(c.e)(B.l),
 					v = Object(c.e)(B.o),
 					I = Object(h.d)(h.a.GoldPayment, !1);
 				Object(r.useEffect)(() => {
 					Object(p.a)()
 				}, []), Object(r.useEffect)(() => {
-					N.length || v || o(Object(g.b)(I)), o(Object(m.d)(E.c.Premium))
+					C.length || v || o(Object(g.b)(I)), o(Object(m.d)(E.c.Premium))
 				});
 				return s.a.createElement(s.a.Fragment, null, s.a.createElement("div", {
-					className: w.a.background,
+					className: N.a.background,
 					style: {
 						backgroundImage: "linear-gradient(\n              to right,\n              rgba(0, 0, 0, 0.6) 0%,\n              rgba(0, 0, 0, 0) 50%\n            )",
 						backgroundSize: "auto 100%"
 					}
 				}, i, s.a.createElement(b.t, {
-					"aria-label": C._("Close", null, {
+					"aria-label": w._("Close", null, {
 						hk: "2xO1CF"
 					}),
-					className: w.a.closeButton,
+					className: N.a.closeButton,
 					Icon: Object(f.b)("close"),
 					onClick: n,
 					priority: b.c.Plain
 				}), s.a.createElement("div", {
-					className: w.a.prediction
+					className: N.a.prediction
 				}, s.a.createElement("div", {
-					className: w.a.logo
+					className: N.a.logo
 				}, s.a.createElement(x.a, null)), s.a.createElement("h2", {
-					className: w.a.title
+					className: N.a.title
 				}, e), s.a.createElement("h3", {
-					className: w.a.description
+					className: N.a.description
 				}, t), s.a.createElement("p", {
-					className: w.a.footer
+					className: N.a.footer
 				}, a))), s.a.createElement("div", {
-					className: w.a.premium
+					className: N.a.premium
 				}, s.a.createElement("h3", {
-					className: w.a.benefitsText
-				}, C._("More Reddit Premium Features", null, {
+					className: N.a.benefitsText
+				}, w._("More Reddit Premium Features", null, {
 					hk: "2qvl5q"
-				})), s.a.createElement(O.a, null), s.a.createElement(j.a, {
+				})), s.a.createElement(O.a, {
+					isCompactMode: !0
+				}), s.a.createElement(j.a, {
 					onClickPackage: (e, t) => {
 						o(Object(u.openWithBlob)({
 							correlationId: I,
@@ -110,12 +112,12 @@
 						}))
 					}
 				}), s.a.createElement("div", {
-					className: w.a.paidPremiumSubtext
+					className: N.a.paidPremiumSubtext
 				}, k.PAID_PREMIUM_SUBTEXT)))
 			});
 			const {
 				fbt: I
-			} = a("./node_modules/fbt/lib/FbtPublic.js"), y = {
+			} = a("./node_modules/fbt/lib/FbtPublic.js"), M = {
 				CHANGE_PREDICTION: {
 					title: I._("Change your Prediction with Reddit Premium", null, {
 						hk: "10eeE8"
@@ -128,7 +130,7 @@
 					}),
 					image: s.a.createElement("img", {
 						alt: "Snoo magician in front of a magic ball",
-						className: w.a.changePrediction,
+						className: N.a.changePrediction,
 						src: `${i.a.assetPath}/img/econ/predictions/change_prediction.png`
 					})
 				},
@@ -144,7 +146,7 @@
 					}),
 					image: s.a.createElement("img", {
 						alt: "Snoo peeking into curtains",
-						className: w.a.sneakPeek,
+						className: N.a.sneakPeek,
 						src: `${i.a.assetPath}/img/econ/predictions/sneak_peek.png`
 					})
 				}
@@ -157,17 +159,17 @@
 				if (!t) return null;
 				const a = () => e(Object(n.f)());
 				return s.a.createElement(v, {
-					className: w.a.modal,
+					className: N.a.modal,
 					withOverlay: !0,
 					onOverlayClick: a,
 					onClose: a,
-					title: y[t].title,
-					description: y[t].description,
-					footer: y[t].footer,
-					image: y[t].image
+					title: M[t].title,
+					description: M[t].description,
+					footer: M[t].footer,
+					image: M[t].image
 				})
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-PremiumModal.61ccfd1bc4f72a4c22d1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-PremiumModal.eeb20e87f50a6f2f9002.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.d3f712191bdc84a47419.js
-// Retrieved at 11/11/2021, 4:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.b700579d331732bd9442.js
+// Retrieved at 11/15/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments~ProfileOverview~ProfilePrivate"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -2131,18 +2131,6 @@
 				isOverlay: !1
 			}, t.a = v
 		},
-		"./src/reddit/components/SidebarContainer/index.m.less": function(e, t, s) {
-			e.exports = {
-				container: "_1FUNcfOeszr8eruqLxCMcR"
-			}
-		},
-		"./src/reddit/components/SidebarContainer/index.tsx": function(e, t, s) {
-			"use strict";
-			var n = s("./src/lib/lessComponent.tsx"),
-				o = s("./src/reddit/components/SidebarContainer/index.m.less"),
-				r = s.n(o);
-			t.a = n.a.div("container", r.a)
-		},
 		"./src/reddit/components/SidebarExpandableList/index.tsx": function(e, t, s) {
 			"use strict";
 			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
@@ -2824,4 +2812,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.d3f712191bdc84a47419.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.b700579d331732bd9442.js.map

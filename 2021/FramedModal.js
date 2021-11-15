@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedModal.d8b8b4f42df67cb3631f.js
-// Retrieved at 10/5/2021, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedModal.c4a83597b53821b88350.js
+// Retrieved at 11/15/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedModal"], {
 		"./src/reddit/components/CrisisFlow/_CrisisFlow.m.less": function(e, s, t) {
@@ -55,7 +55,7 @@
 						const s = this.resolve(e);
 						return !1 !== this.resolved[s] && !!t.m[s]
 					},
-					importAsync: () => Promise.all([t.e("Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241"), t.e("ReportFlow")]).then(t.bind(null, "./src/reddit/components/ReportFlow/_ReportFlowNewModal.tsx")),
+					importAsync: () => Promise.all([t.e("Governance~ModListing~Reddit~ReportFlow~Subreddit"), t.e("ReportFlow")]).then(t.bind(null, "./src/reddit/components/ReportFlow/_ReportFlowNewModal.tsx")),
 					requireAsync(e) {
 						const s = this.resolve(e);
 						return this.resolved[s] = !1, this.importAsync(e).then(e => (this.resolved[s] = !0, e))
@@ -278,4 +278,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedModal.d8b8b4f42df67cb3631f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedModal.c4a83597b53821b88350.js.map

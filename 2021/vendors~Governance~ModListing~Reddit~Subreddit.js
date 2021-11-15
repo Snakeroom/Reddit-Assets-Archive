@@ -1,7 +1,401 @@
-// https://www.redditstatic.com/desktop2x/vendors~Governance~ModListing~Reddit~Subreddit.c8ec9e5f753fc464aad5.js
-// Retrieved at 10/5/2021, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~Governance~ModListing~Reddit~Subreddit.d92465e63ec9f2222479.js
+// Retrieved at 11/15/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~Governance~ModListing~Reddit~Subreddit"], {
+		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(t, e, r) {
+			"use strict";
+			Object.defineProperty(e, "__esModule", {
+				value: !0
+			}), e.isPseudoLocale = e.isISOLocaleSupported = e.toISOLocale = e.isoLocaleToR2Language = void 0;
+			const i = r("./node_modules/@reddit/i18n-tools/runtime/helpers/locale/constants.js"),
+				s = new Set([{
+					code: "en",
+					label: "English [en]"
+				}, {
+					code: "af",
+					label: "Afrikaans [af] (*)"
+				}, {
+					code: "ar",
+					label: "العربية [ar] (*)"
+				}, {
+					code: "be",
+					label: "Беларуская мова [be] (*)"
+				}, {
+					code: "bg",
+					label: "български език [bg]"
+				}, {
+					code: "bn-IN",
+					label: "বাংলা [bn-IN] (*)"
+				}, {
+					code: "bn-bd",
+					label: "বাংলা [bn-bd] (*)"
+				}, {
+					code: "bs",
+					label: "Bosanski [bs] (*)"
+				}, {
+					code: "ca",
+					label: "català [ca]"
+				}, {
+					code: "cs",
+					label: "česky [cs]"
+				}, {
+					code: "cy",
+					label: "Cymraeg [cy] (*)"
+				}, {
+					code: "da",
+					label: "dansk [da]"
+				}, {
+					code: "de",
+					label: "Deutsch [de]"
+				}, {
+					code: "el",
+					label: "Ελληνικά [el]"
+				}, {
+					code: "en-au",
+					label: "English (Australia) [en-au]"
+				}, {
+					code: "en-ca",
+					label: "English (Canadian) [en-ca]"
+				}, {
+					code: "en-gb",
+					label: "English (Great Britain) [en-gb]"
+				}, {
+					code: "en-us",
+					label: "English [en-us]"
+				}, {
+					code: "eo",
+					label: "Esperanto [eo] (*)"
+				}, {
+					code: "es",
+					label: "español [es]"
+				}, {
+					code: "es-ar",
+					label: "español [es-ar]"
+				}, {
+					code: "es-cl",
+					label: "español [es-cl]"
+				}, {
+					code: "es-mx",
+					label: "Español [es-mx]"
+				}, {
+					code: "et",
+					label: "eesti keel [et] (*)"
+				}, {
+					code: "eu",
+					label: "Euskara [eu]"
+				}, {
+					code: "fa",
+					label: "فارسی [fa]"
+				}, {
+					code: "fi",
+					label: "suomi [fi]"
+				}, {
+					code: "fil",
+					label: "Filipino [fil] (*)"
+				}, {
+					code: "fr",
+					label: "français [fr]"
+				}, {
+					code: "fr-ca",
+					label: "Français [fr-ca]"
+				}, {
+					code: "fy-NL",
+					label: "Frysk [fy-NL] (*)"
+				}, {
+					code: "ga-ie",
+					label: "Gaeilge [ga-ie] (*)"
+				}, {
+					code: "gd",
+					label: "Gàidhlig [gd]"
+				}, {
+					code: "gl",
+					label: "Galego [gl] (*)"
+				}, {
+					code: "he",
+					label: "עברית [he] (*)"
+				}, {
+					code: "hi",
+					label: "मानक हिन्दी [hi] (*)"
+				}, {
+					code: "hr",
+					label: "hrvatski [hr]"
+				}, {
+					code: "hu",
+					label: "Magyar [hu]"
+				}, {
+					code: "hy",
+					label: "Հայերեն լեզու [hy]"
+				}, {
+					code: "id",
+					label: "Bahasa Indonesia [id] (*)"
+				}, {
+					code: "is",
+					label: "íslenska [is]"
+				}, {
+					code: "it",
+					label: "italiano (Italy) [it]"
+				}, {
+					code: "ja",
+					label: "日本語 [ja]"
+				}, {
+					code: "kn_IN",
+					label: "ಕನ್ನಡ [kn_IN]"
+				}, {
+					code: "ko",
+					label: "한국어 [ko]"
+				}, {
+					code: "la",
+					label: "Latin [la] (*)"
+				}, {
+					code: "leet",
+					label: "1337 [leet]"
+				}, {
+					code: "lol",
+					label: "LOL [lol]"
+				}, {
+					code: "lt",
+					label: "lietuvių kalba [lt] (*)"
+				}, {
+					code: "lv",
+					label: "latviešu valoda [lv]"
+				}, {
+					code: "ms",
+					label: "Bahasa Melayu [ms] (*)"
+				}, {
+					code: "mt-MT",
+					label: "Malti [mt-MT]"
+				}, {
+					code: "nl",
+					label: "Nederlands [nl]"
+				}, {
+					code: "nn",
+					label: "Nynorsk [nn]"
+				}, {
+					code: "no",
+					label: "Norsk [no]"
+				}, {
+					code: "pir",
+					label: "Arrrrrrrr! [pir] (*)"
+				}, {
+					code: "pl",
+					label: "polski [pl]"
+				}, {
+					code: "pt",
+					label: "português [pt] (*)"
+				}, {
+					code: "pt-pt",
+					label: "português [pt-pt]"
+				}, {
+					code: "pt_BR",
+					label: "português brasileiro [pt_BR]"
+				}, {
+					code: "ro",
+					label: "română [ro]"
+				}, {
+					code: "ru",
+					label: "русский [ru]"
+				}, {
+					code: "sk",
+					label: "slovenčina [sk]"
+				}, {
+					code: "sl",
+					label: "slovenščina [sl] (*)"
+				}, {
+					code: "sr",
+					label: "српски језик [sr]"
+				}, {
+					code: "sr-la",
+					label: "Srpski [sr-la]"
+				}, {
+					code: "sv",
+					label: "Svenska [sv]"
+				}, {
+					code: "ta",
+					label: "தமிழ் [ta]"
+				}, {
+					code: "th",
+					label: "ภาษาไทย [th]"
+				}, {
+					code: "tr",
+					label: "Türkçe [tr]"
+				}, {
+					code: "uk",
+					label: "українська мова [uk]"
+				}, {
+					code: "vi",
+					label: "Tiếng Việt [vi]"
+				}, {
+					code: "zh",
+					label: "中文 [zh]"
+				}, {
+					code: "zh-cn",
+					label: "简化字 [zh-cn]"
+				}].map(({
+					code: t
+				}) => t)),
+				a = {
+					af: ["af"],
+					ar: ["ar"],
+					be: ["be-BY"],
+					bg: ["bg-BG"],
+					"bn-IN": ["bn-IN"],
+					"bn-bd": ["bn-bd"],
+					bs: ["bs"],
+					ca: ["ca-ES"],
+					cs: ["cs-CZ"],
+					cy: ["cy"],
+					da: ["da-DK"],
+					de: ["de", "de-DE"],
+					el: ["el-GR"],
+					en: ["en"],
+					"en-au": ["en-AU"],
+					"en-ca": ["en-CA"],
+					"en-gb": ["en-GB"],
+					"en-us": ["en-US"],
+					eo: ["eo"],
+					es: ["es", "es-ES"],
+					"es-ar": ["es-AR"],
+					"es-cl": ["es-CL"],
+					"es-mx": ["es-MX"],
+					et: ["et-EE"],
+					eu: ["eu-ES"],
+					fa: ["fa-IR"],
+					fi: ["fi-FI"],
+					fil: ["fil"],
+					fr: ["fr", "fr-FR"],
+					"fr-ca": ["fr-CA"],
+					"fy-NL": ["fy-NL"],
+					"ga-ie": ["ga-IE"],
+					gd: ["gd"],
+					gl: ["gl-ES"],
+					he: ["he-IL"],
+					hi: ["hi-IN"],
+					hr: ["hr-HR"],
+					hu: ["hu-HU"],
+					hy: ["hy-AM"],
+					id: ["id-ID"],
+					is: ["is-IS"],
+					it: ["it", "it-IT"],
+					ja: ["ja-JP"],
+					kn_IN: ["kn-IN"],
+					ko: ["ko-KR"],
+					la: ["la"],
+					leet: ["leet"],
+					lol: ["lol"],
+					lt: ["lt-LT"],
+					lv: ["lv-LV"],
+					ms: ["ms"],
+					"mt-MT": ["mt-MT"],
+					nl: ["nl-NL"],
+					nn: ["nn-NO"],
+					no: ["no"],
+					pir: ["pir"],
+					pl: ["pl-PL"],
+					pt: ["pt"],
+					"pt-pt": ["pt-PT"],
+					pt_BR: ["pt-BR"],
+					ro: ["ro-RO"],
+					ru: ["ru-RU"],
+					sk: ["sk-SK"],
+					sl: ["sl-SI"],
+					sr: ["sr"],
+					"sr-la": ["sr-LA"],
+					sv: ["sv"],
+					ta: ["ta-IN"],
+					th: ["th-TH"],
+					tr: ["tr-TR"],
+					uk: ["uk-UA"],
+					vi: ["vi-VN"],
+					zh: ["zh"],
+					"zh-cn": ["zh-CN"]
+				},
+				n = Object.keys(a).reduce((t, e) => (s.has(e) && (t[e] = a[e]), t), {}),
+				o = Object.keys(n).reduce((t, e) => {
+					const r = n[e];
+					return r && r.forEach(r => {
+						t[r] = e
+					}), t
+				}, {});
+			e.isoLocaleToR2Language = t => o[t], e.toISOLocale = t => {
+				if (!t) return;
+				const e = t.match(/^([a-zA-Z]{2,4})(?:[-_]([a-zA-Z]{2,4}))?$/);
+				if (!e) return;
+				const r = e[1];
+				if (!r) return;
+				let i = r.toLowerCase();
+				const s = e[2];
+				return s && (i = `${i}-${s.toUpperCase()}`), i
+			};
+			const h = new Set(Object.keys(o));
+			e.isISOLocaleSupported = t => !!t && h.has(t), e.isPseudoLocale = t => !!t && Object.values(i.PseudoLocale).includes(t)
+		},
+		"./node_modules/lodash/_baseInverter.js": function(t, e, r) {
+			var i = r("./node_modules/lodash/_baseForOwn.js");
+			t.exports = function(t, e, r, s) {
+				return i(t, (function(t, i, a) {
+					e(s, r(t), i, a)
+				})), s
+			}
+		},
+		"./node_modules/lodash/_baseXor.js": function(t, e, r) {
+			var i = r("./node_modules/lodash/_baseDifference.js"),
+				s = r("./node_modules/lodash/_baseFlatten.js"),
+				a = r("./node_modules/lodash/_baseUniq.js");
+			t.exports = function(t, e, r) {
+				var n = t.length;
+				if (n < 2) return n ? a(t[0]) : [];
+				for (var o = -1, h = Array(n); ++o < n;)
+					for (var l = t[o], p = -1; ++p < n;) p != o && (h[o] = i(h[o] || l, t[p], e, r));
+				return a(s(h, 1), e, r)
+			}
+		},
+		"./node_modules/lodash/_createInverter.js": function(t, e, r) {
+			var i = r("./node_modules/lodash/_baseInverter.js");
+			t.exports = function(t, e) {
+				return function(r, s) {
+					return i(r, t, e(s), {})
+				}
+			}
+		},
+		"./node_modules/lodash/findLastIndex.js": function(t, e, r) {
+			var i = r("./node_modules/lodash/_baseFindIndex.js"),
+				s = r("./node_modules/lodash/_baseIteratee.js"),
+				a = r("./node_modules/lodash/toInteger.js"),
+				n = Math.max,
+				o = Math.min;
+			t.exports = function(t, e, r) {
+				var h = null == t ? 0 : t.length;
+				if (!h) return -1;
+				var l = h - 1;
+				return void 0 !== r && (l = a(r), l = r < 0 ? n(h + l, 0) : o(l, h - 1)), i(t, s(e, 3), l, !0)
+			}
+		},
+		"./node_modules/lodash/invert.js": function(t, e, r) {
+			var i = r("./node_modules/lodash/constant.js"),
+				s = r("./node_modules/lodash/_createInverter.js"),
+				a = r("./node_modules/lodash/identity.js"),
+				n = Object.prototype.toString,
+				o = s((function(t, e, r) {
+					null != e && "function" != typeof e.toString && (e = n.call(e)), t[e] = r
+				}), i(a));
+			t.exports = o
+		},
+		"./node_modules/lodash/uniqWith.js": function(t, e, r) {
+			var i = r("./node_modules/lodash/_baseUniq.js");
+			t.exports = function(t, e) {
+				return e = "function" == typeof e ? e : void 0, t && t.length ? i(t, void 0, e) : []
+			}
+		},
+		"./node_modules/lodash/xor.js": function(t, e, r) {
+			var i = r("./node_modules/lodash/_arrayFilter.js"),
+				s = r("./node_modules/lodash/_baseRest.js"),
+				a = r("./node_modules/lodash/_baseXor.js"),
+				n = r("./node_modules/lodash/isArrayLikeObject.js"),
+				o = s((function(t) {
+					return a(i(t, n))
+				}));
+			t.exports = o
+		},
 		"./node_modules/lottie-web/build/player/lottie.js": function(module, exports, __webpack_require__) {
 			var __WEBPACK_AMD_DEFINE_RESULT__;
 			"undefined" != typeof navigator && function(t, e) {
@@ -2025,10 +2419,10 @@
 						var D, w, F, I, V = 1.2 * t.finalSize * .714,
 							R = !0;
 						F = S.length;
-						var B, L, G, z, N, O, H, j, q, W, Y, X, K, $ = -1,
-							U = o,
-							J = m,
-							Z = f,
+						var B, L, G, z, N, O, H, j, q, W, Y, X, K, U = -1,
+							$ = o,
+							Z = m,
+							J = f,
 							Q = -1,
 							tt = "",
 							et = this.defaultPropsArray;
@@ -2048,7 +2442,7 @@
 								} for (rt && (rt += it); at < s;) T[at].animatorJustifyOffset = rt, at += 1
 						}
 						for (s = 0; s < a; s += 1) {
-							if (_.reset(), N = 1, T[s].n) r = 0, i += t.yOffset, i += R ? 1 : 0, o = U, R = !1, 0, this._hasMaskedPath && (f = Z, c = (d = u[m = J].points)[f - 1], y = (h = d[f]).partialLength, l = 0), K = W = X = tt = "", et = this.defaultPropsArray;
+							if (_.reset(), N = 1, T[s].n) r = 0, i += t.yOffset, i += R ? 1 : 0, o = $, R = !1, 0, this._hasMaskedPath && (f = J, c = (d = u[m = Z].points)[f - 1], y = (h = d[f]).partialLength, l = 0), K = W = X = tt = "", et = this.defaultPropsArray;
 							else {
 								if (this._hasMaskedPath) {
 									if (Q !== T[s].line) {
@@ -2061,7 +2455,7 @@
 										}
 										Q = T[s].line
 									}
-									$ !== T[s].ind && (T[$] && (o += T[$].extra), o += T[s].an / 2, $ = T[s].ind), o += x[0] * T[s].an / 200;
+									U !== T[s].ind && (T[U] && (o += T[U].extra), o += T[s].an / 2, U = T[s].ind), o += x[0] * T[s].an / 200;
 									var ot = 0;
 									for (w = 0; w < F; w += 1)(D = S[w].a).p.propType && ((B = S[w].s.getMult(T[s].anIndexes[w], P.a[w].s.totalChars)).length ? ot += D.p.v[0] * B[0] : ot += D.p.v[0] * B), D.a.propType && ((B = S[w].s.getMult(T[s].anIndexes[w], P.a[w].s.totalChars)).length ? ot += D.a.v[0] * B[0] : ot += D.a.v[0] * B);
 									for (p = !0; p;) l + y >= o + ot || !d ? (v = (o + ot - l) / h.partialLength, G = c.point[0] + (h.point[0] - c.point[0]) * v, z = c.point[1] + (h.point[1] - c.point[1]) * v, _.translate(-x[0] * T[s].an / 200, -x[1] * V / 100), p = !1) : d && (l += h.partialLength, (f += 1) >= d.length && (f = 0, u[m += 1] ? d = u[m].points : E.v.c ? (f = 0, d = u[m = 0].points) : (l -= h.partialLength, d = null)), d && (c = h, y = (h = d[f]).partialLength));
@@ -2086,7 +2480,7 @@
 										var ht = 180 * Math.atan(b) / Math.PI;
 										h.point[0] < c.point[0] && (ht += 180), _.rotate(-ht * Math.PI / 180)
 									}
-									_.translate(G, z, 0), o -= x[0] * T[s].an / 200, T[s + 1] && $ !== T[s + 1].ind && (o += T[s].an / 2, o += t.tr / 1e3 * t.finalSize)
+									_.translate(G, z, 0), o -= x[0] * T[s].an / 200, T[s + 1] && U !== T[s + 1].ind && (o += T[s].an / 2, o += t.tr / 1e3 * t.finalSize)
 								} else {
 									switch (_.translate(r, i, 0), t.ps && _.translate(t.ps[0], t.ps[1] + t.ascent, 0), t.j) {
 										case 1:
@@ -6084,7 +6478,40 @@
 				var readyStateCheckInterval = setInterval(checkReady, 100);
 				return lottie
 			}))
+		},
+		"./node_modules/uuid/index.js": function(t, e, r) {
+			var i = r("./node_modules/uuid/v1.js"),
+				s = r("./node_modules/uuid/v4.js"),
+				a = s;
+			a.v1 = i, a.v4 = s, t.exports = a
+		},
+		"./node_modules/uuid/v1.js": function(t, e, r) {
+			var i, s, a = r("./node_modules/uuid/lib/rng-browser.js"),
+				n = r("./node_modules/uuid/lib/bytesToUuid.js"),
+				o = 0,
+				h = 0;
+			t.exports = function(t, e, r) {
+				var l = e && r || 0,
+					p = e || [],
+					f = (t = t || {}).node || i,
+					m = void 0 !== t.clockseq ? t.clockseq : s;
+				if (null == f || null == m) {
+					var c = a();
+					null == f && (f = i = [1 | c[0], c[1], c[2], c[3], c[4], c[5]]), null == m && (m = s = 16383 & (c[6] << 8 | c[7]))
+				}
+				var d = void 0 !== t.msecs ? t.msecs : (new Date).getTime(),
+					u = void 0 !== t.nsecs ? t.nsecs : h + 1,
+					y = d - o + (u - h) / 1e4;
+				if (y < 0 && void 0 === t.clockseq && (m = m + 1 & 16383), (y < 0 || d > o) && void 0 === t.nsecs && (u = 0), u >= 1e4) throw new Error("uuid.v1(): Can't create more than 10M uuids/sec");
+				o = d, h = u, s = m;
+				var g = (1e4 * (268435455 & (d += 122192928e5)) + u) % 4294967296;
+				p[l++] = g >>> 24 & 255, p[l++] = g >>> 16 & 255, p[l++] = g >>> 8 & 255, p[l++] = 255 & g;
+				var v = d / 4294967296 * 1e4 & 268435455;
+				p[l++] = v >>> 8 & 255, p[l++] = 255 & v, p[l++] = v >>> 24 & 15 | 16, p[l++] = v >>> 16 & 255, p[l++] = m >>> 8 | 128, p[l++] = 255 & m;
+				for (var b = 0; b < 6; ++b) p[l + b] = f[b];
+				return e || n(p)
+			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Governance~ModListing~Reddit~Subreddit.c8ec9e5f753fc464aad5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Governance~ModListing~Reddit~Subreddit.d92465e63ec9f2222479.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.c06a222a75194406154a.js
-// Retrieved at 11/10/2021, 7:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.7a8110507f25056118ab.js
+// Retrieved at 11/15/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityPointsLearnMore"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, n) {
@@ -524,12 +524,12 @@
 						var w = E < l ? h : f;
 						y[E] = P.slice(b, b + w), v[E] = p.encode(y[E]), b += w, _ = Math.max(_, w)
 					}
-					var k, C, x = r.alloc(a),
+					var C, k, x = r.alloc(a),
 						N = 0;
-					for (k = 0; k < _; k++)
-						for (C = 0; C < c; C++) k < y[C].length && (x[N++] = y[C][k]);
-					for (k = 0; k < g; k++)
-						for (C = 0; C < c; C++) x[N++] = v[C][k];
+					for (C = 0; C < _; C++)
+						for (k = 0; k < c; k++) C < y[k].length && (x[N++] = y[k][C]);
+					for (C = 0; C < g; C++)
+						for (k = 0; k < c; k++) x[N++] = v[k][C];
 					return x
 				}(a, e, t)
 			}
@@ -1673,7 +1673,7 @@
 						}),
 						className: v.a.logo,
 						to: "/",
-						onClick: () => e(Object(g.a)(() => Promise.all([n.e("CollectionCommentsPage~CommentsPage~Frontpage~GovernanceReleaseNotesModal~ModListing~ModQueuePages~M~eb6c0aee"), n.e("Frontpage~ModListing"), n.e("Frontpage~FrontpageSidebar"), n.e("Frontpage")]).then(n.bind(null, "./src/reddit/actions/frontpage/index.ts")).then(e => e.frontpageReloaded))(!0))
+						onClick: () => e(Object(g.a)(() => Promise.all([n.e("CollectionCommentsPage~CommentsPage~Frontpage~GovernanceReleaseNotesModal~ModListing~ModQueuePages~M~eb6c0aee"), n.e("Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~ProfilePosts~Subreddit"), n.e("Frontpage~FrontpageSidebar"), n.e("Frontpage")]).then(n.bind(null, "./src/reddit/actions/frontpage/index.ts")).then(e => e.frontpageReloaded))(!0))
 					}, a.a.createElement(c.a, {
 						className: v.a.snoo
 					}), a.a.createElement(b.a, {
@@ -1731,8 +1731,8 @@
 				}];
 			var E = n("./src/lib/getParsedUserAgent/index.ts"),
 				w = n("./src/reddit/components/Governance/TransactionModals/CreateVaultModal/index.tsx"),
-				k = n("./src/reddit/helpers/trackers/communityPoints.ts"),
-				C = n("./src/reddit/hooks/useTracking.ts"),
+				C = n("./src/reddit/helpers/trackers/communityPoints.ts"),
+				k = n("./src/reddit/hooks/useTracking.ts"),
 				x = n("./src/reddit/selectors/economics.ts"),
 				N = n("./src/lib/classNames/index.ts"),
 				j = n("./src/reddit/icons/svgs/ArrowRightThin/index.tsx"),
@@ -1796,13 +1796,13 @@
 				R = n.n(I);
 
 			function F(e) {
-				const [t, n] = Object(o.useState)(!1), r = Object(C.a)();
+				const [t, n] = Object(o.useState)(!1), r = Object(k.a)();
 				return a.a.createElement("div", {
 					className: R.a.section
 				}, a.a.createElement("div", {
 					className: R.a.sectionTitle,
 					onClick: () => {
-						t || r(Object(k.g)(e.id)), n(!t)
+						t || r(Object(C.g)(e.id)), n(!t)
 					}
 				}, e.title, a.a.createElement("button", {
 					className: Object(N.a)(R.a.expando, {
@@ -1825,9 +1825,9 @@
 			}
 			var L = function() {
 					const e = Object(i.e)(x.m),
-						t = Object(C.a)();
+						t = Object(k.a)();
 					Object(o.useEffect)(() => {
-						t(Object(k.f)())
+						t(Object(C.f)())
 					}, [t]);
 					const n = e && e.faq || [];
 					return a.a.createElement("div", {
@@ -1857,9 +1857,9 @@
 				fbt: U
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 			var Y = function() {
-					const [e, t] = Object(o.useState)(!1), [n, s] = Object(o.useState)(!1), c = Object(i.e)(E.e), l = Object(i.e)(x.m), d = Object(C.a)();
+					const [e, t] = Object(o.useState)(!1), [n, s] = Object(o.useState)(!1), c = Object(i.e)(E.e), l = Object(i.e)(x.m), d = Object(k.a)();
 					Object(o.useEffect)(() => {
-						d(Object(k.h)())
+						d(Object(C.h)())
 					}, [d]);
 					const u = l && l.learnMore.title;
 					return a.a.createElement("div", {
@@ -1871,7 +1871,7 @@
 					}), e && a.a.createElement(a.a.Fragment, null, a.a.createElement(p.l, {
 						className: D.a.createVaultButton,
 						onClick: () => {
-							d(Object(k.b)()), c ? window.location.href = `${r.a.redditUrl}/vault/` : s(!0)
+							d(Object(C.b)()), c ? window.location.href = `${r.a.redditUrl}/vault/` : s(!0)
 						}
 					}, U._("Create My Vault", null, {
 						hk: "3ZzMgD"
@@ -2309,8 +2309,8 @@
 			var Ee = n("./src/reddit/pages/meta/CommunityPointsLearnMorePage/Sections/Vault/index.m.less"),
 				we = n.n(Ee);
 			const {
-				fbt: ke
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), Ce = ({
+				fbt: Ce
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), ke = ({
 				className: e
 			}) => a.a.createElement("div", {
 				className: Object(N.a)(e, we.a.background)
@@ -2322,11 +2322,11 @@
 				className: we.a.textContainer
 			}, a.a.createElement("h2", {
 				className: we.a.title
-			}, ke._("Vault", null, {
+			}, Ce._("Vault", null, {
 				hk: "Ydv9k"
 			})), a.a.createElement("p", {
 				className: we.a.body
-			}, ke._("A crypto wallet built into the Reddit app. See Points balances and send Points to Redditors at the tap of a button.", null, {
+			}, Ce._("A crypto wallet built into the Reddit app. See Points balances and send Points to Redditors at the tap of a button.", null, {
 				hk: "1NZGlE"
 			})))), a.a.createElement("div", {
 				className: we.a.imageSection
@@ -2350,7 +2350,7 @@
 					src: `${r.a.assetPath}/img/communityPoints/landingPage/spiral_v2.png`
 				}), a.a.createElement(pe, {
 					className: Ne.a.featuresSection
-				}), a.a.createElement(Ce, {
+				}), a.a.createElement(ke, {
 					className: Ne.a.vaultSection
 				}), a.a.createElement(ce, {
 					className: Ne.a.cryptoFutureSection
@@ -2394,9 +2394,9 @@
 			})), n.d(t, "h", (function() {
 				return w
 			})), n.d(t, "z", (function() {
-				return k
-			})), n.d(t, "l", (function() {
 				return C
+			})), n.d(t, "l", (function() {
+				return k
 			})), n.d(t, "n", (function() {
 				return x
 			})), n.d(t, "e", (function() {
@@ -2510,12 +2510,12 @@
 					}
 				};
 
-			function k(e, t) {
+			function C(e, t) {
 				const n = (e.economics.me.data.specialMemberships || {})[t];
 				return !!(n && n.settings && n.settings.optOut)
 			}
 
-			function C(e, t) {
+			function k(e, t) {
 				const {
 					badge: n,
 					subredditId: r
@@ -2672,4 +2672,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.c06a222a75194406154a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.7a8110507f25056118ab.js.map

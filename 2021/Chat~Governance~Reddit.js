@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.a9edf8825ed96bb49845.js
-// Retrieved at 11/12/2021, 5:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.a54771dd5077d8f7bcf6.js
+// Retrieved at 11/15/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3307,10 +3307,10 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("151599"),
+				buildNumber: Object(r.c)("151652"),
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
-				buildTimestamp: Object(r.b)("1636753408"),
+				buildTimestamp: Object(r.b)("1636986234"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -5877,14 +5877,14 @@
 					}))
 				},
 				z = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c8f32d02c73a0906259e9fa4a3863c2ff6e993b13-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %cf9334da4a7aa26d9502634babc7e265863fe61d6-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${v.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "8f32d02c73a0906259e9fa4a3863c2ff6e993b13-production",
+						release: "f9334da4a7aa26d9502634babc7e265863fe61d6-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6397,7 +6397,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "8f32d02c73a0906259e9fa4a3863c2ff6e993b13-production",
+						releaseClient: "f9334da4a7aa26d9502634babc7e265863fe61d6-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -16266,7 +16266,7 @@
 				tt = "web_meta_landing_page_redesign",
 				it = "web_econ_improved_cancellation",
 				nt = "web_econ_premium_awards_upsell",
-				rt = "web_econ_premium_signup_popup",
+				rt = "web_econ_premium_coin_bonus_banner",
 				st = "d2x_more_replies_signup_interstitial",
 				ot = "d2x_nps_survey_dismiss_signup_trigger",
 				dt = "d2x_nps_survey_successful_signup_trigger",
@@ -26503,109 +26503,125 @@
 		"./src/reddit/models/Gold/Powerups/index.ts": function(e, t, i) {
 			"use strict";
 			i.d(t, "a", (function() {
-				return o
-			})), i.d(t, "c", (function() {
 				return d
 			})), i.d(t, "b", (function() {
-				return l
+				return a
+			})), i.d(t, "c", (function() {
+				return c
 			}));
-			var n, r = i("./node_modules/fbt/lib/FbtPublic.js"),
-				s = i("./src/lib/constants/index.ts");
+			var n, r = i("./src/config.ts"),
+				s = i("./node_modules/fbt/lib/FbtPublic.js"),
+				o = i("./src/lib/constants/index.ts");
 			! function(e) {
 				e[e.First = 1] = "First", e[e.Second = 2] = "Second"
 			}(n || (n = {}));
 			n.Second;
-			var o;
+			var d;
 			! function(e) {
 				e.Achievements = "ACHIEVEMENT_FLAIRS", e.SdVideo = "SD_VIDEO", e.HdVideo = "HD_VIDEO", e.CommentsWithGifs = "COMMENTS_WITH_GIFS", e.CommentsWithEmoji = "COMMENTS_WITH_EMOJI", e.PostsImageUpload = "POSTS_IMAGE_UPLOAD", e.HeroStatus = "HERO_STATUS", e.CommentRecognition = "COMMENT_RECOGNITION", e.PowerupsAward = "POWERUPS_AWARD", e.CommunityGear = "COMMUNITY_AVATAR_GEAR", e.More = "MORE"
-			}(o || (o = {}));
-			const d = {
-					[o.CommentRecognition]: () => ({
-						title: r.fbt._("Comment Recognition", null, {
+			}(d || (d = {}));
+			const a = e => {
+					const {
+						description: t,
+						title: i,
+						isNew: n
+					} = l[e]();
+					return {
+						isNew: n,
+						description: t,
+						title: i,
+						key: `cell_${e}`,
+						telemetryTag: e,
+						iconUrl: `${r.a.assetPath}/img/powerups/${e}_v3.png`
+					}
+				},
+				l = {
+					[d.CommentRecognition]: () => ({
+						title: s.fbt._("Comment Recognition", null, {
 							hk: "3sxu4T"
 						}),
-						description: r.fbt._("Stand out in the comments with a ring around your avatar", null, {
+						description: s.fbt._("Stand out in the comments with a ring around your avatar", null, {
 							hk: "4FXS1Z"
 						})
 					}),
-					[o.PowerupsAward]: () => ({
-						title: r.fbt._("Powerups Award", null, {
+					[d.PowerupsAward]: () => ({
+						title: s.fbt._("Powerups Award", null, {
 							hk: "k1D64"
 						}),
-						description: r.fbt._("Exclusive awards to use in your community", null, {
+						description: s.fbt._("Exclusive awards to use in your community", null, {
 							hk: "1FdKZ7"
 						})
 					}),
-					[o.Achievements]: () => ({
-						title: r.fbt._("Achievements", null, {
+					[d.Achievements]: () => ({
+						title: s.fbt._("Achievements", null, {
 							hk: "15Pxs"
 						}),
-						description: r.fbt._("Recognize members' contributions and skills", null, {
+						description: s.fbt._("Recognize members' contributions and skills", null, {
 							hk: "lhUOn"
 						})
 					}),
-					[o.CommunityGear]: () => ({
-						title: r.fbt._("Community Gear", null, {
+					[d.CommunityGear]: () => ({
+						title: s.fbt._("Community Gear", null, {
 							hk: "7Lg71"
 						}),
-						description: r.fbt._("Show your support with exclusive gear", null, {
+						description: s.fbt._("Show your support with exclusive gear", null, {
 							hk: "w3r3L"
 						}),
 						isNew: !0
 					}),
-					[o.SdVideo]: () => ({
-						title: r.fbt._("SD video", null, {
+					[d.SdVideo]: () => ({
+						title: s.fbt._("SD video", null, {
 							hk: "GDxZa"
 						}),
 						description: ""
 					}),
-					[o.HdVideo]: () => ({
-						title: r.fbt._("HD Video", null, {
+					[d.HdVideo]: () => ({
+						title: s.fbt._("HD Video", null, {
 							hk: "2KPR6O"
 						}),
-						description: r.fbt._("Upload and watch in greater resolution", null, {
+						description: s.fbt._("Upload and watch in greater resolution", null, {
 							hk: "1rvNwn"
 						})
 					}),
-					[o.CommentsWithGifs]: () => ({
-						title: r.fbt._("GIF Replies", null, {
+					[d.CommentsWithGifs]: () => ({
+						title: s.fbt._("GIF Replies", null, {
 							hk: "1wXiEa"
 						}),
-						description: r.fbt._("Throw a GIF in the thread when words won’t do", null, {
+						description: s.fbt._("Throw a GIF in the thread when words won’t do", null, {
 							hk: "4ATk7M"
 						})
 					}),
-					[o.CommentsWithEmoji]: () => ({
-						title: r.fbt._("Custom Emojis", null, {
+					[d.CommentsWithEmoji]: () => ({
+						title: s.fbt._("Custom Emojis", null, {
 							hk: "2qt00u"
 						}),
-						description: r.fbt._("Use emojis made just for this community", null, {
+						description: s.fbt._("Use emojis made just for this community", null, {
 							hk: "4cQwCT"
 						})
 					}),
-					[o.PostsImageUpload]: () => ({
-						title: r.fbt._("Upload images", null, {
+					[d.PostsImageUpload]: () => ({
+						title: s.fbt._("Upload images", null, {
 							hk: "1P6ot7"
 						}),
 						description: ""
 					}),
-					[o.HeroStatus]: () => ({
-						title: r.fbt._("Hero Status", null, {
+					[d.HeroStatus]: () => ({
+						title: s.fbt._("Hero Status", null, {
 							hk: "miGwE"
 						}),
-						description: r.fbt._("Get on the heroes list and instantly access all perks", null, {
+						description: s.fbt._("Get on the heroes list and instantly access all perks", null, {
 							hk: "2bnnTY"
 						})
 					}),
-					[o.More]: () => ({
-						title: r.fbt._("More to come...", null, {
+					[d.More]: () => ({
+						title: s.fbt._("More to come...", null, {
 							hk: "3ksSuD"
 						}),
 						description: void 0
 					})
 				},
-				a = [s.F, s.E, s.Kb],
-				l = e => !e.supporterInfo || !e.supporterInfo.displayName || a.includes(e.supporterInfo.displayName)
+				u = [o.F, o.E, o.Kb],
+				c = e => !e.supporterInfo || !e.supporterInfo.displayName || u.includes(e.supporterInfo.displayName)
 		},
 		"./src/reddit/models/GqlTopLevelField.ts": function(e, t, i) {
 			"use strict";
@@ -31446,7 +31462,7 @@
 						const t = this.resolve(e);
 						return !1 !== this.resolved[t] && !!i.m[t]
 					},
-					importAsync: () => Promise.all([i.e("vendors~Governance~ModListing~Reddit~Subreddit"), i.e("CollectionCommentsPage~CommentsPage~Frontpage~GovernanceReleaseNotesModal~ModListing~ModQueuePages~M~eb6c0aee"), i.e("Governance~ModListing~Reddit~Subreddit"), i.e("Frontpage~ModListing"), i.e("ModListing")]).then(i.bind(null, "./src/reddit/pages/ModListing/index.tsx")),
+					importAsync: () => Promise.all([i.e("vendors~Governance~ModListing~Reddit~Subreddit"), i.e("CollectionCommentsPage~CommentsPage~Frontpage~GovernanceReleaseNotesModal~ModListing~ModQueuePages~M~eb6c0aee"), i.e("Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~ProfilePosts~Subreddit"), i.e("Governance~ModListing~Reddit~ReportFlow~Subreddit"), i.e("Governance~ModListing~Reddit"), i.e("ModListing")]).then(i.bind(null, "./src/reddit/pages/ModListing/index.tsx")),
 					requireAsync(e) {
 						const t = this.resolve(e);
 						return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
@@ -31465,7 +31481,7 @@
 				m = d()(p.map(e => Object.keys(a.W).map(t => `${e}/:sort(${a.W[t]})?`))),
 				h = e => e.startsWith(_),
 				f = {
-					action: Object(l.a)(() => Promise.all([i.e("vendors~Governance~ModListing~Reddit~Subreddit"), i.e("CollectionCommentsPage~CommentsPage~Frontpage~GovernanceReleaseNotesModal~ModListing~ModQueuePages~M~eb6c0aee"), i.e("Governance~ModListing~Reddit~Subreddit"), i.e("Frontpage~ModListing"), i.e("ModListing")]).then(i.bind(null, "./src/reddit/actions/pages/modListing/index.ts")).then(e => e.modListingPageRequested)),
+					action: Object(l.a)(() => Promise.all([i.e("vendors~Governance~ModListing~Reddit~Subreddit"), i.e("CollectionCommentsPage~CommentsPage~Frontpage~GovernanceReleaseNotesModal~ModListing~ModQueuePages~M~eb6c0aee"), i.e("Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~ProfilePosts~Subreddit"), i.e("Governance~ModListing~Reddit~ReportFlow~Subreddit"), i.e("Governance~ModListing~Reddit"), i.e("ModListing")]).then(i.bind(null, "./src/reddit/actions/pages/modListing/index.ts")).then(e => e.modListingPageRequested)),
 					chunk: a.s.MOD_LISTING,
 					component: u,
 					exact: !0,
@@ -31508,7 +31524,7 @@
 						const t = this.resolve(e);
 						return !1 !== this.resolved[t] && !!i.m[t]
 					},
-					importAsync: () => Promise.all([i.e("vendors~Governance~ModListing~Reddit~Subreddit"), i.e("vendors~Subreddit"), i.e("CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~MembershipPaywa~c24a8af4"), i.e("CollectionCommentsPage~CommentsPage~Frontpage~GovernanceReleaseNotesModal~ModListing~ModQueuePages~M~eb6c0aee"), i.e("Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241"), i.e("Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250"), i.e("Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e"), i.e("Governance~ModListing~Reddit~Subreddit"), i.e("CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"), i.e("Subreddit")]).then(i.bind(null, "./src/reddit/pages/Subreddit/index.tsx")),
+					importAsync: () => Promise.all([i.e("vendors~Governance~ModListing~Reddit~Subreddit"), i.e("vendors~Reddit~Subreddit"), i.e("CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~MembershipPaywa~c24a8af4"), i.e("CollectionCommentsPage~CommentsPage~Frontpage~GovernanceReleaseNotesModal~ModListing~ModQueuePages~M~eb6c0aee"), i.e("Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250"), i.e("Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e"), i.e("Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~ProfilePosts~Subreddit"), i.e("Governance~ModListing~Reddit~ReportFlow~Subreddit"), i.e("CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"), i.e("Subreddit")]).then(i.bind(null, "./src/reddit/pages/Subreddit/index.tsx")),
 					requireAsync(e) {
 						const t = this.resolve(e);
 						return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
@@ -31527,7 +31543,7 @@
 			_ = Object(d.b)(_);
 			const p = _,
 				m = {
-					action: Object(a.a)(() => Promise.all([i.e("vendors~Governance~ModListing~Reddit~Subreddit"), i.e("vendors~Subreddit"), i.e("CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~MembershipPaywa~c24a8af4"), i.e("CollectionCommentsPage~CommentsPage~Frontpage~GovernanceReleaseNotesModal~ModListing~ModQueuePages~M~eb6c0aee"), i.e("Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241"), i.e("Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250"), i.e("Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e"), i.e("Governance~ModListing~Reddit~Subreddit"), i.e("CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"), i.e("Subreddit")]).then(i.bind(null, "./src/reddit/actions/pages/subreddit.ts")).then(e => e.subredditRequested)),
+					action: Object(a.a)(() => Promise.all([i.e("vendors~Governance~ModListing~Reddit~Subreddit"), i.e("vendors~Reddit~Subreddit"), i.e("CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~MembershipPaywa~c24a8af4"), i.e("CollectionCommentsPage~CommentsPage~Frontpage~GovernanceReleaseNotesModal~ModListing~ModQueuePages~M~eb6c0aee"), i.e("Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250"), i.e("Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e"), i.e("Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~ProfilePosts~Subreddit"), i.e("Governance~ModListing~Reddit~ReportFlow~Subreddit"), i.e("CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"), i.e("Subreddit")]).then(i.bind(null, "./src/reddit/actions/pages/subreddit.ts")).then(e => e.subredditRequested)),
 					chunk: o.s.SUBREDDIT,
 					component: l,
 					exact: !0,
@@ -32831,14 +32847,14 @@
 				},
 				T = Object(n.a)(E, e => {
 					if (!e) return;
-					const t = e.filter(r.b);
+					const t = e.filter(r.c);
 					if (!t.length) return e;
 					const i = {
 						supporterInfo: null,
 						score: t.reduce((e, t) => e + t.score, 0),
 						lastSupportedAt: t[t.length - 1].lastSupportedAt
 					};
-					return [...e.filter(e => !Object(r.b)(e)), i]
+					return [...e.filter(e => !Object(r.c)(e)), i]
 				}),
 				S = (e, {
 					subredditId: t,
@@ -43236,4 +43252,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.a9edf8825ed96bb49845.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.a54771dd5077d8f7bcf6.js.map

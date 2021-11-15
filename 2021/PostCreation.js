@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.344da93a6d06771f8ec8.js
-// Retrieved at 11/11/2021, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.77bad85cf797d9128414.js
+// Retrieved at 11/15/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton", "FrontpageSidebar"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, n) {
@@ -23703,6 +23703,9 @@
 		},
 		"./src/reddit/icons/fonts/Premium/index.tsx": function(e, t, n) {
 			"use strict";
+			n.d(t, "a", (function() {
+				return c
+			}));
 			var o = n("./node_modules/react/index.js"),
 				s = n.n(o),
 				r = n("./src/reddit/icons/fonts/helpers.tsx"),
@@ -23710,9 +23713,8 @@
 				a = n.n(i);
 			const c = n("./src/lib/lessComponent.tsx").a.wrapped(e => s.a.createElement("i", {
 				title: e.title,
-				className: `${Object(r.b)("premium",e.isFilled)} ${e.className}`
-			}), "PremiumIcon", a.a);
-			t.a = c
+				className: `${Object(r.b)("premium",!0)} ${e.className}`
+			}), "PremiumIcon", a.a)
 		},
 		"./src/reddit/icons/fonts/Remove/index.tsx": function(e, t, n) {
 			"use strict";
@@ -32185,4 +32187,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.344da93a6d06771f8ec8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.77bad85cf797d9128414.js.map

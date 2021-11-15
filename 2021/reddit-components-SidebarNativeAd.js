@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.4fa94656d046adc12f68.js
-// Retrieved at 11/11/2021, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.3d77af9ebba50148ad90.js
+// Retrieved at 11/15/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd", "FrontpageSidebar"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, r) {
@@ -2609,6 +2609,9 @@
 		},
 		"./src/reddit/icons/fonts/Premium/index.tsx": function(e, t, r) {
 			"use strict";
+			r.d(t, "a", (function() {
+				return c
+			}));
 			var n = r("./node_modules/react/index.js"),
 				o = r.n(n),
 				s = r("./src/reddit/icons/fonts/helpers.tsx"),
@@ -2616,9 +2619,8 @@
 				a = r.n(i);
 			const c = r("./src/lib/lessComponent.tsx").a.wrapped(e => o.a.createElement("i", {
 				title: e.title,
-				className: `${Object(s.b)("premium",e.isFilled)} ${e.className}`
-			}), "PremiumIcon", a.a);
-			t.a = c
+				className: `${Object(s.b)("premium",!0)} ${e.className}`
+			}), "PremiumIcon", a.a)
 		},
 		"./src/reddit/icons/fonts/Remove/index.tsx": function(e, t, r) {
 			"use strict";
@@ -3577,4 +3579,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.4fa94656d046adc12f68.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.3d77af9ebba50148ad90.js.map
