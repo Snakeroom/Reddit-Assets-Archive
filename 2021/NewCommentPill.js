@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NewCommentPill.648ab35e49113029c3c1.js
-// Retrieved at 11/11/2021, 4:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NewCommentPill.0524e7fa31cb009afa82.js
+// Retrieved at 11/17/2021, 12:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NewCommentPill"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, s) {
@@ -17,20 +17,6 @@
 			e.exports = function(e, t) {
 				var s = r(e);
 				return o(s, n(t, 0, s.length))
-			}
-		},
-		"./node_modules/lodash/_shuffleSelf.js": function(e, t, s) {
-			var n = s("./node_modules/lodash/_baseRandom.js");
-			e.exports = function(e, t) {
-				var s = -1,
-					o = e.length,
-					r = o - 1;
-				for (t = void 0 === t ? o : t; ++s < t;) {
-					var a = n(s, r),
-						c = e[a];
-					e[a] = e[s], e[s] = c
-				}
-				return e.length = t, e
 			}
 		},
 		"./node_modules/lodash/sampleSize.js": function(e, t, s) {
@@ -73,13 +59,13 @@
 				b = s("./src/reddit/components/RandomBaseUserIcons/RandomBaseUserIcons.tsx"),
 				_ = s("./src/reddit/components/TrackingHelper/index.tsx"),
 				f = s("./src/reddit/constants/componentSizes.ts"),
-				h = s("./src/reddit/constants/elementIds.ts"),
-				j = s("./src/reddit/constants/tracking.ts"),
+				j = s("./src/reddit/constants/elementIds.ts"),
+				h = s("./src/reddit/constants/tracking.ts"),
 				O = s("./src/reddit/hooks/useIntersectionObserver.ts"),
-				v = s("./src/reddit/hooks/usePostContext.ts"),
-				C = s("./src/reddit/selectors/experiments/typingIndicators.ts"),
-				x = s("./src/reddit/selectors/subreddit.ts"),
-				I = s("./src/reddit/selectors/telemetry.ts"),
+				C = s("./src/reddit/hooks/usePostContext.ts"),
+				v = s("./src/reddit/selectors/experiments/typingIndicators.ts"),
+				I = s("./src/reddit/selectors/subreddit.ts"),
+				x = s("./src/reddit/selectors/telemetry.ts"),
 				g = s("./src/lib/classNames/index.ts"),
 				N = s("./src/reddit/components/NewCommentPill/index.m.less"),
 				y = s.n(N);
@@ -88,8 +74,8 @@
 					source: "post",
 					action: e,
 					noun: "new_comment_pill",
-					post: Object(I.post)(s, t.id),
-					subreddit: Object(x.I)(s, {
+					post: Object(x.post)(s, t.id),
+					subreddit: Object(I.I)(s, {
 						identifier: t.belongsTo
 					})
 				}),
@@ -105,25 +91,25 @@
 			}) => {
 				const _ = Object(a.useRef)(null),
 					{
-						post: x
-					} = Object(v.a)() || {},
-					I = Object(a.useRef)(null),
+						post: I
+					} = Object(C.a)() || {},
+					x = Object(a.useRef)(null),
 					[N, T] = Object(a.useReducer)(E, 0),
-					A = Object(l.e)(C.a),
+					A = Object(l.e)(v.a),
 					[P, S] = Object(a.useState)(!1),
 					[U, k] = Object(a.useState)(!0);
 				Object(a.useEffect)(() => {
-					I.current = o || null
+					x.current = o || null
 				}, [o]);
 				const D = Object(a.useCallback)(([e]) => {
 					o && e.boundingClientRect.top < f.f && (k(!1), S(!1))
 				}, [o]);
-				Object(O.a)(I, D), Object(a.useEffect)(() => {
+				Object(O.a)(x, D), Object(a.useEffect)(() => {
 					if (!P || U) return;
 					const e = () => {
 							S(!1)
 						},
-						t = s ? document.getElementById(h.d) : document;
+						t = s ? document.getElementById(j.d) : document;
 					return null == t || t.addEventListener("scroll", e), () => null == t ? void 0 : t.removeEventListener("scroll", e)
 				}, [U, s, P]);
 				const R = Object(a.useMemo)(() => ({
@@ -137,8 +123,8 @@
 					}), [t]),
 					J = Object(l.d)(),
 					z = Object(a.useCallback)(() => {
-						if (!x) return;
-						e(B(j.c.CLICK, x)), S(!1), (() => J(Object(d.b)(`${window.location.pathname}${w}`)))(), r.a.read(() => {
+						if (!I) return;
+						e(B(h.c.CLICK, I)), S(!1), (() => J(Object(d.b)(`${window.location.pathname}${w}`)))(), r.a.read(() => {
 							const e = document.getElementById(m.a);
 							if (e) {
 								const t = e.offsetTop - 50;
@@ -148,14 +134,14 @@
 								}))
 							}
 						})
-					}, [x]);
+					}, [I]);
 				Object(a.useEffect)(() => {
 					N && S(!0)
 				}, [N]), Object(a.useEffect)(() => {
-					P && x ? (_.current && clearTimeout(_.current), e(B(j.c.VIEW, x))) : _.current = setTimeout(() => T({
+					P && I ? (_.current && clearTimeout(_.current), e(B(h.c.VIEW, I))) : _.current = setTimeout(() => T({
 						type: "reset"
 					}), 1e3)
-				}, [P, e, x]);
+				}, [P, e, I]);
 				const L = Object(a.useCallback)(e => {
 					const {
 						topLevelCommentCountChange: t
@@ -294,23 +280,23 @@
 				b = 8,
 				_ = 20,
 				f = 3,
-				h = e => {
+				j = e => {
 					const {
 						iconsKey: t,
 						memberIconClassName: s,
 						numVisibleIcons: n = f,
 						shouldOutlinePresenceDot: c,
 						shouldShowPresenceDot: m,
-						shouldUseColoredSilhouetteIcons: h,
-						numIconsToDrawFrom: j = (h ? b : _),
+						shouldUseColoredSilhouetteIcons: j,
+						numIconsToDrawFrom: h = (j ? b : _),
 						wrapperClassName: O
-					} = e, v = Object(o.useRef)([]);
+					} = e, C = Object(o.useRef)([]);
 					return Object(i.a)(() => {
-						const e = Object(d.a)(t, j, h);
-						v.current = l()(e, n)
+						const e = Object(d.a)(t, h, j);
+						C.current = l()(e, n)
 					}), r.a.createElement("div", {
 						className: Object(a.a)(u.a.membersIcons, O)
-					}, v.current.map(({
+					}, C.current.map(({
 						color: e,
 						image: t
 					}, o) => {
@@ -338,7 +324,7 @@
 						})
 					}))
 				};
-			t.a = h
+			t.a = j
 		},
 		"./src/reddit/components/RandomBaseUserIcons/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -387,4 +373,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NewCommentPill.648ab35e49113029c3c1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NewCommentPill.0524e7fa31cb009afa82.js.map

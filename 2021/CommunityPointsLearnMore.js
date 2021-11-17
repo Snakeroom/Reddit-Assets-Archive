@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.7a8110507f25056118ab.js
-// Retrieved at 11/15/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.b2bb9b69894cc48ecb45.js
+// Retrieved at 11/17/2021, 12:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityPointsLearnMore"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, n) {
@@ -1673,7 +1673,7 @@
 						}),
 						className: v.a.logo,
 						to: "/",
-						onClick: () => e(Object(g.a)(() => Promise.all([n.e("CollectionCommentsPage~CommentsPage~Frontpage~GovernanceReleaseNotesModal~ModListing~ModQueuePages~M~eb6c0aee"), n.e("Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~ProfilePosts~Subreddit"), n.e("Frontpage~FrontpageSidebar"), n.e("Frontpage")]).then(n.bind(null, "./src/reddit/actions/frontpage/index.ts")).then(e => e.frontpageReloaded))(!0))
+						onClick: () => e(Object(g.a)(() => Promise.all([n.e("CollectionCommentsPage~CommentsPage~Frontpage~GovernanceReleaseNotesModal~ModListing~ModQueuePages~M~eb6c0aee"), n.e("Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~ProfilePosts~Subreddit"), n.e("Frontpage")]).then(n.bind(null, "./src/reddit/actions/frontpage/index.ts")).then(e => e.frontpageReloaded))(!0))
 					}, a.a.createElement(c.a, {
 						className: v.a.snoo
 					}), a.a.createElement(b.a, {
@@ -1795,7 +1795,7 @@
 				I = n("./src/reddit/pages/meta/CommunityPointsLearnMorePage/FAQ/index.m.less"),
 				R = n.n(I);
 
-			function F(e) {
+			function O(e) {
 				const [t, n] = Object(o.useState)(!1), r = Object(k.a)();
 				return a.a.createElement("div", {
 					className: R.a.section
@@ -1816,7 +1816,7 @@
 				}, e.children))
 			}
 
-			function O(e) {
+			function F(e) {
 				const t = `${r.a.assetPath}/img/communityPoints/faq/${e.id}`;
 				return a.a.createElement("img", {
 					src: t + ".png",
@@ -1834,7 +1834,7 @@
 						className: R.a.container
 					}, a.a.createElement("div", {
 						className: R.a.title
-					}, "Frequently Asked Questions"), n.map(e => e.pages.map(e => a.a.createElement(F, {
+					}, "Frequently Asked Questions"), n.map(e => e.pages.map(e => a.a.createElement(O, {
 						id: e.analyticsPageName,
 						title: e.title,
 						key: e.analyticsPageName
@@ -1847,7 +1847,7 @@
 					}) : "image" in e ? a.a.createElement("div", {
 						className: R.a.imageSection,
 						key: t
-					}, a.a.createElement(O, {
+					}, a.a.createElement(F, {
 						id: e.image
 					})) : null)))))
 				},
@@ -2412,9 +2412,9 @@
 			})), n.d(t, "r", (function() {
 				return R
 			})), n.d(t, "y", (function() {
-				return F
-			})), n.d(t, "u", (function() {
 				return O
+			})), n.d(t, "u", (function() {
+				return F
 			})), n.d(t, "v", (function() {
 				return L
 			})), n.d(t, "b", (function() {
@@ -2616,11 +2616,11 @@
 						membershipAlt: i.membershipAlt || B.membershipAlt
 					}
 				},
-				F = e => {
+				O = e => {
 					const t = e.economics.paymentSystems;
 					return !!(t.status === d.a.Fetched && t.data && t.data.tips && t.data.tips.usdr && t.data.tips.usdr.allowed)
 				},
-				O = (e, t) => {
+				F = (e, t) => {
 					const n = e.user.ownedBadges[t] || {};
 					return !!Object.keys(n).length
 				},
@@ -2672,4 +2672,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.7a8110507f25056118ab.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.b2bb9b69894cc48ecb45.js.map

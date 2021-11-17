@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.30b8ba6b173422904ea9.js
-// Retrieved at 11/15/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.2d8f06965482fd132ec7.js
+// Retrieved at 11/17/2021, 12:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Governance~ModListing~Reddit", "reddit-components-ContentGate", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -279,20 +279,6 @@
 			e.exports = function(e, t) {
 				var n = o(e);
 				return r(n, s(t, 0, n.length))
-			}
-		},
-		"./node_modules/lodash/_shuffleSelf.js": function(e, t, n) {
-			var s = n("./node_modules/lodash/_baseRandom.js");
-			e.exports = function(e, t) {
-				var n = -1,
-					r = e.length,
-					o = r - 1;
-				for (t = void 0 === t ? r : t; ++n < t;) {
-					var i = s(n, o),
-						a = e[i];
-					e[i] = e[n], e[n] = a
-				}
-				return e.length = t, e
 			}
 		},
 		"./node_modules/lodash/clamp.js": function(e, t, n) {
@@ -17986,7 +17972,7 @@
 					const t = this.resolve(e);
 					return !1 !== this.resolved[t] && !!n.m[t]
 				},
-				importAsync: () => Promise.all([n.e("Frontpage~FrontpageSidebar"), n.e("FrontpageSidebar")]).then(n.bind(null, "./src/reddit/components/FrontpageSidebar/index.tsx")),
+				importAsync: () => n.e("FrontpageSidebar").then(n.bind(null, "./src/reddit/components/FrontpageSidebar/index.tsx")),
 				requireAsync(e) {
 					const t = this.resolve(e);
 					return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
@@ -19620,4 +19606,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.30b8ba6b173422904ea9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.2d8f06965482fd132ec7.js.map

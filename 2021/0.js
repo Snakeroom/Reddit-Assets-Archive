@@ -1,7 +1,7 @@
-// https://www.redditstatic.com/desktop2x/0.4a2765984d22d9b5b705.js
-// Retrieved at 11/15/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/0.668bee5377b365444b0f.js
+// Retrieved at 11/17/2021, 12:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
-	[0, "FrontpageSidebar"], {
+	[0], {
 		"./src/reddit/icons/svgs/Admin/index.m.less": function(e, s, t) {
 			e.exports = {
 				admin: "_1PeZajQI0Wm8P3B45yshR",
@@ -4432,4 +4432,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/0.4a2765984d22d9b5b705.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/0.668bee5377b365444b0f.js.map

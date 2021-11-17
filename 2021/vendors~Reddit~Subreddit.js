@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~Reddit~Subreddit.e6ab5dc6398d46c8e728.js
-// Retrieved at 11/15/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~Reddit~Subreddit.1512e9729059d5e397d1.js
+// Retrieved at 11/17/2021, 12:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~Reddit~Subreddit"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, r) {
@@ -206,6 +206,27 @@
 		"./node_modules/@researchgate/react-intersection-observer/node_modules/prop-types/lib/ReactPropTypesSecret.js": function(e, t, r) {
 			"use strict";
 			e.exports = "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED"
+		},
+		"./node_modules/lodash/_baseRandom.js": function(e, t) {
+			var r = Math.floor,
+				n = Math.random;
+			e.exports = function(e, t) {
+				return e + r(n() * (t - e + 1))
+			}
+		},
+		"./node_modules/lodash/_shuffleSelf.js": function(e, t, r) {
+			var n = r("./node_modules/lodash/_baseRandom.js");
+			e.exports = function(e, t) {
+				var r = -1,
+					o = e.length,
+					a = o - 1;
+				for (t = void 0 === t ? o : t; ++r < t;) {
+					var i = n(r, a),
+						s = e[i];
+					e[i] = e[r], e[r] = s
+				}
+				return e.length = t, e
+			}
 		},
 		"./node_modules/react-motion/lib/Motion.js": function(e, t, r) {
 			"use strict";
@@ -2114,4 +2135,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Reddit~Subreddit.e6ab5dc6398d46c8e728.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Reddit~Subreddit.1512e9729059d5e397d1.js.map

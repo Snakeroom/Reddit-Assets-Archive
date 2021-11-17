@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Predictions.cd9361b1f125ecc8022d.js
-// Retrieved at 11/15/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Predictions.cffd05e79c038c2fa7b0.js
+// Retrieved at 11/17/2021, 12:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Predictions"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, a) {
@@ -15,13 +15,6 @@
 				return e == e && (void 0 !== a && (e = e <= a ? e : a), void 0 !== t && (e = e >= t ? e : t)), e
 			}
 		},
-		"./node_modules/lodash/_baseRandom.js": function(e, t) {
-			var a = Math.floor,
-				n = Math.random;
-			e.exports = function(e, t) {
-				return e + a(n() * (t - e + 1))
-			}
-		},
 		"./node_modules/lodash/_baseSampleSize.js": function(e, t, a) {
 			var n = a("./node_modules/lodash/_baseClamp.js"),
 				r = a("./node_modules/lodash/_shuffleSelf.js"),
@@ -29,20 +22,6 @@
 			e.exports = function(e, t) {
 				var a = s(e);
 				return r(a, n(t, 0, a.length))
-			}
-		},
-		"./node_modules/lodash/_shuffleSelf.js": function(e, t, a) {
-			var n = a("./node_modules/lodash/_baseRandom.js");
-			e.exports = function(e, t) {
-				var a = -1,
-					r = e.length,
-					s = r - 1;
-				for (t = void 0 === t ? r : t; ++a < t;) {
-					var o = n(a, s),
-						l = e[o];
-					e[o] = e[a], e[a] = l
-				}
-				return e.length = t, e
 			}
 		},
 		"./node_modules/lodash/sampleSize.js": function(e, t, a) {
@@ -632,7 +611,7 @@
 					hk: "4EPQY"
 				})))], {
 					hk: "1K9FOM"
-				}), M = k ? q : T, W = E || v || O ? P._("{=Hold tight! It can take up to 5 minutes for}{=Powerups to appear in yourcommunity.}", [P._param("=Hold tight! It can take up to 5 minutes for", s.a.createElement("div", null, P._("Hold tight! It can take up to 5 minutes for", null, {
+				}), W = k ? q : T, M = E || v || O ? P._("{=Hold tight! It can take up to 5 minutes for}{=Powerups to appear in yourcommunity.}", [P._param("=Hold tight! It can take up to 5 minutes for", s.a.createElement("div", null, P._("Hold tight! It can take up to 5 minutes for", null, {
 					hk: "1cFoaI"
 				}))), P._param("=Powerups to appear in yourcommunity.", s.a.createElement("div", null, P._({
 					"*": "Powerups to appear in your communities.",
@@ -671,9 +650,9 @@
 					className: x.a.titleContainer
 				}, s.a.createElement("h1", {
 					className: x.a.titleText
-				}, M), s.a.createElement("h2", {
+				}, W), s.a.createElement("h2", {
 					className: x.a.subtitleText
-				}, W)), !k && s.a.createElement(y, {
+				}, M)), !k && s.a.createElement(y, {
 					onChange: f,
 					subredditIdsSelected: w,
 					subredditsInfo: i,
@@ -1403,9 +1382,9 @@
 					}))))
 				};
 			var T = a("./src/reddit/pages/Powerups/index.m.less"),
-				M = a.n(T);
+				W = a.n(T);
 			const {
-				fbt: W
+				fbt: M
 			} = a("./node_modules/fbt/lib/FbtPublic.js");
 			t.default = () => {
 				const e = Object(u.a)(),
@@ -1420,43 +1399,43 @@
 					},
 					f = () => _(!1);
 				return s.a.createElement(s.a.Fragment, null, s.a.createElement("div", {
-					className: M.a.headingSection
+					className: W.a.headingSection
 				}, s.a.createElement(B, {
 					isNightmodeOn: a
 				}), s.a.createElement("div", {
-					className: Object(l.a)(M.a.contentWrapper, M.a.headingContent)
+					className: Object(l.a)(W.a.contentWrapper, W.a.headingContent)
 				}, s.a.createElement("div", {
-					className: M.a.headingText
+					className: W.a.headingText
 				}, s.a.createElement("h1", {
-					className: Object(l.a)(M.a.heading, {
-						[M.a.isNightmodeOn]: a
+					className: Object(l.a)(W.a.heading, {
+						[W.a.isNightmodeOn]: a
 					})
 				}, s.a.createElement(h, {
-					className: M.a.powerupsLogo
+					className: W.a.powerupsLogo
 				})), s.a.createElement("h2", {
-					className: M.a.subheading
-				}, W._("Come together to level up the whole community", null, {
+					className: W.a.subheading
+				}, M._("Come together to level up the whole community", null, {
 					hk: "3C0qLA"
 				})), s.a.createElement("p", {
-					className: Object(l.a)(M.a.description, M.a.bodyText)
-				}, W._("Harness the power of your community to unlock special perks and advanced features.", null, {
+					className: Object(l.a)(W.a.description, W.a.bodyText)
+				}, M._("Harness the power of your community to unlock special perks and advanced features.", null, {
 					hk: "1NgNS2"
 				})), s.a.createElement("div", {
-					className: Object(l.a)(M.a.modWarning, M.a.bodyText)
+					className: Object(l.a)(W.a.modWarning, W.a.bodyText)
 				}, s.a.createElement("div", {
-					className: M.a.modWarningTop
+					className: W.a.modWarningTop
 				}, s.a.createElement(p.a, {
 					name: "mod",
-					className: M.a.modWarningIcon
-				})), W._("{=Only moderators with theManage Settings permission can turn on Powerups.}{=Heads up—Only Safe for Work (SFW) communities with 1,000 members or more can enable Powerups.}", [W._param("=Only moderators with theManage Settings permission can turn on Powerups.", s.a.createElement("div", null, W._("Only moderators with the {=Manage Settings} permission can turn on Powerups.", [W._param("=Manage Settings", s.a.createElement("span", {
-					className: M.a.modWarningItalic
-				}, W._("Manage Settings", null, {
+					className: W.a.modWarningIcon
+				})), M._("{=Only moderators with theManage Settings permission can turn on Powerups.}{=Heads up—Only Safe for Work (SFW) communities with 1,000 members or more can enable Powerups.}", [M._param("=Only moderators with theManage Settings permission can turn on Powerups.", s.a.createElement("div", null, M._("Only moderators with the {=Manage Settings} permission can turn on Powerups.", [M._param("=Manage Settings", s.a.createElement("span", {
+					className: W.a.modWarningItalic
+				}, M._("Manage Settings", null, {
 					hk: "4AauR"
 				})))], {
 					hk: "1sKKo7"
-				}))), W._param("=Heads up—Only Safe for Work (SFW) communities with 1,000 members or more can enable Powerups.", s.a.createElement("div", {
-					className: M.a.modWarningFooter
-				}, W._("Heads up—Only Safe for Work (SFW) communities with 1,000 members or more can enable Powerups.", null, {
+				}))), M._param("=Heads up—Only Safe for Work (SFW) communities with 1,000 members or more can enable Powerups.", s.a.createElement("div", {
+					className: W.a.modWarningFooter
+				}, M._("Heads up—Only Safe for Work (SFW) communities with 1,000 members or more can enable Powerups.", null, {
 					hk: "2euXqd"
 				})))], {
 					hk: "2FL5at"
@@ -1464,15 +1443,15 @@
 					onClick: w,
 					disabled: !(null == t ? void 0 : t.length),
 					priority: m.c.Primary,
-					className: M.a.ctaButton
-				}, W._("Turn on Powerups", null, {
+					className: W.a.ctaButton
+				}, M._("Turn on Powerups", null, {
 					hk: "4E97KH"
 				}))), s.a.createElement("div", {
-					className: M.a.headingArt
+					className: W.a.headingArt
 				}, s.a.createElement("div", {
-					className: M.a.powerupsMarketingImageContainer
+					className: W.a.powerupsMarketingImageContainer
 				}, s.a.createElement("picture", {
-					className: M.a.powerupsMarketingImage
+					className: W.a.powerupsMarketingImage
 				}, s.a.createElement("source", {
 					srcSet: `${n.a.assetPath}/img/powerups/powerups-rangers.webp`,
 					type: "image/webp"
@@ -1481,114 +1460,114 @@
 					type: "image/png"
 				}), s.a.createElement("img", {
 					alt: "Powerup heroes",
-					className: M.a.fallbackStaticImage,
+					className: W.a.fallbackStaticImage,
 					src: `${n.a.assetPath}/img/powerups/powerups-rangers-static.png`
 				})))))), s.a.createElement(S, null), s.a.createElement("div", {
-					className: M.a.pioneerSection
+					className: W.a.pioneerSection
 				}, s.a.createElement("div", {
-					className: Object(l.a)(M.a.contentWrapper, M.a.powerupsPioneerContent)
+					className: Object(l.a)(W.a.contentWrapper, W.a.powerupsPioneerContent)
 				}, s.a.createElement("div", {
-					className: Object(l.a)(M.a.circle, M.a.circlePioneersCyanHollow)
+					className: Object(l.a)(W.a.circle, W.a.circlePioneersCyanHollow)
 				}), s.a.createElement("h2", {
-					className: M.a.pioneerHeading
-				}, W._("Be a Powerups pioneer", null, {
+					className: W.a.pioneerHeading
+				}, M._("Be a Powerups pioneer", null, {
 					hk: "2P7QON"
 				})), s.a.createElement("h3", {
-					className: M.a.pioneerSubheading
-				}, W._("Be one of the first communities to turn on Powerups and have an influence on what perks and advanced features we create next.", null, {
+					className: W.a.pioneerSubheading
+				}, M._("Be one of the first communities to turn on Powerups and have an influence on what perks and advanced features we create next.", null, {
 					hk: "2wFnM6"
 				})))), s.a.createElement("div", {
-					className: M.a.powerupStepsSection
+					className: W.a.powerupStepsSection
 				}, s.a.createElement("div", {
-					className: Object(l.a)(M.a.powerupStepsSectionContent, M.a.contentWrapper)
+					className: Object(l.a)(W.a.powerupStepsSectionContent, W.a.contentWrapper)
 				}, s.a.createElement("div", {
-					className: Object(l.a)(M.a.circle, M.a.circleStepsYellowFull)
+					className: Object(l.a)(W.a.circle, W.a.circleStepsYellowFull)
 				}), s.a.createElement("div", {
-					className: Object(l.a)(M.a.circle, M.a.circleStepsStriped),
+					className: Object(l.a)(W.a.circle, W.a.circleStepsStriped),
 					style: {
 						backgroundImage: a ? `url(${n.a.assetPath}/img/powerups/linecircle-orange.png)` : `url(${n.a.assetPath}/img/powerups/linecircle-blue.png)`
 					}
 				}), s.a.createElement("div", {
-					className: M.a.powerupStep
+					className: W.a.powerupStep
 				}, s.a.createElement("div", {
-					className: M.a.powerupStepCounter
+					className: W.a.powerupStepCounter
 				}, "1"), s.a.createElement("div", {
-					className: M.a.powerupStepName
-				}, W._("Turn on powerups", null, {
+					className: W.a.powerupStepName
+				}, M._("Turn on powerups", null, {
 					hk: "q0dHV"
 				})), s.a.createElement("div", {
-					className: M.a.powerupStepDescription
-				}, W._("Just tap that big Turn on Powerups button and add Powerups to your community.", null, {
+					className: W.a.powerupStepDescription
+				}, M._("Just tap that big Turn on Powerups button and add Powerups to your community.", null, {
 					hk: "oZMHo"
 				}))), s.a.createElement("div", {
-					className: M.a.powerupStep
+					className: W.a.powerupStep
 				}, s.a.createElement("div", {
-					className: M.a.powerupStepCounter
+					className: W.a.powerupStepCounter
 				}, "2"), s.a.createElement("div", {
-					className: M.a.powerupStepName
-				}, W._("Rally the community", null, {
+					className: W.a.powerupStepName
+				}, M._("Rally the community", null, {
 					hk: "4m8BDG"
 				})), s.a.createElement("div", {
-					className: M.a.powerupStepDescription
-				}, W._("Spread the word! You only need 25 powerups to give perks to the whole community.", null, {
+					className: W.a.powerupStepDescription
+				}, M._("Spread the word! You only need 25 powerups to give perks to the whole community.", null, {
 					hk: "4eSNsf"
 				}))), s.a.createElement("div", {
-					className: M.a.powerupStep
+					className: W.a.powerupStep
 				}, s.a.createElement("div", {
-					className: M.a.powerupStepCounter
+					className: W.a.powerupStepCounter
 				}, "3"), s.a.createElement("div", {
-					className: M.a.powerupStepName
-				}, W._("Unlock perks", null, {
+					className: W.a.powerupStepName
+				}, M._("Unlock perks", null, {
 					hk: "20u0vD"
 				})), s.a.createElement("div", {
-					className: M.a.powerupStepDescription
-				}, W._("Once your community is powered up, the perks are unlocked for everyone to use.", null, {
+					className: W.a.powerupStepDescription
+				}, M._("Once your community is powered up, the perks are unlocked for everyone to use.", null, {
 					hk: "3Fs5Gm"
 				}))))), s.a.createElement(q, null), s.a.createElement(C.b, {
 					openModal: w,
 					modSubredditsInfo: t
 				}), s.a.createElement(i.a, {
-					className: M.a.footer
+					className: W.a.footer
 				}), k && s.a.createElement(c.b, {
 					withOverlay: !0,
 					closeModal: f,
 					onOverlayClick: f,
-					className: M.a.modalBody,
-					overlayClassName: M.a.modalOverlay
+					className: W.a.modalBody,
+					overlayClassName: W.a.modalOverlay
 				}))
 			};
 			const B = ({
 				isNightmodeOn: e,
 				accentDiagonalCustomStyles: t
 			}) => s.a.createElement("div", {
-				className: Object(l.a)(M.a.background, M.a.contentWrapper)
+				className: Object(l.a)(W.a.background, W.a.contentWrapper)
 			}, s.a.createElement("div", {
-				className: M.a.diagonalLayoutSecondary,
+				className: W.a.diagonalLayoutSecondary,
 				style: t
 			}), s.a.createElement("div", {
-				className: M.a.diagonalLayoutPrimary
+				className: W.a.diagonalLayoutPrimary
 			}), s.a.createElement("div", {
-				className: Object(l.a)(M.a.circle, M.a.circleDotted),
+				className: Object(l.a)(W.a.circle, W.a.circleDotted),
 				style: {
 					backgroundImage: `url(${n.a.assetPath}/img/powerups/dotcircle.png)`
 				}
 			}), s.a.createElement("div", {
-				className: Object(l.a)(M.a.circle, M.a.animatedCircle, M.a.circleStriped),
+				className: Object(l.a)(W.a.circle, W.a.animatedCircle, W.a.circleStriped),
 				style: {
 					backgroundImage: e ? `url(${n.a.assetPath}/img/powerups/linecircle-orange.png)` : `url(${n.a.assetPath}/img/powerups/linecircle-blue.png)`
 				}
 			}), s.a.createElement("div", {
-				className: Object(l.a)(M.a.circle, M.a.circleOrangeFull, M.a.animatedCircle)
+				className: Object(l.a)(W.a.circle, W.a.circleOrangeFull, W.a.animatedCircle)
 			}), s.a.createElement("div", {
-				className: Object(l.a)(M.a.circle, M.a.circleYellowSmall, M.a.top, M.a.animatedCircle)
+				className: Object(l.a)(W.a.circle, W.a.circleYellowSmall, W.a.top, W.a.animatedCircle)
 			}), s.a.createElement("div", {
-				className: Object(l.a)(M.a.circle, M.a.circleYellowBig, M.a.animatedCircle)
+				className: Object(l.a)(W.a.circle, W.a.circleYellowBig, W.a.animatedCircle)
 			}), s.a.createElement("div", {
-				className: Object(l.a)(M.a.circle, M.a.circleYellowHollow, M.a.animatedCircle)
+				className: Object(l.a)(W.a.circle, W.a.circleYellowHollow, W.a.animatedCircle)
 			}), s.a.createElement("div", {
-				className: Object(l.a)(M.a.circle, M.a.circleYellowSmall, M.a.bottom, M.a.animatedCircle)
+				className: Object(l.a)(W.a.circle, W.a.circleYellowSmall, W.a.bottom, W.a.animatedCircle)
 			}), s.a.createElement("div", {
-				className: Object(l.a)(M.a.circle, M.a.circleOrangeHollow, M.a.animatedCircle)
+				className: Object(l.a)(W.a.circle, W.a.circleOrangeHollow, W.a.animatedCircle)
 			}))
 		},
 		"./src/reddit/pages/Predictions/Communities.m.less": function(e, t, a) {
@@ -1878,9 +1857,9 @@
 				F = a("./src/reddit/selectors/user.ts"),
 				q = a("./node_modules/react-router-dom/esm/react-router-dom.js"),
 				T = a("./src/lib/opener/index.ts"),
-				M = a("./src/reddit/hooks/useIsClient.ts"),
-				W = a("./src/reddit/pages/Predictions/Communities.m.less"),
-				B = a.n(W);
+				W = a("./src/reddit/hooks/useIsClient.ts"),
+				M = a("./src/reddit/pages/Predictions/Communities.m.less"),
+				B = a.n(M);
 			const {
 				fbt: H
 			} = a("./node_modules/fbt/lib/FbtPublic.js"), A = [{
@@ -1898,7 +1877,7 @@
 			}], L = () => {
 				const e = Object(b.a)(),
 					t = Object(o.e)(F.X),
-					a = Object(M.a)(),
+					a = Object(W.a)(),
 					r = () => {
 						e((() => e => ({
 							...Object(g.defaults)(e),
@@ -2325,4 +2304,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Predictions.cd9361b1f125ecc8022d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Predictions.cffd05e79c038c2fa7b0.js.map
