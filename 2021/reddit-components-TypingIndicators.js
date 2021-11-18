@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-TypingIndicators.e4053b493994786bcf08.js
-// Retrieved at 11/11/2021, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-TypingIndicators.5d8837c84b14ebc5fedd.js
+// Retrieved at 11/18/2021, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-TypingIndicators"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, s, t) {
@@ -57,11 +57,11 @@
 				r = t.n(o),
 				a = t("./src/lib/classNames/index.ts"),
 				c = t("./node_modules/lodash/sampleSize.js"),
-				l = t.n(c),
-				d = t("./src/reddit/helpers/getFakeUserIcons.ts"),
-				u = t("./src/reddit/hooks/useConstructor.ts"),
-				i = t("./src/reddit/components/RandomBaseUserIcons/index.m.less"),
-				m = t.n(i);
+				d = t.n(c),
+				l = t("./src/reddit/helpers/getFakeUserIcons.ts"),
+				i = t("./src/reddit/hooks/useConstructor.ts"),
+				u = t("./src/reddit/components/RandomBaseUserIcons/index.m.less"),
+				m = t.n(u);
 			const p = Object(n.a)({
 					resolved: {},
 					chunkName: () => "reddit-components-UserIcon-PresenceDot",
@@ -84,28 +84,28 @@
 				}),
 				f = 8,
 				b = 20,
-				h = 3,
-				_ = e => {
+				_ = 3,
+				h = e => {
 					const {
 						iconsKey: s,
 						memberIconClassName: t,
-						numVisibleIcons: n = h,
+						numVisibleIcons: n = _,
 						shouldOutlinePresenceDot: c,
-						shouldShowPresenceDot: i,
-						shouldUseColoredSilhouetteIcons: _,
-						numIconsToDrawFrom: j = (_ ? f : b),
+						shouldShowPresenceDot: u,
+						shouldUseColoredSilhouetteIcons: h,
+						numIconsToDrawFrom: j = (h ? f : b),
 						wrapperClassName: I
 					} = e, g = Object(o.useRef)([]);
-					return Object(u.a)(() => {
-						const e = Object(d.a)(s, j, _);
-						g.current = l()(e, n)
+					return Object(i.a)(() => {
+						const e = Object(l.a)(s, j, h);
+						g.current = d()(e, n)
 					}), r.a.createElement("div", {
 						className: Object(a.a)(m.a.membersIcons, I)
 					}, g.current.map(({
 						color: e,
 						image: s
 					}, o) => {
-						return o === n - 1 && i ? r.a.createElement("div", {
+						return o === n - 1 && u ? r.a.createElement("div", {
 							className: m.a.presenceWrapper,
 							key: o
 						}, r.a.createElement("img", {
@@ -129,7 +129,7 @@
 						})
 					}))
 				};
-			s.a = _
+			s.a = h
 		},
 		"./src/reddit/components/RandomBaseUserIcons/index.m.less": function(e, s, t) {
 			e.exports = {
@@ -137,6 +137,19 @@
 				memberIcon: "_1H6Meh6ZAemKxOJDOEasfK",
 				presenceWrapper: "_30vlMmCcnqKnXP1t-fzm0e",
 				presenceDotClass: "_29m-SAo1wzA0dkdfJutrjs"
+			}
+		},
+		"./src/reddit/components/TypingIndicators/index.m.less": function(e, s, t) {
+			e.exports = {
+				fadeOut: "hxgpjMmP5DkIH9qjzKU76",
+				typingIndicator: "xQIeDIIVr1yVZYxsz0ozp",
+				isDisplayed: "_3SppaUc9TkqJc-zbqJt-3h",
+				numUsersTyping: "_3TiTD1rBkrFHlvu6vJ2D_n",
+				offsetMembersIcons: "CnV1Edi-ImN72TXNKOCUu",
+				typingDots: "_3Sck3A9yG3NOFzt_N7zrlr",
+				dot: "_1fMgUDC_-k-rdiT8UGZ6j4",
+				typingAnimation: "_3Qj9QSvdQ5qft-VPaBowdQ",
+				offsetMemberIcon: "KCCH40yFmIIE1YdtzgwrD"
 			}
 		},
 		"./src/reddit/components/TypingIndicators/index.tsx": function(e, s, t) {
@@ -147,20 +160,20 @@
 				r = t.n(o),
 				a = t("./src/realtime/GQLSubscription/async.tsx"),
 				c = t("./src/reddit/components/RandomBaseUserIcons/RandomBaseUserIcons.tsx"),
-				l = t("./src/reddit/helpers/trackers/commentsPage.ts"),
-				d = t("./src/reddit/selectors/telemetry.ts");
-			const u = (() => (e, s) => t => ({
-				source: l.a,
+				d = t("./src/reddit/helpers/trackers/commentsPage.ts"),
+				l = t("./src/reddit/selectors/telemetry.ts");
+			const i = (() => (e, s) => t => ({
+				source: d.a,
 				action: "view",
 				noun: "typing_indicator",
-				...d.defaults(t),
-				actionInfo: d.actionInfo(t, {
+				...l.defaults(t),
+				actionInfo: l.actionInfo(t, {
 					reason: s.toString()
 				}),
-				post: d.post(t, e),
-				subreddit: d.subreddit(t)
+				post: l.post(t, e),
+				subreddit: l.subreddit(t)
 			}))();
-			var i = t("./src/reddit/hooks/useClassNameOnMount.ts"),
+			var u = t("./src/reddit/hooks/useClassNameOnMount.ts"),
 				m = t("./src/reddit/hooks/useTracking.ts"),
 				p = t("./src/reddit/components/TypingIndicators/constants.ts"),
 				f = t("./src/reddit/components/TypingIndicators/index.m.less"),
@@ -169,14 +182,14 @@
 				const s = Object(o.useRef)(null),
 					t = Object(o.useRef)(0),
 					{
-						minNumUsersTyping: l,
-						minTimeVisible: d,
+						minNumUsersTyping: d,
+						minTimeVisible: l,
 						postId: f
 					} = e,
-					[h, _] = Object(o.useState)(0),
+					[_, h] = Object(o.useState)(0),
 					[j, I] = Object(o.useState)(null),
 					g = Object(m.a)(),
-					O = Object(o.useMemo)(() => ({
+					y = Object(o.useMemo)(() => ({
 						input: {
 							channel: {
 								teamOwner: "CONTENT_AND_COMMUNITIES",
@@ -185,49 +198,49 @@
 							}
 						}
 					}), [f]),
+					O = Object(o.useRef)(null),
 					v = Object(o.useRef)(null),
-					y = Object(o.useRef)(null),
 					C = Object(o.useRef)(0),
 					N = Object(o.useCallback)(e => {
 						const {
 							numUsers: s
 						} = e.subscribe.data, t = () => {
-							y.current && clearTimeout(y.current), y.current = setTimeout(() => {
-								_(0), I(null), y.current = null
+							v.current && clearTimeout(v.current), v.current = setTimeout(() => {
+								h(0), I(null), v.current = null
 							}, p.b)
 						}, n = () => setTimeout(() => {
-							C.current ? (_(C.current), C.current = null, v.current = n(), t()) : v.current = null
+							C.current ? (h(C.current), C.current = null, O.current = n(), t()) : O.current = null
 						}, p.a);
-						v.current ? C.current = s : (_(s), C.current = null, v.current = n(), t())
+						O.current ? C.current = s : (h(s), C.current = null, O.current = n(), t())
 					}, []);
 				Object(o.useEffect)(() => {
-					if (h >= l) return t.current = h, void(j || (s.current && clearTimeout(s.current), I(Date.now())));
+					if (_ >= d) return t.current = _, void(j || (s.current && clearTimeout(s.current), I(Date.now())));
 					if (!j) return;
 					const e = Date.now() - j;
-					e > d ? I(null) : s.current = setTimeout(() => I(null), d - e)
-				}, [j, d, h, l]);
+					e > l ? I(null) : s.current = setTimeout(() => I(null), l - e)
+				}, [j, l, _, d]);
 				const {
-					className: E,
-					shouldMount: S,
-					onTransitionEnd: T
-				} = Object(i.a)({
+					className: T,
+					shouldMount: E,
+					onTransitionEnd: S
+				} = Object(u.a)({
 					defaultClass: b.a.typingIndicator,
 					addedClass: b.a.isDisplayed,
 					mountCondition: !!j
 				});
 				return Object(o.useEffect)(() => {
-					S && g(u(f, h))
-				}, [S, f, g, h]), r.a.createElement(r.a.Fragment, null, r.a.createElement(a.a, {
-					variables: O,
+					E && g(i(f, _))
+				}, [E, f, g, _]), r.a.createElement(r.a.Fragment, null, r.a.createElement(a.a, {
+					variables: y,
 					onData: N,
 					queryKey: "postTypingIndicator"
-				}), S && r.a.createElement("div", {
-					className: E,
-					onTransitionEnd: T
+				}), E && r.a.createElement("div", {
+					className: T,
+					onTransitionEnd: S
 				}, r.a.createElement(c.a, {
 					iconsKey: f,
 					memberIconClassName: b.a.offsetMemberIcon,
-					numVisibleIcons: l,
+					numVisibleIcons: d,
 					shouldUseColoredSilhouetteIcons: !0,
 					wrapperClassName: b.a.offsetMembersIcons
 				}), r.a.createElement("div", {
@@ -254,13 +267,13 @@
 			const c = Array.from({
 					length: 20
 				}).map((e, s) => `${a.a.assetPath}/img/snoovatars/snoovatar_${s+1}.png`),
-				l = Array.from({
+				d = Array.from({
 					length: 8
 				}).map((e, s) => `${a.a.processingAvatarImageUrl}/defaults/v2/avatar_default_${s}.png`),
-				d = [];
+				l = [];
 			s.a = o()((e, s = 3, t) => {
-				if (!e || !s) return d;
-				const n = t ? l : c,
+				if (!e || !s) return l;
+				const n = t ? d : c,
 					o = Array.from(e).reduce((e, s) => e + s.charCodeAt(0), 0);
 				return Array.from({
 					length: s
@@ -279,21 +292,21 @@
 				addedClass: s,
 				mountCondition: t
 			}) => {
-				const [r, a] = Object(n.useState)(e), [c, l] = Object(n.useState)(!1);
+				const [r, a] = Object(n.useState)(e), [c, d] = Object(n.useState)(!1);
 				Object(n.useEffect)(() => {
-					t && l(!0)
+					t && d(!0)
 				}, [t]), Object(n.useEffect)(() => {
 					c && (t ? window.setTimeout(() => {
 						a(Object(o.a)(e, s))
 					}, 100) : a(e))
 				}, [s, e, t, c]);
-				const d = Object(n.useCallback)(() => {
-					t || l(!1)
+				const l = Object(n.useCallback)(() => {
+					t || d(!1)
 				}, [t]);
 				return {
 					className: r,
 					shouldMount: c,
-					onTransitionEnd: d
+					onTransitionEnd: l
 				}
 			}
 		},
@@ -311,4 +324,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-TypingIndicators.e4053b493994786bcf08.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-TypingIndicators.5d8837c84b14ebc5fedd.js.map

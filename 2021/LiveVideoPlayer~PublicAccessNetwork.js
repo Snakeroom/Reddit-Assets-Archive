@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork.2101186ff7c4a4a054fd.js
-// Retrieved at 11/11/2021, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork.91b9b4edf385084e40dd.js
+// Retrieved at 11/18/2021, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["LiveVideoPlayer~PublicAccessNetwork"], {
 		"./src/lib/VideoSession/VideoSessionManager.ts": function(e, t, s) {
@@ -924,6 +924,7 @@
 				isOpen: e.dropdownIsOpen,
 				tooltipId: e.dropdownId,
 				isFixed: e.isFixed,
+				preventFocusScroll: e.preventFocusScroll,
 				targetPosition: e.targetPosition,
 				tooltipPosition: e.tooltipPosition,
 				style: e.style
@@ -1281,8 +1282,8 @@
 				P = s("./src/reddit/models/Vote/index.ts"),
 				M = s("./src/reddit/selectors/experiments/shareToChatButton.ts"),
 				V = s("./src/reddit/selectors/subreddit.ts"),
-				B = s("./src/reddit/selectors/user.ts"),
-				F = s("./src/reddit/components/PublicAccessNetwork/Theater/Overlay/Buttons.tsx"),
+				F = s("./src/reddit/selectors/user.ts"),
+				B = s("./src/reddit/components/PublicAccessNetwork/Theater/Overlay/Buttons.tsx"),
 				W = s("./src/reddit/components/PublicAccessNetwork/Theater/Overlay/refresh.m.less"),
 				H = s.n(W);
 			const {
@@ -1691,11 +1692,11 @@
 				onClickShare: s
 			}) => a.a.createElement(le, null, a.a.createElement("div", {
 				className: H.a.promptButtonSet
-			}, a.a.createElement(F.g, {
+			}, a.a.createElement(B.g, {
 				onClick: t
-			}), a.a.createElement(F.h, {
+			}), a.a.createElement(B.h, {
 				onClick: s
-			}), a.a.createElement(F.f, {
+			}), a.a.createElement(B.f, {
 				onClick: e
 			}))), be = ({
 				onClickAward: e
@@ -1705,7 +1706,7 @@
 				className: H.a.awardPromptLabel
 			}, U._("Award this broadcast to give it more airtime", null, {
 				hk: "20jmEz"
-			})), a.a.createElement(F.a, {
+			})), a.a.createElement(B.a, {
 				onClick: e
 			}))), ve = e => {
 				if (!e) return !1;
@@ -1737,7 +1738,7 @@
 					isSubscribed: o
 				}));
 				return n && n.enableFollowers ? d : null
-			}, we = e => Object(n.e)(t => Object(B.nb)(t, {
+			}, we = e => Object(n.e)(t => Object(F.nb)(t, {
 				userName: e
 			})), _e = e => Object(n.e)(t => Object(V.cb)(t, {
 				identifier: {
@@ -1787,9 +1788,9 @@
 			}, a.a.createElement("path", {
 				d: "M12.8,6.4 L9.6,6.4 L9.6,3.2 C9.6,2.7576 9.2424,2.4 8.8,2.4 L7.2,2.4 C6.7576,2.4 6.4,2.7576 6.4,3.2 L6.4,6.4 L3.2,6.4 C2.7584,6.4 2.4,6.7576 2.4,7.2 L2.4,8.8 C2.4,9.2424 2.7584,9.6 3.2,9.6 L6.4,9.6 L6.4,12.8 C6.4,13.2424 6.7576,13.6 7.2,13.6 L8.8,13.6 C9.2424,13.6 9.6,13.2424 9.6,12.8 L9.6,9.6 L12.8,9.6 C13.2424,9.6 13.6,9.2424 13.6,8.8 L13.6,7.2 C13.6,6.7576 13.2424,6.4 12.8,6.4"
 			})), Ne = e => {
-				const t = Object(n.e)(B.k),
-					s = Object(n.e)(B.C),
-					r = Object(n.e)(B.eb);
+				const t = Object(n.e)(F.k),
+					s = Object(n.e)(F.C),
+					r = Object(n.e)(F.eb);
 				return !!e && (!!e.accountIcon && (!!t && (t.id === e.id || (!e.isNSFW || !!r && !s))))
 			}
 		},
@@ -1991,9 +1992,9 @@
 			})), s.d(t, "f", (function() {
 				return V
 			})), s.d(t, "l", (function() {
-				return B
-			})), s.d(t, "m", (function() {
 				return F
+			})), s.d(t, "m", (function() {
+				return B
 			})), s.d(t, "g", (function() {
 				return W
 			})), s.d(t, "h", (function() {
@@ -2278,7 +2279,7 @@
 					playback: c(s, e, t),
 					...i(s, e)
 				}),
-				B = (e, t) => s => ({
+				F = (e, t) => s => ({
 					source: "stream_player",
 					action: "swipe",
 					noun: "next",
@@ -2286,7 +2287,7 @@
 					...i(s, e),
 					...d(s)
 				}),
-				F = (e, t) => s => ({
+				B = (e, t) => s => ({
 					source: "stream_player",
 					action: "swipe",
 					noun: "previous",
@@ -2369,9 +2370,9 @@
 			})), s.d(t, "f", (function() {
 				return P
 			})), s.d(t, "a", (function() {
-				return B
-			})), s.d(t, "j", (function() {
 				return F
+			})), s.d(t, "j", (function() {
+				return B
 			})), s.d(t, "b", (function() {
 				return W
 			})), s.d(t, "e", (function() {
@@ -2542,19 +2543,19 @@
 				return s[t] >= s[e]
 			}
 			const V = Object(r.a)(C, b, (e, t) => e && t.timestamps[e] || 0);
-			var B;
+			var F;
 			! function(e) {
 				e[e.LIVE = 0] = "LIVE", e[e.VOD = 1] = "VOD", e[e.UNAVAILABLE = 2] = "UNAVAILABLE", e[e.INTRO = 3] = "INTRO"
-			}(B || (B = {}));
-			const F = Object(r.a)(C, I, m.b, (e, t, s) => {
-					if (s) return B.INTRO;
+			}(F || (F = {}));
+			const B = Object(r.a)(C, I, m.b, (e, t, s) => {
+					if (s) return F.INTRO;
 					const r = e && t[e];
-					if (!r) return B.UNAVAILABLE;
+					if (!r) return F.UNAVAILABLE;
 					const a = r.stream.state;
-					return a === o.a.IS_LIVE || a === o.a.DISCONNECTED ? B.LIVE : a === o.a.ENDED && r.stream.vod_accessible ? B.VOD : B.UNAVAILABLE
+					return a === o.a.IS_LIVE || a === o.a.DISCONNECTED ? F.LIVE : a === o.a.ENDED && r.stream.vod_accessible ? F.VOD : F.UNAVAILABLE
 				}),
-				W = Object(r.a)(L, F, m.b, c.b, c.o, (e, t, s, r, a) => s ? r : e ? t === B.LIVE || t === B.VOD ? e.stream.hls_url : a : void 0),
-				H = Object(r.a)(L, F, V, (e, t, s) => e ? t === B.LIVE ? e.broadcast_time : t === B.VOD && s < e.broadcast_time ? s : 0 : 0),
+				W = Object(r.a)(L, B, m.b, c.b, c.o, (e, t, s, r, a) => s ? r : e ? t === F.LIVE || t === F.VOD ? e.stream.hls_url : a : void 0),
+				H = Object(r.a)(L, B, V, (e, t, s) => e ? t === F.LIVE ? e.broadcast_time : t === F.VOD && s < e.broadcast_time ? s : 0 : 0),
 				U = (e, t) => {
 					const s = h(e);
 					return !!s && s[t] && s[t].chat_disabled
@@ -2593,4 +2594,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork.2101186ff7c4a4a054fd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork.91b9b4edf385084e40dd.js.map
