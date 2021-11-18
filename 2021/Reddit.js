@@ -1,8 +1,9 @@
-// https://www.redditstatic.com/desktop2x/Reddit.9d001f0ec768dc8ad266.js
-// Retrieved at 11/17/2021, 5:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.4f9dd23230fa1489bebc.js
+// Retrieved at 11/17/2021, 8:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
+		"./assets/fonts/RedditSans/font.less": function(e, t, n) {},
 		"./assets/fonts/VCR/font.less": function(e, t, n) {},
 		"./assets/fonts/redesignIcon2020/redesignFont2020.css": function(e, t, n) {},
 		"./node_modules/@r/google-tag-manager/compiled.js": function(e, t, n) {
@@ -1661,7 +1662,7 @@
 						notificationBannerId: c.a.EmailCollectionBannerId
 					})))
 				}, h = () => async (e, t) => {
-					e(Object(r.g)(d.g))
+					e(Object(r.g)(d.h))
 				}
 		},
 		"./src/reddit/actions/emailVerification.ts": function(e, t, n) {
@@ -4266,7 +4267,7 @@
 							return {
 								type: cs.Coins
 							};
-						case "wrappedreddit":
+						case "RedditRecap2021":
 							return {
 								type: cs.WrappedReddit
 							};
@@ -4768,7 +4769,7 @@
 							hk: "1UuGvQ"
 						}))
 					},
-					telemetryNoun: "wrappedreddit"
+					telemetryNoun: "RedditRecap2021"
 				}), e => ({
 					id: cs.Talk,
 					type: Zs.GenericLink,
@@ -8687,7 +8688,7 @@
 						e(Object(_e.h)(cd.b))
 					},
 					openKeepUsernameModal: () => {
-						e(Object(_e.h)(cd.f))
+						e(Object(_e.h)(cd.g))
 					},
 					toggleChangeEmailModal: () => {
 						e(Object(Xa.b)()), e(Object(_e.i)(cd.a))
@@ -16926,7 +16927,7 @@
 				ce = n("./node_modules/react-redux/es/index.js"),
 				de = n("./node_modules/react-router/esm/react-router.js"),
 				le = n("./node_modules/reselect/es/index.js"),
-				ue = (n("./assets/fonts/redesignIcon2020/redesignFont2020.css"), n("./assets/fonts/BentonSans/font.less"), n("./assets/fonts/IBMPlexSans/font.less"), n("./assets/fonts/NotoMono/font.less"), n("./assets/fonts/NotoSans/font.less"), n("./assets/fonts/VCR/font.less"), n("./src/reddit/components/Root/index.m.less")),
+				ue = (n("./assets/fonts/redesignIcon2020/redesignFont2020.css"), n("./assets/fonts/BentonSans/font.less"), n("./assets/fonts/IBMPlexSans/font.less"), n("./assets/fonts/NotoMono/font.less"), n("./assets/fonts/NotoSans/font.less"), n("./assets/fonts/RedditSans/font.less"), n("./assets/fonts/VCR/font.less"), n("./src/reddit/components/Root/index.m.less")),
 				me = n.n(ue),
 				pe = n("./src/reddit/components/Root/AdminPanelLoader.tsx"),
 				be = n("./src/lib/classNames/index.ts"),
@@ -20277,7 +20278,7 @@
 			var s = n("./node_modules/@loadable/component/dist/loadable.esm.js"),
 				o = n("./src/lib/constants/index.ts"),
 				r = n("./src/reddit/actions/pages/wrappedReddit.ts");
-			const a = "/wrappedreddit",
+			const a = "/RedditRecap2021",
 				i = {
 					action: r.a,
 					chunk: o.s.WRAPPED_REDDIT,
@@ -21021,7 +21022,7 @@
 			const c = Object(s.a)(i.z, e => !e),
 				d = Object(s.a)(i.rb, e => e && e.find(e => e === r.a.Apple)),
 				l = Object(s.a)(i.rb, e => !(!e || !e.includes(r.a.Google))),
-				u = Object(s.a)(a.a, e => !!e && [o.b, o.d, o.e, o.f].includes(e))
+				u = Object(s.a)(a.a, e => !!e && [o.b, o.d, o.e, o.g].includes(e))
 		},
 		"./src/reddit/selectors/trending.ts": function(e, t, n) {
 			"use strict";
@@ -21086,4 +21087,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit~Subreddit", "Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Chat~Governance~Reddit", 0, "Governance~ModListing~Reddit", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.9d001f0ec768dc8ad266.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.4f9dd23230fa1489bebc.js.map

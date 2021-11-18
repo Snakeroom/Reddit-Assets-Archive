@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.fb3c851e57f2027b6e51.js
-// Retrieved at 11/17/2021, 5:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.5d65007404406d738cd0.js
+// Retrieved at 11/17/2021, 8:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3307,10 +3307,10 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("152025"),
+				buildNumber: Object(r.c)("152065"),
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
-				buildTimestamp: Object(r.b)("1637184711"),
+				buildTimestamp: Object(r.b)("1637198375"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -5173,7 +5173,7 @@
 					PREDICTION_REDIRECT: "predictionRedirect",
 					PREMIUM: "premium",
 					POWERUPS: "powerups",
-					WRAPPED_REDDIT: "wrappedreddit",
+					WRAPPED_REDDIT: "RedditRecap2021",
 					POWERUP_REDIRECT: "powerupRedirect",
 					FRAMED_GILD: "framedGild",
 					FRAMED_MODAL: "framedModal",
@@ -5877,14 +5877,14 @@
 					}))
 				},
 				z = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %cf0cb18d7b62a337786f07dd23b730bf6864d45c3-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c4ae66e15ea14a4f3dde0adefc2c844f9b13863ed-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${v.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "f0cb18d7b62a337786f07dd23b730bf6864d45c3-production",
+						release: "4ae66e15ea14a4f3dde0adefc2c844f9b13863ed-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6397,7 +6397,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "f0cb18d7b62a337786f07dd23b730bf6864d45c3-production",
+						releaseClient: "4ae66e15ea14a4f3dde0adefc2c844f9b13863ed-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -14533,7 +14533,7 @@
 				if (o.ok && o.body && o.body.success) {
 					e && (Object(V.a)(Object(L.f)(e)(a)), fe(t, a));
 					const i = Object(k.a)(a),
-						n = i === c.g || i === c.o ? c.o : c.c;
+						n = i === c.h || i === c.p ? c.p : c.c;
 					t(Object(d.i)(n))
 				} else t(Object(l.f)({
 					duration: l.a,
@@ -15149,23 +15149,23 @@
 				return n
 			})), i.d(t, "c", (function() {
 				return r
-			})), i.d(t, "g", (function() {
-				return s
-			})), i.d(t, "o", (function() {
-				return o
 			})), i.d(t, "h", (function() {
-				return d
-			})), i.d(t, "l", (function() {
-				return a
-			})), i.d(t, "m", (function() {
-				return l
-			})), i.d(t, "n", (function() {
-				return u
+				return s
+			})), i.d(t, "p", (function() {
+				return o
 			})), i.d(t, "i", (function() {
-				return c
+				return d
+			})), i.d(t, "m", (function() {
+				return a
+			})), i.d(t, "n", (function() {
+				return l
+			})), i.d(t, "o", (function() {
+				return u
 			})), i.d(t, "j", (function() {
-				return _
+				return c
 			})), i.d(t, "k", (function() {
+				return _
+			})), i.d(t, "l", (function() {
 				return p
 			})), i.d(t, "b", (function() {
 				return m
@@ -15173,8 +15173,10 @@
 				return h
 			})), i.d(t, "e", (function() {
 				return f
-			})), i.d(t, "f", (function() {
+			})), i.d(t, "g", (function() {
 				return b
+			})), i.d(t, "f", (function() {
+				return g
 			}));
 			const n = "change_email_modal_id",
 				r = "check_email_modal_id",
@@ -15190,7 +15192,8 @@
 				m = "change_username_modal_id",
 				h = "confirm_save_username_modal_id",
 				f = "intercept_action_modal_id",
-				b = "second_confirm_keep_username_modal_id"
+				b = "second_confirm_keep_username_modal_id",
+				g = "browser_notifications_permission_settings"
 		},
 		"./src/reddit/constants/actions.ts": function(e, t, i) {
 			"use strict";
@@ -34020,60 +34023,58 @@
 				return Ee
 			})), i.d(t, "W", (function() {
 				return Te
-			})), i.d(t, "sb", (function() {
-				return Se
 			})), i.d(t, "gb", (function() {
-				return Oe
+				return Se
 			})), i.d(t, "Z", (function() {
-				return Ie
+				return Oe
 			})), i.d(t, "F", (function() {
-				return Re
+				return Ie
 			})), i.d(t, "E", (function() {
-				return Fe
+				return Re
 			})), i.d(t, "B", (function() {
-				return Ce
+				return Fe
 			})), i.d(t, "C", (function() {
-				return Ne
+				return Ce
 			})), i.d(t, "A", (function() {
-				return je
+				return Ne
 			})), i.d(t, "D", (function() {
-				return Ae
+				return je
 			})), i.d(t, "q", (function() {
-				return De
+				return Ae
 			})), i.d(t, "b", (function() {
-				return Pe
+				return De
 			})), i.d(t, "eb", (function() {
-				return xe
+				return Pe
 			})), i.d(t, "u", (function() {
-				return Le
+				return xe
 			})), i.d(t, "v", (function() {
-				return Be
+				return Le
 			})), i.d(t, "kb", (function() {
-				return ke
+				return Be
 			})), i.d(t, "f", (function() {
-				return Me
+				return ke
 			})), i.d(t, "cb", (function() {
-				return Ue
+				return Me
 			})), i.d(t, "fb", (function() {
-				return Ge
+				return Ue
 			})), i.d(t, "c", (function() {
-				return Ve
+				return Ge
 			})), i.d(t, "d", (function() {
-				return qe
+				return Ve
 			})), i.d(t, "N", (function() {
-				return He
+				return qe
 			})), i.d(t, "K", (function() {
-				return We
+				return He
 			})), i.d(t, "G", (function() {
-				return Ke
+				return We
 			})), i.d(t, "z", (function() {
-				return $e
+				return Ke
 			})), i.d(t, "y", (function() {
-				return ze
+				return $e
 			})), i.d(t, "t", (function() {
-				return Ye
+				return ze
 			})), i.d(t, "s", (function() {
-				return Qe
+				return Ye
 			}));
 			i("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = i("./node_modules/fbt/lib/FbtPublic.js"),
@@ -34322,30 +34323,29 @@
 						items: r
 					}
 				}),
-				Se = e => e.wrappedReddit,
-				Oe = e => e.creations.formData.body.rte,
-				Ie = e => e.creations.formData.nextSubreddit,
-				Re = e => {
+				Se = e => e.creations.formData.body.rte,
+				Oe = e => e.creations.formData.nextSubreddit,
+				Ie = e => {
 					return !!me(e).trim()
 				},
-				Fe = e => {
-					const t = Oe(e);
+				Re = e => {
+					const t = Se(e);
 					return d.a.hasContent(t)
 				},
-				Ce = e => {
+				Fe = e => {
 					return !!Ee(e).trim()
 				},
-				Ne = e => {
+				Ce = e => {
 					return Te(e).items.some(t => {
 						const i = e.uploads[t.uploadKey];
 						return i && i.status !== v.a.FAILED
 					})
 				},
-				je = e => {
+				Ne = e => {
 					return !!ve(e).trim()
 				},
-				Ae = e => Re(e) || Fe(e) || Ce(e) || Ne(e) || je(e),
-				De = (e, {
+				je = e => Ie(e) || Re(e) || Fe(e) || Ce(e) || Ne(e),
+				Ae = (e, {
 					field: t
 				}) => {
 					switch (t) {
@@ -34355,7 +34355,7 @@
 							};
 						case s.wb.BODY:
 							if (pe(e) === g.i.RICH_TEXT) {
-								const t = Oe(e);
+								const t = Se(e);
 								return {
 									rtjson: d.a.toRichTextJSON(t, e.uploads).document
 								}
@@ -34380,7 +34380,7 @@
 							return
 					}
 				},
-				Pe = (e, t) => {
+				De = (e, t) => {
 					const i = q(e),
 						n = _e(e),
 						r = ae(e),
@@ -34412,12 +34412,12 @@
 						suggestedSort: m
 					}
 				},
-				xe = (e, t) => {
-					const i = Pe(e, t.draftId),
+				Pe = (e, t) => {
+					const i = De(e, t.draftId),
 						n = t.destSubreddit || i.destSubreddit;
 					if (!i || !n.name) return;
 					const r = (e => e.creations.formData.recaptcha)(e),
-						o = Ge(e, t),
+						o = Ue(e, t),
 						a = se(e),
 						l = {
 							...i,
@@ -34431,7 +34431,7 @@
 						c = ve(e),
 						_ = Ee(e),
 						p = Te(e),
-						m = Oe(e),
+						m = Se(e),
 						h = ye(e),
 						f = $(e),
 						{
@@ -34499,14 +34499,14 @@
 						sourcePostId: w
 					} : void 0
 				},
-				Le = e => e.creations.formData,
-				Be = e => e.creations.formState,
-				ke = (e, {
+				xe = e => e.creations.formData,
+				Le = e => e.creations.formState,
+				Be = (e, {
 					sourcePostId: t
 				}) => t ? Object(F.f)(e, {
 					postId: t
 				}) : void 0,
-				Me = e => {
+				ke = e => {
 					const t = Te(e);
 					switch ($(e)) {
 						case s.Vb.LINK_ONLY:
@@ -34517,7 +34517,7 @@
 							return "self"
 					}
 				},
-				Ue = (e, {
+				Me = (e, {
 					pageLayer: t
 				}) => {
 					if (!t) return E.b;
@@ -34532,11 +34532,11 @@
 						pageLayer: t
 					}) && Object(j.h)(e) ? Object(f.a)(n.url, E.b) : E.b
 				},
-				Ge = (e, t) => {
+				Ue = (e, t) => {
 					const i = Object(u.q)(e, t);
 					return (!i || !i.isQuarantined) && e.creations.formData.postToTwitter
 				},
-				Ve = e => {
+				Ge = e => {
 					const t = q(e);
 					if (!t.id || t.isProfile) return !1;
 					const i = {
@@ -34545,7 +34545,7 @@
 					};
 					return Object(R.b)(e, i, !0, !0)
 				},
-				qe = e => {
+				Ve = e => {
 					var t, i, n;
 					if (K(e)) return !0;
 					const r = q(e);
@@ -34555,7 +34555,7 @@
 						d = !1 === (null === (n = null == o ? void 0 : o.polls) || void 0 === n ? void 0 : n.canCreate);
 					return s && !d
 				},
-				He = e => {
+				qe = e => {
 					const t = K(e);
 					return (e => {
 						const t = q(e),
@@ -34566,23 +34566,23 @@
 						return i && n
 					})(e) || t
 				},
-				We = (e, t) => Object(C.K)(e, t) && !Object(S.c)(e, t) && (e => e.creations.formData.govType === b.a.Prediction)(e),
-				Ke = (e, t) => Object(C.K)(e, t) && Object(S.c)(e, t),
-				$e = e => {
+				He = (e, t) => Object(C.K)(e, t) && !Object(S.c)(e, t) && (e => e.creations.formData.govType === b.a.Prediction)(e),
+				We = (e, t) => Object(C.K)(e, t) && Object(S.c)(e, t),
+				Ke = e => {
 					var t;
 					const i = null === (t = e.creations.formData.polls) || void 0 === t ? void 0 : t.options;
 					return !!i && i.length > 1 && i.every(({
 						text: e
 					}) => e.length > 0)
 				},
-				ze = e => {
+				$e = e => {
 					var t;
 					const i = null === (t = e.creations.formData.polls) || void 0 === t ? void 0 : t.endDate,
 						n = new Date;
 					return n.setHours(n.getHours() + 1), i >= n
 				},
-				Ye = e => e.creations.formData.polls || void 0,
-				Qe = e => e.creations.formData.govType
+				ze = e => e.creations.formData.polls || void 0,
+				Ye = e => e.creations.formData.govType
 		},
 		"./src/reddit/selectors/postDraft.ts": function(e, t, i) {
 			"use strict";
@@ -43302,4 +43302,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.fb3c851e57f2027b6e51.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.5d65007404406d738cd0.js.map

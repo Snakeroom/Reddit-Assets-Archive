@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EmailVerificationModals.729ec2b28bc56db06e2f.js
-// Retrieved at 11/4/2021, 4:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EmailVerificationModals.f4992ee139bb8e0e824a.js
+// Retrieved at 11/17/2021, 8:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EmailVerificationModals"], {
 		"./src/lib/colors/constants.ts": function(e, t, a) {
@@ -460,8 +460,8 @@
 					checkEmailModalOpen: Object($.b)(T.c),
 					isEmailPermissionRequired: q.e,
 					isResponsiveSettingsEnabled: ee.a,
-					setEmailModalOpen: Object($.b)(T.g),
-					verifyEmailModalOpen: Object($.b)(T.o)
+					setEmailModalOpen: Object($.b)(T.h),
+					verifyEmailModalOpen: Object($.b)(T.p)
 				}),
 				ne = Object(o.b)(se, (e, {
 					shouldOpenTooltip: t
@@ -470,7 +470,7 @@
 						t && e(Object(d.b)()), e(Object(m.g)(T.a))
 					},
 					closeSetEmailModal: () => e(Object(c.b)()),
-					closeVerifyEmailModal: () => e(Object(m.g)(T.o)),
+					closeVerifyEmailModal: () => e(Object(m.g)(T.p)),
 					toggleCheckEmailModal: () => e(Object(m.i)(T.c))
 				})),
 				ie = Object(Z.u)(),
@@ -969,4 +969,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EmailVerificationModals.729ec2b28bc56db06e2f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EmailVerificationModals.f4992ee139bb8e0e824a.js.map

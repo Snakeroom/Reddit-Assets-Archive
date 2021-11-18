@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.9ac6cf682d8b54224537.js
-// Retrieved at 11/11/2021, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.c482f8d291289dc42df5.js
+// Retrieved at 11/17/2021, 8:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, n) {
@@ -11012,7 +11012,7 @@
 					changeAccountGender: t => e(Object(k.a)(t)),
 					changeLanguage: t => e(Object(w.g)(t)),
 					openChangeEmailModal: () => e(Object(y.i)(X.a)),
-					openSSOCreatePasswordForEmailModal: () => e(Object(y.h)(X.l)),
+					openSSOCreatePasswordForEmailModal: () => e(Object(y.h)(X.m)),
 					resendEmail: () => e(Object(x.x)())
 				})),
 				fe = ({
@@ -11208,8 +11208,8 @@
 				shouldShowCreatePasswordModal: I.d
 			});
 			var He = Object(a.b)(Ge, e => ({
-					openSSOCreatePasswordForLinkAppleModal: () => e(Object(y.h)(X.i)),
-					openSSOCreatePasswordForUnlinkAppleModal: () => e(Object(y.h)(X.j)),
+					openSSOCreatePasswordForLinkAppleModal: () => e(Object(y.h)(X.j)),
+					openSSOCreatePasswordForUnlinkAppleModal: () => e(Object(y.h)(X.k)),
 					openLinkAppleSSOModal: () => e(Object(_.g)()),
 					openUnlinkAppleSSOModal: () => e(Object(_.l)())
 				}))(e => {
@@ -11272,8 +11272,8 @@
 				shouldShowCreatePasswordModal: I.d
 			});
 			var Xe = Object(a.b)(Ze, e => ({
-					openSSOCreatePasswordForLinkGoogleModal: () => e(Object(y.h)(X.m)),
-					openSSOCreatePasswordForUnlinkGoogleModal: () => e(Object(y.h)(X.n)),
+					openSSOCreatePasswordForLinkGoogleModal: () => e(Object(y.h)(X.n)),
+					openSSOCreatePasswordForUnlinkGoogleModal: () => e(Object(y.h)(X.o)),
 					openLinkGoogleSSOModal: () => e(Object(_.h)()),
 					openUnlinkGoogleSSOModal: () => e(Object(_.m)())
 				}))(e => {
@@ -11443,7 +11443,7 @@
 					deactivate: t => {
 						e(Object(x.w)(t))
 					},
-					openSSOCreatePasswordForLinkGoogleModal: () => e(Object(y.h)(X.k)),
+					openSSOCreatePasswordForLinkGoogleModal: () => e(Object(y.h)(X.l)),
 					optOut: async () => {
 						if ("new.reddit.com" === window.location.host) return window.location.assign("https://old.reddit.com/prefs");
 						g.a.get("rseor3") && g.a.remove("rseor3", {
@@ -12504,7 +12504,7 @@
 				Zr = Object(a.b)(Vr, (e, t) => ({
 					addBlocked: t => e(Object(Br.h)(t)),
 					addWhitelisted: t => e(Object(Rt.g)(t)),
-					openSSOCreatePasswordFor2FAModal: () => e(Object(y.h)(X.h)),
+					openSSOCreatePasswordFor2FAModal: () => e(Object(y.h)(X.i)),
 					removeWhitelisted: t => e(Object(Rt.h)(t)),
 					removeBlocked: t => e(Object(Br.g)(t)),
 					saveChatSettings: t => e(Object(Lt.d)(t)),
@@ -14307,4 +14307,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.9ac6cf682d8b54224537.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.c482f8d291289dc42df5.js.map

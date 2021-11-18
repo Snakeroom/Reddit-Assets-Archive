@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Settings-CreatePasswordSSOModal.7584d2473e146aa74012.js
-// Retrieved at 11/4/2021, 4:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Settings-CreatePasswordSSOModal.55d4551499e9745fe5c2.js
+// Retrieved at 11/17/2021, 8:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Settings-CreatePasswordSSOModal"], {
 		"./src/reddit/components/EmailCollection/Envelope/index.m.less": function(e, t, s) {
@@ -59,12 +59,12 @@
 				u = s("./src/reddit/components/Settings/ModalContainer/index.tsx"),
 				b = s("./src/reddit/controls/Button/index.tsx"),
 				C = s("./src/reddit/components/Settings/CreatePasswordSSOModal/index.m.less"),
-				h = s.n(C);
-			const O = ({
+				O = s.n(C);
+			const w = ({
 				isResponsiveSettingsEnabled: e
-			}) => e ? h.a.mResponsive : "";
-			var w = e => a.a.createElement(u.a, {
-					className: O(e),
+			}) => e ? O.a.mResponsive : "";
+			var h = e => a.a.createElement(u.a, {
+					className: w(e),
 					icon: a.a.createElement(p.a, null),
 					description: c.fbt._("We sent a message to {email} with a link to create your password.", [c.fbt._param("email", e.userEmail || "")], {
 						hk: "2YDohi"
@@ -74,9 +74,9 @@
 						hk: "1gDhgD"
 					})
 				}, a.a.createElement("div", {
-					className: h.a.buttonWrapper
+					className: O.a.buttonWrapper
 				}, a.a.createElement(b.l, {
-					className: Object(m.a)(h.a.commonBtn, h.a.primaryBtn),
+					className: Object(m.a)(O.a.commonBtn, O.a.primaryBtn),
 					onClick: e.onClose,
 					redditStyle: !0
 				}, c.fbt._("Ok", null, {
@@ -86,7 +86,7 @@
 				E = s("./src/reddit/hooks/useTracking.ts");
 			const k = ({
 				isResponsiveSettingsEnabled: e
-			}) => e ? h.a.mResponsive : "";
+			}) => e ? O.a.mResponsive : "";
 			var g, y = e => {
 				const t = Object(E.a)();
 				Object(o.useEffect)(() => {
@@ -99,7 +99,7 @@
 					onClose: e.isResponsiveSettingsEnabled ? void 0 : e.onClose,
 					title: e.title
 				}, a.a.createElement("div", {
-					className: h.a.buttonWrapper
+					className: O.a.buttonWrapper
 				}, a.a.createElement(b.o, {
 					onClick: () => {
 						t(Object(v.b)("cancel")), e.onClose()
@@ -108,7 +108,7 @@
 				}, c.fbt._("Cancel", null, {
 					hk: "2TSLl5"
 				})), a.a.createElement(b.l, {
-					className: Object(m.a)(h.a.commonBtn, h.a.primaryBtn),
+					className: Object(m.a)(O.a.commonBtn, O.a.primaryBtn),
 					onClick: () => {
 						t(Object(v.b)("continue")), e.handleContinueClick()
 					},
@@ -146,7 +146,7 @@
 						isResponsiveSettingsEnabled: e,
 						onClose: t,
 						title: this.props.title
-					}) : a.a.createElement(w, {
+					}) : a.a.createElement(h, {
 						isResponsiveSettingsEnabled: e,
 						onClose: t,
 						userEmail: this.props.userEmail
@@ -252,13 +252,13 @@
 				N = s("./src/reddit/selectors/activeModalId.ts"),
 				S = s("./src/reddit/selectors/user.ts");
 			const D = Object(l.c)({
-					resetPasswordFor2FAModalOpen: Object(N.b)(F.h),
-					resetPasswordForEmailModalOpen: Object(N.b)(F.l),
-					resetPasswordForAppleLinkModalOpen: Object(N.b)(F.i),
-					resetPasswordForAppleUnlinkModalOpen: Object(N.b)(F.j),
-					resetPasswordForDeactivateAccountModalOpen: Object(N.b)(F.k),
-					resetPasswordForGoogleLinkModalOpen: Object(N.b)(F.m),
-					resetPasswordForGoogleUnlinkModalOpen: Object(N.b)(F.n),
+					resetPasswordFor2FAModalOpen: Object(N.b)(F.i),
+					resetPasswordForEmailModalOpen: Object(N.b)(F.m),
+					resetPasswordForAppleLinkModalOpen: Object(N.b)(F.j),
+					resetPasswordForAppleUnlinkModalOpen: Object(N.b)(F.k),
+					resetPasswordForDeactivateAccountModalOpen: Object(N.b)(F.l),
+					resetPasswordForGoogleLinkModalOpen: Object(N.b)(F.n),
+					resetPasswordForGoogleUnlinkModalOpen: Object(N.b)(F.o),
 					userEmail: S.n,
 					username: e => {
 						const t = Object(S.k)(e);
@@ -266,13 +266,13 @@
 					}
 				}),
 				L = Object(n.b)(D, e => ({
-					closeResetPasswordFor2FAModal: () => e(Object(r.g)(F.h)),
-					closeResetPasswordForEmailModal: () => e(Object(r.g)(F.l)),
-					closeResetPasswordForAppleLinkModal: () => e(Object(r.g)(F.i)),
-					closeResetPasswordForAppleUnlinkModal: () => e(Object(r.g)(F.j)),
-					closeResetPasswordForDeactivateAccountModal: () => e(Object(r.g)(F.k)),
-					closeResetPasswordForGoogleLinkModal: () => e(Object(r.g)(F.m)),
-					closeResetPasswordForGoogleUnlinkModal: () => e(Object(r.g)(F.n)),
+					closeResetPasswordFor2FAModal: () => e(Object(r.g)(F.i)),
+					closeResetPasswordForEmailModal: () => e(Object(r.g)(F.m)),
+					closeResetPasswordForAppleLinkModal: () => e(Object(r.g)(F.j)),
+					closeResetPasswordForAppleUnlinkModal: () => e(Object(r.g)(F.k)),
+					closeResetPasswordForDeactivateAccountModal: () => e(Object(r.g)(F.l)),
+					closeResetPasswordForGoogleLinkModal: () => e(Object(r.g)(F.n)),
+					closeResetPasswordForGoogleUnlinkModal: () => e(Object(r.g)(F.o)),
 					sendResetEmail: t => e(Object(i.y)(t))
 				}));
 			t.default = L(e => e.userEmail && e.username ? a.a.createElement(R, e) : null)
@@ -332,4 +332,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Settings-CreatePasswordSSOModal.7584d2473e146aa74012.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Settings-CreatePasswordSSOModal.55d4551499e9745fe5c2.js.map
