@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.5d65007404406d738cd0.js
-// Retrieved at 11/17/2021, 8:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.a8a9f0ffe0994b389fb5.js
+// Retrieved at 11/18/2021, 2:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3307,10 +3307,10 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("152065"),
+				buildNumber: Object(r.c)("152147"),
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
-				buildTimestamp: Object(r.b)("1637198375"),
+				buildTimestamp: Object(r.b)("1637260522"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -5877,14 +5877,14 @@
 					}))
 				},
 				z = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c4ae66e15ea14a4f3dde0adefc2c844f9b13863ed-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %cd591023b93f2df18b0e036df913b32ebfef4ad03-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${v.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "4ae66e15ea14a4f3dde0adefc2c844f9b13863ed-production",
+						release: "d591023b93f2df18b0e036df913b32ebfef4ad03-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6397,7 +6397,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "4ae66e15ea14a4f3dde0adefc2c844f9b13863ed-production",
+						releaseClient: "d591023b93f2df18b0e036df913b32ebfef4ad03-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -10661,14 +10661,15 @@
 					}));
 					const K = i && Object(S.B)(R(), i),
 						$ = Object(E.e)(B),
-						z = Object(I.eb)(B),
-						Y = [a.a.PromotedTrend, a.a.Trending].includes(t.source),
-						Q = Object(E.f)(B) && "1" === t.sr_nsfw,
-						J = await Object(g.a)("searchResults", () => {
+						z = Object(E.b)(B),
+						Y = Object(I.eb)(B),
+						Q = [a.a.PromotedTrend, a.a.Trending].includes(t.source),
+						J = Object(E.f)(B) && "1" === t.sr_nsfw,
+						X = await Object(g.a)("searchResults", () => {
 							var e;
 							const n = {
 									...t,
-									q: Object(E.c)(B) && !$ && t.q ? Object(b.a)(t.q, z, "1" === t.include_over_18, Y, Q) : t.q,
+									q: Object(E.c)(B) && !$ && t.q ? Object(b.a)(t.q, Y, "1" === t.include_over_18, Q, J) : t.q,
 									type: (t.type || []).join(","),
 									b: !G
 								},
@@ -10682,7 +10683,8 @@
 							return $ ? Object(f.a)({
 								context: C(),
 								isSerpRedesignLayoutM2: $,
-								nsfw: !Object(b.b)(z, "1" === t.include_over_18, Y, Q),
+								isPeopleSerpRedesignLayoutM2: z,
+								nsfw: !Object(b.b)(Y, "1" === t.include_over_18, Q, J),
 								options: n,
 								structureType: d,
 								subredditIds: o,
@@ -10699,7 +10701,7 @@
 								subredditName: i
 							})
 						}),
-						X = {
+						Z = {
 							key: e,
 							type: W,
 							meta: B.meta,
@@ -10707,15 +10709,15 @@
 							subredditName: i,
 							username: r
 						},
-						Z = J.body;
-					if (J.ok) {
+						ee = X.body;
+					if (X.ok) {
 						if (d(j({
 								categoryName: k,
-								...X,
-								...Z
+								...Z,
+								...ee
 							})), d(m.g(H)), d(Object(l.b)(v.a.SEARCH_RESULTS)), i && K) {
-							const e = Object(c.c)(Z.posts, K),
-								t = Object(c.b)(Z.structuredStyles || {}),
+							const e = Object(c.c)(ee.posts, K),
+								t = Object(c.b)(ee.structuredStyles || {}),
 								i = (t ? Object(c.d)(t) : []).concat(e);
 							d(Object(c.a)(i, K))
 						}
@@ -10723,14 +10725,14 @@
 						let o = n.fbt._("Sorry, we couldn't load search results.", null, {
 							hk: "QgweL"
 						});
-						if ($ && (e => !s()(e))(J.body)) {
-							const e = null === (P = J.body.success) || void 0 === P ? void 0 : P.posts,
-								t = null === (x = J.body.success) || void 0 === x ? void 0 : x.communities,
-								i = null === (L = J.body.success) || void 0 === L ? void 0 : L.authors;
+						if ($ && (e => !s()(e))(X.body)) {
+							const e = null === (P = X.body.success) || void 0 === P ? void 0 : P.posts,
+								t = null === (x = X.body.success) || void 0 === x ? void 0 : x.communities,
+								i = null === (L = X.body.success) || void 0 === L ? void 0 : L.authors;
 							(e || t || i) && (d(j({
 								categoryName: k,
-								...X,
-								...Z
+								...Z,
+								...ee
 							})), e || t ? e || i ? t || i ? e ? t ? i || (o = n.fbt._("Sorry, we couldn't load people results.", null, {
 								hk: "2edP87"
 							})) : o = n.fbt._("Sorry, we couldn't load communities results.", null, {
@@ -10747,9 +10749,9 @@
 						}
 						d(A({
 							key: e,
-							error: J.error,
+							error: X.error,
 							type: W,
-							...J.body
+							...X.body
 						})), d(m.f({
 							id: H,
 							kind: y.b.Error,
@@ -18829,69 +18831,70 @@
 				}),
 				x = async ({
 					context: e,
-					nsfw: t,
-					options: i,
-					profileIds: n,
-					structureType: s,
-					subredditIds: d,
-					tokens: c
+					isPeopleSerpRedesignLayoutM2: t,
+					nsfw: i,
+					options: n,
+					profileIds: s,
+					structureType: d,
+					subredditIds: c,
+					tokens: m
 				}) => {
-					var m, h, f, b, g;
-					const w = [{
+					var h, f, b, g, w;
+					const y = [{
 							key: "nsfw",
-							value: t ? "1" : "0"
+							value: i ? "1" : "0"
 						}, {
 							key: "profile_ids",
-							value: null !== (m = N(n)) && void 0 !== m ? m : null
+							value: null !== (h = N(s)) && void 0 !== h ? h : null
 						}, {
 							key: "subreddit_ids",
-							value: null !== (h = N(d)) && void 0 !== h ? h : null
+							value: null !== (f = N(c)) && void 0 !== f ? f : null
 						}, {
 							key: "time_range",
-							value: (null == i ? void 0 : i.t) && "all" !== (null == i ? void 0 : i.t) ? null == i ? void 0 : i.t : null
+							value: (null == n ? void 0 : n.t) && "all" !== (null == n ? void 0 : n.t) ? null == n ? void 0 : n.t : null
 						}].filter(e => null !== e.value),
-						y = {
+						v = {
 							[r.Zb.Posts]: !1,
 							[r.Zb.Subreddits]: !1,
 							[r.Zb.Users]: !1
 						};
-					for (const r of null !== (b = null === (f = null == i ? void 0 : i.type) || void 0 === f ? void 0 : f.split(",")) && void 0 !== b ? b : []) void 0 !== y[r] && (y[r] = !0);
-					const v = {
-							ad: null == i ? void 0 : i.ad,
+					for (const r of null !== (g = null === (b = null == n ? void 0 : n.type) || void 0 === b ? void 0 : b.split(",")) && void 0 !== g ? g : []) void 0 !== v[r] && (v[r] = !0);
+					const E = {
+							ad: null == n ? void 0 : n.ad,
 							originPageType: Object(u.b)(a.b.SearchOriginPage),
 							queryId: Object(l.c)(l.a.SearchResults),
-							structureType: s
+							structureType: d
 						},
-						E = y[r.Zb.Posts],
-						T = y[r.Zb.Subreddits],
-						S = y[r.Zb.Users],
-						O = E && T && S,
-						I = {
-							query: null !== (g = null == i ? void 0 : i.q) && void 0 !== g ? g : "",
-							sort: (null == i ? void 0 : i.sort) ? j[null == i ? void 0 : i.sort] : null,
-							filters: w,
+						T = v[r.Zb.Posts],
+						S = v[r.Zb.Subreddits],
+						O = v[r.Zb.Users] && !1 !== t,
+						I = T && S && O,
+						R = {
+							query: null !== (w = null == n ? void 0 : n.q) && void 0 !== w ? w : "",
+							sort: (null == n ? void 0 : n.sort) ? j[null == n ? void 0 : n.sort] : null,
+							filters: y,
 							productSurface: `${p.TelemetryAppName.web2x}-serp`,
-							includePosts: E,
-							includeCommunities: T,
-							includeAuthors: S,
-							postsAfter: c.posts,
-							communitiesAfter: c.communities,
-							authorsAfter: c.authors,
-							searchInput: v,
-							...O && {
+							includePosts: T,
+							includeCommunities: S,
+							includeAuthors: O,
+							postsAfter: m.posts,
+							communitiesAfter: m.communities,
+							authorsAfter: m.authors,
+							searchInput: E,
+							...I && {
 								communityRows: 6,
 								authorRows: 50
 							}
 						},
-						R = await Object(o.a)(e, {
+						F = await Object(o.a)(e, {
 							..._,
-							variables: I
+							variables: R
 						}, {
 							traceRequestName: "general_search"
 						});
 					return {
-						...R,
-						body: C(y, R.body)
+						...F,
+						body: C(v, F.body)
 					}
 				};
 
@@ -43302,4 +43305,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.5d65007404406d738cd0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.a8a9f0ffe0994b389fb5.js.map
