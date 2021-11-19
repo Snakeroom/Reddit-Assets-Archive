@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.01cc783550fe96a4b3c0.js
-// Retrieved at 11/18/2021, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.ed8d15088aaf9f5dcc07.js
+// Retrieved at 11/19/2021, 3:40:08 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var n, a, r = o[0], s = o[1], c = o[2], l = 0, P = []; l < r.length; l++) a = r[l], Object.prototype.hasOwnProperty.call(d, a) && d[a] && P.push(d[a][0]), d[a] = 0;
@@ -779,7 +779,7 @@
 					"reddit-components-CompactPost": "e8815206d1fda6ce58ad",
 					"reddit-components-LargePost": "1844e510bf51cfadfd8d",
 					"reddit-components-SidebarNativeAd": "84743d47908f48d5ce85",
-					CommentsPageNativeAd: "19732084e543e8eee702",
+					CommentsPageNativeAd: "1bb90a1597652b3efaf2",
 					CreatorStats: "5cb208aa880f2b267724",
 					CryptoVault: "275625174611dc4d3110",
 					EconomicsSubredditPremiumSidebarCards: "d3cfb7f4390aa37c3be6",
@@ -1433,7 +1433,7 @@
 						"reddit-components-CompactPost": "2f00ef8e218545f8d274",
 						"reddit-components-LargePost": "8dc435d5790e980489a8",
 						"reddit-components-SidebarNativeAd": "75526125412bb431d15c",
-						CommentsPageNativeAd: "55ec759f9a7e45ce4bcc",
+						CommentsPageNativeAd: "726ffe12f9e3723879e8",
 						CreatorStats: "abbe8ef31e6009b74fd3",
 						CryptoVault: "7ab2ba38b17051a91555",
 						EconomicsSubredditPremiumSidebarCards: "9980f690a49372eb39f1",
@@ -1632,4 +1632,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.01cc783550fe96a4b3c0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.ed8d15088aaf9f5dcc07.js.map
