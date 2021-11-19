@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.bcfbfb4aebd6d6624e81.js
-// Retrieved at 11/18/2021, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.a4d041cded833eac72fe.js
+// Retrieved at 11/18/2021, 8:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3307,10 +3307,10 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("152154"),
+				buildNumber: Object(r.c)("152222"),
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
-				buildTimestamp: Object(r.b)("1637263819"),
+				buildTimestamp: Object(r.b)("1637284081"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -5877,14 +5877,14 @@
 					}))
 				},
 				z = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %ce55c1557ec1e4b9d655beaa58d2fa2caca35ad89-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c2fbe13df87a02fa631a3bc122cc760af3fc19973-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${v.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "e55c1557ec1e4b9d655beaa58d2fa2caca35ad89-production",
+						release: "2fbe13df87a02fa631a3bc122cc760af3fc19973-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6397,7 +6397,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "e55c1557ec1e4b9d655beaa58d2fa2caca35ad89-production",
+						releaseClient: "2fbe13df87a02fa631a3bc122cc760af3fc19973-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -41871,57 +41871,59 @@
 					if (this.events = [], this.isSendingEvents = !1, this.flushEvents = e => {
 							var t, i;
 							if (!this.events.length) return;
-							const r = [],
-								o = [];
-							for (const n of this.events) r.push(n[0]), o.push(n[1]);
-							let d;
-							if (D) d = o.map(e => {
+							const r = [];
+							for (const n of this.events) r.push(n[1]);
+							let o;
+							if (D) o = r.map(e => {
 								const t = new b.a;
 								return new h.Event(e).write(t), t.getString()
 							});
 							else {
 								const e = new h.EventBatch({
-										events: o
+										events: r
 									}),
 									t = new b.a;
-								e.write(t), d = t.getString()
+								e.write(t), o = t.getString()
 							}
-							const p = Object(n.atob)("YWVjYWltMnNlaTlzZXNoNmVpQ2hhZXJ1dW03dHU4");
+							const d = Object(n.atob)("YWVjYWltMnNlaTlzZXNoNmVpQ2hhZXJ1dW03dHU4");
 							this.events = [], this.isSendingEvents = !0;
-							const f = s()(d, p).toString(),
-								y = g || "";
-							if (y) {
+							const p = s()(o, d).toString(),
+								f = g || "";
+							if (f) {
 								const n = {
-										[w || ""]: `key=Desktop2x3, mac=${f}`
+										[w || ""]: `key=Desktop2x3, mac=${p}`
 									},
-									s = () => {
+									r = () => {
 										this.events.length ? e ? this.flushEvents() : this.flushEventsWithCare() : this.isSendingEvents = !1
 									};
 								D ? Object(u.a)(x(), {
 									..._,
 									variables: {
 										input: {
-											events: d,
+											events: o,
 											isStaging: Object(l.c)()
 										}
 									}
 								}, {
 									headers: n
-								}).then(s) : N && (null === (i = null === (t = null === window || void 0 === window ? void 0 : window.navigator) || void 0 === t ? void 0 : t.serviceWorker) || void 0 === i ? void 0 : i.controller) ? (Object(m.b)("sendV2Events", r), s()) : F && A ? A(y, {
-									body: d,
+								}).then(r) : N && (null === (i = null === (t = null === window || void 0 === window ? void 0 : window.navigator) || void 0 === t ? void 0 : t.serviceWorker) || void 0 === i ? void 0 : i.controller) ? (Object(m.b)("sendV2EventsData", {
+									data: o,
+									headers: n
+								}), r()) : F && A ? A(f, {
+									body: o,
 									headers: {
 										...n,
 										"Content-Type": I
 									},
 									method: a.jb.POST
-								}).then(s) : Object(c.b)({
-									data: d,
-									endpoint: y,
+								}).then(r) : Object(c.b)({
+									data: o,
+									endpoint: f,
 									sync: e,
 									method: a.jb.POST,
 									type: I,
 									headers: n
-								}).then(s)
+								}).then(r)
 							} else this.isSendingEvents = !1
 						}, this.flushEventsWithCare = d()(this.flushEvents, S, O), k.injectedEventListener) throw new Error('EventSender registered multiple attempts to register a "beforeunload" event listener. This could happen when "client" code creates multiple instances on the EventSender class. This should never happen. Please make sure to use the default sendEvent helper from the "telemetry" package');
 					window.addEventListener("beforeunload", () => {
@@ -43305,4 +43307,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.bcfbfb4aebd6d6624e81.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.a4d041cded833eac72fe.js.map
