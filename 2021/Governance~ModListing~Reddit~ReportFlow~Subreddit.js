@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.f1a2f4cba0ae5c85d7ba.js
-// Retrieved at 11/18/2021, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.8bcdd23c82152e950054.js
+// Retrieved at 11/19/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~ReportFlow~Subreddit"], {
 		"./src/lib/assertNever.ts": function(e, t, r) {
@@ -2769,7 +2769,7 @@
 								data: {
 									subredditInfoById: null == Te ? void 0 : Te.subredditInfoByName
 								}
-							})), Object(Y.a)(d, xe, e), d(G(xe, r)), F(xe, n), ie && ve.appliedFlair) {
+							})), Object(Y.a)(d, xe, e), d(G(xe, r)), d(F(xe, n)), ie && ve.appliedFlair) {
 							const e = ve.appliedFlair;
 							if ((null === (C = R.user.account) || void 0 === C ? void 0 : C.displayName) && e.flair && (d(Object(v.b)({
 									subredditId: xe,
@@ -10469,4 +10469,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.f1a2f4cba0ae5c85d7ba.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.8bcdd23c82152e950054.js.map
