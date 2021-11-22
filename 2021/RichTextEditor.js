@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.d680414e8b38023a6ec2.js
-// Retrieved at 11/18/2021, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.7d82e5dfb44d4922bbe3.js
+// Retrieved at 11/22/2021, 6:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -1755,7 +1755,7 @@
 				})
 			}, s.a.createElement("div", {
 				className: u.a.ButtonWrapper
-			}, !!g && s.a.createElement(a.a, m({}, g, {
+			}, !!g && (g.emojisEnabled || g.gifsEnabled) && s.a.createElement(a.a, m({}, g, {
 				isTypingIndicatorsExperimentEnabled: !0
 			})), s.a.createElement(c.t, {
 				className: Object(r.a)(u.a.SubmitButton, {
@@ -2429,7 +2429,7 @@
 							subredditId: o
 						})
 					},
-					isTypingIndicatorsUIEnabled: J.b,
+					isTypingIndicatorsUIEnabled: (e, t) => !!t.isTopLevelComment && Object(J.b)(e),
 					isTypingIndicatorsReadTestEnabled: (e, t) => !!t.isTopLevelComment && Object(J.d)(e),
 					isTypingIndicatorsWriteTestEnabled: (e, t) => !!t.isTopLevelComment && Object(J.e)(e)
 				}),
@@ -4938,4 +4938,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.d680414e8b38023a6ec2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.7d82e5dfb44d4922bbe3.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.c47c081c7c192df3d031.js
-// Retrieved at 11/18/2021, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.61509a02778a4cd106ff.js
+// Retrieved at 11/22/2021, 6:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, n) {
@@ -4244,7 +4244,7 @@
 				})
 			}, s.a.createElement("div", {
 				className: u.a.ButtonWrapper
-			}, !!E && s.a.createElement(a.a, m({}, E, {
+			}, !!E && (E.emojisEnabled || E.gifsEnabled) && s.a.createElement(a.a, m({}, E, {
 				isTypingIndicatorsExperimentEnabled: !0
 			})), s.a.createElement(c.t, {
 				className: Object(r.a)(u.a.SubmitButton, {
@@ -11156,12 +11156,14 @@
 			const h = e => {
 					const t = e.getCurrentContent(),
 						n = e.getSelection(),
-						o = {};
-					s()(l.k, e => o[e] = {
-						isActive: !1,
-						isEnabled: !1
-					});
-					const i = new Set(Object.keys(o));
+						o = (() => {
+							const e = {};
+							return s()(l.k, t => e[t] = {
+								isActive: !1,
+								isEnabled: !1
+							}), e
+						})(),
+						i = new Set(Object.keys(o));
 					if (i.delete(l.k.HIGHLIGHT), n.isCollapsed()) {
 						const s = t.getBlockForKey(n.getEndKey()),
 							r = s.getType();
@@ -32184,4 +32186,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.c47c081c7c192df3d031.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.61509a02778a4cd106ff.js.map
