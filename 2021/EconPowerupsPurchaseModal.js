@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.67ce1d6227dce874920b.js
-// Retrieved at 11/11/2021, 4:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.627289e2963921de5df3.js
+// Retrieved at 12/1/2021, 12:30:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsPurchaseModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, r) {
@@ -32,9 +32,9 @@
 			})), r.d(t, "c", (function() {
 				return o
 			})), r.d(t, "d", (function() {
-				return a
-			})), r.d(t, "a", (function() {
 				return c
+			})), r.d(t, "a", (function() {
+				return a
 			})), r.d(t, "f", (function() {
 				return i
 			})), r.d(t, "g", (function() {
@@ -47,10 +47,10 @@
 				e.Real = "real", e.Crypto = "crypto", e.Reddit = "reddit"
 			}(n || (n = {}));
 			const o = "USD",
-				a = "ETH",
-				c = "COINS",
-				i = [a, "BTC"],
-				l = [c, "SUBREDDIT_POINTS", "GAME_TOKENS"],
+				c = "ETH",
+				a = "COINS",
+				i = [c, "BTC"],
+				l = [a, "SUBREDDIT_POINTS", "GAME_TOKENS"],
 				d = {
 					COINS: () => s.fbt._("Coins", null, {
 						hk: "1T2Y4p"
@@ -73,8 +73,8 @@
 			var n = r("./node_modules/@reddit/i18n-tools/runtime/helpers/locale/constants.js"),
 				s = r("./src/lib/currency/centsToDollars/index.ts"),
 				o = r("./src/lib/currency/currencies.ts"),
-				a = r("./src/lib/prettyPrintNumber/index.ts"),
-				c = r("./src/reddit/helpers/governance/tokens.ts"),
+				c = r("./src/lib/prettyPrintNumber/index.ts"),
+				a = r("./src/reddit/helpers/governance/tokens.ts"),
 				i = r("./src/reddit/constants/intlSupport.ts");
 			const l = (e, {
 					locale: t = n.DEFAULT_LOCALE,
@@ -82,12 +82,12 @@
 					formatOptions: s
 				} = {}) => {
 					const o = Number(e);
-					return Object(i.c)() ? r ? Object(a.b)(o) : new Intl.NumberFormat(t, s).format(o) : u(o, r, t)
+					return Object(i.c)() ? r ? Object(c.b)(o) : new Intl.NumberFormat(t, s).format(o) : u(o, r, t)
 				},
 				d = (e, t = {}) => {
 					const {
 						locale: r = n.DEFAULT_LOCALE,
-						pretty: a,
+						pretty: c,
 						formatOptions: l,
 						displayConversion: d,
 						forceDecimals: b,
@@ -101,13 +101,13 @@
 							return Object(i.c)() ? new Intl.NumberFormat(r, {
 								currencyDisplay: "symbol",
 								...l
-							}).format(P) + " " + t : u(P, a, r, t)
+							}).format(P) + " " + t : u(P, c, r, t)
 						}
 						case o.b.Crypto: {
-							if (a) {
-								return Object(c.c)(w, d) + " " + f
+							if (c) {
+								return Object(a.c)(w, d) + " " + f
 							}
-							const e = Number(Object(c.b)(w, d));
+							const e = Number(Object(a.b)(w, d));
 							return Object(i.c)() ? new Intl.NumberFormat(r, {
 								style: "currency",
 								currency: f,
@@ -115,7 +115,7 @@
 								minimumFractionDigits: 0,
 								maximumFractionDigits: 0,
 								...l
-							}).format(e) : u(e, a, r, f)
+							}).format(e) : u(e, c, r, f)
 						}
 						case o.b.Real:
 						default: {
@@ -124,14 +124,14 @@
 								style: "currency",
 								currency: f,
 								currencyDisplay: "symbol",
-								notation: a ? "compact" : "standard",
+								notation: c ? "compact" : "standard",
 								...l
-							}).format(e) : u(e, a, r, f)
+							}).format(e) : u(e, c, r, f)
 						}
 					}
 				},
 				u = (e, t, r, n) => {
-					return (t ? Object(a.b)(e) : e.toLocaleString(r)) + (n ? " " + n : "")
+					return (t ? Object(c.b)(e) : e.toLocaleString(r)) + (n ? " " + n : "")
 				},
 				m = e => o.g.includes(e.toUpperCase()) ? o.b.Reddit : o.f.includes(e.toUpperCase()) ? o.b.Crypto : o.b.Real,
 				p = e => {
@@ -188,31 +188,31 @@
 			var n = r("./node_modules/fbt/lib/FbtPublic.js"),
 				s = r("./src/lib/sentry/index.ts"),
 				o = r("./src/lib/makeActionCreator/index.ts"),
-				a = r("./src/reddit/endpoints/gold/purchase.ts"),
-				c = r("./src/reddit/actions/goldPurchaseModals/constants.ts"),
+				c = r("./src/reddit/endpoints/gold/purchase.ts"),
+				a = r("./src/reddit/actions/goldPurchaseModals/constants.ts"),
 				i = r("./src/reddit/selectors/goldPurchaseModals.ts");
-			const l = Object(o.a)(c.B),
-				d = Object(o.a)(c.w),
-				u = Object(o.a)(c.b),
-				m = Object(o.a)(c.y),
-				p = Object(o.a)(c.a),
-				b = Object(o.a)(c.E),
-				f = Object(o.a)(c.G),
-				h = Object(o.a)(c.F),
-				P = Object(o.a)(c.D),
+			const l = Object(o.a)(a.B),
+				d = Object(o.a)(a.w),
+				u = Object(o.a)(a.b),
+				m = Object(o.a)(a.y),
+				p = Object(o.a)(a.a),
+				b = Object(o.a)(a.E),
+				f = Object(o.a)(a.G),
+				h = Object(o.a)(a.F),
+				P = Object(o.a)(a.D),
 				w = e => async (t, r) => {
 					const s = r(),
 						o = Object(i.h)(s),
-						a = Object(i.l)(s),
+						c = Object(i.l)(s),
 						{
-							token: c,
+							token: a,
 							error: l
 						} = await e.createToken({
 							name: o,
-							address_zip: a
+							address_zip: c
 						});
 					if (o.trim()) {
-						if (!l && c) return c;
+						if (!l && a) return a;
 						t(h(l || void 0))
 					} else {
 						const e = n.fbt._("Your card’s name field is incomplete", null, {
@@ -222,22 +222,22 @@
 							message: e
 						}))
 					}
-				}, g = Object(o.a)(c.x), y = Object(o.a)(c.H), E = Object(o.a)(c.C), _ = Object(o.a)(c.g), x = e => async (t, r, {
+				}, g = Object(o.a)(a.x), y = Object(o.a)(a.H), E = Object(o.a)(a.C), _ = Object(o.a)(a.g), x = e => async (t, r, {
 					apiContext: n
 				}) => {
 					t(_(e));
 					try {
-						const t = await Object(a.a)(n(), e);
+						const t = await Object(c.a)(n(), e);
 						if (t.error) throw new Error(t.error.type)
 					} catch (o) {
 						s.c.captureException(o)
 					}
-				}, O = Object(o.a)(c.z), N = Object(o.a)(c.A), j = () => async (e, t, {
+				}, O = Object(o.a)(a.z), N = Object(o.a)(a.A), j = () => async (e, t, {
 					apiContext: r
 				}) => {
 					e(O());
 					try {
-						const t = await Object(a.b)(r());
+						const t = await Object(c.b)(r());
 						if (t.error) throw new Error(t.error.type);
 						const n = t.body.map(e => ({
 							brand: e.brand,
@@ -267,9 +267,9 @@
 			var n = r("./src/lib/classNames/index.ts"),
 				s = r("./node_modules/react/index.js"),
 				o = r.n(s),
-				a = r("./src/reddit/components/ModalStyledComponents/index.tsx"),
-				c = r("./src/reddit/components/Econ/Common/ModalCloseButton/index.m.less"),
-				i = r.n(c);
+				c = r("./src/reddit/components/ModalStyledComponents/index.tsx"),
+				a = r("./src/reddit/components/Econ/Common/ModalCloseButton/index.m.less"),
+				i = r.n(a);
 			const {
 				fbt: l
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), d = ({
@@ -284,7 +284,7 @@
 				"aria-label": l._("Close", null, {
 					hk: "3Qarlp"
 				})
-			}, o.a.createElement(a.b, {
+			}, o.a.createElement(c.b, {
 				className: i.a.closeIcon
 			}))
 		},
@@ -300,14 +300,14 @@
 			var n = r("./src/lib/classNames/index.ts"),
 				s = r("./node_modules/react/index.js"),
 				o = r.n(s),
-				a = r("./src/reddit/components/Econ/PowerupsMarketingModal/Header/index.m.less"),
-				c = r.n(a);
+				c = r("./src/reddit/components/Econ/PowerupsMarketingModal/Header/index.m.less"),
+				a = r.n(c);
 			t.a = e => o.a.createElement("header", {
-				className: Object(n.a)(c.a.container, e.className)
+				className: Object(n.a)(a.a.container, e.className)
 			}, o.a.createElement("h2", {
-				className: c.a.title
+				className: a.a.title
 			}, e.title), o.a.createElement("h3", {
-				className: c.a.subtitle
+				className: a.a.subtitle
 			}, e.subtitle))
 		},
 		"./src/reddit/components/Econ/PowerupsPurchaseModal/PowerupsPurchase/PowerupsPremiumButton/index.m.less": function(e, t, r) {
@@ -377,8 +377,8 @@
 			var n = r("./node_modules/react/index.js"),
 				s = r.n(n),
 				o = r("./node_modules/react-redux/es/index.js"),
-				a = r("./src/reddit/components/PowerupsSidebar/PowerupsBackground.tsx"),
-				c = r("./node_modules/reselect/es/index.js"),
+				c = r("./src/reddit/components/PowerupsSidebar/PowerupsBackground.tsx"),
+				a = r("./node_modules/reselect/es/index.js"),
 				i = r("./src/higherOrderComponents/asModal/index.tsx"),
 				l = r("./src/lib/classNames/index.ts"),
 				d = r("./src/reddit/actions/modal.ts"),
@@ -411,7 +411,7 @@
 				U = r("./src/reddit/controls/LoadingIcon/index.tsx");
 			const {
 				fbt: F
-			} = r("./node_modules/fbt/lib/FbtPublic.js"), L = Object(c.c)({
+			} = r("./node_modules/fbt/lib/FbtPublic.js"), L = Object(a.c)({
 				currentUser: C.k,
 				isAnonymous: O.d,
 				powerupsCount: O.e,
@@ -422,8 +422,8 @@
 						className: t,
 						currentUser: r,
 						isAnonymous: o,
-						powerupsCount: a,
-						productOffer: c,
+						powerupsCount: c,
+						productOffer: a,
 						subredditId: i
 					} = e, l = Object(D.a)();
 					Object(n.useEffect)(() => (window.addEventListener("message", p, !1), () => window.removeEventListener("message", p)), []);
@@ -443,16 +443,16 @@
 						b = () => {
 							l(Object(_.i)({
 								subredditId: i,
-								powerupsCount: a,
+								powerupsCount: c,
 								user: r,
 								isAnonymous: o
 							}))
 						};
 					return s.a.createElement(A.l, {
 						onClick: async () => {
-							if (!c) return;
+							if (!a) return;
 							u(!0);
-							const e = await l(Object(_.h)(c, o, a, B.c.Powerups, i));
+							const e = await l(Object(_.h)(a, o, c, B.c.Powerups, i));
 							if (e) {
 								const {
 									url: t
@@ -480,12 +480,12 @@
 			}) => {
 				const r = Object(o.e)(O.d),
 					n = Object(o.e)(O.c),
-					a = Object(o.e)(O.e),
-					c = Object(o.d)();
+					c = Object(o.e)(O.e),
+					a = Object(o.d)();
 				return s.a.createElement(A.t, {
 					priority: A.c.Primary,
 					onClick: () => {
-						c(Object(E.k)(t, a, r))
+						a(Object(E.k)(t, c, r))
 					},
 					className: Object(l.a)(e, W.a.button),
 					disabled: n
@@ -495,7 +495,7 @@
 				}) : z._({
 					"*": "Apply Your Powerups",
 					_1: "Apply Your Powerup"
-				}, [z._plural(a)], {
+				}, [z._plural(c)], {
 					hk: "4zdKUc"
 				}))
 			};
@@ -508,9 +508,9 @@
 						onChange: r,
 						style: n,
 						value: o,
-						min: a,
-						max: c
-					} = e, i = e => r(Math.max(Math.min(o + e, c || Number.POSITIVE_INFINITY), a || 0)), d = c === a, u = Object(X.a)(o);
+						min: c,
+						max: a
+					} = e, i = e => r(Math.max(Math.min(o + e, a || Number.POSITIVE_INFINITY), c || 0)), d = a === c, u = Object(X.a)(o);
 					return s.a.createElement("div", {
 						className: Object(l.a)(t, V.a.container),
 						style: n
@@ -543,8 +543,8 @@
 						maxCount: o
 					} = e;
 					if (!o) return null;
-					const a = Math.min(o, n) / o,
-						c = Math.min(o, n + (t || 0)) / o;
+					const c = Math.min(o, n) / o,
+						a = Math.min(o, n + (t || 0)) / o;
 					return s.a.createElement("div", {
 						className: r
 					}, s.a.createElement("div", {
@@ -558,13 +558,13 @@
 					}), s.a.createElement("div", {
 						className: Z.a.progress,
 						style: {
-							width: `${100*a}%`
+							width: `${100*c}%`
 						}
 					}), t && s.a.createElement("div", {
 						className: Z.a.additionalProgress,
 						style: {
-							width: `${100*(c-a)}%`,
-							left: `${100*a}%`
+							width: `${100*(a-c)}%`,
+							left: `${100*c}%`
 						}
 					})))
 				},
@@ -576,19 +576,19 @@
 					count: r,
 					maxCount: n,
 					onChange: o,
-					powerups: a
+					powerups: c
 				} = e, {
-					tier: c,
+					tier: a,
 					tiersInfo: i
-				} = a, d = (i[c] || i[c - 1]).powerupsCost;
+				} = c, d = (i[a] || i[a - 1]).powerupsCost;
 				if (!d) return null;
-				const u = Math.min(d, d / 2 + a.count / 2, a.count + (r || 0) / 2) / d;
+				const u = Math.min(d, d / 2 + c.count / 2, c.count + (r || 0) / 2) / d;
 				return s.a.createElement("div", {
 					className: Object(l.a)(t, ee.a.container)
 				}, s.a.createElement($, {
 					additionalCount: r,
 					className: ee.a.bar,
-					count: a.count,
+					count: c.count,
 					maxCount: d
 				}), s.a.createElement(Y, {
 					className: ee.a.count,
@@ -603,7 +603,7 @@
 			};
 			const {
 				fbt: re
-			} = r("./node_modules/fbt/lib/FbtPublic.js"), ne = Object(c.c)({
+			} = r("./node_modules/fbt/lib/FbtPublic.js"), ne = Object(a.c)({
 				isAnonymous: O.d,
 				powerupsCount: O.e,
 				productOffer: N.b,
@@ -614,8 +614,8 @@
 					const {
 						className: t,
 						isAnonymous: r,
-						powerupsCount: a,
-						productOffer: c,
+						powerupsCount: c,
+						productOffer: a,
 						savedCardsPending: i,
 						stripe: l,
 						stripeTokenPending: d,
@@ -623,7 +623,7 @@
 					} = e, m = Object(o.d)(), [p, b] = Object(n.useState)(!1), f = d || i;
 					return s.a.createElement(A.l, {
 						onClick: async () => {
-							l && c && (b(!0), await m(Object(_.k)(l, c, r, a, B.c.Powerups, u)), b(!1))
+							l && a && (b(!0), await m(Object(_.k)(l, a, r, c, B.c.Powerups, u)), b(!1))
 						},
 						className: t,
 						disabled: f || !l || p
@@ -634,11 +634,11 @@
 						hk: "KaR26"
 					}))
 				}))),
-				ae = r("./src/reddit/components/Econ/PowerupsPurchaseModal/PowerupsPurchase/index.m.less"),
-				ce = r.n(ae);
+				ce = r("./src/reddit/components/Econ/PowerupsPurchaseModal/PowerupsPurchase/index.m.less"),
+				ae = r.n(ce);
 			const {
 				fbt: ie
-			} = r("./node_modules/fbt/lib/FbtPublic.js"), le = 100, de = Object(c.c)({
+			} = r("./node_modules/fbt/lib/FbtPublic.js"), le = 100, de = Object(a.c)({
 				isAnonymous: O.d,
 				isNightMode: C.X,
 				paypalErrorMessage: j.d,
@@ -652,8 +652,8 @@
 					const {
 						isAnonymous: t,
 						isNightMode: r,
-						onCloseModal: a,
-						paypalErrorMessage: c,
+						onCloseModal: c,
+						paypalErrorMessage: a,
 						powerups: i,
 						powerupsCount: l,
 						powerupPrice: d,
@@ -664,13 +664,13 @@
 					Object(n.useEffect)(() => {
 						b(Object(_.d)()), b(Object(x.selectPaymentMethod)(O))
 					}, []);
-					const j = Object(h.a)(),
+					const j = Object(h.b)(),
 						C = Object(P.a)();
 					Object(n.useEffect)(() => {
 						C(Object(y.i)())
 					}, []);
 					const D = Object(T.a)();
-					if (!d || !i) return a(), null;
+					if (!d || !i) return c(), null;
 					const B = Object(g.b)(l * d, {
 							locale: j
 						}),
@@ -678,54 +678,54 @@
 					return s.a.createElement(f.StripeProvider, {
 						stripe: D
 					}, s.a.createElement(f.Elements, null, s.a.createElement(s.a.Fragment, null, s.a.createElement(te, {
-						className: ce.a.progressControl,
+						className: ae.a.progressControl,
 						count: l,
 						maxCount: A && p ? p.freeCount : le,
 						onChange: e => b(Object(E.j)(e)),
 						powerups: i
 					}), s.a.createElement("div", {
-						className: ce.a.details
+						className: ae.a.details
 					}, s.a.createElement(S.a, {
-						className: ce.a.anonymousCheckbox,
+						className: ae.a.anonymousCheckbox,
 						isSelected: t,
 						onClick: () => (e => b(Object(E.c)(e)))(!t),
 						text: ie._("Powerup anonymously", null, {
 							hk: "YXX31"
 						})
 					}), !A && s.a.createElement("div", {
-						className: ce.a.purchaseDetails
+						className: ae.a.purchaseDetails
 					}, ie._({
 						"*": "{powerups} Powerups {powerup price} /mo",
 						_1: "1 Powerup {powerup price} /mo"
 					}, [ie._plural(l, "powerups"), ie._param("powerup price", B)], {
 						hk: "3cOqa5"
 					}))), !A && s.a.createElement(s.a.Fragment, null, s.a.createElement("h3", {
-						className: ce.a.paymentMethodTitle
+						className: ae.a.paymentMethodTitle
 					}, ie._("Payment Method", null, {
 						hk: "3EbT3q"
 					})), s.a.createElement(k.a, {
-						className: ce.a.paymentMethodSelector,
+						className: ae.a.paymentMethodSelector,
 						nightmode: r,
 						selectedPayment: O,
 						onPaymentSelected: e => {
 							N(e), b(Object(x.selectPaymentMethod)(e))
 						}
 					}), O === w.Gb && u && s.a.createElement("div", {
-						className: ce.a.errorMessage
-					}, u), O === w.Hb && c && s.a.createElement("div", {
-						className: ce.a.errorMessage
-					}, c), O === w.Gb && s.a.createElement(M.a, {
+						className: ae.a.errorMessage
+					}, u), O === w.Hb && a && s.a.createElement("div", {
+						className: ae.a.errorMessage
+					}, a), O === w.Gb && s.a.createElement(M.a, {
 						nightmode: r,
-						className: ce.a.stripeForm,
+						className: ae.a.stripeForm,
 						shouldDeleteCardWithGql: !0
 					}), O === w.Hb && s.a.createElement(R, {
-						className: ce.a.button,
+						className: ae.a.button,
 						subredditId: m
 					}), O === w.Gb && s.a.createElement(oe, {
-						className: ce.a.button,
+						className: ae.a.button,
 						subredditId: m
 					}), s.a.createElement("p", {
-						className: ce.a.description
+						className: ae.a.description
 					}, ie._("By completing your purchase, you are agreeing to automatic payments for Powerups and Reddit's {=User Agreement}, {=Privacy Policy}, and {previews terms of use}. Your Powerups subscription will auto-renew monthly for {powerup price} (plus tax where applicable). Cancel anytime in {=User Settings}. Cancel at least 24 hours before your subscription ends to avoid getting charged for the next month. No partial refunds.", [ie._param("=User Agreement", s.a.createElement("a", {
 						href: "https://www.redditinc.com/policies/user-agreement",
 						target: "_blank",
@@ -746,15 +746,15 @@
 					})))], {
 						hk: "NLnVj"
 					}))), A && s.a.createElement(s.a.Fragment, null, s.a.createElement("div", {
-						className: ce.a.premiumDescription
+						className: ae.a.premiumDescription
 					}, s.a.createElement("div", {
-						className: ce.a.premiumIconWrapper
+						className: ae.a.premiumIconWrapper
 					}, s.a.createElement(I.a, {
-						className: ce.a.premiumIcon
+						className: ae.a.premiumIcon
 					})), s.a.createElement("span", null, ie._("Premium gives you one monthly Powerup", null, {
 						hk: "2cKV1a"
 					}))), s.a.createElement(K, {
-						className: ce.a.button,
+						className: ae.a.button,
 						subredditId: m
 					})))))
 				})),
@@ -772,7 +772,7 @@
 			}
 			const {
 				fbt: fe
-			} = r("./node_modules/fbt/lib/FbtPublic.js"), he = Object(b.u)(), Pe = Object(c.c)({
+			} = r("./node_modules/fbt/lib/FbtPublic.js"), he = Object(b.u)(), Pe = Object(a.c)({
 				currentSubreddit: b.r
 			}), we = Object(o.b)(Pe);
 			const ge = Object(i.a)(he(we((function(e) {
@@ -793,8 +793,8 @@
 				}), s.a.createElement(u.a, {
 					onClick: n,
 					highContrast: !0
-				}), s.a.createElement(a.a, {
-					space: a.b.MODAL
+				}), s.a.createElement(c.a, {
+					space: c.b.MODAL
 				})) : (n(), null)
 			}))));
 			t.default = e => s.a.createElement(ge, be({}, e, {
@@ -804,7 +804,7 @@
 		"./src/reddit/components/Econ/PreviewsTermsOfUseLink/index.tsx": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
-				return a
+				return c
 			}));
 			var n = r("./node_modules/react/index.js"),
 				s = r.n(n);
@@ -812,7 +812,7 @@
 				fbt: o
 			} = r("./node_modules/fbt/lib/FbtPublic.js");
 
-			function a({
+			function c({
 				className: e
 			}) {
 				return s.a.createElement("a", {
@@ -850,8 +850,8 @@
 			}));
 			var n, s = r("./src/config.ts"),
 				o = r("./src/lib/classNames/index.ts"),
-				a = r("./node_modules/react/index.js"),
-				c = r.n(a),
+				c = r("./node_modules/react/index.js"),
+				a = r.n(c),
 				i = r("./node_modules/react-redux/es/index.js"),
 				l = r("./src/reddit/selectors/user.ts"),
 				d = r("./src/reddit/components/PowerupsSidebar/PowerupsBackground.m.less"),
@@ -864,32 +864,32 @@
 			}) => {
 				const t = Object(i.e)(l.X),
 					r = e === n.MODAL,
-					a = e === n.INFEED_UNIT;
-				return c.a.createElement("div", {
+					c = e === n.INFEED_UNIT;
+				return a.a.createElement("div", {
 					className: Object(o.a)(u.a.background, {
 						[u.a.isNightmodeOn]: t,
 						[u.a.isModal]: r,
-						[u.a.isInFeedUnit]: a
+						[u.a.isInFeedUnit]: c
 					})
-				}, c.a.createElement("div", {
+				}, a.a.createElement("div", {
 					className: u.a.colorBlockCorner
-				}), c.a.createElement("div", {
+				}), a.a.createElement("div", {
 					className: u.a.colorBlockThrough
-				}), c.a.createElement("div", {
+				}), a.a.createElement("div", {
 					className: u.a.circleStriped,
 					style: {
 						backgroundImage: t ? `url(${s.a.assetPath}/img/powerups/linecircle-lightblue.png)` : `url(${s.a.assetPath}/img/powerups/linecircle-blue.png)`
 					}
-				}), c.a.createElement("div", {
+				}), a.a.createElement("div", {
 					className: u.a.circleOrangeHollow
-				}), c.a.createElement("div", {
+				}), a.a.createElement("div", {
 					className: u.a.circleDotted,
 					style: {
 						backgroundImage: `url(${s.a.assetPath}/img/powerups/dotcircle.png)`
 					}
-				}), c.a.createElement("div", {
+				}), a.a.createElement("div", {
 					className: u.a.circleGreenHollow
-				}), c.a.createElement("div", {
+				}), a.a.createElement("div", {
 					className: u.a.circleYellowHollow
 				}))
 			}
@@ -906,13 +906,13 @@
 			var n = r("./src/config.ts"),
 				s = r("./node_modules/fbt/lib/FbtPublic.js"),
 				o = r("./src/reddit/icons/svgs/PowerupTier1/index.tsx"),
-				a = r("./src/reddit/icons/svgs/PowerupTier2/index.tsx"),
-				c = r("./src/reddit/icons/svgs/PowerupTier3/index.tsx");
+				c = r("./src/reddit/icons/svgs/PowerupTier2/index.tsx"),
+				a = r("./src/reddit/icons/svgs/PowerupTier3/index.tsx");
 			const i = 2,
 				l = 3;
 
 			function d(e) {
-				return e >= l ? c.a : e >= i ? a.a : o.a
+				return e >= l ? a.a : e >= i ? c.a : o.a
 			}
 
 			function u(e) {
@@ -943,15 +943,15 @@
 			var n = r("./node_modules/react/index.js"),
 				s = r.n(n),
 				o = r("./src/lib/classNames/index.ts"),
-				a = r("./src/reddit/controls/LoadingIcon/index.m.less"),
-				c = r.n(a);
+				c = r("./src/reddit/controls/LoadingIcon/index.m.less"),
+				a = r.n(c);
 			t.a = ({
 				center: e,
 				className: t,
 				sizePx: r = 10
 			}) => s.a.createElement("div", {
-				className: Object(o.a)(c.a.loadingIcon, t, {
-					[c.a.mCentered]: e
+				className: Object(o.a)(a.a.loadingIcon, t, {
+					[a.a.mCentered]: e
 				}),
 				style: {
 					"--sizePx": `${r}px`
@@ -964,9 +964,9 @@
 			r.d(t, "b", (function() {
 				return o
 			})), r.d(t, "c", (function() {
-				return a
-			})), r.d(t, "a", (function() {
 				return c
+			})), r.d(t, "a", (function() {
+				return a
 			}));
 			var n = r("./node_modules/bignumber.js/bignumber.js"),
 				s = r("./src/lib/prettyPrintNumber/index.ts");
@@ -977,11 +977,11 @@
 				return r.dividedToIntegerBy(s).toString()
 			}
 
-			function a(e, t) {
+			function c(e, t) {
 				return Object(s.b)(parseInt(o(e, t), 10))
 			}
 
-			function c(e, t) {
+			function a(e, t) {
 				const r = new n.BigNumber(e),
 					s = new n.BigNumber(t || 1);
 				return r.multipliedBy(s).toFixed(0)
@@ -1000,4 +1000,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.67ce1d6227dce874920b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.627289e2963921de5df3.js.map

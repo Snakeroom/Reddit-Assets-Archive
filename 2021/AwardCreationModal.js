@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AwardCreationModal.abbd0f8eb182d80830e3.js
-// Retrieved at 10/28/2021, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AwardCreationModal.2ed90c5c7e10419c9f5b.js
+// Retrieved at 12/1/2021, 12:30:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AwardCreationModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, a) {
@@ -2204,4 +2204,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AwardCreationModal.abbd0f8eb182d80830e3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AwardCreationModal.2ed90c5c7e10419c9f5b.js.map

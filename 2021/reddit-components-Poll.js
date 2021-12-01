@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Poll.c62ace78141ae74e38e4.js
-// Retrieved at 11/17/2021, 8:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Poll.76962744549b40b3f18d.js
+// Retrieved at 12/1/2021, 12:30:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Poll"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, n) {
@@ -282,7 +282,7 @@
 			})), n.d(t, "f", (function() {
 				return P
 			})), n.d(t, "g", (function() {
-				return A
+				return w
 			})), n.d(t, "d", (function() {
 				return k
 			})), n.d(t, "e", (function() {
@@ -320,8 +320,8 @@
 				S = Object(s.a)(h.t),
 				R = Object(s.a)(h.u),
 				L = Object(s.a)(h.v),
-				w = Object(s.a)(h.w),
-				A = Object(s.a)(h.x),
+				A = Object(s.a)(h.w),
+				w = Object(s.a)(h.x),
 				k = (e, t) => async (n, r, {
 					apiContext: s,
 					gqlContext: o
@@ -403,7 +403,7 @@
 				}) => {
 					t(L());
 					const s = await Object(b.a)(r(), e);
-					s.ok ? t(w(s.body)) : t(R({
+					s.ok ? t(A(s.body)) : t(R({
 						error: s.error
 					}))
 				}
@@ -764,8 +764,8 @@
 			}
 			var R = n("./src/reddit/actions/governance/index.ts"),
 				L = n("./src/reddit/components/TrackingHelper/index.tsx"),
-				w = n("./src/reddit/contexts/PageLayer/index.tsx"),
-				A = n("./src/reddit/helpers/trackers/post.ts"),
+				A = n("./src/reddit/contexts/PageLayer/index.tsx"),
+				w = n("./src/reddit/helpers/trackers/post.ts"),
 				k = n("./src/reddit/selectors/crypto/points.ts"),
 				D = n("./src/reddit/components/Poll/PollExpiry/index.tsx"),
 				V = n("./src/reddit/components/Poll/PollBody/ClosedPoll/index.m.less"),
@@ -827,7 +827,7 @@
 								for (const t of e)
 									if (t.checked) return parseInt(t.value)
 							}(Array.from(n.elements).filter(z));
-						U()(r) || (this.props.onVoteSelection(t.options[r]), this.props.sendEvent(Object(A.h)(t.id, t.postId, r)))
+						U()(r) || (this.props.onVoteSelection(t.options[r]), this.props.sendEvent(Object(w.h)(t.id, t.postId, r)))
 					}
 				}
 				render() {
@@ -881,7 +881,7 @@
 							poll: e,
 							sendEvent: t
 						} = this.props;
-						e && t(Object(A.g)(e.id, e.postId))
+						e && t(Object(w.g)(e.id, e.postId))
 					}
 				}
 				componentDidMount() {
@@ -929,8 +929,8 @@
 				result: (e, t) => e.polls.results[t.resultType][t.pollId],
 				voteInProgress: (e, t) => !!e.polls.api.voting.pending[t.pollId]
 			});
-			var ne = Object(w.u)({
-					isCommentsPage: w.x
+			var ne = Object(A.u)({
+					isCommentsPage: A.x
 				})(Object(a.b)(te, (e, t) => ({
 					onVoteSelection: n => e(Object(R.d)(t.pollId, n.id))
 				}))(Object(L.c)(ee))),
@@ -1442,16 +1442,25 @@
 		},
 		"./src/reddit/hooks/useLocale.ts": function(e, t, n) {
 			"use strict";
+			n.d(t, "b", (function() {
+				return c
+			}));
 			var r = n("./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js"),
 				s = n("./node_modules/@reddit/i18n-tools/runtime/helpers/locale/constants.js"),
 				o = n("./node_modules/react-redux/es/index.js"),
 				i = n("./src/reddit/selectors/meta.ts");
-			t.a = "undefined" == typeof document ? function() {
+			const a = "undefined" == typeof document ? function() {
 				const e = Object(o.e)(i.i) || s.DEFAULT_LOCALE;
 				return Object(r.isPseudoLocale)(e) ? s.DEFAULT_LOCALE : e
 			} : function() {
 				const e = document.documentElement.lang || s.DEFAULT_LOCALE;
 				return Object(r.isPseudoLocale)(e) ? s.DEFAULT_LOCALE : e
+			};
+			t.a = a;
+			const c = () => {
+				const e = a(),
+					t = Object(o.e)(i.b);
+				return t ? e.replace(/([a-z]+-)([A-Z]+)/, `$1${t}`) : e
 			}
 		},
 		"./src/reddit/icons/svgs/CircleCheck/index.tsx": function(e, t, n) {
@@ -1711,4 +1720,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Poll.c62ace78141ae74e38e4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Poll.76962744549b40b3f18d.js.map

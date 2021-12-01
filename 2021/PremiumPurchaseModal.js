@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.ef09f2d831851d65ac89.js
-// Retrieved at 11/15/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.c9fe0c7f46a6a7526142.js
+// Retrieved at 12/1/2021, 12:30:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PremiumPurchaseModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, r) {
@@ -529,7 +529,7 @@
 							c ? r(Object(E.h)(N.a.ECON_POWERUPS_PURCHASE)) : e()
 						},
 						buttonText: c ? C.fbt._("Use Your Premium Powerup", null, {
-							hk: "JJNaN"
+							hk: "1r0NDt"
 						}) : null
 					}))
 				},
@@ -659,7 +659,7 @@
 			})));
 			var te = e => {
 				const t = Object(Z.a)(),
-					r = Object(J.a)(),
+					r = Object(J.b)(),
 					n = Object(B.b)(e.total, {
 						locale: r,
 						type: F.b.Real
@@ -1116,4 +1116,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.ef09f2d831851d65ac89.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.c9fe0c7f46a6a7526142.js.map

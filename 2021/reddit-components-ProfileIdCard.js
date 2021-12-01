@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.15439c0bfa0aac80c74b.js
-// Retrieved at 12/1/2021, 11:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.1c4af356cd50cfe3871f.js
+// Retrieved at 12/1/2021, 12:30:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ProfileIdCard"], {
 		"./node_modules/lodash/compact.js": function(e, t) {
@@ -3039,16 +3039,25 @@
 		},
 		"./src/reddit/hooks/useLocale.ts": function(e, t, r) {
 			"use strict";
+			r.d(t, "b", (function() {
+				return c
+			}));
 			var n = r("./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js"),
 				s = r("./node_modules/@reddit/i18n-tools/runtime/helpers/locale/constants.js"),
 				o = r("./node_modules/react-redux/es/index.js"),
 				a = r("./src/reddit/selectors/meta.ts");
-			t.a = "undefined" == typeof document ? function() {
+			const i = "undefined" == typeof document ? function() {
 				const e = Object(o.e)(a.i) || s.DEFAULT_LOCALE;
 				return Object(n.isPseudoLocale)(e) ? s.DEFAULT_LOCALE : e
 			} : function() {
 				const e = document.documentElement.lang || s.DEFAULT_LOCALE;
 				return Object(n.isPseudoLocale)(e) ? s.DEFAULT_LOCALE : e
+			};
+			t.a = i;
+			const c = () => {
+				const e = i(),
+					t = Object(o.e)(a.b);
+				return t ? e.replace(/([a-z]+-)([A-Z]+)/, `$1${t}`) : e
 			}
 		},
 		"./src/reddit/icons/svgs/Admin/index.m.less": function(e, t, r) {
@@ -3286,4 +3295,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.15439c0bfa0aac80c74b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.1c4af356cd50cfe3871f.js.map
