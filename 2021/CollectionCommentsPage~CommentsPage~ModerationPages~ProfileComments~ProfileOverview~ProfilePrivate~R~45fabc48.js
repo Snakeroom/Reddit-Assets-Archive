@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.f02b2cce72b65563268a.js
-// Retrieved at 12/1/2021, 5:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.fdb5e7bb182ad2241757.js
+// Retrieved at 12/1/2021, 6:50:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48"], {
 		"./src/reddit/actions/eventPosts/index.ts": function(e, t, s) {
@@ -1028,7 +1028,7 @@
 					postId: y,
 					isCommentCountAnimation: P,
 					isCountAnimShadowTestEnabled: S
-				} = e, N = c && !i && !m, M = i && !p, F = Object(C.a)(), R = Object(O.a)(h.jd) === h.od.Enabled, A = r.a.createElement(T, {
+				} = e, N = c && !i && !m, M = i && !p, F = Object(C.a)(), R = Object(O.a)(h.kd) === h.pd.Enabled, A = r.a.createElement(T, {
 					hasModPostPerms: s,
 					isCountAnimShadowTestEnabled: !!S,
 					isChatPost: n,
@@ -4709,11 +4709,11 @@
 			const a = Object(o.a)(e => Object(r.c)(e, {
 				experimentEligibilitySelector: i.K,
 				experimentName: n.Qb
-			}), e => e === n.Zc)
+			}), e => e === n.ad)
 		},
 		"./src/redditGQL/operations/EventPostsBySubredditName.json": function(e) {
 			e.exports = JSON.parse('{"id":"130b521ac04e"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.f02b2cce72b65563268a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.fdb5e7bb182ad2241757.js.map

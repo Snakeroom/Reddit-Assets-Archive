@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.b700579d331732bd9442.js
-// Retrieved at 11/15/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.ee90c9d199d3d9cd1cbf.js
+// Retrieved at 12/1/2021, 6:50:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments~ProfileOverview~ProfilePrivate"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -97,15 +97,15 @@
 				V = s("./src/reddit/components/ClassicPost/Thumbnail.tsx"),
 				z = s("./src/reddit/connectors/ClassicPost/index.tsx"),
 				H = s("./src/reddit/connectors/ClassicPost/searchResults.tsx"),
-				K = s("./src/reddit/constants/postLayout.ts"),
-				q = s("./src/reddit/contexts/Post/index.tsx"),
+				q = s("./src/reddit/constants/postLayout.ts"),
+				K = s("./src/reddit/contexts/Post/index.tsx"),
 				$ = s("./src/reddit/helpers/hasModFlairPermissions/index.ts"),
 				G = s("./src/reddit/helpers/hasModFullPermissions/index.ts"),
 				Z = s("./src/reddit/helpers/hasModPostPermissions/index.ts"),
-				Y = s("./src/reddit/helpers/search/renderMedia.tsx"),
-				J = s("./src/reddit/helpers/styles/mixins/index.tsx"),
-				Q = s("./src/reddit/helpers/styles/mixins/index.m.less"),
-				X = s.n(Q),
+				J = s("./src/reddit/helpers/search/renderMedia.tsx"),
+				Q = s("./src/reddit/helpers/styles/mixins/index.tsx"),
+				Y = s("./src/reddit/helpers/styles/mixins/index.m.less"),
+				X = s.n(Y),
 				ee = s("./src/reddit/components/ClassicPost/index.m.less"),
 				te = s.n(ee);
 
@@ -133,8 +133,8 @@
 						hostPostData: E,
 						isCheckboxSelected: z,
 						isCurrentUserProfilePost: H,
-						isFrontpage: q,
-						isGalleryTileLayoutDefault: Q,
+						isFrontpage: K,
+						isGalleryTileLayoutDefault: Y,
 						isLoggedIn: ee,
 						isOverlay: ne,
 						imageGalleryCurrentItem: oe,
@@ -180,7 +180,7 @@
 							inSubredditOrProfile: b,
 							isCurrentUserProfilePost: H,
 							isOverlay: ne,
-							shouldShowSubscribeButton: !(q && ee) || Fe && ee,
+							shouldShowSubscribeButton: !(K && ee) || Fe && ee,
 							subredditOrProfile: ge
 						},
 						We = Object(r.t)(pe, oe),
@@ -196,15 +196,15 @@
 						templatePlaceholderImage: je && je.postPlaceholderImage,
 						removeLink: Ae
 					});
-					Object(B.a)(pe) && (Ue = o.a.createElement(y, {
+					Object(B.b)(pe) && (Ue = o.a.createElement(y, {
 						post: pe
 					}));
 					const Ve = o.a.createElement(L.a, {
-						className: Object(i.a)(X.a.classicPostStyles, te.a.postContainer, Object(J.a)(e), f ? te.a.mFirst : void 0, t),
+						className: Object(i.a)(X.a.classicPostStyles, te.a.postContainer, Object(Q.a)(e), f ? te.a.mFirst : void 0, t),
 						isOverlay: ne,
 						style: {
-							...Object(J.d)(e),
-							...Object(J.b)(je)
+							...Object(Q.d)(e),
+							...Object(Q.b)(je)
 						},
 						post: pe,
 						onClick: ae,
@@ -241,7 +241,7 @@
 						"data-click-id": "body"
 					}, !!pe.recommendationContext && o.a.createElement(M.a, {
 						content: pe.recommendationContext.content,
-						layout: K.g.Classic,
+						layout: q.g.Classic,
 						post: pe
 					}), o.a.createElement(A.c, {
 						className: me ? te.a.titleWithPoll : void 0,
@@ -305,10 +305,10 @@
 							hide: !Me,
 							report: !Me
 						})
-					})), o.a.createElement(j.d, null))), Object(Y.a)(pe, te.a, be, h, Ce, Q)));
+					})), o.a.createElement(j.d, null))), Object(J.a)(pe, te.a, be, h, Ce, Y)));
 					return o.a.createElement(D.b, null, Ve)
 				}),
-				oe = Object(q.b)(Object(H.a)(ne));
+				oe = Object(K.b)(Object(H.a)(ne));
 			t.default = Object(z.a)(ne)
 		},
 		"./src/reddit/components/CommentBodyExpander/index.m.less": function(e, t, s) {
@@ -499,14 +499,14 @@
 				V = s("./src/reddit/helpers/correlationIdTracker.ts"),
 				z = s("./src/reddit/helpers/hasModPostPermissions/index.ts"),
 				H = s("./src/reddit/helpers/overlay/index.ts"),
-				K = s("./src/reddit/helpers/trackers/lightbox.ts"),
-				q = s("./src/reddit/models/PostDraft/index.ts"),
+				q = s("./src/reddit/helpers/trackers/lightbox.ts"),
+				K = s("./src/reddit/models/PostDraft/index.ts"),
 				$ = s("./src/reddit/selectors/activeModalId.ts"),
 				G = s("./src/reddit/selectors/comments.ts"),
 				Z = s("./src/reddit/selectors/moderatorPermissions.ts"),
-				Y = s("./src/reddit/selectors/posts.ts"),
-				J = s("./src/reddit/selectors/tooltip.ts"),
-				Q = s("./src/reddit/selectors/experiments/reportingRevampDesktop.ts"),
+				J = s("./src/reddit/selectors/posts.ts"),
+				Q = s("./src/reddit/selectors/tooltip.ts"),
+				Y = s("./src/reddit/selectors/experiments/reportingRevampDesktop.ts"),
 				X = s("./src/reddit/selectors/user.ts"),
 				ee = s("./src/reddit/components/OverflowMenu/index.tsx"),
 				te = s("./src/reddit/components/ReportFlow/index.tsx"),
@@ -537,7 +537,7 @@
 				Pe = (e, t) => `${e}--${t}-overflow-menu`,
 				we = e => `View--Reports--${e}`,
 				ke = Object(i.c)({
-					activeTooltipId: J.a,
+					activeTooltipId: Q.a,
 					isConfirmModalOpen: (e, {
 						comment: t
 					}) => Object($.a)(e) === _e(t.id),
@@ -556,7 +556,7 @@
 					modModeEnabled: U.S,
 					postIsLocked: (e, {
 						comment: t
-					}) => Object(Y.C)(e, {
+					}) => Object(J.C)(e, {
 						postId: t.postId
 					}),
 					commentPermalink: (e, {
@@ -573,10 +573,10 @@
 					subreddit: U.r,
 					subredditOrProfile: (e, {
 						comment: t
-					}) => Object(Y.U)(e, {
+					}) => Object(J.U)(e, {
 						postId: t.postId
 					}),
-					reportingRevampEnabled: Q.a
+					reportingRevampEnabled: Y.a
 				});
 			class Ie extends o.a.PureComponent {
 				constructor() {
@@ -595,7 +595,7 @@
 						this.props.onToggleReportsDropdown(), this.sendCommentModEventWithName("comment_report_menu")
 					}, this.handleSave = () => {
 						this.props.comment.isSaved ? this.props.sendEvent(Object(ie.a)("unsave", this.props.comment.id)) : this.props.sendEvent(Object(ie.a)("save", this.props.comment.id)), this.props.onToggleSave()
-					}, this.sendCommentDistinguishEvent = e => this.props.sendEvent(Object(ie.b)(e, this.props.comment.id)), this.sendCommentEventWithName = e => this.props.sendEvent(Object(K.b)(this.props.comment.postId, `comment_${e}`)), this.sendCommentEventWithNameShare = () => this.sendCommentEventWithName("share"), this.sendCommentModEventWithName = e => this.props.sendEvent(Object(ie.a)(e, this.props.comment.id)), this.sendCommentReportEvent = e => this.props.sendEvent(Object(ie.e)(e, this.props.comment.id)), this.renderReportFlow = () => this.props.reportingRevampEnabled ? o.a.createElement(se.a, {
+					}, this.sendCommentDistinguishEvent = e => this.props.sendEvent(Object(ie.b)(e, this.props.comment.id)), this.sendCommentEventWithName = e => this.props.sendEvent(Object(q.b)(this.props.comment.postId, `comment_${e}`)), this.sendCommentEventWithNameShare = () => this.sendCommentEventWithName("share"), this.sendCommentModEventWithName = e => this.props.sendEvent(Object(ie.a)(e, this.props.comment.id)), this.sendCommentReportEvent = e => this.props.sendEvent(Object(ie.e)(e, this.props.comment.id)), this.renderReportFlow = () => this.props.reportingRevampEnabled ? o.a.createElement(se.a, {
 						withOverlay: !0,
 						commentId: this.props.comment.id,
 						overlayCustomStyles: te.b,
@@ -790,7 +790,7 @@
 						const n = Object(O.a)(t.postId, t.id, {}),
 							o = {
 								commentId: t.id,
-								draftKey: Object(_.a)(q.c.edit, t.id),
+								draftKey: Object(_.a)(K.c.edit, t.id),
 								text: t.bodyMD || "",
 								commentMode: t.media && t.media.rteMode,
 								commentsPageKey: n
@@ -958,30 +958,6 @@
 				offset: "0.989583",
 				stopColor: "#FFAB39"
 			}))))
-		},
-		"./src/reddit/components/Econ/Audio/index.m.less": function(e, t, s) {
-			e.exports = {
-				liveContainer: "reBgd-KYxGiWr_ZyzPgr_",
-				userRow: "poHPrsWD-JtPCRh7foOm-",
-				isListener: "_3DcaFqbAKhkVLYT6i2vxLy",
-				listener: "_3fwbxY1I7EhKfr8MK7xT0S",
-				speaker: "_1zEocOo_0euorSuKdx4-t2",
-				snoovatar: "_23HWId-tu5O6LulDxLoVD1",
-				userIcon: "Xzl_H3G7Qyd756Y0rQz4w",
-				classic: "_2XdJHCLvUWJ2gdGBnugD5t",
-				muteContainer: "_3mxKqH41iEa2lxIov7Eup-",
-				muteIcon: "_18bneLE5nnOdUrY8P-eepo",
-				fullRow: "_2cJzNEK-EGk9V7LDTIEFb-",
-				endedContainer: "_21e_ZHJXEi7zMZ6XWWBz",
-				speakerRings: "_1XlH7yy1d0pGBQ0hDDAaDv",
-				fadein: "gReZnzbKn95aY9xCmFx8M",
-				reverb: "_3ZoXC3S9OH5sdTAi4tFt7Z",
-				fadeout: "_3os88AwHIpr1NBABjT_1zz",
-				nightMode: "z6LY0qX0g0puWE-RPF8XB",
-				liveClassicContainer: "_3JLTqaLlFv8aPfzi9eQazu",
-				classicSpeaker: "QsNKjj4EDQH2hYFYQB6T4",
-				endedClassicContainer: "_2YXJIDv8TLzRj5vNdYs-_t"
-			}
 		},
 		"./src/reddit/components/EmptyProfile/EmptyListing.m.less": function(e, t, s) {
 			e.exports = {
@@ -2812,4 +2788,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.b700579d331732bd9442.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.ee90c9d199d3d9cd1cbf.js.map

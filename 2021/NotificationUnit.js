@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NotificationUnit.cf09b01e7b4d9d851fd2.js
-// Retrieved at 12/1/2021, 5:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationUnit.287a31e23bc6ebd554ca.js
+// Retrieved at 12/1/2021, 6:50:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationUnit"], {
 		"./src/reddit/components/NotificationUnit/Avatar.tsx": function(e, t, i) {
@@ -411,7 +411,7 @@
 						F = Object(E.e)(g.b),
 						B = Object(E.e)(g.c),
 						V = Object(E.e)(g.a),
-						[z, W] = Object(o.useState)(!1),
+						[W, z] = Object(o.useState)(!1),
 						{
 							activeOverflowMenuId: Y,
 							isInboxPostEmbedEnabled: Z,
@@ -551,7 +551,7 @@
 						tooltipId: xe
 					}), s.a.createElement(a.a, {
 						onChange: e => {
-							e.isIntersecting && !z && (P(Object(b.q)(he)), W(!0))
+							e.isIntersecting && !W && (P(Object(b.q)(he)), z(!0))
 						},
 						rootMargin: "0px 0px 0px 0px",
 						threshold: U
@@ -727,13 +727,13 @@
 				r = i("./src/reddit/selectors/user.ts");
 			const l = e => Object(r.J)(e) || Object(r.K)(e),
 				d = Object(n.a)(e => Object(o.c)(e, {
-					experimentName: a.wd,
+					experimentName: a.xd,
 					experimentEligibilitySelector: l
 				}), s.a),
-				c = Object(n.a)(d, e => e === a.zd.SeePostCTAs),
-				m = Object(n.a)(d, e => e === a.zd.ReplyCTAs),
-				u = Object(n.a)(d, e => e === a.zd.AllCTAs)
+				c = Object(n.a)(d, e => e === a.Ad.SeePostCTAs),
+				m = Object(n.a)(d, e => e === a.Ad.ReplyCTAs),
+				u = Object(n.a)(d, e => e === a.Ad.AllCTAs)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationUnit.cf09b01e7b4d9d851fd2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationUnit.287a31e23bc6ebd554ca.js.map

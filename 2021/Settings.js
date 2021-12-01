@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.711eab2735c3a047c11d.js
-// Retrieved at 12/1/2021, 5:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.e7bf191ecbaab68bbf98.js
+// Retrieved at 12/1/2021, 6:50:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, n) {
@@ -14167,7 +14167,7 @@
 			const a = e => Object(o.c)(e, {
 				experimentName: r.D,
 				experimentEligibilitySelector: () => Object(s.J)(e)
-			}) === r.Zc
+			}) === r.ad
 		},
 		"./src/reddit/selectors/gold/productOffers.ts": function(e, t, n) {
 			"use strict";
@@ -14321,4 +14321,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.711eab2735c3a047c11d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.e7bf191ecbaab68bbf98.js.map

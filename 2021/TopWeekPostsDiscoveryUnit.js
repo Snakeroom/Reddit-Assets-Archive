@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.09d2a8b9f501c6e7e77f.js
-// Retrieved at 12/1/2021, 5:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.d69ce8466db37c8a1e79.js
+// Retrieved at 12/1/2021, 6:50:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["TopWeekPostsDiscoveryUnit"], {
 		"./src/lib/getShortenedLink.ts": function(e, t, s) {
@@ -368,30 +368,30 @@
 				k = s("./src/reddit/components/Widgets/CommunityList/helpers.ts"),
 				_ = s("./src/reddit/hooks/useClickSourceData.ts"),
 				O = s("./src/reddit/layout/row/Inline/index.tsx"),
-				j = s("./src/reddit/components/DiscoveryUnit/PostAuthor/index.m.less"),
-				N = s.n(j);
+				N = s("./src/reddit/components/DiscoveryUnit/PostAuthor/index.m.less"),
+				j = s.n(N);
 			var S = e => {
 					const t = E.a.PROFILE,
 						s = Object(k.a)(e.author, t),
 						a = Object(_.a)();
 					return r.a.createElement("div", {
-						className: Object(c.a)(N.a.container, e.className)
+						className: Object(c.a)(j.a.container, e.className)
 					}, r.a.createElement(O.a, {
-						className: N.a.layout
+						className: j.a.layout
 					}, r.a.createElement("div", {
-						className: N.a.textContainer
+						className: j.a.textContainer
 					}, r.a.createElement("span", {
-						className: N.a.description
+						className: j.a.description
 					}, x.fbt._("posted by", null, {
 						hk: "wl0iP"
 					})), r.a.createElement(y.a, {
-						className: N.a.authorName,
+						className: j.a.authorName,
 						to: {
 							pathname: s,
 							state: a
 						}
 					}, Object(k.b)(e.author, t)), r.a.createElement("span", {
-						className: N.a.timestamp
+						className: j.a.timestamp
 					}, r.a.createElement(P.d, {
 						seconds: e.created / v.Rb
 					})))))
@@ -505,9 +505,9 @@
 					}, _), O = !0) : P && P.content && Object(Q.a)(p) && (_ = r.a.createElement("div", {
 						className: ee.a.textWrapper
 					}, _)));
-					const j = !O && !k;
-					let N;
-					return v && (N = Object(K.h)(v) ? Object(q.b)(v) : Object(q.c)(v)), r.a.createElement(R.a, {
+					const N = !O && !k;
+					let j;
+					return v && (j = Object(K.h)(v) ? Object(q.b)(v) : Object(q.c)(v)), r.a.createElement(R.a, {
 						className: Object(c.a)(ee.a.container, X.a.largeAndMediumActiveStyles, X.a.largeAndMediumPostStyles, Z.a.postContainer, Object(z.a)(this.props), s),
 						post: p,
 						onClick: u,
@@ -525,11 +525,11 @@
 						className: Object(c.a)(ee.a.innerContainer, Z.a.innerContainer)
 					}, E && v && r.a.createElement(M, te({
 						created: p.created
-					}, N)), C && v && r.a.createElement(S, te({
+					}, j)), C && v && r.a.createElement(S, te({
 						created: p.created,
 						author: p.author
-					}, N)), r.a.createElement(U.c, {
-						className: j ? ee.a.postTitle : ee.a.postTitleCompact,
+					}, j)), r.a.createElement(U.c, {
+						className: N ? ee.a.postTitle : ee.a.postTitleCompact,
 						disableFlair: !0,
 						hideSourceLink: !0,
 						post: p,
@@ -687,8 +687,8 @@
 					damping: 30
 				},
 				Oe = 100,
-				je = "post_carousel_item",
-				Ne = ({
+				Ne = "post_carousel_item",
+				je = ({
 					root: e,
 					handleVisibilityChange: t,
 					renderPost: s,
@@ -741,8 +741,8 @@
 							renderPost: a,
 							singleSubredditMode: n
 						} = this.props;
-						return r.a.createElement(Ne, {
-							"data-click-id": je,
+						return r.a.createElement(je, {
+							"data-click-id": Ne,
 							className: ve.a.largePost,
 							eventFactory: this.itemPostClickEventFactory,
 							forceLoadMedia: !0,
@@ -913,8 +913,8 @@
 				k = s("./src/reddit/components/Media/index.tsx"),
 				_ = s("./src/reddit/components/MiniCardPost/Thumbnail/index.tsx"),
 				O = s("./src/reddit/components/PostTitle/index.tsx"),
-				j = s("./src/reddit/helpers/canPreviewSelfText/index.ts"),
-				N = s("./src/reddit/helpers/getRichTextContent/index.ts"),
+				N = s("./src/reddit/helpers/canPreviewSelfText/index.ts"),
+				j = s("./src/reddit/helpers/getRichTextContent/index.ts"),
 				S = s("./src/reddit/helpers/postHasSelfText/index.ts"),
 				w = s("./src/reddit/models/Media/index.ts"),
 				I = s("./src/reddit/components/MiniCardPost/index.m.less"),
@@ -974,7 +974,7 @@
 						className: M.a.flexSpacer
 					}), n.a.createElement("div", {
 						className: M.a.mediaWrapper
-					}, p))) : b = Object(S.a)(l) || Object(N.c)(l) && Object(j.a)(l) ? n.a.createElement("div", {
+					}, p))) : b = Object(S.a)(l) || Object(j.c)(l) && Object(N.a)(l) ? n.a.createElement("div", {
 						className: M.a.textWrapper
 					}, p) : n.a.createElement("div", {
 						className: M.a.flexSpacer
@@ -1514,8 +1514,8 @@
 				k = s("./src/lib/getShortenedLink.ts"),
 				_ = s("./src/reddit/components/FlairWrapper/index.tsx"),
 				O = s("./node_modules/fbt/lib/FbtPublic.js"),
-				j = s("./src/lib/prettyPrintNumber/index.ts"),
-				N = s("./src/reddit/components/Poll/PollExpiry/index.tsx"),
+				N = s("./src/lib/prettyPrintNumber/index.ts"),
+				j = s("./src/reddit/components/Poll/PollExpiry/index.tsx"),
 				S = s("./src/reddit/components/Poll/PostTitleMetaData/index.m.less"),
 				w = s.n(S);
 			const I = Object(c.c)({
@@ -1532,9 +1532,9 @@
 					}, r.a.createElement("span", null, O.fbt._({
 						"*": "{count} votes",
 						_1: "{count} vote"
-					}, [O.fbt._param("count", Object(j.a)(a)), O.fbt._plural(parseInt(a))], {
+					}, [O.fbt._param("count", Object(N.a)(a)), O.fbt._plural(parseInt(a))], {
 						hk: "4rP1VK"
-					})), t && r.a.createElement(N.a, {
+					})), t && r.a.createElement(j.a, {
 						className: w.a.proposalExpiry,
 						poll: t
 					}))
@@ -1640,7 +1640,7 @@
 						subreddit: s
 					} = e, {
 						isSponsored: a
-					} = t, n = Object(R.a)(), i = Object(U.a)(u.jd) === u.od.Enabled;
+					} = t, n = Object(R.a)(), i = Object(U.a)(u.kd) === u.pd.Enabled;
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return r.a.createElement(K, {
 						nowrap: e.nowrap
 					}, r.a.createElement(Y, e));
@@ -2317,4 +2317,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.09d2a8b9f501c6e7e77f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.d69ce8466db37c8a1e79.js.map

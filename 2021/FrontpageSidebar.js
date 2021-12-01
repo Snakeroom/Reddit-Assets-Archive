@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.05a520bcd685f10cec1d.js
-// Retrieved at 12/1/2021, 5:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.08432d53332280a64945.js
+// Retrieved at 12/1/2021, 6:50:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, n) {
@@ -665,10 +665,10 @@
 			}
 			var Me = n("./src/reddit/selectors/experiments/utils.ts");
 			const Je = Object(u.a)(e => Object(We.c)(e, {
-					experimentName: Ae.Fd,
+					experimentName: Ae.Gd,
 					experimentEligibilitySelector: We.a
 				}), Me.a),
-				Ue = Object(u.a)(Je, e => e === Ae.Gd.Enabled);
+				Ue = Object(u.a)(Je, e => e === Ae.Hd.Enabled);
 			var ze = n("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
 				Qe = n("./src/reddit/selectors/user.ts");
 			var qe = n("./src/reddit/selectors/experiments/uiSimplification.ts"),
@@ -701,7 +701,7 @@
 							return Object(We.c)(e, {
 								experimentEligibilitySelector: Qe.K,
 								experimentName: Ae.Tb
-							}) === Ae.Zc
+							}) === Ae.ad
 						}(e))
 					},
 					isNavbarLikeMwebEnabled: l.a,
@@ -2206,4 +2206,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.05a520bcd685f10cec1d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.08432d53332280a64945.js.map

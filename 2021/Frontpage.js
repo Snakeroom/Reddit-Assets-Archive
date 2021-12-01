@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.bfe074956f1dc221e23b.js
-// Retrieved at 12/1/2021, 5:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.0858610ca14bf8c71653.js
+// Retrieved at 12/1/2021, 6:50:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, s) {
@@ -2625,10 +2625,10 @@
 			}
 			var Ze = s("./src/reddit/selectors/experiments/utils.ts");
 			const Ue = Object(u.a)(e => Object(Re.c)(e, {
-					experimentName: De.Fd,
+					experimentName: De.Gd,
 					experimentEligibilitySelector: Re.a
 				}), Ze.a),
-				Ve = Object(u.a)(Ue, e => e === De.Gd.Enabled);
+				Ve = Object(u.a)(Ue, e => e === De.Hd.Enabled);
 			var Ge = s("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
 				We = s("./src/reddit/selectors/user.ts");
 			var Ke = s("./src/reddit/selectors/experiments/uiSimplification.ts"),
@@ -2661,7 +2661,7 @@
 							return Object(Re.c)(e, {
 								experimentEligibilitySelector: We.K,
 								experimentName: De.Tb
-							}) === De.Zc
+							}) === De.ad
 						}(e))
 					},
 					isNavbarLikeMwebEnabled: d.a,
@@ -6504,8 +6504,8 @@
 					return Object(n.c)(e, {
 						experimentEligibilitySelector: i,
 						experimentName: a.nc
-					}) === a.bd.Enabled
-				}(e) ? l.Achievements : t === a.cd.ControlBanner ? l.CommunitySpacesControl : t === a.cd.EnabledBanner ? l.CommunitySpaces : null
+					}) === a.cd.Enabled
+				}(e) ? l.Achievements : t === a.dd.ControlBanner ? l.CommunitySpacesControl : t === a.dd.EnabledBanner ? l.CommunitySpaces : null
 			}! function(e) {
 				e.Achievements = "achievements", e.CommunitySpaces = "communitySpaces", e.CommunitySpacesControl = "communitySpaces--control"
 			}(l || (l = {}))
@@ -6525,13 +6525,13 @@
 						experimentEligibilitySelector: r.K,
 						experimentName: a.Ac
 					});
-					return !(!t || Object(a.uf)(t))
+					return !(!t || Object(a.vf)(t))
 				},
 				o = e => {
 					return Object(n.c)(e, {
 						experimentEligibilitySelector: r.K,
 						experimentName: a.Ac
-					}) === a.ed.ListingEnabled
+					}) === a.fd.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/experiments/signupUpsellExperiment.ts": function(e, t, s) {
@@ -6730,4 +6730,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.bfe074956f1dc221e23b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.0858610ca14bf8c71653.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.8dd5f5af33657bf8af2a.js
-// Retrieved at 12/1/2021, 5:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.d06527051777cd4addd7.js
+// Retrieved at 12/1/2021, 6:50:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -3986,7 +3986,7 @@
 			const D = e => g.d.reCaptchaEnterprise(e) && !Object(j.d)(e),
 				v = e => !!Object(T.c)(e, {
 					experimentEligibilitySelector: Object(S.d)(Object(S.b)(...a.d)),
-					experimentName: b.xe
+					experimentName: b.ye
 				}),
 				w = Object(s.b)("LOAD_RECAPTCHA_ENTERPRISE"),
 				A = Object(s.b)("EXECUTE_RECAPTCHA_ENTERPRISE"),
@@ -5810,7 +5810,7 @@
 						subreddit: r
 					} = e, {
 						isSponsored: s
-					} = t, n = Object(G.a)(), c = Object(B.a)(p.jd) === p.od.Enabled;
+					} = t, n = Object(G.a)(), c = Object(B.a)(p.kd) === p.pd.Enabled;
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return a.a.createElement($, {
 						nowrap: e.nowrap
 					}, a.a.createElement(X, e));
@@ -26150,7 +26150,7 @@
 				l = e => e === n.U.OnetapAuto,
 				p = e => e.user.googleOneTapEnabled,
 				b = Object(s.a)(o.K, i, (e, t) => !e && !!t),
-				f = Object(s.a)(o.K, i, (e, t) => !e && !!t && !Object(n.uf)(t))
+				f = Object(s.a)(o.K, i, (e, t) => !e && !!t && !Object(n.vf)(t))
 		},
 		"./src/reddit/selectors/scheduledPosts/index.ts": function(e, t, r) {
 			"use strict";
@@ -26379,4 +26379,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.8dd5f5af33657bf8af2a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.d06527051777cd4addd7.js.map

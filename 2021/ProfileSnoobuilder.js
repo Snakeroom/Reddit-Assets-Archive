@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.9e2e68c93c32aef0f14f.js
-// Retrieved at 12/1/2021, 5:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.373086aaeef18bc5f527.js
+// Retrieved at 12/1/2021, 6:50:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileSnoobuilder", "reddit-components-ContentGate"], {
 		"./assets/snoobuilder/Snoobuilder.json": function(e, t, n) {
@@ -4158,12 +4158,12 @@
 						rtJsonElementProps: i
 					});
 					switch (s) {
-						case b.Ue.SmIcon:
+						case b.Ve.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: i
 							});
-						case b.Ue.SmIconHc:
+						case b.Ve.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -5163,12 +5163,12 @@
 				c = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.Ne
+						experimentName: s.Oe
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.Ue.SmIcon || t === s.Ue.SmIconHc
+					return t === s.Ve.SmIcon || t === s.Ve.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -5191,4 +5191,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.9e2e68c93c32aef0f14f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.373086aaeef18bc5f527.js.map
