@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.8e8ea03915382835a210.js
-// Retrieved at 12/1/2021, 11:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.cb49975f51410c290870.js
+// Retrieved at 12/1/2021, 1:50:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -3800,7 +3800,9 @@
 			};
 			t.default = ge(ve(Object(o.i)(e => {
 				const t = Object(r.useContext)(d.a) ? Q : Y;
-				return i.a.createElement(t, null, i.a.createElement("div", null, i.a.createElement(he, null, ye(e))), i.a.createElement(O, null))
+				return i.a.createElement(t, null, i.a.createElement("div", {
+					"data-testid": "content-gate"
+				}, i.a.createElement(he, null, ye(e))), i.a.createElement(O, null))
 			})))
 		},
 		"./src/reddit/components/ContributorRequestFlow/ContributorRequestButton/async.tsx": function(e, t, n) {
@@ -10900,4 +10902,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.8e8ea03915382835a210.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.cb49975f51410c290870.js.map

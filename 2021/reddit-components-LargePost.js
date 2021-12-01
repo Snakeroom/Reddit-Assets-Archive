@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.dab7c017c3ce09f5d4d9.js
-// Retrieved at 12/1/2021, 11:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.daf6c3214addc88eb329.js
+// Retrieved at 12/1/2021, 1:50:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, n) {
@@ -4201,7 +4201,7 @@
 					tooltipType: I ? m.c.Lightbox : void 0
 				})), U && q && R && F && !k && o.a.createElement(b.a, {
 					className: S.a.SubscribeButton,
-					getEventFactory: e => Object(E.i)(M.id, e ? "unsubscribe" : "subscribe", "post", L, j),
+					getEventFactory: e => Object(E.h)(M.id, e ? "unsubscribe" : "subscribe", "post", L, j),
 					identifier: {
 						name: U.name,
 						type: G ? h.a.PROFILE : h.a.SUBREDDIT
@@ -5922,4 +5922,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.dab7c017c3ce09f5d4d9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.daf6c3214addc88eb329.js.map

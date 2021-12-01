@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-TypingIndicators.85346962608a70d53d04.js
-// Retrieved at 12/1/2021, 10:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-TypingIndicators.cbeebfe3cceec6c99b51.js
+// Retrieved at 12/1/2021, 1:50:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-TypingIndicators", "ReadingIndicator"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, s, t) {
@@ -225,7 +225,7 @@
 					mountCondition: !!C
 				}), D = Object(p.a)();
 				return Object(c.useEffect)(() => {
-					E && D(Object(l.r)(r, O))
+					E && D(Object(l.q)(r, O))
 				}, [D, E, r]), d.a.createElement(d.a.Fragment, null, t && d.a.createElement(u.a, {
 					variables: b,
 					onData: a.a,
@@ -425,4 +425,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-TypingIndicators.85346962608a70d53d04.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-TypingIndicators.cbeebfe3cceec6c99b51.js.map

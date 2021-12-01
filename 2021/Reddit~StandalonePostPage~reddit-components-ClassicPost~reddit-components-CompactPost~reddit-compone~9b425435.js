@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.75959e29178e2ed6f29c.js
-// Retrieved at 12/1/2021, 11:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.bc7f1f194568061c9ee9.js
+// Retrieved at 12/1/2021, 1:50:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435"], {
 		"./src/lib/hooks/usePrevious.ts": function(e, t, r) {
@@ -366,78 +366,77 @@
 					incrementDelta: d,
 					initialDelay: u,
 					initialDisplayCount: p,
-					inViewPortAnimatingCallbackOnce: f,
-					isLoadTestOnly: b,
-					onDataCB: v,
-					postId: h,
-					queryKey: g,
-					queryVariables: O,
-					shouldDisjointAnimation: x,
-					subsequentRecurringDelay: j
-				} = e, [w, _] = Object(n.useState)(!1), [y, C] = Object(n.useState)(!0), [E, k] = Object(n.useState)([]), [A, S] = Object(n.useState)(i(p).reverse()), P = Object(n.useRef)(!1), I = Object(n.useRef)(null), T = Object(n.useRef)(e => {}), N = Object(n.useRef)();
-				T.current = Object(n.useCallback)(e => {
+					isLoadTestOnly: f,
+					onDataCB: b,
+					postId: v,
+					queryKey: h,
+					queryVariables: g,
+					shouldDisjointAnimation: O,
+					subsequentRecurringDelay: x
+				} = e, [j, w] = Object(n.useState)(!1), [_, y] = Object(n.useState)(!0), [C, E] = Object(n.useState)([]), [k, A] = Object(n.useState)(i(p).reverse()), S = Object(n.useRef)(!1), P = Object(n.useRef)(null), I = Object(n.useRef)(e => {}), T = Object(n.useRef)();
+				I.current = Object(n.useCallback)(e => {
 					let r = e || d();
-					const n = [...A].reverse().join("");
+					const n = [...k].reverse().join("");
 					let s = parseInt(n) + r;
 					s > t && (r = t - parseInt(n), s = t);
 					const o = i(s).reverse();
-					_(!1), k(A), S(o), C(!1), N.current = setTimeout(() => {
-						_(!0)
+					w(!1), E(k), A(o), y(!1), T.current = setTimeout(() => {
+						w(!0)
 					}, 0)
-				}, [t, d, A]);
-				const R = Object(n.useRef)(() => {}),
-					M = Object(n.useRef)(),
-					F = Object(n.useRef)();
-				R.current = Object(n.useCallback)(() => {
-					F.current = setTimeout(() => {
-						T.current();
-						const e = [...E].reverse().join("");
-						parseInt(e) < t && R.current()
-					}, j())
-				}, [t, j, E]);
-				const D = Object(n.useRef)(0),
-					L = Object(n.useRef)(!1),
-					G = Object(n.useCallback)(e => {
+				}, [t, d, k]);
+				const N = Object(n.useRef)(() => {}),
+					R = Object(n.useRef)(),
+					M = Object(n.useRef)();
+				N.current = Object(n.useCallback)(() => {
+					M.current = setTimeout(() => {
+						I.current();
+						const e = [...C].reverse().join("");
+						parseInt(e) < t && N.current()
+					}, x())
+				}, [t, x, C]);
+				const F = Object(n.useRef)(0),
+					D = Object(n.useRef)(!1),
+					L = Object(n.useCallback)(e => {
 						e.forEach(e => {
 							const {
 								isIntersecting: t,
 								intersectionRatio: r
 							} = e, n = 1 !== r;
-							t ? (L.current = !0, P.current || (P.current = !0, M.current = setTimeout(() => {
-								T.current(), R.current()
-							}, u())), D.current > 0 && (T.current(D.current), D.current = 0)) : n && (L.current = !1)
+							t ? (D.current = !0, S.current || (S.current = !0, R.current = setTimeout(() => {
+								I.current(), N.current()
+							}, u())), F.current > 0 && (I.current(F.current), F.current = 0)) : n && (D.current = !1)
 						})
 					}, []);
-				Object(c.a)(I, G);
-				const [V, B] = Object(n.useState)(!1), U = Object(n.useCallback)(e => {
+				Object(c.a)(P, L);
+				const [G, V] = Object(n.useState)(!1), B = Object(n.useCallback)(e => {
 					e.forEach(e => {
 						const {
 							isIntersecting: t,
 							intersectionRatio: r
 						} = e, n = 1 !== r;
-						t ? B(!0) : n && B(!1)
+						t ? V(!0) : n && V(!1)
 					})
-				}, []), z = Object(n.useRef)({
+				}, []), U = Object(n.useRef)({
 					rootMargin: "2000px 0px 2000px 0px"
 				});
-				Object(c.a)(I, U, z.current);
-				const H = Object(o.a)(t);
+				Object(c.a)(P, B, U.current);
+				const z = Object(o.a)(t);
 				Object(n.useEffect)(() => {
-					if (void 0 !== H && H !== t) {
-						const e = t - H;
-						L.current ? (T.current(e), f && f()) : D.current += e
+					if (void 0 !== z && z !== t) {
+						const e = t - z;
+						D.current ? I.current(e) : F.current += e
 					}
 					return () => {
-						clearTimeout(M.current), clearTimeout(F.current), clearTimeout(N.current)
+						clearTimeout(R.current), clearTimeout(M.current), clearTimeout(T.current)
 					}
 				}, [t]);
-				const q = Object(n.useCallback)(() => C(!0), [C]),
-					K = 0 === E.length,
-					Y = y || K,
-					W = Object(n.useRef)(((e, t) => `${t}_${e}_count_anim`)(h, r));
-				return s.a.createElement(s.a.Fragment, null, !b && s.a.createElement("div", {
+				const H = Object(n.useCallback)(() => y(!0), [y]),
+					q = 0 === C.length,
+					K = _ || q,
+					Y = Object(n.useRef)(((e, t) => `${t}_${e}_count_anim`)(v, r));
+				return s.a.createElement(s.a.Fragment, null, !f && s.a.createElement("div", {
 					className: l.a.countAnimation
-				}, A.map((e, t) => {
+				}, k.map((e, t) => {
 					const r = ((e, t) => {
 						let r = Math.abs(e);
 						const n = Math.abs(t),
@@ -446,23 +445,23 @@
 						let o = !0;
 						for (; o;) ++r > 9 && (r = 0), s.push(r), r === n && (o = !1);
 						return s
-					})(E[t] || 0, e);
+					})(C[t] || 0, e);
 					return s.a.createElement("span", {
 						"aria-hidden": !0,
 						className: l.a.digitDeltaWrapper,
 						key: t,
-						onTransitionEnd: q,
-						style: w && E.length > 0 && !y ? {
-							transform: `translateY(-${x&&r.length>1?100:100*(r.length-1)}%)`,
-							transitionDuration: `${(x?500:750)/1e3}s`
+						onTransitionEnd: H,
+						style: j && C.length > 0 && !_ ? {
+							transform: `translateY(-${O&&r.length>1?100:100*(r.length-1)}%)`,
+							transitionDuration: `${(O?500:750)/1e3}s`
 						} : {
 							transform: "translateY(0)"
 						}
-					}, Y ? s.a.createElement("span", {
+					}, K ? s.a.createElement("span", {
 						className: l.a.digitDelta
 					}, e) : r.map((e, t) => {
 						const n = 0 === t || t === r.length - 1;
-						if (!x || x && n) return s.a.createElement("span", {
+						if (!O || O && n) return s.a.createElement("span", {
 							className: l.a.digitDelta,
 							key: t
 						}, e)
@@ -470,13 +469,13 @@
 				}), s.a.createElement("span", {
 					className: l.a.srOnly,
 					role: "screen-reader"
-				}, [...A].reverse().join(""))), s.a.createElement("span", {
-					ref: I
-				}), V && s.a.createElement(a.a, {
-					variables: O,
-					onData: b ? m : v,
-					queryKey: g,
-					uniqueKey: W.current
+				}, [...k].reverse().join(""))), s.a.createElement("span", {
+					ref: P
+				}), G && s.a.createElement(a.a, {
+					variables: g,
+					onData: f ? m : b,
+					queryKey: h,
+					uniqueKey: Y.current
 				}))
 			}
 		},
@@ -1290,64 +1289,62 @@
 				f = r("./src/reddit/constants/colors.ts"),
 				b = r("./src/reddit/helpers/styles/postBackgroundColor.ts"),
 				v = r("./src/reddit/helpers/styles/smartTextColor.ts"),
-				h = r("./src/reddit/helpers/trackers/post.ts"),
-				g = r("./src/reddit/hooks/useInfoTextTooltip.ts"),
-				O = r("./src/reddit/hooks/useTracking.ts"),
-				x = r("./src/reddit/models/Theme/NewColorSystem/index.ts"),
-				j = r("./src/reddit/models/Vote/index.ts"),
-				w = r("./src/reddit/selectors/experiments/postActionBarAnimation.ts"),
-				_ = r("./src/reddit/selectors/meta.ts"),
-				y = r("./src/reddit/selectors/posts.ts"),
-				C = r("./node_modules/reselect/es/index.js"),
-				E = r("./src/reddit/controls/Score/index.m.less"),
-				k = r.n(E);
-			const A = {
+				h = r("./src/reddit/hooks/useInfoTextTooltip.ts"),
+				g = r("./src/reddit/models/Theme/NewColorSystem/index.ts"),
+				O = r("./src/reddit/models/Vote/index.ts"),
+				x = r("./src/reddit/selectors/experiments/postActionBarAnimation.ts"),
+				j = r("./src/reddit/selectors/meta.ts"),
+				w = r("./src/reddit/selectors/posts.ts"),
+				_ = r("./node_modules/reselect/es/index.js"),
+				y = r("./src/reddit/controls/Score/index.m.less"),
+				C = r.n(y);
+			const E = {
 					placement: "right"
 				},
-				S = e => e.voteState === j.a.downvoted ? Object(x.a)(e).voteText.downvote : e.voteState === j.a.upvoted ? Object(x.a)(e).voteText.upvote : Object(v.a)(Object(b.a)(e)),
-				P = Object(C.c)({
-					locale: e => Object(_.i)(e),
+				k = e => e.voteState === O.a.downvoted ? Object(g.a)(e).voteText.downvote : e.voteState === O.a.upvoted ? Object(g.a)(e).voteText.upvote : Object(v.a)(Object(b.a)(e)),
+				A = Object(_.c)({
+					locale: e => Object(j.i)(e),
 					post: (e, {
 						isReadingIndicatorsExperimentEnabled: t,
 						postId: r
 					}) => {
-						if (t && r) return Object(y.H)(e, {
+						if (t && r) return Object(w.H)(e, {
 							postId: r
 						})
 					}
 				}),
-				I = () => 0,
-				T = Object(d.b)(P),
-				N = Object(o.a)(e => {
+				S = () => 0,
+				P = Object(d.b)(A),
+				I = Object(o.a)(e => {
 					const t = {
-							color: e.light ? f.b.lightboxHeaderText : S(e)
+							color: e.light ? f.b.lightboxHeaderText : k(e)
 						},
 						{
 							score: r,
 							postId: o = "",
 							locale: b,
 							isVoteCountAnimation: v,
-							isCountAnimShadowTestEnabled: x,
-							isReadingIndicatorsExperimentEnabled: j,
-							post: _
+							isCountAnimShadowTestEnabled: g,
+							isReadingIndicatorsExperimentEnabled: O,
+							post: j
 						} = e,
-						y = Object(d.d)(),
-						C = null == b ? void 0 : b.startsWith("en"),
-						E = e.isScoreHidden ? C ? n.fbt._("Vote", null, {
+						w = Object(d.d)(),
+						_ = null == b ? void 0 : b.startsWith("en"),
+						y = e.isScoreHidden ? _ ? n.fbt._("Vote", null, {
 							hk: "2TMson"
 						}) : i.a.createElement("span", {
-							className: k.a.dot
+							className: C.a.dot
 						}, "•") : Object(a.b)(r),
-						P = Object(c.useCallback)(e => {
+						A = Object(c.useCallback)(e => {
 							const {
 								voteCountChange: t
 							} = e.subscribe.data;
-							0 !== t && y(Object(l.I)({
+							0 !== t && w(Object(l.I)({
 								postId: o,
 								delta: t
 							}))
-						}, [y, o]),
-						T = Object(c.useRef)({
+						}, [w, o]),
+						P = Object(c.useRef)({
 							input: {
 								channel: {
 									teamOwner: "CONTENT_AND_COMMUNITIES",
@@ -1356,39 +1353,34 @@
 								}
 							}
 						}),
-						N = Object(O.a)(),
-						R = Object(c.useCallback)(() => {
-							N(Object(h.s)(o))
-						}, [N, o]),
-						M = !e.isScoreHidden && v && r < w.a,
-						F = Object(g.a)(A);
+						I = !e.isScoreHidden && v && r < x.a,
+						T = Object(h.a)(E);
 					return i.a.createElement("div", {
-						className: Object(s.a)(k.a.score, e.className),
+						className: Object(s.a)(C.a.score, e.className),
 						style: e.disableInlineColor ? void 0 : t,
-						onMouseEnter: j ? F.show : void 0,
-						onMouseLeave: j ? F.hide : void 0,
-						ref: j ? F.target.ref : void 0
-					}, (M || x) && i.a.createElement(i.a.Fragment, null, i.a.createElement(u.b, {
+						onMouseEnter: O ? T.show : void 0,
+						onMouseLeave: O ? T.hide : void 0,
+						ref: O ? T.target.ref : void 0
+					}, (I || g) && i.a.createElement(i.a.Fragment, null, i.a.createElement(u.b, {
 						initialDisplayCount: r,
 						countToUpperBound: r,
-						initialDelay: I,
-						subsequentRecurringDelay: I,
-						incrementDelta: I,
+						initialDelay: S,
+						subsequentRecurringDelay: S,
+						incrementDelta: S,
 						shouldDisjointAnimation: !0,
-						inViewPortAnimatingCallbackOnce: R,
 						postId: o,
 						featureName: u.a.Vote,
 						queryKey: "postVoteCount",
-						queryVariables: T.current,
-						onDataCB: P,
-						isLoadTestOnly: x && !M
-					})), !M && E, j && _ && i.a.createElement(m.a, F, i.a.createElement(p.a, {
-						className: k.a.viewCount,
-						post: _,
+						queryVariables: P.current,
+						onDataCB: A,
+						isLoadTestOnly: g && !I
+					})), !I && y, O && j && i.a.createElement(m.a, T, i.a.createElement(p.a, {
+						className: C.a.viewCount,
+						post: j,
 						showViewCount: !1
 					})))
 				});
-			t.a = T(N)
+			t.a = P(I)
 		},
 		"./src/reddit/helpers/trackers/communityAwards.ts": function(e, t, r) {
 			"use strict";
@@ -3487,4 +3479,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.75959e29178e2ed6f29c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.bc7f1f194568061c9ee9.js.map

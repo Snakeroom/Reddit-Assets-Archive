@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.ba4fdb6589a3d0e1f988.js
-// Retrieved at 12/1/2021, 11:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.79de4c5a83ea0f02e4b3.js
+// Retrieved at 12/1/2021, 1:50:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -7818,7 +7818,7 @@
 						sendEvent: we,
 						shouldShowGalleryTileOption: Ne,
 						showPromotedCTA: Me
-					} = this.props, Pe = !!be.media && be.media.type === h.o.RTJSON, Re = xe && Pe, Ae = Object(V.b)(be.id, C), Fe = Object(me.a)(te), De = Object(le.a)(te), Le = Object(ce.a)(te), Ue = `-mod-actions-menu-${be.id}`, Be = `voting-arrows-${be.id}`, He = !!r && Object(g.e)(r) === be.author, We = Object(L.c)(be), qe = Object(B.c)(be), Ke = Object(R.a)("View--Reports", be.id, Ie), Ge = Object(B.a)(be), Ve = !(C || E || v), ze = be.media && be.media.type === h.o.LIVEVIDEO, Xe = e => we(Object(b.i)(be.id, e)), Qe = Object(d.t)(be, f), {
+					} = this.props, Pe = !!be.media && be.media.type === h.o.RTJSON, Re = xe && Pe, Ae = Object(V.b)(be.id, C), Fe = Object(me.a)(te), De = Object(le.a)(te), Le = Object(ce.a)(te), Ue = `-mod-actions-menu-${be.id}`, Be = `voting-arrows-${be.id}`, He = !!r && Object(g.e)(r) === be.author, We = Object(L.c)(be), qe = Object(B.c)(be), Ke = Object(R.a)("View--Reports", be.id, Ie), Ge = Object(B.a)(be), Ve = !(C || E || v), ze = be.media && be.media.type === h.o.LIVEVIDEO, Xe = e => we(Object(b.h)(be.id, e)), Qe = Object(d.t)(be, f), {
 						source: Ye
 					} = Qe, Je = a.a.createElement(G.a, {
 						className: Object(l.a)(ve.a.compactPostStyles, ke.a.postContainer, Object(p.a)(this.props), t),
@@ -8559,7 +8559,9 @@
 			};
 			t.default = xe(Ee(Object(i.i)(e => {
 				const t = Object(a.useContext)(d.a) ? Y : Q;
-				return r.a.createElement(t, null, r.a.createElement("div", null, r.a.createElement(he, null, ve(e))), r.a.createElement(C, null))
+				return r.a.createElement(t, null, r.a.createElement("div", {
+					"data-testid": "content-gate"
+				}, r.a.createElement(he, null, ve(e))), r.a.createElement(C, null))
 			})))
 		},
 		"./src/reddit/components/ContentSurvey/RatingCard.tsx": function(e, t, n) {
@@ -25969,4 +25971,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.ba4fdb6589a3d0e1f988.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.79de4c5a83ea0f02e4b3.js.map

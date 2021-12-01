@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.f1879a9e8a3da67d969a.js
-// Retrieved at 12/1/2021, 11:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.8b046cef1ba0ba9e5b72.js
+// Retrieved at 12/1/2021, 1:50:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255"], {
 		"./src/lib/unicodeUtils/index.ts": function(e, t, s) {
@@ -1057,7 +1057,7 @@
 					}
 				}, S.displayText)), S && S.isQuarantined && r.a.createElement(l.a, null), !n && !y.isSponsored && S && j && !v && r.a.createElement(m.a, {
 					className: _.a.SubscribeButton,
-					getEventFactory: e => Object(x.i)(y.id, e ? "unsubscribe" : "subscribe"),
+					getEventFactory: e => Object(x.h)(y.id, e ? "unsubscribe" : "subscribe"),
 					identifier: {
 						name: S.name,
 						type: Object(E.h)(S) ? p.a.PROFILE : p.a.SUBREDDIT
@@ -2883,4 +2883,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.f1879a9e8a3da67d969a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.8b046cef1ba0ba9e5b72.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.3eed2b28fde28f768463.js
-// Retrieved at 12/1/2021, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.ebc2ccb062fc88cf835e.js
+// Retrieved at 12/1/2021, 1:50:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, s) {
@@ -1906,6 +1906,7 @@
 			t.a = e => o.a.createElement(o.a.Fragment, null, e.subreddit && o.a.createElement(_.a, {
 				subredditId: e.subreddit.id
 			}), o.a.createElement("div", {
+				"data-testid": "empty-subreddit",
 				className: Object(g.a)(h.a.Component, h.a.EmptyHomepage)
 			}, o.a.createElement(y, {
 				isLoading: !1,
@@ -4422,7 +4423,7 @@
 						hostPostData: r,
 						listingBelowVariant: c
 					} = a;
-					return Object(h.i)(e, t, "post", n, r, c, void 0)
+					return Object(h.h)(e, t, "post", n, r, c, void 0)
 				},
 				P = Object(a.b)(j, A, (e, t, s) => ({
 					...e,
@@ -6729,4 +6730,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.3eed2b28fde28f768463.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.ebc2ccb062fc88cf835e.js.map

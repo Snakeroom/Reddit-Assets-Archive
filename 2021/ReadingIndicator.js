@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReadingIndicator.9a12e583f9ce89340ce7.js
-// Retrieved at 12/1/2021, 10:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReadingIndicator.eb4769a47606a063f5a7.js
+// Retrieved at 12/1/2021, 1:50:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReadingIndicator"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, s, n) {
@@ -225,7 +225,7 @@
 					mountCondition: !!y
 				}), A = Object(b.a)();
 				return Object(c.useEffect)(() => {
-					E && A(Object(i.r)(r, g))
+					E && A(Object(i.q)(r, g))
 				}, [A, E, r]), d.a.createElement(d.a.Fragment, null, n && d.a.createElement(l.a, {
 					variables: f,
 					onData: a.a,
@@ -314,4 +314,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReadingIndicator.9a12e583f9ce89340ce7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReadingIndicator.eb4769a47606a063f5a7.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.87c900eb8ea232920b0b.js
-// Retrieved at 12/1/2021, 11:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.cf5b877e13cce5276627.js
+// Retrieved at 12/1/2021, 1:50:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview", "reddit-components-ContentGate"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -1652,7 +1652,9 @@
 			};
 			t.default = _e(ye(Object(a.i)(e => {
 				const t = Object(n.useContext)(d.a) ? Q : X;
-				return r.a.createElement(t, null, r.a.createElement("div", null, r.a.createElement(be, null, ve(e))), r.a.createElement(k, null))
+				return r.a.createElement(t, null, r.a.createElement("div", {
+					"data-testid": "content-gate"
+				}, r.a.createElement(be, null, ve(e))), r.a.createElement(k, null))
 			})))
 		},
 		"./src/reddit/components/ContributorRequestFlow/ContributorRequestButton/async.tsx": function(e, t, s) {
@@ -2746,7 +2748,7 @@
 					tooltipType: T ? m.c.Lightbox : void 0
 				})), z && G && R && D && !I && r.a.createElement(b.a, {
 					className: w.a.SubscribeButton,
-					getEventFactory: e => Object(y.i)(A.id, e ? "unsubscribe" : "subscribe", "post", N, j),
+					getEventFactory: e => Object(y.h)(A.id, e ? "unsubscribe" : "subscribe", "post", N, j),
 					identifier: {
 						name: z.name,
 						type: V ? f.a.PROFILE : f.a.SUBREDDIT
@@ -2844,7 +2846,7 @@
 					...e,
 					...t,
 					...s,
-					postClickEventFactory: (e, t) => Object(p.i)(e, t)
+					postClickEventFactory: (e, t) => Object(p.h)(e, t)
 				}));
 			t.a = e => Object(c.c)(y(C(e)))
 		},
@@ -2942,7 +2944,7 @@
 						hostPostData: r,
 						listingBelowVariant: i
 					} = o;
-					return Object(b.i)(e, t, "post", n, r, i, void 0)
+					return Object(b.h)(e, t, "post", n, r, i, void 0)
 				},
 				F = Object(o.b)(j, O, (e, t, s) => ({
 					...e,
@@ -3455,7 +3457,7 @@
 					...e,
 					...t,
 					...s,
-					postClickEventFactory: (e, t) => Object(Ee.i)(e, t),
+					postClickEventFactory: (e, t) => Object(Ee.h)(e, t),
 					postComponentForLayout: ({
 						post: e
 					}) => e.isBlank ? Oe.a : je
@@ -3528,7 +3530,7 @@
 						showEditFlair: y,
 						showEditPost: v,
 						subreddit: x
-					} = e, C = e => _(Object(Ee.i)(g.id, e)), k = g.postId, P = Object(tt.d)(lt, g.id, u, p), w = !!o && Object(at.e)(o) === g.author;
+					} = e, C = e => _(Object(Ee.h)(g.id, e)), k = g.postId, P = Object(tt.d)(lt, g.id, u, p), w = !!o && Object(at.e)(o) === g.author;
 					return i.a.createElement("div", {
 						className: Object(N.a)(ct.a.flatlistContainer, s)
 					}, i.a.createElement(pt, {
@@ -5001,4 +5003,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.87c900eb8ea232920b0b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.cf5b877e13cce5276627.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.01e206b91fdcdbf23382.js
-// Retrieved at 12/1/2021, 11:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.d5a0db959abdba785cc0.js
+// Retrieved at 12/1/2021, 1:50:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -4840,7 +4840,7 @@
 					})
 				}), h && g && o.a.createElement(d.a, {
 					className: b.a.subscribeButton,
-					getEventFactory: e => Object(m.i)(t.id, e ? "unsubscribe" : "subscribe"),
+					getEventFactory: e => Object(m.h)(t.id, e ? "unsubscribe" : "subscribe"),
 					identifier: {
 						name: g.name,
 						type: Object(u.h)(g) ? l.a.PROFILE : l.a.SUBREDDIT
@@ -5672,7 +5672,7 @@
 					yt = me.removedByCategory && me.removedByCategory !== N.g.Reddit || Ot,
 					Et = F && !yt && !me.isArchived,
 					kt = Object(r.useCallback)(() => {
-						H(T ? N.f.UNFOLLOWED : N.f.FOLLOWED), Ae(T ? Object(E.n)(me.id) : Object(E.d)(me.id))
+						H(T ? N.f.UNFOLLOWED : N.f.FOLLOWED), Ae(T ? Object(E.m)(me.id) : Object(E.c)(me.id))
 					}, [H, Ae, T, me.id]),
 					wt = i.a.createElement(lt, {
 						post: me,
@@ -5972,7 +5972,7 @@
 					isWriteLoadTest: D,
 					postId: me.id
 				}), !A && Pt)));
-				const It = Object(r.useCallback)((e, t) => Object(E.i)(e, t), []);
+				const It = Object(r.useCallback)((e, t) => Object(E.h)(e, t), []);
 				return i.a.createElement(de.a, {
 					className: Object(p.a)(t, dt.a.postContainer, {
 						[dt.a.hasEventMeta]: Object(je.a)(me)
@@ -6094,7 +6094,7 @@
 					tooltipType: L ? p.c.Lightbox : void 0
 				})), V && G && B && F && !T && r.a.createElement(b.a, {
 					className: w.a.SubscribeButton,
-					getEventFactory: e => Object(C.i)(M.id, e ? "unsubscribe" : "subscribe", "post", R, P),
+					getEventFactory: e => Object(C.h)(M.id, e ? "unsubscribe" : "subscribe", "post", R, P),
 					identifier: {
 						name: V.name,
 						type: q ? g.a.PROFILE : g.a.SUBREDDIT
@@ -7061,7 +7061,7 @@
 						hostPostData: r,
 						listingBelowVariant: i
 					} = n;
-					return Object(b.i)(e, t, "post", o, r, i, void 0)
+					return Object(b.h)(e, t, "post", o, r, i, void 0)
 				},
 				S = Object(n.b)(P, j, (e, t, s) => ({
 					...e,
@@ -8053,7 +8053,7 @@
 					}))(e),
 					userPrefs: Ce.ub,
 					inResonatePilot: me.a,
-					isPostQualifiedForUpvotePrompt: z.c,
+					isQualifiedForUpvotePrompt: z.c,
 					isTypingIndicatorsExperimentEnabled: pe.c
 				}),
 				vt = (e, t) => ({
@@ -8167,7 +8167,7 @@
 				}
 				async componentDidMount() {
 					var e;
-					this.props.isPostQualifiedForUpvotePrompt && (this.upvotePromptId = setTimeout(() => {
+					this.props.isQualifiedForUpvotePrompt && (this.upvotePromptId = setTimeout(() => {
 						this.props.triggerUpvotePrompt(this.props.postId, !1, () => this.setState({
 							isUpvotePromptTriggered: !0
 						}))
@@ -8247,7 +8247,7 @@
 					this.truncateCommentList()
 				}
 				componentWillUnmount() {
-					if (this.removeListeners(), this.needsUpdatedMeasurements = !1, this.scrollContainerEl = void 0, this.upvotePromptId && clearTimeout(this.upvotePromptId), this.props.isOverlay && this.props.isPostQualifiedForUpvotePrompt && !this.state.isUpvotePromptTriggered) {
+					if (this.removeListeners(), this.needsUpdatedMeasurements = !1, this.scrollContainerEl = void 0, this.upvotePromptId && clearTimeout(this.upvotePromptId), this.props.isOverlay && this.props.isQualifiedForUpvotePrompt && !this.state.isUpvotePromptTriggered) {
 						const e = !0;
 						this.props.triggerUpvotePrompt(this.props.postId, e)
 					}
@@ -9133,4 +9133,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.01e206b91fdcdbf23382.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.d5a0db959abdba785cc0.js.map

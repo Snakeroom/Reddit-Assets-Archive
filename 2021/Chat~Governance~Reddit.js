@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.192b5f73e728ac4eabbd.js
-// Retrieved at 12/1/2021, 1:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.c6b7f9b652b9e4c7837e.js
+// Retrieved at 12/1/2021, 1:50:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3307,10 +3307,10 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("153080"),
+				buildNumber: Object(r.c)("153088"),
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
-				buildTimestamp: Object(r.b)("1638381278"),
+				buildTimestamp: Object(r.b)("1638383441"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -5877,14 +5877,14 @@
 					}))
 				},
 				z = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c1da600aef2cc974582d65cd0a1ad42716020af05-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c01f6128ae5743114cc62899800516306b65e39e6-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${v.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "1da600aef2cc974582d65cd0a1ad42716020af05-production",
+						release: "01f6128ae5743114cc62899800516306b65e39e6-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6397,7 +6397,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "1da600aef2cc974582d65cd0a1ad42716020af05-production",
+						releaseClient: "01f6128ae5743114cc62899800516306b65e39e6-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -11470,14 +11470,14 @@
 					n && e(Object(q.a)(i[Math.floor(n / 2)]))
 				}, Ae = (e, t, i) => async (n, r) => {
 					const s = r();
-					Q.q(s, e, t, i), Ne[e] = t || 0, ue.c.start(Ce(e))
+					Q.p(s, e, t, i), Ne[e] = t || 0, ue.c.start(Ce(e))
 				}, De = (e, t, i, r) => async (s, o) => {
 					delete Ne[e];
 					const d = o(),
 						a = Ce(e);
 					if (ue.c.has(a)) {
 						const s = ue.c.end(`viewing-${e}`);
-						!t && s > n.a.telemetry.postConsumedThreshold && Q.c(d, e, s, i, r)
+						!t && s > n.a.telemetry.postConsumedThreshold && Q.b(d, e, s, i, r)
 					}
 				}, Pe = {
 					[b.a.Impression]: p.d,
@@ -11529,7 +11529,7 @@
 							if (t !== b.a.GalleryItemImpression) {
 								if (t === b.a.Impression) return i((e => async (t, i) => {
 									e.isSponsored && (t(Be(e, b.a.Impression)), T(e, t, i))
-								})(e)), void(e.isBlank || Q.p(n(), e.postId));
+								})(e)), void(e.isBlank || Q.o(n(), e.postId));
 								i((e => async t => {
 									e.isSponsored && t(Be(e, b.a.ViewableImpression))
 								})(e))
@@ -25012,44 +25012,40 @@
 		},
 		"./src/reddit/helpers/trackers/post.ts": function(e, t, i) {
 			"use strict";
-			i.d(t, "q", (function() {
+			i.d(t, "p", (function() {
 				return p
-			})), i.d(t, "p", (function() {
-				return m
-			})), i.d(t, "c", (function() {
-				return h
-			})), i.d(t, "i", (function() {
-				return b
-			})), i.d(t, "e", (function() {
-				return g
-			})), i.d(t, "f", (function() {
-				return v
 			})), i.d(t, "o", (function() {
-				return E
-			})), i.d(t, "h", (function() {
-				return T
-			})), i.d(t, "g", (function() {
-				return S
-			})), i.d(t, "d", (function() {
-				return O
-			})), i.d(t, "n", (function() {
-				return I
-			})), i.d(t, "s", (function() {
-				return R
-			})), i.d(t, "a", (function() {
-				return F
-			})), i.d(t, "r", (function() {
-				return N
-			})), i.d(t, "l", (function() {
-				return A
-			})), i.d(t, "k", (function() {
-				return D
+				return m
 			})), i.d(t, "b", (function() {
-				return P
+				return h
+			})), i.d(t, "h", (function() {
+				return b
+			})), i.d(t, "d", (function() {
+				return g
+			})), i.d(t, "e", (function() {
+				return v
+			})), i.d(t, "n", (function() {
+				return E
+			})), i.d(t, "g", (function() {
+				return T
+			})), i.d(t, "f", (function() {
+				return S
+			})), i.d(t, "c", (function() {
+				return O
 			})), i.d(t, "m", (function() {
-				return x
+				return I
+			})), i.d(t, "q", (function() {
+				return F
+			})), i.d(t, "k", (function() {
+				return N
 			})), i.d(t, "j", (function() {
-				return L
+				return j
+			})), i.d(t, "a", (function() {
+				return A
+			})), i.d(t, "l", (function() {
+				return D
+			})), i.d(t, "i", (function() {
+				return P
 			}));
 			var n = i("./src/lib/constants/index.ts"),
 				r = i("./src/reddit/constants/experiments.ts"),
@@ -25096,7 +25092,7 @@
 							subreddit: a
 						})
 					}
-					const m = C(e, n);
+					const m = R(e, n);
 					return Object(c.a)({
 						source: d,
 						action: "view",
@@ -25204,7 +25200,7 @@
 							subreddit: d
 						}
 					}
-					const T = C(m, l);
+					const T = R(m, l);
 					return {
 						...w,
 						...b,
@@ -25288,24 +25284,7 @@
 					subreddit: u.subreddit(t),
 					userSubreddit: u.userSubreddit(t)
 				}),
-				R = e => t => ({
-					action: "animate",
-					noun: "vote_count",
-					source: "post",
-					...u.defaults(t),
-					post: u.post(t, e),
-					subreddit: u.subreddit(t),
-					userSubreddit: u.userSubreddit(t)
-				}),
-				F = e => t => ({
-					action: "animate",
-					noun: "comment_count",
-					source: "post",
-					...u.defaults(t),
-					post: u.post(t, e),
-					subreddit: u.subreddit(t)
-				}),
-				C = (e, t) => {
+				R = (e, t) => {
 					const i = Object(l.a)(e),
 						n = Object(o.c)(o.a.NsfwLinkedPosts),
 						s = t && t.hostPostId;
@@ -25316,7 +25295,7 @@
 						mlModel: u.listingBelowMlModel(i, s)
 					}), d
 				},
-				N = (e, t) => i => ({
+				F = (e, t) => i => ({
 					source: "post",
 					action: "view",
 					noun: "reading_indicator",
@@ -25327,15 +25306,15 @@
 					post: u.post(i, e),
 					subreddit: u.subreddit(i)
 				});
-			var j;
+			var C;
 			! function(e) {
 				e.overflowShowMore = "overflow_show_more", e.overflowShowLess = "overflow_show_less", e.overflowDisableAll = "overflow_disable_all", e.overflowEnableAll = "overflow_enable_all", e.communityNotRelevant = "community_not_relevant", e.sourceCommunityNotRelevant = "source_community_not_relevant", e.topicNotRelevant = "topic_not_relevant", e.postNotRelevant = "post_not_relevant"
-			}(j || (j = {}));
-			const A = e => w(e, j.overflowShowMore),
-				D = e => w(e, j.overflowShowLess),
-				P = e => w(e, j.communityNotRelevant, "recommendation_feedback"),
-				x = e => w(e, j.sourceCommunityNotRelevant, "recommendation_feedback"),
-				L = e => w(e, j.postNotRelevant, "recommendation_feedback")
+			}(C || (C = {}));
+			const N = e => w(e, C.overflowShowMore),
+				j = e => w(e, C.overflowShowLess),
+				A = e => w(e, C.communityNotRelevant, "recommendation_feedback"),
+				D = e => w(e, C.sourceCommunityNotRelevant, "recommendation_feedback"),
+				P = e => w(e, C.postNotRelevant, "recommendation_feedback")
 		},
 		"./src/reddit/helpers/trackers/postList.ts": function(e, t, i) {
 			"use strict";
@@ -43365,4 +43344,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.192b5f73e728ac4eabbd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.c6b7f9b652b9e4c7837e.js.map

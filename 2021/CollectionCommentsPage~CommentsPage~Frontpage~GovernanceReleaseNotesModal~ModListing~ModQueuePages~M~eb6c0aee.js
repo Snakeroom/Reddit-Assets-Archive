@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~GovernanceReleaseNotesModal~ModListing~ModQueuePages~M~eb6c0aee.54335519d867ecc51030.js
-// Retrieved at 11/15/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~GovernanceReleaseNotesModal~ModListing~ModQueuePages~M~eb6c0aee.281fcdbf7c2fe29eaf19.js
+// Retrieved at 12/1/2021, 1:50:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Frontpage~GovernanceReleaseNotesModal~ModListing~ModQueuePages~M~eb6c0aee"], {
 		"./src/lib/intersectionObserver/index.ts": function(e, t, s) {
@@ -722,7 +722,7 @@
 						}
 					}, [n, a, p, l]);
 					const g = Object(h.useCallback)(() => {
-							r.current = !0, d(O.a.ThankYouView), o(Object(_.j)(p))
+							r.current = !0, d(O.a.ThankYouView), o(Object(_.i)(p))
 						}, [p, o, d]),
 						C = Object(h.useCallback)(() => {
 							B({
@@ -731,7 +731,7 @@
 								setRecommendationFooterView: d,
 								similar: !1,
 								subredditId: c
-							}), r.current = !0, o(Object(_.b)(p))
+							}), r.current = !0, o(Object(_.a)(p))
 						}, [n, e, p, o, d, c]),
 						v = Object(h.useCallback)(() => {
 							u && (B({
@@ -740,7 +740,7 @@
 								setRecommendationFooterView: d,
 								similar: !0,
 								subredditId: u
-							}), r.current = !0, o(Object(_.m)(p)))
+							}), r.current = !0, o(Object(_.l)(p)))
 						}, [n, e, p, u, o, d]);
 					return l && l !== O.a.None ? m.a.createElement("div", {
 						className: Object(f.a)(H.a.Footer, {
@@ -2165,4 +2165,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~GovernanceReleaseNotesModal~ModListing~ModQueuePages~M~eb6c0aee.54335519d867ecc51030.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~GovernanceReleaseNotesModal~ModListing~ModQueuePages~M~eb6c0aee.281fcdbf7c2fe29eaf19.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.95cbafadadf25d7b4451.js
-// Retrieved at 12/1/2021, 11:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.3c364f565f84c8dccc79.js
+// Retrieved at 12/1/2021, 1:50:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -5934,7 +5934,7 @@
 					}
 				}),
 				ae = (e, t, s, r) => {
-					if (s) return Object(G.i)(e, t);
+					if (s) return Object(G.h)(e, t);
 					const {
 						sendEvent: n,
 						listingKey: a,
@@ -5963,7 +5963,7 @@
 						...o,
 						id: e,
 						eventType: "post"
-					}, i, a, c))), Object(G.i)(e, t)
+					}, i, a, c))), Object(G.h)(e, t)
 				},
 				oe = Object(n.b)(ne, (e, t) => ({
 					...Object(se.b)(e),
@@ -10283,7 +10283,7 @@
 						hostPostData: a,
 						listingBelowVariant: o
 					} = r;
-					return Object(b.i)(e, t, "post", n, a, o, void 0)
+					return Object(b.h)(e, t, "post", n, a, o, void 0)
 				},
 				P = Object(r.b)(k, S, (e, t, s) => ({
 					...e,
@@ -11967,4 +11967,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.95cbafadadf25d7b4451.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.3c364f565f84c8dccc79.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.5b7b9d4ff8705de5afad.js
-// Retrieved at 12/1/2021, 11:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.44750e2e201094b633b1.js
+// Retrieved at 12/1/2021, 1:50:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48"], {
 		"./src/reddit/actions/eventPosts/index.ts": function(e, t, s) {
@@ -620,7 +620,7 @@
 						i = Object(I.H)(r, {
 							postId: e
 						});
-					t ? (s(Object(O.a)(i.permalink)), Object(g.e)(e, "edit")(r)) : Object(_.e)(e, "edit")(r);
+					t ? (s(Object(O.a)(i.permalink)), Object(g.e)(e, "edit")(r)) : Object(_.d)(e, "edit")(r);
 					const {
 						media: a
 					} = i;
@@ -922,26 +922,24 @@
 				h = s("./src/reddit/constants/experiments.ts"),
 				x = s("./src/reddit/constants/postLayout.ts"),
 				f = s("./src/reddit/helpers/path/index.ts"),
-				C = s("./src/reddit/helpers/trackers/post.ts"),
-				O = s("./src/reddit/hooks/useClickSourceData.ts"),
-				v = s("./src/reddit/hooks/useExperimentVariant.ts"),
-				g = s("./src/reddit/hooks/useTracking.ts"),
-				_ = s("./src/reddit/icons/fonts/Comment/index.tsx"),
-				j = s("./src/reddit/selectors/chatPost.ts"),
-				k = s("./src/reddit/selectors/experiments/postActionBarAnimation.ts"),
-				E = s("./src/reddit/selectors/experiments/postSeo.ts"),
-				w = s("./src/reddit/selectors/posts.ts"),
-				I = s("./src/reddit/selectors/user.ts"),
-				y = s("./src/reddit/components/CommentsLink/index.m.less"),
-				P = s.n(y);
-			const T = () => 0,
-				S = Object(i.b)(() => Object(c.c)({
-					isChatPost: j.d,
-					isPostSEOEligible: E.e,
-					postPermalink: w.G,
-					shouldOpenPostInNewTab: I.db
+				C = s("./src/reddit/hooks/useClickSourceData.ts"),
+				O = s("./src/reddit/hooks/useExperimentVariant.ts"),
+				v = s("./src/reddit/icons/fonts/Comment/index.tsx"),
+				g = s("./src/reddit/selectors/chatPost.ts"),
+				_ = s("./src/reddit/selectors/experiments/postActionBarAnimation.ts"),
+				j = s("./src/reddit/selectors/experiments/postSeo.ts"),
+				k = s("./src/reddit/selectors/posts.ts"),
+				E = s("./src/reddit/selectors/user.ts"),
+				w = s("./src/reddit/components/CommentsLink/index.m.less"),
+				I = s.n(w);
+			const y = () => 0,
+				P = Object(i.b)(() => Object(c.c)({
+					isChatPost: g.d,
+					isPostSEOEligible: j.e,
+					postPermalink: k.G,
+					shouldOpenPostInNewTab: E.db
 				})),
-				N = ({
+				T = ({
 					hasModPostPerms: e,
 					isCountAnimShadowTestEnabled: t,
 					isChatPost: s,
@@ -951,27 +949,27 @@
 					postId: b,
 					shouldShowIcon: h,
 					shouldShowText: f,
-					text: O,
-					type: v
+					text: C,
+					type: O
 				}) => {
-					let j;
-					j = O || (v === x.g.Compact || s || c && e ? Object(p.b)(l) : o.fbt._({
+					let g;
+					g = C || (O === x.g.Compact || s || c && e ? Object(p.b)(l) : o.fbt._({
 						"*": "{number} comments",
 						_1: "1 comment"
 					}, [o.fbt._plural(l, "number", Object(p.b)(l))], {
 						hk: "1QeOde"
 					}));
-					const E = Object(i.d)(),
-						w = Object(n.useCallback)(e => {
+					const j = Object(i.d)(),
+						k = Object(n.useCallback)(e => {
 							const {
 								commentCountChange: t
 							} = e.subscribe.data;
-							0 !== t && E(Object(m.H)({
+							0 !== t && j(Object(m.H)({
 								postId: b,
 								delta: t
 							}))
-						}, [E, b]),
-						I = Object(n.useRef)({
+						}, [j, b]),
+						E = Object(n.useRef)({
 							input: {
 								channel: {
 									teamOwner: "CONTENT_AND_COMMUNITIES",
@@ -980,37 +978,32 @@
 								}
 							}
 						}),
-						y = Object(g.a)(),
-						S = Object(n.useCallback)(() => {
-							y(Object(C.a)(b))
-						}, [y, b]),
-						N = a && l < k.a;
-					return r.a.createElement(n.Fragment, null, h && r.a.createElement(_.a, {
-						className: P.a.commentIcon,
+						w = a && l < _.a;
+					return r.a.createElement(n.Fragment, null, h && r.a.createElement(v.a, {
+						className: I.a.commentIcon,
 						role: "presentation"
 					}), f && r.a.createElement("span", {
-						className: P.a.text
-					}, (N || t) && r.a.createElement(u.b, {
+						className: I.a.text
+					}, (w || t) && r.a.createElement(u.b, {
 						countToUpperBound: l,
-						incrementDelta: T,
-						initialDelay: T,
+						incrementDelta: y,
+						initialDelay: y,
 						initialDisplayCount: l,
-						inViewPortAnimatingCallbackOnce: S,
 						postId: b,
 						shouldDisjointAnimation: !0,
-						subsequentRecurringDelay: T,
+						subsequentRecurringDelay: y,
 						featureName: u.a.Comment,
 						queryKey: "postCommentCount",
-						queryVariables: I.current,
-						onDataCB: w,
-						isLoadTestOnly: !!t && !N
-					}), !N && j), f && (!c || !e) && N && r.a.createElement("span", {
-						className: Object(d.a)(P.a.text, P.a.commentsText)
+						queryVariables: E.current,
+						onDataCB: k,
+						isLoadTestOnly: !!t && !w
+					}), !w && g), f && (!c || !e) && w && r.a.createElement("span", {
+						className: Object(d.a)(I.a.text, I.a.commentsText)
 					}, o.fbt._("comments", null, {
 						hk: "ZQ8MY"
 					})))
 				};
-			t.a = S(e => {
+			t.a = P(e => {
 				const {
 					className: t,
 					hasModPostPerms: s,
@@ -1022,40 +1015,40 @@
 					isPostSEOEligible: m,
 					modModeEnabled: u,
 					numComments: x,
-					onClick: C,
+					onClick: v,
 					postPermalink: g,
 					shouldOpenPostInNewTab: _,
 					shouldShowIcon: j = !0,
 					shouldShowText: k = !0,
 					text: E,
 					type: w,
-					postId: I,
-					isCommentCountAnimation: y,
-					isCountAnimShadowTestEnabled: T
-				} = e, S = c && !i && !m, M = i && !p, F = Object(O.a)(), R = Object(v.a)(h.jd) === h.od.Enabled, A = r.a.createElement(N, {
+					postId: y,
+					isCommentCountAnimation: P,
+					isCountAnimShadowTestEnabled: S
+				} = e, N = c && !i && !m, M = i && !p, F = Object(C.a)(), R = Object(O.a)(h.jd) === h.od.Enabled, A = r.a.createElement(T, {
 					hasModPostPerms: s,
-					isCountAnimShadowTestEnabled: !!T,
+					isCountAnimShadowTestEnabled: !!S,
 					isChatPost: n,
-					isCommentCountAnimation: !!y,
+					isCommentCountAnimation: !!P,
 					modModeEnabled: u,
 					numComments: x,
-					postId: I,
+					postId: y,
 					shouldShowIcon: j,
 					shouldShowText: k,
 					text: E,
 					type: w
 				});
-				return S ? r.a.createElement("div", {
-					className: Object(d.a)(P.a.commentsLink, P.a.defaultCursorWrapper, t),
-					onClick: C
+				return N ? r.a.createElement("div", {
+					className: Object(d.a)(I.a.commentsLink, I.a.defaultCursorWrapper, t),
+					onClick: v
 				}, A) : r.a.createElement(a.a, {
 					rel: "nofollow",
 					"data-click-id": "comments",
 					"data-test-id": b.a,
-					className: Object(d.a)(P.a.commentsLink, P.a.link, t),
+					className: Object(d.a)(I.a.commentsLink, I.a.link, t),
 					target: o || _ ? "_blank" : void 0,
 					to: M ? Object(f.b)(g) : R ? Object(l.a)(g, !0, F) : Object(l.a)(g),
-					onClick: C
+					onClick: v
 				}, A)
 			})
 		},
@@ -1644,7 +1637,7 @@
 					}, [ve, j, U]), Ne = Object(n.useCallback)(e => {
 						Ee(e.id, U.id).then(() => Te())
 					}, [Ee, Te, U]), Me = Object(n.useCallback)((e, t) => {
-						G(Object(J.i)(U.id, e, j ? "post_detail" : "post", he, ue, void 0, null == t ? void 0 : t.referralId))
+						G(Object(J.h)(U.id, e, j ? "post_detail" : "post", he, ue, void 0, null == t ? void 0 : t.referralId))
 					}, [ue, j, G, he, U]), Fe = Object(n.useCallback)(() => {
 						_e(), Me(U.saved ? "unsave" : "save")
 					}, [_e, U, Me]), Re = Object(n.useCallback)(() => {
@@ -1768,7 +1761,7 @@
 						sendEvent: G
 					}), x && r.a.createElement(P.a, {
 						dropdownId: Ue,
-						onClick: () => G(Object(J.i)(U.id, "post_mod_action_menu"))
+						onClick: () => G(Object(J.h)(U.id, "post_mod_action_menu"))
 					}, r.a.createElement(Ce, null), r.a.createElement(M.a, {
 						canEditFlair: b && !!z,
 						hasModFullPerms: h,
@@ -1781,7 +1774,7 @@
 					})), x && Ve && !I && r.a.createElement(R.c, {
 						text: `${Ge}`,
 						onClick: () => {
-							W(Be), G(Object(J.i)(U.id, "post_report_menu"))
+							W(Be), G(Object(J.h)(U.id, "post_report_menu"))
 						},
 						id: Be
 					}, r.a.createElement(D.a, {
@@ -2074,7 +2067,7 @@
 						resolvedOptionId: v,
 						totalVoteCount: g
 					} = a.pollData || {}, _ = () => {
-						d(!1), f(Object(l.S)(a.id, !1)), a.isRemoved && a.bannedBy === I.l ? h(Object(C.i)(a.id, "confirm_remove")) : h(Object(C.i)(a.id, "remove"))
+						d(!1), f(Object(l.S)(a.id, !1)), a.isRemoved && a.bannedBy === I.l ? h(Object(C.h)(a.id, "confirm_remove")) : h(Object(C.h)(a.id, "remove"))
 					}, j = ((e, t) => e ? t === I.l ? o.fbt._("Confirm removal", null, {
 						hk: "1t5tKM"
 					}) : o.fbt._("removed", null, {
@@ -2196,7 +2189,7 @@
 					onMouseEnter: K,
 					onMouseLeave: K,
 					onClick: () => {
-						j(), P(Object(C.i)(y.id, "approve"))
+						j(), P(Object(C.h)(y.id, "approve"))
 					}
 				}, r.a.createElement(O.a, {
 					desc: T ? U : void 0
@@ -2220,7 +2213,7 @@
 					onMouseEnter: J,
 					onMouseLeave: J,
 					onClick: () => {
-						I(), P(Object(C.i)(y.id, "spam"))
+						I(), P(Object(C.h)(y.id, "spam"))
 					}
 				}, r.a.createElement(v.a, {
 					desc: T ? G : void 0
@@ -2232,7 +2225,7 @@
 					className: A(E.a.Flair, Q),
 					key: "tagButton",
 					onClick: () => {
-						k(B)(), P(Object(C.i)(y.id, "post_flair_picker"))
+						k(B)(), P(Object(C.h)(y.id, "post_flair_picker"))
 					}
 				}, r.a.createElement(g.a, null)), r.a.createElement(u.f, null))
 			})
@@ -3135,7 +3128,7 @@
 							post: o,
 							sendEvent: n
 						} = this.props;
-						n(Object(J.i)(o.id, e, s ? "post_detail" : "post", void 0, void 0, void 0, null == t ? void 0 : t.referralId))
+						n(Object(J.h)(o.id, e, s ? "post_detail" : "post", void 0, void 0, void 0, null == t ? void 0 : t.referralId))
 					}, this.handleClickMenuButton = () => {
 						this.handlePostEvent("post_overflow_menu")
 					}, this.handleDeletePost = e => {
@@ -3158,7 +3151,7 @@
 							},
 							sendEvent: s
 						} = this.props;
-						s(Object(J.k)(e)), t(k.a.SeeFewerPostsView)
+						s(Object(J.j)(e)), t(k.a.SeeFewerPostsView)
 					}, this.onShowMoreOfClick = () => {
 						const {
 							postId: e,
@@ -3167,7 +3160,7 @@
 							},
 							sendEvent: s
 						} = this.props;
-						s(Object(J.l)(e)), t(k.a.ThankYouView)
+						s(Object(J.k)(e)), t(k.a.ThankYouView)
 					}, this.toggleHide = () => {
 						const e = this.props.post.hidden ? "unhide" : "hide";
 						this.handlePostEvent(e), this.props.onHide(!!this.props.post.hidden)
@@ -3179,7 +3172,7 @@
 					}, this.toggleOC = () => {
 						this.handlePostEvent(this.props.post.isOriginalContent ? "unmark_original_content" : "mark_original_content"), this.props.onToggleOC()
 					}, this.togglePinned = () => {
-						this.handlePostEvent(this.props.isPinned ? "unpin" : "pin"), this.props.isPinned ? this.props.sendEvent(Object(J.o)(this.props.post.id)) : this.props.sendEvent(Object(J.f)(this.props.post.id)), this.props.onTogglePinned()
+						this.handlePostEvent(this.props.isPinned ? "unpin" : "pin"), this.props.isPinned ? this.props.sendEvent(Object(J.n)(this.props.post.id)) : this.props.sendEvent(Object(J.e)(this.props.post.id)), this.props.onTogglePinned()
 					}, this.toggleSpoiler = () => {
 						this.handlePostEvent(this.props.post.isSpoiler ? "unmark_spoiler" : "mark_spoiler"), this.props.onToggleSpoiler()
 					}, this.toggleNSFW = () => {
@@ -4720,4 +4713,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.5b7b9d4ff8705de5afad.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.44750e2e201094b633b1.js.map

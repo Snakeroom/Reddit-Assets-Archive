@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.cc6b62b5cee6eee80329.js
-// Retrieved at 11/15/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.6be8e034a3222deb4037.js
+// Retrieved at 12/1/2021, 1:50:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments", "reddit-components-ContentGate"], {
 		"./node_modules/linkify-it/index.js": function(e, t, r) {
@@ -923,7 +923,9 @@
 			};
 			t.default = ge(ye(Object(i.i)(e => {
 				const t = Object(s.useContext)(c.a) ? $ : V;
-				return a.a.createElement(t, null, a.a.createElement("div", null, a.a.createElement(he, null, xe(e))), a.a.createElement(E, null))
+				return a.a.createElement(t, null, a.a.createElement("div", {
+					"data-testid": "content-gate"
+				}, a.a.createElement(he, null, xe(e))), a.a.createElement(E, null))
 			})))
 		},
 		"./src/reddit/components/ContributorRequestFlow/ContributorRequestButton/async.tsx": function(e, t, r) {
@@ -1416,7 +1418,7 @@
 					...e,
 					...t,
 					...r,
-					postClickEventFactory: (e, t) => Object(W.i)(e, t),
+					postClickEventFactory: (e, t) => Object(W.h)(e, t),
 					postComponentForLayout: K.b
 				}));
 
@@ -1563,4 +1565,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.cc6b62b5cee6eee80329.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.6be8e034a3222deb4037.js.map

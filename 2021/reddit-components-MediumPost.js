@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.d490d1a80a393a0b93e4.js
-// Retrieved at 12/1/2021, 11:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.54abf1b5570b9e317290.js
+// Retrieved at 12/1/2021, 1:50:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-MediumPost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, n) {
@@ -2473,7 +2473,7 @@
 					})
 				}), f && h && r.a.createElement(c.a, {
 					className: b.a.subscribeButton,
-					getEventFactory: e => Object(u.i)(t.id, e ? "unsubscribe" : "subscribe"),
+					getEventFactory: e => Object(u.h)(t.id, e ? "unsubscribe" : "subscribe"),
 					identifier: {
 						name: h.name,
 						type: Object(m.h)(h) ? l.a.PROFILE : l.a.SUBREDDIT
@@ -3947,7 +3947,7 @@
 					tooltipType: N ? p.c.Lightbox : void 0
 				})), B && G && F && R && !w && o.a.createElement(b.a, {
 					className: j.a.SubscribeButton,
-					getEventFactory: e => Object(E.i)(M.id, e ? "unsubscribe" : "subscribe", "post", A, T),
+					getEventFactory: e => Object(E.h)(M.id, e ? "unsubscribe" : "subscribe", "post", A, T),
 					identifier: {
 						name: B.name,
 						type: q ? h.a.PROFILE : h.a.SUBREDDIT
@@ -5506,4 +5506,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.d490d1a80a393a0b93e4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.54abf1b5570b9e317290.js.map

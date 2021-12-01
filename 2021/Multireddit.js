@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.ec128f329b132278c868.js
-// Retrieved at 12/1/2021, 12:30:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.f54a15649a925b789586.js
+// Retrieved at 12/1/2021, 1:50:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1609,7 +1609,9 @@
 			};
 			t.default = xe(ge(Object(a.i)(e => {
 				const t = Object(s.useContext)(c.a) ? X : K;
-				return i.a.createElement(t, null, i.a.createElement("div", null, i.a.createElement(be, null, ye(e))), i.a.createElement(k, null))
+				return i.a.createElement(t, null, i.a.createElement("div", {
+					"data-testid": "content-gate"
+				}, i.a.createElement(be, null, ye(e))), i.a.createElement(k, null))
 			})))
 		},
 		"./src/reddit/components/ContributorRequestFlow/ContributorRequestButton/async.tsx": function(e, t, n) {
@@ -4487,7 +4489,7 @@
 						hostPostData: i,
 						listingBelowVariant: o
 					} = r;
-					return Object(b.i)(e, t, "post", s, i, o, void 0)
+					return Object(b.h)(e, t, "post", s, i, o, void 0)
 				},
 				F = Object(r.b)(O, w, (e, t, n) => ({
 					...e,
@@ -5867,4 +5869,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.ec128f329b132278c868.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.f54a15649a925b789586.js.map

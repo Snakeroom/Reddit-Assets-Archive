@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePrivate.8110bdc2efc0bb76a67a.js
-// Retrieved at 12/1/2021, 11:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePrivate.0a0fa218c1a5ea087c06.js
+// Retrieved at 12/1/2021, 1:50:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePrivate"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -1084,7 +1084,7 @@
 					...e,
 					...t,
 					...i,
-					postClickEventFactory: (e, t) => Object(m.i)(e, t)
+					postClickEventFactory: (e, t) => Object(m.h)(e, t)
 				}));
 			t.a = e => Object(l.c)(y(k(e)))
 		},
@@ -1412,7 +1412,7 @@
 					...e,
 					...t,
 					...i,
-					postClickEventFactory: (e, t) => Object(x.i)(e, t)
+					postClickEventFactory: (e, t) => Object(x.h)(e, t)
 				})),
 				D = Object(r.b)(B, e => ({
 					...A(e),
@@ -1423,7 +1423,7 @@
 					...e,
 					...t,
 					...i,
-					postClickEventFactory: (e, t) => Object(x.i)(e, t),
+					postClickEventFactory: (e, t) => Object(x.h)(e, t),
 					postComponentForLayout: f.b
 				}));
 			var K = i("./src/reddit/helpers/makeProfileListingKey/index.ts"),
@@ -2306,4 +2306,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.8110bdc2efc0bb76a67a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.0a0fa218c1a5ea087c06.js.map

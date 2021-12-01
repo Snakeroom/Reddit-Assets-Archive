@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.68e06f8d4b65d3ad13fb.js
-// Retrieved at 12/1/2021, 11:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.f2f499994696f9da81b7.js
+// Retrieved at 12/1/2021, 1:50:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CompactPost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, n) {
@@ -2675,7 +2675,7 @@
 						sendEvent: Ne,
 						shouldShowGalleryTileOption: ke,
 						showPromotedCTA: Pe
-					} = this.props, Me = !!fe.media && fe.media.type === b.o.RTJSON, Le = ve && Me, Ae = Object(z.b)(fe.id, O), Fe = Object(ue.a)(te), De = Object(de.a)(te), Re = Object(le.a)(te), Ue = `-mod-actions-menu-${fe.id}`, Be = `voting-arrows-${fe.id}`, Ve = !!o && Object(h.e)(o) === fe.author, We = Object(R.c)(fe), He = Object(B.c)(fe), Ye = Object(L.a)("View--Reports", fe.id, je), Ge = Object(B.a)(fe), ze = !(O || E || _), qe = fe.media && fe.media.type === b.o.LIVEVIDEO, Ze = e => Ne(Object(f.i)(fe.id, e)), Qe = Object(c.t)(fe, x), {
+					} = this.props, Me = !!fe.media && fe.media.type === b.o.RTJSON, Le = ve && Me, Ae = Object(z.b)(fe.id, O), Fe = Object(ue.a)(te), De = Object(de.a)(te), Re = Object(le.a)(te), Ue = `-mod-actions-menu-${fe.id}`, Be = `voting-arrows-${fe.id}`, Ve = !!o && Object(h.e)(o) === fe.author, We = Object(R.c)(fe), He = Object(B.c)(fe), Ye = Object(L.a)("View--Reports", fe.id, je), Ge = Object(B.a)(fe), ze = !(O || E || _), qe = fe.media && fe.media.type === b.o.LIVEVIDEO, Ze = e => Ne(Object(f.h)(fe.id, e)), Qe = Object(c.t)(fe, x), {
 						source: Ke
 					} = Qe, Xe = r.a.createElement(G.a, {
 						className: Object(d.a)(_e.a.compactPostStyles, ye.a.postContainer, Object(p.a)(this.props), t),
@@ -5729,4 +5729,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.68e06f8d4b65d3ad13fb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.f2f499994696f9da81b7.js.map
