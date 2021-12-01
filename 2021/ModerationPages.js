@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.78bfdfe1444dd0523af3.js
-// Retrieved at 11/17/2021, 8:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.ba4fdb6589a3d0e1f988.js
+// Retrieved at 12/1/2021, 11:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -25561,7 +25561,7 @@
 					experimentEligibilitySelector: a.a,
 					experimentName: s.Yc
 				});
-				return !(!t || Object(s.uf)(t))
+				return !(!t || Object(s.wf)(t))
 			}
 		},
 		"./src/reddit/selectors/gold/powerups/flairs.ts": function(e, t, n) {
@@ -25693,10 +25693,10 @@
 				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				o = n("./src/reddit/selectors/posts.ts");
 			const i = e => Object(r.c)(e, {
-					experimentName: a.le,
+					experimentName: a.ne,
 					experimentEligibilitySelector: r.a
 				}),
-				d = (e, t) => t === a.ue.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				d = (e, t) => t === a.we.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				l = Object(s.a)(o.H, i, (e, t) => d(e, t)),
 				c = Object(s.a)((e, t) => t, i, (e, t) => d(e, t))
 		},
@@ -25969,4 +25969,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.78bfdfe1444dd0523af3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.ba4fdb6589a3d0e1f988.js.map

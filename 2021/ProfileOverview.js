@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.6621a12f72c6b5d6110d.js
-// Retrieved at 11/15/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.a09d92b6d05917ed5de9.js
+// Retrieved at 12/1/2021, 11:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview", "reddit-components-ContentGate"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -2119,7 +2119,7 @@
 						postId: Ne,
 						postIds: Ae,
 						onceInViewport: De
-					} = e, Be = !!e.redditStyle || !!e["data-redditstyle"], Re = Be ? void 0 : p, Me = Object(l.a)(fe), ze = ge && Me, Ue = Object(d.a)(fe), Ke = Object(c.a)(fe), qe = Object(U.c)(Pe), We = Object(M.c)(Pe), Ve = !!Pe.media && Pe.media.type === y.o.RTJSON, Ge = Le && Ve, He = s ? s - V.a : void 0, Ze = !!Pe.recommendationContext, Xe = !(Z && Q || ne) || Ze && Q, Qe = (e => e === le.pe.OnlyTitles)(we) && !Object(ae.a)(Pe), Je = (e => e === le.pe.MediumHeight)(we) && !Object(ae.a)(Pe), Ye = (e => {
+					} = e, Be = !!e.redditStyle || !!e["data-redditstyle"], Re = Be ? void 0 : p, Me = Object(l.a)(fe), ze = ge && Me, Ue = Object(d.a)(fe), Ke = Object(c.a)(fe), qe = Object(U.c)(Pe), We = Object(M.c)(Pe), Ve = !!Pe.media && Pe.media.type === y.o.RTJSON, Ge = Le && Ve, He = s ? s - V.a : void 0, Ze = !!Pe.recommendationContext, Xe = !(Z && Q || ne) || Ze && Q, Qe = (e => e === le.re.OnlyTitles)(we) && !Object(ae.a)(Pe), Je = (e => e === le.re.MediumHeight)(we) && !Object(ae.a)(Pe), Ye = (e => {
 						var t;
 						const {
 							post: s,
@@ -4045,7 +4045,7 @@
 					experimentEligibilitySelector: n.a,
 					experimentName: o.tc
 				});
-				return !(!t || Object(o.uf)(t))
+				return !(!t || Object(o.wf)(t))
 			}
 		},
 		"./src/reddit/selectors/experiments/signupUpsellExperiment.ts": function(e, t, s) {
@@ -4208,7 +4208,7 @@
 				i = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const a = e => {
 					const t = Object(i.a)(e);
-					return Boolean(t) && !Object(n.uf)(t)
+					return Boolean(t) && !Object(n.wf)(t)
 				},
 				d = Object(o.a)(a, r.d, (e, t) => e && !t)
 		},
@@ -5001,4 +5001,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.6621a12f72c6b5d6110d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.a09d92b6d05917ed5de9.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.afb836d84e4372b5fc63.js
-// Retrieved at 11/15/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.55fc66a5cbf9335a59d4.js
+// Retrieved at 12/1/2021, 11:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, r) {
@@ -5145,7 +5145,7 @@
 						experimentEligibilitySelector: o.K,
 						experimentName: n.Ac
 					});
-					return !(!t || Object(n.uf)(t))
+					return !(!t || Object(n.wf)(t))
 				},
 				i = e => {
 					return Object(s.c)(e, {
@@ -5158,13 +5158,20 @@
 			"use strict";
 			r.d(t, "a", (function() {
 				return o
+			})), r.d(t, "b", (function() {
+				return a
 			}));
 			var n = r("./src/reddit/constants/experiments.ts"),
 				s = r("./src/reddit/helpers/chooseVariant/index.ts");
 			const o = e => Object(s.c)(e, {
-				experimentName: n.Sd,
-				experimentEligibilitySelector: s.a
-			}) === n.Zd.Enabled
+					experimentName: n.Sd,
+					experimentEligibilitySelector: s.a
+				}) === n.ae.Enabled,
+				a = e => Object(s.c)(e, {
+					experimentName: n.Td,
+					experimentEligibilitySelector: s.a,
+					expEventOverride: !1
+				}) === n.be.Enabled
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, r) {
 			"use strict";
@@ -5337,4 +5344,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.afb836d84e4372b5fc63.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.55fc66a5cbf9335a59d4.js.map
