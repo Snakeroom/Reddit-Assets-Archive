@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.764cfb08a0c79ea641a3.js
-// Retrieved at 12/1/2021, 4:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.c666a491ae57fc220e51.js
+// Retrieved at 12/1/2021, 5:10:04 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var n, a, r = o[0], s = o[1], c = o[2], l = 0, P = []; l < r.length; l++) a = r[l], Object.prototype.hasOwnProperty.call(d, a) && d[a] && P.push(d[a][0]), d[a] = 0;
@@ -1279,7 +1279,7 @@
 						"CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~MembershipPaywa~c24a8af4": "85133b29509c0c9b9cfa",
 						"CollectionCommentsPage~CommentsPage~Frontpage~GovernanceReleaseNotesModal~ModListing~ModQueuePages~M~eb6c0aee": "281fcdbf7c2fe29eaf19",
 						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab": "d3ed2cd0e918014205e7",
-						"CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48": "44750e2e201094b633b1",
+						"CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48": "0a94e6df013ce710687c",
 						"CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255": "8b046cef1ba0ba9e5b72",
 						"CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate": "7133af54f6451e71980f",
 						"CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki": "471a754f1f3b2551fdfe",
@@ -1375,18 +1375,18 @@
 						"reddit-components-Econ-Prediction-CancelPredictionModal": "735a56e245b3cd7fafce",
 						"reddit-components-Econ-Prediction-ChangePredictionOutcomeModal": "e32767d6332f51ed09fe",
 						"reddit-components-Econ-Prediction-EndTimeModal": "9368b54ef2fdc99b46bd",
-						"translations/de_DE-json": "9480d93222817a60143a",
-						"translations/es_ES-json": "5091222fa65ff9f669b1",
-						"translations/es_MX-json": "8691fc5e61c153bbb764",
-						"translations/fr_FR-json": "0529232b29856ce370f2",
-						"translations/it_IT-json": "dda3d649dd18be4090f2",
-						"translations/pseudo-json": "12eb57307117e1408053",
-						"translations/pt_BR-json": "eecd0bc4e83e34478eda",
-						"translations/pt_PT-json": "2cf663fed19a54637a69",
+						"translations/de_DE-json": "8146c76baa45920a3f52",
+						"translations/es_ES-json": "9438a1cd30011fd33b71",
+						"translations/es_MX-json": "fe9e443d00d72e96cf9b",
+						"translations/fr_FR-json": "6d96f95cbd48c2ab649f",
+						"translations/it_IT-json": "aab059a6e3d03c1a7b40",
+						"translations/pseudo-json": "e4d8f53ef980c4eeb65f",
+						"translations/pt_BR-json": "6cd6584432155d4d8f49",
+						"translations/pt_PT-json": "ac7537dab3db8c997515",
 						"vendors~AdminPanel": "e6e59f93c311ab1cce5c",
 						AdminPanel: "8cbf80d718d625c07fd6",
 						"vendors~ChatMessageInput~CommentRichUnit~FlairEdit~MembershipPaywallPage~PostCreation~PostRichUnit~R~9deab1a0": "201e0a53b4d00907b96f",
-						"ChatMessageInput~MembershipPaywallPage~RichTextEditor": "9401caebd8795c9a63ee",
+						"ChatMessageInput~MembershipPaywallPage~RichTextEditor": "8417270d7b4ddc7ba697",
 						MembershipPaywallPage: "419c98b94f00b2a82006",
 						FlairEdit: "6b984385dcb701aaa442",
 						"vendors~Chat~RedesignChat": "4ea3bc796c3ac26848b1",
@@ -1397,7 +1397,7 @@
 						HarbergerTaxManageModal: "4abdc6db63470d12c96e",
 						SubredditPremiumUploadModal: "0ac8675ec9995269fea1",
 						"vendors~PostCreation": "d0db3c84f219bebed2c6",
-						PostCreation: "925d61adf9617a79a31c",
+						PostCreation: "dc5a9383244a5d4b3bff",
 						"vendors~ModStatsChart~Settings~ViewsTooltip": "ca7c845d62fd39d960b6",
 						Settings: "c78e619c179f46c6d896",
 						"vendors~ModerationPages": "345c2d1c2b51a95d38c2",
@@ -1632,4 +1632,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.764cfb08a0c79ea641a3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.c666a491ae57fc220e51.js.map

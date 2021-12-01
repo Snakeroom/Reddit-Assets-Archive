@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.44750e2e201094b633b1.js
-// Retrieved at 12/1/2021, 1:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.0a94e6df013ce710687c.js
+// Retrieved at 12/1/2021, 5:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48"], {
 		"./src/reddit/actions/eventPosts/index.ts": function(e, t, s) {
@@ -999,8 +999,11 @@
 						isLoadTestOnly: !!t && !w
 					}), !w && g), f && (!c || !e) && w && r.a.createElement("span", {
 						className: Object(d.a)(I.a.text, I.a.commentsText)
-					}, o.fbt._("comments", null, {
-						hk: "ZQ8MY"
+					}, o.fbt._({
+						"*": "comments",
+						_1: " comment"
+					}, [o.fbt._plural(l)], {
+						hk: "119Rxn"
 					})))
 				};
 			t.a = P(e => {
@@ -4713,4 +4716,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.44750e2e201094b633b1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.0a94e6df013ce710687c.js.map

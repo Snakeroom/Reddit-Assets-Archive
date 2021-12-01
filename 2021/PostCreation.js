@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.925d61adf9617a79a31c.js
-// Retrieved at 12/1/2021, 11:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.dc5a9383244a5d4b3bff.js
+// Retrieved at 12/1/2021, 5:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, n) {
@@ -14110,25 +14110,26 @@
 						if (!this.updateTooltipPosition) return;
 						const {
 							editorState: e,
-							isTooltipAbove: t
-						} = this.props, n = e.getCurrentContent();
-						let o;
+							isTooltipAbove: t,
+							containerRef: n
+						} = this.props, o = e.getCurrentContent();
+						let s;
 						if (this.state.linkSelection) {
-							const e = Object(Ws.a)(n, this.state.linkSelection);
+							const e = Object(Ws.a)(o, this.state.linkSelection);
 							if (e) {
 								const t = this.props.entityElementRegistry.get(e.entityKey);
-								o = t && t.getBoundingClientRect()
-							} else this.lastEditorSelectionClientRect && (o = this.lastEditorSelectionClientRect)
+								s = t && t.getBoundingClientRect()
+							} else this.lastEditorSelectionClientRect && (s = this.lastEditorSelectionClientRect)
 						} else {
 							const t = Object(Do.c)(e);
 							if (t) {
 								const e = this.props.entityElementRegistry.get(t.entityKey);
-								o = e && e.getBoundingClientRect()
-							}
+								s = e && e.getBoundingClientRect()
+							} else s = n && n.getBoundingClientRect()
 						}
-						o && (this.updateTooltipPosition({
-							left: o.left,
-							top: t ? o.top : o.bottom
+						s && (this.updateTooltipPosition({
+							left: s.left,
+							top: t ? s.top : s.bottom
 						}), this.lastEditorSelectionClientRect = null)
 					}, this.handleLink = (e, t) => {
 						const {
@@ -15748,6 +15749,7 @@
 						handleReturn: this.handleReturn,
 						customStyleMap: kr()
 					})))), U && "bottom" === k && B, m.a.createElement(pr, {
+						containerRef: w,
 						editorState: I,
 						entityElementRegistry: this.entityElementRegistry,
 						onSetApi: this.setLinksControllerApi,
@@ -32135,4 +32137,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.925d61adf9617a79a31c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.dc5a9383244a5d4b3bff.js.map

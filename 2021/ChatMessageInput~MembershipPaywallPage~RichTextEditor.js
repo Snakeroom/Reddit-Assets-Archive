@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.9401caebd8795c9a63ee.js
-// Retrieved at 11/22/2021, 6:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.8417270d7b4ddc7ba697.js
+// Retrieved at 12/1/2021, 5:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./src/lib/forEachGroup/index.ts": function(t, e, n) {
@@ -5182,25 +5182,26 @@
 						if (!this.updateTooltipPosition) return;
 						const {
 							editorState: t,
-							isTooltipAbove: e
-						} = this.props, n = t.getCurrentContent();
-						let o;
+							isTooltipAbove: e,
+							containerRef: n
+						} = this.props, o = t.getCurrentContent();
+						let r;
 						if (this.state.linkSelection) {
-							const t = Object(Hr.a)(n, this.state.linkSelection);
+							const t = Object(Hr.a)(o, this.state.linkSelection);
 							if (t) {
 								const e = this.props.entityElementRegistry.get(t.entityKey);
-								o = e && e.getBoundingClientRect()
-							} else this.lastEditorSelectionClientRect && (o = this.lastEditorSelectionClientRect)
+								r = e && e.getBoundingClientRect()
+							} else this.lastEditorSelectionClientRect && (r = this.lastEditorSelectionClientRect)
 						} else {
 							const e = Object(Mo.c)(t);
 							if (e) {
 								const t = this.props.entityElementRegistry.get(e.entityKey);
-								o = t && t.getBoundingClientRect()
-							}
+								r = t && t.getBoundingClientRect()
+							} else r = n && n.getBoundingClientRect()
 						}
-						o && (this.updateTooltipPosition({
-							left: o.left,
-							top: e ? o.top : o.bottom
+						r && (this.updateTooltipPosition({
+							left: r.left,
+							top: e ? r.top : r.bottom
 						}), this.lastEditorSelectionClientRect = null)
 					}, this.handleLink = (t, e) => {
 						const {
@@ -6820,6 +6821,7 @@
 						handleReturn: this.handleReturn,
 						customStyleMap: xs()
 					})))), P && "bottom" === x && F, p.a.createElement(hs, {
+						containerRef: B,
 						editorState: I,
 						entityElementRegistry: this.entityElementRegistry,
 						onSetApi: this.setLinksControllerApi,
@@ -7868,4 +7870,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.9401caebd8795c9a63ee.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.8417270d7b4ddc7ba697.js.map
