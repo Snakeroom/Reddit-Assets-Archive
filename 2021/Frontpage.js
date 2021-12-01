@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.ebc2ccb062fc88cf835e.js
-// Retrieved at 12/1/2021, 1:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.bfe074956f1dc221e23b.js
+// Retrieved at 12/1/2021, 5:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, s) {
@@ -6525,7 +6525,7 @@
 						experimentEligibilitySelector: r.K,
 						experimentName: a.Ac
 					});
-					return !(!t || Object(a.wf)(t))
+					return !(!t || Object(a.uf)(t))
 				},
 				o = e => {
 					return Object(n.c)(e, {
@@ -6730,4 +6730,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.ebc2ccb062fc88cf835e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.bfe074956f1dc221e23b.js.map

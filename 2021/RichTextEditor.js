@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.cd746a2a35b78a78bd73.js
-// Retrieved at 12/1/2021, 11:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.b2d470486d58642600af.js
+// Retrieved at 12/1/2021, 5:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -4867,37 +4867,37 @@
 					if (Object(i.a)(e)) return !1;
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.sf
+						experimentName: o.qf
 					}) === o.Zc
 				},
 				c = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.tf
+						experimentName: o.rf
 					}) === o.Zc
 				},
 				d = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.rf
+						experimentName: o.pf
 					});
-					return t === o.kf.UIChangesOnly || t === o.kf.TypingIndicators || t === o.kf.IndicatorsPlusCTA
+					return t === o.if.UIChangesOnly || t === o.if.TypingIndicators || t === o.if.IndicatorsPlusCTA
 				},
 				l = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(r.d)(e, {
-							experimentName: o.rf
+							experimentName: o.pf
 						}),
 						n = null == t ? void 0 : t.variant;
-					return n === o.kf.TypingIndicators || n === o.kf.IndicatorsPlusCTA
+					return n === o.if.TypingIndicators || n === o.if.IndicatorsPlusCTA
 				},
 				u = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(r.d)(e, {
-						experimentName: o.rf
+						experimentName: o.pf
 					});
-					return (null == t ? void 0 : t.variant) === o.kf.IndicatorsPlusCTA
+					return (null == t ? void 0 : t.variant) === o.if.IndicatorsPlusCTA
 				}
 		},
 		"./src/reddit/selectors/moderatingComments.ts": function(e, t, n) {
@@ -4938,4 +4938,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.cd746a2a35b78a78bd73.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.b2d470486d58642600af.js.map

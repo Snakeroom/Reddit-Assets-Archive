@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModPnSettingsSubredditList.974f69e5ff9415d1cbbd.js
-// Retrieved at 12/1/2021, 11:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModPnSettingsSubredditList.9dcac01d9572334a4d36.js
+// Retrieved at 12/1/2021, 5:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModPnSettingsSubredditList"], {
 		"./node_modules/lodash/times.js": function(e, t, n) {
@@ -64,7 +64,7 @@
 		"./src/reddit/components/Settings/Notifications/ModPnSettingsSubredditList/index.tsx": function(e, t, n) {
 			"use strict";
 			n.r(t), n.d(t, "default", (function() {
-				return _
+				return u
 			}));
 			var i = n("./node_modules/react/index.js"),
 				o = n.n(i),
@@ -73,32 +73,26 @@
 				a = n("./src/reddit/components/Settings/Notifications/LoadingState/index.tsx"),
 				r = n("./src/reddit/components/Settings/shared/Widgets.tsx"),
 				c = n("./src/reddit/components/SubredditIcon/index.tsx"),
-				l = n("./src/reddit/constants/experiments.ts"),
-				m = n("./src/reddit/hooks/useExperimentVariant.ts"),
-				g = n("./src/reddit/selectors/user.ts"),
-				u = n("./src/reddit/components/Settings/Notifications/ModPnSettingsSubredditList/index.m.less"),
-				S = n.n(u);
+				l = n("./src/reddit/selectors/user.ts"),
+				m = n("./src/reddit/components/Settings/Notifications/ModPnSettingsSubredditList/index.m.less"),
+				g = n.n(m);
 
-			function _(e) {
-				return Object(m.a)(l.Jd) !== l.Od.Enabled ? null : o.a.createElement(L, e)
-			}
-
-			function L(e) {
+			function u(e) {
 				const {
 					handleModPnSubredditClick: t
-				} = e, n = Object(s.d)(), l = Object(s.e)(g.j), [m, u] = Object(i.useState)(!0);
+				} = e, n = Object(s.d)(), m = Object(s.e)(l.j), [u, S] = Object(i.useState)(!0);
 				return Object(i.useEffect)(() => {
 					n(Object(d.b)())
 				}, [n]), Object(i.useEffect)(() => {
-					l.length > 0 && u(!1)
-				}, [l]), t ? m ? o.a.createElement(a.a, null) : o.a.createElement(o.a.Fragment, null, l.map(e => o.a.createElement("div", {
-					className: S.a.ModPnSettingLink,
+					m.length > 0 && S(!1)
+				}, [m]), t ? u ? o.a.createElement(a.a, null) : o.a.createElement(o.a.Fragment, null, m.map(e => o.a.createElement("div", {
+					className: g.a.ModPnSettingLink,
 					key: e.id
 				}, o.a.createElement(c.b, {
 					iconUrl: e.communityIcon,
-					className: S.a.CommunityIcon
+					className: g.a.CommunityIcon
 				}), o.a.createElement(r.a, {
-					className: S.a.ActionLinkSetting,
+					className: g.a.ActionLinkSetting,
 					label: e.displayText,
 					onClick: () => t(e.id, e.name),
 					color: "none"
@@ -107,4 +101,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModPnSettingsSubredditList.974f69e5ff9415d1cbbd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModPnSettingsSubredditList.9dcac01d9572334a4d36.js.map

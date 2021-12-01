@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/UserAchievementFlair.9da6dfc9a4572ef7d09b.js
-// Retrieved at 12/1/2021, 11:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/UserAchievementFlair.e0cfe84948d0f99a5e34.js
+// Retrieved at 12/1/2021, 5:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["UserAchievementFlair"], {
 		"./src/reddit/components/Econ/PowerupsFlair/HoverPopup.m.less": function(e, t, n) {
@@ -64,11 +64,11 @@
 					{
 						container: x,
 						isScrollGradientVisible: O,
-						calculateGradientVisibility: w
+						calculateGradientVisibility: C
 					} = Object(l.a)(!1);
 				Object(s.useEffect)(() => {
-					w()
-				}, [w]);
+					C()
+				}, [C]);
 				return c.a.createElement("div", {
 					className: Object(r.a)(y.a.container, e)
 				}, c.a.createElement("div", {
@@ -85,7 +85,7 @@
 					className: y.a.headerDelimiter
 				}), c.a.createElement("div", {
 					className: y.a.flairs,
-					onScroll: w,
+					onScroll: C,
 					ref: x
 				}, b.map(e => c.a.createElement(k, {
 					flair: e,
@@ -262,7 +262,7 @@
 								experimentName: c.F,
 								expEventOverride: t
 							});
-							return !!(Object(c.wf)(n) ? void 0 : n)
+							return !!(Object(c.uf)(n) ? void 0 : n)
 						})(n)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -492,7 +492,7 @@
 			function O(e) {
 				return g()(e, "id").sort((e, t) => e.created - t.created)
 			}
-			var w = (e = x, t) => {
+			var C = (e = x, t) => {
 					switch (t.type) {
 						case a.f:
 						case h.w:
@@ -544,15 +544,15 @@
 							return e
 					}
 				},
-				C = n("./node_modules/lodash/mapValues.js"),
-				_ = n.n(C),
+				_ = n("./node_modules/lodash/mapValues.js"),
+				w = n.n(_),
 				E = n("./src/reddit/helpers/commentList/index.ts"),
 				P = n("./src/reddit/models/Comment/index.ts");
 			const L = {};
 
 			function T(e) {
 				const t = e;
-				return _()(t, ({
+				return w()(t, ({
 					depth: e,
 					next: t,
 					prev: n
@@ -765,7 +765,7 @@
 			t.a = Object(r.c)({
 				api: f,
 				followed: y,
-				keyToChatCommentLinks: w,
+				keyToChatCommentLinks: C,
 				keyToCommentThreadLinkSets: K,
 				keyToHeadCommentId: N,
 				keyToPostId: D,
@@ -795,11 +795,11 @@
 			})), n.d(t, "o", (function() {
 				return O
 			})), n.d(t, "j", (function() {
-				return w
-			})), n.d(t, "l", (function() {
 				return C
-			})), n.d(t, "h", (function() {
+			})), n.d(t, "l", (function() {
 				return _
+			})), n.d(t, "h", (function() {
+				return w
 			})), n.d(t, "a", (function() {
 				return E
 			})), n.d(t, "b", (function() {
@@ -920,11 +920,11 @@
 				O = (e, {
 					commentsPageKey: t
 				}) => e.pages.comments.keyToCommentThreadLinkSets[t],
-				w = (e, t) => {
+				C = (e, t) => {
 					const n = t.commentsPageKey ? x(e, t) : null;
 					return n ? n.depth : null
 				},
-				C = (e, {
+				_ = (e, {
 					commentLink: t
 				}) => {
 					const {
@@ -942,7 +942,7 @@
 							return null
 					}
 				},
-				_ = (e, t) => {
+				w = (e, t) => {
 					if (e.platform.currentPage && e.platform.currentPage.urlParams && e.platform.currentPage.urlParams.partialPostId) {
 						const {
 							partialPostId: t
@@ -983,7 +983,7 @@
 						s = Object(m.b)(e, {
 							commentId: r
 						}),
-						c = s && w(e, {
+						c = s && C(e, {
 							commentId: s.id,
 							commentLink: void 0,
 							commentsPageKey: t
@@ -1074,4 +1074,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UserAchievementFlair.9da6dfc9a4572ef7d09b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UserAchievementFlair.e0cfe84948d0f99a5e34.js.map
