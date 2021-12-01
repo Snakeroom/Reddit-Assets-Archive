@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.adb652fddf3533ae4ef3.js
-// Retrieved at 12/1/2021, 3:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.515872b586b15faf90d9.js
+// Retrieved at 12/1/2021, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -19250,6 +19250,16 @@
 			const de = [o.a, r.a, a.b, d, l.a, u.a, W, J, Y, ...s.a, ...m.a, f, ...C.a, E.a, U.a, L.b, ce.b, F.b, ae.b, h.c, D, B, O.a, x.a, y.a, A.a, R.a, ...T, v, ...j.a, w.a, k.a, S.c, M.a, P.a, G.a, V.a, Q.a, K.a, X.a, z.a, Z.a, ...te.a, ...ne, ee.a, ...re.a, ie.a, se.b, oe.a, _.a, $.a, ...b];
 			t.a = de
 		},
+		"./src/reddit/routes/meta/constants.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "b", (function() {
+				return s
+			})), n.d(t, "a", (function() {
+				return o
+			}));
+			const s = "/community-points/",
+				o = "/community-points/documentation/*"
+		},
 		"./src/reddit/routes/meta/index.ts": function(e, t, n) {
 			"use strict";
 			var s = n("./node_modules/@loadable/component/dist/loadable.esm.js"),
@@ -19262,8 +19272,9 @@
 				l = n("./src/reddit/constants/modals.ts"),
 				u = n("./src/reddit/featureFlags/index.ts"),
 				m = n("./src/reddit/helpers/crypto/vaultActionLink.ts"),
-				p = n("./src/reddit/selectors/user.ts");
-			const b = {
+				p = n("./src/reddit/selectors/user.ts"),
+				b = n("./src/reddit/routes/meta/constants.ts");
+			const h = {
 					action: () => async (e, t) => {
 						Object(p.K)(t()) || await e(Object(d.t)())
 					},
@@ -19294,7 +19305,7 @@
 					},
 					path: ["/web/points-migration/"]
 				},
-				h = {
+				f = {
 					action: i.a,
 					chunk: o.s.META_COMMUNITY_POINTS_LEARN_MORE_PAGE,
 					component: Object(s.a)({
@@ -19321,9 +19332,9 @@
 					meta: {
 						name: o.Mb.META_COMMUNITY_POINTS_LEARN_MORE_PAGE
 					},
-					path: ["/community-points/", "/vault/", "/web/community-points/"]
+					path: [b.b, b.a, "/vault/", "/web/community-points/"]
 				},
-				f = {
+				g = {
 					action: c.a,
 					chunk: o.s.META_MEMBERSHIP_PAYWALL_PAGE,
 					component: Object(s.a)({
@@ -19352,13 +19363,13 @@
 					},
 					path: ["/web/special-membership/:subredditName", "/web/membership/:subredditName"]
 				},
-				g = e => async (t, n) => {
+				v = e => async (t, n) => {
 					const s = Object(m.a)(e.queryParams);
 					Object(p.K)(n()) || await t(Object(d.t)()), s && setTimeout(async () => {
 						await t(Object(r.c)(`/r/${encodeURIComponent(s.subreddit)}/`)), u.d.spBurnLinks(n()) && t(Object(a.h)(l.a.CRYPTO_BURN_POINTS, s))
 					}, 0)
-				}, v = {
-					action: g,
+				}, O = {
+					action: v,
 					chunk: o.s.EMPTY,
 					exact: !0,
 					meta: {
@@ -19366,7 +19377,7 @@
 					},
 					path: ["/vault/burn"]
 				};
-			t.a = [b, h, f, v]
+			t.a = [h, f, g, O]
 		},
 		"./src/reddit/routes/modQueue/index.ts": function(e, t, n) {
 			"use strict";
@@ -21114,4 +21125,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit~Subreddit", "Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Chat~Governance~Reddit", 0, "Governance~ModListing~Reddit", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.adb652fddf3533ae4ef3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.515872b586b15faf90d9.js.map
