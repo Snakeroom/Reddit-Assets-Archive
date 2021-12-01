@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.d857ad5a860453d91830.js
-// Retrieved at 11/15/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.0b2a74433db8357ddba1.js
+// Retrieved at 12/1/2021, 5:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -222,8 +222,8 @@
 						} = l;
 					if (!Object(M.h)(l, e) || !t) return;
 					if (!d) throw new x.a("session", d);
-					const h = Object(U.n)(l),
-						p = Object(U.p)(l),
+					const h = Object(U.o)(l),
+						p = Object(U.q)(l),
 						b = {
 							channelSendbirdId: e,
 							inviterUserId: t.id,
@@ -639,7 +639,7 @@
 				apiContext: a
 			}) => {
 				const s = n(),
-					r = Object(p.o)(s);
+					r = Object(p.p)(s);
 				t(Object(i.M)()), await Promise.all([Object(d.l)(a(), e, r), b.a.setPushPreference(e, !0)]).then(() => {
 					const n = Object(m.h)(s, e);
 					n && t(Object(c.P)({
@@ -651,7 +651,7 @@
 				apiContext: a
 			}) => {
 				const s = n(),
-					r = Object(p.o)(s);
+					r = Object(p.p)(s);
 				t(Object(i.W)()), await Promise.all([Object(d.m)(a(), e, r), b.a.setPushPreference(e, !1)]).then(() => {
 					const n = Object(m.h)(s, e);
 					n && t(Object(c.P)({
@@ -3021,6 +3021,13 @@
 				text: "_3k0sISq1Sewv-7h_jA7Nhh"
 			}
 		},
+		"./src/chat/components/BlockedUserPrompt/index.m.less": function(e, t, n) {
+			e.exports = {
+				blockedUserMessage: "_3Rf-Qa9_ukiAOb8MrqdPP2",
+				iconWrapper: "_1UwYdOFMbAmnmenMtc1okl",
+				infoIcon: "_1foGeoZo-UtDIlodALfNi9"
+			}
+		},
 		"./src/chat/components/ChannelHeaderDropdown/index.m.less": function(e, t, n) {
 			e.exports = {
 				Dropdown: "_1qhSxdEj1WQNv1ToBDZ2SG",
@@ -3142,7 +3149,7 @@
 						message: n
 					}) => t && n && n.sender ? e === n.sender.userId ? u.fbt._("You:", null, {
 						hk: "wP43r"
-					}) : `${n.sender.nickname}:` : "")(e), o = Object(c.e)(b.l);
+					}) : `${n.sender.nickname}:` : "")(e), o = Object(c.e)(b.m);
 					if (n && (null == a ? void 0 : a.creationReason) === p.a.AWARDING) return s.a.createElement(s.a.Fragment, null, [r, " ", u.fbt._("Sent a note with an award", null, {
 						hk: "4FSnF0"
 					})]);
@@ -3233,10 +3240,10 @@
 					var f;
 					const O = Object(c.e)(t => Object(I.t)(t, e)),
 						x = Object(c.e)(t => Object(I.k)(t, e)),
-						N = Object(c.e)(t => Object(I.J)(t, {
+						N = Object(c.e)(t => Object(I.K)(t, {
 							channelId: e
 						})),
-						w = Object(c.e)(b.o),
+						w = Object(c.e)(b.p),
 						k = u === v.b.INVITED,
 						M = Object(a.useMemo)(() => k ? Object(C.channelAction)(e, v.a.VIEW_INVITE) : Object(C.channelUrl)(e), [k, e]),
 						T = Object(a.useMemo)(() => Object(C.getRedirectURL)(M), [M]),
@@ -3757,7 +3764,7 @@
 		"./src/chat/components/FrameContent/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return yc
+				return Ac
 			}));
 			var a = n("./node_modules/lodash/isEqual.js"),
 				s = n.n(a),
@@ -3961,8 +3968,8 @@
 				B = n("./src/chat/actions/message/index.ts"),
 				F = n("./src/chat/actions/message/inboxScroller.ts"),
 				H = n("./src/chat/actions/message/richUnit.ts"),
-				G = n("./src/chat/controls/Button/index.tsx"),
-				V = n("./src/chat/icons/svgs/Close/index.tsx");
+				G = n("./src/chat/components/BlockedUserPrompt/index.m.less"),
+				V = n.n(G);
 
 			function z() {
 				return (z = Object.assign || function(e) {
@@ -3974,15 +3981,76 @@
 				}).apply(this, arguments)
 			}
 			var W = e => r.a.createElement(b.a, z({}, e, {
+				viewBox: "0 0 20 20"
+			}), r.a.createElement("path", {
+				d: "M10 .875A9.125 9.125 0 1 0 19.125 10 9.135 9.135 0 0 0 10 .875Zm1.087 14.643H8.913V8.162h2.174Zm.058-8.852A1.35 1.35 0 1 1 11.319 6a1.3 1.3 0 0 1-.174.666Z"
+			}));
+			const {
+				fbt: K
+			} = n("./node_modules/fbt/lib/FbtPublic.js");
+			var Z = ({
+					hasJoinedChat: e
+				}) => r.a.createElement("span", {
+					className: V.a.blockedUserMessage
+				}, r.a.createElement("span", {
+					className: V.a.iconWrapper
+				}, r.a.createElement(W, {
+					className: V.a.infoIcon
+				}), K._("Only visible to you", null, {
+					hk: "1KPOVD"
+				})), e ? K._("An account you blocked just joined this chat. Stay and see each other's messages and activity or silently leave.", null, {
+					hk: "1Wr2Y0"
+				}) : K._("An account you blocked is in the chat. Stay and see each other's messages and activity or silently leave.", null, {
+					hk: "4oHZil"
+				})),
+				q = n("./src/chat/models/Channel/index.ts");
+			const {
+				fbt: Q
+			} = n("./node_modules/fbt/lib/FbtPublic.js");
+			var Y = ({
+					channel: e
+				}) => {
+					const t = e.type === q.b.Direct,
+						n = e.members.filter(e => e.isBlockedByMe);
+					if (t) {
+						const e = null == n ? void 0 : n[0];
+						if (e) return r.a.createElement("span", {
+							className: V.a.blockedUserMessage
+						}, Q._("@{name} blocked", [Q._param("name", null == e ? void 0 : e.name)], {
+							hk: "wJJtg"
+						}))
+					} else {
+						if (e.members.filter(e => e.state === q.e.Joined && e.isBlockedByMe).length) return r.a.createElement(Z, {
+							hasJoinedChat: !0
+						});
+						if (null == n ? void 0 : n.length) return r.a.createElement(Z, {
+							hasJoinedChat: !1
+						})
+					}
+					return null
+				},
+				X = n("./src/chat/controls/Button/index.tsx"),
+				J = n("./src/chat/icons/svgs/Close/index.tsx");
+
+			function $() {
+				return ($ = Object.assign || function(e) {
+					for (var t = 1; t < arguments.length; t++) {
+						var n = arguments[t];
+						for (var a in n) Object.prototype.hasOwnProperty.call(n, a) && (e[a] = n[a])
+					}
+					return e
+				}).apply(this, arguments)
+			}
+			var ee = e => r.a.createElement(b.a, $({}, e, {
 					viewBox: "0 0 20 20"
 				}), r.a.createElement("g", {
 					id: "icons_flat"
 				}, r.a.createElement("polygon", {
 					points: "19,9 11,9 11,1 9,1 9,9 1,9 1,11 9,11 9,19 11,19 11,11 19,11"
 				}))),
-				K = n("./src/chat/components/FileUploader/FilePreview/index.m.less"),
-				Z = n.n(K);
-			var q = () => {
+				te = n("./src/chat/components/FileUploader/FilePreview/index.m.less"),
+				ne = n.n(te);
+			var ae = () => {
 					const e = Object(o.d)(),
 						{
 							uploads: t,
@@ -3990,106 +4058,105 @@
 							isOver: a,
 							isLimited: s
 						} = M(),
-						c = Object(o.e)(_.I),
+						c = Object(o.e)(_.J),
 						l = t.map(t => r.a.createElement("div", {
-							className: Z.a.Item,
+							className: ne.a.Item,
 							key: `item-${t.metadata.localUrl}`
-						}, r.a.createElement(G.d, {
-							className: Z.a.CloseButton,
+						}, r.a.createElement(X.d, {
+							className: ne.a.CloseButton,
 							onClick: () => e(Object(d.g)(t.id))
-						}, r.a.createElement(V.a, null)), r.a.createElement("img", {
-							className: Z.a.Image,
+						}, r.a.createElement(J.a, null)), r.a.createElement("img", {
+							className: ne.a.Image,
 							src: t.metadata.localUrl,
 							key: `image-${t.metadata.localUrl}`
 						}))),
 						u = (a || n || l.length) && !s || s && a ? r.a.createElement(L, {
-							className: Object(i.a)(Z.a.Placeholder, {
-								[Z.a.isLimited]: s
+							className: Object(i.a)(ne.a.Placeholder, {
+								[ne.a.isLimited]: s
 							}),
 							key: "item-placeholder"
-						}, r.a.createElement(W, {
-							className: Z.a.Icon
+						}, r.a.createElement(ee, {
+							className: ne.a.Icon
 						})) : null;
 					return !l && !u || c ? null : r.a.createElement("div", {
-						className: Z.a.Preview
+						className: ne.a.Preview
 					}, l, u)
 				},
-				Q = n("./node_modules/fbt/lib/FbtPublic.js"),
-				Y = n("./src/chat/actions/channel/dropdown.ts"),
-				X = n("./src/chat/actions/inviteLink/index.ts"),
-				J = n("./src/chat/actions/renameGroupChat/index.ts"),
-				$ = n("./src/chat/icons/svgs/Edit/index.tsx"),
-				ee = n("./src/chat/icons/svgs/InviteMember/index.tsx"),
-				te = n("./src/chat/icons/svgs/Link/index.tsx"),
-				ne = n("./src/chat/icons/Userpic/index.tsx"),
-				ae = n("./src/chat/models/Channel/index.ts"),
-				se = n("./src/chat/selectors/experiments.ts"),
-				ce = n("./src/chat/components/Intro/index.m.less"),
-				re = n.n(ce);
-			var oe = ({
+				se = n("./node_modules/fbt/lib/FbtPublic.js"),
+				ce = n("./src/chat/actions/channel/dropdown.ts"),
+				re = n("./src/chat/actions/inviteLink/index.ts"),
+				oe = n("./src/chat/actions/renameGroupChat/index.ts"),
+				ie = n("./src/chat/icons/svgs/Edit/index.tsx"),
+				le = n("./src/chat/icons/svgs/InviteMember/index.tsx"),
+				de = n("./src/chat/icons/svgs/Link/index.tsx"),
+				ue = n("./src/chat/icons/Userpic/index.tsx"),
+				he = n("./src/chat/selectors/experiments.ts"),
+				me = n("./src/chat/components/Intro/index.m.less"),
+				pe = n.n(me);
+			var be = ({
 					users: e,
 					channel: t
 				}) => {
 					const n = Object(o.d)(),
-						a = Object(o.e)(se.f);
+						a = Object(o.e)(he.g);
 					return r.a.createElement("span", {
-						className: re.a.Wrapper
+						className: pe.a.Wrapper
 					}, r.a.createElement("ul", {
-						className: re.a.Users
+						className: pe.a.Users
 					}, e.map((e, t, n) => r.a.createElement("li", {
-						className: re.a.User,
+						className: pe.a.User,
 						key: e.id
-					}, r.a.createElement(ne.a, {
+					}, r.a.createElement(ue.a, {
 						height: "16px",
 						width: "16px",
 						userId: e.id
 					}), r.a.createElement("span", {
-						className: re.a.UserTitle
-					}, `${e.name}${t<n.length-1?",":""}`)))), t.type === ae.b.Group && r.a.createElement("div", {
-						className: re.a.IconButtons
-					}, a && r.a.createElement(G.b, {
-						className: re.a.IconButton,
-						text: Q.fbt._("Copy link", null, {
+						className: pe.a.UserTitle
+					}, `${e.name}${t<n.length-1?",":""}`)))), t.type === q.b.Group && r.a.createElement("div", {
+						className: pe.a.IconButtons
+					}, a && r.a.createElement(X.b, {
+						className: pe.a.IconButton,
+						text: se.fbt._("Copy link", null, {
 							hk: "2Aapc1"
 						}),
 						onClick: () => {
-							(null == t ? void 0 : t.channelId) && n(Object(X.e)(t.channelId))
+							(null == t ? void 0 : t.channelId) && n(Object(re.e)(t.channelId))
 						}
-					}, r.a.createElement(te.a, null)), r.a.createElement(G.b, {
-						className: re.a.IconButton,
-						text: Q.fbt._("Invite", null, {
+					}, r.a.createElement(de.a, null)), r.a.createElement(X.b, {
+						className: pe.a.IconButton,
+						text: se.fbt._("Invite", null, {
 							hk: "3DLcPk"
 						}),
 						onClick: () => {
-							n(Object(Y.c)())
+							n(Object(ce.c)())
 						}
-					}, r.a.createElement(ee.a, null)), r.a.createElement(G.b, {
-						className: re.a.IconButton,
-						text: Q.fbt._("Rename", null, {
+					}, r.a.createElement(le.a, null)), r.a.createElement(X.b, {
+						className: pe.a.IconButton,
+						text: se.fbt._("Rename", null, {
 							hk: "3vXtjE"
 						}),
 						onClick: () => {
-							n(Object(J.b)({
+							n(Object(oe.b)({
 								isVisible: !0
 							}))
 						}
-					}, r.a.createElement($.a, null))))
+					}, r.a.createElement(ie.a, null))))
 				},
-				ie = n("./node_modules/lodash/noop.js"),
-				le = n.n(ie),
-				de = n("./node_modules/lodash/throttle.js"),
-				ue = n.n(de),
-				he = n("./src/chat/actions/channel/draftMessage.ts"),
-				me = n("./src/chat/actions/gifs/index.ts");
-			const pe = "/";
-			var be = n("./node_modules/react-router-redux/es/index.js"),
-				ge = n("./src/lib/constants/index.ts"),
-				fe = n("./src/telemetry/models/Event.ts"),
-				Oe = n("./src/chat/actions/tooltip.ts"),
-				Ee = n("./src/chat/components/MessageInput/constants.ts"),
-				ve = n("./src/chat/constants/messages.ts"),
-				je = n("./src/chat/icons/Snoo/index.tsx");
-			const Ce = function(e, t) {
+				ge = n("./node_modules/lodash/noop.js"),
+				fe = n.n(ge),
+				Oe = n("./node_modules/lodash/throttle.js"),
+				Ee = n.n(Oe),
+				ve = n("./src/chat/actions/channel/draftMessage.ts"),
+				je = n("./src/chat/actions/gifs/index.ts");
+			const Ce = "/";
+			var _e = n("./node_modules/react-router-redux/es/index.js"),
+				Ie = n("./src/lib/constants/index.ts"),
+				xe = n("./src/telemetry/models/Event.ts"),
+				ye = n("./src/chat/actions/tooltip.ts"),
+				Se = n("./src/chat/components/MessageInput/constants.ts"),
+				Ne = n("./src/chat/constants/messages.ts"),
+				we = n("./src/chat/icons/Snoo/index.tsx");
+			const ke = function(e, t) {
 					let n = "",
 						a = 0,
 						s = t,
@@ -4109,24 +4176,24 @@
 						posEnd: c
 					}
 				},
-				_e = function(e) {
+				Me = function(e) {
 					return (/^(@|u\/)([^\s]+)/g.exec(e) || [])[2] || ""
 				},
-				Ie = function(e, t) {
+				Te = function(e, t) {
 					const {
 						word: n
-					} = Ce(e, t);
+					} = ke(e, t);
 					return {
 						hasUsername: /^(@|u\/)([^\s]+)?$/g.test(n),
-						username: _e(n)
+						username: Me(n)
 					}
 				},
-				xe = function(e, t, n) {
+				Le = function(e, t, n) {
 					const {
 						word: a,
 						posStart: s,
 						posEnd: c
-					} = Ce(e, n), r = (/^(@|u\/)/gm.exec(a) || [])[1];
+					} = ke(e, n), r = (/^(@|u\/)/gm.exec(a) || [])[1];
 					if (!a) return {
 						textUpdate: e,
 						posEndUpdate: c
@@ -4149,20 +4216,20 @@
 						posEndUpdate: l
 					}
 				},
-				ye = e => Boolean(e.match(/^(\/)(\w+)?$/g));
-			var Se, Ne = n("./src/chat/constants/users.ts"),
-				we = n("./src/chat/endpoints/accounts/index.ts"),
-				ke = n("./src/chat/endpoints/sendbird/index.ts"),
-				Me = n("./src/chat/helpers/urls/index.ts"),
-				Te = n("./src/chat/models/Channel/utils.ts"),
-				Le = n("./src/chat/models/Contact/index.ts"),
-				Ae = n("./src/chat/selectors/contacts.ts");
+				Ae = e => Boolean(e.match(/^(\/)(\w+)?$/g));
+			var De, Pe = n("./src/chat/constants/users.ts"),
+				Ue = n("./src/chat/endpoints/accounts/index.ts"),
+				Re = n("./src/chat/endpoints/sendbird/index.ts"),
+				Be = n("./src/chat/helpers/urls/index.ts"),
+				Fe = n("./src/chat/models/Channel/utils.ts"),
+				He = n("./src/chat/models/Contact/index.ts"),
+				Ge = n("./src/chat/selectors/contacts.ts");
 			! function(e) {
 				e.GIF = "gif", e.SNOOMOJI = "snoomoji", e.INVITE = "invite", e.MEMBERS = "members", e.MUTE = "mute", e.UNMUTE = "unmute", e.LEAVE = "leave", e.KICK = "kick", e.NEW_CHAT = "new_chat", e.DIRECT = "direct", e.TEXT_EMOJI = "text_emoji"
-			}(Se || (Se = {}));
+			}(De || (De = {}));
 			const {
-				Group: De
-			} = ae.b, Pe = {
+				Group: Ve
+			} = q.b, ze = {
 				shrug: "¯\\_(ツ)_/¯",
 				tableflip: "(╯°□°）╯︵ ┻━┻",
 				unflip: "┬─┬ ノ( ゜-゜ノ)",
@@ -4187,7 +4254,7 @@
 				phone: "(((☎)))",
 				rose: "@~)~~~~",
 				yummy: "(っ˘ڡ˘ς)"
-			}, Ue = ({
+			}, We = ({
 				commandValue: e,
 				channelId: t
 			}) => async (n, a, {
@@ -4201,37 +4268,37 @@
 					} = c;
 				if (t && e && r) {
 					const n = Object(_.h)(a(), t);
-					if ((null == n ? void 0 : n.type) === ae.b.Group) {
-						if (e === ge.E) return;
+					if ((null == n ? void 0 : n.type) === q.b.Group) {
+						if (e === Ie.E) return;
 						let n = [];
-						const c = Object(Ae.c)(a(), e);
+						const c = Object(Ge.c)(a(), e);
 						if (c) n = [{
 							user_id: c.id,
 							nickname: c.name
 						}];
 						else {
-							const t = await Object(we.b)(s(), e);
+							const t = await Object(Ue.b)(s(), e);
 							if (t.ok) {
-								const e = Object(Le.d)(t.body.data);
+								const e = Object(He.d)(t.body.data);
 								e && (n = [{
 									user_id: e.id,
 									nickname: e.name
 								}])
 							}
 						}
-						n.length && await Object(ke.i)(s(), r, n, Object(Te.a)(t))
+						n.length && await Object(Re.i)(s(), r, n, Object(Fe.a)(t))
 					}
 				}
-			}, Re = ({
+			}, Ke = ({
 				channelId: e,
 				commandShortcut: t
 			}) => async n => {
 				if (e && t) {
-					const a = Pe[t];
-					a && n(Object(B.r)(e, a, ve.c.TEXT))
+					const a = ze[t];
+					a && n(Object(B.r)(e, a, Ne.c.TEXT))
 				}
-			}, Be = [{
-				name: Se.GIF,
+			}, Ze = [{
+				name: De.GIF,
 				command: "giphy",
 				aliases: ["gif", "g"],
 				description: "Giphy",
@@ -4239,12 +4306,12 @@
 				action: ({
 					commandValue: e
 				}) => async t => {
-					e && t(Object(me.l)(e)), t(Object(Oe.c)({
-						tooltipId: Ee.b
+					e && t(Object(je.l)(e)), t(Object(ye.c)({
+						tooltipId: Se.b
 					}))
 				}
 			}, {
-				name: Se.SNOOMOJI,
+				name: De.SNOOMOJI,
 				command: "snoomoji",
 				aliases: ["s"],
 				description: "Add a snoomoji",
@@ -4253,21 +4320,21 @@
 					commandValue: e,
 					channelId: t
 				}) => async n => {
-					e && t && je.b.includes(e) ? n(Object(B.r)(t, e.trim(), ve.c.SNOOMOJI)) : n(Object(Oe.c)({
-						tooltipId: Ee.d
+					e && t && we.b.includes(e) ? n(Object(B.r)(t, e.trim(), Ne.c.SNOOMOJI)) : n(Object(ye.c)({
+						tooltipId: Se.d
 					}))
 				}
 			}, {
-				name: Se.INVITE,
+				name: De.INVITE,
 				command: "invite",
 				description: "Invite",
 				example: "/invite username",
-				channelType: De,
-				action: Ue
+				channelType: Ve,
+				action: We
 			}, {
-				name: Se.MEMBERS,
+				name: De.MEMBERS,
 				command: "members",
-				channelType: De,
+				channelType: Ve,
 				aliases: ["m"],
 				description: "Display group chat's member list",
 				example: "/members · /m",
@@ -4276,29 +4343,29 @@
 				}) => async (t, n) => {
 					if (e) {
 						const a = Object(_.h)(n(), e);
-						(null == a ? void 0 : a.type) === ae.b.Group && t(Object(Y.j)())
+						(null == a ? void 0 : a.type) === q.b.Group && t(Object(ce.j)())
 					}
 				}
 			}, {
-				name: Se.MUTE,
+				name: De.MUTE,
 				command: "mute",
 				description: "Mute this chat",
 				action: ({
 					channelId: e
 				}) => async (t, n) => {
-					e && t(Object(Y.e)(e))
+					e && t(Object(ce.e)(e))
 				}
 			}, {
-				name: Se.UNMUTE,
+				name: De.UNMUTE,
 				command: "unmute",
 				description: "Unmute this chat",
 				action: ({
 					channelId: e
 				}) => async (t, n) => {
-					e && t(Object(Y.g)(e))
+					e && t(Object(ce.g)(e))
 				}
 			}, {
-				name: Se.LEAVE,
+				name: De.LEAVE,
 				command: "leave",
 				description: "Leave this chat",
 				action: ({
@@ -4307,10 +4374,10 @@
 					e && t(Object(R.G)(e))
 				}
 			}, {
-				name: Se.KICK,
+				name: De.KICK,
 				command: "kick",
 				description: "Kick a user from this chat",
-				channelType: De,
+				channelType: Ve,
 				example: "/kick u/username",
 				action: ({
 					commandValue: e,
@@ -4325,37 +4392,37 @@
 							}
 						} = c;
 					if (!Object(_.a)(c)) return;
-					const o = _e(e);
+					const o = Me(e);
 					if (t && o && r) {
 						const e = Object(_.h)(a(), t);
-						if ((null == e ? void 0 : e.type) === ae.b.Group) {
-							if (o === ge.E) return;
+						if ((null == e ? void 0 : e.type) === q.b.Group) {
+							if (o === Ie.E) return;
 							let e;
-							const c = Object(Ae.c)(a(), o);
+							const c = Object(Ge.c)(a(), o);
 							if (c) e = c.id;
 							else {
-								const t = await Object(we.b)(s(), o);
+								const t = await Object(Ue.b)(s(), o);
 								if (t.ok) {
-									const n = Object(Le.d)(t.body.data);
+									const n = Object(He.d)(t.body.data);
 									n && (e = n.id)
 								}
 							}
-							e && n(Object(be.b)(Object(Me.userActionUrl)(t, e, Ne.a.Kick, {
-								source: fe.b.ChatView
+							e && n(Object(_e.b)(Object(Be.userActionUrl)(t, e, Pe.a.Kick, {
+								source: xe.b.ChatView
 							})))
 						}
 					}
 				}
 			}, {
-				name: Se.NEW_CHAT,
+				name: De.NEW_CHAT,
 				command: "new",
 				description: "Start new chat",
 				action: () => async e => {
-					const t = Object(Me.getRedirectURL)(Object(Me.channelUrl)("create"));
-					e(Object(be.b)(t))
+					const t = Object(Be.getRedirectURL)(Object(Be.channelUrl)("create"));
+					e(Object(_e.b)(t))
 				}
 			}, {
-				name: Se.DIRECT,
+				name: De.DIRECT,
 				command: "dm",
 				description: "Direct message someone in this chat",
 				example: "/dm u/username",
@@ -4365,22 +4432,22 @@
 					if (!e) return;
 					const a = Object(_.q)(n(), e);
 					if (a) {
-						const e = Object(Me.getRedirectURL)(Object(Me.channelUrl)(a.channelId));
-						t(Object(be.b)(e))
-					} else t(Ue({
+						const e = Object(Be.getRedirectURL)(Object(Be.channelUrl)(a.channelId));
+						t(Object(_e.b)(e))
+					} else t(We({
 						commandValue: e
 					}))
 				}
-			}, ...Object.keys(Pe).map(e => ({
-				name: Se.TEXT_EMOJI,
+			}, ...Object.keys(ze).map(e => ({
+				name: De.TEXT_EMOJI,
 				command: e,
-				description: Pe[e],
-				action: Re
-			}))], Fe = (e, t) => async n => {
-				Be.forEach(async a => {
+				description: ze[e],
+				action: Ke
+			}))], qe = (e, t) => async n => {
+				Ze.forEach(async a => {
 					var s;
 					const c = (e => {
-							const t = e.map(e => `${pe}${e}`).join("|");
+							const t = e.map(e => `${Ce}${e}`).join("|");
 							return new RegExp(`^(${t})?(\\s.+)?$`, "i")
 						})([...(null === (s = a.aliases) || void 0 === s ? void 0 : s.length) ? a.aliases : [], a.command]),
 						r = e.match(c);
@@ -4392,34 +4459,34 @@
 							commandValue: null == s ? void 0 : s.trim(),
 							channelId: t,
 							commandShortcut: e
-						})), n(Object(he.f)(t))
+						})), n(Object(ve.f)(t))
 					}
 				})
 			};
-			var He = n("./src/chat/actions/surveyTrigger/index.ts"),
-				Ge = n("./src/higherOrderComponents/asTooltip.tsx"),
-				Ve = n("./src/chat/components/Scroller/index.tsx"),
-				ze = n("./src/chat/constants/page.ts"),
-				We = n("./src/chat/controls/Dropdown/index.tsx"),
-				Ke = n("./src/chat/selectors/app.ts"),
-				Ze = n("./src/chat/selectors/tooltip.ts"),
-				qe = n("./src/chat/components/MessageTooltip/index.m.less"),
-				Qe = n.n(qe);
-			const Ye = "MessageInputTooltip--Container",
-				Xe = Object(Ge.a)(We.a),
-				Je = ({
+			var Qe = n("./src/chat/actions/surveyTrigger/index.ts"),
+				Ye = n("./src/higherOrderComponents/asTooltip.tsx"),
+				Xe = n("./src/chat/components/Scroller/index.tsx"),
+				Je = n("./src/chat/constants/page.ts"),
+				$e = n("./src/chat/controls/Dropdown/index.tsx"),
+				et = n("./src/chat/selectors/app.ts"),
+				tt = n("./src/chat/selectors/tooltip.ts"),
+				nt = n("./src/chat/components/MessageTooltip/index.m.less"),
+				at = n.n(nt);
+			const st = "MessageInputTooltip--Container",
+				ct = Object(Ye.a)($e.a),
+				rt = ({
 					children: e
 				}) => r.a.createElement("div", {
-					className: Qe.a.Picker
+					className: at.a.Picker
 				}, e);
-			var $e = ({
+			var ot = ({
 					id: e,
 					isOpen: t,
 					children: n,
 					arrowOffset: a = 15,
 					isArrowShow: s = !0
 				}) => {
-					const c = Object(o.e)(Object(Ze.b)(e)),
+					const c = Object(o.e)(Object(tt.b)(e)),
 						l = Object(o.d)(),
 						d = s ? {
 							left: "unset",
@@ -4428,12 +4495,12 @@
 						} : {
 							bottom: "50px"
 						};
-					return r.a.createElement(Xe, {
-						className: Object(i.a)(Qe.a.Dropdown, {
-							[Qe.a.noArrow]: !s
+					return r.a.createElement(ct, {
+						className: Object(i.a)(at.a.Dropdown, {
+							[at.a.noArrow]: !s
 						}),
-						tooltipId: Ye,
-						container: document.getElementById(ze.a),
+						tooltipId: st,
+						container: document.getElementById(Je.a),
 						isOpen: t || c,
 						targetPosition: ["left", "bottom"],
 						excludeContainerPosition: !0,
@@ -4444,22 +4511,22 @@
 							top: "unset"
 						}
 					}, r.a.createElement("div", {
-						className: Qe.a.DropdownWrapper,
-						onClick: () => l(Object(Oe.d)())
-					}, r.a.createElement(Je, null, n, s && r.a.createElement("span", {
-						className: Qe.a.Arrow,
+						className: at.a.DropdownWrapper,
+						onClick: () => l(Object(ye.d)())
+					}, r.a.createElement(rt, null, n, s && r.a.createElement("span", {
+						className: at.a.Arrow,
 						style: {
 							right: `${a}px`
 						}
 					}))))
 				},
-				et = n("./node_modules/lodash/debounce.js"),
-				tt = n.n(et);
-			var nt = n("./src/chat/components/SkeletonPlaceholder/SkeletonPlaceholder.tsx"),
-				at = n("./src/chat/controls/Gif/index.tsx");
+				it = n("./node_modules/lodash/debounce.js"),
+				lt = n.n(it);
+			var dt = n("./src/chat/components/SkeletonPlaceholder/SkeletonPlaceholder.tsx"),
+				ut = n("./src/chat/controls/Gif/index.tsx");
 
-			function st() {
-				return (st = Object.assign || function(e) {
+			function ht() {
+				return (ht = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var a in n) Object.prototype.hasOwnProperty.call(n, a) && (e[a] = n[a])
@@ -4467,7 +4534,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var ct = e => r.a.createElement(b.a, st({}, e, {
+			var mt = e => r.a.createElement(b.a, ht({}, e, {
 					viewBox: "0 0 20 20"
 				}), e.isFilled ? r.a.createElement("path", {
 					d: "M10,.375A9.625,9.625,0,1,0,19.625,10,9.636,9.636,0,0,0,10,.375Zm3.53,12.1-1.06,1.06L10,11.061,7.53,13.53,6.47,12.47,8.939,10,6.47,7.53,7.53,6.47,10,8.939,12.47,6.47l1.06,1.06L11.061,10Z"
@@ -4476,49 +4543,49 @@
 				}), r.a.createElement("polygon", {
 					points: "12.558 6.558 10 9.116 7.442 6.558 6.558 7.442 9.116 10 6.558 12.558 7.442 13.442 10 10.884 12.558 13.442 13.442 12.558 10.884 10 13.442 7.442 12.558 6.558"
 				}))),
-				rt = n("./src/chat/icons/svgs/Search/index.tsx"),
-				ot = n("./src/chat/selectors/gifs.ts"),
-				it = n("./src/chat/components/MessageTooltip/Picker/Gif/index.m.less"),
-				lt = n.n(it);
-			const dt = ({
+				pt = n("./src/chat/icons/svgs/Search/index.tsx"),
+				bt = n("./src/chat/selectors/gifs.ts"),
+				gt = n("./src/chat/components/MessageTooltip/Picker/Gif/index.m.less"),
+				ft = n.n(gt);
+			const Ot = ({
 					children: e
 				}) => {
-					const t = Object(o.e)(Ke.f);
+					const t = Object(o.e)(et.f);
 					return r.a.createElement("div", {
-						className: Object(i.a)(lt.a.Wrapper, {
-							[lt.a.embedded]: t
+						className: Object(i.a)(ft.a.Wrapper, {
+							[ft.a.embedded]: t
 						})
 					}, e)
 				},
-				ut = ({
+				Et = ({
 					children: e,
 					isVisible: t,
 					onClick: n
 				}) => t ? r.a.createElement("div", {
-					className: lt.a.ClearIcon,
+					className: ft.a.ClearIcon,
 					onClick: n
 				}, e) : null,
-				ht = () => {
-					const e = Object(o.e)(ot.b),
+				vt = () => {
+					const e = Object(o.e)(bt.b),
 						[t, n] = Object(c.useState)(() => e),
 						a = Object(c.useRef)(null),
 						s = Object(o.d)(),
-						i = Object(c.useCallback)(tt()(e => {
-							(null == e ? void 0 : e.length) >= 2 ? s(Object(me.k)(10, e)) : s(Object(me.l)(""))
+						i = Object(c.useCallback)(lt()(e => {
+							(null == e ? void 0 : e.length) >= 2 ? s(Object(je.k)(10, e)) : s(Object(je.l)(""))
 						}, 500), []);
 					return Object(c.useEffect)(() => {
 						var e;
 						null === (e = null == a ? void 0 : a.current) || void 0 === e || e.focus()
 					}, [a]), r.a.createElement("div", {
-						className: lt.a.SearchBarWrapper,
+						className: ft.a.SearchBarWrapper,
 						onClick: e => e.stopPropagation()
-					}, r.a.createElement(rt.a, {
-						className: lt.a.SearchIcon
+					}, r.a.createElement(pt.a, {
+						className: ft.a.SearchIcon
 					}), r.a.createElement("input", {
-						className: lt.a.SearchBar,
+						className: ft.a.SearchBar,
 						ref: a,
 						value: t,
-						placeholder: Q.fbt._("Search", null, {
+						placeholder: se.fbt._("Search", null, {
 							hk: "3ixhgZ"
 						}),
 						tabIndex: 0,
@@ -4527,32 +4594,32 @@
 								n(e), i(e)
 							})(e.currentTarget.value)
 						}
-					}), r.a.createElement(ut, {
+					}), r.a.createElement(Et, {
 						onClick: async () => {
-							(null == a ? void 0 : a.current) && (await s(Object(me.l)("")), n(""), a.current.focus(), s(Object(me.j)(20)))
+							(null == a ? void 0 : a.current) && (await s(Object(je.l)("")), n(""), a.current.focus(), s(Object(je.j)(20)))
 						},
 						isVisible: Boolean(t)
-					}, r.a.createElement(ct, null)))
+					}, r.a.createElement(mt, null)))
 				},
-				mt = ({
+				jt = ({
 					onPickGif: e
 				}) => {
 					const t = Object(o.d)(),
-						n = Object(o.e)(ot.a),
-						a = Object(o.e)(ot.d),
+						n = Object(o.e)(bt.a),
+						a = Object(o.e)(bt.d),
 						s = Object(c.useRef)(null),
-						i = Object(o.e)(ot.b),
-						l = Object(o.e)(ot.c),
-						d = Object(o.e)(ot.f);
+						i = Object(o.e)(bt.b),
+						l = Object(o.e)(bt.c),
+						d = Object(o.e)(bt.f);
 					Object(c.useEffect)(() => {
 						var e;
 						(null === (e = null == s ? void 0 : s.current) || void 0 === e ? void 0 : e.scrollToTop) && s.current.scrollToTop()
 					}, [i]), Object(c.useEffect)(() => {
-						(null == n ? void 0 : n.length) || i || t(Object(me.j)(20)), i && t(Object(me.k)(10, i))
+						(null == n ? void 0 : n.length) || i || t(Object(je.j)(20)), i && t(Object(je.k)(10, i))
 					}, []);
 					const u = (t = !1) => (null == n ? void 0 : n.length) ? n.map((n, a) => {
-						if (Boolean(a % 2) === t) return r.a.createElement(at.a, {
-							className: lt.a.Gif,
+						if (Boolean(a % 2) === t) return r.a.createElement(ut.a, {
+							className: ft.a.Gif,
 							source: n.fixed_width.url,
 							key: n.id,
 							height: n.fixed_width.dimensions.height,
@@ -4563,33 +4630,33 @@
 							})(n)
 						})
 					}) : null;
-					return r.a.createElement(Ve.b, {
-						className: lt.a.GifListWrapper,
+					return r.a.createElement(Xe.b, {
+						className: ft.a.GifListWrapper,
 						ref: s,
-						loadMoreRows: () => t(Object(me.k)(10, i)),
+						loadMoreRows: () => t(Object(je.k)(10, i)),
 						isLoadMoreRowsComplete: (() => !!a) || l
 					}, r.a.createElement(r.a.Fragment, null, r.a.createElement("div", {
-						className: lt.a.Column
-					}, u(), d ? Object(nt.a)({
-						height: nt.f.XS
-					}) : a ? Object(nt.b)(nt.c.FIRST) : null), r.a.createElement("div", {
-						className: lt.a.Column
-					}, u(!0), d ? Object(nt.a)({
-						height: nt.f.S
-					}) : null, a && !d ? Object(nt.b)(nt.c.SECOND) : null)))
+						className: ft.a.Column
+					}, u(), d ? Object(dt.a)({
+						height: dt.f.XS
+					}) : a ? Object(dt.b)(dt.c.FIRST) : null), r.a.createElement("div", {
+						className: ft.a.Column
+					}, u(!0), d ? Object(dt.a)({
+						height: dt.f.S
+					}) : null, a && !d ? Object(dt.b)(dt.c.SECOND) : null)))
 				};
-			var pt = ({
+			var Ct = ({
 					onPickGif: e
-				}) => r.a.createElement(dt, null, r.a.createElement(ht, null), r.a.createElement(mt, {
+				}) => r.a.createElement(Ot, null, r.a.createElement(vt, null), r.a.createElement(jt, {
 					onPickGif: e
 				})),
-				bt = n("./src/config.ts"),
-				gt = n("./src/chat/icons/svgs/ChatNew/index.tsx"),
-				ft = n("./src/chat/icons/svgs/DisableNotifications/index.tsx"),
-				Ot = n("./src/chat/icons/svgs/EnableNotifications/index.tsx");
+				_t = n("./src/config.ts"),
+				It = n("./src/chat/icons/svgs/ChatNew/index.tsx"),
+				xt = n("./src/chat/icons/svgs/DisableNotifications/index.tsx"),
+				yt = n("./src/chat/icons/svgs/EnableNotifications/index.tsx");
 
-			function Et() {
-				return (Et = Object.assign || function(e) {
+			function St() {
+				return (St = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var a in n) Object.prototype.hasOwnProperty.call(n, a) && (e[a] = n[a])
@@ -4597,7 +4664,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var vt = e => r.a.createElement(b.a, Et({}, e, {
+			var Nt = e => r.a.createElement(b.a, St({}, e, {
 				viewBox: "0 0 20 20"
 			}), e.isFilled ? r.a.createElement("path", {
 				d: "M10 .875A9.125 9.125 0 1019.125 10 9.135 9.135 0 0010 .875zM11.107 15a1.242 1.242 0 01-.465.462 1.342 1.342 0 01-1.3 0 1.236 1.236 0 01-.465-.465 1.287 1.287 0 01-.167-.65 1.306 1.306 0 01.167-.653 1.251 1.251 0 01.465-.471 1.27 1.27 0 01.653-.175 1.253 1.253 0 01.649.175A1.322 1.322 0 0111.107 15zm1.781-6.251a2.423 2.423 0 01-.407.646 8.565 8.565 0 01-.629.615q-.335.3-.53.513A1.922 1.922 0 0011 11a1.375 1.375 0 00-.13.6v.6H9.049v-.574a2.411 2.411 0 01.181-.963 2.479 2.479 0 01.435-.694 7.663 7.663 0 01.663-.632q.287-.254.454-.421a1.56 1.56 0 00.277-.372.93.93 0 00.109-.445.856.856 0 00-.15-.5 1.029 1.029 0 00-.407-.346 1.262 1.262 0 00-.564-.127 1.314 1.314 0 00-.608.145 1.153 1.153 0 00-.448.4 1.035 1.035 0 00-.174.566H6.93a2.887 2.887 0 01.417-1.486 2.822 2.822 0 011.118-1.042 3.441 3.441 0 011.63-.377 3.483 3.483 0 011.518.322 2.535 2.535 0 011.059.9 2.331 2.331 0 01.383 1.318 2.136 2.136 0 01-.167.875z"
@@ -4607,8 +4674,8 @@
 				d: "M10.479 13.635a1.085 1.085 0 00-.547-.141 1.035 1.035 0 00-.537.145 1.009 1.009 0 00-.379.388 1.1 1.1 0 00-.137.547 1.018 1.018 0 00.143.533 1.045 1.045 0 00.387.38 1.056 1.056 0 00.536.14 1.076 1.076 0 00.54-.14 1.008 1.008 0 00.387-.385 1.08 1.08 0 00.14-.541 1.05 1.05 0 00-.533-.926zM11.507 5.641a3.213 3.213 0 00-1.425-.309 3.15 3.15 0 00-1.535.368 2.646 2.646 0 00-1.028.974 2.52 2.52 0 00-.363 1.312h1.463a1.172 1.172 0 01.181-.661 1.327 1.327 0 01.516-.468 1.623 1.623 0 011.415-.017 1.212 1.212 0 01.5.431 1.1 1.1 0 01.181.618 1.063 1.063 0 01-.119.5 1.56 1.56 0 01-.3.4 9.531 9.531 0 01-.492.43 6.846 6.846 0 00-.656.585 2.292 2.292 0 00-.431.656 2.206 2.206 0 00-.178.919v.766h1.429v-.793a1.281 1.281 0 01.13-.58 1.824 1.824 0 01.321-.459c.128-.132.3-.3.533-.493a7.691 7.691 0 00.633-.584 2.279 2.279 0 00.41-.622 2.015 2.015 0 00.167-.85A2.262 2.262 0 0012.5 6.5a2.41 2.41 0 00-.993-.859z"
 			})));
 
-			function jt() {
-				return (jt = Object.assign || function(e) {
+			function wt() {
+				return (wt = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var a in n) Object.prototype.hasOwnProperty.call(n, a) && (e[a] = n[a])
@@ -4616,17 +4683,17 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var Ct = e => r.a.createElement(b.a, jt({}, e, {
+			var kt = e => r.a.createElement(b.a, wt({}, e, {
 					viewBox: "0 0 20 20"
 				}), r.a.createElement("path", {
 					d: "M16.8,3.2A9.62,9.62,0,0,0,.491,8.5a9.506,9.506,0,0,0,1.146,6.237L.453,18.647a.726.726,0,0,0,.9.9l3.99-1.143a9.483,9.483,0,0,0,4.652,1.218,9.841,9.841,0,0,0,1.553-.124A9.62,9.62,0,0,0,16.8,3.2Zm1.464,8.176a8.414,8.414,0,0,1-6.919,6.9A8.3,8.3,0,0,1,5.74,17.2l-.232-.138L1.93,18.084l1.063-3.512-.144-.239a8.28,8.28,0,0,1-1.123-5.64,8.378,8.378,0,1,1,16.54,2.678Z"
 				}), r.a.createElement("path", {
 					d: "M10,5.375A4.625,4.625,0,1,0,14.625,10,4.631,4.631,0,0,0,10,5.375ZM6.625,10a3.354,3.354,0,0,1,.59-1.9L11.9,12.785A3.371,3.371,0,0,1,6.625,10Zm6.16,1.9L8.1,7.215A3.371,3.371,0,0,1,12.785,11.9Z"
 				})),
-				_t = n("./src/chat/icons/svgs/Leave/index.tsx");
+				Mt = n("./src/chat/icons/svgs/Leave/index.tsx");
 
-			function It() {
-				return (It = Object.assign || function(e) {
+			function Tt() {
+				return (Tt = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var a in n) Object.prototype.hasOwnProperty.call(n, a) && (e[a] = n[a])
@@ -4634,7 +4701,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var xt = e => r.a.createElement(b.a, It({}, e, {
+			var Lt = e => r.a.createElement(b.a, Tt({}, e, {
 				viewBox: "0 0 20 20"
 			}), e.isFilled ? r.a.createElement(r.a.Fragment, null, r.a.createElement("rect", {
 				x: "7",
@@ -4692,8 +4759,8 @@
 				r: "1.5"
 			})));
 
-			function yt() {
-				return (yt = Object.assign || function(e) {
+			function At() {
+				return (At = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var a in n) Object.prototype.hasOwnProperty.call(n, a) && (e[a] = n[a])
@@ -4701,7 +4768,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var St = e => r.a.createElement(b.a, yt({}, e, {
+			var Dt = e => r.a.createElement(b.a, At({}, e, {
 				viewBox: "0 0 20 20"
 			}), e.isFilled ? r.a.createElement("path", {
 				d: "M10,.375A9.625,9.625,0,1,0,19.625,10,9.636,9.636,0,0,0,10,.375ZM4.5,9A1.5,1.5,0,1,1,6,10.5,1.5,1.5,0,0,1,4.5,9Zm9.114,4.431A4.378,4.378,0,0,1,10,15.2a4.378,4.378,0,0,1-3.614-1.773l-.431-.613,1.227-.863.432.614A2.92,2.92,0,0,0,10,13.7a2.92,2.92,0,0,0,2.386-1.135l.432-.614,1.227.863ZM14,10.5A1.5,1.5,0,1,1,15.5,9,1.5,1.5,0,0,1,14,10.5Z"
@@ -4719,8 +4786,8 @@
 				r: "1.5"
 			})));
 
-			function Nt() {
-				return (Nt = Object.assign || function(e) {
+			function Pt() {
+				return (Pt = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var a in n) Object.prototype.hasOwnProperty.call(n, a) && (e[a] = n[a])
@@ -4728,16 +4795,16 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var wt = e => r.a.createElement(b.a, Nt({}, e, {
+			var Ut = e => r.a.createElement(b.a, Pt({}, e, {
 					viewBox: "0 0 20 20"
 				}), e.isFilled ? r.a.createElement("path", {
 					d: "M16.64 6.9a2.841 2.841 0 00-1.308.316 10.363 10.363 0 00-4.618-1.341l.743-4.123 2.422.515a1.493 1.493 0 10.2-1.235L11.59.5a1.124 1.124 0 00-1.34.9l-.8 4.459a10.371 10.371 0 00-4.787 1.356 2.859 2.859 0 00-3.108 4.763v.042c0 3.409 3.786 6.18 8.445 6.18s8.441-2.773 8.441-6.182v-.035A2.859 2.859 0 0016.64 6.9z"
 				}) : r.a.createElement("path", {
 					d: "M19.769 9.086a3.189 3.189 0 00-3.129-2.56 2.933 2.933 0 00-1.276.29 10.781 10.781 0 00-4.74-1.326l.811-3.742 2.444.52a1.493 1.493 0 10.2-1.235L11.573.5a1.126 1.126 0 00-1.333.862L9.344 5.5a10.742 10.742 0 00-4.693 1.3A3.179 3.179 0 00.235 9.074a3.228 3.228 0 00-.017 1.18 3.1 3.1 0 00.9 1.7l.057.06v.108c.071 3.618 3.943 6.452 8.815 6.452s8.74-2.831 8.814-6.433v-.122l.037-.037a3.136 3.136 0 00.929-1.725 3.218 3.218 0 00-.001-1.171zm-1.221.957a1.9 1.9 0 01-.571 1.049l-.391.4-.026.615c-.06 2.928-3.382 5.222-7.564 5.222s-7.507-2.3-7.565-5.239l-.024-.59L2 11.072a1.87 1.87 0 01-.552-1.03 2 2 0 01.01-.723 1.926 1.926 0 012.88-1.269l.332.209L5 8.05a9.385 9.385 0 014.67-1.331h.706a9.4 9.4 0 014.64 1.348l.342.217.342-.224a1.694 1.694 0 01.941-.284 1.935 1.935 0 011.9 1.55 1.964 1.964 0 01.007.717z"
 				})),
-				kt = n("./src/chat/components/MessageTooltip/Picker/SlashCommandList/index.m.less"),
-				Mt = n.n(kt);
-			var Tt = ({
+				Rt = n("./src/chat/components/MessageTooltip/Picker/SlashCommandList/index.m.less"),
+				Bt = n.n(Rt);
+			var Ft = ({
 					channelId: e,
 					inputCommand: t,
 					bindArrowDown: n,
@@ -4747,10 +4814,10 @@
 					unbindListeners: d
 				}) => {
 					const u = Object(o.e)(t => Object(_.l)(t, e)),
-						h = Object(o.e)(Ke.f),
+						h = Object(o.e)(et.f),
 						[m, p] = Object(c.useState)(0),
 						b = Object(c.useMemo)(() => {
-							return Be.filter(e => !e.channelType || e.channelType === u).filter(e => {
+							return Ze.filter(e => !e.channelType || e.channelType === u).filter(e => {
 								var n;
 								return [...(null === (n = e.aliases) || void 0 === n ? void 0 : n.length) ? e.aliases : [], e.command].join("").includes(t)
 							})
@@ -4764,81 +4831,81 @@
 						O = Object(c.useMemo)(() => {
 							var e;
 							return b.length ? s(null === (e = b[m]) || void 0 === e ? void 0 : e.command) : s(""), b.length ? r.a.createElement("div", {
-								className: Mt.a.Command
+								className: Bt.a.Command
 							}, b.map((e, t) => r.a.createElement("button", {
-								className: Object(i.a)(Mt.a.CommandItem, {
-									[Mt.a.selected]: m === t
+								className: Object(i.a)(Bt.a.CommandItem, {
+									[Bt.a.selected]: m === t
 								}),
 								key: e.command,
 								onClick: () => l(e.command)
 							}, (e => {
 								switch (e.name) {
-									case Se.GIF:
+									case De.GIF:
 										return r.a.createElement("img", {
-											src: `${bt.a.assetPath}/img/giphy/giphy.png`,
-											className: Mt.a.CommandItemIcon
+											src: `${_t.a.assetPath}/img/giphy/giphy.png`,
+											className: Bt.a.CommandItemIcon
 										});
-									case Se.INVITE:
-										return r.a.createElement(ee.a, {
-											className: Mt.a.CommandItemIcon
+									case De.INVITE:
+										return r.a.createElement(le.a, {
+											className: Bt.a.CommandItemIcon
 										});
-									case Se.MUTE:
-										return r.a.createElement(ft.a, {
-											className: Mt.a.CommandItemIcon
+									case De.MUTE:
+										return r.a.createElement(xt.a, {
+											className: Bt.a.CommandItemIcon
 										});
-									case Se.UNMUTE:
-										return r.a.createElement(Ot.a, {
-											className: Mt.a.CommandItemIcon
+									case De.UNMUTE:
+										return r.a.createElement(yt.a, {
+											className: Bt.a.CommandItemIcon
 										});
-									case Se.KICK:
-										return r.a.createElement(Ct, {
-											className: Mt.a.CommandItemIcon
+									case De.KICK:
+										return r.a.createElement(kt, {
+											className: Bt.a.CommandItemIcon
 										});
-									case Se.MEMBERS:
-										return r.a.createElement(xt, {
-											className: Mt.a.CommandItemIcon
+									case De.MEMBERS:
+										return r.a.createElement(Lt, {
+											className: Bt.a.CommandItemIcon
 										});
-									case Se.LEAVE:
-										return r.a.createElement(_t.a, {
-											className: Mt.a.CommandItemIcon
+									case De.LEAVE:
+										return r.a.createElement(Mt.a, {
+											className: Bt.a.CommandItemIcon
 										});
-									case Se.NEW_CHAT:
-									case Se.DIRECT:
-										return r.a.createElement(gt.a, {
-											className: Mt.a.CommandItemIcon
+									case De.NEW_CHAT:
+									case De.DIRECT:
+										return r.a.createElement(It.a, {
+											className: Bt.a.CommandItemIcon
 										});
-									case Se.TEXT_EMOJI:
-										return r.a.createElement(St, {
-											className: Mt.a.CommandItemIcon
+									case De.TEXT_EMOJI:
+										return r.a.createElement(Dt, {
+											className: Bt.a.CommandItemIcon
 										});
-									case Se.SNOOMOJI:
-										return r.a.createElement(wt, {
-											className: Mt.a.CommandItemIcon
+									case De.SNOOMOJI:
+										return r.a.createElement(Ut, {
+											className: Bt.a.CommandItemIcon
 										});
 									default:
 										return null
 								}
 							})(e), r.a.createElement("div", {
-								className: Mt.a.CommandItemMetadata
+								className: Bt.a.CommandItemMetadata
 							}, r.a.createElement("span", {
-								className: Mt.a.CommandItemMetadataDescription
-							}, e.description && Q.fbt._("{Description}", [Q.fbt._param("Description", e.description)], {
+								className: Bt.a.CommandItemMetadataDescription
+							}, e.description && se.fbt._("{Description}", [se.fbt._param("Description", e.description)], {
 								hk: "223KqZ"
 							})), r.a.createElement("span", {
-								className: Mt.a.CommandItemMetadataExample
+								className: Bt.a.CommandItemMetadataExample
 							}, e.example ? e.example : `/${e.command}`))))) : r.a.createElement("div", {
-								className: Mt.a.ErrorMessage
-							}, r.a.createElement(vt, {
-								className: Mt.a.ErrorMessageIcon
+								className: Bt.a.ErrorMessage
+							}, r.a.createElement(Nt, {
+								className: Bt.a.ErrorMessageIcon
 							}), r.a.createElement("div", {
-								className: Mt.a.ErrorMessageContent
+								className: Bt.a.ErrorMessageContent
 							}, r.a.createElement("span", {
-								className: Mt.a.ErrorMessageContentHeader
-							}, Q.fbt._("Hmm... that didn’t work", null, {
+								className: Bt.a.ErrorMessageContentHeader
+							}, se.fbt._("Hmm... that didn’t work", null, {
 								hk: "SVy4g"
 							})), r.a.createElement("span", {
-								className: Mt.a.ErrorMessageContentBody
-							}, Q.fbt._("try another keyword or phrase", null, {
+								className: Bt.a.ErrorMessageContentBody
+							}, se.fbt._("try another keyword or phrase", null, {
 								hk: "1dSsbn"
 							}))))
 						}, [b, m, l, s]);
@@ -4846,76 +4913,76 @@
 						d()
 					}), [a, n, g, f, d]), Object(c.useEffect)(() => {
 						m > b.length && p(0)
-					}, [m, b.length]), r.a.createElement(Ve.b, {
-						className: Object(i.a)(Mt.a.Scroller, {
-							[Mt.a.embedded]: h
+					}, [m, b.length]), r.a.createElement(Xe.b, {
+						className: Object(i.a)(Bt.a.Scroller, {
+							[Bt.a.embedded]: h
 						})
 					}, O)
 				},
-				Lt = n("./src/lib/lessComponent.tsx"),
-				At = n("./src/chat/components/Snoomoji/index.tsx"),
-				Dt = n("./src/chat/components/MessageTooltip/Picker/Snoomoji/index.m.less"),
-				Pt = n.n(Dt);
-			const Ut = Lt.a.div("IconWrapper", Pt.a);
-			Ut.displayName = "IconWrapper";
-			const Rt = Lt.a.div("LoadingIndicator", Pt.a),
-				Bt = Lt.a.wrapped(({
+				Ht = n("./src/lib/lessComponent.tsx"),
+				Gt = n("./src/chat/components/Snoomoji/index.tsx"),
+				Vt = n("./src/chat/components/MessageTooltip/Picker/Snoomoji/index.m.less"),
+				zt = n.n(Vt);
+			const Wt = Ht.a.div("IconWrapper", zt.a);
+			Wt.displayName = "IconWrapper";
+			const Kt = Ht.a.div("LoadingIndicator", zt.a),
+				Zt = Ht.a.wrapped(({
 					children: e,
 					className: t
 				}) => r.a.createElement("div", {
 					className: t
-				}, e), "Wrapper", Pt.a);
-			var Ft = ({
+				}, e), "Wrapper", zt.a);
+			var qt = ({
 					onPickSnoomoji: e
 				}) => {
-					const [t, n] = Object(c.useState)(!1), a = Object(o.e)(Ke.f), s = Object(c.useCallback)(() => {
-						Promise.all(je.b.map(e => new Promise(t => {
+					const [t, n] = Object(c.useState)(!1), a = Object(o.e)(et.f), s = Object(c.useCallback)(() => {
+						Promise.all(we.b.map(e => new Promise(t => {
 							const n = new Image;
-							n.onload = () => t(), n.src = je.a[e]
+							n.onload = () => t(), n.src = we.a[e]
 						}))).then(() => n(!0))
 					}, []);
 					Object(c.useEffect)(() => {
 						s()
 					}, [s]);
-					return r.a.createElement(Ve.b, {
-						className: Object(i.a)(Pt.a.Scroller, {
-							[Pt.a.embedded]: a
+					return r.a.createElement(Xe.b, {
+						className: Object(i.a)(zt.a.Scroller, {
+							[zt.a.embedded]: a
 						})
-					}, t ? r.a.createElement(Bt, null, (() => je.b.map((t, n) => r.a.createElement(Ut, {
+					}, t ? r.a.createElement(Zt, null, (() => we.b.map((t, n) => r.a.createElement(Wt, {
 						key: `icon-${n}`,
 						onClick: () => e(t)
-					}, r.a.createElement(At.a, {
+					}, r.a.createElement(Gt.a, {
 						iconName: t
-					}))))()) : r.a.createElement(Rt, null, Q.fbt._("Loading snoomoji...", null, {
+					}))))()) : r.a.createElement(Kt, null, se.fbt._("Loading snoomoji...", null, {
 						hk: "39nqLy"
 					})))
 				},
-				Ht = n("./src/chat/actions/members.ts"),
-				Gt = n("./src/chat/components/ChatMemberList/index.tsx"),
-				Vt = n("./src/chat/helpers/chatSelector.ts"),
-				zt = n("./src/chat/selectors/members.ts"),
-				Wt = n("./src/chat/components/MessageTooltip/Picker/Userlist/index.m.less"),
-				Kt = n.n(Wt);
-			const Zt = Lt.a.div("LoadingIndicator", Kt.a),
-				qt = Lt.a.wrapped(Gt.a, "ChatMemberList", Kt.a),
-				Qt = Lt.a.wrapped(({
+				Qt = n("./src/chat/actions/members.ts"),
+				Yt = n("./src/chat/components/ChatMemberList/index.tsx"),
+				Xt = n("./src/chat/helpers/chatSelector.ts"),
+				Jt = n("./src/chat/selectors/members.ts"),
+				$t = n("./src/chat/components/MessageTooltip/Picker/Userlist/index.m.less"),
+				en = n.n($t);
+			const tn = Ht.a.div("LoadingIndicator", en.a),
+				nn = Ht.a.wrapped(Yt.a, "ChatMemberList", en.a),
+				an = Ht.a.wrapped(({
 					children: e,
 					className: t
 				}) => r.a.createElement("div", {
 					className: t
-				}, e), "Wrapper", Kt.a),
-				Yt = Object(Vt.a)({
+				}, e), "Wrapper", en.a),
+				sn = Object(Xt.a)({
 					channelId: _.y,
-					channelMembers: zt.f,
-					hasMoreMembers: zt.d,
-					fetchingMembers: zt.a,
-					isEmbedded: Ke.f
+					channelMembers: Jt.f,
+					hasMoreMembers: Jt.d,
+					fetchingMembers: Jt.a,
+					isEmbedded: et.f
 				});
-			class Xt extends c.Component {
+			class cn extends c.Component {
 				constructor(e) {
-					super(e), this.fetchedFilter = "", this.isMount = !1, this.fetchSubredditChannelUsers = tt()((e = "") => {
+					super(e), this.fetchedFilter = "", this.isMount = !1, this.fetchSubredditChannelUsers = lt()((e = "") => {
 						this.props.fetchSubredditChannelUsers(e)
-					}, ge.Rb, {
+					}, Ie.Rb, {
 						leading: !0,
 						trailing: !1
 					}), this.onArrowUpListener = e => {
@@ -4964,7 +5031,7 @@
 						onSelectUserName: n,
 						fetchingMembers: a
 					} = this.props;
-					return this.members = this.filterMembers(), this.members && this.members.length && e ? r.a.createElement(Qt, null, r.a.createElement(qt, {
+					return this.members = this.filterMembers(), this.members && this.members.length && e ? r.a.createElement(an, null, r.a.createElement(nn, {
 						minimal: !0,
 						channelId: e,
 						members: this.members,
@@ -4973,9 +5040,9 @@
 						onSelectName: n,
 						selectIndex: this.state.selectIndex,
 						useNSFWIcons: !0
-					})) : a || this.members && this.members.length ? r.a.createElement(Zt, null, Q.fbt._("Loading members...", null, {
+					})) : a || this.members && this.members.length ? r.a.createElement(tn, null, se.fbt._("Loading members...", null, {
 						hk: "23phIt"
-					})) : r.a.createElement(Zt, null, Q.fbt._("Member not found!", null, {
+					})) : r.a.createElement(tn, null, se.fbt._("Member not found!", null, {
 						hk: "4DkpQe"
 					}))
 				}
@@ -4983,27 +5050,27 @@
 					const {
 						isEmbedded: e
 					} = this.props;
-					return r.a.createElement(Ve.b, {
-						className: Object(i.a)(Kt.a.Scroller, {
-							[Kt.a.embedded]: e
+					return r.a.createElement(Xe.b, {
+						className: Object(i.a)(en.a.Scroller, {
+							[en.a.embedded]: e
 						})
 					}, this.renderContent())
 				}
 			}
-			var Jt = Object(o.b)(Yt, e => ({
-					fetchSubredditChannelUsers: t => e(Object(Ht.e)({
+			var rn = Object(o.b)(sn, e => ({
+					fetchSubredditChannelUsers: t => e(Object(Qt.e)({
 						filter: t
 					}))
-				}))(Xt),
-				$t = n("./src/chat/constants/keys.ts"),
-				en = n("./src/chat/singleton/SendbirdSDK.ts"),
-				tn = n("./src/chat/controls/ContentEditable/index.m.less"),
-				nn = n.n(tn);
-			const an = 19,
-				sn = 12,
-				cn = 6,
-				rn = Lt.a.textarea("Textarea", nn.a);
-			class on extends r.a.Component {
+				}))(cn),
+				on = n("./src/chat/constants/keys.ts"),
+				ln = n("./src/chat/singleton/SendbirdSDK.ts"),
+				dn = n("./src/chat/controls/ContentEditable/index.m.less"),
+				un = n.n(dn);
+			const hn = 19,
+				mn = 12,
+				pn = 6,
+				bn = Ht.a.textarea("Textarea", un.a);
+			class gn extends r.a.Component {
 				constructor(e) {
 					super(e), this.offset = 0, this.emitChange = this.emitChange.bind(this), this.emitChangeOnce = this.emitChangeOnce.bind(this), this.handleCursor = this.handleCursor.bind(this), this.handleKeyPress = this.handleKeyPress.bind(this), this.handleKeyDown = this.handleKeyDown.bind(this), this.handleSizing = this.handleSizing.bind(this), this._ref = r.a.createRef()
 				}
@@ -5017,7 +5084,7 @@
 					}
 				}
 				UNSAFE_componentWillReceiveProps(e) {
-					this.props.channelId !== e.channelId && this.textarea && (this.textarea.value = e.draftText || "", this.handleSizing()), this.textarea && this.textarea.value ? en.a.startTypingIndicator() : en.a.endTypingIndicator(), this.textarea && e.textUpdate && (this.textarea.value = e.textUpdate, this.props.onChangeOnce(this.textarea.value), this.handleSizing()), this.textarea && this.textarea.value && e.clearText && (this.clearTextAndDropInputHeight(), this.props.onChangeOnce(""), this.handleSizing()), e.cursorPosition && this.textarea && (this.textarea.selectionStart = e.cursorPosition.selectionStart, this.textarea.selectionEnd = e.cursorPosition.selectionEnd)
+					this.props.channelId !== e.channelId && this.textarea && (this.textarea.value = e.draftText || "", this.handleSizing()), this.textarea && this.textarea.value ? ln.a.startTypingIndicator() : ln.a.endTypingIndicator(), this.textarea && e.textUpdate && (this.textarea.value = e.textUpdate, this.props.onChangeOnce(this.textarea.value), this.handleSizing()), this.textarea && this.textarea.value && e.clearText && (this.clearTextAndDropInputHeight(), this.props.onChangeOnce(""), this.handleSizing()), e.cursorPosition && this.textarea && (this.textarea.selectionStart = e.cursorPosition.selectionStart, this.textarea.selectionEnd = e.cursorPosition.selectionEnd)
 				}
 				componentDidUpdate() {
 					this.textarea && !this.props.isFocusingPrevented && this.textarea.focus()
@@ -5035,15 +5102,15 @@
 					this.props.onBlur(t)
 				}
 				handleKeyPress(e) {
-					e.key !== $t.g || e.shiftKey || (e.preventDefault(), this.props.onSubmit()), this.handleCursor()
+					e.key !== on.g || e.shiftKey || (e.preventDefault(), this.props.onSubmit()), this.handleCursor()
 				}
 				handleKeyDown(e) {
-					e.key === $t.d && (this.props.onArrowUp(e), this.handleSizing()), e.key === $t.a && (this.props.onArrowDown(e), this.handleSizing()), e.key === $t.h && this.props.onKeyEsc(e), this.props.onKeyDown(e)
+					e.key === on.d && (this.props.onArrowUp(e), this.handleSizing()), e.key === on.a && (this.props.onArrowDown(e), this.handleSizing()), e.key === on.h && this.props.onKeyEsc(e), this.props.onKeyDown(e)
 				}
 				handleSizing() {
 					if (this.textarea) {
 						const e = this.textarea;
-						e.style.height = "auto", e.style.height = e.scrollHeight + this.offset + "px", e.scrollHeight > 2 * an + sn ? e.style.paddingTop = "0px" : e.style.paddingTop = "12px", e.scrollHeight > an * cn + 1 ? e.style.overflowY = "scroll" : e.style.overflowY = "hidden"
+						e.style.height = "auto", e.style.height = e.scrollHeight + this.offset + "px", e.scrollHeight > 2 * hn + mn ? e.style.paddingTop = "0px" : e.style.paddingTop = "12px", e.scrollHeight > hn * pn + 1 ? e.style.overflowY = "scroll" : e.style.overflowY = "hidden"
 					}
 				}
 				handleCursor() {
@@ -5065,7 +5132,7 @@
 					}
 				}
 				render() {
-					return r.a.createElement(rn, {
+					return r.a.createElement(bn, {
 						tabIndex: 0,
 						innerRef: this._ref,
 						rows: 1,
@@ -5076,7 +5143,7 @@
 						autoCorrect: "off",
 						autoComplete: "off",
 						role: "textbox",
-						placeholder: Q.fbt._("Message", null, {
+						placeholder: se.fbt._("Message", null, {
 							hk: "3fzEsG"
 						}),
 						onKeyPress: this.handleKeyPress,
@@ -5093,8 +5160,8 @@
 				}
 			}
 
-			function ln() {
-				return (ln = Object.assign || function(e) {
+			function fn() {
+				return (fn = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var a in n) Object.prototype.hasOwnProperty.call(n, a) && (e[a] = n[a])
@@ -5102,7 +5169,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var dn = e => r.a.createElement(b.a, ln({}, e, {
+			var On = e => r.a.createElement(b.a, fn({}, e, {
 					viewBox: "0 0 20 20"
 				}), e.isFilled ? r.a.createElement("g", {
 					id: "icons_flat",
@@ -5121,11 +5188,11 @@
 				}), r.a.createElement("path", {
 					d: "M10,19.305a16.751,16.751,0,0,1-5.914-1.079,3.963,3.963,0,0,1-2.313-2.313,16.756,16.756,0,0,1,0-11.826A3.963,3.963,0,0,1,4.086,1.774a16.817,16.817,0,0,1,11.827,0,3.958,3.958,0,0,1,2.313,2.313,16.741,16.741,0,0,1,0,11.826,3.958,3.958,0,0,1-2.313,2.313A16.742,16.742,0,0,1,10,19.305Zm0-17.36a15.5,15.5,0,0,0-5.473,1A2.71,2.71,0,0,0,2.943,4.527a15.506,15.506,0,0,0,0,10.946,2.71,2.71,0,0,0,1.584,1.583,15.557,15.557,0,0,0,10.946,0,2.711,2.711,0,0,0,1.583-1.583,15.491,15.491,0,0,0,0-10.946h0a2.711,2.711,0,0,0-1.583-1.583A15.5,15.5,0,0,0,10,1.945Z"
 				})))),
-				un = n("./src/chat/models/Theme/index.ts"),
-				hn = n("./src/chat/selectors/theme.ts");
+				En = n("./src/chat/models/Theme/index.ts"),
+				vn = n("./src/chat/selectors/theme.ts");
 
-			function mn() {
-				return (mn = Object.assign || function(e) {
+			function jn() {
+				return (jn = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var a in n) Object.prototype.hasOwnProperty.call(n, a) && (e[a] = n[a])
@@ -5133,17 +5200,17 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var pn = e => {
-					const t = Object(o.e)(hn.a);
-					return r.a.createElement(b.a, mn({}, e, {
+			var Cn = e => {
+					const t = Object(o.e)(vn.a);
+					return r.a.createElement(b.a, jn({}, e, {
 						viewBox: "0 0 24 24"
 					}), (() => {
 						let e;
 						if (t) {
-							const n = un.f[t];
+							const n = En.f[t];
 							n && (e = r.a.createElement("defs", null, r.a.createElement("linearGradient", {
 								id: "linear-gradient",
-								gradientTransform: `rotate(${un.d})`
+								gradientTransform: `rotate(${En.d})`
 							}, n.stops.map((e, t) => r.a.createElement("stop", {
 								key: `${t}-${e.offset}-${e.color}`,
 								offset: `${e.offset}`,
@@ -5158,29 +5225,29 @@
 						}))
 					})())
 				},
-				bn = n("./src/chat/actions/uploads/prompt.ts"),
-				gn = n("./src/lib/hooks/useOnClickOutside.ts"),
-				fn = n("./src/lib/hooks/useTooltip.ts"),
-				On = n("./src/chat/components/MessageInput/IconButton/index.m.less"),
-				En = n.n(On);
-			var vn = e => r.a.createElement("div", {
-					className: Object(i.a)(En.a.IconButton, {
-						[En.a.active]: e.active
+				_n = n("./src/chat/actions/uploads/prompt.ts"),
+				In = n("./src/lib/hooks/useOnClickOutside.ts"),
+				xn = n("./src/lib/hooks/useTooltip.ts"),
+				yn = n("./src/chat/components/MessageInput/IconButton/index.m.less"),
+				Sn = n.n(yn);
+			var Nn = e => r.a.createElement("div", {
+					className: Object(i.a)(Sn.a.IconButton, {
+						[Sn.a.active]: e.active
 					}, e.className),
 					onMouseDown: Object(u.b)(e.onMouseDown)
 				}, e.children),
-				jn = n("./src/chat/controls/TooltipHooked/loader.tsx"),
-				Cn = n("./src/chat/controls/TooltipHooked/TooltipConfig.ts"),
-				_n = n("./src/chat/components/MessageInput/ImageUploader/index.m.less"),
-				In = n.n(_n);
-			var xn = r.a.memo((function({
+				wn = n("./src/chat/controls/TooltipHooked/loader.tsx"),
+				kn = n("./src/chat/controls/TooltipHooked/TooltipConfig.ts"),
+				Mn = n("./src/chat/components/MessageInput/ImageUploader/index.m.less"),
+				Tn = n.n(Mn);
+			var Ln = r.a.memo((function({
 					channelId: e
 				}) {
 					const t = Object(o.d)(),
-						n = Object(o.e)(_.I),
-						a = Object(o.e)(t => Object(se.i)(t, e)),
+						n = Object(o.e)(_.J),
+						a = Object(o.e)(t => Object(he.j)(t, e)),
 						s = Object(o.e)(I.f),
-						i = Object(fn.b)(Object(Cn.b)()),
+						i = Object(xn.b)(Object(kn.b)()),
 						d = {
 							...i.arrowProps,
 							style: {
@@ -5190,13 +5257,13 @@
 							}
 						},
 						u = Object(c.useCallback)(() => {
-							i.hide(), t(Object(bn.c)(bn.b.LAST))
+							i.hide(), t(Object(_n.c)(_n.b.LAST))
 						}, [i, t]);
-					return Object(gn.a)("Prompt-id", i.hide), Object(c.useEffect)(() => {
+					return Object(In.a)("Prompt-id", i.hide), Object(c.useEffect)(() => {
 						s && setTimeout(() => {
 							i.show(), t(Object(l.eb)())
 						})
-					}, [s]), a && !n ? r.a.createElement(r.a.Fragment, null, s && r.a.createElement(jn.a, {
+					}, [s]), a && !n ? r.a.createElement(r.a.Fragment, null, s && r.a.createElement(wn.a, {
 						arrowProps: d,
 						popperProps: i.popperProps,
 						visible: i.visible,
@@ -5204,53 +5271,53 @@
 						styled: !0,
 						isInstant: !0
 					}, r.a.createElement("button", {
-						className: In.a.Tooltip,
+						className: Tn.a.Tooltip,
 						onClick: u,
 						id: "Prompt-id"
-					}, Q.fbt._("New! Try media sharing", null, {
+					}, se.fbt._("New! Try media sharing", null, {
 						hk: "16k719"
 					}))), r.a.createElement("span", {
 						ref: i.target.ref,
 						role: "button",
 						tabIndex: 0,
 						onClick: u
-					}, r.a.createElement(vn, {
-						className: In.a.ImageUploader
+					}, r.a.createElement(Nn, {
+						className: Tn.a.ImageUploader
 					}, r.a.createElement(L, null)))) : null
 				})),
-				yn = n("./src/chat/components/MessageInput/index.m.less"),
-				Sn = n.n(yn);
-			const Nn = r.a.memo((function() {
+				An = n("./src/chat/components/MessageInput/index.m.less"),
+				Dn = n.n(An);
+			const Pn = r.a.memo((function() {
 					const e = Object(o.d)(),
-						t = Object(o.e)(Ze.a);
-					return Object(o.e)(_.I) ? null : r.a.createElement(wn, {
+						t = Object(o.e)(tt.a);
+					return Object(o.e)(_.J) ? null : r.a.createElement(Un, {
 						onMouseDown: () => {
-							e(Object(Oe.c)({
-								tooltipId: Ee.b
-							})), e(Object(l.C)(Ee.b))
+							e(Object(ye.c)({
+								tooltipId: Se.b
+							})), e(Object(l.C)(Se.b))
 						},
-						active: t === Ee.b
-					}, r.a.createElement(dn, {
-						isFilled: t === Ee.b
+						active: t === Se.b
+					}, r.a.createElement(On, {
+						isFilled: t === Se.b
 					}))
 				})),
-				wn = e => r.a.createElement("div", {
-					className: Object(i.a)(Sn.a.IconButton, {
-						[Sn.a.active]: e.active
+				Un = e => r.a.createElement("div", {
+					className: Object(i.a)(Dn.a.IconButton, {
+						[Dn.a.active]: e.active
 					}, e.className),
 					onMouseDown: Object(u.b)(e.onMouseDown)
 				}, e.children),
-				kn = Object(Vt.a)({
+				Rn = Object(Xt.a)({
 					activeDropdownId: e => e.tooltipId || void 0,
 					draftMessage: (e, t) => Object(_.s)(e, t.channelId),
 					hasUploadsToSubmit: (e, t) => Object(I.e)(e, t.channelId),
-					isFullSize: Ke.g,
-					isChatContainerFocused: Ke.b,
-					isImageShareEnabled: (e, t) => Object(se.i)(e, t.channelId),
-					isChannelInPendingState: _.I,
-					isShortcutsSlashCommandEnabled: se.r
+					isFullSize: et.g,
+					isChatContainerFocused: et.b,
+					isImageShareEnabled: (e, t) => Object(he.j)(e, t.channelId),
+					isChannelInPendingState: _.J,
+					isShortcutsSlashCommandEnabled: he.s
 				});
-			class Mn extends c.PureComponent {
+			class Bn extends c.PureComponent {
 				constructor(e) {
 					super(e), this.selectUserName = "", this.selectedCommand = "", this.cursorPosition = {
 						selectionStart: 0,
@@ -5284,17 +5351,17 @@
 						c && c();
 						const i = !!this.state.text || !!this.state.inputCommand,
 							l = this.props.hasUploadsToSubmit;
-						if (this.isUserlistPopupOpened()) this.onPickUserName(this.selectUserName || this.state.inputUserName), this.props.toggleUserlistTooltip(Ee.e);
+						if (this.isUserlistPopupOpened()) this.onPickUserName(this.selectUserName || this.state.inputUserName), this.props.toggleUserlistTooltip(Se.e);
 						else if (l || i) {
 							if (l) {
 								const t = new d.d(e);
 								await a(t), s(t)
 							}
-							i && (this.isSlashCommandListPopupOpened() && o ? (this.onPickCommand(this.selectedCommand || this.state.inputCommand), this.props.toggleSlashCommandListTooltip(Ee.c)) : (this.state.text.startsWith(pe) && o ? r(this.state.text) : n(this.state.text), this.clearText(), t(e))), c && c()
+							i && (this.isSlashCommandListPopupOpened() && o ? (this.onPickCommand(this.selectedCommand || this.state.inputCommand), this.props.toggleSlashCommandListTooltip(Se.c)) : (this.state.text.startsWith(Ce) && o ? r(this.state.text) : n(this.state.text), this.clearText(), t(e))), c && c()
 						}
-					}, this.sendEnabled = () => !!this.state.text || this.props.hasUploadsToSubmit, this.onArrowUpUserlistListener = le.a, this.onArrowDownUserlistListener = le.a, this.startIdleTimerThrottle = ue()(() => {
+					}, this.sendEnabled = () => !!this.state.text || this.props.hasUploadsToSubmit, this.onArrowUpUserlistListener = fe.a, this.onArrowDownUserlistListener = fe.a, this.startIdleTimerThrottle = Ee()(() => {
 						this.props.startSurveyTimer()
-					}, Ee.f), this.onMessageInputKeydown = () => {
+					}, Se.f), this.onMessageInputKeydown = () => {
 						this.props.uploadShowPromptCountSet(), this.startIdleTimerThrottle()
 					}, this.handleSubmitInput = this.handleSubmitInput.bind(this), this.handleSubmitSnoo = this.handleSubmitSnoo.bind(this), this.onPickGifHandler = this.onPickGifHandler.bind(this);
 					const t = this.props.draftMessage || "";
@@ -5359,21 +5426,21 @@
 					} = this.cursorPosition, {
 						textUpdate: a,
 						posEndUpdate: s
-					} = xe(t, e, n);
+					} = Le(t, e, n);
 					this.setState({
 						textUpdate: a,
 						text: a
 					}, () => {
-						this.reFocusCursorPosition(s), this.props.toggleUserlistTooltip(Ee.e)
+						this.reFocusCursorPosition(s), this.props.toggleUserlistTooltip(Se.e)
 					})
 				}
 				onPickCommand(e) {
-					const t = pe + e;
+					const t = Ce + e;
 					this.setState({
 						textUpdate: t,
 						text: t
 					}, () => {
-						this.reFocusCursorPosition(t.length), this.props.toggleSlashCommandListTooltip(Ee.c)
+						this.reFocusCursorPosition(t.length), this.props.toggleSlashCommandListTooltip(Se.c)
 					})
 				}
 				toggleUserlistTooltipByTextChange(e) {
@@ -5382,22 +5449,22 @@
 					} = this.cursorPosition, {
 						hasUsername: n,
 						username: a
-					} = Ie(e, t), s = this.isUserlistPopupOpened();
-					return (n && !s || !n && s) && this.props.toggleUserlistTooltip(Ee.e), this.setState({
+					} = Te(e, t), s = this.isUserlistPopupOpened();
+					return (n && !s || !n && s) && this.props.toggleUserlistTooltip(Se.e), this.setState({
 						inputUserName: a
 					})
 				}
 				toggleCommandsTooltipByTextChange(e) {
 					const t = this.isSlashCommandListPopupOpened();
-					(!t && ye(e) || t && !ye(e)) && this.props.toggleSlashCommandListTooltip(Ee.c), this.setState({
-						inputCommand: e.replace(pe, "")
+					(!t && Ae(e) || t && !Ae(e)) && this.props.toggleSlashCommandListTooltip(Se.c), this.setState({
+						inputCommand: e.replace(Ce, "")
 					})
 				}
 				isSlashCommandListPopupOpened() {
-					return this.props.activeDropdownId === Ee.c
+					return this.props.activeDropdownId === Se.c
 				}
 				isUserlistPopupOpened() {
-					return this.props.activeDropdownId === Ee.e
+					return this.props.activeDropdownId === Se.e
 				}
 				reFocusCursorPosition(e) {
 					this.cursorPosition = {
@@ -5417,19 +5484,19 @@
 					} = this.props;
 					return r.a.createElement("form", {
 						tabIndex: 0,
-						className: Object(i.a)(Sn.a.Form, {
-							[Sn.a.isFullSize]: s
+						className: Object(i.a)(Dn.a.Form, {
+							[Dn.a.isFullSize]: s
 						}),
-						id: Ye,
+						id: st,
 						onSubmit: Object(u.b)(this.handleSubmitInput)
 					}, r.a.createElement("div", {
-						className: Sn.a.Wrapper
-					}, r.a.createElement(xn, {
+						className: Dn.a.Wrapper
+					}, r.a.createElement(Ln, {
 						channelId: t
 					}), r.a.createElement("div", {
-						className: Sn.a.InputWrapper
-					}, r.a.createElement(on, {
-						className: Sn.a.ContentEditable,
+						className: Dn.a.InputWrapper
+					}, r.a.createElement(gn, {
+						className: Dn.a.ContentEditable,
 						channelId: t,
 						clearText: this.state.clearText,
 						cursorPosition: this.cursorPosition,
@@ -5445,10 +5512,10 @@
 						onKeyEsc: () => this.props.closeUserlistTooltip(),
 						onSubmit: this.handleSubmitInput,
 						textUpdate: this.state.textUpdate
-					}), o && r.a.createElement($e, {
-						id: Ee.c,
+					}), o && r.a.createElement(ot, {
+						id: Se.c,
 						isArrowShow: !1
-					}, r.a.createElement(Tt, {
+					}, r.a.createElement(Ft, {
 						channelId: t,
 						bindArrowDown: e => this.onArrowDownUserlistListener = e,
 						bindArrowUp: e => this.onArrowUpUserlistListener = e,
@@ -5456,99 +5523,99 @@
 						onPickCommand: e => this.onPickCommand(e),
 						onSelectCommand: e => this.selectedCommand = e,
 						unbindListeners: () => {
-							this.onArrowUpUserlistListener = le.a, this.onArrowDownUserlistListener = le.a
+							this.onArrowUpUserlistListener = fe.a, this.onArrowDownUserlistListener = fe.a
 						}
 					})), r.a.createElement("div", {
-						className: Sn.a.Icons
-					}, r.a.createElement(Nn, null), r.a.createElement(wn, {
-						onMouseDown: () => n(Ee.d),
-						active: e === Ee.d
-					}, r.a.createElement(St, {
-						isFilled: e === Ee.d
-					})), r.a.createElement($e, {
-						id: Ee.d
-					}, r.a.createElement(Ft, {
+						className: Dn.a.Icons
+					}, r.a.createElement(Pn, null), r.a.createElement(Un, {
+						onMouseDown: () => n(Se.d),
+						active: e === Se.d
+					}, r.a.createElement(Dt, {
+						isFilled: e === Se.d
+					})), r.a.createElement(ot, {
+						id: Se.d
+					}, r.a.createElement(qt, {
 						onPickSnoomoji: this.handleSubmitSnoo
-					})), r.a.createElement($e, {
-						id: Ee.b,
-						arrowOffset: Ee.a
-					}, r.a.createElement(pt, {
+					})), r.a.createElement(ot, {
+						id: Se.b,
+						arrowOffset: Se.a
+					}, r.a.createElement(Ct, {
 						onPickGif: this.onPickGifHandler
-					})), r.a.createElement($e, {
-						id: Ee.e,
+					})), r.a.createElement(ot, {
+						id: Se.e,
 						isArrowShow: !1
-					}, r.a.createElement(Jt, {
+					}, r.a.createElement(rn, {
 						bindArrowDown: e => this.onArrowDownUserlistListener = e,
 						bindArrowUp: e => this.onArrowUpUserlistListener = e,
 						inputUserName: this.state.inputUserName,
 						onPickUserName: e => this.onPickUserName(e),
 						onSelectUserName: e => this.selectUserName = e
-					})))), r.a.createElement(G.d, {
-						className: Sn.a.SubmitButton,
+					})))), r.a.createElement(X.d, {
+						className: Dn.a.SubmitButton,
 						type: "submit",
 						disabled: !this.sendEnabled()
-					}, r.a.createElement(pn, null))))
+					}, r.a.createElement(Cn, null))))
 				}
 			}
-			var Tn = Object(o.b)(kn, (e, {
+			var Fn = Object(o.b)(Rn, (e, {
 					channelId: t
 				}) => ({
-					onSubmitText: n => e(Object(B.r)(t, n.trim(), ve.c.TEXT)),
-					onSubmitSnoo: n => e(Object(B.r)(t, n.trim(), ve.c.SNOOMOJI)),
+					onSubmitText: n => e(Object(B.r)(t, n.trim(), Ne.c.TEXT)),
+					onSubmitSnoo: n => e(Object(B.r)(t, n.trim(), Ne.c.SNOOMOJI)),
 					onSubmitGif: n => {
-						e(Object(B.o)(t, n)), e(Object(me.l)(""))
+						e(Object(B.o)(t, n)), e(Object(je.l)(""))
 					},
 					onSubmitMedia: t => e(t.createMessage()),
 					onUploadMedia: t => e(t.uploadMedia()),
 					toggleSnoomojiTooltip: t => {
-						e(Object(Oe.c)({
+						e(Object(ye.c)({
 							tooltipId: t
 						})), e(Object(l.C)(t))
 					},
 					toggleGifTooltip: t => {
-						e(Object(Oe.c)({
+						e(Object(ye.c)({
 							tooltipId: t
 						})), e(Object(l.C)(t))
 					},
 					toggleUserlistTooltip: t => {
-						e(Object(Oe.c)({
+						e(Object(ye.c)({
 							tooltipId: t
 						}))
 					},
 					saveDraft: (t, n) => {
-						e(Object(he.e)({
+						e(Object(ve.e)({
 							channelId: t,
 							messageValue: n
 						}))
 					},
 					deleteDraft: t => {
-						e(Object(he.f)(t))
+						e(Object(ve.f)(t))
 					},
-					closeUserlistTooltip: () => e(Object(Oe.d)()),
-					startSurveyTimer: () => e(Object(He.b)()),
-					uploadShowPromptCountSet: () => e(Object(bn.c)(bn.b.LAST)),
-					commandsChecker: n => e(Fe(n, t)),
-					onSubmitSlashCommand: n => e(Fe(n, t)),
+					closeUserlistTooltip: () => e(Object(ye.d)()),
+					startSurveyTimer: () => e(Object(Qe.b)()),
+					uploadShowPromptCountSet: () => e(Object(_n.c)(_n.b.LAST)),
+					commandsChecker: n => e(qe(n, t)),
+					onSubmitSlashCommand: n => e(qe(n, t)),
 					toggleSlashCommandListTooltip: t => {
-						e(Object(Oe.c)({
+						e(Object(ye.c)({
 							tooltipId: t
 						}))
 					}
-				}))(Mn),
-				Ln = n("./src/chat/helpers/time/index.tsx"),
-				An = n("./src/chat/components/DateSplitter/index.m.less"),
-				Dn = n.n(An);
-			var Pn = e => r.a.createElement("div", {
-					className: Dn.a.TimeWrapper
+				}))(Bn),
+				Hn = n("./src/chat/helpers/time/index.tsx"),
+				Gn = n("./src/chat/components/DateSplitter/index.m.less"),
+				Vn = n.n(Gn);
+			var zn = e => r.a.createElement("div", {
+					className: Vn.a.TimeWrapper
 				}, r.a.createElement("time", {
-					className: Dn.a.Time
-				}, Object(Ln.a)(e.date))),
-				Un = n("./src/chat/components/Message/Bubble.tsx"),
-				Rn = n("./src/chat/components/Message/LinkedText.tsx"),
-				Bn = n("./src/chat/components/Message/SystemMessage.m.less"),
-				Fn = n.n(Bn);
-			const Hn = Lt.a.wrapped(Rn.a, "LinkedText", Fn.a);
-			var Gn = Lt.a.wrapped(e => {
+					className: Vn.a.Time
+				}, Object(Hn.a)(e.date))),
+				Wn = n("./src/chat/components/Message/Bubble.tsx"),
+				Kn = n("./src/chat/components/Message/LinkedText.tsx"),
+				Zn = n("./src/chat/components/Message/SystemMessage.m.less"),
+				qn = n.n(Zn);
+			const Qn = Ht.a.wrapped(Kn.a, "LinkedText", qn.a);
+			var Yn = Ht.a.wrapped(e => {
 					const {
 						message: t,
 						className: n
@@ -5560,14 +5627,14 @@
 					} = t;
 					return r.a.createElement("div", {
 						className: n
-					}, r.a.createElement(Hn, {
+					}, r.a.createElement(Qn, {
 						value: a,
 						highlighMentionGroupLinks: s
 					}))
-				}, "SystemMessage", Fn.a),
-				Vn = n("./src/chat/components/Message/UserName/index.m.less"),
-				zn = n.n(Vn);
-			var Wn = ({
+				}, "SystemMessage", qn.a),
+				Xn = n("./src/chat/components/Message/UserName/index.m.less"),
+				Jn = n.n(Xn);
+			var $n = ({
 					className: e,
 					message: t,
 					channelType: n,
@@ -5577,20 +5644,20 @@
 				}) => {
 					const {
 						sender: o
-					} = t, l = n === ae.b.Group, d = c === (null == o ? void 0 : o.userId);
+					} = t, l = n === q.b.Group, d = c === (null == o ? void 0 : o.userId);
 					return (!a || !s) && (null == o ? void 0 : o.nickname) && (null == o ? void 0 : o.userId) && l ? r.a.createElement("span", {
-						className: Object(i.a)(zn.a.UserName, {
-							[zn.a.currentUser]: Boolean(d && c)
+						className: Object(i.a)(Jn.a.UserName, {
+							[Jn.a.currentUser]: Boolean(d && c)
 						}, e)
 					}, null == o ? void 0 : o.nickname) : null
 				},
-				Kn = n("./src/chat/components/MessageList/Messages/index.m.less"),
-				Zn = n.n(Kn);
-			const qn = (e, t) => {
+				ea = n("./src/chat/components/MessageList/Messages/index.m.less"),
+				ta = n.n(ea);
+			const na = (e, t) => {
 					let n = NaN;
 					return e > 0 && (n = t[e - 1].createdAt), n
 				},
-				Qn = ({
+				aa = ({
 					message: e,
 					showUserPic: t,
 					isLastCurrentUserMessage: n,
@@ -5600,10 +5667,10 @@
 				}) => {
 					const {
 						sender: l
-					} = e, d = a === (l && l.userId), u = Object(o.e)(Ke.c), h = Object(o.e)(_.a);
-					return r.a.createElement(Un.a, {
-						className: Object(i.a)(Zn.a.MessageItemBubble, {
-							[Zn.a.lastInChain]: c
+					} = e, d = a === (l && l.userId), u = Object(o.e)(et.c), h = Object(o.e)(_.a);
+					return r.a.createElement(Wn.a, {
+						className: Object(i.a)(ta.a.MessageItemBubble, {
+							[ta.a.lastInChain]: c
 						}),
 						message: e,
 						fromCurrentUser: d,
@@ -5615,19 +5682,19 @@
 						inPreview: s
 					})
 				};
-			var Yn = ({
+			var sa = ({
 					currentUserId: e,
 					channelType: t,
 					messageList: n,
 					inPreview: a
 				}) => {
-					const s = Object(o.e)(hn.c),
+					const s = Object(o.e)(vn.c),
 						c = Object(o.e)(I.b);
 					return n.length ? r.a.createElement(r.a.Fragment, null, n.map((n, o, i) => {
 						const {
 							createdAt: l,
 							sender: d
-						} = n, u = d && d.userId, h = qn(o, i), m = ((e, t) => {
+						} = n, u = d && d.userId, h = na(o, i), m = ((e, t) => {
 							const n = t[e + 1];
 							return null == n ? void 0 : n.createdAt
 						})(o, i), p = ((e, t) => {
@@ -5640,7 +5707,7 @@
 						})(o, i), b = ((e, t, n) => {
 							if (0 === t) return !0;
 							const a = new Date(e.createdAt),
-								s = qn(t, n);
+								s = na(t, n);
 							if (s) {
 								const e = new Date(s);
 								return a.getFullYear() !== e.getFullYear() || a.getMonth() !== e.getMonth() || a.getDate() !== e.getDate()
@@ -5650,22 +5717,22 @@
 							var n;
 							const a = t[e + 1];
 							return null === (n = null == a ? void 0 : a.sender) || void 0 === n ? void 0 : n.userId
-						})(o, i), f = p === u, O = g === u, E = l - h < 5 * ge.kb, v = m && m - l < 5 * ge.kb, j = !O || O && !v, C = n.messageType === ve.d.SYSTEM && ((e, t) => {
+						})(o, i), f = p === u, O = g === u, E = l - h < 5 * Ie.kb, v = m && m - l < 5 * Ie.kb, j = !O || O && !v, C = n.messageType === Ne.d.SYSTEM && ((e, t) => {
 							const {
 								mentionType: n,
 								mentionedUsers: a,
 								messageType: s
 							} = e;
-							if (s !== ve.d.SYSTEM) return !1;
-							if (n === ve.b.CHANNEL) return !0;
-							if (n === ve.b.USERS && Array.isArray(a)) {
+							if (s !== Ne.d.SYSTEM) return !1;
+							if (n === Ne.b.CHANNEL) return !0;
+							if (n === Ne.b.USERS && Array.isArray(a)) {
 								const e = 0 === a.length,
 									n = a.some(e => t === e.userId);
 								return e || n
 							}
 							return !1
-						})(n, e), _ = n.messageType === ve.d.USER && ((e, t = []) => {
-							if (e.messageData.type === ve.c.IMAGE) {
+						})(n, e), _ = n.messageType === Ne.d.USER && ((e, t = []) => {
+							if (e.messageData.type === Ne.c.IMAGE) {
 								const {
 									isHidden: n,
 									clientMessageId: a
@@ -5681,21 +5748,21 @@
 								var t;
 								return (null === (t = e.sender) || void 0 === t ? void 0 : t.userId) === (null == a ? void 0 : a.userId)
 							}))
-						})(o, i)), x = b && r.a.createElement(Pn, {
+						})(o, i)), x = b && r.a.createElement(zn, {
 							date: l
 						}), y = n.messageData.clientMessageId || n.createdAt;
 						switch (n.messageType) {
-							case ve.d.PENDING:
-							case ve.d.USER:
+							case Ne.d.PENDING:
+							case Ne.d.USER:
 								return !_ && r.a.createElement(r.a.Fragment, {
 									key: y
-								}, x, r.a.createElement(r.a.Fragment, null, r.a.createElement(Wn, {
+								}, x, r.a.createElement(r.a.Fragment, null, r.a.createElement($n, {
 									message: n,
 									sameAsPrevUser: f,
 									inTimeRange: E,
 									channelType: t,
 									currentUserId: e
-								}), r.a.createElement(Qn, {
+								}), r.a.createElement(aa, {
 									message: n,
 									isLastCurrentUserMessage: I,
 									showUserPic: j,
@@ -5703,11 +5770,11 @@
 									inPreview: a,
 									isLastInChain: !!g && !O
 								})));
-							case ve.d.SYSTEM:
+							case Ne.d.SYSTEM:
 								return C && r.a.createElement(r.a.Fragment, {
 									key: n.createdAt
-								}, x, r.a.createElement(Gn, {
-									className: Zn.a.SystemBubble,
+								}, x, r.a.createElement(Yn, {
+									className: ta.a.SystemBubble,
 									message: n
 								}));
 							default:
@@ -5715,11 +5782,11 @@
 						}
 					})) : null
 				},
-				Xn = n("./src/chat/components/MessageQuickReplyPicker/index.m.less"),
-				Jn = n.n(Xn);
-			const $n = ["upvote", "snoo"],
-				ea = Lt.a.div("SnooWrapper", Jn.a),
-				ta = Lt.a.wrapped(e => {
+				ca = n("./src/chat/components/MessageQuickReplyPicker/index.m.less"),
+				ra = n.n(ca);
+			const oa = ["upvote", "snoo"],
+				ia = Ht.a.div("SnooWrapper", ra.a),
+				la = Ht.a.wrapped(e => {
 					const {
 						className: t,
 						text: n,
@@ -5732,65 +5799,65 @@
 						onClick: () => s(n)
 					}, (() => {
 						switch (a) {
-							case ve.c.TEXT:
+							case Ne.c.TEXT:
 								return n;
-							case ve.c.SNOOMOJI:
-								return r.a.createElement(ea, null, r.a.createElement(At.a, {
+							case Ne.c.SNOOMOJI:
+								return r.a.createElement(ia, null, r.a.createElement(Gt.a, {
 									iconName: n
 								}))
 						}
 					})())
-				}, "ReplyItem", Jn.a);
-			var na = Lt.a.wrapped(e => {
+				}, "ReplyItem", ra.a);
+			var da = Ht.a.wrapped(e => {
 					const {
 						className: t,
 						channelId: n
 					} = e, a = Object(o.d)();
-					return Object(o.e)(e => Object(_.N)(e, n)) ? r.a.createElement("div", {
+					return Object(o.e)(e => Object(_.O)(e, n)) ? r.a.createElement("div", {
 						className: t
-					}, r.a.createElement(ta, {
-						type: ve.c.TEXT,
-						text: Q.fbt._("Thanks for the award!", null, {
+					}, r.a.createElement(la, {
+						type: Ne.c.TEXT,
+						text: se.fbt._("Thanks for the award!", null, {
 							hk: "3aibi5"
 						}),
 						onReply: e => {
-							a(Object(B.r)(n, String(e).trim(), ve.c.TEXT)), a(Object(l.x)(l.a.FIRST, String(e).trim()))
+							a(Object(B.r)(n, String(e).trim(), Ne.c.TEXT)), a(Object(l.x)(l.a.FIRST, String(e).trim()))
 						}
-					}), $n.map((e, t) => r.a.createElement(ta, {
-						type: ve.c.SNOOMOJI,
+					}), oa.map((e, t) => r.a.createElement(la, {
+						type: Ne.c.SNOOMOJI,
 						key: e,
 						text: e,
 						onReply: e => {
-							a(Object(B.r)(n, e, ve.c.SNOOMOJI)), a(Object(l.x)(t + 2, e))
+							a(Object(B.r)(n, e, Ne.c.SNOOMOJI)), a(Object(l.x)(t + 2, e))
 						}
 					}))) : null
-				}, "MessageQuickReplyPicker", Jn.a),
-				aa = n("./src/chat/components/OverlayNav/index.tsx"),
-				sa = n("./src/chat/components/TypingIndicator/index.m.less"),
-				ca = n.n(sa);
-			var ra = ({
+				}, "MessageQuickReplyPicker", ra.a),
+				ua = n("./src/chat/components/OverlayNav/index.tsx"),
+				ha = n("./src/chat/components/TypingIndicator/index.m.less"),
+				ma = n.n(ha);
+			var pa = ({
 					channelType: e
 				}) => {
 					const t = Object(o.e)(e => e.typingIndicator.usernames);
 					return (null == t ? void 0 : t.length) ? r.a.createElement("span", {
-						className: Object(i.a)(ca.a.IndicatorText)
-					}, ((e, t) => e === ae.b.Direct ? Q.fbt._("is typing...", null, {
+						className: Object(i.a)(ma.a.IndicatorText)
+					}, ((e, t) => e === q.b.Direct ? se.fbt._("is typing...", null, {
 						hk: "UTaH4"
-					}) : 1 === t.length ? Q.fbt._("{firstUser} is typing...", [Q.fbt._param("firstUser", t[0])], {
+					}) : 1 === t.length ? se.fbt._("{firstUser} is typing...", [se.fbt._param("firstUser", t[0])], {
 						hk: "480JMK"
-					}) : 2 === t.length ? Q.fbt._("{firstUser} and {secondUser} are typing", [Q.fbt._param("firstUser", t[0]), Q.fbt._param("secondUser", t[1])], {
+					}) : 2 === t.length ? se.fbt._("{firstUser} and {secondUser} are typing", [se.fbt._param("firstUser", t[0]), se.fbt._param("secondUser", t[1])], {
 						hk: "3zfAnp"
-					}) : t.length > 2 ? Q.fbt._("Several people are typing...", null, {
+					}) : t.length > 2 ? se.fbt._("Several people are typing...", null, {
 						hk: "39edn3"
 					}) : void 0)(e, t)) : null
 				},
-				oa = n("./src/chat/constants/batchSizes.ts"),
-				ia = n("./src/chat/selectors/richUnits.ts"),
-				la = n("./src/chat/components/MessageList/index.m.less"),
-				da = n.n(la);
+				ba = n("./src/chat/constants/batchSizes.ts"),
+				ga = n("./src/chat/selectors/richUnits.ts"),
+				fa = n("./src/chat/components/MessageList/index.m.less"),
+				Oa = n.n(fa);
 			const {
-				fbt: ua
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), ha = Object(Vt.a)({
+				fbt: Ea
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), va = Object(Xt.a)({
 				currentUser: e => e.user.account,
 				channelMessages: (e, {
 					channel: {
@@ -5803,19 +5870,21 @@
 				hasMoreMessages: e => Object(_.B)(e, "hasMoreMessages"),
 				isMessageListLoaded: e => Object(_.B)(e, "isMessageListLoaded"),
 				isModerator: e => Object(_.a)(e),
-				isChatMinimized: Ke.c,
-				isRichUnitDataReceived: e => Object(ia.c)(e),
-				isFullSize: Ke.g,
-				showPrompt: hn.c,
-				isImageShareEnabled: (e, t) => Object(se.i)(e, t.channel.channelId),
-				isChannelInPendingState: _.I
-			}), ma = Object(o.b)(ha, e => ({
+				isChatMinimized: et.c,
+				isRichUnitDataReceived: e => Object(ga.c)(e),
+				isFullSize: et.g,
+				showPrompt: vn.c,
+				isImageShareEnabled: (e, t) => Object(he.j)(e, t.channel.channelId),
+				isChannelInPendingState: _.J,
+				isBlockedUserMessageEnabled: he.d,
+				hasBlockedUsers: (e, t) => Object(_.D)(e, t.channel.channelId)
+			}), ja = Object(o.b)(va, e => ({
 				getPreviousMessages: () => e(Object(B.v)()),
 				removeAndResetMessages: t => e(Object(F.c)(t)),
 				resetChannelMessageList: t => e(Object(R.K)(t)),
 				resetRichUnisDataReceived: () => e(Object(H.f)())
-			})), pa = 30, ba = 2 * oa.a.Messages;
-			class ga extends r.a.Component {
+			})), Ca = 30, _a = 2 * ba.a.Messages;
+			class Ia extends r.a.Component {
 				constructor(e) {
 					super(e), this.scroller = r.a.createRef(), this.getOtherMemberName = () => {
 						const {
@@ -5827,7 +5896,7 @@
 						return n ? n.name : t.name
 					}, this.getTitle = () => {
 						switch (this.props.channel.type) {
-							case ae.b.Group:
+							case q.b.Group:
 								return this.props.channel.name;
 							default:
 								return this.getOtherMemberName()
@@ -5841,7 +5910,7 @@
 						} = this.props;
 						if (a.length) {
 							const s = U()([...a, ...n], "createdAt");
-							return r.a.createElement(Yn, {
+							return r.a.createElement(sa, {
 								channelType: t.type,
 								currentUserId: e.id,
 								messageList: s
@@ -5869,8 +5938,8 @@
 						channelMessages: t,
 						resetChannelMessageList: n
 					} = this.props;
-					if (t.length > pa && this.isChannelSwitched(e)) {
-						const e = t.length - pa,
+					if (t.length > Ca && this.isChannelSwitched(e)) {
+						const e = t.length - Ca,
 							a = t.slice(0, e);
 						n(D()(a, ({
 							messageId: e
@@ -5879,7 +5948,7 @@
 				}
 				removeResetTooOldMessages() {
 					var e;
-					const t = this.props.channelMessages.length > ba,
+					const t = this.props.channelMessages.length > _a,
 						n = Boolean(null === (e = this.scroller.current) || void 0 === e ? void 0 : e.isScrolledToBottom());
 					t && n && this.props.removeAndResetMessages(this.props.channelMessages)
 				}
@@ -5903,55 +5972,59 @@
 							hasMoreMessages: c,
 							isFullSize: o,
 							isImageShareEnabled: l,
-							isChannelInPendingState: d
+							isChannelInPendingState: d,
+							isBlockedUserMessageEnabled: u,
+							hasBlockedUsers: h
 						},
-						loadMoreRows: u
-					} = this, h = this.getTitle(), m = this.renderMessages(), p = !c && a && e.members;
+						loadMoreRows: m
+					} = this, p = this.getTitle(), b = this.renderMessages(), g = !c && a && e.members, f = (null == e ? void 0 : e.type) === q.b.Direct && h && u;
 					return r.a.createElement("div", {
-						className: da.a.Container
-					}, r.a.createElement(aa.a, {
+						className: Oa.a.Container
+					}, r.a.createElement(ua.a, {
 						channelId: e.channelId,
 						showMenu: !0,
-						title: h,
+						title: p,
 						channelType: null == e ? void 0 : e.type,
 						showMembers: !0
 					}), r.a.createElement("div", {
-						className: Object(i.a)(da.a.ReverseCol, {
-							[da.a.isFullSize]: o
+						className: Object(i.a)(Oa.a.ReverseCol, {
+							[Oa.a.isFullSize]: o
 						})
-					}, r.a.createElement(Ve.b, {
-						className: da.a.Scroller,
+					}, r.a.createElement(Xe.b, {
+						className: Oa.a.Scroller,
 						autoScrollBottom: !0,
 						ref: this.scroller,
-						loadMoreRows: u
+						loadMoreRows: m
 					}, t && r.a.createElement("span", {
-						className: da.a.LoadingError,
+						className: Oa.a.LoadingError,
 						onClick: n
-					}, ua._("Something went wrong. Please try again.", null, {
+					}, Ea._("Something went wrong. Please try again.", null, {
 						hk: "2NoQnC"
-					})), p ? r.a.createElement(oe, {
+					})), g ? r.a.createElement(be, {
 						users: e.members,
 						channel: e
 					}) : t ? r.a.createElement("span", {
-						className: da.a.LoadingError,
+						className: Oa.a.LoadingError,
 						onClick: n
-					}, ua._("Something went wrong. Please try again.", null, {
+					}, Ea._("Something went wrong. Please try again.", null, {
 						hk: "2NoQnC"
 					})) : a ? r.a.createElement("span", {
-						className: da.a.LoadingIndicator
-					}, ua._("Loading history...", null, {
+						className: Oa.a.LoadingIndicator
+					}, Ea._("Loading history...", null, {
 						hk: "4tLHUG"
-					})) : r.a.createElement(nt.e, null), m)), r.a.createElement("div", {
-						className: Object(i.a)(da.a.TypingIndicatorWrapper, {
-							[da.a.isFullSize]: o
+					})) : r.a.createElement(dt.e, null), b)), r.a.createElement("div", {
+						className: Object(i.a)(Oa.a.TypingIndicatorWrapper, {
+							[Oa.a.isFullSize]: o
 						})
-					}, e ? r.a.createElement(ra, {
+					}, e ? r.a.createElement(pa, {
 						channelType: e.type
-					}) : null), r.a.createElement(na, {
-						className: da.a.MessageQuickReplyPicker,
+					}) : null), r.a.createElement(da, {
+						className: Oa.a.MessageQuickReplyPicker,
 						channelId: e.channelId
-					}), l && !d && r.a.createElement(q, null), r.a.createElement(Tn, {
-						className: da.a.MessageInput,
+					}), l && !d && r.a.createElement(ae, null), u && e ? r.a.createElement(Y, {
+						channel: e
+					}) : null, !f && r.a.createElement(Fn, {
+						className: Oa.a.MessageInput,
 						channelId: e.channelId,
 						isLocked: e.isFrozen,
 						isModerator: s,
@@ -5962,51 +6035,51 @@
 					}))
 				}
 			}
-			var fa = ma(ga),
-				Oa = n("./src/chat/components/MinimizedPortalContainer/index.tsx"),
-				Ea = n("./src/higherOrderComponents/makeAsync.tsx"),
-				va = n("./src/lib/loadWithRetries/index.ts");
-			const ja = () => null;
-			var Ca = Object(Ea.a)({
-				ErrorComponent: ja,
-				getComponent: () => Object(va.a)(() => n.e("OverlayChatMembers").then(n.bind(null, "./src/chat/components/OverlayChatMembers/index.tsx"))).then(e => e.default),
-				LoadingComponent: ja
+			var xa = ja(Ia),
+				ya = n("./src/chat/components/MinimizedPortalContainer/index.tsx"),
+				Sa = n("./src/higherOrderComponents/makeAsync.tsx"),
+				Na = n("./src/lib/loadWithRetries/index.ts");
+			const wa = () => null;
+			var ka = Object(Sa.a)({
+				ErrorComponent: wa,
+				getComponent: () => Object(Na.a)(() => n.e("OverlayChatMembers").then(n.bind(null, "./src/chat/components/OverlayChatMembers/index.tsx"))).then(e => e.default),
+				LoadingComponent: wa
 			});
-			const _a = () => null;
-			var Ia = Object(Ea.a)({
-					ErrorComponent: _a,
-					getComponent: () => Object(va.a)(() => n.e("OverlayCreateChannel").then(n.bind(null, "./src/chat/components/OverlayCreateChannel/index.tsx"))).then(e => e.default),
-					LoadingComponent: _a
+			const Ma = () => null;
+			var Ta = Object(Sa.a)({
+					ErrorComponent: Ma,
+					getComponent: () => Object(Na.a)(() => n.e("OverlayCreateChannel").then(n.bind(null, "./src/chat/components/OverlayCreateChannel/index.tsx"))).then(e => e.default),
+					LoadingComponent: Ma
 				}),
-				xa = n("./src/chat/components/ChatIcon/index.tsx"),
-				ya = n("./src/lib/opener/index.ts"),
-				Sa = n("./src/chat/components/Message/RichUnit/Comment/loader.tsx"),
-				Na = n("./src/chat/components/Message/RichUnit/Post/loader.tsx"),
-				wa = n("./src/chat/components/OverlayShareToChat/RichUnit/index.m.less"),
-				ka = n.n(wa);
+				La = n("./src/chat/components/ChatIcon/index.tsx"),
+				Aa = n("./src/lib/opener/index.ts"),
+				Da = n("./src/chat/components/Message/RichUnit/Comment/loader.tsx"),
+				Pa = n("./src/chat/components/Message/RichUnit/Post/loader.tsx"),
+				Ua = n("./src/chat/components/OverlayShareToChat/RichUnit/index.m.less"),
+				Ra = n.n(Ua);
 			const {
-				POST: Ma,
-				USER_POST: Ta,
-				COMMENT: La
-			} = ve.c;
-			var Aa = ({
+				POST: Ba,
+				USER_POST: Fa,
+				COMMENT: Ha
+			} = Ne.c;
+			var Ga = ({
 					chatUnitTypeData: e,
 					message: t
 				}) => {
-					const n = Object(o.e)(t => Object(ia.a)(t, e));
+					const n = Object(o.e)(t => Object(ga.a)(t, e));
 					return r.a.createElement("div", {
-						className: ka.a.Wrapper
+						className: Ra.a.Wrapper
 					}, n ? ((e, t) => {
 						switch (t.type) {
-							case Ta:
-							case Ma:
-								return r.a.createElement(Na.a, {
+							case Fa:
+							case Ba:
+								return r.a.createElement(Pa.a, {
 									postUrl: e,
 									richUnitData: t,
 									isSharedToChat: !0
 								});
-							case La:
-								return r.a.createElement(Sa.a, {
+							case Ha:
+								return r.a.createElement(Da.a, {
 									richUnitData: t,
 									commentUrl: e,
 									isSharedToChat: !0
@@ -6017,23 +6090,23 @@
 					})(t, n) : r.a.createElement("div", {
 						role: "button",
 						tabIndex: 0,
-						className: ka.a.Link,
+						className: Ra.a.Link,
 						onClick: e => {
 							((e, t) => {
-								e.stopPropagation(), Object(ya.e)(t, "_blank")
+								e.stopPropagation(), Object(Aa.e)(t, "_blank")
 							})(e, t)
 						}
 					}, t))
 				},
-				Da = n("./src/chat/controls/Checkbox/index.tsx"),
-				Pa = n("./src/chat/controls/Overlay/index.tsx"),
-				Ua = n("./src/chat/controls/OverlayControlBar/index.tsx"),
-				Ra = n("./src/chat/controls/OverlayHeader/index.tsx"),
-				Ba = n("./src/chat/components/OverlayShareToChat/index.m.less"),
-				Fa = n.n(Ba);
+				Va = n("./src/chat/controls/Checkbox/index.tsx"),
+				za = n("./src/chat/controls/Overlay/index.tsx"),
+				Wa = n("./src/chat/controls/OverlayControlBar/index.tsx"),
+				Ka = n("./src/chat/controls/OverlayHeader/index.tsx"),
+				Za = n("./src/chat/components/OverlayShareToChat/index.m.less"),
+				qa = n.n(Za);
 			const {
-				fbt: Ha
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), Ga = ({
+				fbt: Qa
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), Ya = ({
 				channelId: e,
 				onClick: t,
 				channelFilterValue: n
@@ -6043,22 +6116,22 @@
 					i(n => (t(!n, e), !n))
 				}, [t, e]);
 				return Object(c.useMemo)(() => !d || !!n && !d.toLowerCase().includes(n.toLowerCase()), [d, n]) ? null : r.a.createElement("div", {
-					className: Fa.a.Channel
-				}, r.a.createElement(Da.a, {
+					className: qa.a.Channel
+				}, r.a.createElement(Va.a, {
 					checked: s,
 					onChange: u,
-					className: Fa.a.Checkbox
+					className: qa.a.Checkbox
 				}, r.a.createElement("div", {
-					className: Fa.a.CheckboxContent
-				}, (null == l ? void 0 : l.firstUser) && r.a.createElement(xa.a, {
-					className: Fa.a.ChannelIcon,
+					className: qa.a.CheckboxContent
+				}, (null == l ? void 0 : l.firstUser) && r.a.createElement(La.a, {
+					className: qa.a.ChannelIcon,
 					userId: l.firstUser.id,
 					secondUserId: null === (a = l.secondUser) || void 0 === a ? void 0 : a.id,
 					isSmall: !0
 				}), r.a.createElement("div", {
-					className: Fa.a.ChannelName
+					className: qa.a.ChannelName
 				}, d))))
-			}, Va = ({
+			}, Xa = ({
 				onChannelClick: e,
 				channels: t,
 				chatUnitTypeData: n,
@@ -6069,19 +6142,19 @@
 				setChannelsFilter: i,
 				onClickCreateNewChannel: l
 			}) => r.a.createElement("div", {
-				className: Fa.a.Content
-			}, r.a.createElement(Aa, {
+				className: qa.a.Content
+			}, r.a.createElement(Ga, {
 				chatUnitTypeData: n,
 				message: a
 			}), s && r.a.createElement("div", {
-				className: Fa.a.SearchInput
+				className: qa.a.SearchInput
 			}, r.a.createElement("label", {
 				htmlFor: "channelSearch",
-				className: Fa.a.Label
-			}, r.a.createElement(rt.a, null)), r.a.createElement("input", {
+				className: qa.a.Label
+			}, r.a.createElement(pt.a, null)), r.a.createElement("input", {
 				ref: c,
 				placeholder: "Search chats",
-				className: Fa.a.Input,
+				className: qa.a.Input,
 				type: "text",
 				value: o,
 				onChange: e => {
@@ -6089,29 +6162,29 @@
 				},
 				id: "channelSearch"
 			})), r.a.createElement("div", {
-				className: Fa.a.NewChat
+				className: qa.a.NewChat
 			}, r.a.createElement("span", {
-				className: Fa.a.NewChatContent,
+				className: qa.a.NewChatContent,
 				onClick: l,
 				role: "button",
 				tabIndex: 0
-			}, r.a.createElement(gt.a, {
-				className: Fa.a.NewChatIcon
-			}), Ha._("new chat", null, {
+			}, r.a.createElement(It.a, {
+				className: qa.a.NewChatIcon
+			}), Qa._("new chat", null, {
 				hk: "2JtgH4"
 			}))), !s && r.a.createElement("div", {
-				className: Fa.a.LoadingIndicator
-			}, Ha._("Loading Channels", null, {
+				className: qa.a.LoadingIndicator
+			}, Qa._("Loading Channels", null, {
 				hk: "7Nhm8"
-			})), t && s && r.a.createElement(Ve.b, {
-				className: Fa.a.Scroller
-			}, t.map(t => r.a.createElement(Ga, {
+			})), t && s && r.a.createElement(Xe.b, {
+				className: qa.a.Scroller
+			}, t.map(t => r.a.createElement(Ya, {
 				channelId: t.channelId,
 				onClick: e,
 				channelFilterValue: o,
 				key: t.channelId
 			}))));
-			var za = ({
+			var Ja = ({
 					message: e
 				}) => {
 					const t = Object(o.d)(),
@@ -6121,22 +6194,22 @@
 						[d, u] = Object(c.useState)([]),
 						[h, m] = Object(c.useState)(""),
 						[p, b] = Object(c.useState)(!1),
-						g = Object(o.e)(_.F),
+						g = Object(o.e)(_.G),
 						f = Object(o.e)(_.v),
-						O = Object(c.useMemo)(() => f >= oa.a.InitChannels || !g, [f, g]),
+						O = Object(c.useMemo)(() => f >= ba.a.InitChannels || !g, [f, g]),
 						E = Object(c.useCallback)(() => {
-							const n = Object(Me.getShareToNewChatUrl)(e);
-							t(Object(be.b)(n))
+							const n = Object(Be.getShareToNewChatUrl)(e);
+							t(Object(_e.b)(n))
 						}, [t, e]),
 						v = Object(c.useCallback)((e, t) => {
 							u(n => e ? [...n, t] : n.filter(e => e !== t))
 						}, []),
-						j = Object(c.useMemo)(() => Object(Me.getChatUnitType)(e), [e]),
+						j = Object(c.useMemo)(() => Object(Be.getChatUnitType)(e), [e]),
 						C = Object(c.useMemo)(() => !Boolean(d.length), [d]),
-						I = Object(c.useMemo)(() => Ha._({
+						I = Object(c.useMemo)(() => Qa._({
 							"*": "Share to {amount of chats} chats",
 							_1: "Share to {amount of chats} chat"
-						}, [Ha._param("amount of chats", d.length || ""), Ha._plural(d.length)], {
+						}, [Qa._param("amount of chats", d.length || ""), Qa._plural(d.length)], {
 							hk: "2O8DGN"
 						}), [d]);
 					Object(c.useEffect)(() => {
@@ -6149,11 +6222,11 @@
 							Object(_.e)(e).length ? i(Object(_.e)(e)) : E()
 						}
 					}, [n, E, O]);
-					return r.a.createElement(Pa.a, null, r.a.createElement(Ra.a, {
-						title: Ha._("Share to chat", null, {
+					return r.a.createElement(za.a, null, r.a.createElement(Ka.a, {
+						title: Qa._("Share to chat", null, {
 							hk: "MfUYD"
 						})
-					}), r.a.createElement(Va, {
+					}), r.a.createElement(Xa, {
 						channels: s,
 						channelsFilter: h,
 						chatUnitTypeData: j,
@@ -6165,23 +6238,23 @@
 						},
 						searchRef: a,
 						setChannelsFilter: m
-					}), r.a.createElement(Ua.a, {
+					}), r.a.createElement(Wa.a, {
 						primaryButtonText: I,
 						primaryButtonDisabled: C || p,
 						secondaryButtonAction: () => {
 							t(Object(R.M)())
 						},
 						primaryButtonAction: () => {
-							b(!0), t(Object(B.s)(d, e, ve.c.TEXT)), t(Object(l.G)())
+							b(!0), t(Object(B.s)(d, e, Ne.c.TEXT)), t(Object(l.G)())
 						}
 					}))
 				},
-				Wa = n("./src/chat/components/Sidebar/index.tsx"),
-				Ka = n("./src/chat/actions/sendbird/sdk.ts"),
-				Za = n("./src/chat/constants/toast.ts");
+				$a = n("./src/chat/components/Sidebar/index.tsx"),
+				es = n("./src/chat/actions/sendbird/sdk.ts"),
+				ts = n("./src/chat/constants/toast.ts");
 
-			function qa() {
-				return (qa = Object.assign || function(e) {
+			function ns() {
+				return (ns = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var a in n) Object.prototype.hasOwnProperty.call(n, a) && (e[a] = n[a])
@@ -6189,7 +6262,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var Qa = e => r.a.createElement(b.a, qa({}, e, {
+			var as = e => r.a.createElement(b.a, ns({}, e, {
 				viewBox: "0 0 24 21"
 			}), r.a.createElement("path", {
 				d: "M5.1 3.2c.5.3 1.1.3 1.7.1 1.4-.5 2.9-.9 4.5-.7 1.2.2 1.8.2 2.3.4 1 .4 2 .9 3 1.4.5.3 1 .8 1.5 1.2.2.2.5.4.7.4 2.4-.1 4.1 1 5 3.3.8 2-.5 4.5-2 5.1-.3.1-.6.4-.7.7-.6 2-1.9 3.3-3.7 4.2-.1.1-.2.1-.3.1-.7.3-3.9 1.7-7.9 1-4.8-.9-9.3-4.6-8.7-10.2.1-1 0-1.9-.3-2.9-.2-.2-.2-.5-.2-.8.1-2.7 2.9-4.6 5.1-3.3z"
@@ -6205,8 +6278,8 @@
 				d: "M21.3 3.1c-.2.5-.6.9-1 1-.4.1-.9 0-1.3-.3s-.7-.7-.7-1.1c0-.2 0-.8.8-1.4.5-.4 1.4 0 1.9.4.2.4.5.8.3 1.4zM18 14.6c-.5-2.5-3.8-6.4-6.8-5.3-1.4.5-1.7 2.4-.8 3.5.7.8 2.1 1.2 3 1.6-.3 0-.6.1-.9 0 1.2 1.6.6 4.7 2.8 5.2 2.5.7 3.4-1.7 2.7-5z"
 			}));
 
-			function Ya() {
-				return (Ya = Object.assign || function(e) {
+			function ss() {
+				return (ss = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var a in n) Object.prototype.hasOwnProperty.call(n, a) && (e[a] = n[a])
@@ -6214,7 +6287,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var Xa = e => r.a.createElement(b.a, Ya({}, e, {
+			var cs = e => r.a.createElement(b.a, ss({}, e, {
 					viewBox: "0 0 24 25"
 				}), r.a.createElement("path", {
 					d: "M19.7 9.4c-.6.2-1.1 0-1.6-.3-1.3-.8-2.6-1.4-4.2-1.5-1.2-.1-1.8-.1-2.3 0-1.1.2-2.2.4-3.2.7-.6.2-1.1.6-1.7.8-.2.1-.5.2-.7.2-2.3-.6-4.1.2-5.4 2.2-1.1 1.7-.4 4.4.9 5.3.2.2.5.5.5.8.1 2.1 1.2 3.6 2.7 4.8.1.1.2.1.3.2.6.4 1.9 1.2 3 1.5 1.5.5 3 .7 4.5.7 1.5-.1 3-.1 4.4-.6.4-.2 2.3-1.1 3.4-2.2 1.2-1.5 2.3-3 2.5-4.9.1-1 .4-1.8.9-2.7.2-.3.2-.6.3-.9.4-2.5-2-5-4.3-4.1z"
@@ -6227,126 +6300,126 @@
 					fill: "#FFF",
 					d: "M14 1.9c-.1-.6.4-1.1 1.1-1.2.8-.1 1.4.3 1.5 1 .1.7-.5 1.5-1.1 1.6-.7.1-1.4-.6-1.5-1.4z"
 				})),
-				Ja = n("./src/chat/components/ToastNotification/index.m.less"),
-				$a = n.n(Ja);
-			const es = [Za.a.ConnectionClosed, Za.a.ConnectionPending],
-				ts = [Za.a.SomethingWentWrong, Za.a.ShareLinkRateLimit, Za.a.ShareLinkGone, Za.a.ShareLinkInvalidRequest, Za.a.ShareLinkNotFound, C.a.UnsupportedBrowser, C.a.InvalidMediaType, C.a.FileSizeLimitExceeded, C.a.ActiveFilesLimitExceeded],
-				ns = [Za.a.LinkDisabled],
-				as = e => es.includes(e),
-				ss = e => ts.includes(e),
-				cs = e => ns.includes(e);
-			var rs = () => {
+				rs = n("./src/chat/components/ToastNotification/index.m.less"),
+				os = n.n(rs);
+			const is = [ts.a.ConnectionClosed, ts.a.ConnectionPending],
+				ls = [ts.a.SomethingWentWrong, ts.a.ShareLinkRateLimit, ts.a.ShareLinkGone, ts.a.ShareLinkInvalidRequest, ts.a.ShareLinkNotFound, C.a.UnsupportedBrowser, C.a.InvalidMediaType, C.a.FileSizeLimitExceeded, C.a.ActiveFilesLimitExceeded],
+				ds = [ts.a.LinkDisabled],
+				us = e => is.includes(e),
+				hs = e => ls.includes(e),
+				ms = e => ds.includes(e);
+			var ps = () => {
 					const e = Object(o.e)(e => e.toast),
 						t = Object(o.d)(),
-						n = Object(o.e)(Ke.g);
+						n = Object(o.e)(et.g);
 					return r.a.createElement("div", {
-						className: Object(i.a)($a.a.Wrapper, {
-							[$a.a.show]: !!e
+						className: Object(i.a)(os.a.Wrapper, {
+							[os.a.show]: !!e
 						})
 					}, e && r.a.createElement("div", {
-						className: Object(i.a)($a.a.Content, {
-							[$a.a.pending]: as(e),
-							[$a.a.error]: ss(e),
-							[$a.a.info]: cs(e),
-							[$a.a.isFullSize]: n
+						className: Object(i.a)(os.a.Content, {
+							[os.a.pending]: us(e),
+							[os.a.error]: hs(e),
+							[os.a.info]: ms(e),
+							[os.a.isFullSize]: n
 						})
 					}, r.a.createElement("button", {
-						className: $a.a.CloseButton,
+						className: os.a.CloseButton,
 						onClick: () => {
 							t(Object(j.c)(0))
 						}
-					}, r.a.createElement(V.a, {
-						className: $a.a.CloseButtonIcon
+					}, r.a.createElement(J.a, {
+						className: os.a.CloseButtonIcon
 					})), r.a.createElement("div", {
-						className: $a.a.InfoWrapper
+						className: os.a.InfoWrapper
 					}, r.a.createElement("div", {
-						className: $a.a.Icon
+						className: os.a.Icon
 					}, (e => {
 						switch (e) {
-							case Za.a.LinkCopied:
-							case Za.a.LinkDisabled:
-							case Za.a.ConnectionOpen:
-								return r.a.createElement(Xa, null);
-							case Za.a.ConnectionPending:
-							case Za.a.ConnectionClosed:
-							case Za.a.SomethingWentWrong:
-							case Za.a.ShareLinkRateLimit:
-							case Za.a.ShareLinkGone:
-							case Za.a.ShareLinkInvalidRequest:
-							case Za.a.ShareLinkNotFound:
+							case ts.a.LinkCopied:
+							case ts.a.LinkDisabled:
+							case ts.a.ConnectionOpen:
+								return r.a.createElement(cs, null);
+							case ts.a.ConnectionPending:
+							case ts.a.ConnectionClosed:
+							case ts.a.SomethingWentWrong:
+							case ts.a.ShareLinkRateLimit:
+							case ts.a.ShareLinkGone:
+							case ts.a.ShareLinkInvalidRequest:
+							case ts.a.ShareLinkNotFound:
 							case C.a.UnsupportedBrowser:
 							case C.a.InvalidMediaType:
 							case C.a.FileSizeLimitExceeded:
 							case C.a.ActiveFilesLimitExceeded:
-								return r.a.createElement(Qa, null);
+								return r.a.createElement(as, null);
 							default:
 								return null
 						}
 					})(e)), r.a.createElement("div", {
-						className: $a.a.Message
+						className: os.a.Message
 					}, (e => {
 						switch (e) {
-							case Za.a.ConnectionOpen:
-								return Q.fbt._("Found the internet!", null, {
+							case ts.a.ConnectionOpen:
+								return se.fbt._("Found the internet!", null, {
 									hk: "3jLr8W"
 								});
-							case Za.a.ConnectionPending:
-								return Q.fbt._("Looking for the internet...", null, {
+							case ts.a.ConnectionPending:
+								return se.fbt._("Looking for the internet...", null, {
 									hk: "1JPRuh"
 								});
-							case Za.a.ConnectionClosed:
-								return Q.fbt._("Hmm, no internet?", null, {
+							case ts.a.ConnectionClosed:
+								return se.fbt._("Hmm, no internet?", null, {
 									hk: "134peM"
 								});
-							case Za.a.SomethingWentWrong:
-								return Q.fbt._("Oops! Something went wrong", null, {
+							case ts.a.SomethingWentWrong:
+								return se.fbt._("Oops! Something went wrong", null, {
 									hk: "4CGwU7"
 								});
-							case Za.a.LinkCopied:
-								return Q.fbt._("Link copied!", null, {
+							case ts.a.LinkCopied:
+								return se.fbt._("Link copied!", null, {
 									hk: "1YEENU"
 								});
-							case Za.a.LinkDisabled:
-								return Q.fbt._("Your invite links have been reset", null, {
+							case ts.a.LinkDisabled:
+								return se.fbt._("Your invite links have been reset", null, {
 									hk: "l8FWi"
 								});
 							case C.a.UnsupportedBrowser:
-								return Q.fbt._("Oops! Unsupported browser for Media uploading", null, {
+								return se.fbt._("Oops! Unsupported browser for Media uploading", null, {
 									hk: "3incN0"
 								});
 							case C.a.InvalidMediaType:
-								return Q.fbt._("Oops! Chat only supports files in JPEG, PNG and GIF format", null, {
+								return se.fbt._("Oops! Chat only supports files in JPEG, PNG and GIF format", null, {
 									hk: "8s0vB"
 								});
 							case C.a.FileSizeLimitExceeded:
-								return Q.fbt._("Oops! Media file size limit exceeded. {Max gif file size}MB for GIF and {Max image file size}MB for JPEG and PNG", [Q.fbt._param("Max gif file size", String(40)), Q.fbt._param("Max image file size", String(20))], {
+								return se.fbt._("Oops! Media file size limit exceeded. {Max gif file size}MB for GIF and {Max image file size}MB for JPEG and PNG", [se.fbt._param("Max gif file size", String(40)), se.fbt._param("Max image file size", String(20))], {
 									hk: "2twjo7"
 								});
-							case Za.a.ShareLinkRateLimit:
-								return Q.fbt._("That didn't work, try joining the chat later", null, {
+							case ts.a.ShareLinkRateLimit:
+								return se.fbt._("That didn't work, try joining the chat later", null, {
 									hk: "30uvo2"
 								});
-							case Za.a.ShareLinkInvalidRequest:
-							case Za.a.ShareLinkNotFound:
-							case Za.a.ShareLinkGone:
-								return Q.fbt._("This link has expired", null, {
+							case ts.a.ShareLinkInvalidRequest:
+							case ts.a.ShareLinkNotFound:
+							case ts.a.ShareLinkGone:
+								return se.fbt._("This link has expired", null, {
 									hk: "3GpAgM"
 								});
 							case C.a.ActiveFilesLimitExceeded:
-								return Q.fbt._("Oops! Too many files per message", null, {
+								return se.fbt._("Oops! Too many files per message", null, {
 									hk: "2x9klR"
 								});
 							default:
 								return null
 						}
 					})(e)), r.a.createElement("button", {
-						className: $a.a.ActionButton,
+						className: os.a.ActionButton,
 						onClick: () => {
 							if (e) {
 								const n = (e => {
 									switch (e) {
-										case Za.a.ConnectionClosed:
-											return Ka.g;
+										case ts.a.ConnectionClosed:
+											return es.g;
 										default:
 											return null
 									}
@@ -6356,8 +6429,8 @@
 						}
 					}, (e => {
 						switch (e) {
-							case Za.a.ConnectionClosed:
-								return Q.fbt._("RECONNECT", null, {
+							case ts.a.ConnectionClosed:
+								return se.fbt._("RECONNECT", null, {
 									hk: "3jJ04G"
 								});
 							default:
@@ -6365,38 +6438,38 @@
 						}
 					})(e)))))
 				},
-				os = n("./src/chat/constants/channels.ts"),
-				is = n("./src/chat/constants/container.ts");
-			const ls = () => null;
-			var ds = Object(Ea.a)({
-					ErrorComponent: ls,
-					getComponent: () => Object(va.a)(() => n.e("OverlayBlockUser").then(n.bind(null, "./src/chat/components/OverlayBlockUser/index.tsx"))).then(e => e.default),
-					LoadingComponent: ls
+				bs = n("./src/chat/constants/channels.ts"),
+				gs = n("./src/chat/constants/container.ts");
+			const fs = () => null;
+			var Os = Object(Sa.a)({
+					ErrorComponent: fs,
+					getComponent: () => Object(Na.a)(() => n.e("OverlayBlockUser").then(n.bind(null, "./src/chat/components/OverlayBlockUser/index.tsx"))).then(e => e.default),
+					LoadingComponent: fs
 				}),
-				us = n("./src/chat/components/UserMetaInfo/index.tsx"),
-				hs = n("./src/chat/controls/MediaObject/index.m.less"),
-				ms = n.n(hs);
-			const ps = Lt.a.wrapped(e => {
+				Es = n("./src/chat/components/UserMetaInfo/index.tsx"),
+				vs = n("./src/chat/controls/MediaObject/index.m.less"),
+				js = n.n(vs);
+			const Cs = Ht.a.wrapped(e => {
 				const [t, n, a] = r.a.Children.toArray(e.children);
 				return r.a.createElement("div", {
 					className: e.className
 				}, t, n, a)
-			}, "MediaObject", ms.a);
-			var bs = n("./src/chat/controls/Title/index.tsx"),
-				gs = n("./src/chat/icons/Nsfw/index.tsx"),
-				fs = n("./src/chat/components/OverlayChannelInvited/index.m.less"),
-				Os = n.n(fs);
+			}, "MediaObject", js.a);
+			var _s = n("./src/chat/controls/Title/index.tsx"),
+				Is = n("./src/chat/icons/Nsfw/index.tsx"),
+				xs = n("./src/chat/components/OverlayChannelInvited/index.m.less"),
+				ys = n.n(xs);
 			const {
-				fbt: Es
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), vs = ({
+				fbt: Ss
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), Ns = ({
 				children: e
 			}) => r.a.createElement("span", {
-				className: Os.a.LightTextSmall
-			}, e), js = ({
+				className: ys.a.LightTextSmall
+			}, e), ws = ({
 				inviterContact: e
-			}) => e ? r.a.createElement(vs, null, r.a.createElement(us.a, {
+			}) => e ? r.a.createElement(Ns, null, r.a.createElement(Es.a, {
 				contact: e
-			})) : null, Cs = ({
+			})) : null, ks = ({
 				channelInviter: e,
 				inviterContact: t,
 				channelMessages: n,
@@ -6405,62 +6478,62 @@
 			}) => {
 				const c = t && !!t.isNSFW;
 				return e ? r.a.createElement(r.a.Fragment, null, r.a.createElement("a", {
-					target: ya.d.BLANK,
-					rel: ya.c,
-					href: `${bt.a.redditUrl}/user/${e.name}`
-				}, r.a.createElement(ps, {
-					className: Os.a.MediaObject
-				}, c ? r.a.createElement(gs.a, {
-					className: Os.a.NSFWIcon
-				}) : r.a.createElement(ne.a, {
-					className: Os.a.UserPic,
+					target: Aa.d.BLANK,
+					rel: Aa.c,
+					href: `${_t.a.redditUrl}/user/${e.name}`
+				}, r.a.createElement(Cs, {
+					className: ys.a.MediaObject
+				}, c ? r.a.createElement(Is.a, {
+					className: ys.a.NSFWIcon
+				}) : r.a.createElement(ue.a, {
+					className: ys.a.UserPic,
 					userId: e.id
 				}), r.a.createElement("div", {
-					className: Os.a.TitleContainer
-				}, r.a.createElement(bs.a, {
-					className: Os.a.Title,
+					className: ys.a.TitleContainer
+				}, r.a.createElement(_s.a, {
+					className: ys.a.Title,
 					bold: !0
 				}, e.name), c && r.a.createElement("span", {
-					className: Os.a.WarningTextNSFW
-				}, Es._("NSFW", null, {
+					className: ys.a.WarningTextNSFW
+				}, Ss._("NSFW", null, {
 					hk: "3rI4EF"
-				}))), r.a.createElement(js, {
+				}))), r.a.createElement(ws, {
 					inviterContact: t
-				}))), void 0 !== a && s && r.a.createElement(_s, {
+				}))), void 0 !== a && s && r.a.createElement(Ms, {
 					channelType: a,
 					channelMessages: n
 				}), r.a.createElement("div", {
-					className: Os.a.Container
+					className: ys.a.Container
 				})) : null
-			}, _s = ({
+			}, Ms = ({
 				channelType: e,
 				channelMessages: t
 			}) => {
 				const n = U()([...t], "createdAt");
-				return t && t.length ? r.a.createElement(Yn, {
+				return t && t.length ? r.a.createElement(sa, {
 					channelType: e,
 					messageList: n,
 					inPreview: !0
 				}) : null
-			}, Is = ({
+			}, Ts = ({
 				userName: e
-			}) => r.a.createElement("p", null, Es._("Accept to chat with {userName}{restText}", [Es._param("userName", r.a.createElement("span", {
-				className: Os.a.BoldText
-			}, e)), Es._param("restText", r.a.createElement("span", null, ". If you ignore, the chat request will be removed, and we won’t let the sender know."))], {
+			}) => r.a.createElement("p", null, Ss._("Accept to chat with {userName}{restText}", [Ss._param("userName", r.a.createElement("span", {
+				className: ys.a.BoldText
+			}, e)), Ss._param("restText", r.a.createElement("span", null, ". If you ignore, the chat request will be removed, and we won’t let the sender know."))], {
 				hk: "3FVxLq"
-			})), xs = ({
+			})), Ls = ({
 				userName: e,
 				isQuickActionBlock: t
-			}) => t ? Es._("Are you sure you want to block {userName}", [Es._param("userName", r.a.createElement("span", {
-				className: Os.a.BoldText
+			}) => t ? Ss._("Are you sure you want to block {userName}", [Ss._param("userName", r.a.createElement("span", {
+				className: ys.a.BoldText
 			}, ` ${e}?`))], {
 				hk: "12VekN"
-			}) : Es._("Are you sure you want to mark this chat as spam? You will also block {userName}", [Es._param("userName", r.a.createElement("span", {
-				className: Os.a.BoldText
+			}) : Ss._("Are you sure you want to mark this chat as spam? You will also block {userName}", [Ss._param("userName", r.a.createElement("span", {
+				className: ys.a.BoldText
 			}, ` ${e}?`))], {
 				hk: "1teJQL"
 			});
-			var ys = ({
+			var As = ({
 				channelId: e
 			}) => {
 				var t, n;
@@ -6470,10 +6543,10 @@
 					i(!1)
 				}, [e]);
 				const d = Object(o.e)(t => Object(_.i)(t, e)),
-					u = Object(o.e)(t => Object(Ae.d)(t, e)),
+					u = Object(o.e)(t => Object(Ge.d)(t, e)),
 					h = Object(o.e)(t => Object(_.z)(t, e)),
-					m = Object(o.e)(se.n),
-					p = Object(o.e)(se.p),
+					m = Object(o.e)(he.o),
+					p = Object(o.e)(he.q),
 					b = Object(c.useCallback)(() => {
 						a(Object(R.y)(e)), a(Object(l.p)(e))
 					}, [a, e]),
@@ -6484,201 +6557,201 @@
 						u && (a(Object(R.B)(e, u)), m && a(Object(l.q)()), p && a(Object(l.s)(e, h)))
 					}, [a, e, u, m, p, h]),
 					O = Object(c.useCallback)(() => {
-						a(Object(R.N)(os.b.INVITED, e))
+						a(Object(R.N)(bs.b.INVITED, e))
 					}, [a, e]),
-					E = Object(c.useMemo)(() => m ? Es._("Block", null, {
+					E = Object(c.useMemo)(() => m ? Ss._("Block", null, {
 						hk: "4CA4VX"
-					}) : Es._("Mark as spam", null, {
+					}) : Ss._("Mark as spam", null, {
 						hk: "3Iy1wd"
 					}), [m]),
-					v = Object(c.useMemo)(() => (null == d ? void 0 : d.type) === ae.b.Direct, [d]),
-					j = Object(c.useMemo)(() => v ? Es._("Chat Request", null, {
+					v = Object(c.useMemo)(() => (null == d ? void 0 : d.type) === q.b.Direct, [d]),
+					j = Object(c.useMemo)(() => v ? Ss._("Chat Request", null, {
 						hk: "1sWJM0"
-					}) : Es._("Group invite", null, {
+					}) : Ss._("Group invite", null, {
 						hk: "JPFyz"
 					}), [v]);
-				return r.a.createElement(Pa.a, null, r.a.createElement(aa.a, {
+				return r.a.createElement(za.a, null, r.a.createElement(ua.a, {
 					channelId: e,
 					title: j,
 					showMenu: v
-				}), r.a.createElement(Ve.b, {
-					className: Os.a.Scroller
-				}, r.a.createElement(Cs, {
+				}), r.a.createElement(Xe.b, {
+					className: ys.a.Scroller
+				}, r.a.createElement(ks, {
 					channelInviter: null == d ? void 0 : d.inviter,
 					channelMessages: h,
 					inviterContact: u,
 					channelId: null == d ? void 0 : d.channelId,
 					channelType: null == d ? void 0 : d.type
 				})), r.a.createElement("div", {
-					className: Os.a.OverlayControlBarWrapper
-				}, s ? r.a.createElement(Ua.a, {
-					className: Os.a.OverlayControlBar,
-					secondaryButtonText: Es._("Nevermind", null, {
+					className: ys.a.OverlayControlBarWrapper
+				}, s ? r.a.createElement(Wa.a, {
+					className: ys.a.OverlayControlBar,
+					secondaryButtonText: Ss._("Nevermind", null, {
 						hk: "30ppMU"
 					}),
 					primaryButtonText: E,
 					primaryButtonAction: f,
 					secondaryButtonAction: O
-				}, r.a.createElement(xs, {
+				}, r.a.createElement(Ls, {
 					userName: null === (t = null == d ? void 0 : d.inviter) || void 0 === t ? void 0 : t.name,
 					isQuickActionBlock: m
-				})) : r.a.createElement(Ua.a, {
-					className: Os.a.OverlayControlBar,
-					secondaryButtonText: Es._("Ignore", null, {
+				})) : r.a.createElement(Wa.a, {
+					className: ys.a.OverlayControlBar,
+					secondaryButtonText: Ss._("Ignore", null, {
 						hk: "1ws6QH"
 					}),
 					secondaryButtonAction: g,
-					primaryButtonText: Es._("Accept", null, {
+					primaryButtonText: Ss._("Accept", null, {
 						hk: "249yqF"
 					}),
 					primaryButtonAction: b,
 					primaryButtonBlock: m || p,
 					primaryButtonBlockText: E,
 					primaryButtonBlockAction: () => i(!0)
-				}, r.a.createElement(Is, {
+				}, r.a.createElement(Ts, {
 					userName: null === (n = null == d ? void 0 : d.inviter) || void 0 === n ? void 0 : n.name
 				}))))
 			};
-			const Ss = () => null;
-			var Ns = Object(Ea.a)({
-				ErrorComponent: Ss,
-				getComponent: () => Object(va.a)(() => n.e("OverlayChannelRemoval").then(n.bind(null, "./src/chat/components/OverlayChannelRemoval/index.tsx"))).then(e => e.default),
-				LoadingComponent: Ss
+			const Ds = () => null;
+			var Ps = Object(Sa.a)({
+				ErrorComponent: Ds,
+				getComponent: () => Object(Na.a)(() => n.e("OverlayChannelRemoval").then(n.bind(null, "./src/chat/components/OverlayChannelRemoval/index.tsx"))).then(e => e.default),
+				LoadingComponent: Ds
 			});
-			const ws = () => null;
-			var ks = Object(Ea.a)({
-					ErrorComponent: ws,
-					getComponent: () => Object(va.a)(() => n.e("OverlayDeleteMessage").then(n.bind(null, "./src/chat/components/OverlayDeleteMessage/index.tsx"))).then(e => e.default),
-					LoadingComponent: ws
+			const Us = () => null;
+			var Rs = Object(Sa.a)({
+					ErrorComponent: Us,
+					getComponent: () => Object(Na.a)(() => n.e("OverlayDeleteMessage").then(n.bind(null, "./src/chat/components/OverlayDeleteMessage/index.tsx"))).then(e => e.default),
+					LoadingComponent: Us
 				}),
-				Ms = n("./src/chat/components/OverlayDirectsEmptySkeletonState/index.tsx");
-			const Ts = () => null;
-			var Ls = Object(Ea.a)({
-				ErrorComponent: Ts,
-				getComponent: () => Object(va.a)(() => n.e("OverlayDirectsEmptyState").then(n.bind(null, "./src/chat/components/OverlayDirectsEmptyState/index.tsx"))).then(e => e.default),
-				LoadingComponent: Ts
-			});
-			const As = () => null;
-			var Ds = Object(Ea.a)({
-				ErrorComponent: As,
-				getComponent: () => Object(va.a)(() => n.e("OverlayKickUser").then(n.bind(null, "./src/chat/components/OverlayKickUser/index.tsx"))).then(e => e.default),
-				LoadingComponent: As
-			});
-			const Ps = () => null;
-			var Us = Object(Ea.a)({
-				ErrorComponent: Ps,
-				getComponent: () => Object(va.a)(() => n.e("OverlayLinkSharingSettings").then(n.bind(null, "./src/chat/components/OverlayLinkSharingSettings/index.tsx"))).then(e => e.default),
-				LoadingComponent: Ps
-			});
-			const Rs = () => null;
-			var Bs = Object(Ea.a)({
-				ErrorComponent: Rs,
-				getComponent: () => Object(va.a)(() => n.e("OverlayNSFWWarning").then(n.bind(null, "./src/chat/components/OverlayNSFWWarning/index.tsx"))).then(e => e.default),
-				LoadingComponent: Rs
-			});
+				Bs = n("./src/chat/components/OverlayDirectsEmptySkeletonState/index.tsx");
 			const Fs = () => null;
-			var Hs = Object(Ea.a)({
-					ErrorComponent: Fs,
-					getComponent: () => Object(va.a)(() => n.e("OverlayReport").then(n.bind(null, "./src/chat/components/OverlayReport/index.tsx"))).then(e => e.default),
-					LoadingComponent: Fs
+			var Hs = Object(Sa.a)({
+				ErrorComponent: Fs,
+				getComponent: () => Object(Na.a)(() => n.e("OverlayDirectsEmptyState").then(n.bind(null, "./src/chat/components/OverlayDirectsEmptyState/index.tsx"))).then(e => e.default),
+				LoadingComponent: Fs
+			});
+			const Gs = () => null;
+			var Vs = Object(Sa.a)({
+				ErrorComponent: Gs,
+				getComponent: () => Object(Na.a)(() => n.e("OverlayKickUser").then(n.bind(null, "./src/chat/components/OverlayKickUser/index.tsx"))).then(e => e.default),
+				LoadingComponent: Gs
+			});
+			const zs = () => null;
+			var Ws = Object(Sa.a)({
+				ErrorComponent: zs,
+				getComponent: () => Object(Na.a)(() => n.e("OverlayLinkSharingSettings").then(n.bind(null, "./src/chat/components/OverlayLinkSharingSettings/index.tsx"))).then(e => e.default),
+				LoadingComponent: zs
+			});
+			const Ks = () => null;
+			var Zs = Object(Sa.a)({
+				ErrorComponent: Ks,
+				getComponent: () => Object(Na.a)(() => n.e("OverlayNSFWWarning").then(n.bind(null, "./src/chat/components/OverlayNSFWWarning/index.tsx"))).then(e => e.default),
+				LoadingComponent: Ks
+			});
+			const qs = () => null;
+			var Qs = Object(Sa.a)({
+					ErrorComponent: qs,
+					getComponent: () => Object(Na.a)(() => n.e("OverlayReport").then(n.bind(null, "./src/chat/components/OverlayReport/index.tsx"))).then(e => e.default),
+					LoadingComponent: qs
 				}),
-				Gs = n("./node_modules/lodash/get.js"),
-				Vs = n.n(Gs),
-				zs = n("./node_modules/reselect/es/index.js"),
-				Ws = n("./src/reddit/actions/reportFlow/index.ts"),
-				Ks = n("./src/reddit/actions/toaster.ts"),
-				Zs = n("./src/chat/components/FormBuilder/async.tsx"),
-				qs = n("./src/lib/makeGqlRequest/index.ts"),
-				Qs = n("./src/redditGQL/operations/ReportForm.json");
-			var Ys = n("./src/reddit/contexts/ApiContext.tsx"),
-				Xs = n("./src/reddit/models/ReportFlow/index.ts"),
-				Js = n("./src/reddit/models/Toast/index.ts"),
-				$s = n("./src/chat/components/OverlayReport/index.m.less"),
-				ec = n.n($s),
-				tc = n("./src/chat/actions/user.ts"),
-				nc = n("./src/chat/components/CrisisFlow/CrisisFlowPage.tsx"),
-				ac = n("./src/chat/components/CrisisFlow/CrisisFooter/index.m.less"),
-				sc = n.n(ac);
+				Ys = n("./node_modules/lodash/get.js"),
+				Xs = n.n(Ys),
+				Js = n("./node_modules/reselect/es/index.js"),
+				$s = n("./src/reddit/actions/reportFlow/index.ts"),
+				ec = n("./src/reddit/actions/toaster.ts"),
+				tc = n("./src/chat/components/FormBuilder/async.tsx"),
+				nc = n("./src/lib/makeGqlRequest/index.ts"),
+				ac = n("./src/redditGQL/operations/ReportForm.json");
+			var sc = n("./src/reddit/contexts/ApiContext.tsx"),
+				cc = n("./src/reddit/models/ReportFlow/index.ts"),
+				rc = n("./src/reddit/models/Toast/index.ts"),
+				oc = n("./src/chat/components/OverlayReport/index.m.less"),
+				ic = n.n(oc),
+				lc = n("./src/chat/actions/user.ts"),
+				dc = n("./src/chat/components/CrisisFlow/CrisisFlowPage.tsx"),
+				uc = n("./src/chat/components/CrisisFlow/CrisisFooter/index.m.less"),
+				hc = n.n(uc);
 			const {
-				fbt: cc
+				fbt: mc
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 
-			function rc(e) {
+			function pc(e) {
 				const {
 					thankYouControls: t,
 					onCloseReportFlow: n,
 					onCrisisFlowSubmit: a
 				} = e;
 				return r.a.createElement("div", {
-					className: sc.a.CrisisFooter
+					className: hc.a.CrisisFooter
 				}, t ? null : r.a.createElement("a", {
-					className: sc.a.CrisisButton,
+					className: hc.a.CrisisButton,
 					"data-redditstyle": !0,
 					href: "https://www.reddithelp.com/en/categories/rules-reporting/suicide-response/what-do-i-do-if-someone-talks-about-seriously-hurting",
 					target: "_blank",
 					rel: "noopener noreferrer"
-				}, cc._("Other Options", null, {
+				}, mc._("Other Options", null, {
 					hk: "1RadlV"
 				})), r.a.createElement("button", {
-					className: sc.a.CrisisSubmitButton,
+					className: hc.a.CrisisSubmitButton,
 					"data-redditstyle": !0,
 					onClick: t ? n : a
-				}, t ? cc._("Ok", null, {
+				}, t ? mc._("Ok", null, {
 					hk: "3Pp8M4"
-				}) : cc._("Yes", null, {
+				}) : mc._("Yes", null, {
 					hk: "12gtn"
 				})))
 			}
-			var oc = n("./src/chat/endpoints/messages/index.tsx"),
-				ic = n("./src/chat/routes/chat.ts"),
-				lc = n("./src/chat/selectors/messages.ts");
-			var dc;
+			var bc = n("./src/chat/endpoints/messages/index.tsx"),
+				gc = n("./src/chat/routes/chat.ts"),
+				fc = n("./src/chat/selectors/messages.ts");
+			var Oc;
 			! function(e) {
 				e.Enabled = "enabled"
-			}(dc || (dc = {}));
-			const uc = Object(zs.a)(e => e.experiments.models, e => {
+			}(Oc || (Oc = {}));
+			const Ec = Object(Js.a)(e => e.experiments.models, e => {
 				var t;
-				return (null === (t = e.ae_reporting_revamp_d2x_chat) || void 0 === t ? void 0 : t.variant) === dc.Enabled
+				return (null === (t = e.ae_reporting_revamp_d2x_chat) || void 0 === t ? void 0 : t.variant) === Oc.Enabled
 			});
-			var hc = n("./src/chat/selectors/user.ts");
-			const mc = Lt.a.div("ReportLoaderWrapper", ec.a),
-				pc = Lt.a.img("LoadingIcon", ec.a),
-				bc = "2.0",
-				gc = Object(zs.c)({
-					user: (e, t) => t.attr === ic.a.User ? e.contacts.models[t.attrId] : void 0,
-					message: (e, t) => t.attr === ic.a.Invite || t.attr === ic.a.Message ? Object(lc.b)(e, Number(t.attrId)) : void 0,
+			var vc = n("./src/chat/selectors/user.ts");
+			const jc = Ht.a.div("ReportLoaderWrapper", ic.a),
+				Cc = Ht.a.img("LoadingIcon", ic.a),
+				_c = "2.0",
+				Ic = Object(Js.c)({
+					user: (e, t) => t.attr === gc.a.User ? e.contacts.models[t.attrId] : void 0,
+					message: (e, t) => t.attr === gc.a.Invite || t.attr === gc.a.Message ? Object(fc.b)(e, Number(t.attrId)) : void 0,
 					messageList: e => Object(_.C)(e),
-					currentUserId: (e, t) => Object(hc.a)(e),
+					currentUserId: (e, t) => Object(vc.a)(e),
 					container: e => e && e.container && e.container.size,
-					isNightMode: e => Object(hn.b)(e),
-					inReportingRevampSelector: e => uc(e)
+					isNightMode: e => Object(vn.b)(e),
+					inReportingRevampSelector: e => Ec(e)
 				}),
-				fc = Object(o.b)(gc, (e, {
+				xc = Object(o.b)(Ic, (e, {
 					timestamp: t
 				}) => ({
 					onCloseReportFlow: () => {
-						e(Object(Ws.b)())
+						e(Object($s.b)())
 					},
 					onChannelBlock: t => {
-						e(tc.n(t)), e(l.R(t))
+						e(lc.n(t)), e(l.R(t))
 					},
-					showFailToast: () => e(Object(Ks.f)({
-						kind: Js.b.Error,
-						text: Q.fbt._("Something went wrong!", null, {
+					showFailToast: () => e(Object(ec.f)({
+						kind: rc.b.Error,
+						text: se.fbt._("Something went wrong!", null, {
 							hk: "1BEFhz"
 						})
 					})),
-					onCancel: () => e(Object(be.a)()),
+					onCancel: () => e(Object(_e.a)()),
 					submitReportMessage: (t, n) => e(Object(l.U)(t, n))
 				})),
-				Oc = async (e, t, n) => {
+				yc = async (e, t, n) => {
 					var a;
 					const s = await ((e, {
 						itemId: t,
 						formVersion: n,
 						hostAppName: a
-					}) => Object(qs.a)(e, {
-						...Qs,
+					}) => Object(nc.a)(e, {
+						...ac,
 						variables: {
 							itemId: t,
 							hostAppName: a,
@@ -6693,7 +6766,7 @@
 						return e ? JSON.parse(e) : null
 					}
 				};
-			class Ec extends r.a.Component {
+			class Sc extends r.a.Component {
 				constructor(e) {
 					super(e), this.handleEscapeKey = e => {
 						if (27 === e.keyCode) return this.handleReportFlowClose()
@@ -6725,8 +6798,8 @@
 							sendbirdId: String(s.messageId),
 							channelUrl: s.channelSendbirdUrl
 						};
-						"site" === o && (i.siteRule = Vs()(t, r.ref).value || Vs()(t, r.ref));
-						(await (() => Object(oc.c)(n(), {
+						"site" === o && (i.siteRule = Xs()(t, r.ref).value || Xs()(t, r.ref));
+						(await (() => Object(bc.c)(n(), {
 							input: i
 						}))()).ok || a(), i.siteRule && c(s.messageId, i.siteRule)
 					}, this.onCrisisFlowSubmit = async () => {
@@ -6744,13 +6817,13 @@
 							senderRedditorId: n.sender.userId,
 							sendbirdId: String(n.messageId),
 							channelUrl: n.channelSendbirdUrl,
-							siteRule: Xs.b.SELF_HARM
+							siteRule: cc.b.SELF_HARM
 						};
 						this.setState({
 							showCrisisFlowThankYouPage: !0
-						}), (await (() => Object(oc.c)(e(), {
+						}), (await (() => Object(bc.c)(e(), {
 							input: s
-						}))()).ok || t(), a(n.messageId, Xs.b.SELF_HARM)
+						}))()).ok || t(), a(n.messageId, cc.b.SELF_HARM)
 					}, this.state = {
 						ctlFlowOpened: !1,
 						hasLoaded: !1,
@@ -6763,7 +6836,7 @@
 				componentDidMount() {
 					if (!this.props.message) return;
 					const e = `CHAT_${this.props.message.channelId}_${this.props.message.messageId}`;
-					Oc(this.props.gqlContext(), e, bc).then(e => {
+					yc(this.props.gqlContext(), e, _c).then(e => {
 						e && this.setState({
 							formComponent: e.component,
 							formState: e.state,
@@ -6788,14 +6861,14 @@
 							showCrisisFlowThankYouPage: u
 						}
 					} = this, h = null === (e = null == n ? void 0 : n.sender) || void 0 === e ? void 0 : e.nickname, m = null === (t = null == n ? void 0 : n.sender) || void 0 === t ? void 0 : t.userId;
-					return l && h ? r.a.createElement(r.a.Fragment, null, r.a.createElement(nc.a, {
+					return l && h ? r.a.createElement(r.a.Fragment, null, r.a.createElement(dc.a, {
 						username: h,
 						ctlSubmitted: u
-					}), c && r.a.createElement(rc, {
+					}), c && r.a.createElement(pc, {
 						onCrisisFlowSubmit: this.onCrisisFlowSubmit,
 						onCloseReportFlow: this.handleReportFlowClose,
 						thankYouControls: u
-					})) : o && i && d && m ? r.a.createElement(Zs.a, {
+					})) : o && i && d && m ? r.a.createElement(tc.a, {
 						formComponent: o,
 						formState: i,
 						onCloseClick: this.handleReportFlowClose,
@@ -6804,60 +6877,60 @@
 						onOpenCtlFlow: this.onOpenCtlFlow,
 						onBlockAuthor: () => a(m),
 						variant: this.props.container
-					}) : r.a.createElement(mc, null, r.a.createElement(pc, {
-						src: s ? `${bt.a.assetPath}/img/loader_2orbit_loop_nightmode.gif` : `${bt.a.assetPath}/img/loader_2orbit_loop.gif`,
+					}) : r.a.createElement(jc, null, r.a.createElement(Cc, {
+						src: s ? `${_t.a.assetPath}/img/loader_2orbit_loop_nightmode.gif` : `${_t.a.assetPath}/img/loader_2orbit_loop.gif`,
 						alt: "Loading"
 					}))
 				}
 			}
-			var vc = Object(Ys.b)(fc(Ec));
-			const jc = e => e.userIds ? r.a.createElement(Ms.a, null) : e.channelId ? e.action === os.a.VIEW_INVITE && e.channelId ? r.a.createElement(ys, {
+			var Nc = Object(sc.b)(xc(Sc));
+			const wc = e => e.userIds ? r.a.createElement(Bs.a, null) : e.channelId ? e.action === bs.a.VIEW_INVITE && e.channelId ? r.a.createElement(As, {
 				channelId: e.channelId
-			}) : e.action === os.a.VIEW_MEMBERS && e.channelId ? r.a.createElement(Ca, {
+			}) : e.action === bs.a.VIEW_MEMBERS && e.channelId ? r.a.createElement(ka, {
 				channelId: e.channelId
-			}) : e.action === os.a.VIEW_NSFW_CONFIRMATION && e.channelId ? r.a.createElement(Bs, {
+			}) : e.action === bs.a.VIEW_NSFW_CONFIRMATION && e.channelId ? r.a.createElement(Zs, {
 				channelId: e.channelId
-			}) : e.action === Ne.a.Block && e.attrId && e.channelId ? r.a.createElement(ds, {
+			}) : e.action === Pe.a.Block && e.attrId && e.channelId ? r.a.createElement(Os, {
 				channelId: e.channelId,
 				blockedUserId: e.attrId
-			}) : e.action === ve.a.DELETE && e.channelId && e.attrId ? r.a.createElement(ks, {
+			}) : e.action === Ne.a.DELETE && e.channelId && e.attrId ? r.a.createElement(Rs, {
 				channelId: e.channelId,
 				messageId: parseInt(e.attrId)
-			}) : e.action === ve.a.REPORT && e.attr && e.attrId && e.channelId ? e.inReportRevamp ? r.a.createElement(vc, {
+			}) : e.action === Ne.a.REPORT && e.attr && e.attrId && e.channelId ? e.inReportRevamp ? r.a.createElement(Nc, {
 				attr: e.attr,
 				attrId: e.attrId,
 				channelId: e.channelId
-			}) : r.a.createElement(Hs, {
+			}) : r.a.createElement(Qs, {
 				attr: e.attr,
 				attrId: e.attrId,
 				channelId: e.channelId
-			}) : e.action === Ne.a.Kick && e.attr && e.attrId && e.channelId ? r.a.createElement(Ds, {
+			}) : e.action === Pe.a.Kick && e.attr && e.attrId && e.channelId ? r.a.createElement(Vs, {
 				channelId: e.channelId,
 				attr: e.attr,
 				attrId: e.attrId
-			}) : e.action === os.a.DENY && e.channelId ? r.a.createElement(Ns, {
+			}) : e.action === bs.a.DENY && e.channelId ? r.a.createElement(Ps, {
 				channelId: e.channelId
-			}) : e.action === os.a.INVITE_LINK_SETTINGS && e.channelId ? r.a.createElement(Us, {
+			}) : e.action === bs.a.INVITE_LINK_SETTINGS && e.channelId ? r.a.createElement(Ws, {
 				inviteLinkDataModelId: e.channelId,
 				isForDirect: !!e.attr
-			}) : void 0 : r.a.createElement(Ls, null);
-			var Cc = n("./src/chat/selectors/platform.ts"),
-				_c = n("./src/chat/selectors/sidebar.ts"),
-				Ic = n("./src/chat/components/FrameContent/index.m.less"),
-				xc = n.n(Ic);
-			const yc = xc.a.Main,
-				Sc = Object(Vt.a)({
+			}) : void 0 : r.a.createElement(Hs, null);
+			var kc = n("./src/chat/selectors/platform.ts"),
+				Mc = n("./src/chat/selectors/sidebar.ts"),
+				Tc = n("./src/chat/components/FrameContent/index.m.less"),
+				Lc = n.n(Tc);
+			const Ac = Lc.a.Main,
+				Dc = Object(Xt.a)({
 					channel: _.o,
-					container: Ke.a,
-					userAccount: hc.d,
-					isSidebarVisible: _c.b,
-					inReportingRevampSelector: uc,
-					isImageShareEnabled: (e, t) => Object(se.i)(e, t.match.params.channelId),
-					isChannelInPendingState: _.I,
-					queryParamsFromUrl: Cc.c
+					container: et.a,
+					userAccount: vc.d,
+					isSidebarVisible: Mc.b,
+					inReportingRevampSelector: Ec,
+					isImageShareEnabled: (e, t) => Object(he.j)(e, t.match.params.channelId),
+					isChannelInPendingState: _.J,
+					queryParamsFromUrl: kc.c
 				}),
-				Nc = Object(o.b)(Sc);
-			class wc extends r.a.Component {
+				Pc = Object(o.b)(Dc);
+			class Uc extends r.a.Component {
 				constructor() {
 					super(...arguments), this.mainRef = r.a.createRef()
 				}
@@ -6881,42 +6954,42 @@
 					switch (!0) {
 						case !n:
 							return null;
-						case d === os.a.SHARE: {
+						case d === bs.a.SHARE: {
 							const e = l && l.message;
-							return this.props.location.search && e && r.a.createElement(za, {
+							return this.props.location.search && e && r.a.createElement(Ja, {
 								message: e
 							})
 						}
-						case d === os.a.VIEW_MEMBERS:
-							return u && r.a.createElement(Ca, {
+						case d === bs.a.VIEW_MEMBERS:
+							return u && r.a.createElement(ka, {
 								channelId: u
 							});
-						case d === os.a.SHARE_NEW_CHANNEL:
-						case d === os.a.CREATE:
-						case d === os.a.INVITE_MEMBERS: {
+						case d === bs.a.SHARE_NEW_CHANNEL:
+						case d === bs.a.CREATE:
+						case d === bs.a.INVITE_MEMBERS: {
 							let e;
-							return d === os.a.SHARE_NEW_CHANNEL && (e = l && l.message), r.a.createElement(Ia, {
+							return d === bs.a.SHARE_NEW_CHANNEL && (e = l && l.message), r.a.createElement(Ta, {
 								messageValue: e
 							})
 						}
-						case t === is.a.MINIMIZED:
-							return r.a.createElement(Oa.a, null);
+						case t === gs.a.MINIMIZED:
+							return r.a.createElement(ya.a, null);
 						default: {
-							const n = jc({
+							const n = wc({
 								...this.props.match.params,
 								inReportRevamp: s
 							});
 							return r.a.createElement("div", {
-								className: xc.a.Main
-							}, r.a.createElement(Wa.b, null), r.a.createElement("div", {
+								className: Lc.a.Main
+							}, r.a.createElement($a.b, null), r.a.createElement("div", {
 								ref: this.mainRef,
-								className: Object(i.a)(xc.a.Content, {
-									[xc.a.hidden]: a,
-									[xc.a.isFullSize]: t === is.a.FULL
+								className: Object(i.a)(Lc.a.Content, {
+									[Lc.a.hidden]: a,
+									[Lc.a.isFullSize]: t === gs.a.FULL
 								})
 							}, n ? r.a.createElement("div", {
-								className: xc.a.Modal
-							}, n) : e && u && r.a.createElement(r.a.Fragment, null, r.a.createElement(fa, {
+								className: Lc.a.Modal
+							}, n) : e && u && r.a.createElement(r.a.Fragment, null, r.a.createElement(xa, {
 								channel: e
 							}), c && !o && r.a.createElement(T, {
 								dropZoneRef: this.mainRef
@@ -6926,12 +6999,12 @@
 				}
 				render() {
 					return r.a.createElement("main", {
-						className: xc.a.Main,
-						id: ze.a
-					}, this.getContent(), r.a.createElement(rs, null))
+						className: Lc.a.Main,
+						id: Je.a
+					}, this.getContent(), r.a.createElement(ps, null))
 				}
 			}
-			t.b = Nc(wc)
+			t.b = Pc(Uc)
 		},
 		"./src/chat/components/Intro/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -7699,7 +7772,7 @@
 				IMAGE: Dt
 			} = b.c, Pt = () => {
 				const e = Object(r.d)();
-				return Object(r.e)(Ct.m) ? c.a.createElement("div", {
+				return Object(r.e)(Ct.n) ? c.a.createElement("div", {
 					className: xt.a.ThemePrompt,
 					tabIndex: 0
 				}, c.a.createElement("button", {
@@ -7724,8 +7797,8 @@
 			}, f) => {
 				var E, v;
 				const j = Object(l.b)(Object(ft.f)(Boolean(s))),
-					C = Object(r.e)(e => Object(Ct.i)(e, null == p ? void 0 : p.channelId)),
-					_ = Object(r.e)(e => Object(Ct.h)(e)),
+					C = Object(r.e)(e => Object(Ct.j)(e, null == p ? void 0 : p.channelId)),
+					_ = Object(r.e)(e => Object(Ct.i)(e)),
 					I = C || !_;
 				return c.a.createElement("span", {
 					onMouseEnter: j.show,
@@ -7783,7 +7856,7 @@
 					inPreview: h,
 					showUserPic: m,
 					withButton: p
-				} = e, g = Object(r.e)(e => Object(_t.b)(e, d.messageData)), f = Object(l.b)(Object(ft.a)(n)), O = Object(l.b)(Object(ft.c)()), E = Object(r.e)(e => Object(Ct.i)(e, d.channelId)), v = Object(r.e)(e => Object(Ct.h)(e)), j = E || !v;
+				} = e, g = Object(r.e)(e => Object(_t.b)(e, d.messageData)), f = Object(l.b)(Object(ft.a)(n)), O = Object(l.b)(Object(ft.c)()), E = Object(r.e)(e => Object(Ct.j)(e, d.channelId)), v = Object(r.e)(e => Object(Ct.i)(e)), j = E || !v;
 				if (!d) return null;
 				const {
 					type: C,
@@ -9170,13 +9243,13 @@
 					currentUserId: oe.a,
 					channel: ae.h,
 					isModerator: ae.a,
-					isChannelBadgingMuted: ae.H,
-					isChannelNotifsMuted: ae.J,
+					isChannelBadgingMuted: ae.I,
+					isChannelNotifsMuted: ae.K,
 					isFullSize: ne.g,
-					isThemesEnabled: se.s,
+					isThemesEnabled: se.t,
 					showSparkles: re.d,
-					isQuickActionsEnabled: se.o,
-					isLinkSharingEnabledExperiment: se.g
+					isQuickActionsEnabled: se.p,
+					isLinkSharingEnabledExperiment: se.h
 				});
 			var he = Object(c.b)(ue, (e, t) => ({
 					onInviteToChannel: () => {
@@ -9401,7 +9474,7 @@
 				je = n.n(ve);
 			var Ce = Object(c.b)(() => Object(x.a)({
 					containerSize: e => e.container.size,
-					inviterName: ae.G,
+					inviterName: ae.H,
 					isReady: ne.i
 				}), e => ({
 					close: () => e(Object(o.sizeChanged)(pe.a.HIDDEN)),
@@ -9978,7 +10051,7 @@
 			var j = () => {
 					const e = Object(c.d)(),
 						t = Object(c.e)(f.d),
-						n = Object(c.e)(f.E),
+						n = Object(c.e)(f.F),
 						r = Object(c.e)(f.b),
 						h = Object(c.e)(O.a),
 						m = Object(a.useCallback)(() => {
@@ -10011,10 +10084,10 @@
 				w = Object(I.a)({
 					currentUserId: x.a,
 					fetchingJoinedChannels: f.c,
-					hasMoreJoinedChannels: f.F,
+					hasMoreJoinedChannels: f.G,
 					joinedChannels: f.e,
 					selectedChannelId: e => Object(f.B)(e, "channelId"),
-					hasInvitedChannels: f.D
+					hasInvitedChannels: f.E
 				});
 			var k = Object(c.b)(w)(e => {
 					const {
@@ -10064,10 +10137,10 @@
 			var V = () => {
 					const e = Object(c.d)(),
 						t = Object(c.e)(f.c),
-						n = Object(c.e)(f.F),
+						n = Object(c.e)(f.G),
 						a = Object(c.e)(O.c),
 						r = Object(c.e)(O.b),
-						l = Object(c.e)(F.d);
+						l = Object(c.e)(F.e);
 					return s.a.createElement(s.a.Fragment, null, s.a.createElement("div", {
 						className: G.a.Header
 					}, s.a.createElement("span", {
@@ -11637,7 +11710,7 @@
 				}) : n();
 				return i => g => {
 					const E = e.getState(),
-						C = Object(f.f)(E),
+						C = Object(f.g)(E),
 						_ = Object(O.f)(E),
 						I = Object(v.a)(E) === b.b.Closed,
 						x = Object(v.e)(E);
@@ -11787,7 +11860,7 @@
 					Object(_.d)(e)
 				},
 				S = Object(c.c)((e, t, n) => {
-					Object(u.L)(e) ? ((e, t) => {
+					Object(u.M)(e) ? ((e, t) => {
 						Object(m.a)({
 							noun: "channel_cached",
 							source: p.b.ChatPerformance,
@@ -12291,7 +12364,7 @@
 			const O = d.a.i("FallbackAvatar", f.a),
 				E = d.a.wrapped(O, "FallbackAvatarWrapper", f.a),
 				v = d.a.wrapped(e => {
-					const t = Object(o.e)(p.q),
+					const t = Object(o.e)(p.r),
 						{
 							className: n,
 							height: s,
@@ -17178,4 +17251,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.d857ad5a860453d91830.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.0b2a74433db8357ddba1.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.c666a491ae57fc220e51.js
-// Retrieved at 12/1/2021, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.0f4968342e57fb68609b.js
+// Retrieved at 12/1/2021, 5:30:06 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var n, a, r = o[0], s = o[1], c = o[2], l = 0, P = []; l < r.length; l++) a = r[l], Object.prototype.hasOwnProperty.call(d, a) && d[a] && P.push(d[a][0]), d[a] = 0;
@@ -736,7 +736,7 @@
 					MembershipPaywallPage: "4ca10f5dcd6e0106d1ba",
 					FlairEdit: "da4992efe0a35a4bcfd8",
 					"vendors~Chat~RedesignChat": "31d6cfe0d16ae931b73c",
-					"Chat~RedesignChat": "6a7de243284a11f94d3d",
+					"Chat~RedesignChat": "11b22baac695d11e905c",
 					RedesignChat: "6565fde54e4c1d8a98b0",
 					"vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PostCreation~Settings~~f8934a85": "31d6cfe0d16ae931b73c",
 					CryptoHarbergerTaxManageModal: "8325cd0f9a61baa97e81",
@@ -1375,14 +1375,14 @@
 						"reddit-components-Econ-Prediction-CancelPredictionModal": "735a56e245b3cd7fafce",
 						"reddit-components-Econ-Prediction-ChangePredictionOutcomeModal": "e32767d6332f51ed09fe",
 						"reddit-components-Econ-Prediction-EndTimeModal": "9368b54ef2fdc99b46bd",
-						"translations/de_DE-json": "8146c76baa45920a3f52",
-						"translations/es_ES-json": "9438a1cd30011fd33b71",
-						"translations/es_MX-json": "fe9e443d00d72e96cf9b",
-						"translations/fr_FR-json": "6d96f95cbd48c2ab649f",
-						"translations/it_IT-json": "aab059a6e3d03c1a7b40",
-						"translations/pseudo-json": "e4d8f53ef980c4eeb65f",
-						"translations/pt_BR-json": "6cd6584432155d4d8f49",
-						"translations/pt_PT-json": "ac7537dab3db8c997515",
+						"translations/de_DE-json": "cf2c82ee36042b4e5225",
+						"translations/es_ES-json": "4f09e3463ded28dca3fd",
+						"translations/es_MX-json": "03ec55aab4f5cdfd3025",
+						"translations/fr_FR-json": "9e6250845f25cbf328fe",
+						"translations/it_IT-json": "4b424f150eb8a104ffd3",
+						"translations/pseudo-json": "c2cc935fced9eadc63bd",
+						"translations/pt_BR-json": "98b72367beb9f19da7fa",
+						"translations/pt_PT-json": "769f0e42c4a254c0401f",
 						"vendors~AdminPanel": "e6e59f93c311ab1cce5c",
 						AdminPanel: "8cbf80d718d625c07fd6",
 						"vendors~ChatMessageInput~CommentRichUnit~FlairEdit~MembershipPaywallPage~PostCreation~PostRichUnit~R~9deab1a0": "201e0a53b4d00907b96f",
@@ -1390,7 +1390,7 @@
 						MembershipPaywallPage: "419c98b94f00b2a82006",
 						FlairEdit: "6b984385dcb701aaa442",
 						"vendors~Chat~RedesignChat": "4ea3bc796c3ac26848b1",
-						"Chat~RedesignChat": "d857ad5a860453d91830",
+						"Chat~RedesignChat": "0b2a74433db8357ddba1",
 						RedesignChat: "2e30be236e232f5a2e80",
 						"vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PostCreation~Settings~~f8934a85": "fbf6b3871488094312c2",
 						CryptoHarbergerTaxManageModal: "ebbdff25203aae0a1ac3",
@@ -1502,17 +1502,17 @@
 						ChatMinimize: "44c69e3b0034bf285b68",
 						ChatPage: "e7a4cc9709580c54e430",
 						ExternalLinkUnit: "79269709c0ed54221ea4",
-						InvitedChannelsPanel: "a68df8031c3dfa0c8165",
+						InvitedChannelsPanel: "1ca5af194dd1c9895197",
 						OverlayBlockUser: "e35aa1569e0695874157",
 						OverlayChannelRemoval: "63bff3a97ab36bdc4552",
-						OverlayChatMembers: "b97349e02fd214b659b6",
-						OverlayCreateChannel: "080ddf93fc729a1fdeaf",
+						OverlayChatMembers: "2fb82648e8b9964b98dd",
+						OverlayCreateChannel: "0a37bb6ffe35760611cc",
 						OverlayDeleteMessage: "775d5d40973ca5bc1b20",
 						OverlayDirectsEmptyState: "0d1ca3a69d7ee0433f93",
 						OverlayKickUser: "8eb864be46873246ddb4",
 						OverlayLinkSharingSettings: "2184f4ea662e5d8033b6",
 						OverlayNSFWWarning: "4d2f83e7697e39c826a6",
-						OverlayReport: "181b964b0a1da41560f2",
+						OverlayReport: "9dc4297568c750645ba7",
 						ThemePanel: "4c53c0170af9d80b594a",
 						CommentRichUnit: "9d5962a8559379e72194",
 						PostRichUnit: "6f0e47f5f92d67b3507b",
@@ -1632,4 +1632,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.c666a491ae57fc220e51.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.0f4968342e57fb68609b.js.map

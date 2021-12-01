@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InvitedChannelsPanel.a68df8031c3dfa0c8165.js
-// Retrieved at 11/1/2021, 4:30:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InvitedChannelsPanel.1ca5af194dd1c9895197.js
+// Retrieved at 12/1/2021, 5:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InvitedChannelsPanel"], {
 		"./src/chat/components/Sidebar/InvitedChannelsPanel/index.m.less": function(e, t, n) {
@@ -31,18 +31,18 @@
 				u = n("./src/chat/icons/svgs/ArrowLeft/index.tsx"),
 				p = n("./src/chat/reducers/sidebar/sideBarAppearance/index.ts"),
 				j = n("./src/chat/selectors/channels.ts"),
-				E = n("./src/chat/selectors/experiments.ts"),
-				O = n("./src/chat/components/Sidebar/InvitedChannelsPanel/index.m.less"),
-				v = n.n(O);
+				O = n("./src/chat/selectors/experiments.ts"),
+				E = n("./src/chat/components/Sidebar/InvitedChannelsPanel/index.m.less"),
+				v = n.n(E);
 			t.default = () => {
 				const e = Object(l.d)();
 				Object(o.useEffect)(() => {
 					e(Object(h.Z)())
 				}, [e]);
 				const t = Object(l.e)(j.d),
-					n = Object(l.e)(E.d),
-					s = Object(l.e)(j.E),
-					O = Object(l.e)(j.b);
+					n = Object(l.e)(O.e),
+					s = Object(l.e)(j.F),
+					E = Object(l.e)(j.b);
 				return r.a.createElement(r.a.Fragment, null, r.a.createElement("button", {
 					className: v.a.Header,
 					onClick: () => {
@@ -57,14 +57,14 @@
 					loadMoreRows: () => {
 						e(Object(d.D)())
 					},
-					isLoadMoreRowsComplete: () => !s || !!O
+					isLoadMoreRowsComplete: () => !s || !!E
 				}, r.a.createElement("div", {
 					className: v.a.Body
 				}, n && r.a.createElement(x.a, null), r.a.createElement(m.a, {
 					channels: a()(t)
-				}), O && r.a.createElement(_.d, null))))
+				}), E && r.a.createElement(_.d, null))))
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InvitedChannelsPanel.a68df8031c3dfa0c8165.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InvitedChannelsPanel.1ca5af194dd1c9895197.js.map
