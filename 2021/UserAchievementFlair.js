@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/UserAchievementFlair.8b95a1855774b3cc2a61.js
-// Retrieved at 11/11/2021, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/UserAchievementFlair.ed4a07e27983093b8888.js
+// Retrieved at 12/1/2021, 10:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["UserAchievementFlair"], {
 		"./src/reddit/components/Econ/PowerupsFlair/HoverPopup.m.less": function(e, t, n) {
@@ -420,6 +420,15 @@
 							[n]: !0
 						}
 					}
+					case a.i: {
+						const {
+							key: n
+						} = t.payload;
+						return {
+							...e,
+							[n]: !1
+						}
+					}
 					default:
 						return e
 				}
@@ -428,7 +437,8 @@
 			var p = (e = u, t) => {
 					switch (t.type) {
 						case a.d:
-						case a.h: {
+						case a.h:
+						case a.i: {
 							const {
 								key: n
 							} = t.payload;
@@ -707,6 +717,15 @@
 						return {
 							...e,
 							[r]: n[s] && n[s].head ? n[s].head.id : null
+						}
+					}
+					case a.i: {
+						const {
+							key: n
+						} = t.payload;
+						return {
+							...e,
+							[n]: null
 						}
 					}
 					default:
@@ -1055,4 +1074,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UserAchievementFlair.8b95a1855774b3cc2a61.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UserAchievementFlair.ed4a07e27983093b8888.js.map

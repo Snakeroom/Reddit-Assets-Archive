@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.2d8f06965482fd132ec7.js
-// Retrieved at 11/17/2021, 12:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.db08cd4ce858792d2050.js
+// Retrieved at 12/1/2021, 10:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Governance~ModListing~Reddit", "reddit-components-ContentGate", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -7371,7 +7371,8 @@
 			e.exports = {
 				wrapper: "_369llFshxbL10dgfLlIApJ",
 				caption: "_2TsfnDXso674GKQKeaYyJz",
-				wrapperExp: "_1rsB1M-j-PhnVlJxrOyQWm"
+				wrapperExp: "_1rsB1M-j-PhnVlJxrOyQWm",
+				presenceDotOutline: "_1D4pwRVtd_KZqOBUCssgmm"
 			}
 		},
 		"./src/reddit/components/NewPostPill/index.tsx": function(e, t, n) {
@@ -7398,7 +7399,7 @@
 					onClick: t
 				}, r.a.createElement(i.a, {
 					iconsKey: n,
-					shouldOutlinePresenceDot: !0,
+					presenceDotOutlineClassName: d.a.presenceDotOutline,
 					shouldShowPresenceDot: !0
 				}), r.a.createElement("label", {
 					className: d.a.caption
@@ -7735,7 +7736,7 @@
 						iconsKey: t,
 						memberIconClassName: n,
 						numVisibleIcons: s = h,
-						shouldOutlinePresenceDot: a,
+						presenceDotOutlineClassName: a,
 						shouldShowPresenceDot: u,
 						shouldUseColoredSilhouetteIcons: x,
 						numIconsToDrawFrom: v = (x ? b : f),
@@ -7761,9 +7762,7 @@
 							}
 						}), o.a.createElement(p, {
 							showPresence: !0,
-							outlineClassName: Object(i.a)({
-								[m.a.presenceDotClass]: a
-							})
+							outlineClassName: a
 						})) : o.a.createElement("img", {
 							className: Object(i.a)(m.a.memberIcon, n),
 							key: r,
@@ -7780,8 +7779,7 @@
 			e.exports = {
 				membersIcons: "_1W1pLIfaIb8rYU6YeTdAk6",
 				memberIcon: "_1H6Meh6ZAemKxOJDOEasfK",
-				presenceWrapper: "_30vlMmCcnqKnXP1t-fzm0e",
-				presenceDotClass: "_29m-SAo1wzA0dkdfJutrjs"
+				presenceWrapper: "_30vlMmCcnqKnXP1t-fzm0e"
 			}
 		},
 		"./src/reddit/components/RawHTMLDisplay/index.m.less": function(e, t, n) {
@@ -19606,4 +19604,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.2d8f06965482fd132ec7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.db08cd4ce858792d2050.js.map

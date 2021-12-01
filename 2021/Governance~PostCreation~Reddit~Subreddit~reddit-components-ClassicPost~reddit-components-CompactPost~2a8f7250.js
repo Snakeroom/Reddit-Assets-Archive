@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.f77337ee9f74721b28f9.js
-// Retrieved at 11/11/2021, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.98b9a4196beee370461c.js
+// Retrieved at 12/1/2021, 10:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250"], {
 		"./src/lib/humanizeDate/index.ts": function(e, t, n) {
@@ -1926,6 +1926,15 @@
 							[n]: !0
 						}
 					}
+					case a.i: {
+						const {
+							key: n
+						} = t.payload;
+						return {
+							...e,
+							[n]: !1
+						}
+					}
 					default:
 						return e
 				}
@@ -1934,7 +1943,8 @@
 			var p = (e = m, t) => {
 					switch (t.type) {
 						case a.d:
-						case a.h: {
+						case a.h:
+						case a.i: {
 							const {
 								key: n
 							} = t.payload;
@@ -2213,6 +2223,15 @@
 						return {
 							...e,
 							[r]: n[s] && n[s].head ? n[s].head.id : null
+						}
+					}
+					case a.i: {
+						const {
+							key: n
+						} = t.payload;
+						return {
+							...e,
+							[n]: null
 						}
 					}
 					default:
@@ -2564,4 +2583,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.f77337ee9f74721b28f9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.98b9a4196beee370461c.js.map

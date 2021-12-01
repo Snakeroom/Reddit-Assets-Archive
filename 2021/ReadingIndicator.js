@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReadingIndicator.855ded6d143be6ed77d6.js
-// Retrieved at 12/1/2021, 9:50:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReadingIndicator.9a12e583f9ce89340ce7.js
+// Retrieved at 12/1/2021, 10:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReadingIndicator"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, s, n) {
@@ -90,7 +90,7 @@
 						iconsKey: s,
 						memberIconClassName: n,
 						numVisibleIcons: t = h,
-						shouldOutlinePresenceDot: c,
+						presenceDotOutlineClassName: c,
 						shouldShowPresenceDot: i,
 						shouldUseColoredSilhouetteIcons: _,
 						numIconsToDrawFrom: j = (_ ? f : p),
@@ -116,9 +116,7 @@
 							}
 						}), o.a.createElement(b, {
 							showPresence: !0,
-							outlineClassName: Object(a.a)({
-								[m.a.presenceDotClass]: c
-							})
+							outlineClassName: c
 						})) : o.a.createElement("img", {
 							className: Object(a.a)(m.a.memberIcon, n),
 							key: r,
@@ -135,8 +133,7 @@
 			e.exports = {
 				membersIcons: "_1W1pLIfaIb8rYU6YeTdAk6",
 				memberIcon: "_1H6Meh6ZAemKxOJDOEasfK",
-				presenceWrapper: "_30vlMmCcnqKnXP1t-fzm0e",
-				presenceDotClass: "_29m-SAo1wzA0dkdfJutrjs"
+				presenceWrapper: "_30vlMmCcnqKnXP1t-fzm0e"
 			}
 		},
 		"./src/reddit/components/ReadingIndicator/index.m.less": function(e, s, n) {
@@ -196,28 +193,28 @@
 					I = Object(c.useRef)(null),
 					O = Object(c.useRef)(0),
 					[g, v] = Object(c.useState)(0),
-					C = Object(c.useCallback)(e => {
+					R = Object(c.useCallback)(e => {
 						const {
 							numUsers: s
 						} = e.subscribe.data, n = () => {
 							I.current && clearTimeout(I.current), I.current = setTimeout(() => {
-								v(0), y(null), I.current = null
+								v(0), N(null), I.current = null
 							}, 3e4)
 						}, t = () => setTimeout(() => {
 							O.current ? (v(O.current), O.current = null, j.current = t(), n()) : j.current = null
 						}, 2e3);
 						j.current ? O.current = s : (v(s), O.current = null, j.current = t(), n())
 					}, []),
-					R = Object(c.useRef)(0),
-					[S, y] = Object(c.useState)(null),
-					N = Object(c.useRef)(null);
+					C = Object(c.useRef)(0),
+					[y, N] = Object(c.useState)(null),
+					S = Object(c.useRef)(null);
 				Object(c.useEffect)(() => {
-					if (!e) return void(S && y(null));
-					if (g >= 5) return R.current = g, void(S || y(Date.now()));
-					if (!S) return;
-					const s = Date.now() - S;
-					s >= 1e4 ? y(null) : N.current = setTimeout(() => y(null), 1e4 - s)
-				}, [S, e, g]);
+					if (!e) return void(y && N(null));
+					if (g >= 5) return C.current = g, void(y || N(Date.now()));
+					if (!y) return;
+					const s = Date.now() - y;
+					s >= 1e4 ? N(null) : S.current = setTimeout(() => N(null), 1e4 - s)
+				}, [y, e, g]);
 				const {
 					className: x,
 					shouldMount: E,
@@ -225,7 +222,7 @@
 				} = Object(m.a)({
 					defaultClass: p.a.readingIndicator,
 					addedClass: p.a.isDisplayed,
-					mountCondition: !!S
+					mountCondition: !!y
 				}), A = Object(b.a)();
 				return Object(c.useEffect)(() => {
 					E && A(Object(i.r)(r, g))
@@ -235,12 +232,12 @@
 					queryKey: "userIsReadingPost"
 				}), (s || e) && d.a.createElement(l.a, {
 					variables: _,
-					onData: e ? C : a.a,
+					onData: e ? R : a.a,
 					queryKey: "usersReadingIndicator"
 				}), E && d.a.createElement("div", {
 					className: x,
 					onTransitionEnd: D
-				}, t.fbt._("{number of users reading} people here", [t.fbt._param("number of users reading", h(R.current))], {
+				}, t.fbt._("{number of users reading} people here", [t.fbt._param("number of users reading", h(C.current))], {
 					hk: "3foy5g"
 				}), d.a.createElement(u.a, {
 					memberIconClassName: p.a.offsetMemberIcon,
@@ -317,4 +314,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReadingIndicator.855ded6d143be6ed77d6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReadingIndicator.9a12e583f9ce89340ce7.js.map
