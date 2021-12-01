@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.37412137d906183bb26e.js
-// Retrieved at 12/1/2021, 1:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.962212b273382d124bbf.js
+// Retrieved at 12/1/2021, 3:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Governance~ModListing~Reddit", "reddit-components-ContentGate", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -15869,7 +15869,7 @@
 		"./src/reddit/hooks/useOutboundClickTracking.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return l
+				return p
 			}));
 			var s = n("./src/reddit/components/TrackingHelper/index.tsx");
 			const r = /^https?:\/\/([\w\.\-]+\.)?(reddit(media|static)?\.com|redd\.it)(\/|$)/;
@@ -15889,17 +15889,27 @@
 				return n && (i.comment = Object(o.comment)(r, n)), s && (i.post = Object(o.post)(r, s)), i
 			};
 			var a = n("./src/lib/serviceWorker/index.ts"),
-				c = n("./node_modules/react-redux/es/index.js");
-			const d = () => {
+				c = n("./node_modules/react-redux/es/index.js"),
+				d = n("./src/telemetry/helpers/getSerializedThriftJSON.ts"),
+				l = n("./src/telemetry/helpers/getSignatureHeader.ts"),
+				u = n("./src/telemetry/models/Event.ts");
+			const m = () => {
 				const e = Object(c.f)();
 				return t => {
-					Object(a.b)("sendV2Event", t(e.getState()))
+					const n = t(e.getState()),
+						s = u.g(n),
+						r = Object(d.a)(s),
+						o = Object(l.b)(r);
+					Object(a.b)("sendV2EventsData", {
+						data: r,
+						headers: o
+					})
 				}
 			};
 
-			function l() {
+			function p() {
 				const e = Object(s.b)(),
-					t = d();
+					t = m();
 				return (n, s, o, a) => {
 					var c, d;
 					if (s && function(e) {
@@ -19732,4 +19742,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.37412137d906183bb26e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.962212b273382d124bbf.js.map

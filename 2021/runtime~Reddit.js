@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.000089efb117d3d1fc52.js
-// Retrieved at 12/1/2021, 2:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.118969031ebae7fe21d3.js
+// Retrieved at 12/1/2021, 3:00:07 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var n, a, r = o[0], s = o[1], c = o[2], l = 0, P = []; l < r.length; l++) a = r[l], Object.prototype.hasOwnProperty.call(d, a) && d[a] && P.push(d[a][0]), d[a] = 0;
@@ -1412,7 +1412,7 @@
 						ExportTheme: "fba93d918b220f151980",
 						ImportTheme: "ffa092f19a1ee16c7439",
 						ModListing: "18fd5799df1f60e82ac0",
-						Subreddit: "37412137d906183bb26e",
+						Subreddit: "962212b273382d124bbf",
 						"vendors~LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit": "b1b748750a6395dcc18f",
 						"LiveVideoPlayer~PublicAccessNetwork": "39ece55b4155ef1a5b4d",
 						PublicAccessNetwork: "b052fe8408357aa99305",
@@ -1632,4 +1632,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.000089efb117d3d1fc52.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.118969031ebae7fe21d3.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.70379032a3353b7be9ed.js
-// Retrieved at 12/1/2021, 2:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.1b79cea81c9c0e9c7b69.js
+// Retrieved at 12/1/2021, 3:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3307,10 +3307,10 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("153094"),
+				buildNumber: Object(r.c)("153108"),
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
-				buildTimestamp: Object(r.b)("1638385273"),
+				buildTimestamp: Object(r.b)("1638387057"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -5877,14 +5877,14 @@
 					}))
 				},
 				z = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c89064d9dfd8bde460698a03b905fb621daff93b1-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c261eb33cfa173b10ba30540f9f1c858a154c414f-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${v.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "89064d9dfd8bde460698a03b905fb621daff93b1-production",
+						release: "261eb33cfa173b10ba30540f9f1c858a154c414f-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6397,7 +6397,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "89064d9dfd8bde460698a03b905fb621daff93b1-production",
+						releaseClient: "261eb33cfa173b10ba30540f9f1c858a154c414f-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -41792,6 +41792,41 @@
 				}
 			}).call(this, i("./node_modules/node-libs-browser/node_modules/buffer/index.js").Buffer)
 		},
+		"./src/telemetry/helpers/getSerializedThriftJSON.ts": function(e, t, i) {
+			"use strict";
+			i.d(t, "a", (function() {
+				return s
+			}));
+			var n = i("./src/telemetry/eventSchemas/event_types.js"),
+				r = i("./src/telemetry/helpers/ThriftSerializer.ts");
+			new n.Event;
+			const s = e => {
+				const t = Array.isArray(e) ? e : [e],
+					i = new n.EventBatch({
+						events: t
+					}),
+					s = new r.a;
+				return i.write(s), s.getString()
+			}
+		},
+		"./src/telemetry/helpers/getSignatureHeader.ts": function(e, t, i) {
+			"use strict";
+			i.d(t, "a", (function() {
+				return o
+			})), i.d(t, "b", (function() {
+				return a
+			}));
+			var n = i("./node_modules/Base64/base64.js"),
+				r = i("./node_modules/crypto-js/hmac-sha256.js"),
+				s = i.n(r);
+			const o = "X-Signature-v2",
+				d = Object(n.atob)("YWVjYWltMnNlaTlzZXNoNmVpQ2hhZXJ1dW03dHU4"),
+				a = (e, t = o) => {
+					return {
+						[t]: `key=Desktop2x3, mac=${s()(e,d).toString()}`
+					}
+				}
+		},
 		"./src/telemetry/helpers/sendCounter.ts": function(e, t, i) {
 			"use strict";
 			i.d(t, "a", (function() {
@@ -41839,154 +41874,142 @@
 		"./src/telemetry/helpers/sendEvent.ts": function(e, t, i) {
 			"use strict";
 			i.d(t, "e", (function() {
-				return T
+				return w
 			})), i.d(t, "b", (function() {
-				return R
+				return T
 			})), i.d(t, "d", (function() {
-				return C
+				return O
 			})), i.d(t, "c", (function() {
-				return j
+				return R
 			})), i.d(t, "g", (function() {
-				return P
+				return N
 			})), i.d(t, "f", (function() {
-				return L
+				return A
 			}));
-			var n = i("./node_modules/Base64/base64.js"),
-				r = i("./node_modules/crypto-js/hmac-sha256.js"),
-				s = i.n(r),
-				o = i("./node_modules/lodash/throttle.js"),
-				d = i.n(o),
-				a = i("./src/lib/constants/index.ts"),
-				l = i("./src/lib/env/index.ts"),
-				u = i("./src/lib/makeGqlRequest/index.ts"),
-				c = i("./src/lib/makeRequest/index.ts"),
-				_ = i("./src/redditGQL/operations/UploadV2Events.json"),
-				p = i("./src/lib/scheduler/index.ts"),
-				m = i("./src/lib/serviceWorker/index.ts"),
-				h = i("./src/telemetry/eventSchemas/event_types.js"),
-				f = i("./src/telemetry/models/Event.ts"),
-				b = i("./src/telemetry/helpers/ThriftSerializer.ts");
-			const g = "https://www.reddit.com",
-				w = "X-Signature-v2",
-				y = 250;
-			class v {
+			var n = i("./node_modules/lodash/throttle.js"),
+				r = i.n(n),
+				s = i("./src/lib/constants/index.ts"),
+				o = i("./src/lib/env/index.ts"),
+				d = i("./src/lib/makeGqlRequest/index.ts"),
+				a = i("./src/lib/makeRequest/index.ts"),
+				l = i("./src/redditGQL/operations/UploadV2Events.json"),
+				u = i("./src/lib/scheduler/index.ts"),
+				c = i("./src/lib/serviceWorker/index.ts"),
+				_ = i("./src/telemetry/models/Event.ts"),
+				p = i("./src/telemetry/helpers/getSerializedThriftJSON.ts"),
+				m = i("./src/telemetry/helpers/getSignatureHeader.ts");
+			const h = "https://www.reddit.com",
+				f = 250;
+			class b {
 				constructor(e, t) {
 					this.event = e, this.schemaId = t
 				}
 			}
-			let E;
-			const T = e => {
-					E = e
+			let g;
+			const w = e => {
+					g = e
 				},
-				S = 1e3,
-				O = {
+				y = 1e3,
+				v = {
 					leading: !1,
 					trailing: !0
 				},
-				I = "text/plain",
-				R = Object(p.b)();
-			let F = !1;
-			const C = e => {
-				F = e
+				E = "text/plain",
+				T = Object(u.b)();
+			let S = !1;
+			const O = e => {
+				S = e
 			};
-			let N = !1;
-			const j = e => {
-					N = e
+			let I = !1;
+			const R = e => {
+					I = e
 				},
-				A = window && window.fetch;
-			let D = !1;
-			const P = e => {
-				D = e
+				F = window && window.fetch;
+			let C = !1;
+			const N = e => {
+				C = e
 			};
-			let x;
-			const L = e => {
-					x = e
+			let j;
+			const A = e => {
+					j = e
 				},
-				B = !(w && g);
-			class k {
+				D = !(m.a && h);
+			class P {
 				constructor() {
 					if (this.events = [], this.isSendingEvents = !1, this.flushEvents = e => {
 							var t, i;
 							if (!this.events.length) return;
-							const r = [];
-							for (const n of this.events) r.push(n[1]);
-							const o = new h.EventBatch({
-									events: r
-								}),
-								d = new b.a;
-							o.write(d);
-							const p = d.getString(),
-								f = "Desktop2x3",
-								y = Object(n.atob)("YWVjYWltMnNlaTlzZXNoNmVpQ2hhZXJ1dW03dHU4");
+							const n = [];
+							for (const s of this.events) n.push(s[1]);
+							const r = Object(p.a)(n);
 							this.events = [], this.isSendingEvents = !0;
-							const v = s()(p, y).toString(),
-								E = g || "";
-							if (E) {
+							const u = h || "";
+							if (u) {
 								const n = {
-										[w || ""]: `key=${f}, mac=${v}`
+										...Object(m.b)(r)
 									},
-									r = () => {
+									_ = () => {
 										this.events.length ? e ? this.flushEvents() : this.flushEventsWithCare() : this.isSendingEvents = !1
 									};
-								if (D) {
+								if (C) {
 									const e = {
-										"X-Signature": `key=${f}, mac=${v}`
+										...Object(m.b)(r, "X-Signature")
 									};
-									Object(u.a)(x(), {
-										..._,
+									Object(d.a)(j(), {
+										...l,
 										variables: {
 											input: {
-												events: p,
-												isStaging: Object(l.c)()
+												events: r,
+												isStaging: Object(o.c)()
 											}
 										}
 									}, {
 										headers: e
-									}).then(r)
-								} else N && (null === (i = null === (t = null === window || void 0 === window ? void 0 : window.navigator) || void 0 === t ? void 0 : t.serviceWorker) || void 0 === i ? void 0 : i.controller) ? (Object(m.b)("sendV2EventsData", {
-									data: p,
+									}).then(_)
+								} else I && (null === (i = null === (t = null === window || void 0 === window ? void 0 : window.navigator) || void 0 === t ? void 0 : t.serviceWorker) || void 0 === i ? void 0 : i.controller) ? (Object(c.b)("sendV2EventsData", {
+									data: r,
 									headers: n
-								}), r()) : F && A ? A(E, {
-									body: p,
+								}), _()) : S && F ? F(u, {
+									body: r,
 									headers: {
 										...n,
-										"Content-Type": I
+										"Content-Type": E
 									},
-									method: a.jb.POST
-								}).then(r) : Object(c.b)({
-									data: p,
-									endpoint: E,
+									method: s.jb.POST
+								}).then(_) : Object(a.b)({
+									data: r,
+									endpoint: u,
 									sync: e,
-									method: a.jb.POST,
-									type: I,
+									method: s.jb.POST,
+									type: E,
 									headers: n
-								}).then(r)
+								}).then(_)
 							} else this.isSendingEvents = !1
-						}, this.flushEventsWithCare = d()(this.flushEvents, S, O), k.injectedEventListener) throw new Error('EventSender registered multiple attempts to register a "beforeunload" event listener. This could happen when "client" code creates multiple instances on the EventSender class. This should never happen. Please make sure to use the default sendEvent helper from the "telemetry" package');
+						}, this.flushEventsWithCare = r()(this.flushEvents, y, v), P.injectedEventListener) throw new Error('EventSender registered multiple attempts to register a "beforeunload" event listener. This could happen when "client" code creates multiple instances on the EventSender class. This should never happen. Please make sure to use the default sendEvent helper from the "telemetry" package');
 					window.addEventListener("beforeunload", () => {
-						R.flush(), this.isSendingEvents || B || this.flushEvents(!0)
-					}), k.injectedEventListener = !0
+						T.flush(), this.isSendingEvents || D || this.flushEvents(!0)
+					}), P.injectedEventListener = !0
 				}
 				sendEvent(e) {
-					const t = f.g(e),
-						i = new v(t, e.schemaId);
-					if (E) {
-						const e = E.getState();
+					const t = _.g(e),
+						i = new b(t, e.schemaId);
+					if (g) {
+						const e = g.getState();
 						e.push(i);
 						const {
 							length: t
 						} = e;
-						t > y && e.splice(0, y - t), E.setState(e)
+						t > f && e.splice(0, f - t), g.setState(e)
 					}
-					B || this.isSendingEvents || this.flushEventsWithCare(), this.events = this.events.concat([
+					D || this.isSendingEvents || this.flushEventsWithCare(), this.events = this.events.concat([
 						[e, t]
 					])
 				}
 			}
-			k.injectedEventListener = !1;
-			const M = new k;
+			P.injectedEventListener = !1;
+			const x = new P;
 			t.a = e => {
-				M.sendEvent(e)
+				x.sendEvent(e)
 			}
 		},
 		"./src/telemetry/helpers/sendTiming.ts": function(e, t, i) {
@@ -43344,4 +43367,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.70379032a3353b7be9ed.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.1b79cea81c9c0e9c7b69.js.map
