@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.50d32f752b007e3c9865.js
-// Retrieved at 12/1/2021, 11:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.86f8733eec52779865a4.js
+// Retrieved at 12/1/2021, 12:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SubredditContent-PredictionsContent"], {
 		"./src/reddit/components/Econ/Prediction/hooks/useTournamentsQuery.ts": function(e, t, n) {
@@ -11,18 +11,18 @@
 				r = n.n(o),
 				c = n("./node_modules/react-redux/es/index.js"),
 				s = n("./src/reddit/actions/economics/predictions/index.ts"),
-				a = n("./src/reddit/selectors/features/predictions/tournaments/index.ts"),
-				i = n("./src/reddit/selectors/subreddit.ts");
+				i = n("./src/reddit/selectors/features/predictions/tournaments/index.ts"),
+				a = n("./src/reddit/selectors/subreddit.ts");
 
 			function d(e) {
 				const t = Object(c.d)(),
-					n = Object(c.e)(t => Object(i.Q)(t, {
+					n = Object(c.e)(t => Object(a.Q)(t, {
 						subredditId: e
 					})),
-					o = Object(c.e)(t => Object(a.h)(t, {
+					o = Object(c.e)(t => Object(i.h)(t, {
 						subredditId: e
 					})),
-					d = Object(c.e)(t => Object(a.j)(t, {
+					d = Object(c.e)(t => Object(i.j)(t, {
 						subredditId: e
 					})),
 					l = r.a.useCallback(() => {
@@ -51,20 +51,20 @@
 				r = n.n(o),
 				c = n("./src/higherOrderComponents/asModal/index.tsx"),
 				s = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
-				a = n("./src/reddit/constants/keycodes.ts"),
-				i = n("./src/reddit/controls/Button/index.tsx"),
+				i = n("./src/reddit/constants/keycodes.ts"),
+				a = n("./src/reddit/controls/Button/index.tsx"),
 				d = n("./src/reddit/controls/LoadingIcon/index.tsx"),
 				l = n("./src/reddit/controls/TextButton/index.tsx"),
 				u = n("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
 				m = n("./src/reddit/components/PostCreationForm/Prompt/PromptModal.m.less"),
 				b = n.n(m),
 				p = n("./src/lib/lessComponent.tsx");
-			const f = p.a.wrapped(i.l, "PrimaryButton", b.a),
+			const f = p.a.wrapped(a.l, "PrimaryButton", b.a),
 				_ = p.a.wrapped(s.p, "ModalText", b.a);
 			class h extends r.a.PureComponent {
 				constructor() {
 					super(...arguments), this.handleEscapeKey = e => {
-						e.keyCode === a.a.Escape && this.props.onClose()
+						e.keyCode === i.a.Escape && this.props.onClose()
 					}
 				}
 				componentDidMount() {
@@ -115,14 +115,14 @@
 		"./src/reddit/components/SubredditContent/PredictionsContent/index.tsx": function(e, t, n) {
 			"use strict";
 			n.r(t), n.d(t, "default", (function() {
-				return A
+				return N
 			}));
 			var o = n("./node_modules/fbt/lib/FbtPublic.js"),
 				r = n("./node_modules/react/index.js"),
 				c = n.n(r),
 				s = n("./node_modules/react-redux/es/index.js"),
-				a = n("./src/lib/classNames/index.ts"),
-				i = n("./src/reddit/actions/economics/predictions/index.ts"),
+				i = n("./src/lib/classNames/index.ts"),
+				a = n("./src/reddit/actions/economics/predictions/index.ts"),
 				d = n("./src/reddit/actions/toaster.ts"),
 				l = n("./src/reddit/components/Econ/Prediction/hooks/useTournamentsQuery.ts"),
 				u = n("./src/reddit/components/Settings/shared/Card/index.m.less"),
@@ -141,19 +141,19 @@
 					className: e,
 					...t
 				}) => c.a.createElement("div", b({
-					className: Object(a.a)(m.a.card, e)
+					className: Object(i.a)(m.a.card, e)
 				}, t)),
 				f = ({
 					className: e,
 					...t
 				}) => c.a.createElement("h3", b({
-					className: Object(a.a)(m.a.title, e)
+					className: Object(i.a)(m.a.title, e)
 				}, t));
 			var _ = n("./src/reddit/controls/Button/index.tsx"),
 				h = n("./src/reddit/controls/LoadingIcon/index.tsx"),
 				j = n("./src/reddit/helpers/trackers/predictions.ts"),
-				x = n("./src/reddit/hooks/useTracking.ts"),
-				O = n("./src/reddit/models/Toast/index.ts"),
+				O = n("./src/reddit/hooks/useTracking.ts"),
+				x = n("./src/reddit/models/Toast/index.ts"),
 				k = n("./src/reddit/selectors/experiments/econ/index.ts"),
 				E = n("./src/reddit/selectors/features/predictions/tournaments/index.ts"),
 				g = n("./src/reddit/components/PostCreationForm/Prompt/PromptModal.tsx");
@@ -164,16 +164,16 @@
 				onConfirm: n
 			}) {
 				return c.a.createElement(g.a, {
-					titleText: o.fbt._("End tournament?", null, {
-						hk: "SHmTx"
+					titleText: o.fbt._("End Tournament?", null, {
+						hk: "3tTAeq"
 					}),
-					bodyText: o.fbt._("Are you sure you want to end the tournament? Once a tournament has ended, it cannot be restarted again. Ending the tournament also closes the community ‘Tournament’ tab.", null, {
-						hk: "fqqXg"
+					bodyText: o.fbt._("Are you sure you want to end this Tournament? Once it's ended, you can't start it back up again.", null, {
+						hk: "3DLUvL"
 					}),
 					onClose: t,
 					primaryButtonLoading: e,
-					primaryButtonText: o.fbt._("End Tournament", null, {
-						hk: "SUDS2"
+					primaryButtonText: o.fbt._("End", null, {
+						hk: "15D68l"
 					}),
 					onPrimaryAction: n,
 					onSecondaryAction: t,
@@ -188,7 +188,7 @@
 			const S = ({
 				subredditId: e
 			}) => {
-				const t = Object(x.a)(),
+				const t = Object(O.a)(),
 					[n, r] = function(e, t) {
 						const n = Object(s.d)(),
 							o = Object(s.e)(t => Object(P.S)(t, e)),
@@ -217,18 +217,18 @@
 			};
 			var T = n("./src/reddit/components/SubredditContent/PredictionsContent/index.m.less"),
 				w = n.n(T);
-			const N = 90;
+			const A = 90;
 
-			function A({
+			function N({
 				subreddit: e
 			}) {
 				const t = Object(s.d)(),
-					n = Object(x.a)(),
+					n = Object(O.a)(),
 					[u, m] = Object(r.useState)(""),
 					[b, f] = Object(r.useState)(!1),
 					[g, C] = Object(r.useState)(!1),
 					[v, P] = Object(r.useState)(!1),
-					[T, A] = Object(r.useState)(null),
+					[T, N] = Object(r.useState)(null),
 					{
 						isFetching: I
 					} = Object(l.a)(e.name),
@@ -242,7 +242,7 @@
 				Object(r.useEffect)(() => {
 					n(Object(j.u)())
 				}, [n]), Object(r.useEffect)(() => {
-					L && (m(L.name), A(N - L.name.length))
+					L && (m(L.name), N(A - L.name.length))
 				}, [L]);
 				const M = Object(r.useCallback)(() => {
 						n(Object(j.d)()), P(!0)
@@ -271,14 +271,14 @@
 						const {
 							value: t
 						} = e.target;
-						t.length <= N && (m(t), A(N - t.length))
+						t.length <= A && (m(t), N(A - t.length))
 					},
 					placeholder: o.fbt._("/r/{subredditName} tournament", [o.fbt._param("subredditName", e.name)], {
 						hk: "bN9XA"
 					})
 				}), c.a.createElement("div", {
-					className: Object(a.a)(w.a.remainingCharacters, {
-						[w.a.maxCharacters]: (null == u ? void 0 : u.length) === N
+					className: Object(i.a)(w.a.remainingCharacters, {
+						[w.a.maxCharacters]: (null == u ? void 0 : u.length) === A
 					})
 				}, L && L.name !== u && null !== T ? o.fbt._({
 					"*": "{remaining characters} characters remaining",
@@ -292,10 +292,10 @@
 						if (!L || !u) return null;
 						n(Object(j.i)()), f(!0);
 						try {
-							await t(Object(i.v)(L.tournamentId, e.id, u))
+							await t(Object(a.v)(L.tournamentId, e.id, u))
 						} catch (r) {
 							t(Object(d.f)({
-								kind: O.b.Error,
+								kind: x.b.Error,
 								text: o.fbt._("Failed to update tournament name, please try again later", null, {
 									hk: "3bx78u"
 								})
@@ -330,10 +330,10 @@
 						if (!L || !F) return null;
 						C(!0);
 						try {
-							await t(Object(i.o)(L.tournamentId))
+							await t(Object(a.o)(L.tournamentId))
 						} catch (e) {
 							t(Object(d.f)({
-								kind: O.b.Error,
+								kind: x.b.Error,
 								text: o.fbt._("Failed to end tournament, please try again later", null, {
 									hk: "2huCGU"
 								})
@@ -351,9 +351,9 @@
 			n.d(t, "p", (function() {
 				return s
 			})), n.d(t, "q", (function() {
-				return a
-			})), n.d(t, "r", (function() {
 				return i
+			})), n.d(t, "r", (function() {
+				return a
 			})), n.d(t, "l", (function() {
 				return d
 			})), n.d(t, "t", (function() {
@@ -375,9 +375,9 @@
 			})), n.d(t, "u", (function() {
 				return j
 			})), n.d(t, "d", (function() {
-				return x
-			})), n.d(t, "i", (function() {
 				return O
+			})), n.d(t, "i", (function() {
+				return x
 			})), n.d(t, "c", (function() {
 				return k
 			})), n.d(t, "g", (function() {
@@ -402,13 +402,13 @@
 					action: "select",
 					noun: "poll_option"
 				}),
-				a = e => ({
+				i = e => ({
 					...Object(r.defaults)(e),
 					source: c,
 					action: "select",
 					noun: "prediction_option"
 				}),
-				i = e => ({
+				a = e => ({
 					...Object(r.defaults)(e),
 					source: c,
 					action: "view",
@@ -455,14 +455,14 @@
 					currency: t,
 					amount: n
 				}) => s => {
-					const a = t === o.a.Coins ? n : void 0,
-						i = t === o.a.Tokens ? n : void 0;
+					const i = t === o.a.Coins ? n : void 0,
+						a = t === o.a.Tokens ? n : void 0;
 					return {
 						...Object(r.defaults)(s),
 						source: c,
 						action: "close",
 						noun: "prediction_modal",
-						poll: Object(r.poll)(s, e, !1, a, i)
+						poll: Object(r.poll)(s, e, !1, i, a)
 					}
 				},
 				p = e => ({
@@ -512,13 +512,13 @@
 						pageType: "mod_tool_predict"
 					}
 				}),
-				x = () => e => ({
+				O = () => e => ({
 					...Object(r.defaults)(e),
 					source: "mod_tool_predict",
 					action: "click",
 					noun: "end_tournament"
 				}),
-				O = () => e => ({
+				x = () => e => ({
 					...Object(r.defaults)(e),
 					source: "mod_tool_predict",
 					action: "click",
@@ -579,4 +579,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.50d32f752b007e3c9865.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.86f8733eec52779865a4.js.map
