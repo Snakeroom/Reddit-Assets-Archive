@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReadingIndicator.1510fe0fff1a13f7f52d.js
-// Retrieved at 11/11/2021, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReadingIndicator.855ded6d143be6ed77d6.js
+// Retrieved at 12/1/2021, 9:50:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReadingIndicator"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, s, n) {
@@ -62,7 +62,7 @@
 				u = n("./src/reddit/hooks/useConstructor.ts"),
 				i = n("./src/reddit/components/RandomBaseUserIcons/index.m.less"),
 				m = n.n(i);
-			const f = Object(t.a)({
+			const b = Object(t.a)({
 					resolved: {},
 					chunkName: () => "reddit-components-UserIcon-PresenceDot",
 					isReady(e) {
@@ -82,7 +82,7 @@
 						return "./src/reddit/components/UserIcon/PresenceDot.tsx"
 					}
 				}),
-				b = 8,
+				f = 8,
 				p = 20,
 				h = 3,
 				_ = e => {
@@ -93,7 +93,7 @@
 						shouldOutlinePresenceDot: c,
 						shouldShowPresenceDot: i,
 						shouldUseColoredSilhouetteIcons: _,
-						numIconsToDrawFrom: j = (_ ? b : p),
+						numIconsToDrawFrom: j = (_ ? f : p),
 						wrapperClassName: I
 					} = e, O = Object(r.useRef)([]);
 					return Object(u.a)(() => {
@@ -114,7 +114,7 @@
 							style: {
 								backgroundColor: e
 							}
-						}), o.a.createElement(f, {
+						}), o.a.createElement(b, {
 							showPresence: !0,
 							outlineClassName: Object(a.a)({
 								[m.a.presenceDotClass]: c
@@ -149,101 +149,105 @@
 		},
 		"./src/reddit/components/ReadingIndicator/index.tsx": function(e, s, n) {
 			"use strict";
-			n.r(s);
+			n.r(s), n.d(s, "formatPresenceNumber", (function() {
+				return h
+			}));
 			var t = n("./node_modules/fbt/lib/FbtPublic.js"),
-				r = n("./node_modules/lodash/noop.js"),
-				o = n.n(r),
-				a = n("./node_modules/react/index.js"),
-				c = n.n(a),
-				d = n("./src/realtime/GQLSubscription/async.tsx"),
-				l = n("./src/reddit/components/RandomBaseUserIcons/RandomBaseUserIcons.tsx"),
-				u = n("./src/reddit/helpers/trackers/post.ts"),
-				i = n("./src/reddit/hooks/useClassNameOnMount.ts"),
-				m = n("./src/reddit/hooks/useTracking.ts");
+				r = n("./src/lib/prettyPrintNumber/index.ts"),
+				o = n("./node_modules/lodash/noop.js"),
+				a = n.n(o),
+				c = n("./node_modules/react/index.js"),
+				d = n.n(c),
+				l = n("./src/realtime/GQLSubscription/async.tsx"),
+				u = n("./src/reddit/components/RandomBaseUserIcons/RandomBaseUserIcons.tsx"),
+				i = n("./src/reddit/helpers/trackers/post.ts"),
+				m = n("./src/reddit/hooks/useClassNameOnMount.ts"),
+				b = n("./src/reddit/hooks/useTracking.ts");
 			var f = n("./src/reddit/components/ReadingIndicator/index.m.less"),
-				b = n.n(f);
+				p = n.n(f);
+			const h = e => e > 9999 ? Object(r.b)(e) : e.toString();
 			s.default = ({
 				isReadingIndicatorsExperiment: e,
 				isReadLoadTest: s,
 				isWriteLoadTest: n,
 				postId: r
 			}) => {
-				const f = Object(a.useMemo)(() => ({
+				const o = Object(c.useMemo)(() => ({
 						teamOwner: "CONTENT_AND_COMMUNITIES",
 						postID: r
 					}), [r]),
-					p = Object(a.useMemo)(() => ({
+					f = Object(c.useMemo)(() => ({
 						input: {
 							channel: {
-								...f,
+								...o,
 								category: "USER_IS_READING_POST"
 							}
 						}
 					}), [r]),
-					h = Object(a.useMemo)(() => ({
+					_ = Object(c.useMemo)(() => ({
 						input: {
 							channel: {
-								...f,
+								...o,
 								category: "USERS_READING_INDICATOR"
 							}
 						}
 					}), [r]),
-					_ = Object(a.useRef)(null),
-					j = Object(a.useRef)(null),
-					I = Object(a.useRef)(0),
-					[O, g] = Object(a.useState)(0),
-					v = Object(a.useCallback)(e => {
+					j = Object(c.useRef)(null),
+					I = Object(c.useRef)(null),
+					O = Object(c.useRef)(0),
+					[g, v] = Object(c.useState)(0),
+					C = Object(c.useCallback)(e => {
 						const {
 							numUsers: s
 						} = e.subscribe.data, n = () => {
-							j.current && clearTimeout(j.current), j.current = setTimeout(() => {
-								g(0), S(null), j.current = null
+							I.current && clearTimeout(I.current), I.current = setTimeout(() => {
+								v(0), y(null), I.current = null
 							}, 3e4)
 						}, t = () => setTimeout(() => {
-							I.current ? (g(I.current), I.current = null, _.current = t(), n()) : _.current = null
+							O.current ? (v(O.current), O.current = null, j.current = t(), n()) : j.current = null
 						}, 2e3);
-						_.current ? I.current = s : (g(s), I.current = null, _.current = t(), n())
+						j.current ? O.current = s : (v(s), O.current = null, j.current = t(), n())
 					}, []),
-					C = Object(a.useRef)(0),
-					[R, S] = Object(a.useState)(null),
-					y = Object(a.useRef)(null);
-				Object(a.useEffect)(() => {
-					if (!e) return void(R && S(null));
-					if (O >= 5) return C.current = O, void(R || S(Date.now()));
-					if (!R) return;
-					const s = Date.now() - R;
-					s >= 1e4 ? S(null) : y.current = setTimeout(() => S(null), 1e4 - s)
-				}, [R, e, O]);
+					R = Object(c.useRef)(0),
+					[S, y] = Object(c.useState)(null),
+					N = Object(c.useRef)(null);
+				Object(c.useEffect)(() => {
+					if (!e) return void(S && y(null));
+					if (g >= 5) return R.current = g, void(S || y(Date.now()));
+					if (!S) return;
+					const s = Date.now() - S;
+					s >= 1e4 ? y(null) : N.current = setTimeout(() => y(null), 1e4 - s)
+				}, [S, e, g]);
 				const {
-					className: E,
-					shouldMount: x,
-					onTransitionEnd: N
-				} = Object(i.a)({
-					defaultClass: b.a.readingIndicator,
-					addedClass: b.a.isDisplayed,
-					mountCondition: !!R
-				}), D = Object(m.a)();
-				return Object(a.useEffect)(() => {
-					x && D(Object(u.r)(r, O))
-				}, [D, x, r, O]), c.a.createElement(c.a.Fragment, null, n && c.a.createElement(d.a, {
-					variables: p,
-					onData: o.a,
+					className: x,
+					shouldMount: E,
+					onTransitionEnd: D
+				} = Object(m.a)({
+					defaultClass: p.a.readingIndicator,
+					addedClass: p.a.isDisplayed,
+					mountCondition: !!S
+				}), A = Object(b.a)();
+				return Object(c.useEffect)(() => {
+					E && A(Object(i.r)(r, g))
+				}, [A, E, r]), d.a.createElement(d.a.Fragment, null, n && d.a.createElement(l.a, {
+					variables: f,
+					onData: a.a,
 					queryKey: "userIsReadingPost"
-				}), (s || e) && c.a.createElement(d.a, {
-					variables: h,
-					onData: e ? v : o.a,
+				}), (s || e) && d.a.createElement(l.a, {
+					variables: _,
+					onData: e ? C : a.a,
 					queryKey: "usersReadingIndicator"
-				}), x && c.a.createElement("div", {
-					className: E,
-					onTransitionEnd: N
-				}, t.fbt._("{number of users reading} people here", [t.fbt._param("number of users reading", C.current.toString())], {
+				}), E && d.a.createElement("div", {
+					className: x,
+					onTransitionEnd: D
+				}, t.fbt._("{number of users reading} people here", [t.fbt._param("number of users reading", h(R.current))], {
 					hk: "3foy5g"
-				}), c.a.createElement(l.a, {
-					memberIconClassName: b.a.offsetMemberIcon,
+				}), d.a.createElement(u.a, {
+					memberIconClassName: p.a.offsetMemberIcon,
 					iconsKey: r,
 					numVisibleIcons: 2,
 					shouldUseColoredSilhouetteIcons: !0,
-					wrapperClassName: b.a.offsetMembersIconsWrapper
+					wrapperClassName: p.a.offsetMembersIconsWrapper
 				})))
 			}
 		},
@@ -313,4 +317,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReadingIndicator.1510fe0fff1a13f7f52d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReadingIndicator.855ded6d143be6ed77d6.js.map
