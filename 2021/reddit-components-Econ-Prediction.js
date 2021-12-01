@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.c476f41d126344afba97.js
-// Retrieved at 11/17/2021, 8:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.d40249ac2cf079870073.js
+// Retrieved at 12/1/2021, 11:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction"], {
 		"./src/lib/constants/specialMembership.ts": function(e, t, n) {
@@ -395,6 +395,7 @@
 					d || s || l()
 				}, [d, s, l]), {
 					isFetching: d,
+					isFetched: s,
 					fetch: l
 				}
 			}
@@ -593,10 +594,10 @@
 								hk: "22UWEr"
 							}));
 							else {
-								e.tournamentId ? c(Object(I.q)({
+								e.tournamentId ? c(Object(I.o)({
 									pollId: s,
 									selectedNumberTokens: o
-								})) : c(Object(I.p)({
+								})) : c(Object(I.n)({
 									pollId: s,
 									selectedNumberCoins: o,
 									totalStakeAmount: e.totalStakeAmount
@@ -956,7 +957,7 @@
 					className: ke.a.tournamentLink,
 					to: `${i.url}predictions/`,
 					onClick: () => {
-						n(Object(I.m)({
+						n(Object(I.k)({
 							pageType: d ? "post_detail" : u ? "community" : l ? "profile" : "home"
 						})), window.scrollTo(0, 0)
 					}
@@ -1835,4 +1836,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.c476f41d126344afba97.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.d40249ac2cf079870073.js.map

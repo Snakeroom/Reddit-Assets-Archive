@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.4d536c9653938d37e1a7.js
-// Retrieved at 12/1/2021, 11:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.4dce238de7419ef23e8b.js
+// Retrieved at 12/1/2021, 11:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -16605,7 +16605,7 @@
 					case ge.f:
 					case G.b:
 					case G.f:
-					case hl.h: {
+					case hl.k: {
 						const {
 							governance: r
 						} = t.payload;
@@ -16735,8 +16735,8 @@
 							...n
 						}
 					}
-					case hl.j:
-					case hl.i: {
+					case hl.m:
+					case hl.l: {
 						const {
 							pollId: r,
 							prediction: {
@@ -17530,7 +17530,7 @@
 						case ge.f:
 						case G.b:
 						case G.f:
-						case hl.h: {
+						case hl.k: {
 							const {
 								governance: r,
 								posts: s
@@ -17647,7 +17647,7 @@
 					case Ad.MORE_POSTS_LOADED:
 					case vd.c:
 					case vd.d:
-					case hl.h: {
+					case hl.k: {
 						const r = Object(Ol.g)(t.payload.meta);
 						return {
 							...e,
@@ -18001,7 +18001,7 @@
 							}
 						}
 					}
-					case hl.m: {
+					case hl.p: {
 						const {
 							tournamentPostId: r,
 							predictionId: s,
@@ -24104,7 +24104,7 @@
 							coins: r
 						} : e
 					}
-					case hl.j: {
+					case hl.m: {
 						const {
 							price: r
 						} = t.payload;
@@ -26343,7 +26343,7 @@
 			e.exports = JSON.parse('{"id":"de72339b938a"}')
 		},
 		"./src/redditGQL/operations/SubredditTopContent.json": function(e) {
-			e.exports = JSON.parse('{"id":"7b26ea6d6b00"}')
+			e.exports = JSON.parse('{"id":"839d1a7694c8"}')
 		},
 		"./src/redditGQL/operations/UpdateChatMessagesAsRead.json": function(e) {
 			e.exports = JSON.parse('{"id":"bfc6fe51708d"}')
@@ -26368,4 +26368,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.4d536c9653938d37e1a7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.4dce238de7419ef23e8b.js.map

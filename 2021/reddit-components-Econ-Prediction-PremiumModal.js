@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-PremiumModal.eeb20e87f50a6f2f9002.js
-// Retrieved at 11/15/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-PremiumModal.f49a18d6dabfcad6c42e.js
+// Retrieved at 12/1/2021, 11:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction-PremiumModal"], {
 		"./src/reddit/components/Econ/Prediction/PremiumModal/index.m.less": function(e, t, a) {
@@ -172,4 +172,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-PremiumModal.eeb20e87f50a6f2f9002.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-PremiumModal.f49a18d6dabfcad6c42e.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index.9655fb02192fe77bcbb6.js
-// Retrieved at 11/11/2021, 10:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index.23ddbe7933fda8257cfc.js
+// Retrieved at 12/1/2021, 11:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index"], {
 		"./src/reddit/components/Econ/Audio/MuteIcon.tsx": function(e, t, n) {
@@ -422,7 +422,7 @@
 							hk: "22UWEr"
 						})), void g(null);
 						if (!m || !P) throw new Error("Invalid arguments, optionId and pollId must be strings");
-						h(!0), d(Object(V.q)({
+						h(!0), d(Object(V.o)({
 							pollId: m,
 							selectedNumberTokens: t.amount
 						}));
@@ -567,9 +567,9 @@
 			};
 			var W = n("./node_modules/fbt/lib/FbtPublic.js"),
 				Q = n("./src/reddit/components/Econ/Prediction/Confetti/index.tsx"),
-				q = n("./src/reddit/components/Econ/Prediction/TournamentSnoosImage/index.tsx"),
-				G = n("./src/reddit/components/Econ/Prediction/TournamentPostBody/v2/AllPredictedCard/index.m.less"),
-				$ = n.n(G);
+				G = n("./src/reddit/components/Econ/Prediction/TournamentSnoosImage/index.tsx"),
+				q = n("./src/reddit/components/Econ/Prediction/TournamentPostBody/v2/AllPredictedCard/index.m.less"),
+				$ = n.n(q);
 			const ee = ({
 				postId: e
 			}) => {
@@ -578,7 +578,7 @@
 					className: $.a.container
 				}, i.a.createElement(Q.a, {
 					className: $.a.confetti
-				}), i.a.createElement(q.a, {
+				}), i.a.createElement(G.a, {
 					className: $.a.image
 				}), i.a.createElement("div", {
 					className: $.a.label
@@ -950,4 +950,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.9655fb02192fe77bcbb6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.23ddbe7933fda8257cfc.js.map

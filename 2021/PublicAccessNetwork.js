@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.6b8d1b477d058f42d7df.js
-// Retrieved at 12/1/2021, 11:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.b052fe8408357aa99305.js
+// Retrieved at 12/1/2021, 11:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -6549,17 +6549,17 @@
 				d = Object(o.a)(i, r.d, (e, t) => e && !t)
 		},
 		"./src/redditGQL/operations/OtherDiscussions.json": function(e) {
-			e.exports = JSON.parse('{"id":"e6613d03cfc3"}')
+			e.exports = JSON.parse('{"id":"9d6851201ef6"}')
 		},
 		"./src/redditGQL/operations/PostFeedAndOtherDiscussions.json": function(e) {
-			e.exports = JSON.parse('{"id":"b83ddb418d74"}')
+			e.exports = JSON.parse('{"id":"3a15fa9d61dc"}')
 		},
 		"./src/redditGQL/operations/SubredditPosts.json": function(e) {
-			e.exports = JSON.parse('{"id":"8d5cc57ee984"}')
+			e.exports = JSON.parse('{"id":"fbafcc7dc83a"}')
 		},
 		"./src/redditGQL/operations/SubredditsPosts.json": function(e) {
-			e.exports = JSON.parse('{"id":"19b6f388997f"}')
+			e.exports = JSON.parse('{"id":"3524b31e7b5a"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.6b8d1b477d058f42d7df.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.b052fe8408357aa99305.js.map
