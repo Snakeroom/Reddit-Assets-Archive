@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWelcomeMessageModal.5da4192a62ca3bc5a3af.js
-// Retrieved at 12/2/2021, 10:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWelcomeMessageModal.b20d91d8ca6dad5046dd.js
+// Retrieved at 12/2/2021, 2:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWelcomeMessageModal"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -537,10 +537,10 @@
 					onClick: () => {
 						e.isSponsored && e.post.postId && Object(f.a)(e.post, e.pageType)
 					}
-				}, R(e)) : e.isListing && e.postPermalink ? i.a.createElement(a.a, {
+				}, L(e)) : e.isListing && e.postPermalink ? i.a.createElement(a.a, {
 					target: e.shouldOpenPostInNewTab ? "_blank" : void 0,
 					to: e.sendGoodVisitEvent ? Object(m.a)(e.postPermalink, void 0, t) : Object(m.a)(e.postPermalink)
-				}, R(e)) : R(e)
+				}, L(e)) : L(e)
 			});
 			const M = (e, t) => i.a.createElement(k, {
 					altText: t.altText,
@@ -559,7 +559,7 @@
 					src: Object(l.a)(t.source),
 					width: t.width
 				}),
-				R = ({
+				L = ({
 					onClick: e,
 					...t
 				}) => {
@@ -809,12 +809,12 @@
 					e.persist(), N(e)
 				}
 
-				function R(e) {
+				function L(e) {
 					var t;
 					(i || B(e), d) || (t = e.timeStamp, T(Object(l.A)(p, t)))
 				}
 
-				function L(e) {
+				function R(e) {
 					T(Object(l.q)(p, e.timeStamp))
 				}
 
@@ -833,7 +833,7 @@
 				}
 
 				function H(e) {
-					n || R(e), i || B(e), T(Object(l.C)(p))
+					n || L(e), i || B(e), T(Object(l.C)(p))
 				}
 
 				function P() {
@@ -847,8 +847,8 @@
 						key: p,
 						loop: !0,
 						onBufferingChange: k,
-						onLoadStart: L,
-						onLoadedData: R,
+						onLoadStart: R,
+						onLoadedData: L,
 						onLoadedMetadata: B,
 						onPause: I,
 						onPlaying: H,
@@ -1143,7 +1143,7 @@
 			})), s.d(t, "a", (function() {
 				return M
 			})), s.d(t, "w", (function() {
-				return R
+				return L
 			}));
 			var n = s("./node_modules/react/index.js"),
 				r = s.n(n),
@@ -1175,7 +1175,7 @@
 				I = d.a.th("Thl", a.a),
 				N = d.a.th("Thc", a.a),
 				M = (d.a.th("Thr", a.a), d.a.wrapped(e => r.a.createElement(i.b, e), "A", a.a)),
-				R = d.a.wrapped(c.a, "A", a.a)
+				L = d.a.wrapped(c.a, "A", a.a)
 		},
 		"./src/reddit/components/RichTextJson/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -1553,9 +1553,9 @@
 			s.d(t, "c", (function() {
 				return M
 			})), s.d(t, "d", (function() {
-				return R
-			})), s.d(t, "a", (function() {
 				return L
+			})), s.d(t, "a", (function() {
+				return R
 			})), s.d(t, "b", (function() {
 				return B
 			})), s.d(t, "f", (function() {
@@ -1679,10 +1679,10 @@
 						key: s
 					}, i)
 				},
-				R = e => a.a.createElement(d.e, {
+				L = e => a.a.createElement(d.e, {
 					key: e
 				}),
-				L = (e, t, s, n) => {
+				R = (e, t, s, n) => {
 					const r = e.c;
 					if (!r) return;
 					const i = r.length,
@@ -1716,13 +1716,13 @@
 				P = (e, t, s, n) => {
 					switch (e.e) {
 						case p.b:
-							return L(e, t, s, n);
+							return R(e, t, s, n);
 						case p.c:
 							return B(e, n);
 						case p.k:
 							return M(e, s, n);
 						case p.l:
-							return R(n);
+							return L(n);
 						case p.p:
 							return H(e, t, s, n);
 						case p.u:
@@ -2008,12 +2008,12 @@
 						rtJsonElementProps: i
 					});
 					switch (n) {
-						case b.Re.SmIcon:
+						case b.Te.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: i
 							});
-						case b.Re.SmIconHc:
+						case b.Te.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -2120,14 +2120,14 @@
 				experimentVariant: e => {
 					var t;
 					return null === (t = Object(v.d)(e, {
-						experimentName: m.Me
+						experimentName: m.Oe
 					})) || void 0 === t ? void 0 : t.variant
 				},
 				user: y.k,
 				subredditIcon: E.b,
 				subredditRulesObject: e => e.subreddits.rules,
 				welcomeMessageObject: w.b
-			}), R = Object(i.b)(M, e => ({
+			}), L = Object(i.b)(M, e => ({
 				closeModal: () => e(Object(a.b)())
 			}), (e, t, s) => ({
 				...e,
@@ -2136,7 +2136,7 @@
 				rules: e.currentSubredditId ? e.subredditRulesObject[e.currentSubredditId].rules : [],
 				subredditWelcomeMessage: e.currentSubredditId && e.welcomeMessageObject ? e.welcomeMessageObject[e.currentSubredditId] : void 0
 			}));
-			t.default = Object(j.a)(R(Object(u.c)(e => {
+			t.default = Object(j.a)(L(Object(u.c)(e => {
 				var t, s, i;
 				const {
 					closeModal: o,
@@ -2202,7 +2202,7 @@
 					rtJsonElementProps: N
 				}) : null === (i = null == y ? void 0 : y.body) || void 0 === i ? void 0 : i.markdown)), r.a.createElement(d.g, {
 					className: k.a.modalFooter
-				}, u === m.Te.Rules ? !j && r.a.createElement(p.t, {
+				}, u === m.Ve.Rules ? !j && r.a.createElement(p.t, {
 					priority: p.c.Secondary,
 					onClick: () => {
 						O(!0), _(b.b())
@@ -2578,12 +2578,12 @@
 				d = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: n.Ke
+						experimentName: n.Me
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === n.Re.SmIcon || t === n.Re.SmIconHc
+					return t === n.Te.SmIcon || t === n.Te.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -2606,4 +2606,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWelcomeMessageModal.5da4192a62ca3bc5a3af.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWelcomeMessageModal.b20d91d8ca6dad5046dd.js.map

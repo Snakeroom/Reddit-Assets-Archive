@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditTopContent.ea4f9c458ff5b8fd1d8c.js
-// Retrieved at 12/2/2021, 10:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditTopContent.5e403533405c3b8f7da2.js
+// Retrieved at 12/2/2021, 2:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditTopContent"], {
 		"./src/lib/getShortenedLink.ts": function(e, t, s) {
@@ -311,8 +311,8 @@
 				O = s("./src/reddit/helpers/trackers/discoveryUnit.ts"),
 				P = s("./node_modules/fbt/lib/FbtPublic.js"),
 				j = s("./src/lib/isUrl/index.ts"),
-				w = s("./src/lib/prettyPrintNumber/index.ts"),
-				N = s("./src/lib/CSSVariableProvider/withTheme.tsx"),
+				N = s("./src/lib/prettyPrintNumber/index.ts"),
+				w = s("./src/lib/CSSVariableProvider/withTheme.tsx"),
 				S = s("./node_modules/react-router-dom/esm/react-router-dom.js"),
 				L = s("./src/reddit/constants/posts.ts"),
 				I = s("./src/lib/constants/index.ts"),
@@ -510,19 +510,19 @@
 					}, P.fbt._({
 						"*": "{number} points",
 						_1: "1 score"
-					}, [P.fbt._plural(u.score, "number", Object(w.b)(u.score))], {
+					}, [P.fbt._plural(u.score, "number", Object(N.b)(u.score))], {
 						hk: "2ncFte"
 					})), i.a.createElement("span", {
 						className: de.a.meta
 					}, P.fbt._({
 						"*": "{number} comments",
 						_1: "1 comment"
-					}, [P.fbt._plural(u.numComments, "number", Object(w.b)(u.numComments))], {
+					}, [P.fbt._plural(u.numComments, "number", Object(N.b)(u.numComments))], {
 						hk: "1QQoSA"
 					}))))), i.a.createElement(q.d, null))
 				}
 			}
-			const ue = Object($.b)(Object(X.a)(Object(N.a)(pe)));
+			const ue = Object($.b)(Object(X.a)(Object(w.a)(pe)));
 			class be extends i.a.Component {
 				render() {
 					return i.a.createElement(ue, this.props)
@@ -563,7 +563,7 @@
 						}))
 					}), i.a.createElement(ge.c, t))
 				};
-			var je = _e(Oe(Object(N.a)(({
+			var je = _e(Oe(Object(w.a)(({
 					className: e,
 					isLoading: t,
 					showSubreddit: s,
@@ -611,22 +611,22 @@
 						isLoading: t
 					}))
 				}))))))),
-				we = s("./src/reddit/components/DiscoveryUnit/Layout/Posts/index.m.less"),
-				Ne = s.n(we);
+				Ne = s("./src/reddit/components/DiscoveryUnit/Layout/Posts/index.m.less"),
+				we = s.n(Ne);
 			var Se = e => i.a.createElement("div", {
-					className: Object(c.a)(Ne.a.container, e.className)
+					className: Object(c.a)(we.a.container, e.className)
 				}, i.a.createElement("div", {
-					className: Ne.a.largePosts
+					className: we.a.largePosts
 				}, i.a.createElement(je, {
-					className: Ne.a.topPostLargePost,
+					className: we.a.topPostLargePost,
 					isLoading: !0,
 					showSubreddit: e.showSubreddit
 				}), i.a.createElement(je, {
-					className: Ne.a.topPostLargePost,
+					className: we.a.topPostLargePost,
 					isLoading: !0,
 					showSubreddit: e.showSubreddit
 				}), i.a.createElement(je, {
-					className: Ne.a.topPostLargePost,
+					className: we.a.topPostLargePost,
 					isLoading: !0,
 					showSubreddit: e.showSubreddit
 				}))),
@@ -857,9 +857,9 @@
 				g = s("./src/reddit/constants/experiments.ts"),
 				f = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				C = s("./src/reddit/selectors/user.ts");
-			const E = e => Object(C.H)(e) || g.Se.ShowTopContent === Object(f.c)(e, {
+			const E = e => Object(C.H)(e) || g.Ue.ShowTopContent === Object(f.c)(e, {
 				experimentEligibilitySelector: f.a,
-				experimentName: g.Le
+				experimentName: g.Ne
 			});
 			var y = s("./src/reddit/selectors/subreddit.ts"),
 				k = s("./src/reddit/components/DiscoveryUnit/SubredditTopContentDiscoveryUnit/index.m.less"),
@@ -1251,9 +1251,9 @@
 				O = s("./src/reddit/components/FlairWrapper/index.tsx"),
 				P = s("./node_modules/fbt/lib/FbtPublic.js"),
 				j = s("./src/lib/prettyPrintNumber/index.ts"),
-				w = s("./src/reddit/components/Poll/PollExpiry/index.tsx"),
-				N = s("./src/reddit/components/Poll/PostTitleMetaData/index.m.less"),
-				S = s.n(N);
+				N = s("./src/reddit/components/Poll/PollExpiry/index.tsx"),
+				w = s("./src/reddit/components/Poll/PostTitleMetaData/index.m.less"),
+				S = s.n(w);
 			const L = Object(c.c)({
 				poll: (e, t) => e.polls.models[t.pollId],
 				resultsByVoters: (e, t) => e.polls.results.byVoters[t.pollId]
@@ -1270,7 +1270,7 @@
 						_1: "{count} vote"
 					}, [P.fbt._param("count", Object(j.a)(a)), P.fbt._plural(parseInt(a))], {
 						hk: "4rP1VK"
-					})), t && i.a.createElement(w.a, {
+					})), t && i.a.createElement(N.a, {
 						className: S.a.proposalExpiry,
 						poll: t
 					}))
@@ -1376,7 +1376,7 @@
 						subreddit: s
 					} = e, {
 						isSponsored: a
-					} = t, n = Object(F.a)(), r = Object(R.a)(p.id) === p.nd.Enabled;
+					} = t, n = Object(F.a)(), r = Object(R.a)(p.id) === p.pd.Enabled;
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return i.a.createElement(Z, {
 						nowrap: e.nowrap
 					}, i.a.createElement(J, e));
@@ -1920,4 +1920,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.ea4f9c458ff5b8fd1d8c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.5e403533405c3b8f7da2.js.map

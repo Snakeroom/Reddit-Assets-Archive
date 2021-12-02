@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/WrappedReddit.269349d8de2b899d6a88.js
-// Retrieved at 11/17/2021, 8:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/WrappedReddit.4340b13fdd4f72b6c948.js
+// Retrieved at 12/2/2021, 2:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["WrappedReddit", "PushNotifications"], {
 		"./src/lib/notifications/token.ts": function(e, a, t) {
@@ -1363,7 +1363,7 @@
 						const a = (null === (e = c[j]) || void 0 === e ? void 0 : e.id) || "",
 							r = document.getElementById(a);
 						if (r) {
-							const e = await (() => t.e(2).then(t.bind(null, "./node_modules/html-to-image/es/index.js")))(),
+							const e = await (() => t.e(3).then(t.bind(null, "./node_modules/html-to-image/es/index.js")))(),
 								n = await e.toPng(r);
 							if (n) {
 								const e = document.createElement("a");
@@ -1428,4 +1428,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/WrappedReddit.269349d8de2b899d6a88.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/WrappedReddit.4340b13fdd4f72b6c948.js.map
