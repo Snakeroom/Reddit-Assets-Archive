@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.bac80d4337b1ca3b3a7b.js
-// Retrieved at 12/2/2021, 10:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.210e9905e9052ce8c596.js
+// Retrieved at 12/2/2021, 11:20:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index~reddit-components-Econ-Prediction"], {
 		"./node_modules/lodash/_LazyWrapper.js": function(a, i, r) {
@@ -964,18 +964,20 @@
 			a.exports = {
 				poll: "_1yPj2fMwQpFlik44vdrnnU",
 				isNightMode: "_3KOb7MLY_OEJMFhQCApTRC",
-				predictionOptions: "_1Pwgly7jcFcLrdFM9pn5JV"
+				predictionOptions: "_1Pwgly7jcFcLrdFM9pn5JV",
+				loggedOutTooltip: "tUWgszCRDcTtYyx_N_2FW",
+				loggedOutIcon: "_2BpFzW6p51vsiXCpt9Zgz"
 			}
 		},
 		"./src/reddit/components/Econ/Prediction/PredictionCard/v2/index.tsx": function(a, i, r) {
 			"use strict";
 			r.d(i, "a", (function() {
-				return B
+				return V
 			}));
-			var t = r("./src/lib/classNames/index.ts"),
-				x = r("./node_modules/react/index.js"),
-				k = r.n(x),
-				n = r("./node_modules/react-redux/es/index.js"),
+			var t = r("./node_modules/react/index.js"),
+				x = r.n(t),
+				k = r("./node_modules/react-redux/es/index.js"),
+				n = r("./src/lib/classNames/index.ts"),
 				o = r("./src/reddit/components/Econ/Prediction/themes.ts"),
 				s = r("./src/reddit/components/Econ/Prediction/PredictionCard/v2/PredictionQuestion/index.m.less"),
 				e = r.n(s);
@@ -986,17 +988,17 @@
 				children: i
 			}) => {
 				const r = i ? i.toString() : "";
-				return k.a.createElement("div", {
+				return x.a.createElement("div", {
 					className: e.a.container,
 					style: {
 						backgroundImage: o.a[a] || o.a.theme_4
 					}
-				}, k.a.createElement("div", {
+				}, x.a.createElement("div", {
 					className: e.a.badge
 				}, m._("Prediction", null, {
 					hk: "1MyVWT"
-				})), k.a.createElement("div", {
-					className: Object(t.a)(e.a.question, {
+				})), x.a.createElement("div", {
+					className: Object(n.a)(e.a.question, {
 						[e.a.long]: Boolean(r.length > 100)
 					}),
 					title: r.length > 140 ? r : void 0
@@ -1005,15 +1007,16 @@
 			var c = r("./src/reddit/components/Econ/Prediction/PredictionOption/index.tsx"),
 				p = r("./src/reddit/components/Econ/Prediction/PredictionOption/PredictionChangeOption.tsx"),
 				h = r("./src/reddit/components/Econ/Prediction/PredictionOption/SneakPeek.tsx"),
-				d = r("./src/reddit/models/Prediction/index.ts"),
-				f = r("./src/reddit/selectors/experiments/econ/index.ts"),
-				u = r("./src/reddit/selectors/features/predictions/tournaments/index.ts"),
-				y = r("./src/reddit/selectors/user.ts"),
-				G = r("./src/reddit/components/Econ/Prediction/PredictionCard/v2/index.m.less"),
-				E = r.n(G);
+				d = r("./src/reddit/icons/svgs/MinusCircle/index.tsx"),
+				f = r("./src/reddit/models/Prediction/index.ts"),
+				u = r("./src/reddit/selectors/experiments/econ/index.ts"),
+				y = r("./src/reddit/selectors/features/predictions/tournaments/index.ts"),
+				G = r("./src/reddit/selectors/user.ts"),
+				E = r("./src/reddit/components/Econ/Prediction/PredictionCard/v2/index.m.less"),
+				A = r.n(E);
 
-			function A() {
-				return (A = Object.assign || function(a) {
+			function B() {
+				return (B = Object.assign || function(a) {
 					for (var i = 1; i < arguments.length; i++) {
 						var r = arguments[i];
 						for (var t in r) Object.prototype.hasOwnProperty.call(r, t) && (a[t] = r[t])
@@ -1021,7 +1024,9 @@
 					return a
 				}).apply(this, arguments)
 			}
-			const B = ({
+			const {
+				fbt: D
+			} = r("./node_modules/fbt/lib/FbtPublic.js"), V = ({
 				prediction: a,
 				selectedOptionId: i,
 				onSelectOption: r,
@@ -1031,51 +1036,57 @@
 				const {
 					creatorId: e,
 					endsAt: m,
-					options: G,
-					resolvedOptionId: B,
-					totalVoters: D,
-					tournamentId: V,
-					userSelection: b,
-					predictionStatus: F,
-					voteUpdatesRemained: g
-				} = a, v = Object(n.e)(i => Boolean((null == a ? void 0 : a.userSelection) && !(null == a ? void 0 : a.resolvedOptionId) && Object(f.y)(i))), P = Object(n.e)(i => (null == a ? void 0 : a.tournamentId) ? Object(u.a)(i, a.tournamentId) : null), S = Object(n.e)(y.X), T = Object(n.e)(y.pb), _ = Object(n.e)(y.K), [O, j] = Object(x.useState)(!1), C = e === T, N = m < Date.now(), I = N && C && !B, w = F === d.b.Cancelled || F === d.b.CancelInProgress;
-				return Object(x.useEffect)(() => {
-					j(!1)
-				}, [b, a]), k.a.createElement("div", A({
-					className: Object(t.a)(o, E.a.poll, {
-						[E.a.isNightMode]: S
+					options: E,
+					resolvedOptionId: V,
+					totalVoters: b,
+					tournamentId: F,
+					userSelection: g,
+					predictionStatus: v,
+					voteUpdatesRemained: P
+				} = a, S = Object(k.e)(i => Boolean((null == a ? void 0 : a.userSelection) && !(null == a ? void 0 : a.resolvedOptionId) && Object(u.y)(i))), T = Object(k.e)(i => (null == a ? void 0 : a.tournamentId) ? Object(y.a)(i, a.tournamentId) : null), _ = Object(k.e)(G.X), O = Object(k.e)(G.pb), j = Object(k.e)(G.K), [C, N] = Object(t.useState)(!1), I = e === O, w = m < Date.now(), L = w && I && !V, M = v === f.b.Cancelled || v === f.b.CancelInProgress, U = w || !!g || !!V || M;
+				return Object(t.useEffect)(() => {
+					N(!1)
+				}, [g, a]), x.a.createElement("div", B({
+					className: Object(n.a)(o, A.a.poll, {
+						[A.a.isNightMode]: _
 					})
-				}, s), k.a.createElement(l, {
-					theme: null == P ? void 0 : P.theme
-				}, a.title), k.a.createElement("div", {
-					className: E.a.predictionOptions
-				}, G.map(a => k.a.createElement(c.a, {
+				}, s), x.a.createElement(l, {
+					theme: null == T ? void 0 : T.theme
+				}, a.title), x.a.createElement("div", {
+					className: A.a.predictionOptions
+				}, !j && !U && x.a.createElement("div", {
+					className: A.a.loggedOutTooltip
+				}, x.a.createElement(d.a, {
+					className: A.a.loggedOutIcon
+				}), D._("You must be logged in", null, {
+					hk: "18KrL7"
+				})), E.map(a => x.a.createElement(c.a, {
 					key: a.id,
-					isCancelled: w,
-					isEnded: N,
+					isCancelled: M,
+					isEnded: w,
 					isSelected: i === a.id,
-					needsResolution: I,
+					needsResolution: L,
 					option: a,
 					onClick: () => r(a),
-					resolvedOptionId: B,
-					tournamentId: V,
-					userSelection: b,
-					userIsLoggedOut: !_,
-					votePercentage: (b || N || O) && a.voteCount ? Math.floor(a.voteCount / D * 100) : null,
-					isShowingHint: O
-				})), !w && k.a.createElement(h.a, {
-					disabled: O || !!b,
-					isEnded: N,
-					userSelection: b,
-					isShowingHint: O,
-					tournamentId: V,
+					resolvedOptionId: V,
+					tournamentId: F,
+					userSelection: g,
+					userIsLoggedOut: !j,
+					votePercentage: (g || w || C) && a.voteCount ? Math.floor(a.voteCount / b * 100) : null,
+					isShowingHint: C
+				})), !M && x.a.createElement(h.a, {
+					disabled: C || !!g,
+					isEnded: w,
+					userSelection: g,
+					isShowingHint: C,
+					tournamentId: F,
 					postId: a.postId,
-					onReveal: () => j(!0)
-				}), !w && v && k.a.createElement(p.a, {
-					isLimitReached: 0 === g,
+					onReveal: () => N(!0)
+				}), !M && S && x.a.createElement(p.a, {
+					isLimitReached: 0 === P,
 					postId: a.postId,
-					options: G,
-					selectedOptionId: b
+					options: E,
+					selectedOptionId: g
 				})))
 			}
 		},
@@ -2034,67 +2045,63 @@
 				isEnded: t,
 				isSelected: p,
 				needsResolution: d,
-				option: G,
-				resolvedOptionId: E,
-				tournamentId: A,
-				userIsLoggedOut: B,
-				userSelection: D,
-				votePercentage: V,
-				isShowingHint: b,
-				...F
-			}, g) => {
-				const v = Object(k.e)(l.x),
-					P = Object(k.e)(c.X),
-					S = !!A,
-					T = E === G.id,
-					_ = t || !!D || !!E || r,
-					O = v ? h.a : f.a;
+				option: y,
+				resolvedOptionId: G,
+				tournamentId: E,
+				userIsLoggedOut: A,
+				userSelection: B,
+				votePercentage: D,
+				isShowingHint: V,
+				...b
+			}, F) => {
+				const g = Object(k.e)(l.x),
+					v = Object(k.e)(c.X),
+					P = !!E,
+					S = G === y.id,
+					T = t || !!B || !!G || r,
+					_ = g ? h.a : f.a;
 				return x.a.createElement("div", {
-					className: O.optionButtonWrapper
+					className: _.optionButtonWrapper
 				}, x.a.createElement("button", u({
-					"aria-label": G.text,
-					className: Object(n.a)(O.optionButton, a, {
-						[O.canVote]: !D && !t && !r,
-						[O.isVote]: !r && D === G.id,
-						[O.isCorrect]: T,
-						[O.isSelected]: p,
-						[O.isShowingHint]: b && !D,
-						[O.isNightMode]: P
+					"aria-label": y.text,
+					className: Object(n.a)(_.optionButton, a, {
+						[_.canVote]: !B && !t && !r,
+						[_.isVote]: !r && B === y.id,
+						[_.isCorrect]: S,
+						[_.isSelected]: p,
+						[_.isShowingHint]: V && !B,
+						[_.isNightMode]: v
 					}),
-					disabled: i || r || !d && (_ || B),
-					ref: g
-				}, F), x.a.createElement("div", {
-					className: O.optionBody
+					disabled: i || r || !d && (T || A),
+					ref: F
+				}, b), x.a.createElement("div", {
+					className: _.optionBody
 				}, x.a.createElement("div", {
-					className: Object(n.a)(O.optionText, {
-						[O.hasUserAmount]: Boolean(G.userStakeAmount)
+					className: Object(n.a)(_.optionText, {
+						[_.hasUserAmount]: Boolean(y.userStakeAmount)
 					})
-				}, T && x.a.createElement(e.a, {
-					className: O.checkmarkIcon
+				}, S && x.a.createElement(e.a, {
+					className: _.checkmarkIcon
 				}), x.a.createElement("span", {
-					className: O.optionLabel,
-					title: G.text.length > 25 ? G.text : void 0
-				}, G.text)), Boolean(G.userStakeAmount && !r) && x.a.createElement("div", {
-					className: O.optionStake
-				}, S ? x.a.createElement(o.a, {
-					className: O.icon
+					className: _.optionLabel,
+					title: y.text.length > 25 ? y.text : void 0
+				}, y.text)), Boolean(y.userStakeAmount && !r) && x.a.createElement("div", {
+					className: _.optionStake
+				}, P ? x.a.createElement(o.a, {
+					className: _.icon
 				}) : x.a.createElement(m.a, {
-					className: O.icon
-				}), " ", G.userStakeAmount, v && x.a.createElement(s.a, {
-					className: O.userIcon
-				})), Boolean(v && !G.userStakeAmount && V && !b && !r) && x.a.createElement("div", {
-					className: O.optionStake
-				}, V, "%")), Boolean(V && !r) && x.a.createElement("div", {
-					className: O.optionPercentage,
+					className: _.icon
+				}), " ", y.userStakeAmount, g && x.a.createElement(s.a, {
+					className: _.userIcon
+				})), Boolean(g && !y.userStakeAmount && D && !V && !r) && x.a.createElement("div", {
+					className: _.optionStake
+				}, D, "%")), Boolean(D && !r) && x.a.createElement("div", {
+					className: _.optionPercentage,
 					style: {
-						width: `${V}%`,
-						maxWidth: `${V}%`
+						width: `${D}%`,
+						maxWidth: `${D}%`
 					}
-				}, " "), B && !_ && x.a.createElement("div", {
-					className: O.loggedOutTooltip
-				}, y._("You must be logged in", null, {
-					hk: "18KrL7"
-				}))))
+				}, " ")))
 			})
 		},
 		"./src/reddit/components/Econ/Prediction/SneakPeekEducationModal/index.m.less": function(a, i, r) {
@@ -3408,6 +3415,22 @@
 				d: "M10.3785 4.86328H14.9734C15.6086 4.86328 16.1221 4.3498 16.1221 3.71456V1.41713C16.1221 0.781889 15.6086 0.268413 14.9734 0.268413H10.3785H5.78363H1.18876C0.554665 0.268413 0.0400391 0.781889 0.0400391 1.41713V3.71456C0.0400391 4.3498 0.554665 4.86328 1.18876 4.86328H5.78363H10.3785Z"
 			})))
 		},
+		"./src/reddit/icons/svgs/MinusCircle/index.tsx": function(a, i, r) {
+			"use strict";
+			r.d(i, "a", (function() {
+				return k
+			}));
+			var t = r("./node_modules/react/index.js"),
+				x = r.n(t);
+			const k = a => x.a.createElement("svg", {
+				className: a.className,
+				viewBox: "0 0 16 16"
+			}, x.a.createElement("path", {
+				d: "M7.99981 15.6998C6.47689 15.6998 4.98818 15.2482 3.72192 14.4021C2.45566 13.556 1.46873 12.3535 0.885936 10.9465C0.303141 9.53948 0.150655 7.99127 0.447761 6.49761C0.744868 5.00396 1.47822 3.63195 2.55509 2.55509C3.63195 1.47822 5.00396 0.744868 6.49761 0.447761C7.99127 0.150655 9.53948 0.303141 10.9465 0.885936C12.3535 1.46873 13.556 2.45566 14.4021 3.72192C15.2482 4.98818 15.6998 6.47689 15.6998 7.99981C15.6975 10.0413 14.8855 11.9984 13.442 13.442C11.9984 14.8855 10.0413 15.6975 7.99981 15.6998ZM7.99981 1.29981C6.67467 1.29981 5.3793 1.69276 4.27749 2.42896C3.17568 3.16517 2.31692 4.21156 1.80982 5.43583C1.30271 6.66009 1.17003 8.00724 1.42855 9.30691C1.68707 10.6066 2.32518 11.8004 3.26219 12.7374C4.1992 13.6744 5.39303 14.3125 6.6927 14.5711C7.99238 14.8296 9.33952 14.6969 10.5638 14.1898C11.7881 13.6827 12.8344 12.8239 13.5707 11.7221C14.3069 10.6203 14.6998 9.32494 14.6998 7.99981C14.6979 6.22344 13.9914 4.52038 12.7353 3.2643C11.4792 2.00822 9.77617 1.30171 7.99981 1.29981Z"
+			}), x.a.createElement("path", {
+				d: "M11.3934 7.49981H4.60621V8.49981H11.3934V7.49981Z"
+			}))
+		},
 		"./src/reddit/icons/svgs/Star6/index.m.less": function(a, i, r) {
 			a.exports = {
 				sparkle: "_39SsnAyWvt-R7vd5x-DV2p",
@@ -3468,4 +3491,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.bac80d4337b1ca3b3a7b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.210e9905e9052ce8c596.js.map
