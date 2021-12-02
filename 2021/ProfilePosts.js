@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePosts.aee8d966a466b75e70ee.js
-// Retrieved at 12/1/2021, 6:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePosts.60e33c55b24e744fceda.js
+// Retrieved at 12/2/2021, 10:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePosts", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -4286,12 +4286,12 @@
 						rtJsonElementProps: i
 					});
 					switch (r) {
-						case b.Ve.SmIcon:
+						case b.Re.SmIcon:
 							return s.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: i
 							});
-						case b.Ve.SmIconHc:
+						case b.Re.SmIconHc:
 							return s.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -4705,7 +4705,7 @@
 						listingName: n,
 						inSubredditOrProfile: r
 					}) => Object(y.E)(e, t, n, r)),
-					subredditsById: v.X,
+					subredditsById: v.W,
 					viewportDataLoaded: E.a,
 					pageReferrer: p.T,
 					postListPlaceholderComponent: () => f.a,
@@ -4734,7 +4734,7 @@
 					trackOnPostExitedViewport: (t, n, r, s, i) => {
 						e(c.O(t, r, s, i))
 					},
-					surveyTriggerScrollCounted: () => e(Object(u.k)())
+					surveyTriggerScrollCounted: () => e(Object(u.j)())
 				}),
 				S = e => Object(h.b)({
 					...e
@@ -4886,7 +4886,7 @@
 							subredditName: r,
 							[s]: n.id
 						},
-						c = Object(l.w)(e, {
+						c = Object(l.v)(e, {
 							subredditName: r
 						});
 					return c ? {
@@ -5276,15 +5276,15 @@
 			const o = e => {
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: i.K,
-						experimentName: r.Ac
+						experimentName: r.yc
 					});
-					return !(!t || Object(r.vf)(t))
+					return !(!t || Object(r.rf)(t))
 				},
 				a = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: i.K,
-						experimentName: r.Ac
-					}) === r.fd.ListingEnabled
+						experimentName: r.yc
+					}) === r.dd.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, n) {
@@ -5320,7 +5320,7 @@
 			const d = (e, t) => {
 					const n = e.focusedVerticals.interactedSubredditIds && e.focusedVerticals.interactedSubredditIds[t];
 					if (n) {
-						const t = Object(o.Q)(e, {
+						const t = Object(o.P)(e, {
 							subredditId: n
 						});
 						return t && t.displayText || ""
@@ -5333,14 +5333,14 @@
 				m = Object(r.a)((e, t) => {
 					const n = p(e, t);
 					if (!n) return u;
-					const r = Object(o.U)(e, {
+					const r = Object(o.T)(e, {
 						subredditName: n.name
 					});
 					return r && r.postIds && r.postIds.length ? r.postIds : u
 				}),
 				p = (e, t) => {
 					const n = e.focusedVerticals.recommendedSubredditIds && e.focusedVerticals.recommendedSubredditIds[t];
-					return n ? Object(o.Q)(e, {
+					return n ? Object(o.P)(e, {
 						subredditId: n
 					}) : null
 				},
@@ -5416,12 +5416,12 @@
 				d = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: r.Oe
+						experimentName: r.Ke
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === r.Ve.SmIcon || t === r.Ve.SmIconHc
+					return t === r.Re.SmIcon || t === r.Re.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -5436,7 +5436,7 @@
 				m = (e, {
 					subredditName: t
 				}) => {
-					const n = Object(o.U)(e, {
+					const n = Object(o.T)(e, {
 						subredditName: t
 					});
 					return (n && n.postIds || []).slice(0, 2)
@@ -5465,4 +5465,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.aee8d966a466b75e70ee.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.60e33c55b24e744fceda.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.fe722e10cbe89b71e744.js
-// Retrieved at 12/1/2021, 10:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.048eae91dc06392dd169.js
+// Retrieved at 12/2/2021, 10:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage"], {
 		"./src/lib/makeCollectionCommentsPageKey/index.ts": function(t, e, s) {
@@ -72,8 +72,8 @@
 				R = s("./src/reddit/selectors/postCollection.ts"),
 				D = s("./src/reddit/selectors/posts.ts"),
 				U = s("./src/reddit/selectors/subreddit.ts"),
-				q = s("./src/reddit/actions/pages/comments.ts"),
-				H = s("./src/reddit/actions/pages/constants.ts"),
+				H = s("./src/reddit/actions/pages/comments.ts"),
+				q = s("./src/reddit/actions/pages/constants.ts"),
 				K = s("./src/lib/initializeClient/installReducer.ts"),
 				F = s("./src/reddit/reducers/pages/comments/index.ts");
 			Object(K.a)({
@@ -81,9 +81,9 @@
 					comments: F.a
 				}
 			});
-			const B = Object(n.a)(H.d),
-				V = Object(n.a)(H.b),
-				z = Object(n.a)(H.a),
+			const B = Object(n.a)(q.d),
+				V = Object(n.a)(q.b),
+				z = Object(n.a)(q.a),
 				J = t => async (e, s) => {
 					const {
 						collectionId: n,
@@ -115,7 +115,7 @@
 							collectionId: e.id
 						});
 						if (!s) return "";
-						const n = Object(U.I)(t, {
+						const n = Object(U.H)(t, {
 								identifier: e
 							}),
 							c = Object(r.c)(s.title, n.name).toString();
@@ -126,12 +126,12 @@
 					}));
 					const $ = s().posts.models[j];
 					if ($) {
-						const o = Object(U.I)(s(), {
+						const o = Object(U.H)(s(), {
 							identifier: $.belongsTo
 						});
 						if (!$.isSponsored)
 							if ($.belongsTo.type === P.a.SUBREDDIT) {
-								!!Object(U.P)(f, {
+								!!Object(U.O)(f, {
 									subredditId: $.belongsTo.id
 								}) || await e(O.o(o.name))
 							} else await e(p.d(o.name));
@@ -139,7 +139,7 @@
 						e(Object(u.b)(n))
 					}
 					_ ? Object(E.d)(s(), e, t) : Object(E.e)(s(), e, t), Object(N.v)(s(), !0)
-				}, Y = Object(n.a)(H.c), G = (t, e, s, o) => async (n, r, d) => {
+				}, Y = Object(n.a)(q.c), G = (t, e, s, o) => async (n, r, d) => {
 					const i = Object(c.a)(t, e, s, o),
 						a = r();
 					e = e || Object(R.p)(a, {
@@ -199,7 +199,7 @@
 						const t = e && Object(D.H)(d(), {
 							postId: e
 						});
-						t && t.numComments && t.numComments > q.MIN_NUM_COMMENTS_TO_TRUNCATE && (h.truncate = q.NUM_COMMENTS_TRUNCATE)
+						t && t.numComments && t.numComments > H.MIN_NUM_COMMENTS_TO_TRUNCATE && (h.truncate = H.NUM_COMMENTS_TRUNCATE)
 					}
 					let _, E = await Object(w.a)("comments", () => T(p.apiContext(), t, e, s, h));
 					if (r(Object(m.n)(E.status)), E.ok && (e = e || E.body.collections[t].primaryPostId)) {
@@ -227,7 +227,7 @@
 					if (E.ok) {
 						if (!e) return;
 						const t = Object(M.a)(E.body, e, O);
-						r(Object(q.commentsPageLoaded)({
+						r(Object(H.commentsPageLoaded)({
 							commentMode: x,
 							key: u,
 							postId: e,
@@ -330,4 +330,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.fe722e10cbe89b71e744.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.048eae91dc06392dd169.js.map

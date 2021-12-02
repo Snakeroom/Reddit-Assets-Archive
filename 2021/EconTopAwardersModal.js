@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.ed400d1819d726e07fc1.js
-// Retrieved at 12/1/2021, 6:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.43d211d033afe06b6be4.js
+// Retrieved at 12/2/2021, 10:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconTopAwardersModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, r) {
@@ -412,8 +412,8 @@
 					banned: X
 				}
 			});
-			const Q = Object(o.a)(N.o),
-				J = Object(o.a)(N.n),
+			const J = Object(o.a)(N.o),
+				Q = Object(o.a)(N.n),
 				V = Object(o.a)(N.m),
 				$ = (e, t = {}) => async (r, a, {
 					apiContext: n
@@ -423,13 +423,13 @@
 						d = Object(_.d)(e, o),
 						c = s.features.banned.fetchedTokens[d];
 					if (s.features.banned.api.pending[d] || c) return;
-					r(Q({
+					r(J({
 						subredditId: e,
 						fetchedToken: o
 					}));
 					const i = s.subreddits.models[e].name,
 						l = await h(n(), i, t);
-					l.ok ? r(J({
+					l.ok ? r(Q({
 						...l.body,
 						fetchedToken: o
 					})) : r(V({
@@ -526,10 +526,10 @@
 				}, ce = (e, t) => async (r, a) => {
 					const n = a();
 					await Promise.all([(async () => {
-						if (!Object(g.b)(m.a.BAN_USER)(n) && !Object(C.N)(n, {
+						if (!Object(g.b)(m.a.BAN_USER)(n) && !Object(C.M)(n, {
 								subredditId: e
 							})) {
-							const t = Object(C.Q)(n, {
+							const t = Object(C.P)(n, {
 								subredditId: e
 							});
 							await r(Object(i.o)(t.name))
@@ -913,8 +913,8 @@
 						className: Y.a.coinIcon
 					}), r.score))
 				},
-				Q = r("./src/reddit/components/Econ/TopAwardersModal/Winners/index.m.less"),
-				J = r.n(Q);
+				J = r("./src/reddit/components/Econ/TopAwardersModal/Winners/index.m.less"),
+				Q = r.n(J);
 			var V = function(e) {
 					const {
 						awarders: t,
@@ -924,12 +924,12 @@
 					if (!t.length) return null;
 					const s = [t[0], t[1] || void 0, t[2] || void 0];
 					return n.a.createElement("div", {
-						className: Object(c.a)(r, J.a.container, {
-							[J.a.flexContainer]: s.length < 3
+						className: Object(c.a)(r, Q.a.container, {
+							[Q.a.flexContainer]: s.length < 3
 						})
 					}, s.map((e, t) => n.a.createElement(X, {
 						showScore: a,
-						className: J.a.winner,
+						className: Q.a.winner,
 						awarder: e,
 						rank: t + 1,
 						key: t
@@ -1240,8 +1240,8 @@
 				Y = r("./src/reddit/components/Hovercards/AuthorHovercard/ModActions.m.less"),
 				X = r.n(Y);
 			const {
-				fbt: Q
-			} = r("./node_modules/fbt/lib/FbtPublic.js"), J = Object(o.c)({
+				fbt: J
+			} = r("./node_modules/fbt/lib/FbtPublic.js"), Q = Object(o.c)({
 				hasModMailPermissions: Object(m.b)(Z.c.mail),
 				isUserBanned: (e, t) => !!Object(q.b)(e, {
 					subredditId: t.subredditId,
@@ -1277,7 +1277,7 @@
 						name: "ban",
 						isFilled: !0,
 						className: X.a.icon
-					}), Q._("Unban User", null, {
+					}), J._("Unban User", null, {
 						hk: "1aASyW"
 					})) : n.a.createElement(z.a, {
 						role: "button",
@@ -1287,7 +1287,7 @@
 					}, n.a.createElement(G.a, {
 						name: "ban",
 						className: X.a.icon
-					}), Q._("Ban User", null, {
+					}), J._("Ban User", null, {
 						hk: "3OhuLx"
 					})), r && n.a.createElement(z.a, {
 						role: "button",
@@ -1297,12 +1297,12 @@
 					}, n.a.createElement(G.a, {
 						name: "mod_mute",
 						className: X.a.icon
-					}), Q._("Mute User", null, {
+					}), J._("Mute User", null, {
 						hk: "3MCujH"
 					})))
 				}
 			}
-			var $ = Object(s.b)(J, (e, {
+			var $ = Object(s.b)(Q, (e, {
 					username: t,
 					subredditId: r,
 					contextId: a
@@ -1591,7 +1591,7 @@
 					}) => t ? Object(x.d)(e, {
 						subredditId: t
 					}) : void 0,
-					userIsBanned: (e, t) => !!Object(b.m)(t) && Object(b.bb)(e, t),
+					userIsBanned: (e, t) => !!Object(b.l)(t) && Object(b.ab)(e, t),
 					userProfileStyles: (e, t) => Object(p.m)(e, Object(u.m)(e, t.userName)),
 					acceptChats: (e, t) => {
 						const r = Object(u.h)(e, {
@@ -2531,4 +2531,4 @@
 		"./src/reddit/icons/fonts/commonStyles.m.less": function(e, t, r) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.ed400d1819d726e07fc1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.43d211d033afe06b6be4.js.map

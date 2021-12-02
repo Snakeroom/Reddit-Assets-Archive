@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.fadd720715596e3f0338.js
-// Retrieved at 12/1/2021, 6:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.3a79b68ea85789cc5089.js
+// Retrieved at 12/2/2021, 10:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, r) {
@@ -780,7 +780,7 @@
 						thingId: r,
 						correlationId: t
 					})), n(Object(l.h)(i.a.GOLD_GILD_MODAL));
-					const f = Object(p.G)(a, {
+					const f = Object(p.F)(a, {
 						thingId: r
 					});
 					let h = null;
@@ -1380,7 +1380,7 @@
 						subreddit: r
 					} = e, {
 						isSponsored: n
-					} = t, o = Object(G.a)(), i = Object(U.a)(m.kd) === m.pd.Enabled;
+					} = t, o = Object(G.a)(), i = Object(U.a)(m.id) === m.nd.Enabled;
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return s.a.createElement(K, {
 						nowrap: e.nowrap
 					}, s.a.createElement(Z, e));
@@ -3579,4 +3579,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.fadd720715596e3f0338.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.3a79b68ea85789cc5089.js.map

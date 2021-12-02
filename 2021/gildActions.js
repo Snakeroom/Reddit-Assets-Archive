@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/gildActions.31edd3c314f9c9df4a78.js
-// Retrieved at 11/4/2021, 4:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/gildActions.4abe7d066039f7cd4cc1.js
+// Retrieved at 12/2/2021, 10:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["gildActions"], {
 		"./src/reddit/actions/gold/econPurchase.ts": function(e, t, s) {
@@ -96,8 +96,8 @@
 				I = s("./src/reddit/selectors/gild.ts"),
 				A = s("./src/reddit/selectors/gold/awardIcon.ts"),
 				x = s("./src/reddit/selectors/gold/econPurchase.ts"),
-				G = s("./src/reddit/selectors/gold/purchaseCatalog.ts"),
-				C = s("./src/reddit/selectors/posts.ts"),
+				C = s("./src/reddit/selectors/gold/purchaseCatalog.ts"),
+				G = s("./src/reddit/selectors/posts.ts"),
 				P = s("./src/reddit/selectors/subreddit.ts"),
 				R = s("./src/reddit/selectors/user.ts"),
 				S = s("./src/lib/makeGqlRequest/index.ts"),
@@ -116,10 +116,10 @@
 				}, {
 					query: s ? {} : Object(L.b)()
 				});
-			var N = s("./src/reddit/helpers/awards/getAwardItemId.ts"),
-				E = s("./src/reddit/helpers/awards/message.ts"),
-				M = s("./src/reddit/helpers/correlationIdTracker.ts"),
-				F = s("./src/reddit/helpers/isPost.ts"),
+			var F = s("./src/reddit/helpers/awards/getAwardItemId.ts"),
+				N = s("./src/reddit/helpers/awards/message.ts"),
+				E = s("./src/reddit/helpers/correlationIdTracker.ts"),
+				M = s("./src/reddit/helpers/isPost.ts"),
 				Y = s("./src/reddit/helpers/trackers/gild.ts"),
 				Q = s("./src/telemetry/index.ts"),
 				W = s("./src/reddit/endpoints/profile/info.ts"),
@@ -142,10 +142,10 @@
 								gildingTypeId: n.selectedAward.id,
 								isAnonymous: n.isAnonymous,
 								isGildFunded: !1,
-								message: Object(E.d)(n.message, n.selectedAward, i),
+								message: Object(N.d)(n.message, n.selectedAward, i),
 								nodeId: e
 							},
-							a = Object(F.a)(e) ? K : q,
+							a = Object(M.a)(e) ? K : q,
 							c = await a(d(), {
 								input: t
 							}, o);
@@ -161,7 +161,7 @@
 								{
 									gild: r
 								} = t.data,
-								a = Object(F.a)(e) ? c.body.data.gild.postInfo : c.body.data.gild.comment,
+								a = Object(M.a)(e) ? c.body.data.gild.postInfo : c.body.data.gild.comment,
 								{
 									awardings: d,
 									treatmentTags: o
@@ -190,7 +190,7 @@
 							});
 						await s(te(t))
 					} finally {
-						Object(M.b)(M.a.GildingFlow)
+						Object(E.b)(E.a.GildingFlow)
 					}
 				}, V = Object(a.a)(H.u), $ = Object(a.a)(H.q), X = () => async (e, t) => {
 					e($()), window.setTimeout(() => {
@@ -205,13 +205,13 @@
 				}, se = Object(a.a)(H.s), re = (e, t) => {
 					const {
 						id: s
-					} = t, r = Object(F.a)(s) ? Object(C.H)(e, {
+					} = t, r = Object(M.a)(s) ? Object(G.H)(e, {
 						postId: s
 					}) : Object(k.b)(e, {
 						commentId: s
 					}), a = Object(R.k)(e), d = e.gild, {
 						isAnonymous: n
-					} = d, o = !n && a && (a.username || a.displayText) ? a.username || a.displayText : void 0, i = r ? r.author : void 0, c = Object(P.G)(e, {
+					} = d, o = !n && a && (a.username || a.displayText) ? a.username || a.displayText : void 0, i = r ? r.author : void 0, c = Object(P.F)(e, {
 						thingId: s
 					});
 					return se({
@@ -229,7 +229,7 @@
 						h = Object(_.a)(a, u),
 						w = e.awardKarmaReceived,
 						f = Object(R.k)(a),
-						k = Object(I.b)(a) || Object(M.d)(M.a.GildingFlow, !1);
+						k = Object(I.b)(a) || Object(E.d)(E.a.GildingFlow, !1);
 					if (Object(I.g)(a)) {
 						const e = "success.gild",
 							t = {},
@@ -244,10 +244,10 @@
 						})
 					}
 					if (h.awardType === b.f.Moderator && void 0 === e.subredditCoins) {
-						const t = Object(P.G)(a, {
+						const t = Object(P.F)(a, {
 								thingId: m
 							}),
-							s = t && Object(P.y)(a, {
+							s = t && Object(P.x)(a, {
 								subredditName: t.name
 							});
 						s && (e.subredditCoins = s - h.coinPrice)
@@ -272,7 +272,7 @@
 							id: s
 						}))
 					});
-					const S = Object(F.a)(m) ? r.fbt._("Success! You have given this post the {awardName} Award", [r.fbt._param("awardName", h.name)], {
+					const S = Object(M.a)(m) ? r.fbt._("Success! You have given this post the {awardName} Award", [r.fbt._param("awardName", h.name)], {
 							hk: "1Ndi4Z"
 						}) : r.fbt._("Success! You have given this comment the {awardName} Award", [r.fbt._param("awardName", h.name)], {
 							hk: "2sIK9Y"
@@ -297,7 +297,7 @@
 							awarderKarmaReceived: w
 						}) : S
 					})), setTimeout(() => {
-						const e = Object(N.a)(u, m),
+						const e = Object(F.a)(u, m),
 							t = document.getElementById(e);
 						t && t.dispatchEvent(new Event("awardAdded"))
 					}, 10);
@@ -305,11 +305,11 @@
 					await t(Object(i.b)(k));
 					const K = Date.now() - D;
 					if (L > 0) {
-						const e = Object(G.f)(s()).filter(e => j.a.has(e.dealInfo.type));
+						const e = Object(C.f)(s()).filter(e => j.a.has(e.dealInfo.type));
 						if (e.length) {
 							const s = Math.max(900 - K, 10),
 								r = Math.max(300 - K, 10),
-								d = Object(F.a)(m) && Object(O.p)(Object(C.H)(a, {
+								d = Object(M.a)(m) && Object(O.p)(Object(G.H)(a, {
 									postId: m
 								}));
 							setTimeout(() => t(Object(o.e)({
@@ -318,7 +318,7 @@
 							})), d ? s : r)
 						}
 					}
-					const q = Object(P.G)(a, {
+					const q = Object(P.F)(a, {
 						thingId: m
 					});
 					if (q && Object(x.a)(a, {
@@ -328,7 +328,7 @@
 						})), 0 === L && q) {
 						t(Object(n.a)(q.id, m, void 0, !0));
 						const e = 399,
-							r = Object(G.d)(s()).reduce((t, s) => {
+							r = Object(C.d)(s()).reduce((t, s) => {
 								const r = Math.abs(s.pennies - e);
 								return (!t || r < t.priceDelta) && (t = {
 									packageId: s.mobileId,
@@ -493,4 +493,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/gildActions.31edd3c314f9c9df4a78.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/gildActions.4abe7d066039f7cd4cc1.js.map

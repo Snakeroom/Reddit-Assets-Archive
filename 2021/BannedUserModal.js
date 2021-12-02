@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/BannedUserModal.3c7f8db0913ff840f0f6.js
-// Retrieved at 11/11/2021, 4:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/BannedUserModal.2bb2203db882e962afed.js
+// Retrieved at 12/2/2021, 10:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["BannedUserModal"], {
 		"./src/reddit/actions/inContextModeration.ts": function(e, t, n) {
@@ -382,10 +382,10 @@
 				}, ie = (e, t) => async (n, s) => {
 					const r = s();
 					await Promise.all([(async () => {
-						if (!Object(w.b)(u.a.BAN_USER)(r) && !Object(k.N)(r, {
+						if (!Object(w.b)(u.a.BAN_USER)(r) && !Object(k.M)(r, {
 								subredditId: e
 							})) {
-							const t = Object(k.Q)(r, {
+							const t = Object(k.P)(r, {
 								subredditId: e
 							});
 							await n(Object(l.o)(t.name))
@@ -484,7 +484,7 @@
 					hk: "2To19l"
 				})],
 				f = Object(d.c)({
-					subredditRules: m.P
+					subredditRules: m.O
 				}),
 				x = Object(o.b)(f);
 			class _ extends a.a.Component {
@@ -1138,4 +1138,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BannedUserModal.3c7f8db0913ff840f0f6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BannedUserModal.2bb2203db882e962afed.js.map

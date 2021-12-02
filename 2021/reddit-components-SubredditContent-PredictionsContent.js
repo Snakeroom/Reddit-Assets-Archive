@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.ec06a633fe1f970659ae.js
-// Retrieved at 12/1/2021, 6:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.b51b23a7b7f0c234b3e7.js
+// Retrieved at 12/2/2021, 10:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SubredditContent-PredictionsContent"], {
 		"./src/reddit/components/Econ/Prediction/hooks/useTournamentsQuery.ts": function(e, t, n) {
@@ -16,7 +16,7 @@
 
 			function d(e) {
 				const t = Object(c.d)(),
-					n = Object(c.e)(t => Object(a.Q)(t, {
+					n = Object(c.e)(t => Object(a.P)(t, {
 						subredditId: e
 					})),
 					o = Object(c.e)(t => Object(i.h)(t, {
@@ -191,7 +191,7 @@
 				const t = Object(O.a)(),
 					[n, r] = function(e, t) {
 						const n = Object(s.d)(),
-							o = Object(s.e)(t => Object(P.S)(t, e)),
+							o = Object(s.e)(t => Object(P.R)(t, e)),
 							r = o ? Boolean(o[t]) : void 0;
 						return [r, (o = !0) => {
 							const c = {
@@ -579,4 +579,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.ec06a633fe1f970659ae.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.b51b23a7b7f0c234b3e7.js.map

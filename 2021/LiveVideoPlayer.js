@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.a2889a454a381ad3005a.js
-// Retrieved at 11/11/2021, 4:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.5aca5a0f079e805935f3.js
+// Retrieved at 12/2/2021, 10:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["LiveVideoPlayer"], {
 		"./node_modules/lodash/isUndefined.js": function(e, t) {
@@ -49,7 +49,7 @@
 			})), s.d(t, "a", (function() {
 				return A
 			})), s.d(t, "b", (function() {
-				return H
+				return B
 			}));
 			var i = s("./node_modules/fbt/lib/FbtPublic.js"),
 				n = s("./src/lib/constants/index.ts"),
@@ -136,7 +136,7 @@
 					apiContext: h
 				}) => {
 					let m = e.map(e => e.type === u.a.SUBREDDIT ? {
-						id: Object(w.B)(l(), e.name),
+						id: Object(w.A)(l(), e.name),
 						name: e.name,
 						type: e.type
 					} : {
@@ -213,7 +213,7 @@
 					apiContext: i
 				}) => {
 					const n = s(),
-						a = Object(w.I)(n, {
+						a = Object(w.H)(n, {
 							identifier: e
 						});
 					if (!a) throw new Error(`actions.subscription -- No subreddit or profile found with id ${e.id}`);
@@ -235,7 +235,7 @@
 							type: e.type,
 							name: a.name
 						},
-						f = () => Object(w.cb)(s(), {
+						f = () => Object(w.bb)(s(), {
 							identifier: b
 						});
 					(f() || (await t(T([b], !0)), f())) && ((await Object(v.b)(i(), o, m)).ok || (t(k({
@@ -277,7 +277,7 @@
 						multiredditPath: e,
 						multiredditsModelsState: a
 					})), o())
-				}, B = Object(a.a)(l.e), H = e => async (t, s, {
+				}, H = Object(a.a)(l.e), B = e => async (t, s, {
 					apiContext: a
 				}) => {
 					const o = s(),
@@ -298,7 +298,7 @@
 						l = r[e];
 					if (!l) return void d();
 					const u = !l.isFollowed;
-					t(B({
+					t(H({
 						follow: u,
 						multiredditPath: e,
 						multiredditsModelsState: r
@@ -311,7 +311,7 @@
 							api_type: "json"
 						},
 						type: "json"
-					}))(a(), e, u)).ok || (t(B({
+					}))(a(), e, u)).ok || (t(H({
 						follow: !u,
 						multiredditPath: e,
 						multiredditsModelsState: r
@@ -384,7 +384,7 @@
 		"./src/reddit/components/PublicAccessNetwork/LiveVideoPlayer/index.tsx": function(e, t, s) {
 			"use strict";
 			s.r(t), s.d(t, "LiveVideoPlayer", (function() {
-				return H
+				return B
 			})), s.d(t, "Overlay", (function() {
 				return U
 			}));
@@ -432,13 +432,13 @@
 				currentStream: (e, {
 					postId: t
 				}) => Object(j.l)(e, t)
-			}), B = Object(r.b)(A, (e, t) => ({
+			}), H = Object(r.b)(A, (e, t) => ({
 				setMutedInFeed: t => e(Object(C.G)(t)),
 				setVideoVolume: t => e(Object(m.h)(t)),
 				onHeartbeatSubscribe: t => e(p.a.subscribeHeartbeat(t)),
 				onStreamByIdRequested: async t => await e(Object(v.d)(t))
 			}));
-			class H extends a.Component {
+			class B extends a.Component {
 				constructor(e) {
 					super(e), this.sleepTimeout = null, this.videoRef = o.a.createRef(), this._videoSessionManager = null, this.handleHlsRefChange = e => {
 						var t;
@@ -812,7 +812,7 @@
 					})) : c && (null === (a = this.videoSessionManager) || void 0 === a || a.pauseSession())
 				}
 			}
-			H.contextType = S.a, t.default = B(Object(L.c)(H));
+			B.contextType = S.a, t.default = H(Object(L.c)(B));
 			const U = ({
 				children: e
 			}) => o.a.createElement("div", {
@@ -1115,4 +1115,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer.a2889a454a381ad3005a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer.5aca5a0f079e805935f3.js.map

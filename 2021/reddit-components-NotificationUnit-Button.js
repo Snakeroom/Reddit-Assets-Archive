@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.c88a58e0a3e28805fab8.js
-// Retrieved at 12/1/2021, 6:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.bd77f12094ec750c6c35.js
+// Retrieved at 12/2/2021, 10:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-NotificationUnit-Button"], {
 		"./src/reddit/actions/comment/authoring.ts": function(e, t, n) {
@@ -143,8 +143,8 @@
 				W = n("./src/reddit/models/RichTextJson/index.ts"),
 				B = n("./src/reddit/models/RichTextJson/nodeMakers.ts"),
 				H = n("./src/reddit/models/Toast/index.ts"),
-				V = n("./src/reddit/selectors/comments.ts"),
-				q = n("./src/reddit/selectors/commentSelector.ts"),
+				q = n("./src/reddit/selectors/comments.ts"),
+				V = n("./src/reddit/selectors/commentSelector.ts"),
 				$ = n("./src/reddit/selectors/platform.ts"),
 				Q = n("./src/reddit/selectors/posts.ts"),
 				Y = n("./src/reddit/selectors/user.ts"),
@@ -202,7 +202,7 @@
 						let o;
 						o = g.body, u(ne({
 							...o,
-							headCommentId: Object(V.w)(y, {
+							headCommentId: Object(q.w)(y, {
 								commentsPageKey: t
 							}),
 							commentsPageKey: t,
@@ -281,7 +281,7 @@
 					}));
 					else {
 						if (j.error && j.error.type === r.Jb) {
-							const e = Object(q.b)(l, {
+							const e = Object(V.b)(l, {
 								commentId: s
 							});
 							if (!e) return;
@@ -329,7 +329,7 @@
 						m = Object(c.a)(G.c.replyToComment, t);
 					if (!Object(Y.K)(r())) return o(Object(d.k)()), void o(Object(a.k)({
 						actionSource: a.a.Reply,
-						redirectUrl: Object(V.m)(r(), {
+						redirectUrl: Object(q.m)(r(), {
 							commentId: t
 						})
 					}));
@@ -597,7 +597,7 @@
 			})), n.d(t, "p", (function() {
 				return H
 			})), n.d(t, "d", (function() {
-				return V
+				return q
 			})), n.d(t, "a", (function() {
 				return $
 			})), n.d(t, "b", (function() {
@@ -766,7 +766,7 @@
 						commentId: e,
 						commentsPageKey: t
 					}))
-				}, V = ({
+				}, q = ({
 					commentLink: e,
 					commentsPageKey: t,
 					lineDepth: n,
@@ -783,7 +783,7 @@
 						commentsPageKey: t,
 						isCollapsed: d
 					})), 0 === n && o(i, !0), Object(u.d)()
-				}, q = Object(c.a)(k.r), $ = e => t => t(q({
+				}, V = Object(c.a)(k.r), $ = e => t => t(V({
 					draftKey: e
 				})), Q = Object(c.a)(k.a), Y = Object(c.a)(k.E), z = Object(c.a)(k.b), X = Object(c.a)(k.u)
 		},
@@ -1315,7 +1315,7 @@
 								experimentName: s.F,
 								expEventOverride: t
 							});
-							return !!(Object(s.vf)(n) ? void 0 : n)
+							return !!(Object(s.rf)(n) ? void 0 : n)
 						})(n)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -2045,9 +2045,9 @@
 			})), n.d(t, "F", (function() {
 				return H
 			})), n.d(t, "B", (function() {
-				return V
-			})), n.d(t, "H", (function() {
 				return q
+			})), n.d(t, "H", (function() {
+				return V
 			})), n.d(t, "p", (function() {
 				return $
 			})), n.d(t, "K", (function() {
@@ -2255,16 +2255,16 @@
 					const n = t ? e.features.comments.submit.error[t] : void 0;
 					return n && n.fields ? n.fields.map(e => e.msg) : void 0
 				},
-				V = (e, {
+				q = (e, {
 					commentId: t
 				}) => !!t && e.features.comments.submit.pending[t],
-				q = (e, {
+				V = (e, {
 					commentId: t
 				}) => !!t && e.features.comments.models[t].sendReplies,
 				$ = e => e.features.comments.visitHighlightFilter,
 				Q = (e, t) => {
 					const n = Object(m.b)(e, t);
-					if (n) return Object(a.V)(e, n)
+					if (n) return Object(a.U)(e, n)
 				},
 				Y = (e, {
 					commentId: t
@@ -2318,4 +2318,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.c88a58e0a3e28805fab8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.bd77f12094ec750c6c35.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MultiredditEditModal.e881eea654fc4fdc9dac.js
-// Retrieved at 12/1/2021, 11:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MultiredditEditModal.09c462bfa88c911c10c4.js
+// Retrieved at 12/2/2021, 10:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MultiredditEditModal"], {
 		"./src/reddit/actions/multireddit/index.ts": function(e, t, i) {
@@ -15,17 +15,17 @@
 			})), i.d(t, "myMultiredditsPending", (function() {
 				return W
 			})), i.d(t, "myMultiredditsReceived", (function() {
-				return U
-			})), i.d(t, "myMultiredditsRequested", (function() {
 				return A
+			})), i.d(t, "myMultiredditsRequested", (function() {
+				return U
 			})), i.d(t, "createFailure", (function() {
 				return K
 			})), i.d(t, "createPending", (function() {
 				return z
 			})), i.d(t, "createSuccess", (function() {
-				return H
-			})), i.d(t, "createRequested", (function() {
 				return Q
+			})), i.d(t, "createRequested", (function() {
+				return H
 			})), i.d(t, "reloadCurrentMultiredditFeedRequested", (function() {
 				return J
 			})), i.d(t, "duplicateFailure", (function() {
@@ -213,7 +213,7 @@
 						...w.body,
 						...Object(v.a)(l, b, T)
 					}))
-				}, W = Object(l.a)(M.t), U = Object(l.a)(M.u), A = (e, t = !1) => async (i, r, {
+				}, W = Object(l.a)(M.t), A = Object(l.a)(M.u), U = (e, t = !1) => async (i, r, {
 					apiContext: s,
 					gqlContext: n
 				}) => {
@@ -230,12 +230,12 @@
 					if (a.ok) {
 						const e = a.body.data.identity.allMultireddits.edges.map(e => e.node),
 							t = Object(w.b)(e);
-						i(U({
+						i(A({
 							...t,
 							multiredditsModelsState: d.multireddits.models
 						}))
 					}
-				}, K = Object(l.a)(M.e), z = Object(l.a)(M.f), H = Object(l.a)(M.g), Q = ({
+				}, K = Object(l.a)(M.e), z = Object(l.a)(M.f), Q = Object(l.a)(M.g), H = ({
 					description: e,
 					displayName: t,
 					shouldNavigate: i
@@ -262,7 +262,7 @@
 						const {
 							id: e
 						} = c;
-						if (await s(H({
+						if (await s(Q({
 								multireddit: T(m.body.data),
 								multiredditsModelsState: l.multireddits.models,
 								userId: e
@@ -380,7 +380,7 @@
 							method: a.jb.PUT
 						}))(d(), O, b);
 					if (j.ok) {
-						const n = Object(P.H)(l, {
+						const n = Object(P.G)(l, {
 								identifier: t
 							}) || e && e.id || "",
 							d = i.map(e => Object(N.h)(m, e));
@@ -529,7 +529,7 @@
 					if (!l || !l.subredditIds) return;
 					r(fe());
 					const c = i && i.reduce((e, t) => {
-							const i = Object(P.B)(d, t) || Object(P.C)(d, t);
+							const i = Object(P.A)(d, t) || Object(P.B)(d, t);
 							return i ? [...e, i] : e
 						}, []),
 						u = await ((e, t) => Object(O.a)(e, {
@@ -1520,4 +1520,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MultiredditEditModal.e881eea654fc4fdc9dac.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MultiredditEditModal.09c462bfa88c911c10c4.js.map

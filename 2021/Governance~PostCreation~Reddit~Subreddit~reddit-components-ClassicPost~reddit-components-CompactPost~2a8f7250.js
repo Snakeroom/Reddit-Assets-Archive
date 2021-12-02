@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.59a38c950890da004245.js
-// Retrieved at 12/1/2021, 6:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.2a663f38325a371d31b8.js
+// Retrieved at 12/2/2021, 10:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250"], {
 		"./src/lib/humanizeDate/index.ts": function(e, t, n) {
@@ -182,7 +182,7 @@
 					apiContext: m
 				}) => {
 					let p = e.map(e => e.type === u.a.SUBREDDIT ? {
-						id: Object(k.B)(d(), e.name),
+						id: Object(k.A)(d(), e.name),
 						name: e.name,
 						type: e.type
 					} : {
@@ -259,7 +259,7 @@
 					apiContext: r
 				}) => {
 					const s = n(),
-						o = Object(k.I)(s, {
+						o = Object(k.H)(s, {
 							identifier: e
 						});
 					if (!o) throw new Error(`actions.subscription -- No subreddit or profile found with id ${e.id}`);
@@ -281,7 +281,7 @@
 							type: e.type,
 							name: o.name
 						},
-						y = () => Object(k.cb)(n(), {
+						y = () => Object(k.bb)(n(), {
 							identifier: x
 						});
 					(y() || (await t(P([x], !0)), y())) && ((await Object(f.b)(r(), i, p)).ok || (t(L({
@@ -494,9 +494,9 @@
 		"./src/reddit/components/Flair/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "c", (function() {
-				return W
-			})), n.d(t, "a", (function() {
 				return H
+			})), n.d(t, "a", (function() {
+				return W
 			})), n.d(t, "b", (function() {
 				return q
 			}));
@@ -614,7 +614,7 @@
 						ref: this.setTooltipTargetRef,
 						style: {
 							backgroundColor: this.props.backgroundColor || Object(T.a)(this.props).flair,
-							color: `${W(this.props)}`
+							color: `${H(this.props)}`
 						}
 					}, this.props.text, this.props.isSelected && c.a.createElement(w, {
 						to: "./",
@@ -673,7 +673,7 @@
 						style: {
 							...s,
 							backgroundColor: e.backgroundColor || Object(T.a)(e).flair,
-							color: `${W(e)}`
+							color: `${H(e)}`
 						}
 					}, r, e.isSelected && c.a.createElement(w, {
 						to: "./",
@@ -696,8 +696,8 @@
 						to: e.to
 					})
 				}),
-				W = e => !e.textColor || e.textColor && !e.backgroundColor ? Object(T.a)(e).postFlairText : "transparent" === e.backgroundColor ? Object(k.a)(Object(T.a)(e).post, O.b.black, O.b.white) : e.textColor === _.e.Dark ? O.b.black : O.b.white,
-				H = p.a.wrapped(M, "TextFlair", S.a),
+				H = e => !e.textColor || e.textColor && !e.backgroundColor ? Object(T.a)(e).postFlairText : "transparent" === e.backgroundColor ? Object(k.a)(Object(T.a)(e).post, O.b.black, O.b.white) : e.textColor === _.e.Dark ? O.b.black : O.b.white,
+				W = p.a.wrapped(M, "TextFlair", S.a),
 				K = p.a.wrapped(U, "RichTextFlair", S.a),
 				B = e => {
 					switch (e.type) {
@@ -761,7 +761,7 @@
 							to: f
 						});
 					case _.f.Text:
-						return n || !s.text ? null : c.a.createElement(H, {
+						return n || !s.text ? null : c.a.createElement(W, {
 							backgroundColor: s.backgroundColor,
 							className: h,
 							isFlairFilter: o,
@@ -776,7 +776,7 @@
 							to: f
 						});
 					case _.f.Meta:
-						return c.a.createElement(H, {
+						return c.a.createElement(W, {
 							backgroundColor: s.backgroundColor,
 							className: t,
 							isFlairFilter: o,
@@ -796,7 +796,7 @@
 					case _.f.Quarantined:
 						return null;
 					case _.f.Oc:
-						return c.a.createElement(H, {
+						return c.a.createElement(W, {
 							backgroundColor: O.b.alienblue,
 							text: s.text,
 							textColor: _.e.Light,
@@ -805,7 +805,7 @@
 							})
 						});
 					default:
-						return s.text ? c.a.createElement(H, {
+						return s.text ? c.a.createElement(W, {
 							backgroundColor: s.backgroundColor,
 							className: h,
 							isFlairFilter: o,
@@ -922,7 +922,7 @@
 					}) => Object(y.x)(e, t),
 					subredditName: (e, {
 						post: t
-					}) => Object(g.Q)(e, {
+					}) => Object(g.P)(e, {
 						subredditId: t.belongsTo.id
 					}).name
 				})),
@@ -954,7 +954,7 @@
 				subredditName: g,
 				titleFlair: O
 			}) => {
-				const C = Object(u.b)(),
+				const C = Object(u.a)(),
 					v = n === h.b.Left,
 					_ = O || k(a),
 					T = [];
@@ -1240,8 +1240,6 @@
 		"./src/reddit/components/SearchResultsContent/searchResultsPageTreatment/searchIgnoreClickContext.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return s
-			})), n.d(t, "b", (function() {
 				return o
 			}));
 			var r = n("./node_modules/react/index.js");
@@ -1428,7 +1426,7 @@
 						placeholderImage: y,
 						redditStyle: f,
 						theme: C
-					}), E = M(e), N = d ? v.SourceElement.PostImage : v.SourceElement.ListingPostImage, F = W(b, t, I, _, O, C, E, l, x, h, f, u, m, p, s), w = Object(j.D)(b);
+					}), E = M(e), N = d ? v.SourceElement.PostImage : v.SourceElement.ListingPostImage, F = H(b, t, I, _, O, C, E, l, x, h, f, u, m, p, s), w = Object(j.D)(b);
 					return Object(r.a)(w) && !h && w.indexOf("redditmedia") < 0 ? o.a.createElement("div", {
 						className: Object(i.a)(T.a.container, k ? T.a.usePreview : "", n)
 					}, o.a.createElement(g.b, {
@@ -1456,7 +1454,7 @@
 					return r && s ? s.url : t.isSponsored && s && "default" === i.url ? s.url : U(o) ? o.scrubberThumbSource : i.url
 				},
 				U = e => !!e && e.type === j.o.LIVEVIDEO,
-				W = (e, t, n, s, a, c, l, u, m, p, b, f, h, x, y) => {
+				H = (e, t, n, s, a, c, l, u, m, p, b, f, h, x, y) => {
 					const g = e.source && !e.isSponsored || !1;
 					if (Object(r.a)(l)) {
 						const n = U(e.media),
@@ -1628,7 +1626,7 @@
 								experimentName: o.F,
 								expEventOverride: t
 							});
-							return !!(Object(o.vf)(n) ? void 0 : n)
+							return !!(Object(o.rf)(n) ? void 0 : n)
 						})(n)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -2340,9 +2338,9 @@
 			})), n.d(t, "r", (function() {
 				return U
 			})), n.d(t, "e", (function() {
-				return W
-			})), n.d(t, "v", (function() {
 				return H
+			})), n.d(t, "v", (function() {
+				return W
 			})), n.d(t, "J", (function() {
 				return K
 			})), n.d(t, "f", (function() {
@@ -2530,7 +2528,7 @@
 				U = (e, {
 					id: t
 				}) => e.continueThreads.models[t],
-				W = (e, {
+				H = (e, {
 					commentId: t
 				}) => {
 					const n = t ? e.features.comments.models[t] : void 0;
@@ -2538,7 +2536,7 @@
 					const r = e.authorFlair.models[n.subredditId];
 					return r ? r[n.author] : null
 				},
-				H = (e, {
+				W = (e, {
 					draftKey: t
 				}) => !!e.features.comments.submit.error[t],
 				K = (e, {
@@ -2571,7 +2569,7 @@
 				J = e => e.features.comments.visitHighlightFilter,
 				V = (e, t) => {
 					const n = Object(l.b)(e, t);
-					if (n) return Object(d.V)(e, n)
+					if (n) return Object(d.U)(e, n)
 				},
 				X = (e, {
 					commentId: t
@@ -2592,4 +2590,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.59a38c950890da004245.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.2a663f38325a371d31b8.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-Content-ModQueue.9cb7c7329c0c74006ef3.js
-// Retrieved at 11/11/2021, 4:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-Content-ModQueue.1aae36dc8a995c8f3d3f.js
+// Retrieved at 12/2/2021, 10:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-Content-ModQueue"], {
 		"./src/reddit/components/Comments/CompactUnthreadedComment/index.m.less": function(e, t, s) {
@@ -317,7 +317,7 @@
 					}) : null,
 					subreddit: (e, {
 						subredditName: t
-					}) => t ? Object(C.w)(e, {
+					}) => t ? Object(C.v)(e, {
 						subredditName: t
 					}) : null
 				}),
@@ -977,7 +977,7 @@
 					modQueueListingItems: Ee.c,
 					origin: ke.j,
 					selectedItems: Ee.f,
-					subredditId: (e, t) => t.subredditName ? Object(ye.B)(e, t.subredditName) : null
+					subredditId: (e, t) => t.subredditName ? Object(ye.A)(e, t.subredditName) : null
 				}),
 				Lt = Object(d.b)(vt, e => ({
 					addSelectedItems: t => e(Object(u.a)({
@@ -1355,4 +1355,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-Content-ModQueue.9cb7c7329c0c74006ef3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-Content-ModQueue.1aae36dc8a995c8f3d3f.js.map

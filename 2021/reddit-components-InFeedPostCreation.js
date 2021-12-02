@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.f07147a5dd97bc905eb1.js
-// Retrieved at 12/1/2021, 6:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.f1df42f155061f6307a2.js
+// Retrieved at 12/2/2021, 10:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-InFeedPostCreation"], {
 		"./src/reddit/components/InFeedPostCreation/index.m.less": function(e, t, n) {
@@ -40,12 +40,12 @@
 				O = n("./src/reddit/selectors/telemetry.ts"),
 				U = n("./src/reddit/selectors/user.ts"),
 				N = n("./src/reddit/components/InFeedPostCreation/index.m.less"),
-				C = n.n(N);
-			const P = l.a.wrapped(b.a, "CurrentUserIcon", C.a);
-			var j;
+				j = n.n(N);
+			const C = l.a.wrapped(b.a, "CurrentUserIcon", j.a);
+			var P;
 			! function(e) {
 				e.Media = "post-composer-du-media", e.Link = "post-composer-du-link"
-			}(j || (j = {}));
+			}(P || (P = {}));
 			const k = e => {
 					switch (e) {
 						case d.Vb.MEDIA:
@@ -70,8 +70,8 @@
 					currentUser: U.k,
 					isPresenceConsumptionExpEnabled: f.c,
 					isPresenceTogglePref: U.P,
-					subreddit: E.w,
-					subredditAboutInfo: E.t
+					subreddit: E.v,
+					subredditAboutInfo: E.s
 				}),
 				L = Object(c.b)(M, e => ({
 					navigateTo: t => e(Object(i.b)(t)),
@@ -130,17 +130,17 @@
 					},
 					U = t && n,
 					N = e ? o.a.createElement(x.a, {
-						className: C.a.UserIconWrapper,
+						className: j.a.UserIconWrapper,
 						to: e.url
-					}, o.a.createElement(P, {
-						className: C.a.UserIcon,
+					}, o.a.createElement(C, {
+						className: j.a.UserIcon,
 						shouldShowPresenceIndicator: U
 					})) : null;
 				return o.a.createElement("div", {
-					className: C.a.Container
+					className: j.a.Container
 				}, N, o.a.createElement("input", {
 					name: "createPost",
-					className: C.a.Input,
+					className: j.a.Input,
 					onChange: E,
 					onClick: E,
 					onKeyPress: E,
@@ -149,38 +149,38 @@
 					}),
 					type: "text"
 				}), b.media && o.a.createElement(I.t, {
-					className: C.a.Button,
+					className: j.a.Button,
 					"aria-label": g(),
 					priority: I.c.Plain,
 					kind: I.b.InternalLink,
 					size: I.d.M,
-					id: j.Media,
+					id: P.Media,
 					onClick: () => f(d.Vb.MEDIA),
-					onMouseEnter: () => u(j.Media),
-					onMouseLeave: () => u(j.Media),
+					onMouseEnter: () => u(P.Media),
+					onMouseLeave: () => u(P.Media),
 					to: m + k(d.Vb.MEDIA),
 					Icon: Object(_.b)("image_post"),
 					isSquare: !0
 				}, o.a.createElement(p.c, {
 					caretOnTop: !0,
-					tooltipId: j.Media,
+					tooltipId: P.Media,
 					text: g()
 				})), b.link && o.a.createElement(I.t, {
-					className: C.a.Button,
+					className: j.a.Button,
 					priority: I.c.Plain,
 					kind: I.b.InternalLink,
 					size: I.d.M,
 					"aria-label": v(),
-					id: j.Link,
+					id: P.Link,
 					onClick: () => f(d.Vb.LINK_ONLY),
-					onMouseEnter: () => u(j.Link),
-					onMouseLeave: () => u(j.Link),
+					onMouseEnter: () => u(P.Link),
+					onMouseLeave: () => u(P.Link),
 					to: m + k(d.Vb.LINK_ONLY),
 					Icon: Object(_.b)("link_post"),
 					isSquare: !0
 				}, o.a.createElement(p.c, {
 					caretOnTop: !0,
-					tooltipId: j.Media,
+					tooltipId: P.Media,
 					text: g()
 				})))
 			}))
@@ -255,30 +255,30 @@
 			const c = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.le
-					}) === r.ad
+						experimentName: r.je
+					}) === r.Yc
 				},
 				i = e => {
 					if (Object(o.a)(e)) return !1;
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.ke
-					}) === r.ad
+						experimentName: r.ie
+					}) === r.Yc
 				},
 				a = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.ce
-					}) === r.ad
+						experimentName: r.ae
+					}) === r.Yc
 				},
 				d = e => {
 					if (Object(o.a)(e)) return !1;
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.be
-					}) === r.ad
+						experimentName: r.Zd
+					}) === r.Yc
 				}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.f07147a5dd97bc905eb1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.f1df42f155061f6307a2.js.map

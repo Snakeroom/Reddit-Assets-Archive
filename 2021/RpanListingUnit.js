@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.185d678efbdeef8f8d8a.js
-// Retrieved at 12/1/2021, 6:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.e1bab9777ec9a4c44b3c.js
+// Retrieved at 12/2/2021, 10:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -52,16 +52,16 @@
 			const p = Object(a.a)(e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.Md
+					experimentName: u.Kd
 				});
-				return Object(u.vf)(t) ? void 0 : t
+				return Object(u.rf)(t) ? void 0 : t
 			}, e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.Nd
+					experimentName: u.Ld
 				});
-				return Object(u.vf)(t) ? void 0 : t
-			}, (e, t) => e === u.Qd.Enabled && t === u.Qd.Enabled);
+				return Object(u.rf)(t) ? void 0 : t
+			}, (e, t) => e === u.Od.Enabled && t === u.Od.Enabled);
 			var h = s("./src/config.ts");
 			var b = s("./src/reddit/selectors/user.ts");
 			const f = e => {
@@ -705,7 +705,7 @@
 						thingId: s,
 						correlationId: t
 					})), r(Object(l.h)(a.a.GOLD_GILD_MODAL));
-					const h = Object(p.G)(i, {
+					const h = Object(p.F)(i, {
 						thingId: s
 					});
 					let b = null;
@@ -1737,7 +1737,7 @@
 				f = s("./src/reddit/selectors/subreddit.ts");
 			const v = (e, t) => {
 				const s = Object(b.b)(e, t),
-					r = Object(f.F)(e, t);
+					r = Object(f.E)(e, t);
 				return {
 					comment: s,
 					isModerator: !(!r || !r.name) && !!e.moderatingSubreddits[r.name],
@@ -1776,7 +1776,7 @@
 			}));
 			const _ = (e, t) => {
 				const s = Object(b.b)(e, t),
-					r = Object(f.F)(e, t);
+					r = Object(f.E)(e, t);
 				return {
 					comment: s,
 					isModerator: !(!r || !r.name) && !!e.moderatingSubreddits[r.name],
@@ -1802,7 +1802,7 @@
 				}
 			}));
 			var E = Object(o.b)(() => Object(a.c)({
-					subreddit: f.Q
+					subreddit: f.P
 				}))(e => n.a.createElement(p, {
 					className: e.className,
 					type: "communityTools",
@@ -1902,7 +1902,7 @@
 				}) : null
 			};
 			var I = Object(o.b)(() => Object(a.c)({
-				subreddit: f.Q
+				subreddit: f.P
 			}))(e => n.a.createElement(p, {
 				className: e.className,
 				type: "sidebar",
@@ -1915,7 +1915,7 @@
 				}
 			}));
 			var S = Object(o.b)(() => Object(a.c)({
-				subredditOrProfile: (e, t) => Object(f.I)(e, {
+				subredditOrProfile: (e, t) => Object(f.H)(e, {
 					identifier: t
 				})
 			}))(e => n.a.createElement(p, {
@@ -1932,7 +1932,7 @@
 			var k = Object(o.b)(() => Object(a.c)({
 				subreddit: (e, {
 					subredditId: t
-				}) => t ? Object(f.Q)(e, {
+				}) => t ? Object(f.P)(e, {
 					subredditId: t
 				}) : null
 			}))(e => n.a.createElement(p, {
@@ -3376,7 +3376,7 @@
 				return o && o.enableFollowers ? d : null
 			}, ge = e => Object(o.e)(t => Object(F.nb)(t, {
 				userName: e
-			})), _e = e => Object(o.e)(t => Object(V.cb)(t, {
+			})), _e = e => Object(o.e)(t => Object(V.bb)(t, {
 				identifier: {
 					name: e,
 					type: f.a.PROFILE
@@ -5479,7 +5479,7 @@
 						postId: t
 					}) || Object(a.H)(e))(e, t),
 					experimentName: r.M
-				}) === r.ad
+				}) === r.Yc
 			}
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, s) {
@@ -5610,4 +5610,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.185d678efbdeef8f8d8a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.e1bab9777ec9a4c44b3c.js.map

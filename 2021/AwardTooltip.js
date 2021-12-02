@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AwardTooltip.355dc002b9ff508c831b.js
-// Retrieved at 12/1/2021, 6:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AwardTooltip.1526adaae6dcc23793ea.js
+// Retrieved at 12/2/2021, 10:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AwardTooltip"], {
 		"./src/reddit/components/AwardTooltip/index.m.less": function(e, t, s) {
@@ -69,13 +69,13 @@
 			const y = Object(d.c)({
 					canFlagAwards: e => Object(b.c)(e, {
 						experimentEligibilitySelector: b.a,
-						experimentName: w.wc
-					}) === w.ed.Enabled,
+						experimentName: w.uc
+					}) === w.cd.Enabled,
 					currentUser: g.k,
 					moderatorPermissions: (e, {
 						postOrComment: t
 					}) => {
-						const s = Object(f.G)(e, {
+						const s = Object(f.F)(e, {
 							thingId: t.id
 						});
 						return s ? Object(C.m)(e, {
@@ -84,7 +84,7 @@
 					},
 					subreddit: (e, {
 						postOrComment: t
-					}) => Object(f.G)(e, {
+					}) => Object(f.F)(e, {
 						thingId: t.id
 					}),
 					awardIcon: (e, {
@@ -491,4 +491,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AwardTooltip.355dc002b9ff508c831b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AwardTooltip.1526adaae6dcc23793ea.js.map

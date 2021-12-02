@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.a178913b5f77556913d7.js
-// Retrieved at 12/1/2021, 6:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.f451de35b42f5307c6c9.js
+// Retrieved at 12/2/2021, 10:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"], {
 		"./node_modules/linkify-it/index.js": function(e, t, r) {
@@ -1266,7 +1266,7 @@
 					y = Object(a.e)(e => Object(_.k)(e, {
 						subredditId: t
 					})),
-					w = Object(a.e)(e => Object(g.Q)(e, {
+					w = Object(a.e)(e => Object(g.P)(e, {
 						subredditId: t
 					})),
 					E = Object(a.e)(e => Object(_.n)(e, {
@@ -1368,7 +1368,7 @@
 						const t = this.resolve(e);
 						return !1 !== this.resolved[t] && !!r.m[t]
 					},
-					importAsync: () => Promise.all([r.e("CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~MembershipPaywa~c24a8af4"), r.e("CollectionCommentsPage~CommentsPage~Frontpage~GovernanceReleaseNotesModal~ModListing~ModQueuePages~M~eb6c0aee"), r.e("ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8"), r.e("CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab"), r.e("CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255"), r.e("reddit-components-SidebarNativeAd")]).then(r.bind(null, "./src/reddit/components/SidebarNativeAd/index.tsx")),
+					importAsync: () => Promise.all([r.e("CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~MembershipPaywa~c24a8af4"), r.e("CollectionCommentsPage~CommentsPage~Frontpage~GovernanceReleaseNotesModal~ModListing~ModQueuePages~M~eb6c0aee"), r.e("ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~e4e56b68"), r.e("CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab"), r.e("CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~898a3d9b"), r.e("reddit-components-SidebarNativeAd")]).then(r.bind(null, "./src/reddit/components/SidebarNativeAd/index.tsx")),
 					requireAsync(e) {
 						const t = this.resolve(e);
 						return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
@@ -1646,7 +1646,7 @@
 				}) => Boolean(e.subreddits.appliedFilters.meta[t]),
 				subreddit: (e, {
 					subredditId: t
-				}) => Object(S.Q)(e, {
+				}) => Object(S.P)(e, {
 					subredditId: t
 				})
 			});
@@ -1689,10 +1689,10 @@
 					a = Object(M.a)(),
 					o = Object(L.N)(r),
 					[c, d] = Object(s.useState)(!1),
-					l = Object(i.e)(t => Object(S.Q)(t, {
+					l = Object(i.e)(t => Object(S.P)(t, {
 						subredditId: e
 					})),
-					u = Object(i.e)(t => Object(S.K)(t, {
+					u = Object(i.e)(t => Object(S.J)(t, {
 						subredditId: e
 					})),
 					m = Object(i.e)(t => Object(W.d)(t, {
@@ -1757,9 +1757,9 @@
 						hk: "36nXSp"
 					}))
 				}))),
-				K = r("./src/lib/CSSVariableProvider/withTheme.tsx"),
-				Y = r("./src/higherOrderComponents/makeAsync.tsx");
-			var X = Object(Y.a)({
+				Y = r("./src/lib/CSSVariableProvider/withTheme.tsx"),
+				K = r("./src/higherOrderComponents/makeAsync.tsx");
+			var X = Object(K.a)({
 					ErrorComponent: () => null,
 					LoadingComponent: () => null,
 					getComponent: () => r.e("HarbergerTaxBannerPurchaseCTA").then(r.bind(null, "./src/reddit/components/Governance/HarbergerTax/BannerPurchaseCTA/index.tsx")).then(e => e.default)
@@ -1768,7 +1768,7 @@
 				ee = r("./src/reddit/constants/screenWidths.ts"),
 				te = r("./src/reddit/models/Theme/index.ts"),
 				re = r("./src/reddit/models/Theme/NewColorSystem/index.ts");
-			const se = Object(K.a)(({
+			const se = Object(Y.a)(({
 				className: e,
 				children: t,
 				isTopBannerVariant: r,
@@ -1966,7 +1966,7 @@
 					url: e => Object(b.db)(e)
 				}),
 				C = Object(o.c)({
-					subredditId: (e, t) => Object(y.B)(e, t.subredditName)
+					subredditId: (e, t) => Object(y.A)(e, t.subredditName)
 				}),
 				O = Object(a.b)(C),
 				N = l.a.div("WidgetContent", k.a),
@@ -2397,8 +2397,8 @@
 			const J = Object(a.c)({
 					stylesheet: e => e.stylesheets
 				}),
-				K = Object(i.b)(J),
-				Y = (e, t, r) => `<head>\n  <link rel="stylesheet" href="${e}">\n  <link rel="stylesheet" href="${t}">\n  <base target="_blank">\n</head>\n<body>${r}</body>`;
+				Y = Object(i.b)(J),
+				K = (e, t, r) => `<head>\n  <link rel="stylesheet" href="${e}">\n  <link rel="stylesheet" href="${t}">\n  <base target="_blank">\n</head>\n<body>${r}</body>`;
 			class X extends n.a.Component {
 				constructor() {
 					super(...arguments), this.storeRef = e => {
@@ -2418,7 +2418,7 @@
 					this.iframe && this.iframe.contentWindow && this.iframeContent && (this.iframe.contentWindow.document.body && this.iframe.contentWindow.document.body.childNodes.length || this.writeIFrameDocument())
 				}
 				renderIframeContent(e) {
-					e.widget.stylesheetUrl && e.widget.textHtml && (this.iframeContent = Y(e.stylesheet, e.widget.stylesheetUrl, e.widget.textHtml))
+					e.widget.stylesheetUrl && e.widget.textHtml && (this.iframeContent = K(e.stylesheet, e.widget.stylesheetUrl, e.widget.textHtml))
 				}
 				render() {
 					const {
@@ -2436,7 +2436,7 @@
 					}))
 				}
 			}
-			var Q = K(X),
+			var Q = Y(X),
 				ee = r("./src/reddit/components/Widgets/Image/ImageFrame.m.less"),
 				te = r.n(ee);
 			var re = m.a.div("ImageFrame", te.a),
@@ -2516,7 +2516,7 @@
 				je = m.a.wrapped(me.a, "InternalLink", ge.a),
 				Ee = m.a.div("LinkContainer", ge.a),
 				Fe = Object(a.c)({
-					userIsBanned: be.ab,
+					userIsBanned: be.Z,
 					userIsLoggedIn: x.K
 				});
 			var Ce = Object(i.b)(Fe)(e => {
@@ -3004,7 +3004,7 @@
 				c = e => Object(a.c)(e, {
 					experimentEligibilitySelector: o,
 					experimentName: s.jb
-				}) === s.Wb.Treatment
+				}) === s.Vb.Treatment
 		},
 		"./src/redditGQL/operations/SubredditUserAchievements.json": function(e) {
 			e.exports = JSON.parse('{"id":"92790c69eba6"}')
@@ -3014,4 +3014,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.a178913b5f77556913d7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.f451de35b42f5307c6c9.js.map

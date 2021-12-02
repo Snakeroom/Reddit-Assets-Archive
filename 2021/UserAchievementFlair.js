@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/UserAchievementFlair.85f0d79faa3f31a49d15.js
-// Retrieved at 12/1/2021, 6:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/UserAchievementFlair.90bfb53b2696674eebef.js
+// Retrieved at 12/2/2021, 10:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["UserAchievementFlair"], {
 		"./src/reddit/components/Econ/PowerupsFlair/HoverPopup.m.less": function(e, t, n) {
@@ -56,7 +56,7 @@
 						subredditId: t,
 						userId: n
 					})),
-					g = Object(o.e)(e => Object(h.Q)(e, {
+					g = Object(o.e)(e => Object(h.P)(e, {
 						subredditId: t
 					})),
 					I = Object(o.d)(),
@@ -262,7 +262,7 @@
 								experimentName: c.F,
 								expEventOverride: t
 							});
-							return !!(Object(c.vf)(n) ? void 0 : n)
+							return !!(Object(c.rf)(n) ? void 0 : n)
 						})(n)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -829,21 +829,21 @@
 			})), n.d(t, "v", (function() {
 				return J
 			})), n.d(t, "J", (function() {
-				return V
-			})), n.d(t, "f", (function() {
 				return B
+			})), n.d(t, "f", (function() {
+				return V
 			})), n.d(t, "i", (function() {
 				return z
 			})), n.d(t, "F", (function() {
-				return R
-			})), n.d(t, "B", (function() {
 				return U
+			})), n.d(t, "B", (function() {
+				return R
 			})), n.d(t, "H", (function() {
 				return q
 			})), n.d(t, "p", (function() {
-				return Q
-			})), n.d(t, "K", (function() {
 				return X
+			})), n.d(t, "K", (function() {
+				return Q
 			})), n.d(t, "y", (function() {
 				return W
 			})), n.d(t, "A", (function() {
@@ -1026,13 +1026,13 @@
 				J = (e, {
 					draftKey: t
 				}) => !!e.features.comments.submit.error[t],
-				V = (e, {
+				B = (e, {
 					draftKey: t
 				}) => {
 					const n = e.features.comments.submit.error[t];
 					return n && n.fields ? n.fields.map(e => e.msg) : []
 				},
-				B = (e, {
+				V = (e, {
 					draftKey: t
 				}) => {
 					const n = e.features.comments.drafts[t];
@@ -1041,22 +1041,22 @@
 				z = (e, {
 					draftKey: t
 				}) => e.features.comments.drafts[t],
-				R = (e, {
+				U = (e, {
 					commentId: t
 				}) => {
 					const n = t ? e.features.comments.submit.error[t] : void 0;
 					return n && n.fields ? n.fields.map(e => e.msg) : void 0
 				},
-				U = (e, {
+				R = (e, {
 					commentId: t
 				}) => !!t && e.features.comments.submit.pending[t],
 				q = (e, {
 					commentId: t
 				}) => !!t && e.features.comments.models[t].sendReplies,
-				Q = e => e.features.comments.visitHighlightFilter,
-				X = (e, t) => {
+				X = e => e.features.comments.visitHighlightFilter,
+				Q = (e, t) => {
 					const n = Object(m.b)(e, t);
-					if (n) return Object(i.V)(e, n)
+					if (n) return Object(i.U)(e, n)
 				},
 				W = (e, {
 					commentId: t
@@ -1074,4 +1074,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UserAchievementFlair.85f0d79faa3f31a49d15.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UserAchievementFlair.90bfb53b2696674eebef.js.map

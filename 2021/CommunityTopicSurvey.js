@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.39052cfca25126c4857f.js
-// Retrieved at 12/1/2021, 6:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.e1dad27c23033d9eeb00.js
+// Retrieved at 12/2/2021, 10:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityTopicSurvey"], {
 		"./node_modules/react-uid/dist/es2015/hooks.js": function(e, t, n) {
@@ -93,7 +93,7 @@
 					source: "community_tagging",
 					action: "view",
 					noun: "verify_topics_module",
-					subreddit: Object(m.Q)(n, {
+					subreddit: Object(m.P)(n, {
 						subredditId: t
 					}),
 					raterTag: b(e)
@@ -102,7 +102,7 @@
 					source: "community_tagging",
 					action: "click",
 					noun: "select_answer",
-					subreddit: Object(m.Q)(r, {
+					subreddit: Object(m.P)(r, {
 						subredditId: n
 					}),
 					raterTag: b(e, t)
@@ -111,7 +111,7 @@
 					source: "community_tagging",
 					action: "click",
 					noun: "submit",
-					subreddit: Object(m.Q)(r, {
+					subreddit: Object(m.P)(r, {
 						subredditId: n
 					}),
 					raterTag: b(e, t)
@@ -120,7 +120,7 @@
 					source: "community_tagging",
 					action: "click",
 					noun: "close",
-					subreddit: Object(m.Q)(n, {
+					subreddit: Object(m.P)(n, {
 						subredditId: t
 					}),
 					raterTag: b(e)
@@ -192,15 +192,15 @@
 				return 0 === n.length ? o.a.createElement(o.a.Fragment, null, t) : o.a.createElement(o.a.Fragment, null, n[0], o.a.createElement(N.a, {
 					isFeatureFlagEnabled: !0,
 					isUserInTreatment: !0,
-					userVariant: w.Ve.SmIconHc,
+					userVariant: w.Re.SmIconHc,
 					subredditName: n[1].split("/")[1],
 					rtJsonElementProps: {}
 				}), n[2])
 			}
-			var U = n("./src/reddit/components/CommunityTopicSurvey/index.m.less"),
-				M = n.n(U);
+			var R = n("./src/reddit/components/CommunityTopicSurvey/index.m.less"),
+				M = n.n(R);
 
-			function R(e) {
+			function U(e) {
 				const {
 					questionId: t,
 					questionText: n,
@@ -340,7 +340,7 @@
 				}
 				switch (O.type) {
 					case S.d.Multi:
-						return o.a.createElement(R, {
+						return o.a.createElement(U, {
 							key: O.id,
 							questionId: O.id,
 							questionText: O.questionText,
@@ -781,12 +781,12 @@
 						rtJsonElementProps: o
 					});
 					switch (r) {
-						case _.Ve.SmIcon:
+						case _.Re.SmIcon:
 							return s.a.createElement(b, {
 								subredditName: n,
 								rtJsonElementProps: o
 							});
-						case _.Ve.SmIconHc:
+						case _.Re.SmIconHc:
 							return s.a.createElement(b, {
 								subredditName: n,
 								isHoverable: !0,
@@ -914,7 +914,7 @@
 							subredditName: r,
 							[s]: n.id
 						},
-						a = Object(u.w)(e, {
+						a = Object(u.v)(e, {
 							subredditName: r
 						});
 					return a ? {
@@ -1057,12 +1057,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: r.Oe
+						experimentName: r.Ke
 					}) || ""
 				},
 				a = e => {
 					const t = c(e);
-					return t === r.Ve.SmIcon || t === r.Ve.SmIconHc
+					return t === r.Re.SmIcon || t === r.Re.SmIconHc
 				},
 				u = (e, {
 					subredditName: t
@@ -1077,7 +1077,7 @@
 				m = (e, {
 					subredditName: t
 				}) => {
-					const n = Object(d.U)(e, {
+					const n = Object(d.T)(e, {
 						subredditName: t
 					});
 					return (n && n.postIds || []).slice(0, 2)
@@ -1088,4 +1088,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.39052cfca25126c4857f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.e1dad27c23033d9eeb00.js.map

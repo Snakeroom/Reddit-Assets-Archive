@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.25c6111e5870427757dc.js
-// Retrieved at 12/1/2021, 1:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.b0ba801d0e6337779fb4.js
+// Retrieved at 12/2/2021, 10:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -1129,8 +1129,8 @@
 				C = s.n(w);
 			const O = Object(b.c)({
 				isLoggedIn: S.K,
-				subreddit: E.Q,
-				subredditAboutInfo: E.s
+				subreddit: E.P,
+				subredditAboutInfo: E.r
 			});
 			class k extends r.a.Component {
 				constructor() {
@@ -1143,7 +1143,7 @@
 						} = this.props;
 						if (!s) return;
 						const r = Object(y.c)(s, n);
-						t(Object(u.p)(e, r))
+						t(Object(u.o)(e, r))
 					}
 				}
 				render() {
@@ -1223,14 +1223,14 @@
 				id: "xd_103",
 				layout: m.c.Large,
 				surface: m.d.Topic,
-				unitName: m.i,
+				unitName: m.h,
 				unitType: m.e.SubredditListing,
 				url: ""
 			};
 			class D extends r.a.Component {
 				constructor() {
 					super(...arguments), this.onSeeMoreCommunities = () => {
-						this.props.onSeeMoreCommunities && (this.props.sendEvent(Object(u.z)(W)), this.props.onSeeMoreCommunities())
+						this.props.onSeeMoreCommunities && (this.props.sendEvent(Object(u.x)(W)), this.props.onSeeMoreCommunities())
 					}
 				}
 				render() {
@@ -1481,7 +1481,7 @@
 						listingName: s,
 						inSubredditOrProfile: n
 					}) => Object(v.E)(e, t, s, n)),
-					subredditsById: T.X,
+					subredditsById: T.W,
 					viewportDataLoaded: y.a,
 					pageReferrer: p.T,
 					postListPlaceholderComponent: () => g.a,
@@ -1510,7 +1510,7 @@
 					trackOnPostExitedViewport: (t, s, n, r, i) => {
 						e(d.O(t, n, r, i))
 					},
-					surveyTriggerScrollCounted: () => e(Object(u.k)())
+					surveyTriggerScrollCounted: () => e(Object(u.j)())
 				}),
 				k = e => Object(h.b)({
 					...e
@@ -2091,7 +2091,7 @@
 			const {
 				fbt: U
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), K = 5;
-			class Q extends r.a.Component {
+			class q extends r.a.Component {
 				constructor() {
 					super(...arguments), this.onClick = () => {
 						const {
@@ -2131,7 +2131,7 @@
 					})))
 				}
 			}
-			var q = Q,
+			var Q = q,
 				Y = s("./src/lib/prettyPrintNumber/index.ts"),
 				Z = s("./src/reddit/components/Flair/index.tsx"),
 				X = s("./src/reddit/components/SubredditIcon/index.tsx"),
@@ -2147,7 +2147,7 @@
 				fbt: ae
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), ce = Object(i.c)({
 				isLoggedIn: re.K,
-				subreddit: ne.Q,
+				subreddit: ne.P,
 				subredditAboutInfo: (e, {
 					subredditId: t
 				}) => e.subreddits.about[t]
@@ -2353,7 +2353,7 @@
 							timerMillis: e,
 							timeSort: this.props.timeSort
 						})
-					}, this.renderNoPosts = () => null, this.renderRelationship = (e, t) => r.a.createElement(q, {
+					}, this.renderNoPosts = () => null, this.renderRelationship = (e, t) => r.a.createElement(Q, {
 						key: e.slug,
 						openTab: this.openTab,
 						relationship: e,
@@ -2512,7 +2512,7 @@
 			const c = (e, t) => {
 					const s = e.focusedVerticals.interactedSubredditIds && e.focusedVerticals.interactedSubredditIds[t];
 					if (s) {
-						const t = Object(o.Q)(e, {
+						const t = Object(o.P)(e, {
 							subredditId: s
 						});
 						return t && t.displayText || ""
@@ -2525,14 +2525,14 @@
 				m = Object(n.a)((e, t) => {
 					const s = p(e, t);
 					if (!s) return u;
-					const n = Object(o.U)(e, {
+					const n = Object(o.T)(e, {
 						subredditName: s.name
 					});
 					return n && n.postIds && n.postIds.length ? n.postIds : u
 				}),
 				p = (e, t) => {
 					const s = e.focusedVerticals.recommendedSubredditIds && e.focusedVerticals.recommendedSubredditIds[t];
-					return s ? Object(o.Q)(e, {
+					return s ? Object(o.P)(e, {
 						subredditId: s
 					}) : null
 				},
@@ -2599,4 +2599,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.25c6111e5870427757dc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.b0ba801d0e6337779fb4.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.c14911caec4bc50283b9.js
-// Retrieved at 12/1/2021, 6:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.64032234afbc36d856e2.js
+// Retrieved at 12/2/2021, 10:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction"], {
 		"./src/lib/constants/specialMembership.ts": function(e, t, n) {
@@ -379,7 +379,7 @@
 
 			function d(e) {
 				const t = Object(r.d)(),
-					n = Object(r.e)(t => Object(a.Q)(t, {
+					n = Object(r.e)(t => Object(a.P)(t, {
 						subredditId: e
 					})),
 					s = Object(r.e)(t => Object(c.h)(t, {
@@ -438,8 +438,8 @@
 					hk: "3SDSgH"
 				})),
 				g = n("./src/reddit/actions/post.ts"),
-				O = n("./src/reddit/components/Econ/Prediction/hooks/useDelayedUpvoteAnimation.tsx"),
-				P = n("./src/reddit/models/Vote/index.ts");
+				P = n("./src/reddit/components/Econ/Prediction/hooks/useDelayedUpvoteAnimation.tsx"),
+				O = n("./src/reddit/models/Vote/index.ts");
 			var v = n("./node_modules/fbt/lib/FbtPublic.js"),
 				x = n("./src/reddit/actions/economics/predictions/index.ts"),
 				y = n("./src/reddit/hooks/useToast.tsx");
@@ -519,14 +519,14 @@
 					totalVoters: _,
 					tournamentId: h,
 					userSelection: g,
-					predictionStatus: O,
-					voteUpdatesRemained: P
+					predictionStatus: P,
+					voteUpdatesRemained: O
 				} = t, v = Object(r.e)(t => {
 					const n = Object(u.g)(t, {
 						postId: e.id
 					});
 					return Boolean((null == n ? void 0 : n.userSelection) && !(null == n ? void 0 : n.resolvedOptionId) && Object(l.y)(t))
-				}), x = Object(r.e)(p.pb), y = Object(r.e)(p.K), [C, I] = Object(s.useState)(!1), S = m === x, k = b < Date.now(), j = k && S && !E, N = O === d.b.Cancelled || O === d.b.CancelInProgress;
+				}), x = Object(r.e)(p.pb), y = Object(r.e)(p.K), [C, I] = Object(s.useState)(!1), S = m === x, k = b < Date.now(), j = k && S && !E, N = P === d.b.Cancelled || P === d.b.CancelInProgress;
 				return o.a.useEffect(() => {
 					I(!1)
 				}, [g]), o.a.createElement("div", {
@@ -559,7 +559,7 @@
 					postId: e.id,
 					onReveal: () => I(!0)
 				}), !N && v && o.a.createElement(D.a, {
-					isLimitReached: 0 === P,
+					isLimitReached: 0 === O,
 					postId: e.id,
 					options: f,
 					selectedOptionId: g
@@ -651,10 +651,10 @@
 						n = Object(r.e)(l.p),
 						{
 							startDelayedUpvoteAnimation: s
-						} = Object(O.a)(e.id);
+						} = Object(P.a)(e.id);
 					return {
 						upvote: function() {
-							n && e.voteState < P.a.upvoted && (t(Object(g.db)(e.id)), s())
+							n && e.voteState < O.a.upvoted && (t(Object(g.db)(e.id)), s())
 						}
 					}
 				}(e), A = e => {
@@ -920,8 +920,8 @@
 					isCoins: p
 				}))
 			};
-			var Oe = n("./src/reddit/components/Econ/Prediction/hooks/useTournamentsQuery.ts"),
-				Pe = n("./src/reddit/components/Econ/Tournament/Facepile/index.tsx"),
+			var Pe = n("./src/reddit/components/Econ/Prediction/hooks/useTournamentsQuery.ts"),
+				Oe = n("./src/reddit/components/Econ/Tournament/Facepile/index.tsx"),
 				ve = n("./src/reddit/controls/InternalLink/index.tsx"),
 				xe = n("./src/reddit/hooks/usePageLayer.ts"),
 				ye = n("./src/reddit/icons/svgs/Chevron/index.tsx"),
@@ -939,7 +939,7 @@
 			}) {
 				const n = Object(S.a)(),
 					s = Object(xe.a)(),
-					i = Object(r.e)(t => Object(Ie.Q)(t, {
+					i = Object(r.e)(t => Object(Ie.P)(t, {
 						subredditId: e
 					})),
 					c = Object(r.e)(t => Object(Ce.b)(t, {
@@ -948,7 +948,7 @@
 					d = Object(a.x)(s),
 					l = Object(a.I)(s),
 					u = Object(a.M)(s);
-				if (Object(Oe.a)(i.name), (null == c ? void 0 : c.tournamentId) !== t) return null;
+				if (Object(Pe.a)(i.name), (null == c ? void 0 : c.tournamentId) !== t) return null;
 				const {
 					name: m,
 					totalParticipantsCount: b
@@ -961,7 +961,7 @@
 							pageType: d ? "post_detail" : u ? "community" : l ? "profile" : "home"
 						})), window.scrollTo(0, 0)
 					}
-				}, o.a.createElement(Pe.a, {
+				}, o.a.createElement(Oe.a, {
 					className: ke.a.facepile,
 					subredditId: e
 				}), o.a.createElement("div", {
@@ -1550,9 +1550,9 @@
 			})), n.d(t, "x", (function() {
 				return g
 			})), n.d(t, "f", (function() {
-				return O
-			})), n.d(t, "i", (function() {
 				return P
+			})), n.d(t, "i", (function() {
+				return O
 			})), n.d(t, "q", (function() {
 				return v
 			})), n.d(t, "h", (function() {
@@ -1637,7 +1637,7 @@
 					}
 					return h.DontKnow
 				},
-				O = (e, t) => {
+				P = (e, t) => {
 					const n = e.user.account,
 						s = e.economics.subredditPremium[t];
 					if (n && s && s.status === u.a.Fetched) {
@@ -1655,13 +1655,13 @@
 					}
 				};
 
-			function P(e, t) {
+			function O(e, t) {
 				return (null == e ? void 0 : e.length) ? Object(o.a)(e.map(e => t[e]).filter(Boolean)) : f
 			}
 			const v = (e, t, n) => {
 					var o;
 					if (!s.d.spBadges(e)) return f;
-					return P(null === (o = e.users.appliedBadges[n]) || void 0 === o ? void 0 : o[t], e.badges.models)
+					return O(null === (o = e.users.appliedBadges[n]) || void 0 === o ? void 0 : o[t], e.badges.models)
 				},
 				x = (e, t) => {
 					const n = e.economics.subredditPremium[t.subredditId];
@@ -1836,4 +1836,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.c14911caec4bc50283b9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.64032234afbc36d856e2.js.map

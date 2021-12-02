@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MultiredditAddSubredditModal.fa000a716f3a83c67e80.js
-// Retrieved at 12/1/2021, 11:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MultiredditAddSubredditModal.0cc2f2da7896625f331d.js
+// Retrieved at 12/2/2021, 10:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MultiredditAddSubredditModal"], {
 		"./node_modules/lodash/without.js": function(e, t, r) {
@@ -30,9 +30,9 @@
 			})), r.d(t, "createFailure", (function() {
 				return z
 			})), r.d(t, "createPending", (function() {
-				return H
-			})), r.d(t, "createSuccess", (function() {
 				return J
+			})), r.d(t, "createSuccess", (function() {
+				return H
 			})), r.d(t, "createRequested", (function() {
 				return K
 			})), r.d(t, "reloadCurrentMultiredditFeedRequested", (function() {
@@ -244,7 +244,7 @@
 							multiredditsModelsState: n.multireddits.models
 						}))
 					}
-				}, z = Object(c.a)(M.e), H = Object(c.a)(M.f), J = Object(c.a)(M.g), K = ({
+				}, z = Object(c.a)(M.e), J = Object(c.a)(M.f), H = Object(c.a)(M.g), K = ({
 					description: e,
 					displayName: t,
 					shouldNavigate: r
@@ -254,7 +254,7 @@
 					const c = d(),
 						l = Object(R.k)(c);
 					if (!l) return;
-					s(H());
+					s(J());
 					const m = await ((e, t, r) => Object(f.a)(Object(h.a)(e, [x.a]), {
 						endpoint: Object(O.a)(`${e.apiUrl}/api/multi`),
 						data: {
@@ -271,7 +271,7 @@
 						const {
 							id: e
 						} = l;
-						if (await s(J({
+						if (await s(H({
 								multireddit: F(m.body.data),
 								multiredditsModelsState: c.multireddits.models,
 								userId: e
@@ -389,7 +389,7 @@
 							method: a.jb.PUT
 						}))(n(), g, p);
 					if (j.ok) {
-						const d = Object(P.H)(c, {
+						const d = Object(P.G)(c, {
 								identifier: t
 							}) || e && e.id || "",
 							n = r.map(e => Object(v.h)(m, e));
@@ -538,7 +538,7 @@
 					if (!c || !c.subredditIds) return;
 					i(fe());
 					const l = r && r.reduce((e, t) => {
-							const r = Object(P.B)(n, t) || Object(P.C)(n, t);
+							const r = Object(P.A)(n, t) || Object(P.B)(n, t);
 							return r ? [...e, r] : e
 						}, []),
 						u = await ((e, t) => Object(g.a)(e, {
@@ -1436,4 +1436,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MultiredditAddSubredditModal.fa000a716f3a83c67e80.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MultiredditAddSubredditModal.0cc2f2da7896625f331d.js.map

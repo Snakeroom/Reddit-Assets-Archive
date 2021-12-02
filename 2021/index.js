@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index.ae033f957d5e17c95e71.js
-// Retrieved at 12/1/2021, 6:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index.14da72ad02ab50820b2f.js
+// Retrieved at 12/2/2021, 10:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index"], {
 		"./src/reddit/components/Econ/Audio/MuteIcon.tsx": function(e, t, n) {
@@ -384,7 +384,7 @@
 				isLastPrediction: n
 			}) => {
 				const o = Object(p.a)(),
-					r = Object(i.e)(e => Object(w.Q)(e, {
+					r = Object(i.e)(e => Object(w.P)(e, {
 						subredditId: t
 					}));
 				return a.a.createElement(d.a, {
@@ -976,4 +976,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.ae033f957d5e17c95e71.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.14da72ad02ab50820b2f.js.map

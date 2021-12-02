@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/1.11a7690990ae4cae4926.js
-// Retrieved at 11/15/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/1.954428aaa2e3d0cea490.js
+// Retrieved at 12/2/2021, 10:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	[1], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -91,7 +91,7 @@
 					ratingResponse: a,
 					subredditId: o,
 					children: p
-				} = e, f = null !== (t = Object(r.e)(e => Object(v.Q)(e, {
+				} = e, f = null !== (t = Object(r.e)(e => Object(v.P)(e, {
 					subredditId: o
 				}))) && void 0 !== t ? t : {}, y = Object(d.a)();
 				return s.a.createElement("div", {
@@ -291,7 +291,7 @@
 					subredditId: s,
 					survey: r,
 					onClose: o = (() => {})
-				} = e, [u, f] = Object(c.useState)({}), y = Object(d.d)(), x = K(null == r ? void 0 : r.questions, u), [{
+				} = e, [u, f] = Object(c.useState)({}), y = Object(d.d)(), x = Q(null == r ? void 0 : r.questions, u), [{
 					surveyState: b,
 					activeSlide: w
 				}, E] = Object(c.useReducer)(({
@@ -343,7 +343,7 @@
 								var n;
 								let a = null,
 									s = [];
-								const r = K(e.questions, t);
+								const r = Q(e.questions, t);
 								for (const o of r)
 									for (const e of o.answerOptions) {
 										if (!(null === (n = t[o.id]) || void 0 === n ? void 0 : n[e.id])) continue;
@@ -367,9 +367,9 @@
 								input: {
 									subredditId: s,
 									version: r.version,
-									answers: K(r.questions, u).map(e => ({
+									answers: Q(r.questions, u).map(e => ({
 										questionId: e.id,
-										answerIds: Q(e, u).map(e => e.id)
+										answerIds: K(e, u).map(e => e.id)
 									}))
 								}
 							}), y(Object(p.f)(Object(p.e)(Z._("Thanks for setting up your Content Tag!", null, {
@@ -382,7 +382,7 @@
 								}
 							}), void(N || o())
 						}
-						E("forward"), _ ? C(Object(I.i)(_.pageType, Q(_, u).map(e => e.id))) : 0 === w && C(Object(I.l)())
+						E("forward"), _ ? C(Object(I.i)(_.pageType, K(_, u).map(e => e.id))) : 0 === w && C(Object(I.l)())
 					},
 					goBack: function() {
 						E("back"), _ && C(Object(I.b)(_.pageType))
@@ -491,22 +491,22 @@
 				}
 			}
 
-			function Q(e, t) {
+			function K(e, t) {
 				return e.answerOptions.filter(n => {
 					var a;
 					return null === (a = t[e.id]) || void 0 === a ? void 0 : a[n.id]
 				})
 			}
 
-			function K(e, t) {
+			function Q(e, t) {
 				let n = [];
 				for (const a of null != e ? e : []) {
-					const e = Q(a, t),
+					const e = K(a, t),
 						s = r()(e, e => {
 							var t;
 							return null !== (t = e.subQuestions) && void 0 !== t ? t : []
 						});
-					n = [...n, a, ...K(s, t)]
+					n = [...n, a, ...Q(s, t)]
 				}
 				return n
 			}
@@ -879,4 +879,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/1.11a7690990ae4cae4926.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/1.954428aaa2e3d0cea490.js.map

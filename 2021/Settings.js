@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.e7bf191ecbaab68bbf98.js
-// Retrieved at 12/1/2021, 6:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.fd707c33aaf526341565.js
+// Retrieved at 12/2/2021, 10:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, n) {
@@ -3230,10 +3230,10 @@
 				}, ce = (e, t) => async (n, r) => {
 					const o = r();
 					await Promise.all([(async () => {
-						if (!Object(j.b)(u.a.BAN_USER)(o) && !Object(E.N)(o, {
+						if (!Object(j.b)(u.a.BAN_USER)(o) && !Object(E.M)(o, {
 								subredditId: e
 							})) {
-							const t = Object(E.Q)(o, {
+							const t = Object(E.P)(o, {
 								subredditId: e
 							});
 							await n(Object(l.o)(t.name))
@@ -4312,7 +4312,7 @@
 					}) => t ? Object(g.d)(e, {
 						subredditId: t
 					}) : void 0,
-					userIsBanned: (e, t) => !!Object(b.m)(t) && Object(b.bb)(e, t),
+					userIsBanned: (e, t) => !!Object(b.l)(t) && Object(b.ab)(e, t),
 					userProfileStyles: (e, t) => Object(p.m)(e, Object(m.m)(e, t.userName)),
 					acceptChats: (e, t) => {
 						const n = Object(m.h)(e, {
@@ -4656,7 +4656,7 @@
 				f = n("./src/reddit/selectors/subreddit.ts");
 			const g = (e, t) => {
 				const n = Object(h.b)(e, t),
-					r = Object(f.F)(e, t);
+					r = Object(f.E)(e, t);
 				return {
 					comment: n,
 					isModerator: !(!r || !r.name) && !!e.moderatingSubreddits[r.name],
@@ -4695,7 +4695,7 @@
 			}));
 			const _ = (e, t) => {
 				const n = Object(h.b)(e, t),
-					r = Object(f.F)(e, t);
+					r = Object(f.E)(e, t);
 				return {
 					comment: n,
 					isModerator: !(!r || !r.name) && !!e.moderatingSubreddits[r.name],
@@ -4721,7 +4721,7 @@
 				}
 			}));
 			var x = Object(s.b)(() => Object(a.c)({
-					subreddit: f.Q
+					subreddit: f.P
 				}))(e => o.a.createElement(p, {
 					className: e.className,
 					type: "communityTools",
@@ -4821,7 +4821,7 @@
 				}) : null
 			};
 			var w = Object(s.b)(() => Object(a.c)({
-				subreddit: f.Q
+				subreddit: f.P
 			}))(e => o.a.createElement(p, {
 				className: e.className,
 				type: "sidebar",
@@ -4834,7 +4834,7 @@
 				}
 			}));
 			var O = Object(s.b)(() => Object(a.c)({
-				subredditOrProfile: (e, t) => Object(f.I)(e, {
+				subredditOrProfile: (e, t) => Object(f.H)(e, {
 					identifier: t
 				})
 			}))(e => o.a.createElement(p, {
@@ -4851,7 +4851,7 @@
 			var S = Object(s.b)(() => Object(a.c)({
 				subreddit: (e, {
 					subredditId: t
-				}) => t ? Object(f.Q)(e, {
+				}) => t ? Object(f.P)(e, {
 					subredditId: t
 				}) : null
 			}))(e => o.a.createElement(p, {
@@ -14167,7 +14167,7 @@
 			const a = e => Object(o.c)(e, {
 				experimentName: r.D,
 				experimentEligibilitySelector: () => Object(s.J)(e)
-			}) === r.ad
+			}) === r.Yc
 		},
 		"./src/reddit/selectors/gold/productOffers.ts": function(e, t, n) {
 			"use strict";
@@ -14321,4 +14321,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.e7bf191ecbaab68bbf98.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.fd707c33aaf526341565.js.map

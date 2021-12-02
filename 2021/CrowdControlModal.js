@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CrowdControlModal.358a07159557a97637ba.js
-// Retrieved at 11/11/2021, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CrowdControlModal.92843eec158f71bec107.js
+// Retrieved at 12/2/2021, 10:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CrowdControlModal"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -131,7 +131,7 @@
 		"./src/reddit/components/CrowdControlModal/index.tsx": function(e, t, n) {
 			"use strict";
 			n.r(t), n.d(t, "CrowdControlModal", (function() {
-				return H
+				return A
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var r = n("./node_modules/fbt/lib/FbtPublic.js"),
@@ -295,7 +295,7 @@
 						})
 					}))
 				})),
-				A = async (e, t) => {
+				H = async (e, t) => {
 					const n = await Object(O.a)(e, t);
 					if (n && n.ok) {
 						const e = n.body.data.postInfoById;
@@ -306,7 +306,7 @@
 						}
 					}
 				};
-			class H extends a.a.Component {
+			class A extends a.a.Component {
 				constructor(e) {
 					super(e), this.onCrowdControlLevelUpdate = (e, t, n = !0) => {
 						const r = _[e].key;
@@ -350,7 +350,7 @@
 						gqlContext: e,
 						post: t
 					} = this.props;
-					t && A(e(), t.id).then(e => {
+					t && H(e(), t.id).then(e => {
 						if (e) {
 							const {
 								initialCrowdControlLevel: t,
@@ -411,7 +411,7 @@
 					})))
 				}
 			}
-			const W = Object(d.b)(G(Object(i.c)(H)));
+			const W = Object(d.b)(G(Object(i.c)(A)));
 			t.default = c.a.wrapped(Object(y.a)(G(W)), "Component", D.a)
 		},
 		"./src/reddit/components/MiniPost/index.m.less": function(e, t, n) {
@@ -450,7 +450,7 @@
 					return {
 						crosspost: n,
 						post: t,
-						subredditOrProfile: Object(b.I)(e, {
+						subredditOrProfile: Object(b.H)(e, {
 							identifier: t.belongsTo
 						})
 					}
@@ -752,8 +752,8 @@
 				B = n("./src/reddit/components/Settings/shared/Widgets.m.less"),
 				G = n.n(B);
 
-			function A() {
-				return (A = Object.assign || function(e) {
+			function H() {
+				return (H = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -761,7 +761,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const H = Object(c.a)(C.a),
+			const A = Object(c.a)(C.a),
 				W = h.a.wrapped(j.a, "Circle", G.a),
 				V = h.a.h3("Label", G.a),
 				Q = h.a.wrapped(O.c, "Subtext", G.a),
@@ -779,7 +779,7 @@
 					indent: l,
 					last: d,
 					...c
-				}) => o.a.createElement("div", A({}, c, {
+				}) => o.a.createElement("div", H({}, c, {
 					className: Object(i.a)(G.a.Wrapper, e, {
 						[G.a.mColumn]: "column" === t,
 						[G.a.mDisabled]: !!s,
@@ -949,7 +949,7 @@
 					id: `SettingDropdown--${e.id}`
 				}, e.displayTitle || e.selected), o.a.createElement(f.b, {
 					className: G.a.DropdownTriangle
-				}), o.a.createElement(H, {
+				}), o.a.createElement(A, {
 					container: void 0,
 					isOpen: e.isOpen,
 					renderContentsHidden: !0,
@@ -1735,4 +1735,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CrowdControlModal.358a07159557a97637ba.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CrowdControlModal.92843eec158f71bec107.js.map

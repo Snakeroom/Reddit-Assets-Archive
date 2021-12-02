@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostDraft.b8c4825c1c752143f259.js
-// Retrieved at 12/1/2021, 6:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostDraft.94d88798193f9f4e03f8.js
+// Retrieved at 12/2/2021, 10:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostDraft"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1648,7 +1648,7 @@
 					const n = Object(f.r)(e, {
 						pageLayer: t
 					});
-					return n && Object(E.P)(e, {
+					return n && Object(E.O)(e, {
 						subredditId: n.id
 					})
 				}, e => (e || []).filter(e => P.has(e.kind))),
@@ -2994,12 +2994,12 @@
 						rtJsonElementProps: r
 					});
 					switch (s) {
-						case h.Ve.SmIcon:
+						case h.Re.SmIcon:
 							return o.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: r
 							});
-						case h.Ve.SmIconHc:
+						case h.Re.SmIconHc:
 							return o.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -4172,7 +4172,7 @@
 							subredditName: s,
 							[o]: n.id
 						},
-						c = Object(l.w)(e, {
+						c = Object(l.v)(e, {
 							subredditName: s
 						});
 					return c ? {
@@ -4553,12 +4553,12 @@
 				d = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.Oe
+						experimentName: s.Ke
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === s.Ve.SmIcon || t === s.Ve.SmIconHc
+					return t === s.Re.SmIcon || t === s.Re.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -4573,7 +4573,7 @@
 				m = (e, {
 					subredditName: t
 				}) => {
-					const n = Object(i.U)(e, {
+					const n = Object(i.T)(e, {
 						subredditName: t
 					});
 					return (n && n.postIds || []).slice(0, 2)
@@ -4581,4 +4581,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.b8c4825c1c752143f259.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.94d88798193f9f4e03f8.js.map

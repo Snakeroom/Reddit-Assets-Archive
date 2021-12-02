@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumBlockchainCheckoutModal.d58e9093fc1a40f94e82.js
-// Retrieved at 11/4/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumBlockchainCheckoutModal.20b263bffd115929db2a.js
+// Retrieved at 12/2/2021, 10:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumBlockchainCheckoutModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -309,7 +309,7 @@
 					subscriptionExpiration: (e, {
 						subredditId: t
 					}) => Object(T.o)(e, t),
-					subreddit: I.Q,
+					subreddit: I.P,
 					wallet: g.d
 				}),
 				$ = Object(c.b)(Q, (e, t) => ({
@@ -1053,4 +1053,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumBlockchainCheckoutModal.d58e9093fc1a40f94e82.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumBlockchainCheckoutModal.20b263bffd115929db2a.js.map

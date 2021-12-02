@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ContributorRequestPendingModal.7b24b4b09174ada12bb2.js
-// Retrieved at 11/11/2021, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ContributorRequestPendingModal.cd1cd7a9fbe7cb37cee2.js
+// Retrieved at 12/2/2021, 10:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ContributorRequestPendingModal", "ContributorRequestRequestModal"], {
 		"./src/reddit/components/ContributorRequestFlow/PendingModal/index.m.less": function(e, t, n) {
@@ -66,7 +66,7 @@
 			const E = h.a.div("DescriptionPending", f.a),
 				g = h.a.wrapped(u.e, "ModalBody", f.a),
 				k = Object(i.c)({
-					restrictions: C.n,
+					restrictions: C.m,
 					subreddit: x.e
 				}),
 				q = Object(a.b)(k, e => ({
@@ -224,8 +224,8 @@
 				}
 			}
 			t.default = M.a.wrapped(Object(o.a)(Object(l.a)(Object(i.b)(() => Object(d.c)({
-				subredditAboutInfo: q.h,
-				restrictions: q.n,
+				subredditAboutInfo: q.g,
+				restrictions: q.m,
 				subreddit: g.e,
 				subredditIcon: k.b
 			}), e => ({
@@ -400,4 +400,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ContributorRequestPendingModal.7b24b4b09174ada12bb2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ContributorRequestPendingModal.cd1cd7a9fbe7cb37cee2.js.map

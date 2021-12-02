@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.43e0afa25f4ef1d68441.js
-// Retrieved at 12/1/2021, 6:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.318b68ddcb0f5f282986.js
+// Retrieved at 12/2/2021, 10:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1329,7 +1329,7 @@
 					t(u.m({
 						title: s.wikiPageName ? `${s.wikiPageName} - ${i}` : `wiki - ${i}`
 					})), await t(Qe(s, r));
-					const a = Object(M.w)(n(), {
+					const a = Object(M.v)(n(), {
 							subredditName: i
 						}),
 						o = n();
@@ -1363,7 +1363,7 @@
 				f = Object(r.a)(a.x),
 				x = Object(r.a)(a.v),
 				g = (e, t, n) => async (s, r, i) => {
-					const a = Object(p.w)(r(), {
+					const a = Object(p.v)(r(), {
 						subredditName: e
 					});
 					if (a) return y(a, t, n)(s, r, i)
@@ -1844,10 +1844,10 @@
 				}, de = (e, t) => async (n, s) => {
 					const r = s();
 					await Promise.all([(async () => {
-						if (!Object(_.b)(u.a.BAN_USER)(r) && !Object(E.N)(r, {
+						if (!Object(_.b)(u.a.BAN_USER)(r) && !Object(E.M)(r, {
 								subredditId: e
 							})) {
-							const t = Object(E.Q)(r, {
+							const t = Object(E.P)(r, {
 								subredditId: e
 							});
 							await n(Object(c.o)(t.name))
@@ -2424,8 +2424,8 @@
 							wikiPageName: t
 						},
 						o = await b(r.gqlContext(), i),
-						d = Object(v.B)(s(), e);
-					if (Object(v.S)(s(), d) || await n(Object(a.h)(e, d)), o.ok) {
+						d = Object(v.A)(s(), e);
+					if (Object(v.R)(s(), d) || await n(Object(a.h)(e, d)), o.ok) {
 						const e = o.body,
 							t = e.data.subreddit && e.data.subreddit.wiki;
 						if (t && t.page) {
@@ -3178,7 +3178,7 @@
 				$ = n.n(Z);
 			const ee = c.a.img("SubredditIcon", $.a),
 				te = Object(a.c)({
-					notificationLevel: Y.D,
+					notificationLevel: Y.C,
 					spPollsEnabled: G.d.spPolls,
 					subredditInlineEditingEnabled: (e, {
 						subredditId: t
@@ -3187,7 +3187,7 @@
 					}),
 					tournamentsEnabled: (e, {
 						subredditId: t
-					}) => !!t && Object(Y.K)(e, {
+					}) => !!t && Object(Y.J)(e, {
 						subredditId: t
 					}),
 					userId: Q.i,
@@ -3195,7 +3195,7 @@
 						subredditName: t
 					}) => {
 						const n = t;
-						return Object(Y.cb)(e, {
+						return Object(Y.bb)(e, {
 							identifier: {
 								name: n,
 								type: "subreddit"
@@ -4545,7 +4545,7 @@
 					}) => t ? Object(x.d)(e, {
 						subredditId: t
 					}) : void 0,
-					userIsBanned: (e, t) => !!Object(b.m)(t) && Object(b.bb)(e, t),
+					userIsBanned: (e, t) => !!Object(b.l)(t) && Object(b.ab)(e, t),
 					userProfileStyles: (e, t) => Object(p.m)(e, Object(m.m)(e, t.userName)),
 					acceptChats: (e, t) => {
 						const n = Object(m.h)(e, {
@@ -5002,7 +5002,7 @@
 				f = n("./src/reddit/selectors/subreddit.ts");
 			const x = (e, t) => {
 				const n = Object(h.b)(e, t),
-					s = Object(f.F)(e, t);
+					s = Object(f.E)(e, t);
 				return {
 					comment: n,
 					isModerator: !(!s || !s.name) && !!e.moderatingSubreddits[s.name],
@@ -5041,7 +5041,7 @@
 			}));
 			const v = (e, t) => {
 				const n = Object(h.b)(e, t),
-					s = Object(f.F)(e, t);
+					s = Object(f.E)(e, t);
 				return {
 					comment: n,
 					isModerator: !(!s || !s.name) && !!e.moderatingSubreddits[s.name],
@@ -5067,7 +5067,7 @@
 				}
 			}));
 			var k = Object(i.b)(() => Object(a.c)({
-					subreddit: f.Q
+					subreddit: f.P
 				}))(e => r.a.createElement(p, {
 					className: e.className,
 					type: "communityTools",
@@ -5167,7 +5167,7 @@
 				}) : null
 			};
 			var C = Object(i.b)(() => Object(a.c)({
-				subreddit: f.Q
+				subreddit: f.P
 			}))(e => r.a.createElement(p, {
 				className: e.className,
 				type: "sidebar",
@@ -5180,7 +5180,7 @@
 				}
 			}));
 			var j = Object(i.b)(() => Object(a.c)({
-				subredditOrProfile: (e, t) => Object(f.I)(e, {
+				subredditOrProfile: (e, t) => Object(f.H)(e, {
 					identifier: t
 				})
 			}))(e => r.a.createElement(p, {
@@ -5197,7 +5197,7 @@
 			var I = Object(i.b)(() => Object(a.c)({
 				subreddit: (e, {
 					subredditId: t
-				}) => t ? Object(f.Q)(e, {
+				}) => t ? Object(f.P)(e, {
 					subredditId: t
 				}) : null
 			}))(e => r.a.createElement(p, {
@@ -8250,12 +8250,12 @@
 						rtJsonElementProps: i
 					});
 					switch (s) {
-						case h.Ve.SmIcon:
+						case h.Re.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: i
 							});
-						case h.Ve.SmIconHc:
+						case h.Re.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -8531,8 +8531,8 @@
 					t: l.fc.WEEK
 				})),
 				xe = Object(c.c)({
-					discoveryUnit: e => Object(ue.c)(e, {
-						unitName: le.j
+					discoveryUnit: e => Object(ue.b)(e, {
+						unitName: le.i
 					}),
 					listingKey: fe,
 					posts: (e, t) => {
@@ -8541,7 +8541,7 @@
 							listingKey: n
 						})
 					},
-					subreddit: me.w
+					subreddit: me.v
 				});
 			class ge extends o.a.Component {
 				constructor() {
@@ -8556,13 +8556,13 @@
 							discoveryUnit: t,
 							subreddit: n
 						} = this.props;
-						t && this.props.sendEvent(Object(ce.s)(t, e, void 0, n))
+						t && this.props.sendEvent(Object(ce.r)(t, e, void 0, n))
 					}, this.trackPostViewed = e => {
 						const {
 							discoveryUnit: t,
 							subreddit: n
 						} = this.props;
-						t && this.props.sendEvent(Object(ce.v)(t, e, void 0, n))
+						t && this.props.sendEvent(Object(ce.u)(t, e, void 0, n))
 					}
 				}
 				componentDidMount() {
@@ -8860,12 +8860,12 @@
 					showLeaderboard: ot.d.spLeaderboard,
 					showPredictionsLeaderboard: (e, {
 						subredditId: t
-					}) => Object(me.J)(e, {
+					}) => Object(me.I)(e, {
 						subredditId: t
-					}) && !Object(me.K)(e, {
+					}) && !Object(me.J)(e, {
 						subredditId: t
 					}),
-					widgets: me.r
+					widgets: me.q
 				}),
 				gt = Object(d.b)(xt);
 			class vt extends a.Component {
@@ -9895,7 +9895,7 @@
 							subredditName: s,
 							[r]: n.id
 						},
-						c = Object(l.w)(e, {
+						c = Object(l.v)(e, {
 							subredditName: s
 						});
 					return c ? {
@@ -10356,7 +10356,7 @@
 					over18Pref: F.eb,
 					subreddit: (e, {
 						match: t
-					}) => Object(D.w)(e, {
+					}) => Object(D.v)(e, {
 						subredditName: t.params.subredditName || v.e
 					}),
 					subredditName: (e, {
@@ -10579,9 +10579,9 @@
 			var s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = n("./src/reddit/selectors/user.ts");
-			const a = e => s.lc.Enabled === Object(r.c)(e, {
+			const a = e => s.jc.Enabled === Object(r.c)(e, {
 				experimentEligibilitySelector: i.K,
-				experimentName: s.kc
+				experimentName: s.ic
 			})
 		},
 		"./src/reddit/selectors/gold/powerups/flairs.ts": function(e, t, n) {
@@ -10724,12 +10724,12 @@
 				d = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: o,
-						experimentName: s.Oe
+						experimentName: s.Ke
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === s.Ve.SmIcon || t === s.Ve.SmIconHc
+					return t === s.Re.SmIcon || t === s.Re.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -10744,7 +10744,7 @@
 				m = (e, {
 					subredditName: t
 				}) => {
-					const n = Object(a.U)(e, {
+					const n = Object(a.T)(e, {
 						subredditName: t
 					});
 					return (n && n.postIds || []).slice(0, 2)
@@ -10902,4 +10902,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.43e0afa25f4ef1d68441.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.318b68ddcb0f5f282986.js.map

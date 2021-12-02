@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.96264782dd9cdaf9399c.js
-// Retrieved at 12/1/2021, 6:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.79ee4a4c950447389675.js
+// Retrieved at 12/2/2021, 10:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, r) {
@@ -1242,7 +1242,7 @@
 			const f = b.a.wrapped(u.b, "SubredditIcon", p.a),
 				h = b.a.span("Label", p.a),
 				y = Object(c.c)({
-					subredditOrProfile: l.I
+					subredditOrProfile: l.H
 				});
 			var g = Object(d.b)(y)(({
 				children: e,
@@ -1369,7 +1369,7 @@
 				subredditId: e
 			}) => {
 				const t = Object(l.a)(),
-					r = Object(a.e)(t => Object(b.Q)(t, {
+					r = Object(a.e)(t => Object(b.P)(t, {
 						subredditId: e
 					})),
 					f = !!r;
@@ -1657,7 +1657,7 @@
 						listingName: r,
 						inSubredditOrProfile: n
 					}) => Object(x.E)(e, t, r, n)),
-					subredditsById: O.X,
+					subredditsById: O.W,
 					viewportDataLoaded: _.a,
 					pageReferrer: p.T,
 					postListPlaceholderComponent: () => h.a,
@@ -1686,7 +1686,7 @@
 					trackOnPostExitedViewport: (t, r, n, s, o) => {
 						e(c.O(t, n, s, o))
 					},
-					surveyTriggerScrollCounted: () => e(Object(l.k)())
+					surveyTriggerScrollCounted: () => e(Object(l.j)())
 				}),
 				I = e => Object(b.b)({
 					...e
@@ -2579,29 +2579,6 @@
 				isFilled: t
 			}))
 		},
-		"./src/reddit/icons/svgs/ArrowRight/index.tsx": function(e, t, r) {
-			"use strict";
-			var n = r("./node_modules/react/index.js"),
-				s = r.n(n);
-
-			function o() {
-				return (o = Object.assign || function(e) {
-					for (var t = 1; t < arguments.length; t++) {
-						var r = arguments[t];
-						for (var n in r) Object.prototype.hasOwnProperty.call(r, n) && (e[n] = r[n])
-					}
-					return e
-				}).apply(this, arguments)
-			}
-			t.a = e => s.a.createElement("svg", o({
-				viewBox: "0 0 11.4 11.4",
-				version: "1.1",
-				xmlns: "http://www.w3.org/2000/svg"
-			}, e), s.a.createElement("g", null, s.a.createElement("path", {
-				fill: "inherit",
-				d: "m11.17929,5.99479c0.08081,-0.19519 0.08081,-0.41599 0,-0.61118c-0.0408,-0.0984 -0.0992,-0.1864 -0.17361,-0.2608l-4.79963,-4.79911c-0.31283,-0.3128 -0.81847,-0.3128 -1.1313,0c-0.31283,0.31279 -0.31283,0.81918 0,1.13118l3.43471,3.43433l-7.66949,0c-0.44244,0 -0.80007,0.3584 -0.80007,0.79999c0,0.44159 0.35763,0.79999 0.80007,0.79999l7.66949,0l-3.43471,3.43433c-0.31283,0.3128 -0.31283,0.81919 0,1.13118c0.15601,0.156 0.36083,0.2344 0.56565,0.2344c0.20482,0 0.40964,-0.0784 0.56565,-0.2344l4.79963,-4.79911c0.07441,-0.0744 0.13281,-0.1624 0.17361,-0.2608"
-			})))
-		},
 		"./src/reddit/icons/svgs/Checkmark/index.tsx": function(e, t, r) {
 			"use strict";
 			var n = r("./node_modules/react/index.js"),
@@ -3115,7 +3092,7 @@
 				ie = Object(d.c)({
 					isApiPending: V,
 					subredditOrProfile: (e, t) => {
-						const r = Object(ne.w)(e, {
+						const r = Object(ne.v)(e, {
 							subredditName: t.subredditName
 						});
 						if (!r) {
@@ -5144,15 +5121,15 @@
 			const a = e => {
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: o.K,
-						experimentName: n.Ac
+						experimentName: n.yc
 					});
-					return !(!t || Object(n.vf)(t))
+					return !(!t || Object(n.rf)(t))
 				},
 				i = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: o.K,
-						experimentName: n.Ac
-					}) === n.fd.ListingEnabled
+						experimentName: n.yc
+					}) === n.dd.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/experiments/navbarLikeMweb.ts": function(e, t, r) {
@@ -5165,14 +5142,14 @@
 			var n = r("./src/reddit/constants/experiments.ts"),
 				s = r("./src/reddit/helpers/chooseVariant/index.ts");
 			const o = e => Object(s.c)(e, {
-					experimentName: n.Rd,
+					experimentName: n.Pd,
 					experimentEligibilitySelector: s.a
-				}) === n.Zd.Enabled,
+				}) === n.Xd.Enabled,
 				a = e => Object(s.c)(e, {
-					experimentName: n.Sd,
+					experimentName: n.Qd,
 					experimentEligibilitySelector: s.a,
 					expEventOverride: !1
-				}) === n.ae.Enabled
+				}) === n.Yd.Enabled
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, r) {
 			"use strict";
@@ -5207,7 +5184,7 @@
 			const d = (e, t) => {
 					const r = e.focusedVerticals.interactedSubredditIds && e.focusedVerticals.interactedSubredditIds[t];
 					if (r) {
-						const t = Object(a.Q)(e, {
+						const t = Object(a.P)(e, {
 							subredditId: r
 						});
 						return t && t.displayText || ""
@@ -5220,14 +5197,14 @@
 				m = Object(n.a)((e, t) => {
 					const r = p(e, t);
 					if (!r) return l;
-					const n = Object(a.U)(e, {
+					const n = Object(a.T)(e, {
 						subredditName: r.name
 					});
 					return n && n.postIds && n.postIds.length ? n.postIds : l
 				}),
 				p = (e, t) => {
 					const r = e.focusedVerticals.recommendedSubredditIds && e.focusedVerticals.recommendedSubredditIds[t];
-					return r ? Object(a.Q)(e, {
+					return r ? Object(a.P)(e, {
 						subredditId: r
 					}) : null
 				},
@@ -5345,4 +5322,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.96264782dd9cdaf9399c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.79ee4a4c950447389675.js.map

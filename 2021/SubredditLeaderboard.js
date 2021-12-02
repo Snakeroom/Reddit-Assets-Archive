@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.207d85ab14fee1a85250.js
-// Retrieved at 12/1/2021, 6:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.331603b43e927740c2d1.js
+// Retrieved at 12/2/2021, 10:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/times.js": function(e, t, n) {
@@ -57,7 +57,7 @@
 					const r = n(),
 						a = Object(g.L)(r);
 					if (Object(b.a)(r, e)) return;
-					const i = e && Object(p.f)(r, {
+					const i = e && Object(p.e)(r, {
 							categoryName: e
 						}),
 						c = e === l.m ? l.l : i && i.id || l.f,
@@ -2064,8 +2064,8 @@
 					isMod: A.L,
 					rankings: (e, {
 						categoryId: t
-					}) => Object(R.L)(e, t),
-					subreddits: R.X,
+					}) => Object(R.K)(e, t),
+					subreddits: R.W,
 					isInLeaderboardDetailJoinOptimizationsExperiment: e => !(!Object(W.h)(e) || !Object(F.a)(e) && !Object(F.c)(e)),
 					isInLeaderboardEntryJoinOptimizationsExperiment: e => !(!Object(W.g)(e) || !Object(F.a)(e) && !Object(F.d)(e))
 				}),
@@ -2148,12 +2148,12 @@
 				}
 			}
 			var q = Object(u.c)(J(Q)),
-				U = n("./node_modules/react-router-dom/esm/react-router-dom.js"),
-				K = n("./src/reddit/components/CategoryPickerWidget/index.m.less"),
-				Z = n.n(K);
+				K = n("./node_modules/react-router-dom/esm/react-router-dom.js"),
+				U = n("./src/reddit/components/CategoryPickerWidget/index.m.less"),
+				Z = n.n(U);
 
-			function X() {
-				return (X = Object.assign || function(e) {
+			function V() {
+				return (V = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -2161,7 +2161,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const V = e => {
+			const X = e => {
 				const {
 					category: t,
 					children: n,
@@ -2169,7 +2169,7 @@
 					isActive: s,
 					tabIndex: a
 				} = e, o = Object(c.a)(Z.a.categoryLink, s && Z.a.active, r);
-				return i.a.createElement("li", null, i.a.createElement(U.a, X({}, t.anchorProps, {
+				return i.a.createElement("li", null, i.a.createElement(K.a, V({}, t.anchorProps, {
 					className: o,
 					"data-active": s,
 					onMouseDown: () => e.onSendEventClick(t.name),
@@ -2229,7 +2229,7 @@
 						}
 					}, s, e && e.map((e, r) => {
 						const s = a + r * n;
-						return i.a.createElement(V, {
+						return i.a.createElement(X, {
 							category: e,
 							className: t,
 							isActive: h(e.name),
@@ -2331,14 +2331,14 @@
 				xe = (e, {
 					match: t
 				}) => Object(g.b)(t.params.categoryName || ""),
-				_e = Object(m.tf)(p.i),
+				_e = Object(m.pf)(p.i),
 				Se = Object(d.c)({
-					categories: e => Object(fe.c)(e, {
+					categories: e => Object(fe.b)(e, {
 						categoriesOrder: _e
 					}),
 					categoryId: (e, t) => {
 						const n = xe(0, t);
-						return n === p.m ? p.l : n ? Object(fe.g)(e, {
+						return n === p.m ? p.l : n ? Object(fe.f)(e, {
 							categoryName: n
 						}) : p.c
 					},
@@ -2445,7 +2445,7 @@
 				o = (e, t) => t === r.q ? r.p : t === r.m ? r.l : e || r.c,
 				d = (e, t) => {
 					const n = e.subreddits.rankings,
-						r = t && Object(s.f)(e, {
+						r = t && Object(s.e)(e, {
 							categoryName: t
 						}),
 						a = n[o(r && r.id || null, t)];
@@ -2460,4 +2460,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.207d85ab14fee1a85250.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.331603b43e927740c2d1.js.map

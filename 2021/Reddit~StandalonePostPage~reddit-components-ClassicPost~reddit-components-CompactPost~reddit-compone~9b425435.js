@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.da3c8b01cdfafdca756a.js
-// Retrieved at 12/1/2021, 6:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.4d14d9a25bb88b205e63.js
+// Retrieved at 12/2/2021, 10:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435"], {
 		"./src/lib/hooks/usePrevious.ts": function(e, t, r) {
@@ -181,7 +181,7 @@
 						thingId: r,
 						correlationId: t
 					})), n(Object(l.h)(a.a.GOLD_GILD_MODAL));
-					const f = Object(p.G)(c, {
+					const f = Object(p.F)(c, {
 						thingId: r
 					});
 					let b = null;
@@ -386,15 +386,15 @@
 				}, [t, d, k]);
 				const N = Object(n.useRef)(() => {}),
 					R = Object(n.useRef)(),
-					M = Object(n.useRef)();
+					F = Object(n.useRef)();
 				N.current = Object(n.useCallback)(() => {
-					M.current = setTimeout(() => {
+					F.current = setTimeout(() => {
 						I.current();
 						const e = [...C].reverse().join("");
 						parseInt(e) < t && N.current()
 					}, x())
 				}, [t, x, C]);
-				const F = Object(n.useRef)(0),
+				const M = Object(n.useRef)(0),
 					D = Object(n.useRef)(!1),
 					L = Object(n.useCallback)(e => {
 						e.forEach(e => {
@@ -404,7 +404,7 @@
 							} = e, n = 1 !== r;
 							t ? (D.current = !0, S.current || (S.current = !0, R.current = setTimeout(() => {
 								I.current(), N.current()
-							}, u())), F.current > 0 && (I.current(F.current), F.current = 0)) : n && (D.current = !1)
+							}, u())), M.current > 0 && (I.current(M.current), M.current = 0)) : n && (D.current = !1)
 						})
 					}, []);
 				Object(c.a)(P, L);
@@ -424,10 +424,10 @@
 				Object(n.useEffect)(() => {
 					if (void 0 !== z && z !== t) {
 						const e = t - z;
-						D.current ? I.current(e) : F.current += e
+						D.current ? I.current(e) : M.current += e
 					}
 					return () => {
-						clearTimeout(R.current), clearTimeout(M.current), clearTimeout(T.current)
+						clearTimeout(R.current), clearTimeout(F.current), clearTimeout(T.current)
 					}
 				}, [t]);
 				const H = Object(n.useCallback)(() => y(!0), [y]),
@@ -1111,7 +1111,7 @@
 				c = r("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(n.b)(() => Object(s.c)({
 				isInJoinOptimizationsExperiment: e => Object(a.a)(e) || Object(a.c)(e) || Object(a.d)(e) || Object(a.g)(e),
-				userIsSubscriber: c.cb
+				userIsSubscriber: c.bb
 			}), (e, {
 				identifier: t
 			}) => ({
@@ -1560,9 +1560,9 @@
 			})), r.d(t, "clickConfirmAwardEvent", (function() {
 				return R
 			})), r.d(t, "clickGetPremiumEvent", (function() {
-				return M
-			})), r.d(t, "clickAddCoinsButtonEvent", (function() {
 				return F
+			})), r.d(t, "clickAddCoinsButtonEvent", (function() {
+				return M
 			})), r.d(t, "clickNextButtonEvent", (function() {
 				return D
 			})), r.d(t, "clickCloseGildModalEvent", (function() {
@@ -1713,7 +1713,7 @@
 						...l(t)
 					}
 				}),
-				M = (e, t) => r => ({
+				F = (e, t) => r => ({
 					...u(r, e),
 					source: "give_gold",
 					action: "click",
@@ -1723,7 +1723,7 @@
 						...l(t)
 					}
 				}),
-				F = e => t => ({
+				M = e => t => ({
 					...u(t, e),
 					source: "give_gold",
 					action: "click",
@@ -3022,7 +3022,7 @@
 						postId: t
 					}) || Object(a.H)(e))(e, t),
 					experimentName: n.M
-				}) === n.ad
+				}) === n.Yc
 			}
 		},
 		"./src/reddit/selectors/experiments/joinOptimizations.ts": function(e, t, r) {
@@ -3166,7 +3166,7 @@
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
 						experimentName: n.Mb
-					}) === n.ac.Enabled
+					}) === n.Zb.Enabled
 				}
 		},
 		"./src/reddit/selectors/experiments/presence.ts": function(e, t, r) {
@@ -3179,8 +3179,8 @@
 			const o = e => {
 				return Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: n.je
-				}) === n.ad
+					experimentName: n.he
+				}) === n.Yc
 			}
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, r) {
@@ -3479,4 +3479,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.da3c8b01cdfafdca756a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.4d14d9a25bb88b205e63.js.map

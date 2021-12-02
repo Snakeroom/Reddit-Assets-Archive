@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.4f357adc0d6852ef9c43.js
-// Retrieved at 12/1/2021, 6:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.ece7decad62f2e7ab6e0.js
+// Retrieved at 12/2/2021, 10:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, r) {
@@ -559,13 +559,13 @@
 				A = r("./src/reddit/helpers/addRedesignIdentifier/index.ts"),
 				L = r("./src/redditGQL/operations/GildComment.json"),
 				M = r("./src/redditGQL/operations/GildPost.json");
-			const B = (e, t, r) => Object(T.a)(e, {
+			const R = (e, t, r) => Object(T.a)(e, {
 					...M,
 					variables: t
 				}, {
 					query: r ? {} : Object(A.b)()
 				}),
-				R = (e, t, r) => Object(T.a)(e, {
+				B = (e, t, r) => Object(T.a)(e, {
 					...L,
 					variables: t
 				}, {
@@ -600,7 +600,7 @@
 								message: Object(G.d)(o.message, o.selectedAward, c),
 								nodeId: e
 							},
-							s = Object(U.a)(e) ? B : R,
+							s = Object(U.a)(e) ? R : B,
 							d = await s(a(), {
 								input: t
 							}, i);
@@ -666,7 +666,7 @@
 						commentId: r
 					}), s = Object(S.k)(e), a = e.gild, {
 						isAnonymous: o
-					} = a, i = !o && s && (s.username || s.displayText) ? s.username || s.displayText : void 0, c = n ? n.author : void 0, d = Object(N.G)(e, {
+					} = a, i = !o && s && (s.username || s.displayText) ? s.username || s.displayText : void 0, c = n ? n.author : void 0, d = Object(N.F)(e, {
 						thingId: r
 					});
 					return re({
@@ -699,10 +699,10 @@
 						})
 					}
 					if (b.awardType === p.f.Moderator && void 0 === e.subredditCoins) {
-						const t = Object(N.G)(s, {
+						const t = Object(N.F)(s, {
 								thingId: m
 							}),
-							r = t && Object(N.y)(s, {
+							r = t && Object(N.x)(s, {
 								subredditName: t.name
 							});
 						r && (e.subredditCoins = r - b.coinPrice)
@@ -758,12 +758,12 @@
 					}, 10);
 					const M = Date.now();
 					await t(Object(c.b)(v));
-					const B = Date.now() - M;
+					const R = Date.now() - M;
 					if (A > 0) {
 						const e = Object(C.f)(r()).filter(e => O.a.has(e.dealInfo.type));
 						if (e.length) {
-							const r = Math.max(900 - B, 10),
-								n = Math.max(300 - B, 10),
+							const r = Math.max(900 - R, 10),
+								n = Math.max(300 - R, 10),
 								a = Object(U.a)(m) && Object(x.p)(Object(P.H)(s, {
 									postId: m
 								}));
@@ -773,15 +773,15 @@
 							})), a ? r : n)
 						}
 					}
-					const R = Object(N.G)(s, {
+					const B = Object(N.F)(s, {
 						thingId: m
 					});
-					if (R && Object(k.a)(s, {
-							subredditId: R.id
-						}) && t(Object(K.a)(R.id, R.name, {
+					if (B && Object(k.a)(s, {
+							subredditId: B.id
+						}) && t(Object(K.a)(B.id, B.name, {
 							force: !0
-						})), 0 === A && R) {
-						t(Object(o.a)(R.id, m, void 0, !0));
+						})), 0 === A && B) {
+						t(Object(o.a)(B.id, m, void 0, !0));
 						const e = 399,
 							n = Object(C.d)(r()).reduce((t, r) => {
 								const n = Math.abs(r.pennies - e);
@@ -1676,8 +1676,8 @@
 				A = r("./src/reddit/selectors/gold/econPurchase.ts"),
 				L = r("./src/reddit/selectors/gold/giveAwards.ts"),
 				M = r("./src/reddit/selectors/gold/purchaseCatalog.ts"),
-				B = r("./src/reddit/selectors/goldPurchaseModals.ts"),
-				R = r("./src/reddit/selectors/posts.ts"),
+				R = r("./src/reddit/selectors/goldPurchaseModals.ts"),
+				B = r("./src/reddit/selectors/posts.ts"),
 				D = r("./src/reddit/selectors/PublicAccessNetwork/streams.ts"),
 				G = r("./src/reddit/selectors/subreddit.ts"),
 				F = r("./src/reddit/selectors/user.ts"),
@@ -1945,7 +1945,7 @@
 			}));
 			var Oe = Object(a.b)((e, t) => {
 					if (Object(l.a)(t.thingId)) {
-						const r = Object(R.H)(e, {
+						const r = Object(B.H)(e, {
 							postId: t.thingId
 						});
 						if (!r) return {};
@@ -2298,8 +2298,8 @@
 				}),
 				Le = r("./src/lib/localizeCurrency/index.ts"),
 				Me = r("./src/reddit/components/Econ/CoinsModalHeader/index.m.less"),
-				Be = r.n(Me),
-				Re = r("./src/reddit/icons/svgs/Plus/index.tsx");
+				Re = r.n(Me),
+				Be = r("./src/reddit/icons/svgs/Plus/index.tsx");
 			const {
 				fbt: De
 			} = r("./node_modules/fbt/lib/FbtPublic.js");
@@ -2311,29 +2311,29 @@
 				buttonText: n
 			}) {
 				return s.a.createElement("div", {
-					className: Be.a.gildHeader
+					className: Re.a.gildHeader
 				}, s.a.createElement("button", {
-					className: Be.a.closeBtn,
+					className: Re.a.closeBtn,
 					onClick: t
 				}, s.a.createElement(Q.b, {
-					className: Be.a.closeBtnIcon
+					className: Re.a.closeBtnIcon
 				})), s.a.createElement("div", {
-					className: Be.a.headerText
+					className: Re.a.headerText
 				}, r), s.a.createElement("button", {
-					className: Be.a.coinButton,
+					className: Re.a.coinButton,
 					onClick: e
 				}, s.a.createElement("div", {
-					className: Be.a.coinBalanceIndicator,
+					className: Re.a.coinBalanceIndicator,
 					tabIndex: -1
 				}, s.a.createElement(te.a, {
-					className: Be.a.coinIcon
+					className: Re.a.coinIcon
 				}), s.a.createElement("div", {
-					className: Be.a.coinBalance
+					className: Re.a.coinBalance
 				}, n)), s.a.createElement("div", {
-					className: Be.a.addCoins,
+					className: Re.a.addCoins,
 					tabIndex: -1
-				}, s.a.createElement(Re.a, {
-					className: Be.a.plusIcon
+				}, s.a.createElement(Be.a, {
+					className: Re.a.plusIcon
 				}))))
 			}
 			var Fe = r("./src/reddit/hooks/useLocale.ts"),
@@ -2376,13 +2376,13 @@
 				}) => {
 					let n = r;
 					if (!r) {
-						const r = Object(G.G)(e, {
+						const r = Object(G.F)(e, {
 							thingId: t
 						});
 						n = r && r.id
 					}
 					if (!n && Object(l.a)(t)) {
-						const r = Object(R.H)(e, {
+						const r = Object(B.H)(e, {
 							postId: t
 						});
 						n = r && r.belongsTo.id
@@ -2427,7 +2427,7 @@
 					}) => {
 						let n = r;
 						if (!r) {
-							const r = Object(G.G)(e, {
+							const r = Object(G.F)(e, {
 								thingId: t
 							});
 							if (!r) return !1;
@@ -2449,7 +2449,7 @@
 					message: S.c,
 					postOrComment: (e, {
 						thingId: t
-					}) => Object(l.a)(t) ? Object(R.H)(e, {
+					}) => Object(l.a)(t) ? Object(B.H)(e, {
 						postId: t
 					}) : Object(C.b)(e, {
 						commentId: t
@@ -2460,18 +2460,18 @@
 						streamIdFromPath: t
 					}),
 					purchaseCatalogPending: M.o,
-					showPurchaseModal: B.u,
+					showPurchaseModal: R.u,
 					selectedAward: L.b,
-					subreddit: G.G,
+					subreddit: G.F,
 					subredditCoins: (e, {
 						thingId: t,
 						subredditId: r
 					}) => {
-						const n = Object(G.G)(e, {
+						const n = Object(G.F)(e, {
 								thingId: t
 							}),
 							s = n ? n.id : r;
-						return Object(G.x)(e, {
+						return Object(G.w)(e, {
 							subredditId: s
 						})
 					},
@@ -2481,13 +2481,13 @@
 					}) => {
 						let n = r;
 						if (!r) {
-							const r = Object(G.G)(e, {
+							const r = Object(G.F)(e, {
 								thingId: t
 							});
 							n = r && r.id
 						}
 						if (!n && Object(l.a)(t)) {
-							const r = Object(R.H)(e, {
+							const r = Object(B.H)(e, {
 								postId: t
 							});
 							n = r && r.belongsTo.id
@@ -3264,11 +3264,11 @@
 					})
 				}
 
-				function B(e) {
+				function R(e) {
 					n || A(e), a || M(e), C(Object(l.C)(p))
 				}
 
-				function R() {
+				function B() {
 					const e = {};
 					return _ && (e.margin = "0 auto"), E || (e.maxHeight = `${m.e}px`), o.a.createElement(x, {
 						autoplay: t,
@@ -3283,7 +3283,7 @@
 						onLoadedData: A,
 						onLoadedMetadata: M,
 						onPause: N,
-						onPlaying: B,
+						onPlaying: R,
 						onTimeUpdate: T,
 						shouldLoad: b,
 						shouldPause: O,
@@ -3294,7 +3294,7 @@
 						width: j
 					})
 				}
-				return E ? R() : o.a.createElement("div", {
+				return E ? B() : o.a.createElement("div", {
 					className: Object(d.a)(y.a.container, I, {
 						[y.a.centered]: _
 					})
@@ -3302,7 +3302,7 @@
 					href: k,
 					target: "_blank",
 					rel: "noopener noreferrer"
-				}, R()))
+				}, B()))
 			}
 		},
 		"./src/reddit/components/Media/index.m.less": function(e, t, r) {
@@ -3943,7 +3943,7 @@
 			})), r.d(t, "b", (function() {
 				return M
 			})), r.d(t, "f", (function() {
-				return B
+				return R
 			})), r.d(t, "h", (function() {
 				return D
 			})), r.d(t, "g", (function() {
@@ -4071,7 +4071,7 @@
 					if (!s) return;
 					const a = s.length,
 						o = [];
-					for (let i = 0; i < a; i++) o.push(R(s[i], t, r, i));
+					for (let i = 0; i < a; i++) o.push(B(s[i], t, r, i));
 					return i.a.createElement(c.c, {
 						key: n
 					}, o)
@@ -4082,7 +4082,7 @@
 						key: t
 					}, i.a.createElement(c.h, null, r.reduce((e, t, r, n) => e += t.t + (r < n.length ? "\n" : ""), "")))
 				},
-				B = (e, t, r, n) => {
+				R = (e, t, r, n) => {
 					const s = e.c,
 						a = [],
 						o = s.length;
@@ -4090,14 +4090,14 @@
 						const e = s[l].c;
 						e && e.length && a.push(i.a.createElement(c.g, {
 							key: l
-						}, e.map((e, n) => R(e, t, r, n))))
+						}, e.map((e, n) => B(e, t, r, n))))
 					}
 					const d = e.o ? c.i : c.v;
 					return i.a.createElement(d, {
 						key: n
 					}, a)
 				},
-				R = (e, t, r, n) => {
+				B = (e, t, r, n) => {
 					switch (e.e) {
 						case p.b:
 							return L(e, t, r, n);
@@ -4108,7 +4108,7 @@
 						case p.l:
 							return A(n);
 						case p.p:
-							return B(e, t, r, n);
+							return R(e, t, r, n);
 						case p.u:
 							return G(e, t, r, n);
 						case p.z:
@@ -4392,12 +4392,12 @@
 						rtJsonElementProps: a
 					});
 					switch (n) {
-						case h.Ve.SmIcon:
+						case h.Re.SmIcon:
 							return s.a.createElement(p, {
 								subredditName: r,
 								rtJsonElementProps: a
 							});
-						case h.Ve.SmIconHc:
+						case h.Re.SmIconHc:
 							return s.a.createElement(p, {
 								subredditName: r,
 								isHoverable: !0,
@@ -4768,7 +4768,7 @@
 							subredditName: n,
 							[s]: r.id
 						},
-						d = Object(l.w)(e, {
+						d = Object(l.v)(e, {
 							subredditName: n
 						});
 					return d ? {
@@ -4983,7 +4983,7 @@
 			})), r.d(t, "c", (function() {
 				return M
 			})), r.d(t, "f", (function() {
-				return B
+				return R
 			})), r.d(t, "a", (function() {
 				return G
 			})), r.d(t, "j", (function() {
@@ -5019,7 +5019,7 @@
 						const r = e[t];
 						if (!r) return e;
 						const n = r.stream.state,
-							s = R(n, o.a.ENDED) ? o.a.ENDED : n,
+							s = B(n, o.a.ENDED) ? o.a.ENDED : n,
 							a = r.stream.vod_accessible;
 						return s === n && !0 === a ? e : {
 							...e,
@@ -5037,7 +5037,7 @@
 						const r = e[t];
 						if (!r) return e;
 						const n = r.stream.state,
-							s = R(n, o.a.ENDED) ? o.a.ENDED : n,
+							s = B(n, o.a.ENDED) ? o.a.ENDED : n,
 							a = r.stream.vod_accessible;
 						return s === n && !1 === a ? e : {
 							...e,
@@ -5141,11 +5141,11 @@
 					...t[r],
 					preloadedPreviewUrl: e[r]
 				})))), Object(n.a)(P, e => e.publicAccessNetwork.preloads.streamPreviews, (e, t) => e && t[e])),
-				B = Object(n.a)((e, {
+				R = Object(n.a)((e, {
 					streamIdFromPath: t
 				}) => t ? y(e, t) : void 0, e => !e || e.chat_disabled || e.post.isArchived || e.post.isLocked);
 
-			function R(e, t) {
+			function B(e, t) {
 				const r = {
 					[o.a.NOT_STARTED]: 0,
 					[o.a.PUBLISHED]: 1,
@@ -5232,12 +5232,12 @@
 				c = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: n.Oe
+						experimentName: n.Ke
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === n.Ve.SmIcon || t === n.Ve.SmIconHc
+					return t === n.Re.SmIcon || t === n.Re.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -5252,7 +5252,7 @@
 				m = (e, {
 					subredditName: t
 				}) => {
-					const r = Object(o.U)(e, {
+					const r = Object(o.T)(e, {
 						subredditName: t
 					});
 					return (r && r.postIds || []).slice(0, 2)
@@ -5269,4 +5269,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.4f357adc0d6852ef9c43.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.ece7decad62f2e7ab6e0.js.map
