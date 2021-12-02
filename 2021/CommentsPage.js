@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.88eb530ae3e1c2574521.js
-// Retrieved at 12/2/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.824c1adeb328806d17a3.js
+// Retrieved at 12/2/2021, 4:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -3372,7 +3372,7 @@
 				isMoreRepliesSignupEnabled: Vs.a,
 				moreCommentsItem: L.C,
 				moreCommentsPending: L.D,
-				moreRepliesSignupVariant: Vs.c
+				moreRepliesSignupVariant: Vs.b
 			});
 			var Ys = Object(d.b)(Gs, (e, t) => ({
 					moreCommentsClicked: () => e(Object(h.l)(t.commentsPageKey, t.moreCommentsId)),
@@ -3384,7 +3384,7 @@
 						} = t;
 						e((e, t) => {
 							const r = t();
-							Object(Vs.b)(r), e(Object(As.k)());
+							e(Object(As.k)());
 							const i = r.platform.currentPage,
 								a = Object(St.R)(r, i),
 								d = a ? Object(Ns.a)(a, o, s) : n;
@@ -8396,4 +8396,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.88eb530ae3e1c2574521.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.824c1adeb328806d17a3.js.map

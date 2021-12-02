@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.f76675b33540968d75a5.js
-// Retrieved at 12/2/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.bfaf27fdc547b0d94eb4.js
+// Retrieved at 12/2/2021, 4:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -20407,11 +20407,11 @@
 		"./src/reddit/selectors/accountManager.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return C
-			})), n.d(t, "b", (function() {
 				return E
+			})), n.d(t, "b", (function() {
+				return j
 			})), n.d(t, "c", (function() {
-				return _
+				return S
 			}));
 			var s = n("./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js"),
 				o = n("./node_modules/@reddit/i18n-tools/runtime/helpers/locale/constants.js"),
@@ -20436,27 +20436,28 @@
 				experimentEligibilitySelector: e => Object(v.g)(e.meta.userAgent) && Object(p.f)(e),
 				experimentName: d.Je
 			}), e => e === d.Re.Enabled);
-			var x = n("./src/reddit/selectors/meta.ts"),
-				y = n("./src/reddit/selectors/responsiveSettings.ts");
-			const C = e => e.accountManagerModalData.actionSource,
-				E = e => e.accountManagerModalData.redirectUrl,
-				j = Object(a.c)({
+			var x = n("./src/reddit/selectors/experiments/utils.ts"),
+				y = n("./src/reddit/selectors/meta.ts"),
+				C = n("./src/reddit/selectors/responsiveSettings.ts");
+			const E = e => e.accountManagerModalData.actionSource,
+				j = e => e.accountManagerModalData.redirectUrl,
+				P = Object(a.c)({
 					frontpageSignupVariant: l.a,
 					googleOneTapVariant: u.b,
 					magicLinkVariant: h.a,
-					moreRepliesSignupVariant: f.c,
+					moreRepliesSignupVariant: e => Object(x.a)(Object(f.b)(e)),
 					ssoLoginLinkVariant: e => Object(m.c)(e, {
 						experimentEligibilitySelector: e => !Object(p.e)(e),
 						experimentName: d.Ke
 					})
 				}),
-				P = Object(a.c)({
+				_ = Object(a.c)({
 					isGoogleSsoGisEnabled: b,
 					isMoreRepliesSignupEnabled: f.a,
 					isOnboardingEnabled: g.b,
 					isSafariOneTapEnabled: O
 				}),
-				_ = Object(a.a)((e, t) => t.path, (e, t) => t.uiMode, C, y.a, x.i, j, P, (e, t, n, a, l, u, m) => {
+				S = Object(a.a)((e, t) => t.path, (e, t) => t.uiMode, E, C.a, y.i, P, _, (e, t, n, a, l, u, m) => {
 					const {
 						frontpageSignupVariant: p,
 						googleOneTapVariant: b,
@@ -20741,34 +20742,23 @@
 			"use strict";
 			n.d(t, "b", (function() {
 				return c
-			})), n.d(t, "c", (function() {
-				return d
 			})), n.d(t, "a", (function() {
-				return l
+				return d
 			}));
 			var s = n("./node_modules/reselect/es/index.js"),
 				o = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				a = n("./src/reddit/selectors/experiments/index.ts"),
 				i = n("./src/reddit/selectors/experiments/utils.ts");
-			const c = Object(s.a)(e => Object(r.c)(e, {
+			const c = e => Object(r.c)(e, {
 					experimentEligibilitySelector: a.f,
 					experimentName: o.Ld,
 					throttledVariants: {
 						[o.Pd.ThrottledDaily]: o.Qd.Daily,
 						[o.Pd.ThrottledWeekly]: o.Qd.Weekly
 					}
-				}), e => e),
-				d = Object(s.a)(e => Object(r.c)(e, {
-					experimentEligibilitySelector: a.f,
-					experimentName: o.Ld,
-					expEventOverride: !1,
-					throttledVariants: {
-						[o.Pd.ThrottledDaily]: o.Qd.Daily,
-						[o.Pd.ThrottledWeekly]: o.Qd.Weekly
-					}
-				}), i.a),
-				l = Object(s.a)(d, e => !!e)
+				}),
+				d = Object(s.a)(c, e => !!Object(i.a)(e))
 		},
 		"./src/reddit/selectors/experiments/navbarLikeMweb.ts": function(e, t, n) {
 			"use strict";
@@ -21188,4 +21178,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit~StandalonePostPage", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Governance~ModListing~Reddit~Subreddit", "Chat~Governance~Reddit", 0, "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.f76675b33540968d75a5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.bfaf27fdc547b0d94eb4.js.map
