@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.70d0daf7780fbc36243b.js
-// Retrieved at 12/2/2021, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.d11c01dd19ddf2560006.js
+// Retrieved at 12/2/2021, 5:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~Subreddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, r) {
@@ -638,12 +638,12 @@
 					shouldShowPresenceIndicator: C,
 					user: T,
 					userName: D,
-					isProfileAvatarChangeFixEnabled: U,
-					...A
+					isProfileAvatarChangeFixEnabled: A,
+					...U
 				} = e, w = !!i && Object(b.e)(i) === D, R = w ? i : T, M = R && R.accountIcon || a, L = T ? T.isNSFW : _, H = Object(u.a)(M) && !O, B = H ? o.a.createElement(f.a, {
 					headshot: M,
 					className: e.className
-				}) : o.a.createElement(p.b, S({}, A, {
+				}) : o.a.createElement(p.b, S({}, U, {
 					iconUrl: O && r ? "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_3.png" : M,
 					isCurrentUser: w,
 					isNSFW: L
@@ -660,7 +660,7 @@
 						isOnline: t
 					} = e.subscribe.data;
 					G(t)
-				}, []), z = Object(s.useRef)(null), [K, V] = Object(s.useState)(!1), Y = Object(s.useCallback)(e => {
+				}, []), K = Object(s.useRef)(null), [z, V] = Object(s.useState)(!1), Y = Object(s.useCallback)(e => {
 					e.forEach(e => {
 						const {
 							isIntersecting: t,
@@ -671,13 +671,13 @@
 				}, []), X = Object(s.useRef)({
 					rootMargin: "750px 0px 1000px 0px"
 				});
-				return Object(l.a)(z, Y, X.current), P ? B : o.a.createElement("div", {
+				return Object(l.a)(K, Y, X.current), P ? B : o.a.createElement("div", {
 					className: Object(n.a)(v.a.userIconWrapper, {
 						[v.a.nftUserIcon]: g,
 						[v.a.hasHeadShotWrapper]: H,
-						[v.a.isProfileIcon]: N && U
+						[v.a.isProfileIcon]: N && A
 					}),
-					ref: z
+					ref: K
 				}, g && o.a.createElement(h.a, {
 					className: v.a.nftAnimation,
 					assetUrl: `${c.a.assetPath}/img/snoovatars/nft_comment_animation.json`,
@@ -686,7 +686,7 @@
 					showPresence: !0,
 					isHighlighted: I,
 					onceInViewport: k
-				}), (C || y) && !j && K && o.a.createElement(d.a, {
+				}), (C || y) && !j && z && o.a.createElement(d.a, {
 					variables: W,
 					onData: C ? q : E,
 					queryKey: "isUserOnline"
@@ -959,7 +959,7 @@
 					}
 				}),
 				i = (e, t) => {
-					t && (Object(s.yb)(e.postId), Object(s.Hb)(t)), e.impressionIdStr ? Object(s.zb)(e.impressionIdStr) : e.impressionId && Object(s.zb)(e.impressionId)
+					t && (Object(s.Ab)(e.postId), Object(s.Jb)(t)), e.impressionIdStr ? Object(s.Bb)(e.impressionIdStr) : e.impressionId && Object(s.Bb)(e.impressionId)
 				}
 		},
 		"./src/reddit/helpers/trackers/screenview.ts": function(e, t, r) {
@@ -979,9 +979,9 @@
 			})), r.d(t, "c", (function() {
 				return D
 			})), r.d(t, "l", (function() {
-				return U
-			})), r.d(t, "p", (function() {
 				return A
+			})), r.d(t, "p", (function() {
+				return U
 			})), r.d(t, "i", (function() {
 				return w
 			})), r.d(t, "j", (function() {
@@ -997,7 +997,7 @@
 			})), r.d(t, "m", (function() {
 				return W
 			})), r.d(t, "t", (function() {
-				return K
+				return z
 			})), r.d(t, "w", (function() {
 				return V
 			})), r.d(t, "e", (function() {
@@ -1140,17 +1140,17 @@
 							L(t);
 							break;
 						case o.Mb.PROFILE_MODERATION:
-							p && A(t, !0);
+							p && U(t, !0);
 							break;
 						case o.Mb.SETTINGS: {
 							const s = e;
-							Object(j.a)(z(r, n)(t)), s.match.params.page === o.ac.Profile && Object(l.l)(t);
+							Object(j.a)(K(r, n)(t)), s.match.params.page === o.ac.Profile && Object(l.l)(t);
 							break
 						}
 						case o.Mb.POST_CREATION:
 							if (p && u) {
 								const e = Object(h.a)(u);
-								Object(j.a)(U(e, r, n)(t))
+								Object(j.a)(A(e, r, n)(t))
 							}
 							break;
 						case o.Mb.POST_DRAFT: {
@@ -1197,7 +1197,7 @@
 							}
 							break;
 						case o.Mb.PUBLIC_ACCESS_NETWORK:
-							p && Object(j.a)(K()(t));
+							p && Object(j.a)(z()(t));
 							break;
 						case o.Mb.GEOTAGGING:
 							p && Object(j.a)(Q()(t));
@@ -1365,7 +1365,7 @@
 					};
 					return r && (d.comment = _.comment(c, r)), d
 				},
-				U = (e, t, r) => n => {
+				A = (e, t, r) => n => {
 					const s = n.creations.api.page.fetched[e],
 						o = n.platform.currentPage ? n.platform.currentPage.queryParams.source_id : void 0;
 					return {
@@ -1383,7 +1383,7 @@
 						adblock: _.adblock(n)
 					}
 				},
-				A = (e, t) => {
+				U = (e, t) => {
 					Object(j.a)({
 						source: "global",
 						action: "view",
@@ -1495,14 +1495,14 @@
 					...y(r),
 					timer: _.timer(e, t)
 				}),
-				z = (e, t) => r => ({
+				K = (e, t) => r => ({
 					source: "global",
 					action: "view",
 					noun: "screen",
 					...y(r),
 					timer: _.timer(e, t)
 				}),
-				K = () => e => ({
+				z = () => e => ({
 					source: "global",
 					action: "view",
 					noun: "screen",
@@ -1651,9 +1651,9 @@
 			})), r.d(t, "n", (function() {
 				return D
 			})), r.d(t, "o", (function() {
-				return U
-			})), r.d(t, "b", (function() {
 				return A
+			})), r.d(t, "b", (function() {
+				return U
 			})), r.d(t, "d", (function() {
 				return w
 			})), r.d(t, "i", (function() {
@@ -1961,7 +1961,7 @@
 					},
 					post: d.post(s, t)
 				}),
-				U = (e, t, r) => n => ({
+				A = (e, t, r) => n => ({
 					...l(n),
 					source: u.SEARCH,
 					action: "click",
@@ -1976,7 +1976,7 @@
 					},
 					[e]: d[e](n)
 				}),
-				A = (e, t) => r => ({
+				U = (e, t) => r => ({
 					...l(r, t),
 					source: u.SEARCH,
 					action: e,
@@ -2226,4 +2226,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.70d0daf7780fbc36243b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.d11c01dd19ddf2560006.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.679ce754890c451d4393.js
-// Retrieved at 11/8/2021, 5:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.48d66ace8e75ebe9764a.js
+// Retrieved at 12/2/2021, 5:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~Chat~Governance~Reddit"], {
 		"./node_modules/@loadable/component/dist/loadable.esm.js": function(e, t, n) {
@@ -17290,6 +17290,12 @@
 				o = n("./node_modules/lodash/_baseUniq.js");
 			e.exports = function(e, t) {
 				return e && e.length ? o(e, r(t, 2)) : []
+			}
+		},
+		"./node_modules/lodash/unset.js": function(e, t, n) {
+			var r = n("./node_modules/lodash/_baseUnset.js");
+			e.exports = function(e, t) {
+				return null == e || r(e, t)
 			}
 		},
 		"./node_modules/lodash/upperFirst.js": function(e, t, n) {
@@ -34917,4 +34923,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.679ce754890c451d4393.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.48d66ace8e75ebe9764a.js.map

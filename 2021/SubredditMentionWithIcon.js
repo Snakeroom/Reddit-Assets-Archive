@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.00d288bc825723e5c5f6.js
-// Retrieved at 12/2/2021, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.d2b3825eb288e121f449.js
+// Retrieved at 12/2/2021, 5:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditMentionWithIcon"], {
 		"./src/reddit/actions/subredditMention/constants.ts": function(e, t, s) {
@@ -896,20 +896,20 @@
 			var G = Object(d.b)(q, (e, t) => ({
 					openLightbox: t => e(Object(B.a)(t.permalink))
 				}))(H),
-				z = s("./src/reddit/contexts/PageLayer/index.tsx"),
-				W = s("./src/reddit/helpers/styles/mixins/loading.ts"),
+				W = s("./src/reddit/contexts/PageLayer/index.tsx"),
+				z = s("./src/reddit/helpers/styles/mixins/loading.ts"),
 				V = s("./src/reddit/components/SubredditMention/MiniPost/Placeholder.m.less"),
 				K = s.n(V);
-			const Q = Object(z.u)(),
+			const Q = Object(W.u)(),
 				J = Object(c.c)({
-					isFakeSubreddit: z.y
+					isFakeSubreddit: W.y
 				});
 			var Y = Q(Object(d.b)(J)(({
 					className: e,
 					showSubreddit: t,
 					...s
 				}) => {
-					const n = Object(W.a)(s);
+					const n = Object(z.a)(s);
 					return o.a.createElement("div", {
 						className: Object(D.a)(A.a.container, e)
 					}, o.a.createElement("div", {
@@ -1727,9 +1727,9 @@
 			})), s.d(t, "f", (function() {
 				return G
 			})), s.d(t, "g", (function() {
-				return z
-			})), s.d(t, "i", (function() {
 				return W
+			})), s.d(t, "i", (function() {
+				return z
 			})), s.d(t, "k", (function() {
 				return V
 			})), s.d(t, "l", (function() {
@@ -1959,7 +1959,7 @@
 						noun: n.ITEM_POST
 					})
 				},
-				z = (e, t, s, i) => {
+				W = (e, t, s, i) => {
 					const r = U();
 					return e => ({
 						...h(e, r),
@@ -1971,7 +1971,7 @@
 						noun: n.ITEM_POST_SUBREDDIT
 					})
 				},
-				W = (e, t, s) => {
+				z = (e, t, s) => {
 					const i = U();
 					return e => ({
 						...h(e, i),
@@ -2086,41 +2086,41 @@
 				r = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				o = s("./src/reddit/selectors/experiments/index.ts");
 			const d = Object(n.a)(e => Object(r.c)(e, {
-					experimentName: i.zb,
+					experimentName: i.Ab,
 					experimentEligibilitySelector: o.e
 				}), e => e === i.V.Enabled),
 				c = Object(n.a)(e => Object(r.c)(e, {
-					experimentName: i.Ab,
+					experimentName: i.Bb,
 					experimentEligibilitySelector: o.e
 				}), e => e === i.W.Enabled),
 				a = Object(n.a)(e => Object(r.c)(e, {
-					experimentName: i.Cb,
+					experimentName: i.Db,
 					experimentEligibilitySelector: o.e
 				}), e => e === i.Y.Enabled),
 				l = Object(n.a)(e => Object(r.c)(e, {
-					experimentName: i.Db,
+					experimentName: i.Eb,
 					experimentEligibilitySelector: o.e
 				}), e => e === i.Z.Enabled),
 				u = Object(n.a)(e => Object(r.c)(e, {
-					experimentName: i.Hb,
+					experimentName: i.Ib,
 					experimentEligibilitySelector: o.e
 				}), e => e === i.db.Enabled),
 				b = (Object(n.a)(e => Object(r.c)(e, {
-					experimentName: i.Bb,
+					experimentName: i.Cb,
 					experimentEligibilitySelector: o.e
 				}), e => e === i.X.Enabled), Object(n.a)(e => Object(r.c)(e, {
-					experimentName: i.Eb,
+					experimentName: i.Fb,
 					experimentEligibilitySelector: o.e
 				}), e => e === i.ab.Enabled)),
 				m = Object(n.a)(e => Object(r.c)(e, {
-					experimentName: i.Fb,
+					experimentName: i.Gb,
 					experimentEligibilitySelector: o.e
 				}), e => e === i.bb.Enabled);
 			Object(n.a)(e => Object(r.c)(e, {
-				experimentName: i.Ib,
+				experimentName: i.Jb,
 				experimentEligibilitySelector: o.e
 			}), e => e === i.eb.Enabled), Object(n.a)(e => Object(r.c)(e, {
-				experimentName: i.Gb,
+				experimentName: i.Hb,
 				experimentEligibilitySelector: o.e
 			}), e => e === i.cb.Enabled)
 		},
@@ -2135,4 +2135,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.00d288bc825723e5c5f6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.d2b3825eb288e121f449.js.map

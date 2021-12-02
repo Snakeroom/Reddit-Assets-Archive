@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.c835d0fd4132aa03d9eb.js
-// Retrieved at 12/2/2021, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.356b9d6f6758e2d650ec.js
+// Retrieved at 12/2/2021, 5:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ProfileIdCard"], {
 		"./node_modules/lodash/compact.js": function(e, t) {
@@ -2421,7 +2421,7 @@
 						e(Object(d.h)(t)), n(Object(b.a)(t))
 					},
 					onClickUnblockUser: () => {
-						e(Object(d.g)(t)), n(Object(b.h)(t))
+						e(Object(d.g)(t)), n(Object(b.i)(t))
 					},
 					onClickChatInviteLink: () => e((() => async (e, t, {
 						gqlContext: r
@@ -2507,7 +2507,7 @@
 			})) : n ? s.a.createElement(f.l, {
 				className: ne.a.button,
 				onClick: () => {
-					o(e), a(Object(b.h)(e))
+					o(e), a(Object(b.i)(e))
 				}
 			}, oe._("Unblock", null, {
 				hk: "2d6Cyx"
@@ -2946,22 +2946,24 @@
 		},
 		"./src/reddit/helpers/trackers/user.ts": function(e, t, r) {
 			"use strict";
-			r.d(t, "f", (function() {
+			r.d(t, "g", (function() {
 				return i
-			})), r.d(t, "g", (function() {
+			})), r.d(t, "f", (function() {
 				return c
-			})), r.d(t, "d", (function() {
-				return d
-			})), r.d(t, "e", (function() {
-				return l
-			})), r.d(t, "c", (function() {
-				return u
-			})), r.d(t, "b", (function() {
-				return m
-			})), r.d(t, "a", (function() {
-				return p
 			})), r.d(t, "h", (function() {
+				return d
+			})), r.d(t, "d", (function() {
+				return l
+			})), r.d(t, "e", (function() {
+				return u
+			})), r.d(t, "c", (function() {
+				return m
+			})), r.d(t, "b", (function() {
+				return p
+			})), r.d(t, "a", (function() {
 				return f
+			})), r.d(t, "i", (function() {
+				return b
 			}));
 			var n = r("./src/reddit/helpers/correlationIdTracker.ts"),
 				s = r("./src/reddit/selectors/telemetry.ts"),
@@ -2977,7 +2979,13 @@
 					noun: e ? "night_mode_off" : "night_mode_on",
 					...a(t)
 				}),
-				c = e => t => ({
+				c = () => e => ({
+					...a(e),
+					source: "nav",
+					action: "click",
+					noun: "recap"
+				}),
+				d = e => t => ({
 					source: "nav",
 					action: "click",
 					actionInfo: {
@@ -2987,34 +2995,34 @@
 					noun: "online_presence_toggle",
 					...a(t)
 				}),
-				d = () => e => ({
+				l = () => e => ({
 					source: "user_dropdown",
 					action: "click",
 					noun: "predictions",
 					...a(e)
 				}),
-				l = () => e => ({
+				u = () => e => ({
 					source: "user_dropdown",
 					action: "click",
 					noun: "premium",
 					correlationId: Object(n.c)(n.a.GoldPayment),
 					...a(e)
 				}),
-				u = () => e => ({
+				m = () => e => ({
 					source: "user_dropdown",
 					action: "click",
 					noun: "powerups",
 					correlationId: Object(n.d)(n.a.PowerupsFlow, !1),
 					...a(e)
 				}),
-				m = () => e => ({
+				p = () => e => ({
 					source: "user_dropdown",
 					action: "click",
 					noun: "coins",
 					correlationId: Object(n.c)(n.a.GoldPayment),
 					...a(e)
 				}),
-				p = e => t => ({
+				f = e => t => ({
 					source: "profile",
 					action: "click",
 					noun: "block_user",
@@ -3025,7 +3033,7 @@
 					},
 					...s.defaults(t)
 				}),
-				f = e => t => ({
+				b = e => t => ({
 					source: "profile",
 					action: "click",
 					noun: "unblock_user",
@@ -3235,7 +3243,7 @@
 			const a = e => Object(s.c)(e, {
 				experimentName: n.D,
 				experimentEligibilitySelector: () => Object(o.J)(e)
-			}) === n.dd
+			}) === n.fd
 		},
 		"./src/reddit/selectors/experiments/crisisTextLine.ts": function(e, t, r) {
 			"use strict";
@@ -3295,4 +3303,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.c835d0fd4132aa03d9eb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.356b9d6f6758e2d650ec.js.map

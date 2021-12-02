@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NotificationUnit.9257e9af7e67910dc2c1.js
-// Retrieved at 12/2/2021, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationUnit.e36960b1901679b0ca0e.js
+// Retrieved at 12/2/2021, 5:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationUnit"], {
 		"./src/reddit/components/NotificationUnit/Avatar.tsx": function(e, t, i) {
@@ -449,7 +449,7 @@
 							actionInfoType: e
 						}))
 					}, Me = e => {
-						P(Object(b.t)({
+						P(Object(b.u)({
 							...he,
 							actionInfoType: e
 						}))
@@ -547,11 +547,11 @@
 						isToggleNotificationUpdateEligible: ne,
 						isToggleUpdateFromSubredditEligible: !(!ae || !be),
 						isBlockAwarderEligible: we,
-						sendInboxViewOverflow: () => P(Object(b.r)(he)),
+						sendInboxViewOverflow: () => P(Object(b.s)(he)),
 						tooltipId: xe
 					}), s.a.createElement(a.a, {
 						onChange: e => {
-							e.isIntersecting && !W && (P(Object(b.q)(he)), z(!0))
+							e.isIntersecting && !W && (P(Object(b.r)(he)), z(!0))
 						},
 						rootMargin: "0px 0px 0px 0px",
 						threshold: U
@@ -727,13 +727,13 @@
 				r = i("./src/reddit/selectors/user.ts");
 			const l = e => Object(r.J)(e) || Object(r.K)(e),
 				d = Object(n.a)(e => Object(o.c)(e, {
-					experimentName: a.Cd,
+					experimentName: a.Ed,
 					experimentEligibilitySelector: l
 				}), s.a),
-				c = Object(n.a)(d, e => e === a.Fd.SeePostCTAs),
-				m = Object(n.a)(d, e => e === a.Fd.ReplyCTAs),
-				u = Object(n.a)(d, e => e === a.Fd.AllCTAs)
+				c = Object(n.a)(d, e => e === a.Hd.SeePostCTAs),
+				m = Object(n.a)(d, e => e === a.Hd.ReplyCTAs),
+				u = Object(n.a)(d, e => e === a.Hd.AllCTAs)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationUnit.9257e9af7e67910dc2c1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationUnit.e36960b1901679b0ca0e.js.map

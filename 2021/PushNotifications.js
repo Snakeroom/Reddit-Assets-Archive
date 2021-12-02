@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PushNotifications.695a9698ec98414b4f5c.js
-// Retrieved at 11/4/2021, 4:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PushNotifications.d78c0075bf0fe7f1ea3a.js
+// Retrieved at 12/2/2021, 5:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PushNotifications"], {
 		"./src/lib/notifications/token.ts": function(e, t, i) {
@@ -61,7 +61,7 @@
 		"./src/reddit/actions/notifications/index.ts": function(e, t, i) {
 			"use strict";
 			i.r(t), i.d(t, "initializeServiceWorkerChannel", (function() {
-				return y
+				return w
 			})), i.d(t, "requestNotificationsPermissions", (function() {
 				return S
 			})), i.d(t, "subscribeForPNs", (function() {
@@ -93,7 +93,7 @@
 				j = i("./src/reddit/selectors/meta.ts"),
 				k = i("./src/reddit/selectors/user.ts");
 			let _ = !1;
-			const y = async (e, t) => {
+			const w = async (e, t) => {
 				const i = Object(k.J)(e);
 				if (_) return;
 				if (_ = !0, Object(b.a)(e) !== u.c.NotificationsSupported) return;
@@ -101,7 +101,7 @@
 				navigator.serviceWorker.addEventListener("message", n => {
 					const s = n.data,
 						r = s.command || s.type;
-					if ("registerWithServiceWorker" === r) w(e);
+					if ("registerWithServiceWorker" === r) y(e);
 					else if (r === m.a && i) {
 						const e = o()(s, ["command"]);
 						t(Object(p.f)(e))
@@ -109,8 +109,8 @@
 						const e = Object(h.a)(s.data.href);
 						e && e.pathname && t(Object(l.c)(e.pathname))
 					}
-				}), w(e)
-			}, w = e => {
+				}), y(e)
+			}, y = e => {
 				navigator.serviceWorker.controller && navigator.serviceWorker.controller.postMessage({
 					command: "registerClient",
 					v2EventBoilerPlate: O.c(e)
@@ -119,8 +119,8 @@
 				const c = s(),
 					d = Object(j.f)(c);
 				if (await Object(r.a)() || d) return;
-				await y(c, n);
-				O.j(c), Object(a.b)(e, t, () => {
+				await w(c, n);
+				O.j(c), await Object(a.b)(e, t, () => {
 					n(Object(u.o)()), n(Object(u.n)()), O.h(c)
 				}, (e, t) => {
 					n(Object(u.l)()), n(N(t ? u.a.Denied : u.a.Closed)), e && (t ? O.e(c) : O.f(c))
@@ -169,7 +169,7 @@
 				if (Object(b.a)(n) === u.c.NotificationsSupported) switch (Object(a.a)()) {
 					case u.a.Default:
 					case u.a.Closed:
-						t(S(!0, !0));
+						await t(S(!0, !0));
 						break;
 					case u.a.Denied:
 						t(Object(f.h)(e))
@@ -330,4 +330,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PushNotifications.695a9698ec98414b4f5c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PushNotifications.d78c0075bf0fe7f1ea3a.js.map

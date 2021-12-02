@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InboxTooltip.24243bf12463463bb8f0.js
-// Retrieved at 11/4/2021, 4:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InboxTooltip.df3cc3687f42426a40a1.js
+// Retrieved at 12/2/2021, 5:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InboxTooltip", "PushNotifications"], {
 		"./src/lib/notifications/token.ts": function(e, t, i) {
@@ -69,9 +69,9 @@
 			})), i.d(t, "unsubscribeFromPNs", (function() {
 				return y
 			})), i.d(t, "requestBrowserNotificationPermissionPromptByUser", (function() {
-				return P
+				return E
 			})), i.d(t, "subscribeToPermissionsChange", (function() {
-				return _
+				return P
 			}));
 			var n = i("./node_modules/fbt/lib/FbtPublic.js"),
 				s = i("./node_modules/lodash/omit.js"),
@@ -120,7 +120,7 @@
 					u = Object(x.f)(a);
 				if (await Object(r.a)() || u) return;
 				await k(a, n);
-				O.j(a), Object(c.b)(e, t, () => {
+				O.j(a), await Object(c.b)(e, t, () => {
 					n(Object(d.o)()), n(Object(d.n)()), O.h(a)
 				}, (e, t) => {
 					n(Object(d.l)()), n(y(t ? d.a.Denied : d.a.Closed)), e && (t ? O.e(a) : O.f(a))
@@ -164,17 +164,17 @@
 						})))
 					}
 				} catch (s) {}
-			}, P = e => async (t, i) => {
+			}, E = e => async (t, i) => {
 				const n = i();
 				if (Object(f.a)(n) === d.c.NotificationsSupported) switch (Object(c.a)()) {
 					case d.a.Default:
 					case d.a.Closed:
-						t(w(!0, !0));
+						await t(w(!0, !0));
 						break;
 					case d.a.Denied:
 						t(Object(l.h)(e))
 				}
-			}, _ = () => async (e, t) => {
+			}, P = () => async (e, t) => {
 				var i;
 				if (!(null === (i = null === navigator || void 0 === navigator ? void 0 : navigator.permissions) || void 0 === i ? void 0 : i.query)) return;
 				const n = t();
@@ -296,23 +296,25 @@
 				p = i("./src/reddit/models/Subreddit/index.ts"),
 				g = i("./src/reddit/selectors/appBadges.ts"),
 				m = i("./src/reddit/selectors/experiments/inboxRedesign.ts"),
-				h = i("./src/reddit/selectors/notificationsInbox.tsx");
-			const O = Object(r.c)({
-					isPushNotificationsSupported: h.h,
-					cursor: h.c,
-					hasNextPage: h.d,
+				h = i("./src/reddit/selectors/experiments/wrappedReddit.ts"),
+				O = i("./src/reddit/selectors/notificationsInbox.tsx");
+			const j = Object(r.c)({
+					isPushNotificationsSupported: O.h,
+					cursor: O.c,
+					hasNextPage: O.d,
 					inboxBadgeCount: g.g,
 					isDNInboxPromptBannerFirstTimeEnabled: m.a,
+					isWrappedRedditBannerEnabled: h.a,
 					isDNInboxPromptBannerPersistEnabled: m.b,
 					isInboxExposureBannerEnabled: m.d,
 					isInboxInfiniteScrollEnabled: m.h,
 					isInboxPolicyBannerEnabled: m.j,
 					isInboxPostEmbedEnabled: m.f,
-					isPending: h.e,
+					isPending: O.e,
 					messagesBadgeCount: g.h,
-					notifications: e => Object(m.h)(e) ? Object(h.f)(e) : Object(h.g)(e)
+					notifications: e => Object(m.h)(e) ? Object(O.f)(e) : Object(O.g)(e)
 				}),
-				j = Object(o.b)(O, (e, {
+				x = Object(o.b)(j, (e, {
 					desktopNotificationsModalId: t
 				}) => ({
 					blockAwarder: t => e(Object(d.a)(t)),
@@ -331,7 +333,7 @@
 					showBrowserNotificationsPermissionSettings: () => e(Object(c.requestBrowserNotificationPermissionPromptByUser)(t)),
 					updateInboxActivitySeenState: () => e(Object(d.j)())
 				}));
-			t.default = j(({
+			t.default = x(({
 				clearMessageTabBadgeCount: e,
 				cursor: t,
 				decreaseSubredditNotifications: i,
@@ -349,31 +351,32 @@
 				isInboxPolicyBannerEnabled: j,
 				isInboxInfiniteScrollEnabled: x,
 				isInboxPostEmbedEnabled: v,
-				isLoggedIn: S,
-				isOpen: k,
-				isPending: N,
-				isPushNotificationsSupported: w,
-				markAllAsRead: I,
-				markNotificationAsRead: y,
+				isWrappedRedditBannerEnabled: S,
+				isLoggedIn: k,
+				isOpen: N,
+				isPending: w,
+				isPushNotificationsSupported: I,
+				markAllAsRead: y,
+				markNotificationAsRead: E,
 				messagesBadgeCount: P,
 				notifications: _,
-				showBrowserNotificationsPermissionSettings: E,
-				updateInboxActivitySeenState: B,
-				userId: F
+				showBrowserNotificationsPermissionSettings: B,
+				updateInboxActivitySeenState: F,
+				userId: C
 			}) => {
-				const C = Object(f.a)(),
-					[A, R] = Object(n.useState)("");
+				const A = Object(f.a)(),
+					[R, T] = Object(n.useState)("");
 				return Object(n.useEffect)(() => {
-					if (k && !_.length && S) {
+					if (N && !_.length && k) {
 						r({
 							first: 5
 						})
 					}
-					k && S && (B(), C(Object(l.p)({
+					N && k && (F(), A(Object(l.q)({
 						badgeCount: g
 					})))
-				}, [k]), s.a.createElement(b.b, {
-					activeOverflowMenuId: A,
+				}, [N]), s.a.createElement(b.b, {
+					activeOverflowMenuId: R,
 					clearMessageTabBadgeCount: e,
 					cursor: t,
 					decreaseSubredditNotifications: i,
@@ -385,21 +388,22 @@
 					hideTooltip: u,
 					blockAwarder: p,
 					inboxBadgeCount: g,
-					isDNInboxPromptBannerFirstTimeEnabled: m && w,
-					isDNInboxPromptBannerPersistEnabled: h && w,
+					isDNInboxPromptBannerFirstTimeEnabled: m && I,
+					isDNInboxPromptBannerPersistEnabled: h && I,
 					isInboxExposureBannerEnabled: O,
 					isInboxPolicyBannerEnabled: j,
 					isInboxInfiniteScrollEnabled: x,
 					isInboxPostEmbedEnabled: v,
-					isLoggedIn: S,
-					isPending: N,
-					markAllAsRead: I,
-					markNotificationAsRead: y,
+					isWrappedRedditBannerEnabled: S,
+					isLoggedIn: k,
+					isPending: w,
+					markAllAsRead: y,
+					markNotificationAsRead: E,
 					messagesBadgeCount: P,
 					notifications: _,
-					setActiveOverflowMenuId: R,
-					showBrowserNotificationsPermissionSettings: E,
-					userId: F
+					setActiveOverflowMenuId: T,
+					showBrowserNotificationsPermissionSettings: B,
+					userId: C
 				})
 			})
 		},
@@ -537,4 +541,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InboxTooltip.24243bf12463463bb8f0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InboxTooltip.df3cc3687f42426a40a1.js.map
