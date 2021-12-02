@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GivePremiumModal.bb1d8d28eb4cbeefb754.js
-// Retrieved at 12/2/2021, 5:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GivePremiumModal.3fe9f26847989a978165.js
+// Retrieved at 12/2/2021, 6:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GivePremiumModal", "givePremiumTrackers"], {
 		"./src/reddit/components/CoinBalance/index.m.less": function(e, t, n) {
@@ -822,7 +822,7 @@
 			const d = n("./src/lib/lessComponent.tsx").a.wrapped(e => o.a.createElement("i", {
 				className: Object(a.a)(e.className, Object(i.b)("coins", e.isFilled)),
 				style: {
-					color: e.fillColor || c.b.gold
+					color: e.fillColor || c.a.gold
 				}
 			}), "CoinIcon", l.a);
 			t.a = d
@@ -838,4 +838,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GivePremiumModal.bb1d8d28eb4cbeefb754.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GivePremiumModal.3fe9f26847989a978165.js.map

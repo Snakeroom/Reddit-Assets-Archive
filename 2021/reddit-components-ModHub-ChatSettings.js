@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ChatSettings.44a5a5c6b5a5d34e9133.js
-// Retrieved at 11/4/2021, 4:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ChatSettings.2b3ac65fc1a60148e110.js
+// Retrieved at 12/2/2021, 6:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-ChatSettings"], {
 		"./src/reddit/components/ModHub/ChatSettings/AccessDisabledBanner/index.m.less": function(e, t, s) {
@@ -54,7 +54,7 @@
 				C = s.n(v);
 			var x = e => c.a.createElement(b.a, {
 					className: e.className,
-					color: f.b.quarantine,
+					color: f.a.quarantine,
 					icon: c.a.createElement(S.a, {
 						className: C.a.icon
 					}),
@@ -374,4 +374,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ChatSettings.44a5a5c6b5a5d34e9133.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ChatSettings.2b3ac65fc1a60148e110.js.map

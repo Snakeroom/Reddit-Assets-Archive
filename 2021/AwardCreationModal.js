@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AwardCreationModal.2ed90c5c7e10419c9f5b.js
-// Retrieved at 12/1/2021, 12:30:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AwardCreationModal.60703bfc1ba8ca35a8f4.js
+// Retrieved at 12/2/2021, 6:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AwardCreationModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, a) {
@@ -848,7 +848,7 @@
 					}))))), u.length < w.e && s.a.createElement("div", {
 						className: Object(C.a)(b.a.formSection, b.a.modToggleSection)
 					}, s.a.createElement("label", null, 0 !== this.costOptions.length && s.a.createElement(k.a, {
-						activeColorOverride: y.b.moderator,
+						activeColorOverride: y.a.moderator,
 						className: b.a.modToggle,
 						on: c,
 						onToggle: this.handleModOnlyChange
@@ -859,7 +859,7 @@
 					})))), this.renderCostDropdown(), o && s.a.createElement("div", {
 						className: Object(C.a)(b.a.formSection, b.a.modToggleSection)
 					}, s.a.createElement("label", null, s.a.createElement(k.a, {
-						activeColorOverride: y.b.moderator,
+						activeColorOverride: y.a.moderator,
 						className: b.a.modToggle,
 						on: d,
 						onToggle: this.handleIsTemporaryChange
@@ -1369,7 +1369,7 @@
 					}))), this.renderCostSelector(), s.a.createElement("div", {
 						className: Object(C.a)(b.a.formSection, b.a.modToggleSection)
 					}, s.a.createElement("label", null, s.a.createElement(k.a, {
-						activeColorOverride: y.b.moderator,
+						activeColorOverride: y.a.moderator,
 						className: b.a.modToggle,
 						on: l,
 						onToggle: this.handleIsTemporaryChange
@@ -1503,7 +1503,7 @@
 					return s.a.createElement(s.a.Fragment, null, this.renderIconFormatDropdown(), this.renderAwardSubTypeDropdown(), s.a.createElement("div", {
 						className: Object(C.a)(b.a.formSection, b.a.modToggleSection)
 					}, s.a.createElement("label", null, s.a.createElement(k.a, {
-						activeColorOverride: y.b.moderator,
+						activeColorOverride: y.a.moderator,
 						className: b.a.modToggle,
 						on: r,
 						onToggle: this.handleIsNewChange
@@ -2204,4 +2204,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AwardCreationModal.2ed90c5c7e10419c9f5b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AwardCreationModal.60703bfc1ba8ca35a8f4.js.map

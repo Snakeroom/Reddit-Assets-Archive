@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.91ae03f0b538558f56e5.js
-// Retrieved at 11/4/2021, 7:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.7636b1e55642d6c631fb.js
+// Retrieved at 12/2/2021, 6:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-ContentControls"], {
 		"./src/reddit/components/ModHub/ContentControls/FormPlaceholder/index.m.less": function(e, t, n) {
@@ -11,24 +11,24 @@
 				sectionBodyRow: "drysb1q3Lkf7zfCJxlW_W"
 			}
 		},
-		"./src/reddit/components/ModHub/ContentControls/FormSections/AutomatedReporting/Filter/index.m.less": function(e, t, n) {
+		"./src/reddit/components/ModHub/ContentControls/FormSections/HatefulContentFilters/Filter/index.m.less": function(e, t, n) {
 			e.exports = {
-				content: "_3B4M6QK9bUKm-hq6ibDdLD",
-				description: "QU6Z1AydR1scQPJkLzse6",
-				levelLabel: "_1sOGEONeRsHVzT4_eiFEHw",
-				title: "_32tGjsPcq5gq7VueCE-FEo"
+				content: "-AKopMfuc8eg8cQy_3bWo",
+				description: "_3UqZ-WSPhEvwee_kzpjjuo",
+				levelLabel: "_1N3-KBxFRGpxumaXPNodxW",
+				title: "PZcjQ4552Q6GaEX022TlN"
 			}
 		},
-		"./src/reddit/components/ModHub/ContentControls/FormSections/AutomatedReporting/LevelLabel/index.m.less": function(e, t, n) {
+		"./src/reddit/components/ModHub/ContentControls/FormSections/HatefulContentFilters/LevelLabel/index.m.less": function(e, t, n) {
 			e.exports = {
-				label: "pkJQYGkM8b-LY4u9scc-w"
+				label: "_1mIxG0rIp-q9tW-mrf0Hb6"
 			}
 		},
-		"./src/reddit/components/ModHub/ContentControls/FormSections/AutomatedReporting/index.m.less": function(e, t, n) {
+		"./src/reddit/components/ModHub/ContentControls/FormSections/HatefulContentFilters/index.m.less": function(e, t, n) {
 			e.exports = {
-				description: "_1XYu9keDg3_j4x4WII3e-k",
-				filter: "_3Nflwp49IG82nIYvwBp6ij",
-				title: "_3gXhgv8lal623n-2rw_KZ2"
+				description: "zZ37hDR-wAqBD3lciXthe",
+				filter: "_2eZI7hktoKnkuITHJM4tOf",
+				title: "BcEY8NHl2oAk65afxfkCM"
 			}
 		},
 		"./src/reddit/components/ModHub/ContentControls/LabeledControl/index.m.less": function(e, t, n) {
@@ -73,34 +73,33 @@
 		"./src/reddit/components/ModHub/ContentControls/index.tsx": function(e, t, n) {
 			"use strict";
 			n.r(t);
-			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
 				i = n("./node_modules/lodash/debounce.js"),
 				o = n.n(i),
-				a = n("./node_modules/lodash/isEmpty.js"),
-				r = n.n(a),
-				l = n("./node_modules/react/index.js"),
-				d = n.n(l),
+				r = n("./node_modules/lodash/isEmpty.js"),
+				l = n.n(r),
+				a = n("./node_modules/react/index.js"),
+				d = n.n(a),
 				c = n("./node_modules/react-redux/es/index.js"),
 				m = n("./node_modules/reselect/es/index.js"),
 				u = n("./src/reddit/actions/contentControls/index.ts"),
-				g = n("./src/reddit/actions/modal.ts"),
-				h = n("./src/reddit/components/BlockNavigation/index.tsx"),
+				h = n("./src/reddit/actions/modal.ts"),
+				g = n("./src/reddit/components/BlockNavigation/index.tsx"),
 				b = n("./src/reddit/components/ConfirmUserActionModal/index.tsx"),
 				p = n("./src/reddit/components/ModHub/InfoLink/index.tsx"),
 				f = n("./src/reddit/components/ModHub/StyledComponents/index.tsx"),
 				x = n("./src/reddit/components/TrackingHelper/index.tsx"),
 				y = n("./src/reddit/controls/Button/index.tsx"),
-				k = n("./src/reddit/controls/LoadingIcon/index.tsx"),
-				S = n("./node_modules/lodash/omitBy.js"),
-				R = n.n(S),
-				C = n("./src/reddit/models/PostRequirements/index.ts"),
-				E = n("./src/reddit/selectors/telemetry.ts"),
+				C = n("./src/reddit/controls/LoadingIcon/index.tsx"),
+				k = n("./node_modules/lodash/omitBy.js"),
+				S = n.n(k),
+				E = n("./src/reddit/models/PostRequirements/index.ts"),
+				R = n("./src/reddit/selectors/telemetry.ts"),
 				v = n("./src/telemetry/models/PostRequirement.ts");
 			const _ = {
-					[C.a.None]: v.BodyRestrictionPolicy.Optional,
-					[C.a.NotAllowed]: v.BodyRestrictionPolicy.Disabled,
-					[C.a.Required]: v.BodyRestrictionPolicy.Required
+					[E.a.None]: v.BodyRestrictionPolicy.Optional,
+					[E.a.NotAllowed]: v.BodyRestrictionPolicy.Disabled,
+					[E.a.Required]: v.BodyRestrictionPolicy.Required
 				},
 				q = e => {
 					const t = {
@@ -118,28 +117,28 @@
 						titleTextMaxLength: e.titleTextMaxLength || void 0,
 						titleTextMinLength: e.titleTextMinLength || void 0
 					};
-					return R()(t, e => Array.isArray(e) && !e.length)
+					return S()(t, e => Array.isArray(e) && !e.length)
 				},
 				w = e => t => ({
 					source: "post_requirements",
 					action: "save",
 					noun: "settings",
-					...E.defaults(t),
+					...R.defaults(t),
 					postRequirement: q(e),
-					subreddit: E.subreddit(t),
-					userSubreddit: E.userSubreddit(t)
+					subreddit: R.subreddit(t),
+					userSubreddit: R.userSubreddit(t)
 				});
-			var L = n("./src/reddit/selectors/activeModalId.ts"),
-				B = n("./src/reddit/selectors/contentControls.ts"),
-				T = n("./src/reddit/selectors/platform.ts"),
-				N = n("./src/config.ts"),
-				P = n("./src/reddit/models/AutomatedReporting/index.ts");
-			const M = `${N.a.redditModHelpUrl}/hc/en-us/articles/360010322091`,
-				O = 2,
+			var B = n("./src/reddit/selectors/activeModalId.ts"),
+				T = n("./src/reddit/selectors/contentControls.ts"),
+				L = n("./src/reddit/selectors/platform.ts"),
+				F = n("./src/config.ts"),
+				N = n("./src/reddit/models/HatefulContentFilters/index.ts");
+			const P = `${F.a.redditModHelpUrl}/hc/en-us/articles/360010322091`,
+				M = 2,
 				D = 300,
-				F = 400,
-				j = 90,
-				I = 1e5,
+				O = 400,
+				I = 90,
+				j = 1e5,
 				A = 15,
 				H = 40,
 				W = 5,
@@ -172,7 +171,7 @@
 					},
 					bodyRequirement: {
 						enabled: !0,
-						restrictionPolicy: C.a.None
+						restrictionPolicy: E.a.None
 					},
 					bodyRequiredStrings: {
 						enabled: !1,
@@ -191,7 +190,7 @@
 					},
 					linkDomains: {
 						enabled: !1,
-						restrictionPolicy: C.b.Whitelist,
+						restrictionPolicy: E.b.Whitelist,
 						domainsText: "",
 						clientErrors: [],
 						serverErrors: []
@@ -203,42 +202,42 @@
 					flairRequirement: {
 						enabled: !1
 					},
-					automatedReporting: {
-						levelAbuse: P.a.Off,
-						levelHate: P.a.Off,
+					hatefulContentFilters: {
+						hatefulContentThresholdAbuse: N.a.Off,
+						hatefulContentThresholdIdentity: N.a.Off,
 						wordlistEnabled: !1,
 						wordlist: []
 					}
 				};
 			var G = n("./node_modules/lodash/times.js"),
-				V = n.n(G),
-				K = n("./src/lib/classNames/index.ts"),
+				K = n.n(G),
+				V = n("./src/lib/classNames/index.ts"),
 				J = n("./src/reddit/helpers/styles/mixins/loading.ts"),
-				z = n("./src/reddit/components/ModHub/ContentControls/FormPlaceholder/index.m.less"),
-				Q = n.n(z);
-			var Y = ({
+				Z = n("./src/reddit/components/ModHub/ContentControls/FormPlaceholder/index.m.less"),
+				z = n.n(Z);
+			var Q = ({
 					isLoading: e
-				}) => l.createElement("div", {
-					className: Object(K.a)(Q.a.container, Object(J.a)({
+				}) => a.createElement("div", {
+					className: Object(V.a)(z.a.container, Object(J.a)({
 						isLoading: !1
 					}))
-				}, V()(3).map(t => l.createElement("div", {
+				}, K()(3).map(t => a.createElement("div", {
 					key: t,
-					className: Q.a.section
-				}, l.createElement("div", {
-					className: Object(K.a)(Q.a.sectionTitle, Object(J.b)({
+					className: z.a.section
+				}, a.createElement("div", {
+					className: Object(V.a)(z.a.sectionTitle, Object(J.b)({
 						isLoading: e
 					}))
-				}), l.createElement("div", {
-					className: Q.a.line
-				}), V()(2).map(t => l.createElement("div", {
+				}), a.createElement("div", {
+					className: z.a.line
+				}), K()(2).map(t => a.createElement("div", {
 					key: t,
-					className: Object(K.a)(Q.a.sectionBodyRow, Object(J.b)({
+					className: Object(V.a)(z.a.sectionBodyRow, Object(J.b)({
 						isLoading: e
 					}))
 				}))))),
-				Z = n("./src/reddit/featureFlags/index.ts"),
-				X = n("./src/reddit/components/Settings/shared/Widgets.tsx"),
+				X = n("./src/reddit/featureFlags/index.ts"),
+				Y = n("./src/reddit/components/Settings/shared/Widgets.tsx"),
 				$ = n("./src/reddit/controls/ErrorText/index.tsx"),
 				ee = n("./src/reddit/controls/FormFields/index.tsx"),
 				te = n("./src/reddit/controls/RadioInput/index.tsx"),
@@ -246,19 +245,19 @@
 				se = n("./src/reddit/components/ModHub/ContentControls/LabeledControl/index.m.less"),
 				ie = n.n(se);
 			const oe = e => e.preventDefault();
-			var ae = e => d.a.createElement("div", {
-					className: Object(K.a)(e.className, ie.a.container)
+			var re = e => d.a.createElement("div", {
+					className: Object(V.a)(e.className, ie.a.container)
 				}, d.a.createElement("label", {
 					className: ie.a.label,
 					onClick: oe
 				}, d.a.createElement("div", {
 					className: ie.a.labelText
 				}, e.label), e.children)),
-				re = (e, t, n) => {
+				le = (e, t, n) => {
 					let s = Math.abs(parseInt(e, 10));
 					return Number.isInteger(s) ? (void 0 !== t && s < t && (s = t), void 0 !== n && s > n && (s = n), s) : null
 				};
-			const le = e => null !== e ? e.toString() : "",
+			const ae = e => null !== e ? e.toString() : "",
 				de = e => e.map(e => e.trim().toLowerCase()).filter(Boolean);
 			var ce = e => {
 					const {
@@ -266,27 +265,27 @@
 						max: n,
 						minLimit: i,
 						maxLimit: o
-					} = e, a = [];
-					return null !== t && (t < i || t > o) && a.push({
+					} = e, r = [];
+					return null !== t && (t < i || t > o) && r.push({
 						field: "min",
 						message: s.fbt._("Minimum must be between {min} and {max}", [s.fbt._param("min", `${i}`), s.fbt._param("max", `${o}`)], {
 							hk: "3za1lQ"
 						})
-					}), null !== n && (n < i || n > o) && a.push({
+					}), null !== n && (n < i || n > o) && r.push({
 						field: "max",
 						message: s.fbt._("Maximum must be between {min} and {max}", [s.fbt._param("min", `${i}`), s.fbt._param("max", `${o}`)], {
 							hk: "3qr1O"
 						})
-					}), !a.length && null !== t && null !== n && t > n && a.push({
+					}), !r.length && null !== t && null !== n && t > n && r.push({
 						field: "both",
 						message: s.fbt._("Maximum must be greater than or equal to minimum", null, {
 							hk: "1pXTqq"
 						})
-					}), a
+					}), r
 				},
 				me = n("./src/reddit/components/ModHub/ContentControls/MinMaxInput/index.m.less"),
 				ue = n.n(me);
-			class ge extends d.a.Component {
+			class he extends d.a.Component {
 				constructor() {
 					super(...arguments), this.minInputRef = d.a.createRef(), this.maxInputRef = d.a.createRef(), this.onChange = (e, t) => {
 						const {
@@ -294,14 +293,14 @@
 							max: s,
 							minLimit: i,
 							maxLimit: o
-						} = this.props, a = Math.min(i, 1), r = re(e.target.value, a, o), l = {
-							min: "min" === t ? r : n,
-							max: "max" === t ? r : s
+						} = this.props, r = Math.min(i, 1), l = le(e.target.value, r, o), a = {
+							min: "min" === t ? l : n,
+							max: "max" === t ? l : s
 						};
 						this.props.onChange({
-							...l,
+							...a,
 							clientErrors: ce({
-								...l,
+								...a,
 								maxLimit: o,
 								minLimit: i
 							})
@@ -311,7 +310,7 @@
 							min: e,
 							max: t
 						} = this.props, n = this.minInputRef.current, s = this.maxInputRef.current;
-						n.value = le(e), s.value = le(t)
+						n.value = ae(e), s.value = ae(t)
 					}
 				}
 				render() {
@@ -321,13 +320,13 @@
 						maxLimit: n,
 						min: i,
 						minLimit: o
-					} = this.props, a = e.map(e => e.message), r = e.some(e => "both" === e.field), l = r || e.some(e => "min" === e.field), c = r || e.some(e => "max" === e.field);
+					} = this.props, r = e.map(e => e.message), l = e.some(e => "both" === e.field), a = l || e.some(e => "min" === e.field), c = l || e.some(e => "max" === e.field);
 					return d.a.createElement("div", {
 						onBlur: this.onBlur
 					}, d.a.createElement("div", null, d.a.createElement(ee.b, {
 						className: ue.a.minInput,
 						inputRef: this.minInputRef,
-						isInvalid: l,
+						isInvalid: a,
 						label: s.fbt._("min", null, {
 							hk: "1OxOYM"
 						}),
@@ -335,7 +334,7 @@
 						min: o,
 						onChange: this.onMinChange,
 						type: "number",
-						value: le(i)
+						value: ae(i)
 					}), d.a.createElement(ee.b, {
 						className: ue.a.maxInput,
 						inputRef: this.maxInputRef,
@@ -347,20 +346,20 @@
 						min: o,
 						onChange: this.onMaxChange,
 						type: "number",
-						value: le(t)
+						value: ae(t)
 					})), d.a.createElement($.a, {
 						className: ue.a.errorMessages,
-						messages: a
+						messages: r
 					}))
 				}
 			}
-			var he = n("./src/lib/lessComponent.tsx"),
+			var ge = n("./src/lib/lessComponent.tsx"),
 				be = n("./src/reddit/featureFlags/component.tsx"),
 				pe = n("./src/reddit/components/ModHub/ContentControls/index.m.less"),
 				fe = n.n(pe);
-			const xe = he.a.wrapped(X.p, "toggleSetting", fe.a),
+			const xe = ge.a.wrapped(Y.p, "toggleSetting", fe.a),
 				ye = Object(be.a)("newPostRequirements", d.a.Fragment),
-				ke = () => d.a.createElement("a", {
+				Ce = () => d.a.createElement("a", {
 					className: fe.a.externalLink,
 					href: "https://docs.python.org/2/library/re.html#regular-expression-syntax",
 					rel: "noopener noreferrer",
@@ -368,12 +367,12 @@
 				}, s.fbt._("Python RegEx syntax", null, {
 					hk: "5NwTW"
 				})),
-				Se = e => e.regexes.map(t => {
+				ke = e => e.regexes.map(t => {
 					const n = e.serverErrors.find(e => e.regex === t);
 					return n ? n.message : ""
 				}),
-				Re = e => e.serverErrors.filter(e => null === e.regex).map(e => e.message);
-			class Ce extends d.a.Component {
+				Se = e => e.serverErrors.filter(e => null === e.regex).map(e => e.message);
+			class Ee extends d.a.Component {
 				constructor() {
 					super(...arguments), this.onToggleFlairRequirement = () => {
 						const {
@@ -462,7 +461,7 @@
 				render() {
 					const {
 						formState: e
-					} = this.props, t = e.bodyRequirement.restrictionPolicy === C.a.NotAllowed;
+					} = this.props, t = e.bodyRequirement.restrictionPolicy === E.a.NotAllowed;
 					return d.a.createElement("fieldset", null, d.a.createElement("legend", {
 						className: fe.a.sectionLegend
 					}, s.fbt._("Advanced post requirements", null, {
@@ -476,7 +475,7 @@
 						subtext: s.fbt._("Posts without flair can’t be submitted. (Note that this requirement is ignored if your community hasn’t set up flair yet.)", null, {
 							hk: "1uKE6c"
 						})
-					}), d.a.createElement(X.c, {
+					}), d.a.createElement(Y.c, {
 						className: fe.a.bodyRestrictionSetting,
 						direction: "column",
 						label: s.fbt._("Text post body", null, {
@@ -493,19 +492,19 @@
 					}, d.a.createElement(ne.a, {
 						className: fe.a.radioOption,
 						showButton: !0,
-						value: C.a.None
+						value: E.a.None
 					}, s.fbt._("Post body is optional", null, {
 						hk: "33sNwD"
 					})), d.a.createElement(ne.a, {
 						className: fe.a.radioOption,
 						showButton: !0,
-						value: C.a.Required
+						value: E.a.Required
 					}, s.fbt._("Post body is required", null, {
 						hk: "36DfJm"
 					})), d.a.createElement(ne.a, {
 						className: fe.a.radioOption,
 						showButton: !0,
-						value: C.a.NotAllowed
+						value: E.a.NotAllowed
 					}, s.fbt._("Post body is disabled", null, {
 						hk: "3MemfQ"
 					})))), d.a.createElement(xe, {
@@ -517,15 +516,15 @@
 						subtext: s.fbt._("Set a minimum and/or maximum post title length", null, {
 							hk: "aLDGs"
 						})
-					}), e.titleLength.enabled && d.a.createElement(ae, {
+					}), e.titleLength.enabled && d.a.createElement(re, {
 						label: s.fbt._("Character length", null, {
 							hk: "37rbXi"
 						})
-					}, d.a.createElement(ge, {
+					}, d.a.createElement(he, {
 						onChange: this.onTitleLengthChange,
 						min: e.titleLength.min,
 						max: e.titleLength.max,
-						minLimit: O,
+						minLimit: M,
 						maxLimit: D,
 						errors: e.titleLength.clientErrors
 					})), d.a.createElement(xe, {
@@ -534,17 +533,17 @@
 						label: s.fbt._("Use title text RegEx requirements", null, {
 							hk: "4bqbLM"
 						}),
-						subtext: s.fbt._("Use regular expressions for more advanced title matching. These use the {linkToDocumentation}", [s.fbt._param("linkToDocumentation", d.a.createElement(ke, null))], {
+						subtext: s.fbt._("Use regular expressions for more advanced title matching. These use the {linkToDocumentation}", [s.fbt._param("linkToDocumentation", d.a.createElement(Ce, null))], {
 							hk: "2rDR9r"
 						})
-					}), e.titleRegexes.enabled && d.a.createElement(ae, {
+					}), e.titleRegexes.enabled && d.a.createElement(re, {
 						label: s.fbt._("Title must match one of:", null, {
 							hk: "GtVrU"
 						})
 					}, d.a.createElement(ee.d, {
 						className: fe.a.multipleInput,
 						disabled: !1,
-						errors: Se(e.titleRegexes),
+						errors: ke(e.titleRegexes),
 						values: e.titleRegexes.regexes,
 						onChange: this.onTitleRegexChange,
 						maxLength: W,
@@ -552,7 +551,7 @@
 							hk: "3W7WpW"
 						})
 					}), d.a.createElement($.a, {
-						messages: Re(e.titleRegexes)
+						messages: Se(e.titleRegexes)
 					})), d.a.createElement(ye, null, d.a.createElement(xe, {
 						disabled: t,
 						on: e.bodyRegexes.enabled,
@@ -560,17 +559,17 @@
 						label: s.fbt._("Use body text RegEx requirements", null, {
 							hk: "2kadJl"
 						}),
-						subtext: s.fbt._("Use regular expressions for more advanced body text matching. These use the {linkToDocumentation}", [s.fbt._param("linkToDocumentation", d.a.createElement(ke, null))], {
+						subtext: s.fbt._("Use regular expressions for more advanced body text matching. These use the {linkToDocumentation}", [s.fbt._param("linkToDocumentation", d.a.createElement(Ce, null))], {
 							hk: "3mk1ff"
 						})
-					}), !t && e.bodyRegexes.enabled && d.a.createElement(ae, {
+					}), !t && e.bodyRegexes.enabled && d.a.createElement(re, {
 						label: s.fbt._("Body must match one of:", null, {
 							hk: "1pLBfl"
 						})
 					}, d.a.createElement(ee.d, {
 						className: fe.a.multipleInput,
 						disabled: !1,
-						errors: Se(e.bodyRegexes),
+						errors: ke(e.bodyRegexes),
 						values: e.bodyRegexes.regexes,
 						onChange: this.onBodyRegexChange,
 						maxLength: W,
@@ -578,19 +577,19 @@
 							hk: "3W7WpW"
 						})
 					}), d.a.createElement($.a, {
-						messages: Re(e.bodyRegexes)
+						messages: Se(e.bodyRegexes)
 					}))))
 				}
 			}
-			var Ee = n("./node_modules/lodash/difference.js"),
-				ve = n.n(Ee),
+			var Re = n("./node_modules/lodash/difference.js"),
+				ve = n.n(Re),
 				_e = n("./src/reddit/hooks/useExperimentVariant.ts"),
 				qe = n("./src/reddit/hooks/useTracking.ts"),
-				we = n("./src/lib/memoizeByReference/index.ts"),
-				Le = n("./src/reddit/components/MultiOptionSelect/index.tsx"),
-				Be = n("./src/reddit/components/ModHub/ContentControls/MultiStringsInput/index.m.less"),
-				Te = n.n(Be);
-			class Ne extends d.a.Component {
+				we = (n("./node_modules/core-js/modules/web.dom.iterable.js"), n("./src/lib/memoizeByReference/index.ts")),
+				Be = n("./src/reddit/components/MultiOptionSelect/index.tsx"),
+				Te = n("./src/reddit/components/ModHub/ContentControls/MultiStringsInput/index.m.less"),
+				Le = n.n(Te);
+			class Fe extends d.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						pendingItemText: ""
@@ -613,8 +612,8 @@
 				render() {
 					const e = this.getOptions(this.props.strings),
 						t = e.length < this.getMaxWords();
-					return d.a.createElement(d.a.Fragment, null, d.a.createElement(Le.a, {
-						className: Te.a.control,
+					return d.a.createElement(d.a.Fragment, null, d.a.createElement(Be.a, {
+						className: Le.a.control,
 						addText: s.fbt._("Add", null, {
 							hk: "2wi3d4"
 						}),
@@ -629,23 +628,23 @@
 					}), d.a.createElement($.a, {
 						messages: this.props.errors
 					}), d.a.createElement("div", {
-						className: Te.a.wordsCountdown
+						className: Le.a.wordsCountdown
 					}, s.fbt._("{selectedCount}/{maxCount} words", [s.fbt._param("selectedCount", `${e.length}`), s.fbt._param("maxCount", `${this.getMaxWords()}`)], {
 						hk: "F6evF"
 					})))
 				}
 			}
-			var Pe = n("./node_modules/lodash/clamp.js"),
-				Me = n.n(Pe),
-				Oe = n("./src/reddit/controls/DiscreteSlideSelector/Bars/index.m.less"),
-				De = n.n(Oe);
+			var Ne = n("./node_modules/lodash/clamp.js"),
+				Pe = n.n(Ne),
+				Me = n("./src/reddit/controls/DiscreteSlideSelector/Bars/index.m.less"),
+				De = n.n(Me);
 
-			function Fe(e) {
+			function Oe(e) {
 				const t = Array.from({
 					length: e.optionColors.length - 1
 				});
 				return d.a.createElement("div", {
-					className: Object(K.a)(De.a.container, e.className),
+					className: Object(V.a)(De.a.container, e.className),
 					style: {
 						gridTemplateColumns: `repeat(${t.length}, 1fr)`
 					}
@@ -658,22 +657,22 @@
 				})))
 			}
 
-			function je(e) {
+			function Ie(e) {
 				return ["0.5fr", ...Array.from({
 					length: e - 2
 				}).map(e => "1fr"), "0.5fr"].join(" ")
 			}
-			var Ie = n("./src/reddit/controls/DiscreteSlideSelector/Labels/index.m.less"),
-				Ae = n.n(Ie);
+			var je = n("./src/reddit/controls/DiscreteSlideSelector/Labels/index.m.less"),
+				Ae = n.n(je);
 
 			function He(e) {
 				return d.a.createElement("div", {
-					className: Object(K.a)(Ae.a.container, e.className),
+					className: Object(V.a)(Ae.a.container, e.className),
 					style: {
-						gridTemplateColumns: je(e.options.length)
+						gridTemplateColumns: Ie(e.options.length)
 					}
 				}, e.options.map(t => d.a.createElement("div", {
-					className: Object(K.a)(Ae.a.label, {
+					className: Object(V.a)(Ae.a.label, {
 						[Ae.a.labelSelected]: t.value === e.selected
 					}),
 					key: t.label,
@@ -685,18 +684,18 @@
 			var We = n("./node_modules/lodash/throttle.js"),
 				Ue = n.n(We),
 				Ge = n("./src/reddit/controls/DiscreteSlideSelector/ThumbRail/index.m.less"),
-				Ve = n.n(Ge);
+				Ke = n.n(Ge);
 
-			function Ke(e, t) {
+			function Ve(e, t) {
 				return 0 === e ? 0 : e === t - 1 ? -16 : -8
 			}
 
 			function Je(e) {
 				const t = d.a.useRef(!1);
 				return d.a.createElement("div", {
-					className: Object(K.a)(Ve.a.container, e.className),
+					className: Object(V.a)(Ke.a.container, e.className),
 					style: {
-						gridTemplateColumns: je(e.numStops)
+						gridTemplateColumns: Ie(e.numStops)
 					},
 					onMouseUp: e => {
 						t.current = !1
@@ -707,17 +706,17 @@
 				}, Array.from({
 					length: e.numStops
 				}).map((n, s) => d.a.createElement("div", {
-					className: Ve.a.clickArea,
+					className: Ke.a.clickArea,
 					key: s,
 					onClick: () => e.onChange(s),
 					onMouseEnter: Ue()(() => {
 						t.current && e.onChange(s)
 					}, 16)
 				})), d.a.createElement("div", {
-					className: Ve.a.thumb,
+					className: Ke.a.thumb,
 					style: {
 						left: (n = e.currentStop, s = e.numStops, `${n/(s-1)*100}%`),
-						marginLeft: Ke(e.currentStop, e.numStops)
+						marginLeft: Ve(e.currentStop, e.numStops)
 					},
 					onMouseDown: e => {
 						e.stopPropagation, t.current = !0
@@ -725,21 +724,21 @@
 				}));
 				var n, s
 			}
-			var ze = n("./src/reddit/controls/DiscreteSlideSelector/index.m.less"),
-				Qe = n.n(ze);
+			var Ze = n("./src/reddit/controls/DiscreteSlideSelector/index.m.less"),
+				ze = n.n(Ze);
 
-			function Ye(e) {
-				const t = Me()(e.options.findIndex(t => t.value === e.value), 0, e.options.length - 1);
+			function Qe(e) {
+				const t = Pe()(e.options.findIndex(t => t.value === e.value), 0, e.options.length - 1);
 				return d.a.createElement("div", {
-					className: Object(K.a)(Qe.a.container, e.className)
+					className: Object(V.a)(ze.a.container, e.className)
 				}, d.a.createElement("div", {
-					className: Qe.a.barContainer
-				}, d.a.createElement(Fe, {
-					className: Qe.a.bars,
+					className: ze.a.barContainer
+				}, d.a.createElement(Oe, {
+					className: ze.a.bars,
 					currentStop: t,
 					optionColors: e.options.map(e => e.color)
 				}), d.a.createElement(Je, {
-					className: Qe.a.thumbRail,
+					className: ze.a.thumbRail,
 					currentStop: t,
 					numStops: e.options.length,
 					onChange: t => e.onChange(e.options[t].value)
@@ -748,25 +747,25 @@
 					selected: e.value
 				}))
 			}
-			var Ze = n("./src/reddit/constants/colors.ts"),
-				Xe = n("./src/reddit/components/ModHub/ContentControls/FormSections/AutomatedReporting/LevelLabel/index.m.less"),
-				$e = n.n(Xe);
+			var Xe = n("./src/reddit/constants/colors.ts"),
+				Ye = n("./src/reddit/components/ModHub/ContentControls/FormSections/HatefulContentFilters/LevelLabel/index.m.less"),
+				$e = n.n(Ye);
 
 			function et(e) {
 				switch (e) {
-					case P.a.Off:
+					case N.a.Off:
 						return s.fbt._("Off", null, {
 							hk: "2qG3tm"
 						});
-					case P.a.Lenient:
+					case N.a.Lenient:
 						return s.fbt._("Lenient", null, {
 							hk: "25DBzd"
 						});
-					case P.a.Moderate:
+					case N.a.Moderate:
 						return s.fbt._("Moderate", null, {
 							hk: "3j1ycq"
 						});
-					case P.a.Strict:
+					case N.a.Strict:
 						return s.fbt._("Strict", null, {
 							hk: "4wBjgi"
 						})
@@ -775,26 +774,26 @@
 
 			function tt(e) {
 				switch (e) {
-					case P.a.Off:
+					case N.a.Off:
 						return "var(--newCommunityTheme-bodyText)";
-					case P.a.Lenient:
-						return Ze.a.lenient;
-					case P.a.Moderate:
-						return Ze.a.moderate;
-					case P.a.Strict:
-						return Ze.a.strict
+					case N.a.Lenient:
+						return Xe.b.lenient;
+					case N.a.Moderate:
+						return Xe.b.moderate;
+					case N.a.Strict:
+						return Xe.b.strict
 				}
 			}
 
 			function nt(e) {
 				return d.a.createElement("span", {
-					className: Object(K.a)($e.a.label, e.className),
+					className: Object(V.a)($e.a.label, e.className),
 					style: {
 						color: tt(e.level)
 					}
 				}, et(e.level), ":")
 			}
-			var st = n("./src/reddit/components/ModHub/ContentControls/FormSections/AutomatedReporting/Filter/index.m.less"),
+			var st = n("./src/reddit/components/ModHub/ContentControls/FormSections/HatefulContentFilters/Filter/index.m.less"),
 				it = n.n(st);
 
 			function ot(e) {
@@ -809,9 +808,9 @@
 				}, d.a.createElement(nt, {
 					className: it.a.levelLabel,
 					level: e.currentLevel
-				}), e.descriptions[e.currentLevel]()), d.a.createElement(Ye, {
-					options: [P.a.Off, P.a.Lenient, P.a.Moderate, P.a.Strict].map(e => ({
-						color: e === P.a.Off ? "var(--newRedditTheme-metaText)" : tt(e),
+				}), e.descriptions[e.currentLevel]()), d.a.createElement(Qe, {
+					options: [N.a.Off, N.a.Lenient, N.a.Moderate, N.a.Strict].map(e => ({
+						color: e === N.a.Off ? "var(--newRedditTheme-metaText)" : tt(e),
 						label: et(e),
 						value: e
 					})),
@@ -819,47 +818,47 @@
 					onChange: e.onChange
 				})))
 			}
-			var at = [{
-					name: "levelAbuse",
+			var rt = [{
+					name: "hatefulContentThresholdAbuse",
 					title: () => s.fbt._("Abuse and harrasment", null, {
-						hk: "379GES"
+						hk: "1F75Gw"
 					}),
 					descriptions: {
-						[P.a.Off]: () => s.fbt._("Content that is abusive and harassing will not be automatically reported and removed.", null, {
-							hk: "245iKG"
+						[N.a.Off]: () => s.fbt._("No content that contains potentially abusive language will be automatically held for review.", null, {
+							hk: "4yF6zk"
 						}),
-						[P.a.Lenient]: () => s.fbt._("Some content that contains potentially abusive language will be automatically reported and removed.", null, {
-							hk: "CidMb"
+						[N.a.Lenient]: () => s.fbt._("Some content that contains potentially abusive language will be automatically held for review.", null, {
+							hk: "4t8Kdq"
 						}),
-						[P.a.Moderate]: () => s.fbt._("Most content that contains potentially abusive language will be automatically reported and removed.", null, {
-							hk: "2ADp0f"
+						[N.a.Moderate]: () => s.fbt._("Most content that contains potentially abusive language will be automatically held for review.", null, {
+							hk: "3c5GPy"
 						}),
-						[P.a.Strict]: () => s.fbt._("All content that contains potentially abusive language will be automatically reported and removed.", null, {
-							hk: "5rSs0"
+						[N.a.Strict]: () => s.fbt._("All content that contains potentially abusive language will be automatically held for review.", null, {
+							hk: "4C6oi2"
 						})
 					}
 				}, {
-					name: "levelHate",
+					name: "hatefulContentThresholdIdentity",
 					title: () => s.fbt._("Identity based insults", null, {
-						hk: "1GXNKB"
+						hk: "92Dsx"
 					}),
 					descriptions: {
-						[P.a.Off]: () => s.fbt._("Content that is contains identity based insults will not be automatically reported and removed.", null, {
-							hk: "MsqFA"
+						[N.a.Off]: () => s.fbt._("No content that contains identity based insults will be held for review.", null, {
+							hk: "1ry3dq"
 						}),
-						[P.a.Lenient]: () => s.fbt._("Some content that contains identity based insults will be reported and removed.", null, {
-							hk: "3zG0ME"
+						[N.a.Lenient]: () => s.fbt._("Some content that contains identity based insults will be held for review.", null, {
+							hk: "4rvRfN"
 						}),
-						[P.a.Moderate]: () => s.fbt._("Most content that contains identity based insults will be reported and removed.", null, {
-							hk: "4q320Y"
+						[N.a.Moderate]: () => s.fbt._("Most content that contains identity based insults will be held for review.", null, {
+							hk: "3K50ly"
 						}),
-						[P.a.Strict]: () => s.fbt._("All content that contains identity based insults will be reported and removed.", null, {
-							hk: "YeEcS"
+						[N.a.Strict]: () => s.fbt._("All content that contains identity based insults will be held for review.", null, {
+							hk: "2Qzbxi"
 						})
 					}
 				}],
-				rt = n("./src/reddit/components/ModHub/ContentControls/FormSections/AutomatedReporting/index.m.less"),
-				lt = n.n(rt);
+				lt = n("./src/reddit/components/ModHub/ContentControls/FormSections/HatefulContentFilters/index.m.less"),
+				at = n.n(lt);
 
 			function dt(e) {
 				const {
@@ -867,22 +866,22 @@
 					onChange: n
 				} = e, i = "enabled" === Object(_e.a)("automated_reporting_wordlist"), o = Object(qe.a)();
 				return d.a.createElement("fieldset", null, d.a.createElement("legend", {
-					className: lt.a.title
+					className: at.a.title
 				}, s.fbt._("Automated Filtering", null, {
 					hk: "18gDSg"
 				})), i && d.a.createElement(d.a.Fragment, null, d.a.createElement("div", {
-					className: lt.a.description,
+					className: at.a.description,
 					key: "desc"
 				}, s.fbt._("Choose the content and keywords your community doesn’t allow. Posts and comments that violate the requirements you set will be automatically removed and reported.", null, {
 					hk: "2jHN3G"
 				})), d.a.createElement(xe, {
 					key: "toggle",
-					on: t.automatedReporting.wordlistEnabled,
+					on: t.hatefulContentFilters.wordlistEnabled,
 					onClick: () => n({
 						...t,
-						automatedReporting: {
-							...t.automatedReporting,
-							wordlistEnabled: !t.automatedReporting.wordlistEnabled
+						hatefulContentFilters: {
+							...t.hatefulContentFilters,
+							wordlistEnabled: !t.hatefulContentFilters.wordlistEnabled
 						}
 					}),
 					label: s.fbt._("Keywords", null, {
@@ -891,39 +890,39 @@
 					subtext: s.fbt._("Posts and comments with these words will automatically be removed and reported.", null, {
 						hk: "28BaGc"
 					})
-				}), t.automatedReporting.wordlistEnabled && d.a.createElement(ae, {
+				}), t.hatefulContentFilters.wordlistEnabled && d.a.createElement(re, {
 					key: "words",
 					label: s.fbt._("Add keywords to report", null, {
 						hk: "2na5FM"
 					})
-				}, d.a.createElement(Ne, {
+				}, d.a.createElement(Fe, {
 					errors: [],
 					maxWords: 1e3,
-					strings: t.automatedReporting.wordlist,
+					strings: t.hatefulContentFilters.wordlist,
 					onChange: e => {
-						const s = t.automatedReporting.wordlist,
+						const s = t.hatefulContentFilters.wordlist,
 							i = ve()(e, s),
-							a = ve()(s, e);
+							r = ve()(s, e);
 						n({
 							...t,
-							automatedReporting: {
-								...t.automatedReporting,
+							hatefulContentFilters: {
+								...t.hatefulContentFilters,
 								wordlist: e
 							}
 						}), i.forEach(e => o(t => ({
 							source: "community_settings",
 							action: "add",
 							noun: "auto_report_keyword",
-							...Object(E.defaults)(t),
+							...Object(R.defaults)(t),
 							setting: {
 								value: e,
 								oldValue: ""
 							}
-						}))), a.forEach(e => o(t => ({
+						}))), r.forEach(e => o(t => ({
 							source: "community_settings",
 							action: "remove",
 							noun: "auto_report_keyword",
-							...Object(E.defaults)(t),
+							...Object(R.defaults)(t),
 							setting: {
 								value: e,
 								oldValue: ""
@@ -931,11 +930,11 @@
 						})))
 					}
 				}))), d.a.createElement("div", {
-					className: lt.a.options
-				}, at.map(e => {
-					const s = t.automatedReporting[e.name];
+					className: at.a.options
+				}, rt.map(e => {
+					const s = t.hatefulContentFilters[e.name];
 					return d.a.createElement(ot, {
-						className: lt.a.filter,
+						className: at.a.filter,
 						key: e.name,
 						currentLevel: s,
 						name: e.name,
@@ -943,8 +942,8 @@
 						descriptions: e.descriptions,
 						onChange: s => n({
 							...t,
-							automatedReporting: {
-								...t.automatedReporting,
+							hatefulContentFilters: {
+								...t.hatefulContentFilters,
 								[e.name]: s
 							}
 						})
@@ -954,10 +953,10 @@
 			var ct = n("./src/reddit/components/CharacterCountdown/index.tsx");
 			const mt = e => e.split(/[,;\s]/).filter(Boolean),
 				ut = e => e.join(", "),
-				gt = e => ut(mt(e)),
-				ht = ["i.redd.it", "v.redd.it"],
+				ht = e => ut(mt(e)),
+				gt = ["i.redd.it", "v.redd.it"],
 				bt = /^(?:[\w-]+\.)+[\w]+$/,
-				pt = e => ht.includes(e.toLowerCase());
+				pt = e => gt.includes(e.toLowerCase());
 			var ft = e => {
 					const t = mt(e),
 						n = [],
@@ -970,21 +969,21 @@
 				},
 				xt = n("./node_modules/lodash/mapValues.js"),
 				yt = n.n(xt);
-			const kt = (e, t) => {
+			const Ct = (e, t) => {
 					const n = new Set(de(e)),
 						i = de(t).find(e => n.has(e));
 					return i ? [s.fbt._('Word "{word}" is required and banned at the same time', [s.fbt._param("word", i)], {
 						hk: "2Hyh3c"
 					}).toString()] : []
 				},
-				St = (e, t) => {
+				kt = (e, t) => {
 					if (!t) return [];
 					const n = e.find(e => e.length > t);
 					return n ? [s.fbt._('Word "{word}" is longer than maximum title length', [s.fbt._param("word", n)], {
 						hk: "48duSv"
 					}).toString()] : []
 				},
-				Rt = e => {
+				St = e => {
 					const t = e.titleRequiredStrings.enabled ? e.titleRequiredStrings.strings : [];
 					return {
 						blacklistedStrings: e.titleBlacklistedStrings.enabled ? e.titleBlacklistedStrings.strings : [],
@@ -992,15 +991,15 @@
 						requiredStrings: t
 					}
 				},
-				Ct = e => {
+				Et = e => {
 					const {
 						bodyRequirement: t,
 						bodyRequiredStrings: n,
 						bodyBlacklistedStrings: s
-					} = e, i = t.restrictionPolicy !== C.a.NotAllowed, o = t.restrictionPolicy === C.a.Required;
-					return kt(o && n.enabled ? n.strings : [], i && s.enabled ? s.strings : [])
+					} = e, i = t.restrictionPolicy !== E.a.NotAllowed, o = t.restrictionPolicy === E.a.Required;
+					return Ct(o && n.enabled ? n.strings : [], i && s.enabled ? s.strings : [])
 				},
-				Et = Ct,
+				Rt = Et,
 				vt = e => yt()(e, e => ({
 					...e
 				})),
@@ -1031,7 +1030,7 @@
 				wt = e => e.enabled && !e.guidelineText.trim() ? [s.fbt._("Guideline text cannot be empty", null, {
 					hk: "4pncO7"
 				})] : [],
-				Lt = e => {
+				Bt = e => {
 					const t = vt(e);
 					return t.guidelines.clientErrors = wt(t.guidelines), t.linkDomains.clientErrors = ft(t.linkDomains.domainsText), t.titleLength.clientErrors = (({
 						min: e,
@@ -1039,22 +1038,22 @@
 					}) => ce({
 						min: e,
 						max: t,
-						minLimit: O,
+						minLimit: M,
 						maxLimit: D
-					}))(t.titleLength), t.bodyBlacklistedStrings.clientErrors = Et(t), t.bodyRequiredStrings.clientErrors = Ct(t), t.titleBlacklistedStrings.clientErrors = (e => {
-						const t = Rt(e);
-						return [...kt(t.requiredStrings, t.blacklistedStrings), ...St(t.blacklistedStrings, t.maxTitleLength)]
+					}))(t.titleLength), t.bodyBlacklistedStrings.clientErrors = Rt(t), t.bodyRequiredStrings.clientErrors = Et(t), t.titleBlacklistedStrings.clientErrors = (e => {
+						const t = St(e);
+						return [...Ct(t.requiredStrings, t.blacklistedStrings), ...kt(t.blacklistedStrings, t.maxTitleLength)]
 					})(t), t.titleRequiredStrings.clientErrors = (e => {
-						const t = Rt(e);
-						return [...kt(t.requiredStrings, t.blacklistedStrings), ...St(t.requiredStrings, t.maxTitleLength)]
+						const t = St(e);
+						return [...Ct(t.requiredStrings, t.blacklistedStrings), ...kt(t.requiredStrings, t.maxTitleLength)]
 					})(t), t
 				},
-				Bt = e => Object.keys(e).some(t => {
-					if ("automatedReporting" === t) return !1;
+				Tt = e => Object.keys(e).some(t => {
+					if ("hatefulContentFilters" === t) return !1;
 					const n = e[t];
-					return n.enabled && !(r()(n.clientErrors) && r()(n.serverErrors))
+					return n.enabled && !(l()(n.clientErrors) && l()(n.serverErrors))
 				});
-			class Tt extends d.a.Component {
+			class Lt extends d.a.Component {
 				constructor() {
 					super(...arguments), this.onToggleGuidelines = () => {
 						const {
@@ -1205,7 +1204,7 @@
 					}, this.onLinkDomainsBlur = () => {
 						const {
 							linkDomains: e
-						} = this.props.formState, t = gt(e.domainsText), n = ft(t);
+						} = this.props.formState, t = ht(e.domainsText), n = ft(t);
 						this.props.onChange({
 							linkDomains: {
 								...e,
@@ -1216,7 +1215,7 @@
 					}, this.onRepostFrequencyChange = e => {
 						const {
 							formState: t
-						} = this.props, n = re(e.target.value, 1, j);
+						} = this.props, n = le(e.target.value, 1, I);
 						this.props.onChange({
 							repostFrequency: {
 								...t.repostFrequency,
@@ -1243,14 +1242,14 @@
 						subtext: s.fbt._("Posting guidelines let people who are new to your community or posting for the first time know what your expectations are. If you have specific flair or formatting requirements for posts, this is the place to make it clear what you’d like.", null, {
 							hk: "3wSHr6"
 						})
-					}), e.guidelines.enabled && d.a.createElement(ae, {
+					}), e.guidelines.enabled && d.a.createElement(re, {
 						label: s.fbt._("Guideline text", null, {
 							hk: "1tfXjx"
 						})
 					}, d.a.createElement("textarea", {
 						"aria-invalid": !!e.guidelines.clientErrors.length,
 						className: fe.a.textarea,
-						maxLength: F,
+						maxLength: O,
 						onChange: this.onGuidelineTextChange,
 						placeholder: s.fbt._("Example: Only make post about dogs", null, {
 							hk: "3ZbLuW"
@@ -1261,7 +1260,7 @@
 						messages: e.guidelines.clientErrors
 					}) : d.a.createElement(ct.a, {
 						className: fe.a.characterCountdown,
-						maxChars: F,
+						maxChars: O,
 						text: e.guidelines.guidelineText
 					})), d.a.createElement(xe, {
 						on: e.titleRequiredStrings.enabled,
@@ -1272,11 +1271,11 @@
 						subtext: s.fbt._("Posts without these words in the title can’t be submitted. (Choose up to 15 words, 40 characters each.)", null, {
 							hk: "4i9wtv"
 						})
-					}), e.titleRequiredStrings.enabled && d.a.createElement(ae, {
+					}), e.titleRequiredStrings.enabled && d.a.createElement(re, {
 						label: s.fbt._("Add required words", null, {
 							hk: "22VjqJ"
 						})
-					}, d.a.createElement(Ne, {
+					}, d.a.createElement(Fe, {
 						errors: e.titleRequiredStrings.clientErrors,
 						onChange: this.onTitleRequiredStringsChange,
 						strings: e.titleRequiredStrings.strings
@@ -1289,15 +1288,15 @@
 						subtext: s.fbt._("Posts with these words in the title can’t be submitted. (Choose up to 15 words, 40 characters each.)", null, {
 							hk: "3SobVK"
 						})
-					}), e.titleBlacklistedStrings.enabled && d.a.createElement(ae, {
+					}), e.titleBlacklistedStrings.enabled && d.a.createElement(re, {
 						label: s.fbt._("Add banned words", null, {
 							hk: "ZUXyb"
 						})
-					}, d.a.createElement(Ne, {
+					}, d.a.createElement(Fe, {
 						errors: e.titleBlacklistedStrings.clientErrors,
 						onChange: this.onTitleBlacklistedStringsChange,
 						strings: e.titleBlacklistedStrings.strings
-					}))), e.bodyRequirement.restrictionPolicy === C.a.Required && d.a.createElement(ye, null, d.a.createElement(xe, {
+					}))), e.bodyRequirement.restrictionPolicy === E.a.Required && d.a.createElement(ye, null, d.a.createElement(xe, {
 						on: e.bodyRequiredStrings.enabled,
 						onClick: this.onToggleBodyRequiredStrings,
 						label: s.fbt._("Require words in the post body", null, {
@@ -1306,15 +1305,15 @@
 						subtext: s.fbt._("Posts without these words in the body can’t be submitted. (Choose up to 15 words of 40 characters each)", null, {
 							hk: "1uTriP"
 						})
-					}), e.bodyRequiredStrings.enabled && d.a.createElement(ae, {
+					}), e.bodyRequiredStrings.enabled && d.a.createElement(re, {
 						label: s.fbt._("Add required words", null, {
 							hk: "1GP0o4"
 						})
-					}, d.a.createElement(Ne, {
+					}, d.a.createElement(Fe, {
 						errors: e.bodyRequiredStrings.clientErrors,
 						onChange: this.onBodyRequiredStringsChange,
 						strings: e.bodyRequiredStrings.strings
-					}))), e.bodyRequirement.restrictionPolicy !== C.a.NotAllowed && d.a.createElement(ye, null, d.a.createElement(xe, {
+					}))), e.bodyRequirement.restrictionPolicy !== E.a.NotAllowed && d.a.createElement(ye, null, d.a.createElement(xe, {
 						on: e.bodyBlacklistedStrings.enabled,
 						onClick: this.onToggleBodyBlacklistedStrings,
 						label: s.fbt._("Ban words from the post body", null, {
@@ -1323,11 +1322,11 @@
 						subtext: s.fbt._("Posts with these words in the body can’t be submitted. (Choose up to 15 words, 40 characters each.)", null, {
 							hk: "2iKz0x"
 						})
-					}), e.bodyBlacklistedStrings.enabled && d.a.createElement(ae, {
+					}), e.bodyBlacklistedStrings.enabled && d.a.createElement(re, {
 						label: s.fbt._("Add banned words", null, {
 							hk: "2VC0jp"
 						})
-					}, d.a.createElement(Ne, {
+					}, d.a.createElement(Fe, {
 						errors: e.bodyBlacklistedStrings.clientErrors,
 						onChange: this.onBodyBlacklistedStringsChange,
 						strings: e.bodyBlacklistedStrings.strings
@@ -1340,7 +1339,7 @@
 						subtext: s.fbt._("Posts with links that don’t fit your requirements can’t be submitted.", null, {
 							hk: "3CIqYb"
 						})
-					}), e.linkDomains.enabled && d.a.createElement(d.a.Fragment, null, d.a.createElement(ae, {
+					}), e.linkDomains.enabled && d.a.createElement(d.a.Fragment, null, d.a.createElement(re, {
 						label: s.fbt._("Restriction type", null, {
 							hk: "2gcn9B"
 						})
@@ -1351,17 +1350,17 @@
 					}, d.a.createElement(ne.a, {
 						className: fe.a.radioOption,
 						showButton: !0,
-						value: C.b.Whitelist
+						value: E.b.Whitelist
 					}, s.fbt._("Required domains", null, {
 						hk: "1gV6ik"
 					})), d.a.createElement(ne.a, {
 						className: fe.a.radioOption,
 						showButton: !0,
-						value: C.b.Blacklist
+						value: E.b.Blacklist
 					}, s.fbt._("Blocked domains", null, {
 						hk: "oJmGD"
-					})))), d.a.createElement(ae, {
-						label: e.linkDomains.restrictionPolicy === C.b.Whitelist ? s.fbt._("Only allow link posts with these domains", null, {
+					})))), d.a.createElement(re, {
+						label: e.linkDomains.restrictionPolicy === E.b.Whitelist ? s.fbt._("Only allow link posts with these domains", null, {
 							hk: "14eotU"
 						}) : s.fbt._("Block link posts with these domains", null, {
 							hk: "Plgix"
@@ -1369,7 +1368,7 @@
 					}, d.a.createElement("textarea", {
 						"aria-invalid": !!n.length,
 						className: fe.a.domainsTextarea,
-						maxLength: I,
+						maxLength: j,
 						onBlur: this.onLinkDomainsBlur,
 						onChange: this.onLinkDomainsTextChange,
 						placeholder: s.fbt._("Example: website.com", null, {
@@ -1395,17 +1394,17 @@
 						label: s.fbt._("number of days", null, {
 							hk: "1sPFop"
 						}),
-						max: j,
+						max: I,
 						min: 1,
 						onChange: this.onRepostFrequencyChange,
 						type: "number",
-						value: le(e.repostFrequency.days)
+						value: ae(e.repostFrequency.days)
 					}))
 				}
 			}
 
-			function Nt() {
-				return (Nt = Object.assign || function(e) {
+			function Ft() {
+				return (Ft = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var s in n) Object.prototype.hasOwnProperty.call(n, s) && (e[s] = n[s])
@@ -1413,41 +1412,41 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const Pt = Object(m.c)({
-				automatedReportingEnabled: Z.d.automatedReportingEnabled
+			const Nt = Object(m.c)({
+				hatefulContentFiltersEnabled: X.d.hatefulContentFiltersEnabled
 			});
-			var Mt = Object(c.b)(Pt)(e => d.a.createElement(d.a.Fragment, null, (e => [...e.automatedReportingEnabled ? [dt] : [], Tt, Ce])(e).map((t, n) => d.a.createElement(t, Nt({
+			var Pt = Object(c.b)(Nt)(e => d.a.createElement(d.a.Fragment, null, (e => [...e.hatefulContentFiltersEnabled ? [dt] : [], Lt, Ee])(e).map((t, n) => d.a.createElement(t, Ft({
 					key: n
 				}, e))))),
-				Ot = e => {
+				Mt = e => {
 					const {
 						bodyBlacklistedStrings: t,
 						bodyRegexes: n,
 						bodyRequiredStrings: s,
 						bodyRestrictionPolicy: i,
 						domainBlacklist: o,
-						domainWhitelist: a,
-						guidelinesText: r,
-						isFlairRequired: l,
+						domainWhitelist: r,
+						guidelinesText: l,
+						isFlairRequired: a,
 						linkRepostAge: d,
 						linkRestrictionPolicy: c,
 						titleBlacklistedStrings: m,
 						titleRegexes: u,
-						titleRequiredStrings: g,
-						titleTextMaxLength: h,
+						titleRequiredStrings: h,
+						titleTextMaxLength: g,
 						titleTextMinLength: b
 					} = e.postRequirements;
 					return {
 						...U,
-						automatedReporting: e.automatedReporting,
+						hatefulContentFilters: e.hatefulContentFilters,
 						guidelines: {
-							enabled: !(!r || !r.trim()),
-							guidelineText: r || "",
+							enabled: !(!l || !l.trim()),
+							guidelineText: l || "",
 							clientErrors: []
 						},
 						titleRequiredStrings: {
-							enabled: !!g.length,
-							strings: g,
+							enabled: !!h.length,
+							strings: h,
 							clientErrors: []
 						},
 						titleBlacklistedStrings: {
@@ -1456,16 +1455,16 @@
 							clientErrors: []
 						},
 						titleLength: {
-							enabled: null !== b || null !== h,
+							enabled: null !== b || null !== g,
 							min: b,
-							max: h,
+							max: g,
 							clientErrors: []
 						},
 						bodyRequirement: {
 							enabled: !0,
 							restrictionPolicy: i
 						},
-						...i !== C.a.NotAllowed ? {
+						...i !== E.a.NotAllowed ? {
 							bodyRequiredStrings: {
 								enabled: !!s.length,
 								strings: s,
@@ -1488,9 +1487,9 @@
 							serverErrors: []
 						},
 						linkDomains: {
-							enabled: c !== C.b.None,
-							restrictionPolicy: c === C.b.None ? C.b.Whitelist : c,
-							domainsText: c !== C.b.None ? ut(c === C.b.Whitelist ? a : o) : "",
+							enabled: c !== E.b.None,
+							restrictionPolicy: c === E.b.None ? E.b.Whitelist : c,
+							domainsText: c !== E.b.None ? ut(c === E.b.Whitelist ? r : o) : "",
 							clientErrors: [],
 							serverErrors: []
 						},
@@ -1499,7 +1498,7 @@
 							days: d
 						},
 						flairRequirement: {
-							enabled: l
+							enabled: a
 						}
 					}
 				};
@@ -1507,89 +1506,76 @@
 					bodyBlacklistedStrings: [],
 					bodyRegexes: [],
 					bodyRequiredStrings: [],
-					bodyRestrictionPolicy: C.a.None,
+					bodyRestrictionPolicy: E.a.None,
 					domainBlacklist: [],
 					domainWhitelist: [],
 					guidelinesText: null,
 					isFlairRequired: !1,
 					linkRepostAge: null,
-					linkRestrictionPolicy: C.b.None,
+					linkRestrictionPolicy: E.b.None,
 					titleBlacklistedStrings: [],
 					titleRegexes: [],
 					titleRequiredStrings: [],
 					titleTextMaxLength: null,
 					titleTextMinLength: null
 				},
-				Ft = e => e.filter(e => !!e);
-			var jt = e => {
+				Ot = e => e.filter(e => !!e);
+			var It = e => {
 					const t = {
 							...Dt,
 							bodyRestrictionPolicy: e.bodyRequirement.restrictionPolicy,
 							guidelinesText: e.guidelines.enabled ? e.guidelines.guidelineText : null,
 							isFlairRequired: e.flairRequirement.enabled,
 							linkRepostAge: e.repostFrequency.enabled ? e.repostFrequency.days : null,
-							linkRestrictionPolicy: e.linkDomains.enabled ? e.linkDomains.restrictionPolicy : C.b.None,
+							linkRestrictionPolicy: e.linkDomains.enabled ? e.linkDomains.restrictionPolicy : E.b.None,
 							titleBlacklistedStrings: e.titleBlacklistedStrings.enabled ? e.titleBlacklistedStrings.strings : [],
-							titleRegexes: e.titleRegexes.enabled ? Ft(e.titleRegexes.regexes) : [],
+							titleRegexes: e.titleRegexes.enabled ? Ot(e.titleRegexes.regexes) : [],
 							titleRequiredStrings: e.titleRequiredStrings.enabled ? e.titleRequiredStrings.strings : [],
 							titleTextMaxLength: e.titleLength.enabled ? e.titleLength.max : null,
 							titleTextMinLength: e.titleLength.enabled ? e.titleLength.min : null
 						},
-						n = e.bodyRequirement.restrictionPolicy !== C.a.NotAllowed,
-						s = e.bodyRequirement.restrictionPolicy === C.a.Required;
-					if (n && (t.bodyBlacklistedStrings = e.bodyBlacklistedStrings.enabled ? e.bodyBlacklistedStrings.strings : [], t.bodyRequiredStrings = s && e.bodyRequiredStrings.enabled ? e.bodyRequiredStrings.strings : [], t.bodyRegexes = e.bodyRegexes.enabled ? Ft(e.bodyRegexes.regexes) : []), e.linkDomains.enabled) {
+						n = e.bodyRequirement.restrictionPolicy !== E.a.NotAllowed,
+						s = e.bodyRequirement.restrictionPolicy === E.a.Required;
+					if (n && (t.bodyBlacklistedStrings = e.bodyBlacklistedStrings.enabled ? e.bodyBlacklistedStrings.strings : [], t.bodyRequiredStrings = s && e.bodyRequiredStrings.enabled ? e.bodyRequiredStrings.strings : [], t.bodyRegexes = e.bodyRegexes.enabled ? Ot(e.bodyRegexes.regexes) : []), e.linkDomains.enabled) {
 						const n = mt(e.linkDomains.domainsText);
-						e.linkDomains.restrictionPolicy === C.b.Whitelist ? t.domainWhitelist = n : e.linkDomains.restrictionPolicy === C.b.Blacklist && (t.domainBlacklist = n)
+						e.linkDomains.restrictionPolicy === E.b.Whitelist ? t.domainWhitelist = n : e.linkDomains.restrictionPolicy === E.b.Blacklist && (t.domainBlacklist = n)
 					}
 					return t
 				},
-				It = n("./node_modules/lodash/isEqual.js"),
-				At = n.n(It),
+				jt = n("./node_modules/lodash/isEqual.js"),
+				At = n.n(jt),
 				Ht = (e, t) => {
 					if (At()(e, t)) return {
-						automatedReporting: {},
+						hatefulContentFilters: {},
 						postRequirements: {}
 					};
-					const n = jt(e),
-						s = jt(t),
-						i = R()(n, (e, t) => At()(e, s[t])),
+					const n = It(e),
+						s = It(t),
+						i = S()(n, (e, t) => At()(e, s[t])),
 						o = {};
-					return Object.keys(t.automatedReporting).forEach(n => {
-						const s = t.automatedReporting[n],
-							i = e.automatedReporting[n];
+					return Object.keys(t.hatefulContentFilters).forEach(n => {
+						const s = t.hatefulContentFilters[n],
+							i = e.hatefulContentFilters[n];
 						At()(s, i) || (o[n] = i)
 					}), {
-						automatedReporting: o,
+						hatefulContentFilters: o,
 						postRequirements: i
 					}
 				};
 			const Wt = "PostReq-discard-confirmation",
-				Ut = 150;
-
-			function Gt(e) {
-				switch (e) {
-					case "levelAbuse":
-						return "harassment_control_level";
-					case "levelHate":
-						return "identity_insults_control_level";
-					case "wordlistEnabled":
-						return "auto_report_keywords";
-					default:
-						return ""
-				}
-			}
-			const Vt = Object(m.c)({
-					allowNavigationCallback: T.a,
-					isDiscardModalOpen: Object(L.b)(Wt),
-					isLoading: B.a,
-					contentControls: B.b
+				Ut = 150,
+				Gt = Object(m.c)({
+					allowNavigationCallback: L.a,
+					isDiscardModalOpen: Object(B.b)(Wt),
+					isLoading: T.a,
+					contentControls: T.b
 				}),
-				Kt = Object(c.b)(Vt, (e, t) => ({
-					closeAllModals: () => e(Object(g.f)()),
+				Kt = Object(c.b)(Gt, (e, t) => ({
+					closeAllModals: () => e(Object(h.f)()),
 					onSave: n => e(Object(u.b)(t.subredditName, n)),
-					toggleModal: t => e(Object(g.i)(t))
+					toggleModal: t => e(Object(h.i)(t))
 				}));
-			class Jt extends d.a.Component {
+			class Vt extends d.a.Component {
 				constructor(e) {
 					super(e), this.formBodyRef = d.a.createRef(), this.isUnmounted = !1, this.resetPendingNavigation = () => {
 						this.props.allowNavigationCallback && this.props.allowNavigationCallback(!1)
@@ -1597,53 +1583,37 @@
 						this.props.allowNavigationCallback && this.props.allowNavigationCallback(!0)
 					}, this.saveFormState = async () => {
 						const {
-							contentControls: e,
-							sendEvent: t
+							contentControls: e
 						} = this.props, {
-							initialFormState: n
+							initialFormState: t
 						} = this.state;
 						if (!e) return;
-						const s = Lt(this.state.formState);
-						if (Bt(s)) return void this.setState({
-							formState: s
+						const n = Bt(this.state.formState);
+						if (Tt(n)) return void this.setState({
+							formState: n
 						}, this.focusErrorField);
 						const {
-							postRequirements: i,
-							automatedReporting: o
-						} = Ht(s, n);
-						if (r()(i) && r()(o)) return;
+							postRequirements: s,
+							hatefulContentFilters: i
+						} = Ht(n, t);
+						if (l()(s) && l()(i)) return;
 						this.setState({
 							isSavePending: !0
-						}), r()(o) || Object.keys(o).filter(e => ["levelAbuse", "levelHate", "wordlistEnabled"].includes(e)).map(e => ({
-							noun: Gt(e),
-							setting: {
-								value: o[e],
-								oldValue: ""
-							}
-						})).forEach(({
-							noun: e,
-							setting: n
-						}) => t(t => ({
-							noun: e,
-							setting: n,
-							source: "community_settings",
-							action: "save",
-							...Object(E.defaults)(t)
-						})));
-						const a = await this.props.onSave({
-							automatedReporting: o,
-							postRequirements: i
+						});
+						const o = await this.props.onSave({
+							hatefulContentFilters: i,
+							postRequirements: s
 						});
 						if (!this.isUnmounted)
 							if (this.setState({
 									isSavePending: !1
-								}), a.success) this.props.sendEvent(w(jt(s))), this.setState({
-								formState: s,
-								initialFormState: s,
+								}), o.success) this.props.sendEvent(w(It(n))), this.setState({
+								formState: n,
+								initialFormState: n,
 								hasJustSaved: !0
 							});
-							else if (a.errors) {
-							const e = qt(s, a.errors);
+							else if (o.errors) {
+							const e = qt(n, o.errors);
 							this.setState({
 								formState: e
 							}, this.focusErrorField)
@@ -1654,9 +1624,9 @@
 								formState: t,
 								initialFormState: n
 							} = e, {
-								automatedReporting: s,
+								hatefulContentFilters: s,
 								postRequirements: i
-							} = Ht(t, n), o = !r()(s) || !r()(i);
+							} = Ht(t, n), o = !l()(s) || !l()(i);
 							return o !== e.hasUnsavedChanges ? {
 								hasUnsavedChanges: o
 							} : null
@@ -1680,13 +1650,13 @@
 								...n.formState,
 								...e
 							};
-							return t && (s = Lt(s)), {
+							return t && (s = Bt(s)), {
 								formState: s,
 								hasJustSaved: !1
 							}
 						})
 					};
-					const t = e.contentControls ? Ot(e.contentControls) : U;
+					const t = e.contentControls ? Mt(e.contentControls) : U;
 					this.state = {
 						areContentControlsLoaded: !!e.contentControls,
 						formState: t,
@@ -1704,7 +1674,7 @@
 						contentControls: n
 					} = this.props;
 					if (n && !this.state.areContentControlsLoaded) {
-						const e = Ot(n);
+						const e = Mt(n);
 						this.setState({
 							areContentControlsLoaded: !0,
 							formState: e,
@@ -1731,7 +1701,7 @@
 						onClick: this.onSaveClick
 					}, e.hasJustSaved ? s.fbt._("Saved", null, {
 						hk: "2dBH1t"
-					}) : e.isSavePending ? d.a.createElement(k.a, {
+					}) : e.isSavePending ? d.a.createElement(C.a, {
 						className: fe.a.loadingIcon,
 						sizePx: 10
 					}) : s.fbt._("Save changes", null, {
@@ -1741,7 +1711,7 @@
 					}, d.a.createElement(f.b, null, s.fbt._("Content controls", null, {
 						hk: "1sol1u"
 					}), d.a.createElement(p.a, {
-						linkUrl: M
+						linkUrl: P
 					})), d.a.createElement("div", {
 						className: fe.a.pageDetailText
 					}, s.fbt._("Set requirements and restrictions for how people post and comment in your community", null, {
@@ -1750,13 +1720,13 @@
 						className: fe.a.formBody,
 						onBlur: this.onFormFieldBlur,
 						ref: this.formBodyRef
-					}, d.a.createElement(Mt, {
+					}, d.a.createElement(Pt, {
 						formState: this.state.formState,
 						isLoading: t,
 						onChange: this.onFormStateChange
-					})) : d.a.createElement(Y, {
+					})) : d.a.createElement(Q, {
 						isLoading: t
-					})), d.a.createElement(h.a, {
+					})), d.a.createElement(g.a, {
 						blockOnBeforeUnload: !0,
 						dialogId: Wt,
 						enabled: i
@@ -1776,7 +1746,7 @@
 					}))
 				}
 			}
-			t.default = Kt(Object(x.c)(Jt))
+			t.default = Kt(Object(x.c)(Vt))
 		},
 		"./src/reddit/controls/DiscreteSlideSelector/Bars/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -1807,4 +1777,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.91ae03f0b538558f56e5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.7636b1e55642d6c631fb.js.map

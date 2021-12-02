@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.58cf3081bd15389fd47c.js
-// Retrieved at 12/2/2021, 5:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.5cb959c7a513b4767544.js
+// Retrieved at 12/2/2021, 6:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~ModListing", "reddit-components-BlankPost", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, n) {
@@ -6928,7 +6928,7 @@
 					});
 				return a.a.createElement(p.a, {
 					className: h.a.container,
-					color: d.b.quarantine,
+					color: d.a.quarantine,
 					icon: f,
 					subtitle: a.a.createElement("span", null, s.fbt._("This community is {=quarantined}", [s.fbt._param("=quarantined", a.a.createElement("a", {
 						className: h.a.link,
@@ -15544,7 +15544,7 @@
 			const l = n("./src/lib/lessComponent.tsx").a.wrapped(e => r.a.createElement("i", {
 				className: Object(a.a)(e.className, Object(i.b)("coins", e.isFilled)),
 				style: {
-					color: e.fillColor || o.b.gold
+					color: e.fillColor || o.a.gold
 				}
 			}), "CoinIcon", d.a);
 			t.a = l
@@ -19229,4 +19229,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.58cf3081bd15389fd47c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.5cb959c7a513b4767544.js.map

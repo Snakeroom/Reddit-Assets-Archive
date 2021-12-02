@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ViewsTooltip.cf2e343375d91bfddd77.js
-// Retrieved at 11/8/2021, 4:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ViewsTooltip.5e150eafd8cd5cd110b7.js
+// Retrieved at 12/2/2021, 6:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ViewsTooltip"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, o, l) {
@@ -508,7 +508,7 @@
 						data: i.map(({
 							value: e
 						}) => e),
-						backgroundColor: h.b.op,
+						backgroundColor: h.a.op,
 						borderRadius: 2
 					}]
 				};
@@ -599,4 +599,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ViewsTooltip.cf2e343375d91bfddd77.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ViewsTooltip.5e150eafd8cd5cd110b7.js.map

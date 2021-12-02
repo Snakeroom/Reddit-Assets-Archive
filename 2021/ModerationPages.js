@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.349b3ab4db1da6e550ab.js
-// Retrieved at 12/2/2021, 5:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.b8065a83f4310d23568a.js
+// Retrieved at 12/2/2021, 6:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -9983,7 +9983,7 @@
 						linkUrl: `${s.a.redditModHelpUrl}/hc/en-us/articles/360028091332`
 					})), !e.isUserFlairEnabled && d.a.createElement(h.a, {
 						className: ne.a.disabledBanner,
-						color: P.b.quarantine,
+						color: P.a.quarantine,
 						icon: d.a.createElement(X.a, {
 							className: ne.a.warningIcon
 						}),
@@ -12722,7 +12722,7 @@
 						linkUrl: `${s.a.redditModHelpUrl}/hc/en-us/articles/360010560371`
 					})), !n && d.a.createElement(h.a, {
 						className: M.a.emojisDisabled,
-						color: _.b.quarantine,
+						color: _.a.quarantine,
 						icon: d.a.createElement(yn, null),
 						subtitle: a.fbt._("Emojis in flairs will not be displayed, and existing emojis will appear as plain text.", null, {
 							hk: "2WaMtH"
@@ -25878,4 +25878,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.349b3ab4db1da6e550ab.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.b8065a83f4310d23568a.js.map

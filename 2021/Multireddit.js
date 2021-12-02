@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.212dcf31251916bf42c7.js
-// Retrieved at 12/2/2021, 5:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.6583f1d4e0308c32045a.js
+// Retrieved at 12/2/2021, 6:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -2198,7 +2198,7 @@
 						to: e.to
 					})
 				}),
-				z = e => !e.textColor || e.textColor && !e.backgroundColor ? Object(C.a)(e).postFlairText : "transparent" === e.backgroundColor ? Object(w.a)(Object(C.a)(e).post, y.b.black, y.b.white) : e.textColor === O.e.Dark ? y.b.black : y.b.white,
+				z = e => !e.textColor || e.textColor && !e.backgroundColor ? Object(C.a)(e).postFlairText : "transparent" === e.backgroundColor ? Object(w.a)(Object(C.a)(e).post, y.a.black, y.a.white) : e.textColor === O.e.Dark ? y.a.black : y.a.white,
 				H = p.a.wrapped(A, "TextFlair", S.a),
 				U = p.a.wrapped(M, "RichTextFlair", S.a),
 				W = e => {
@@ -2299,7 +2299,7 @@
 						return null;
 					case O.f.Oc:
 						return c.a.createElement(H, {
-							backgroundColor: y.b.alienblue,
+							backgroundColor: y.a.alienblue,
 							text: s.text,
 							textColor: O.e.Light,
 							tooltip: r.fbt._("This post is marked as Original Content [OC]", null, {
@@ -8009,4 +8009,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.212dcf31251916bf42c7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.6583f1d4e0308c32045a.js.map

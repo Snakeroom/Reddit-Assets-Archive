@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.0b2a74433db8357ddba1.js
-// Retrieved at 12/1/2021, 5:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.6d8aa77626ea3a0c3f30.js
+// Retrieved at 12/2/2021, 6:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -13041,45 +13041,45 @@
 				w = {
 					bubble: {
 						background: N(y.VANITY),
-						color: E.b.white,
-						border: E.b.transparent,
+						color: E.a.white,
+						border: E.a.transparent,
 						link: {
-							color: E.b.white,
+							color: E.a.white,
 							textDecoration: I.UNDERLINE
 						},
 						channelsFilter: {
 							background: N(y.VANITY),
-							selected: E.b.white
+							selected: E.a.white
 						}
 					}
 				},
 				k = {
 					bubble: {
 						background: N(y.SERIOUS),
-						color: E.b.white,
-						border: E.b.transparent,
+						color: E.a.white,
+						border: E.a.transparent,
 						link: {
-							color: E.b.white,
+							color: E.a.white,
 							textDecoration: I.UNDERLINE
 						},
 						channelsFilter: {
 							background: N(y.SERIOUS),
-							selected: E.b.white
+							selected: E.a.white
 						}
 					}
 				},
 				M = {
 					bubble: {
 						background: N(y.ORANGERED),
-						color: E.b.white,
-						border: E.b.transparent,
+						color: E.a.white,
+						border: E.a.transparent,
 						link: {
-							color: E.b.white,
+							color: E.a.white,
 							textDecoration: I.UNDERLINE
 						},
 						channelsFilter: {
 							background: N(y.ORANGERED),
-							selected: E.b.white
+							selected: E.a.white
 						}
 					}
 				},
@@ -13087,57 +13087,57 @@
 					activity: {
 						icon: {
 							default: _(j).actionIcon,
-							active: E.b.op,
-							disable: Object(a.a)(.5, E.b.white),
-							hover: Object(a.a)(.5, E.b.white),
+							active: E.a.op,
+							disable: Object(a.a)(.5, E.a.white),
+							hover: Object(a.a)(.5, E.a.white),
 							contrast: _(j).bodyText,
 							nsfw: {
-								bg: E.b.black,
-								text: E.b.white
+								bg: E.a.black,
+								text: E.a.white
 							}
 						},
 						text: {
 							regular: _(j).bodyText,
-							active: E.b.op,
-							fade: Object(a.a)(.4, E.b.white),
+							active: E.a.op,
+							fade: Object(a.a)(.4, E.a.white),
 							light: _(j).actionIcon,
-							warning: E.b.warning,
-							highlight: E.b.white,
-							success: E.b.approved,
+							warning: E.a.warning,
+							highlight: E.a.white,
+							success: E.a.approved,
 							meta: _(j).metaText
 						},
 						button: {
-							primary: E.b.alienblue,
+							primary: E.a.alienblue,
 							secondary: _(j).metaText,
 							chatFilterColor: b
 						},
 						buttonSecondary: {
-							active: E.b.alienblue
+							active: E.a.alienblue
 						},
 						send: {
-							disable: Object(a.a)(.5, E.b.white),
-							hover: Object(a.a)(.08, E.b.op)
+							disable: Object(a.a)(.5, E.a.white),
+							hover: Object(a.a)(.08, E.a.op)
 						},
 						checkbox: {
-							checked: E.b.alienblue,
-							checkmark: E.b.white,
+							checked: E.a.alienblue,
+							checkmark: E.a.white,
 							unchecked: _(j).body,
-							uncheckedBorder: Object(a.a)(.3, E.b.white)
+							uncheckedBorder: Object(a.a)(.3, E.a.white)
 						},
 						input: {
-							border: E.b.defaultFlair,
-							focusColor: E.b.white,
-							focusBg: E.b.approved,
+							border: E.a.defaultFlair,
+							focusColor: E.a.white,
+							focusBg: E.a.approved,
 							ownerBg: _(j).line,
 							color: _(j).bodyText,
-							error: E.b.warning,
-							channelRename: Object(a.a)(.1, E.b.white),
-							background: Object(a.f)(Object(a.a)(.3, E.b.white), .1)
+							error: E.a.warning,
+							channelRename: Object(a.a)(.1, E.a.white),
+							background: Object(a.f)(Object(a.a)(.3, E.a.white), .1)
 						},
 						link: {
-							staticUnderline: E.b.alienblue,
-							staticText: E.b.op,
-							hoverText: E.b.snoo
+							staticUnderline: E.a.alienblue,
+							staticText: E.a.op,
+							hoverText: E.a.snoo
 						},
 						minimizedPortal: {
 							backgroundColor: {
@@ -13145,30 +13145,30 @@
 								unreadFinal: _(j).highlight
 							},
 							color: {
-								unreadInitial: E.b.white,
-								unreadFinal: E.b.black
+								unreadInitial: E.a.white,
+								unreadFinal: E.a.black
 							}
 						}
 					},
 					layout: {
 						body: _(j).body,
 						colsBorder: _(j).line,
-						controlsBorder: Object(a.f)(E.b.black, .15),
+						controlsBorder: Object(a.f)(E.a.black, .15),
 						header: {
-							counterBg: E.b.snoo,
-							counterText: E.b.white
+							counterBg: E.a.snoo,
+							counterText: E.a.white
 						},
-						scrollbar: Object(a.a)(.2, E.b.white),
-						scrollbarHover: Object(a.a)(.4, E.b.white),
+						scrollbar: Object(a.a)(.2, E.a.white),
+						scrollbarHover: Object(a.a)(.4, E.a.white),
 						timeStamp: {
 							tooltip: {
 								background: _(j).body
 							}
 						},
 						dropdown: {
-							border: E.b.transparent
+							border: E.a.transparent
 						},
-						overlayBackground: E.b.overlayBackground
+						overlayBackground: E.a.overlayBackground
 					},
 					message: {
 						list: {
@@ -13177,30 +13177,30 @@
 								button: _(j).actionIcon,
 								richItem: _(j).metaText,
 								richItemBorder: _(j).postLine,
-								onlineIndicator: E.b.approved,
-								white: E.b.white
+								onlineIndicator: E.a.approved,
+								white: E.a.white
 							}
 						}
 					},
 					subreddit: {
-						iconBg: E.b.alienblue
+						iconBg: E.a.alienblue
 					},
 					sidebar: {
-						background: Object(a.f)(Object(a.a)(.3, E.b.white), .1),
+						background: Object(a.f)(Object(a.a)(.3, E.a.white), .1),
 						subreddit: {
 							background: {
-								active: E.b.alienblue,
+								active: E.a.alienblue,
 								hover: _(j).canvas
 							}
 						},
 						basic: {
 							background: {
-								active: E.b.alienblue,
+								active: E.a.alienblue,
 								hover: _(j).canvas
 							}
 						},
 						text: {
-							divider: Object(a.a)(.5, E.b.white)
+							divider: Object(a.a)(.5, E.a.white)
 						},
 						item: {
 							hover: _(j).field,
@@ -13215,9 +13215,9 @@
 						}
 					},
 					toast: {
-						pending: E.b.black,
-						success: E.b.approved,
-						error: E.b.orangered
+						pending: E.a.black,
+						success: E.a.approved,
+						error: E.a.orangered
 					},
 					skeleton: {
 						field: _(j).field,
@@ -13228,11 +13228,11 @@
 						hover: _(j).line
 					},
 					bubble: {
-						background: E.b.transparent,
+						background: E.a.transparent,
 						color: _(j).bodyText,
 						border: _(j).line,
 						link: {
-							color: E.b.op,
+							color: E.a.op,
 							textDecoration: I.NONE
 						},
 						channelsFilter: {
@@ -13265,57 +13265,57 @@
 					activity: {
 						icon: {
 							default: _(C).postIcon,
-							active: E.b.alienblue,
-							disable: Object(a.a)(.5, E.b.white),
-							hover: Object(a.a)(.5, E.b.white),
+							active: E.a.alienblue,
+							disable: Object(a.a)(.5, E.a.white),
+							hover: Object(a.a)(.5, E.a.white),
 							contrast: Object(a.a)(.4, _(C).bodyText),
 							nsfw: {
-								bg: E.b.black,
-								text: E.b.white
+								bg: E.a.black,
+								text: E.a.white
 							}
 						},
 						text: {
 							regular: _(C).bodyText,
-							active: E.b.op,
-							fade: Object(a.a)(.4, E.b.white),
+							active: E.a.op,
+							fade: Object(a.a)(.4, E.a.white),
 							light: _(C).actionIcon,
-							warning: E.b.warning,
-							highlight: E.b.white,
-							success: E.b.approved,
+							warning: E.a.warning,
+							highlight: E.a.white,
+							success: E.a.approved,
 							meta: _(C).metaText
 						},
 						button: {
-							primary: E.b.alienblue,
+							primary: E.a.alienblue,
 							secondary: _(C).metaText,
 							chatFilterColor: m
 						},
 						buttonSecondary: {
-							active: E.b.lightboxHeaderText
+							active: E.a.lightboxHeaderText
 						},
 						send: {
-							disable: Object(a.a)(.5, E.b.white),
-							hover: Object(a.a)(.08, E.b.op)
+							disable: Object(a.a)(.5, E.a.white),
+							hover: Object(a.a)(.08, E.a.op)
 						},
 						checkbox: {
-							checked: E.b.alienblue,
-							checkmark: E.b.white,
+							checked: E.a.alienblue,
+							checkmark: E.a.white,
 							unchecked: _(C).body,
-							uncheckedBorder: Object(a.a)(.3, E.b.white)
+							uncheckedBorder: Object(a.a)(.3, E.a.white)
 						},
 						input: {
-							border: E.b.defaultFlair,
-							focusColor: E.b.white,
-							focusBg: E.b.approved,
+							border: E.a.defaultFlair,
+							focusColor: E.a.white,
+							focusBg: E.a.approved,
 							ownerBg: _(C).line,
 							color: _(C).bodyText,
-							error: E.b.warning,
-							channelRename: Object(a.a)(.1, E.b.white),
-							background: Object(a.f)(Object(a.a)(.3, E.b.white), .1)
+							error: E.a.warning,
+							channelRename: Object(a.a)(.1, E.a.white),
+							background: Object(a.f)(Object(a.a)(.3, E.a.white), .1)
 						},
 						link: {
-							staticUnderline: E.b.alienblue,
-							staticText: E.b.op,
-							hoverText: E.b.snoo
+							staticUnderline: E.a.alienblue,
+							staticText: E.a.op,
+							hoverText: E.a.snoo
 						},
 						minimizedPortal: {
 							backgroundColor: {
@@ -13323,18 +13323,18 @@
 								unreadFinal: _(C).highlight
 							},
 							color: {
-								unreadInitial: E.b.white,
-								unreadFinal: E.b.white
+								unreadInitial: E.a.white,
+								unreadFinal: E.a.white
 							}
 						}
 					},
 					layout: {
 						body: _(C).body,
 						colsBorder: _(C).line,
-						controlsBorder: Object(a.f)(E.b.white, .15),
+						controlsBorder: Object(a.f)(E.a.white, .15),
 						header: {
-							counterBg: E.b.snoo,
-							counterText: E.b.white
+							counterBg: E.a.snoo,
+							counterText: E.a.white
 						},
 						scrollbar: Object(a.a)(.2, _(C).bodyText),
 						scrollbarHover: Object(a.a)(.1, _(C).bodyText),
@@ -13346,7 +13346,7 @@
 						dropdown: {
 							border: _(C).line
 						},
-						overlayBackground: E.b.overlayBackground
+						overlayBackground: E.a.overlayBackground
 					},
 					message: {
 						list: {
@@ -13355,30 +13355,30 @@
 								button: _(C).actionIcon,
 								richItem: _(C).metaText,
 								richItemBorder: v.a.metaText,
-								onlineIndicator: E.b.approved,
-								white: E.b.white
+								onlineIndicator: E.a.approved,
+								white: E.a.white
 							}
 						}
 					},
 					subreddit: {
-						iconBg: E.b.alienblue
+						iconBg: E.a.alienblue
 					},
 					sidebar: {
-						background: Object(a.f)(Object(a.a)(.4, E.b.white), .1),
+						background: Object(a.f)(Object(a.a)(.4, E.a.white), .1),
 						subreddit: {
 							background: {
-								active: E.b.alienblue,
+								active: E.a.alienblue,
 								hover: Object(a.g)(.2, _(C).canvas)
 							}
 						},
 						basic: {
 							background: {
-								active: E.b.alienblue,
+								active: E.a.alienblue,
 								hover: Object(a.g)(.2, _(C).canvas)
 							}
 						},
 						text: {
-							divider: Object(a.a)(.5, E.b.white)
+							divider: Object(a.a)(.5, E.a.white)
 						},
 						item: {
 							hover: _(C).field,
@@ -13393,9 +13393,9 @@
 						}
 					},
 					toast: {
-						pending: E.b.black,
-						success: E.b.approved,
-						error: E.b.orangered
+						pending: E.a.black,
+						success: E.a.approved,
+						error: E.a.orangered
 					},
 					skeleton: {
 						field: _(C).field,
@@ -13406,11 +13406,11 @@
 						hover: _(C).field
 					},
 					bubble: {
-						background: E.b.transparent,
+						background: E.a.transparent,
 						color: _(C).bodyText,
 						border: _(C).line,
 						link: {
-							color: E.b.op,
+							color: E.a.op,
 							textDecoration: I.NONE
 						},
 						channelsFilter: {
@@ -17251,4 +17251,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.0b2a74433db8357ddba1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.6d8aa77626ea3a0c3f30.js.map

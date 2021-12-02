@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.d11c01dd19ddf2560006.js
-// Retrieved at 12/2/2021, 5:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.f74a5d7df354462a32a7.js
+// Retrieved at 12/2/2021, 6:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~Subreddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, r) {
@@ -369,7 +369,7 @@
 						isNSFW: e.subredditOrProfile.isNSFW,
 						userName: e.subredditOrProfile.name
 					}) : (r = t, o = n)
-				} else r = e.shouldHideNsfwIcon ? `${n.a.assetPath}/img/avatar_over18.png` : e.iconUrl, o = e.primaryColor || l.b.alienblue;
+				} else r = e.shouldHideNsfwIcon ? `${n.a.assetPath}/img/avatar_over18.png` : e.iconUrl, o = e.primaryColor || l.a.alienblue;
 				return r ? d = c.a.createElement(E, {
 					alt: s.fbt._("Subreddit Icon", null, {
 						hk: "134aM1"
@@ -385,9 +385,9 @@
 						[I.a.mNightmode]: t
 					}),
 					style: t ? {
-						backgroundColor: e.redditStyle ? l.b.alienblue : o
+						backgroundColor: e.redditStyle ? l.a.alienblue : o
 					} : {
-						color: e.redditStyle ? l.b.alienblue : o
+						color: e.redditStyle ? l.a.alienblue : o
 					}
 				})), e.linkTo ? c.a.createElement("a", {
 					href: e.linkTo
@@ -2226,4 +2226,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.d11c01dd19ddf2560006.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.f74a5d7df354462a32a7.js.map

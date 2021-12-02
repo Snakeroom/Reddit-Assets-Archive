@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.691913e44eb3676a022c.js
-// Retrieved at 12/2/2021, 6:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.3c9f59e4cd1636c4aaf5.js
+// Retrieved at 12/2/2021, 6:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3313,10 +3313,10 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("153479"),
+				buildNumber: Object(r.c)("153486"),
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
-				buildTimestamp: Object(r.b)("1638484524"),
+				buildTimestamp: Object(r.b)("1638486600"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -5883,14 +5883,14 @@
 					}))
 				},
 				z = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %cd6fb8142400b6ae55a70c6fecbd3f16e3e43a82e-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %cf65c0a2af3dca6826e8ef3cd1127935284bbd683-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${v.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "d6fb8142400b6ae55a70c6fecbd3f16e3e43a82e-production",
+						release: "f65c0a2af3dca6826e8ef3cd1127935284bbd683-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6407,7 +6407,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "d6fb8142400b6ae55a70c6fecbd3f16e3e43a82e-production",
+						releaseClient: "f65c0a2af3dca6826e8ef3cd1127935284bbd683-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -15446,11 +15446,11 @@
 		},
 		"./src/reddit/constants/colors.ts": function(e, t, i) {
 			"use strict";
-			i.d(t, "b", (function() {
+			i.d(t, "a", (function() {
 				return r
 			})), i.d(t, "c", (function() {
 				return s
-			})), i.d(t, "a", (function() {
+			})), i.d(t, "b", (function() {
 				return o
 			}));
 			var n = i("./node_modules/polished/dist/polished.es.js");
@@ -17184,7 +17184,7 @@
 				a = 100,
 				l = d * (a + 1),
 				u = {
-					backgroundColor: n.b.defaultFlair,
+					backgroundColor: n.a.defaultFlair,
 					id: "",
 					modOnly: !1,
 					textColor: r.e.Dark,
@@ -19729,7 +19729,7 @@
 				h = i("./src/reddit/selectors/platform.ts"),
 				f = i("./src/reddit/selectors/subreddit.ts");
 			var b = i("./src/reddit/selectors/responsiveSettings.ts");
-			const g = new Set([].map(e => e.toLowerCase())),
+			const g = new Set(["AntiEvilPlayground", "giraeffetest"].map(e => e.toLowerCase())),
 				w = new Set(["uzitest", "testingtesting127", "kpkrunal"]);
 			var y = i("./src/reddit/featureFlags/subredditPoints.ts");
 			const v = new Set(["askaliberal", "asktransgender", "askwomen", "bisexual", "blackladies", "exchristian", "exmormon", "gendercynical", "girlgamers", "neoliberal", "nothowgirlswork", "progresspics", "subredditdrama", "teenagers", "thegirlsurvivalguide", "thequickbrowncorgi", "traaaaaaannnnnnnnnns", "transpositive", "trollxchromosomes", "twoxchromosomes"]);
@@ -19804,7 +19804,7 @@
 					subredditMentionD2xExperiment: u.l,
 					privacySettingLocationBasedRecommendations: u.l,
 					reCaptchaEnterprise: Object(u.d)(Object(u.b)(...d.d)),
-					automatedReportingEnabled: e => {
+					hatefulContentFiltersEnabled: e => {
 						const t = Object(h.d)(e);
 						return !!t && g.has(t.toLowerCase())
 					},
@@ -20719,7 +20719,7 @@
 				},
 				S = () => {
 					return {
-						backgroundColor: a.b.defaultFlair,
+						backgroundColor: a.a.defaultFlair,
 						text: "",
 						textColor: u.e.Dark,
 						type: u.f.Text
@@ -27393,12 +27393,12 @@
 					navIconFaded10: Object(n.f)(l.navIcon, .1)
 				},
 				p = {
-					downvote: s.b.downvote,
-					downvoteShaded80: Object(n.h)(.8, s.b.downvote),
-					downvoteTinted80: Object(n.i)(.8, s.b.downvote),
-					upvote: s.b.upvote,
-					upvoteShaded80: Object(n.h)(.8, s.b.upvote),
-					upvoteTinted80: Object(n.i)(.8, s.b.upvote)
+					downvote: s.a.downvote,
+					downvoteShaded80: Object(n.h)(.8, s.a.downvote),
+					downvoteTinted80: Object(n.i)(.8, s.a.downvote),
+					upvote: s.a.upvote,
+					upvoteShaded80: Object(n.h)(.8, s.a.upvote),
+					upvoteTinted80: Object(n.i)(.8, s.a.upvote)
 				},
 				m = {
 					active: "#24A0ED",
@@ -43361,4 +43361,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.691913e44eb3676a022c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.3c9f59e4cd1636c4aaf5.js.map

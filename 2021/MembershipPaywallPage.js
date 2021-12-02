@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MembershipPaywallPage.e7b4600b6e66387f44f2.js
-// Retrieved at 12/2/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MembershipPaywallPage.a868c8bf8b09bad1adde.js
+// Retrieved at 12/2/2021, 6:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MembershipPaywallPage"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1443,14 +1443,14 @@
 								return a.a.createElement(b.a, {
 									className: _.a.icon,
 									style: {
-										fill: m.b.notice
+										fill: m.a.notice
 									}
 								});
 							case w.Invalid:
 								return a.a.createElement(f.a, {
 									className: _.a.icon,
 									style: {
-										fill: m.b.warning
+										fill: m.a.warning
 									}
 								});
 							case w.Searching:
@@ -1490,9 +1490,9 @@
 			function C(e) {
 				switch (e) {
 					case w.Error:
-						return m.b.notice;
+						return m.a.notice;
 					case w.Invalid:
-						return m.b.warning
+						return m.a.warning
 				}
 			}
 			const E = Object(c.c)({
@@ -6398,4 +6398,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MembershipPaywallPage.e7b4600b6e66387f44f2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MembershipPaywallPage.a868c8bf8b09bad1adde.js.map

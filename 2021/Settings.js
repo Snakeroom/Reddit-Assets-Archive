@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.a1b8b80aa721beaca8c8.js
-// Retrieved at 12/2/2021, 5:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.ae15527e4a665ead821e.js
+// Retrieved at 12/2/2021, 6:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, n) {
@@ -3845,7 +3845,7 @@
 					index: t,
 					children: n,
 					color: r
-				} = e, i = r && Object(a.a)(r, void 0, s.b.white);
+				} = e, i = r && Object(a.a)(r, void 0, s.a.white);
 				return o.a.createElement("div", {
 					className: c.a.bullet
 				}, o.a.createElement("div", {
@@ -13348,7 +13348,7 @@
 						})), m(Object(Zo.a)(c.id)))
 					}, [d, m, c]);
 					const p = c ? c.primaryColor : "",
-						b = p && Object(Vo.a)(p, void 0, Qo.b.white);
+						b = p && Object(Vo.a)(p, void 0, Qo.a.white);
 					return s.a.createElement("div", {
 						className: Object(u.a)(t, ls.a.pointsContainer)
 					}, s.a.createElement("header", {
@@ -14321,4 +14321,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.a1b8b80aa721beaca8c8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.ae15527e4a665ead821e.js.map

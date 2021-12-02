@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.7d4044f95d6f32ebb4a1.js
-// Retrieved at 12/2/2021, 5:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.3d813d31e9870b4e166f.js
+// Retrieved at 12/2/2021, 6:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -4485,7 +4485,7 @@
 				l = s.n(c);
 			t.a = () => r.a.createElement(d.a, {
 				className: l.a.BannerBase,
-				color: i.b.locked,
+				color: i.a.locked,
 				icon: r.a.createElement(a.a, {
 					className: l.a.ArchivedIcon
 				}),
@@ -4533,7 +4533,7 @@
 				});
 				return r.a.createElement(l.a, {
 					className: u.a.bannerBase,
-					color: a.b.locked,
+					color: a.a.locked,
 					icon: p,
 					subtitle: o.fbt._("New comments cannot be posted", null, {
 						hk: "2A32Yr"
@@ -4632,7 +4632,7 @@
 					});
 				return r.a.createElement(p.a, {
 					className: b.a.container,
-					color: c.b.quarantine,
+					color: c.a.quarantine,
 					icon: g,
 					subtitle: r.a.createElement("span", null, o.fbt._("This community is {=quarantined}", [o.fbt._param("=quarantined", r.a.createElement("a", {
 						className: b.a.link,
@@ -5127,7 +5127,7 @@
 					} = e;
 					return i.a.createElement(ze.a, {
 						className: Ke.a.bannerBase,
-						color: We.b.dayModeActionIcon,
+						color: We.a.dayModeActionIcon,
 						icon: Ge,
 						title: Ue.fbt._("Posted by a blocked user", null, {
 							hk: "1Bg4AI"
@@ -5349,7 +5349,7 @@
 								hk: "3vUmEz"
 							})
 					}
-				})(o, n), d = t ? We.b.warning : We.b.dayModeActionIcon, c = (e => {
+				})(o, n), d = t ? We.a.warning : We.a.dayModeActionIcon, c = (e => {
 					let t;
 					switch (e) {
 						case F.g.AntiEvilOps:
@@ -8566,4 +8566,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.7d4044f95d6f32ebb4a1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.3d813d31e9870b4e166f.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AwardTooltip.e48c2912da37340eb474.js
-// Retrieved at 12/2/2021, 5:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AwardTooltip.5f2746cea2baacc30586.js
+// Retrieved at 12/2/2021, 6:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AwardTooltip"], {
 		"./src/reddit/components/AwardTooltip/index.m.less": function(e, t, s) {
@@ -187,7 +187,7 @@
 					} = this.props, p = e.awardSubType === h.d.Premium, u = s && n.authorId === s.id || Object(l.a)(o);
 					return a.a.createElement(_.a, {
 						caretColor: {
-							top: p ? m.b.orangered : m.b.alienblue
+							top: p ? m.a.orangered : m.a.alienblue
 						},
 						tooltipSizeEstimate: {
 							height: 290,
@@ -418,7 +418,7 @@
 			const l = s("./src/lib/lessComponent.tsx").a.wrapped(e => o.a.createElement("i", {
 				className: Object(a.a)(e.className, Object(i.b)("coins", e.isFilled)),
 				style: {
-					color: e.fillColor || n.b.gold
+					color: e.fillColor || n.a.gold
 				}
 			}), "CoinIcon", c.a);
 			t.a = l
@@ -471,7 +471,7 @@
 				cx: "18",
 				cy: "3",
 				r: "4",
-				fill: e.isUnread ? a.b.orangered : "none"
+				fill: e.isUnread ? a.a.orangered : "none"
 			}))
 		},
 		"./src/reddit/icons/svgs/Report/index.tsx": function(e, t, s) {
@@ -491,4 +491,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AwardTooltip.e48c2912da37340eb474.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AwardTooltip.5f2746cea2baacc30586.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.df250c1bd8bd535a0de0.js
-// Retrieved at 12/2/2021, 5:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.86ffbf75194d7c2ff580.js
+// Retrieved at 12/2/2021, 6:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -3642,7 +3642,7 @@
 				j = Object(d.b)(k),
 				N = Object(o.a)(e => {
 					const t = {
-							color: e.light ? h.b.lightboxHeaderText : S(e)
+							color: e.light ? h.a.lightboxHeaderText : S(e)
 						},
 						{
 							score: s,
@@ -5610,4 +5610,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.df250c1bd8bd535a0de0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.86ffbf75194d7c2ff580.js.map

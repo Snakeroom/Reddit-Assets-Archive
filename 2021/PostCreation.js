@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.9ebb33a9230af1fbc535.js
-// Retrieved at 12/2/2021, 5:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.2a8d6493087d7dc7814f.js
+// Retrieved at 12/2/2021, 6:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -27041,19 +27041,19 @@
 					switch (t) {
 						case Ye.ORIGINAL_CONTENT:
 							return {
-								backgroundColor: Xe.b.orangered, textColor: e.newCommunityTheme.body, iconColor: e.newCommunityTheme.body
+								backgroundColor: Xe.a.orangered, textColor: e.newCommunityTheme.body, iconColor: e.newCommunityTheme.body
 							};
 						case Ye.CHAT:
 							return {
-								backgroundColor: Xe.b.chat, textColor: e.newCommunityTheme.lightText, iconColor: e.newCommunityTheme.lightText
+								backgroundColor: Xe.a.chat, textColor: e.newCommunityTheme.lightText, iconColor: e.newCommunityTheme.lightText
 							};
 						case Ye.SPOILER:
 							return {
-								backgroundColor: Xe.b.spoiler, textColor: e.newCommunityTheme.lightText, iconColor: e.newCommunityTheme.lightText
+								backgroundColor: Xe.a.spoiler, textColor: e.newCommunityTheme.lightText, iconColor: e.newCommunityTheme.lightText
 							};
 						case Ye.NSFW:
 							return {
-								backgroundColor: Xe.b.nsfw, textColor: e.newCommunityTheme.body, iconColor: e.newCommunityTheme.body
+								backgroundColor: Xe.a.nsfw, textColor: e.newCommunityTheme.body, iconColor: e.newCommunityTheme.body
 							};
 						case Ye.FLAIR:
 							return {
@@ -30414,8 +30414,8 @@
 			const {
 				fbt: yd
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), Od = {
-				top: Xe.b.alienblue,
-				bottom: Xe.b.alienblue
+				top: Xe.a.alienblue,
+				bottom: Xe.a.alienblue
 			}, _d = ({
 				tooltipId: e,
 				tooltipContent: t,
@@ -33045,4 +33045,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.9ebb33a9230af1fbc535.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.2a8d6493087d7dc7814f.js.map

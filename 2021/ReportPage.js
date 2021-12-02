@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportPage.c0f0e938097a7cc29cde.js
-// Retrieved at 12/2/2021, 5:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportPage.c68d1577c470bffa003c.js
+// Retrieved at 12/2/2021, 6:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportPage"], {
 		"./src/lib/formatPythonString/index.ts": function(e, t, n) {
@@ -155,7 +155,7 @@
 			var r = n("./node_modules/@loadable/component/dist/loadable.esm.js"),
 				s = n("./src/reddit/constants/colors.ts");
 			const a = {
-				backgroundColor: s.b.overlayReportFlow
+				backgroundColor: s.a.overlayReportFlow
 			};
 			t.b = Object(r.a)({
 				resolved: {},
@@ -1837,4 +1837,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportPage.c0f0e938097a7cc29cde.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportPage.c68d1577c470bffa003c.js.map

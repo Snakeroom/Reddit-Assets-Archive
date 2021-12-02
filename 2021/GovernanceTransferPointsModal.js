@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.9568b64569559d015076.js
-// Retrieved at 11/4/2021, 4:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.43f0791c3a86e396f07e.js
+// Retrieved at 12/2/2021, 6:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceTransferPointsModal", "CryptoLibEthers"], {
 		"./node_modules/@ethersproject/address/lib.esm/index.js": function(e, t, r) {
@@ -1146,14 +1146,14 @@
 								return a.a.createElement(p.a, {
 									className: v.a.icon,
 									style: {
-										fill: u.b.notice
+										fill: u.a.notice
 									}
 								});
 							case y.Invalid:
 								return a.a.createElement(b.a, {
 									className: v.a.icon,
 									style: {
-										fill: u.b.warning
+										fill: u.a.warning
 									}
 								});
 							case y.Searching:
@@ -1193,9 +1193,9 @@
 			function w(e) {
 				switch (e) {
 					case y.Error:
-						return u.b.notice;
+						return u.a.notice;
 					case y.Invalid:
-						return u.b.warning
+						return u.a.warning
 				}
 			}
 			const I = Object(c.c)({
@@ -1293,7 +1293,7 @@
 						subredditId: a
 					}), s.a.createElement("div", {
 						style: {
-							color: f ? void 0 : E.b.warning
+							color: f ? void 0 : E.a.warning
 						}
 					}, Object(g.a)(Object(m.b)(d, null == o ? void 0 : o.displayConversion)))), s.a.createElement(x.l, {
 						disabled: !y,
@@ -1457,7 +1457,7 @@
 							return s.a.createElement(X.a, {
 								className: K.a.icon,
 								style: {
-									fill: E.b.notice
+									fill: E.a.notice
 								}
 							});
 						case Q.InvalidWalletAddress:
@@ -1466,7 +1466,7 @@
 							return s.a.createElement(Y.a, {
 								className: K.a.icon,
 								style: {
-									fill: E.b.warning
+									fill: E.a.warning
 								}
 							});
 						case Q.Searching:
@@ -1513,11 +1513,11 @@
 			function te(e) {
 				switch (e) {
 					case Q.UserDoesNotHaveAWallet:
-						return E.b.notice;
+						return E.a.notice;
 					case Q.InvalidWalletAddress:
 					case Q.InvalidUsername:
 					case Q.Error:
-						return E.b.warning
+						return E.a.warning
 				}
 			}
 			var re = r("./src/reddit/components/Governance/ModalTitle/index.tsx");
@@ -2180,4 +2180,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.9568b64569559d015076.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.43f0791c3a86e396f07e.js.map

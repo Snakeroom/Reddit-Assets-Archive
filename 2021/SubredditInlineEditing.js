@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditInlineEditing.a455f97aabe571d7c960.js
-// Retrieved at 12/2/2021, 5:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditInlineEditing.93834dd1f84711a4eeec.js
+// Retrieved at 12/2/2021, 6:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditInlineEditing"], {
 		"./src/reddit/components/CommunityTopics/NumTopicsSelected.tsx": function(e, t, s) {
@@ -774,8 +774,8 @@
 					tooltipId: t
 				}))
 			})), W = "inline-editing-topics-tooltip-", V = {
-				top: N.b.alienblue,
-				bottom: N.b.alienblue
+				top: N.a.alienblue,
+				bottom: N.a.alienblue
 			};
 			class q extends o.a.Component {
 				constructor(e) {
@@ -1647,4 +1647,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditInlineEditing.a455f97aabe571d7c960.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditInlineEditing.93834dd1f84711a4eeec.js.map

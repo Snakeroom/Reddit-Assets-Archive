@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModStatsChart.97cc78b019910b908d9f.js
-// Retrieved at 11/8/2021, 4:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModStatsChart.370cc56e58b3c4d75da2.js
+// Retrieved at 12/2/2021, 6:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModStatsChart"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, o, l) {
@@ -319,8 +319,8 @@
 				r = l("./src/reddit/components/ModHub/TrafficStats/helpers.ts"),
 				_ = l("./src/reddit/constants/colors.ts"),
 				p = l("./src/reddit/models/StructuredStyles/index.ts"),
-				b = l("./src/reddit/models/Theme/NewColorSystem/index.ts");
-			const h = (e, o) => {
+				h = l("./src/reddit/models/Theme/NewColorSystem/index.ts");
+			const b = (e, o) => {
 					return {
 						animation: {
 							duration: 0
@@ -347,7 +347,7 @@
 							x1: {
 								beginAtZero: !0,
 								grid: {
-									color: o => 0 === o.tick.value ? Object(b.a)(e).bodyText : Object(b.a)(e).placeholder
+									color: o => 0 === o.tick.value ? Object(h.a)(e).bodyText : Object(h.a)(e).placeholder
 								},
 								ticks: {
 									font: {
@@ -356,7 +356,7 @@
 									maxRotation: 0,
 									minRotation: 0,
 									maxTicksLimit: o,
-									color: Object(b.a)(e).bodyText,
+									color: Object(h.a)(e).bodyText,
 									padding: 10,
 									callback: function(o, l) {
 										return e.statsTime === r.b.Hour ? Object(r.l)(Object(r.g)(this.getLabelForValue(o))) : Object(r.n)(Object(r.g)(this.getLabelForValue(o)), e.statsTime, 0 === l)
@@ -375,7 +375,7 @@
 									maxRotation: 0,
 									minRotation: 0,
 									maxTicksLimit: o,
-									color: Object(b.a)(e).actionIcon,
+									color: Object(h.a)(e).actionIcon,
 									callback: function(o) {
 										return e.statsTime === r.b.Hour ? Object(r.k)(Object(r.g)(this.getLabelForValue(o)), e.statsTime) : ""
 									}
@@ -384,18 +384,18 @@
 							y: {
 								beginAtZero: !0,
 								grid: {
-									color: o => 0 === o.tick.value ? Object(b.a)(e).bodyText : Object(b.a)(e).placeholder
+									color: o => 0 === o.tick.value ? Object(h.a)(e).bodyText : Object(h.a)(e).placeholder
 								},
 								suggestedMin: 0,
 								ticks: {
-									color: Object(b.a)(e).bodyText,
+									color: Object(h.a)(e).bodyText,
 									callback: e => Object(n.b)(e)
 								}
 							}
 						}
 					}
 				},
-				f = [_.b.alienblue, _.b.reported, _.b.orangered, p.b[7]],
+				f = [_.a.alienblue, _.a.reported, _.a.orangered, p.b[7]],
 				g = {
 					fill: !1,
 					lineTension: 0,
@@ -424,7 +424,7 @@
 				windowEnd: _,
 				windowStart: p
 			}) => {
-				const b = l === r.d.Members ? 2 : 4,
+				const h = l === r.d.Members ? 2 : 4,
 					g = Object(d.useRef)(null),
 					v = Object(d.useRef)(null),
 					y = function(e) {
@@ -433,7 +433,7 @@
 							o.current = e
 						}, [e]), o.current
 					}(l),
-					[w, O] = Object(d.useState)(new Array(b).fill(!1)),
+					[w, O] = Object(d.useState)(new Array(h).fill(!1)),
 					[z, E] = Object(d.useState)(!1),
 					[T, R] = Object(d.useState)({
 						color: "",
@@ -460,8 +460,8 @@
 							j = null === (m = null === (n = null == t ? void 0 : t.data) || void 0 === n ? void 0 : n.labels) || void 0 === m ? void 0 : m[null === (d = null == e ? void 0 : e.dataPoints[0]) || void 0 === d ? void 0 : d.dataIndex],
 							_ = Object(r.g)(j),
 							p = e.dataPoints[0].formattedValue;
-						let b = "";
-						b = l === r.d.Members ? 0 === e.dataPoints[0].datasetIndex ? s.fbt._("Joined", null, {
+						let h = "";
+						h = l === r.d.Members ? 0 === e.dataPoints[0].datasetIndex ? s.fbt._("Joined", null, {
 							hk: "2vPXl8"
 						}) : s.fbt._("Left", null, {
 							hk: "1cy9rl"
@@ -470,18 +470,18 @@
 						}) : s.fbt._("Visited", null, {
 							hk: "Ub0qx"
 						});
-						const h = o === r.b.Hour ? Object(r.l)(_) : Object(r.k)(_, o);
+						const b = o === r.b.Hour ? Object(r.l)(_) : Object(r.k)(_, o);
 						v.current = {
 							color: a,
-							date: h,
+							date: b,
 							left: u,
 							top: i,
-							tooltipText: b,
+							tooltipText: h,
 							value: p
 						}, E(!0)
 					}, [o, l]),
 					S = {
-						...h({
+						...b({
 							data: e,
 							statsTime: o,
 							statsView: l,
@@ -748,4 +748,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModStatsChart.97cc78b019910b908d9f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModStatsChart.370cc56e58b3c4d75da2.js.map

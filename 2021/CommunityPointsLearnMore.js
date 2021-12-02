@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.1653a40fec698335653d.js
-// Retrieved at 12/2/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.746edd5c32f14d278f7d.js
+// Retrieved at 12/2/2021, 6:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityPointsLearnMore"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, o) {
@@ -1370,7 +1370,7 @@
 					index: t,
 					children: o,
 					color: n
-				} = e, s = n && Object(i.a)(n, void 0, r.b.white);
+				} = e, s = n && Object(i.a)(n, void 0, r.a.white);
 				return a.a.createElement("div", {
 					className: l.a.bullet
 				}, a.a.createElement("div", {
@@ -4394,4 +4394,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.1653a40fec698335653d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.746edd5c32f14d278f7d.js.map

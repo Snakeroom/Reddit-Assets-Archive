@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.beba565d0609e560aed3.js
-// Retrieved at 12/2/2021, 5:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.a277844cd06eccaaaf7a.js
+// Retrieved at 12/2/2021, 6:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "AchievementsActions", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -2149,7 +2149,7 @@
 						to: e.to
 					})
 				}),
-				U = e => !e.textColor || e.textColor && !e.backgroundColor ? Object(j.a)(e).postFlairText : "transparent" === e.backgroundColor ? Object(E.a)(Object(j.a)(e).post, y.b.black, y.b.white) : e.textColor === T.e.Dark ? y.b.black : y.b.white,
+				U = e => !e.textColor || e.textColor && !e.backgroundColor ? Object(j.a)(e).postFlairText : "transparent" === e.backgroundColor ? Object(E.a)(Object(j.a)(e).post, y.a.black, y.a.white) : e.textColor === T.e.Dark ? y.a.black : y.a.white,
 				H = p.a.wrapped(L, "TextFlair", S.a),
 				q = p.a.wrapped(A, "RichTextFlair", S.a),
 				W = e => {
@@ -2250,7 +2250,7 @@
 						return null;
 					case T.f.Oc:
 						return d.a.createElement(H, {
-							backgroundColor: y.b.alienblue,
+							backgroundColor: y.a.alienblue,
 							text: s.text,
 							textColor: T.e.Light,
 							tooltip: r.fbt._("This post is marked as Original Content [OC]", null, {
@@ -5089,7 +5089,7 @@
 			const l = n("./src/lib/lessComponent.tsx").a.wrapped(e => s.a.createElement("i", {
 				className: Object(i.a)(e.className, Object(a.b)("coins", e.isFilled)),
 				style: {
-					color: e.fillColor || o.b.gold
+					color: e.fillColor || o.a.gold
 				}
 			}), "CoinIcon", c.a);
 			t.a = l
@@ -5449,4 +5449,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.beba565d0609e560aed3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.a277844cd06eccaaaf7a.js.map

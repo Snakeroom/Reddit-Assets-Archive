@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GildModal.1c8102fcc2ba89c172c1.js
-// Retrieved at 10/5/2021, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GildModal.dfe392d75b36696c6f2f.js
+// Retrieved at 12/2/2021, 6:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GildModal"], {
 		"./src/reddit/components/GildModal/index.m.less": function(e, o, d) {
@@ -45,7 +45,7 @@
 					}) : null
 				}),
 				x = {
-					backgroundColor: a.b.overlayReportFlow
+					backgroundColor: a.a.overlayReportFlow
 				},
 				M = {
 					backgroundColor: "transparent"
@@ -62,4 +62,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GildModal.1c8102fcc2ba89c172c1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GildModal.dfe392d75b36696c6f2f.js.map

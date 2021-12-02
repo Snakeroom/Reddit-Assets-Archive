@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.3e8c1799ae98620e2efc.js
-// Retrieved at 12/2/2021, 5:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.2eab25bd289ec567dcc5.js
+// Retrieved at 12/2/2021, 6:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["TopWeekPostsDiscoveryUnit"], {
 		"./src/lib/getShortenedLink.ts": function(e, t, s) {
@@ -2083,11 +2083,11 @@
 					fillRule: "nonzero",
 					transform: "matrix(-1 0 0 1 43 4)"
 				}, n.a.createElement("use", {
-					fill: r.b.black,
+					fill: r.a.black,
 					filter: `url(#${s})`,
 					xlinkHref: `#${a}`
 				}), n.a.createElement("use", {
-					fill: r.b.white,
+					fill: r.a.white,
 					xlinkHref: `#${a}`
 				})), n.a.createElement("g", {
 					transform: "matrix(0 1 1 0 17.174 14.174)"
@@ -2095,14 +2095,14 @@
 					d: "M0 16h16V0H0z"
 				}), n.a.createElement("mask", {
 					id: c,
-					fill: r.b.white
+					fill: r.a.white
 				}, n.a.createElement("use", {
 					xlinkHref: `#${o}`
 				})), n.a.createElement("use", {
-					fill: r.b.black,
+					fill: r.a.black,
 					xlinkHref: `#${o}`
 				}), n.a.createElement("g", {
-					fill: r.b.alienblue,
+					fill: r.a.alienblue,
 					mask: `url(#${c})`
 				}, n.a.createElement("path", {
 					d: "M0 0h16v16H0z"
@@ -2156,11 +2156,11 @@
 					fillRule: "nonzero",
 					transform: "translate(7 4)"
 				}, n.a.createElement("use", {
-					fill: r.b.black,
+					fill: r.a.black,
 					filter: `url(#${s})`,
 					xlinkHref: `#${a}`
 				}), n.a.createElement("use", {
-					fill: r.b.white,
+					fill: r.a.white,
 					xlinkHref: `#${a}`
 				})), n.a.createElement("g", {
 					transform: "rotate(90 9.326 23.5)"
@@ -2168,14 +2168,14 @@
 					d: "M0 16h16V0H0z"
 				}), n.a.createElement("mask", {
 					id: c,
-					fill: r.b.white
+					fill: r.a.white
 				}, n.a.createElement("use", {
 					xlinkHref: `#${o}`
 				})), n.a.createElement("use", {
-					fill: r.b.black,
+					fill: r.a.black,
 					xlinkHref: `#${o}`
 				}), n.a.createElement("g", {
-					fill: r.b.alienblue,
+					fill: r.a.alienblue,
 					mask: `url(#${c})`
 				}, n.a.createElement("path", {
 					d: "M0 0h16v16H0z"
@@ -2304,4 +2304,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.3e8c1799ae98620e2efc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.2eab25bd289ec567dcc5.js.map

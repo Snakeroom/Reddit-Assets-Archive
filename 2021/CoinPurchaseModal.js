@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.d4b39f6b6f6ca5c1e405.js
-// Retrieved at 12/1/2021, 12:30:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.f220321c297144b0796c.js
+// Retrieved at 12/2/2021, 6:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinPurchaseModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, a) {
@@ -1553,7 +1553,7 @@
 				}
 				render() {
 					const e = {
-						backgroundColor: g.b.overlayReportFlow,
+						backgroundColor: g.a.overlayReportFlow,
 						...this.props.isIframed ? {
 							zIndex: i.a,
 							paddingTop: 12,
@@ -1816,4 +1816,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.d4b39f6b6f6ca5c1e405.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.f220321c297144b0796c.js.map

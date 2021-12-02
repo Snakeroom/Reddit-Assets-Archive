@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/0.4b107cc7566871fced6c.js
-// Retrieved at 12/2/2021, 11:20:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/0.bed319a71db632d7141b.js
+// Retrieved at 12/2/2021, 6:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	[0], {
 		"./src/reddit/icons/svgs/Admin/index.m.less": function(e, s, t) {
@@ -662,11 +662,11 @@
 					fillRule: "nonzero",
 					transform: "matrix(-1 0 0 1 43 4)"
 				}, c.a.createElement("use", {
-					fill: n.b.black,
+					fill: n.a.black,
 					filter: `url(#${t})`,
 					xlinkHref: `#${a}`
 				}), c.a.createElement("use", {
-					fill: n.b.white,
+					fill: n.a.white,
 					xlinkHref: `#${a}`
 				})), c.a.createElement("g", {
 					transform: "matrix(0 1 1 0 17.174 14.174)"
@@ -674,14 +674,14 @@
 					d: "M0 16h16V0H0z"
 				}), c.a.createElement("mask", {
 					id: l,
-					fill: n.b.white
+					fill: n.a.white
 				}, c.a.createElement("use", {
 					xlinkHref: `#${r}`
 				})), c.a.createElement("use", {
-					fill: n.b.black,
+					fill: n.a.black,
 					xlinkHref: `#${r}`
 				}), c.a.createElement("g", {
-					fill: n.b.alienblue,
+					fill: n.a.alienblue,
 					mask: `url(#${l})`
 				}, c.a.createElement("path", {
 					d: "M0 0h16v16H0z"
@@ -735,11 +735,11 @@
 					fillRule: "nonzero",
 					transform: "translate(7 4)"
 				}, c.a.createElement("use", {
-					fill: n.b.black,
+					fill: n.a.black,
 					filter: `url(#${t})`,
 					xlinkHref: `#${a}`
 				}), c.a.createElement("use", {
-					fill: n.b.white,
+					fill: n.a.white,
 					xlinkHref: `#${a}`
 				})), c.a.createElement("g", {
 					transform: "rotate(90 9.326 23.5)"
@@ -747,14 +747,14 @@
 					d: "M0 16h16V0H0z"
 				}), c.a.createElement("mask", {
 					id: l,
-					fill: n.b.white
+					fill: n.a.white
 				}, c.a.createElement("use", {
 					xlinkHref: `#${r}`
 				})), c.a.createElement("use", {
-					fill: n.b.black,
+					fill: n.a.black,
 					xlinkHref: `#${r}`
 				}), c.a.createElement("g", {
-					fill: n.b.alienblue,
+					fill: n.a.alienblue,
 					mask: `url(#${l})`
 				}, c.a.createElement("path", {
 					d: "M0 0h16v16H0z"
@@ -2154,7 +2154,7 @@
 				cx: "18",
 				cy: "3",
 				r: "4",
-				fill: e.isUnread ? n.b.orangered : "none"
+				fill: e.isUnread ? n.a.orangered : "none"
 			}))
 		},
 		"./src/reddit/icons/svgs/Negative/index.tsx": function(e, s, t) {
@@ -2900,7 +2900,7 @@
 				viewBox: "0 0 20 20",
 				className: e.className
 			}, c.a.createElement("g", null, c.a.createElement("circle", {
-				fill: n.b.snoo,
+				fill: n.a.snoo,
 				cx: "10",
 				cy: "10",
 				r: "10"
@@ -4339,7 +4339,7 @@
 			}, c.a.createElement("path", {
 				d: "M54.63,16.52V7.68h1a1,1,0,0,0,1.09-1V6.65a1,1,0,0,0-.93-1.12H54.63V3.88a1.23,1.23,0,0,0-1.12-1.23,1.2,1.2,0,0,0-1.27,1.11V5.55h-1a1,1,0,0,0-1.09,1v.07a1,1,0,0,0,.93,1.12h1.13v8.81a1.19,1.19,0,0,0,1.19,1.19h0a1.19,1.19,0,0,0,1.25-1.12A.17.17,0,0,0,54.63,16.52Z"
 			}), c.a.createElement("circle", {
-				fill: i.b.snoo,
+				fill: i.a.snoo,
 				cx: "47.26",
 				cy: "3.44",
 				r: "2.12"
@@ -4414,7 +4414,7 @@
 				cx: "16",
 				cy: "4",
 				r: "3",
-				fill: s ? d.b.orangered : "none"
+				fill: s ? d.a.orangered : "none"
 			})));
 			t("./src/reddit/icons/svgs/ImagePost/index.tsx"), t("./src/reddit/icons/svgs/ImageUpload/index.tsx"), t("./src/reddit/icons/svgs/Info/index.tsx"), t("./src/reddit/icons/svgs/KarmaGray/index.m.less");
 			t("./src/reddit/icons/svgs/Link/index.tsx"), t("./src/reddit/icons/svgs/Location/index.tsx"), t("./src/reddit/icons/svgs/Lock/index.tsx");
@@ -4438,4 +4438,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/0.4b107cc7566871fced6c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/0.bed319a71db632d7141b.js.map
