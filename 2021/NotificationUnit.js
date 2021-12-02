@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NotificationUnit.445eb5b004343d77a598.js
-// Retrieved at 12/2/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationUnit.9257e9af7e67910dc2c1.js
+// Retrieved at 12/2/2021, 5:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationUnit"], {
 		"./src/reddit/components/NotificationUnit/Avatar.tsx": function(e, t, i) {
@@ -408,8 +408,8 @@
 					const P = Object(f.a)(),
 						H = Object(E.d)(),
 						L = Object(E.e)(O.X),
-						B = Object(E.e)(g.b),
-						F = Object(E.e)(g.c),
+						F = Object(E.e)(g.b),
+						B = Object(E.e)(g.c),
 						V = Object(E.e)(g.a),
 						[W, z] = Object(o.useState)(!1),
 						{
@@ -438,7 +438,7 @@
 					} = G, ce = null == Q ? void 0 : Q.messageType, me = null === (i = null === (t = null == Q ? void 0 : Q.comment) || void 0 === t ? void 0 : t.parent) || void 0 === i ? void 0 : i.id, ue = null === (n = null == Q ? void 0 : Q.post) || void 0 === n ? void 0 : n.id, pe = null == Q ? void 0 : Q.post, be = null === (T = null == Q ? void 0 : Q.subreddit) || void 0 === T ? void 0 : T.id, fe = null == Q ? void 0 : Q.isBodyHidden, ve = null == Q ? void 0 : Q.isPostHidden, Ee = !re, xe = `notif-${K?"tooltip":""}-menu-${se}`, Ne = xe === Y, ge = ce === v.a.CommentReply ? me : ue, Oe = Object(r.a)(e.className, h.a.notificationItem, {
 						[h.a.unread]: Ee,
 						[h.a.isNightMode]: L
-					}), Te = B || V || F, he = {
+					}), Te = F || V || B, he = {
 						id: se,
 						isClicked: !!re,
 						isViewed: !0,
@@ -494,9 +494,9 @@
 						isUnread: Ee,
 						isFullWidth: K,
 						onEvent: ke,
-						isInboxCTAsReplyEnabled: B,
+						isInboxCTAsReplyEnabled: F,
 						isInboxCTAsAllEnabled: V,
-						isInboxCTAsSeePostEnabled: F,
+						isInboxCTAsSeePostEnabled: B,
 						deeplinkUrl: ee,
 						isNightMode: L
 					}))), Re = {
@@ -727,13 +727,13 @@
 				r = i("./src/reddit/selectors/user.ts");
 			const l = e => Object(r.J)(e) || Object(r.K)(e),
 				d = Object(n.a)(e => Object(o.c)(e, {
-					experimentName: a.yd,
+					experimentName: a.Cd,
 					experimentEligibilitySelector: l
 				}), s.a),
-				c = Object(n.a)(d, e => e === a.Bd.SeePostCTAs),
-				m = Object(n.a)(d, e => e === a.Bd.ReplyCTAs),
-				u = Object(n.a)(d, e => e === a.Bd.AllCTAs)
+				c = Object(n.a)(d, e => e === a.Fd.SeePostCTAs),
+				m = Object(n.a)(d, e => e === a.Fd.ReplyCTAs),
+				u = Object(n.a)(d, e => e === a.Fd.AllCTAs)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationUnit.445eb5b004343d77a598.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationUnit.9257e9af7e67910dc2c1.js.map

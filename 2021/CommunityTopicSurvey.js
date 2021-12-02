@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.6821830c4d1c700992d0.js
-// Retrieved at 12/2/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.940b4e0eafc4ad7e3f35.js
+// Retrieved at 12/2/2021, 5:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityTopicSurvey"], {
 		"./node_modules/react-uid/dist/es2015/hooks.js": function(e, t, n) {
@@ -192,15 +192,15 @@
 				return 0 === n.length ? o.a.createElement(o.a.Fragment, null, t) : o.a.createElement(o.a.Fragment, null, n[0], o.a.createElement(N.a, {
 					isFeatureFlagEnabled: !0,
 					isUserInTreatment: !0,
-					userVariant: w.Ue.SmIconHc,
+					userVariant: w.Ye.SmIconHc,
 					subredditName: n[1].split("/")[1],
 					rtJsonElementProps: {}
 				}), n[2])
 			}
-			var U = n("./src/reddit/components/CommunityTopicSurvey/index.m.less"),
-				M = n.n(U);
+			var M = n("./src/reddit/components/CommunityTopicSurvey/index.m.less"),
+				R = n.n(M);
 
-			function R(e) {
+			function U(e) {
 				const {
 					questionId: t,
 					questionText: n,
@@ -209,18 +209,18 @@
 					onClose: c
 				} = e, [a, u] = Object(s.useState)([]);
 				return o.a.createElement("div", {
-					className: Object(v.a)(M.a.survey, i && M.a.inFeed),
+					className: Object(v.a)(R.a.survey, i && R.a.inFeed),
 					"data-survey": !0,
 					onClick: e => e.stopPropagation()
 				}, o.a.createElement(B.a, {
-					className: M.a.closeButton,
+					className: R.a.closeButton,
 					onClick: () => c(t)
 				}, o.a.createElement(y.b, null), o.a.createElement("span", {
-					className: M.a.closeText
+					className: R.a.closeText
 				}, r.fbt._("Close", null, {
 					hk: "4gbyAA"
 				}))), o.a.createElement("p", {
-					className: M.a.question
+					className: R.a.question
 				}, o.a.createElement(D, null, n)), o.a.createElement(k, {
 					options: d,
 					onChange: function(n) {
@@ -228,7 +228,7 @@
 						u(n), null === (r = e.onSelect) || void 0 === r || r.call(e, t, n)
 					}
 				}), o.a.createElement(C.l, {
-					className: M.a.submitButton,
+					className: R.a.submitButton,
 					redditStyle: !0,
 					role: "submit",
 					onClick: async function() {
@@ -250,20 +250,20 @@
 					inFeed: a
 				} = e, [u, l] = Object(s.useState)([]);
 				return o.a.createElement("div", {
-					className: Object(v.a)(M.a.survey, a && M.a.inFeed),
+					className: Object(v.a)(R.a.survey, a && R.a.inFeed),
 					"data-survey": !0,
 					onClick: e => e.stopPropagation()
 				}, o.a.createElement(B.a, {
-					className: M.a.closeButton,
+					className: R.a.closeButton,
 					onClick: () => i(t)
 				}, o.a.createElement(y.b, null), o.a.createElement("span", {
-					className: M.a.closeText
+					className: R.a.closeText
 				}, r.fbt._("Close", null, {
 					hk: "4gbyAA"
 				}))), o.a.createElement("p", {
-					className: M.a.question
+					className: R.a.question
 				}, o.a.createElement(D, null, n)), o.a.createElement("div", {
-					className: M.a.buttonGroup
+					className: R.a.buttonGroup
 				}, o.a.createElement(k, {
 					onChange: function(n) {
 						var r;
@@ -274,7 +274,7 @@
 						isMutuallyExclusive: !0
 					}))
 				})), !c && o.a.createElement(C.l, {
-					className: M.a.submitButton,
+					className: R.a.submitButton,
 					redditStyle: !0,
 					role: "submit",
 					onClick: async function() {
@@ -340,7 +340,7 @@
 				}
 				switch (O.type) {
 					case S.d.Multi:
-						return o.a.createElement(R, {
+						return o.a.createElement(U, {
 							key: O.id,
 							questionId: O.id,
 							questionText: O.questionText,
@@ -781,12 +781,12 @@
 						rtJsonElementProps: o
 					});
 					switch (r) {
-						case _.Ue.SmIcon:
+						case _.Ye.SmIcon:
 							return s.a.createElement(b, {
 								subredditName: n,
 								rtJsonElementProps: o
 							});
-						case _.Ue.SmIconHc:
+						case _.Ye.SmIconHc:
 							return s.a.createElement(b, {
 								subredditName: n,
 								isHoverable: !0,
@@ -1057,12 +1057,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: r.Ne
+						experimentName: r.Re
 					}) || ""
 				},
 				a = e => {
 					const t = c(e);
-					return t === r.Ue.SmIcon || t === r.Ue.SmIconHc
+					return t === r.Ye.SmIcon || t === r.Ye.SmIconHc
 				},
 				u = (e, {
 					subredditName: t
@@ -1088,4 +1088,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.6821830c4d1c700992d0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.940b4e0eafc4ad7e3f35.js.map

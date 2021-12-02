@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.290f8a1e6b592a4b7699.js
-// Retrieved at 12/2/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.7f191a3eb62c3801edf5.js
+// Retrieved at 12/2/2021, 5:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -284,16 +284,16 @@
 			const p = Object(a.a)(e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
-					experimentName: m.Nd
+					experimentName: m.Rd
 				});
-				return Object(m.uf)(t) ? void 0 : t
+				return Object(m.yf)(t) ? void 0 : t
 			}, e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
-					experimentName: m.Od
+					experimentName: m.Sd
 				});
-				return Object(m.uf)(t) ? void 0 : t
-			}, (e, t) => e === m.Rd.Enabled && t === m.Rd.Enabled);
+				return Object(m.yf)(t) ? void 0 : t
+			}, (e, t) => e === m.Vd.Enabled && t === m.Vd.Enabled);
 			var h = s("./src/config.ts");
 			var b = s("./src/reddit/selectors/user.ts");
 			const v = e => {
@@ -1332,9 +1332,9 @@
 							a = Object(ee.H)(s(), {
 								identifier: D.belongsTo
 							});
-						if (a && (e => V.Ge.Redirect === Object(B.b)(e, {
+						if (a && (e => V.Ke.Redirect === Object(B.b)(e, {
 								experimentEligibilitySelector: Y,
-								experimentName: V.ze
+								experimentName: V.De
 							}))(s())) return void t(Object(o.c)(a.url));
 						if ((D.media && D.media.type) === M.o.LIVEVIDEO) {
 							const e = `/rpan${D.belongsTo.type===k.a.SUBREDDIT?a.url:"/"}${Object(p.u)(D.id)}`;
@@ -6544,7 +6544,7 @@
 				a = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const i = e => {
 					const t = Object(a.a)(e);
-					return Boolean(t) && !Object(n.uf)(t)
+					return Boolean(t) && !Object(n.yf)(t)
 				},
 				d = Object(o.a)(i, r.d, (e, t) => e && !t)
 		},
@@ -6562,4 +6562,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.290f8a1e6b592a4b7699.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.7f191a3eb62c3801edf5.js.map
