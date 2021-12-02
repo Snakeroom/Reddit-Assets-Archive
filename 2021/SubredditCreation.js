@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditCreation.54b647656810ee5b3769.js
-// Retrieved at 12/2/2021, 2:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditCreation.edab87b520e6181c681a.js
+// Retrieved at 12/2/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditCreation"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -251,7 +251,7 @@
 			n.d(t, "n", (function() {
 				return Y
 			})), n.d(t, "k", (function() {
-				return X
+				return q
 			})), n.d(t, "o", (function() {
 				return U
 			})), n.d(t, "f", (function() {
@@ -362,7 +362,7 @@
 				K = C.a.div("ControlContainer", A.a),
 				Q = C.a.div("TextContainer", A.a),
 				z = C.a.div("ActionContainer", A.a),
-				X = ({
+				q = ({
 					className: e,
 					direction: t,
 					isCreateCommunity: n,
@@ -383,12 +383,12 @@
 						[A.a.isNightModeOn]: !!s
 					})
 				})),
-				q = C.a.a("Link", A.a),
-				U = C.a.wrapped(q, "SubtextLink", A.a),
+				X = C.a.a("Link", A.a),
+				U = C.a.wrapped(X, "SubtextLink", A.a),
 				Z = C.a.wrapped(T.a, "LinkIcon", A.a),
 				$ = C.a.button("LinkButton", A.a),
 				ee = C.a.wrapped(O.a, "ArrowRight", A.a),
-				te = e => r.a.createElement(X, {
+				te = e => r.a.createElement(q, {
 					direction: e.direction,
 					disabled: e.disabled,
 					indent: e.indent,
@@ -412,7 +412,7 @@
 				},
 				oe = e => {
 					const t = Object(o.a)();
-					return r.a.createElement(X, {
+					return r.a.createElement(q, {
 						className: e.className,
 						disabled: e.disabled,
 						indent: e.indent,
@@ -438,7 +438,7 @@
 				ue = Object(i.c)({
 					isNightModeOn: L.X
 				}),
-				pe = Object(s.b)(ue)(e => r.a.createElement(X, {
+				pe = Object(s.b)(ue)(e => r.a.createElement(q, {
 					last: e.last,
 					indent: e.indent,
 					disabled: e.disabled,
@@ -478,28 +478,28 @@
 						color: t === e.value.toString() ? e.ticks[t].color : "#878A8C"
 					}
 				}, e.ticks[t].text))))))),
-				he = e => r.a.createElement(X, {
+				he = e => r.a.createElement(q, {
 					last: e.last,
 					indent: e.indent,
 					disabled: e.disabled
 				}, r.a.createElement(Q, null, r.a.createElement(M.a, null, r.a.createElement(V, null, e.label)), r.a.createElement(Y, null, e.subtext)), r.a.createElement(z, null, r.a.createElement(K, null, r.a.createElement(R.o, {
 					onClick: e.onClick
 				}, e.actionText)))),
-				be = e => r.a.createElement(X, {
+				be = e => r.a.createElement(q, {
 					className: e.className,
 					last: e.last,
 					indent: e.indent,
 					disabled: e.disabled
-				}, r.a.createElement(Q, null, r.a.createElement(q, {
+				}, r.a.createElement(Q, null, r.a.createElement(X, {
 					href: e.link,
 					onClick: e.onClick,
 					target: e.openInNewTab ? "_blank" : void 0
-				}, e.label, r.a.createElement(Z, null)), r.a.createElement(Y, null, e.subtext)), r.a.createElement(z, null, r.a.createElement(q, {
+				}, e.label, r.a.createElement(Z, null)), r.a.createElement(Y, null, e.subtext)), r.a.createElement(z, null, r.a.createElement(X, {
 					href: e.link,
 					onClick: e.onClick,
 					target: e.openInNewTab ? "_blank" : void 0
 				}, r.a.createElement(ee, null)))),
-				xe = e => r.a.createElement(X, {
+				xe = e => r.a.createElement(q, {
 					className: e.className,
 					disabled: e.disabled,
 					indent: e.indent,
@@ -530,7 +530,7 @@
 							tooltipId: t.id
 						}))
 					}
-				}))(e => r.a.createElement(X, {
+				}))(e => r.a.createElement(q, {
 					last: e.last,
 					indent: e.indent,
 					disabled: e.disabled
@@ -569,7 +569,7 @@
 						{
 							items: l
 						} = o;
-					return r.a.createElement(X, {
+					return r.a.createElement(q, {
 						disabled: e
 					}, r.a.createElement(Q, null, r.a.createElement("label", {
 						htmlFor: o.id
@@ -577,7 +577,7 @@
 						className: o.labelClassname
 					}, o.label)), r.a.createElement(Y, null, o.subtext)), r.a.createElement("div", {
 						className: A.a.Wrapper__LineBreak
-					}), r.a.createElement(X, {
+					}), r.a.createElement(q, {
 						last: t,
 						indent: !0,
 						disabled: e
@@ -595,7 +595,7 @@
 						value: e
 					}, t)))))
 				},
-				ve = e => r.a.createElement(X, {
+				ve = e => r.a.createElement(q, {
 					className: e.className,
 					direction: e.direction,
 					disabled: e.disabled,
@@ -953,8 +953,8 @@
 				K = n.n(J),
 				Q = n("./src/lib/lessComponent.tsx");
 			const z = 21,
-				X = "create-title-info",
-				q = Q.a.wrapped(M.a, "Info", K.a),
+				q = "create-title-info",
+				X = Q.a.wrapped(M.a, "Info", K.a),
 				U = Q.a.wrapped(w.a, "RadioOption", K.a),
 				Z = Q.a.wrapped(h.c, "Tooltip", K.a),
 				$ = Q.a.wrapped(F.a, "Public", K.a),
@@ -981,7 +981,7 @@
 					clearErrors: () => e(Object(m.f)()),
 					onCloseModal: () => e(Object(d.g)(_.a.SUBREDDIT_CREATION_MODAL_ID)),
 					onShowTooltip: () => e(Object(u.f)({
-						tooltipId: X
+						tooltipId: q
 					})),
 					onHideTooltip: () => e(Object(u.i)()),
 					validateSubredditName: t => e(Object(m.i)(t))
@@ -1164,14 +1164,14 @@
 						}, a.fbt._("Community names including capitalization cannot be changed.", null, {
 							hk: "VjrZg"
 						}), s.a.createElement("span", {
-							id: X,
+							id: q,
 							onMouseEnter: i,
 							onMouseLeave: o,
 							className: K.a.info
-						}, s.a.createElement(q, null), s.a.createElement(Z, {
+						}, s.a.createElement(X, null), s.a.createElement(Z, {
 							className: K.a.StyledTooltip,
 							caretOnTop: !0,
-							tooltipId: X,
+							tooltipId: q,
 							text: a.fbt._('Names cannot have spaces (e.g., "r/bookclub" not "r/book club"), must be between 3-21 characters, and underscores ("_") are the only special characters allowed. Avoid using solely trademarked names (e.g., "r/FansOfAcme" not "r/Acme").', null, {
 								hk: "3RsycS"
 							})
@@ -1805,11 +1805,11 @@
 			const s = e => {
 				const t = Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: a.Xc
+					experimentName: a.Yc
 				});
-				return !(!t || Object(a.tf)(t))
+				return !(!t || Object(a.uf)(t))
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.54b647656810ee5b3769.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.edab87b520e6181c681a.js.map

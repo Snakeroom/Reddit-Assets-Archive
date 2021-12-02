@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PredictionLeaderboard-Sidebar.bc904a74e2257cf3a5a7.js
-// Retrieved at 12/1/2021, 12:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PredictionLeaderboard-Sidebar.e5dd10bd43e40fa7d080.js
+// Retrieved at 12/2/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./src/reddit/components/Econ/Prediction/UnicornIcon/index.tsx": function(e, t, c) {
@@ -370,7 +370,7 @@
 					className: E.a.rank
 				}, c), n.a.createElement(l.a, {
 					className: E.a.userLink,
-					onClick: () => P(Object(u.f)({
+					onClick: () => P(Object(u.g)({
 						targetUserId: b.id
 					})),
 					to: `/user/${j}`,
@@ -694,4 +694,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PredictionLeaderboard-Sidebar.bc904a74e2257cf3a5a7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PredictionLeaderboard-Sidebar.e5dd10bd43e40fa7d080.js.map

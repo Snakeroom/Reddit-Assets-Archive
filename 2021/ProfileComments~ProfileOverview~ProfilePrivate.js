@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.4975f5043c6f2375e38a.js
-// Retrieved at 12/2/2021, 10:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.19b2a573f6c4503e1f6e.js
+// Retrieved at 12/2/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments~ProfileOverview~ProfilePrivate"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -96,8 +96,8 @@
 				U = s("./src/reddit/models/Media/index.ts"),
 				V = s("./src/reddit/components/ClassicPost/Thumbnail.tsx"),
 				z = s("./src/reddit/connectors/ClassicPost/index.tsx"),
-				H = s("./src/reddit/connectors/ClassicPost/searchResults.tsx"),
-				q = s("./src/reddit/constants/postLayout.ts"),
+				q = s("./src/reddit/connectors/ClassicPost/searchResults.tsx"),
+				H = s("./src/reddit/constants/postLayout.ts"),
 				K = s("./src/reddit/contexts/Post/index.tsx"),
 				$ = s("./src/reddit/helpers/hasModFlairPermissions/index.ts"),
 				G = s("./src/reddit/helpers/hasModFullPermissions/index.ts"),
@@ -132,7 +132,7 @@
 						formatTitle: g,
 						hostPostData: E,
 						isCheckboxSelected: z,
-						isCurrentUserProfilePost: H,
+						isCurrentUserProfilePost: q,
 						isFrontpage: K,
 						isGalleryTileLayoutDefault: Y,
 						isLoggedIn: ee,
@@ -178,7 +178,7 @@
 							flairStyleTemplate: je,
 							post: pe,
 							inSubredditOrProfile: b,
-							isCurrentUserProfilePost: H,
+							isCurrentUserProfilePost: q,
 							isOverlay: ne,
 							shouldShowSubscribeButton: !(K && ee) || Fe && ee,
 							subredditOrProfile: ge
@@ -241,7 +241,7 @@
 						"data-click-id": "body"
 					}, !!pe.recommendationContext && o.a.createElement(M.a, {
 						content: pe.recommendationContext.content,
-						layout: q.g.Classic,
+						layout: H.g.Classic,
 						post: pe
 					}), o.a.createElement(A.c, {
 						className: me ? te.a.titleWithPoll : void 0,
@@ -308,7 +308,7 @@
 					})), o.a.createElement(j.d, null))), Object(J.a)(pe, te.a, be, h, Ce, Y)));
 					return o.a.createElement(D.b, null, Ve)
 				}),
-				oe = Object(K.b)(Object(H.a)(ne));
+				oe = Object(K.b)(Object(q.a)(ne));
 			t.default = Object(z.a)(ne)
 		},
 		"./src/reddit/components/CommentBodyExpander/index.m.less": function(e, t, s) {
@@ -498,8 +498,8 @@
 				U = s("./src/reddit/contexts/PageLayer/index.tsx"),
 				V = s("./src/reddit/helpers/correlationIdTracker.ts"),
 				z = s("./src/reddit/helpers/hasModPostPermissions/index.ts"),
-				H = s("./src/reddit/helpers/overlay/index.ts"),
-				q = s("./src/reddit/helpers/trackers/lightbox.ts"),
+				q = s("./src/reddit/helpers/overlay/index.ts"),
+				H = s("./src/reddit/helpers/trackers/lightbox.ts"),
 				K = s("./src/reddit/models/PostDraft/index.ts"),
 				$ = s("./src/reddit/selectors/activeModalId.ts"),
 				G = s("./src/reddit/selectors/comments.ts"),
@@ -595,7 +595,7 @@
 						this.props.onToggleReportsDropdown(), this.sendCommentModEventWithName("comment_report_menu")
 					}, this.handleSave = () => {
 						this.props.comment.isSaved ? this.props.sendEvent(Object(ie.a)("unsave", this.props.comment.id)) : this.props.sendEvent(Object(ie.a)("save", this.props.comment.id)), this.props.onToggleSave()
-					}, this.sendCommentDistinguishEvent = e => this.props.sendEvent(Object(ie.b)(e, this.props.comment.id)), this.sendCommentEventWithName = e => this.props.sendEvent(Object(q.b)(this.props.comment.postId, `comment_${e}`)), this.sendCommentEventWithNameShare = () => this.sendCommentEventWithName("share"), this.sendCommentModEventWithName = e => this.props.sendEvent(Object(ie.a)(e, this.props.comment.id)), this.sendCommentReportEvent = e => this.props.sendEvent(Object(ie.e)(e, this.props.comment.id)), this.renderReportFlow = () => this.props.reportingRevampEnabled ? o.a.createElement(se.a, {
+					}, this.sendCommentDistinguishEvent = e => this.props.sendEvent(Object(ie.b)(e, this.props.comment.id)), this.sendCommentEventWithName = e => this.props.sendEvent(Object(H.b)(this.props.comment.postId, `comment_${e}`)), this.sendCommentEventWithNameShare = () => this.sendCommentEventWithName("share"), this.sendCommentModEventWithName = e => this.props.sendEvent(Object(ie.a)(e, this.props.comment.id)), this.sendCommentReportEvent = e => this.props.sendEvent(Object(ie.e)(e, this.props.comment.id)), this.renderReportFlow = () => this.props.reportingRevampEnabled ? o.a.createElement(se.a, {
 						withOverlay: !0,
 						commentId: this.props.comment.id,
 						overlayCustomStyles: te.b,
@@ -795,7 +795,7 @@
 								commentMode: t.media && t.media.rteMode,
 								commentsPageKey: n
 							};
-						e(Object(H.a)(s)), e(Object(P.f)(o))
+						e(Object(q.a)(s)), e(Object(P.f)(o))
 					},
 					handleReply: s => {
 						const n = Object(O.a)(t.postId, t.id, {}),
@@ -803,7 +803,7 @@
 								parentCommentId: t.id,
 								commentsPageKey: n
 							};
-						e(Object(H.a)(s)), e(Object(P.g)(o))
+						e(Object(q.a)(s)), e(Object(P.g)(o))
 					},
 					toggleDeleteCommentModal: () => e(Object(I.i)(_e(t.id)))
 				}))(Object(oe.c)(Object(B.b)(Ie)))),
@@ -2107,6 +2107,18 @@
 				isOverlay: !1
 			}, t.a = v
 		},
+		"./src/reddit/components/SidebarContainer/index.m.less": function(e, t, s) {
+			e.exports = {
+				container: "_1FUNcfOeszr8eruqLxCMcR"
+			}
+		},
+		"./src/reddit/components/SidebarContainer/index.tsx": function(e, t, s) {
+			"use strict";
+			var n = s("./src/lib/lessComponent.tsx"),
+				o = s("./src/reddit/components/SidebarContainer/index.m.less"),
+				r = s.n(o);
+			t.a = n.a.div("container", r.a)
+		},
 		"./src/reddit/components/SidebarExpandableList/index.tsx": function(e, t, s) {
 			"use strict";
 			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
@@ -2788,4 +2800,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.4975f5043c6f2375e38a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.19b2a573f6c4503e1f6e.js.map

@@ -1,33 +1,7 @@
-// https://www.redditstatic.com/desktop2x/vendors~Reddit~StandalonePostPage.96a3642f63703c5fab30.js
-// Retrieved at 4/14/2021, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~Reddit~StandalonePostPage.042a7c8d07857a0fa698.js
+// Retrieved at 12/2/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~Reddit~StandalonePostPage"], {
-		"./node_modules/lodash/_baseRandom.js": function(e, t) {
-			var n = Math.floor,
-				r = Math.random;
-			e.exports = function(e, t) {
-				return e + n(r() * (t - e + 1))
-			}
-		},
-		"./node_modules/lodash/random.js": function(e, t, n) {
-			var r = n("./node_modules/lodash/_baseRandom.js"),
-				o = n("./node_modules/lodash/_isIterateeCall.js"),
-				a = n("./node_modules/lodash/toFinite.js"),
-				i = parseFloat,
-				s = Math.min,
-				l = Math.random;
-			e.exports = function(e, t, n) {
-				if (n && "boolean" != typeof n && o(e, t, n) && (t = n = void 0), void 0 === n && ("boolean" == typeof t ? (n = t, t = void 0) : "boolean" == typeof e && (n = e, e = void 0)), void 0 === e && void 0 === t ? (e = 0, t = 1) : (e = a(e), void 0 === t ? (t = e, e = 0) : t = a(t)), e > t) {
-					var u = e;
-					e = t, t = u
-				}
-				if (n || e % 1 || t % 1) {
-					var c = l();
-					return s(e + c * (t - e + i("1e-" + ((c + "").length - 1))), t)
-				}
-				return r(e, t)
-			}
-		},
 		"./node_modules/react-motion/lib/Motion.js": function(e, t, n) {
 			"use strict";
 			t.__esModule = !0;
@@ -252,8 +226,8 @@
 											}
 											var P = l.default(m / 1e3, _, S, j.val, j.stiffness, j.damping, j.precision),
 												I = P[0],
-												M = P[1];
-											v[w] = _ + (I - _) * a, b[w] = S + (M - S) * a, g[w] = _, O[w] = S
+												D = P[1];
+											v[w] = _ + (I - _) * a, b[w] = S + (D - S) * a, g[w] = _, O[w] = S
 										}
 									} d[y] = v, p[y] = b, s[y] = g, c[y] = O
 							}
@@ -453,14 +427,14 @@
 											var P = w[T];
 											if ("number" == typeof P) j[T] = P, _[T] = 0, S[T] = P, x[T] = 0;
 											else {
-												for (var I = b[O][T], M = g[O][T], D = 0; D < s; D++) {
-													var k = l.default(y / 1e3, I, M, P.val, P.stiffness, P.damping, P.precision);
-													I = k[0], M = k[1]
+												for (var I = b[O][T], D = g[O][T], k = 0; k < s; k++) {
+													var M = l.default(y / 1e3, I, D, P.val, P.stiffness, P.damping, P.precision);
+													I = M[0], D = M[1]
 												}
-												var E = l.default(y / 1e3, I, M, P.val, P.stiffness, P.damping, P.precision),
+												var E = l.default(y / 1e3, I, D, P.val, P.stiffness, P.damping, P.precision),
 													A = E[0],
 													V = E[1];
-												j[T] = I + (A - I) * i, _[T] = M + (V - M) * i, S[T] = I, x[T] = M
+												j[T] = I + (A - I) * i, _[T] = D + (V - D) * i, S[T] = I, x[T] = D
 											}
 										} b[O] = S, g[O] = x, p[O] = j, m[O] = _
 								}
@@ -932,9 +906,9 @@
 				T = [w, j, _, S],
 				P = "start",
 				I = "end",
-				M = "clippingParents",
-				D = "viewport",
-				k = "popper",
+				D = "clippingParents",
+				k = "viewport",
+				M = "popper",
 				E = "reference",
 				A = T.reduce((function(e, t) {
 					return e.concat([t + "-" + P, t + "-" + I])
@@ -942,9 +916,9 @@
 				V = [].concat(T, [x]).reduce((function(e, t) {
 					return e.concat([t, t + "-" + P, t + "-" + I])
 				}), []),
-				R = ["beforeRead", "read", "afterRead", "beforeMain", "main", "afterMain", "beforeWrite", "write", "afterWrite"];
+				L = ["beforeRead", "read", "afterRead", "beforeMain", "main", "afterMain", "beforeWrite", "write", "afterWrite"];
 
-			function L(e) {
+			function R(e) {
 				var t = new Map,
 					n = new Set,
 					r = [];
@@ -1005,8 +979,8 @@
 									popper: v(t)
 								};
 								var o = function(e) {
-									var t = L(e);
-									return R.reduce((function(e, n) {
+									var t = R(e);
+									return L.reduce((function(e, n) {
 										return e.concat(t.filter((function(e) {
 											return e.phase === n
 										})))
@@ -1097,11 +1071,11 @@
 					})), f
 				}
 			}
-			var C = {
+			var U = {
 				passive: !0
 			};
 
-			function U(e) {
+			function C(e) {
 				return e.split("-")[0]
 			}
 
@@ -1117,7 +1091,7 @@
 				var t, n = e.reference,
 					r = e.element,
 					o = e.placement,
-					a = o ? U(o) : null,
+					a = o ? C(o) : null,
 					i = o ? q(o) : null,
 					s = n.x + n.width / 2 - r.width / 2,
 					l = n.y + n.height / 2 - r.height / 2;
@@ -1251,7 +1225,7 @@
 			}
 
 			function Q(e, t) {
-				return t === D ? J(function(e) {
+				return t === k ? J(function(e) {
 					var t = a(e),
 						n = c(e),
 						r = t.visualViewport,
@@ -1323,17 +1297,17 @@
 					r = n.placement,
 					a = void 0 === r ? e.placement : r,
 					i = n.boundary,
-					l = void 0 === i ? M : i,
+					l = void 0 === i ? D : i,
 					u = n.rootBoundary,
-					f = void 0 === u ? D : u,
+					f = void 0 === u ? k : u,
 					d = n.elementContext,
-					p = void 0 === d ? k : d,
+					p = void 0 === d ? M : d,
 					m = n.altBoundary,
 					y = void 0 !== m && m,
 					h = n.padding,
 					v = void 0 === h ? 0 : h,
 					b = te("number" != typeof v ? v : ne(v, T)),
-					g = p === k ? E : k,
+					g = p === M ? E : M,
 					O = e.elements.reference,
 					S = e.rects.popper,
 					x = e.elements[y ? g : p],
@@ -1346,23 +1320,23 @@
 						placement: a
 					}),
 					V = J(Object.assign(Object.assign({}, S), A)),
-					R = p === k ? V : I,
-					L = {
-						top: P.top - R.top + b.top,
-						bottom: R.bottom - P.bottom + b.bottom,
-						left: P.left - R.left + b.left,
-						right: R.right - P.right + b.right
+					L = p === M ? V : I,
+					R = {
+						top: P.top - L.top + b.top,
+						bottom: L.bottom - P.bottom + b.bottom,
+						left: P.left - L.left + b.left,
+						right: L.right - P.right + b.right
 					},
 					W = e.modifiersData.offset;
-				if (p === k && W) {
+				if (p === M && W) {
 					var N = W[a];
-					Object.keys(L).forEach((function(e) {
+					Object.keys(R).forEach((function(e) {
 						var t = [_, j].indexOf(e) >= 0 ? 1 : -1,
 							n = [w, j].indexOf(e) >= 0 ? "y" : "x";
-						L[e] += N[n] * t
+						R[e] += N[n] * t
 					}))
 				}
-				return L
+				return R
 			}
 
 			function oe(e, t, n) {
@@ -1403,12 +1377,12 @@
 								u = a(t.elements.popper),
 								c = [].concat(t.scrollParents.reference, t.scrollParents.popper);
 							return i && c.forEach((function(e) {
-									e.addEventListener("scroll", n.update, C)
-								})), l && u.addEventListener("resize", n.update, C),
+									e.addEventListener("scroll", n.update, U)
+								})), l && u.addEventListener("resize", n.update, U),
 								function() {
 									i && c.forEach((function(e) {
-										e.removeEventListener("scroll", n.update, C)
-									})), l && u.removeEventListener("resize", n.update, C)
+										e.removeEventListener("scroll", n.update, U)
+									})), l && u.removeEventListener("resize", n.update, U)
 								}
 						},
 						data: {}
@@ -1439,7 +1413,7 @@
 								a = n.adaptive,
 								i = void 0 === a || a,
 								s = {
-									placement: U(t.placement),
+									placement: C(t.placement),
 									popper: t.elements.popper,
 									popperRect: t.rects.popper,
 									gpuAcceleration: o
@@ -1515,7 +1489,7 @@
 								a = void 0 === o ? [0, 0] : o,
 								i = V.reduce((function(e, n) {
 									return e[n] = function(e, t, n) {
-										var r = U(e),
+										var r = C(e),
 											o = [S, w].indexOf(r) >= 0 ? -1 : 1,
 											a = "function" == typeof n ? n(Object.assign(Object.assign({}, t), {}, {
 												placement: e
@@ -1545,12 +1519,12 @@
 								n = e.options,
 								r = e.name;
 							if (!t.modifiersData[r]._skip) {
-								for (var o = n.mainAxis, a = void 0 === o || o, i = n.altAxis, s = void 0 === i || i, l = n.fallbackPlacements, u = n.padding, c = n.boundary, f = n.rootBoundary, d = n.altBoundary, p = n.flipVariations, m = void 0 === p || p, y = n.allowedAutoPlacements, h = t.options.placement, v = U(h), b = l || (v === h || !m ? [Y(h)] : function(e) {
-										if (U(e) === x) return [];
+								for (var o = n.mainAxis, a = void 0 === o || o, i = n.altAxis, s = void 0 === i || i, l = n.fallbackPlacements, u = n.padding, c = n.boundary, f = n.rootBoundary, d = n.altBoundary, p = n.flipVariations, m = void 0 === p || p, y = n.allowedAutoPlacements, h = t.options.placement, v = C(h), b = l || (v === h || !m ? [Y(h)] : function(e) {
+										if (C(e) === x) return [];
 										var t = Y(e);
 										return [$(e), t, $(t)]
 									}(h)), g = [h].concat(b).reduce((function(e, n) {
-										return e.concat(U(n) === x ? function(e, t) {
+										return e.concat(C(n) === x ? function(e, t) {
 											void 0 === t && (t = {});
 											var n = t,
 												r = n.placement,
@@ -1571,7 +1545,7 @@
 														boundary: o,
 														rootBoundary: a,
 														padding: i
-													})[U(n)], t
+													})[C(n)], t
 												}), {});
 											return Object.keys(f).sort((function(e, t) {
 												return f[e] - f[t]
@@ -1584,14 +1558,14 @@
 											flipVariations: m,
 											allowedAutoPlacements: y
 										}) : n)
-									}), []), O = t.rects.reference, I = t.rects.popper, M = new Map, D = !0, k = g[0], E = 0; E < g.length; E++) {
-									var R = g[E],
-										L = U(R),
-										W = q(R) === P,
-										N = [w, j].indexOf(L) >= 0,
+									}), []), O = t.rects.reference, I = t.rects.popper, D = new Map, k = !0, M = g[0], E = 0; E < g.length; E++) {
+									var L = g[E],
+										R = C(L),
+										W = q(L) === P,
+										N = [w, j].indexOf(R) >= 0,
 										B = N ? "width" : "height",
-										C = re(t, {
-											placement: R,
+										U = re(t, {
+											placement: L,
 											boundary: c,
 											rootBoundary: f,
 											altBoundary: d,
@@ -1601,27 +1575,27 @@
 									O[B] > I[B] && (H = Y(H));
 									var F = Y(H),
 										z = [];
-									if (a && z.push(C[L] <= 0), s && z.push(C[H] <= 0, C[F] <= 0), z.every((function(e) {
+									if (a && z.push(U[R] <= 0), s && z.push(U[H] <= 0, U[F] <= 0), z.every((function(e) {
 											return e
 										}))) {
-										k = R, D = !1;
+										M = L, k = !1;
 										break
 									}
-									M.set(R, z)
+									D.set(L, z)
 								}
-								if (D)
+								if (k)
 									for (var K = function(e) {
 											var t = g.find((function(t) {
-												var n = M.get(t);
+												var n = D.get(t);
 												if (n) return n.slice(0, e).every((function(e) {
 													return e
 												}))
 											}));
-											if (t) return k = t, "break"
+											if (t) return M = t, "break"
 										}, Z = m ? 3 : 1; Z > 0; Z--) {
 										if ("break" === K(Z)) break
 									}
-								t.placement !== k && (t.modifiersData[r]._skip = !0, t.placement = k, t.reset = !0)
+								t.placement !== M && (t.modifiersData[r]._skip = !0, t.placement = M, t.reset = !0)
 							}
 						},
 						requiresIfExists: ["offset"],
@@ -1654,14 +1628,14 @@
 									padding: f,
 									altBoundary: c
 								}),
-								b = U(t.placement),
+								b = C(t.placement),
 								g = q(t.placement),
 								x = !g,
 								T = H(b),
 								I = "x" === T ? "y" : "x",
-								M = t.modifiersData.popperOffsets,
-								D = t.rects.reference,
-								k = t.rects.popper,
+								D = t.modifiersData.popperOffsets,
+								k = t.rects.reference,
+								M = t.rects.popper,
 								E = "function" == typeof h ? h(Object.assign(Object.assign({}, t.rects), {}, {
 									placement: t.placement
 								})) : h,
@@ -1669,17 +1643,17 @@
 									x: 0,
 									y: 0
 								};
-							if (M) {
+							if (D) {
 								if (a) {
 									var V = "y" === T ? w : S,
-										R = "y" === T ? j : _,
-										L = "y" === T ? "height" : "width",
-										W = M[T],
-										N = M[T] + v[V],
-										B = M[T] - v[R],
-										C = p ? -k[L] / 2 : 0,
-										F = g === P ? D[L] : k[L],
-										z = g === P ? -k[L] : -D[L],
+										L = "y" === T ? j : _,
+										R = "y" === T ? "height" : "width",
+										W = D[T],
+										N = D[T] + v[V],
+										B = D[T] - v[L],
+										U = p ? -M[R] / 2 : 0,
+										F = g === P ? k[R] : M[R],
+										z = g === P ? -M[R] : -k[R],
 										K = t.elements.arrow,
 										Z = p && K ? y(K) : {
 											width: 0,
@@ -1692,24 +1666,24 @@
 											left: 0
 										},
 										X = Y[V],
-										$ = Y[R],
-										G = oe(0, D[L], Z[L]),
-										J = x ? D[L] / 2 - C - G - X - E : F - G - X - E,
-										Q = x ? -D[L] / 2 + C + G + $ + E : z + G + $ + E,
+										$ = Y[L],
+										G = oe(0, k[R], Z[R]),
+										J = x ? k[R] / 2 - U - G - X - E : F - G - X - E,
+										Q = x ? -k[R] / 2 + U + G + $ + E : z + G + $ + E,
 										ee = t.elements.arrow && O(t.elements.arrow),
 										te = ee ? "y" === T ? ee.clientTop || 0 : ee.clientLeft || 0 : 0,
 										ne = t.modifiersData.offset ? t.modifiersData.offset[t.placement][T] : 0,
-										ae = M[T] + J - ne - te,
-										ie = M[T] + Q - ne,
+										ae = D[T] + J - ne - te,
+										ie = D[T] + Q - ne,
 										se = oe(p ? Math.min(N, ae) : N, W, p ? Math.max(B, ie) : B);
-									M[T] = se, A[T] = se - W
+									D[T] = se, A[T] = se - W
 								}
 								if (s) {
 									var le = "x" === T ? w : S,
 										ue = "x" === T ? j : _,
-										ce = M[I],
+										ce = D[I],
 										fe = oe(ce + v[le], ce, ce - v[ue]);
-									M[I] = fe, A[I] = fe - ce
+									D[I] = fe, A[I] = fe - ce
 								}
 								t.modifiersData[r] = A
 							}
@@ -1724,7 +1698,7 @@
 								r = e.name,
 								o = n.elements.arrow,
 								a = n.modifiersData.popperOffsets,
-								i = U(n.placement),
+								i = C(n.placement),
 								s = H(i),
 								l = [S, _].indexOf(i) >= 0 ? "height" : "width";
 							if (o && a) {
@@ -1935,4 +1909,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Reddit~StandalonePostPage.96a3642f63703c5fab30.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Reddit~StandalonePostPage.042a7c8d07857a0fa698.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.d42177c57781a60a8baf.js
-// Retrieved at 12/1/2021, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.1653a40fec698335653d.js
+// Retrieved at 12/2/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityPointsLearnMore"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, o) {
@@ -2011,14 +2011,14 @@
 					}, e.name), r.a.createElement("ol", null, e.pages.map(({
 						key: e,
 						name: t
-					}) => r.a.createElement(S, {
+					}) => r.a.createElement(T, {
 						key: e,
 						active: e === o,
 						name: t,
 						pageKey: e
 					}))))))))
 				},
-				S = ({
+				T = ({
 					active: e,
 					name: t,
 					pageKey: o
@@ -2030,7 +2030,7 @@
 					})
 				}, t)),
 				{
-					fbt: T
+					fbt: S
 				} = o("./node_modules/fbt/lib/FbtPublic.js"),
 				{
 					fbt: x
@@ -2539,21 +2539,21 @@
 						className: f.a.largeCenteredImage,
 						src: `${n.a.assetPath}/img/communityPoints/landingPage/docs/tip.png`
 					})), null),
-					"points-and-automoderator": r.a.createElement(() => r.a.createElement("main", null, r.a.createElement("h1", null, T._("Points & Automoderator", null, {
+					"points-and-automoderator": r.a.createElement(() => r.a.createElement("main", null, r.a.createElement("h1", null, S._("Points & Automoderator", null, {
 						hk: "4qE8Kd"
-					})), r.a.createElement("h2", null, T._("Community Points can be used in conjunction with Automoderator to create rules based on users’ Points balances and Special Membership status.", null, {
+					})), r.a.createElement("h2", null, S._("Community Points can be used in conjunction with Automoderator to create rules based on users’ Points balances and Special Membership status.", null, {
 						hk: "1kuSZC"
-					})), r.a.createElement("p", null, T._("Subreddits can use Community Points information in their Automod rules. Specifically, they can use the following rules:", null, {
+					})), r.a.createElement("p", null, S._("Subreddits can use Community Points information in their Automod rules. Specifically, they can use the following rules:", null, {
 						hk: "2m6VU8"
-					})), r.a.createElement("pre", null, r.a.createElement("code", null, "---\nauthor: has_special_membership: true | false\nspecial_membership_age: > 1 day points_balance: > 10000000000000 # in wei\nlocked_points_balance: > 10000000000000 # in wei\n---")), r.a.createElement("p", null, T._("Locked points is the total number of Points the user has directly earned in the community to date.", null, {
+					})), r.a.createElement("pre", null, r.a.createElement("code", null, "---\nauthor: has_special_membership: true | false\nspecial_membership_age: > 1 day points_balance: > 10000000000000 # in wei\nlocked_points_balance: > 10000000000000 # in wei\n---")), r.a.createElement("p", null, S._("Locked points is the total number of Points the user has directly earned in the community to date.", null, {
 						hk: "3B9CVv"
-					})), r.a.createElement("h3", null, T._("Examples", null, {
+					})), r.a.createElement("h3", null, S._("Examples", null, {
 						hk: "33UWVC"
-					})), r.a.createElement("p", null, T._("Restrict commenting on a Core Contributors Discussion Thread only to Points holders.", null, {
+					})), r.a.createElement("p", null, S._("Restrict commenting on a Core Contributors Discussion Thread only to Points holders.", null, {
 						hk: "3r0Bj3"
-					})), r.a.createElement("pre", null, r.a.createElement("code", null, "---\nauthor:\n    points_balance: 0\nparent_submission:\n    title (starts-with): Core Contributors Discussion Thread\n    flair_text: Discussion\ntype: comment\naction: remove\n---\nauthor: automod\ntitle (starts-with): Core Contributors Discussion Thread\nset_flair: Discussion\n---")), r.a.createElement("p", null, T._("Put submissions from users with 0 balance into the mod queue.", null, {
+					})), r.a.createElement("pre", null, r.a.createElement("code", null, "---\nauthor:\n    points_balance: 0\nparent_submission:\n    title (starts-with): Core Contributors Discussion Thread\n    flair_text: Discussion\ntype: comment\naction: remove\n---\nauthor: automod\ntitle (starts-with): Core Contributors Discussion Thread\nset_flair: Discussion\n---")), r.a.createElement("p", null, S._("Put submissions from users with 0 balance into the mod queue.", null, {
 						hk: "36MzYX"
-					})), r.a.createElement("pre", null, r.a.createElement("code", null, "---\nauthor:\n    points_balance: 0\nparent_submission:\n    title (starts-with): Core Contributors Discussion Thread\n    flair_text: Discussion\ntype: submission\naction: filter\nmessage_subject: Pending Approval\nmessage: Our apologies, but in order to limit spam your submission has been automatically removed and is pending moderator approval.\nmodmail_subject: Post From Young Account\nmodmail: /u/{{author}}'s [{{kind}}]({{permalink}}) is pending moderator approval. Please visit the moderation queue to review the post.\n---")), r.a.createElement("p", null, T._("Thank Special Members for supporting the Community.", null, {
+					})), r.a.createElement("pre", null, r.a.createElement("code", null, "---\nauthor:\n    points_balance: 0\nparent_submission:\n    title (starts-with): Core Contributors Discussion Thread\n    flair_text: Discussion\ntype: submission\naction: filter\nmessage_subject: Pending Approval\nmessage: Our apologies, but in order to limit spam your submission has been automatically removed and is pending moderator approval.\nmodmail_subject: Post From Young Account\nmodmail: /u/{{author}}'s [{{kind}}]({{permalink}}) is pending moderator approval. Please visit the moderation queue to review the post.\n---")), r.a.createElement("p", null, S._("Thank Special Members for supporting the Community.", null, {
 						hk: "1n4uhp"
 					})), r.a.createElement("pre", null, r.a.createElement("code", null, "---\nauthor:\n    has_special_membership: true\ntype: submission\ncomment_stickied: true\ncomment_locked: true\ncomment: {{author}}, thank you for supporting the community!\n---"))), null),
 					vault: r.a.createElement(() => r.a.createElement("main", null, r.a.createElement("h1", null, j._("Vault", null, {
@@ -3098,7 +3098,7 @@
 						}),
 						className: Q.a.logo,
 						to: "/",
-						onClick: () => e(Object(W.a)(() => Promise.all([o.e("CollectionCommentsPage~CommentsPage~Frontpage~GovernanceReleaseNotesModal~ModListing~ModQueuePages~M~eb6c0aee"), o.e("Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~ProfilePosts~Subreddit"), o.e("Frontpage")]).then(o.bind(null, "./src/reddit/actions/frontpage/index.ts")).then(e => e.frontpageReloaded))(!0))
+						onClick: () => e(Object(W.a)(() => Promise.all([o.e("CollectionCommentsPage~CommentsPage~Frontpage~GovernanceReleaseNotesModal~ModListing~ModQueuePages~M~eb6c0aee"), o.e("Frontpage~ModListing"), o.e("Frontpage")]).then(o.bind(null, "./src/reddit/actions/frontpage/index.ts")).then(e => e.frontpageReloaded))(!0))
 					}, r.a.createElement(Y.a, {
 						className: Q.a.snoo
 					}), r.a.createElement(H.a, {
@@ -3391,7 +3391,7 @@
 					className: Object(_.a)(Ce.a.benefitsContainer, {
 						[Ce.a.expanded]: null !== t
 					})
-				}, Se.map((e, n) => r.a.createElement(Pe, {
+				}, Te.map((e, n) => r.a.createElement(Pe, {
 					key: n,
 					data: e,
 					isExpanded: null !== t && n === t,
@@ -3399,7 +3399,7 @@
 					onClickExpand: () => o(n),
 					onClickHide: () => o(null)
 				}))))
-			}, Se = [{
+			}, Te = [{
 				title: Ie._("Reward the community, for real", null, {
 					hk: "26o9ra"
 				}),
@@ -3472,8 +3472,8 @@
 				imageSrc: `${n.a.assetPath}/img/communityPoints/landingPage/customize_points_v2.png`,
 				backgroundColor: "#DDDDDD"
 			}];
-			var Te = o("./src/reddit/pages/meta/CommunityPointsLearnMorePage/Sections/CommunityPoints/index.m.less"),
-				xe = o.n(Te);
+			var Se = o("./src/reddit/pages/meta/CommunityPointsLearnMorePage/Sections/CommunityPoints/index.m.less"),
+				xe = o.n(Se);
 			const {
 				fbt: Ve
 			} = o("./node_modules/fbt/lib/FbtPublic.js"), Ae = ({
@@ -4124,9 +4124,9 @@
 			})), o.d(t, "e", (function() {
 				return R
 			})), o.d(t, "d", (function() {
-				return S
-			})), o.d(t, "j", (function() {
 				return T
+			})), o.d(t, "j", (function() {
+				return S
 			})), o.d(t, "p", (function() {
 				return x
 			})), o.d(t, "k", (function() {
@@ -4263,7 +4263,7 @@
 				return o ? [].concat(o.locked, o.unlocked).filter(e => e.position).sort((e, t) => e.position - t.position) : y
 			}
 
-			function S(e, t) {
+			function T(e, t) {
 				const o = e.economics.subredditPremium[t];
 				if (o && o.status === d.a.Fetched) {
 					const e = o.data.collections[s.a.Cosmetic];
@@ -4272,7 +4272,7 @@
 				return y
 			}
 
-			function T(e, t) {
+			function S(e, t) {
 				return I(e, t, s.a.Cosmetic, s.c.Gallery).some(e => e.locked.some(e => Object(i.f)(e) || !!e.price))
 			}
 			const x = e => {
@@ -4394,4 +4394,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.d42177c57781a60a8baf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.1653a40fec698335653d.js.map

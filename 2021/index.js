@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index.14da72ad02ab50820b2f.js
-// Retrieved at 12/2/2021, 10:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index.44823c4f4e6e1adbbaa8.js
+// Retrieved at 12/2/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index"], {
 		"./src/reddit/components/Econ/Audio/MuteIcon.tsx": function(e, t, n) {
@@ -443,7 +443,7 @@
 						N || E || g(e.id)
 					},
 					predict: async t => {
-						if (t.currency === I.a.Coins && t.amount > s) return Object(B.promptUserToBuyMoreCoins)(), void d(V.a);
+						if (t.currency === I.a.Coins && t.amount > s) return Object(B.promptUserToBuyMoreCoins)(), void d(V.b);
 						if (N) return l(X._("Error: Failed to make prediction. This prediction has already ended", null, {
 							hk: "22UWEr"
 						})), void g(null);
@@ -976,4 +976,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.14da72ad02ab50820b2f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.44823c4f4e6e1adbbaa8.js.map
