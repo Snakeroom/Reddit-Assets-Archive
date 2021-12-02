@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.18e4d5e6f80e131be67f.js
-// Retrieved at 12/2/2021, 10:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.fffebff182ce0b12d10a.js
+// Retrieved at 12/2/2021, 2:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -4672,11 +4672,11 @@
 		"./src/reddit/components/SearchResultsContent/Community/redesign.m.less": function(e, t, s) {
 			e.exports = {
 				container: "_3K_3Lkp9Y0UOvx4jLCEO1t",
+				sidebar: "_2qMwaXWIn_m8Wdxt7k-zJc",
 				mFirst: "_2DUH3f7VrWC1DqRH4885YM",
 				subredditIcon: "_3NNJELf9FmGhKjI7UZ8cia",
 				contentContainer: "_1P9xc8Vuhfh3gnFtpZ8Re4",
 				subredditInfo: "CCriDGNZMkvnfCBh2RHK4",
-				sidebar: "_2qMwaXWIn_m8Wdxt7k-zJc",
 				title: "_2aQkt7SngMSaKmFJN0J64X",
 				subtitle: "_37cCjYJHqjK_4BJSpMj0h_",
 				flair: "_3W3FIQq139KfrknzxMxx6E",
@@ -4815,7 +4815,7 @@
 						});
 					return n.a.createElement(O.a, {
 						"data-testid": `${i.type}-link`,
-						className: Object(a.a)(P.a.container, s ? P.a.mFirst : void 0, t),
+						className: Object(a.a)(P.a.container, w && P.a.sidebar, s ? P.a.mFirst : void 0, t),
 						onClick: B,
 						to: {
 							pathname: M.url,
@@ -4830,9 +4830,7 @@
 					})), n.a.createElement("div", {
 						className: P.a.contentContainer
 					}, n.a.createElement("div", {
-						className: Object(a.a)(P.a.subredditInfo, {
-							[P.a.sidebar]: w
-						})
+						className: Object(a.a)(P.a.subredditInfo, w && P.a.sidebar)
 					}, n.a.createElement("h6", {
 						className: P.a.title
 					}, H), M.isNSFW && n.a.createElement(d.b, {
@@ -6611,8 +6609,8 @@
 					[m.Xb.New]: () => u.fbt._("New", null, {
 						hk: "23egpt"
 					}),
-					[m.Xb.Comments]: () => u.fbt._("Comments", null, {
-						hk: "3s76RE"
+					[m.Xb.Comments]: () => u.fbt._("Most Comments", null, {
+						hk: "4k1FoM"
 					})
 				};
 
@@ -9468,4 +9466,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.18e4d5e6f80e131be67f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.fffebff182ce0b12d10a.js.map
