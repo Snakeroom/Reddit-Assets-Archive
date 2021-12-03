@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.6340f4d54e649aeeef2a.js
-// Retrieved at 12/2/2021, 6:50:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.1c97dcb0d279c677e97e.js
+// Retrieved at 12/2/2021, 7:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -1190,10 +1190,10 @@
 								followState: t
 							})).ok) {
 							Object(B.tb)(null !== (l = null === (d = null === (c = o().pages) || void 0 === c ? void 0 : c.comments) || void 0 === d ? void 0 : d.followed) && void 0 !== l ? l : [], null === (u = o().user.account) || void 0 === u ? void 0 : u.id);
-							const e = a ? s.fbt._("Followed! You’ll receive updates when there’s new activity", null, {
-								hk: "1Dp5UH"
-							}) : s.fbt._("Unfollowed, You’ll no longer receive updates on this comment", null, {
-								hk: "1L9sav"
+							const e = a ? s.fbt._("Followed! You’ll get updates when there’s new activity.", null, {
+								hk: "2O1Ou3"
+							}) : s.fbt._("Unfollowed. You won’t get updates on this comment anymore.", null, {
+								hk: "4EAz6O"
 							});
 							n(Object(b.f)({
 								kind: V.b.SuccessCommunityGreen,
@@ -21294,4 +21294,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit~StandalonePostPage", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Governance~ModListing~Reddit~Subreddit", "Chat~Governance~Reddit", 0, "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.6340f4d54e649aeeef2a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.1c97dcb0d279c677e97e.js.map

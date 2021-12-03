@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.2a8d6493087d7dc7814f.js
-// Retrieved at 12/2/2021, 6:50:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.9087263f3eea538ca9c9.js
+// Retrieved at 12/2/2021, 7:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -1704,10 +1704,10 @@
 								followState: t
 							})).ok) {
 							Object(B.tb)(null !== (l = null === (d = null === (c = s().pages) || void 0 === c ? void 0 : c.comments) || void 0 === d ? void 0 : d.followed) && void 0 !== l ? l : [], null === (u = s().user.account) || void 0 === u ? void 0 : u.id);
-							const e = i ? o.fbt._("Followed! You’ll receive updates when there’s new activity", null, {
-								hk: "1Dp5UH"
-							}) : o.fbt._("Unfollowed, You’ll no longer receive updates on this comment", null, {
-								hk: "1L9sav"
+							const e = i ? o.fbt._("Followed! You’ll get updates when there’s new activity.", null, {
+								hk: "2O1Ou3"
+							}) : o.fbt._("Unfollowed. You won’t get updates on this comment anymore.", null, {
+								hk: "4EAz6O"
 							});
 							n(Object(h.f)({
 								kind: z.b.SuccessCommunityGreen,
@@ -33045,4 +33045,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.2a8d6493087d7dc7814f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.9087263f3eea538ca9c9.js.map
