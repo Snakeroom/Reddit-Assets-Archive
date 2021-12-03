@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.b8065a83f4310d23568a.js
-// Retrieved at 12/2/2021, 6:50:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.be80cc879e73da123a30.js
+// Retrieved at 12/2/2021, 8:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -4550,7 +4550,6 @@
 						rel: "nofollow noopener noreferrer"
 					}, r.a.createElement(H.d, {
 						seconds: n.created,
-						noPostfix: s,
 						shortenedUnit: s
 					}), r.a.createElement(R.c, {
 						tooltipId: l
@@ -4590,7 +4589,6 @@
 				className: J.a.editedText
 			}, Y._("edited {time}", [Y._param("time", r.a.createElement(H.d, {
 				seconds: t,
-				noPostfix: e,
 				shortenedUnit: e
 			}))], {
 				hk: "1tiB0u"
@@ -25878,4 +25876,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.b8065a83f4310d23568a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.be80cc879e73da123a30.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.fcd167602d5e308a71e2.js
-// Retrieved at 12/2/2021, 5:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.4a588079ca7ad4cfa8ed.js
+// Retrieved at 12/2/2021, 8:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1287,8 +1287,8 @@
 				A = n("./src/reddit/actions/tooltip.ts"),
 				F = n("./src/reddit/components/InfoTextTooltip/index.tsx");
 			const R = (e, t, n = !1) => `${e}${t}${n?"inOverlay":""}`;
-			var P = n("./src/reddit/components/Comments/Comment/TopMeta/cakeDay.m.less"),
-				L = n.n(P);
+			var L = n("./src/reddit/components/Comments/Comment/TopMeta/cakeDay.m.less"),
+				P = n.n(L);
 			const B = ({
 				className: e,
 				commentId: t,
@@ -1303,7 +1303,7 @@
 						hk: "1xptSi"
 					});
 				return r.a.createElement(r.a.Fragment, null, r.a.createElement("img", {
-					className: Object(d.a)(L.a.cakedayIcon, e),
+					className: Object(d.a)(P.a.cakedayIcon, e),
 					src: `${M.a.assetPath}/img/powerups/flair_cakeday.png`,
 					alt: l,
 					id: c,
@@ -1345,7 +1345,6 @@
 						rel: "nofollow noopener noreferrer"
 					}, r.a.createElement(H.d, {
 						seconds: n.created,
-						noPostfix: s,
 						shortenedUnit: s
 					}), r.a.createElement(F.c, {
 						tooltipId: c
@@ -1385,7 +1384,6 @@
 				className: Q.a.editedText
 			}, Y._("edited {time}", [Y._param("time", r.a.createElement(H.d, {
 				seconds: t,
-				noPostfix: e,
 				shortenedUnit: e
 			}))], {
 				hk: "1tiB0u"
@@ -1712,7 +1710,7 @@
 			const Ae = c.a.wrapped(v.b, "RightPositionedAuthorFlair", Ne.a),
 				Fe = c.a.span("DeletedText", Ne.a),
 				Re = c.a.wrapped(g.a, "MetaSeparator", Ne.a),
-				Pe = Object(i.b)(() => Object(a.c)({
+				Le = Object(i.b)(() => Object(a.c)({
 					hasBadges: (e, {
 						comment: t
 					}) => !!Object(we.q)(e, t.subredditId, t.authorId).length,
@@ -1731,7 +1729,7 @@
 						commentId: t.comment.id
 					})
 				}));
-			t.a = Pe(e => {
+			t.a = Le(e => {
 				const {
 					children: t,
 					className: n,
@@ -1773,7 +1771,7 @@
 					renderContractorBadge: !!w,
 					collapsed: s
 				}), T);
-				if (i.isDeleted) return r.a.createElement(Le, Me({}, e, {
+				if (i.isDeleted) return r.a.createElement(Pe, Me({}, e, {
 					className: Object(d.a)(n, Ne.a.container, {
 						[Ne.a.collapsed]: s
 					})
@@ -1856,7 +1854,7 @@
 					tooltipType: O ? y.c.Lightbox : void 0
 				}))
 			});
-			const Le = e => {
+			const Pe = e => {
 					const {
 						childrenInfo: t,
 						collapsed: n,
@@ -4316,4 +4314,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.fcd167602d5e308a71e2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.4a588079ca7ad4cfa8ed.js.map
