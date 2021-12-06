@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~ModListing.41edc51d2accd8c3bef9.js
-// Retrieved at 12/2/2021, 5:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~ModListing.bd54f4da13a2694bf95c.js
+// Retrieved at 12/6/2021, 12:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~ModListing"], {
 		"./src/reddit/actions/focusedVerticals/index.ts": function(e, t, n) {
@@ -2615,7 +2615,7 @@
 		"./src/reddit/pages/Subreddit/SurveyUnit.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return b
+				return f
 			}));
 			var s = n("./node_modules/@loadable/component/dist/loadable.esm.js"),
 				r = n("./node_modules/react/index.js"),
@@ -2625,9 +2625,11 @@
 				c = n("./src/reddit/components/ContentSurvey/ContentRatingSurveyBanner.tsx"),
 				d = n("./src/reddit/components/PowerupsCncModule/index.tsx"),
 				l = n("./src/reddit/components/PowerupsCncModule/async.ts"),
-				u = n("./src/reddit/constants/postLayout.ts"),
-				p = n("./src/reddit/selectors/gold/powerups/index.ts");
-			const m = Object(s.a)({
+				u = n("./src/reddit/constants/experiments.ts"),
+				p = n("./src/reddit/constants/postLayout.ts"),
+				m = n("./src/reddit/selectors/experiments/newCommunityProgressV3.ts"),
+				b = n("./src/reddit/selectors/gold/powerups/index.ts");
+			const h = Object(s.a)({
 				resolved: {},
 				chunkName: () => "NewCommunityProgress",
 				isReady(e) {
@@ -2648,24 +2650,26 @@
 				}
 			});
 
-			function b({
+			function f({
 				postLayout: e,
 				subredditId: t
 			}) {
 				var n;
 				const s = Object(a.e)(e => e.subreddits.survey[t]),
 					r = Object(a.e)(e => e.subreddits.progressModule[t]),
-					b = Object(a.e)(e => Object(p.b)(e, {
+					f = Object(a.e)(e => Object(b.b)(e, {
 						subredditId: t
-					}));
-				return (null === (n = null == r ? void 0 : r.cards) || void 0 === n ? void 0 : n.length) > 0 ? o.a.createElement(m, {
-					closeModuleOnMount: !!e && e !== u.g.Large,
+					})),
+					g = Object(a.e)(m.a),
+					w = g !== u.je.NewModule;
+				return (null === (n = null == r ? void 0 : r.cards) || void 0 === n ? void 0 : n.length) > 0 && w ? o.a.createElement(h, {
+					closeModuleOnMount: !!e && e !== p.g.Large,
 					subredditId: t,
 					progressModule: r
-				}) : e !== u.g.Large ? null : (null == s ? void 0 : s.isEligible) && !(null == s ? void 0 : s.response) ? o.a.createElement(c.a, {
+				}) : e !== p.g.Large ? null : (null == s ? void 0 : s.isEligible) && !(null == s ? void 0 : s.response) && !g ? o.a.createElement(c.a, {
 					subredditId: t,
 					survey: s
-				}) : b && !Object(d.isPowerupsCncModuleHiddenBySpamLimit)(t) ? o.a.createElement(l.a, {
+				}) : f && !Object(d.isPowerupsCncModuleHiddenBySpamLimit)(t) ? o.a.createElement(l.a, {
 					subredditId: t
 				}) : o.a.createElement(i.a, {
 					subredditId: t
@@ -2687,7 +2691,7 @@
 						experimentEligibilitySelector: o.K,
 						experimentName: s.Ec
 					});
-					return !(!t || Object(s.Af)(t))
+					return !(!t || Object(s.Cf)(t))
 				},
 				i = e => {
 					return Object(r.c)(e, {
@@ -2816,4 +2820,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing.41edc51d2accd8c3bef9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing.bd54f4da13a2694bf95c.js.map

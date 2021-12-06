@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RedesignChat.9172ccbd90223a4486ba.js
-// Retrieved at 12/2/2021, 5:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RedesignChat.5ad47b416a74d7ffaaff.js
+// Retrieved at 12/6/2021, 12:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RedesignChat"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -858,4 +858,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.9172ccbd90223a4486ba.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.5ad47b416a74d7ffaaff.js.map

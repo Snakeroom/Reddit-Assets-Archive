@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.9087263f3eea538ca9c9.js
-// Retrieved at 12/2/2021, 7:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.74c796ff9dd18de259bf.js
+// Retrieved at 12/6/2021, 12:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -32490,12 +32490,12 @@
 			const r = e => Object(s.c)(e, {
 					experimentName: o.Yd,
 					experimentEligibilitySelector: s.a
-				}) === o.ge.Enabled,
+				}) === o.he.Enabled,
 				i = e => Object(s.c)(e, {
 					experimentName: o.Zd,
 					experimentEligibilitySelector: s.a,
 					expEventOverride: !1
-				}) === o.he.Enabled
+				}) === o.ie.Enabled
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, n) {
 			"use strict";
@@ -33045,4 +33045,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.9087263f3eea538ca9c9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.74c796ff9dd18de259bf.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.86ffbf75194d7c2ff580.js
-// Retrieved at 12/2/2021, 6:50:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.162ee0478f2dfea0ea9b.js
+// Retrieved at 12/6/2021, 12:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -54,13 +54,13 @@
 					experimentEligibilitySelector: m.a,
 					experimentName: u.Td
 				});
-				return Object(u.Af)(t) ? void 0 : t
+				return Object(u.Cf)(t) ? void 0 : t
 			}, e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
 					experimentName: u.Ud
 				});
-				return Object(u.Af)(t) ? void 0 : t
+				return Object(u.Cf)(t) ? void 0 : t
 			}, (e, t) => e === u.Xd.Enabled && t === u.Xd.Enabled);
 			var h = s("./src/config.ts");
 			var b = s("./src/reddit/selectors/user.ts");
@@ -5610,4 +5610,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.86ffbf75194d7c2ff580.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.162ee0478f2dfea0ea9b.js.map

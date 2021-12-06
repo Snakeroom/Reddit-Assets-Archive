@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/UserAchievementFlair.db4931eea289f1ff1fa0.js
-// Retrieved at 12/2/2021, 5:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/UserAchievementFlair.2444ee32897c97722e24.js
+// Retrieved at 12/6/2021, 12:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["UserAchievementFlair"], {
 		"./src/reddit/components/Econ/PowerupsFlair/HoverPopup.m.less": function(e, t, n) {
@@ -262,7 +262,7 @@
 								experimentName: c.F,
 								expEventOverride: t
 							});
-							return !!(Object(c.Af)(n) ? void 0 : n)
+							return !!(Object(c.Cf)(n) ? void 0 : n)
 						})(n)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -733,7 +733,7 @@
 				}
 			};
 			const S = {};
-			var A = (e = S, t) => {
+			var D = (e = S, t) => {
 				switch (t.type) {
 					case a.d:
 					case a.b:
@@ -768,7 +768,7 @@
 				keyToChatCommentLinks: C,
 				keyToCommentThreadLinkSets: K,
 				keyToHeadCommentId: N,
-				keyToPostId: A,
+				keyToPostId: D,
 				ads: o
 			})
 		},
@@ -817,9 +817,9 @@
 			})), n.d(t, "s", (function() {
 				return S
 			})), n.d(t, "C", (function() {
-				return A
-			})), n.d(t, "D", (function() {
 				return D
+			})), n.d(t, "D", (function() {
+				return A
 			})), n.d(t, "E", (function() {
 				return M
 			})), n.d(t, "r", (function() {
@@ -993,10 +993,10 @@
 						depth: c
 					}
 				},
-				A = (e, {
+				D = (e, {
 					moreCommentsId: t
 				}) => e.moreComments.models[t],
-				D = (e, {
+				A = (e, {
 					moreCommentsId: t
 				}) => !!e.moreComments.api.pending[t],
 				M = (e, {
@@ -1074,4 +1074,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UserAchievementFlair.db4931eea289f1ff1fa0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UserAchievementFlair.2444ee32897c97722e24.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.5b96d3d5bb236d3ae61a.js
-// Retrieved at 12/3/2021, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.45b1be7b603cc3759d7c.js
+// Retrieved at 12/6/2021, 12:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit", "reddit-components-BlankPost"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -3986,7 +3986,7 @@
 			const D = e => g.d.reCaptchaEnterprise(e) && !Object(j.d)(e),
 				v = e => !!Object(T.c)(e, {
 					experimentEligibilitySelector: Object(S.d)(Object(S.b)(...a.d)),
-					experimentName: b.Ee
+					experimentName: b.Ge
 				}),
 				w = Object(s.b)("LOAD_RECAPTCHA_ENTERPRISE"),
 				A = Object(s.b)("EXECUTE_RECAPTCHA_ENTERPRISE"),
@@ -4698,23 +4698,23 @@
 		"./src/reddit/actions/subredditCreation.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "d", (function() {
-				return S
-			})), r.d(t, "c", (function() {
 				return T
-			})), r.d(t, "e", (function() {
+			})), r.d(t, "c", (function() {
 				return j
-			})), r.d(t, "b", (function() {
+			})), r.d(t, "e", (function() {
 				return D
-			})), r.d(t, "a", (function() {
+			})), r.d(t, "b", (function() {
 				return v
+			})), r.d(t, "a", (function() {
+				return w
 			})), r.d(t, "f", (function() {
-				return C
-			})), r.d(t, "g", (function() {
 				return R
-			})), r.d(t, "h", (function() {
+			})), r.d(t, "g", (function() {
 				return N
-			})), r.d(t, "i", (function() {
+			})), r.d(t, "h", (function() {
 				return L
+			})), r.d(t, "i", (function() {
+				return k
 			}));
 			var s = r("./node_modules/react-router-redux/es/index.js"),
 				n = r("./src/lib/constants/index.ts"),
@@ -4743,45 +4743,46 @@
 				_ = r("./src/redditGQL/operations/ValidateCreateSubreddit.json");
 			var E = r("./src/reddit/helpers/correlationIdTracker.ts"),
 				O = r("./src/reddit/helpers/trackers/subredditCreation.ts"),
-				h = r("./src/reddit/selectors/posts.ts"),
-				I = r("./src/reddit/selectors/subreddit.ts"),
-				g = r("./src/telemetry/index.ts");
-			const S = "SUBREDDIT__CREATE_SET_INITIAL_CROSSPOST",
-				T = "SUBREDDIT__CREATE_PENDING",
-				j = "SUBREDDIT__CREATE_SUCCEEDED",
-				D = "SUBREDDIT__CREATE_FAILED",
-				v = "SUBREDDIT__CREATE_CLEARED",
-				w = Object(a.a)(T),
+				h = r("./src/reddit/selectors/experiments/newCommunityProgressV3.ts"),
+				I = r("./src/reddit/selectors/posts.ts"),
+				g = r("./src/reddit/selectors/subreddit.ts"),
+				S = r("./src/telemetry/index.ts");
+			const T = "SUBREDDIT__CREATE_SET_INITIAL_CROSSPOST",
+				j = "SUBREDDIT__CREATE_PENDING",
+				D = "SUBREDDIT__CREATE_SUCCEEDED",
+				v = "SUBREDDIT__CREATE_FAILED",
+				w = "SUBREDDIT__CREATE_CLEARED",
 				A = Object(a.a)(j),
 				P = Object(a.a)(D),
 				C = Object(a.a)(v),
-				R = Object(a.a)(S),
-				N = e => async (t, r, {
+				R = Object(a.a)(w),
+				N = Object(a.a)(T),
+				L = e => async (t, r, {
 					apiContext: a
 				}) => {
 					const m = r(),
 						{
 							name: _,
-							type: S,
-							crosspostId: T
+							type: T,
+							crosspostId: j
 						} = e;
-					if (Object(I.j)(m)) return;
-					t(w({
+					if (Object(g.j)(m)) return;
+					t(A({
 						subredditName: _
 					}));
-					const j = await ((e, t) => Object(l.a)(Object(p.a)(e, [b.a]), {
+					const D = await ((e, t) => Object(l.a)(Object(p.a)(e, [b.a]), {
 						endpoint: Object(f.a)(`${e.apiUrl}/api/v1/subreddit/create_subreddit`),
 						method: n.jb.POST,
 						data: y(t)
 					}))(a(), e);
-					if (j.ok) {
-						const r = j.body,
+					if (D.ok) {
+						const r = D.body,
 							a = r.fullname;
-						if (Object(g.a)(Object(O.d)(S, e, a)(m)), t(A({
+						if (Object(S.a)(Object(O.d)(T, e, a)(m)), t(P({
 								subredditName: _
-							})), T) {
-							const e = Object(h.H)(m, {
-								postId: T
+							})), j) {
+							const e = Object(I.H)(m, {
+								postId: j
 							});
 							t(Object(c.h)(e.title)), t(Object(c.g)({
 								submissionType: n.Vb.CROSSPOST
@@ -4790,16 +4791,16 @@
 									...r,
 									isProfile: !1
 								},
-								sourcePostId: T,
+								sourcePostId: j,
 								postFieldValidationPending: Promise.resolve()
-							})), Object(i.b)(T)
+							})), Object(i.b)(j)
 						}
-						await t(Object(s.b)(`${r.path}`)), t(Object(o.h)(u.a.POST_FLOW_UPSELL_MODAL_ID)), Object(g.a)(Object(O.g)()(m)), Object(E.b)(E.a.SubredditCreation)
-					} else j.error && Object(g.a)(Object(O.h)(j.error.type, _)(m)), t(P({
+						await t(Object(s.b)(`${r.path}`)), Object(h.b)(m)[a] && Object(h.a)(m) || (t(Object(o.h)(u.a.POST_FLOW_UPSELL_MODAL_ID)), Object(S.a)(Object(O.g)()(m))), Object(E.b)(E.a.SubredditCreation)
+					} else D.error && Object(S.a)(Object(O.h)(D.error.type, _)(m)), t(C({
 						subredditName: _,
-						error: j.error
+						error: D.error
 					}))
-				}, L = e => async (t, r, {
+				}, k = e => async (t, r, {
 					gqlContext: s
 				}) => {
 					const n = r(),
@@ -4824,11 +4825,11 @@
 							}],
 							type: o[0].code
 						};
-						t(P({
+						t(C({
 							subredditName: e,
 							error: r
-						})), r && Object(g.a)(Object(O.h)(r.type, e)(n))
-					} else await t(C())
+						})), r && Object(S.a)(Object(O.h)(r.type, e)(n))
+					} else await t(R())
 				}
 		},
 		"./src/reddit/actions/subredditCrosspostable.ts": function(e, t, r) {
@@ -26143,7 +26144,7 @@
 				l = e => e === n.U.OnetapAuto,
 				p = e => e.user.googleOneTapEnabled,
 				b = Object(s.a)(o.K, i, (e, t) => !e && !!t),
-				f = Object(s.a)(o.K, i, (e, t) => !e && !!t && !Object(n.Af)(t))
+				f = Object(s.a)(o.K, i, (e, t) => !e && !!t && !Object(n.Cf)(t))
 		},
 		"./src/reddit/selectors/scheduledPosts/index.ts": function(e, t, r) {
 			"use strict";
@@ -26372,4 +26373,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.5b96d3d5bb236d3ae61a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.45b1be7b603cc3759d7c.js.map

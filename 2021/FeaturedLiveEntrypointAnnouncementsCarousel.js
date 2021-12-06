@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.939d397a2be012da3cf4.js
-// Retrieved at 12/2/2021, 5:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.de060e27986ae6ab3bfb.js
+// Retrieved at 12/6/2021, 12:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FeaturedLiveEntrypointAnnouncementsCarousel"], {
 		"./src/reddit/components/FeaturedLiveEntrypoint/AnnouncementsCarousel/index.m.less": function(e, n, t) {
@@ -84,14 +84,14 @@
 					},
 					...Object(h.defaults)(a)
 				}),
-				O = e => n => ({
+				C = e => n => ({
 					source: "announcement",
 					action: e,
 					noun: "announcement",
 					...Object(h.defaults)(n)
 				});
-			var j = t("./src/reddit/hooks/useTracking.ts"),
-				C = t("./src/reddit/selectors/experiments/index.ts");
+			var O = t("./src/reddit/hooks/useTracking.ts"),
+				j = t("./src/reddit/selectors/experiments/index.ts");
 			const E = e => {
 					const n = new Date;
 					n.setMonth(n.getMonth() + 1), u.a.set(A.h, e, {
@@ -102,7 +102,7 @@
 				g = (e, n) => t => {
 					if (t.experimentName) {
 						const n = e[t.experimentName.toLowerCase()];
-						if (n && Object(p.Af)(n.variant)) return !1
+						if (n && Object(p.Cf)(n.variant)) return !1
 					}
 					return !((n[t.id] || 0) >= t.maxImpressionsCount)
 				};
@@ -171,7 +171,7 @@
 					setVisibleAnnouncements: o,
 					visibleAnnouncements: i
 				}) => {
-					const r = Object(c.e)(C.a);
+					const r = Object(c.e)(j.a);
 					Object(a.useEffect)(() => {
 						const a = Object(_.e)(),
 							c = e.filter(g(r, a)).slice(0, 5),
@@ -195,12 +195,12 @@
 					visibleAnnouncements: n,
 					setActiveIndex: t
 				}) => {
-					const s = Object(j.a)(),
+					const s = Object(O.a)(),
 						[o, c] = Object(a.useState)(!0),
 						i = Object(a.useRef)(null);
 					return {
 						onCarouselNavigate: Object(a.useCallback)(a => () => {
-							"next" === a && e + 1 >= n.length ? t(0) : t("prev" === a && e <= 0 ? n.length - 1 : e + ("next" === a ? 1 : -1)), s(O("next" === a ? "scroll_next" : "scroll_previous")), i.current && window.clearTimeout(i.current), c(!1), i.current = window.setTimeout(() => {
+							"next" === a && e + 1 >= n.length ? t(0) : t("prev" === a && e <= 0 ? n.length - 1 : e + ("next" === a ? 1 : -1)), s(C("next" === a ? "scroll_next" : "scroll_previous")), i.current && window.clearTimeout(i.current), c(!1), i.current = window.setTimeout(() => {
 								c(!0)
 							}, 200)
 						}, [e, s, t, n]),
@@ -214,7 +214,7 @@
 					setIsHidden: e,
 					visibleAnnouncements: n
 				}) => {
-					const t = Object(j.a)();
+					const t = Object(O.a)();
 					return Object(a.useCallback)(() => {
 						e(!0), n.forEach(e => {
 							const {
@@ -222,7 +222,7 @@
 								maxImpressionsCount: t
 							} = e;
 							Object(_.gb)(n, t)
-						}), t(O("dismiss_all")), E(A.i.No)
+						}), t(C("dismiss_all")), E(A.i.No)
 					}, [n, t, e])
 				})({
 					visibleAnnouncements: t,
@@ -232,7 +232,7 @@
 					setActiveIndex: n,
 					visibleAnnouncements: t
 				}) => {
-					const s = Object(j.a)();
+					const s = Object(O.a)();
 					return Object(a.useCallback)(() => {
 						e < 0 || e >= t.length ? n(0) : s(x("click", t[e]))
 					}, [e, s, n, t])
@@ -246,8 +246,8 @@
 					setActiveIndex: n,
 					visibleAnnouncements: t
 				}) => {
-					const s = Object(j.a)(),
-						o = Object(c.e)(C.a, (e, n) => Object.keys(e).length === Object.keys(n).length);
+					const s = Object(O.a)(),
+						o = Object(c.e)(j.a, (e, n) => Object.keys(e).length === Object.keys(n).length);
 					Object(a.useEffect)(() => {
 						if (e < 0 || e >= t.length) return void n(0);
 						const a = t[e],
@@ -317,4 +317,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.939d397a2be012da3cf4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.de060e27986ae6ab3bfb.js.map
