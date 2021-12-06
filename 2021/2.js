@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/2.b8a3a55c86956c86abfa.js
-// Retrieved at 12/2/2021, 2:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/2.e3993b7ffc43ad1961b6.js
+// Retrieved at 12/6/2021, 3:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	[2], {
 		"./src/reddit/helpers/graphql/normalizeCommentFromGql/index.ts": function(e, t, r) {
@@ -29,8 +29,8 @@
 					distinguishedAs: b,
 					editedAt: f,
 					id: I,
-					isGildable: O,
-					isScoreHidden: j,
+					isGildable: j,
+					isScoreHidden: O,
 					isStickied: q,
 					isSaved: y,
 					parent: A,
@@ -52,11 +52,11 @@
 					isAdmin: C,
 					isAuthorCakeday: E,
 					isAuthorPremium: S,
-					isGildable: O,
+					isGildable: j,
 					isMod: F,
 					isOp: m(r, g),
 					isSaved: y,
-					isScoreHidden: j,
+					isScoreHidden: O,
 					isStickied: q,
 					markdown: c && c.markdown || "",
 					media: u(e),
@@ -101,15 +101,15 @@
 				l = r("./src/reddit/helpers/graphql/normalizeCommentFromGql/index.ts"),
 				u = r("./src/reddit/helpers/graphql/normalizePostFromGql/index.ts");
 			const m = {
-					[s.rb.Edited]: c.i.Edited,
-					[s.rb.Modqueue]: c.i.Mod,
-					[s.rb.Reports]: c.i.Reported,
-					[s.rb.Spam]: c.i.Removed,
-					[s.rb.Unmoderated]: c.i.Unmoderated
+					[s.rb.Edited]: c.j.Edited,
+					[s.rb.Modqueue]: c.j.Mod,
+					[s.rb.Reports]: c.j.Reported,
+					[s.rb.Spam]: c.j.Removed,
+					[s.rb.Unmoderated]: c.j.Unmoderated
 				},
 				p = {
-					comments: c.h.Comment,
-					links: c.h.Post
+					comments: c.i.Comment,
+					links: c.i.Post
 				};
 
 			function h({
@@ -231,4 +231,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/2.b8a3a55c86956c86abfa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/2.e3993b7ffc43ad1961b6.js.map

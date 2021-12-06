@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.7538d89d8e7978c3686c.js
-// Retrieved at 12/6/2021, 1:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.b685f1f9384bfe467d16.js
+// Retrieved at 12/6/2021, 3:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, r) {
@@ -2348,7 +2348,7 @@
 			}) => {
 				const n = Object(Fe.a)(),
 					o = Object(K.b)(),
-					i = Object(a.e)(e => !r && Boolean(Object(M.h)(e)) && Object(Ue.z)(e)),
+					i = Object(a.e)(e => !r && Boolean(Object(M.h)(e)) && Object(Ue.A)(e)),
 					c = i ? He._("Get free Coins with Premium", null, {
 						hk: "3fzsqq"
 					}) : Object(Le.a)(r || 0, {
@@ -4392,12 +4392,12 @@
 						rtJsonElementProps: a
 					});
 					switch (n) {
-						case h.cf.SmIcon:
+						case h.df.SmIcon:
 							return s.a.createElement(p, {
 								subredditName: r,
 								rtJsonElementProps: a
 							});
-						case h.cf.SmIconHc:
+						case h.df.SmIconHc:
 							return s.a.createElement(p, {
 								subredditName: r,
 								isHoverable: !0,
@@ -5232,12 +5232,12 @@
 				c = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: n.Ve
+						experimentName: n.We
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === n.cf.SmIcon || t === n.cf.SmIconHc
+					return t === n.df.SmIcon || t === n.df.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -5269,4 +5269,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.7538d89d8e7978c3686c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.b685f1f9384bfe467d16.js.map

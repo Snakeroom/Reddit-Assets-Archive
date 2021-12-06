@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.8f6dca9321de67c39d2b.js
-// Retrieved at 12/1/2021, 6:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.c0c26d3a1e9e74367482.js
+// Retrieved at 12/6/2021, 3:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Premium~reddit-components-Econ-Prediction-PremiumModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, r) {
@@ -441,7 +441,7 @@
 					} catch (a) {
 						p.c.captureException(a)
 					}
-				}, T = Object(m.a)(f.O), B = Object(m.a)(f.P), L = Object(m.a)(f.Q), G = e => async (t, r) => {
+				}, T = Object(m.a)(f.O), L = Object(m.a)(f.P), B = Object(m.a)(f.Q), G = e => async (t, r) => {
 					await t(T(e)), t(Object(l.f)({
 						kind: b.b.Error,
 						duration: l.a,
@@ -450,7 +450,7 @@
 				}, R = (e, t, r) => async (a, i, {
 					gqlContext: s
 				}) => {
-					a(B({
+					a(L({
 						subredditId: t,
 						allocatedAt: r
 					}));
@@ -462,7 +462,7 @@
 									errors: n
 								} = e.data.cancelEconRecurringPayment;
 							if (n && n.length) return void a(G(n[0].message));
-							a(L({
+							a(B({
 								subredditId: t,
 								allocatedAt: r
 							}))
@@ -1865,7 +1865,7 @@
 					a = Object(p.a)(),
 					o = Object(s.e)(y.m),
 					c = !!o,
-					f = Object(s.e)(e => !t && c && Object(g.B)(e)),
+					f = Object(s.e)(e => !t && c && Object(g.C)(e)),
 					O = Object(s.e)(y.j),
 					P = Object(s.e)(y.l);
 				if (!(null == P ? void 0 : P.length)) return i.a.createElement("div", null, i.a.createElement(u.a, {
@@ -2065,8 +2065,8 @@
 				A = r("./src/reddit/controls/Button/index.tsx"),
 				M = r("./src/reddit/pages/Premium/BenefitsSection/index.tsx"),
 				T = r("./src/reddit/pages/Premium/PremiumButtons/index.tsx"),
-				B = r("./src/lib/classNames/index.ts"),
-				L = r("./src/reddit/actions/claimgold.ts"),
+				L = r("./src/lib/classNames/index.ts"),
+				B = r("./src/reddit/actions/claimgold.ts"),
 				G = r("./src/reddit/hooks/useTracking.ts"),
 				R = r("./src/reddit/selectors/claimgold.ts"),
 				U = r("./src/reddit/pages/Premium/RedeemGiftCode/index.m.less"),
@@ -2081,17 +2081,17 @@
 					}, s.a.createElement(A.t, {
 						className: D.a.redeemCodeLink,
 						onClick: () => {
-							e(h.d()), t(Object(L.i)())
+							e(h.d()), t(Object(B.i)())
 						},
 						priority: A.c.Plain
 					}, a.fbt._("Redeem a Gift Code", null, {
 						hk: "10i0AM"
 					})), s.a.createElement("form", {
-						className: Object(B.a)(D.a.giftCodeInputContainer, {
+						className: Object(L.a)(D.a.giftCodeInputContainer, {
 							[D.a.giftCodeHidden]: !n
 						}),
 						onSubmit: e => {
-							e.preventDefault(), t(Object(L.h)())
+							e.preventDefault(), t(Object(B.h)())
 						}
 					}, s.a.createElement("input", {
 						className: D.a.giftCodeInput,
@@ -2101,7 +2101,7 @@
 							hk: "1UDPjt"
 						}),
 						onChange: e => {
-							e.stopPropagation(), t(Object(L.j)(e.target.value))
+							e.stopPropagation(), t(Object(B.j)(e.target.value))
 						},
 						value: r
 					}), s.a.createElement(A.t, {
@@ -2368,4 +2368,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.8f6dca9321de67c39d2b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.c0c26d3a1e9e74367482.js.map

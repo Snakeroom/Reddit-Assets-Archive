@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.7a70802bca615c9df1dd.js
-// Retrieved at 12/6/2021, 1:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.4fd06e10f87c843966ad.js
+// Retrieved at 12/6/2021, 3:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit", "reddit-components-BlankPost"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -3986,7 +3986,7 @@
 			const D = e => g.d.reCaptchaEnterprise(e) && !Object(j.d)(e),
 				v = e => !!Object(T.c)(e, {
 					experimentEligibilitySelector: Object(S.d)(Object(S.b)(...a.d)),
-					experimentName: b.Ge
+					experimentName: b.He
 				}),
 				w = Object(s.b)("LOAD_RECAPTCHA_ENTERPRISE"),
 				A = Object(s.b)("EXECUTE_RECAPTCHA_ENTERPRISE"),
@@ -5867,7 +5867,7 @@
 						pageLayer: t
 					}),
 					shouldOpenPostInNewTab: x.db,
-					isTournamentPredictionPostV2: k.x
+					isTournamentPredictionPostV2: k.y
 				}),
 				z = e => {
 					const {
@@ -5875,7 +5875,7 @@
 						subreddit: r
 					} = e, {
 						isSponsored: s
-					} = t, n = Object(G.a)(), c = Object(B.a)(p.pd) === p.wd.Enabled;
+					} = t, n = Object(G.a)(), c = Object(B.a)(p.qd) === p.xd.Enabled;
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return a.a.createElement(Q, {
 						nowrap: e.nowrap
 					}, a.a.createElement(X, e));
@@ -12394,7 +12394,8 @@
 			};
 			const An = {
 				name: "",
-				theme: "theme_1"
+				theme: "theme_1",
+				token: null
 			};
 			var Pn = (e = An, t) => {
 					switch (t.type) {
@@ -26245,7 +26246,7 @@
 				l = e => e === n.U.OnetapAuto,
 				p = e => e.user.googleOneTapEnabled,
 				b = Object(s.a)(o.K, i, (e, t) => !e && !!t),
-				f = Object(s.a)(o.K, i, (e, t) => !e && !!t && !Object(n.Cf)(t))
+				f = Object(s.a)(o.K, i, (e, t) => !e && !!t && !Object(n.Df)(t))
 		},
 		"./src/reddit/selectors/scheduledPosts/index.ts": function(e, t, r) {
 			"use strict";
@@ -26452,7 +26453,7 @@
 			e.exports = JSON.parse('{"id":"de72339b938a"}')
 		},
 		"./src/redditGQL/operations/SubredditTopContent.json": function(e) {
-			e.exports = JSON.parse('{"id":"839d1a7694c8"}')
+			e.exports = JSON.parse('{"id":"eba3db8414d9"}')
 		},
 		"./src/redditGQL/operations/SubredditsCarousel.json": function(e) {
 			e.exports = JSON.parse('{"id":"736dca8070d9"}')
@@ -26480,4 +26481,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.7a70802bca615c9df1dd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.4fd06e10f87c843966ad.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWelcomeMessageModal.cd836ebbcf954e959621.js
-// Retrieved at 12/6/2021, 1:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWelcomeMessageModal.bfb8450d6ea769a0a997.js
+// Retrieved at 12/6/2021, 3:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWelcomeMessageModal"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1855,18 +1855,18 @@
 						f: s,
 						t: r
 					} = e, i = [];
-					if (!s) return J(0, r, t);
+					if (!s) return V(0, r, t);
 					const o = Object(n.a)(r);
 					let a = 0,
 						d = 0;
 					const c = s.length;
 					for (; a < c; a++) {
 						const [e, t, n] = s[a], c = t + n, l = o[t], u = o[c] - l;
-						l > d && i.push(J(0, r.substr(d, l - d), `between${a}`)), i.push(J(e, r.substr(l, u), a)), d = l + u
+						l > d && i.push(V(0, r.substr(d, l - d), `between${a}`)), i.push(V(e, r.substr(l, u), a)), d = l + u
 					}
-					return d < r.length && i.push(J(0, r.substr(d), `remaining${a}`)), i
+					return d < r.length && i.push(V(0, r.substr(d), `remaining${a}`)), i
 				},
-				V = {
+				J = {
 					[p.j.monospace]: d.h,
 					[p.j.bold]: d.b,
 					[p.j.italic]: d.f,
@@ -1875,9 +1875,9 @@
 					[p.j.subscript]: d.l,
 					[p.j.superscript]: d.m
 				},
-				J = (e, t, s) => {
+				V = (e, t, s) => {
 					let n = t;
-					return n = i()(V, (t, n, r) => e & parseInt(r, 10) ? a.a.createElement(n, {
+					return n = i()(J, (t, n, r) => e & parseInt(r, 10) ? a.a.createElement(n, {
 						key: s
 					}, t) : t, n)
 				},
@@ -2008,12 +2008,12 @@
 						rtJsonElementProps: i
 					});
 					switch (n) {
-						case b.cf.SmIcon:
+						case b.df.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: i
 							});
-						case b.cf.SmIconHc:
+						case b.df.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -2120,7 +2120,7 @@
 				experimentVariant: e => {
 					var t;
 					return null === (t = Object(v.d)(e, {
-						experimentName: m.Xe
+						experimentName: m.Ye
 					})) || void 0 === t ? void 0 : t.variant
 				},
 				user: y.k,
@@ -2202,7 +2202,7 @@
 					rtJsonElementProps: N
 				}) : null === (i = null == y ? void 0 : y.body) || void 0 === i ? void 0 : i.markdown)), r.a.createElement(d.g, {
 					className: T.a.modalFooter
-				}, u === m.ef.Rules ? !j && r.a.createElement(p.t, {
+				}, u === m.ff.Rules ? !j && r.a.createElement(p.t, {
 					priority: p.c.Secondary,
 					onClick: () => {
 						O(!0), _(b.b())
@@ -2578,12 +2578,12 @@
 				d = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: n.Ve
+						experimentName: n.We
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === n.cf.SmIcon || t === n.cf.SmIconHc
+					return t === n.df.SmIcon || t === n.df.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -2606,4 +2606,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWelcomeMessageModal.cd836ebbcf954e959621.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWelcomeMessageModal.bfb8450d6ea769a0a997.js.map

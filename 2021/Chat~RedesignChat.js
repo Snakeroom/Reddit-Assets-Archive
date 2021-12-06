@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.6d8aa77626ea3a0c3f30.js
-// Retrieved at 12/2/2021, 6:50:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.783f7370395f224e285b.js
+// Retrieved at 12/6/2021, 3:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -142,7 +142,7 @@
 						channelAction: f.a.VIEW_INVITE
 					}
 				},
-				L = e => {
+				A = e => {
 					const {
 						channels: t
 					} = e;
@@ -150,7 +150,7 @@
 						channelId: t.joined.sortedKeys[0]
 					}
 				},
-				A = e => [T(e), L(e)],
+				L = e => [T(e), A(e)],
 				D = e => {
 					const t = Object(M.m)(e);
 					return {
@@ -328,7 +328,7 @@
 					const a = n(),
 						s = e || Object(R.e)(a);
 					s && (await t(xe(s)), await B.a.markChannelAsRead(), t(Object(u.c)()))
-				}, ke = Object(o.a)(V), Me = Object(o.a)(H), Te = Object(o.a)(G), Le = Object(o.a)(z), Ae = (e, t, n) => {
+				}, ke = Object(o.a)(V), Me = Object(o.a)(H), Te = Object(o.a)(G), Ae = Object(o.a)(z), Le = (e, t, n) => {
 					const a = e.map(e => ({
 						user_id: e,
 						nickname: t[e].name
@@ -362,7 +362,7 @@
 						} = o;
 					if (i && l) {
 						a(ke());
-						const s = Ae(e, u, i);
+						const s = Le(e, u, i);
 						if (s.length < 2) return;
 						const o = await Object(I.b)(r(), l, s, t);
 						if (o.ok) {
@@ -399,7 +399,7 @@
 								[t]: e
 							})), a(Object(p.m)(t)), await a(Object(c.b)(s))), n && (await B.a.enterChannel(e), await a(Object(d.r)(t, n, O.c.TEXT)))
 						} else a(Te()), a(Object(p.X)(e));
-						a(Le())
+						a(Ae())
 					}
 				}, Pe = e => async t => {
 					e = e.slice(0, 1), await t(Object(b.v)(e)), t(De(e)), location.origin === r.a.oldRedditUrl && t(Object(p.n)(e))
@@ -419,20 +419,20 @@
 						l = Object(M.B)(s, "channelSendbirdUrl"),
 						d = Object(R.d)(s);
 					if (r && o) {
-						const n = Ae(e, i);
+						const n = Le(e, i);
 						(await Object(I.i)(a(), o, n, l)).body && d === f.a.INVITE_MEMBERS ? (t(Object(p.d)()), t(Object(c.a)())) : Object(x.b)("Error inviting user to existing channel")
 					}
 				}, Re = (e, t) => async (n, a) => {
 					const s = a(),
 						c = e === f.b.INVITED,
 						r = T(s, t),
-						o = L(s);
+						o = A(s);
 					c ? r.channelId ? n(Fe(r)) : n(Fe(o)) : o.channelId ? n(Fe(o)) : n(Be())
 				}, Be = () => async (e, t) => {
 					const n = t();
 					if (n.channels.firstLoaded) {
 						const t = ((e, t) => {
-							const n = [...t ? [D(e)] : [], ...A(e)];
+							const n = [...t ? [D(e)] : [], ...L(e)];
 							return P(n)
 						})(n, !!n.platform.currentPage);
 						e(Fe(t))
@@ -919,7 +919,7 @@
 		"./src/chat/actions/message/index.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return L
+				return A
 			})), n.d(t, "c", (function() {
 				return U
 			})), n.d(t, "o", (function() {
@@ -1020,8 +1020,8 @@
 				k = n("./src/chat/selectors/contacts.ts"),
 				M = n("./src/chat/selectors/messages.ts"),
 				T = n("./src/chat/singleton/SendbirdSDK.ts");
-			const L = "MESSAGE__ADD_ONE",
-				A = Object(o.a)(L),
+			const A = "MESSAGE__ADD_ONE",
+				L = Object(o.a)(A),
 				D = (e, t, n) => async (a, s) => {
 					const c = s(),
 						r = Object(S.b)(n),
@@ -1030,7 +1030,7 @@
 						const n = {
 							[t.messageId]: t
 						};
-						return a(A({
+						return a(L({
 							message: n,
 							channelId: e,
 							clientMessageId: r
@@ -1934,9 +1934,9 @@
 			})), n.d(t, "h", (function() {
 				return T
 			})), n.d(t, "bb", (function() {
-				return L
-			})), n.d(t, "R", (function() {
 				return A
+			})), n.d(t, "R", (function() {
+				return L
 			})), n.d(t, "A", (function() {
 				return D
 			})), n.d(t, "F", (function() {
@@ -2071,7 +2071,7 @@
 				Object(b.e)(n(), e)
 			}, T = () => async (e, t) => {
 				Object(b.b)(t())
-			}, L = () => async (e, t) => {
+			}, A = () => async (e, t) => {
 				(e => Object(m.a)({
 					noun: "chat_settings",
 					source: a.b.ChatSettings,
@@ -2083,7 +2083,7 @@
 					},
 					...Object(h.a)(e)
 				}))(t())
-			}, A = e => async (t, n) => {
+			}, L = e => async (t, n) => {
 				((e, t) => Object(m.a)({
 					noun: "chat_member_block",
 					source: a.b.ChatSettings,
@@ -2789,7 +2789,7 @@
 			})), n.d(t, "r", (function() {
 				return T
 			})), n.d(t, "u", (function() {
-				return L
+				return A
 			})), n.d(t, "l", (function() {
 				return D
 			})), n.d(t, "i", (function() {
@@ -2850,8 +2850,8 @@
 				k = Object(i.a)(_),
 				M = Object(i.a)("USER__ACCOUNT_FETCH_FAILED"),
 				T = Object(i.a)(I),
-				L = Object(i.a)(y),
-				A = Object(i.a)(S),
+				A = Object(i.a)(y),
+				L = Object(i.a)(S),
 				D = () => async (e, t, {
 					apiContext: n
 				}) => {
@@ -2871,7 +2871,7 @@
 								features: n
 							}
 						} = i, a = Object(v.a)(t), s = Object(E.a)(n), c = !!a.prefNightmode;
-						e(k(a)), e(A(s)), e(Object(d.switchTheme)(c))
+						e(k(a)), e(L(s)), e(Object(d.switchTheme)(c))
 					} else e(M(i.error))
 				}, P = "USER__USERS_FETCH_COMPLETED", U = Object(i.a)("USER__USERS_FETCH_PENDING"), R = Object(i.a)(P), B = Object(i.a)("USER__USERS_FETCH_FAILED"), F = e => async (t, n, {
 					gqlContext: a
@@ -3247,7 +3247,7 @@
 						k = u === v.b.INVITED,
 						M = Object(a.useMemo)(() => k ? Object(C.channelAction)(e, v.a.VIEW_INVITE) : Object(C.channelUrl)(e), [k, e]),
 						T = Object(a.useMemo)(() => Object(C.getRedirectURL)(M), [M]),
-						L = Object(a.useMemo)(() => r ? p : g, [p, g, r]);
+						A = Object(a.useMemo)(() => r ? p : g, [p, g, r]);
 					return s.a.createElement(i.a, {
 						to: T,
 						className: Object(l.a)(y.a.ChatListItem, {
@@ -3276,7 +3276,7 @@
 						message: h,
 						channelData: t
 					}), s.a.createElement(j.b, {
-						count: L
+						count: A
 					}))), N && w && s.a.createElement(_.a, {
 						className: y.a.NotificationDisabledIcon,
 						isFilled: !0
@@ -3594,8 +3594,8 @@
 				_ = n.n(C);
 			const {
 				fbt: I
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), x = r.a.div("CrisisImageContainer", i.a), y = r.a.h2("CrisisTitle", i.a), S = r.a.p("CrisisDescription", i.a), N = r.a.div("CrisisOtherActions", _.a), w = r.a.h4("CrisisOtherActionsTitle", _.a), k = r.a.div("CrisisLinkIconContainer", _.a), M = r.a.div("CrisisLinkText", _.a), T = r.a.h3("CrisisLinkTitle", _.a), L = r.a.p("CrisisLinkDescription", _.a);
-			var A = e => s.a.createElement("div", {
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), x = r.a.div("CrisisImageContainer", i.a), y = r.a.h2("CrisisTitle", i.a), S = r.a.p("CrisisDescription", i.a), N = r.a.div("CrisisOtherActions", _.a), w = r.a.h4("CrisisOtherActionsTitle", _.a), k = r.a.div("CrisisLinkIconContainer", _.a), M = r.a.div("CrisisLinkText", _.a), T = r.a.h3("CrisisLinkTitle", _.a), A = r.a.p("CrisisLinkDescription", _.a);
+			var L = e => s.a.createElement("div", {
 				className: _.a.CrisisThankYouPage
 			}, s.a.createElement(x, null, s.a.createElement(j, {
 				className: _.a.CrisisTickImage
@@ -3612,7 +3612,7 @@
 				className: _.a.CrisisLink
 			}, s.a.createElement(k, null, s.a.createElement(E, null)), s.a.createElement(M, null, s.a.createElement(T, null, I._("Learn how to help someone in crisis", null, {
 				hk: "3HohFx"
-			})), s.a.createElement(L, null, I._("Get advice on what you can say and how to be supportive.", null, {
+			})), s.a.createElement(A, null, I._("Get advice on what you can say and how to be supportive.", null, {
 				hk: "1NHS5d"
 			}))), s.a.createElement(O, {
 				className: _.a.CrisisLinkArrow
@@ -3623,7 +3623,7 @@
 				className: _.a.CrisisLink
 			}, s.a.createElement(k, null, s.a.createElement(v, null)), s.a.createElement(M, null, s.a.createElement(T, null, I._("Get yourself support", null, {
 				hk: "kTT0U"
-			})), s.a.createElement(L, null, I._("If this has brought up difficult emotions, there are people and resources here for you too.", null, {
+			})), s.a.createElement(A, null, I._("If this has brought up difficult emotions, there are people and resources here for you too.", null, {
 				hk: "37R4JZ"
 			}))), s.a.createElement(O, {
 				className: _.a.CrisisLinkArrow
@@ -3633,7 +3633,7 @@
 					const {
 						props: e
 					} = this;
-					return s.a.createElement(a.Fragment, null, e.ctlSubmitted ? s.a.createElement(A, {
+					return s.a.createElement(a.Fragment, null, e.ctlSubmitted ? s.a.createElement(L, {
 						username: e.username
 					}) : s.a.createElement(f, {
 						username: e.username
@@ -3764,7 +3764,7 @@
 		"./src/chat/components/FrameContent/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return Ac
+				return Lc
 			}));
 			var a = n("./node_modules/lodash/isEqual.js"),
 				s = n.n(a),
@@ -3948,7 +3948,7 @@
 				})
 			}
 
-			function L(e) {
+			function A(e) {
 				const t = Object(o.d)(),
 					{
 						setFiles: n
@@ -3960,8 +3960,8 @@
 					}
 				}, e.children)
 			}
-			var A = n("./node_modules/lodash/map.js"),
-				D = n.n(A),
+			var L = n("./node_modules/lodash/map.js"),
+				D = n.n(L),
 				P = n("./node_modules/lodash/sortBy.js"),
 				U = n.n(P),
 				R = n("./src/chat/actions/channel.ts"),
@@ -4070,7 +4070,7 @@
 							src: t.metadata.localUrl,
 							key: `image-${t.metadata.localUrl}`
 						}))),
-						u = (a || n || l.length) && !s || s && a ? r.a.createElement(L, {
+						u = (a || n || l.length) && !s || s && a ? r.a.createElement(A, {
 							className: Object(i.a)(ne.a.Placeholder, {
 								[ne.a.isLimited]: s
 							}),
@@ -4188,7 +4188,7 @@
 						username: Me(n)
 					}
 				},
-				Le = function(e, t, n) {
+				Ae = function(e, t, n) {
 					const {
 						word: a,
 						posStart: s,
@@ -4216,7 +4216,7 @@
 						posEndUpdate: l
 					}
 				},
-				Ae = e => Boolean(e.match(/^(\/)(\w+)?$/g));
+				Le = e => Boolean(e.match(/^(\/)(\w+)?$/g));
 			var De, Pe = n("./src/chat/constants/users.ts"),
 				Ue = n("./src/chat/endpoints/accounts/index.ts"),
 				Re = n("./src/chat/endpoints/sendbird/index.ts"),
@@ -4701,7 +4701,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var Lt = e => r.a.createElement(b.a, Tt({}, e, {
+			var At = e => r.a.createElement(b.a, Tt({}, e, {
 				viewBox: "0 0 20 20"
 			}), e.isFilled ? r.a.createElement(r.a.Fragment, null, r.a.createElement("rect", {
 				x: "7",
@@ -4759,8 +4759,8 @@
 				r: "1.5"
 			})));
 
-			function At() {
-				return (At = Object.assign || function(e) {
+			function Lt() {
+				return (Lt = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var a in n) Object.prototype.hasOwnProperty.call(n, a) && (e[a] = n[a])
@@ -4768,7 +4768,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var Dt = e => r.a.createElement(b.a, At({}, e, {
+			var Dt = e => r.a.createElement(b.a, Lt({}, e, {
 				viewBox: "0 0 20 20"
 			}), e.isFilled ? r.a.createElement("path", {
 				d: "M10,.375A9.625,9.625,0,1,0,19.625,10,9.636,9.636,0,0,0,10,.375ZM4.5,9A1.5,1.5,0,1,1,6,10.5,1.5,1.5,0,0,1,4.5,9Zm9.114,4.431A4.378,4.378,0,0,1,10,15.2a4.378,4.378,0,0,1-3.614-1.773l-.431-.613,1.227-.863.432.614A2.92,2.92,0,0,0,10,13.7a2.92,2.92,0,0,0,2.386-1.135l.432-.614,1.227.863ZM14,10.5A1.5,1.5,0,1,1,15.5,9,1.5,1.5,0,0,1,14,10.5Z"
@@ -4862,7 +4862,7 @@
 											className: Bt.a.CommandItemIcon
 										});
 									case De.MEMBERS:
-										return r.a.createElement(Lt, {
+										return r.a.createElement(At, {
 											className: Bt.a.CommandItemIcon
 										});
 									case De.LEAVE:
@@ -5240,7 +5240,7 @@
 				kn = n("./src/chat/controls/TooltipHooked/TooltipConfig.ts"),
 				Mn = n("./src/chat/components/MessageInput/ImageUploader/index.m.less"),
 				Tn = n.n(Mn);
-			var Ln = r.a.memo((function({
+			var An = r.a.memo((function({
 					channelId: e
 				}) {
 					const t = Object(o.d)(),
@@ -5283,10 +5283,10 @@
 						onClick: u
 					}, r.a.createElement(Nn, {
 						className: Tn.a.ImageUploader
-					}, r.a.createElement(L, null)))) : null
+					}, r.a.createElement(A, null)))) : null
 				})),
-				An = n("./src/chat/components/MessageInput/index.m.less"),
-				Dn = n.n(An);
+				Ln = n("./src/chat/components/MessageInput/index.m.less"),
+				Dn = n.n(Ln);
 			const Pn = r.a.memo((function() {
 					const e = Object(o.d)(),
 						t = Object(o.e)(tt.a);
@@ -5426,7 +5426,7 @@
 					} = this.cursorPosition, {
 						textUpdate: a,
 						posEndUpdate: s
-					} = Le(t, e, n);
+					} = Ae(t, e, n);
 					this.setState({
 						textUpdate: a,
 						text: a
@@ -5456,7 +5456,7 @@
 				}
 				toggleCommandsTooltipByTextChange(e) {
 					const t = this.isSlashCommandListPopupOpened();
-					(!t && Ae(e) || t && !Ae(e)) && this.props.toggleSlashCommandListTooltip(Se.c), this.setState({
+					(!t && Le(e) || t && !Le(e)) && this.props.toggleSlashCommandListTooltip(Se.c), this.setState({
 						inputCommand: e.replace(Ce, "")
 					})
 				}
@@ -5491,7 +5491,7 @@
 						onSubmit: Object(u.b)(this.handleSubmitInput)
 					}, r.a.createElement("div", {
 						className: Dn.a.Wrapper
-					}, r.a.createElement(Ln, {
+					}, r.a.createElement(An, {
 						channelId: t
 					}), r.a.createElement("div", {
 						className: Dn.a.InputWrapper
@@ -6051,8 +6051,8 @@
 					getComponent: () => Object(Na.a)(() => n.e("OverlayCreateChannel").then(n.bind(null, "./src/chat/components/OverlayCreateChannel/index.tsx"))).then(e => e.default),
 					LoadingComponent: Ma
 				}),
-				La = n("./src/chat/components/ChatIcon/index.tsx"),
-				Aa = n("./src/lib/opener/index.ts"),
+				Aa = n("./src/chat/components/ChatIcon/index.tsx"),
+				La = n("./src/lib/opener/index.ts"),
 				Da = n("./src/chat/components/Message/RichUnit/Comment/loader.tsx"),
 				Pa = n("./src/chat/components/Message/RichUnit/Post/loader.tsx"),
 				Ua = n("./src/chat/components/OverlayShareToChat/RichUnit/index.m.less"),
@@ -6093,7 +6093,7 @@
 						className: Ra.a.Link,
 						onClick: e => {
 							((e, t) => {
-								e.stopPropagation(), Object(Aa.e)(t, "_blank")
+								e.stopPropagation(), Object(La.e)(t, "_blank")
 							})(e, t)
 						}
 					}, t))
@@ -6123,7 +6123,7 @@
 					className: qa.a.Checkbox
 				}, r.a.createElement("div", {
 					className: qa.a.CheckboxContent
-				}, (null == l ? void 0 : l.firstUser) && r.a.createElement(La.a, {
+				}, (null == l ? void 0 : l.firstUser) && r.a.createElement(Aa.a, {
 					className: qa.a.ChannelIcon,
 					userId: l.firstUser.id,
 					secondUserId: null === (a = l.secondUser) || void 0 === a ? void 0 : a.id,
@@ -6478,8 +6478,8 @@
 			}) => {
 				const c = t && !!t.isNSFW;
 				return e ? r.a.createElement(r.a.Fragment, null, r.a.createElement("a", {
-					target: Aa.d.BLANK,
-					rel: Aa.c,
+					target: La.d.BLANK,
+					rel: La.c,
 					href: `${_t.a.redditUrl}/user/${e.name}`
 				}, r.a.createElement(Cs, {
 					className: ys.a.MediaObject
@@ -6521,7 +6521,7 @@
 				className: ys.a.BoldText
 			}, e)), Ss._param("restText", r.a.createElement("span", null, ". If you ignore, the chat request will be removed, and we won’t let the sender know."))], {
 				hk: "3FVxLq"
-			})), Ls = ({
+			})), As = ({
 				userName: e,
 				isQuickActionBlock: t
 			}) => t ? Ss._("Are you sure you want to block {userName}", [Ss._param("userName", r.a.createElement("span", {
@@ -6533,7 +6533,7 @@
 			}, ` ${e}?`))], {
 				hk: "1teJQL"
 			});
-			var As = ({
+			var Ls = ({
 				channelId: e
 			}) => {
 				var t, n;
@@ -6592,7 +6592,7 @@
 					primaryButtonText: E,
 					primaryButtonAction: f,
 					secondaryButtonAction: O
-				}, r.a.createElement(Ls, {
+				}, r.a.createElement(As, {
 					userName: null === (t = null == d ? void 0 : d.inviter) || void 0 === t ? void 0 : t.name,
 					isQuickActionBlock: m
 				})) : r.a.createElement(Wa.a, {
@@ -6884,7 +6884,7 @@
 				}
 			}
 			var Nc = Object(sc.b)(xc(Sc));
-			const wc = e => e.userIds ? r.a.createElement(Bs.a, null) : e.channelId ? e.action === bs.a.VIEW_INVITE && e.channelId ? r.a.createElement(As, {
+			const wc = e => e.userIds ? r.a.createElement(Bs.a, null) : e.channelId ? e.action === bs.a.VIEW_INVITE && e.channelId ? r.a.createElement(Ls, {
 				channelId: e.channelId
 			}) : e.action === bs.a.VIEW_MEMBERS && e.channelId ? r.a.createElement(ka, {
 				channelId: e.channelId
@@ -6917,8 +6917,8 @@
 			var kc = n("./src/chat/selectors/platform.ts"),
 				Mc = n("./src/chat/selectors/sidebar.ts"),
 				Tc = n("./src/chat/components/FrameContent/index.m.less"),
-				Lc = n.n(Tc);
-			const Ac = Lc.a.Main,
+				Ac = n.n(Tc);
+			const Lc = Ac.a.Main,
 				Dc = Object(Xt.a)({
 					channel: _.o,
 					container: et.a,
@@ -6980,15 +6980,15 @@
 								inReportRevamp: s
 							});
 							return r.a.createElement("div", {
-								className: Lc.a.Main
+								className: Ac.a.Main
 							}, r.a.createElement($a.b, null), r.a.createElement("div", {
 								ref: this.mainRef,
-								className: Object(i.a)(Lc.a.Content, {
-									[Lc.a.hidden]: a,
-									[Lc.a.isFullSize]: t === gs.a.FULL
+								className: Object(i.a)(Ac.a.Content, {
+									[Ac.a.hidden]: a,
+									[Ac.a.isFullSize]: t === gs.a.FULL
 								})
 							}, n ? r.a.createElement("div", {
-								className: Lc.a.Modal
+								className: Ac.a.Modal
 							}, n) : e && u && r.a.createElement(r.a.Fragment, null, r.a.createElement(xa, {
 								channel: e
 							}), c && !o && r.a.createElement(T, {
@@ -6999,7 +6999,7 @@
 				}
 				render() {
 					return r.a.createElement("main", {
-						className: Lc.a.Main,
+						className: Ac.a.Main,
 						id: Je.a
 					}, this.getContent(), r.a.createElement(ps, null))
 				}
@@ -7328,21 +7328,21 @@
 				k = n("./src/chat/components/Message/FailedMenu.m.less"),
 				M = n.n(k);
 			const T = I.a.div("ButtonControls", M.a),
-				L = I.a.span("Text", M.a),
-				A = I.a.wrapped(f.a, "Button", M.a);
+				A = I.a.span("Text", M.a),
+				L = I.a.wrapped(f.a, "Button", M.a);
 			class D extends s.Component {
 				constructor() {
 					super(...arguments), this.handleResend = () => this.props.onResend(this.props.clientMessageId), this.handleDelete = () => this.props.onDelete(this.props.clientMessageId)
 				}
 				render() {
-					return c.a.createElement(T, null, c.a.createElement(L, null, a.fbt._("Failed to send", null, {
+					return c.a.createElement(T, null, c.a.createElement(A, null, a.fbt._("Failed to send", null, {
 						hk: "2feF2H"
-					})), c.a.createElement(A, {
+					})), c.a.createElement(L, {
 						noBorder: !0,
 						onClick: this.handleResend
 					}, a.fbt._("Resend", null, {
 						hk: "cXpU3"
-					})), c.a.createElement(A, {
+					})), c.a.createElement(L, {
 						warningNoBorder: !0,
 						onClick: this.handleDelete
 					}, a.fbt._("Delete", null, {
@@ -7577,7 +7577,7 @@
 			const {
 				fbt: Se
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), Ne = I.a.wrapped(_e, "Approve", ye.a), we = I.a.wrapped(Ie.a, "Trash", ye.a), ke = I.a.div("ButtonControls", ye.a), Me = I.a.wrapped(f.a, "Button", ye.a), Te = I.a.span("ButtonText", ye.a);
-			class Le extends s.Component {
+			class Ae extends s.Component {
 				render() {
 					const {
 						onDelete: e,
@@ -7598,10 +7598,10 @@
 					}))))
 				}
 			}
-			var Ae = Object(r.b)(void 0, e => ({
+			var Le = Object(r.b)(void 0, e => ({
 					onDelete: (t, n) => e(Object(x.B)(t, n)),
 					onIgnore: (t, n) => e(Object(x.C)(t, n))
-				}))(Le),
+				}))(Ae),
 				De = n("./src/chat/components/MemberActionDropdown/index.tsx"),
 				Pe = n("./src/config.ts"),
 				Ue = n("./src/chat/helpers/time/index.tsx"),
@@ -7724,7 +7724,7 @@
 						hk: "4mxZZS"
 					})), t && t.ignored && c.a.createElement(ht, null, lt._("Approved by {username}", [lt._param("username", `u/${t.ignored.userName}`)], {
 						hk: "m22OH"
-					})), je()(t) && c.a.createElement(Ae, {
+					})), je()(t) && c.a.createElement(Le, {
 						reportedMessageId: e.message.messageId,
 						reportedChannelId: e.message.channelId
 					}))
@@ -7767,8 +7767,8 @@
 				COMMENT: kt,
 				SNOOMOJI: Mt,
 				SUBREDDIT: Tt,
-				EMBED: Lt,
-				GIF: At,
+				EMBED: At,
+				GIF: Lt,
 				IMAGE: Dt
 			} = b.c, Pt = () => {
 				const e = Object(r.d)();
@@ -7811,7 +7811,7 @@
 						[xt.a.currentUser]: s,
 						[xt.a.embed]: h,
 						[xt.a.noPadding]: g,
-						[xt.a.gif]: (null == p ? void 0 : p.messageData.type) === At && !u,
+						[xt.a.gif]: (null == p ? void 0 : p.messageData.type) === Lt && !u,
 						[xt.a.media]: (null == p ? void 0 : p.messageData.type) === Dt && !u && I
 					})
 				}, t, b && (null === (E = null == p ? void 0 : p.sender) || void 0 === E ? void 0 : E.userId) && c.a.createElement(m.a, {
@@ -7862,7 +7862,7 @@
 					type: C,
 					report: I,
 					collapsedInvitePreview: x
-				} = d.messageData, y = d.messageType === yt && d.error && d.clientMessageId, S = C !== Mt && (C !== At || C === At && h), N = p && !y && !I, k = d.messageType === St && N, M = ((e, t, n, s, r, o) => {
+				} = d.messageData, y = d.messageType === yt && d.error && d.clientMessageId, S = C !== Mt && (C !== Lt || C === Lt && h), N = p && !y && !I, k = d.messageType === St && N, M = ((e, t, n, s, r, o) => {
 					var i, l, d, u;
 					const {
 						messageType: h,
@@ -7878,11 +7878,11 @@
 						value: b,
 						highlighMentionGroupLinks: p
 					});
-					if (t && m.type !== Mt) return m.type === At ? a.fbt._("Sent a GIF", null, {
+					if (t && m.type !== Mt) return m.type === Lt ? a.fbt._("Sent a GIF", null, {
 						hk: "1x1QrK"
 					}) : m.type === Dt ? g : f;
 					switch (m.type) {
-						case Lt:
+						case At:
 							const {
 								embed: e
 							} = m;
@@ -7921,7 +7921,7 @@
 							}, c.a.createElement(pt.a, {
 								iconName: b
 							}));
-						case At: {
+						case Lt: {
 							const e = !r && (null === (i = m.gif) || void 0 === i ? void 0 : i.width) || 0,
 								t = Math.min(258 / e, 1);
 							return c.a.createElement(bt.a, {
@@ -9010,16 +9010,16 @@
 				T = Object(c.b)(M, (e, t) => ({
 					changeModeClicked: () => e(Object(C.themeToggle)())
 				})),
-				L = I.a.div("Wrapper", k.a);
+				A = I.a.div("Wrapper", k.a);
 			T(({
 				changeModeClicked: e,
 				theme: t
-			}) => s.a.createElement(L, {
+			}) => s.a.createElement(A, {
 				onClick: e
 			}, s.a.createElement(N, {
 				active: !0
 			})));
-			var A = n("./src/chat/constants/channels.ts"),
+			var L = n("./src/chat/constants/channels.ts"),
 				D = n("./src/chat/constants/dropdown.ts"),
 				P = n("./src/chat/controls/Dropdown/Row.tsx"),
 				U = n("./src/chat/controls/TooltipHooked/TooltipConfig.ts"),
@@ -9361,7 +9361,7 @@
 								onViewProfile: a,
 								inviterName: s
 							} = e;
-							if (t && t.channelState === A.b.JOINED) {
+							if (t && t.channelState === L.b.JOINED) {
 								const e = t.members.find(e => e.id !== n);
 								if (e && e.name) return a(e.name)
 							}
@@ -9369,7 +9369,7 @@
 						},
 						{
 							isFullSize: T,
-							showSparkles: L,
+							showSparkles: A,
 							onInviteLinkSettings: B
 						} = e,
 						F = (() => {
@@ -9394,7 +9394,7 @@
 						})
 					}, s.a.createElement(ee, {
 						className: Object(r.a)(le.a.Settings, {
-							[le.a.gradient]: L && l
+							[le.a.gradient]: A && l
 						})
 					})), w && s.a.createElement(R.default, {
 						arrowProps: S,
@@ -9423,7 +9423,7 @@
 						id: "OverlayNavTooltip--Default"
 					}, F && F.map((e, t) => s.a.createElement(P.a, {
 						className: Object(r.a)(le.a.DropdownRow, {
-							[le.a.gradient]: L && l && e === D.b.ChangeTheme
+							[le.a.gradient]: A && l && e === D.b.ChangeTheme
 						}),
 						key: t,
 						displayText: de(e).text,
@@ -9535,11 +9535,11 @@
 						return (e => e.renameGroupChat)(e).ivVisible
 					}
 				});
-			class Le extends a.Component {
+			class Ae extends a.Component {
 				constructor() {
 					super(...arguments), this.displayName = "RenameGroupInput", this.state = {
 						groupName: this.props.name || ""
-					}, this.getAvailableCharacters = () => A.g - this.state.groupName.length, this.hideChannelNameInput = () => {}, this.handleChannelNameInput = e => this.setState({
+					}, this.getAvailableCharacters = () => L.g - this.state.groupName.length, this.hideChannelNameInput = () => {}, this.handleChannelNameInput = e => this.setState({
 						groupName: e
 					}), this.submitGroupName = () => {
 						this.props.onUpdateChannelName(this.state.groupName.trim()), this.props.hideChannelNameInput(), this.props.saveRenamedGroup()
@@ -9583,20 +9583,20 @@
 						hk: "2TSLl5"
 					})), s.a.createElement(Me, {
 						noBorder: !0,
-						disabled: r < 0 || r >= A.g,
+						disabled: r < 0 || r >= L.g,
 						onClick: c
 					}, m.fbt._("Save", null, {
 						hk: "4yMsMq"
 					})))))
 				}
 			}
-			var Ae = Object(c.b)(Te, e => ({
+			var Le = Object(c.b)(Te, e => ({
 					onUpdateChannelName: t => e(Object(v.i)(t)),
 					saveRenamedGroup: () => e(Object(u.P)()),
 					hideChannelNameInput: () => e(Object(l.b)({
 						isVisible: !1
 					}))
-				}))(Le),
+				}))(Ae),
 				De = n("./src/chat/helpers/dom.ts"),
 				Pe = n("./src/chat/icons/svgs/ArrowLeft/index.tsx"),
 				Ue = n("./src/chat/components/OverlayNav/index.m.less"),
@@ -9704,7 +9704,7 @@
 						toggleChannelNameInput: f,
 						showMenu: !!o,
 						dropdownId: n
-					}), t && l && s.a.createElement(Ae, {
+					}), t && l && s.a.createElement(Le, {
 						channelId: t,
 						name: l
 					}))
@@ -10108,8 +10108,8 @@
 				}),
 				M = n("./src/chat/components/Scroller/index.tsx"),
 				T = n("./node_modules/react-router-redux/es/index.js"),
-				L = n("./src/chat/helpers/urls/index.ts"),
-				A = n("./src/chat/icons/svgs/ChatNew/index.tsx"),
+				A = n("./src/chat/helpers/urls/index.ts"),
+				L = n("./src/chat/icons/svgs/ChatNew/index.tsx"),
 				D = n("./src/chat/components/Sidebar/CreateChannel/index.m.less"),
 				P = n.n(D);
 			var U = () => {
@@ -10117,14 +10117,14 @@
 					return s.a.createElement("button", {
 						className: P.a.Button,
 						onClick: () => {
-							const t = Object(L.getRedirectURL)(Object(L.channelUrl)("create"));
+							const t = Object(A.getRedirectURL)(Object(A.channelUrl)("create"));
 							e(Object(T.b)(t)), e(Object(d.l)())
 						},
 						title: o.fbt._("Start a new chat", null, {
 							hk: "3C4ek3"
 						}),
 						tabIndex: 0
-					}, s.a.createElement(A.a, {
+					}, s.a.createElement(L.a, {
 						className: P.a.ChatNew,
 						isFilled: !0
 					}))
@@ -12969,7 +12969,7 @@
 			})), n.d(t, "f", (function() {
 				return S
 			})), n.d(t, "e", (function() {
-				return A
+				return L
 			})), n.d(t, "b", (function() {
 				return D
 			})), n.d(t, "a", (function() {
@@ -13261,7 +13261,7 @@
 						}
 					}
 				},
-				L = {
+				A = {
 					activity: {
 						icon: {
 							default: _(C).postIcon,
@@ -13439,9 +13439,9 @@
 						}
 					}
 				},
-				A = {
+				L = {
 					[r.b.REDDIT]: T,
-					[r.b.NIGHT]: L
+					[r.b.NIGHT]: A
 				},
 				D = {
 					[y.ORANGERED]: M,
@@ -13729,8 +13729,8 @@
 				k = n.n(w),
 				M = n("./node_modules/lodash/reduce.js"),
 				T = n.n(M),
-				L = n("./src/chat/actions/channel/dropdown.ts"),
-				A = n("./src/chat/actions/message/inboxScroller.ts"),
+				A = n("./src/chat/actions/channel/dropdown.ts"),
+				L = n("./src/chat/actions/message/inboxScroller.ts"),
 				D = n("./src/chat/constants/channels.ts");
 			const P = {};
 			var U = (e = P, t) => {
@@ -13818,7 +13818,7 @@
 						} = t.payload;
 						return u()(e, n)
 					}
-					case L.a: {
+					case A.a: {
 						const {
 							channelId: n,
 							name: a
@@ -13896,7 +13896,7 @@
 							}
 						}
 					}
-					case A.b: {
+					case L.b: {
 						const {
 							channelId: n
 						} = t.payload;
@@ -14520,7 +14520,7 @@
 							...u()(e, ...n)
 						}
 					}
-					case A.a: {
+					case L.a: {
 						const {
 							messageIdList: n
 						} = t.payload;
@@ -14623,27 +14623,27 @@
 					subreddits: {},
 					dataReceived: !1
 				},
-				Le = e => e.length ? e.reduce((e, t) => (null == t ? void 0 : t.id) ? {
+				Ae = e => e.length ? e.reduce((e, t) => (null == t ? void 0 : t.id) ? {
 					...e,
 					[t.id.toLowerCase()]: t
 				} : e, {}) : {};
-			var Ae = (e = Te, t) => {
+			var Le = (e = Te, t) => {
 					var n, a, s, c;
 					switch (t.type) {
 						case Me.b:
 							return {
 								...e, posts: {
 									...e.posts,
-									...Le((null === (n = t.payload) || void 0 === n ? void 0 : n.posts) || {})
+									...Ae((null === (n = t.payload) || void 0 === n ? void 0 : n.posts) || {})
 								}, userPosts: {
 									...e.userPosts,
-									...Le((null === (a = t.payload) || void 0 === a ? void 0 : a.userPosts) || {})
+									...Ae((null === (a = t.payload) || void 0 === a ? void 0 : a.userPosts) || {})
 								}, comments: {
 									...e.comments,
-									...Le((null === (s = t.payload) || void 0 === s ? void 0 : s.comments) || {})
+									...Ae((null === (s = t.payload) || void 0 === s ? void 0 : s.comments) || {})
 								}, subreddits: {
 									...e.subreddits,
-									...Le((null === (c = t.payload) || void 0 === c ? void 0 : c.subreddits) || {})
+									...Ae((null === (c = t.payload) || void 0 === c ? void 0 : c.subreddits) || {})
 								}, dataReceived: !0
 							};
 						case Me.a:
@@ -14677,7 +14677,7 @@
 					models: Ne,
 					pending: ke,
 					unread: Be,
-					richUnits: Ae
+					richUnits: Le
 				}),
 				He = n("./src/chat/reducers/meta/index.ts"),
 				Ge = n("./src/chat/reducers/platform/index.ts"),
@@ -15007,9 +15007,9 @@
 						return e
 				}
 			};
-			const Lt = {};
+			const At = {};
 			St.c;
-			var At = (e = Lt, t) => {
+			var Lt = (e = At, t) => {
 					switch (t.type) {
 						case St.a: {
 							const {
@@ -15071,7 +15071,7 @@
 					activeUploads: kt,
 					isDrop: Mt,
 					isOver: Tt,
-					models: At,
+					models: Lt,
 					prompt: Ut
 				}),
 				Bt = n("./src/lib/reducers/addAuthentication/index.ts");
@@ -15661,7 +15661,7 @@
 		"./src/chat/singleton/SendbirdSDK.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "b", (function() {
-				return A
+				return L
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var a = n("./src/config.ts"),
@@ -15715,9 +15715,9 @@
 				M = n("./src/chat/models/Message/index.ts"),
 				T = n("./src/chat/models/User/member.ts");
 			const {
-				sendbirdAppId: L
+				sendbirdAppId: A
 			} = a.a;
-			const A = new class {
+			const L = new class {
 				constructor() {
 					this.dispatch = c.a, this.channels = {}, this.channelUniqueHandlerID = [], this.connectionUniqueHandlerID = [], this.switchChannel = (e, t) => {
 						if (this.channel = e, t) return Promise.resolve([]); {
@@ -15727,7 +15727,7 @@
 							return Promise.all([t])
 						}
 					}, (this.self = new o.a({
-						appId: L
+						appId: A
 					})).Options.typingIndicatorThrottle = 1e4
 				}
 				connect(e, t, n, a) {
@@ -16128,7 +16128,7 @@
 					})
 				}
 			};
-			t.a = A
+			t.a = L
 		},
 		"./src/chat/tracking/events/chatView.ts": function(e, t, n) {
 			"use strict";
@@ -17216,9 +17216,6 @@
 		"./src/redditGQL/operations/CreateChatMessage.json": function(e) {
 			e.exports = JSON.parse('{"id":"b0bb6207e12d"}')
 		},
-		"./src/redditGQL/operations/CreateMediaUploadLease.json": function(e) {
-			e.exports = JSON.parse('{"id":"df597bfa6e5f"}')
-		},
 		"./src/redditGQL/operations/DeclineChatChannelInvite.json": function(e) {
 			e.exports = JSON.parse('{"id":"52783a3ba2dd"}')
 		},
@@ -17245,10 +17242,7 @@
 		},
 		"./src/redditGQL/operations/SearchChatGifs.json": function(e) {
 			e.exports = JSON.parse('{"id":"01a298f0be11"}')
-		},
-		"./src/redditGQL/operations/SubmitMediaUpload.json": function(e) {
-			e.exports = JSON.parse('{"id":"6a1841b659af"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.6d8aa77626ea3a0c3f30.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.783f7370395f224e285b.js.map

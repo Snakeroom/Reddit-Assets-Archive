@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.7563f1d0b2e8e1caa9b1.js
-// Retrieved at 12/6/2021, 1:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.f1a33f8871e838551bff.js
+// Retrieved at 12/6/2021, 3:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction"], {
 		"./src/lib/constants/specialMembership.ts": function(e, t, n) {
@@ -446,8 +446,8 @@
 				O = n("./src/reddit/components/Econ/Prediction/hooks/useDelayedUpvoteAnimation.tsx"),
 				P = n("./src/reddit/models/Vote/index.ts");
 			var v = n("./node_modules/fbt/lib/FbtPublic.js"),
-				x = n("./src/reddit/actions/economics/predictions/index.ts"),
-				y = n("./src/reddit/hooks/useToast.tsx");
+				y = n("./src/reddit/actions/economics/predictions/index.ts"),
+				x = n("./src/reddit/hooks/useToast.tsx");
 			var I = n("./src/reddit/actions/economics/helpers/index.ts"),
 				C = n("./src/reddit/helpers/trackers/predictions.ts"),
 				S = n("./src/reddit/hooks/useTracking.ts");
@@ -530,8 +530,8 @@
 					const n = Object(u.g)(t, {
 						postId: e.id
 					});
-					return Boolean((null == n ? void 0 : n.userSelection) && !(null == n ? void 0 : n.resolvedOptionId) && Object(l.y)(t))
-				}), x = Object(r.e)(p.pb), y = Object(r.e)(p.K), [I, C] = Object(s.useState)(!1), S = m === x, k = b < Date.now(), j = k && S && !E, N = O === d.b.Cancelled || O === d.b.CancelInProgress;
+					return Boolean((null == n ? void 0 : n.userSelection) && !(null == n ? void 0 : n.resolvedOptionId) && Object(l.z)(t))
+				}), y = Object(r.e)(p.pb), x = Object(r.e)(p.K), [I, C] = Object(s.useState)(!1), S = m === y, k = b < Date.now(), j = k && S && !E, N = O === d.b.Cancelled || O === d.b.CancelInProgress;
 				return o.a.useEffect(() => {
 					C(!1)
 				}, [g]), o.a.createElement("div", {
@@ -552,7 +552,7 @@
 					resolvedOptionId: E,
 					tournamentId: h,
 					userSelection: g,
-					userIsLoggedOut: !y,
+					userIsLoggedOut: !x,
 					votePercentage: (g || k || I) && e.voteCount ? Math.floor(e.voteCount / _ * 100) : null,
 					isShowingHint: I
 				}))), !N && o.a.createElement(L.a, {
@@ -573,17 +573,17 @@
 			var Y = n("./src/reddit/components/Econ/Prediction/PredictionCard/v2/index.tsx"),
 				G = n("./src/reddit/components/Econ/Prediction/PredictionCard/index.m.less"),
 				W = n.n(G);
-			const K = ({
+			const z = ({
 				post: e,
 				prediction: t
 			}) => {
-				const [n, i] = Object(s.useState)(!1), c = Object(r.e)(l.x), a = Object(r.e)(p.pb), {
+				const [n, i] = Object(s.useState)(!1), c = Object(r.e)(l.y), a = Object(r.e)(p.pb), {
 					isLoading: u,
 					selectedVoteOption: m,
 					setVoteOptionId: b,
 					predict: f
 				} = function(e) {
-					const [t, n] = Object(s.useState)(!1), [o, i] = Object(s.useState)(null), c = Object(S.a)(), a = Object(r.e)(p.e), l = Object(y.a)(), u = Object(r.d)(), m = e.options.find(({
+					const [t, n] = Object(s.useState)(!1), [o, i] = Object(s.useState)(null), c = Object(S.a)(), a = Object(r.e)(p.e), l = Object(x.a)(), u = Object(r.d)(), m = e.options.find(({
 						id: e
 					}) => e === o);
 					return {
@@ -608,7 +608,7 @@
 									totalStakeAmount: e.totalStakeAmount
 								})), n(!0);
 								try {
-									await u(Object(x.q)({
+									await u(Object(y.q)({
 										coinPackageId: t.id,
 										optionId: m.id,
 										postId: s,
@@ -629,7 +629,7 @@
 					setResolveOptionId: h,
 					resolve: j
 				} = function(e) {
-					const [t, n] = Object(s.useState)(!1), [o, i] = Object(s.useState)(null), c = Object(y.a)(), a = Object(r.d)();
+					const [t, n] = Object(s.useState)(!1), [o, i] = Object(s.useState)(null), c = Object(x.a)(), a = Object(r.d)();
 					return {
 						isLoading: t,
 						resolveOptionId: o,
@@ -637,7 +637,7 @@
 						resolve: async () => {
 							if (n(!0), !o) throw new Error("Failed to create prediction, missing selected option");
 							try {
-								await a(Object(x.p)({
+								await a(Object(y.p)({
 									optionId: o,
 									postId: e
 								}))
@@ -707,8 +707,8 @@
 					withOverlay: !0
 				}))
 			};
-			var z = n("./node_modules/lodash/isNil.js"),
-				H = n.n(z),
+			var K = n("./node_modules/lodash/isNil.js"),
+				H = n.n(K),
 				Q = n("./src/reddit/components/Econ/Prediction/PredictionEducationMessage/EducationMessage/constants.ts"),
 				Z = n("./src/reddit/components/Econ/Prediction/PredictionEducationMessage/EducationMessage/index.tsx"),
 				q = n("./src/reddit/components/Econ/Prediction/PredictionEducationMessage/PredictionEndedEducationMessage/index.m.less"),
@@ -899,7 +899,7 @@
 					totalStakeAmount: i,
 					tournamentId: a,
 					totalVoters: u
-				} = e, m = Object(r.e)(l.x), b = Boolean(a), p = !b;
+				} = e, m = Object(r.e)(l.y), b = Boolean(a), p = !b;
 				return n === d.b.Cancelled || n === d.b.CancelInProgress ? o.a.createElement("div", {
 					className: Object(c.a)(me.a.container, {
 						[me.a.v2]: m
@@ -928,8 +928,8 @@
 			var Oe = n("./src/reddit/components/Econ/Prediction/hooks/useTournamentsQuery.ts"),
 				Pe = n("./src/reddit/components/Econ/Tournament/Facepile/index.tsx"),
 				ve = n("./src/reddit/controls/InternalLink/index.tsx"),
-				xe = n("./src/reddit/hooks/usePageLayer.ts"),
-				ye = n("./src/reddit/icons/svgs/Chevron/index.tsx"),
+				ye = n("./src/reddit/hooks/usePageLayer.ts"),
+				xe = n("./src/reddit/icons/svgs/Chevron/index.tsx"),
 				Ie = n("./src/reddit/selectors/features/predictions/tournaments/index.ts"),
 				Ce = n("./src/reddit/selectors/subreddit.ts"),
 				Se = n("./src/reddit/components/Econ/Prediction/TournamentLink/index.m.less"),
@@ -943,7 +943,7 @@
 				tournamentId: t
 			}) {
 				const n = Object(S.a)(),
-					s = Object(xe.a)(),
+					s = Object(ye.a)(),
 					i = Object(r.e)(t => Object(Ce.R)(t, {
 						subredditId: e
 					})),
@@ -982,7 +982,7 @@
 					hk: "3eDpRH"
 				}) : je._("Be the first to predict!", null, {
 					hk: "4Ea9sh"
-				}))), o.a.createElement(ye.a, {
+				}))), o.a.createElement(xe.a, {
 					className: ke.a.chevron
 				}))
 			}
@@ -995,7 +995,7 @@
 					post: b.H,
 					subredditOrProfile: b.U,
 					userId: p.pb,
-					isPredictionsTournamentPostV2Enabled: l.x
+					isPredictionsTournamentPostV2Enabled: l.y
 				}),
 				Be = Object(a.u)({
 					isCommentsPage: a.x,
@@ -1031,7 +1031,7 @@
 					}, t && !_ && o.a.createElement(ae, {
 						prediction: i,
 						isCreator: E
-					}), o.a.createElement(K, {
+					}), o.a.createElement(z, {
 						post: r,
 						prediction: i
 					}), o.a.createElement(ge, {
@@ -1561,9 +1561,9 @@
 			})), n.d(t, "q", (function() {
 				return v
 			})), n.d(t, "h", (function() {
-				return x
-			})), n.d(t, "z", (function() {
 				return y
+			})), n.d(t, "z", (function() {
+				return x
 			})), n.d(t, "l", (function() {
 				return I
 			})), n.d(t, "n", (function() {
@@ -1668,7 +1668,7 @@
 					if (!s.d.spBadges(e)) return f;
 					return P(null === (o = e.users.appliedBadges[n]) || void 0 === o ? void 0 : o[t], e.badges.models)
 				},
-				x = (e, t) => {
+				y = (e, t) => {
 					const n = e.economics.subredditPremium[t.subredditId];
 					if (n && n.status === u.a.Fetched) {
 						const e = n.raw.collections[t.collectionId];
@@ -1679,7 +1679,7 @@
 					}
 				};
 
-			function y(e, t) {
+			function x(e, t) {
 				const n = (e.economics.me.data.specialMemberships || {})[t];
 				return !!(n && n.settings && n.settings.optOut)
 			}
@@ -1841,4 +1841,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.7563f1d0b2e8e1caa9b1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.f1a33f8871e838551bff.js.map

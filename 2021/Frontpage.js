@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.e6ab97541e3dc211266e.js
-// Retrieved at 12/6/2021, 1:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.b5ee0f75c95ea59203bf.js
+// Retrieved at 12/6/2021, 3:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -2502,10 +2502,10 @@
 			}
 			var qe = a("./src/reddit/selectors/experiments/utils.ts");
 			const Ue = Object(u.a)(e => Object(Re.c)(e, {
-					experimentName: De.Nd,
+					experimentName: De.Od,
 					experimentEligibilitySelector: Re.a
 				}), qe.a),
-				Ve = Object(u.a)(Ue, e => e === De.Od.Enabled);
+				Ve = Object(u.a)(Ue, e => e === De.Pd.Enabled);
 			var We = a("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
 				Ge = a("./src/reddit/selectors/user.ts");
 			var He = a("./src/reddit/selectors/experiments/uiSimplification.ts"),
@@ -2538,7 +2538,7 @@
 							return Object(Re.c)(e, {
 								experimentEligibilitySelector: Ge.K,
 								experimentName: De.Vb
-							}) === De.fd
+							}) === De.gd
 						}(e))
 					},
 					isNavbarLikeMwebEnabled: d.a,
@@ -5943,8 +5943,8 @@
 					return Object(n.c)(e, {
 						experimentEligibilitySelector: i,
 						experimentName: s.rc
-					}) === s.hd.Enabled
-				}(e) ? l.Achievements : t === s.id.ControlBanner ? l.CommunitySpacesControl : t === s.id.EnabledBanner ? l.CommunitySpaces : null
+					}) === s.id.Enabled
+				}(e) ? l.Achievements : t === s.jd.ControlBanner ? l.CommunitySpacesControl : t === s.jd.EnabledBanner ? l.CommunitySpaces : null
 			}! function(e) {
 				e.Achievements = "achievements", e.CommunitySpaces = "communitySpaces", e.CommunitySpacesControl = "communitySpaces--control"
 			}(l || (l = {}))
@@ -6026,7 +6026,7 @@
 				}
 		},
 		"./src/redditGQL/operations/Frontpage.json": function(e) {
-			e.exports = JSON.parse('{"id":"f20419187798"}')
+			e.exports = JSON.parse('{"id":"5efdd2d787dd"}')
 		},
 		"./src/redditGQL/operations/GetNearbySubreddits.json": function(e) {
 			e.exports = JSON.parse('{"id":"aff6d12aa0c2"}')
@@ -6036,4 +6036,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.e6ab97541e3dc211266e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.b5ee0f75c95ea59203bf.js.map
