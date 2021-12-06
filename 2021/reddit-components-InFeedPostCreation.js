@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.b875f62dd2a83bb87e75.js
-// Retrieved at 12/6/2021, 3:50:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.56e7f0a6aee84ddf830c.js
+// Retrieved at 12/6/2021, 5:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-InFeedPostCreation"], {
 		"./src/reddit/components/InFeedPostCreation/index.m.less": function(e, t, n) {
@@ -46,7 +46,7 @@
 			! function(e) {
 				e.Media = "post-composer-du-media", e.Link = "post-composer-du-link"
 			}(j || (j = {}));
-			const k = e => {
+			const h = e => {
 					switch (e) {
 						case d.Vb.MEDIA:
 							return "?media=true";
@@ -56,7 +56,7 @@
 							return ""
 					}
 				},
-				g = e => {
+				k = e => {
 					switch (e) {
 						case d.Vb.MEDIA:
 							return "media_post";
@@ -66,26 +66,26 @@
 							return "create_post"
 					}
 				},
-				h = Object(a.c)({
+				M = Object(a.c)({
 					currentUser: U.k,
 					isPresenceConsumptionExpEnabled: f.c,
 					isPresenceTogglePref: U.P,
 					subreddit: E.w,
 					subredditAboutInfo: E.t
 				}),
-				M = Object(c.b)(h, e => ({
+				L = Object(c.b)(M, e => ({
 					navigateTo: t => e(Object(i.b)(t)),
 					toggleTooltip: t => e(Object(u.h)({
 						tooltipId: t
 					}))
 				})),
-				L = () => r.fbt._("Create Media Post", null, {
+				g = () => r.fbt._("Create Media Post", null, {
 					hk: "3T3YMO"
 				}),
 				v = () => r.fbt._("Create Link Post", null, {
 					hk: "JUQfs"
 				});
-			t.default = Object(m.c)(M(({
+			t.default = Object(m.c)(L(({
 				currentUser: e,
 				isPresenceConsumptionExpEnabled: t,
 				isPresenceTogglePref: n,
@@ -121,7 +121,7 @@
 						c(t => ({
 							source: "post_composer_du",
 							action: "click",
-							noun: g(e),
+							noun: k(e),
 							...O.defaults(t)
 						}))
 					},
@@ -150,7 +150,7 @@
 					type: "text"
 				}), b.media && o.a.createElement(I.t, {
 					className: C.a.Button,
-					"aria-label": L(),
+					"aria-label": g(),
 					priority: I.c.Plain,
 					kind: I.b.InternalLink,
 					size: I.d.M,
@@ -158,13 +158,13 @@
 					onClick: () => f(d.Vb.MEDIA),
 					onMouseEnter: () => u(j.Media),
 					onMouseLeave: () => u(j.Media),
-					to: m + k(d.Vb.MEDIA),
+					to: m + h(d.Vb.MEDIA),
 					Icon: Object(_.b)("image_post"),
 					isSquare: !0
 				}, o.a.createElement(p.c, {
 					caretOnTop: !0,
 					tooltipId: j.Media,
-					text: L()
+					text: g()
 				})), b.link && o.a.createElement(I.t, {
 					className: C.a.Button,
 					priority: I.c.Plain,
@@ -175,13 +175,13 @@
 					onClick: () => f(d.Vb.LINK_ONLY),
 					onMouseEnter: () => u(j.Link),
 					onMouseLeave: () => u(j.Link),
-					to: m + k(d.Vb.LINK_ONLY),
+					to: m + h(d.Vb.LINK_ONLY),
 					Icon: Object(_.b)("link_post"),
 					isSquare: !0
 				}, o.a.createElement(p.c, {
 					caretOnTop: !0,
 					tooltipId: j.Media,
-					text: L()
+					text: g()
 				})))
 			}))
 		},
@@ -255,30 +255,30 @@
 			const c = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.ve
-					}) === r.gd
+						experimentName: r.we
+					}) === r.hd
 				},
 				i = e => {
 					if (Object(o.a)(e)) return !1;
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.ue
-					}) === r.gd
+						experimentName: r.ve
+					}) === r.hd
 				},
 				a = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.me
-					}) === r.gd
+						experimentName: r.ne
+					}) === r.hd
 				},
 				d = e => {
 					if (Object(o.a)(e)) return !1;
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.le
-					}) === r.gd
+						experimentName: r.me
+					}) === r.hd
 				}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.b875f62dd2a83bb87e75.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.56e7f0a6aee84ddf830c.js.map

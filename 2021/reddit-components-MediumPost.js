@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.0c791f52f5b7695439f4.js
-// Retrieved at 12/6/2021, 3:50:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.c4c78e8b9032b7a0cc91.js
+// Retrieved at 12/6/2021, 5:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-MediumPost"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -2916,7 +2916,7 @@
 						caretOnTop: !1
 					},
 					G = Object(i.e)(C.a),
-					z = Y.isSponsored && (G === p.s.NoLockIcon || G === p.s.PromotedGrey),
+					z = Y.isSponsored && (G === p.t.NoLockIcon || G === p.t.PromotedGrey),
 					X = Y.isRemoved && !Y.modRemovalReason && !Y.modNote && Y.belongsTo.type === f.a.SUBREDDIT,
 					K = B("Approve", Y.id, H),
 					Z = B("Archived", Y.id, H),
@@ -3470,7 +3470,7 @@
 						subreddit: n
 					} = e, {
 						isSponsored: s
-					} = t, o = Object(U.a)(), i = Object(V.a)(m.qd) === m.xd.Enabled;
+					} = t, o = Object(U.a)(), i = Object(V.a)(m.rd) === m.yd.Enabled;
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return r.a.createElement(X, {
 						nowrap: e.nowrap
 					}, r.a.createElement(Q, e));
@@ -5243,9 +5243,9 @@
 				o = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				r = n("./src/reddit/selectors/user.ts");
 			const i = e => {
-				return Object(r.H)(e) || s.N.Treatment1 === Object(o.c)(e, {
+				return Object(r.H)(e) || s.O.Treatment1 === Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
-					experimentName: s.C
+					experimentName: s.D
 				})
 			}
 		},
@@ -5259,9 +5259,9 @@
 			const r = e => {
 				const t = Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
-					experimentName: s.xc
+					experimentName: s.yc
 				});
-				return !(!t || Object(s.Df)(t))
+				return !(!t || Object(s.Ef)(t))
 			}
 		},
 		"./src/reddit/selectors/i18n/index.ts": function(e, t, n) {
@@ -5277,7 +5277,7 @@
 				i = n("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const a = e => {
 					const t = Object(i.a)(e);
-					return Boolean(t) && !Object(o.Df)(t)
+					return Boolean(t) && !Object(o.Ef)(t)
 				},
 				c = Object(s.a)(a, r.d, (e, t) => e && !t)
 		},
@@ -5291,13 +5291,13 @@
 				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = n("./src/reddit/selectors/posts.ts");
 			const a = e => Object(r.c)(e, {
-					experimentName: o.we,
+					experimentName: o.xe,
 					experimentEligibilitySelector: r.a
 				}),
-				c = (e, t) => t === o.Fe.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				c = (e, t) => t === o.Ge.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				d = Object(s.a)(i.H, a, (e, t) => c(e, t));
 			Object(s.a)((e, t) => t, a, (e, t) => c(e, t))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.0c791f52f5b7695439f4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.c4c78e8b9032b7a0cc91.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/BottomCellWrapper.99ac9068b2002b3e1bf3.js
-// Retrieved at 12/6/2021, 3:50:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/BottomCellWrapper.6ddf51a9dde00d5866a5.js
+// Retrieved at 12/6/2021, 5:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["BottomCellWrapper", "SignupUpsell"], {
 		"./src/reddit/components/ErrorBoundary/index.tsx": function(e, t, s) {
@@ -113,7 +113,7 @@
 				u = s("./src/reddit/controls/Button/index.tsx"),
 				p = s("./src/reddit/components/Upsell/SSOButton/index.m.less"),
 				m = s.n(p);
-			var _ = function({
+			var b = function({
 					Icon: e,
 					children: t,
 					onClick: s,
@@ -135,7 +135,7 @@
 						className: m.a.buttonText
 					}, t))
 				},
-				b = s("./src/reddit/constants/experiments.ts"),
+				_ = s("./src/reddit/constants/experiments.ts"),
 				f = s("./src/reddit/selectors/telemetry.ts");
 			const g = "sso_signup";
 			var x;
@@ -210,12 +210,12 @@
 						const e = Object(i.e)(N.b),
 							t = Object(i.e)(N.d),
 							s = Object(i.e)(N.f),
-							o = Object(B.a)(b.ac.Bottom_sheet),
-							l = Object(B.a)(b.ac.Bottom_cell),
-							r = Object(B.a)(b.ac.Bottom_cell_dismissible),
-							c = Object(B.a)(b.ac.Bottom_cell_dismissible_immediate_trigger),
-							a = Object(B.a)(b.ac.Bottom_cell_signup_upsell_copy),
-							d = Object(B.a)(b.ac.Bottom_cell_surprise_install_copy);
+							o = Object(B.a)(_.bc.Bottom_sheet),
+							l = Object(B.a)(_.bc.Bottom_cell),
+							r = Object(B.a)(_.bc.Bottom_cell_dismissible),
+							c = Object(B.a)(_.bc.Bottom_cell_dismissible_immediate_trigger),
+							a = Object(B.a)(_.bc.Bottom_cell_signup_upsell_copy),
+							d = Object(B.a)(_.bc.Bottom_cell_surprise_install_copy);
 						let u;
 						if (e) u = w;
 						else if (t) u = L;
@@ -232,8 +232,8 @@
 						if (e && d) return `${p}bottom_cell_surprise_install_copy.png`;
 						throw new Error("Invalid variant for signup upsell")
 					}(),
-					v = Object(B.a)(b.ac.Bottom_cell_signup_upsell_copy),
-					y = Object(B.a)(b.ac.Bottom_cell_surprise_install_copy),
+					v = Object(B.a)(_.bc.Bottom_cell_signup_upsell_copy),
+					y = Object(B.a)(_.bc.Bottom_cell_surprise_install_copy),
 					A = v ? o.fbt._("Come join us, we have snacks", null, {
 						hk: "1LUl2W"
 					}) : o.fbt._("Log in or sign up for the best experience", null, {
@@ -264,7 +264,7 @@
 					className: I.a.bottom
 				}, l.createElement("div", {
 					className: I.a.left
-				}, l.createElement(_, {
+				}, l.createElement(b, {
 					Icon: k.a,
 					onClick: () => {
 						f(), s(O(x.Google))
@@ -273,7 +273,7 @@
 					iconClassName: I.a.googleIcon
 				}, o.fbt._("Continue with Google", null, {
 					hk: "1jIIEZ"
-				})), l.createElement(_, {
+				})), l.createElement(b, {
 					Icon: C.a,
 					onClick: () => {
 						f(), s(O(x.Apple))
@@ -367,9 +367,9 @@
 			})), s.d(t, "b", (function() {
 				return m
 			})), s.d(t, "d", (function() {
-				return _
-			})), s.d(t, "f", (function() {
 				return b
+			})), s.d(t, "f", (function() {
+				return _
 			}));
 			var n = s("./node_modules/reselect/es/index.js"),
 				o = s("./src/reddit/constants/experiments.ts"),
@@ -383,20 +383,20 @@
 					experimentName: e,
 					experimentEligibilitySelector: c,
 					throttledVariants: {
-						[o.ac.Bottom_cell_dismissible]: e,
-						[o.ac.Bottom_cell_dismissible_immediate_trigger]: e,
-						[o.ac.Bottom_sheet]: e
+						[o.bc.Bottom_cell_dismissible]: e,
+						[o.bc.Bottom_cell_dismissible_immediate_trigger]: e,
+						[o.bc.Bottom_sheet]: e
 					},
 					expEventOverride: t
 				})
 			}
-			const d = a(o.pb, !0),
-				u = a(o.qb, !0),
-				p = a(o.rb, !0),
-				m = a(o.pb, !1),
-				_ = a(o.qb, !1),
-				b = a(o.rb, !1)
+			const d = a(o.qb, !0),
+				u = a(o.rb, !0),
+				p = a(o.sb, !0),
+				m = a(o.qb, !1),
+				b = a(o.rb, !1),
+				_ = a(o.sb, !1)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BottomCellWrapper.99ac9068b2002b3e1bf3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BottomCellWrapper.6ddf51a9dde00d5866a5.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.8472f664998db30b3d1d.js
-// Retrieved at 12/6/2021, 3:50:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.904873041835a26d6e0d.js
+// Retrieved at 12/6/2021, 5:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"], {
 		"./node_modules/lodash/random.js": function(e, t, r) {
@@ -1585,13 +1585,13 @@
 				fbt: q
 			} = r("./node_modules/fbt/lib/FbtPublic.js");
 			const z = Object(d.u)(),
-				Z = [G.Mb.SUBREDDIT, G.Mb.COMMENTS, G.Mb.COLLECTION_COMMENTS],
-				Y = Object(a.c)({
+				Y = [G.Mb.SUBREDDIT, G.Mb.COMMENTS, G.Mb.COLLECTION_COMMENTS],
+				Z = Object(a.c)({
 					isMetaFilterEnabled: (e, t) => !!e.subreddits.appliedFilters.meta[t.subredditId],
-					isPostsRoute: (e, t) => !!t.pageLayer && !!t.pageLayer.meta && Z.indexOf(t.pageLayer.meta.name) > -1,
+					isPostsRoute: (e, t) => !!t.pageLayer && !!t.pageLayer.meta && Y.indexOf(t.pageLayer.meta.name) > -1,
 					isPredictionsPage: (e, t) => !!t.pageLayer && Object(d.N)(t.pageLayer)
 				});
-			var J = z(Object(i.b)(Y, (e, t) => ({
+			var J = z(Object(i.b)(Z, (e, t) => ({
 					onTurnOffMetaFilter: () => e(Object(F.p)({
 						subredditId: t.subredditId,
 						forceState: !1
@@ -2244,8 +2244,8 @@
 					text: t.description
 				})))),
 				z = r("./src/reddit/components/TrackingHelper/index.tsx"),
-				Z = r("./src/reddit/components/Widgets/CommunityList/SubredditList.tsx");
-			var Y = Object(z.c)(e => s.a.createElement(Z.b, {
+				Y = r("./src/reddit/components/Widgets/CommunityList/SubredditList.tsx");
+			var Z = Object(z.c)(e => s.a.createElement(Y.b, {
 				className: e.className,
 				communities: e.widget.data,
 				sendEvent: e.sendEvent,
@@ -2465,7 +2465,7 @@
 						case "subreddit-rules":
 							return Se.b;
 						case "community-list":
-							return Y;
+							return Z;
 						case "calendar":
 							return q;
 						case "image":
@@ -2849,8 +2849,8 @@
 			const o = e => s.e[Object(i.Q)(e, {})] === s.d.Card,
 				d = e => Object(a.c)(e, {
 					experimentEligibilitySelector: o,
-					experimentName: n.kb
-				}) === n.Zb.Treatment
+					experimentName: n.lb
+				}) === n.ac.Treatment
 		},
 		"./src/redditGQL/operations/SubredditUserAchievements.json": function(e) {
 			e.exports = JSON.parse('{"id":"92790c69eba6"}')
@@ -2860,4 +2860,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.8472f664998db30b3d1d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.904873041835a26d6e0d.js.map

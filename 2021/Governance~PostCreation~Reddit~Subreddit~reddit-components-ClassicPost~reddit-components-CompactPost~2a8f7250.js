@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.3d518a78be001ba83a45.js
-// Retrieved at 12/6/2021, 3:50:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.c0603eabb06ea2532936.js
+// Retrieved at 12/6/2021, 5:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250"], {
 		"./src/lib/humanizeDate/index.ts": function(e, t, n) {
@@ -1623,10 +1623,10 @@
 						return !(!t.isStickied || !((e, t) => {
 							const n = Object(i.c)(e, {
 								experimentEligibilitySelector: i.a,
-								experimentName: o.F,
+								experimentName: o.G,
 								expEventOverride: t
 							});
-							return !!(Object(o.Df)(n) ? void 0 : n)
+							return !!(Object(o.Ef)(n) ? void 0 : n)
 						})(n)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -2350,11 +2350,11 @@
 			})), n.d(t, "F", (function() {
 				return q
 			})), n.d(t, "B", (function() {
-				return J
-			})), n.d(t, "H", (function() {
-				return z
-			})), n.d(t, "p", (function() {
 				return G
+			})), n.d(t, "H", (function() {
+				return J
+			})), n.d(t, "p", (function() {
+				return z
 			})), n.d(t, "K", (function() {
 				return V
 			})), n.d(t, "y", (function() {
@@ -2560,13 +2560,13 @@
 					const n = t ? e.features.comments.submit.error[t] : void 0;
 					return n && n.fields ? n.fields.map(e => e.msg) : void 0
 				},
-				J = (e, {
+				G = (e, {
 					commentId: t
 				}) => !!t && e.features.comments.submit.pending[t],
-				z = (e, {
+				J = (e, {
 					commentId: t
 				}) => !!t && e.features.comments.models[t].sendReplies,
-				G = e => e.features.comments.visitHighlightFilter,
+				z = e => e.features.comments.visitHighlightFilter,
 				V = (e, t) => {
 					const n = Object(l.b)(e, t);
 					if (n) return Object(d.W)(e, n)
@@ -2590,4 +2590,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.3d518a78be001ba83a45.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.c0603eabb06ea2532936.js.map

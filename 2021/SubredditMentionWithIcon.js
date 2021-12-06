@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.633cd3ab737d76129687.js
-// Retrieved at 12/6/2021, 3:50:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.04a3cc962e243f64d142.js
+// Retrieved at 12/6/2021, 5:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditMentionWithIcon"], {
 		"./src/reddit/actions/subredditMention/constants.ts": function(e, t, s) {
@@ -898,8 +898,8 @@
 				}))(H),
 				W = s("./src/reddit/contexts/PageLayer/index.tsx"),
 				z = s("./src/reddit/helpers/styles/mixins/loading.ts"),
-				V = s("./src/reddit/components/SubredditMention/MiniPost/Placeholder.m.less"),
-				K = s.n(V);
+				K = s("./src/reddit/components/SubredditMention/MiniPost/Placeholder.m.less"),
+				V = s.n(K);
 			const Q = Object(W.u)(),
 				J = Object(c.c)({
 					isFakeSubreddit: W.y
@@ -913,27 +913,27 @@
 					return o.a.createElement("div", {
 						className: Object(D.a)(A.a.container, e)
 					}, o.a.createElement("div", {
-						className: K.a.mainBody
+						className: V.a.mainBody
 					}, o.a.createElement("div", {
-						className: K.a.content
+						className: V.a.content
 					}, o.a.createElement("div", null, o.a.createElement("div", {
-						className: Object(D.a)(K.a.title, n)
+						className: Object(D.a)(V.a.title, n)
 					}), t && o.a.createElement("div", {
-						className: Object(D.a)(K.a.meta, n)
+						className: Object(D.a)(V.a.meta, n)
 					})), o.a.createElement("div", {
-						className: K.a.flatlist
+						className: V.a.flatlist
 					}, o.a.createElement("div", {
-						className: Object(D.a)(K.a.flatlistExpando, n)
+						className: Object(D.a)(V.a.flatlistExpando, n)
 					}), o.a.createElement("div", {
-						className: K.a.flatlistSeparator
+						className: V.a.flatlistSeparator
 					}), o.a.createElement("div", {
-						className: Object(D.a)(K.a.flatlistItemOne, n)
+						className: Object(D.a)(V.a.flatlistItemOne, n)
 					}), o.a.createElement("div", {
-						className: Object(D.a)(K.a.flatlistItemTwo, n)
+						className: Object(D.a)(V.a.flatlistItemTwo, n)
 					}))), o.a.createElement("div", {
-						className: K.a.thumbnailContainer
+						className: V.a.thumbnailContainer
 					}, o.a.createElement("div", {
-						className: Object(D.a)(K.a.thumbnail, n)
+						className: Object(D.a)(V.a.thumbnail, n)
 					}))))
 				})),
 				X = s("./src/reddit/components/SubredditMention/SubredditIcon/index.tsx"),
@@ -1731,9 +1731,9 @@
 			})), s.d(t, "i", (function() {
 				return z
 			})), s.d(t, "k", (function() {
-				return V
-			})), s.d(t, "l", (function() {
 				return K
+			})), s.d(t, "l", (function() {
+				return V
 			})), s.d(t, "j", (function() {
 				return Q
 			})), s.d(t, "e", (function() {
@@ -1982,7 +1982,7 @@
 						noun: n.ITEM_SUBREDDIT
 					})
 				},
-				V = (e, t, s, i) => {
+				K = (e, t, s, i) => {
 					const r = U();
 					return e => ({
 						...h(e, r),
@@ -1994,7 +1994,7 @@
 						noun: n.ITEM_SUBREDDIT_SUBSCRIBE
 					})
 				},
-				K = (e, t, s, i) => {
+				V = (e, t, s, i) => {
 					const r = U();
 					return e => ({
 						...h(e, r),
@@ -2092,45 +2092,45 @@
 				r = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				o = s("./src/reddit/selectors/experiments/index.ts");
 			const d = Object(n.a)(e => Object(r.c)(e, {
-					experimentName: i.Ab,
-					experimentEligibilitySelector: o.e
-				}), e => e === i.V.Enabled),
-				c = Object(n.a)(e => Object(r.c)(e, {
 					experimentName: i.Bb,
 					experimentEligibilitySelector: o.e
 				}), e => e === i.W.Enabled),
-				a = Object(n.a)(e => Object(r.c)(e, {
-					experimentName: i.Db,
-					experimentEligibilitySelector: o.e
-				}), e => e === i.Y.Enabled),
-				l = Object(n.a)(e => Object(r.c)(e, {
-					experimentName: i.Eb,
-					experimentEligibilitySelector: o.e
-				}), e => e === i.Z.Enabled),
-				u = Object(n.a)(e => Object(r.c)(e, {
-					experimentName: i.Ib,
-					experimentEligibilitySelector: o.e
-				}), e => e === i.db.Enabled),
-				b = Object(n.a)(e => Object(r.c)(e, {
+				c = Object(n.a)(e => Object(r.c)(e, {
 					experimentName: i.Cb,
 					experimentEligibilitySelector: o.e
 				}), e => e === i.X.Enabled),
-				m = Object(n.a)(e => Object(r.c)(e, {
+				a = Object(n.a)(e => Object(r.c)(e, {
+					experimentName: i.Eb,
+					experimentEligibilitySelector: o.e
+				}), e => e === i.Z.Enabled),
+				l = Object(n.a)(e => Object(r.c)(e, {
 					experimentName: i.Fb,
 					experimentEligibilitySelector: o.e
 				}), e => e === i.ab.Enabled),
-				p = Object(n.a)(e => Object(r.c)(e, {
-					experimentName: i.Gb,
-					experimentEligibilitySelector: o.e
-				}), e => e === i.bb.Enabled),
-				h = Object(n.a)(e => Object(r.c)(e, {
+				u = Object(n.a)(e => Object(r.c)(e, {
 					experimentName: i.Jb,
 					experimentEligibilitySelector: o.e
 				}), e => e === i.eb.Enabled),
-				f = Object(n.a)(e => Object(r.c)(e, {
+				b = Object(n.a)(e => Object(r.c)(e, {
+					experimentName: i.Db,
+					experimentEligibilitySelector: o.e
+				}), e => e === i.Y.Enabled),
+				m = Object(n.a)(e => Object(r.c)(e, {
+					experimentName: i.Gb,
+					experimentEligibilitySelector: o.e
+				}), e => e === i.bb.Enabled),
+				p = Object(n.a)(e => Object(r.c)(e, {
 					experimentName: i.Hb,
 					experimentEligibilitySelector: o.e
-				}), e => e === i.cb.Enabled)
+				}), e => e === i.cb.Enabled),
+				h = Object(n.a)(e => Object(r.c)(e, {
+					experimentName: i.Kb,
+					experimentEligibilitySelector: o.e
+				}), e => e === i.fb.Enabled),
+				f = Object(n.a)(e => Object(r.c)(e, {
+					experimentName: i.Ib,
+					experimentEligibilitySelector: o.e
+				}), e => e === i.db.Enabled)
 		},
 		"./src/redditGQL/operations/SubredditTopContent.json": function(e) {
 			e.exports = JSON.parse('{"id":"eba3db8414d9"}')
@@ -2143,4 +2143,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.633cd3ab737d76129687.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.04a3cc962e243f64d142.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.ab41eed571b6213ac60f.js
-// Retrieved at 12/6/2021, 3:50:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.14fd66747070be956215.js
+// Retrieved at 12/6/2021, 5:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435"], {
 		"./src/lib/hooks/usePrevious.ts": function(e, t, r) {
@@ -408,13 +408,13 @@
 						})
 					}, []);
 				Object(c.a)(P, D);
-				const [V, G] = Object(n.useState)(!1), B = Object(n.useCallback)(e => {
+				const [G, V] = Object(n.useState)(!1), B = Object(n.useCallback)(e => {
 					e.forEach(e => {
 						const {
 							isIntersecting: t,
 							intersectionRatio: r
 						} = e, n = 1 !== r;
-						t ? G(!0) : n && G(!1)
+						t ? V(!0) : n && V(!1)
 					})
 				}, []), U = Object(n.useRef)({
 					rootMargin: "2000px 0px 2000px 0px"
@@ -471,7 +471,7 @@
 					role: "screen-reader"
 				}, [...k].reverse().join(""))), s.a.createElement("span", {
 					ref: P
-				}), V && s.a.createElement(a.a, {
+				}), G && s.a.createElement(a.a, {
 					variables: g,
 					onData: f ? m : b,
 					queryKey: h,
@@ -1582,9 +1582,9 @@
 			})), r.d(t, "clickCloseGildModalEvent", (function() {
 				return D
 			})), r.d(t, "viewKarmaSuccessEvent", (function() {
-				return V
-			})), r.d(t, "clickFilterEvent", (function() {
 				return G
+			})), r.d(t, "clickFilterEvent", (function() {
+				return V
 			})), r.d(t, "clickNextFiltersEvent", (function() {
 				return B
 			})), r.d(t, "clickPreviousFiltersEvent", (function() {
@@ -1755,7 +1755,7 @@
 					action: "click",
 					noun: "close"
 				}),
-				V = ({
+				G = ({
 					award: e,
 					awardeeKarmaEarned: t,
 					awarderKarmaEarned: r,
@@ -1774,7 +1774,7 @@
 						...l(e)
 					}
 				}),
-				G = e => t => ({
+				V = e => t => ({
 					...u(t),
 					source: "give_gold",
 					action: "click",
@@ -3035,8 +3035,8 @@
 					}) || !!Object(o.l)(e, {
 						postId: t
 					}) || Object(a.H)(e))(e, t),
-					experimentName: n.M
-				}) === n.gd
+					experimentName: n.N
+				}) === n.hd
 			}
 		},
 		"./src/reddit/selectors/experiments/joinOptimizations.ts": function(e, t, r) {
@@ -3067,45 +3067,45 @@
 				o = r("./src/reddit/helpers/chooseVariant/index.ts"),
 				a = r("./src/reddit/selectors/experiments/index.ts");
 			const c = Object(n.a)(e => Object(o.c)(e, {
-					experimentName: s.Ab,
-					experimentEligibilitySelector: a.e
-				}), e => e === s.V.Enabled),
-				i = Object(n.a)(e => Object(o.c)(e, {
 					experimentName: s.Bb,
 					experimentEligibilitySelector: a.e
 				}), e => e === s.W.Enabled),
-				d = Object(n.a)(e => Object(o.c)(e, {
-					experimentName: s.Db,
-					experimentEligibilitySelector: a.e
-				}), e => e === s.Y.Enabled),
-				l = Object(n.a)(e => Object(o.c)(e, {
-					experimentName: s.Eb,
-					experimentEligibilitySelector: a.e
-				}), e => e === s.Z.Enabled),
-				u = Object(n.a)(e => Object(o.c)(e, {
-					experimentName: s.Ib,
-					experimentEligibilitySelector: a.e
-				}), e => e === s.db.Enabled),
-				m = Object(n.a)(e => Object(o.c)(e, {
+				i = Object(n.a)(e => Object(o.c)(e, {
 					experimentName: s.Cb,
 					experimentEligibilitySelector: a.e
 				}), e => e === s.X.Enabled),
-				p = Object(n.a)(e => Object(o.c)(e, {
+				d = Object(n.a)(e => Object(o.c)(e, {
+					experimentName: s.Eb,
+					experimentEligibilitySelector: a.e
+				}), e => e === s.Z.Enabled),
+				l = Object(n.a)(e => Object(o.c)(e, {
 					experimentName: s.Fb,
 					experimentEligibilitySelector: a.e
 				}), e => e === s.ab.Enabled),
-				f = Object(n.a)(e => Object(o.c)(e, {
-					experimentName: s.Gb,
-					experimentEligibilitySelector: a.e
-				}), e => e === s.bb.Enabled),
-				b = Object(n.a)(e => Object(o.c)(e, {
+				u = Object(n.a)(e => Object(o.c)(e, {
 					experimentName: s.Jb,
 					experimentEligibilitySelector: a.e
 				}), e => e === s.eb.Enabled),
-				v = Object(n.a)(e => Object(o.c)(e, {
+				m = Object(n.a)(e => Object(o.c)(e, {
+					experimentName: s.Db,
+					experimentEligibilitySelector: a.e
+				}), e => e === s.Y.Enabled),
+				p = Object(n.a)(e => Object(o.c)(e, {
+					experimentName: s.Gb,
+					experimentEligibilitySelector: a.e
+				}), e => e === s.bb.Enabled),
+				f = Object(n.a)(e => Object(o.c)(e, {
 					experimentName: s.Hb,
 					experimentEligibilitySelector: a.e
-				}), e => e === s.cb.Enabled)
+				}), e => e === s.cb.Enabled),
+				b = Object(n.a)(e => Object(o.c)(e, {
+					experimentName: s.Kb,
+					experimentEligibilitySelector: a.e
+				}), e => e === s.fb.Enabled),
+				v = Object(n.a)(e => Object(o.c)(e, {
+					experimentName: s.Ib,
+					experimentEligibilitySelector: a.e
+				}), e => e === s.db.Enabled)
 		},
 		"./src/reddit/selectors/experiments/postActionBarAnimation.ts": function(e, t, r) {
 			"use strict";
@@ -3136,25 +3136,25 @@
 					if (Object(a.a)(e)) return !1;
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: n.n
+						experimentName: n.o
 					});
-					return t === n.t.VoteCountOnly || t === n.t.CommentCountOnly || t === n.t.VoteAndCommentCount
+					return t === n.u.VoteCountOnly || t === n.u.CommentCountOnly || t === n.u.VoteAndCommentCount
 				},
 				l = e => {
 					if (Object(c.c)(e) || Object(a.a)(e)) return !1;
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: n.n
+						experimentName: n.o
 					});
-					return t === n.t.VoteCountOnly || t === n.t.VoteAndCommentCount
+					return t === n.u.VoteCountOnly || t === n.u.VoteAndCommentCount
 				},
 				u = e => {
 					if (Object(c.c)(e) || Object(a.a)(e)) return !1;
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: n.n
+						experimentName: n.o
 					});
-					return t === n.t.CommentCountOnly || t === n.t.VoteAndCommentCount
+					return t === n.u.CommentCountOnly || t === n.u.VoteAndCommentCount
 				},
 				m = (e, {
 					post: t
@@ -3167,10 +3167,10 @@
 					const r = e.posts.models[t];
 					if (Object(c.c)(e) || !r || r.isSponsored || r.isScoreHidden || r.score >= i || Object(a.a)(e)) return !1;
 					const s = Object(o.d)(e, {
-							experimentName: n.n
+							experimentName: n.o
 						}),
 						d = null == s ? void 0 : s.variant;
-					return d === n.t.VoteCountOnly || d === n.t.VoteAndCommentCount
+					return d === n.u.VoteCountOnly || d === n.u.VoteAndCommentCount
 				},
 				f = (e, {
 					postId: t
@@ -3178,17 +3178,17 @@
 					const r = e.posts.models[t];
 					if (Object(c.c)(e) || !r || r.isSponsored || r.numComments >= i || Object(a.a)(e)) return !1;
 					const s = Object(o.d)(e, {
-							experimentName: n.n
+							experimentName: n.o
 						}),
 						d = null == s ? void 0 : s.variant;
-					return d === n.t.CommentCountOnly || d === n.t.VoteAndCommentCount
+					return d === n.u.CommentCountOnly || d === n.u.VoteAndCommentCount
 				},
 				b = e => {
 					if (Object(a.a)(e)) return !1;
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: n.Pb
-					}) === n.fc.Enabled
+						experimentName: n.Qb
+					}) === n.gc.Enabled
 				}
 		},
 		"./src/reddit/selectors/experiments/presence.ts": function(e, t, r) {
@@ -3201,8 +3201,8 @@
 			const o = e => {
 				return Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: n.te
-				}) === n.gd
+					experimentName: n.ue
+				}) === n.hd
 			}
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, r) {
@@ -3501,4 +3501,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.ab41eed571b6213ac60f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.14fd66747070be956215.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/UserAchievementFlair.196e4680c46c961e644b.js
-// Retrieved at 12/6/2021, 3:50:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/UserAchievementFlair.5fbced5007c6e9145e22.js
+// Retrieved at 12/6/2021, 5:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["UserAchievementFlair"], {
 		"./src/reddit/components/Econ/PowerupsFlair/HoverPopup.m.less": function(e, t, n) {
@@ -259,10 +259,10 @@
 						return !(!t.isStickied || !((e, t) => {
 							const n = Object(o.c)(e, {
 								experimentEligibilitySelector: o.a,
-								experimentName: c.F,
+								experimentName: c.G,
 								expEventOverride: t
 							});
-							return !!(Object(c.Df)(n) ? void 0 : n)
+							return !!(Object(c.Ef)(n) ? void 0 : n)
 						})(n)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -821,9 +821,9 @@
 			})), n.d(t, "D", (function() {
 				return A
 			})), n.d(t, "E", (function() {
-				return M
-			})), n.d(t, "r", (function() {
 				return G
+			})), n.d(t, "r", (function() {
+				return M
 			})), n.d(t, "e", (function() {
 				return H
 			})), n.d(t, "v", (function() {
@@ -999,7 +999,7 @@
 				A = (e, {
 					moreCommentsId: t
 				}) => !!e.moreComments.api.pending[t],
-				M = (e, {
+				G = (e, {
 					commentsPageKey: t
 				}) => {
 					const n = e.pages.comments.keyToPostId[t];
@@ -1012,7 +1012,7 @@
 					}
 					return null
 				},
-				G = (e, {
+				M = (e, {
 					id: t
 				}) => e.continueThreads.models[t],
 				H = (e, {
@@ -1074,4 +1074,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UserAchievementFlair.196e4680c46c961e644b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UserAchievementFlair.5fbced5007c6e9145e22.js.map
