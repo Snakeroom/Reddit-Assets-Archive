@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GoldTargetedOfferModal.c18ebba3fb6fa149f445.js
-// Retrieved at 12/1/2021, 12:30:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GoldTargetedOfferModal.370fa367d730a372c6fb.js
+// Retrieved at 12/6/2021, 11:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GoldTargetedOfferModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, r) {
@@ -835,9 +835,9 @@
 						t(Object(p.a)(M, j.a.StorefrontFreeAward)), ((e, t) => {
 							r(Object(g.f)()), r(Object(O.c)({
 								correlationId: t,
-								packageId: e.mobileId
+								packageId: e
 							}))
-						})(k, n)
+						})(M, n)
 					}
 				}, E._("Purchase Coins", null, {
 					hk: "3ODyrr"
@@ -1156,4 +1156,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GoldTargetedOfferModal.c18ebba3fb6fa149f445.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GoldTargetedOfferModal.370fa367d730a372c6fb.js.map

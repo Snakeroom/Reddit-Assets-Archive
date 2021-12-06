@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.6bbbe99b4096ddc6f846.js
-// Retrieved at 12/3/2021, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.8deac3b94e8a50f2fdf3.js
+// Retrieved at 12/6/2021, 11:50:04 AM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, P = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && P.push(d[n][0]), d[n] = 0;
@@ -1331,7 +1331,7 @@
 						Geotagging: "fae29cc07f0da9831aa0",
 						GlobalModalContainer: "01fabf3da628140e9759",
 						GoldPurchasePaymentActions: "155164b29a5937b67800",
-						GoldTargetedOfferModal: "c18ebba3fb6fa149f445",
+						GoldTargetedOfferModal: "370fa367d730a372c6fb",
 						GovernanceTransferPointsModal: "43f0791c3a86e396f07e",
 						GovernanceWalletRegistration: "f2fb7b1ad8c729b52029",
 						HarbergerTaxPurchaseModal: "6b00ab169e1125089125",
@@ -1639,4 +1639,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.6bbbe99b4096ddc6f846.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.8deac3b94e8a50f2fdf3.js.map
