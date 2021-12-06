@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.4ec6831cc369f92f54e3.js
-// Retrieved at 12/6/2021, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.65aa59a5560255b75f24.js
+// Retrieved at 12/6/2021, 6:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -6170,7 +6170,7 @@
 					update: a
 				} = e, d = Object(te.a)(), l = Object(i.d)(), [c, m] = Object(r.useState)(n), [u, p] = Object(r.useState)(!1), [b, h] = Object(r.useState)(!0);
 				return Object(r.useEffect)(() => {
-					h(Object(ee.G)("location")), Object(ee.Ib)("location")
+					h(Object(ee.F)("location")), Object(ee.Gb)("location")
 				}, []), o.a.createElement(o.a.Fragment, null, o.a.createElement(B.a, null, A.fbt._("Community Location", null, {
 					hk: "3aowzb"
 				})), o.a.createElement(H.l, {
@@ -7126,10 +7126,10 @@
 			}
 			var E = Object(o.b)(void 0, e => ({
 				onDismissTooltip: () => {
-					e(Object(l.i)()), Object(p.yb)()
+					e(Object(l.i)()), Object(p.xb)()
 				},
 				onViewTooltip: () => {
-					Object(p.Sb)()
+					Object(p.Qb)()
 				}
 			}))(Object(m.c)(x));
 			const v = "editable-primary-topic-idcard";
@@ -24782,7 +24782,7 @@
 				}
 				componentDidMount() {
 					this.setState({
-						locationSettingSeen: Object(q.G)("location")
+						locationSettingSeen: Object(q.F)("location")
 					})
 				}
 				render() {
@@ -25915,4 +25915,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.4ec6831cc369f92f54e3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.65aa59a5560255b75f24.js.map

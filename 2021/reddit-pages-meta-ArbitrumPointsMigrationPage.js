@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-pages-meta-ArbitrumPointsMigrationPage.53c473dda7778bd02e8d.js
-// Retrieved at 12/2/2021, 5:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-pages-meta-ArbitrumPointsMigrationPage.eac47572c5b019921305.js
+// Retrieved at 12/6/2021, 6:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-pages-meta-ArbitrumPointsMigrationPage", "CryptoLibEthers"], {
 		"./node_modules/@ethersproject/address/lib.esm/index.js": function(e, t, n) {
@@ -605,8 +605,8 @@
 						return a && (e = i << 2, t = r[o], a > 0 && (l[e] = 255 & t), a > 1 && (l[e + 1] = t >> 8 & 255), a > 2 && (l[e + 2] = t >> 16 & 255)), l
 					};
 					var x = function(e) {
-						var t, n, r, s, a, o, l, u, c, d, m, p, h, g, f, b, y, E, v, w, x, N, _, T, O, A, j, C, k, R, S, I, P, M, U, B, F, L, D, G, V, H, W, z, X, $, q, Y, K, J, Z, Q, ee, te, ne, re, se, ae, oe, ie, le, ue, ce;
-						for (r = 0; r < 48; r += 2) s = e[0] ^ e[10] ^ e[20] ^ e[30] ^ e[40], a = e[1] ^ e[11] ^ e[21] ^ e[31] ^ e[41], o = e[2] ^ e[12] ^ e[22] ^ e[32] ^ e[42], l = e[3] ^ e[13] ^ e[23] ^ e[33] ^ e[43], u = e[4] ^ e[14] ^ e[24] ^ e[34] ^ e[44], c = e[5] ^ e[15] ^ e[25] ^ e[35] ^ e[45], d = e[6] ^ e[16] ^ e[26] ^ e[36] ^ e[46], m = e[7] ^ e[17] ^ e[27] ^ e[37] ^ e[47], t = (p = e[8] ^ e[18] ^ e[28] ^ e[38] ^ e[48]) ^ (o << 1 | l >>> 31), n = (h = e[9] ^ e[19] ^ e[29] ^ e[39] ^ e[49]) ^ (l << 1 | o >>> 31), e[0] ^= t, e[1] ^= n, e[10] ^= t, e[11] ^= n, e[20] ^= t, e[21] ^= n, e[30] ^= t, e[31] ^= n, e[40] ^= t, e[41] ^= n, t = s ^ (u << 1 | c >>> 31), n = a ^ (c << 1 | u >>> 31), e[2] ^= t, e[3] ^= n, e[12] ^= t, e[13] ^= n, e[22] ^= t, e[23] ^= n, e[32] ^= t, e[33] ^= n, e[42] ^= t, e[43] ^= n, t = o ^ (d << 1 | m >>> 31), n = l ^ (m << 1 | d >>> 31), e[4] ^= t, e[5] ^= n, e[14] ^= t, e[15] ^= n, e[24] ^= t, e[25] ^= n, e[34] ^= t, e[35] ^= n, e[44] ^= t, e[45] ^= n, t = u ^ (p << 1 | h >>> 31), n = c ^ (h << 1 | p >>> 31), e[6] ^= t, e[7] ^= n, e[16] ^= t, e[17] ^= n, e[26] ^= t, e[27] ^= n, e[36] ^= t, e[37] ^= n, e[46] ^= t, e[47] ^= n, t = d ^ (s << 1 | a >>> 31), n = m ^ (a << 1 | s >>> 31), e[8] ^= t, e[9] ^= n, e[18] ^= t, e[19] ^= n, e[28] ^= t, e[29] ^= n, e[38] ^= t, e[39] ^= n, e[48] ^= t, e[49] ^= n, g = e[0], f = e[1], $ = e[11] << 4 | e[10] >>> 28, q = e[10] << 4 | e[11] >>> 28, C = e[20] << 3 | e[21] >>> 29, k = e[21] << 3 | e[20] >>> 29, ie = e[31] << 9 | e[30] >>> 23, le = e[30] << 9 | e[31] >>> 23, H = e[40] << 18 | e[41] >>> 14, W = e[41] << 18 | e[40] >>> 14, M = e[2] << 1 | e[3] >>> 31, U = e[3] << 1 | e[2] >>> 31, b = e[13] << 12 | e[12] >>> 20, y = e[12] << 12 | e[13] >>> 20, Y = e[22] << 10 | e[23] >>> 22, K = e[23] << 10 | e[22] >>> 22, R = e[33] << 13 | e[32] >>> 19, S = e[32] << 13 | e[33] >>> 19, ue = e[42] << 2 | e[43] >>> 30, ce = e[43] << 2 | e[42] >>> 30, te = e[5] << 30 | e[4] >>> 2, ne = e[4] << 30 | e[5] >>> 2, B = e[14] << 6 | e[15] >>> 26, F = e[15] << 6 | e[14] >>> 26, E = e[25] << 11 | e[24] >>> 21, v = e[24] << 11 | e[25] >>> 21, J = e[34] << 15 | e[35] >>> 17, Z = e[35] << 15 | e[34] >>> 17, I = e[45] << 29 | e[44] >>> 3, P = e[44] << 29 | e[45] >>> 3, T = e[6] << 28 | e[7] >>> 4, O = e[7] << 28 | e[6] >>> 4, re = e[17] << 23 | e[16] >>> 9, se = e[16] << 23 | e[17] >>> 9, L = e[26] << 25 | e[27] >>> 7, D = e[27] << 25 | e[26] >>> 7, w = e[36] << 21 | e[37] >>> 11, x = e[37] << 21 | e[36] >>> 11, Q = e[47] << 24 | e[46] >>> 8, ee = e[46] << 24 | e[47] >>> 8, z = e[8] << 27 | e[9] >>> 5, X = e[9] << 27 | e[8] >>> 5, A = e[18] << 20 | e[19] >>> 12, j = e[19] << 20 | e[18] >>> 12, ae = e[29] << 7 | e[28] >>> 25, oe = e[28] << 7 | e[29] >>> 25, G = e[38] << 8 | e[39] >>> 24, V = e[39] << 8 | e[38] >>> 24, N = e[48] << 14 | e[49] >>> 18, _ = e[49] << 14 | e[48] >>> 18, e[0] = g ^ ~b & E, e[1] = f ^ ~y & v, e[10] = T ^ ~A & C, e[11] = O ^ ~j & k, e[20] = M ^ ~B & L, e[21] = U ^ ~F & D, e[30] = z ^ ~$ & Y, e[31] = X ^ ~q & K, e[40] = te ^ ~re & ae, e[41] = ne ^ ~se & oe, e[2] = b ^ ~E & w, e[3] = y ^ ~v & x, e[12] = A ^ ~C & R, e[13] = j ^ ~k & S, e[22] = B ^ ~L & G, e[23] = F ^ ~D & V, e[32] = $ ^ ~Y & J, e[33] = q ^ ~K & Z, e[42] = re ^ ~ae & ie, e[43] = se ^ ~oe & le, e[4] = E ^ ~w & N, e[5] = v ^ ~x & _, e[14] = C ^ ~R & I, e[15] = k ^ ~S & P, e[24] = L ^ ~G & H, e[25] = D ^ ~V & W, e[34] = Y ^ ~J & Q, e[35] = K ^ ~Z & ee, e[44] = ae ^ ~ie & ue, e[45] = oe ^ ~le & ce, e[6] = w ^ ~N & g, e[7] = x ^ ~_ & f, e[16] = R ^ ~I & T, e[17] = S ^ ~P & O, e[26] = G ^ ~H & M, e[27] = V ^ ~W & U, e[36] = J ^ ~Q & z, e[37] = Z ^ ~ee & X, e[46] = ie ^ ~ue & te, e[47] = le ^ ~ce & ne, e[8] = N ^ ~g & b, e[9] = _ ^ ~f & y, e[18] = I ^ ~T & A, e[19] = P ^ ~O & j, e[28] = H ^ ~M & B, e[29] = W ^ ~U & F, e[38] = Q ^ ~z & $, e[39] = ee ^ ~X & q, e[48] = ue ^ ~te & re, e[49] = ce ^ ~ne & se, e[0] ^= i[r], e[1] ^= i[r + 1]
+						var t, n, r, s, a, o, l, u, c, d, m, p, h, g, f, b, y, E, v, w, x, N, _, T, O, A, j, C, k, R, S, I, P, M, U, B, F, D, L, G, V, H, W, z, X, $, q, Y, K, J, Z, Q, ee, te, ne, re, se, ae, oe, ie, le, ue, ce;
+						for (r = 0; r < 48; r += 2) s = e[0] ^ e[10] ^ e[20] ^ e[30] ^ e[40], a = e[1] ^ e[11] ^ e[21] ^ e[31] ^ e[41], o = e[2] ^ e[12] ^ e[22] ^ e[32] ^ e[42], l = e[3] ^ e[13] ^ e[23] ^ e[33] ^ e[43], u = e[4] ^ e[14] ^ e[24] ^ e[34] ^ e[44], c = e[5] ^ e[15] ^ e[25] ^ e[35] ^ e[45], d = e[6] ^ e[16] ^ e[26] ^ e[36] ^ e[46], m = e[7] ^ e[17] ^ e[27] ^ e[37] ^ e[47], t = (p = e[8] ^ e[18] ^ e[28] ^ e[38] ^ e[48]) ^ (o << 1 | l >>> 31), n = (h = e[9] ^ e[19] ^ e[29] ^ e[39] ^ e[49]) ^ (l << 1 | o >>> 31), e[0] ^= t, e[1] ^= n, e[10] ^= t, e[11] ^= n, e[20] ^= t, e[21] ^= n, e[30] ^= t, e[31] ^= n, e[40] ^= t, e[41] ^= n, t = s ^ (u << 1 | c >>> 31), n = a ^ (c << 1 | u >>> 31), e[2] ^= t, e[3] ^= n, e[12] ^= t, e[13] ^= n, e[22] ^= t, e[23] ^= n, e[32] ^= t, e[33] ^= n, e[42] ^= t, e[43] ^= n, t = o ^ (d << 1 | m >>> 31), n = l ^ (m << 1 | d >>> 31), e[4] ^= t, e[5] ^= n, e[14] ^= t, e[15] ^= n, e[24] ^= t, e[25] ^= n, e[34] ^= t, e[35] ^= n, e[44] ^= t, e[45] ^= n, t = u ^ (p << 1 | h >>> 31), n = c ^ (h << 1 | p >>> 31), e[6] ^= t, e[7] ^= n, e[16] ^= t, e[17] ^= n, e[26] ^= t, e[27] ^= n, e[36] ^= t, e[37] ^= n, e[46] ^= t, e[47] ^= n, t = d ^ (s << 1 | a >>> 31), n = m ^ (a << 1 | s >>> 31), e[8] ^= t, e[9] ^= n, e[18] ^= t, e[19] ^= n, e[28] ^= t, e[29] ^= n, e[38] ^= t, e[39] ^= n, e[48] ^= t, e[49] ^= n, g = e[0], f = e[1], $ = e[11] << 4 | e[10] >>> 28, q = e[10] << 4 | e[11] >>> 28, C = e[20] << 3 | e[21] >>> 29, k = e[21] << 3 | e[20] >>> 29, ie = e[31] << 9 | e[30] >>> 23, le = e[30] << 9 | e[31] >>> 23, H = e[40] << 18 | e[41] >>> 14, W = e[41] << 18 | e[40] >>> 14, M = e[2] << 1 | e[3] >>> 31, U = e[3] << 1 | e[2] >>> 31, b = e[13] << 12 | e[12] >>> 20, y = e[12] << 12 | e[13] >>> 20, Y = e[22] << 10 | e[23] >>> 22, K = e[23] << 10 | e[22] >>> 22, R = e[33] << 13 | e[32] >>> 19, S = e[32] << 13 | e[33] >>> 19, ue = e[42] << 2 | e[43] >>> 30, ce = e[43] << 2 | e[42] >>> 30, te = e[5] << 30 | e[4] >>> 2, ne = e[4] << 30 | e[5] >>> 2, B = e[14] << 6 | e[15] >>> 26, F = e[15] << 6 | e[14] >>> 26, E = e[25] << 11 | e[24] >>> 21, v = e[24] << 11 | e[25] >>> 21, J = e[34] << 15 | e[35] >>> 17, Z = e[35] << 15 | e[34] >>> 17, I = e[45] << 29 | e[44] >>> 3, P = e[44] << 29 | e[45] >>> 3, T = e[6] << 28 | e[7] >>> 4, O = e[7] << 28 | e[6] >>> 4, re = e[17] << 23 | e[16] >>> 9, se = e[16] << 23 | e[17] >>> 9, D = e[26] << 25 | e[27] >>> 7, L = e[27] << 25 | e[26] >>> 7, w = e[36] << 21 | e[37] >>> 11, x = e[37] << 21 | e[36] >>> 11, Q = e[47] << 24 | e[46] >>> 8, ee = e[46] << 24 | e[47] >>> 8, z = e[8] << 27 | e[9] >>> 5, X = e[9] << 27 | e[8] >>> 5, A = e[18] << 20 | e[19] >>> 12, j = e[19] << 20 | e[18] >>> 12, ae = e[29] << 7 | e[28] >>> 25, oe = e[28] << 7 | e[29] >>> 25, G = e[38] << 8 | e[39] >>> 24, V = e[39] << 8 | e[38] >>> 24, N = e[48] << 14 | e[49] >>> 18, _ = e[49] << 14 | e[48] >>> 18, e[0] = g ^ ~b & E, e[1] = f ^ ~y & v, e[10] = T ^ ~A & C, e[11] = O ^ ~j & k, e[20] = M ^ ~B & D, e[21] = U ^ ~F & L, e[30] = z ^ ~$ & Y, e[31] = X ^ ~q & K, e[40] = te ^ ~re & ae, e[41] = ne ^ ~se & oe, e[2] = b ^ ~E & w, e[3] = y ^ ~v & x, e[12] = A ^ ~C & R, e[13] = j ^ ~k & S, e[22] = B ^ ~D & G, e[23] = F ^ ~L & V, e[32] = $ ^ ~Y & J, e[33] = q ^ ~K & Z, e[42] = re ^ ~ae & ie, e[43] = se ^ ~oe & le, e[4] = E ^ ~w & N, e[5] = v ^ ~x & _, e[14] = C ^ ~R & I, e[15] = k ^ ~S & P, e[24] = D ^ ~G & H, e[25] = L ^ ~V & W, e[34] = Y ^ ~J & Q, e[35] = K ^ ~Z & ee, e[44] = ae ^ ~ie & ue, e[45] = oe ^ ~le & ce, e[6] = w ^ ~N & g, e[7] = x ^ ~_ & f, e[16] = R ^ ~I & T, e[17] = S ^ ~P & O, e[26] = G ^ ~H & M, e[27] = V ^ ~W & U, e[36] = J ^ ~Q & z, e[37] = Z ^ ~ee & X, e[46] = ie ^ ~ue & te, e[47] = le ^ ~ce & ne, e[8] = N ^ ~g & b, e[9] = _ ^ ~f & y, e[18] = I ^ ~T & A, e[19] = P ^ ~O & j, e[28] = H ^ ~M & B, e[29] = W ^ ~U & F, e[38] = Q ^ ~z & $, e[39] = ee ^ ~X & q, e[48] = ue ^ ~te & re, e[49] = ce ^ ~ne & se, e[0] ^= i[r], e[1] ^= i[r + 1]
 					};
 					if (s) e.exports = h;
 					else
@@ -2000,9 +2000,9 @@
 				F = () => o.a.createElement(I.a, {
 					className: M.a.failed
 				}),
-				L = "5391184";
+				D = "5391184";
 
-			function D({
+			function L({
 				destinationAddress: e,
 				migration: t,
 				network: n,
@@ -2018,7 +2018,7 @@
 							try {
 								const a = new s.ethers.providers.Web3Provider(Object(w.c)()).getSigner();
 								if (u) {
-									if (n === L) {
+									if (n === D) {
 										const n = await async function(e, t) {
 											const n = new s.ethers.providers.JsonRpcProvider(Object(m.i)(m.a.ArbitrumRinkeby));
 											let r = null;
@@ -2055,7 +2055,7 @@
 					key: "error"
 				}, o.a.createElement(F, null), " Encountered an error: ", i.toString())) : u ? h ? f || y.push(o.a.createElement("p", {
 					key: "l2-pending"
-				}, o.a.createElement(U, null), " Loading L2 balance...")) : n !== L ? (y.push(o.a.createElement("p", {
+				}, o.a.createElement(U, null), " Loading L2 balance...")) : n !== D ? (y.push(o.a.createElement("p", {
 					key: "change-network"
 				}, o.a.createElement(U, null), " ", o.a.createElement("b", null, "Great! Now you'll need to switch networks to the Arbitrum chain."), " ", "Here are the instructions for MetaMask specifically:")), y.push(o.a.createElement("ol", {
 					key: "instructions"
@@ -2068,7 +2068,7 @@
 			const G = "arb-migration-l1";
 
 			function V(e) {
-				e ? Object(k.Eb)(G, e) : window.localStorage && window.localStorage.removeItem(G)
+				e ? Object(k.Db)(G, e) : window.localStorage && window.localStorage.removeItem(G)
 			}
 
 			function H() {
@@ -2106,7 +2106,7 @@
 					return () => window.clearInterval(t)
 				}, [e, m, h, n]);
 				let T = null;
-				return T = n ? d ? g || "4" === p ? g ? b ? o.a.createElement(D, {
+				return T = n ? d ? g || "4" === p ? g ? b ? o.a.createElement(L, {
 					destinationAddress: b,
 					migration: g,
 					network: p,
@@ -2169,4 +2169,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-pages-meta-ArbitrumPointsMigrationPage.53c473dda7778bd02e8d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-pages-meta-ArbitrumPointsMigrationPage.eac47572c5b019921305.js.map

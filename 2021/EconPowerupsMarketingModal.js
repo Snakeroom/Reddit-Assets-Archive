@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.a86480ecc67fbab47333.js
-// Retrieved at 12/6/2021, 3:50:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.396ffdd72c98154e5f12.js
+// Retrieved at 12/6/2021, 6:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsMarketingModal"], {
 		"./src/reddit/components/Econ/Common/BenefitTile/index.m.less": function(e, t, s) {
@@ -355,7 +355,7 @@
 				});
 				const I = () => i(Object(m.g)(w.a.ECON_POWERUPS_MARKETING)),
 					S = () => {
-						Object(E.Hb)(w.a.ECON_POWERUPS_MARKETING, !0), i(g ? Object(d.h)(t) : Object(m.h)(w.a.ECON_POWERUPS_PURCHASE))
+						Object(E.Fb)(w.a.ECON_POWERUPS_MARKETING, !0), i(g ? Object(d.h)(t) : Object(m.h)(w.a.ECON_POWERUPS_PURCHASE))
 					};
 				if (!t || !c || !s) return I(), null;
 				const y = F._("Unlock perks for the whole community", null, {
@@ -617,4 +617,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.a86480ecc67fbab47333.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.396ffdd72c98154e5f12.js.map
