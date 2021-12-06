@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.ae372cd159d1f6925b27.js
-// Retrieved at 12/6/2021, 5:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.13ac3301823e57040932.js
+// Retrieved at 12/6/2021, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -2313,7 +2313,7 @@
 					}, this.onSwitchEditorMode = (e, t) => {
 						this.props.onSwitchMode(e, t, this.props.draftKey)
 					}, this.onTrackToolbarClick = (e, t) => {
-						Object(O.d)(O.a.CommentComposer, !1), this.props.sendEvent(Object(G.h)(e, t))
+						Object(O.e)(O.a.CommentComposer, !1), this.props.sendEvent(Object(G.h)(e, t))
 					};
 					const {
 						postId: t,
@@ -3417,7 +3417,7 @@
 					}
 				}
 				componentDidMount() {
-					Object(p.d)(p.a.PostComposer)
+					Object(p.e)(p.a.PostComposer)
 				}
 				componentWillUnmount() {
 					Object(p.b)(p.a.PostComposer), this.cancelEdit()
@@ -4747,4 +4747,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.ae372cd159d1f6925b27.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.13ac3301823e57040932.js.map

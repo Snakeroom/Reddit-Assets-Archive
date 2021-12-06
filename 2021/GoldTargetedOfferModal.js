@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GoldTargetedOfferModal.370fa367d730a372c6fb.js
-// Retrieved at 12/6/2021, 11:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GoldTargetedOfferModal.c4b47c7cfe6e7b021abb.js
+// Retrieved at 12/6/2021, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GoldTargetedOfferModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, r) {
@@ -239,7 +239,7 @@
 							coins: d,
 							pennies: l
 						} = t,
-						u = Object(h.r)(s) || Object(m.d)(m.a.GoldPayment, !1);
+						u = Object(h.r)(s) || Object(m.e)(m.a.GoldPayment, !1);
 					let b, f;
 					r(Object(i.stripeTokenPending)());
 					const O = Object(h.y)(s);
@@ -279,7 +279,7 @@
 							coins: u,
 							pennies: b
 						} = t,
-						j = Object(h.r)(l) || Object(m.d)(m.a.GoldPayment, !1);
+						j = Object(h.r)(l) || Object(m.e)(m.a.GoldPayment, !1);
 					let y, _;
 					o(Object(i.stripeTokenPending)());
 					const k = Object(h.y)(l);
@@ -385,7 +385,7 @@
 					apiContext: a
 				}) => {
 					const s = n(),
-						d = Object(h.r)(s) || Object(m.d)(m.a.GoldPayment, !1),
+						d = Object(h.r)(s) || Object(m.e)(m.a.GoldPayment, !1),
 						{
 							coins: l,
 							pennies: u
@@ -420,7 +420,7 @@
 					apiContext: d
 				}) => {
 					const l = s(),
-						u = Object(h.r)(l) || Object(m.d)(m.a.GoldPayment, !1),
+						u = Object(h.r)(l) || Object(m.e)(m.a.GoldPayment, !1),
 						{
 							coins: p,
 							pennies: j
@@ -735,7 +735,7 @@
 				const e = Object(m.a)(),
 					t = Object(f.a)(),
 					r = Object(s.d)(),
-					n = Object(s.e)(e => Object(h.r)(e) || Object(b.d)(b.a.GoldPayment, !1)),
+					n = Object(s.e)(e => Object(h.r)(e) || Object(b.e)(b.a.GoldPayment, !1)),
 					d = Object(s.e)(h.b),
 					k = Object(s.e)(e => d && Object(y.c)(e, d)),
 					x = Object(s.e)(y.f),
@@ -879,7 +879,7 @@
 				h = r("./src/reddit/components/Gold/TargetedOfferModal/index.m.less"),
 				_ = r.n(h);
 			const k = Object(s.c)({
-				correlationId: e => Object(j.r)(e) || Object(u.d)(u.a.GoldPayment, !1),
+				correlationId: e => Object(j.r)(e) || Object(u.e)(u.a.GoldPayment, !1),
 				dealCoinPackages: g.f,
 				purchasePackageId: j.b
 			});
@@ -1156,4 +1156,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GoldTargetedOfferModal.370fa367d730a372c6fb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GoldTargetedOfferModal.c4b47c7cfe6e7b021abb.js.map

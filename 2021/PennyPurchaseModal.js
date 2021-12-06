@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.02ebadaaa6d0049a9369.js
-// Retrieved at 12/2/2021, 6:50:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.4325d7e36ed3e646b114.js
+// Retrieved at 12/6/2021, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PennyPurchaseModal"], {
 		"./src/lib/loadRedditAdsPixel.ts": function(e, a, t) {
@@ -573,7 +573,7 @@
 						loadSavedCards: a,
 						sendEvent: t
 					} = this.props;
-					a(), Object(g.d)(g.a.GoldPayment, !1), t(Object(b.h)(e))
+					a(), Object(g.e)(g.a.GoldPayment, !1), t(Object(b.h)(e))
 				}
 				componentDidUpdate(e) {
 					if (this.props.stripeErrorMessage && !e.stripeErrorMessage) {
@@ -676,4 +676,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PennyPurchaseModal.02ebadaaa6d0049a9369.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PennyPurchaseModal.4325d7e36ed3e646b114.js.map

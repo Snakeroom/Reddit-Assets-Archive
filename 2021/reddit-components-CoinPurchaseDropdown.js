@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.12529f1b459ac503c4d7.js
-// Retrieved at 12/1/2021, 12:30:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.28f502816efafd49ec98.js
+// Retrieved at 12/6/2021, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CoinPurchaseDropdown"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, r) {
@@ -239,7 +239,7 @@
 							coins: d,
 							pennies: l
 						} = t,
-						u = Object(C.r)(s) || Object(m.d)(m.a.GoldPayment, !1);
+						u = Object(C.r)(s) || Object(m.e)(m.a.GoldPayment, !1);
 					let b, h;
 					r(Object(i.stripeTokenPending)());
 					const f = Object(C.y)(s);
@@ -279,7 +279,7 @@
 							coins: u,
 							pennies: b
 						} = t,
-						g = Object(C.r)(l) || Object(m.d)(m.a.GoldPayment, !1);
+						g = Object(C.r)(l) || Object(m.e)(m.a.GoldPayment, !1);
 					let j, y;
 					a(Object(i.stripeTokenPending)());
 					const x = Object(C.y)(l);
@@ -385,7 +385,7 @@
 					apiContext: c
 				}) => {
 					const s = n(),
-						d = Object(C.r)(s) || Object(m.d)(m.a.GoldPayment, !1),
+						d = Object(C.r)(s) || Object(m.e)(m.a.GoldPayment, !1),
 						{
 							coins: l,
 							pennies: u
@@ -420,7 +420,7 @@
 					apiContext: d
 				}) => {
 					const l = s(),
-						u = Object(C.r)(l) || Object(m.d)(m.a.GoldPayment, !1),
+						u = Object(C.r)(l) || Object(m.e)(m.a.GoldPayment, !1),
 						{
 							coins: p,
 							pennies: g
@@ -976,7 +976,7 @@
 							sendEvent: t
 						} = this.props;
 						t(l.b()), e()
-					}, this.correlationId = Object(R.d)(R.a.GoldPayment, !1), e.coinPackages.length || e.purchaseCatalogPending || e.requestPurchaseCatalog(this.correlationId)
+					}, this.correlationId = Object(R.e)(R.a.GoldPayment, !1), e.coinPackages.length || e.purchaseCatalogPending || e.requestPurchaseCatalog(this.correlationId)
 				}
 				getListItemData() {
 					const {
@@ -1471,4 +1471,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.12529f1b459ac503c4d7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.28f502816efafd49ec98.js.map

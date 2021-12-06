@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.4b17dac599bb00d29618.js
-// Retrieved at 12/6/2021, 5:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.95e335e23ae0c112090b.js
+// Retrieved at 12/6/2021, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956"], {
 		"./src/reddit/actions/eventPosts/index.ts": function(e, t, s) {
@@ -1628,7 +1628,7 @@
 						shouldHideItems: ye,
 						isTrueblockPCBlockeeEnabled: Pe
 					} = e, Te = Object(n.useCallback)(async () => {
-						const e = Object(q.d)(q.a.GildingFlow, !0);
+						const e = Object(q.e)(q.a.GildingFlow, !0);
 						Oe(e, null == ge ? void 0 : ge.id);
 						const {
 							clickGildEvent: t
@@ -3142,7 +3142,7 @@
 						this.handlePostEvent("edit"), this.props.onEdit()
 					}, this.handleGild = async () => {
 						var e;
-						const t = Object(H.d)(H.a.GildingFlow, !0);
+						const t = Object(H.e)(H.a.GildingFlow, !0);
 						this.props.onGildClick(t, null === (e = this.props.claimedFreeAward) || void 0 === e ? void 0 : e.id);
 						const {
 							clickGildEvent: o
@@ -4138,7 +4138,7 @@
 					...Object(n.g)(e, {
 						offerContext: r.a.StorefrontFreeAward
 					}),
-					correlationId: Object(o.d)(o.a.GoldPayment, !1),
+					correlationId: Object(o.e)(o.a.GoldPayment, !1),
 					profile: i.profile(e),
 					subreddit: i.subreddit(e)
 				}),
@@ -4726,4 +4726,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.4b17dac599bb00d29618.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.95e335e23ae0c112090b.js.map

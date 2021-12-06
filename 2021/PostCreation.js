@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.7f032b98912188c6a3f6.js
-// Retrieved at 12/6/2021, 5:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.405ef57f16dcc7e5bb58.js
+// Retrieved at 12/6/2021, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -16149,7 +16149,7 @@
 						const {
 							onFocus: e
 						} = this.props;
-						this.emotesTooltipApi && this.emotesTooltipApi.closeTooltip(), this.gifTooltipApi && this.gifTooltipApi.closeTooltip(), e && (Object(sa.d)(sa.a.CommentComposer, !1), e())
+						this.emotesTooltipApi && this.emotesTooltipApi.closeTooltip(), this.gifTooltipApi && this.gifTooltipApi.closeTooltip(), e && (Object(sa.e)(sa.a.CommentComposer, !1), e())
 					}, this.handleBeforeInput = e => {
 						const {
 							editorState: t
@@ -22986,7 +22986,7 @@
 				u = (e, t) => ({
 					...s.defaults(e),
 					comment: t ? s.comment(e, t) : void 0,
-					correlationId: Object(c.b)(e) || Object(i.d)(i.a.GildingFlow, !1),
+					correlationId: Object(c.b)(e) || Object(i.e)(i.a.GildingFlow, !1),
 					post: t ? s.post(e, t) : void 0,
 					screen: s.screen(e),
 					subreddit: s.subreddit(e),
@@ -23216,7 +23216,7 @@
 					return {
 						...c.defaults(e),
 						comment: n ? c.comment(e, n) : null,
-						correlationId: a.r(e) || Object(m.d)(m.a.GoldPayment, !1),
+						correlationId: a.r(e) || Object(m.e)(m.a.GoldPayment, !1),
 						post: n ? c.post(e, n) : null,
 						screen: c.screen(e),
 						subreddit: n ? c.subreddit(e) : null,
@@ -31878,7 +31878,7 @@
 					}
 				}
 				componentDidMount() {
-					Object(f.d)(f.a.PostComposer), this.externalAccountEventsChannel = Object(B.a)(), this.externalAccountEventsChannel.addEventListener("message", this.onExternalAccountConnected), this.props.isNameEditable && this.props.startChangeUsernameFlow()
+					Object(f.e)(f.a.PostComposer), this.externalAccountEventsChannel = Object(B.a)(), this.externalAccountEventsChannel.addEventListener("message", this.onExternalAccountConnected), this.props.isNameEditable && this.props.startChangeUsernameFlow()
 				}
 				componentWillUnmount() {
 					Object(f.b)(f.a.PostComposer), this.externalAccountEventsChannel && this.externalAccountEventsChannel.close(), this.props.onUnmount()
@@ -33410,4 +33410,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.7f032b98912188c6a3f6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.405ef57f16dcc7e5bb58.js.map

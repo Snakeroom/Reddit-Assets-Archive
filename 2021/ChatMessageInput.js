@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput.30553ed232d7eb85bb89.js
-// Retrieved at 12/2/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput.4c75671d0aec6752a6ef.js
+// Retrieved at 12/6/2021, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -422,7 +422,7 @@
 					}),
 					onClick: async t => {
 						t.stopPropagation();
-						const r = Object(c.d)(c.a.GildingFlow, !0);
+						const r = Object(c.e)(c.a.GildingFlow, !0);
 						u(r);
 						const {
 							clickGildEvent: a,
@@ -600,7 +600,7 @@
 							postId: n,
 							sendEvent: a
 						} = this.props;
-						t(Object(w.d)(w.a.GildingFlow, !0));
+						t(Object(w.e)(w.a.GildingFlow, !0));
 						const {
 							clickGildEvent: i,
 							clickRpanGiveAward: o
@@ -1781,4 +1781,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.30553ed232d7eb85bb89.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.4c75671d0aec6752a6ef.js.map

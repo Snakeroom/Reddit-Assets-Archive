@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.c0c26d3a1e9e74367482.js
-// Retrieved at 12/6/2021, 3:50:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.d76a6f6edeed5c3dbf5f.js
+// Retrieved at 12/6/2021, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Premium~reddit-components-Econ-Prediction-PremiumModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, r) {
@@ -2137,7 +2137,7 @@
 				}));
 			class W extends s.a.Component {
 				constructor() {
-					super(...arguments), this.correlationId = Object(b.d)(b.a.GoldPayment, !1), this.onClickPrice = (e, t) => {
+					super(...arguments), this.correlationId = Object(b.e)(b.a.GoldPayment, !1), this.onClickPrice = (e, t) => {
 						this.onPurchase(e, h.c, t)
 					}, this.onClickManagePremium = () => {
 						const {
@@ -2368,4 +2368,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.c0c26d3a1e9e74367482.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.d76a6f6edeed5c3dbf5f.js.map

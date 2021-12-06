@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.14fd66747070be956215.js
-// Retrieved at 12/6/2021, 5:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.f01cf7648af918217ee0.js
+// Retrieved at 12/6/2021, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435"], {
 		"./src/lib/hooks/usePrevious.ts": function(e, t, r) {
@@ -1608,7 +1608,7 @@
 				u = (e, t) => ({
 					...s.defaults(e),
 					comment: t ? s.comment(e, t) : void 0,
-					correlationId: Object(i.b)(e) || Object(a.d)(a.a.GildingFlow, !1),
+					correlationId: Object(i.b)(e) || Object(a.e)(a.a.GildingFlow, !1),
 					post: t ? s.post(e, t) : void 0,
 					screen: s.screen(e),
 					subreddit: s.subreddit(e),
@@ -1838,7 +1838,7 @@
 					return {
 						...i.defaults(e),
 						comment: r ? i.comment(e, r) : null,
-						correlationId: c.r(e) || Object(m.d)(m.a.GoldPayment, !1),
+						correlationId: c.r(e) || Object(m.e)(m.a.GoldPayment, !1),
 						post: r ? i.post(e, r) : null,
 						screen: i.screen(e),
 						subreddit: r ? i.subreddit(e) : null,
@@ -3501,4 +3501,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.14fd66747070be956215.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.f01cf7648af918217ee0.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.7b48a9953d8f1fbd32c3.js
-// Retrieved at 12/6/2021, 5:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.f5b0112cb8ba60b22fc4.js
+// Retrieved at 12/6/2021, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~ModListing", "reddit-components-BlankPost", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, n) {
@@ -15333,7 +15333,7 @@
 					actionInfo: r.actionInfo(t, {
 						settingValue: t.user.account && t.user.account.isMod ? "existing_mod" : "new_mod"
 					}),
-					correlationId: Object(s.d)(s.a.SubredditCreation, !0)
+					correlationId: Object(s.e)(s.a.SubredditCreation, !0)
 				}),
 				o = (e, t, n) => a => ({
 					source: "community_form",
@@ -19409,4 +19409,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.7b48a9953d8f1fbd32c3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.f5b0112cb8ba60b22fc4.js.map

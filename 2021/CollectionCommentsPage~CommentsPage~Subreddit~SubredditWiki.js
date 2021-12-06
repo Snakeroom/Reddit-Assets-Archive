@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.904873041835a26d6e0d.js
-// Retrieved at 12/6/2021, 5:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.01c5b66f0baffea46477.js
+// Retrieved at 12/6/2021, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"], {
 		"./node_modules/lodash/random.js": function(e, t, r) {
@@ -1858,7 +1858,7 @@
 							originElement: "post_flair_widget",
 							postFlairName: e
 						};
-						Object(f.d)(f.a.SearchResults), this.props.sendEvent(Object(v.b)(t))
+						Object(f.e)(f.a.SearchResults), this.props.sendEvent(Object(v.b)(t))
 					}, this.onToggleCollapse = () => this.setState(e => ({
 						isCollapsed: !e.isCollapsed
 					})), this.handleCloseClick = (e, t) => this.trackFlairWidgetClear(t), this.getSelectedFlair = e => e.find(e => Object(x.j)(e) === this.props.filterName), this.getFlairsFromIds = e => e.map(e => this.props.widget.templates[e] && Object(x.c)(this.props.widget.templates[e])), this.state = {
@@ -2860,4 +2860,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.904873041835a26d6e0d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.01c5b66f0baffea46477.js.map

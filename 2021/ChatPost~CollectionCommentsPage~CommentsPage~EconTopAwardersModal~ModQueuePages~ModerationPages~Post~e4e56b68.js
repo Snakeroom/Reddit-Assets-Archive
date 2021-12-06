@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~e4e56b68.70731a080bdd51dd3a27.js
-// Retrieved at 12/6/2021, 5:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~e4e56b68.a53b782e89888e22ee5b.js
+// Retrieved at 12/6/2021, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~e4e56b68"], {
 		"./src/reddit/actions/economics/subredditPremium/actionCreators.ts": function(e, t, r) {
@@ -965,7 +965,7 @@
 			class Le extends o.a.Component {
 				constructor(e) {
 					super(e), this.handleAddAward = async e => {
-						const t = Object(A.d)(A.a.GildingFlow, !0),
+						const t = Object(A.e)(A.a.GildingFlow, !0),
 							{
 								onAddAward: s,
 								sendEvent: n,
@@ -2467,7 +2467,7 @@
 				a = r("./src/reddit/selectors/telemetry.ts");
 			const i = (e, t = {}) => ({
 					...Object(n.g)(e, t),
-					correlationId: Object(s.d)(s.a.GildingFlow, !1),
+					correlationId: Object(s.e)(s.a.GildingFlow, !1),
 					profile: a.profile(e),
 					subreddit: a.subreddit(e)
 				}),
@@ -3001,4 +3001,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~e4e56b68.70731a080bdd51dd3a27.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~e4e56b68.a53b782e89888e22ee5b.js.map

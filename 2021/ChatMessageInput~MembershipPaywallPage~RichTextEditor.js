@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.acd36f4e2be73db0a5c8.js
-// Retrieved at 12/2/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.b60fb17086f26e45f2d5.js
+// Retrieved at 12/6/2021, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/draft-js/dist/Draft.css": function(t, e, n) {},
@@ -6487,7 +6487,7 @@
 						const {
 							onFocus: t
 						} = this.props;
-						this.emotesTooltipApi && this.emotesTooltipApi.closeTooltip(), this.gifTooltipApi && this.gifTooltipApi.closeTooltip(), t && (Object(rc.d)(rc.a.CommentComposer, !1), t())
+						this.emotesTooltipApi && this.emotesTooltipApi.closeTooltip(), this.gifTooltipApi && this.gifTooltipApi.closeTooltip(), t && (Object(rc.e)(rc.a.CommentComposer, !1), t())
 					}, this.handleBeforeInput = t => {
 						const {
 							editorState: e
@@ -8061,4 +8061,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.acd36f4e2be73db0a5c8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.b60fb17086f26e45f2d5.js.map

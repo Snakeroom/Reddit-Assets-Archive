@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.6570ce7bbc5f90c63951.js
-// Retrieved at 12/6/2021, 5:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.cc112e5765a382be17c2.js
+// Retrieved at 12/6/2021, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -1767,7 +1767,7 @@
 				const i = n(),
 					c = e.params.thingId;
 				t(Object(s.c)({
-					correlationId: Object(r.d)(r.a.GildingFlow),
+					correlationId: Object(r.e)(r.a.GildingFlow),
 					thingId: c
 				})), Object(a.K)(i) || await t(o.t());
 				const d = n();
@@ -5372,7 +5372,7 @@
 						switch (e.id) {
 							case cs.Coins:
 							case cs.Premium:
-								Object(Po.d)(Po.a.GoldPayment, !0), t = Object(Po.c)(Po.a.GoldPayment)
+								Object(Po.e)(Po.a.GoldPayment, !0), t = Object(Po.c)(Po.a.GoldPayment)
 						}
 						switch (e.type) {
 							case Ys.Category:
@@ -6265,7 +6265,7 @@
 						}))), te())
 					},
 					onFocusSearchBar: () => {
-						Object(Po.c)(Po.a.SearchResults) || Object(Po.d)(Po.a.SearchResults), _(Object(pr.k)(yt.OriginElement.SearchBar, Object(Zo.e)({
+						Object(Po.c)(Po.a.SearchResults) || Object(Po.e)(Po.a.SearchResults), _(Object(pr.k)(yt.OriginElement.SearchBar, Object(Zo.e)({
 							q: n
 						})))
 					},
@@ -8094,7 +8094,7 @@
 							className: Kc.a.meta
 						}, Xc(d))),
 						onClick: () => {
-							Object(Po.d)(Po.a.GoldPayment, !0), e.sendEvent(Object(sc.b)())
+							Object(Po.e)(Po.a.GoldPayment, !0), e.sendEvent(Object(sc.b)())
 						},
 						titleClassName: Kc.a.coinsTitle,
 						className: Kc.a.coinsLink
@@ -8105,7 +8105,7 @@
 						}),
 						href: "/premium",
 						onClick: () => {
-							Object(Po.d)(Po.a.GoldPayment, !0), e.sendEvent(Object(sc.e)())
+							Object(Po.e)(Po.a.GoldPayment, !0), e.sendEvent(Object(sc.e)())
 						},
 						title: o.fbt._("Premium", null, {
 							hk: "Ib64I"
@@ -8116,7 +8116,7 @@
 						}),
 						href: Bs.a,
 						onClick: () => {
-							Object(Po.d)(Po.a.GoldPayment, !0), e.sendEvent(Object(sc.c)())
+							Object(Po.e)(Po.a.GoldPayment, !0), e.sendEvent(Object(sc.c)())
 						},
 						title: o.fbt._("Powerups", null, {
 							hk: "2rTyID"
@@ -8375,17 +8375,17 @@
 				}), m.a.createElement(u.Fragment, null, m.a.createElement(N, {
 					href: "/coins",
 					onClick: () => {
-						Object(Po.d)(Po.a.GoldPayment, !0), g(Object(sc.b)())
+						Object(Po.e)(Po.a.GoldPayment, !0), g(Object(sc.b)())
 					}
 				}), m.a.createElement(I, {
 					href: "/premium",
 					onClick: () => {
-						Object(Po.d)(Po.a.GoldPayment, !0), g(Object(sc.e)())
+						Object(Po.e)(Po.a.GoldPayment, !0), g(Object(sc.e)())
 					}
 				}), m.a.createElement(T, {
 					href: "/powerups",
 					onClick: () => {
-						Object(Po.d)(Po.a.PowerupsFlow, !0), g(Object(sc.c)())
+						Object(Po.e)(Po.a.PowerupsFlow, !0), g(Object(sc.c)())
 					}
 				}), m.a.createElement(R, {
 					href: Gs.a,
@@ -8393,7 +8393,7 @@
 				}), y && m.a.createElement(L, {
 					href: "/predictions",
 					onClick: () => {
-						Object(Po.d)(Po.a.GoldPayment, !0), g(Object(sc.d)())
+						Object(Po.e)(Po.a.GoldPayment, !0), g(Object(sc.d)())
 					}
 				})), m.a.createElement(j, {
 					href: "https://www.reddithelp.com",
@@ -11152,7 +11152,7 @@
 							toggleTooltip: a
 						} = this.props;
 						if (!s) {
-							Object(v.d)(v.a.GoldPayment, !0), Object(b.a)(), Object(h.a)();
+							Object(v.e)(v.a.GoldPayment, !0), Object(b.a)(), Object(h.a)();
 							const e = n ? p.a.CoinSale : o ? p.a.StorefrontFreeAward : void 0;
 							r(Object(O.d)("get_coins_cta", e))
 						}
@@ -16024,7 +16024,7 @@
 			const a = "gold_top_nav",
 				i = (e, t = {}) => ({
 					...Object(o.g)(e, t),
-					correlationId: Object(s.d)(s.a.GoldPayment, !1),
+					correlationId: Object(s.e)(s.a.GoldPayment, !1),
 					profile: r.profile(e),
 					subreddit: r.subreddit(e)
 				}),
@@ -16781,7 +16781,7 @@
 					source: "user_dropdown",
 					action: "click",
 					noun: "powerups",
-					correlationId: Object(s.d)(s.a.PowerupsFlow, !1),
+					correlationId: Object(s.e)(s.a.PowerupsFlow, !1),
 					...a(e)
 				}),
 				p = () => e => ({
@@ -21329,4 +21329,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit~StandalonePostPage", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Governance~ModListing~Reddit~Subreddit", "Chat~Governance~Reddit", 0, "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.6570ce7bbc5f90c63951.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.cc112e5765a382be17c2.js.map

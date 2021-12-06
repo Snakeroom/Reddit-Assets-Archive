@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.79e6dde933783a9ce731.js
-// Retrieved at 12/6/2021, 5:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.5db759f9c8cacd14f025.js
+// Retrieved at 12/6/2021, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -6924,7 +6924,7 @@
 					actionInfo: s.actionInfo(t, {
 						settingValue: t.user.account && t.user.account.isMod ? "existing_mod" : "new_mod"
 					}),
-					correlationId: Object(r.d)(r.a.SubredditCreation, !0)
+					correlationId: Object(r.e)(r.a.SubredditCreation, !0)
 				}),
 				i = (e, t, n) => o => ({
 					source: "community_form",
@@ -8048,4 +8048,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.79e6dde933783a9ce731.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.5db759f9c8cacd14f025.js.map

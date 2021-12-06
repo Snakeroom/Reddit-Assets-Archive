@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Coins.97c59b58b8ff38da2745.js
-// Retrieved at 12/1/2021, 12:30:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Coins.642294e3e2a7a4d91a08.js
+// Retrieved at 12/6/2021, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Coins"], {
 		"./node_modules/lodash/times.js": function(e, t, a) {
@@ -286,7 +286,7 @@
 							coins: l,
 							pennies: d
 						} = t,
-						m = Object(_.r)(i) || Object(b.d)(b.a.GoldPayment, !1);
+						m = Object(_.r)(i) || Object(b.e)(b.a.GoldPayment, !1);
 					let u, h;
 					a(Object(o.stripeTokenPending)());
 					const g = Object(_.y)(i);
@@ -326,7 +326,7 @@
 							coins: m,
 							pennies: u
 						} = t,
-						k = Object(_.r)(d) || Object(b.d)(b.a.GoldPayment, !1);
+						k = Object(_.r)(d) || Object(b.e)(b.a.GoldPayment, !1);
 					let O, y;
 					c(Object(o.stripeTokenPending)());
 					const j = Object(_.y)(d);
@@ -432,7 +432,7 @@
 					apiContext: s
 				}) => {
 					const i = n(),
-						l = Object(_.r)(i) || Object(b.d)(b.a.GoldPayment, !1),
+						l = Object(_.r)(i) || Object(b.e)(b.a.GoldPayment, !1),
 						{
 							coins: d,
 							pennies: m
@@ -467,7 +467,7 @@
 					apiContext: l
 				}) => {
 					const d = i(),
-						m = Object(_.r)(d) || Object(b.d)(b.a.GoldPayment, !1),
+						m = Object(_.r)(d) || Object(b.e)(b.a.GoldPayment, !1),
 						{
 							coins: p,
 							pennies: k
@@ -1397,7 +1397,7 @@
 			const f = "coins_marketing",
 				k = (e, t = {}) => ({
 					...Object(g.g)(e, t),
-					correlationId: Object(h.d)(h.a.GoldPayment, !1)
+					correlationId: Object(h.e)(h.a.GoldPayment, !1)
 				}),
 				O = () => e => ({
 					...k(e),
@@ -1655,7 +1655,7 @@
 				}));
 			class be extends o.a.Component {
 				constructor() {
-					super(...arguments), this.correlationId = Object(h.d)(h.a.GoldPayment, !1), this.purchaseSection = o.a.createRef(), this.perksSection = o.a.createRef(), this.onClickGetCoins = () => {
+					super(...arguments), this.correlationId = Object(h.e)(h.a.GoldPayment, !1), this.purchaseSection = o.a.createRef(), this.perksSection = o.a.createRef(), this.onClickGetCoins = () => {
 						this.props.sendEvent(O()), this.purchaseSection.current && window.scrollTo({
 							behavior: "smooth",
 							top: this.purchaseSection.current.offsetTop - 50
@@ -1839,4 +1839,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Coins.97c59b58b8ff38da2745.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Coins.642294e3e2a7a4d91a08.js.map

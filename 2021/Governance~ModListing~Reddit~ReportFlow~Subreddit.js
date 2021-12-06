@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.fed1adfe02a3ea818ae1.js
-// Retrieved at 12/6/2021, 5:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.9d7119ad63c1046507e1.js
+// Retrieved at 12/6/2021, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~ReportFlow~Subreddit"], {
 		"./src/lib/assertNever.ts": function(e, t, r) {
@@ -8578,7 +8578,7 @@
 				i = r("./src/reddit/selectors/telemetry.ts");
 			const s = (e, t, r) => ({
 					...i.defaults(e),
-					correlationId: Object(n.d)(n.a.PowerupsFlow, !1),
+					correlationId: Object(n.e)(n.a.PowerupsFlow, !1),
 					profile: i.profile(e),
 					subreddit: i.subreddit(e),
 					powerups: {
@@ -8592,21 +8592,21 @@
 					action: "click",
 					noun: "powerups_user_badge",
 					...s(t),
-					correlationId: Object(n.d)(n.a.PowerupsFlow, !0)
+					correlationId: Object(n.e)(n.a.PowerupsFlow, !0)
 				}),
 				d = () => e => ({
 					source: "postlist_supporters_cta",
 					action: "click",
 					noun: "powerups_become_hero",
 					...s(e),
-					correlationId: Object(n.d)(n.a.PowerupsFlow, !0)
+					correlationId: Object(n.e)(n.a.PowerupsFlow, !0)
 				}),
 				c = () => e => ({
 					source: "postlist_supporters_cta",
 					action: "click",
 					noun: "powerups_see_all_heroes",
 					...s(e),
-					correlationId: Object(n.d)(n.a.PowerupsFlow, !0)
+					correlationId: Object(n.e)(n.a.PowerupsFlow, !0)
 				}),
 				a = e => (t, r) => n => ({
 					source: e,
@@ -8626,42 +8626,42 @@
 					action: "view",
 					noun: "post_upsell",
 					...s(e),
-					correlationId: Object(n.d)(n.a.PowerupsFlow, !0)
+					correlationId: Object(n.e)(n.a.PowerupsFlow, !0)
 				}),
 				p = () => e => ({
 					source: "powerups",
 					action: "click",
 					noun: "post_upsell",
 					...s(e),
-					correlationId: Object(n.d)(n.a.PowerupsFlow, !0)
+					correlationId: Object(n.e)(n.a.PowerupsFlow, !0)
 				}),
 				f = () => e => ({
 					source: "powerups",
 					action: "view",
 					noun: "post_upsell_unlock_avatar",
 					...s(e),
-					correlationId: Object(n.d)(n.a.PowerupsFlow, !0)
+					correlationId: Object(n.e)(n.a.PowerupsFlow, !0)
 				}),
 				_ = () => e => ({
 					source: "powerups",
 					action: "click",
 					noun: "post_upsell_unlock_avatar",
 					...s(e),
-					correlationId: Object(n.d)(n.a.PowerupsFlow, !0)
+					correlationId: Object(n.e)(n.a.PowerupsFlow, !0)
 				}),
 				m = () => e => ({
 					source: "powerups",
 					action: "view",
 					noun: "post_upsell_avatar",
 					...s(e),
-					correlationId: Object(n.d)(n.a.PowerupsFlow, !0)
+					correlationId: Object(n.e)(n.a.PowerupsFlow, !0)
 				}),
 				O = () => e => ({
 					source: "powerups_post_upsell_avatar",
 					action: "click",
 					noun: "post_upsell_avatar_cta",
 					...s(e),
-					correlationId: Object(n.d)(n.a.PowerupsFlow, !0)
+					correlationId: Object(n.e)(n.a.PowerupsFlow, !0)
 				}),
 				g = () => e => ({
 					source: "powerups_post_upsell_avatar_modal",
@@ -8692,14 +8692,14 @@
 					action: "view",
 					noun: "powerups_mod_enable_banner",
 					...s(e),
-					correlationId: Object(n.d)(n.a.PowerupsFlow, !1)
+					correlationId: Object(n.e)(n.a.PowerupsFlow, !1)
 				}),
 				h = () => e => ({
 					source: "powerups_community_feed",
 					action: "click",
 					noun: "powerups_mod_enable_banner",
 					...s(e),
-					correlationId: Object(n.d)(n.a.PowerupsFlow, !1)
+					correlationId: Object(n.e)(n.a.PowerupsFlow, !1)
 				}),
 				T = e => t => ({
 					source: "powerups",
@@ -8800,7 +8800,7 @@
 					action: "click",
 					noun: "unlock_emojis",
 					...s(e),
-					correlationId: Object(n.d)(n.a.PowerupsFlow, !0)
+					correlationId: Object(n.e)(n.a.PowerupsFlow, !0)
 				}),
 				U = () => e => ({
 					source: "meta",
@@ -8851,7 +8851,7 @@
 					action: "click",
 					noun: "unlock_gifs",
 					...s(e),
-					correlationId: Object(n.d)(n.a.PowerupsFlow, !0)
+					correlationId: Object(n.e)(n.a.PowerupsFlow, !0)
 				}),
 				Q = (e, t, r) => n => ({
 					source: "powerups_settings",
@@ -8904,7 +8904,7 @@
 						pageType: "community",
 						reason: "welcome_message"
 					}),
-					correlationId: Object(n.d)(n.a.PostComposer)
+					correlationId: Object(n.e)(n.a.PostComposer)
 				}),
 				a = () => e => ({
 					...i.defaults(e),
@@ -10664,4 +10664,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.fed1adfe02a3ea818ae1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.9d7119ad63c1046507e1.js.map

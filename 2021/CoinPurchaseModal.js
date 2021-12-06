@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.f220321c297144b0796c.js
-// Retrieved at 12/2/2021, 6:50:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.7c4ce39275c36474209e.js
+// Retrieved at 12/6/2021, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinPurchaseModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, a) {
@@ -270,7 +270,7 @@
 							coins: d,
 							pennies: l
 						} = t,
-						u = Object(O.r)(o) || Object(b.d)(b.a.GoldPayment, !1);
+						u = Object(O.r)(o) || Object(b.e)(b.a.GoldPayment, !1);
 					let p, g;
 					a(Object(i.stripeTokenPending)());
 					const h = Object(O.y)(o);
@@ -310,7 +310,7 @@
 							coins: u,
 							pennies: p
 						} = t,
-						j = Object(O.r)(l) || Object(b.d)(b.a.GoldPayment, !1);
+						j = Object(O.r)(l) || Object(b.e)(b.a.GoldPayment, !1);
 					let f, C;
 					s(Object(i.stripeTokenPending)());
 					const P = Object(O.y)(l);
@@ -416,7 +416,7 @@
 					apiContext: c
 				}) => {
 					const o = r(),
-						d = Object(O.r)(o) || Object(b.d)(b.a.GoldPayment, !1),
+						d = Object(O.r)(o) || Object(b.e)(b.a.GoldPayment, !1),
 						{
 							coins: l,
 							pennies: u
@@ -451,7 +451,7 @@
 					apiContext: d
 				}) => {
 					const l = o(),
-						u = Object(O.r)(l) || Object(b.d)(b.a.GoldPayment, !1),
+						u = Object(O.r)(l) || Object(b.e)(b.a.GoldPayment, !1),
 						{
 							coins: m,
 							pennies: j
@@ -1406,7 +1406,7 @@
 					},
 					coinBalance: x.e,
 					coinPackages: P.d,
-					correlationId: e => Object(k.r)(e) || Object(h.d)(h.a.GoldPayment, !1),
+					correlationId: e => Object(k.r)(e) || Object(h.e)(h.a.GoldPayment, !1),
 					dealCoinPackages: P.f,
 					gildThingId: k.s,
 					isIframed: O.g,
@@ -1475,7 +1475,7 @@
 						gildThingId: e,
 						sendEvent: t
 					} = this.props;
-					Object(h.d)(h.a.GoldPayment, !1), t(Object(y.h)(e))
+					Object(h.e)(h.a.GoldPayment, !1), t(Object(y.h)(e))
 				}
 				componentDidUpdate(e) {
 					if (this.props.stripeErrorMessage && !e.stripeErrorMessage) {
@@ -1816,4 +1816,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.f220321c297144b0796c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.7c4ce39275c36474209e.js.map

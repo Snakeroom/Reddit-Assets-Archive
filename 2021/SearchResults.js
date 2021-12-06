@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.b926f8c3bd4414305052.js
-// Retrieved at 12/6/2021, 5:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.ec6a9efb33e85626df41.js
+// Retrieved at 12/6/2021, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -7419,7 +7419,7 @@
 							originElement: "post_flair_widget",
 							postFlairName: e
 						};
-						Object(f.d)(f.a.SearchResults), this.props.sendEvent(Object(g.b)(t))
+						Object(f.e)(f.a.SearchResults), this.props.sendEvent(Object(g.b)(t))
 					}, this.onToggleCollapse = () => this.setState(e => ({
 						isCollapsed: !e.isCollapsed
 					})), this.handleCloseClick = (e, t) => this.trackFlairWidgetClear(t), this.getSelectedFlair = e => e.find(e => Object(x.j)(e) === this.props.filterName), this.getFlairsFromIds = e => e.map(e => this.props.widget.templates[e] && Object(x.c)(this.props.widget.templates[e])), this.state = {
@@ -8740,7 +8740,7 @@
 		"./src/reddit/pages/SearchResults/redesign.tsx": function(e, t, s) {
 			"use strict";
 			s.r(t), s.d(t, "default", (function() {
-				return U
+				return K
 			}));
 			var r = s("./node_modules/@loadable/component/dist/loadable.esm.js"),
 				n = s("./node_modules/lodash/pick.js"),
@@ -8751,34 +8751,36 @@
 				d = s("./src/lib/constants/index.ts"),
 				l = s("./src/lib/hooks/usePrevious.ts"),
 				u = s("./src/lib/makeSearchKey/index.ts"),
-				m = s("./src/reddit/actions/survey/index.ts"),
-				p = s("./src/reddit/components/JumpToContent/index.tsx"),
-				b = s("./src/reddit/components/SearchResultsContent/redesign.tsx"),
-				h = s("./src/reddit/components/SearchResultsContent/searchResultsPageTreatment/selectors.ts"),
-				C = s("./src/reddit/components/SearchResultsNav/redesign.tsx"),
-				f = s("./src/reddit/components/SearchResultsSidebar/redesign.tsx"),
-				x = s("./src/reddit/components/SearchSwitcher/index.tsx"),
-				g = s("./src/reddit/constants/covid.ts"),
-				v = s("./src/reddit/constants/page.ts"),
-				O = s("./src/reddit/constants/parameters.ts"),
-				y = s("./src/reddit/contexts/PageLayer/index.tsx"),
-				j = s("./src/reddit/helpers/correlationIdTracker.ts"),
-				E = s("./src/reddit/helpers/search/searchTabType.ts"),
-				_ = s("./src/reddit/helpers/search/switchSearchScope.ts"),
-				S = s("./src/reddit/helpers/trackers/searchResults.ts"),
-				k = s("./src/reddit/hooks/useTheme.ts"),
-				w = s("./src/reddit/layout/page/SearchResults/index.tsx"),
-				T = s("./src/reddit/models/Theme/NewColorSystem/index.ts"),
-				I = s("./src/reddit/selectors/searchFix.ts"),
-				P = s("./src/reddit/selectors/subreddit.ts"),
-				L = s("./src/reddit/components/SearchResultsSubNav/index.tsx"),
-				N = s("./src/reddit/components/TrackingHelper/index.tsx"),
-				R = s("./src/reddit/selectors/experiments/serpRedesignLayout.ts"),
-				M = s("./src/reddit/pages/SearchResults/index.m.less"),
-				F = s.n(M);
+				m = s("./src/reddit/actions/correlationId/index.tsx"),
+				p = s("./src/reddit/actions/survey/index.ts"),
+				b = s("./src/reddit/components/JumpToContent/index.tsx"),
+				h = s("./src/reddit/components/SearchResultsContent/redesign.tsx"),
+				C = s("./src/reddit/components/SearchResultsContent/searchResultsPageTreatment/selectors.ts"),
+				f = s("./src/reddit/components/SearchResultsNav/redesign.tsx"),
+				x = s("./src/reddit/components/SearchResultsSidebar/redesign.tsx"),
+				g = s("./src/reddit/components/SearchSwitcher/index.tsx"),
+				v = s("./src/reddit/constants/covid.ts"),
+				O = s("./src/reddit/constants/page.ts"),
+				y = s("./src/reddit/constants/parameters.ts"),
+				j = s("./src/reddit/contexts/PageLayer/index.tsx"),
+				E = s("./src/reddit/helpers/correlationIdTracker.ts"),
+				_ = s("./src/reddit/helpers/search/searchTabType.ts"),
+				S = s("./src/reddit/helpers/search/switchSearchScope.ts"),
+				k = s("./src/reddit/helpers/trackers/searchResults.ts"),
+				w = s("./src/reddit/hooks/useTheme.ts"),
+				T = s("./src/reddit/layout/page/SearchResults/index.tsx"),
+				I = s("./src/reddit/models/Theme/NewColorSystem/index.ts"),
+				P = s("./src/reddit/selectors/correlationId.ts"),
+				L = s("./src/reddit/selectors/searchFix.ts"),
+				N = s("./src/reddit/selectors/subreddit.ts"),
+				R = s("./src/reddit/components/SearchResultsSubNav/index.tsx"),
+				M = s("./src/reddit/components/TrackingHelper/index.tsx"),
+				F = s("./src/reddit/selectors/experiments/serpRedesignLayout.ts"),
+				B = s("./src/reddit/pages/SearchResults/index.m.less"),
+				A = s.n(B);
 
-			function B() {
-				return (B = Object.assign || function(e) {
+			function H() {
+				return (H = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var r in s) Object.prototype.hasOwnProperty.call(s, r) && (e[r] = s[r])
@@ -8786,8 +8788,8 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const A = 3e3,
-				H = Object(r.a)({
+			const D = 3e3,
+				U = Object(r.a)({
 					resolved: {},
 					chunkName: () => "FeaturedLiveEntrypointLegacyAnnouncement",
 					isReady(e) {
@@ -8807,131 +8809,147 @@
 						return "./src/reddit/components/FeaturedLiveEntrypoint/LegacyAnnouncement/index.tsx"
 					}
 				}),
-				D = {
-					[v.h.Listings]: {
-						tab: v.h.Listings,
+				W = {
+					[O.h.Listings]: {
+						tab: O.h.Listings,
 						sidebar: !1,
 						filterNav: !1
 					},
-					[v.h.Authors]: {
-						tab: v.h.Authors,
+					[O.h.Authors]: {
+						tab: O.h.Authors,
 						sidebar: !1,
 						filterNav: !1
 					},
-					[v.h.Posts]: {
-						tab: v.h.Posts,
+					[O.h.Posts]: {
+						tab: O.h.Posts,
 						sidebar: !0,
 						filterNav: !0
 					}
+				},
+				V = () => {
+					const e = Object(c.d)(),
+						t = Object(c.e)(e => Object(P.a)(e, E.a.SearchResults));
+					Object(i.useEffect)(() => {
+						t ? (Object(E.d)(E.a.SearchResults, t), e(Object(m.d)({
+							key: E.a.SearchResults
+						}))) : Object(E.c)(E.a.SearchResults) || Object(E.e)(E.a.SearchResults)
+					}, [])
 				};
 
-			function U({
+			function K({
 				location: e,
 				match: t
 			}) {
 				const s = Object(c.d)(),
-					r = Object(y.eb)(),
-					n = Object(N.b)(),
-					M = Object(k.a)(),
-					U = Object(i.useRef)(!1),
-					W = Object(c.e)(e => Object(P.w)(e, {
+					r = Object(j.eb)(),
+					n = Object(M.b)(),
+					m = Object(w.a)(),
+					P = Object(i.useRef)(!1),
+					B = Object(c.e)(e => Object(N.w)(e, {
 						subredditName: t.params.subredditName
 					})),
-					V = Object(c.e)(e => Object(h.a)(e, {
+					K = Object(c.e)(e => Object(C.a)(e, {
 						pageLayer: r
 					})),
-					K = Object(c.e)(e => Object(I.c)(e, {
+					q = Object(c.e)(e => Object(L.c)(e, {
 						pageLayer: r
 					})),
-					q = Object(c.e)(R.c),
-					G = Object(y.V)(r),
-					Z = Object(y.bb)(r),
-					[J, z] = Object(i.useState)(!1),
-					Q = Object(l.a)(G) || {};
-				Object(i.useEffect)(() => {
+					G = Object(c.e)(F.c),
+					Z = Object(j.V)(r),
+					J = Object(j.bb)(r),
+					[z, Q] = Object(i.useState)(!1),
+					X = Object(l.a)(Z) || null;
+				V(), Object(i.useEffect)(() => {
 					let e = 0;
-					return Object(j.c)(j.a.SearchResults) || Object(j.d)(j.a.SearchResults), e = window.setTimeout(() => s(Object(m.h)()), A), () => {
-						Object(j.b)(j.a.SearchResults), window.clearTimeout(e)
+					return e = window.setTimeout(() => s(Object(p.h)()), D), () => {
+						Object(E.b)(E.a.SearchResults), window.clearTimeout(e)
 					}
 				}, []), Object(i.useEffect)(() => {
-					G !== Q && (U.current = !1, z(!1)), G && Q && G[O.p] !== Q[O.p] && (Object(j.b)(j.a.SearchResults), Object(j.d)(j.a.SearchResults))
-				}, [G, Q]);
-				const X = t.params.subredditName || t.params.multiredditName || "",
-					Y = t.params.username,
-					$ = Object(u.e)(o()(G || {}, O.t), q),
-					ee = W && $.restrict_sr,
-					te = Object(E.a)(q, $.type, ee),
-					se = {
-						...$,
-						type: Object(R.a)(q, $.type)
+					Z !== X && (P.current = !1, Q(!1)), Z && X && Z[y.p] !== X[y.p] && (Object(E.b)(E.a.SearchResults), Object(E.e)(E.a.SearchResults))
+				}, [Z, X]);
+				const Y = t.params.subredditName || t.params.multiredditName || "",
+					$ = t.params.username,
+					ee = Object(u.e)(o()(Z || {}, y.t), G),
+					te = B && ee.restrict_sr,
+					se = Object(_.a)(G, ee.type, te),
+					re = {
+						...ee,
+						type: Object(F.a)(G, ee.type)
 					},
-					re = Object(u.b)(X, Y, se),
-					ne = {
-						...se,
-						type: q ? [d.Zb.Posts, d.Zb.Subreddits, d.Zb.Users] : [d.Zb.Subreddits, d.Zb.Users]
+					ne = Object(u.b)(Y, $, re),
+					oe = {
+						...re,
+						type: G ? [d.Zb.Posts, d.Zb.Subreddits, d.Zb.Users] : [d.Zb.Subreddits, d.Zb.Users]
 					},
-					oe = Object(u.b)(X, Y, ne),
-					ie = {
+					ie = Object(u.b)(Y, $, oe),
+					ae = {
 						redesign: !0,
-						searchOptions: se
+						searchOptions: re
 					};
-				let ae;
-				Object(y.O)(r) || Object(y.B)(r) ? ae = a.a.createElement(x.a, B({}, ie, {
-					url: Object(_.a)(G)
-				})) : V && K && (ae = a.a.createElement(x.a, B({}, ie, {
-					subreddit: V,
-					url: Object(_.a)(G, V.name)
+				let ce;
+				Object(j.O)(r) || Object(j.B)(r) ? ce = a.a.createElement(g.a, H({}, ae, {
+					url: Object(S.a)(Z)
+				})) : K && q && (ce = a.a.createElement(g.a, H({}, ae, {
+					subreddit: K,
+					url: Object(S.a)(Z, K.name)
 				})));
-				const ce = D[te].tab,
-					de = D[te].sidebar,
-					le = D[te].filterNav,
-					ue = Object(T.a)({
+				const de = W[se].tab,
+					le = W[se].sidebar,
+					ue = W[se].filterNav,
+					me = Object(I.a)({
 						redditStyle: !0,
-						theme: M
+						theme: m
 					});
-				return a.a.createElement(w.a, {
-					backgroundColor: ue.canvas,
-					content: a.a.createElement(a.a.Fragment, null, a.a.createElement(p.a, null), Z && !J && (() => {
-						const e = e => n(Object(S.b)(e, Object(u.e)(o()(G || {}, O.t))));
-						return U.current || (e("view"), U.current = !0), a.a.createElement(H, {
-							announcement: g.a,
-							className: F.a.announcement,
+				return a.a.createElement(T.a, {
+					backgroundColor: me.canvas,
+					content: a.a.createElement(a.a.Fragment, null, a.a.createElement(b.a, null), J && !z && (() => {
+						const e = e => n(Object(k.b)(e, Object(u.e)(o()(Z || {}, y.t))));
+						return P.current || (e("view"), P.current = !0), a.a.createElement(U, {
+							announcement: v.a,
+							className: A.a.announcement,
 							onBtnClick: () => e("click"),
 							onClose: () => {
-								e("dismiss"), z(!0)
+								e("dismiss"), Q(!0)
 							}
 						})
-					})(), a.a.createElement(b.a, {
-						listingKey: re,
-						listingName: X,
+					})(), a.a.createElement(h.a, {
+						listingKey: ne,
+						listingName: Y,
 						location: e,
-						searchOptions: se,
-						tab: ce
+						searchOptions: re,
+						tab: de
 					})),
-					navBar: a.a.createElement(a.a.Fragment, null, a.a.createElement(C.a, {
-						activeTab: ce,
+					navBar: a.a.createElement(a.a.Fragment, null, a.a.createElement(f.a, {
+						activeTab: de,
 						location: e,
-						searchOptions: se,
-						searchSwitcher: ae
-					}), le && a.a.createElement(L.a, {
+						searchOptions: re,
+						searchSwitcher: ce
+					}), ue && a.a.createElement(R.a, {
 						key: "subNav",
-						searchOptions: $,
+						searchOptions: ee,
 						shouldHideGlobalSearchLink: !0,
-						subredditName: X,
-						tab: ce
-					}), ae && a.a.createElement("div", {
-						className: F.a.searchSwitcherContainer
-					}, ae)),
-					sidebar: de && a.a.createElement(f.a, {
-						className: F.a.sidebar,
-						listingKey: oe,
-						listingName: X || v.c,
+						subredditName: Y,
+						tab: de
+					}), ce && a.a.createElement("div", {
+						className: A.a.searchSwitcherContainer
+					}, ce)),
+					sidebar: le && a.a.createElement(x.a, {
+						className: A.a.sidebar,
+						listingKey: ie,
+						listingName: Y || O.c,
 						location: e,
-						searchOptions: ne,
-						tab: ce
+						searchOptions: oe,
+						tab: de
 					})
 				})
 			}
+		},
+		"./src/reddit/selectors/correlationId.ts": function(e, t, s) {
+			"use strict";
+			s.d(t, "a", (function() {
+				return r
+			}));
+			const r = (e, t) => e.correlationId[t]
 		},
 		"./src/reddit/selectors/economics.ts": function(e, t, s) {
 			"use strict";
@@ -9452,4 +9470,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.b926f8c3bd4414305052.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.ec6a9efb33e85626df41.js.map

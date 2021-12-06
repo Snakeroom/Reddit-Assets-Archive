@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.c9fe0c7f46a6a7526142.js
-// Retrieved at 12/1/2021, 12:30:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.6fdaba433403393dbbf2.js
+// Retrieved at 12/6/2021, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PremiumPurchaseModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, r) {
@@ -792,7 +792,7 @@
 					const k = Object(n.useCallback)(e => {
 						if (27 === e.keyCode) return p()
 					}, [p]);
-					return Object(n.useEffect)(() => (document.addEventListener("keydown", k), Object(f.d)(f.a.GoldPayment, !1), e(Object(h.h)()), () => document.removeEventListener("keydown", k)), [k, e]), Object(n.useEffect)(() => {
+					return Object(n.useEffect)(() => (document.addEventListener("keydown", k), Object(f.e)(f.a.GoldPayment, !1), e(Object(h.h)()), () => document.removeEventListener("keydown", k)), [k, e]), Object(n.useEffect)(() => {
 						y && e(Object(h.f)())
 					}, [e, y]), a.a.createElement("div", {
 						className: s
@@ -1116,4 +1116,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.c9fe0c7f46a6a7526142.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.6fdaba433403393dbbf2.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.219179dac34cee9337cc.js
-// Retrieved at 12/6/2021, 5:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.29b79b0ecc1358c0a391.js
+// Retrieved at 12/6/2021, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -3993,7 +3993,7 @@
 				u = (e, t) => ({
 					...n.defaults(e),
 					comment: t ? n.comment(e, t) : void 0,
-					correlationId: Object(c.b)(e) || Object(a.d)(a.a.GildingFlow, !1),
+					correlationId: Object(c.b)(e) || Object(a.e)(a.a.GildingFlow, !1),
 					post: t ? n.post(e, t) : void 0,
 					screen: n.screen(e),
 					subreddit: n.subreddit(e),
@@ -4223,7 +4223,7 @@
 					return {
 						...c.defaults(e),
 						comment: s ? c.comment(e, s) : null,
-						correlationId: i.r(e) || Object(m.d)(m.a.GoldPayment, !1),
+						correlationId: i.r(e) || Object(m.e)(m.a.GoldPayment, !1),
 						post: s ? c.post(e, s) : null,
 						screen: c.screen(e),
 						subreddit: s ? c.subreddit(e) : null,
@@ -5610,4 +5610,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.219179dac34cee9337cc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.29b79b0ecc1358c0a391.js.map

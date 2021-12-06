@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.8f120a8eab246b4210b3.js
-// Retrieved at 12/6/2021, 5:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.fb40ca28dac3f32dbb99.js
+// Retrieved at 12/6/2021, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1364,9 +1364,9 @@
 						const d = it(!1, s(), m),
 							c = E;
 						if (dt(c, d)) {
-							Object(re.d)(re.a.LinkedPosts);
+							Object(re.e)(re.a.LinkedPosts);
 							const e = Object(re.c)(re.a.LinkedPosts);
-							Object(re.d)(re.a.NsfwLinkedPosts);
+							Object(re.e)(re.a.NsfwLinkedPosts);
 							const o = Object(re.c)(re.a.NsfwLinkedPosts),
 								n = {
 									adContext: {
@@ -2510,7 +2510,7 @@
 					}),
 					onClick: async t => {
 						t.stopPropagation();
-						const o = Object(d.d)(d.a.GildingFlow, !0);
+						const o = Object(d.e)(d.a.GildingFlow, !0);
 						c(o);
 						const {
 							clickGildEvent: r,
@@ -5221,7 +5221,7 @@
 					},
 					handleGiveAward: () => {
 						if (t.currentStreamId) {
-							const s = Object(St.d)(St.a.GildingFlow, !0);
+							const s = Object(St.e)(St.a.GildingFlow, !0);
 							e(Object(ct.d)({
 								correlationId: s,
 								thingId: t.currentStreamId
@@ -6562,4 +6562,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.8f120a8eab246b4210b3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.fb40ca28dac3f32dbb99.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GoldPurchasePaymentActions.155164b29a5937b67800.js
-// Retrieved at 11/11/2021, 4:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GoldPurchasePaymentActions.3aa995372416cdc795c0.js
+// Retrieved at 12/6/2021, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GoldPurchasePaymentActions"], {
 		"./src/reddit/actions/goldPurchaseModals/payment.ts": function(e, t, r) {
@@ -630,4 +630,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GoldPurchasePaymentActions.155164b29a5937b67800.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GoldPurchasePaymentActions.3aa995372416cdc795c0.js.map

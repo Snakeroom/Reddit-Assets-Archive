@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.8686ba8bb4212cd1881a.js
-// Retrieved at 12/6/2021, 5:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.c39d25f6bd60e993cc4c.js
+// Retrieved at 12/6/2021, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ProfileIdCard"], {
 		"./node_modules/lodash/compact.js": function(e, t) {
@@ -2247,7 +2247,7 @@
 							onClickGivePremium: e,
 							sendEvent: t
 						} = this.props;
-						e(Object(H.d)(H.a.GiftPremiumFlow));
+						e(Object(H.e)(H.a.GiftPremiumFlow));
 						const {
 							clickGivePremiumEvent: n
 						} = await r.e("givePremiumTrackers").then(r.bind(null, "./src/reddit/helpers/trackers/givePremium.ts"));
@@ -3012,7 +3012,7 @@
 					source: "user_dropdown",
 					action: "click",
 					noun: "powerups",
-					correlationId: Object(n.d)(n.a.PowerupsFlow, !1),
+					correlationId: Object(n.e)(n.a.PowerupsFlow, !1),
 					...a(e)
 				}),
 				p = () => e => ({
@@ -3303,4 +3303,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.8686ba8bb4212cd1881a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.c39d25f6bd60e993cc4c.js.map

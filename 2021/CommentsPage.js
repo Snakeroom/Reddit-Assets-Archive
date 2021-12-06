@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.b8b2cfbb356c0557057a.js
-// Retrieved at 12/6/2021, 5:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.7849ec92d6d8c9239869.js
+// Retrieved at 12/6/2021, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -1026,9 +1026,9 @@
 						const d = at(!1, s(), m),
 							c = k;
 						if (dt(c, d)) {
-							Object(re.d)(re.a.LinkedPosts);
+							Object(re.e)(re.a.LinkedPosts);
 							const e = Object(re.c)(re.a.LinkedPosts);
-							Object(re.d)(re.a.NsfwLinkedPosts);
+							Object(re.e)(re.a.NsfwLinkedPosts);
 							const o = Object(re.c)(re.a.NsfwLinkedPosts),
 								n = {
 									adContext: {
@@ -2597,7 +2597,7 @@
 						this.props.sendEvent(Object(Le.d)("edit", this.props.comment.id)), this.props.handleEdit()
 					}, this.handleGild = async () => {
 						var e;
-						const t = Object(ne.d)(ne.a.GildingFlow, !0);
+						const t = Object(ne.e)(ne.a.GildingFlow, !0);
 						this.props.onGildClick(t, null === (e = this.props.claimedFreeAward) || void 0 === e ? void 0 : e.id);
 						const {
 							clickGildEvent: o
@@ -8661,4 +8661,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.b8b2cfbb356c0557057a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.7849ec92d6d8c9239869.js.map
