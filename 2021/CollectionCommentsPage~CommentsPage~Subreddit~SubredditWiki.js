@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.7a5a36f4d9cf07a5db43.js
-// Retrieved at 12/6/2021, 12:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.86d32f0cb098db4a8957.js
+// Retrieved at 12/6/2021, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"], {
 		"./node_modules/lodash/random.js": function(e, t, r) {
@@ -1125,7 +1125,7 @@
 					w = Object(a.e)(e => Object(g.k)(e, {
 						subredditId: t
 					})),
-					y = Object(a.e)(e => Object(f.P)(e, {
+					y = Object(a.e)(e => Object(f.R)(e, {
 						subredditId: t
 					})),
 					j = Object(a.e)(e => Object(g.n)(e, {
@@ -1505,7 +1505,7 @@
 				}) => Boolean(e.subreddits.appliedFilters.meta[t]),
 				subreddit: (e, {
 					subredditId: t
-				}) => Object(P.P)(e, {
+				}) => Object(P.R)(e, {
 					subredditId: t
 				})
 			});
@@ -1548,10 +1548,10 @@
 					a = Object(W.a)(),
 					o = Object(M.N)(r),
 					[d, c] = Object(n.useState)(!1),
-					l = Object(i.e)(t => Object(P.P)(t, {
+					l = Object(i.e)(t => Object(P.R)(t, {
 						subredditId: e
 					})),
-					u = Object(i.e)(t => Object(P.J)(t, {
+					u = Object(i.e)(t => Object(P.L)(t, {
 						subredditId: e
 					})),
 					m = Object(i.e)(t => Object(H.d)(t, {
@@ -1825,7 +1825,7 @@
 					url: e => Object(h.db)(e)
 				}),
 				N = Object(o.c)({
-					subredditId: (e, t) => Object(w.A)(e, t.subredditName)
+					subredditId: (e, t) => Object(w.C)(e, t.subredditName)
 				}),
 				I = Object(a.b)(N),
 				S = l.a.div("WidgetContent", k.a),
@@ -2375,7 +2375,7 @@
 				Oe = m.a.wrapped(me.a, "InternalLink", fe.a),
 				je = m.a.div("LinkContainer", fe.a),
 				Ee = Object(a.c)({
-					userIsBanned: he.Z,
+					userIsBanned: he.bb,
 					userIsLoggedIn: v.K
 				});
 			var Ne = Object(i.b)(Ee)(e => {
@@ -2860,4 +2860,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.7a5a36f4d9cf07a5db43.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.86d32f0cb098db4a8957.js.map

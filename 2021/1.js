@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/1.954428aaa2e3d0cea490.js
-// Retrieved at 12/2/2021, 10:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/1.9cd0f0144729afc6e01d.js
+// Retrieved at 12/6/2021, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	[1], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -91,7 +91,7 @@
 					ratingResponse: a,
 					subredditId: o,
 					children: p
-				} = e, f = null !== (t = Object(r.e)(e => Object(v.P)(e, {
+				} = e, f = null !== (t = Object(r.e)(e => Object(v.R)(e, {
 					subredditId: o
 				}))) && void 0 !== t ? t : {}, y = Object(d.a)();
 				return s.a.createElement("div", {
@@ -234,9 +234,9 @@
 			! function(e) {
 				e.Accepted = "ACCEPTED", e.Pending = "PENDING"
 			}(M || (M = {}));
-			var F = n("./src/reddit/models/Toast/index.ts"),
-				R = n("./node_modules/lodash/mapValues.js"),
-				B = n.n(R),
+			var R = n("./src/reddit/models/Toast/index.ts"),
+				F = n("./node_modules/lodash/mapValues.js"),
+				B = n.n(F),
 				H = n("./src/reddit/controls/CheckboxInput/index.tsx");
 
 			function P({
@@ -324,13 +324,13 @@
 				Object(c.useEffect)(() => {
 					N && (v.c.captureException(N), y(Object(p.f)(Object(p.e)(Z._("An error occurred", null, {
 						hk: "1VDETi"
-					}), F.b.Error))))
+					}), R.b.Error))))
 				}, [N, y]);
 				const [S, T] = Object(c.useState)(null);
 				if (!r) return null;
 				if (!r.isEligible) return null;
 
-				function R(e, t) {
+				function F(e, t) {
 					f(Object(a.setIn)(u, [e], t)), C(Object(I.a)(_.pageType))
 				}
 				const B = null !== (t = u[null == _ ? void 0 : _.id]) && void 0 !== t ? t : {},
@@ -374,7 +374,7 @@
 								}
 							}), y(Object(p.f)(Object(p.e)(Z._("Thanks for setting up your Content Tag!", null, {
 								hk: "3HW5GV"
-							}), F.b.SuccessCommunityGreen))), y({
+							}), R.b.SuccessCommunityGreen))), y({
 								type: g.z,
 								payload: {
 									id: s,
@@ -446,7 +446,7 @@
 						key: e.id,
 						question: e,
 						selectedAnswers: null !== (t = u[e.id]) && void 0 !== t ? t : {},
-						onChange: R
+						onChange: F
 					})
 				}), S && l.a.createElement("div", {
 					key: "result",
@@ -879,4 +879,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/1.954428aaa2e3d0cea490.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/1.9cd0f0144729afc6e01d.js.map

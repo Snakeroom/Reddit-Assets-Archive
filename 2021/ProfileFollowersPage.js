@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.3725bee2fc97a7cd11a9.js
-// Retrieved at 12/2/2021, 10:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.c5820a30b43cef5e11ad.js
+// Retrieved at 12/6/2021, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileFollowersPage", "ProfileFollowersAction"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -287,8 +287,8 @@
 						return e
 				}
 			};
-			const M = {};
-			var A = (e = M, t) => {
+			const A = {};
+			var M = (e = A, t) => {
 					switch (t.type) {
 						case k.c:
 						case P.c: {
@@ -318,7 +318,7 @@
 				},
 				L = Object(T.c)({
 					error: F,
-					pending: A
+					pending: M
 				});
 			const B = {};
 			var U = (e = B, t) => {
@@ -942,10 +942,10 @@
 							return e
 					}
 				},
-				M = s("./src/reddit/actions/inContextModeration.ts");
-			var A = (e = null, t) => {
+				A = s("./src/reddit/actions/inContextModeration.ts");
+			var M = (e = null, t) => {
 				switch (t.type) {
-					case M.a:
+					case A.a:
 						return t.payload;
 					default:
 						return e
@@ -1076,7 +1076,7 @@
 				Z = Object(j.c)({
 					api: P,
 					fetchedTokens: F,
-					inContext: A,
+					inContext: M,
 					loadMore: B,
 					models: W,
 					search: G,
@@ -1201,10 +1201,10 @@
 				}, de = (e, t) => async (s, r) => {
 					const n = r();
 					await Promise.all([(async () => {
-						if (!Object(I.b)(u.a.BAN_USER)(n) && !Object(_.M)(n, {
+						if (!Object(I.b)(u.a.BAN_USER)(n) && !Object(_.O)(n, {
 								subredditId: e
 							})) {
-							const t = Object(_.P)(n, {
+							const t = Object(_.R)(n, {
 								subredditId: e
 							});
 							await s(Object(l.o)(t.name))
@@ -1406,8 +1406,8 @@
 					d: "M6.42528593,9.54562407 C4.41043013,8.02026355 3.10790651,5.60355545 3.10790651,2.88165092 L3.10790651,2.79711586 L3.19244157,2.79711586 C5.9143461,2.79711586 8.33136499,4.09963948 9.85641472,6.11449528 C8.02399304,6.25279712 6.56358777,7.7128916 6.42528593,9.54562407 Z M6.42528593,10.2560915 C6.56358777,12.088824 8.02399304,13.5489184 9.85641472,13.6872203 C8.33136499,15.7020761 5.9143461,17.0045997 3.19244157,17.0045997 L3.10790651,17.0045997 L3.10790651,16.9200646 C3.10790651,14.1981601 4.41043013,11.781452 6.42528593,10.2560915 Z M13.6872203,10.2560915 C15.7020761,11.781452 17.0045997,14.1981601 17.0045997,16.9200646 L17.0045997,17.0045997 L16.9200646,17.0045997 C14.1981601,17.0045997 11.7811412,15.7020761 10.2560915,13.6872203 C12.0885132,13.5489184 13.5486077,12.088824 13.6872203,10.2560915 Z M16.9200646,2.79711586 L17.0045997,2.79711586 L17.0045997,2.88165092 C17.0045997,5.60324465 15.7020761,8.02026355 13.6872203,9.54562407 C13.5489184,7.7128916 12.0885132,6.25279712 10.2560915,6.11449528 C11.7811412,4.09963948 14.1981601,2.79711586 16.9200646,2.79711586 Z M19.9403282,9.84895574 L20,9.90862755 L19.9403282,9.96829935 C18.9346096,10.9740179 17.7346469,11.6624192 16.46227,12.0474888 C15.9659373,11.2534187 15.3446668,10.5308304 14.6071606,9.90862755 C15.3446668,9.28642466 15.9659373,8.5638364 16.46227,7.76976629 C17.7346469,8.1548359 18.9346096,8.8432372 19.9403282,9.84895574 Z M9.90862755,5.39283938 C9.28642466,4.65533317 8.5638364,4.03406266 7.76976629,3.53772999 C8.1548359,2.26535306 8.8432372,1.06539035 9.84895574,0.0596718051 L9.90862755,0 L9.96829935,0.0596718051 C10.9740179,1.06539035 11.6624192,2.26535306 12.0474888,3.53772999 C11.2534187,4.03406266 10.5308304,4.65533317 9.90862755,5.39283938 Z M5.39283938,9.90862755 C4.65533317,10.5308304 4.03406266,11.2534187 3.53772999,12.0474888 C2.26535306,11.6624192 1.06539035,10.9740179 0.0596718051,9.96829935 L0,9.90862755 L0.0596718051,9.84895574 C1.06539035,8.8432372 2.26535306,8.1548359 3.53772999,7.76976629 C4.03406266,8.5638364 4.65533317,9.28642466 5.39283938,9.90862755 Z M9.90862755,14.6071606 C10.5308304,15.3446668 11.2534187,15.9659373 12.0474888,16.46227 C11.6624192,17.7346469 10.9740179,18.9346096 9.96829935,19.9403282 L9.90862755,20 L9.84895574,19.9403282 C8.8432372,18.9346096 8.1548359,17.7346469 7.76976629,16.46227 C8.5638364,15.9659373 9.28642466,15.3446668 9.90862755,14.6071606 Z"
 				}))),
 				F = s("./src/reddit/icons/svgs/Premium/index.tsx"),
-				M = s("./src/reddit/models/Gold/Award.ts"),
-				A = s("./src/reddit/models/User/index.ts"),
+				A = s("./src/reddit/models/Gold/Award.ts"),
+				M = s("./src/reddit/models/User/index.ts"),
 				L = s("./src/reddit/components/HumanDate/index.tsx"),
 				B = s("./src/reddit/components/ProfileIdCard/AwardedLastMonth.tsx"),
 				U = s("./src/reddit/components/ProfileIdCard/UserProfileOverview/UserSnoovatar/index.tsx"),
@@ -1598,7 +1598,7 @@
 					}, [y.fbt._plural(r.fromAwardsReceived)], {
 						hk: "3nzm9q"
 					}), n.a.createElement(Ce, {
-						href: M.a,
+						href: A.a,
 						target: "_blank",
 						rel: "noopener noreferrer"
 					}, n.a.createElement(T.a, {
@@ -1609,7 +1609,7 @@
 					}, [y.fbt._plural(r.fromAwardsGiven)], {
 						hk: "4zXN3B"
 					}), n.a.createElement(Ce, {
-						href: M.a,
+						href: A.a,
 						target: "_blank",
 						rel: "noopener noreferrer"
 					}, n.a.createElement(T.a, {
@@ -1654,7 +1654,7 @@
 					if (!g) return n.a.createElement(je, {
 						style: h
 					});
-					const S = !!r && Object(A.e)(r) === v,
+					const S = !!r && Object(M.e)(r) === v,
 						j = !!(null == r ? void 0 : r.snoovatarFullBodyAsset),
 						k = g.accountIcon || `${x.a.assetPath}/img/snoo_user_placeholder.png`,
 						T = c && c.flair,
@@ -1662,7 +1662,7 @@
 						R = C && C.templateIds && C.templateIds.length > 0,
 						F = C && C.displaySettings && C.displaySettings.isEnabled,
 						{
-							awardedLastMonth: M
+							awardedLastMonth: A
 						} = g,
 						L = !!g.snoovatarFullBodyAsset,
 						H = g.isNSFW && i;
@@ -1702,8 +1702,8 @@
 					})), n.a.createElement(Ne, {
 						showAwardKarma: p,
 						user: g
-					}), M && n.a.createElement(B.a, {
-						recentAwardings: M,
+					}), A && n.a.createElement(B.a, {
+						recentAwardings: A,
 						topAwardIcon: f,
 						username: v
 					}), a && !S && !I && _ && !E && n.a.createElement(de, {
@@ -1746,7 +1746,7 @@
 				};
 			Re.WrappedComponent = Te;
 			var Fe = Re;
-			const Me = Object(o.c)({
+			const Ae = Object(o.c)({
 					activeTooltipId: b.a,
 					currentUser: f.k,
 					isLoggedIn: f.K,
@@ -1773,7 +1773,7 @@
 					}) => t ? Object(v.d)(e, {
 						subredditId: t
 					}) : void 0,
-					userIsBanned: (e, t) => !!Object(h.l)(t) && Object(h.ab)(e, t),
+					userIsBanned: (e, t) => !!Object(h.l)(t) && Object(h.cb)(e, t),
 					userProfileStyles: (e, t) => Object(p.m)(e, Object(m.m)(e, t.userName)),
 					acceptChats: (e, t) => {
 						const s = Object(m.h)(e, {
@@ -1782,13 +1782,13 @@
 						return !s || s.acceptChats
 					}
 				}),
-				Ae = Object(i.b)(Me, (e, t) => ({
+				Me = Object(i.b)(Ae, (e, t) => ({
 					onClickSnoovatar: () => e(Object(a.b)({
 						clickSource: "user_hovercard"
 					})),
 					onHideTooltip: () => e(Object(d.i)())
 				}));
-			t.a = Ae(e => n.a.createElement("div", {
+			t.a = Me(e => n.a.createElement("div", {
 				className: e.className,
 				id: e.tooltipId,
 				onMouseLeave: e.onHideTooltip
@@ -2100,7 +2100,7 @@
 				f = s("./src/reddit/selectors/subreddit.ts");
 			const v = (e, t) => {
 				const s = Object(b.b)(e, t),
-					r = Object(f.E)(e, t);
+					r = Object(f.G)(e, t);
 				return {
 					comment: s,
 					isModerator: !(!r || !r.name) && !!e.moderatingSubreddits[r.name],
@@ -2139,7 +2139,7 @@
 			}));
 			const y = (e, t) => {
 				const s = Object(b.b)(e, t),
-					r = Object(f.E)(e, t);
+					r = Object(f.G)(e, t);
 				return {
 					comment: s,
 					isModerator: !(!r || !r.name) && !!e.moderatingSubreddits[r.name],
@@ -2165,7 +2165,7 @@
 				}
 			}));
 			var C = Object(i.b)(() => Object(o.c)({
-					subreddit: f.P
+					subreddit: f.R
 				}))(e => n.a.createElement(p, {
 					className: e.className,
 					type: "communityTools",
@@ -2265,7 +2265,7 @@
 				}) : null
 			};
 			var E = Object(i.b)(() => Object(o.c)({
-				subreddit: f.P
+				subreddit: f.R
 			}))(e => n.a.createElement(p, {
 				className: e.className,
 				type: "sidebar",
@@ -2278,7 +2278,7 @@
 				}
 			}));
 			var S = Object(i.b)(() => Object(o.c)({
-				subredditOrProfile: (e, t) => Object(f.H)(e, {
+				subredditOrProfile: (e, t) => Object(f.J)(e, {
 					identifier: t
 				})
 			}))(e => n.a.createElement(p, {
@@ -2295,7 +2295,7 @@
 			var j = Object(i.b)(() => Object(o.c)({
 				subreddit: (e, {
 					subredditId: t
-				}) => t ? Object(f.P)(e, {
+				}) => t ? Object(f.R)(e, {
 					subredditId: t
 				}) : null
 			}))(e => n.a.createElement(p, {
@@ -3136,8 +3136,8 @@
 			};
 			var R = s("./src/reddit/components/ResizeSensor/index.tsx"),
 				F = s("./src/reddit/constants/componentSizes.ts"),
-				M = s("./src/reddit/constants/elementClassNames.ts"),
-				A = s("./src/reddit/contexts/InsideOverlay.tsx"),
+				A = s("./src/reddit/constants/elementClassNames.ts"),
+				M = s("./src/reddit/contexts/InsideOverlay.tsx"),
 				L = s("./src/reddit/selectors/platform.ts"),
 				B = s("./src/telemetry/helpers/sendEvent.ts"),
 				U = s("./src/telemetry/helpers/sendTiming.ts"),
@@ -3647,7 +3647,7 @@
 					}, d.a.createElement("div", {
 						className: this.hiddenChildren[e.id] ? W.a.Hidden : void 0
 					}, e.render({
-						className: M.k,
+						className: A.k,
 						height: e.estHeight,
 						placeholderRecommended: !1,
 						remeasure: this.remeasureChild,
@@ -3667,7 +3667,7 @@
 					return void 0 === e.onLoadMore || "loadMoreToken" in e
 				}
 			}
-			t.b = G(Object(A.b)(ce))
+			t.b = G(Object(M.b)(ce))
 		},
 		"./src/reddit/components/Scroller/getDocumentTop.ts": function(e, t, s) {
 			"use strict";
@@ -6537,4 +6537,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.3725bee2fc97a7cd11a9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.c5820a30b43cef5e11ad.js.map

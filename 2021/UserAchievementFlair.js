@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/UserAchievementFlair.2444ee32897c97722e24.js
-// Retrieved at 12/6/2021, 12:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/UserAchievementFlair.893ea2b822ca58e0f94d.js
+// Retrieved at 12/6/2021, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["UserAchievementFlair"], {
 		"./src/reddit/components/Econ/PowerupsFlair/HoverPopup.m.less": function(e, t, n) {
@@ -56,7 +56,7 @@
 						subredditId: t,
 						userId: n
 					})),
-					g = Object(o.e)(e => Object(h.P)(e, {
+					g = Object(o.e)(e => Object(h.R)(e, {
 						subredditId: t
 					})),
 					I = Object(o.d)(),
@@ -835,9 +835,9 @@
 			})), n.d(t, "i", (function() {
 				return z
 			})), n.d(t, "F", (function() {
-				return U
-			})), n.d(t, "B", (function() {
 				return R
+			})), n.d(t, "B", (function() {
+				return U
 			})), n.d(t, "H", (function() {
 				return q
 			})), n.d(t, "p", (function() {
@@ -1041,13 +1041,13 @@
 				z = (e, {
 					draftKey: t
 				}) => e.features.comments.drafts[t],
-				U = (e, {
+				R = (e, {
 					commentId: t
 				}) => {
 					const n = t ? e.features.comments.submit.error[t] : void 0;
 					return n && n.fields ? n.fields.map(e => e.msg) : void 0
 				},
-				R = (e, {
+				U = (e, {
 					commentId: t
 				}) => !!t && e.features.comments.submit.pending[t],
 				q = (e, {
@@ -1056,7 +1056,7 @@
 				X = e => e.features.comments.visitHighlightFilter,
 				Q = (e, t) => {
 					const n = Object(m.b)(e, t);
-					if (n) return Object(i.U)(e, n)
+					if (n) return Object(i.W)(e, n)
 				},
 				W = (e, {
 					commentId: t
@@ -1074,4 +1074,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UserAchievementFlair.2444ee32897c97722e24.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UserAchievementFlair.893ea2b822ca58e0f94d.js.map

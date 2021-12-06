@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.131ece5f2a5c93e7d2d1.js
-// Retrieved at 12/6/2021, 12:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.0cc22449efe55406e847.js
+// Retrieved at 12/6/2021, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~Subreddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, r) {
@@ -638,14 +638,14 @@
 					shouldShowPresenceIndicator: C,
 					user: T,
 					userName: D,
-					isProfileAvatarChangeFixEnabled: A,
-					...U
-				} = e, w = !!i && Object(b.e)(i) === D, R = w ? i : T, M = R && R.accountIcon || a, L = T ? T.isNSFW : E, H = Object(u.a)(M) && !O, B = H ? o.a.createElement(p.a, {
+					isProfileAvatarChangeFixEnabled: U,
+					...w
+				} = e, A = !!i && Object(b.e)(i) === D, R = A ? i : T, M = R && R.accountIcon || a, L = T ? T.isNSFW : E, H = Object(u.a)(M) && !O, B = H ? o.a.createElement(p.a, {
 					headshot: M,
 					className: e.className
-				}) : o.a.createElement(f.b, S({}, U, {
+				}) : o.a.createElement(f.b, S({}, w, {
 					iconUrl: O && r ? "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_3.png" : M,
-					isCurrentUser: w,
+					isCurrentUser: A,
 					isNSFW: L
 				})), [F, G] = Object(s.useState)(!1), W = Object(s.useMemo)(() => ({
 					input: {
@@ -675,7 +675,7 @@
 					className: Object(n.a)(v.a.userIconWrapper, {
 						[v.a.nftUserIcon]: g,
 						[v.a.hasHeadShotWrapper]: H,
-						[v.a.isProfileIcon]: N && A
+						[v.a.isProfileIcon]: N && U
 					}),
 					ref: K
 				}, g && o.a.createElement(h.a, {
@@ -979,11 +979,11 @@
 			})), r.d(t, "c", (function() {
 				return D
 			})), r.d(t, "l", (function() {
-				return A
-			})), r.d(t, "p", (function() {
 				return U
-			})), r.d(t, "i", (function() {
+			})), r.d(t, "p", (function() {
 				return w
+			})), r.d(t, "i", (function() {
+				return A
 			})), r.d(t, "j", (function() {
 				return R
 			})), r.d(t, "g", (function() {
@@ -1140,7 +1140,7 @@
 							L(t);
 							break;
 						case o.Mb.PROFILE_MODERATION:
-							f && U(t, !0);
+							f && w(t, !0);
 							break;
 						case o.Mb.SETTINGS: {
 							const s = e;
@@ -1150,7 +1150,7 @@
 						case o.Mb.POST_CREATION:
 							if (f && u) {
 								const e = Object(h.a)(u);
-								Object(_.a)(A(e, r, n)(t))
+								Object(_.a)(U(e, r, n)(t))
 							}
 							break;
 						case o.Mb.POST_DRAFT: {
@@ -1177,7 +1177,7 @@
 							f && M(t);
 							break;
 						case o.Mb.MODERATION_PAGES:
-							f && w(t, !0, u ? u.subredditName : null, u ? u.profileName : null);
+							f && A(t, !0, u ? u.subredditName : null, u ? u.profileName : null);
 							break;
 						case o.Mb.COLLECTION_COMMENTS:
 							f && $(t, !0);
@@ -1365,7 +1365,7 @@
 					};
 					return r && (d.comment = E.comment(c, r)), d
 				},
-				A = (e, t, r) => n => {
+				U = (e, t, r) => n => {
 					const s = n.creations.api.page.fetched[e],
 						o = n.platform.currentPage ? n.platform.currentPage.queryParams.source_id : void 0;
 					return {
@@ -1383,7 +1383,7 @@
 						adblock: E.adblock(n)
 					}
 				},
-				U = (e, t) => {
+				w = (e, t) => {
 					Object(_.a)({
 						source: "global",
 						action: "view",
@@ -1394,7 +1394,7 @@
 						})
 					})
 				},
-				w = (e, t, r, n) => {
+				A = (e, t, r, n) => {
 					Object(_.a)({
 						source: "global",
 						action: "view",
@@ -1404,7 +1404,7 @@
 							success: t
 						}),
 						profile: E.profileById(e, Object(f.m)(e, n)),
-						subreddit: E.subredditById(e, Object(O.A)(e, r)),
+						subreddit: E.subredditById(e, Object(O.C)(e, r)),
 						userSubreddit: E.userSubreddit(e),
 						adblock: E.adblock(e)
 					})
@@ -1416,7 +1416,7 @@
 						noun: "screen",
 						...y(e),
 						profile: E.profileById(e, Object(f.m)(e, r)),
-						subreddit: E.subredditById(e, Object(O.A)(e, t)),
+						subreddit: E.subredditById(e, Object(O.C)(e, t)),
 						userSubreddit: E.userSubreddit(e),
 						adblock: E.adblock(e)
 					})
@@ -1651,11 +1651,11 @@
 			})), r.d(t, "n", (function() {
 				return D
 			})), r.d(t, "o", (function() {
-				return A
-			})), r.d(t, "b", (function() {
 				return U
-			})), r.d(t, "d", (function() {
+			})), r.d(t, "b", (function() {
 				return w
+			})), r.d(t, "d", (function() {
+				return A
 			})), r.d(t, "i", (function() {
 				return R
 			})), r.d(t, "k", (function() {
@@ -1961,7 +1961,7 @@
 					},
 					post: d.post(s, t)
 				}),
-				A = (e, t, r) => n => ({
+				U = (e, t, r) => n => ({
 					...l(n),
 					source: u.SEARCH,
 					action: "click",
@@ -1976,7 +1976,7 @@
 					},
 					[e]: d[e](n)
 				}),
-				U = (e, t) => r => ({
+				w = (e, t) => r => ({
 					...l(r, t),
 					source: u.SEARCH,
 					action: e,
@@ -1985,7 +1985,7 @@
 					actionInfo: d.actionInfo(r),
 					search: d.search(r, t)
 				}),
-				w = e => ({
+				A = e => ({
 					action: o.c.DISABLE,
 					noun: "subreddit_search",
 					source: "search",
@@ -2244,4 +2244,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.131ece5f2a5c93e7d2d1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.0cc22449efe55406e847.js.map

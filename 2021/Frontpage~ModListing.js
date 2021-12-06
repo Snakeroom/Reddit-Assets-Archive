@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~ModListing.bd54f4da13a2694bf95c.js
-// Retrieved at 12/6/2021, 12:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~ModListing.579651aea55842b052aa.js
+// Retrieved at 12/6/2021, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~ModListing"], {
 		"./src/reddit/actions/focusedVerticals/index.ts": function(e, t, n) {
@@ -1577,7 +1577,7 @@
 				subredditId: e
 			}) => {
 				const t = Object(u.a)(),
-					n = Object(a.e)(t => Object(b.P)(t, {
+					n = Object(a.e)(t => Object(b.R)(t, {
 						subredditId: e
 					})),
 					h = !!n;
@@ -2122,7 +2122,7 @@
 						listingName: n,
 						inSubredditOrProfile: s
 					}) => Object(_.E)(e, t, n, s)),
-					subredditsById: S.W,
+					subredditsById: S.Y,
 					viewportDataLoaded: k.a,
 					pageReferrer: m.T,
 					postListPlaceholderComponent: () => f.a,
@@ -2733,7 +2733,7 @@
 			const c = (e, t) => {
 					const n = e.focusedVerticals.interactedSubredditIds && e.focusedVerticals.interactedSubredditIds[t];
 					if (n) {
-						const t = Object(a.P)(e, {
+						const t = Object(a.R)(e, {
 							subredditId: n
 						});
 						return t && t.displayText || ""
@@ -2746,14 +2746,14 @@
 				p = Object(s.a)((e, t) => {
 					const n = m(e, t);
 					if (!n) return u;
-					const s = Object(a.T)(e, {
+					const s = Object(a.V)(e, {
 						subredditName: n.name
 					});
 					return s && s.postIds && s.postIds.length ? s.postIds : u
 				}),
 				m = (e, t) => {
 					const n = e.focusedVerticals.recommendedSubredditIds && e.focusedVerticals.recommendedSubredditIds[t];
-					return n ? Object(a.P)(e, {
+					return n ? Object(a.R)(e, {
 						subredditId: n
 					}) : null
 				},
@@ -2820,4 +2820,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing.bd54f4da13a2694bf95c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing.579651aea55842b052aa.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.d08925f18a0d1808254d.js
-// Retrieved at 12/6/2021, 12:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.25697e38259dc1009ca2.js
+// Retrieved at 12/6/2021, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, r) {
@@ -798,7 +798,7 @@
 						subredditName: a
 					};
 					if (await r(Object(c.postCreationPageDataRequested)(v)), m || !Object(f.C)(o)) return r(P(e, j));
-					const E = e.allowedPostTypes || Object(O.u)(s(), {
+					const E = e.allowedPostTypes || Object(O.v)(s(), {
 						subredditName: a
 					});
 					if (!E) return void r(P(e, j));
@@ -1028,7 +1028,7 @@
 					let n = j.f;
 					const i = r();
 					if (e.subredditId) {
-						const t = Object(x.P)(i, {
+						const t = Object(x.R)(i, {
 								subredditId: e.subredditId
 							}),
 							r = Object(C.p)(i, {
@@ -1266,7 +1266,7 @@
 							type: (e || []).join(","),
 							b: !0
 						},
-						B = E && Object(h.A)(r(), E),
+						B = E && Object(h.C)(r(), E),
 						q = P ? null === (y = Object(f.d)(_, {
 							multiredditName: P,
 							username: S
@@ -1781,7 +1781,7 @@
 					{
 						currentUser: r
 					} = Object(d.a)(),
-					s = Object(i.e)(e => t ? Object(l.H)(e, {
+					s = Object(i.e)(e => t ? Object(l.J)(e, {
 						identifier: t.belongsTo
 					}) : null),
 					n = (null == t ? void 0 : t.belongsTo.type) === o.a.SUBREDDIT ? s : null,
@@ -2624,4 +2624,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.d08925f18a0d1808254d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.25697e38259dc1009ca2.js.map

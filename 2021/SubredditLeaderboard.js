@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.e76dba9bf2b97f7eb392.js
-// Retrieved at 12/6/2021, 12:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.be0cd4643d8fd6fff21a.js
+// Retrieved at 12/6/2021, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/times.js": function(e, t, n) {
@@ -816,8 +816,8 @@
 				}).apply(this, arguments)
 			}
 			const E = Object(i.c)({
-					isInLeaderboardDetailJoinOptimizationsExperiment: e => !(!Object(f.h)(e) || !Object(y.a)(e) && !Object(y.c)(e)),
-					isInLeaderboardEntryJoinOptimizationsExperiment: e => !(!Object(f.g)(e) || !Object(y.a)(e) && !Object(y.d)(e))
+					isInLeaderboardDetailJoinOptimizationsExperiment: e => !(!Object(f.h)(e) || !Object(y.a)(e) && !Object(y.d)(e)),
+					isInLeaderboardEntryJoinOptimizationsExperiment: e => !(!Object(f.g)(e) || !Object(y.a)(e) && !Object(y.e)(e))
 				}),
 				x = Object(a.b)(E, e => ({
 					updateSubredditModels: t => e(Object(o.a)({
@@ -2049,25 +2049,25 @@
 				D = n("./src/reddit/models/GoodContent/index.ts"),
 				F = n("./src/reddit/selectors/experiments/joinOptimizations.ts"),
 				W = n("./src/reddit/selectors/platform.ts"),
-				R = n("./src/reddit/selectors/subreddit.ts"),
-				M = n("./src/reddit/selectors/subredditLeaderboard.ts"),
+				M = n("./src/reddit/selectors/subreddit.ts"),
+				R = n("./src/reddit/selectors/subredditLeaderboard.ts"),
 				A = n("./src/reddit/selectors/user.ts");
 			const G = 25,
 				z = .5,
 				H = Object(d.c)({
 					hasPreviousPage: (e, {
 						categoryId: t
-					}) => Object(M.c)(e, t),
+					}) => Object(R.c)(e, t),
 					hasNextPage: (e, {
 						categoryId: t
-					}) => Object(M.b)(e, t),
+					}) => Object(R.b)(e, t),
 					isMod: A.L,
 					rankings: (e, {
 						categoryId: t
-					}) => Object(R.K)(e, t),
-					subreddits: R.W,
-					isInLeaderboardDetailJoinOptimizationsExperiment: e => !(!Object(W.h)(e) || !Object(F.a)(e) && !Object(F.c)(e)),
-					isInLeaderboardEntryJoinOptimizationsExperiment: e => !(!Object(W.g)(e) || !Object(F.a)(e) && !Object(F.d)(e))
+					}) => Object(M.M)(e, t),
+					subreddits: M.Y,
+					isInLeaderboardDetailJoinOptimizationsExperiment: e => !(!Object(W.h)(e) || !Object(F.a)(e) && !Object(F.d)(e)),
+					isInLeaderboardEntryJoinOptimizationsExperiment: e => !(!Object(W.g)(e) || !Object(F.a)(e) && !Object(F.e)(e))
 				}),
 				J = Object(o.b)(H, e => ({
 					fetchMoreSubreddits: (t, n) => e(Object(L.b)(t, n))
@@ -2076,7 +2076,7 @@
 				constructor() {
 					super(...arguments), this.fetchMoreSubreddits = e => {
 						const t = this.makeFetchVariables(),
-							n = Object(M.d)(this.props.categoryId, this.props.categoryName);
+							n = Object(R.d)(this.props.categoryId, this.props.categoryName);
 						e.isIntersecting && t.after && this.props.fetchMoreSubreddits(t, n)
 					}, this.sendLeaderboardSubredditEventClick = e => this.props.sendEvent(Object(y.f)(e, this.props.categoryName || p.e)), this.renderSubredditRankItemPlaceholders = () => i.a.createElement(i.a.Fragment, null, T()(5, e => i.a.createElement(B.a, {
 						key: e,
@@ -2148,9 +2148,9 @@
 				}
 			}
 			var q = Object(u.c)(J(Q)),
-				K = n("./node_modules/react-router-dom/esm/react-router-dom.js"),
-				U = n("./src/reddit/components/CategoryPickerWidget/index.m.less"),
-				Z = n.n(U);
+				U = n("./node_modules/react-router-dom/esm/react-router-dom.js"),
+				K = n("./src/reddit/components/CategoryPickerWidget/index.m.less"),
+				Z = n.n(K);
 
 			function V() {
 				return (V = Object.assign || function(e) {
@@ -2169,7 +2169,7 @@
 					isActive: s,
 					tabIndex: a
 				} = e, o = Object(c.a)(Z.a.categoryLink, s && Z.a.active, r);
-				return i.a.createElement("li", null, i.a.createElement(K.a, V({}, t.anchorProps, {
+				return i.a.createElement("li", null, i.a.createElement(U.a, V({}, t.anchorProps, {
 					className: o,
 					"data-active": s,
 					onMouseDown: () => e.onSendEventClick(t.name),
@@ -2460,4 +2460,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.e76dba9bf2b97f7eb392.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.be0cd4643d8fd6fff21a.js.map

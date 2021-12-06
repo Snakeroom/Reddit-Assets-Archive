@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FlairEdit.759b0e3c33b198a1c24b.js
-// Retrieved at 12/2/2021, 10:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FlairEdit.c1052e2180467602d3b2.js
+// Retrieved at 12/6/2021, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FlairEdit"], {
 		"./node_modules/draft-js/dist/Draft.css": function(e, t, o) {},
@@ -79,7 +79,7 @@
 			})), o.d(t, "f", (function() {
 				return k
 			})), o.d(t, "a", (function() {
-				return R
+				return N
 			})), o.d(t, "q", (function() {
 				return L
 			})), o.d(t, "p", (function() {
@@ -152,10 +152,10 @@
 				D = "GET_ALL_EMOJIS_LOADED",
 				k = "GET_ALL_EMOJIS_FAILED",
 				P = Object(m.a)(C),
-				F = Object(m.a)(D),
-				N = Object(m.a)(k),
-				R = "STRUCTURED_STYLES__EMOJIS_ENABLED_SETTING_LOADED",
-				A = Object(m.a)(R),
+				R = Object(m.a)(D),
+				F = Object(m.a)(k),
+				N = "STRUCTURED_STYLES__EMOJIS_ENABLED_SETTING_LOADED",
+				A = Object(m.a)(N),
 				M = e => ({
 					text: s.fbt._("Failed to save emoji", null, {
 						hk: "3i6FC2"
@@ -170,7 +170,7 @@
 					subredditId: t
 				}) => async (o, s, i) => {
 					const n = s(),
-						p = Object(y.P)(n, {
+						p = Object(y.R)(n, {
 							subredditId: t
 						}).name;
 					o(Object(u.k)(e));
@@ -208,7 +208,7 @@
 						subredditId: l,
 						emojiName: p,
 						settings: m
-					} = e, f = Object(j.a)(n.url), g = s(), b = Object(y.P)(g, {
+					} = e, f = Object(j.a)(n.url), g = s(), b = Object(y.R)(g, {
 						subredditId: l
 					}).name, x = await (async (e, t, o, s, i) => Object(a.a)(Object(c.a)(e, [d.a]), {
 						endpoint: `${e.apiUrl}/api/v1/${t}/emoji.json`,
@@ -266,18 +266,18 @@
 				}) => {
 					const i = o();
 					if (Object(O.a)(i, e)) return;
-					const n = Object(y.P)(i, {
+					const n = Object(y.R)(i, {
 						subredditId: e
 					}).name;
 					t(P(e));
 					const r = await p(s(), n);
 					if (r.ok) {
 						const o = r.body;
-						t(F({
+						t(R({
 							subredditId: e,
 							data: o
 						}))
-					} else t(N({
+					} else t(F({
 						subredditId: e,
 						error: r.error
 					}))
@@ -289,7 +289,7 @@
 					apiContext: n
 				}) => {
 					const l = i(),
-						p = Object(y.P)(l, {
+						p = Object(y.R)(l, {
 							subredditId: t
 						}).name,
 						m = await (async (e, t, o) => Object(a.a)(Object(c.a)(e, [d.a]), {
@@ -317,7 +317,7 @@
 					apiContext: n
 				}) => {
 					const l = i(),
-						p = Object(y.P)(l, {
+						p = Object(y.R)(l, {
 							subredditId: e
 						}).name;
 					if ((await (async (e, t, o) => Object(a.a)(Object(c.a)(e, [d.a]), {
@@ -342,7 +342,7 @@
 					apiContext: n
 				}) => {
 					const l = i(),
-						p = Object(y.P)(l, {
+						p = Object(y.R)(l, {
 							subredditId: e
 						}).name;
 					(await (async (e, t, o) => Object(a.a)(Object(c.a)(e, [d.a]), {
@@ -362,7 +362,7 @@
 					apiContext: p
 				}) => {
 					const m = l(),
-						u = Object(y.P)(m, {
+						u = Object(y.R)(m, {
 							subredditId: i
 						}).name;
 					(await (async (e, t, o, s) => Object(a.a)(Object(c.a)(e, [d.a]), {
@@ -507,9 +507,9 @@
 					hk: "2TSLl5"
 				})))
 			}
-			var F = o("./src/reddit/icons/svgs/Search/index.tsx"),
-				N = o("./src/reddit/controls/EmojiPicker/SearchBar/index.m.less"),
-				R = o.n(N);
+			var R = o("./src/reddit/icons/svgs/Search/index.tsx"),
+				F = o("./src/reddit/controls/EmojiPicker/SearchBar/index.m.less"),
+				N = o.n(F);
 
 			function A() {
 				return (A = Object.assign || function(e) {
@@ -528,13 +528,13 @@
 					...s
 				} = e;
 				return a.a.createElement("div", {
-					className: Object(p.a)(R.a.searchBar, t)
-				}, a.a.createElement(F.a, {
-					className: R.a.searchIcon
+					className: Object(p.a)(N.a.searchBar, t)
+				}, a.a.createElement(R.a, {
+					className: N.a.searchIcon
 				}), a.a.createElement("div", {
-					className: R.a.inputWrapper
+					className: N.a.inputWrapper
 				}, a.a.createElement("input", A({
-					className: R.a.input,
+					className: N.a.input,
 					ref: o,
 					placeholder: h.fbt._("Search for emoji", null, {
 						hk: "IncEm"
@@ -876,8 +876,8 @@
 					}
 				},
 				Pe = "handled",
-				Fe = "not-handled";
-			class Ne extends a.a.Component {
+				Re = "not-handled";
+			class Fe extends a.a.Component {
 				constructor(e) {
 					super(e), this.setEditorRef = e => this.editorRef = e, this.containerRef = null, this.setContainerRef = e => this.containerRef = e, this.setEmojiDropdownApi = e => this.emojiDropdownApi = e, this.focus = () => this.editorRef && this.editorRef.focus(), this.handleBeforeInput = e => {
 						const {
@@ -891,7 +891,7 @@
 							if (e && e.name.toLowerCase() === t) return this.handleSelectEmoji(e), Pe
 						}
 						const i = ke(t, e);
-						return i ? (this.onChange(i), Pe) : Fe
+						return i ? (this.onChange(i), Pe) : Re
 					}, this.checkEditorStateForEmojis = e => {
 						const t = Ce(e);
 						this.setState({
@@ -919,7 +919,7 @@
 							maxLength: i
 						} = this.props, n = this.editorRef.getClipboard(), r = o.getSelection(), a = e.length - (r.getEndOffset() - r.getStartOffset()), c = o.getCurrentContent().getPlainText().length + a;
 						if (i && c > i) return Pe;
-						if (n && n.first().getText() === e) return Fe;
+						if (n && n.first().getText() === e) return Re;
 						const l = q(e);
 						let d = o.getCurrentContent();
 						d = s.Modifier.replaceText(d, r, l);
@@ -989,7 +989,7 @@
 					})))
 				}
 			}
-			var Re = Ne,
+			var Ne = Fe,
 				Ae = o("./src/reddit/helpers/flair.ts"),
 				Me = o("./src/reddit/icons/svgs/Help/index.tsx"),
 				Le = o("./src/reddit/icons/svgs/Smile/index.tsx"),
@@ -1251,7 +1251,7 @@
 						className: Object(p.a)(We.a.EditorWrapper, u ? We.a.hasError : null, r ? We.a.isCompact : null),
 						ref: this.wrapperRef,
 						id: o
-					}, a.a.createElement(Re, {
+					}, a.a.createElement(Ne, {
 						ref: this.richTextInputRef,
 						editorState: this.state.editorState,
 						flairTemplateType: n,
@@ -1766,7 +1766,7 @@
 				}),
 				m = Object(n.a)(p, a.c, (e, t) => t.isFlairModOnly, (e, t) => t.flairTemplateType, (e, t, o, s) => e.filter(e => !(e.modFlairOnly && !t || e.modFlairOnly && !o) && (!(!e.userFlairAllowed && s === r.d.UserFlair) && !(!e.postFlairAllowed && s === r.d.LinkFlair)))),
 				u = Object(n.a)(d, (e, t) => t.subredditId, (e, t) => Object.keys(e[t].snoomojis)),
-				h = (e, t) => Object(c.s)(e, {
+				h = (e, t) => Object(c.t)(e, {
 					subredditName: t
 				}).emojisEnabled,
 				f = {
@@ -1780,4 +1780,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FlairEdit.759b0e3c33b198a1c24b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FlairEdit.c1052e2180467602d3b2.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditTopContent.64a23b90efdd6cf2d1c5.js
-// Retrieved at 12/6/2021, 12:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditTopContent.d199dd14a4f7efc2dfe9.js
+// Retrieved at 12/6/2021, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditTopContent"], {
 		"./src/lib/getShortenedLink.ts": function(e, t, s) {
@@ -1491,7 +1491,8 @@
 						isTournamentPredictionPostV2: m
 					} = this.props, p = a === y.b.Left, u = Object(O.b)(c), h = l ? u.filter(e => e.type === y.f.Nsfw || e.type === y.f.Spoiler) : p ? u.filter(e => Object(g.q)(e.type)) : [], b = l ? [] : p ? u.filter(e => !Object(g.q)(e.type)) : u, x = !r && !n, f = !s && h && h.length > 0 && x, C = !s && b && b.length > 0 && x, E = !(m && (null === (e = c.pollData) || void 0 === e ? void 0 : e.isPrediction));
 					return i.a.createElement("div", {
-						className: Object(d.a)(W.a.Component, t, c.id)
+						className: Object(d.a)(W.a.Component, t, c.id),
+						ref: this.props.innerRef
 					}, !l && f && i.a.createElement(O.a, {
 						isFlairFilter: !0,
 						titleFlair: h,
@@ -1920,4 +1921,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.64a23b90efdd6cf2d1c5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.d199dd14a4f7efc2dfe9.js.map

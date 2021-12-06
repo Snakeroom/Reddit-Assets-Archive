@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.3d310496b0e6ea0f8701.js
-// Retrieved at 12/2/2021, 10:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.7b3a3785e4c1849b0bc8.js
+// Retrieved at 12/6/2021, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-ClaimPointsModal"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, n) {
@@ -49,9 +49,9 @@
 			})), n.d(t, "d", (function() {
 				return B
 			})), n.d(t, "e", (function() {
-				return D
-			})), n.d(t, "h", (function() {
 				return R
+			})), n.d(t, "h", (function() {
+				return D
 			}));
 			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
 				r = n("./src/lib/makeActionCreator/index.ts"),
@@ -128,7 +128,7 @@
 						pollId: e,
 						error: o.error || o.errors[0].message
 					})), Object(O.a)(n, o.error || o.errors[0].messsage)
-				}, D = (e, t) => async (n, r, {
+				}, R = (e, t) => async (n, r, {
 					apiContext: i
 				}) => {
 					var l;
@@ -161,7 +161,7 @@
 					})), t && n(Object(o.f)())) : (n(I({
 						error: m.error
 					})), Object(O.a)(n, m.error))
-				}, R = e => async (t, n, {
+				}, D = e => async (t, n, {
 					apiContext: s
 				}) => {
 					t(S());
@@ -291,7 +291,7 @@
 					pointsDetails: n
 				} = e, r = Object(o.e)(t => Object(E.b)(t, e)), i = r && r.pointsToClaim;
 				if (!i) throw new Error("Expected claim amount to approve");
-				const c = Object(o.e)(t => Object(M.P)(t, e));
+				const c = Object(o.e)(t => Object(M.R)(t, e));
 				return a.a.createElement(S.a, {
 					subredditId: t,
 					image: a.a.createElement(y.b, {
@@ -307,7 +307,7 @@
 					pointsAmount: i
 				})
 			}
-			const D = e => a.a.createElement(k.b, {
+			const R = e => a.a.createElement(k.b, {
 				values: [
 					[s.fbt._("Karma earned", null, {
 						hk: "46NXlD"
@@ -343,7 +343,7 @@
 						pointsDetails: y,
 						subredditId: n
 					}),
-					approvalDetails: a.a.createElement(D, {
+					approvalDetails: a.a.createElement(R, {
 						transaction: M
 					}),
 					onClose: t,
@@ -1026,4 +1026,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.3d310496b0e6ea0f8701.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.7b3a3785e4c1849b0bc8.js.map

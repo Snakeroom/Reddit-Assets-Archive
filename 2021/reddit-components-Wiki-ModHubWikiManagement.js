@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.927c049c916366814166.js
-// Retrieved at 12/2/2021, 6:50:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.41a99f4aac4747912eed.js
+// Retrieved at 12/6/2021, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Wiki-ModHubWikiManagement"], {
 		"./src/reddit/components/BannedUserList/AddBannedUserModal/DaysInput.tsx": function(e, t, n) {
@@ -82,7 +82,7 @@
 					hk: "2To19l"
 				})],
 				g = Object(a.c)({
-					subredditRules: m.O
+					subredditRules: m.Q
 				}),
 				k = Object(o.b)(g);
 			class C extends r.a.Component {
@@ -282,8 +282,8 @@
 				A = n("./src/higherOrderComponents/asModal/index.tsx"),
 				H = n("./src/reddit/components/CharacterCountdown/index.tsx"),
 				F = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
-				X = n("./src/reddit/controls/TextButton/index.tsx"),
-				Q = n("./src/reddit/helpers/isValidUsername/index.tsx"),
+				Q = n("./src/reddit/controls/TextButton/index.tsx"),
+				X = n("./src/reddit/helpers/isValidUsername/index.tsx"),
 				V = n("./src/reddit/helpers/normalizeUsername/index.tsx"),
 				q = n("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
 				Z = n("./src/reddit/models/SubredditModeration/index.ts"),
@@ -351,7 +351,7 @@
 					} = this;
 					return s.a.createElement(F.e, null, s.a.createElement(F.i, null, s.a.createElement(q.a, null, s.a.createElement(F.q, null, v.fbt._("Ban wiki contributor", null, {
 						hk: "1d5Hrk"
-					}), e.bannedUser && `: u/${e.bannedUser.username}`), s.a.createElement(X.a, {
+					}), e.bannedUser && `: u/${e.bannedUser.username}`), s.a.createElement(Q.a, {
 						onClick: e.toggleModal
 					}, s.a.createElement(F.b, null)))), s.a.createElement(F.l, null, !e.bannedUser && s.a.createElement(s.a.Fragment, null, s.a.createElement(F.h, null, s.a.createElement(F.k, null, v.fbt._("Enter username", null, {
 						hk: "2fknjy"
@@ -390,7 +390,7 @@
 					})), s.a.createElement(D.l, {
 						className: G.a.primaryButton,
 						onClick: this.onSubmit,
-						disabled: !Object(Q.a)(t.username)
+						disabled: !Object(X.a)(t.username)
 					}, v.fbt._("Ban user", null, {
 						hk: "w8Nwk"
 					}))))
@@ -567,7 +567,7 @@
 					} = this;
 					return s.a.createElement(F.e, null, s.a.createElement(F.i, null, s.a.createElement(q.a, null, s.a.createElement(F.q, null, v.fbt._("Add wiki contributor", null, {
 						hk: "4Df0lQ"
-					})), s.a.createElement(X.a, {
+					})), s.a.createElement(Q.a, {
 						onClick: e.toggleModal
 					}, s.a.createElement(F.b, null)))), s.a.createElement(F.l, null, s.a.createElement("div", {
 						className: de.a.inputLabel
@@ -587,7 +587,7 @@
 					})), s.a.createElement(D.l, {
 						className: de.a.primaryButton,
 						onClick: this.onSubmit,
-						disabled: !Object(Q.a)(t.username)
+						disabled: !Object(X.a)(t.username)
 					}, v.fbt._("Add user", null, {
 						hk: "28WQQq"
 					}))))
@@ -868,8 +868,8 @@
 			var Ae = De(Ie);
 			const He = Object(S.c)({
 				subredditSettings: (e, t) => {
-					const n = Object(Me.A)(e, t.subredditName);
-					return Object(Me.R)(e, n)
+					const n = Object(Me.C)(e, t.subredditName);
+					return Object(Me.T)(e, n)
 				},
 				wikiPageSettings: I.d
 			});
@@ -1007,7 +1007,7 @@
 					})))
 				}
 			}
-			var Xe = Object(_.b)(He, (e, {
+			var Qe = Object(_.b)(He, (e, {
 					subredditName: t,
 					wikiPageName: n
 				}) => ({
@@ -1018,8 +1018,8 @@
 						wikiPageName: n
 					}))
 				}))(Object(O.c)(Fe)),
-				Qe = n("./src/reddit/components/Wiki/ModHubWikiManagement/index.m.less"),
-				Ve = n.n(Qe);
+				Xe = n("./src/reddit/components/Wiki/ModHubWikiManagement/index.m.less"),
+				Ve = n.n(Xe);
 			const qe = Object(u.u)(),
 				Ze = () => {
 					document.body.scrollTop = 0, document.documentElement.scrollTop = 0
@@ -1067,7 +1067,7 @@
 								wikiPageName: h
 							});
 						case c.m.Settings:
-							if (h) return s.a.createElement(Xe, {
+							if (h) return s.a.createElement(Qe, {
 								subredditName: e.name,
 								wikiPageName: h
 							});
@@ -1202,4 +1202,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.927c049c916366814166.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.41a99f4aac4747912eed.js.map

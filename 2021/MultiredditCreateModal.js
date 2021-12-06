@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MultiredditCreateModal.a80a767f1e97cbd0ee8d.js
-// Retrieved at 12/2/2021, 10:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MultiredditCreateModal.90ad947aef0106e4d726.js
+// Retrieved at 12/6/2021, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MultiredditCreateModal"], {
 		"./src/reddit/actions/multireddit/index.ts": function(e, t, r) {
@@ -156,8 +156,8 @@
 				E = r("./src/reddit/selectors/multireddit.ts"),
 				w = r("./src/reddit/selectors/platform.ts"),
 				P = r("./src/reddit/selectors/subreddit.ts"),
-				q = r("./src/reddit/selectors/user.ts"),
-				I = r("./src/reddit/helpers/getTimeSortForListing/index.ts"),
+				I = r("./src/reddit/selectors/user.ts"),
+				q = r("./src/reddit/helpers/getTimeSortForListing/index.ts"),
 				L = r("./src/reddit/actions/multireddit/constants.ts");
 			const M = Object(c.a)(L.q),
 				R = Object(c.a)(L.r),
@@ -218,7 +218,7 @@
 					gqlContext: d
 				}) => {
 					const n = i();
-					if (!Object(q.k)(n)) return;
+					if (!Object(I.k)(n)) return;
 					if (!e && Object(E.h)(n) || Object(E.i)(n)) return;
 					r(A());
 					const a = await ((e, t) => Object(j.a)(e, {
@@ -243,7 +243,7 @@
 					apiContext: o
 				}) => {
 					const c = d(),
-						l = Object(q.k)(c);
+						l = Object(I.k)(c);
 					if (!l) return;
 					s(H());
 					const m = await ((e, t, r) => Object(f.a)(Object(h.a)(e, [x.a]), {
@@ -281,7 +281,7 @@
 					apiContext: r
 				}) => {
 					const i = t(),
-						s = Object(q.k)(i),
+						s = Object(I.k)(i),
 						n = Object(w.i)(i) ? Object(w.m)(i) : Object(w.b)(i),
 						o = n && n.routeMatch && n.routeMatch.match;
 					if (!o) return;
@@ -299,12 +299,12 @@
 						O = Object(l.a)(h, u, x),
 						j = b.A in x && x[b.A].toUpperCase() || "",
 						g = a.fc[j] || !1,
-						y = Object(q.k)(i);
+						y = Object(I.k)(i);
 					(f || y && y.displayText) && await e(Object(m.multiredditFeedRequested)(O, (f || y.displayText).toLowerCase(), p.toLowerCase(), {
 						...d()(x, b.l),
 						...d()(x, b.k),
 						sort: u,
-						t: Object(I.a)(u, g)
+						t: Object(q.a)(u, g)
 					}))
 				}, $ = Object(c.a)(L.k), B = Object(c.a)(L.l), V = Object(c.a)(L.m), X = ({
 					description: e,
@@ -315,7 +315,7 @@
 					apiContext: c
 				}) => {
 					const l = o(),
-						m = Object(q.k)(l);
+						m = Object(I.k)(l);
 					if (!m || !m.displayText) return;
 					const b = Object(N.h)((s || m.displayText).toLowerCase(), r.toLowerCase());
 					d(B());
@@ -361,7 +361,7 @@
 					apiContext: n
 				}) => {
 					const c = d(),
-						l = Object(q.k)(c);
+						l = Object(I.k)(c);
 					if (!l || c.multireddits.api.addSubreddit.pending) return;
 					s(Y({
 						name: t.name
@@ -380,7 +380,7 @@
 							method: a.jb.PUT
 						}))(n(), j, b);
 					if (g.ok) {
-						const d = Object(P.G)(c, {
+						const d = Object(P.I)(c, {
 								identifier: t
 							}) || e && e.id || "",
 							n = r.map(e => Object(N.h)(m, e));
@@ -420,7 +420,7 @@
 					apiContext: o
 				}) => {
 					const c = n(),
-						l = Object(q.k)(c);
+						l = Object(I.k)(c);
 					if (!l || !l.displayText || c.multireddits.api.removeSubreddit.pending) return;
 					d(re({
 						id: e
@@ -458,7 +458,7 @@
 					apiContext: s
 				}) => {
 					const d = r();
-					if (!Object(q.k)(d)) return;
+					if (!Object(I.k)(d)) return;
 					t(ae());
 					const o = await ((e, t) => Object(f.a)(Object(h.a)(e, [x.a]), {
 						endpoint: Object(O.a)(`${e.apiUrl}/api/multi${t}`),
@@ -478,7 +478,7 @@
 					apiContext: o
 				}) => {
 					const c = n();
-					if (!Object(q.K)(c)) return;
+					if (!Object(I.K)(c)) return;
 					d(ue());
 					const l = await (({
 						context: e,
@@ -522,14 +522,14 @@
 					gqlContext: d
 				}) => {
 					const n = s(),
-						a = Object(q.k)(n);
+						a = Object(I.k)(n);
 					if (!(t || a && a.displayText)) return;
 					const o = Object(N.h)(t || a.displayText, e),
 						c = n.multireddits.models[o];
 					if (!c || !c.subredditIds) return;
 					i(fe());
 					const l = r && r.reduce((e, t) => {
-							const r = Object(P.A)(n, t) || Object(P.B)(n, t);
+							const r = Object(P.C)(n, t) || Object(P.D)(n, t);
 							return r ? [...e, r] : e
 						}, []),
 						u = await ((e, t) => Object(j.a)(e, {
@@ -558,9 +558,9 @@
 			})), r.d(t, "multiredditFeedLoaded", (function() {
 				return P
 			})), r.d(t, "multiredditFeedFailed", (function() {
-				return q
-			})), r.d(t, "multiredditFeedRequested", (function() {
 				return I
+			})), r.d(t, "multiredditFeedRequested", (function() {
+				return q
 			})), r.d(t, "multiredditRequested", (function() {
 				return L
 			}));
@@ -594,8 +594,8 @@
 				E = r("./src/reddit/actions/pages/multireddit/constants.ts");
 			const w = Object(F.a)(E.c),
 				P = Object(F.a)(E.b),
-				q = Object(F.a)(E.a),
-				I = (e, t, r, s, d) => async (n, a, u) => {
+				I = Object(F.a)(E.a),
+				q = (e, t, r, s, d) => async (n, a, u) => {
 					const {
 						gqlContext: p
 					} = u, b = a();
@@ -617,7 +617,7 @@
 						F = `error-${e}`;
 					if (y.ok && _) {
 						const i = Object(O.a)(_);
-						if (!_.multireddit) return d && n(m.g(F)), void n(q({
+						if (!_.multireddit) return d && n(m.g(F)), void n(I({
 							...i,
 							error: {
 								type: l.I.NOT_FOUND_ERROR
@@ -645,7 +645,7 @@
 						buttonText: i.fbt._("Retry", null, {
 							hk: "1XMjgA"
 						}),
-						buttonAction: I(e, t, r, s, d)
+						buttonAction: q(e, t, r, s, d)
 					}))
 				}, L = (e, t) => async (r, i) => {
 					const {
@@ -685,7 +685,7 @@
 					if (F || g && !C && !t) return void(g && (r(u.m({
 						title: Object(_.f)(i(), m)
 					})), f.sidebarPromotedPosts.firstFetch || r(Object(S.b)(T.a.MULTIREDDIT))));
-					await r(I(O, o, s, {
+					await r(q(O, o, s, {
 						...d()(e.queryParams, b.l),
 						...d()(e.queryParams, b.k),
 						sort: c,
@@ -1266,4 +1266,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MultiredditCreateModal.a80a767f1e97cbd0ee8d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MultiredditCreateModal.90ad947aef0106e4d726.js.map

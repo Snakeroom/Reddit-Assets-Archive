@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/BannedUserModal.2bb2203db882e962afed.js
-// Retrieved at 12/2/2021, 10:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/BannedUserModal.db22efa4bc0914ec1e57.js
+// Retrieved at 12/6/2021, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["BannedUserModal"], {
 		"./src/reddit/actions/inContextModeration.ts": function(e, t, n) {
@@ -132,8 +132,8 @@
 						return e
 				}
 			};
-			const P = {};
-			var L = (e = P, t) => {
+			const L = {};
+			var P = (e = L, t) => {
 					switch (t.type) {
 						case j.n: {
 							const {
@@ -258,7 +258,7 @@
 					api: N,
 					fetchedTokens: B,
 					inContext: D,
-					loadMore: L,
+					loadMore: P,
 					models: q,
 					search: K,
 					userOrder: Q
@@ -382,10 +382,10 @@
 				}, ie = (e, t) => async (n, s) => {
 					const r = s();
 					await Promise.all([(async () => {
-						if (!Object(w.b)(u.a.BAN_USER)(r) && !Object(k.M)(r, {
+						if (!Object(w.b)(u.a.BAN_USER)(r) && !Object(k.O)(r, {
 								subredditId: e
 							})) {
-							const t = Object(k.P)(r, {
+							const t = Object(k.R)(r, {
 								subredditId: e
 							});
 							await n(Object(l.o)(t.name))
@@ -484,7 +484,7 @@
 					hk: "2To19l"
 				})],
 				f = Object(d.c)({
-					subredditRules: m.O
+					subredditRules: m.Q
 				}),
 				x = Object(o.b)(f);
 			class _ extends a.a.Component {
@@ -615,8 +615,8 @@
 				B = l.a.span("Bullet", O.a),
 				U = l.a.wrapped(T, "VisibilityNote", O.a),
 				D = l.a.wrapped(p.g, "ModalFooter", O.a),
-				P = l.a.div("FooterRow", O.a),
-				L = Object(d.c)({
+				L = l.a.div("FooterRow", O.a),
+				P = Object(d.c)({
 					apiRequestStates: w.a,
 					user(e, t) {
 						if (t.user) return t.user;
@@ -630,7 +630,7 @@
 						}) : void 0
 					}
 				}),
-				A = Object(o.b)(L, (e, {
+				A = Object(o.b)(P, (e, {
 					subredditId: t
 				}) => ({
 					onBanUser: (n, s, r, a, o, d, i) => e(Object(u.b)(t, {
@@ -765,9 +765,9 @@
 						isDurationPermanent: t.durationIsPermanent,
 						onChangeDuration: this.onChangeBanDuration,
 						togglePermanent: this.togglePermanent
-					})), a.a.createElement(D, null, a.a.createElement(P, null, a.a.createElement(N, null, s.fbt._("Note to include in ban message", null, {
+					})), a.a.createElement(D, null, a.a.createElement(L, null, a.a.createElement(N, null, s.fbt._("Note to include in ban message", null, {
 						hk: "44jlkB"
-					}), a.a.createElement(B, null, "•"))), a.a.createElement(P, null, a.a.createElement(p.t, {
+					}), a.a.createElement(B, null, "•"))), a.a.createElement(L, null, a.a.createElement(p.t, {
 						onChange: e => this.setState({
 							banMessage: e.currentTarget.value
 						}),
@@ -776,10 +776,10 @@
 						}),
 						value: t.banMessage,
 						"data-redditstyle": !0
-					})), a.a.createElement(P, null, a.a.createElement(m.a, {
+					})), a.a.createElement(L, null, a.a.createElement(m.a, {
 						maxChars: v,
 						text: t.banMessage
-					})), a.a.createElement(P, null, e.onUnbanUser ? a.a.createElement(R, {
+					})), a.a.createElement(L, null, e.onUnbanUser ? a.a.createElement(R, {
 						onClick: this.onRemove
 					}, a.a.createElement(I, null), s.fbt._("Unban", null, {
 						hk: "3zNsVi"
@@ -1138,4 +1138,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BannedUserModal.2bb2203db882e962afed.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BannedUserModal.db22efa4bc0914ec1e57.js.map

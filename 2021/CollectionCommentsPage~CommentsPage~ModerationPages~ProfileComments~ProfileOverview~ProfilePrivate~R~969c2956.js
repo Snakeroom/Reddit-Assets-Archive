@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.935b5718bd75220d65c1.js
-// Retrieved at 12/6/2021, 12:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.bedffdc7bd3e62c613c0.js
+// Retrieved at 12/6/2021, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956"], {
 		"./src/reddit/actions/eventPosts/index.ts": function(e, t, s) {
@@ -743,7 +743,7 @@
 					s(h());
 					const i = Date.now(),
 						c = e.replace("r/", ""),
-						p = Object(l.A)(r, c),
+						p = Object(l.C)(r, c),
 						m = await Object(a.b)(n(), {
 							subredditId: p,
 							options: t
@@ -2439,7 +2439,7 @@
 					collection: {
 						subredditId: t
 					}
-				}) => t ? Object(I.P)(e, {
+				}) => t ? Object(I.R)(e, {
 					subredditId: t
 				}) : void 0,
 				user: y.k
@@ -2780,7 +2780,7 @@
 			const E = (e, t = !1, s = o.UNSET) => `PostFlair__Modal-[postId: ${e}]-isOverlay[${t}]-position[${s}]`,
 				w = Object(c.c)({
 					flairData: O.d,
-					subreddit: v.P,
+					subreddit: v.R,
 					isMod: (e, t) => !!Object(C.m)(e, t)
 				});
 			class I extends i.a.Component {
@@ -4716,4 +4716,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.935b5718bd75220d65c1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.bedffdc7bd3e62c613c0.js.map

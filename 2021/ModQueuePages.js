@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.6a1aa39f44925976c1b6.js
-// Retrieved at 12/6/2021, 12:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.3bb78370732fdbacf43f.js
+// Retrieved at 12/6/2021, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1054,13 +1054,13 @@
 				J = n.n(X);
 			const {
 				fbt: q
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), K = () => o.a.createElement(E.a, {
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), G = () => o.a.createElement(E.a, {
 				className: J.a.crowdControlText
 			}, q._("Crowd Control", null, {
 				hk: "4WgEW"
 			}));
-			var G = n("./src/reddit/components/Comments/Comment/TopMeta/edited.m.less"),
-				z = n.n(G);
+			var K = n("./src/reddit/components/Comments/Comment/TopMeta/edited.m.less"),
+				z = n.n(K);
 			const {
 				fbt: Y
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), Z = ({
@@ -1320,7 +1320,7 @@
 					isLivestreaming: u,
 					renderedInOverlay: h,
 					collapsed: n
-				})), r && o.a.createElement(K, null), o.a.createElement(be, {
+				})), r && o.a.createElement(G, null), o.a.createElement(be, {
 					className: Ce.a.role,
 					comment: i,
 					subredditDisplayText: j,
@@ -1401,7 +1401,7 @@
 						comment: t
 					}) => !!Object(Oe.q)(e, t.subredditId, t.authorId).length,
 					subredditDisplayText: (e, t) => {
-						const n = Object(Ie.E)(e, {
+						const n = Object(Ie.G)(e, {
 							commentId: t.comment.id
 						});
 						return n ? n.displayText : ""
@@ -1491,7 +1491,7 @@
 					isStrong: !!m,
 					renderedInOverlay: j,
 					collapsed: s
-				}), r && o.a.createElement(K, null), r && o.a.createElement(E.c, {
+				}), r && o.a.createElement(G, null), r && o.a.createElement(E.c, {
 					className: Ne.a.metaText,
 					key: "crowdControlSeparator"
 				}), u && !S && o.a.createElement(Pe, {
@@ -1743,7 +1743,7 @@
 					comment: (e, t) => Object(y.b)(e, t),
 					commentPermalink: C.m,
 					flair: C.e,
-					subreddit: k.E
+					subreddit: k.G
 				}),
 				R = Object(o.b)(L, (e, {
 					commentId: t,
@@ -2864,8 +2864,8 @@
 				X = n("./src/reddit/components/ModQueueList/LayoutNavigation.m.less"),
 				J = n.n(X);
 			const q = Object(m.a)(h.a),
-				K = "MODQ--SUBREDDIT_FILTER_DROPDOWN",
-				G = "MODQ--POST_TYPE_FILTER_DROPDOWN",
+				G = "MODQ--SUBREDDIT_FILTER_DROPDOWN",
+				K = "MODQ--POST_TYPE_FILTER_DROPDOWN",
 				z = u.a.wrapped(f.a, "Inline", J.a),
 				Y = u.a.div("Filter", J.a),
 				Z = u.a.wrapped(b.a, "LayoutSwitch", J.a),
@@ -2894,8 +2894,8 @@
 					}
 				},
 				ee = Object(d.c)({
-					isPostTypeFilterDropdownOpen: Object(E.b)(G),
-					isSubredditFilterDropdownOpen: Object(E.b)(K),
+					isPostTypeFilterDropdownOpen: Object(E.b)(K),
+					isSubredditFilterDropdownOpen: Object(E.b)(G),
 					profile: (e, {
 						profileName: t
 					}) => t ? Object(g.j)(e, {
@@ -2903,7 +2903,7 @@
 					}) : null,
 					subreddit: (e, {
 						subredditName: t
-					}) => t ? Object(v.v)(e, {
+					}) => t ? Object(v.w)(e, {
 						subredditName: t
 					}) : null
 				}),
@@ -2916,9 +2916,9 @@
 			class ne extends a.a.Component {
 				constructor() {
 					super(...arguments), this.onOpenSubredditFilterDropdown = () => {
-						this.props.loadAllSubreddits(), this.props.onOpenDropdown(K), this.props.sendEventWithName("subreddit")
+						this.props.loadAllSubreddits(), this.props.onOpenDropdown(G), this.props.sendEventWithName("subreddit")
 					}, this.onOpenPostTypeFilterDropdown = () => {
-						this.props.onOpenDropdown(G), this.props.sendEventWithName("content_type")
+						this.props.onOpenDropdown(K), this.props.sendEventWithName("content_type")
 					}
 				}
 				render() {
@@ -2930,13 +2930,13 @@
 						hk: "2BGBVi"
 					});
 					return a.a.createElement(z, null, !e.hideSubredditFilter && a.a.createElement(a.a.Fragment, null, a.a.createElement(Y, {
-						id: K,
+						id: G,
 						onClick: this.onOpenSubredditFilterDropdown
 					}, t, a.a.createElement(x.a, {
 						name: "caret_down"
 					})), a.a.createElement(q, {
 						isOpen: e.isSubredditFilterDropdownOpen,
-						tooltipId: K
+						tooltipId: G
 					}, a.a.createElement(Q, {
 						profileName: e.profileName,
 						subredditName: e.subredditName
@@ -2945,13 +2945,13 @@
 							[J.a.filterMargin]: !e.hideSubredditFilter
 						})
 					}, a.a.createElement(Y, {
-						id: G,
+						id: K,
 						onClick: this.onOpenPostTypeFilterDropdown
 					}, n, a.a.createElement(x.a, {
 						name: "caret_down"
 					})), a.a.createElement(q, {
 						isOpen: e.isPostTypeFilterDropdownOpen,
-						tooltipId: G
+						tooltipId: K
 					}, a.a.createElement(S, {
 						postTypeFilter: e.postTypeFilter,
 						sendEventWithName: e.sendEventWithName
@@ -3083,8 +3083,8 @@
 				X = n("./src/reddit/components/Comments/CompactUnthreadedComment/index.m.less"),
 				J = n.n(X);
 			const q = u.a.div("LeftRail", J.a),
-				K = u.a.wrapped(H.a, "BulkActionCheckbox", J.a),
-				G = u.a.div("CommentColumn", J.a),
+				G = u.a.wrapped(H.a, "BulkActionCheckbox", J.a),
+				K = u.a.div("CommentColumn", J.a),
 				z = u.a.div("VoteColumn", J.a),
 				Y = u.a.wrapped(N.a, "ModToolsFlatlist", J.a),
 				Z = u.a.wrapped(W.a, "Votes", J.a),
@@ -3119,7 +3119,7 @@
 						className: Object(f.a)({
 							[J.a.hasBorder]: !!n.bannedBy || Object(Q.a)(n)
 						})
-					}, m && d.a.createElement(K, {
+					}, m && d.a.createElement(G, {
 						isCheckboxSelected: o,
 						toggleCheckbox: u
 					})), d.a.createElement(z, null, d.a.createElement(Z, {
@@ -3127,7 +3127,7 @@
 						model: n,
 						onVoteClick: i,
 						scoreClassName: J.a.score
-					})), d.a.createElement(G, null, d.a.createElement(te, null, n.postTitle && d.a.createElement(ee, null, n.postTitle), n.postAuthor && d.a.createElement(B.a, {
+					})), d.a.createElement(K, null, d.a.createElement(te, null, n.postTitle && d.a.createElement(ee, null, n.postTitle), n.postAuthor && d.a.createElement(B.a, {
 						comment: n
 					})), d.a.createElement($, null, d.a.createElement(L.a, {
 						comment: n
@@ -3254,8 +3254,8 @@
 				Xe = n("./src/higherOrderComponents/asTooltip.tsx"),
 				Je = n("./src/reddit/actions/modal.ts"),
 				qe = n("./src/reddit/components/PostFlairPicker/index.tsx"),
-				Ke = n("./src/reddit/components/RestrictedFlatlistButton/index.tsx"),
-				Ge = n("./src/reddit/controls/Dropdown/index.tsx"),
+				Ge = n("./src/reddit/components/RestrictedFlatlistButton/index.tsx"),
+				Ke = n("./src/reddit/controls/Dropdown/index.tsx"),
 				ze = n("./src/reddit/controls/Dropdown/Row.tsx"),
 				Ye = n("./src/reddit/helpers/flair.ts"),
 				Ze = n("./src/reddit/selectors/activeModalId.ts"),
@@ -3363,7 +3363,7 @@
 				ht = n.n(pt);
 			const bt = "BulkAction--BulkItemFilter",
 				xt = "BulkActions--PostFlair--Modal",
-				ft = Object(Xe.a)(Ge.a),
+				ft = Object(Xe.a)(Ke.a),
 				gt = e => d.a.createElement(ze.b, {
 					className: Object(f.a)(ht.a.DropdownRow, e.className),
 					displayText: e.displayText,
@@ -3483,28 +3483,28 @@
 						key: e.filterType,
 						displayText: e.name,
 						onClick: () => k(e.filterType)
-					})))), o && d.a.createElement(i.Fragment, null, d.a.createElement(Ke.c, {
+					})))), o && d.a.createElement(i.Fragment, null, d.a.createElement(Ge.c, {
 						className: ht.a.Button,
 						disabled: a,
 						text: x.fbt._("approve", null, {
 							hk: "4ib5o9"
 						}),
 						onClick: u
-					}, d.a.createElement(We.a, null)), d.a.createElement(Ke.c, {
+					}, d.a.createElement(We.a, null)), d.a.createElement(Ge.c, {
 						className: ht.a.Button,
 						disabled: a,
 						text: x.fbt._("remove", null, {
 							hk: "1ImNcF"
 						}),
 						onClick: h
-					}, d.a.createElement(He.a, null)), d.a.createElement(Ke.c, {
+					}, d.a.createElement(He.a, null)), d.a.createElement(Ge.c, {
 						className: ht.a.Button,
 						disabled: a,
 						text: x.fbt._("spam", null, {
 							hk: "36ppaW"
 						}),
 						onClick: b
-					}, d.a.createElement(Ve.a, null)), d.a.createElement(Ke.c, {
+					}, d.a.createElement(Ve.a, null)), d.a.createElement(Ge.c, {
 						className: ht.a.Button,
 						disabled: a,
 						onClick: e.onOpenModToolsDropdown
@@ -3512,7 +3512,7 @@
 						tooltipId: "BulkActions--ModTools"
 					}), d.a.createElement(Ue.a, {
 						name: "list_bulleted"
-					})), d.a.createElement("div", null, I && d.a.createElement(Ke.c, {
+					})), d.a.createElement("div", null, I && d.a.createElement(Ge.c, {
 						disabled: a,
 						onClick: g,
 						className: ht.a.Button
@@ -3563,7 +3563,7 @@
 					modQueueListingItems: _e.c,
 					origin: Ee.j,
 					selectedItems: _e.f,
-					subredditId: (e, t) => t.subredditName ? Object(Ce.A)(e, t.subredditName) : null
+					subredditId: (e, t) => t.subredditName ? Object(Ce.C)(e, t.subredditName) : null
 				}),
 				Nt = Object(c.b)(St, e => ({
 					addSelectedItems: t => e(Object(p.a)({
@@ -3773,7 +3773,7 @@
 			const O = (e, t = !1, n = s.UNSET) => `PostFlair__Modal-[postId: ${e}]-isOverlay[${t}]-position[${n}]`,
 				j = Object(d.c)({
 					flairData: v.d,
-					subreddit: E.P,
+					subreddit: E.R,
 					isMod: (e, t) => !!Object(g.m)(e, t)
 				});
 			class I extends a.a.Component {
@@ -5864,7 +5864,7 @@
 							subredditName: s,
 							[r]: n.id
 						},
-						c = Object(l.v)(e, {
+						c = Object(l.w)(e, {
 							subredditName: s
 						});
 					return c ? {
@@ -6668,7 +6668,7 @@
 				u = (e, {
 					subredditName: t
 				}) => {
-					const n = Object(a.T)(e, {
+					const n = Object(a.V)(e, {
 						subredditName: t
 					});
 					return (n && n.postIds || []).slice(0, 2)
@@ -6676,4 +6676,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.6a1aa39f44925976c1b6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.3bb78370732fdbacf43f.js.map

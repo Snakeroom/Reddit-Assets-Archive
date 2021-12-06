@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.cbe053be6578b3c97238.js
-// Retrieved at 12/6/2021, 12:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.d5e085c05666a83ae729.js
+// Retrieved at 12/6/2021, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, r) {
@@ -780,7 +780,7 @@
 						thingId: r,
 						correlationId: t
 					})), n(Object(l.h)(i.a.GOLD_GILD_MODAL));
-					const f = Object(p.F)(a, {
+					const f = Object(p.H)(a, {
 						thingId: r
 					});
 					let h = null;
@@ -1228,7 +1228,7 @@
 			r.d(t, "b", (function() {
 				return M
 			})), r.d(t, "a", (function() {
-				return q
+				return W
 			}));
 			var n = r("./node_modules/polished/dist/polished.es.js"),
 				o = r("./node_modules/react/index.js"),
@@ -1291,8 +1291,8 @@
 				z = r("./src/reddit/hooks/useTheme.ts"),
 				H = r("./src/telemetry/models/Outbound.ts");
 
-			function W() {
-				return (W = Object.assign || function(e) {
+			function q() {
+				return (q = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var r = arguments[t];
 						for (var n in r) Object.prototype.hasOwnProperty.call(r, n) && (e[n] = r[n])
@@ -1302,7 +1302,7 @@
 			}! function(e) {
 				e[e.ExtraLarge = 0] = "ExtraLarge", e[e.Large = 1] = "Large", e[e.Medium = 2] = "Medium", e[e.Small = 3] = "Small", e[e.ExtraSmall = 4] = "ExtraSmall"
 			}(M || (M = {}));
-			const q = ({
+			const W = ({
 					size: e,
 					titleColor: t,
 					titleType: r,
@@ -1349,7 +1349,7 @@
 					titleColor: r,
 					children: n,
 					...o
-				}) => s.a.createElement(a.a, W({}, o, {
+				}) => s.a.createElement(a.a, q({}, o, {
 					className: Object(l.a)(e, F.a.styledLink, {
 						[F.a.isVisitedEnabled]: !t
 					})
@@ -1426,7 +1426,7 @@
 						return e.length >= 250 ? e.slice(0, 250 - "...".length) + "..." : e
 					})(o));
 					const i = e.isCommentsPage ? N.a.PostComments : N.a.PostItem;
-					return s.a.createElement(q, {
+					return s.a.createElement(W, {
 						className: e.titleClassName,
 						nowrap: e.nowrap,
 						redditStyle: e.redditStyle || e.isCommentsPage,
@@ -1441,7 +1441,7 @@
 						showCategoryTag: !1
 					}), o)
 				},
-				$ = e => {
+				J = e => {
 					const {
 						hideSourceLink: t,
 						post: r
@@ -1473,7 +1473,7 @@
 					}));
 					return null
 				};
-			class J extends s.a.Component {
+			class $ extends s.a.Component {
 				getDynamicStyleTags() {
 					return s.a.createElement("style", {
 						dangerouslySetInnerHTML: {
@@ -1495,7 +1495,8 @@
 						isTournamentPredictionPostV2: u
 					} = this.props, m = n === w.b.Left, p = Object(k.b)(c), f = d ? p.filter(e => e.type === w.f.Nsfw || e.type === w.f.Spoiler) : m ? p.filter(e => Object(v.q)(e.type)) : [], h = d ? [] : m ? p.filter(e => !Object(v.q)(e.type)) : p, b = !i && !o, g = !r && f && f.length > 0 && b, _ = !r && h && h.length > 0 && b, y = !(u && (null === (e = c.pollData) || void 0 === e ? void 0 : e.isPrediction));
 					return s.a.createElement("div", {
-						className: Object(l.a)(F.a.Component, t, c.id)
+						className: Object(l.a)(F.a.Component, t, c.id),
+						ref: this.props.innerRef
 					}, !d && g && s.a.createElement(k.a, {
 						isFlairFilter: !0,
 						titleFlair: f,
@@ -1503,12 +1504,12 @@
 						post: c,
 						sendEvent: this.props.sendEvent,
 						showCategoryTag: !1
-					}), y && s.a.createElement(X, W({}, this.props, {
+					}), y && s.a.createElement(X, q({}, this.props, {
 						leftFlair: d ? f : void 0
 					})), a && s.a.createElement(A, {
 						className: F.a.pollMeta,
 						pollId: a.id
-					}), s.a.createElement($, this.props), _ && s.a.createElement(k.a, {
+					}), s.a.createElement(J, this.props), _ && s.a.createElement(k.a, {
 						isFlairFilter: !0,
 						titleFlair: h,
 						nowrap: !0,
@@ -1535,7 +1536,7 @@
 					})),
 					a = Object(z.a)(),
 					c = Object(u.b)();
-				return n ? s.a.createElement(J, W({
+				return n ? s.a.createElement($, q({
 					pageLayer: t,
 					isCommentPermalink: r
 				}, n, o, e, {
@@ -1618,7 +1619,7 @@
 		"./src/reddit/components/SidebarNativeAd/index.tsx": function(e, t, r) {
 			"use strict";
 			r.r(t), r.d(t, "SidebarNativeAd", (function() {
-				return $
+				return J
 			}));
 			var n = r("./node_modules/fbt/lib/FbtPublic.js"),
 				o = r("./node_modules/react/index.js"),
@@ -1687,8 +1688,8 @@
 				V = m.a.div("SourceLinkWrapper", L.a),
 				z = m.a.div("TopLine", L.a),
 				H = m.a.wrapped(c.c, "PostTitle", L.a),
-				W = m.a.div("PostMediaWrapper", L.a),
-				q = m.a.div("BackgroundWrapper", L.a),
+				q = m.a.div("PostMediaWrapper", L.a),
+				W = m.a.div("BackgroundWrapper", L.a),
 				Y = m.a.wrapped(b.a, "PostContainer", L.a),
 				K = 640,
 				Q = e => Object(x.a)(e.title, 100),
@@ -1703,7 +1704,7 @@
 				Z = e => ({
 					background: Object(I.g)(Object(j.a)(e).body, null, null) || ""
 				});
-			class $ extends s.a.Component {
+			class J extends s.a.Component {
 				constructor() {
 					super(...arguments), this.refreshedAt = 1 / 0, this.onClick = (e, t) => {
 						this.props.fireAdPixelsOfType(t, v.a.Click), t.source ? t.source.outboundUrl ? Object(p.e)(t.source.outboundUrl, p.d.BLANK) : Object(p.e)(t.source.url, p.d.BLANK) : Object(p.e)(t.permalink, p.d.BLANK)
@@ -1732,7 +1733,7 @@
 						})
 					}, l = s.a.createElement(N, {
 						post: e
-					})) : (i = G, l = s.a.createElement(q, {
+					})) : (i = G, l = s.a.createElement(W, {
 						style: Z(this.props)
 					}, s.a.createElement(z, null, s.a.createElement(B, {
 						tooltipType: o ? d.c.Lightbox : void 0,
@@ -1747,7 +1748,7 @@
 						isSponsored: !0,
 						postId: e.id,
 						source: e.source
-					}, Object(u.a)(e), s.a.createElement(U, null))), s.a.createElement(W, null, e.media && s.a.createElement(a.a, {
+					}, Object(u.a)(e), s.a.createElement(U, null))), s.a.createElement(q, null, e.media && s.a.createElement(a.a, {
 						isListing: !0,
 						isNotCardView: !0,
 						showCentered: !0,
@@ -1764,7 +1765,7 @@
 					}, l))
 				}
 			}
-			const J = Object(i.b)(null, (e, t) => ({
+			const $ = Object(i.b)(null, (e, t) => ({
 				fireAdPixelsOfType: (t, r) => {
 					e(Object(h.z)(t, r))
 				},
@@ -1777,7 +1778,21 @@
 					e(Object(f.c)(Object(w.a)(r, !!o, n)))
 				}
 			}));
-			t.default = Object(_.b)(J(Object(g.b)(Object(l.a)($))))
+			t.default = Object(_.b)($(Object(g.b)(Object(l.a)(J))))
+		},
+		"./src/reddit/components/SubredditNameLink/index.m.less": function(e, t, r) {
+			e.exports = {
+				SubredditName: "_3ryJoIoycVkA88fy40qNJc",
+				subredditName: "_3ryJoIoycVkA88fy40qNJc"
+			}
+		},
+		"./src/reddit/components/SubredditNameLink/index.tsx": function(e, t, r) {
+			"use strict";
+			var n = r("./node_modules/react-router-dom/esm/react-router-dom.js"),
+				o = r("./src/reddit/components/SubredditNameLink/index.m.less"),
+				s = r.n(o);
+			const i = r("./src/lib/lessComponent.tsx").a.wrapped(n.a, "SubredditName", s.a);
+			t.a = i
 		},
 		"./src/reddit/helpers/economics/sortBadges.ts": function(e, t, r) {
 			"use strict";
@@ -3579,4 +3594,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.cbe053be6578b3c97238.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.d5e085c05666a83ae729.js.map

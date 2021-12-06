@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.c5e389c54f59175af8c3.js
-// Retrieved at 12/6/2021, 12:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.7b468371c5e4a68efb4c.js
+// Retrieved at 12/6/2021, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1809,7 +1809,7 @@
 					apiContext: o
 				}) => {
 					const r = n(),
-						i = Object(p.P)(r, {
+						i = Object(p.R)(r, {
 							subredditId: e
 						}).name;
 					s(b());
@@ -1825,7 +1825,7 @@
 					apiContext: o
 				}) => {
 					const r = n(),
-						i = Object(p.P)(r, {
+						i = Object(p.R)(r, {
 							subredditId: e
 						}).name;
 					s(E());
@@ -1841,7 +1841,7 @@
 					apiContext: r
 				}) => {
 					const d = o(),
-						m = Object(p.P)(d, {
+						m = Object(p.R)(d, {
 							subredditId: t
 						}).name;
 					s(O());
@@ -1877,7 +1877,7 @@
 					apiContext: r
 				}) => {
 					const i = o(),
-						d = Object(p.P)(i, {
+						d = Object(p.R)(i, {
 							subredditId: t
 						}).name;
 					if (s(j()), (await Object(c.b)(r(), e, d)).ok) {
@@ -1905,7 +1905,7 @@
 						d = Object(m.d)(i, {
 							subredditId: t
 						}).templateIds,
-						f = Object(p.P)(i, {
+						f = Object(p.R)(i, {
 							subredditId: t
 						}).name;
 					if (s(I({
@@ -1983,7 +1983,7 @@
 				imageData: n
 			}) => async (o, r, i) => {
 				const a = r(),
-					c = Object(v.P)(a, {
+					c = Object(v.R)(a, {
 						subredditId: e
 					});
 				if (!c) return !1;
@@ -2016,7 +2016,7 @@
 					...O
 				} = s;
 				let w = O;
-				const S = Object(v.P)(u, {
+				const S = Object(v.R)(u, {
 					subredditId: e
 				});
 				if (!S) return !1;
@@ -2089,7 +2089,7 @@
 				apiContext: o
 			}) => {
 				const r = n(),
-					i = Object(v.P)(r, {
+					i = Object(v.R)(r, {
 						subredditId: e
 					});
 				if (!i) return !1;
@@ -3842,7 +3842,8 @@
 						isTournamentPredictionPostV2: u
 					} = this.props, m = n === g.b.Left, p = Object(S.b)(c), f = d ? p.filter(e => e.type === g.f.Nsfw || e.type === g.f.Spoiler) : m ? p.filter(e => Object(x.q)(e.type)) : [], b = d ? [] : m ? p.filter(e => !Object(x.q)(e.type)) : p, h = !i && !o, v = !s && f && f.length > 0 && h, E = !s && b && b.length > 0 && h, _ = !(u && (null === (e = c.pollData) || void 0 === e ? void 0 : e.isPrediction));
 					return r.a.createElement("div", {
-						className: Object(l.a)(R.a.Component, t, c.id)
+						className: Object(l.a)(R.a.Component, t, c.id),
+						ref: this.props.innerRef
 					}, !d && v && r.a.createElement(S.a, {
 						isFlairFilter: !0,
 						titleFlair: f,
@@ -5704,4 +5705,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.c5e389c54f59175af8c3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.7b468371c5e4a68efb4c.js.map

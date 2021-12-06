@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditHovercard.97af9c60e1669e4629fc.js
-// Retrieved at 12/2/2021, 10:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditHovercard.4fa37d835b7156db14f7.js
+// Retrieved at 12/6/2021, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditHovercard"], {
 		"./src/reddit/components/CommunityType/index.m.less": function(e, t, n) {
@@ -359,8 +359,8 @@
 			const X = Object(m.c)({
 				activeTooltipId: v.a,
 				hideNSFWPref: h.C,
-				subreddit: b.v,
-				subredditAboutInfo: b.s
+				subreddit: b.w,
+				subredditAboutInfo: b.t
 			});
 			var Q = Object(u.b)(X, e => ({
 				onHideTooltip: () => e(Object(p.i)())
@@ -383,7 +383,7 @@
 				shouldOpenNewTabOnClicks: e.shouldOpenNewTabOnClicks
 			}))));
 			const J = "SubredditInfoTooltip";
-			class z extends s.a.Component {
+			class G extends s.a.Component {
 				constructor() {
 					super(...arguments), this.sendEvent = () => this.props.sendEvent(c(this.props.subredditName, this.props.postId))
 				}
@@ -415,7 +415,7 @@
 					}))
 				}
 			}
-			t.default = Object(d.c)(z)
+			t.default = Object(d.c)(G)
 		},
 		"./src/reddit/components/Hovercards/helpers.m.less": function(e, t, n) {
 			e.exports = {
@@ -517,7 +517,7 @@
 				h = n("./src/reddit/selectors/subreddit.ts");
 			const f = (e, t) => {
 				const n = Object(v.b)(e, t),
-					r = Object(h.E)(e, t);
+					r = Object(h.G)(e, t);
 				return {
 					comment: n,
 					isModerator: !(!r || !r.name) && !!e.moderatingSubreddits[r.name],
@@ -556,7 +556,7 @@
 			}));
 			const E = (e, t) => {
 				const n = Object(v.b)(e, t),
-					r = Object(h.E)(e, t);
+					r = Object(h.G)(e, t);
 				return {
 					comment: n,
 					isModerator: !(!r || !r.name) && !!e.moderatingSubreddits[r.name],
@@ -582,7 +582,7 @@
 				}
 			}));
 			var x = Object(o.b)(() => Object(i.c)({
-					subreddit: h.P
+					subreddit: h.R
 				}))(e => s.a.createElement(p, {
 					className: e.className,
 					type: "communityTools",
@@ -682,7 +682,7 @@
 				}) : null
 			};
 			var _ = Object(o.b)(() => Object(i.c)({
-				subreddit: h.P
+				subreddit: h.R
 			}))(e => s.a.createElement(p, {
 				className: e.className,
 				type: "sidebar",
@@ -695,7 +695,7 @@
 				}
 			}));
 			var T = Object(o.b)(() => Object(i.c)({
-				subredditOrProfile: (e, t) => Object(h.H)(e, {
+				subredditOrProfile: (e, t) => Object(h.J)(e, {
 					identifier: t
 				})
 			}))(e => s.a.createElement(p, {
@@ -712,7 +712,7 @@
 			var C = Object(o.b)(() => Object(i.c)({
 				subreddit: (e, {
 					subredditId: t
-				}) => t ? Object(h.P)(e, {
+				}) => t ? Object(h.R)(e, {
 					subredditId: t
 				}) : null
 			}))(e => s.a.createElement(p, {
@@ -1140,4 +1140,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditHovercard.97af9c60e1669e4629fc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditHovercard.4fa37d835b7156db14f7.js.map

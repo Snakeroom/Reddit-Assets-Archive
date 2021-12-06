@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.8820503724b410fe63c8.js
-// Retrieved at 12/6/2021, 12:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.e6ab97541e3dc211266e.js
+// Retrieved at 12/6/2021, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -2530,10 +2530,10 @@
 					},
 					bffsLeaderboardVariant: Ze,
 					inRpanTopVideoEntrypointExperiment: We.e,
-					rankings: e => Object(Ke.K)(e, Ye),
+					rankings: e => Object(Ke.M)(e, Ye),
 					shouldShowTopicsWidget: e => {
 						const t = Object(We.e)(e),
-							a = !!Object(Ke.K)(e, Ye);
+							a = !!Object(Ke.M)(e, Ye);
 						return (!t || !a) && (!Object(He.b)(e) && function(e) {
 							return Object(Re.c)(e, {
 								experimentEligibilitySelector: Ge.K,
@@ -2739,7 +2739,7 @@
 					return {
 						crosspost: a,
 						post: t,
-						subredditOrProfile: Object(h.H)(e, {
+						subredditOrProfile: Object(h.J)(e, {
 							identifier: t.belongsTo
 						})
 					}
@@ -3384,20 +3384,6 @@
 				button: "_3GA-tK1xBiDrxLJRZR3IIB"
 			}
 		},
-		"./src/reddit/components/SubredditNameLink/index.m.less": function(e, t, a) {
-			e.exports = {
-				SubredditName: "_3ryJoIoycVkA88fy40qNJc",
-				subredditName: "_3ryJoIoycVkA88fy40qNJc"
-			}
-		},
-		"./src/reddit/components/SubredditNameLink/index.tsx": function(e, t, a) {
-			"use strict";
-			var s = a("./node_modules/react-router-dom/esm/react-router-dom.js"),
-				n = a("./src/reddit/components/SubredditNameLink/index.m.less"),
-				r = a.n(n);
-			const c = a("./src/lib/lessComponent.tsx").a.wrapped(s.a, "SubredditName", r.a);
-			t.a = c
-		},
 		"./src/reddit/components/SubscribeButton/Inline.m.less": function(e, t, a) {
 			e.exports = {
 				ButtonSpacer: "vXXjS_s-Ic4QZpFsPjThV",
@@ -3613,8 +3599,8 @@
 				}).apply(this, arguments)
 			}
 			const v = Object(c.c)({
-					isInLeaderboardDetailJoinOptimizationsExperiment: e => !(!Object(_.h)(e) || !Object(f.a)(e) && !Object(f.c)(e)),
-					isInLeaderboardEntryJoinOptimizationsExperiment: e => !(!Object(_.g)(e) || !Object(f.a)(e) && !Object(f.d)(e))
+					isInLeaderboardDetailJoinOptimizationsExperiment: e => !(!Object(_.h)(e) || !Object(f.a)(e) && !Object(f.d)(e)),
+					isInLeaderboardEntryJoinOptimizationsExperiment: e => !(!Object(_.g)(e) || !Object(f.a)(e) && !Object(f.e)(e))
 				}),
 				E = Object(r.b)(v, e => ({
 					updateSubredditModels: t => e(Object(o.a)({
@@ -5657,7 +5643,7 @@
 					let s;
 					if (-1 === [r.R, "r/popular"].indexOf(t)) {
 						const n = t.replace(/^r\//, ""),
-							r = Object(c.A)(e, n),
+							r = Object(c.C)(e, n),
 							o = a.subreddit[r];
 						if (!o) return !1;
 						s = o
@@ -6050,4 +6036,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.8820503724b410fe63c8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.e6ab97541e3dc211266e.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.47b7e39d515085eebc3e.js
-// Retrieved at 12/2/2021, 5:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.507c24b501f9a39901f2.js
+// Retrieved at 12/6/2021, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-PowerupsInFeedUnit-index-tsx"], {
 		"./src/reddit/actions/snoovatar.ts": function(e, t, s) {
@@ -297,7 +297,7 @@
 				}) => {
 					const s = Object(n.d)(),
 						a = Object(l.a)(),
-						r = Object(n.e)(t => Object(p.P)(t, {
+						r = Object(n.e)(t => Object(p.R)(t, {
 							subredditId: e
 						}).displayText);
 					return o.a.createElement("div", {
@@ -324,9 +324,9 @@
 					}))
 				},
 				U = s("./src/reddit/controls/Button/index.tsx"),
-				P = s("./src/reddit/icons/svgs/PowerupTier2/index.tsx"),
-				A = s("./src/reddit/components/Econ/PowerupsInFeedUnit/PostUnlock/CommunityGearUnit.m.less"),
-				C = s.n(A),
+				A = s("./src/reddit/icons/svgs/PowerupTier2/index.tsx"),
+				C = s("./src/reddit/components/Econ/PowerupsInFeedUnit/PostUnlock/CommunityGearUnit.m.less"),
+				P = s.n(C),
 				I = s("./src/higherOrderComponents/asModal/index.tsx"),
 				j = s("./src/lib/opener/index.ts"),
 				k = s("./src/reddit/actions/snoovatar.ts"),
@@ -446,30 +446,30 @@
 						[a, n] = Object(r.useState)(!1),
 						i = () => n(!1);
 					return o.a.createElement(o.a.Fragment, null, o.a.createElement("div", {
-						className: Object(v.a)(C.a.container, e)
+						className: Object(v.a)(P.a.container, e)
 					}, o.a.createElement("div", {
-						className: C.a.header
-					}, o.a.createElement(P.a, {
-						className: C.a.powerupsBolt
+						className: P.a.header
+					}, o.a.createElement(A.a, {
+						className: P.a.powerupsBolt
 					}), o.a.createElement("div", {
-						className: C.a.headerText
+						className: P.a.headerText
 					}, o.a.createElement("h2", {
-						className: C.a.title
+						className: P.a.title
 					}, Y._("Get the most out of Powerups", null, {
 						hk: "4mSV6O"
 					})), o.a.createElement("h3", {
-						className: C.a.subtitle
+						className: P.a.subtitle
 					}, Y._("Show your support with exclusive gear", null, {
 						hk: "2rq6cz"
 					})))), o.a.createElement("div", {
-						className: C.a.contentWrapper
+						className: P.a.contentWrapper
 					}, o.a.createElement("img", {
 						alt: "Avatar wearing community gear top",
-						className: C.a.avatarTop,
+						className: P.a.avatarTop,
 						"data-testid": "community-gear-avatar",
 						src: `${E.a.assetPath}/img/powerups/communityGear/withoutLegs/${t}.png`
 					})), o.a.createElement("div", {
-						className: C.a.buttonWrapper
+						className: P.a.buttonWrapper
 					}, o.a.createElement(U.t, {
 						priority: U.c.Secondary,
 						onClick: () => {
@@ -498,7 +498,7 @@
 			}) => {
 				const r = Object(n.d)(),
 					i = Object(l.a)(),
-					c = Object(n.e)(e => Object(p.P)(e, {
+					c = Object(n.e)(e => Object(p.R)(e, {
 						subredditId: t
 					}));
 				if (s === a.HIDDEN) return null;
@@ -546,7 +546,7 @@
 				className: t
 			}) => {
 				const s = Object(l.a)(),
-					E = Object(n.e)(t => Object(p.P)(t, {
+					E = Object(n.e)(t => Object(p.R)(t, {
 						subredditId: e
 					})),
 					[v, O] = Object(r.useState)(a.HIDDEN),
@@ -557,7 +557,7 @@
 						const r = Object(b.w)(e, {
 								subredditId: t
 							}),
-							o = Object(p.bb)(e, {
+							o = Object(p.db)(e, {
 								identifier: {
 									name: s,
 									type: u.a.SUBREDDIT
@@ -986,4 +986,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.47b7e39d515085eebc3e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.507c24b501f9a39901f2.js.map

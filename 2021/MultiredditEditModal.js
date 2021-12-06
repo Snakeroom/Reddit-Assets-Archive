@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MultiredditEditModal.09c462bfa88c911c10c4.js
-// Retrieved at 12/2/2021, 10:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MultiredditEditModal.ea06284bfc9ac997cafc.js
+// Retrieved at 12/6/2021, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MultiredditEditModal"], {
 		"./src/reddit/actions/multireddit/index.ts": function(e, t, i) {
@@ -15,9 +15,9 @@
 			})), i.d(t, "myMultiredditsPending", (function() {
 				return W
 			})), i.d(t, "myMultiredditsReceived", (function() {
-				return A
-			})), i.d(t, "myMultiredditsRequested", (function() {
 				return U
+			})), i.d(t, "myMultiredditsRequested", (function() {
+				return A
 			})), i.d(t, "createFailure", (function() {
 				return K
 			})), i.d(t, "createPending", (function() {
@@ -213,7 +213,7 @@
 						...w.body,
 						...Object(v.a)(l, b, T)
 					}))
-				}, W = Object(l.a)(M.t), A = Object(l.a)(M.u), U = (e, t = !1) => async (i, r, {
+				}, W = Object(l.a)(M.t), U = Object(l.a)(M.u), A = (e, t = !1) => async (i, r, {
 					apiContext: s,
 					gqlContext: n
 				}) => {
@@ -230,7 +230,7 @@
 					if (a.ok) {
 						const e = a.body.data.identity.allMultireddits.edges.map(e => e.node),
 							t = Object(w.b)(e);
-						i(A({
+						i(U({
 							...t,
 							multiredditsModelsState: d.multireddits.models
 						}))
@@ -380,7 +380,7 @@
 							method: a.jb.PUT
 						}))(d(), O, b);
 					if (j.ok) {
-						const n = Object(P.G)(l, {
+						const n = Object(P.I)(l, {
 								identifier: t
 							}) || e && e.id || "",
 							d = i.map(e => Object(N.h)(m, e));
@@ -529,7 +529,7 @@
 					if (!l || !l.subredditIds) return;
 					r(fe());
 					const c = i && i.reduce((e, t) => {
-							const i = Object(P.A)(d, t) || Object(P.B)(d, t);
+							const i = Object(P.C)(d, t) || Object(P.D)(d, t);
 							return i ? [...e, i] : e
 						}, []),
 						u = await ((e, t) => Object(O.a)(e, {
@@ -1520,4 +1520,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MultiredditEditModal.09c462bfa88c911c10c4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MultiredditEditModal.ea06284bfc9ac997cafc.js.map

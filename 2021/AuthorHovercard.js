@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.f6c8e2e4bc2667633116.js
-// Retrieved at 12/2/2021, 6:50:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.1e67fd69d4335c03a967.js
+// Retrieved at 12/6/2021, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/lib/delay/index.ts": function(e, t, n) {
@@ -494,10 +494,10 @@
 				}, ce = (e, t) => async (n, r) => {
 					const s = r();
 					await Promise.all([(async () => {
-						if (!Object(C.b)(u.a.BAN_USER)(s) && !Object(O.M)(s, {
+						if (!Object(C.b)(u.a.BAN_USER)(s) && !Object(O.O)(s, {
 								subredditId: e
 							})) {
-							const t = Object(O.P)(s, {
+							const t = Object(O.R)(s, {
 								subredditId: e
 							});
 							await n(Object(d.o)(t.name))
@@ -1111,7 +1111,7 @@
 					}) => t ? Object(v.d)(e, {
 						subredditId: t
 					}) : void 0,
-					userIsBanned: (e, t) => !!Object(b.l)(t) && Object(b.ab)(e, t),
+					userIsBanned: (e, t) => !!Object(b.l)(t) && Object(b.cb)(e, t),
 					userProfileStyles: (e, t) => Object(p.m)(e, Object(m.m)(e, t.userName)),
 					acceptChats: (e, t) => {
 						const n = Object(m.h)(e, {
@@ -3702,4 +3702,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.f6c8e2e4bc2667633116.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.1e67fd69d4335c03a967.js.map

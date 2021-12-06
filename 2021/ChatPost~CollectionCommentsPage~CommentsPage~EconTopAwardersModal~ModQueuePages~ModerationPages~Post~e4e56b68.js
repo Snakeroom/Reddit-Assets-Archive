@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~e4e56b68.0c9653577ca382eb91d0.js
-// Retrieved at 12/6/2021, 12:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~e4e56b68.336864a2170428dc73d0.js
+// Retrieved at 12/6/2021, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~e4e56b68"], {
 		"./src/reddit/actions/economics/subredditPremium/actionCreators.ts": function(e, t, r) {
@@ -316,8 +316,8 @@
 				y = r("./src/reddit/components/TrackingHelper/index.tsx"),
 				E = r("./src/reddit/models/Gold/Award.ts"),
 				T = r("./src/reddit/selectors/activeModalId.ts"),
-				P = r("./src/reddit/selectors/experiments/econLeaderboards.ts"),
-				I = r("./src/reddit/selectors/gold/awardIcon.ts"),
+				I = r("./src/reddit/selectors/experiments/econLeaderboards.ts"),
+				P = r("./src/reddit/selectors/gold/awardIcon.ts"),
 				C = r("./src/reddit/contexts/Post/index.tsx"),
 				S = r("./src/reddit/contexts/User/index.tsx"),
 				_ = r("./node_modules/lodash/debounce.js"),
@@ -847,9 +847,9 @@
 					}))
 				},
 				Te = r("./src/reddit/actions/gold/reportAward.ts"),
-				Pe = r("./src/reddit/controls/Button/index.tsx"),
-				Ie = r("./src/reddit/components/AwardBadges/FlagAwardModal/index.m.less"),
-				Ce = r.n(Ie);
+				Ie = r("./src/reddit/controls/Button/index.tsx"),
+				Pe = r("./src/reddit/components/AwardBadges/FlagAwardModal/index.m.less"),
+				Ce = r.n(Pe);
 			! function(e) {
 				e[e.BEGIN = 0] = "BEGIN", e[e.REPORT_COMMUNITY_AWARD = 1] = "REPORT_COMMUNITY_AWARD", e[e.FLAG_USAGE = 2] = "FLAG_USAGE"
 			}(ye || (ye = {}));
@@ -868,14 +868,14 @@
 							hk: "24QeOL"
 						}), h.b.SuccessAward))), e.onClose()
 					},
-					m = o.a.createElement(o.a.Fragment, null, o.a.createElement(Pe.o, {
+					m = o.a.createElement(o.a.Fragment, null, o.a.createElement(Ie.o, {
 						onClick: () => {
 							t(Object(x.clickReportAward)(e.award, e.thing.id)), i(ye.REPORT_COMMUNITY_AWARD)
 						},
 						className: Ce.a.reportStepButton
 					}, s.fbt._("This community award violates Reddit's rules.", null, {
 						hk: "2ObuGq"
-					})), o.a.createElement(Pe.o, {
+					})), o.a.createElement(Ie.o, {
 						onClick: () => {
 							t(Object(x.clickFlagAwardUsage)(e.award, e.thing.id)), i(ye.FLAG_USAGE)
 						},
@@ -937,7 +937,7 @@
 				Ne = Object(i.c)({
 					allAwards: e => e.awards.models,
 					isConfirmModalOpen: e => "AwardBadges--Modal--HideAwardConfirmation" === Object(T.a)(e),
-					isInEconLeaderboardsExperiment: P.b
+					isInEconLeaderboardsExperiment: I.b
 				}),
 				ke = e => Object(O.a)(e.id) ? e.postId : e.id,
 				Be = Object(a.b)(Ne, (e, {
@@ -1055,11 +1055,11 @@
 						tooltipType: v
 					} = this.props, {
 						showAllAwards: A
-					} = this.state, x = f.reduceAnimationsFromAwards || "undefined" != typeof window && !!window.matchMedia("(prefers-reduced-motion)").matches, y = Object.keys(w.awardCountsById || {}), T = Object(E.r)(y.map(t => e[t]).filter(Boolean)), P = {};
+					} = this.state, x = f.reduceAnimationsFromAwards || "undefined" != typeof window && !!window.matchMedia("(prefers-reduced-motion)").matches, y = Object.keys(w.awardCountsById || {}), T = Object(E.r)(y.map(t => e[t]).filter(Boolean)), I = {};
 					for (const s of _e) {
 						const e = {};
-						P[`icon${s}`] = e;
-						for (const t of T) e[t.id] = Object(I.c)({
+						I[`icon${s}`] = e;
+						for (const t of T) e[t.id] = Object(P.c)({
 							award: t,
 							postOrComment: w,
 							size: s,
@@ -1073,7 +1073,7 @@
 						className: n,
 						hideAddAwardButton: i || !w.isGildable || C,
 						hideTopAwardedBadge: d,
-						icons: P,
+						icons: I,
 						isInEconLeaderboardsExperiment: l,
 						multiline: !!m,
 						onAddAward: this.handleAddAward,
@@ -1090,7 +1090,7 @@
 						className: n,
 						hideBadgeButton: i || !u,
 						hideTopAwardedBadge: d,
-						icons: P,
+						icons: I,
 						isInEconLeaderboardsExperiment: l,
 						onAddAward: this.handleAddAward,
 						onHideAward: this.handleHideAward,
@@ -1264,14 +1264,14 @@
 					}))
 				}
 			}
-			const P = [],
-				I = Object(a.c)({
+			const I = [],
+				P = Object(a.c)({
 					badgeIds: (e, {
 						subredditId: t,
 						userId: r
 					}) => {
 						var s;
-						return (null === (s = e.users.appliedBadges[r]) || void 0 === s ? void 0 : s[t]) || P
+						return (null === (s = e.users.appliedBadges[r]) || void 0 === s ? void 0 : s[t]) || I
 					},
 					allBadges: e => e.badges.models,
 					useHovercard: h.d.spSpecialMemberships
@@ -1282,7 +1282,7 @@
 					}) => {
 						var r;
 						const s = e.user.account;
-						return s && (null === (r = e.users.appliedBadges[s.id]) || void 0 === r ? void 0 : r[t]) || P
+						return s && (null === (r = e.users.appliedBadges[s.id]) || void 0 === r ? void 0 : r[t]) || I
 					},
 					allBadges: e => e.badges.models,
 					useHovercard: h.d.spSpecialMemberships
@@ -1305,7 +1305,7 @@
 					badges: o
 				}, s))
 			}
-			const N = Object(o.b)(I, S)(_),
+			const N = Object(o.b)(P, S)(_),
 				k = Object(o.b)(C, S)(_)
 		},
 		"./src/reddit/components/Econ/Audio/index.m.less": function(e, t, r) {
@@ -1472,9 +1472,9 @@
 			})), r.d(t, "g", (function() {
 				return T
 			})), r.d(t, "h", (function() {
-				return P
-			})), r.d(t, "i", (function() {
 				return I
+			})), r.d(t, "i", (function() {
+				return P
 			}));
 			var s = r("./node_modules/react/index.js"),
 				n = r.n(s),
@@ -1525,7 +1525,7 @@
 				f = r("./src/reddit/selectors/subreddit.ts");
 			const w = (e, t) => {
 				const r = Object(b.b)(e, t),
-					s = Object(f.E)(e, t);
+					s = Object(f.G)(e, t);
 				return {
 					comment: r,
 					isModerator: !(!s || !s.name) && !!e.moderatingSubreddits[s.name],
@@ -1564,7 +1564,7 @@
 			}));
 			const v = (e, t) => {
 				const r = Object(b.b)(e, t),
-					s = Object(f.E)(e, t);
+					s = Object(f.G)(e, t);
 				return {
 					comment: r,
 					isModerator: !(!s || !s.name) && !!e.moderatingSubreddits[s.name],
@@ -1590,7 +1590,7 @@
 				}
 			}));
 			var O = Object(o.b)(() => Object(a.c)({
-					subreddit: f.P
+					subreddit: f.R
 				}))(e => n.a.createElement(p, {
 					className: e.className,
 					type: "communityTools",
@@ -1690,7 +1690,7 @@
 				}) : null
 			};
 			var T = Object(o.b)(() => Object(a.c)({
-				subreddit: f.P
+				subreddit: f.R
 			}))(e => n.a.createElement(p, {
 				className: e.className,
 				type: "sidebar",
@@ -1702,8 +1702,8 @@
 					} : {}
 				}
 			}));
-			var P = Object(o.b)(() => Object(a.c)({
-				subredditOrProfile: (e, t) => Object(f.H)(e, {
+			var I = Object(o.b)(() => Object(a.c)({
+				subredditOrProfile: (e, t) => Object(f.J)(e, {
 					identifier: t
 				})
 			}))(e => n.a.createElement(p, {
@@ -1717,10 +1717,10 @@
 					url: e.subredditOrProfile.title
 				}
 			}));
-			var I = Object(o.b)(() => Object(a.c)({
+			var P = Object(o.b)(() => Object(a.c)({
 				subreddit: (e, {
 					subredditId: t
-				}) => t ? Object(f.P)(e, {
+				}) => t ? Object(f.R)(e, {
 					subredditId: t
 				}) : null
 			}))(e => n.a.createElement(p, {
@@ -1820,8 +1820,8 @@
 				},
 				E = r("./src/reddit/components/Economics/SubredditPremium/Badges/UserDisplay/index.tsx"),
 				T = r("./src/reddit/components/Economics/SubredditPremium/Badges/UsernameDisplay/index.tsx"),
-				P = r("./src/reddit/components/Flair/index.tsx"),
-				I = r("./src/reddit/components/Governance/UserPublicPointsDisplay/async.tsx"),
+				I = r("./src/reddit/components/Flair/index.tsx"),
+				P = r("./src/reddit/components/Governance/UserPublicPointsDisplay/async.tsx"),
 				C = r("./src/reddit/components/Hovercards/AuthorHovercard/index.tsx"),
 				S = r("./src/reddit/components/Hovercards/SubredditHovercard/index.tsx"),
 				_ = r("./src/reddit/components/HumanDate/index.tsx"),
@@ -1968,8 +1968,8 @@
 						ye = Object(b.a)(me),
 						Ee = c && c.meta && c.meta.name === i.Mb.COMMENTS,
 						Te = Object(h.a)(v),
-						Pe = xe === Z.b.Left,
-						Ie = v.authorIsContractor && !!j && j.type === re.f.EmployeesOnly,
+						Ie = xe === Z.b.Left,
+						Pe = v.authorIsContractor && !!j && j.type === re.f.EmployeesOnly,
 						Ce = !!j && Ae,
 						Se = !d && !Ee,
 						_e = () => n.a.createElement(be, {
@@ -1981,9 +1981,9 @@
 						ke = X.e[Ne] === X.d.Card,
 						Be = W && ke || !!Ee,
 						Le = z && (W || !!Ee),
-						Me = n.a.createElement(n.a.Fragment, null, Y && Pe && n.a.createElement("div", {
+						Me = n.a.createElement(n.a.Fragment, null, Y && Ie && n.a.createElement("div", {
 							className: le.a.flairContainer
-						}, n.a.createElement(P.b, {
+						}, n.a.createElement(I.b, {
 							disabled: !pe,
 							flair: Y,
 							forceSmallEmojis: !0,
@@ -1991,7 +1991,7 @@
 						})), Object(te.o)(v.author) ? n.a.createElement(ge, {
 							post: v,
 							isDeleted: !0,
-							renderContractorBadge: Ie,
+							renderContractorBadge: Pe,
 							showActionFont: Le,
 							style: z ? {} : {
 								color: he(e)
@@ -2011,7 +2011,7 @@
 						}, n.a.createElement(ge, {
 							post: v,
 							forceOpenInNewTab: r,
-							renderContractorBadge: Ie,
+							renderContractorBadge: Pe,
 							style: z ? {} : {
 								color: he(e)
 							},
@@ -2032,14 +2032,14 @@
 							visible: ye.visible
 						}, ue._("Powerups Top Supporter", null, {
 							hk: "1GLWsz"
-						}))))), Y && !Pe && n.a.createElement("div", {
+						}))))), Y && !Ie && n.a.createElement("div", {
 							className: le.a.flairContainer
-						}, n.a.createElement(P.b, {
+						}, n.a.createElement(I.b, {
 							disabled: !pe,
 							flair: Y,
 							forceSmallEmojis: !0,
 							usesCommunityStyles: Se
-						})), v.belongsTo.type === F.a.SUBREDDIT && !Object(te.o)(v.author) && n.a.createElement(I.a, {
+						})), v.belongsTo.type === F.a.SUBREDDIT && !Object(te.o)(v.author) && n.a.createElement(P.a, {
 							className: le.a.publicWallet,
 							contentId: v.id,
 							metaSeparator: n.a.createElement(_e, null),
@@ -2223,20 +2223,6 @@
 				})))
 			}
 		},
-		"./src/reddit/components/SubredditNameLink/index.m.less": function(e, t, r) {
-			e.exports = {
-				SubredditName: "_3ryJoIoycVkA88fy40qNJc",
-				subredditName: "_3ryJoIoycVkA88fy40qNJc"
-			}
-		},
-		"./src/reddit/components/SubredditNameLink/index.tsx": function(e, t, r) {
-			"use strict";
-			var s = r("./node_modules/react-router-dom/esm/react-router-dom.js"),
-				n = r("./src/reddit/components/SubredditNameLink/index.m.less"),
-				o = r.n(n);
-			const a = r("./src/lib/lessComponent.tsx").a.wrapped(s.a, "SubredditName", o.a);
-			t.a = a
-		},
 		"./src/reddit/controls/MetaSeparator/index.m.less": function(e, t, r) {
 			e.exports = {
 				unstyledMetaSeparator: "_3LS4zudUBagjFS7HjWJYxo",
@@ -2280,9 +2266,9 @@
 			})), r.d(t, "k", (function() {
 				return T
 			})), r.d(t, "l", (function() {
-				return P
-			})), r.d(t, "j", (function() {
 				return I
+			})), r.d(t, "j", (function() {
+				return P
 			})), r.d(t, "f", (function() {
 				return C
 			})), r.d(t, "g", (function() {
@@ -2397,12 +2383,12 @@
 					variables: {
 						subredditId: t
 					}
-				}), P = (e, t) => Object(o.a)(e, {
+				}), I = (e, t) => Object(o.a)(e, {
 					...w,
 					variables: {
 						profileName: t
 					}
-				}), I = e => Object(o.a)(e, {
+				}), P = e => Object(o.a)(e, {
 					...b
 				}), C = (e, t, r) => Object(o.a)(e, {
 					...d,
@@ -2651,9 +2637,9 @@
 			})), r.d(t, "n", (function() {
 				return T
 			})), r.d(t, "e", (function() {
-				return P
-			})), r.d(t, "d", (function() {
 				return I
+			})), r.d(t, "d", (function() {
+				return P
 			})), r.d(t, "j", (function() {
 				return C
 			})), r.d(t, "p", (function() {
@@ -2787,12 +2773,12 @@
 				return b
 			}
 
-			function P(e, t) {
+			function I(e, t) {
 				const r = T(e, t, i.a.Loyalty).find(e => "membership" === e.id);
 				return r ? [].concat(r.locked, r.unlocked).filter(e => e.position).sort((e, t) => e.position - t.position) : b
 			}
 
-			function I(e, t) {
+			function P(e, t) {
 				const r = e.economics.subredditPremium[t];
 				if (r && r.status === u.a.Fetched) {
 					const e = r.data.collections[i.a.Cosmetic];
@@ -3015,4 +3001,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~e4e56b68.0c9653577ca382eb91d0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~e4e56b68.336864a2170428dc73d0.js.map

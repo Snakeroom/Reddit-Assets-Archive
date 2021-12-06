@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.b872764ea241c86c62a9.js
-// Retrieved at 12/2/2021, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.ddc20d93763c5ba7368c.js
+// Retrieved at 12/6/2021, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments"], {
 		"./src/reddit/actions/pages/profileComments/index.ts": function(e, t, r) {
@@ -302,24 +302,24 @@
 				J = r("./src/reddit/actions/post.ts"),
 				H = r("./src/reddit/components/TrackingHelper/index.tsx"),
 				Q = r("./src/reddit/helpers/postComponentForLayout/index.tsx"),
-				W = r("./src/reddit/helpers/trackers/post.ts"),
-				V = r("./src/reddit/featureFlags/index.ts"),
+				V = r("./src/reddit/helpers/trackers/post.ts"),
+				W = r("./src/reddit/featureFlags/index.ts"),
 				$ = r("./src/reddit/selectors/comments.ts"),
 				X = r("./src/reddit/selectors/posts.ts"),
 				Z = r("./src/reddit/selectors/profileComments.ts"),
-				z = r("./src/reddit/selectors/subreddit.ts"),
-				Y = r("./src/reddit/selectors/tracking.ts"),
+				Y = r("./src/reddit/selectors/subreddit.ts"),
+				z = r("./src/reddit/selectors/tracking.ts"),
 				ee = r("./src/reddit/selectors/user.ts");
 			const te = Object(N.u)(),
 				re = {
 					apiError: Z.a,
 					apiPending: Z.b,
 					currentUser: ee.k,
-					measureScrollFPS: V.d.measureScrollFPS,
+					measureScrollFPS: W.d.measureScrollFPS,
 					layout: N.Q,
 					loadMore: Z.d,
-					subredditsById: z.W,
-					viewportDataLoaded: Y.a,
+					subredditsById: Y.Y,
+					viewportDataLoaded: z.a,
 					commentsById: $.q,
 					itemIds: Z.f,
 					itemIdToPostId: Z.e,
@@ -361,7 +361,7 @@
 					...e,
 					...t,
 					...r,
-					postClickEventFactory: (e, t) => Object(W.h)(e, t),
+					postClickEventFactory: (e, t) => Object(V.h)(e, t),
 					postComponentForLayout: Q.b
 				}));
 
@@ -516,4 +516,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.b872764ea241c86c62a9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.ddc20d93763c5ba7368c.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.46617ccf8fd6d113ba50.js
-// Retrieved at 12/6/2021, 12:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.bda4e0760a7db0605363.js
+// Retrieved at 12/6/2021, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -1113,7 +1113,7 @@
 			const b = h.a.wrapped(l.b, "SubredditIcon", p.a),
 				f = h.a.span("Label", p.a),
 				y = Object(c.c)({
-					subredditOrProfile: u.H
+					subredditOrProfile: u.J
 				});
 			var v = Object(d.b)(y)(({
 				children: e,
@@ -2361,9 +2361,7 @@
 					backgroundColor: t
 				}), s.a.createElement("div", {
 					className: h.a.innerContainer
-				}, s.a.createElement("div", {
-					className: h.a.bannerNavContainer
-				}, I), v, (e => e.hero ? s.a.createElement(s.a.Fragment, null, e.hero) : null)(e), s.a.createElement("div", {
+				}, I, v, (e => e.hero ? s.a.createElement(s.a.Fragment, null, e.hero) : null)(e), s.a.createElement("div", {
 					style: {
 						maxWidth: R
 					}
@@ -2605,7 +2603,7 @@
 				ae = Object(d.c)({
 					isApiPending: K,
 					subredditOrProfile: (e, t) => {
-						const r = Object(ne.v)(e, {
+						const r = Object(ne.w)(e, {
 							subredditName: t.subredditName
 						});
 						if (!r) {
@@ -4642,4 +4640,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.46617ccf8fd6d113ba50.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.bda4e0760a7db0605363.js.map

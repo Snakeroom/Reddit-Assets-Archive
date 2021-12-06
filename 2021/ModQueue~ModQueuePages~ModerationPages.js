@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueue~ModQueuePages~ModerationPages.9dc880c8a083eb40ed9e.js
-// Retrieved at 12/6/2021, 12:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueue~ModQueuePages~ModerationPages.3dddd49a8da335872684.js
+// Retrieved at 12/6/2021, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueue~ModQueuePages~ModerationPages"], {
 		"./src/reddit/actions/bulkActions/index.ts": function(e, t, r) {
@@ -294,8 +294,8 @@
 				M = Object(n.a)(S.m),
 				N = Object(n.a)(S.l),
 				L = Object(n.a)(S.q),
-				P = Object(n.a)(S.p),
-				C = Object(n.a)(S.o),
+				C = Object(n.a)(S.p),
+				P = Object(n.a)(S.o),
 				D = Object(n.a)(S.w),
 				T = Object(n.a)(S.v),
 				U = Object(n.a)(S.u),
@@ -315,7 +315,7 @@
 							m = x, y = N, j = M;
 							break;
 						case a.rb.Spam:
-							m = L, y = C, j = P;
+							m = L, y = P, j = C;
 							break;
 						case a.rb.Unmoderated:
 							m = D, y = U, j = T;
@@ -543,7 +543,7 @@
 						if (e !== p.a.Approve && e !== p.a.Flair) {
 							let t, n;
 							const i = O.platform.currentPage && O.platform.currentPage.queryParams && O.platform.currentPage.queryParams.subreddit,
-								l = i && Object(j.A)(O, i);
+								l = i && Object(j.C)(O, i);
 							e === p.a.Remove && l && _.length > 1 && (t = s.fbt._("Add a removal reason", null, {
 								hk: "3gGDCl"
 							}), n = Object(d.fetchReasonsAndOpenModal)(l, _));
@@ -818,8 +818,8 @@
 				M = r("./src/reddit/actions/comment/moderation.ts"),
 				N = r("./src/reddit/actions/modal.ts"),
 				L = r("./src/reddit/actions/post.ts"),
-				P = r("./src/reddit/actions/toaster.ts"),
-				C = r("./src/reddit/constants/modals.ts"),
+				C = r("./src/reddit/actions/toaster.ts"),
+				P = r("./src/reddit/constants/modals.ts"),
 				D = r("./src/lib/makeApiRequest/index.ts"),
 				T = r("./src/lib/omitHeaders/index.ts"),
 				U = r("./src/reddit/constants/headers.ts"),
@@ -890,7 +890,7 @@
 						r(re({
 							subredditId: e,
 							reason: n
-						})), r(Object(P.f)({
+						})), r(Object(C.f)({
 							kind: z.b.SuccessMod,
 							text: s.fbt._("Removal reason added!", null, {
 								hk: "2WSh8N"
@@ -913,7 +913,7 @@
 					d.ok ? (r(oe({
 						subredditId: e,
 						reason: t
-					})), r(Object(P.f)({
+					})), r(Object(C.f)({
 						kind: z.b.SuccessMod,
 						text: s.fbt._("Removal reason saved", null, {
 							hk: "28ScuL"
@@ -931,7 +931,7 @@
 					d.ok ? (r(ie({
 						subredditId: e,
 						reasonId: t
-					})), r(Object(P.f)({
+					})), r(Object(C.f)({
 						kind: z.b.SuccessMod,
 						text: s.fbt._("Removal reason deleted", null, {
 							hk: "4xzgsa"
@@ -944,7 +944,7 @@
 					n.features.removalReasons.reasonOrder[e] && n.features.removalReasons.reasonOrder[e].length > 0 || r(ee(e)), r(pe({
 						subredditId: e,
 						itemIds: t
-					})), r(Object(N.i)(C.a.ADD_REMOVAL_REASON))
+					})), r(Object(N.i)(P.a.ADD_REMOVAL_REASON))
 				}, fe = Object(R.a)("REMOVALREASONS__SUBMIT_PENDING"), Oe = Object(R.a)("REMOVALREASONS__SUBMIT_SUCCESS"), ye = Object(R.a)("REMOVALREASONS__SUBMIT_FAILED"), je = Object(R.a)("REMOVALREASONS__MESSAGE_PENDING"), he = Object(R.a)("REMOVALREASONS__MESSAGE_PRIVATE_SUCCESS"), ve = Object(R.a)("REMOVALREASONS__MESSAGE_PUBLIC_SUCCESS"), _e = Object(R.a)("REMOVALREASONS__MESSAGE_FAILED"), ge = (e, t, r, s, a) => async (n, o, {
 					apiContext: d
 				}) => {
@@ -1047,7 +1047,7 @@
 						i = u.user.account && u.user.account.displayText;
 					if (!i) return;
 					o(fe());
-					const l = Object(P.f)({
+					const l = Object(C.f)({
 							kind: z.b.SuccessMod,
 							text: s.fbt._({
 								"*": "Added removal reason for {number} posts/comments",
@@ -1363,7 +1363,7 @@
 				M = r("./node_modules/lodash/omit.js"),
 				N = r.n(M);
 			const L = {};
-			var P = (e = L, t) => {
+			var C = (e = L, t) => {
 				switch (t.type) {
 					case R.g:
 					case R.k: {
@@ -1404,8 +1404,8 @@
 						return e
 				}
 			};
-			const C = {};
-			var D = (e = C, t) => {
+			const P = {};
+			var D = (e = P, t) => {
 				switch (t.type) {
 					case R.g: {
 						const {
@@ -1510,7 +1510,7 @@
 				},
 				K = Object(s.c)({
 					api: A,
-					models: P,
+					models: C,
 					pageInfo: D,
 					search: Q,
 					userOrder: q
@@ -1977,12 +1977,12 @@
 							return e
 					}
 				},
-				Pe = Object(s.c)({
+				Ce = Object(s.c)({
 					error: Ne,
 					pending: Le
 				}),
-				Ce = r("./node_modules/lodash/isEqual.js"),
-				De = r.n(Ce);
+				Pe = r("./node_modules/lodash/isEqual.js"),
+				De = r.n(Pe);
 			var Te = (e = null, t) => {
 					switch (t.type) {
 						case a.J:
@@ -2008,7 +2008,7 @@
 					}
 				},
 				Ue = Object(s.c)({
-					api: Pe,
+					api: Ce,
 					result: Te
 				});
 			const Fe = {};
@@ -2487,7 +2487,7 @@
 				}
 			};
 			const Lt = {};
-			var Pt = (e = Lt, t) => {
+			var Ct = (e = Lt, t) => {
 					switch (t.type) {
 						case Je.m: {
 							const {
@@ -2505,10 +2505,10 @@
 							return e
 					}
 				},
-				Ct = Object(s.c)({
+				Pt = Object(s.c)({
 					api: xt,
 					itemOrder: Nt,
-					loadMore: Pt
+					loadMore: Ct
 				});
 			var Dt = (e = null, t) => {
 				switch (t.type) {
@@ -2661,7 +2661,7 @@
 					edited: mt,
 					moderatedCommunitiesOrder: ht,
 					modqueue: Et,
-					reports: Ct,
+					reports: Pt,
 					spam: qt,
 					unmoderated: Yt
 				});
@@ -2935,4 +2935,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue~ModQueuePages~ModerationPages.9dc880c8a083eb40ed9e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue~ModQueuePages~ModerationPages.3dddd49a8da335872684.js.map

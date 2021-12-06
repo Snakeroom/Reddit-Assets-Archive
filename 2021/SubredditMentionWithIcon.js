@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.9a548374357bccaad3d8.js
-// Retrieved at 12/6/2021, 12:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.4b5a0b474b6774cbcce0.js
+// Retrieved at 12/6/2021, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditMentionWithIcon"], {
 		"./src/reddit/actions/subredditMention/constants.ts": function(e, t, s) {
@@ -201,7 +201,7 @@
 					apiContext: b
 				}) => {
 					let m = e.map(e => e.type === u.a.SUBREDDIT ? {
-						id: Object(I.A)(a(), e.name),
+						id: Object(I.C)(a(), e.name),
 						name: e.name,
 						type: e.type
 					} : {
@@ -278,7 +278,7 @@
 					apiContext: n
 				}) => {
 					const i = s(),
-						r = Object(I.H)(i, {
+						r = Object(I.J)(i, {
 							identifier: e
 						});
 					if (!r) throw new Error(`actions.subscription -- No subreddit or profile found with id ${e.id}`);
@@ -300,7 +300,7 @@
 							type: e.type,
 							name: r.name
 						},
-						S = () => Object(I.bb)(s(), {
+						S = () => Object(I.db)(s(), {
 							identifier: O
 						});
 					(S() || (await t(L([O], !0)), S())) && ((await Object(h.b)(n(), o, m)).ok || (t(w({
@@ -585,8 +585,8 @@
 			const {
 				fbt: j
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), I = Object(d.c)({
-				subreddit: _.P,
-				subredditAboutInfo: _.s
+				subreddit: _.R,
+				subredditAboutInfo: _.t
 			}), y = Object(r.b)(I);
 			class C extends i.a.Component {
 				constructor() {
@@ -754,11 +754,11 @@
 						r = Object(j.c)(i, {
 							subredditName: e
 						}),
-						o = !!Object(x.v)(i, {
+						o = !!Object(x.w)(i, {
 							subredditName: e
-						}) && !!Object(x.s)(i, {
+						}) && !!Object(x.t)(i, {
 							subredditName: e
-						}) || !!Object(x.Y)(i, {
+						}) || !!Object(x.ab)(i, {
 							subredditName: e
 						}),
 						d = Object(j.d)(i, {
@@ -833,7 +833,7 @@
 				return {
 					crosspost: s,
 					post: t,
-					subredditOrProfile: Object(x.H)(e, {
+					subredditOrProfile: Object(x.J)(e, {
 						identifier: t.belongsTo
 					})
 				}
@@ -952,7 +952,7 @@
 				isPending: j.c,
 				postIds: j.f,
 				subreddit: x.a,
-				subredditAboutInfo: x.s
+				subredditAboutInfo: x.t
 			}), de = Object(d.b)(oe, (e, {
 				subredditName: t,
 				isHoverable: s
@@ -1548,8 +1548,8 @@
 				o = s("./src/reddit/selectors/experiments/joinOptimizations.ts"),
 				d = s("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(n.b)(() => Object(i.c)({
-				isInJoinOptimizationsExperiment: e => Object(o.a)(e) || Object(o.c)(e) || Object(o.d)(e) || Object(o.g)(e),
-				userIsSubscriber: d.bb
+				isInJoinOptimizationsExperiment: e => Object(o.a)(e) || Object(o.d)(e) || Object(o.e)(e) || Object(o.i)(e),
+				userIsSubscriber: d.db
 			}), (e, {
 				identifier: t
 			}) => ({
@@ -2070,16 +2070,22 @@
 				return d
 			})), s.d(t, "b", (function() {
 				return c
-			})), s.d(t, "c", (function() {
-				return a
 			})), s.d(t, "d", (function() {
-				return l
-			})), s.d(t, "g", (function() {
-				return u
+				return a
 			})), s.d(t, "e", (function() {
+				return l
+			})), s.d(t, "i", (function() {
+				return u
+			})), s.d(t, "c", (function() {
 				return b
 			})), s.d(t, "f", (function() {
 				return m
+			})), s.d(t, "g", (function() {
+				return p
+			})), s.d(t, "j", (function() {
+				return h
+			})), s.d(t, "h", (function() {
+				return f
 			}));
 			var n = s("./node_modules/reselect/es/index.js"),
 				i = s("./src/reddit/constants/experiments.ts"),
@@ -2105,24 +2111,26 @@
 					experimentName: i.Ib,
 					experimentEligibilitySelector: o.e
 				}), e => e === i.db.Enabled),
-				b = (Object(n.a)(e => Object(r.c)(e, {
+				b = Object(n.a)(e => Object(r.c)(e, {
 					experimentName: i.Cb,
 					experimentEligibilitySelector: o.e
-				}), e => e === i.X.Enabled), Object(n.a)(e => Object(r.c)(e, {
+				}), e => e === i.X.Enabled),
+				m = Object(n.a)(e => Object(r.c)(e, {
 					experimentName: i.Fb,
 					experimentEligibilitySelector: o.e
-				}), e => e === i.ab.Enabled)),
-				m = Object(n.a)(e => Object(r.c)(e, {
+				}), e => e === i.ab.Enabled),
+				p = Object(n.a)(e => Object(r.c)(e, {
 					experimentName: i.Gb,
 					experimentEligibilitySelector: o.e
-				}), e => e === i.bb.Enabled);
-			Object(n.a)(e => Object(r.c)(e, {
-				experimentName: i.Jb,
-				experimentEligibilitySelector: o.e
-			}), e => e === i.eb.Enabled), Object(n.a)(e => Object(r.c)(e, {
-				experimentName: i.Hb,
-				experimentEligibilitySelector: o.e
-			}), e => e === i.cb.Enabled)
+				}), e => e === i.bb.Enabled),
+				h = Object(n.a)(e => Object(r.c)(e, {
+					experimentName: i.Jb,
+					experimentEligibilitySelector: o.e
+				}), e => e === i.eb.Enabled),
+				f = Object(n.a)(e => Object(r.c)(e, {
+					experimentName: i.Hb,
+					experimentEligibilitySelector: o.e
+				}), e => e === i.cb.Enabled)
 		},
 		"./src/redditGQL/operations/SubredditTopContent.json": function(e) {
 			e.exports = JSON.parse('{"id":"839d1a7694c8"}')
@@ -2135,4 +2143,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.9a548374357bccaad3d8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.4b5a0b474b6774cbcce0.js.map
