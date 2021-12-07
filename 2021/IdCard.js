@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.424b0cb610400d5e59ba.js
-// Retrieved at 12/6/2021, 6:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.fcff18b116d7560467f0.js
+// Retrieved at 12/7/2021, 9:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "AchievementsActions", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -3321,7 +3321,7 @@
 						}, {
 							rootMargin: `${-(Le.f+Le.n)}px 0px 0px 0px`,
 							threshold: [Wt, qt]
-						})), this.subscribeButtonRef && this.subscribeButtonObserver.unobserve(this.subscribeButtonRef), this.subscribeButtonRef = e, this.subscribeButtonObserver.observe(this.subscribeButtonRef))
+						})), this.subscribeButtonRef && this.subscribeButtonObserver.unobserve(this.subscribeButtonRef), e && (this.subscribeButtonRef = e, this.subscribeButtonObserver.observe(this.subscribeButtonRef)))
 					}, this.onClickModTools = () => this.props.sendEvent(Object(Ze.a)()), this.handleVisitCommunityClick = () => this.props.sendEvent(Object(Ye.a)("visit")), this.getListingNameToUse = () => {
 						const {
 							isLoggedIn: e,
@@ -5648,4 +5648,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.424b0cb610400d5e59ba.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.fcff18b116d7560467f0.js.map
