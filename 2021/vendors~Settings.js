@@ -1,7 +1,367 @@
-// https://www.redditstatic.com/desktop2x/vendors~Settings.fdaa05bc71fc39b3eb79.js
-// Retrieved at 3/11/2021, 9:20:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~Settings.71f28c4c637cd926b6dd.js
+// Retrieved at 12/7/2021, 10:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~Settings"], {
+		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
+			! function(e, t) {
+				"use strict";
+				t = t && Object.prototype.hasOwnProperty.call(t, "default") ? t.default : t;
+				var r = "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED";
+
+				function n() {}
+
+				function o() {}
+				o.resetWarningCache = n;
+				var i = function(e, t) {
+					return e(t = {
+						exports: {}
+					}, t.exports), t.exports
+				}((function(e) {
+					e.exports = function() {
+						function e(e, t, n, o, i, a) {
+							if (a !== r) {
+								var u = new Error("Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at http://fb.me/use-check-prop-types");
+								throw u.name = "Invariant Violation", u
+							}
+						}
+
+						function t() {
+							return e
+						}
+						e.isRequired = e;
+						var i = {
+							array: e,
+							bool: e,
+							func: e,
+							number: e,
+							object: e,
+							string: e,
+							symbol: e,
+							any: e,
+							arrayOf: t,
+							element: e,
+							elementType: e,
+							instanceOf: t,
+							node: e,
+							objectOf: t,
+							oneOf: t,
+							oneOfType: t,
+							shape: t,
+							exact: t,
+							checkPropTypes: o,
+							resetWarningCache: n
+						};
+						return i.PropTypes = i, i
+					}()
+				}));
+
+				function a(e) {
+					return (a = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e) {
+						return typeof e
+					} : function(e) {
+						return e && "function" == typeof Symbol && e.constructor === Symbol && e !== Symbol.prototype ? "symbol" : typeof e
+					})(e)
+				}
+
+				function u(e, t, r) {
+					return t in e ? Object.defineProperty(e, t, {
+						value: r,
+						enumerable: !0,
+						configurable: !0,
+						writable: !0
+					}) : e[t] = r, e
+				}
+
+				function s(e, t) {
+					var r = Object.keys(e);
+					if (Object.getOwnPropertySymbols) {
+						var n = Object.getOwnPropertySymbols(e);
+						t && (n = n.filter((function(t) {
+							return Object.getOwnPropertyDescriptor(e, t).enumerable
+						}))), r.push.apply(r, n)
+					}
+					return r
+				}
+
+				function c(e) {
+					for (var t = 1; t < arguments.length; t++) {
+						var r = null != arguments[t] ? arguments[t] : {};
+						t % 2 ? s(Object(r), !0).forEach((function(t) {
+							u(e, t, r[t])
+						})) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r)) : s(Object(r)).forEach((function(t) {
+							Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
+						}))
+					}
+					return e
+				}
+
+				function l(e, t) {
+					return function(e) {
+						if (Array.isArray(e)) return e
+					}(e) || function(e, t) {
+						if ("undefined" != typeof Symbol && Symbol.iterator in Object(e)) {
+							var r = [],
+								n = !0,
+								o = !1,
+								i = void 0;
+							try {
+								for (var a, u = e[Symbol.iterator](); !(n = (a = u.next()).done) && (r.push(a.value), !t || r.length !== t); n = !0);
+							} catch (s) {
+								o = !0, i = s
+							} finally {
+								try {
+									n || null == u.return || u.return()
+								} finally {
+									if (o) throw i
+								}
+							}
+							return r
+						}
+					}(e, t) || function(e, t) {
+						if (e) {
+							if ("string" == typeof e) return d(e, t);
+							var r = Object.prototype.toString.call(e).slice(8, -1);
+							return "Object" === r && e.constructor && (r = e.constructor.name), "Map" === r || "Set" === r ? Array.from(e) : "Arguments" === r || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(r) ? d(e, t) : void 0
+						}
+					}(e, t) || function() {
+						throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")
+					}()
+				}
+
+				function d(e, t) {
+					(null == t || t > e.length) && (t = e.length);
+					for (var r = 0, n = new Array(t); r < t; r++) n[r] = e[r];
+					return n
+				}
+				var f = function(e) {
+						var r = t.useRef(e);
+						return t.useEffect((function() {
+							r.current = e
+						}), [e]), r.current
+					},
+					h = function(e) {
+						return null !== e && "object" === a(e)
+					},
+					p = function(e, t, r) {
+						return h(e) ? Object.keys(e).reduce((function(n, o) {
+							var i = !h(t) || ! function e(t, r) {
+								if (!h(t) || !h(r)) return t === r;
+								var n = Array.isArray(t);
+								if (n !== Array.isArray(r)) return !1;
+								var o = "[object Object]" === Object.prototype.toString.call(t);
+								if (o !== ("[object Object]" === Object.prototype.toString.call(r))) return !1;
+								if (!o && !n) return !1;
+								var i = Object.keys(t),
+									a = Object.keys(r);
+								if (i.length !== a.length) return !1;
+								for (var u = {}, s = 0; s < i.length; s += 1) u[i[s]] = !0;
+								for (var c = 0; c < a.length; c += 1) u[a[c]] = !0;
+								var l = Object.keys(u);
+								if (l.length !== i.length) return !1;
+								var d = t,
+									f = r;
+								return l.every((function(t) {
+									return e(d[t], f[t])
+								}))
+							}(e[o], t[o]);
+							return r.includes(o) ? (i && console.warn("Unsupported prop change: options.".concat(o, " is not a mutable property.")), n) : i ? c(c({}, n || {}), {}, u({}, o, e[o])) : n
+						}), null) : null
+					},
+					g = function(e) {
+						if (null === e || h(t = e) && "function" == typeof t.elements && "function" == typeof t.createToken && "function" == typeof t.createPaymentMethod && "function" == typeof t.confirmCardPayment) return e;
+						var t;
+						throw new Error("Invalid prop `stripe` supplied to `Elements`. We recommend using the `loadStripe` utility from `@stripe/stripe-js`. See https://stripe.com/docs/stripe-js/react#elements-props-stripe for details.")
+					},
+					m = function(e) {
+						if (function(e) {
+								return h(e) && "function" == typeof e.then
+							}(e)) return {
+							tag: "async",
+							stripePromise: Promise.resolve(e).then(g)
+						};
+						var t = g(e);
+						return null === t ? {
+							tag: "empty"
+						} : {
+							tag: "sync",
+							stripe: t
+						}
+					},
+					v = t.createContext(null);
+				v.displayName = "ElementsContext";
+				var y = function(e) {
+					var r = e.stripe,
+						n = e.options,
+						o = e.children,
+						i = t.useRef(!1),
+						a = t.useRef(!0),
+						u = t.useMemo((function() {
+							return m(r)
+						}), [r]),
+						s = l(t.useState((function() {
+							return {
+								stripe: null,
+								elements: null
+							}
+						})), 2),
+						c = s[0],
+						d = s[1],
+						h = f(r);
+					null !== h && h !== r && console.warn("Unsupported prop change on Elements: You cannot change the `stripe` prop after setting it."), i.current || ("sync" === u.tag && (i.current = !0, d({
+						stripe: u.stripe,
+						elements: u.stripe.elements(n)
+					})), "async" === u.tag && (i.current = !0, u.stripePromise.then((function(e) {
+						e && a.current && d({
+							stripe: e,
+							elements: e.elements(n)
+						})
+					}))));
+					var g = f(n);
+					return t.useEffect((function() {
+						if (c.elements) {
+							var e = p(n, g, ["clientSecret", "fonts"]);
+							e && c.elements.update(e)
+						}
+					}), [n, g, c.elements]), t.useEffect((function() {
+						return function() {
+							a.current = !1
+						}
+					}), []), t.useEffect((function() {
+						var e = c.stripe;
+						e && e._registerWrapper && e.registerAppInfo && (e._registerWrapper({
+							name: "react-stripe-js",
+							version: "1.6.0"
+						}), e.registerAppInfo({
+							name: "react-stripe-js",
+							version: "1.6.0",
+							url: "https://stripe.com/docs/stripe-js/react"
+						}))
+					}), [c.stripe]), t.createElement(v.Provider, {
+						value: c
+					}, o)
+				};
+				y.propTypes = {
+					stripe: i.any,
+					options: i.object
+				};
+				var b = function(e) {
+						return function(e, t) {
+							if (!e) throw new Error("Could not find Elements context; You need to wrap the part of your app that ".concat(t, " in an <Elements> provider."));
+							return e
+						}(t.useContext(v), e)
+					},
+					_ = function(e) {
+						return (0, e.children)(b("mounts <ElementsConsumer>"))
+					};
+				_.propTypes = {
+					children: i.func.isRequired
+				};
+				var w = function(e) {
+						var r = t.useRef(e);
+						return t.useEffect((function() {
+								r.current = e
+							}), [e]),
+							function() {
+								r.current && r.current.apply(r, arguments)
+							}
+					},
+					E = function() {},
+					j = function(e, r) {
+						var n, o = "".concat((n = e).charAt(0).toUpperCase() + n.slice(1), "Element"),
+							a = r ? function(e) {
+								b("mounts <".concat(o, ">"));
+								var r = e.id,
+									n = e.className;
+								return t.createElement("div", {
+									id: r,
+									className: n
+								})
+							} : function(r) {
+								var n = r.id,
+									i = r.className,
+									a = r.options,
+									u = void 0 === a ? {} : a,
+									s = r.onBlur,
+									c = void 0 === s ? E : s,
+									l = r.onFocus,
+									d = void 0 === l ? E : l,
+									h = r.onReady,
+									g = void 0 === h ? E : h,
+									m = r.onChange,
+									v = void 0 === m ? E : m,
+									y = r.onEscape,
+									_ = void 0 === y ? E : y,
+									j = r.onClick,
+									A = void 0 === j ? E : j,
+									P = b("mounts <".concat(o, ">")).elements,
+									B = t.useRef(null),
+									C = t.useRef(null),
+									R = w(g),
+									T = w(c),
+									q = w(d),
+									I = w(A),
+									x = w(v),
+									S = w(_);
+								t.useLayoutEffect((function() {
+									if (null == B.current && P && null != C.current) {
+										var t = P.create(e, u);
+										B.current = t, t.mount(C.current), t.on("ready", (function() {
+											return R(t)
+										})), t.on("change", x), t.on("blur", T), t.on("focus", q), t.on("escape", S), t.on("click", I)
+									}
+								}));
+								var M = f(u);
+								return t.useEffect((function() {
+									if (B.current) {
+										var e = p(u, M, ["paymentRequest"]);
+										e && B.current.update(e)
+									}
+								}), [u, M]), t.useLayoutEffect((function() {
+									return function() {
+										B.current && B.current.destroy()
+									}
+								}), []), t.createElement("div", {
+									id: n,
+									className: i,
+									ref: C
+								})
+							};
+						return a.propTypes = {
+							id: i.string,
+							className: i.string,
+							onChange: i.func,
+							onBlur: i.func,
+							onFocus: i.func,
+							onReady: i.func,
+							onClick: i.func,
+							options: i.object
+						}, a.displayName = o, a.__elementType = e, a
+					},
+					A = "undefined" == typeof window,
+					P = j("auBankAccount", A),
+					B = j("card", A),
+					C = j("cardNumber", A),
+					R = j("cardExpiry", A),
+					T = j("cardCvc", A),
+					q = j("fpxBank", A),
+					I = j("iban", A),
+					x = j("idealBank", A),
+					S = j("p24Bank", A),
+					M = j("epsBank", A),
+					N = j("payment", A),
+					k = j("paymentRequestButton", A),
+					O = j("linkAuthentication", A),
+					L = j("shippingAddress", A),
+					U = j("afterpayClearpayMessage", A);
+				e.AfterpayClearpayMessageElement = U, e.AuBankAccountElement = P, e.CardCvcElement = T, e.CardElement = B, e.CardExpiryElement = R, e.CardNumberElement = C, e.Elements = y, e.ElementsConsumer = _, e.EpsBankElement = M, e.FpxBankElement = q, e.IbanElement = I, e.IdealBankElement = x, e.LinkAuthenticationElement = O, e.P24BankElement = S, e.PaymentElement = N, e.PaymentRequestButtonElement = k, e.ShippingAddressElement = L, e.useElements = function() {
+					return b("calls useElements()").elements
+				}, e.useStripe = function() {
+					return b("calls useStripe()").stripe
+				}, Object.defineProperty(e, "__esModule", {
+					value: !0
+				})
+			}(t, r("./node_modules/react/index.js"))
+		},
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, r) {
 			"use strict";
 			var n = {
@@ -9,9 +369,9 @@
 					var o = {},
 						i = {};
 					i[t] = 0;
-					var a, s, u, c, l, d, f, h = n.PriorityQueue.make();
+					var a, u, s, c, l, d, f, h = n.PriorityQueue.make();
 					for (h.push(t, 0); !h.empty();)
-						for (u in s = (a = h.pop()).value, c = a.cost, l = e[s] || {}) l.hasOwnProperty(u) && (d = c + l[u], f = i[u], (void 0 === i[u] || f > d) && (i[u] = d, h.push(u, d), o[u] = s));
+						for (s in u = (a = h.pop()).value, c = a.cost, l = e[u] || {}) l.hasOwnProperty(s) && (d = c + l[s], f = i[s], (void 0 === i[s] || f > d) && (i[s] = d, h.push(s, d), o[s] = u));
 					if (void 0 !== r && void 0 === i[r]) {
 						var p = ["Could not find a path from ", t, " to ", r, "."].join("");
 						throw new Error(p)
@@ -57,8 +417,8 @@
 			var r = Math.ceil,
 				n = Math.max;
 			e.exports = function(e, t, o, i) {
-				for (var a = -1, s = n(r((t - e) / (o || 1)), 0), u = Array(s); s--;) u[i ? s : ++a] = e, e += o;
-				return u
+				for (var a = -1, u = n(r((t - e) / (o || 1)), 0), s = Array(u); u--;) s[i ? u : ++a] = e, e += o;
+				return s
 			}
 		},
 		"./node_modules/lodash/_createRange.js": function(e, t, r) {
@@ -69,6 +429,13 @@
 				return function(t, r, a) {
 					return a && "number" != typeof a && o(t, r, a) && (r = a = void 0), t = i(t), void 0 === r ? (r = t, t = 0) : r = i(r), a = void 0 === a ? t < r ? 1 : -1 : i(a), n(t, r, a, e)
 				}
+			}
+		},
+		"./node_modules/lodash/flattenDeep.js": function(e, t, r) {
+			var n = r("./node_modules/lodash/_baseFlatten.js"),
+				o = 1 / 0;
+			e.exports = function(e) {
+				return (null == e ? 0 : e.length) ? n(e, o) : []
 			}
 		},
 		"./node_modules/lodash/range.js": function(e, t, r) {
@@ -89,24 +456,24 @@
 				i = r("./node_modules/qrcode/lib/renderer/canvas.js"),
 				a = r("./node_modules/qrcode/lib/renderer/svg-tag.js");
 
-			function s(e, t, r, i, a) {
-				var s = [].slice.call(arguments, 1),
-					u = s.length,
-					c = "function" == typeof s[u - 1];
+			function u(e, t, r, i, a) {
+				var u = [].slice.call(arguments, 1),
+					s = u.length,
+					c = "function" == typeof u[s - 1];
 				if (!c && !n()) throw new Error("Callback required as last argument");
 				if (!c) {
-					if (u < 1) throw new Error("Too few arguments provided");
-					return 1 === u ? (r = t, t = i = void 0) : 2 !== u || t.getContext || (i = r, r = t, t = void 0), new Promise((function(n, a) {
+					if (s < 1) throw new Error("Too few arguments provided");
+					return 1 === s ? (r = t, t = i = void 0) : 2 !== s || t.getContext || (i = r, r = t, t = void 0), new Promise((function(n, a) {
 						try {
-							var s = o.create(r, i);
-							n(e(s, t, i))
-						} catch (u) {
-							a(u)
+							var u = o.create(r, i);
+							n(e(u, t, i))
+						} catch (s) {
+							a(s)
 						}
 					}))
 				}
-				if (u < 2) throw new Error("Too few arguments provided");
-				2 === u ? (a = r, r = t, t = i = void 0) : 3 === u && (t.getContext && void 0 === a ? (a = i, i = void 0) : (a = i, i = r, r = t, t = void 0));
+				if (s < 2) throw new Error("Too few arguments provided");
+				2 === s ? (a = r, r = t, t = i = void 0) : 3 === s && (t.getContext && void 0 === a ? (a = i, i = void 0) : (a = i, i = r, r = t, t = void 0));
 				try {
 					var l = o.create(r, i);
 					a(null, e(l, t, i))
@@ -114,7 +481,7 @@
 					a(d)
 				}
 			}
-			t.create = o.create, t.toCanvas = s.bind(null, i.render), t.toDataURL = s.bind(null, i.renderToDataURL), t.toString = s.bind(null, (function(e, t, r) {
+			t.create = o.create, t.toCanvas = u.bind(null, i.render), t.toDataURL = u.bind(null, i.renderToDataURL), t.toString = u.bind(null, (function(e, t, r) {
 				return a.render(e, r)
 			}))
 		},
@@ -387,11 +754,11 @@
 			}, t.from = function(e) {
 				return t.isValid(e) ? parseInt(e, 10) : void 0
 			}, t.getPenaltyN1 = function(e) {
-				for (var t = e.size, n = 0, o = 0, i = 0, a = null, s = null, u = 0; u < t; u++) {
-					o = i = 0, a = s = null;
+				for (var t = e.size, n = 0, o = 0, i = 0, a = null, u = null, s = 0; s < t; s++) {
+					o = i = 0, a = u = null;
 					for (var c = 0; c < t; c++) {
-						var l = e.get(u, c);
-						l === a ? o++ : (o >= 5 && (n += r + (o - 5)), a = l, o = 1), (l = e.get(c, u)) === s ? i++ : (i >= 5 && (n += r + (i - 5)), s = l, i = 1)
+						var l = e.get(s, c);
+						l === a ? o++ : (o >= 5 && (n += r + (o - 5)), a = l, o = 1), (l = e.get(c, s)) === u ? i++ : (i >= 5 && (n += r + (i - 5)), u = l, i = 1)
 					}
 					o >= 5 && (n += r + (o - 5)), i >= 5 && (n += r + (i - 5))
 				}
@@ -406,7 +773,7 @@
 			}, t.getPenaltyN3 = function(e) {
 				for (var t = e.size, r = 0, n = 0, i = 0, a = 0; a < t; a++) {
 					n = i = 0;
-					for (var s = 0; s < t; s++) n = n << 1 & 2047 | e.get(a, s), s >= 10 && (1488 === n || 93 === n) && r++, i = i << 1 & 2047 | e.get(s, a), s >= 10 && (1488 === i || 93 === i) && r++
+					for (var u = 0; u < t; u++) n = n << 1 & 2047 | e.get(a, u), u >= 10 && (1488 === n || 93 === n) && r++, i = i << 1 & 2047 | e.get(u, a), u >= 10 && (1488 === i || 93 === i) && r++
 				}
 				return r * o
 			}, t.getPenaltyN4 = function(e) {
@@ -418,8 +785,8 @@
 			}, t.getBestMask = function(e, r) {
 				for (var n = Object.keys(t.Patterns).length, o = 0, i = 1 / 0, a = 0; a < n; a++) {
 					r(a), t.applyMask(a, e);
-					var s = t.getPenaltyN1(e) + t.getPenaltyN2(e) + t.getPenaltyN3(e) + t.getPenaltyN4(e);
-					t.applyMask(a, e), s < i && (i = s, o = a)
+					var u = t.getPenaltyN1(e) + t.getPenaltyN2(e) + t.getPenaltyN3(e) + t.getPenaltyN4(e);
+					t.applyMask(a, e), u < i && (i = u, o = a)
 				}
 				return o
 			}
@@ -508,8 +875,8 @@
 			}, t.mod = function(e, t) {
 				for (var r = n.from(e); r.length - t.length >= 0;) {
 					for (var i = r[0], a = 0; a < t.length; a++) r[a] ^= o.mul(t[a], i);
-					for (var s = 0; s < r.length && 0 === r[s];) s++;
-					r = r.slice(s)
+					for (var u = 0; u < r.length && 0 === r[u];) u++;
+					r = r.slice(u)
 				}
 				return r
 			}, t.generateECPolynomial = function(e) {
@@ -522,8 +889,8 @@
 				o = r("./node_modules/qrcode/lib/core/utils.js"),
 				i = r("./node_modules/qrcode/lib/core/error-correction-level.js"),
 				a = r("./node_modules/qrcode/lib/core/bit-buffer.js"),
-				s = r("./node_modules/qrcode/lib/core/bit-matrix.js"),
-				u = r("./node_modules/qrcode/lib/core/alignment-pattern.js"),
+				u = r("./node_modules/qrcode/lib/core/bit-matrix.js"),
+				s = r("./node_modules/qrcode/lib/core/alignment-pattern.js"),
 				c = r("./node_modules/qrcode/lib/core/finder-pattern.js"),
 				l = r("./node_modules/qrcode/lib/core/mask-pattern.js"),
 				d = r("./node_modules/qrcode/lib/core/error-correction-code.js"),
@@ -546,25 +913,25 @@
 				r.forEach((function(t) {
 					i.put(t.mode.bit, 4), i.put(t.getLength(), g.getCharCountIndicator(t.mode, e)), t.write(i)
 				}));
-				var s = 8 * (o.getSymbolTotalCodewords(e) - d.getTotalCodewordsCount(e, t));
-				for (i.getLengthInBits() + 4 <= s && i.put(0, 4); i.getLengthInBits() % 8 != 0;) i.putBit(0);
-				for (var u = (s - i.getLengthInBits()) / 8, c = 0; c < u; c++) i.put(c % 2 ? 17 : 236, 8);
+				var u = 8 * (o.getSymbolTotalCodewords(e) - d.getTotalCodewordsCount(e, t));
+				for (i.getLengthInBits() + 4 <= u && i.put(0, 4); i.getLengthInBits() % 8 != 0;) i.putBit(0);
+				for (var s = (u - i.getLengthInBits()) / 8, c = 0; c < s; c++) i.put(c % 2 ? 17 : 236, 8);
 				return function(e, t, r) {
-					for (var i = o.getSymbolTotalCodewords(t), a = d.getTotalCodewordsCount(t, r), s = i - a, u = d.getBlocksCount(t, r), c = u - i % u, l = Math.floor(i / u), h = Math.floor(s / u), p = h + 1, g = l - h, m = new f(g), v = 0, y = new Array(u), b = new Array(u), w = 0, T = n.from(e.buffer), _ = 0; _ < u; _++) {
-						var E = _ < c ? h : p;
-						y[_] = T.slice(v, v + E), b[_] = m.encode(y[_]), v += E, w = Math.max(w, E)
+					for (var i = o.getSymbolTotalCodewords(t), a = d.getTotalCodewordsCount(t, r), u = i - a, s = d.getBlocksCount(t, r), c = s - i % s, l = Math.floor(i / s), h = Math.floor(u / s), p = h + 1, g = l - h, m = new f(g), v = 0, y = new Array(s), b = new Array(s), _ = 0, w = n.from(e.buffer), E = 0; E < s; E++) {
+						var j = E < c ? h : p;
+						y[E] = w.slice(v, v + j), b[E] = m.encode(y[E]), v += j, _ = Math.max(_, j)
 					}
-					var A, j, C = n.alloc(i),
-						P = 0;
-					for (A = 0; A < w; A++)
-						for (j = 0; j < u; j++) A < y[j].length && (C[P++] = y[j][A]);
+					var A, P, B = n.alloc(i),
+						C = 0;
+					for (A = 0; A < _; A++)
+						for (P = 0; P < s; P++) A < y[P].length && (B[C++] = y[P][A]);
 					for (A = 0; A < g; A++)
-						for (j = 0; j < u; j++) C[P++] = b[j][A];
-					return C
+						for (P = 0; P < s; P++) B[C++] = b[P][A];
+					return B
 				}(i, e, t)
 			}
 
-			function w(e, t, r, n) {
+			function _(e, t, r, n) {
 				var i;
 				if (v(e)) i = m.fromArray(e);
 				else {
@@ -583,40 +950,40 @@
 				} else t = f;
 				var p = b(t, r, i),
 					g = o.getSymbolSize(t),
-					w = new s(g);
+					_ = new u(g);
 				return function(e, t) {
 						for (var r = e.size, n = c.getPositions(t), o = 0; o < n.length; o++)
-							for (var i = n[o][0], a = n[o][1], s = -1; s <= 7; s++)
-								if (!(i + s <= -1 || r <= i + s))
-									for (var u = -1; u <= 7; u++) a + u <= -1 || r <= a + u || (s >= 0 && s <= 6 && (0 === u || 6 === u) || u >= 0 && u <= 6 && (0 === s || 6 === s) || s >= 2 && s <= 4 && u >= 2 && u <= 4 ? e.set(i + s, a + u, !0, !0) : e.set(i + s, a + u, !1, !0))
-					}(w, t),
+							for (var i = n[o][0], a = n[o][1], u = -1; u <= 7; u++)
+								if (!(i + u <= -1 || r <= i + u))
+									for (var s = -1; s <= 7; s++) a + s <= -1 || r <= a + s || (u >= 0 && u <= 6 && (0 === s || 6 === s) || s >= 0 && s <= 6 && (0 === u || 6 === u) || u >= 2 && u <= 4 && s >= 2 && s <= 4 ? e.set(i + u, a + s, !0, !0) : e.set(i + u, a + s, !1, !0))
+					}(_, t),
 					function(e) {
 						for (var t = e.size, r = 8; r < t - 8; r++) {
 							var n = r % 2 == 0;
 							e.set(r, 6, n, !0), e.set(6, r, n, !0)
 						}
-					}(w),
+					}(_),
 					function(e, t) {
-						for (var r = u.getPositions(t), n = 0; n < r.length; n++)
+						for (var r = s.getPositions(t), n = 0; n < r.length; n++)
 							for (var o = r[n][0], i = r[n][1], a = -2; a <= 2; a++)
-								for (var s = -2; s <= 2; s++) - 2 === a || 2 === a || -2 === s || 2 === s || 0 === a && 0 === s ? e.set(o + a, i + s, !0, !0) : e.set(o + a, i + s, !1, !0)
-					}(w, t), y(w, r, 0), t >= 7 && function(e, t) {
-						for (var r, n, o, i = e.size, a = h.getEncodedBits(t), s = 0; s < 18; s++) r = Math.floor(s / 3), n = s % 3 + i - 8 - 3, o = 1 == (a >> s & 1), e.set(r, n, o, !0), e.set(n, r, o, !0)
-					}(w, t),
+								for (var u = -2; u <= 2; u++) - 2 === a || 2 === a || -2 === u || 2 === u || 0 === a && 0 === u ? e.set(o + a, i + u, !0, !0) : e.set(o + a, i + u, !1, !0)
+					}(_, t), y(_, r, 0), t >= 7 && function(e, t) {
+						for (var r, n, o, i = e.size, a = h.getEncodedBits(t), u = 0; u < 18; u++) r = Math.floor(u / 3), n = u % 3 + i - 8 - 3, o = 1 == (a >> u & 1), e.set(r, n, o, !0), e.set(n, r, o, !0)
+					}(_, t),
 					function(e, t) {
-						for (var r = e.size, n = -1, o = r - 1, i = 7, a = 0, s = r - 1; s > 0; s -= 2)
-							for (6 === s && s--;;) {
-								for (var u = 0; u < 2; u++)
-									if (!e.isReserved(o, s - u)) {
+						for (var r = e.size, n = -1, o = r - 1, i = 7, a = 0, u = r - 1; u > 0; u -= 2)
+							for (6 === u && u--;;) {
+								for (var s = 0; s < 2; s++)
+									if (!e.isReserved(o, u - s)) {
 										var c = !1;
-										a < t.length && (c = 1 == (t[a] >>> i & 1)), e.set(o, s - u, c), -1 === --i && (a++, i = 7)
+										a < t.length && (c = 1 == (t[a] >>> i & 1)), e.set(o, u - s, c), -1 === --i && (a++, i = 7)
 									} if ((o += n) < 0 || r <= o) {
 									o -= n, n = -n;
 									break
 								}
 							}
-					}(w, p), isNaN(n) && (n = l.getBestMask(w, y.bind(null, w, r))), l.applyMask(n, w), y(w, r, n), {
-						modules: w,
+					}(_, p), isNaN(n) && (n = l.getBestMask(_, y.bind(null, _, r))), l.applyMask(n, _), y(_, r, n), {
+						modules: _,
 						version: t,
 						errorCorrectionLevel: r,
 						maskPattern: n,
@@ -626,7 +993,7 @@
 			t.create = function(e, t) {
 				if (void 0 === e || "" === e) throw new Error("No input text");
 				var r, n, a = i.M;
-				return void 0 !== t && (a = i.from(t.errorCorrectionLevel, i.M), r = h.from(t.version), n = l.from(t.maskPattern), t.toSJISFunc && o.setToSJISFunction(t.toSJISFunc)), w(e, r, a, n)
+				return void 0 !== t && (a = i.from(t.errorCorrectionLevel, i.M), r = h.from(t.version), n = l.from(t.maskPattern), t.toSJISFunc && o.setToSJISFunction(t.toSJISFunc)), _(e, r, a, n)
 			}
 		},
 		"./node_modules/qrcode/lib/core/reed-solomon-encoder.js": function(e, t, r) {
@@ -644,10 +1011,10 @@
 				var t = n.alloc(this.degree),
 					r = i.concat([e, t], e.length + this.degree),
 					a = o.mod(r, this.genPoly),
-					s = this.degree - a.length;
-				if (s > 0) {
-					var u = n.alloc(this.degree);
-					return a.copy(u, s), u
+					u = this.degree - a.length;
+				if (u > 0) {
+					var s = n.alloc(this.degree);
+					return a.copy(s, u), s
 				}
 				return a
 			}, e.exports = a
@@ -672,8 +1039,8 @@
 				o = r("./node_modules/qrcode/lib/core/numeric-data.js"),
 				i = r("./node_modules/qrcode/lib/core/alphanumeric-data.js"),
 				a = r("./node_modules/qrcode/lib/core/byte-data.js"),
-				s = r("./node_modules/qrcode/lib/core/kanji-data.js"),
-				u = r("./node_modules/qrcode/lib/core/regex.js"),
+				u = r("./node_modules/qrcode/lib/core/kanji-data.js"),
+				s = r("./node_modules/qrcode/lib/core/regex.js"),
 				c = r("./node_modules/qrcode/lib/core/utils.js"),
 				l = r("./node_modules/dijkstrajs/dijkstra.js");
 
@@ -692,9 +1059,9 @@
 			}
 
 			function h(e) {
-				var t, r, o = f(u.NUMERIC, n.NUMERIC, e),
-					i = f(u.ALPHANUMERIC, n.ALPHANUMERIC, e);
-				return c.isKanjiModeEnabled() ? (t = f(u.BYTE, n.BYTE, e), r = f(u.KANJI, n.KANJI, e)) : (t = f(u.BYTE_KANJI, n.BYTE, e), r = []), o.concat(i, t, r).sort((function(e, t) {
+				var t, r, o = f(s.NUMERIC, n.NUMERIC, e),
+					i = f(s.ALPHANUMERIC, n.ALPHANUMERIC, e);
+				return c.isKanjiModeEnabled() ? (t = f(s.BYTE, n.BYTE, e), r = f(s.KANJI, n.KANJI, e)) : (t = f(s.BYTE_KANJI, n.BYTE, e), r = []), o.concat(i, t, r).sort((function(e, t) {
 					return e.index - t.index
 				})).map((function(e) {
 					return {
@@ -712,22 +1079,22 @@
 					case n.ALPHANUMERIC:
 						return i.getBitsLength(e);
 					case n.KANJI:
-						return s.getBitsLength(e);
+						return u.getBitsLength(e);
 					case n.BYTE:
 						return a.getBitsLength(e)
 				}
 			}
 
 			function g(e, t) {
-				var r, u = n.getBestModeForData(e);
-				if ((r = n.from(t, u)) !== n.BYTE && r.bit < u.bit) throw new Error('"' + e + '" cannot be encoded with mode ' + n.toString(r) + ".\n Suggested mode is: " + n.toString(u));
+				var r, s = n.getBestModeForData(e);
+				if ((r = n.from(t, s)) !== n.BYTE && r.bit < s.bit) throw new Error('"' + e + '" cannot be encoded with mode ' + n.toString(r) + ".\n Suggested mode is: " + n.toString(s));
 				switch (r !== n.KANJI || c.isKanjiModeEnabled() || (r = n.BYTE), r) {
 					case n.NUMERIC:
 						return new o(e);
 					case n.ALPHANUMERIC:
 						return new i(e);
 					case n.KANJI:
-						return new s(e);
+						return new u(e);
 					case n.BYTE:
 						return new a(e)
 				}
@@ -741,10 +1108,10 @@
 						for (var r = {}, o = {
 								start: {}
 							}, i = ["start"], a = 0; a < e.length; a++) {
-							for (var s = e[a], u = [], c = 0; c < s.length; c++) {
-								var l = s[c],
+							for (var u = e[a], s = [], c = 0; c < u.length; c++) {
+								var l = u[c],
 									d = "" + a + c;
-								u.push(d), r[d] = {
+								s.push(d), r[d] = {
 									node: l,
 									lastCount: 0
 								}, o[d] = {};
@@ -753,7 +1120,7 @@
 									r[h] && r[h].node.mode === l.mode ? (o[h][d] = p(r[h].lastCount + l.length, l.mode) - p(r[h].lastCount, l.mode), r[h].lastCount += l.length) : (r[h] && (r[h].lastCount = l.length), o[h][d] = p(l.length, l.mode) + 4 + n.getCharCountIndicator(l.mode, t))
 								}
 							}
-							i = u
+							i = s
 						}
 						for (f = 0; f < i.length; f++) o[i[f]].end = 0;
 						return {
@@ -798,7 +1165,7 @@
 							}
 						}
 						return t
-					}(h(e, c.isKanjiModeEnabled())), r), i = l.find_path(o.map, "start", "end"), a = [], s = 1; s < i.length - 1; s++) a.push(o.table[i[s]].node);
+					}(h(e, c.isKanjiModeEnabled())), r), i = l.find_path(o.map, "start", "end"), a = [], u = 1; u < i.length - 1; u++) a.push(o.table[i[u]].node);
 				return t.fromArray(function(e) {
 					return e.reduce((function(e, t) {
 						var r = e.length - 1 >= 0 ? e[e.length - 1] : null;
@@ -839,8 +1206,8 @@
 				o = r("./node_modules/qrcode/lib/core/error-correction-code.js"),
 				i = r("./node_modules/qrcode/lib/core/error-correction-level.js"),
 				a = r("./node_modules/qrcode/lib/core/mode.js"),
-				s = r("./node_modules/qrcode/lib/core/version-check.js"),
-				u = r("./node_modules/qrcode/node_modules/isarray/index.js"),
+				u = r("./node_modules/qrcode/lib/core/version-check.js"),
+				s = r("./node_modules/qrcode/node_modules/isarray/index.js"),
 				c = n.getBCHDigit(7973);
 
 			function l(e, t) {
@@ -855,27 +1222,27 @@
 				})), r
 			}
 			t.from = function(e, t) {
-				return s.isValid(e) ? parseInt(e, 10) : t
+				return u.isValid(e) ? parseInt(e, 10) : t
 			}, t.getCapacity = function(e, t, r) {
-				if (!s.isValid(e)) throw new Error("Invalid QR Code version");
+				if (!u.isValid(e)) throw new Error("Invalid QR Code version");
 				void 0 === r && (r = a.BYTE);
 				var i = 8 * (n.getSymbolTotalCodewords(e) - o.getTotalCodewordsCount(e, t));
 				if (r === a.MIXED) return i;
-				var u = i - l(r, e);
+				var s = i - l(r, e);
 				switch (r) {
 					case a.NUMERIC:
-						return Math.floor(u / 10 * 3);
+						return Math.floor(s / 10 * 3);
 					case a.ALPHANUMERIC:
-						return Math.floor(u / 11 * 2);
+						return Math.floor(s / 11 * 2);
 					case a.KANJI:
-						return Math.floor(u / 13);
+						return Math.floor(s / 13);
 					case a.BYTE:
 					default:
-						return Math.floor(u / 8)
+						return Math.floor(s / 8)
 				}
 			}, t.getBestVersionForData = function(e, r) {
 				var n, o = i.from(r, i.M);
-				if (u(e)) {
+				if (s(e)) {
 					if (e.length > 1) return function(e, r) {
 						for (var n = 1; n <= 40; n++) {
 							if (d(e, n) <= t.getCapacity(n, r, a.MIXED)) return n
@@ -889,7 +1256,7 @@
 						if (r <= t.getCapacity(o, n, e)) return o
 				}(n.mode, n.getLength(), o)
 			}, t.getEncodedBits = function(e) {
-				if (!s.isValid(e) || e < 7) throw new Error("Invalid QR Code version");
+				if (!u.isValid(e) || e < 7) throw new Error("Invalid QR Code version");
 				for (var t = e << 12; n.getBCHDigit(t) - c >= 0;) t ^= 7973 << n.getBCHDigit(t) - c;
 				return e << 12 | t
 			}
@@ -907,19 +1274,19 @@
 					}
 				}()), o = n.getOptions(o);
 				var a = n.getImageWidth(e.modules.size, o),
-					s = i.getContext("2d"),
-					u = s.createImageData(a, a);
-				return n.qrToImageData(u.data, e, o),
+					u = i.getContext("2d"),
+					s = u.createImageData(a, a);
+				return n.qrToImageData(s.data, e, o),
 					function(e, t, r) {
 						e.clearRect(0, 0, t.width, t.height), t.style || (t.style = {}), t.height = r, t.width = r, t.style.height = r + "px", t.style.width = r + "px"
-					}(s, i, a), s.putImageData(u, 0, 0), i
+					}(u, i, a), u.putImageData(s, 0, 0), i
 			}, t.renderToDataURL = function(e, r, n) {
 				var o = n;
 				void 0 !== o || r && r.getContext || (o = r, r = void 0), o || (o = {});
 				var i = t.render(e, r, o),
 					a = o.type || "image/png",
-					s = o.rendererOpts || {};
-				return i.toDataURL(a, s.quality)
+					u = o.rendererOpts || {};
+				return i.toDataURL(a, u.quality)
 			}
 		},
 		"./node_modules/qrcode/lib/renderer/svg-tag.js": function(e, t, r) {
@@ -937,18 +1304,18 @@
 			}
 			t.render = function(e, t, r) {
 				var a = n.getOptions(t),
-					s = e.modules.size,
-					u = e.modules.data,
-					c = s + 2 * a.margin,
+					u = e.modules.size,
+					s = e.modules.data,
+					c = u + 2 * a.margin,
 					l = a.color.light.a ? "<path " + o(a.color.light, "fill") + ' d="M0 0h' + c + "v" + c + 'H0z"/>' : "",
 					d = "<path " + o(a.color.dark, "stroke") + ' d="' + function(e, t, r) {
-						for (var n = "", o = 0, a = !1, s = 0, u = 0; u < e.length; u++) {
-							var c = Math.floor(u % t),
-								l = Math.floor(u / t);
-							c || a || (a = !0), e[u] ? (s++, u > 0 && c > 0 && e[u - 1] || (n += a ? i("M", c + r, .5 + l + r) : i("m", o, 0), o = 0, a = !1), c + 1 < t && e[u + 1] || (n += i("h", s), s = 0)) : o++
+						for (var n = "", o = 0, a = !1, u = 0, s = 0; s < e.length; s++) {
+							var c = Math.floor(s % t),
+								l = Math.floor(s / t);
+							c || a || (a = !0), e[s] ? (u++, s > 0 && c > 0 && e[s - 1] || (n += a ? i("M", c + r, .5 + l + r) : i("m", o, 0), o = 0, a = !1), c + 1 < t && e[s + 1] || (n += i("h", u), u = 0)) : o++
 						}
 						return n
-					}(u, s, a.margin) + '"/>',
+					}(s, u, a.margin) + '"/>',
 					f = 'viewBox="0 0 ' + c + " " + c + '"',
 					h = '<svg xmlns="http://www.w3.org/2000/svg" ' + (a.width ? 'width="' + a.width + '" height="' + a.width + '" ' : "") + f + ' shape-rendering="crispEdges">' + l + d + "</svg>\n";
 				return "function" == typeof r && r(null, h), h
@@ -993,11 +1360,11 @@
 				var n = t.getScale(e, r);
 				return Math.floor((e + 2 * r.margin) * n)
 			}, t.qrToImageData = function(e, r, n) {
-				for (var o = r.modules.size, i = r.modules.data, a = t.getScale(o, n), s = Math.floor((o + 2 * n.margin) * a), u = n.margin * a, c = [n.color.light, n.color.dark], l = 0; l < s; l++)
-					for (var d = 0; d < s; d++) {
-						var f = 4 * (l * s + d),
+				for (var o = r.modules.size, i = r.modules.data, a = t.getScale(o, n), u = Math.floor((o + 2 * n.margin) * a), s = n.margin * a, c = [n.color.light, n.color.dark], l = 0; l < u; l++)
+					for (var d = 0; d < u; d++) {
+						var f = 4 * (l * u + d),
 							h = n.color.light;
-						if (l >= u && d >= u && l < s - u && d < s - u) h = c[i[Math.floor((l - u) / a) * o + Math.floor((d - u) / a)] ? 1 : 0];
+						if (l >= s && d >= s && l < u - s && d < u - s) h = c[i[Math.floor((l - s) / a) * o + Math.floor((d - s) / a)] ? 1 : 0];
 						e[f++] = h.r, e[f++] = h.g, e[f++] = h.b, e[f] = h.a
 					}
 			}
@@ -1021,7 +1388,7 @@
 			var o = i.TYPED_ARRAY_SUPPORT ? 2147483647 : 1073741823;
 
 			function i(e, t, r) {
-				return i.TYPED_ARRAY_SUPPORT || this instanceof i ? "number" == typeof e ? u(this, e) : function(e, t, r, n) {
+				return i.TYPED_ARRAY_SUPPORT || this instanceof i ? "number" == typeof e ? s(this, e) : function(e, t, r, n) {
 					if ("number" == typeof t) throw new TypeError('"value" argument must not be a number');
 					if ("undefined" != typeof ArrayBuffer && t instanceof ArrayBuffer) return function(e, t, r, n) {
 						if (r < 0 || t.byteLength < r) throw new RangeError("'offset' is out of bounds");
@@ -1033,7 +1400,7 @@
 					}(e, t, r, n);
 					if ("string" == typeof t) return function(e, t) {
 						var r = 0 | d(t),
-							n = s(e, r),
+							n = u(e, r),
 							o = n.write(t);
 						o !== r && (n = n.slice(0, o));
 						return n
@@ -1041,11 +1408,11 @@
 					return function(e, t) {
 						if (i.isBuffer(t)) {
 							var r = 0 | a(t.length),
-								n = s(e, r);
+								n = u(e, r);
 							return 0 === n.length ? n : (t.copy(n, 0, 0, r), n)
 						}
 						if (t) {
-							if ("undefined" != typeof ArrayBuffer && t.buffer instanceof ArrayBuffer || "length" in t) return "number" != typeof t.length || (o = t.length) != o ? s(e, 0) : c(e, t);
+							if ("undefined" != typeof ArrayBuffer && t.buffer instanceof ArrayBuffer || "length" in t) return "number" != typeof t.length || (o = t.length) != o ? u(e, 0) : c(e, t);
 							if ("Buffer" === t.type && Array.isArray(t.data)) return c(e, t.data)
 						}
 						var o;
@@ -1059,20 +1426,20 @@
 				return 0 | e
 			}
 
-			function s(e, t) {
+			function u(e, t) {
 				var r;
 				return i.TYPED_ARRAY_SUPPORT ? (r = new Uint8Array(t)).__proto__ = i.prototype : (null === (r = e) && (r = new i(t)), r.length = t), r
 			}
 
-			function u(e, t) {
-				var r = s(e, t < 0 ? 0 : 0 | a(t));
+			function s(e, t) {
+				var r = u(e, t < 0 ? 0 : 0 | a(t));
 				if (!i.TYPED_ARRAY_SUPPORT)
 					for (var n = 0; n < t; ++n) r[n] = 0;
 				return r
 			}
 
 			function c(e, t) {
-				for (var r = t.length < 0 ? 0 : 0 | a(t.length), n = s(e, r), o = 0; o < r; o += 1) n[o] = 255 & t[o];
+				for (var r = t.length < 0 ? 0 : 0 | a(t.length), n = u(e, r), o = 0; o < r; o += 1) n[o] = 255 & t[o];
 				return n
 			}
 
@@ -1172,17 +1539,17 @@
 					for (o = t; o < r; ++o) this[o] = e;
 				else {
 					var a = i.isBuffer(e) ? e : new i(e),
-						s = a.length;
-					for (o = 0; o < r - t; ++o) this[o + t] = a[o % s]
+						u = a.length;
+					for (o = 0; o < r - t; ++o) this[o + t] = a[o % u]
 				}
 				return this
 			}, i.concat = function(e, t) {
 				if (!n(e)) throw new TypeError('"list" argument must be an Array of Buffers');
-				if (0 === e.length) return s(null, 0);
+				if (0 === e.length) return u(null, 0);
 				var r;
 				if (void 0 === t)
 					for (t = 0, r = 0; r < e.length; ++r) t += e[r].length;
-				var o = u(null, t),
+				var o = s(null, t),
 					a = 0;
 				for (r = 0; r < e.length; ++r) {
 					var c = e[r];
@@ -1203,652 +1570,6 @@
 			var r = {}.toString;
 			e.exports = Array.isArray || function(e) {
 				return "[object Array]" == r.call(e)
-			}
-		},
-		"./node_modules/react-helmet/es/Helmet.js": function(e, t, r) {
-			"use strict";
-			(function(e) {
-				var n, o, i, a, s = r("./node_modules/react-helmet/node_modules/prop-types/index.js"),
-					u = r.n(s),
-					c = r("./node_modules/react-side-effect/lib/index.js"),
-					l = r.n(c),
-					d = r("./node_modules/react-fast-compare/index.js"),
-					f = r.n(d),
-					h = r("./node_modules/react/index.js"),
-					p = r.n(h),
-					g = r("./node_modules/object-assign/index.js"),
-					m = r.n(g),
-					v = "bodyAttributes",
-					y = "htmlAttributes",
-					b = "titleAttributes",
-					w = {
-						BASE: "base",
-						BODY: "body",
-						HEAD: "head",
-						HTML: "html",
-						LINK: "link",
-						META: "meta",
-						NOSCRIPT: "noscript",
-						SCRIPT: "script",
-						STYLE: "style",
-						TITLE: "title"
-					},
-					T = (Object.keys(w).map((function(e) {
-						return w[e]
-					})), "charset"),
-					_ = "cssText",
-					E = "href",
-					A = "http-equiv",
-					j = "innerHTML",
-					C = "itemprop",
-					P = "name",
-					S = "property",
-					R = "rel",
-					B = "src",
-					I = "target",
-					x = {
-						accesskey: "accessKey",
-						charset: "charSet",
-						class: "className",
-						contenteditable: "contentEditable",
-						contextmenu: "contextMenu",
-						"http-equiv": "httpEquiv",
-						itemprop: "itemProp",
-						tabindex: "tabIndex"
-					},
-					q = "defaultTitle",
-					M = "defer",
-					O = "encodeSpecialCharacters",
-					L = "onChangeClientState",
-					N = "titleTemplate",
-					k = Object.keys(x).reduce((function(e, t) {
-						return e[x[t]] = t, e
-					}), {}),
-					U = [w.NOSCRIPT, w.SCRIPT, w.STYLE],
-					D = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e) {
-						return typeof e
-					} : function(e) {
-						return e && "function" == typeof Symbol && e.constructor === Symbol && e !== Symbol.prototype ? "symbol" : typeof e
-					},
-					Y = function(e, t) {
-						if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function")
-					},
-					F = function() {
-						function e(e, t) {
-							for (var r = 0; r < t.length; r++) {
-								var n = t[r];
-								n.enumerable = n.enumerable || !1, n.configurable = !0, "value" in n && (n.writable = !0), Object.defineProperty(e, n.key, n)
-							}
-						}
-						return function(t, r, n) {
-							return r && e(t.prototype, r), n && e(t, n), t
-						}
-					}(),
-					H = Object.assign || function(e) {
-						for (var t = 1; t < arguments.length; t++) {
-							var r = arguments[t];
-							for (var n in r) Object.prototype.hasOwnProperty.call(r, n) && (e[n] = r[n])
-						}
-						return e
-					},
-					K = function(e, t) {
-						var r = {};
-						for (var n in e) t.indexOf(n) >= 0 || Object.prototype.hasOwnProperty.call(e, n) && (r[n] = e[n]);
-						return r
-					},
-					z = function(e, t) {
-						if (!e) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-						return !t || "object" != typeof t && "function" != typeof t ? e : t
-					},
-					J = function(e) {
-						var t = !(arguments.length > 1 && void 0 !== arguments[1]) || arguments[1];
-						return !1 === t ? String(e) : String(e).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#x27;")
-					},
-					V = function(e) {
-						var t = X(e, w.TITLE),
-							r = X(e, N);
-						if (r && t) return r.replace(/%s/g, (function() {
-							return Array.isArray(t) ? t.join("") : t
-						}));
-						var n = X(e, q);
-						return t || n || void 0
-					},
-					Q = function(e) {
-						return X(e, L) || function() {}
-					},
-					W = function(e, t) {
-						return t.filter((function(t) {
-							return void 0 !== t[e]
-						})).map((function(t) {
-							return t[e]
-						})).reduce((function(e, t) {
-							return H({}, e, t)
-						}), {})
-					},
-					$ = function(e, t) {
-						return t.filter((function(e) {
-							return void 0 !== e[w.BASE]
-						})).map((function(e) {
-							return e[w.BASE]
-						})).reverse().reduce((function(t, r) {
-							if (!t.length)
-								for (var n = Object.keys(r), o = 0; o < n.length; o++) {
-									var i = n[o].toLowerCase();
-									if (-1 !== e.indexOf(i) && r[i]) return t.concat(r)
-								}
-							return t
-						}), [])
-					},
-					Z = function(e, t, r) {
-						var n = {};
-						return r.filter((function(t) {
-							return !!Array.isArray(t[e]) || (void 0 !== t[e] && ne("Helmet: " + e + ' should be of type "Array". Instead found type "' + D(t[e]) + '"'), !1)
-						})).map((function(t) {
-							return t[e]
-						})).reverse().reduce((function(e, r) {
-							var o = {};
-							r.filter((function(e) {
-								for (var r = void 0, i = Object.keys(e), a = 0; a < i.length; a++) {
-									var s = i[a],
-										u = s.toLowerCase(); - 1 === t.indexOf(u) || r === R && "canonical" === e[r].toLowerCase() || u === R && "stylesheet" === e[u].toLowerCase() || (r = u), -1 === t.indexOf(s) || s !== j && s !== _ && s !== C || (r = s)
-								}
-								if (!r || !e[r]) return !1;
-								var c = e[r].toLowerCase();
-								return n[r] || (n[r] = {}), o[r] || (o[r] = {}), !n[r][c] && (o[r][c] = !0, !0)
-							})).reverse().forEach((function(t) {
-								return e.push(t)
-							}));
-							for (var i = Object.keys(o), a = 0; a < i.length; a++) {
-								var s = i[a],
-									u = m()({}, n[s], o[s]);
-								n[s] = u
-							}
-							return e
-						}), []).reverse()
-					},
-					X = function(e, t) {
-						for (var r = e.length - 1; r >= 0; r--) {
-							var n = e[r];
-							if (n.hasOwnProperty(t)) return n[t]
-						}
-						return null
-					},
-					G = (n = Date.now(), function(e) {
-						var t = Date.now();
-						t - n > 16 ? (n = t, e(t)) : setTimeout((function() {
-							G(e)
-						}), 0)
-					}),
-					ee = function(e) {
-						return clearTimeout(e)
-					},
-					te = "undefined" != typeof window ? window.requestAnimationFrame && window.requestAnimationFrame.bind(window) || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || G : e.requestAnimationFrame || G,
-					re = "undefined" != typeof window ? window.cancelAnimationFrame || window.webkitCancelAnimationFrame || window.mozCancelAnimationFrame || ee : e.cancelAnimationFrame || ee,
-					ne = function(e) {
-						return console && "function" == typeof console.warn && console.warn(e)
-					},
-					oe = null,
-					ie = function(e, t) {
-						var r = e.baseTag,
-							n = e.bodyAttributes,
-							o = e.htmlAttributes,
-							i = e.linkTags,
-							a = e.metaTags,
-							s = e.noscriptTags,
-							u = e.onChangeClientState,
-							c = e.scriptTags,
-							l = e.styleTags,
-							d = e.title,
-							f = e.titleAttributes;
-						ue(w.BODY, n), ue(w.HTML, o), se(d, f);
-						var h = {
-								baseTag: ce(w.BASE, r),
-								linkTags: ce(w.LINK, i),
-								metaTags: ce(w.META, a),
-								noscriptTags: ce(w.NOSCRIPT, s),
-								scriptTags: ce(w.SCRIPT, c),
-								styleTags: ce(w.STYLE, l)
-							},
-							p = {},
-							g = {};
-						Object.keys(h).forEach((function(e) {
-							var t = h[e],
-								r = t.newTags,
-								n = t.oldTags;
-							r.length && (p[e] = r), n.length && (g[e] = h[e].oldTags)
-						})), t && t(), u(e, p, g)
-					},
-					ae = function(e) {
-						return Array.isArray(e) ? e.join("") : e
-					},
-					se = function(e, t) {
-						void 0 !== e && document.title !== e && (document.title = ae(e)), ue(w.TITLE, t)
-					},
-					ue = function(e, t) {
-						var r = document.getElementsByTagName(e)[0];
-						if (r) {
-							for (var n = r.getAttribute("data-react-helmet"), o = n ? n.split(",") : [], i = [].concat(o), a = Object.keys(t), s = 0; s < a.length; s++) {
-								var u = a[s],
-									c = t[u] || "";
-								r.getAttribute(u) !== c && r.setAttribute(u, c), -1 === o.indexOf(u) && o.push(u);
-								var l = i.indexOf(u); - 1 !== l && i.splice(l, 1)
-							}
-							for (var d = i.length - 1; d >= 0; d--) r.removeAttribute(i[d]);
-							o.length === i.length ? r.removeAttribute("data-react-helmet") : r.getAttribute("data-react-helmet") !== a.join(",") && r.setAttribute("data-react-helmet", a.join(","))
-						}
-					},
-					ce = function(e, t) {
-						var r = document.head || document.querySelector(w.HEAD),
-							n = r.querySelectorAll(e + "[data-react-helmet]"),
-							o = Array.prototype.slice.call(n),
-							i = [],
-							a = void 0;
-						return t && t.length && t.forEach((function(t) {
-							var r = document.createElement(e);
-							for (var n in t)
-								if (t.hasOwnProperty(n))
-									if (n === j) r.innerHTML = t.innerHTML;
-									else if (n === _) r.styleSheet ? r.styleSheet.cssText = t.cssText : r.appendChild(document.createTextNode(t.cssText));
-							else {
-								var s = void 0 === t[n] ? "" : t[n];
-								r.setAttribute(n, s)
-							}
-							r.setAttribute("data-react-helmet", "true"), o.some((function(e, t) {
-								return a = t, r.isEqualNode(e)
-							})) ? o.splice(a, 1) : i.push(r)
-						})), o.forEach((function(e) {
-							return e.parentNode.removeChild(e)
-						})), i.forEach((function(e) {
-							return r.appendChild(e)
-						})), {
-							oldTags: o,
-							newTags: i
-						}
-					},
-					le = function(e) {
-						return Object.keys(e).reduce((function(t, r) {
-							var n = void 0 !== e[r] ? r + '="' + e[r] + '"' : "" + r;
-							return t ? t + " " + n : n
-						}), "")
-					},
-					de = function(e) {
-						var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
-						return Object.keys(e).reduce((function(t, r) {
-							return t[x[r] || r] = e[r], t
-						}), t)
-					},
-					fe = function(e, t, r) {
-						switch (e) {
-							case w.TITLE:
-								return {
-									toComponent: function() {
-										return e = t.title, r = t.titleAttributes, (n = {
-											key: e
-										})["data-react-helmet"] = !0, o = de(r, n), [p.a.createElement(w.TITLE, o, e)];
-										var e, r, n, o
-									}, toString: function() {
-										return function(e, t, r, n) {
-											var o = le(r),
-												i = ae(t);
-											return o ? "<" + e + ' data-react-helmet="true" ' + o + ">" + J(i, n) + "</" + e + ">" : "<" + e + ' data-react-helmet="true">' + J(i, n) + "</" + e + ">"
-										}(e, t.title, t.titleAttributes, r)
-									}
-								};
-							case v:
-							case y:
-								return {
-									toComponent: function() {
-										return de(t)
-									}, toString: function() {
-										return le(t)
-									}
-								};
-							default:
-								return {
-									toComponent: function() {
-										return function(e, t) {
-											return t.map((function(t, r) {
-												var n, o = ((n = {
-													key: r
-												})["data-react-helmet"] = !0, n);
-												return Object.keys(t).forEach((function(e) {
-													var r = x[e] || e;
-													if (r === j || r === _) {
-														var n = t.innerHTML || t.cssText;
-														o.dangerouslySetInnerHTML = {
-															__html: n
-														}
-													} else o[r] = t[e]
-												})), p.a.createElement(e, o)
-											}))
-										}(e, t)
-									}, toString: function() {
-										return function(e, t, r) {
-											return t.reduce((function(t, n) {
-												var o = Object.keys(n).filter((function(e) {
-														return !(e === j || e === _)
-													})).reduce((function(e, t) {
-														var o = void 0 === n[t] ? t : t + '="' + J(n[t], r) + '"';
-														return e ? e + " " + o : o
-													}), ""),
-													i = n.innerHTML || n.cssText || "",
-													a = -1 === U.indexOf(e);
-												return t + "<" + e + ' data-react-helmet="true" ' + o + (a ? "/>" : ">" + i + "</" + e + ">")
-											}), "")
-										}(e, t, r)
-									}
-								}
-						}
-					},
-					he = function(e) {
-						var t = e.baseTag,
-							r = e.bodyAttributes,
-							n = e.encode,
-							o = e.htmlAttributes,
-							i = e.linkTags,
-							a = e.metaTags,
-							s = e.noscriptTags,
-							u = e.scriptTags,
-							c = e.styleTags,
-							l = e.title,
-							d = void 0 === l ? "" : l,
-							f = e.titleAttributes;
-						return {
-							base: fe(w.BASE, t, n),
-							bodyAttributes: fe(v, r, n),
-							htmlAttributes: fe(y, o, n),
-							link: fe(w.LINK, i, n),
-							meta: fe(w.META, a, n),
-							noscript: fe(w.NOSCRIPT, s, n),
-							script: fe(w.SCRIPT, u, n),
-							style: fe(w.STYLE, c, n),
-							title: fe(w.TITLE, {
-								title: d,
-								titleAttributes: f
-							}, n)
-						}
-					},
-					pe = l()((function(e) {
-						return {
-							baseTag: $([E, I], e),
-							bodyAttributes: W(v, e),
-							defer: X(e, M),
-							encode: X(e, O),
-							htmlAttributes: W(y, e),
-							linkTags: Z(w.LINK, [R, E], e),
-							metaTags: Z(w.META, [P, T, A, S, C], e),
-							noscriptTags: Z(w.NOSCRIPT, [j], e),
-							onChangeClientState: Q(e),
-							scriptTags: Z(w.SCRIPT, [B, j], e),
-							styleTags: Z(w.STYLE, [_], e),
-							title: V(e),
-							titleAttributes: W(b, e)
-						}
-					}), (function(e) {
-						oe && re(oe), e.defer ? oe = te((function() {
-							ie(e, (function() {
-								oe = null
-							}))
-						})) : (ie(e), oe = null)
-					}), he)((function() {
-						return null
-					})),
-					ge = (o = pe, a = i = function(e) {
-						function t() {
-							return Y(this, t), z(this, e.apply(this, arguments))
-						}
-						return function(e, t) {
-							if ("function" != typeof t && null !== t) throw new TypeError("Super expression must either be null or a function, not " + typeof t);
-							e.prototype = Object.create(t && t.prototype, {
-								constructor: {
-									value: e,
-									enumerable: !1,
-									writable: !0,
-									configurable: !0
-								}
-							}), t && (Object.setPrototypeOf ? Object.setPrototypeOf(e, t) : e.__proto__ = t)
-						}(t, e), t.prototype.shouldComponentUpdate = function(e) {
-							return !f()(this.props, e)
-						}, t.prototype.mapNestedChildrenToProps = function(e, t) {
-							if (!t) return null;
-							switch (e.type) {
-								case w.SCRIPT:
-								case w.NOSCRIPT:
-									return {
-										innerHTML: t
-									};
-								case w.STYLE:
-									return {
-										cssText: t
-									}
-							}
-							throw new Error("<" + e.type + " /> elements are self-closing and can not contain children. Refer to our API for more information.")
-						}, t.prototype.flattenArrayTypeChildren = function(e) {
-							var t, r = e.child,
-								n = e.arrayTypeChildren,
-								o = e.newChildProps,
-								i = e.nestedChildren;
-							return H({}, n, ((t = {})[r.type] = [].concat(n[r.type] || [], [H({}, o, this.mapNestedChildrenToProps(r, i))]), t))
-						}, t.prototype.mapObjectTypeChildren = function(e) {
-							var t, r, n = e.child,
-								o = e.newProps,
-								i = e.newChildProps,
-								a = e.nestedChildren;
-							switch (n.type) {
-								case w.TITLE:
-									return H({}, o, ((t = {})[n.type] = a, t.titleAttributes = H({}, i), t));
-								case w.BODY:
-									return H({}, o, {
-										bodyAttributes: H({}, i)
-									});
-								case w.HTML:
-									return H({}, o, {
-										htmlAttributes: H({}, i)
-									})
-							}
-							return H({}, o, ((r = {})[n.type] = H({}, i), r))
-						}, t.prototype.mapArrayTypeChildrenToProps = function(e, t) {
-							var r = H({}, t);
-							return Object.keys(e).forEach((function(t) {
-								var n;
-								r = H({}, r, ((n = {})[t] = e[t], n))
-							})), r
-						}, t.prototype.warnOnInvalidChildren = function(e, t) {
-							return !0
-						}, t.prototype.mapChildrenToProps = function(e, t) {
-							var r = this,
-								n = {};
-							return p.a.Children.forEach(e, (function(e) {
-								if (e && e.props) {
-									var o = e.props,
-										i = o.children,
-										a = function(e) {
-											var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
-											return Object.keys(e).reduce((function(t, r) {
-												return t[k[r] || r] = e[r], t
-											}), t)
-										}(K(o, ["children"]));
-									switch (r.warnOnInvalidChildren(e, i), e.type) {
-										case w.LINK:
-										case w.META:
-										case w.NOSCRIPT:
-										case w.SCRIPT:
-										case w.STYLE:
-											n = r.flattenArrayTypeChildren({
-												child: e,
-												arrayTypeChildren: n,
-												newChildProps: a,
-												nestedChildren: i
-											});
-											break;
-										default:
-											t = r.mapObjectTypeChildren({
-												child: e,
-												newProps: t,
-												newChildProps: a,
-												nestedChildren: i
-											})
-									}
-								}
-							})), t = this.mapArrayTypeChildrenToProps(n, t)
-						}, t.prototype.render = function() {
-							var e = this.props,
-								t = e.children,
-								r = K(e, ["children"]),
-								n = H({}, r);
-							return t && (n = this.mapChildrenToProps(t, n)), p.a.createElement(o, n)
-						}, F(t, null, [{
-							key: "canUseDOM",
-							set: function(e) {
-								o.canUseDOM = e
-							}
-						}]), t
-					}(p.a.Component), i.propTypes = {
-						base: u.a.object,
-						bodyAttributes: u.a.object,
-						children: u.a.oneOfType([u.a.arrayOf(u.a.node), u.a.node]),
-						defaultTitle: u.a.string,
-						defer: u.a.bool,
-						encodeSpecialCharacters: u.a.bool,
-						htmlAttributes: u.a.object,
-						link: u.a.arrayOf(u.a.object),
-						meta: u.a.arrayOf(u.a.object),
-						noscript: u.a.arrayOf(u.a.object),
-						onChangeClientState: u.a.func,
-						script: u.a.arrayOf(u.a.object),
-						style: u.a.arrayOf(u.a.object),
-						title: u.a.string,
-						titleAttributes: u.a.object,
-						titleTemplate: u.a.string
-					}, i.defaultProps = {
-						defer: !0,
-						encodeSpecialCharacters: !0
-					}, i.peek = o.peek, i.rewind = function() {
-						var e = o.rewind();
-						return e || (e = he({
-							baseTag: [],
-							bodyAttributes: {},
-							encodeSpecialCharacters: !0,
-							htmlAttributes: {},
-							linkTags: [],
-							metaTags: [],
-							noscriptTags: [],
-							scriptTags: [],
-							styleTags: [],
-							title: "",
-							titleAttributes: {}
-						})), e
-					}, a);
-				ge.renderStatic = ge.rewind, t.a = ge
-			}).call(this, r("./node_modules/webpack/buildin/global.js"))
-		},
-		"./node_modules/react-helmet/node_modules/prop-types/factoryWithThrowingShims.js": function(e, t, r) {
-			"use strict";
-			var n = r("./node_modules/react-helmet/node_modules/prop-types/lib/ReactPropTypesSecret.js");
-
-			function o() {}
-
-			function i() {}
-			i.resetWarningCache = o, e.exports = function() {
-				function e(e, t, r, o, i, a) {
-					if (a !== n) {
-						var s = new Error("Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at http://fb.me/use-check-prop-types");
-						throw s.name = "Invariant Violation", s
-					}
-				}
-
-				function t() {
-					return e
-				}
-				e.isRequired = e;
-				var r = {
-					array: e,
-					bool: e,
-					func: e,
-					number: e,
-					object: e,
-					string: e,
-					symbol: e,
-					any: e,
-					arrayOf: t,
-					element: e,
-					elementType: e,
-					instanceOf: t,
-					node: e,
-					objectOf: t,
-					oneOf: t,
-					oneOfType: t,
-					shape: t,
-					exact: t,
-					checkPropTypes: i,
-					resetWarningCache: o
-				};
-				return r.PropTypes = r, r
-			}
-		},
-		"./node_modules/react-helmet/node_modules/prop-types/index.js": function(e, t, r) {
-			e.exports = r("./node_modules/react-helmet/node_modules/prop-types/factoryWithThrowingShims.js")()
-		},
-		"./node_modules/react-helmet/node_modules/prop-types/lib/ReactPropTypesSecret.js": function(e, t, r) {
-			"use strict";
-			e.exports = "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED"
-		},
-		"./node_modules/react-side-effect/lib/index.js": function(e, t, r) {
-			"use strict";
-			var n, o = r("./node_modules/react/index.js"),
-				i = (n = o) && "object" == typeof n && "default" in n ? n.default : n;
-
-			function a(e, t, r) {
-				return t in e ? Object.defineProperty(e, t, {
-					value: r,
-					enumerable: !0,
-					configurable: !0,
-					writable: !0
-				}) : e[t] = r, e
-			}
-			var s = !("undefined" == typeof window || !window.document || !window.document.createElement);
-			e.exports = function(e, t, r) {
-				if ("function" != typeof e) throw new Error("Expected reducePropsToState to be a function.");
-				if ("function" != typeof t) throw new Error("Expected handleStateChangeOnClient to be a function.");
-				if (void 0 !== r && "function" != typeof r) throw new Error("Expected mapStateOnServer to either be undefined or a function.");
-				return function(n) {
-					if ("function" != typeof n) throw new Error("Expected WrappedComponent to be a React component.");
-					var u, c = [];
-
-					function l() {
-						u = e(c.map((function(e) {
-							return e.props
-						}))), d.canUseDOM ? t(u) : r && (u = r(u))
-					}
-					var d = function(e) {
-						var t, r;
-
-						function o() {
-							return e.apply(this, arguments) || this
-						}
-						r = e, (t = o).prototype = Object.create(r.prototype), t.prototype.constructor = t, t.__proto__ = r, o.peek = function() {
-							return u
-						}, o.rewind = function() {
-							if (o.canUseDOM) throw new Error("You may only call rewind() on the server. Call peek() to read the current state.");
-							var e = u;
-							return u = void 0, c = [], e
-						};
-						var a = o.prototype;
-						return a.UNSAFE_componentWillMount = function() {
-							c.push(this), l()
-						}, a.componentDidUpdate = function() {
-							l()
-						}, a.componentWillUnmount = function() {
-							var e = c.indexOf(this);
-							c.splice(e, 1), l()
-						}, a.render = function() {
-							return i.createElement(n, this.props)
-						}, o
-					}(o.PureComponent);
-					return a(d, "displayName", "SideEffect(" + function(e) {
-						return e.displayName || e.name || "Component"
-					}(n) + ")"), a(d, "canUseDOM", s), d
-				}
 			}
 		},
 		"./node_modules/react-uid/dist/es2015/hooks.js": function(e, t, r) {
@@ -1875,9 +1596,9 @@
 					}
 				}),
 				a = i(),
-				s = n.createContext(i()),
-				u = function() {
-					return n.useState((e = n.useContext(s), {
+				u = n.createContext(i()),
+				s = function() {
+					return n.useState((e = n.useContext(u), {
 						uid: r = function(e) {
 							return e ? e.prefix : ""
 						}(t = e || a) + function(e) {
@@ -1890,12 +1611,12 @@
 					var e, t, r
 				},
 				c = function() {
-					return u()[0].uid
+					return s()[0].uid
 				},
 				l = function() {
-					return u()[0].gen
+					return s()[0].gen
 				}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Settings.fdaa05bc71fc39b3eb79.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Settings.71f28c4c637cd926b6dd.js.map

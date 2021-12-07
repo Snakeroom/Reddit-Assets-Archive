@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.75ed4b1f91e6635cd9cf.js
-// Retrieved at 12/7/2021, 10:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.b3664579fb43de1c694f.js
+// Retrieved at 12/7/2021, 10:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3313,10 +3313,10 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("153936"),
+				buildNumber: Object(r.c)("153945"),
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
-				buildTimestamp: Object(r.b)("1638888502"),
+				buildTimestamp: Object(r.b)("1638889987"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -5883,14 +5883,14 @@
 					}))
 				},
 				z = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c5004ca5754b16c46553e2ba84575646deddb1a74-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %ce6101876eb2b87f04c6c7b03684a17228a4b430a-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "5004ca5754b16c46553e2ba84575646deddb1a74-production",
+						release: "e6101876eb2b87f04c6c7b03684a17228a4b430a-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6407,7 +6407,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "5004ca5754b16c46553e2ba84575646deddb1a74-production",
+						releaseClient: "e6101876eb2b87f04c6c7b03684a17228a4b430a-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -9821,52 +9821,56 @@
 				return _
 			})), i.d(t, "D", (function() {
 				return p
-			})), i.d(t, "E", (function() {
+			})), i.d(t, "G", (function() {
 				return m
 			})), i.d(t, "F", (function() {
 				return h
-			})), i.d(t, "G", (function() {
+			})), i.d(t, "E", (function() {
 				return f
 			})), i.d(t, "H", (function() {
 				return b
-			})), i.d(t, "f", (function() {
+			})), i.d(t, "I", (function() {
 				return g
-			})), i.d(t, "i", (function() {
+			})), i.d(t, "J", (function() {
 				return w
-			})), i.d(t, "j", (function() {
+			})), i.d(t, "f", (function() {
 				return v
-			})), i.d(t, "k", (function() {
+			})), i.d(t, "i", (function() {
 				return y
-			})), i.d(t, "l", (function() {
+			})), i.d(t, "j", (function() {
 				return E
-			})), i.d(t, "m", (function() {
+			})), i.d(t, "k", (function() {
 				return T
-			})), i.d(t, "n", (function() {
+			})), i.d(t, "l", (function() {
 				return S
-			})), i.d(t, "o", (function() {
+			})), i.d(t, "m", (function() {
 				return O
-			})), i.d(t, "h", (function() {
+			})), i.d(t, "n", (function() {
 				return I
-			})), i.d(t, "q", (function() {
+			})), i.d(t, "o", (function() {
 				return R
-			})), i.d(t, "c", (function() {
+			})), i.d(t, "h", (function() {
 				return F
-			})), i.d(t, "u", (function() {
+			})), i.d(t, "q", (function() {
 				return C
-			})), i.d(t, "p", (function() {
+			})), i.d(t, "c", (function() {
 				return N
-			})), i.d(t, "r", (function() {
+			})), i.d(t, "u", (function() {
 				return j
-			})), i.d(t, "d", (function() {
+			})), i.d(t, "p", (function() {
 				return A
-			})), i.d(t, "s", (function() {
+			})), i.d(t, "r", (function() {
 				return D
-			})), i.d(t, "t", (function() {
+			})), i.d(t, "d", (function() {
 				return P
-			})), i.d(t, "e", (function() {
+			})), i.d(t, "s", (function() {
 				return x
-			})), i.d(t, "v", (function() {
+			})), i.d(t, "t", (function() {
 				return L
+			})), i.d(t, "e", (function() {
+				return B
+			})), i.d(t, "v", (function() {
+				return k
 			}));
 			const n = "GOLD_PAYMENT__CARD_NAME_EMPTY",
 				r = "GOLD_PAYMENT__CARD_NAME_INPUT",
@@ -9879,29 +9883,31 @@
 				c = "GOLD_PAYMENT__SELECT_PAYMENT_METHOD",
 				_ = "GOLD_PAYMENT__SELECT_SAVED_CARD",
 				p = "GOLD_PAYMENT__STRIPE_API_ERROR",
-				m = "GOLD_PAYMENT__STRIPE_ELEMENT_CHANGE",
-				h = "GOLD_PAYMENT__CARD_ERROR",
-				f = "GOLD_PAYMENT__STRIPE_TOKEN_PENDING",
-				b = "GOLD_PAYMENT__TOGGLE_REMEMBER_CARD",
-				g = "UPDATE_CARD_MODAL__CLOSE_UPDATE_CARD_MODAL",
-				w = "GOLD_PURCHASE__FETCH_PURCHASE_CATALOG_ERROR",
-				v = "GOLD_PURCHASE__FETCH_PURCHASE_CATALOG_REQUESTED",
-				y = "GOLD_PURCHASE__FETCH_PURCHASE_CATALOG_SUCCESS",
-				E = "GOLD_PURCHASE__FETCH_RECOMMENDED_PACKAGE_ERROR",
-				T = "GOLD_PURCHASE__FETCH_RECOMMENDED_PACKAGE_REQUESTED",
-				S = "GOLD_PURCHASE__FETCH_RECOMMENDED_PACKAGE_SUCCESS",
-				O = "SPECIAL_EVENTS__FETCH_SPECIAL_EVENTS_SUCCESS",
-				I = "SPECIAL_EVENTS__FETCH_CLAIM_FREE_AWARDS_SUCCESS",
-				R = "COIN_PURCHASE_MODAL__OPEN_COIN_PURCHASE_MODAL",
-				F = "COIN_PURCHASE_MODAL__CLOSE_COIN_PURCHASE_MODAL",
-				C = "COIN_PURCHASE_MODAL__OPEN_TARGETED_OFFER_MODAL",
-				N = "COIN_PURCHASE_MODAL__OPEN_COIN_PACKAGE_OFFER_MODAL",
-				j = "PENNY_PURCHASE_MODAL__OPEN_PENNY_PURCHASE_MODAL",
-				A = "PENNY_PURCHASE_MODAL__CLOSE_PENNY_PURCHASE_MODAL",
-				D = "PENNY_PURCHASE_MODAL__OPEN_PENNY_PURCHASE_MODAL_TO_GILD",
-				P = "PREMIUM_PURCHASE_MODAL__OPEN_PREMIUM_PURCHASE_MODAL",
-				x = "PREMIUM_PURCHASE_MODAL__CLOSE_PREMIUM_PURCHASE_MODAL",
-				L = "PREMIUM_PURCHASE_MODAL__PAYMENT_BLOB_CREATED"
+				m = "GOLD_PAYMENT__STRIPE_CARD_NUMBER_CHANGE",
+				h = "GOLD_PAYMENT__STRIPE_CARD_EXPIRY_CHANGE",
+				f = "GOLD_PAYMENT__STRIPE_CARD_CVC_CHANGE",
+				b = "GOLD_PAYMENT__CARD_ERROR",
+				g = "GOLD_PAYMENT__STRIPE_TOKEN_PENDING",
+				w = "GOLD_PAYMENT__TOGGLE_REMEMBER_CARD",
+				v = "UPDATE_CARD_MODAL__CLOSE_UPDATE_CARD_MODAL",
+				y = "GOLD_PURCHASE__FETCH_PURCHASE_CATALOG_ERROR",
+				E = "GOLD_PURCHASE__FETCH_PURCHASE_CATALOG_REQUESTED",
+				T = "GOLD_PURCHASE__FETCH_PURCHASE_CATALOG_SUCCESS",
+				S = "GOLD_PURCHASE__FETCH_RECOMMENDED_PACKAGE_ERROR",
+				O = "GOLD_PURCHASE__FETCH_RECOMMENDED_PACKAGE_REQUESTED",
+				I = "GOLD_PURCHASE__FETCH_RECOMMENDED_PACKAGE_SUCCESS",
+				R = "SPECIAL_EVENTS__FETCH_SPECIAL_EVENTS_SUCCESS",
+				F = "SPECIAL_EVENTS__FETCH_CLAIM_FREE_AWARDS_SUCCESS",
+				C = "COIN_PURCHASE_MODAL__OPEN_COIN_PURCHASE_MODAL",
+				N = "COIN_PURCHASE_MODAL__CLOSE_COIN_PURCHASE_MODAL",
+				j = "COIN_PURCHASE_MODAL__OPEN_TARGETED_OFFER_MODAL",
+				A = "COIN_PURCHASE_MODAL__OPEN_COIN_PACKAGE_OFFER_MODAL",
+				D = "PENNY_PURCHASE_MODAL__OPEN_PENNY_PURCHASE_MODAL",
+				P = "PENNY_PURCHASE_MODAL__CLOSE_PENNY_PURCHASE_MODAL",
+				x = "PENNY_PURCHASE_MODAL__OPEN_PENNY_PURCHASE_MODAL_TO_GILD",
+				L = "PREMIUM_PURCHASE_MODAL__OPEN_PREMIUM_PURCHASE_MODAL",
+				B = "PREMIUM_PURCHASE_MODAL__CLOSE_PREMIUM_PURCHASE_MODAL",
+				k = "PREMIUM_PURCHASE_MODAL__PAYMENT_BLOB_CREATED"
 		},
 		"./src/reddit/actions/header.ts": function(e, t, i) {
 			"use strict";
@@ -30187,70 +30193,68 @@
 						return e
 				}
 			};
-			var u = (e = "", t) => {
-				switch (t.type) {
-					case r.E: {
-						const {
-							error: i,
-							elementType: n
-						} = t.payload;
-						return "cardCvc" === n ? i && i.message || "" : e
+			var u = Object(n.c)({
+				cardCvc: (e = "", t) => {
+					switch (t.type) {
+						case r.E: {
+							const {
+								error: e
+							} = t.payload;
+							return e && e.message || ""
+						}
+						case r.B:
+							return t.payload !== d.Gb ? "" : e;
+						case r.c:
+						case r.d:
+						case r.e:
+						case r.f:
+						case a.b:
+							return "";
+						default:
+							return e
 					}
-					case r.B:
-						return t.payload !== d.Gb ? "" : e;
-					case r.c:
-					case r.d:
-					case r.e:
-					case r.f:
-					case a.b:
-						return "";
-					default:
-						return e
-				}
-			};
-			var c = (e = "", t) => {
-				switch (t.type) {
-					case r.E: {
-						const {
-							error: i,
-							elementType: n
-						} = t.payload;
-						return "cardExpiry" === n ? i && i.message || "" : e
+				},
+				cardExpiry: (e = "", t) => {
+					switch (t.type) {
+						case r.F: {
+							const {
+								error: e
+							} = t.payload;
+							return e && e.message || ""
+						}
+						case r.B:
+							return t.payload !== d.Gb ? "" : e;
+						case r.c:
+						case r.d:
+						case r.e:
+						case r.f:
+						case a.b:
+							return "";
+						default:
+							return e
 					}
-					case r.B:
-						return t.payload !== d.Gb ? "" : e;
-					case r.c:
-					case r.d:
-					case r.e:
-					case r.f:
-					case a.b:
-						return "";
-					default:
-						return e
-				}
-			};
-			var _ = (e = "", t) => {
-				switch (t.type) {
-					case r.E: {
-						const {
-							error: i,
-							elementType: n
-						} = t.payload;
-						return "cardNumber" === n ? i && i.message || "" : e
+				},
+				cardNumber: (e = "", t) => {
+					switch (t.type) {
+						case r.G: {
+							const {
+								error: e
+							} = t.payload;
+							return e && e.message || ""
+						}
+						case r.B:
+							return t.payload !== d.Gb ? "" : e;
+						case r.c:
+						case r.d:
+						case r.e:
+						case r.f:
+						case a.b:
+							return "";
+						default:
+							return e
 					}
-					case r.B:
-						return t.payload !== d.Gb ? "" : e;
-					case r.c:
-					case r.d:
-					case r.e:
-					case r.f:
-					case a.b:
-						return "";
-					default:
-						return e
-				}
-			};
-			var p = (e = "", t) => {
+				},
+				nameOnCard: (e = "", t) => {
 					switch (t.type) {
 						case r.a:
 							return t.payload.message || e;
@@ -30267,28 +30271,23 @@
 						default:
 							return e
 					}
-				},
-				m = Object(n.c)({
-					cardCvc: u,
-					cardExpiry: c,
-					cardNumber: _,
-					nameOnCard: p
-				});
-			const h = d.Hb;
-			var f = (e = h, t) => {
+				}
+			});
+			const c = d.Hb;
+			var _ = (e = c, t) => {
 					switch (t.type) {
 						case r.q:
 						case r.r:
 						case r.t:
-							return h;
+							return c;
 						case r.B:
 							return t.payload;
 						default:
 							return e
 					}
 				},
-				b = i("./src/reddit/actions/gold/constants.ts");
-			var g = (e = null, t) => {
+				p = i("./src/reddit/actions/gold/constants.ts");
+			var m = (e = null, t) => {
 				switch (t.type) {
 					case r.x:
 						return t.payload || e;
@@ -30301,13 +30300,13 @@
 					case r.q:
 					case r.r:
 					case r.t:
-					case b.K:
+					case p.K:
 						return null;
 					default:
 						return e
 				}
 			};
-			var w = (e = "", t) => {
+			var h = (e = "", t) => {
 					switch (t.type) {
 						case r.t:
 							return "";
@@ -30319,11 +30318,11 @@
 							return e
 					}
 				},
-				v = Object(n.c)({
-					errorMessage: g,
-					passthrough: w
+				f = Object(n.c)({
+					errorMessage: m,
+					passthrough: h
 				});
-			var y = (e = "", t) => {
+			var b = (e = "", t) => {
 				switch (t.type) {
 					case r.y: {
 						const {
@@ -30343,9 +30342,9 @@
 						return e
 				}
 			};
-			var E = (e = !0, t) => {
+			var g = (e = !0, t) => {
 				switch (t.type) {
-					case r.H:
+					case r.J:
 						return !e;
 					case r.B:
 						return t.payload !== d.Gb || e;
@@ -30358,8 +30357,8 @@
 						return e
 				}
 			};
-			const T = [];
-			var S = (e = T, t) => {
+			const w = [];
+			var v = (e = w, t) => {
 				switch (t.type) {
 					case r.A:
 						return t.payload;
@@ -30371,7 +30370,7 @@
 						return e
 				}
 			};
-			var O = (e = !1, t) => {
+			var y = (e = !1, t) => {
 				switch (t.type) {
 					case r.z:
 						return !0;
@@ -30381,16 +30380,18 @@
 						return e
 				}
 			};
-			var I = (e = null, t) => {
+			var E = (e = null, t) => {
 					switch (t.type) {
 						case r.a:
-						case r.F:
+						case r.H:
 							return t.payload.message || e;
 						case r.D:
 							return t.payload;
+						case r.G:
+						case r.F:
 						case r.E:
 						case r.b:
-						case r.G:
+						case r.I:
 							return null;
 						case r.B:
 							return t.payload === d.Gb ? null : e;
@@ -30398,27 +30399,27 @@
 							return e
 					}
 				},
-				R = i("./src/reddit/actions/modal.ts");
-			var F = (e = !1, t) => {
+				T = i("./src/reddit/actions/modal.ts");
+			var S = (e = !1, t) => {
 					switch (t.type) {
-						case R.c:
+						case T.c:
 						case r.a:
 						case r.D:
-						case r.F:
+						case r.H:
 							return !1;
 						case r.B:
 							return t.payload !== d.Gb && e;
-						case r.G:
+						case r.I:
 							return !0;
 						default:
 							return e
 					}
 				},
-				C = Object(n.c)({
-					errorMessage: I,
-					pending: F
+				O = Object(n.c)({
+					errorMessage: E,
+					pending: S
 				});
-			var N = (e = null, t) => {
+			var I = (e = null, t) => {
 					switch (t.type) {
 						case r.C:
 							return t.payload;
@@ -30428,92 +30429,92 @@
 							return e
 					}
 				},
-				j = Object(n.c)({
+				R = Object(n.c)({
 					cardName: l,
-					cardValidation: m,
-					paymentMethod: f,
-					paypal: v,
-					postalCode: y,
-					rememberCard: E,
-					savedCards: S,
-					savedCardsPending: O,
-					stripeToken: C,
-					useSavedCard: N
+					cardValidation: u,
+					paymentMethod: _,
+					paypal: f,
+					postalCode: b,
+					rememberCard: g,
+					savedCards: v,
+					savedCardsPending: y,
+					stripeToken: O,
+					useSavedCard: I
 				});
-			const A = {
+			const F = {
 				pending: !1,
 				successful: !1,
 				error: !1
 			};
-			var D = (e = A, t) => {
+			var C = (e = F, t) => {
 				switch (t.type) {
-					case b.U:
+					case p.U:
 						return {
 							pending: !0, successful: !1, error: !1
 						};
-					case b.V:
+					case p.V:
 						return {
 							pending: !1, successful: !0, error: !1
 						};
-					case b.T:
+					case p.T:
 						return {
 							pending: !1, successful: !1, error: !0
 						};
-					case R.c:
-						return A;
+					case T.c:
+						return F;
 					default:
 						return e
 				}
 			};
-			var P = (e = !1, t) => {
+			var N = (e = !1, t) => {
 				switch (t.type) {
-					case b.E:
+					case p.E:
 						return t.payload || !1;
-					case R.c:
+					case T.c:
 						return !1;
 					default:
 						return e
 				}
 			};
-			var x = (e = 1, t) => {
+			var j = (e = 1, t) => {
 				switch (t.type) {
-					case b.R:
+					case p.R:
 						return t.payload || 1;
-					case R.c:
+					case T.c:
 						return 1;
 					default:
 						return e
 				}
 			};
-			var L = (e = !1, t) => {
+			var A = (e = !1, t) => {
 					switch (t.type) {
-						case R.c:
+						case T.c:
 							return !1;
-						case b.V:
-						case b.S:
+						case p.V:
+						case p.S:
 							return !0;
 						default:
 							return e
 					}
 				},
-				B = Object(n.c)({
-					freeReallocation: D,
-					powerupsCount: x,
-					isAnonymous: P,
-					purchaseCompleted: L
+				D = Object(n.c)({
+					freeReallocation: C,
+					powerupsCount: j,
+					isAnonymous: N,
+					purchaseCompleted: A
 				});
-			var k = (e = "selectPayment", t) => {
+			var P = (e = "selectPayment", t) => {
 				switch (t.type) {
 					case r.t:
 						return "selectPayment";
 					case r.w:
-					case b.W:
+					case p.W:
 						return "paymentCompleted";
 					default:
 						return e
 				}
 			};
-			var M = (e = null, t) => {
+			var x = (e = null, t) => {
 				switch (t.type) {
 					case r.t: {
 						if (!t.payload) return e;
@@ -30528,9 +30529,9 @@
 						return e
 				}
 			};
-			var U = (e = null, t) => {
+			var L = (e = null, t) => {
 				switch (t.type) {
-					case b.ab: {
+					case p.ab: {
 						if (!t.payload) return e;
 						const {
 							renewInterval: i
@@ -30543,7 +30544,7 @@
 						return e
 				}
 			};
-			var G = (e = !1, t) => {
+			var B = (e = !1, t) => {
 					switch (t.type) {
 						case r.t:
 							return !0;
@@ -30554,23 +30555,23 @@
 							return e
 					}
 				},
-				V = Object(n.c)({
-					activePage: k,
-					showModal: G,
-					packageId: M,
-					renewInterval: U
+				k = Object(n.c)({
+					activePage: P,
+					showModal: B,
+					packageId: x,
+					renewInterval: L
 				}),
-				q = i("./src/lib/makeProductOfferKey/index.ts");
-			const H = {};
-			var W = (e = H, t) => {
+				M = i("./src/lib/makeProductOfferKey/index.ts");
+			const U = {};
+			var G = (e = U, t) => {
 				switch (t.type) {
-					case b.Y:
+					case p.Y:
 						const {
 							productOffers: i
 						} = t.payload;
 						if (!(null == i ? void 0 : i.length)) return e;
 						const n = i.reduce((e, t) => {
-							const i = Object(q.a)(t.type);
+							const i = Object(M.a)(t.type);
 							return e[i] = e[i] ? [...e[i], t] : [t], e
 						}, {});
 						return {
@@ -30580,8 +30581,8 @@
 						return e
 				}
 			};
-			const K = e => Math.round(new Date(e).getTime() / 1e3);
-			var $ = (e = null, t) => {
+			const V = e => Math.round(new Date(e).getTime() / 1e3);
+			var q = (e = null, t) => {
 				switch (t.type) {
 					case r.k: {
 						const {
@@ -30595,13 +30596,13 @@
 						} = t.payload;
 						return i ? {
 							...i,
-							endsAt: i.endsAt ? K(i.endsAt) : void 0
+							endsAt: i.endsAt ? V(i.endsAt) : void 0
 						} : null;
 					default:
 						return e
 				}
 			};
-			var z = (e = null, t) => {
+			var H = (e = null, t) => {
 				switch (t.type) {
 					case r.n:
 					case r.m:
@@ -30615,7 +30616,7 @@
 						return e
 				}
 			};
-			var Y = (e = !1, t) => {
+			var W = (e = !1, t) => {
 				switch (t.type) {
 					case r.l:
 					case r.n:
@@ -30626,7 +30627,7 @@
 						return e
 				}
 			};
-			var Q = (e = !1, t) => {
+			var K = (e = !1, t) => {
 					switch (t.type) {
 						case r.i:
 						case r.k:
@@ -30637,13 +30638,13 @@
 							return e
 					}
 				},
-				J = Object(n.c)({
-					errorMessage: z,
-					recommendedPending: Y,
-					storefrontPending: Q
+				$ = Object(n.c)({
+					errorMessage: H,
+					recommendedPending: W,
+					storefrontPending: K
 				});
-			const X = [];
-			var Z = (e = X, t) => {
+			const z = [];
+			var Y = (e = z, t) => {
 				switch (t.type) {
 					case r.k: {
 						const {
@@ -30655,8 +30656,8 @@
 						return e
 				}
 			};
-			const ee = {};
-			var te = (e = ee, t) => {
+			const Q = {};
+			var J = (e = Q, t) => {
 				switch (t.type) {
 					case r.n: {
 						const {
@@ -30681,8 +30682,8 @@
 						return e
 				}
 			};
-			const ie = [];
-			var ne = (e = ie, t) => {
+			const X = [];
+			var Z = (e = X, t) => {
 				switch (t.type) {
 					case r.n: {
 						const {
@@ -30691,13 +30692,13 @@
 						return e.map(e => e.mobileId)
 					}
 					case r.m:
-						return ie;
+						return X;
 					default:
 						return e
 				}
 			};
-			const re = [];
-			var se = (e = re, t) => {
+			const ee = [];
+			var te = (e = ee, t) => {
 					switch (t.type) {
 						case r.k: {
 							const {
@@ -30709,20 +30710,20 @@
 							return e
 					}
 				},
-				oe = Object(n.c)({
-					models: te,
-					dealPackageIds: Z,
-					recommendedPackageIds: ne,
-					storefrontPackageIds: se
+				ie = Object(n.c)({
+					models: J,
+					dealPackageIds: Y,
+					recommendedPackageIds: Z,
+					storefrontPackageIds: te
 				});
-			const de = e => e.filter(e => {
+			const ne = e => e.filter(e => {
 				var t;
 				return !(e.name.includes("Powerups") || (null === (t = e.tags) || void 0 === t ? void 0 : t.includes("econ:award:powerups:post")))
 			}).map(e => e.id);
-			var ae = (e = null, t) => {
+			var re = (e = null, t) => {
 				var i;
 				switch (t.type) {
-					case b.s: {
+					case p.s: {
 						const {
 							awardId: i
 						} = t.payload;
@@ -30736,7 +30737,7 @@
 							awards: n
 						} = t.payload;
 						return (null == n ? void 0 : n.length) ? {
-							awardIds: de(n),
+							awardIds: ne(n),
 							isEnabled: !1
 						} : e;
 					case r.o:
@@ -30744,15 +30745,15 @@
 							freeAwardEvent: s
 						} = t.payload;
 						return s ? {
-							awardIds: de((null === (i = s.freeAwards) || void 0 === i ? void 0 : i.awards) || []),
+							awardIds: ne((null === (i = s.freeAwards) || void 0 === i ? void 0 : i.awards) || []),
 							isEnabled: s.isEnabled
 						} : null;
 					default:
 						return e
 				}
 			};
-			const le = [];
-			var ue = (e = le, t) => {
+			const se = [];
+			var oe = (e = se, t) => {
 					switch (t.type) {
 						case r.k:
 							return t.payload.premiumPackages;
@@ -30760,14 +30761,14 @@
 							return e
 					}
 				},
-				ce = Object(n.c)({
-					activeSaleConfig: $,
-					api: J,
-					coinPackages: oe,
-					freeAwardEvent: ae,
-					premiumPackages: ue
+				de = Object(n.c)({
+					activeSaleConfig: q,
+					api: $,
+					coinPackages: ie,
+					freeAwardEvent: re,
+					premiumPackages: oe
 				});
-			var _e = (e = "selectPayment", t) => {
+			var ae = (e = "selectPayment", t) => {
 				switch (t.type) {
 					case r.q:
 					case r.r:
@@ -30778,7 +30779,7 @@
 						return e
 				}
 			};
-			var pe = (e = null, t) => {
+			var le = (e = null, t) => {
 				switch (t.type) {
 					case r.t:
 					case r.u:
@@ -30799,12 +30800,12 @@
 						return e
 				}
 			};
-			var me = (e = null, t) => {
+			var ue = (e = null, t) => {
 				switch (t.type) {
 					case r.c:
 					case r.d:
-					case b.e:
-					case b.s:
+					case p.e:
+					case p.s:
 						return null;
 					case r.q: {
 						const {
@@ -30818,7 +30819,7 @@
 						return e
 				}
 			};
-			var he = (e = null, t) => {
+			var ce = (e = null, t) => {
 				switch (t.type) {
 					case r.q: {
 						const {
@@ -30833,12 +30834,12 @@
 						return e
 				}
 			};
-			var fe = (e = !1, t) => {
+			var _e = (e = !1, t) => {
 					switch (t.type) {
 						case r.q:
 						case r.r:
 							return !0;
-						case b.K:
+						case p.K:
 						case a.b:
 						case r.c:
 						case r.d:
@@ -30847,21 +30848,21 @@
 							return e
 					}
 				},
-				be = Object(n.c)({
-					activePage: _e,
-					correlationId: pe,
-					gildThingId: me,
-					packageId: he,
-					showModal: fe
+				pe = Object(n.c)({
+					activePage: ae,
+					correlationId: le,
+					gildThingId: ue,
+					packageId: ce,
+					showModal: _e
 				});
 			t.a = Object(n.c)({
 				packageOfferModal: o,
-				payment: j,
-				powerupsPurchaseModal: B,
-				premiumPurchaseModal: V,
-				productOffers: W,
-				purchaseCatalog: ce,
-				purchaseModal: be
+				payment: R,
+				powerupsPurchaseModal: D,
+				premiumPurchaseModal: k,
+				productOffers: G,
+				purchaseCatalog: de,
+				purchaseModal: pe
 			})
 		},
 		"./src/reddit/reducers/features/predictions/index.ts": function(e, t, i) {
@@ -43181,4 +43182,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.75ed4b1f91e6635cd9cf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.b3664579fb43de1c694f.js.map
