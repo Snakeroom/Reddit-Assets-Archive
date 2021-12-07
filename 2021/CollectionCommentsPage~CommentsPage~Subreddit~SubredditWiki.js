@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.01c5b66f0baffea46477.js
-// Retrieved at 12/6/2021, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.d853a1835458227a8f25.js
+// Retrieved at 12/7/2021, 9:30:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"], {
 		"./node_modules/lodash/random.js": function(e, t, r) {
@@ -1637,7 +1637,10 @@
 				return s.a.createElement("div", {
 					className: Object(p.a)(x.a.outerContainer, e),
 					style: {
-						position: i.navBar.useOverlay && !r ? "absolute" : "static",
+						position: i.navBar.useOverlay && !r ? "relative" : "static",
+						...i.navBar.useOverlay && !r ? {
+							marginTop: -26
+						} : {},
 						background: r ? "inherit" : Object(te.g)(i.navBar.backgroundColor, i.navBar.backgroundImage, "tiled")
 					}
 				}, t)
@@ -2860,4 +2863,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.01c5b66f0baffea46477.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.d853a1835458227a8f25.js.map

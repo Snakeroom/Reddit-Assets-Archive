@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.affe7ea91d1c53973a24.js
-// Retrieved at 12/6/2021, 7:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.a917756e6724000e4fd5.js
+// Retrieved at 12/7/2021, 9:30:04 AM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
@@ -1301,7 +1301,7 @@
 						"CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956": "95e335e23ae0c112090b",
 						"CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~898a3d9b": "aaf4f11e7b9c3d3fa570",
 						"CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate": "61eea79ff08cb70cf23e",
-						"CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki": "01c5b66f0baffea46477",
+						"CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki": "d853a1835458227a8f25",
 						CommentsPage: "7849ec92d6d8c9239869",
 						CollectionCommentsPage: "4fe4b118f6adfd6b1fd7",
 						"ProfileComments~ProfileOverview~ProfilePrivate": "3bd156dd2a353ca5c430",
@@ -1655,4 +1655,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.affe7ea91d1c53973a24.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.a917756e6724000e4fd5.js.map
