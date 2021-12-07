@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/VideoShareModal.e060dc63b4fbccd14945.js
-// Retrieved at 12/6/2021, 3:50:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/VideoShareModal.96d469aa3acc6e5d42c3.js
+// Retrieved at 12/7/2021, 10:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["VideoShareModal"], {
 		"./src/reddit/actions/publicAccessNetwork/votes.ts": function(e, t, s) {
@@ -51,7 +51,7 @@
 				defaultImage: e,
 				userId: t
 			}) => {
-				const s = Object(l.e)(p.D),
+				const s = Object(l.e)(p.E),
 					{
 						processingAvatarImageUrl: n
 					} = a.a;
@@ -622,8 +622,8 @@
 				M = s("./src/reddit/icons/svgs/Unlock/index.tsx"),
 				T = s("./src/reddit/icons/svgs/Video/index.tsx"),
 				V = s("./src/reddit/models/Vote/index.ts"),
-				D = s("./src/reddit/selectors/experiments/shareToChatButton.ts"),
-				P = s("./src/reddit/selectors/subreddit.ts"),
+				P = s("./src/reddit/selectors/experiments/shareToChatButton.ts"),
+				D = s("./src/reddit/selectors/subreddit.ts"),
 				F = s("./src/reddit/selectors/user.ts"),
 				R = s("./src/reddit/components/PublicAccessNetwork/Theater/Overlay/Buttons.tsx"),
 				U = s("./src/reddit/components/PublicAccessNetwork/Theater/Overlay/refresh.m.less"),
@@ -738,7 +738,7 @@
 				onClickShare: s,
 				onClickShareToChat: a
 			}) => {
-				const o = Object(r.e)(D.a);
+				const o = Object(r.e)(P.a);
 				return n.a.createElement(h.b, {
 					className: W.a.menuButton,
 					defaultButtonOutline: !0,
@@ -1082,7 +1082,7 @@
 				return r && r.enableFollowers ? i : null
 			}, xe = e => Object(r.e)(t => Object(F.nb)(t, {
 				userName: e
-			})), fe = e => Object(r.e)(t => Object(P.db)(t, {
+			})), fe = e => Object(r.e)(t => Object(D.db)(t, {
 				identifier: {
 					name: e,
 					type: C.a.PROFILE
@@ -1490,7 +1490,7 @@
 						const s = e[t];
 						if (!s) return e;
 						const a = s.stream.state,
-							n = D(a, o.a.ENDED) ? o.a.ENDED : a,
+							n = P(a, o.a.ENDED) ? o.a.ENDED : a,
 							r = s.stream.vod_accessible;
 						return n === a && !0 === r ? e : {
 							...e,
@@ -1508,7 +1508,7 @@
 						const s = e[t];
 						if (!s) return e;
 						const a = s.stream.state,
-							n = D(a, o.a.ENDED) ? o.a.ENDED : a,
+							n = P(a, o.a.ENDED) ? o.a.ENDED : a,
 							r = s.stream.vod_accessible;
 						return n === a && !1 === r ? e : {
 							...e,
@@ -1616,7 +1616,7 @@
 					streamIdFromPath: t
 				}) => t ? N(e, t) : void 0, e => !e || e.chat_disabled || e.post.isArchived || e.post.isLocked);
 
-			function D(e, t) {
+			function P(e, t) {
 				const s = {
 					[o.a.NOT_STARTED]: 0,
 					[o.a.PUBLISHED]: 1,
@@ -1628,7 +1628,7 @@
 				};
 				return s[t] >= s[e]
 			}
-			const P = Object(a.a)(O, v, (e, t) => e && t.timestamps[e] || 0);
+			const D = Object(a.a)(O, v, (e, t) => e && t.timestamps[e] || 0);
 			var F;
 			! function(e) {
 				e[e.LIVE = 0] = "LIVE", e[e.VOD = 1] = "VOD", e[e.UNAVAILABLE = 2] = "UNAVAILABLE", e[e.INTRO = 3] = "INTRO"
@@ -1641,7 +1641,7 @@
 					return n === o.a.IS_LIVE || n === o.a.DISCONNECTED ? F.LIVE : n === o.a.ENDED && a.stream.vod_accessible ? F.VOD : F.UNAVAILABLE
 				}),
 				U = Object(a.a)(A, R, u.b, l.b, l.o, (e, t, s, a, n) => s ? a : e ? t === F.LIVE || t === F.VOD ? e.stream.hls_url : n : void 0),
-				W = Object(a.a)(A, R, P, (e, t, s) => e ? t === F.LIVE ? e.broadcast_time : t === F.VOD && s < e.broadcast_time ? s : 0 : 0),
+				W = Object(a.a)(A, R, D, (e, t, s) => e ? t === F.LIVE ? e.broadcast_time : t === F.VOD && s < e.broadcast_time ? s : 0 : 0),
 				Z = (e, t) => {
 					const s = p(e);
 					return !!s && s[t] && s[t].chat_disabled
@@ -1666,4 +1666,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/VideoShareModal.e060dc63b4fbccd14945.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/VideoShareModal.96d469aa3acc6e5d42c3.js.map

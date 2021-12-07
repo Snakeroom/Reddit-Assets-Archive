@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.17e6867f8440a211b5b2.js
-// Retrieved at 12/6/2021, 6:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.f050935c99fdbf030238.js
+// Retrieved at 12/7/2021, 10:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -9576,7 +9576,7 @@
 						subreddit: n
 					} = e, {
 						isSponsored: o
-					} = t, s = Object(U.a)(), i = Object(K.a)(m.rd) === m.yd.Enabled;
+					} = t, s = Object(U.a)(), i = Object(K.a)(m.sd) === m.zd.Enabled;
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return r.a.createElement(Q, {
 						nowrap: e.nowrap
 					}, r.a.createElement(Z, e));
@@ -24584,7 +24584,7 @@
 				a = n.n(i);
 			const c = n("./src/lib/lessComponent.tsx").a.wrapped(e => s.a.createElement("i", {
 				title: e.title,
-				className: `${Object(r.b)("premium",!0)} ${e.className}`
+				className: `${Object(r.b)("premium",e.isFilled)} ${e.className}`
 			}), "PremiumIcon", a.a)
 		},
 		"./src/reddit/icons/fonts/Remove/index.tsx": function(e, t, n) {
@@ -32853,14 +32853,14 @@
 			var o = n("./src/reddit/constants/experiments.ts"),
 				s = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const r = e => Object(s.c)(e, {
-					experimentName: o.ae,
-					experimentEligibilitySelector: s.a
-				}) === o.je.Enabled,
-				i = e => Object(s.c)(e, {
 					experimentName: o.be,
+					experimentEligibilitySelector: s.a
+				}) === o.ke.Enabled,
+				i = e => Object(s.c)(e, {
+					experimentName: o.ce,
 					experimentEligibilitySelector: s.a,
 					expEventOverride: !1
-				}) === o.ke.Enabled
+				}) === o.le.Enabled
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, n) {
 			"use strict";
@@ -33410,4 +33410,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.17e6867f8440a211b5b2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.f050935c99fdbf030238.js.map

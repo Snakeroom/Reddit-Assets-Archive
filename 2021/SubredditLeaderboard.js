@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.a356855552ae5f37e181.js
-// Retrieved at 12/6/2021, 5:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.ea854f6c60838a19069a.js
+// Retrieved at 12/7/2021, 10:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/times.js": function(e, t, n) {
@@ -2045,8 +2045,8 @@
 				I = n("./src/reddit/actions/pages/subredditLeaderboard.ts"),
 				L = n("./src/reddit/actions/subreddit/topSubreddits.ts"),
 				P = n("./src/reddit/components/TopSubredditsWidget/SubredditRankItem.tsx"),
-				B = n("./src/reddit/components/TopSubredditsWidget/SubredditRankItemPlaceholder.tsx"),
-				D = n("./src/reddit/models/GoodContent/index.ts"),
+				D = n("./src/reddit/components/TopSubredditsWidget/SubredditRankItemPlaceholder.tsx"),
+				B = n("./src/reddit/models/GoodContent/index.ts"),
 				F = n("./src/reddit/selectors/experiments/joinOptimizations.ts"),
 				W = n("./src/reddit/selectors/platform.ts"),
 				M = n("./src/reddit/selectors/subreddit.ts"),
@@ -2078,7 +2078,7 @@
 						const t = this.makeFetchVariables(),
 							n = Object(R.d)(this.props.categoryId, this.props.categoryName);
 						e.isIntersecting && t.after && this.props.fetchMoreSubreddits(t, n)
-					}, this.sendLeaderboardSubredditEventClick = e => this.props.sendEvent(Object(y.f)(e, this.props.categoryName || p.e)), this.renderSubredditRankItemPlaceholders = () => i.a.createElement(i.a.Fragment, null, T()(5, e => i.a.createElement(B.a, {
+					}, this.sendLeaderboardSubredditEventClick = e => this.props.sendEvent(Object(y.f)(e, this.props.categoryName || p.e)), this.renderSubredditRankItemPlaceholders = () => i.a.createElement(i.a.Fragment, null, T()(5, e => i.a.createElement(D.a, {
 						key: e,
 						large: !0
 					}))), this.renderSubredditRankItems = e => this.props.rankings.map((t, n) => {
@@ -2106,7 +2106,7 @@
 					return {
 						after: a,
 						categoryId: e === p.c ? p.f : e,
-						filter: D.a,
+						filter: B.a,
 						first: G,
 						isOnlyModIncluded: i
 					}
@@ -2142,7 +2142,7 @@
 						onChange: this.fetchMoreSubreddits,
 						threshold: z,
 						rootMargin: "0px 0px 0px 0px"
-					}, i.a.createElement("li", null, i.a.createElement(B.a, {
+					}, i.a.createElement("li", null, i.a.createElement(D.a, {
 						large: !0
 					})))))
 				}
@@ -2331,7 +2331,7 @@
 				xe = (e, {
 					match: t
 				}) => Object(g.b)(t.params.categoryName || ""),
-				_e = Object(m.Cf)(p.i),
+				_e = Object(m.Df)(p.i),
 				Se = Object(d.c)({
 					categories: e => Object(fe.b)(e, {
 						categoriesOrder: _e
@@ -2460,4 +2460,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.a356855552ae5f37e181.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.ea854f6c60838a19069a.js.map

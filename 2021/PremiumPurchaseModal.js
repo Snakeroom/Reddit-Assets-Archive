@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.6fdaba433403393dbbf2.js
-// Retrieved at 12/6/2021, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.b263d4fef5a8a611d38c.js
+// Retrieved at 12/7/2021, 10:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PremiumPurchaseModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, r) {
@@ -641,7 +641,8 @@
 				className: R.a.premiumIcon,
 				title: C.fbt._("Reddit Premium", null, {
 					hk: "34acNx"
-				})
+				}),
+				isFilled: !0
 			}), a.a.createElement("div", {
 				className: R.a.titleMain
 			}, C.fbt._("Buy Reddit Premium!", null, {
@@ -1116,4 +1117,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.6fdaba433403393dbbf2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.b263d4fef5a8a611d38c.js.map
