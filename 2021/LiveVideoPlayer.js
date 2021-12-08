@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.86b62f5ad7d8a375a258.js
-// Retrieved at 12/6/2021, 1:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.6199d18e9aff6ba8aaaa.js
+// Retrieved at 12/8/2021, 9:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["LiveVideoPlayer"], {
 		"./node_modules/lodash/isUndefined.js": function(e, t) {
@@ -159,20 +159,22 @@
 						}
 						if (!e.length && !m.length) return
 					}
-					if (a(P({
-							identifiers: m,
-							nameIdentifiers: e,
-							profileModels: l().profiles.models,
-							subredditModels: l().subreddits.models,
-							subscriptionsCount: Object(M.b)(l()),
-							userIsSubscriber: t,
-							widgetId: s
-						})), (await Object(v.c)(h(), {
-							subredditNames: m.map(({
-								name: e
-							}) => e),
-							subscribe: t
-						})).ok) {
+					a(P({
+						identifiers: m,
+						nameIdentifiers: e,
+						profileModels: l().profiles.models,
+						subredditModels: l().subreddits.models,
+						subscriptionsCount: Object(M.b)(l()),
+						userIsSubscriber: t,
+						widgetId: s
+					}));
+					const C = await Object(v.c)(h(), {
+						subredditNames: m.map(({
+							name: e
+						}) => e),
+						subscribe: t
+					});
+					if (C.ok) {
 						const s = 1 === e.length ? `${"subreddit"===e[0].type?o.d.subreddit:o.d.profile}${e[0].name}` : i.fbt._({
 								"*": "{communities} communities",
 								_1: "1 community"
@@ -209,6 +211,7 @@
 						});
 						a(Object(c.f)(Object(c.e)(n, x.b.Error)))
 					}
+					return C.ok
 				}, k = Object(a.a)(l.f), R = e => async (t, s, {
 					apiContext: i
 				}) => {
@@ -1115,4 +1118,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer.86b62f5ad7d8a375a258.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer.6199d18e9aff6ba8aaaa.js.map

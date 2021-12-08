@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.dd48b2870ac592972aa3.js
-// Retrieved at 12/7/2021, 9:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.5850b860c1cdd42d3e18.js
+// Retrieved at 12/8/2021, 9:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250"], {
 		"./src/lib/humanizeDate/index.ts": function(e, t, n) {
@@ -205,20 +205,22 @@
 						}
 						if (!e.length && !p.length) return
 					}
-					if (o(N({
-							identifiers: p,
-							nameIdentifiers: e,
-							profileModels: d().profiles.models,
-							subredditModels: d().subreddits.models,
-							subscriptionsCount: Object(v.b)(d()),
-							userIsSubscriber: t,
-							widgetId: n
-						})), (await Object(f.c)(m(), {
-							subredditNames: p.map(({
-								name: e
-							}) => e),
-							subscribe: t
-						})).ok) {
+					o(N({
+						identifiers: p,
+						nameIdentifiers: e,
+						profileModels: d().profiles.models,
+						subredditModels: d().subreddits.models,
+						subscriptionsCount: Object(v.b)(d()),
+						userIsSubscriber: t,
+						widgetId: n
+					}));
+					const h = await Object(f.c)(m(), {
+						subredditNames: p.map(({
+							name: e
+						}) => e),
+						subscribe: t
+					});
+					if (h.ok) {
 						const n = 1 === e.length ? `${"subreddit"===e[0].type?i.d.subreddit:i.d.profile}${e[0].name}` : r.fbt._({
 								"*": "{communities} communities",
 								_1: "1 community"
@@ -255,6 +257,7 @@
 						});
 						o(Object(l.f)(Object(l.e)(s, j.b.Error)))
 					}
+					return h.ok
 				}, L = Object(o.a)(d.f), D = e => async (t, n, {
 					apiContext: r
 				}) => {
@@ -2590,4 +2593,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.dd48b2870ac592972aa3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.5850b860c1cdd42d3e18.js.map

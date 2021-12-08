@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.5e7aaeb31c1255badc1b.js
-// Retrieved at 12/7/2021, 9:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.24e5019fabe26045c0ff.js
+// Retrieved at 12/8/2021, 9:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit", "reddit-components-BlankPost"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -4853,13 +4853,16 @@
 				return o
 			})), r.d(t, "e", (function() {
 				return d
+			})), r.d(t, "g", (function() {
+				return i
 			}));
 			const s = "WRAPPED_REDDIT_CARDS_PENDING",
 				n = "WRAPPED_REDDIT_CARDS_LOADED",
 				a = "WRAPPED_REDDIT_CARDS_FAILED",
 				c = "WRAPPED_REDDIT_RESET",
 				o = "WRAPPED_REDDIT_SHARE_CARD_WAS_OPENED",
-				d = "WRAPPED_REDDIT_SET_CARD_INDEX"
+				d = "WRAPPED_REDDIT_SET_CARD_INDEX",
+				i = "WRAPPED_REDDIT_SUBREDDIT_CHANGED"
 		},
 		"./src/reddit/components/BlankPost/index.tsx": function(e, t, r) {
 			"use strict";
@@ -24133,7 +24136,8 @@
 				cardsLoadingError: null,
 				cards: [],
 				shareCardWasOpened: !1,
-				currentCardIndex: 0
+				currentCardIndex: 0,
+				subreddits: []
 			};
 			const fj = {
 				accountManagerModalData: a,
@@ -24295,11 +24299,13 @@
 							};
 						case pj.b: {
 							const {
-								cards: r
+								cards: r,
+								subreddits: s
 							} = t.payload;
 							return {
 								...e,
 								cards: r,
+								subreddits: s,
 								isCardsLoading: !1
 							}
 						}
@@ -24324,6 +24330,21 @@
 							return {
 								...e,
 								currentCardIndex: r
+							}
+						}
+						case pj.g: {
+							const {
+								subredditName: r,
+								subscribe: s
+							} = t.payload, n = e.subreddits.findIndex(e => e.subredditName === r);
+							if (n < 0) return e;
+							const a = [...e.subreddits];
+							return a.splice(n, 1, {
+								...e.subreddits[n],
+								subscribe: s
+							}), {
+								...e,
+								subreddits: a
 							}
 						}
 						default:
@@ -24776,4 +24797,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.5e7aaeb31c1255badc1b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.24e5019fabe26045c0ff.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.26647c2edbeeda3aecec.js
-// Retrieved at 12/7/2021, 9:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.7717836aec58e0e1e5c5.js
+// Retrieved at 12/8/2021, 9:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1204,20 +1204,22 @@
 						}
 						if (!e.length && !p.length) return
 					}
-					if (o(D({
-							identifiers: p,
-							nameIdentifiers: e,
-							profileModels: d().profiles.models,
-							subredditModels: d().subreddits.models,
-							subscriptionsCount: Object(E.b)(d()),
-							userIsSubscriber: t,
-							widgetId: n
-						})), (await Object(b.c)(m(), {
-							subredditNames: p.map(({
-								name: e
-							}) => e),
-							subscribe: t
-						})).ok) {
+					o(D({
+						identifiers: p,
+						nameIdentifiers: e,
+						profileModels: d().profiles.models,
+						subredditModels: d().subreddits.models,
+						subscriptionsCount: Object(E.b)(d()),
+						userIsSubscriber: t,
+						widgetId: n
+					}));
+					const f = await Object(b.c)(m(), {
+						subredditNames: p.map(({
+							name: e
+						}) => e),
+						subscribe: t
+					});
+					if (f.ok) {
 						const n = 1 === e.length ? `${"subreddit"===e[0].type?i.d.subreddit:i.d.profile}${e[0].name}` : r.fbt._({
 								"*": "{communities} communities",
 								_1: "1 community"
@@ -1254,6 +1256,7 @@
 						});
 						o(Object(l.f)(Object(l.e)(s, v.b.Error)))
 					}
+					return f.ok
 				}, F = Object(o.a)(d.f), P = e => async (t, n, {
 					apiContext: r
 				}) => {
@@ -8048,4 +8051,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.26647c2edbeeda3aecec.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.7717836aec58e0e1e5c5.js.map

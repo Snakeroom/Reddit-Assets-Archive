@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.d7c2f8a9ed809a6ab372.js
-// Retrieved at 12/7/2021, 9:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.317c6320e531f2a28406.js
+// Retrieved at 12/8/2021, 9:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ProfileIdCard"], {
 		"./node_modules/lodash/compact.js": function(e, t) {
@@ -286,20 +286,22 @@
 						}
 						if (!e.length && !p.length) return
 					}
-					if (o(w({
-							identifiers: p,
-							nameIdentifiers: e,
-							profileModels: d().profiles.models,
-							subredditModels: d().subreddits.models,
-							subscriptionsCount: Object(P.b)(d()),
-							userIsSubscriber: t,
-							widgetId: r
-						})), (await Object(b.c)(m(), {
-							subredditNames: p.map(({
-								name: e
-							}) => e),
-							subscribe: t
-						})).ok) {
+					o(w({
+						identifiers: p,
+						nameIdentifiers: e,
+						profileModels: d().profiles.models,
+						subredditModels: d().subreddits.models,
+						subscriptionsCount: Object(P.b)(d()),
+						userIsSubscriber: t,
+						widgetId: r
+					}));
+					const h = await Object(b.c)(m(), {
+						subredditNames: p.map(({
+							name: e
+						}) => e),
+						subscribe: t
+					});
+					if (h.ok) {
 						const r = 1 === e.length ? `${"subreddit"===e[0].type?a.d.subreddit:a.d.profile}${e[0].name}` : n.fbt._({
 								"*": "{communities} communities",
 								_1: "1 community"
@@ -336,6 +338,7 @@
 						});
 						o(Object(l.f)(Object(l.e)(s, I.b.Error)))
 					}
+					return h.ok
 				}, T = Object(o.a)(d.f), L = e => async (t, r, {
 					apiContext: n
 				}) => {
@@ -3303,4 +3306,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.d7c2f8a9ed809a6ab372.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.317c6320e531f2a28406.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.2cacd296f830afc5bed8.js
-// Retrieved at 12/7/2021, 9:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.49c78756374003706bb2.js
+// Retrieved at 12/8/2021, 9:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditMentionWithIcon"], {
 		"./src/reddit/actions/subredditMention/constants.ts": function(e, t, s) {
@@ -224,20 +224,22 @@
 						}
 						if (!e.length && !m.length) return
 					}
-					if (r(k({
-							identifiers: m,
-							nameIdentifiers: e,
-							profileModels: a().profiles.models,
-							subredditModels: a().subreddits.models,
-							subscriptionsCount: Object(y.b)(a()),
-							userIsSubscriber: t,
-							widgetId: s
-						})), (await Object(h.c)(b(), {
-							subredditNames: m.map(({
-								name: e
-							}) => e),
-							subscribe: t
-						})).ok) {
+					r(k({
+						identifiers: m,
+						nameIdentifiers: e,
+						profileModels: a().profiles.models,
+						subredditModels: a().subreddits.models,
+						subscriptionsCount: Object(y.b)(a()),
+						userIsSubscriber: t,
+						widgetId: s
+					}));
+					const f = await Object(h.c)(b(), {
+						subredditNames: m.map(({
+							name: e
+						}) => e),
+						subscribe: t
+					});
+					if (f.ok) {
 						const s = 1 === e.length ? `${"subreddit"===e[0].type?o.d.subreddit:o.d.profile}${e[0].name}` : n.fbt._({
 								"*": "{communities} communities",
 								_1: "1 community"
@@ -274,6 +276,7 @@
 						});
 						r(Object(l.f)(Object(l.e)(i, x.b.Error)))
 					}
+					return f.ok
 				}, w = Object(r.a)(a.f), M = e => async (t, s, {
 					apiContext: n
 				}) => {
@@ -2143,4 +2146,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.2cacd296f830afc5bed8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.49c78756374003706bb2.js.map
