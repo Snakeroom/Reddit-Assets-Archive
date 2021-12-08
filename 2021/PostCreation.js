@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.bcf798ed8aba0969d82e.js
-// Retrieved at 12/8/2021, 2:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.cc04c70418fc6503f65f.js
+// Retrieved at 12/8/2021, 6:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -29967,28 +29967,29 @@
 					}).map(Xa)
 				});
 			var ec = n("./src/reddit/constants/postLayout.ts"),
-				tc = n("./src/reddit/components/Econ/Prediction/NewBadge/index.m.less"),
-				nc = n.n(tc);
+				tc = n("./src/reddit/components/Econ/Prediction/hooks/useTournamentsQuery.ts"),
+				nc = n("./src/reddit/components/Econ/Prediction/NewBadge/index.m.less"),
+				oc = n.n(nc);
 			const {
-				fbt: oc
+				fbt: sc
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 
-			function sc({
+			function rc({
 				className: e
 			}) {
 				return s.a.createElement("div", {
-					className: Object(p.a)(nc.a.newBadge, e)
-				}, oc._("New", null, {
+					className: Object(p.a)(oc.a.newBadge, e)
+				}, sc._("New", null, {
 					hk: "2N0EBb"
 				}))
 			}
-			var rc = n("./src/reddit/components/Econ/Prediction/PredictionEducationMessage/EducationMessage/constants.ts"),
-				ic = n("./src/reddit/components/Econ/Prediction/PredictionEducationMessage/PredictionFeatureEducationMessage/index.tsx"),
-				ac = n("./node_modules/react-router-dom/esm/react-router-dom.js"),
-				cc = n("./src/reddit/components/InfoTextTooltip/index.tsx"),
-				lc = n("./src/reddit/controls/PillButton/index.m.less"),
-				dc = n.n(lc);
-			class uc extends s.a.Component {
+			var ic = n("./src/reddit/components/Econ/Prediction/PredictionEducationMessage/EducationMessage/constants.ts"),
+				ac = n("./src/reddit/components/Econ/Prediction/PredictionEducationMessage/PredictionFeatureEducationMessage/index.tsx"),
+				cc = n("./node_modules/react-router-dom/esm/react-router-dom.js"),
+				lc = n("./src/reddit/components/InfoTextTooltip/index.tsx"),
+				dc = n("./src/reddit/controls/PillButton/index.m.less"),
+				uc = n.n(dc);
+			class mc extends s.a.Component {
 				constructor() {
 					super(...arguments), this.handleMouseEnter = e => {
 						const {
@@ -30025,18 +30026,18 @@
 						title: E,
 						tooltipId: x
 					} = this.props, C = c, v = Object(p.a)({
-						[dc.a.classic]: h === ec.g.Classic,
-						[dc.a.compact]: h === ec.g.Compact,
-						[dc.a.activated]: d,
-						[dc.a.nightmode]: m,
-						[dc.a.dark]: u,
-						[dc.a.upvote]: "upvote" === o,
-						[dc.a.downvote]: "downvote" === o,
-						[dc.a.gold]: "gold" === o,
-						[dc.a.blue]: "blue" === o,
-						[dc.a.approve]: "approve" === o,
-						[dc.a.remove]: "remove" === o,
-						[dc.a.hasChildren]: !!t
+						[uc.a.classic]: h === ec.g.Classic,
+						[uc.a.compact]: h === ec.g.Compact,
+						[uc.a.activated]: d,
+						[uc.a.nightmode]: m,
+						[uc.a.dark]: u,
+						[uc.a.upvote]: "upvote" === o,
+						[uc.a.downvote]: "downvote" === o,
+						[uc.a.gold]: "gold" === o,
+						[uc.a.blue]: "blue" === o,
+						[uc.a.approve]: "approve" === o,
+						[uc.a.remove]: "remove" === o,
+						[uc.a.hasChildren]: !!t
 					});
 					if (this.props.href) {
 						const {
@@ -30044,10 +30045,10 @@
 							rel: o,
 							target: i
 						} = this.props;
-						return s.a.createElement(ac.a, {
+						return s.a.createElement(cc.a, {
 							"aria-label": E,
 							"aria-pressed": d,
-							className: Object(p.a)(n, v, dc.a.PostActionButton),
+							className: Object(p.a)(n, v, uc.a.PostActionButton),
 							"data-click-id": this.props["data-click-id"],
 							"data-test-id": this.props["data-test-id"],
 							id: l,
@@ -30060,22 +30061,22 @@
 							target: i,
 							to: e
 						}, s.a.createElement("span", {
-							className: Object(p.a)(r, v, dc.a.buttonContent),
+							className: Object(p.a)(r, v, uc.a.buttonContent),
 							id: x,
 							tabIndex: -1
 						}, s.a.createElement("div", {
-							className: dc.a.background
-						}), a && x && s.a.createElement(cc.c, {
+							className: uc.a.background
+						}), a && x && s.a.createElement(lc.c, {
 							text: a,
 							tooltipId: x
 						}), C && s.a.createElement(C, null), s.a.createElement("span", {
-							className: dc.a.buttonChildren
+							className: uc.a.buttonChildren
 						}, t)))
 					}
 					return s.a.createElement("button", {
 						"aria-label": E,
 						"aria-pressed": d,
-						className: Object(p.a)(n, v, dc.a.PostActionButton),
+						className: Object(p.a)(n, v, uc.a.PostActionButton),
 						"data-click-id": this.props["data-click-id"],
 						"data-test-id": this.props["data-test-id"],
 						disabled: i,
@@ -30086,20 +30087,20 @@
 						onMouseEnter: this.handleMouseEnter,
 						onMouseLeave: this.handleMouseLeave
 					}, s.a.createElement("span", {
-						className: Object(p.a)(r, v, dc.a.buttonContent),
+						className: Object(p.a)(r, v, uc.a.buttonContent),
 						id: x,
 						tabIndex: -1
 					}, s.a.createElement("div", {
-						className: Object(p.a)(dc.a.background, e)
-					}), a && x && s.a.createElement(cc.c, {
+						className: Object(p.a)(uc.a.background, e)
+					}), a && x && s.a.createElement(lc.c, {
 						text: a,
 						tooltipId: x
 					}), C && s.a.createElement(C, null), s.a.createElement("span", {
-						className: dc.a.buttonChildren
+						className: uc.a.buttonChildren
 					}, t)))
 				}
 			}
-			var mc = Object(r.b)(void 0, (e, {
+			var pc = Object(r.b)(void 0, (e, {
 					tooltipId: t
 				}) => ({
 					tooltipSet: () => {
@@ -30112,39 +30113,39 @@
 							tooltipId: t
 						}))
 					}
-				}))(uc),
-				pc = n("./src/reddit/selectors/telemetry.ts");
-			const hc = e => ({
-					...Object(pc.defaults)(e),
+				}))(mc),
+				hc = n("./src/reddit/selectors/telemetry.ts");
+			const bc = e => ({
+					...Object(hc.defaults)(e),
 					source: ln.a,
 					action: "view",
 					noun: "predict_info_modal",
-					subreddit: Object(pc.subreddit)(e)
+					subreddit: Object(hc.subreddit)(e)
 				}),
-				bc = e => ({
-					...Object(pc.defaults)(e),
+				fc = e => ({
+					...Object(hc.defaults)(e),
 					source: ln.a,
 					action: "close",
 					noun: "predict_info_modal",
-					subreddit: Object(pc.subreddit)(e)
+					subreddit: Object(hc.subreddit)(e)
 				}),
-				fc = e => ({
-					...Object(pc.defaults)(e),
+				gc = e => ({
+					...Object(hc.defaults)(e),
 					source: ln.a,
 					action: "click",
 					noun: "predictions_how_it_works",
-					subreddit: Object(pc.subreddit)(e),
+					subreddit: Object(hc.subreddit)(e),
 					actionInfo: {
 						pageType: "predict_info_modal"
 					}
 				});
-			var gc = n("./src/reddit/hooks/useLocalStorage.ts"),
-				Ec = n("./src/reddit/selectors/features/predictions/creation/index.ts"),
-				xc = n("./src/reddit/components/PollCreator/PollTypePicker/index.m.less"),
-				Cc = n.n(xc);
+			var Ec = n("./src/reddit/hooks/useLocalStorage.ts"),
+				xc = n("./src/reddit/selectors/features/predictions/creation/index.ts"),
+				Cc = n("./src/reddit/components/PollCreator/PollTypePicker/index.m.less"),
+				vc = n.n(Cc);
 
-			function vc() {
-				return (vc = Object.assign || function(e) {
+			function yc() {
+				return (yc = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var o in n) Object.prototype.hasOwnProperty.call(n, o) && (e[o] = n[o])
@@ -30153,80 +30154,82 @@
 				}).apply(this, arguments)
 			}
 
-			function yc({
-				tournamentsEnabled: e
+			function Oc({
+				subredditId: e,
+				tournamentsEnabled: t
 			}) {
-				const [t] = Object(gc.a)(rc.a.creation, !1), {
-					govType: n
-				} = Object(r.e)(T.u), i = Object(r.e)(Ec.a), c = Object(r.d)(), d = Object(un.a)(), u = Object(dn.a)(), m = null == u ? void 0 : u.queryParams.type, b = {
-					backgroundClassName: Cc.a.buttonBackground,
+				Object(tc.a)(e || "");
+				const [n] = Object(Ec.a)(ic.a.creation, !1), {
+					govType: i
+				} = Object(r.e)(T.u), c = Object(r.e)(xc.a), d = Object(r.d)(), u = Object(un.a)(), m = Object(dn.a)(), b = null == m ? void 0 : m.queryParams.type, f = {
+					backgroundClassName: vc.a.buttonBackground,
 					colorTheme: "blue",
-					className: Object(p.a)(Cc.a.button, Cc.a.pollTypePickerButton),
-					contentClassName: Cc.a.buttonContent,
-					disabled: i,
+					className: Object(p.a)(vc.a.button, vc.a.pollTypePickerButton),
+					contentClassName: vc.a.buttonContent,
+					disabled: c,
 					isDarkDayMode: !1,
 					isNightMode: !1,
 					layout: ec.g.Compact
-				}, f = Object(o.useCallback)(() => {
-					c(Object(a.k)({
-						oldType: n,
+				}, g = Object(o.useCallback)(() => {
+					d(Object(a.k)({
+						oldType: i,
 						type: me.a.Prediction
-					})), d(ln.q)
-				}, [c, n, d]);
+					})), u(ln.q)
+				}, [d, i, u]);
 				return Object(o.useEffect)(() => {
-					m === h.xb && f()
-				}, [m, f]), s.a.createElement("div", {
-					className: Cc.a.pollTypePicker
-				}, s.a.createElement(mc, vc({}, b, {
-					isActive: n === me.a.GA || !n,
+					b === h.xb && g()
+				}, [b, g]), s.a.createElement("div", {
+					className: vc.a.pollTypePicker
+				}, s.a.createElement(pc, yc({}, f, {
+					isActive: i === me.a.GA || !i,
 					onClick: () => {
-						c(Object(a.k)({
-							oldType: n,
+						d(Object(a.k)({
+							oldType: i,
 							type: me.a.GA
-						})), d(ln.p)
+						})), u(ln.p)
 					},
 					title: l.fbt._("Poll", null, {
 						hk: "2uKNlH"
 					})
 				}), l.fbt._("Poll", null, {
 					hk: "1l7ZuP"
-				})), s.a.createElement(mc, vc({}, b, {
-					isActive: n === me.a.Prediction,
-					onClick: f,
+				})), s.a.createElement(pc, yc({}, f, {
+					isActive: i === me.a.Prediction,
+					onClick: g,
 					title: l.fbt._("Prediction", null, {
 						hk: "3wu0FO"
 					})
 				}), s.a.createElement("div", {
-					className: Cc.a.predictionLabel
+					className: vc.a.predictionLabel
 				}, l.fbt._("Prediction", null, {
 					hk: "1CbFag"
-				}), !t && n !== me.a.Prediction && s.a.createElement(sc, {
-					className: Cc.a.newBadge
-				}))), n === me.a.Prediction && s.a.createElement("div", {
-					className: Cc.a.education
-				}, s.a.createElement(ic.a, {
-					isTokens: e,
-					onClose: () => d(bc),
-					onView: () => d(hc),
-					storageKey: rc.a.creation
+				}), !n && i !== me.a.Prediction && s.a.createElement(rc, {
+					className: vc.a.newBadge
+				}))), i === me.a.Prediction && s.a.createElement("div", {
+					className: vc.a.education
+				}, s.a.createElement(ac.a, {
+					isTokens: t,
+					onClose: () => u(fc),
+					onView: () => u(bc),
+					storageKey: ic.a.creation
 				})))
 			}
-			var Oc = n("./src/reddit/components/PollCreator/SortableOptions/index.m.less"),
-				_c = n.n(Oc),
-				kc = n("./src/reddit/icons/svgs/Grapple/index.tsx");
+			var _c = n("./src/reddit/components/PollCreator/SortableOptions/index.m.less"),
+				kc = n.n(_c),
+				jc = n("./src/reddit/icons/svgs/Grapple/index.tsx");
 
-			function jc(e) {
+			function Sc(e) {
 				return s.a.createElement("div", {
-					className: Object(p.a)(e.className, _c.a.container),
+					className: Object(p.a)(e.className, kc.a.container),
 					style: {
 						left: e.isDropTarget ? 16 : 0,
-						opacity: Sc(e),
+						opacity: Tc(e),
 						pointerEvents: e.isDisabled ? "none" : void 0
 					}
-				}, s.a.createElement(kc.a, {
-					className: _c.a.grapple
+				}, s.a.createElement(jc.a, {
+					className: kc.a.grapple
 				}), s.a.createElement("input", {
-					className: _c.a.input,
+					className: kc.a.input,
 					maxLength: 120,
 					placeholder: `${l.fbt._("option",null,{hk:"3IGnB"})} ${e.index+1}`,
 					value: e.text,
@@ -30234,22 +30237,22 @@
 					onChange: t => e.onTextChange(t.currentTarget.value),
 					onFocus: e.onFocus
 				}), e.removable && s.a.createElement(fo.a, {
-					className: _c.a.trash,
+					className: kc.a.trash,
 					onClick: e.onRemove
 				}))
 			}
 
-			function Sc(e) {
+			function Tc(e) {
 				return e.isDisabled ? .5 : e.isBeingDragged ? .25 : 1
 			}
 			const {
-				fbt: Tc
+				fbt: wc
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 
-			function wc(e, t) {
+			function Ic(e, t) {
 				return `${t}-${e}`
 			}
-			const Ic = ({
+			const Pc = ({
 				poll: e,
 				onUpdatePoll: t,
 				disabled: n,
@@ -30282,10 +30285,10 @@
 				}));
 				const h = e.options.length >= 6 || n;
 				return s.a.createElement("div", {
-					className: _c.a.options
+					className: kc.a.options
 				}, s.a.createElement($s.a, {
-					getReactKey: wc,
-					render: (e, t, o, r, i) => s.a.createElement(jc, {
+					getReactKey: Ic,
+					render: (e, t, o, r, i) => s.a.createElement(Sc, {
 						index: t,
 						isBeingDragged: o,
 						isDisabled: n,
@@ -30304,9 +30307,9 @@
 						options: s
 					})
 				}), s.a.createElement("div", {
-					className: _c.a.controls
+					className: kc.a.controls
 				}, s.a.createElement(ge.t, {
-					className: _c.a.addButton,
+					className: kc.a.addButton,
 					disabled: h,
 					onClick: () => void(e.options.length <= 6 && (i(Object(k.t)()), t({
 						...e,
@@ -30315,12 +30318,11 @@
 						})
 					}))),
 					priority: ge.c.Plain
-				}, Tc._("Add Option", null, {
+				}, wc._("Add Option", null, {
 					hk: "hUP0k"
 				})), r && r()))
 			};
-			var Pc = n("./src/reddit/actions/economics/predictions/constants.ts"),
-				Nc = n("./src/reddit/components/Econ/Prediction/hooks/useTournamentsQuery.ts"),
+			var Nc = n("./src/reddit/actions/economics/predictions/constants.ts"),
 				Mc = n("./src/reddit/components/PollCreator/TournamentPicker/index.m.less"),
 				Rc = n.n(Mc);
 
@@ -30336,10 +30338,10 @@
 					a = Object(r.e)(e => Object(hn.b)(e, {
 						subredditId: i
 					})) || {
-						id: Pc.j,
+						id: Nc.j,
 						name: "Predictions Tournament"
 					};
-				return Object(Nc.a)(o), o ? s.a.createElement("div", {
+				return Object(tc.a)(o), o ? s.a.createElement("div", {
 					className: Object(p.a)(Rc.a.tournamentPicker, e)
 				}, s.a.createElement("label", {
 					className: Rc.a.title
@@ -30408,15 +30410,17 @@
 						tournamentsEnabled: o,
 						allowPolls: r,
 						allowPredictions: i,
-						isPredictionCreationTabEnabled: a
-					} = this.props, c = !Object(me.d)(t) && r && i && !a;
+						isPredictionCreationTabEnabled: a,
+						subredditId: c
+					} = this.props, d = !Object(me.d)(t) && r && i && !a;
 					return s.a.createElement("div", {
 						"data-testid": "poll-creator"
-					}, c && s.a.createElement(yc, {
-						tournamentsEnabled: o
+					}, d && s.a.createElement(Oc, {
+						tournamentsEnabled: o,
+						subredditId: c
 					}), s.a.createElement("div", {
 						className: Object(p.a)(e, Lc.a.container)
-					}, s.a.createElement(Ic, {
+					}, s.a.createElement(Pc, {
 						poll: t,
 						disabled: Boolean(this.sectionIsDisabled(Uc.Options)),
 						onUpdatePoll: this.props.onUpdatePoll,
@@ -30675,13 +30679,13 @@
 					id: e,
 					onMouseEnter: () => {
 						u((e => t => ({
-							...Object(pc.defaults)(t),
+							...Object(hc.defaults)(t),
 							source: ln.a,
 							action: "view",
 							noun: "info_tooltip",
-							subreddit: Object(pc.subreddit)(t),
+							subreddit: Object(hc.subreddit)(t),
 							actionInfo: {
-								...Object(pc.actionInfo)(t),
+								...Object(hc.actionInfo)(t),
 								reason: e
 							}
 						}))(e)), h()
@@ -30708,7 +30712,7 @@
 					})),
 					i = Object(r.e)(T.s),
 					c = Object(r.e)(T.t) || $a();
-				return Object(Nc.a)((null == n ? void 0 : n.id) || ""), Object(o.useEffect)(() => {
+				return Object(tc.a)((null == n ? void 0 : n.id) || ""), Object(o.useEffect)(() => {
 					e(Object(a.k)({
 						oldType: i || null,
 						type: me.a.Prediction
@@ -30720,7 +30724,7 @@
 					})
 				}, _l._("Options", null, {
 					hk: "2unvji"
-				})), s.a.createElement(Ic, {
+				})), s.a.createElement(Pc, {
 					poll: c,
 					onUpdatePoll: t => e(Object(Ma.b)(t))
 				}), s.a.createElement(Ol, {
@@ -31158,11 +31162,11 @@
 					const o = Object(un.a)(),
 						r = e => {
 							o((e => t => ({
-								...Object(pc.defaults)(t),
+								...Object(hc.defaults)(t),
 								source: ln.a,
 								action: "click",
 								noun: "theme_selection",
-								subreddit: Object(pc.subreddit)(t),
+								subreddit: Object(hc.subreddit)(t),
 								predictions: {
 									tournamentThemeId: e
 								}
@@ -31246,8 +31250,8 @@
 				Ed = () => {
 					const [e, t, n] = Object(dd.a)(!1), o = Object(un.a)();
 					return s.a.createElement(s.a.Fragment, null, s.a.createElement(ld.a, {
-						onClose: () => o(bc),
-						onView: () => o(hc),
+						onClose: () => o(fc),
+						onView: () => o(bc),
 						title: l.fbt._("Predictions", null, {
 							hk: "4pJFGW"
 						}),
@@ -31259,12 +31263,12 @@
 						})), s.a.createElement("button", {
 							className: pd.a.learnMoreLink,
 							onClick: () => {
-								o(fc), t()
+								o(gc), t()
 							}
 						}, l.fbt._("Learn more about prediction tournaments", null, {
 							hk: "1chKID"
 						}))),
-						storageKey: rc.a.feature,
+						storageKey: ic.a.feature,
 						isFullWidth: !0
 					}), e && s.a.createElement(gd, {
 						onClose: n
@@ -31627,7 +31631,7 @@
 					canPostAsModerator: T.e,
 					destSubreddit: T.h,
 					govType: e => e.creations.formData.govType,
-					hasCreatedPredictionDrafts: Ec.a,
+					hasCreatedPredictionDrafts: xc.a,
 					isTabsDisabled: nu,
 					pending: T.bb,
 					submissionType: T.a,
@@ -33457,4 +33461,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.bcf798ed8aba0969d82e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.cc04c70418fc6503f65f.js.map
