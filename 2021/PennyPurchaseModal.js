@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.e8a6af0a5f042c10c98b.js
-// Retrieved at 12/8/2021, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.fc76c9cef6dd6762964f.js
+// Retrieved at 12/8/2021, 1:40:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PennyPurchaseModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, a) {
@@ -45,11 +45,11 @@
 			"use strict";
 			a.d(t, "b", (function() {
 				return w
-			})), a.d(t, "k", (function() {
+			})), a.d(t, "j", (function() {
 				return _
-			})), a.d(t, "h", (function() {
-				return S
 			})), a.d(t, "g", (function() {
+				return S
+			})), a.d(t, "f", (function() {
 				return I
 			})), a.d(t, "d", (function() {
 				return M
@@ -57,14 +57,12 @@
 				return T
 			})), a.d(t, "a", (function() {
 				return G
-			})), a.d(t, "i", (function() {
+			})), a.d(t, "h", (function() {
 				return L
 			})), a.d(t, "e", (function() {
 				return q
-			})), a.d(t, "j", (function() {
+			})), a.d(t, "i", (function() {
 				return V
-			})), a.d(t, "f", (function() {
-				return W
 			}));
 			var r = a("./node_modules/fbt/lib/FbtPublic.js"),
 				n = a("./node_modules/lodash/omit.js"),
@@ -349,7 +347,7 @@
 					await t(Object(v.o)(!0)), t(Q({
 						user: e
 					}))
-				}, V = Object(u.a)(b.ab), W = () => async e => e(Object(x.h)(i.a.ECON_PREMIUM_FEEDBACK))
+				}, V = Object(u.a)(b.ab)
 		},
 		"./src/reddit/components/CheckoutForm/index.m.less": function(e, t, a) {
 			e.exports = {
@@ -1941,4 +1939,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PennyPurchaseModal.e8a6af0a5f042c10c98b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PennyPurchaseModal.fc76c9cef6dd6762964f.js.map

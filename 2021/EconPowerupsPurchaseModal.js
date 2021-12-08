@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.cfce448ccb413c8c260f.js
-// Retrieved at 12/8/2021, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.5d56e903df792e48f716.js
+// Retrieved at 12/8/2021, 1:40:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsPurchaseModal"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -518,11 +518,11 @@
 			"use strict";
 			r.d(t, "b", (function() {
 				return N
-			})), r.d(t, "k", (function() {
+			})), r.d(t, "j", (function() {
 				return S
-			})), r.d(t, "h", (function() {
-				return k
 			})), r.d(t, "g", (function() {
+				return k
+			})), r.d(t, "f", (function() {
 				return I
 			})), r.d(t, "d", (function() {
 				return M
@@ -530,14 +530,12 @@
 				return T
 			})), r.d(t, "a", (function() {
 				return L
-			})), r.d(t, "i", (function() {
+			})), r.d(t, "h", (function() {
 				return U
 			})), r.d(t, "e", (function() {
 				return G
-			})), r.d(t, "j", (function() {
+			})), r.d(t, "i", (function() {
 				return W
-			})), r.d(t, "f", (function() {
-				return V
 			}));
 			var n = r("./node_modules/fbt/lib/FbtPublic.js"),
 				a = r("./node_modules/lodash/omit.js"),
@@ -822,7 +820,7 @@
 					await t(Object(v.o)(!0)), t(q({
 						user: e
 					}))
-				}, W = Object(m.a)(f.ab), V = () => async e => e(Object(P.h)(d.a.ECON_PREMIUM_FEEDBACK))
+				}, W = Object(m.a)(f.ab)
 		},
 		"./src/reddit/actions/goldPurchaseModals/payment.ts": function(e, t, r) {
 			"use strict";
@@ -1139,7 +1137,7 @@
 							t && t.type && ("paypal-finish.success.framedmodal" === t.type ? (b(), m && m.close()) : "paypal-finish.cancel.framedmodal" === t.type && m && m.close())
 						},
 						b = () => {
-							d(Object(P.i)({
+							d(Object(P.h)({
 								subredditId: i,
 								powerupsCount: o,
 								user: r,
@@ -1150,7 +1148,7 @@
 						onClick: async () => {
 							if (!c) return;
 							u(!0);
-							const e = await d(Object(P.h)(c, s, o, R.c.Powerups, i));
+							const e = await d(Object(P.g)(c, s, o, R.c.Powerups, i));
 							if (e) {
 								const {
 									url: t
@@ -1311,7 +1309,7 @@
 					})), m = Object(s.e)(w.w), p = Object(s.e)(w.m), [b, h] = Object(n.useState)(!1), y = p || m;
 					return a.a.createElement(D.l, {
 						onClick: async () => {
-							o && c && u && (h(!0), await i(Object(P.k)(o, c, u, d, l, R.c.Powerups, r)), h(!1))
+							o && c && u && (h(!0), await i(Object(P.j)(o, c, u, d, l, R.c.Powerups, r)), h(!1))
 						},
 						className: t,
 						disabled: y || !o || b
@@ -2615,4 +2613,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.cfce448ccb413c8c260f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.5d56e903df792e48f716.js.map

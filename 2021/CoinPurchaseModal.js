@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.79d071ca5fb3b0ffce5a.js
-// Retrieved at 12/8/2021, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.41d4c7cc52ab0df2112e.js
+// Retrieved at 12/8/2021, 1:40:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinPurchaseModal"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -300,14 +300,14 @@
 									N = O(d),
 									I = O(u),
 									S = O(E),
-									A = O(g),
-									T = O(j);
+									T = O(g),
+									A = O(j);
 								t.useLayoutEffect((function() {
 									if (null == w.current && x && null != k.current) {
 										var t = x.create(e, c);
 										w.current = t, t.mount(k.current), t.on("ready", (function() {
 											return _(t)
-										})), t.on("change", A), t.on("blur", N), t.on("focus", I), t.on("escape", T), t.on("click", S)
+										})), t.on("change", T), t.on("blur", N), t.on("focus", I), t.on("escape", A), t.on("click", S)
 									}
 								}));
 								var M = p(c);
@@ -345,15 +345,15 @@
 					N = P("cardCvc", E),
 					I = P("fpxBank", E),
 					S = P("iban", E),
-					A = P("idealBank", E),
-					T = P("p24Bank", E),
+					T = P("idealBank", E),
+					A = P("p24Bank", E),
 					M = P("epsBank", E),
 					R = P("payment", E),
 					B = P("paymentRequestButton", E),
 					D = P("linkAuthentication", E),
 					G = P("shippingAddress", E),
 					F = P("afterpayClearpayMessage", E);
-				e.AfterpayClearpayMessageElement = F, e.AuBankAccountElement = x, e.CardCvcElement = N, e.CardElement = w, e.CardExpiryElement = _, e.CardNumberElement = k, e.Elements = y, e.ElementsConsumer = j, e.EpsBankElement = M, e.FpxBankElement = I, e.IbanElement = S, e.IdealBankElement = A, e.LinkAuthenticationElement = D, e.P24BankElement = T, e.PaymentElement = R, e.PaymentRequestButtonElement = B, e.ShippingAddressElement = G, e.useElements = function() {
+				e.AfterpayClearpayMessageElement = F, e.AuBankAccountElement = x, e.CardCvcElement = N, e.CardElement = w, e.CardExpiryElement = _, e.CardNumberElement = k, e.Elements = y, e.ElementsConsumer = j, e.EpsBankElement = M, e.FpxBankElement = I, e.IbanElement = S, e.IdealBankElement = T, e.LinkAuthenticationElement = D, e.P24BankElement = A, e.PaymentElement = R, e.PaymentRequestButtonElement = B, e.ShippingAddressElement = G, e.useElements = function() {
 					return C("calls useElements()").elements
 				}, e.useStripe = function() {
 					return C("calls useStripe()").stripe
@@ -549,26 +549,24 @@
 			"use strict";
 			r.d(t, "b", (function() {
 				return k
-			})), r.d(t, "k", (function() {
+			})), r.d(t, "j", (function() {
 				return N
-			})), r.d(t, "h", (function() {
-				return I
 			})), r.d(t, "g", (function() {
+				return I
+			})), r.d(t, "f", (function() {
 				return S
 			})), r.d(t, "d", (function() {
-				return A
-			})), r.d(t, "c", (function() {
 				return T
+			})), r.d(t, "c", (function() {
+				return A
 			})), r.d(t, "a", (function() {
 				return G
-			})), r.d(t, "i", (function() {
+			})), r.d(t, "h", (function() {
 				return L
 			})), r.d(t, "e", (function() {
 				return U
-			})), r.d(t, "j", (function() {
+			})), r.d(t, "i", (function() {
 				return Q
-			})), r.d(t, "f", (function() {
-				return W
 			}));
 			var n = r("./node_modules/fbt/lib/FbtPublic.js"),
 				a = r("./node_modules/lodash/omit.js"),
@@ -772,7 +770,7 @@
 						m.c.captureException(s)
 					}
 					return r(Object(h.paypalApiError)(x())), !1
-				}, A = () => async (e, t, {
+				}, T = () => async (e, t, {
 					gqlContext: r
 				}) => {
 					e(Object(h.savedCardsPending)());
@@ -794,7 +792,7 @@
 					} catch (a) {
 						m.c.captureException(a), e(Object(h.savedCardsSuccess)([]))
 					}
-				}, T = e => async (t, r, {
+				}, A = e => async (t, r, {
 					gqlContext: n
 				}) => {
 					t(Object(h._deleteSavedCard)(e));
@@ -853,7 +851,7 @@
 					await t(Object(O.o)(!0)), t(q({
 						user: e
 					}))
-				}, Q = Object(p.a)(f.ab), W = () => async e => e(Object(v.h)(d.a.ECON_PREMIUM_FEEDBACK))
+				}, Q = Object(p.a)(f.ab)
 		},
 		"./src/reddit/actions/goldPurchaseModals/coinPurchaseModal.ts": function(e, t, r) {
 			"use strict";
@@ -870,9 +868,9 @@
 			})), r.d(t, "j", (function() {
 				return S
 			})), r.d(t, "i", (function() {
-				return A
-			})), r.d(t, "f", (function() {
 				return T
+			})), r.d(t, "f", (function() {
+				return A
 			})), r.d(t, "g", (function() {
 				return M
 			})), r.d(t, "h", (function() {
@@ -980,7 +978,7 @@
 						});
 						o(Object(i.stripeApiError)(e))
 					}
-				}, A = (e, t, o, s) => async (c, d, {
+				}, T = (e, t, o, s) => async (c, d, {
 					apiContext: l
 				}) => {
 					const u = d(),
@@ -1061,7 +1059,7 @@
 						});
 						c(Object(i.stripeApiError)(e))
 					}
-				}, T = e => async (t, r, {
+				}, A = e => async (t, r, {
 					apiContext: n
 				}) => {
 					const o = Object(b.c)(b.a.GoldPayment),
@@ -1769,7 +1767,7 @@
 					}))
 				}
 			}
-			const A = Object(P.b)(I, (e, t) => ({
+			const T = Object(P.b)(I, (e, t) => ({
 				createPayment: () => "coinPackage" in t ? e(Object(_.f)(t.coinPackage)) : "awardId" in t ? e(Object(N.d)(t.awardId, t.pennies, t.thingId)) : void 0,
 				executePayment: (r, n) => {
 					if ("coinPackage" in t) {
@@ -1778,8 +1776,8 @@
 					} else "awardId" in t && e(Object(N.c)(n))
 				}
 			}))(S);
-			var T = Object(x.a)({
-					getComponent: () => Object(w.c)().then(() => A),
+			var A = Object(x.a)({
+					getComponent: () => Object(w.c)().then(() => T),
 					ErrorComponent: () => null,
 					LoadingComponent: () => null
 				}),
@@ -1817,12 +1815,12 @@
 					}, s.a.createElement(h.a, {
 						className: R.a.balance,
 						coinBalance: t
-					}), o === i.Hb ? e && e.pennyPrice && r ? s.a.createElement(T, {
+					}), o === i.Hb ? e && e.pennyPrice && r ? s.a.createElement(A, {
 						awardId: e.id,
 						className: Object(f.a)(R.a.purchaseButton, R.a.paypalCheckoutButton),
 						pennies: e.pennyPrice,
 						thingId: r
-					}) : n && s.a.createElement(T, {
+					}) : n && s.a.createElement(A, {
 						className: Object(f.a)(R.a.purchaseButton, R.a.paypalCheckoutButton),
 						coinPackage: n
 					}) : null, o === i.Gb && s.a.createElement(y.l, {
@@ -2070,7 +2068,7 @@
 			const {
 				fbt: S
 			} = r("./node_modules/fbt/lib/FbtPublic.js");
-			var A = e => {
+			var T = e => {
 					const {
 						award: t,
 						onClickClose: r
@@ -2096,7 +2094,7 @@
 						sizePx: 100
 					})))
 				},
-				T = r("./src/reddit/components/CoinPurchaseModal/PaymentCompletePage.tsx"),
+				A = r("./src/reddit/components/CoinPurchaseModal/PaymentCompletePage.tsx"),
 				M = r("./src/reddit/components/CoinPurchaseModal/SelectPaymentPage.tsx");
 
 			function R() {
@@ -2223,11 +2221,11 @@
 					if (p) return i(p), l(), null;
 					const v = !!o,
 						P = [...r, ...n, ...f].filter(e => e.mobileId === b)[0];
-					return "paymentCompleted" === e ? a.a.createElement("div", null, a.a.createElement(T.a, {
+					return "paymentCompleted" === e ? a.a.createElement("div", null, a.a.createElement(A.a, {
 						isGild: v,
 						onCloseClick: l,
 						userName: O
-					})) : m || !P ? a.a.createElement("div", null, a.a.createElement(A, {
+					})) : m || !P ? a.a.createElement("div", null, a.a.createElement(T, {
 						award: g,
 						onClickClose: l
 					})) : a.a.createElement("div", null, "selectPayment" === e && a.a.createElement(M.a, {
@@ -2707,13 +2705,13 @@
 					})))
 				}
 			}
-			var A = S;
-			const T = Object(s.c)({
+			var T = S;
+			const A = Object(s.c)({
 					rememberCard: u.v,
 					savedCard: e => Object(u.x)(e)[0],
 					stripeInfoLoading: u.w
 				}),
-				M = Object(o.b)(T, (e, t) => ({
+				M = Object(o.b)(A, (e, t) => ({
 					onClickDeleteCard: r => t.shouldDeleteCardWithGql ? e(Object(i.c)(r)) : e(Object(d.deleteSavedCard)(r)),
 					onToggleRememberCard: () => e(Object(d.toggleRememberCard)())
 				}));
@@ -2741,7 +2739,7 @@
 					}, u && a.a.createElement(l.a, {
 						className: x.a.loader,
 						sizePx: 60
-					}), p && s && a.a.createElement("form", null, a.a.createElement(A, {
+					}), p && s && a.a.createElement("form", null, a.a.createElement(T, {
 						nightmode: t,
 						onDelete: r,
 						savedCard: s
@@ -3450,4 +3448,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.79d071ca5fb3b0ffce5a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.41d4c7cc52ab0df2112e.js.map

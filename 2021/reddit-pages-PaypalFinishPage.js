@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-pages-PaypalFinishPage.7f7933a69e470d820f25.js
-// Retrieved at 12/7/2021, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-pages-PaypalFinishPage.3637347b70c211e343b0.js
+// Retrieved at 12/8/2021, 1:40:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-pages-PaypalFinishPage"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -351,9 +351,9 @@
 					T = E("payment", C),
 					G = E("paymentRequestButton", C),
 					D = E("linkAuthentication", C),
-					B = E("shippingAddress", C),
-					q = E("afterpayClearpayMessage", C);
-				e.AfterpayClearpayMessageElement = q, e.AuBankAccountElement = S, e.CardCvcElement = _, e.CardElement = x, e.CardExpiryElement = k, e.CardNumberElement = w, e.Elements = g, e.ElementsConsumer = O, e.EpsBankElement = R, e.FpxBankElement = A, e.IbanElement = I, e.IdealBankElement = N, e.LinkAuthenticationElement = D, e.P24BankElement = L, e.PaymentElement = T, e.PaymentRequestButtonElement = G, e.ShippingAddressElement = B, e.useElements = function() {
+					q = E("shippingAddress", C),
+					B = E("afterpayClearpayMessage", C);
+				e.AfterpayClearpayMessageElement = B, e.AuBankAccountElement = S, e.CardCvcElement = _, e.CardElement = x, e.CardExpiryElement = k, e.CardNumberElement = w, e.Elements = g, e.ElementsConsumer = O, e.EpsBankElement = R, e.FpxBankElement = A, e.IbanElement = I, e.IdealBankElement = N, e.LinkAuthenticationElement = D, e.P24BankElement = L, e.PaymentElement = T, e.PaymentRequestButtonElement = G, e.ShippingAddressElement = q, e.useElements = function() {
 					return j("calls useElements()").elements
 				}, e.useStripe = function() {
 					return j("calls useStripe()").stripe
@@ -366,26 +366,24 @@
 			"use strict";
 			r.d(t, "b", (function() {
 				return w
-			})), r.d(t, "k", (function() {
+			})), r.d(t, "j", (function() {
 				return _
-			})), r.d(t, "h", (function() {
-				return A
 			})), r.d(t, "g", (function() {
+				return A
+			})), r.d(t, "f", (function() {
 				return I
 			})), r.d(t, "d", (function() {
 				return N
 			})), r.d(t, "c", (function() {
 				return L
 			})), r.d(t, "a", (function() {
-				return B
-			})), r.d(t, "i", (function() {
+				return q
+			})), r.d(t, "h", (function() {
 				return Q
 			})), r.d(t, "e", (function() {
-				return U
-			})), r.d(t, "j", (function() {
+				return M
+			})), r.d(t, "i", (function() {
 				return W
-			})), r.d(t, "f", (function() {
-				return F
 			}));
 			var n = r("./node_modules/fbt/lib/FbtPublic.js"),
 				o = r("./node_modules/lodash/omit.js"),
@@ -495,7 +493,7 @@
 							powerupsCount: o,
 							user: O,
 							isAnonymous: n
-						})) : m && c(U({
+						})) : m && c(M({
 							user: O
 						})))
 					} catch (I) {
@@ -564,7 +562,7 @@
 									powerupsCount: r,
 									user: n,
 									isAnonymous: t
-								})) : m && a(U({
+								})) : m && a(M({
 									user: n
 								})), null
 							}
@@ -632,7 +630,7 @@
 						duration: u.a,
 						text: e
 					}))
-				}, B = (e, t, r) => async (o, a, {
+				}, q = (e, t, r) => async (o, a, {
 					gqlContext: i
 				}) => {
 					o(T({
@@ -659,18 +657,18 @@
 							hk: "4yuT5m"
 						})))
 					}
-				}, q = Object(p.a)(b.S), Q = e => async (t, r) => {
-					t(q(e)), t(Object(h.m)(e.subredditId, {
+				}, B = Object(p.a)(b.S), Q = e => async (t, r) => {
+					t(B(e)), t(Object(h.m)(e.subredditId, {
 						forceLoad: !0,
 						fullData: !1
 					})), t(Object(P.g)(d.a.ECON_POWERUPS_PURCHASE)), t(Object(P.h)(d.a.ECON_POWERUPS_SUCCESS))
-				}, M = Object(p.a)(b.W), U = ({
+				}, U = Object(p.a)(b.W), M = ({
 					user: e
 				}) => async t => {
-					await t(Object(h.o)(!0)), t(M({
+					await t(Object(h.o)(!0)), t(U({
 						user: e
 					}))
-				}, W = Object(p.a)(b.ab), F = () => async e => e(Object(P.h)(d.a.ECON_PREMIUM_FEEDBACK))
+				}, W = Object(p.a)(b.ab)
 		},
 		"./src/reddit/actions/goldPurchaseModals/payment.ts": function(e, t, r) {
 			"use strict";
@@ -1032,7 +1030,7 @@
 					params: t,
 					paypalErrorMessage: r
 				} = e, a = t[y], i = t[v], l = t[O], m = t[g], P = t[j], E = t[h], S = Object(u.a)(), x = async () => {
-					k(C.Loading), await S(Object(s.g)(m, P)) ? ((() => e.postMessage({
+					k(C.Loading), await S(Object(s.f)(m, P)) ? ((() => e.postMessage({
 						type: "paypal-finish.success",
 						data: {
 							subredditId: a,
@@ -1181,4 +1179,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-pages-PaypalFinishPage.7f7933a69e470d820f25.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-pages-PaypalFinishPage.3637347b70c211e343b0.js.map

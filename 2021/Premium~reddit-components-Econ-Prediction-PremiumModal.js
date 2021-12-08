@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.8b1cbf71782e1fe64d97.js
-// Retrieved at 12/8/2021, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.4ab6bc4ac433643a006f.js
+// Retrieved at 12/8/2021, 1:40:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Premium~reddit-components-Econ-Prediction-PremiumModal"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -301,22 +301,22 @@
 									N = k(u),
 									S = k(E),
 									A = k(y),
-									M = k(O);
+									T = k(O);
 								t.useLayoutEffect((function() {
 									if (null == w.current && _ && null != x.current) {
 										var t = _.create(e, s);
 										w.current = t, t.mount(x.current), t.on("ready", (function() {
 											return C(t)
-										})), t.on("change", A), t.on("blur", I), t.on("focus", N), t.on("escape", M), t.on("click", S)
+										})), t.on("change", A), t.on("blur", I), t.on("focus", N), t.on("escape", T), t.on("click", S)
 									}
 								}));
-								var T = m(s);
+								var M = m(s);
 								return t.useEffect((function() {
 									if (w.current) {
-										var e = f(s, T, ["paymentRequest"]);
+										var e = f(s, M, ["paymentRequest"]);
 										e && w.current.update(e)
 									}
-								}), [s, T]), t.useLayoutEffect((function() {
+								}), [s, M]), t.useLayoutEffect((function() {
 									return function() {
 										w.current && w.current.destroy()
 									}
@@ -346,14 +346,14 @@
 					N = v("fpxBank", E),
 					S = v("iban", E),
 					A = v("idealBank", E),
-					M = v("p24Bank", E),
-					T = v("epsBank", E),
+					T = v("p24Bank", E),
+					M = v("epsBank", E),
 					B = v("payment", E),
 					L = v("paymentRequestButton", E),
 					R = v("linkAuthentication", E),
 					U = v("shippingAddress", E),
 					G = v("afterpayClearpayMessage", E);
-				e.AfterpayClearpayMessageElement = G, e.AuBankAccountElement = _, e.CardCvcElement = I, e.CardElement = w, e.CardExpiryElement = C, e.CardNumberElement = x, e.Elements = g, e.ElementsConsumer = O, e.EpsBankElement = T, e.FpxBankElement = N, e.IbanElement = S, e.IdealBankElement = A, e.LinkAuthenticationElement = R, e.P24BankElement = M, e.PaymentElement = B, e.PaymentRequestButtonElement = L, e.ShippingAddressElement = U, e.useElements = function() {
+				e.AfterpayClearpayMessageElement = G, e.AuBankAccountElement = _, e.CardCvcElement = I, e.CardElement = w, e.CardExpiryElement = C, e.CardNumberElement = x, e.Elements = g, e.ElementsConsumer = O, e.EpsBankElement = M, e.FpxBankElement = N, e.IbanElement = S, e.IdealBankElement = A, e.LinkAuthenticationElement = R, e.P24BankElement = T, e.PaymentElement = B, e.PaymentRequestButtonElement = L, e.ShippingAddressElement = U, e.useElements = function() {
 					return j("calls useElements()").elements
 				}, e.useStripe = function() {
 					return j("calls useStripe()").stripe
@@ -541,26 +541,24 @@
 			"use strict";
 			r.d(t, "b", (function() {
 				return x
-			})), r.d(t, "k", (function() {
+			})), r.d(t, "j", (function() {
 				return I
-			})), r.d(t, "h", (function() {
-				return N
 			})), r.d(t, "g", (function() {
+				return N
+			})), r.d(t, "f", (function() {
 				return S
 			})), r.d(t, "d", (function() {
 				return A
 			})), r.d(t, "c", (function() {
-				return M
+				return T
 			})), r.d(t, "a", (function() {
 				return U
-			})), r.d(t, "i", (function() {
+			})), r.d(t, "h", (function() {
 				return D
 			})), r.d(t, "e", (function() {
 				return q
-			})), r.d(t, "j", (function() {
+			})), r.d(t, "i", (function() {
 				return Q
-			})), r.d(t, "f", (function() {
-				return W
 			}));
 			var n = r("./node_modules/fbt/lib/FbtPublic.js"),
 				a = r("./node_modules/lodash/omit.js"),
@@ -786,7 +784,7 @@
 					} catch (a) {
 						p.c.captureException(a), e(Object(h.savedCardsSuccess)([]))
 					}
-				}, M = e => async (t, r, {
+				}, T = e => async (t, r, {
 					gqlContext: n
 				}) => {
 					t(Object(h._deleteSavedCard)(e));
@@ -801,8 +799,8 @@
 					} catch (a) {
 						p.c.captureException(a)
 					}
-				}, T = Object(m.a)(b.O), B = Object(m.a)(b.P), L = Object(m.a)(b.Q), R = e => async (t, r) => {
-					await t(T(e)), t(Object(l.f)({
+				}, M = Object(m.a)(b.O), B = Object(m.a)(b.P), L = Object(m.a)(b.Q), R = e => async (t, r) => {
+					await t(M(e)), t(Object(l.f)({
 						kind: f.b.Error,
 						duration: l.a,
 						text: e
@@ -845,7 +843,7 @@
 					await t(Object(k.o)(!0)), t(F({
 						user: e
 					}))
-				}, Q = Object(m.a)(b.ab), W = () => async e => e(Object(P.h)(d.a.ECON_PREMIUM_FEEDBACK))
+				}, Q = Object(m.a)(b.ab)
 		},
 		"./src/reddit/actions/gold/productOffers.ts": function(e, t, r) {
 			"use strict";
@@ -854,9 +852,9 @@
 			})), r.d(t, "c", (function() {
 				return A
 			})), r.d(t, "b", (function() {
-				return M
-			})), r.d(t, "a", (function() {
 				return T
+			})), r.d(t, "a", (function() {
+				return M
 			}));
 			var n = r("./node_modules/fbt/lib/FbtPublic.js"),
 				a = r("./src/lib/makeActionCreator/index.ts"),
@@ -973,7 +971,7 @@
 						});
 						e(v(t)), e(C(t))
 					}
-				}, M = e => async (t, r, {
+				}, T = e => async (t, r, {
 					gqlContext: a
 				}) => {
 					var o;
@@ -998,8 +996,8 @@
 						});
 						return t(w(e)), t(C(e)), !1
 					}
-				}, T = e => async t => {
-					const r = await t(M(e));
+				}, M = e => async t => {
+					const r = await t(T(e));
 					return r ? (t(Object(i.f)({
 						duration: i.a,
 						kind: c.b.SuccessCommunity,
@@ -2432,8 +2430,8 @@
 				N = r("./src/reddit/selectors/user.ts"),
 				S = r("./src/reddit/icons/svgs/PremiumLogo/index.tsx"),
 				A = r("./src/reddit/controls/Button/index.tsx"),
-				M = r("./src/reddit/pages/Premium/BenefitsSection/index.tsx"),
-				T = r("./src/reddit/pages/Premium/PremiumButtons/index.tsx"),
+				T = r("./src/reddit/pages/Premium/BenefitsSection/index.tsx"),
+				M = r("./src/reddit/pages/Premium/PremiumButtons/index.tsx"),
 				B = r("./src/lib/classNames/index.ts"),
 				L = r("./src/reddit/actions/claimgold.ts"),
 				R = r("./src/reddit/hooks/useTracking.ts"),
@@ -2498,7 +2496,7 @@
 						correlationId: r,
 						packageId: t
 					})),
-					onSetPremiumRenewalInterval: t => e(Object(v.j)({
+					onSetPremiumRenewalInterval: t => e(Object(v.i)({
 						renewInterval: t
 					})),
 					requestPurchaseCatalog: t => e(Object(w.b)(t)),
@@ -2540,9 +2538,9 @@
 						className: k.a.title
 					}, a.fbt._("Join Reddit Premium Today", null, {
 						hk: "2sm8Pz"
-					})), i.a.createElement(M.a, {
+					})), i.a.createElement(T.a, {
 						className: k.a.benefits
-					}), i.a.createElement(T.a, {
+					}), i.a.createElement(M.a, {
 						onClickPackage: this.onClickPrice,
 						onClickManagePremium: this.onClickManagePremium
 					}), i.a.createElement("div", {
@@ -2572,7 +2570,7 @@
 						className: k.a.heroDescription
 					}, a.fbt._("Help support Reddit and get VIP treatment, exclusive access, and monthly coins.", null, {
 						hk: "19iqSJ"
-					})), i.a.createElement(T.a, {
+					})), i.a.createElement(M.a, {
 						className: k.a.heroButtons,
 						isHeroStyles: !0,
 						onClickPackage: this.onClickPrice,
@@ -2737,4 +2735,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.8b1cbf71782e1fe64d97.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.4ab6bc4ac433643a006f.js.map

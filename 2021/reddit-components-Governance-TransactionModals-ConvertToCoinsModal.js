@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.0e54b04c327ccd98c82d.js
-// Retrieved at 12/7/2021, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.8f121f23eb55eac69c95.js
+// Retrieved at 12/8/2021, 1:40:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-ConvertToCoinsModal"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, n) {
@@ -351,9 +351,9 @@
 					T = x("payment", C),
 					L = x("paymentRequestButton", C),
 					D = x("linkAuthentication", C),
-					B = x("shippingAddress", C),
-					G = x("afterpayClearpayMessage", C);
-				e.AfterpayClearpayMessageElement = G, e.AuBankAccountElement = w, e.CardCvcElement = _, e.CardElement = P, e.CardExpiryElement = k, e.CardNumberElement = M, e.Elements = y, e.ElementsConsumer = E, e.EpsBankElement = z, e.FpxBankElement = N, e.IbanElement = I, e.IdealBankElement = S, e.LinkAuthenticationElement = D, e.P24BankElement = A, e.PaymentElement = T, e.PaymentRequestButtonElement = L, e.ShippingAddressElement = B, e.useElements = function() {
+					G = x("shippingAddress", C),
+					B = x("afterpayClearpayMessage", C);
+				e.AfterpayClearpayMessageElement = B, e.AuBankAccountElement = w, e.CardCvcElement = _, e.CardElement = P, e.CardExpiryElement = k, e.CardNumberElement = M, e.Elements = y, e.ElementsConsumer = E, e.EpsBankElement = z, e.FpxBankElement = N, e.IbanElement = I, e.IdealBankElement = S, e.LinkAuthenticationElement = D, e.P24BankElement = A, e.PaymentElement = T, e.PaymentRequestButtonElement = L, e.ShippingAddressElement = G, e.useElements = function() {
 					return g("calls useElements()").elements
 				}, e.useStripe = function() {
 					return g("calls useStripe()").stripe
@@ -405,26 +405,24 @@
 			"use strict";
 			n.d(t, "b", (function() {
 				return M
-			})), n.d(t, "k", (function() {
+			})), n.d(t, "j", (function() {
 				return _
-			})), n.d(t, "h", (function() {
-				return N
 			})), n.d(t, "g", (function() {
+				return N
+			})), n.d(t, "f", (function() {
 				return I
 			})), n.d(t, "d", (function() {
 				return S
 			})), n.d(t, "c", (function() {
 				return A
 			})), n.d(t, "a", (function() {
-				return B
-			})), n.d(t, "i", (function() {
+				return G
+			})), n.d(t, "h", (function() {
 				return F
 			})), n.d(t, "e", (function() {
 				return V
-			})), n.d(t, "j", (function() {
+			})), n.d(t, "i", (function() {
 				return U
-			})), n.d(t, "f", (function() {
-				return W
 			}));
 			var r = n("./node_modules/fbt/lib/FbtPublic.js"),
 				a = n("./node_modules/lodash/omit.js"),
@@ -671,7 +669,7 @@
 						duration: d.a,
 						text: e
 					}))
-				}, B = (e, t, n) => async (a, c, {
+				}, G = (e, t, n) => async (a, c, {
 					gqlContext: o
 				}) => {
 					a(T({
@@ -698,8 +696,8 @@
 							hk: "4yuT5m"
 						})))
 					}
-				}, G = Object(p.a)(b.S), F = e => async (t, n) => {
-					t(G(e)), t(Object(O.m)(e.subredditId, {
+				}, B = Object(p.a)(b.S), F = e => async (t, n) => {
+					t(B(e)), t(Object(O.m)(e.subredditId, {
 						forceLoad: !0,
 						fullData: !1
 					})), t(Object(j.g)(l.a.ECON_POWERUPS_PURCHASE)), t(Object(j.h)(l.a.ECON_POWERUPS_SUCCESS))
@@ -709,7 +707,7 @@
 					await t(Object(O.o)(!0)), t(R({
 						user: e
 					}))
-				}, U = Object(p.a)(b.ab), W = () => async e => e(Object(j.h)(l.a.ECON_PREMIUM_FEEDBACK))
+				}, U = Object(p.a)(b.ab)
 		},
 		"./src/reddit/actions/gold/productOffers.ts": function(e, t, n) {
 			"use strict";
@@ -1579,8 +1577,8 @@
 				T = n("./src/reddit/models/Toast/index.ts"),
 				L = n("./src/reddit/selectors/gold/econPurchase.ts"),
 				D = n("./src/reddit/selectors/gold/productOffers.ts"),
-				B = n("./src/reddit/selectors/gov.ts"),
-				G = n("./src/reddit/components/Governance/TransactionModals/VaultTransactionModal/index.tsx"),
+				G = n("./src/reddit/selectors/gov.ts"),
+				B = n("./src/reddit/components/Governance/TransactionModals/VaultTransactionModal/index.tsx"),
 				F = n("./src/reddit/components/Governance/TransactionModals/ApprovalModal/Details.tsx");
 
 			function R(e) {
@@ -1702,7 +1700,7 @@
 						productOffersPending: b,
 						subredditLockedCoins: v
 					} = Object(j.e)(Object(x.c)({
-						pointsBalance: e => Object(B.e)(e, p),
+						pointsBalance: e => Object(G.e)(e, p),
 						productOffer: e => {
 							var t;
 							return null === (t = Object(D.i)(e, {
@@ -1729,7 +1727,7 @@
 						g(Object(A.c)("coins", u, new O.a(E).dividedBy(W).toFixed(), e))
 					},
 					Q = () => y(Object(M.f)());
-				return a.a.createElement(G.a, {
+				return a.a.createElement(B.a, {
 					approvalOverview: a.a.createElement(K, {
 						pointsAmount: E,
 						onChange: (e, t) => {
@@ -2601,4 +2599,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.0e54b04c327ccd98c82d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.8f121f23eb55eac69c95.js.map
