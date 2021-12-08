@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.57e5aeb7c13cf478d164.js
-// Retrieved at 12/8/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.3245ed1534bda3a0422e.js
+// Retrieved at 12/8/2021, 4:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -5526,96 +5526,100 @@
 								n = [Object(M.c)(e)];
 							Object(b.d)(s, t, n)
 						})
+					}, this.getInjectChildren = () => {
+						const {
+							avatarBanner: e,
+							focusedVerticalPositions: t,
+							isRpanDuVisible: a,
+							layout: s,
+							listingKey: n,
+							rpanInjectionIndex: r,
+							sendEvent: c
+						} = this.props, i = {};
+						if (s === I.g.Large && t.forEach((e, t) => {
+								i[e] = Object(_.a)({
+									numInstance: t,
+									layout: s,
+									listingKey: n,
+									listingName: J.c,
+									listingPosition: e
+								})
+							}), a) {
+							const {
+								child: e,
+								idx: t
+							} = Object(j.a)({
+								children: i,
+								desiredIndex: r,
+								layout: s,
+								listingKey: n,
+								listingName: z.R,
+								sendEvent: c
+							});
+							i[t] = e
+						}
+						return e && (i[0] = {
+							estHeight: 180,
+							id: "avatar-listing-banner",
+							render: ({
+								className: t
+							}) => o.a.createElement(f.a, {
+								className: t,
+								bannerType: e
+							})
+						}), i
 					}
 				}
 				render() {
 					const {
-						avatarBanner: e,
-						focusedVerticalPositions: t,
-						isCommentCountAnimationEnabled: a,
-						isCountAnimShadowTestEnabled: s,
-						isInTrendingEntrypointExperiment: n,
-						isInUISimplificationI18NExperiment: r,
-						isLoggedIn: i,
-						isPopular: l,
-						isRpanDuVisible: u,
-						isVoteCountAnimationEnabled: m,
-						layout: p,
-						listingKey: b,
-						rpanInjectionIndex: h,
-						sendEvent: g,
-						showSignupUpsell: y
-					} = this.props, C = l && !i && n && !r, w = {
+						isCommentCountAnimationEnabled: e,
+						isCountAnimShadowTestEnabled: t,
+						isInTrendingEntrypointExperiment: a,
+						isInUISimplificationI18NExperiment: s,
+						isLoggedIn: n,
+						isPopular: r,
+						isVoteCountAnimationEnabled: i,
+						layout: l,
+						listingKey: u,
+						showSignupUpsell: m
+					} = this.props, p = r && !n && a && !s, b = {
 						baseUrl: "",
 						countrySort: this.props.countrySort,
 						sort: this.props.sort,
 						timeSort: this.props.timeSort
-					}, P = {};
-					if (p === I.g.Large && t.forEach((e, t) => {
-							P[e] = Object(_.a)({
-								numInstance: t,
-								layout: p,
-								listingKey: b,
-								listingName: J.c,
-								listingPosition: e
-							})
-						}), u) {
-						const {
-							child: e,
-							idx: t
-						} = Object(j.a)({
-							children: P,
-							desiredIndex: h,
-							layout: p,
-							listingKey: b,
-							listingName: z.R,
-							sendEvent: g
-						});
-						P[t] = e
-					}
-					e && (P[0] = {
-						estHeight: 180,
-						id: "avatar-listing-banner",
-						render: ({
-							className: t
-						}) => o.a.createElement(f.a, {
-							className: t,
-							bannerType: e
-						})
-					});
-					const T = o.a.createElement(E.default, {
+					}, h = o.a.createElement(E.default, {
 						className: X.a.sidebar,
-						listingKey: b,
+						listingKey: u,
 						listingName: J.c
 					});
 					return o.a.createElement(D.a, {
 						className: Object(d.a)(X.a.Container, this.props.className),
 						fitPageToContent: !0,
-						trendingUnit: C && o.a.createElement(oe, {
-							showCardView: p === I.g.Large
+						trendingUnit: p && o.a.createElement(oe, {
+							showCardView: l === I.g.Large
 						}),
-						content: o.a.createElement(c.Fragment, null, C && o.a.createElement(A.a, {
+						content: o.a.createElement(c.Fragment, null, p && o.a.createElement(A.a, {
 							className: X.a.duHeader
 						}, $._("Popular posts", null, {
 							hk: "36DJb4"
-						})), o.a.createElement(v.a, null), i && o.a.createElement(k.a, null), o.a.createElement(x.a, w), o.a.createElement(N.a, null), o.a.createElement(S.a, {
+						})), o.a.createElement(v.a, null), n && o.a.createElement(k.a, null), o.a.createElement(x.a, b), o.a.createElement(N.a, null), o.a.createElement(S.a, {
 							listingKey: this.props.listingKey,
 							shortTimer: !0,
 							handlePillClick: this.props.refreshFeed
 						}), o.a.createElement(O.a, {
-							injectChildren: P,
-							isCommentCountAnimationEnabled: a,
-							isVoteCountAnimationEnabled: m,
-							isCountAnimShadowTestEnabled: s,
+							getInjectChildren: this.getInjectChildren,
+							isCommentCountAnimationEnabled: e,
+							isVoteCountAnimationEnabled: i,
+							isCountAnimShadowTestEnabled: t,
 							noPostsComponent: this.renderEmptySubreddit,
 							key: "listing",
-							listingKey: b,
+							listingKey: u,
 							listingName: J.c,
 							listingViewed: this.onListingViewed,
 							onLoadMore: this.props.onLoadMorePosts,
-							onScroll: y
+							onScroll: m
 						})),
-						sidebar: T
+						sidebar: h
 					})
 				}
 			}
@@ -6036,4 +6040,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.57e5aeb7c13cf478d164.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.3245ed1534bda3a0422e.js.map

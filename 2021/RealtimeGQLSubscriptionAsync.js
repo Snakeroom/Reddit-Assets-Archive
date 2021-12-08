@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RealtimeGQLSubscriptionAsync.225e5f6cb0c286624a70.js
-// Retrieved at 10/13/2021, 8:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RealtimeGQLSubscriptionAsync.3a216479bc37d4d295f9.js
+// Retrieved at 12/8/2021, 4:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RealtimeGQLSubscriptionAsync"], {
 		"./src/realtime/GQLSubscription/index.tsx": function(e, n, t) {
@@ -135,7 +135,7 @@
 			let g;
 			const S = {
 					reconnect: !0,
-					reconnectionAttempts: 6,
+					reconnectionAttempts: 3,
 					lazy: !0,
 					timeout: 3e4,
 					inactivityTimeout: 15e3
@@ -165,7 +165,10 @@
 					return p ? t && t() : b ? s && s() : !p && !b && c && c.subscribe && c.subscribe.data && n && n(c), null
 				});
 			n.default = e => {
-				const [n, t] = Object(a.useState)(g), u = Object(c.e)(e => e.user.session);
+				const [n, t] = Object(a.useState)(g), u = Object(c.e)(e => {
+					var n;
+					return null === (n = e.user.session) || void 0 === n ? void 0 : n.accessToken
+				});
 				Object(a.useEffect)(() => {
 					g || (g = function() {
 						let e;
@@ -174,7 +177,10 @@
 								const e = new o.a(new l.SubscriptionClient(`wss://${d.a.gqlRealtimeAddress}`, {
 									...S,
 									connectionParams: {
-										Authorization: u && u.accessToken ? `Bearer ${u.accessToken}` : ""
+										Authorization: u ? `Bearer ${u}` : ""
+									},
+									connectionCallback: e => {
+										"401: 401 Unauthorized" === (e && e.message || "") && (g = null, t(null))
 									}
 								}));
 								return new s.a({
@@ -202,4 +208,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RealtimeGQLSubscriptionAsync.225e5f6cb0c286624a70.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RealtimeGQLSubscriptionAsync.3a216479bc37d4d295f9.js.map
