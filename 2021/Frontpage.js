@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.5360645d6f19208e9060.js
-// Retrieved at 12/8/2021, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.57e5aeb7c13cf478d164.js
+// Retrieved at 12/8/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -711,7 +711,7 @@
 						b = Z.A in e.queryParams && e.queryParams[Z.A].toUpperCase() || "",
 						h = b in l.fc && l.fc[b];
 					if (p || u && !m && !t) return void(u && (a(D.m({
-						title: T.d()
+						title: T.e()
 					})), (null === (n = c.listings.postOrder.correlationIds) || void 0 === n ? void 0 : n[d]) && a(D.o({
 						correlationId: c.listings.postOrder.correlationIds[d]
 					})), c.sidebarPromotedPosts.firstFetch || window.addEventListener("load", () => {
@@ -728,7 +728,7 @@
 						statsdPathsForExperiments: _,
 						t: Object(W.a)(i, h)
 					})), a(D.m({
-						title: T.d()
+						title: T.e()
 					})), Object(O.c)(c, {
 						experimentEligibilitySelector: O.a,
 						experimentName: "redesign_aa"
@@ -6036,4 +6036,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.5360645d6f19208e9060.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.57e5aeb7c13cf478d164.js.map

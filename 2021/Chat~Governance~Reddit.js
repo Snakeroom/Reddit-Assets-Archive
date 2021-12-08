@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.5f8ed1519ac70b1bb886.js
-// Retrieved at 12/8/2021, 2:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.9b96b73d79567055d637.js
+// Retrieved at 12/8/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3320,10 +3320,10 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("154129"),
+				buildNumber: Object(r.c)("154140"),
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
-				buildTimestamp: Object(r.b)("1638990375"),
+				buildTimestamp: Object(r.b)("1638992050"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -5890,14 +5890,14 @@
 					}))
 				},
 				z = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %cf48b3ec63b7abe31ce394acf8c841ca2e8fe0f8a-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %cf00ce17c0b3088f7103f4e7366870543a8881b6f-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "f48b3ec63b7abe31ce394acf8c841ca2e8fe0f8a-production",
+						release: "f00ce17c0b3088f7103f4e7366870543a8881b6f-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6414,7 +6414,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "f48b3ec63b7abe31ce394acf8c841ca2e8fe0f8a-production",
+						releaseClient: "f00ce17c0b3088f7103f4e7366870543a8881b6f-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -7195,13 +7195,13 @@
 				return a
 			})), i.d(t, "f", (function() {
 				return l
-			})), i.d(t, "h", (function() {
+			})), i.d(t, "g", (function() {
 				return u
 			})), i.d(t, "i", (function() {
 				return c
-			})), i.d(t, "g", (function() {
-				return _
 			})), i.d(t, "j", (function() {
+				return _
+			})), i.d(t, "h", (function() {
 				return p
 			})), i.d(t, "k", (function() {
 				return m
@@ -7213,6 +7213,8 @@
 				return b
 			})), i.d(t, "o", (function() {
 				return g
+			})), i.d(t, "p", (function() {
+				return w
 			}));
 			var n = i("./node_modules/fbt/lib/FbtPublic.js");
 			const r = () => n.fbt._("Reddit Avatar Builder - Create Your Custom Avatar", null, {
@@ -7224,40 +7226,43 @@
 				o = (e, t) => n.fbt._("{postTitle}: {subreddit}", [n.fbt._param("postTitle", e), n.fbt._param("subreddit", t)], {
 					hk: "2IfXU7"
 				}),
-				d = () => n.fbt._("Reddit - Dive into anything", null, {
+				d = () => n.fbt._("Community Points - Own a Piece of Your Community", null, {
+					hk: "4gmhhh"
+				}),
+				a = () => n.fbt._("Reddit - Dive into anything", null, {
 					hk: "3basF2"
 				}),
-				a = () => n.fbt._("Moderation Queue", null, {
+				l = () => n.fbt._("Moderation Queue", null, {
 					hk: "48r06Q"
 				}),
-				l = () => n.fbt._("Notifications", null, {
+				u = () => n.fbt._("Notifications", null, {
 					hk: "OUIeh"
 				}),
-				u = () => n.fbt._("Predictions - Become the World's Greatest Predictor", null, {
+				c = () => n.fbt._("Predictions - Become the World's Greatest Predictor", null, {
 					hk: "43GFss"
 				}),
-				c = () => n.fbt._("Reddit Premium - Enjoy Exclusive Features and VIP Status", null, {
+				_ = () => n.fbt._("Reddit Premium - Enjoy Exclusive Features and VIP Status", null, {
 					hk: "4eqnyx"
 				}),
-				_ = () => n.fbt._("Powerups - Reddit Community Subscriptions that Unlock Perks", null, {
+				p = () => n.fbt._("Powerups - Reddit Community Subscriptions that Unlock Perks", null, {
 					hk: "2zIDhQ"
 				}),
-				p = () => n.fbt._("Reddit Live", null, {
+				m = () => n.fbt._("Reddit Live", null, {
 					hk: "3xjxUD"
 				}),
-				m = () => n.fbt._("Reddit Settings", null, {
+				h = () => n.fbt._("Reddit Settings", null, {
 					hk: "4f8xQM"
 				}),
-				h = e => n.fbt._("Submit to {subreddit}", [n.fbt._param("subreddit", e)], {
+				f = e => n.fbt._("Submit to {subreddit}", [n.fbt._param("subreddit", e)], {
 					hk: "1sykEm"
 				}),
-				f = () => n.fbt._("Today’s Top Communities", null, {
+				b = () => n.fbt._("Today’s Top Communities", null, {
 					hk: "2dcUEX"
 				}),
-				b = () => n.fbt._("Reddit Talk - Live Audio Conversations in Your Favorite Communities", null, {
+				g = () => n.fbt._("Reddit Talk - Live Audio Conversations in Your Favorite Communities", null, {
 					hk: "4C3LAO"
 				}),
-				g = () => n.fbt._("Reddit Recap", null, {
+				w = () => n.fbt._("Reddit Recap", null, {
 					hk: "P9uPS"
 				})
 		},
@@ -35041,7 +35046,7 @@
 					const i = m(e, {
 						profileName: t
 					});
-					return i && `${n.fbt._("{profileTitleOrName} ({displayText}) - Reddit",[n.fbt._param("profileTitleOrName",i.title||i.name),n.fbt._param("displayText",i.displayText)],{hk:"1MLLB8"})}` || `${Object(o.d)()}`
+					return i && `${n.fbt._("{profileTitleOrName} ({displayText}) - Reddit",[n.fbt._param("profileTitleOrName",i.title||i.name),n.fbt._param("displayText",i.displayText)],{hk:"1MLLB8"})}` || `${Object(o.e)()}`
 				},
 				E = (e, {
 					profileName: t
@@ -35813,7 +35818,7 @@
 					const i = q(e, {
 						subredditName: t
 					});
-					return i && i.title || Object(d.d)().toString()
+					return i && i.title || Object(d.e)().toString()
 				},
 				te = (e, {
 					subredditId: t
@@ -43041,4 +43046,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.5f8ed1519ac70b1bb886.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.9b96b73d79567055d637.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.aee1bfa61af3640142d2.js
-// Retrieved at 12/8/2021, 2:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.15ff4367dab4ebfbdd40.js
+// Retrieved at 12/8/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~ModListing", "reddit-components-BlankPost", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, n) {
@@ -1244,7 +1244,7 @@
 				d = n("./src/reddit/selectors/user.ts");
 			t.a = () => async (e, t) => {
 				if (e(Object(a.m)({
-						title: Object(s.g)()
+						title: Object(s.h)()
 					})), await e(Object(i.t)()), !Object(d.K)(t())) return;
 				await e(Object(o.q)());
 				const n = Object(c.a)(t());
@@ -18779,4 +18779,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.aee1bfa61af3640142d2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.15ff4367dab4ebfbdd40.js.map

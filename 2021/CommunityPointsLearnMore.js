@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.4aa5e2e044a225b18490.js
-// Retrieved at 12/7/2021, 9:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.85895891d904928b43e4.js
+// Retrieved at 12/8/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityPointsLearnMore"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, o) {
@@ -1688,7 +1688,6 @@
 				subtitle: "_1fiXx_cB7w4HkwykMuyx0w",
 				body: "_1JRBoMFbhlLJke-WjiF9tg",
 				imageSection: "_26XceelGMk4WXZndVXPgs0",
-				imageContainer: "_21z1zXdwaOJ6ayQtKtWS5c",
 				image: "_39n5c2gafF2Zu9YWqEe6cM"
 			}
 		},
@@ -3728,7 +3727,10 @@
 				hk: "1g3lSo"
 			})))), i.a.createElement("div", {
 				className: ct.a.imageSection
-			}));
+			}, i.a.createElement("img", {
+				className: ct.a.image,
+				src: `${n.a.assetPath}/img/communityPoints/landingPage/vault_v4.png`
+			})));
 			var ht = o("./src/reddit/pages/meta/CommunityPointsLearnMorePage/index.m.less"),
 				pt = o.n(ht);
 			t.default = () => {
@@ -4075,4 +4077,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.4aa5e2e044a225b18490.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.85895891d904928b43e4.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OnboardingModal.c46364c1b3cb90fdf980.js
-// Retrieved at 12/8/2021, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OnboardingModal.bc7c36b51651b6abb61c.js
+// Retrieved at 12/8/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OnboardingModal"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -616,7 +616,7 @@
 						b = B.A in e.queryParams && e.queryParams[B.A].toUpperCase() || "",
 						f = b in d.fc && d.fc[b];
 					if (p || u && !m && !t) return void(u && (n(P.m({
-						title: G.d()
+						title: G.e()
 					})), (null === (s = o.listings.postOrder.correlationIds) || void 0 === s ? void 0 : s[l]) && n(P.o({
 						correlationId: o.listings.postOrder.correlationIds[l]
 					})), o.sidebarPromotedPosts.firstFetch || window.addEventListener("load", () => {
@@ -633,7 +633,7 @@
 						statsdPathsForExperiments: x,
 						t: Object(Q.a)(c, f)
 					})), n(P.m({
-						title: G.d()
+						title: G.e()
 					})), Object(y.c)(o, {
 						experimentEligibilitySelector: y.a,
 						experimentName: "redesign_aa"
@@ -3729,4 +3729,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.c46364c1b3cb90fdf980.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.bc7c36b51651b6abb61c.js.map
