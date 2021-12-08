@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~e4e56b68.b2032c70159153406e3a.js
-// Retrieved at 12/7/2021, 10:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~e4e56b68.022e3f5e0a753a9379a8.js
+// Retrieved at 12/7/2021, 9:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~e4e56b68"], {
 		"./src/reddit/actions/economics/subredditPremium/actionCreators.ts": function(e, t, r) {
@@ -1940,7 +1940,7 @@
 						showTimestamp: x = !0,
 						subredditOrProfile: j,
 						tooltipType: R
-					} = e, H = Object(o.d)(), U = Object(f.a)(), D = Object(o.e)(ne.a), q = Object(o.e)(ie.d), W = Object(o.e)(ie.g) || ["popular", "all"].includes(q || ""), z = !(!v.isSponsored || !D || Object(l.Ff)(D));
+					} = e, H = Object(o.d)(), U = Object(f.a)(), D = Object(o.e)(ne.a), q = Object(o.e)(ie.d), W = Object(o.e)(ie.g) || ["popular", "all"].includes(q || ""), z = !(!v.isSponsored || !D || Object(l.Df)(D));
 					Object(s.useEffect)(() => {
 						z && H(Object(p.d)(v.author))
 					}, []);
@@ -2935,7 +2935,7 @@
 						experimentEligibilitySelector: o.K,
 						experimentName: s.Fc
 					});
-					return !(!t || Object(s.Ff)(t))
+					return !(!t || Object(s.Df)(t))
 				},
 				i = e => {
 					return Object(n.c)(e, {
@@ -3001,4 +3001,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~e4e56b68.b2032c70159153406e3a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~e4e56b68.022e3f5e0a753a9379a8.js.map

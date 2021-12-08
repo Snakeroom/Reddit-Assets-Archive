@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.c322a718892069452ff3.js
-// Retrieved at 12/7/2021, 10:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.78f377ecbc30cd92ac0d.js
+// Retrieved at 12/7/2021, 9:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -2951,7 +2951,7 @@
 						showTimestamp: y = !0,
 						subredditOrProfile: j,
 						tooltipType: A
-					} = e, H = Object(o.d)(), D = Object(C.a)(), U = Object(o.e)(ne.a), V = Object(o.e)(ae.d), K = Object(o.e)(ae.g) || ["popular", "all"].includes(V || ""), G = !(!g.isSponsored || !U || Object(l.Ff)(U));
+					} = e, H = Object(o.d)(), D = Object(C.a)(), U = Object(o.e)(ne.a), V = Object(o.e)(ae.d), K = Object(o.e)(ae.g) || ["popular", "all"].includes(V || ""), G = !(!g.isSponsored || !U || Object(l.Df)(U));
 					Object(r.useEffect)(() => {
 						G && H(Object(p.d)(g.author))
 					}, []);
@@ -7309,12 +7309,12 @@
 						rtJsonElementProps: o
 					});
 					switch (r) {
-						case h.ff.SmIcon:
+						case h.ef.SmIcon:
 							return n.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: o
 							});
-						case h.ff.SmIconHc:
+						case h.ef.SmIconHc:
 							return n.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -9435,7 +9435,7 @@
 				},
 				d = e => {
 					const t = c(e);
-					return t === r.ff.SmIcon || t === r.ff.SmIconHc
+					return t === r.ef.SmIcon || t === r.ef.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -9470,4 +9470,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.c322a718892069452ff3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.78f377ecbc30cd92ac0d.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.db09ef5e36785ed69ac6.js
-// Retrieved at 12/7/2021, 10:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.6ef42e2c80cc3d3f6ebd.js
+// Retrieved at 12/7/2021, 9:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -5110,14 +5110,14 @@
 			const Ve = e => {
 					return Object(De.c)(e, {
 						experimentEligibilitySelector: De.a,
-						experimentName: Me.zf
+						experimentName: Me.xf
 					}) === Me.id
 				},
 				We = e => {
 					if (Object(Ue.a)(e)) return !1;
 					return Object(De.c)(e, {
 						experimentEligibilitySelector: De.a,
-						experimentName: Me.yf
+						experimentName: Me.wf
 					}) === Me.id
 				},
 				He = (e, {
@@ -5128,7 +5128,7 @@
 					});
 					return !(Object(Ue.a)(e) || !s || s.isSponsored) && Object(De.c)(e, {
 						experimentEligibilitySelector: De.a,
-						experimentName: Me.xf
+						experimentName: Me.vf
 					}) === Me.id
 				};
 			var ze = s("./node_modules/fbt/lib/FbtPublic.js"),
@@ -6288,7 +6288,7 @@
 							baseUrl: s.base_url,
 							hostPostId: a,
 							isEligibleForLinkedPosts: n,
-							shouldShowLinkedPosts: n && !Object(x.Ff)(t) && !Object(P.a)(t),
+							shouldShowLinkedPosts: n && !Object(x.Df)(t) && !Object(P.a)(t),
 							subreddit: o
 						}
 					}
@@ -6349,7 +6349,7 @@
 						hostPostData: d,
 						listingBelowVariant: c
 					} = e;
-					if (c && !Object(x.Ff)(c) && !Object(P.a)(c) && !i) return a.a.createElement("div", {
+					if (c && !Object(x.Df)(c) && !Object(P.a)(c) && !i) return a.a.createElement("div", {
 						className: z.a.smallBanner
 					});
 					const {
@@ -8342,7 +8342,7 @@
 					experimentEligibilitySelector: n.a,
 					experimentName: o.yc
 				});
-				return !(!t || Object(o.Ff)(t))
+				return !(!t || Object(o.Df)(t))
 			}
 		},
 		"./src/reddit/selectors/experiments/nsfwBlockingExperiment.ts": function(e, t, s) {
@@ -8446,37 +8446,37 @@
 					if (Object(i.a)(e)) return !1;
 					return Object(n.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.Bf
+						experimentName: o.zf
 					}) === o.id
 				},
 				d = e => {
 					return Object(n.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.Cf
+						experimentName: o.Af
 					}) === o.id
 				},
 				c = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(n.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.Af
+						experimentName: o.yf
 					});
-					return t === o.tf.UIChangesOnly || t === o.tf.TypingIndicators || t === o.tf.IndicatorsPlusCTA
+					return t === o.rf.UIChangesOnly || t === o.rf.TypingIndicators || t === o.rf.IndicatorsPlusCTA
 				},
 				l = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(r.d)(e, {
-							experimentName: o.Af
+							experimentName: o.yf
 						}),
 						s = null == t ? void 0 : t.variant;
-					return s === o.tf.TypingIndicators || s === o.tf.IndicatorsPlusCTA
+					return s === o.rf.TypingIndicators || s === o.rf.IndicatorsPlusCTA
 				},
 				m = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(r.d)(e, {
-						experimentName: o.Af
+						experimentName: o.yf
 					});
-					return (null == t ? void 0 : t.variant) === o.tf.IndicatorsPlusCTA
+					return (null == t ? void 0 : t.variant) === o.rf.IndicatorsPlusCTA
 				}
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, s) {
@@ -8598,7 +8598,7 @@
 				i = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const a = e => {
 					const t = Object(i.a)(e);
-					return Boolean(t) && !Object(n.Ff)(t)
+					return Boolean(t) && !Object(n.Df)(t)
 				},
 				d = Object(o.a)(a, r.d, (e, t) => e && !t)
 		},
@@ -8661,4 +8661,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.db09ef5e36785ed69ac6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.6ef42e2c80cc3d3f6ebd.js.map

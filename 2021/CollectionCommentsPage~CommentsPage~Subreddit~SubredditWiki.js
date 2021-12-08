@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.81dd026e2438e95c6a9b.js
-// Retrieved at 12/7/2021, 10:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.14950962f75540f4c15f.js
+// Retrieved at 12/7/2021, 9:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"], {
 		"./node_modules/lodash/random.js": function(e, t, r) {
@@ -1227,7 +1227,7 @@
 						const t = this.resolve(e);
 						return !1 !== this.resolved[t] && !!r.m[t]
 					},
-					importAsync: () => Promise.all([r.e("CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~MembershipPaywa~c24a8af4"), r.e("CollectionCommentsPage~CommentsPage~Frontpage~GovernanceReleaseNotesModal~ModListing~ModQueuePages~M~eb6c0aee"), r.e("ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~e4e56b68"), r.e("CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab"), r.e("CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~898a3d9b"), r.e("reddit-components-SidebarNativeAd")]).then(r.bind(null, "./src/reddit/components/SidebarNativeAd/index.tsx")),
+					importAsync: () => Promise.all([r.e("CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~MembershipPaywa~1f4a9acf"), r.e("CollectionCommentsPage~CommentsPage~Frontpage~GovernanceReleaseNotesModal~ModListing~ModQueuePages~M~eb6c0aee"), r.e("ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~e4e56b68"), r.e("CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab"), r.e("CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~898a3d9b"), r.e("reddit-components-SidebarNativeAd")]).then(r.bind(null, "./src/reddit/components/SidebarNativeAd/index.tsx")),
 					requireAsync(e) {
 						const t = this.resolve(e);
 						return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
@@ -1968,33 +1968,35 @@
 				ruleDescription: "_2QhEclR_DjIrTv_oNU5MMN"
 			}
 		},
-		"./src/reddit/components/Widgets/SubredditRules/Rule/index.tsx": function(e, t, r) {
+		"./src/reddit/components/Widgets/SubredditRules/index.tsx": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
-				return w
+				return O
 			}));
-			var n = r("./node_modules/react/index.js"),
-				s = r.n(n),
-				i = r("./src/lib/classNames/index.ts"),
-				a = r("./src/lib/lessComponent.tsx"),
-				o = r("./src/reddit/components/RawHTMLDisplay/index.tsx"),
-				d = r("./src/reddit/components/RichTextJson/index.tsx"),
-				c = r("./src/reddit/helpers/dom/index.ts"),
-				l = r("./src/reddit/icons/fonts/index.tsx"),
-				u = r("./src/reddit/layout/threeCol/ExpandCenter/index.tsx"),
-				m = r("./src/reddit/models/Widgets/index.ts"),
-				p = r("./src/reddit/components/Widgets/SubredditRules/Rule/index.m.less"),
-				b = r.n(p);
-			const h = a.a.div("RuleShortName", b.a),
-				g = a.a.div("RuleIndex", b.a),
-				f = a.a.div("RuleTitle", b.a),
-				x = a.a.div("RuleDescription", b.a),
-				v = a.a.wrapped(o.a, "RawHTMLDisplay", b.a),
-				_ = {};
-			class w extends s.a.Component {
+			var n = r("./node_modules/fbt/lib/FbtPublic.js"),
+				s = r("./node_modules/react/index.js"),
+				i = r.n(s),
+				a = r("./src/reddit/components/Widgets/ThemedWidget/index.tsx"),
+				o = r("./src/lib/classNames/index.ts"),
+				d = r("./src/lib/lessComponent.tsx"),
+				c = r("./src/reddit/components/RawHTMLDisplay/index.tsx"),
+				l = r("./src/reddit/components/RichTextJson/index.tsx"),
+				u = r("./src/reddit/helpers/dom/index.ts"),
+				m = r("./src/reddit/icons/fonts/index.tsx"),
+				p = r("./src/reddit/layout/threeCol/ExpandCenter/index.tsx"),
+				b = r("./src/reddit/models/Widgets/index.ts"),
+				h = r("./src/reddit/components/Widgets/SubredditRules/Rule/index.m.less"),
+				g = r.n(h);
+			const f = d.a.div("RuleShortName", g.a),
+				x = d.a.div("RuleIndex", g.a),
+				v = d.a.div("RuleTitle", g.a),
+				_ = d.a.div("RuleDescription", g.a),
+				w = d.a.wrapped(c.a, "RawHTMLDisplay", g.a),
+				y = {};
+			class k extends i.a.Component {
 				constructor(e) {
 					super(e), this.onClick = () => {
-						Object(c.f)() || this.setState({
+						Object(u.f)() || this.setState({
 							isVisible: !this.state.isVisible
 						})
 					}, this.state = {
@@ -2002,7 +2004,7 @@
 					}
 				}
 				shouldShowFullDisplay(e) {
-					return e.display === m.h.FULL
+					return e.display === b.h.FULL
 				}
 				render() {
 					const {
@@ -2010,44 +2012,33 @@
 						state: t,
 						onClick: r,
 						shouldShowFullDisplay: n
-					} = this, a = !!(e.rule.descriptionRichText || e.rule.descriptionHtml || e.rule.description), o = !n(e) && !!a;
-					return s.a.createElement(h, {
-						className: Object(i.a)({
-							[b.a.pointerCursor]: o,
-							[b.a.cleanStyle]: e.cleanStyle
+					} = this, s = !!(e.rule.descriptionRichText || e.rule.descriptionHtml || e.rule.description), a = !n(e) && !!s;
+					return i.a.createElement(f, {
+						className: Object(o.a)({
+							[g.a.pointerCursor]: a,
+							[g.a.cleanStyle]: e.cleanStyle
 						}),
-						onClick: n(e) || !a ? void 0 : r
-					}, s.a.createElement(u.a, null, s.a.createElement(g, {
-						className: Object(i.a)({
-							[b.a.cleanStyle]: e.cleanStyle
+						onClick: n(e) || !s ? void 0 : r
+					}, i.a.createElement(p.a, null, i.a.createElement(x, {
+						className: Object(o.a)({
+							[g.a.cleanStyle]: e.cleanStyle
 						})
-					}, `${e.humanIndex}.`), s.a.createElement(f, null, `${e.rule.shortName}`), s.a.createElement("div", null, !n(e) && a && s.a.createElement(l.a, {
+					}, `${e.humanIndex}.`), i.a.createElement(v, null, `${e.rule.shortName}`), i.a.createElement("div", null, !n(e) && s && i.a.createElement(m.a, {
 						name: t.isVisible ? "caret_up" : "caret_down"
-					}))), t.isVisible && s.a.createElement(x, {
-						className: Object(i.a)({
-							[b.a.cleanStyle]: e.cleanStyle
+					}))), t.isVisible && i.a.createElement(_, {
+						className: Object(o.a)({
+							[g.a.cleanStyle]: e.cleanStyle
 						})
-					}, e.rule.descriptionRichText ? s.a.createElement(d.a, {
+					}, e.rule.descriptionRichText ? i.a.createElement(l.a, {
 						content: JSON.parse(e.rule.descriptionRichText),
 						useExplicitTextColor: !0,
-						rtJsonElementProps: _
-					}) : e.rule.descriptionHtml ? s.a.createElement(v, {
+						rtJsonElementProps: y
+					}) : e.rule.descriptionHtml ? i.a.createElement(w, {
 						html: e.rule.descriptionHtml
 					}) : e.rule.description))
 				}
 			}
-		},
-		"./src/reddit/components/Widgets/SubredditRules/index.tsx": function(e, t, r) {
-			"use strict";
-			r.d(t, "a", (function() {
-				return d
-			}));
-			var n = r("./node_modules/fbt/lib/FbtPublic.js"),
-				s = r("./node_modules/react/index.js"),
-				i = r.n(s),
-				a = r("./src/reddit/components/Widgets/ThemedWidget/index.tsx"),
-				o = r("./src/reddit/components/Widgets/SubredditRules/Rule/index.tsx");
-			const d = e => e.rules.length > 0 ? i.a.createElement(a.a, {
+			const O = e => e.rules.length > 0 ? i.a.createElement(a.a, {
 				className: e.className,
 				styles: e.styles,
 				title: n.fbt._("{subredditName} Rules", [n.fbt._param("subredditName", `r/${e.subredditName}`)], {
@@ -2055,14 +2046,14 @@
 				}),
 				redditStyle: e.redditStyle
 			}, e.rules.map((function(t, r) {
-				return i.a.createElement(o.a, {
+				return i.a.createElement(k, {
 					key: `rule${t.shortName}${t.createdUtc}`,
 					rule: t,
 					display: e.display,
 					humanIndex: r + 1
 				})
 			}))) : null;
-			t.b = e => i.a.createElement(d, {
+			t.b = e => i.a.createElement(O, {
 				rules: e.widget.data || [],
 				subredditName: e.subredditName,
 				display: e.widget.display,
@@ -2863,4 +2854,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.81dd026e2438e95c6a9b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.14950962f75540f4c15f.js.map
