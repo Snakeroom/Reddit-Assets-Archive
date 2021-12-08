@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.353ba5f3238b1a4a92ee.js
-// Retrieved at 12/7/2021, 9:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.025bd298623653d64c10.js
+// Retrieved at 12/8/2021, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -52,16 +52,16 @@
 			const h = Object(a.a)(e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.Wd
+					experimentName: u.Zd
 				});
-				return Object(u.Df)(t) ? void 0 : t
+				return Object(u.Gf)(t) ? void 0 : t
 			}, e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.Xd
+					experimentName: u.ae
 				});
-				return Object(u.Df)(t) ? void 0 : t
-			}, (e, t) => e === u.ae.Enabled && t === u.ae.Enabled);
+				return Object(u.Gf)(t) ? void 0 : t
+			}, (e, t) => e === u.de.Enabled && t === u.de.Enabled);
 			var p = s("./src/config.ts");
 			var b = s("./src/reddit/selectors/user.ts");
 			const v = e => {
@@ -3383,4 +3383,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.353ba5f3238b1a4a92ee.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.025bd298623653d64c10.js.map

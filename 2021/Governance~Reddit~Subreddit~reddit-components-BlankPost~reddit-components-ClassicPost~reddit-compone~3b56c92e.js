@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.93701e2d460fdb10bff9.js
-// Retrieved at 12/7/2021, 9:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.f04ab2675e1ad98379d5.js
+// Retrieved at 12/8/2021, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, r) {
@@ -979,7 +979,7 @@
 						method: s.jb.GET
 					}))(r());
 					i.ok ? e(M(y(i.body))) : e(N(i.error))
-				}, L = "POST_DRAFT__SAVE_DRAFT_PENDING", F = "POST_DRAFT__SAVE_DRAFT_SUCCEEDED", U = "POST_DRAFT__SAVE_DRAFT_FAILED", V = "POST_DRAFT__SAVE_DRAFT_VALIDATION_FAILED", G = "POST_DRAFT__SAVE_DRAFT_SUBMIT_VALIDATION_FAILED", B = "POST_DRAFT__SAVE_DRAFT_CAPTCHA_REQUIRED", q = "POST_CREATION__TOGGLE_DRAFT_IS_PUBLIC", H = Object(i.a)(L), Q = Object(i.a)(F), W = Object(i.a)(U), $ = Object(i.a)(V), z = Object(i.a)(G), K = Object(i.a)(B), Y = Object(i.a)(q), X = e => async (t, r, {
+				}, L = "POST_DRAFT__SAVE_DRAFT_PENDING", F = "POST_DRAFT__SAVE_DRAFT_SUCCEEDED", U = "POST_DRAFT__SAVE_DRAFT_FAILED", V = "POST_DRAFT__SAVE_DRAFT_VALIDATION_FAILED", G = "POST_DRAFT__SAVE_DRAFT_SUBMIT_VALIDATION_FAILED", B = "POST_DRAFT__SAVE_DRAFT_CAPTCHA_REQUIRED", q = "POST_CREATION__TOGGLE_DRAFT_IS_PUBLIC", H = Object(i.a)(L), Q = Object(i.a)(F), W = Object(i.a)(U), $ = Object(i.a)(V), K = Object(i.a)(G), z = Object(i.a)(B), Y = Object(i.a)(q), X = e => async (t, r, {
 					apiContext: i
 				}) => {
 					const o = r(),
@@ -1015,7 +1015,7 @@
 						})), e || t(Object(a.a)(p.destSubreddit, r, !1))
 					} else {
 						const e = f.error;
-						e.type === s.I.BAD_CAPTCHA_ERROR ? t(K()) : e.type === s.I.VALIDATION_ERROR ? t($(e)) : e.type === s.I.SUBMIT_VALIDATION_ERROR ? t(z(e)) : t(W(e)), t(Object(d.f)({
+						e.type === s.I.BAD_CAPTCHA_ERROR ? t(z()) : e.type === s.I.VALIDATION_ERROR ? t($(e)) : e.type === s.I.SUBMIT_VALIDATION_ERROR ? t(K(e)) : t(W(e)), t(Object(d.f)({
 							duration: d.a,
 							kind: E.b.Error,
 							text: Object(n.a)(e)
@@ -2540,10 +2540,10 @@
 				o = r("./src/reddit/selectors/experiments/index.ts"),
 				a = r("./src/reddit/selectors/experiments/utils.ts");
 			const d = Object(s.a)(e => Object(i.c)(e, {
-					experimentName: n.Gd,
+					experimentName: n.Jd,
 					experimentEligibilitySelector: o.e
 				}), a.a),
-				c = Object(s.a)(d, e => e === n.Jd.Enabled)
+				c = Object(s.a)(d, e => e === n.Md.Enabled)
 		},
 		"./src/reddit/selectors/experiments/inboxRedesign.ts": function(e, t, r) {
 			"use strict";
@@ -2576,52 +2576,52 @@
 				o = r("./src/reddit/selectors/experiments/index.ts"),
 				a = r("./src/reddit/selectors/experiments/utils.ts");
 			const d = Object(s.a)(e => Object(i.c)(e, {
+					experimentName: n.Db,
+					experimentEligibilitySelector: o.e
+				}), a.a),
+				c = Object(s.a)(d, e => e === n.Sd.Enabled),
+				u = Object(s.a)(e => Object(i.c)(e, {
+					experimentName: n.Ld,
+					experimentEligibilitySelector: o.e
+				}), a.a),
+				l = Object(s.a)(c, u, (e, t) => e && t === n.Rd.Enabled),
+				b = Object(s.a)(e => Object(i.c)(e, {
+					experimentName: n.Ub,
+					experimentEligibilitySelector: o.e
+				}), a.a),
+				m = Object(s.a)(c, b, (e, t) => e && t === n.kc.Enabled),
+				p = Object(s.a)(e => Object(i.c)(e, {
 					experimentName: n.Ab,
 					experimentEligibilitySelector: o.e
 				}), a.a),
-				c = Object(s.a)(d, e => e === n.Pd.Enabled),
-				u = Object(s.a)(e => Object(i.c)(e, {
-					experimentName: n.Id,
-					experimentEligibilitySelector: o.e
-				}), a.a),
-				l = Object(s.a)(c, u, (e, t) => e && t === n.Od.Enabled),
-				b = Object(s.a)(e => Object(i.c)(e, {
-					experimentName: n.Rb,
-					experimentEligibilitySelector: o.e
-				}), a.a),
-				m = Object(s.a)(c, b, (e, t) => e && t === n.hc.Enabled),
-				p = Object(s.a)(e => Object(i.c)(e, {
-					experimentName: n.xb,
-					experimentEligibilitySelector: o.e
-				}), a.a),
-				f = Object(s.a)(p, e => e === n.Ld.Banner_1st_time),
-				h = Object(s.a)(p, e => e === n.Ld.Tooltip_persist),
-				O = Object(s.a)(p, e => e === n.Ld.Tooltip_1st_time),
+				f = Object(s.a)(p, e => e === n.Od.Banner_1st_time),
+				h = Object(s.a)(p, e => e === n.Od.Tooltip_persist),
+				O = Object(s.a)(p, e => e === n.Od.Tooltip_1st_time),
 				g = Object(s.a)(e => Object(i.c)(e, {
-					experimentName: n.yb,
+					experimentName: n.Bb,
 					experimentEligibilitySelector: o.e
 				}), a.a),
-				y = Object(s.a)(g, e => e === n.Md.ContinuousScroll),
+				y = Object(s.a)(g, e => e === n.Pd.ContinuousScroll),
 				_ = Object(s.a)(e => Object(i.c)(e, {
-					experimentName: n.pb,
+					experimentName: n.sb,
 					experimentEligibilitySelector: o.e
 				}), a.a),
-				j = Object(s.a)(_, e => e === n.oc.Banner1stTime),
-				v = Object(s.a)(_, e => e === n.oc.BannerPersist),
+				j = Object(s.a)(_, e => e === n.rc.Banner1stTime),
+				v = Object(s.a)(_, e => e === n.rc.BannerPersist),
 				E = Object(s.a)(e => Object(i.c)(e, {
-					experimentName: n.zb,
+					experimentName: n.Cb,
 					experimentEligibilitySelector: o.e
 				}), a.a),
-				P = Object(s.a)(E, e => e === n.Nd.Enabled),
+				P = Object(s.a)(E, e => e === n.Qd.Enabled),
 				T = Object(s.a)(e => Object(i.c)(e, {
-					experimentName: n.Lb,
+					experimentName: n.Ob,
 					experimentEligibilitySelector: () => !0
 				}), a.a),
-				S = Object(s.a)(T, e => e === n.gb.Enabled)
+				S = Object(s.a)(T, e => e === n.jb.Enabled)
 		},
 		"./src/redditGQL/operations/BadgeIndicators.json": function(e) {
 			e.exports = JSON.parse('{"id":"9d105ce5d71a"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.93701e2d460fdb10bff9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.f04ab2675e1ad98379d5.js.map

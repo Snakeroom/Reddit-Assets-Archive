@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.6bba75b56191026b2083.js
-// Retrieved at 12/7/2021, 9:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.937a2fa251af20065f6b.js
+// Retrieved at 12/8/2021, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -4652,8 +4652,8 @@
 			const a = Object(o.a)(i.K, i.J, (e, t) => e || t),
 				c = Object(o.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: a,
-					experimentName: s.H
-				}), e => e === s.Q.Enabled)
+					experimentName: s.K
+				}), e => e === s.T.Enabled)
 		},
 		"./src/reddit/selectors/experiments/typingIndicators.ts": function(e, t, n) {
 			"use strict";
@@ -4676,37 +4676,37 @@
 					if (Object(i.a)(e)) return !1;
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.zf
-					}) === o.id
+						experimentName: o.Cf
+					}) === o.ld
 				},
 				c = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.Af
-					}) === o.id
+						experimentName: o.Df
+					}) === o.ld
 				},
 				d = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.yf
+						experimentName: o.Bf
 					});
-					return t === o.rf.UIChangesOnly || t === o.rf.TypingIndicators || t === o.rf.IndicatorsPlusCTA
+					return t === o.uf.UIChangesOnly || t === o.uf.TypingIndicators || t === o.uf.IndicatorsPlusCTA
 				},
 				l = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(r.d)(e, {
-							experimentName: o.yf
+							experimentName: o.Bf
 						}),
 						n = null == t ? void 0 : t.variant;
-					return n === o.rf.TypingIndicators || n === o.rf.IndicatorsPlusCTA
+					return n === o.uf.TypingIndicators || n === o.uf.IndicatorsPlusCTA
 				},
 				u = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(r.d)(e, {
-						experimentName: o.yf
+						experimentName: o.Bf
 					});
-					return (null == t ? void 0 : t.variant) === o.rf.IndicatorsPlusCTA
+					return (null == t ? void 0 : t.variant) === o.uf.IndicatorsPlusCTA
 				}
 		},
 		"./src/reddit/selectors/moderatingComments.ts": function(e, t, n) {
@@ -4747,4 +4747,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.6bba75b56191026b2083.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.937a2fa251af20065f6b.js.map

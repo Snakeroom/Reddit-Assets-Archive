@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/UpdateCardModal.adece723abac380bb1e0.js
-// Retrieved at 12/7/2021, 9:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/UpdateCardModal.248931f9bed1cab9163b.js
+// Retrieved at 12/8/2021, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["UpdateCardModal"], {
 		"./src/reddit/components/UpdateCardModal/index.tsx": function(e, t, r) {
@@ -132,7 +132,7 @@
 				m = r("./node_modules/react-redux/es/index.js"),
 				f = r("./src/reddit/constants/experiments.ts"),
 				w = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const b = Object(w.a)(f.Gc);
+			const b = Object(w.a)(f.Jc);
 			let x = null;
 
 			function j() {
@@ -142,4 +142,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UpdateCardModal.adece723abac380bb1e0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UpdateCardModal.248931f9bed1cab9163b.js.map

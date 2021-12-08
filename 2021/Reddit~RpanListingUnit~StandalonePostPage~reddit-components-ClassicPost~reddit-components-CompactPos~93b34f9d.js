@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~RpanListingUnit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPos~93b34f9d.ffe5946c3ebd634ba6c7.js
-// Retrieved at 12/7/2021, 9:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~RpanListingUnit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPos~93b34f9d.3c8c12e730bc35e2f45b.js
+// Retrieved at 12/8/2021, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~RpanListingUnit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPos~93b34f9d"], {
 		"./src/lib/memoizeByReference/index.ts": function(e, t, r) {
@@ -2321,8 +2321,8 @@
 					}) || !!Object(s.l)(e, {
 						postId: t
 					}) || Object(a.H)(e))(e, t),
-					experimentName: n.N
-				}) === n.id
+					experimentName: n.Q
+				}) === n.ld
 			}
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, r) {
@@ -2453,4 +2453,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~RpanListingUnit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPos~93b34f9d.ffe5946c3ebd634ba6c7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~RpanListingUnit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPos~93b34f9d.3c8c12e730bc35e2f45b.js.map
