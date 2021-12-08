@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.e49853f5d5898492c9f5.js
-// Retrieved at 12/8/2021, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.aee1bfa61af3640142d2.js
+// Retrieved at 12/8/2021, 2:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~ModListing", "reddit-components-BlankPost", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, n) {
@@ -1613,41 +1613,6 @@
 					}
 				}), i.ok
 			}
-		},
-		"./src/reddit/actions/shortcuts/utils.ts": function(e, t, n) {
-			"use strict";
-			n.d(t, "c", (function() {
-				return o
-			})), n.d(t, "a", (function() {
-				return i
-			})), n.d(t, "b", (function() {
-				return c
-			})), n.d(t, "d", (function() {
-				return d
-			}));
-			var s = n("./src/reddit/constants/shortcuts.ts"),
-				r = n("./src/reddit/helpers/getPostFromRouteMatch/index.ts"),
-				a = n("./src/reddit/helpers/routeKey/index.ts");
-			const o = e => {
-					const t = e.platform.currentPage;
-					if (!t || !t.routeMatch) return;
-					const n = t.routeMatch,
-						s = Object(r.a)(e);
-					return Object(a.b)(n, e, s)
-				},
-				i = e => {
-					const t = document.getElementById(e);
-					t && t.focus()
-				},
-				c = e => {
-					const t = document.getElementById(e),
-						n = window.scrollX,
-						s = window.scrollY;
-					t && (t.focus(), window.scrollTo(n, s))
-				},
-				d = () => {
-					c(s.b)
-				}
 		},
 		"./src/reddit/actions/subreddit/inlineEditing.ts": function(e, t, n) {
 			"use strict";
@@ -18814,4 +18779,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.e49853f5d5898492c9f5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.aee1bfa61af3640142d2.js.map

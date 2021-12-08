@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlow.7bef39ad8f90bfa6da5b.js
-// Retrieved at 12/8/2021, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlow.8791075a87a569592a88.js
+// Retrieved at 12/8/2021, 2:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlow", "ReportFlowNew"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -988,41 +988,6 @@
 						4 === e.length && n.nextStepReasons && n.nextStepReasons.push(e[3]), t.push(n), t = t.concat(e.slice(e.length - 1))
 					}
 					return t
-				}
-		},
-		"./src/reddit/actions/shortcuts/utils.ts": function(e, t, n) {
-			"use strict";
-			n.d(t, "c", (function() {
-				return a
-			})), n.d(t, "a", (function() {
-				return i
-			})), n.d(t, "b", (function() {
-				return l
-			})), n.d(t, "d", (function() {
-				return c
-			}));
-			var s = n("./src/reddit/constants/shortcuts.ts"),
-				o = n("./src/reddit/helpers/getPostFromRouteMatch/index.ts"),
-				r = n("./src/reddit/helpers/routeKey/index.ts");
-			const a = e => {
-					const t = e.platform.currentPage;
-					if (!t || !t.routeMatch) return;
-					const n = t.routeMatch,
-						s = Object(o.a)(e);
-					return Object(r.b)(n, e, s)
-				},
-				i = e => {
-					const t = document.getElementById(e);
-					t && t.focus()
-				},
-				l = e => {
-					const t = document.getElementById(e),
-						n = window.scrollX,
-						s = window.scrollY;
-					t && (t.focus(), window.scrollTo(n, s))
-				},
-				c = () => {
-					l(s.b)
 				}
 		},
 		"./src/reddit/actions/userBlocks.ts": function(e, t, n) {
@@ -4110,4 +4075,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.7bef39ad8f90bfa6da5b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.8791075a87a569592a88.js.map
