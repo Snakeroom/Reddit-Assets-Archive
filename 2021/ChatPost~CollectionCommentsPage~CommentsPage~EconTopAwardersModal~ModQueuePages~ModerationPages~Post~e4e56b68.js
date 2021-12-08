@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~e4e56b68.4e5b5e193a33a5118e41.js
-// Retrieved at 12/8/2021, 11:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~e4e56b68.9e2c1af4872deb0fc9aa.js
+// Retrieved at 12/8/2021, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~e4e56b68"], {
 		"./src/reddit/actions/economics/subredditPremium/actionCreators.ts": function(e, t, r) {
@@ -346,8 +346,8 @@
 					LoadingComponent: () => null
 				}),
 				W = r("./src/reddit/components/AwardBadges/AwardPill/index.m.less"),
-				Q = r.n(W);
-			const z = 3500,
+				z = r.n(W);
+			const Q = 3500,
 				V = 500;
 			class J extends o.a.PureComponent {
 				constructor(e) {
@@ -365,7 +365,7 @@
 							this.setState({
 								shouldAnimate: !1
 							})
-						}, z)))
+						}, Q)))
 					}, this.handleOnClick = () => {
 						const {
 							onAddAward: e,
@@ -429,31 +429,31 @@
 						shouldAnimate: c
 					} = this.state, l = Object(U.a)(e.id, a.id);
 					return o.a.createElement("span", {
-						className: Q.a.awardPillContainer,
+						className: z.a.awardPillContainer,
 						id: i,
 						onMouseEnter: this.handleMouseEnter,
 						onMouseLeave: this.handleMouseLeave
 					}, o.a.createElement("button", {
-						className: Object(k.a)(t, Q.a.awardPill, {
-							[Q.a.userGiven]: d
+						className: Object(k.a)(t, z.a.awardPill, {
+							[z.a.userGiven]: d
 						}),
 						onClick: this.handleOnClick
 					}, o.a.createElement("span", {
-						className: Q.a.imageContainer
+						className: z.a.imageContainer
 					}, o.a.createElement("img", {
 						alt: e.name,
-						className: Object(k.a)(Q.a.awardIcon, {
-							[Q.a.hidden]: c
+						className: Object(k.a)(z.a.awardIcon, {
+							[z.a.hidden]: c
 						}),
 						id: l,
 						ref: this.imageRef,
 						src: n
 					}), c && o.a.createElement("img", {
 						alt: e.name,
-						className: Q.a.animationIcon,
+						className: z.a.animationIcon,
 						src: s
 					})), o.a.createElement("span", {
-						className: Q.a.count
+						className: z.a.count
 					}, r.toLocaleString())), o.a.createElement(q, {
 						award: e,
 						onOpenReportFlow: this.handleOpenReportFlow,
@@ -1845,16 +1845,16 @@
 				})),
 				q = r("./src/reddit/helpers/styles/postBackgroundColor.ts"),
 				W = r("./src/reddit/helpers/styles/smartTextColor.ts"),
-				Q = r("./src/reddit/hooks/useClickSourceData.ts"),
-				z = r("./src/reddit/icons/fonts/helpers.tsx"),
+				z = r("./src/reddit/hooks/useClickSourceData.ts"),
+				Q = r("./src/reddit/icons/fonts/helpers.tsx"),
 				V = r("./src/reddit/icons/fonts/commonStyles.m.less"),
 				J = r.n(V);
 			var Y = e => n.a.createElement("i", {
-					className: Object(a.a)(Object(z.b)("admin", e.isFilled), J.a.adminIcon, e.className),
+					className: Object(a.a)(Object(Q.b)("admin", e.isFilled), J.a.adminIcon, e.className),
 					id: e.id,
 					onMouseEnter: e.onMouseEnter,
 					onMouseLeave: e.onMouseLeave
-				}, n.a.createElement(z.a, null, e.desc)),
+				}, n.a.createElement(Q.a, null, e.desc)),
 				K = (r("./src/reddit/icons/fonts/Premium/index.tsx"), r("./src/reddit/components/UserIcon/index.tsx")),
 				X = r("./src/reddit/constants/postLayout.ts"),
 				$ = r("./src/reddit/contexts/PageLayer/index.tsx"),
@@ -1940,16 +1940,16 @@
 						showTimestamp: x = !0,
 						subredditOrProfile: j,
 						tooltipType: R
-					} = e, H = Object(o.d)(), U = Object(f.a)(), D = Object(o.e)(ne.a), q = Object(o.e)(ie.d), W = Object(o.e)(ie.g) || ["popular", "all"].includes(q || ""), z = !(!v.isSponsored || !D || Object(l.Gf)(D));
+					} = e, H = Object(o.d)(), U = Object(f.a)(), D = Object(o.e)(ne.a), q = Object(o.e)(ie.d), W = Object(o.e)(ie.g) || ["popular", "all"].includes(q || ""), Q = !(!v.isSponsored || !D || Object(l.Af)(D));
 					Object(s.useEffect)(() => {
-						z && H(Object(p.d)(v.author))
+						Q && H(Object(p.d)(v.author))
 					}, []);
 					const V = v.belongsTo.id,
 						J = Object(s.useCallback)(e => Object(se.a)(e, {
 							post: v
 						}), [v]),
 						Y = Object(o.e)(J),
-						ee = Object(Q.a)(),
+						ee = Object(z.a)(),
 						ce = Object(s.useCallback)(e => Object(de.a)(e, {
 							subredditId: V
 						}), [V]),
@@ -1958,7 +1958,7 @@
 							subredditId: V,
 							userId: v.authorId
 						}), [V, v.authorId]),
-						ve = Object(o.e)(oe.F),
+						ve = Object(o.e)(oe.z),
 						Ae = Object(o.e)(we),
 						Oe = Object(s.useCallback)(e => Object(de.e)(e, {
 							subredditId: V
@@ -1980,7 +1980,7 @@
 						})),
 						ke = X.e[Ne] === X.d.Card,
 						Be = W && ke || !!Ee,
-						Le = z && (W || !!Ee),
+						Le = Q && (W || !!Ee),
 						Me = n.a.createElement(n.a.Fragment, null, Y && Ie && n.a.createElement("div", {
 							className: le.a.flairContainer
 						}, n.a.createElement(I.b, {
@@ -1993,7 +1993,7 @@
 							isDeleted: !0,
 							renderContractorBadge: Pe,
 							showActionFont: Le,
-							style: z ? {} : {
+							style: Q ? {} : {
 								color: he(e)
 							}
 						}) : n.a.createElement(n.a.Fragment, null, n.a.createElement(E.b, {
@@ -2012,7 +2012,7 @@
 							post: v,
 							forceOpenInNewTab: r,
 							renderContractorBadge: Pe,
-							style: z ? {} : {
+							style: Q ? {} : {
 								color: he(e)
 							},
 							showActionFont: Le
@@ -2067,7 +2067,7 @@
 						}))), ue._param("author", Me)], {
 							hk: "3BfJwk"
 						})),
-						He = () => Te || z ? Te ? Re : Me : Fe;
+						He = () => Te || Q ? Te ? Re : Me : Fe;
 					return n.a.createElement("div", {
 						className: Object(a.a)(le.a.container, t)
 					}, A && j && n.a.createElement(S.a, {
@@ -2080,7 +2080,7 @@
 							pathname: j.url,
 							state: ee
 						}
-					}, j.displayText)), j && j.isQuarantined && n.a.createElement(B.a, null), A && !Te && n.a.createElement(_e, null), z ? n.a.createElement(n.a.Fragment, null, (null == j ? void 0 : j.icon) && Be && n.a.createElement(K.a, {
+					}, j.displayText)), j && j.isQuarantined && n.a.createElement(B.a, null), A && !Te && n.a.createElement(_e, null), Q ? n.a.createElement(n.a.Fragment, null, (null == j ? void 0 : j.icon) && Be && n.a.createElement(K.a, {
 						iconUrl: j.icon.url,
 						isNSFW: j.isNSFW,
 						userName: j.name,
@@ -2089,7 +2089,7 @@
 					}), He(), v.isSponsored && n.a.createElement(n.a.Fragment, null, n.a.createElement(_e, null), n.a.createElement(L.a, {
 						adHeaderVariant: D,
 						greyTextColor: he(e)
-					}))) : n.a.createElement(n.a.Fragment, null, v.isSponsored && n.a.createElement(n.a.Fragment, null, n.a.createElement(L.a, null), n.a.createElement(_e, null)), He()), n.a.createElement(k.e, null), x && !z && n.a.createElement(n.a.Fragment, null, n.a.createElement("a", {
+					}))) : n.a.createElement(n.a.Fragment, null, v.isSponsored && n.a.createElement(n.a.Fragment, null, n.a.createElement(L.a, null), n.a.createElement(_e, null)), He()), n.a.createElement(k.e, null), x && !Q && n.a.createElement(n.a.Fragment, null, n.a.createElement("a", {
 						className: le.a.externalLink,
 						"data-click-id": "timestamp",
 						href: v.permalink,
@@ -2935,13 +2935,13 @@
 						experimentEligibilitySelector: o.K,
 						experimentName: s.Ic
 					});
-					return !(!t || Object(s.Gf)(t))
+					return !(!t || Object(s.Af)(t))
 				},
 				i = e => {
 					return Object(n.c)(e, {
 						experimentEligibilitySelector: o.K,
 						experimentName: s.Ic
-					}) === s.qd.ListingEnabled
+					}) === s.kd.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/gold/topAwarded.ts": function(e, t, r) {
@@ -3001,4 +3001,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~e4e56b68.4e5b5e193a33a5118e41.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~e4e56b68.9e2c1af4872deb0fc9aa.js.map

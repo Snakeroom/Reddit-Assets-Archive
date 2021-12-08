@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.200dec037e128550dbb5.js
-// Retrieved at 12/7/2021, 10:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.4a5d81ed37261f256123.js
+// Retrieved at 12/8/2021, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index~reddit-components-Econ-Prediction"], {
 		"./node_modules/lodash/_LazyWrapper.js": function(a, i, r) {
@@ -972,7 +972,7 @@
 		"./src/reddit/components/Econ/Prediction/PredictionCard/v2/index.tsx": function(a, i, r) {
 			"use strict";
 			r.d(i, "a", (function() {
-				return V
+				return D
 			}));
 			var t = r("./node_modules/react/index.js"),
 				x = r.n(t),
@@ -1009,14 +1009,13 @@
 				h = r("./src/reddit/components/Econ/Prediction/PredictionOption/SneakPeek.tsx"),
 				d = r("./src/reddit/icons/svgs/MinusCircle/index.tsx"),
 				f = r("./src/reddit/models/Prediction/index.ts"),
-				u = r("./src/reddit/selectors/experiments/econ/index.ts"),
-				y = r("./src/reddit/selectors/features/predictions/tournaments/index.ts"),
-				G = r("./src/reddit/selectors/user.ts"),
-				E = r("./src/reddit/components/Econ/Prediction/PredictionCard/v2/index.m.less"),
-				A = r.n(E);
+				u = r("./src/reddit/selectors/features/predictions/tournaments/index.ts"),
+				y = r("./src/reddit/selectors/user.ts"),
+				G = r("./src/reddit/components/Econ/Prediction/PredictionCard/v2/index.m.less"),
+				E = r.n(G);
 
-			function B() {
-				return (B = Object.assign || function(a) {
+			function A() {
+				return (A = Object.assign || function(a) {
 					for (var i = 1; i < arguments.length; i++) {
 						var r = arguments[i];
 						for (var t in r) Object.prototype.hasOwnProperty.call(r, t) && (a[t] = r[t])
@@ -1025,8 +1024,8 @@
 				}).apply(this, arguments)
 			}
 			const {
-				fbt: D
-			} = r("./node_modules/fbt/lib/FbtPublic.js"), V = ({
+				fbt: B
+			} = r("./node_modules/fbt/lib/FbtPublic.js"), D = ({
 				prediction: a,
 				selectedOptionId: i,
 				onSelectOption: r,
@@ -1036,57 +1035,57 @@
 				const {
 					creatorId: e,
 					endsAt: m,
-					options: E,
-					resolvedOptionId: V,
-					totalVoters: b,
-					tournamentId: F,
-					userSelection: g,
-					predictionStatus: v,
-					voteUpdatesRemained: P
-				} = a, S = Object(k.e)(i => Boolean((null == a ? void 0 : a.userSelection) && !(null == a ? void 0 : a.resolvedOptionId) && a.predictionStatus === f.b.Open && a.endsAt > Date.now() && Object(u.z)(i))), T = Object(k.e)(i => (null == a ? void 0 : a.tournamentId) ? Object(y.a)(i, a.tournamentId) : null), _ = Object(k.e)(G.X), O = Object(k.e)(G.pb), j = Object(k.e)(G.K), [C, N] = Object(t.useState)(!1), I = e === O, w = m < Date.now(), M = w && I && !V, L = v === f.b.Cancelled || v === f.b.CancelInProgress, U = w || !!g || !!V || L;
+					options: G,
+					resolvedOptionId: D,
+					totalVoters: V,
+					tournamentId: b,
+					userSelection: F,
+					predictionStatus: g,
+					voteUpdatesRemained: v
+				} = a, P = Boolean((null == a ? void 0 : a.userSelection) && !(null == a ? void 0 : a.resolvedOptionId) && a.predictionStatus === f.b.Open && a.endsAt > Date.now()), S = Object(k.e)(i => (null == a ? void 0 : a.tournamentId) ? Object(u.a)(i, a.tournamentId) : null), T = Object(k.e)(y.X), _ = Object(k.e)(y.pb), O = Object(k.e)(y.K), [j, C] = Object(t.useState)(!1), N = e === _, I = m < Date.now(), w = I && N && !D, M = g === f.b.Cancelled || g === f.b.CancelInProgress, L = I || !!F || !!D || M;
 				return Object(t.useEffect)(() => {
-					N(!1)
-				}, [g, a]), x.a.createElement("div", B({
-					className: Object(n.a)(o, A.a.poll, {
-						[A.a.isNightMode]: _
+					C(!1)
+				}, [F, a]), x.a.createElement("div", A({
+					className: Object(n.a)(o, E.a.poll, {
+						[E.a.isNightMode]: T
 					})
 				}, s), x.a.createElement(l, {
-					theme: null == T ? void 0 : T.theme
+					theme: null == S ? void 0 : S.theme
 				}, a.title), x.a.createElement("div", {
-					className: A.a.predictionOptions
-				}, !j && !U && x.a.createElement("div", {
-					className: A.a.loggedOutTooltip
+					className: E.a.predictionOptions
+				}, !O && !L && x.a.createElement("div", {
+					className: E.a.loggedOutTooltip
 				}, x.a.createElement(d.a, {
-					className: A.a.loggedOutIcon
-				}), D._("You must be logged in", null, {
+					className: E.a.loggedOutIcon
+				}), B._("You must be logged in", null, {
 					hk: "18KrL7"
-				})), E.map(a => x.a.createElement(c.a, {
+				})), G.map(a => x.a.createElement(c.a, {
 					key: a.id,
-					isCancelled: L,
-					isEnded: w,
+					isCancelled: M,
+					isEnded: I,
 					isSelected: i === a.id,
-					needsResolution: M,
+					needsResolution: w,
 					option: a,
 					onClick: () => r(a),
-					resolvedOptionId: V,
-					tournamentId: F,
-					userSelection: g,
-					userIsLoggedOut: !j,
-					votePercentage: (g || w || C) && a.voteCount ? Math.floor(a.voteCount / b * 100) : null,
-					isShowingHint: C
-				})), !L && x.a.createElement(h.a, {
-					disabled: C || !!g,
-					isEnded: w,
-					userSelection: g,
-					isShowingHint: C,
-					tournamentId: F,
+					resolvedOptionId: D,
+					tournamentId: b,
+					userSelection: F,
+					userIsLoggedOut: !O,
+					votePercentage: (F || I || j) && a.voteCount ? Math.floor(a.voteCount / V * 100) : null,
+					isShowingHint: j
+				})), !M && x.a.createElement(h.a, {
+					disabled: j || !!F,
+					isEnded: I,
+					userSelection: F,
+					isShowingHint: j,
+					tournamentId: b,
 					postId: a.postId,
-					onReveal: () => N(!0)
-				}), !L && S && x.a.createElement(p.a, {
-					isLimitReached: 0 === P,
+					onReveal: () => C(!0)
+				}), !M && P && x.a.createElement(p.a, {
+					isLimitReached: 0 === v,
 					postId: a.postId,
-					options: E,
-					selectedOptionId: g
+					options: G,
+					selectedOptionId: F
 				})))
 			}
 		},
@@ -1748,7 +1747,7 @@
 			}) => {
 				const s = Object(k.d)(),
 					e = Object(A.a)(),
-					m = Object(k.e)(S.y),
+					m = Object(k.e)(S.t),
 					l = m ? O.a : C.a,
 					c = Object(k.e)(T.t),
 					[p, h] = Object(t.useState)(!1),
@@ -1919,17 +1918,16 @@
 			}) => {
 				const G = Object(k.d)(),
 					E = Object(m.a)(),
-					A = Object(k.e)(f.y) ? F.a : v.a,
+					A = Object(k.e)(f.t) ? F.a : v.a,
 					[B, D] = Object(t.useState)(!1),
 					[b, g] = Object(e.a)("hasSeenPredictionSneakPeek", !1),
 					S = !!p,
 					T = r && !c,
-					_ = Object(k.e)(u.t);
-				if (!Object(k.e)(a => !i && !T && S && Object(f.t)(a))) return null;
-				const O = () => {
-					b || g(!0), D(!1)
-				};
-				return x.a.createElement("div", {
+					_ = Object(k.e)(u.t),
+					O = () => {
+						b || g(!0), D(!1)
+					};
+				return !i && !T && S ? x.a.createElement("div", {
 					className: A.optionButtonWrapper
 				}, !b && !a && x.a.createElement(x.a.Fragment, null, x.a.createElement(d, {
 					className: A.star1
@@ -1965,7 +1963,7 @@
 					onClose: O,
 					withOverlay: !0,
 					onOverlayClick: O
-				}))
+				})) : null
 			}
 		},
 		"./src/reddit/components/Econ/Prediction/PredictionOption/index-v2.m.less": function(a, i, r) {
@@ -2066,7 +2064,7 @@
 				isShowingHint: V,
 				...b
 			}, F) => {
-				const g = Object(k.e)(l.y),
+				const g = Object(k.e)(l.t),
 					v = Object(k.e)(c.X),
 					P = G === y.id,
 					S = t || !!B || !!G || r,
@@ -3517,4 +3515,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.200dec037e128550dbb5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.4a5d81ed37261f256123.js.map

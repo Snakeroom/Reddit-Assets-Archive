@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index.8e098917166c386dc906.js
-// Retrieved at 12/7/2021, 10:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index.e76cd80511005b8f1261.js
+// Retrieved at 12/8/2021, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index"], {
 		"./src/reddit/components/Econ/Audio/MuteIcon.tsx": function(e, t, n) {
@@ -162,11 +162,11 @@
 							className: m.a.muteIcon
 						})))
 					})
-				}, y = () => Math.floor(40 * Math.random() + 1);
+				}, _ = () => Math.floor(40 * Math.random() + 1);
 				Object(a.useEffect)(() => {
 					const e = new Set;
 					for (; e.size < 13;) {
-						const t = y();
+						const t = _();
 						e.has(t) || (E.size < 6 ? E.add(t) : h.size < 7 && h.add(t), e.add(t))
 					}
 					f(E), O(h)
@@ -367,8 +367,8 @@
 				}))
 			};
 			var I = n("./src/reddit/models/Prediction/index.ts"),
-				y = n("./src/reddit/selectors/poll/index.ts"),
-				_ = n("./src/reddit/selectors/user.ts"),
+				_ = n("./src/reddit/selectors/poll/index.ts"),
+				y = n("./src/reddit/selectors/user.ts"),
 				j = n("./src/reddit/components/Econ/Prediction/PredictionModal/index.tsx"),
 				N = n("./src/reddit/components/Econ/Prediction/PredictionOption/index.tsx"),
 				k = n("./src/reddit/components/Econ/Prediction/PredictionOption/SneakPeek.tsx"),
@@ -412,8 +412,8 @@
 
 			function z(e, t, n) {
 				const o = Object(i.d)(),
-					s = Object(i.e)(_.e),
-					c = Object(i.e)(r.p),
+					s = Object(i.e)(y.e),
+					c = Object(i.e)(r.n),
 					d = Object(p.a)(),
 					l = Object(D.a)(),
 					{
@@ -431,11 +431,11 @@
 					} = n,
 					[O, x] = a.a.useState(!1),
 					[P, g] = a.a.useState(null),
-					[y, j] = a.a.useState(!1),
+					[_, j] = a.a.useState(!1),
 					N = b < Date.now();
 				return {
 					isLoading: O,
-					isShowingVoteAnimation: y,
+					isShowingVoteAnimation: _,
 					selectedOption: v.find(({
 						id: e
 					}) => e === P),
@@ -484,9 +484,9 @@
 				post: r,
 				isLastPrediction: s
 			}) => {
-				const d = Object(i.e)(_.K),
-					l = Object(i.e)(_.X),
-					u = Object(i.e)(t => Object(y.g)(t, {
+				const d = Object(i.e)(y.K),
+					l = Object(i.e)(y.X),
+					u = Object(i.e)(t => Object(_.g)(t, {
 						postId: e.id
 					})),
 					[m, p] = Object(o.useState)(!1),
@@ -599,7 +599,7 @@
 			const ee = ({
 				postId: e
 			}) => {
-				const t = Object(i.e)(_.X);
+				const t = Object(i.e)(y.X);
 				return a.a.createElement("section", {
 					className: G.a.container
 				}, a.a.createElement(Q.a, {
@@ -642,7 +642,7 @@
 			}) => {
 				const n = Object(te.eb)(),
 					o = Object(te.x)(n),
-					r = Object(i.e)(_.X);
+					r = Object(i.e)(y.X);
 				return a.a.createElement("div", ae({}, t, {
 					className: Object(c.a)(e, oe.a.container, {
 						[oe.a.commentsPage]: o,
@@ -671,7 +671,7 @@
 				className: n,
 				...o
 			}) => {
-				const r = Object(i.e)(_.X),
+				const r = Object(i.e)(y.X),
 					s = Math.floor(100 * e / t);
 				return a.a.createElement("div", ce({
 					className: Object(c.a)(se.a.container, n, {
@@ -744,7 +744,7 @@
 					post: e,
 					predictions: t
 				}) => {
-					const n = Object(i.e)(_.X),
+					const n = Object(i.e)(y.X),
 						o = t.reduce((e, {
 							userSelection: t
 						}) => t ? e + 1 : e, 0),
@@ -820,7 +820,7 @@
 					const {
 						tournamentId: t,
 						status: n
-					} = e.predictionTournament, o = Object(p.a)(), r = Object(i.e)(e => Object(y.h)(e, t)), c = a.a.useMemo(() => r.filter(e => !e.isSpoiler && !e.isNSFW && !e.resolvedOptionId && e.predictionStatus === I.b.Open && e.endsAt > Date.now()).sort(K.a).map(e => e.id), [r.length]).map(e => r.find(t => t.id === e)).filter(e => Boolean(e)), d = c.some(({
+					} = e.predictionTournament, o = Object(p.a)(), r = Object(i.e)(e => Object(_.h)(e, t)), c = a.a.useMemo(() => r.filter(e => !e.isSpoiler && !e.isNSFW && !e.resolvedOptionId && e.predictionStatus === I.b.Open && e.endsAt > Date.now()).sort(K.a).map(e => e.id), [r.length]).map(e => r.find(t => t.id === e)).filter(e => Boolean(e)), d = c.some(({
 						userSelection: e,
 						endsAt: t,
 						predictionStatus: n
@@ -849,7 +849,7 @@
 					}))
 				},
 				xe = e => {
-					return Object(i.e)(r.y) ? a.a.createElement(Oe, e) : a.a.createElement($, e)
+					return Object(i.e)(r.t) ? a.a.createElement(Oe, e) : a.a.createElement($, e)
 				};
 			t.default = xe
 		},
@@ -976,4 +976,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.8e098917166c386dc906.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.e76cd80511005b8f1261.js.map

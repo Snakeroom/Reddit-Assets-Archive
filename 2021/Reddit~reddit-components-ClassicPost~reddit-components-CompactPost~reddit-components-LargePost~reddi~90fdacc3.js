@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.7a5a42b7f78f1143b75d.js
-// Retrieved at 12/8/2021, 11:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.e3b8655e89f256e8f0e0.js
+// Retrieved at 12/8/2021, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -1083,7 +1083,7 @@
 						pageLayer: t
 					}),
 					shouldOpenPostInNewTab: P.db,
-					isTournamentPredictionPostV2: w.y
+					isTournamentPredictionPostV2: w.t
 				}),
 				K = e => {
 					const {
@@ -1091,7 +1091,7 @@
 						subreddit: n
 					} = e, {
 						isSponsored: r
-					} = t, s = Object(V.a)(), i = Object(Y.a)(m.vd) === m.Cd.Enabled;
+					} = t, s = Object(V.a)(), i = Object(Y.a)(m.pd) === m.wd.Enabled;
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return o.a.createElement(Q, {
 						nowrap: e.nowrap
 					}, o.a.createElement(X, e));
@@ -2868,8 +2868,8 @@
 			const o = e => {
 				return Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: r.ye
-				}) === r.ld
+					experimentName: r.se
+				}) === r.fd
 			}
 		},
 		"./src/reddit/selectors/gold/awardIcon.ts": function(e, t, n) {
@@ -3042,4 +3042,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.7a5a42b7f78f1143b75d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.e3b8655e89f256e8f0e0.js.map

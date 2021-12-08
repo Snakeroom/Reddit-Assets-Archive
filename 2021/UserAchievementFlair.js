@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/UserAchievementFlair.ec639c932467f418fe71.js
-// Retrieved at 12/8/2021, 11:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/UserAchievementFlair.425b5fbf49c3de6dc880.js
+// Retrieved at 12/8/2021, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["UserAchievementFlair"], {
 		"./src/reddit/components/Econ/PowerupsFlair/HoverPopup.m.less": function(e, t, n) {
@@ -262,7 +262,7 @@
 								experimentName: c.J,
 								expEventOverride: t
 							});
-							return !!(Object(c.Gf)(n) ? void 0 : n)
+							return !!(Object(c.Af)(n) ? void 0 : n)
 						})(n)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -733,7 +733,7 @@
 				}
 			};
 			const S = {};
-			var D = (e = S, t) => {
+			var A = (e = S, t) => {
 				switch (t.type) {
 					case a.d:
 					case a.b:
@@ -768,7 +768,7 @@
 				keyToChatCommentLinks: C,
 				keyToCommentThreadLinkSets: K,
 				keyToHeadCommentId: N,
-				keyToPostId: D,
+				keyToPostId: A,
 				ads: o
 			})
 		},
@@ -817,13 +817,13 @@
 			})), n.d(t, "s", (function() {
 				return S
 			})), n.d(t, "C", (function() {
-				return D
-			})), n.d(t, "D", (function() {
 				return A
+			})), n.d(t, "D", (function() {
+				return D
 			})), n.d(t, "E", (function() {
-				return G
-			})), n.d(t, "r", (function() {
 				return M
+			})), n.d(t, "r", (function() {
+				return G
 			})), n.d(t, "e", (function() {
 				return H
 			})), n.d(t, "v", (function() {
@@ -993,13 +993,13 @@
 						depth: c
 					}
 				},
-				D = (e, {
-					moreCommentsId: t
-				}) => e.moreComments.models[t],
 				A = (e, {
 					moreCommentsId: t
+				}) => e.moreComments.models[t],
+				D = (e, {
+					moreCommentsId: t
 				}) => !!e.moreComments.api.pending[t],
-				G = (e, {
+				M = (e, {
 					commentsPageKey: t
 				}) => {
 					const n = e.pages.comments.keyToPostId[t];
@@ -1012,7 +1012,7 @@
 					}
 					return null
 				},
-				M = (e, {
+				G = (e, {
 					id: t
 				}) => e.continueThreads.models[t],
 				H = (e, {
@@ -1074,4 +1074,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UserAchievementFlair.ec639c932467f418fe71.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UserAchievementFlair.425b5fbf49c3de6dc880.js.map

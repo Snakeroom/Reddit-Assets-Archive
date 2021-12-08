@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.3272fb8055d2a8af6da4.js
-// Retrieved at 12/8/2021, 11:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.1aaf1478862cc759a8b3.js
+// Retrieved at 12/8/2021, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, n) {
@@ -150,8 +150,8 @@
 			var N = Object(c.b)(void 0, e => ({
 					onClickPremium: () => e(Object(g.b)("/premium"))
 				}))(S),
-				v = n("./node_modules/fbt/lib/FbtPublic.js"),
-				O = n("./src/lib/classNames/index.ts"),
+				O = n("./node_modules/fbt/lib/FbtPublic.js"),
+				v = n("./src/lib/classNames/index.ts"),
 				j = n("./src/reddit/components/Hovercards/SubredditHovercard/index.tsx"),
 				T = n("./src/reddit/controls/InternalLink/index.tsx"),
 				C = n("./src/reddit/icons/svgs/ChevronDown/index.tsx"),
@@ -176,7 +176,7 @@
 					onToggle: r,
 					onExpand: a
 				}) => d.a.createElement("div", {
-					className: Object(O.a)(I.a.Section, {
+					className: Object(v.a)(I.a.Section, {
 						[I.a.opened]: t,
 						[I.a.expanded]: n
 					})
@@ -196,9 +196,9 @@
 				}, d.a.createElement(k.r, {
 					className: I.a.SectionButton,
 					onClick: a
-				}, n ? v.fbt._("Less", null, {
+				}, n ? O.fbt._("Less", null, {
 					hk: "PF0lJ"
-				}) : v.fbt._("See more", null, {
+				}) : O.fbt._("See more", null, {
 					hk: "439kAh"
 				})))));
 			class F extends d.a.Component {
@@ -250,7 +250,7 @@
 						links: t
 					} = this.props;
 					if (t) return d.a.createElement(f.a, {
-						className: Object(O.a)(I.a.Widget, e),
+						className: Object(v.a)(I.a.Widget, e),
 						contentOnly: !0
 					}, t.map(this.renderSection))
 				}
@@ -361,13 +361,13 @@
 				render() {
 					return d.a.createElement(le.b, null, d.a.createElement(me, {
 						className: this.props.className,
-						headerText: v.fbt._("Recent posts", null, {
+						headerText: O.fbt._("Recent posts", null, {
 							hk: "1olaOT"
 						}),
 						posts: this.props.posts
 					}), d.a.createElement(ke, {
 						onClick: this.props.clearLinks
-					}, v.fbt._("Clear", null, {
+					}, O.fbt._("Clear", null, {
 						hk: "1RMjjy"
 					})))
 				}
@@ -384,223 +384,223 @@
 					recentPosts: t
 				}) => t && t.length ? d.a.createElement(h.a, null, d.a.createElement(xe, {
 					className: e,
-					headerText: v.fbt._("Recent posts", null, {
+					headerText: O.fbt._("Recent posts", null, {
 						hk: "1olaOT"
 					}),
 					posts: t
 				})) : null),
 				Ne = n("./src/config.ts"),
-				ve = n("./src/lib/env/index.ts"),
-				Oe = n("./src/reddit/controls/Chip/index.tsx"),
+				Oe = n("./src/lib/env/index.ts"),
+				ve = n("./src/reddit/controls/Chip/index.tsx"),
 				je = n("./src/reddit/helpers/trackers/widgets.ts"),
 				Te = n("./src/reddit/hooks/useTracking.ts");
 			const Ce = [{
-				getName: () => v.fbt._("Fashion", null, {
+				getName: () => O.fbt._("Fashion", null, {
 					hk: "4tXmOZ"
 				}),
 				url: "fashion"
 			}, {
-				getName: () => v.fbt._("Movies", null, {
+				getName: () => O.fbt._("Movies", null, {
 					hk: "42bzfq"
 				}),
 				url: "movie"
 			}, {
-				getName: () => v.fbt._("Television", null, {
+				getName: () => O.fbt._("Television", null, {
 					hk: "4CMqPm"
 				}),
 				url: "television"
 			}, {
-				getName: () => v.fbt._("Comedy", null, {
+				getName: () => O.fbt._("Comedy", null, {
 					hk: "1ehWvG"
 				}),
 				url: "comedy"
 			}, {
-				getName: () => v.fbt._("Books", null, {
+				getName: () => O.fbt._("Books", null, {
 					hk: "13uutx"
 				}),
 				url: "book"
 			}, {
-				getName: () => v.fbt._("Gaming", null, {
+				getName: () => O.fbt._("Gaming", null, {
 					hk: "2mozPB"
 				}),
 				url: "gaming"
 			}, {
-				getName: () => v.fbt._("Science", null, {
+				getName: () => O.fbt._("Science", null, {
 					hk: "4u0516"
 				}),
 				url: "science"
 			}, {
-				getName: () => v.fbt._("Animals and Pets", null, {
+				getName: () => O.fbt._("Animals and Pets", null, {
 					hk: "3TIGi8"
 				}),
 				url: "animals_and_pets"
 			}, {
-				getName: () => v.fbt._("Nature", null, {
+				getName: () => O.fbt._("Nature", null, {
 					hk: "WhmJu"
 				}),
 				url: "nature"
 			}, {
-				getName: () => v.fbt._("Travel", null, {
+				getName: () => O.fbt._("Travel", null, {
 					hk: "3PHfih"
 				}),
 				url: "travel"
 			}, {
-				getName: () => v.fbt._("Sports", null, {
+				getName: () => O.fbt._("Sports", null, {
 					hk: "3GJvo1"
 				}),
 				url: "sports"
 			}, {
-				getName: () => v.fbt._("Memes", null, {
+				getName: () => O.fbt._("Memes", null, {
 					hk: "4lL42P"
 				}),
 				url: "internet_culture_and_memes"
 			}, {
-				getName: () => v.fbt._("Music", null, {
+				getName: () => O.fbt._("Music", null, {
 					hk: "15iqrr"
 				}),
 				url: "music"
 			}, {
-				getName: () => v.fbt._("Crafts and DIY", null, {
+				getName: () => O.fbt._("Crafts and DIY", null, {
 					hk: "1JGKiO"
 				}),
 				url: "crafts_and_diy"
 			}, {
-				getName: () => v.fbt._("Technology", null, {
+				getName: () => O.fbt._("Technology", null, {
 					hk: "2eXPke"
 				}),
 				url: "technology"
 			}, {
-				getName: () => v.fbt._("Art", null, {
+				getName: () => O.fbt._("Art", null, {
 					hk: "3cl8al"
 				}),
 				url: "art"
 			}, {
-				getName: () => v.fbt._("Hobbies", null, {
+				getName: () => O.fbt._("Hobbies", null, {
 					hk: "3uC7Vw"
 				}),
 				url: "hobby"
 			}, {
-				getName: () => v.fbt._("Gardening", null, {
+				getName: () => O.fbt._("Gardening", null, {
 					hk: "2Uozgr"
 				}),
 				url: "gardening"
 			}, {
-				getName: () => v.fbt._("Art Garfunkel", null, {
+				getName: () => O.fbt._("Art Garfunkel", null, {
 					hk: "l1iiQ"
 				}),
 				url: "art_garfunkel"
 			}, {
-				getName: () => v.fbt._("Tree Frogs", null, {
+				getName: () => O.fbt._("Tree Frogs", null, {
 					hk: "KVS4d"
 				}),
 				url: "tree_frog"
 			}, {
-				getName: () => v.fbt._("Adventure Novels", null, {
+				getName: () => O.fbt._("Adventure Novels", null, {
 					hk: "3vbZt6"
 				}),
 				url: "adventure_novel"
 			}, {
-				getName: () => v.fbt._("Learning and Education", null, {
+				getName: () => O.fbt._("Learning and Education", null, {
 					hk: "3wIdG"
 				}),
 				url: "learning_and_education"
 			}, {
-				getName: () => v.fbt._("Family", null, {
+				getName: () => O.fbt._("Family", null, {
 					hk: "1GgG8Z"
 				}),
 				url: "family"
 			}, {
-				getName: () => v.fbt._("Q&A", null, {
+				getName: () => O.fbt._("Q&A", null, {
 					hk: "4En8Hj"
 				}),
 				url: "qa"
 			}, {
-				getName: () => v.fbt._("Health", null, {
+				getName: () => O.fbt._("Health", null, {
 					hk: "RF6iN"
 				}),
 				url: "health"
 			}, {
-				getName: () => v.fbt._("Fitness", null, {
+				getName: () => O.fbt._("Fitness", null, {
 					hk: "JczBr"
 				}),
 				url: "fitness"
 			}, {
-				getName: () => v.fbt._("History", null, {
+				getName: () => O.fbt._("History", null, {
 					hk: "2bULhT"
 				}),
 				url: "history"
 			}, {
-				getName: () => v.fbt._("Activism", null, {
+				getName: () => O.fbt._("Activism", null, {
 					hk: "2PWJIy"
 				}),
 				url: "activism"
 			}, {
-				getName: () => v.fbt._("Cars", null, {
+				getName: () => O.fbt._("Cars", null, {
 					hk: "4dnuOx"
 				}),
 				url: "cars_and_motor_vehicles"
 			}, {
-				getName: () => v.fbt._("Beauty and Makeup", null, {
+				getName: () => O.fbt._("Beauty and Makeup", null, {
 					hk: "4ncOsg"
 				}),
 				url: "beauty_and_makeup"
 			}, {
-				getName: () => v.fbt._("Philosophy", null, {
+				getName: () => O.fbt._("Philosophy", null, {
 					hk: "MNowu"
 				}),
 				url: "ethics_and_philosophy"
 			}, {
-				getName: () => v.fbt._("Food and Drink", null, {
+				getName: () => O.fbt._("Food and Drink", null, {
 					hk: "19vNV9"
 				}),
 				url: "food_and_drink"
 			}, {
-				getName: () => v.fbt._("Religion", null, {
+				getName: () => O.fbt._("Religion", null, {
 					hk: "4aCX5k"
 				}),
 				url: "religion"
 			}, {
-				getName: () => v.fbt._("World News", null, {
+				getName: () => O.fbt._("World News", null, {
 					hk: "4lETuR"
 				}),
 				url: "world_news"
 			}, {
-				getName: () => v.fbt._("Politics", null, {
+				getName: () => O.fbt._("Politics", null, {
 					hk: "41ePs3"
 				}),
 				url: "politics"
 			}, {
-				getName: () => v.fbt._("Meta", null, {
+				getName: () => O.fbt._("Meta", null, {
 					hk: "1SKBT1"
 				}),
 				url: "meta_reddit"
 			}, {
-				getName: () => v.fbt._("Tabletop RPGs", null, {
+				getName: () => O.fbt._("Tabletop RPGs", null, {
 					hk: "1zUqUF"
 				}),
 				url: "tabletop_roleplaying_game"
 			}, {
-				getName: () => v.fbt._("Marketplace and Deals", null, {
+				getName: () => O.fbt._("Marketplace and Deals", null, {
 					hk: "1qiYgm"
 				}),
 				url: "marketplace_and_deals"
 			}, {
-				getName: () => v.fbt._("Finance and Economics", null, {
+				getName: () => O.fbt._("Finance and Economics", null, {
 					hk: "rZrtS"
 				}),
 				url: "business_economics_and_finance"
 			}, {
-				getName: () => v.fbt._("Galaxy Quest", null, {
+				getName: () => O.fbt._("Galaxy Quest", null, {
 					hk: "1XkOK1"
 				}),
 				url: "galaxy_quest"
 			}, {
-				getName: () => v.fbt._("Math", null, {
+				getName: () => O.fbt._("Math", null, {
 					hk: "17VRuh"
 				}),
 				url: "mathematics"
 			}, {
-				getName: () => v.fbt._("Crypto", null, {
+				getName: () => O.fbt._("Crypto", null, {
 					hk: "1KATZ1"
 				}),
 				url: "cryptocurrency"
@@ -609,7 +609,7 @@
 				Ie = n.n(we);
 			const Be = () => {
 					const e = `${Ne.a.assetPath}/img/banner/banner-medium@2x.png`,
-						t = v.fbt._("Find Your Next Community!", null, {
+						t = O.fbt._("Find Your Next Community!", null, {
 							hk: "4tZ6vB"
 						}),
 						n = {
@@ -627,7 +627,7 @@
 					const t = e.topic.getName();
 					return d.a.createElement("div", {
 						className: Ie.a.itemContainer
-					}, d.a.createElement(Oe.a, {
+					}, d.a.createElement(ve.a, {
 						to: Le(e.topic.url),
 						onClick: () => e.sendEvent(Object(je.c)(t))
 					}, t))
@@ -637,7 +637,7 @@
 					Object(o.useEffect)(() => t(Object(je.d)()), []);
 					const n = Ce.map(e => ({
 						value: e,
-						sort: Object(ve.d)() ? .5 : Math.random()
+						sort: Object(Oe.d)() ? .5 : Math.random()
 					})).sort((e, t) => e.sort - t.sort).map(e => e.value).slice(0, 10);
 					return d.a.createElement(f.a, {
 						className: e.className,
@@ -665,10 +665,10 @@
 			}
 			var Ge = n("./src/reddit/selectors/experiments/utils.ts");
 			const Je = Object(u.a)(e => Object(We.c)(e, {
-					experimentName: Ae.Td,
+					experimentName: Ae.Nd,
 					experimentEligibilitySelector: We.a
 				}), Ge.a),
-				Ue = Object(u.a)(Je, e => e === Ae.Ud.Enabled);
+				Ue = Object(u.a)(Je, e => e === Ae.Od.Enabled);
 			var ze = n("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
 				Qe = n("./src/reddit/selectors/user.ts");
 			var qe = n("./src/reddit/selectors/experiments/uiSimplification.ts"),
@@ -701,7 +701,7 @@
 							return Object(We.c)(e, {
 								experimentEligibilitySelector: Qe.K,
 								experimentName: Ae.Zb
-							}) === Ae.ld
+							}) === Ae.fd
 						}(e))
 					},
 					isNavbarLikeMwebEnabled: l.a,
@@ -1480,7 +1480,7 @@
 						hk: "2U7TDT"
 					}))))
 				},
-				v = e => {
+				O = e => {
 					const {
 						category: t
 					} = e, {
@@ -1509,7 +1509,7 @@
 						hk: "2U7TDT"
 					})))))
 				},
-				O = e => c.a.createElement("ol", null, e.rankings && e.rankings.map((t, n) => {
+				v = e => c.a.createElement("ol", null, e.rankings && e.rankings.map((t, n) => {
 					const s = e.subreddits[t.id];
 					return c.a.createElement(b.a, {
 						delta: t.rankDelta,
@@ -1593,7 +1593,7 @@
 				return c.a.createElement(g.a, {
 					className: e.className,
 					contentOnly: !0
-				}, _ && c.a.createElement(v, {
+				}, _ && c.a.createElement(O, {
 					category: i,
 					onSendEventClick: e.onSendEventClick,
 					rankings: n
@@ -1604,7 +1604,7 @@
 					onSendEventClick: e.onSendEventClick,
 					rankings: n,
 					shouldDisplayBannerImg: e.shouldDisplayBannerImg
-				}), c.a.createElement(O, {
+				}), c.a.createElement(v, {
 					categoryName: s,
 					hasTagline: !!_,
 					large: e.large,
@@ -2206,4 +2206,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.3272fb8055d2a8af6da4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.1aaf1478862cc759a8b3.js.map

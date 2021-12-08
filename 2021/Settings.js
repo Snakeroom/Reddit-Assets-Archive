@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.06de71be21c89a2cb2dd.js
-// Retrieved at 12/8/2021, 11:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.c5008b9d1c5b7a28f628.js
+// Retrieved at 12/8/2021, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -5942,7 +5942,7 @@
 				Ce = Object(d.c)({
 					cancelSubscriptionModalIsOpen: Object(fe.b)("settings_optout_modal_id"),
 					premiumBenefitsModalIsOpen: Object(fe.b)("premium_benefits_modal_id"),
-					isPremiumImprovedCancellationEnabled: ge.B,
+					isPremiumImprovedCancellationEnabled: ge.v,
 					goldExpiration: ve.o,
 					hasAndroidSubscription: ve.p,
 					hasIosSubscription: ve.v,
@@ -12921,7 +12921,7 @@
 			const r = e => Object(a.c)(e, {
 				experimentName: s.F,
 				experimentEligibilitySelector: () => Object(o.J)(e)
-			}) === s.ld
+			}) === s.fd
 		},
 		"./src/reddit/selectors/gold/productOffers.ts": function(e, t, n) {
 			"use strict";
@@ -13075,4 +13075,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.06de71be21c89a2cb2dd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.c5008b9d1c5b7a28f628.js.map

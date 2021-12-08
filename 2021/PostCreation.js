@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.0ef99d984e1ca35e7b72.js
-// Retrieved at 12/8/2021, 12:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.bdfeb3fc26e8c6b4d77a.js
+// Retrieved at 12/8/2021, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -9568,7 +9568,7 @@
 						pageLayer: t
 					}),
 					shouldOpenPostInNewTab: A.db,
-					isTournamentPredictionPostV2: D.y
+					isTournamentPredictionPostV2: D.t
 				}),
 				J = e => {
 					const {
@@ -9576,7 +9576,7 @@
 						subreddit: n
 					} = e, {
 						isSponsored: o
-					} = t, s = Object(U.a)(), i = Object(K.a)(m.vd) === m.Cd.Enabled;
+					} = t, s = Object(U.a)(), i = Object(K.a)(m.pd) === m.wd.Enabled;
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return r.a.createElement(Q, {
 						nowrap: e.nowrap
 					}, r.a.createElement(Z, e));
@@ -27839,7 +27839,7 @@
 						subredditName: h
 					} = (null == p ? void 0 : p.urlParams) || {},
 					b = Object(r.e)(e => Object(I.C)(e, h)),
-					f = Object(r.e)(pn.q);
+					f = Object(r.e)(pn.o);
 				return s.a.createElement(V.a, {
 					withOverlay: !0,
 					onOverlayClick: e,
@@ -30347,7 +30347,7 @@
 					}),
 					allowPolls: T.d,
 					votingLengthDropdownIsOpen: e => e.tooltipId === Bc,
-					isPredictionCreationTabEnabled: pn.q
+					isPredictionCreationTabEnabled: pn.o
 				});
 			class Vc extends s.a.Component {
 				constructor(e) {
@@ -30816,7 +30816,7 @@
 					rteState: T.gb,
 					shouldAllowBodyText: T.ib,
 					subreddit: _.r,
-					isPredictionCreationTabEnabled: pn.q
+					isPredictionCreationTabEnabled: pn.o
 				}),
 				Wl = Object(r.b)(Kl, (e, {
 					onChange: t,
@@ -31251,7 +31251,7 @@
 				}) => {
 					const n = Object(r.d)(),
 						i = Object(r.e)(pn.b),
-						c = Object(r.e)(pn.r),
+						c = Object(r.e)(pn.p),
 						d = Object(r.e)(e => Object(hn.b)(e, {
 							subredditId: t
 						})),
@@ -31343,7 +31343,7 @@
 					submissionType: T.a,
 					subreddit: _.r,
 					title: T.rb,
-					isPredictionsCreationTabEnabled: pn.q
+					isPredictionsCreationTabEnabled: pn.o
 				}),
 				Od = Object(r.b)(yd, (e, {
 					onChange: t,
@@ -31608,7 +31608,7 @@
 					submissionType: T.a,
 					subreddit: _.r,
 					isImageGalleryCreationEnabled: T.N,
-					isPredictionCreationTabEnabled: pn.q
+					isPredictionCreationTabEnabled: pn.o
 				}),
 				su = Object(r.b)(ou, (e, t) => ({
 					onChange: (n, o) => {
@@ -32115,7 +32115,7 @@
 							pageLayer: a
 						})), l = Object(r.e)(e => c && Object(he.h)(e, {
 							subredditId: c.id
-						})), d = Object(r.e)(pn.o);
+						})), d = Object(r.e)(pn.m);
 						return s.a.useEffect(() => c && c.allowPredictions ? l ? t(!0) : d ? void Promise.resolve(i(Object(an.h)(c.id))).then(e => {
 							t(Boolean(e)), o(Boolean(e))
 						}) : t(!1) : t(!1), [i, c, l, d]), {
@@ -32872,14 +32872,14 @@
 			var o = n("./src/reddit/constants/experiments.ts"),
 				s = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const r = e => Object(s.c)(e, {
-					experimentName: o.ee,
+					experimentName: o.Yd,
 					experimentEligibilitySelector: s.a
-				}) === o.ne.Enabled,
+				}) === o.he.Enabled,
 				i = e => Object(s.c)(e, {
-					experimentName: o.fe,
+					experimentName: o.Zd,
 					experimentEligibilitySelector: s.a,
 					expEventOverride: !1
-				}) === o.oe.Enabled
+				}) === o.ie.Enabled
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, n) {
 			"use strict";
@@ -33429,4 +33429,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.0ef99d984e1ca35e7b72.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.bdfeb3fc26e8c6b4d77a.js.map

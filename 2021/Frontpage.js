@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.a1a1ac46d9852703678f.js
-// Retrieved at 12/8/2021, 11:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.5360645d6f19208e9060.js
+// Retrieved at 12/8/2021, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -2502,10 +2502,10 @@
 			}
 			var qe = a("./src/reddit/selectors/experiments/utils.ts");
 			const Ue = Object(u.a)(e => Object(Re.c)(e, {
-					experimentName: De.Td,
+					experimentName: De.Nd,
 					experimentEligibilitySelector: Re.a
 				}), qe.a),
-				Ve = Object(u.a)(Ue, e => e === De.Ud.Enabled);
+				Ve = Object(u.a)(Ue, e => e === De.Od.Enabled);
 			var We = a("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
 				Ge = a("./src/reddit/selectors/user.ts");
 			var He = a("./src/reddit/selectors/experiments/uiSimplification.ts"),
@@ -2538,7 +2538,7 @@
 							return Object(Re.c)(e, {
 								experimentEligibilitySelector: Ge.K,
 								experimentName: De.Zb
-							}) === De.ld
+							}) === De.fd
 						}(e))
 					},
 					isNavbarLikeMwebEnabled: d.a,
@@ -5943,8 +5943,8 @@
 					return Object(n.c)(e, {
 						experimentEligibilitySelector: i,
 						experimentName: s.vc
-					}) === s.nd.Enabled
-				}(e) ? l.Achievements : t === s.od.ControlBanner ? l.CommunitySpacesControl : t === s.od.EnabledBanner ? l.CommunitySpaces : null
+					}) === s.hd.Enabled
+				}(e) ? l.Achievements : t === s.id.ControlBanner ? l.CommunitySpacesControl : t === s.id.EnabledBanner ? l.CommunitySpaces : null
 			}! function(e) {
 				e.Achievements = "achievements", e.CommunitySpaces = "communitySpaces", e.CommunitySpacesControl = "communitySpaces--control"
 			}(l || (l = {}))
@@ -6036,4 +6036,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.a1a1ac46d9852703678f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.5360645d6f19208e9060.js.map
