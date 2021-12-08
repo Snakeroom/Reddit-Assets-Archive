@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~Chat~RedesignChat.4ea3bc796c3ac26848b1.js
-// Retrieved at 10/5/2021, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~Chat~RedesignChat.6d2550ddbf4355b32434.js
+// Retrieved at 12/8/2021, 3:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~Chat~RedesignChat"], {
 		"./node_modules/axios/index.js": function(e, n, t) {
@@ -849,6 +849,19 @@
 				var n = s(e);
 				return (n == p ? u : n == f ? c : h)(e)
 			}
+		},
+		"./node_modules/lodash/xorBy.js": function(e, n, t) {
+			var r = t("./node_modules/lodash/_arrayFilter.js"),
+				i = t("./node_modules/lodash/_baseIteratee.js"),
+				s = t("./node_modules/lodash/_baseRest.js"),
+				a = t("./node_modules/lodash/_baseXor.js"),
+				o = t("./node_modules/lodash/isArrayLikeObject.js"),
+				l = t("./node_modules/lodash/last.js"),
+				u = s((function(e) {
+					var n = l(e);
+					return o(n) && (n = void 0), a(r(e, o), i(n, 2))
+				}));
+			e.exports = u
 		},
 		"./node_modules/react-popper/lib/esm/usePopper.js": function(e, n, t) {
 			"use strict";
@@ -13834,4 +13847,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Chat~RedesignChat.4ea3bc796c3ac26848b1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Chat~RedesignChat.6d2550ddbf4355b32434.js.map

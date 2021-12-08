@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.9b96b73d79567055d637.js
-// Retrieved at 12/8/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.daf3c4d54ac500b9e408.js
+// Retrieved at 12/8/2021, 3:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -858,7 +858,7 @@
 					m = Object(s.c)(o.q.CHAT, o.y.CHAT_SHOW_THEMES_PROMPT_COUNT_KEY, i || "unknown");
 					const n = Object(s.b)(m);
 					let r = null == n ? 0 : n;
-					Object(c.n)(t) && !Object(_.f)(t) && e.dispatch(Object(a.chatThemeShowPromptCountSetAction)(++r))
+					Object(c.o)(t) && !Object(_.f)(t) && e.dispatch(Object(a.chatThemeShowPromptCountSetAction)(++r))
 				});
 			t.a = e => {
 				if ("undefined" == typeof window) return l.a;
@@ -1154,8 +1154,8 @@
 					i = t.user.account && t.user.account.id;
 				c = Object(s.c)(o.q.CHAT, o.y.CHAT_UPLOAD_PROMPT_COUNT_KEY, i || "unknown");
 				const n = Object(s.b)(c),
-					r = Object(l.l)(t),
-					a = Object(l.k)(t);
+					r = Object(l.m)(t),
+					a = Object(l.l)(t);
 				let _ = null == n ? 0 : n;
 				(r || a) && !Object(u.f)(t) && e.dispatch(Object(d.d)(++_))
 			});
@@ -1868,9 +1868,9 @@
 			i.d(t, "a", (function() {
 				return n
 			})), i.d(t, "c", (function() {
-				return f
-			})), i.d(t, "b", (function() {
 				return b
+			})), i.d(t, "b", (function() {
+				return g
 			}));
 			i("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n, r = i("./node_modules/uuid/v4.js"),
@@ -1900,8 +1900,12 @@
 			function h(e) {
 				return e && e.customType === n.AWARDING ? n.AWARDING : e && e.customType === n.IMAGE ? n.IMAGE : e && e.customType === n.DEFAULT ? n.DEFAULT : void 0
 			}
+			const f = e => e.map(e => ({
+				key: e.key,
+				userIds: e.userIds
+			}));
 
-			function f(e) {
+			function b(e) {
 				if (t = e, Boolean(t && c.has(t.messageType))) {
 					const {
 						channelType: t,
@@ -1911,7 +1915,8 @@
 						message: s,
 						messageId: o,
 						mentionedUsers: l,
-						updatedAt: u
+						reactions: u,
+						updatedAt: c
 					} = e;
 					return {
 						channelId: Object(d.f)(i),
@@ -1925,14 +1930,15 @@
 						messageData: Object(a.d)(r, s),
 						messageId: o,
 						messageType: p(e),
+						reactions: f(u),
 						sender: _(e),
-						updatedAt: u
+						updatedAt: c
 					}
 				}
 				var t
 			}
 
-			function b(e, t, i, n, r = s()()) {
+			function g(e, t, i, n, r = s()()) {
 				const d = Object(l.a)(e, i),
 					c = JSON.stringify(Object(a.b)(i, n, r, d)),
 					_ = Object(a.d)(c, i);
@@ -2157,9 +2163,9 @@
 			})), i.d(t, "c", (function() {
 				return x
 			})), i.d(t, "F", (function() {
-				return L
-			})), i.d(t, "b", (function() {
 				return B
+			})), i.d(t, "b", (function() {
+				return k
 			})), i.d(t, "d", (function() {
 				return U
 			})), i.d(t, "e", (function() {
@@ -2209,10 +2215,11 @@
 			const p = e => e.channels.invited.sortedKeys.length,
 				m = e => e.channels.joined.sortedKeys.length,
 				h = Object(s.a)((e, t) => t, e => e.channels.models, (e, t) => t[e]),
-				f = (e, t) => {
-					const i = "string" == typeof t ? t : t.channelId;
-					if (i) return e.channels.models[i]
-				},
+				f = Object(s.a)((e, t) => {
+					const i = e.channels.models,
+						n = "string" == typeof t ? t : t.channelId;
+					if (n) return i[n]
+				}, e => e),
 				b = e => {
 					const {
 						currentPage: t
@@ -2291,21 +2298,21 @@
 				},
 				P = e => e.channels.joined.hasMoreChannels,
 				x = e => e.channels.joined.fetchingChannels,
-				L = e => e.channels.invited.hasMoreChannels,
-				B = e => e.channels.invited.fetchingChannels,
-				k = (e, t) => {
+				L = Object(s.a)(e => e.channels.invited, e => e.channels.models, (e, t) => e.sortedKeys.map(e => t[e])),
+				B = e => e.channels.invited.hasMoreChannels,
+				k = e => e.channels.invited.fetchingChannels,
+				M = (e, t) => {
 					if (!Object(c.e)(e)) return t;
 					const i = Object(u.a)(e);
 					return i === a.c.DirectsOnly ? t.filter(e => e.type === a.b.Direct) : i === a.c.GroupsOnly ? t.filter(e => e.type === a.b.Group) : t
 				},
-				M = e => e.channels.invited.sortedKeys.map(t => e.channels.models[t]),
 				U = e => {
-					const t = M(e);
-					return k(e, t)
+					const t = L(e);
+					return M(e, t)
 				},
 				G = e => {
 					const t = (e => e.channels.joined.sortedKeys.map(t => e.channels.models[t]))(e);
-					return k(e, t)
+					return M(e, t)
 				},
 				V = e => {
 					const t = v(e);
@@ -2335,42 +2342,37 @@
 				},
 				Q = e => {
 					var t;
-					return Boolean(null === (t = M(e)) || void 0 === t ? void 0 : t.length)
+					return Boolean(null === (t = L(e)) || void 0 === t ? void 0 : t.length)
 				},
-				J = (e, t) => {
+				J = Object(s.a)((e, t) => t ? e.channels.models[t] : void 0, e => Object(_.d)(e), (e, t) => {
 					var i;
-					if (t) {
-						const n = f(e, t),
-							r = Object(_.a)(e),
-							s = Object(_.d)(e);
-						if (n && r) {
-							const e = n.channelState === o.b.JOINED,
-								t = n.channelState === o.b.INVITED;
-							let r;
-							const d = (null == s ? void 0 : s.id) !== (null === (i = n.inviter) || void 0 === i ? void 0 : i.id) ? n.inviter : void 0;
-							for (const i of n.members)(null == s ? void 0 : s.id) !== i.id && (null == d ? void 0 : d.id) !== i.id && (!r || r.name.toLocaleLowerCase() > i.name.toLocaleLowerCase()) && (r = i);
-							return n.type === a.b.Direct ? {
-								firstUser: r || n.inviter
-							} : e && s && !r && !d ? {
-								firstUser: s
-							} : e && s && d ? {
-								firstUser: s,
-								secondUser: d
-							} : e && s && r ? {
-								firstUser: s,
-								secondUser: r
-							} : t && s && d ? {
-								firstUser: s,
-								secondUser: d
-							} : t && s && n.inviter ? {
-								firstUser: s,
-								secondUser: n.inviter
-							} : {
-								firstUser: n.inviter
-							}
+					if (e && (null == t ? void 0 : t.id)) {
+						const n = e.channelState === o.b.JOINED,
+							r = e.channelState === o.b.INVITED;
+						let s;
+						const d = (null == t ? void 0 : t.id) !== (null === (i = e.inviter) || void 0 === i ? void 0 : i.id) ? e.inviter : void 0;
+						for (const i of e.members)(null == t ? void 0 : t.id) !== i.id && (null == d ? void 0 : d.id) !== i.id && (!s || s.name.toLocaleLowerCase() > i.name.toLocaleLowerCase()) && (s = i);
+						return e.type === a.b.Direct ? {
+							firstUser: s || e.inviter
+						} : n && t && !s && !d ? {
+							firstUser: t
+						} : n && t && d ? {
+							firstUser: t,
+							secondUser: d
+						} : n && t && s ? {
+							firstUser: t,
+							secondUser: s
+						} : r && t && d ? {
+							firstUser: t,
+							secondUser: d
+						} : r && t && e.inviter ? {
+							firstUser: t,
+							secondUser: e.inviter
+						} : {
+							firstUser: e.inviter
 						}
 					}
-				},
+				}),
 				X = (e, t) => {
 					var i;
 					if (t) {
@@ -2478,109 +2480,114 @@
 		},
 		"./src/chat/selectors/experiments.ts": function(e, t, i) {
 			"use strict";
-			i.d(t, "r", (function() {
-				return v
-			})), i.d(t, "t", (function() {
+			i.d(t, "s", (function() {
 				return y
-			})), i.d(t, "n", (function() {
+			})), i.d(t, "u", (function() {
 				return E
-			})), i.d(t, "e", (function() {
-				return T
 			})), i.d(t, "o", (function() {
+				return T
+			})), i.d(t, "e", (function() {
 				return S
-			})), i.d(t, "q", (function() {
-				return O
 			})), i.d(t, "p", (function() {
+				return O
+			})), i.d(t, "r", (function() {
 				return I
-			})), i.d(t, "i", (function() {
+			})), i.d(t, "q", (function() {
 				return R
-			})), i.d(t, "k", (function() {
+			})), i.d(t, "j", (function() {
 				return F
 			})), i.d(t, "l", (function() {
 				return C
-			})), i.d(t, "j", (function() {
-				return N
 			})), i.d(t, "m", (function() {
+				return N
+			})), i.d(t, "k", (function() {
 				return A
-			})), i.d(t, "s", (function() {
+			})), i.d(t, "n", (function() {
 				return j
-			})), i.d(t, "c", (function() {
+			})), i.d(t, "t", (function() {
 				return D
-			})), i.d(t, "a", (function() {
+			})), i.d(t, "c", (function() {
 				return P
-			})), i.d(t, "b", (function() {
+			})), i.d(t, "a", (function() {
 				return x
-			})), i.d(t, "f", (function() {
+			})), i.d(t, "b", (function() {
 				return L
-			})), i.d(t, "h", (function() {
+			})), i.d(t, "f", (function() {
 				return B
-			})), i.d(t, "g", (function() {
+			})), i.d(t, "h", (function() {
 				return k
-			})), i.d(t, "d", (function() {
+			})), i.d(t, "g", (function() {
 				return M
+			})), i.d(t, "d", (function() {
+				return U
+			})), i.d(t, "i", (function() {
+				return V
 			}));
 			i("./node_modules/lodash/isEmpty.js");
 			var n, r, s = i("./node_modules/lodash/memoize.js"),
 				o = i.n(s),
 				d = i("./node_modules/reselect/es/index.js");
 			! function(e) {
-				e.EconRpanAvatar = "web_econ_avatar_in_rpan", e.UiRefreshBubblePreset = "ui_refresh_bubble_preset", e.D2xChatNicknamePainted = "d2x_chat_nickname_painted", e.D2XChatQuickActionsChannels = "d2x_chat_quickactions_channels", e.D2xChatFilterGroupDirect = "d2x_chat_filter_group_direct", e.ChatMediaShareImages = "chat_mediashare_images", e.ChatMediaShareImagesGroups = "group_chat_mediashare_images", e.ChatImagesRenderKillSwitch = "web_chat_mediashare_images_killswitch", e.ChatInviteMessagePreview = "chat_preview_comment", e.D2XChatShortCutsSlashCommand = "d2x_chat_shortcuts_slash_command", e.ChatLinkSharingGroup = "chat_link_sharing_group", e.ChatLinkSharingDirect = "chat_link_sharing_direct", e.AEBlockedUserChatWeb = "ae_blocked_user_chat_web"
+				e.EconRpanAvatar = "web_econ_avatar_in_rpan", e.UiRefreshBubblePreset = "ui_refresh_bubble_preset", e.D2xChatNicknamePainted = "d2x_chat_nickname_painted", e.D2XChatQuickActionsChannels = "d2x_chat_quickactions_channels", e.D2xChatFilterGroupDirect = "d2x_chat_filter_group_direct", e.ChatMediaShareImages = "chat_mediashare_images", e.ChatMediaShareImagesGroups = "group_chat_mediashare_images", e.ChatImagesRenderKillSwitch = "web_chat_mediashare_images_killswitch", e.ChatInviteMessagePreview = "chat_preview_comment", e.D2XChatShortCutsSlashCommand = "d2x_chat_shortcuts_slash_command", e.ChatLinkSharingGroup = "chat_link_sharing_group", e.ChatLinkSharingDirect = "chat_link_sharing_direct", e.AEBlockedUserChatWeb = "ae_blocked_user_chat_web", e.ChatReactions = "chat_reactions", e.D2XChatReactionsKillSwitch = "d2x_chat_reactions_killswitch"
 			}(n || (n = {})),
 			function(e) {
 				e.Control1 = "control_1", e.Control2 = "control_2"
 			}(r || (r = {}));
-			var a, l, u, c, _;
+			const a = "enabled";
+			var l, u, c, _, p;
 			! function(e) {
 				e.JustEnabled = "just_enabled", e.Prompt = "prompt"
-			}(a || (a = {})),
-			function(e) {
-				e.NicknamePaintedEditButton = "nickname_painted_edit_button", e.NicknamePaintedEditPopup = "nickname_painted_edit_popup"
 			}(l || (l = {})),
 			function(e) {
-				e.QuickActionBlock = "quick_action_block", e.QuickActionSpam = "quick_action_spam"
+				e.NicknamePaintedEditButton = "nickname_painted_edit_button", e.NicknamePaintedEditPopup = "nickname_painted_edit_popup"
 			}(u || (u = {})),
 			function(e) {
-				e.Enabled = "enabled"
+				e.QuickActionBlock = "quick_action_block", e.QuickActionSpam = "quick_action_spam"
 			}(c || (c = {})),
 			function(e) {
+				e.Enabled = "enabled"
+			}(_ || (_ = {})),
+			function(e) {
 				e.Tooltip = "tooltip", e.EasyAccess = "easy_access", e.TooltipEasyAccess = "tooltip_easy_access"
-			}(_ || (_ = {}));
-			var p = i("./src/chat/models/Channel/index.ts"),
-				m = i("./src/chat/tracking/events/experiment.ts"),
-				h = i("./src/chat/selectors/channels.ts");
-			const f = e => {
+			}(p || (p = {}));
+			var m = i("./src/chat/models/Channel/index.ts"),
+				h = i("./src/chat/tracking/events/experiment.ts"),
+				f = i("./src/chat/selectors/channels.ts");
+			const b = e => {
 					if (!(e => e === r.Control1 || e === r.Control2)(e)) return e
 				},
-				b = e => e.experiments.models,
-				g = o()((e, t, i) => {
-					Object(m.a)(t, i)
+				g = e => e.experiments.models,
+				w = o()((e, t, i) => {
+					Object(h.a)(t, i)
 				}),
-				w = Object(d.a)(e => e, b, (e, t) => t, (e, t, i) => {
+				v = Object(d.a)(e => e, g, (e, t) => t, (e, t, i) => {
 					var n;
 					const r = t[i],
 						s = null === (n = t[i]) || void 0 === n ? void 0 : n.variant;
-					return s && g(i, e, r), s
+					return s && w(i, e, r), s
 				}),
-				v = e => Boolean(e.user.experiments[n.EconRpanAvatar]),
-				y = Object(d.a)(e => w(e, n.UiRefreshBubblePreset), e => Boolean(f(e))),
-				E = Object(d.a)(e => w(e, n.UiRefreshBubblePreset), e => e === a.Prompt),
-				T = Object(d.a)(e => w(e, n.D2xChatFilterGroupDirect), e => "enabled" === e),
-				S = Object(d.a)(e => w(e, n.D2XChatQuickActionsChannels), e => e === u.QuickActionBlock),
-				O = Object(d.a)(e => w(e, n.D2XChatQuickActionsChannels), e => e === u.QuickActionSpam),
-				I = Object(d.a)(e => w(e, n.D2XChatQuickActionsChannels), e => Boolean(f(e))),
-				R = Object(d.a)(e => w(e, n.ChatImagesRenderKillSwitch), e => "enabled" === e),
-				F = Object(d.a)(e => w(e, n.ChatMediaShareImagesGroups), e => R(e), (e, t) => "enabled" === e && !t),
-				C = Object(d.a)(e => w(e, n.ChatMediaShareImages), e => R(e), (e, t) => "enabled" === e && !t),
-				N = Object(d.a)((e, t) => t ? Object(h.l)(e, t) : void 0, e => C(e), e => F(e), (e, t, i) => e === p.b.Direct && t || e === p.b.Group && i),
-				A = Object(d.a)(e => w(e, n.ChatInviteMessagePreview), e => "enabled" === e),
-				j = Object(d.a)(e => w(e, n.D2XChatShortCutsSlashCommand), e => "enabled" === e),
-				D = Object(d.a)(e => w(e, n.ChatLinkSharingGroup), e => e === _.Tooltip),
-				P = Object(d.a)(e => w(e, n.ChatLinkSharingGroup), e => e === _.EasyAccess),
-				x = Object(d.a)(e => w(e, n.ChatLinkSharingGroup), e => e === _.TooltipEasyAccess),
-				L = Object(d.a)(e => w(e, n.ChatLinkSharingDirect), e => "enabled" === e),
-				B = Object(d.a)(e => w(e, n.ChatLinkSharingGroup), e => Boolean(f(e))),
-				k = Object(d.a)(e => w(e, n.ChatLinkSharingGroup) || w(e, n.ChatLinkSharingDirect), e => Boolean(f(e))),
-				M = Object(d.a)(e => w(e, n.AEBlockedUserChatWeb), e => "enabled" === e)
+				y = e => Boolean(e.user.experiments[n.EconRpanAvatar]),
+				E = Object(d.a)(e => v(e, n.UiRefreshBubblePreset), e => Boolean(b(e))),
+				T = Object(d.a)(e => v(e, n.UiRefreshBubblePreset), e => e === l.Prompt),
+				S = Object(d.a)(e => v(e, n.D2xChatFilterGroupDirect), e => e === a),
+				O = Object(d.a)(e => v(e, n.D2XChatQuickActionsChannels), e => e === c.QuickActionBlock),
+				I = Object(d.a)(e => v(e, n.D2XChatQuickActionsChannels), e => e === c.QuickActionSpam),
+				R = Object(d.a)(e => v(e, n.D2XChatQuickActionsChannels), e => Boolean(b(e))),
+				F = Object(d.a)(e => v(e, n.ChatImagesRenderKillSwitch), e => e === a),
+				C = Object(d.a)(e => v(e, n.ChatMediaShareImagesGroups), e => F(e), (e, t) => e === a && !t),
+				N = Object(d.a)(e => v(e, n.ChatMediaShareImages), e => F(e), (e, t) => e === a && !t),
+				A = Object(d.a)((e, t) => t ? Object(f.l)(e, t) : void 0, e => N(e), e => C(e), (e, t, i) => e === m.b.Direct && t || e === m.b.Group && i),
+				j = Object(d.a)(e => v(e, n.ChatInviteMessagePreview), e => e === a),
+				D = Object(d.a)(e => v(e, n.D2XChatShortCutsSlashCommand), e => e === a),
+				P = Object(d.a)(e => v(e, n.ChatLinkSharingGroup), e => e === p.Tooltip),
+				x = Object(d.a)(e => v(e, n.ChatLinkSharingGroup), e => e === p.EasyAccess),
+				L = Object(d.a)(e => v(e, n.ChatLinkSharingGroup), e => e === p.TooltipEasyAccess),
+				B = Object(d.a)(e => v(e, n.ChatLinkSharingDirect), e => e === a),
+				k = Object(d.a)(e => v(e, n.ChatLinkSharingGroup), e => Boolean(b(e))),
+				M = Object(d.a)(e => v(e, n.ChatLinkSharingGroup) || v(e, n.ChatLinkSharingDirect), e => Boolean(b(e))),
+				U = Object(d.a)(e => v(e, n.AEBlockedUserChatWeb), e => e === a),
+				G = Object(d.a)(e => v(e, n.D2XChatReactionsKillSwitch), e => e === a),
+				V = Object(d.a)(e => v(e, n.ChatReactions), e => G(e), (e, t) => e === a && !t)
 		},
 		"./src/chat/selectors/inviteLink.ts": function(e, t, i) {
 			"use strict";
@@ -3320,10 +3327,10 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("154140"),
+				buildNumber: Object(r.c)("154149"),
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
-				buildTimestamp: Object(r.b)("1638992050"),
+				buildTimestamp: Object(r.b)("1638993605"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -5890,14 +5897,14 @@
 					}))
 				},
 				z = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %cf00ce17c0b3088f7103f4e7366870543a8881b6f-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %ced012cef8f9861d09c707602ab5c9e0a448bdcc5-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "f00ce17c0b3088f7103f4e7366870543a8881b6f-production",
+						release: "ed012cef8f9861d09c707602ab5c9e0a448bdcc5-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6414,7 +6421,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "f00ce17c0b3088f7103f4e7366870543a8881b6f-production",
+						releaseClient: "ed012cef8f9861d09c707602ab5c9e0a448bdcc5-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -43046,4 +43053,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.9b96b73d79567055d637.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.daf3c4d54ac500b9e408.js.map

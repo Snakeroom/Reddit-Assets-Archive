@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OverlayLinkSharingSettings.2184f4ea662e5d8033b6.js
-// Retrieved at 10/26/2021, 2:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OverlayLinkSharingSettings.e12bf7a15f3caef6975b.js
+// Retrieved at 12/8/2021, 3:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OverlayLinkSharingSettings"], {
 		"./src/chat/components/OverlayLinkSharingSettings/index.m.less": function(e, t, a) {
@@ -121,8 +121,8 @@
 					x = Object(i.e)(t => Object(k.b)(t, e)),
 					j = Object(i.e)(t => Object(k.d)(t, e)),
 					g = Object(i.e)(t => Object(k.c)(t, e)),
-					w = Object(c.b)(Object(b.d)(16)),
-					P = Object(c.b)(Object(b.d)(16));
+					w = Object(c.b)(Object(b.e)(16)),
+					P = Object(c.b)(Object(b.e)(16));
 				Object(l.a)("EXPIRATION_DROPDOWN_ID", w.hide), Object(l.a)("MAX_USERS_DROPDOWN_ID", P.hide);
 				const L = (e, t) => {
 						t.stopPropagation(), "EXPIRATION_DROPDOWN_ID" === e ? (w.toggle(), P.hide()) : (w.hide(), P.toggle())
@@ -171,7 +171,7 @@
 							a(Object(s.d)({
 								inviteLinkDataModelId: e,
 								maxUsersCount: t
-							})), P.hide(), a(Object(d.L)(s.a.MEMBER, t))
+							})), P.hide(), a(Object(d.O)(s.a.MEMBER, t))
 						})(t)
 					},
 					tabIndex: 2
@@ -213,7 +213,7 @@
 								a(Object(s.c)({
 									inviteLinkDataModelId: e,
 									durationLabel: t
-								})), w.hide(), a(Object(d.L)(s.a.TIME, p.d[t].originalLabel))
+								})), w.hide(), a(Object(d.O)(s.a.TIME, p.d[t].originalLabel))
 							})(t)
 						},
 						tabIndex: 3
@@ -285,4 +285,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayLinkSharingSettings.2184f4ea662e5d8033b6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayLinkSharingSettings.e12bf7a15f3caef6975b.js.map

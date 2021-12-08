@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~Governance~ModListing~Reddit~Subreddit.d92465e63ec9f2222479.js
-// Retrieved at 11/15/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~Governance~ModListing~Reddit~Subreddit.70b772a0abc42c6bf1e7.js
+// Retrieved at 12/8/2021, 3:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~Governance~ModListing~Reddit~Subreddit"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(t, e, r) {
@@ -335,18 +335,6 @@
 				return i(t, (function(t, i, a) {
 					e(s, r(t), i, a)
 				})), s
-			}
-		},
-		"./node_modules/lodash/_baseXor.js": function(t, e, r) {
-			var i = r("./node_modules/lodash/_baseDifference.js"),
-				s = r("./node_modules/lodash/_baseFlatten.js"),
-				a = r("./node_modules/lodash/_baseUniq.js");
-			t.exports = function(t, e, r) {
-				var n = t.length;
-				if (n < 2) return n ? a(t[0]) : [];
-				for (var o = -1, h = Array(n); ++o < n;)
-					for (var l = t[o], p = -1; ++p < n;) p != o && (h[o] = i(h[o] || l, t[p], e, r));
-				return a(s(h, 1), e, r)
 			}
 		},
 		"./node_modules/lodash/_createInverter.js": function(t, e, r) {
@@ -6514,4 +6502,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Governance~ModListing~Reddit~Subreddit.d92465e63ec9f2222479.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Governance~ModListing~Reddit~Subreddit.70b772a0abc42c6bf1e7.js.map
