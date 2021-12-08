@@ -1,25 +1,25 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.8fa102cc0420d16084af.js
-// Retrieved at 12/8/2021, 11:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.719853110f5f4207c40f.js
+// Retrieved at 12/8/2021, 12:30:06 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
-		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
-		for (a in s) Object.prototype.hasOwnProperty.call(s, a) && (e[a] = s[a]);
+		for (var n, a, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) a = r[l], Object.prototype.hasOwnProperty.call(d, a) && d[a] && b.push(d[a][0]), d[a] = 0;
+		for (n in s) Object.prototype.hasOwnProperty.call(s, n) && (e[n] = s[n]);
 		for (m && m(o); b.length;) b.shift()();
 		return i.push.apply(i, c || []), t()
 	}
 
 	function t() {
 		for (var e, o = 0; o < i.length; o++) {
-			for (var t = i[o], a = !0, n = 1; n < t.length; n++) {
-				var s = t[n];
-				0 !== d[s] && (a = !1)
+			for (var t = i[o], n = !0, a = 1; a < t.length; a++) {
+				var s = t[a];
+				0 !== d[s] && (n = !1)
 			}
-			a && (i.splice(o--, 1), e = r(r.s = t[0]))
+			n && (i.splice(o--, 1), e = r(r.s = t[0]))
 		}
 		return e
 	}
-	var a = {},
-		n = {
+	var n = {},
+		a = {
 			"runtime~Reddit": 0
 		},
 		d = {
@@ -28,8 +28,8 @@
 		i = [];
 
 	function r(o) {
-		if (a[o]) return a[o].exports;
-		var t = a[o] = {
+		if (n[o]) return n[o].exports;
+		var t = n[o] = {
 			i: o,
 			l: !1,
 			exports: {}
@@ -38,7 +38,7 @@
 	}
 	r.e = function(e) {
 		var o = [];
-		n[e] ? o.push(n[e]) : 0 !== n[e] && {
+		a[e] ? o.push(a[e]) : 0 !== a[e] && {
 			1: 1,
 			Acknowledgements: 1,
 			Appeal: 1,
@@ -141,6 +141,7 @@
 			"reddit-components-Econ-Prediction-ChangePredictionOutcomeModal": 1,
 			"reddit-components-Econ-Prediction-EndTimeModal": 1,
 			"reddit-components-PostCreationForm-PredictionEditor-InactivityModal": 1,
+			"reddit-components-PostCreationForm-PredictionEditor-StartTournamentLimitationModal": 1,
 			AdminPanel: 1,
 			"ChatMessageInput~MembershipPaywallPage~RichTextEditor": 1,
 			MembershipPaywallPage: 1,
@@ -289,8 +290,8 @@
 			SpecialMembershipsGifsTooltip: 1,
 			ChatReportFlow: 1,
 			ModStatsChart: 1
-		} [e] && o.push(n[e] = new Promise((function(o, t) {
-			for (var a = "chunkCSS/" + ({
+		} [e] && o.push(a[e] = new Promise((function(o, t) {
+			for (var n = "chunkCSS/" + ({
 					AchievementsActions: "AchievementsActions",
 					Acknowledgements: "Acknowledgements",
 					Appeal: "Appeal",
@@ -409,6 +410,7 @@
 					"reddit-components-Econ-Prediction-ChangePredictionOutcomeModal": "reddit-components-Econ-Prediction-ChangePredictionOutcomeModal",
 					"reddit-components-Econ-Prediction-EndTimeModal": "reddit-components-Econ-Prediction-EndTimeModal",
 					"reddit-components-PostCreationForm-PredictionEditor-InactivityModal": "reddit-components-PostCreationForm-PredictionEditor-InactivityModal",
+					"reddit-components-PostCreationForm-PredictionEditor-StartTournamentLimitationModal": "reddit-components-PostCreationForm-PredictionEditor-StartTournamentLimitationModal",
 					"translations/de_DE-json": "translations/de_DE-json",
 					"translations/es_ES-json": "translations/es_ES-json",
 					"translations/es_MX-json": "translations/es_MX-json",
@@ -728,6 +730,7 @@
 					"reddit-components-Econ-Prediction-ChangePredictionOutcomeModal": "634e6cd58346745bd792",
 					"reddit-components-Econ-Prediction-EndTimeModal": "fa8f27b61446eff1fdbd",
 					"reddit-components-PostCreationForm-PredictionEditor-InactivityModal": "1dc27ecea978bdf27f75",
+					"reddit-components-PostCreationForm-PredictionEditor-StartTournamentLimitationModal": "1dc27ecea978bdf27f75",
 					"translations/de_DE-json": "31d6cfe0d16ae931b73c",
 					"translations/es_ES-json": "31d6cfe0d16ae931b73c",
 					"translations/es_MX-json": "31d6cfe0d16ae931b73c",
@@ -923,32 +926,32 @@
 					SpecialMembershipsGifsTooltip: "dd359f2bc0c2ddc6cce2",
 					ChatReportFlow: "3358a28fd85283fbee86",
 					ModStatsChart: "1716ac9447d14ba5fb74"
-				} [e] + "_.css", d = r.p + a, i = document.getElementsByTagName("link"), s = 0; s < i.length; s++) {
+				} [e] + "_.css", d = r.p + n, i = document.getElementsByTagName("link"), s = 0; s < i.length; s++) {
 				var c = (m = i[s]).getAttribute("data-href") || m.getAttribute("href");
-				if ("stylesheet" === m.rel && (c === a || c === d)) return o()
+				if ("stylesheet" === m.rel && (c === n || c === d)) return o()
 			}
 			var l = document.getElementsByTagName("style");
 			for (s = 0; s < l.length; s++) {
 				var m;
-				if ((c = (m = l[s]).getAttribute("data-href")) === a || c === d) return o()
+				if ((c = (m = l[s]).getAttribute("data-href")) === n || c === d) return o()
 			}
 			var b = document.createElement("link");
 			b.rel = "stylesheet", b.type = "text/css", b.onload = o, b.onerror = function(o) {
-				var a = o && o.target && o.target.src || d,
-					i = new Error("Loading CSS chunk " + e + " failed.\n(" + a + ")");
-				i.code = "CSS_CHUNK_LOAD_FAILED", i.request = a, delete n[e], b.parentNode.removeChild(b), t(i)
+				var n = o && o.target && o.target.src || d,
+					i = new Error("Loading CSS chunk " + e + " failed.\n(" + n + ")");
+				i.code = "CSS_CHUNK_LOAD_FAILED", i.request = n, delete a[e], b.parentNode.removeChild(b), t(i)
 			}, b.href = d, document.getElementsByTagName("head")[0].appendChild(b)
 		})).then((function() {
-			n[e] = 0
+			a[e] = 0
 		})));
 		var t = d[e];
 		if (0 !== t)
 			if (t) o.push(t[2]);
 			else {
-				var a = new Promise((function(o, a) {
-					t = d[e] = [o, a]
+				var n = new Promise((function(o, n) {
+					t = d[e] = [o, n]
 				}));
-				o.push(t[2] = a);
+				o.push(t[2] = n);
 				var i, s = document.createElement("script");
 				s.charset = "utf-8", s.timeout = 120, r.nc && s.setAttribute("nonce", r.nc), s.src = function(e) {
 					return r.p + "" + ({
@@ -1070,6 +1073,7 @@
 						"reddit-components-Econ-Prediction-ChangePredictionOutcomeModal": "reddit-components-Econ-Prediction-ChangePredictionOutcomeModal",
 						"reddit-components-Econ-Prediction-EndTimeModal": "reddit-components-Econ-Prediction-EndTimeModal",
 						"reddit-components-PostCreationForm-PredictionEditor-InactivityModal": "reddit-components-PostCreationForm-PredictionEditor-InactivityModal",
+						"reddit-components-PostCreationForm-PredictionEditor-StartTournamentLimitationModal": "reddit-components-PostCreationForm-PredictionEditor-StartTournamentLimitationModal",
 						"translations/de_DE-json": "translations/de_DE-json",
 						"translations/es_ES-json": "translations/es_ES-json",
 						"translations/es_MX-json": "translations/es_MX-json",
@@ -1388,15 +1392,16 @@
 						"reddit-components-Econ-Prediction-CancelPredictionModal": "735a56e245b3cd7fafce",
 						"reddit-components-Econ-Prediction-ChangePredictionOutcomeModal": "e32767d6332f51ed09fe",
 						"reddit-components-Econ-Prediction-EndTimeModal": "9368b54ef2fdc99b46bd",
-						"reddit-components-PostCreationForm-PredictionEditor-InactivityModal": "81a1d0aec6a05b7c2c7c",
-						"translations/de_DE-json": "c609539a067be86ec006",
-						"translations/es_ES-json": "60d002ab7fbc226d3aee",
-						"translations/es_MX-json": "7530cb3d10a28cc6502b",
-						"translations/fr_FR-json": "01649d5d2c91baee97e1",
-						"translations/it_IT-json": "0f8fec351df9cb9976d7",
-						"translations/pseudo-json": "68468074aef9a8c62fca",
-						"translations/pt_BR-json": "165d6998f9fd440461e0",
-						"translations/pt_PT-json": "d8c84ab36937817b295a",
+						"reddit-components-PostCreationForm-PredictionEditor-InactivityModal": "bf854bbc56569df30bc2",
+						"reddit-components-PostCreationForm-PredictionEditor-StartTournamentLimitationModal": "3470180a316e4efa25e8",
+						"translations/de_DE-json": "301527a88ee1ed92962d",
+						"translations/es_ES-json": "2f640b030796592edef9",
+						"translations/es_MX-json": "be512b81840f5249dd80",
+						"translations/fr_FR-json": "60203f6b284b2494a70f",
+						"translations/it_IT-json": "4b16c5774b225059ff63",
+						"translations/pseudo-json": "114c7ee5c0b5617f431e",
+						"translations/pt_BR-json": "3a4ff863d1b4d4205cce",
+						"translations/pt_PT-json": "a19a1a183e2cbcd986df",
 						"vendors~AdminPanel": "e6e59f93c311ab1cce5c",
 						AdminPanel: "b65ac87a56d4ed61b9e5",
 						"vendors~ChatMessageInput~CommentRichUnit~FlairEdit~MembershipPaywallPage~PostCreation~PostRichUnit~R~9deab1a0": "201e0a53b4d00907b96f",
@@ -1411,7 +1416,7 @@
 						HarbergerTaxManageModal: "4abdc6db63470d12c96e",
 						SubredditPremiumUploadModal: "a913df1558636c03cd6a",
 						"vendors~PostCreation~Subreddit": "46f5a30c7f13b908d95f",
-						PostCreation: "35b898650373b0bf6789",
+						PostCreation: "0ef99d984e1ca35e7b72",
 						"vendors~ModStatsChart~Settings~ViewsTooltip": "ca7c845d62fd39d960b6",
 						"vendors~Settings": "71f28c4c637cd926b6dd",
 						Settings: "06de71be21c89a2cb2dd",
@@ -1592,9 +1597,9 @@
 					var t = d[e];
 					if (0 !== t) {
 						if (t) {
-							var a = o && ("load" === o.type ? "missing" : o.type),
-								n = o && o.target && o.target.src;
-							c.message = "Loading chunk " + e + " failed.\n(" + a + ": " + n + ")", c.name = "ChunkLoadError", c.type = a, c.request = n, t[1](c)
+							var n = o && ("load" === o.type ? "missing" : o.type),
+								a = o && o.target && o.target.src;
+							c.message = "Loading chunk " + e + " failed.\n(" + n + ": " + a + ")", c.name = "ChunkLoadError", c.type = n, c.request = a, t[1](c)
 						}
 						d[e] = void 0
 					}
@@ -1607,7 +1612,7 @@
 				}), 12e4);
 				s.onerror = s.onload = i, document.head.appendChild(s)
 			} return Promise.all(o)
-	}, r.m = e, r.c = a, r.d = function(e, o, t) {
+	}, r.m = e, r.c = n, r.d = function(e, o, t) {
 		r.o(e, o) || Object.defineProperty(e, o, {
 			enumerable: !0,
 			get: t
@@ -1626,9 +1631,9 @@
 				enumerable: !0,
 				value: e
 			}), 2 & o && "string" != typeof e)
-			for (var a in e) r.d(t, a, function(o) {
+			for (var n in e) r.d(t, n, function(o) {
 				return e[o]
-			}.bind(null, a));
+			}.bind(null, n));
 		return t
 	}, r.n = function(e) {
 		var o = e && e.__esModule ? function() {
@@ -1649,4 +1654,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.8fa102cc0420d16084af.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.719853110f5f4207c40f.js.map
