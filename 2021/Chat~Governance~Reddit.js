@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.deec51143655c8af9f6d.js
-// Retrieved at 12/9/2021, 12:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.4fef833615318d8a81fe.js
+// Retrieved at 12/9/2021, 1:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3327,10 +3327,10 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("154296"),
+				buildNumber: Object(r.c)("154307"),
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
-				buildTimestamp: Object(r.b)("1639068460"),
+				buildTimestamp: Object(r.b)("1639071085"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -5897,14 +5897,14 @@
 					}))
 				},
 				$ = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %cf5d8fa9f9eb92964e9c0cee8aea16c0d00508743-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c8478ab04e1d81afa22ffb13960395abcbb7c4de9-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "f5d8fa9f9eb92964e9c0cee8aea16c0d00508743-production",
+						release: "8478ab04e1d81afa22ffb13960395abcbb7c4de9-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6421,7 +6421,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "f5d8fa9f9eb92964e9c0cee8aea16c0d00508743-production",
+						releaseClient: "8478ab04e1d81afa22ffb13960395abcbb7c4de9-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -35242,26 +35242,24 @@
 				return h
 			})), i.d(t, "q", (function() {
 				return f
-			})), i.d(t, "v", (function() {
+			})), i.d(t, "u", (function() {
 				return b
 			})), i.d(t, "l", (function() {
 				return g
-			})), i.d(t, "u", (function() {
-				return w
 			})), i.d(t, "t", (function() {
-				return v
+				return w
 			})), i.d(t, "m", (function() {
-				return y
+				return v
 			})), i.d(t, "n", (function() {
-				return E
+				return y
 			})), i.d(t, "i", (function() {
-				return T
+				return E
 			})), i.d(t, "h", (function() {
-				return S
+				return T
 			})), i.d(t, "g", (function() {
-				return O
+				return S
 			})), i.d(t, "j", (function() {
-				return I
+				return O
 			}));
 			var n = i("./src/reddit/selectors/posts.ts");
 			const r = [],
@@ -35316,13 +35314,12 @@
 					const t = e.listings.activeKey;
 					return e.search.viewTreatment[t]
 				},
-				v = (e, t) => t ? e.search.relatedQueries[t.toLowerCase()] : r,
-				y = e => e.search.isDropdownOpen,
-				E = e => e.search.isSubredditSearchEnabled,
-				T = (e, t) => !!o(e, t) || !s(e, t) && c(e, t).length > 0,
-				S = (e, t) => !!a(e, t) || !d(e, t) && _(e, t).length > 0,
-				O = (e, t) => !!u(e, t) || !l(e, t) && p(e, t).length > 0,
-				I = (e, t) => !!((e, {
+				v = e => e.search.isDropdownOpen,
+				y = e => e.search.isSubredditSearchEnabled,
+				E = (e, t) => !!o(e, t) || !s(e, t) && c(e, t).length > 0,
+				T = (e, t) => !!a(e, t) || !d(e, t) && _(e, t).length > 0,
+				S = (e, t) => !!u(e, t) || !l(e, t) && p(e, t).length > 0,
+				O = (e, t) => !!((e, {
 					listingKey: t
 				}) => e.listings.postOrder.api.pending[t])(e, t) || Object(n.N)(e, t).length > 0
 		},
@@ -43062,4 +43059,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.deec51143655c8af9f6d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.4fef833615318d8a81fe.js.map

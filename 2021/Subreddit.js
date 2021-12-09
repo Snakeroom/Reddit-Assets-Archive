@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.5b7aca4af401c27fea87.js
-// Retrieved at 12/9/2021, 11:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.d614ed25808ca3b39bdf.js
+// Retrieved at 12/9/2021, 1:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~ModListing", "reddit-components-BlankPost", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, n) {
@@ -17062,7 +17062,7 @@
 						subredditName: t.match.params.subredditName
 					}))
 				},
-				onLoadMoreSearchResults: () => e(Object(w.p)([f.Zb.Posts])),
+				onLoadMoreSearchResults: () => e(Object(w.o)([f.Zb.Posts])),
 				refreshFeed: () => e(N.s({
 					sort: t.match.params.sort,
 					subredditName: t.match.params.subredditName
@@ -18789,4 +18789,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.5b7aca4af401c27fea87.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.d614ed25808ca3b39bdf.js.map

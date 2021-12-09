@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.59c3188a95ee6910c8b7.js
-// Retrieved at 12/9/2021, 12:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.22d386560cc132ffe5e8.js
+// Retrieved at 12/9/2021, 1:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -5717,7 +5717,7 @@
 							order: t
 						}
 					})(a.body.data.children);
-					n && n.data && n.order && t(Object(rr.q)({
+					n && n.data && n.order && t(Object(rr.p)({
 						typeaheadSuggestions: n.data,
 						order: n.order,
 						searchQuery: e
@@ -5873,7 +5873,7 @@
 						pageLayer: t
 					})),
 					W = Object(p.e)(_r.a),
-					V = Object(p.e)(Pr.v),
+					V = Object(p.e)(Pr.u),
 					Q = Object(p.e)(Ct.eb),
 					K = Object(nr.a)(H),
 					z = Object(nr.a)(n),
@@ -5898,11 +5898,11 @@
 							})
 						}
 					},
-					ee = e => S(Object(rr.r)({
+					ee = e => S(Object(rr.q)({
 						searchQuery: e
 					})),
-					te = () => S(Object(rr.l)()),
-					ne = () => S(Object(rr.n)()),
+					te = () => S(Object(rr.k)()),
+					ne = () => S(Object(rr.m)()),
 					se = (e, t) => {
 						e.preventDefault(), ((e, t, n, s) => {
 							S(Object(h.b)(Object(Jo.c)({
@@ -5942,11 +5942,11 @@
 							structureType: s,
 							searchQuery: n
 						};
-						_(Object(vr.q)(o, r))
+						_(Object(vr.p)(o, r))
 					}, de = (e, t, n) => {
-						_(Object(vr.s)(e, t, n))
+						_(Object(vr.r)(e, t, n))
 					}, le = (e, t, n, s) => {
-						_(Object(vr.u)(e, t, n, s))
+						_(Object(vr.t)(e, t, n, s))
 					}, ue = (e, t, s, o) => {
 						const r = {
 							displayQuery: s,
@@ -5954,7 +5954,7 @@
 							searchQuery: n,
 							structureType: t
 						};
-						_(Object(vr.r)(e, r))
+						_(Object(vr.q)(e, r))
 					}, me = e => {
 						const t = i[e] || null,
 							n = t ? t.searchQuery : "";
@@ -6031,7 +6031,7 @@
 							if (e.preventDefault(), 0 === i.length || !M) return;
 							if (-1 === r) return;
 							me(r - 1)
-						} else e.key === wo.b.Backspace && !x && G && F && (_(() => Object(vr.d)(H)), (() => S(Object(rr.k)()))())
+						} else e.key === wo.b.Backspace && !x && G && F && (_(() => Object(vr.d)(H)), (() => S(Object(rr.j)()))())
 					},
 					showCommunityPill: G,
 					subreddit: H,
@@ -6042,7 +6042,7 @@
 								ue(yt.b.Recent, yt.c.Recent, e.searchQuery)
 							}))
 						}
-						M || (() => S(Object(rr.m)()))()
+						M || (() => S(Object(rr.l)()))()
 					}
 				}), m.a.createElement(pr.c, {
 					container: j.current,
@@ -20761,4 +20761,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit~StandalonePostPage", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPos~93b34f9d", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Governance~ModListing~Reddit~Subreddit", "Chat~Governance~Reddit", 0, "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.59c3188a95ee6910c8b7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.22d386560cc132ffe5e8.js.map
