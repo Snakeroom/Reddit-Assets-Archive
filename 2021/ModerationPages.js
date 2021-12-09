@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.ff25f1c7ab9fcd0ba954.js
-// Retrieved at 12/8/2021, 2:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.a239290e70ef2dfe1091.js
+// Retrieved at 12/9/2021, 10:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -6445,6 +6445,9 @@
 					onClick: () => d(!u, "disableContributorRequests"),
 					label: U.fbt._("Accepting requests to join", null, {
 						hk: "1l1acS"
+					}),
+					subtext: U.fbt._("Display a button on your private subreddit that allows users to request to join. Users may still send your subreddit modmail whether this is on or off.", null, {
+						hk: "1bkLxN"
 					})
 				})), o.a.createElement(G.a, null, U.fbt._("Advanced Settings", null, {
 					hk: "1e5Esr"
@@ -25946,4 +25949,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.ff25f1c7ab9fcd0ba954.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.a239290e70ef2dfe1091.js.map
