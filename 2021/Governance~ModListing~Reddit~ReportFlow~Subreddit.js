@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.cbf500c41988d1df689b.js
-// Retrieved at 12/9/2021, 11:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.7897069d24955116d7e3.js
+// Retrieved at 12/9/2021, 5:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~ReportFlow~Subreddit"], {
 		"./src/lib/assertNever.ts": function(e, t, r) {
@@ -2783,7 +2783,7 @@
 				else {
 					const e = Y ? () => Object(ae.b)(a.gqlContext(), Object(ae.c)(k, t, V, !0), R) : () => Object(ae.a)(a.apiContext(), t, V);
 					ne = Object(O.i)(e, {
-						name: "fetchSubredditPage",
+						name: Y ? "fetchSubredditPageFromGql" : "fetchSubredditPage",
 						page: A,
 						isLoggedIn: R
 					})
@@ -10603,4 +10603,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.cbf500c41988d1df689b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.7897069d24955116d7e3.js.map
