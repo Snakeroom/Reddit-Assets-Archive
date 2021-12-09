@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index.60d8b0db5906d38af113.js
-// Retrieved at 12/9/2021, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index.ebd65204789f84fddf6a.js
+// Retrieved at 12/9/2021, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index"], {
 		"./src/reddit/components/Econ/Audio/MuteIcon.tsx": function(e, t, n) {
@@ -131,7 +131,7 @@
 					audioRoom: n
 				} = e, {
 					recordingStatus: u
-				} = n, [E, f] = Object(a.useState)(new Set), [h, O] = Object(a.useState)(new Set), x = Object(r.e)(l.X), [g, P] = Object(a.useState)(-1), I = e => {
+				} = n, [E, f] = Object(a.useState)(new Set), [h, O] = Object(a.useState)(new Set), g = Object(r.e)(l.X), [x, P] = Object(a.useState)(-1), I = e => {
 					const t = e ? Array.from(h) : Array.from(E);
 					return null == t ? void 0 : t.map((t, n) => {
 						return e ? i.a.createElement("div", {
@@ -146,9 +146,9 @@
 						})) : i.a.createElement("div", {
 							key: `audioPostAvatar--${t}`,
 							className: m.a.speaker
-						}, n === g && i.a.createElement(b.a, {
+						}, n === x && i.a.createElement(b.a, {
 							className: Object(s.a)(m.a.speakerRings, {
-								[m.a.nightMode]: x
+								[m.a.nightMode]: g
 							})
 						}), i.a.createElement("img", {
 							className: m.a.snoovatar,
@@ -156,7 +156,7 @@
 							alt: v._("Reddit Talk", null, {
 								hk: "XNl4V"
 							})
-						}), n !== g && i.a.createElement("div", {
+						}), n !== x && i.a.createElement("div", {
 							className: m.a.muteContainer
 						}, i.a.createElement(p.a, {
 							className: m.a.muteIcon
@@ -201,6 +201,7 @@
 					}, !n.isLive && u === d.a.Processing && i.a.createElement(c.a, {
 						kind: c.b.Button,
 						priority: c.c.Primary,
+						className: m.a.processingButton,
 						disabled: !0
 					}, v._("Creating Recording...", null, {
 						hk: "4gtXIC"
@@ -298,7 +299,7 @@
 		"./src/reddit/components/Econ/Prediction/TournamentPostBody/index.tsx": function(e, t, n) {
 			"use strict";
 			n.r(t), n.d(t, "TournamentPostBody", (function() {
-				return xe
+				return ge
 			}));
 			var o = n("./node_modules/react/index.js"),
 				a = n.n(o),
@@ -344,10 +345,10 @@
 				}))
 			};
 			var O = n("./src/reddit/components/Econ/Prediction/TournamentPostBody/v1/PredictionContainer/index.m.less"),
-				x = n.n(O);
+				g = n.n(O);
 
-			function g() {
-				return (g = Object.assign || function(e) {
+			function x() {
+				return (x = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var o in n) Object.prototype.hasOwnProperty.call(n, o) && (e[o] = n[o])
@@ -359,8 +360,8 @@
 				className: e,
 				...t
 			}) => {
-				return a.a.createElement("div", g({}, t, {
-					className: Object(c.a)(e, x.a.container),
+				return a.a.createElement("div", x({}, t, {
+					className: Object(c.a)(e, g.a.container),
 					onClick: e => {
 						e.stopPropagation()
 					}
@@ -429,8 +430,8 @@
 						id: f,
 						voteState: h
 					} = n,
-					[O, x] = a.a.useState(!1),
-					[g, P] = a.a.useState(null),
+					[O, g] = a.a.useState(!1),
+					[x, P] = a.a.useState(null),
 					[_, j] = a.a.useState(!1),
 					N = b < Date.now();
 				return {
@@ -438,7 +439,7 @@
 					isShowingVoteAnimation: _,
 					selectedOption: v.find(({
 						id: e
-					}) => e === g),
+					}) => e === x),
 					selectOption: e => {
 						N || E || P(e.id)
 					},
@@ -447,22 +448,22 @@
 						if (N) return l(X._("Error: Failed to make prediction. This prediction has already ended", null, {
 							hk: "22UWEr"
 						})), void P(null);
-						if (!m || !g) throw new Error("Invalid arguments, optionId and pollId must be strings");
-						x(!0), d(Object(V.o)({
+						if (!m || !x) throw new Error("Invalid arguments, optionId and pollId must be strings");
+						g(!0), d(Object(V.o)({
 							pollId: m,
 							selectedNumberTokens: t.amount
 						}));
 						try {
 							await o(Object(M.r)({
 								coinPackageId: t.id,
-								selectedOptionId: g,
+								selectedOptionId: x,
 								price: t.amount,
 								pollId: m,
 								tournamentId: e,
 								tournamentPostId: n.id
-							})), c && h < U.a.upvoted && (o(Object(F.db)(f)), o(Object(F.db)(m)), u()), x(!1), P(null), j(!0)
+							})), c && h < U.a.upvoted && (o(Object(F.db)(f)), o(Object(F.db)(m)), u()), g(!1), P(null), j(!0)
 						} catch (a) {
-							x(!1), P(null), l(X._("Error: Failed to make prediction, please try again later", null, {
+							g(!1), P(null), l(X._("Error: Failed to make prediction, please try again later", null, {
 								hk: "1tECsx"
 							}))
 						}
@@ -497,10 +498,10 @@
 						selectOption: f,
 						predict: h,
 						cancelAction: O,
-						hideAnimation: x
+						hideAnimation: g
 					} = z(t, e, r),
 					{
-						options: g,
+						options: x,
 						userSelection: P
 					} = u || {},
 					{
@@ -512,7 +513,7 @@
 					} = e,
 					M = w < Date.now(),
 					F = S === I.b.Cancelled || S === I.b.CancelInProgress,
-					R = null != g ? g : B;
+					R = null != x ? x : B;
 				return a.a.createElement(a.a.Fragment, null, a.a.createElement("div", {
 					className: Object(c.a)(J.a.poll, {
 						[J.a.nightMode]: l
@@ -523,7 +524,7 @@
 					endsAt: w,
 					key: `prediction-option-${e.id}`,
 					isShowingVoteAnimation: v && P === e.id,
-					onAnimationEnd: x
+					onAnimationEnd: g
 				}, a.a.createElement(N.a, {
 					disabled: v,
 					isCancelled: F,
@@ -848,10 +849,10 @@
 						postId: e.id
 					}))
 				},
-				xe = e => {
+				ge = e => {
 					return Object(i.e)(r.t) ? a.a.createElement(Oe, e) : a.a.createElement($, e)
 				};
-			t.default = xe
+			t.default = ge
 		},
 		"./src/reddit/components/Econ/Prediction/TournamentPostBody/v1/PredictionContainer/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -976,4 +977,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.60d8b0db5906d38af113.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.ebd65204789f84fddf6a.js.map
