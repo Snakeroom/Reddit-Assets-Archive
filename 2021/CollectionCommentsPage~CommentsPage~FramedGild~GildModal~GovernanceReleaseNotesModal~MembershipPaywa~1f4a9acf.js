@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~MembershipPaywa~1f4a9acf.8df263a7255c9b97fcee.js
-// Retrieved at 12/8/2021, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~MembershipPaywa~1f4a9acf.f2f9aa2fa6effbe97d50.js
+// Retrieved at 12/9/2021, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~MembershipPaywa~1f4a9acf"], {
 		"./src/lib/colors/constants.ts": function(e, t, s) {
@@ -1052,7 +1052,7 @@
 					return l.a.createElement(oe.a, {
 						className: fe.a.ctaLink,
 						onClick: e => i(e => ({
-							...Object(ae.defaults)(e),
+							...Object(ae.o)(e),
 							source: "videoplayer",
 							action: "click",
 							noun: "callToAction"
@@ -1885,4 +1885,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~MembershipPaywa~1f4a9acf.8df263a7255c9b97fcee.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~MembershipPaywa~1f4a9acf.f2f9aa2fa6effbe97d50.js.map

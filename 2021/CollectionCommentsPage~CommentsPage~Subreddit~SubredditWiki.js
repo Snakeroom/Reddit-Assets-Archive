@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.90c1b1f5763f202b59d3.js
-// Retrieved at 12/8/2021, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.8d47af6c475dca0e012f.js
+// Retrieved at 12/9/2021, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"], {
 		"./node_modules/lodash/random.js": function(e, t, r) {
@@ -1534,8 +1534,8 @@
 				B = r("./src/reddit/actions/economics/predictions/index.ts"),
 				M = r("./src/reddit/contexts/PageLayer/selectors.ts"),
 				D = r("./src/reddit/helpers/trackers/predictions.ts"),
-				W = r("./src/reddit/hooks/useTracking.ts"),
-				H = r("./src/reddit/selectors/features/predictions/tournaments/index.ts");
+				H = r("./src/reddit/hooks/useTracking.ts"),
+				W = r("./src/reddit/selectors/features/predictions/tournaments/index.ts");
 			const {
 				fbt: U
 			} = r("./node_modules/fbt/lib/FbtPublic.js");
@@ -1545,7 +1545,7 @@
 			}) {
 				const t = Object(i.d)(),
 					r = Object(T.a)(),
-					a = Object(W.a)(),
+					a = Object(H.a)(),
 					o = Object(M.N)(r),
 					[d, c] = Object(n.useState)(!1),
 					l = Object(i.e)(t => Object(P.R)(t, {
@@ -1554,10 +1554,10 @@
 					u = Object(i.e)(t => Object(P.L)(t, {
 						subredditId: e
 					})),
-					m = Object(i.e)(t => Object(H.d)(t, {
+					m = Object(i.e)(t => Object(W.d)(t, {
 						subredditId: e
 					})),
-					p = Object(i.e)(t => Object(H.c)(t, {
+					p = Object(i.e)(t => Object(W.c)(t, {
 						subredditId: e
 					}));
 				return Object(n.useEffect)(() => {
@@ -1580,12 +1580,12 @@
 					hk: "1o89m4"
 				}))) : null
 			}
-			var G = r("./src/lib/constants/index.ts");
+			var q = r("./src/lib/constants/index.ts");
 			const {
-				fbt: q
+				fbt: G
 			} = r("./node_modules/fbt/lib/FbtPublic.js");
 			const z = Object(d.u)(),
-				Y = [G.Mb.SUBREDDIT, G.Mb.COMMENTS, G.Mb.COLLECTION_COMMENTS],
+				Y = [q.Mb.SUBREDDIT, q.Mb.COMMENTS, q.Mb.COLLECTION_COMMENTS],
 				Z = Object(a.c)({
 					isMetaFilterEnabled: (e, t) => !!e.subreddits.appliedFilters.meta[t.subredditId],
 					isPostsRoute: (e, t) => !!t.pageLayer && !!t.pageLayer.meta && Y.indexOf(t.pageLayer.meta.name) > -1,
@@ -1612,7 +1612,7 @@
 						onClick: e => {
 							r && (e.preventDefault(), o())
 						}
-					}, q._("Posts", null, {
+					}, G._("Posts", null, {
 						hk: "36nXSp"
 					}))
 				}))),
@@ -1664,7 +1664,7 @@
 					homeUrl: t,
 					isTopBannerVariant: r,
 					pageLayer: n
-				} = e, i = !!n && !!n.meta && n.meta.name === G.Mb.SUBREDDIT_WIKI, a = `wiki/${ie.i}`, o = t.endsWith("/") ? t + a : `${t}/${a}`;
+				} = e, i = !!n && !!n.meta && n.meta.name === q.Mb.SUBREDDIT_WIKI, a = `wiki/${ie.i}`, o = t.endsWith("/") ? t + a : `${t}/${a}`;
 				return s.a.createElement(y, {
 					isActive: i,
 					isTopBannerVariant: r,
@@ -2189,11 +2189,11 @@
 				B = m.a.wrapped(o.a, "RawHTMLDisplay", L.a),
 				M = m.a.div("EventContainer", L.a),
 				D = m.a.div("EventTitle", L.a),
-				W = m.a.div("EventDate", L.a),
-				H = m.a.div("EventLocation", L.a),
+				H = m.a.div("EventDate", L.a),
+				W = m.a.div("EventLocation", L.a),
 				U = m.a.div("EventDescription", L.a),
 				V = m.a.wrapped(F.a, "ToggleDescription", L.a);
-			class G extends s.a.Component {
+			class q extends s.a.Component {
 				constructor(e) {
 					super(e), this.toggleDescriptionView = () => {
 						this.setState({
@@ -2215,7 +2215,7 @@
 					}))) : s.a.createElement(U, null, e.text)
 				}
 			}
-			var q = e => s.a.createElement(d.a, {
+			var G = e => s.a.createElement(d.a, {
 					styles: e.widget.styles,
 					title: e.widget.shortName,
 					truncateThreshold: e.truncateThreshold,
@@ -2224,7 +2224,7 @@
 					key: `${r}-${t.title}`
 				}, s.a.createElement(D, null, t.titleHtml ? s.a.createElement(B, {
 					html: t.titleHtml
-				}) : t.title), e.widget.configuration.showDate && t.startTime && s.a.createElement(W, null, s.a.createElement(P.a, {
+				}) : t.title), e.widget.configuration.showDate && t.startTime && s.a.createElement(H, null, s.a.createElement(P.a, {
 					seconds: t.startTime,
 					showDay: !0
 				}), !t.allDay && e.widget.configuration.showTime && s.a.createElement("span", null, " • ", (e => {
@@ -2232,9 +2232,9 @@
 						r = t.getHours(),
 						n = t.getMinutes();
 					return n < 10 ? `${r}:0${n}` : `${r}:${n}`
-				})(t.startTime), " ")), t.location && e.widget.configuration.showLocation && s.a.createElement(H, null, t.locationHtml ? s.a.createElement(B, {
+				})(t.startTime), " ")), t.location && e.widget.configuration.showLocation && s.a.createElement(W, null, t.locationHtml ? s.a.createElement(B, {
 					html: t.locationHtml
-				}) : t.location), t.description && e.widget.configuration.showDescription && s.a.createElement(G, {
+				}) : t.location), t.description && e.widget.configuration.showDescription && s.a.createElement(q, {
 					text: t.description
 				})))),
 				z = r("./src/reddit/components/TrackingHelper/index.tsx"),
@@ -2461,7 +2461,7 @@
 						case "community-list":
 							return Z;
 						case "calendar":
-							return q;
+							return G;
 						case "image":
 							return oe;
 						case "custom":
@@ -2546,19 +2546,19 @@
 			const i = "poll",
 				a = "predictions",
 				o = e => ({
-					...Object(s.defaults)(e),
+					...Object(s.o)(e),
 					source: i,
 					action: "select",
 					noun: "poll_option"
 				}),
 				d = e => ({
-					...Object(s.defaults)(e),
+					...Object(s.o)(e),
 					source: i,
 					action: "select",
 					noun: "prediction_option"
 				}),
 				c = e => ({
-					...Object(s.defaults)(e),
+					...Object(s.o)(e),
 					source: i,
 					action: "view",
 					noun: "predict_option_modal"
@@ -2568,11 +2568,11 @@
 					selectedNumberCoins: t,
 					totalStakeAmount: r
 				}) => n => ({
-					...Object(s.defaults)(n),
+					...Object(s.o)(n),
 					source: i,
 					action: "confirm",
 					noun: "predict",
-					poll: Object(s.poll)(n, e, !1, void 0, t),
+					poll: Object(s.H)(n, e, !1, void 0, t),
 					goldPurchase: {
 						numberCoins: r
 					}
@@ -2581,11 +2581,11 @@
 					pollId: e,
 					selectedNumberTokens: t
 				}) => r => ({
-					...Object(s.defaults)(r),
+					...Object(s.o)(r),
 					source: i,
 					action: "confirm",
 					noun: "predict",
-					poll: Object(s.poll)(r, e, !1, void 0, void 0, t)
+					poll: Object(s.H)(r, e, !1, void 0, void 0, t)
 				}),
 				m = ({
 					pollId: e,
@@ -2595,15 +2595,15 @@
 					const o = t === n.a.Coins ? r : void 0,
 						d = t === n.a.Tokens ? r : void 0;
 					return {
-						...Object(s.defaults)(a),
+						...Object(s.o)(a),
 						source: i,
 						action: "close",
 						noun: "prediction_modal",
-						poll: Object(s.poll)(a, e, !1, o, d)
+						poll: Object(s.H)(a, e, !1, o, d)
 					}
 				},
 				p = e => ({
-					...Object(s.defaults)(e),
+					...Object(s.o)(e),
 					source: i,
 					action: "click",
 					noun: "add_coins"
@@ -2611,7 +2611,7 @@
 				b = ({
 					targetUserId: e
 				}) => t => ({
-					...Object(s.defaults)(t),
+					...Object(s.o)(t),
 					source: a,
 					action: "click",
 					noun: "leaderboard_profile",
@@ -2623,16 +2623,16 @@
 					numberPredictionTokens: e,
 					pollId: t
 				}) => r => ({
-					...Object(s.defaults)(r),
+					...Object(s.o)(r),
 					source: i,
 					action: "view",
 					noun: "token_claim_modal",
-					poll: Object(s.poll)(r, t, !1, void 0, void 0, e)
+					poll: Object(s.H)(r, t, !1, void 0, void 0, e)
 				}),
 				g = ({
 					pageType: e
 				}) => t => ({
-					...Object(s.defaults)(t),
+					...Object(s.o)(t),
 					source: a,
 					action: "click",
 					noun: "tournament",
@@ -2641,7 +2641,7 @@
 					}
 				}),
 				f = () => e => ({
-					...Object(s.defaults)(e),
+					...Object(s.o)(e),
 					source: "global",
 					action: "view",
 					noun: "screen",
@@ -2650,19 +2650,19 @@
 					}
 				}),
 				x = () => e => ({
-					...Object(s.defaults)(e),
+					...Object(s.o)(e),
 					source: "mod_tool_predict",
 					action: "click",
 					noun: "end_tournament"
 				}),
 				v = () => e => ({
-					...Object(s.defaults)(e),
+					...Object(s.o)(e),
 					source: "mod_tool_predict",
 					action: "click",
 					noun: "rename_tournament"
 				}),
 				_ = e => t => ({
-					...Object(s.defaults)(t),
+					...Object(s.o)(t),
 					source: "mod_tool_predict",
 					action: "click",
 					noun: "enable_predictions",
@@ -2673,45 +2673,45 @@
 						value: e ? "1" : "0",
 						oldValue: e ? "0" : "1"
 					},
-					subreddit: Object(s.subreddit)(t)
+					subreddit: Object(s.hb)(t)
 				}),
 				w = () => e => ({
-					...Object(s.defaults)(e),
+					...Object(s.o)(e),
 					source: a,
 					action: "click",
 					noun: "next"
 				}),
 				y = () => e => ({
-					...Object(s.defaults)(e),
+					...Object(s.o)(e),
 					source: a,
 					action: "click",
 					noun: "add_more"
 				}),
 				k = () => e => ({
-					...Object(s.defaults)(e),
+					...Object(s.o)(e),
 					source: a,
 					action: "click",
 					noun: "start_tournament"
 				}),
 				O = () => e => ({
-					...Object(s.defaults)(e),
+					...Object(s.o)(e),
 					source: "menu_links_bar",
 					action: "click",
 					noun: "predictions_tab"
 				}),
 				j = () => e => ({
-					...Object(s.defaults)(e),
+					...Object(s.o)(e),
 					source: "predictions_tab",
 					action: "view",
 					noun: "predictions_how_it_works",
-					subreddit: Object(s.subreddit)(e)
+					subreddit: Object(s.hb)(e)
 				}),
 				E = () => e => ({
-					...Object(s.defaults)(e),
+					...Object(s.o)(e),
 					source: "predictions_how_it_works",
 					action: "click",
 					noun: "learn_more",
-					subreddit: Object(s.subreddit)(e)
+					subreddit: Object(s.hb)(e)
 				})
 		},
 		"./src/reddit/helpers/trackers/subredditWiki.ts": function(e, t, r) {
@@ -2756,9 +2756,9 @@
 			var n = r("./src/reddit/models/SubredditWikiPage/index.ts"),
 				s = r("./src/reddit/selectors/telemetry.ts");
 			const i = e => ({
-					...s.defaults(e),
-					subreddit: s.subreddit(e),
-					userSubreddit: s.userSubreddit(e)
+					...s.o(e),
+					subreddit: s.hb(e),
+					userSubreddit: s.qb(e)
 				}),
 				a = () => e => ({
 					source: "wiki",
@@ -2802,7 +2802,7 @@
 					source: "wiki",
 					action: "click",
 					noun: "hide_show_page",
-					actionInfo: s.actionInfo(t, {
+					actionInfo: s.d(t, {
 						settingValue: e ? "show" : "hide"
 					})
 				}),
@@ -2811,7 +2811,7 @@
 					source: "wiki",
 					action: "click",
 					noun: "editing_permissions",
-					actionInfo: s.actionInfo(t, {
+					actionInfo: s.d(t, {
 						settingValue: k[e]
 					})
 				})
@@ -2854,4 +2854,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.90c1b1f5763f202b59d3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.8d47af6c475dca0e012f.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.cbf68142defcb6bbee9e.js
-// Retrieved at 12/8/2021, 2:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.8f79fd933045c35ae267.js
+// Retrieved at 12/9/2021, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -586,7 +586,7 @@
 					}
 					return {
 						...s,
-						actionInfo: Object(a.previousPageActionInfo)(n, r)
+						actionInfo: Object(a.Q)(n, r)
 					}
 				})), m(r.target, r.currentTarget, l.anchorsAndButtons) && s(r)
 			};
@@ -2215,7 +2215,7 @@
 				N = Object(a.b)(() => Object(d.a)(_.G, y.db, (e, {
 					isSponsored: t,
 					postId: n
-				}) => t && n ? Object(_.b)(e, n) : null, E.a, C.actionInfo, _.H, (e, t, n, s, r, o) => ({
+				}) => t && n ? Object(_.b)(e, n) : null, E.a, C.d, _.H, (e, t, n, s, r, o) => ({
 					postPermalink: e,
 					shouldOpenPostInNewTab: t,
 					basePixelMetadata: n,
@@ -3798,7 +3798,7 @@
 						source: "post_flair_picker",
 						action: "click",
 						noun: e,
-						subreddit: Object(_.subredditById)(t, this.props.subredditId)
+						subreddit: Object(_.ib)(t, this.props.subredditId)
 					}));
 					const t = Object(C.c)(e.flairs);
 					this.state = {
@@ -4655,7 +4655,7 @@
 						}, E)
 					}, this.sendEvent = e => {
 						this.props.sendEvent(t => {
-							const n = h.defaults(t);
+							const n = h.o(t);
 							return {
 								source: "meta",
 								action: e,
@@ -4665,7 +4665,7 @@
 									...n.actionInfo,
 									reason: this.props.node.id
 								},
-								subreddit: h.subreddit(t)
+								subreddit: h.hb(t)
 							}
 						})
 					}
@@ -5498,8 +5498,8 @@
 								source: "layout_switch",
 								action: "click",
 								noun: s,
-								screen: Object(x.screen)(e),
-								subreddit: Object(x.subreddit)(e)
+								screen: Object(x.ab)(e),
+								subreddit: Object(x.hb)(e)
 							})))
 						})(s.layout),
 						i = () => e.toggleTooltip(d),
@@ -5771,7 +5771,7 @@
 						source: "meta",
 						action: "hover",
 						noun: "achieve_flair",
-						...a.defaults(i),
+						...a.o(i),
 						subreddit: {
 							id: t
 						},
@@ -5787,7 +5787,7 @@
 					source: "powerups",
 					action: "click",
 					noun: "view_your_achievements",
-					...a.defaults(e)
+					...a.o(e)
 				})
 		},
 		"./src/reddit/helpers/trackers/getRichTextSourceElement.ts": function(e, t, n) {
@@ -5837,15 +5837,15 @@
 				e.LINK = "link", e.DISCOVERY_UNIT = "discovery_unit"
 			}(r || (r = {}));
 			const u = e => ({
-					...m.defaults(e),
+					...m.o(e),
 					source: r.LINK,
 					action: o.c.CLICK,
 					noun: s.INTERNAL_LINK
 				}),
 				p = e => ({
-					...m.defaults(e),
+					...m.o(e),
 					source: r,
-					screen: m.screen(e),
+					screen: m.ab(e),
 					discoveryUnit: {
 						id: "xd_100",
 						name: s.SUBREDDIT_HOVERCARD,
@@ -5890,8 +5890,8 @@
 					if (!n || !Object(i.b)(n) && !Object(a.b)(n)) return {};
 					const s = Object(i.b)(n) ? n.belongsTo.id : n.subredditId;
 					return {
-						post: m.post(e, n.id),
-						subreddit: m.subredditById(e, s),
+						post: m.I(e, n.id),
+						subreddit: m.ib(e, s),
 						...h(e, t)
 					}
 				},
@@ -5904,44 +5904,44 @@
 					source: "global",
 					action: o.c.VIEW,
 					noun: s.SUBREDDIT_HOVERCARD,
-					subreddit: m.subredditByName(t, e),
-					screen: m.screen(t)
+					subreddit: m.jb(t, e),
+					screen: m.ab(t)
 				}),
 				g = (e, t) => n => ({
 					...p(n),
 					source: r.DISCOVERY_UNIT,
 					action: o.c.VIEW,
 					noun: s.ITEM_POST,
-					post: m.post(n, t),
-					subreddit: m.subredditByName(n, e),
-					screen: m.screen(n)
+					post: m.I(n, t),
+					subreddit: m.jb(n, e),
+					screen: m.ab(n)
 				}),
 				v = (e, t) => n => ({
 					...p(n),
 					source: r.DISCOVERY_UNIT,
 					action: o.c.CLICK,
 					noun: s.ITEM_POST,
-					post: m.post(n, t),
-					subreddit: m.subredditByName(n, e),
-					screen: m.screen(n)
+					post: m.I(n, t),
+					subreddit: m.jb(n, e),
+					screen: m.ab(n)
 				}),
 				E = e => t => ({
 					...p(t),
-					subreddit: m.subredditById(t, e) || null,
+					subreddit: m.ib(t, e) || null,
 					source: r.DISCOVERY_UNIT,
 					action: o.c.CLICK,
 					noun: s.HEADER_SUBREDDIT
 				}),
 				_ = e => t => ({
 					...p(t),
-					subreddit: m.subredditById(t, e) || null,
+					subreddit: m.ib(t, e) || null,
 					source: r.DISCOVERY_UNIT,
 					action: o.c.CLICK,
 					noun: s.HEADER_SUBREDDIT_SUBSCRIBE
 				}),
 				C = e => t => ({
 					...p(t),
-					subreddit: m.subredditById(t, e) || null,
+					subreddit: m.ib(t, e) || null,
 					source: r.DISCOVERY_UNIT,
 					action: o.c.CLICK,
 					noun: s.HEADER_SUBREDDIT_UNSUBSCRIBE
@@ -5970,37 +5970,37 @@
 					source: r.COMMUNITY_WIDGETS,
 					action: o.c.CLICK,
 					noun: s.SEE_MORE,
-					widget: Object(a.widget)(n, {
+					widget: Object(a.ub)(n, {
 						subredditId: e,
 						widgetKind: t
 					}),
-					...a.defaults
+					...a.o
 				}),
 				d = (e, t) => n => ({
 					source: r.POST,
 					action: o.c.CLICK,
 					noun: s.REREDDIT_PROMO,
-					post: a.post(n, e),
-					subreddit: a.subreddit(n),
+					post: a.I(n, e),
+					subreddit: a.hb(n),
 					...t && {
 						banner: {
 							buttonText: t,
 							id: s.REREDDIT_PROMO
 						}
 					},
-					...a.defaults(n)
+					...a.o(n)
 				}),
 				c = () => e => ({
 					source: r.SIDEBAR,
 					action: o.c.VIEW,
 					noun: s.TOPICS_WIDGET,
-					...a.defaults(e)
+					...a.o(e)
 				}),
 				l = e => t => ({
 					source: r.TOPICS_WIDGET,
 					action: o.c.CLICK,
 					noun: s.TOPIC,
-					...a.defaults(t),
+					...a.o(t),
 					topicMetadata: {
 						displayName: e
 					}
@@ -6318,7 +6318,7 @@
 						source: "bulk_mod_action",
 						action: "click",
 						noun: e,
-						screen: Object(g.screen)(t)
+						screen: Object(g.ab)(t)
 					}))
 				}
 				render() {
@@ -6697,4 +6697,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.cbf68142defcb6bbee9e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.8f79fd933045c35ae267.js.map

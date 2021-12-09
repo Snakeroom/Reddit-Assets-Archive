@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.659e2403ac99aa968ad9.js
-// Retrieved at 12/8/2021, 2:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.c990705e074139f1b729.js
+// Retrieved at 12/9/2021, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-MediumPost"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -1190,7 +1190,7 @@
 					}
 					return {
 						...s,
-						actionInfo: Object(i.previousPageActionInfo)(n, o)
+						actionInfo: Object(i.Q)(n, o)
 					}
 				})), u(o.target, o.currentTarget, l.anchorsAndButtons) && s(o)
 			};
@@ -2372,7 +2372,7 @@
 				}) => Object(b.i)(e, {
 					postId: t.id
 				}),
-				pageType: e => Object(x.actionInfo)(e).pageType
+				pageType: e => Object(x.d)(e).pageType
 			}));
 			class j extends o.a.Component {
 				constructor() {
@@ -3301,16 +3301,16 @@
 				r = n("./src/reddit/selectors/media.ts"),
 				i = n("./src/reddit/selectors/telemetry.ts");
 			const a = (e, t, n) => ({
-					gallery: i.gallery(e, t, n),
-					post: i.post(e, t),
-					...i.defaults(e)
+					gallery: i.s(e, t, n),
+					post: i.I(e, t),
+					...i.o(e)
 				}),
 				c = (e, t) => n => ({
 					...a(n, e, t),
 					action: s.c.VIEW,
 					noun: "media",
 					source: "gallery",
-					media: i.media(n, e)
+					media: i.B(n, e)
 				}),
 				d = (e, t) => n => {
 					const c = Object(o.a)(t),
@@ -3321,7 +3321,7 @@
 						noun: "outbound_url",
 						source: "gallery",
 						media: {
-							...i.media(n, e),
+							...i.B(n, e),
 							outboundUrl: t,
 							outboundDomain: c ? c.hostname : void 0
 						}
@@ -3553,4 +3553,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.659e2403ac99aa968ad9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.c990705e074139f1b729.js.map

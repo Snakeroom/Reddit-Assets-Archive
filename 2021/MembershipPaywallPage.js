@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MembershipPaywallPage.62919f368847754199e1.js
-// Retrieved at 12/6/2021, 1:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MembershipPaywallPage.b30366917062af0629b7.js
+// Retrieved at 12/9/2021, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MembershipPaywallPage"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -927,8 +927,8 @@
 									action: "click",
 									noun: "badge_gallery_paypal_purchase",
 									correlationId: this.props.correlationId,
-									...p.defaults(e),
-									subreddit: p.subreddit(e)
+									...p.o(e),
+									subreddit: p.hb(e)
 								}))
 							},
 							onSuccess: () => this.props.onPaymentSuccessful()
@@ -1735,12 +1735,12 @@
 							action: "change",
 							noun: "gif_tooltip_search",
 							correlationId: this.props.correlationId,
-							subreddit: this.props.subreddit.id ? k.subredditById(t, this.props.subreddit.id) : void 0,
-							post: k.currentPost(t),
+							subreddit: this.props.subreddit.id ? k.ib(t, this.props.subreddit.id) : void 0,
+							post: k.k(t),
 							search: {
 								query: e
 							},
-							...k.defaults(t)
+							...k.o(t)
 						})), this.setState({
 							loading: !1,
 							columns: [
@@ -1755,15 +1755,15 @@
 						e.scrollHeight - e.scrollTop === e.clientHeight && this.loadMoreResults()
 					}, 300), this.onResultClick = e => {
 						this.props.sendEvent(e => {
-							const t = k.defaults(e);
+							const t = k.o(e);
 							return {
 								...t,
 								source: "meta",
 								action: "select",
 								noun: "gif_tooltip_result",
 								correlationId: this.props.correlationId,
-								subreddit: this.props.subreddit.id ? k.subredditById(e, this.props.subreddit.id) : void 0,
-								post: k.currentPost(e),
+								subreddit: this.props.subreddit.id ? k.ib(e, this.props.subreddit.id) : void 0,
+								post: k.k(e),
 								actionInfo: {
 									...t.actionInfo,
 									reason: this.props.hasGifProduct ? "has-gif-product" : "gif-train"
@@ -4657,8 +4657,8 @@
 							action: "view",
 							noun: "landing_page_4_loyalty_badges",
 							correlationId: s,
-							...y.defaults(e),
-							subreddit: y.subreddit(e)
+							...y.o(e),
+							subreddit: y.hb(e)
 						})
 					}, n.a.createElement(Ne, {
 						showProgressBar: !0,
@@ -4677,8 +4677,8 @@
 							action: "view",
 							noun: "landing_page_5_achievement_badges",
 							correlationId: s,
-							...y.defaults(e),
-							subreddit: y.subreddit(e)
+							...y.o(e),
+							subreddit: y.hb(e)
 						})
 					}, n.a.createElement(Ne, {
 						className: Ae.a.section,
@@ -4696,8 +4696,8 @@
 							action: "view",
 							noun: "landing_page_6_style_badges",
 							correlationId: s,
-							...y.defaults(e),
-							subreddit: y.subreddit(e)
+							...y.o(e),
+							subreddit: y.hb(e)
 						})
 					}, n.a.createElement(ze, {
 						className: Ae.a.badges,
@@ -4709,8 +4709,8 @@
 							action: "view",
 							noun: "landing_page_7_premium_emojis",
 							correlationId: s,
-							...y.defaults(e),
-							subreddit: y.subreddit(e)
+							...y.o(e),
+							subreddit: y.hb(e)
 						})
 					}, n.a.createElement(je, {
 						subreddit: a,
@@ -4724,8 +4724,8 @@
 							action: "view",
 							noun: "landing_page_8_gifs_in_comments",
 							correlationId: s,
-							...y.defaults(e),
-							subreddit: y.subreddit(e)
+							...y.o(e),
+							subreddit: y.hb(e)
 						})
 					}, n.a.createElement(pe, {
 						emojisExpanded: this.state.emojisExpanded,
@@ -5075,13 +5075,13 @@
 										source: "meta",
 										action: "fail",
 										noun: "subscription_paypal_purchase",
-										...y.defaults(e),
+										...y.o(e),
 										actionInfo: {
 											reason: t,
 											paneName: s
 										},
 										correlationId: this.props.correlationId,
-										subreddit: y.subreddit(e)
+										subreddit: y.hb(e)
 									}
 								}))
 							},
@@ -5093,8 +5093,8 @@
 									action: "click",
 									noun: "subscription_paypal_purchase",
 									correlationId: this.props.correlationId,
-									...y.defaults(e),
-									subreddit: y.subreddit(e)
+									...y.o(e),
+									subreddit: y.hb(e)
 								}))
 							},
 							onSuccess: () => this.props.onPaymentSuccessful(this.props.isLoggedIn)
@@ -5371,8 +5371,8 @@
 						action: "view",
 						noun: "subscription_checkout_modal",
 						correlationId: e.correlationId,
-						...y.defaults(t),
-						subreddit: y.subreddit(t)
+						...y.o(t),
+						subreddit: y.hb(t)
 					}),
 					onPaymentComplete: e.onClose
 				}))
@@ -5909,8 +5909,8 @@
 						action: "view",
 						noun: "landing_page_2_testimonials",
 						correlationId: e.correlationId,
-						...y.defaults(t),
-						subreddit: y.subreddit(t)
+						...y.o(t),
+						subreddit: y.hb(t)
 					})
 				}, n.a.createElement(Rs, null)), s && n.a.createElement(b, {
 					fireOnce: !0,
@@ -5919,8 +5919,8 @@
 						action: "view",
 						noun: "landing_page_3_what_do_you_get",
 						correlationId: e.correlationId,
-						...y.defaults(t),
-						subreddit: y.subreddit(t)
+						...y.o(t),
+						subreddit: y.hb(t)
 					})
 				}, n.a.createElement(Qs, {
 					subreddit: e.subreddit
@@ -5940,8 +5940,8 @@
 						action: "view",
 						noun: "subscription_learn_more_page",
 						correlationId: this.correlationId,
-						...y.defaults(e),
-						subreddit: y.subreddit(e)
+						...y.o(e),
+						subreddit: y.hb(e)
 					}))
 				}
 				render() {
@@ -5961,8 +5961,8 @@
 							action: "view",
 							noun: "landing_page_1_intro",
 							correlationId: this.correlationId,
-							...y.defaults(e),
-							subreddit: y.subreddit(e)
+							...y.o(e),
+							subreddit: y.hb(e)
 						})
 					}, n.a.createElement(Os, {
 						correlationId: this.correlationId,
@@ -5982,8 +5982,8 @@
 							action: "view",
 							noun: "landing_page_10_community_thanks",
 							correlationId: this.correlationId,
-							...y.defaults(e),
-							subreddit: y.subreddit(e)
+							...y.o(e),
+							subreddit: y.hb(e)
 						})
 					}, n.a.createElement(Bs, {
 						className: ti.a.thanks,
@@ -5996,8 +5996,8 @@
 							action: "view",
 							noun: "landing_page_11_faq",
 							correlationId: this.correlationId,
-							...y.defaults(e),
-							subreddit: y.subreddit(e)
+							...y.o(e),
+							subreddit: y.hb(e)
 						})
 					}, n.a.createElement(Ke, {
 						className: ti.a.faq,
@@ -6009,8 +6009,8 @@
 							action: "view",
 							noun: "landing_page_12_footer",
 							correlationId: this.correlationId,
-							...y.defaults(e),
-							subreddit: y.subreddit(e)
+							...y.o(e),
+							subreddit: y.hb(e)
 						})
 					}, n.a.createElement(Qe, {
 						className: ti.a.footer,
@@ -6398,4 +6398,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MembershipPaywallPage.62919f368847754199e1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MembershipPaywallPage.b30366917062af0629b7.js.map

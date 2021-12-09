@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview.1fc21c0ebc1430db142e.js
-// Retrieved at 12/8/2021, 7:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview.3310227a34bb3310aa2c.js
+// Retrieved at 12/9/2021, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments~ProfileOverview", "reddit-components-ContentGate"], {
 		"./node_modules/linkify-it/index.js": function(e, t, n) {
@@ -1005,8 +1005,8 @@
 							source: "layout_switch",
 							action: "click",
 							noun: e,
-							screen: Object(y.screen)(t),
-							subreddit: Object(y.subreddit)(t)
+							screen: Object(y.ab)(t),
+							subreddit: Object(y.hb)(t)
 						})))
 					}, this.renderItem = (e, t) => {
 						const {
@@ -2263,7 +2263,7 @@
 						className: Object(l.a)(u.a.logIn),
 						onClick: () => {
 							n((() => e => ({
-								...Object(f.defaults)(e),
+								...Object(f.o)(e),
 								source: "xpromo",
 								action: "click",
 								noun: g
@@ -2275,7 +2275,7 @@
 						className: u.a.cancel,
 						onClick: () => {
 							n((() => e => ({
-								...Object(f.defaults)(e),
+								...Object(f.o)(e),
 								source: "xpromo",
 								action: "dismiss",
 								noun: g
@@ -2308,7 +2308,7 @@
 					const t = Object(h.b)();
 					a.a.useEffect(() => {
 						t((() => e => ({
-							...Object(f.defaults)(e),
+							...Object(f.o)(e),
 							source: "xpromo",
 							action: "view",
 							noun: g
@@ -2472,4 +2472,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview.1fc21c0ebc1430db142e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview.3310227a34bb3310aa2c.js.map

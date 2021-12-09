@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.af1c8336d027f9ccb1e8.js
-// Retrieved at 12/8/2021, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.718ff1754312366f97eb.js
+// Retrieved at 12/9/2021, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1254,7 +1254,7 @@
 				}) => Object(h.i)(e, {
 					postId: t.id
 				}),
-				pageType: e => Object(b.actionInfo)(e).pageType
+				pageType: e => Object(b.d)(e).pageType
 			}));
 			class O extends o.a.Component {
 				constructor() {
@@ -2076,10 +2076,10 @@
 				s = n("./src/reddit/helpers/correlationIdTracker.ts"),
 				i = n("./src/reddit/helpers/trackers/gild.ts");
 			const a = e => ({
-					...o.defaults(e),
-					screen: o.screen(e),
-					subreddit: o.subreddit(e),
-					userSubreddit: o.userSubreddit(e)
+					...o.o(e),
+					screen: o.ab(e),
+					subreddit: o.hb(e),
+					userSubreddit: o.qb(e)
 				}),
 				c = e => ({
 					awardId: e.id,
@@ -2173,8 +2173,8 @@
 					action: "click",
 					noun: n,
 					goldPurchase: c(e),
-					profile: o.profileById(r, t),
-					subreddit: o.subredditById(r, t)
+					profile: o.S(r, t),
+					subreddit: o.ib(r, t)
 				}),
 				b = (e, t) => h(e, t, "disable_in_community"),
 				v = (e, t) => h(e, t, "enable_in_community")
@@ -2260,20 +2260,20 @@
 					...t
 				}),
 				u = (e, t) => ({
-					...o.defaults(e),
-					comment: t ? o.comment(e, t) : void 0,
+					...o.o(e),
+					comment: t ? o.j(e, t) : void 0,
 					correlationId: Object(c.b)(e) || Object(i.e)(i.a.GildingFlow, !1),
-					post: t ? o.post(e, t) : void 0,
-					screen: o.screen(e),
-					subreddit: o.subreddit(e),
-					userSubreddit: o.userSubreddit(e)
+					post: t ? o.I(e, t) : void 0,
+					screen: o.ab(e),
+					subreddit: o.hb(e),
+					userSubreddit: o.qb(e)
 				}),
 				m = e => t => ({
 					...u(t, e),
 					source: Object(a.a)(e) ? "comment" : "post",
 					action: "click",
 					noun: "give_gold",
-					feed: o.feed(t)
+					feed: o.r(t)
 				}),
 				p = e => t => ({
 					...u(t, e),
@@ -2286,7 +2286,7 @@
 					source: Object(a.a)(e) ? "comment" : "post",
 					action: "click",
 					noun: "add_award",
-					feed: o.feed(t)
+					feed: o.r(t)
 				}),
 				h = (e, t) => n => ({
 					...u(n, t),
@@ -2490,12 +2490,12 @@
 						packageId: l
 					} = t, h = !!n, b = s.b(e), v = b ? Object(u.getAwardTypeFromAward)(b) : null, g = h ? v : a.o(e) ? d.GoldPurchaseType.Premium : d.GoldPurchaseType.Coins, _ = n ? Object(p.a)(n) ? "comment" : "post" : void 0, y = l || a.t(e), w = [...Object(i.d)(e), ...Object(i.f)(e)].filter(e => e.mobileId === y)[0], x = t.offerContext || (b && 0 === b.coinPrice ? o.a.StorefrontFreeAward : Object(o.d)(w, h)), O = w ? Math.round(1e4 * (w.baselinePennies - w.pennies) / w.baselinePennies) / 100 : 0, E = w ? Math.round(1e4 * (w.coins - w.baselineCoins) / w.coins) / 100 : 0, C = w ? w.baselinePennies !== w.pennies ? `${O}_percent_price` : w.baselineCoins !== w.coins ? `${E}_percent_bonus` : void 0 : void 0, k = g === d.GoldPurchaseType.Premium ? r.yb : w ? w.pennies : void 0;
 					return {
-						...c.defaults(e),
-						comment: n ? c.comment(e, n) : null,
+						...c.o(e),
+						comment: n ? c.j(e, n) : null,
 						correlationId: a.r(e) || Object(m.e)(m.a.GoldPayment, !1),
-						post: n ? c.post(e, n) : null,
-						screen: c.screen(e),
-						subreddit: n ? c.subreddit(e) : null,
+						post: n ? c.I(e, n) : null,
+						screen: c.ab(e),
+						subreddit: n ? c.hb(e) : null,
 						goldPurchase: {
 							...b ? Object(f.a)(b) : null,
 							type: g,
@@ -2652,7 +2652,7 @@
 						source: e,
 						action: "click",
 						noun: "edit_snoovatar",
-						...s.defaults(t)
+						...s.o(t)
 					};
 					return Object(o.a)(t) && Object.assign(n, a), n
 				},
@@ -2666,49 +2666,49 @@
 						source: e,
 						action: "click",
 						noun: "copy_avatar",
-						...s.defaults(n),
+						...s.o(n),
 						snoovatar: {
 							userGenerated: r
 						}
 					}
 				},
 				l = e => ({
-					...s.defaults(e),
+					...s.o(e),
 					source: "avatar",
 					action: "click",
 					noun: "try_this_look_post",
-					snoovatar: s.snoovatarActiveForBuilderEvent(e)
+					snoovatar: s.fb(e)
 				}),
 				u = e => ({
-					...s.defaults(e),
+					...s.o(e),
 					source: "global",
 					action: "view",
 					noun: "screen",
 					actionInfo: {
 						pageType: "snoovatar_builder"
 					},
-					snoovatar: s.snoovatarActiveForBuilderEvent(e)
+					snoovatar: s.fb(e)
 				}),
 				m = e => ({
-					...s.defaults(e),
+					...s.o(e),
 					source: "avatar_builder",
 					action: "click",
 					noun: "close",
-					snoovatar: s.snoovatarActiveForBuilderEvent(e)
+					snoovatar: s.fb(e)
 				}),
 				p = e => ({
 					source: "nav",
 					action: "view",
 					noun: "avatar_marketing",
-					...s.defaults(e),
+					...s.o(e),
 					...a
 				}),
 				f = e => t => n => ({
 					source: "avatar",
 					action: e,
 					noun: "community_spaces",
-					...s.defaults(n),
-					snoovatar: s.snoovatarActiveForBuilderEvent(n),
+					...s.o(n),
+					snoovatar: s.fb(n),
 					actionInfo: {
 						paneName: "avatar_community_spaces" + (t ? "_control" : "")
 					}
@@ -2720,14 +2720,14 @@
 					source: e,
 					action: t,
 					noun: n,
-					...s.defaults(r),
-					snoovatar: s.snoovatarActiveForBuilderEvent(r)
+					...s.o(r),
+					snoovatar: s.fb(r)
 				}),
 				_ = g("anniversary_achievement", "view", "anniversary_achievement"),
 				y = g("anniversary_achievement", "click", "close"),
 				w = g("anniversary_achievement", "click", "equip"),
 				x = e => () => t => ({
-					...s.defaults(t),
+					...s.o(t),
 					source: "gold_top_nav",
 					action: e,
 					noun: "quick_create_cta"
@@ -2738,11 +2738,11 @@
 					source: e,
 					action: t,
 					noun: n,
-					...s.defaults(r),
+					...s.o(r),
 					actionInfo: {
 						pageType: "onboarding"
 					},
-					snoovatar: s.snoovatarActiveForBuilderEvent(r)
+					snoovatar: s.fb(r)
 				}),
 				k = e => C("onboarding", "click", e),
 				I = () => C("avatar", "view", "onboarding")
@@ -3808,4 +3808,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.af1c8336d027f9ccb1e8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.718ff1754312366f97eb.js.map

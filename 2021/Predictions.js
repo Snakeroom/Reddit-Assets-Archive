@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Predictions.b6e65b67a2e259f0ebf8.js
-// Retrieved at 12/1/2021, 12:30:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Predictions.e8e0e211feeea47027e0.js
+// Retrieved at 12/9/2021, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Predictions"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, a) {
@@ -820,7 +820,7 @@
 			}));
 			var n = a("./src/reddit/selectors/telemetry.ts");
 			const r = () => e => ({
-					...n.defaults(e),
+					...n.o(e),
 					source: "global",
 					action: "view",
 					noun: "screen",
@@ -829,13 +829,13 @@
 					}
 				}),
 				s = () => e => ({
-					...n.defaults(e),
+					...n.o(e),
 					source: "powerups_landing_page",
 					action: "click",
 					noun: "open_signup_modal"
 				}),
 				o = e => t => ({
-					...n.defaults(t),
+					...n.o(t),
 					source: "powerups_signup_form",
 					action: "click",
 					noun: "turn_on_powerups",
@@ -844,7 +844,7 @@
 					}
 				}),
 				l = () => e => ({
-					...n.defaults(e),
+					...n.o(e),
 					source: "powerups_landing_page",
 					action: "click",
 					noun: "community"
@@ -1721,7 +1721,7 @@
 					if (!e) {
 						const e = () => {
 							r((() => e => ({
-								...Object(g.defaults)(e),
+								...Object(g.o)(e),
 								source: "start_predictions_modal",
 								action: "click",
 								noun: "close"
@@ -1742,7 +1742,7 @@
 								subredditUrl: e
 							}) => t === e);
 							e && r((e => t => ({
-								...Object(g.defaults)(t),
+								...Object(g.o)(t),
 								source: "start_predictions_modal",
 								action: "click",
 								noun: "create_predictions_tournament",
@@ -1799,7 +1799,7 @@
 						[l, i] = Object(r.useState)(n && (null === (t = n[0]) || void 0 === t ? void 0 : t.subredditUrl) || "");
 					Object(r.useEffect)(() => {
 						a((() => e => ({
-							...Object(g.defaults)(e),
+							...Object(g.o)(e),
 							source: "predictions_marketing_page",
 							action: "view",
 							noun: "start_predictions_modal"
@@ -1880,7 +1880,7 @@
 					a = Object(W.a)(),
 					r = () => {
 						e((() => e => ({
-							...Object(g.defaults)(e),
+							...Object(g.o)(e),
 							source: "predictions_marketing_page",
 							action: "click",
 							noun: "community"
@@ -2010,7 +2010,7 @@
 						href: "https://mods.reddithelp.com/hc/en-us/articles/4409834282509",
 						onClick: () => {
 							e((() => e => ({
-								...Object(g.defaults)(e),
+								...Object(g.o)(e),
 								source: "predictions_marketing_page",
 								action: "click",
 								noun: "view_full_faqs"
@@ -2094,8 +2094,8 @@
 						source: "global",
 						action: "view",
 						noun: "screen",
-						...Object(g.defaults)(e),
-						actionInfo: Object(g.actionInfo)(e, {
+						...Object(g.o)(e),
+						actionInfo: Object(g.d)(e, {
 							pageType: "predictions_marketing_page"
 						})
 					}))())
@@ -2143,7 +2143,7 @@
 				})), s.a.createElement(f.k, {
 					onClick: () => {
 						e((() => e => ({
-							...Object(g.defaults)(e),
+							...Object(g.o)(e),
 							source: "predictions_marketing_page",
 							action: "click",
 							noun: "start_predictions_modal"
@@ -2231,7 +2231,7 @@
 				})), s.a.createElement(f.k, {
 					onClick: () => {
 						e((() => e => ({
-							...Object(g.defaults)(e),
+							...Object(g.o)(e),
 							source: "predictions_marketing_page",
 							action: "click",
 							noun: "lets_do_this"
@@ -2304,4 +2304,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Predictions.b6e65b67a2e259f0ebf8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Predictions.e8e0e211feeea47027e0.js.map

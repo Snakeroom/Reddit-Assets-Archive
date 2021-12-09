@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork.b9af8c5cc8fe15c8ca17.js
-// Retrieved at 12/8/2021, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork.81414610f554badb6f83.js
+// Retrieved at 12/9/2021, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["LiveVideoPlayer~PublicAccessNetwork"], {
 		"./src/lib/VideoSession/VideoSessionManager.ts": function(e, t, s) {
@@ -1276,8 +1276,8 @@
 				j = s("./src/reddit/icons/svgs/Plus/index.tsx"),
 				T = s("./src/reddit/icons/svgs/Remove/index.tsx"),
 				L = s("./src/reddit/icons/svgs/Report/index.tsx"),
-				D = s("./src/reddit/icons/svgs/Rules/index.tsx"),
-				R = s("./src/reddit/icons/svgs/Unlock/index.tsx"),
+				R = s("./src/reddit/icons/svgs/Rules/index.tsx"),
+				D = s("./src/reddit/icons/svgs/Unlock/index.tsx"),
 				A = s("./src/reddit/icons/svgs/Video/index.tsx"),
 				P = s("./src/reddit/models/Vote/index.ts"),
 				M = s("./src/reddit/selectors/experiments/shareToChatButton.ts"),
@@ -1472,7 +1472,7 @@
 				iconWrapperClassName: H.a.overflowItemIconWrapper,
 				key: `${ae}-rules`,
 				onClick: () => Object(c.e)(l.S, c.d.BLANK)
-			}, a.a.createElement(D.a, {
+			}, a.a.createElement(R.a, {
 				className: H.a.overflowItemIcon
 			})), a.a.createElement(f.b, {
 				className: H.a.overflowItem,
@@ -1551,7 +1551,7 @@
 				iconWrapperClassName: H.a.overflowItemIconWrapper,
 				key: `${ae}-lock`,
 				onClick: r
-			}, n ? a.a.createElement(R.a, {
+			}, n ? a.a.createElement(D.a, {
 				className: H.a.overflowItemIcon
 			}) : a.a.createElement(C.a, {
 				className: H.a.overflowItemIcon
@@ -1980,9 +1980,9 @@
 			})), s.d(t, "k", (function() {
 				return L
 			})), s.d(t, "b", (function() {
-				return D
-			})), s.d(t, "d", (function() {
 				return R
+			})), s.d(t, "d", (function() {
+				return D
 			})), s.d(t, "e", (function() {
 				return A
 			})), s.d(t, "w", (function() {
@@ -2008,9 +2008,9 @@
 			}(r || (r = {}));
 			const i = (e, t) => {
 					if (t) {
-						const s = o.media(e, t.post.id),
-							r = o.post(e, t.post.id),
-							a = o.subreddit(e);
+						const s = o.B(e, t.post.id),
+							r = o.I(e, t.post.id),
+							a = o.hb(e);
 						if (t.post.authorInfo && r && (r.authorId = t.post.authorInfo.id), s) {
 							s.streamPublicId = t.stream.stream_id, s.id = t.stream.stream_id;
 							const r = Object(n.j)(e, {
@@ -2025,7 +2025,7 @@
 						}
 					}
 					return {
-						subreddit: o.subreddit(e)
+						subreddit: o.hb(e)
 					}
 				},
 				c = (e, t, s) => {
@@ -2070,7 +2070,7 @@
 					action: "click",
 					noun: "enlarge",
 					...i(s, e),
-					actionInfo: o.actionInfo(s, {
+					actionInfo: o.d(s, {
 						position: t || 0
 					})
 				}),
@@ -2123,7 +2123,7 @@
 					playback: c(a, t, s),
 					...d(a),
 					...i(a, t),
-					actionInfo: o.actionInfo(a, {
+					actionInfo: o.d(a, {
 						referralId: r
 					})
 				}),
@@ -2203,8 +2203,8 @@
 					source: "post",
 					action: "view",
 					noun: "post",
-					profile: o.profile(t),
-					screen: o.screen(t),
+					profile: o.R(t),
+					screen: o.ab(t),
 					...i(t, e)
 				}),
 				C = e => t => {
@@ -2213,8 +2213,8 @@
 						source: "post",
 						action: "consume",
 						noun: "post",
-						profile: o.profile(t),
-						screen: o.screen(t),
+						profile: o.R(t),
+						screen: o.ab(t),
 						...s
 					}
 				},
@@ -2235,16 +2235,16 @@
 					action: "click",
 					noun: "subscribe",
 					...i(t, e),
-					targetSubreddit: o.subreddit(t)
+					targetSubreddit: o.hb(t)
 				}),
-				D = (e, t) => s => ({
+				R = (e, t) => s => ({
 					source: "stream_player",
 					action: "click",
 					noun: "close",
 					playback: c(s, e, t),
 					...i(s, e)
 				}),
-				R = (e, t) => s => ({
+				D = (e, t) => s => ({
 					source: "stream_player",
 					action: "click",
 					noun: "pause",
@@ -2362,9 +2362,9 @@
 			})), s.d(t, "d", (function() {
 				return L
 			})), s.d(t, "h", (function() {
-				return D
-			})), s.d(t, "k", (function() {
 				return R
+			})), s.d(t, "k", (function() {
+				return D
 			})), s.d(t, "c", (function() {
 				return A
 			})), s.d(t, "f", (function() {
@@ -2520,8 +2520,8 @@
 					if (e > 0) return t[e - 1]
 				}),
 				L = Object(a.a)(Object(r.a)(C, I, (e, t) => e ? t[e] : void 0)),
-				D = Object(a.a)(Object(r.a)(j, I, (e, t) => e ? t[e] : void 0)),
-				R = Object(a.a)(Object(r.a)(T, I, (e, t) => e ? t[e] : void 0)),
+				R = Object(a.a)(Object(r.a)(j, I, (e, t) => e ? t[e] : void 0)),
+				D = Object(a.a)(Object(r.a)(T, I, (e, t) => e ? t[e] : void 0)),
 				A = (Object(a.a)(Object(r.a)(e => e.publicAccessNetwork.preloads.discoveryUnitThumbnails, I, (e, t) => Object.keys(e).filter(e => !!t[e]).map(s => ({
 					...t[s],
 					preloadedPreviewUrl: e[s]
@@ -2594,4 +2594,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork.b9af8c5cc8fe15c8ca17.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork.81414610f554badb6f83.js.map

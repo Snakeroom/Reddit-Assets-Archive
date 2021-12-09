@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.8d48d3a4899438d8badd.js
-// Retrieved at 12/8/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.3245e3c59d1a17c6d33b.js
+// Retrieved at 12/9/2021, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -3646,11 +3646,11 @@
 			var o = s("./src/reddit/constants/tracking.ts"),
 				n = s("./src/reddit/selectors/telemetry.ts");
 			const r = () => e => ({
-				...Object(n.defaults)(e),
+				...Object(n.o)(e),
 				source: "post",
 				action: o.c.CLICK,
 				noun: "share_chat",
-				subreddit: Object(n.subreddit)(e)
+				subreddit: Object(n.hb)(e)
 			})
 		},
 		"./src/reddit/icons/fonts/Gift/index.tsx": function(e, t, s) {
@@ -4017,9 +4017,9 @@
 							source: e,
 							action: "click",
 							noun: o,
-							post: s && Object(ge.post)(n, s),
-							screen: Object(ge.screen)(n),
-							subreddit: Object(ge.subredditById)(n, t)
+							post: s && Object(ge.I)(n, s),
+							screen: Object(ge.ab)(n),
+							subreddit: Object(ge.ib)(n, t)
 						})))("removal_reasons", this.props.subredditId, this.props.postId)
 					})
 				}
@@ -6570,4 +6570,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.8d48d3a4899438d8badd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.3245e3c59d1a17c6d33b.js.map

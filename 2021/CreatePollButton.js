@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CreatePollButton.0b3d482806b446d1b777.js
-// Retrieved at 12/6/2021, 6:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CreatePollButton.00af4d89eb7d06b8188a.js
+// Retrieved at 12/9/2021, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CreatePollButton"], {
 		"./src/reddit/components/ConfirmUserActionModal/index.m.less": function(e, a, t) {
@@ -11,9 +11,9 @@
 		},
 		"./src/reddit/components/ConfirmUserActionModal/index.tsx": function(e, a, t) {
 			"use strict";
-			var s = t("./node_modules/fbt/lib/FbtPublic.js"),
-				o = t("./node_modules/react/index.js"),
-				n = t.n(o),
+			var o = t("./node_modules/fbt/lib/FbtPublic.js"),
+				s = t("./node_modules/react/index.js"),
+				n = t.n(s),
 				r = t("./src/higherOrderComponents/asModal/index.tsx"),
 				i = t("./src/reddit/components/ModalStyledComponents/index.tsx"),
 				l = t("./src/reddit/controls/TextButton/index.tsx"),
@@ -21,7 +21,7 @@
 				d = t("./src/reddit/components/ConfirmUserActionModal/index.m.less"),
 				m = t.n(d);
 			const u = e => e.preventDefault();
-			a.a = Object(r.a)(e => n.a.createElement(i.e, null, n.a.createElement(i.i, null, n.a.createElement(c.a, null, n.a.createElement(i.q, null, e.headerText || s.fbt._("Confirm", null, {
+			a.a = Object(r.a)(e => n.a.createElement(i.e, null, n.a.createElement(i.i, null, n.a.createElement(c.a, null, n.a.createElement(i.q, null, e.headerText || o.fbt._("Confirm", null, {
 				hk: "2zlvKa"
 			})), n.a.createElement(l.a, {
 				onClick: () => {
@@ -36,7 +36,7 @@
 					e.onCancel && e.onCancel(), e.toggleModal && e.toggleModal()
 				},
 				"data-redditstyle": !e.disableRedditStyle
-			}, e.cancelActionText || s.fbt._("Cancel", null, {
+			}, e.cancelActionText || o.fbt._("Cancel", null, {
 				hk: "2TSLl5"
 			})), n.a.createElement(i.u, {
 				className: m.a.buttonWidth,
@@ -51,9 +51,9 @@
 		"./src/reddit/components/IdCard/CreatePollButton/index.tsx": function(e, a, t) {
 			"use strict";
 			t.r(a);
-			var s = t("./node_modules/fbt/lib/FbtPublic.js"),
-				o = t("./node_modules/react/index.js"),
-				n = t.n(o),
+			var o = t("./node_modules/fbt/lib/FbtPublic.js"),
+				s = t("./node_modules/react/index.js"),
+				n = t.n(s),
 				r = t("./src/lib/opener/index.ts"),
 				i = t("./src/reddit/components/ConfirmUserActionModal/index.tsx"),
 				l = t("./src/reddit/components/TrackingHelper/index.tsx"),
@@ -82,7 +82,7 @@
 							source: "id_card",
 							action: "click",
 							noun: "create_poll",
-							...m.defaults(e)
+							...m.o(e)
 						}))
 					}
 				}
@@ -90,16 +90,16 @@
 					return this.state.isDismissed || !h.includes(this.props.listingName.toLowerCase()) ? null : n.a.createElement(n.a.Fragment, null, n.a.createElement(c.l, {
 						className: p.a.CreatePostButton,
 						onClick: this.onCreatePostButtonClick
-					}, s.fbt._("Submit a poll", null, {
+					}, o.fbt._("Submit a poll", null, {
 						hk: "1N5qAj"
 					})), this.state.isModalOpen && n.a.createElement(i.a, {
-						actionText: s.fbt._("Sure", null, {
+						actionText: o.fbt._("Sure", null, {
 							hk: "1vHfdf"
 						}),
-						cancelActionText: s.fbt._("No, thanks", null, {
+						cancelActionText: o.fbt._("No, thanks", null, {
 							hk: "20SZOo"
 						}),
-						headerText: s.fbt._("Polls are not ready yet", null, {
+						headerText: o.fbt._("Polls are not ready yet", null, {
 							hk: "3X3tQn"
 						}),
 						modalText: n.a.createElement(n.a.Fragment, null, "Sorry, Polls are not ready yet. We are working hard on it and are excited to share them with you.", n.a.createElement("br", null), n.a.createElement("br", null), "Do you have a few minutes to answer a couple of questions and help us make the new Polls post type even better?"),
@@ -113,4 +113,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CreatePollButton.0b3d482806b446d1b777.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CreatePollButton.00af4d89eb7d06b8188a.js.map

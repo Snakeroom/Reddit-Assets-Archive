@@ -1,34 +1,34 @@
-// https://www.redditstatic.com/desktop2x/givePremiumTrackers.b1d60afb3de96bb66b7b.js
-// Retrieved at 12/6/2021, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/givePremiumTrackers.08e41dde6a34d32f9746.js
+// Retrieved at 12/9/2021, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["givePremiumTrackers"], {
-		"./src/reddit/helpers/trackers/givePremium.ts": function(e, n, r) {
+		"./src/reddit/helpers/trackers/givePremium.ts": function(e, n, i) {
 			"use strict";
-			r.r(n), r.d(n, "clickGivePremiumEvent", (function() {
+			i.r(n), i.d(n, "clickGivePremiumEvent", (function() {
 				return o
-			})), r.d(n, "viewGivePremiumModalEvent", (function() {
+			})), i.d(n, "viewGivePremiumModalEvent", (function() {
 				return s
-			})), r.d(n, "selectPremiumPackageEvent", (function() {
+			})), i.d(n, "selectPremiumPackageEvent", (function() {
 				return m
-			})), r.d(n, "triggerAnonymousEvent", (function() {
-				return d
-			})), r.d(n, "clickMessageInputEvent", (function() {
+			})), i.d(n, "triggerAnonymousEvent", (function() {
 				return a
-			})), r.d(n, "typeMessageInputEvent", (function() {
+			})), i.d(n, "clickMessageInputEvent", (function() {
+				return d
+			})), i.d(n, "typeMessageInputEvent", (function() {
 				return l
-			})), r.d(n, "clickConfirmEvent", (function() {
+			})), i.d(n, "clickConfirmEvent", (function() {
 				return v
-			})), r.d(n, "clickCloseModalEvent", (function() {
+			})), i.d(n, "clickCloseModalEvent", (function() {
 				return _
 			}));
-			var i = r("./src/reddit/selectors/telemetry.ts"),
-				t = r("./src/reddit/helpers/correlationIdTracker.ts"),
-				c = r("./src/reddit/selectors/gild.ts");
+			var r = i("./src/reddit/selectors/telemetry.ts"),
+				t = i("./src/reddit/helpers/correlationIdTracker.ts"),
+				c = i("./src/reddit/selectors/gild.ts");
 			const u = e => ({
-					...i.defaults(e),
+					...r.o(e),
 					correlationId: Object(c.b)(e) || Object(t.e)(t.a.GiftPremiumFlow, !1),
-					screen: i.screen(e),
-					subreddit: i.subreddit(e)
+					screen: r.ab(e),
+					subreddit: r.hb(e)
 				}),
 				o = () => e => ({
 					...u(e),
@@ -48,13 +48,13 @@
 					action: "select",
 					noun: `premium_${e.monthsOfPremium}`
 				}),
-				d = e => n => ({
+				a = e => n => ({
 					...u(n),
 					source: "give_premium",
 					action: e,
 					noun: "anonymous"
 				}),
-				a = () => e => ({
+				d = () => e => ({
 					...u(e),
 					source: "give_premium",
 					action: "click",
@@ -81,4 +81,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/givePremiumTrackers.b1d60afb3de96bb66b7b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/givePremiumTrackers.08e41dde6a34d32f9746.js.map

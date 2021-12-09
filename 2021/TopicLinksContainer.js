@@ -1,8 +1,8 @@
-// https://www.redditstatic.com/desktop2x/TopicLinksContainer.c3ab81c3f049e8328c73.js
-// Retrieved at 12/6/2021, 1:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/TopicLinksContainer.b4ffc2121340ea6a24e6.js
+// Retrieved at 12/9/2021, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["TopicLinksContainer"], {
-		"./src/reddit/components/IdCard/TopicLinksContainer/index.m.less": function(e, t, s) {
+		"./src/reddit/components/IdCard/TopicLinksContainer/index.m.less": function(e, t, n) {
 			e.exports = {
 				TagIcon: "_2JU2WQDzn5pAlpxqChbxr7",
 				tagIcon: "_2JU2WQDzn5pAlpxqChbxr7",
@@ -18,24 +18,24 @@
 				topicLink: "_5MIPBF8A9vXwwXFumpGqY"
 			}
 		},
-		"./src/reddit/components/IdCard/TopicLinksContainer/index.tsx": function(e, t, s) {
+		"./src/reddit/components/IdCard/TopicLinksContainer/index.tsx": function(e, t, n) {
 			"use strict";
-			s.r(t);
-			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
-				i = s("./node_modules/react/index.js"),
-				c = s.n(i),
-				a = s("./node_modules/react-redux/es/index.js"),
-				r = s("./node_modules/reselect/es/index.js"),
-				o = s("./src/reddit/components/TrackingHelper/index.tsx"),
-				d = s("./src/reddit/controls/Button/index.tsx"),
-				l = s("./src/reddit/constants/tracking.ts"),
-				p = s("./src/reddit/selectors/telemetry.ts");
-			var m = s("./src/reddit/icons/svgs/Tag/index.tsx"),
-				_ = s("./src/reddit/selectors/seo/topicLinks.ts"),
-				u = s("./src/reddit/selectors/subreddit.ts"),
-				L = s("./src/reddit/components/IdCard/TopicLinksContainer/index.m.less"),
-				C = s.n(L);
-			const x = Object(r.c)({
+			n.r(t);
+			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
+				i = n("./node_modules/react/index.js"),
+				c = n.n(i),
+				a = n("./node_modules/react-redux/es/index.js"),
+				o = n("./node_modules/reselect/es/index.js"),
+				r = n("./src/reddit/components/TrackingHelper/index.tsx"),
+				d = n("./src/reddit/controls/Button/index.tsx"),
+				l = n("./src/reddit/constants/tracking.ts"),
+				p = n("./src/reddit/selectors/telemetry.ts");
+			var m = n("./src/reddit/icons/svgs/Tag/index.tsx"),
+				_ = n("./src/reddit/selectors/seo/topicLinks.ts"),
+				u = n("./src/reddit/selectors/subreddit.ts"),
+				L = n("./src/reddit/components/IdCard/TopicLinksContainer/index.m.less"),
+				C = n.n(L);
+			const x = Object(o.c)({
 					subreddit: u.R,
 					topicLinks: _.a
 				}),
@@ -44,9 +44,9 @@
 					topicName: e,
 					slug: t
 				}) => {
-					const s = Object(o.b)(),
-						n = Object(i.useCallback)(() => s((e => t => ({
-							...p.defaults(t),
+					const n = Object(r.b)(),
+						s = Object(i.useCallback)(() => n((e => t => ({
+							...p.o(t),
 							action: l.c.CLICK,
 							noun: "link",
 							source: "subreddit_topic_link",
@@ -54,13 +54,13 @@
 								id: "link",
 								buttonText: e
 							}
-						}))(e)), [s, e]);
+						}))(e)), [n, e]);
 					return c.a.createElement("li", {
 						className: C.a.TopicLiElement
 					}, c.a.createElement(d.t, {
 						className: C.a.TopicLink,
 						kind: d.b.InternalLink,
-						onClick: n,
+						onClick: s,
 						to: `/t/${t}/`
 					}, e))
 				};
@@ -74,7 +74,7 @@
 			}, c.a.createElement(m.a, {
 				className: C.a.TagIcon,
 				key: "tag"
-			}), `${e.displayText} ${n.fbt._("topics",null,{hk:"2BYU7m"})}`), c.a.createElement("div", {
+			}), `${e.displayText} ${s.fbt._("topics",null,{hk:"2BYU7m"})}`), c.a.createElement("div", {
 				className: C.a.TopicList
 			}, c.a.createElement("ul", null, t.map(({
 				name: e,
@@ -85,10 +85,10 @@
 				slug: t
 			}))))) : null)
 		},
-		"./src/reddit/icons/svgs/Tag/index.tsx": function(e, t, s) {
+		"./src/reddit/icons/svgs/Tag/index.tsx": function(e, t, n) {
 			"use strict";
-			var n = s("./node_modules/react/index.js"),
-				i = s.n(n);
+			var s = n("./node_modules/react/index.js"),
+				i = n.n(s);
 			t.a = e => i.a.createElement("svg", {
 				className: e.className,
 				style: e.style,
@@ -101,4 +101,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/TopicLinksContainer.c3ab81c3f049e8328c73.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/TopicLinksContainer.b4ffc2121340ea6a24e6.js.map

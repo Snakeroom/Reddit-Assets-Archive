@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~ModListing.70090b433047022dc886.js
-// Retrieved at 12/8/2021, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~ModListing.acb413beee48499935eb.js
+// Retrieved at 12/9/2021, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~ModListing"], {
 		"./src/reddit/actions/focusedVerticals/index.ts": function(e, t, n) {
@@ -502,8 +502,8 @@
 							source: "layout_switch",
 							action: "click",
 							noun: e,
-							screen: Object(_.screen)(t),
-							subreddit: Object(_.subreddit)(t)
+							screen: Object(_.ab)(t),
+							subreddit: Object(_.hb)(t)
 						})))
 					}, this.renderItem = (e, t) => {
 						const {
@@ -2567,37 +2567,37 @@
 					source: r.COMMUNITY_WIDGETS,
 					action: o.c.CLICK,
 					noun: s.SEE_MORE,
-					widget: Object(a.widget)(n, {
+					widget: Object(a.ub)(n, {
 						subredditId: e,
 						widgetKind: t
 					}),
-					...a.defaults
+					...a.o
 				}),
 				c = (e, t) => n => ({
 					source: r.POST,
 					action: o.c.CLICK,
 					noun: s.REREDDIT_PROMO,
-					post: a.post(n, e),
-					subreddit: a.subreddit(n),
+					post: a.I(n, e),
+					subreddit: a.hb(n),
 					...t && {
 						banner: {
 							buttonText: t,
 							id: s.REREDDIT_PROMO
 						}
 					},
-					...a.defaults(n)
+					...a.o(n)
 				}),
 				d = () => e => ({
 					source: r.SIDEBAR,
 					action: o.c.VIEW,
 					noun: s.TOPICS_WIDGET,
-					...a.defaults(e)
+					...a.o(e)
 				}),
 				l = e => t => ({
 					source: r.TOPICS_WIDGET,
 					action: o.c.CLICK,
 					noun: s.TOPIC,
-					...a.defaults(t),
+					...a.o(t),
 					topicMetadata: {
 						displayName: e
 					}
@@ -2820,4 +2820,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing.70090b433047022dc886.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing.acb413beee48499935eb.js.map

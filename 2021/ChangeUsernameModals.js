@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChangeUsernameModals.b3e2c732f74fcbcc8197.js
-// Retrieved at 11/17/2021, 8:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChangeUsernameModals.e4e5fb378d7f7dc4585a.js
+// Retrieved at 12/9/2021, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChangeUsernameModals"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -79,17 +79,17 @@
 				h = n.n(p),
 				b = n("./src/lib/classNames/index.ts"),
 				C = n("./src/reddit/components/EmailCollection/Input/index.tsx"),
-				f = n("./src/lib/constants/index.ts"),
-				g = n("./src/lib/lessComponent.tsx"),
-				_ = n("./src/chat/icons/svgs/Refresh/index.tsx"),
+				g = n("./src/lib/constants/index.ts"),
+				_ = n("./src/lib/lessComponent.tsx"),
+				f = n("./src/chat/icons/svgs/Refresh/index.tsx"),
 				E = n("./src/reddit/contexts/ApiContext.tsx"),
 				O = n("./src/lib/makeApiRequest/index.ts"),
 				v = n("./src/lib/omitHeaders/index.ts"),
 				x = n("./src/reddit/constants/headers.ts"),
 				j = n("./src/reddit/components/Settings/SuggestedUsernames/index.m.less"),
 				N = n.n(j);
-			const U = g.a.wrapped(_.a, "refreshIcon", N.a),
-				k = g.a.button("refreshButton", N.a),
+			const U = _.a.wrapped(f.a, "refreshIcon", N.a),
+				k = _.a.button("refreshButton", N.a),
 				S = e => e > 3 ? 3 : e;
 			var y = Object(E.b)(e => {
 					const {
@@ -98,10 +98,10 @@
 					} = e, [o, c] = Object(a.useState)([0, 0]), [i, l] = Object(a.useState)([]), [d, m] = Object(a.useState)(!1), u = Object(a.useCallback)(async () => {
 						m(!0), setTimeout(() => {
 							m(!1)
-						}, 10 * f.Rb);
+						}, 10 * g.Rb);
 						const e = await (e => Object(O.a)(Object(v.a)(e, [x.a]), {
 							endpoint: `${e.apiUrl}/api/v1/generate_username.json`,
-							method: f.jb.GET
+							method: g.jb.GET
 						}))(t());
 						if (e.ok && e.body) {
 							const {
@@ -380,19 +380,19 @@
 				secondConfirmKeepUsernameModalOpen: b,
 				username: C
 			}) => {
-				const [g, _] = Object(a.useState)(C || ""), [E, j] = Object(a.useState)(!1), N = Object($.a)(), U = Object(a.useCallback)(async () => {
+				const [_, f] = Object(a.useState)(C || ""), [E, j] = Object(a.useState)(!1), N = Object($.a)(), U = Object(a.useCallback)(async () => {
 					j(!0);
 					const t = await ((e, t) => Object(O.a)(Object(v.a)(e, [x.a]), {
-						method: f.jb.POST,
+						method: g.jb.POST,
 						endpoint: `${e.apiUrl}/api/update_name`,
 						data: {
 							api_type: "json",
 							new_name: t
 						},
 						type: "form"
-					}))(e(), g);
-					t.ok ? (h(g, C), N(Object(Q.j)())) : p(ie(t.error)), j(!1)
-				}, [e, C, N, p, h, g]);
+					}))(e(), _);
+					t.ok ? (h(_, C), N(Object(Q.j)())) : p(ie(t.error)), j(!1)
+				}, [e, C, N, p, h, _]);
 				return r.a.createElement(a.Fragment, null, m && r.a.createElement(Y, {
 					description: s.fbt._("Before continuing, confirm that you want to keep this as your Reddit username.", null, {
 						hk: "14rKrO"
@@ -409,7 +409,7 @@
 					},
 					primaryButtonText: ne,
 					secondaryButtonText: se,
-					username: g
+					username: _
 				}), b && r.a.createElement(Y, {
 					description: s.fbt._("Ok, just to confirm your confirmation… Are you absolutely sure? This will be your name forever.", null, {
 						hk: "4lvkUG"
@@ -429,7 +429,7 @@
 					},
 					primaryButtonText: E ? re : se,
 					secondaryButtonText: ne,
-					username: g
+					username: _
 				}), t && r.a.createElement(J, {
 					initialUsername: C || "",
 					isResponsive: u,
@@ -440,14 +440,14 @@
 					onSelect: () => {
 						N(Object(Q.f)())
 					},
-					onUsernameChange: _,
+					onUsernameChange: f,
 					onView: () => {
 						N(Object(Q.i)())
 					},
 					title: s.fbt._("Change username", null, {
 						hk: "17XB7v"
 					}),
-					username: g
+					username: _
 				}), i && r.a.createElement(Y, {
 					description: s.fbt._("Are you sure? This will be your username forever.", null, {
 						hk: "3JACTO"
@@ -467,7 +467,7 @@
 					},
 					primaryButtonText: E ? re : ae,
 					secondaryButtonText: oe,
-					username: g
+					username: _
 				}))
 			})))
 		},
@@ -635,11 +635,11 @@
 			})), n.d(t, "b", (function() {
 				return h
 			})), n.d(t, "h", (function() {
-				return f
-			})), n.d(t, "d", (function() {
 				return g
-			})), n.d(t, "g", (function() {
+			})), n.d(t, "d", (function() {
 				return _
+			})), n.d(t, "g", (function() {
+				return f
 			})), n.d(t, "c", (function() {
 				return E
 			})), n.d(t, "i", (function() {
@@ -686,17 +686,17 @@
 					return a.UNKNOWN
 				},
 				C = e => e.payload.args && "string" == typeof e.payload.args[0] && e.payload.args[0] || "",
-				f = (e, t) => n => ({
-					...Object(u.defaults)(n),
+				g = (e, t) => n => ({
+					...Object(u.o)(n),
 					action: l.c.VIEW,
-					actionInfo: Object(u.actionInfo)(n, {
+					actionInfo: Object(u.d)(n, {
 						reason: t ? b(Object(m.a)(n)) : void 0
 					}),
 					noun: s.CHANGE_USERNAME_INITIAL,
 					source: e
 				}),
-				g = (e, t) => n => ({
-					...Object(u.defaults)(n),
+				_ = (e, t) => n => ({
+					...Object(u.o)(n),
 					action: l.c.CLICK,
 					noun: s.CHANGE_USERNAME_INITIAL,
 					popup: {
@@ -704,14 +704,14 @@
 					},
 					source: e
 				}),
-				_ = () => e => ({
-					...Object(u.defaults)(e),
+				f = () => e => ({
+					...Object(u.o)(e),
 					action: l.c.VIEW,
 					noun: s.CHANGE_USERNAME_CONFIRMATION,
 					source: p
 				}),
 				E = e => t => ({
-					...Object(u.defaults)(t),
+					...Object(u.o)(t),
 					action: l.c.CLICK,
 					noun: s.CHANGE_USERNAME_CONFIRMATION,
 					source: p,
@@ -720,13 +720,13 @@
 					}
 				}),
 				O = () => e => ({
-					...Object(u.defaults)(e),
+					...Object(u.o)(e),
 					action: l.c.VIEW,
 					noun: s.CHANGE_USERNAME_INPUT,
 					source: p
 				}),
 				v = () => e => ({
-					...Object(u.defaults)(e),
+					...Object(u.o)(e),
 					action: l.c.CLICK,
 					noun: s.CHANGE_USERNAME_INPUT,
 					popup: {
@@ -735,13 +735,13 @@
 					source: p
 				}),
 				x = () => e => ({
-					...Object(u.defaults)(e),
+					...Object(u.o)(e),
 					action: l.c.SELECT,
 					noun: s.CHANGE_USERNAME_INPUT,
 					source: p
 				}),
 				j = () => e => ({
-					...Object(u.defaults)(e),
+					...Object(u.o)(e),
 					action: l.c.VIEW,
 					noun: s.CHANGE_USERNAME_SUCCESS,
 					source: "toast"
@@ -749,4 +749,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChangeUsernameModals.b3e2c732f74fcbcc8197.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChangeUsernameModals.e4e5fb378d7f7dc4585a.js.map

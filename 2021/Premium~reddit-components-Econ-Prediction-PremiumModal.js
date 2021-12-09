@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.4ab6bc4ac433643a006f.js
-// Retrieved at 12/8/2021, 1:40:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.712ce73ed2c1fd878177.js
+// Retrieved at 12/9/2021, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Premium~reddit-components-Econ-Prediction-PremiumModal"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -1948,7 +1948,7 @@
 					action: "click",
 					noun: "price",
 					correlationId: Object(n.c)(n.a.GoldPayment),
-					...o.defaults(t),
+					...o.o(t),
 					...i(t, e)
 				}),
 				d = () => e => ({
@@ -1956,20 +1956,20 @@
 					action: "click",
 					noun: "redeem_code",
 					correlationId: Object(n.c)(n.a.GoldPayment),
-					...o.defaults(e)
+					...o.o(e)
 				}),
 				l = () => e => ({
 					source: s,
 					action: "click",
 					noun: "manage",
 					correlationId: Object(n.c)(n.a.GoldPayment),
-					...o.defaults(e)
+					...o.o(e)
 				}),
 				u = e => t => ({
 					source: "premium_marketing",
 					action: "click",
 					noun: "premium_benefit",
-					...o.defaults(t),
+					...o.o(t),
 					goldPurchase: {
 						premiumMarketingBenefit: e
 					}
@@ -2735,4 +2735,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.4ab6bc4ac433643a006f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.712ce73ed2c1fd878177.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index.e76cd80511005b8f1261.js
-// Retrieved at 12/8/2021, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index.60d8b0db5906d38af113.js
+// Retrieved at 12/9/2021, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index"], {
 		"./src/reddit/components/Econ/Audio/MuteIcon.tsx": function(e, t, n) {
@@ -131,7 +131,7 @@
 					audioRoom: n
 				} = e, {
 					recordingStatus: u
-				} = n, [E, f] = Object(a.useState)(new Set), [h, O] = Object(a.useState)(new Set), x = Object(r.e)(l.X), [P, g] = Object(a.useState)(-1), I = e => {
+				} = n, [E, f] = Object(a.useState)(new Set), [h, O] = Object(a.useState)(new Set), x = Object(r.e)(l.X), [g, P] = Object(a.useState)(-1), I = e => {
 					const t = e ? Array.from(h) : Array.from(E);
 					return null == t ? void 0 : t.map((t, n) => {
 						return e ? i.a.createElement("div", {
@@ -146,7 +146,7 @@
 						})) : i.a.createElement("div", {
 							key: `audioPostAvatar--${t}`,
 							className: m.a.speaker
-						}, n === P && i.a.createElement(b.a, {
+						}, n === g && i.a.createElement(b.a, {
 							className: Object(s.a)(m.a.speakerRings, {
 								[m.a.nightMode]: x
 							})
@@ -156,7 +156,7 @@
 							alt: v._("Reddit Talk", null, {
 								hk: "XNl4V"
 							})
-						}), n !== P && i.a.createElement("div", {
+						}), n !== g && i.a.createElement("div", {
 							className: m.a.muteContainer
 						}, i.a.createElement(p.a, {
 							className: m.a.muteIcon
@@ -173,7 +173,7 @@
 				}, [E, h]), Object(a.useEffect)(() => {
 					const e = setInterval(() => {
 						const e = Math.floor(6 * Math.random());
-						g(e), setTimeout(() => g(-1), 3500)
+						P(e), setTimeout(() => P(-1), 3500)
 					}, 4e3);
 					return () => clearInterval(e)
 				}, []);
@@ -309,11 +309,11 @@
 				d = n("./src/reddit/controls/InternalLink/index.tsx"),
 				l = n("./src/reddit/selectors/telemetry.ts");
 			const u = (e, t) => ({
-					...Object(l.defaults)(e),
-					poll: Object(l.predictionTournamentPoll)(e, t),
-					post: Object(l.post)(e, t),
-					predictions: Object(l.predictions)(e, t),
-					subreddit: Object(l.subreddit)(e)
+					...Object(l.o)(e),
+					poll: Object(l.N)(e, t),
+					post: Object(l.I)(e, t),
+					predictions: Object(l.O)(e, t),
+					subreddit: Object(l.hb)(e)
 				}),
 				m = e => t => ({
 					...u(t, e),
@@ -346,8 +346,8 @@
 			var O = n("./src/reddit/components/Econ/Prediction/TournamentPostBody/v1/PredictionContainer/index.m.less"),
 				x = n.n(O);
 
-			function P() {
-				return (P = Object.assign || function(e) {
+			function g() {
+				return (g = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var o in n) Object.prototype.hasOwnProperty.call(n, o) && (e[o] = n[o])
@@ -355,11 +355,11 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const g = ({
+			const P = ({
 				className: e,
 				...t
 			}) => {
-				return a.a.createElement("div", P({}, t, {
+				return a.a.createElement("div", g({}, t, {
 					className: Object(c.a)(e, x.a.container),
 					onClick: e => {
 						e.stopPropagation()
@@ -430,7 +430,7 @@
 						voteState: h
 					} = n,
 					[O, x] = a.a.useState(!1),
-					[P, g] = a.a.useState(null),
+					[g, P] = a.a.useState(null),
 					[_, j] = a.a.useState(!1),
 					N = b < Date.now();
 				return {
@@ -438,16 +438,16 @@
 					isShowingVoteAnimation: _,
 					selectedOption: v.find(({
 						id: e
-					}) => e === P),
+					}) => e === g),
 					selectOption: e => {
-						N || E || g(e.id)
+						N || E || P(e.id)
 					},
 					predict: async t => {
 						if (t.currency === I.a.Coins && t.amount > s) return Object(B.promptUserToBuyMoreCoins)(), void d(V.b);
 						if (N) return l(X._("Error: Failed to make prediction. This prediction has already ended", null, {
 							hk: "22UWEr"
-						})), void g(null);
-						if (!m || !P) throw new Error("Invalid arguments, optionId and pollId must be strings");
+						})), void P(null);
+						if (!m || !g) throw new Error("Invalid arguments, optionId and pollId must be strings");
 						x(!0), d(Object(V.o)({
 							pollId: m,
 							selectedNumberTokens: t.amount
@@ -455,20 +455,20 @@
 						try {
 							await o(Object(M.r)({
 								coinPackageId: t.id,
-								selectedOptionId: P,
+								selectedOptionId: g,
 								price: t.amount,
 								pollId: m,
 								tournamentId: e,
 								tournamentPostId: n.id
-							})), c && h < U.a.upvoted && (o(Object(F.db)(f)), o(Object(F.db)(m)), u()), x(!1), g(null), j(!0)
+							})), c && h < U.a.upvoted && (o(Object(F.db)(f)), o(Object(F.db)(m)), u()), x(!1), P(null), j(!0)
 						} catch (a) {
-							x(!1), g(null), l(X._("Error: Failed to make prediction, please try again later", null, {
+							x(!1), P(null), l(X._("Error: Failed to make prediction, please try again later", null, {
 								hk: "1tECsx"
 							}))
 						}
 					},
 					cancelAction: a.a.useCallback(() => {
-						g(null)
+						P(null)
 					}, []),
 					hideAnimation: a.a.useCallback(() => {
 						j(!1)
@@ -500,8 +500,8 @@
 						hideAnimation: x
 					} = z(t, e, r),
 					{
-						options: P,
-						userSelection: g
+						options: g,
+						userSelection: P
 					} = u || {},
 					{
 						endsAt: w,
@@ -512,7 +512,7 @@
 					} = e,
 					M = w < Date.now(),
 					F = S === I.b.Cancelled || S === I.b.CancelInProgress,
-					R = null != P ? P : B;
+					R = null != g ? g : B;
 				return a.a.createElement(a.a.Fragment, null, a.a.createElement("div", {
 					className: Object(c.a)(J.a.poll, {
 						[J.a.nightMode]: l
@@ -522,27 +522,27 @@
 				}, A), R.map(e => a.a.createElement(C.a, {
 					endsAt: w,
 					key: `prediction-option-${e.id}`,
-					isShowingVoteAnimation: v && g === e.id,
+					isShowingVoteAnimation: v && P === e.id,
 					onAnimationEnd: x
 				}, a.a.createElement(N.a, {
 					disabled: v,
 					isCancelled: F,
 					isEnded: M,
-					isSelected: g === e.id,
+					isSelected: P === e.id,
 					needsResolution: !1,
 					option: e,
 					onClick: () => f(e),
 					resolvedOptionId: T,
 					tournamentId: t,
-					userSelection: g,
+					userSelection: P,
 					userIsLoggedOut: !d,
-					votePercentage: (g || M || m) && e.voteCount && (null == u ? void 0 : u.totalVoters) ? Math.floor(e.voteCount / u.totalVoters * 100) : null,
+					votePercentage: (P || M || m) && e.voteCount && (null == u ? void 0 : u.totalVoters) ? Math.floor(e.voteCount / u.totalVoters * 100) : null,
 					isShowingHint: m
 				}))), !F && a.a.createElement(k.a, {
-					disabled: v || m || !!g,
+					disabled: v || m || !!P,
 					isEnded: M,
 					postId: r.id,
-					userSelection: g,
+					userSelection: P,
 					isShowingHint: m,
 					tournamentId: t,
 					onReveal: () => p(!0)
@@ -557,7 +557,7 @@
 					subredditId: n,
 					tournamentId: t,
 					withOverlay: !0
-				}), !!g && a.a.createElement(L, {
+				}), !!P && a.a.createElement(L, {
 					postId: r.id,
 					subredditId: n,
 					isLastPrediction: s
@@ -581,7 +581,7 @@
 						}
 					}, [])
 				}(n);
-				return (null == i ? void 0 : i.prediction) && o !== s.a.Closed ? a.a.createElement(g, null, a.a.createElement(Z, {
+				return (null == i ? void 0 : i.prediction) && o !== s.a.Closed ? a.a.createElement(P, null, a.a.createElement(Z, {
 					subredditId: e.belongsTo.id,
 					tournamentId: t,
 					post: e,
@@ -976,4 +976,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.e76cd80511005b8f1261.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.60d8b0db5906d38af113.js.map

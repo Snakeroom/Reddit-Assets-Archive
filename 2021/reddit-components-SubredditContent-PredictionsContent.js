@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.48f5ffed20653c82dd0c.js
-// Retrieved at 12/8/2021, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.b285e153feaa5d1129de.js
+// Retrieved at 12/9/2021, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SubredditContent-PredictionsContent"], {
 		"./src/reddit/components/Econ/Prediction/hooks/useTournamentsQuery.ts": function(e, t, n) {
@@ -11,18 +11,18 @@
 				r = n.n(o),
 				c = n("./node_modules/react-redux/es/index.js"),
 				s = n("./src/reddit/actions/economics/predictions/index.ts"),
-				a = n("./src/reddit/selectors/features/predictions/tournaments/index.ts"),
-				i = n("./src/reddit/selectors/subreddit.ts");
+				i = n("./src/reddit/selectors/features/predictions/tournaments/index.ts"),
+				a = n("./src/reddit/selectors/subreddit.ts");
 
 			function d(e) {
 				const t = Object(c.d)(),
-					n = Object(c.e)(t => Object(i.R)(t, {
+					n = Object(c.e)(t => Object(a.R)(t, {
 						subredditId: e
 					})),
-					o = Object(c.e)(t => Object(a.h)(t, {
+					o = Object(c.e)(t => Object(i.h)(t, {
 						subredditId: e
 					})),
-					d = Object(c.e)(t => Object(a.j)(t, {
+					d = Object(c.e)(t => Object(i.j)(t, {
 						subredditId: e
 					})),
 					l = r.a.useCallback(() => {
@@ -51,20 +51,20 @@
 				r = n.n(o),
 				c = n("./src/higherOrderComponents/asModal/index.tsx"),
 				s = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
-				a = n("./src/reddit/constants/keycodes.ts"),
-				i = n("./src/reddit/controls/Button/index.tsx"),
+				i = n("./src/reddit/constants/keycodes.ts"),
+				a = n("./src/reddit/controls/Button/index.tsx"),
 				d = n("./src/reddit/controls/LoadingIcon/index.tsx"),
 				l = n("./src/reddit/controls/TextButton/index.tsx"),
 				u = n("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
 				m = n("./src/reddit/components/PostCreationForm/Prompt/PromptModal.m.less"),
 				b = n.n(m),
 				p = n("./src/lib/lessComponent.tsx");
-			const f = p.a.wrapped(i.l, "PrimaryButton", b.a),
-				h = p.a.wrapped(s.p, "ModalText", b.a);
+			const h = p.a.wrapped(a.l, "PrimaryButton", b.a),
+				f = p.a.wrapped(s.p, "ModalText", b.a);
 			class _ extends r.a.PureComponent {
 				constructor() {
 					super(...arguments), this.handleEscapeKey = e => {
-						e.keyCode === a.a.Escape && this.props.onClose()
+						e.keyCode === i.a.Escape && this.props.onClose()
 					}
 				}
 				componentDidMount() {
@@ -80,11 +80,11 @@
 					} = this.props;
 					return r.a.createElement(s.e, null, r.a.createElement(s.i, null, r.a.createElement(u.a, null, r.a.createElement(s.q, null, this.props.titleText), r.a.createElement(l.a, {
 						onClick: this.props.onClose
-					}, r.a.createElement(s.b, null)))), r.a.createElement(s.l, null, r.a.createElement(h, null, this.props.bodyText)), r.a.createElement(s.g, null, r.a.createElement(s.a, {
+					}, r.a.createElement(s.b, null)))), r.a.createElement(s.l, null, r.a.createElement(f, null, this.props.bodyText)), r.a.createElement(s.g, null, r.a.createElement(s.a, {
 						onClick: this.props.onSecondaryAction
 					}, t ? r.a.createElement(d.a, {
 						sizePx: 16
-					}) : this.props.secondaryButtonText), r.a.createElement(f, {
+					}) : this.props.secondaryButtonText), r.a.createElement(h, {
 						onClick: this.props.onPrimaryAction
 					}, e ? r.a.createElement(d.a, {
 						sizePx: 16
@@ -121,8 +121,8 @@
 				r = n("./node_modules/react/index.js"),
 				c = n.n(r),
 				s = n("./node_modules/react-redux/es/index.js"),
-				a = n("./src/lib/classNames/index.ts"),
-				i = n("./src/reddit/actions/economics/predictions/index.ts"),
+				i = n("./src/lib/classNames/index.ts"),
+				a = n("./src/reddit/actions/economics/predictions/index.ts"),
 				d = n("./src/reddit/actions/toaster.ts"),
 				l = n("./src/reddit/components/Econ/Prediction/hooks/useTournamentsQuery.ts"),
 				u = n("./src/reddit/components/Settings/shared/Card/index.m.less"),
@@ -141,15 +141,15 @@
 					className: e,
 					...t
 				}) => c.a.createElement("div", b({
-					className: Object(a.a)(m.a.card, e)
+					className: Object(i.a)(m.a.card, e)
 				}, t)),
-				f = ({
+				h = ({
 					className: e,
 					...t
 				}) => c.a.createElement("h3", b({
-					className: Object(a.a)(m.a.title, e)
+					className: Object(i.a)(m.a.title, e)
 				}, t));
-			var h = n("./src/reddit/controls/Button/index.tsx"),
+			var f = n("./src/reddit/controls/Button/index.tsx"),
 				_ = n("./src/reddit/controls/LoadingIcon/index.tsx"),
 				j = n("./src/reddit/helpers/trackers/predictions.ts"),
 				x = n("./src/reddit/hooks/useTracking.ts"),
@@ -200,7 +200,7 @@
 							n(Object(v.j)(e, c, void 0, o))
 						}]
 					}(e, "allowPredictionContributors");
-				return void 0 === n ? null : c.a.createElement(p, null, c.a.createElement(f, null, o.fbt._("Predictions Submission Permissions", null, {
+				return void 0 === n ? null : c.a.createElement(p, null, c.a.createElement(h, null, o.fbt._("Predictions Submission Permissions", null, {
 					hk: "3rjmMV"
 				})), c.a.createElement(C.p, {
 					on: n,
@@ -225,7 +225,7 @@
 				const t = Object(s.d)(),
 					n = Object(x.a)(),
 					[u, m] = Object(r.useState)(""),
-					[b, f] = Object(r.useState)(!1),
+					[b, h] = Object(r.useState)(!1),
 					[g, C] = Object(r.useState)(!1),
 					[v, P] = Object(r.useState)(!1),
 					[T, w] = Object(r.useState)(null),
@@ -277,7 +277,7 @@
 						hk: "bN9XA"
 					})
 				}), c.a.createElement("div", {
-					className: Object(a.a)(A.a.remainingCharacters, {
+					className: Object(i.a)(A.a.remainingCharacters, {
 						[A.a.maxCharacters]: (null == u ? void 0 : u.length) === N
 					})
 				}, L && L.name !== u && null !== T ? o.fbt._({
@@ -285,14 +285,14 @@
 					_1: "1 character remaining"
 				}, [o.fbt._plural(T, "remaining characters")], {
 					hk: "1dBRgv"
-				}) : c.a.createElement(c.a.Fragment, null, " ")), c.a.createElement(h.l, {
+				}) : c.a.createElement(c.a.Fragment, null, " ")), c.a.createElement(f.l, {
 					className: A.a.button,
 					disabled: !u || !L || I || !U,
 					onClick: async () => {
 						if (!L || !u) return null;
-						n(Object(j.j)()), f(!0);
+						n(Object(j.j)()), h(!0);
 						try {
-							await t(Object(i.v)(L.tournamentId, e.id, u))
+							await t(Object(a.v)(L.tournamentId, e.id, u))
 						} catch (r) {
 							t(Object(d.f)({
 								kind: O.b.Error,
@@ -301,7 +301,7 @@
 								})
 							}))
 						}
-						f(!1)
+						h(!1)
 					}
 				}, b ? c.a.createElement(_.a, {
 					sizePx: 16
@@ -315,7 +315,7 @@
 					className: A.a.endConditions
 				}, o.fbt._("Tournament can only be ended after its predictions are ended and resolved", null, {
 					hk: "2AgZtm"
-				})), c.a.createElement(h.l, {
+				})), c.a.createElement(f.l, {
 					className: A.a.button,
 					disabled: !L || !F || I,
 					onClick: M
@@ -330,7 +330,7 @@
 						if (!L || !F) return null;
 						C(!0);
 						try {
-							await t(Object(i.o)(L.tournamentId))
+							await t(Object(a.o)(L.tournamentId))
 						} catch (e) {
 							t(Object(d.f)({
 								kind: O.b.Error,
@@ -351,9 +351,9 @@
 			n.d(t, "a", (function() {
 				return s
 			})), n.d(t, "p", (function() {
-				return a
-			})), n.d(t, "q", (function() {
 				return i
+			})), n.d(t, "q", (function() {
+				return a
 			})), n.d(t, "s", (function() {
 				return d
 			})), n.d(t, "n", (function() {
@@ -367,9 +367,9 @@
 			})), n.d(t, "g", (function() {
 				return p
 			})), n.d(t, "u", (function() {
-				return f
-			})), n.d(t, "l", (function() {
 				return h
+			})), n.d(t, "l", (function() {
+				return f
 			})), n.d(t, "t", (function() {
 				return _
 			})), n.d(t, "e", (function() {
@@ -395,20 +395,20 @@
 				r = n("./src/reddit/selectors/telemetry.ts");
 			const c = "poll",
 				s = "predictions",
-				a = e => ({
-					...Object(r.defaults)(e),
+				i = e => ({
+					...Object(r.o)(e),
 					source: c,
 					action: "select",
 					noun: "poll_option"
 				}),
-				i = e => ({
-					...Object(r.defaults)(e),
+				a = e => ({
+					...Object(r.o)(e),
 					source: c,
 					action: "select",
 					noun: "prediction_option"
 				}),
 				d = e => ({
-					...Object(r.defaults)(e),
+					...Object(r.o)(e),
 					source: c,
 					action: "view",
 					noun: "predict_option_modal"
@@ -418,11 +418,11 @@
 					selectedNumberCoins: t,
 					totalStakeAmount: n
 				}) => o => ({
-					...Object(r.defaults)(o),
+					...Object(r.o)(o),
 					source: c,
 					action: "confirm",
 					noun: "predict",
-					poll: Object(r.poll)(o, e, !1, void 0, t),
+					poll: Object(r.H)(o, e, !1, void 0, t),
 					goldPurchase: {
 						numberCoins: n
 					}
@@ -431,29 +431,29 @@
 					pollId: e,
 					selectedNumberTokens: t
 				}) => n => ({
-					...Object(r.defaults)(n),
+					...Object(r.o)(n),
 					source: c,
 					action: "confirm",
 					noun: "predict",
-					poll: Object(r.poll)(n, e, !1, void 0, void 0, t)
+					poll: Object(r.H)(n, e, !1, void 0, void 0, t)
 				}),
 				m = ({
 					pollId: e,
 					currency: t,
 					amount: n
 				}) => s => {
-					const a = t === o.a.Coins ? n : void 0,
-						i = t === o.a.Tokens ? n : void 0;
+					const i = t === o.a.Coins ? n : void 0,
+						a = t === o.a.Tokens ? n : void 0;
 					return {
-						...Object(r.defaults)(s),
+						...Object(r.o)(s),
 						source: c,
 						action: "close",
 						noun: "prediction_modal",
-						poll: Object(r.poll)(s, e, !1, a, i)
+						poll: Object(r.H)(s, e, !1, i, a)
 					}
 				},
 				b = e => ({
-					...Object(r.defaults)(e),
+					...Object(r.o)(e),
 					source: c,
 					action: "click",
 					noun: "add_coins"
@@ -461,7 +461,7 @@
 				p = ({
 					targetUserId: e
 				}) => t => ({
-					...Object(r.defaults)(t),
+					...Object(r.o)(t),
 					source: s,
 					action: "click",
 					noun: "leaderboard_profile",
@@ -469,20 +469,20 @@
 						id: e
 					}
 				}),
-				f = ({
+				h = ({
 					numberPredictionTokens: e,
 					pollId: t
 				}) => n => ({
-					...Object(r.defaults)(n),
+					...Object(r.o)(n),
 					source: c,
 					action: "view",
 					noun: "token_claim_modal",
-					poll: Object(r.poll)(n, t, !1, void 0, void 0, e)
+					poll: Object(r.H)(n, t, !1, void 0, void 0, e)
 				}),
-				h = ({
+				f = ({
 					pageType: e
 				}) => t => ({
-					...Object(r.defaults)(t),
+					...Object(r.o)(t),
 					source: s,
 					action: "click",
 					noun: "tournament",
@@ -491,7 +491,7 @@
 					}
 				}),
 				_ = () => e => ({
-					...Object(r.defaults)(e),
+					...Object(r.o)(e),
 					source: "global",
 					action: "view",
 					noun: "screen",
@@ -500,19 +500,19 @@
 					}
 				}),
 				j = () => e => ({
-					...Object(r.defaults)(e),
+					...Object(r.o)(e),
 					source: "mod_tool_predict",
 					action: "click",
 					noun: "end_tournament"
 				}),
 				x = () => e => ({
-					...Object(r.defaults)(e),
+					...Object(r.o)(e),
 					source: "mod_tool_predict",
 					action: "click",
 					noun: "rename_tournament"
 				}),
 				O = e => t => ({
-					...Object(r.defaults)(t),
+					...Object(r.o)(t),
 					source: "mod_tool_predict",
 					action: "click",
 					noun: "enable_predictions",
@@ -523,47 +523,47 @@
 						value: e ? "1" : "0",
 						oldValue: e ? "0" : "1"
 					},
-					subreddit: Object(r.subreddit)(t)
+					subreddit: Object(r.hb)(t)
 				}),
 				k = () => e => ({
-					...Object(r.defaults)(e),
+					...Object(r.o)(e),
 					source: s,
 					action: "click",
 					noun: "next"
 				}),
 				E = () => e => ({
-					...Object(r.defaults)(e),
+					...Object(r.o)(e),
 					source: s,
 					action: "click",
 					noun: "add_more"
 				}),
 				g = () => e => ({
-					...Object(r.defaults)(e),
+					...Object(r.o)(e),
 					source: s,
 					action: "click",
 					noun: "start_tournament"
 				}),
 				y = () => e => ({
-					...Object(r.defaults)(e),
+					...Object(r.o)(e),
 					source: "menu_links_bar",
 					action: "click",
 					noun: "predictions_tab"
 				}),
 				C = () => e => ({
-					...Object(r.defaults)(e),
+					...Object(r.o)(e),
 					source: "predictions_tab",
 					action: "view",
 					noun: "predictions_how_it_works",
-					subreddit: Object(r.subreddit)(e)
+					subreddit: Object(r.hb)(e)
 				}),
 				v = () => e => ({
-					...Object(r.defaults)(e),
+					...Object(r.o)(e),
 					source: "predictions_how_it_works",
 					action: "click",
 					noun: "learn_more",
-					subreddit: Object(r.subreddit)(e)
+					subreddit: Object(r.hb)(e)
 				})
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.48f5ffed20653c82dd0c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.b285e153feaa5d1129de.js.map

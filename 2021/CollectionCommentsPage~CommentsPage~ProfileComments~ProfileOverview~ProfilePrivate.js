@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.ae0adbc7639da0f44b82.js
-// Retrieved at 12/8/2021, 2:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.a3a99f718903abe379af.js
+// Retrieved at 12/9/2021, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -2529,7 +2529,7 @@
 				}) => Object(b.i)(e, {
 					postId: t.id
 				}),
-				pageType: e => Object(f.actionInfo)(e).pageType
+				pageType: e => Object(f.d)(e).pageType
 			}));
 			class k extends o.a.Component {
 				constructor() {
@@ -3851,7 +3851,7 @@
 						source: "meta",
 						action: "hover",
 						noun: "achieve_flair",
-						...i.defaults(a),
+						...i.o(a),
 						subreddit: {
 							id: t
 						},
@@ -3867,7 +3867,7 @@
 					source: "powerups",
 					action: "click",
 					noun: "view_your_achievements",
-					...i.defaults(e)
+					...i.o(e)
 				})
 		},
 		"./src/reddit/helpers/trackers/widgets.ts": function(e, t, n) {
@@ -3893,37 +3893,37 @@
 					source: o.COMMUNITY_WIDGETS,
 					action: r.c.CLICK,
 					noun: s.SEE_MORE,
-					widget: Object(i.widget)(n, {
+					widget: Object(i.ub)(n, {
 						subredditId: e,
 						widgetKind: t
 					}),
-					...i.defaults
+					...i.o
 				}),
 				d = (e, t) => n => ({
 					source: o.POST,
 					action: r.c.CLICK,
 					noun: s.REREDDIT_PROMO,
-					post: i.post(n, e),
-					subreddit: i.subreddit(n),
+					post: i.I(n, e),
+					subreddit: i.hb(n),
 					...t && {
 						banner: {
 							buttonText: t,
 							id: s.REREDDIT_PROMO
 						}
 					},
-					...i.defaults(n)
+					...i.o(n)
 				}),
 				c = () => e => ({
 					source: o.SIDEBAR,
 					action: r.c.VIEW,
 					noun: s.TOPICS_WIDGET,
-					...i.defaults(e)
+					...i.o(e)
 				}),
 				l = e => t => ({
 					source: o.TOPICS_WIDGET,
 					action: r.c.CLICK,
 					noun: s.TOPIC,
-					...i.defaults(t),
+					...i.o(t),
 					topicMetadata: {
 						displayName: e
 					}
@@ -4335,4 +4335,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.ae0adbc7639da0f44b82.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.a3a99f718903abe379af.js.map

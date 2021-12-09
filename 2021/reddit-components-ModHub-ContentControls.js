@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.7636b1e55642d6c631fb.js
-// Retrieved at 12/2/2021, 6:50:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.7979e7df098705b303a5.js
+// Retrieved at 12/9/2021, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-ContentControls"], {
 		"./src/reddit/components/ModHub/ContentControls/FormPlaceholder/index.m.less": function(e, t, n) {
@@ -123,10 +123,10 @@
 					source: "post_requirements",
 					action: "save",
 					noun: "settings",
-					...R.defaults(t),
+					...R.o(t),
 					postRequirement: q(e),
-					subreddit: R.subreddit(t),
-					userSubreddit: R.userSubreddit(t)
+					subreddit: R.hb(t),
+					userSubreddit: R.qb(t)
 				});
 			var B = n("./src/reddit/selectors/activeModalId.ts"),
 				T = n("./src/reddit/selectors/contentControls.ts"),
@@ -913,7 +913,7 @@
 							source: "community_settings",
 							action: "add",
 							noun: "auto_report_keyword",
-							...Object(R.defaults)(t),
+							...Object(R.o)(t),
 							setting: {
 								value: e,
 								oldValue: ""
@@ -922,7 +922,7 @@
 							source: "community_settings",
 							action: "remove",
 							noun: "auto_report_keyword",
-							...Object(R.defaults)(t),
+							...Object(R.o)(t),
 							setting: {
 								value: e,
 								oldValue: ""
@@ -1777,4 +1777,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.7636b1e55642d6c631fb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.7979e7df098705b303a5.js.map

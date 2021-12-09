@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.4b8090a8d48474587bc0.js
-// Retrieved at 12/8/2021, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.dc45a442f5585f9d5848.js
+// Retrieved at 12/9/2021, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileFollowersPage", "ProfileFollowersAction"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -4350,11 +4350,11 @@
 							source: "trophy",
 							action: "click",
 							noun: "trophy",
-							...c.defaults(t),
-							actionInfo: Object(c.actionInfo)(t, {
+							...c.o(t),
+							actionInfo: Object(c.d)(t, {
 								paneName: "profile_about"
 							}),
-							profile: c.profile(t),
+							profile: c.R(t),
 							trophy: e
 						}))({
 							id: e.id,
@@ -5147,13 +5147,13 @@
 			var r = s("./src/reddit/constants/tracking.ts"),
 				n = s("./src/reddit/selectors/telemetry.ts");
 			const i = e => t => ({
-					...Object(n.defaults)(t),
+					...Object(n.o)(t),
 					action: r.c.CLICK,
 					noun: `follower_list_page_${e?"follow":"unfollow"}`,
 					source: "profile"
 				}),
 				o = () => e => ({
-					...Object(n.defaults)(e),
+					...Object(n.o)(e),
 					action: r.c.CLICK,
 					noun: "follower_list_cta",
 					source: "profile"
@@ -5182,37 +5182,37 @@
 					source: n.COMMUNITY_WIDGETS,
 					action: i.c.CLICK,
 					noun: r.SEE_MORE,
-					widget: Object(o.widget)(s, {
+					widget: Object(o.ub)(s, {
 						subredditId: e,
 						widgetKind: t
 					}),
-					...o.defaults
+					...o.o
 				}),
 				d = (e, t) => s => ({
 					source: n.POST,
 					action: i.c.CLICK,
 					noun: r.REREDDIT_PROMO,
-					post: o.post(s, e),
-					subreddit: o.subreddit(s),
+					post: o.I(s, e),
+					subreddit: o.hb(s),
 					...t && {
 						banner: {
 							buttonText: t,
 							id: r.REREDDIT_PROMO
 						}
 					},
-					...o.defaults(s)
+					...o.o(s)
 				}),
 				l = () => e => ({
 					source: n.SIDEBAR,
 					action: i.c.VIEW,
 					noun: r.TOPICS_WIDGET,
-					...o.defaults(e)
+					...o.o(e)
 				}),
 				c = e => t => ({
 					source: n.TOPICS_WIDGET,
 					action: i.c.CLICK,
 					noun: r.TOPIC,
-					...o.defaults(t),
+					...o.o(t),
 					topicMetadata: {
 						displayName: e
 					}
@@ -6537,4 +6537,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.4b8090a8d48474587bc0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.dc45a442f5585f9d5848.js.map

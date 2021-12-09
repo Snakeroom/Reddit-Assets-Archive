@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.41a99f4aac4747912eed.js
-// Retrieved at 12/6/2021, 1:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.ab42f07962848c9662ba.js
+// Retrieved at 12/9/2021, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Wiki-ModHubWikiManagement"], {
 		"./src/reddit/components/BannedUserList/AddBannedUserModal/DaysInput.tsx": function(e, t, n) {
@@ -264,8 +264,8 @@
 				_ = n("./node_modules/react-redux/es/index.js"),
 				S = n("./node_modules/reselect/es/index.js"),
 				M = n("./src/reddit/actions/modal.ts"),
-				f = n("./src/reddit/actions/wiki/wikiBannedContributors/index.ts"),
-				x = n("./src/reddit/components/BannedUserList/index.tsx"),
+				x = n("./src/reddit/actions/wiki/wikiBannedContributors/index.ts"),
+				f = n("./src/reddit/components/BannedUserList/index.tsx"),
 				P = n("./src/reddit/components/ConfirmUserActionModal/index.tsx"),
 				T = n("./src/reddit/components/HumanDate/index.tsx"),
 				N = n("./src/reddit/components/ModerationPagesEmptyList/index.tsx"),
@@ -278,8 +278,8 @@
 				D = n("./src/reddit/controls/Button/index.tsx"),
 				L = n("./src/reddit/helpers/trackers/subredditWiki.ts"),
 				U = n("./src/reddit/selectors/activeModalId.ts"),
-				I = n("./src/reddit/selectors/subredditWiki.ts"),
-				A = n("./src/higherOrderComponents/asModal/index.tsx"),
+				A = n("./src/reddit/selectors/subredditWiki.ts"),
+				I = n("./src/higherOrderComponents/asModal/index.tsx"),
 				H = n("./src/reddit/components/CharacterCountdown/index.tsx"),
 				F = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
 				Q = n("./src/reddit/controls/TextButton/index.tsx"),
@@ -295,7 +295,7 @@
 				$ = Object(_.b)(null, (e, {
 					subredditName: t
 				}) => ({
-					addBannedWikiContributor: n => e(Object(f.a)(t, n))
+					addBannedWikiContributor: n => e(Object(x.a)(t, n))
 				}));
 			class ee extends s.a.Component {
 				constructor(e) {
@@ -396,14 +396,14 @@
 					}))))
 				}
 			}
-			var te = Object(A.a)($(ee));
+			var te = Object(I.a)($(ee));
 			const ne = Object(S.c)({
 				isAddBannedContributorModalOpen: e => "WikiBannedContributers--BanContributorModal" === Object(U.a)(e),
 				isConfirmModalOpen: e => "WikiBannedContributers--RemoveBannedWikiContributor" === Object(U.a)(e),
-				isWikiBannedContributorsListPending: I.e,
-				loadMoreToken: I.f,
-				searchResult: I.g,
-				wikiContributors: I.h
+				isWikiBannedContributorsListPending: A.e,
+				loadMoreToken: A.f,
+				searchResult: A.g,
+				wikiContributors: A.h
 			});
 			class ie extends s.a.Component {
 				constructor(e) {
@@ -440,7 +440,7 @@
 						const t = this.props.wikiContributors.find(t => t.id === e);
 						if (!t) return s.a.createElement(s.a.Fragment, null);
 						const n = new Date(t.date),
-							i = Object(x.b)(t.daysRemaining);
+							i = Object(f.b)(t.daysRemaining);
 						return s.a.createElement(W.b, {
 							description: t.note,
 							username: t.username,
@@ -532,9 +532,9 @@
 			var se = Object(_.b)(ne, (e, {
 					subredditName: t
 				}) => ({
-					moreWikiBannedContributorsRequested: n => e(Object(f.b)(t, n)),
-					removeWikiBannedContributor: n => e(Object(f.c)(t, n)),
-					searchWikiBannedContributorByName: n => e(Object(f.d)(t, n)),
+					moreWikiBannedContributorsRequested: n => e(Object(x.b)(t, n)),
+					removeWikiBannedContributor: n => e(Object(x.c)(t, n)),
+					searchWikiBannedContributorByName: n => e(Object(x.d)(t, n)),
 					toggleAddBannedContributorModal: () => e(Object(M.i)("WikiBannedContributers--BanContributorModal")),
 					toggleConfirmModal: () => e(Object(M.i)("WikiBannedContributers--RemoveBannedWikiContributor"))
 				}))(Object(O.c)(ie)),
@@ -593,14 +593,14 @@
 					}))))
 				}
 			}
-			var ue = Object(A.a)(le(ce));
+			var ue = Object(I.a)(le(ce));
 			const me = Object(S.c)({
 				isAddContributorModalOpen: e => "WikiContributers--AddContributorModal" === Object(U.a)(e),
 				isConfirmModalOpen: e => "WikiContributers--RemoveContributor" === Object(U.a)(e),
-				isWikiContributorsListPending: I.j,
-				loadMoreToken: I.k,
-				searchResult: I.l,
-				wikiContributors: I.m
+				isWikiContributorsListPending: A.j,
+				loadMoreToken: A.k,
+				searchResult: A.l,
+				wikiContributors: A.m
 			});
 			class be extends s.a.Component {
 				constructor(e) {
@@ -726,8 +726,8 @@
 				_e = n("./src/reddit/icons/svgs/QuarantineWarning/index.tsx"),
 				Se = n("./src/reddit/models/SubredditWikiPage/index.ts"),
 				Me = n("./src/reddit/selectors/subreddit.ts"),
-				fe = n("./node_modules/lodash/noop.js"),
-				xe = n.n(fe),
+				xe = n("./node_modules/lodash/noop.js"),
+				fe = n.n(xe),
 				Pe = n("./node_modules/lodash/times.js"),
 				Te = n.n(Pe),
 				Ne = n("./src/lib/classNames/index.ts"),
@@ -769,7 +769,7 @@
 				}), s.a.createElement(Le, {
 					className: Oe.a.loadingUserName
 				}))));
-			class Ie extends s.a.Component {
+			class Ae extends s.a.Component {
 				constructor(e) {
 					super(e), this.onChangeNewContributorInput = e => {
 						this.setState({
@@ -793,7 +793,7 @@
 					}, s.a.createElement(ye.a, {
 						username: e.username,
 						iconSize: 24,
-						sendHoverCardEvent: xe.a,
+						sendHoverCardEvent: fe.a,
 						tooltipId: `wikiPageContributor--${e.username}`,
 						userIcon: e.iconUrl
 					}), s.a.createElement(D.r, {
@@ -865,13 +865,13 @@
 					}))
 				}
 			}
-			var Ae = De(Ie);
+			var Ie = De(Ae);
 			const He = Object(S.c)({
 				subredditSettings: (e, t) => {
 					const n = Object(Me.C)(e, t.subredditName);
 					return Object(Me.T)(e, n)
 				},
-				wikiPageSettings: I.d
+				wikiPageSettings: A.d
 			});
 			class Fe extends s.a.Component {
 				constructor(e) {
@@ -998,7 +998,7 @@
 						className: Oe.a.inputOptionText
 					}, v.fbt._("Only approved wiki contributors for this page may edit", null, {
 						hk: "16QJXW"
-					}))))), r && s.a.createElement(Ae, {
+					}))))), r && s.a.createElement(Ie, {
 						afterToken: e.wikiPageSettings.afterToken,
 						sendEvent: this.props.sendEvent,
 						subredditName: e.subredditName,
@@ -1135,14 +1135,14 @@
 			})), n.d(t, "n", (function() {
 				return M
 			})), n.d(t, "o", (function() {
-				return f
+				return x
 			}));
 			var i = n("./src/reddit/models/SubredditWikiPage/index.ts"),
 				s = n("./src/reddit/selectors/telemetry.ts");
 			const r = e => ({
-					...s.defaults(e),
-					subreddit: s.subreddit(e),
-					userSubreddit: s.userSubreddit(e)
+					...s.o(e),
+					subreddit: s.hb(e),
+					userSubreddit: s.qb(e)
 				}),
 				o = () => e => ({
 					source: "wiki",
@@ -1186,20 +1186,20 @@
 					source: "wiki",
 					action: "click",
 					noun: "hide_show_page",
-					actionInfo: s.actionInfo(t, {
+					actionInfo: s.d(t, {
 						settingValue: e ? "show" : "hide"
 					})
 				}),
-				f = e => t => ({
+				x = e => t => ({
 					...r(t),
 					source: "wiki",
 					action: "click",
 					noun: "editing_permissions",
-					actionInfo: s.actionInfo(t, {
+					actionInfo: s.d(t, {
 						settingValue: S[e]
 					})
 				})
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.41a99f4aac4747912eed.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.ab42f07962848c9662ba.js.map

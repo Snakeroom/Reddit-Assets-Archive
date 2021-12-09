@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChangeUsernameTooltip.2965a9ae8035fa08d7b8.js
-// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChangeUsernameTooltip.9b6dec3425bc7c9b9451.js
+// Retrieved at 12/9/2021, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChangeUsernameTooltip"], {
 		"./src/reddit/components/ChangeUsernameTooltip/index.m.less": function(e, n, t) {
@@ -22,8 +22,8 @@
 			t.r(n);
 			var s = t("./node_modules/fbt/lib/FbtPublic.js"),
 				o = t("./node_modules/react/index.js"),
-				a = t.n(o),
-				r = t("./src/higherOrderComponents/addOverlayEvents.tsx"),
+				r = t.n(o),
+				a = t("./src/higherOrderComponents/addOverlayEvents.tsx"),
 				c = t("./src/lib/classNames/index.ts"),
 				i = t("./src/reddit/components/OverlayAwareTooltip/index.tsx"),
 				d = t("./src/reddit/components/TrackingHelper/index.tsx"),
@@ -32,7 +32,7 @@
 				p = t("./src/reddit/icons/svgs/Close/index.tsx"),
 				E = t("./src/reddit/components/ChangeUsernameTooltip/index.m.less"),
 				m = t.n(E);
-			class N extends a.a.Component {
+			class N extends r.a.Component {
 				constructor() {
 					super(...arguments), this.onChangeUsernameModalOpen = () => {
 						this.props.sendEvent(Object(l.d)(l.b, "change")), this.props.openChangeUsernameModal()
@@ -46,31 +46,31 @@
 					N.shouldSendViewEvent && (N.shouldSendViewEvent = !1, this.props.sendEvent(Object(l.h)(l.b)))
 				}
 				render() {
-					return a.a.createElement("div", {
+					return r.a.createElement("div", {
 						className: m.a.container
-					}, a.a.createElement("div", {
+					}, r.a.createElement("div", {
 						className: m.a.topLine
-					}), a.a.createElement("button", {
+					}), r.a.createElement("button", {
 						className: m.a.closeWrapper,
 						onClick: this.onCloseTooltip
-					}, a.a.createElement(p.a, {
+					}, r.a.createElement(p.a, {
 						className: m.a.closeIcon
-					})), a.a.createElement("h5", {
+					})), r.a.createElement("h5", {
 						className: m.a.title
 					}, s.fbt._("Do you want to change or keep this username?", null, {
 						hk: "4vHGxH"
-					})), a.a.createElement("p", {
+					})), r.a.createElement("p", {
 						className: m.a.username
-					}, a.a.createElement("span", {
+					}, r.a.createElement("span", {
 						className: m.a.usernamePrefix
-					}, "u/"), this.props.username), a.a.createElement("div", {
+					}, "u/"), this.props.username), r.a.createElement("div", {
 						className: m.a.buttonWrapper
-					}, a.a.createElement(u.l, {
+					}, r.a.createElement(u.l, {
 						className: Object(c.a)(m.a.commonBtn, m.a.primaryBtn),
 						onClick: this.onChangeUsernameModalOpen
 					}, s.fbt._("Change Username", null, {
 						hk: "1nRhNE"
-					})), a.a.createElement(u.r, {
+					})), r.a.createElement(u.r, {
 						className: Object(c.a)(m.a.commonBtn, m.a.secondaryBtn),
 						onClick: this.onKeepUsernameModalOpen
 					}, s.fbt._("Keep Username", null, {
@@ -79,7 +79,7 @@
 				}
 			}
 			N.shouldSendViewEvent = !0;
-			const _ = Object(i.a)(N, [r.a.Click, r.a.Keydown, r.a.Resize]);
+			const _ = Object(i.a)(N, [a.a.Click, a.a.Keydown, a.a.Resize]);
 			n.default = Object(d.c)(_)
 		},
 		"./src/reddit/helpers/trackers/changeUsername.ts": function(e, n, t) {
@@ -97,16 +97,16 @@
 			})), t.d(n, "c", (function() {
 				return U
 			})), t.d(n, "i", (function() {
-				return f
-			})), t.d(n, "e", (function() {
 				return T
-			})), t.d(n, "f", (function() {
+			})), t.d(n, "e", (function() {
 				return A
-			})), t.d(n, "j", (function() {
+			})), t.d(n, "f", (function() {
 				return I
+			})), t.d(n, "j", (function() {
+				return b
 			}));
-			var s, o, a = t("./src/reddit/actions/comment/constants.ts"),
-				r = t("./src/reddit/actions/modal.ts"),
+			var s, o, r = t("./src/reddit/actions/comment/constants.ts"),
+				a = t("./src/reddit/actions/modal.ts"),
 				c = t("./src/reddit/constants/actions.ts"),
 				i = t("./src/reddit/constants/modals.ts"),
 				d = t("./src/reddit/constants/tracking.ts"),
@@ -124,10 +124,10 @@
 				N = e => {
 					if (!e) return o.UNKNOWN;
 					switch (e.type) {
-						case a.q:
-						case a.k:
+						case r.q:
+						case r.k:
 							return o.COMMENT;
-						case r.c:
+						case a.c:
 							if (e.payload === i.a.MULTIREDDIT_ADD_SUBREDDIT || e.payload === i.a.MULTIREDDIT_CREATE) return o.CUSTOM_FEED;
 							break;
 						case c.a: {
@@ -141,16 +141,16 @@
 				},
 				_ = e => e.payload.args && "string" == typeof e.payload.args[0] && e.payload.args[0] || "",
 				C = (e, n) => t => ({
-					...Object(p.defaults)(t),
+					...Object(p.o)(t),
 					action: d.c.VIEW,
-					actionInfo: Object(p.actionInfo)(t, {
+					actionInfo: Object(p.d)(t, {
 						reason: n ? N(Object(l.a)(t)) : void 0
 					}),
 					noun: s.CHANGE_USERNAME_INITIAL,
 					source: e
 				}),
 				h = (e, n) => t => ({
-					...Object(p.defaults)(t),
+					...Object(p.o)(t),
 					action: d.c.CLICK,
 					noun: s.CHANGE_USERNAME_INITIAL,
 					popup: {
@@ -159,13 +159,13 @@
 					source: e
 				}),
 				O = () => e => ({
-					...Object(p.defaults)(e),
+					...Object(p.o)(e),
 					action: d.c.VIEW,
 					noun: s.CHANGE_USERNAME_CONFIRMATION,
 					source: E
 				}),
 				U = e => n => ({
-					...Object(p.defaults)(n),
+					...Object(p.o)(n),
 					action: d.c.CLICK,
 					noun: s.CHANGE_USERNAME_CONFIRMATION,
 					source: E,
@@ -173,14 +173,14 @@
 						buttonText: e
 					}
 				}),
-				f = () => e => ({
-					...Object(p.defaults)(e),
+				T = () => e => ({
+					...Object(p.o)(e),
 					action: d.c.VIEW,
 					noun: s.CHANGE_USERNAME_INPUT,
 					source: E
 				}),
-				T = () => e => ({
-					...Object(p.defaults)(e),
+				A = () => e => ({
+					...Object(p.o)(e),
 					action: d.c.CLICK,
 					noun: s.CHANGE_USERNAME_INPUT,
 					popup: {
@@ -188,14 +188,14 @@
 					},
 					source: E
 				}),
-				A = () => e => ({
-					...Object(p.defaults)(e),
+				I = () => e => ({
+					...Object(p.o)(e),
 					action: d.c.SELECT,
 					noun: s.CHANGE_USERNAME_INPUT,
 					source: E
 				}),
-				I = () => e => ({
-					...Object(p.defaults)(e),
+				b = () => e => ({
+					...Object(p.o)(e),
 					action: d.c.VIEW,
 					noun: s.CHANGE_USERNAME_SUCCESS,
 					source: "toast"
@@ -203,4 +203,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChangeUsernameTooltip.2965a9ae8035fa08d7b8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChangeUsernameTooltip.9b6dec3425bc7c9b9451.js.map

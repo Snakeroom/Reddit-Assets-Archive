@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.dcc36d130ca58dbfe648.js
-// Retrieved at 12/8/2021, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.aec6bd456dbe66209ad1.js
+// Retrieved at 12/9/2021, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ProfileIdCard"], {
 		"./node_modules/lodash/compact.js": function(e, t) {
@@ -2935,13 +2935,13 @@
 			var n = r("./src/reddit/constants/tracking.ts"),
 				s = r("./src/reddit/selectors/telemetry.ts");
 			const o = e => t => ({
-					...Object(s.defaults)(t),
+					...Object(s.o)(t),
 					action: n.c.CLICK,
 					noun: `follower_list_page_${e?"follow":"unfollow"}`,
 					source: "profile"
 				}),
 				a = () => e => ({
-					...Object(s.defaults)(e),
+					...Object(s.o)(e),
 					action: n.c.CLICK,
 					noun: "follower_list_cta",
 					source: "profile"
@@ -2972,9 +2972,9 @@
 				s = r("./src/reddit/selectors/telemetry.ts"),
 				o = r("./src/reddit/selectors/user.ts");
 			const a = e => ({
-					screen: s.screen(e),
-					profile: s.profile(e),
-					subreddit: s.subreddit(e)
+					screen: s.ab(e),
+					profile: s.R(e),
+					subreddit: s.hb(e)
 				}),
 				i = e => t => ({
 					source: "user_dropdown",
@@ -2992,7 +2992,7 @@
 					source: "nav",
 					action: "click",
 					actionInfo: {
-						pageType: t.platform.currentPage ? s.getPageTypeFromCurrentPage(t.platform.currentPage) : void 0,
+						pageType: t.platform.currentPage ? s.v(t.platform.currentPage) : void 0,
 						settingValue: e ? "online" : "hidden"
 					},
 					noun: "online_presence_toggle",
@@ -3034,7 +3034,7 @@
 							userName: e
 						}).id
 					},
-					...s.defaults(t)
+					...s.o(t)
 				}),
 				b = e => t => ({
 					source: "profile",
@@ -3045,7 +3045,7 @@
 							userName: e
 						}).id
 					},
-					...s.defaults(t)
+					...s.o(t)
 				})
 		},
 		"./src/reddit/hooks/useLocale.ts": function(e, t, r) {
@@ -3306,4 +3306,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.dcc36d130ca58dbfe648.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.aec6bd456dbe66209ad1.js.map

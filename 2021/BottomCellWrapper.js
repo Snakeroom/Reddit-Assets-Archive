@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/BottomCellWrapper.457a8893aa21bbf8b42e.js
-// Retrieved at 12/8/2021, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/BottomCellWrapper.5ba7a2a719fb1c2b8531.js
+// Retrieved at 12/9/2021, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["BottomCellWrapper", "SignupUpsell"], {
 		"./src/reddit/components/ErrorBoundary/index.tsx": function(e, t, s) {
@@ -136,42 +136,42 @@
 					}, t))
 				},
 				b = s("./src/reddit/constants/experiments.ts"),
-				f = s("./src/reddit/selectors/telemetry.ts");
-			const g = "sso_signup";
-			var x;
+				g = s("./src/reddit/selectors/telemetry.ts");
+			const x = "sso_signup";
+			var f;
 			! function(e) {
 				e.Apple = "apple", e.Google = "google", e.Reddit = "reddit"
-			}(x || (x = {}));
+			}(f || (f = {}));
 			const j = () => e => ({
-					...Object(f.defaults)(e),
+					...Object(g.o)(e),
 					source: "popup",
 					action: "view",
-					noun: g,
-					actionInfo: Object(f.actionInfo)(e)
+					noun: x,
+					actionInfo: Object(g.d)(e)
 				}),
 				h = () => e => ({
-					...Object(f.defaults)(e),
+					...Object(g.o)(e),
 					source: "popup",
 					action: "dismiss",
-					noun: g,
-					actionInfo: Object(f.actionInfo)(e)
+					noun: x,
+					actionInfo: Object(g.d)(e)
 				}),
 				O = e => t => ({
-					...Object(f.defaults)(t),
+					...Object(g.o)(t),
 					source: "popup",
 					action: "click",
-					noun: g,
-					actionInfo: Object(f.actionInfo)(t, {
+					noun: x,
+					actionInfo: Object(g.d)(t, {
 						popup_button_text: "signup",
 						type: e
 					})
 				}),
 				E = () => e => ({
-					...Object(f.defaults)(e),
+					...Object(g.o)(e),
 					source: "popup",
 					action: "click",
-					noun: g,
-					actionInfo: Object(f.actionInfo)(e, {
+					noun: x,
+					actionInfo: Object(g.d)(e, {
 						popup_button_text: "login"
 					})
 				});
@@ -203,10 +203,10 @@
 							actionSource: c.a.GeoSignupUpsell
 						}))
 					},
-					f = () => {
+					g = () => {
 						m(), p(Object(r.k)())
 					},
-					g = function() {
+					x = function() {
 						const e = Object(i.e)(N.b),
 							t = Object(i.e)(N.d),
 							s = Object(i.e)(N.f),
@@ -267,7 +267,7 @@
 				}, l.createElement(_, {
 					Icon: k.a,
 					onClick: () => {
-						f(), s(O(x.Google))
+						g(), s(O(f.Google))
 					},
 					size: u.d.M,
 					iconClassName: I.a.googleIcon
@@ -276,7 +276,7 @@
 				})), l.createElement(_, {
 					Icon: C.a,
 					onClick: () => {
-						f(), s(O(x.Apple))
+						g(), s(O(f.Apple))
 					},
 					size: u.d.M,
 					iconClassName: I.a.appleIcon,
@@ -288,7 +288,7 @@
 				}, l.createElement(u.j, {
 					className: Object(d.a)(I.a.linkButton, I.a.emailButton),
 					onClick: () => {
-						f(), s(O(x.Reddit))
+						g(), s(O(f.Reddit))
 					},
 					redditStyle: !0,
 					size: u.d.XS
@@ -312,7 +312,7 @@
 						hk: "2uYhIL"
 					}),
 					className: I.a.img,
-					src: g
+					src: x
 				}), l.createElement("div", {
 					className: I.a.downloadAppLabel
 				}, H))))
@@ -399,4 +399,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BottomCellWrapper.457a8893aa21bbf8b42e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BottomCellWrapper.5ba7a2a719fb1c2b8531.js.map

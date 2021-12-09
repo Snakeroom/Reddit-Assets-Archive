@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.a239290e70ef2dfe1091.js
-// Retrieved at 12/9/2021, 10:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.8ef1e1ae5f804bb182e7.js
+// Retrieved at 12/9/2021, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -9559,9 +9559,9 @@
 				A = n("./src/reddit/helpers/flair.ts"),
 				F = n("./src/reddit/selectors/telemetry.ts");
 			const D = e => ({
-					subreddit: F.subreddit(e),
-					profile: F.profile(e),
-					userSubreddit: F.userSubreddit(e)
+					subreddit: F.hb(e),
+					profile: F.R(e),
+					userSubreddit: F.qb(e)
 				}),
 				L = e => t => ({
 					source: "grant_user_flair",
@@ -9578,7 +9578,7 @@
 					action: "autosave",
 					noun: e,
 					actionInfo: {
-						...F.actionInfo(n),
+						...F.d(n),
 						settingValue: t
 					},
 					...D(n)
@@ -11663,9 +11663,9 @@
 				k = n("./src/reddit/controls/Button/index.tsx"),
 				C = n("./src/reddit/selectors/telemetry.ts");
 			const y = e => ({
-					subreddit: C.subreddit(e),
-					profile: C.profile(e),
-					userSubreddit: C.userSubreddit(e)
+					subreddit: C.hb(e),
+					profile: C.R(e),
+					userSubreddit: C.qb(e)
 				}),
 				O = (e, t) => n => ({
 					source: "emoji",
@@ -11686,7 +11686,7 @@
 					source: "emoji",
 					action: "click",
 					noun: e,
-					actionInfo: C.actionInfo(n, {
+					actionInfo: C.d(n, {
 						count: t
 					}),
 					...y(n)
@@ -13830,8 +13830,8 @@
 			};
 			var w = n("./src/reddit/selectors/telemetry.ts");
 			const N = e => ({
-					subreddit: w.subreddit(e),
-					userSubreddit: w.userSubreddit(e)
+					subreddit: w.hb(e),
+					userSubreddit: w.qb(e)
 				}),
 				T = () => e => ({
 					source: "mod_log",
@@ -15050,8 +15050,8 @@
 				J = n("./src/reddit/components/TrackingHelper/index.tsx"),
 				Y = n("./src/reddit/selectors/telemetry.ts");
 			const Z = e => ({
-					screen: Y.screen(e),
-					subreddit: Y.subreddit(e)
+					screen: Y.ab(e),
+					subreddit: Y.hb(e)
 				}),
 				$ = e => t => ({
 					source: "remove_mod_invite",
@@ -16260,7 +16260,7 @@
 				}) => Object(h.i)(e, {
 					postId: t.id
 				}),
-				pageType: e => Object(g.actionInfo)(e).pageType
+				pageType: e => Object(g.d)(e).pageType
 			}));
 			class C extends a.a.Component {
 				constructor() {
@@ -21376,9 +21376,9 @@
 				P = n("./src/reddit/controls/Sortable/index.tsx"),
 				R = n("./src/reddit/selectors/telemetry.ts");
 			const A = e => ({
-					subreddit: R.subreddit(e),
-					profile: R.profile(e),
-					userSubreddit: R.userSubreddit(e)
+					subreddit: R.hb(e),
+					profile: R.R(e),
+					userSubreddit: R.qb(e)
 				}),
 				F = e => t => ({
 					source: "rules",
@@ -21390,7 +21390,7 @@
 					source: "rules",
 					action: "click",
 					noun: e,
-					actionInfo: R.actionInfo(n, {
+					actionInfo: R.d(n, {
 						count: t
 					}),
 					...A(n)
@@ -23553,8 +23553,8 @@
 						value: String(t),
 						oldValue: String(n)
 					},
-					subreddit: o.subreddit(s),
-					...o.defaults(s)
+					subreddit: o.hb(s),
+					...o.o(s)
 				}),
 				p = (e, t, n) => s => ({
 					source: m(e),
@@ -23564,23 +23564,23 @@
 						value: String(t),
 						oldValue: String(n)
 					},
-					subreddit: o.subreddit(s),
-					...o.defaults(s)
+					subreddit: o.hb(s),
+					...o.o(s)
 				}),
 				b = e => t => ({
 					source: "community_settings",
 					action: "click",
 					noun: l[e],
-					...o.defaults(t)
+					...o.o(t)
 				}),
 				h = e => t => ({
 					source: l[e],
 					action: "click",
 					noun: "r2_community_settings",
-					...o.defaults(t)
+					...o.o(t)
 				}),
 				g = (e, t, n, s) => a => ({
-					...o.defaults(a),
+					...o.o(a),
 					source: "mod_tools",
 					action: e,
 					noun: t,
@@ -23590,8 +23590,8 @@
 							oldValue: String(s)
 						}
 					},
-					subreddit: o.subreddit(a),
-					actionInfo: o.actionInfo(a, {
+					subreddit: o.hb(a),
+					actionInfo: o.d(a, {
 						reason: "welcome_message"
 					})
 				})
@@ -23760,27 +23760,27 @@
 					source: e,
 					action: "click",
 					noun: "invite_via_email",
-					...a.defaults(t),
-					subreddit: a.subreddit(t),
-					actionInfo: a.actionInfo(t),
+					...a.o(t),
+					subreddit: a.hb(t),
+					actionInfo: a.d(t),
 					correlationId: Object(s.e)(s.a.SubredditCreation, !1)
 				}),
 				o = () => e => ({
 					source: "email_invite_painted_door",
 					action: "view",
 					noun: "modal",
-					...a.defaults(e),
-					subreddit: a.subreddit(e),
-					actionInfo: a.actionInfo(e),
+					...a.o(e),
+					subreddit: a.hb(e),
+					actionInfo: a.d(e),
 					correlationId: Object(s.c)(s.a.SubredditCreation)
 				}),
 				i = e => t => ({
 					source: "email_invite_painted_door",
 					action: "click",
 					noun: e,
-					...a.defaults(t),
-					subreddit: a.subreddit(t),
-					actionInfo: a.actionInfo(t),
+					...a.o(t),
+					subreddit: a.hb(t),
+					actionInfo: a.d(t),
 					correlationId: Object(s.c)(s.a.SubredditCreation)
 				})
 		},
@@ -23807,7 +23807,7 @@
 						source: "meta",
 						action: "hover",
 						noun: "achieve_flair",
-						...o.defaults(i),
+						...o.o(i),
 						subreddit: {
 							id: t
 						},
@@ -23823,7 +23823,7 @@
 					source: "powerups",
 					action: "click",
 					noun: "view_your_achievements",
-					...o.defaults(e)
+					...o.o(e)
 				})
 		},
 		"./src/reddit/helpers/trackers/modHub.ts": function(e, t, n) {
@@ -23837,10 +23837,10 @@
 			}));
 			var s = n("./src/reddit/selectors/telemetry.ts");
 			const a = e => ({
-					screen: s.screen(e),
-					subreddit: s.subreddit(e),
-					profile: s.profile(e),
-					userSubreddit: s.userSubreddit(e)
+					screen: s.ab(e),
+					subreddit: s.hb(e),
+					profile: s.R(e),
+					userSubreddit: s.qb(e)
 				}),
 				r = e => t => ({
 					source: "mod_hub_nav",
@@ -23873,9 +23873,9 @@
 			var s = n("./src/lib/constants/index.ts"),
 				a = n("./src/reddit/selectors/telemetry.ts");
 			const r = e => ({
-					screen: a.screen(e),
-					profile: a.profile(e),
-					subreddit: a.subreddit(e)
+					screen: a.ab(e),
+					profile: a.R(e),
+					subreddit: a.hb(e)
 				}),
 				o = e => {
 					switch (e) {
@@ -25949,4 +25949,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.a239290e70ef2dfe1091.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.8ef1e1ae5f804bb182e7.js.map

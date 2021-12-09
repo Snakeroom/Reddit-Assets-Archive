@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.b1e3c4cd78d427865319.js
-// Retrieved at 12/8/2021, 2:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.b68ba6e7b9ebef6d704a.js
+// Retrieved at 12/9/2021, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -2294,9 +2294,9 @@
 				b = n("./src/reddit/selectors/telemetry.ts");
 			const f = e => ({
 					source: "toxicity_modal",
-					...b.defaults(e),
-					screen: b.screen(e),
-					subreddit: b.subreddit(e)
+					...b.o(e),
+					screen: b.ab(e),
+					subreddit: b.hb(e)
 				}),
 				_ = e => t => ({
 					action: h.c.VIEW,
@@ -3857,11 +3857,11 @@
 					return {
 						source: l,
 						action: o.c.CLICK,
-						...Object(c.defaults)(e),
-						screen: Object(c.screen)(e),
-						subreddit: Object(c.subreddit)(e),
-						post: t ? Object(c.post)(e, t) : null,
-						profile: Object(c.profile)(e),
+						...Object(c.o)(e),
+						screen: Object(c.ab)(e),
+						subreddit: Object(c.hb)(e),
+						post: t ? Object(c.I)(e, t) : null,
+						profile: Object(c.R)(e),
 						correlationId: Object(s.c)(s.a.CommentComposer)
 					}
 				},
@@ -3877,8 +3877,8 @@
 					return Object(d.a)({
 						noun: "comment",
 						...u(e),
-						comment: s ? Object(c.comment)(e, s) : null,
-						listing: Object(c.listing)(e, void 0, {
+						comment: s ? Object(c.j)(e, s) : null,
+						listing: Object(c.z)(e, void 0, {
 							depth: a
 						}),
 						commentComposer: {
@@ -3915,10 +3915,10 @@
 					source: "comment",
 					noun: "delete",
 					action: "click",
-					...Object(c.defaults)(t),
-					screen: Object(c.screen)(t),
-					subreddit: Object(c.subreddit)(t),
-					post: Object(c.post)(t, e)
+					...Object(c.o)(t),
+					screen: Object(c.ab)(t),
+					subreddit: Object(c.hb)(t),
+					post: Object(c.I)(t, e)
 				}), _ = e => Object(d.a)({
 					noun: "edit",
 					...u(e)
@@ -3946,18 +3946,18 @@
 			}));
 			var o = n("./src/reddit/selectors/telemetry.ts");
 			const s = e => t => ({
-					...o.defaults(t),
+					...o.o(t),
 					source: e,
 					action: "click",
 					noun: "request_to_join_button",
-					subreddit: o.subreddit(t)
+					subreddit: o.hb(t)
 				}),
 				r = e => t => ({
-					...o.defaults(t),
+					...o.o(t),
 					source: e,
 					action: "click",
 					noun: "request_to_join_submit",
-					subreddit: o.subreddit(t)
+					subreddit: o.hb(t)
 				})
 		},
 		"./src/reddit/helpers/trackers/restrictedCommunity.ts": function(e, t, n) {
@@ -3969,18 +3969,18 @@
 			}));
 			var o = n("./src/reddit/selectors/telemetry.ts");
 			const s = e => t => ({
-					...o.defaults(t),
+					...o.o(t),
 					source: e,
 					action: "click",
 					noun: "request_restricted_approval_button",
-					subreddit: o.subreddit(t)
+					subreddit: o.hb(t)
 				}),
 				r = e => t => ({
-					...o.defaults(t),
+					...o.o(t),
 					source: "request_restricted_approval_form",
 					action: "click",
 					noun: e,
-					subreddit: o.subreddit(t)
+					subreddit: o.hb(t)
 				})
 		},
 		"./src/reddit/icons/svgs/FormattingAlignCenter/index.m.less": function(e, t, n) {
@@ -4291,4 +4291,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.b1e3c4cd78d427865319.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.b68ba6e7b9ebef6d704a.js.map

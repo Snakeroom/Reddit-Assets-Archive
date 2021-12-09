@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.53f578c5d9be75a78964.js
-// Retrieved at 12/8/2021, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.6b5cd9c92e127518c69c.js
+// Retrieved at 12/9/2021, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./src/reddit/actions/economics/predictions/modTools.ts": function(e, t, s) {
@@ -359,7 +359,7 @@
 						source: "post_flair_picker",
 						action: "click",
 						noun: e,
-						subreddit: Object(C.subredditById)(t, this.props.subredditId)
+						subreddit: Object(C.ib)(t, this.props.subredditId)
 					}));
 					const t = Object(E.c)(e.flairs);
 					this.state = {
@@ -1084,10 +1084,10 @@
 			}));
 			var n = s("./src/reddit/selectors/telemetry.ts");
 			const o = (e, t) => ({
-					...Object(n.defaults)(e),
-					post: Object(n.post)(e, t),
-					predictions: Object(n.predictions)(e, t),
-					subreddit: Object(n.subreddit)(e)
+					...Object(n.o)(e),
+					post: Object(n.I)(e, t),
+					predictions: Object(n.O)(e, t),
+					subreddit: Object(n.hb)(e)
 				}),
 				r = e => t => ({
 					...o(t, e),
@@ -1283,4 +1283,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.53f578c5d9be75a78964.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.6b5cd9c92e127518c69c.js.map

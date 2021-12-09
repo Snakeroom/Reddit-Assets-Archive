@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.3245ed1534bda3a0422e.js
-// Retrieved at 12/8/2021, 4:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.2c99bf0be0405b3ea2f6.js
+// Retrieved at 12/9/2021, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -4704,9 +4704,9 @@
 			}(s || (s = {}));
 			const o = (e, t) => {
 					if (t) {
-						const a = c.media(e, t.post.id),
-							s = c.post(e, t.post.id),
-							n = c.subreddit(e);
+						const a = c.B(e, t.post.id),
+							s = c.I(e, t.post.id),
+							n = c.hb(e);
 						if (t.post.authorInfo && s && (s.authorId = t.post.authorInfo.id), a) {
 							a.streamPublicId = t.stream.stream_id, a.id = t.stream.stream_id;
 							const s = Object(r.j)(e, {
@@ -4721,7 +4721,7 @@
 						}
 					}
 					return {
-						subreddit: c.subreddit(e)
+						subreddit: c.hb(e)
 					}
 				},
 				i = (e, t, a) => {
@@ -4766,7 +4766,7 @@
 					action: "click",
 					noun: "enlarge",
 					...o(a, e),
-					actionInfo: c.actionInfo(a, {
+					actionInfo: c.d(a, {
 						position: t || 0
 					})
 				}),
@@ -4819,7 +4819,7 @@
 					playback: i(n, t, a),
 					...l(n),
 					...o(n, t),
-					actionInfo: c.actionInfo(n, {
+					actionInfo: c.d(n, {
 						referralId: s
 					})
 				}),
@@ -4899,8 +4899,8 @@
 					source: "post",
 					action: "view",
 					noun: "post",
-					profile: c.profile(t),
-					screen: c.screen(t),
+					profile: c.R(t),
+					screen: c.ab(t),
 					...o(t, e)
 				}),
 				S = e => t => {
@@ -4909,8 +4909,8 @@
 						source: "post",
 						action: "consume",
 						noun: "post",
-						profile: c.profile(t),
-						screen: c.screen(t),
+						profile: c.R(t),
+						screen: c.ab(t),
 						...a
 					}
 				},
@@ -4931,7 +4931,7 @@
 					action: "click",
 					noun: "subscribe",
 					...o(t, e),
-					targetSubreddit: c.subreddit(t)
+					targetSubreddit: c.hb(t)
 				}),
 				T = (e, t) => a => ({
 					source: "stream_player",
@@ -5026,13 +5026,13 @@
 			var s = a("./src/reddit/constants/categories.tsx"),
 				n = a("./src/reddit/selectors/telemetry.ts");
 			const r = e => t => ({
-					...n.defaults(t),
+					...n.o(t),
 					action: "click",
 					noun: Object(s.d)(e),
 					source: "leaderboard_category"
 				}),
 				c = (e, t, a) => r => ({
-					...n.defaults(r),
+					...n.o(r),
 					action: "click",
 					noun: e,
 					source: "leaderboard_featured_category",
@@ -5042,7 +5042,7 @@
 					}
 				}),
 				o = (e, t) => a => ({
-					...n.defaults(a),
+					...n.o(a),
 					action: "click",
 					noun: "subreddit",
 					source: "leaderboard_subreddit",
@@ -5053,7 +5053,7 @@
 					}
 				}),
 				i = (e, t) => a => ({
-					...n.defaults(a),
+					...n.o(a),
 					action: "click",
 					source: "leaderboard_subreddit",
 					noun: t ? "unsubscribe" : "subscribe",
@@ -5062,10 +5062,10 @@
 					}
 				}),
 				l = (e, t, a, r) => c => ({
-					...n.defaults(c),
+					...n.o(c),
 					action: "click",
 					actionInfo: {
-						...n.actionInfo(c),
+						...n.d(c),
 						position: r && r
 					},
 					noun: e,
@@ -5076,7 +5076,7 @@
 					}
 				}),
 				d = (e, t) => a => ({
-					...n.defaults(a),
+					...n.o(a),
 					action: "view",
 					noun: "leaderboard_right_rail",
 					source: "leaderboard_right_rail",
@@ -5086,7 +5086,7 @@
 					}
 				}),
 				u = (e, t) => a => ({
-					...n.defaults(a),
+					...n.o(a),
 					action: "click",
 					source: "leaderboard_right_rail",
 					noun: t ? "unsubscribe" : "subscribe",
@@ -6040,4 +6040,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.3245ed1534bda3a0422e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.2c99bf0be0405b3ea2f6.js.map

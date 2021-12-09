@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PushNotifications.d78c0075bf0fe7f1ea3a.js
-// Retrieved at 12/2/2021, 5:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PushNotifications.066a3cf3cf532a5f2ff1.js
+// Retrieved at 12/9/2021, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PushNotifications"], {
 		"./src/lib/notifications/token.ts": function(e, t, i) {
@@ -82,8 +82,8 @@
 				u = i("./src/lib/notifications/constants.ts"),
 				d = i("./src/lib/serviceWorker/index.ts"),
 				l = i("./src/reddit/actions/chat/toggle.ts"),
-				f = i("./src/reddit/actions/modal.ts"),
-				b = i("./src/reddit/actions/notifications/utils.ts"),
+				b = i("./src/reddit/actions/modal.ts"),
+				f = i("./src/reddit/actions/notifications/utils.ts"),
 				p = i("./src/reddit/actions/tabBadging.ts"),
 				g = i("./src/reddit/actions/toaster.ts"),
 				h = i("./src/reddit/helpers/parseUrl.ts"),
@@ -96,7 +96,7 @@
 			const w = async (e, t) => {
 				const i = Object(k.J)(e);
 				if (_) return;
-				if (_ = !0, Object(b.a)(e) !== u.c.NotificationsSupported) return;
+				if (_ = !0, Object(f.a)(e) !== u.c.NotificationsSupported) return;
 				await Object(d.a)();
 				navigator.serviceWorker.addEventListener("message", n => {
 					const s = n.data,
@@ -134,7 +134,7 @@
 				try {
 					switch (await Object(c.b)(s.gqlContext)) {
 						case c.a.Success:
-							Object(b.b)(u.a.Granted), O.k(o), e && t(Object(g.f)({
+							Object(f.b)(u.a.Granted), O.k(o), e && t(Object(g.f)({
 								kind: v.b.SuccessCommunity,
 								text: n.fbt._("Changes saved", null, {
 									hk: "wGH5U"
@@ -152,7 +152,7 @@
 				}
 			}, N = (e, t) => async i => {
 				try {
-					Object(b.b)(e);
+					Object(f.b)(e);
 					const s = await Object(d.a)();
 					if (s) {
 						const e = await s.pushManager.getSubscription();
@@ -166,19 +166,19 @@
 				} catch (s) {}
 			}, x = e => async (t, i) => {
 				const n = i();
-				if (Object(b.a)(n) === u.c.NotificationsSupported) switch (Object(a.a)()) {
+				if (Object(f.a)(n) === u.c.NotificationsSupported) switch (Object(a.a)()) {
 					case u.a.Default:
 					case u.a.Closed:
 						await t(S(!0, !0));
 						break;
 					case u.a.Denied:
-						t(Object(f.h)(e))
+						t(Object(b.h)(e))
 				}
 			}, C = () => async (e, t) => {
 				var i;
 				if (!(null === (i = null === navigator || void 0 === navigator ? void 0 : navigator.permissions) || void 0 === i ? void 0 : i.query)) return;
 				const n = t();
-				if (Object(b.a)(n) !== u.c.NotificationsSupported) return;
+				if (Object(f.a)(n) !== u.c.NotificationsSupported) return;
 				const s = await navigator.permissions.query({
 					name: "notifications"
 				});
@@ -207,7 +207,7 @@
 			})), i.d(t, "f", (function() {
 				return l
 			})), i.d(t, "j", (function() {
-				return b
+				return f
 			})), i.d(t, "k", (function() {
 				return p
 			})), i.d(t, "i", (function() {
@@ -225,7 +225,7 @@
 				s = i("./src/telemetry/index.ts"),
 				o = i("./src/telemetry/models/Event.ts");
 			const r = e => ({
-					...n.defaults(e),
+					...n.o(e),
 					noun: "desktop_notification_permissions"
 				}),
 				c = e => e ? "enable" : "disable",
@@ -257,48 +257,48 @@
 						source: "popup"
 					})
 				},
-				f = (e, t, i) => ({
-					...n.defaults(e),
-					actionInfo: n.actionInfo(e, {
+				b = (e, t, i) => ({
+					...n.o(e),
+					actionInfo: n.d(e, {
 						success: t,
 						reason: i
 					}),
 					noun: "push_token"
 				}),
-				b = e => {
+				f = e => {
 					Object(s.a)({
-						...f(e, !0),
+						...b(e, !0),
 						action: o.c.Request,
 						source: "notification"
 					})
 				},
 				p = e => {
 					Object(s.a)({
-						...f(e, !0),
+						...b(e, !0),
 						action: o.c.Register,
 						source: "notification"
 					})
 				},
 				g = (e, t) => {
 					Object(s.a)({
-						...f(e, !1, t),
+						...b(e, !1, t),
 						action: o.c.Bail,
 						source: "notification"
 					})
 				},
 				h = e => ({
-					...n.defaults(e),
+					...n.o(e),
 					noun: "push_notification"
 				}),
 				m = e => ({
 					...h(e),
-					notification: n.notification(e, void 0, void 0),
+					notification: n.E(e, void 0, void 0),
 					action: void 0,
 					source: "notification",
 					correlationId: void 0
 				}),
 				O = (e, t) => i => ({
-					...n.defaults(i),
+					...n.o(i),
 					action: c(e),
 					email: {
 						type: t
@@ -307,7 +307,7 @@
 					source: "email_app_settings"
 				}),
 				v = (e, t) => i => ({
-					...n.defaults(i),
+					...n.o(i),
 					action: c(e),
 					notification: {
 						type: t
@@ -316,7 +316,7 @@
 					source: "notification_app_settings"
 				}),
 				j = e => t => ({
-					...n.defaults(t),
+					...n.o(t),
 					source: "email_app_settings",
 					action: c(e),
 					noun: "email",
@@ -330,4 +330,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PushNotifications.d78c0075bf0fe7f1ea3a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PushNotifications.066a3cf3cf532a5f2ff1.js.map

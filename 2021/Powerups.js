@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Powerups.7405758d246c20a6da1d.js
-// Retrieved at 11/17/2021, 12:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Powerups.7820e81a023c01f20e42.js
+// Retrieved at 12/9/2021, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Powerups"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, a, t) {
@@ -689,7 +689,7 @@
 			}));
 			var n = t("./src/reddit/selectors/telemetry.ts");
 			const l = () => e => ({
-					...n.defaults(e),
+					...n.o(e),
 					source: "global",
 					action: "view",
 					noun: "screen",
@@ -698,13 +698,13 @@
 					}
 				}),
 				s = () => e => ({
-					...n.defaults(e),
+					...n.o(e),
 					source: "powerups_landing_page",
 					action: "click",
 					noun: "open_signup_modal"
 				}),
 				r = e => a => ({
-					...n.defaults(a),
+					...n.o(a),
 					source: "powerups_signup_form",
 					action: "click",
 					noun: "turn_on_powerups",
@@ -713,7 +713,7 @@
 					}
 				}),
 				o = () => e => ({
-					...n.defaults(e),
+					...n.o(e),
 					source: "powerups_landing_page",
 					action: "click",
 					noun: "community"
@@ -1583,4 +1583,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Powerups.7405758d246c20a6da1d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Powerups.7820e81a023c01f20e42.js.map

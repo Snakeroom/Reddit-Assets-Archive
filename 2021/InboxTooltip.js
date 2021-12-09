@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InboxTooltip.df3cc3687f42426a40a1.js
-// Retrieved at 12/2/2021, 5:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InboxTooltip.837b144b71cdcf4142d7.js
+// Retrieved at 12/9/2021, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InboxTooltip", "PushNotifications"], {
 		"./src/lib/notifications/token.ts": function(e, t, i) {
@@ -65,11 +65,11 @@
 			})), i.d(t, "requestNotificationsPermissions", (function() {
 				return w
 			})), i.d(t, "subscribeForPNs", (function() {
-				return I
+				return E
 			})), i.d(t, "unsubscribeFromPNs", (function() {
 				return y
 			})), i.d(t, "requestBrowserNotificationPermissionPromptByUser", (function() {
-				return E
+				return I
 			})), i.d(t, "subscribeToPermissionsChange", (function() {
 				return P
 			}));
@@ -125,11 +125,11 @@
 				}, (e, t) => {
 					n(Object(d.l)()), n(y(t ? d.a.Denied : d.a.Closed)), e && (t ? O.e(a) : O.f(a))
 				}, e => {
-					n(Object(d.m)()), n(I()), e && O.d(a)
+					n(Object(d.m)()), n(E()), e && O.d(a)
 				}, () => {
 					n(Object(d.k)()), i()
 				})
-			}, I = e => async (t, i, s) => {
+			}, E = e => async (t, i, s) => {
 				const o = i();
 				try {
 					switch (await Object(a.b)(s.gqlContext)) {
@@ -164,7 +164,7 @@
 						})))
 					}
 				} catch (s) {}
-			}, E = e => async (t, i) => {
+			}, I = e => async (t, i) => {
 				const n = i();
 				if (Object(f.a)(n) === d.c.NotificationsSupported) switch (Object(c.a)()) {
 					case d.a.Default:
@@ -188,7 +188,7 @@
 							e(y(d.a.Denied)), O.e(n);
 							break;
 						case d.a.Granted:
-							e(I()), O.d(n);
+							e(E()), O.d(n);
 							break;
 						default:
 							e(y(d.a.Default))
@@ -355,9 +355,9 @@
 				isLoggedIn: k,
 				isOpen: N,
 				isPending: w,
-				isPushNotificationsSupported: I,
+				isPushNotificationsSupported: E,
 				markAllAsRead: y,
-				markNotificationAsRead: E,
+				markNotificationAsRead: I,
 				messagesBadgeCount: P,
 				notifications: _,
 				showBrowserNotificationsPermissionSettings: B,
@@ -388,8 +388,8 @@
 					hideTooltip: u,
 					blockAwarder: p,
 					inboxBadgeCount: g,
-					isDNInboxPromptBannerFirstTimeEnabled: m && I,
-					isDNInboxPromptBannerPersistEnabled: h && I,
+					isDNInboxPromptBannerFirstTimeEnabled: m && E,
+					isDNInboxPromptBannerPersistEnabled: h && E,
 					isInboxExposureBannerEnabled: O,
 					isInboxPolicyBannerEnabled: j,
 					isInboxInfiniteScrollEnabled: x,
@@ -398,7 +398,7 @@
 					isLoggedIn: k,
 					isPending: w,
 					markAllAsRead: y,
-					markNotificationAsRead: E,
+					markNotificationAsRead: I,
 					messagesBadgeCount: P,
 					notifications: _,
 					setActiveOverflowMenuId: T,
@@ -436,7 +436,7 @@
 				s = i("./src/telemetry/index.ts"),
 				o = i("./src/telemetry/models/Event.ts");
 			const r = e => ({
-					...n.defaults(e),
+					...n.o(e),
 					noun: "desktop_notification_permissions"
 				}),
 				a = e => e ? "enable" : "disable",
@@ -469,8 +469,8 @@
 					})
 				},
 				l = (e, t, i) => ({
-					...n.defaults(e),
-					actionInfo: n.actionInfo(e, {
+					...n.o(e),
+					actionInfo: n.d(e, {
 						success: t,
 						reason: i
 					}),
@@ -498,18 +498,18 @@
 					})
 				},
 				m = e => ({
-					...n.defaults(e),
+					...n.o(e),
 					noun: "push_notification"
 				}),
 				h = e => ({
 					...m(e),
-					notification: n.notification(e, void 0, void 0),
+					notification: n.E(e, void 0, void 0),
 					action: void 0,
 					source: "notification",
 					correlationId: void 0
 				}),
 				O = (e, t) => i => ({
-					...n.defaults(i),
+					...n.o(i),
 					action: a(e),
 					email: {
 						type: t
@@ -518,7 +518,7 @@
 					source: "email_app_settings"
 				}),
 				j = (e, t) => i => ({
-					...n.defaults(i),
+					...n.o(i),
 					action: a(e),
 					notification: {
 						type: t
@@ -527,7 +527,7 @@
 					source: "notification_app_settings"
 				}),
 				x = e => t => ({
-					...n.defaults(t),
+					...n.o(t),
 					source: "email_app_settings",
 					action: a(e),
 					noun: "email",
@@ -541,4 +541,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InboxTooltip.df3cc3687f42426a40a1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InboxTooltip.837b144b71cdcf4142d7.js.map

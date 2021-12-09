@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.63929148832e2060bffa.js
-// Retrieved at 12/8/2021, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.bbe7ed2812d0ee286053.js
+// Retrieved at 12/9/2021, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -1696,23 +1696,23 @@
 				Ae = o("./src/reddit/selectors/telemetry.ts"),
 				we = o("./src/telemetry/models/Event.ts");
 			const Re = e => ({
-					screen: Object(Ae.screen)(e),
-					profile: Object(Ae.profile)(e),
-					subreddit: Object(Ae.subreddit)(e)
+					screen: Object(Ae.ab)(e),
+					profile: Object(Ae.R)(e),
+					subreddit: Object(Ae.hb)(e)
 				}),
 				Le = (e, t) => o => ({
 					action: "load",
 					noun: e,
-					post: Object(Ae.post)(o, t),
+					post: Object(Ae.I)(o, t),
 					source: we.b.ChatView,
-					subreddit: Object(Ae.subreddit)(o)
+					subreddit: Object(Ae.hb)(o)
 				}),
 				Pe = e => t => ({
 					source: "chat_post",
 					action: Se.c.VIEW,
 					noun: "last_message",
-					post: Object(Ae.post)(t, e),
-					comment: Object(Ae.comment)(t, e),
+					post: Object(Ae.I)(t, e),
+					comment: Object(Ae.j)(t, e),
 					...Re(t)
 				});
 			var Fe = o("./src/reddit/components/CommentsChat/Comment/Menu/index.m.less"),
@@ -1748,15 +1748,15 @@
 							source: "comment",
 							action: Se.c.CLICK,
 							noun: e,
-							post: Object(Ae.post)(o, t),
-							comment: Object(Ae.comment)(o, t),
+							post: Object(Ae.I)(o, t),
+							comment: Object(Ae.j)(o, t),
 							...Re(o)
 						}))(d, t.id)), r(((e, t) => o => ({
 							source: "comment_overflow_menu",
 							action: Se.c.CLICK,
 							noun: e,
-							post: Object(Ae.post)(o, t),
-							comment: Object(Ae.comment)(o, t),
+							post: Object(Ae.I)(o, t),
+							comment: Object(Ae.j)(o, t),
 							...Re(o)
 						}))(d, t.id)))
 					}
@@ -2976,7 +2976,7 @@
 						source: "meta",
 						action: "hover",
 						noun: "achieve_flair",
-						...a.defaults(i),
+						...a.o(i),
 						subreddit: {
 							id: t
 						},
@@ -2992,7 +2992,7 @@
 					source: "powerups",
 					action: "click",
 					noun: "view_your_achievements",
-					...a.defaults(e)
+					...a.o(e)
 				})
 		},
 		"./src/reddit/icons/fonts/Approve/index.tsx": function(e, t, o) {
@@ -3365,4 +3365,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.63929148832e2060bffa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.bbe7ed2812d0ee286053.js.map

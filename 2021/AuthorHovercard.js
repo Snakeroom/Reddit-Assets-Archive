@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.bf1a6c308dc0c5e935d5.js
-// Retrieved at 12/8/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.fd7ce8c1fc5ba9186198.js
+// Retrieved at 12/9/2021, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/lib/delay/index.ts": function(e, t, n) {
@@ -3073,7 +3073,7 @@
 					isViewed: n,
 					type: r
 				}) => s => ({
-					...l.defaults(s),
+					...l.o(s),
 					action: d.c.VIEW,
 					noun: "inbox_notification",
 					source: o.Inbox,
@@ -3094,7 +3094,7 @@
 					awardId: s
 				}) => a => {
 					Object(u.a)({
-						...l.defaults(a),
+						...l.o(a),
 						action: "receive",
 						noun: "inbox_notification",
 						source: o.Inbox,
@@ -3119,7 +3119,7 @@
 					awardId: s,
 					position: a
 				}) => i => ({
-					...l.defaults(i),
+					...l.o(i),
 					action: d.c.CLICK,
 					noun: "inbox_notification",
 					source: o.Inbox,
@@ -3142,7 +3142,7 @@
 					badgeCount: e,
 					tab: t
 				}) => n => ({
-					...l.defaults(n),
+					...l.o(n),
 					action: d.c.VIEW,
 					noun: "inbox",
 					source: o.Inbox,
@@ -3155,7 +3155,7 @@
 					badgeCount: e,
 					tab: t
 				}) => t => ({
-					...l.defaults(t),
+					...l.o(t),
 					action: d.c.VIEW,
 					noun: "mini_inbox",
 					source: o.Inbox,
@@ -3167,7 +3167,7 @@
 				v = ({
 					badgeCount: e
 				}) => t => ({
-					...l.defaults(t),
+					...l.o(t),
 					action: d.c.CLICK,
 					noun: "inbox",
 					source: o.Nav,
@@ -3182,7 +3182,7 @@
 					type: r,
 					awardId: s
 				}) => a => ({
-					...l.defaults(a),
+					...l.o(a),
 					action: d.c.CLICK,
 					noun: "inbox_notification_overflow",
 					source: o.Inbox,
@@ -3204,7 +3204,7 @@
 					isViewed: n,
 					type: r
 				}) => s => ({
-					...l.defaults(s),
+					...l.o(s),
 					action: d.c.VIEW,
 					noun: "inbox_notification_overflow",
 					source: o.Inbox,
@@ -3224,7 +3224,7 @@
 					isViewed: r,
 					type: s
 				}) => a => ({
-					...l.defaults(a),
+					...l.o(a),
 					action: d.c.CLICK,
 					noun: "overflow_option",
 					source: o.Inbox,
@@ -3237,7 +3237,7 @@
 						type: s
 					},
 					actionInfo: {
-						...l.actionInfo(a),
+						...l.d(a),
 						type: e
 					}
 				}),
@@ -3248,7 +3248,7 @@
 					isViewed: r,
 					type: s
 				}) => a => ({
-					...l.defaults(a),
+					...l.o(a),
 					action: d.c.UNDO,
 					noun: "overflow_option",
 					source: o.Inbox,
@@ -3261,32 +3261,32 @@
 						type: s
 					},
 					actionInfo: {
-						...l.actionInfo(a),
+						...l.d(a),
 						type: e
 					}
 				}),
 				C = e => t => ({
-					...l.defaults(t),
+					...l.o(t),
 					action: d.c.CLICK,
 					noun: "notification_app_settings",
 					source: o.Inbox,
 					actionInfo: {
-						...l.actionInfo(t),
+						...l.d(t),
 						pageType: e
 					}
 				}),
 				E = () => e => ({
-					...l.defaults(e),
+					...l.o(e),
 					action: d.c.CLICK,
 					noun: "see_all",
 					source: o.Inbox,
 					actionInfo: {
-						...l.actionInfo(e),
+						...l.d(e),
 						pageType: a.MiniInbox
 					}
 				}),
 				O = () => e => ({
-					...l.defaults(e),
+					...l.o(e),
 					action: d.c.CLICK,
 					noun: "messages",
 					source: o.Inbox
@@ -3294,33 +3294,33 @@
 				y = ({
 					isMiniInbox: e
 				}) => t => ({
-					...l.defaults(t),
+					...l.o(t),
 					action: d.c.CLICK,
 					noun: "mark_all_as_read",
 					source: o.Inbox,
 					actionInfo: e ? {
-						...l.actionInfo(t),
+						...l.d(t),
 						pageType: a.MiniInbox
 					} : {}
 				}),
 				j = (e, t) => n => ({
-					...l.defaults(n),
+					...l.o(n),
 					action: d.c.CLICK,
 					noun: "policy_banner",
 					source: o.Inbox,
 					actionInfo: {
-						...l.actionInfo(n),
+						...l.d(n),
 						pageType: e,
 						type: t
 					}
 				}),
 				N = () => e => ({
-					...l.defaults(e),
+					...l.o(e),
 					action: d.c.CLICK,
 					noun: "inbox_banner",
 					source: o.Inbox,
 					actionInfo: {
-						...l.actionInfo(e),
+						...l.d(e),
 						type: "2021Recap"
 					}
 				})
@@ -3702,4 +3702,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.bf1a6c308dc0c5e935d5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.fd7ce8c1fc5ba9186198.js.map

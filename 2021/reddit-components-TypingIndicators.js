@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-TypingIndicators.cbeebfe3cceec6c99b51.js
-// Retrieved at 12/1/2021, 1:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-TypingIndicators.acf64033f1a64ed86a22.js
+// Retrieved at 12/9/2021, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-TypingIndicators", "ReadingIndicator"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, s, t) {
@@ -275,12 +275,12 @@
 				source: u.a,
 				action: "view",
 				noun: "typing_indicator",
-				...i.defaults(t),
-				actionInfo: i.actionInfo(t, {
+				...i.o(t),
+				actionInfo: i.d(t, {
 					reason: s.toString()
 				}),
-				post: i.post(t, e),
-				subreddit: i.subreddit(t)
+				post: i.I(t, e),
+				subreddit: i.hb(t)
 			}))();
 			var m = t("./src/reddit/hooks/useClassNameOnMount.ts"),
 				p = t("./src/reddit/hooks/useTracking.ts"),
@@ -425,4 +425,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-TypingIndicators.cbeebfe3cceec6c99b51.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-TypingIndicators.acf64033f1a64ed86a22.js.map

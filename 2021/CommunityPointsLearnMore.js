@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.85895891d904928b43e4.js
-// Retrieved at 12/8/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.122972554f6705063bd9.js
+// Retrieved at 12/9/2021, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityPointsLearnMore"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, o) {
@@ -1407,17 +1407,17 @@
 			}));
 			var n = o("./src/reddit/selectors/telemetry.ts");
 			const a = e => t => ({
-					...Object(n.defaults)(t),
+					...Object(n.o)(t),
 					source: "meta",
 					action: e,
 					noun: "feed_claim_points_banner",
-					subreddit: Object(n.subreddit)(t)
+					subreddit: Object(n.hb)(t)
 				}),
 				i = () => a("view"),
 				r = () => a("tap"),
 				s = () => a("dismiss"),
 				l = () => e => ({
-					...Object(n.defaults)(e),
+					...Object(n.o)(e),
 					source: "meta",
 					action: "view",
 					noun: "points_learn_more",
@@ -1426,7 +1426,7 @@
 					}
 				}),
 				u = () => e => ({
-					...Object(n.defaults)(e),
+					...Object(n.o)(e),
 					source: "meta",
 					action: "view",
 					noun: "points_faq",
@@ -1435,7 +1435,7 @@
 					}
 				}),
 				c = e => t => ({
-					...Object(n.defaults)(t),
+					...Object(n.o)(t),
 					source: "meta",
 					action: "view",
 					noun: "points_faq_section",
@@ -1444,17 +1444,17 @@
 					}
 				}),
 				d = () => e => ({
-					...Object(n.defaults)(e),
+					...Object(n.o)(e),
 					source: "meta",
 					action: "click",
 					noun: "learn_more_create_vault_button"
 				}),
 				m = e => t => ({
-					...Object(n.defaults)(t),
+					...Object(n.o)(t),
 					source: "meta",
 					action: "click",
 					noun: "cancel_membership_with_points",
-					subreddit: Object(n.subredditById)(t, e)
+					subreddit: Object(n.ib)(t, e)
 				})
 		},
 		"./src/reddit/models/Payments/index.ts": function(e, t, o) {
@@ -4077,4 +4077,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.85895891d904928b43e4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.122972554f6705063bd9.js.map

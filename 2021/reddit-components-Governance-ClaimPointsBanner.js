@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-ClaimPointsBanner.632e38a6e6cb7593082a.js
-// Retrieved at 12/6/2021, 1:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-ClaimPointsBanner.4c4cbd3a230e0adf35c9.js
+// Retrieved at 12/9/2021, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-ClaimPointsBanner"], {
 		"./src/lib/constants/specialMembership.ts": function(A, e, t) {
@@ -225,9 +225,9 @@
 			})), t.d(e, "o", (function() {
 				return I
 			})), t.d(e, "p", (function() {
-				return f
-			})), t.d(e, "q", (function() {
 				return E
+			})), t.d(e, "q", (function() {
+				return f
 			})), t.d(e, "r", (function() {
 				return C
 			})), t.d(e, "s", (function() {
@@ -258,8 +258,8 @@
 				l = "GOVERNANCE__PUBLIC_WALLET_INFO_PENDING",
 				b = "GOVERNANCE__PUBLIC_WALLET_INFO_SUCCESS",
 				I = "GOVERNANCE__RELEASE_NOTES_MODAL_OPENED",
-				f = "GOVERNANCE__RELEASE_NOTES_SUCCESS",
-				E = "GOVERNANCE__TRANSFER_FAILURE",
+				E = "GOVERNANCE__RELEASE_NOTES_SUCCESS",
+				f = "GOVERNANCE__TRANSFER_FAILURE",
 				C = "GOVERNANCE__TRANSFER_MODAL_OPENED",
 				x = "GOVERNANCE__TRANSFER_PENDING",
 				h = "GOVERNANCE__TRANSFER_SUCCESS",
@@ -301,8 +301,8 @@
 				l = t("./src/reddit/endpoints/economics/banners.ts"),
 				b = t("./src/reddit/helpers/trackers/communityPoints.ts"),
 				I = t("./src/reddit/icons/svgs/Close/index.tsx"),
-				f = t("./src/reddit/selectors/crypto/claims.ts"),
-				E = t("./src/reddit/selectors/crypto/points.ts"),
+				E = t("./src/reddit/selectors/crypto/claims.ts"),
+				f = t("./src/reddit/selectors/crypto/points.ts"),
 				C = t("./src/reddit/selectors/economics.ts"),
 				x = t("./src/reddit/selectors/subreddit.ts"),
 				h = t("./src/reddit/components/Governance/TokenAmount/index.tsx"),
@@ -394,15 +394,15 @@
 				bannerIsVisible: (A, {
 					subredditId: e
 				}) => !1 === Object(C.g)(A, e, l.a.ClaimPoints),
-				isClaimingPoints: f.a,
-				nextAvailableClaim: f.b,
+				isClaimingPoints: E.a,
+				nextAvailableClaim: E.b,
 				pointsCopy: C.m,
 				subreddit: x.R,
 				tokenName: (A, {
 					subredditId: e
 				}) => {
 					var t;
-					return null === (t = Object(E.b)(A, e)) || void 0 === t ? void 0 : t.name
+					return null === (t = Object(f.b)(A, e)) || void 0 === t ? void 0 : t.name
 				}
 			});
 			e.default = Object(p.c)(Object(a.b)(N, (A, {
@@ -600,7 +600,7 @@
 			})), t.d(e, "f", (function() {
 				return I
 			})), t.d(e, "n", (function() {
-				return f
+				return E
 			}));
 			var n, r = t("./src/config.ts"),
 				i = t("./src/reddit/endpoints/governance/requester.ts");
@@ -698,7 +698,7 @@
 					recipientAddress: t,
 					amount: n
 				});
-			async function f(A, e) {
+			async function E(A, e) {
 				return await Object(i.a)(A, {
 					method: "put",
 					endpoint: `${r.a.metaUrl}/crypto/ethereum/transaction-intent`,
@@ -776,17 +776,17 @@
 			}));
 			var n = t("./src/reddit/selectors/telemetry.ts");
 			const r = A => e => ({
-					...Object(n.defaults)(e),
+					...Object(n.o)(e),
 					source: "meta",
 					action: A,
 					noun: "feed_claim_points_banner",
-					subreddit: Object(n.subreddit)(e)
+					subreddit: Object(n.hb)(e)
 				}),
 				i = () => r("view"),
 				s = () => r("tap"),
 				a = () => r("dismiss"),
 				o = () => A => ({
-					...Object(n.defaults)(A),
+					...Object(n.o)(A),
 					source: "meta",
 					action: "view",
 					noun: "points_learn_more",
@@ -795,7 +795,7 @@
 					}
 				}),
 				d = () => A => ({
-					...Object(n.defaults)(A),
+					...Object(n.o)(A),
 					source: "meta",
 					action: "view",
 					noun: "points_faq",
@@ -804,7 +804,7 @@
 					}
 				}),
 				c = A => e => ({
-					...Object(n.defaults)(e),
+					...Object(n.o)(e),
 					source: "meta",
 					action: "view",
 					noun: "points_faq_section",
@@ -813,17 +813,17 @@
 					}
 				}),
 				u = () => A => ({
-					...Object(n.defaults)(A),
+					...Object(n.o)(A),
 					source: "meta",
 					action: "click",
 					noun: "learn_more_create_vault_button"
 				}),
 				m = A => e => ({
-					...Object(n.defaults)(e),
+					...Object(n.o)(e),
 					source: "meta",
 					action: "click",
 					noun: "cancel_membership_with_points",
-					subreddit: Object(n.subredditById)(e, A)
+					subreddit: Object(n.ib)(e, A)
 				})
 		},
 		"./src/reddit/models/Badge/managementPage.ts": function(A, e, t) {
@@ -1333,9 +1333,9 @@
 			})), t.d(e, "o", (function() {
 				return I
 			})), t.d(e, "a", (function() {
-				return f
-			})), t.d(e, "x", (function() {
 				return E
+			})), t.d(e, "x", (function() {
+				return f
 			})), t.d(e, "f", (function() {
 				return C
 			})), t.d(e, "i", (function() {
@@ -1411,18 +1411,18 @@
 					const t = b(A, e);
 					return t && t.endsAt || null
 				};
-			var f;
+			var E;
 			! function(A) {
 				A[A.DontKnow = 0] = "DontKnow", A[A.NotSubscribed = 1] = "NotSubscribed", A[A.Subscribed = 2] = "Subscribed"
-			}(f || (f = {}));
-			const E = (A, e) => {
+			}(E || (E = {}));
+			const f = (A, e) => {
 					const t = A.economics.subredditPremium[e];
 					if (t && t.status === u.a.Fetched) {
 						const t = I(A, e),
 							n = Date.now();
-						return t && n < t ? f.Subscribed : f.NotSubscribed
+						return t && n < t ? E.Subscribed : E.NotSubscribed
 					}
-					return f.DontKnow
+					return E.DontKnow
 				},
 				C = (A, e) => {
 					const t = A.user.account,
@@ -1623,4 +1623,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-ClaimPointsBanner.632e38a6e6cb7593082a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-ClaimPointsBanner.4c4cbd3a230e0adf35c9.js.map

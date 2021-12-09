@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67.7efd1bba3b6e64f85780.js
-// Retrieved at 12/2/2021, 6:50:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67.553e55912c76f2571c62.js
+// Retrieved at 12/9/2021, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67"], {
 		"./src/reddit/components/Governance/TransactionModals/ApprovalModal/ApprovalBar.m.less": function(A, e, t) {
@@ -1056,11 +1056,11 @@
 			var a = t("./src/reddit/selectors/telemetry.ts");
 			const i = (A, e, t, i, s) => r => {
 					const n = {
-						...Object(a.defaults)(r),
+						...Object(a.o)(r),
 						source: "meta",
 						action: A,
 						noun: "transaction",
-						subreddit: Object(a.subredditById)(r, t),
+						subreddit: Object(a.ib)(r, t),
 						actionInfo: {
 							settingValue: e,
 							reason: s
@@ -1076,19 +1076,19 @@
 					source: "meta",
 					action: "open",
 					noun: "gif_tooltip",
-					subreddit: e ? Object(a.subredditById)(t, e) : void 0,
+					subreddit: e ? Object(a.ib)(t, e) : void 0,
 					correlationId: A,
-					...Object(a.defaults)(t)
+					...Object(a.o)(t)
 				}),
 				o = (A, e) => t => ({
 					source: "meta",
 					action: "open",
 					noun: "gif_upsell",
-					subreddit: e ? Object(a.subredditById)(t, e) : void 0,
+					subreddit: e ? Object(a.ib)(t, e) : void 0,
 					correlationId: A,
-					...Object(a.defaults)(t)
+					...Object(a.o)(t)
 				})
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67.7efd1bba3b6e64f85780.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67.553e55912c76f2571c62.js.map

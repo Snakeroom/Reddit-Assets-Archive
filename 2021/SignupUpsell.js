@@ -1,15 +1,15 @@
-// https://www.redditstatic.com/desktop2x/SignupUpsell.712b1f89a3911351424c.js
-// Retrieved at 12/8/2021, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SignupUpsell.9aedf781426f19c025e9.js
+// Retrieved at 12/9/2021, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SignupUpsell"], {
-		"./src/reddit/components/Upsell/SSOButton/index.m.less": function(e, t, n) {
+		"./src/reddit/components/Upsell/SSOButton/index.m.less": function(e, t, s) {
 			e.exports = {
 				button: "_30NsIuzSAL8hr8pX_EgPrL",
 				buttonText: "u8ATxbDZMIGHOm6Gh-K_l",
 				icon: "_2dHQxDx0lcVjcJcVL0HfBI"
 			}
 		},
-		"./src/reddit/components/Upsell/SignupUpsell/index.m.less": function(e, t, n) {
+		"./src/reddit/components/Upsell/SignupUpsell/index.m.less": function(e, t, s) {
 			e.exports = {
 				wrapper: "_1HeIJdMDEHWk_NuYt41dSe",
 				img: "_3ojpx9Fdtg3iKW_IB_83l4",
@@ -28,25 +28,25 @@
 				closeButton: "_2qFn4QNDGodlEOt4HDqRcG"
 			}
 		},
-		"./src/reddit/components/Upsell/SignupUpsell/index.tsx": function(e, t, n) {
+		"./src/reddit/components/Upsell/SignupUpsell/index.tsx": function(e, t, s) {
 			"use strict";
-			n.r(t);
-			var s = n("./src/config.ts"),
-				o = n("./node_modules/fbt/lib/FbtPublic.js"),
-				i = n("./node_modules/react/index.js"),
-				l = n("./node_modules/react-redux/es/index.js"),
-				c = n("./src/reddit/actions/login.ts"),
-				r = n("./src/reddit/actions/modal.ts"),
-				a = n("./src/reddit/components/TrackingHelper/index.tsx"),
-				d = n("./src/lib/classNames/index.ts"),
-				u = n("./src/reddit/controls/Button/index.tsx"),
-				p = n("./src/reddit/components/Upsell/SSOButton/index.m.less"),
-				m = n.n(p);
+			s.r(t);
+			var n = s("./src/config.ts"),
+				o = s("./node_modules/fbt/lib/FbtPublic.js"),
+				i = s("./node_modules/react/index.js"),
+				l = s("./node_modules/react-redux/es/index.js"),
+				c = s("./src/reddit/actions/login.ts"),
+				r = s("./src/reddit/actions/modal.ts"),
+				a = s("./src/reddit/components/TrackingHelper/index.tsx"),
+				d = s("./src/lib/classNames/index.ts"),
+				u = s("./src/reddit/controls/Button/index.tsx"),
+				p = s("./src/reddit/components/Upsell/SSOButton/index.m.less"),
+				m = s.n(p);
 			var _ = function({
 					Icon: e,
 					children: t,
-					onClick: n,
-					size: s,
+					onClick: s,
+					size: n,
 					iconClassName: o,
 					className: l
 				}) {
@@ -56,61 +56,61 @@
 						iconClassName: Object(d.a)(m.a.icon, o),
 						iconPosition: u.h.L,
 						isFullWidth: !0,
-						onClick: n,
+						onClick: s,
 						priority: u.c.Secondary,
 						redditStyle: !0,
-						size: s
+						size: n
 					}, i.createElement("span", {
 						className: m.a.buttonText
 					}, t))
 				},
-				b = n("./src/reddit/constants/experiments.ts"),
-				g = n("./src/reddit/selectors/telemetry.ts");
+				b = s("./src/reddit/constants/experiments.ts"),
+				g = s("./src/reddit/selectors/telemetry.ts");
 			const f = "sso_signup";
 			var x;
 			! function(e) {
 				e.Apple = "apple", e.Google = "google", e.Reddit = "reddit"
 			}(x || (x = {}));
 			const O = () => e => ({
-					...Object(g.defaults)(e),
+					...Object(g.o)(e),
 					source: "popup",
 					action: "view",
 					noun: f,
-					actionInfo: Object(g.actionInfo)(e)
+					actionInfo: Object(g.d)(e)
 				}),
 				j = () => e => ({
-					...Object(g.defaults)(e),
+					...Object(g.o)(e),
 					source: "popup",
 					action: "dismiss",
 					noun: f,
-					actionInfo: Object(g.actionInfo)(e)
+					actionInfo: Object(g.d)(e)
 				}),
 				h = e => t => ({
-					...Object(g.defaults)(t),
+					...Object(g.o)(t),
 					source: "popup",
 					action: "click",
 					noun: f,
-					actionInfo: Object(g.actionInfo)(t, {
+					actionInfo: Object(g.d)(t, {
 						popup_button_text: "signup",
 						type: e
 					})
 				}),
 				E = () => e => ({
-					...Object(g.defaults)(e),
+					...Object(g.o)(e),
 					source: "popup",
 					action: "click",
 					noun: f,
-					actionInfo: Object(g.actionInfo)(e, {
+					actionInfo: Object(g.d)(e, {
 						popup_button_text: "login"
 					})
 				});
-			var N = n("./src/reddit/hooks/promo/useIsSignupUpsellVariantEligible.ts"),
-				B = n("./src/reddit/icons/svgs/AppleLogo/index.tsx"),
-				I = n("./src/reddit/icons/svgs/Close/index.tsx"),
-				v = n("./src/reddit/icons/svgs/GoogleLogo/index.tsx"),
-				k = n("./src/reddit/selectors/experiments/signupUpsellExperiment.ts"),
-				S = n("./src/reddit/components/Upsell/SignupUpsell/index.m.less"),
-				C = n.n(S);
+			var N = s("./src/reddit/hooks/promo/useIsSignupUpsellVariantEligible.ts"),
+				B = s("./src/reddit/icons/svgs/AppleLogo/index.tsx"),
+				v = s("./src/reddit/icons/svgs/Close/index.tsx"),
+				k = s("./src/reddit/icons/svgs/GoogleLogo/index.tsx"),
+				S = s("./src/reddit/selectors/experiments/signupUpsellExperiment.ts"),
+				I = s("./src/reddit/components/Upsell/SignupUpsell/index.m.less"),
+				C = s.n(I);
 			const L = {
 					S: "small",
 					L: "large"
@@ -122,10 +122,10 @@
 				onDismiss: e,
 				size: t
 			}) {
-				const n = Object(a.b)();
+				const s = Object(a.b)();
 				i.useEffect(() => {
-					n(O())
-				}, [n]);
+					s(O())
+				}, [s]);
 				const p = Object(l.d)(),
 					m = () => {
 						p(Object(r.k)({
@@ -136,9 +136,9 @@
 						m(), p(Object(c.k)())
 					},
 					f = function() {
-						const e = Object(l.e)(k.b),
-							t = Object(l.e)(k.d),
-							n = Object(l.e)(k.f),
+						const e = Object(l.e)(S.b),
+							t = Object(l.e)(S.d),
+							s = Object(l.e)(S.f),
 							o = Object(N.a)(b.ec.Bottom_sheet),
 							i = Object(N.a)(b.ec.Bottom_cell),
 							c = Object(N.a)(b.ec.Bottom_cell_dismissible),
@@ -149,10 +149,10 @@
 						if (e) u = w;
 						else if (t) u = U;
 						else {
-							if (!n) throw new Error("Not eligible for signup upsell");
+							if (!s) throw new Error("Not eligible for signup upsell");
 							u = y
 						}
-						const p = `${s.a.assetPath}/img/upsell/appQrCode/${u}/`;
+						const p = `${n.a.assetPath}/img/upsell/appQrCode/${u}/`;
 						if (o) return `${p}bottom_sheet.png`;
 						if (i) return `${p}bottom_cell.png`;
 						if (c) return `${p}bottom_cell_dismissible.png`;
@@ -161,9 +161,9 @@
 						if (e && d) return `${p}bottom_cell_surprise_install_copy.png`;
 						throw new Error("Invalid variant for signup upsell")
 					}(),
-					S = Object(N.a)(b.ec.Bottom_cell_signup_upsell_copy),
+					I = Object(N.a)(b.ec.Bottom_cell_signup_upsell_copy),
 					D = Object(N.a)(b.ec.Bottom_cell_surprise_install_copy),
-					A = S ? o.fbt._("Come join us, we have snacks", null, {
+					A = I ? o.fbt._("Come join us, we have snacks", null, {
 						hk: "1LUl2W"
 					}) : o.fbt._("Log in or sign up for the best experience", null, {
 						hk: "2LAHQy"
@@ -184,19 +184,19 @@
 					}),
 					className: C.a.closeButton,
 					onClick: () => {
-						e(), n(j())
+						e(), s(j())
 					},
 					type: "button"
-				}, i.createElement(I.a, null)), i.createElement("div", {
+				}, i.createElement(v.a, null)), i.createElement("div", {
 					className: C.a.title
 				}, A), i.createElement("div", {
 					className: C.a.bottom
 				}, i.createElement("div", {
 					className: C.a.left
 				}, i.createElement(_, {
-					Icon: v.a,
+					Icon: k.a,
 					onClick: () => {
-						g(), n(h(x.Google))
+						g(), s(h(x.Google))
 					},
 					size: u.d.M,
 					iconClassName: C.a.googleIcon
@@ -205,7 +205,7 @@
 				})), i.createElement(_, {
 					Icon: B.a,
 					onClick: () => {
-						g(), n(h(x.Apple))
+						g(), s(h(x.Apple))
 					},
 					size: u.d.M,
 					iconClassName: C.a.appleIcon,
@@ -217,7 +217,7 @@
 				}, i.createElement(u.j, {
 					className: Object(d.a)(C.a.linkButton, C.a.emailButton),
 					onClick: () => {
-						g(), n(h(x.Reddit))
+						g(), s(h(x.Reddit))
 					},
 					redditStyle: !0,
 					size: u.d.XS
@@ -226,7 +226,7 @@
 				})), i.createElement(u.j, {
 					className: C.a.linkButton,
 					onClick: () => {
-						m(), p(Object(c.i)()), n(E())
+						m(), p(Object(c.i)()), s(E())
 					},
 					redditStyle: !0,
 					size: u.d.XS
@@ -247,45 +247,45 @@
 				}, H))))
 			}
 		},
-		"./src/reddit/hooks/promo/useIsSignupUpsellVariantEligible.ts": function(e, t, n) {
+		"./src/reddit/hooks/promo/useIsSignupUpsellVariantEligible.ts": function(e, t, s) {
 			"use strict";
-			n.d(t, "a", (function() {
+			s.d(t, "a", (function() {
 				return i
 			}));
-			var s = n("./node_modules/react-redux/es/index.js"),
-				o = n("./src/reddit/selectors/experiments/signupUpsellExperiment.ts");
+			var n = s("./node_modules/react-redux/es/index.js"),
+				o = s("./src/reddit/selectors/experiments/signupUpsellExperiment.ts");
 
 			function i(e) {
-				const t = Object(s.e)(o.a) === e,
-					n = Object(s.e)(o.c) === e,
-					i = Object(s.e)(o.e) === e;
-				return t || n || i
+				const t = Object(n.e)(o.a) === e,
+					s = Object(n.e)(o.c) === e,
+					i = Object(n.e)(o.e) === e;
+				return t || s || i
 			}
 		},
-		"./src/reddit/selectors/experiments/signupUpsellExperiment.ts": function(e, t, n) {
+		"./src/reddit/selectors/experiments/signupUpsellExperiment.ts": function(e, t, s) {
 			"use strict";
-			n.d(t, "a", (function() {
+			s.d(t, "a", (function() {
 				return d
-			})), n.d(t, "c", (function() {
+			})), s.d(t, "c", (function() {
 				return u
-			})), n.d(t, "e", (function() {
+			})), s.d(t, "e", (function() {
 				return p
-			})), n.d(t, "b", (function() {
+			})), s.d(t, "b", (function() {
 				return m
-			})), n.d(t, "d", (function() {
+			})), s.d(t, "d", (function() {
 				return _
-			})), n.d(t, "f", (function() {
+			})), s.d(t, "f", (function() {
 				return b
 			}));
-			var s = n("./node_modules/reselect/es/index.js"),
-				o = n("./src/reddit/constants/experiments.ts"),
-				i = n("./src/reddit/helpers/chooseVariant/index.ts"),
-				l = n("./src/reddit/selectors/meta.ts"),
-				c = n("./src/reddit/selectors/experiments/index.ts");
-			const r = Object(s.a)(l.g, l.d, c.e, (e, t, n) => !e && !t && !n);
+			var n = s("./node_modules/reselect/es/index.js"),
+				o = s("./src/reddit/constants/experiments.ts"),
+				i = s("./src/reddit/helpers/chooseVariant/index.ts"),
+				l = s("./src/reddit/selectors/meta.ts"),
+				c = s("./src/reddit/selectors/experiments/index.ts");
+			const r = Object(n.a)(l.g, l.d, c.e, (e, t, s) => !e && !t && !s);
 
 			function a(e, t) {
-				return n => Object(i.c)(n, {
+				return s => Object(i.c)(s, {
 					experimentName: e,
 					experimentEligibilitySelector: r,
 					throttledVariants: {
@@ -305,4 +305,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SignupUpsell.712b1f89a3911351424c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SignupUpsell.9aedf781426f19c025e9.js.map

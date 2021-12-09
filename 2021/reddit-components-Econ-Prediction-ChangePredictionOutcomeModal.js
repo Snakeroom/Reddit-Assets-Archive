@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-ChangePredictionOutcomeModal.e32767d6332f51ed09fe.js
-// Retrieved at 12/1/2021, 11:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-ChangePredictionOutcomeModal.49f1da3bda73c1f2910b.js
+// Retrieved at 12/9/2021, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction-ChangePredictionOutcomeModal"], {
 		"./src/reddit/actions/economics/predictions/modTools.ts": function(e, t, n) {
@@ -114,8 +114,8 @@
 				_ = n("./src/reddit/icons/svgs/CircleCheck/index.tsx"),
 				E = n("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
 				h = n("./src/reddit/selectors/posts.ts"),
-				f = n("./src/reddit/components/Econ/Prediction/ChangePredictionOutcomeModal/index.m.less"),
-				C = n.n(f);
+				C = n("./src/reddit/components/Econ/Prediction/ChangePredictionOutcomeModal/index.m.less"),
+				f = n.n(C);
 			const j = Object(r.a)(({
 					options: e,
 					resolvedOptionId: t,
@@ -124,33 +124,33 @@
 				}) => {
 					const [r, a] = Object(i.useState)(null);
 					return d.a.createElement(u.e, {
-						className: C.a.modal
+						className: f.a.modal
 					}, d.a.createElement(u.i, null, d.a.createElement(E.a, null, d.a.createElement(u.q, null, c.fbt._("Change the outcome", null, {
 						hk: "2KHNhY"
 					})), d.a.createElement(p.a, {
 						onClick: s
 					}, d.a.createElement(u.b, null)))), d.a.createElement(u.l, null, d.a.createElement("p", {
-						className: C.a.description
+						className: f.a.description
 					}, c.fbt._("Once you change the outcome of this prediction, tokens will be redistributed and we'll notify all the players.", null, {
 						hk: "2H4TgG"
 					}), d.a.createElement("span", {
-						className: C.a.descriptionWarning
+						className: f.a.descriptionWarning
 					}, c.fbt._("You can only change the outcome once.", null, {
 						hk: "2Bta7x"
 					}))), e.map(e => d.a.createElement("button", {
 						key: e.id,
 						type: "button",
-						className: Object(o.a)(C.a.predictionOption, {
-							[C.a.selected]: e.id === (null == r ? void 0 : r.id)
+						className: Object(o.a)(f.a.predictionOption, {
+							[f.a.selected]: e.id === (null == r ? void 0 : r.id)
 						}),
 						disabled: e.id === t,
 						onClick: () => a(e)
 					}, r && e.id === r.id && d.a.createElement(_.a, {
-						className: C.a.icon
+						className: f.a.icon
 					}), !r && e.id === t && d.a.createElement(_.a, {
-						className: C.a.icon
+						className: f.a.icon
 					}), d.a.createElement("span", {
-						className: C.a.predictionOptionLabel
+						className: f.a.predictionOptionLabel
 					}, e.text)))), d.a.createElement(u.g, null, d.a.createElement(u.a, {
 						onClick: s,
 						"data-redditstyle": !0
@@ -201,10 +201,10 @@
 			}));
 			var c = n("./src/reddit/selectors/telemetry.ts");
 			const o = (e, t) => ({
-					...Object(c.defaults)(e),
-					post: Object(c.post)(e, t),
-					predictions: Object(c.predictions)(e, t),
-					subreddit: Object(c.subreddit)(e)
+					...Object(c.o)(e),
+					post: Object(c.I)(e, t),
+					predictions: Object(c.O)(e, t),
+					subreddit: Object(c.hb)(e)
 				}),
 				i = e => t => ({
 					...o(t, e),
@@ -245,4 +245,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-ChangePredictionOutcomeModal.e32767d6332f51ed09fe.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-ChangePredictionOutcomeModal.49f1da3bda73c1f2910b.js.map
