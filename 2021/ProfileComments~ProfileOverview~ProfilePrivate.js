@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.dd784a45d677deaedcbe.js
-// Retrieved at 12/8/2021, 2:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.95fae6f2a3f571f99689.js
+// Retrieved at 12/9/2021, 10:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments~ProfileOverview~ProfilePrivate"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -981,85 +981,80 @@
 		"./src/reddit/components/EmptyProfile/index.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "b", (function() {
-				return x
+				return u
 			})), s.d(t, "c", (function() {
-				return f
+				return h
 			})), s.d(t, "d", (function() {
-				return g
+				return b
 			})), s.d(t, "a", (function() {
-				return _
+				return E
 			}));
 			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
 				o = s("./node_modules/react/index.js"),
 				r = s.n(o),
 				i = s("./src/lib/constants/index.ts"),
-				a = s("./src/lib/lessComponent.tsx"),
+				a = s("./src/lib/classNames/index.ts"),
 				d = s("./src/reddit/components/PostList/Placeholder.tsx"),
 				c = s("./src/reddit/constants/postLayout.ts"),
 				l = s("./src/reddit/components/EmptyProfile/EmptyListing.m.less"),
 				m = s.n(l);
-			const p = a.a.div("PrimaryText", m.a),
-				u = a.a.wrapped(d.a, "BackgroundPlaceholder", m.a),
-				h = a.a.div("Wrapper", m.a);
-			var b = ({
+			var p = ({
 				children: e,
 				className: t
-			}) => r.a.createElement(h, {
-				className: t
-			}, r.a.createElement(u, {
+			}) => r.a.createElement("div", {
+				className: Object(a.a)(m.a.Wrapper, t)
+			}, r.a.createElement(d.a, {
+				className: m.a.BackgroundPlaceholder,
 				isLoading: !1,
 				layout: c.g.Classic
-			}), r.a.createElement(p, null, e));
-			var x = ({
+			}), r.a.createElement("div", {
+				className: m.a.PrimaryText
+			}, e));
+			var u = ({
 				className: e,
 				profileName: t,
 				timeSort: s = i.fc.ALL
-			}) => r.a.createElement(b, {
+			}) => r.a.createElement(p, {
 				className: e
 			}, s === i.fc.ALL ? n.fbt._("hmm... {profileName} hasn't commented on anything", [n.fbt._param("profileName", `u/${t}`)], {
 				hk: "1MHn3t"
 			}) : n.fbt._("hmm... {profileName} hasn't commented recently", [n.fbt._param("profileName", `u/${t}`)], {
 				hk: "qN3uL"
 			}));
-			var f = ({
+			var h = ({
 				className: e,
 				profileName: t,
 				timeSort: s = i.fc.ALL
-			}) => r.a.createElement(b, {
+			}) => r.a.createElement(p, {
 				className: e
 			}, s === i.fc.ALL ? n.fbt._("hmm... {profileName} hasn't posted anything", [n.fbt._param("profileName", `u/${t}`)], {
 				hk: "28vBEd"
 			}) : n.fbt._("hmm... {profileName} hasn't posted recently", [n.fbt._param("profileName", `u/${t}`)], {
 				hk: "38GhqN"
 			}));
-			const {
-				fbt: v
-			} = s("./node_modules/fbt/lib/FbtPublic.js");
-			var g = ({
+			var b = ({
 					className: e,
-					verb: t
-				}) => r.a.createElement(b, {
+					text: t
+				}) => r.a.createElement(p, {
 					className: e
-				}, v._("hmm... looks like you haven't {verb} yet", [v._param("verb", t)], {
-					hk: "142tKN"
-				})),
-				E = s("./src/reddit/icons/svgs/Hide/index.tsx"),
-				y = s("./src/reddit/components/EmptyProfile/forbidden.m.less"),
-				C = s.n(y);
+				}, t),
+				x = s("./src/reddit/icons/svgs/Hide/index.tsx"),
+				f = s("./src/reddit/components/EmptyProfile/forbidden.m.less"),
+				v = s.n(f);
 			const {
-				fbt: O
+				fbt: g
 			} = s("./node_modules/fbt/lib/FbtPublic.js");
-			var _ = () => r.a.createElement("div", {
-				className: C.a.container
-			}, r.a.createElement(E.a, {
-				className: C.a.hideIcon
+			var E = () => r.a.createElement("div", {
+				className: v.a.container
+			}, r.a.createElement(x.a, {
+				className: v.a.hideIcon
 			}), r.a.createElement("h3", {
-				className: C.a.title
-			}, O._("You do not have permission to access this resource", null, {
+				className: v.a.title
+			}, g._("You do not have permission to access this resource", null, {
 				hk: "10cPyp"
 			})), r.a.createElement("p", {
-				className: C.a.subtitle
-			}, O._("You can only look at your own saved posts and comments", null, {
+				className: v.a.subtitle
+			}, g._("You can only look at your own saved posts and comments", null, {
 				hk: "3pWGtF"
 			})))
 		},
@@ -1940,7 +1935,7 @@
 				}) => {
 					const i = t ? [{
 						internal: !0,
-						isActive: s === b.Mb.PROFILE_PRIVATE && o === O.a.Saved,
+						isActive: s === b.Mb.PROFILE_PRIVATE && o === O.b.Saved,
 						key: "profile.mainmenu.saved",
 						text: n.fbt._("Saved", null, {
 							hk: "2w1YRh"
@@ -1949,7 +1944,7 @@
 						position: A.MENU
 					}, {
 						internal: !0,
-						isActive: s === b.Mb.PROFILE_PRIVATE && o === O.a.Hidden,
+						isActive: s === b.Mb.PROFILE_PRIVATE && o === O.b.Hidden,
 						key: "profile.mainmenu.hidden",
 						text: n.fbt._("Hidden", null, {
 							hk: "225tka"
@@ -1958,7 +1953,7 @@
 						position: A.MENU
 					}, {
 						internal: !0,
-						isActive: s === b.Mb.PROFILE_PRIVATE && o === O.a.Upvoted,
+						isActive: s === b.Mb.PROFILE_PRIVATE && o === O.b.Upvoted,
 						key: "profile.mainmenu.upvoted",
 						text: n.fbt._("Upvoted", null, {
 							hk: "RKwFZ"
@@ -1967,7 +1962,7 @@
 						position: A.MENU
 					}, {
 						internal: !0,
-						isActive: s === b.Mb.PROFILE_PRIVATE && o === O.a.Downvoted,
+						isActive: s === b.Mb.PROFILE_PRIVATE && o === O.b.Downvoted,
 						key: "profile.mainmenu.downvoted",
 						text: n.fbt._("Downvoted", null, {
 							hk: "2F9IL4"
@@ -1977,7 +1972,7 @@
 					}] : [];
 					t ? (i.push({
 						internal: !0,
-						isActive: s === b.Mb.PROFILE_PRIVATE && o === O.a.ReceivedGildings,
+						isActive: s === b.Mb.PROFILE_PRIVATE && o === O.b.ReceivedGildings,
 						key: "profile.mainmenu.receiverGildings",
 						text: n.fbt._("Awards received", null, {
 							hk: "iwLBV"
@@ -1986,7 +1981,7 @@
 						position: A.MENU
 					}), i.push({
 						internal: !0,
-						isActive: s === b.Mb.PROFILE_PRIVATE && o === O.a.GivenGildings,
+						isActive: s === b.Mb.PROFILE_PRIVATE && o === O.b.GivenGildings,
 						key: "profile.mainmenu.givenGildings",
 						text: n.fbt._("Awards given", null, {
 							hk: "2UPYZc"
@@ -2800,4 +2795,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.dd784a45d677deaedcbe.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.95fae6f2a3f571f99689.js.map

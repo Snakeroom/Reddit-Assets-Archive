@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.cb6aefd099f882b44448.js
-// Retrieved at 12/9/2021, 9:30:14 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.1773d27e682939eabfcb.js
+// Retrieved at 12/9/2021, 10:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3327,10 +3327,10 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("154267"),
+				buildNumber: Object(r.c)("154272"),
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
-				buildTimestamp: Object(r.b)("1639058690"),
+				buildTimestamp: Object(r.b)("1639060405"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -5897,14 +5897,14 @@
 					}))
 				},
 				z = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %ca97aac6b4de4e32939164f0643813b98cf3dc9a7-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c625eb45da34a730b780951f7951e632c572c07c6-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "a97aac6b4de4e32939164f0643813b98cf3dc9a7-production",
+						release: "625eb45da34a730b780951f7951e632c572c07c6-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6421,7 +6421,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "a97aac6b4de4e32939164f0643813b98cf3dc9a7-production",
+						releaseClient: "625eb45da34a730b780951f7951e632c572c07c6-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -27905,13 +27905,36 @@
 		},
 		"./src/reddit/models/Profile/index.ts": function(e, t, i) {
 			"use strict";
-			i.d(t, "a", (function() {
-				return n
+			i.d(t, "b", (function() {
+				return r
+			})), i.d(t, "a", (function() {
+				return s
 			}));
-			var n;
+			var n = i("./node_modules/fbt/lib/FbtPublic.js");
+			var r;
 			! function(e) {
 				e.Downvoted = "downvoted", e.Hidden = "hidden", e.Saved = "saved", e.Upvoted = "upvoted", e.ReceivedGildings = "gilded", e.GivenGildings = "given"
-			}(n || (n = {}))
+			}(r || (r = {}));
+			const s = {
+				[r.Downvoted]: () => n.fbt._("hmm... looks like you haven't downvoted anything yet", null, {
+					hk: "2DbFlZ"
+				}),
+				[r.Hidden]: () => n.fbt._("hmm... looks like you haven't hidden anything yet", null, {
+					hk: "Bf1JR"
+				}),
+				[r.Saved]: () => n.fbt._("hmm... looks like you haven't saved anything yet", null, {
+					hk: "6odfL"
+				}),
+				[r.Upvoted]: () => n.fbt._("hmm... looks like you haven't upvoted anything yet", null, {
+					hk: "4voq8V"
+				}),
+				[r.ReceivedGildings]: () => n.fbt._("hmm... looks like you haven't received any awards yet", null, {
+					hk: "3NhMZq"
+				}),
+				[r.GivenGildings]: () => n.fbt._("hmm... looks like you haven't given any awards yet", null, {
+					hk: "2UdWhD"
+				})
+			}
 		},
 		"./src/reddit/models/Profile/mock.ts": function(e, t, i) {
 			"use strict";
@@ -36519,17 +36542,17 @@
 								listingType: t
 							} = e.match.params;
 							switch (t) {
-								case te.a.Downvoted:
+								case te.b.Downvoted:
 									return "profile_downvoted";
-								case te.a.Hidden:
+								case te.b.Hidden:
 									return "profile_hidden";
-								case te.a.Upvoted:
+								case te.b.Upvoted:
 									return "profile_upvoted";
-								case te.a.Saved:
+								case te.b.Saved:
 									return "profile_saved";
-								case te.a.ReceivedGildings:
+								case te.b.ReceivedGildings:
 									return "profile_gilded";
-								case te.a.GivenGildings:
+								case te.b.GivenGildings:
 									return "profile_gilded_given"
 							}
 							break
@@ -43053,4 +43076,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.cb6aefd099f882b44448.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.1773d27e682939eabfcb.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePosts.331739ada656a9fb31bc.js
-// Retrieved at 12/8/2021, 7:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePosts.e4c51e78916fbc9d9e74.js
+// Retrieved at 12/9/2021, 10:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePosts", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1081,7 +1081,7 @@
 							subreddits: {},
 							itemIds: []
 						};
-						return e !== f.a.Saved && e !== f.a.ReceivedGildings && e !== f.a.GivenGildings || (t.comments = {}), t
+						return e !== f.b.Saved && e !== f.b.ReceivedGildings && e !== f.b.GivenGildings || (t.comments = {}), t
 					})(t);
 					if (!o) return i;
 					if (r && (i.account = Object(k.a)(o) || null, i.preferences = Object(v.a)(o.preferences, o.interactions) || null, o.redditor.profile && (i.profiles[o.redditor.profile.id] = Object(w.a)(o.redditor.profile))), s && o.redditor && o.redditor.moderatedSubreddits) {
@@ -1094,17 +1094,17 @@
 					}
 					const a = ((e, t) => {
 						switch (t) {
-							case f.a.Downvoted:
+							case f.b.Downvoted:
 								return e.identity.downvotedPosts;
-							case f.a.Hidden:
+							case f.b.Hidden:
 								return e.identity.hiddenPosts;
-							case f.a.Saved:
+							case f.b.Saved:
 								return e.identity.saved;
-							case f.a.Upvoted:
+							case f.b.Upvoted:
 								return e.identity.upvotedPosts;
-							case f.a.ReceivedGildings:
+							case f.b.ReceivedGildings:
 								return e.identity.receivedGildings;
-							case f.a.GivenGildings:
+							case f.b.GivenGildings:
 								return e.identity.givenGildings
 						}
 					})(n, t);
@@ -1143,50 +1143,50 @@
 				}
 			});
 			const I = {
-					[f.a.Downvoted]: (e, t) => Object(a.a)(e, {
+					[f.b.Downvoted]: (e, t) => Object(a.a)(e, {
 						...c,
 						variables: t
 					}),
-					[f.a.Hidden]: (e, t) => Object(a.a)(e, {
+					[f.b.Hidden]: (e, t) => Object(a.a)(e, {
 						...l,
 						variables: t
 					}),
-					[f.a.Saved]: (e, t) => Object(a.a)(e, {
+					[f.b.Saved]: (e, t) => Object(a.a)(e, {
 						...m,
 						variables: t
 					}),
-					[f.a.Upvoted]: (e, t) => Object(a.a)(e, {
+					[f.b.Upvoted]: (e, t) => Object(a.a)(e, {
 						...p,
 						variables: t
 					}),
-					[f.a.ReceivedGildings]: (e, t) => Object(a.a)(e, {
+					[f.b.ReceivedGildings]: (e, t) => Object(a.a)(e, {
 						...u,
 						variables: t
 					}),
-					[f.a.GivenGildings]: (e, t) => Object(a.a)(e, {
+					[f.b.GivenGildings]: (e, t) => Object(a.a)(e, {
 						...d,
 						variables: t
 					})
 				},
 				L = (e, t) => {
 					switch (e) {
-						case f.a.Downvoted:
-						case f.a.Hidden:
-						case f.a.Saved:
-						case f.a.Upvoted:
-						case f.a.ReceivedGildings:
-						case f.a.GivenGildings:
+						case f.b.Downvoted:
+						case f.b.Hidden:
+						case f.b.Saved:
+						case f.b.Upvoted:
+						case f.b.ReceivedGildings:
+						case f.b.GivenGildings:
 							return t.body.data
 					}
 				},
 				T = e => {
 					switch (e.listingType) {
-						case f.a.Downvoted:
-						case f.a.Hidden:
-						case f.a.Saved:
-						case f.a.Upvoted:
-						case f.a.ReceivedGildings:
-						case f.a.GivenGildings:
+						case f.b.Downvoted:
+						case f.b.Hidden:
+						case f.b.Saved:
+						case f.b.Upvoted:
+						case f.b.ReceivedGildings:
+						case f.b.GivenGildings:
 							return O(e)
 					}
 				},
@@ -1220,7 +1220,7 @@
 							includeIdentity: h,
 							includeModerated: b
 						});
-						c === f.a.Saved || c === f.a.ReceivedGildings || c === f.a.GivenGildings ? await t(D({
+						c === f.b.Saved || c === f.b.ReceivedGildings || c === f.b.GivenGildings ? await t(D({
 							listingKey: l,
 							profileName: a,
 							...e
@@ -1256,7 +1256,7 @@
 							listingType: e,
 							rawData: c.body.data
 						});
-						e === f.a.Saved || e === f.a.ReceivedGildings || e === f.a.GivenGildings ? await t(M({
+						e === f.b.Saved || e === f.b.ReceivedGildings || e === f.b.GivenGildings ? await t(M({
 							listingKey: i,
 							profileName: o,
 							...n
@@ -1837,85 +1837,80 @@
 		"./src/reddit/components/EmptyProfile/index.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "b", (function() {
-				return f
+				return p
 			})), n.d(t, "c", (function() {
-				return g
+				return h
 			})), n.d(t, "d", (function() {
-				return x
+				return b
 			})), n.d(t, "a", (function() {
-				return k
+				return y
 			}));
 			var r = n("./node_modules/fbt/lib/FbtPublic.js"),
 				s = n("./node_modules/react/index.js"),
 				o = n.n(s),
 				i = n("./src/lib/constants/index.ts"),
-				a = n("./src/lib/lessComponent.tsx"),
+				a = n("./src/lib/classNames/index.ts"),
 				c = n("./src/reddit/components/PostList/Placeholder.tsx"),
 				d = n("./src/reddit/constants/postLayout.ts"),
 				l = n("./src/reddit/components/EmptyProfile/EmptyListing.m.less"),
 				u = n.n(l);
-			const m = a.a.div("PrimaryText", u.a),
-				p = a.a.wrapped(c.a, "BackgroundPlaceholder", u.a),
-				h = a.a.div("Wrapper", u.a);
-			var b = ({
+			var m = ({
 				children: e,
 				className: t
-			}) => o.a.createElement(h, {
-				className: t
-			}, o.a.createElement(p, {
+			}) => o.a.createElement("div", {
+				className: Object(a.a)(u.a.Wrapper, t)
+			}, o.a.createElement(c.a, {
+				className: u.a.BackgroundPlaceholder,
 				isLoading: !1,
 				layout: d.g.Classic
-			}), o.a.createElement(m, null, e));
-			var f = ({
+			}), o.a.createElement("div", {
+				className: u.a.PrimaryText
+			}, e));
+			var p = ({
 				className: e,
 				profileName: t,
 				timeSort: n = i.fc.ALL
-			}) => o.a.createElement(b, {
+			}) => o.a.createElement(m, {
 				className: e
 			}, n === i.fc.ALL ? r.fbt._("hmm... {profileName} hasn't commented on anything", [r.fbt._param("profileName", `u/${t}`)], {
 				hk: "1MHn3t"
 			}) : r.fbt._("hmm... {profileName} hasn't commented recently", [r.fbt._param("profileName", `u/${t}`)], {
 				hk: "qN3uL"
 			}));
-			var g = ({
+			var h = ({
 				className: e,
 				profileName: t,
 				timeSort: n = i.fc.ALL
-			}) => o.a.createElement(b, {
+			}) => o.a.createElement(m, {
 				className: e
 			}, n === i.fc.ALL ? r.fbt._("hmm... {profileName} hasn't posted anything", [r.fbt._param("profileName", `u/${t}`)], {
 				hk: "28vBEd"
 			}) : r.fbt._("hmm... {profileName} hasn't posted recently", [r.fbt._param("profileName", `u/${t}`)], {
 				hk: "38GhqN"
 			}));
-			const {
-				fbt: _
-			} = n("./node_modules/fbt/lib/FbtPublic.js");
-			var x = ({
+			var b = ({
 					className: e,
-					verb: t
-				}) => o.a.createElement(b, {
+					text: t
+				}) => o.a.createElement(m, {
 					className: e
-				}, _._("hmm... looks like you haven't {verb} yet", [_._param("verb", t)], {
-					hk: "142tKN"
-				})),
-				y = n("./src/reddit/icons/svgs/Hide/index.tsx"),
-				v = n("./src/reddit/components/EmptyProfile/forbidden.m.less"),
-				w = n.n(v);
+				}, t),
+				f = n("./src/reddit/icons/svgs/Hide/index.tsx"),
+				g = n("./src/reddit/components/EmptyProfile/forbidden.m.less"),
+				_ = n.n(g);
 			const {
-				fbt: E
+				fbt: x
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
-			var k = () => o.a.createElement("div", {
-				className: w.a.container
-			}, o.a.createElement(y.a, {
-				className: w.a.hideIcon
+			var y = () => o.a.createElement("div", {
+				className: _.a.container
+			}, o.a.createElement(f.a, {
+				className: _.a.hideIcon
 			}), o.a.createElement("h3", {
-				className: w.a.title
-			}, E._("You do not have permission to access this resource", null, {
+				className: _.a.title
+			}, x._("You do not have permission to access this resource", null, {
 				hk: "10cPyp"
 			})), o.a.createElement("p", {
-				className: w.a.subtitle
-			}, E._("You can only look at your own saved posts and comments", null, {
+				className: _.a.subtitle
+			}, x._("You can only look at your own saved posts and comments", null, {
 				hk: "3pWGtF"
 			})))
 		},
@@ -3925,7 +3920,7 @@
 				}) => {
 					const i = t ? [{
 						internal: !0,
-						isActive: n === b.Mb.PROFILE_PRIVATE && s === E.a.Saved,
+						isActive: n === b.Mb.PROFILE_PRIVATE && s === E.b.Saved,
 						key: "profile.mainmenu.saved",
 						text: r.fbt._("Saved", null, {
 							hk: "2w1YRh"
@@ -3934,7 +3929,7 @@
 						position: R.MENU
 					}, {
 						internal: !0,
-						isActive: n === b.Mb.PROFILE_PRIVATE && s === E.a.Hidden,
+						isActive: n === b.Mb.PROFILE_PRIVATE && s === E.b.Hidden,
 						key: "profile.mainmenu.hidden",
 						text: r.fbt._("Hidden", null, {
 							hk: "225tka"
@@ -3943,7 +3938,7 @@
 						position: R.MENU
 					}, {
 						internal: !0,
-						isActive: n === b.Mb.PROFILE_PRIVATE && s === E.a.Upvoted,
+						isActive: n === b.Mb.PROFILE_PRIVATE && s === E.b.Upvoted,
 						key: "profile.mainmenu.upvoted",
 						text: r.fbt._("Upvoted", null, {
 							hk: "RKwFZ"
@@ -3952,7 +3947,7 @@
 						position: R.MENU
 					}, {
 						internal: !0,
-						isActive: n === b.Mb.PROFILE_PRIVATE && s === E.a.Downvoted,
+						isActive: n === b.Mb.PROFILE_PRIVATE && s === E.b.Downvoted,
 						key: "profile.mainmenu.downvoted",
 						text: r.fbt._("Downvoted", null, {
 							hk: "2F9IL4"
@@ -3962,7 +3957,7 @@
 					}] : [];
 					t ? (i.push({
 						internal: !0,
-						isActive: n === b.Mb.PROFILE_PRIVATE && s === E.a.ReceivedGildings,
+						isActive: n === b.Mb.PROFILE_PRIVATE && s === E.b.ReceivedGildings,
 						key: "profile.mainmenu.receiverGildings",
 						text: r.fbt._("Awards received", null, {
 							hk: "iwLBV"
@@ -3971,7 +3966,7 @@
 						position: R.MENU
 					}), i.push({
 						internal: !0,
-						isActive: n === b.Mb.PROFILE_PRIVATE && s === E.a.GivenGildings,
+						isActive: n === b.Mb.PROFILE_PRIVATE && s === E.b.GivenGildings,
 						key: "profile.mainmenu.givenGildings",
 						text: r.fbt._("Awards given", null, {
 							hk: "2UPYZc"
@@ -7819,4 +7814,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.331739ada656a9fb31bc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.e4c51e78916fbc9d9e74.js.map
