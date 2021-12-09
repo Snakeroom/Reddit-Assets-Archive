@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.31500fd415f74dc76fad.js
-// Retrieved at 12/9/2021, 4:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.274f182787f94b696f39.js
+// Retrieved at 12/9/2021, 4:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -6623,8 +6623,8 @@
 				xi = n.n(Oi);
 			class yi extends m.a.Component {
 				constructor() {
-					super(...arguments), this.onChangeEmailModalOpen = () => {
-						this.props.sendEvent(Object(vi.e)(vi.a, "update")), this.props.toggleChangeEmailModal()
+					super(...arguments), this.onChangeEmailModalOpen = e => {
+						e.stopPropagation(), this.props.sendEvent(Object(vi.e)(vi.a, "update")), this.props.toggleChangeEmailModal()
 					}, this.onCloseTooltip = () => {
 						this.props.sendEvent(Object(vi.c)(vi.a)), this.props.closeTooltip()
 					}, this.onResendEmailClick = () => {
@@ -20761,4 +20761,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit~StandalonePostPage", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPos~93b34f9d", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Governance~ModListing~Reddit~Subreddit", "Chat~Governance~Reddit", 0, "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.31500fd415f74dc76fad.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.274f182787f94b696f39.js.map
