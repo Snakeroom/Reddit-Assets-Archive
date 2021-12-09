@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.8dc0b685bd796a715ce6.js
-// Retrieved at 12/8/2021, 7:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.b440563e593a67bd590e.js
+// Retrieved at 12/8/2021, 7:50:04 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var n, a, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) a = r[l], Object.prototype.hasOwnProperty.call(d, a) && d[a] && b.push(d[a][0]), d[a] = 0;
@@ -1456,7 +1456,7 @@
 						ReportFlow: "916df1a2a26bc9f24498",
 						HarbergerTaxBannerPurchaseCTA: "1322810c1a2ef3bca677",
 						IdCard: "b6b2ed67ef9b9430a7bf",
-						ModModeBanners: "c0af3c34a07b2754d3b1",
+						ModModeBanners: "4037e3d8a8f841000d29",
 						MuxEmbed: "982b3400754d822142c4",
 						NewCommentPill: "9fef7495a39faf3ec09f",
 						PostDetailStickyHeader: "5c2d4a9cb59d467b7716",
@@ -1649,4 +1649,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.8dc0b685bd796a715ce6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.b440563e593a67bd590e.js.map

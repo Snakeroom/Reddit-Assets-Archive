@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModModeBanners.c0af3c34a07b2754d3b1.js
-// Retrieved at 12/8/2021, 2:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModModeBanners.4037e3d8a8f841000d29.js
+// Retrieved at 12/8/2021, 7:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModModeBanners"], {
 		"./src/reddit/actions/comment/index.ts": function(e, t, s) {
@@ -538,7 +538,7 @@
 					className: l.a.listItem
 				}, n.a.createElement(u, {
 					iconName: "bot"
-				}, b._("Blocked by AutoMod{reason}", [b._param("reason", f(null === (s = Object(c.b)(e, c.a.AUTOMOD)) || void 0 === s ? void 0 : s.message))], {
+				}, b._("Blocked by AutoMod{reason}", [b._param("reason", f((null === (s = Object(c.b)(e, c.a.AUTOMOD)) || void 0 === s ? void 0 : s.message) || e.modNote))], {
 					hk: "3yuGbK"
 				}))))
 			}
@@ -1187,4 +1187,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModModeBanners.c0af3c34a07b2754d3b1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModModeBanners.4037e3d8a8f841000d29.js.map
