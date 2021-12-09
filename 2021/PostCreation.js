@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.8c605344d4beaa16d902.js
-// Retrieved at 12/9/2021, 2:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.2118da8581c459a182e2.js
+// Retrieved at 12/9/2021, 6:40:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -2574,32 +2574,31 @@
 		"./src/reddit/actions/modQueueTriggers/index.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return c
+				return a
 			}));
 			var o = n("./src/reddit/actions/comment/index.ts"),
 				s = n("./src/reddit/actions/post.ts"),
 				r = n("./src/lib/makeGqlRequest/index.ts"),
 				i = n("./src/redditGQL/operations/ModQueueTriggers.json");
-			var a = n("./src/reddit/featureFlags/index.ts");
-			const c = ({
+			const a = ({
 				commentIds: e = [],
 				postIds: t = []
-			}) => async (n, c, {
-				gqlContext: l
+			}) => async (n, a, {
+				gqlContext: c
 			}) => {
-				var d, u;
-				if (!a.d.hatefulContentFiltersEnabled(c()) || !e.length && !t.length) return;
-				const m = await ((e, t) => Object(r.a)(e, {
+				var l, d;
+				if (!e.length && !t.length) return;
+				const u = await ((e, t) => Object(r.a)(e, {
 					...i,
 					variables: t
-				}))(l(), {
+				}))(c(), {
 					commentIds: e,
 					postIds: t
 				});
-				if (m.ok) {
-					const e = m.body;
+				if (u.ok) {
+					const e = u.body;
 					if (e.data.commentsByIds) {
-						const t = Object.fromEntries(null === (d = e.data.commentsByIds) || void 0 === d ? void 0 : d.filter(e => {
+						const t = Object.fromEntries(null === (l = e.data.commentsByIds) || void 0 === l ? void 0 : l.filter(e => {
 							var t;
 							return null === (t = null == e ? void 0 : e.moderationInfo) || void 0 === t ? void 0 : t.modQueueTriggers
 						}).map(e => {
@@ -2611,7 +2610,7 @@
 						n(Object(o.i)(t))
 					}
 					if (e.data.postsInfoByIds) {
-						const t = Object.fromEntries(null === (u = e.data.postsInfoByIds) || void 0 === u ? void 0 : u.filter(e => {
+						const t = Object.fromEntries(null === (d = e.data.postsInfoByIds) || void 0 === d ? void 0 : d.filter(e => {
 							var t;
 							return null === (t = null == e ? void 0 : e.moderationInfo) || void 0 === t ? void 0 : t.modQueueTriggers
 						}).map(e => {
@@ -33461,4 +33460,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.8c605344d4beaa16d902.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.2118da8581c459a182e2.js.map

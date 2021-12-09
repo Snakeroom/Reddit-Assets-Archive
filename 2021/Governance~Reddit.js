@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.8ce0a0b2daf8fb23e6d8.js
-// Retrieved at 12/9/2021, 1:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.aaa47166c1d71f933b60.js
+// Retrieved at 12/9/2021, 6:40:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit", "reddit-components-BlankPost"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -1957,32 +1957,31 @@
 		"./src/reddit/actions/modQueueTriggers/index.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
-				return d
+				return o
 			}));
 			var s = r("./src/reddit/actions/comment/index.ts"),
 				n = r("./src/reddit/actions/post.ts"),
 				a = r("./src/lib/makeGqlRequest/index.ts"),
 				c = r("./src/redditGQL/operations/ModQueueTriggers.json");
-			var o = r("./src/reddit/featureFlags/index.ts");
-			const d = ({
+			const o = ({
 				commentIds: e = [],
 				postIds: t = []
-			}) => async (r, d, {
-				gqlContext: i
+			}) => async (r, o, {
+				gqlContext: d
 			}) => {
-				var u, l;
-				if (!o.d.hatefulContentFiltersEnabled(d()) || !e.length && !t.length) return;
-				const p = await ((e, t) => Object(a.a)(e, {
+				var i, u;
+				if (!e.length && !t.length) return;
+				const l = await ((e, t) => Object(a.a)(e, {
 					...c,
 					variables: t
-				}))(i(), {
+				}))(d(), {
 					commentIds: e,
 					postIds: t
 				});
-				if (p.ok) {
-					const e = p.body;
+				if (l.ok) {
+					const e = l.body;
 					if (e.data.commentsByIds) {
-						const t = Object.fromEntries(null === (u = e.data.commentsByIds) || void 0 === u ? void 0 : u.filter(e => {
+						const t = Object.fromEntries(null === (i = e.data.commentsByIds) || void 0 === i ? void 0 : i.filter(e => {
 							var t;
 							return null === (t = null == e ? void 0 : e.moderationInfo) || void 0 === t ? void 0 : t.modQueueTriggers
 						}).map(e => {
@@ -1994,7 +1993,7 @@
 						r(Object(s.i)(t))
 					}
 					if (e.data.postsInfoByIds) {
-						const t = Object.fromEntries(null === (l = e.data.postsInfoByIds) || void 0 === l ? void 0 : l.filter(e => {
+						const t = Object.fromEntries(null === (u = e.data.postsInfoByIds) || void 0 === u ? void 0 : u.filter(e => {
 							var t;
 							return null === (t = null == e ? void 0 : e.moderationInfo) || void 0 === t ? void 0 : t.modQueueTriggers
 						}).map(e => {
@@ -25295,4 +25294,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.8ce0a0b2daf8fb23e6d8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.aaa47166c1d71f933b60.js.map
