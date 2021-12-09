@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.fe65f75bcd63ee9abbe3.js
-// Retrieved at 12/9/2021, 11:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.8c605344d4beaa16d902.js
+// Retrieved at 12/9/2021, 2:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -27967,8 +27967,8 @@
 								n(Object(an.t)()), e.message.match(/max limit/) ? n(Object(cn.f)({
 									duration: 1e4,
 									kind: mn.b.Error,
-									text: xn._("Error: Failed to add prediction to tournament, there can only be 100 predictions created for a tournament", null, {
-										hk: "UqJLw"
+									text: xn._("Oops, you’ve reached the limit of predictions in a single Tournament. You can always start a new Tournament after ending the current one.", null, {
+										hk: "1LClJE"
 									})
 								})) : n(Object(cn.f)({
 									duration: 5e3,
@@ -33461,4 +33461,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.fe65f75bcd63ee9abbe3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.8c605344d4beaa16d902.js.map
