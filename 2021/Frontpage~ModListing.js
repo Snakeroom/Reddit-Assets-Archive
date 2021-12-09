@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~ModListing.acb413beee48499935eb.js
-// Retrieved at 12/9/2021, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~ModListing.589950999714aa072bfa.js
+// Retrieved at 12/9/2021, 11:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~ModListing"], {
 		"./src/reddit/actions/focusedVerticals/index.ts": function(e, t, n) {
@@ -2661,7 +2661,7 @@
 						subredditId: t
 					})),
 					g = Object(a.e)(m.a),
-					w = g !== u.je.NewModule;
+					w = g !== u.ke.NewModule;
 				return (null === (n = null == r ? void 0 : r.cards) || void 0 === n ? void 0 : n.length) > 0 && w ? o.a.createElement(h, {
 					closeModuleOnMount: !!e && e !== p.g.Large,
 					subredditId: t,
@@ -2691,7 +2691,7 @@
 						experimentEligibilitySelector: o.K,
 						experimentName: s.Ic
 					});
-					return !(!t || Object(s.Af)(t))
+					return !(!t || Object(s.Bf)(t))
 				},
 				i = e => {
 					return Object(r.c)(e, {
@@ -2820,4 +2820,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing.acb413beee48499935eb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing.589950999714aa072bfa.js.map

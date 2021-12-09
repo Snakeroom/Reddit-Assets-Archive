@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.8baf5155cb30e203310a.js
-// Retrieved at 12/9/2021, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.fe65f75bcd63ee9abbe3.js
+// Retrieved at 12/9/2021, 11:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -32901,14 +32901,14 @@
 			var o = n("./src/reddit/constants/experiments.ts"),
 				s = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const r = e => Object(s.c)(e, {
-					experimentName: o.Yd,
-					experimentEligibilitySelector: s.a
-				}) === o.he.Enabled,
-				i = e => Object(s.c)(e, {
 					experimentName: o.Zd,
+					experimentEligibilitySelector: s.a
+				}) === o.ie.Enabled,
+				i = e => Object(s.c)(e, {
+					experimentName: o.ae,
 					experimentEligibilitySelector: s.a,
 					expEventOverride: !1
-				}) === o.ie.Enabled
+				}) === o.je.Enabled
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, n) {
 			"use strict";
@@ -33461,4 +33461,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.8baf5155cb30e203310a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.fe65f75bcd63ee9abbe3.js.map

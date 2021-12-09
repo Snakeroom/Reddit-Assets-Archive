@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~e4e56b68.b5533885413f1084e0d6.js
-// Retrieved at 12/9/2021, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~e4e56b68.c5c211c6a3810778e61f.js
+// Retrieved at 12/9/2021, 11:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~e4e56b68"], {
 		"./src/reddit/actions/economics/subredditPremium/actionCreators.ts": function(e, t, r) {
@@ -1940,7 +1940,7 @@
 						showTimestamp: x = !0,
 						subredditOrProfile: j,
 						tooltipType: R
-					} = e, H = Object(o.d)(), U = Object(f.a)(), D = Object(o.e)(ne.a), q = Object(o.e)(ie.d), W = Object(o.e)(ie.g) || ["popular", "all"].includes(q || ""), Q = !(!v.isSponsored || !D || Object(l.Af)(D));
+					} = e, H = Object(o.d)(), U = Object(f.a)(), D = Object(o.e)(ne.a), q = Object(o.e)(ie.d), W = Object(o.e)(ie.g) || ["popular", "all"].includes(q || ""), Q = !(!v.isSponsored || !D || Object(l.Bf)(D));
 					Object(s.useEffect)(() => {
 						Q && H(Object(p.d)(v.author))
 					}, []);
@@ -2935,7 +2935,7 @@
 						experimentEligibilitySelector: o.K,
 						experimentName: s.Ic
 					});
-					return !(!t || Object(s.Af)(t))
+					return !(!t || Object(s.Bf)(t))
 				},
 				i = e => {
 					return Object(n.c)(e, {
@@ -3001,4 +3001,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~e4e56b68.b5533885413f1084e0d6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~e4e56b68.c5c211c6a3810778e61f.js.map

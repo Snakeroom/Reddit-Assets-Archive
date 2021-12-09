@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditCreation.2a4a5a9abdb02566c922.js
-// Retrieved at 12/9/2021, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditCreation.e7c521a2a344bddf4c22.js
+// Retrieved at 12/9/2021, 11:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditCreation"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -338,8 +338,8 @@
 				j = n("./node_modules/lodash/range.js"),
 				D = n.n(j),
 				R = n("./src/reddit/controls/Button/index.tsx"),
-				M = n("./src/reddit/layout/row/Inline/index.tsx"),
-				B = n("./src/reddit/models/Flair/index.ts"),
+				B = n("./src/reddit/layout/row/Inline/index.tsx"),
+				M = n("./src/reddit/models/Flair/index.ts"),
 				F = n("./src/reddit/selectors/tooltip.ts"),
 				L = n("./src/reddit/selectors/user.ts"),
 				P = n("./src/reddit/components/Settings/shared/Widgets.m.less"),
@@ -402,9 +402,9 @@
 				re = C.a.wrapped(ne, "NSFWFlair", A.a),
 				se = e => {
 					switch (e.flair) {
-						case B.f.Nsfw:
+						case M.f.Nsfw:
 							return r.a.createElement(re, null, "NSFW");
-						case B.f.Spoiler:
+						case M.f.Spoiler:
 							return r.a.createElement(ae, null, "SPOILER");
 						default:
 							return null
@@ -417,7 +417,7 @@
 						disabled: e.disabled,
 						indent: e.indent,
 						last: e.last
-					}, r.a.createElement(Q, null, r.a.createElement(M.a, null, r.a.createElement("label", {
+					}, r.a.createElement(Q, null, r.a.createElement(B.a, null, r.a.createElement("label", {
 						htmlFor: t
 					}, r.a.createElement(V, null, e.label))), r.a.createElement(Y, null, e.subtext)), r.a.createElement(z, null, r.a.createElement(K, null, e.tooltip && r.a.createElement(J, {
 						tooltipContentClass: e.tooltipContentClassName,
@@ -450,7 +450,7 @@
 					style: {
 						flex: 5
 					}
-				}, !e.inModal && r.a.createElement(M.a, null, r.a.createElement(V, null, e.label)), !e.hideSubtext && r.a.createElement(Y, null, " ", r.a.createElement(me, {
+				}, !e.inModal && r.a.createElement(B.a, null, r.a.createElement(V, null, e.label)), !e.hideSubtext && r.a.createElement(Y, null, " ", r.a.createElement(me, {
 					style: {
 						color: e.ticks[e.value].color
 					}
@@ -482,7 +482,7 @@
 					last: e.last,
 					indent: e.indent,
 					disabled: e.disabled
-				}, r.a.createElement(Q, null, r.a.createElement(M.a, null, r.a.createElement(V, null, e.label)), r.a.createElement(Y, null, e.subtext)), r.a.createElement(z, null, r.a.createElement(K, null, r.a.createElement(R.o, {
+				}, r.a.createElement(Q, null, r.a.createElement(B.a, null, r.a.createElement(V, null, e.label)), r.a.createElement(Y, null, e.subtext)), r.a.createElement(z, null, r.a.createElement(K, null, r.a.createElement(R.o, {
 					onClick: e.onClick
 				}, e.actionText)))),
 				be = e => r.a.createElement(q, {
@@ -909,8 +909,8 @@
 				j = n("./src/reddit/icons/svgs/Admin/index.tsx"),
 				D = n("./src/reddit/icons/svgs/Close/index.tsx"),
 				R = n("./src/reddit/icons/svgs/Eye/index.tsx"),
-				M = n("./src/reddit/icons/svgs/Info/index.tsx"),
-				B = n("./src/reddit/icons/svgs/Lock/index.tsx"),
+				B = n("./src/reddit/icons/svgs/Info/index.tsx"),
+				M = n("./src/reddit/icons/svgs/Lock/index.tsx"),
 				F = n("./src/reddit/icons/svgs/User/index.tsx"),
 				L = n("./src/reddit/models/Subreddit/index.ts"),
 				P = n("./src/reddit/models/SubredditRestrictions/index.ts"),
@@ -954,12 +954,12 @@
 				Q = n("./src/lib/lessComponent.tsx");
 			const z = 21,
 				q = "create-title-info",
-				X = Q.a.wrapped(M.a, "Info", K.a),
+				X = Q.a.wrapped(B.a, "Info", K.a),
 				U = Q.a.wrapped(w.a, "RadioOption", K.a),
 				Z = Q.a.wrapped(h.c, "Tooltip", K.a),
 				$ = Q.a.wrapped(F.a, "Public", K.a),
 				ee = Q.a.wrapped(R.a, "Restricted", K.a),
-				te = Q.a.wrapped(B.a, "Private", K.a),
+				te = Q.a.wrapped(M.a, "Private", K.a),
 				ne = Q.a.wrapped(j.a, "Employee", K.a),
 				ae = Q.a.wrapped(D.a, "CloseButton", K.a),
 				re = Q.a.wrapped(k.b, "ErrorText", K.a),
@@ -1807,9 +1807,9 @@
 					experimentEligibilitySelector: r.a,
 					experimentName: a.ed
 				});
-				return !(!t || Object(a.Af)(t))
+				return !(!t || Object(a.Bf)(t))
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.2a4a5a9abdb02566c922.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.e7c521a2a344bddf4c22.js.map

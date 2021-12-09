@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.b4c3811e40fbb5b040a9.js
-// Retrieved at 12/9/2021, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.bdf1108ce85b7dbb1592.js
+// Retrieved at 12/9/2021, 11:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-NotificationUnit-Button"], {
 		"./src/reddit/actions/comment/authoring.ts": function(e, t, n) {
@@ -138,8 +138,8 @@
 				M = n("./src/reddit/helpers/dom/index.ts"),
 				U = n("./src/reddit/helpers/localStorage/index.ts"),
 				F = n("./src/reddit/helpers/trackers/commentsPage.ts"),
-				J = n("./src/reddit/models/Comment/index.ts"),
-				B = n("./src/reddit/models/PostDraft/index.ts"),
+				B = n("./src/reddit/models/Comment/index.ts"),
+				J = n("./src/reddit/models/PostDraft/index.ts"),
 				G = n("./src/reddit/models/RichTextJson/index.ts"),
 				W = n("./src/reddit/models/RichTextJson/nodeMakers.ts"),
 				H = n("./src/reddit/models/Toast/index.ts"),
@@ -326,7 +326,7 @@
 					singleOpen: n
 				}) => async (o, r) => {
 					const s = r(),
-						m = Object(c.a)(B.c.replyToComment, t);
+						m = Object(c.a)(J.c.replyToComment, t);
 					if (!Object(Y.K)(r())) return o(Object(d.k)()), void o(Object(a.k)({
 						actionSource: a.a.Reply,
 						redirectUrl: Object(Q.m)(r(), {
@@ -359,12 +359,12 @@
 					let y;
 					if (y = O ? {
 							commentMode: p,
-							draftType: B.c.replyToComment,
+							draftType: J.c.replyToComment,
 							rtJson: f,
 							text: `${b}\n`
 						} : j || {
 							commentMode: p,
-							draftType: B.c.replyToComment,
+							draftType: J.c.replyToComment,
 							rtJson: f,
 							text: ""
 						}, Object(Y.M)(s)) {
@@ -416,7 +416,7 @@
 							text: r,
 							commentMode: t,
 							rteState: null,
-							draftType: B.c.edit,
+							draftType: J.c.edit,
 							hasFocus: !0
 						}
 					})))
@@ -542,7 +542,7 @@
 						hk: "3ebRql"
 					})));
 					else {
-						const c = t === J.a.FOLLOWED,
+						const c = t === B.a.FOLLOWED,
 							i = {
 								id: e,
 								expiresAt: Date.now() + 6048e5
@@ -587,9 +587,9 @@
 			})), n.d(t, "q", (function() {
 				return F
 			})), n.d(t, "j", (function() {
-				return J
-			})), n.d(t, "g", (function() {
 				return B
+			})), n.d(t, "g", (function() {
+				return J
 			})), n.d(t, "f", (function() {
 				return G
 			})), n.d(t, "o", (function() {
@@ -743,7 +743,7 @@
 						moreCommentsItem: c,
 						...j.error
 					}))
-				}, F = Object(f.a)(O.b, x.a.upvoted), J = Object(f.a)(O.b, x.a.downvoted), B = Object(c.a)(R.j), G = Object(c.a)(R.i), W = Object(c.a)(R.e), H = Object(c.a)(R.f), Q = (Object(c.a)(R.c), Object(c.a)(R.d), ({
+				}, F = Object(f.a)(O.b, x.a.upvoted), B = Object(f.a)(O.b, x.a.downvoted), J = Object(c.a)(R.j), G = Object(c.a)(R.i), W = Object(c.a)(R.e), H = Object(c.a)(R.f), Q = (Object(c.a)(R.c), Object(c.a)(R.d), ({
 					commentId: e,
 					commentsPageKey: t,
 					scrollToAndRemeasure: n
@@ -1049,7 +1049,7 @@
 					M = K === O.a.PostReply ? A : null === (n = null == k ? void 0 : k.comment) || void 0 === n ? void 0 : n.id,
 					U = (null === (r = null == k ? void 0 : k.post) || void 0 === r ? void 0 : r.id) || (null === (y = null === (j = null == k ? void 0 : k.comment) || void 0 === j ? void 0 : j.postInfo) || void 0 === y ? void 0 : y.id),
 					F = null === (g = null === (x = null == k ? void 0 : k.awarding) || void 0 === x ? void 0 : x.award) || void 0 === g ? void 0 : g.id,
-					J = null === (v = null === (C = null == k ? void 0 : k.awarding) || void 0 === C ? void 0 : C.awarder) || void 0 === v ? void 0 : v.id;
+					B = null === (v = null === (C = null == k ? void 0 : k.awarding) || void 0 === C ? void 0 : C.awarder) || void 0 === v ? void 0 : v.id;
 				return (() => {
 					switch (K) {
 						case O.a.LifecyclePostSuggestions:
@@ -1108,16 +1108,16 @@
 							}))
 						}
 						case O.a.AwardReceived: {
-							if (!J) return null;
+							if (!B) return null;
 							const e = e => {
-								e.preventDefault(), F && (J ? D({
+								e.preventDefault(), F && (B ? D({
 									position: f.c.SECOND,
 									awardId: F
 								}) : T(Object(m.f)(I)))
 							};
 							return s.a.createElement(u.b, {
-								userId: J,
-								contextId: J,
+								userId: B,
+								contextId: B,
 								onClick: e,
 								isFullWidth: R,
 								priority: l.c.Tertiary,
@@ -1375,7 +1375,7 @@
 								experimentName: s.J,
 								expEventOverride: t
 							});
-							return !!(Object(s.Af)(n) ? void 0 : n)
+							return !!(Object(s.Bf)(n) ? void 0 : n)
 						})(n)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -2095,9 +2095,9 @@
 			})), n.d(t, "e", (function() {
 				return F
 			})), n.d(t, "v", (function() {
-				return J
-			})), n.d(t, "J", (function() {
 				return B
+			})), n.d(t, "J", (function() {
+				return J
 			})), n.d(t, "f", (function() {
 				return G
 			})), n.d(t, "i", (function() {
@@ -2291,10 +2291,10 @@
 					const o = e.authorFlair.models[n.subredditId];
 					return o ? o[n.author] : null
 				},
-				J = (e, {
+				B = (e, {
 					draftKey: t
 				}) => !!e.features.comments.submit.error[t],
-				B = (e, {
+				J = (e, {
 					draftKey: t
 				}) => {
 					const n = e.features.comments.submit.error[t];
@@ -2381,4 +2381,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.b4c3811e40fbb5b040a9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.bdf1108ce85b7dbb1592.js.map
