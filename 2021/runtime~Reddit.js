@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.b440563e593a67bd590e.js
-// Retrieved at 12/8/2021, 7:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.993a2032c2bf2aca7d28.js
+// Retrieved at 12/9/2021, 9:30:14 AM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var n, a, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) a = r[l], Object.prototype.hasOwnProperty.call(d, a) && d[a] && b.push(d[a][0]), d[a] = 0;
@@ -874,7 +874,7 @@
 					CommentRichUnit: "fdf1f4debc5e1877352d",
 					PostRichUnit: "7f32f456bb409e613e36",
 					"vendors~chat-components-FormBuilder~reddit-components-FormBuilder": "31d6cfe0d16ae931b73c",
-					"chat-components-FormBuilder": "684f8e61f9f88254de27",
+					"chat-components-FormBuilder": "27081bbad903945c3896",
 					TimezoneList: "31d6cfe0d16ae931b73c",
 					"reddit-components-ScheduledPost-PostSchedulePickerModal": "782881fbc9020327b389",
 					CommunityNotificationSettings: "6f5fdd353df3d366b37a",
@@ -1405,7 +1405,7 @@
 						MembershipPaywallPage: "62919f368847754199e1",
 						FlairEdit: "c1052e2180467602d3b2",
 						"vendors~Chat~RedesignChat": "6d2550ddbf4355b32434",
-						"Chat~RedesignChat": "338194572d9785d2350c",
+						"Chat~RedesignChat": "f174292757e1e4b70404",
 						RedesignChat: "107d0ed9d46e4373f91e",
 						"vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PostCreation~Settings~~f8934a85": "fbf6b3871488094312c2",
 						CryptoHarbergerTaxManageModal: "ebbdff25203aae0a1ac3",
@@ -1535,7 +1535,7 @@
 						CommentRichUnit: "9d5962a8559379e72194",
 						PostRichUnit: "6f0e47f5f92d67b3507b",
 						"vendors~chat-components-FormBuilder~reddit-components-FormBuilder": "b3e91087733f11bea13b",
-						"chat-components-FormBuilder": "ec51bdd1d6f1cae87757",
+						"chat-components-FormBuilder": "ac37ef3fcc2e8a2170ee",
 						TimezoneList: "57988e1ba10253d58674",
 						"reddit-components-ScheduledPost-PostSchedulePickerModal": "70883d0290afb0c07343",
 						CommunityNotificationSettings: "7424c774c7f91937249d",
@@ -1649,4 +1649,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.b440563e593a67bd590e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.993a2032c2bf2aca7d28.js.map

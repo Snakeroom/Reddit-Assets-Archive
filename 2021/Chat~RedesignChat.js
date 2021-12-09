@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.338194572d9785d2350c.js
-// Retrieved at 12/8/2021, 3:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.f174292757e1e4b70404.js
+// Retrieved at 12/9/2021, 9:30:14 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -3935,10 +3935,15 @@
 								isDrop: !1
 							})))
 						}), p.ondragover = Object(u.b)(), p.ondrop = Object(u.b)(e => {
-							a && (s(!1), n(Object(d.h)({
-								isOver: !1,
-								isDrop: !0
-							}))), (null == e ? void 0 : e.dataTransfer) && t(e.dataTransfer.files, e)
+							var c, r;
+							if (a) {
+								s(!1);
+								const t = !!(null === (c = null == e ? void 0 : e.dataTransfer) || void 0 === c ? void 0 : c.files.length);
+								n(Object(d.h)({
+									isOver: !1,
+									isDrop: t
+								}))
+							}(null === (r = null == e ? void 0 : e.dataTransfer) || void 0 === r ? void 0 : r.files.length) && t(e.dataTransfer.files, e)
 						}))
 					}), r.a.createElement("div", {
 						ref: l,
@@ -18046,4 +18051,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.338194572d9785d2350c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.f174292757e1e4b70404.js.map
