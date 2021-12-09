@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.71549221c2f6179baedf.js
-// Retrieved at 12/9/2021, 4:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.fdb03a4734f9342eeb20.js
+// Retrieved at 12/9/2021, 6:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityPointsLearnMore"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, o) {
@@ -520,9 +520,9 @@
 				for (i.getLengthInBits() + 4 <= s && i.put(0, 4); i.getLengthInBits() % 8 != 0;) i.putBit(0);
 				for (var l = (s - i.getLengthInBits()) / 8, u = 0; u < l; u++) i.put(u % 2 ? 17 : 236, 8);
 				return function(e, t, o) {
-					for (var i = a.getSymbolTotalCodewords(t), r = d.getTotalCodewordsCount(t, o), s = i - r, l = d.getBlocksCount(t, o), u = l - i % l, c = Math.floor(i / l), h = Math.floor(s / l), p = h + 1, y = c - h, b = new m(y), f = 0, g = new Array(l), w = new Array(l), v = 0, k = n.from(e.buffer), P = 0; P < l; P++) {
-						var _ = P < u ? h : p;
-						g[P] = k.slice(f, f + _), w[P] = b.encode(g[P]), f += _, v = Math.max(v, _)
+					for (var i = a.getSymbolTotalCodewords(t), r = d.getTotalCodewordsCount(t, o), s = i - r, l = d.getBlocksCount(t, o), u = l - i % l, c = Math.floor(i / l), h = Math.floor(s / l), p = h + 1, y = c - h, b = new m(y), f = 0, g = new Array(l), w = new Array(l), v = 0, k = n.from(e.buffer), _ = 0; _ < l; _++) {
+						var P = _ < u ? h : p;
+						g[_] = k.slice(f, f + P), w[_] = b.encode(g[_]), f += P, v = Math.max(v, P)
 					}
 					var E, C, S = n.alloc(i),
 						I = 0;
@@ -1718,7 +1718,7 @@
 		"./src/reddit/pages/meta/CommunityPointsLearnMorePage/index.tsx": function(e, t, o) {
 			"use strict";
 			o.r(t), o.d(t, "Anchor", (function() {
-				return yt
+				return bt
 			}));
 			var n = o("./src/config.ts"),
 				a = o("./node_modules/react/index.js"),
@@ -1753,9 +1753,9 @@
 			} = o("./node_modules/fbt/lib/FbtPublic.js"), {
 				fbt: k
 			} = o("./node_modules/fbt/lib/FbtPublic.js");
-			var P = o("./src/reddit/icons/fonts/index.tsx"),
-				_ = o("./src/reddit/pages/meta/CommunityPointsLearnMorePage/Documentation/floatingMenuButton.m.less"),
-				E = o.n(_);
+			var _ = o("./src/reddit/icons/fonts/index.tsx"),
+				P = o("./src/reddit/pages/meta/CommunityPointsLearnMorePage/Documentation/floatingMenuButton.m.less"),
+				E = o.n(P);
 			const C = ({
 					className: e,
 					onClick: t,
@@ -1767,7 +1767,7 @@
 					className: Object(u.a)(E.a.iconContainer, {
 						[E.a.rotated]: o
 					})
-				}, i.a.createElement(P.a, {
+				}, i.a.createElement(_.a, {
 					name: o ? "add" : "menu",
 					className: E.a.menuIcon
 				}))),
@@ -1925,10 +1925,10 @@
 					fbt: N
 				} = o("./node_modules/fbt/lib/FbtPublic.js"),
 				{
-					fbt: B
+					fbt: j
 				} = o("./node_modules/fbt/lib/FbtPublic.js"),
 				{
-					fbt: j
+					fbt: B
 				} = o("./node_modules/fbt/lib/FbtPublic.js"),
 				{
 					fbt: F
@@ -1981,7 +1981,10 @@
 						hk: "1U7V3v"
 					})), i.a.createElement("img", {
 						className: g.a.largeCenteredImage,
-						src: `${n.a.assetPath}/img/communityPoints/landingPage/docs/future.png`
+						src: `${n.a.assetPath}/img/communityPoints/landingPage/docs/future.png`,
+						alt: S._("Imagine a crypto future", null, {
+							hk: "2fm7jC"
+						})
 					}), i.a.createElement("section", null, i.a.createElement("h3", null, S._("The Future of Online Communities", null, {
 						hk: "2l5mV2"
 					})), S._("{=Communities are the lifeblood of the Internet. They are the places where magic happens online — where people meet others like themselves, think and talk about the same things, and laugh at the same jokes. From newsgroups and chatrooms and forums, communities have always been the centers of the Internet that draw people in.}{=But online communities are much more limited than their counterparts in the real world. In the real world, communities are independent entities, free to choose where and how they hang out. No one tells them what to do or where to go.}{=Today's online communities are not like this. They are trapped inside apps and platforms, where they do not own or control anything of value. This limitation makes them second-class citizens, unable to chart their own destiny on the Internet. It is time to put communities in their rightful place as the foundation of the Internet.}{=It is time for them to take back ownership and control. It is time for a change.}", [S._param("=Communities are the lifeblood of the Internet. They are the places where magic happens online — where people meet others like themselves, think and talk about the same things, and laugh at the same jokes. From newsgroups and chatrooms and forums, communities have always been the centers of the Internet that draw people in.", i.a.createElement("p", null, S._("Communities are the lifeblood of the Internet. They are the places where magic happens online — where people meet others like themselves, think and talk about the same things, and laugh at the same jokes. From newsgroups and chatrooms and forums, communities have always been the centers of the Internet that draw people in.", null, {
@@ -2026,7 +2029,10 @@
 					})))], {
 						hk: "1y9aEC"
 					})), i.a.createElement("img", {
-						src: `${n.a.assetPath}/img/communityPoints/landingPage/docs/chart.png`
+						src: `${n.a.assetPath}/img/communityPoints/landingPage/docs/chart.png`,
+						alt: w._("Pie chart", null, {
+							hk: "3KLyoS"
+						})
 					}))), i.a.createElement("section", null, i.a.createElement("h3", null, w._("How do contributors earn Community Points?", null, {
 						hk: "1R03CI"
 					})), w._("{=Contributors earn Community Points based on a measure of their contribution to the subreddit called their Contribution Score.}{=The baseline for this Contribution Score is the amount of karma each user has earned in the subreddit.}{=Subreddits can apply additional rules on top of this baseline karma data to compute the final Contribution Scores. For example, they can choose to double the weight of comments, ignore karma for certain post flairs, or limit Contribution Scores to some maximum amount. SeeDistribution Rules for more details.}{=In order for contributors to claim the Points they have earned, they need to create a Vault within the Reddit mobile app. When a user creates their Vault, they will receive the Points that have earned up to 24 weeks (~6 months) before. Points earned but not claimed within 24 weeks will expire.}", [w._param("=Contributors earn Community Points based on a measure of their contribution to the subreddit called their Contribution Score.", i.a.createElement("p", null, w._("Contributors earn Community Points based on a measure of their contribution to the subreddit called their Contribution Score.", null, {
@@ -2193,7 +2199,10 @@
 					}))), null),
 					"spam-and-abuse": i.a.createElement(() => i.a.createElement("main", null, i.a.createElement("img", {
 						className: g.a.smallTitleImage,
-						src: `${n.a.assetPath}/img/communityPoints/landingPage/docs/spam.png`
+						src: `${n.a.assetPath}/img/communityPoints/landingPage/docs/spam.png`,
+						alt: O._("Community Points can help fight spam", null, {
+							hk: "9z9e5"
+						})
 					}), i.a.createElement("h1", null, O._("Spam & Abuse", null, {
 						hk: "1qZ0Kk"
 					})), i.a.createElement("h2", null, O._("Community Points give communities smarter ways to fight spam and other abuse by punishing detrimental behavior.", null, {
@@ -2235,7 +2244,10 @@
 						hk: "2M3ArP"
 					}), i.a.createElement("img", {
 						className: g.a.largeCenteredImage,
-						src: `${n.a.assetPath}/img/communityPoints/landingPage/docs/reputation.png`
+						src: `${n.a.assetPath}/img/communityPoints/landingPage/docs/reputation.png`,
+						alt: F._("Example of how Community Points are displayed on comments", null, {
+							hk: "3E0yXu"
+						})
 					}), F._("{=Because Community Points are on a public blockchain, this reputation is inherently portable. Users can display their reputation anywhere on the Internet, on and off of Reddit. For example, communities can add bots to show balances in the chat apps they use, and outside forums can restrict access to users who have earned a minimum number of Points across Reddit communities.}", [F._param("=Because Community Points are on a public blockchain, this reputation is inherently portable. Users can display their reputation anywhere on the Internet, on and off of Reddit. For example, communities can add bots to show balances in the chat apps they use, and outside forums can restrict access to users who have earned a minimum number of Points across Reddit communities.", i.a.createElement("p", null, F._("Because Community Points are on a public blockchain, this reputation is inherently portable. Users can display their reputation anywhere on the Internet, on and off of Reddit. For example, communities can add bots to show balances in the chat apps they use, and outside forums can restrict access to users who have earned a minimum number of Points across Reddit communities.", null, {
 						hk: "1awSM9"
 					})))], {
@@ -2252,7 +2264,10 @@
 						hk: "448Jqc"
 					}), i.a.createElement("img", {
 						className: g.a.largeCenteredImage,
-						src: `${n.a.assetPath}/img/communityPoints/landingPage/docs/poll.png`
+						src: `${n.a.assetPath}/img/communityPoints/landingPage/docs/poll.png`,
+						alt: F._("Example of a community poll", null, {
+							hk: "CC6Sa"
+						})
 					}), F._("{=Specifically, this weight is the minimum of their total earned Points (Points that were minted directly to them) and their current Points balance. For example, if a user earned 1,000 Points but used 500 of them to buy perks, they have a current vote weight of 500. Similarly, if they earned 200 Points but now have 800 because of purchases and tips, their vote weight is still only 200.}{=Vote weights are based on Points balances at the time that the poll was created, not when the vote was cast. This prevents people from making a vote and then transferring their Points for someone else to vote with.}{=Subreddits with Community Points can opt for polls to be available to all users to create, or for only moderators to be able to create weighted polls.}", [F._param("=Specifically, this weight is the minimum of their total earned Points (Points that were minted directly to them) and their current Points balance. For example, if a user earned 1,000 Points but used 500 of them to buy perks, they have a current vote weight of 500. Similarly, if they earned 200 Points but now have 800 because of purchases and tips, their vote weight is still only 200.", i.a.createElement("p", null, F._("Specifically, this weight is the minimum of their total earned Points (Points that were minted directly to them) and their current Points balance. For example, if a user earned 1,000 Points but used 500 of them to buy perks, they have a current vote weight of 500. Similarly, if they earned 200 Points but now have 800 because of purchases and tips, their vote weight is still only 200.", null, {
 						hk: "2fIlHQ"
 					}))), F._param("=Vote weights are based on Points balances at the time that the poll was created, not when the vote was cast. This prevents people from making a vote and then transferring their Points for someone else to vote with.", i.a.createElement("p", null, F._("Vote weights are based on Points balances at the time that the poll was created, not when the vote was cast. This prevents people from making a vote and then transferring their Points for someone else to vote with.", null, {
@@ -2329,12 +2344,18 @@
 					})))], {
 						hk: "35bFcv"
 					})), i.a.createElement("img", {
-						src: `${n.a.assetPath}/img/communityPoints/landingPage/docs/badges.png`
+						src: `${n.a.assetPath}/img/communityPoints/landingPage/docs/badges.png`,
+						alt: D._("Example image of badges", null, {
+							hk: "2J0eH9"
+						})
 					}))), i.a.createElement("section", null, i.a.createElement("h3", null, D._("Special Membership Price & Other Ways to Buy", null, {
 						hk: "3gOExN"
 					})), i.a.createElement("img", {
 						className: g.a.largeCenteredImage,
-						src: `${n.a.assetPath}/img/communityPoints/landingPage/docs/membership_price.png`
+						src: `${n.a.assetPath}/img/communityPoints/landingPage/docs/membership_price.png`,
+						alt: D._("Special Memberships price and ways to buy", null, {
+							hk: "3UQ0wL"
+						})
 					}), D._("{=The initial price of Special Memberships is set to 1,000 Points/month. Communities can vote to update this price using aGovernance Poll}{=In addition to using Community Points, people can also purchase Special Memberships for $5/month. They can do this using Paypal on web (new Reddit) or In-App Purchase on the iOS app. When memberships are purchased with dollars, Community Points are burned from the Community Tank to provide the Special Membership status on-chain.}{=Note that Special Memberships are unrelated to Reddit Premium, which is a sitewide feature.}", [D._param("=The initial price of Special Memberships is set to 1,000 Points/month. Communities can vote to update this price using aGovernance Poll", i.a.createElement("p", null, D._("The initial price of Special Memberships is set to 1,000 Points/month. Communities can vote to update this price using a {=Governance Poll}.", [D._param("=Governance Poll", i.a.createElement(b.a, {
 						to: h("reputation-and-governance")
 					}, D._("Governance Poll", null, {
@@ -2393,25 +2414,25 @@
 					})))], {
 						hk: "11Y6y2"
 					})), null),
-					"redeeming-points": i.a.createElement(() => i.a.createElement("main", null, i.a.createElement("h1", null, j._("Redeeming Points", null, {
+					"redeeming-points": i.a.createElement(() => i.a.createElement("main", null, i.a.createElement("h1", null, B._("Redeeming Points", null, {
 						hk: "RP9Na"
-					})), i.a.createElement("h2", null, j._("When Community Points are redeemed by spending them on premium features, they are destroyed and removed from circulation. This reduces the overall supply of Points and makes everyone else's slice of Points larger, thus rewarding the entire community.", null, {
+					})), i.a.createElement("h2", null, B._("When Community Points are redeemed by spending them on premium features, they are destroyed and removed from circulation. This reduces the overall supply of Points and makes everyone else's slice of Points larger, thus rewarding the entire community.", null, {
 						hk: "11FdJY"
-					})), j._("{=Redeemed Points are burned, or removed from circulation. Half of the burned Points in each 4-week period are reintroduced in the following distribution cycle.}{=When people buy premium features with dollars, for example Special Memberships an equivalent amount of Points are burned from the Community Tank on behalf of that user.}{=Communities can also build their own use cases for redeeming Points, which can provide Points more utility and value. See theDevelopers section for more information.}", [j._param("=Redeemed Points are burned, or removed from circulation. Half of the burned Points in each 4-week period are reintroduced in the following distribution cycle.", i.a.createElement("p", null, j._("Redeemed Points are burned, or removed from circulation. Half of the burned Points in each 4-week period are reintroduced in the following distribution cycle.", null, {
+					})), B._("{=Redeemed Points are burned, or removed from circulation. Half of the burned Points in each 4-week period are reintroduced in the following distribution cycle.}{=When people buy premium features with dollars, for example Special Memberships an equivalent amount of Points are burned from the Community Tank on behalf of that user.}{=Communities can also build their own use cases for redeeming Points, which can provide Points more utility and value. See theDevelopers section for more information.}", [B._param("=Redeemed Points are burned, or removed from circulation. Half of the burned Points in each 4-week period are reintroduced in the following distribution cycle.", i.a.createElement("p", null, B._("Redeemed Points are burned, or removed from circulation. Half of the burned Points in each 4-week period are reintroduced in the following distribution cycle.", null, {
 						hk: "3SVvAg"
-					}))), j._param("=When people buy premium features with dollars, for example Special Memberships an equivalent amount of Points are burned from the Community Tank on behalf of that user.", i.a.createElement("p", null, j._("When people buy premium features with dollars, for example {=Special Memberships}, an equivalent amount of Points are burned from the {=Community Tank} on behalf of that user.", [j._param("=Special Memberships", i.a.createElement(b.a, {
+					}))), B._param("=When people buy premium features with dollars, for example Special Memberships an equivalent amount of Points are burned from the Community Tank on behalf of that user.", i.a.createElement("p", null, B._("When people buy premium features with dollars, for example {=Special Memberships}, an equivalent amount of Points are burned from the {=Community Tank} on behalf of that user.", [B._param("=Special Memberships", i.a.createElement(b.a, {
 						to: h("special-memberships")
-					}, j._("Special Memberships", null, {
+					}, B._("Special Memberships", null, {
 						hk: "AWK4V"
-					}))), j._param("=Community Tank", i.a.createElement(b.a, {
+					}))), B._param("=Community Tank", i.a.createElement(b.a, {
 						to: h("distribution-process")
-					}, j._("Community Tank", null, {
+					}, B._("Community Tank", null, {
 						hk: "1KuErL"
 					})))], {
 						hk: "44uupr"
-					}))), j._param("=Communities can also build their own use cases for redeeming Points, which can provide Points more utility and value. See theDevelopers section for more information.", i.a.createElement("p", null, j._("Communities can also build their own use cases for redeeming Points, which can provide Points more utility and value. See the {=Developers} section for more information.", [j._param("=Developers", i.a.createElement(b.a, {
+					}))), B._param("=Communities can also build their own use cases for redeeming Points, which can provide Points more utility and value. See theDevelopers section for more information.", i.a.createElement("p", null, B._("Communities can also build their own use cases for redeeming Points, which can provide Points more utility and value. See the {=Developers} section for more information.", [B._param("=Developers", i.a.createElement(b.a, {
 						to: h("developers")
-					}, j._("Developers", null, {
+					}, B._("Developers", null, {
 						hk: "hdAFy"
 					})))], {
 						hk: "2h7Ael"
@@ -2428,7 +2449,10 @@
 						hk: "19OPwT"
 					}), i.a.createElement("img", {
 						className: g.a.largeCenteredImage,
-						src: `${n.a.assetPath}/img/communityPoints/landingPage/docs/user_card.png`
+						src: `${n.a.assetPath}/img/communityPoints/landingPage/docs/user_card.png`,
+						alt: q._("Tipping Community Points", null, {
+							hk: "2otVJZ"
+						})
 					})), null),
 					"points-and-automoderator": i.a.createElement(() => i.a.createElement("main", null, i.a.createElement("h1", null, N._("Points & Automoderator", null, {
 						hk: "4qE8Kd"
@@ -2504,97 +2528,97 @@
 					})))], {
 						hk: "1xjedp"
 					}))), null),
-					"points-on-the-blockchain": i.a.createElement(() => i.a.createElement("main", null, i.a.createElement("h1", null, B._("Points on the Blockchain", null, {
+					"points-on-the-blockchain": i.a.createElement(() => i.a.createElement("main", null, i.a.createElement("h1", null, j._("Points on the Blockchain", null, {
 						hk: "2Fk8CU"
-					})), i.a.createElement("h2", null, B._("What makes Community Points unique is that they live on a public blockchain. People's Points are theirs and can be used anywhere they want on the Internet where Points are supported.", null, {
+					})), i.a.createElement("h2", null, j._("What makes Community Points unique is that they live on a public blockchain. People's Points are theirs and can be used anywhere they want on the Internet where Points are supported.", null, {
 						hk: "3ldDbf"
-					})), i.a.createElement("p", null, B._("Community Points currently exist on a testnet version of the Ethereum blockchain, which uses similar technology to Bitcoin to validate ownership and control of tokens based on who holds them.", null, {
+					})), i.a.createElement("p", null, j._("Community Points currently exist on a testnet version of the Ethereum blockchain, which uses similar technology to Bitcoin to validate ownership and control of tokens based on who holds them.", null, {
 						hk: "28z53t"
-					})), i.a.createElement("section", null, i.a.createElement("h3", null, B._("How does the blockchain work?", null, {
+					})), i.a.createElement("section", null, i.a.createElement("h3", null, j._("How does the blockchain work?", null, {
 						hk: "2Ctp6v"
-					})), B._("{=The blockchain is a decentralized infrastructure layer that can store data and process transactions. What makes the blockchain unique is that it is not owned or controlled by any single entity. Instead, it is maintained by a network of participants who coordinate together.}{=The blockchain that Community Points live on is Ethereums Rinkeby testnet. This is a general-purpose blockchain with smart contracts that enable programmable tokens, like Community Points.}{=On Ethereum, Community Points are run by a suite of smart contracts that manage balances, Points distribution, and purchasing Special Memberships. The smart contracts also leverage existing parts of the Ethereum ecosystem, such as ERC-20 token standards.}{=Under the hood, an individual user's Points belong to a specific address on Ethereum. This address is created when they set up their Vault and the address (along with everything it has in it) can only be controlled by them.}", [B._param("=The blockchain is a decentralized infrastructure layer that can store data and process transactions. What makes the blockchain unique is that it is not owned or controlled by any single entity. Instead, it is maintained by a network of participants who coordinate together.", i.a.createElement("p", null, B._("The blockchain is a decentralized infrastructure layer that can store data and process transactions. What makes the blockchain unique is that it is not owned or controlled by any single entity. Instead, it is maintained by a network of participants who coordinate together.", null, {
+					})), j._("{=The blockchain is a decentralized infrastructure layer that can store data and process transactions. What makes the blockchain unique is that it is not owned or controlled by any single entity. Instead, it is maintained by a network of participants who coordinate together.}{=The blockchain that Community Points live on is Ethereums Rinkeby testnet. This is a general-purpose blockchain with smart contracts that enable programmable tokens, like Community Points.}{=On Ethereum, Community Points are run by a suite of smart contracts that manage balances, Points distribution, and purchasing Special Memberships. The smart contracts also leverage existing parts of the Ethereum ecosystem, such as ERC-20 token standards.}{=Under the hood, an individual user's Points belong to a specific address on Ethereum. This address is created when they set up their Vault and the address (along with everything it has in it) can only be controlled by them.}", [j._param("=The blockchain is a decentralized infrastructure layer that can store data and process transactions. What makes the blockchain unique is that it is not owned or controlled by any single entity. Instead, it is maintained by a network of participants who coordinate together.", i.a.createElement("p", null, j._("The blockchain is a decentralized infrastructure layer that can store data and process transactions. What makes the blockchain unique is that it is not owned or controlled by any single entity. Instead, it is maintained by a network of participants who coordinate together.", null, {
 						hk: "2nwu6u"
-					}))), B._param("=The blockchain that Community Points live on is Ethereums Rinkeby testnet. This is a general-purpose blockchain with smart contracts that enable programmable tokens, like Community Points.", i.a.createElement("p", null, B._("The blockchain that Community Points live on is {=Ethereum}'s Rinkeby testnet. This is a general-purpose blockchain with smart contracts that enable programmable tokens, like Community Points.", [B._param("=Ethereum", i.a.createElement("a", {
+					}))), j._param("=The blockchain that Community Points live on is Ethereums Rinkeby testnet. This is a general-purpose blockchain with smart contracts that enable programmable tokens, like Community Points.", i.a.createElement("p", null, j._("The blockchain that Community Points live on is {=Ethereum}'s Rinkeby testnet. This is a general-purpose blockchain with smart contracts that enable programmable tokens, like Community Points.", [j._param("=Ethereum", i.a.createElement("a", {
 						href: "https://ethereum.org/en/",
 						target: "_blank",
 						rel: "noopener noreferrer"
-					}, B._("Ethereum", null, {
+					}, j._("Ethereum", null, {
 						hk: "1P2gav"
 					})))], {
 						hk: "3gSsUl"
-					}))), B._param("=On Ethereum, Community Points are run by a suite of smart contracts that manage balances, Points distribution, and purchasing Special Memberships. The smart contracts also leverage existing parts of the Ethereum ecosystem, such as ERC-20 token standards.", i.a.createElement("p", null, B._("On Ethereum, Community Points are run by a suite of smart contracts that manage balances, Points distribution, and purchasing Special Memberships. The smart contracts also leverage existing parts of the Ethereum ecosystem, such as ERC-20 token standards.", null, {
+					}))), j._param("=On Ethereum, Community Points are run by a suite of smart contracts that manage balances, Points distribution, and purchasing Special Memberships. The smart contracts also leverage existing parts of the Ethereum ecosystem, such as ERC-20 token standards.", i.a.createElement("p", null, j._("On Ethereum, Community Points are run by a suite of smart contracts that manage balances, Points distribution, and purchasing Special Memberships. The smart contracts also leverage existing parts of the Ethereum ecosystem, such as ERC-20 token standards.", null, {
 						hk: "1fQl2"
-					}))), B._param("=Under the hood, an individual user's Points belong to a specific address on Ethereum. This address is created when they set up their Vault and the address (along with everything it has in it) can only be controlled by them.", i.a.createElement("p", null, B._("Under the hood, an individual user's Points belong to a specific address on Ethereum. This address is created when they set up their {=Vault}, and the address (along with everything it has in it) can only be controlled by them.", [B._param("=Vault", i.a.createElement(b.a, {
+					}))), j._param("=Under the hood, an individual user's Points belong to a specific address on Ethereum. This address is created when they set up their Vault and the address (along with everything it has in it) can only be controlled by them.", i.a.createElement("p", null, j._("Under the hood, an individual user's Points belong to a specific address on Ethereum. This address is created when they set up their {=Vault}, and the address (along with everything it has in it) can only be controlled by them.", [j._param("=Vault", i.a.createElement(b.a, {
 						to: h("vault")
-					}, B._("Vault", null, {
+					}, j._("Vault", null, {
 						hk: "3HO9Yh"
 					})))], {
 						hk: "TEmd4"
 					})))], {
 						hk: "2gCFJm"
-					})), i.a.createElement("section", null, i.a.createElement("h3", null, B._("What are the benefits of the blockchain?", null, {
+					})), i.a.createElement("section", null, i.a.createElement("h3", null, j._("What are the benefits of the blockchain?", null, {
 						hk: "1bEK24"
-					})), B._("{=Think of the blockchain as a public database that anyone can see and use. This gives Community Points several key benefits:}{=Ownership. Things on the blockchain can only be controlled by the user who holds them. This means no powerful centralized entity can take users' Points away.Openness & Portability. The blockchain is always publicly available to anyone on the Internet, and it can be integrated into any app or website. This means people can use their Points off of Reddit on apps that support them.Transparency. The blockchain maintains a public record of all balances and transactions. The data is available to anyone, not siloed within a single company's systems.}{=Note that Reddit's site-wide and subreddit rules apply to your activity on Reddit. So while Reddit can't take your Points away, you may be unable to use them on our services if you break site rules.}", [B._param("=Think of the blockchain as a public database that anyone can see and use. This gives Community Points several key benefits:", i.a.createElement("p", null, B._("Think of the blockchain as a public database that anyone can see and use. This gives Community Points several key benefits:", null, {
+					})), j._("{=Think of the blockchain as a public database that anyone can see and use. This gives Community Points several key benefits:}{=Ownership. Things on the blockchain can only be controlled by the user who holds them. This means no powerful centralized entity can take users' Points away.Openness & Portability. The blockchain is always publicly available to anyone on the Internet, and it can be integrated into any app or website. This means people can use their Points off of Reddit on apps that support them.Transparency. The blockchain maintains a public record of all balances and transactions. The data is available to anyone, not siloed within a single company's systems.}{=Note that Reddit's site-wide and subreddit rules apply to your activity on Reddit. So while Reddit can't take your Points away, you may be unable to use them on our services if you break site rules.}", [j._param("=Think of the blockchain as a public database that anyone can see and use. This gives Community Points several key benefits:", i.a.createElement("p", null, j._("Think of the blockchain as a public database that anyone can see and use. This gives Community Points several key benefits:", null, {
 						hk: "32AhK6"
-					}))), B._param("=Ownership. Things on the blockchain can only be controlled by the user who holds them. This means no powerful centralized entity can take users' Points away.Openness & Portability. The blockchain is always publicly available to anyone on the Internet, and it can be integrated into any app or website. This means people can use their Points off of Reddit on apps that support them.Transparency. The blockchain maintains a public record of all balances and transactions. The data is available to anyone, not siloed within a single company's systems.", i.a.createElement("ul", null, B._("{=Ownership. Things on the blockchain can only be controlled by the user who holds them. This means no powerful centralized entity can take users' Points away.}{=Openness & Portability. The blockchain is always publicly available to anyone on the Internet, and it can be integrated into any app or website. This means people can use their Points off of Reddit on apps that support them.}{=Transparency. The blockchain maintains a public record of all balances and transactions. The data is available to anyone, not siloed within a single company's systems.}", [B._param("=Ownership. Things on the blockchain can only be controlled by the user who holds them. This means no powerful centralized entity can take users' Points away.", i.a.createElement("li", null, B._("{=Ownership.} Things on the blockchain can only be controlled by the user who holds them. This means no powerful centralized entity can take users' Points away.", [B._param("=Ownership.", i.a.createElement("b", null, B._("Ownership.", null, {
+					}))), j._param("=Ownership. Things on the blockchain can only be controlled by the user who holds them. This means no powerful centralized entity can take users' Points away.Openness & Portability. The blockchain is always publicly available to anyone on the Internet, and it can be integrated into any app or website. This means people can use their Points off of Reddit on apps that support them.Transparency. The blockchain maintains a public record of all balances and transactions. The data is available to anyone, not siloed within a single company's systems.", i.a.createElement("ul", null, j._("{=Ownership. Things on the blockchain can only be controlled by the user who holds them. This means no powerful centralized entity can take users' Points away.}{=Openness & Portability. The blockchain is always publicly available to anyone on the Internet, and it can be integrated into any app or website. This means people can use their Points off of Reddit on apps that support them.}{=Transparency. The blockchain maintains a public record of all balances and transactions. The data is available to anyone, not siloed within a single company's systems.}", [j._param("=Ownership. Things on the blockchain can only be controlled by the user who holds them. This means no powerful centralized entity can take users' Points away.", i.a.createElement("li", null, j._("{=Ownership.} Things on the blockchain can only be controlled by the user who holds them. This means no powerful centralized entity can take users' Points away.", [j._param("=Ownership.", i.a.createElement("b", null, j._("Ownership.", null, {
 						hk: "2ryFKo"
 					})))], {
 						hk: "1g04uq"
-					}))), B._param("=Openness & Portability. The blockchain is always publicly available to anyone on the Internet, and it can be integrated into any app or website. This means people can use their Points off of Reddit on apps that support them.", i.a.createElement("li", null, B._("{=Openness & Portability.} The blockchain is always publicly available to anyone on the Internet, and it can be integrated into any app or website. This means people can use their Points off of Reddit on apps that support them.", [B._param("=Openness & Portability.", i.a.createElement("b", null, B._("Openness & Portability.", null, {
+					}))), j._param("=Openness & Portability. The blockchain is always publicly available to anyone on the Internet, and it can be integrated into any app or website. This means people can use their Points off of Reddit on apps that support them.", i.a.createElement("li", null, j._("{=Openness & Portability.} The blockchain is always publicly available to anyone on the Internet, and it can be integrated into any app or website. This means people can use their Points off of Reddit on apps that support them.", [j._param("=Openness & Portability.", i.a.createElement("b", null, j._("Openness & Portability.", null, {
 						hk: "1daOsT"
 					})))], {
 						hk: "227Qu6"
-					}))), B._param("=Transparency. The blockchain maintains a public record of all balances and transactions. The data is available to anyone, not siloed within a single company's systems.", i.a.createElement("li", null, B._("{=Transparency.} The blockchain maintains a public record of all balances and transactions. The data is available to anyone, not siloed within a single company's systems.", [B._param("=Transparency.", i.a.createElement("b", null, B._("Transparency.", null, {
+					}))), j._param("=Transparency. The blockchain maintains a public record of all balances and transactions. The data is available to anyone, not siloed within a single company's systems.", i.a.createElement("li", null, j._("{=Transparency.} The blockchain maintains a public record of all balances and transactions. The data is available to anyone, not siloed within a single company's systems.", [j._param("=Transparency.", i.a.createElement("b", null, j._("Transparency.", null, {
 						hk: "3lEwhF"
 					})))], {
 						hk: "1ogHNQ"
 					})))], {
 						hk: "Hwv73"
-					}))), B._param("=Note that Reddit's site-wide and subreddit rules apply to your activity on Reddit. So while Reddit can't take your Points away, you may be unable to use them on our services if you break site rules.", i.a.createElement("p", null, B._("Note that Reddit's site-wide and subreddit rules apply to your activity on Reddit. So while Reddit can't take your Points away, you may be unable to use them on our services if you break site rules.", null, {
+					}))), j._param("=Note that Reddit's site-wide and subreddit rules apply to your activity on Reddit. So while Reddit can't take your Points away, you may be unable to use them on our services if you break site rules.", i.a.createElement("p", null, j._("Note that Reddit's site-wide and subreddit rules apply to your activity on Reddit. So while Reddit can't take your Points away, you may be unable to use them on our services if you break site rules.", null, {
 						hk: "1EWXOL"
 					})))], {
 						hk: "21DMJG"
-					})), i.a.createElement("section", null, i.a.createElement("h3", null, B._("What is gas, and who's paying for it?", null, {
+					})), i.a.createElement("section", null, i.a.createElement("h3", null, j._("What is gas, and who's paying for it?", null, {
 						hk: "5K69o"
-					})), B._('{=Transactions on the Ethereum network cost "gas," which are micro amounts of Ethereum\'s native cryptocurrency (Ether). Since most Redditors do not have Ether already, Reddit will cover their cost of gas for now, through meta-transactions and the Gas Station Network on the Rinkeby testnet. We plan to adopt better scaling and gas solutions in the future that will greatly reduce the amount of gas needed.}', [B._param('=Transactions on the Ethereum network cost "gas," which are micro amounts of Ethereum\'s native cryptocurrency (Ether). Since most Redditors do not have Ether already, Reddit will cover their cost of gas for now, through meta-transactions and the Gas Station Network on the Rinkeby testnet. We plan to adopt better scaling and gas solutions in the future that will greatly reduce the amount of gas needed.', i.a.createElement("p", null, B._('Transactions on the Ethereum network cost "gas," which are micro amounts of Ethereum\'s native cryptocurrency (Ether). Since most Redditors do not have Ether already, Reddit will cover their cost of gas for now, through meta-transactions and the Gas Station Network on the Rinkeby testnet. We plan to adopt better scaling and gas solutions in the future that will greatly reduce the amount of gas needed.', null, {
+					})), j._('{=Transactions on the Ethereum network cost "gas," which are micro amounts of Ethereum\'s native cryptocurrency (Ether). Since most Redditors do not have Ether already, Reddit will cover their cost of gas for now, through meta-transactions and the Gas Station Network on the Rinkeby testnet. We plan to adopt better scaling and gas solutions in the future that will greatly reduce the amount of gas needed.}', [j._param('=Transactions on the Ethereum network cost "gas," which are micro amounts of Ethereum\'s native cryptocurrency (Ether). Since most Redditors do not have Ether already, Reddit will cover their cost of gas for now, through meta-transactions and the Gas Station Network on the Rinkeby testnet. We plan to adopt better scaling and gas solutions in the future that will greatly reduce the amount of gas needed.', i.a.createElement("p", null, j._('Transactions on the Ethereum network cost "gas," which are micro amounts of Ethereum\'s native cryptocurrency (Ether). Since most Redditors do not have Ether already, Reddit will cover their cost of gas for now, through meta-transactions and the Gas Station Network on the Rinkeby testnet. We plan to adopt better scaling and gas solutions in the future that will greatly reduce the amount of gas needed.', null, {
 						hk: "3WUT11"
 					})))], {
 						hk: "1fwKbD"
-					})), i.a.createElement("section", null, i.a.createElement("h3", null, B._("Which Ethereum network is this using?", null, {
+					})), i.a.createElement("section", null, i.a.createElement("h3", null, j._("Which Ethereum network is this using?", null, {
 						hk: "1vDpUR"
-					})), B._("{=Community Points are an experimental product currently on a testnet version of the Ethereum blockchain. We are working on bringing them to the mainnet version of the Ethereum blockchain. This testnet does not provide the same security guarantees as the main Ethereum network, and users are strongly advised to exercise caution while Points are in beta. For example, exchanging, selling, or trading Points are against Reddit's Previews Terms of ServiceThis kind of behavior is very risky while Points are on a testnet — Points can be lost or they may not be migrated over to the main Ethereum network.}", [B._param("=Community Points are an experimental product currently on a testnet version of the Ethereum blockchain. We are working on bringing them to the mainnet version of the Ethereum blockchain. This testnet does not provide the same security guarantees as the main Ethereum network, and users are strongly advised to exercise caution while Points are in beta. For example, exchanging, selling, or trading Points are against Reddit's Previews Terms of ServiceThis kind of behavior is very risky while Points are on a testnet — Points can be lost or they may not be migrated over to the main Ethereum network.", i.a.createElement("p", null, B._("Community Points are an experimental product currently on a testnet version of the Ethereum blockchain. We are working on bringing them to the mainnet version of the Ethereum blockchain. This testnet does not provide the same security guarantees as the main Ethereum network, and users are strongly advised to exercise caution while Points are in beta. For example, exchanging, selling, or trading Points are against Reddit's {=Previews Terms of Service}. This kind of behavior is very risky while Points are on a testnet — Points can be lost or they may not be migrated over to the main Ethereum network.", [B._param("=Previews Terms of Service", i.a.createElement("a", {
+					})), j._("{=Community Points are an experimental product currently on a testnet version of the Ethereum blockchain. We are working on bringing them to the mainnet version of the Ethereum blockchain. This testnet does not provide the same security guarantees as the main Ethereum network, and users are strongly advised to exercise caution while Points are in beta. For example, exchanging, selling, or trading Points are against Reddit's Previews Terms of ServiceThis kind of behavior is very risky while Points are on a testnet — Points can be lost or they may not be migrated over to the main Ethereum network.}", [j._param("=Community Points are an experimental product currently on a testnet version of the Ethereum blockchain. We are working on bringing them to the mainnet version of the Ethereum blockchain. This testnet does not provide the same security guarantees as the main Ethereum network, and users are strongly advised to exercise caution while Points are in beta. For example, exchanging, selling, or trading Points are against Reddit's Previews Terms of ServiceThis kind of behavior is very risky while Points are on a testnet — Points can be lost or they may not be migrated over to the main Ethereum network.", i.a.createElement("p", null, j._("Community Points are an experimental product currently on a testnet version of the Ethereum blockchain. We are working on bringing them to the mainnet version of the Ethereum blockchain. This testnet does not provide the same security guarantees as the main Ethereum network, and users are strongly advised to exercise caution while Points are in beta. For example, exchanging, selling, or trading Points are against Reddit's {=Previews Terms of Service}. This kind of behavior is very risky while Points are on a testnet — Points can be lost or they may not be migrated over to the main Ethereum network.", [j._param("=Previews Terms of Service", i.a.createElement("a", {
 						href: "https://www.redditinc.com/policies/previews-terms",
 						target: "_blank",
 						rel: "noopener noreferrer"
-					}, B._("Previews Terms of Service", null, {
+					}, j._("Previews Terms of Service", null, {
 						hk: "3GtJHJ"
 					})))], {
 						hk: "1ArmWr"
 					})))], {
 						hk: "byLMP"
-					})), i.a.createElement("section", null, i.a.createElement("h3", null, B._("What is the scaling problem and how does it impact plans for mainnet?", null, {
+					})), i.a.createElement("section", null, i.a.createElement("h3", null, j._("What is the scaling problem and how does it impact plans for mainnet?", null, {
 						hk: "48T8Tr"
-					})), B._("{=Blockchains are a relatively new technology. In their current implementations, they have very limited capacity and bandwidth. Putting all Reddit users on the blockchain, for example, would currently be infeasible and prohibitively expensive.}{=To solve this problem, and to be able to launch Community Points on mainnet, Reddit is actively working on developing a scaling solution that can increase the bandwidth and capacity of blockchain applications like Community Points, without sacrificing the unique properties and guarantees that a decentralized blockchain provides. We havepartnered with the Ethereum Foundation in these efforts.}{=In 2020, we issued acall to the crypto community to present their best scaling options for Community Points. In 2021, we launched a layer-2 scaling network using Arbitrum optimistic rollups technology. Further work to scale Community Points is ongoing.}", [B._param("=Blockchains are a relatively new technology. In their current implementations, they have very limited capacity and bandwidth. Putting all Reddit users on the blockchain, for example, would currently be infeasible and prohibitively expensive.", i.a.createElement("p", null, B._("Blockchains are a relatively new technology. In their current implementations, they have very limited capacity and bandwidth. Putting all Reddit users on the blockchain, for example, would currently be infeasible and prohibitively expensive.", null, {
+					})), j._("{=Blockchains are a relatively new technology. In their current implementations, they have very limited capacity and bandwidth. Putting all Reddit users on the blockchain, for example, would currently be infeasible and prohibitively expensive.}{=To solve this problem, and to be able to launch Community Points on mainnet, Reddit is actively working on developing a scaling solution that can increase the bandwidth and capacity of blockchain applications like Community Points, without sacrificing the unique properties and guarantees that a decentralized blockchain provides. We havepartnered with the Ethereum Foundation in these efforts.}{=In 2020, we issued acall to the crypto community to present their best scaling options for Community Points. In 2021, we launched a layer-2 scaling network using Arbitrum optimistic rollups technology. Further work to scale Community Points is ongoing.}", [j._param("=Blockchains are a relatively new technology. In their current implementations, they have very limited capacity and bandwidth. Putting all Reddit users on the blockchain, for example, would currently be infeasible and prohibitively expensive.", i.a.createElement("p", null, j._("Blockchains are a relatively new technology. In their current implementations, they have very limited capacity and bandwidth. Putting all Reddit users on the blockchain, for example, would currently be infeasible and prohibitively expensive.", null, {
 						hk: "33CyaZ"
-					}))), B._param("=To solve this problem, and to be able to launch Community Points on mainnet, Reddit is actively working on developing a scaling solution that can increase the bandwidth and capacity of blockchain applications like Community Points, without sacrificing the unique properties and guarantees that a decentralized blockchain provides. We havepartnered with the Ethereum Foundation in these efforts.", i.a.createElement("p", null, B._("To solve this problem, and to be able to launch Community Points on mainnet, Reddit is actively working on developing a scaling solution that can increase the bandwidth and capacity of blockchain applications like Community Points, without sacrificing the unique properties and guarantees that a decentralized blockchain provides. We have {=partnered} with the Ethereum Foundation in these efforts.", [B._param("=partnered", i.a.createElement("a", {
+					}))), j._param("=To solve this problem, and to be able to launch Community Points on mainnet, Reddit is actively working on developing a scaling solution that can increase the bandwidth and capacity of blockchain applications like Community Points, without sacrificing the unique properties and guarantees that a decentralized blockchain provides. We havepartnered with the Ethereum Foundation in these efforts.", i.a.createElement("p", null, j._("To solve this problem, and to be able to launch Community Points on mainnet, Reddit is actively working on developing a scaling solution that can increase the bandwidth and capacity of blockchain applications like Community Points, without sacrificing the unique properties and guarantees that a decentralized blockchain provides. We have {=partnered} with the Ethereum Foundation in these efforts.", [j._param("=partnered", i.a.createElement("a", {
 						href: "/r/ethereum/comments/l6c3kx/reddit_announces_partnership_with_the_ethereum/",
 						target: "_blank",
 						rel: "noopener noreferrer"
-					}, B._("partnered", null, {
+					}, j._("partnered", null, {
 						hk: "3RaXQ7"
 					})))], {
 						hk: "2Y2npj"
-					}))), B._param("=In 2020, we issued acall to the crypto community to present their best scaling options for Community Points. In 2021, we launched a layer-2 scaling network using Arbitrum optimistic rollups technology. Further work to scale Community Points is ongoing.", i.a.createElement("p", null, B._("In 2020, we issued a {=call to the crypto community} to present their best scaling options for Community Points. In 2021, we {=launched} a layer-2 scaling network using Arbitrum optimistic rollups technology. Further work to scale Community Points is ongoing.", [B._param("=call to the crypto community", i.a.createElement("a", {
+					}))), j._param("=In 2020, we issued acall to the crypto community to present their best scaling options for Community Points. In 2021, we launched a layer-2 scaling network using Arbitrum optimistic rollups technology. Further work to scale Community Points is ongoing.", i.a.createElement("p", null, j._("In 2020, we issued a {=call to the crypto community} to present their best scaling options for Community Points. In 2021, we {=launched} a layer-2 scaling network using Arbitrum optimistic rollups technology. Further work to scale Community Points is ongoing.", [j._param("=call to the crypto community", i.a.createElement("a", {
 						href: "/r/ethereum/comments/hbjx25/the_great_reddit_scaling_bakeoff/",
 						target: "_blank",
 						rel: "noopener noreferrer"
-					}, B._("call to the crypto community", null, {
+					}, j._("call to the crypto community", null, {
 						hk: "2riJMB"
-					}))), B._param("=launched", i.a.createElement("a", {
+					}))), j._param("=launched", i.a.createElement("a", {
 						href: "/r/ethereum/comments/opi5rg/scaling_reddits_community_points_with_arbitrum/",
 						target: "_blank",
 						rel: "noopener noreferrer"
-					}, B._("launched", null, {
+					}, j._("launched", null, {
 						hk: "1yIBHY"
 					})))], {
 						hk: "3q5Wzy"
@@ -3160,7 +3184,7 @@
 			const {
 				fbt: ke
 			} = o("./node_modules/fbt/lib/FbtPublic.js");
-			var Pe = function() {
+			var _e = function() {
 					const [e, t] = Object(a.useState)(!1), [o, s] = Object(a.useState)(!1), l = Object(r.e)(ne.e), u = Object(r.e)(se.m), c = Object(re.a)();
 					Object(a.useEffect)(() => {
 						c(Object(ie.h)())
@@ -3184,8 +3208,8 @@
 						onClose: () => s(!1)
 					}))
 				},
-				_e = o("./src/reddit/pages/meta/CommunityPointsLearnMorePage/Sections/Benefits/expandableText.m.less"),
-				Ee = o.n(_e);
+				Pe = o("./src/reddit/pages/meta/CommunityPointsLearnMorePage/Sections/Benefits/expandableText.m.less"),
+				Ee = o.n(Pe);
 			const {
 				fbt: Ce
 			} = o("./node_modules/fbt/lib/FbtPublic.js"), Se = ({
@@ -3204,7 +3228,7 @@
 						[Ee.a.hidden]: a,
 						[Ee.a.nightmode]: c
 					})
-				}, o && i.a.createElement(yt, {
+				}, o && i.a.createElement(bt, {
 					anchorId: o
 				}), i.a.createElement("div", {
 					className: Ee.a.imageSection,
@@ -3215,7 +3239,8 @@
 					className: Object(u.a)(Ee.a.image, {
 						[Ee.a.expanded]: n
 					}),
-					src: t.imageSrc
+					src: t.imageSrc,
+					alt: t.title
 				})), i.a.createElement("div", {
 					className: Object(u.a)(Ee.a.textSection, {
 						[Ee.a.expanded]: n,
@@ -3237,7 +3262,7 @@
 					}) : Ce._("Expand", null, {
 						hk: "4jMW0g"
 					})
-				}, i.a.createElement(P.a, {
+				}, i.a.createElement(_.a, {
 					name: "add",
 					className: Object(u.a)(Ee.a.plusIcon, {
 						[Ee.a.expanded]: n
@@ -3263,7 +3288,7 @@
 					}), r(null)
 				}, [n]), i.a.createElement("div", {
 					className: e
-				}, i.a.createElement(yt, {
+				}, i.a.createElement(bt, {
 					anchorId: "benefits"
 				}), i.a.createElement("h2", {
 					className: Te.a.title
@@ -3362,12 +3387,12 @@
 			var Ae = o("./src/reddit/pages/meta/CommunityPointsLearnMorePage/Sections/CommunityPoints/index.m.less"),
 				Ne = o.n(Ae);
 			const {
-				fbt: Be
-			} = o("./node_modules/fbt/lib/FbtPublic.js"), je = ({
+				fbt: je
+			} = o("./node_modules/fbt/lib/FbtPublic.js"), Be = ({
 				className: e
 			}) => i.a.createElement("div", {
 				className: Object(u.a)(Ne.a.container, e)
-			}, i.a.createElement(yt, {
+			}, i.a.createElement(bt, {
 				anchorId: "token"
 			}), i.a.createElement("div", {
 				className: Ne.a.mainSceneMaxWidthContainer
@@ -3389,26 +3414,26 @@
 				srcSet: `${n.a.assetPath}/img/communityPoints/landingPage/main_scene_static_v2.png`,
 				type: "image/png"
 			}), i.a.createElement("img", {
-				alt: Be._("Community Points Hero Image", null, {
+				alt: je._("Community Points Hero Image", null, {
 					hk: "28I6Y4"
 				}),
 				className: Ne.a.fallbackStaticImage,
 				srcSet: `${n.a.assetPath}/img/communityPoints/landingPage/main_scene_static.png`
 			})))), i.a.createElement("h3", {
 				className: Ne.a.title
-			}, Be._("Community Points {=[beta]}", [Be._param("=[beta]", i.a.createElement("sup", {
+			}, je._("Community Points {=[beta]}", [je._param("=[beta]", i.a.createElement("sup", {
 				className: Ne.a.super
-			}, Be._("[beta]", null, {
+			}, je._("[beta]", null, {
 				hk: "LPmnm"
 			})))], {
 				hk: "2yMt7C"
 			})), i.a.createElement("h2", {
 				className: Ne.a.subtitle
-			}, Be._("Own a piece of your community", null, {
+			}, je._("Own a piece of your community", null, {
 				hk: "xjmHz"
 			})), i.a.createElement("p", {
 				className: Ne.a.bodyText
-			}, Be._("Add a custom token to your subreddit. Earn rewards, encourage quality content, and unlock special features.", null, {
+			}, je._("Add a custom token to your subreddit. Earn rewards, encourage quality content, and unlock special features.", null, {
 				hk: "2JXihD"
 			})), i.a.createElement(X.t, {
 				className: Ne.a.waitlistButton,
@@ -3417,7 +3442,7 @@
 				href: "https://docs.google.com/forms/d/1xSpGcBc0TP3GpfNgo3F0pV86OQYiEwUcsWBu3-RtfiU/viewform",
 				target: "_blank",
 				rel: "noopener noreferrer"
-			}, Be._("Join Waitlist", null, {
+			}, je._("Join Waitlist", null, {
 				hk: "4rpEy2"
 			})));
 			var Fe = o("./src/higherOrderComponents/asModal/index.tsx"),
@@ -3444,11 +3469,14 @@
 				const [t, o] = Object(a.useState)(!1);
 				return i.a.createElement(i.a.Fragment, null, i.a.createElement("div", {
 					className: Object(u.a)(e, We.a.container)
-				}, i.a.createElement(yt, {
+				}, i.a.createElement(bt, {
 					anchorId: "future"
 				}), i.a.createElement("img", {
 					className: We.a.image,
-					src: `${n.a.assetPath}/img/communityPoints/landingPage/crypto_future_v3.png`
+					src: `${n.a.assetPath}/img/communityPoints/landingPage/crypto_future_v3.png`,
+					alt: Ge._("Imagine a crypto future", null, {
+						hk: "2fm7jC"
+					})
 				}), i.a.createElement("div", {
 					className: We.a.textContainer
 				}, i.a.createElement("h3", {
@@ -3464,7 +3492,7 @@
 				})))], {
 					hk: "3dfbBB"
 				})), i.a.createElement(X.t, {
-					Icon: Object(P.b)("topic_reading"),
+					Icon: Object(_.b)("topic_reading"),
 					className: We.a.button,
 					iconClassName: We.a.buttonIcon,
 					priority: X.c.Secondary,
@@ -3491,13 +3519,16 @@
 				className: He.a.background
 			}, i.a.createElement("img", {
 				className: He.a.snoo,
-				src: `${n.a.assetPath}/img/communityPoints/landingPage/faq_v3.png`
+				src: `${n.a.assetPath}/img/communityPoints/landingPage/faq_v3.png`,
+				alt: Ke._("FAQ Snoo", null, {
+					hk: "DXQ0O"
+				})
 			}), i.a.createElement("h2", {
 				className: He.a.subtitle
 			}, Ke._("Want to know more?", null, {
 				hk: "3vbn1B"
 			})), i.a.createElement(X.t, {
-				Icon: Object(P.b)("topic_reading"),
+				Icon: Object(_.b)("topic_reading"),
 				className: He.a.docsButton,
 				iconClassName: He.a.docsIcon,
 				priority: X.c.Secondary,
@@ -3534,7 +3565,8 @@
 				className: Xe.a.imageSection
 			}, i.a.createElement("img", {
 				className: Xe.a.image,
-				src: t.imageSrc
+				src: t.imageSrc,
+				alt: t.title
 			})));
 			var et = o("./src/reddit/pages/meta/CommunityPointsLearnMorePage/Sections/Features/index.m.less"),
 				tt = o.n(et);
@@ -3544,7 +3576,7 @@
 				className: e
 			}) => i.a.createElement("div", {
 				className: e
-			}, i.a.createElement(yt, {
+			}, i.a.createElement(bt, {
 				anchorId: "features"
 			}), i.a.createElement("h3", {
 				className: tt.a.title
@@ -3673,7 +3705,7 @@
 				className: e
 			}) => i.a.createElement("div", {
 				className: Object(u.a)(e, rt.a.container)
-			}, i.a.createElement(yt, {
+			}, i.a.createElement(bt, {
 				anchorId: "enroll"
 			}), i.a.createElement("div", {
 				className: rt.a.backgroundContainer
@@ -3700,10 +3732,16 @@
 				hk: "p3fEV"
 			})), i.a.createElement("img", {
 				className: rt.a.moon,
-				src: `${n.a.assetPath}/img/communityPoints/landingPage/moon_v2.png`
+				src: `${n.a.assetPath}/img/communityPoints/landingPage/moon_v2.png`,
+				alt: st._("The moon", null, {
+					hk: "GQsMF"
+				})
 			}), i.a.createElement("img", {
 				className: rt.a.rocket,
-				src: `${n.a.assetPath}/img/communityPoints/landingPage/rocket_v2.png`
+				src: `${n.a.assetPath}/img/communityPoints/landingPage/rocket_v2.png`,
+				alt: st._("Rocket", null, {
+					hk: "6iIrb"
+				})
 			})));
 			var ut = o("./src/reddit/pages/meta/CommunityPointsLearnMorePage/Sections/Vault/index.m.less"),
 				ct = o.n(ut);
@@ -3713,7 +3751,7 @@
 				className: e
 			}) => i.a.createElement("div", {
 				className: Object(u.a)(e, ct.a.background)
-			}, i.a.createElement(yt, {
+			}, i.a.createElement(bt, {
 				anchorId: "vault"
 			}), i.a.createElement("div", {
 				className: ct.a.textSection
@@ -3735,27 +3773,36 @@
 				className: ct.a.imageSection
 			}, i.a.createElement("img", {
 				className: ct.a.image,
-				src: `${n.a.assetPath}/img/communityPoints/landingPage/vault_v4.png`
+				src: `${n.a.assetPath}/img/communityPoints/landingPage/vault_v4.png`,
+				alt: dt._("Reddit Vault", null, {
+					hk: "8VmO1"
+				})
 			})));
 			var ht = o("./src/reddit/pages/meta/CommunityPointsLearnMorePage/index.m.less"),
 				pt = o.n(ht);
+			const {
+				fbt: yt
+			} = o("./node_modules/fbt/lib/FbtPublic.js");
 			t.default = () => {
 				const e = Object(r.e)(s.a),
 					t = Object(l.a)();
-				if (!e) return i.a.createElement(Pe, null);
+				if (!e) return i.a.createElement(_e, null);
 				const o = (e => {
 					var t, o;
 					return (null === (o = null === (t = null == e ? void 0 : e.routeMatch) || void 0 === t ? void 0 : t.match) || void 0 === o ? void 0 : o.path) === c.a
 				})(t);
 				return i.a.createElement(i.a.Fragment, null, i.a.createElement("div", {
 					className: pt.a.container
-				}, i.a.createElement(te, null), o ? i.a.createElement(W, null) : i.a.createElement(i.a.Fragment, null, i.a.createElement(je, {
+				}, i.a.createElement(te, null), o ? i.a.createElement(W, null) : i.a.createElement(i.a.Fragment, null, i.a.createElement(Be, {
 					className: pt.a.communityPointsSection
 				}), i.a.createElement(Ve, {
 					className: pt.a.benefitsSection
 				}), i.a.createElement("img", {
 					className: pt.a.spiral,
-					src: `${n.a.assetPath}/img/communityPoints/landingPage/spiral_v3.png`
+					src: `${n.a.assetPath}/img/communityPoints/landingPage/spiral_v3.png`,
+					alt: yt._("Spiraling coins", null, {
+						hk: "IuYXo"
+					})
 				}), i.a.createElement(nt, {
 					className: pt.a.featuresSection
 				}), i.a.createElement(mt, {
@@ -3768,7 +3815,7 @@
 					className: pt.a.joinWaitlistSection
 				}))), !o && i.a.createElement(J, null))
 			};
-			const yt = ({
+			const bt = ({
 				anchorId: e
 			}) => i.a.createElement("div", {
 				className: pt.a.anchorParent
@@ -3801,9 +3848,9 @@
 			})), o.d(t, "i", (function() {
 				return k
 			})), o.d(t, "q", (function() {
-				return P
-			})), o.d(t, "h", (function() {
 				return _
+			})), o.d(t, "h", (function() {
+				return P
 			})), o.d(t, "z", (function() {
 				return E
 			})), o.d(t, "l", (function() {
@@ -3821,9 +3868,9 @@
 			})), o.d(t, "k", (function() {
 				return A
 			})), o.d(t, "r", (function() {
-				return B
-			})), o.d(t, "y", (function() {
 				return j
+			})), o.d(t, "y", (function() {
+				return B
 			})), o.d(t, "u", (function() {
 				return F
 			})), o.d(t, "v", (function() {
@@ -3905,12 +3952,12 @@
 			function k(e, t) {
 				return (null == e ? void 0 : e.length) ? Object(a.a)(e.map(e => t[e]).filter(Boolean)) : y
 			}
-			const P = (e, t, o) => {
+			const _ = (e, t, o) => {
 					var a;
 					if (!n.d.spBadges(e)) return y;
 					return k(null === (a = e.users.appliedBadges[o]) || void 0 === a ? void 0 : a[t], e.badges.models)
 				},
-				_ = (e, t) => {
+				P = (e, t) => {
 					const o = e.economics.subredditPremium[t.subredditId];
 					if (o && o.status === d.a.Fetched) {
 						const e = o.raw.collections[t.collectionId];
@@ -4014,7 +4061,7 @@
 					const n = b(e, t);
 					return n && n.price && n.currency && (o[n.currency] = n.price), o
 				},
-				B = (e, t) => {
+				j = (e, t) => {
 					var o, n, a, i;
 					const r = (null === (i = null === (a = null === (n = null === (o = e.features) || void 0 === o ? void 0 : o.crypto) || void 0 === n ? void 0 : n.points) || void 0 === a ? void 0 : a[t || ""]) || void 0 === i ? void 0 : i.nomenclature) || M;
 					return {
@@ -4027,7 +4074,7 @@
 						membershipAlt: r.membershipAlt || M.membershipAlt
 					}
 				},
-				j = e => {
+				B = e => {
 					const t = e.economics.paymentSystems;
 					return !!(t.status === c.a.Fetched && t.data && t.data.tips && t.data.tips.usdr && t.data.tips.usdr.allowed)
 				},
@@ -4083,4 +4130,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.71549221c2f6179baedf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.fdb03a4734f9342eeb20.js.map
