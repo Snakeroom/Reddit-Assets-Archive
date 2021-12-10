@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.36b75c30cd6331116531.js
-// Retrieved at 12/9/2021, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.f0f004eddcfaf015e2a8.js
+// Retrieved at 12/9/2021, 7:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments~ProfileOverview~ProfilePrivate"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -167,7 +167,7 @@
 						ke = Object($.a)(re),
 						Ie = Object(G.a)(re),
 						Me = ie && Z.a,
-						Ne = Object(w.d)(pe),
+						Ne = Object(w.a)(pe),
 						Le = Object(I.c)(pe),
 						Se = !!pe.media && pe.media.type === U.o.RTJSON,
 						Te = ye && Se,
@@ -612,14 +612,12 @@
 				renderModTools() {
 					const {
 						comment: e,
-						currentUser: t,
-						moderatorPermissions: s,
-						modModeEnabled: n,
-						showModTools: r
-					} = this.props, i = Object(z.a)(s), a = !!t && t.displayText === e.author;
-					if (r && i) return n ? o.a.createElement(ve, {
-						comment: e,
-						isCommentAuthor: a
+						moderatorPermissions: t,
+						modModeEnabled: s,
+						showModTools: n
+					} = this.props, r = Object(z.a)(t);
+					if (n && r) return s ? o.a.createElement(ve, {
+						comment: e
 					}) : o.a.createElement(ge, {
 						dropdownId: `${e.id}-profile-mod-actions-menu`,
 						inCommentFlatlist: !0,
@@ -2795,4 +2793,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.36b75c30cd6331116531.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.f0f004eddcfaf015e2a8.js.map

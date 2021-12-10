@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-Content-ModQueue.f98b9b2aaacbe069ddbe.js
-// Retrieved at 12/9/2021, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-Content-ModQueue.f432fe056a7b93641fd2.js
+// Retrieved at 12/9/2021, 7:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-Content-ModQueue"], {
 		"./src/reddit/components/Comments/CompactUnthreadedComment/index.m.less": function(e, t, s) {
@@ -521,7 +521,7 @@
 						subreddit: c,
 						showBulkActionCheckbox: m,
 						toggleCheckbox: p
-					} = e, u = Object(D.d)(s), b = Object(h.c)(s);
+					} = e, u = Object(D.a)(s), b = Object(h.c)(s);
 					return l.a.createElement(F.a, {
 						className: Object(g.a)(t, z.a.Component, z.a.UnthreadedCommentContainer, {
 							[z.a.isBanned]: !!s.bannedBy,
@@ -587,7 +587,7 @@
 						subreddit: m,
 						showBulkActionCheckbox: p,
 						toggleCheckbox: u
-					} = e, b = Object(D.d)(s);
+					} = e, b = Object(D.a)(s);
 					return l.a.createElement(F.a, {
 						className: t,
 						clickTrackingId: s.id,
@@ -1355,4 +1355,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-Content-ModQueue.f98b9b2aaacbe069ddbe.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-Content-ModQueue.f432fe056a7b93641fd2.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.3a1883f7eec3a822a953.js
-// Retrieved at 12/9/2021, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.52fe4b8101516997906e.js
+// Retrieved at 12/9/2021, 7:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -2337,21 +2337,24 @@
 		},
 		"./src/reddit/components/ModModeFilteredReason/helpers.ts": function(e, t, s) {
 			"use strict";
-			s.d(t, "a", (function() {
+			s.d(t, "c", (function() {
 				return o
-			})), s.d(t, "b", (function() {
-				return i
-			})), s.d(t, "c", (function() {
-				return a
 			})), s.d(t, "d", (function() {
+				return i
+			})), s.d(t, "e", (function() {
+				return a
+			})), s.d(t, "a", (function() {
 				return c
+			})), s.d(t, "b", (function() {
+				return d
 			}));
 			var r = s("./src/lib/constants/index.ts"),
 				n = s("./src/reddit/models/ModQueueTrigger/index.ts");
 			const o = e => "string" == typeof e.bannedBy && e.bannedBy === r.l || !!Object(n.b)(e, n.a.AUTOMOD),
 				i = e => !!e.bannedBy && !!e.collapsedBecauseCrowdControl,
 				a = e => !!e.bannedBy && !!Object(n.b)(e, n.a.HATEFUL_CONTENT),
-				c = e => o(e) || i(e) || a(e)
+				c = e => o(e) || i(e) || a(e),
+				d = e => "boolean" == typeof e.bannedBy && e.bannedBy || c(e)
 		},
 		"./src/reddit/components/ModModeFilteredReason/index.tsx": function(e, t, s) {
 			"use strict";
@@ -5600,7 +5603,7 @@
 						showBulkActionCheckbox: x,
 						subredditOrProfile: g,
 						searchQuery: v
-					} = e, O = f ? void 0 : c, y = s || void 0, j = Object(Ct.a)(u), E = Object(at.d)(C), _ = Object(dt.c)(C), S = Object(X.b)({
+					} = e, O = f ? void 0 : c, y = s || void 0, j = Object(Ct.a)(u), E = Object(at.a)(C), _ = Object(dt.c)(C), S = Object(X.b)({
 						crosspost: s,
 						post: C,
 						url: void 0,
@@ -9435,4 +9438,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.3a1883f7eec3a822a953.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.52fe4b8101516997906e.js.map

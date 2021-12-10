@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.e32a27767a2f0c83f6fc.js
-// Retrieved at 12/9/2021, 11:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.ed4118d525920d4da948.js
+// Retrieved at 12/9/2021, 7:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -2697,7 +2697,8 @@
 						key: "share",
 						permalink: o,
 						sendEventWithName: this.sendCommentEventWithName,
-						subredditType: null == j ? void 0 : j.type
+						subredditType: null == j ? void 0 : j.type,
+						className: C ? ge(Z.LoggedInUser, Q.HideIfVWSmaller) : void 0
 					}, a.a.createElement(et, {
 						onClick: () => this.sendCommentEventWithName("share")
 					}, B.fbt._("Share", null, {
@@ -2810,8 +2811,7 @@
 						withOverlay: !0
 					}), F && a.a.createElement(a.a.Fragment, null, C && a.a.createElement(tt, {
 						className: ge(Z.Moderator, Q.HideIfVWSmaller),
-						comment: e,
-						isCommentAuthor: N
+						comment: e
 					}), a.a.createElement(Ze, {
 						className: C ? ge(Z.Moderator, Q.HideIfVWLarger) : void 0,
 						dropdownId: `${e.id}-mod-actions-menu`,
@@ -3132,7 +3132,7 @@
 						hasSupporterRing: Q,
 						isOnlineConsumptionLoadTest: Z,
 						userIsBanned: J
-					} = e, X = o.isDeleted, $ = !_ && !X && !!p && p.length > 0, ee = Object(D.a)(M.c.edit, o.id), te = Object(D.a)(M.c.replyToComment, o.id), se = Object(re.a)(I), oe = Object(_t.d)(o), ne = Object(Oe.c)(o), ie = o.authorIsContractor && K === Wt.f.EmployeesOnly, de = o.isLocked, ce = se && S, le = !_ && !X && (E || v), me = !!m && Object(Ht.e)(m) === o.author, [ue, pe] = Object(i.useState)(null), [he, be] = Object(i.useState)(null), ge = Object(ae.f)(o) || Object(ae.g)(o) ? hs : Dt.a, fe = Object(ae.f)(o) ? bs : ls;
+					} = e, X = o.isDeleted, $ = !_ && !X && !!p && p.length > 0, ee = Object(D.a)(M.c.edit, o.id), te = Object(D.a)(M.c.replyToComment, o.id), se = Object(re.a)(I), oe = Object(_t.a)(o), ne = Object(Oe.c)(o), ie = o.authorIsContractor && K === Wt.f.EmployeesOnly, de = o.isLocked, ce = se && S, le = !_ && !X && (E || v), me = !!m && Object(Ht.e)(m) === o.author, [ue, pe] = Object(i.useState)(null), [he, be] = Object(i.useState)(null), ge = Object(ae.f)(o) || Object(ae.g)(o) ? hs : Dt.a, fe = Object(ae.f)(o) ? bs : ls;
 					Object(i.useEffect)(() => {
 						if (!_ && !X && (g && pe(a.a.createElement(bt, null)), null !== x)) {
 							if (x.glowHexColor) {
@@ -5627,7 +5627,7 @@
 					})(o, et, ue),
 					st = !!ue.media && (ue.media.type === F.o.RTJSON || ue.media.type === F.o.TEXT),
 					ot = Me && st,
-					nt = Object(re.d)(ue),
+					nt = Object(re.a)(ue),
 					rt = Object(ae.c)(ue);
 				let it;
 				const at = !(H && Ze),
@@ -8676,4 +8676,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.e32a27767a2f0c83f6fc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.ed4118d525920d4da948.js.map
