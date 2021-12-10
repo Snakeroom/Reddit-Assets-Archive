@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OverlayKickUser.1f97896cfb19c1776e5c.js
-// Retrieved at 12/8/2021, 3:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OverlayKickUser.71dd97edd2e3c19d7c3f.js
+// Retrieved at 12/9/2021, 8:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OverlayKickUser"], {
 		"./src/chat/components/OverlayKickUser/index.m.less": function(e, t, n) {
@@ -120,7 +120,7 @@
 						title: a.fbt._("Confirm Kick", null, {
 							hk: "1upcSi"
 						})
-					}), s.a.createElement(C, null, s.a.createElement(u.b, null, this.renderIntro(), s.a.createElement(E, null, a.fbt._("Kick Duration", null, {
+					}), s.a.createElement(C, null, s.a.createElement(u.a, null, this.renderIntro(), s.a.createElement(E, null, a.fbt._("Kick Duration", null, {
 						hk: "4nENS8"
 					})), Object.keys(e).map(t => s.a.createElement(H, {
 						key: t
@@ -142,4 +142,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayKickUser.1f97896cfb19c1776e5c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayKickUser.71dd97edd2e3c19d7c3f.js.map

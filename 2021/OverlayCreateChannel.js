@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OverlayCreateChannel.fe70e47b2e890e1217c4.js
-// Retrieved at 12/8/2021, 3:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OverlayCreateChannel.824dd98ac55679b93ca7.js
+// Retrieved at 12/9/2021, 8:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OverlayCreateChannel"], {
 		"./src/chat/components/OverlayCreateChannel/index.m.less": function(e, t, n) {
@@ -144,7 +144,7 @@
 							className: r
 						}
 					} = this, c = t ? "" : e;
-					return l.a.createElement(_.b, {
+					return l.a.createElement(_.a, {
 						autoScrollBottom: !0,
 						className: Object(m.a)(S.a.SearchBarWrapper, r)
 					}, l.a.createElement(g.a, {
@@ -545,7 +545,7 @@
 						})
 					}, l.a.createElement(q.a, {
 						count: L
-					}))), l.a.createElement(_.b, {
+					}))), l.a.createElement(_.a, {
 						className: ne.a.Scroller,
 						loadMoreRows: r.a
 					}, o()(f, e => e.name).map(e => l.a.createElement("div", {
@@ -647,4 +647,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayCreateChannel.fe70e47b2e890e1217c4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayCreateChannel.824dd98ac55679b93ca7.js.map

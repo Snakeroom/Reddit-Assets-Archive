@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OverlayChatMembers.2fb82648e8b9964b98dd.js
-// Retrieved at 12/1/2021, 5:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OverlayChatMembers.fa75ee2e068e246dc913.js
+// Retrieved at 12/9/2021, 8:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OverlayChatMembers"], {
 		"./src/chat/components/OverlayChatMembers/index.m.less": function(e, t, r) {
@@ -30,7 +30,7 @@
 				O = r("./src/chat/selectors/members.ts"),
 				M = r("./src/chat/components/OverlayChatMembers/index.m.less"),
 				p = r.n(M);
-			const C = o.a.wrapped(b.b, "Scroller", p.a),
+			const C = o.a.wrapped(b.a, "Scroller", p.a),
 				f = o.a.div("LoadingIndicator", p.a),
 				E = Object(_.a)({
 					channelType: e => Object(x.B)(e, "type"),
@@ -98,4 +98,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayChatMembers.2fb82648e8b9964b98dd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayChatMembers.fa75ee2e068e246dc913.js.map
