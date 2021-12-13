@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditTopContent.d2f170fdb70abab72ba8.js
-// Retrieved at 12/13/2021, 9:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditTopContent.d5af38ed1d05d23b7620.js
+// Retrieved at 12/13/2021, 11:10:14 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditTopContent"], {
 		"./src/lib/getShortenedLink.ts": function(e, t, s) {
@@ -863,9 +863,9 @@
 				f = s("./src/reddit/constants/experiments.ts"),
 				g = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				C = s("./src/reddit/selectors/user.ts");
-			const y = e => Object(C.H)(e) || f.gf.ShowTopContent === Object(g.c)(e, {
+			const y = e => Object(C.H)(e) || f.cf.ShowTopContent === Object(g.c)(e, {
 				experimentEligibilitySelector: g.a,
-				experimentName: f.af
+				experimentName: f.We
 			});
 			var _ = s("./src/reddit/selectors/subreddit.ts"),
 				k = s("./src/reddit/components/DiscoveryUnit/SubredditTopContentDiscoveryUnit/index.m.less"),
@@ -1523,7 +1523,7 @@
 						subreddit: s
 					} = e, {
 						isSponsored: a
-					} = t, n = Object(i.d)(), o = Object(R.a)(), c = Object(H.a)(u.sd) === u.zd.Enabled, d = Object(i.e)(W.b), m = e => {
+					} = t, n = Object(i.d)(), o = Object(R.a)(), c = Object(H.a)(u.qd) === u.xd.Enabled, d = Object(i.e)(W.b), m = e => {
 						!d || t.media && Object(E.H)(t.media) || (e.preventDefault(), n(Object(f.ab)(Object(C.b)(t.permalink), t.id)))
 					};
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return r.a.createElement(Y, {
@@ -1583,8 +1583,7 @@
 						titleFlair: t,
 						nowrap: !0,
 						post: a,
-						sendEvent: e.sendEvent,
-						showCategoryTag: !1
+						sendEvent: e.sendEvent
 					}), n)
 				},
 				ee = e => {
@@ -1648,8 +1647,7 @@
 						titleFlair: b,
 						nowrap: !0,
 						post: c,
-						sendEvent: this.props.sendEvent,
-						showCategoryTag: !1
+						sendEvent: this.props.sendEvent
 					}), y && r.a.createElement(X, G({}, this.props, {
 						leftFlair: l ? b : void 0
 					})), o && r.a.createElement(M, {
@@ -1660,8 +1658,7 @@
 						titleFlair: h,
 						nowrap: !0,
 						post: c,
-						sendEvent: this.props.sendEvent,
-						showCategoryTag: !1
+						sendEvent: this.props.sendEvent
 					}), r.a.createElement("div", {
 						className: F.a.postTitleVisibility,
 						dangerouslySetInnerHTML: {
@@ -2120,4 +2117,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.d2f170fdb70abab72ba8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.d5af38ed1d05d23b7620.js.map

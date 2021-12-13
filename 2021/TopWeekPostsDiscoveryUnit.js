@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.d89e5b6b7855e2dfdbd0.js
-// Retrieved at 12/13/2021, 9:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.ba33c5caaafe1a98572f.js
+// Retrieved at 12/13/2021, 11:10:14 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["TopWeekPostsDiscoveryUnit"], {
 		"./src/lib/getShortenedLink.ts": function(e, t, s) {
@@ -1635,7 +1635,7 @@
 						subreddit: s
 					} = e, {
 						isSponsored: a
-					} = t, n = Object(i.d)(), o = Object(H.a)(), c = Object(V.a)(u.sd) === u.zd.Enabled, d = Object(i.e)(W.b), m = e => {
+					} = t, n = Object(i.d)(), o = Object(H.a)(), c = Object(V.a)(u.qd) === u.xd.Enabled, d = Object(i.e)(W.b), m = e => {
 						!d || t.media && Object(k.H)(t.media) || (e.preventDefault(), n(Object(f.ab)(Object(C.b)(t.permalink), t.id)))
 					};
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return r.a.createElement(Z, {
@@ -1695,8 +1695,7 @@
 						titleFlair: t,
 						nowrap: !0,
 						post: a,
-						sendEvent: e.sendEvent,
-						showCategoryTag: !1
+						sendEvent: e.sendEvent
 					}), n)
 				},
 				ee = e => {
@@ -1760,8 +1759,7 @@
 						titleFlair: b,
 						nowrap: !0,
 						post: c,
-						sendEvent: this.props.sendEvent,
-						showCategoryTag: !1
+						sendEvent: this.props.sendEvent
 					}), y && r.a.createElement(X, G({}, this.props, {
 						leftFlair: l ? b : void 0
 					})), o && r.a.createElement(M, {
@@ -1772,8 +1770,7 @@
 						titleFlair: h,
 						nowrap: !0,
 						post: c,
-						sendEvent: this.props.sendEvent,
-						showCategoryTag: !1
+						sendEvent: this.props.sendEvent
 					}), r.a.createElement("div", {
 						className: R.a.postTitleVisibility,
 						dangerouslySetInnerHTML: {
@@ -2316,4 +2313,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.d89e5b6b7855e2dfdbd0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.ba33c5caaafe1a98572f.js.map

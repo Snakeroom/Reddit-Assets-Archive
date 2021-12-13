@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Trending.2b2885acd2c253a55946.js
-// Retrieved at 12/13/2021, 9:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Trending.358acc8a2d032138a5b7.js
+// Retrieved at 12/13/2021, 11:10:14 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Trending"], {
 		"./src/reddit/actions/search/trending.ts": function(e, t, s) {
@@ -182,8 +182,7 @@
 					className: v.a.flair,
 					titleFlair: V,
 					nowrap: !0,
-					post: h,
-					showCategoryTag: !1
+					post: h
 				}), h.title) : a.a.createElement("div", {
 					className: v.a.spacer
 				}), P && D && U && a.a.createElement(x.a, {
@@ -451,4 +450,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Trending.2b2885acd2c253a55946.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Trending.358acc8a2d032138a5b7.js.map

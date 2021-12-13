@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.b90cc4d9c5b1537078fc.js
-// Retrieved at 12/13/2021, 9:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.574c3e454882d8c37421.js
+// Retrieved at 12/13/2021, 11:10:14 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1427,8 +1427,8 @@
 				U = n.n(D),
 				G = n("./src/config.ts"),
 				V = n("./src/reddit/hooks/useClickSourceData.ts"),
-				z = n("./src/reddit/hooks/useExperimentVariant.ts"),
-				H = n("./src/reddit/hooks/usePostContext.ts"),
+				H = n("./src/reddit/hooks/useExperimentVariant.ts"),
+				z = n("./src/reddit/hooks/usePostContext.ts"),
 				W = n("./src/reddit/hooks/useTheme.ts"),
 				q = n("./src/telemetry/models/Outbound.ts");
 
@@ -1521,7 +1521,7 @@
 						subreddit: n
 					} = e, {
 						isSponsored: r
-					} = t, o = Object(i.d)(), a = Object(V.a)(), c = Object(z.a)(m.sd) === m.zd.Enabled, l = Object(i.e)(B.b), u = e => {
+					} = t, o = Object(i.d)(), a = Object(V.a)(), c = Object(H.a)(m.qd) === m.xd.Enabled, l = Object(i.e)(B.b), u = e => {
 						!l || t.media && Object(O.H)(t.media) || (e.preventDefault(), o(Object(v.ab)(Object(_.b)(t.permalink), t.id)))
 					};
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return s.a.createElement(X, {
@@ -1581,8 +1581,7 @@
 						titleFlair: t,
 						nowrap: !0,
 						post: r,
-						sendEvent: e.sendEvent,
-						showCategoryTag: !1
+						sendEvent: e.sendEvent
 					}), o)
 				},
 				ee = e => {
@@ -1646,8 +1645,7 @@
 						titleFlair: f,
 						nowrap: !0,
 						post: c,
-						sendEvent: this.props.sendEvent,
-						showCategoryTag: !1
+						sendEvent: this.props.sendEvent
 					}), y && s.a.createElement(Z, K({}, this.props, {
 						leftFlair: d ? f : void 0
 					})), a && s.a.createElement(N, {
@@ -1658,8 +1656,7 @@
 						titleFlair: h,
 						nowrap: !0,
 						post: c,
-						sendEvent: this.props.sendEvent,
-						showCategoryTag: !1
+						sendEvent: this.props.sendEvent
 					}), s.a.createElement("div", {
 						className: U.a.postTitleVisibility,
 						dangerouslySetInnerHTML: {
@@ -1671,7 +1668,7 @@
 			t.c = s.a.memo((function(e) {
 				const t = Object(p.eb)(),
 					n = Object(p.w)(t),
-					r = Object(H.a)(),
+					r = Object(z.a)(),
 					o = Object(i.e)(o => J(o, {
 						...r,
 						...e,
@@ -1830,8 +1827,8 @@
 				U = m.a.div("PromotedPostContainer", L.a),
 				G = m.a.wrapped(C.a, "OutboundLinkIcon", L.a),
 				V = m.a.div("SourceLinkWrapper", L.a),
-				z = m.a.div("TopLine", L.a),
-				H = m.a.wrapped(c.c, "PostTitle", L.a),
+				H = m.a.div("TopLine", L.a),
+				z = m.a.wrapped(c.c, "PostTitle", L.a),
 				W = m.a.div("PostMediaWrapper", L.a),
 				q = m.a.div("BackgroundWrapper", L.a),
 				K = m.a.wrapped(b.a, "PostContainer", L.a),
@@ -1879,11 +1876,11 @@
 						post: e
 					})) : (i = U, l = s.a.createElement(q, {
 						style: J(this.props)
-					}, s.a.createElement(z, null, s.a.createElement(B, {
+					}, s.a.createElement(H, null, s.a.createElement(B, {
 						tooltipType: o ? d.c.Lightbox : void 0,
 						post: e,
 						showTimestamp: !1
-					})), s.a.createElement(H, {
+					})), s.a.createElement(z, {
 						post: e,
 						size: c.b.Large,
 						format: Q
@@ -3813,4 +3810,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.b90cc4d9c5b1537078fc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.574c3e454882d8c37421.js.map

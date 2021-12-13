@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.dc406f0a942c107c85cd.js
-// Retrieved at 12/13/2021, 9:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.761128e5d7a6909ff075.js
+// Retrieved at 12/13/2021, 11:10:14 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CompactPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -440,10 +440,10 @@
 				F = "viewport",
 				P = "popper",
 				S = "reference",
-				I = _.reduce((function(e, t) {
+				L = _.reduce((function(e, t) {
 					return e.concat([t + "-" + C, t + "-" + N])
 				}), []),
-				L = [].concat(_, [k]).reduce((function(e, t) {
+				I = [].concat(_, [k]).reduce((function(e, t) {
 					return e.concat([t, t + "-" + C, t + "-" + N])
 				}), []),
 				T = ["beforeRead", "read", "afterRead", "beforeMain", "main", "afterMain", "beforeWrite", "write", "afterWrite"];
@@ -843,14 +843,14 @@
 					k = e.elements[x ? g : u],
 					C = ee(i(k) ? k : k.contextElement || l(e.elements.popper), c, m),
 					N = o(w),
-					I = U({
+					L = U({
 						reference: N,
 						element: j,
 						strategy: "absolute",
 						placement: r
 					}),
-					L = Q(Object.assign(Object.assign({}, j), I)),
-					T = u === P ? L : N,
+					I = Q(Object.assign(Object.assign({}, j), L)),
+					T = u === P ? I : N,
 					A = {
 						top: C.top - T.top + b.top,
 						bottom: T.bottom - C.bottom + b.bottom,
@@ -1017,7 +1017,7 @@
 								n = e.name,
 								o = s.offset,
 								r = void 0 === o ? [0, 0] : o,
-								a = L.reduce((function(e, s) {
+								a = I.reduce((function(e, s) {
 									return e[s] = function(e, t, s) {
 										var n = D(e),
 											o = [j, y].indexOf(n) >= 0 ? -1 : 1,
@@ -1063,9 +1063,9 @@
 												a = s.padding,
 												i = s.flipVariations,
 												c = s.allowedAutoPlacements,
-												d = void 0 === c ? L : c,
+												d = void 0 === c ? I : c,
 												l = H(n),
-												m = (l ? i ? I : I.filter((function(e) {
+												m = (l ? i ? L : L.filter((function(e) {
 													return H(e) === l
 												})) : _).filter((function(e) {
 													return d.indexOf(e) >= 0
@@ -1169,17 +1169,17 @@
 								S = "function" == typeof h ? h(Object.assign(Object.assign({}, t.rects), {}, {
 									placement: t.placement
 								})) : h,
-								I = {
+								L = {
 									x: 0,
 									y: 0
 								};
 							if (M) {
 								if (r) {
-									var L = "y" === _ ? y : j,
+									var I = "y" === _ ? y : j,
 										T = "y" === _ ? E : O,
 										A = "y" === _ ? "height" : "width",
 										V = M[_],
-										B = M[_] + v[L],
+										B = M[_] + v[I],
 										W = M[_] - v[T],
 										R = u ? -P[A] / 2 : 0,
 										U = g === C ? F[A] : P[A],
@@ -1195,7 +1195,7 @@
 											bottom: 0,
 											left: 0
 										},
-										K = J[L],
+										K = J[I],
 										Y = J[T],
 										X = oe(0, F[A], q[A]),
 										Q = k ? F[A] / 2 - R - X - K - S : U - X - K - S,
@@ -1206,16 +1206,16 @@
 										re = M[_] + Q - se - te,
 										ae = M[_] + $ - se,
 										ie = oe(u ? Math.min(B, re) : B, V, u ? Math.max(W, ae) : W);
-									M[_] = ie, I[_] = ie - V
+									M[_] = ie, L[_] = ie - V
 								}
 								if (i) {
 									var ce = "x" === _ ? y : j,
 										de = "x" === _ ? E : O,
 										le = M[N],
 										me = oe(le + v[ce], le, le - v[de]);
-									M[N] = me, I[N] = me - le
+									M[N] = me, L[N] = me - le
 								}
-								t.modifiersData[n] = I
+								t.modifiersData[n] = L
 							}
 						},
 						requiresIfExists: ["offset"]
@@ -1640,8 +1640,8 @@
 				F = s("./src/reddit/components/CompactPost/HorizontalVotes/index.tsx"),
 				P = s("./src/reddit/components/EventPost/EventMetaHeader/index.tsx"),
 				S = s("./src/reddit/components/ExpandoButton/index.tsx"),
-				I = s("./src/reddit/components/Flatlist/index.tsx"),
-				L = s("./src/reddit/components/Flatlist/getFlatlistTooltipId.ts"),
+				L = s("./src/reddit/components/Flatlist/index.tsx"),
+				I = s("./src/reddit/components/Flatlist/getFlatlistTooltipId.ts"),
 				T = s("./src/reddit/components/JSAPIContainers/index.tsx"),
 				A = s("./src/reddit/components/ModActionsMenu/index.tsx"),
 				V = s("./src/reddit/components/ModModeFilteredReason/index.tsx"),
@@ -1781,7 +1781,7 @@
 						sendEvent: Me,
 						shouldShowGalleryTileOption: Fe,
 						showPromotedCTA: Se
-					} = this.props, Ie = !!fe.media && fe.media.type === x.o.RTJSON, Le = be && Ie, Te = Object(Z.b)(fe.id, O), Ae = Object(me.a)(te), Ve = Object(de.a)(te), Be = Object(le.a)(te), We = `-mod-actions-menu-${fe.id}`, Re = `voting-arrows-${fe.id}`, De = !!r && Object(h.e)(r) === fe.author, He = Object(B.a)(fe), ze = Object(R.c)(fe), Ue = Object(L.a)("View--Reports", fe.id, Ce), Ge = Object(R.a)(fe), Ze = !(O || g || w), qe = fe.media && fe.media.type === x.o.LIVEVIDEO, Je = e => Me(Object(f.h)(fe.id, e)), Ke = Object(c.t)(fe, v), {
+					} = this.props, Le = !!fe.media && fe.media.type === x.o.RTJSON, Ie = be && Le, Te = Object(Z.b)(fe.id, O), Ae = Object(me.a)(te), Ve = Object(de.a)(te), Be = Object(le.a)(te), We = `-mod-actions-menu-${fe.id}`, Re = `voting-arrows-${fe.id}`, De = !!r && Object(h.e)(r) === fe.author, He = Object(B.a)(fe), ze = Object(R.c)(fe), Ue = Object(I.a)("View--Reports", fe.id, Ce), Ge = Object(R.a)(fe), Ze = !(O || g || w), qe = fe.media && fe.media.type === x.o.LIVEVIDEO, Je = e => Me(Object(f.h)(fe.id, e)), Ke = Object(c.t)(fe, v), {
 						source: Ye
 					} = Ke, Xe = o.a.createElement(G.a, {
 						className: Object(d.a)(we.a.compactPostStyles, Ee.a.postContainer, Object(u.a)(this.props), t),
@@ -1899,7 +1899,7 @@
 					}), Ae && o.a.createElement(A.a, {
 						dropdownId: We,
 						onClick: () => Je("post_mod_action_menu")
-					}, o.a.createElement(I.b, null), o.a.createElement(K.a, {
+					}, o.a.createElement(L.b, null), o.a.createElement(K.a, {
 						canEditFlair: Ve && ke,
 						hasModPostPerms: Ae,
 						hasModFullPerms: Be,
@@ -1929,7 +1929,7 @@
 						layout: J,
 						permalink: fe.permalink,
 						sendEvent: Me,
-						showEditPost: Le,
+						showEditPost: Ie,
 						showEditFlair: ke,
 						dropdownId: `${fe.id}-overflow-menu`,
 						useFlatlistBreakpoints: Object(Y.b)({
@@ -3738,13 +3738,13 @@
 				r = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				a = s("./src/reddit/selectors/posts.ts");
 			const i = e => Object(r.c)(e, {
-					experimentName: o.ze,
+					experimentName: o.ve,
 					experimentEligibilitySelector: r.a
 				}),
-				c = (e, t) => t === o.Ie.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				c = (e, t) => t === o.Ee.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				d = Object(n.a)(a.H, i, (e, t) => c(e, t));
 			Object(n.a)((e, t) => t, i, (e, t) => c(e, t))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.dc406f0a942c107c85cd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.761128e5d7a6909ff075.js.map
