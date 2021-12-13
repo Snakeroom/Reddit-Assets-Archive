@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit~reddit-components-AdHocMultiredditSidebar.16111260f50f80797ad1.js
-// Retrieved at 12/9/2021, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit~reddit-components-AdHocMultiredditSidebar.a9802420f6402ddf8f4a.js
+// Retrieved at 12/13/2021, 1:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit~reddit-components-AdHocMultiredditSidebar"], {
 		"./node_modules/lodash/take.js": function(e, t, r) {
@@ -425,12 +425,12 @@
 							queryParams: x
 						} = a,
 						E = Object(l.a)(f, u, x),
-						y = b.A in x && x[b.A].toUpperCase() || "",
+						y = b.B in x && x[b.B].toUpperCase() || "",
 						O = o.fc[y] || !1,
 						S = Object(P.k)(s);
 					(h || S && S.displayText) && await e(Object(m.multiredditFeedRequested)(E, (h || S.displayText).toLowerCase(), p.toLowerCase(), {
+						...i()(x, b.m),
 						...i()(x, b.l),
-						...i()(x, b.k),
 						sort: u,
 						t: Object(N.a)(u, O)
 					}))
@@ -808,14 +808,14 @@
 						O = h.listings.postOrder.ids[E],
 						_ = h.listings.postOrder.api.error[E],
 						C = h.listings.postOrder.api.pending[E],
-						v = b.A in e.queryParams && e.queryParams[b.A].toUpperCase() || "",
+						v = b.B in e.queryParams && e.queryParams[b.B].toUpperCase() || "",
 						T = v in l.fc && l.fc[v];
 					if (C || O && !_ && !t) return void(O && (r(u.m({
 						title: Object(g.f)(s(), m)
 					})), h.sidebarPromotedPosts.firstFetch || r(Object(I.b)(D.a.MULTIREDDIT))));
 					await r(N(E, a, n, {
+						...i()(e.queryParams, b.m),
 						...i()(e.queryParams, b.l),
-						...i()(e.queryParams, b.k),
 						sort: c,
 						t: Object(x.a)(c, T)
 					}, !0));
@@ -2659,4 +2659,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit~reddit-components-AdHocMultiredditSidebar.16111260f50f80797ad1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit~reddit-components-AdHocMultiredditSidebar.a9802420f6402ddf8f4a.js.map

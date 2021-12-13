@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.952c4e3e9b60510b8082.js
-// Retrieved at 12/13/2021, 12:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.4ccd1a1f66c06a8174b2.js
+// Retrieved at 12/13/2021, 1:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -13242,4 +13242,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.952c4e3e9b60510b8082.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.4ccd1a1f66c06a8174b2.js.map

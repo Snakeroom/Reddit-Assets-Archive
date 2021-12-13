@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.3d0f5fca6793e7114644.js
-// Retrieved at 12/6/2021, 1:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.ac2bafb7973dd6650ea2.js
+// Retrieved at 12/13/2021, 1:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki~reddit-components-Wiki-ModHubWikiManagement"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, i) {
@@ -517,7 +517,7 @@
 				} = t;
 				if (!i && !n) return e;
 				const s = {};
-				return i && (s[k.D] = Object(v.b)(i)), n && (s[k.E] = Object(v.b)(n)), Object(f.a)(e, s)
+				return i && (s[k.E] = Object(v.b)(i)), n && (s[k.F] = Object(v.b)(n)), Object(f.a)(e, s)
 			}
 			var w = i("./src/reddit/helpers/wiki/makeRevisionsListingKey.ts"),
 				E = i("./src/reddit/helpers/wiki/makeWikiPath.ts"),
@@ -1875,7 +1875,7 @@
 						displayText: n.fbt._("View page source", null, {
 							hk: "1d5vg5"
 						}),
-						href: `${d}/${r}?${_.F}`,
+						href: `${d}/${r}?${_.G}`,
 						onClick: this.onViewPageSourceClick
 					}), i && a.a.createElement(N.b, {
 						className: R.a.row,
@@ -2157,4 +2157,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.3d0f5fca6793e7114644.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.ac2bafb7973dd6650ea2.js.map

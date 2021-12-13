@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.7b01a308d0e82d4d69bf.js
-// Retrieved at 12/13/2021, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.83f6d6d33d2f2eeb71fc.js
+// Retrieved at 12/13/2021, 1:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3327,10 +3327,10 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("154595"),
+				buildNumber: Object(r.c)("154608"),
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
-				buildTimestamp: Object(r.b)("1639415356"),
+				buildTimestamp: Object(r.b)("1639419392"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -5897,14 +5897,14 @@
 					}))
 				},
 				$ = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c0ac322bfab1e413bf5b855d0304a9f6eed9e6465-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c6ed62790515ed54d4a5eb986bf297d687238dfa1-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "0ac322bfab1e413bf5b855d0304a9f6eed9e6465-production",
+						release: "6ed62790515ed54d4a5eb986bf297d687238dfa1-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6421,7 +6421,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "0ac322bfab1e413bf5b855d0304a9f6eed9e6465-production",
+						releaseClient: "6ed62790515ed54d4a5eb986bf297d687238dfa1-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -6985,14 +6985,14 @@
 							t: n,
 							type: o
 						};
-					return void 0 !== e.include_over_18 && (a.include_over_18 = u(l(e.include_over_18))), void 0 !== e.restrict_sr && (a.restrict_sr = u(l(e.restrict_sr))), void 0 !== e.sr_nsfw && (a.sr_nsfw = u(l(e.sr_nsfw))), e.is_multi && (a.is_multi = u(l(e.is_multi))), e.category && (a.category = e.category), e[s.c] && (a.category_name = e.category_name), e[s.x] && (a.source = e.source), a
+					return void 0 !== e.include_over_18 && (a.include_over_18 = u(l(e.include_over_18))), void 0 !== e.restrict_sr && (a.restrict_sr = u(l(e.restrict_sr))), void 0 !== e.sr_nsfw && (a.sr_nsfw = u(l(e.sr_nsfw))), e.is_multi && (a.is_multi = u(l(e.is_multi))), e.category && (a.category = e.category), e[s.c] && (a.category_name = e.category_name), e[s.y] && (a.source = e.source), a
 				},
 				_ = (e, t) => {
 					const i = e.f;
 					if (i) return {
-						[s.p]: i,
-						[s.s]: "1",
-						[s.i]: t ? "1" : "",
+						[s.q]: i,
+						[s.t]: "1",
+						[s.j]: t ? "1" : "",
 						sort: r.Xb.New
 					}
 				},
@@ -13072,7 +13072,7 @@
 						dist: E.dist,
 						sort: f,
 						t: b,
-						...o()(a, u.l)
+						...o()(a, u.m)
 					});
 					if (C.ok) {
 						const t = n.listings.postOrder.ids[y],
@@ -13933,7 +13933,7 @@
 					}, !1))
 				}, T = Object(n.a)(c.a), S = (Object(n.a)(c.k), Object(n.a)(c.j)), O = Object(n.a)(c.e), I = Object(n.a)(c.l), R = () => async (e, t) => {
 					const i = Object(u.q)(t());
-					!!i && "true" === i[d.v] && (e(I()), s(window.location.href, [d.v]))
+					!!i && "true" === i[d.w] && (e(I()), s(window.location.href, [d.w]))
 				}
 		},
 		"./src/reddit/actions/toaster.ts": function(e, t, i) {
@@ -17180,60 +17180,62 @@
 				return o
 			})), i.d(t, "g", (function() {
 				return d
-			})), i.d(t, "i", (function() {
-				return a
 			})), i.d(t, "j", (function() {
+				return a
+			})), i.d(t, "k", (function() {
 				return l
-			})), i.d(t, "m", (function() {
-				return u
 			})), i.d(t, "n", (function() {
-				return c
+				return u
 			})), i.d(t, "o", (function() {
-				return _
-			})), i.d(t, "u", (function() {
-				return p
+				return c
 			})), i.d(t, "p", (function() {
+				return _
+			})), i.d(t, "v", (function() {
+				return p
+			})), i.d(t, "q", (function() {
 				return m
 			})), i.d(t, "d", (function() {
 				return h
-			})), i.d(t, "q", (function() {
-				return f
 			})), i.d(t, "r", (function() {
-				return b
+				return f
 			})), i.d(t, "s", (function() {
-				return g
-			})), i.d(t, "y", (function() {
-				return w
-			})), i.d(t, "w", (function() {
-				return v
-			})), i.d(t, "A", (function() {
-				return y
-			})), i.d(t, "z", (function() {
-				return E
-			})), i.d(t, "h", (function() {
-				return T
-			})), i.d(t, "B", (function() {
-				return S
-			})), i.d(t, "C", (function() {
-				return O
-			})), i.d(t, "x", (function() {
-				return I
-			})), i.d(t, "D", (function() {
-				return R
-			})), i.d(t, "E", (function() {
-				return F
-			})), i.d(t, "F", (function() {
-				return C
-			})), i.d(t, "v", (function() {
-				return N
-			})), i.d(t, "f", (function() {
-				return j
-			})), i.d(t, "l", (function() {
-				return A
-			})), i.d(t, "k", (function() {
-				return D
+				return b
 			})), i.d(t, "t", (function() {
+				return g
+			})), i.d(t, "z", (function() {
+				return w
+			})), i.d(t, "x", (function() {
+				return v
+			})), i.d(t, "B", (function() {
+				return y
+			})), i.d(t, "A", (function() {
+				return E
+			})), i.d(t, "i", (function() {
+				return T
+			})), i.d(t, "C", (function() {
+				return S
+			})), i.d(t, "D", (function() {
+				return O
+			})), i.d(t, "y", (function() {
+				return I
+			})), i.d(t, "E", (function() {
+				return R
+			})), i.d(t, "F", (function() {
+				return F
+			})), i.d(t, "G", (function() {
+				return C
+			})), i.d(t, "w", (function() {
+				return N
+			})), i.d(t, "h", (function() {
+				return j
+			})), i.d(t, "f", (function() {
+				return A
+			})), i.d(t, "m", (function() {
+				return D
+			})), i.d(t, "l", (function() {
 				return x
+			})), i.d(t, "u", (function() {
+				return P
 			}));
 			const n = "ampcid",
 				r = "category",
@@ -17263,10 +17265,11 @@
 				F = "v2",
 				C = "show_source",
 				N = "signup_survey",
-				j = "feature",
-				A = ["ad", "adHash", "clickUrl", y, j],
-				D = ["after", "before"],
-				x = ["ad", a, "q", "restrict_sr", "sort", "t", "type", j, l, r, s, I, w]
+				j = "force_seo",
+				A = "feature",
+				D = ["ad", "adHash", "clickUrl", y, A],
+				x = ["after", "before"],
+				P = ["ad", a, "q", "restrict_sr", "sort", "t", "type", A, l, r, s, I, w]
 		},
 		"./src/reddit/constants/postCollection.ts": function(e, t, i) {
 			"use strict";
@@ -18123,7 +18126,7 @@
 				ye = e => e ? e.queryParams : {},
 				Ee = e => {
 					const t = W(e);
-					if (e && t && t === o.Mb.SEARCH_RESULTS) return e.queryParams[p.c] ? Object(l.a)(e.queryParams[p.c]) : Object(l.a)(e.queryParams[p.p])
+					if (e && t && t === o.Mb.SEARCH_RESULTS) return e.queryParams[p.c] ? Object(l.a)(e.queryParams[p.c]) : Object(l.a)(e.queryParams[p.q])
 				},
 				Te = e => e ? e.url : "",
 				Se = (e, {
@@ -20724,7 +20727,7 @@
 						const t = e.platform.currentPage && e.platform.currentPage.url;
 						return t && o()([...Object(r.a)(t)]) || new Set([])
 					})(e),
-					b = d.w in f ? f[d.w] : "";
+					b = d.x in f ? f[d.x] : "";
 				return (n.jc.has(b) ? b : m) === b && (m = b), b && (h = !0), Object(a.d)(e, {
 					postId: t
 				}) && (m = n.u.CHAT, h = !1), {
@@ -24330,7 +24333,7 @@
 						subredditName: d
 					} = n.params, {
 						username: a
-					} = n.params, u = Object(T.c)(t), c = Object(l.e)(r()(n.queryParams, m.t), u), _ = {
+					} = n.params, u = Object(T.c)(t), c = Object(l.e)(r()(n.queryParams, m.u), u), _ = {
 						...c,
 						type: Object(T.a)(u, c.type)
 					};
@@ -39863,7 +39866,7 @@
 				},
 				Se = e => {
 					const t = Object(b.q)(e);
-					return Boolean((null == t ? void 0 : t[m.o]) && Object(_.a)(t[m.o]))
+					return Boolean((null == t ? void 0 : t[m.p]) && Object(_.a)(t[m.p]))
 				},
 				Oe = e => {
 					const t = x(e);
@@ -44812,4 +44815,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.7b01a308d0e82d4d69bf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.83f6d6d33d2f2eeb71fc.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MultiredditEditModal.14cb9f4d0471a72e9804.js
-// Retrieved at 12/6/2021, 3:50:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MultiredditEditModal.a8e986b43a8bb8103e91.js
+// Retrieved at 12/13/2021, 1:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MultiredditEditModal"], {
 		"./src/reddit/actions/multireddit/index.ts": function(e, t, i) {
@@ -27,9 +27,9 @@
 			})), i.d(t, "createRequested", (function() {
 				return H
 			})), i.d(t, "reloadCurrentMultiredditFeedRequested", (function() {
-				return J
-			})), i.d(t, "duplicateFailure", (function() {
 				return B
+			})), i.d(t, "duplicateFailure", (function() {
+				return J
 			})), i.d(t, "duplicatePending", (function() {
 				return $
 			})), i.d(t, "duplicateSuccess", (function() {
@@ -277,7 +277,7 @@
 							})
 						}))
 					} else s(K(m.error))
-				}, J = () => async (e, t, {
+				}, B = () => async (e, t, {
 					apiContext: i
 				}) => {
 					const r = t(),
@@ -297,16 +297,16 @@
 							queryParams: x
 						} = o,
 						y = Object(c.a)(h, u, x),
-						O = b.A in x && x[b.A].toUpperCase() || "",
+						O = b.B in x && x[b.B].toUpperCase() || "",
 						j = a.fc[O] || !1,
 						g = Object(I.k)(r);
 					(f || g && g.displayText) && await e(Object(m.multiredditFeedRequested)(y, (f || g.displayText).toLowerCase(), p.toLowerCase(), {
+						...n()(x, b.m),
 						...n()(x, b.l),
-						...n()(x, b.k),
 						sort: u,
 						t: Object(L.a)(u, j)
 					}))
-				}, B = Object(l.a)(M.k), $ = Object(l.a)(M.l), V = Object(l.a)(M.m), X = ({
+				}, J = Object(l.a)(M.k), $ = Object(l.a)(M.l), V = Object(l.a)(M.m), X = ({
 					description: e,
 					displayName: t,
 					fromName: i,
@@ -348,7 +348,7 @@
 							}),
 							buttonAction: Object(d.b)(e.url)
 						}))
-					} else n(B(O.error)), n(Object(p.f)({
+					} else n(J(O.error)), n(Object(p.f)({
 						text: r.fbt._("Something went wrong duplicating {multiName}", [r.fbt._param("multiName", i)], {
 							hk: "4bzN2D"
 						})
@@ -396,7 +396,7 @@
 							id: n,
 							multipaths: d,
 							type: t.type
-						})), 1 === i.length && await s(J())
+						})), 1 === i.length && await s(B())
 					} else {
 						s(ee(j.error));
 						let e = r.fbt._("Sorry, something went wrong adding {subredditName}.", [r.fbt._param("subredditName", t.name)], {
@@ -449,7 +449,7 @@
 							},
 							multiredditNames: [t]
 						})
-					})), n(J())) : (n(se(j.error)), n(Object(p.f)({
+					})), n(B())) : (n(se(j.error)), n(Object(p.f)({
 						text: r.fbt._("Sorry, something went wrong removing {subredditName}.", [r.fbt._param("subredditName", i)], {
 							hk: "1E1rKm"
 						})
@@ -680,14 +680,14 @@
 						j = f.listings.postOrder.ids[y],
 						v = f.listings.postOrder.api.error[y],
 						w = f.listings.postOrder.api.pending[y],
-						N = b.A in e.queryParams && e.queryParams[b.A].toUpperCase() || "",
+						N = b.B in e.queryParams && e.queryParams[b.B].toUpperCase() || "",
 						E = N in c.fc && c.fc[N];
 					if (w || j && !v && !t) return void(j && (i(u.m({
 						title: Object(_.f)(r(), m)
 					})), f.sidebarPromotedPosts.firstFetch || i(Object(C.b)(S.a.MULTIREDDIT))));
 					await i(L(y, o, s, {
+						...n()(e.queryParams, b.m),
 						...n()(e.queryParams, b.l),
-						...n()(e.queryParams, b.k),
 						sort: l,
 						t: Object(x.a)(l, E)
 					}, !0));
@@ -1520,4 +1520,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MultiredditEditModal.14cb9f4d0471a72e9804.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MultiredditEditModal.a8e986b43a8bb8103e91.js.map

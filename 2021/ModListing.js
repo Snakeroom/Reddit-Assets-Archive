@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.de6a3f20137b78f05b52.js
-// Retrieved at 12/13/2021, 11:50:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.779f0e1b5c23b28dacfa.js
+// Retrieved at 12/13/2021, 1:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -482,7 +482,7 @@
 			})), r.d(t, "modListingDataLoaded", (function() {
 				return T
 			})), r.d(t, "modListingDataFailed", (function() {
-				return P
+				return B
 			})), r.d(t, "modListingPageRequested", (function() {
 				return F
 			})), r.d(t, "morePostsPending", (function() {
@@ -555,8 +555,8 @@
 				M = r("./src/reddit/actions/pages/modListing/constants.ts");
 			const L = Object(a.a)(M.f),
 				T = Object(a.a)(M.e),
-				P = Object(a.a)(M.d),
-				B = (e, t) => async (r, s, o) => {
+				B = Object(a.a)(M.d),
+				P = (e, t) => async (r, s, o) => {
 					const i = s();
 					if (i.listings.postOrder.api.pending[e]) return;
 					r(L({
@@ -568,7 +568,7 @@
 						key: e,
 						meta: i.meta,
 						...a.body
-					})), r(l.g(d))) : (r(P({
+					})), r(l.g(d))) : (r(B({
 						error: a.error,
 						key: e,
 						...a.body
@@ -581,7 +581,7 @@
 						buttonText: n.fbt._("Retry", null, {
 							hk: "3gV6S0"
 						}),
-						buttonAction: B(e, t)
+						buttonAction: P(e, t)
 					})))
 				}, F = (e, t) => async (r, s) => {
 					const {
@@ -593,9 +593,9 @@
 						})
 					})));
 					const v = U(e.queryParams);
-					await r(B(h, {
+					await r(P(h, {
+						...o()(e.queryParams, m.m),
 						...o()(e.queryParams, m.l),
-						...o()(e.queryParams, m.k),
 						filtered: !!l || void 0,
 						moderated_srs: !0,
 						sort: a,
@@ -630,7 +630,7 @@
 							filtered: !!p || void 0,
 							sort: c,
 							t: Object(w.a)(c, O),
-							...o()(l, m.l)
+							...o()(l, m.m)
 						}),
 						j = s.listings.postOrder.ids[b],
 						E = {
@@ -651,7 +651,7 @@
 				};
 
 			function U(e) {
-				const t = m.A in e && e[m.A].toUpperCase() || "";
+				const t = m.B in e && e[m.B].toUpperCase() || "";
 				return t in i.fc && i.fc[t]
 			}
 			const q = Object(a.a)(M.c),
@@ -2298,10 +2298,10 @@
 				} : {
 					marginLeft: `${d.q}px`,
 					marginTop: L
-				}, P = S && s.a.createElement("div", {
+				}, B = S && s.a.createElement("div", {
 					className: Object(a.a)(h.a.sidebar, j ? h.a["m-collectionLayout"] : h.a.defaultLayout),
 					style: T
-				}, S), B = s.a.createElement(i.a, {
+				}, S), P = s.a.createElement(i.a, {
 					hideOnlyChildMargin: _,
 					className: y,
 					disableFullscreen: g,
@@ -2310,7 +2310,7 @@
 					isCollectionLayout: j
 				}, f, b);
 				let F;
-				F = k ? s.a.createElement(s.a.Fragment, null, k[0], B, k[1]) : w ? s.a.createElement(s.a.Fragment, null, P, B) : s.a.createElement(s.a.Fragment, null, B, P);
+				F = k ? s.a.createElement(s.a.Fragment, null, k[0], P, k[1]) : w ? s.a.createElement(s.a.Fragment, null, B, P) : s.a.createElement(s.a.Fragment, null, P, B);
 				const R = g ? `${E||l.a+2*d.m}px` : "100%",
 					D = Object(n.useContext)(u.a);
 				return s.a.createElement(m.a, {
@@ -2459,7 +2459,7 @@
 				isModalOpen: Object(I.b)("MOD_LISTING_FEED_DETAILS_MODAL_ID"),
 				moderatedCommunitiesIds: C.e
 			});
-			var P = Object(a.b)(T, (e, {}) => ({
+			var B = Object(a.b)(T, (e, {}) => ({
 					toggleModal: () => e(Object(x.i)("MOD_LISTING_FEED_DETAILS_MODAL_ID"))
 				}))(e => {
 					const {
@@ -2477,7 +2477,7 @@
 						withOverlay: !0
 					})) : null
 				}),
-				B = r("./node_modules/react-router-redux/es/index.js"),
+				P = r("./node_modules/react-router-redux/es/index.js"),
 				F = r("./src/reddit/components/TrackingHelper/index.tsx"),
 				R = r("./src/reddit/contexts/PageLayer/index.tsx"),
 				D = r("./src/reddit/controls/Button/index.tsx");
@@ -2671,7 +2671,7 @@
 			var xe = ye(Object(a.b)(ve, (e, {
 					filtered: t
 				}) => ({
-					toggleFiltered: () => e(Object(B.b)(t ? q.a : q.b))
+					toggleFiltered: () => e(Object(P.b)(t ? q.a : q.b))
 				}))(Object(F.c)(ge))),
 				Oe = r("./src/reddit/components/SidebarContainer/index.tsx"),
 				_e = r("./src/reddit/components/SidebarStickyBottom/index.tsx"),
@@ -2680,7 +2680,7 @@
 					title: v.fbt._("Feed details", null, {
 						hk: "3JlrpB"
 					})
-				}, i.a.createElement(P, null), i.a.createElement(xe, null)), i.a.createElement(_e.a, null)),
+				}, i.a.createElement(B, null), i.a.createElement(xe, null)), i.a.createElement(_e.a, null)),
 				Ee = r("./src/reddit/constants/page.ts"),
 				Ie = r("./src/reddit/constants/parameters.ts"),
 				Ce = r("./src/reddit/helpers/trackers/screenview.ts"),
@@ -2694,7 +2694,7 @@
 					match: t
 				}) => Object(q.d)(t.path), ke.j, ke.d, (e, t, r, n, o) => {
 					const i = s()([...Object(l.a)(e)]),
-						a = Ie.A in i && i[Ie.A].toUpperCase(),
+						a = Ie.B in i && i[Ie.B].toUpperCase(),
 						d = "string" == typeof a && a in c.fc ? c.fc[a] : c.gc,
 						m = r ? Ee.f : Ee.e;
 					return {
@@ -2974,7 +2974,7 @@
 				M = r("./node_modules/lodash/omit.js"),
 				L = r.n(M);
 			const T = {};
-			var P = (e = T, t) => {
+			var B = (e = T, t) => {
 				switch (t.type) {
 					case E.g:
 					case E.k: {
@@ -3015,8 +3015,8 @@
 						return e
 				}
 			};
-			const B = {};
-			var F = (e = B, t) => {
+			const P = {};
+			var F = (e = P, t) => {
 				switch (t.type) {
 					case E.g: {
 						const {
@@ -3121,7 +3121,7 @@
 				},
 				W = Object(n.c)({
 					api: S,
-					models: P,
+					models: B,
 					pageInfo: F,
 					search: U,
 					userOrder: K
@@ -3588,12 +3588,12 @@
 							return e
 					}
 				},
-				Pe = Object(n.c)({
+				Be = Object(n.c)({
 					error: Le,
 					pending: Te
 				}),
-				Be = r("./node_modules/lodash/isEqual.js"),
-				Fe = r.n(Be);
+				Pe = r("./node_modules/lodash/isEqual.js"),
+				Fe = r.n(Pe);
 			var Re = (e = null, t) => {
 					switch (t.type) {
 						case s.J:
@@ -3619,7 +3619,7 @@
 					}
 				},
 				De = Object(n.c)({
-					api: Pe,
+					api: Be,
 					result: Re
 				});
 			const Ae = {};
@@ -4098,7 +4098,7 @@
 				}
 			};
 			const Tt = {};
-			var Pt = (e = Tt, t) => {
+			var Bt = (e = Tt, t) => {
 					switch (t.type) {
 						case ze.m: {
 							const {
@@ -4116,10 +4116,10 @@
 							return e
 					}
 				},
-				Bt = Object(n.c)({
+				Pt = Object(n.c)({
 					api: Nt,
 					itemOrder: Lt,
-					loadMore: Pt
+					loadMore: Bt
 				});
 			var Ft = (e = null, t) => {
 				switch (t.type) {
@@ -4272,7 +4272,7 @@
 					edited: mt,
 					moderatedCommunitiesOrder: gt,
 					modqueue: Ct,
-					reports: Bt,
+					reports: Pt,
 					spam: Kt,
 					unmoderated: Yt
 				});
@@ -4606,4 +4606,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.de6a3f20137b78f05b52.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.779f0e1b5c23b28dacfa.js.map

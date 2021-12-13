@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.e1490c726710cf400a1a.js
-// Retrieved at 12/13/2021, 11:50:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.a3fbbb99f7978e682319.js
+// Retrieved at 12/13/2021, 1:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit", "reddit-components-BlankPost"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -5682,7 +5682,7 @@
 						state: {
 							[m.b.SearchOriginPage]: e
 						},
-						search: `${W.p}=${encodeURI(t)}`
+						search: `${W.q}=${encodeURI(t)}`
 					},
 					className: Object(o.a)(v.a.listItem, b.a.item),
 					"data-testid": "search-trigger-item"
@@ -6918,10 +6918,10 @@
 				if ("" !== r.searchQuery) {
 					if (r.isTypeaheadSuggestion) i = `/${r.isProfile?r.searchQuery.replace("u/","user/"):r.searchQuery}`;
 					else {
-						if (u.push(`${n.p}=${Object(s.b)(r.rawQuery||r.searchQuery)}`), i = "/search/", r.section !== a.c.trending && r.section !== a.c.recent || c && c.source && u.push(`source=${c.source}`), e && o ? (i = `/r/${e.name}${i}`, u.push(`${n.s}=1`), u.push(`${n.y}=${e.isNSFW?"1":""}`)) : !e && r.subredditOrProfileRestrictedName && (i = `/${r.subredditOrProfileRestrictedName}${i}`, u.push(`${n.s}=1`)), t) {
-							i = `/user/${t.url.split("/")[2]}/m/${t.name}${i}`, u.push(`${n.s}=1`), u.push(`${n.y}=${t.isNSFW?"1":""}`), u.push(`${n.j}=1`)
+						if (u.push(`${n.q}=${Object(s.b)(r.rawQuery||r.searchQuery)}`), i = "/search/", r.section !== a.c.trending && r.section !== a.c.recent || c && c.source && u.push(`source=${c.source}`), e && o ? (i = `/r/${e.name}${i}`, u.push(`${n.t}=1`), u.push(`${n.z}=${e.isNSFW?"1":""}`)) : !e && r.subredditOrProfileRestrictedName && (i = `/${r.subredditOrProfileRestrictedName}${i}`, u.push(`${n.t}=1`)), t) {
+							i = `/user/${t.url.split("/")[2]}/m/${t.name}${i}`, u.push(`${n.t}=1`), u.push(`${n.z}=${t.isNSFW?"1":""}`), u.push(`${n.k}=1`)
 						}
-						c && c.category && u.push(`${n.b}=${c.category}`), d && u.push(`${n.i}=1`)
+						c && c.category && u.push(`${n.b}=${c.category}`), d && u.push(`${n.j}=1`)
 					}
 					return {
 						url: i,
@@ -25293,4 +25293,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.e1490c726710cf400a1a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.a3fbbb99f7978e682319.js.map

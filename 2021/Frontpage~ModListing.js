@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~ModListing.4930f23631bb55c1eab3.js
-// Retrieved at 12/13/2021, 11:10:14 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~ModListing.3dffbc89b07c89f27b76.js
+// Retrieved at 12/13/2021, 1:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~ModListing"], {
 		"./src/reddit/actions/focusedVerticals/index.ts": function(e, t, n) {
@@ -950,7 +950,7 @@
 					}
 				}));
 			var de = R.a.wrapped(ae(ce(e => {
-				const t = `${e.baseUrl}?${Y.h}=${b.A.UnitedStates}`;
+				const t = `${e.baseUrl}?${Y.i}=${b.A.UnitedStates}`;
 				return r.a.createElement("div", {
 					className: e.className,
 					onClick: e.onOpenDropdown
@@ -1121,7 +1121,7 @@
 				}))(e => {
 					const t = re(e.sort),
 						n = se(e.sort),
-						s = `${e.baseUrl}?${Y.h}=`;
+						s = `${e.baseUrl}?${Y.i}=`;
 					return r.a.createElement(r.a.Fragment, null, r.a.createElement("div", {
 						className: Object(a.a)(pe.a.countrySort, e.className),
 						onClick: () => e.dropdownIsOpen ? e.onCloseDropdown(be) : e.onOpenDropdown(be)
@@ -1207,7 +1207,7 @@
 							return e.urlParams.sort || Object(l.I)(e) || (n = ye.a.join(n, t)), n
 						})(e.pageLayer, e.listingSort),
 						s = Object(m.a)(n, {
-							[Y.A]: t
+							[Y.B]: t
 						}),
 						o = s.split("?")[0],
 						i = `${s.replace(o+"?","")}`;
@@ -2821,4 +2821,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing.4930f23631bb55c1eab3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing.3dffbc89b07c89f27b76.js.map

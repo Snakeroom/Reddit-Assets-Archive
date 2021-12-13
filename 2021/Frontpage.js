@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.16d6fb50983677d94be7.js
-// Retrieved at 12/13/2021, 11:10:14 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.0f02cff1c499431cfed8.js
+// Retrieved at 12/13/2021, 1:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -708,7 +708,7 @@
 						u = c.listings.postOrder.ids[d],
 						m = c.listings.postOrder.api.error[d],
 						p = c.listings.postOrder.api.pending[d],
-						b = Z.A in e.queryParams && e.queryParams[Z.A].toUpperCase() || "",
+						b = Z.B in e.queryParams && e.queryParams[Z.B].toUpperCase() || "",
 						h = b in l.fc && l.fc[b];
 					if (p || u && !m && !t) return void(u && (a(D.m({
 						title: T.e()
@@ -721,8 +721,8 @@
 						f = Object(V.b)(g),
 						_ = [Object(V.c)(g)];
 					await a(me(d, {
+						...r()(e.queryParams, Z.m),
 						...r()(e.queryParams, Z.l),
-						...r()(e.queryParams, Z.k),
 						limit: f,
 						sort: i,
 						statsdPathsForExperiments: _,
@@ -763,7 +763,7 @@
 						d = n.platform.currentPage ? n.platform.currentPage.queryParams : {},
 						u = Object(X.a)(R.b, i, d),
 						m = n.listings.postOrder.loadMore[u],
-						p = d[Z.A] ? d[Z.A].toUpperCase() : "",
+						p = d[Z.B] ? d[Z.B].toUpperCase() : "",
 						b = p in l.fc && l.fc[p];
 					if (m) {
 						const e = n.listings.postOrder.api.pending[u],
@@ -781,7 +781,7 @@
 								h = {
 									after: m.token,
 									dist: m.dist,
-									...r()(d, Z.l),
+									...r()(d, Z.m),
 									isMobile: Object(c.e)(n.meta.userAgent),
 									limit: l,
 									sort: i,
@@ -826,7 +826,7 @@
 						} = e,
 						c = s.platform.currentPage ? s.platform.currentPage.queryParams : {},
 						o = Object(X.a)(R.b, r, c),
-						i = c[Z.A] ? c[Z.A].toUpperCase() : "",
+						i = c[Z.B] ? c[Z.B].toUpperCase() : "",
 						d = i in l.fc && l.fc[i],
 						u = Object(V.a)(s),
 						m = Object(V.b)(u);
@@ -5445,7 +5445,7 @@
 				queryParams: t,
 				sort: a
 			}, s, n, r, c, o) => {
-				const i = P.A in t && t[P.A].toUpperCase(),
+				const i = P.B in t && t[P.B].toUpperCase(),
 					l = "string" == typeof i && i in H.fc ? H.fc[i] : H.gc,
 					d = Object(p.a)(J.b, a, t),
 					u = e,
@@ -6036,4 +6036,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.16d6fb50983677d94be7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.0f02cff1c499431cfed8.js.map

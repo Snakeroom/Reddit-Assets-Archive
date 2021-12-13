@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.272821559a38822a972a.js
-// Retrieved at 12/13/2021, 11:10:14 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.4bf092f83b7cf2538cf8.js
+// Retrieved at 12/13/2021, 1:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~ReportFlow~Subreddit"], {
 		"./src/lib/assertNever.ts": function(e, t, r) {
@@ -3018,7 +3018,7 @@
 					}) || Object(De.b)(Ie.c.flair)(e, {
 						subredditId: t
 					}))(e, t),
-					G = ie.A in e.queryParams && e.queryParams[ie.A].toUpperCase() || "",
+					G = ie.B in e.queryParams && e.queryParams[ie.B].toUpperCase() || "",
 					q = G in u.fc && u.fc[G];
 				if (A || N && !R && !t) {
 					if (F(h, P) && r(B.i(P)), N) {
@@ -3052,7 +3052,7 @@
 					await e
 				} else {
 					const t = {
-						...c()(e.queryParams, [...ie.l, ...ie.k, ie.h]),
+						...c()(e.queryParams, [...ie.m, ...ie.l, ie.i]),
 						sort: x,
 						t: Object(fe.a)(x, q)
 					};
@@ -4227,7 +4227,7 @@
 							layout: I.e[Object(E.Q)(b, {})],
 							sort: T,
 							t: l,
-							...s()(f, [...g.l, g.h])
+							...s()(f, [...g.m, g.i])
 						},
 						R = Object(F.a)(b) ? () => Object(y.b)(i(), Object(y.c)(b, c, {
 							...k,
@@ -10603,4 +10603,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.272821559a38822a972a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.4bf092f83b7cf2538cf8.js.map

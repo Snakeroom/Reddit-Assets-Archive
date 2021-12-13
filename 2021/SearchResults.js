@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.6696d181af6e459e0a8e.js
-// Retrieved at 12/13/2021, 11:10:14 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.eff9ec53f19c07e413ac.js
+// Retrieved at 12/13/2021, 1:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -754,7 +754,7 @@
 				h = e => async (t, s) => {
 					const r = s(),
 						n = Object(p.c)(r),
-						h = Object(a.e)(o()(e.queryParams, u.t), n),
+						h = Object(a.e)(o()(e.queryParams, u.u), n),
 						C = {
 							...h,
 							type: Object(p.a)(n, h.type)
@@ -6028,7 +6028,7 @@
 						})(t, !b));
 						const r = !l;
 						m(r);
-						const n = (null == s ? void 0 : s.queryParams[d.p]) || "",
+						const n = (null == s ? void 0 : s.queryParams[d.q]) || "",
 							{
 								include_over_18: o,
 								...i
@@ -6036,7 +6036,7 @@
 							a = {
 								...i,
 								...r && {
-									[d.i]: "1"
+									[d.j]: "1"
 								}
 							},
 							c = {
@@ -6430,7 +6430,7 @@
 				b = s("./src/lib/search/index.ts");
 			const h = (e, t, s, r, n, o) => {
 				var i;
-				const a = Object(b.b)(null !== (i = e[p.p]) && void 0 !== i ? i : ""),
+				const a = Object(b.b)(null !== (i = e[p.q]) && void 0 !== i ? i : ""),
 					c = e && e[s],
 					d = {};
 				let l = Object(b.c)(t || "", a, {
@@ -6648,7 +6648,7 @@
 							options: t,
 							optionLabels: s,
 							value: r
-						} = h(e.queryParams, e.url, p.w, G, m.Pb, Z), o = {
+						} = h(e.queryParams, e.url, p.x, G, m.Pb, Z), o = {
 							"data-testid": "search-results-filter-sort",
 							options: t,
 							optionLabels: s,
@@ -6657,8 +6657,8 @@
 							value: r
 						};
 						return n.a.createElement(q, J({}, o, {
-							active: Boolean(e.queryParams[p.w]),
-							label: e.queryParams[p.w] ? s[r] : u.fbt._("Sort", null, {
+							active: Boolean(e.queryParams[p.x]),
+							label: e.queryParams[p.x] ? s[r] : u.fbt._("Sort", null, {
 								hk: "2COMme"
 							})
 						}))
@@ -6668,7 +6668,7 @@
 							options: t,
 							optionLabels: s,
 							value: r
-						} = h(e.queryParams, e.url, p.A, z.slice().reverse(), m.Qb, X);
+						} = h(e.queryParams, e.url, p.B, z.slice().reverse(), m.Qb, X);
 						if (!e.searchOptions || e.searchOptions.sort === m.W.NEW || e.searchOptions.sort === m.W.HOT) return null;
 						const o = {
 							"data-testid": "search-results-filter-time",
@@ -6679,8 +6679,8 @@
 							value: r
 						};
 						return n.a.createElement(q, Y({}, o, {
-							active: Boolean(e.queryParams[p.A]),
-							label: e.queryParams[p.A] ? s[r] : u.fbt._("Time", null, {
+							active: Boolean(e.queryParams[p.B]),
+							label: e.queryParams[p.B] ? s[r] : u.fbt._("Time", null, {
 								hk: "3hL0P3"
 							})
 						}))
@@ -7988,14 +7988,14 @@
 			function i(e, t) {
 				let s = "/search",
 					i = "",
-					a = e && e[o.p] || "";
+					a = e && e[o.q] || "";
 				t ? (a = a.replace("flair:", "flair_name:"), s = `/r/${t}/search`, i = "1") : a = a.replace("flair_name:", "flair:");
 				const c = Object(r.a)(s, {
-					[o.p]: a,
-					[o.s]: i
+					[o.q]: a,
+					[o.t]: i
 				});
 				return Object(n.c)(c, a, {
-					[o.s]: i
+					[o.t]: i
 				})
 			}
 		},
@@ -8860,11 +8860,11 @@
 						Object(E.b)(E.a.SearchResults), window.clearTimeout(e)
 					}
 				}, []), Object(i.useEffect)(() => {
-					J !== Q && (L.current = !1, Y(!1)), J && Q && J[y.p] !== Q[y.p] && (Object(E.b)(E.a.SearchResults), Object(E.e)(E.a.SearchResults))
+					J !== Q && (L.current = !1, Y(!1)), J && Q && J[y.q] !== Q[y.q] && (Object(E.b)(E.a.SearchResults), Object(E.e)(E.a.SearchResults))
 				}, [J, Q]);
 				const $ = t.params.subredditName || t.params.multiredditName || "",
 					ee = t.params.username,
-					te = Object(u.e)(o()(J || {}, y.t), Z),
+					te = Object(u.e)(o()(J || {}, y.u), Z),
 					se = A && te.restrict_sr,
 					re = Object(_.a)(Z, te.type, se),
 					ne = {
@@ -8898,7 +8898,7 @@
 				return a.a.createElement(I.a, {
 					backgroundColor: pe.canvas,
 					content: a.a.createElement(a.a.Fragment, null, a.a.createElement(b.a, null), z && !X && (() => {
-						const e = e => n(Object(k.b)(e, Object(u.e)(o()(J || {}, y.t))));
+						const e = e => n(Object(k.b)(e, Object(u.e)(o()(J || {}, y.u))));
 						return L.current || (e("view"), L.current = !0), a.a.createElement(W, {
 							announcement: v.a,
 							className: H.a.announcement,
@@ -9465,4 +9465,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.6696d181af6e459e0a8e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.eff9ec53f19c07e413ac.js.map

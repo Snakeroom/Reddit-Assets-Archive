@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.31f319ec7e7ce5c412c1.js
-// Retrieved at 12/13/2021, 11:10:14 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.768209f7c6275312a666.js
+// Retrieved at 12/13/2021, 1:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "AchievementsActions", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -1936,8 +1936,8 @@
 					const n = t ? `/r/${t}/search` : "/search",
 						r = `${t?"flair_name":"flair"}:"${e}"`;
 					return Object(l.a)(n, {
-						[v.p]: r,
-						[v.s]: t ? "1" : ""
+						[v.q]: r,
+						[v.t]: t ? "1" : ""
 					})
 				},
 				D = e => e.isFlairFilter ? d.a.createElement(C.a, {
@@ -5488,4 +5488,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.31f319ec7e7ce5c412c1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.768209f7c6275312a666.js.map

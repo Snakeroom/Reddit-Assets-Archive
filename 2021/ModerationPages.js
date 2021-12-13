@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.f504ccebb94f44fcf71e.js
-// Retrieved at 12/13/2021, 11:10:14 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.98b24e2707046ac4bda2.js
+// Retrieved at 12/13/2021, 1:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -1513,7 +1513,7 @@
 						subredditName: d = T.e,
 						wikiPageName: c,
 						wikiSubRoute: m
-					} = e, u = t[N.D], p = t[N.E], h = u ? Object(v.a)(u) : void 0, E = p ? Object(v.a)(p) : void 0, _ = c === T.j, k = m === T.m.Revisions;
+					} = e, u = t[N.E], p = t[N.F], h = u ? Object(v.a)(u) : void 0, E = p ? Object(v.a)(p) : void 0, _ = c === T.j, k = m === T.m.Revisions;
 					let y = !1,
 						O = !1;
 					if (n) {
@@ -8175,12 +8175,13 @@
 						}, t)
 					}), " ")
 				}),
-				I = n("./src/reddit/contexts/PageLayer/index.tsx"),
-				w = n("./src/reddit/controls/Button/index.tsx"),
-				N = n("./src/chat/controls/Svg/index.tsx");
+				I = n("./src/reddit/constants/parameters.ts"),
+				w = n("./src/reddit/contexts/PageLayer/index.tsx"),
+				N = n("./src/reddit/controls/Button/index.tsx"),
+				T = n("./src/chat/controls/Svg/index.tsx");
 
-			function T() {
-				return (T = Object.assign || function(e) {
+			function M() {
+				return (M = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var s in n) Object.prototype.hasOwnProperty.call(n, s) && (e[s] = n[s])
@@ -8188,39 +8189,40 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var M = e => r.a.createElement(N.a, T({}, e, {
+			var P = e => r.a.createElement(T.a, M({}, e, {
 					viewBox: "-1 -1 21 21"
 				}), r.a.createElement("path", {
 					d: "M16.64,2.32a4.5,4.5,0,0,0-7,5.57L4.85,12.69,3.59,13.95h0L2.34,15.2a1,1,0,0,0,0,1.41l1.25,1.25h0l.42.42a1,1,0,0,0,1.41-1.41L5,16.46H5a.78.78,0,0,1,0-1.09.79.79,0,0,1,1.09,0h0l.42.42a1,1,0,0,0,1.41-1.41L7.52,14h0L7,13.4l4.1-4.1a4.5,4.5,0,0,0,5.57-7Zm-1.41,5a2.5,2.5,0,1,1,0-3.54A2.5,2.5,0,0,1,15.22,7.27Z"
 				})),
-				P = n("./src/reddit/models/ContentGate.ts"),
-				R = n("./src/lib/constants/index.ts"),
-				A = n("./src/reddit/selectors/platform.ts"),
-				F = n("./src/reddit/selectors/user.ts");
-			var D = n("./src/reddit/selectors/meta.ts"),
-				L = n("./src/reddit/components/ContentGate/index.m.less"),
-				U = n.n(L);
+				R = n("./src/reddit/models/ContentGate.ts"),
+				A = n("./src/lib/constants/index.ts"),
+				F = n("./src/reddit/selectors/platform.ts"),
+				D = n("./src/reddit/selectors/user.ts");
+			var L = n("./src/reddit/selectors/meta.ts"),
+				U = n("./src/reddit/components/ContentGate/index.m.less"),
+				B = n.n(U);
 			const {
-				fbt: B
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), H = c.a.wrapped(M, "PrivateKey", U.a), W = c.a.div("ButtonsContainer", U.a), q = c.a.div("Container", U.a), G = c.a.div("ContainerExp", U.a), K = c.a.div("Description", U.a), V = c.a.div("PrivateSubredditDetails", U.a), z = c.a.div("PrivateSubredditDescription", U.a), Q = c.a.h3("PrivateSubredditName", U.a), X = c.a.a("Link", U.a), J = c.a.wrapped(w.n, "LinkRouterButton", U.a), Y = c.a.wrapped(w.m, "LinkButton", U.a), Z = c.a.wrapped(w.q, "SecondaryLinkRouterButton", U.a), $ = c.a.wrapped(w.p, "SecondaryLinkButton", U.a), ee = c.a.wrapped(J, "GoHomeLinkButton", U.a), te = c.a.wrapped(h.a, "CreateCommunityButton", U.a), ne = c.a.img("Image", U.a), se = c.a.img("ImagePlaceholder", U.a), ae = c.a.wrapped(J, "LeftLinkRouterButton", U.a), re = c.a.wrapped(Y, "LeftLinkButton", U.a), oe = c.a.wrapped($, "SecondaryLeftLinkButton", U.a), ie = c.a.wrapped(Z, "SecondaryLeftLinkRouterButton", U.a), de = c.a.h3("Title", U.a), le = c.a.div("PageBody", U.a), ce = c.a.div("QuarantineMessageWrapper", U.a), me = Object(l.c)({
-				isLoggedIn: F.J,
-				origin: D.j,
-				user: F.k,
+				fbt: H
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), W = c.a.wrapped(P, "PrivateKey", B.a), q = c.a.div("ButtonsContainer", B.a), G = c.a.div("Container", B.a), K = c.a.div("ContainerExp", B.a), V = c.a.div("Description", B.a), z = c.a.div("PrivateSubredditDetails", B.a), Q = c.a.div("PrivateSubredditDescription", B.a), X = c.a.h3("PrivateSubredditName", B.a), J = c.a.a("Link", B.a), Y = c.a.wrapped(N.n, "LinkRouterButton", B.a), Z = c.a.wrapped(N.m, "LinkButton", B.a), $ = c.a.wrapped(N.q, "SecondaryLinkRouterButton", B.a), ee = c.a.wrapped(N.p, "SecondaryLinkButton", B.a), te = c.a.wrapped(Y, "GoHomeLinkButton", B.a), ne = c.a.wrapped(h.a, "CreateCommunityButton", B.a), se = c.a.img("Image", B.a), ae = c.a.img("ImagePlaceholder", B.a), re = c.a.wrapped(Y, "LeftLinkRouterButton", B.a), oe = c.a.wrapped(Z, "LeftLinkButton", B.a), ie = c.a.wrapped(ee, "SecondaryLeftLinkButton", B.a), de = c.a.wrapped($, "SecondaryLeftLinkRouterButton", B.a), le = c.a.h3("Title", B.a), ce = c.a.div("PageBody", B.a), me = c.a.div("QuarantineMessageWrapper", B.a), ue = Object(l.c)({
+				isLoggedIn: D.J,
+				origin: L.j,
+				user: D.k,
 				isPrivateSubredditContributorRequestPending: e => (e => {
-					if (!Object(F.K)(e)) return !1;
-					const t = Object(A.d)(e);
+					if (!Object(D.K)(e)) return !1;
+					const t = Object(F.d)(e);
 					if (!t) return !1;
-					const n = Object(F.f)(e, t);
+					const n = Object(D.f)(e, t);
 					if (!n) return !1;
 					if (!n.privateSubreddit) return !1;
 					const {
 						isContributorRequestTimestamp: s
 					} = n;
 					if (!s) return !1;
-					const a = 30 * R.B;
+					const a = 30 * A.B;
 					return s > Date.now() - a
-				})(e)
-			}), ue = Object(I.u)(), pe = Object(o.b)(me, (e, {
+				})(e),
+				isSeo: L.g
+			}), pe = Object(w.u)(), be = Object(o.b)(ue, (e, {
 				subredditName: t
 			}) => ({
 				continueToQuarantinedSubreddit: async () => {
@@ -8229,7 +8231,7 @@
 				setNSFWPreference: async () => {
 					await e(Object(u.l)())
 				}
-			})), be = e => {
+			})), he = e => {
 				const {
 					banMessage: t,
 					contentGateType: n,
@@ -8237,258 +8239,262 @@
 					isLoggedIn: o,
 					isContributorRequestsDisabled: i,
 					isPrivateSubredditContributorRequestPending: d,
-					location: l,
-					origin: c,
-					pageLayer: p,
-					quarantineRequiresEmail: h,
-					quarantineMessage: g,
-					quarantineMessageHtml: v,
-					quarantineMessageRTJson: _,
-					setNSFWPreference: k,
-					subredditDescription: C,
-					subredditName: y,
-					user: O
-				} = e, S = async () => {
-					o ? await k() : await Object(u.k)(), window.location.reload()
+					isSeo: l,
+					location: c,
+					origin: p,
+					pageLayer: h,
+					quarantineRequiresEmail: g,
+					quarantineMessage: v,
+					quarantineMessageHtml: _,
+					quarantineMessageRTJson: k,
+					setNSFWPreference: C,
+					subredditDescription: y,
+					subredditName: O,
+					user: S
+				} = e, w = async () => {
+					if (o ? await C() : await Object(u.k)(), l) {
+						const e = new URL(window.location.href);
+						e.searchParams.set(I.h, "1"), window.location.href = e.href
+					} else window.location.reload()
 				};
 				switch (n) {
-					case P.a.GoldSubreddit:
-						return r.a.createElement("div", null, r.a.createElement(ne, {
+					case R.a.GoldSubreddit:
+						return r.a.createElement("div", null, r.a.createElement(se, {
 							src: `${s.a.assetPath}/img/gold/premium-crest.png`
-						}), r.a.createElement(de, null, B._("r/{community name} is a Reddit Premium community", [B._param("community name", y)], {
+						}), r.a.createElement(le, null, H._("r/{community name} is a Reddit Premium community", [H._param("community name", O)], {
 							hk: "2lyDwB"
-						})), r.a.createElement(K, null, B._("The moderators in this community have set it to Reddit Premium members only. You must upgrade to a Reddit Premium membership to continue.", null, {
+						})), r.a.createElement(V, null, H._("The moderators in this community have set it to Reddit Premium members only. You must upgrade to a Reddit Premium membership to continue.", null, {
 							hk: "mIiOw"
-						})), r.a.createElement(W, null, O ? r.a.createElement(oe, {
+						})), r.a.createElement(q, null, S ? r.a.createElement(ie, {
 							href: `${s.a.redditUrl}/premium`,
 							redditStyle: !0
-						}, B._("Get Premium", null, {
+						}, H._("Get Premium", null, {
 							hk: "3ChWi4"
-						})) : r.a.createElement(re, {
-							href: Object(m.a)(l, c),
+						})) : r.a.createElement(oe, {
+							href: Object(m.a)(c, p),
 							redditStyle: !0
-						}, B._("Sign Up", null, {
+						}, H._("Sign Up", null, {
 							hk: "rvpjy"
-						})), O ? r.a.createElement(J, {
+						})), S ? r.a.createElement(Y, {
 							to: "/",
 							redditStyle: !0
-						}, B._("Go Home", null, {
+						}, H._("Go Home", null, {
 							hk: "49p4or"
-						})) : r.a.createElement($, {
-							href: Object(m.a)(l, c),
+						})) : r.a.createElement(ee, {
+							href: Object(m.a)(c, p),
 							redditStyle: !0
-						}, B._("Log In", null, {
+						}, H._("Log In", null, {
 							hk: "4Cxw0g"
 						}))));
-					case P.a.Nsfw:
-					case P.a.NsfwCustomFeed:
-						return r.a.createElement("div", null, r.a.createElement(ne, {
+					case R.a.Nsfw:
+					case R.a.NsfwCustomFeed:
+						return r.a.createElement("div", null, r.a.createElement(se, {
 							src: `${s.a.assetPath}/img/content-gate-icons/nsfw.png`
-						}), r.a.createElement(de, null, n === P.a.Nsfw ? B._("You must be 18+ to view this community", null, {
+						}), r.a.createElement(le, null, n === R.a.Nsfw ? H._("You must be 18+ to view this community", null, {
 							hk: "IQmEA"
-						}) : B._("You must be 18+ to view this Custom Feed", null, {
+						}) : H._("You must be 18+ to view this Custom Feed", null, {
 							hk: "3pmHS2"
-						})), r.a.createElement(K, null, B._("You must be at least eighteen years old to view this content. Are you over eighteen and willing to see adult content?", null, {
+						})), r.a.createElement(V, null, H._("You must be at least eighteen years old to view this content. Are you over eighteen and willing to see adult content?", null, {
 							hk: "gI12S"
-						})), r.a.createElement(W, null, r.a.createElement(ae, {
+						})), r.a.createElement(q, null, r.a.createElement(re, {
 							to: "/",
 							redditStyle: !0
-						}, B._("No", null, {
+						}, H._("No", null, {
 							hk: "3fMglW"
-						})), r.a.createElement($, {
-							onClick: S,
+						})), r.a.createElement(ee, {
+							onClick: w,
 							redditStyle: !0
-						}, B._("Yes", null, {
+						}, H._("Yes", null, {
 							hk: "2hpRkN"
 						}))));
-					case P.a.PrivateSubreddit:
-						return r.a.createElement("div", null, r.a.createElement(H, null), r.a.createElement(de, null, "r/", y, " ", B._("is a private community", null, {
+					case R.a.PrivateSubreddit:
+						return r.a.createElement("div", null, r.a.createElement(W, null), r.a.createElement(le, null, "r/", O, " ", H._("is a private community", null, {
 							hk: "7zZmq"
-						})), C && C.length && r.a.createElement(V, null, r.a.createElement(Q, null, "r/", y), r.a.createElement(z, null, r.a.createElement("div", null, C))), r.a.createElement(K, null, B._("The moderators of", null, {
+						})), y && y.length && r.a.createElement(z, null, r.a.createElement(X, null, "r/", O), r.a.createElement(Q, null, r.a.createElement("div", null, y))), r.a.createElement(V, null, H._("The moderators of", null, {
 							hk: "3QSrbr"
-						}), " ", "r/", y, " ", B._("have set this community as private.", null, {
+						}), " ", "r/", O, " ", H._("have set this community as private.", null, {
 							hk: "3zhD9F"
-						}), r.a.createElement("br", null), B._("Only approved members can view and take part in its discussions.", null, {
+						}), r.a.createElement("br", null), H._("Only approved members can view and take part in its discussions.", null, {
 							hk: "af0uR"
-						})), r.a.createElement(W, null, O ? r.a.createElement(r.a.Fragment, null, !i && r.a.createElement(b.a, {
+						})), r.a.createElement(q, null, S ? r.a.createElement(r.a.Fragment, null, !i && r.a.createElement(b.a, {
 							eventSource: "content_gate",
 							smallButton: !0,
-							className: U.a.ContributorRequestButton,
+							className: B.a.ContributorRequestButton,
 							isContributorRequestPending: d
-						}), r.a.createElement(oe, {
-							href: `${s.a.redditUrl}/message/compose?to=/r/${y}`,
+						}), r.a.createElement(ie, {
+							href: `${s.a.redditUrl}/message/compose?to=/r/${O}`,
 							redditStyle: !0
-						}, B._("Message Mods", null, {
+						}, H._("Message Mods", null, {
 							hk: "vVe1i"
-						}))) : r.a.createElement(oe, {
-							href: Object(m.a)(l, c),
+						}))) : r.a.createElement(ie, {
+							href: Object(m.a)(c, p),
 							redditStyle: !0
-						}, B._("Sign Up", null, {
+						}, H._("Sign Up", null, {
 							hk: "rvpjy"
-						})), r.a.createElement(J, {
+						})), r.a.createElement(Y, {
 							to: "/",
 							redditStyle: !0
-						}, B._("Browse Reddit", null, {
+						}, H._("Browse Reddit", null, {
 							hk: "1fi8kh"
-						}))), y && r.a.createElement(E.a, {
-							subredditName: y
+						}))), O && r.a.createElement(E.a, {
+							subredditName: O
 						}));
-					case P.a.QuarantinedSubreddit:
-						return r.a.createElement("div", null, r.a.createElement(ne, {
+					case R.a.QuarantinedSubreddit:
+						return r.a.createElement("div", null, r.a.createElement(se, {
 							src: `${s.a.assetPath}/img/content-gate-icons/quarantined.png`
-						}), r.a.createElement(de, null, B._("Are you sure you want to view this community?", null, {
+						}), r.a.createElement(le, null, H._("Are you sure you want to view this community?", null, {
 							hk: "2BtxLM"
-						})), r.a.createElement(K, null, B._("This community is {=quarantined}", [B._param("=quarantined", r.a.createElement(X, {
+						})), r.a.createElement(V, null, H._("This community is {=quarantined}", [H._param("=quarantined", r.a.createElement(J, {
 							href: "https://www.reddithelp.com/en/categories/reddit-101/rules-reporting/account-and-community-restrictions/quarantined-subreddits"
-						}, B._("quarantined", null, {
+						}, H._("quarantined", null, {
 							hk: "2XqfJa"
 						})))], {
 							hk: "2B9i8y"
-						}), r.a.createElement(ce, null, _ ? r.a.createElement(x.a, {
-							content: _,
+						}), r.a.createElement(me, null, k ? r.a.createElement(x.a, {
+							content: k,
 							rtJsonElementProps: {
-								pageLayer: p
+								pageLayer: h
 							}
-						}) : v ? r.a.createElement(f.a, {
-							html: v
-						}) : g || B._("Quarantined communities are dedicated to shocking or highly offensive content. You must be logged in with a verified email to continue.", null, {
+						}) : _ ? r.a.createElement(f.a, {
+							html: _
+						}) : v || H._("Quarantined communities are dedicated to shocking or highly offensive content. You must be logged in with a verified email to continue.", null, {
 							hk: "3kRIzE"
-						})), B._("Are you certain you want to continue?", null, {
+						})), H._("Are you certain you want to continue?", null, {
 							hk: "1gr5Bw"
-						})), r.a.createElement(W, null, ((e, t, n) => {
-							return !(e && e.hasVerifiedEmail) && n ? r.a.createElement(W, null, r.a.createElement(ie, {
+						})), r.a.createElement(q, null, ((e, t, n) => {
+							return !(e && e.hasVerifiedEmail) && n ? r.a.createElement(q, null, r.a.createElement(de, {
 								to: "/",
 								redditStyle: !0
-							}, B._("No Thank You", null, {
+							}, H._("No Thank You", null, {
 								hk: "4B26AR"
-							})), r.a.createElement(Y, {
+							})), r.a.createElement(Z, {
 								href: `${s.a.redditUrl}/prefs/update`,
 								redditStyle: !0
-							}, B._("Verify Email", null, {
+							}, H._("Verify Email", null, {
 								hk: "1893cq"
-							}))) : r.a.createElement(W, null, r.a.createElement(ae, {
+							}))) : r.a.createElement(q, null, r.a.createElement(re, {
 								to: "/",
 								redditStyle: !0
-							}, B._("No Thank You", null, {
+							}, H._("No Thank You", null, {
 								hk: "4B26AR"
-							})), r.a.createElement($, {
+							})), r.a.createElement(ee, {
 								onClick: t,
 								redditStyle: !0
-							}, B._("Continue", null, {
+							}, H._("Continue", null, {
 								hk: "4nU0mS"
 							})))
-						})(O, a, h)));
-					case P.a.SubredditBanned:
-						return r.a.createElement("div", null, r.a.createElement(ne, {
+						})(S, a, g)));
+					case R.a.SubredditBanned:
+						return r.a.createElement("div", null, r.a.createElement(se, {
 							src: `${s.a.assetPath}/img/content-gate-icons/banned.png`
-						}), r.a.createElement(de, null, B._("r/{community name} has been banned from Reddit", [B._param("community name", y)], {
+						}), r.a.createElement(le, null, H._("r/{community name} has been banned from Reddit", [H._param("community name", O)], {
 							hk: "2at9Se"
-						})), (e => r.a.createElement(K, null, e ? r.a.createElement(j, {
-							linkClassName: U.a.Link,
+						})), (e => r.a.createElement(V, null, e ? r.a.createElement(j, {
+							linkClassName: B.a.Link,
 							text: e,
 							parseMdLinks: !0,
 							parseRegularLinks: !0
-						}) : B._("This community has been banned for violating the Reddit rules.", null, {
+						}) : H._("This community has been banned for violating the Reddit rules.", null, {
 							hk: "3iUVxA"
-						})))(t), r.a.createElement(W, null, r.a.createElement(J, {
+						})))(t), r.a.createElement(q, null, r.a.createElement(Y, {
 							to: "/",
 							redditStyle: !0
-						}, B._("Explore Reddit", null, {
+						}, H._("Explore Reddit", null, {
 							hk: "FrUWU"
 						}))));
-					case P.a.SubredditBlockedForLegalReason:
-						return r.a.createElement("div", null, r.a.createElement(ne, {
+					case R.a.SubredditBlockedForLegalReason:
+						return r.a.createElement("div", null, r.a.createElement(se, {
 							src: `${s.a.assetPath}/img/snoomoji/snoo_thoughtful.png`
-						}), r.a.createElement(de, null, B._("This content has been restricted in your country in response to a legal request.", null, {
+						}), r.a.createElement(le, null, H._("This content has been restricted in your country in response to a legal request.", null, {
 							hk: "4bCnhl"
-						})), r.a.createElement(W, null, r.a.createElement(J, {
+						})), r.a.createElement(q, null, r.a.createElement(Y, {
 							to: "/",
 							redditStyle: !0
-						}, B._("Explore Reddit", null, {
+						}, H._("Explore Reddit", null, {
 							hk: "FrUWU"
 						}))));
-					case P.a.SubredditDoesNotExist:
-						return r.a.createElement("div", null, r.a.createElement(se, null), r.a.createElement(de, null, B._("Sorry, there aren’t any communities on Reddit with that name.", null, {
+					case R.a.SubredditDoesNotExist:
+						return r.a.createElement("div", null, r.a.createElement(ae, null), r.a.createElement(le, null, H._("Sorry, there aren’t any communities on Reddit with that name.", null, {
 							hk: "31DRpe"
-						})), r.a.createElement(K, null, B._("This community may have been banned or the community name is incorrect.", null, {
+						})), r.a.createElement(V, null, H._("This community may have been banned or the community name is incorrect.", null, {
 							hk: "1lYMG2"
-						})), r.a.createElement(W, null, O && r.a.createElement(te, {
+						})), r.a.createElement(q, null, S && r.a.createElement(ne, {
 							eventSource: "content_gate"
-						}), r.a.createElement(ee, {
+						}), r.a.createElement(te, {
 							to: "/",
 							redditStyle: !0
-						}, B._("Go Home", null, {
+						}, H._("Go Home", null, {
 							hk: "49p4or"
 						}))));
-					case P.a.ProfileDoesNotExist:
-					case P.a.ProfileDeleted:
-					case P.a.ProfileSuspended:
-					case P.a.ProfileBlockedForLegalReason:
-						return r.a.createElement("div", null, r.a.createElement(ne, {
+					case R.a.ProfileDoesNotExist:
+					case R.a.ProfileDeleted:
+					case R.a.ProfileSuspended:
+					case R.a.ProfileBlockedForLegalReason:
+						return r.a.createElement("div", null, r.a.createElement(se, {
 							src: `${s.a.assetPath}/img/snoomoji/snoo_thoughtful.png`
-						}), r.a.createElement(de, null, (e => {
+						}), r.a.createElement(le, null, (e => {
 							const {
 								contentGateType: t
 							} = e;
 							switch (t) {
-								case P.a.ProfileBlockedForLegalReason:
-									return B._("This content has been restricted in your country in response to a legal request.", null, {
+								case R.a.ProfileBlockedForLegalReason:
+									return H._("This content has been restricted in your country in response to a legal request.", null, {
 										hk: "4eeylO"
 									});
-								case P.a.ProfileDeleted:
-									return B._("This user has deleted their account.", null, {
+								case R.a.ProfileDeleted:
+									return H._("This user has deleted their account.", null, {
 										hk: "2IAF6m"
 									});
-								case P.a.ProfileSuspended:
-									return r.a.createElement(r.a.Fragment, null, B._("This account has been {=suspended} .", [B._param("=suspended", r.a.createElement(X, {
+								case R.a.ProfileSuspended:
+									return r.a.createElement(r.a.Fragment, null, H._("This account has been {=suspended} .", [H._param("=suspended", r.a.createElement(J, {
 										href: "https://www.reddithelp.com/en/categories/reddit-101/rules-reporting/account-and-community-restrictions/suspensions"
-									}, B._("suspended", null, {
+									}, H._("suspended", null, {
 										hk: "3nHGgi"
 									})))], {
 										hk: "4cuTBS"
 									}));
-								case P.a.ProfileDoesNotExist:
-									return r.a.createElement(r.a.Fragment, null, r.a.createElement(de, null, B._("Sorry, nobody on Reddit goes by that name.", null, {
+								case R.a.ProfileDoesNotExist:
+									return r.a.createElement(r.a.Fragment, null, r.a.createElement(le, null, H._("Sorry, nobody on Reddit goes by that name.", null, {
 										hk: "3i02av"
-									})), r.a.createElement(K, null, B._("The person may have been banned or the username is incorrect.", null, {
+									})), r.a.createElement(V, null, H._("The person may have been banned or the username is incorrect.", null, {
 										hk: "36ab4J"
 									})))
 							}
-						})(e)), r.a.createElement(W, null, r.a.createElement(ee, {
+						})(e)), r.a.createElement(q, null, r.a.createElement(te, {
 							to: "/",
 							redditStyle: !0
-						}, B._("Go Home", null, {
+						}, H._("Go Home", null, {
 							hk: "49p4or"
 						}))));
-					case P.a.CustomFeedDoesNotExist:
-						return r.a.createElement("div", null, r.a.createElement(ne, {
+					case R.a.CustomFeedDoesNotExist:
+						return r.a.createElement("div", null, r.a.createElement(se, {
 							src: `${s.a.assetPath}/img/snoomoji/snoo_thoughtful.png`
-						}), r.a.createElement(de, null, B._("Sorry, this custom feed is private or does not exist.", null, {
+						}), r.a.createElement(le, null, H._("Sorry, this custom feed is private or does not exist.", null, {
 							hk: "2Ml4j9"
-						})), r.a.createElement(W, null, r.a.createElement(ee, {
+						})), r.a.createElement(q, null, r.a.createElement(te, {
 							to: "/",
 							redditStyle: !0
-						}, B._("Go Home", null, {
+						}, H._("Go Home", null, {
 							hk: "49p4or"
 						}))));
-					case P.a.PostBlockedForLegalReason:
-						return r.a.createElement("div", null, r.a.createElement(ne, {
+					case R.a.PostBlockedForLegalReason:
+						return r.a.createElement("div", null, r.a.createElement(se, {
 							src: `${s.a.assetPath}/img/snoomoji/snoo_thoughtful.png`
-						}), r.a.createElement(de, null, B._("This content has been restricted in your country in response to a legal request.", null, {
+						}), r.a.createElement(le, null, H._("This content has been restricted in your country in response to a legal request.", null, {
 							hk: "1q1rVU"
-						})), r.a.createElement(W, null, r.a.createElement(J, {
+						})), r.a.createElement(q, null, r.a.createElement(Y, {
 							to: "/",
 							redditStyle: !0
-						}, B._("Browse Reddit", null, {
+						}, H._("Browse Reddit", null, {
 							hk: "1XnYmj"
 						}))))
 				}
 			};
-			t.default = ue(pe(Object(i.i)(e => {
-				const t = Object(a.useContext)(d.a) ? G : q;
+			t.default = pe(be(Object(i.i)(e => {
+				const t = Object(a.useContext)(d.a) ? K : G;
 				return r.a.createElement(t, null, r.a.createElement("div", {
 					"data-testid": "content-gate"
-				}, r.a.createElement(le, null, be(e))), r.a.createElement(g.a, null))
+				}, r.a.createElement(ce, null, he(e))), r.a.createElement(g.a, null))
 			})))
 		},
 		"./src/reddit/components/ContentSurvey/RatingCard.tsx": function(e, t, n) {
@@ -14501,7 +14507,7 @@
 						queryParams: d,
 						startCursor: l,
 						subredditId: c
-					} = this.props, m = d[Ue.n] || null, u = d[Ue.m] || null, p = {
+					} = this.props, m = d[Ue.o] || null, u = d[Ue.n] || null, p = {
 						currentPageUrl: t,
 						action: m,
 						moderator: u,
@@ -25903,4 +25909,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.f504ccebb94f44fcf71e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.98b24e2707046ac4bda2.js.map

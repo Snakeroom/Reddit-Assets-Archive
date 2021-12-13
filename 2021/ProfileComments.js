@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.123fe47e0a3f35f01aa0.js
-// Retrieved at 12/13/2021, 9:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.8ab43aa1c950b3591412.js
+// Retrieved at 12/13/2021, 1:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments"], {
 		"./src/reddit/actions/pages/profileComments/index.ts": function(e, t, s) {
@@ -42,13 +42,13 @@
 				y = s("./src/lib/addAllowQuarantinedParam/index.ts"),
 				C = s("./src/lib/constants/index.ts"),
 				P = s("./src/lib/makeApiRequest/index.ts"),
-				h = s("./src/reddit/helpers/addRedesignIdentifier/index.ts"),
-				w = s("./src/reddit/models/Comment/addProfileImgParam.ts"),
+				w = s("./src/reddit/helpers/addRedesignIdentifier/index.ts"),
+				h = s("./src/reddit/models/Comment/addProfileImgParam.ts"),
 				L = s("./src/reddit/models/RichTextJson/addEmotesAsImagesParam.ts"),
 				v = s("./src/reddit/models/RichTextJson/addRTJParam.ts");
 			const N = (e, t, s, r) => {
-				let o = Object(h.a)(Object(y.a)(Object(L.a)(Object(v.a)(`${x.a.gatewayUrl}/desktopapi/v1/user/${t}/comments`))));
-				return r && (o = Object(w.a)(o)), Object(P.a)(e, {
+				let o = Object(w.a)(Object(y.a)(Object(L.a)(Object(v.a)(`${x.a.gatewayUrl}/desktopapi/v1/user/${t}/comments`))));
+				return r && (o = Object(h.a)(o)), Object(P.a)(e, {
 					data: s,
 					endpoint: o,
 					method: C.jb.GET
@@ -74,8 +74,8 @@
 						profileName: x
 					} = n, y = Object(c.a)(`u_${x}`, i, e.queryParams), {
 						profileCommentsPage: C
-					} = s(), P = C.commentIds[y], h = C.api.error[y], w = C.api.pending[y];
-					if (await t(f.d(x)), w || P && !h) {
+					} = s(), P = C.commentIds[y], w = C.api.error[y], h = C.api.pending[y];
+					if (await t(f.d(x)), h || P && !w) {
 						if (P) {
 							const e = Object(_.q)(s(), {
 								profileName: x
@@ -87,7 +87,7 @@
 						return
 					}
 					const L = {
-						...a()(e.queryParams, [...g.l, g.h]),
+						...a()(e.queryParams, [...g.m, g.i]),
 						sort: i,
 						t: Object(I.a)(i, j)
 					};
@@ -147,7 +147,7 @@
 						dist: b.dist,
 						sort: m,
 						t: l,
-						...a()(i, g.l),
+						...a()(i, g.m),
 						layout: Object(j.Q)(r, {}).toLowerCase()
 					}, Object(k.a)(r));
 					if (C.ok) {
@@ -206,8 +206,8 @@
 				y = s("./src/lib/lessComponent.tsx"),
 				C = s("./src/reddit/components/ClassicPost/index.tsx"),
 				P = s("./src/reddit/components/OverviewChronoList/ListItem.tsx"),
-				h = s("./src/reddit/components/OverviewCommentPost/index.tsx"),
-				w = s("./src/reddit/components/OverviewConversationsPost/Border/index.tsx"),
+				w = s("./src/reddit/components/OverviewCommentPost/index.tsx"),
+				h = s("./src/reddit/components/OverviewConversationsPost/Border/index.tsx"),
 				L = s("./src/reddit/components/OverviewConversationsPost/OverviewConversationsComment/index.tsx"),
 				v = s("./src/reddit/constants/postLayout.ts"),
 				N = s("./src/reddit/contexts/PageLayer/index.tsx"),
@@ -226,7 +226,7 @@
 				}).apply(this, arguments)
 			}
 			const T = y.a.wrapped(C.default, "ClassicPost", _.a),
-				F = y.a.wrapped(h.a, "OverviewCommentPost", _.a),
+				F = y.a.wrapped(w.a, "OverviewCommentPost", _.a),
 				A = Object(N.u)({
 					currentProfileName: N.i,
 					pageLayer: e => e
@@ -264,7 +264,7 @@
 					width: m,
 					...l
 				} = e;
-				return a.a.createElement(D, l, r && a.a.createElement(w.a, {
+				return a.a.createElement(D, l, r && a.a.createElement(h.a, {
 					isFirst: !0
 				}, n === v.g.Large ? a.a.createElement(T, S({}, e, {
 					availableWidth: m,
@@ -273,7 +273,7 @@
 				})) : a.a.createElement(F, S({}, e, {
 					commentId: s,
 					profileName: i
-				}))), a.a.createElement(w.a, {
+				}))), a.a.createElement(h.a, {
 					isLast: o
 				}, a.a.createElement(L.a, {
 					commentId: s,
@@ -432,14 +432,14 @@
 						isEligibleForNsfwSignupUpsellTreatment: c
 					}
 				}),
-				he = Object(i.b)(Pe, (e, t) => ({
+				we = Object(i.b)(Pe, (e, t) => ({
 					onLoadMore: () => e(Object(p.moreItemsRequested)()),
 					onLayoutChange: () => e(Object(p.profileCommentsRequested)({
 						...t.match,
 						queryParams: o()([...Object(m.a)(t.location.search)])
 					}))
 				}));
-			t.default = Ce(he(Object(fe.c)(e => {
+			t.default = Ce(we(Object(fe.c)(e => {
 				const {
 					contentGateInfo: t,
 					over18Prefs: s,
@@ -517,4 +517,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.123fe47e0a3f35f01aa0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.8ab43aa1c950b3591412.js.map
