@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.ca7cb82efddc7a93d56e.js
-// Retrieved at 12/13/2021, 2:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.5284af60888519dd6249.js
+// Retrieved at 12/13/2021, 3:40:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -2351,24 +2351,21 @@
 		},
 		"./src/reddit/components/ModModeFilteredReason/helpers.ts": function(e, t, s) {
 			"use strict";
-			s.d(t, "c", (function() {
+			s.d(t, "a", (function() {
 				return o
-			})), s.d(t, "d", (function() {
-				return i
-			})), s.d(t, "e", (function() {
-				return a
-			})), s.d(t, "a", (function() {
-				return c
 			})), s.d(t, "b", (function() {
-				return d
+				return i
+			})), s.d(t, "c", (function() {
+				return a
+			})), s.d(t, "d", (function() {
+				return c
 			}));
 			var r = s("./src/lib/constants/index.ts"),
 				n = s("./src/reddit/models/ModQueueTrigger/index.ts");
 			const o = e => "string" == typeof e.bannedBy && e.bannedBy === r.l || !!Object(n.b)(e, n.a.AUTOMOD),
 				i = e => !!e.bannedBy && !!e.collapsedBecauseCrowdControl,
 				a = e => !!e.bannedBy && !!Object(n.b)(e, n.a.HATEFUL_CONTENT),
-				c = e => o(e) || i(e) || a(e),
-				d = e => "boolean" == typeof e.bannedBy && e.bannedBy || c(e)
+				c = e => o(e) || i(e) || a(e)
 		},
 		"./src/reddit/components/ModModeFilteredReason/index.tsx": function(e, t, s) {
 			"use strict";
@@ -5628,7 +5625,7 @@
 						showBulkActionCheckbox: x,
 						subredditOrProfile: g,
 						searchQuery: v
-					} = e, O = f ? void 0 : c, y = s || void 0, j = Object(ft.a)(u), E = Object(ct.a)(C), _ = Object(lt.c)(C), S = Object(X.b)({
+					} = e, O = f ? void 0 : c, y = s || void 0, j = Object(ft.a)(u), E = Object(ct.d)(C), _ = Object(lt.c)(C), S = Object(X.b)({
 						crosspost: s,
 						post: C,
 						url: void 0,
@@ -9587,4 +9584,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.ca7cb82efddc7a93d56e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.5284af60888519dd6249.js.map

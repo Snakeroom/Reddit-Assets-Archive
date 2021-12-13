@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModModeBanners.7c21aa834bd689378544.js
-// Retrieved at 12/13/2021, 9:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModModeBanners.0fd57289d5632065bc87.js
+// Retrieved at 12/13/2021, 3:40:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModModeBanners"], {
 		"./src/reddit/actions/comment/index.ts": function(e, t, s) {
@@ -521,19 +521,19 @@
 				var t, s;
 				return n.a.createElement("ul", {
 					className: Object(r.a)(l.a.banner, c.a.banner)
-				}, Object(p.e)(e) && n.a.createElement("li", {
+				}, Object(p.c)(e) && n.a.createElement("li", {
 					className: l.a.listItem
 				}, n.a.createElement(u, {
 					iconName: "mod_mode_fill"
 				}, b._("Blocked by Automatic Filter{reason}", [b._param("reason", O(null === (t = Object(i.b)(e, i.a.HATEFUL_CONTENT)) || void 0 === t ? void 0 : t.message))], {
 					hk: "3IxjRX"
-				}))), Object(p.d)(e) && n.a.createElement("li", {
+				}))), Object(p.b)(e) && n.a.createElement("li", {
 					className: l.a.listItem
 				}, n.a.createElement(u, {
 					iconName: "crowd_control"
 				}, b._("Blocked by Crowd Control", null, {
 					hk: "1gAVrC"
-				}))), Object(p.c)(e) && n.a.createElement("li", {
+				}))), Object(p.a)(e) && n.a.createElement("li", {
 					className: l.a.listItem
 				}, n.a.createElement(u, {
 					iconName: "bot"
@@ -1186,4 +1186,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModModeBanners.7c21aa834bd689378544.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModModeBanners.0fd57289d5632065bc87.js.map
