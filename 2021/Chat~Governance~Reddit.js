@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.c60f585f66aa228644da.js
-// Retrieved at 12/13/2021, 4:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.e4c6f6702e6a39ef68ff.js
+// Retrieved at 12/13/2021, 4:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3327,10 +3327,10 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("154627"),
+				buildNumber: Object(r.c)("154630"),
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
-				buildTimestamp: Object(r.b)("1639428445"),
+				buildTimestamp: Object(r.b)("1639429972"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -5900,14 +5900,14 @@
 					}))
 				},
 				$ = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c0c970e22eb1365edca2f9f67b22c019a2305a143-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c550518f9e4805442a4fef5ff9c5dec0a8f0fed8d-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "0c970e22eb1365edca2f9f67b22c019a2305a143-production",
+						release: "550518f9e4805442a4fef5ff9c5dec0a8f0fed8d-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6424,7 +6424,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "0c970e22eb1365edca2f9f67b22c019a2305a143-production",
+						releaseClient: "550518f9e4805442a4fef5ff9c5dec0a8f0fed8d-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -14749,6 +14749,14 @@
 					}
 				}
 		},
+		"./src/reddit/components/Econ/Prediction/helpers.ts": function(e, t, i) {
+			"use strict";
+			i.d(t, "a", (function() {
+				return r
+			}));
+			var n = i("./src/reddit/models/Prediction/index.ts");
+			const r = e => e === n.b.Cancelled || e === n.b.CancelInProgress
+		},
 		"./src/reddit/components/Flatlist/getFlatlistTooltipId.ts": function(e, t, i) {
 			"use strict";
 			t.a = (e, t, i) => {
@@ -22025,44 +22033,50 @@
 		"./src/reddit/helpers/graphql/normalizePredictionTournamentFromGql/index.ts": function(e, t, i) {
 			"use strict";
 			i.d(t, "a", (function() {
-				return s
+				return o
 			}));
-			var n = i("./src/reddit/helpers/graphql/normalizeDateTime/index.ts"),
-				r = i("./src/reddit/models/Prediction/Tournament/index.ts");
+			var n = i("./src/reddit/components/Econ/Prediction/helpers.ts"),
+				r = i("./src/reddit/helpers/graphql/normalizeDateTime/index.ts"),
+				s = i("./src/reddit/models/Prediction/Tournament/index.ts");
 
-			function s({
+			function o({
 				tournamentId: e,
 				name: t,
 				status: i,
-				themeId: s,
-				tokenIcon: d,
-				totalParticipantsCount: l = null,
-				createdAt: u,
-				endedAt: c,
-				predictions: _,
-				predictionPosts: p,
-				predictionChipPackages: m,
-				latestParticipants: h,
-				isActive: f
+				themeId: o,
+				tokenIcon: a,
+				totalParticipantsCount: u = null,
+				createdAt: c,
+				endedAt: _,
+				predictions: p,
+				predictionPosts: m,
+				predictionChipPackages: h,
+				latestParticipants: f,
+				isActive: b
 			}) {
-				const b = {
+				const g = {
 					tournamentId: e,
 					name: t || "",
-					status: i || r.a.Draft,
-					theme: s,
-					isActive: f
+					status: i || s.a.Draft,
+					theme: o,
+					isActive: b
 				};
-				return void 0 !== d && (b.tokenIconUrl = (null == d ? void 0 : d.url) || null), null !== l && (b.totalParticipantsCount = l), u && (b.createdAt = new Date(Object(n.a)(u)).valueOf()), c && (b.endedAt = new Date(Object(n.a)(c)).valueOf()), _ && (b.totalPredictionsCount = _.length, b.predictions = _.map(o).filter(e => Boolean(e))), p && (b.totalPredictionsCount = p.length, b.predictionPosts = p.filter(e => null !== e).map(e => e.id)), h && (b.latestParticipants = h.map(a)), m && (b.predictionChipPackages = m), b
+				return void 0 !== a && (g.tokenIconUrl = (null == a ? void 0 : a.url) || null), null !== u && (g.totalParticipantsCount = u), c && (g.createdAt = new Date(Object(r.a)(c)).valueOf()), _ && (g.endedAt = new Date(Object(r.a)(_)).valueOf()), p && (g.totalPredictionsCount = p.filter(({
+					status: e
+				}) => !Object(n.a)(e)).length, g.predictions = p.map(d).filter(e => Boolean(e))), m && (g.totalPredictionsCount = m.filter(e => {
+					var t;
+					return !Object(n.a)(null === (t = null == e ? void 0 : e.poll) || void 0 === t ? void 0 : t.predictionStatus)
+				}).length, g.predictionPosts = m.filter(e => null !== e).map(e => e.id)), f && (g.latestParticipants = f.map(l)), h && (g.predictionChipPackages = h), g
 			}
 
-			function o({
+			function d({
 				title: e,
 				createdAt: t,
 				endsAt: i,
-				options: r,
+				options: n,
 				isNsfw: s,
 				totalVoteCount: o,
-				totalStakeAmount: a,
+				totalStakeAmount: d,
 				wonAmount: l,
 				selectedOptionId: u,
 				resolvedOptionId: c,
@@ -22070,14 +22084,14 @@
 				status: p,
 				...m
 			}) {
-				return e && r ? {
+				return e && n ? {
 					title: e,
-					createdAt: new Date(Object(n.a)(t)).valueOf(),
-					endsAt: new Date(Object(n.a)(i)).valueOf(),
-					options: r.map(d),
+					createdAt: new Date(Object(r.a)(t)).valueOf(),
+					endsAt: new Date(Object(r.a)(i)).valueOf(),
+					options: n.map(a),
 					isNSFW: s,
 					totalVoteCount: null != o ? o : null,
-					totalStakeAmount: null != a ? a : null,
+					totalStakeAmount: null != d ? d : null,
 					wonAmount: null != l ? l : null,
 					selectedOptionId: null != u ? u : null,
 					resolvedOptionId: null != c ? c : null,
@@ -22087,7 +22101,7 @@
 				} : null
 			}
 
-			function d({
+			function a({
 				redditorStakeAmount: e,
 				text: t,
 				...i
@@ -22099,7 +22113,7 @@
 				}
 			}
 
-			function a({
+			function l({
 				name: e,
 				profile: t,
 				icon: i
@@ -31233,48 +31247,49 @@
 		"./src/reddit/reducers/posts/models/helpers.ts": function(e, t, i) {
 			"use strict";
 			i.d(t, "g", (function() {
-				return l
-			})), i.d(t, "a", (function() {
 				return u
-			})), i.d(t, "b", (function() {
+			})), i.d(t, "a", (function() {
 				return c
-			})), i.d(t, "p", (function() {
+			})), i.d(t, "b", (function() {
 				return _
-			})), i.d(t, "e", (function() {
+			})), i.d(t, "p", (function() {
 				return p
-			})), i.d(t, "f", (function() {
+			})), i.d(t, "e", (function() {
 				return m
-			})), i.d(t, "o", (function() {
+			})), i.d(t, "f", (function() {
 				return h
-			})), i.d(t, "n", (function() {
+			})), i.d(t, "o", (function() {
 				return f
-			})), i.d(t, "k", (function() {
+			})), i.d(t, "n", (function() {
 				return b
-			})), i.d(t, "l", (function() {
+			})), i.d(t, "k", (function() {
 				return g
-			})), i.d(t, "j", (function() {
+			})), i.d(t, "l", (function() {
 				return w
-			})), i.d(t, "i", (function() {
+			})), i.d(t, "j", (function() {
 				return v
-			})), i.d(t, "d", (function() {
+			})), i.d(t, "i", (function() {
 				return y
-			})), i.d(t, "m", (function() {
+			})), i.d(t, "d", (function() {
 				return E
-			})), i.d(t, "h", (function() {
+			})), i.d(t, "m", (function() {
 				return T
-			})), i.d(t, "c", (function() {
+			})), i.d(t, "h", (function() {
 				return S
+			})), i.d(t, "c", (function() {
+				return O
 			}));
 			var n = i("./node_modules/icepick/icepick.js"),
-				r = i("./src/reddit/helpers/path/index.ts");
+				r = i("./src/reddit/helpers/path/index.ts"),
+				s = i("./src/reddit/components/Econ/Prediction/helpers.ts");
 
-			function s({
+			function o({
 				tournamentId: e,
 				name: t,
 				status: i,
 				themeId: n,
 				totalParticipants: r,
-				predictions: s
+				predictions: o
 			}) {
 				return {
 					tournamentId: e,
@@ -31282,12 +31297,14 @@
 					status: i,
 					theme: n,
 					totalParticipantsCount: r,
-					predictions: s.map(o),
-					totalPredictionsCount: s.length
+					predictions: o.map(d),
+					totalPredictionsCount: o.filter(({
+						status: e
+					}) => !Object(s.a)(e)).length
 				}
 			}
 
-			function o({
+			function d({
 				id: e,
 				title: t,
 				status: i,
@@ -31295,7 +31312,7 @@
 				createdAt: r,
 				votingEndTimestamp: s,
 				userWonAmount: o,
-				totalStakeAmount: a,
+				totalStakeAmount: d,
 				totalVoteCount: l,
 				userSelection: u,
 				isNSFW: c,
@@ -31312,15 +31329,15 @@
 					isNSFW: c,
 					isSpoiler: _,
 					totalVoteCount: l,
-					totalStakeAmount: a,
+					totalStakeAmount: d,
 					wonAmount: o,
 					resolvedOptionId: n,
 					selectedOptionId: u,
-					options: p.map(d)
+					options: p.map(a)
 				}
 			}
 
-			function d({
+			function a({
 				userAmount: e,
 				...t
 			}) {
@@ -31329,8 +31346,8 @@
 					userStakeAmount: e
 				}
 			}
-			var a = i("./src/reddit/models/Media/index.ts");
-			const l = e => {
+			var l = i("./src/reddit/models/Media/index.ts");
+			const u = e => {
 					const {
 						protocol: t,
 						domain: i
@@ -31343,28 +31360,28 @@
 						}
 					}
 				},
-				u = e => t => {
+				c = e => t => {
 					const i = e[t.id];
 					return i && i.events && (t.events = i.events, t.source = i.source), t
 				},
-				c = e => t => {
+				_ = e => t => {
 					const i = e[t.id];
 					return i && i.isSponsored && (t.isSponsored = i.isSponsored), t
 				},
-				_ = (e, t) => e.pollData ? {
+				p = (e, t) => e.pollData ? {
 					...e,
 					pollData: {
 						...e.pollData,
 						...t
 					}
 				} : e,
-				p = ({
+				m = ({
 					post: e,
 					selectedOptionId: t
-				}) => _(e, {
+				}) => p(e, {
 					userSelection: t
 				}),
-				m = ({
+				h = ({
 					post: e,
 					selectedOptionId: t,
 					predictionId: i
@@ -31381,40 +31398,40 @@
 						}
 					}
 				},
-				h = ({
+				f = ({
 					tournamentData: e,
 					...t
 				}) => e ? {
 					...t,
-					predictionTournament: s(e)
+					predictionTournament: o(e)
 				} : t,
-				f = e => e.media && Object(a.E)(e.media) ? {
+				b = e => e.media && Object(l.E)(e.media) ? {
 					...Object(n.unsetIn)(e, ["source"])
 				} : e,
-				b = e => t => {
+				g = e => t => {
 					const i = e[t.id];
 					return (null == i ? void 0 : i.recommendationContext) && !t.recommendationContext && (t.recommendationContext = i.recommendationContext), t
 				},
-				g = e => t => {
-					const i = e[t.id];
-					return t && t.media && i && i.media && Object(a.J)(t.media) && t.media.isRichtextPreview && Object(a.J)(i.media) && !i.media.isRichtextPreview && (t.media.richtextContent = i.media.richtextContent, t.media.isRichtextPreview = !1), t
-				},
 				w = e => t => {
 					const i = e[t.id];
-					return i && i.numDuplicates && (t.numDuplicates = i.numDuplicates), t
+					return t && t.media && i && i.media && Object(l.J)(t.media) && t.media.isRichtextPreview && Object(l.J)(i.media) && !i.media.isRichtextPreview && (t.media.richtextContent = i.media.richtextContent, t.media.isRichtextPreview = !1), t
 				},
 				v = e => t => {
 					const i = e[t.id];
+					return i && i.numDuplicates && (t.numDuplicates = i.numDuplicates), t
+				},
+				y = e => t => {
+					const i = e[t.id];
 					return i && void 0 !== i.isEligibleForLinkedPosts && (t.isEligibleForLinkedPosts = i.isEligibleForLinkedPosts), t
 				},
-				y = e => {
+				E = e => {
 					let t = e.source;
 					return t && t.outboundUrlCreated && (t = {
 						...t,
 						outboundUrlReceived: Date.now()
 					}, e.source = t), e
 				},
-				E = e => {
+				T = e => {
 					const {
 						allAwardings: t,
 						...i
@@ -31426,11 +31443,11 @@
 						awardCountsById: n
 					}
 				},
-				T = e => t => {
+				S = e => t => {
 					for (let i = 0; i < e.length; i++) t = e[i](t);
 					return t
 				},
-				S = (e, t) => ({
+				O = (e, t) => ({
 					...e,
 					events: t.events,
 					source: t.source
@@ -44830,4 +44847,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.c60f585f66aa228644da.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.e4c6f6702e6a39ef68ff.js.map
