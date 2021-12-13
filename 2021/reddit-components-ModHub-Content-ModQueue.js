@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-Content-ModQueue.f432fe056a7b93641fd2.js
-// Retrieved at 12/9/2021, 7:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-Content-ModQueue.19b49b5c0807f171d4f2.js
+// Retrieved at 12/13/2021, 9:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-Content-ModQueue"], {
 		"./src/reddit/components/Comments/CompactUnthreadedComment/index.m.less": function(e, t, s) {
@@ -168,7 +168,7 @@
 					currentPage: e => e.platform.currentPage,
 					origin: O.j
 				});
-			var v = Object(i.b)(T)(e => r.a.createElement("div", null, r.a.createElement(_.a, {
+			var L = Object(i.b)(T)(e => r.a.createElement("div", null, r.a.createElement(_.a, {
 					onClick: e.sendEventWithName("content_type_both"),
 					to: Object(y.a)(`${e.origin}${e.currentPage.url}`, ["after", "before", "only", "page"])
 				}, r.a.createElement(P, {
@@ -197,13 +197,13 @@
 					}),
 					isSelected: e.postTypeFilter === o.Comments
 				})))),
-				L = s("./src/reddit/contexts/PageLayer/index.tsx"),
+				v = s("./src/reddit/contexts/PageLayer/index.tsx"),
 				N = s("./src/reddit/controls/SearchBar/index.tsx"),
 				F = s("./src/reddit/selectors/moderatorPermissions.ts"),
 				w = s("./src/reddit/components/ModQueueList/SubredditSelectorDropdown.m.less"),
 				B = s.n(w);
-			const M = Object(L.u)({
-					currentPageUrl: L.f
+			const M = Object(v.u)({
+					currentPageUrl: v.f
 				}),
 				Q = Object(l.c)({
 					moderatingSubreddits: F.n,
@@ -366,7 +366,7 @@
 					})), r.a.createElement(H, {
 						isOpen: e.isPostTypeFilterDropdownOpen,
 						tooltipId: J
-					}, r.a.createElement(v, {
+					}, r.a.createElement(L, {
 						postTypeFilter: e.postTypeFilter,
 						sendEventWithName: e.sendEventWithName
 					}))), r.a.createElement(Y, null))
@@ -479,8 +479,8 @@
 				j = s("./src/reddit/helpers/isPost.ts"),
 				P = s("./src/reddit/helpers/postComponentForLayout/index.tsx"),
 				T = s("./src/lib/logs/console.ts"),
-				v = s("./src/lib/objectSelector/index.ts"),
-				L = s("./src/reddit/components/Comments/Comment/ModToolsFlatlist/index.tsx"),
+				L = s("./src/lib/objectSelector/index.ts"),
+				v = s("./src/reddit/components/Comments/Comment/ModToolsFlatlist/index.tsx"),
 				N = s("./src/reddit/components/Comments/UnthreadedComment/index.tsx"),
 				F = s("./src/reddit/components/Comments/UnthreadedCommentContainer/index.tsx"),
 				w = s("./src/reddit/components/Comments/UnthreadedCommentDashWrapper/index.tsx"),
@@ -500,12 +500,12 @@
 				K = p.a.wrapped(U.a, "BulkActionCheckbox", z.a),
 				J = p.a.div("CommentColumn", z.a),
 				Z = p.a.div("VoteColumn", z.a),
-				G = p.a.wrapped(L.a, "ModToolsFlatlist", z.a),
+				G = p.a.wrapped(v.a, "ModToolsFlatlist", z.a),
 				Y = p.a.wrapped(A.a, "Votes", z.a),
 				$ = p.a.div("CommentContentWrapper", z.a),
 				ee = p.a.div("ParentPostTitle", z.a),
 				te = p.a.div("CommentParentWrapper", z.a),
-				se = Object(v.b)(e => ({
+				se = Object(L.b)(e => ({
 					renderingObjectInfo: e.comment
 				}));
 			var oe = Object(N.b)(e => {
@@ -570,7 +570,7 @@
 				de = p.a.wrapped(B.a, "Meta", re.a),
 				ce = p.a.div("CommentParentWrapper", re.a),
 				me = p.a.div("CommentContentWrapper", re.a),
-				pe = Object(v.b)(e => ({
+				pe = Object(L.b)(e => ({
 					renderingObjectInfo: e.comment
 				}));
 			var ue = Object(N.b)(p.a.wrapped(e => {
@@ -615,7 +615,7 @@
 					}), l.a.createElement(de, {
 						comment: s,
 						flair: n
-					}))), c && !s.isDeleted && l.a.createElement(L.a, {
+					}))), c && !s.isDeleted && l.a.createElement(v.a, {
 						comment: s
 					})))
 				}, "Component", re.a)),
@@ -638,14 +638,14 @@
 				Oe = s.n(_e);
 			const {
 				fbt: Ie
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), je = `${Se.a.assetPath}/img/snoomoji/cat_blep.png`, Pe = p.a.div("Container", Oe.a), Te = p.a.div("Image", Oe.a), ve = p.a.div("Title", Oe.a), Le = p.a.div("Text", Oe.a);
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), je = `${Se.a.assetPath}/img/snoomoji/cat_blep.png`, Pe = p.a.div("Container", Oe.a), Te = p.a.div("Image", Oe.a), Le = p.a.div("Title", Oe.a), ve = p.a.div("Text", Oe.a);
 			var Ne = () => l.a.createElement(Pe, null, l.a.createElement(Te, {
 					style: {
 						backgroundImage: `url(${je})`
 					}
-				}), l.a.createElement(ve, null, Ie._("The queue is clean!", null, {
+				}), l.a.createElement(Le, null, Ie._("The queue is clean!", null, {
 					hk: "3d14fC"
-				})), l.a.createElement(Le, null, Ie._("Kitteh is pleased", null, {
+				})), l.a.createElement(ve, null, Ie._("Kitteh is pleased", null, {
 					hk: "3NSHqg"
 				}))),
 				Fe = s("./src/reddit/components/PostList/Placeholder.tsx");
@@ -970,7 +970,7 @@
 					queryParams: O.V,
 					pageLayer: e => e
 				}),
-				vt = Object(c.c)({
+				Lt = Object(c.c)({
 					currentPage: e => e.platform.currentPage,
 					isModQueueListingPending: Ee.b,
 					loadMore: Ee.d,
@@ -979,7 +979,7 @@
 					selectedItems: Ee.f,
 					subredditId: (e, t) => t.subredditName ? Object(ye.C)(e, t.subredditName) : null
 				}),
-				Lt = Object(d.b)(vt, e => ({
+				vt = Object(d.b)(Lt, e => ({
 					addSelectedItems: t => e(Object(u.a)({
 						ids: t
 					})),
@@ -990,7 +990,7 @@
 						ids: t
 					})),
 					fireAdPixelsOfType: (t, s) => e(Object(b.z)(t, s)),
-					openPost: t => e(Object(b.K)(t))
+					openPost: t => e(Object(b.L)(t))
 				})),
 				Nt = e => e.page ? parseInt(e.page, 10) : Ce.b,
 				Ft = e => Nt(e) + 1,
@@ -1140,7 +1140,7 @@
 					}), e.modQueueListingItems && e.modQueueListingItems.length ? this.renderItems(e) : e.modQueueListingItems ? l.a.createElement(Ne, null) : e.isModQueueListingPending ? l.a.createElement(Me, null) : null)
 				}
 			}
-			t.a = Tt(Lt(Dt))
+			t.a = Tt(vt(Dt))
 		},
 		"./src/reddit/components/PaginationButtons/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -1355,4 +1355,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-Content-ModQueue.f432fe056a7b93641fd2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-Content-ModQueue.19b49b5c0807f171d4f2.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.158fb564828ac1a7745b.js
-// Retrieved at 12/9/2021, 11:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.ef71a23a3e54e04d032f.js
+// Retrieved at 12/13/2021, 9:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -2960,33 +2960,46 @@
 			"use strict";
 			var r = s("./node_modules/react/index.js"),
 				n = s.n(r),
-				i = s("./src/lib/classNames/index.ts"),
-				a = s("./src/config.ts"),
-				o = s("./src/reddit/controls/InternalLink/index.tsx"),
-				d = s("./src/reddit/hooks/useClickSourceData.ts"),
-				c = s("./src/reddit/components/AuthorLink/index.m.less"),
-				l = s.n(c);
+				i = s("./node_modules/react-redux/es/index.js"),
+				a = s("./src/lib/classNames/index.ts"),
+				o = s("./src/config.ts"),
+				d = s("./src/reddit/actions/post.ts"),
+				c = s("./src/reddit/controls/InternalLink/index.tsx"),
+				l = s("./src/reddit/hooks/useClickSourceData.ts"),
+				u = s("./src/reddit/selectors/experiments/loggedOutBlockingInterstitial.ts"),
+				m = s("./src/reddit/components/AuthorLink/index.m.less"),
+				p = s.n(m);
 			t.a = e => {
-				const t = Object(i.a)(e.className, l.a.authorLinkStyles, {
-						[l.a.isLivestreaming]: e.isLivestreaming,
-						[l.a.isStrong]: e.isStrong,
-						[l.a.isUnstyled]: e.isUnstyled
+				const t = Object(a.a)(e.className, p.a.authorLinkStyles, {
+						[p.a.isLivestreaming]: e.isLivestreaming,
+						[p.a.isStrong]: e.isStrong,
+						[p.a.isUnstyled]: e.isUnstyled
 					}),
-					s = Object(d.a)();
+					s = Object(l.a)(),
+					r = Object(i.d)(),
+					m = Object(i.e)(u.b),
+					b = t => {
+						if (m) {
+							const s = e.isExternal || e.isLivestreaming || e.forceOpenInNewTab ? `${o.a.redditUrl}/user/${e.author}` : `/user/${e.author}/`;
+							t.preventDefault(), r(Object(d.cb)(s))
+						}
+					};
 				return e.isExternal || e.isLivestreaming || e.forceOpenInNewTab ? n.a.createElement("a", {
 					className: t,
-					href: `${a.a.redditUrl}/user/${e.author}`,
+					href: `${o.a.redditUrl}/user/${e.author}`,
 					rel: "noopener noreferrer",
-					target: "_blank"
+					target: "_blank",
+					onClick: b
 				}, e.children) : e.isAuthorDeleted ? n.a.createElement("span", {
-					className: Object(i.a)(l.a.deletedAuthorLink, e.className)
-				}, e.children) : n.a.createElement(o.a, {
+					className: Object(a.a)(p.a.deletedAuthorLink, e.className)
+				}, e.children) : n.a.createElement(c.a, {
 					className: t,
 					style: e.style,
 					to: {
 						pathname: `/user/${e.author}/`,
 						state: s
-					}
+					},
+					onClick: b
 				}, e.children)
 			}
 		},
@@ -5458,7 +5471,8 @@
 					}
 				}, D(e)) : e.isListing && e.postPermalink ? i.a.createElement(o.a, {
 					target: e.shouldOpenPostInNewTab ? "_blank" : void 0,
-					to: e.sendGoodVisitEvent ? Object(m.a)(e.postPermalink, void 0, t) : Object(m.a)(e.postPermalink)
+					to: e.sendGoodVisitEvent ? Object(m.a)(e.postPermalink, void 0, t) : Object(m.a)(e.postPermalink),
+					onClick: e.onPostMediaClick
 				}, D(e)) : D(e)
 			});
 			const P = (e, t) => i.a.createElement(S, {
@@ -6107,7 +6121,7 @@
 				const w = Object(n.useCallback)(() => x(Object(m.f)(e ? "user_hovercard" : "profile_overview", t)), [e, x, t]);
 				return i.a.createElement(u.t, {
 					onClick: () => {
-						s ? (x(m.g), v && y === b.a.notVoted && _(Object(d.db)(v))) : w();
+						s ? (x(m.g), v && y === b.a.notVoted && _(Object(d.jb)(v))) : w();
 						const e = s ? "postify" : "copy";
 						_(Object(c.b)({
 							clickSource: k,
@@ -8322,12 +8336,12 @@
 						rtJsonElementProps: i
 					});
 					switch (r) {
-						case h.cf.SmIcon:
+						case h.ff.SmIcon:
 							return n.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: i
 							});
-						case h.cf.SmIconHc:
+						case h.ff.SmIconHc:
 							return n.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -9356,10 +9370,10 @@
 					selectedTemplateId: r
 				})),
 				handleVote: s => {
-					const r = s === d.a.upvoted ? Object(i.db)(t) : Object(i.w)(t);
+					const r = s === d.a.upvoted ? Object(i.jb)(t) : Object(i.w)(t);
 					e(r)
 				},
-				onIgnoreReports: () => e(Object(i.Z)(t)),
+				onIgnoreReports: () => e(Object(i.fb)(t)),
 				onOpenReportsDropdown: t => e(Object(o.h)({
 					tooltipId: t
 				}))
@@ -10445,9 +10459,9 @@
 			var r = s("./src/reddit/constants/experiments.ts"),
 				n = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = s("./src/reddit/selectors/user.ts");
-			const a = e => r.tc.Enabled === Object(n.c)(e, {
+			const a = e => r.wc.Enabled === Object(n.c)(e, {
 				experimentEligibilitySelector: i.K,
-				experimentName: r.sc
+				experimentName: r.vc
 			})
 		},
 		"./src/reddit/selectors/gold/powerups/flairs.ts": function(e, t, s) {
@@ -10590,12 +10604,12 @@
 				d = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: o,
-						experimentName: r.We
+						experimentName: r.Ze
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === r.cf.SmIcon || t === r.cf.SmIconHc
+					return t === r.ff.SmIcon || t === r.ff.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -10768,4 +10782,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.158fb564828ac1a7745b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.ef71a23a3e54e04d032f.js.map

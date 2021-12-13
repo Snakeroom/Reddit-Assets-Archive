@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.2166ccfc31a2fdd285b6.js
-// Retrieved at 12/9/2021, 7:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.da789dbb2bb3a060d907.js
+// Retrieved at 12/13/2021, 9:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -2199,121 +2199,127 @@
 				d = s("./src/lib/permalinkToOverlayLocation/index.ts"),
 				l = s("./src/reddit/actions/post.ts"),
 				m = s("./src/reddit/controls/OutboundLink/index.tsx"),
-				u = s("./src/reddit/helpers/postHasSelfText/index.ts"),
-				p = s("./src/reddit/icons/fonts/index.tsx"),
-				f = s("./src/reddit/models/Media/index.ts"),
-				x = s("./src/telemetry/models/Outbound.ts"),
-				h = s("./src/reddit/components/ExpandoButton/index.m.less"),
-				v = s.n(h);
-			const b = Object(a.b)(null, (e, t) => ({
+				u = s("./src/reddit/helpers/path/index.ts"),
+				p = s("./src/reddit/helpers/postHasSelfText/index.ts"),
+				f = s("./src/reddit/icons/fonts/index.tsx"),
+				x = s("./src/reddit/models/Media/index.ts"),
+				h = s("./src/reddit/selectors/experiments/loggedOutBlockingInterstitial.ts"),
+				v = s("./src/telemetry/models/Outbound.ts"),
+				b = s("./src/reddit/components/ExpandoButton/index.m.less"),
+				g = s.n(b);
+			const w = Object(a.b)(null, (e, t) => ({
 					toggle: () => e(Object(l.x)({
 						postId: t.post.id
-					}))
+					})),
+					showModalOnPostLinkClick: t => e(Object(l.ab)(Object(u.b)(t.permalink), t.id))
 				})),
-				g = (e, t = !1, s) => {
-					const n = Object(c.a)(v.a.icon, v.a.hideOnHover);
-					if (t) return r.a.createElement(p.a, {
+				y = (e, t = !1, s) => {
+					const n = Object(c.a)(g.a.icon, g.a.hideOnHover);
+					if (t) return r.a.createElement(f.a, {
 						name: "crosspost",
 						className: n
 					});
-					if (s.pollData) return r.a.createElement(p.a, {
+					if (s.pollData) return r.a.createElement(f.a, {
 						name: "poll_post",
 						className: n
 					});
-					if (s.audioRoom) return r.a.createElement(p.a, {
+					if (s.audioRoom) return r.a.createElement(f.a, {
 						name: "audio",
 						className: n
 					});
 					switch (e) {
-						case f.o.GIFVIDEO:
-							return r.a.createElement(p.a, {
+						case x.o.GIFVIDEO:
+							return r.a.createElement(f.a, {
 								name: "gif_post",
 								className: n
 							});
-						case f.o.IMAGE:
-							return r.a.createElement(p.a, {
+						case x.o.IMAGE:
+							return r.a.createElement(f.a, {
 								name: "image_post",
 								className: n
 							});
-						case f.o.TEXT:
-						case f.o.RTJSON:
-							return r.a.createElement(p.a, {
+						case x.o.TEXT:
+						case x.o.RTJSON:
+							return r.a.createElement(f.a, {
 								name: "text_post",
 								className: n
 							});
-						case f.o.VIDEO:
-							return r.a.createElement(p.a, {
+						case x.o.VIDEO:
+							return r.a.createElement(f.a, {
 								name: "video_post",
 								className: n
 							});
-						case f.o.GALLERY:
-							return r.a.createElement(p.a, {
+						case x.o.GALLERY:
+							return r.a.createElement(f.a, {
 								name: "media_gallery",
 								className: n
 							});
-						case f.o.EMBED:
+						case x.o.EMBED:
 						default:
-							return r.a.createElement(p.a, {
+							return r.a.createElement(f.a, {
 								name: "embed",
 								className: n
 							})
 					}
 				};
-			t.a = b(e => {
+			t.a = w(e => {
 				const {
 					className: t,
 					crosspost: s,
 					enableCrosspostIcon: o,
-					isCommentsPage: a,
-					isExpanded: l,
-					post: f,
-					toggle: h,
-					useMediaIcons: b
-				} = e, w = s || f, y = o && !!s;
-				return w.media && !(("rtjson" === w.media.type || "text" === w.media.type || "liveaudio" === w.media.type) && !Object(u.a)(w)) || !!f.pollData ? r.a.createElement("button", {
-					"aria-expanded": !!l,
+					isCommentsPage: l,
+					isExpanded: u,
+					post: x,
+					toggle: b,
+					useMediaIcons: w
+				} = e, E = s || x, O = Object(a.e)(h.b), j = t => {
+					O && (t.preventDefault(), e.showModalOnPostLinkClick(E))
+				}, k = o && !!s;
+				return E.media && !(("rtjson" === E.media.type || "text" === E.media.type || "liveaudio" === E.media.type) && !Object(p.a)(E)) || !!x.pollData ? r.a.createElement("button", {
+					"aria-expanded": !!u,
 					"aria-haspopup": !0,
 					"aria-label": n.fbt._("Expand content", null, {
 						hk: "1e35IG"
 					}),
-					className: Object(c.a)(t, v.a.outer),
-					"data-click-id": l ? "expando_close" : "expando_open",
-					onClick: h
-				}, l ? r.a.createElement(p.a, {
+					className: Object(c.a)(t, g.a.outer),
+					"data-click-id": u ? "expando_close" : "expando_open",
+					onClick: b
+				}, u ? r.a.createElement(f.a, {
 					name: "collapse",
-					className: v.a.icon
-				}) : b ? r.a.createElement(r.a.Fragment, null, g(w.media && w.media.type, y, f), r.a.createElement(p.a, {
+					className: g.a.icon
+				}) : w ? r.a.createElement(r.a.Fragment, null, y(E.media && E.media.type, k, x), r.a.createElement(f.a, {
 					name: "expand",
-					className: Object(c.a)(v.a.icon, v.a.showOnHover)
-				})) : r.a.createElement(p.a, {
+					className: Object(c.a)(g.a.icon, g.a.showOnHover)
+				})) : r.a.createElement(f.a, {
 					name: "expand",
-					className: v.a.icon
-				})) : w.source && w.source.url ? r.a.createElement(m.b, {
+					className: g.a.icon
+				})) : E.source && E.source.url ? r.a.createElement(m.b, {
 					"aria-label": n.fbt._("Open external content", null, {
 						hk: "2FfpSI"
 					}),
-					className: Object(c.a)(t, v.a.outer),
+					className: Object(c.a)(t, g.a.outer),
 					"data-click-id": "expando_open",
-					href: w.source.url,
-					isSponsored: f.isSponsored,
-					postId: f.id,
-					source: f.source,
-					sourceElement: a ? x.SourceElement.PostImage : x.SourceElement.ListingPostImage,
+					href: E.source.url,
+					isSponsored: x.isSponsored,
+					postId: x.id,
+					source: x.source,
+					sourceElement: l ? v.SourceElement.PostImage : v.SourceElement.ListingPostImage,
 					target: "_blank"
-				}, r.a.createElement(p.a, {
+				}, r.a.createElement(f.a, {
 					name: "external_link",
-					className: Object(c.a)(v.a.icon, v.a.outboundLinkIcon)
+					className: Object(c.a)(g.a.icon, g.a.outboundLinkIcon)
 				})) : r.a.createElement(i.a, {
 					"aria-label": n.fbt._("View content", null, {
 						hk: "24KLWF"
 					}),
-					className: Object(c.a)(t, v.a.outer),
+					className: Object(c.a)(t, g.a.outer),
 					"data-click-id": "expando_open",
-					to: Object(d.a)(w.permalink),
-					rel: "nofollow"
-				}, r.a.createElement(p.a, {
+					to: Object(d.a)(E.permalink),
+					rel: "nofollow",
+					onClick: j
+				}, r.a.createElement(f.a, {
 					name: "text_post",
-					className: v.a.icon
+					className: g.a.icon
 				}))
 			})
 		},
@@ -2814,10 +2820,10 @@
 					postId: t
 				}) => ({
 					handleVote: s => {
-						const n = s === i.a.upvoted ? Object(r.db)(t) : Object(r.w)(t);
+						const n = s === i.a.upvoted ? Object(r.jb)(t) : Object(r.w)(t);
 						e(n)
 					},
-					onIgnoreReports: () => e(Object(r.Z)(t)),
+					onIgnoreReports: () => e(Object(r.fb)(t)),
 					onOpenReportsDropdown: t => e(Object(a.h)({
 						tooltipId: t
 					}))
@@ -3845,13 +3851,13 @@
 				r = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				a = s("./src/reddit/selectors/posts.ts");
 			const i = e => Object(r.c)(e, {
-					experimentName: o.we,
+					experimentName: o.ze,
 					experimentEligibilitySelector: r.a
 				}),
-				c = (e, t) => t === o.Fe.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				c = (e, t) => t === o.Ie.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				d = Object(n.a)(a.H, i, (e, t) => c(e, t));
 			Object(n.a)((e, t) => t, i, (e, t) => c(e, t))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.2166ccfc31a2fdd285b6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.da789dbb2bb3a060d907.js.map

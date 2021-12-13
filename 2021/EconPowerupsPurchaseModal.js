@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.12eab107c6f263d8c750.js
-// Retrieved at 12/9/2021, 11:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.fdb1025a72bd5a563978.js
+// Retrieved at 12/13/2021, 9:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsPurchaseModal"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -1198,7 +1198,7 @@
 			var Q = r("./src/reddit/components/PowerupsSidebar/common/utils.ts"),
 				H = r("./src/reddit/components/Econ/PowerupsPurchaseModal/PowerupsPurchase/PowerupsProgressControl/PowerupsCount/index.m.less"),
 				Y = r.n(H);
-			var J = function(e) {
+			var X = function(e) {
 					const {
 						className: t,
 						onChange: r,
@@ -1226,8 +1226,8 @@
 						onClick: () => i(1)
 					})))
 				},
-				X = r("./src/reddit/components/Econ/PowerupsPurchaseModal/PowerupsPurchase/PowerupsProgressControl/ProgressBar/index.m.less"),
-				z = r.n(X);
+				J = r("./src/reddit/components/Econ/PowerupsPurchaseModal/PowerupsPurchase/PowerupsProgressControl/ProgressBar/index.m.less"),
+				z = r.n(J);
 			const {
 				fbt: K
 			} = r("./node_modules/fbt/lib/FbtPublic.js");
@@ -1286,7 +1286,7 @@
 					className: ee.a.bar,
 					count: o.count,
 					maxCount: l
-				}), a.a.createElement(J, {
+				}), a.a.createElement(X, {
 					className: ee.a.count,
 					style: {
 						left: `${100*u}%`
@@ -2467,7 +2467,7 @@
 				p = r("./node_modules/react-redux/es/index.js"),
 				b = r("./src/reddit/constants/experiments.ts"),
 				f = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const h = Object(f.a)(b.Jc);
+			const h = Object(f.a)(b.Mc);
 			let y = null;
 
 			function g() {
@@ -2613,4 +2613,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.12eab107c6f263d8c750.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.fdb1025a72bd5a563978.js.map

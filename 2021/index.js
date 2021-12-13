@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index.ebd65204789f84fddf6a.js
-// Retrieved at 12/9/2021, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index.aca58aec0cacd060337c.js
+// Retrieved at 12/13/2021, 9:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index"], {
 		"./src/reddit/components/Econ/Audio/MuteIcon.tsx": function(e, t, n) {
@@ -461,7 +461,7 @@
 								pollId: m,
 								tournamentId: e,
 								tournamentPostId: n.id
-							})), c && h < U.a.upvoted && (o(Object(F.db)(f)), o(Object(F.db)(m)), u()), g(!1), P(null), j(!0)
+							})), c && h < U.a.upvoted && (o(Object(F.jb)(f)), o(Object(F.jb)(m)), u()), g(!1), P(null), j(!0)
 						} catch (a) {
 							g(!1), P(null), l(X._("Error: Failed to make prediction, please try again later", null, {
 								hk: "1tECsx"
@@ -977,4 +977,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.ebd65204789f84fddf6a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.aca58aec0cacd060337c.js.map

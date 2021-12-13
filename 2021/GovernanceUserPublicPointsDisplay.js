@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceUserPublicPointsDisplay.5d5f9b511c0dc0b46ec1.js
-// Retrieved at 11/11/2021, 4:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceUserPublicPointsDisplay.c768d43519ba86dc87c3.js
+// Retrieved at 12/13/2021, 9:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceUserPublicPointsDisplay"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, n) {
@@ -81,9 +81,9 @@
 			})), n.d(t, "s", (function() {
 				return y
 			})), n.d(t, "t", (function() {
-				return x
-			})), n.d(t, "u", (function() {
 				return j
+			})), n.d(t, "u", (function() {
+				return x
 			})), n.d(t, "v", (function() {
 				return h
 			})), n.d(t, "w", (function() {
@@ -110,8 +110,8 @@
 				v = "GOVERNANCE__TRANSFER_FAILURE",
 				N = "GOVERNANCE__TRANSFER_MODAL_OPENED",
 				y = "GOVERNANCE__TRANSFER_PENDING",
-				x = "GOVERNANCE__TRANSFER_SUCCESS",
-				j = "GOVERNANCE__WALLETS_FETCH_FAILURE",
+				j = "GOVERNANCE__TRANSFER_SUCCESS",
+				x = "GOVERNANCE__WALLETS_FETCH_FAILURE",
 				h = "GOVERNANCE__WALLETS_FETCH_PENDING",
 				T = "GOVERNANCE__WALLETS_FETCH_SUCCESS",
 				I = "GOVERNANCE__WALLET_REGISTRATION_MODAL_OPENED"
@@ -140,7 +140,7 @@
 			})), n.d(t, "b", (function() {
 				return y
 			})), n.d(t, "c", (function() {
-				return j
+				return x
 			})), n.d(t, "f", (function() {
 				return C
 			})), n.d(t, "g", (function() {
@@ -171,8 +171,8 @@
 				v = n("./src/reddit/actions/governance/errorToast.ts");
 			const N = Object(o.a)(E.b),
 				y = Object(o.a)(E.c),
-				x = Object(o.a)(E.e),
-				j = (Object(o.a)(E.f), Object(o.a)(E.g), Object(o.a)(E.h)),
+				j = Object(o.a)(E.e),
+				x = (Object(o.a)(E.f), Object(o.a)(E.g), Object(o.a)(E.h)),
 				h = Object(o.a)(E.i),
 				T = Object(o.a)(E.j),
 				I = Object(o.a)(E.k),
@@ -210,7 +210,7 @@
 							const {
 								options: e
 							} = i.body.data.updatePostPollVoteState.poll;
-							n(x({
+							n(j({
 								pollId: d.id,
 								optionId: t,
 								options: e
@@ -221,7 +221,7 @@
 							const {
 								postId: e
 							} = d, t = o.posts.models[e];
-							t && t.voteState === _.a.notVoted && n(Object(c.db)(e))
+							t && t.voteState === _.a.notVoted && n(Object(c.jb)(e))
 						}
 					} else n(h({
 						pollId: e,
@@ -978,4 +978,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceUserPublicPointsDisplay.5d5f9b511c0dc0b46ec1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceUserPublicPointsDisplay.c768d43519ba86dc87c3.js.map

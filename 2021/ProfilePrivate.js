@@ -1,11 +1,11 @@
-// https://www.redditstatic.com/desktop2x/ProfilePrivate.388af72e3c78054621d6.js
-// Retrieved at 12/9/2021, 10:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePrivate.b1e10ce5cbec405121b9.js
+// Retrieved at 12/13/2021, 9:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePrivate"], {
 		"./src/reddit/actions/pages/profilePrivate/index.ts": function(e, t, i) {
 			"use strict";
 			i.r(t), i.d(t, "privateListingPending", (function() {
-				return L
+				return R
 			})), i.d(t, "privateMixedListingLoaded", (function() {
 				return G
 			})), i.d(t, "privatePostListingLoaded", (function() {
@@ -168,7 +168,7 @@
 							return t.body.data
 					}
 				},
-				R = e => {
+				L = e => {
 					switch (e.listingType) {
 						case h.b.Downvoted:
 						case h.b.Hidden:
@@ -179,7 +179,7 @@
 							return O(e)
 					}
 				},
-				L = Object(s.a)(k.b),
+				R = Object(s.a)(k.b),
 				G = Object(s.a)(k.c),
 				A = Object(s.a)(k.i),
 				B = Object(s.a)(k.a),
@@ -192,7 +192,7 @@
 					const {
 						account: m
 					} = a.user, b = !m, g = !(m && m.displayText && a.profiles.moderated.models[m.displayText.toLowerCase()] && a.profiles.moderated.models[m.displayText.toLowerCase()].length);
-					t(L({
+					t(R({
 						listingKey: c
 					}));
 					const f = {
@@ -203,7 +203,7 @@
 						},
 						v = await T[l](s.gqlContext(), f);
 					if (v.ok && v.body) {
-						const e = R({
+						const e = L({
 							rawData: F(l, v),
 							listingType: l,
 							includeIdentity: b,
@@ -239,7 +239,7 @@
 					}));
 					const l = await T[e](s.gqlContext(), n);
 					if (l.ok && l.body) {
-						const i = R({
+						const i = L({
 							includeIdentity: !1,
 							includeModerated: !1,
 							listingType: e,
@@ -300,13 +300,13 @@
 				C = Object(r.b)(P, (e, t) => ({
 					onBottomViewed: (t, i) => e(l.c(t, i)),
 					openPost: t => {
-						e(n.K(t))
+						e(n.L(t))
 					},
 					trackOnPostEnteredViewport: (t, i) => {
-						Object(u.a)(t) && e(n.N(t))
+						Object(u.a)(t) && e(n.O(t))
 					},
 					trackOnPostExitedViewport: (t, i, s) => {
-						Object(u.a)(t) && e(n.O(t, s))
+						Object(u.a)(t) && e(n.P(t, s))
 					},
 					fireAdPixelsOfType: o.a
 				}), (e, t, i) => ({
@@ -353,7 +353,7 @@
 					postInfo: j,
 					score: O,
 					voteState: x
-				} = e, k = "ADMIN" === g, S = "MODERATOR" === g, _ = d ? Object(o.b)(d) : void 0, T = i && i.__typename === c.c.AvailableRedditor && i.isCakeDayNow || !1, F = i && i.__typename === c.c.AvailableRedditor && i.isPremiumMember || !1, R = {
+				} = e, k = "ADMIN" === g, S = "MODERATOR" === g, _ = d ? Object(o.b)(d) : void 0, T = i && i.__typename === c.c.AvailableRedditor && i.isCakeDayNow || !1, F = i && i.__typename === c.c.AvailableRedditor && i.isPremiumMember || !1, L = {
 					allAwardings: _,
 					associatedAward: t,
 					author: i && Object(n.b)(i) || s.E,
@@ -396,7 +396,7 @@
 					userReports: [],
 					isSystem: !1
 				};
-				return e.postInfo && Object(l.n)(e.postInfo) ? R.subredditId = e.postInfo.subreddit.id : e.postInfo && Object(l.l)(e.postInfo) && (R.subredditId = e.postInfo.profile.id), R
+				return e.postInfo && Object(l.n)(e.postInfo) ? L.subredditId = e.postInfo.subreddit.id : e.postInfo && Object(l.l)(e.postInfo) && (L.subredditId = e.postInfo.profile.id), L
 			}
 		},
 		"./src/reddit/pages/ProfilePrivate/index.m.less": function(e, t, i) {
@@ -447,8 +447,8 @@
 						return t[i] = s, t
 					}, {})
 				});
-			var R = i("./src/reddit/selectors/user.ts");
-			const L = Object(C.u)(),
+			var L = i("./src/reddit/selectors/user.ts");
+			const R = Object(C.u)(),
 				G = Object(C.u)(),
 				A = {
 					apiError: T,
@@ -470,7 +470,7 @@
 				},
 				B = Object(d.c)({
 					...A,
-					currentUser: R.k,
+					currentUser: L.k,
 					commentsById: e => e.features.comments.models,
 					itemIds: (e, {
 						listingKey: t
@@ -489,7 +489,7 @@
 				E = e => ({
 					onBottomViewed: h.a,
 					openPost: t => {
-						e(v.K(t))
+						e(v.L(t))
 					},
 					trackOnPostEnteredViewport: h.a,
 					fireAdPixelsOfType: (t, i) => {
@@ -520,12 +520,12 @@
 				H = i("./src/reddit/pages/ProfilePrivate/index.m.less"),
 				z = i.n(H);
 			const Q = Object(d.c)({
-					currentUser: R.k
+					currentUser: L.k
 				}),
 				W = Object(r.b)(Q, (e, t) => ({
 					onLoadMore: () => e(Object(n.moreProfilePrivateRequested)(t.match.params.listingType))
 				})),
-				X = (e => Object(y.c)(L(M(e))))(u.a),
+				X = (e => Object(y.c)(R(M(e))))(u.a),
 				V = (e => Object(y.c)(G(K(e))))(p.a);
 			class J extends o.a.Component {
 				constructor() {
@@ -1385,4 +1385,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.388af72e3c78054621d6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.b1e10ce5cbec405121b9.js.map

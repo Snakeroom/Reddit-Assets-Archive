@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.86113e3196a9413eb8a6.js
-// Retrieved at 12/2/2021, 6:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.4a9816abb1a201bef9e4.js
+// Retrieved at 12/13/2021, 9:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPageNativeAd"], {
 		"./src/reddit/components/CommentsPageNativeAd/index.m.less": function(e, t, s) {
@@ -55,8 +55,8 @@
 				v = s("./src/reddit/components/PostBackgroundWrapper/index.tsx"),
 				f = s("./src/reddit/components/PostContainer/index.tsx"),
 				O = s("./src/reddit/components/PostTitle/index.tsx"),
-				y = s("./src/reddit/constants/componentTestIds.ts"),
-				j = s("./src/reddit/controls/OutboundLink/index.tsx"),
+				j = s("./src/reddit/constants/componentTestIds.ts"),
+				y = s("./src/reddit/controls/OutboundLink/index.tsx"),
 				k = s("./src/reddit/helpers/search/renderMedia.tsx"),
 				E = s("./src/reddit/components/PostTopMeta/index.tsx"),
 				P = s("./src/reddit/components/AuthorLink/index.tsx"),
@@ -168,16 +168,16 @@
 				F = s("./src/reddit/connectors/ClassicPost/index.tsx"),
 				H = s("./src/reddit/connectors/ClassicPost/searchResults.tsx"),
 				D = s("./src/reddit/helpers/path/index.ts"),
-				Z = s("./src/reddit/selectors/experiments/adHeaderExperiment.ts"),
-				z = s("./src/reddit/selectors/profile.ts");
+				z = s("./src/reddit/selectors/experiments/adHeaderExperiment.ts"),
+				Z = s("./src/reddit/selectors/profile.ts");
 			const K = Object(n.b)(() => Object(c.c)({
 				iconUrl: (e, t) => {
-					const s = Object(z.j)(e, {
+					const s = Object(Z.j)(e, {
 						profileName: t.post.author
 					});
 					if (s && s.icon) return s.icon.url
 				},
-				adHeaderVariant: e => Object(Z.a)(e)
+				adHeaderVariant: e => Object(z.a)(e)
 			}), (e, t) => ({
 				fetchProfile: () => {
 					e(Object(x.d)(t.post.author))
@@ -196,7 +196,7 @@
 						post: r
 					} = this.props;
 					let o = Object(m.a)(r);
-					return r.media && Object(u.E)(r.media) && (null === (s = null === (t = null === (e = null == r ? void 0 : r.media) || void 0 === e ? void 0 : e.gallery) || void 0 === t ? void 0 : t.items[0]) || void 0 === s ? void 0 : s.displayUrl) && (o = r.media.gallery.items[0].displayUrl), r.source ? a.a.createElement(j.b, {
+					return r.media && Object(u.E)(r.media) && (null === (s = null === (t = null === (e = null == r ? void 0 : r.media) || void 0 === e ? void 0 : e.gallery) || void 0 === t ? void 0 : t.items[0]) || void 0 === s ? void 0 : s.displayUrl) && (o = r.media.gallery.items[0].displayUrl), r.source ? a.a.createElement(y.b, {
 						className: A.a.styledOutboundLink,
 						href: r.source.url,
 						postId: r.id,
@@ -215,7 +215,7 @@
 						isOverlay: l,
 						poll: m,
 						post: x,
-						redditStyle: j,
+						redditStyle: y,
 						scrollerItemRef: P,
 						showMedia: N
 					} = this.props;
@@ -245,7 +245,7 @@
 					}, !(c && !N) && a.a.createElement(U, {
 						isMeta: x.isMeta,
 						post: x,
-						redditStyle: j,
+						redditStyle: y,
 						isVideo: x.media && Object(u.M)(x.media),
 						scrollerItemRef: P
 					}), a.a.createElement("div", {
@@ -256,7 +256,7 @@
 						className: A.a.postTitle,
 						poll: m,
 						post: x,
-						redditStyle: j,
+						redditStyle: y,
 						size: 3,
 						isOverlay: l,
 						isCommentsPage: !1,
@@ -265,7 +265,7 @@
 						className: A.a.styledOutboundLink,
 						rel: "nofollow",
 						"data-click-id": "comments",
-						"data-test-id": y.a,
+						"data-test-id": j.a,
 						to: this.props.isOverlay ? Object(p.a)(x.permalink, !0) : Object(D.b)(x.permalink),
 						onClick: this.props.onClick
 					}, r.fbt._("Join the conversation", null, {
@@ -377,10 +377,10 @@
 					postId: t
 				}) => ({
 					handleVote: s => {
-						const r = s === i.a.upvoted ? Object(a.db)(t) : Object(a.w)(t);
+						const r = s === i.a.upvoted ? Object(a.jb)(t) : Object(a.w)(t);
 						e(r)
 					},
-					onIgnoreReports: () => e(Object(a.Z)(t)),
+					onIgnoreReports: () => e(Object(a.fb)(t)),
 					onOpenReportsDropdown: t => e(Object(n.h)({
 						tooltipId: t
 					}))
@@ -521,4 +521,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.86113e3196a9413eb8a6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.4a9816abb1a201bef9e4.js.map

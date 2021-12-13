@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.2c65dd8ee8bbc1baaacb.js
-// Retrieved at 12/9/2021, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.68f66f5ac6772d24cc9d.js
+// Retrieved at 12/13/2021, 9:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceWalletRegistration"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -281,7 +281,7 @@
 							const {
 								postId: e
 							} = c, t = a.posts.models[e];
-							t && t.voteState === f.a.notVoted && n(Object(i.db)(e))
+							t && t.voteState === f.a.notVoted && n(Object(i.jb)(e))
 						}
 					} else n(k({
 						pollId: e,
@@ -2096,4 +2096,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.2c65dd8ee8bbc1baaacb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.68f66f5ac6772d24cc9d.js.map

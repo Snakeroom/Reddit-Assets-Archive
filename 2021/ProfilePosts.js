@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePosts.86c7072117c7a9ff3a16.js
-// Retrieved at 12/9/2021, 11:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePosts.b0626e44517c51700bc8.js
+// Retrieved at 12/13/2021, 9:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePosts", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -3396,7 +3396,8 @@
 					}
 				}, P(e)) : e.isListing && e.postPermalink ? o.a.createElement(a.a, {
 					target: e.shouldOpenPostInNewTab ? "_blank" : void 0,
-					to: e.sendGoodVisitEvent ? Object(m.a)(e.postPermalink, void 0, t) : Object(m.a)(e.postPermalink)
+					to: e.sendGoodVisitEvent ? Object(m.a)(e.postPermalink, void 0, t) : Object(m.a)(e.postPermalink),
+					onClick: e.onPostMediaClick
 				}, P(e)) : P(e)
 			});
 			const T = (e, t) => o.a.createElement(N, {
@@ -5909,12 +5910,12 @@
 						rtJsonElementProps: o
 					});
 					switch (r) {
-						case b.cf.SmIcon:
+						case b.ff.SmIcon:
 							return s.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: o
 							});
-						case b.cf.SmIconHc:
+						case b.ff.SmIconHc:
 							return s.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -6093,7 +6094,7 @@
 					}, [t]);
 					const {
 						contentTitle: n
-					} = e, r = Object(o.e)(x.b) === b.hc.Enabled ? w.d2x_nsfw_signup_blocking_de_v1 : w.d2x_nsfw_signup_blocking_non_us_v1;
+					} = e, r = Object(o.e)(x.b) === b.kc.Enabled ? w.d2x_nsfw_signup_blocking_de_v1 : w.d2x_nsfw_signup_blocking_non_us_v1;
 					return s.a.createElement("div", {
 						className: u.a.container
 					}, s.a.createElement(E, {
@@ -6657,17 +6658,18 @@
 					openPost: t => {
 						t.isFrontpage && e(Object(a.a)({
 							lastLoadedEnv: "server"
-						})), e(d.K(t))
+						})), e(d.L(t))
 					},
 					fireAdPixelsOfType: (t, n) => {
 						e(d.z(t, n))
 					},
 					trackOnPostEnteredViewport: (t, n, r, s) => {
-						e(d.N(t, r, s))
+						e(d.O(t, r, s))
 					},
 					trackOnPostExitedViewport: (t, n, r, s, o) => {
-						e(d.O(t, r, s, o))
+						e(d.P(t, r, s, o))
 					},
+					showModalOnScroll: () => e(d.bb()),
 					surveyTriggerScrollCounted: () => e(Object(u.j)())
 				}),
 				C = e => Object(h.b)({
@@ -7452,15 +7454,16 @@
 				w = n("./src/reddit/contexts/PageLayer/index.tsx"),
 				E = n("./src/reddit/helpers/name/index.ts"),
 				k = n("./src/reddit/helpers/trackers/screenview.ts"),
-				O = n("./src/reddit/layout/page/Listing/index.tsx"),
-				j = n("./src/reddit/models/ContentGate.ts"),
-				S = n("./src/reddit/pages/ErrorPages/index.tsx"),
-				C = n("./src/reddit/selectors/experiments/nsfwBlockingExperiment.ts"),
-				N = n("./src/reddit/selectors/profile.ts"),
-				I = n("./src/reddit/selectors/user.ts");
+				O = n("./src/reddit/hooks/useSessionBlockingModal.tsx"),
+				j = n("./src/reddit/layout/page/Listing/index.tsx"),
+				S = n("./src/reddit/models/ContentGate.ts"),
+				C = n("./src/reddit/pages/ErrorPages/index.tsx"),
+				N = n("./src/reddit/selectors/experiments/nsfwBlockingExperiment.ts"),
+				I = n("./src/reddit/selectors/profile.ts"),
+				L = n("./src/reddit/selectors/user.ts");
 
-			function L() {
-				return (L = Object.assign || function(e) {
+			function T() {
+				return (T = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -7468,18 +7471,18 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const T = Object(w.u)(),
-				P = Object(c.a)(w.D, I.eb, (e, {
+			const P = Object(w.u)(),
+				D = Object(c.a)(w.D, L.eb, (e, {
 					location: t
 				}) => s()([...Object(l.a)(t.search)]), w.Q, (e, {
 					match: t
 				}) => t.params.profileName, (e, {
 					match: t
-				}) => Object(N.j)(e, {
+				}) => Object(I.j)(e, {
 					profileName: t.params.profileName
-				}), I.K, (e, {
+				}), L.K, (e, {
 					match: t
-				}) => Object(I.f)(e, d.hc + t.params.profileName), C.a, (e, t, n, r, s, o, i, a, c) => {
+				}) => Object(L.f)(e, d.hc + t.params.profileName), N.a, (e, t, n, r, s, o, i, a, c) => {
 					const {
 						sort: d,
 						t: l
@@ -7498,14 +7501,14 @@
 						isEligibleForNsfwSignupUpsellTreatment: c
 					}
 				}),
-				D = Object(a.b)(P, (e, t) => ({
+				F = Object(a.b)(D, (e, t) => ({
 					onLoadMore: () => e(m.morePostsRequested()),
 					onLayoutChange: () => e(m.profilePostsRequested({
 						...t.match,
 						queryParams: s()([...Object(l.a)(t.location.search)])
 					}))
 				}));
-			class F extends i.a.Component {
+			class R extends i.a.Component {
 				render() {
 					const {
 						contentGateInfo: e,
@@ -7523,16 +7526,16 @@
 					} = this.props;
 					if (!c || !l) return null;
 					if (e && (e.profileDeleted || e.profileSuspended)) return i.a.createElement(h.default, {
-						contentGateType: e.profileDeleted ? j.a.ProfileDeleted : j.a.ProfileSuspended,
+						contentGateType: e.profileDeleted ? S.a.ProfileDeleted : S.a.ProfileSuspended,
 						profileName: l
 					});
-					if (403 === c.status) return i.a.createElement(S.a, null);
+					if (403 === c.status) return i.a.createElement(C.a, null);
 					if (404 === c.status) return i.a.createElement(h.default, {
-						contentGateType: j.a.ProfileDoesNotExist,
+						contentGateType: S.a.ProfileDoesNotExist,
 						profileName: l
 					});
 					const w = l.toLowerCase(),
-						C = `/user/${l}/posts/`,
+						O = `/user/${l}/posts/`,
 						N = {
 							listingKey: s,
 							listingName: w
@@ -7541,17 +7544,17 @@
 						contentTitle: Object(E.d)(l)
 					});
 					if (!t && r && !n) return i.a.createElement(h.default, {
-						contentGateType: j.a.Nsfw,
+						contentGateType: S.a.Nsfw,
 						subredditName: l
 					});
 					const I = {
 						sort: u,
-						baseUrl: C,
+						baseUrl: O,
 						sortOptions: d.Db,
 						subredditId: this.props.subredditId,
 						timeSort: m
 					};
-					return i.a.createElement(O.a, {
+					return i.a.createElement(j.a, {
 						className: this.props.className,
 						fitPageToContent: !0,
 						contentNavBar: i.a.createElement(i.a.Fragment, null, i.a.createElement(x.a, {
@@ -7569,13 +7572,13 @@
 							onTryAgain: a,
 							inSubredditOrProfile: !1
 						})),
-						sidebar: i.a.createElement(y.a, L({}, N, {
+						sidebar: i.a.createElement(y.a, T({}, N, {
 							profileName: l
 						}))
 					})
 				}
 			}
-			t.default = T(D(F))
+			t.default = P(F(Object(O.c)(R)))
 		},
 		"./src/reddit/selectors/experiments/econLeaderboards.ts": function(e, t, n) {
 			"use strict";
@@ -7590,15 +7593,15 @@
 			const i = e => {
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: o.K,
-						experimentName: r.Ic
+						experimentName: r.Lc
 					});
-					return !(!t || Object(r.Bf)(t))
+					return !(!t || Object(r.Ef)(t))
 				},
 				a = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: o.K,
-						experimentName: r.Ic
-					}) === r.kd.ListingEnabled
+						experimentName: r.Lc
+					}) === r.nd.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/experiments/nsfwBlockingExperiment.ts": function(e, t, n) {
@@ -7622,10 +7625,10 @@
 					expEventOverride: t
 				})
 			}
-			const l = d(s.Pb, !0),
-				u = d(s.Pb, !1),
-				m = d(s.Qb, !0),
-				p = (d(s.Qb, !1), Object(r.a)(l, m, (e, t) => e === s.hc.Enabled || t === s.ic.Enabled))
+			const l = d(s.Sb, !0),
+				u = d(s.Sb, !1),
+				m = d(s.Tb, !0),
+				p = (d(s.Tb, !1), Object(r.a)(l, m, (e, t) => e === s.kc.Enabled || t === s.lc.Enabled))
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, n) {
 			"use strict";
@@ -7756,12 +7759,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: r.We
+						experimentName: r.Ze
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === r.cf.SmIcon || t === r.cf.SmIconHc
+					return t === r.ff.SmIcon || t === r.ff.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -7814,4 +7817,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.86c7072117c7a9ff3a16.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.b0626e44517c51700bc8.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.aaa47166c1d71f933b60.js
-// Retrieved at 12/9/2021, 6:40:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.d7892e2b8fc3258c7a7c.js
+// Retrieved at 12/13/2021, 9:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit", "reddit-components-BlankPost"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -1613,7 +1613,7 @@
 					s || c || !Object(d.e)(a) && !Object(d.d)(a) || e(Object(n.f)())
 				}, f = e => {
 					Object(c.d)(e, {
-						experimentName: a.wb
+						experimentName: a.yb
 					})
 				}
 		},
@@ -1808,7 +1808,7 @@
 							const {
 								postId: e
 							} = d, t = n.posts.models[e];
-							t && t.voteState === m.a.notVoted && r(Object(o.db)(e))
+							t && t.voteState === m.a.notVoted && r(Object(o.jb)(e))
 						}
 					} else r(v({
 						pollId: e,
@@ -2002,7 +2002,7 @@
 								modQueueTriggers: null === (t = null == e ? void 0 : e.moderationInfo) || void 0 === t ? void 0 : t.modQueueTriggers
 							}]
 						}));
-						r(Object(n.R)(t))
+						r(Object(n.S)(t))
 					}
 				}
 			}
@@ -3607,7 +3607,7 @@
 			const w = e => g.d.reCaptchaEnterprise(e) && !Object(j.d)(e),
 				T = e => !!Object(v.c)(e, {
 					experimentEligibilitySelector: Object(S.d)(Object(S.b)(...a.d)),
-					experimentName: b.He
+					experimentName: b.Ke
 				}),
 				D = Object(s.b)("LOAD_RECAPTCHA_ENTERPRISE"),
 				P = Object(s.b)("EXECUTE_RECAPTCHA_ENTERPRISE"),
@@ -4880,7 +4880,7 @@
 						...Object(i.o)(e)
 					}))(r())), Object(l.c)(r(), {
 						postId: e
-					}) && t(Object(c.db)(e))
+					}) && t(Object(c.jb)(e))
 				}, m = (e, t) => {
 					return t ? s.fbt._("If you enjoyed that post, upvote it so that more redditors will see it too.", null, {
 						hk: "1Y6B4I"
@@ -25019,14 +25019,14 @@
 			const d = Object(s.a)(c.c, e => !e),
 				i = Object(s.a)(e => Object(a.c)(e, {
 					experimentEligibilitySelector: e => d(e),
-					experimentName: n.wb,
+					experimentName: n.yb,
 					expEventOverride: !1
 				}), e => e),
 				u = e => e === n.Y.Onetap,
 				l = e => e === n.Y.OnetapAuto,
 				p = e => e.user.googleOneTapEnabled,
 				b = Object(s.a)(o.K, i, (e, t) => !e && !!t),
-				f = Object(s.a)(o.K, i, (e, t) => !e && !!t && !Object(n.Bf)(t))
+				f = Object(s.a)(o.K, i, (e, t) => !e && !!t && !Object(n.Ef)(t))
 		},
 		"./src/reddit/selectors/moderatingComments.ts": function(e, t, r) {
 			"use strict";
@@ -25294,4 +25294,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.aaa47166c1d71f933b60.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.d7892e2b8fc3258c7a7c.js.map

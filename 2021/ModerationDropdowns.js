@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.4dd014e7c12f6ff252e6.js
-// Retrieved at 12/9/2021, 7:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.51260a1a904494275bf4.js
+// Retrieved at 12/13/2021, 9:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./src/reddit/actions/economics/predictions/modTools.ts": function(e, t, s) {
@@ -714,13 +714,13 @@
 					onCcPost: () => {
 						e(Object(d.i)(x.a.CROWD_CONTROL)), e(Object(l.u)(t.id))
 					},
-					onRemovePost: () => e(Object(l.S)(t.id, !1)),
+					onRemovePost: () => e(Object(l.T)(t.id, !1)),
 					onModToMemberShareOpened: () => {
 						e(Object(d.i)(x.a.MOD_TO_MEMBER_SHARE)), e(Object(l.F)(t.id))
 					},
-					onSpamPost: () => e(Object(l.S)(t.id, !0)),
-					onSpoilerPost: () => e(Object(l.X)(t.id)),
-					onStickyPost: () => e(Object(l.bb)(t.id))
+					onSpamPost: () => e(Object(l.T)(t.id, !0)),
+					onSpoilerPost: () => e(Object(l.db)(t.id)),
+					onStickyPost: () => e(Object(l.hb)(t.id))
 				})),
 				V = Object(p.a)(h.a);
 			t.default = W(G(Object(b.c)(({
@@ -1283,4 +1283,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.4dd014e7c12f6ff252e6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.51260a1a904494275bf4.js.map

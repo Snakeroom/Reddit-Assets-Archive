@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.c187c2a1d9a4f96d8ff5.js
-// Retrieved at 12/9/2021, 11:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.d68baa9c546286de2078.js
+// Retrieved at 12/13/2021, 9:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -4354,7 +4354,7 @@
 				const j = Object(a.useCallback)(() => _(Object(u.f)(e ? "user_hovercard" : "profile_overview", t)), [e, _, t]);
 				return o.a.createElement(m.t, {
 					onClick: () => {
-						n ? (_(u.g), y && x === b.a.notVoted && v(Object(c.db)(y))) : j();
+						n ? (_(u.g), y && x === b.a.notVoted && v(Object(c.jb)(y))) : j();
 						const e = n ? "postify" : "copy";
 						v(Object(l.b)({
 							clickSource: C,
@@ -13082,7 +13082,7 @@
 			const r = e => Object(a.c)(e, {
 				experimentName: s.F,
 				experimentEligibilitySelector: () => Object(o.J)(e)
-			}) === s.fd
+			}) === s.id
 		},
 		"./src/reddit/selectors/gold/productOffers.ts": function(e, t, n) {
 			"use strict";
@@ -13236,4 +13236,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.c187c2a1d9a4f96d8ff5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.d68baa9c546286de2078.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.0c9fba576f1b48cb5e67.js
-// Retrieved at 12/9/2021, 7:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.76222255c4af469c4e8e.js
+// Retrieved at 12/13/2021, 9:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -2025,7 +2025,7 @@
 			const pe = Object(a.a)(P.N, e => e.some(ue.c)),
 				fe = Object(a.a)(pe, e => e),
 				xe = (e, t) => Object(me.c)(e, {
-					experimentName: le.pc,
+					experimentName: le.sc,
 					experimentEligibilitySelector: e => {
 						const {
 							listingKey: s
@@ -2073,10 +2073,10 @@
 					postId: t
 				}) => ({
 					handleVote: s => {
-						const n = s === y.a.upvoted ? Object(u.db)(t) : Object(u.w)(t);
+						const n = s === y.a.upvoted ? Object(u.jb)(t) : Object(u.w)(t);
 						e(n)
 					},
-					onIgnoreReports: () => e(Object(u.Z)(t)),
+					onIgnoreReports: () => e(Object(u.fb)(t)),
 					onOpenReportsDropdown: t => e(Object(p.h)({
 						tooltipId: t
 					}))
@@ -2126,7 +2126,7 @@
 						postId: Ae,
 						postIds: Le,
 						onceInViewport: Ie
-					} = e, Be = !!e.redditStyle || !!e["data-redditstyle"], Ve = Be ? void 0 : p, We = Object(l.a)(he), Re = ve && We, He = Object(c.a)(he), De = Object(d.a)(he), Ue = Object(H.c)(je), ze = Object(W.a)(je), qe = !!je.media && je.media.type === g.o.RTJSON, Ze = Te && qe, Ke = s ? s - q.a : void 0, Ge = !!je.recommendationContext, Je = !(G && X || oe) || Ge && X, Xe = (e => e === le.Ae.OnlyTitles)(ke) && !Object(ae.a)(je), Ye = (e => e === le.Ae.MediumHeight)(ke) && !Object(ae.a)(je), Qe = (e => {
+					} = e, Be = !!e.redditStyle || !!e["data-redditstyle"], Ve = Be ? void 0 : p, We = Object(l.a)(he), Re = ve && We, He = Object(c.a)(he), De = Object(d.a)(he), Ue = Object(H.c)(je), ze = Object(W.a)(je), qe = !!je.media && je.media.type === g.o.RTJSON, Ze = Te && qe, Ke = s ? s - q.a : void 0, Ge = !!je.recommendationContext, Je = !(G && X || oe) || Ge && X, Xe = (e => e === le.De.OnlyTitles)(ke) && !Object(ae.a)(je), Ye = (e => e === le.De.MediumHeight)(ke) && !Object(ae.a)(je), Qe = (e => {
 						var t;
 						const {
 							post: s,
@@ -3878,9 +3878,9 @@
 			const r = e => {
 				const t = Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
-					experimentName: n.Bc
+					experimentName: n.Ec
 				});
-				return !(!t || Object(n.Bf)(t))
+				return !(!t || Object(n.Ef)(t))
 			}
 		},
 		"./src/reddit/selectors/i18n/index.ts": function(e, t, s) {
@@ -3896,7 +3896,7 @@
 				i = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const a = e => {
 					const t = Object(i.a)(e);
-					return Boolean(t) && !Object(o.Bf)(t)
+					return Boolean(t) && !Object(o.Ef)(t)
 				},
 				c = Object(n.a)(a, r.d, (e, t) => e && !t)
 		},
@@ -3910,13 +3910,13 @@
 				r = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = s("./src/reddit/selectors/posts.ts");
 			const a = e => Object(r.c)(e, {
-					experimentName: o.we,
+					experimentName: o.ze,
 					experimentEligibilitySelector: r.a
 				}),
-				c = (e, t) => t === o.Fe.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				c = (e, t) => t === o.Ie.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				d = Object(n.a)(i.H, a, (e, t) => c(e, t));
 			Object(n.a)((e, t) => t, a, (e, t) => c(e, t))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.0c9fba576f1b48cb5e67.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.76222255c4af469c4e8e.js.map
