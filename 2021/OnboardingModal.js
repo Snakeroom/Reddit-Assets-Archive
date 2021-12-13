@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OnboardingModal.b9a475adac739ea42036.js
-// Retrieved at 12/13/2021, 5:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OnboardingModal.d0d1b4d0826d4ebc2672.js
+// Retrieved at 12/13/2021, 6:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OnboardingModal"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -446,7 +446,7 @@
 								const {
 									content: e,
 									subreddit: t,
-									__typename: n
+									typeIdentifier: n
 								} = x.recommendationContext;
 								if (x.postInfo && (null == e ? void 0 : e.richtext)) {
 									const r = d(x.postInfo);
@@ -3761,7 +3761,7 @@
 				}
 		},
 		"./src/redditGQL/operations/Frontpage.json": function(e) {
-			e.exports = JSON.parse('{"id":"5efdd2d787dd"}')
+			e.exports = JSON.parse('{"id":"b5796c0f53c4"}')
 		},
 		"./src/redditGQL/operations/GetAccountGender.json": function(e) {
 			e.exports = JSON.parse('{"id":"1508e05ea2ee"}')
@@ -3786,4 +3786,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.b9a475adac739ea42036.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.d0d1b4d0826d4ebc2672.js.map
