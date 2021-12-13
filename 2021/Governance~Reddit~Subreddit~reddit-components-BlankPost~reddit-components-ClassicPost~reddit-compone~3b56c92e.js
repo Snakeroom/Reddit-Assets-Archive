@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.57e4be48a7f7b6722839.js
-// Retrieved at 12/13/2021, 11:10:14 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.cecd2d55e000819d6a0c.js
+// Retrieved at 12/13/2021, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, r) {
@@ -1118,39 +1118,39 @@
 		"./src/reddit/actions/search.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "b", (function() {
-				return _
-			})), r.d(t, "c", (function() {
 				return j
-			})), r.d(t, "f", (function() {
+			})), r.d(t, "c", (function() {
 				return v
-			})), r.d(t, "g", (function() {
+			})), r.d(t, "f", (function() {
 				return P
-			})), r.d(t, "e", (function() {
+			})), r.d(t, "g", (function() {
 				return E
-			})), r.d(t, "i", (function() {
+			})), r.d(t, "e", (function() {
 				return T
-			})), r.d(t, "q", (function() {
+			})), r.d(t, "i", (function() {
 				return S
+			})), r.d(t, "q", (function() {
+				return C
 			})), r.d(t, "k", (function() {
-				return w
-			})), r.d(t, "l", (function() {
 				return I
-			})), r.d(t, "o", (function() {
+			})), r.d(t, "l", (function() {
 				return A
-			})), r.d(t, "n", (function() {
+			})), r.d(t, "o", (function() {
 				return R
-			})), r.d(t, "h", (function() {
+			})), r.d(t, "n", (function() {
 				return M
-			})), r.d(t, "p", (function() {
+			})), r.d(t, "h", (function() {
 				return N
-			})), r.d(t, "a", (function() {
+			})), r.d(t, "p", (function() {
 				return k
-			})), r.d(t, "d", (function() {
+			})), r.d(t, "a", (function() {
 				return L
-			})), r.d(t, "j", (function() {
+			})), r.d(t, "d", (function() {
 				return F
-			})), r.d(t, "m", (function() {
+			})), r.d(t, "j", (function() {
 				return U
+			})), r.d(t, "m", (function() {
+				return V
 			}));
 			var s = r("./node_modules/fbt/lib/FbtPublic.js"),
 				n = r("./node_modules/lodash/pick.js"),
@@ -1161,158 +1161,160 @@
 				c = r("./src/reddit/actions/toaster.ts"),
 				u = r("./src/reddit/constants/parameters.ts"),
 				l = r("./src/reddit/endpoints/page/search/index.ts"),
-				b = r("./src/reddit/helpers/search/getQueryWithNsfwSetting.ts"),
-				m = r("./src/reddit/models/Toast/index.ts"),
-				p = r("./src/reddit/selectors/experiments/serpRedesignLayout.ts"),
-				f = r("./src/reddit/selectors/multireddit.ts"),
-				h = r("./src/reddit/selectors/subreddit.ts"),
-				O = r("./src/reddit/selectors/telemetry.ts"),
-				g = r("./src/reddit/selectors/user.ts"),
-				y = r("./src/reddit/actions/pages/search/index.ts");
-			const _ = "SEARCH__DROPDOWN_CLOSED",
-				j = "SEARCH__DROPDOWN_TOGGLED",
-				v = "SEARCH__MORE_RESULTS_PENDING",
-				P = "SEARCH__MORE_RESULTS_RECEIVED",
-				E = "SEARCH__MORE_RESULTS_FAILED",
-				T = "SEARCH__UPDATE_SEARCH_QUERY",
-				S = Object(a.a)(T),
-				C = Object(a.a)(v),
+				b = r("./src/reddit/helpers/correlationIdTracker.ts"),
+				m = r("./src/reddit/helpers/search/getQueryWithNsfwSetting.ts"),
+				p = r("./src/reddit/models/Toast/index.ts"),
+				f = r("./src/reddit/selectors/experiments/serpRedesignLayout.ts"),
+				h = r("./src/reddit/selectors/multireddit.ts"),
+				O = r("./src/reddit/selectors/subreddit.ts"),
+				g = r("./src/reddit/selectors/telemetry.ts"),
+				y = r("./src/reddit/selectors/user.ts"),
+				_ = r("./src/reddit/actions/pages/search/index.ts");
+			const j = "SEARCH__DROPDOWN_CLOSED",
+				v = "SEARCH__DROPDOWN_TOGGLED",
+				P = "SEARCH__MORE_RESULTS_PENDING",
+				E = "SEARCH__MORE_RESULTS_RECEIVED",
+				T = "SEARCH__MORE_RESULTS_FAILED",
+				S = "SEARCH__UPDATE_SEARCH_QUERY",
+				C = Object(a.a)(S),
 				x = Object(a.a)(P),
 				D = Object(a.a)(E),
-				w = Object(a.a)(_),
+				w = Object(a.a)(T),
 				I = Object(a.a)(j),
-				A = e => async (t, r, {
+				A = Object(a.a)(v),
+				R = e => async (t, r, {
 					apiContext: n,
 					gqlContext: a
 				}) => {
-					var y;
-					const _ = r(),
+					var _;
+					const j = r(),
 						{
-							queryParams: j
-						} = _.platform.currentPage,
-						v = Object(d.c)(j, Object(g.eb)(_)),
-						P = _.platform.currentPage.urlParams.subredditName,
-						E = _.platform.currentPage.urlParams.multiredditName,
-						T = P || E,
+							queryParams: v
+						} = j.platform.currentPage,
+						P = Object(d.c)(v, Object(y.eb)(j)),
+						E = j.platform.currentPage.urlParams.subredditName,
+						T = j.platform.currentPage.urlParams.multiredditName,
+						S = E || T,
 						{
-							username: S
-						} = _.platform.currentPage.urlParams,
-						w = v || i()(j, u.t),
-						I = Object(p.c)(_),
-						R = Object(d.e)(w, I),
-						M = {
-							...R,
-							t: R.category ? o.fc.DAY : R.t,
+							username: C
+						} = j.platform.currentPage.urlParams,
+						I = P || i()(v, u.t),
+						A = Object(f.c)(j),
+						M = Object(d.e)(I, A),
+						N = {
+							...M,
+							t: M.category ? o.fc.DAY : M.t,
 							type: e
 						},
-						N = Object(d.b)(T, S, M);
-					let k;
-					const L = {
+						k = Object(d.b)(S, C, N);
+					let L;
+					const F = {
 						authors: null,
 						communities: null,
 						posts: null
 					};
 					if (e.indexOf(o.Zb.Posts) > -1) {
-						const e = _.listings.postOrder.loadMore[N];
+						const e = j.listings.postOrder.loadMore[k];
 						if (!e) return;
-						const t = _.listings.postOrder.api.pending[N],
-							r = _.listings.postOrder.fetchedTokens,
-							s = r[N] && r[N][e.token];
+						const t = j.listings.postOrder.api.pending[k],
+							r = j.listings.postOrder.fetchedTokens,
+							s = r[k] && r[k][e.token];
 						if (t || s) return;
-						k = e.token, L.posts = k
-					} else if (!I && (e.indexOf(o.Zb.Subreddits) > -1 || e.indexOf(o.Zb.Users) > -1)) {
-						const e = _.listings.listingOrder.loadMore[N];
+						L = e.token, F.posts = L
+					} else if (!A && (e.indexOf(o.Zb.Subreddits) > -1 || e.indexOf(o.Zb.Users) > -1)) {
+						const e = j.listings.listingOrder.loadMore[k];
 						if (!e) return;
-						const t = _.listings.listingOrder.api.pending[N],
-							r = _.listings.listingOrder.fetchedTokens,
-							s = r[N] && r[N][e.token];
+						const t = j.listings.listingOrder.api.pending[k],
+							r = j.listings.listingOrder.fetchedTokens,
+							s = r[k] && r[k][e.token];
 						if (t || s) return;
-						k = e.token
-					} else if (I && e.indexOf(o.Zb.Subreddits) > -1) {
-						const e = _.listings.communityOrder.loadMore[N];
+						L = e.token
+					} else if (A && e.indexOf(o.Zb.Subreddits) > -1) {
+						const e = j.listings.communityOrder.loadMore[k];
 						if (!e) return;
-						const t = _.listings.communityOrder.api.pending[N],
-							r = _.listings.communityOrder.fetchedTokens,
-							s = r[N] && r[N][e.token];
+						const t = j.listings.communityOrder.api.pending[k],
+							r = j.listings.communityOrder.fetchedTokens,
+							s = r[k] && r[k][e.token];
 						if (t || s) return;
-						k = e.token, L.communities = k
+						L = e.token, F.communities = L
 					} else {
-						if (!(I && e.indexOf(o.Zb.Users) > -1)) throw new Error("Should not attempt to fetch more results without a search type"); {
-							const e = _.listings.authorOrder.loadMore[N];
+						if (!(A && e.indexOf(o.Zb.Users) > -1)) throw new Error("Should not attempt to fetch more results without a search type"); {
+							const e = j.listings.authorOrder.loadMore[k];
 							if (!e) return;
-							const t = _.listings.authorOrder.api.pending[N],
-								r = _.listings.authorOrder.fetchedTokens,
-								s = r[N] && r[N][e.token];
+							const t = j.listings.authorOrder.api.pending[k],
+								r = j.listings.authorOrder.fetchedTokens,
+								s = r[k] && r[k][e.token];
 							if (t || s) return;
-							k = e.token, L.authors = k
+							L = e.token, F.authors = L
 						}
 					}
-					const F = `error-${N}`;
-					t(C({
-						fetchedToken: k,
-						key: N,
+					const U = `error-${k}`;
+					t(x({
+						fetchedToken: L,
+						key: k,
 						type: e
 					}));
-					const U = [d.a.PromotedTrend, d.a.Trending].includes(R.source),
-						V = Object(g.eb)(_),
-						G = {
-							...M,
-							q: !I && R.q ? Object(b.a)(R.q, V, "1" === R.include_over_18, U, "1" === R.sr_nsfw) : R.q,
-							after: k,
+					const V = [d.a.PromotedTrend, d.a.Trending].includes(M.source),
+						G = Object(y.eb)(j),
+						B = {
+							...N,
+							q: !A && M.q ? Object(m.a)(M.q, G, "1" === M.include_over_18, V, "1" === M.sr_nsfw) : M.q,
+							after: L,
 							type: (e || []).join(","),
 							b: !0
 						},
-						B = P && Object(h.C)(r(), P),
-						q = E ? null === (y = Object(f.d)(_, {
-							multiredditName: E,
-							username: S
-						})) || void 0 === y ? void 0 : y.subredditIds : void 0;
-					let H = [];
-					q ? H = q : B && (H = [B]);
-					const Q = Object(O.gb)(_.platform.currentPage),
-						W = await (I ? Object(l.a)({
+						q = E && Object(O.C)(r(), E),
+						H = T ? null === (_ = Object(h.d)(j, {
+							multiredditName: T,
+							username: C
+						})) || void 0 === _ ? void 0 : _.subredditIds : void 0;
+					let Q = [];
+					H ? Q = H : q && (Q = [q]);
+					const W = Object(g.gb)(j.platform.currentPage),
+						$ = await (A ? Object(l.a)({
 							context: a(),
-							isSerpRedesignLayoutM2: I,
-							nsfw: !Object(b.b)(V, "1" === R.include_over_18, U, "1" === R.sr_nsfw),
-							options: G,
-							structureType: Q,
-							subredditIds: H,
-							tokens: L
+							isSerpRedesignLayoutM2: A,
+							nsfw: !Object(m.b)(G, "1" === M.include_over_18, V, "1" === M.sr_nsfw),
+							options: B,
+							queryId: Object(b.c)(b.a.SearchResults),
+							structureType: W,
+							subredditIds: Q,
+							tokens: F
 						}) : Object(l.a)({
 							context: n(),
-							isSerpRedesignLayoutM2: I,
-							options: G,
-							subredditName: T,
-							username: S
+							isSerpRedesignLayoutM2: A,
+							options: B,
+							subredditName: S,
+							username: C
 						}));
-					W.ok ? (t(x({
-						key: N,
-						fetchedToken: k,
-						meta: _.meta,
-						subredditOrMultiName: T,
+					$.ok ? (t(D({
+						key: k,
+						fetchedToken: L,
+						meta: j.meta,
+						subredditOrMultiName: S,
 						type: e,
-						...W.body
-					})), t(c.g(F))) : (t(D({
-						key: N,
-						error: W.error,
-						fetchedToken: k,
-						meta: _.meta,
+						...$.body
+					})), t(c.g(U))) : (t(w({
+						key: k,
+						error: $.error,
+						fetchedToken: L,
+						meta: j.meta,
 						type: e,
-						...W.body
+						...$.body
 					})), t(c.f({
-						id: F,
-						kind: m.b.Error,
+						id: U,
+						kind: p.b.Error,
 						text: s.fbt._("Sorry, we couldn't load more search results.", null, {
 							hk: "3IDePs"
 						}),
 						buttonText: s.fbt._("Retry", null, {
 							hk: "1XMjgA"
 						}),
-						buttonAction: A(e)
+						buttonAction: R(e)
 					})))
-				}, R = (e, t, r, s, n) => async (i, o) => {
+				}, M = (e, t, r, s, n) => async (i, o) => {
 					const a = o();
-					i(Object(y.e)({
+					i(Object(_.e)({
 						key: e,
 						type: s
 					}));
@@ -1340,8 +1342,8 @@
 						searchDiscoveryUnitOrder: [],
 						type: s
 					};
-					i(Object(y.f)(d))
-				}, M = "SEARCH__TYPEAHEAD_SUCCESS", N = Object(a.a)(M), k = "SEARCH__DISABLE_SUBREDDIT_SEARCH", L = "SEARCH__ENABLE_SUBREDDIT_SEARCH", F = Object(a.a)(k), U = Object(a.a)(L)
+					i(Object(_.f)(d))
+				}, N = "SEARCH__TYPEAHEAD_SUCCESS", k = Object(a.a)(N), L = "SEARCH__DISABLE_SUBREDDIT_SEARCH", F = "SEARCH__ENABLE_SUBREDDIT_SEARCH", U = Object(a.a)(L), V = Object(a.a)(F)
 		},
 		"./src/reddit/actions/tabBadging.ts": function(e, t, r) {
 			"use strict";
@@ -2619,4 +2621,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.57e4be48a7f7b6722839.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.cecd2d55e000819d6a0c.js.map
