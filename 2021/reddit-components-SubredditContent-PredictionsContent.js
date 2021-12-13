@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.b285e153feaa5d1129de.js
-// Retrieved at 12/9/2021, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.a2b9b6c0c42d8dc06370.js
+// Retrieved at 12/13/2021, 10:20:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SubredditContent-PredictionsContent"], {
 		"./src/reddit/components/Econ/Prediction/hooks/useTournamentsQuery.ts": function(e, t, n) {
@@ -19,10 +19,10 @@
 					n = Object(c.e)(t => Object(a.R)(t, {
 						subredditId: e
 					})),
-					o = Object(c.e)(t => Object(i.h)(t, {
+					o = Object(c.e)(t => Object(i.i)(t, {
 						subredditId: e
 					})),
-					d = Object(c.e)(t => Object(i.j)(t, {
+					d = Object(c.e)(t => Object(i.k)(t, {
 						subredditId: e
 					})),
 					l = r.a.useCallback(() => {
@@ -236,7 +236,7 @@
 					L = Object(s.e)(t => Object(E.b)(t, {
 						subredditId: e.id
 					})),
-					F = Object(s.e)(t => Object(E.g)(t, {
+					F = Object(s.e)(t => Object(E.h)(t, {
 						subredditId: e.id
 					}));
 				Object(r.useEffect)(() => {
@@ -566,4 +566,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.b285e153feaa5d1129de.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.a2b9b6c0c42d8dc06370.js.map

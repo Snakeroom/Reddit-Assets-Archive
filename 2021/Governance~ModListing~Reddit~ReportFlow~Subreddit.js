@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.5dcbe9c8d6bc84f9d9e5.js
-// Retrieved at 12/13/2021, 9:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.66ebca9a01a49b0e2c4c.js
+// Retrieved at 12/13/2021, 10:20:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~ReportFlow~Subreddit"], {
 		"./src/lib/assertNever.ts": function(e, t, r) {
@@ -1280,14 +1280,14 @@
 						pollId: t,
 						prediction: o.poll
 					})), o.poll
-				}, z = Object(g.a)(N.h), $ = Object(g.a)(N.i), V = Object(g.a)(N.g), J = Object(g.a)(N.k), K = e => async (t, r, {
+				}, z = Object(g.a)(N.g), $ = Object(g.a)(N.i), V = Object(g.a)(N.h), J = Object(g.a)(N.k), K = e => async (t, r, {
 					gqlContext: n
 				}) => {
 					const i = r(),
 						s = Object(D.C)(i, e);
-					if (Object(A.j)(i, {
+					if (Object(A.k)(i, {
 							subredditId: s
-						})) return Object(A.f)(i, {
+						})) return Object(A.g)(i, {
 						subredditId: s
 					});
 					t(z({
@@ -10603,4 +10603,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.5dcbe9c8d6bc84f9d9e5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.66ebca9a01a49b0e2c4c.js.map

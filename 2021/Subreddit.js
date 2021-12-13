@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.982afc60eeb27d8a2c8c.js
-// Retrieved at 12/13/2021, 9:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.bcbeb97c428ad74cb5e0.js
+// Retrieved at 12/13/2021, 10:20:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~ModListing", "reddit-components-BlankPost", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, n) {
@@ -3840,41 +3840,6 @@
 				}))
 			}
 		},
-		"./src/reddit/components/Econ/Prediction/hooks/useTournamentsQuery.ts": function(e, t, n) {
-			"use strict";
-			n.d(t, "a", (function() {
-				return d
-			}));
-			var s = n("./node_modules/react/index.js"),
-				r = n.n(s),
-				a = n("./node_modules/react-redux/es/index.js"),
-				o = n("./src/reddit/actions/economics/predictions/index.ts"),
-				i = n("./src/reddit/selectors/features/predictions/tournaments/index.ts"),
-				c = n("./src/reddit/selectors/subreddit.ts");
-
-			function d(e) {
-				const t = Object(a.d)(),
-					n = Object(a.e)(t => Object(c.R)(t, {
-						subredditId: e
-					})),
-					s = Object(a.e)(t => Object(i.h)(t, {
-						subredditId: e
-					})),
-					d = Object(a.e)(t => Object(i.j)(t, {
-						subredditId: e
-					})),
-					l = r.a.useCallback(() => {
-						n.name && t(Object(o.l)(n.name))
-					}, [n.name, t]);
-				return r.a.useEffect(() => {
-					d || s || l()
-				}, [d, s, l]), {
-					isFetching: d,
-					isFetched: s,
-					fetch: l
-				}
-			}
-		},
 		"./src/reddit/components/Econ/Prediction/themes.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
@@ -4463,7 +4428,7 @@
 			const O = ({
 					subredditId: e
 				}) => {
-					const t = Object(a.e)(t => Object(m.e)(t, {
+					const t = Object(a.e)(t => Object(m.f)(t, {
 							subredditId: e
 						})),
 						n = Object(a.e)(e => t ? Object(v.h)(e, t.tournamentId) : []);
@@ -4578,7 +4543,7 @@
 				subredditId: e
 			}) => {
 				var t, n;
-				const s = Object(a.e)(t => Object(m.e)(t, {
+				const s = Object(a.e)(t => Object(m.f)(t, {
 						subredditId: e
 					})),
 					o = Object(a.e)(e => s && Object(M.e)(e, {
@@ -4640,7 +4605,7 @@
 					{
 						isFetched: s
 					} = Object(o.a)(n),
-					c = Object(a.e)(e => Object(m.k)(e, {
+					c = Object(a.e)(e => Object(m.l)(e, {
 						subredditId: n
 					})),
 					b = r.a.useMemo(() => Object.values(c).sort(l.b).map(e => e.id), [Object.keys(c).length]);
@@ -4693,7 +4658,7 @@
 				const p = Object(a.e)(m.X),
 					h = Object(a.e)(m.k),
 					f = Object(a.e)(m.C),
-					x = Object(a.e)(e => Object(u.e)(e, {
+					x = Object(a.e)(e => Object(u.f)(e, {
 						subredditId: n
 					}));
 				return (null === (s = null == x ? void 0 : x.latestParticipants) || void 0 === s ? void 0 : s.length) ? r.a.createElement("div", {
@@ -5098,7 +5063,7 @@
 				subredditId: e
 			}) => {
 				const t = Object(O.a)(),
-					n = Object(a.e)(t => Object(w.f)(t, {
+					n = Object(a.e)(t => Object(w.g)(t, {
 						subredditId: e
 					}).slice(1, 3).map(e => e.tournamentId));
 				return r.a.useEffect(() => {
@@ -5132,7 +5097,7 @@
 			function ne({
 				subredditId: e
 			}) {
-				const t = Object(a.e)(t => Object(w.e)(t, {
+				const t = Object(a.e)(t => Object(w.f)(t, {
 						subredditId: e
 					})),
 					n = Object(a.e)(t => Object(X.R)(t, {
@@ -5232,7 +5197,7 @@
 			function de({
 				subredditId: e
 			}) {
-				const t = Object(a.e)(t => Object(w.e)(t, {
+				const t = Object(a.e)(t => Object(w.f)(t, {
 					subredditId: e
 				}));
 				return t ? r.a.createElement(ce.default, {
@@ -5437,7 +5402,7 @@
 			function f({
 				subredditId: e
 			}) {
-				const t = Object(a.e)(t => !!e && Object(u.j)(t, {
+				const t = Object(a.e)(t => !!e && Object(u.k)(t, {
 						subredditId: e
 					})),
 					n = Object(l.a)();
@@ -18796,4 +18761,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.982afc60eeb27d8a2c8c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.bcbeb97c428ad74cb5e0.js.map

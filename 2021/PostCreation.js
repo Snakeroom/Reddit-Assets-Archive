@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.b260f697616db673f6e1.js
-// Retrieved at 12/13/2021, 9:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.4640dfc6138481f0025c.js
+// Retrieved at 12/13/2021, 10:20:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -6042,10 +6042,10 @@
 					n = Object(r.e)(t => Object(c.R)(t, {
 						subredditId: e
 					})),
-					o = Object(r.e)(t => Object(a.h)(t, {
+					o = Object(r.e)(t => Object(a.i)(t, {
 						subredditId: e
 					})),
-					l = Object(r.e)(t => Object(a.j)(t, {
+					l = Object(r.e)(t => Object(a.k)(t, {
 						subredditId: e
 					})),
 					d = s.a.useCallback(() => {
@@ -31028,7 +31028,7 @@
 				value: t,
 				onChange: n
 			}) => {
-				const [o, i] = s.a.useState(), a = s.a.useRef(null), c = Object(r.e)(t => Object(hn.e)(t, {
+				const [o, i] = s.a.useState(), a = s.a.useRef(null), c = Object(r.e)(t => Object(hn.f)(t, {
 					subredditId: e
 				}));
 				return s.a.createElement("div", {
@@ -31292,13 +31292,13 @@
 						d = Object(r.e)(e => Object(hn.b)(e, {
 							subredditId: t
 						})),
-						u = Object(r.e)(e => !!t && Object(hn.j)(e, {
+						u = Object(r.e)(e => !!t && Object(hn.k)(e, {
 							subredditId: t
 						})),
-						m = Object(r.e)(e => Object(hn.h)(e, {
+						m = Object(r.e)(e => Object(hn.i)(e, {
 							subredditId: t
 						})),
-						p = Object(r.e)(e => Object(hn.g)(e, {
+						p = Object(r.e)(e => Object(hn.h)(e, {
 							subredditId: t
 						})),
 						h = Object(r.e)(T.sb);
@@ -33469,4 +33469,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.b260f697616db673f6e1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.4640dfc6138481f0025c.js.map

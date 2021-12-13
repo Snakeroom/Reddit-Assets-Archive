@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.320d1d0463fa57a3a55c.js
-// Retrieved at 12/13/2021, 9:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.f8f84a2ac6439b86ce80.js
+// Retrieved at 12/13/2021, 10:20:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3327,10 +3327,10 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("154566"),
+				buildNumber: Object(r.c)("154567"),
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
-				buildTimestamp: Object(r.b)("1639404269"),
+				buildTimestamp: Object(r.b)("1639407089"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -5897,14 +5897,14 @@
 					}))
 				},
 				$ = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c05c40f57f92f5bb9d3839927d421ac7d78b5a1cd-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c98f158decab05c971a81454a005f2b75e189cfc4-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "05c40f57f92f5bb9d3839927d421ac7d78b5a1cd-production",
+						release: "98f158decab05c971a81454a005f2b75e189cfc4-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6421,7 +6421,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "05c40f57f92f5bb9d3839927d421ac7d78b5a1cd-production",
+						releaseClient: "98f158decab05c971a81454a005f2b75e189cfc4-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -9385,11 +9385,11 @@
 				return a
 			})), i.d(t, "l", (function() {
 				return l
-			})), i.d(t, "h", (function() {
+			})), i.d(t, "g", (function() {
 				return u
 			})), i.d(t, "i", (function() {
 				return c
-			})), i.d(t, "g", (function() {
+			})), i.d(t, "h", (function() {
 				return _
 			})), i.d(t, "k", (function() {
 				return p
@@ -9413,7 +9413,7 @@
 				d = "PREDICTION_VOTE_SUCCESS",
 				a = "TOURNAMENT_POST_VOTE_SUCCESS",
 				l = "PREDICTION_RESOLVE_SUCCESS",
-				u = "FETCH_SUBREDDIT_PREDICTION_TOURNAMENTS_START",
+				u = "FETCH_SUBREDDIT_PREDICTION_TOURNAMENTS_FULL_INFO_START",
 				c = "FETCH_SUBREDDIT_PREDICTION_TOURNAMENTS_SUCCESS",
 				_ = "FETCH_SUBREDDIT_PREDICTION_TOURNAMENTS_FULL_INFO_SUCCESS",
 				p = "PREDICTIONS_POSTS_LOADED",
@@ -31179,7 +31179,7 @@
 			var y = (e = w, t) => {
 				var i;
 				switch (t.type) {
-					case o.h: {
+					case o.g: {
 						const {
 							subredditId: i
 						} = t.payload;
@@ -31192,7 +31192,7 @@
 							}
 						}
 					}
-					case o.g: {
+					case o.h: {
 						const {
 							subredditId: i
 						} = t.payload;
@@ -34120,13 +34120,13 @@
 			"use strict";
 			i.d(t, "a", (function() {
 				return c
-			})), i.d(t, "h", (function() {
+			})), i.d(t, "i", (function() {
 				return _
-			})), i.d(t, "j", (function() {
+			})), i.d(t, "k", (function() {
 				return p
-			})), i.d(t, "f", (function() {
+			})), i.d(t, "g", (function() {
 				return h
-			})), i.d(t, "e", (function() {
+			})), i.d(t, "f", (function() {
 				return f
 			})), i.d(t, "b", (function() {
 				return b
@@ -34134,12 +34134,14 @@
 				return g
 			})), i.d(t, "c", (function() {
 				return w
-			})), i.d(t, "k", (function() {
+			})), i.d(t, "e", (function() {
 				return v
-			})), i.d(t, "g", (function() {
+			})), i.d(t, "l", (function() {
 				return y
-			})), i.d(t, "i", (function() {
+			})), i.d(t, "h", (function() {
 				return E
+			})), i.d(t, "j", (function() {
+				return T
 			}));
 			var n = i("./node_modules/reselect/es/index.js"),
 				r = i("./src/lib/initializeClient/installReducer.ts"),
@@ -34186,7 +34188,15 @@
 				},
 				g = (e, t) => !!m(e, t).length,
 				w = (e, t) => !!b(e, t),
-				v = Object(n.a)(f, l.h, l.K, u.eb, (e, t, i, n) => {
+				v = Object(n.a)(b, e => e, (e, t) => {
+					if (!e) return !1;
+					return Object(a.h)(t, null == e ? void 0 : e.tournamentId).some(({
+						endsAt: e,
+						resolvedOptionId: t,
+						predictionStatus: i
+					}) => e > Date.now() && !t && i === o.b.Open)
+				}),
+				y = Object(n.a)(f, l.h, l.K, u.eb, (e, t, i, n) => {
 					var r;
 					return (null === (r = null == e ? void 0 : e.predictionPosts) || void 0 === r ? void 0 : r.length) ? null == e ? void 0 : e.predictionPosts.reduce((e, r) => {
 						if (t.includes(r)) return e;
@@ -34194,11 +34204,11 @@
 						return !s || !n && s.isNSFW || (e[r] = s), e
 					}, {}) : {}
 				}),
-				y = (e, t) => {
+				E = (e, t) => {
 					const i = b(e, t);
 					return !!i && Object(a.h)(e, i.tournamentId).every(e => null !== e.resolvedOptionId || e.predictionStatus === o.b.Cancelled || e.predictionStatus === o.b.CancelInProgress)
 				},
-				E = Object(n.a)(f, e => !!e && e.status === d.a.LiveInProgress)
+				T = Object(n.a)(f, e => !!e && e.status === d.a.LiveInProgress)
 		},
 		"./src/reddit/selectors/frontpage.ts": function(e, t, i) {
 			"use strict";
@@ -39423,7 +39433,7 @@
 					const t = St(e),
 						i = {};
 					if (!(null == t ? void 0 : t.id)) return;
-					const n = Object(de.e)(e, {
+					const n = Object(de.f)(e, {
 						subredditId: t.id
 					});
 					if (!n) return;
@@ -44825,4 +44835,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.320d1d0463fa57a3a55c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.f8f84a2ac6439b86ce80.js.map
