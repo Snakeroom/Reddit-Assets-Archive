@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.fdb03a4734f9342eeb20.js
-// Retrieved at 12/9/2021, 6:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.f18bd7af16a9fd1c20b4.js
+// Retrieved at 12/13/2021, 2:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityPointsLearnMore"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, o) {
@@ -1457,6 +1457,19 @@
 					subreddit: Object(n.ib)(t, e)
 				})
 		},
+		"./src/reddit/icons/svgs/ArrowRightThin/index.tsx": function(e, t, o) {
+			"use strict";
+			var n = o("./node_modules/react/index.js"),
+				a = o.n(n);
+			t.a = e => a.a.createElement("svg", {
+				className: e.className,
+				viewBox: "0 0 16 16",
+				version: "1.1",
+				xmlns: "http://www.w3.org/2000/svg"
+			}, a.a.createElement("path", {
+				d: "M8.56569 0.234315C8.25327 -0.0781049 7.74673 -0.0781049 7.43431 0.234315C7.12189 0.546734 7.12189 1.05327 7.43431 1.36569L13.2686 7.2H0.8C0.358172 7.2 0 7.55817 0 8C0 8.44183 0.358172 8.8 0.8 8.8H13.2686L7.43431 14.6343C7.12189 14.9467 7.12189 15.4533 7.43431 15.7657C7.74673 16.0781 8.25327 16.0781 8.56569 15.7657L15.7657 8.56569C16.0781 8.25327 16.0781 7.74673 15.7657 7.43431L8.56569 0.234315Z"
+			}))
+		},
 		"./src/reddit/models/Payments/index.ts": function(e, t, o) {
 			"use strict";
 			var n, a, i, r;
@@ -1940,10 +1953,10 @@
 					fbt: D
 				} = o("./node_modules/fbt/lib/FbtPublic.js"),
 				{
-					fbt: q
+					fbt: L
 				} = o("./node_modules/fbt/lib/FbtPublic.js"),
 				{
-					fbt: L
+					fbt: q
 				} = o("./node_modules/fbt/lib/FbtPublic.js");
 			var Y = o("./node_modules/react-router-redux/es/index.js");
 			const W = ({
@@ -2439,18 +2452,18 @@
 					})))], {
 						hk: "1UBYiX"
 					})), null),
-					tipping: i.a.createElement(() => i.a.createElement("main", null, i.a.createElement("h1", null, q._("Tipping", null, {
+					tipping: i.a.createElement(() => i.a.createElement("main", null, i.a.createElement("h1", null, L._("Tipping", null, {
 						hk: "2SJg5w"
-					})), i.a.createElement("h2", null, q._("Community Points can be tipped to other community members for their contributions to the community.", null, {
+					})), i.a.createElement("h2", null, L._("Community Points can be tipped to other community members for their contributions to the community.", null, {
 						hk: "4bInOA"
-					})), q._("{=If someone makes a great post or comment or bot for the community, you can tip them with Points. Just tap on their user avatar or Points balance and choose the option from the menu.}", [q._param("=If someone makes a great post or comment or bot for the community, you can tip them with Points. Just tap on their user avatar or Points balance and choose the option from the menu.", i.a.createElement("p", null, q._("If someone makes a great post or comment or bot for the community, you can tip them with Points. Just tap on their user avatar or Points balance and choose the option from the menu.", null, {
+					})), L._("{=If someone makes a great post or comment or bot for the community, you can tip them with Points. Just tap on their user avatar or Points balance and choose the option from the menu.}", [L._param("=If someone makes a great post or comment or bot for the community, you can tip them with Points. Just tap on their user avatar or Points balance and choose the option from the menu.", i.a.createElement("p", null, L._("If someone makes a great post or comment or bot for the community, you can tip them with Points. Just tap on their user avatar or Points balance and choose the option from the menu.", null, {
 						hk: "1VWiCc"
 					})))], {
 						hk: "19OPwT"
 					}), i.a.createElement("img", {
 						className: g.a.largeCenteredImage,
 						src: `${n.a.assetPath}/img/communityPoints/landingPage/docs/user_card.png`,
-						alt: q._("Tipping Community Points", null, {
+						alt: L._("Tipping Community Points", null, {
 							hk: "2otVJZ"
 						})
 					})), null),
@@ -2471,59 +2484,59 @@
 					})), i.a.createElement("pre", null, i.a.createElement("code", null, "---\nauthor:\n    points_balance: 0\nparent_submission:\n    title (starts-with): Core Contributors Discussion Thread\n    flair_text: Discussion\ntype: submission\naction: filter\nmessage_subject: Pending Approval\nmessage: Our apologies, but in order to limit spam your submission has been automatically removed and is pending moderator approval.\nmodmail_subject: Post From Young Account\nmodmail: /u/{{author}}'s [{{kind}}]({{permalink}}) is pending moderator approval. Please visit the moderation queue to review the post.\n---")), i.a.createElement("p", null, N._("Thank Special Members for supporting the community.", null, {
 						hk: "43lDxM"
 					})), i.a.createElement("pre", null, i.a.createElement("code", null, "---\nauthor:\n    has_special_membership: true\ntype: submission\ncomment_stickied: true\ncomment_locked: true\ncomment: {{author}}, thank you for supporting the community!\n---"))), null),
-					vault: i.a.createElement(() => i.a.createElement("main", null, i.a.createElement("h1", null, L._("Vault", null, {
+					vault: i.a.createElement(() => i.a.createElement("main", null, i.a.createElement("h1", null, q._("Vault", null, {
 						hk: "JRmsq"
-					})), i.a.createElement("h2", null, L._("The Vault is an embedded crypto wallet in the Reddit app and the home for Community Points.", null, {
+					})), i.a.createElement("h2", null, q._("The Vault is an embedded crypto wallet in the Reddit app and the home for Community Points.", null, {
 						hk: "u3o8z"
-					})), L._("{=Reddit Vault is a crypto wallet developed by Reddit to help users manage their Community Points from inside of the Reddit app.}{=In your Vault, you can view Community Points from multiple subreddits, tip them to other users, and spend them on things like Special Memberships.}{=The Vault corresponds to a public Ethereum address. This is the address on the blockchain where your Community Points are stored and that you control. You can see the address by going into your Vault settings (3 dots at the top of the Vault screen).}", [L._param("=Reddit Vault is a crypto wallet developed by Reddit to help users manage their Community Points from inside of the Reddit app.", i.a.createElement("p", null, L._("Reddit Vault is a crypto wallet developed by Reddit to help users manage their Community Points from inside of the Reddit app.", null, {
+					})), q._("{=Reddit Vault is a crypto wallet developed by Reddit to help users manage their Community Points from inside of the Reddit app.}{=In your Vault, you can view Community Points from multiple subreddits, tip them to other users, and spend them on things like Special Memberships.}{=The Vault corresponds to a public Ethereum address. This is the address on the blockchain where your Community Points are stored and that you control. You can see the address by going into your Vault settings (3 dots at the top of the Vault screen).}", [q._param("=Reddit Vault is a crypto wallet developed by Reddit to help users manage their Community Points from inside of the Reddit app.", i.a.createElement("p", null, q._("Reddit Vault is a crypto wallet developed by Reddit to help users manage their Community Points from inside of the Reddit app.", null, {
 						hk: "2oW65r"
-					}))), L._param("=In your Vault, you can view Community Points from multiple subreddits, tip them to other users, and spend them on things like Special Memberships.", i.a.createElement("p", null, L._("In your Vault, you can view Community Points from multiple subreddits, tip them to other users, and spend them on things like Special Memberships.", null, {
+					}))), q._param("=In your Vault, you can view Community Points from multiple subreddits, tip them to other users, and spend them on things like Special Memberships.", i.a.createElement("p", null, q._("In your Vault, you can view Community Points from multiple subreddits, tip them to other users, and spend them on things like Special Memberships.", null, {
 						hk: "3ZpDnr"
-					}))), L._param("=The Vault corresponds to a public Ethereum address. This is the address on the blockchain where your Community Points are stored and that you control. You can see the address by going into your Vault settings (3 dots at the top of the Vault screen).", i.a.createElement("p", null, L._("The Vault corresponds to a public Ethereum address. This is the address on the blockchain where your Community Points are stored and that you control. You can see the address by going into your Vault settings (3 dots at the top of the Vault screen).", null, {
+					}))), q._param("=The Vault corresponds to a public Ethereum address. This is the address on the blockchain where your Community Points are stored and that you control. You can see the address by going into your Vault settings (3 dots at the top of the Vault screen).", i.a.createElement("p", null, q._("The Vault corresponds to a public Ethereum address. This is the address on the blockchain where your Community Points are stored and that you control. You can see the address by going into your Vault settings (3 dots at the top of the Vault screen).", null, {
 						hk: "Or0FC"
 					})))], {
 						hk: "4iSGcP"
-					}), i.a.createElement("section", null, i.a.createElement("h3", null, L._("Create a Vault", null, {
+					}), i.a.createElement("section", null, i.a.createElement("h3", null, q._("Create a Vault", null, {
 						hk: "1h3rBm"
-					})), L._("{=Users who are subscribed to subreddits with Community Points should see Vault in the app menu on the official Reddit Android & iOS apps. When you open Vault for the first time, you will be prompted to create a Vault or restore one that you created earlier.}{=When you create your Vault, you will receive a public address and a private key. The public address is your address on the Ethereum blockchain where the record of your Community Points is stored. The private key is the only way to access and use the Community Points in your Vault.}{=This private key is very important. Whoever has the private key will be able to have full control over your Community Points, and if you lose the private key you could lose access to your Community Points. For that reason, it's very important to make sure it is stored securely and properly backed up.}", [L._param("=Users who are subscribed to subreddits with Community Points should see Vault in the app menu on the official Reddit Android & iOS apps. When you open Vault for the first time, you will be prompted to create a Vault or restore one that you created earlier.", i.a.createElement("p", null, L._("Users who are subscribed to subreddits with Community Points should see Vault in the app menu on the official Reddit Android & iOS apps. When you open Vault for the first time, you will be prompted to create a Vault or restore one that you created earlier.", null, {
+					})), q._("{=Users who are subscribed to subreddits with Community Points should see Vault in the app menu on the official Reddit Android & iOS apps. When you open Vault for the first time, you will be prompted to create a Vault or restore one that you created earlier.}{=When you create your Vault, you will receive a public address and a private key. The public address is your address on the Ethereum blockchain where the record of your Community Points is stored. The private key is the only way to access and use the Community Points in your Vault.}{=This private key is very important. Whoever has the private key will be able to have full control over your Community Points, and if you lose the private key you could lose access to your Community Points. For that reason, it's very important to make sure it is stored securely and properly backed up.}", [q._param("=Users who are subscribed to subreddits with Community Points should see Vault in the app menu on the official Reddit Android & iOS apps. When you open Vault for the first time, you will be prompted to create a Vault or restore one that you created earlier.", i.a.createElement("p", null, q._("Users who are subscribed to subreddits with Community Points should see Vault in the app menu on the official Reddit Android & iOS apps. When you open Vault for the first time, you will be prompted to create a Vault or restore one that you created earlier.", null, {
 						hk: "1XxPFd"
-					}))), L._param("=When you create your Vault, you will receive a public address and a private key. The public address is your address on the Ethereum blockchain where the record of your Community Points is stored. The private key is the only way to access and use the Community Points in your Vault.", i.a.createElement("p", null, L._("When you create your Vault, you will receive a public address and a private key. The public address is your address on the Ethereum blockchain where the record of your Community Points is stored. The private key is the only way to access and use the Community Points in your Vault.", null, {
+					}))), q._param("=When you create your Vault, you will receive a public address and a private key. The public address is your address on the Ethereum blockchain where the record of your Community Points is stored. The private key is the only way to access and use the Community Points in your Vault.", i.a.createElement("p", null, q._("When you create your Vault, you will receive a public address and a private key. The public address is your address on the Ethereum blockchain where the record of your Community Points is stored. The private key is the only way to access and use the Community Points in your Vault.", null, {
 						hk: "4h0atv"
-					}))), L._param("=This private key is very important. Whoever has the private key will be able to have full control over your Community Points, and if you lose the private key you could lose access to your Community Points. For that reason, it's very important to make sure it is stored securely and properly backed up.", i.a.createElement("p", null, L._("This private key is very important. Whoever has the private key will be able to have full control over your Community Points, and if you lose the private key you could lose access to your Community Points. For that reason, it's very important to make sure it is stored securely and properly backed up.", null, {
+					}))), q._param("=This private key is very important. Whoever has the private key will be able to have full control over your Community Points, and if you lose the private key you could lose access to your Community Points. For that reason, it's very important to make sure it is stored securely and properly backed up.", i.a.createElement("p", null, q._("This private key is very important. Whoever has the private key will be able to have full control over your Community Points, and if you lose the private key you could lose access to your Community Points. For that reason, it's very important to make sure it is stored securely and properly backed up.", null, {
 						hk: "1RTGVt"
 					})))], {
 						hk: "2QyHrm"
-					})), i.a.createElement("section", null, i.a.createElement("h3", null, L._("Backup & Recovery", null, {
+					})), i.a.createElement("section", null, i.a.createElement("h3", null, q._("Backup & Recovery", null, {
 						hk: "4f33gk"
-					})), L._("{=You have two options to back up your private key.}{=The first option is to back it up in a secure way with Reddit. In this option, you encrypt your private key with a unique Vault Password that only you know (separate from your Reddit password) and store the encrypted version on Reddit. Since it is encrypted, Reddit is not able to see your private key and cannot use it.}{=The second option is to save a Recovery Phrase somewhere secure. The recovery phrase is 12 words in a particular order that can be used to recreate your private key within Vault or in other wallets. Keep this safe — we recommend using a password manager like LastPass.}{=It is very important that you never give your Vault Password or Recovery Phrase to anyone else, ever. No Reddit employee will ever ask you for either of them.}{=There are two corresponding ways to recover your Vault.}{=You can recover Vaults that you backed up with Reddit through the Vault signup flow. When you go to create a new Vault, you will be presented with older Vaults that you made that are backed up with Reddit. If you choose to recover one of those, you will be prompted for the password you set when you created it. If you want to switch to another Vault, you can sign out of your current Vault through the settings.}{=You can also recover a Vault using the Recovery Phrase. When you start to create a Vault, you will see an option to use your Recovery Phrase. Enter in the 12 words in the same order that they were provided when you first created the Vault.}{=Note that you can only have one active Vault at any time. In each distribution, your Community Points will be sent to the Vault that is actively associated with your account at the time that distribution is finalized Every time you create or recover a Vault, it is immediately set as your active Vault.}", [L._param("=You have two options to back up your private key.", i.a.createElement("p", null, L._("You have two options to back up your private key.", null, {
+					})), q._("{=You have two options to back up your private key.}{=The first option is to back it up in a secure way with Reddit. In this option, you encrypt your private key with a unique Vault Password that only you know (separate from your Reddit password) and store the encrypted version on Reddit. Since it is encrypted, Reddit is not able to see your private key and cannot use it.}{=The second option is to save a Recovery Phrase somewhere secure. The recovery phrase is 12 words in a particular order that can be used to recreate your private key within Vault or in other wallets. Keep this safe — we recommend using a password manager like LastPass.}{=It is very important that you never give your Vault Password or Recovery Phrase to anyone else, ever. No Reddit employee will ever ask you for either of them.}{=There are two corresponding ways to recover your Vault.}{=You can recover Vaults that you backed up with Reddit through the Vault signup flow. When you go to create a new Vault, you will be presented with older Vaults that you made that are backed up with Reddit. If you choose to recover one of those, you will be prompted for the password you set when you created it. If you want to switch to another Vault, you can sign out of your current Vault through the settings.}{=You can also recover a Vault using the Recovery Phrase. When you start to create a Vault, you will see an option to use your Recovery Phrase. Enter in the 12 words in the same order that they were provided when you first created the Vault.}{=Note that you can only have one active Vault at any time. In each distribution, your Community Points will be sent to the Vault that is actively associated with your account at the time that distribution is finalized Every time you create or recover a Vault, it is immediately set as your active Vault.}", [q._param("=You have two options to back up your private key.", i.a.createElement("p", null, q._("You have two options to back up your private key.", null, {
 						hk: "1FIBMf"
-					}))), L._param("=The first option is to back it up in a secure way with Reddit. In this option, you encrypt your private key with a unique Vault Password that only you know (separate from your Reddit password) and store the encrypted version on Reddit. Since it is encrypted, Reddit is not able to see your private key and cannot use it.", i.a.createElement("p", null, L._("The first option is to back it up in a secure way with Reddit. In this option, you encrypt your private key with a unique Vault Password that only you know (separate from your Reddit password) and store the encrypted version on Reddit. Since it is encrypted, Reddit is not able to see your private key and cannot use it.", null, {
+					}))), q._param("=The first option is to back it up in a secure way with Reddit. In this option, you encrypt your private key with a unique Vault Password that only you know (separate from your Reddit password) and store the encrypted version on Reddit. Since it is encrypted, Reddit is not able to see your private key and cannot use it.", i.a.createElement("p", null, q._("The first option is to back it up in a secure way with Reddit. In this option, you encrypt your private key with a unique Vault Password that only you know (separate from your Reddit password) and store the encrypted version on Reddit. Since it is encrypted, Reddit is not able to see your private key and cannot use it.", null, {
 						hk: "2VBUWJ"
-					}))), L._param("=The second option is to save a Recovery Phrase somewhere secure. The recovery phrase is 12 words in a particular order that can be used to recreate your private key within Vault or in other wallets. Keep this safe — we recommend using a password manager like LastPass.", i.a.createElement("p", null, L._("The second option is to save a Recovery Phrase somewhere secure. The recovery phrase is 12 words in a particular order that can be used to recreate your private key within Vault or in other wallets. Keep this safe — we recommend using a password manager like LastPass.", null, {
+					}))), q._param("=The second option is to save a Recovery Phrase somewhere secure. The recovery phrase is 12 words in a particular order that can be used to recreate your private key within Vault or in other wallets. Keep this safe — we recommend using a password manager like LastPass.", i.a.createElement("p", null, q._("The second option is to save a Recovery Phrase somewhere secure. The recovery phrase is 12 words in a particular order that can be used to recreate your private key within Vault or in other wallets. Keep this safe — we recommend using a password manager like LastPass.", null, {
 						hk: "DrBLW"
-					}))), L._param("=It is very important that you never give your Vault Password or Recovery Phrase to anyone else, ever. No Reddit employee will ever ask you for either of them.", i.a.createElement("p", null, L._("It is very important that you never give your Vault Password or Recovery Phrase to anyone else, ever. No Reddit employee will ever ask you for either of them.", null, {
+					}))), q._param("=It is very important that you never give your Vault Password or Recovery Phrase to anyone else, ever. No Reddit employee will ever ask you for either of them.", i.a.createElement("p", null, q._("It is very important that you never give your Vault Password or Recovery Phrase to anyone else, ever. No Reddit employee will ever ask you for either of them.", null, {
 						hk: "3oZe4I"
-					}))), L._param("=There are two corresponding ways to recover your Vault.", i.a.createElement("p", null, L._("There are two corresponding ways to recover your Vault.", null, {
+					}))), q._param("=There are two corresponding ways to recover your Vault.", i.a.createElement("p", null, q._("There are two corresponding ways to recover your Vault.", null, {
 						hk: "jlR9X"
-					}))), L._param("=You can recover Vaults that you backed up with Reddit through the Vault signup flow. When you go to create a new Vault, you will be presented with older Vaults that you made that are backed up with Reddit. If you choose to recover one of those, you will be prompted for the password you set when you created it. If you want to switch to another Vault, you can sign out of your current Vault through the settings.", i.a.createElement("p", null, L._("You can recover Vaults that you backed up with Reddit through the Vault signup flow. When you go to create a new Vault, you will be presented with older Vaults that you made that are backed up with Reddit. If you choose to recover one of those, you will be prompted for the password you set when you created it. If you want to switch to another Vault, you can sign out of your current Vault through the settings.", null, {
+					}))), q._param("=You can recover Vaults that you backed up with Reddit through the Vault signup flow. When you go to create a new Vault, you will be presented with older Vaults that you made that are backed up with Reddit. If you choose to recover one of those, you will be prompted for the password you set when you created it. If you want to switch to another Vault, you can sign out of your current Vault through the settings.", i.a.createElement("p", null, q._("You can recover Vaults that you backed up with Reddit through the Vault signup flow. When you go to create a new Vault, you will be presented with older Vaults that you made that are backed up with Reddit. If you choose to recover one of those, you will be prompted for the password you set when you created it. If you want to switch to another Vault, you can sign out of your current Vault through the settings.", null, {
 						hk: "4xWnCz"
-					}))), L._param("=You can also recover a Vault using the Recovery Phrase. When you start to create a Vault, you will see an option to use your Recovery Phrase. Enter in the 12 words in the same order that they were provided when you first created the Vault.", i.a.createElement("p", null, L._("You can also recover a Vault using the Recovery Phrase. When you start to create a Vault, you will see an option to use your Recovery Phrase. Enter in the 12 words in the same order that they were provided when you first created the Vault.", null, {
+					}))), q._param("=You can also recover a Vault using the Recovery Phrase. When you start to create a Vault, you will see an option to use your Recovery Phrase. Enter in the 12 words in the same order that they were provided when you first created the Vault.", i.a.createElement("p", null, q._("You can also recover a Vault using the Recovery Phrase. When you start to create a Vault, you will see an option to use your Recovery Phrase. Enter in the 12 words in the same order that they were provided when you first created the Vault.", null, {
 						hk: "iuwnh"
-					}))), L._param("=Note that you can only have one active Vault at any time. In each distribution, your Community Points will be sent to the Vault that is actively associated with your account at the time that distribution is finalized Every time you create or recover a Vault, it is immediately set as your active Vault.", i.a.createElement("p", null, L._("Note that you can only have one active Vault at any time. In each distribution, your Community Points will be sent to the Vault that is actively associated with your account at the time that distribution is {=finalized}. Every time you create or recover a Vault, it is immediately set as your active Vault.", [L._param("=finalized", i.a.createElement(b.a, {
+					}))), q._param("=Note that you can only have one active Vault at any time. In each distribution, your Community Points will be sent to the Vault that is actively associated with your account at the time that distribution is finalized Every time you create or recover a Vault, it is immediately set as your active Vault.", i.a.createElement("p", null, q._("Note that you can only have one active Vault at any time. In each distribution, your Community Points will be sent to the Vault that is actively associated with your account at the time that distribution is {=finalized}. Every time you create or recover a Vault, it is immediately set as your active Vault.", [q._param("=finalized", i.a.createElement(b.a, {
 						to: h("distribution-process")
-					}, L._("finalized", null, {
+					}, q._("finalized", null, {
 						hk: "4ulHIk"
 					})))], {
 						hk: "2j04B5"
 					})))], {
 						hk: "28GGHl"
-					})), i.a.createElement("section", null, i.a.createElement("h3", null, L._("Using Vault on web", null, {
+					})), i.a.createElement("section", null, i.a.createElement("h3", null, q._("Using Vault on web", null, {
 						hk: "4lZpy1"
-					})), L._("{=Users who have backed up their Vault to Reddit servers with a password can also use their Vault on desktop web (new Reddit). For example, you can sign up for Special Memberships and send Points to other users.}{=When you use your Points on web, your encrypted key is downloaded to your browser and you will be prompted for the password you used to create it.}{=If you would like to use your Vault on web, but have not backed up your Vault to Reddit servers, you can create a backup by going to Vault Settings on your mobile device.}", [L._param("=Users who have backed up their Vault to Reddit servers with a password can also use their Vault on desktop web (new Reddit). For example, you can sign up for Special Memberships and send Points to other users.", i.a.createElement("p", null, L._("Users who have backed up their Vault to Reddit servers with a password can also use their Vault on desktop web (new Reddit). For example, you can sign up for Special Memberships and send Points to other users.", null, {
+					})), q._("{=Users who have backed up their Vault to Reddit servers with a password can also use their Vault on desktop web (new Reddit). For example, you can sign up for Special Memberships and send Points to other users.}{=When you use your Points on web, your encrypted key is downloaded to your browser and you will be prompted for the password you used to create it.}{=If you would like to use your Vault on web, but have not backed up your Vault to Reddit servers, you can create a backup by going to Vault Settings on your mobile device.}", [q._param("=Users who have backed up their Vault to Reddit servers with a password can also use their Vault on desktop web (new Reddit). For example, you can sign up for Special Memberships and send Points to other users.", i.a.createElement("p", null, q._("Users who have backed up their Vault to Reddit servers with a password can also use their Vault on desktop web (new Reddit). For example, you can sign up for Special Memberships and send Points to other users.", null, {
 						hk: "3Q0UIE"
-					}))), L._param("=When you use your Points on web, your encrypted key is downloaded to your browser and you will be prompted for the password you used to create it.", i.a.createElement("p", null, L._("When you use your Points on web, your encrypted key is downloaded to your browser and you will be prompted for the password you used to create it.", null, {
+					}))), q._param("=When you use your Points on web, your encrypted key is downloaded to your browser and you will be prompted for the password you used to create it.", i.a.createElement("p", null, q._("When you use your Points on web, your encrypted key is downloaded to your browser and you will be prompted for the password you used to create it.", null, {
 						hk: "1dq5v2"
-					}))), L._param("=If you would like to use your Vault on web, but have not backed up your Vault to Reddit servers, you can create a backup by going to Vault Settings on your mobile device.", i.a.createElement("p", null, L._("If you would like to use your Vault on web, but have not backed up your Vault to Reddit servers, you can create a backup by going to Vault Settings on your mobile device.", null, {
+					}))), q._param("=If you would like to use your Vault on web, but have not backed up your Vault to Reddit servers, you can create a backup by going to Vault Settings on your mobile device.", i.a.createElement("p", null, q._("If you would like to use your Vault on web, but have not backed up your Vault to Reddit servers, you can create a backup by going to Vault Settings on your mobile device.", null, {
 						hk: "1tITN"
 					})))], {
 						hk: "1xjedp"
@@ -3448,11 +3461,11 @@
 			var Fe = o("./src/higherOrderComponents/asModal/index.tsx"),
 				Oe = o("./src/reddit/components/Econ/Common/ModalCloseButton/index.tsx"),
 				De = o("./src/reddit/pages/meta/CommunityPointsLearnMorePage/Sections/CryptoFuture/carouselModal.m.less"),
-				qe = o.n(De);
-			const Le = Object(Fe.a)(({
+				Le = o.n(De);
+			const qe = Object(Fe.a)(({
 				onClose: e
 			}) => i.a.createElement("div", {
-				className: qe.a.container
+				className: Le.a.container
 			}, i.a.createElement(Oe.a, {
 				onClick: e,
 				highContrast: !0
@@ -3499,7 +3512,7 @@
 					onClick: () => o(!0)
 				}, Ge._("A New Frontier", null, {
 					hk: "4GrPd2"
-				})))), t && i.a.createElement(Le, {
+				})))), t && i.a.createElement(qe, {
 					className: We.a.modal,
 					overlayClassName: We.a.modalOverlay,
 					withOverlay: !0,
@@ -3878,9 +3891,9 @@
 			})), o.d(t, "b", (function() {
 				return D
 			})), o.d(t, "w", (function() {
-				return q
-			})), o.d(t, "s", (function() {
 				return L
+			})), o.d(t, "s", (function() {
+				return q
 			})), o.d(t, "t", (function() {
 				return Y
 			})), o.d(t, "g", (function() {
@@ -4092,11 +4105,11 @@
 					if (!t) return;
 					return e.economics.emotes[t]
 				},
-				q = (e, t) => {
+				L = (e, t) => {
 					const o = t && e.economics.gifs[t];
 					return !!o && o.hasGifProduct
 				},
-				L = (e, t, o) => {
+				q = (e, t, o) => {
 					if (Object(h.r)(e, {
 							subredditId: t
 						})) return !0;
@@ -4117,7 +4130,7 @@
 					});
 					if (a && Object(i.b)(a)) return !0;
 					const r = n.d.spGiphy(e),
-						s = q(e, t);
+						s = L(e, t);
 					return !(!r || !s) || r && s
 				},
 				W = (e, t, o) => {
@@ -4130,4 +4143,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.fdb03a4734f9342eeb20.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.f18bd7af16a9fd1c20b4.js.map

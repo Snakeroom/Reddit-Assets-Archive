@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.ecacda0412170863c1b7.js
-// Retrieved at 12/13/2021, 9:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.586e6a3c54ef34a7af1e.js
+// Retrieved at 12/13/2021, 2:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/lib/delay/index.ts": function(e, t, n) {
@@ -244,8 +244,8 @@
 						return e
 				}
 			};
-			const F = {};
-			var H = (e = F, t) => {
+			const H = {};
+			var F = (e = H, t) => {
 					switch (t.type) {
 						case j.n: {
 							const {
@@ -370,7 +370,7 @@
 					api: S,
 					fetchedTokens: T,
 					inContext: L,
-					loadMore: H,
+					loadMore: F,
 					models: R,
 					search: G,
 					userOrder: X
@@ -746,8 +746,8 @@
 				T = n("./src/reddit/icons/svgs/Premium/index.tsx"),
 				A = n("./src/reddit/models/Gold/Award.ts"),
 				L = n("./src/reddit/models/User/index.ts"),
-				F = n("./src/reddit/components/HumanDate/index.tsx"),
-				H = n("./src/reddit/components/ProfileIdCard/AwardedLastMonth.tsx"),
+				H = n("./src/reddit/components/HumanDate/index.tsx"),
+				F = n("./src/reddit/components/ProfileIdCard/AwardedLastMonth.tsx"),
 				D = n("./src/reddit/components/ProfileIdCard/UserProfileOverview/UserSnoovatar/index.tsx"),
 				M = n("./src/reddit/actions/inContextModeration.ts"),
 				R = n("./src/reddit/actions/modal.ts"),
@@ -907,7 +907,7 @@
 					})
 				}), e.user.isGold && s.a.createElement(_.a, {
 					to: "/premium"
-				}, s.a.createElement(le, null))), s.a.createElement(me, null, e.user.username && s.a.createElement(pe, null, e.user.username, s.a.createElement(be, null, "•")), s.a.createElement(pe, null, (e.user.createdUtc || e.user.created) && s.a.createElement(F.d, {
+				}, s.a.createElement(le, null))), s.a.createElement(me, null, e.user.username && s.a.createElement(pe, null, e.user.username, s.a.createElement(be, null, "•")), s.a.createElement(pe, null, (e.user.createdUtc || e.user.created) && s.a.createElement(H.d, {
 					seconds: e.user.createdUtc || e.user.created
 				})))),
 				Pe = e => {
@@ -1002,18 +1002,18 @@
 						{
 							awardedLastMonth: A
 						} = h,
-						F = !!h.snoovatarFullBodyAsset,
+						H = !!h.snoovatarFullBodyAsset,
 						M = h.isNSFW && a;
 					let R;
-					return R = F ? !M && E && E.bannerBackgroundImage || void 0 : M ? `${g.a.assetPath}/img/user-info-banner.png` : e.user.bannerImage, s.a.createElement(we, {
+					return R = H ? !M && E && E.bannerBackgroundImage || void 0 : M ? `${g.a.assetPath}/img/user-info-banner.png` : e.user.bannerImage, s.a.createElement(we, {
 						className: t,
 						id: o,
 						style: b
-					}, !F && R && s.a.createElement(ye, {
+					}, !H && R && s.a.createElement(ye, {
 						style: {
 							backgroundImage: `url('${R}')`
 						}
-					}), s.a.createElement(je, null, F ? s.a.createElement(D.a, {
+					}), s.a.createElement(je, null, H ? s.a.createElement(D.a, {
 						isHovercard: !0,
 						bannerBackgroundImage: R,
 						compact: !0,
@@ -1040,7 +1040,7 @@
 					})), s.a.createElement(Pe, {
 						showAwardKarma: p,
 						user: h
-					}), A && s.a.createElement(H.a, {
+					}), A && s.a.createElement(F.a, {
 						recentAwardings: A,
 						topAwardIcon: x,
 						username: v
@@ -1689,7 +1689,7 @@
 					className: Object(c.a)(x.a.banner, x.a.wrappedRedditBanner),
 					style: j
 				}, a.a.createElement(C.a, {
-					to: y.a,
+					to: y.b,
 					className: x.a.bannerContainer,
 					onClick: e
 				}, a.a.createElement("div", {
@@ -1777,8 +1777,8 @@
 				A = n("./src/reddit/helpers/trackers/inbox.ts"),
 				L = n("./src/reddit/pages/NotificationsInbox/Content/EmptyState.tsx");
 
-			function F() {
-				return (F = Object.assign || function(e) {
+			function H() {
+				return (H = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -1786,7 +1786,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const H = {},
+			const F = {},
 				D = "",
 				M = 0,
 				R = "200px",
@@ -1798,7 +1798,7 @@
 			class J extends a.a.Component {
 				constructor() {
 					super(...arguments), this.container = a.a.createRef(), this.state = {
-						notificationHeights: H,
+						notificationHeights: F,
 						currentNotificationCursorIndex: -1
 					}, this.resetOverflowMenu = () => {
 						this.props.activeOverflowMenuId.length > M && this.props.setActiveOverflowMenuId(D)
@@ -1841,7 +1841,7 @@
 								notifications: s
 							} = this.props,
 							o = s.length > n + G;
-						return (r && s.length > 0 && o ? s.slice(0, n + 1) : s).map((n, r) => a.a.createElement(U, F({}, e, {
+						return (r && s.length > 0 && o ? s.slice(0, n + 1) : s).map((n, r) => a.a.createElement(U, H({}, e, {
 							index: r,
 							key: r,
 							notification: n,
@@ -3493,6 +3493,24 @@
 				stopColor: "#FF8717"
 			}))))
 		},
+		"./src/reddit/icons/svgs/Shirt/index.tsx": function(e, t, n) {
+			"use strict";
+			var r = n("./node_modules/react/index.js"),
+				s = n.n(r);
+			t.a = function({
+				className: e
+			}) {
+				return s.a.createElement("svg", {
+					className: e,
+					xmlns: "http://www.w3.org/2000/svg",
+					viewBox: "0 0 20 20"
+				}, s.a.createElement("g", {
+					fill: "inherit"
+				}, s.a.createElement("path", {
+					d: "M7 1.75a.486.486 0 01.487.4 2.574 2.574 0 005.085 0 .488.488 0 01.488-.4h1.583A.5.5 0 0115 1.9l3.951 4.09a.5.5 0 01-.006.7l-1.931 1.938a.5.5 0 01-.649.05l-1.482-1.084.007 10.156a.5.5 0 01-.5.5H5.385a.5.5 0 01-.5-.5l.007-10.156L3.7 8.626a.5.5 0 01-.677-.026L1.115 6.694a.5.5 0 01-.006-.7L5.06 1.9a.5.5 0 01.359-.153z"
+				})))
+			}
+		},
 		"./src/reddit/icons/svgs/Snoo/index.tsx": function(e, t, n) {
 			"use strict";
 			var r = n("./node_modules/react/index.js"),
@@ -3604,14 +3622,17 @@
 		},
 		"./src/reddit/routes/wrappedreddit/index.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "a", (function() {
+			n.d(t, "b", (function() {
 				return o
+			})), n.d(t, "a", (function() {
+				return i
 			}));
 			var r = n("./node_modules/@loadable/component/dist/loadable.esm.js"),
 				s = n("./src/lib/constants/index.ts"),
 				a = n("./src/reddit/actions/pages/wrappedReddit.ts");
 			const o = "/RedditRecap2021",
-				i = {
+				i = "https://i.redd.it/8yb4biw7bf481.png",
+				c = {
 					action: a.a,
 					chunk: s.s.WRAPPED_REDDIT,
 					component: Object(r.a)({
@@ -3640,7 +3661,7 @@
 					},
 					path: o
 				};
-			t.b = i
+			t.c = c
 		},
 		"./src/reddit/selectors/bannedUser.ts": function(e, t, n) {
 			"use strict";
@@ -3702,4 +3723,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.ecacda0412170863c1b7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.586e6a3c54ef34a7af1e.js.map

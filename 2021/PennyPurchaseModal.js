@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.ce1d1e959ea3676af9e7.js
-// Retrieved at 12/13/2021, 11:10:14 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.2bdeb2387feb7e9ba838.js
+// Retrieved at 12/13/2021, 2:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PennyPurchaseModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, a) {
@@ -50,9 +50,9 @@
 			})), a.d(t, "g", (function() {
 				return S
 			})), a.d(t, "f", (function() {
-				return I
-			})), a.d(t, "d", (function() {
 				return M
+			})), a.d(t, "d", (function() {
+				return I
 			})), a.d(t, "c", (function() {
 				return T
 			})), a.d(t, "a", (function() {
@@ -60,9 +60,9 @@
 			})), a.d(t, "h", (function() {
 				return L
 			})), a.d(t, "e", (function() {
-				return q
+				return H
 			})), a.d(t, "i", (function() {
-				return V
+				return q
 			}));
 			var r = a("./node_modules/fbt/lib/FbtPublic.js"),
 				n = a("./node_modules/lodash/omit.js"),
@@ -133,8 +133,8 @@
 					let x, O, _ = "";
 					try {
 						_ = await d(w(a, n, v))
-					} catch (I) {
-						return p.c.captureException(I), void(I.message && d(Object(g.stripeApiError)(I.message)))
+					} catch (M) {
+						return p.c.captureException(M), void(M.message && d(Object(g.stripeApiError)(M.message)))
 					}
 					d(Object(g.stripeTokenPending)());
 					const S = Object(y.y)(u);
@@ -172,11 +172,11 @@
 							powerupsCount: n,
 							user: P,
 							isAnonymous: r
-						})) : h && d(q({
+						})) : h && d(H({
 							user: P
 						})))
-					} catch (I) {
-						p.c.captureException(I), d(N)
+					} catch (M) {
+						p.c.captureException(M), d(N)
 					}
 				}, S = (e, t, a, r, n) => async (s, o, {
 					gqlContext: i
@@ -241,7 +241,7 @@
 									powerupsCount: a,
 									user: r,
 									isAnonymous: t
-								})) : h && s(q({
+								})) : h && s(H({
 									user: r
 								})), null
 							}
@@ -250,7 +250,7 @@
 						p.c.captureException(_)
 					}
 					return s(Object(g.paypalApiError)(O())), null
-				}, I = (e, t) => async (a, r, {
+				}, M = (e, t) => async (a, r, {
 					gqlContext: n
 				}) => {
 					var s;
@@ -266,7 +266,7 @@
 						p.c.captureException(o)
 					}
 					return a(Object(g.paypalApiError)(O())), !1
-				}, M = () => async (e, t, {
+				}, I = () => async (e, t, {
 					gqlContext: a
 				}) => {
 					e(Object(g.savedCardsPending)());
@@ -341,13 +341,13 @@
 						forceLoad: !0,
 						fullData: !1
 					})), t(Object(x.g)(i.a.ECON_POWERUPS_PURCHASE)), t(Object(x.h)(i.a.ECON_POWERUPS_SUCCESS))
-				}, Q = Object(u.a)(b.W), q = ({
+				}, Q = Object(u.a)(b.W), H = ({
 					user: e
 				}) => async t => {
 					await t(Object(v.o)(!0)), t(Q({
 						user: e
 					}))
-				}, V = Object(u.a)(b.ab)
+				}, q = Object(u.a)(b.ab)
 		},
 		"./src/reddit/components/CheckoutForm/index.m.less": function(e, t, a) {
 			e.exports = {
@@ -448,7 +448,7 @@
 		"./src/reddit/components/CoinPurchaseModal/SelectPaymentPage.tsx": function(e, t, a) {
 			"use strict";
 			a.d(t, "a", (function() {
-				return W
+				return V
 			}));
 			var r = a("./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js"),
 				n = a("./node_modules/fbt/lib/FbtPublic.js"),
@@ -480,7 +480,7 @@
 			const S = Object(j.c)({
 				isGild: e => !!Object(w.s)(e)
 			});
-			class I extends o.a.Component {
+			class M extends o.a.Component {
 				constructor() {
 					super(...arguments), this.onPayment = () => this.props.createPayment(), this.onAuthorize = e => {
 						const {
@@ -519,7 +519,7 @@
 					}))
 				}
 			}
-			const M = Object(E.b)(S, (e, t) => ({
+			const I = Object(E.b)(S, (e, t) => ({
 				createPayment: () => "coinPackage" in t ? e(Object(N.f)(t.coinPackage)) : "awardId" in t ? e(Object(_.d)(t.awardId, t.pennies, t.thingId)) : void 0,
 				executePayment: (a, r) => {
 					if ("coinPackage" in t) {
@@ -527,9 +527,9 @@
 						e(Object(N.g)(r, t.coinPackage))
 					} else "awardId" in t && e(Object(_.c)(r))
 				}
-			}))(I);
+			}))(M);
 			var T = Object(O.a)({
-					getComponent: () => Object(k.c)().then(() => M),
+					getComponent: () => Object(k.c)().then(() => I),
 					ErrorComponent: () => null,
 					LoadingComponent: () => null
 				}),
@@ -591,7 +591,7 @@
 			const {
 				fbt: Q
 			} = a("./node_modules/fbt/lib/FbtPublic.js");
-			var q = e => {
+			var H = e => {
 				const t = Object(h.a)();
 				return o.a.createElement("div", {
 					className: R.a.purchaseHeader,
@@ -623,7 +623,7 @@
 					"data-redditstyle": !0
 				})))
 			};
-			var V = e => {
+			var q = e => {
 				const t = Object(h.a)(),
 					a = [];
 				if (e.purchasePackage && a.push(n.fbt._("{coinCount} will automatically be spent on this {awardName} Award.", [n.fbt._param("coinCount", Object(l.b)(e.award.coinPrice, {
@@ -672,19 +672,19 @@
 					"data-redditstyle": !0
 				})))
 			};
-			const W = e => {
+			const V = e => {
 				const t = Object(h.a)(),
 					a = Object(c.a)(),
 					s = e.purchasePackage ? e.purchasePackage.pennies : e.selectedAward.pennyPrice || 0;
 				return o.a.createElement(r.Elements, {
 					stripe: a
-				}, o.a.createElement(o.a.Fragment, null, e.gildThingId ? o.a.createElement(V, {
+				}, o.a.createElement(o.a.Fragment, null, e.gildThingId ? o.a.createElement(q, {
 					coinBalance: e.coinBalance,
 					award: e.selectedAward,
 					purchasePackage: e.purchasePackage,
 					userName: e.userName,
 					onCloseClick: e.onCloseModal
-				}) : e.purchasePackage && o.a.createElement(q, {
+				}) : e.purchasePackage && o.a.createElement(H, {
 					coinBalance: e.coinBalance,
 					purchasePackage: e.purchasePackage,
 					userName: e.userName,
@@ -1064,7 +1064,7 @@
 					}))
 				}
 			}
-			const I = Object(c.a)(S);
+			const M = Object(c.a)(S);
 			t.default = _(Object(p.c)(class extends n.a.PureComponent {
 				constructor() {
 					super(...arguments), this.onTryCloseModal = () => {
@@ -1086,7 +1086,7 @@
 							paddingBottom: 12
 						} : {}
 					};
-					return n.a.createElement(I, w({}, this.props, {
+					return n.a.createElement(M, w({}, this.props, {
 						className: Object(i.a)(this.props.className, k.a.pennyPurchaseModal),
 						onCloseModal: this.onCloseModal,
 						onOverlayClick: this.onTryCloseModal,
@@ -1338,7 +1338,7 @@
 						return null
 				}
 			};
-			class I extends n.a.PureComponent {
+			class M extends n.a.PureComponent {
 				constructor() {
 					super(...arguments), this.state = {
 						showConfirmText: !1
@@ -1395,7 +1395,7 @@
 					})))
 				}
 			}
-			var M = I;
+			var I = M;
 			const T = Object(o.c)({
 					rememberCard: m.v,
 					savedCard: e => Object(m.x)(e)[0],
@@ -1429,7 +1429,7 @@
 					}, m && n.a.createElement(l.a, {
 						className: O.a.loader,
 						sizePx: 60
-					}), u && o && n.a.createElement("form", null, n.a.createElement(M, {
+					}), u && o && n.a.createElement("form", null, n.a.createElement(I, {
 						nightmode: t,
 						onDelete: a,
 						savedCard: o
@@ -1812,6 +1812,33 @@
 				return C || (C = m(u.a.stripe.apiKey(e))), C
 			}
 		},
+		"./src/reddit/icons/svgs/Trash2/index.m.less": function(e, t, a) {
+			e.exports = {
+				icon: "_1Fa4RPHlhrfUZuNaXK2-eP"
+			}
+		},
+		"./src/reddit/icons/svgs/Trash2/index.tsx": function(e, t, a) {
+			"use strict";
+			a.d(t, "a", (function() {
+				return d
+			}));
+			var r = a("./node_modules/react/index.js"),
+				n = a.n(r),
+				s = a("./src/lib/classNames/index.ts"),
+				o = a("./src/reddit/icons/svgs/Trash2/index.m.less"),
+				c = a.n(o);
+			const d = e => n.a.createElement("svg", {
+				className: Object(s.a)(c.a.icon, e.className),
+				viewBox: "0 0 20 20",
+				xmlns: "http://www.w3.org/2000/svg",
+				onClick: e.onClick
+			}, n.a.createElement("path", {
+				d: "M16.5,2H12.71l-.85-.85A.5.5,0,0,0,11.5,1h-3a.5.5,0,0,0-.35.15L7.29,2H3.5a.5.5,0,0,0-.5.5v1a.5.5,0,0,0,.5.5h13a.5.5,0,0,0,.5-.5v-1A.5.5,0,0,0,16.5,2Z"
+			}), n.a.createElement("path", {
+				d: "M16.5,5H3.5a.5.5,0,0,0-.5.5v12A1.5,1.5,0,0,0,4.5,19h11A1.5,1.5,0,0,0,17,17.5V5.5A.5.5,0,0,0,16.5,5ZM6.75,15.5a.75.75,0,0,1-1.5,0v-7a.75.75,0,0,1,1.5,0Zm4,0a.75.75,0,0,1-1.5,0v-7a.75.75,0,0,1,1.5,0Zm4,0a.75.75,0,0,1-1.5,0v-7a.75.75,0,0,1,1.5,0Z"
+			}));
+			t.b = d
+		},
 		"./src/reddit/models/Payments/index.ts": function(e, t, a) {
 			"use strict";
 			var r, n, s, o;
@@ -1939,4 +1966,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PennyPurchaseModal.ce1d1e959ea3676af9e7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PennyPurchaseModal.2bdeb2387feb7e9ba838.js.map

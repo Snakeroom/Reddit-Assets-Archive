@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.51260a1a904494275bf4.js
-// Retrieved at 12/13/2021, 9:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.a8914251b16c1f6f9adf.js
+// Retrieved at 12/13/2021, 2:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./src/reddit/actions/economics/predictions/modTools.ts": function(e, t, s) {
@@ -336,12 +336,12 @@
 				e.UNSET = "unset", e.MOD_FLATLIST = "postModFlatlist", e.POST_OVERFLOW = "postOverlay"
 			}(n || (n = {}));
 			const M = (e, t = !1, s = n.UNSET) => `PostFlair__Modal-[postId: ${e}]-isOverlay[${t}]-position[${s}]`,
-				P = Object(c.c)({
+				w = Object(c.c)({
 					flairData: O.d,
 					subreddit: k.R,
 					isMod: (e, t) => !!Object(_.m)(e, t)
 				});
-			class w extends a.a.Component {
+			class P extends a.a.Component {
 				constructor(e) {
 					super(e), this.getTrackingNoun = (e, t) => this.props.isMod ? e : t, this.onApply = () => {
 						const {
@@ -424,9 +424,9 @@
 					}))))
 				}
 			}
-			const g = Object(i.b)(P, (e, t) => ({
+			const g = Object(i.b)(w, (e, t) => ({
 				closeModal: () => e(Object(m.i)(t.modalId))
-			}))(w);
+			}))(P);
 			t.a = Object(l.a)(Object(d.c)(g))
 		},
 		"./src/reddit/components/PostModModeDropdown/DropdownHelpers.m.less": function(e, t, s) {
@@ -462,9 +462,9 @@
 			})), s.d(t, "c", (function() {
 				return M
 			})), s.d(t, "e", (function() {
-				return P
-			})), s.d(t, "g", (function() {
 				return w
+			})), s.d(t, "g", (function() {
+				return P
 			}));
 			var n = s("./node_modules/react/index.js"),
 				o = s.n(n),
@@ -497,8 +497,8 @@
 				M = () => o.a.createElement(b.a, {
 					className: f.a.svgIcon
 				}),
-				P = r.a.wrapped(a.b, "DropdownRow", f.a),
-				w = r.a.div("ListContainer", f.a)
+				w = r.a.wrapped(a.b, "DropdownRow", f.a),
+				P = r.a.div("ListContainer", f.a)
 		},
 		"./src/reddit/components/PostModModeDropdown/_PostModModeDropdown.m.less": function(e, t, s) {
 			e.exports = {
@@ -531,20 +531,20 @@
 				j = s("./node_modules/fbt/lib/FbtPublic.js"),
 				v = s("./src/reddit/components/ModModeReports/helpers.ts"),
 				M = s("./src/reddit/components/ModToolsFlatlist/constants.ts"),
-				P = s("./src/reddit/components/ModToolsFlatlist/getModItemBreakpoints.ts"),
-				w = s("./src/reddit/controls/CheckboxMenuItem/index.tsx"),
+				w = s("./src/reddit/components/ModToolsFlatlist/getModItemBreakpoints.ts"),
+				P = s("./src/reddit/controls/CheckboxMenuItem/index.tsx"),
 				g = s("./src/reddit/helpers/isCrosspost.ts"),
 				N = s("./src/reddit/models/Flair/index.ts"),
 				D = s("./src/reddit/models/Prediction/index.ts"),
 				y = s("./src/reddit/components/PostModModeDropdown/DropdownHelpers.tsx"),
 				I = s("./src/reddit/components/PostModModeDropdown/DropdownHelpers.m.less"),
-				S = s.n(I);
-			const F = (e, t) => Object(P.b)({
-					breakpointType: P.a.HideIfVWLarger,
+				L = s.n(I);
+			const S = (e, t) => Object(w.b)({
+					breakpointType: w.a.HideIfVWLarger,
 					flatlistItem: e,
 					postLayout: t
 				}),
-				L = () => void 0,
+				F = () => void 0,
 				T = ({
 					canEditFlair: e,
 					hasModFullPerms: t,
@@ -567,7 +567,7 @@
 					onOcPost: O,
 					onCcPost: k,
 					onRemovePost: E,
-					onModToMemberShareOpened: P,
+					onModToMemberShareOpened: w,
 					onSpamPost: I,
 					onStickyPost: T,
 					onSpoilerPost: R,
@@ -581,7 +581,7 @@
 						q = !(!A.approvedBy || !Z),
 						z = a ? void 0 : d,
 						Y = Object(g.a)(A),
-						X = l ? F : L;
+						X = l ? S : F;
 					return o.a.createElement(y.g, null, s && o.a.createElement(o.a.Fragment, null, !A.isSponsored && o.a.createElement(o.a.Fragment, null, o.a.createElement(y.e, {
 						className: X(M.a.Approve, z),
 						displayText: q ? j.fbt._("Reapprove", null, {
@@ -620,8 +620,8 @@
 						displayText: j.fbt._("Share with members", null, {
 							hk: "2XMBQE"
 						}),
-						onClick: P
-					}, o.a.createElement(y.f, null)), !A.isRemoved && !c && o.a.createElement(w.a, {
+						onClick: w
+					}, o.a.createElement(y.f, null)), !A.isRemoved && !c && o.a.createElement(P.a, {
 						isSelected: A.isStickied,
 						onClick: T,
 						text: j.fbt._("Sticky post", null, {
@@ -639,30 +639,30 @@
 						}),
 						onClick: b
 					}, o.a.createElement(y.b, null)), U && o.a.createElement(y.e, {
-						textClassName: S.a.text,
+						textClassName: L.a.text,
 						onClick: u,
 						displayText: j.fbt._("Change the outcome", null, {
 							hk: "2FH6j9"
 						})
-					}, o.a.createElement(y.c, null)), i && o.a.createElement(w.a, {
+					}, o.a.createElement(y.c, null)), i && o.a.createElement(P.a, {
 						isSelected: n,
 						onClick: x,
 						text: j.fbt._("Distinguish as Mod", null, {
 							hk: "3cCdJd"
 						})
-					}), o.a.createElement(w.a, {
+					}), o.a.createElement(P.a, {
 						isSelected: A.isLocked,
 						onClick: h,
 						text: j.fbt._("Lock comments", null, {
 							hk: "YAV8n"
 						})
-					}), !Y && o.a.createElement(w.a, {
+					}), !Y && o.a.createElement(P.a, {
 						isSelected: A.isOriginalContent,
 						onClick: O,
 						text: j.fbt._("Mark as OC", null, {
 							hk: "4yx2EO"
 						})
-					}), o.a.createElement(w.a, {
+					}), o.a.createElement(P.a, {
 						isSelected: A.isNSFW,
 						onClick: _,
 						text: j.fbt._("Mark as NSFW", null, {
@@ -673,7 +673,7 @@
 							hk: "4Drg85"
 						}),
 						onClick: k
-					}, o.a.createElement(y.d, null)), o.a.createElement(w.a, {
+					}, o.a.createElement(y.d, null)), o.a.createElement(P.a, {
 						isSelected: A.isSpoiler,
 						onClick: R,
 						text: j.fbt._("Mark as spoiler", null, {
@@ -744,27 +744,27 @@
 				onNsfwPost: j,
 				onOcPost: v,
 				onCcPost: M,
-				onRemovePost: P,
-				onModToMemberShareOpened: w,
+				onRemovePost: w,
+				onModToMemberShareOpened: P,
 				onSpamPost: g,
 				onSpoilerPost: N,
 				onStickyPost: D,
 				post: y,
 				sendEvent: I,
-				tooltipId: S
+				tooltipId: L
 			}) => {
-				const F = y.distinguishType === i.G.MODERATOR,
-					L = F ? i.G.NONE : i.G.MODERATOR,
+				const S = y.distinguishType === i.G.MODERATOR,
+					F = S ? i.G.NONE : i.G.MODERATOR,
 					R = Object(u.b)(y.id, a);
 				return o.a.createElement(V, {
 					className: A.a.dropdown,
 					isOpen: n,
-					tooltipId: S
+					tooltipId: L
 				}, o.a.createElement(T, {
 					canEditFlair: e,
 					hasModFullPerms: t,
 					hasModPostPerms: s,
-					isDistinguished: F,
+					isDistinguished: S,
 					isModToMemberShareEnabled: r,
 					isOverlay: a,
 					isPostAuthor: c,
@@ -784,13 +784,13 @@
 						f(), I(Object(k.c)(y.id))
 					},
 					onRemovePost: () => {
-						P(), Object(C.b)(y) ? I(Object(k.d)(y.id)) : I(Object(O.j)("remove", y.id))
+						w(), Object(C.b)(y) ? I(Object(k.d)(y.id)) : I(Object(O.j)("remove", y.id))
 					},
 					onSpamPost: () => {
 						g(), I(Object(O.j)("spam", y.id))
 					},
 					onDistinguishPost: () => {
-						h(L), I(Object(O.j)(F ? "undistinguish" : "distinguish", y.id))
+						h(F), I(Object(O.j)(S ? "undistinguish" : "distinguish", y.id))
 					},
 					onFlairPost: () => {
 						_(R), I(Object(O.j)("post_flair", y.id))
@@ -808,7 +808,7 @@
 						M()
 					},
 					onModToMemberShareOpened: () => {
-						w(), I(Object(O.j)("mod_to_member_share", y.id))
+						P(), I(Object(O.j)("mod_to_member_share", y.id))
 					},
 					onSpoilerPost: () => {
 						N(), I(Object(O.j)(y.isSpoiler ? "unmark_spoiler" : "mark_spoiler", y.id))
@@ -1214,6 +1214,19 @@
 			})
 		},
 		"./src/reddit/icons/fonts/commonStyles.m.less": function(e, t, s) {},
+		"./src/reddit/icons/svgs/Checkmark/index.tsx": function(e, t, s) {
+			"use strict";
+			var n = s("./node_modules/react/index.js"),
+				o = s.n(n);
+			t.a = e => o.a.createElement("svg", {
+				className: e.className,
+				viewBox: "0 0 20 22",
+				xmlns: "http://www.w3.org/2000/svg"
+			}, o.a.createElement("g", null, o.a.createElement("path", {
+				d: "M8.9310375,15.1995 C8.70135,15.41825 8.38963125,15.541375 8.0647875,15.541375 C8.052975,15.541375 8.04181875,15.54075 8.03000625,15.54075 C7.69335,15.531375 7.37506875,15.39075 7.15063125,15.151375 L4.0879125,11.88075 C3.637725,11.400125 3.68169375,10.662625 4.18700625,10.23325 C4.6916625,9.805125 5.4660375,9.846375 5.91688125,10.327625 L8.115975,12.676375 L14.8550063,6.25825 C15.3327563,5.802625 16.1091,5.802625 16.5875063,6.25825 C17.0659125,6.71325 17.0659125,7.452625 16.5875063,7.907625 L8.9310375,15.1995 Z",
+				fill: "inherit"
+			})))
+		},
 		"./src/reddit/icons/svgs/CircleCheckLight/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
@@ -1283,4 +1296,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.51260a1a904494275bf4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.a8914251b16c1f6f9adf.js.map

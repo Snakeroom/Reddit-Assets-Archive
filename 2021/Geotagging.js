@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Geotagging.8f81e7015ce3397b6937.js
-// Retrieved at 12/9/2021, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Geotagging.5d972a49b88732696834.js
+// Retrieved at 12/13/2021, 2:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Geotagging"], {
 		"./node_modules/p-debounce/index.js": function(e, t, s) {
@@ -498,7 +498,7 @@
 						top: `calc(100vh - ${t?O:8}px)`
 					}
 				}, s)), "BackToTop", E.a),
-				T = ({
+				w = ({
 					children: e,
 					className: t,
 					isFakeOverlay: s,
@@ -509,7 +509,7 @@
 						[E.a.StickyStylesFakeOverlay]: !!s
 					})
 				}, e);
-			class w extends i.Component {
+			class T extends i.Component {
 				constructor(e) {
 					super(e), this.containerEl = null, this.windowHeight = 1 / 0, this.getStickyContents = () => ({
 						shouldAdSticky: this.windowHeight > C,
@@ -557,7 +557,7 @@
 					return o.a.createElement(j, {
 						className: r,
 						innerRef: this.setWrapperRef
-					}, o.a.createElement(T, {
+					}, o.a.createElement(w, {
 						isFakeOverlay: s,
 						isSticky: d
 					}, t, n, !a && o.a.createElement(g.a, null)), !this.props.hideBackToTop && o.a.createElement(N, {
@@ -566,7 +566,7 @@
 				}
 			}
 			const P = Object(x.u)();
-			t.a = P(w)
+			t.a = P(T)
 		},
 		"./src/reddit/components/StructuredStyles/BladeDrawerController/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -627,7 +627,7 @@
 				className: Object(l.a)(E.a.LoadingNav, e.isLoading && E.a.loading)
 			}), i.a.createElement(j, null)), i.a.createElement(k, null, i.a.createElement(C, null), i.a.createElement(j, null)), i.a.createElement(k, null, i.a.createElement("div", {
 				className: Object(l.a)(E.a.LoadingNav, e.isLoading && E.a.loading)
-			}), i.a.createElement(j, null))))), T = Object(c.a)({
+			}), i.a.createElement(j, null))))), w = Object(c.a)({
 				getComponent: () => Object(m.a)(() => Promise.all([s.e("vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PostCreation~Settings~~f8934a85"), s.e("StructuredStyles")]).then(s.bind(null, "./src/reddit/components/StructuredStyles/BladeDrawer/index.tsx"))).then(e => e.default),
 				ErrorComponent: () => i.a.createElement(N, {
 					gradientType: "posts",
@@ -637,16 +637,16 @@
 					gradientType: "posts",
 					isLoading: !0
 				})
-			}), w = Object(d.c)({
+			}), T = Object(d.c)({
 				isEditing: f.i,
 				isSubscriptionsPinned: x.b,
 				moderatorPermissions: g.m
 			});
-			t.a = Object(o.b)(w)(e => {
+			t.a = Object(o.b)(T)(e => {
 				const t = e.moderatorPermissions && r()(e.moderatorPermissions).some(e => e);
 				return e.moderatorPermissions && t && e.isEditing ? i.a.createElement("div", {
 					className: Object(l.a)(E.a.Container, e.isSubscriptionsPinned && E.a.isSubscriptionPinned)
-				}, e.children, i.a.createElement(T, {
+				}, e.children, i.a.createElement(w, {
 					subredditId: e.subredditId
 				})) : i.a.createElement(a.Fragment, null, e.children)
 			})
@@ -859,12 +859,12 @@
 					})) : null
 				}
 			}
-			var T = Object(p.b)(j)(Object(c.c)(N)),
-				w = s("./src/reddit/helpers/styles/mixins/loading.ts");
+			var w = Object(p.b)(j)(Object(c.c)(N)),
+				T = s("./src/reddit/helpers/styles/mixins/loading.ts");
 			var P = e => {
 					const {
 						className: t
-					} = e, s = Object(w.b)({
+					} = e, s = Object(T.b)({
 						isLoading: !0
 					});
 					return r.a.createElement("div", {
@@ -923,7 +923,7 @@
 						hk: "46yzcK"
 					}))), r.a.createElement("div", {
 						className: L.a.SubredditList
-					}, n.length > 0 ? n.map(e => r.a.createElement(T, {
+					}, n.length > 0 ? n.map(e => r.a.createElement(w, {
 						className: L.a.Subreddit,
 						discoveryUnit: R,
 						key: e,
@@ -1026,7 +1026,7 @@
 				subredditId: u.n,
 				topPostVariant: h.d
 			}));
-			class T extends r.a.Component {
+			class w extends r.a.Component {
 				constructor() {
 					super(...arguments), this.contentRef = r.a.createRef(), this.state = {
 						isTruncated: !1
@@ -1099,7 +1099,7 @@
 					})))
 				}
 			}
-			t.a = j(N(Object(d.a)(Object(l.c)(T))))
+			t.a = j(N(Object(d.a)(Object(l.c)(w))))
 		},
 		"./src/reddit/endpoints/geotagging/setSubredditGeoPlace.ts": function(e, t, s) {
 			"use strict";
@@ -1224,6 +1224,63 @@
 				return e
 			}
 		},
+		"./src/reddit/icons/svgs/Chevron/index.m.less": function(e, t, s) {
+			e.exports = {
+				chevron: "_1c_YBKkiW4FhhLJPkq9c1v"
+			}
+		},
+		"./src/reddit/icons/svgs/Chevron/index.tsx": function(e, t, s) {
+			"use strict";
+			var n = s("./node_modules/react/index.js"),
+				r = s.n(n),
+				a = s("./src/lib/classNames/index.ts"),
+				i = s("./src/reddit/icons/svgs/Chevron/index.m.less"),
+				o = s.n(i);
+			t.a = e => r.a.createElement("svg", {
+				className: Object(a.a)(o.a.chevron, e.className),
+				viewBox: "0 0 9 14",
+				xmlns: "http://www.w3.org/2000/svg"
+			}, r.a.createElement("g", {
+				transform: "translate(-6.000000, -3.000000)"
+			}, r.a.createElement("polygon", {
+				fill: "none",
+				points: "0 20 20 20 20 0 0 0"
+			}), r.a.createElement("polygon", {
+				fill: "inherit",
+				points: "7.47566213 3 14.4756621 10 7.47566213 17 6 15.5239203 11.5239203 10 6 4.47566213"
+			})))
+		},
+		"./src/reddit/icons/svgs/HamburgerClose/index.tsx": function(e, t, s) {
+			"use strict";
+			var n = s("./node_modules/react/index.js"),
+				r = s.n(n);
+			t.a = ({
+				className: e
+			}) => r.a.createElement("svg", {
+				xmlns: "http://www.w3.org/2000/svg",
+				height: "20",
+				width: "20",
+				viewBox: "0 0 20 20"
+			}, r.a.createElement("path", {
+				d: "M11.41 10l4.29-4.29a1 1 0 0 0-1.41-1.41L10 8.59l-4.29-4.3a1 1 0 0 0-1.42 1.42L8.59 10l-4.3 4.29A1 1 0 1 0 5.7 15.7l4.3-4.29 4.29 4.29a1 1 0 0 0 1.41-1.41z",
+				fill: "inherit"
+			}))
+		},
+		"./src/reddit/icons/svgs/Location/index.tsx": function(e, t, s) {
+			"use strict";
+			var n = s("./node_modules/react/index.js"),
+				r = s.n(n);
+			t.a = e => r.a.createElement("svg", {
+				className: e.className,
+				viewBox: "0 0 13 16",
+				xmlns: "http://www.w3.org/2000/svg"
+			}, r.a.createElement("path", {
+				d: "m10.4442 10.9445c-1.381 0-2.5-1.119-2.5-2.5s1.119-2.5 2.5-2.5 2.5 1.119 2.5 2.5-1.119 2.5-2.5 2.5m0-8.944c-3.554 0-6.444 2.891-6.444 6.444 0 3.32 5.143 8.658 5.73 9.256.189.192.446.3.714.3.269 0 .526-.108.714-.3.587-.598 5.73-5.936 5.73-9.256 0-3.553-2.89-6.444-6.444-6.444",
+				fill: "inherit",
+				fillRule: "evenodd",
+				transform: "translate(-4 -2)"
+			}))
+		},
 		"./src/reddit/pages/Geotagging/index.m.less": function(e, t, s) {
 			e.exports = {
 				Container: "_2yH_bZH7lpry9aDdEOc6oE",
@@ -1324,12 +1381,12 @@
 			}
 			var j = s("./src/reddit/actions/toaster.ts"),
 				N = s("./src/reddit/components/GeoForm/GeoForm.tsx"),
-				T = s("./src/reddit/components/SubredditIcon/index.tsx"),
-				w = s("./src/reddit/endpoints/geotagging/setSubredditGeoPlace.ts"),
+				w = s("./src/reddit/components/SubredditIcon/index.tsx"),
+				T = s("./src/reddit/endpoints/geotagging/setSubredditGeoPlace.ts"),
 				P = s("./src/redditGQL/operations/SuggestSubredditGeoPlace.json"),
 				I = async (e, t) => Object(l.a)(e, {
 					...P,
-					variables: Object(w.b)(t)
+					variables: Object(T.b)(t)
 				}), L = s("./src/reddit/helpers/graphql/normalizeSubredditFromGql/index.ts");
 			const F = "crowdsource",
 				G = {
@@ -1393,12 +1450,12 @@
 				fbt: z
 			} = s("./node_modules/fbt/lib/FbtPublic.js");
 
-			function V(e) {
+			function Y(e) {
 				const t = Object(b.B)(Z) || [];
 				t.push(e), Object(b.Db)(Z, t)
 			}
 
-			function Y(e) {
+			function V(e) {
 				const {
 					subreddit: t,
 					onClose: s
@@ -1427,7 +1484,7 @@
 					className: S.a.subredditGeotag
 				}, r.a.createElement("div", {
 					className: S.a.subredditTitle
-				}, r.a.createElement(T.b, {
+				}, r.a.createElement(w.b, {
 					className: S.a.icon,
 					subredditOrProfile: Object(L.a)(t),
 					linkTo: t.path
@@ -1438,7 +1495,7 @@
 				}, t.prefixedName)), r.a.createElement("button", {
 					className: S.a.dismiss,
 					onClick: function() {
-						V(t.id), E(R(t)), f(), s(t.id)
+						Y(t.id), E(R(t)), f(), s(t.id)
 					}
 				}, r.a.createElement(K.a, null))), r.a.createElement("p", null, t.publicDescriptionText || t.title), t.geoPlace && !m ? r.a.createElement("div", {
 					className: S.a.questionContainer
@@ -1454,7 +1511,7 @@
 				}, "No"), r.a.createElement(_.l, {
 					className: S.a.verifyButton,
 					onClick: function() {
-						V(t.id), E(D(t, t.geoPlace.id)), f(), s(t.id), y()
+						Y(t.id), E(D(t, t.geoPlace.id)), f(), s(t.id), y()
 					}
 				}, "Yes")) : r.a.createElement(N.a, {
 					disabled: l,
@@ -1537,7 +1594,7 @@
 				}), r.a.createElement(i.a, {
 					isLoading: !0,
 					className: S.a.subredditGeotag
-				})) : a >= s.length ? r.a.createElement(v, null) : r.a.createElement(r.a.Fragment, null, r.a.createElement(C, null), s.map(e => r.a.createElement(Y, {
+				})) : a >= s.length ? r.a.createElement(v, null) : r.a.createElement(r.a.Fragment, null, r.a.createElement(C, null), s.map(e => r.a.createElement(V, {
 					key: e.id,
 					subreddit: e,
 					onClose: d
@@ -1585,4 +1642,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.8f81e7015ce3397b6937.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.5d972a49b88732696834.js.map

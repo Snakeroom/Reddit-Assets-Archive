@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.47fecdd6968a1e2d5345.js
-// Retrieved at 12/13/2021, 1:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.472f866a579df118ea60.js
+// Retrieved at 12/13/2021, 2:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileSnoobuilder", "reddit-components-ContentGate"], {
 		"./assets/snoobuilder/Snoobuilder.json": function(e, t, n) {
@@ -781,8 +781,8 @@
 				}),
 				O = n("./src/reddit/constants/parameters.ts"),
 				N = n("./src/reddit/contexts/PageLayer/index.tsx"),
-				T = n("./src/reddit/controls/Button/index.tsx"),
-				L = n("./src/chat/controls/Svg/index.tsx");
+				L = n("./src/reddit/controls/Button/index.tsx"),
+				T = n("./src/chat/controls/Svg/index.tsx");
 
 			function F() {
 				return (F = Object.assign || function(e) {
@@ -793,7 +793,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var D = e => i.a.createElement(L.a, F({}, e, {
+			var D = e => i.a.createElement(T.a, F({}, e, {
 					viewBox: "-1 -1 21 21"
 				}), i.a.createElement("path", {
 					d: "M16.64,2.32a4.5,4.5,0,0,0-7,5.57L4.85,12.69,3.59,13.95h0L2.34,15.2a1,1,0,0,0,0,1.41l1.25,1.25h0l.42.42a1,1,0,0,0,1.41-1.41L5,16.46H5a.78.78,0,0,1,0-1.09.79.79,0,0,1,1.09,0h0l.42.42a1,1,0,0,0,1.41-1.41L7.52,14h0L7,13.4l4.1-4.1a4.5,4.5,0,0,0,5.57-7Zm-1.41,5a2.5,2.5,0,1,1,0-3.54A2.5,2.5,0,0,1,15.22,7.27Z"
@@ -807,7 +807,7 @@
 				z = n.n(A);
 			const {
 				fbt: H
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), U = l.a.wrapped(D, "PrivateKey", z.a), W = l.a.div("ButtonsContainer", z.a), q = l.a.div("Container", z.a), G = l.a.div("ContainerExp", z.a), V = l.a.div("Description", z.a), J = l.a.div("PrivateSubredditDetails", z.a), Z = l.a.div("PrivateSubredditDescription", z.a), K = l.a.h3("PrivateSubredditName", z.a), Y = l.a.a("Link", z.a), X = l.a.wrapped(T.n, "LinkRouterButton", z.a), Q = l.a.wrapped(T.m, "LinkButton", z.a), $ = l.a.wrapped(T.q, "SecondaryLinkRouterButton", z.a), ee = l.a.wrapped(T.p, "SecondaryLinkButton", z.a), te = l.a.wrapped(X, "GoHomeLinkButton", z.a), ne = l.a.wrapped(b.a, "CreateCommunityButton", z.a), se = l.a.img("Image", z.a), re = l.a.img("ImagePlaceholder", z.a), ie = l.a.wrapped(X, "LeftLinkRouterButton", z.a), oe = l.a.wrapped(Q, "LeftLinkButton", z.a), ae = l.a.wrapped(ee, "SecondaryLeftLinkButton", z.a), ce = l.a.wrapped($, "SecondaryLeftLinkRouterButton", z.a), de = l.a.h3("Title", z.a), le = l.a.div("PageBody", z.a), ue = l.a.div("QuarantineMessageWrapper", z.a), me = Object(d.c)({
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), U = l.a.wrapped(D, "PrivateKey", z.a), W = l.a.div("ButtonsContainer", z.a), q = l.a.div("Container", z.a), G = l.a.div("ContainerExp", z.a), V = l.a.div("Description", z.a), J = l.a.div("PrivateSubredditDetails", z.a), Z = l.a.div("PrivateSubredditDescription", z.a), K = l.a.h3("PrivateSubredditName", z.a), Y = l.a.a("Link", z.a), X = l.a.wrapped(L.n, "LinkRouterButton", z.a), Q = l.a.wrapped(L.m, "LinkButton", z.a), $ = l.a.wrapped(L.q, "SecondaryLinkRouterButton", z.a), ee = l.a.wrapped(L.p, "SecondaryLinkButton", z.a), te = l.a.wrapped(X, "GoHomeLinkButton", z.a), ne = l.a.wrapped(b.a, "CreateCommunityButton", z.a), se = l.a.img("Image", z.a), re = l.a.img("ImagePlaceholder", z.a), ie = l.a.wrapped(X, "LeftLinkRouterButton", z.a), oe = l.a.wrapped(Q, "LeftLinkButton", z.a), ae = l.a.wrapped(ee, "SecondaryLeftLinkButton", z.a), ce = l.a.wrapped($, "SecondaryLeftLinkRouterButton", z.a), de = l.a.h3("Title", z.a), le = l.a.div("PageBody", z.a), ue = l.a.div("QuarantineMessageWrapper", z.a), me = Object(d.c)({
 				isLoggedIn: R.J,
 				origin: M.j,
 				user: R.k,
@@ -1531,14 +1531,14 @@
 						style: n
 					})
 				},
-				T = e => {
+				L = e => {
 					const t = {};
 					return (!e.showFull && Object(g.K)(e.height, e.width) || e.shouldBlur) && (t.overflow = "hidden"), e.showFull || (t.maxHeight = `${g.j}px`, e.shouldBlur && (t.maxWidth = Object(g.K)(e.height, e.width) ? `${g.z}px` : `${e.width}px`)), e.showCentered && (t.margin = "0 auto"), e.isExpando && e.maxHeight && (t.maxHeight = `${e.maxHeight}px`), i.a.createElement("div", {
 						className: Object(d.a)(j.a.container, e.className),
 						style: t
 					}, e.children)
 				},
-				L = Object(o.b)(() => Object(c.a)(v.G, k.db, (e, {
+				T = Object(o.b)(() => Object(c.a)(v.G, k.db, (e, {
 					isSponsored: t,
 					postId: n
 				}) => t && n ? Object(v.b)(e, n) : null, y.a, E.d, v.H, (e, t, n, s, r, i) => ({
@@ -1549,7 +1549,7 @@
 					pageType: r.pageType,
 					post: i
 				})));
-			t.a = L(e => {
+			t.a = T(e => {
 				const t = e.sendGoodVisitEvent ? Object(x.a)() : void 0;
 				return e.outboundUrl && !e.shouldBlur ? i.a.createElement("a", {
 					href: e.outboundUrl,
@@ -1590,7 +1590,7 @@
 				}) => {
 					const n = Object(g.K)(t.height, t.width),
 						r = O(t.height) && n;
-					return i.a.createElement(T, S({}, t, {
+					return i.a.createElement(L, S({}, t, {
 						className: `${n?`${w.a} `:""}${t.className||""}`
 					}), t.isListing ? i.a.createElement("div", {
 						className: t.contentImageClassName
@@ -1817,12 +1817,12 @@
 					O(e ? Object(l.r)(p) : Object(l.E)(p))
 				}
 
-				function T() {
+				function L() {
 					return O(Object(l.z)({
 						postId: p
 					}))
 				}
-				const L = r()(e => {
+				const T = r()(e => {
 					if (n) return;
 					const {
 						target: t
@@ -1831,7 +1831,7 @@
 				}, 200);
 
 				function F(e) {
-					e.persist(), L(e)
+					e.persist(), T(e)
 				}
 
 				function D(e) {
@@ -1875,7 +1875,7 @@
 						onLoadStart: P,
 						onLoadedData: D,
 						onLoadedMetadata: B,
-						onPause: T,
+						onPause: L,
 						onPlaying: I,
 						onTimeUpdate: F,
 						shouldLoad: h,
@@ -1949,8 +1949,8 @@
 				O = n("./src/reddit/components/ProfileNavMenu/index.m.less"),
 				N = n.n(O);
 
-			function T() {
-				return (T = Object.assign || function(e) {
+			function L() {
+				return (L = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var s in n) Object.prototype.hasOwnProperty.call(n, s) && (e[s] = n[s])
@@ -1958,7 +1958,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const L = Object(g.u)({
+			const T = Object(g.u)({
 					routeName: g.X,
 					privateListingType: g.j
 				}),
@@ -1972,7 +1972,7 @@
 				P = "profile-nav-menu-tooltip",
 				B = x.g + x.r + x.q;
 			var I;
-			t.a = L(Object(d.b)(F, e => ({
+			t.a = T(Object(d.b)(F, e => ({
 					toggleTooltip: t => e(Object(f.h)({
 						tooltipId: t
 					}))
@@ -2024,7 +2024,7 @@
 						render: () => c.a.createElement(c.a.Fragment, null, c.a.createElement("div", {
 							className: N.a.menuContainer,
 							ref: b
-						}, g.map(e => c.a.createElement(R, T({}, e, {
+						}, g.map(e => c.a.createElement(R, L({}, e, {
 							key: e.key
 						})))), m && c.a.createElement("button", {
 							className: Object(h.a)(N.a.mainLink),
@@ -2036,7 +2036,7 @@
 							className: N.a.dropdown,
 							isOpen: e,
 							tooltipId: P
-						}, v.map(e => c.a.createElement(M, T({}, e, {
+						}, v.map(e => c.a.createElement(M, L({}, e, {
 							key: e.key
 						})))))
 					}))
@@ -2508,9 +2508,9 @@
 			})), n.d(t, "q", (function() {
 				return N
 			})), n.d(t, "s", (function() {
-				return T
-			})), n.d(t, "r", (function() {
 				return L
+			})), n.d(t, "r", (function() {
+				return T
 			})), n.d(t, "a", (function() {
 				return F
 			})), n.d(t, "w", (function() {
@@ -2543,8 +2543,8 @@
 				S = c.a.td("Tdl", a.a),
 				O = c.a.td("Tdc", a.a),
 				N = c.a.td("Tdr", a.a),
-				T = c.a.th("Thl", a.a),
-				L = c.a.th("Thc", a.a),
+				L = c.a.th("Thl", a.a),
+				T = c.a.th("Thc", a.a),
 				F = (c.a.th("Thr", a.a), c.a.wrapped(e => r.a.createElement(i.b, e), "A", a.a)),
 				D = c.a.wrapped(d.a, "A", a.a)
 		},
@@ -3034,8 +3034,8 @@
 				S = n("./src/reddit/helpers/crypto/vaultActionLink.ts"),
 				O = n("./src/reddit/helpers/isComment.ts"),
 				N = n("./src/reddit/helpers/isPost.ts"),
-				T = n("./src/reddit/helpers/richTextJson/index.ts"),
-				L = n("./src/reddit/helpers/trackers/getRichTextSourceElement.ts");
+				L = n("./src/reddit/helpers/richTextJson/index.ts"),
+				T = n("./src/reddit/helpers/trackers/getRichTextSourceElement.ts");
 			const F = (e, t, n) => {
 					const s = e.c || [],
 						r = e.l,
@@ -3149,7 +3149,7 @@
 						key: e
 					}, a.a.createElement("br", null)))(s);
 					const r = e.c[0];
-					return r.e !== p.m && r.e !== p.a || !Object(T.g)(r.id) ? a.a.createElement(c.j, {
+					return r.e !== p.m && r.e !== p.a || !Object(L.g)(r.id) ? a.a.createElement(c.j, {
 						key: s
 					}, z(e.c, t, n)) : Object(w.b)(r, s, t)
 				},
@@ -3191,7 +3191,7 @@
 								title: e.a
 							}, s);
 							let r, i;
-							const o = Object(L.a)(t),
+							const o = Object(T.a)(t),
 								d = t.renderingObjectInfo;
 							return d && Object(N.b)(d) && (r = d.postId), d && Object(O.b)(d) && (i = d.id, r = d.postId), a.a.createElement(c.a, {
 								href: e.u,
@@ -3817,7 +3817,7 @@
 						[y.a.StickyStylesFakeOverlay]: !!n
 					})
 				}, e);
-			class T extends o.Component {
+			class L extends o.Component {
 				constructor(e) {
 					super(e), this.containerEl = null, this.windowHeight = 1 / 0, this.getStickyContents = () => ({
 						shouldAdSticky: this.windowHeight > j,
@@ -3873,8 +3873,8 @@
 					}))
 				}
 			}
-			const L = Object(x.u)();
-			t.a = L(T)
+			const T = Object(x.u)();
+			t.a = T(L)
 		},
 		"./src/reddit/components/SidebarTrophyCase/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -4980,6 +4980,39 @@
 					}
 				})
 		},
+		"./src/reddit/icons/svgs/OutboundLink/index.tsx": function(e, t, n) {
+			"use strict";
+			var s = n("./node_modules/react/index.js"),
+				r = n.n(s);
+			t.a = e => r.a.createElement("svg", {
+				className: e.className,
+				xmlns: "http://www.w3.org/2000/svg",
+				viewBox: "0 0 20 20"
+			}, r.a.createElement("path", {
+				d: "M16 10.77a1 1 0 0 0-1 1V14a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h2.23a1 1 0 0 0 0-2H6a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3v-2.23a1 1 0 0 0-1-1z"
+			}), r.a.createElement("path", {
+				d: "M17.91 2.62A1 1 0 0 0 17 2h-4a1 1 0 0 0 0 2h1.59L9.38 9.19a1 1 0 1 0 1.41 1.41L16 5.41V7a1 1 0 0 0 2 0V3a1 1 0 0 0-.09-.38z"
+			}))
+		},
+		"./src/reddit/icons/svgs/Twitter/index.tsx": function(e, t, n) {
+			"use strict";
+			n.d(t, "a", (function() {
+				return i
+			}));
+			var s = n("./node_modules/react/index.js"),
+				r = n.n(s);
+
+			function i(e) {
+				return r.a.createElement("svg", {
+					className: e.className,
+					viewBox: "0 0 400 400",
+					xmlns: "http://www.w3.org/2000/svg"
+				}, r.a.createElement("path", {
+					fill: "inherit",
+					d: "M153.62,301.59c94.34,0,145.94-78.16,145.94-145.94,0-2.22,0-4.43-.15-6.63A104.36,104.36,0,0,0,325,122.47a102.38,102.38,0,0,1-29.46,8.07,51.47,51.47,0,0,0,22.55-28.37,102.79,102.79,0,0,1-32.57,12.45,51.34,51.34,0,0,0-87.41,46.78A145.62,145.62,0,0,1,92.4,107.81a51.33,51.33,0,0,0,15.88,68.47A50.91,50.91,0,0,1,85,169.86c0,.21,0,.43,0,.65a51.31,51.31,0,0,0,41.15,50.28,51.21,51.21,0,0,1-23.16.88,51.35,51.35,0,0,0,47.92,35.62,102.92,102.92,0,0,1-63.7,22A104.41,104.41,0,0,1,75,278.55a145.21,145.21,0,0,0,78.62,23"
+				}))
+			}
+		},
 		"./src/reddit/layout/row/RightAlign/index.m.less": function(e, t, n) {
 			e.exports = {
 				rightAligned: "_1sEFSGIUpFtX1hzGDyWJpr"
@@ -5245,4 +5278,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.47fecdd6968a1e2d5345.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.472f866a579df118ea60.js.map

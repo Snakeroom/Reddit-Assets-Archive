@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GivePremiumModal.f0786b662122cab019c1.js
-// Retrieved at 12/9/2021, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GivePremiumModal.ec2b17fbe7bf78450c98.js
+// Retrieved at 12/13/2021, 2:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GivePremiumModal", "givePremiumTrackers"], {
 		"./src/reddit/components/CoinBalance/index.m.less": function(e, t, n) {
@@ -68,9 +68,9 @@
 				f = n("./src/reddit/actions/toaster.ts"),
 				k = n("./src/lib/makeApiRequest/index.ts"),
 				E = n("./src/lib/omitHeaders/index.ts"),
-				O = n("./src/reddit/constants/headers.ts"),
-				g = n("./src/reddit/helpers/r2/normalizeR2APIErrors/index.ts");
-			var v = async (e, t, n, s, o, a) => {
+				g = n("./src/reddit/constants/headers.ts"),
+				v = n("./src/reddit/helpers/r2/normalizeR2APIErrors/index.ts");
+			var C = async (e, t, n, s, o, a) => {
 				const c = {
 					recipient: n,
 					months: t,
@@ -78,7 +78,7 @@
 					message: o,
 					correlation_id: a
 				};
-				return Object(k.a)(Object(E.a)(e, [O.a]), {
+				return Object(k.a)(Object(E.a)(e, [g.a]), {
 					method: b.jb.POST,
 					endpoint: `${e.apiUrl}/api/v2/gold/give_premium`,
 					data: c
@@ -86,9 +86,9 @@
 					...e
 				} : e.error && e.error.type ? e : {
 					...e,
-					error: Object(g.a)(e)
+					error: Object(v.a)(e)
 				})
-			}, C = n("./src/reddit/helpers/correlationIdTracker.ts"), I = n("./src/reddit/models/Toast/index.ts"), _ = n("./src/reddit/selectors/premium.ts"), y = n("./src/reddit/actions/gold/constants.ts");
+			}, O = n("./src/reddit/helpers/correlationIdTracker.ts"), I = n("./src/reddit/models/Toast/index.ts"), _ = n("./src/reddit/selectors/premium.ts"), y = n("./src/reddit/actions/gold/constants.ts");
 			Object(x.a)(y.y), Object(x.a)(y.A), Object(x.a)(y.z), Object(x.a)(y.C);
 			const w = Object(x.a)(y.x),
 				j = Object(x.a)(y.w),
@@ -163,11 +163,11 @@
 						}) => {
 							o(w());
 							try {
-								const a = await v(c(), t, e, n, s, Object(C.c)(C.a.GiftPremiumFlow));
+								const a = await C(c(), t, e, n, s, Object(O.c)(O.a.GiftPremiumFlow));
 								if (a.error) await o(N(a));
 								else {
 									const e = a.body;
-									await o(M(e)), Object(C.b)(C.a.GiftPremiumFlow)
+									await o(M(e)), Object(O.b)(O.a.GiftPremiumFlow)
 								}
 							} catch (i) {
 								await o(N(i))
@@ -835,7 +835,20 @@
 			t.a = e => o.a.createElement("i", {
 				className: `${Object(a.b)("caret_down",e.isFilled)} ${e.className}`
 			})
+		},
+		"./src/reddit/icons/svgs/Checkmark/index.tsx": function(e, t, n) {
+			"use strict";
+			var s = n("./node_modules/react/index.js"),
+				o = n.n(s);
+			t.a = e => o.a.createElement("svg", {
+				className: e.className,
+				viewBox: "0 0 20 22",
+				xmlns: "http://www.w3.org/2000/svg"
+			}, o.a.createElement("g", null, o.a.createElement("path", {
+				d: "M8.9310375,15.1995 C8.70135,15.41825 8.38963125,15.541375 8.0647875,15.541375 C8.052975,15.541375 8.04181875,15.54075 8.03000625,15.54075 C7.69335,15.531375 7.37506875,15.39075 7.15063125,15.151375 L4.0879125,11.88075 C3.637725,11.400125 3.68169375,10.662625 4.18700625,10.23325 C4.6916625,9.805125 5.4660375,9.846375 5.91688125,10.327625 L8.115975,12.676375 L14.8550063,6.25825 C15.3327563,5.802625 16.1091,5.802625 16.5875063,6.25825 C17.0659125,6.71325 17.0659125,7.452625 16.5875063,7.907625 L8.9310375,15.1995 Z",
+				fill: "inherit"
+			})))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GivePremiumModal.f0786b662122cab019c1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GivePremiumModal.ec2b17fbe7bf78450c98.js.map

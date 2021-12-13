@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Predictions.e8e0e211feeea47027e0.js
-// Retrieved at 12/9/2021, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Predictions.faf9fde490ffed1143ca.js
+// Retrieved at 12/13/2021, 2:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Predictions"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, a) {
@@ -471,7 +471,7 @@
 				w = a.n(_);
 			const {
 				fbt: f
-			} = a("./node_modules/fbt/lib/FbtPublic.js"), y = e => {
+			} = a("./node_modules/fbt/lib/FbtPublic.js"), E = e => {
 				const {
 					onChange: t,
 					subredditIdsSelected: a,
@@ -526,7 +526,7 @@
 					hk: "2Eo4n2"
 				})))
 			};
-			var E = a("./src/reddit/controls/LoadingIcon/index.tsx"),
+			var y = a("./src/reddit/controls/LoadingIcon/index.tsx"),
 				N = a("./src/reddit/components/PowerupsSignUpModal/signupButton.m.less"),
 				v = a.n(N);
 			const {
@@ -551,7 +551,7 @@
 					onClick: a,
 					priority: m.c.Primary,
 					isFullWidth: !0
-				}, n ? s.a.createElement(E.a, {
+				}, n ? s.a.createElement(y.a, {
 					sizePx: 12,
 					center: !0
 				}) : o)
@@ -572,7 +572,7 @@
 						hasPowerups: e
 					}) => e),
 					[w, f] = Object(r.useState)(i && k ? [i[0].id] : []),
-					[E, N] = Object(r.useState)(!1),
+					[y, N] = Object(r.useState)(!1),
 					[v, S] = Object(r.useState)(!1),
 					[O, j] = Object(r.useState)(!1);
 				if (!(null == i ? void 0 : i.length)) return e(), null;
@@ -611,7 +611,7 @@
 					hk: "4EPQY"
 				})))], {
 					hk: "1K9FOM"
-				}), W = k ? q : T, M = E || v || O ? P._("{=Hold tight! It can take up to 5 minutes for}{=Powerups to appear in yourcommunity.}", [P._param("=Hold tight! It can take up to 5 minutes for", s.a.createElement("div", null, P._("Hold tight! It can take up to 5 minutes for", null, {
+				}), W = k ? q : T, M = y || v || O ? P._("{=Hold tight! It can take up to 5 minutes for}{=Powerups to appear in yourcommunity.}", [P._param("=Hold tight! It can take up to 5 minutes for", s.a.createElement("div", null, P._("Hold tight! It can take up to 5 minutes for", null, {
 					hk: "1cFoaI"
 				}))), P._param("=Powerups to appear in yourcommunity.", s.a.createElement("div", null, P._({
 					"*": "Powerups to appear in your communities.",
@@ -652,7 +652,7 @@
 					className: x.a.titleText
 				}, W), s.a.createElement("h2", {
 					className: x.a.subtitleText
-				}, M)), !k && s.a.createElement(y, {
+				}, M)), !k && s.a.createElement(E, {
 					onChange: f,
 					subredditIdsSelected: w,
 					subredditsInfo: i,
@@ -675,7 +675,7 @@
 						}) => e);
 						S(e), j(!e), N(!1)
 					},
-					isLoading: E,
+					isLoading: y,
 					wasError: O
 				}), (v || _) && k && s.a.createElement(s.a.Fragment, null, s.a.createElement("p", {
 					className: x.a.successText
@@ -874,6 +874,20 @@
 			function r() {
 				return Object(n.d)()
 			}
+		},
+		"./src/reddit/icons/svgs/ChevronUp/index.tsx": function(e, t, a) {
+			"use strict";
+			var n = a("./node_modules/react/index.js"),
+				r = a.n(n);
+			t.a = e => r.a.createElement("svg", {
+				className: e.className,
+				viewBox: "0 0 12 12",
+				xmlns: "http://www.w3.org/2000/svg"
+			}, r.a.createElement("g", null, r.a.createElement("polygon", {
+				fill: "inherit",
+				transform: "translate(6.029200, 6.044700) scale(1, -1) translate(-6.029200, -6.044700)",
+				points: "11.0584 4.0602 6.0292 9.0894 1 4.0602 2.0608 3 6.0292 6.9684 9.9982 3"
+			})))
 		},
 		"./src/reddit/pages/Powerups/Communities.m.less": function(e, t, a) {
 			e.exports = {
@@ -1238,14 +1252,14 @@
 				_ = a.n(k),
 				w = a("./node_modules/react-router-dom/esm/react-router-dom.js"),
 				f = a("./src/lib/opener/index.ts"),
-				y = a("./src/reddit/hooks/useIsClient.ts"),
-				E = a("./src/reddit/pages/Powerups/Communities.m.less"),
-				N = a.n(E);
+				E = a("./src/reddit/hooks/useIsClient.ts"),
+				y = a("./src/reddit/pages/Powerups/Communities.m.less"),
+				N = a.n(y);
 			const v = _()(["wallstreetbets", "pennystocks", "tiktokcringe", "lgbt", "python", "unexpected", "chloe", "pewdiepiesubmissions", "roastme", "jacksepticeye", "thebachelor", "taylorswift", "bigbrother", "belowdeck", "blackpink"], 3),
 				S = () => {
 					const e = Object(u.a)(),
 						t = Object(o.e)(b.X),
-						a = Object(y.a)(),
+						a = Object(E.a)(),
 						r = () => {
 							e(Object(d.a)())
 						};
@@ -1709,9 +1723,9 @@
 			var w = a("./src/lib/constants/index.ts"),
 				f = a("./src/reddit/controls/Button/index.tsx");
 			const {
-				fbt: y
+				fbt: E
 			} = a("./node_modules/fbt/lib/FbtPublic.js");
-			var E = ({
+			var y = ({
 					isEligibleMod: e,
 					selectedSubredditUrl: t,
 					modSubredditsInfo: a,
@@ -1730,7 +1744,7 @@
 						return s.a.createElement(f.k, {
 							onClick: e,
 							isFullWidth: !0
-						}, y._("Close", null, {
+						}, E._("Close", null, {
 							hk: "3Qarlp"
 						}))
 					}
@@ -1752,7 +1766,7 @@
 							}))(e.id))
 						},
 						isFullWidth: !0
-					}, y._("Create a Prediction", null, {
+					}, E._("Create a Prediction", null, {
 						hk: "JgEmz"
 					})))
 				},
@@ -1846,7 +1860,7 @@
 						className: O.a.disclaimer
 					}, P._("Predictions creation is only available on Web and iOS at this time.", null, {
 						hk: "J1xBl"
-					})), s.a.createElement(E, {
+					})), s.a.createElement(y, {
 						isEligibleMod: c,
 						selectedSubredditUrl: l,
 						modSubredditsInfo: n,
@@ -2304,4 +2318,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Predictions.e8e0e211feeea47027e0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Predictions.faf9fde490ffed1143ca.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/BadgePurchaseModal.76746850fbdd8f842e00.js
-// Retrieved at 11/4/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/BadgePurchaseModal.3d945802f5e20f5098ef.js
+// Retrieved at 12/13/2021, 2:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["BadgePurchaseModal"], {
 		"./src/reddit/actions/economics/subredditPremium/actionCreators.ts": function(e, t, s) {
@@ -97,25 +97,25 @@
 				f = s("./src/reddit/components/Governance/Token/index.tsx"),
 				g = s("./src/reddit/controls/Button/index.tsx"),
 				x = s("./src/reddit/icons/svgs/Clock/index.tsx"),
-				_ = s("./src/reddit/icons/svgs/Sunburst/index.tsx"),
-				j = s("./src/reddit/models/Badge/index.ts"),
-				I = s("./src/reddit/models/Badge/managementPage.ts"),
-				O = s("./src/reddit/selectors/gov.ts"),
-				v = s("./src/reddit/components/Governance/ModalClose/index.tsx"),
+				v = s("./src/reddit/icons/svgs/Sunburst/index.tsx"),
+				_ = s("./src/reddit/models/Badge/index.ts"),
+				j = s("./src/reddit/models/Badge/managementPage.ts"),
+				I = s("./src/reddit/selectors/gov.ts"),
+				O = s("./src/reddit/components/Governance/ModalClose/index.tsx"),
 				h = s("./src/reddit/components/Badges/PurchaseModal/Header/index.m.less"),
 				N = s.n(h);
 
 			function E(e) {
 				return r.a.createElement("header", {
 					className: N.a.header
-				}, e.children, r.a.createElement(v.a, {
+				}, e.children, r.a.createElement(O.a, {
 					afterClose: e.afterClose
 				}))
 			}
-			var P = s("./src/reddit/components/Badges/PurchaseModal/PostPurchase/index.m.less"),
-				k = s.n(P);
+			var k = s("./src/reddit/components/Badges/PurchaseModal/PostPurchase/index.m.less"),
+				y = s.n(k);
 			const {
-				fbt: y
+				fbt: P
 			} = s("./node_modules/fbt/lib/FbtPublic.js");
 			const w = Object(d.c)({
 				badge: (e, {
@@ -137,13 +137,13 @@
 					const s = Object(i.a)(e, t);
 					if (s) {
 						const t = s.subredditId;
-						return Object(O.d)(e, {
+						return Object(I.d)(e, {
 							subredditId: t
 						})
 					}
 				}
 			});
-			var B = Object(c.b)(w, e => ({
+			var C = Object(c.b)(w, e => ({
 					onApplyBadge: (t, s) => {
 						e(Object(m.i)({
 							badgeIds: [s],
@@ -153,7 +153,7 @@
 					onClose: t => {
 						e(Object(p.f)()), e(Object(b.c)({
 							subredditId: t,
-							initialView: I.c.MyBadges
+							initialView: j.c.MyBadges
 						}))
 					}
 				}))((function({
@@ -168,55 +168,55 @@
 						className: t
 					}, r.a.createElement(E, {
 						afterClose: () => c(e.subredditId)
-					}, y._("You got a new badge!", null, {
+					}, P._("You got a new badge!", null, {
 						hk: "13PLeW"
 					})), r.a.createElement("div", {
-						className: k.a.content
+						className: y.a.content
 					}, function(e) {
-						const t = Object(j.d)(128, 128, e);
-						return r.a.createElement(n.Fragment, null, r.a.createElement(_.a, {
-							className: k.a.sunburst
+						const t = Object(_.d)(128, 128, e);
+						return r.a.createElement(n.Fragment, null, r.a.createElement(v.a, {
+							className: y.a.sunburst
 						}), r.a.createElement("img", {
-							className: k.a.image,
+							className: y.a.image,
 							src: t.url2x,
 							srcSet: `${t.url}, ${t.url2x} 2x`
 						}))
 					}(e), function(e, t) {
 						return r.a.createElement("div", {
-							className: k.a.expiry
-						}, y._("Expires in {clock}{timeLeft}", [y._param("clock", r.a.createElement(x.a, {
-							className: k.a.clock
-						})), y._param("timeLeft", Object(u.a)(new Date(Date.now() + 1e3 * t.duration), !0))], {
+							className: y.a.expiry
+						}, P._("Expires in {clock}{timeLeft}", [P._param("clock", r.a.createElement(x.a, {
+							className: y.a.clock
+						})), P._param("timeLeft", Object(u.a)(new Date(Date.now() + 1e3 * t.duration), !0))], {
 							hk: "1nLM5D"
 						}))
 					}(0, d)), r.a.createElement("footer", {
-						className: k.a.footer
+						className: y.a.footer
 					}, function(e, t) {
 						return r.a.createElement("div", {
-							className: k.a.wallet
-						}, y._("You have {token}{amount}", [y._param("token", r.a.createElement(f.a, {
+							className: y.a.wallet
+						}, P._("You have {token}{amount}", [P._param("token", r.a.createElement(f.a, {
 							grey: !0,
-							className: k.a.tokenSymbol,
+							className: y.a.tokenSymbol,
 							subredditId: t
-						})), y._param("amount", Object(l.a)(e.amount))], {
+						})), P._param("amount", Object(l.a)(e.amount))], {
 							hk: "2uBJCn"
 						}))
 					}(a, d.subredditId), function(e, t, s) {
 						return r.a.createElement("div", {
-							className: k.a.controls
+							className: y.a.controls
 						}, r.a.createElement(g.r, {
 							onClick: () => s(e.subredditId)
-						}, y._("Done", null, {
+						}, P._("Done", null, {
 							hk: "36WZte"
 						})), r.a.createElement(g.l, {
 							onClick: () => t(e.subredditId, e.id)
-						}, y._("Apply badge", null, {
+						}, P._("Apply badge", null, {
 							hk: "4nWjqv"
 						})))
 					}(e, s, c))) : null
 				})),
 				M = s("./src/reddit/actions/product.ts"),
-				C = s("./src/reddit/controls/LoadingIcon/index.tsx"),
+				B = s("./src/reddit/controls/LoadingIcon/index.tsx"),
 				L = s("./src/reddit/selectors/crypto/points.ts"),
 				U = s("./src/reddit/components/Badges/PurchaseModal/PrePurchase/index.m.less"),
 				D = s.n(U);
@@ -238,7 +238,7 @@
 					return (null === (s = Object(L.b)(e, null == n ? void 0 : n.subredditId)) || void 0 === s ? void 0 : s.name) || ""
 				}
 			});
-			var H = Object(c.b)(S, (e, {
+			var z = Object(c.b)(S, (e, {
 					productId: t
 				}) => ({
 					onPurchase: () => e(Object(M.h)({
@@ -252,7 +252,7 @@
 					})), r.a.createElement("div", {
 						className: D.a.content
 					}, function(e) {
-						const t = Object(j.d)(96, 96, e);
+						const t = Object(_.d)(96, 96, e);
 						return r.a.createElement("img", {
 							className: D.a.badgeImage,
 							src: t.url2x,
@@ -282,7 +282,7 @@
 						}), Object(l.a)(e.price))
 					}(e.product), (t = e.purchaseInProgress, s = e.tokenName, n = e.onPurchase, r.a.createElement(g.l, {
 						onClick: n
-					}, t ? r.a.createElement(C.a, {
+					}, t ? r.a.createElement(B.a, {
 						className: D.a.loadingIcon,
 						sizePx: 20
 					}) : A._("convert {tokenName}", [A._param("tokenName", s)], {
@@ -290,18 +290,18 @@
 					}))))) : null;
 					var t, s, n, c
 				})),
-				T = s("./src/reddit/components/Badges/PurchaseModal/index.m.less"),
-				q = s.n(T);
-			const z = Object(d.c)({
+				H = s("./src/reddit/components/Badges/PurchaseModal/index.m.less"),
+				R = s.n(H);
+			const T = Object(d.c)({
 					alreadyOwned: i.b
 				}),
-				R = Object(c.b)(z);
-			t.default = Object(a.a)(R((function(e) {
+				q = Object(c.b)(T);
+			t.default = Object(a.a)(q((function(e) {
 				return r.a.createElement("div", {
-					className: Object(o.a)(q.a.container, e.className)
-				}, e.alreadyOwned ? r.a.createElement(B, {
+					className: Object(o.a)(R.a.container, e.className)
+				}, e.alreadyOwned ? r.a.createElement(C, {
 					productId: e.productId
-				}) : r.a.createElement(H, {
+				}) : r.a.createElement(z, {
 					productId: e.productId
 				}))
 			})))
@@ -405,6 +405,54 @@
 				"data-testid": "LoadingIcon"
 			})
 		},
+		"./src/reddit/icons/svgs/Clock/index.m.less": function(e, t, s) {
+			e.exports = {
+				clock: "_3dezPhiKJXkVFXj94zLKcs"
+			}
+		},
+		"./src/reddit/icons/svgs/Clock/index.tsx": function(e, t, s) {
+			"use strict";
+			var n = s("./node_modules/react/index.js"),
+				r = s.n(n),
+				c = s("./src/lib/classNames/index.ts"),
+				d = s("./src/reddit/icons/svgs/Clock/index.m.less"),
+				a = s.n(d);
+			t.a = e => r.a.createElement("svg", {
+				className: Object(c.a)(a.a.clock, e.className),
+				xmlns: "http://www.w3.org/2000/svg",
+				viewBox: "0 0 11 11"
+			}, r.a.createElement("g", null, r.a.createElement("path", {
+				d: "M5 3.75C5 3.47388 5.22363 3.25 5.5 3.25C5.77637 3.25 6 3.47388 6 3.75V5.53735L7.81689 6.58643C8.05615 6.72449 8.13818 7.03027 8 7.26941C7.86182 7.50861 7.55615 7.59052 7.31689 7.45245L5.25049 6.25934C5.07861 6.16028 4.98779 5.97504 5.00146 5.78992L5 5.75V3.75Z",
+				fill: "inherit"
+			}), r.a.createElement("path", {
+				fillRule: "evenodd",
+				clipRule: "evenodd",
+				d: "M11 5.5C11 8.53754 8.5376 11 5.5 11C2.4624 11 0 8.53754 0 5.5C0 2.46246 2.4624 0 5.5 0C8.5376 0 11 2.46246 11 5.5ZM10 5.5C10 7.98529 7.98535 10 5.5 10C3.01465 10 1 7.98529 1 5.5C1 3.01471 3.01465 1 5.5 1C7.98535 1 10 3.01471 10 5.5Z",
+				fill: "inherit"
+			})))
+		},
+		"./src/reddit/icons/svgs/Sunburst/index.tsx": function(e, t, s) {
+			"use strict";
+			s.d(t, "a", (function() {
+				return c
+			}));
+			var n = s("./node_modules/react/index.js"),
+				r = s.n(n);
+
+			function c(e) {
+				return r.a.createElement("svg", {
+					className: e.className,
+					style: e.style,
+					viewBox: "0 0 450 450",
+					xmlns: "http://www.w3.org/2000/svg"
+				}, r.a.createElement("path", {
+					clipRule: "evenodd",
+					d: "m206.073.784912c-27.274 2.271728-53.166 9.407988-76.806 20.538788l94.176 200.9793-126.9464-182.0213c-21.8975 15.262-40.9531 34.3177-56.2149 56.2151l182.0213 126.9462-200.9793-94.177c-11.1308 23.641-18.26755 49.533-20.539032 76.807l221.101332 18.927-221.101332 18.927c2.271482 27.274 9.408232 53.167 20.539032 76.807l200.9803-94.177-182.0223 126.946c15.2618 21.898 34.3179 40.954 56.2154 56.215l126.9459-182.021-94.176 200.979c23.64 11.131 49.532 18.268 76.806 20.539l18.927-221.101 18.927 221.101c27.274-2.271 53.166-9.408 76.806-20.539l-94.176-200.979 126.946 182.021c21.897-15.261 40.954-34.317 56.215-56.215l-182.022-126.946 200.98 94.177c11.131-23.64 18.268-49.533 20.539-76.807l-221.101-18.927 221.101-18.927c-2.271-27.274-9.407-53.166-20.538-76.806l-200.98 94.176 182.022-126.9457c-15.262-21.8974-34.318-40.9536-56.216-56.2156l-126.946 182.0213 94.176-200.9793c-23.64-11.1308-49.532-18.26706-76.806-20.538788l-18.927 221.101088z",
+					fill: "inherit",
+					fillRule: "evenodd"
+				}))
+			}
+		},
 		"./src/reddit/models/Product/index.ts": function(e, t, s) {
 			"use strict";
 			var n;
@@ -506,4 +554,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BadgePurchaseModal.76746850fbdd8f842e00.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BadgePurchaseModal.3d945802f5e20f5098ef.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditTopContent.d5af38ed1d05d23b7620.js
-// Retrieved at 12/13/2021, 11:10:14 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditTopContent.db2339e64ee278a1627a.js
+// Retrieved at 12/13/2021, 2:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditTopContent"], {
 		"./src/lib/getShortenedLink.ts": function(e, t, s) {
@@ -321,17 +321,17 @@
 				D = s("./src/lib/constants/index.ts"),
 				V = s("./src/reddit/components/HumanDate/index.tsx"),
 				W = s("./src/reddit/components/Widgets/CommunityList/helpers.ts"),
-				B = s("./src/reddit/hooks/useClickSourceData.ts"),
-				U = s("./src/reddit/layout/row/Inline/index.tsx"),
+				U = s("./src/reddit/hooks/useClickSourceData.ts"),
+				B = s("./src/reddit/layout/row/Inline/index.tsx"),
 				F = s("./src/reddit/components/DiscoveryUnit/PostAuthor/index.m.less"),
 				A = s.n(F);
 			var R = e => {
 					const t = M.a.PROFILE,
 						s = Object(W.a)(e.author, t),
-						a = Object(B.a)();
+						a = Object(U.a)();
 					return r.a.createElement("div", {
 						className: Object(l.a)(A.a.container, e.className)
-					}, r.a.createElement(U.a, {
+					}, r.a.createElement(B.a, {
 						className: A.a.layout
 					}, r.a.createElement("div", {
 						className: A.a.textContainer
@@ -588,7 +588,7 @@
 					className: Object(l.a)(Ee.a.title, Object(ye.b)({
 						isLoading: t
 					}))
-				})), s && r.a.createElement(U.a, {
+				})), s && r.a.createElement(B.a, {
 					className: Ee.a.subreddit
 				}, r.a.createElement(ge.a, ve({
 					className: Object(l.a)(Object(ye.b)({
@@ -598,7 +598,7 @@
 					className: Object(l.a)(Ee.a.subredditName, Object(ye.b)({
 						isLoading: t
 					}))
-				})), r.a.createElement(U.a, null, r.a.createElement(we, ve({
+				})), r.a.createElement(B.a, null, r.a.createElement(we, ve({
 					isLoading: t
 				}, a)), r.a.createElement("div", {
 					className: Object(l.a)(Ee.a.comments, Object(ye.b)({
@@ -640,8 +640,8 @@
 					stiffness: 210,
 					damping: 30
 				},
-				Be = 100,
-				Ue = "post_carousel_item",
+				Ue = 100,
+				Be = "post_carousel_item",
 				Fe = ({
 					root: e,
 					handleVisibilityChange: t,
@@ -700,7 +700,7 @@
 							singleSubredditMode: n
 						} = this.props;
 						return r.a.createElement(Fe, {
-							"data-click-id": Ue,
+							"data-click-id": Be,
 							className: Me.a.largePost,
 							eventFactory: this.itemPostClickEventFactory,
 							forceLoadMedia: !0,
@@ -773,7 +773,7 @@
 						scrollIndex: d,
 						spacerWidth: Ve,
 						visibleItemsCount: m
-					}), b = e ? Be : this.getMarginLeft({
+					}), b = e ? Ue : this.getMarginLeft({
 						adjustment: p,
 						itemWidth: c,
 						scrollIndex: d,
@@ -785,7 +785,7 @@
 						ref: this.setContainerRef
 					}, r.a.createElement(i.Motion, {
 						defaultStyle: {
-							marginLeft: e || n ? Be : 0
+							marginLeft: e || n ? Ue : 0
 						},
 						style: {
 							marginLeft: Object(i.spring)(b, o || We)
@@ -1424,9 +1424,9 @@
 				D = s("./src/reddit/components/SEOTitle/index.tsx"),
 				V = s("./src/reddit/selectors/experiments/econ/index.ts"),
 				W = s("./src/reddit/selectors/experiments/loggedOutBlockingInterstitial.ts"),
-				B = s("./src/reddit/selectors/user.ts"),
-				U = s("./src/reddit/components/PostTitle/index.m.less"),
-				F = s.n(U),
+				U = s("./src/reddit/selectors/user.ts"),
+				B = s("./src/reddit/components/PostTitle/index.m.less"),
+				F = s.n(B),
 				A = s("./src/config.ts"),
 				R = s("./src/reddit/hooks/useClickSourceData.ts"),
 				H = s("./src/reddit/hooks/useExperimentVariant.ts"),
@@ -1514,7 +1514,7 @@
 					}) => Object(p.q)(e, {
 						pageLayer: t
 					}),
-					shouldOpenPostInNewTab: B.db,
+					shouldOpenPostInNewTab: U.db,
 					isTournamentPredictionPostV2: V.t
 				}),
 				X = e => {
@@ -1995,66 +1995,6 @@
 				})))))
 			}
 		},
-		"./src/reddit/icons/svgs/OutboundLink/index.tsx": function(e, t, s) {
-			"use strict";
-			var a = s("./node_modules/react/index.js"),
-				n = s.n(a);
-			t.a = e => n.a.createElement("svg", {
-				className: e.className,
-				xmlns: "http://www.w3.org/2000/svg",
-				viewBox: "0 0 20 20"
-			}, n.a.createElement("path", {
-				d: "M16 10.77a1 1 0 0 0-1 1V14a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h2.23a1 1 0 0 0 0-2H6a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3v-2.23a1 1 0 0 0-1-1z"
-			}), n.a.createElement("path", {
-				d: "M17.91 2.62A1 1 0 0 0 17 2h-4a1 1 0 0 0 0 2h1.59L9.38 9.19a1 1 0 1 0 1.41 1.41L16 5.41V7a1 1 0 0 0 2 0V3a1 1 0 0 0-.09-.38z"
-			}))
-		},
-		"./src/reddit/icons/svgs/Tile/index.tsx": function(e, t, s) {
-			"use strict";
-			var a = s("./node_modules/react/index.js"),
-				n = s.n(a);
-			t.a = e => n.a.createElement("svg", {
-				className: e.className,
-				viewBox: "0 0 20 20",
-				xmlns: "http://www.w3.org/2000/svg"
-			}, n.a.createElement("g", null, n.a.createElement("rect", {
-				stroke: "inherit",
-				fill: "none",
-				x: "1.5",
-				y: "1.5",
-				width: "17",
-				height: "17",
-				rx: "4"
-			}), n.a.createElement("rect", {
-				fill: "inherit",
-				stroke: "none",
-				x: "4",
-				y: "4",
-				width: "5.5",
-				height: "5.5"
-			}), n.a.createElement("rect", {
-				fill: "inherit",
-				stroke: "none",
-				x: "10.5",
-				y: "4",
-				width: "5.5",
-				height: "5.5"
-			}), n.a.createElement("rect", {
-				fill: "inherit",
-				stroke: "none",
-				x: "4",
-				y: "10",
-				width: "5.5",
-				height: "5.5"
-			}), n.a.createElement("rect", {
-				fill: "inherit",
-				stroke: "none",
-				x: "10.5",
-				y: "10",
-				width: "5.5",
-				height: "5.5"
-			})))
-		},
 		"./src/reddit/layout/row/Inline/index.m.less": function(e, t, s) {
 			e.exports = {
 				inlineRow: "XZK-LTFT5CgGo9MvPQQsy"
@@ -2117,4 +2057,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.d5af38ed1d05d23b7620.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.db2339e64ee278a1627a.js.map

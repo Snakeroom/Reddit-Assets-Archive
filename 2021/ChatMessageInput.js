@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput.96cceef5662d2f27e271.js
-// Retrieved at 12/9/2021, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput.c7d03ad7e3808735c891.js
+// Retrieved at 12/13/2021, 2:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -510,18 +510,18 @@
 				S = s("./src/reddit/selectors/PublicAccessNetwork/api.ts"),
 				P = s("./src/reddit/components/CommentsChat/MessageInput/AwardButton.tsx"),
 				L = s("./src/reddit/components/CommentsChat/MessageInput/index.m.less"),
-				B = s.n(L);
-			const N = {},
+				N = s.n(L);
+			const B = {},
 				T = 1e3,
 				R = "chat_submission_from_rte",
-				M = p.a.form("Form", B.a),
-				U = p.a.wrapped(k.e, "ChatButton", B.a),
-				Z = p.a.div("CloseIconWrap", B.a),
-				q = p.a.div("Reply", B.a),
-				V = p.a.div("ReplyAuthor", B.a),
-				G = p.a.div("ReplyComment", B.a),
-				K = p.a.wrapped(y.a, "RichTextEditor", B.a),
-				H = p.a.wrapped(g.a, "SmallChatUserIcon", B.a),
+				M = p.a.form("Form", N.a),
+				Z = p.a.wrapped(k.e, "ChatButton", N.a),
+				U = p.a.div("CloseIconWrap", N.a),
+				q = p.a.div("Reply", N.a),
+				V = p.a.div("ReplyAuthor", N.a),
+				K = p.a.div("ReplyComment", N.a),
+				G = p.a.wrapped(y.a, "RichTextEditor", N.a),
+				H = p.a.wrapped(g.a, "SmallChatUserIcon", N.a),
 				W = Object(d.b)(() => Object(l.c)({
 					draft: O.i,
 					errorMsgs: O.J,
@@ -668,40 +668,40 @@
 						hk: "3yojgj"
 					}), _ = d.isGildable && s && !t, b = s;
 					return u.a.createElement("div", {
-						className: Object(m.a)(B.a.FormWrapper, {
-							[B.a.LivestreamingWrapper]: s
+						className: Object(m.a)(N.a.FormWrapper, {
+							[N.a.LivestreamingWrapper]: s
 						})
 					}, !t && p && u.a.createElement(q, {
 						className: Object(m.a)({
-							[B.a.isLivestreaming]: s
+							[N.a.isLivestreaming]: s
 						})
-					}, u.a.createElement(G, {
+					}, u.a.createElement(K, {
 						onClick: this.handleCloseReply
 					}, u.a.createElement(V, null, r.fbt._("Replying to u/ {username}:", [r.fbt._param("username", p.author)], {
 						hk: "2YZre5"
 					})), u.a.createElement(x.a, {
-						className: B.a.RichTextJson,
+						className: N.a.RichTextJson,
 						key: `rich-text-${p.id}`,
 						content: Object(F.a)(p),
-						rtJsonElementProps: N
-					}), u.a.createElement(Z, null, u.a.createElement(j.a, null)))), u.a.createElement("div", {
-						className: B.a.inputLine
+						rtJsonElementProps: B
+					}), u.a.createElement(U, null, u.a.createElement(j.a, null)))), u.a.createElement("div", {
+						className: N.a.inputLine
 					}, u.a.createElement(M, {
 						className: Object(m.a)({
-							[B.a.Editing]: t
+							[N.a.Editing]: t
 						}),
 						onSubmit: this.handleSubmit,
 						onReset: this.handleCancel
 					}, u.a.createElement(X, {
 						isEditing: !!t,
 						isLivestreaming: !!s
-					}), u.a.createElement(K, {
-						className: Object(m.a)(B.a.RichTextEditor, {
-							[B.a.Livestreaming]: s && !t,
-							[B.a.Editing]: !s && t
+					}), u.a.createElement(G, {
+						className: Object(m.a)(N.a.RichTextEditor, {
+							[N.a.Livestreaming]: s && !t,
+							[N.a.Editing]: !s && t
 						}),
 						focusableContentRTEClassName: Object(m.a)({
-							[B.a.LivestreamingFocusableContent]: s && !t
+							[N.a.LivestreamingFocusableContent]: s && !t
 						}),
 						dataTestId: R,
 						editorType: E.a.Comment,
@@ -715,21 +715,21 @@
 						placeholderText: h,
 						readOnly: c,
 						showSubmitButton: b && !this.state.showError,
-						submitButtonClassName: Object(m.a)(B.a.insetSubmitButton, B.a.submitButton),
+						submitButtonClassName: Object(m.a)(N.a.insetSubmitButton, N.a.submitButton),
 						submitOnEnter: !0,
 						trackToolbarClick: a.a,
 						hideToolbar: !0,
 						noBorder: !0,
 						isChatPost: !0
-					}), t && u.a.createElement(U, {
-						className: Object(m.a)(B.a.ChatButton, {
-							[B.a.LivestreamingResetButton]: s
+					}), t && u.a.createElement(Z, {
+						className: Object(m.a)(N.a.ChatButton, {
+							[N.a.LivestreamingResetButton]: s
 						}),
 						type: "reset"
-					}, u.a.createElement(j.a, null)), !b && u.a.createElement(U, {
-						className: Object(m.a)(B.a.ChatButton, {
-							[B.a.LivestreamingChatButton]: s && !t,
-							[B.a.LivestreamingResetButton]: s && t
+					}, u.a.createElement(j.a, null)), !b && u.a.createElement(Z, {
+						className: Object(m.a)(N.a.ChatButton, {
+							[N.a.LivestreamingChatButton]: s && !t,
+							[N.a.LivestreamingResetButton]: s && t
 						}),
 						type: "submit",
 						disabled: !this.canSubmit(),
@@ -886,9 +886,9 @@
 			})), s.d(t, "e", (function() {
 				return L
 			})), s.d(t, "w", (function() {
-				return B
-			})), s.d(t, "F", (function() {
 				return N
+			})), s.d(t, "F", (function() {
+				return B
 			})), s.d(t, "f", (function() {
 				return T
 			})), s.d(t, "l", (function() {
@@ -896,9 +896,9 @@
 			})), s.d(t, "m", (function() {
 				return M
 			})), s.d(t, "g", (function() {
-				return U
-			})), s.d(t, "h", (function() {
 				return Z
+			})), s.d(t, "h", (function() {
+				return U
 			}));
 			var r, n = s("./src/reddit/constants/chat.ts"),
 				a = s("./src/reddit/selectors/PublicAccessNetwork/streams.ts"),
@@ -1158,14 +1158,14 @@
 					playback: c(s, e, t),
 					...o(s, e)
 				}),
-				B = (e, t) => s => ({
+				N = (e, t) => s => ({
 					source: "stream_player",
 					action: "mute",
 					noun: "volume",
 					playback: c(s, e, t),
 					...o(s, e)
 				}),
-				N = (e, t) => s => ({
+				B = (e, t) => s => ({
 					source: "stream_player",
 					action: "unmute",
 					noun: "volume",
@@ -1195,20 +1195,47 @@
 					...o(s, e),
 					...u(s)
 				}),
-				U = (e, t) => s => ({
+				Z = (e, t) => s => ({
 					source: "rpanstudio_banner",
 					action: "click",
 					noun: e,
 					...o(s, t),
 					...u(s)
 				}),
-				Z = (e, t) => s => ({
+				U = (e, t) => s => ({
 					source: "rpanstudio_modal",
 					action: "click",
 					noun: e,
 					...o(s, t),
 					...u(s)
 				})
+		},
+		"./src/reddit/icons/svgs/Trash2/index.m.less": function(e, t, s) {
+			e.exports = {
+				icon: "_1Fa4RPHlhrfUZuNaXK2-eP"
+			}
+		},
+		"./src/reddit/icons/svgs/Trash2/index.tsx": function(e, t, s) {
+			"use strict";
+			s.d(t, "a", (function() {
+				return c
+			}));
+			var r = s("./node_modules/react/index.js"),
+				n = s.n(r),
+				a = s("./src/lib/classNames/index.ts"),
+				i = s("./src/reddit/icons/svgs/Trash2/index.m.less"),
+				o = s.n(i);
+			const c = e => n.a.createElement("svg", {
+				className: Object(a.a)(o.a.icon, e.className),
+				viewBox: "0 0 20 20",
+				xmlns: "http://www.w3.org/2000/svg",
+				onClick: e.onClick
+			}, n.a.createElement("path", {
+				d: "M16.5,2H12.71l-.85-.85A.5.5,0,0,0,11.5,1h-3a.5.5,0,0,0-.35.15L7.29,2H3.5a.5.5,0,0,0-.5.5v1a.5.5,0,0,0,.5.5h13a.5.5,0,0,0,.5-.5v-1A.5.5,0,0,0,16.5,2Z"
+			}), n.a.createElement("path", {
+				d: "M16.5,5H3.5a.5.5,0,0,0-.5.5v12A1.5,1.5,0,0,0,4.5,19h11A1.5,1.5,0,0,0,17,17.5V5.5A.5.5,0,0,0,16.5,5ZM6.75,15.5a.75.75,0,0,1-1.5,0v-7a.75.75,0,0,1,1.5,0Zm4,0a.75.75,0,0,1-1.5,0v-7a.75.75,0,0,1,1.5,0Zm4,0a.75.75,0,0,1-1.5,0v-7a.75.75,0,0,1,1.5,0Z"
+			}));
+			t.b = c
 		},
 		"./src/reddit/models/Payments/index.ts": function(e, t, s) {
 			"use strict";
@@ -1274,15 +1301,15 @@
 			})), s.d(t, "c", (function() {
 				return L
 			})), s.d(t, "f", (function() {
-				return B
+				return N
 			})), s.d(t, "a", (function() {
 				return R
 			})), s.d(t, "j", (function() {
 				return M
 			})), s.d(t, "b", (function() {
-				return U
-			})), s.d(t, "e", (function() {
 				return Z
+			})), s.d(t, "e", (function() {
+				return U
 			})), s.d(t, "g", (function() {
 				return q
 			}));
@@ -1310,7 +1337,7 @@
 						const s = e[t];
 						if (!s) return e;
 						const r = s.stream.state,
-							n = N(r, i.a.ENDED) ? i.a.ENDED : r,
+							n = B(r, i.a.ENDED) ? i.a.ENDED : r,
 							a = s.stream.vod_accessible;
 						return n === r && !0 === a ? e : {
 							...e,
@@ -1328,7 +1355,7 @@
 						const s = e[t];
 						if (!s) return e;
 						const r = s.stream.state,
-							n = N(r, i.a.ENDED) ? i.a.ENDED : r,
+							n = B(r, i.a.ENDED) ? i.a.ENDED : r,
 							a = s.stream.vod_accessible;
 						return n === r && !1 === a ? e : {
 							...e,
@@ -1432,11 +1459,11 @@
 					...t[s],
 					preloadedPreviewUrl: e[s]
 				})))), Object(r.a)(A, e => e.publicAccessNetwork.preloads.streamPreviews, (e, t) => e && t[e])),
-				B = Object(r.a)((e, {
+				N = Object(r.a)((e, {
 					streamIdFromPath: t
 				}) => t ? k(e, t) : void 0, e => !e || e.chat_disabled || e.post.isArchived || e.post.isLocked);
 
-			function N(e, t) {
+			function B(e, t) {
 				const s = {
 					[i.a.NOT_STARTED]: 0,
 					[i.a.PUBLISHED]: 1,
@@ -1460,8 +1487,8 @@
 					const n = r.stream.state;
 					return n === i.a.IS_LIVE || n === i.a.DISCONNECTED ? R.LIVE : n === i.a.ENDED && r.stream.vod_accessible ? R.VOD : R.UNAVAILABLE
 				}),
-				U = Object(r.a)(z, M, m.b, c.b, c.o, (e, t, s, r, n) => s ? r : e ? t === R.LIVE || t === R.VOD ? e.stream.hls_url : n : void 0),
-				Z = Object(r.a)(z, M, T, (e, t, s) => e ? t === R.LIVE ? e.broadcast_time : t === R.VOD && s < e.broadcast_time ? s : 0 : 0),
+				Z = Object(r.a)(z, M, m.b, c.b, c.o, (e, t, s, r, n) => s ? r : e ? t === R.LIVE || t === R.VOD ? e.stream.hls_url : n : void 0),
+				U = Object(r.a)(z, M, T, (e, t, s) => e ? t === R.LIVE ? e.broadcast_time : t === R.VOD && s < e.broadcast_time ? s : 0 : 0),
 				q = (e, t) => {
 					const s = p(e);
 					return !!s && s[t] && s[t].chat_disabled
@@ -1521,9 +1548,9 @@
 			})), s.d(t, "r", (function() {
 				return L
 			})), s.d(t, "y", (function() {
-				return B
-			})), s.d(t, "u", (function() {
 				return N
+			})), s.d(t, "u", (function() {
+				return B
 			})), s.d(t, "v", (function() {
 				return T
 			})), s.d(t, "b", (function() {
@@ -1531,9 +1558,9 @@
 			})), s.d(t, "w", (function() {
 				return M
 			})), s.d(t, "s", (function() {
-				return U
-			})), s.d(t, "t", (function() {
 				return Z
+			})), s.d(t, "t", (function() {
+				return U
 			})), s.d(t, "g", (function() {
 				return q
 			})), s.d(t, "m", (function() {
@@ -1725,11 +1752,11 @@
 						membershipAlt: i.membershipAlt || z.membershipAlt
 					}
 				},
-				B = e => {
+				N = e => {
 					const t = e.economics.paymentSystems;
 					return !!(t.status === d.a.Fetched && t.data && t.data.tips && t.data.tips.usdr && t.data.tips.usdr.allowed)
 				},
-				N = (e, t) => {
+				B = (e, t) => {
 					const s = e.user.ownedBadges[t] || {};
 					return !!Object.keys(s).length
 				},
@@ -1747,7 +1774,7 @@
 					const s = t && e.economics.gifs[t];
 					return !!s && s.hasGifProduct
 				},
-				U = (e, t, s) => {
+				Z = (e, t, s) => {
 					if (Object(p.r)(e, {
 							subredditId: t
 						})) return !0;
@@ -1756,7 +1783,7 @@
 					});
 					return !(!r || !Object(a.a)(r))
 				},
-				Z = (e, t, s) => {
+				U = (e, t, s) => {
 					if (!Object(h.b)(e, {
 							subredditId: t
 						})) return !1;
@@ -1781,4 +1808,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.96cceef5662d2f27e271.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.c7d03ad7e3808735c891.js.map
