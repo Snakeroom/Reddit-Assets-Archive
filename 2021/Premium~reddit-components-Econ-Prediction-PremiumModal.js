@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.77c001e9250de585c2b8.js
-// Retrieved at 12/13/2021, 9:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.5169b43282a9115044ca.js
+// Retrieved at 12/13/2021, 12:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Premium~reddit-components-Econ-Prediction-PremiumModal"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -351,9 +351,9 @@
 					B = v("payment", E),
 					L = v("paymentRequestButton", E),
 					R = v("linkAuthentication", E),
-					U = v("shippingAddress", E),
-					G = v("afterpayClearpayMessage", E);
-				e.AfterpayClearpayMessageElement = G, e.AuBankAccountElement = _, e.CardCvcElement = I, e.CardElement = w, e.CardExpiryElement = C, e.CardNumberElement = x, e.Elements = g, e.ElementsConsumer = O, e.EpsBankElement = M, e.FpxBankElement = N, e.IbanElement = S, e.IdealBankElement = A, e.LinkAuthenticationElement = R, e.P24BankElement = T, e.PaymentElement = B, e.PaymentRequestButtonElement = L, e.ShippingAddressElement = U, e.useElements = function() {
+					G = v("shippingAddress", E),
+					U = v("afterpayClearpayMessage", E);
+				e.AfterpayClearpayMessageElement = U, e.AuBankAccountElement = _, e.CardCvcElement = I, e.CardElement = w, e.CardExpiryElement = C, e.CardNumberElement = x, e.Elements = g, e.ElementsConsumer = O, e.EpsBankElement = M, e.FpxBankElement = N, e.IbanElement = S, e.IdealBankElement = A, e.LinkAuthenticationElement = R, e.P24BankElement = T, e.PaymentElement = B, e.PaymentRequestButtonElement = L, e.ShippingAddressElement = G, e.useElements = function() {
 					return j("calls useElements()").elements
 				}, e.useStripe = function() {
 					return j("calls useStripe()").stripe
@@ -552,7 +552,7 @@
 			})), r.d(t, "c", (function() {
 				return T
 			})), r.d(t, "a", (function() {
-				return U
+				return G
 			})), r.d(t, "h", (function() {
 				return D
 			})), r.d(t, "e", (function() {
@@ -805,7 +805,7 @@
 						duration: l.a,
 						text: e
 					}))
-				}, U = (e, t, r) => async (a, o, {
+				}, G = (e, t, r) => async (a, o, {
 					gqlContext: i
 				}) => {
 					a(B({
@@ -832,8 +832,8 @@
 							hk: "4yuT5m"
 						})))
 					}
-				}, G = Object(m.a)(b.S), D = e => async (t, r) => {
-					t(G(e)), t(Object(k.m)(e.subredditId, {
+				}, U = Object(m.a)(b.S), D = e => async (t, r) => {
+					t(U(e)), t(Object(k.m)(e.subredditId, {
 						forceLoad: !0,
 						fullData: !1
 					})), t(Object(P.g)(d.a.ECON_POWERUPS_PURCHASE)), t(Object(P.h)(d.a.ECON_POWERUPS_SUCCESS))
@@ -2102,8 +2102,8 @@
 					"premium-avatars": () => n.fbt._("Exclusive Avatar Gear", null, {
 						hk: "1f1QJb"
 					}),
-					"premium-powerups": () => n.fbt._("Powerup", null, {
-						hk: "2TMd6"
+					"premium-powerups": () => n.fbt._("Powerups", null, {
+						hk: "1yQyau"
 					}),
 					"premium-app-icons": () => n.fbt._("Custom App Icons", null, {
 						hk: "2uGpiC"
@@ -2435,14 +2435,14 @@
 				B = r("./src/lib/classNames/index.ts"),
 				L = r("./src/reddit/actions/claimgold.ts"),
 				R = r("./src/reddit/hooks/useTracking.ts"),
-				U = r("./src/reddit/selectors/claimgold.ts"),
-				G = r("./src/reddit/pages/Premium/RedeemGiftCode/index.m.less"),
-				D = r.n(G);
+				G = r("./src/reddit/selectors/claimgold.ts"),
+				U = r("./src/reddit/pages/Premium/RedeemGiftCode/index.m.less"),
+				D = r.n(U);
 			const F = () => {
 					const e = Object(R.a)(),
 						t = Object(s.d)(),
-						r = Object(s.e)(U.a),
-						n = Object(s.e)(U.b);
+						r = Object(s.e)(G.a),
+						n = Object(s.e)(G.b);
 					return i.a.createElement("div", {
 						className: D.a.container
 					}, i.a.createElement(A.t, {
@@ -2478,8 +2478,8 @@
 						hk: "1d2cH2"
 					}))))
 				},
-				q = a.fbt._("* Powerup, custom app icons, and welcome gifts are only available through a paid Reddit Premium subscription.", null, {
-					hk: "23BUsR"
+				q = a.fbt._("* Powerups, custom app icons, and welcome gifts are only available through a paid Reddit Premium subscription.", null, {
+					hk: "3CHkPX"
 				}),
 				Q = Object(d.c)({
 					goldExpiration: e => e.user.account && e.user.account.goldExpiration || 0,
@@ -2735,4 +2735,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.77c001e9250de585c2b8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.5169b43282a9115044ca.js.map

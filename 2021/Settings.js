@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.9114b8cd1e37c02bd55f.js
-// Retrieved at 12/13/2021, 11:10:14 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.952c4e3e9b60510b8082.js
+// Retrieved at 12/13/2021, 12:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -5841,10 +5841,16 @@
 						hk: "2kYkAv"
 					}) : "", E = g ? s.fbt._("Still active until {date}.", [s.fbt._param("date", g)], {
 						hk: "IZweZ"
-					}) : "", k = u ? m ? x : `${x} ${C}` : d ? `${x} ${j}` : `${x} ${E}`, O = u ? s.fbt._("{powerups count} Reddit Premium powerup/monthly", [s.fbt._param("powerups count", f.toLocaleString())], {
-						hk: "4iP1Np"
-					}) : s.fbt._("{powerups count} powerup/monthly", [s.fbt._param("powerups count", f.toLocaleString())], {
-						hk: "11DNVJ"
+					}) : "", k = u ? m ? x : `${x} ${C}` : d ? `${x} ${j}` : `${x} ${E}`, O = u ? s.fbt._({
+						"*": "{powerups count} Monthly Powerups with Reddit Premium",
+						_1: "{powerups count} Monthly Powerup with Reddit Premium"
+					}, [s.fbt._param("powerups count", f.toLocaleString()), s.fbt._plural(f)], {
+						hk: "4mhrFx"
+					}) : s.fbt._({
+						"*": "{powerups count} Monthly Powerups",
+						_1: "{powerups count} Monthly Powerup"
+					}, [s.fbt._param("powerups count", f.toLocaleString()), s.fbt._plural(f)], {
+						hk: "ADZti"
 					}), w = u && m || !u && d;
 					return i.a.createElement("div", {
 						className: Object(I.a)(a, R.a.container),
@@ -9591,8 +9597,8 @@
 					"premium-avatars": () => s.fbt._("Exclusive Avatar Gear", null, {
 						hk: "1f1QJb"
 					}),
-					"premium-powerups": () => s.fbt._("Powerup", null, {
-						hk: "2TMd6"
+					"premium-powerups": () => s.fbt._("Powerups", null, {
+						hk: "1yQyau"
 					}),
 					"premium-app-icons": () => s.fbt._("Custom App Icons", null, {
 						hk: "2uGpiC"
@@ -13236,4 +13242,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.9114b8cd1e37c02bd55f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.952c4e3e9b60510b8082.js.map
