@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePosts.b15c4049880b16121690.js
-// Retrieved at 12/13/2021, 2:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePosts.4ab20af14e5aeb74e862.js
+// Retrieved at 12/13/2021, 4:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePosts", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -6553,34 +6553,40 @@
 						contentOnly: n,
 						forceRedditStyle: r,
 						headerButton: o,
-						onClick: i,
-						title: c,
-						titleClassName: l,
-						truncateThreshold: u
-					} = this.props, p = n ? O.a.widgetContentOnly : O.a.widgetContent, h = !r && this.props.styles, b = h ? this.getWidgetBackgroundStyles() : {}, f = h ? this.getWidgetHeaderStyles() : {};
+						id: i,
+						onClick: c,
+						onHeaderClick: l,
+						title: u,
+						titleClassName: p,
+						truncateThreshold: h
+					} = this.props, b = n ? O.a.widgetContentOnly : O.a.widgetContent, f = !r && this.props.styles, g = f ? this.getWidgetBackgroundStyles() : {}, _ = f ? this.getWidgetHeaderStyles() : {};
 					return s.a.createElement("div", {
 						className: Object(a.a)(t, O.a.widgetBackground, {
 							[O.a.redditStyle]: r,
-							[O.a.clickable]: !!i,
+							[O.a.clickable]: !!c,
 							[O.a.truncatedGradient]: this.state.isTruncated && !this.props.noGradient
 						}),
 						"data-redditstyle": r,
-						onClick: i,
-						style: b
-					}, c && s.a.createElement("div", {
-						className: O.a.widgetHeader,
-						style: f
+						onClick: c,
+						style: g
+					}, u && s.a.createElement("div", {
+						className: Object(a.a)(O.a.widgetHeader, {
+							[O.a.clickable]: !!l
+						}),
+						id: i,
+						style: _,
+						onClick: l
 					}, s.a.createElement("div", {
-						className: Object(a.a)(O.a.widgetTitle, l)
+						className: Object(a.a)(O.a.widgetTitle, p)
 					}, s.a.createElement(d.b, {
 						type: d.a.Widget
-					}, c)), o), s.a.createElement("div", {
-						className: Object(a.a)(p, {
+					}, u)), o), s.a.createElement("div", {
+						className: Object(a.a)(b, {
 							[O.a.truncated]: this.state.isTruncated
 						}),
 						ref: this.contentRef,
 						style: {
-							maxHeight: this.state.isTruncated ? u : "none"
+							maxHeight: this.state.isTruncated ? h : "none"
 						}
 					}, e), this.state.isTruncated && s.a.createElement(m.r, {
 						className: O.a.seeMore,
@@ -7922,4 +7928,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.b15c4049880b16121690.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.4ab20af14e5aeb74e862.js.map

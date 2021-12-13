@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Geotagging.5d972a49b88732696834.js
-// Retrieved at 12/13/2021, 2:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Geotagging.5840fa10adf93da4d0be.js
+// Retrieved at 12/13/2021, 4:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Geotagging"], {
 		"./node_modules/p-debounce/index.js": function(e, t, s) {
@@ -1062,34 +1062,40 @@
 						contentOnly: s,
 						forceRedditStyle: n,
 						headerButton: a,
-						onClick: i,
-						title: d,
-						titleClassName: l,
-						truncateThreshold: u
-					} = this.props, b = s ? k.a.widgetContentOnly : k.a.widgetContent, p = !n && this.props.styles, h = p ? this.getWidgetBackgroundStyles() : {}, g = p ? this.getWidgetHeaderStyles() : {};
+						id: i,
+						onClick: d,
+						onHeaderClick: l,
+						title: u,
+						titleClassName: b,
+						truncateThreshold: p
+					} = this.props, h = s ? k.a.widgetContentOnly : k.a.widgetContent, g = !n && this.props.styles, f = g ? this.getWidgetBackgroundStyles() : {}, x = g ? this.getWidgetHeaderStyles() : {};
 					return r.a.createElement("div", {
 						className: Object(o.a)(t, k.a.widgetBackground, {
 							[k.a.redditStyle]: n,
-							[k.a.clickable]: !!i,
+							[k.a.clickable]: !!d,
 							[k.a.truncatedGradient]: this.state.isTruncated && !this.props.noGradient
 						}),
 						"data-redditstyle": n,
-						onClick: i,
-						style: h
-					}, d && r.a.createElement("div", {
-						className: k.a.widgetHeader,
-						style: g
+						onClick: d,
+						style: f
+					}, u && r.a.createElement("div", {
+						className: Object(o.a)(k.a.widgetHeader, {
+							[k.a.clickable]: !!l
+						}),
+						id: i,
+						style: x,
+						onClick: l
 					}, r.a.createElement("div", {
-						className: Object(o.a)(k.a.widgetTitle, l)
+						className: Object(o.a)(k.a.widgetTitle, b)
 					}, r.a.createElement(c.b, {
 						type: c.a.Widget
-					}, d)), a), r.a.createElement("div", {
-						className: Object(o.a)(b, {
+					}, u)), a), r.a.createElement("div", {
+						className: Object(o.a)(h, {
 							[k.a.truncated]: this.state.isTruncated
 						}),
 						ref: this.contentRef,
 						style: {
-							maxHeight: this.state.isTruncated ? u : "none"
+							maxHeight: this.state.isTruncated ? p : "none"
 						}
 					}, e), this.state.isTruncated && r.a.createElement(m.r, {
 						className: k.a.seeMore,
@@ -1642,4 +1648,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.5d972a49b88732696834.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.5840fa10adf93da4d0be.js.map

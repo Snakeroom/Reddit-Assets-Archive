@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.0c3ef3d124fda771faf7.js
-// Retrieved at 12/13/2021, 3:40:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.fd80a023200b4acf00c1.js
+// Retrieved at 12/13/2021, 4:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -5199,34 +5199,40 @@
 						contentOnly: n,
 						forceRedditStyle: s,
 						headerButton: o,
-						onClick: a,
-						title: d,
-						titleClassName: l,
-						truncateThreshold: m
-					} = this.props, p = n ? O.a.widgetContentOnly : O.a.widgetContent, h = !s && this.props.styles, b = h ? this.getWidgetBackgroundStyles() : {}, x = h ? this.getWidgetHeaderStyles() : {};
+						id: a,
+						onClick: d,
+						onHeaderClick: l,
+						title: m,
+						titleClassName: p,
+						truncateThreshold: h
+					} = this.props, b = n ? O.a.widgetContentOnly : O.a.widgetContent, x = !s && this.props.styles, f = x ? this.getWidgetBackgroundStyles() : {}, g = x ? this.getWidgetHeaderStyles() : {};
 					return r.a.createElement("div", {
 						className: Object(i.a)(t, O.a.widgetBackground, {
 							[O.a.redditStyle]: s,
-							[O.a.clickable]: !!a,
+							[O.a.clickable]: !!d,
 							[O.a.truncatedGradient]: this.state.isTruncated && !this.props.noGradient
 						}),
 						"data-redditstyle": s,
-						onClick: a,
-						style: b
-					}, d && r.a.createElement("div", {
-						className: O.a.widgetHeader,
-						style: x
+						onClick: d,
+						style: f
+					}, m && r.a.createElement("div", {
+						className: Object(i.a)(O.a.widgetHeader, {
+							[O.a.clickable]: !!l
+						}),
+						id: a,
+						style: g,
+						onClick: l
 					}, r.a.createElement("div", {
-						className: Object(i.a)(O.a.widgetTitle, l)
+						className: Object(i.a)(O.a.widgetTitle, p)
 					}, r.a.createElement(c.b, {
 						type: c.a.Widget
-					}, d)), o), r.a.createElement("div", {
-						className: Object(i.a)(p, {
+					}, m)), o), r.a.createElement("div", {
+						className: Object(i.a)(b, {
 							[O.a.truncated]: this.state.isTruncated
 						}),
 						ref: this.contentRef,
 						style: {
-							maxHeight: this.state.isTruncated ? m : "none"
+							maxHeight: this.state.isTruncated ? h : "none"
 						}
 					}, e), this.state.isTruncated && r.a.createElement(u.r, {
 						className: O.a.seeMore,
@@ -6757,4 +6763,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.0c3ef3d124fda771faf7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.fd80a023200b4acf00c1.js.map

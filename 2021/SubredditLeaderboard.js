@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.457afb5747f863d2564a.js
-// Retrieved at 12/13/2021, 2:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.9427ae90213c7c5e407d.js
+// Retrieved at 12/13/2021, 4:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/times.js": function(e, t, n) {
@@ -1350,34 +1350,40 @@
 						contentOnly: n,
 						forceRedditStyle: r,
 						headerButton: a,
-						onClick: i,
-						title: d,
-						titleClassName: l,
-						truncateThreshold: u
-					} = this.props, p = n ? v.a.widgetContentOnly : v.a.widgetContent, b = !r && this.props.styles, g = b ? this.getWidgetBackgroundStyles() : {}, h = b ? this.getWidgetHeaderStyles() : {};
+						id: i,
+						onClick: d,
+						onHeaderClick: l,
+						title: u,
+						titleClassName: p,
+						truncateThreshold: b
+					} = this.props, g = n ? v.a.widgetContentOnly : v.a.widgetContent, h = !r && this.props.styles, y = h ? this.getWidgetBackgroundStyles() : {}, f = h ? this.getWidgetHeaderStyles() : {};
 					return s.a.createElement("div", {
 						className: Object(o.a)(t, v.a.widgetBackground, {
 							[v.a.redditStyle]: r,
-							[v.a.clickable]: !!i,
+							[v.a.clickable]: !!d,
 							[v.a.truncatedGradient]: this.state.isTruncated && !this.props.noGradient
 						}),
 						"data-redditstyle": r,
-						onClick: i,
-						style: g
-					}, d && s.a.createElement("div", {
-						className: v.a.widgetHeader,
-						style: h
+						onClick: d,
+						style: y
+					}, u && s.a.createElement("div", {
+						className: Object(o.a)(v.a.widgetHeader, {
+							[v.a.clickable]: !!l
+						}),
+						id: i,
+						style: f,
+						onClick: l
 					}, s.a.createElement("div", {
-						className: Object(o.a)(v.a.widgetTitle, l)
+						className: Object(o.a)(v.a.widgetTitle, p)
 					}, s.a.createElement(c.b, {
 						type: c.a.Widget
-					}, d)), a), s.a.createElement("div", {
-						className: Object(o.a)(p, {
+					}, u)), a), s.a.createElement("div", {
+						className: Object(o.a)(g, {
 							[v.a.truncated]: this.state.isTruncated
 						}),
 						ref: this.contentRef,
 						style: {
-							maxHeight: this.state.isTruncated ? u : "none"
+							maxHeight: this.state.isTruncated ? b : "none"
 						}
 					}, e), this.state.isTruncated && s.a.createElement(m.r, {
 						className: v.a.seeMore,
@@ -2512,4 +2518,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.457afb5747f863d2564a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.9427ae90213c7c5e407d.js.map

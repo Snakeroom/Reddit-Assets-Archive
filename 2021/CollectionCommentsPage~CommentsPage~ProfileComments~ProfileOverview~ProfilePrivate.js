@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.fa2ce0a2a4590c87cfed.js
-// Retrieved at 12/13/2021, 3:40:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.2c74b27416d5d2213e6d.js
+// Retrieved at 12/13/2021, 4:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -3485,34 +3485,40 @@
 						contentOnly: n,
 						forceRedditStyle: s,
 						headerButton: r,
-						onClick: i,
-						title: d,
-						titleClassName: l,
-						truncateThreshold: m
-					} = this.props, p = n ? O.a.widgetContentOnly : O.a.widgetContent, h = !s && this.props.styles, b = h ? this.getWidgetBackgroundStyles() : {}, f = h ? this.getWidgetHeaderStyles() : {};
+						id: i,
+						onClick: d,
+						onHeaderClick: l,
+						title: m,
+						titleClassName: p,
+						truncateThreshold: h
+					} = this.props, b = n ? O.a.widgetContentOnly : O.a.widgetContent, f = !s && this.props.styles, v = f ? this.getWidgetBackgroundStyles() : {}, x = f ? this.getWidgetHeaderStyles() : {};
 					return o.a.createElement("div", {
 						className: Object(a.a)(t, O.a.widgetBackground, {
 							[O.a.redditStyle]: s,
-							[O.a.clickable]: !!i,
+							[O.a.clickable]: !!d,
 							[O.a.truncatedGradient]: this.state.isTruncated && !this.props.noGradient
 						}),
 						"data-redditstyle": s,
-						onClick: i,
-						style: b
-					}, d && o.a.createElement("div", {
-						className: O.a.widgetHeader,
-						style: f
+						onClick: d,
+						style: v
+					}, m && o.a.createElement("div", {
+						className: Object(a.a)(O.a.widgetHeader, {
+							[O.a.clickable]: !!l
+						}),
+						id: i,
+						style: x,
+						onClick: l
 					}, o.a.createElement("div", {
-						className: Object(a.a)(O.a.widgetTitle, l)
+						className: Object(a.a)(O.a.widgetTitle, p)
 					}, o.a.createElement(c.b, {
 						type: c.a.Widget
-					}, d)), r), o.a.createElement("div", {
-						className: Object(a.a)(p, {
+					}, m)), r), o.a.createElement("div", {
+						className: Object(a.a)(b, {
 							[O.a.truncated]: this.state.isTruncated
 						}),
 						ref: this.contentRef,
 						style: {
-							maxHeight: this.state.isTruncated ? m : "none"
+							maxHeight: this.state.isTruncated ? h : "none"
 						}
 					}, e), this.state.isTruncated && o.a.createElement(u.r, {
 						className: O.a.seeMore,
@@ -4396,4 +4402,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.fa2ce0a2a4590c87cfed.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.2c74b27416d5d2213e6d.js.map

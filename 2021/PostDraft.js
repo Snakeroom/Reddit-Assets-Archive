@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostDraft.89700323adfd0c09d041.js
-// Retrieved at 12/13/2021, 2:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostDraft.87748becc9b4d5a86e97.js
+// Retrieved at 12/13/2021, 4:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostDraft"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -3598,34 +3598,40 @@
 						contentOnly: n,
 						forceRedditStyle: s,
 						headerButton: r,
-						onClick: i,
-						title: c,
-						titleClassName: l,
-						truncateThreshold: u
-					} = this.props, p = n ? y.a.widgetContentOnly : y.a.widgetContent, h = !s && this.props.styles, b = h ? this.getWidgetBackgroundStyles() : {}, f = h ? this.getWidgetHeaderStyles() : {};
+						id: i,
+						onClick: c,
+						onHeaderClick: l,
+						title: u,
+						titleClassName: p,
+						truncateThreshold: h
+					} = this.props, b = n ? y.a.widgetContentOnly : y.a.widgetContent, f = !s && this.props.styles, x = f ? this.getWidgetBackgroundStyles() : {}, g = f ? this.getWidgetHeaderStyles() : {};
 					return o.a.createElement("div", {
 						className: Object(a.a)(t, y.a.widgetBackground, {
 							[y.a.redditStyle]: s,
-							[y.a.clickable]: !!i,
+							[y.a.clickable]: !!c,
 							[y.a.truncatedGradient]: this.state.isTruncated && !this.props.noGradient
 						}),
 						"data-redditstyle": s,
-						onClick: i,
-						style: b
-					}, c && o.a.createElement("div", {
-						className: y.a.widgetHeader,
-						style: f
+						onClick: c,
+						style: x
+					}, u && o.a.createElement("div", {
+						className: Object(a.a)(y.a.widgetHeader, {
+							[y.a.clickable]: !!l
+						}),
+						id: i,
+						style: g,
+						onClick: l
 					}, o.a.createElement("div", {
-						className: Object(a.a)(y.a.widgetTitle, l)
+						className: Object(a.a)(y.a.widgetTitle, p)
 					}, o.a.createElement(d.b, {
 						type: d.a.Widget
-					}, c)), r), o.a.createElement("div", {
-						className: Object(a.a)(p, {
+					}, u)), r), o.a.createElement("div", {
+						className: Object(a.a)(b, {
 							[y.a.truncated]: this.state.isTruncated
 						}),
 						ref: this.contentRef,
 						style: {
-							maxHeight: this.state.isTruncated ? u : "none"
+							maxHeight: this.state.isTruncated ? h : "none"
 						}
 					}, e), this.state.isTruncated && o.a.createElement(m.r, {
 						className: y.a.seeMore,
@@ -4784,4 +4790,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.89700323adfd0c09d041.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.87748becc9b4d5a86e97.js.map
