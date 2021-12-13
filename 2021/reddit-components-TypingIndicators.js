@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-TypingIndicators.acf64033f1a64ed86a22.js
-// Retrieved at 12/9/2021, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-TypingIndicators.d69c0e04ab0c81c820b7.js
+// Retrieved at 12/13/2021, 3:10:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-TypingIndicators", "ReadingIndicator"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, s, t) {
@@ -57,12 +57,12 @@
 				o = t.n(r),
 				a = t("./src/lib/classNames/index.ts"),
 				c = t("./node_modules/lodash/sampleSize.js"),
-				d = t.n(c),
-				u = t("./src/reddit/helpers/getFakeUserIcons.ts"),
+				u = t.n(c),
+				d = t("./src/reddit/helpers/getFakeUserIcons.ts"),
 				i = t("./src/reddit/hooks/useConstructor.ts"),
 				l = t("./src/reddit/components/RandomBaseUserIcons/index.m.less"),
 				m = t.n(l);
-			const p = Object(n.a)({
+			const b = Object(n.a)({
 					resolved: {},
 					chunkName: () => "reddit-components-UserIcon-PresenceDot",
 					isReady(e) {
@@ -82,7 +82,7 @@
 						return "./src/reddit/components/UserIcon/PresenceDot.tsx"
 					}
 				}),
-				b = 8,
+				p = 8,
 				f = 20,
 				I = 3,
 				_ = e => {
@@ -93,15 +93,15 @@
 						presenceDotOutlineClassName: c,
 						shouldShowPresenceDot: l,
 						shouldUseColoredSilhouetteIcons: _,
-						numIconsToDrawFrom: h = (_ ? b : f),
+						numIconsToDrawFrom: h = (_ ? p : f),
 						wrapperClassName: j
-					} = e, g = Object(r.useRef)([]);
+					} = e, O = Object(r.useRef)([]);
 					return Object(i.a)(() => {
-						const e = Object(u.a)(s, h, _);
-						g.current = d()(e, n)
+						const e = Object(d.a)(s, h, _);
+						O.current = u()(e, n)
 					}), o.a.createElement("div", {
 						className: Object(a.a)(m.a.membersIcons, j)
-					}, g.current.map(({
+					}, O.current.map(({
 						color: e,
 						image: s
 					}, r) => {
@@ -114,7 +114,7 @@
 							style: {
 								backgroundColor: e
 							}
-						}), o.a.createElement(p, {
+						}), o.a.createElement(b, {
 							showPresence: !0,
 							outlineClassName: c
 						})) : o.a.createElement("img", {
@@ -154,14 +154,14 @@
 				o = t("./node_modules/lodash/noop.js"),
 				a = t.n(o),
 				c = t("./node_modules/react/index.js"),
-				d = t.n(c),
-				u = t("./src/realtime/GQLSubscription/async.tsx"),
+				u = t.n(c),
+				d = t("./src/realtime/GQLSubscription/async.tsx"),
 				i = t("./src/reddit/components/RandomBaseUserIcons/RandomBaseUserIcons.tsx"),
 				l = t("./src/reddit/helpers/trackers/post.ts"),
 				m = t("./src/reddit/hooks/useClassNameOnMount.ts"),
-				p = t("./src/reddit/hooks/useTracking.ts");
-			var b = t("./src/reddit/components/ReadingIndicator/index.m.less"),
-				f = t.n(b);
+				b = t("./src/reddit/hooks/useTracking.ts");
+			var p = t("./src/reddit/components/ReadingIndicator/index.m.less"),
+				f = t.n(p);
 			const I = e => e > 9999 ? Object(r.b)(e) : e.toString();
 			s.default = ({
 				isReadingIndicatorsExperiment: e,
@@ -173,7 +173,7 @@
 						teamOwner: "CONTENT_AND_COMMUNITIES",
 						postID: r
 					}), [r]),
-					b = Object(c.useMemo)(() => ({
+					p = Object(c.useMemo)(() => ({
 						input: {
 							channel: {
 								...o,
@@ -191,55 +191,57 @@
 					}), [r]),
 					h = Object(c.useRef)(null),
 					j = Object(c.useRef)(null),
-					g = Object(c.useRef)(0),
-					[O, y] = Object(c.useState)(0),
+					O = Object(c.useRef)(0),
+					[g, y] = Object(c.useState)(0),
 					v = Object(c.useCallback)(e => {
 						const {
 							numUsers: s
 						} = e.subscribe.data, t = () => {
 							j.current && clearTimeout(j.current), j.current = setTimeout(() => {
-								y(0), T(null), j.current = null
+								y(0), C(null), j.current = null
 							}, 3e4)
 						}, n = () => setTimeout(() => {
-							g.current ? (y(g.current), g.current = null, h.current = n(), t()) : h.current = null
+							O.current ? (y(O.current), O.current = null, h.current = n(), t()) : h.current = null
 						}, 2e3);
-						h.current ? g.current = s : (y(s), g.current = null, h.current = n(), t())
+						h.current ? O.current = s : (y(s), O.current = null, h.current = n(), t())
 					}, []),
-					N = Object(c.useRef)(0),
-					[C, T] = Object(c.useState)(null),
-					R = Object(c.useRef)(null);
+					T = Object(c.useRef)(0),
+					[N, C] = Object(c.useState)(null),
+					E = Object(c.useRef)(null);
 				Object(c.useEffect)(() => {
-					if (!e) return void(C && T(null));
-					if (O >= 5) return N.current = O, void(C || T(Date.now()));
-					if (!C) return;
-					const s = Date.now() - C;
-					s >= 1e4 ? T(null) : R.current = setTimeout(() => T(null), 1e4 - s)
-				}, [C, e, O]);
+					if (!e) return void(N && C(null));
+					if (g >= 5) return T.current = g, void(N || C(Date.now()));
+					if (!N) return;
+					const s = Date.now() - N;
+					s >= 1e4 ? C(null) : E.current = setTimeout(() => C(null), 1e4 - s)
+				}, [N, e, g]);
 				const {
-					className: x,
-					shouldMount: E,
+					className: R,
+					shouldMount: x,
 					onTransitionEnd: S
 				} = Object(m.a)({
 					defaultClass: f.a.readingIndicator,
 					addedClass: f.a.isDisplayed,
-					mountCondition: !!C
-				}), D = Object(p.a)();
+					mountCondition: !!N
+				}), D = Object(b.a)();
 				return Object(c.useEffect)(() => {
-					E && D(Object(l.q)(r, O))
-				}, [D, E, r]), d.a.createElement(d.a.Fragment, null, t && d.a.createElement(u.a, {
-					variables: b,
+					x && D(Object(l.q)(r, g))
+				}, [D, x, r]), Object(c.useEffect)(() => () => {
+					h.current && clearTimeout(h.current), j.current && clearTimeout(j.current), E.current && clearTimeout(E.current)
+				}, []), u.a.createElement(u.a.Fragment, null, t && u.a.createElement(d.a, {
+					variables: p,
 					onData: a.a,
 					queryKey: "userIsReadingPost"
-				}), (s || e) && d.a.createElement(u.a, {
+				}), (s || e) && u.a.createElement(d.a, {
 					variables: _,
 					onData: e ? v : a.a,
 					queryKey: "usersReadingIndicator"
-				}), E && d.a.createElement("div", {
-					className: x,
+				}), x && u.a.createElement("div", {
+					className: R,
 					onTransitionEnd: S
-				}, n.fbt._("{number of users reading} people here", [n.fbt._param("number of users reading", I(N.current))], {
+				}, n.fbt._("{number of users reading} people here", [n.fbt._param("number of users reading", I(T.current))], {
 					hk: "3foy5g"
-				}), d.a.createElement(i.a, {
+				}), u.a.createElement(i.a, {
 					memberIconClassName: f.a.offsetMemberIcon,
 					iconsKey: r,
 					numVisibleIcons: 2,
@@ -268,11 +270,11 @@
 				o = t.n(r),
 				a = t("./src/realtime/GQLSubscription/async.tsx"),
 				c = t("./src/reddit/components/RandomBaseUserIcons/RandomBaseUserIcons.tsx"),
-				d = t("./src/reddit/components/ReadingIndicator/index.tsx"),
-				u = t("./src/reddit/helpers/trackers/commentsPage.ts"),
+				u = t("./src/reddit/components/ReadingIndicator/index.tsx"),
+				d = t("./src/reddit/helpers/trackers/commentsPage.ts"),
 				i = t("./src/reddit/selectors/telemetry.ts");
 			const l = (() => (e, s) => t => ({
-				source: u.a,
+				source: d.a,
 				action: "view",
 				noun: "typing_indicator",
 				...i.o(t),
@@ -283,21 +285,21 @@
 				subreddit: i.hb(t)
 			}))();
 			var m = t("./src/reddit/hooks/useClassNameOnMount.ts"),
-				p = t("./src/reddit/hooks/useTracking.ts"),
-				b = t("./src/reddit/components/TypingIndicators/constants.ts"),
+				b = t("./src/reddit/hooks/useTracking.ts"),
+				p = t("./src/reddit/components/TypingIndicators/constants.ts"),
 				f = t("./src/reddit/components/TypingIndicators/index.m.less"),
 				I = t.n(f);
 			s.default = e => {
 				const s = Object(r.useRef)(null),
 					t = Object(r.useRef)(0),
 					{
-						minNumUsersTyping: u,
+						minNumUsersTyping: d,
 						minTimeVisible: i,
 						postId: f
 					} = e,
 					[_, h] = Object(r.useState)(0),
-					[j, g] = Object(r.useState)(null),
-					O = Object(p.a)(),
+					[j, O] = Object(r.useState)(null),
+					g = Object(b.a)(),
 					y = Object(r.useMemo)(() => ({
 						input: {
 							channel: {
@@ -308,53 +310,55 @@
 						}
 					}), [f]),
 					v = Object(r.useRef)(null),
-					N = Object(r.useRef)(null),
-					C = Object(r.useRef)(0),
-					T = Object(r.useCallback)(e => {
+					T = Object(r.useRef)(null),
+					N = Object(r.useRef)(0),
+					C = Object(r.useCallback)(e => {
 						const {
 							numUsers: s
 						} = e.subscribe.data, t = () => {
-							N.current && clearTimeout(N.current), N.current = setTimeout(() => {
-								h(0), g(null), N.current = null
-							}, b.b)
+							T.current && clearTimeout(T.current), T.current = setTimeout(() => {
+								h(0), O(null), T.current = null
+							}, p.b)
 						}, n = () => setTimeout(() => {
-							C.current ? (h(C.current), C.current = null, v.current = n(), t()) : v.current = null
-						}, b.a);
-						v.current ? C.current = s : (h(s), C.current = null, v.current = n(), t())
+							N.current ? (h(N.current), N.current = null, v.current = n(), t()) : v.current = null
+						}, p.a);
+						v.current ? N.current = s : (h(s), N.current = null, v.current = n(), t())
 					}, []);
 				Object(r.useEffect)(() => {
-					if (_ >= u) return t.current = _, void(j || (s.current && clearTimeout(s.current), g(Date.now())));
+					if (_ >= d) return t.current = _, void(j || (s.current && clearTimeout(s.current), O(Date.now())));
 					if (!j) return;
 					const e = Date.now() - j;
-					e > i ? g(null) : s.current = setTimeout(() => g(null), i - e)
-				}, [j, i, _, u]);
+					e > i ? O(null) : s.current = setTimeout(() => O(null), i - e)
+				}, [j, i, _, d]);
 				const {
-					className: R,
-					shouldMount: x,
-					onTransitionEnd: E
+					className: E,
+					shouldMount: R,
+					onTransitionEnd: x
 				} = Object(m.a)({
 					defaultClass: I.a.typingIndicator,
 					addedClass: I.a.isDisplayed,
 					mountCondition: !!j
 				});
 				return Object(r.useEffect)(() => {
-					x && O(l(f, _))
-				}, [x, f, O]), o.a.createElement(o.a.Fragment, null, o.a.createElement(a.a, {
+					R && g(l(f, _))
+				}, [R, f, g]), Object(r.useEffect)(() => () => {
+					v.current && clearTimeout(v.current), T.current && clearTimeout(T.current), s.current && clearTimeout(s.current)
+				}, []), o.a.createElement(o.a.Fragment, null, o.a.createElement(a.a, {
 					variables: y,
-					onData: T,
+					onData: C,
 					queryKey: "postTypingIndicator"
-				}), x && o.a.createElement("div", {
-					className: R,
-					onTransitionEnd: E
+				}), R && o.a.createElement("div", {
+					className: E,
+					onTransitionEnd: x
 				}, o.a.createElement(c.a, {
 					iconsKey: f,
 					memberIconClassName: I.a.offsetMemberIcon,
-					numVisibleIcons: u,
+					numVisibleIcons: d,
 					shouldUseColoredSilhouetteIcons: !0,
 					wrapperClassName: I.a.offsetMembersIcons
 				}), o.a.createElement("div", {
 					className: I.a.numUsersTyping
-				}, n.fbt._("{number of people typing} people typing...", [n.fbt._param("number of people typing", Object(d.formatPresenceNumber)(t.current))], {
+				}, n.fbt._("{number of people typing} people typing...", [n.fbt._param("number of people typing", Object(u.formatPresenceNumber)(t.current))], {
 					hk: "31RibC"
 				}))))
 			}
@@ -368,13 +372,13 @@
 			const c = Array.from({
 					length: 20
 				}).map((e, s) => `${a.a.assetPath}/img/snoovatars/snoovatar_${s+1}.png`),
-				d = Array.from({
+				u = Array.from({
 					length: 8
 				}).map((e, s) => `${a.a.processingAvatarImageUrl}/defaults/v2/avatar_default_${s}.png`),
-				u = [];
+				d = [];
 			s.a = r()((e, s = 3, t) => {
-				if (!e || !s) return u;
-				const n = t ? d : c,
+				if (!e || !s) return d;
+				const n = t ? u : c,
 					r = Array.from(e).reduce((e, s) => e + s.charCodeAt(0), 0);
 				return Array.from({
 					length: s
@@ -393,21 +397,21 @@
 				addedClass: s,
 				mountCondition: t
 			}) => {
-				const [o, a] = Object(n.useState)(e), [c, d] = Object(n.useState)(!1);
+				const [o, a] = Object(n.useState)(e), [c, u] = Object(n.useState)(!1);
 				Object(n.useEffect)(() => {
-					t && d(!0)
+					t && u(!0)
 				}, [t]), Object(n.useEffect)(() => {
 					c && (t ? window.setTimeout(() => {
 						a(Object(r.a)(e, s))
 					}, 100) : a(e))
 				}, [s, e, t, c]);
-				const u = Object(n.useCallback)(() => {
-					t || d(!1)
+				const d = Object(n.useCallback)(() => {
+					t || u(!1)
 				}, [t]);
 				return {
 					className: o,
 					shouldMount: c,
-					onTransitionEnd: u
+					onTransitionEnd: d
 				}
 			}
 		},
@@ -425,4 +429,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-TypingIndicators.acf64033f1a64ed86a22.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-TypingIndicators.d69c0e04ab0c81c820b7.js.map
