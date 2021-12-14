@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.35783daa360826c84fa8.js
-// Retrieved at 12/13/2021, 1:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.b9662d6f1f4b202f324d.js
+// Retrieved at 12/13/2021, 8:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, r) {
@@ -832,7 +832,7 @@
 					b = a ? l(a) : p.b, b = Object(n.a)(b, {
 						...u,
 						draft: t || u.draft
-					}), (t || c.url.toLowerCase() !== b.toLowerCase()) && (i(j(e)), r && i(Object(y.s)(!0)), i(Object(y.i)()), i(Object(s.c)(b)))
+					}), (t || c.url.toLowerCase() !== b.toLowerCase()) && (i(j(e)), r && i(Object(y.t)(!0)), i(Object(y.i)()), i(Object(s.c)(b)))
 				}, T = e => async (t, r) => {
 					const i = r().platform.currentPage,
 						o = i.queryParams,
@@ -1070,7 +1070,7 @@
 							draftsCount: s
 						}));
 						const n = Object(c.v)(t);
-						e === n && r(Object(o.p)(!0, t))
+						e === n && r(Object(o.q)(!0, t))
 					} else {
 						const t = f.error;
 						r(ie({
@@ -2621,4 +2621,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.35783daa360826c84fa8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.b9662d6f1f4b202f324d.js.map

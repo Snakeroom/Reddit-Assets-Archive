@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.3329becf5405a86de8ff.js
-// Retrieved at 12/13/2021, 2:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.821546de25cc4582c221.js
+// Retrieved at 12/13/2021, 8:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -54,13 +54,13 @@
 					experimentEligibilitySelector: m.a,
 					experimentName: u.Td
 				});
-				return Object(u.wf)(t) ? void 0 : t
+				return Object(u.xf)(t) ? void 0 : t
 			}, e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
 					experimentName: u.Ud
 				});
-				return Object(u.wf)(t) ? void 0 : t
+				return Object(u.xf)(t) ? void 0 : t
 			}, (e, t) => e === u.Xd.Enabled && t === u.Xd.Enabled);
 			var h = n("./src/config.ts");
 			var b = n("./src/reddit/selectors/user.ts");
@@ -2406,12 +2406,6 @@
 				return t
 			}
 		},
-		"./src/reddit/helpers/isCrosspost.ts": function(e, t, n) {
-			"use strict";
-			t.a = function(e) {
-				return !!e && !!e.crosspostRootId
-			}
-		},
 		"./src/reddit/helpers/r2/normalizeR2APIErrors/index.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "b", (function() {
@@ -4186,4 +4180,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.3329becf5405a86de8ff.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.821546de25cc4582c221.js.map

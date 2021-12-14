@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.9fbb64c6432a477ac9aa.js
-// Retrieved at 12/13/2021, 3:40:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.8a1becf7f177414ecdcc.js
+// Retrieved at 12/13/2021, 8:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./src/reddit/actions/economics/predictions/modTools.ts": function(e, t, s) {
@@ -983,12 +983,6 @@
 				a = s.n(r);
 			t.a = n.a.wrapped(o.a, "unstyledInternalLink", a.a)
 		},
-		"./src/reddit/helpers/isCrosspost.ts": function(e, t, s) {
-			"use strict";
-			t.a = function(e) {
-				return !!e && !!e.crosspostRootId
-			}
-		},
 		"./src/reddit/helpers/makeHeaderUserDropdownItem/index.m.less": function(e, t, s) {
 			e.exports = {
 				basicLink: "_1YWXCINvcuU7nk0ED-bta8",
@@ -1296,4 +1290,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.9fbb64c6432a477ac9aa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.8a1becf7f177414ecdcc.js.map

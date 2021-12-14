@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.985c5fcc58ee59a836fe.js
-// Retrieved at 12/13/2021, 4:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.6f828b7230b8f7366b3b.js
+// Retrieved at 12/13/2021, 8:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~ModListing", "reddit-components-BlankPost", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, n) {
@@ -10398,12 +10398,12 @@
 						rtJsonElementProps: o
 					});
 					switch (s) {
-						case h.bf.SmIcon:
+						case h.cf.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: o
 							});
-						case h.bf.SmIconHc:
+						case h.cf.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -16861,7 +16861,7 @@
 						experimentEligibilitySelector: o.K,
 						experimentName: s.Jc
 					});
-					return !(!t || Object(s.wf)(t))
+					return !(!t || Object(s.xf)(t))
 				},
 				i = e => {
 					return Object(r.c)(e, {
@@ -17077,7 +17077,7 @@
 			const o = e => {
 				return Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: s.se
+					experimentName: s.te
 				}) === s.gd
 			}
 		},
@@ -17091,8 +17091,8 @@
 				o = n("./src/reddit/selectors/meta.ts");
 			const a = e => Object(r.c)(e, {
 				experimentEligibilitySelector: e => !Object(o.d)(e) && "US" === Object(o.b)(e),
-				experimentName: s.Ie
-			}) === s.Pe.Enabled
+				experimentName: s.Je
+			}) === s.Qe.Enabled
 		},
 		"./src/reddit/selectors/experiments/signupUpsellExperiment.ts": function(e, t, n) {
 			"use strict";
@@ -17475,12 +17475,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: s.Ve
+						experimentName: s.We
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.bf.SmIcon || t === s.bf.SmIconHc
+					return t === s.cf.SmIcon || t === s.cf.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -17609,4 +17609,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.985c5fcc58ee59a836fe.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.6f828b7230b8f7366b3b.js.map

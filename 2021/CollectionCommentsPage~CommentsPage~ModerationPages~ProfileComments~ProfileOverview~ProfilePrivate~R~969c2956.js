@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.ed5ddc97f96dbefa3457.js
-// Retrieved at 12/13/2021, 3:40:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.62eb6456c1102dc77000.js
+// Retrieved at 12/13/2021, 8:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956"], {
 		"./src/reddit/actions/eventPosts/index.ts": function(e, t, s) {
@@ -643,7 +643,7 @@
 					const {
 						post: a
 					} = e, c = !a.media || "rtjson" !== a.media.type && "text" !== a.media.type ? "" : a.media.rteMode;
-					j.y(s(), Object(P.n)(c)), t(N(a.id));
+					j.y(s(), Object(P.o)(c)), t(N(a.id));
 					const d = await C(n(), e),
 						l = !1 === d.body.success;
 					if (t(T(a.id)), d.ok && !l) {
@@ -2523,7 +2523,7 @@
 				}) => ({
 					onOpenCreateCollectionModal: () => {
 						let o = v.b;
-						t && (o = Object(v.u)(t, !!s)), e(Object(p.y)(o))
+						t && (o = Object(v.u)(t, !!s)), e(Object(p.z)(o))
 					}
 				}));
 			class ce extends i.a.PureComponent {
@@ -4792,4 +4792,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.ed5ddc97f96dbefa3457.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.62eb6456c1102dc77000.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.09f79338adb9641e8d39.js
-// Retrieved at 12/13/2021, 2:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.69e769cda15768c39540.js
+// Retrieved at 12/13/2021, 8:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -2786,8 +2786,8 @@
 					onChange: n => {
 						e(Object(c.c)(n)), t.onChange && t.onChange(n)
 					},
-					helpModalToggled: () => e(Object(c.y)(u.b)),
-					switchToRTEModalToggled: () => e(Object(c.y)(m.a.SWITCH_TO_RTE_MODAL_ID))
+					helpModalToggled: () => e(Object(c.z)(u.b)),
+					switchToRTEModalToggled: () => e(Object(c.z)(m.a.SWITCH_TO_RTE_MODAL_ID))
 				}));
 			class S extends r.a.Component {
 				constructor(e) {
@@ -4078,37 +4078,37 @@
 					if (Object(i.a)(e)) return !1;
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.sf
+						experimentName: o.tf
 					}) === o.gd
 				},
 				c = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.tf
+						experimentName: o.uf
 					}) === o.gd
 				},
 				d = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.rf
+						experimentName: o.sf
 					});
-					return t === o.kf.UIChangesOnly || t === o.kf.TypingIndicators || t === o.kf.IndicatorsPlusCTA
+					return t === o.lf.UIChangesOnly || t === o.lf.TypingIndicators || t === o.lf.IndicatorsPlusCTA
 				},
 				l = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(r.d)(e, {
-							experimentName: o.rf
+							experimentName: o.sf
 						}),
 						n = null == t ? void 0 : t.variant;
-					return n === o.kf.TypingIndicators || n === o.kf.IndicatorsPlusCTA
+					return n === o.lf.TypingIndicators || n === o.lf.IndicatorsPlusCTA
 				},
 				u = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(r.d)(e, {
-						experimentName: o.rf
+						experimentName: o.sf
 					});
-					return (null == t ? void 0 : t.variant) === o.kf.IndicatorsPlusCTA
+					return (null == t ? void 0 : t.variant) === o.lf.IndicatorsPlusCTA
 				}
 		},
 		"./src/redditGQL/operations/CommentToxicity.json": function(e) {
@@ -4119,4 +4119,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.09f79338adb9641e8d39.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.69e769cda15768c39540.js.map
