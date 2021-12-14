@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.88f3036bbd40d4a903f8.js
-// Retrieved at 12/13/2021, 8:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.bbc7cb79f3499345539b.js
+// Retrieved at 12/14/2021, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -831,7 +831,7 @@
 						listingKey: y
 					}), E = m && (c || !k || 0 === k.length), j = c, w = d, P = Object(te.H)(v, {
 						postId: b
-					}), I = !!P && !!P.media && (Object(N.J)(P.media) || Object(N.F)(P.media)) && !P.media.altText;
+					}), I = !!P && !!P.media && (Object(N.K)(P.media) || Object(N.F)(P.media)) && !P.media.altText;
 					if (!(O || E || j || w || I || u)) return;
 					O && t(Pe({
 						key: C
@@ -2683,8 +2683,8 @@
 						trackCommentClick: S,
 						isPostUnrepliable: L,
 						isTrueblockPCBlockeeEnabled: T
-					} = this.props, N = Object(de.a)(x), F = !!s && s.displayText === e.author, M = !!s && s.isEmployee, A = !(L && T) && !(w && w.userIsBanned) && (y || v || _ && O || N && p || e.isLocked ? N && p : p || a), R = Object(je.a)(e), B = N && F && !e.bannedBy, D = F && M && !e.bannedBy, U = B || D, W = s && e.isGildable, H = l && !v, z = [];
-					A && z.push(c.a.createElement(ot, {
+					} = this.props, N = Object(de.a)(x), F = !!s && s.displayText === e.author, M = !!s && s.isEmployee, A = T && e.unrepliableReason, R = T && L, B = !A && !R && !(w && w.userIsBanned) && (y || v || _ && O || N && p || e.isLocked ? N && p : p || a), D = Object(je.a)(e), U = N && F && !e.bannedBy, W = F && M && !e.bannedBy, H = U || W, z = s && e.isGildable && !R && !(A && "[deleted]" === e.author), q = l && !v && !A, K = [];
+					B && K.push(c.a.createElement(ot, {
 						disabled: h,
 						key: "reply",
 						onClick: () => {
@@ -2692,7 +2692,7 @@
 						}
 					}, c.a.createElement(Ze, null), V.fbt._("Reply", null, {
 						hk: "dq9W0"
-					}))), W && z.push({
+					}))), z && K.push({
 						breakpointGroup: $.LoggedInUser,
 						icon: c.a.createElement(Ve, null),
 						isIconOverflowOnly: !0,
@@ -2701,7 +2701,7 @@
 						text: () => V.fbt._("Give Award", null, {
 							hk: "1GmM1v"
 						})
-					}), z.push(c.a.createElement(Se.a, {
+					}), K.push(c.a.createElement(Se.a, {
 						dropdownId: `${e.id}-comment-share-menu`,
 						key: "share",
 						permalink: o,
@@ -2711,7 +2711,7 @@
 						onClick: () => this.sendCommentEventWithName("share")
 					}, V.fbt._("Share", null, {
 						hk: "3Ak3Tw"
-					})))), F || z.push({
+					})))), F || K.push({
 						breakpointGroup: $.LoggedInUser,
 						icon: c.a.createElement(Ke.a, null),
 						isIconOverflowOnly: !0,
@@ -2720,7 +2720,7 @@
 						text: () => V.fbt._("Report", null, {
 							hk: "4oVcnd"
 						})
-					}), z.push({
+					}), K.push({
 						breakpointGroup: $.LoggedInUser,
 						icon: c.a.createElement(Ue.a, {
 							name: e.isSaved ? "saved" : "save"
@@ -2733,7 +2733,7 @@
 						}) : () => V.fbt._("Save", null, {
 							hk: "4yMsMq"
 						})
-					}), F && z.push({
+					}), F && K.push({
 						breakpointGroup: $.LoggedInUser,
 						icon: c.a.createElement(Ue.a, {
 							name: "edit"
@@ -2744,7 +2744,7 @@
 						text: () => V.fbt._("Edit", null, {
 							hk: "1nftDt"
 						})
-					}), H && z.push({
+					}), q && K.push({
 						breakpointGroup: $.LoggedInUser,
 						icon: c.a.createElement(Ue.a, {
 							name: "notification",
@@ -2759,13 +2759,13 @@
 							hk: "1vo8lJ"
 						})
 					});
-					const q = z.map(e => c.a.isValidElement(e) ? e : c.a.createElement(ot, {
+					const G = K.map(e => c.a.isValidElement(e) ? e : c.a.createElement(ot, {
 							className: Ce(e.breakpointGroup, X.HideIfVWSmaller),
 							disabled: h,
 							key: e.key,
 							onClick: e.onClick
 						}, !e.isIconOverflowOnly && e.icon, e.text())),
-						K = z.map(e => c.a.isValidElement(e) ? null : c.a.createElement(tt, {
+						Y = K.map(e => c.a.isValidElement(e) ? null : c.a.createElement(tt, {
 							className: Ce(e.breakpointGroup, X.HideIfVWLarger),
 							displayText: e.text(),
 							key: e.key,
@@ -2777,16 +2777,16 @@
 							depth: r,
 							isInOverlay: k,
 							isModModeEnabled: N && C,
-							isFollowCommentEnabled: H
+							isFollowCommentEnabled: q
 						}), t)
-					}, q, c.a.createElement(et, {
+					}, G, c.a.createElement(et, {
 						className: F ? void 0 : Ce($.LoggedInUser, X.HideIfVWLarger)
 					}, c.a.createElement(we.b, {
 						className: Qe.a.overflowMenu,
 						disabled: h,
 						dropdownId: dt(e.id),
 						onClick: () => E(Object(Fe.a)("comment_overflow_menu", e.id))
-					}, K, F && c.a.createElement(c.a.Fragment, null, c.a.createElement(tt, {
+					}, Y, F && c.a.createElement(c.a.Fragment, null, c.a.createElement(tt, {
 						displayText: V.fbt._("Delete comment", null, {
 							hk: "4lMUDO"
 						}),
@@ -2830,7 +2830,7 @@
 						comment: e,
 						tooltipId: `${e.id}-mod-actions-menu`
 					}))), Object(je.c)(e) && !C && c.a.createElement(Oe.a, {
-						text: `${R}`,
+						text: `${D}`,
 						onClick: () => {
 							f(), this.sendCommentModEventWithName("comment_report_menu")
 						},
@@ -2842,7 +2842,7 @@
 							g(), this.sendCommentReportEvent(e.ignoreReports ? "restore_reports" : "ignore_reports")
 						},
 						tooltipId: ct(e.id)
-					}), e.ignoreReports ? c.a.createElement(Xe, null) : c.a.createElement(Je, null)), U && c.a.createElement(Oe.a, {
+					}), e.ignoreReports ? c.a.createElement(Xe, null) : c.a.createElement(Je, null)), H && c.a.createElement(Oe.a, {
 						onClick: this.handleDistinguishToggle,
 						selected: this.props.isDistinguishDropdownOpen
 					}, c.a.createElement(He.a, null), c.a.createElement(ke.a, {
@@ -5781,8 +5781,8 @@
 					className: lt.a.bannerBase,
 					color: ze.a.dayModeActionIcon,
 					icon: mt,
-					title: He.fbt._("Sorry, this post is not longer available.", null, {
-						hk: "1rn10t"
+					title: He.fbt._("Sorry, this post is no longer available.", null, {
+						hk: "sb8eO"
 					})
 				}),
 				pt = s("./src/reddit/components/PostContent/index.m.less"),
@@ -5953,7 +5953,7 @@
 					subredditOrProfile: Re,
 					userIsOp: Be,
 					isTrueblockPCBlockeeEnabled: De
-				} = e, Ve = Object(ye.b)(), Ue = Object(r.useRef)(null), [We, He] = Object(r.useState)(ue.authorIsBlocked), ze = Object(N.I)(ue), qe = Object(a.e)(e => Object(Se.a)(e)), Ke = Object(a.e)(e => Object(Me.c)(e)), Ge = Object(c.a)(ue), Ye = R || B || D;
+				} = e, Ve = Object(ye.b)(), Ue = Object(r.useRef)(null), [We, He] = Object(r.useState)(ue.authorIsBlocked), ze = Object(N.J)(ue), qe = Object(a.e)(e => Object(Se.a)(e)), Ke = Object(a.e)(e => Object(Me.c)(e)), Ge = Object(c.a)(ue), Ye = R || B || D;
 				Object(r.useEffect)(() => {
 					A && T && X()
 				}, []), Object(Ie.a)(Ue, It, Pt);
@@ -5984,7 +5984,7 @@
 					mt = ue.removedByCategory === F.g.AuthorDeleted,
 					pt = o && (o.displayText === ue.author || o.username === ue.author),
 					bt = !!ue.unrepliableReason,
-					xt = !(bt && De) && !mt && !yt(ue) && (pt || O || !(ue.removedByCategory && ue.media && (Object(N.L)(ue.media) || Object(N.J)(ue.media) || Object(N.E)(ue.media)))),
+					xt = !(bt && De) && !mt && !yt(ue) && (pt || O || !(ue.removedByCategory && ue.media && (Object(N.M)(ue.media) || Object(N.K)(ue.media) || Object(N.E)(ue.media)))),
 					_t = Object(m.t)(ue, g),
 					{
 						source: Ot
@@ -6016,8 +6016,9 @@
 						return s ? je.g.Classic : Object(Fe.c)(o) ? je.g.Large : n ? je.g.Large : t ? je.g.Large : o.media && !yt(o) ? je.g.Large : je.g.Medium
 					})(e),
 					Mt = () => {
-						const t = !(bt && qe && We);
-						return bt ? i.a.createElement(ut, null) : qe && We ? i.a.createElement(Ze, {
+						const t = !(bt && qe && We),
+							o = Object(N.I)(ue);
+						return bt && o ? i.a.createElement(ut, null) : qe && We ? i.a.createElement(Ze, {
 							onBannerClick: () => He(!1),
 							isExpandable: ze
 						}) : ue.source && Ft === je.g.Medium ? i.a.createElement(Oe.a, {
@@ -6144,7 +6145,7 @@
 						shouldShowFollowButton: jt && !e,
 						isFollowed: L,
 						onFollowPostClick: wt
-					}), St, Mt(), Object(N.N)(ue) && vt, i.a.createElement($.a, {
+					}), St, Mt(), Object(N.O)(ue) && vt, i.a.createElement($.a, {
 						className: j ? ht.a.leftPadding : void 0,
 						post: ue,
 						sendEvent: we
@@ -9193,4 +9194,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.88f3036bbd40d4a903f8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.bbc7cb79f3499345539b.js.map

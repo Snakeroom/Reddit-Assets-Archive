@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.2c11ba1f3cc914b4d8af.js
-// Retrieved at 12/14/2021, 10:30:09 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.164d118c45fb7a4c1653.js
+// Retrieved at 12/14/2021, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3327,10 +3327,10 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("154699"),
+				buildNumber: Object(r.c)("154707"),
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
-				buildTimestamp: Object(r.b)("1639493986"),
+				buildTimestamp: Object(r.b)("1639498347"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -5900,14 +5900,14 @@
 					}))
 				},
 				$ = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %ccb560fbb4e1dd65fc214b24b8cdd41e62e3090ad-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %cb0931ce3195c026035ed764c2dd50ebc48c1a9ec-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "cb560fbb4e1dd65fc214b24b8cdd41e62e3090ad-production",
+						release: "b0931ce3195c026035ed764c2dd50ebc48c1a9ec-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6424,7 +6424,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "cb560fbb4e1dd65fc214b24b8cdd41e62e3090ad-production",
+						releaseClient: "b0931ce3195c026035ed764c2dd50ebc48c1a9ec-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -12026,7 +12026,7 @@
 						o = Object(v.H)(s, {
 							postId: e
 						});
-					if (!(o && o.media && Object(M.J)(o.media) && o.media.isRichtextPreview)) return;
+					if (!(o && o.media && Object(M.K)(o.media) && o.media.isRichtextPreview)) return;
 					const d = await ((e, t) => Object(V.a)(e, {
 						...W,
 						variables: t
@@ -15767,19 +15767,19 @@
 				return ni
 			})), i.d(t, "uf", (function() {
 				return ri
-			})), i.d(t, "dc", (function() {
-				return si
-			})), i.d(t, "td", (function() {
-				return oi
-			})), i.d(t, "sd", (function() {
-				return di
-			})), i.d(t, "Tc", (function() {
-				return ai
-			})), i.d(t, "Qb", (function() {
-				return li
-			})), i.d(t, "Rb", (function() {
-				return ui
 			})), i.d(t, "m", (function() {
+				return si
+			})), i.d(t, "dc", (function() {
+				return oi
+			})), i.d(t, "td", (function() {
+				return di
+			})), i.d(t, "sd", (function() {
+				return ai
+			})), i.d(t, "Tc", (function() {
+				return li
+			})), i.d(t, "Qb", (function() {
+				return ui
+			})), i.d(t, "Rb", (function() {
 				return ci
 			})), i.d(t, "ae", (function() {
 				return _i
@@ -16175,13 +16175,13 @@
 				ii = "web_econ_prediction_creation_tab",
 				ni = "web2x_typing_indicators_get_load_test",
 				ri = "web2x_typing_indicators_post_load_test",
-				si = "d2x_wrapped_reddit_banner",
-				oi = "d2x_gql_modqueues_shadowtest",
-				di = "d2x_gql_modqueues",
-				ai = "web_econ_end_tournament_modal",
-				li = "d2x_nsfw_signup_blocking_de_v1",
-				ui = "d2x_nsfw_signup_blocking_non_us_v1",
-				ci = "ae_trueblock_post_comments_as_blockee",
+				si = "ae_trueblock_post_comments_as_blockee",
+				oi = "d2x_wrapped_reddit_banner",
+				di = "d2x_gql_modqueues_shadowtest",
+				ai = "d2x_gql_modqueues",
+				li = "web_econ_end_tournament_modal",
+				ui = "d2x_nsfw_signup_blocking_de_v1",
+				ci = "d2x_nsfw_signup_blocking_non_us_v1",
 				_i = "d2x_new_community_progress_v3",
 				pi = "web_econ_predictions_custom_token",
 				mi = "chat_mediashare_images",
@@ -16678,13 +16678,13 @@
 					[hi]: [yi],
 					[fi]: [yi],
 					[pi]: [yi],
-					[si]: [as.Enabled],
+					[oi]: [as.Enabled],
+					[li]: [yi],
 					[ai]: [yi],
 					[di]: [yi],
-					[oi]: [yi],
-					[li]: [hs.Enabled],
-					[ui]: [fs.Enabled],
-					[ci]: [yi],
+					[ui]: [hs.Enabled],
+					[ci]: [fs.Enabled],
+					[si]: [yi],
 					[ri]: [yi],
 					[ni]: [yi],
 					[ii]: [yi],
@@ -16856,7 +16856,7 @@
 					[We]: [rs.Enabled],
 					[_i]: [bs.V1, bs.V2, bs.NewModule]
 				},
-				ys = new Set([li, ui, Qt, g, s, v, D, "guest_d2x_subreddit_subreddit_links_url", Y, Q, Z, ie, ne, de, be, Oe, "shreddit_pdp_bucketing", nt, rt, at, ut, ct, vt, Et, _t, Me, Ue, Ge, qe, qt, Kt, $t, Vt, Qe]),
+				ys = new Set([ui, ci, Qt, g, s, v, D, "guest_d2x_subreddit_subreddit_links_url", Y, Q, Z, ie, ne, de, be, Oe, "shreddit_pdp_bucketing", nt, rt, at, ut, ct, vt, Et, _t, Me, Ue, Ge, qe, qt, Kt, $t, Vt, Qe]),
 				Es = {
 					NFL: () => n.fbt._("NFL", null, {
 						hk: "3ktT9l"
@@ -26813,9 +26813,9 @@
 			"use strict";
 			i.d(t, "v", (function() {
 				return n
-			})), i.d(t, "L", (function() {
-				return o
 			})), i.d(t, "M", (function() {
+				return o
+			})), i.d(t, "N", (function() {
 				return d
 			})), i.d(t, "H", (function() {
 				return a
@@ -26825,7 +26825,7 @@
 				return u
 			})), i.d(t, "E", (function() {
 				return c
-			})), i.d(t, "J", (function() {
+			})), i.d(t, "K", (function() {
 				return _
 			})), i.d(t, "o", (function() {
 				return p
@@ -26883,14 +26883,16 @@
 				return M
 			})), i.d(t, "C", (function() {
 				return U
-			})), i.d(t, "K", (function() {
+			})), i.d(t, "L", (function() {
 				return G
 			})), i.d(t, "B", (function() {
 				return q
-			})), i.d(t, "N", (function() {
+			})), i.d(t, "O", (function() {
 				return V
-			})), i.d(t, "I", (function() {
+			})), i.d(t, "J", (function() {
 				return H
+			})), i.d(t, "I", (function() {
+				return W
 			}));
 			i("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n, r = i("./node_modules/node-libs-browser/node_modules/url/url.js"),
@@ -26972,6 +26974,11 @@
 				H = e => {
 					var t, i, n, r, s, o;
 					return (null === (t = e.media) || void 0 === t ? void 0 : t.hasOwnProperty("content")) || (null === (i = e.media) || void 0 === i ? void 0 : i.hasOwnProperty("dashUrl")) || (null === (n = e.media) || void 0 === n ? void 0 : n.hasOwnProperty("hlsUrl")) || (null === (r = e.media) || void 0 === r ? void 0 : r.hasOwnProperty("gallery")) || !!((null === (o = null === (s = e.media) || void 0 === s ? void 0 : s.richtextContent) || void 0 === o ? void 0 : o.document.length) > 0)
+				},
+				W = e => {
+					var t, i, n, r, s;
+					const o = null == e ? void 0 : e.media;
+					return o && _(o) ? "[unavailable]" === (null === (s = null === (r = null === (n = null === (i = null === (t = null == o ? void 0 : o.richtextContent) || void 0 === t ? void 0 : t.document) || void 0 === i ? void 0 : i[0]) || void 0 === n ? void 0 : n.c) || void 0 === r ? void 0 : r[0]) || void 0 === s ? void 0 : s.t) : o && c(o) ? null === o.gallery : void 0
 				}
 		},
 		"./src/reddit/models/ModQueue/index.ts": function(e, t, i) {
@@ -31418,7 +31425,7 @@
 				},
 				w = e => t => {
 					const i = e[t.id];
-					return t && t.media && i && i.media && Object(l.J)(t.media) && t.media.isRichtextPreview && Object(l.J)(i.media) && !i.media.isRichtextPreview && (t.media.richtextContent = i.media.richtextContent, t.media.isRichtextPreview = !1), t
+					return t && t.media && i && i.media && Object(l.K)(t.media) && t.media.isRichtextPreview && Object(l.K)(i.media) && !i.media.isRichtextPreview && (t.media.richtextContent = i.media.richtextContent, t.media.isRichtextPreview = !1), t
 				},
 				v = e => t => {
 					const i = e[t.id];
@@ -33960,11 +33967,11 @@
 					const i = Object(u.U)(e, t);
 					return i && i.displayText || t && t.author && Object(o.d)(t.author)
 				},
-				h = (e, t, i) => Object(_.f)(e) && !Object(_.i)(e) && !!t && !!t.title && t.title.length <= 200 && !t.isNSFW && !!t.media && (Object(d.F)(t.media) || Object(d.J)(t.media)) && (e => !!e && !!e.media && (Object(d.F)(e.media) && (e => /https?:\/\/i\.redd\.it/.test(e))(e.media.content) || Object(d.J)(e.media) && e.media.richtextContent && e.media.richtextContent.document && e.media.richtextContent.document.some(({
+				h = (e, t, i) => Object(_.f)(e) && !Object(_.i)(e) && !!t && !!t.title && t.title.length <= 200 && !t.isNSFW && !!t.media && (Object(d.F)(t.media) || Object(d.K)(t.media)) && (e => !!e && !!e.media && (Object(d.F)(e.media) && (e => /https?:\/\/i\.redd\.it/.test(e))(e.media.content) || Object(d.K)(e.media) && e.media.richtextContent && e.media.richtextContent.document && e.media.richtextContent.document.some(({
 					e
 				}) => e === a.m)))(t) && (i && !t.media.altText || !i),
 				f = (e, t) => {
-					const i = !!t && !!t.media && (Object(d.F)(t.media) || Object(d.J)(t.media)) && t.media.altText;
+					const i = !!t && !!t.media && (Object(d.F)(t.media) || Object(d.K)(t.media)) && t.media.altText;
 					return h(e, t, !1) && !!i && i.length <= 250 && t.title.toLowerCase() !== i.toLowerCase()
 				},
 				b = Object(n.a)(c.K, p, (e, t) => !e && t),
@@ -33988,7 +33995,7 @@
 					const i = Object(u.H)(e, {
 						postId: t
 					});
-					return i && i.media && (Object(d.F)(i.media) || Object(d.J)(i.media)) ? i.media.altText : null
+					return i && i.media && (Object(d.F)(i.media) || Object(d.K)(i.media)) ? i.media.altText : null
 				},
 				T = e => !!Object(s.b)(e, {
 					experimentEligibilitySelector: s.a,
@@ -36478,7 +36485,7 @@
 						const e = Object.keys(i).length;
 						c.eventGlobalCount = e
 					}
-					if (t && t.media && Object(u.M)(t.media)) {
+					if (t && t.media && Object(u.N)(t.media)) {
 						const n = Object(w.h)(e, {
 								postId: t.id
 							}),
@@ -44851,4 +44858,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.2c11ba1f3cc914b4d8af.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.164d118c45fb7a4c1653.js.map

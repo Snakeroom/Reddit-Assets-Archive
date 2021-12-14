@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.4a9816abb1a201bef9e4.js
-// Retrieved at 12/13/2021, 9:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.145dcaa13dd66c2ef159.js
+// Retrieved at 12/14/2021, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPageNativeAd"], {
 		"./src/reddit/components/CommentsPageNativeAd/index.m.less": function(e, t, s) {
@@ -59,8 +59,8 @@
 				y = s("./src/reddit/controls/OutboundLink/index.tsx"),
 				k = s("./src/reddit/helpers/search/renderMedia.tsx"),
 				E = s("./src/reddit/components/PostTopMeta/index.tsx"),
-				P = s("./src/reddit/components/AuthorLink/index.tsx"),
-				N = s("./src/reddit/components/SponsoredLabel/index.tsx"),
+				N = s("./src/reddit/components/AuthorLink/index.tsx"),
+				P = s("./src/reddit/components/SponsoredLabel/index.tsx"),
 				S = s("./src/reddit/components/UserIcon/index.tsx"),
 				_ = s("./src/reddit/controls/MetaSeparator/index.tsx"),
 				w = s("./src/reddit/components/CommentsPageNativeAd/index.m.less"),
@@ -73,21 +73,21 @@
 					userName: e.author,
 					className: A.a.userIcon,
 					omitResponsivePresenceWrapper: !0
-				}), a.a.createElement(P.a, {
+				}), a.a.createElement(N.a, {
 					className: A.a.authorLink,
 					"data-click-id": "user",
 					author: e.author
 				}, `u/${e.author}`), a.a.createElement(_.a, {
 					isSmall: !0,
 					className: A.a.metaSeparator
-				}), a.a.createElement(N.a, {
+				}), a.a.createElement(P.a, {
 					adHeaderVariant: e.adHeaderVariant,
 					greyTextColor: e.greyTextColor
 				})),
 				I = s("./src/lib/classNames/index.ts"),
 				T = s("./src/reddit/components/Media/index.tsx"),
-				M = s("./src/reddit/components/PlayButton/index.tsx"),
-				W = s("./src/reddit/components/Thumbnail/index.tsx"),
+				W = s("./src/reddit/components/PlayButton/index.tsx"),
+				M = s("./src/reddit/components/Thumbnail/index.tsx"),
 				R = s("./src/reddit/icons/svgs/Close/index.tsx");
 
 			function V() {
@@ -112,7 +112,7 @@
 				url: l,
 				usePreview: m,
 				mediaExpanded: p
-			}) => n && n.media ? p && Object(u.M)(n.media) ? a.a.createElement("div", null, a.a.createElement(R.a, {
+			}) => n && n.media ? p && Object(u.N)(n.media) ? a.a.createElement("div", null, a.a.createElement(R.a, {
 				className: A.a.close,
 				onClick: t
 			}), a.a.createElement(T.a, {
@@ -127,7 +127,7 @@
 				isListing: !1,
 				showCentered: !1,
 				scrollerItemRef: c
-			})) : a.a.createElement(W.a, {
+			})) : a.a.createElement(M.a, {
 				className: Object(I.a)(A.a.thumbnail, e),
 				containerClassName: d,
 				crosspost: s,
@@ -135,10 +135,10 @@
 				isMeta: o,
 				post: n,
 				redditStyle: i,
-				removeLink: Object(u.M)(n.media),
-				url: Object(u.M)(n.media) ? void 0 : l,
+				removeLink: Object(u.N)(n.media),
+				url: Object(u.N)(n.media) ? void 0 : l,
 				usePreview: m
-			}) : a.a.createElement(W.a, {
+			}) : a.a.createElement(M.a, {
 				className: Object(I.a)(A.a.thumbnail, e),
 				containerClassName: d,
 				crosspost: s,
@@ -159,7 +159,7 @@
 					}, a.a.createElement(B, V({}, e, {
 						mediaExpanded: t,
 						closeVideo: () => s(!1)
-					})), i && a.a.createElement(M.a, {
+					})), i && a.a.createElement(W.a, {
 						className: A.a.playContainer,
 						playIconClassName: A.a.playIcon,
 						onClick: () => s(!0)
@@ -216,8 +216,8 @@
 						poll: m,
 						post: x,
 						redditStyle: y,
-						scrollerItemRef: P,
-						showMedia: N
+						scrollerItemRef: N,
+						showMedia: P
 					} = this.props;
 					return x.isBlank ? a.a.createElement(h.default, {
 						postId: x.id
@@ -242,12 +242,12 @@
 						greyTextColor: Object(E.e)(this.props)
 					}), a.a.createElement("div", {
 						className: A.a.contentRow
-					}, !(c && !N) && a.a.createElement(U, {
+					}, !(c && !P) && a.a.createElement(U, {
 						isMeta: x.isMeta,
 						post: x,
 						redditStyle: y,
-						isVideo: x.media && Object(u.M)(x.media),
-						scrollerItemRef: P
+						isVideo: x.media && Object(u.N)(x.media),
+						scrollerItemRef: N
 					}), a.a.createElement("div", {
 						className: A.a.contentColumn
 					}, a.a.createElement(O.c, {
@@ -279,7 +279,7 @@
 						postId: x.id
 					}, x.callToAction)))), a.a.createElement("div", {
 						className: A.a.spacer
-					}), a.a.createElement(C.d, null))), Object(k.a)(x, A.a, P, s, !1, !1))), a.a.createElement("div", {
+					}), a.a.createElement(C.d, null))), Object(k.a)(x, A.a, N, s, !1, !1))), a.a.createElement("div", {
 						className: A.a.commentsSpacer
 					}))
 				}
@@ -521,4 +521,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.4a9816abb1a201bef9e4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.145dcaa13dd66c2ef159.js.map
