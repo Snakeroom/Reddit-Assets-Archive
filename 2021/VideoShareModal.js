@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/VideoShareModal.1edbcb6a311402d68c55.js
-// Retrieved at 12/8/2021, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/VideoShareModal.a852b084ddec544d0c32.js
+// Retrieved at 12/14/2021, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["VideoShareModal"], {
 		"./src/reddit/actions/publicAccessNetwork/votes.ts": function(e, t, s) {
@@ -51,7 +51,7 @@
 				defaultImage: e,
 				userId: t
 			}) => {
-				const s = Object(l.e)(p.y),
+				const s = Object(l.e)(p.x),
 					{
 						processingAvatarImageUrl: n
 					} = a.a;
@@ -318,9 +318,9 @@
 			})), s.d(t, "g", (function() {
 				return O
 			})), s.d(t, "h", (function() {
-				return y
-			})), s.d(t, "f", (function() {
 				return S
+			})), s.d(t, "f", (function() {
+				return y
 			})), s.d(t, "a", (function() {
 				return A
 			}));
@@ -433,7 +433,7 @@
 				}, r.a.createElement(f.a, null), r.a.createElement("span", null, a.fbt._("Replay Video", null, {
 					hk: "1iD2Wj"
 				}))),
-				y = ({
+				S = ({
 					onClick: e
 				}) => r.a.createElement("button", {
 					className: _.a.promptButton,
@@ -441,7 +441,7 @@
 				}, r.a.createElement(w.a, null), r.a.createElement("span", null, a.fbt._("Share Video", null, {
 					hk: "FYgQy"
 				}))),
-				S = ({
+				y = ({
 					onClick: e
 				}) => r.a.createElement("button", {
 					className: _.a.promptButton,
@@ -615,8 +615,8 @@
 				L = s("./src/reddit/icons/svgs/CircledPlanet/index.tsx"),
 				j = s("./src/reddit/icons/svgs/Hide/index.tsx"),
 				O = s("./src/reddit/icons/svgs/Lock/index.tsx"),
-				y = s("./src/reddit/icons/svgs/Plus/index.tsx"),
-				S = s("./src/reddit/icons/svgs/Remove/index.tsx"),
+				S = s("./src/reddit/icons/svgs/Plus/index.tsx"),
+				y = s("./src/reddit/icons/svgs/Remove/index.tsx"),
 				A = s("./src/reddit/icons/svgs/Report/index.tsx"),
 				B = s("./src/reddit/icons/svgs/Rules/index.tsx"),
 				M = s("./src/reddit/icons/svgs/Unlock/index.tsx"),
@@ -663,7 +663,7 @@
 						r(!0), e()
 					},
 					className: W.a.joinButton
-				}, n.a.createElement(y.a, {
+				}, n.a.createElement(S.a, {
 					className: W.a.plusIcon
 				}), n.a.createElement("span", {
 					className: W.a.joinText
@@ -905,7 +905,7 @@
 				iconWrapperClassName: W.a.overflowItemIconWrapper,
 				key: `${ne}-end`,
 				onClick: c
-			}, n.a.createElement(S.a, {
+			}, n.a.createElement(y.a, {
 				className: W.a.endBroadcastIcon
 			})))), oe = Object(r.b)(null, e => ({
 				vote: (t, s) => e(Object(m.a)(t, s))
@@ -1601,13 +1601,13 @@
 					listingName: t || a,
 					streamIdFromPath: s
 				}), (e, t, s, a, n) => !e || s.includes(e) || a.includes(e) ? t || n[0] : e),
-				y = Object(a.a)(C, b, I, (e, t, s) => e < t.length - 1 ? t[e + 1] : s),
-				S = Object(a.a)(C, b, (e, t) => {
+				S = Object(a.a)(C, b, I, (e, t, s) => e < t.length - 1 ? t[e + 1] : s),
+				y = Object(a.a)(C, b, (e, t) => {
 					if (e > 0) return t[e - 1]
 				}),
 				A = Object(n.a)(Object(a.a)(O, E, (e, t) => e ? t[e] : void 0)),
-				B = Object(n.a)(Object(a.a)(y, E, (e, t) => e ? t[e] : void 0)),
-				M = Object(n.a)(Object(a.a)(S, E, (e, t) => e ? t[e] : void 0)),
+				B = Object(n.a)(Object(a.a)(S, E, (e, t) => e ? t[e] : void 0)),
+				M = Object(n.a)(Object(a.a)(y, E, (e, t) => e ? t[e] : void 0)),
 				T = (Object(n.a)(Object(a.a)(e => e.publicAccessNetwork.preloads.discoveryUnitThumbnails, E, (e, t) => Object.keys(e).filter(e => !!t[e]).map(s => ({
 					...t[s],
 					preloadedPreviewUrl: e[s]
@@ -1666,4 +1666,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/VideoShareModal.1edbcb6a311402d68c55.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/VideoShareModal.a852b084ddec544d0c32.js.map

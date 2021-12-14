@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.29a4cb89311fd309ed07.js
-// Retrieved at 12/14/2021, 12:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.907b04c19aaf7d5b3861.js
+// Retrieved at 12/14/2021, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250"], {
 		"./src/lib/humanizeDate/index.ts": function(e, t, n) {
@@ -1523,7 +1523,7 @@
 								experimentName: o.I,
 								expEventOverride: t
 							});
-							return !!(Object(o.vf)(n) ? void 0 : n)
+							return !!(Object(o.uf)(n) ? void 0 : n)
 						})(n)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -1749,18 +1749,6 @@
 			function i() {
 				const e = Object(s.useContext)(o.c);
 				return e || r.c.captureMessage("No post context provided"), e
-			}
-		},
-		"./src/reddit/hooks/useTheme.ts": function(e, t, n) {
-			"use strict";
-			n.d(t, "a", (function() {
-				return o
-			}));
-			var r = n("./node_modules/react/index.js"),
-				s = n("./src/lib/CSSVariableProvider/index.tsx");
-
-			function o() {
-				return Object(r.useContext)(s.b)
 			}
 		},
 		"./src/reddit/icons/fonts/OutboundLink/index.tsx": function(e, t, n) {
@@ -2251,9 +2239,9 @@
 			})), n.d(t, "H", (function() {
 				return z
 			})), n.d(t, "p", (function() {
-				return V
-			})), n.d(t, "K", (function() {
 				return J
+			})), n.d(t, "K", (function() {
+				return V
 			})), n.d(t, "y", (function() {
 				return Z
 			})), n.d(t, "A", (function() {
@@ -2463,8 +2451,8 @@
 				z = (e, {
 					commentId: t
 				}) => !!t && e.features.comments.models[t].sendReplies,
-				V = e => e.features.comments.visitHighlightFilter,
-				J = (e, t) => {
+				J = e => e.features.comments.visitHighlightFilter,
+				V = (e, t) => {
 					const n = Object(l.b)(e, t);
 					if (n) return Object(d.W)(e, n)
 				},
@@ -2487,4 +2475,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.29a4cb89311fd309ed07.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.907b04c19aaf7d5b3861.js.map

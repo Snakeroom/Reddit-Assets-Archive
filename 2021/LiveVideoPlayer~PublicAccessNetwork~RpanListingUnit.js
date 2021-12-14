@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit.c7778e4aab80c67d4ee6.js
-// Retrieved at 12/13/2021, 2:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit.c71f995137f022f9a70f.js
+// Retrieved at 12/14/2021, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit"], {
 		"./src/lib/VideoSession/VideoSessionManager.ts": function(e, t, s) {
@@ -429,7 +429,7 @@
 				defaultImage: e,
 				userId: t
 			}) => {
-				const s = Object(c.e)(h.y),
+				const s = Object(c.e)(h.x),
 					{
 						processingAvatarImageUrl: r
 					} = a.a;
@@ -712,8 +712,8 @@
 				f = s("./src/reddit/icons/svgs/Rules/index.tsx"),
 				w = s("./src/reddit/icons/svgs/VideoMute/index.tsx"),
 				C = s("./src/reddit/icons/svgs/VideoReplay/index.tsx"),
-				E = s("./src/reddit/icons/svgs/VideoShare/index.tsx"),
-				x = s("./src/reddit/icons/svgs/VideoVolume/index.tsx"),
+				x = s("./src/reddit/icons/svgs/VideoShare/index.tsx"),
+				E = s("./src/reddit/icons/svgs/VideoVolume/index.tsx"),
 				_ = s("./src/reddit/components/PublicAccessNetwork/Theater/Overlay/index.m.less"),
 				I = s.n(_);
 			const g = ({
@@ -740,7 +740,7 @@
 					value: "mute"
 				}, e ? o.a.createElement(w.a, {
 					className: I.a.volumeIcon
-				}) : o.a.createElement(x.a, {
+				}) : o.a.createElement(E.a, {
 					className: I.a.volumeIcon
 				})),
 				S = n.a.wrapped(m.a, "menuIcon", I.a),
@@ -809,7 +809,7 @@
 				}) => o.a.createElement("button", {
 					className: I.a.promptButton,
 					onClick: e
-				}, o.a.createElement(E.a, null), o.a.createElement("span", null, a.fbt._("Share Video", null, {
+				}, o.a.createElement(x.a, null), o.a.createElement("span", null, a.fbt._("Share Video", null, {
 					hk: "FYgQy"
 				}))),
 				T = ({
@@ -976,8 +976,8 @@
 				f = s("./src/reddit/controls/Dropdown/Row.tsx"),
 				w = s("./src/reddit/helpers/getSubredditIcon/index.ts"),
 				C = s("./src/reddit/helpers/getSubredditUrl/index.ts"),
-				E = s("./src/reddit/helpers/userSnoovatar/index.ts"),
-				x = s("./src/reddit/icons/fonts/index.tsx"),
+				x = s("./src/reddit/helpers/userSnoovatar/index.ts"),
+				E = s("./src/reddit/icons/fonts/index.tsx"),
 				_ = s("./src/reddit/icons/fonts/Downvote/index.tsx"),
 				I = s("./src/reddit/icons/fonts/Menu/index.tsx"),
 				g = s("./src/reddit/icons/fonts/Share/index.tsx"),
@@ -1124,7 +1124,7 @@
 					iconWrapperClassName: W.a.overflowItemShareIconWrapper,
 					key: `${re}-share`,
 					onClick: t
-				}, r.a.createElement(x.a, {
+				}, r.a.createElement(E.a, {
 					name: "link_post",
 					className: W.a.linkIcon
 				})), r.a.createElement(f.b, {
@@ -1135,7 +1135,7 @@
 					iconWrapperClassName: W.a.overflowItemShareIconWrapper,
 					key: `${re}-crosspost`,
 					onClick: e
-				}, r.a.createElement(x.a, {
+				}, r.a.createElement(E.a, {
 					name: "crosspost",
 					className: W.a.overflowItemIcon
 				})), n && r.a.createElement(f.b, {
@@ -1146,7 +1146,7 @@
 					iconWrapperClassName: W.a.overflowItemShareIconWrapper,
 					key: `${re}-sharetochat`,
 					onClick: a
-				}, r.a.createElement(x.a, {
+				}, r.a.createElement(E.a, {
 					name: "chat",
 					className: W.a.overflowItemIcon
 				})))
@@ -1435,7 +1435,7 @@
 			}) => {
 				const {
 					name: a
-				} = e, o = we(a), n = Ce(a), i = Ee(a, !n), c = n ? U._("Unfollow u/{name}", [U._param("name", a)], {
+				} = e, o = we(a), n = Ce(a), i = xe(a, !n), c = n ? U._("Unfollow u/{name}", [U._param("name", a)], {
 					hk: "2n0wqa"
 				}) : U._("Follow u/{name}", [U._param("name", a)], {
 					hk: "20X8Bw"
@@ -1445,7 +1445,7 @@
 						s(!n), i()
 					},
 					title: c
-				}, r.a.createElement(xe, {
+				}, r.a.createElement(Ee, {
 					profile: e
 				}), r.a.createElement(_e, {
 					isSubscribed: n
@@ -1458,7 +1458,7 @@
 					name: e,
 					type: b.a.PROFILE
 				}
-			})), Ee = (e, t) => {
+			})), xe = (e, t) => {
 				const s = Object(o.d)();
 				return Object(a.useCallback)(() => {
 					s(Object(u.d)([{
@@ -1466,13 +1466,13 @@
 						type: b.a.PROFILE
 					}], t))
 				}, [s, e, t])
-			}, xe = ({
+			}, Ee = ({
 				profile: e
 			}) => {
 				const {
 					id: t,
 					name: s
-				} = e, a = we(s), o = ke(a), i = o && Object(E.a)(a.accountIcon);
+				} = e, a = we(s), o = ke(a), i = o && Object(x.a)(a.accountIcon);
 				return r.a.createElement("div", {
 					className: Object(n.a)(W.a.subscribeToProfileAvatar, {
 						[W.a.snoovatarHeadshot]: i
@@ -1680,4 +1680,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit.c7778e4aab80c67d4ee6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit.c71f995137f022f9a70f.js.map

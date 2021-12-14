@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~898a3d9b.ee0d943132f6c5325267.js
-// Retrieved at 12/14/2021, 12:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~898a3d9b.f56a5939aa7258f617e5.js
+// Retrieved at 12/14/2021, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~898a3d9b"], {
 		"./src/lib/unicodeUtils/index.ts": function(e, t, s) {
@@ -135,7 +135,7 @@
 					className: d
 				}, o.a.createElement(M, null, o.a.createElement(C, null, o.a.createElement(m.a, c)), D(i), i.source && o.a.createElement(b.a, {
 					post: i
-				}), H(e)), A(e)) : o.a.createElement(k, {
+				}), H(e)), U(e)) : o.a.createElement(k, {
 					className: d
 				}, o.a.createElement(C, null, o.a.createElement(m.a, c)), D(i), F(e), H(e))
 			}));
@@ -170,9 +170,9 @@
 						_1: "1 point"
 					}, [n.fbt._plural(s, "point count", Object(l.b)(s))], {
 						hk: "PNZhd"
-					})), o.a.createElement(P, null), o.a.createElement(L, null, U(e)))
+					})), o.a.createElement(P, null), o.a.createElement(L, null, A(e)))
 				},
-				U = e => {
+				A = e => {
 					const {
 						post: t,
 						shouldOpenPostInNewTab: s
@@ -190,7 +190,7 @@
 						hk: "xPYWL"
 					}))
 				},
-				A = e => o.a.createElement(N, null, o.a.createElement(h.a, {
+				U = e => o.a.createElement(N, null, o.a.createElement(h.a, {
 					post: e.post
 				}))
 		},
@@ -847,12 +847,12 @@
 					const n = `PostBadges--${e}--${t}`;
 					return s ? `${n}--${s}` : n
 				},
-				U = Object(h.u)({
+				A = Object(h.u)({
 					isProfilePostListing: h.K,
 					isSubreddit: h.M,
 					pageLayer: e => e
 				}),
-				A = Object(a.c)({
+				U = Object(a.c)({
 					isPinned: (e, {
 						post: t
 					}) => Object(T.q)(e, {
@@ -860,7 +860,7 @@
 					}),
 					modModeEnabled: h.S
 				}),
-				J = Object(i.b)(A, (e, t) => ({
+				J = Object(i.b)(U, (e, t) => ({
 					onHideTooltip: () => e(Object(l.i)()),
 					onOpenRemovalReasonModal: () => {
 						s.e("removalReasonActions").then(s.bind(null, "./src/reddit/actions/removalReasons/index.ts")).then(s => e(s.fetchReasonsAndOpenModal(t.post.belongsTo.id, [t.post.id])))
@@ -869,7 +869,7 @@
 						tooltipId: t
 					}))
 				}));
-			t.a = U(J(({
+			t.a = A(J(({
 				className: e,
 				displayText: t,
 				isSubreddit: s,
@@ -878,8 +878,8 @@
 				isPinned: h,
 				isProfilePostListing: T,
 				modModeEnabled: L,
-				onHideTooltip: U,
-				onOpenRemovalReasonModal: A,
+				onHideTooltip: A,
+				onOpenRemovalReasonModal: U,
 				onShowTooltip: J,
 				post: W,
 				tooltipType: G
@@ -914,7 +914,7 @@
 					desc: N(),
 					id: z,
 					onMouseEnter: J(z),
-					onMouseLeave: U
+					onMouseLeave: A
 				}), o.a.createElement(u.c, w({
 					tooltipId: z,
 					text: N()
@@ -924,7 +924,7 @@
 					desc: R(),
 					id: Z,
 					onMouseEnter: J(Z),
-					onMouseLeave: U
+					onMouseLeave: A
 				}), o.a.createElement(u.c, w({
 					tooltipId: Z,
 					text: R()
@@ -934,7 +934,7 @@
 					desc: D(),
 					id: se,
 					onMouseEnter: J(se),
-					onMouseLeave: U
+					onMouseLeave: A
 				}), o.a.createElement(u.c, w({
 					tooltipId: se,
 					text: D()
@@ -944,7 +944,7 @@
 					desc: F(),
 					id: ne,
 					onMouseEnter: J(ne),
-					onMouseLeave: U
+					onMouseLeave: A
 				}), o.a.createElement(u.c, w({
 					tooltipId: ne,
 					text: F()
@@ -954,7 +954,7 @@
 					desc: Object(f.a)(W),
 					id: Y,
 					onMouseEnter: J(Y),
-					onMouseLeave: U
+					onMouseLeave: A
 				}), o.a.createElement(u.c, w({
 					tooltipId: Y,
 					text: Object(f.a)(W)
@@ -964,16 +964,16 @@
 					desc: Object(f.b)(W),
 					id: Q,
 					onMouseEnter: J(Q),
-					onMouseLeave: U
+					onMouseLeave: A
 				}), q && o.a.createElement(m.a, {
 					className: P.a.addRemovalReason,
-					onClick: A,
+					onClick: U,
 					text: n.fbt._("Add a removal reason", null, {
 						hk: "1YDo3"
 					})
 				}), (W.modRemovalReason || W.modNote) && o.a.createElement(M, {
 					onMouseEnter: J(Q),
-					onMouseLeave: U
+					onMouseLeave: A
 				}, n.fbt._("Removal reason", null, {
 					hk: "2DhKVZ"
 				})), o.a.createElement(u.c, w({
@@ -985,7 +985,7 @@
 					desc: Object(f.d)(W),
 					id: te,
 					onMouseEnter: J(te),
-					onMouseLeave: U
+					onMouseLeave: A
 				}), o.a.createElement(u.c, w({
 					tooltipId: te,
 					text: Object(f.d)(W)
@@ -995,7 +995,7 @@
 					desc: Object(f.c)(W.numReports),
 					id: ee,
 					onMouseEnter: J(ee),
-					onMouseLeave: U
+					onMouseLeave: A
 				}), o.a.createElement(u.c, w({
 					tooltipId: ee,
 					text: Object(f.c)(W.numReports)
@@ -1837,9 +1837,9 @@
 			})), s.d(t, "g", (function() {
 				return H
 			})), s.d(t, "i", (function() {
-				return U
-			})), s.d(t, "e", (function() {
 				return A
+			})), s.d(t, "e", (function() {
+				return U
 			}));
 			var n = s("./src/lib/unicodeUtils/index.ts"),
 				r = s("./node_modules/lodash/reduce.js"),
@@ -1944,7 +1944,7 @@
 						i = n.length;
 					for (let a = 0; a < i; a++) {
 						const e = n[a];
-						o.push(e.e === p.w ? e.t : A(e, t, a))
+						o.push(e.e === p.w ? e.t : U(e, t, a))
 					}
 					const d = c.x[r - 1];
 					return a.a.createElement(d, {
@@ -2022,7 +2022,7 @@
 							} = e;
 						l.push(a.a.createElement(n, {
 							key: c
-						}, U(i, t, s))), m[c] = r
+						}, A(i, t, s))), m[c] = r
 					}
 					for (let p = 0; p < i; p++) {
 						const e = r[p],
@@ -2035,7 +2035,7 @@
 								} = e[r];
 							o.push(a.a.createElement(n, {
 								key: r
-							}, U(i, t, s)))
+							}, A(i, t, s)))
 						}
 						u.push(a.a.createElement(c.t, {
 							key: p
@@ -2052,9 +2052,9 @@
 					const r = e.c[0];
 					return r.e !== p.m && r.e !== p.a || !Object(L.g)(r.id) ? a.a.createElement(c.j, {
 						key: n
-					}, U(e.c, t, s)) : Object(y.b)(r, n, t)
+					}, A(e.c, t, s)) : Object(y.b)(r, n, t)
 				},
-				U = (e, t, s) => {
+				A = (e, t, s) => {
 					const n = [],
 						r = e.length;
 					for (let o = 0; o < r; o++) {
@@ -2062,7 +2062,7 @@
 						if (r.e === p.A) n.push(J(r, o));
 						else if (r.e === p.x) n.push(a.a.createElement(S.a, {
 							key: o
-						}, U(r.c, t, s)));
+						}, A(r.c, t, s)));
 						else if (r.e === p.n) n.push(a.a.createElement("br", {
 							key: o
 						}));
@@ -2075,11 +2075,11 @@
 									media: e
 								}))
 							}
-						} else n.push(A(r, s, o))
+						} else n.push(U(r, s, o))
 					}
 					return n
 				},
-				A = (e, t, s) => {
+				U = (e, t, s) => {
 					switch (e.e) {
 						case p.o:
 							const n = J({
@@ -2372,12 +2372,12 @@
 						rtJsonElementProps: o
 					});
 					switch (n) {
-						case h.af.SmIcon:
+						case h.Ze.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: o
 							});
-						case h.af.SmIconHc:
+						case h.Ze.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -2874,12 +2874,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: n.Ue
+						experimentName: n.Te
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === n.af.SmIcon || t === n.af.SmIconHc
+					return t === n.Ze.SmIcon || t === n.Ze.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -2902,4 +2902,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~898a3d9b.ee0d943132f6c5325267.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~898a3d9b.f56a5939aa7258f617e5.js.map

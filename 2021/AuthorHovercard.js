@@ -1,17 +1,7 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.cc8e5fb3ca9ead66eadb.js
-// Retrieved at 12/14/2021, 12:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.c99c41b87b431253c2ec.js
+// Retrieved at 12/14/2021, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
-		"./src/lib/delay/index.ts": function(e, t, n) {
-			"use strict";
-
-			function r(e) {
-				return new Promise(t => setTimeout(t, e))
-			}
-			n.d(t, "a", (function() {
-				return r
-			}))
-		},
 		"./src/lib/humanizeDate/index.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
@@ -55,52 +45,53 @@
 		"./src/lib/notifications/index.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return c
+				return i
 			})), n.d(t, "c", (function() {
-				return d
+				return c
 			})), n.d(t, "b", (function() {
-				return l
+				return d
 			}));
-			var r = n("./src/lib/delay/index.ts"),
-				s = n("./src/lib/getParsedUserAgent/index.ts"),
-				a = n("./src/lib/localStorageAvailable/index.ts"),
-				o = n("./src/lib/notifications/constants.ts"),
-				i = n("./src/lib/notifications/featureFlags.ts");
+			var r = n("./src/lib/getParsedUserAgent/index.ts"),
+				s = n("./src/lib/localStorageAvailable/index.ts"),
+				a = n("./src/lib/notifications/constants.ts"),
+				o = n("./src/lib/notifications/featureFlags.ts");
 			n("./src/lib/serviceWorker/index.ts");
-			const c = () => {
-					if (Object(i.a)() !== o.c.NotificationsSupported) return o.a.Unsupported;
-					const e = Object(a.a)() && localStorage.getItem(o.f) === o.g;
-					return "granted" === Notification.permission ? o.a.Granted : "denied" === Notification.permission ? o.a.Denied : e ? o.a.Closed : o.a.Default
+			const i = () => {
+					if (Object(o.a)() !== a.c.NotificationsSupported) return a.a.Unsupported;
+					const e = Object(s.a)() && localStorage.getItem(a.f) === a.g;
+					return "granted" === Notification.permission ? a.a.Granted : "denied" === Notification.permission ? a.a.Denied : e ? a.a.Closed : a.a.Default
 				},
-				d = () => !!Object(a.a)() && (localStorage.removeItem(o.f), !0),
-				l = async (e, t, n, i, d, l) => {
-					const u = c();
-					if (u === o.a.Unsupported) return void l();
-					if (Object(a.a)()) {
-						const t = localStorage.getItem(o.h),
+				c = () => !!Object(s.a)() && (localStorage.removeItem(a.f), !0),
+				d = async (e, t, n, o, c, d) => {
+					const l = i();
+					if (l === a.a.Unsupported) return void d();
+					if (Object(s.a)()) {
+						const t = localStorage.getItem(a.h),
 							n = (new Date).getTime();
-						if (!e && t && parseInt(t) + o.i > n) return void l();
-						localStorage.setItem(o.h, n.toString())
+						if (!e && t && parseInt(t) + a.i > n) return void d();
+						localStorage.setItem(a.h, n.toString())
 					}
-					if (!t && u === o.a.Denied) return i(!1, !0), void l();
-					if (!t && u === o.a.Granted) return d(!1), void l();
-					if (!t && u === o.a.Closed) return void l();
-					let m = o.a.Default;
-					const p = navigator.userAgent;
-					switch (Object(s.b)(p) || Object(s.f)(p) ? Object(r.a)(1800).then(() => {
-						m === o.a.Default && n()
-					}) : n(), m = await Notification.requestPermission()) {
+					if (!t && l === a.a.Denied) return o(!1, !0), void d();
+					if (!t && l === a.a.Granted) return c(!1), void d();
+					if (!t && l === a.a.Closed) return void d();
+					let u = a.a.Default;
+					const m = navigator.userAgent;
+					switch (Object(r.b)(m) || Object(r.f)(m) ? function(e) {
+						return new Promise(t => setTimeout(t, e))
+					}(1800).then(() => {
+						u === a.a.Default && n()
+					}) : n(), u = await Notification.requestPermission()) {
 						case "granted":
-							d(!0);
+							c(!0);
 							break;
 						case "denied":
-							i(!0, !0);
+							o(!0, !0);
 							break;
 						case "default":
-							l();
+							d();
 							break;
 						default:
-							i(!0, !1), localStorage.setItem(o.f, o.g)
+							o(!0, !1), localStorage.setItem(a.f, a.g)
 					}
 				}
 		},
@@ -3722,4 +3713,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.cc8e5fb3ca9ead66eadb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.c99c41b87b431253c2ec.js.map

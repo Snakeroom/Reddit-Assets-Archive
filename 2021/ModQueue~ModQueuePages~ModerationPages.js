@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueue~ModQueuePages~ModerationPages.064351530fecd67004bb.js
-// Retrieved at 12/14/2021, 12:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueue~ModQueuePages~ModerationPages.74ebc402874d06d4289f.js
+// Retrieved at 12/14/2021, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueue~ModQueuePages~ModerationPages"], {
 		"./src/reddit/actions/bulkActions/index.ts": function(e, t, r) {
@@ -247,7 +247,7 @@
 			r.d(t, "e", (function() {
 				return Q
 			})), r.d(t, "d", (function() {
-				return q
+				return B
 			})), r.d(t, "f", (function() {
 				return $
 			})), r.d(t, "a", (function() {
@@ -345,8 +345,8 @@
 					(function(e) {
 						return Object(y.c)(e, {
 							experimentEligibilitySelector: y.a,
-							experimentName: O.rd
-						}) === O.ed
+							experimentName: O.qd
+						}) === O.dd
 					})(c()) && (async () => {
 						var e;
 						const {
@@ -372,7 +372,7 @@
 							gatewayResponse: p
 						})
 					})()
-				}, V = Object(n.a)(I.k), B = Object(n.a)(I.b), q = e => async (t, r, {
+				}, V = Object(n.a)(I.k), q = Object(n.a)(I.b), B = e => async (t, r, {
 					apiContext: a
 				}) => {
 					const n = r(),
@@ -389,7 +389,7 @@
 					});
 					if (p.ok) {
 						const e = p.body;
-						t(V(e)), e.moderatedAfter ? t(q()) : t(B())
+						t(V(e)), e.moderatedAfter ? t(B()) : t(q())
 					} else t(Object(u.f)({
 						kind: f.b.Error,
 						text: s.fbt._("Oh no! Something went wrong!", null, {
@@ -849,8 +849,8 @@
 					type: "json",
 					data: t
 				});
-			var B = r("./src/reddit/helpers/isPost.ts"),
-				q = r("./src/reddit/helpers/r2/normalizeCommentFromR2/index.ts"),
+			var q = r("./src/reddit/helpers/isPost.ts"),
+				B = r("./src/reddit/helpers/r2/normalizeCommentFromR2/index.ts"),
 				K = r("./src/reddit/helpers/routeKey/index.ts"),
 				G = r("./src/reddit/models/ModQueue/index.ts"),
 				H = r("./src/reddit/models/PostDraft/index.ts"),
@@ -960,7 +960,7 @@
 					const c = o(),
 						u = c.user.account && c.user.account.displayText,
 						i = e[0],
-						l = Object(B.a)(i) ? $.e.Post : $.e.Comment,
+						l = Object(q.a)(i) ? $.e.Post : $.e.Comment,
 						m = l === $.e.Post ? c.posts.models[i] : c.features.comments.models[i],
 						p = l === $.e.Post ? L.S : w.i;
 					if (!m || !u) return !1;
@@ -990,7 +990,7 @@
 							if (o.ok) {
 								if (s === $.f.Public) {
 									if (n(he()), o.body) {
-										const e = Object(q.a)(o.body, u),
+										const e = Object(B.a)(o.body, u),
 											t = {
 												comment: e,
 												parentId: i
@@ -1478,8 +1478,8 @@
 					api: F,
 					result: Q
 				});
-			const B = {};
-			var q = (e = B, t) => {
+			const q = {};
+			var B = (e = q, t) => {
 					switch (t.type) {
 						case R.g: {
 							const {
@@ -1522,7 +1522,7 @@
 					models: C,
 					pageInfo: D,
 					search: V,
-					userOrder: q
+					userOrder: B
 				}),
 				G = r("./src/reddit/actions/moderationLog/constants.ts");
 			const H = {};
@@ -2050,7 +2050,7 @@
 				}
 			};
 			const Ve = {};
-			var Be = (e = Ve, t) => {
+			var qe = (e = Ve, t) => {
 					switch (t.type) {
 						case a.E:
 						case a.F: {
@@ -2077,9 +2077,9 @@
 							return e
 					}
 				},
-				qe = Object(s.c)({
+				Be = Object(s.c)({
 					error: Qe,
-					pending: Be
+					pending: qe
 				});
 			r("./node_modules/core-js/modules/web.dom.iterable.js");
 			const Ke = {};
@@ -2117,7 +2117,7 @@
 				},
 				He = Object(s.c)({
 					data: Ge,
-					api: qe
+					api: Be
 				}),
 				$e = Object(s.c)({
 					editableModerators: de,
@@ -2569,7 +2569,7 @@
 				}
 			};
 			const Vt = {};
-			var Bt = (e = Vt, t) => {
+			var qt = (e = Vt, t) => {
 					switch (t.type) {
 						case Je.p: {
 							const {
@@ -2587,10 +2587,10 @@
 							return e
 					}
 				},
-				qt = Object(s.c)({
+				Bt = Object(s.c)({
 					api: Ut,
 					itemOrder: Qt,
-					loadMore: Bt
+					loadMore: qt
 				});
 			var Kt = (e = null, t) => {
 				switch (t.type) {
@@ -2671,7 +2671,7 @@
 					moderatedCommunitiesOrder: vt,
 					modqueue: Et,
 					reports: Pt,
-					spam: qt,
+					spam: Bt,
 					unmoderated: Yt
 				});
 			var Zt = (e = null, t) => {
@@ -2944,4 +2944,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue~ModQueuePages~ModerationPages.064351530fecd67004bb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue~ModQueuePages~ModerationPages.74ebc402874d06d4289f.js.map
