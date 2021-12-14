@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.789ade97ee7ac3f8e53b.js
-// Retrieved at 12/14/2021, 5:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.25f110e2f77652d66b77.js
+// Retrieved at 12/14/2021, 5:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit", "reddit-components-BlankPost"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -8523,8 +8523,8 @@
 					if (e && t) {
 						const r = Object(i.f)(y(e, t)),
 							n = b(r);
-						return s.fbt._("Submit post at {time}", [s.fbt._param("time", n)], {
-							hk: "IZ3L"
+						return s.fbt._("At {time}", [s.fbt._param("time", n)], {
+							hk: "25s5Tg"
 						})
 					}
 					return s.fbt._("Submit post at scheduled event time", null, {
@@ -27211,4 +27211,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.789ade97ee7ac3f8e53b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.25f110e2f77652d66b77.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.812e6b93c96aa1175dff.js
-// Retrieved at 12/14/2021, 5:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.cbe92fcab9d96062df70.js
+// Retrieved at 12/14/2021, 5:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -9152,15 +9152,15 @@
 					}, r.a.createElement(L, {
 						showButton: !0,
 						value: x.j.Now
-					}, r.a.createElement(M, null, r.a.createElement("span", null, o.fbt._("Submit post now", null, {
-						hk: "2ueTnc"
-					})), r.a.createElement(D, null, o.fbt._("Submitting post before your event allows people to follow your event and come back at the event time", null, {
-						hk: "3LTavv"
+					}, r.a.createElement(M, null, r.a.createElement("span", null, o.fbt._("Now", null, {
+						hk: "4Cro9L"
+					})), r.a.createElement(D, null, o.fbt._("Let people follow your event ahead of time so they can make sure to come back when it starts.", null, {
+						hk: "xTSNh"
 					})))), r.a.createElement(L, {
 						showButton: !0,
 						value: x.j.AtEventTime
-					}, r.a.createElement(M, null, r.a.createElement("span", null, this.getSubmitAtLabel()), r.a.createElement(D, null, o.fbt._("This post will be editable and hidden from people visiting your community until the event starts.", null, {
-						hk: "1fGKlZ"
+					}, r.a.createElement(M, null, r.a.createElement("span", null, this.getSubmitAtLabel()), r.a.createElement(D, null, o.fbt._("Edit and hide this post until the event starts.", null, {
+						hk: "2VC38O"
 					})))));
 					const t = e.schedule || S(),
 						[n, s] = Object(f.i)(t.startDate),
@@ -9215,8 +9215,8 @@
 					}), r.a.createElement(O.a, {
 						selectedTimezoneName: this.state.timezoneName,
 						onChange: this.onTimezoneChange
-					}))), e && r.a.createElement(r.a.Fragment, null, r.a.createElement(P, null), r.a.createElement("fieldset", null, r.a.createElement("legend", null, o.fbt._("When do you want to submit this post?", null, {
-						hk: "3kBgxg"
+					}))), e && r.a.createElement(r.a.Fragment, null, r.a.createElement(P, null), r.a.createElement("fieldset", null, r.a.createElement("legend", null, o.fbt._("When do you want to post this event?", null, {
+						hk: "3OEsrt"
 					})), this.renderSubmitTimeRadio()))), r.a.createElement(B, null, r.a.createElement(C.a, null, this.props.schedule && this.props.shouldShowDeleteButton && r.a.createElement(K, {
 						onClick: this.onDeleteButtonClick
 					}, r.a.createElement(z, null), o.fbt._("Clear", null, {
@@ -22254,8 +22254,8 @@
 					if (e && t) {
 						const n = Object(d.f)(f(e, t)),
 							s = p(n);
-						return o.fbt._("Submit post at {time}", [o.fbt._param("time", s)], {
-							hk: "IZ3L"
+						return o.fbt._("At {time}", [o.fbt._param("time", s)], {
+							hk: "25s5Tg"
 						})
 					}
 					return o.fbt._("Submit post at scheduled event time", null, {
@@ -32505,4 +32505,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.812e6b93c96aa1175dff.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.cbe92fcab9d96062df70.js.map
