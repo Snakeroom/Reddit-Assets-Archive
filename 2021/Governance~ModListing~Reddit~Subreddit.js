@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.52bf732d081b8f5b912c.js
-// Retrieved at 12/14/2021, 1:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.4788617d18475f6177a5.js
+// Retrieved at 12/14/2021, 5:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~Subreddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, r) {
@@ -660,7 +660,7 @@
 						isOnline: t
 					} = e.subscribe.data;
 					W(t)
-				}, []), K = Object(s.useRef)(null), [z, V] = Object(s.useState)(!1), X = Object(s.useCallback)(e => {
+				}, []), K = Object(s.useRef)(null), [z, V] = Object(s.useState)(!1), Y = Object(s.useCallback)(e => {
 					e.forEach(e => {
 						const {
 							isIntersecting: t,
@@ -668,10 +668,10 @@
 						} = e, n = 1 !== r;
 						t ? V(!0) : n && V(!1)
 					})
-				}, []), Y = Object(s.useRef)({
+				}, []), X = Object(s.useRef)({
 					rootMargin: "750px 0px 1000px 0px"
 				});
-				return Object(l.a)(K, X, Y.current), N ? G : c.a.createElement("div", {
+				return Object(l.a)(K, Y, X.current), N ? G : c.a.createElement("div", {
 					className: Object(n.a)(v.a.userIconWrapper, {
 						[v.a.nftUserIcon]: g,
 						[v.a.hasHeadShotWrapper]: H,
@@ -1001,7 +1001,7 @@
 			})), r.d(t, "w", (function() {
 				return V
 			})), r.d(t, "e", (function() {
-				return X
+				return Y
 			})), r.d(t, "d", (function() {
 				return Q
 			})), r.d(t, "u", (function() {
@@ -1162,7 +1162,7 @@
 							break
 						}
 						case c.Mb.SUBREDDIT_WIKI:
-							Object(_.a)(Y(r, n)(t));
+							Object(_.a)(X(r, n)(t));
 							break;
 						case c.Mb.COINS:
 							Object(_.a)(G(r, n)(t)), Object(_.a)(B()(t));
@@ -1186,7 +1186,7 @@
 							f && L(t, u ? u.subredditName : null, u ? u.profileName : null);
 							break;
 						case c.Mb.SUBREDDIT_LEADERBOARD:
-							f && Object(_.a)(X()(t));
+							f && Object(_.a)(Y()(t));
 							break;
 						case c.Mb.SEARCH_RESULTS:
 							if (f) {
@@ -1515,13 +1515,13 @@
 					noun: "screen",
 					...y(e)
 				}),
-				X = () => e => ({
+				Y = () => e => ({
 					action: "view",
 					source: "global",
 					noun: "screen",
 					...y(e)
 				}),
-				Y = (e, t) => r => ({
+				X = (e, t) => r => ({
 					source: "global",
 					action: "view",
 					noun: "screen",
@@ -2180,7 +2180,7 @@
 					return n ? n * s.Rb < 1639443600180 ? void 0 : O(e) : void 0
 				},
 				O = Object(n.a)(e => Object(i.c)(e, {
-					experimentName: c.Xd,
+					experimentName: c.Ud,
 					experimentEligibilitySelector: a.e
 				}), d.a)
 		},
@@ -2195,4 +2195,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.52bf732d081b8f5b912c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.4788617d18475f6177a5.js.map

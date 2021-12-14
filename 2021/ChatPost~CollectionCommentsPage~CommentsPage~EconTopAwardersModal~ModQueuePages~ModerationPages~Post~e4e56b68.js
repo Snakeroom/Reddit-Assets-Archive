@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~e4e56b68.f0f8094b0866f91a1fb8.js
-// Retrieved at 12/14/2021, 1:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~e4e56b68.8b95f321a6585d38e4a2.js
+// Retrieved at 12/14/2021, 5:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~e4e56b68"], {
 		"./src/reddit/actions/economics/subredditPremium/actionCreators.ts": function(e, t, r) {
@@ -1956,7 +1956,7 @@
 						showTimestamp: j = !0,
 						subredditOrProfile: E,
 						tooltipType: H
-					} = e, D = Object(a.d)(), U = Object(w.a)(), G = Object(a.e)(ae.a), q = Object(a.e)(ce.d), W = Object(a.e)(ce.g) || ["popular", "all"].includes(q || ""), V = Object(a.e)(ie.b), J = !(!A.isSponsored || !G || Object(p.uf)(G));
+					} = e, D = Object(a.d)(), U = Object(w.a)(), G = Object(a.e)(ae.a), q = Object(a.e)(ce.d), W = Object(a.e)(ce.g) || ["popular", "all"].includes(q || ""), V = Object(a.e)(ie.b), J = !(!A.isSponsored || !G || Object(p.qf)(G));
 					Object(s.useEffect)(() => {
 						J && D(Object(m.d)(A.author))
 					}, []);
@@ -3041,7 +3041,7 @@
 				n = r("./src/reddit/constants/experiments.ts"),
 				a = r("./src/reddit/helpers/chooseVariant/index.ts");
 			const o = Object(s.a)(e => Object(a.c)(e, {
-				experimentName: n.pb,
+				experimentName: n.ob,
 				experimentEligibilitySelector: a.a
 			}), e => e)
 		},
@@ -3058,15 +3058,15 @@
 			const o = e => {
 					const t = Object(n.c)(e, {
 						experimentEligibilitySelector: a.K,
-						experimentName: s.Hc
+						experimentName: s.Ec
 					});
-					return !(!t || Object(s.uf)(t))
+					return !(!t || Object(s.qf)(t))
 				},
 				i = e => {
 					return Object(n.c)(e, {
 						experimentEligibilitySelector: a.K,
-						experimentName: s.Hc
-					}) === s.id.ListingEnabled
+						experimentName: s.Ec
+					}) === s.fd.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/gold/topAwarded.ts": function(e, t, r) {
@@ -3126,4 +3126,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~e4e56b68.f0f8094b0866f91a1fb8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~e4e56b68.8b95f321a6585d38e4a2.js.map

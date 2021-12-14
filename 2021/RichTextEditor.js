@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.37c8d0b01827873a3324.js
-// Retrieved at 12/14/2021, 5:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.9473232abafa744fc184.js
+// Retrieved at 12/14/2021, 5:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -4082,37 +4082,37 @@
 					if (Object(i.a)(e)) return !1;
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.qf
-					}) === o.dd
+						experimentName: o.mf
+					}) === o.ad
 				},
 				c = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.rf
-					}) === o.dd
+						experimentName: o.nf
+					}) === o.ad
 				},
 				d = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.pf
+						experimentName: o.lf
 					});
-					return t === o.if.UIChangesOnly || t === o.if.TypingIndicators || t === o.if.IndicatorsPlusCTA
+					return t === o.ef.UIChangesOnly || t === o.ef.TypingIndicators || t === o.ef.IndicatorsPlusCTA
 				},
 				l = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(r.d)(e, {
-							experimentName: o.pf
+							experimentName: o.lf
 						}),
 						n = null == t ? void 0 : t.variant;
-					return n === o.if.TypingIndicators || n === o.if.IndicatorsPlusCTA
+					return n === o.ef.TypingIndicators || n === o.ef.IndicatorsPlusCTA
 				},
 				u = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(r.d)(e, {
-						experimentName: o.pf
+						experimentName: o.lf
 					});
-					return (null == t ? void 0 : t.variant) === o.if.IndicatorsPlusCTA
+					return (null == t ? void 0 : t.variant) === o.ef.IndicatorsPlusCTA
 				}
 		},
 		"./src/redditGQL/operations/CommentToxicity.json": function(e) {
@@ -4123,4 +4123,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.37c8d0b01827873a3324.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.9473232abafa744fc184.js.map

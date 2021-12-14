@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.980fc036e6d686ab0e52.js
-// Retrieved at 12/14/2021, 1:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.0a235f5944fb1d4af9cb.js
+// Retrieved at 12/14/2021, 5:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -10411,7 +10411,7 @@
 			const de = Object(c.a)(e => Object(le.c)(e, {
 				experimentEligibilitySelector: I.K,
 				experimentName: ce.L
-			}), e => e === ce.U.Enabled);
+			}), e => e === ce.T.Enabled);
 			var me = n("./src/reddit/selectors/meta.ts"),
 				ue = n("./src/reddit/components/Settings/AccountPrefsSection/index.m.less"),
 				pe = n.n(ue);
@@ -11904,7 +11904,7 @@
 				qs = Object(c.a)(e => Object(le.c)(e, {
 					experimentEligibilitySelector: I.K,
 					experimentName: ce.K
-				}), e => e === ce.T.Enabled),
+				}), e => e === ce.S.Enabled),
 				Vs = Me.a.span("SubheaderLink", dn.a),
 				Qs = Me.a.button("GenerateBackupCodesButton", dn.a),
 				Js = Me.a.wrapped(ee.g, "ThirdPartyAuth", dn.a),
@@ -13574,7 +13574,7 @@
 			const o = e => Object(a.c)(e, {
 				experimentName: s.E,
 				experimentEligibilitySelector: () => Object(r.J)(e)
-			}) === s.dd
+			}) === s.ad
 		},
 		"./src/reddit/selectors/gold/productOffers.ts": function(e, t, n) {
 			"use strict";
@@ -13728,4 +13728,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.980fc036e6d686ab0e52.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.0a235f5944fb1d4af9cb.js.map

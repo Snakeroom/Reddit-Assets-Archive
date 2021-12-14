@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.5aaa034486b47d7ce2de.js
-// Retrieved at 12/14/2021, 1:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.ab1a9eff0bf6fbf617cd.js
+// Retrieved at 12/14/2021, 5:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -52,16 +52,16 @@
 			const p = Object(i.a)(e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.Qd
+					experimentName: u.Nd
 				});
-				return Object(u.uf)(t) ? void 0 : t
+				return Object(u.qf)(t) ? void 0 : t
 			}, e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.Rd
+					experimentName: u.Od
 				});
-				return Object(u.uf)(t) ? void 0 : t
-			}, (e, t) => e === u.Ud.Enabled && t === u.Ud.Enabled);
+				return Object(u.qf)(t) ? void 0 : t
+			}, (e, t) => e === u.Rd.Enabled && t === u.Rd.Enabled);
 			var h = n("./src/config.ts");
 			var b = n("./src/reddit/selectors/user.ts");
 			const f = e => {
@@ -612,8 +612,8 @@
 				}, [t]);
 				const Y = Object(r.useCallback)(() => y(!0), [y]),
 					W = 0 === I.length,
-					K = x || W,
-					q = Object(r.useRef)(((e, t) => `${t}_${e}_count_anim`)(f, n));
+					q = x || W,
+					K = Object(r.useRef)(((e, t) => `${t}_${e}_count_anim`)(f, n));
 				return s.a.createElement(s.a.Fragment, null, !h && s.a.createElement("div", {
 					className: l.a.countAnimation
 				}, T.map((e, t) => {
@@ -637,7 +637,7 @@
 						} : {
 							transform: "translateY(0)"
 						}
-					}, K ? s.a.createElement("span", {
+					}, q ? s.a.createElement("span", {
 						className: l.a.digitDelta
 					}, e) : n.map((e, t) => {
 						const r = 0 === t || t === n.length - 1;
@@ -655,7 +655,7 @@
 					variables: _,
 					onData: h ? m : b,
 					queryKey: v,
-					uniqueKey: q.current
+					uniqueKey: K.current
 				}))
 			}
 		},
@@ -1563,8 +1563,8 @@
 				B = n("./src/reddit/icons/fonts/index.tsx"),
 				Y = n("./src/reddit/helpers/styles/mixins/index.m.less"),
 				W = n.n(Y),
-				K = n("./src/reddit/components/PublicAccessNetwork/ListingUnit/index.m.less"),
-				q = n.n(K);
+				q = n("./src/reddit/components/PublicAccessNetwork/ListingUnit/index.m.less"),
+				K = n.n(q);
 			const {
 				fbt: z
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), J = 20, Z = l.nc, X = l.nc, Q = Object(c.a)(D.a, {
@@ -1608,11 +1608,11 @@
 					pageSize: 1
 				}))
 			})), ee = () => s.a.createElement("h3", {
-				className: q.a.title
+				className: K.a.title
 			}, z._("Top livestream", null, {
 				hk: "4od1tZ"
 			})), te = () => s.a.createElement("p", {
-				className: q.a.description
+				className: K.a.description
 			}, z._("Live from the internet, this is RPAN", null, {
 				hk: "Bnxtg"
 			}));
@@ -1780,104 +1780,104 @@
 						layout: e
 					} = this.props, t = e === O.g.Classic ? this.renderClassicContent() : e === O.g.Compact ? this.renderCompactContent() : this.renderLargeContent();
 					return s.a.createElement("div", {
-						className: Object(d.a)(q.a.container, {
+						className: Object(d.a)(K.a.container, {
 							[W.a.largeAndMediumPostStyles]: e === O.g.Large || e === O.g.Medium,
 							[W.a.classicPostStyles]: e === O.g.Classic,
 							[W.a.compactPostStyles]: e === O.g.Compact,
-							[q.a.large]: e === O.g.Large || e === O.g.Medium,
-							[q.a.classic]: e === O.g.Classic,
-							[q.a.compact]: e === O.g.Compact
+							[K.a.large]: e === O.g.Large || e === O.g.Medium,
+							[K.a.classic]: e === O.g.Classic,
+							[K.a.compact]: e === O.g.Compact
 						}, this.props.className)
 					}, e !== O.g.Large && s.a.createElement(F.b, {
-						className: q.a.leftRail,
+						className: K.a.leftRail,
 						withoutComputedStyles: e === O.g.Compact
 					}, s.a.createElement(re, {
 						isVertical: !0
 					}), e === O.g.Compact && s.a.createElement(re, {
 						isVertical: !1
 					})), s.a.createElement(M.a, {
-						className: q.a.backgroundWrapper,
+						className: K.a.backgroundWrapper,
 						onClick: this.onHeaderClicked
 					}, t))
 				}
 				renderTitleAndDescription(e) {
 					return s.a.createElement("div", {
-						className: q.a.titleAndDescriptionContainer
+						className: K.a.titleAndDescriptionContainer
 					}, s.a.createElement(H.a, {
 						to: this.props.location
 					}, s.a.createElement(ee, null), e && s.a.createElement(te, null)))
 				}
 				renderLargeContent() {
 					return s.a.createElement(s.a.Fragment, null, s.a.createElement("div", {
-						className: q.a.header
+						className: K.a.header
 					}, this.renderTitleAndDescription(), s.a.createElement("div", {
-						className: q.a.flatListContainer
+						className: K.a.flatListContainer
 					}, s.a.createElement(ie, {
 						onClick: this.onHideUnitClicked
 					}))), s.a.createElement("div", {
-						className: q.a.body,
+						className: K.a.body,
 						ref: this.observableElement
 					}, s.a.createElement(H.a, {
 						to: this.props.location,
 						onClick: this.onStreamClicked,
-						className: q.a.previewLink,
+						className: K.a.previewLink,
 						tabIndex: 0
 					}, s.a.createElement("div", {
-						className: q.a.previewContainer
+						className: K.a.previewContainer
 					}, this.renderThumbnail()), this.renderInfo())))
 				}
 				renderClassicContent() {
 					return s.a.createElement("div", {
-						className: q.a.body,
+						className: K.a.body,
 						ref: this.observableElement
 					}, s.a.createElement(H.a, {
 						to: this.props.location,
 						onClick: this.onStreamClicked
 					}, s.a.createElement("div", {
-						className: q.a.thumbnailContainer
+						className: K.a.thumbnailContainer
 					}, this.renderThumbnail())), s.a.createElement("div", {
-						className: q.a.main
+						className: K.a.main
 					}, this.renderLiveStatus(), this.renderTitleAndDescription(!0), s.a.createElement("div", {
-						className: q.a.flatListContainer
+						className: K.a.flatListContainer
 					}, s.a.createElement(se, {
 						onClick: this.onHeaderClicked
 					}), s.a.createElement(P.a, {
-						className: q.a.flatlistSeparator
+						className: K.a.flatlistSeparator
 					}), s.a.createElement("div", null, s.a.createElement(oe, {
 						onClick: this.onHideUnitClicked
 					})))))
 				}
 				renderCompactContent() {
 					return s.a.createElement("div", {
-						className: q.a.body,
+						className: K.a.body,
 						ref: this.observableElement
 					}, s.a.createElement("div", {
-						className: q.a.main
+						className: K.a.main
 					}, s.a.createElement(se, {
 						onClick: this.onHeaderClicked
 					}), this.renderLiveStatus(), this.renderTitleAndDescription(!0), s.a.createElement("div", {
-						className: q.a.flatListContainer
+						className: K.a.flatListContainer
 					}, s.a.createElement(ie, {
 						onClick: this.onHideUnitClicked
 					}))))
 				}
 				renderInfo() {
 					if (this.props.stream && this.state.isReady) return s.a.createElement("div", {
-						className: q.a.infoContainer
+						className: K.a.infoContainer
 					}, this.renderExpandIcon(), this.renderLiveStatus(), this.renderWatcherCount())
 				}
 				renderExpandIcon() {
 					return s.a.createElement("div", {
-						className: q.a.bigExpando
+						className: K.a.bigExpando
 					}, s.a.createElement(B.a, {
 						name: "expand",
-						className: q.a.bigExpandoIcon
+						className: K.a.bigExpandoIcon
 					}))
 				}
 				renderLiveStatus() {
 					return this.isLive ? s.a.createElement("span", {
-						className: Object(d.a)(q.a.liveStatus, {
-							[q.a.compact]: this.props.layout === O.g.Compact
+						className: Object(d.a)(K.a.liveStatus, {
+							[K.a.compact]: this.props.layout === O.g.Compact
 						})
 					}, s.a.createElement(_.g, null)) : null
 				}
@@ -1886,7 +1886,7 @@
 					if (!this.isLive) return null;
 					const t = Math.max(1, (null === (e = this.props.stream) || void 0 === e ? void 0 : e.continuous_watchers) || 0);
 					return s.a.createElement("span", {
-						className: q.a.watchingCount
+						className: K.a.watchingCount
 					}, z._({
 						"*": "{number} watchers",
 						_1: "1 watcher"
@@ -1896,8 +1896,8 @@
 				}
 				renderThumbnail() {
 					return s.a.createElement("div", {
-						className: Object(d.a)(q.a.thumbnail, {
-							[q.a.loading]: !this.state.isReady
+						className: Object(d.a)(K.a.thumbnail, {
+							[K.a.loading]: !this.state.isReady
 						})
 					}, this.renderVideo())
 				}
@@ -2012,11 +2012,11 @@
 			}
 			const re = e => s.a.createElement(N.a, {
 					className: Object(d.a)({
-						[q.a.verticalVotes]: e.isVertical,
-						[q.a.horizontalVotes]: !e.isVertical
+						[K.a.verticalVotes]: e.isVertical,
+						[K.a.horizontalVotes]: !e.isVertical
 					})
 				}, s.a.createElement(G.a, {
-					className: q.a.score,
+					className: K.a.score,
 					isScoreHidden: !0,
 					score: 0,
 					voteState: S.a.notVoted
@@ -2024,11 +2024,11 @@
 				se = ({
 					onClick: e
 				}) => s.a.createElement("button", {
-					className: q.a.expandoButton,
+					className: K.a.expandoButton,
 					onClick: e
 				}, s.a.createElement(B.a, {
 					name: "expand",
-					className: q.a.expandoIcon
+					className: K.a.expandoIcon
 				})),
 				oe = ({
 					onClick: e,
@@ -2048,16 +2048,16 @@
 				ie = ({
 					onClick: e
 				}) => s.a.createElement(L.b, {
-					className: q.a.overflowMenu,
-					dropdownClassName: q.a.overflowDropdown,
+					className: K.a.overflowMenu,
+					dropdownClassName: K.a.overflowDropdown,
 					dropdownId: "rpan-du-overflow"
 				}, s.a.createElement(V.b, {
-					className: q.a.overflowItem,
+					className: K.a.overflowItem,
 					displayText: z._("Show me less of this", null, {
 						hk: "2c4uFK"
 					}),
-					iconWrapperClassName: q.a.overflowItemIconWrapper,
-					textClassName: q.a.overflowItemText,
+					iconWrapperClassName: K.a.overflowItemIconWrapper,
+					textClassName: K.a.overflowItemText,
 					onClick: e
 				}, s.a.createElement(B.a, {
 					name: "hide"
@@ -4049,7 +4049,7 @@
 						postId: t
 					}) || Object(i.H)(e))(e, t),
 					experimentName: r.P
-				}) === r.dd
+				}) === r.ad
 			}
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, n) {
@@ -4180,4 +4180,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.5aaa034486b47d7ce2de.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.ab1a9eff0bf6fbf617cd.js.map

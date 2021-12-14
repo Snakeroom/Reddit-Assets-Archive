@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.4643ebb66df11601aa1e.js
-// Retrieved at 12/14/2021, 1:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.b77a2a3bd98cbeaf2c16.js
+// Retrieved at 12/14/2021, 5:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, r) {
@@ -2537,10 +2537,10 @@
 				o = r("./src/reddit/selectors/experiments/index.ts"),
 				a = r("./src/reddit/selectors/experiments/utils.ts");
 			const d = Object(s.a)(e => Object(i.c)(e, {
-					experimentName: n.zd,
+					experimentName: n.wd,
 					experimentEligibilitySelector: o.e
 				}), a.a),
-				c = Object(s.a)(d, e => e === n.Cd.Enabled)
+				c = Object(s.a)(d, e => e === n.zd.Enabled)
 		},
 		"./src/reddit/selectors/experiments/inboxRedesign.ts": function(e, t, r) {
 			"use strict";
@@ -2569,46 +2569,46 @@
 				o = r("./src/reddit/selectors/experiments/index.ts"),
 				a = r("./src/reddit/selectors/experiments/utils.ts");
 			const d = Object(s.a)(e => Object(i.c)(e, {
-					experimentName: n.Db,
-					experimentEligibilitySelector: o.e
-				}), a.a),
-				c = Object(s.a)(d, e => e === n.Id.Enabled),
-				u = Object(s.a)(e => Object(i.c)(e, {
-					experimentName: n.Bd,
-					experimentEligibilitySelector: o.e
-				}), a.a),
-				l = Object(s.a)(c, u, (e, t) => e && t === n.Hd.Enabled),
-				b = Object(s.a)(e => Object(i.c)(e, {
-					experimentName: n.Ub,
-					experimentEligibilitySelector: o.e
-				}), a.a),
-				m = Object(s.a)(c, b, (e, t) => e && t === n.kc.Enabled),
-				p = Object(s.a)(e => Object(i.c)(e, {
-					experimentName: n.Ab,
-					experimentEligibilitySelector: o.e
-				}), a.a),
-				f = Object(s.a)(p, e => e === n.Ed.Banner_1st_time),
-				h = Object(s.a)(p, e => e === n.Ed.Tooltip_persist),
-				O = Object(s.a)(p, e => e === n.Ed.Tooltip_1st_time),
-				g = Object(s.a)(e => Object(i.c)(e, {
 					experimentName: n.Bb,
 					experimentEligibilitySelector: o.e
 				}), a.a),
-				y = Object(s.a)(g, e => e === n.Fd.ContinuousScroll),
-				_ = Object(s.a)(e => Object(i.c)(e, {
-					experimentName: n.Cb,
+				c = Object(s.a)(d, e => e === n.Fd.Enabled),
+				u = Object(s.a)(e => Object(i.c)(e, {
+					experimentName: n.yd,
 					experimentEligibilitySelector: o.e
 				}), a.a),
-				j = Object(s.a)(_, e => e === n.Gd.Enabled),
+				l = Object(s.a)(c, u, (e, t) => e && t === n.Ed.Enabled),
+				b = Object(s.a)(e => Object(i.c)(e, {
+					experimentName: n.Rb,
+					experimentEligibilitySelector: o.e
+				}), a.a),
+				m = Object(s.a)(c, b, (e, t) => e && t === n.hc.Enabled),
+				p = Object(s.a)(e => Object(i.c)(e, {
+					experimentName: n.yb,
+					experimentEligibilitySelector: o.e
+				}), a.a),
+				f = Object(s.a)(p, e => e === n.Bd.Banner_1st_time),
+				h = Object(s.a)(p, e => e === n.Bd.Tooltip_persist),
+				O = Object(s.a)(p, e => e === n.Bd.Tooltip_1st_time),
+				g = Object(s.a)(e => Object(i.c)(e, {
+					experimentName: n.zb,
+					experimentEligibilitySelector: o.e
+				}), a.a),
+				y = Object(s.a)(g, e => e === n.Cd.ContinuousScroll),
+				_ = Object(s.a)(e => Object(i.c)(e, {
+					experimentName: n.Ab,
+					experimentEligibilitySelector: o.e
+				}), a.a),
+				j = Object(s.a)(_, e => e === n.Dd.Enabled),
 				v = Object(s.a)(e => Object(i.c)(e, {
-					experimentName: n.Ob,
+					experimentName: n.Mb,
 					experimentEligibilitySelector: () => !0
 				}), a.a),
-				P = Object(s.a)(v, e => e === n.jb.Enabled)
+				P = Object(s.a)(v, e => e === n.ib.Enabled)
 		},
 		"./src/redditGQL/operations/BadgeIndicators.json": function(e) {
 			e.exports = JSON.parse('{"id":"9d105ce5d71a"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.4643ebb66df11601aa1e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.b77a2a3bd98cbeaf2c16.js.map

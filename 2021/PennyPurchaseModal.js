@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.3670a3d8163c519099e4.js
-// Retrieved at 12/14/2021, 1:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.fdc7b9b39b56c6ce957b.js
+// Retrieved at 12/14/2021, 5:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PennyPurchaseModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, a) {
@@ -50,9 +50,9 @@
 			})), a.d(t, "g", (function() {
 				return S
 			})), a.d(t, "f", (function() {
-				return I
-			})), a.d(t, "d", (function() {
 				return M
+			})), a.d(t, "d", (function() {
+				return I
 			})), a.d(t, "c", (function() {
 				return T
 			})), a.d(t, "a", (function() {
@@ -133,8 +133,8 @@
 					let x, O, _ = "";
 					try {
 						_ = await d(w(a, n, v))
-					} catch (I) {
-						return p.c.captureException(I), void(I.message && d(Object(g.stripeApiError)(I.message)))
+					} catch (M) {
+						return p.c.captureException(M), void(M.message && d(Object(g.stripeApiError)(M.message)))
 					}
 					d(Object(g.stripeTokenPending)());
 					const S = Object(y.y)(u);
@@ -175,8 +175,8 @@
 						})) : h && d(H({
 							user: P
 						})))
-					} catch (I) {
-						p.c.captureException(I), d(N)
+					} catch (M) {
+						p.c.captureException(M), d(N)
 					}
 				}, S = (e, t, a, r, n) => async (s, o, {
 					gqlContext: i
@@ -250,7 +250,7 @@
 						p.c.captureException(_)
 					}
 					return s(Object(g.paypalApiError)(O())), null
-				}, I = (e, t) => async (a, r, {
+				}, M = (e, t) => async (a, r, {
 					gqlContext: n
 				}) => {
 					var s;
@@ -266,7 +266,7 @@
 						p.c.captureException(o)
 					}
 					return a(Object(g.paypalApiError)(O())), !1
-				}, M = () => async (e, t, {
+				}, I = () => async (e, t, {
 					gqlContext: a
 				}) => {
 					e(Object(g.savedCardsPending)());
@@ -480,7 +480,7 @@
 			const S = Object(j.c)({
 				isGild: e => !!Object(w.s)(e)
 			});
-			class I extends o.a.Component {
+			class M extends o.a.Component {
 				constructor() {
 					super(...arguments), this.onPayment = () => this.props.createPayment(), this.onAuthorize = e => {
 						const {
@@ -519,7 +519,7 @@
 					}))
 				}
 			}
-			const M = Object(E.b)(S, (e, t) => ({
+			const I = Object(E.b)(S, (e, t) => ({
 				createPayment: () => "coinPackage" in t ? e(Object(N.f)(t.coinPackage)) : "awardId" in t ? e(Object(_.d)(t.awardId, t.pennies, t.thingId)) : void 0,
 				executePayment: (a, r) => {
 					if ("coinPackage" in t) {
@@ -527,9 +527,9 @@
 						e(Object(N.g)(r, t.coinPackage))
 					} else "awardId" in t && e(Object(_.c)(r))
 				}
-			}))(I);
+			}))(M);
 			var T = Object(O.a)({
-					getComponent: () => Object(k.c)().then(() => M),
+					getComponent: () => Object(k.c)().then(() => I),
 					ErrorComponent: () => null,
 					LoadingComponent: () => null
 				}),
@@ -1064,7 +1064,7 @@
 					}))
 				}
 			}
-			const I = Object(c.a)(S);
+			const M = Object(c.a)(S);
 			t.default = _(Object(p.c)(class extends n.a.PureComponent {
 				constructor() {
 					super(...arguments), this.onTryCloseModal = () => {
@@ -1086,7 +1086,7 @@
 							paddingBottom: 12
 						} : {}
 					};
-					return n.a.createElement(I, w({}, this.props, {
+					return n.a.createElement(M, w({}, this.props, {
 						className: Object(i.a)(this.props.className, k.a.pennyPurchaseModal),
 						onCloseModal: this.onCloseModal,
 						onOverlayClick: this.onTryCloseModal,
@@ -1338,7 +1338,7 @@
 						return null
 				}
 			};
-			class I extends n.a.PureComponent {
+			class M extends n.a.PureComponent {
 				constructor() {
 					super(...arguments), this.state = {
 						showConfirmText: !1
@@ -1395,7 +1395,7 @@
 					})))
 				}
 			}
-			var M = I;
+			var I = M;
 			const T = Object(o.c)({
 					rememberCard: m.v,
 					savedCard: e => Object(m.x)(e)[0],
@@ -1429,7 +1429,7 @@
 					}, m && n.a.createElement(l.a, {
 						className: O.a.loader,
 						sizePx: 60
-					}), u && o && n.a.createElement("form", null, n.a.createElement(M, {
+					}), u && o && n.a.createElement("form", null, n.a.createElement(I, {
 						nightmode: t,
 						onDelete: a,
 						savedCard: o
@@ -1804,7 +1804,7 @@
 				p = a("./node_modules/react-redux/es/index.js"),
 				h = a("./src/reddit/constants/experiments.ts"),
 				b = a("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const g = Object(b.a)(h.Ic);
+			const g = Object(b.a)(h.Fc);
 			let C = null;
 
 			function y() {
@@ -1966,4 +1966,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PennyPurchaseModal.3670a3d8163c519099e4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PennyPurchaseModal.fdc7b9b39b56c6ce957b.js.map
