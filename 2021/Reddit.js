@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.b266086c19b405417b92.js
-// Retrieved at 12/14/2021, 12:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.17494faa5f67519fd2da.js
+// Retrieved at 12/14/2021, 1:10:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -5872,7 +5872,7 @@
 					B = Object(p.e)(e => Object(Kt.e)(e, {
 						pageLayer: t
 					})),
-					G = Object(p.e)(Cr.a),
+					G = Object(p.e)(e => Object(Cr.a)(e, Or.d.dropdown)),
 					H = Object(p.e)(xr.u),
 					q = Object(p.e)(yt.eb),
 					W = Object(tr.a)(U),
@@ -5919,7 +5919,7 @@
 						}, z)
 					},
 					te = async () => {
-						G.length || d || (l(!0), await (() => S(Object(mr.b)()))(), l(!1))
+						G.length || d || (l(!0), await (() => S(Object(mr.b)(Or.d.dropdown)))(), l(!1))
 					}, ne = e => {
 						T && M && O(Object(Bt.Lb)({
 							...e,
@@ -20679,13 +20679,6 @@
 				l = Object(s.a)(i.rb, e => !(!e || !e.includes(r.a.Google))),
 				u = Object(s.a)(a.a, e => !!e && [o.b, o.d, o.e, o.g].includes(e))
 		},
-		"./src/reddit/selectors/trending.ts": function(e, t, n) {
-			"use strict";
-			n.d(t, "a", (function() {
-				return s
-			}));
-			const s = e => e.trending.models
-		},
 		"./src/redditGQL/operations/BlockAwarder.json": function(e) {
 			e.exports = JSON.parse('{"id":"9769ffbb7031"}')
 		},
@@ -20736,4 +20729,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit~StandalonePostPage", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Governance~ModListing~Reddit~Subreddit", "Chat~Governance~Reddit", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.b266086c19b405417b92.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.17494faa5f67519fd2da.js.map

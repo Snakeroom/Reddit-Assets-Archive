@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.cd1e06c93190618e299b.js
-// Retrieved at 12/14/2021, 12:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.fcf6a792c7a3677e9d4f.js
+// Retrieved at 12/14/2021, 1:10:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3327,10 +3327,10 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("154719"),
+				buildNumber: Object(r.c)("154723"),
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
-				buildTimestamp: Object(r.b)("1639502154"),
+				buildTimestamp: Object(r.b)("1639503627"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -5900,14 +5900,14 @@
 					}))
 				},
 				$ = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c8c95b9a18f5464c17016fccc596b708f6325d6ef-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %ca1f1f1e893c3388ab0d8c57d910462bbdf80280f-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "8c95b9a18f5464c17016fccc596b708f6325d6ef-production",
+						release: "a1f1f1e893c3388ab0d8c57d910462bbdf80280f-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6424,7 +6424,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "8c95b9a18f5464c17016fccc596b708f6325d6ef-production",
+						releaseClient: "a1f1f1e893c3388ab0d8c57d910462bbdf80280f-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -28436,28 +28436,33 @@
 		},
 		"./src/reddit/models/Search/index.ts": function(e, t, i) {
 			"use strict";
-			var n, r;
+			var n, r, s;
 			i.d(t, "c", (function() {
 					return n
-				})), i.d(t, "b", (function() {
-					return r
-				})), i.d(t, "a", (function() {
-					return s
 				})), i.d(t, "d", (function() {
+					return r
+				})), i.d(t, "b", (function() {
+					return s
+				})), i.d(t, "a", (function() {
 					return o
+				})), i.d(t, "e", (function() {
+					return d
 				})),
 				function(e) {
 					e.trending = "trending", e.typeahead = "typeahead", e.recent = "recent"
 				}(n || (n = {})),
 				function(e) {
+					e.tile = "tile", e.dropdown = "dropdown"
+				}(r || (r = {})),
+				function(e) {
 					e.subredditOrProfile = "subredditOrProfile", e.text = "text"
-				}(r || (r = {}));
-			const s = {
+				}(s || (s = {}));
+			const o = {
 					searchQuery: "",
 					section: n.recent,
-					type: r.text
+					type: s.text
 				},
-				o = e => ({
+				d = e => ({
 					enableFollowers: !e.displayText.startsWith("u/") || e.acceptFollowers,
 					displayInfo: {
 						iconUrl: e.icon.url,
@@ -28471,7 +28476,7 @@
 					isTypeaheadSuggestion: !0,
 					searchQuery: e.displayText,
 					section: n.typeahead,
-					type: r.subredditOrProfile
+					type: s.subredditOrProfile
 				})
 		},
 		"./src/reddit/models/SearchDiscoveryUnit/index.ts": function(e, t, i) {
@@ -44848,4 +44853,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.cd1e06c93190618e299b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.fcf6a792c7a3677e9d4f.js.map
