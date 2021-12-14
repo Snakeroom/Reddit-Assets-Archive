@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.f5e54b0c589d18b92828.js
-// Retrieved at 12/14/2021, 11:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.dcd06e9bc7201326c291.js
+// Retrieved at 12/14/2021, 12:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditMentionWithIcon"], {
 		"./src/reddit/actions/subredditMention/constants.ts": function(e, t, s) {
@@ -2095,43 +2095,43 @@
 				r = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				o = s("./src/reddit/selectors/experiments/index.ts");
 			const c = Object(n.a)(e => Object(r.c)(e, {
-					experimentName: i.Fb,
+					experimentName: i.Eb,
 					experimentEligibilitySelector: o.e
 				}), e => e === i.X.Enabled),
 				d = Object(n.a)(e => Object(r.c)(e, {
-					experimentName: i.Gb,
+					experimentName: i.Fb,
 					experimentEligibilitySelector: o.e
 				}), e => e === i.Y.Enabled),
 				a = Object(n.a)(e => Object(r.c)(e, {
-					experimentName: i.Ib,
+					experimentName: i.Hb,
 					experimentEligibilitySelector: o.e
 				}), e => e === i.ab.Enabled),
 				l = Object(n.a)(e => Object(r.c)(e, {
-					experimentName: i.Jb,
+					experimentName: i.Ib,
 					experimentEligibilitySelector: o.e
 				}), e => e === i.bb.Enabled),
 				u = Object(n.a)(e => Object(r.c)(e, {
-					experimentName: i.Nb,
+					experimentName: i.Mb,
 					experimentEligibilitySelector: o.e
 				}), e => e === i.fb.Enabled),
 				b = Object(n.a)(e => Object(r.c)(e, {
-					experimentName: i.Hb,
+					experimentName: i.Gb,
 					experimentEligibilitySelector: o.e
 				}), e => e === i.Z.Enabled),
 				m = Object(n.a)(e => Object(r.c)(e, {
-					experimentName: i.Kb,
+					experimentName: i.Jb,
 					experimentEligibilitySelector: o.e
 				}), e => e === i.cb.Enabled),
 				p = Object(n.a)(e => Object(r.c)(e, {
-					experimentName: i.Lb,
+					experimentName: i.Kb,
 					experimentEligibilitySelector: o.e
 				}), e => e === i.db.Enabled),
 				h = Object(n.a)(e => Object(r.c)(e, {
-					experimentName: i.Ob,
+					experimentName: i.Nb,
 					experimentEligibilitySelector: o.e
 				}), e => e === i.gb.Enabled),
 				f = Object(n.a)(e => Object(r.c)(e, {
-					experimentName: i.Mb,
+					experimentName: i.Lb,
 					experimentEligibilitySelector: o.e
 				}), e => e === i.eb.Enabled)
 		},
@@ -2146,4 +2146,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.f5e54b0c589d18b92828.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.dcd06e9bc7201326c291.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.1f8b233cd01ce2542c64.js
-// Retrieved at 12/13/2021, 8:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.bb9a903b398da9321424.js
+// Retrieved at 12/14/2021, 12:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -508,7 +508,7 @@
 			})), r.d(t, "toggleHiddenSubreddit", (function() {
 				return G
 			})), r.d(t, "hideSubreddit", (function() {
-				return Y
+				return X
 			})), r.d(t, "unhideSubreddit", (function() {
 				return z
 			}));
@@ -674,7 +674,7 @@
 					r(a(e));
 					const p = await u(n(), i.displayText, e);
 					p.ok ? (await r(B(l.routeMatch.match, !0)), r(d(e))) : r(c(p.body))
-				}, Y = e => G(e, !0), z = e => G(e, !1)
+				}, X = e => G(e, !0), z = e => G(e, !1)
 		},
 		"./src/reddit/actions/pages/powerups.ts": function(e, t, r) {
 			"use strict";
@@ -2180,7 +2180,7 @@
 				apiError: e => e.modListingPage.filteredSubreddits.api.error,
 				isApiPending: K
 			});
-			class Y extends i.a.Component {
+			class X extends i.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						subredditInput: ""
@@ -2226,8 +2226,8 @@
 			}
 			var z = Object(a.b)(G, e => ({
 					hide: t => e(Object(p.hideSubreddit)(t))
-				}))(Object(B.c)(Y)),
-				X = r("./src/lib/lessComponent.tsx"),
+				}))(Object(B.c)(X)),
+				Y = r("./src/lib/lessComponent.tsx"),
 				Z = r("./src/reddit/components/SubredditIcon/index.tsx"),
 				$ = r("./src/lib/classNames/index.ts"),
 				ee = r("./src/reddit/icons/fonts/helpers.tsx");
@@ -2238,7 +2238,7 @@
 				se = r("./src/reddit/selectors/subreddit.ts"),
 				ne = r("./src/reddit/components/ModListingSidebar/HideCommunities/SubredditsList/SubredditsListRow/index.m.less"),
 				oe = r.n(ne);
-			const ie = X.a.wrapped(Z.b, "SubredditIcon", oe.a),
+			const ie = Y.a.wrapped(Z.b, "SubredditIcon", oe.a),
 				ae = Object(d.c)({
 					isApiPending: K,
 					subredditOrProfile: (e, t) => {
@@ -2823,7 +2823,7 @@
 				}
 			};
 			const G = {};
-			var Y = (e = G, t) => {
+			var X = (e = G, t) => {
 					switch (t.type) {
 						case W.b: {
 							const {
@@ -2846,9 +2846,9 @@
 				},
 				z = Object(s.c)({
 					itemOrder: J,
-					models: Y
+					models: X
 				});
-			var X = (e = null, t) => {
+			var Y = (e = null, t) => {
 				switch (t.type) {
 					case W.b: {
 						const {
@@ -2925,7 +2925,7 @@
 				},
 				oe = Object(s.c)({
 					actions: z,
-					endCursor: X,
+					endCursor: Y,
 					hasNextPage: $,
 					hasPreviousPage: te,
 					moderators: se,
@@ -3407,7 +3407,7 @@
 					userOrder: Qe
 				}),
 				Ge = r("./src/reddit/actions/bulkActions/constants.ts");
-			var Ye = (e = null, t) => {
+			var Xe = (e = null, t) => {
 					switch (t.type) {
 						case Ge.c:
 						case Ge.b:
@@ -3419,7 +3419,7 @@
 					}
 				},
 				ze = r("./src/reddit/actions/modQueue/constants.ts");
-			var Xe = (e = !1, t) => {
+			var Ye = (e = !1, t) => {
 					switch (t.type) {
 						case Ge.c:
 							return !0;
@@ -3433,8 +3433,8 @@
 					}
 				},
 				Ze = Object(s.c)({
-					error: Ye,
-					pending: Xe
+					error: Xe,
+					pending: Ye
 				});
 			const $e = {};
 			var et = (e = $e, t) => {
@@ -3917,8 +3917,8 @@
 						return e
 				}
 			};
-			const Yt = {};
-			var zt = (e = Yt, t) => {
+			const Xt = {};
+			var zt = (e = Xt, t) => {
 					switch (t.type) {
 						case ze.v: {
 							const {
@@ -3936,7 +3936,7 @@
 							return e
 					}
 				},
-				Xt = Object(s.c)({
+				Yt = Object(s.c)({
 					api: Qt,
 					itemOrder: Gt,
 					loadMore: zt
@@ -3948,7 +3948,7 @@
 					modqueue: Ct,
 					reports: Ft,
 					spam: Kt,
-					unmoderated: Xt
+					unmoderated: Yt
 				});
 			var $t = (e = null, t) => {
 				switch (t.type) {
@@ -4209,14 +4209,14 @@
 			var s = r("./src/reddit/constants/experiments.ts"),
 				n = r("./src/reddit/helpers/chooseVariant/index.ts");
 			const o = e => Object(n.c)(e, {
-					experimentName: s.Yd,
+					experimentName: s.Wd,
 					experimentEligibilitySelector: n.a
-				}) === s.he.Enabled,
+				}) === s.fe.Enabled,
 				i = e => Object(n.c)(e, {
-					experimentName: s.Zd,
+					experimentName: s.Xd,
 					experimentEligibilitySelector: n.a,
 					expEventOverride: !1
-				}) === s.ie.Enabled
+				}) === s.ge.Enabled
 		},
 		"./src/reddit/selectors/modQueue.ts": function(e, t, r) {
 			"use strict";
@@ -4280,4 +4280,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.1f8b233cd01ce2542c64.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.bb9a903b398da9321424.js.map

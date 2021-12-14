@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.586e6a3c54ef34a7af1e.js
-// Retrieved at 12/13/2021, 2:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.cc8e5fb3ca9ead66eadb.js
+// Retrieved at 12/14/2021, 12:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/lib/delay/index.ts": function(e, t, n) {
@@ -219,7 +219,7 @@
 					pending: B
 				});
 			const U = {};
-			var T = (e = U, t) => {
+			var A = (e = U, t) => {
 					switch (t.type) {
 						case j.n: {
 							const {
@@ -235,10 +235,10 @@
 							return e
 					}
 				},
-				A = n("./src/reddit/actions/inContextModeration.ts");
-			var L = (e = null, t) => {
+				L = n("./src/reddit/actions/inContextModeration.ts");
+			var T = (e = null, t) => {
 				switch (t.type) {
-					case A.a:
+					case L.a:
 						return t.payload;
 					default:
 						return e
@@ -368,8 +368,8 @@
 				},
 				q = Object(w.c)({
 					api: S,
-					fetchedTokens: T,
-					inContext: L,
+					fetchedTokens: A,
+					inContext: T,
 					loadMore: F,
 					models: R,
 					search: G,
@@ -743,9 +743,9 @@
 				}, s.a.createElement("g", null, s.a.createElement("path", {
 					d: "M6.42528593,9.54562407 C4.41043013,8.02026355 3.10790651,5.60355545 3.10790651,2.88165092 L3.10790651,2.79711586 L3.19244157,2.79711586 C5.9143461,2.79711586 8.33136499,4.09963948 9.85641472,6.11449528 C8.02399304,6.25279712 6.56358777,7.7128916 6.42528593,9.54562407 Z M6.42528593,10.2560915 C6.56358777,12.088824 8.02399304,13.5489184 9.85641472,13.6872203 C8.33136499,15.7020761 5.9143461,17.0045997 3.19244157,17.0045997 L3.10790651,17.0045997 L3.10790651,16.9200646 C3.10790651,14.1981601 4.41043013,11.781452 6.42528593,10.2560915 Z M13.6872203,10.2560915 C15.7020761,11.781452 17.0045997,14.1981601 17.0045997,16.9200646 L17.0045997,17.0045997 L16.9200646,17.0045997 C14.1981601,17.0045997 11.7811412,15.7020761 10.2560915,13.6872203 C12.0885132,13.5489184 13.5486077,12.088824 13.6872203,10.2560915 Z M16.9200646,2.79711586 L17.0045997,2.79711586 L17.0045997,2.88165092 C17.0045997,5.60324465 15.7020761,8.02026355 13.6872203,9.54562407 C13.5489184,7.7128916 12.0885132,6.25279712 10.2560915,6.11449528 C11.7811412,4.09963948 14.1981601,2.79711586 16.9200646,2.79711586 Z M19.9403282,9.84895574 L20,9.90862755 L19.9403282,9.96829935 C18.9346096,10.9740179 17.7346469,11.6624192 16.46227,12.0474888 C15.9659373,11.2534187 15.3446668,10.5308304 14.6071606,9.90862755 C15.3446668,9.28642466 15.9659373,8.5638364 16.46227,7.76976629 C17.7346469,8.1548359 18.9346096,8.8432372 19.9403282,9.84895574 Z M9.90862755,5.39283938 C9.28642466,4.65533317 8.5638364,4.03406266 7.76976629,3.53772999 C8.1548359,2.26535306 8.8432372,1.06539035 9.84895574,0.0596718051 L9.90862755,0 L9.96829935,0.0596718051 C10.9740179,1.06539035 11.6624192,2.26535306 12.0474888,3.53772999 C11.2534187,4.03406266 10.5308304,4.65533317 9.90862755,5.39283938 Z M5.39283938,9.90862755 C4.65533317,10.5308304 4.03406266,11.2534187 3.53772999,12.0474888 C2.26535306,11.6624192 1.06539035,10.9740179 0.0596718051,9.96829935 L0,9.90862755 L0.0596718051,9.84895574 C1.06539035,8.8432372 2.26535306,8.1548359 3.53772999,7.76976629 C4.03406266,8.5638364 4.65533317,9.28642466 5.39283938,9.90862755 Z M9.90862755,14.6071606 C10.5308304,15.3446668 11.2534187,15.9659373 12.0474888,16.46227 C11.6624192,17.7346469 10.9740179,18.9346096 9.96829935,19.9403282 L9.90862755,20 L9.84895574,19.9403282 C8.8432372,18.9346096 8.1548359,17.7346469 7.76976629,16.46227 C8.5638364,15.9659373 9.28642466,15.3446668 9.90862755,14.6071606 Z"
 				}))),
-				T = n("./src/reddit/icons/svgs/Premium/index.tsx"),
-				A = n("./src/reddit/models/Gold/Award.ts"),
-				L = n("./src/reddit/models/User/index.ts"),
+				A = n("./src/reddit/icons/svgs/Premium/index.tsx"),
+				L = n("./src/reddit/models/Gold/Award.ts"),
+				T = n("./src/reddit/models/User/index.ts"),
 				H = n("./src/reddit/components/HumanDate/index.tsx"),
 				F = n("./src/reddit/components/ProfileIdCard/AwardedLastMonth.tsx"),
 				D = n("./src/reddit/components/ProfileIdCard/UserProfileOverview/UserSnoovatar/index.tsx"),
@@ -879,7 +879,7 @@
 				ie = C.a.wrapped(N.a, "SubscribeButton", se.a),
 				ce = C.a.wrapped(O.b, "ChatButton", se.a),
 				de = C.a.wrapped(U, "KarmaIcon", se.a),
-				le = C.a.wrapped(T.a, "PremiumIcon", se.a),
+				le = C.a.wrapped(A.a, "PremiumIcon", se.a),
 				ue = C.a.wrapped(_.a, "UserNameLink", se.a),
 				me = C.a.div("UserNameMetaData", se.a),
 				pe = C.a.div("MetaDataItem", se.a),
@@ -936,7 +936,7 @@
 					}, [I.fbt._plural(r.fromAwardsReceived)], {
 						hk: "3nzm9q"
 					}), s.a.createElement(_e, {
-						href: A.a,
+						href: L.a,
 						target: "_blank",
 						rel: "noopener noreferrer"
 					}, s.a.createElement(B.a, {
@@ -947,7 +947,7 @@
 					}, [I.fbt._plural(r.fromAwardsGiven)], {
 						hk: "4zXN3B"
 					}), s.a.createElement(_e, {
-						href: A.a,
+						href: L.a,
 						target: "_blank",
 						rel: "noopener noreferrer"
 					}, s.a.createElement(B.a, {
@@ -992,15 +992,15 @@
 					if (!h) return s.a.createElement(we, {
 						style: b
 					});
-					const N = !!r && Object(L.e)(r) === v,
+					const N = !!r && Object(T.e)(r) === v,
 						w = !!(null == r ? void 0 : r.snoovatarFullBodyAsset),
 						k = h.accountIcon || `${g.a.assetPath}/img/snoo_user_placeholder.png`,
 						B = l && l.flair,
 						S = l && l.access,
 						U = _ && _.templateIds && _.templateIds.length > 0,
-						T = _ && _.displaySettings && _.displaySettings.isEnabled,
+						A = _ && _.displaySettings && _.displaySettings.isEnabled,
 						{
-							awardedLastMonth: A
+							awardedLastMonth: L
 						} = h,
 						H = !!h.snoovatarFullBodyAsset,
 						M = h.isNSFW && a;
@@ -1040,8 +1040,8 @@
 					})), s.a.createElement(Pe, {
 						showAwardKarma: p,
 						user: h
-					}), A && s.a.createElement(F.a, {
-						recentAwardings: A,
+					}), L && s.a.createElement(F.a, {
+						recentAwardings: L,
 						topAwardIcon: x,
 						username: v
 					}), i && !N && !C && O && !j && s.a.createElement(ce, {
@@ -1064,7 +1064,7 @@
 						subredditId: f,
 						sendEvent: m,
 						username: v
-					}), B && n && U && T && f && s.a.createElement(ne, {
+					}), B && n && U && A && f && s.a.createElement(ne, {
 						contextId: n,
 						subredditId: f,
 						sendEvent: m,
@@ -1083,8 +1083,8 @@
 					}, e))
 				};
 			Ue.WrappedComponent = Be;
-			var Te = Ue;
-			const Ae = Object(o.c)({
+			var Ae = Ue;
+			const Le = Object(o.c)({
 					activeTooltipId: f.a,
 					currentUser: x.k,
 					isLoggedIn: x.K,
@@ -1120,17 +1120,17 @@
 						return !n || n.acceptChats
 					}
 				}),
-				Le = Object(a.b)(Ae, (e, t) => ({
+				Te = Object(a.b)(Le, (e, t) => ({
 					onClickSnoovatar: () => e(Object(i.b)({
 						clickSource: "user_hovercard"
 					})),
 					onHideTooltip: () => e(Object(c.i)())
 				}));
-			t.a = Le(e => s.a.createElement("div", {
+			t.a = Te(e => s.a.createElement("div", {
 				className: e.className,
 				id: e.tooltipId,
 				onMouseLeave: e.onHideTooltip
-			}, s.a.createElement(Te, {
+			}, s.a.createElement(Ae, {
 				activeTooltipId: e.activeTooltipId,
 				contextId: e.contextId,
 				currentUser: e.currentUser,
@@ -1773,9 +1773,9 @@
 					})))
 				}
 			}
-			var T = n("./src/reddit/components/NotificationUnit/Placeholder.tsx"),
-				A = n("./src/reddit/helpers/trackers/inbox.ts"),
-				L = n("./src/reddit/pages/NotificationsInbox/Content/EmptyState.tsx");
+			var A = n("./src/reddit/components/NotificationUnit/Placeholder.tsx"),
+				L = n("./src/reddit/helpers/trackers/inbox.ts"),
+				T = n("./src/reddit/pages/NotificationsInbox/Content/EmptyState.tsx");
 
 			function H() {
 				return (H = Object.assign || function(e) {
@@ -1900,7 +1900,7 @@
 						className: B.a.notificationBannerContainer
 					}, r && a.a.createElement(h.a, {
 						onClose: m,
-						pageType: A.b.MiniInbox
+						pageType: L.b.MiniInbox
 					}), t && a.a.createElement(v, {
 						onTurnOnBrowserNotifications: p,
 						onClose: d
@@ -1908,7 +1908,7 @@
 						onClose: l
 					}), b && a.a.createElement(N, {
 						onClose: f
-					})), !x && i && a.a.createElement(T.a, null), !x && !i && a.a.createElement(L.a, {
+					})), !x && i && a.a.createElement(A.a, null), !x && !i && a.a.createElement(T.a, {
 						isBannerEnabled: C,
 						isLoggedIn: o
 					}), x && this.renderNotifications(), s && x && !i && (e || _) && a.a.createElement(u.a, {
@@ -2010,57 +2010,56 @@
 							isInboxExposureBannerEnabled: m,
 							isInboxPolicyBannerEnabled: p,
 							isLoggedIn: b,
-							isDNInboxPromptBannerFirstTimeEnabled: f,
-							isDNInboxPromptBannerPersistEnabled: x,
-							isWrappedRedditBannerEnabled: v,
-							userId: h
+							isPushNotificationsSupported: f,
+							isWrappedRedditBannerEnabled: x,
+							userId: v
 						} = e,
-						[I, g] = Object(V.a)(h),
-						[_, C] = function(e) {
+						[h, I] = Object(V.a)(v),
+						[g, _] = function(e) {
 							const [t, n] = Object(s.useState)(Object(q.t)(e));
 							return [t, Object(s.useCallback)(() => {
 								n(!0), Object(q.yb)(e)
 							}, [])]
-						}(h),
-						[E, O] = Object(X.a)(h),
-						[y, j] = Object(Q.a)(h),
-						N = !(!l || !l.length),
-						w = Object(o.a)(),
-						k = w === i.a.Closed || w === i.a.Default || w === i.a.Denied,
-						P = (f || x) && k && !E;
+						}(v),
+						[C, E] = Object(X.a)(v),
+						[O, y] = Object(Q.a)(v),
+						j = !(!l || !l.length),
+						N = Object(o.a)(),
+						w = N === i.a.Closed || N === i.a.Default || N === i.a.Denied,
+						k = f && w && !C;
 					return a.a.createElement(te, null, a.a.createElement("div", {
 						className: B.a.tooltipContainer
 					}, a.a.createElement(ne, {
 						markAllAsRead: () => {
-							e.markAllAsRead(), t(Object(A.g)({
+							e.markAllAsRead(), t(Object(L.g)({
 								isMiniInbox: !0
 							}))
 						},
 						messagesBadgeCount: d,
 						onMessagesClick: () => {
-							t(Object(A.p)({
+							t(Object(L.p)({
 								badgeCount: r,
-								tab: A.e.Messages
-							})), t(Object(A.h)()), n()
+								tab: L.e.Messages
+							})), t(Object(L.h)()), n()
 						},
-						sendInboxClickSettings: () => t(Object(A.m)(A.b.MiniInbox)),
+						sendInboxClickSettings: () => t(Object(L.m)(L.b.MiniInbox)),
 						onBarClick: u,
 						isLoggedIn: b
 					}), a.a.createElement(J, $({}, e, {
 						isPending: c,
 						onItemClick: u,
-						setInboxExposureBannerSeen: g,
-						setDesktopNotificationsPromptSeen: O,
-						isInboxExposureBannerEnabled: m && !I,
-						isDNInboxPromptBannerEnabled: P,
-						isInboxPrivacyPolicyBannerEnabled: p && !y,
-						setInboxPrivacyPolicyBannerSeen: j,
-						isWrappedRedditBannerEnabled: v && !_,
+						setInboxExposureBannerSeen: I,
+						setDesktopNotificationsPromptSeen: E,
+						isInboxExposureBannerEnabled: m && !h,
+						isDNInboxPromptBannerEnabled: k,
+						isInboxPrivacyPolicyBannerEnabled: p && !O,
+						setInboxPrivacyPolicyBannerSeen: y,
+						isWrappedRedditBannerEnabled: x && !g,
 						setDesktopNotificationWrappedRedditBannerSeen: () => {
-							C(), t(Object(A.o)())
+							_(), t(Object(L.o)())
 						}
-					})), (N || c) && a.a.createElement(re, {
-						sendInboxClickSeeAll: () => t(Object(A.l)()),
+					})), (j || c) && a.a.createElement(re, {
+						sendInboxClickSeeAll: () => t(Object(L.l)()),
 						onBarClick: u
 					})))
 				}
@@ -3723,4 +3722,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.586e6a3c54ef34a7af1e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.cc8e5fb3ca9ead66eadb.js.map

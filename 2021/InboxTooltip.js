@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InboxTooltip.837b144b71cdcf4142d7.js
-// Retrieved at 12/9/2021, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InboxTooltip.adc34ab66dbaeaa05d8a.js
+// Retrieved at 12/14/2021, 12:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InboxTooltip", "PushNotifications"], {
 		"./src/lib/notifications/token.ts": function(e, t, i) {
@@ -63,15 +63,15 @@
 			i.r(t), i.d(t, "initializeServiceWorkerChannel", (function() {
 				return k
 			})), i.d(t, "requestNotificationsPermissions", (function() {
-				return w
+				return N
 			})), i.d(t, "subscribeForPNs", (function() {
-				return E
-			})), i.d(t, "unsubscribeFromPNs", (function() {
 				return y
+			})), i.d(t, "unsubscribeFromPNs", (function() {
+				return _
 			})), i.d(t, "requestBrowserNotificationPermissionPromptByUser", (function() {
-				return I
+				return E
 			})), i.d(t, "subscribeToPermissionsChange", (function() {
-				return P
+				return I
 			}));
 			var n = i("./node_modules/fbt/lib/FbtPublic.js"),
 				s = i("./node_modules/lodash/omit.js"),
@@ -91,17 +91,17 @@
 				O = i("./src/reddit/helpers/trackers/notifications.ts"),
 				j = i("./src/reddit/models/Toast/index.ts"),
 				x = i("./src/reddit/selectors/meta.ts"),
-				v = i("./src/reddit/selectors/user.ts");
-			let S = !1;
+				S = i("./src/reddit/selectors/user.ts");
+			let v = !1;
 			const k = async (e, t) => {
-				const i = Object(v.J)(e);
-				if (S) return;
-				if (S = !0, Object(f.a)(e) !== d.c.NotificationsSupported) return;
+				const i = Object(S.J)(e);
+				if (v) return;
+				if (v = !0, Object(f.a)(e) !== d.c.NotificationsSupported) return;
 				await Object(u.a)();
 				navigator.serviceWorker.addEventListener("message", n => {
 					const s = n.data,
 						r = s.command || s.type;
-					if ("registerWithServiceWorker" === r) N(e);
+					if ("registerWithServiceWorker" === r) w(e);
 					else if (r === h.a && i) {
 						const e = o()(s, ["command"]);
 						t(Object(p.f)(e))
@@ -109,13 +109,13 @@
 						const e = Object(m.a)(s.data.href);
 						e && e.pathname && t(Object(b.c)(e.pathname))
 					}
-				}), N(e)
-			}, N = e => {
+				}), w(e)
+			}, w = e => {
 				navigator.serviceWorker.controller && navigator.serviceWorker.controller.postMessage({
 					command: "registerClient",
 					v2EventBoilerPlate: O.c(e)
 				})
-			}, w = (e, t, i = (() => {})) => async (n, s, o) => {
+			}, N = (e, t, i = (() => {})) => async (n, s, o) => {
 				const a = s(),
 					u = Object(x.f)(a);
 				if (await Object(r.a)() || u) return;
@@ -123,13 +123,13 @@
 				O.j(a), await Object(c.b)(e, t, () => {
 					n(Object(d.o)()), n(Object(d.n)()), O.h(a)
 				}, (e, t) => {
-					n(Object(d.l)()), n(y(t ? d.a.Denied : d.a.Closed)), e && (t ? O.e(a) : O.f(a))
+					n(Object(d.l)()), n(_(t ? d.a.Denied : d.a.Closed)), e && (t ? O.e(a) : O.f(a))
 				}, e => {
-					n(Object(d.m)()), n(E()), e && O.d(a)
+					n(Object(d.m)()), n(y()), e && O.d(a)
 				}, () => {
 					n(Object(d.k)()), i()
 				})
-			}, E = e => async (t, i, s) => {
+			}, y = e => async (t, i, s) => {
 				const o = i();
 				try {
 					switch (await Object(a.b)(s.gqlContext)) {
@@ -150,7 +150,7 @@
 				} catch (r) {
 					O.i(o, "registration_failed_uncaught_exception"), console.error(r)
 				}
-			}, y = (e, t) => async i => {
+			}, _ = (e, t) => async i => {
 				try {
 					Object(f.b)(e);
 					const s = await Object(u.a)();
@@ -164,17 +164,17 @@
 						})))
 					}
 				} catch (s) {}
-			}, I = e => async (t, i) => {
+			}, E = e => async (t, i) => {
 				const n = i();
 				if (Object(f.a)(n) === d.c.NotificationsSupported) switch (Object(c.a)()) {
 					case d.a.Default:
 					case d.a.Closed:
-						await t(w(!0, !0));
+						await t(N(!0, !0));
 						break;
 					case d.a.Denied:
 						t(Object(l.h)(e))
 				}
-			}, P = () => async (e, t) => {
+			}, I = () => async (e, t) => {
 				var i;
 				if (!(null === (i = null === navigator || void 0 === navigator ? void 0 : navigator.permissions) || void 0 === i ? void 0 : i.query)) return;
 				const n = t();
@@ -185,13 +185,13 @@
 				s.onchange = () => (t => {
 					switch (t) {
 						case d.a.Denied:
-							e(y(d.a.Denied)), O.e(n);
+							e(_(d.a.Denied)), O.e(n);
 							break;
 						case d.a.Granted:
-							e(E()), O.d(n);
+							e(y()), O.d(n);
 							break;
 						default:
-							e(y(d.a.Default))
+							e(_(d.a.Default))
 					}
 				})(s.state)
 			}
@@ -259,16 +259,16 @@
 								}
 						}
 					})(t),
-					v = await Object(c.b)(m(), e, x);
-				if ((null === (O = null === (h = v.error) || void 0 === h ? void 0 : h.fields) || void 0 === O ? void 0 : O.length) || function(e) {
+					S = await Object(c.b)(m(), e, x);
+				if ((null === (O = null === (h = S.error) || void 0 === h ? void 0 : h.fields) || void 0 === O ? void 0 : O.length) || function(e) {
 						return Boolean(e && e.data && e.data.updateSubredditNotificationSettings)
-					}(v.body) && (null === (j = v.body.data.updateSubredditNotificationSettings.errors) || void 0 === j ? void 0 : j.length)) return r(f()), r(Object(a.f)({
+					}(S.body) && (null === (j = S.body.data.updateSubredditNotificationSettings.errors) || void 0 === j ? void 0 : j.length)) return r(f()), r(Object(a.f)({
 					kind: u.b.Error,
 					text: n.fbt._("Failed to change the frequency of notifications from this community, please try again.", null, {
 						hk: "4avFFV"
 					})
 				}));
-				v.ok && (r(b({
+				S.ok && (r(b({
 					subredditAboutInfo: {
 						[e]: {
 							notificationLevel: t
@@ -303,16 +303,14 @@
 					cursor: O.c,
 					hasNextPage: O.d,
 					inboxBadgeCount: g.g,
-					isDNInboxPromptBannerFirstTimeEnabled: m.a,
 					isWrappedRedditBannerEnabled: h.a,
-					isDNInboxPromptBannerPersistEnabled: m.b,
-					isInboxExposureBannerEnabled: m.d,
-					isInboxInfiniteScrollEnabled: m.h,
-					isInboxPolicyBannerEnabled: m.j,
-					isInboxPostEmbedEnabled: m.f,
+					isInboxExposureBannerEnabled: m.b,
+					isInboxInfiniteScrollEnabled: m.f,
+					isInboxPolicyBannerEnabled: m.h,
+					isInboxPostEmbedEnabled: m.d,
 					isPending: O.e,
 					messagesBadgeCount: g.h,
-					notifications: e => Object(m.h)(e) ? Object(O.f)(e) : Object(O.g)(e)
+					notifications: e => Object(m.f)(e) ? Object(O.f)(e) : Object(O.g)(e)
 				}),
 				x = Object(o.b)(j, (e, {
 					desktopNotificationsModalId: t
@@ -345,38 +343,36 @@
 				hideTooltip: u,
 				blockAwarder: p,
 				inboxBadgeCount: g,
-				isDNInboxPromptBannerFirstTimeEnabled: m,
-				isDNInboxPromptBannerPersistEnabled: h,
-				isInboxExposureBannerEnabled: O,
-				isInboxPolicyBannerEnabled: j,
-				isInboxInfiniteScrollEnabled: x,
-				isInboxPostEmbedEnabled: v,
-				isWrappedRedditBannerEnabled: S,
-				isLoggedIn: k,
-				isOpen: N,
-				isPending: w,
-				isPushNotificationsSupported: E,
-				markAllAsRead: y,
-				markNotificationAsRead: I,
-				messagesBadgeCount: P,
-				notifications: _,
-				showBrowserNotificationsPermissionSettings: B,
-				updateInboxActivitySeenState: F,
-				userId: C
+				isInboxExposureBannerEnabled: m,
+				isInboxPolicyBannerEnabled: h,
+				isInboxInfiniteScrollEnabled: O,
+				isInboxPostEmbedEnabled: j,
+				isWrappedRedditBannerEnabled: x,
+				isLoggedIn: S,
+				isOpen: v,
+				isPending: k,
+				isPushNotificationsSupported: w,
+				markAllAsRead: N,
+				markNotificationAsRead: y,
+				messagesBadgeCount: _,
+				notifications: E,
+				showBrowserNotificationsPermissionSettings: I,
+				updateInboxActivitySeenState: P,
+				userId: B
 			}) => {
-				const A = Object(f.a)(),
-					[R, T] = Object(n.useState)("");
+				const F = Object(f.a)(),
+					[C, A] = Object(n.useState)("");
 				return Object(n.useEffect)(() => {
-					if (N && !_.length && k) {
+					if (v && !E.length && S) {
 						r({
 							first: 5
 						})
 					}
-					N && k && (F(), A(Object(l.q)({
+					v && S && (P(), F(Object(l.q)({
 						badgeCount: g
 					})))
-				}, [N]), s.a.createElement(b.b, {
-					activeOverflowMenuId: R,
+				}, [v]), s.a.createElement(b.b, {
+					activeOverflowMenuId: C,
 					clearMessageTabBadgeCount: e,
 					cursor: t,
 					decreaseSubredditNotifications: i,
@@ -388,22 +384,21 @@
 					hideTooltip: u,
 					blockAwarder: p,
 					inboxBadgeCount: g,
-					isDNInboxPromptBannerFirstTimeEnabled: m && E,
-					isDNInboxPromptBannerPersistEnabled: h && E,
-					isInboxExposureBannerEnabled: O,
-					isInboxPolicyBannerEnabled: j,
-					isInboxInfiniteScrollEnabled: x,
-					isInboxPostEmbedEnabled: v,
-					isWrappedRedditBannerEnabled: S,
-					isLoggedIn: k,
-					isPending: w,
-					markAllAsRead: y,
-					markNotificationAsRead: I,
-					messagesBadgeCount: P,
-					notifications: _,
-					setActiveOverflowMenuId: T,
-					showBrowserNotificationsPermissionSettings: B,
-					userId: C
+					isPushNotificationsSupported: w,
+					isInboxExposureBannerEnabled: m,
+					isInboxPolicyBannerEnabled: h,
+					isInboxInfiniteScrollEnabled: O,
+					isInboxPostEmbedEnabled: j,
+					isWrappedRedditBannerEnabled: x,
+					isLoggedIn: S,
+					isPending: k,
+					markAllAsRead: N,
+					markNotificationAsRead: y,
+					messagesBadgeCount: _,
+					notifications: E,
+					setActiveOverflowMenuId: A,
+					showBrowserNotificationsPermissionSettings: I,
+					userId: B
 				})
 			})
 		},
@@ -541,4 +536,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InboxTooltip.837b144b71cdcf4142d7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InboxTooltip.adc34ab66dbaeaa05d8a.js.map

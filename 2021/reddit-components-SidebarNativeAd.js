@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.6086591a72e84ccf5a9f.js
-// Retrieved at 12/14/2021, 11:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.f63446dc4023bb48ad4e.js
+// Retrieved at 12/14/2021, 12:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1429,8 +1429,8 @@
 				V = n("./src/reddit/hooks/useClickSourceData.ts"),
 				H = n("./src/reddit/hooks/useExperimentVariant.ts"),
 				W = n("./src/reddit/hooks/usePostContext.ts"),
-				q = n("./src/reddit/hooks/useTheme.ts"),
-				z = n("./src/telemetry/models/Outbound.ts");
+				z = n("./src/reddit/hooks/useTheme.ts"),
+				q = n("./src/telemetry/models/Outbound.ts");
 
 			function K() {
 				return (K = Object.assign || function(e) {
@@ -1452,7 +1452,7 @@
 					className: i,
 					redditStyle: a
 				}) => {
-					const c = Object(q.a)();
+					const c = Object(z.a)();
 					let d = "";
 					switch (e) {
 						case A.ExtraLarge:
@@ -1521,7 +1521,7 @@
 						subreddit: n
 					} = e, {
 						isSponsored: r
-					} = t, o = Object(i.d)(), a = Object(V.a)(), c = Object(H.a)(m.qd) === m.xd.Enabled, l = Object(i.e)(B.b), u = e => {
+					} = t, o = Object(i.d)(), a = Object(V.a)(), c = Object(H.a)(m.od) === m.vd.Enabled, l = Object(i.e)(B.b), u = e => {
 						!l || t.media && Object(x.H)(t.media) || (e.preventDefault(), o(Object(v.ab)(Object(_.b)(t.permalink), t.id)))
 					};
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return s.a.createElement(X, {
@@ -1590,7 +1590,7 @@
 						post: n
 					} = e, {
 						isSponsored: r
-					} = n, o = e.isCommentsPage ? z.SourceElement.PostLink : z.SourceElement.ListingPostLink, i = !t && !e.isCrosspost && e.size !== A.Large && !n.isSponsored && !(n.media && Object(x.H)(n.media)) && (n.source || n.media && (n.media.type === x.o.GIFVIDEO || n.media.type === x.o.IMAGE || n.media.type === x.o.EMBED));
+					} = n, o = e.isCommentsPage ? q.SourceElement.PostLink : q.SourceElement.ListingPostLink, i = !t && !e.isCrosspost && e.size !== A.Large && !n.isSponsored && !(n.media && Object(x.H)(n.media)) && (n.source || n.media && (n.media.type === x.o.GIFVIDEO || n.media.type === x.o.IMAGE || n.media.type === x.o.EMBED));
 					if (t || !e.isCommentsPage || e.isCommentPermalink || e.shouldLinkWrap) {
 						if (i) return s.a.createElement(b.a, {
 							className: e.outboundLinkClassName,
@@ -1675,7 +1675,7 @@
 						isCommentPermalink: n,
 						pageLayer: t
 					})),
-					a = Object(q.a)(),
+					a = Object(z.a)(),
 					c = Object(u.b)();
 				return r ? s.a.createElement(te, K({
 					pageLayer: t,
@@ -1829,8 +1829,8 @@
 				V = m.a.div("SourceLinkWrapper", L.a),
 				H = m.a.div("TopLine", L.a),
 				W = m.a.wrapped(c.c, "PostTitle", L.a),
-				q = m.a.div("PostMediaWrapper", L.a),
-				z = m.a.div("BackgroundWrapper", L.a),
+				z = m.a.div("PostMediaWrapper", L.a),
+				q = m.a.div("BackgroundWrapper", L.a),
 				K = m.a.wrapped(h.a, "PostContainer", L.a),
 				Y = 640,
 				Q = e => Object(E.a)(e.title, 100),
@@ -1874,7 +1874,7 @@
 						})
 					}, l = s.a.createElement(N, {
 						post: e
-					})) : (i = U, l = s.a.createElement(z, {
+					})) : (i = U, l = s.a.createElement(q, {
 						style: J(this.props)
 					}, s.a.createElement(H, null, s.a.createElement(B, {
 						tooltipType: o ? d.c.Lightbox : void 0,
@@ -1889,7 +1889,7 @@
 						isSponsored: !0,
 						postId: e.id,
 						source: e.source
-					}, Object(u.a)(e), s.a.createElement(G, null))), s.a.createElement(q, null, e.media && s.a.createElement(a.a, {
+					}, Object(u.a)(e), s.a.createElement(G, null))), s.a.createElement(z, null, e.media && s.a.createElement(a.a, {
 						isListing: !0,
 						isNotCardView: !0,
 						showCentered: !0,
@@ -3666,4 +3666,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.6086591a72e84ccf5a9f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.f63446dc4023bb48ad4e.js.map
