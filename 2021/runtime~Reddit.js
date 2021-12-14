@@ -1,10 +1,10 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.dc94772f027d69e2402f.js
-// Retrieved at 12/13/2021, 8:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.a364df264f7388eca344.js
+// Retrieved at 12/14/2021, 10:30:09 AM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
-		for (var n, a, r = o[0], s = o[1], c = o[2], l = 0, P = []; l < r.length; l++) a = r[l], Object.prototype.hasOwnProperty.call(d, a) && d[a] && P.push(d[a][0]), d[a] = 0;
+		for (var n, a, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) a = r[l], Object.prototype.hasOwnProperty.call(d, a) && d[a] && b.push(d[a][0]), d[a] = 0;
 		for (n in s) Object.prototype.hasOwnProperty.call(s, n) && (e[n] = s[n]);
-		for (m && m(o); P.length;) P.shift()();
+		for (m && m(o); b.length;) b.shift()();
 		return i.push.apply(i, c || []), t()
 	}
 
@@ -943,12 +943,12 @@
 				var m;
 				if ((c = (m = l[s]).getAttribute("data-href")) === n || c === d) return o()
 			}
-			var P = document.createElement("link");
-			P.rel = "stylesheet", P.type = "text/css", P.onload = o, P.onerror = function(o) {
+			var b = document.createElement("link");
+			b.rel = "stylesheet", b.type = "text/css", b.onload = o, b.onerror = function(o) {
 				var n = o && o.target && o.target.src || d,
 					i = new Error("Loading CSS chunk " + e + " failed.\n(" + n + ")");
-				i.code = "CSS_CHUNK_LOAD_FAILED", i.request = n, delete a[e], P.parentNode.removeChild(P), t(i)
-			}, P.href = d, document.getElementsByTagName("head")[0].appendChild(P)
+				i.code = "CSS_CHUNK_LOAD_FAILED", i.request = n, delete a[e], b.parentNode.removeChild(b), t(i)
+			}, b.href = d, document.getElementsByTagName("head")[0].appendChild(b)
 		})).then((function() {
 			a[e] = 0
 		})));
@@ -1407,14 +1407,14 @@
 						"reddit-components-Econ-Prediction-EndTimeModal": "66540f7789f87ff15510",
 						"reddit-components-PostCreationForm-PredictionEditor-InactivityModal": "334a2afb45650e114f00",
 						"reddit-components-PostCreationForm-PredictionEditor-StartTournamentLimitationModal": "5a05eb502ff99088889f",
-						"translations/de_DE-json": "0d85c352075f5c2ff25d",
-						"translations/es_ES-json": "5279f99a3e1945c71cd5",
-						"translations/es_MX-json": "86ee8f134566ef10e47c",
-						"translations/fr_FR-json": "48a10e203b29bcf6141e",
-						"translations/it_IT-json": "240f0d717f845dff93f2",
+						"translations/de_DE-json": "b512b44983a5da22431e",
+						"translations/es_ES-json": "e99f4f9e76b48439ffb0",
+						"translations/es_MX-json": "971bfbd3de9b4f4b8b5d",
+						"translations/fr_FR-json": "740d5c8b2651f90b48bc",
+						"translations/it_IT-json": "9f56499962fcd818c65b",
 						"translations/pseudo-json": "d2c00c1508c45fe7707f",
-						"translations/pt_BR-json": "17d56cc9745ef5d72fbe",
-						"translations/pt_PT-json": "ca1a2c147f6aa8699534",
+						"translations/pt_BR-json": "5b1338cd0f806acf384d",
+						"translations/pt_PT-json": "3380c19ef7b574443d07",
 						"vendors~AdminPanel": "e6e59f93c311ab1cce5c",
 						AdminPanel: "74642af76c7fe0ec405a",
 						"vendors~ChatMessageInput~CommentRichUnit~FlairEdit~MembershipPaywallPage~PostCreation~PostRichUnit~R~9deab1a0": "201e0a53b4d00907b96f",
@@ -1667,4 +1667,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.dc94772f027d69e2402f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.a364df264f7388eca344.js.map
