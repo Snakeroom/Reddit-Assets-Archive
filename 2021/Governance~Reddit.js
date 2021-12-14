@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.6b11f3adc68dec0c23f7.js
-// Retrieved at 12/14/2021, 1:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.789ade97ee7ac3f8e53b.js
+// Retrieved at 12/14/2021, 5:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit", "reddit-components-BlankPost"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -1236,7 +1236,7 @@
 				n = "CONNECTION__GO_OFFLINE",
 				a = "CONNECTION__HIDE_BANNER"
 		},
-		"./src/reddit/actions/crosspostRecommendations/index.ts": function(e, t, r) {
+		"./src/reddit/actions/crosspostSubredditRec/index.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "c", (function() {
 				return d
@@ -1275,7 +1275,7 @@
 					t(Object(n.j)(c, o, d, t => {
 						const r = e.belongsTo.id === t.id,
 							s = "isCrosspostDestination" in t && t.isCrosspostDestination;
-						return !r && s
+						return r || !s
 					}))
 				}
 		},
@@ -3339,7 +3339,7 @@
 			var s = r("./src/lib/constants/index.ts"),
 				n = r("./src/lib/makeActionCreator/index.ts"),
 				a = r("./src/telemetry/index.ts"),
-				c = r("./src/reddit/actions/crosspostRecommendations/index.ts"),
+				c = r("./src/reddit/actions/crosspostSubredditRec/index.ts"),
 				o = r("./src/reddit/actions/governance/index.ts"),
 				d = r("./src/reddit/actions/pages/subreddit.ts"),
 				i = r("./src/reddit/actions/postDraft.ts"),
@@ -3738,7 +3738,7 @@
 							poll: r.poll
 						}));
 						const s = Object(B.b)(a);
-						i.kind !== T.p.LINK && i.kind !== T.p.RICH_TEXT && i.kind !== T.p.MARKDOWN || !s || t(Object(c.c)());
+						i.kind !== T.p.LINK && i.kind !== T.p.RICH_TEXT && i.kind !== T.p.MARKDOWN || u || !s || t(Object(c.c)());
 						const n = (r.path || `/user/${Object(G.e)(e)}/posts`).replace(/^\/r\/u_/, "/user/");
 						t(Object(d.subredditInvalidateListing)(i.destSubreddit.name)), t(Object(l.a)(n, !1))
 					} else {
@@ -27211,4 +27211,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.6b11f3adc68dec0c23f7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.789ade97ee7ac3f8e53b.js.map

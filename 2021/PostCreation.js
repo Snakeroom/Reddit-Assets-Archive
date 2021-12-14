@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.60dcbcf19381ccec2deb.js
-// Retrieved at 12/14/2021, 1:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.812e6b93c96aa1175dff.js
+// Retrieved at 12/14/2021, 5:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -1940,7 +1940,7 @@
 					draftKey: e
 				})), X = Object(i.a)(T.a), Z = Object(i.a)(T.E), $ = Object(i.a)(T.b), ee = Object(i.a)(T.u)
 		},
-		"./src/reddit/actions/crosspostRecommendations/index.ts": function(e, t, n) {
+		"./src/reddit/actions/crosspostSubredditRec/index.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "c", (function() {
 				return c
@@ -1979,7 +1979,7 @@
 					t(Object(s.j)(i, a, c, t => {
 						const n = e.belongsTo.id === t.id,
 							o = "isCrosspostDestination" in t && t.isCrosspostDestination;
-						return !n && o
+						return n || !o
 					}))
 				}
 		},
@@ -3570,7 +3570,7 @@
 			var o = n("./src/lib/constants/index.ts"),
 				s = n("./src/lib/makeActionCreator/index.ts"),
 				r = n("./src/telemetry/index.ts"),
-				i = n("./src/reddit/actions/crosspostRecommendations/index.ts"),
+				i = n("./src/reddit/actions/crosspostSubredditRec/index.ts"),
 				a = n("./src/reddit/actions/governance/index.ts"),
 				c = n("./src/reddit/actions/pages/subreddit.ts"),
 				d = n("./src/reddit/actions/postDraft.ts"),
@@ -3969,7 +3969,7 @@
 							poll: n.poll
 						}));
 						const o = Object(K.b)(r);
-						d.kind !== k.p.LINK && d.kind !== k.p.RICH_TEXT && d.kind !== k.p.MARKDOWN || !o || t(Object(i.c)());
+						d.kind !== k.p.LINK && d.kind !== k.p.RICH_TEXT && d.kind !== k.p.MARKDOWN || l || !o || t(Object(i.c)());
 						const s = (n.path || `/user/${Object(U.e)(e)}/posts`).replace(/^\/r\/u_/, "/user/");
 						t(Object(c.subredditInvalidateListing)(d.destSubreddit.name)), t(Object(u.a)(s, !1))
 					} else {
@@ -32505,4 +32505,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.60dcbcf19381ccec2deb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.812e6b93c96aa1175dff.js.map

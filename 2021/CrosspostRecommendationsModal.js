@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CrosspostRecommendationsModal.8f1e8515fa58619f0e14.js
-// Retrieved at 12/13/2021, 8:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CrosspostRecommendationsModal.d4bf0387939be1f6222b.js
+// Retrieved at 12/14/2021, 5:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CrosspostRecommendationsModal"], {
 		"./src/reddit/components/CrosspostRecommendationsModal/index.m.less": function(e, t, s) {
@@ -22,21 +22,20 @@
 				o = s("./node_modules/react-router-redux/es/index.js"),
 				d = s("./node_modules/reselect/es/index.js"),
 				a = s("./src/higherOrderComponents/asModal/index.tsx"),
-				c = s("./src/reddit/actions/crosspostRecommendations/index.ts"),
-				l = s("./src/reddit/components/ModalStyledComponents/index.tsx"),
-				m = s("./src/reddit/controls/Button/index.tsx"),
-				u = s("./src/reddit/controls/SubredditPicker/Picker/SubredditDropdown/RecommendedSubreddits/index.tsx"),
-				b = s("./src/reddit/controls/TextButton/index.tsx"),
-				p = s("./src/reddit/constants/tracking.ts"),
-				x = s("./src/reddit/selectors/telemetry.ts");
-			const C = "community_recommendation";
-			var h = s("./src/reddit/hooks/useTracking.ts"),
-				S = s("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
-				E = s("./src/reddit/routes/postCreation/index.ts"),
-				k = s("./src/reddit/routes/postCreation/constants.ts"),
-				j = s("./src/reddit/selectors/experiments/postCreationSubRec.ts"),
-				O = s("./src/reddit/components/CrosspostRecommendationsModal/index.m.less"),
-				g = s.n(O);
+				c = s("./src/reddit/components/ModalStyledComponents/index.tsx"),
+				l = s("./src/reddit/controls/Button/index.tsx"),
+				m = s("./src/reddit/controls/SubredditPicker/Picker/SubredditDropdown/RecommendedSubreddits/index.tsx"),
+				u = s("./src/reddit/controls/TextButton/index.tsx"),
+				b = s("./src/reddit/constants/tracking.ts"),
+				p = s("./src/reddit/selectors/telemetry.ts");
+			const x = "community_recommendation";
+			var C = s("./src/reddit/hooks/useTracking.ts"),
+				h = s("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
+				S = s("./src/reddit/routes/postCreation/index.ts"),
+				E = s("./src/reddit/routes/postCreation/constants.ts"),
+				k = s("./src/reddit/selectors/experiments/postCreationSubRec.ts"),
+				j = s("./src/reddit/components/CrosspostRecommendationsModal/index.m.less"),
+				g = s.n(j);
 			const {
 				fbt: v
 			} = s("./node_modules/fbt/lib/FbtPublic.js");
@@ -45,70 +44,67 @@
 				post: t
 			}) => {
 				const s = Object(i.d)(),
-					a = Object(h.a)(),
+					a = Object(C.a)(),
 					{
-						isPending: O,
-						isError: _,
-						hasData: P,
-						items: f
+						isPending: j,
+						isError: O,
+						hasData: _,
+						items: P
 					} = Object(i.e)(Object(d.c)({
-						isPending: j.i,
-						isError: j.e,
-						hasData: j.c,
-						items: j.b
-					}));
-				Object(n.useEffect)(() => {
-					s(Object(c.a)(t))
-				}, [t]);
-				const w = Object(n.useCallback)(() => {
+						isPending: k.i,
+						isError: k.e,
+						hasData: k.c,
+						items: k.b
+					})),
+					w = Object(n.useCallback)(() => {
 						a((e => t => ({
-							...Object(x.o)(t),
-							action: p.c.CLICK,
+							...Object(p.o)(t),
+							action: b.c.CLICK,
 							noun: "close",
-							source: C,
-							post: Object(x.I)(t, e),
-							subreddit: Object(x.hb)(t)
+							source: x,
+							post: Object(p.I)(t, e),
+							subreddit: Object(p.hb)(t)
 						}))(t.id)), e()
-					}, []),
-					N = Object(n.useCallback)(e => {
-						const n = Object(E.c)(e.name);
+					}, [t.id]),
+					f = Object(n.useCallback)(e => {
+						const n = Object(S.c)(e.name);
 						s(Object(o.b)(`${n}?source_id=${t.id}`))
 					}, [t.id]),
-					y = Object(n.useCallback)(() => {
+					N = Object(n.useCallback)(() => {
 						a((e => t => ({
-							...Object(x.o)(t),
-							action: p.c.CLICK,
+							...Object(p.o)(t),
+							action: b.c.CLICK,
 							noun: "other_communities",
-							source: C,
-							post: Object(x.I)(t, e),
-							subreddit: Object(x.hb)(t)
-						}))(t.id)), s(Object(o.b)(`${k.b}?source_id=${t.id}`))
+							source: x,
+							post: Object(p.I)(t, e),
+							subreddit: Object(p.hb)(t)
+						}))(t.id)), s(Object(o.b)(`${E.b}?source_id=${t.id}`))
 					}, [t.id]);
-				return _ ? (e(), null) : r.a.createElement(l.e, null, r.a.createElement(l.i, {
+				return O ? (e(), null) : r.a.createElement(c.e, null, r.a.createElement(c.i, {
 					className: g.a.modalHeader
-				}, r.a.createElement(S.a, null, r.a.createElement(l.q, {
+				}, r.a.createElement(h.a, null, r.a.createElement(c.q, {
 					className: g.a.modalTitle
 				}, v._("Crosspost to a related community", null, {
 					hk: "v80Kq"
-				})), r.a.createElement(b.a, {
+				})), r.a.createElement(u.a, {
 					onClick: w
-				}, r.a.createElement(l.b, null))), r.a.createElement(l.m, {
+				}, r.a.createElement(c.b, null))), r.a.createElement(c.m, {
 					className: g.a.modalMetaText
 				}, v._("Share your post to another community to let other people see your post", null, {
 					hk: "2jhFRp"
-				}))), r.a.createElement(l.l, null, r.a.createElement(u.b, {
+				}))), r.a.createElement(c.l, null, r.a.createElement(m.b, {
 					contentWrapperClassName: g.a.contentWrapper,
-					hasData: P,
-					isPending: O,
-					items: f,
+					hasData: _,
+					isPending: j,
+					items: P,
 					itemWrapperClassName: g.a.itemWrapper,
-					onSelectRecommendation: N,
+					onSelectRecommendation: f,
 					shouldShowSubredditOnlineUsers: !0
-				})), r.a.createElement(l.g, {
+				})), r.a.createElement(c.g, {
 					className: g.a.modalFooter
-				}, r.a.createElement(m.o, {
+				}, r.a.createElement(l.o, {
 					className: g.a.otherCommunitiesButton,
-					onClick: y
+					onClick: N
 				}, v._("OTHER COMMUNITIES", null, {
 					hk: "1dWSPt"
 				}))))
@@ -408,9 +404,9 @@
 					_1: "1 member"
 				}, [n.fbt._plural(u, "number", C ? Object(a.b)(u) : void 0)], {
 					hk: "2SvJUX"
-				}) : void 0, O = E ? n.fbt._("{number users online in subreddit} online", [n.fbt._param("number users online in subreddit", Object(a.b)(E.accountsActive))], {
+				}) : void 0, g = E ? n.fbt._("{number users online in subreddit} online", [n.fbt._param("number users online in subreddit", Object(a.b)(E.accountsActive))], {
 					hk: "49HfzS"
-				}) : void 0, g = S ? `${j} • ${O}` : j, v = void 0 !== x ? n.fbt._({
+				}) : void 0, v = S ? `${j} • ${g}` : j, O = void 0 !== x ? n.fbt._({
 					"*": "{number} online",
 					_1: "1 online"
 				}, [n.fbt._plural(x, "number", C ? Object(a.b)(x) : void 0)], {
@@ -426,8 +422,8 @@
 				return i.a.createElement(m.b, p({
 					icon: _,
 					title: k,
-					secondaryText: g,
-					subText: v
+					secondaryText: v,
+					subText: O
 				}, e))
 			}
 		},
@@ -502,4 +498,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CrosspostRecommendationsModal.8f1e8515fa58619f0e14.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CrosspostRecommendationsModal.d4bf0387939be1f6222b.js.map

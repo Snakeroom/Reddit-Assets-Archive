@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.d4e4aedbe3dec3983392.js
-// Retrieved at 12/14/2021, 1:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.3806b922455be28c0c4d.js
+// Retrieved at 12/14/2021, 5:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~ReportFlow~Subreddit"], {
 		"./src/lib/assertNever.ts": function(e, t, r) {
@@ -3442,24 +3442,27 @@
 					if (!a.body || !a.ok) return i(ie(!1)), void i(re()); {
 						const {
 							data: e
-						} = a.body, t = e.openaiSubredditSuggestions.filter(e => !oe.includes(e.name) && (!n || n(e))).slice(0, E.a), r = t.map(e => {
-							const t = e.name;
-							return I[t] = {}, S.push(t), t
-						});
+						} = a.body;
+						let t = e.openaiSubredditSuggestions.filter(e => !oe.includes(e.name));
+						const r = (t = n ? t.filter(e => !n(e)) : t).slice(0, E.a),
+							o = r.map(e => {
+								const t = e.name;
+								return I[t] = {}, S.push(t), t
+							});
 						if ((Object(E.h)(c) || Object(j.b)(c)) && (e => {
 								const t = e.map(e => e.toLowerCase());
 								let r = !1;
 								return de.forEach(e => {
 									t.includes(e) && (r = !0)
 								}), r
-							})(r)) return i(ie(!1)), i(ee({
+							})(o)) return i(ie(!1)), i(ee({
 							subreddits: {},
 							subredditsAboutInfo: {},
 							unavailableSubreddits: {},
 							recSubsDict: {},
 							recSubsOrder: []
 						})), Object(f.z)(s()), void i(re());
-						t.forEach(e => {
+						r.forEach(e => {
 							if (Object(m.j)(e)) {
 								const t = Object(p.f)(e);
 								g[t.id] = t
@@ -5789,8 +5792,11 @@
 			"use strict";
 			r.d(t, "a", (function() {
 				return n
+			})), r.d(t, "b", (function() {
+				return i
 			}));
-			const n = "crosspost_recommendations_modal_id"
+			const n = "crosspost_recommendations_modal_id",
+				i = 3e3
 		},
 		"./src/reddit/constants/elementIds.ts": function(e, t, r) {
 			"use strict";
@@ -10975,4 +10981,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.d4e4aedbe3dec3983392.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.3806b922455be28c0c4d.js.map

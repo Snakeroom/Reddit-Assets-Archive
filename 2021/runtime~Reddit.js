@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.8cd678346c4c25b5b41a.js
-// Retrieved at 12/14/2021, 1:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.256448e54c6863f8574d.js
+// Retrieved at 12/14/2021, 5:00:04 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var n, a, r = o[0], s = o[1], c = o[2], l = 0, P = []; l < r.length; l++) a = r[l], Object.prototype.hasOwnProperty.call(d, a) && d[a] && P.push(d[a][0]), d[a] = 0;
@@ -1311,8 +1311,8 @@
 						"CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate": "0133fe6bf27d0a309fa3",
 						"CollectionCommentsPage~CommentsPage~ModProgressModule~NewCommunityProgress": "0a7cca6ddd3d5c27aad3",
 						"CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki": "c1a9abad85b054e18c77",
-						CollectionCommentsPage: "7af9b58cbfd7a383972c",
-						CommentsPage: "f70eff600ca7616f5b8f",
+						CollectionCommentsPage: "5d603bf3714e7f72f727",
+						CommentsPage: "6c205e38feb1cd55e2ba",
 						"ProfileComments~ProfileOverview~ProfilePrivate": "611175dfcd1187cc9cc1",
 						"ProfileComments~ProfileOverview": "f10ddfab2e9967d3c4e5",
 						ProfileComments: "8ab43aa1c950b3591412",
@@ -1429,7 +1429,7 @@
 						HarbergerTaxManageModal: "63a738be0da1f38ad20b",
 						SubredditPremiumUploadModal: "64126c5143c3b0474d29",
 						"vendors~PostCreation~Subreddit": "46f5a30c7f13b908d95f",
-						PostCreation: "60dcbcf19381ccec2deb",
+						PostCreation: "812e6b93c96aa1175dff",
 						"vendors~ModStatsChart~Settings~ViewsTooltip": "ca7c845d62fd39d960b6",
 						"vendors~Settings": "71f28c4c637cd926b6dd",
 						Settings: "980fc036e6d686ab0e52",
@@ -1468,7 +1468,7 @@
 						"reddit-components-SidebarNativeAd": "6ecd9acdfe50b61bd017",
 						CommentsPageNativeAd: "145dcaa13dd66c2ef159",
 						CreatorStats: "c06e1210d1c990cafac0",
-						CrosspostRecommendationsModal: "8f1e8515fa58619f0e14",
+						CrosspostRecommendationsModal: "d4bf0387939be1f6222b",
 						CryptoVault: "7ab2ba38b17051a91555",
 						EconomicsSubredditPremiumSidebarCards: "e2564acb6bd03922db3f",
 						ReportFlow: "c7f0d49f33072c80b6b6",
@@ -1667,4 +1667,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.8cd678346c4c25b5b41a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.256448e54c6863f8574d.js.map
