@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.05a1e7098a7692ec9a51.js
-// Retrieved at 12/14/2021, 12:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.0161f6b5dc83d1d61866.js
+// Retrieved at 12/14/2021, 12:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -5330,7 +5330,9 @@
 						onConfirm: () => this.cancelForm(),
 						toggleModal: n,
 						trackClick: () => {}
-					}), e === h.b && r.a.createElement(h.a, null), e === d.q && r.a.createElement(m.a, {
+					}), e === h.b && r.a.createElement(h.a, {
+						withOverlay: !0
+					}), e === d.q && r.a.createElement(m.a, {
 						onSubmit: this.onSubmit,
 						modalSeen: y,
 						withOverlay: !0
@@ -8142,7 +8144,9 @@
 						onKeyDown: this.handleKeyDown,
 						placeholder: n,
 						value: i
-					})), this.props.activeModalId === u.b && r.a.createElement(u.a, null), this.props.activeModalId === m.a.SWITCH_TO_RTE_MODAL_ID && r.a.createElement(m.b, {
+					})), this.props.activeModalId === u.b && r.a.createElement(u.a, {
+						withOverlay: !0
+					}), this.props.activeModalId === m.a.SWITCH_TO_RTE_MODAL_ID && r.a.createElement(m.b, {
 						modalId: m.a.SWITCH_TO_RTE_MODAL_ID,
 						onCancel: this.props.switchToRTEModalToggled,
 						onConfirm: this.handleSwitchToRTEConfirm
@@ -32492,4 +32496,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.05a1e7098a7692ec9a51.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.0161f6b5dc83d1d61866.js.map
