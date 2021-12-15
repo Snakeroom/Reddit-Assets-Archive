@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.6bde39fc8b82cca97631.js
-// Retrieved at 12/15/2021, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.7ea5c480bc1346b14906.js
+// Retrieved at 12/15/2021, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"], {
 		"./node_modules/lodash/random.js": function(e, t, r) {
@@ -1624,8 +1624,8 @@
 						hk: "1vWsZx"
 					})) : null
 				}),
-				B = r("./src/reddit/actions/economics/predictions/index.ts"),
-				R = r("./src/reddit/components/Econ/Prediction/hooks/useTournamentsQuery.ts"),
+				R = r("./src/reddit/actions/economics/predictions/index.ts"),
+				B = r("./src/reddit/components/Econ/Prediction/hooks/useTournamentsQuery.ts"),
 				D = r("./src/reddit/contexts/PageLayer/selectors.ts"),
 				H = r("./src/reddit/helpers/trackers/predictions.ts"),
 				W = r("./src/reddit/hooks/useTracking.ts"),
@@ -1652,9 +1652,9 @@
 					p = Object(i.e)(t => Object(U.e)(t, {
 						subredditId: e
 					}));
-				Object(R.a)(e);
+				Object(B.a)(e);
 				return Object(n.useEffect)(() => {
-					!u || d || m || o || (t(Object(B.m)(l.name)), c(!0))
+					!u || d || m || o || (t(Object(R.m)(l.name)), c(!0))
 				}, [u, d, m, o, t, l.name]), u && m ? s.a.createElement(j, {
 					className: x.a.predictionsFilter,
 					isActive: o,
@@ -2165,7 +2165,7 @@
 		"./src/reddit/components/Widgets/Widget/index.tsx": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
-				return Be
+				return Re
 			}));
 			var n = r("./node_modules/react/index.js"),
 				s = r.n(n),
@@ -2279,8 +2279,8 @@
 				A = {
 					isExpanded: !1
 				},
-				B = m.a.wrapped(o.a, "RawHTMLDisplay", L.a),
-				R = m.a.div("EventContainer", L.a),
+				R = m.a.wrapped(o.a, "RawHTMLDisplay", L.a),
+				B = m.a.div("EventContainer", L.a),
 				D = m.a.div("EventTitle", L.a),
 				H = m.a.div("EventDate", L.a),
 				W = m.a.div("EventLocation", L.a),
@@ -2313,9 +2313,9 @@
 					title: e.widget.shortName,
 					truncateThreshold: e.truncateThreshold,
 					widgetKind: e.widget.kind
-				}, e.widget.data.map((t, r) => s.a.createElement(R, {
+				}, e.widget.data.map((t, r) => s.a.createElement(B, {
 					key: `${r}-${t.title}`
-				}, s.a.createElement(D, null, t.titleHtml ? s.a.createElement(B, {
+				}, s.a.createElement(D, null, t.titleHtml ? s.a.createElement(R, {
 					html: t.titleHtml
 				}) : t.title), e.widget.configuration.showDate && t.startTime && s.a.createElement(H, null, s.a.createElement(F.a, {
 					seconds: t.startTime,
@@ -2325,7 +2325,7 @@
 						r = t.getHours(),
 						n = t.getMinutes();
 					return n < 10 ? `${r}:0${n}` : `${r}:${n}`
-				})(t.startTime), " ")), t.location && e.widget.configuration.showLocation && s.a.createElement(W, null, t.locationHtml ? s.a.createElement(B, {
+				})(t.startTime), " ")), t.location && e.widget.configuration.showLocation && s.a.createElement(W, null, t.locationHtml ? s.a.createElement(R, {
 					html: t.locationHtml
 				}) : t.location), t.description && e.widget.configuration.showDescription && s.a.createElement(V, {
 					text: t.description
@@ -2540,7 +2540,7 @@
 				Me = r("./src/reddit/components/Widgets/Base/index.tsx");
 			var Ae = e => s.a.createElement(Me.b, null, "This widget hasn't been implemented yet!");
 
-			function Be(e) {
+			function Re(e) {
 				const t = function(e) {
 					switch (e.kind) {
 						case "moderators":
@@ -3149,7 +3149,7 @@
 				d = e => Object(a.c)(e, {
 					experimentEligibilitySelector: o,
 					experimentName: n.jb
-				}) === n.Sb.Treatment
+				}) === n.Rb.Treatment
 		},
 		"./src/redditGQL/operations/SubredditUserAchievements.json": function(e) {
 			e.exports = JSON.parse('{"id":"92790c69eba6"}')
@@ -3159,4 +3159,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.6bde39fc8b82cca97631.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.7ea5c480bc1346b14906.js.map

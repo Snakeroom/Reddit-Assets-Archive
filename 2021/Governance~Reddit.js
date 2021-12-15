@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.aa1b169c8da95ddcdd91.js
-// Retrieved at 12/15/2021, 12:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.b38de22bb5ef24e09a20.js
+// Retrieved at 12/15/2021, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit", "reddit-components-BlankPost"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -4307,7 +4307,7 @@
 			const v = e => g.d.reCaptchaEnterprise(e) && !Object(T.d)(e),
 				D = e => !!Object(j.c)(e, {
 					experimentEligibilitySelector: Object(S.d)(Object(S.b)(...a.d)),
-					experimentName: b.te
+					experimentName: b.re
 				}),
 				w = Object(s.b)("LOAD_RECAPTCHA_ENTERPRISE"),
 				P = Object(s.b)("EXECUTE_RECAPTCHA_ENTERPRISE"),
@@ -5178,7 +5178,7 @@
 								postFieldValidationPending: Promise.resolve()
 							})), Object(l.b)(w)
 						}
-						await t(Object(s.b)(`${r.path}`)), f ? f === p.Wd.NewModule && t(Object(i.h)({
+						await t(Object(s.b)(`${r.path}`)), f ? f === p.Ud.NewModule && t(Object(i.h)({
 							tooltipId: u.MOD_WELCOME_TOOLTIP_ID
 						})) : (t(Object(o.h)(b.a.POST_FLOW_UPSELL_MODAL_ID)), Object(v.a)(Object(g.g)()(E))), Object(I.b)(I.a.SubredditCreation)
 					} else P.error && Object(v.a)(Object(g.h)(P.error.type, h)(E)), t(L({
@@ -5827,14 +5827,18 @@
 				return n
 			})), r.d(t, "a", (function() {
 				return a
-			})), r.d(t, "d", (function() {
-				return c
 			})), r.d(t, "f", (function() {
+				return c
+			})), r.d(t, "h", (function() {
 				return o
-			})), r.d(t, "e", (function() {
-				return d
 			})), r.d(t, "g", (function() {
+				return d
+			})), r.d(t, "i", (function() {
 				return i
+			})), r.d(t, "e", (function() {
+				return u
+			})), r.d(t, "d", (function() {
+				return l
 			}));
 			const s = "WRAPPED_REDDIT_CARDS_PENDING",
 				n = "WRAPPED_REDDIT_CARDS_LOADED",
@@ -5842,7 +5846,9 @@
 				c = "WRAPPED_REDDIT_RESET",
 				o = "WRAPPED_REDDIT_SHARE_CARD_WAS_OPENED",
 				d = "WRAPPED_REDDIT_SET_CARD_INDEX",
-				i = "WRAPPED_REDDIT_SUBREDDIT_CHANGED"
+				i = "WRAPPED_REDDIT_SUBREDDIT_CHANGED",
+				u = "WRAPPED_REDDIT_IMAGE_PENDING",
+				l = "WRAPPED_REDDIT_IMAGE_LOADED"
 		},
 		"./src/reddit/components/BlankPost/index.tsx": function(e, t, r) {
 			"use strict";
@@ -6304,7 +6310,7 @@
 						subreddit: r
 					} = e, {
 						isSponsored: s
-					} = t, n = Object(c.d)(), o = Object(q.a)(), d = Object(V.a)(p.dd) === p.kd.Enabled, u = Object(c.e)(U.b), l = e => {
+					} = t, n = Object(c.d)(), o = Object(q.a)(), d = Object(V.a)(p.cd) === p.jd.Enabled, u = Object(c.e)(U.b), l = e => {
 						!u || t.media && Object(S.H)(t.media) || (e.preventDefault(), n(Object(O.ab)(Object(E.b)(t.permalink), t.id)))
 					};
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return a.a.createElement(z, {
@@ -26507,6 +26513,7 @@
 				}),
 				lT = r("./src/reddit/actions/wrappedReddit/constants.ts");
 			const pT = {
+				isImageLoading: !1,
 				isCardsLoading: !1,
 				cardsLoadingError: null,
 				cards: [],
@@ -26664,9 +26671,17 @@
 				widgets: uT,
 				wrappedReddit: (e = pT, t) => {
 					switch (t.type) {
-						case lT.f:
+						case lT.h:
 							return {
 								...e, shareCardWasOpened: !0
+							};
+						case lT.d:
+							return {
+								...e, isImageLoading: !1
+							};
+						case lT.e:
+							return {
+								...e, isImageLoading: !0
 							};
 						case lT.c:
 							return {
@@ -26694,20 +26709,21 @@
 								cardsLoadingError: r
 							}
 						}
-						case lT.d:
+						case lT.f:
 							return {
 								...e, ...pT
 							};
-						case lT.e: {
+						case lT.g: {
 							const {
 								index: r
 							} = t.payload;
 							return {
 								...e,
+								isImageLoading: !1,
 								currentCardIndex: r
 							}
 						}
-						case lT.g: {
+						case lT.i: {
 							const {
 								subredditName: r,
 								subscribe: s
@@ -26938,7 +26954,7 @@
 				l = e => e === n.V.OnetapAuto,
 				p = e => e.user.googleOneTapEnabled,
 				b = Object(s.a)(o.K, i, (e, t) => !e && !!t),
-				f = Object(s.a)(o.K, i, (e, t) => !e && !!t && !Object(n.jf)(t))
+				f = Object(s.a)(o.K, i, (e, t) => !e && !!t && !Object(n.hf)(t))
 		},
 		"./src/reddit/selectors/moderatingComments.ts": function(e, t, r) {
 			"use strict";
@@ -27217,4 +27233,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.aa1b169c8da95ddcdd91.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.b38de22bb5ef24e09a20.js.map

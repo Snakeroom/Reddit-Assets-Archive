@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.4abadf99f20e8d41d124.js
-// Retrieved at 12/15/2021, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.684df5d4023dd1c31255.js
+// Retrieved at 12/15/2021, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~Subreddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, r) {
@@ -640,12 +640,12 @@
 					userName: D,
 					isProfileAvatarChangeFixEnabled: U,
 					...A
-				} = e, R = !!i && Object(b.e)(i) === D, L = R ? i : k, w = L && L.accountIcon || a, M = k ? k.isNSFW : x, H = Object(u.a)(w) && !O, G = H ? c.a.createElement(p.a, {
+				} = e, L = !!i && Object(b.e)(i) === D, R = L ? i : k, w = R && R.accountIcon || a, M = k ? k.isNSFW : x, H = Object(u.a)(w) && !O, G = H ? c.a.createElement(p.a, {
 					headshot: w,
 					className: e.className
 				}) : c.a.createElement(f.b, j({}, A, {
 					iconUrl: O && r ? "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_3.png" : w,
-					isCurrentUser: R,
+					isCurrentUser: L,
 					isNSFW: M
 				})), [B, W] = Object(s.useState)(!1), q = Object(s.useMemo)(() => ({
 					input: {
@@ -983,9 +983,9 @@
 			})), r.d(t, "p", (function() {
 				return A
 			})), r.d(t, "i", (function() {
-				return R
-			})), r.d(t, "j", (function() {
 				return L
+			})), r.d(t, "j", (function() {
+				return R
 			})), r.d(t, "g", (function() {
 				return w
 			})), r.d(t, "b", (function() {
@@ -1177,13 +1177,13 @@
 							f && w(t);
 							break;
 						case c.Mb.MODERATION_PAGES:
-							f && R(t, !0, u ? u.subredditName : null, u ? u.profileName : null);
+							f && L(t, !0, u ? u.subredditName : null, u ? u.profileName : null);
 							break;
 						case c.Mb.COLLECTION_COMMENTS:
 							f && $(t, !0);
 							break;
 						case c.Mb.MODQUEUE_PAGES:
-							f && L(t, u ? u.subredditName : null, u ? u.profileName : null);
+							f && R(t, u ? u.subredditName : null, u ? u.profileName : null);
 							break;
 						case c.Mb.SUBREDDIT_LEADERBOARD:
 							f && Object(_.a)(Y()(t));
@@ -1394,7 +1394,7 @@
 						})
 					})
 				},
-				R = (e, t, r, n) => {
+				L = (e, t, r, n) => {
 					Object(_.a)({
 						source: "global",
 						action: "view",
@@ -1409,7 +1409,7 @@
 						adblock: x.e(e)
 					})
 				},
-				L = (e, t, r) => {
+				R = (e, t, r) => {
 					Object(_.a)({
 						source: "global",
 						action: "view",
@@ -2180,7 +2180,7 @@
 					return n ? n * s.Rb < 1639443600180 ? void 0 : O(e) : void 0
 				},
 				O = Object(n.a)(e => Object(i.c)(e, {
-					experimentName: c.Nd,
+					experimentName: c.Ld,
 					experimentEligibilitySelector: a.e
 				}), d.a)
 		},
@@ -2195,4 +2195,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.4abadf99f20e8d41d124.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.684df5d4023dd1c31255.js.map

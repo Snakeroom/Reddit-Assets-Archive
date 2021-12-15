@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NotificationsInbox.bd7ec30dce76376664b8.js
-// Retrieved at 12/14/2021, 12:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationsInbox.34df6ad7032d8550019e.js
+// Retrieved at 12/15/2021, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationsInbox"], {
 		"./src/reddit/actions/pages/notificationsInbox.ts": function(e, t, n) {
@@ -21,7 +21,7 @@
 			const p = () => async (e, t) => {
 				const n = t();
 				if (!(Object(b.K)(n) || Object(b.J)(n))) return Object(d.a)(e, n);
-				Object(u.e)(n) ? (e(f()), e(g()), await e(h())) : e(Object(i.c)("/"))
+				Object(u.b)(n) ? (e(f()), e(g()), await e(h())) : e(Object(i.c)("/"))
 			}, f = () => Object(a.k)({
 				actionSource: a.a.NotificationsInbox,
 				redirectUrl: l.b
@@ -32,7 +32,7 @@
 					i = Object(m.g)(t()),
 					s = !(!i || !i.length),
 					a = Object(b.K)(n) || Object(b.J)(n);
-				if (s || !a || !Object(u.e)(n)) return;
+				if (s || !a || !Object(u.b)(n)) return;
 				const o = {
 					first: 10
 				};
@@ -530,7 +530,7 @@
 				y = n("./src/reddit/pages/NotificationsInbox/Content/index.m.less"),
 				k = n.n(y);
 			const j = e => {
-				const t = Object(d.e)(O.h),
+				const t = Object(d.e)(O.e),
 					n = Object(N.a)(),
 					[i, a] = Object(_.a)(e.userId),
 					r = t && !i;
@@ -617,7 +617,7 @@
 				earlierNotifications: R.b,
 				hasNextPage: R.d,
 				inboxBadgeCount: M.g,
-				isInboxPostEmbedEnabled: O.d,
+				isInboxPostEmbedEnabled: O.a,
 				isPending: R.e,
 				todayNotifications: R.i,
 				userId: B.pb
@@ -733,4 +733,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsInbox.bd7ec30dce76376664b8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsInbox.34df6ad7032d8550019e.js.map

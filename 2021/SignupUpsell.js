@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SignupUpsell.f1ae20c8d33fe31d06fb.js
-// Retrieved at 12/15/2021, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SignupUpsell.578c08328d61e2609644.js
+// Retrieved at 12/15/2021, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SignupUpsell"], {
 		"./src/reddit/components/Upsell/SSOButton/index.m.less": function(e, t, s) {
@@ -106,12 +106,12 @@
 				});
 			var E = s("./src/reddit/hooks/promo/useIsSignupUpsellVariantEligible.ts"),
 				O = s("./src/reddit/icons/svgs/AppleLogo/index.tsx"),
-				N = s("./src/reddit/icons/svgs/Close/index.tsx"),
-				B = s("./src/reddit/icons/svgs/GoogleLogo/index.tsx"),
-				w = s("./src/reddit/selectors/experiments/signupUpsellExperiment.ts"),
-				L = s("./src/reddit/components/Upsell/SignupUpsell/index.m.less"),
-				k = s.n(L);
-			const S = {
+				S = s("./src/reddit/icons/svgs/Close/index.tsx"),
+				N = s("./src/reddit/icons/svgs/GoogleLogo/index.tsx"),
+				B = s("./src/reddit/selectors/experiments/signupUpsellExperiment.ts"),
+				w = s("./src/reddit/components/Upsell/SignupUpsell/index.m.less"),
+				L = s.n(w);
+			const k = {
 					S: "small",
 					L: "large"
 				},
@@ -136,15 +136,15 @@
 						m(), u(Object(c.k)())
 					},
 					f = function() {
-						const e = Object(i.e)(w.b),
-							t = Object(i.e)(w.d),
-							s = Object(i.e)(w.f),
-							l = Object(E.a)(b.Tb.Bottom_sheet),
-							o = Object(E.a)(b.Tb.Bottom_cell),
-							c = Object(E.a)(b.Tb.Bottom_cell_dismissible),
-							r = Object(E.a)(b.Tb.Bottom_cell_dismissible_immediate_trigger),
-							a = Object(E.a)(b.Tb.Bottom_cell_signup_upsell_copy),
-							d = Object(E.a)(b.Tb.Bottom_cell_surprise_install_copy);
+						const e = Object(i.e)(B.b),
+							t = Object(i.e)(B.d),
+							s = Object(i.e)(B.f),
+							l = Object(E.a)(b.Sb.Bottom_sheet),
+							o = Object(E.a)(b.Sb.Bottom_cell),
+							c = Object(E.a)(b.Sb.Bottom_cell_dismissible),
+							r = Object(E.a)(b.Sb.Bottom_cell_dismissible_immediate_trigger),
+							a = Object(E.a)(b.Sb.Bottom_cell_signup_upsell_copy),
+							d = Object(E.a)(b.Sb.Bottom_cell_surprise_install_copy);
 						let p;
 						if (e) p = I;
 						else if (t) p = U;
@@ -161,9 +161,9 @@
 						if (e && d) return `${u}bottom_cell_surprise_install_copy.png`;
 						throw new Error("Invalid variant for signup upsell")
 					}(),
-					L = Object(E.a)(b.Tb.Bottom_cell_signup_upsell_copy),
-					A = Object(E.a)(b.Tb.Bottom_cell_surprise_install_copy),
-					D = L ? l.fbt._("Come join us, we have snacks", null, {
+					w = Object(E.a)(b.Sb.Bottom_cell_signup_upsell_copy),
+					A = Object(E.a)(b.Sb.Bottom_cell_surprise_install_copy),
+					D = w ? l.fbt._("Come join us, we have snacks", null, {
 						hk: "1LUl2W"
 					}) : l.fbt._("Log in or sign up for the best experience", null, {
 						hk: "2LAHQy"
@@ -174,32 +174,32 @@
 						hk: "2NvKYa"
 					});
 				return o.createElement("div", {
-					className: Object(d.a)(k.a.wrapper, {
-						[k.a.small]: t === S.S,
-						[k.a.large]: t === S.L
+					className: Object(d.a)(L.a.wrapper, {
+						[L.a.small]: t === k.S,
+						[L.a.large]: t === k.L
 					})
 				}, e && o.createElement("button", {
 					"aria-label": l.fbt._("Close", null, {
 						hk: "3hZtiD"
 					}),
-					className: k.a.closeButton,
+					className: L.a.closeButton,
 					onClick: () => {
 						e(), s(h())
 					},
 					type: "button"
-				}, o.createElement(N.a, null)), o.createElement("div", {
-					className: k.a.title
+				}, o.createElement(S.a, null)), o.createElement("div", {
+					className: L.a.title
 				}, D), o.createElement("div", {
-					className: k.a.bottom
+					className: L.a.bottom
 				}, o.createElement("div", {
-					className: k.a.left
+					className: L.a.left
 				}, o.createElement(_, {
-					Icon: B.a,
+					Icon: N.a,
 					onClick: () => {
 						g(), s(j(x.Google))
 					},
 					size: p.d.M,
-					iconClassName: k.a.googleIcon
+					iconClassName: L.a.googleIcon
 				}, l.fbt._("Continue with Google", null, {
 					hk: "1jIIEZ"
 				})), o.createElement(_, {
@@ -208,14 +208,14 @@
 						g(), s(j(x.Apple))
 					},
 					size: p.d.M,
-					iconClassName: k.a.appleIcon,
-					className: k.a.appleButton
+					iconClassName: L.a.appleIcon,
+					className: L.a.appleButton
 				}, l.fbt._("Continue with Apple", null, {
 					hk: "2Jn3ON"
 				})), o.createElement("div", {
-					className: k.a.bottomWrapper
+					className: L.a.bottomWrapper
 				}, o.createElement(p.j, {
-					className: Object(d.a)(k.a.linkButton, k.a.emailButton),
+					className: Object(d.a)(L.a.linkButton, L.a.emailButton),
 					onClick: () => {
 						g(), s(j(x.Reddit))
 					},
@@ -224,7 +224,7 @@
 				}, l.fbt._("Continue with Email", null, {
 					hk: "2zvL1n"
 				})), o.createElement(p.j, {
-					className: k.a.linkButton,
+					className: L.a.linkButton,
 					onClick: () => {
 						m(), u(Object(c.i)()), s(v())
 					},
@@ -233,17 +233,17 @@
 				}, l.fbt._("Log In", null, {
 					hk: "3HqaJR"
 				})))), o.createElement("div", {
-					className: k.a.divider
+					className: L.a.divider
 				}), o.createElement("div", {
-					className: k.a.right
+					className: L.a.right
 				}, o.createElement("img", {
 					alt: l.fbt._("QR Code to get the Reddit app", null, {
 						hk: "2uYhIL"
 					}),
-					className: k.a.img,
+					className: L.a.img,
 					src: f
 				}), o.createElement("div", {
-					className: k.a.downloadAppLabel
+					className: L.a.downloadAppLabel
 				}, H))))
 			}
 		},
@@ -333,9 +333,9 @@
 					experimentName: e,
 					experimentEligibilitySelector: r,
 					throttledVariants: {
-						[l.Tb.Bottom_cell_dismissible]: e,
-						[l.Tb.Bottom_cell_dismissible_immediate_trigger]: e,
-						[l.Tb.Bottom_sheet]: e
+						[l.Sb.Bottom_cell_dismissible]: e,
+						[l.Sb.Bottom_cell_dismissible_immediate_trigger]: e,
+						[l.Sb.Bottom_sheet]: e
 					},
 					expEventOverride: t
 				})
@@ -349,4 +349,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SignupUpsell.f1ae20c8d33fe31d06fb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SignupUpsell.578c08328d61e2609644.js.map

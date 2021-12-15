@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~e4e56b68.09a38a7f3db34abd330f.js
-// Retrieved at 12/15/2021, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~e4e56b68.f66bb38e1a49ee38da76.js
+// Retrieved at 12/15/2021, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~e4e56b68"], {
 		"./src/reddit/actions/economics/subredditPremium/actionCreators.ts": function(e, t, r) {
@@ -1956,7 +1956,7 @@
 						showTimestamp: j = !0,
 						subredditOrProfile: E,
 						tooltipType: H
-					} = e, D = Object(a.d)(), U = Object(w.a)(), G = Object(a.e)(ae.a), q = Object(a.e)(ce.d), W = Object(a.e)(ce.g) || ["popular", "all"].includes(q || ""), V = Object(a.e)(ie.b), J = !(!A.isSponsored || !G || Object(p.jf)(G));
+					} = e, D = Object(a.d)(), U = Object(w.a)(), G = Object(a.e)(ae.a), q = Object(a.e)(ce.d), W = Object(a.e)(ce.g) || ["popular", "all"].includes(q || ""), V = Object(a.e)(ie.b), J = !(!A.isSponsored || !G || Object(p.hf)(G));
 					Object(s.useEffect)(() => {
 						J && D(Object(m.d)(A.author))
 					}, []);
@@ -3058,15 +3058,15 @@
 			const o = e => {
 					const t = Object(n.c)(e, {
 						experimentEligibilitySelector: a.K,
-						experimentName: s.wc
+						experimentName: s.vc
 					});
-					return !(!t || Object(s.jf)(t))
+					return !(!t || Object(s.hf)(t))
 				},
 				i = e => {
 					return Object(n.c)(e, {
 						experimentEligibilitySelector: a.K,
-						experimentName: s.wc
-					}) === s.Yc.ListingEnabled
+						experimentName: s.vc
+					}) === s.Xc.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/gold/topAwarded.ts": function(e, t, r) {
@@ -3126,4 +3126,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~e4e56b68.09a38a7f3db34abd330f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~e4e56b68.f66bb38e1a49ee38da76.js.map

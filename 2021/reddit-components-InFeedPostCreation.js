@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.f8bfd84ce6152f400f29.js
-// Retrieved at 12/15/2021, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.296971286f771e208568.js
+// Retrieved at 12/15/2021, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-InFeedPostCreation"], {
 		"./src/reddit/components/InFeedPostCreation/index.m.less": function(e, t, n) {
@@ -73,19 +73,19 @@
 					subreddit: E.w,
 					subredditAboutInfo: E.t
 				}),
-				L = Object(c.b)(M, e => ({
+				g = Object(c.b)(M, e => ({
 					navigateTo: t => e(Object(i.b)(t)),
 					toggleTooltip: t => e(Object(u.h)({
 						tooltipId: t
 					}))
 				})),
-				g = () => r.fbt._("Create Media Post", null, {
+				L = () => r.fbt._("Create Media Post", null, {
 					hk: "3T3YMO"
 				}),
 				v = () => r.fbt._("Create Link Post", null, {
 					hk: "JUQfs"
 				});
-			t.default = Object(m.c)(L(({
+			t.default = Object(m.c)(g(({
 				currentUser: e,
 				isPresenceConsumptionExpEnabled: t,
 				isPresenceTogglePref: n,
@@ -150,7 +150,7 @@
 					type: "text"
 				}), b.media && o.a.createElement(I.t, {
 					className: C.a.Button,
-					"aria-label": g(),
+					"aria-label": L(),
 					priority: I.c.Plain,
 					kind: I.b.InternalLink,
 					size: I.d.M,
@@ -164,7 +164,7 @@
 				}, o.a.createElement(p.c, {
 					caretOnTop: !0,
 					tooltipId: j.Media,
-					text: g()
+					text: L()
 				})), b.link && o.a.createElement(I.t, {
 					className: C.a.Button,
 					priority: I.c.Plain,
@@ -181,7 +181,7 @@
 				}, o.a.createElement(p.c, {
 					caretOnTop: !0,
 					tooltipId: j.Media,
-					text: g()
+					text: L()
 				})))
 			}))
 		},
@@ -255,30 +255,30 @@
 			const c = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.ie
-					}) === r.Tc
+						experimentName: r.ge
+					}) === r.Sc
 				},
 				i = e => {
 					if (Object(o.a)(e)) return !1;
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.he
-					}) === r.Tc
+						experimentName: r.fe
+					}) === r.Sc
 				},
 				a = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.Yd
-					}) === r.Tc
+						experimentName: r.Wd
+					}) === r.Sc
 				},
 				d = e => {
 					if (Object(o.a)(e)) return !1;
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.Xd
-					}) === r.Tc
+						experimentName: r.Vd
+					}) === r.Sc
 				}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.f8bfd84ce6152f400f29.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.296971286f771e208568.js.map
