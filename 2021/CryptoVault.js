@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CryptoVault.7ab2ba38b17051a91555.js
-// Retrieved at 11/15/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CryptoVault.f4d34a38cf0b6a149bbe.js
+// Retrieved at 12/15/2021, 4:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CryptoVault"], {
 		"./src/reddit/actions/economics/claims/constants.ts": function(e, t, n) {
@@ -514,8 +514,8 @@
 				return E(e, r.F).map(e => e.id)
 			}
 
-			function b(e) {
-				return E(e, e => e.e === r.o).map(e => e.u)
+			function b(e, t = !1) {
+				return E(e, e => e.e === r.o || t && e.e === r.y).map(e => e.u ? e.u : `https://reddit.com/r/${e.t}`)
 			}
 		},
 		"./src/reddit/reducers/features/crypto/index.ts": function(e, t, n) {
@@ -674,4 +674,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CryptoVault.7ab2ba38b17051a91555.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CryptoVault.f4d34a38cf0b6a149bbe.js.map

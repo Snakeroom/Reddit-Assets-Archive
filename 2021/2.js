@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/2.e3993b7ffc43ad1961b6.js
-// Retrieved at 12/6/2021, 3:50:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/2.36f453c9e7302bd8f5e1.js
+// Retrieved at 12/15/2021, 4:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	[2], {
 		"./src/reddit/helpers/graphql/normalizeCommentFromGql/index.ts": function(e, t, r) {
@@ -231,4 +231,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/2.e3993b7ffc43ad1961b6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/2.36f453c9e7302bd8f5e1.js.map

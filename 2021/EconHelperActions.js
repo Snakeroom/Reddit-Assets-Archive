@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconHelperActions.71a72cf4a75b5f52fa38.js
-// Retrieved at 11/11/2021, 4:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconHelperActions.9cc4d3b0df22950c13fc.js
+// Retrieved at 12/15/2021, 4:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconHelperActions"], {
 		"./node_modules/lodash/_LazyWrapper.js": function(e, t, r) {
@@ -1518,8 +1518,8 @@
 				return _(e, n.F).map(e => e.id)
 			}
 
-			function f(e) {
-				return _(e, e => e.e === n.o).map(e => e.u)
+			function f(e, t = !1) {
+				return _(e, e => e.e === n.o || t && e.e === n.y).map(e => e.u ? e.u : `https://reddit.com/r/${e.t}`)
 			}
 		},
 		"./src/reddit/models/Badge/index.ts": function(e, t, r) {
@@ -2224,4 +2224,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconHelperActions.71a72cf4a75b5f52fa38.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconHelperActions.9cc4d3b0df22950c13fc.js.map

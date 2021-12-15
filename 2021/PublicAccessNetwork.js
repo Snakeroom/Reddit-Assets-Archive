@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.cd07e1566ca0fc6aae77.js
-// Retrieved at 12/15/2021, 2:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.4e835b134d4b8a0c62c5.js
+// Retrieved at 12/15/2021, 4:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -286,13 +286,13 @@
 					experimentEligibilitySelector: u.a,
 					experimentName: m.Fd
 				});
-				return Object(m.if)(t) ? void 0 : t
+				return Object(m.jf)(t) ? void 0 : t
 			}, e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
 					experimentName: m.Gd
 				});
-				return Object(m.if)(t) ? void 0 : t
+				return Object(m.jf)(t) ? void 0 : t
 			}, (e, t) => e === m.Jd.Enabled && t === m.Jd.Enabled);
 			var h = s("./src/config.ts");
 			var b = s("./src/reddit/selectors/user.ts");
@@ -1385,7 +1385,7 @@
 					}
 					if (V) {
 						const r = ((e, t) => {
-								const s = Object(te.U)(e, {
+								const s = Object(te.V)(e, {
 										postId: t
 									}),
 									o = Object(te.H)(e, {
@@ -1663,7 +1663,7 @@
 							key: a
 						}));
 						const s = n().posts.models[e],
-							r = s && Object(te.U)(n(), {
+							r = s && Object(te.V)(n(), {
 								postId: s.id
 							});
 						s && "subreddit" === s.belongsTo.type && r && Object(ee.a)(i, {
@@ -7829,7 +7829,7 @@
 				a = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const i = e => {
 					const t = Object(a.a)(e);
-					return Boolean(t) && !Object(n.if)(t)
+					return Boolean(t) && !Object(n.jf)(t)
 				},
 				d = Object(o.a)(i, r.d, (e, t) => e && !t)
 		},
@@ -7847,4 +7847,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.cd07e1566ca0fc6aae77.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.4e835b134d4b8a0c62c5.js.map

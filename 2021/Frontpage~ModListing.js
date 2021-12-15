@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~ModListing.d7358f72e3ca10f62db3.js
-// Retrieved at 12/15/2021, 2:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~ModListing.b7150619af36dba0bd47.js
+// Retrieved at 12/15/2021, 4:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~ModListing"], {
 		"./src/reddit/actions/focusedVerticals/index.ts": function(e, t, n) {
@@ -2123,7 +2123,7 @@
 					measureScrollFPS: g.d.measureScrollFPS,
 					layout: (e, t) => t.forcedLayout || Object(p.Q)(e, t),
 					loadMore: y.g,
-					postsById: _.S,
+					postsById: _.T,
 					postIds: Object(o.a)((e, {
 						listingKey: t,
 						listingName: n,
@@ -2713,7 +2713,7 @@
 						experimentEligibilitySelector: o.K,
 						experimentName: s.vc
 					});
-					return !(!t || Object(s.if)(t))
+					return !(!t || Object(s.jf)(t))
 				},
 				i = e => {
 					return Object(r.c)(e, {
@@ -2842,4 +2842,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing.d7358f72e3ca10f62db3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing.b7150619af36dba0bd47.js.map

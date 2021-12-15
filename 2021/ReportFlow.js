@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlow.7c5a391654f01c74bfec.js
-// Retrieved at 12/15/2021, 2:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlow.a766143b2d0a9d1c3f7b.js
+// Retrieved at 12/15/2021, 4:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlow", "ReportFlowNew"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -897,7 +897,7 @@
 						redirectUrl: R.permalink
 					}));
 					s(Object(c.B)(R.author));
-					const C = Object(x.U)(u, {
+					const C = Object(x.V)(u, {
 							postId: p ? u.features.comments.models[e].postId : u.posts.models[e].id
 						}),
 						g = f && Object(b.p)(R) || p && W(R, u);
@@ -1842,7 +1842,7 @@
 					sitewideRules: e => e.reportRules.sitewideRules,
 					subredditOrProfile: (e, {
 						postId: t
-					}) => t ? Object(ze.U)(e, {
+					}) => t ? Object(ze.V)(e, {
 						postId: t
 					}) : null,
 					subredditRules: e => e.subreddits.rules,
@@ -3750,4 +3750,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.7c5a391654f01c74bfec.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.a766143b2d0a9d1c3f7b.js.map

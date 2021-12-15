@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.0ab0a76c8d614d71d970.js
-// Retrieved at 12/15/2021, 2:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.a09b3ad2e34f61ea8932.js
+// Retrieved at 12/15/2021, 4:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -2212,7 +2212,7 @@
 			var ve = fe(ye),
 				Ee = a("./src/reddit/selectors/posts.ts");
 			const xe = Object(u.c)({
-				recentPosts: Ee.Q
+				recentPosts: Ee.R
 			});
 			var ke = Object(l.b)(xe, (e, t) => ({
 					openLightbox: t => () => e(Object(pe.a)(t.permalink))
@@ -3545,7 +3545,7 @@
 				l = a("./src/reddit/selectors/platform.ts"),
 				d = a("./src/reddit/selectors/posts.ts");
 			const u = Object(c.c)({
-					postCount: d.M,
+					postCount: d.N,
 					previousPageIsOverlay: l.p,
 					tabBadged: e => e.tabBadged
 				}),
@@ -6069,4 +6069,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.0ab0a76c8d614d71d970.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.a09b3ad2e34f61ea8932.js.map

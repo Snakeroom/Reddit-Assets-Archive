@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index.5e60d17fe5721ec1c076.js
-// Retrieved at 12/15/2021, 3:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index.533d5e058f1b73fb1022.js
+// Retrieved at 12/15/2021, 4:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index"], {
 		"./src/reddit/components/Econ/Audio/MuteIcon.tsx": function(e, t, n) {
@@ -405,7 +405,7 @@
 				postId: t
 			}) => {
 				const n = Object(d.a)(),
-					a = Object(s.e)(e => Object(P.U)(e, {
+					a = Object(s.e)(e => Object(P.V)(e, {
 						postId: t
 					}));
 				return o.a.createElement(O.a, {
@@ -443,7 +443,7 @@
 			}, e), o.a.createElement("div", null, t)), n), S = ({
 				postId: e
 			}) => {
-				const t = Object(s.e)(t => Object(P.U)(t, {
+				const t = Object(s.e)(t => Object(P.V)(t, {
 					postId: e
 				}));
 				return o.a.createElement(A, {
@@ -818,4 +818,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.5e60d17fe5721ec1c076.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.533d5e058f1b73fb1022.js.map

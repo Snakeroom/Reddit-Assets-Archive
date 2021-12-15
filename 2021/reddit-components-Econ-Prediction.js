@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.9852bfbb99b490072134.js
-// Retrieved at 12/15/2021, 3:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.d50cd3648e59ba5ff33d.js
+// Retrieved at 12/15/2021, 4:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction"], {
 		"./src/lib/constants/specialMembership.ts": function(e, t, n) {
@@ -947,7 +947,7 @@
 					isEditing: l.M,
 					prediction: d.g,
 					post: u.H,
-					subredditOrProfile: u.U,
+					subredditOrProfile: u.V,
 					userId: m.pb
 				}),
 				Be = Object(c.u)({
@@ -1298,8 +1298,8 @@
 				return p(e, s.F).map(e => e.id)
 			}
 
-			function f(e) {
-				return p(e, e => e.e === s.o).map(e => e.u)
+			function f(e, t = !1) {
+				return p(e, e => e.e === s.o || t && e.e === s.y).map(e => e.u ? e.u : `https://reddit.com/r/${e.t}`)
 			}
 		},
 		"./src/reddit/hooks/usePageLayer.ts": function(e, t, n) {
@@ -1982,4 +1982,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.9852bfbb99b490072134.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.d50cd3648e59ba5ff33d.js.map
