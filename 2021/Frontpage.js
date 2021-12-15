@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.0c89f70da1beda520937.js
-// Retrieved at 12/14/2021, 5:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.531c0ce8f1b30e69fb1e.js
+// Retrieved at 12/15/2021, 9:30:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -2502,10 +2502,10 @@
 			}
 			var qe = a("./src/reddit/selectors/experiments/utils.ts");
 			const Ue = Object(u.a)(e => Object(Re.c)(e, {
-					experimentName: De.Gd,
+					experimentName: De.Hd,
 					experimentEligibilitySelector: Re.a
 				}), qe.a),
-				Ve = Object(u.a)(Ue, e => e === De.Hd.Enabled);
+				Ve = Object(u.a)(Ue, e => e === De.Id.Enabled);
 			var We = a("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
 				Ge = a("./src/reddit/selectors/user.ts");
 			var He = a("./src/reddit/selectors/seo/linksModule.ts"),
@@ -2536,7 +2536,7 @@
 							return Object(Re.c)(e, {
 								experimentEligibilitySelector: Ge.K,
 								experimentName: De.Wb
-							}) === De.ad
+							}) === De.bd
 						}(e)
 					},
 					isNavbarLikeMwebEnabled: d.a,
@@ -5984,8 +5984,8 @@
 					return Object(n.c)(e, {
 						experimentEligibilitySelector: i,
 						experimentName: s.rc
-					}) === s.cd.Enabled
-				}(e) ? l.Achievements : t === s.dd.ControlBanner ? l.CommunitySpacesControl : t === s.dd.EnabledBanner ? l.CommunitySpaces : null
+					}) === s.dd.Enabled
+				}(e) ? l.Achievements : t === s.ed.ControlBanner ? l.CommunitySpacesControl : t === s.ed.EnabledBanner ? l.CommunitySpaces : null
 			}! function(e) {
 				e.Achievements = "achievements", e.CommunitySpaces = "communitySpaces", e.CommunitySpacesControl = "communitySpaces--control"
 			}(l || (l = {}))
@@ -6077,4 +6077,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.0c89f70da1beda520937.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.531c0ce8f1b30e69fb1e.js.map
