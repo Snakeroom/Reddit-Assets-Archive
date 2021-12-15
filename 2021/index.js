@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index.1e1378c756ca02718037.js
-// Retrieved at 12/15/2021, 2:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index.5e60d17fe5721ec1c076.js
+// Retrieved at 12/15/2021, 3:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index"], {
 		"./src/reddit/components/Econ/Audio/MuteIcon.tsx": function(e, t, n) {
@@ -421,9 +421,9 @@
 					hk: "1QaAgH"
 				}))
 			};
-			var I = n("./src/reddit/components/Econ/Prediction/TournamentSnoosImage/index.tsx"),
-				N = n("./src/reddit/components/Econ/Prediction/TournamentPostBody/PredictionPostCard/index.m.less"),
-				w = n.n(N);
+			var N = n("./src/reddit/components/Econ/Prediction/TournamentSnoosImage/index.tsx"),
+				w = n("./src/reddit/components/Econ/Prediction/TournamentPostBody/PredictionPostCard/index.m.less"),
+				I = n.n(w);
 			const {
 				fbt: C
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), A = ({
@@ -431,15 +431,15 @@
 				description: t,
 				cta: n
 			}) => o.a.createElement("section", {
-				className: w.a.container
+				className: I.a.container
 			}, o.a.createElement(x.a, {
-				className: w.a.confetti
-			}), o.a.createElement(I.a, {
-				className: w.a.image
+				className: I.a.confetti
+			}), o.a.createElement(N.a, {
+				className: I.a.image
 			}), o.a.createElement("div", {
-				className: w.a.label
+				className: I.a.label
 			}, o.a.createElement("div", {
-				className: w.a.header
+				className: I.a.header
 			}, e), o.a.createElement("div", null, t)), n), S = ({
 				postId: e
 			}) => {
@@ -454,7 +454,7 @@
 						hk: "vGyB7"
 					}),
 					cta: o.a.createElement(O.a, {
-						className: w.a.cta,
+						className: I.a.cta,
 						to: `${null==t?void 0:t.url}predictions/`
 					}, C._("View Results", null, {
 						hk: "1UFWjc"
@@ -470,7 +470,7 @@
 					hk: "1Brw70"
 				}),
 				cta: o.a.createElement(k, {
-					className: w.a.cta,
+					className: I.a.cta,
 					postId: e
 				})
 			});
@@ -541,17 +541,16 @@
 			const ee = ({
 				prediction: e,
 				tournamentId: t,
-				subredditId: n,
-				post: a,
-				onPredict: r,
-				...i
+				post: n,
+				onPredict: a,
+				...r
 			}) => {
 				const {
-					isLoading: c,
-					selectedOption: u,
-					selectOption: m,
-					predict: p,
-					cancelAction: b
+					isLoading: i,
+					selectedOption: c,
+					selectOption: u,
+					predict: m,
+					cancelAction: p
 				} = function(e, t, n) {
 					const a = Object(s.d)(),
 						r = Object(s.e)(v.e),
@@ -616,22 +615,21 @@
 							y(!1)
 						}, [])
 					}
-				}(t, e, a);
+				}(t, e, n);
 				return o.a.createElement(o.a.Fragment, null, o.a.createElement(D.a, Q({
 					prediction: e,
-					selectedOptionId: u ? u.id : null,
-					onSelectOption: m
-				}, i)), !!u && o.a.createElement(U.b, {
+					selectedOptionId: c ? c.id : null,
+					onSelectOption: u
+				}, r)), !!c && o.a.createElement(U.a, {
 					className: J.a.modal,
-					isCreatingVote: c,
-					onOverlayClick: b,
-					onCancel: b,
+					isCreatingVote: i,
+					onOverlayClick: p,
+					onCancel: p,
 					onPredict: async e => {
-						await p(e), r && r()
+						await m(e), a && a()
 					},
-					option: u,
+					option: c,
 					pollId: e.id,
-					subredditId: n,
 					tournamentId: t,
 					withOverlay: !0
 				}))
@@ -670,7 +668,6 @@
 					}, t.map((t, n) => Math.abs(i - n) > 1 ? null : o.a.createElement(ee, {
 						key: t.id,
 						className: ne.a.prediction,
-						subredditId: e.belongsTo.id,
 						tournamentId: e.predictionTournament.tournamentId,
 						post: e,
 						prediction: t,
@@ -821,4 +818,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.1e1378c756ca02718037.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.5e60d17fe5721ec1c076.js.map

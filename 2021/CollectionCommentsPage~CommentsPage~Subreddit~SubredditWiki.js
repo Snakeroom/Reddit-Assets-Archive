@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.afebd50cce2865fe2476.js
-// Retrieved at 12/15/2021, 2:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.a0223067c3190051aa6d.js
+// Retrieved at 12/15/2021, 3:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"], {
 		"./node_modules/lodash/random.js": function(e, t, r) {
@@ -42,7 +42,7 @@
 			})), r.d(t, "h", (function() {
 				return y
 			})), r.d(t, "i", (function() {
-				return j
+				return E
 			}));
 			var n = r("./node_modules/linkify-it/index.js"),
 				s = r.n(n),
@@ -93,7 +93,7 @@
 					const r = e.match(t);
 					if (r && 1 === r.length && 0 === r[0].index && r[0].lastIndex === t.length) return r[0]
 				},
-				j = e => {
+				E = e => {
 					const t = p.match(e);
 					if (t && 1 === t.length && 0 === t[0].index) {
 						const r = t[0];
@@ -123,19 +123,19 @@
 			})), r.d(t, "onSubredditUserPowerupsFlairPreferenceUpdateRequested", (function() {
 				return y
 			})), r.d(t, "onSubredditUserPowerupsFlairPreferenceUpdateSuccess", (function() {
-				return j
-			})), r.d(t, "onSubredditUserPowerupsFlairPreferenceUpdateFailed", (function() {
-				return k
-			})), r.d(t, "onSubredditUserPowerupsFlairVisibilityUpdate", (function() {
 				return E
+			})), r.d(t, "onSubredditUserPowerupsFlairPreferenceUpdateFailed", (function() {
+				return j
+			})), r.d(t, "onSubredditUserPowerupsFlairVisibilityUpdate", (function() {
+				return k
 			})), r.d(t, "getSubredditUserPowerupsFlairsAndSupporterInfo", (function() {
 				return O
 			})), r.d(t, "getSubredditCurrentUserPowerupsFlairsAndSupporterInfo", (function() {
 				return N
 			})), r.d(t, "shouldFetchCommentsPowerupsInfo", (function() {
-				return I
-			})), r.d(t, "getSubredditUserCommentsPowerupsInfoFromCommentLinks", (function() {
 				return C
+			})), r.d(t, "getSubredditUserCommentsPowerupsInfoFromCommentLinks", (function() {
+				return I
 			})), r.d(t, "getSubredditUserCommentsPowerupsInfoFromCommentCollection", (function() {
 				return S
 			})), r.d(t, "setSubredditUserAchievementFlair", (function() {
@@ -181,9 +181,9 @@
 			const w = Object(s.a)(f.d),
 				_ = Object(s.a)(f.i),
 				y = Object(s.a)(f.f),
-				j = Object(s.a)(f.g),
-				k = Object(s.a)(f.e),
-				E = Object(s.a)(f.h),
+				E = Object(s.a)(f.g),
+				j = Object(s.a)(f.e),
+				k = Object(s.a)(f.h),
 				O = (e, t) => async (r, n, {
 					gqlContext: s
 				}) => {
@@ -221,7 +221,7 @@
 						userId: i.id
 					});
 					!t && a || await r(O(e, [i.id]))
-				}, I = e => async (t, r) => {
+				}, C = e => async (t, r) => {
 					if (!e) return !1;
 					await t(Object(l.m)(e, {
 						fullData: !0
@@ -230,7 +230,7 @@
 					return Object(b.h)(n, {
 						subredditId: e
 					})
-				}, C = e => async (t, r) => {
+				}, I = e => async (t, r) => {
 					var n;
 					const s = r(),
 						i = e.map(({
@@ -240,14 +240,14 @@
 							commentIds: i
 						}),
 						o = null === (n = a.find(e => e && e.subredditId)) || void 0 === n ? void 0 : n.subredditId;
-					if (!(await t(I(o)))) return;
+					if (!(await t(C(o)))) return;
 					const d = new Set(a.filter(e => !!(null == e ? void 0 : e.authorId)).map(({
 						authorId: e
 					}) => e));
 					await t(O(o, Array.from(d)))
 				}, S = (e, t) => async (r, n) => {
 					if (!t) return;
-					if (!(await r(I(e)))) return;
+					if (!(await r(C(e)))) return;
 					const s = new Set;
 					Object.values(t).forEach(e => {
 						s.add(e.authorId)
@@ -299,9 +299,9 @@
 						userId: d
 					});
 					try {
-						await c(s(), l, f, x), t(j(e))
+						await c(s(), l, f, x), t(E(e))
 					} catch (v) {
-						t(k(e)), i.c.captureException(v), t(Object(u.f)({
+						t(j(e)), i.c.captureException(v), t(Object(u.f)({
 							duration: u.a,
 							kind: m.b.Error,
 							text: n.fbt._("Failed to set preferred achievement flair", null, {
@@ -321,14 +321,14 @@
 							userId: l
 						},
 						b = [Object(h.h)(o, p), Object(h.i)(o, p)].filter(Boolean);
-					r(E({
+					r(k({
 						...p,
 						isHidden: t
 					}));
 					try {
 						await c(a(), e, b, t)
 					} catch (f) {
-						r(E({
+						r(k({
 							...p,
 							isHidden: !t
 						})), i.c.captureException(f), r(Object(u.f)({
@@ -651,8 +651,8 @@
 				w = d.a.div("HeaderContainer", h.a),
 				_ = d.a.span("HeaderText", h.a),
 				y = d.a.wrapped(i.a, "HeaderUrl", h.a),
-				j = d.a.span("Container", h.a),
-				k = Object(o.a)(e => {
+				E = d.a.span("Container", h.a),
+				j = Object(o.a)(e => {
 					const t = Object(m.e)(e.headerText, e.prefixedHeaderText, Object(p.a)(e).banner.communityNameFormat || ""),
 						r = Object(l.a)(e),
 						n = Object(p.a)(e).banner.positionedImageAlignment,
@@ -678,9 +678,9 @@
 					}
 					const u = !!i && !!o && "left" === n,
 						b = Object(m.g)(Object(p.a)(e).banner.backgroundColor, Object(p.a)(e).banner.backgroundImage, Object(p.a)(e).banner.backgroundImagePosition),
-						k = parseInt(Object(p.a)(e).banner.iconDimensions.customSize, 10),
-						E = `${4+k}px`;
-					return s.a.createElement(j, {
+						j = parseInt(Object(p.a)(e).banner.iconDimensions.customSize, 10),
+						k = `${4+j}px`;
+					return s.a.createElement(E, {
 						style: {
 							background: b,
 							height: `${Object(p.a)(e).banner.height}px`
@@ -704,19 +704,19 @@
 						style: {
 							backgroundImage: `url(${r})`,
 							borderRadius: `${Object(p.a)(e).banner.iconDimensions.borderRadius}px`,
-							height: E,
-							width: E
+							height: k,
+							width: k
 						}
 					}) : s.a.createElement(g, {
 						style: {
 							padding: `${Object(p.a)(e).banner.iconDimensions.padding}px`,
 							borderRadius: `${Object(p.a)(e).banner.iconDimensions.borderRadius}px`,
-							height: E,
-							width: E
+							height: k,
+							width: k
 						}
 					})), s.a.createElement(_, {
 						style: {
-							paddingTop: 32 === k ? "4px" : "14px"
+							paddingTop: 32 === j ? "4px" : "14px"
 						}
 					}, t)), s.a.createElement(x, {
 						className: Object(a.a)(h.a.PositionedImage, {
@@ -729,7 +729,7 @@
 						}
 					}))))
 				});
-			t.a = k
+			t.a = j
 		},
 		"./src/reddit/components/IdCard/async.tsx": function(e, t, r) {
 			"use strict";
@@ -1181,7 +1181,7 @@
 				_ = r.n(w);
 			const {
 				fbt: y
-			} = r("./node_modules/fbt/lib/FbtPublic.js"), j = e => {
+			} = r("./node_modules/fbt/lib/FbtPublic.js"), E = e => {
 				const {
 					className: t,
 					powerups: r
@@ -1202,9 +1202,9 @@
 					progress: d
 				}))
 			};
-			var k = r("./src/reddit/components/PowerupsSidebar/Supporters/index.tsx"),
-				E = r("./src/reddit/components/PowerupsSidebar/index.m.less"),
-				O = r.n(E);
+			var j = r("./src/reddit/components/PowerupsSidebar/Supporters/index.tsx"),
+				k = r("./src/reddit/components/PowerupsSidebar/index.m.less"),
+				O = r.n(k);
 			const {
 				fbt: N
 			} = r("./node_modules/fbt/lib/FbtPublic.js");
@@ -1221,10 +1221,10 @@
 					y = Object(a.e)(e => Object(f.R)(e, {
 						subredditId: t
 					})),
-					E = Object(a.e)(e => Object(g.n)(e, {
+					k = Object(a.e)(e => Object(g.n)(e, {
 						subredditId: t
 					})),
-					I = Object(a.e)(e => !!Object(g.l)(e, {
+					C = Object(a.e)(e => !!Object(g.l)(e, {
 						subredditId: t
 					}));
 				Object(s.useEffect)(() => {
@@ -1247,7 +1247,7 @@
 					src: `${n.a.assetPath}/img/powerups/powerups-rangers.png`
 				})), i.a.createElement("h2", {
 					className: O.a.title
-				}, (() => I ? N._("Powerups are unlocked in {communityName}", [N._param("communityName", y.displayText)], {
+				}, (() => C ? N._("Powerups are unlocked in {communityName}", [N._param("communityName", y.displayText)], {
 					hk: "3xCZkG"
 				}) : N._("Powerup to unlock perks for {communityName}", [N._param("communityName", y.displayText)], {
 					hk: "2OPLXh"
@@ -1264,17 +1264,17 @@
 					className: O.a.subTitle
 				}, N._("Community Heroes", null, {
 					hk: "2ssat0"
-				})), i.a.createElement(j, {
+				})), i.a.createElement(E, {
 					className: O.a.progress,
 					powerups: _
-				}), !!(null == E ? void 0 : E.length) && i.a.createElement(k.a, {
-					supporters: E,
+				}), !!(null == k ? void 0 : k.length) && i.a.createElement(j.a, {
+					supporters: k,
 					className: O.a.heroes,
 					maxSupporters: 8,
 					onShowFullSupportersList: () => {
 						v(Object(b.B)()), r(Object(d.i)(t))
 					}
-				}), !(null == E ? void 0 : E.length) && i.a.createElement("div", {
+				}), !(null == k ? void 0 : k.length) && i.a.createElement("div", {
 					className: O.a.becomeFirstHero
 				}, i.a.createElement(u.a, {
 					displayName: N._("Become the first hero!", null, {
@@ -1342,9 +1342,9 @@
 						return e.sidebarPromotedPosts.models[Object(h.a)(r, s, n)]
 					}
 				}),
-				j = Object(d.b)(y),
-				k = w.a.wrapped(b.a, "ThemedWidget", v.a),
-				E = e => !(!e || e.isBlank) && (!e.isMediaOnly || !!(e.media && Object(f.F)(e.media) && e.media.content)),
+				E = Object(d.b)(y),
+				j = w.a.wrapped(b.a, "ThemedWidget", v.a),
+				k = e => !(!e || e.isBlank) && (!e.isMediaOnly || !!(e.media && Object(f.F)(e.media) && e.media.content)),
 				O = [{
 					img: "/img/house-ads/eatcheapandhealthy.png",
 					href: "/r/eatcheapandhealthy"
@@ -1377,7 +1377,7 @@
 								placement: s,
 								redditStyle: a
 							} = this.props;
-						return o.a.createElement(k, {
+						return o.a.createElement(j, {
 							className: n,
 							contentOnly: !0,
 							redditStyle: a
@@ -1389,7 +1389,7 @@
 					}
 				});
 
-			function I({
+			function C({
 				className: e,
 				post: t,
 				placementIndex: r,
@@ -1402,7 +1402,7 @@
 				removeSidebarSpacer: l
 			}) {
 				const u = l ? o.a.Fragment : m.a;
-				if (!d && (E(t) || c)) {
+				if (!d && (k(t) || c)) {
 					let d = null;
 					return c ? d = o.a.createElement(N, {
 						className: e,
@@ -1419,7 +1419,7 @@
 				}
 				return null
 			}
-			t.a = j(I)
+			t.a = E(C)
 		},
 		"./src/reddit/components/SubredditNav/index.m.less": function(e, t, r) {
 			e.exports = {
@@ -1504,14 +1504,14 @@
 						className: o
 					}, a))
 				},
-				j = ({
+				E = ({
 					className: e,
 					isActive: t,
 					...r
 				}) => s.a.createElement(m.a, v({
 					className: Object(p.a)(w(x.a.navLink, t), e)
 				}, r)),
-				k = ({
+				j = ({
 					className: e,
 					href: t,
 					isActive: r,
@@ -1524,7 +1524,7 @@
 				}, n)) : s.a.createElement("a", v({
 					className: w(x.a.subNavLink, r)
 				}, n)),
-				E = ({
+				k = ({
 					className: e,
 					...t
 				}) => s.a.createElement("div", v({
@@ -1554,7 +1554,7 @@
 						props: e,
 						state: t
 					} = this;
-					return s.a.createElement(E, {
+					return s.a.createElement(k, {
 						onClick: this.handleOpen,
 						onMouseLeave: this.handleClose
 					}, s.a.createElement(_, {
@@ -1567,23 +1567,23 @@
 					}, e.children))
 				}
 			}
-			var I = N;
-			const C = e => {
+			var C = N;
+			const I = e => {
 				const t = e.url && Object(u.h)(u.f, e.url);
 				return t ? t.url : e.url
 			};
 			var S = e => e.menuItem.url ? s.a.createElement(y, {
-					href: C(e.menuItem),
+					href: I(e.menuItem),
 					isActive: !!e.isActive,
 					isTopBannerVariant: e.isTopBannerVariant
-				}, e.menuItem.text) : s.a.createElement(I, {
+				}, e.menuItem.text) : s.a.createElement(C, {
 					isActive: !!e.isActive,
 					isTopBannerVariant: e.isTopBannerVariant,
 					label: e.menuItem.text
-				}, e.menuItem.children && e.menuItem.children.map(e => s.a.createElement(k, {
-					key: `${e.text}-${C(e)}`,
+				}, e.menuItem.children && e.menuItem.children.map(e => s.a.createElement(j, {
+					key: `${e.text}-${I(e)}`,
 					role: "listitem",
-					href: C(e),
+					href: I(e),
 					target: "_blank",
 					rel: "noopener"
 				}, e.text))),
@@ -1613,7 +1613,7 @@
 					onActivate: r
 				}) => {
 					const n = Object(T.a)();
-					return e ? s.a.createElement(j, {
+					return e ? s.a.createElement(E, {
 						className: x.a.metaNavLink,
 						to: e.url,
 						isActive: t,
@@ -1655,7 +1655,7 @@
 				Object(B.a)(e);
 				return Object(n.useEffect)(() => {
 					!u || d || m || o || (t(Object(R.m)(l.name)), c(!0))
-				}, [u, d, m, o, t, l.name]), u && m ? s.a.createElement(j, {
+				}, [u, d, m, o, t, l.name]), u && m ? s.a.createElement(E, {
 					className: x.a.predictionsFilter,
 					isActive: o,
 					onClick: () => {
@@ -1904,10 +1904,10 @@
 				w = r("./src/reddit/models/Widgets/index.ts"),
 				_ = r("./src/reddit/selectors/subreddit.ts"),
 				y = r("./src/reddit/components/Widgets/PostFlair/index.m.less"),
-				j = r.n(y);
+				E = r.n(y);
 
-			function k() {
-				return (k = Object.assign || function(e) {
+			function j() {
+				return (j = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var r = arguments[t];
 						for (var n in r) Object.prototype.hasOwnProperty.call(r, n) && (e[n] = r[n])
@@ -1915,7 +1915,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const E = 129,
+			const k = 129,
 				O = Object(h.u)({
 					filterName: e => Object(h.V)(e)[b.g],
 					url: e => Object(h.db)(e)
@@ -1923,21 +1923,21 @@
 				N = Object(o.c)({
 					subredditId: (e, t) => Object(_.C)(e, t.subredditName)
 				}),
-				I = Object(a.b)(N),
-				C = l.a.div("WidgetContent", j.a),
+				C = Object(a.b)(N),
+				I = l.a.div("WidgetContent", E.a),
 				S = ({
 					display: e,
 					isFlairFilter: t,
 					onMouseDown: r,
 					...n
 				}) => i.a.createElement("li", {
-					className: Object(d.a)(j.a.StyledFlair, e === w.g.Cloud && j.a.cloudDisplay, {
-						[j.a.flairFilter]: t,
-						[j.a["m-selected"]]: n.isSelected
+					className: Object(d.a)(E.a.StyledFlair, e === w.g.Cloud && E.a.cloudDisplay, {
+						[E.a.flairFilter]: t,
+						[E.a["m-selected"]]: n.isSelected
 					}),
 					onMouseDown: r
-				}, i.a.createElement(u.b, k({}, n, {
-					className: j.a.Flair,
+				}, i.a.createElement(u.b, j({}, n, {
+					className: E.a.Flair,
 					isFlairFilter: t,
 					forceSmallEmojis: !0
 				})));
@@ -1964,14 +1964,14 @@
 				componentDidMount() {
 					c.a.read(() => {
 						const e = this.flairListRef.current && this.flairListRef.current.offsetHeight;
-						e && e > E && this.setState({
+						e && e > k && this.setState({
 							hasOverflow: !0
 						})
 					})
 				}
 				renderButton() {
 					return i.a.createElement(g.r, {
-						className: j.a.flairFilterButton,
+						className: E.a.flairFilterButton,
 						onMouseDown: this.trackFlairOverflowClick,
 						onClick: this.onToggleCollapse
 					}, this.state.isCollapsed ? n.fbt._("See more", null, {
@@ -2001,9 +2001,9 @@
 				renderFlairFilters(e) {
 					const {
 						isCollapsed: t
-					} = this.state, r = t ? E : this.flairListRef.current && this.flairListRef.current.offsetHeight || "none";
+					} = this.state, r = t ? k : this.flairListRef.current && this.flairListRef.current.offsetHeight || "none";
 					return i.a.createElement("div", {
-						className: j.a.flairFilterContainer,
+						className: E.a.flairFilterContainer,
 						style: {
 							maxHeight: r
 						}
@@ -2038,10 +2038,10 @@
 						title: t.shortName,
 						truncateThreshold: this.props.truncateThreshold,
 						widgetKind: t.kind
-					}, i.a.createElement(C, null, a && this.renderSelectedFlairFilter(a), !a && this.renderFlairFilters(s), o && this.renderButton()))
+					}, i.a.createElement(I, null, a && this.renderSelectedFlairFilter(a), !a && this.renderFlairFilters(s), o && this.renderButton()))
 				}
 			}
-			t.a = O(I(Object(m.c)(F)))
+			t.a = O(C(Object(m.c)(F)))
 		},
 		"./src/reddit/components/Widgets/SubredditRules/Rule/index.m.less": function(e, t, r) {
 			e.exports = {
@@ -2064,7 +2064,7 @@
 		"./src/reddit/components/Widgets/SubredditRules/index.tsx": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
-				return k
+				return j
 			}));
 			var n = r("./node_modules/fbt/lib/FbtPublic.js"),
 				s = r("./node_modules/react/index.js"),
@@ -2086,7 +2086,7 @@
 				w = d.a.div("RuleDescription", g.a),
 				_ = d.a.wrapped(c.a, "RawHTMLDisplay", g.a),
 				y = {};
-			class j extends i.a.Component {
+			class E extends i.a.Component {
 				constructor(e) {
 					super(e), this.onClick = () => {
 						Object(u.f)() || this.setState({
@@ -2131,7 +2131,7 @@
 					}) : e.rule.description))
 				}
 			}
-			const k = e => e.rules.length > 0 ? i.a.createElement(a.a, {
+			const j = e => e.rules.length > 0 ? i.a.createElement(a.a, {
 				className: e.className,
 				styles: e.styles,
 				title: n.fbt._("{subredditName} Rules", [n.fbt._param("subredditName", `r/${e.subredditName}`)], {
@@ -2139,14 +2139,14 @@
 				}),
 				redditStyle: e.redditStyle
 			}, e.rules.map((function(t, r) {
-				return i.a.createElement(j, {
+				return i.a.createElement(E, {
 					key: `rule${t.shortName}${t.createdUtc}`,
 					rule: t,
 					display: e.display,
 					humanIndex: r + 1
 				})
 			}))) : null;
-			t.b = e => i.a.createElement(k, {
+			t.b = e => i.a.createElement(j, {
 				rules: e.widget.data || [],
 				subredditName: e.subredditName,
 				display: e.widget.display,
@@ -2187,7 +2187,7 @@
 				w = r("./src/telemetry/models/Outbound.ts"),
 				_ = r("./src/reddit/components/Widgets/Button/index.m.less"),
 				y = r.n(_);
-			const j = (e, t, r) => {
+			const E = (e, t, r) => {
 					let n = {},
 						s = {};
 					n = e.kind === f.k.Image ? {
@@ -2227,8 +2227,8 @@
 						...s
 					}
 				},
-				k = e => e.kind === f.k.Image ? y.a.imageButton : y.a.textButton,
-				E = e => {
+				j = e => e.kind === f.k.Image ? y.a.imageButton : y.a.textButton,
+				k = e => {
 					const t = Object(b.h)(e),
 						r = Object(p.h)(p.f, t);
 					return r ? r.url : e.url
@@ -2239,8 +2239,8 @@
 						overrideColors: r
 					} = e, n = Object(g.a)(e).button;
 					return s.a.createElement(c.t, {
-						className: k(t),
-						style: j(t, r, n),
+						className: j(t),
+						style: E(t, r, n),
 						isFullWidth: !0,
 						size: c.d.S,
 						priority: c.c.Secondary
@@ -2251,11 +2251,11 @@
 					}, t.hoverState.text))
 				}),
 				N = e => s.a.createElement(l.b, {
-					href: E(e.button),
+					href: k(e.button),
 					sourceElement: w.SourceElement.SidebarWidget
 				}, s.a.createElement(O, e)),
-				I = m.a.wrapped(o.a, "RawHTMLDisplay", y.a);
-			var C = Object(i.b)(() => Object(a.c)({
+				C = m.a.wrapped(o.a, "RawHTMLDisplay", y.a);
+			var I = Object(i.b)(() => Object(a.c)({
 					forceRedditStyle: x.l,
 					isNightmodeOn: v.X
 				}))(e => s.a.createElement(d.a, {
@@ -2263,7 +2263,7 @@
 					title: e.widget.shortName,
 					truncateThreshold: e.truncateThreshold,
 					widgetKind: e.widget.kind
-				}, e.widget.descriptionHtml && s.a.createElement(I, {
+				}, e.widget.descriptionHtml && s.a.createElement(C, {
 					html: e.widget.descriptionHtml
 				}), e.widget.buttons.filter(e => (e.kind !== f.k.Image || e.url !== h.c) && (!e.hoverState || e.hoverState.kind !== f.k.Image || e.hoverState.url !== h.c)).map(t => s.a.createElement(N, {
 					key: `${t.text}-${t.url}`,
@@ -2458,9 +2458,9 @@
 					textColor: e.authorFlairTextColor,
 					type: e.authorFlairType
 				},
-				je = e => s.a.createElement(we, null, `u/${e}`),
-				ke = m.a.wrapped(me.a, "InternalLink", fe.a),
-				Ee = m.a.div("LinkContainer", fe.a),
+				Ee = e => s.a.createElement(we, null, `u/${e}`),
+				je = m.a.wrapped(me.a, "InternalLink", fe.a),
+				ke = m.a.div("LinkContainer", fe.a),
 				Oe = Object(a.c)({
 					userIsBanned: he.bb,
 					userIsLoggedIn: v.K
@@ -2492,10 +2492,10 @@
 						key: e.name
 					}, (e => s.a.createElement(ce.a, {
 						to: `/user/${e.name}/`
-					}, je(e.name)))(e), s.a.createElement(_e, {
+					}, Ee(e.name)))(e), s.a.createElement(_e, {
 						flair: ye(e),
 						forceSmallEmojis: !0
-					}))), s.a.createElement(Ee, null, s.a.createElement(ke, {
+					}))), s.a.createElement(ke, null, s.a.createElement(je, {
 						to: `/r/${t}/about/moderators/`
 					}, S.fbt._("View All Moderators", null, {
 						hk: "2DIeXE"
@@ -2523,8 +2523,8 @@
 						hk: "1LPeZR"
 					})))
 				}),
-				Ie = r("./src/reddit/components/Widgets/PostFlair/index.tsx"),
-				Ce = r("./src/reddit/components/Widgets/SubredditRules/index.tsx"),
+				Ce = r("./src/reddit/components/Widgets/PostFlair/index.tsx"),
+				Ie = r("./src/reddit/components/Widgets/SubredditRules/index.tsx"),
 				Se = r("./src/reddit/components/Widgets/TextArea/index.m.less"),
 				Fe = r.n(Se);
 			const Pe = m.a.div("WidgetContent", Fe.a),
@@ -2548,9 +2548,9 @@
 						case "textarea":
 							return Le;
 						case "button":
-							return C;
+							return I;
 						case "subreddit-rules":
-							return Ce.b;
+							return Ie.b;
 						case "community-list":
 							return Z;
 						case "calendar":
@@ -2560,7 +2560,7 @@
 						case "custom":
 							return Q;
 						case "post-flair":
-							return Ie.a;
+							return Ce.a;
 						default:
 							return Ae
 					}
@@ -2661,30 +2661,28 @@
 				return p
 			})), r.d(t, "g", (function() {
 				return b
-			})), r.d(t, "u", (function() {
-				return h
 			})), r.d(t, "l", (function() {
-				return g
+				return h
 			})), r.d(t, "t", (function() {
-				return f
+				return g
 			})), r.d(t, "e", (function() {
-				return x
+				return f
 			})), r.d(t, "j", (function() {
-				return v
+				return x
 			})), r.d(t, "d", (function() {
-				return w
+				return v
 			})), r.d(t, "h", (function() {
-				return _
+				return w
 			})), r.d(t, "c", (function() {
-				return y
+				return _
 			})), r.d(t, "k", (function() {
-				return j
+				return y
 			})), r.d(t, "i", (function() {
-				return k
-			})), r.d(t, "r", (function() {
 				return E
+			})), r.d(t, "r", (function() {
+				return j
 			})), r.d(t, "f", (function() {
-				return O
+				return k
 			}));
 			var n = r("./src/reddit/models/Prediction/index.ts"),
 				s = r("./src/reddit/selectors/telemetry.ts");
@@ -2765,16 +2763,6 @@
 					}
 				}),
 				h = ({
-					numberPredictionTokens: e,
-					pollId: t
-				}) => r => ({
-					...Object(s.o)(r),
-					source: i,
-					action: "view",
-					noun: "token_claim_modal",
-					poll: Object(s.H)(r, t, !1, void 0, void 0, e)
-				}),
-				g = ({
 					pageType: e
 				}) => t => ({
 					...Object(s.o)(t),
@@ -2785,7 +2773,7 @@
 						pageType: e
 					}
 				}),
-				f = () => e => ({
+				g = () => e => ({
 					...Object(s.o)(e),
 					source: "global",
 					action: "view",
@@ -2794,19 +2782,19 @@
 						pageType: "mod_tool_predict"
 					}
 				}),
-				x = () => e => ({
+				f = () => e => ({
 					...Object(s.o)(e),
 					source: "mod_tool_predict",
 					action: "click",
 					noun: "end_tournament"
 				}),
-				v = () => e => ({
+				x = () => e => ({
 					...Object(s.o)(e),
 					source: "mod_tool_predict",
 					action: "click",
 					noun: "rename_tournament"
 				}),
-				w = e => t => ({
+				v = e => t => ({
 					...Object(s.o)(t),
 					source: "mod_tool_predict",
 					action: "click",
@@ -2820,38 +2808,38 @@
 					},
 					subreddit: Object(s.hb)(t)
 				}),
-				_ = () => e => ({
+				w = () => e => ({
 					...Object(s.o)(e),
 					source: a,
 					action: "click",
 					noun: "next"
 				}),
-				y = () => e => ({
+				_ = () => e => ({
 					...Object(s.o)(e),
 					source: a,
 					action: "click",
 					noun: "add_more"
 				}),
-				j = () => e => ({
+				y = () => e => ({
 					...Object(s.o)(e),
 					source: a,
 					action: "click",
 					noun: "start_tournament"
 				}),
-				k = () => e => ({
+				E = () => e => ({
 					...Object(s.o)(e),
 					source: "menu_links_bar",
 					action: "click",
 					noun: "predictions_tab"
 				}),
-				E = () => e => ({
+				j = () => e => ({
 					...Object(s.o)(e),
 					source: "predictions_tab",
 					action: "view",
 					noun: "predictions_how_it_works",
 					subreddit: Object(s.hb)(e)
 				}),
-				O = () => e => ({
+				k = () => e => ({
 					...Object(s.o)(e),
 					source: "predictions_how_it_works",
 					action: "click",
@@ -2894,9 +2882,9 @@
 			})), r.d(t, "l", (function() {
 				return y
 			})), r.d(t, "n", (function() {
-				return k
+				return j
 			})), r.d(t, "o", (function() {
-				return E
+				return k
 			}));
 			var n = r("./src/reddit/models/SubredditWikiPage/index.ts"),
 				s = r("./src/reddit/selectors/telemetry.ts");
@@ -2937,12 +2925,12 @@
 				w = d("ban_wiki_contributor"),
 				_ = d("unban_wiki_contributor"),
 				y = e => d(e ? "show_wiki_revision" : "hide_wiki_revision"),
-				j = {
+				E = {
 					[n.a.Inherit]: "subreddit_wiki_perms",
 					[n.a.Contributors]: "only_wiki_contributors",
 					[n.a.Mods]: "only_mods"
 				},
-				k = e => t => ({
+				j = e => t => ({
 					...i(t),
 					source: "wiki",
 					action: "click",
@@ -2951,13 +2939,13 @@
 						settingValue: e ? "show" : "hide"
 					})
 				}),
-				E = e => t => ({
+				k = e => t => ({
 					...i(t),
 					source: "wiki",
 					action: "click",
 					noun: "editing_permissions",
 					actionInfo: s.d(t, {
-						settingValue: j[e]
+						settingValue: E[e]
 					})
 				})
 		},
@@ -3159,4 +3147,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.afebd50cce2865fe2476.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.a0223067c3190051aa6d.js.map
