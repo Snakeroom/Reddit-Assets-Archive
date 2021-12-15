@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.78c82a82cafe72b27cd5.js
-// Retrieved at 12/15/2021, 2:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.215cc4160a51ca267588.js
+// Retrieved at 12/15/2021, 5:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsFlairModal"], {
 		"./src/reddit/actions/economics/powerups/flairs/index.ts": function(e, t, r) {
@@ -1038,15 +1038,17 @@
 				fbt: d
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), c = ({
 				className: e,
-				onClick: t
+				onClick: t,
+				disabled: r
 			}) => {
-				const r = Object(n.e)(o.v);
+				const s = Object(n.e)(o.w);
 				return i.a.createElement(a.t, {
 					priority: a.c.Primary,
 					className: e,
 					onClick: t,
-					isFullWidth: !0
-				}, (() => r ? d._("Use Your Premium Powerup", null, {
+					isFullWidth: !0,
+					disabled: r
+				}, (() => s ? d._("Use Your Premium Powerup", null, {
 					hk: "JJNaN"
 				}) : d._("Become a Hero", null, {
 					hk: "3IZNw3"
@@ -1482,4 +1484,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.78c82a82cafe72b27cd5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.215cc4160a51ca267588.js.map

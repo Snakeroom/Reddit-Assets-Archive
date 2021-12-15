@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.c11a0b627e1360dd340f.js
-// Retrieved at 12/15/2021, 2:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.08cd1e6c0526d0d0975b.js
+// Retrieved at 12/15/2021, 5:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-PowerupsInFeedUnit-index-tsx"], {
 		"./src/reddit/actions/snoovatar.ts": function(e, t, a) {
@@ -554,7 +554,7 @@
 						subredditId: t,
 						subredditName: a
 					}) => {
-						const o = Object(b.w)(e, {
+						const o = Object(b.x)(e, {
 								subredditId: t
 							}),
 							r = Object(p.db)(e, {
@@ -572,7 +572,7 @@
 							c = Object(b.g)(e, {
 								subredditId: t
 							}),
-							d = Object(b.v)(e) && Object(m.s)(e);
+							d = Object(b.w)(e) && Object(m.s)(e);
 						return n || o ? i && r && Object(_.j)(e) ? s.UNLOCKED_COMMUNITY_GEAR : d ? s.UNLOCKED_UNAPPLIED_FROM_PREMIUM : s.HIDDEN : c && r && Object(_.j)(e) ? s.POWERUPS_COMMUNITY_GEAR : s.POWERUPS_DEFAULT
 					})(e, {
 						subredditId: v.id,
@@ -1174,4 +1174,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.c11a0b627e1360dd340f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.08cd1e6c0526d0d0975b.js.map

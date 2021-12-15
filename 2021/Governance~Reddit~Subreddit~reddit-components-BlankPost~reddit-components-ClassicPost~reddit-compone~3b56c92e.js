@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.10cb10f1de0500ded181.js
-// Retrieved at 12/15/2021, 4:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.7e98ae4685e25de6bbb0.js
+// Retrieved at 12/15/2021, 5:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, r) {
@@ -441,7 +441,7 @@
 		"./src/reddit/actions/pages/profilePosts.ts": function(e, t, r) {
 			"use strict";
 			r.r(t), r.d(t, "PROFILE_POSTS_PENDING", (function() {
-				return w
+				return D
 			})), r.d(t, "PROFILE_POSTS_LOADED", (function() {
 				return I
 			})), r.d(t, "PROFILE_POSTS_FAILED", (function() {
@@ -506,11 +506,11 @@
 			var S = r("./src/reddit/helpers/getTimeSortForListing/index.ts"),
 				C = r("./src/reddit/helpers/timeApiRoute/index.ts"),
 				x = r("./src/reddit/selectors/listings.ts"),
-				D = r("./src/reddit/selectors/profile.ts");
-			const w = "PAGE__PROFILE_POSTS_PENDING",
+				w = r("./src/reddit/selectors/profile.ts");
+			const D = "PAGE__PROFILE_POSTS_PENDING",
 				I = "PAGE__PROFILE_POSTS_LOADED",
 				A = "PAGE__PROFILE_POSTS_FAILED",
-				R = Object(i.a)(w),
+				R = Object(i.a)(D),
 				M = Object(i.a)(I),
 				N = Object(i.a)(A),
 				k = e => async (t, r, s) => {
@@ -522,14 +522,14 @@
 						t: v
 					} = Object(l.b)(i), {
 						profileName: j
-					} = y, P = Object(o.a)(`u_${j}`, _, i), E = r(), w = Object(a.a)(E.listings.postOrder.ids, P), I = Object(x.c)(E, {
+					} = y, P = Object(o.a)(`u_${j}`, _, i), E = r(), D = Object(a.a)(E.listings.postOrder.ids, P), I = Object(x.c)(E, {
 						listingKey: P
 					}), A = Object(x.d)(E, {
 						listingKey: P
 					});
-					if (await t(p.d(j)), A || w && !I) {
-						if (w) {
-							const e = Object(D.q)(r(), {
+					if (await t(p.d(j)), A || D && !I) {
+						if (D) {
+							const e = Object(w.q)(r(), {
 								profileName: j
 							});
 							t(m.m({
@@ -563,7 +563,7 @@
 						meta: r().meta,
 						...F
 					}));
-					const U = Object(D.m)(r(), j),
+					const U = Object(w.m)(r(), j),
 						{
 							pinned: V
 						} = F;
@@ -698,13 +698,13 @@
 						hk: "2BgT0h"
 					})
 				}),
-				D = () => Object(a.f)({
+				w = () => Object(a.f)({
 					kind: u.b.Error,
 					text: s.fbt._("Could not pin post", null, {
 						hk: "3uNHEh"
 					})
 				}),
-				w = () => Object(a.f)({
+				D = () => Object(a.f)({
 					kind: u.b.Error,
 					text: s.fbt._("Could not unpin post", null, {
 						hk: "o8HG0"
@@ -727,7 +727,7 @@
 					}))());
 					const y = f.author,
 						_ = Object(b.m)(p, y),
-						[P, E, I, A, R] = h ? [v, O, T, C, D] : [j, g, S, x, w];
+						[P, E, I, A, R] = h ? [v, O, T, C, w] : [j, g, S, x, D];
 					if (h) {
 						if (Object(l.Q)(p, {
 								profileName: y
@@ -850,7 +850,7 @@
 		"./src/reddit/actions/postDraft.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "f", (function() {
-				return w
+				return D
 			})), r.d(t, "e", (function() {
 				return I
 			})), r.d(t, "d", (function() {
@@ -961,18 +961,18 @@
 				S = r("./src/reddit/selectors/postDraft.ts"),
 				C = r("./src/reddit/selectors/profile.ts"),
 				x = r("./src/reddit/selectors/subreddit.ts"),
-				D = r("./src/reddit/selectors/user.ts");
-			const w = "POST_DRAFT__LIST_PENDING",
+				w = r("./src/reddit/selectors/user.ts");
+			const D = "POST_DRAFT__LIST_PENDING",
 				I = "POST_DRAFT__LIST_LOADED",
 				A = "POST_DRAFT__LIST_FAILED",
-				R = Object(i.a)(w),
+				R = Object(i.a)(D),
 				M = Object(i.a)(I),
 				N = Object(i.a)(A),
 				k = () => async (e, t, {
 					apiContext: r
 				}) => {
 					const n = t();
-					if (!Object(D.k)(n) || Object(S.b)(n)) return;
+					if (!Object(w.k)(n) || Object(S.b)(n)) return;
 					e(R());
 					const i = await (e => Object(u.a)(Object(l.a)(e, [m.a]), {
 						endpoint: `${e.apiUrl}/api/v1/drafts.json`,
@@ -1034,7 +1034,7 @@
 							r = Object(C.p)(i, {
 								profileId: e.subredditId
 							}),
-							s = Object(D.k)(i);
+							s = Object(w.k)(i);
 						t ? n = {
 							isProfile: !1,
 							name: t.name
@@ -1178,8 +1178,8 @@
 				S = "SEARCH__UPDATE_SEARCH_QUERY",
 				C = Object(a.a)(S),
 				x = Object(a.a)(P),
-				D = Object(a.a)(E),
-				w = Object(a.a)(T),
+				w = Object(a.a)(E),
+				D = Object(a.a)(T),
 				I = Object(a.a)(v),
 				A = Object(a.a)(j),
 				R = e => async (t, r, {
@@ -1287,14 +1287,14 @@
 							subredditName: S,
 							username: C
 						}));
-					$.ok ? (t(D({
+					$.ok ? (t(w({
 						key: k,
 						fetchedToken: L,
 						meta: v.meta,
 						subredditOrMultiName: S,
 						type: e,
 						...$.body
-					})), t(c.g(U))) : (t(w({
+					})), t(c.g(U))) : (t(D({
 						key: k,
 						error: $.error,
 						fetchedToken: L,
@@ -2081,8 +2081,8 @@
 				S = r("./src/reddit/actions/pages/topic.ts"),
 				C = r("./src/reddit/actions/postCreation/constants.ts"),
 				x = r("./src/reddit/actions/postDraft.ts"),
-				D = r("./src/reddit/actions/preferences.ts"),
-				w = r("./src/reddit/actions/redditEmbed.ts"),
+				w = r("./src/reddit/actions/preferences.ts"),
+				D = r("./src/reddit/actions/redditEmbed.ts"),
 				I = r("./src/reddit/actions/search.ts"),
 				A = r("./src/reddit/actions/structuredStyles/constants.ts"),
 				R = r("./src/reddit/actions/subreddit.ts"),
@@ -2227,7 +2227,7 @@
 							editorMode: r === U.b.Markdown ? F.i.MARKDOWN : F.i.RICH_TEXT
 						}
 					}
-					case D.h: {
+					case w.h: {
 						const {
 							layout: r
 						} = t.payload;
@@ -2236,12 +2236,12 @@
 							layout: r
 						}
 					}
-					case D.o:
+					case w.o:
 						return void 0 !== t.payload ? {
 							...e,
 							rpanDuDismissalTime: t.payload
 						} : e;
-					case D.p: {
+					case w.p: {
 						const {
 							layout: r,
 							subredditId: s
@@ -2250,11 +2250,11 @@
 							layout: r
 						})
 					}
-					case D.f:
+					case w.f:
 						return {
 							...e, hasSeenCustomizeFlyout: !0
 						};
-					case D.m:
+					case w.m:
 						return e.profileLayout === t.payload.profileLayout ? e : {
 							...e,
 							profileLayout: t.payload.profileLayout
@@ -2263,17 +2263,17 @@
 						return {
 							...e, over18: !0
 						};
-					case D.c:
+					case w.c:
 						return void 0 !== t.payload ? {
 							...e,
 							autoplayVideo: t.payload.autoplayVideo
 						} : e;
-					case D.i:
+					case w.i:
 						return void 0 !== t.payload ? {
 							...e,
 							nightmode: t.payload.nightmode
 						} : e;
-					case D.r:
+					case w.r:
 						if (void 0 !== t.payload) {
 							const {
 								topContentDismissalTime: r,
@@ -2298,7 +2298,7 @@
 							nightmode: !0,
 							nightmodeTempUpdated: !1
 						} : e;
-					case D.g:
+					case w.g:
 						return void 0 !== t.payload ? {
 							...e,
 							hamburgerTray: t.payload.set
@@ -2306,7 +2306,7 @@
 							...e,
 							hamburgerTray: !e.hamburgerTray
 						};
-					case D.d:
+					case w.d:
 						return void 0 !== t.payload ? {
 							...e,
 							collapsedTraySections: a()({}, e.collapsedTraySections, t.payload)
@@ -2336,17 +2336,17 @@
 					case m.f:
 					case R.i:
 					case I.g:
-					case w.b:
+					case D.b:
 					case y.PAGE_LOADED:
 					case _.PAGE_LOADED:
-					case D.j:
-					case D.b:
+					case w.j:
+					case w.b:
 					case E.c:
-					case D.a:
+					case w.a:
 					case M.c:
 					case S.TOPIC_DATA_LOADED:
 						return t.payload && t.payload.preferences ? H(e, t.payload.preferences) : e;
-					case D.q: {
+					case w.q: {
 						const {
 							subredditId: r,
 							prefs: s
@@ -2385,7 +2385,7 @@
 					case f.w:
 					case f.v:
 						return t.payload && t.payload.response && t.payload.response.preferences ? H(e, t.payload.preferences) : e;
-					case D.n: {
+					case w.n: {
 						const r = t.payload,
 							{
 								enableFollowers: s,
@@ -2424,7 +2424,7 @@
 						const t = this.resolve(e);
 						return !1 !== this.resolved[t] && !!r.m[t]
 					},
-					importAsync: () => Promise.all([r.e("vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PostCreation~Settings~~f8934a85"), r.e("vendors~ChatMessageInput~CommentRichUnit~FlairEdit~MembershipPaywallPage~PostCreation~PostRichUnit~R~9deab1a0"), r.e("vendors~PostCreation~Subreddit"), r.e("CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~MembershipPaywa~1f4a9acf"), r.e("CollectionCommentsPage~CommentsPage~Frontpage~GovernanceReleaseNotesModal~ModListing~ModQueuePages~M~eb6c0aee"), r.e("ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~e4e56b68"), r.e("CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab"), r.e("CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~898a3d9b"), r.e("Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250"), r.e("PostCreation")]).then(r.bind(null, "./src/reddit/pages/PostCreation/index.tsx")),
+					importAsync: () => Promise.all([r.e("vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PostCreation~Settings~~f8934a85"), r.e("vendors~ChatMessageInput~CommentRichUnit~FlairEdit~MembershipPaywallPage~PostCreation~PostRichUnit~R~9deab1a0"), r.e("vendors~PostCreation~Subreddit"), r.e("CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~MembershipPaywa~1f4a9acf"), r.e("CollectionCommentsPage~CommentsPage~Frontpage~GovernanceReleaseNotesModal~ModListing~ModQueuePages~M~eb6c0aee"), r.e("ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~e4e56b68"), r.e("CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab"), r.e("CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~898a3d9b"), r.e("ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor"), r.e("PostCreation")]).then(r.bind(null, "./src/reddit/pages/PostCreation/index.tsx")),
 					requireAsync(e) {
 						const t = this.resolve(e);
 						return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
@@ -2443,7 +2443,7 @@
 				},
 				l = e => o.a.replace(/:profileName/, e),
 				b = {
-					action: Object(i.a)(() => Promise.all([r.e("vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PostCreation~Settings~~f8934a85"), r.e("vendors~ChatMessageInput~CommentRichUnit~FlairEdit~MembershipPaywallPage~PostCreation~PostRichUnit~R~9deab1a0"), r.e("vendors~PostCreation~Subreddit"), r.e("CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~MembershipPaywa~1f4a9acf"), r.e("CollectionCommentsPage~CommentsPage~Frontpage~GovernanceReleaseNotesModal~ModListing~ModQueuePages~M~eb6c0aee"), r.e("ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~e4e56b68"), r.e("CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab"), r.e("CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~898a3d9b"), r.e("Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250"), r.e("PostCreation")]).then(r.bind(null, "./src/reddit/actions/pages/postCreation.ts")).then(e => e.postCreationPageRequested)),
+					action: Object(i.a)(() => Promise.all([r.e("vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PostCreation~Settings~~f8934a85"), r.e("vendors~ChatMessageInput~CommentRichUnit~FlairEdit~MembershipPaywallPage~PostCreation~PostRichUnit~R~9deab1a0"), r.e("vendors~PostCreation~Subreddit"), r.e("CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~MembershipPaywa~1f4a9acf"), r.e("CollectionCommentsPage~CommentsPage~Frontpage~GovernanceReleaseNotesModal~ModListing~ModQueuePages~M~eb6c0aee"), r.e("ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~e4e56b68"), r.e("CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab"), r.e("CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~898a3d9b"), r.e("ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor"), r.e("PostCreation")]).then(r.bind(null, "./src/reddit/actions/pages/postCreation.ts")).then(e => e.postCreationPageRequested)),
 					component: d,
 					chunk: n.s.POST_CREATION,
 					exact: !0,
@@ -2598,4 +2598,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.10cb10f1de0500ded181.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.7e98ae4685e25de6bbb0.js.map

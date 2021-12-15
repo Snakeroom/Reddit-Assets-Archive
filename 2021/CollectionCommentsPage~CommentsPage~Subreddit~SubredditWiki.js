@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.4276d82167d7b09fb7d9.js
-// Retrieved at 12/15/2021, 4:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.cc18abf7d384d4f83243.js
+// Retrieved at 12/15/2021, 5:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"], {
 		"./node_modules/lodash/random.js": function(e, t, r) {
@@ -769,15 +769,17 @@
 				fbt: d
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), c = ({
 				className: e,
-				onClick: t
+				onClick: t,
+				disabled: r
 			}) => {
-				const r = Object(a.e)(o.v);
+				const n = Object(a.e)(o.w);
 				return s.a.createElement(i.t, {
 					priority: i.c.Primary,
 					className: e,
 					onClick: t,
-					isFullWidth: !0
-				}, (() => r ? d._("Use Your Premium Powerup", null, {
+					isFullWidth: !0,
+					disabled: r
+				}, (() => n ? d._("Use Your Premium Powerup", null, {
 					hk: "JJNaN"
 				}) : d._("Become a Hero", null, {
 					hk: "3IZNw3"
@@ -3168,4 +3170,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.4276d82167d7b09fb7d9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.cc18abf7d384d4f83243.js.map

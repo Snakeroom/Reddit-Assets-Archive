@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.82b37efd4235f51b9609.js
-// Retrieved at 12/15/2021, 4:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.0fc8b5694da669d0d169.js
+// Retrieved at 12/15/2021, 5:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~ReportFlow~Subreddit"], {
 		"./src/lib/assertNever.ts": function(e, t, r) {
@@ -1853,13 +1853,17 @@
 			})), R = Object(i.a)(j.I), A = e => async (t, r, {
 				gqlContext: n
 			}) => {
-				try {
-					const r = await Object(l.e)(n(), e);
+				const i = r(),
+					s = e.filter(e => void 0 === Object(p.k)(i, {
+						subredditId: e
+					}));
+				if (!!s.length) try {
+					const e = await Object(l.e)(n(), s);
 					t(R({
-						subredditsPowerupsInfo: r
+						subredditsPowerupsInfo: e
 					}))
-				} catch (i) {
-					await t(F(i.message))
+				} catch (o) {
+					await t(F(o.message))
 				}
 			}, N = Object(i.a)(j.rb), P = Object(i.a)(j.qb), L = Object(i.a)(j.pb), U = Object(i.a)(j.ob), F = e => async (t, r) => {
 				await t(U(e)), t(Object(a.f)({
@@ -1936,9 +1940,11 @@
 				await Object(l.c)(n(), e)
 			}, W = Object(i.a)(j.E), z = Object(i.a)(j.R), K = e => Object(c.h)(u.a.ECON_SUPPORTERS_LIST, {
 				subredditId: e
-			}), V = e => async (t, r) => {
-				const n = r();
-				return Object(_.k)(n) ? (Object(o.a)(Object(m.h)(e)(n)), t(Object(c.h)(u.a.ECON_POWERUPS_MARKETING))) : t(Object(d.i)())
+			}), V = (e, t) => async (r, n) => {
+				const i = n();
+				return Object(_.k)(i) ? (Object(o.a)(Object(m.h)(e)(i)), r(Object(c.h)(u.a.ECON_POWERUPS_MARKETING, {
+					subredditId: t
+				}))) : r(Object(d.i)())
 			}, $ = e => async t => t(Object(c.h)(u.a.ECON_POWERUPS_PREMIUM_UPSELL, {
 				subredditId: e
 			})), J = () => async (e, t) => {
@@ -10987,4 +10993,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.82b37efd4235f51b9609.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.0fc8b5694da669d0d169.js.map

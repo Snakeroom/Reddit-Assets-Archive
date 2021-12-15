@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.19ed81734f76d38ba99a.js
-// Retrieved at 12/15/2021, 4:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.44c5a8925b6ff1485ff1.js
+// Retrieved at 12/15/2021, 5:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -682,16 +682,27 @@
 				n = r("./src/reddit/actions/gold/powerups.ts"),
 				o = r("./src/reddit/actions/platform.ts"),
 				i = r("./src/reddit/actions/subreddit.ts"),
-				a = r("./src/reddit/actions/users.ts"),
-				d = r("./src/reddit/selectors/moderatorPermissions.ts"),
-				c = r("./src/reddit/selectors/user.ts");
+				a = r("./src/reddit/actions/subscription/index.ts"),
+				d = r("./src/reddit/actions/users.ts"),
+				c = r("./src/reddit/selectors/gold/powerups/modSignup.ts"),
+				u = r("./src/reddit/selectors/moderatorPermissions.ts"),
+				l = r("./src/reddit/selectors/subscriptions.ts"),
+				p = r("./src/reddit/selectors/user.ts");
 			t.a = () => async (e, t) => {
+				const r = t();
 				if (e(Object(o.m)({
 						title: Object(s.h)()
-					})), await e(Object(a.t)()), !Object(c.K)(t())) return;
+					})), await e(Object(d.t)()), !Object(p.K)(r)) return;
 				await e(Object(i.q)());
-				const r = Object(d.a)(t());
-				r && r.length && await e(Object(n.d)(r))
+				const m = Object(c.b)(r),
+					h = Object(u.a)(r);
+				if (m) return await e(Object(n.d)(h));
+				await e(Object(a.e)()), await e(Object(n.o)());
+				const b = Object(l.c)(r);
+				if (b && b.length) {
+					const t = b.map(e => e.id);
+					await e(Object(n.d)(t))
+				}
 			}
 		},
 		"./src/reddit/components/JumpToContent/index.m.less": function(e, t, r) {
@@ -4218,6 +4229,39 @@
 					expEventOverride: !1
 				}) === s.Ud.Enabled
 		},
+		"./src/reddit/selectors/gold/powerups/modSignup.ts": function(e, t, r) {
+			"use strict";
+			r.d(t, "a", (function() {
+				return d
+			})), r.d(t, "b", (function() {
+				return c
+			}));
+			var s = r("./src/reddit/featureFlags/subredditPoints.ts"),
+				n = r("./src/reddit/selectors/moderatorPermissions.ts"),
+				o = r("./src/reddit/selectors/user.ts"),
+				i = r("./node_modules/reselect/es/index.js"),
+				a = r("./src/reddit/selectors/gold/powerups/index.ts");
+			const d = e => {
+					const t = Object(n.a)(e);
+					if (!t) return null;
+					const r = Object(o.H)(e),
+						i = [];
+					for (const n of t) {
+						const t = e.subreddits.models[n];
+						if (!t) return null;
+						const o = Object(a.h)(e, {
+							subredditId: n
+						});
+						s.b.has(t.name) || t.isNSFW || t.subscribers < 1e3 && !r || i.push({
+							id: n,
+							displayText: t.displayText,
+							hasPowerups: o
+						})
+					}
+					return i
+				},
+				c = Object(i.a)(d, e => !!(null == e ? void 0 : e.length))
+		},
 		"./src/reddit/selectors/modQueue.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "c", (function() {
@@ -4280,4 +4324,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.19ed81734f76d38ba99a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.44c5a8925b6ff1485ff1.js.map
