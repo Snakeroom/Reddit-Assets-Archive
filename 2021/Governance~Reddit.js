@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.e70ebe951c6a220fd04e.js
-// Retrieved at 12/15/2021, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.aa1b169c8da95ddcdd91.js
+// Retrieved at 12/15/2021, 12:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit", "reddit-components-BlankPost"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -5008,32 +5008,29 @@
 		"./src/reddit/actions/subreddit/relatedSubreddits.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "b", (function() {
-				return c
+				return a
 			})), r.d(t, "a", (function() {
-				return o
+				return c
 			}));
 			var s = r("./src/lib/makeActionCreator/index.ts"),
-				n = r("./src/lib/makeGqlRequest/index.ts"),
-				a = r("./src/redditGQL/operations/RelatedSubreddits.json");
-			const c = e => async (t, r, {
-				gqlContext: s
+				n = r("./src/reddit/endpoints/subreddit/recommendations.ts");
+			const a = (e, t) => async (r, s, {
+				gqlContext: a
 			}) => {
 				var c;
-				const o = await ((e, t) => Object(n.a)(e, {
-					...a,
-					variables: t
-				}))(s(), {
-					subredditId: e
+				const d = await Object(n.a)(a(), {
+					subredditIds: [e],
+					count: t
 				});
-				if (!o.ok) return;
-				const i = o.body;
-				(null === (c = i.data.subredditInfoById.relatedSubreddits) || void 0 === c ? void 0 : c.length) && t(d({
+				if (!d.ok) return;
+				const i = d.body;
+				(null === (c = i.data.subredditRecommendations.recommendations) || void 0 === c ? void 0 : c.length) && r(o({
 					subredditId: e,
-					relatedSubreddits: i.data.subredditInfoById.relatedSubreddits.reduce((e, {
-						subreddit: t
-					}) => ((null == t ? void 0 : t.id) && e.push(t.id), e), [])
+					relatedSubreddits: i.data.subredditRecommendations.recommendations.reduce((e, {
+						id: t
+					}) => (t && e.push(t), e), [])
 				}))
-			}, o = "RELATED_SUBREDDITS__LOADED", d = Object(s.a)(o)
+			}, c = "RELATED_SUBREDDITS__LOADED", o = Object(s.a)(c)
 		},
 		"./src/reddit/actions/subreddit/subredditCarousel.ts": function(e, t, r) {
 			"use strict";
@@ -8038,6 +8035,15 @@
 				variables: {
 					input: t
 				}
+			})
+		},
+		"./src/reddit/endpoints/subreddit/recommendations.ts": function(e, t, r) {
+			"use strict";
+			var s = r("./src/lib/makeGqlRequest/index.ts"),
+				n = r("./src/redditGQL/operations/SubredditRecommendations.json");
+			t.a = (e, t) => Object(s.a)(e, {
+				...n,
+				variables: t
 			})
 		},
 		"./src/reddit/endpoints/usernameAvailable/index.ts": function(e, t, r) {
@@ -27170,8 +27176,8 @@
 		"./src/redditGQL/operations/PollVote.json": function(e) {
 			e.exports = JSON.parse('{"id":"a20cc8dd230d"}')
 		},
-		"./src/redditGQL/operations/RelatedSubreddits.json": function(e) {
-			e.exports = JSON.parse('{"id":"02181c91f216"}')
+		"./src/redditGQL/operations/SubredditRecommendations.json": function(e) {
+			e.exports = JSON.parse('{"id":"074eb98957ec"}')
 		},
 		"./src/redditGQL/operations/SubredditScheduledPosts.json": function(e) {
 			e.exports = JSON.parse('{"id":"de72339b938a"}')
@@ -27211,4 +27217,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.e70ebe951c6a220fd04e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.aa1b169c8da95ddcdd91.js.map

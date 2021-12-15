@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MultiredditEditModal.32f1b0b4aac6360c75bb.js
-// Retrieved at 12/13/2021, 2:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MultiredditEditModal.c1e0b168146829f6eee0.js
+// Retrieved at 12/15/2021, 12:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MultiredditEditModal"], {
 		"./src/reddit/actions/multireddit/index.ts": function(e, t, i) {
@@ -25,9 +25,9 @@
 			})), i.d(t, "createSuccess", (function() {
 				return H
 			})), i.d(t, "createRequested", (function() {
-				return Q
-			})), i.d(t, "reloadCurrentMultiredditFeedRequested", (function() {
 				return B
+			})), i.d(t, "reloadCurrentMultiredditFeedRequested", (function() {
+				return Q
 			})), i.d(t, "duplicateFailure", (function() {
 				return J
 			})), i.d(t, "duplicatePending", (function() {
@@ -96,7 +96,7 @@
 				g = i("./src/lib/makeGqlRequest/index.ts"),
 				O = i("./src/redditGQL/operations/AllUserMultireddits.json"),
 				j = i("./src/reddit/endpoints/page/multiredditListing.ts"),
-				_ = i("./src/redditGQL/operations/SubredditRecommendations.json"),
+				_ = i("./src/reddit/endpoints/subreddit/recommendations.ts"),
 				v = i("./src/reddit/helpers/filterListingResponse/index.ts"),
 				w = i("./src/reddit/helpers/graphql/normalizeMultiredditDataFromGql/index.ts"),
 				C = i("./src/reddit/helpers/graphql/normalizeMultiredditListingFromGql/index.ts"),
@@ -235,7 +235,7 @@
 							multiredditsModelsState: d.multireddits.models
 						}))
 					}
-				}, K = Object(l.a)(M.e), z = Object(l.a)(M.f), H = Object(l.a)(M.g), Q = ({
+				}, K = Object(l.a)(M.e), z = Object(l.a)(M.f), H = Object(l.a)(M.g), B = ({
 					description: e,
 					displayName: t,
 					shouldNavigate: i
@@ -277,7 +277,7 @@
 							})
 						}))
 					} else s(K(m.error))
-				}, B = () => async (e, t, {
+				}, Q = () => async (e, t, {
 					apiContext: i
 				}) => {
 					const r = t(),
@@ -396,7 +396,7 @@
 							id: n,
 							multipaths: d,
 							type: t.type
-						})), 1 === i.length && await s(B())
+						})), 1 === i.length && await s(Q())
 					} else {
 						s(ee(O.error));
 						let e = r.fbt._("Sorry, something went wrong adding {subredditName}.", [r.fbt._param("subredditName", t.name)], {
@@ -449,7 +449,7 @@
 							},
 							multiredditNames: [t]
 						})
-					})), n(B())) : (n(se(O.error)), n(Object(p.f)({
+					})), n(Q())) : (n(se(O.error)), n(Object(p.f)({
 						text: r.fbt._("Sorry, something went wrong removing {subredditName}.", [r.fbt._param("subredditName", i)], {
 							hk: "1E1rKm"
 						})
@@ -532,10 +532,7 @@
 							const i = Object(P.C)(d, t) || Object(P.D)(d, t);
 							return i ? [...e, i] : e
 						}, []),
-						u = await ((e, t) => Object(g.a)(e, {
-							..._,
-							variables: t
-						}))(n(), {
+						u = await Object(_.a)(n(), {
 							count: M.y,
 							subredditIds: l.subredditIds,
 							toExclude: c
@@ -1568,10 +1565,7 @@
 		},
 		"./src/redditGQL/operations/MultiredditListing.json": function(e) {
 			e.exports = JSON.parse('{"id":"69af3447735e"}')
-		},
-		"./src/redditGQL/operations/SubredditRecommendations.json": function(e) {
-			e.exports = JSON.parse('{"id":"074eb98957ec"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MultiredditEditModal.32f1b0b4aac6360c75bb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MultiredditEditModal.c1e0b168146829f6eee0.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditSearchCarousel.57a16b576d74ee9363ca.js
-// Retrieved at 12/9/2021, 1:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditSearchCarousel.d8130dfb3b9a68630cb7.js
+// Retrieved at 12/15/2021, 12:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditSearchCarousel"], {
 		"./src/reddit/actions/subreddit/subredditCarousel.ts": function(e, t, s) {
@@ -95,14 +95,14 @@
 				const p = Object(l.d)(),
 					[f, E] = Object(o.useState)(null),
 					[S, v] = Object(o.useState)(null),
-					[j, N] = Object(o.useState)(0),
-					[C, B] = Object(o.useState)(void 0),
-					k = Object(l.e)(e => Object(x.x)(e, i));
+					[N, C] = Object(o.useState)(0),
+					[B, k] = Object(o.useState)(void 0),
+					g = Object(l.e)(e => Object(x.x)(e, i));
 				Object(o.useEffect)(() => {
 					(null == i ? void 0 : i.length) && p(Object(b.c)(i))
 				}, [i]);
-				const g = (null == k ? void 0 : k.filter(e => !e.isNsfw && !e.isSubscribed)) || [],
-					I = e => () => {
+				const I = (null == g ? void 0 : g.filter(e => !e.isNsfw && !e.isSubscribed)) || [],
+					w = e => () => {
 						if (!S) return;
 						const t = Math.sign(e) ? S.scrollLeft % 249 : 249 % S.scrollLeft,
 							s = 249 * e - t;
@@ -115,13 +115,13 @@
 					if (!f) return;
 					const e = c()(() => {
 						const e = Math.floor(f.clientWidth / 249);
-						N(e), B((e > 1 ? 249 * e : 237) - 8)
+						C(e), k((e > 1 ? 249 * e : 237) - 8)
 					}, 30);
 					return window.addEventListener("resize", e), e(), () => {
 						window.removeEventListener("resize", e)
 					}
 				}, [f]), Object(o.useEffect)(() => {
-					g.length < m || a((e => t => ({
+					I.length < m || a((e => t => ({
 						source: "similar_communities",
 						action: "view",
 						noun: "module",
@@ -129,27 +129,29 @@
 							subredditId: e
 						}) : void 0
 					}))(s))
-				}, [g.length, m, s]), g.length < m ? null : d.a.createElement("div", {
+				}, [I.length, m, s]), I.length < m ? null : d.a.createElement("div", {
 					ref: E,
 					className: Object(r.a)(h.a.carouselContainer, t, null === h.a || void 0 === h.a ? void 0 : h.a[u])
 				}, d.a.createElement("div", {
 					className: h.a.carouselHeader,
 					style: {
-						width: C
+						width: B
 					}
 				}, d.a.createElement("h3", {
 					className: h.a.carouselTitle
-				}, e), g.length > j && d.a.createElement("div", {
+				}, j._("{title}", [j._param("title", e)], {
+					hk: "4n2CUI"
+				})), I.length > N && d.a.createElement("div", {
 					className: h.a.carouselControls
 				}, d.a.createElement("button", {
 					className: h.a.scrollButton,
-					onClick: I(-j)
+					onClick: w(-N)
 				}, d.a.createElement(_.a, {
 					name: n.a.left_fill,
 					className: h.a.scrollIcon
 				})), d.a.createElement("button", {
 					className: h.a.scrollButton,
-					onClick: I(j)
+					onClick: w(N)
 				}, d.a.createElement(_.a, {
 					name: n.a.right_fill,
 					className: h.a.scrollIcon
@@ -157,9 +159,9 @@
 					ref: v,
 					className: h.a.carouselWrapper,
 					style: {
-						width: C
+						width: B
 					}
-				}, null == g ? void 0 : g.map(({
+				}, null == I ? void 0 : I.map(({
 					styles: {
 						icon: e,
 						legacyIcon: t,
@@ -449,4 +451,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditSearchCarousel.57a16b576d74ee9363ca.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditSearchCarousel.d8130dfb3b9a68630cb7.js.map
