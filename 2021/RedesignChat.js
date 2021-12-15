@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RedesignChat.db1bfa3fb0ac102a640c.js
-// Retrieved at 12/15/2021, 1:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RedesignChat.0f7926412db888375c63.js
+// Retrieved at 12/15/2021, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RedesignChat"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -40,8 +40,8 @@
 				m = n("./src/reduxMiddleware/apiContext.ts"),
 				h = n("./src/reduxMiddleware/gqlContext.ts"),
 				g = n("./src/chat/actions/apiRequestHeaders.ts"),
-				f = n("./src/chat/actions/notifications.ts"),
-				p = n("./src/chat/actions/platform.ts"),
+				p = n("./src/chat/actions/notifications.ts"),
+				f = n("./src/chat/actions/platform.ts"),
 				x = n("./src/chat/actions/session.ts"),
 				j = n("./src/chat/actions/user.ts"),
 				O = n("./node_modules/react-redux/es/index.js"),
@@ -191,7 +191,7 @@
 					const s = ne()(),
 						r = Object(c.c)(t.location, void 0, s),
 						a = Object(l.a)(Object(c.e)(r), n),
-						i = Object(ie.b)(ie.a, Object(p.e)({
+						i = Object(ie.b)(ie.a, Object(f.e)({
 							location: r,
 							action: "PUSH",
 							routeMatch: a
@@ -222,7 +222,7 @@
 				};
 			var he = n("./src/chat/reducers/index.ts"),
 				ge = n("./src/chat/routes/index.ts");
-			const fe = Object(m.a)({
+			const pe = Object(m.a)({
 					actionDispatchers: {
 						reddaidReceived: j.r,
 						loidReceived: j.q,
@@ -240,7 +240,7 @@
 					},
 					statsAppName: d.n.Chat
 				}),
-				pe = Object(h.a)(fe.apiContext);
+				fe = Object(h.a)(pe.apiContext);
 
 			function xe(e, t, n = "/chat/minimize") {
 				const s = document.getElementById("2x-container"),
@@ -248,12 +248,12 @@
 				return s.appendChild(a), Object(u.a)({
 					reducerMap: he.a,
 					routes: ge.a,
-					apiContext: fe.apiContext,
-					gqlContext: pe.gqlContext,
+					apiContext: pe.apiContext,
+					gqlContext: fe.gqlContext,
 					appFactory: (e, t) => r.a.createElement(b.a.Provider, {
 						value: {
-							apiContext: fe.apiContext,
-							gqlContext: pe.gqlContext
+							apiContext: pe.apiContext,
+							gqlContext: fe.gqlContext
 						}
 					}, function(e, t) {
 						const n = Object(O.b)(k)(q);
@@ -266,9 +266,9 @@
 					}),
 					customMiddleware: [o.a.withExtraArgument({
 						routes: ge.a,
-						apiContext: fe.apiContext,
-						gqlContext: pe.gqlContext
-					}), fe.middleware, J.a, W.a, K.a, H.a, Y.a, Object(X.a)(t), F.a, z.a, L.a, G.a, Z.a, $.a, V.a, ee.a, Q.a],
+						apiContext: pe.apiContext,
+						gqlContext: fe.gqlContext
+					}), pe.middleware, J.a, W.a, K.a, H.a, Y.a, Object(X.a)(t), F.a, z.a, L.a, G.a, Z.a, $.a, V.a, ee.a, Q.a],
 					modifyInitialData: ({
 						initialData: t,
 						browserHistory: n
@@ -280,9 +280,9 @@
 					}) => {
 						return n.dispatch(Object(j.l)()), e.listen((e, s) => {
 							const r = Object(l.a)(Object(c.e)(e), t);
-							n.dispatch(Object(p.d)(e, s, r)), n.dispatch(Object(j.l)())
+							n.dispatch(Object(f.d)(e, s, r)), n.dispatch(Object(j.l)())
 						}), "undefined" != typeof window && window.addEventListener("load", async () => {
-							n.dispatch(Object(f.a)(!1, !1))
+							n.dispatch(Object(p.a)(!1, !1))
 						}), {}
 					},
 					target: a,
@@ -315,9 +315,9 @@
 			})), n.d(t, "d", (function() {
 				return g
 			})), n.d(t, "c", (function() {
-				return f
-			})), n.d(t, "b", (function() {
 				return p
+			})), n.d(t, "b", (function() {
+				return f
 			}));
 			var s = n("./src/lib/makeActionCreator/index.ts"),
 				r = n("./src/reddit/actions/appBadgeIndicators/constants.ts"),
@@ -351,7 +351,7 @@
 						style: d.b.Filled
 					}
 				}),
-				f = () => async (e, t, {
+				p = () => async (e, t, {
 					gqlContext: n
 				}) => {
 					e(u());
@@ -372,7 +372,7 @@
 					}(n);
 					s ? (e(l(s)), e(Object(c.d)())) : e(m())
 				};
-			const p = () => async e => {
+			const f = () => async e => {
 				const t = h({
 					key: d.c.MessageTab,
 					count: 0
@@ -436,7 +436,7 @@
 				REQUEST_FAILED: b,
 				REQUEST_PENDING: m,
 				REQUEST_SUCCESS: h
-			} = s, g = Object(c.a)(l), f = Object(c.a)(b), p = Object(c.a)(m), x = Object(c.a)(h);
+			} = s, g = Object(c.a)(l), p = Object(c.a)(b), f = Object(c.a)(m), x = Object(c.a)(h);
 			let j;
 			const O = 5 * r.kb,
 				C = () => async (e, t, {
@@ -452,11 +452,11 @@
 								session: r
 							} = s.user;
 						if (r && Object(u.K)(s) && Object(d.d)(s)) {
-							e(p());
+							e(f());
 							const t = await Object(i.g)(n());
 							t && t.ok && Object(i.j)(t.body) ? (e(x({
 								...Object(a.b)(t.body.data)
-							})), e(Object(o.d)())) : e(f({
+							})), e(Object(o.d)())) : e(p({
 								error: t.error
 							}))
 						}
@@ -479,7 +479,7 @@
 		"./src/reddit/actions/tabBadging.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return p
+				return f
 			})), n.d(t, "c", (function() {
 				return j
 			})), n.d(t, "b", (function() {
@@ -504,9 +504,9 @@
 				m = n("./src/reddit/selectors/experiments/inboxAppBadgingGql.ts"),
 				h = n("./src/reddit/selectors/experiments/inboxRedesign.ts"),
 				g = n("./src/reddit/selectors/user.ts"),
-				f = n("./src/reddit/actions/appBadgeIndicators/index.ts");
-			const p = "TAB__UPDATE_HAS_UNREAD_MESSAGES_BADGE",
-				x = Object(c.a)(p),
+				p = n("./src/reddit/actions/appBadgeIndicators/index.ts");
+			const f = "TAB__UPDATE_HAS_UNREAD_MESSAGES_BADGE",
+				x = Object(c.a)(f),
 				j = (e, t) => {
 					e <= 0 ? r.a.write(() => {
 						Object(d.b)(!1), window.document.title = t
@@ -558,18 +558,18 @@
 								inboxCount: a
 							} = e;
 						if (n !== c) {
-							const e = Object(f.e)({
+							const e = Object(p.e)({
 								count: c,
 								key: u.c.ChatTab
 							});
-							t(Object(f.a)(e))
+							t(Object(p.a)(e))
 						}
 						if (a && a !== r) {
-							const e = Object(f.e)({
+							const e = Object(p.e)({
 								count: a,
 								key: u.c.MessageTab
 							});
-							t(Object(f.a)(e))
+							t(Object(p.a)(e))
 						}(n !== c || a && a !== r) && t(v())
 					} else {
 						const n = Object(b.a)(s),
@@ -774,10 +774,10 @@
 				a = n("./src/reddit/selectors/experiments/index.ts"),
 				i = n("./src/reddit/selectors/experiments/utils.ts");
 			const o = Object(s.a)(e => Object(c.c)(e, {
-					experimentName: r.od,
+					experimentName: r.pd,
 					experimentEligibilitySelector: a.e
 				}), i.a),
-				d = Object(s.a)(o, e => e === r.rd.Enabled)
+				d = Object(s.a)(o, e => e === r.sd.Enabled)
 		},
 		"./src/reddit/selectors/experiments/inboxRedesign.ts": function(e, t, n) {
 			"use strict";
@@ -790,7 +790,7 @@
 			})), n.d(t, "c", (function() {
 				return g
 			})), n.d(t, "e", (function() {
-				return p
+				return f
 			})), n.d(t, "d", (function() {
 				return j
 			}));
@@ -803,12 +803,12 @@
 					experimentName: r.wb,
 					experimentEligibilitySelector: a.e
 				}), i.a),
-				d = Object(s.a)(o, e => e === r.wd.Enabled),
+				d = Object(s.a)(o, e => e === r.xd.Enabled),
 				u = Object(s.a)(e => Object(c.c)(e, {
-					experimentName: r.qd,
+					experimentName: r.rd,
 					experimentEligibilitySelector: a.e
 				}), i.a),
-				l = Object(s.a)(d, u, (e, t) => e && t === r.vd.Enabled),
+				l = Object(s.a)(d, u, (e, t) => e && t === r.wd.Enabled),
 				b = Object(s.a)(e => Object(c.c)(e, {
 					experimentName: r.Ib,
 					experimentEligibilitySelector: a.e
@@ -818,12 +818,12 @@
 					experimentName: r.ub,
 					experimentEligibilitySelector: a.e
 				}), i.a),
-				g = Object(s.a)(h, e => e === r.td.ContinuousScroll),
-				f = Object(s.a)(e => Object(c.c)(e, {
+				g = Object(s.a)(h, e => e === r.ud.ContinuousScroll),
+				p = Object(s.a)(e => Object(c.c)(e, {
 					experimentName: r.vb,
 					experimentEligibilitySelector: a.e
 				}), i.a),
-				p = Object(s.a)(f, e => e === r.ud.Enabled),
+				f = Object(s.a)(p, e => e === r.vd.Enabled),
 				x = Object(s.a)(e => Object(c.c)(e, {
 					experimentName: r.Db,
 					experimentEligibilitySelector: () => !0
@@ -835,4 +835,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.db1bfa3fb0ac102a640c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.0f7926412db888375c63.js.map
