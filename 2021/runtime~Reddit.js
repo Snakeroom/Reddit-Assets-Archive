@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.84f4670f9d1caf8107e9.js
-// Retrieved at 12/15/2021, 3:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.145b4eaf64e26e7b3b35.js
+// Retrieved at 12/15/2021, 3:50:03 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var n, a, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) a = r[l], Object.prototype.hasOwnProperty.call(d, a) && d[a] && b.push(d[a][0]), d[a] = 0;
@@ -1434,7 +1434,7 @@
 						"vendors~Settings": "71f28c4c637cd926b6dd",
 						Settings: "3b6492e01adc92b21356",
 						"vendors~ModerationPages": "345c2d1c2b51a95d38c2",
-						ModerationPages: "a358a02c2c568ba8c9be",
+						ModerationPages: "1743be49230d0eb23e0e",
 						"vendors~CryptoLibEthers~reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-compon~fb9f1732": "5b16d2c71f22938e781d",
 						"reddit-pages-meta-ArbitrumPointsMigrationPage": "c53bf4121c8d9315d280",
 						"vendors~reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-~bd661033": "6dda1e61f320e3163721",
@@ -1667,4 +1667,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.84f4670f9d1caf8107e9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.145b4eaf64e26e7b3b35.js.map
