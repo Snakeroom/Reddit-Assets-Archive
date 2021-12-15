@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview.ab03415f25220d6a12a1.js
-// Retrieved at 12/15/2021, 9:30:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview.aa137b769736355e2a23.js
+// Retrieved at 12/15/2021, 12:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments~ProfileOverview", "reddit-components-ContentGate"], {
 		"./node_modules/linkify-it/index.js": function(e, t, n) {
@@ -2189,8 +2189,8 @@
 					}
 				}),
 				l = e => {
-					const t = Object(s.e)(i.h),
-						n = Object(s.e)(i.b);
+					const t = Object(s.e)(i.e),
+						n = Object(s.e)(i.a);
 					return t || n ? o.a.createElement(c, e) : null
 				}
 		},
@@ -2322,7 +2322,7 @@
 					}, [t]);
 					const {
 						contentTitle: n
-					} = e, r = Object(o.e)(k.b) === _.ec.Enabled ? x.d2x_nsfw_signup_blocking_de_v1 : x.d2x_nsfw_signup_blocking_non_us_v1;
+					} = e, r = Object(o.e)(k.b) === _.Wb.Enabled ? x.d2x_nsfw_signup_blocking_de_v1 : x.d2x_nsfw_signup_blocking_non_us_v1;
 					return a.a.createElement("div", {
 						className: u.a.container
 					}, a.a.createElement(v, {
@@ -2512,11 +2512,11 @@
 					expEventOverride: t
 				})
 			}
-			const d = l(a.Nb, !0),
-				u = l(a.Nb, !1),
-				m = l(a.Ob, !0),
-				p = (l(a.Ob, !1), Object(r.a)(d, m, (e, t) => e === a.ec.Enabled || t === a.fc.Enabled))
+			const d = l(a.Fb, !0),
+				u = l(a.Fb, !1),
+				m = l(a.Gb, !0),
+				p = (l(a.Gb, !1), Object(r.a)(d, m, (e, t) => e === a.Wb.Enabled || t === a.Xb.Enabled))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview.ab03415f25220d6a12a1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview.aa137b769736355e2a23.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.3536f66b026ce7a8b322.js
-// Retrieved at 12/15/2021, 9:30:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.4abadf99f20e8d41d124.js
+// Retrieved at 12/15/2021, 12:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~Subreddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, r) {
@@ -660,13 +660,13 @@
 						isOnline: t
 					} = e.subscribe.data;
 					W(t)
-				}, []), K = Object(s.useRef)(null), [V, z] = Object(s.useState)(!1), Y = Object(s.useCallback)(e => {
+				}, []), K = Object(s.useRef)(null), [z, V] = Object(s.useState)(!1), Y = Object(s.useCallback)(e => {
 					e.forEach(e => {
 						const {
 							isIntersecting: t,
 							intersectionRatio: r
 						} = e, n = 1 !== r;
-						t ? z(!0) : n && z(!1)
+						t ? V(!0) : n && V(!1)
 					})
 				}, []), X = Object(s.useRef)({
 					rootMargin: "750px 0px 1000px 0px"
@@ -686,7 +686,7 @@
 					showPresence: !0,
 					isHighlighted: I,
 					onceInViewport: P
-				}), (T || y) && !_ && V && c.a.createElement(d.a, {
+				}), (T || y) && !_ && z && c.a.createElement(d.a, {
 					variables: q,
 					onData: T ? F : E,
 					queryKey: "isUserOnline"
@@ -997,9 +997,9 @@
 			})), r.d(t, "m", (function() {
 				return q
 			})), r.d(t, "t", (function() {
-				return V
-			})), r.d(t, "w", (function() {
 				return z
+			})), r.d(t, "w", (function() {
+				return V
 			})), r.d(t, "e", (function() {
 				return Y
 			})), r.d(t, "d", (function() {
@@ -1197,13 +1197,13 @@
 							}
 							break;
 						case c.Mb.PUBLIC_ACCESS_NETWORK:
-							f && Object(_.a)(V()(t));
+							f && Object(_.a)(z()(t));
 							break;
 						case c.Mb.GEOTAGGING:
 							f && Object(_.a)(Q()(t));
 							break;
 						case c.Mb.SUBREDDIT_CREATION:
-							f && Object(_.a)(z()(t));
+							f && Object(_.a)(V()(t));
 							break;
 						case c.Mb.MOD_LISTING:
 							f && J(t, !0)
@@ -1502,14 +1502,14 @@
 					...y(r),
 					timer: x.nb(e, t)
 				}),
-				V = () => e => ({
+				z = () => e => ({
 					source: "global",
 					action: "view",
 					noun: "screen",
 					subreddit: x.hb(e),
 					...y(e)
 				}),
-				z = () => e => ({
+				V = () => e => ({
 					source: "global",
 					action: "view",
 					noun: "screen",
@@ -2180,7 +2180,7 @@
 					return n ? n * s.Rb < 1639443600180 ? void 0 : O(e) : void 0
 				},
 				O = Object(n.a)(e => Object(i.c)(e, {
-					experimentName: c.Vd,
+					experimentName: c.Nd,
 					experimentEligibilitySelector: a.e
 				}), d.a)
 		},
@@ -2195,4 +2195,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.3536f66b026ce7a8b322.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.4abadf99f20e8d41d124.js.map

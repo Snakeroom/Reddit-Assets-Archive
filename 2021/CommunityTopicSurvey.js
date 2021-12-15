@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.ff5ef99d1173e6bfb5b0.js
-// Retrieved at 12/15/2021, 9:30:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.b8e80dfca33f38b92d28.js
+// Retrieved at 12/15/2021, 12:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityTopicSurvey"], {
 		"./node_modules/react-uid/dist/es2015/hooks.js": function(e, t, n) {
@@ -132,8 +132,8 @@
 				I = n("./src/reddit/actions/subreddit/constants.ts"),
 				v = n("./src/lib/classNames/index.ts"),
 				C = n("./src/reddit/components/StructuredStyles/StyledComponents/index.tsx"),
-				y = n("./src/reddit/controls/Button/index.tsx"),
-				O = (n("./node_modules/core-js/modules/web.dom.iterable.js"), n("./node_modules/react-uid/dist/es2015/hooks.js")),
+				O = n("./src/reddit/controls/Button/index.tsx"),
+				y = (n("./node_modules/core-js/modules/web.dom.iterable.js"), n("./node_modules/react-uid/dist/es2015/hooks.js")),
 				T = n("./src/reddit/controls/ButtonGroup/index.m.less"),
 				j = n.n(T);
 
@@ -141,7 +141,7 @@
 				const {
 					options: t,
 					onChange: n = (() => {})
-				} = e, r = Object(O.b)(), [i, d] = Object(s.useState)({});
+				} = e, r = Object(y.b)(), [i, d] = Object(s.useState)({});
 				return o.a.createElement("div", {
 					className: j.a.buttonGroup,
 					role: "group",
@@ -192,7 +192,7 @@
 				return 0 === n.length ? o.a.createElement(o.a.Fragment, null, t) : o.a.createElement(o.a.Fragment, null, n[0], o.a.createElement(N.a, {
 					isFeatureFlagEnabled: !0,
 					isUserInTreatment: !0,
-					userVariant: B.We.SmIconHc,
+					userVariant: B.Oe.SmIconHc,
 					subredditName: n[1].split("/")[1],
 					rtJsonElementProps: {}
 				}), n[2])
@@ -227,7 +227,7 @@
 						var r;
 						u(n), null === (r = e.onSelect) || void 0 === r || r.call(e, t, n)
 					}
-				}), o.a.createElement(y.l, {
+				}), o.a.createElement(O.l, {
 					className: M.a.submitButton,
 					redditStyle: !0,
 					role: "submit",
@@ -273,7 +273,7 @@
 						...e,
 						isMutuallyExclusive: !0
 					}))
-				})), !c && o.a.createElement(y.l, {
+				})), !c && o.a.createElement(O.l, {
 					className: M.a.submitButton,
 					redditStyle: !0,
 					role: "submit",
@@ -291,11 +291,11 @@
 				const {
 					subredditId: n,
 					inFeed: a
-				} = e, u = Object(g.a)(), m = Object(h.a)(), b = null !== (t = Object(i.e)(e => e.subreddits.questions[n])) && void 0 !== t ? t : [], v = Object(i.d)(), [C, y] = Object(s.useState)(!1), O = b[0];
+				} = e, u = Object(g.a)(), m = Object(h.a)(), b = null !== (t = Object(i.e)(e => e.subreddits.questions[n])) && void 0 !== t ? t : [], v = Object(i.d)(), [C, O] = Object(s.useState)(!1), y = b[0];
 				if (Object(s.useEffect)(() => {
-						O && !C && u(p(O, n))
-					}, [u, O, C, n]), C) return null;
-				if (!O) return null;
+						y && !C && u(p(y, n))
+					}, [u, y, C, n]), C) return null;
+				if (!y) return null;
 				async function T(e) {
 					l(m(), {
 						input: {
@@ -309,7 +309,7 @@
 							subredditId: n,
 							questionId: e
 						}
-					}), u(x(O, n)), y(!0), v({
+					}), u(x(y, n)), O(!0), v({
 						type: I.e,
 						payload: {}
 					})
@@ -327,7 +327,7 @@
 							subredditId: n,
 							questionId: e
 						}
-					}), u(f(O, t, n)), v(Object(c.f)({
+					}), u(f(y, t, n)), v(Object(c.f)({
 						text: r.fbt._("Thank you for your help!", null, {
 							hk: "1asBUQ"
 						}),
@@ -336,15 +336,15 @@
 				}
 
 				function k(e, t) {
-					u(_(O, t, n))
+					u(_(y, t, n))
 				}
-				switch (O.type) {
+				switch (y.type) {
 					case S.d.Multi:
 						return o.a.createElement(U, {
-							key: O.id,
-							questionId: O.id,
-							questionText: O.questionText,
-							answers: O.answerOptions,
+							key: y.id,
+							questionId: y.id,
+							questionText: y.questionText,
+							answers: y.answerOptions,
 							onSubmit: j,
 							onSelect: k,
 							onClose: T,
@@ -352,10 +352,10 @@
 						});
 					case S.d.SingleWithSubmit:
 						return o.a.createElement(F, {
-							key: O.id,
-							questionId: O.id,
-							questionText: O.questionText,
-							answers: O.answerOptions,
+							key: y.id,
+							questionId: y.id,
+							questionText: y.questionText,
+							answers: y.answerOptions,
 							onSubmit: j,
 							onSelect: k,
 							onClose: T,
@@ -363,10 +363,10 @@
 						});
 					case S.d.SingleNoSubmit:
 						return o.a.createElement(F, {
-							key: O.id,
-							questionId: O.id,
-							questionText: O.questionText,
-							answers: O.answerOptions,
+							key: y.id,
+							questionId: y.id,
+							questionText: y.questionText,
+							answers: y.answerOptions,
 							onSubmit: j,
 							onSelect: k,
 							onClose: T,
@@ -374,7 +374,7 @@
 							noSubmit: !0
 						})
 				}
-				return d.c.captureException(`Unknown SubredditQuestionType: ${O.type}`), null
+				return d.c.captureException(`Unknown SubredditQuestionType: ${y.type}`), null
 			}
 		},
 		"./src/reddit/components/Governance/VaultActionLink/async.ts": function(e, t, n) {
@@ -524,9 +524,9 @@
 			})), n.d(t, "m", (function() {
 				return C
 			})), n.d(t, "n", (function() {
-				return y
-			})), n.d(t, "t", (function() {
 				return O
+			})), n.d(t, "t", (function() {
+				return y
 			})), n.d(t, "p", (function() {
 				return T
 			})), n.d(t, "o", (function() {
@@ -564,8 +564,8 @@
 				I = e => s.a.createElement("del", e),
 				v = c.a.sub("Sub", d.a),
 				C = c.a.sup("Sup", d.a),
-				y = c.a.table("Table", d.a),
-				O = c.a.tr("Tr", d.a),
+				O = c.a.table("Table", d.a),
+				y = c.a.tr("Tr", d.a),
 				T = c.a.td("Tdl", d.a),
 				j = c.a.td("Tdc", d.a),
 				k = c.a.td("Tdr", d.a),
@@ -781,12 +781,12 @@
 						rtJsonElementProps: o
 					});
 					switch (r) {
-						case _.We.SmIcon:
+						case _.Oe.SmIcon:
 							return s.a.createElement(b, {
 								subredditName: n,
 								rtJsonElementProps: o
 							});
-						case _.We.SmIconHc:
+						case _.Oe.SmIconHc:
 							return s.a.createElement(b, {
 								subredditName: n,
 								isHoverable: !0,
@@ -1057,12 +1057,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: d,
-						experimentName: r.Qe
+						experimentName: r.Ie
 					}) || ""
 				},
 				a = e => {
 					const t = c(e);
-					return t === r.We.SmIcon || t === r.We.SmIconHc
+					return t === r.Oe.SmIcon || t === r.Oe.SmIconHc
 				},
 				u = (e, {
 					subredditName: t
@@ -1088,4 +1088,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.ff5ef99d1173e6bfb5b0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.b8e80dfca33f38b92d28.js.map

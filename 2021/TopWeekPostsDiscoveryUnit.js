@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.4afda66537b21af2961f.js
-// Retrieved at 12/15/2021, 9:30:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.9082cd672e923f1ae057.js
+// Retrieved at 12/15/2021, 12:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["TopWeekPostsDiscoveryUnit"], {
 		"./src/lib/getShortenedLink.ts": function(e, t, s) {
@@ -1634,7 +1634,7 @@
 						subreddit: s
 					} = e, {
 						isSponsored: a
-					} = t, n = Object(i.d)(), o = Object(H.a)(), c = Object(V.a)(u.ld) === u.sd.Enabled, d = Object(i.e)(W.b), m = e => {
+					} = t, n = Object(i.d)(), o = Object(H.a)(), c = Object(V.a)(u.dd) === u.kd.Enabled, d = Object(i.e)(W.b), m = e => {
 						!d || t.media && Object(P.H)(t.media) || (e.preventDefault(), n(Object(f.ab)(Object(C.b)(t.permalink), t.id)))
 					};
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return r.a.createElement(Z, {
@@ -1897,13 +1897,12 @@
 				r = s("./src/reddit/components/TrackingHelper/index.tsx"),
 				i = s("./src/reddit/connectors/SubscribeButton/index.ts"),
 				o = s("./src/reddit/controls/Button/index.tsx"),
-				c = s("./src/reddit/icons/fonts/index.tsx"),
-				l = s("./src/reddit/components/SubscribeButton/helpers/actionTemplateSource.ts"),
-				d = s("./src/reddit/components/SubscribeButton/Inline.m.less"),
-				m = s.n(d);
+				c = s("./src/reddit/components/SubscribeButton/helpers/actionTemplateSource.ts"),
+				l = s("./src/reddit/components/SubscribeButton/Inline.m.less"),
+				d = s.n(l);
 
-			function u() {
-				return (u = Object.assign || function(e) {
+			function m() {
+				return (m = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var a in s) Object.prototype.hasOwnProperty.call(s, a) && (e[a] = s[a])
@@ -1911,8 +1910,8 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const p = s("./src/lib/lessComponent.tsx").a.div("ButtonSpacer", m.a);
-			class b extends n.a.Component {
+			const u = s("./src/lib/lessComponent.tsx").a.div("ButtonSpacer", d.a);
+			class p extends n.a.Component {
 				constructor(e) {
 					super(e), this.onMouseEnter = () => {
 						this.setState({
@@ -1936,61 +1935,55 @@
 						const {
 							className: e,
 							identifier: t,
-							isInJoinOptimizationsExperiment: s,
-							onSubscribe: a,
-							onUnsubscribe: r,
-							postId: i,
-							sendEvent: d,
-							small: m = !1,
-							size: p,
-							userIsSubscriber: b,
-							doNotHideOtherSubscribeButtons: h,
-							getEventFactory: x,
-							onSubscriptionsRequested: f,
-							...g
-						} = this.props, C = this.state.isHovered, y = Object(l.a)({
+							onSubscribe: s,
+							onUnsubscribe: a,
+							postId: r,
+							sendEvent: i,
+							size: l,
+							userIsSubscriber: d,
+							doNotHideOtherSubscribeButtons: u,
+							getEventFactory: p,
+							onSubscriptionsRequested: b,
+							...h
+						} = this.props, x = this.state.isHovered, f = Object(c.a)({
 							type: t.type,
-							key: C ? "unsubscribe" : "subscribed"
-						}), E = s || !m && C ? void 0 : Object(c.b)("checkmark"), v = s ? o.d.XSP : p || (m ? o.d.XS : o.d.S);
-						return n.a.createElement(o.t, u({
+							key: x ? "unsubscribe" : "subscribed"
+						});
+						return n.a.createElement(o.t, m({
 							className: e,
-							priority: g.shouldReverseColor ? o.c.Primary : o.c.Secondary,
-							Icon: E,
-							text: s ? y : !m && y,
+							priority: h.shouldReverseColor ? o.c.Primary : o.c.Secondary,
+							text: f,
 							onClick: this.onClick,
 							onMouseEnter: this.onMouseEnter,
 							onMouseLeave: this.onMouseLeave,
-							size: v
-						}, g))
+							size: o.d.XSP
+						}, h))
 					}, this.renderSubscribeButton = () => {
 						const {
 							className: e,
 							identifier: t,
-							isInJoinOptimizationsExperiment: s,
-							onSubscribe: a,
-							onUnsubscribe: r,
-							postId: i,
-							sendEvent: d,
-							small: m = !1,
-							size: p,
-							userIsSubscriber: b,
-							doNotHideOtherSubscribeButtons: h,
-							getEventFactory: x,
-							onSubscriptionsRequested: f,
-							...g
-						} = this.props, C = Object(l.a)({
+							onSubscribe: s,
+							onUnsubscribe: a,
+							postId: r,
+							sendEvent: i,
+							size: l,
+							userIsSubscriber: d,
+							doNotHideOtherSubscribeButtons: u,
+							getEventFactory: p,
+							onSubscriptionsRequested: b,
+							...h
+						} = this.props, x = Object(c.a)({
 							type: t.type,
 							key: "subscribe"
-						}), y = s ? o.d.XSP : p || (m ? o.d.XS : o.d.S);
-						return n.a.createElement(o.t, u({
+						});
+						return n.a.createElement(o.t, m({
 							className: e,
-							priority: g.shouldReverseColor ? o.c.Secondary : o.c.Primary,
-							Icon: s ? void 0 : Object(c.b)("add"),
-							size: y,
-							text: s ? C : !m && C,
+							priority: h.shouldReverseColor ? o.c.Secondary : o.c.Primary,
+							size: o.d.XSP,
+							text: x,
 							onClick: this.onClick
-						}, g, {
-							id: `subscribe-button-${i}`,
+						}, h, {
+							id: `subscribe-button-${r}`,
 							onMouseEnter: this.onMouseEnter,
 							onMouseLeave: this.onMouseLeave
 						}))
@@ -2008,10 +2001,10 @@
 						userIsSubscriber: t,
 						doNotHideOtherSubscribeButtons: s
 					} = this.props;
-					return t ? this.state.hasJustSubscribed || s ? this.renderUnsubscribeButton() : e ? null : n.a.createElement(p, null) : this.renderSubscribeButton()
+					return t ? this.state.hasJustSubscribed || s ? this.renderUnsubscribeButton() : e ? null : n.a.createElement(u, null) : this.renderSubscribeButton()
 				}
 			}
-			t.a = Object(i.a)(Object(r.c)(b))
+			t.a = Object(i.a)(Object(r.c)(p))
 		},
 		"./src/reddit/hooks/useExperimentVariant.ts": function(e, t, s) {
 			"use strict";
@@ -2262,4 +2255,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.4afda66537b21af2961f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.9082cd672e923f1ae057.js.map

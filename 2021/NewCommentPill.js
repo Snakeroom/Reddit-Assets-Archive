@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NewCommentPill.bf49f0981b53a47e80c5.js
-// Retrieved at 12/13/2021, 3:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NewCommentPill.30489ef0ad6a5075eea4.js
+// Retrieved at 12/15/2021, 12:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NewCommentPill"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, s) {
@@ -103,7 +103,7 @@
 					} = Object(C.a)() || {},
 					[U, B] = Object(a.useReducer)(D, 0),
 					A = Object(i.e)(x.a),
-					k = Object(i.e)(e => Object(g.b)(e) || Object(g.f)(e)),
+					k = Object(i.e)(e => Object(g.a)(e) || Object(g.c)(e)),
 					[M, J] = Object(a.useState)(!1);
 				Object(a.useEffect)(() => {
 					if (!w || !k) return;
@@ -544,4 +544,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NewCommentPill.bf49f0981b53a47e80c5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NewCommentPill.30489ef0ad6a5075eea4.js.map
