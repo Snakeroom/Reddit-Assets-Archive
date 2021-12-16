@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.190f4bef6ad45594c899.js
-// Retrieved at 12/16/2021, 4:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.0b13e56ec792062833bc.js
+// Retrieved at 12/16/2021, 5:10:04 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var n, a, r = o[0], s = o[1], c = o[2], l = 0, P = []; l < r.length; l++) a = r[l], Object.prototype.hasOwnProperty.call(d, a) && d[a] && P.push(d[a][0]), d[a] = 0;
@@ -1371,7 +1371,7 @@
 						NotificationsPrePromptLoader: "463f4b278336cd387262",
 						PostFlowUpsellModal: "03a3ce68e1614318c543",
 						PowerupSuccessModal: "b7b3810606ba83326cc3",
-						Powerups: "e9c7184f068a73c54c8d",
+						Powerups: "e0621d895f8fdf8080d6",
 						PowerupsPremiumUpsellModal: "9e8498d16fbe5499961a",
 						Predictions: "221527a0e23b8f043340",
 						PremiumPurchaseModal: "6595e12781d4adb4ec31",
@@ -1407,14 +1407,14 @@
 						"reddit-components-Econ-Prediction-EndTimeModal": "38dc001278f52476cb9e",
 						"reddit-components-PostCreationForm-PredictionEditor-InactivityModal": "334a2afb45650e114f00",
 						"reddit-components-PostCreationForm-PredictionEditor-StartTournamentLimitationModal": "5a05eb502ff99088889f",
-						"translations/de_DE-json": "9e9e89fcb7c3e4861e8a",
-						"translations/es_ES-json": "dded1068f3186be4287d",
-						"translations/es_MX-json": "60c5bceb7efc75fd4470",
-						"translations/fr_FR-json": "69bb2ba3c4dd8c2f6d56",
-						"translations/it_IT-json": "51b93f8570d578c23eaf",
-						"translations/pseudo-json": "74aa8ec22999d7dfb4d7",
-						"translations/pt_BR-json": "1726340873d61f37c42c",
-						"translations/pt_PT-json": "56a5464e8f588c0a00ad",
+						"translations/de_DE-json": "de644626166cca6f939b",
+						"translations/es_ES-json": "fcac3d82cd435b32f1b2",
+						"translations/es_MX-json": "d7c12e0b8873a179d697",
+						"translations/fr_FR-json": "92bfb45d0b45e18e2cb4",
+						"translations/it_IT-json": "9af233a10476d5182763",
+						"translations/pseudo-json": "40e3cca5274eb60a6507",
+						"translations/pt_BR-json": "e8360f0c1c047938e81d",
+						"translations/pt_PT-json": "b0b388f27a5c3542f8bd",
 						"vendors~AdminPanel": "e6e59f93c311ab1cce5c",
 						AdminPanel: "76a8600c71ed4ea88212",
 						"vendors~ChatMessageInput~CommentRichUnit~FlairEdit~MembershipPaywallPage~PostCreation~PostRichUnit~R~9deab1a0": "201e0a53b4d00907b96f",
@@ -1429,7 +1429,7 @@
 						HarbergerTaxManageModal: "63a738be0da1f38ad20b",
 						SubredditPremiumUploadModal: "64126c5143c3b0474d29",
 						"vendors~PostCreation~Subreddit": "46f5a30c7f13b908d95f",
-						PostCreation: "b97ea8a245ac97efb882",
+						PostCreation: "d46dfd1b603c1eb116cc",
 						"vendors~ModStatsChart~Settings~ViewsTooltip": "ca7c845d62fd39d960b6",
 						"vendors~Settings": "71f28c4c637cd926b6dd",
 						Settings: "a49cc88dc333cd844e95",
@@ -1498,7 +1498,7 @@
 						"reddit-components-ViewReportsDropdown-index": "5f7cae406db63971e44a",
 						"reddit-pages-CommentsPage-OtherDiscussions": "448bd5b9089d6b0ec5e8",
 						removalReasonActions: "9aa7525f6f6ee6717eec",
-						schedulePickerModal: "ae392ead0f39baddf8a8",
+						schedulePickerModal: "8dbfa5a70e039b6c280c",
 						ChatMessageInput: "df9c61c6dfb6b3d28cb5",
 						RichTextEditor: "e758f19aeb2187feec14",
 						LiveVideoPlayer: "1b37c398682266fab378",
@@ -1554,7 +1554,7 @@
 						CommentRichUnit: "9d5962a8559379e72194",
 						PostRichUnit: "6f0e47f5f92d67b3507b",
 						TimezoneList: "57988e1ba10253d58674",
-						"reddit-components-ScheduledPost-PostSchedulePickerModal": "20d5ccbbe1c3ec206b76",
+						"reddit-components-ScheduledPost-PostSchedulePickerModal": "04c2bbd1df8864477300",
 						CommunityNotificationSettings: "7424c774c7f91937249d",
 						EmailNotificationSettings: "24494542c523e5589b3f",
 						ModPnSettingsSubredditList: "9dcac01d9572334a4d36",
@@ -1667,4 +1667,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.190f4bef6ad45594c899.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.0b13e56ec792062833bc.js.map
