@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.9f6d0b119bd5353e7b2c.js
-// Retrieved at 12/16/2021, 2:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.3343f4bde85db242612e.js
+// Retrieved at 12/16/2021, 5:30:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-NotificationUnit-Button"], {
 		"./src/reddit/actions/comment/authoring.ts": function(e, t, n) {
@@ -327,7 +327,7 @@
 				}) => async (o, r) => {
 					const s = r(),
 						m = Object(c.a)(G.c.replyToComment, t);
-					if (!Object(Y.K)(r())) return o(Object(d.k)()), void o(Object(a.k)({
+					if (!Object(Y.K)(r())) return o(Object(d.j)()), void o(Object(a.k)({
 						actionSource: a.a.Reply,
 						redirectUrl: Object(Q.m)(r(), {
 							commentId: t
@@ -641,7 +641,7 @@
 				E = e => async (t, n, {
 					apiContext: o
 				}) => {
-					if (!Object(S.K)(n())) return t(Object(a.k)()), void t(Object(m.k)({
+					if (!Object(S.K)(n())) return t(Object(a.j)()), void t(Object(m.k)({
 						actionSource: m.a.Save,
 						redirectUrl: Object(g.m)(n(), {
 							commentId: e
@@ -1374,7 +1374,7 @@
 								experimentName: s.I,
 								expEventOverride: t
 							});
-							return !!(Object(s.jf)(n) ? void 0 : n)
+							return !!(Object(s.hf)(n) ? void 0 : n)
 						})(n)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -2397,4 +2397,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.9f6d0b119bd5353e7b2c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.3343f4bde85db242612e.js.map

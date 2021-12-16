@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModModeBanners.95af4c146e5f4a43ade2.js
-// Retrieved at 12/16/2021, 2:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModModeBanners.a246c07c23f2cc0f286d.js
+// Retrieved at 12/16/2021, 5:30:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModModeBanners"], {
 		"./src/reddit/actions/comment/index.ts": function(e, t, s) {
@@ -52,8 +52,8 @@
 				u = s("./src/reddit/actions/shortcuts/utils.ts"),
 				p = s("./src/reddit/actions/toaster.ts"),
 				b = s("./src/reddit/actions/vote.ts"),
-				O = s("./src/reddit/endpoints/comment/index.tsx"),
-				j = s("./src/reddit/helpers/commentList/index.ts"),
+				j = s("./src/reddit/endpoints/comment/index.tsx"),
+				O = s("./src/reddit/helpers/commentList/index.ts"),
 				f = s("./src/reddit/helpers/trackers/comment.ts"),
 				g = s("./src/reddit/models/Comment/index.ts"),
 				x = s("./src/reddit/models/Post/index.ts"),
@@ -71,7 +71,7 @@
 				S = e => async (t, s, {
 					apiContext: o
 				}) => {
-					if (!Object(C.K)(s())) return t(Object(a.k)()), void t(Object(l.k)({
+					if (!Object(C.K)(s())) return t(Object(a.j)()), void t(Object(l.k)({
 						actionSource: l.a.Save,
 						redirectUrl: Object(R.m)(s(), {
 							commentId: e
@@ -79,7 +79,7 @@
 					}));
 					const r = s().features.comments.models[e];
 					if (!r) return;
-					const d = r.isSaved ? O.m : O.i;
+					const d = r.isSaved ? j.m : j.i;
 					if (t(N({
 							[e]: {
 								isSaved: !r.isSaved
@@ -143,12 +143,12 @@
 					s(D({
 						moreCommentsId: d.id
 					}));
-					const f = await Object(O.f)(n(), b, {
+					const f = await Object(j.f)(n(), b, {
 						token: d.token
 					}, Object(_.a)(r));
 					if (f.ok) {
 						const t = f.body,
-							n = Object(j.a)(t, b, r);
+							n = Object(O.a)(t, b, r);
 						s(L({
 							key: e,
 							moreCommentsItem: d,
@@ -173,7 +173,7 @@
 						moreCommentsItem: d,
 						...f.error
 					}))
-				}, U = Object(b.a)(j.b, h.a.upvoted), z = Object(b.a)(j.b, h.a.downvoted), K = Object(d.a)(T.j), Q = Object(d.a)(T.i), G = Object(d.a)(T.e), H = Object(d.a)(T.f), $ = (Object(d.a)(T.c), Object(d.a)(T.d), ({
+				}, U = Object(b.a)(O.b, h.a.upvoted), z = Object(b.a)(O.b, h.a.downvoted), K = Object(d.a)(T.j), Q = Object(d.a)(T.i), G = Object(d.a)(T.e), H = Object(d.a)(T.f), $ = (Object(d.a)(T.c), Object(d.a)(T.d), ({
 					commentId: e,
 					commentsPageKey: t,
 					scrollToAndRemeasure: s
@@ -209,7 +209,7 @@
 					scrollToAndRemeasure: o
 				}) => async (n, r) => {
 					const d = r(),
-						c = Object(j.e)(t, e, s, d),
+						c = Object(O.e)(t, e, s, d),
 						i = Object(k.b)(d, {
 							commentId: e.id,
 							commentsPageKey: t
@@ -255,8 +255,8 @@
 				u = s("./src/reddit/endpoints/moderator/snoozableReport.ts"),
 				p = s("./src/reddit/models/Reportable/index.ts"),
 				b = s("./src/reddit/models/Toast/index.ts"),
-				O = s("./src/reddit/selectors/commentSelector.ts"),
-				j = s("./src/reddit/selectors/experiments/d2xGqlDistinguish.ts"),
+				j = s("./src/reddit/selectors/commentSelector.ts"),
+				O = s("./src/reddit/selectors/experiments/d2xGqlDistinguish.ts"),
 				f = s("./src/reddit/selectors/user.ts"),
 				g = s("./src/reddit/actions/comment/index.ts"),
 				x = s("./src/reddit/actions/comment/constants.ts");
@@ -357,7 +357,7 @@
 				}, C = (e, t, s) => async (r, d, {
 					gqlContext: c
 				}) => {
-					const i = Object(O.b)(d(), {
+					const i = Object(j.b)(d(), {
 						commentId: e
 					});
 					if (!i) return;
@@ -390,7 +390,7 @@
 					const u = l.postId,
 						p = a.postStickiedComments.data[u],
 						b = n.g[t];
-					let O;
+					let j;
 					if (o(Object(g.i)({
 							[e]: {
 								distinguishType: t,
@@ -402,15 +402,15 @@
 							[p]: {
 								isStickied: !1
 							}
-						})), Object(j.a)(r())) {
+						})), Object(O.a)(r())) {
 						const o = Object(m.b)(i(), e, t),
 							n = Object(m.c)(i(), e, !!s),
 							r = [o];
-						(s || !s && e === p) && r.push(n), O = {
+						(s || !s && e === p) && r.push(n), j = {
 							ok: (await Promise.all(r)).every(e => e.ok)
 						}
-					} else O = await Object(m.g)(c(), e, b, s || null);
-					O.ok ? s && o(I({
+					} else j = await Object(m.g)(c(), e, b, s || null);
+					j.ok ? s && o(I({
 						id: e,
 						postId: u,
 						commentsPageKey: Object(d.a)(u, null, {
@@ -514,7 +514,7 @@
 				p = s("./src/reddit/components/ModModeFilteredReason/helpers.ts");
 			const {
 				fbt: b
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), O = e => e ? `: ${e}` : "";
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), j = e => e ? `: ${e}` : "";
 			t.default = ({
 				thing: e
 			}) => {
@@ -525,7 +525,7 @@
 					className: l.a.listItem
 				}, n.a.createElement(u, {
 					iconName: "mod_mode_fill"
-				}, b._("Blocked by Automatic Filter{reason}", [b._param("reason", O(null === (t = Object(i.b)(e, i.a.HATEFUL_CONTENT)) || void 0 === t ? void 0 : t.message))], {
+				}, b._("Blocked by Automatic Filter{reason}", [b._param("reason", j(null === (t = Object(i.b)(e, i.a.HATEFUL_CONTENT)) || void 0 === t ? void 0 : t.message))], {
 					hk: "3IxjRX"
 				}))), Object(p.b)(e) && n.a.createElement("li", {
 					className: l.a.listItem
@@ -537,7 +537,7 @@
 					className: l.a.listItem
 				}, n.a.createElement(u, {
 					iconName: "bot"
-				}, b._("Blocked by AutoMod{reason}", [b._param("reason", O((null === (s = Object(i.b)(e, i.a.AUTOMOD)) || void 0 === s ? void 0 : s.message) || e.modNote))], {
+				}, b._("Blocked by AutoMod{reason}", [b._param("reason", j((null === (s = Object(i.b)(e, i.a.AUTOMOD)) || void 0 === s ? void 0 : s.message) || e.modNote))], {
 					hk: "3yuGbK"
 				}))))
 			}
@@ -569,8 +569,8 @@
 				u = s("./src/reddit/helpers/isPost.ts"),
 				p = s("./src/reddit/helpers/trackers/modTools.ts"),
 				b = s("./src/reddit/icons/fonts/IgnoreReport/index.tsx"),
-				O = s("./src/reddit/icons/fonts/Report/index.tsx"),
-				j = s("./src/reddit/icons/svgs/ChevronDown/index.tsx"),
+				j = s("./src/reddit/icons/fonts/Report/index.tsx"),
+				O = s("./src/reddit/icons/svgs/ChevronDown/index.tsx"),
 				f = s("./src/reddit/components/ModModeReports/_ModModeReports.m.less"),
 				g = s.n(f);
 			const x = ({
@@ -587,7 +587,7 @@
 				className: g.a.contentContainer
 			}, m ? r.a.createElement(b.a, {
 				className: Object(d.a)(i.a.icon, g.a.coloredIcon)
-			}) : r.a.createElement(O.a, {
+			}) : r.a.createElement(j.a, {
 				className: Object(d.a)(i.a.icon, g.a.coloredIcon)
 			}), r.a.createElement("div", {
 				className: g.a.reportsWrapper
@@ -602,7 +602,7 @@
 				text: o.fbt._("old reports", null, {
 					hk: "2IdZOv"
 				})
-			}, r.a.createElement(j.a, {
+			}, r.a.createElement(O.a, {
 				className: g.a.ignoreButtonIcon
 			})) : r.a.createElement(l.c, {
 				className: g.a.ignoreButton,
@@ -612,7 +612,7 @@
 				}) : o.fbt._("ignore reports", null, {
 					hk: "48jlNW"
 				})
-			}, m ? r.a.createElement(O.a, {
+			}, m ? r.a.createElement(j.a, {
 				className: g.a.ignoreButtonIcon
 			}) : r.a.createElement(b.a, {
 				className: g.a.ignoreButtonIcon
@@ -689,8 +689,8 @@
 				u = s("./src/reddit/components/OverlayAwareTooltip/index.tsx"),
 				p = s("./src/reddit/components/TrackingHelper/index.tsx"),
 				b = s("./src/reddit/controls/Dropdown/index.tsx"),
-				O = s("./src/reddit/controls/Dropdown/Row.tsx"),
-				j = s("./src/reddit/helpers/isComment.ts"),
+				j = s("./src/reddit/controls/Dropdown/Row.tsx"),
+				O = s("./src/reddit/helpers/isComment.ts"),
 				f = s("./src/reddit/helpers/trackers/modTools.ts"),
 				g = s("./src/reddit/icons/svgs/ChevronDown/index.tsx"),
 				x = s("./src/reddit/icons/svgs/ChevronUp/index.tsx"),
@@ -708,7 +708,7 @@
 					tooltipId: y(t.reason, t.reportedThingId)
 				})),
 				toggleSnooze: s => {
-					Object(j.a)(t.reportedThingId) ? e(Object(a.h)(t.reportedThingId, t.reason, s)) : e(Object(l.gb)(t.reportedThingId, t.reason, s))
+					Object(O.a)(t.reportedThingId) ? e(Object(a.h)(t.reportedThingId, t.reason, s)) : e(Object(l.gb)(t.reportedThingId, t.reason, s))
 				}
 			})), T = Object(u.a)(b.a);
 			class E extends n.a.Component {
@@ -716,7 +716,7 @@
 					super(...arguments), this.tooltipTarget = null, this.setTooltipTargetRef = e => this.tooltipTarget = e, this.onSnoozeButtonClick = () => {
 						const e = this.props.isSnoozed ? i.bc.None : i.bc.Snoozed;
 						this.props.toggleSnooze(e);
-						const t = Object(f.l)(Object(j.a)(this.props.reportedThingId), this.props.isSnoozed, this.props.reportedThingId, this.props.reason);
+						const t = Object(f.l)(Object(O.a)(this.props.reportedThingId), this.props.isSnoozed, this.props.reportedThingId, this.props.reason);
 						this.props.sendEvent(t)
 					}
 				}
@@ -731,7 +731,7 @@
 					} = this.props, c = y(e, s);
 					return n.a.createElement("div", {
 						ref: this.setTooltipTargetRef
-					}, n.a.createElement(O.b, {
+					}, n.a.createElement(j.b, {
 						id: c,
 						className: _.a.DropdownLabelContainer,
 						onClick: o
@@ -844,7 +844,7 @@
 		"./src/reddit/endpoints/comment/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "i", (function() {
-				return j
+				return O
 			})), s.d(t, "m", (function() {
 				return f
 			})), s.d(t, "e", (function() {
@@ -882,8 +882,8 @@
 				u = s("./src/reddit/helpers/addRedesignIdentifier/index.ts"),
 				p = s("./src/reddit/models/Comment/addProfileImgParam.ts"),
 				b = s("./src/reddit/models/RichTextJson/addEmotesAsImagesParam.ts"),
-				O = s("./src/reddit/models/RichTextJson/addRTJParam.ts");
-			const j = (e, t) => Object(i.a)(Object(l.a)(e, [m.a]), {
+				j = s("./src/reddit/models/RichTextJson/addRTJParam.ts");
+			const O = (e, t) => Object(i.a)(Object(l.a)(e, [m.a]), {
 					endpoint: Object(u.a)(`${e.apiUrl}/api/save`),
 					method: c.jb.POST,
 					data: {
@@ -948,7 +948,7 @@
 					}
 				}),
 				k = (e, t, s, n) => {
-					let r = Object(u.a)(Object(O.a)(Object(b.a)(`${o.a.gatewayUrl}/desktopapi/v1/morecomments/${t}`)));
+					let r = Object(u.a)(Object(j.a)(Object(b.a)(`${o.a.gatewayUrl}/desktopapi/v1/morecomments/${t}`)));
 					return n && (r = Object(p.a)(r)), Object(i.a)(e, {
 						data: s,
 						endpoint: r,
@@ -1186,4 +1186,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModModeBanners.95af4c146e5f4a43ade2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModModeBanners.a246c07c23f2cc0f286d.js.map

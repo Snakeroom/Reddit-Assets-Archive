@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.253e080c15591ecc3c63.js
-// Retrieved at 12/16/2021, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.f421e47b3318d7fd8e4b.js
+// Retrieved at 12/16/2021, 5:30:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/lib/humanizeDate/index.ts": function(e, t, n) {
@@ -3543,7 +3543,7 @@
 					})), a.a.createElement("span", {
 						className: p.a.emptyStateDivider
 					}), a.a.createElement(l.j, {
-						onClick: () => n(Object(d.k)())
+						onClick: () => n(Object(d.j)())
 					}, r.fbt._("Sign Up", null, {
 						hk: "3Jd0SI"
 					}))))
@@ -3671,4 +3671,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.253e080c15591ecc3c63.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.f421e47b3318d7fd8e4b.js.map

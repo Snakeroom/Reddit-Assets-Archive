@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/removalReasonActions.9aa7525f6f6ee6717eec.js
-// Retrieved at 12/16/2021, 2:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/removalReasonActions.85b6f17a680b6672cb48.js
+// Retrieved at 12/16/2021, 5:30:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["removalReasonActions"], {
 		"./src/reddit/actions/bulkActions/index.ts": function(e, t, n) {
@@ -342,7 +342,7 @@
 				}) => async (o, s) => {
 					const r = s(),
 						m = Object(c.a)(B.c.replyToComment, t);
-					if (!Object(z.K)(s())) return o(Object(a.k)()), void o(Object(i.k)({
+					if (!Object(z.K)(s())) return o(Object(a.j)()), void o(Object(i.k)({
 						actionSource: i.a.Reply,
 						redirectUrl: Object(q.m)(s(), {
 							commentId: t
@@ -656,7 +656,7 @@
 				P = e => async (t, n, {
 					apiContext: o
 				}) => {
-					if (!Object(k.K)(n())) return t(Object(i.k)()), void t(Object(m.k)({
+					if (!Object(k.K)(n())) return t(Object(i.j)()), void t(Object(m.k)({
 						actionSource: m.a.Save,
 						redirectUrl: Object(R.m)(n(), {
 							commentId: e
@@ -1890,7 +1890,7 @@
 								experimentName: r.I,
 								expEventOverride: t
 							});
-							return !!(Object(r.jf)(n) ? void 0 : n)
+							return !!(Object(r.hf)(n) ? void 0 : n)
 						})(n)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -2931,4 +2931,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.9aa7525f6f6ee6717eec.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.85b6f17a680b6672cb48.js.map

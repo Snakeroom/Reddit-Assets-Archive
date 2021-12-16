@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.a49cc88dc333cd844e95.js
-// Retrieved at 12/16/2021, 2:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.a9eaca10a52aa83fc294.js
+// Retrieved at 12/16/2021, 5:30:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -10632,7 +10632,7 @@
 					openSSOCreatePasswordForLinkAppleModal: () => e(Object(C.h)(X.j)),
 					openSSOCreatePasswordForUnlinkAppleModal: () => e(Object(C.h)(X.k)),
 					openLinkAppleSSOModal: () => e(Object(_.g)()),
-					openUnlinkAppleSSOModal: () => e(Object(_.l)())
+					openUnlinkAppleSSOModal: () => e(Object(_.k)())
 				}))(e => {
 					const t = Object(Ne.a)();
 					return r.a.createElement(De, {
@@ -10696,7 +10696,7 @@
 					openSSOCreatePasswordForLinkGoogleModal: () => e(Object(C.h)(X.n)),
 					openSSOCreatePasswordForUnlinkGoogleModal: () => e(Object(C.h)(X.o)),
 					openLinkGoogleSSOModal: () => e(Object(_.h)()),
-					openUnlinkGoogleSSOModal: () => e(Object(_.m)())
+					openUnlinkGoogleSSOModal: () => e(Object(_.l)())
 				}))(e => {
 					const t = Object(Ne.a)();
 					return r.a.createElement(Ye, {
@@ -13728,4 +13728,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.a49cc88dc333cd844e95.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.a9eaca10a52aa83fc294.js.map

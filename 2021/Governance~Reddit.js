@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.b578243cc990765d5f09.js
-// Retrieved at 12/16/2021, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.0e1bc63078839a2b59fd.js
+// Retrieved at 12/16/2021, 5:30:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit", "reddit-components-BlankPost"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -1113,7 +1113,7 @@
 				C = e => async (t, r, {
 					apiContext: s
 				}) => {
-					if (!Object(D.K)(r())) return t(Object(i.k)()), void t(Object(u.k)({
+					if (!Object(D.K)(r())) return t(Object(i.j)()), void t(Object(u.k)({
 						actionSource: u.a.Save,
 						redirectUrl: Object(g.m)(r(), {
 							commentId: e
@@ -26632,7 +26632,7 @@
 				l = e => e === n.V.OnetapAuto,
 				p = e => e.user.googleOneTapEnabled,
 				b = Object(s.a)(o.K, i, (e, t) => !e && !!t),
-				f = Object(s.a)(o.K, i, (e, t) => !e && !!t && !Object(n.jf)(t))
+				f = Object(s.a)(o.K, i, (e, t) => !e && !!t && !Object(n.hf)(t))
 		},
 		"./src/reddit/selectors/moderatingComments.ts": function(e, t, r) {
 			"use strict";
@@ -26911,4 +26911,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.b578243cc990765d5f09.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.0e1bc63078839a2b59fd.js.map

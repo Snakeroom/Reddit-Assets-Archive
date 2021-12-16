@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.6afa3ab311135745a388.js
-// Retrieved at 12/16/2021, 2:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.ef9548f3dcaebed16dd5.js
+// Retrieved at 12/16/2021, 5:30:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -286,13 +286,13 @@
 					experimentEligibilitySelector: u.a,
 					experimentName: m.Fd
 				});
-				return Object(m.jf)(t) ? void 0 : t
+				return Object(m.hf)(t) ? void 0 : t
 			}, e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
 					experimentName: m.Gd
 				});
-				return Object(m.jf)(t) ? void 0 : t
+				return Object(m.hf)(t) ? void 0 : t
 			}, (e, t) => e === m.Jd.Enabled && t === m.Jd.Enabled);
 			var h = s("./src/config.ts");
 			var b = s("./src/reddit/selectors/user.ts");
@@ -6630,7 +6630,7 @@
 						sort: to.u.CHAT
 					}, to.u.CHAT)),
 					openLoginModal: () => e(Object(m.i)()),
-					openRegisterModal: () => e(Object(m.k)()),
+					openRegisterModal: () => e(Object(m.j)()),
 					fetchAutomuteStatus: () => e(Object(no.b)(t))
 				}))(Xo),
 				zo = s("./src/reddit/icons/svgs/Pagination/back.tsx");
@@ -7829,7 +7829,7 @@
 				a = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const i = e => {
 					const t = Object(a.a)(e);
-					return Boolean(t) && !Object(n.jf)(t)
+					return Boolean(t) && !Object(n.hf)(t)
 				},
 				d = Object(o.a)(i, r.d, (e, t) => e && !t)
 		},
@@ -7847,4 +7847,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.6afa3ab311135745a388.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.ef9548f3dcaebed16dd5.js.map

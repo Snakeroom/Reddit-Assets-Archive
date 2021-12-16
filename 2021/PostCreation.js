@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.d46dfd1b603c1eb116cc.js
-// Retrieved at 12/16/2021, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.343a1bbf46388ed659d7.js
+// Retrieved at 12/16/2021, 5:30:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -1287,7 +1287,7 @@
 				}) => async (o, s) => {
 					const r = s(),
 						l = Object(a.a)(V.c.replyToComment, t);
-					if (!Object(Y.K)(s())) return o(Object(c.k)()), void o(Object(d.k)({
+					if (!Object(Y.K)(s())) return o(Object(c.j)()), void o(Object(d.k)({
 						actionSource: d.a.Reply,
 						redirectUrl: Object(K.m)(s(), {
 							commentId: t
@@ -1601,7 +1601,7 @@
 				I = e => async (t, n, {
 					apiContext: o
 				}) => {
-					if (!Object(w.K)(n())) return t(Object(d.k)()), void t(Object(l.k)({
+					if (!Object(w.K)(n())) return t(Object(d.j)()), void t(Object(l.k)({
 						actionSource: l.a.Save,
 						redirectUrl: Object(E.m)(n(), {
 							commentId: e
@@ -15247,7 +15247,7 @@
 								experimentName: r.I,
 								expEventOverride: t
 							});
-							return !!(Object(r.jf)(n) ? void 0 : n)
+							return !!(Object(r.hf)(n) ? void 0 : n)
 						})(n)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -26468,4 +26468,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.d46dfd1b603c1eb116cc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.343a1bbf46388ed659d7.js.map
