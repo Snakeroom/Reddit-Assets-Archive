@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.d3d607f2f7534c9fe485.js
-// Retrieved at 12/16/2021, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.7f3f9cc0e0f4f9b18498.js
+// Retrieved at 12/16/2021, 2:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956"], {
 		"./src/reddit/actions/eventPosts/index.ts": function(e, t, s) {
@@ -1666,7 +1666,7 @@
 						className: me.a.shareText
 					}, o.fbt._("share", null, {
 						hk: "1eAfZg"
-					}))), []), De = !!p && Object(ee.e)(p) === U.author, We = Object(oe.a)("View--Reports", U.id, ce), Ve = Object(oe.a)(d.mc, U.id, ce), Ue = Object(T.c)(U), Ge = ke("-mod-actions-menu", U.id, j, E), He = Object(T.a)(U), Ke = U.postId, qe = w === D.g.Large, Je = !C && qe || x && I || ye, ze = !(j || C || f), Qe = p && U.isGildable && !(U.authorIsBlocked && Ie) && !(U.unrepliableReason && Pe), Xe = U.media && U.media.type === Y.o.LIVEVIDEO, Ye = !!U.recommendationContext;
+					}))), []), De = !!p && Object(ee.e)(p) === U.author, We = Object(oe.a)("View--Reports", U.id, ce), Ve = Object(oe.a)(d.mc, U.id, ce), Ue = Object(T.c)(U), Ge = ke("-mod-actions-menu", U.id, j, E), He = Object(T.a)(U), Ke = U.postId, qe = w === D.g.Large, Je = !C && qe || x && I || ye, ze = !(j || C || f), Qe = !(U.authorIsBlocked && Pe) && p && U.isGildable && !(U.authorIsBlocked && Ie) && !(U.unrepliableReason && Pe), Xe = U.media && U.media.type === Y.o.LIVEVIDEO, Ye = !!U.recommendationContext;
 					return r.a.createElement(r.a.Fragment, null, r.a.createElement("div", {
 						className: Object(c.a)(me.a.flatlistContainer, a)
 					}, r.a.createElement(v.a, {
@@ -4792,4 +4792,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.d3d607f2f7534c9fe485.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.7f3f9cc0e0f4f9b18498.js.map

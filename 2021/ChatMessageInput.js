@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput.7b78257c52af28ae686b.js
-// Retrieved at 12/15/2021, 5:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput.df9c61c6dfb6b3d28cb5.js
+// Retrieved at 12/16/2021, 2:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -518,13 +518,13 @@
 				Z = p.a.wrapped(k.e, "ChatButton", N.a),
 				U = p.a.div("CloseIconWrap", N.a),
 				q = p.a.div("Reply", N.a),
-				V = p.a.div("ReplyAuthor", N.a),
-				K = p.a.div("ReplyComment", N.a),
+				K = p.a.div("ReplyAuthor", N.a),
+				V = p.a.div("ReplyComment", N.a),
 				G = p.a.wrapped(y.a, "RichTextEditor", N.a),
 				H = p.a.wrapped(g.a, "SmallChatUserIcon", N.a),
 				W = Object(d.b)(() => Object(l.c)({
 					draft: O.i,
-					errorMsgs: O.J,
+					errorMsgs: O.K,
 					hasError: O.v,
 					liveStreamingChatCharacterLimit: e => {
 						const t = Object(S.a)(e);
@@ -675,9 +675,9 @@
 						className: Object(m.a)({
 							[N.a.isLivestreaming]: s
 						})
-					}, u.a.createElement(K, {
+					}, u.a.createElement(V, {
 						onClick: this.handleCloseReply
-					}, u.a.createElement(V, null, r.fbt._("Replying to u/ {username}:", [r.fbt._param("username", p.author)], {
+					}, u.a.createElement(K, null, r.fbt._("Replying to u/ {username}:", [r.fbt._param("username", p.author)], {
 						hk: "2YZre5"
 					})), u.a.createElement(x.a, {
 						className: N.a.RichTextJson,
@@ -1564,7 +1564,7 @@
 			})), s.d(t, "g", (function() {
 				return q
 			})), s.d(t, "m", (function() {
-				return V
+				return K
 			}));
 			s("./node_modules/core-js/modules/web.dom.iterable.js");
 			var r = s("./src/reddit/featureFlags/index.ts"),
@@ -1804,8 +1804,8 @@
 						if (r && r.data) return !!r.data[s]
 					}
 				},
-				V = e => e.economics.pointsCopy.data
+				K = e => e.economics.pointsCopy.data
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.7b78257c52af28ae686b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.df9c61c6dfb6b3d28cb5.js.map
