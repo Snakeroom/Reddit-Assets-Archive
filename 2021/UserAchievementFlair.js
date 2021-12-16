@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/UserAchievementFlair.d3a353962912cff14b14.js
-// Retrieved at 12/15/2021, 4:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/UserAchievementFlair.3772fb3f838a92283f0e.js
+// Retrieved at 12/15/2021, 8:10:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["UserAchievementFlair"], {
 		"./src/reddit/components/Econ/PowerupsFlair/HoverPopup.m.less": function(e, t, n) {
@@ -152,7 +152,7 @@
 				if (Object(o.e)(e => Object(f.e)(e, {
 						subredditId: t,
 						userId: n
-					}) && Object(I.k)(e))) return null;
+					}) && Object(I.l)(e))) return null;
 				const h = l ? [m, ...l.achievementTypes].filter(Boolean) : null;
 				if (!(!!i || !!m) || !h) return null;
 				const b = (null == m ? void 0 : m.type) === (null == i ? void 0 : i.type) ? null : m,
@@ -262,7 +262,7 @@
 								experimentName: c.I,
 								expEventOverride: t
 							});
-							return !!(Object(c.jf)(n) ? void 0 : n)
+							return !!(Object(c.kf)(n) ? void 0 : n)
 						})(n)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -1074,4 +1074,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UserAchievementFlair.d3a353962912cff14b14.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UserAchievementFlair.3772fb3f838a92283f0e.js.map

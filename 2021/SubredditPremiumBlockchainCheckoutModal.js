@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumBlockchainCheckoutModal.6056dba5d602994f1073.js
-// Retrieved at 12/6/2021, 1:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumBlockchainCheckoutModal.08caf580c00a5ab6ec3e.js
+// Retrieved at 12/15/2021, 8:10:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumBlockchainCheckoutModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -83,27 +83,27 @@
 				h = s("./src/lib/classNames/index.ts"),
 				b = s("./src/lib/prettyPrintNumber/index.ts"),
 				f = s("./src/reddit/components/Governance/Token/index.tsx"),
-				v = s("./src/reddit/helpers/governance/tokens.ts"),
-				x = s("./src/reddit/selectors/crypto/points.ts"),
+				x = s("./src/reddit/helpers/governance/tokens.ts"),
+				v = s("./src/reddit/selectors/crypto/points.ts"),
 				g = s("./src/reddit/selectors/gov.ts"),
-				E = s("./src/reddit/components/Governance/WalletAmount/index.m.less"),
-				w = s.n(E);
+				w = s("./src/reddit/components/Governance/WalletAmount/index.m.less"),
+				E = s.n(w);
 			const _ = Object(d.c)({
 				latestWallet: g.d,
 				pointsDetails: (e, {
 					subredditId: t
-				}) => Object(x.b)(e, t)
+				}) => Object(v.b)(e, t)
 			});
 			var N = Object(c.b)(_)((function(e) {
 					var t;
 					const s = e.latestWallet && e.latestWallet.amount || "0";
 					return i.a.createElement("div", {
-						className: Object(h.a)(w.a.container, e.className)
+						className: Object(h.a)(E.a.container, e.className)
 					}, "You have", i.a.createElement(f.a, {
 						grey: !0,
-						className: w.a.token,
+						className: E.a.token,
 						subredditId: e.subredditId
-					}), Object(b.a)(Object(v.b)(s, null === (t = e.pointsDetails) || void 0 === t ? void 0 : t.displayConversion)))
+					}), Object(b.a)(Object(x.b)(s, null === (t = e.pointsDetails) || void 0 === t ? void 0 : t.displayConversion)))
 				})),
 				k = s("./src/reddit/components/TrackingHelper/index.tsx"),
 				j = s("./src/reddit/controls/Button/index.tsx"),
@@ -112,8 +112,8 @@
 				y = s("./src/reddit/featureFlags/component.tsx"),
 				M = s("./src/reddit/helpers/governance/ethereum.ts"),
 				P = s("./src/reddit/models/Toast/index.ts"),
-				T = s("./src/reddit/selectors/economics.ts"),
-				I = s("./src/reddit/selectors/subreddit.ts"),
+				I = s("./src/reddit/selectors/economics.ts"),
+				T = s("./src/reddit/selectors/subreddit.ts"),
 				S = s("./src/reddit/components/Economics/SubredditPremium/constants.ts"),
 				A = s("./src/reddit/components/Econ/PreviewsTermsOfUseLink/index.tsx"),
 				B = s("./src/reddit/components/Economics/SubredditPremium/BlockchainCheckoutModal/Footer/index.m.less"),
@@ -124,7 +124,7 @@
 			const L = Object(d.c)({
 				meta: (e, {
 					subredditId: t
-				}) => Object(T.r)(e, t)
+				}) => Object(I.r)(e, t)
 			});
 			var R = Object(c.b)(L)((function(e) {
 					return i.a.createElement("footer", {
@@ -151,7 +151,7 @@
 			const V = Object(d.c)({
 				meta: (e, {
 					subredditId: t
-				}) => Object(T.r)(e, t)
+				}) => Object(I.r)(e, t)
 			});
 			var X = Object(c.b)(V)((function(e) {
 					const {
@@ -299,17 +299,17 @@
 			const Q = Object(d.c)({
 					meta: (e, {
 						subredditId: t
-					}) => Object(T.r)(e, t),
+					}) => Object(I.r)(e, t),
 					pointsDetails: (e, {
 						subredditId: t
-					}) => Object(x.b)(e, t),
+					}) => Object(v.b)(e, t),
 					priceInPoints: (e, {
 						subredditId: t
-					}) => Object(T.r)(e, t).prices.points || "0",
+					}) => Object(I.r)(e, t).prices.points || "0",
 					subscriptionExpiration: (e, {
 						subredditId: t
-					}) => Object(T.o)(e, t),
-					subreddit: I.R,
+					}) => Object(I.o)(e, t),
+					subreddit: T.R,
 					wallet: g.d
 				}),
 				$ = Object(c.b)(Q, (e, t) => ({
@@ -440,9 +440,9 @@
 		"./src/reddit/controls/ErrorText/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return E
-			})), s.d(t, "c", (function() {
 				return w
+			})), s.d(t, "c", (function() {
+				return E
 			}));
 			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
 				r = s("./node_modules/lodash/uniqueId.js"),
@@ -477,8 +477,8 @@
 						hk: "2Giu9U"
 					}))))
 				}),
-				v = s("./src/reddit/controls/ErrorText/index.m.less"),
-				x = s.n(v);
+				x = s("./src/reddit/controls/ErrorText/index.m.less"),
+				v = s.n(x);
 			class g extends d.a.Component {
 				constructor(e) {
 					super(e), this.spanRef = d.a.createRef(), this.toggleModal = () => {
@@ -523,12 +523,12 @@
 						isModalOpen: i
 					} = this.state;
 					return d.a.createElement("div", {
-						className: Object(l.a)(x.a.wrapper, t)
+						className: Object(l.a)(v.a.wrapper, t)
 					}, d.a.createElement("span", {
-						className: x.a.description,
+						className: v.a.description,
 						ref: this.spanRef
 					}, e), a && d.a.createElement("span", {
-						className: x.a.moreText,
+						className: v.a.moreText,
 						onClick: this.toggleModal
 					}, o), i && d.a.createElement(f, {
 						onConfirmed: this.toggleModal,
@@ -536,7 +536,7 @@
 					}, s || e))
 				}
 			}
-			const E = e => {
+			const w = e => {
 					const {
 						className: t,
 						errorClassName: s,
@@ -552,7 +552,7 @@
 						key: t
 					}, e))) : null
 				},
-				w = e => d.a.createElement(E, {
+				E = e => d.a.createElement(w, {
 					fallbackMessage: n.fbt._("Something went wrong", null, {
 						hk: "Cw1BT"
 					}),
@@ -658,16 +658,16 @@
 						})
 					}, e.label), e.children)
 				},
-				v = e => r.a.createElement("div", {
+				x = e => r.a.createElement("div", {
 					className: Object(o.a)(u.a.addValueButton, e.className),
 					onClick: e.onClick
 				}, e.text, " ", r.a.createElement(c.a, {
 					className: u.a.plus
 				}));
-			var x;
+			var v;
 			! function(e) {
 				e[e.ADD = 0] = "ADD", e[e.REMOVE = 1] = "REMOVE"
-			}(x || (x = {}));
+			}(v || (v = {}));
 			class g extends r.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
@@ -675,7 +675,7 @@
 					}, this.addValue = () => {
 						const e = this.props.values.slice();
 						this.props.buttonOnTop ? e.unshift("") : e.push(""), this.props.onChange(e), this.props.onEvent && this.props.onEvent({
-							action: x.ADD
+							action: v.ADD
 						})
 					}, this.updateValue = (e, t) => {
 						const s = this.props.values.slice();
@@ -684,7 +684,7 @@
 						const t = this.props.values.slice(),
 							s = t[e];
 						t.splice(e, 1), this.props.onChange(t), this.props.onEvent && this.props.onEvent({
-							action: x.REMOVE,
+							action: v.REMOVE,
 							value: s,
 							index: e
 						})
@@ -745,10 +745,10 @@
 					const c = !(!!n && s.length >= n) && !i;
 					return r.a.createElement("div", {
 						className: Object(o.a)(u.a.multiInputWrapper, e)
-					}, t && c && r.a.createElement(v, {
+					}, t && c && r.a.createElement(x, {
 						onClick: this.addValue,
 						text: a
-					}), this.renderFields(), !t && c && r.a.createElement(v, {
+					}), this.renderFields(), !t && c && r.a.createElement(x, {
 						onClick: this.addValue,
 						text: a
 					}))
@@ -776,7 +776,7 @@
 			})), s.d(t, "i", (function() {
 				return f
 			})), s.d(t, "j", (function() {
-				return v
+				return x
 			}));
 			s("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = s("./node_modules/fbt/lib/FbtPublic.js");
@@ -807,7 +807,7 @@
 			}
 			const d = 4001;
 			async function l(e, t, n, o) {
-				const [a, i] = await Promise.all([Promise.all([s.e("vendors~CryptoLibEthers~reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-compon~fb9f1732"), s.e("CryptoLibEthers")]).then(s.bind(null, "./node_modules/ethers/lib.esm/index.js")).then(e => e.ethers), t.then(e => e.abi)]);
+				const [a, i] = await Promise.all([Promise.all([s.e(0), s.e("CryptoLibEthers")]).then(s.bind(null, "./node_modules/ethers/lib.esm/index.js")).then(e => e.ethers), t.then(e => e.abi)]);
 				await c();
 				const d = new a.providers.Web3Provider(r()).getSigner(),
 					l = new a.Contract(e, i, d),
@@ -836,7 +836,7 @@
 			};
 			const m = 1;
 			async function p(e, t, n, r, o) {
-				const a = await Promise.all([s.e("vendors~CryptoLibEthers~reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-compon~fb9f1732"), s.e("CryptoLibEthers")]).then(s.bind(null, "./node_modules/ethers/lib.esm/index.js")).then(e => e.ethers),
+				const a = await Promise.all([s.e(0), s.e("CryptoLibEthers")]).then(s.bind(null, "./node_modules/ethers/lib.esm/index.js")).then(e => e.ethers),
 					{
 						BigNumber: i
 					} = a,
@@ -900,7 +900,7 @@
 				})
 			}
 
-			function v(e) {
+			function x(e) {
 				return new Promise((t, s) => {
 					r().sendAsync({
 						method: "metamask_watchAsset",
@@ -1053,4 +1053,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumBlockchainCheckoutModal.6056dba5d602994f1073.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumBlockchainCheckoutModal.08caf580c00a5ab6ec3e.js.map

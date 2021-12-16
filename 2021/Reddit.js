@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.8b1e73a8ea64872675c2.js
-// Retrieved at 12/15/2021, 6:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.ccfe351654c054441087.js
+// Retrieved at 12/15/2021, 8:10:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -2071,7 +2071,7 @@
 			const d = () => async (e, t) => {
 				const n = t();
 				Object(i.d)(n, {
-					experimentName: a.Ue
+					experimentName: a.Ve
 				})
 			}, l = Object(s.a)(r.a);
 			t.default = () => async (e, t) => {
@@ -3802,7 +3802,7 @@
 				onOverlayClick: e,
 				withOverlay: !0
 			}));
-			const In = () => Promise.all([n.e(0), n.e("OnboardingModal")]).then(n.bind(null, "./src/reddit/components/Onboarding/Modal.tsx")),
+			const In = () => Promise.all([n.e(1), n.e("OnboardingModal")]).then(n.bind(null, "./src/reddit/components/Onboarding/Modal.tsx")),
 				Tn = Object(Se.a)({
 					ErrorComponent: () => null,
 					LoadingComponent: () => null,
@@ -4883,11 +4883,11 @@
 						const n = zs(e),
 							s = new Vs.a("id"),
 							r = Object(yt.ib)(e),
-							a = Object(Gs.q)(e),
+							a = Object(Gs.r)(e),
 							i = Object(qs.b)(e),
 							c = [];
 						a && i || (!a && c.push(is.Predictions), !i && c.push(is.WrappedReddit));
-						const d = (e => Object(Gs.y)(e) ? [no, to, so, oo, ro, ao, io] : [to, no, so, oo, ro, ao, io])(e),
+						const d = (e => Object(Gs.z)(e) ? [no, to, so, oo, ro, ao, io] : [to, no, so, oo, ro, ao, io])(e),
 							l = c.length ? d.filter(e => !c.includes(e(null).id)) : d;
 						if (n.account) {
 							const a = n.account;
@@ -6132,8 +6132,8 @@
 			const Zr = e => {
 				return Object(Jr.c)(e, {
 					experimentEligibilitySelector: Jr.a,
-					experimentName: Qt.je
-				}) === Qt.Tc
+					experimentName: Qt.ke
+				}) === Qt.Uc
 			};
 			var Yr = n("./src/reddit/components/Header/QuickLinks/index.m.less"),
 				Xr = n.n(Yr),
@@ -8027,7 +8027,7 @@
 					sendEvent: f,
 					shouldShowCreateCommunityItem: v,
 					openCommunityCreationModal: O
-				} = e, x = g && g.id, C = Object(p.e)(Gs.q), y = Object(p.e)(t => e.isOpen && Object(Gs.y)(t)), E = Object(p.e)(qs.b);
+				} = e, x = g && g.id, C = Object(p.e)(Gs.r), y = Object(p.e)(t => e.isOpen && Object(Gs.z)(t)), E = Object(p.e)(qs.b);
 				Object(u.useEffect)(() => {
 					l()
 				}, [x]);
@@ -8264,7 +8264,7 @@
 					closeUserDropdown: () => e(Object(ta.j)({
 						tooltipId: "USER_DROPDOWN_ID"
 					})),
-					exposeNavClickV2Experiment: () => e((() => async (e, t) => Object(Jr.e)(t(), Qt.Ld))()),
+					exposeNavClickV2Experiment: () => e((() => async (e, t) => Object(Jr.e)(t(), Qt.Md))()),
 					toggleNightmode: t => e(Object(ai.y)(t)),
 					toggleShowPresence: t => e(Object(ai.H)({
 						showPresence: t
@@ -8433,15 +8433,15 @@
 			const jd = e => Object(Jr.c)(e, {
 					experimentName: Qt.D,
 					experimentEligibilitySelector: () => Object(yt.J)(e)
-				}) === Qt.Tc,
+				}) === Qt.Uc,
 				Pd = e => Object(Jr.c)(e, {
 					experimentName: Qt.F,
 					experimentEligibilitySelector: () => Object(yt.J)(e) && !jd(e)
-				}) === Qt.Tc,
+				}) === Qt.Uc,
 				_d = e => Object(Jr.c)(e, {
 					experimentName: Qt.G,
 					experimentEligibilitySelector: () => Object(yt.J)(e) && !jd(e)
-				}) === Qt.Tc;
+				}) === Qt.Uc;
 			var Sd = n("./src/reddit/selectors/experiments/googleOneTap.ts"),
 				kd = n("./src/reddit/selectors/experiments/inboxAppBadgingGql.ts"),
 				wd = n("./src/reddit/selectors/sso.ts");
@@ -10926,7 +10926,7 @@
 					const t = this.resolve(e);
 					return !1 !== this.resolved[t] && !!n.m[t]
 				},
-				importAsync: () => Promise.all([n.e("vendors~CryptoLibEthers~reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-compon~fb9f1732"), n.e("vendors~reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-~bd661033"), n.e("reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67"), n.e("reddit-components-Governance-TransactionModals-BurnPointsModal")]).then(n.bind(null, "./src/reddit/components/Governance/TransactionModals/BurnPointsModal/index.tsx")),
+				importAsync: () => Promise.all([n.e(0), n.e("vendors~reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-~339111b0"), n.e("reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67"), n.e("reddit-components-Governance-TransactionModals-BurnPointsModal")]).then(n.bind(null, "./src/reddit/components/Governance/TransactionModals/BurnPointsModal/index.tsx")),
 				requireAsync(e) {
 					const t = this.resolve(e);
 					return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
@@ -10957,7 +10957,7 @@
 					const t = this.resolve(e);
 					return !1 !== this.resolved[t] && !!n.m[t]
 				},
-				importAsync: () => Promise.all([n.e("vendors~CryptoLibEthers~reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-compon~fb9f1732"), n.e("vendors~reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-~bd661033"), n.e("reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67"), n.e("reddit-components-Governance-TransactionModals-ConvertToCoinsModal")]).then(n.bind(null, "./src/reddit/components/Governance/TransactionModals/ConvertToCoinsModal/index.tsx")),
+				importAsync: () => Promise.all([n.e(0), n.e("vendors~reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-~339111b0"), n.e("reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67"), n.e("reddit-components-Governance-TransactionModals-ConvertToCoinsModal")]).then(n.bind(null, "./src/reddit/components/Governance/TransactionModals/ConvertToCoinsModal/index.tsx")),
 				requireAsync(e) {
 					const t = this.resolve(e);
 					return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
@@ -14834,13 +14834,13 @@
 				return Object(a.c)(e, {
 					expEventOverride: !1,
 					experimentEligibilitySelector: l,
-					experimentName: o.ad
+					experimentName: o.bd
 				})
 			}
 
 			function m(e) {
 				switch (e) {
-					case o.bd.Enabled:
+					case o.cd.Enabled:
 						return 18;
 					default:
 						return
@@ -14850,7 +14850,7 @@
 			}(s || (s = {}));
 			const p = e => {
 				switch (e) {
-					case o.bd.Enabled:
+					case o.cd.Enabled:
 						return s.Enabled;
 					default:
 						return s.NoBucket
@@ -17141,8 +17141,8 @@
 			const Qn = {
 					displayDelay: 15,
 					displayOnRoutes: [_.Mb.SUBREDDIT, _.Mb.COMMENTS],
-					experimentName: $e.jd,
-					experimentVariant: $e.od.On,
+					experimentName: $e.kd,
+					experimentVariant: $e.pd.On,
 					isSEOOnly: !0,
 					samplingRate: 25,
 					seed: Math.random()
@@ -17412,14 +17412,14 @@
 							}))
 						}), Ln(n), Object(B.d)("enabled" === Object(On.c)(n.getState(), {
 							experimentEligibilitySelector: On.a,
-							experimentName: $e.Re,
+							experimentName: $e.Se,
 							expEventOverride: !1
 						})), Object(B.c)("enabled" === Object(On.c)(n.getState(), {
 							experimentEligibilitySelector: On.a,
-							experimentName: $e.Te
+							experimentName: $e.Ue
 						})), Object(B.g)("enabled" === Object(On.c)(n.getState(), {
 							experimentEligibilitySelector: On.a,
-							experimentName: $e.Se
+							experimentName: $e.Te
 						})), Object(B.f)(js.gqlContext), window.addEventListener("beforeunload", () => {
 							const e = n.getState(),
 								t = Object(yn.a)("tab_closed")(e),
@@ -18692,7 +18692,7 @@
 			var b = [],
 				h = n("./src/reddit/routes/econManagement/index.ts");
 			var g = {
-					action: Object(p.a)(() => n.e(4).then(n.bind(null, "./src/reddit/actions/pages/emailVerification.ts")).then(e => e.emailVerificationRequested)),
+					action: Object(p.a)(() => n.e(9).then(n.bind(null, "./src/reddit/actions/pages/emailVerification.ts")).then(e => e.emailVerificationRequested)),
 					chunk: c.s.EMPTY,
 					exact: !0,
 					meta: {
@@ -18914,7 +18914,7 @@
 							const t = this.resolve(e);
 							return !1 !== this.resolved[t] && !!n.m[t]
 						},
-						importAsync: () => Promise.all([n.e("vendors~CryptoLibEthers~reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-compon~fb9f1732"), n.e("reddit-pages-meta-ArbitrumPointsMigrationPage")]).then(n.bind(null, "./src/reddit/pages/meta/ArbitrumPointsMigrationPage/index.tsx")),
+						importAsync: () => Promise.all([n.e(0), n.e("vendors~reddit-pages-meta-ArbitrumPointsMigrationPage"), n.e("reddit-pages-meta-ArbitrumPointsMigrationPage")]).then(n.bind(null, "./src/reddit/pages/meta/ArbitrumPointsMigrationPage/index.tsx")),
 						requireAsync(e) {
 							const t = this.resolve(e);
 							return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
@@ -19996,8 +19996,8 @@
 				p = n("./src/reddit/selectors/experiments/index.ts");
 			const b = Object(a.a)(e => Object(m.c)(e, {
 				experimentEligibilitySelector: p.f,
-				experimentName: d.ed
-			}), e => e === d.ld.Enabled);
+				experimentName: d.fd
+			}), e => e === d.md.Enabled);
 			var h = n("./src/reddit/selectors/experiments/loggedOutBlockingInterstitial.ts"),
 				g = n("./src/reddit/selectors/experiments/magicLink.ts"),
 				f = n("./src/reddit/selectors/experiments/moreRepliesSignup.ts"),
@@ -20005,8 +20005,8 @@
 				O = n("./src/lib/getParsedUserAgent/index.ts");
 			const x = Object(a.a)(e => Object(m.c)(e, {
 				experimentEligibilitySelector: e => Object(O.g)(e.meta.userAgent) && Object(p.f)(e),
-				experimentName: d.De
-			}), e => e === d.Le.Enabled);
+				experimentName: d.Ee
+			}), e => e === d.Me.Enabled);
 			var C = n("./src/reddit/selectors/experiments/utils.ts"),
 				y = n("./src/reddit/selectors/meta.ts"),
 				E = n("./src/reddit/selectors/responsiveSettings.ts");
@@ -20019,7 +20019,7 @@
 					moreRepliesSignupVariant: e => Object(C.a)(Object(f.b)(e)),
 					ssoLoginLinkVariant: e => Object(m.c)(e, {
 						experimentEligibilitySelector: e => !Object(p.e)(e),
-						experimentName: d.Ee
+						experimentName: d.Fe
 					}),
 					blockingInterstitialVariant: h.d
 				}),
@@ -20049,15 +20049,15 @@
 					if (j = Object(i.a)(j, {
 							experiment_d2x_2020ify_buttons: "enabled"
 						}), h && (j = Object(i.a)(j, {
-							[`experiment_${d.Ee}`]: h
+							[`experiment_${d.Fe}`]: h
 						})), O && (j = Object(i.a)(j, {
-							[`experiment_${d.ed}`]: "enabled"
+							[`experiment_${d.fd}`]: "enabled"
 						})), x && (j = Object(i.a)(j, {
-							[`experiment_${d.Dd}`]: f
+							[`experiment_${d.Ed}`]: f
 						})), C && (j = Object(i.a)(j, {
 							experiment_d2x_onboarding: "enabled"
 						})), y && (j = Object(i.a)(j, {
-							[`experiment_${d.De}`]: "enabled"
+							[`experiment_${d.Ee}`]: "enabled"
 						})), e === c.c.GoogleOneTap) return Object(i.a)(j, {
 						[d.pb]: b
 					});
@@ -20067,7 +20067,7 @@
 							[d.cc]: p,
 							uiMode: t
 						})), g && (j = Object(i.a)(j, {
-							[`experiment_${d.Ad}`]: g
+							[`experiment_${d.Bd}`]: g
 						})), a && (j = Object(i.a)(j, {
 							mweb_responsive_settings: "treatment"
 						})), l) {
@@ -20244,7 +20244,7 @@
 			}));
 			var s = n("./src/reddit/constants/experiments.ts"),
 				o = n("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const r = Object(o.a)(s.Bd)
+			const r = Object(o.a)(s.Cd)
 		},
 		"./src/reddit/selectors/experiments/econStorefrontClaim.ts": function(e, t, n) {
 			"use strict";
@@ -20257,9 +20257,9 @@
 			const a = e => {
 				const t = Object(o.c)(e, {
 					experimentEligibilitySelector: r.K,
-					experimentName: s.Qc
+					experimentName: s.Rc
 				});
-				return !(!t || Object(s.jf)(t))
+				return !(!t || Object(s.kf)(t))
 			}
 		},
 		"./src/reddit/selectors/experiments/frontpageSignup.ts": function(e, t, n) {
@@ -20291,14 +20291,14 @@
 					experimentEligibilitySelector: e => l(e, t),
 					experimentName: o.cc,
 					throttledVariants: {
-						[o.cd.CurrentThrottled]: o.cc
+						[o.dd.CurrentThrottled]: o.cc
 					}
 				}), i.a),
-				m = e => e === o.cd.CurrentThrottled,
-				p = e => e === o.cd.CurrentThrottled || e === o.cd.CurrentUnthrottled || e === o.cd.CurrentUnthrottledCopy || e === o.cd.NewPopUnthrottledCopy,
-				b = e => e === o.cd.NewPopUnthrottledCopy,
-				h = e => e === o.cd.NewPageUnthrottledCopy || e === o.cd.NewPageUnthrottledCopyFields,
-				g = e => e === o.cd.NewPageUnthrottledCopyFields
+				m = e => e === o.dd.CurrentThrottled,
+				p = e => e === o.dd.CurrentThrottled || e === o.dd.CurrentUnthrottled || e === o.dd.CurrentUnthrottledCopy || e === o.dd.NewPopUnthrottledCopy,
+				b = e => e === o.dd.NewPopUnthrottledCopy,
+				h = e => e === o.dd.NewPageUnthrottledCopy || e === o.dd.NewPageUnthrottledCopyFields,
+				g = e => e === o.dd.NewPageUnthrottledCopyFields
 		},
 		"./src/reddit/selectors/experiments/joinOptimizations.ts": function(e, t, n) {
 			"use strict";
@@ -20358,10 +20358,10 @@
 				i = n("./src/reddit/selectors/experiments/utils.ts");
 			const c = e => Object(r.c)(e, {
 					experimentEligibilitySelector: a.f,
-					experimentName: o.Dd,
+					experimentName: o.Ed,
 					throttledVariants: {
-						[o.Hd.ThrottledDaily]: o.Id.Daily,
-						[o.Hd.ThrottledWeekly]: o.Id.Weekly
+						[o.Id.ThrottledDaily]: o.Jd.Daily,
+						[o.Id.ThrottledWeekly]: o.Jd.Weekly
 					}
 				}),
 				d = Object(s.a)(c, e => !!Object(i.a)(e))
@@ -20376,14 +20376,14 @@
 			var s = n("./src/reddit/constants/experiments.ts"),
 				o = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const r = e => Object(o.c)(e, {
-					experimentName: s.Kd,
-					experimentEligibilitySelector: o.a
-				}) === s.Td.Enabled,
-				a = e => Object(o.c)(e, {
 					experimentName: s.Ld,
+					experimentEligibilitySelector: o.a
+				}) === s.Ud.Enabled,
+				a = e => Object(o.c)(e, {
+					experimentName: s.Md,
 					experimentEligibilitySelector: o.a,
 					expEventOverride: !1
-				}) === s.Ud.Enabled
+				}) === s.Vd.Enabled
 		},
 		"./src/reddit/selectors/experiments/onboarding.ts": function(e, t, n) {
 			"use strict";
@@ -20402,7 +20402,7 @@
 				a = n("./src/reddit/selectors/experiments/utils.ts");
 			const i = Object(s.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: o.Ue,
+					experimentName: o.Ve,
 					expEventOverride: !1
 				}), e => e),
 				c = Object(s.a)(i, e => !!Object(a.a)(e)),
@@ -20429,28 +20429,28 @@
 			const a = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: s.he
-					}) === s.Tc
+						experimentName: s.ie
+					}) === s.Uc
 				},
 				i = e => {
 					if (Object(r.a)(e)) return !1;
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: s.ge
-					}) === s.Tc
+						experimentName: s.he
+					}) === s.Uc
 				},
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: s.Xd
-					}) === s.Tc
+						experimentName: s.Yd
+					}) === s.Uc
 				},
 				d = e => {
 					if (Object(r.a)(e)) return !1;
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: s.Wd
-					}) === s.Tc
+						experimentName: s.Xd
+					}) === s.Uc
 				}
 		},
 		"./src/reddit/selectors/experiments/wrappedReddit.ts": function(e, t, n) {
@@ -20737,4 +20737,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit~StandalonePostPage", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Governance~ModListing~Reddit~Subreddit", "Chat~Governance~Reddit", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.8b1e73a8ea64872675c2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.ccfe351654c054441087.js.map

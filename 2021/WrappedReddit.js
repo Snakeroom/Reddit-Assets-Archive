@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/WrappedReddit.f12d7e56c35ad9531329.js
-// Retrieved at 12/15/2021, 5:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/WrappedReddit.90805fed352702f8b031.js
+// Retrieved at 12/15/2021, 8:10:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["WrappedReddit", "PushNotifications"], {
 		"./assets/fonts/RedditSans/font.less": function(a, e, c) {},
@@ -2508,7 +2508,7 @@
 						const l = (null === (t = d[s]) || void 0 === t ? void 0 : t.id) || "",
 							r = document.getElementById(l);
 						if (r) {
-							const a = await (() => c.e(3).then(c.bind(null, "./node_modules/html-to-image/es/index.js")))(),
+							const a = await (() => c.e(8).then(c.bind(null, "./node_modules/html-to-image/es/index.js")))(),
 								t = await a.toPng(r);
 							if (t) {
 								const a = document.createElement("a");
@@ -2595,4 +2595,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/WrappedReddit.f12d7e56c35ad9531329.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/WrappedReddit.90805fed352702f8b031.js.map

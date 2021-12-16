@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.85f313490d95c5024a6a.js
-// Retrieved at 12/15/2021, 5:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.499ff1c433b73a238bcc.js
+// Retrieved at 12/15/2021, 8:10:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -5450,12 +5450,12 @@
 						rtJsonElementProps: o
 					});
 					switch (r) {
-						case b.Oe.SmIcon:
+						case b.Pe.SmIcon:
 							return s.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: o
 							});
-						case b.Oe.SmIconHc:
+						case b.Pe.SmIconHc:
 							return s.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -7583,15 +7583,15 @@
 			const i = e => {
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: o.K,
-						experimentName: r.vc
+						experimentName: r.wc
 					});
-					return !(!t || Object(r.jf)(t))
+					return !(!t || Object(r.kf)(t))
 				},
 				a = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: o.K,
-						experimentName: r.vc
-					}) === r.Yc.ListingEnabled
+						experimentName: r.wc
+					}) === r.Zc.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/experiments/joinOptimizations.ts": function(e, t, n) {
@@ -7767,12 +7767,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: r.Ie
+						experimentName: r.Je
 					}) || ""
 				},
 				l = e => {
 					const t = c(e);
-					return t === r.Oe.SmIcon || t === r.Oe.SmIconHc
+					return t === r.Pe.SmIcon || t === r.Pe.SmIconHc
 				},
 				d = (e, {
 					subredditName: t
@@ -7807,4 +7807,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.85f313490d95c5024a6a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.499ff1c433b73a238bcc.js.map

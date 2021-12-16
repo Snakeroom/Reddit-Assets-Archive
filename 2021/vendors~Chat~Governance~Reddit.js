@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.5188c95215c79ba1e865.js
-// Retrieved at 12/8/2021, 3:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.f8dc0bb48e41a65d1a09.js
+// Retrieved at 12/15/2021, 8:10:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~Chat~Governance~Reddit"], {
 		"./node_modules/@loadable/component/dist/loadable.esm.js": function(e, t, n) {
@@ -7099,7 +7099,7 @@
 		},
 		"./node_modules/core-js/modules/_core.js": function(e, t) {
 			var n = e.exports = {
-				version: "2.6.11"
+				version: "2.6.12"
 			};
 			"number" == typeof __e && (__e = n)
 		},
@@ -7540,7 +7540,7 @@
 			})("versions", []).push({
 				version: r.version,
 				mode: n("./node_modules/core-js/modules/_library.js") ? "pure" : "global",
-				copyright: "© 2019 Denis Pushkarev (zloirock.ru)"
+				copyright: "© 2020 Denis Pushkarev (zloirock.ru)"
 			})
 		},
 		"./node_modules/core-js/modules/_strict-method.js": function(e, t, n) {
@@ -34935,4 +34935,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.5188c95215c79ba1e865.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.f8dc0bb48e41a65d1a09.js.map
