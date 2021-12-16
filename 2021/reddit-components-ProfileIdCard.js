@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.cf8f8e0858b43825c7ab.js
-// Retrieved at 12/15/2021, 8:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.0e173e3242953d53b4c2.js
+// Retrieved at 12/16/2021, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ProfileIdCard"], {
 		"./node_modules/lodash/compact.js": function(e, t) {
@@ -1765,7 +1765,7 @@
 				url: y,
 				isHovercard: S
 			}) => {
-				const U = Object(a.e)(e => !x && !!O && Object(d.i)(e));
+				const U = Object(a.e)(e => !x && !!O && Object(d.h)(e));
 				return s.a.createElement(s.a.Fragment, null, s.a.createElement(u.a, {
 					bannerBackgroundImage: e,
 					editMode: !!r,
@@ -2289,7 +2289,7 @@
 							const {
 								clickProfileFollowButton: r,
 								clickProfileUnfollowButton: s
-							} = await n.e(10).then(n.bind(null, "./src/reddit/helpers/trackers/profileIdCard.ts"));
+							} = await n.e(5).then(n.bind(null, "./src/reddit/helpers/trackers/profileIdCard.ts"));
 							f(t ? s(j) : r(j))
 						},
 						userIsSubscriber: A,
@@ -2911,7 +2911,7 @@
 			const o = e => Object(s.c)(e, {
 				experimentName: r.E,
 				experimentEligibilitySelector: () => Object(a.J)(e)
-			}) === r.Uc
+			}) === r.Tc
 		},
 		"./src/reddit/selectors/experiments/crisisTextLine.ts": function(e, t, n) {
 			"use strict";
@@ -2968,4 +2968,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.cf8f8e0858b43825c7ab.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.0e173e3242953d53b4c2.js.map

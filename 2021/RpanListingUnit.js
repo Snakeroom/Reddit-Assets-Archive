@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.c62044afadf7595cb946.js
-// Retrieved at 12/15/2021, 8:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.14a0247f07a0accbd7a6.js
+// Retrieved at 12/16/2021, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -52,16 +52,16 @@
 			const p = Object(i.a)(e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.Gd
+					experimentName: u.Fd
 				});
-				return Object(u.kf)(t) ? void 0 : t
+				return Object(u.jf)(t) ? void 0 : t
 			}, e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.Hd
+					experimentName: u.Gd
 				});
-				return Object(u.kf)(t) ? void 0 : t
-			}, (e, t) => e === u.Kd.Enabled && t === u.Kd.Enabled);
+				return Object(u.jf)(t) ? void 0 : t
+			}, (e, t) => e === u.Jd.Enabled && t === u.Jd.Enabled);
 			var h = n("./src/config.ts");
 			var b = n("./src/reddit/selectors/user.ts");
 			const f = e => {
@@ -274,11 +274,11 @@
 				const N = Object(r.forwardRef)((e, t) => s.a.createElement(A, E({}, e, {
 						forwardedRef: t
 					}))),
-					k = Object(i.c)({
+					P = Object(i.c)({
 						redditUserId: b.i,
 						isMuxEnabled: p
 					});
-				return Object(o.b)(k, null, null, {
+				return Object(o.b)(P, null, null, {
 					forwardRef: !0
 				})(N)
 			}
@@ -553,25 +553,25 @@
 					queryVariables: _,
 					shouldDisjointAnimation: g,
 					subsequentRecurringDelay: O
-				} = e, [E, C] = Object(r.useState)(!1), [x, y] = Object(r.useState)(!0), [I, S] = Object(r.useState)([]), [T, j] = Object(r.useState)(c(p).reverse()), w = Object(r.useRef)(!1), A = Object(r.useRef)(null), N = Object(r.useRef)(e => {}), k = Object(r.useRef)();
+				} = e, [E, C] = Object(r.useState)(!1), [x, y] = Object(r.useState)(!0), [I, S] = Object(r.useState)([]), [T, j] = Object(r.useState)(c(p).reverse()), w = Object(r.useRef)(!1), A = Object(r.useRef)(null), N = Object(r.useRef)(e => {}), P = Object(r.useRef)();
 				N.current = Object(r.useCallback)(e => {
 					let n = e || d();
 					const r = [...T].reverse().join("");
 					let s = parseInt(r) + n;
 					s > t && (n = t - parseInt(r), s = t);
 					const o = c(s).reverse();
-					C(!1), S(T), j(o), y(!1), k.current = setTimeout(() => {
+					C(!1), S(T), j(o), y(!1), P.current = setTimeout(() => {
 						C(!0)
 					}, 0)
 				}, [t, d, T]);
-				const P = Object(r.useRef)(() => {}),
+				const k = Object(r.useRef)(() => {}),
 					R = Object(r.useRef)(),
 					D = Object(r.useRef)();
-				P.current = Object(r.useCallback)(() => {
+				k.current = Object(r.useCallback)(() => {
 					D.current = setTimeout(() => {
 						N.current();
 						const e = [...I].reverse().join("");
-						parseInt(e) < t && P.current()
+						parseInt(e) < t && k.current()
 					}, O())
 				}, [t, O, I]);
 				const L = Object(r.useRef)(0),
@@ -583,7 +583,7 @@
 								intersectionRatio: n
 							} = e, r = 1 !== n;
 							t ? (M.current = !0, w.current || (w.current = !0, R.current = setTimeout(() => {
-								N.current(), P.current()
+								N.current(), k.current()
 							}, u())), L.current > 0 && (N.current(L.current), L.current = 0)) : r && (M.current = !1)
 						})
 					}, []);
@@ -607,7 +607,7 @@
 						M.current ? N.current(e) : L.current += e
 					}
 					return () => {
-						clearTimeout(R.current), clearTimeout(D.current), clearTimeout(k.current)
+						clearTimeout(R.current), clearTimeout(D.current), clearTimeout(P.current)
 					}
 				}, [t]);
 				const Y = Object(r.useCallback)(() => y(!0), [y]),
@@ -1362,9 +1362,9 @@
 			})), n.d(t, "a", (function() {
 				return N
 			})), n.d(t, "s", (function() {
-				return k
-			})), n.d(t, "c", (function() {
 				return P
+			})), n.d(t, "c", (function() {
+				return k
 			}));
 			var r = n("./src/lib/classNames/index.ts"),
 				s = n("./src/lib/lessComponent.tsx"),
@@ -1404,8 +1404,8 @@
 				w = s.a.wrapped(a.l, "WarningButton", u.a),
 				A = s.a.wrapped(a.l, "PrimaryButton", u.a),
 				N = s.a.wrapped(a.o, "CancelButton", u.a),
-				k = s.a.wrapped(a.r, "RemoveButton", u.a),
-				P = ({
+				P = s.a.wrapped(a.r, "RemoveButton", u.a),
+				k = ({
 					className: e,
 					...t
 				}) => i.a.createElement(a.t, m({
@@ -1549,8 +1549,8 @@
 				w = n("./src/reddit/selectors/PublicAccessNetwork/streams.ts"),
 				A = n("./src/reddit/selectors/user.ts"),
 				N = n("./src/reddit/components/ClassicPost/Placeholder.tsx"),
-				k = n("./src/reddit/components/Flatlist/index.tsx"),
-				P = n("./src/reddit/components/Flatlist/constants.ts"),
+				P = n("./src/reddit/components/Flatlist/index.tsx"),
+				k = n("./src/reddit/components/Flatlist/constants.ts"),
 				R = n("./src/reddit/components/Flatlist/ResponsiveRow.tsx"),
 				D = n("./src/reddit/components/HlsVideo/index.tsx"),
 				L = n("./src/reddit/components/OverflowMenu/index.tsx"),
@@ -1841,7 +1841,7 @@
 						className: q.a.flatListContainer
 					}, s.a.createElement(se, {
 						onClick: this.onHeaderClicked
-					}), s.a.createElement(k.a, {
+					}), s.a.createElement(P.a, {
 						className: q.a.flatlistSeparator
 					}), s.a.createElement("div", null, s.a.createElement(oe, {
 						onClick: this.onHideUnitClicked
@@ -2037,7 +2037,7 @@
 					displayText: z._("Show me less of this", null, {
 						hk: "4t8AKC"
 					}),
-					flatlistItem: P.a.Hide,
+					flatlistItem: k.a.Hide,
 					isLoggedIn: !!t,
 					isUserOp: !1,
 					onClick: e,
@@ -2362,13 +2362,13 @@
 							}
 						}),
 						N = !e.isScoreHidden && f && n < O.a,
-						k = Object(v.a)(S);
+						P = Object(v.a)(S);
 					return c.a.createElement("div", {
 						className: Object(s.a)(I.a.score, e.className),
 						style: e.disableInlineColor ? void 0 : t,
-						onMouseEnter: g ? k.show : void 0,
-						onMouseLeave: g ? k.hide : void 0,
-						ref: g ? k.target.ref : void 0
+						onMouseEnter: g ? P.show : void 0,
+						onMouseLeave: g ? P.hide : void 0,
+						ref: g ? P.target.ref : void 0
 					}, (N || _) && c.a.createElement(c.a.Fragment, null, c.a.createElement(u.b, {
 						initialDisplayCount: n,
 						countToUpperBound: n,
@@ -2382,7 +2382,7 @@
 						queryVariables: A.current,
 						onDataCB: j,
 						isLoadTestOnly: _ && !N
-					})), !N && y, g && E && c.a.createElement(m.a, k, c.a.createElement(p.a, {
+					})), !N && y, g && E && c.a.createElement(m.a, P, c.a.createElement(p.a, {
 						className: I.a.viewCount,
 						post: E,
 						showViewCount: !1
@@ -2625,9 +2625,9 @@
 			})), n.d(t, "typeMessageInputEvent", (function() {
 				return N
 			})), n.d(t, "clickLearnMoreLinkEvent", (function() {
-				return k
-			})), n.d(t, "clickQuestionMarkEvent", (function() {
 				return P
+			})), n.d(t, "clickQuestionMarkEvent", (function() {
+				return k
 			})), n.d(t, "clickConfirmAwardEvent", (function() {
 				return R
 			})), n.d(t, "clickGetPremiumEvent", (function() {
@@ -2762,13 +2762,13 @@
 					action: "type",
 					noun: "message_input"
 				}),
-				k = e => t => ({
+				P = e => t => ({
 					...u(t, e),
 					source: "give_gold",
 					action: "click",
 					noun: "learn_more"
 				}),
-				P = e => t => ({
+				k = e => t => ({
 					...u(t, e),
 					source: "give_gold",
 					action: "click",
@@ -3254,7 +3254,7 @@
 			})), n.d(t, "v", (function() {
 				return N
 			})), n.d(t, "w", (function() {
-				return k
+				return P
 			}));
 			var r = n("./src/reddit/models/ScheduledPost/index.ts"),
 				s = n("./src/reddit/selectors/telemetry.ts");
@@ -3432,7 +3432,7 @@
 					noun: "custom_schedule_post_composer",
 					...o(e)
 				}),
-				k = () => (e, t) => {
+				P = () => (e, t) => {
 					const n = o(e);
 					return {
 						source: "post",
@@ -4049,7 +4049,7 @@
 						postId: t
 					}) || Object(i.H)(e))(e, t),
 					experimentName: r.P
-				}) === r.Uc
+				}) === r.Tc
 			}
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, n) {
@@ -4180,4 +4180,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.c62044afadf7595cb946.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.14a0247f07a0accbd7a6.js.map

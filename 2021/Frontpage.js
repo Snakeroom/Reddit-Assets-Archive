@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.d784a3e9dd45bdd773ee.js
-// Retrieved at 12/15/2021, 8:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.a09b3ad2e34f61ea8932.js
+// Retrieved at 12/16/2021, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -2502,10 +2502,10 @@
 			}
 			var qe = a("./src/reddit/selectors/experiments/utils.ts");
 			const Ue = Object(u.a)(e => Object(Re.c)(e, {
-					experimentName: De.zd,
+					experimentName: De.yd,
 					experimentEligibilitySelector: Re.a
 				}), qe.a),
-				Ve = Object(u.a)(Ue, e => e === De.Ad.Enabled);
+				Ve = Object(u.a)(Ue, e => e === De.zd.Enabled);
 			var We = a("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
 				Ge = a("./src/reddit/selectors/user.ts");
 			var He = a("./src/reddit/selectors/seo/linksModule.ts"),
@@ -2536,7 +2536,7 @@
 							return Object(Re.c)(e, {
 								experimentEligibilitySelector: Ge.K,
 								experimentName: De.Nb
-							}) === De.Uc
+							}) === De.Tc
 						}(e)
 					},
 					isNavbarLikeMwebEnabled: d.a,
@@ -5956,7 +5956,7 @@
 			function c(e) {
 				return Object(n.c)(e, {
 					experimentEligibilitySelector: r.K,
-					experimentName: s.kc
+					experimentName: s.jc
 				})
 			}
 			const o = 31536e3;
@@ -5975,9 +5975,9 @@
 				return function(e) {
 					return Object(n.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: s.jc
-					}) === s.Wc.Enabled
-				}(e) ? l.Achievements : t === s.Xc.ControlBanner ? l.CommunitySpacesControl : t === s.Xc.EnabledBanner ? l.CommunitySpaces : null
+						experimentName: s.ic
+					}) === s.Vc.Enabled
+				}(e) ? l.Achievements : t === s.Wc.ControlBanner ? l.CommunitySpacesControl : t === s.Wc.EnabledBanner ? l.CommunitySpaces : null
 			}! function(e) {
 				e.Achievements = "achievements", e.CommunitySpaces = "communitySpaces", e.CommunitySpacesControl = "communitySpaces--control"
 			}(l || (l = {}))
@@ -6069,4 +6069,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.d784a3e9dd45bdd773ee.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.a09b3ad2e34f61ea8932.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/HarbergerTaxBannerPurchaseCTA.072f36b94ef8922189f3.js
-// Retrieved at 12/15/2021, 8:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/HarbergerTaxBannerPurchaseCTA.1322810c1a2ef3bca677.js
+// Retrieved at 12/16/2021, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["HarbergerTaxBannerPurchaseCTA"], {
 		"./src/reddit/actions/economics/claims/constants.ts": function(e, t, n) {
@@ -58,9 +58,9 @@
 			})), n.d(t, "o", (function() {
 				return O
 			})), n.d(t, "p", (function() {
-				return N
-			})), n.d(t, "q", (function() {
 				return p
+			})), n.d(t, "q", (function() {
+				return N
 			})), n.d(t, "r", (function() {
 				return A
 			})), n.d(t, "s", (function() {
@@ -91,8 +91,8 @@
 				f = "GOVERNANCE__PUBLIC_WALLET_INFO_PENDING",
 				m = "GOVERNANCE__PUBLIC_WALLET_INFO_SUCCESS",
 				O = "GOVERNANCE__RELEASE_NOTES_MODAL_OPENED",
-				N = "GOVERNANCE__RELEASE_NOTES_SUCCESS",
-				p = "GOVERNANCE__TRANSFER_FAILURE",
+				p = "GOVERNANCE__RELEASE_NOTES_SUCCESS",
+				N = "GOVERNANCE__TRANSFER_FAILURE",
 				A = "GOVERNANCE__TRANSFER_MODAL_OPENED",
 				h = "GOVERNANCE__TRANSFER_PENDING",
 				v = "GOVERNANCE__TRANSFER_SUCCESS",
@@ -196,8 +196,8 @@
 				f = n("./src/reddit/featureFlags/component.tsx"),
 				m = n("./src/reddit/helpers/governance/ethereum.ts"),
 				O = n("./src/reddit/helpers/governance/tokens.ts"),
-				N = n("./src/reddit/selectors/crypto/points.ts"),
-				p = n("./src/reddit/selectors/crypto/wallet.ts"),
+				p = n("./src/reddit/selectors/crypto/points.ts"),
+				N = n("./src/reddit/selectors/crypto/wallet.ts"),
 				A = n("./src/reddit/selectors/gov.ts"),
 				h = n("./src/reddit/components/Governance/HarbergerTax/BannerPurchaseCTA/index.m.less"),
 				v = n.n(h);
@@ -210,11 +210,11 @@
 					},
 					pointsDetails: (e, t) => {
 						const n = Object(E.r)(e, t);
-						return Object(N.b)(e, null == n ? void 0 : n.id)
+						return Object(p.b)(e, null == n ? void 0 : n.id)
 					},
 					publicAddress: (e, t) => {
 						const n = Object(E.r)(e, t);
-						return (null == n ? void 0 : n.id) ? Object(p.b)(e, {
+						return (null == n ? void 0 : n.id) ? Object(N.b)(e, {
 							subredditId: null == n ? void 0 : n.id
 						}) : void 0
 					},
@@ -257,11 +257,11 @@
 					onOpenManageFlow: l,
 					onOpenPurchaseFlow: E,
 					onShowTooltip: f,
-					pointsDetails: N
+					pointsDetails: p
 				} = e;
-				if (!t || !N || !o) return null;
-				const p = Object(m.f)(),
-					A = !c && (!p || !!!n || N.inTransition),
+				if (!t || !p || !o) return null;
+				const N = Object(m.f)(),
+					A = !c && (!N || !!!n || p.inTransition),
 					h = `harberger-cta-${o.id}`;
 				return i.a.createElement("div", {
 					className: Object(d.a)(v.a.container, {
@@ -270,7 +270,7 @@
 					id: h,
 					onClick: () => {
 						if (A) return;
-						const e = !!N.blockchainProvider;
+						const e = !!p.blockchainProvider;
 						c ? l(o.id, e) : E(o.id, e)
 					},
 					onMouseOver: () => f(h),
@@ -282,9 +282,9 @@
 				}), i.a.createElement(_.a, {
 					className: v.a.token,
 					subredditId: o.id
-				}), Object(u.a)(Object(O.b)(t, N.displayConversion))), A && i.a.createElement(b.c, {
+				}), Object(u.a)(Object(O.b)(t, p.displayConversion))), A && i.a.createElement(b.c, {
 					tooltipId: h,
-					text: p ? r.fbt._("You must register your wallet address to purchase the banner", null, {
+					text: N ? r.fbt._("You must register your wallet address to purchase the banner", null, {
 						hk: "38o58h"
 					}) : r.fbt._("You must have metamask installed to purchase the banner", null, {
 						hk: "3A896M"
@@ -364,7 +364,7 @@
 			})), n.d(t, "f", (function() {
 				return O
 			})), n.d(t, "n", (function() {
-				return N
+				return p
 			}));
 			var r, s = n("./src/config.ts"),
 				i = n("./src/reddit/endpoints/governance/requester.ts");
@@ -462,7 +462,7 @@
 					recipientAddress: n,
 					amount: r
 				});
-			async function N(e, t) {
+			async function p(e, t) {
 				return await Object(i.a)(e, {
 					method: "put",
 					endpoint: `${s.a.metaUrl}/crypto/ethereum/transaction-intent`,
@@ -522,7 +522,7 @@
 			}
 			const u = 4001;
 			async function a(e, t, r, i) {
-				const [o, c] = await Promise.all([Promise.all([n.e(0), n.e("CryptoLibEthers")]).then(n.bind(null, "./node_modules/ethers/lib.esm/index.js")).then(e => e.ethers), t.then(e => e.abi)]);
+				const [o, c] = await Promise.all([Promise.all([n.e("vendors~CryptoLibEthers~reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-compon~fb9f1732"), n.e("CryptoLibEthers")]).then(n.bind(null, "./node_modules/ethers/lib.esm/index.js")).then(e => e.ethers), t.then(e => e.abi)]);
 				await d();
 				const u = new o.providers.Web3Provider(s()).getSigner(),
 					a = new o.Contract(e, c, u),
@@ -551,7 +551,7 @@
 			};
 			const _ = 1;
 			async function b(e, t, r, s, i) {
-				const o = await Promise.all([n.e(0), n.e("CryptoLibEthers")]).then(n.bind(null, "./node_modules/ethers/lib.esm/index.js")).then(e => e.ethers),
+				const o = await Promise.all([n.e("vendors~CryptoLibEthers~reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-compon~fb9f1732"), n.e("CryptoLibEthers")]).then(n.bind(null, "./node_modules/ethers/lib.esm/index.js")).then(e => e.ethers),
 					{
 						BigNumber: c
 					} = o,
@@ -895,4 +895,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/HarbergerTaxBannerPurchaseCTA.072f36b94ef8922189f3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/HarbergerTaxBannerPurchaseCTA.1322810c1a2ef3bca677.js.map
