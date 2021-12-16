@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.9b9be40b48284e336961.js
-// Retrieved at 12/15/2021, 8:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.39cbdc4c38c4010a6c20.js
+// Retrieved at 12/16/2021, 11:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -5473,6 +5473,7 @@
 					className: e
 				}) => s.a.createElement("svg", {
 					className: e,
+					fill: "#000",
 					xmlns: "http://www.w3.org/2000/svg",
 					viewBox: "0 0 40 40",
 					height: "40",
@@ -26440,4 +26441,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.9b9be40b48284e336961.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.39cbdc4c38c4010a6c20.js.map
