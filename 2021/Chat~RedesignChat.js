@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.ab05954b0e022bbbdfc2.js
-// Retrieved at 12/14/2021, 1:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.bb492b10de63519e0ecf.js
+// Retrieved at 12/16/2021, 8:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -105,30 +105,31 @@
 				r = n("./src/config.ts"),
 				o = n("./src/lib/makeActionCreator/index.ts"),
 				i = n("./src/chat/actions/gifs/index.ts"),
-				l = n("./src/chat/actions/members.ts"),
-				d = n("./src/chat/actions/message/index.ts"),
-				u = n("./src/chat/actions/message/unreadCount.ts"),
-				h = (n("./src/chat/actions/platform.ts"), n("./src/chat/actions/sidebar.ts")),
-				m = n("./src/chat/actions/toast.ts"),
-				p = n("./src/chat/actions/tracking.ts"),
-				b = n("./src/chat/actions/user.ts"),
-				g = n("./src/chat/constants/batchSizes.ts"),
-				f = n("./src/chat/constants/channels.ts"),
-				O = n("./src/chat/constants/messages.ts"),
-				j = n("./src/chat/constants/sendbird.ts"),
-				E = n("./src/chat/customMiddleware/lastSelectedChannel.ts"),
-				v = n("./src/lib/makeGqlRequest/index.ts"),
-				_ = n("./src/redditGQL/operations/DeclineChatChannelInvite.json"),
-				C = n("./src/redditGQL/operations/LeaveChatChannel.json");
-			var I = n("./src/chat/endpoints/sendbird/index.ts"),
-				y = n("./src/chat/helpers/errors.ts"),
-				x = n("./src/chat/helpers/urls/index.ts"),
-				S = n("./src/chat/models/Channel/index.ts"),
-				N = n("./src/chat/models/Channel/utils.ts"),
-				w = n("./src/chat/models/User/inviter.ts"),
-				k = n("./src/chat/models/User/member.ts");
-			var M = n("./src/chat/selectors/channels.ts");
-			const T = (e, t) => {
+				l = n("./src/chat/actions/inviteLink/localStorage.ts"),
+				d = n("./src/chat/actions/members.ts"),
+				u = n("./src/chat/actions/message/index.ts"),
+				h = n("./src/chat/actions/message/unreadCount.ts"),
+				m = (n("./src/chat/actions/platform.ts"), n("./src/chat/actions/sidebar.ts")),
+				p = n("./src/chat/actions/toast.ts"),
+				b = n("./src/chat/actions/tracking.ts"),
+				g = n("./src/chat/actions/user.ts"),
+				f = n("./src/chat/constants/batchSizes.ts"),
+				O = n("./src/chat/constants/channels.ts"),
+				j = n("./src/chat/constants/messages.ts"),
+				E = n("./src/chat/constants/sendbird.ts"),
+				v = n("./src/chat/customMiddleware/lastSelectedChannel.ts"),
+				_ = n("./src/lib/makeGqlRequest/index.ts"),
+				C = n("./src/redditGQL/operations/DeclineChatChannelInvite.json"),
+				I = n("./src/redditGQL/operations/LeaveChatChannel.json");
+			var y = n("./src/chat/endpoints/sendbird/index.ts"),
+				x = n("./src/chat/helpers/errors.ts"),
+				S = n("./src/chat/helpers/urls/index.ts"),
+				N = n("./src/chat/models/Channel/index.ts"),
+				w = n("./src/chat/models/Channel/utils.ts"),
+				k = n("./src/chat/models/User/inviter.ts"),
+				M = n("./src/chat/models/User/member.ts");
+			var T = n("./src/chat/selectors/channels.ts");
+			const D = (e, t) => {
 					const {
 						channels: n
 					} = e;
@@ -139,10 +140,10 @@
 					} else a = n.invited.sortedKeys[0];
 					return {
 						channelId: a,
-						channelAction: f.a.VIEW_INVITE
+						channelAction: O.a.VIEW_INVITE
 					}
 				},
-				D = e => {
+				A = e => {
 					const {
 						channels: t
 					} = e;
@@ -150,18 +151,17 @@
 						channelId: t.joined.sortedKeys[0]
 					}
 				},
-				A = e => [T(e), D(e)],
-				L = e => {
-					const t = Object(M.m)(e);
+				L = e => [D(e), A(e)],
+				U = e => {
+					const t = Object(T.m)(e);
 					return {
 						channelId: t && t.channelId
 					}
 				},
-				U = e => e.find(e => !!e.channelId);
-			var P = n("./src/chat/selectors/experiments.ts"),
-				R = n("./src/chat/selectors/platform.ts"),
-				B = n("./src/chat/singleton/SendbirdSDK.ts"),
-				F = n("./src/chat/actions/inviteLink/localStorage.ts");
+				P = e => e.find(e => !!e.channelId);
+			var R = n("./src/chat/selectors/experiments.ts"),
+				B = n("./src/chat/selectors/platform.ts"),
+				F = n("./src/chat/singleton/SendbirdSDK.ts");
 			const H = "CHANNEL__ADD_SUCCESS",
 				G = "CHANNEL__ADD_FAIL",
 				z = "CHANNEL__CREATE_CHANNEL_START",
@@ -200,16 +200,16 @@
 								session: r
 							}
 						} = s;
-					if (!e) throw new y.a("accepted channelId", e);
-					if (!r) throw new y.a("session", r);
-					const o = Object(M.m)(s),
+					if (!e) throw new x.a("accepted channelId", e);
+					if (!r) throw new x.a("session", r);
+					const o = Object(T.m)(s),
 						i = o && o.firstMessageId,
 						l = !!(o && i && o.hasMoreMessages);
-					await Object(I.a)(a(), r, e), l && t(Object(d.u)(i)), t(me({
+					await Object(y.a)(a(), r, e), l && t(Object(u.u)(i)), t(me({
 						channelId: e
 					}));
-					const u = Object(x.getRedirectURL)(Object(x.channelUrl)(e));
-					t(Object(c.b)(u))
+					const d = Object(S.getRedirectURL)(Object(S.channelUrl)(e));
+					t(Object(c.b)(d))
 				}, be = (e, t, n) => async (a, s, {
 					gqlContext: c
 				}) => {
@@ -220,24 +220,24 @@
 								session: d
 							}
 						} = l;
-					if (!Object(M.h)(l, e) || !t) return;
-					if (!d) throw new y.a("session", d);
-					const h = Object(P.p)(l),
-						p = Object(P.r)(l),
+					if (!Object(T.h)(l, e) || !t) return;
+					if (!d) throw new x.a("session", d);
+					const u = Object(R.p)(l),
+						m = Object(R.r)(l),
 						b = {
 							channelSendbirdId: e,
 							inviterUserId: t.id,
-							shouldBlockInviter: !n && (h || p),
-							shouldReportInviter: !n && p
+							shouldBlockInviter: !n && (u || m),
+							shouldReportInviter: !n && m
 						},
-						g = await ((e, t) => Object(v.a)(e, {
-							..._,
+						g = await ((e, t) => Object(_.a)(e, {
+							...C,
 							variables: t
 						}))(c(), {
 							input: b
 						});
-					if ((null === (o = null === (r = g.error) || void 0 === r ? void 0 : r.fields) || void 0 === o ? void 0 : o.length) || (e => Boolean(e && e.data && e.data.declineChatChannelInvite))(g.body) && (null === (i = g.body.data.declineChatChannelInvite.errors) || void 0 === i ? void 0 : i.length)) return a(Object(m.e)()), Object(y.b)(`Error declining invite: ${g.error}`);
-					a(Object(u.c)()), await a(Re(f.b.INVITED, e)), a((e => async t => t(he(e)))(e))
+					if ((null === (o = null === (r = g.error) || void 0 === r ? void 0 : r.fields) || void 0 === o ? void 0 : o.length) || (e => Boolean(e && e.data && e.data.declineChatChannelInvite))(g.body) && (null === (i = g.body.data.declineChatChannelInvite.errors) || void 0 === i ? void 0 : i.length)) return a(Object(p.e)()), Object(x.b)(`Error declining invite: ${g.error}`);
+					a(Object(h.c)()), await a(Re(O.b.INVITED, e)), a((e => async t => t(he(e)))(e))
 				}, ge = Object(o.a)(J), fe = Object(o.a)(Y), Oe = Object(o.a)(X), je = e => async t => {
 					t(Oe({
 						channel: e
@@ -248,88 +248,85 @@
 					})), t((e => async (t, n) => {
 						const a = n().user.account.id,
 							s = e.members.filter(e => e.id !== a).map(e => e.id);
-						t(Object(b.v)(s))
+						t(Object(g.v)(s))
 					})(e))
 				}, ve = (e, t) => async (n, a) => {
 					if (e) {
 						const c = a(),
-							r = Object(M.h)(c, e.channelId);
-						if (e.channelState !== f.b.INVITED && !r || t) return;
+							r = Object(T.h)(c, e.channelId);
+						if (e.channelState !== O.b.INVITED && !r || t) return;
 						if (e = _e(c, e), s()(e, r)) return;
 						switch (e.channelState) {
-							case f.b.INVITED:
+							case O.b.INVITED:
 								await n(Ee(e));
 								break;
-							case f.b.JOINED:
+							case O.b.JOINED:
 								await n(fe({
 									channel: e
 								}));
 								break;
 							default:
-								Object(y.b)("Error updating channel. ChannelState not found.")
+								Object(x.b)("Error updating channel. ChannelState not found.")
 						}
-						n(Object(u.c)())
+						n(Object(h.c)())
 					}
 				}, _e = (e, t) => {
-					return Object(R.e)(e) === t.channelId && (t.unreadMessageCount = 0), t
+					return Object(B.e)(e) === t.channelId && (t.unreadMessageCount = 0), t
 				}, Ce = Object(o.a)($), Ie = e => async (t, n) => {
 					const {
 						channelId: a
-					} = e, s = e.type === S.b.Direct, c = e.channelState === f.b.JOINED;
-					!Object(M.h)(n(), e.channelId) && s && c && await t(Me({
+					} = e, s = e.type === N.b.Direct, c = e.channelState === O.b.JOINED;
+					!Object(T.h)(n(), e.channelId) && s && c && await t(Me({
 						[a]: e
 					})), t(Ce({
 						channelId: a
 					}))
 				}, ye = Object(o.a)(K), xe = Object(o.a)(W), Se = Object(o.a)(Z), Ne = () => async (e, t) => {
 					const n = t(),
-						a = Object(R.e)(n),
-						s = Object(R.d)(n),
+						a = Object(B.e)(n),
+						s = Object(B.d)(n),
 						{
 							CREATE: r,
 							DENY: o,
-							VIEW_JOIN: u,
-							SHARE: m,
-							VIEW_INVITE: p,
-							INVITE_LINK_SETTINGS: b
-						} = f.a,
-						g = Object(F.a)(n);
-					if (g) return void e(Ue([g]));
-					if (s === b) return;
+							VIEW_JOIN: h,
+							SHARE: p,
+							VIEW_INVITE: b,
+							INVITE_LINK_SETTINGS: g
+						} = O.a,
+						f = Object(l.a)(n);
+					if (f) return void e(Ue([f]));
+					if (s === g) return;
 					if (!n.platform.currentPage) return;
-					a && (await e(Object(h.d)(a)), e(Object(h.f)(!1))), await e(Object(l.f)()), e(Object(i.i)());
-					const O = a && Object(M.h)(n, a);
-					if (!O && (s === o || s === r || s === m)) return;
-					const E = !(!O || O.channelState !== f.b.JOINED);
-					if (O && E && s && f.j.includes(s)) {
-						const t = Object(x.getRedirectURL)(Object(x.channelUrl)(O.channelId));
+					a && (await e(Object(m.d)(a)), e(Object(m.f)(!1))), await e(Object(d.f)()), e(Object(i.i)());
+					const j = a && Object(T.h)(n, a);
+					if (!j && (s === o || s === r || s === p)) return;
+					const v = !(!j || j.channelState !== O.b.JOINED);
+					if (j && v && s && O.j.includes(s)) {
+						const t = Object(S.getRedirectURL)(Object(S.channelUrl)(j.channelId));
 						e(Object(c.b)(t))
-					} else if (O && a) {
+					} else if (j && a) {
 						if (e(xe({
 								channelId: a
-							})), void 0 !== s && s !== p) return;
-						const t = await B.a.enterChannel(O, !1);
-						if (t && !t.error) {
-							const {
-								messageListData: n
-							} = t.data;
-							await e(Object(d.p)(n, O.channelId)), await e(Se()), e(we(a))
-						} else e(Object(d.B)()), e(Se())
+							})), void 0 !== s && s !== b) return;
+						const {
+							previousMessagesData: t
+						} = await F.a.enterChannel(j, !1);
+						t ? (await e(Object(u.p)(t, j.channelId)), await e(Se()), e(we(a))) : (e(Object(u.B)()), e(Se()))
 					} else {
-						const t = n.sendbird.sdk.connectionStatus === j.b.Open;
-						if (!O && a && t) {
-							const t = await B.a.addChannelModelByChannelId(a);
+						const t = n.sendbird.sdk.connectionStatus === E.b.Open;
+						if (!j && a && t) {
+							const t = await F.a.addChannelModelByChannelId(a);
 							if (t && !s) {
-								const n = Object(x.getRedirectURL)(Object(x.channelAction)(t.channelId, u));
+								const n = Object(S.getRedirectURL)(Object(S.channelAction)(t.channelId, h));
 								return void e(Object(c.b)(n))
 							}
 						}
-						e(He()), e(Object(d.B)())
+						e(He()), e(Object(u.B)())
 					}
 				}, we = e => async (t, n) => {
 					const a = n(),
-						s = e || Object(R.e)(a);
-					s && (await t(ye(s)), await B.a.markChannelAsRead(), t(Object(u.c)()))
+						s = e || Object(B.e)(a);
+					s && (await t(ye(s)), await F.a.markChannelAsRead(), t(Object(h.c)()))
 				}, ke = Object(o.a)(z), Me = Object(o.a)(H), Te = Object(o.a)(G), De = Object(o.a)(V), Ae = (e, t, n) => {
 					const a = e.map(e => ({
 						user_id: e,
@@ -355,7 +352,7 @@
 								session: l
 							},
 							contacts: {
-								models: u
+								models: d
 							},
 							channels: {
 								joined: h,
@@ -364,21 +361,21 @@
 						} = o;
 					if (i && l) {
 						a(ke());
-						const s = Ae(e, u, i);
+						const s = Ae(e, d, i);
 						if (s.length < 2) return;
-						const o = await Object(I.b)(r(), l, s, t);
+						const o = await Object(y.b)(r(), l, s, t);
 						if (o.ok) {
 							const e = function(e, t) {
 									return {
-										channelId: Object(N.f)(e.channel_url),
+										channelId: Object(w.f)(e.channel_url),
 										channelSendbirdUrl: e.channel_url,
-										channelState: Object(N.b)(t),
+										channelState: Object(w.b)(t),
 										fetchingFirstMessage: !1,
 										fetchingMessages: !1,
 										fetchingMessagesError: !1,
 										hasMoreMessages: !1,
 										isMessageListLoaded: !1,
-										inviter: Object(w.b)(e.inviter),
+										inviter: Object(k.b)(e.inviter),
 										coverUrl: e.cover_url,
 										createdAt: e.created_at,
 										customType: e.custom_type,
@@ -386,25 +383,25 @@
 										maxLengthMessage: -1,
 										memberCount: e.member_count,
 										name: e.name,
-										type: Object(N.d)(e),
+										type: Object(w.d)(e),
 										lastMessage: void 0,
 										unreadMessageCount: e.unread_message_count,
 										unreadMentionCount: e.unread_mention_count,
-										members: Object(k.a)(e.members)
+										members: Object(M.a)(e.members)
 									}
-								}(o.body, f.b.JOINED),
+								}(o.body, O.b.JOINED),
 								{
 									channelId: t
 								} = e,
-								s = Object(x.getRedirectURL)(Object(x.channelUrl)(t));
-							m.sortedKeys.includes(t) ? (a(pe(t)), a(Object(p.m)(t))) : h.sortedKeys.includes(t) ? (a(Object(c.b)(s)), a(Object(p.m)(t))) : (await a(Me({
+								s = Object(S.getRedirectURL)(Object(S.channelUrl)(t));
+							m.sortedKeys.includes(t) ? (a(pe(t)), a(Object(b.m)(t))) : h.sortedKeys.includes(t) ? (a(Object(c.b)(s)), a(Object(b.m)(t))) : (await a(Me({
 								[t]: e
-							})), a(Object(p.m)(t)), await a(Object(c.b)(s))), n && (await B.a.enterChannel(e), await a(Object(d.r)(t, n, O.c.TEXT)))
-						} else a(Te()), a(Object(p.ab)(e));
+							})), a(Object(b.m)(t)), await a(Object(c.b)(s))), n && (await F.a.enterChannel(e), await a(Object(u.r)(t, n, j.c.TEXT)))
+						} else a(Te()), a(Object(b.ab)(e));
 						a(De())
 					}
 				}, Ue = e => async t => {
-					e = e.slice(0, 1), await t(Object(b.v)(e)), t(Le(e)), location.origin === r.a.oldRedditUrl && t(Object(p.n)(e))
+					e = e.slice(0, 1), await t(Object(g.v)(e)), t(Le(e)), location.origin === r.a.oldRedditUrl && t(Object(b.n)(e))
 				}, Pe = e => async (t, n, {
 					apiContext: a
 				}) => {
@@ -418,39 +415,39 @@
 								models: i
 							}
 						} = s,
-						l = Object(M.B)(s, "channelSendbirdUrl"),
-						d = Object(R.d)(s);
+						l = Object(T.B)(s, "channelSendbirdUrl"),
+						d = Object(B.d)(s);
 					if (r && o) {
 						const n = Ae(e, i);
-						(await Object(I.i)(a(), o, n, l)).body && d === f.a.INVITE_MEMBERS ? (t(Object(p.d)()), t(Object(c.a)())) : Object(y.b)("Error inviting user to existing channel")
+						(await Object(y.i)(a(), o, n, l)).body && d === O.a.INVITE_MEMBERS ? (t(Object(b.d)()), t(Object(c.a)())) : Object(x.b)("Error inviting user to existing channel")
 					}
 				}, Re = (e, t) => async (n, a) => {
 					const s = a(),
-						c = e === f.b.INVITED,
-						r = T(s, t),
-						o = D(s);
+						c = e === O.b.INVITED,
+						r = D(s, t),
+						o = A(s);
 					c ? r.channelId ? n(Fe(r)) : n(Fe(o)) : o.channelId ? n(Fe(o)) : n(Be())
 				}, Be = () => async (e, t) => {
 					const n = t();
 					if (n.channels.firstLoaded) {
 						const t = ((e, t) => {
-							const n = [...t ? [L(e)] : [], ...A(e)];
-							return U(n)
+							const n = [...t ? [U(e)] : [], ...L(e)];
+							return P(n)
 						})(n, !!n.platform.currentPage);
 						e(Fe(t))
 					}
 				}, Fe = e => async t => {
 					if (e && e.channelId) {
 						if (e.channelAction) {
-							const n = Object(x.getRedirectURL)(Object(x.channelAction)(e.channelId, e.channelAction));
+							const n = Object(S.getRedirectURL)(Object(S.channelAction)(e.channelId, e.channelAction));
 							t(Object(c.c)(n))
 						} else {
-							const n = Object(x.getRedirectURL)(Object(x.channelUrl)(e.channelId));
+							const n = Object(S.getRedirectURL)(Object(S.channelUrl)(e.channelId));
 							t(Object(c.c)(n))
 						}
 						return
 					}
-					const n = Object(x.getRedirectURL)(x.rootUrl);
+					const n = Object(S.getRedirectURL)(S.rootUrl);
 					t(Object(c.c)(n))
 				}, He = e => async (t, n) => {
 					const {
@@ -463,89 +460,89 @@
 						return t(Ue(e))
 					}
 					if (e) return t(Re(e));
-					const s = Object(E.b)(n());
+					const s = Object(v.b)(n());
 					if (s) {
-						const e = Object(M.h)(n(), s);
+						const e = Object(T.h)(n(), s);
 						if (e) {
-							const n = Object(x.getChannelUrl)(e),
-								a = Object(x.getRedirectURL)(n);
+							const n = Object(S.getChannelUrl)(e),
+								a = Object(S.getRedirectURL)(n);
 							return void t(Object(c.b)(a))
 						}
 					}
 					return t(Be())
 				}, Ge = Object(o.a)(ne), ze = Object(o.a)(ae), Ve = Object(o.a)(ee), We = Object(o.a)(te), Ke = Object(o.a)(se), Ze = Object(o.a)(ce), qe = Object(o.a)(oe), Qe = () => async (e, t) => {
-					await Promise.all([e($e()), e(Je()), e(Ye())]).catch(y.b);
+					await Promise.all([e($e()), e(Je()), e(Ye())]).catch(x.b);
 					const n = t().channels.models;
 					await e(Xe(n)), e(qe()), e(Ne())
 				}, Xe = e => async t => {
-					const n = Object(N.c)(e, [S.b.Direct, S.b.Group]);
+					const n = Object(w.c)(e, [N.b.Direct, N.b.Group]);
 					if (!n) return;
 					const a = {};
 					for (const e in n) {
 						const t = n[e];
-						t.channelState !== f.b.PARTIAL && (a[t.channelId] = t)
+						t.channelState !== O.b.PARTIAL && (a[t.channelId] = t)
 					}
 					if (a) {
 						const e = [];
 						for (const t in a) a[t].members.map(t => e.push(t.id));
-						t(Object(b.v)(e))
+						t(Object(g.v)(e))
 					}
 				}, Je = e => async (t, n) => {
 					t(Ge());
-					const a = await B.a.getExistingChannels(f.b.INVITED).catch(() => null);
+					const a = await F.a.getExistingChannels(O.b.INVITED).catch(() => null);
 					if (a) {
 						const {
 							hasMoreChannels: s
-						} = a, c = Object(S.g)(a.channels), r = Object(M.u)(n());
+						} = a, c = Object(N.g)(a.channels), r = Object(T.u)(n());
 						return t(Xe(c)), t(Ke({
 							channels: c,
 							hasMoreChannels: s
-						})), void(s && r < g.a.InitChannels && (null == e ? void 0 : e.recursively) && t(Je({
+						})), void(s && r < f.a.InitChannels && (null == e ? void 0 : e.recursively) && t(Je({
 							recursively: null == e ? void 0 : e.recursively
 						})))
 					}
-					t(ze()), Object(y.b)("Error fetching invited channels")
+					t(ze()), Object(x.b)("Error fetching invited channels")
 				}, Ye = () => async (e, t) => {
 					var n;
 					e(Ve());
-					const a = await B.a.getExistingChannels(f.b.JOINED).catch(t => {
-						Object(y.b)(t), e(We())
+					const a = await F.a.getExistingChannels(O.b.JOINED).catch(t => {
+						Object(x.b)(t), e(We())
 					});
 					if (a) {
 						const {
 							hasMoreChannels: s
-						} = a, c = Object(S.g)(a.channels), r = Object(M.v)(t()) + (null === (n = a.channels) || void 0 === n ? void 0 : n.length);
+						} = a, c = Object(N.g)(a.channels), r = Object(T.v)(t()) + (null === (n = a.channels) || void 0 === n ? void 0 : n.length);
 						return e(Ze({
 							channels: c,
 							hasMoreChannels: s
-						})), void(s && r < g.a.InitChannels && e(Ye()))
+						})), void(s && r < f.a.InitChannels && e(Ye()))
 					}
 					e(We())
 				}, $e = () => async (e, t) => {
 					const n = t(),
 						{
 							INVITE_LINK_SETTINGS: a
-						} = f.a,
-						s = Object(R.e)(n),
-						c = Object(R.d)(n);
-					s && c !== a && await B.a.addChannelModelByChannelId(s).catch(() => e(He()))
+						} = O.a,
+						s = Object(B.e)(n),
+						c = Object(B.d)(n);
+					s && c !== a && await F.a.addChannelModelByChannelId(s).catch(() => e(He()))
 				}, et = (Object(o.a)(q), Object(o.a)(Q), Object(o.a)(le)), tt = e => async (t, n, {
 					gqlContext: a
 				}) => {
 					var s, c, r;
 					const o = n(),
-						i = Object(M.B)(o, "channelState");
-					t(Object(p.H)());
+						i = Object(T.B)(o, "channelState");
+					t(Object(b.H)());
 					const l = {
 							channelSendbirdId: e
 						},
-						d = await ((e, t) => Object(v.a)(e, {
-							...C,
+						d = await ((e, t) => Object(_.a)(e, {
+							...I,
 							variables: t
 						}))(a(), {
 							input: l
 						});
-					if ((null === (c = null === (s = d.error) || void 0 === s ? void 0 : s.fields) || void 0 === c ? void 0 : c.length) || (e => Boolean(e && e.data && e.data.leaveChatChannel))(d.body) && (null === (r = d.body.data.leaveChatChannel.errors) || void 0 === r ? void 0 : r.length)) return t(Object(m.e)()), Object(y.b)(`Error leaving channels: ${d.error}`);
+					if ((null === (c = null === (s = d.error) || void 0 === s ? void 0 : s.fields) || void 0 === c ? void 0 : c.length) || (e => Boolean(e && e.data && e.data.leaveChatChannel))(d.body) && (null === (r = d.body.data.leaveChatChannel.errors) || void 0 === r ? void 0 : r.length)) return t(Object(p.e)()), Object(x.b)(`Error leaving channels: ${d.error}`);
 					await t(he(e)), t(Re(i, e))
 				}
 		},
@@ -1712,20 +1709,22 @@
 				return p
 			})), n.d(t, "k", (function() {
 				return g
-			})), n.d(t, "b", (function() {
-				return f
-			})), n.d(t, "h", (function() {
-				return O
-			})), n.d(t, "f", (function() {
-				return j
 			})), n.d(t, "l", (function() {
-				return _
-			})), n.d(t, "d", (function() {
+				return f
+			})), n.d(t, "b", (function() {
+				return O
+			})), n.d(t, "h", (function() {
+				return j
+			})), n.d(t, "f", (function() {
+				return E
+			})), n.d(t, "m", (function() {
 				return C
-			})), n.d(t, "e", (function() {
+			})), n.d(t, "d", (function() {
 				return I
+			})), n.d(t, "e", (function() {
+				return y
 			})), n.d(t, "j", (function() {
-				return S
+				return N
 			}));
 			var a = n("./src/lib/cache/index.ts"),
 				s = n("./src/lib/constants/index.ts"),
@@ -1772,14 +1771,27 @@
 						}))
 					}
 					t(m())
-				}, f = "SENDBIRD__ADD_MEMBERS_TO_KNOWN_CONTACTS", O = Object(c.a)(f), j = "SENDBIRD__SET_REDDIT_CONTACT_LIST", E = 6 * s.Q, v = Object(c.a)(j), _ = () => async (e, t, {
+				}, f = () => async (e, t) => {
+					const n = t(),
+						{
+							account: c,
+							session: r
+						} = n.user;
+					if (r && c) {
+						const e = Object(a.c)(s.q.CHAT, s.y.CHAT_SENDBIRD_SESSION_KEY, c.id);
+						if (Object(a.b)(e)) {
+							const t = {};
+							Object(a.d)(e, t, new Date)
+						}
+					}
+				}, O = "SENDBIRD__ADD_MEMBERS_TO_KNOWN_CONTACTS", j = Object(c.a)(O), E = "SENDBIRD__SET_REDDIT_CONTACT_LIST", v = 6 * s.Q, _ = Object(c.a)(E), C = () => async (e, t, {
 					apiContext: n
 				}) => {
 					const c = t(),
 						r = c.contacts.models,
 						o = Object(a.c)(s.q.CHAT, s.y.CHAT_SENDBIRD_CONTACTS_KEY, c.user.account.id),
 						d = Object(a.b)(o);
-					if (d && d.version === l.a) return void e(v(d.data));
+					if (d && d.version === l.a) return void e(_(d.data));
 					const u = t().user.session;
 					if (!u) return;
 					const h = await Object(i.e)(n(), u, 25),
@@ -1788,23 +1800,23 @@
 							version: l.a,
 							data: m
 						};
-					Object(a.d)(o, p, E), e(v(m))
-				}, C = "SENDBIRD__IDENTIFY_CONTACT_BEGIN", I = "SENDBIRD__IDENTIFY_CONTACT_END", y = Object(c.a)(C), x = Object(c.a)(I), S = e => async (t, n, {
+					Object(a.d)(o, p, v), e(_(m))
+				}, I = "SENDBIRD__IDENTIFY_CONTACT_BEGIN", y = "SENDBIRD__IDENTIFY_CONTACT_END", x = Object(c.a)(I), S = Object(c.a)(y), N = e => async (t, n, {
 					apiContext: a
 				}) => {
 					if (e.username === s.E) return;
-					Object(d.c)(n(), e.username) || (t(y({
+					Object(d.c)(n(), e.username) || (t(x({
 						username: e.username
 					})), Object(o.b)(a(), e.username).then(n => {
 						if (n.ok) {
 							const a = Object(l.d)(n.body.data);
-							if (a) return t(x({
+							if (a) return t(S({
 								username: e.username,
 								contact: a,
 								valid: !0
 							}))
 						} else t(Object(r.bb)(e.username));
-						t(x({
+						t(S({
 							username: e.username,
 							valid: !1
 						}))
@@ -1862,27 +1874,31 @@
 						} = g;
 						o && t(Object(i.g)({
 							toast: d.a.ConnectionPending
-						})), e = e || p.token, m.a.connect(b, e, n, t).then(e => {
-							if (e.error) t(O(e.error)), t(C({
-								...f
-							})), t(Object(i.g)({
-								toast: d.a.ConnectionClosed
-							}));
-							else {
-								if (t(j()), o) {
-									const e = !0;
-									t(Object(c.v)(e)), t(Object(i.g)({
-										toast: d.a.ConnectionOpen
-									})), t(Object(i.c)(3))
-								}
-								t(Object(r.c)()), t(Object(s.C)())
+						})), e = e || p.token;
+						try {
+							if (await m.a.connect(b, e, n, t), t(j()), o) {
+								const e = !0;
+								t(Object(c.v)(e)), t(Object(i.g)({
+									toast: d.a.ConnectionOpen
+								})), t(Object(i.c)(3))
 							}
-						})
+							t(Object(r.c)()), t(Object(s.C)())
+						} catch (E) {
+							const {
+								code: e,
+								message: n
+							} = E;
+							t(O({
+								active: !1,
+								code: e,
+								message: n
+							})), t(C({
+								...f
+							})), t(Object(i.e)())
+						}
 					}
 				}, v = Object(a.a)(g), _ = () => async e => {
-					m.a.disconnect().then(() => {
-						e(v()), e(Object(o.i)())
-					})
+					await m.a.disconnect(), e(v()), e(Object(o.i)())
 				}, C = Object(a.a)(f), I = Object(a.a)("SENDBIRD_SDK__RECONNECT_SENDBIRD"), y = () => async e => {
 					m.a.reconnect(), e(I())
 				}
@@ -6066,12 +6082,7 @@
 						autoScrollBottom: !0,
 						ref: this.scroller,
 						loadMoreRows: g
-					}, s && r.a.createElement("span", {
-						className: Ta.a.LoadingError,
-						onClick: c
-					}, Da._("Something went wrong. Please try again.", null, {
-						hk: "2NoQnC"
-					})), j ? r.a.createElement(fe, {
+					}, j ? r.a.createElement(fe, {
 						users: e.members,
 						channel: e
 					}) : s ? r.a.createElement("span", {
@@ -15480,94 +15491,128 @@
 		"./src/chat/singleton/SendbirdSDK.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "b", (function() {
-				return U
+				return G
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var a = n("./src/config.ts"),
 				s = n("./node_modules/lodash/noop.js"),
 				c = n.n(s),
-				r = n("./node_modules/sendbird/SendBird.min.js"),
+				r = n("./node_modules/promise-retry/index.js"),
 				o = n.n(r),
-				i = n("./node_modules/timers-browserify/main.js"),
-				l = n("./src/lib/constants/index.ts"),
-				d = n("./src/lib/sentry/index.ts"),
-				u = n("./src/chat/actions/channel.ts"),
-				h = n("./node_modules/react-router-redux/es/index.js"),
-				m = n("./src/chat/constants/channels.ts"),
-				p = n("./src/chat/helpers/urls/index.ts"),
-				b = n("./src/chat/selectors/channels.ts");
-			const g = e => async (t, n) => {
+				i = n("./node_modules/sendbird/SendBird.min.js"),
+				l = n.n(i),
+				d = n("./node_modules/timers-browserify/main.js"),
+				u = n("./src/lib/constants/index.ts"),
+				h = n("./src/lib/sentry/index.ts"),
+				m = n("./src/chat/actions/channel.ts"),
+				p = n("./node_modules/react-router-redux/es/index.js"),
+				b = n("./src/chat/constants/channels.ts"),
+				g = n("./src/chat/helpers/urls/index.ts"),
+				f = n("./src/chat/selectors/channels.ts");
+			const O = e => async (t, n) => {
 				const a = n(),
-					s = Object(b.x)(a);
-				if (t(Object(u.J)({
+					s = Object(f.x)(a);
+				if (t(Object(m.J)({
 						channelId: e
 					})), s && s.channelId === e) {
-					const n = Object(p.getRedirectURL)(Object(p.channelAction)(e, m.a.DENY));
-					t(Object(h.b)(n))
+					const n = Object(g.getRedirectURL)(Object(g.channelAction)(e, b.a.DENY));
+					t(Object(p.b)(n))
 				}
 			};
-			var f = n("./src/chat/selectors/user.ts");
-			const O = (e, t) => async (n, a) => {
+			var j = n("./src/chat/selectors/user.ts");
+			const E = (e, t) => async (n, a) => {
 				const s = a(),
 					{
 						channelId: c
 					} = e,
-					r = Object(b.y)(s),
-					o = Object(f.a)(s);
-				if (t === o && (n(Object(u.I)(c)), c === r)) {
-					const e = Object(p.getRedirectURL)(Object(p.channelAction)(c, m.a.DENY));
-					n(Object(h.b)(e))
+					r = Object(f.y)(s),
+					o = Object(j.a)(s);
+				if (t === o && (n(Object(m.I)(c)), c === r)) {
+					const e = Object(g.getRedirectURL)(Object(g.channelAction)(c, b.a.DENY));
+					n(Object(p.b)(e))
 				}
 			};
-			var j = n("./src/chat/actions/message/index.ts"),
-				E = n("./src/chat/actions/message/reactions.ts"),
-				v = n("./src/chat/actions/sendbird/index.ts"),
-				_ = n("./src/chat/actions/sendbird/sdk.ts"),
-				C = n("./src/chat/actions/toast.ts"),
-				I = n("./src/chat/actions/typingIndicator.ts"),
-				y = n("./src/chat/constants/batchSizes.ts"),
-				x = n("./src/chat/constants/messages.ts"),
-				S = n("./src/chat/constants/sendbird.ts"),
-				N = n("./src/chat/constants/toast.ts"),
-				w = n("./src/chat/helpers/errors.ts"),
-				k = n("./src/chat/models/Channel/index.ts"),
-				M = n("./src/chat/models/Channel/utils.ts"),
-				T = n("./src/chat/models/Message/index.ts"),
-				D = n("./src/chat/models/MessageReaction/index.ts"),
-				A = n("./src/chat/models/User/member.ts");
-			const {
-				sendbirdAppId: L
-			} = a.a;
-			const U = new class {
+			var v = n("./src/chat/actions/message/index.ts"),
+				_ = n("./src/chat/actions/message/reactions.ts"),
+				C = n("./src/chat/actions/sendbird/index.ts"),
+				I = n("./src/chat/actions/sendbird/sdk.ts"),
+				y = n("./src/chat/actions/session.ts"),
+				x = n("./src/chat/actions/toast.ts"),
+				S = n("./src/chat/actions/typingIndicator.ts"),
+				N = n("./src/chat/constants/batchSizes.ts"),
+				w = n("./src/chat/constants/messages.ts"),
+				k = n("./src/chat/constants/sendbird.ts"),
+				M = n("./src/chat/constants/toast.ts"),
+				T = n("./src/chat/helpers/errors.ts"),
+				D = n("./src/chat/models/Channel/index.ts"),
+				A = n("./src/chat/models/Channel/utils.ts"),
+				L = n("./src/chat/models/Message/index.ts"),
+				U = n("./src/chat/models/MessageReaction/index.ts"),
+				P = n("./src/chat/models/User/member.ts");
+			const R = 2,
+				B = 1e3,
+				F = 100,
+				H = 200;
+			const G = new class {
 				constructor() {
-					this.dispatch = c.a, this.channels = {}, this.channelUniqueHandlerID = [], this.connectionUniqueHandlerID = [], this.switchChannel = (e, t) => {
-						if (this.channel = e, t) return Promise.resolve([]); {
-							this.channelMembersQuery = this.channel.createMemberListQuery(), this.memberListQuery = this.channel.createMemberListQuery();
-							const e = !0,
-								t = this.getPreviousMessages(e);
-							return Promise.all([t])
-						}
-					}, (this.self = new o.a({
-						appId: L
-					})).Options.typingIndicatorThrottle = 1e4
-				}
-				connect(e, t, n, a) {
-					return new Promise(s => {
-						this.dispatch = a, this.self.connect(n, t, `https://${e}`, `wss://${e}`, (e, t) => {
-							this.toggleUpdateListeners(!0), s({
-								data: e,
-								error: t
-							})
+					this.dispatch = c.a, this.channels = {}, this.channelUniqueHandlerID = [], this.connectionUniqueHandlerID = [], this.connect = async (e, t, n, a) => {
+						const s = `https://${e}`,
+							c = `wss://${e}`;
+						if (!this.isConnected()) return this.dispatch = a, this.onSessionUpdate(), o()(async e => {
+							try {
+								const e = await this.self.connect(n, t, s, c);
+								return this.toggleUpdateListeners(!0), e
+							} catch (a) {
+								e(a)
+							}
+						}, {
+							minTimeout: F,
+							maxTimeout: H,
+							randomize: !0,
+							retries: R
 						})
-					})
+					}, this.disconnect = async () => {
+						this.isConnected() && (this.toggleUpdateListeners(!1), await this.self.disconnect())
+					}, this.reconnect = async (e = !1) => {
+						this.dispatch(Object(x.g)({
+							toast: M.a.ConnectionPending
+						})), e && (await this.disconnect(), await this.dispatch(Object(y.d)())), await this.dispatch(Object(C.l)()), this.dispatch(Object(C.k)())
+					}, this.switchChannel = async (e, t) => {
+						if (this.channel = e, t) return;
+						this.channelMembersQuery = this.channel.createMemberListQuery(), this.memberListQuery = this.channel.createMemberListQuery();
+						return await this.getPreviousMessages(!0)
+					}, this.enterChannel = async (e, t, n) => {
+						if (this.isConnected()) {
+							const {
+								channelId: a
+							} = e, s = this.channels[a];
+							if (s && !t) {
+								return {
+									previousMessagesData: await this.switchChannel(s, n)
+								}
+							}
+							const c = await this.getChannelByChannelId(a);
+							if (c) {
+								this.channels[a] = c;
+								const t = Object(D.h)(c);
+								return this.updatePartialChannelModel(t, e.channelState), {
+									previousMessagesData: await this.switchChannel(c, n)
+								}
+							}
+						}
+						return {}
+					}, this.hideChannel = async () => {
+						if (this.channel) {
+							const e = !1,
+								t = !0;
+							await this.channel.hide(e, t)
+						}
+					}, (this.self = new l.a({
+						appId: a.a.sendbirdAppId
+					})).Options.typingIndicatorThrottle = B
 				}
 				isConnected() {
 					return !!this.self.currentUser
-				}
-				disconnect() {
-					return new Promise(e => {
-						this.isConnected() && (this.toggleUpdateListeners(!1), this.self.disconnect(() => e()))
-					})
 				}
 				toggleUpdateListeners(e) {
 					e ? (this.onChannelChanged(), this.onChannelDeleted(), this.onChannelMuted(), this.onChannelUnmuted(), this.onChannelLocked(), this.onChannelUnlocked(), this.onReceiveInvite(), this.onReceiveMessage(), this.onUpdateMessage(), this.onDeleteMessage(), this.onUserActions(), this.onUserKicked(), this.onTypingStatusUpdated(), this.onReactionUpdated(), this.onReconnectStarted(), this.onReconnectSucceeded(), this.onReconnectFailed()) : (this.channelUniqueHandlerID.length && this.channelUniqueHandlerID.forEach(e => {
@@ -15576,83 +15621,86 @@
 						this.self.removeConnectionHandler(e)
 					}))
 				}
-				reconnect() {
-					this.dispatch(Object(C.g)({
-						toast: N.a.ConnectionPending
-					})), this.dispatch(Object(v.k)())
+				onSessionUpdate() {
+					const e = new this.self.SessionHandler;
+					e.onSessionClosed = () => {
+						this.reconnect(!0)
+					}, e.onSessionError = () => {
+						this.reconnect(!0)
+					}, this.self.setSessionHandler(e)
 				}
 				onReconnectStarted() {
 					const e = new this.self.ConnectionHandler,
 						t = {
-							connectionStatus: S.b.Pending
+							connectionStatus: k.b.Pending
 						},
 						n = {
-							toast: N.a.ConnectionPending
+							toast: M.a.ConnectionPending
 						};
 					e.onReconnectStarted = () => {
-						this.dispatch(Object(_.h)(t)), this.dispatch(Object(C.g)(n))
+						this.dispatch(Object(I.h)(t)), this.dispatch(Object(x.g)(n))
 					}, this.self.addConnectionHandler("CONNECTION_CHANGE", e), this.connectionUniqueHandlerID.push("CONNECTION_CHANGE")
 				}
 				onReconnectSucceeded() {
 					const e = new this.self.ConnectionHandler,
 						t = {
-							connectionStatus: S.b.Open
+							connectionStatus: k.b.Open
 						};
 					e.onReconnectSucceeded = () => {
-						this.dispatch(Object(_.h)(t)), this.dispatch(Object(C.g)({
-							toast: N.a.ConnectionOpen
-						})), Object(i.setTimeout)(() => this.dispatch(Object(C.d)()), 3 * l.Rb);
-						this.dispatch(Object(j.v)(!0)), this.dispatch(Object(u.C)())
+						this.dispatch(Object(I.h)(t)), this.dispatch(Object(x.g)({
+							toast: M.a.ConnectionOpen
+						})), Object(d.setTimeout)(() => this.dispatch(Object(x.d)()), 3 * u.Rb);
+						this.dispatch(Object(v.v)(!0)), this.dispatch(Object(m.C)())
 					}, this.self.addConnectionHandler("RECONNECT_SUCCEEDED", e), this.connectionUniqueHandlerID.push("RECONNECT_SUCCEEDED")
 				}
 				onReconnectFailed() {
 					const e = new this.self.ConnectionHandler,
 						t = {
-							connectionStatus: S.b.Closed
+							connectionStatus: k.b.Closed
 						};
 					e.onReconnectFailed = () => {
-						this.dispatch(Object(_.h)(t)), this.dispatch(Object(C.g)({
-							toast: N.a.ConnectionClosed
+						this.dispatch(Object(I.h)(t)), this.dispatch(Object(x.g)({
+							toast: M.a.ConnectionClosed
 						}))
 					}, this.self.addConnectionHandler("RECONNECT_FAILED", e), this.connectionUniqueHandlerID.push("RECONNECT_FAILED")
 				}
 				onReceiveInvite() {
 					const e = new this.self.ChannelHandler;
 					e.onUserReceivedInvitation = e => {
-						const t = Object(k.h)(e);
-						this.dispatch(Object(u.P)(t))
+						const t = Object(D.h)(e);
+						this.dispatch(Object(m.P)(t))
 					}, this.self.addChannelHandler("RECEIVE_CHANNEL_INVITE", e), this.channelUniqueHandlerID.push("RECEIVE_CHANNEL_INVITE")
 				}
 				onReceiveMessage() {
 					const e = new this.self.ChannelHandler;
 					e.onMessageReceived = (e, t) => {
-						const n = Object(k.h)(e);
-						this.dispatch(Object(u.O)(n));
-						const a = Object(T.c)(t);
-						a && this.dispatch(Object(j.x)(a))
+						const n = Object(D.h)(e);
+						this.dispatch(Object(m.O)(n));
+						const a = Object(L.c)(t);
+						a && this.dispatch(Object(v.x)(a))
 					}, this.self.addChannelHandler("RECEIVE_CHANNEL_MESSAGE", e), this.channelUniqueHandlerID.push("RECEIVE_CHANNEL_MESSAGE")
 				}
 				onUpdateMessage() {
 					const e = new this.self.ChannelHandler;
 					e.onMessageUpdated = (e, t) => {
-						const n = Object(k.h)(e);
-						this.dispatch(Object(u.O)(n));
-						const a = Object(T.c)(t);
-						a && this.dispatch(Object(j.x)(a))
+						const n = Object(D.h)(e);
+						this.dispatch(Object(m.O)(n));
+						const a = Object(L.c)(t);
+						a && this.dispatch(Object(v.x)(a))
 					}, this.self.addChannelHandler("UPDATE_CHANNEL_MESSAGE", e), this.channelUniqueHandlerID.push("UPDATE_CHANNEL_MESSAGE")
 				}
 				onDeleteMessage() {
 					const e = new this.self.ChannelHandler;
 					e.onMessageDeleted = (e, t) => {
-						this.dispatch(Object(j.y)(t))
+						this.dispatch(Object(v.y)(t))
 					}, this.self.addChannelHandler("DELETE_CHANNEL_MESSAGE", e), this.channelUniqueHandlerID.push("DELETE_CHANNEL_MESSAGE")
 				}
 				onTypingStatusUpdated() {
 					const e = new this.self.ChannelHandler;
 					e.onTypingStatusUpdated = e => {
-						const t = Object(M.f)(e.url),
+						const t = Object(A.f)(e.url),
 							n = e.getTypingMembers().map(e => e.nickname);
-						this.dispatch(Object(I.b)({
+						this.dispatch(Object(S.b)({
 							channelId: t,
 							usernames: n
 						}))
@@ -15667,20 +15715,20 @@
 							a = new this.self.ChannelHandler,
 							s = e[n];
 						a[n] = e => {
-							const t = Object(k.h)(e);
-							this.dispatch(Object(u.P)(t, !0))
+							const t = Object(D.h)(e);
+							this.dispatch(Object(m.P)(t, !0))
 						}, this.self.addChannelHandler(s, a), this.channelUniqueHandlerID.push(s)
 					})
 				}
 				onReactionUpdated() {
 					const e = new this.self.ChannelHandler;
 					e.onReactionUpdated = (e, t) => {
-						const n = Object(k.h)(e);
-						this.dispatch(Object(E.b)({
+						const n = Object(D.h)(e);
+						this.dispatch(Object(_.b)({
 							channelSendbirdId: n.channelId,
 							messageSendbirdId: t.messageId,
 							reactionIconKey: t.key,
-							type: D.a[t.operation.toUpperCase()],
+							type: U.a[t.operation.toUpperCase()],
 							userId: t.userId
 						}, !0))
 					}, this.self.addChannelHandler("ON_REACTION_UPDATED", e), this.channelUniqueHandlerID.push("ON_REACTION_UPDATED")
@@ -15688,55 +15736,55 @@
 				onChannelChanged() {
 					const e = new this.self.ChannelHandler;
 					e.onChannelChanged = e => {
-						const t = Object(k.h)(e);
-						this.dispatch(Object(u.P)(t))
+						const t = Object(D.h)(e);
+						this.dispatch(Object(m.P)(t))
 					}, this.self.addChannelHandler("ON_CHANNEL_CHANGED", e), this.channelUniqueHandlerID.push("ON_CHANNEL_CHANGED")
 				}
 				onChannelDeleted() {
 					const e = new this.self.ChannelHandler;
 					e.onChannelDeleted = e => {
-						const t = Object(M.f)(e);
-						this.dispatch(g(t))
+						const t = Object(A.f)(e);
+						this.dispatch(O(t))
 					}, this.self.addChannelHandler("ON_CHANNEL_DELETED", e), this.channelUniqueHandlerID.push("ON_CHANNEL_DELETED")
 				}
 				onChannelMuted() {
 					const e = new this.self.ChannelHandler;
 					e.onUserMuted = e => {
-						const t = Object(k.h)(e);
-						this.dispatch(Object(u.P)(t))
+						const t = Object(D.h)(e);
+						this.dispatch(Object(m.P)(t))
 					}, this.self.addChannelHandler("ON_CHANNEL_MUTED", e), this.channelUniqueHandlerID.push("ON_CHANNEL_MUTED")
 				}
 				onChannelUnmuted() {
 					const e = new this.self.ChannelHandler;
 					e.onUserUnmuted = e => {
-						const t = Object(k.h)(e);
-						this.dispatch(Object(u.P)(t))
+						const t = Object(D.h)(e);
+						this.dispatch(Object(m.P)(t))
 					}, this.self.addChannelHandler("ON_CHANNEL_UNMUTED", e), this.channelUniqueHandlerID.push("ON_CHANNEL_UNMUTED")
 				}
 				onChannelLocked() {
 					const e = new this.self.ChannelHandler;
 					e.onChannelFrozen = e => {
-						const t = Object(k.h)(e);
-						this.dispatch(Object(u.P)(t))
+						const t = Object(D.h)(e);
+						this.dispatch(Object(m.P)(t))
 					}, this.self.addChannelHandler("ON_CHANNEL_LOCKED", e), this.channelUniqueHandlerID.push("ON_CHANNEL_LOCKED")
 				}
 				onChannelUnlocked() {
 					const e = new this.self.ChannelHandler;
 					e.onChannelUnfrozen = e => {
-						const t = Object(k.h)(e);
-						this.dispatch(Object(u.P)(t))
+						const t = Object(D.h)(e);
+						this.dispatch(Object(m.P)(t))
 					}, this.self.addChannelHandler("ON_CHANNEL_UNLOCKED", e), this.channelUniqueHandlerID.push("ON_CHANNEL_UNLOCKED")
 				}
 				updatePartialChannelModel(e, t) {
 					const {
 						PARTIAL: n,
 						UNSORTED: a
-					} = m.b;
-					t === n && e.channelState === a && (e.channelState = n, this.dispatch(Object(u.Q)(e)))
+					} = b.b;
+					t === n && e.channelState === a && (e.channelState = n, this.dispatch(Object(m.Q)(e)))
 				}
 				getChannelByChannelId(e) {
 					return new Promise((t, n) => {
-						const a = Object(M.a)(e);
+						const a = Object(A.a)(e);
 						this.self.GroupChannel.getChannel(a, (e, a) => {
 							a ? n(a) : t(e)
 						})
@@ -15746,34 +15794,12 @@
 					return new Promise((t, n) => {
 						this.getChannelByChannelId(e).then(e => {
 							if (!e) return t();
-							const n = Object(k.h)(e);
+							const n = Object(D.h)(e);
 							if (!n) return t();
-							this.dispatch(Object(u.Q)(n)), t(n)
+							this.dispatch(Object(m.Q)(n)), t(n)
 						}).catch(e => {
 							n(e)
 						})
-					})
-				}
-				enterChannel(e, t, n) {
-					return new Promise(a => {
-						const s = (e = {}) => ({
-							data: e
-						});
-						if (!this.isConnected()) return a(s());
-						const {
-							channelId: c
-						} = e, r = this.channels[c];
-						if (r && !t) return this.switchChannel(r, n).then(([e]) => a(s({
-							messageListData: e
-						}))).catch(() => a(s()));
-						this.getChannelByChannelId(c).then(t => {
-							if (!t) return a(s());
-							this.channels[c] = t;
-							const r = Object(k.h)(t);
-							this.updatePartialChannelModel(r, e.channelState), this.switchChannel(t, n).then(([e]) => a(s({
-								messageListData: e
-							}))).catch(() => a(s()))
-						}).catch(() => a(s()))
 					})
 				}
 				updateChannel({
@@ -15783,15 +15809,6 @@
 				}) {
 					return new Promise((a, s) => {
 						this.channel ? this.channel.updateChannel(e, t, n, (e, t) => e ? a() : s(t)) : s("No channel selected")
-					})
-				}
-				hideChannel() {
-					return new Promise(e => {
-						if (this.channel) {
-							const t = !1,
-								n = !0;
-							this.channel.hide(t, n, e)
-						} else e()
 					})
 				}
 				lockChannel() {
@@ -15807,26 +15824,26 @@
 				onUserKicked() {
 					const e = new this.self.ChannelHandler;
 					e.onUserBanned = (e, t) => {
-						const n = Object(k.h)(e);
-						n && this.dispatch(O(n, t.userId))
+						const n = Object(D.h)(e);
+						n && this.dispatch(E(n, t.userId))
 					}, this.self.addChannelHandler("CHANNEL_USER_KICKED", e), this.channelUniqueHandlerID.push("CHANNEL_USER_KICKED")
 				}
 				getExistingChannels(e) {
 					return new Promise((t, n) => {
 						let a;
-						if (e === m.b.INVITED ? this.channelListQueryInvited ? a = this.channelListQueryInvited : (this.channelListQueryInvited = this.self.GroupChannel.createMyGroupChannelListQuery(), a = this.channelListQueryInvited) : e === m.b.JOINED && (this.channelListQueryJoined ? a = this.channelListQueryJoined : (this.channelListQueryJoined = this.self.GroupChannel.createMyGroupChannelListQuery(), a = this.channelListQueryJoined)), a)
-							if (a.includeEmpty = !0, a.limit = y.a.Channels, a.order = m.d.LATEST_MESSAGE, a.memberStateFilter = e === m.b.INVITED ? m.i.INVITED : m.i.JOINED, a.superChannelFilter = "all", a.customTypesFilter = ["direct", "group"], a.hasNext) {
+						if (e === b.b.INVITED ? this.channelListQueryInvited ? a = this.channelListQueryInvited : (this.channelListQueryInvited = this.self.GroupChannel.createMyGroupChannelListQuery(), a = this.channelListQueryInvited) : e === b.b.JOINED && (this.channelListQueryJoined ? a = this.channelListQueryJoined : (this.channelListQueryJoined = this.self.GroupChannel.createMyGroupChannelListQuery(), a = this.channelListQueryJoined)), a)
+							if (a.includeEmpty = !0, a.limit = N.a.Channels, a.order = b.d.LATEST_MESSAGE, a.memberStateFilter = e === b.b.INVITED ? b.i.INVITED : b.i.JOINED, a.superChannelFilter = "all", a.customTypesFilter = ["direct", "group"], a.hasNext) {
 								const e = a._token;
 								a.next((n, s) => {
 									if (!s && a) {
 										let s = a.hasNext;
 										const c = a._token;
-										a && e && c && e === c && (s = !1, d.c.withScope(t => {
+										a && e && c && e === c && (s = !1, h.c.withScope(t => {
 											t.setExtra("info", {
 												query: JSON.stringify(a),
 												currentNextToken: e,
 												undatedNextToken: c
-											}), d.c.captureMessage("Chat paging request infinite looping!")
+											}), h.c.captureMessage("Chat paging request infinite looping!")
 										})), t({
 											channels: n,
 											hasMoreChannels: s
@@ -15872,9 +15889,9 @@
 					return new Promise((n, a) => {
 						if (!this.channel) return a(new Error("this.channel is null or undefined"));
 						this.memberListQuery = this.channel.createMemberListQuery(), this.memberListQuery ? (this.memberListQuery.nicknameStartsWithFilter = e, this.memberListQuery.next((a, s) => {
-							const c = Object(A.a)(a),
+							const c = Object(P.a)(a),
 								r = c.filter(n => t && n && n.name === e || !t && n);
-							c.length && this.dispatch(Object(v.h)(c)), n(r)
+							c.length && this.dispatch(Object(C.h)(c)), n(r)
 						})) : a(Error("this.memberListQuery is null or undefined"))
 					})
 				}
@@ -15886,33 +15903,33 @@
 				}
 				getPreviousMessages(e) {
 					return new Promise((t, n) => {
-						e && this.createPreviousMessageListQuery(), this.channel && this.prevMessageListQuery ? (this.prevMessageListQuery.reverse = !0, this.prevMessageListQuery.limit = y.a.Messages, this.prevMessageListQuery.includeReactions = !0, this.prevMessageListQuery.load((e, a) => {
+						e && this.createPreviousMessageListQuery(), this.channel && this.prevMessageListQuery ? (this.prevMessageListQuery.reverse = !0, this.prevMessageListQuery.limit = N.a.Messages, this.prevMessageListQuery.includeReactions = !0, this.prevMessageListQuery.load((e, a) => {
 							if (!a && this.prevMessageListQuery) {
 								const n = {},
 									{
 										hasMore: a
 									} = this.prevMessageListQuery;
 								e.forEach(e => {
-									const t = Object(T.c)(e);
+									const t = Object(L.c)(e);
 									t && (n[t.messageId] = t)
 								}), t({
 									messages: n,
 									hasMore: a
 								})
-							} else Object(w.b)(`Error with getting previous messages from Sendbird: ${a}`), n()
-						})) : (Object(w.b)("Sendbird channel does not exist"), n())
+							} else Object(T.b)(`Error with getting previous messages from Sendbird: ${a}`), n()
+						})) : (Object(T.b)("Sendbird channel does not exist"), n())
 					})
 				}
 				addMessage(e, t, n = []) {
 					return new Promise((a, s) => {
 						if (this.channel) {
 							const c = new(0, this.self.UserMessageParams);
-							c.data = t, c.message = e, n && n.length && (c.mentionType = x.b.USERS, c.mentionedUserIds = n), this.channel.sendUserMessage(c, (e, t) => {
-								if (t) Object(w.b)(`Error with sending the message to Sendbird: ${t}`), s(t);
+							c.data = t, c.message = e, n && n.length && (c.mentionType = w.b.USERS, c.mentionedUserIds = n), this.channel.sendUserMessage(c, (e, t) => {
+								if (t) Object(T.b)(`Error with sending the message to Sendbird: ${t}`), s(t);
 								else {
-									const t = Object(T.c)(e);
-									if (t && t.messageType === x.d.USER) return a(t);
-									Object(w.b)(`Unsupported message type: ${t&&t.messageType}`), s()
+									const t = Object(L.c)(e);
+									if (t && t.messageType === w.d.USER) return a(t);
+									Object(T.b)(`Unsupported message type: ${t&&t.messageType}`), s()
 								}
 							})
 						}
@@ -15926,7 +15943,7 @@
 						if (this.channel) {
 							const a = e;
 							this.channel.addReaction(a, t, (e, t) => {
-								t ? Object(w.b)(`Error with adding reactions to the message on Sendbird: ${t}`) : n(e)
+								t ? Object(T.b)(`Error with adding reactions to the message on Sendbird: ${t}`) : n(e)
 							})
 						}
 					})
@@ -15936,7 +15953,7 @@
 						if (this.channel) {
 							const n = e;
 							this.channel.deleteMessage(n, (e, n) => {
-								n ? Object(w.b)(`Error with deleting the message on Sendbird: ${n}`) : t(e)
+								n ? Object(T.b)(`Error with deleting the message on Sendbird: ${n}`) : t(e)
 							})
 						}
 					})
@@ -15944,8 +15961,8 @@
 				getFirstMessage() {
 					return new Promise((e, t) => {
 						this.channel ? this.channel.getNextMessagesByTimestamp(0, !0, 1, !0, "", "", (t, n) => {
-							n ? Object(w.b)(`Error with getting first message from Sendbird: ${n}`) : e(t)
-						}) : (Object(w.b)("Sendbird channel does not exist"), t())
+							n ? Object(T.b)(`Error with getting first message from Sendbird: ${n}`) : e(t)
+						}) : (Object(T.b)("Sendbird channel does not exist"), t())
 					})
 				}
 				markChannelAsRead() {
@@ -15972,7 +15989,7 @@
 					})
 				}
 			};
-			t.a = U
+			t.a = G
 		},
 		"./src/chat/tracking/events/chatView.ts": function(e, t, n) {
 			"use strict";
@@ -17120,4 +17137,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.ab05954b0e022bbbdfc2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.bb492b10de63519e0ecf.js.map
