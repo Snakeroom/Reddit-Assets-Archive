@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.0c8e3a2d80ce41e47c2a.js
-// Retrieved at 12/16/2021, 5:30:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.d13dfa4cf5e2fac6c1bf.js
+// Retrieved at 12/20/2021, 3:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -7114,7 +7114,7 @@
 					post: t
 				}) => !!t && Object(_.a)(t), (e, {
 					awaitAllCommentsRendered: t
-				}) => t, L.J, L.K, E.d, q, (e, t, s, o, n, r) => !e && !s && !o && !n && !t && r),
+				}) => t, L.J, L.K, E.d, q, (e, t, s, o, n, r) => !t && !s && !o && !n && !e && r),
 				G = Object(c.a)((e, {
 					post: t
 				}) => t, P.c, T.Y, T.hb, (e, t, s, o) => {
@@ -8522,6 +8522,7 @@
 						postId: t
 					}) && Object(pe.a)(e),
 					isCountAnimShadowTestEnabled: $.e,
+					isCrawler: (e, t) => !!Object(ve.c)(e),
 					isCreatorStatsEnabled: (e, {
 						postId: t
 					}) => Object(be.a)(e, t),
@@ -8858,115 +8859,116 @@
 						commentsPageKey: i,
 						isActionBarAnimationEnabled: a,
 						isCountAnimShadowTestEnabled: d,
-						isCrosspostRecommendationsExperimentEnabled: c,
-						isEligibleForCommentTruncation: l,
-						isLoggedIn: u,
-						isNightmodeOn: p,
-						isOverlay: h,
-						post: b,
-						postId: g,
-						postSEOV2IdCardVariant: f,
-						profileCollectionsEnabled: v,
-						sendEvent: _,
-						sort: O,
-						subredditOrProfile: y,
-						isEligibleForNsfwSignupUpsellTreatment: k,
-						subredditName: E
+						isCrawler: c,
+						isCrosspostRecommendationsExperimentEnabled: l,
+						isEligibleForCommentTruncation: u,
+						isLoggedIn: p,
+						isNightmodeOn: h,
+						isOverlay: b,
+						post: g,
+						postId: f,
+						postSEOV2IdCardVariant: v,
+						profileCollectionsEnabled: _,
+						sendEvent: O,
+						sort: y,
+						subredditOrProfile: k,
+						isEligibleForNsfwSignupUpsellTreatment: E,
+						subredditName: j
 					} = this.props;
-					if ((null == b ? void 0 : b.isNSFW) && E && k) return m.a.createElement(W.a, {
-						contentTitle: Object(st.c)(E)
+					if ((null == g ? void 0 : g.isNSFW) && j && E) return m.a.createElement(W.a, {
+						contentTitle: Object(st.c)(j)
 					});
-					const j = Object(ge.f)(f);
-					if (!b) {
+					const w = Object(ge.f)(v);
+					if (!g) {
 						if (t) return m.a.createElement(Te.f, null);
 						const s = this.renderPageError();
 						return s || (e ? e.type === C.o ? m.a.createElement(yt, {
 							contentGateType: lt.a.PostBlockedForLegalReason
 						}) : m.a.createElement(Te.d, {
-							postId: g,
+							postId: f,
 							commentId: r,
 							apiError: e,
-							sort: O
+							sort: y
 						}) : m.a.createElement(Te.f, null))
 					} {
 						const e = this.renderPageError();
 						if (e) return e
 					}
-					const w = this.isCommentPermalink(),
-						P = b.belongsTo.type === K.a.PROFILE,
-						I = Object(ot.a)(b) && (!P || v),
-						S = !u,
-						T = y && y.isQuarantined,
-						L = !l && !this.state.allCommentsRendered,
-						N = c && s;
-					return gt.input.channel.postID = g, m.a.createElement(Nt, {
+					const P = this.isCommentPermalink(),
+						I = g.belongsTo.type === K.a.PROFILE,
+						S = Object(ot.a)(g) && (!I || _),
+						T = !p,
+						L = k && k.isQuarantined,
+						N = !u && !this.state.allCommentsRendered && !c,
+						F = l && s;
+					return gt.input.channel.postID = f, m.a.createElement(Nt, {
 						closeLocation: n,
 						commentsPageKey: i,
 						containerRef: this.setLayoutRef,
 						handleFakeLightboxClick: this.handleFakeLightboxClick,
 						handleFakeLightboxOverlayClick: this.handleFakeLightboxOverlayClick,
-						isLoggedIn: u,
-						isOverlay: h,
-						isSwapVariant: j,
-						post: b,
-						subredditOrProfile: y,
-						shouldFitPageToContent: S,
-						isCollectionLayout: I
+						isLoggedIn: p,
+						isOverlay: b,
+						isSwapVariant: w,
+						post: g,
+						subredditOrProfile: k,
+						shouldFitPageToContent: T,
+						isCollectionLayout: S
 					}, m.a.createElement(qe.a, {
-						postId: g,
-						isNightMode: p,
-						isOverlay: h,
+						postId: f,
+						isNightMode: h,
+						isOverlay: b,
 						commentId: r
-					}), !h && m.a.createElement(Ge.a, {
-						post: b
-					}), T && m.a.createElement(ze.a, {
-						subredditName: y.name
+					}), !b && m.a.createElement(Ge.a, {
+						post: g
+					}), L && m.a.createElement(ze.a, {
+						subredditName: k.name
 					}), m.a.createElement(He.a, null), m.a.createElement("div", {
 						className: Object(x.a)(ht.a.PageContentWrapper, {
-							[ht.a.LargePageContent]: I,
+							[ht.a.LargePageContent]: S,
 							[ht.a.ChatPage]: this.props.isChatPost
 						}),
 						key: "PostContentWrapper"
-					}, I && m.a.createElement(Ot, {
-						isOverlay: h,
-						isNightmodeOn: p,
-						postId: g
+					}, S && m.a.createElement(Ot, {
+						isOverlay: b,
+						isNightmodeOn: h,
+						postId: f
 					}), m.a.createElement(ft, {
-						condition: I,
+						condition: S,
 						wrap: e => m.a.createElement("div", {
 							ref: this.updateCollPostWrapperRef,
 							className: ht.a.CollectionBodyWrapper
 						}, e)
 					}, m.a.createElement(Ke.c, {
-						isCommentPermalink: w,
-						isOverlay: h,
-						postId: g,
-						redditStyle: h,
+						isCommentPermalink: P,
+						isOverlay: b,
+						postId: f,
+						redditStyle: b,
 						scrollerItemRef: this.setPostScrollItemRef,
-						sendEvent: _,
+						sendEvent: O,
 						isActionBarAnimationEnabled: a,
 						isCountAnimShadowTestEnabled: d,
-						isCrosspostRecommendationsExperimentEnabled: c
-					}), this.props.canViewCreatorStats && !T && this.props.isCreatorStatsEnabled && m.a.createElement(Re.a, {
-						post: b,
-						subreddit: y
+						isCrosspostRecommendationsExperimentEnabled: l
+					}), this.props.canViewCreatorStats && !L && this.props.isCreatorStatsEnabled && m.a.createElement(Re.a, {
+						post: g,
+						subreddit: k
 					}), this.state.commentNativeAdId && m.a.createElement("div", {
 						ref: this.setCommentAdRef
 					}, m.a.createElement(M.a, {
-						key: `event-post-id-${b.id}`,
-						isOverlay: h,
+						key: `event-post-id-${g.id}`,
+						isOverlay: b,
 						postId: this.state.commentNativeAdId,
 						scrollerItemRef: this.setAdScrollItemRef
-					})), this.renderCommentPanes())), y && !Object(re.h)(y) && m.a.createElement(V.a, {
-						awaitAllCommentsRendered: L,
+					})), this.renderCommentPanes())), k && !Object(re.h)(k) && m.a.createElement(V.a, {
+						awaitAllCommentsRendered: N,
 						contentContainerRef: this.state.layoutRef,
-						isOverlay: h,
-						post: b,
-						subredditOrProfile: y
-					}), N && m.a.createElement(R.a, {
+						isOverlay: b,
+						post: g,
+						subredditOrProfile: k
+					}), F && m.a.createElement(R.a, {
 						ignoreDefaultFocus: !0,
 						onCloseModal: o,
-						post: b,
+						post: g,
 						withOverlay: !0
 					}))
 				}
@@ -9689,4 +9691,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.0c8e3a2d80ce41e47c2a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.d13dfa4cf5e2fac6c1bf.js.map
