@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.d5cf8c9f937bbd52bb64.js
-// Retrieved at 1/4/2022, 10:50:11 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.31aa93b08c070819029c.js
+// Retrieved at 1/4/2022, 11:10:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityPointsLearnMore"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, o) {
@@ -2306,56 +2306,56 @@
 						hk: "FgGID"
 					})), i.a.createElement("h2", null, D._("Special Memberships let users show off their support to the community. Getting a Special Membership unlocks badges and other premium features in the community.", null, {
 						hk: "4EV8yH"
-					})), D._("{=Community Points can be used to purchase a Special Membership in the subreddit. Special Memberships come with several features:}{=Badges: Personalize your presence on the subreddit and add a highlighted color to your username.Animated emojis: Express yourself in a way that words can't, with emojis custom to that subreddit.GIFs: Embed GIFs directly on Reddit, inside your comments.}{=To see more details, check theSubreddit Membership page for r/CryptoCurrency.}", [D._param("=Community Points can be used to purchase a Special Membership in the subreddit. Special Memberships come with several features:", i.a.createElement("p", null, D._("Community Points can be used to purchase a Special Membership in the subreddit. Special Memberships come with several features:", null, {
-						hk: "38Dh05"
-					}))), D._param("=Badges: Personalize your presence on the subreddit and add a highlighted color to your username.Animated emojis: Express yourself in a way that words can't, with emojis custom to that subreddit.GIFs: Embed GIFs directly on Reddit, inside your comments.", i.a.createElement("ul", null, D._("{=Badges: Personalize your presence on the subreddit and add a highlighted color to your username.}{=Animated emojis: Express yourself in a way that words can't, with emojis custom to that subreddit.}{=GIFs: Embed GIFs directly on Reddit, inside your comments.}", [D._param("=Badges: Personalize your presence on the subreddit and add a highlighted color to your username.", i.a.createElement("li", null, D._("{=Badges}: Personalize your presence on the subreddit and add a highlighted color to your username.", [D._param("=Badges", i.a.createElement("b", null, D._("Badges", null, {
-						hk: "4DRDlo"
+					})), D._("{=Community Points can be used to purchase a Special Membership in the subreddit. Special Memberships come with several features:}{=Badges: Personalize your presence on the subreddit and add a highlighted color to your username.Animated emojis: Express yourself in a way that words can't, with emojis customized to that subreddit.GIFs: Embed GIFs directly on Reddit, inside your comments.}{=To see more details, check theSubreddit Membership page for r/CryptoCurrency.}", [D._param("=Community Points can be used to purchase a Special Membership in the subreddit. Special Memberships come with several features:", i.a.createElement("p", null, D._("Community Points can be used to purchase a Special Membership in the subreddit. Special Memberships come with several features:", null, {
+						hk: "2RjnSj"
+					}))), D._param("=Badges: Personalize your presence on the subreddit and add a highlighted color to your username.Animated emojis: Express yourself in a way that words can't, with emojis customized to that subreddit.GIFs: Embed GIFs directly on Reddit, inside your comments.", i.a.createElement("ul", null, D._("{=Badges: Personalize your presence on the subreddit and add a highlighted color to your username.}{=Animated emojis: Express yourself in a way that words can't, with emojis customized to that subreddit.}{=GIFs: Embed GIFs directly on Reddit, inside your comments.}", [D._param("=Badges: Personalize your presence on the subreddit and add a highlighted color to your username.", i.a.createElement("li", null, D._("{=Badges}: Personalize your presence on the subreddit and add a highlighted color to your username.", [D._param("=Badges", i.a.createElement("b", null, D._("Badges", null, {
+						hk: "64JpW"
 					})))], {
-						hk: "5s3Sd"
-					}))), D._param("=Animated emojis: Express yourself in a way that words can't, with emojis custom to that subreddit.", i.a.createElement("li", null, D._("{=Animated emojis}: Express yourself in a way that words can't, with emojis custom to that subreddit.", [D._param("=Animated emojis", i.a.createElement("b", null, D._("Animated emojis", null, {
-						hk: "4asrVX"
+						hk: "1UlPKj"
+					}))), D._param("=Animated emojis: Express yourself in a way that words can't, with emojis customized to that subreddit.", i.a.createElement("li", null, D._("{=Animated emojis}: Express yourself in a way that words can't, with emojis customized to that subreddit.", [D._param("=Animated emojis", i.a.createElement("b", null, D._("Animated emojis", null, {
+						hk: "3JlmnL"
 					})))], {
-						hk: "3PkQvY"
+						hk: "17LrM"
 					}))), D._param("=GIFs: Embed GIFs directly on Reddit, inside your comments.", i.a.createElement("li", null, D._("{=GIFs}: Embed GIFs directly on Reddit, inside your comments.", [D._param("=GIFs", i.a.createElement("b", null, D._("GIFs", null, {
-						hk: "2a3wif"
+						hk: "1nCu3Q"
 					})))], {
-						hk: "4hvgfH"
+						hk: "1qkBxd"
 					})))], {
-						hk: "3dZKqP"
+						hk: "45xOov"
 					}))), D._param("=To see more details, check theSubreddit Membership page for r/CryptoCurrency.", i.a.createElement("p", null, D._("To see more details, check the {=Subreddit Membership} page for r/CryptoCurrency.", [D._param("=Subreddit Membership", i.a.createElement("a", {
 						href: "/web/special-membership/cryptocurrency",
 						target: "_blank",
 						rel: "noopener noreferrer"
 					}, D._("Subreddit Membership", null, {
-						hk: "4uVETH"
+						hk: "2CT5r6"
 					})))], {
-						hk: "ShuhC"
+						hk: "1cN7rt"
 					})))], {
-						hk: "21ECEk"
+						hk: "YU1NC"
 					}), i.a.createElement("section", null, i.a.createElement("h3", null, D._("Badges & Emojis", null, {
 						hk: "nhw27"
 					})), i.a.createElement("div", {
 						className: g.a.sideImageContainer
-					}, i.a.createElement("div", null, D._('{=There are multiple badges that Special Members can display next to their username.}{=Loyalty Badge: The first badge represents how long the user has been supporting the subreddit as a paying member.Achievement Badge: This is an optional badge that appears in the middle position. Members can receive it for different kinds of community achievements, such as winning a contest. Communities can also decide to make certain Achievement Badges available to all community members (e.g., "I Voted" Achievement Badges).Style Badge: This is an aesthetic badge that appears in the rightmost position. Members can choose this badge from their Badge Gallery, and their username is highlighted with a matching color.}{=For the initial subreddits opting into Community Points, Reddit will design Loyalty Badges and an initial set of Style Badges tailored for that community. After Community Points are launched in the community, creators can upload additional Style Badges and emojis. Moderators approve these community-created badges and emojis through a section in Mod Tools, and creators earn Community Points for each approved asset they make.}', [D._param("=There are multiple badges that Special Members can display next to their username.", i.a.createElement("p", null, D._("There are multiple badges that Special Members can display next to their username.", null, {
-						hk: "2MqoCd"
+					}, i.a.createElement("div", null, D._('{=There are multiple badges that Special Members can display next to their username.}{=Loyalty Badge: The first badge represents how long the user has been supporting the subreddit as a paying member.Achievement Badge: This is an optional badge that appears in the middle position. Members can receive it for different kinds of community achievements, such as winning a contest. Communities can also decide to make certain Achievement Badges available to all community members (e.g., "I Voted" Achievement Badges).Style Badge: This is an aesthetic badge that appears in the rightmost position. Members can choose this badge from their Badge Gallery, and their username is highlighted with a matching color.}{=For the initial subreddits opting into Community Points, Reddit will design Loyalty Badges and an initial set of Style Badges tailored for each community. After Community Points are launched in the community, creators can upload additional Style Badges and emojis. Moderators approve these community-created badges and emojis through a section in Mod Tools, and creators earn Community Points for each approved asset they make.}', [D._param("=There are multiple badges that Special Members can display next to their username.", i.a.createElement("p", null, D._("There are multiple badges that Special Members can display next to their username.", null, {
+						hk: "38eZY8"
 					}))), D._param('=Loyalty Badge: The first badge represents how long the user has been supporting the subreddit as a paying member.Achievement Badge: This is an optional badge that appears in the middle position. Members can receive it for different kinds of community achievements, such as winning a contest. Communities can also decide to make certain Achievement Badges available to all community members (e.g., "I Voted" Achievement Badges).Style Badge: This is an aesthetic badge that appears in the rightmost position. Members can choose this badge from their Badge Gallery, and their username is highlighted with a matching color.', i.a.createElement("ul", null, D._('{=Loyalty Badge: The first badge represents how long the user has been supporting the subreddit as a paying member.}{=Achievement Badge: This is an optional badge that appears in the middle position. Members can receive it for different kinds of community achievements, such as winning a contest. Communities can also decide to make certain Achievement Badges available to all community members (e.g., "I Voted" Achievement Badges).}{=Style Badge: This is an aesthetic badge that appears in the rightmost position. Members can choose this badge from their Badge Gallery, and their username is highlighted with a matching color.}', [D._param("=Loyalty Badge: The first badge represents how long the user has been supporting the subreddit as a paying member.", i.a.createElement("li", null, D._("{=Loyalty Badge}: The first badge represents how long the user has been supporting the subreddit as a paying member.", [D._param("=Loyalty Badge", i.a.createElement("b", null, D._("Loyalty Badge", null, {
-						hk: "Zpscf"
+						hk: "4ACOXt"
 					})))], {
-						hk: "4mnFA3"
+						hk: "1jiQJi"
 					}))), D._param('=Achievement Badge: This is an optional badge that appears in the middle position. Members can receive it for different kinds of community achievements, such as winning a contest. Communities can also decide to make certain Achievement Badges available to all community members (e.g., "I Voted" Achievement Badges).', i.a.createElement("li", null, D._('{=Achievement Badge}: This is an optional badge that appears in the middle position. Members can receive it for different kinds of community achievements, such as winning a contest. Communities can also decide to make certain Achievement Badges available to all community members (e.g., "I Voted" Achievement Badges).', [D._param("=Achievement Badge", i.a.createElement("b", null, D._("Achievement Badge", null, {
-						hk: "2c70Xy"
+						hk: "3VjA3"
 					})))], {
-						hk: "2dLlDK"
+						hk: "2O48La"
 					}))), D._param("=Style Badge: This is an aesthetic badge that appears in the rightmost position. Members can choose this badge from their Badge Gallery, and their username is highlighted with a matching color.", i.a.createElement("li", null, D._("{=Style Badge}: This is an aesthetic badge that appears in the rightmost position. Members can choose this badge from their Badge Gallery, and their username is highlighted with a matching color.", [D._param("=Style Badge", i.a.createElement("b", null, D._("Style Badge", null, {
-						hk: "iDIos"
+						hk: "1UZzGn"
 					})))], {
-						hk: "2QBYdw"
+						hk: "3G44zo"
 					})))], {
-						hk: "4xIrDS"
-					}))), D._param("=For the initial subreddits opting into Community Points, Reddit will design Loyalty Badges and an initial set of Style Badges tailored for that community. After Community Points are launched in the community, creators can upload additional Style Badges and emojis. Moderators approve these community-created badges and emojis through a section in Mod Tools, and creators earn Community Points for each approved asset they make.", i.a.createElement("p", null, D._("For the initial subreddits opting into Community Points, Reddit will design Loyalty Badges and an initial set of Style Badges tailored for that community. After Community Points are launched in the community, creators can upload additional Style Badges and emojis. Moderators approve these community-created badges and emojis through a section in Mod Tools, and creators earn Community Points for each approved asset they make.", null, {
-						hk: "1sw8sB"
+						hk: "3uCxSx"
+					}))), D._param("=For the initial subreddits opting into Community Points, Reddit will design Loyalty Badges and an initial set of Style Badges tailored for each community. After Community Points are launched in the community, creators can upload additional Style Badges and emojis. Moderators approve these community-created badges and emojis through a section in Mod Tools, and creators earn Community Points for each approved asset they make.", i.a.createElement("p", null, D._("For the initial subreddits opting into Community Points, Reddit will design Loyalty Badges and an initial set of Style Badges tailored for each community. After Community Points are launched in the community, creators can upload additional Style Badges and emojis. Moderators approve these community-created badges and emojis through a section in Mod Tools, and creators earn Community Points for each approved asset they make.", null, {
+						hk: "4bju4t"
 					})))], {
-						hk: "35bFcv"
+						hk: "3YpHOu"
 					})), i.a.createElement("img", {
 						src: `${n.a.assetPath}/img/communityPoints/landingPage/docs/badges.png`,
 						alt: D._("Example image of badges", null, {
@@ -2865,12 +2865,12 @@
 						hk: "3mzCJw"
 					})), i.a.createElement("section", null, i.a.createElement("h3", null, k._("Help! I've lost my Recovery Phrase and/or Vault Password, can you reset my Vault for me?", null, {
 						hk: "3CQUe7"
-					})), k._("{=Unfortunately, by design, Reddit does not have access to your Vault to recover it or the Points inside of it. If you're absolutely sure your Vault is not stored on any of your mobile devices and you absolutely cannot remember your Recovery Phrase or Vault Password, there is nothing we can do to unlock your Vault and you will have to create a new Vault.}{=Also note that Points are tied to the Vault that was active when the distribution is finalized. If you change your Vault between when the distribution is proposed and when Points are actually finalized, your Points will go to the updated Vault.}", [k._param("=Unfortunately, by design, Reddit does not have access to your Vault to recover it or the Points inside of it. If you're absolutely sure your Vault is not stored on any of your mobile devices and you absolutely cannot remember your Recovery Phrase or Vault Password, there is nothing we can do to unlock your Vault and you will have to create a new Vault.", i.a.createElement("p", null, k._("Unfortunately, by design, Reddit does not have access to your Vault to recover it or the Points inside of it. If you're absolutely sure your Vault is not stored on any of your mobile devices and you absolutely cannot remember your Recovery Phrase or Vault Password, there is nothing we can do to unlock your Vault and you will have to create a new Vault.", null, {
-						hk: "13Wzpr"
-					}))), k._param("=Also note that Points are tied to the Vault that was active when the distribution is finalized. If you change your Vault between when the distribution is proposed and when Points are actually finalized, your Points will go to the updated Vault.", i.a.createElement("p", null, k._("Also note that Points are tied to the Vault that was active when the distribution is finalized. If you change your Vault between when the distribution is proposed and when Points are actually finalized, your Points will go to the updated Vault.", null, {
-						hk: "1QQCAq"
+					})), k._("{=Unfortunately, by design, Reddit does not have access to your Vault to recover it or the Points inside of it. If you're absolutely sure your Vault is not stored on any of your mobile devices and you absolutely cannot remember your Recovery Phrase or Vault Password, there is nothing we can do to unlock your Vault and you will have to create a new Vault.}{=Also note that Points are tied to the Vault that was active when the distribution is finalized. If you change your Vault between when the distribution is proposed and when Points are actually distributed, your Points will go to the updated Vault.}", [k._param("=Unfortunately, by design, Reddit does not have access to your Vault to recover it or the Points inside of it. If you're absolutely sure your Vault is not stored on any of your mobile devices and you absolutely cannot remember your Recovery Phrase or Vault Password, there is nothing we can do to unlock your Vault and you will have to create a new Vault.", i.a.createElement("p", null, k._("Unfortunately, by design, Reddit does not have access to your Vault to recover it or the Points inside of it. If you're absolutely sure your Vault is not stored on any of your mobile devices and you absolutely cannot remember your Recovery Phrase or Vault Password, there is nothing we can do to unlock your Vault and you will have to create a new Vault.", null, {
+						hk: "3G2izr"
+					}))), k._param("=Also note that Points are tied to the Vault that was active when the distribution is finalized. If you change your Vault between when the distribution is proposed and when Points are actually distributed, your Points will go to the updated Vault.", i.a.createElement("p", null, k._("Also note that Points are tied to the Vault that was active when the distribution is finalized. If you change your Vault between when the distribution is proposed and when Points are actually distributed, your Points will go to the updated Vault.", null, {
+						hk: "37f9e8"
 					})))], {
-						hk: "2YpSXM"
+						hk: "3maDCP"
 					})), i.a.createElement("section", null, i.a.createElement("h3", null, k._("What if I get banned? What happens to my Points or my Special Membership?", null, {
 						hk: "4cvjGM"
 					})), i.a.createElement("p", null, k._("Your existing Points will forever remain on your Ethereum account, but you will get locked out of Vault. You'll also stop receiving distributions, and any Special Membership renewals will be cancelled.", null, {
@@ -4143,4 +4143,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.d5cf8c9f937bbd52bb64.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.31aa93b08c070819029c.js.map
