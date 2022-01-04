@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.e1419baf589928b4b402.js
-// Retrieved at 1/4/2022, 6:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.c90a68477034969238bd.js
+// Retrieved at 1/4/2022, 6:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3327,10 +3327,10 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("155474"),
+				buildNumber: Object(r.c)("155478"),
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
-				buildTimestamp: Object(r.b)("1641335117"),
+				buildTimestamp: Object(r.b)("1641338579"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -5900,14 +5900,14 @@
 					}))
 				},
 				$ = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %cefc6f5ab0ff75aa88deb3574a738f2cc503da06b-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %cdc6252ce3c46527dcccf2a5434e7832de3011f25-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "efc6f5ab0ff75aa88deb3574a738f2cc503da06b-production",
+						release: "dc6252ce3c46527dcccf2a5434e7832de3011f25-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6424,7 +6424,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "efc6f5ab0ff75aa88deb3574a738f2cc503da06b-production",
+						releaseClient: "dc6252ce3c46527dcccf2a5434e7832de3011f25-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -6714,20 +6714,19 @@
 		"./src/lib/makeGqlRequest/index.ts": function(e, t, i) {
 			"use strict";
 			i.d(t, "a", (function() {
-				return b
+				return f
 			}));
 			var n = i("./node_modules/lodash/omit.js"),
 				r = i.n(n),
-				s = i("./src/lib/addQueryParams/index.ts"),
-				o = i("./src/lib/apiErrorHelpers.ts"),
-				d = i("./src/lib/constants/index.ts"),
-				a = i("./src/lib/constants/headers.ts"),
-				l = i("./src/lib/env/index.ts"),
-				u = i("./src/lib/logs/errors.ts"),
-				c = i("./src/lib/makeRequest/index.ts"),
-				_ = i("./src/reddit/constants/headers.ts"),
-				m = i("./src/reddit/singleton/tracing/index.ts");
-			const p = ({
+				s = i("./src/lib/apiErrorHelpers.ts"),
+				o = i("./src/lib/constants/index.ts"),
+				d = i("./src/lib/constants/headers.ts"),
+				a = i("./src/lib/env/index.ts"),
+				l = i("./src/lib/logs/errors.ts"),
+				u = i("./src/lib/makeRequest/index.ts"),
+				c = i("./src/reddit/constants/headers.ts"),
+				_ = i("./src/reddit/singleton/tracing/index.ts");
+			const m = ({
 					apiUrl: e,
 					onBeforeRequest: t,
 					onResponse: i,
@@ -6740,7 +6739,7 @@
 					statsAppName: n,
 					headers: r()
 				}),
-				h = (e, t) => {
+				p = (e, t) => {
 					const i = {
 							...t,
 							headers: {
@@ -6748,58 +6747,56 @@
 								...e.headers
 							}
 						},
-						n = Object(l.b)() ? [_.a] : [_.a, a.c];
+						n = Object(a.b)() ? [c.a] : [c.a, d.c];
 					i.headers = r()(i.headers, n);
-					const o = m.b.getTracingHeaders();
+					const s = _.b.getTracingHeaders();
 					return i.headers = {
 						...i.headers,
-						...o
-					}, i.endpoint = (e => Object(s.a)(e, {
-						request_timestamp: Date.now().toString()
-					}))(i.endpoint), i
+						...s
+					}, i
 				},
-				f = (e, t, i) => {
+				h = (e, t, i) => {
 					const {
 						errors: n
 					} = i.body;
-					n && n.length && Object(u.sendErrorToServer)({
+					n && n.length && Object(l.sendErrorToServer)({
 						context: e,
 						endpoint: t.endpoint,
 						error: n.map(e => e.message).join("\n"),
-						type: d.t.GQL
+						type: o.t.GQL
 					})
 				};
 
-			function b(e, t, i) {
+			function f(e, t, i) {
 				const n = i && i.traceRequestName ? i.traceRequestName : "gql_api_call",
 					r = {};
-				return "id" in t && (r[m.a.OperationId] = t.id), m.b.recordRpcSpanAsync(n, async () => {
-					const n = p(e),
+				return "id" in t && (r[_.a.OperationId] = t.id), _.b.recordRpcSpanAsync(n, async () => {
+					const n = m(e),
 						r = {
 							...i ? {
 								...i
 							} : {},
 							data: t,
-							method: d.jb.POST,
+							method: o.jb.POST,
 							endpoint: n.apiUrl,
 							type: "json"
 						},
-						s = h(n, r);
-					return n.onBeforeRequest(s), Object(c.b)(s).then(e => (n.onResponse(e, {
+						d = p(n, r);
+					return n.onBeforeRequest(d), Object(u.b)(d).then(e => (n.onResponse(e, {
 						allowSetEmptyLoid: t.allowSetEmptyLoid
-					}), !e.ok && (Object(o.b)(n, r, e), e.status >= 400) ? {
+					}), !e.ok && (Object(s.b)(n, r, e), e.status >= 400) ? {
 						...e,
 						error: {
-							type: Object(o.c)(e.status)
+							type: Object(s.c)(e.status)
 						}
-					} : e.body.errors ? (f(n, {
+					} : e.body.errors ? (h(n, {
 						...r,
 						operation: t.id || t.query
 					}, e), {
 						...e,
 						ok: !1,
 						error: {
-							type: d.I.BAD_REQUEST,
+							type: o.I.BAD_REQUEST,
 							fields: e.body.errors.map(e => ({
 								msg: e.message || ""
 							}))
@@ -45280,4 +45277,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.e1419baf589928b4b402.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.c90a68477034969238bd.js.map
