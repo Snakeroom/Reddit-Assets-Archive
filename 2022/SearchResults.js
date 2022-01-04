@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.27ca357fda1be0344779.js
-// Retrieved at 1/4/2022, 10:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.220b85a5e21e17acf4e0.js
+// Retrieved at 1/4/2022, 10:50:11 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -2977,7 +2977,7 @@
 						showTimestamp: j = !0,
 						subredditOrProfile: E,
 						tooltipType: H
-					} = e, D = Object(o.d)(), U = Object(f.a)(), W = Object(o.e)(oe.a), K = Object(o.e)(de.d), q = Object(o.e)(de.g) || ["popular", "all"].includes(K || ""), Z = Object(o.e)(ae.b), z = !(!v.isSponsored || !W || Object(p.hf)(W));
+					} = e, D = Object(o.d)(), U = Object(f.a)(), W = Object(o.e)(oe.a), K = Object(o.e)(de.d), q = Object(o.e)(de.g) || ["popular", "all"].includes(K || ""), Z = Object(o.e)(ae.b), z = !(!v.isSponsored || !W || Object(p.jf)(W));
 					Object(r.useEffect)(() => {
 						z && D(Object(m.d)(v.author))
 					}, []);
@@ -3996,7 +3996,7 @@
 									...s.actionInfo,
 									reason: this.props.node.id
 								},
-								subreddit: b.hb(t)
+								subreddit: b.ib(t)
 							}
 						})
 					}
@@ -4966,7 +4966,7 @@
 					correlationId: Object(n.c)(n.a.SearchResults),
 					actionInfo: i.d(e),
 					search: i.bb(e, s),
-					subreddit: i.hb(e)
+					subreddit: i.ib(e)
 				}))
 		},
 		"./src/reddit/components/SearchResultsContent/redesign.m.less": function(e, t, s) {
@@ -7294,12 +7294,12 @@
 						rtJsonElementProps: o
 					});
 					switch (r) {
-						case h.Oe.SmIcon:
+						case h.Qe.SmIcon:
 							return n.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: o
 							});
-						case h.Oe.SmIconHc:
+						case h.Qe.SmIconHc:
 							return n.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -8166,7 +8166,7 @@
 					const s = {
 						...c.o(e),
 						action: o.c.CLICK,
-						subreddit: c.hb(e)
+						subreddit: c.ib(e)
 					};
 					return void 0 === t ? s : {
 						...s,
@@ -8201,7 +8201,7 @@
 				}),
 				f = e => ({
 					...c.o(e),
-					subreddit: c.hb(e),
+					subreddit: c.ib(e),
 					source: r.postComposer
 				}),
 				x = (e, t) => s => ({
@@ -8234,7 +8234,7 @@
 				}),
 				j = e => t => ({
 					...c.o(t),
-					subreddit: c.hb(t),
+					subreddit: c.ib(t),
 					source: r.collectionComposer,
 					action: o.c.CLICK,
 					noun: n.collectionDelete,
@@ -8303,7 +8303,7 @@
 						source: r.postComposer,
 						action: a.c.CLICK,
 						noun: "event_create",
-						subreddit: u.hb(e)
+						subreddit: u.ib(e)
 					})
 				},
 				h = e => {
@@ -8312,7 +8312,7 @@
 						source: r.postComposer,
 						action: a.c.CLICK,
 						noun: "event_edit",
-						subreddit: u.hb(e),
+						subreddit: u.ib(e),
 						postEvent: v(e),
 						postComposer: O(e)
 					})
@@ -8366,7 +8366,7 @@
 					const s = {
 						source: r.eventComposer,
 						action: a.c.CLICK,
-						subreddit: u.hb(e)
+						subreddit: u.ib(e)
 					};
 					return t ? {
 						...s,
@@ -8465,7 +8465,7 @@
 					const r = Object(a.b)(s) ? s.belongsTo.id : s.subredditId;
 					return {
 						post: u.I(e, s.id),
-						subreddit: u.ib(e, r),
+						subreddit: u.jb(e, r),
 						...b(e, t)
 					}
 				},
@@ -8478,7 +8478,7 @@
 					source: "global",
 					action: o.c.VIEW,
 					noun: r.SUBREDDIT_HOVERCARD,
-					subreddit: u.jb(t, e),
+					subreddit: u.kb(t, e),
 					screen: u.ab(t)
 				}),
 				x = (e, t) => s => ({
@@ -8487,7 +8487,7 @@
 					action: o.c.VIEW,
 					noun: r.ITEM_POST,
 					post: u.I(s, t),
-					subreddit: u.jb(s, e),
+					subreddit: u.kb(s, e),
 					screen: u.ab(s)
 				}),
 				g = (e, t) => s => ({
@@ -8496,26 +8496,26 @@
 					action: o.c.CLICK,
 					noun: r.ITEM_POST,
 					post: u.I(s, t),
-					subreddit: u.jb(s, e),
+					subreddit: u.kb(s, e),
 					screen: u.ab(s)
 				}),
 				v = e => t => ({
 					...p(t),
-					subreddit: u.ib(t, e) || null,
+					subreddit: u.jb(t, e) || null,
 					source: n.DISCOVERY_UNIT,
 					action: o.c.CLICK,
 					noun: r.HEADER_SUBREDDIT
 				}),
 				O = e => t => ({
 					...p(t),
-					subreddit: u.ib(t, e) || null,
+					subreddit: u.jb(t, e) || null,
 					source: n.DISCOVERY_UNIT,
 					action: o.c.CLICK,
 					noun: r.HEADER_SUBREDDIT_SUBSCRIBE
 				}),
 				y = e => t => ({
 					...p(t),
-					subreddit: u.ib(t, e) || null,
+					subreddit: u.jb(t, e) || null,
 					source: n.DISCOVERY_UNIT,
 					action: o.c.CLICK,
 					noun: r.HEADER_SUBREDDIT_UNSUBSCRIBE
@@ -8544,7 +8544,7 @@
 					source: n.COMMUNITY_WIDGETS,
 					action: o.c.CLICK,
 					noun: r.SEE_MORE,
-					widget: Object(i.ub)(s, {
+					widget: Object(i.vb)(s, {
 						subredditId: e,
 						widgetKind: t
 					}),
@@ -8555,7 +8555,7 @@
 					action: o.c.CLICK,
 					noun: r.REREDDIT_PROMO,
 					post: i.I(s, e),
-					subreddit: i.hb(s),
+					subreddit: i.ib(s),
 					...t && {
 						banner: {
 							buttonText: t,
@@ -9520,10 +9520,10 @@
 				o = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = s("./src/reddit/selectors/posts.ts");
 			const a = e => Object(o.c)(e, {
-					experimentName: n.ie,
+					experimentName: n.ke,
 					experimentEligibilitySelector: o.a
 				}),
-				c = (e, t) => t === n.qe.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				c = (e, t) => t === n.se.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				d = Object(r.a)(i.H, a, (e, t) => c(e, t));
 			Object(r.a)((e, t) => t, a, (e, t) => c(e, t))
 		},
@@ -9550,12 +9550,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: r.Ie
+						experimentName: r.Ke
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === r.Oe.SmIcon || t === r.Oe.SmIconHc
+					return t === r.Qe.SmIcon || t === r.Qe.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -9590,4 +9590,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.27ca357fda1be0344779.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.220b85a5e21e17acf4e0.js.map
