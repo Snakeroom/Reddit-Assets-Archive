@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.0a803f60b38bf5d10a8e.js
-// Retrieved at 1/5/2022, 10:10:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.dcc4a6a794fcd0bcd319.js
+// Retrieved at 1/5/2022, 2:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileFollowersPage", "ProfileFollowersAction"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -4700,9 +4700,7 @@
 					className: Object(l.a)(_.a.communityCta, _.a.smallLoadingIcon),
 					sizePx: 12
 				}) : i.a.createElement(f.t, {
-					className: Object(l.a)(_.a.communityCta, {
-						[_.a.showOnHover]: e.showTertiaryButtonOnHover
-					}),
+					className: _.a.communityCta,
 					disabled: e.buttonDisabled,
 					onClick: () => e.onTertiaryButtonClick(e)
 				}, e.tertiaryButtonText) : e.widget ? i.a.createElement(p, {
@@ -4752,7 +4750,6 @@
 				communityItemContainer: "_3NFddqqrzfM8noBES52Qcy",
 				communityCta: "_1edkK552-3m7bXOdDxtLx_",
 				smallLoadingIcon: "_32ZA09sNmrGEXkOPMOCLst",
-				showOnHover: "_1kul3JsqY5kjVe9kzGy4bV",
 				communityItemExpandCenter: "oP8RhN61VEXVL8e6SIxK_",
 				communityDescriptionContainer: "_3jEbHrUmHtMsZcfN-z_GpD",
 				communityDescription: "_2IANzA2n-6eA5T8Tz0TEVE",
@@ -6686,4 +6683,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.0a803f60b38bf5d10a8e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.dcc4a6a794fcd0bcd319.js.map
