@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.ad5e6ad9b0bcf9362699.js
-// Retrieved at 1/4/2022, 10:50:11 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.476e4ab868a2047398e9.js
+// Retrieved at 1/5/2022, 10:10:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["TopWeekPostsDiscoveryUnit"], {
 		"./src/lib/getShortenedLink.ts": function(e, t, s) {
@@ -31,7 +31,7 @@
 			}));
 			var a = s("./node_modules/fbt/lib/FbtPublic.js"),
 				n = s("./src/lib/constants/index.ts");
-			const r = [n.oc, n.pb, n.B, n.Q, n.kb, n.Rb],
+			const r = [n.pc, n.pb, n.B, n.Q, n.kb, n.Rb],
 				i = {
 					[n.Rb]: e => a.fbt._({
 						"*": "{number} seconds",
@@ -63,7 +63,7 @@
 					}, [a.fbt._plural(e, "number")], {
 						hk: "28DQqD"
 					}),
-					[n.oc]: e => a.fbt._({
+					[n.pc]: e => a.fbt._({
 						"*": "{number} years",
 						_1: "1 year"
 					}, [a.fbt._plural(e, "number")], {
@@ -86,13 +86,13 @@
 					[n.pb]: e => a.fbt._("{amount}m", [a.fbt._param("amount", String(e))], {
 						hk: "28feBj"
 					}),
-					[n.oc]: e => a.fbt._("{amount}y", [a.fbt._param("amount", String(e))], {
+					[n.pc]: e => a.fbt._("{amount}y", [a.fbt._param("amount", String(e))], {
 						hk: "10bv8G"
 					}),
 					[n.pb]: e => a.fbt._("{amount}m", [a.fbt._param("amount", String(e))], {
 						hk: "28feBj"
 					}),
-					[n.oc]: e => a.fbt._("{amount}y", [a.fbt._param("amount", String(e))], {
+					[n.pc]: e => a.fbt._("{amount}y", [a.fbt._param("amount", String(e))], {
 						hk: "10bv8G"
 					})
 				};
@@ -101,7 +101,7 @@
 				const c = Date.now(),
 					l = new Date(e).getTime(),
 					d = {
-						[n.oc]: "",
+						[n.pc]: "",
 						[n.pb]: "",
 						[n.B]: "",
 						[n.Q]: "",
@@ -1634,7 +1634,7 @@
 						subreddit: s
 					} = e, {
 						isSponsored: a
-					} = t, n = Object(i.d)(), o = Object(H.a)(), c = Object(V.a)(u.fd) === u.md.Enabled, d = Object(i.e)(W.b), m = e => {
+					} = t, n = Object(i.d)(), o = Object(H.a)(), c = Object(V.a)(u.dd) === u.kd.Enabled, d = Object(i.e)(W.b), m = e => {
 						!d || t.media && Object(P.H)(t.media) || (e.preventDefault(), n(Object(f.ab)(Object(C.b)(t.permalink), t.id)))
 					};
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return r.a.createElement(Z, {
@@ -2255,4 +2255,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.ad5e6ad9b0bcf9362699.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.476e4ab868a2047398e9.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.24aa91a682d2022dbdd4.js
-// Retrieved at 1/4/2022, 10:50:11 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.818cf4b4db3fdaa68163.js
+// Retrieved at 1/5/2022, 10:10:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit", "reddit-components-BlankPost"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -566,7 +566,7 @@
 			}));
 			var s = r("./node_modules/fbt/lib/FbtPublic.js"),
 				n = r("./src/lib/constants/index.ts");
-			const a = [n.oc, n.pb, n.B, n.Q, n.kb, n.Rb],
+			const a = [n.pc, n.pb, n.B, n.Q, n.kb, n.Rb],
 				c = {
 					[n.Rb]: e => s.fbt._({
 						"*": "{number} seconds",
@@ -598,7 +598,7 @@
 					}, [s.fbt._plural(e, "number")], {
 						hk: "28DQqD"
 					}),
-					[n.oc]: e => s.fbt._({
+					[n.pc]: e => s.fbt._({
 						"*": "{number} years",
 						_1: "1 year"
 					}, [s.fbt._plural(e, "number")], {
@@ -621,13 +621,13 @@
 					[n.pb]: e => s.fbt._("{amount}m", [s.fbt._param("amount", String(e))], {
 						hk: "28feBj"
 					}),
-					[n.oc]: e => s.fbt._("{amount}y", [s.fbt._param("amount", String(e))], {
+					[n.pc]: e => s.fbt._("{amount}y", [s.fbt._param("amount", String(e))], {
 						hk: "10bv8G"
 					}),
 					[n.pb]: e => s.fbt._("{amount}m", [s.fbt._param("amount", String(e))], {
 						hk: "28feBj"
 					}),
-					[n.oc]: e => s.fbt._("{amount}y", [s.fbt._param("amount", String(e))], {
+					[n.pc]: e => s.fbt._("{amount}y", [s.fbt._param("amount", String(e))], {
 						hk: "10bv8G"
 					})
 				};
@@ -636,7 +636,7 @@
 				const d = Date.now(),
 					i = new Date(e).getTime(),
 					u = {
-						[n.oc]: "",
+						[n.pc]: "",
 						[n.pb]: "",
 						[n.B]: "",
 						[n.Q]: "",
@@ -3240,7 +3240,7 @@
 										benefit: S.a.HdVideo
 									}),
 									l = o ? 2 * c.fb : c.fb;
-								if (t.size > l) return k(c.lc);
+								if (t.size > l) return k(c.mc);
 								let p;
 								try {
 									p = await Object(O.h)(d, !0)
@@ -4021,7 +4021,7 @@
 			const T = e => g.d.reCaptchaEnterprise(e) && !Object(v.d)(e),
 				D = e => !!Object(j.c)(e, {
 					experimentEligibilitySelector: Object(S.d)(Object(S.b)(...a.d)),
-					experimentName: b.ue
+					experimentName: b.se
 				}),
 				w = Object(s.b)("LOAD_RECAPTCHA_ENTERPRISE"),
 				P = Object(s.b)("EXECUTE_RECAPTCHA_ENTERPRISE"),
@@ -4901,7 +4901,7 @@
 								postFieldValidationPending: Promise.resolve()
 							})), Object(l.b)(w)
 						}
-						await t(Object(s.b)(`${r.path}`)), f ? f === p.Xd.NewModule && t(Object(i.h)({
+						await t(Object(s.b)(`${r.path}`)), f ? f === p.Vd.NewModule && t(Object(i.h)({
 							tooltipId: u.MOD_WELCOME_TOOLTIP_ID
 						})) : (t(Object(o.h)(b.a.POST_FLOW_UPSELL_MODAL_ID)), Object(T.a)(Object(g.g)()(h))), Object(I.b)(I.a.SubredditCreation)
 					} else P.error && Object(T.a)(Object(g.h)(P.error.type, E)(h)), t(k({
@@ -6033,7 +6033,7 @@
 						subreddit: r
 					} = e, {
 						isSponsored: s
-					} = t, n = Object(c.d)(), o = Object(q.a)(), d = Object(V.a)(p.fd) === p.md.Enabled, u = Object(c.e)(U.b), l = e => {
+					} = t, n = Object(c.d)(), o = Object(q.a)(), d = Object(V.a)(p.dd) === p.kd.Enabled, u = Object(c.e)(U.b), l = e => {
 						!u || t.media && Object(S.H)(t.media) || (e.preventDefault(), n(Object(O.ab)(Object(h.b)(t.permalink), t.id)))
 					};
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return a.a.createElement(z, {
@@ -11519,7 +11519,7 @@
 					case Pr.e: {
 						const {
 							profileName: r
-						} = t.payload, s = Ce.hc + r.toLocaleLowerCase(), n = Object(vr.a)(e, s) || {}, a = {
+						} = t.payload, s = Ce.ic + r.toLocaleLowerCase(), n = Object(vr.a)(e, s) || {}, a = {
 							profileDeleted: t.type === Pr.d,
 							profileSuspended: t.type === Pr.e,
 							profileBlockedForLegalReason: t.type === Pr.c
@@ -14598,7 +14598,7 @@
 							key: r,
 							type: s
 						} = t.payload;
-						return -1 === s.indexOf(Ce.Zb.Users) ? e : {
+						return -1 === s.indexOf(Ce.ac.Users) ? e : {
 							...e,
 							[r]: null
 						}
@@ -14611,7 +14611,7 @@
 							success: n,
 							type: a
 						} = t.payload;
-						return -1 === a.indexOf(Ce.Zb.Users) || n && n.authors ? e : {
+						return -1 === a.indexOf(Ce.ac.Users) || n && n.authors ? e : {
 							...e,
 							[r]: s
 						}
@@ -14629,7 +14629,7 @@
 								key: r,
 								type: s
 							} = t.payload;
-							return -1 === s.indexOf(Ce.Zb.Users) ? e : {
+							return -1 === s.indexOf(Ce.ac.Users) ? e : {
 								...e,
 								[r]: !0
 							}
@@ -14642,7 +14642,7 @@
 								key: r,
 								type: s
 							} = t.payload;
-							return -1 === s.indexOf(Ce.Zb.Users) ? e : {
+							return -1 === s.indexOf(Ce.ac.Users) ? e : {
 								...e,
 								[r]: !1
 							}
@@ -14664,7 +14664,7 @@
 							key: s,
 							type: n
 						} = t.payload;
-						if (-1 === n.indexOf(Ce.Zb.Users)) return e;
+						if (-1 === n.indexOf(Ce.ac.Users)) return e;
 						const a = e[s];
 						return {
 							...e,
@@ -14687,7 +14687,7 @@
 							authorOrder: s,
 							type: n
 						} = t.payload;
-						return -1 !== n.indexOf(Ce.Zb.Users) && e[r] ? {
+						return -1 !== n.indexOf(Ce.ac.Users) && e[r] ? {
 							...e,
 							[r]: e[r].concat(s)
 						} : e
@@ -14698,7 +14698,7 @@
 							authorOrder: s,
 							type: n
 						} = t.payload;
-						return -1 === n.indexOf(Ce.Zb.Users) ? e : {
+						return -1 === n.indexOf(Ce.ac.Users) ? e : {
 							...e,
 							[r]: s
 						}
@@ -14717,7 +14717,7 @@
 								tokens: s,
 								type: n
 							} = t.payload;
-							return -1 === n.indexOf(Ce.Zb.Users) ? e : s.authors ? {
+							return -1 === n.indexOf(Ce.ac.Users) ? e : s.authors ? {
 								...e,
 								[r]: {
 									token: null
@@ -14745,7 +14745,7 @@
 							key: r,
 							type: s
 						} = t.payload;
-						return -1 === s.indexOf(Ce.Zb.Subreddits) ? e : {
+						return -1 === s.indexOf(Ce.ac.Subreddits) ? e : {
 							...e,
 							[r]: null
 						}
@@ -14758,7 +14758,7 @@
 							success: n,
 							type: a
 						} = t.payload;
-						return -1 === a.indexOf(Ce.Zb.Subreddits) || n && n.communities ? e : {
+						return -1 === a.indexOf(Ce.ac.Subreddits) || n && n.communities ? e : {
 							...e,
 							[r]: s
 						}
@@ -14776,7 +14776,7 @@
 								key: r,
 								type: s
 							} = t.payload;
-							return -1 === s.indexOf(Ce.Zb.Subreddits) ? e : {
+							return -1 === s.indexOf(Ce.ac.Subreddits) ? e : {
 								...e,
 								[r]: !0
 							}
@@ -14789,7 +14789,7 @@
 								key: r,
 								type: s
 							} = t.payload;
-							return -1 === s.indexOf(Ce.Zb.Subreddits) ? e : {
+							return -1 === s.indexOf(Ce.ac.Subreddits) ? e : {
 								...e,
 								[r]: !1
 							}
@@ -14811,7 +14811,7 @@
 							key: s,
 							type: n
 						} = t.payload;
-						if (-1 === n.indexOf(Ce.Zb.Subreddits)) return e;
+						if (-1 === n.indexOf(Ce.ac.Subreddits)) return e;
 						const a = e[s];
 						return {
 							...e,
@@ -14834,7 +14834,7 @@
 							communityOrder: s,
 							type: n
 						} = t.payload;
-						return -1 !== n.indexOf(Ce.Zb.Subreddits) && e[r] ? {
+						return -1 !== n.indexOf(Ce.ac.Subreddits) && e[r] ? {
 							...e,
 							[r]: e[r].concat(s)
 						} : e
@@ -14845,7 +14845,7 @@
 							communityOrder: s,
 							type: n
 						} = t.payload;
-						return -1 === n.indexOf(Ce.Zb.Subreddits) ? e : {
+						return -1 === n.indexOf(Ce.ac.Subreddits) ? e : {
 							...e,
 							[r]: s
 						}
@@ -14864,7 +14864,7 @@
 								tokens: s,
 								type: n
 							} = t.payload;
-							return -1 === n.indexOf(Ce.Zb.Subreddits) ? e : s.communities ? {
+							return -1 === n.indexOf(Ce.ac.Subreddits) ? e : s.communities ? {
 								...e,
 								[r]: {
 									token: s.communities
@@ -14892,7 +14892,7 @@
 							key: r,
 							type: s
 						} = t.payload;
-						return -1 === s.indexOf(Ce.Zb.Subreddits) && -1 === s.indexOf(Ce.Zb.Users) ? e : {
+						return -1 === s.indexOf(Ce.ac.Subreddits) && -1 === s.indexOf(Ce.ac.Users) ? e : {
 							...e,
 							[r]: null
 						}
@@ -14904,7 +14904,7 @@
 							error: s,
 							type: n
 						} = t.payload;
-						return -1 === n.indexOf(Ce.Zb.Subreddits) && -1 === n.indexOf(Ce.Zb.Users) ? e : {
+						return -1 === n.indexOf(Ce.ac.Subreddits) && -1 === n.indexOf(Ce.ac.Users) ? e : {
 							...e,
 							[r]: s
 						}
@@ -14942,7 +14942,7 @@
 								key: r,
 								type: s
 							} = t.payload;
-							return -1 === s.indexOf(Ce.Zb.Subreddits) && -1 === s.indexOf(Ce.Zb.Users) ? e : {
+							return -1 === s.indexOf(Ce.ac.Subreddits) && -1 === s.indexOf(Ce.ac.Users) ? e : {
 								...e,
 								[r]: !0
 							}
@@ -14955,7 +14955,7 @@
 								key: r,
 								type: s
 							} = t.payload;
-							return -1 === s.indexOf(Ce.Zb.Subreddits) && -1 === s.indexOf(Ce.Zb.Users) ? e : {
+							return -1 === s.indexOf(Ce.ac.Subreddits) && -1 === s.indexOf(Ce.ac.Users) ? e : {
 								...e,
 								[r]: !1
 							}
@@ -14996,7 +14996,7 @@
 							key: s,
 							type: n
 						} = t.payload;
-						if (-1 === n.indexOf(Ce.Zb.Subreddits) && -1 === n.indexOf(Ce.Zb.Users)) return e;
+						if (-1 === n.indexOf(Ce.ac.Subreddits) && -1 === n.indexOf(Ce.ac.Users)) return e;
 						const a = e[s];
 						return {
 							...e,
@@ -15032,7 +15032,7 @@
 							listingOrder: s,
 							type: n
 						} = t.payload;
-						return -1 === n.indexOf(Ce.Zb.Subreddits) && -1 === n.indexOf(Ce.Zb.Users) ? e : {
+						return -1 === n.indexOf(Ce.ac.Subreddits) && -1 === n.indexOf(Ce.ac.Users) ? e : {
 							...e,
 							[r]: e[r].concat(s)
 						}
@@ -15043,7 +15043,7 @@
 							listingOrder: s,
 							type: n
 						} = t.payload;
-						return -1 === n.indexOf(Ce.Zb.Subreddits) && -1 === n.indexOf(Ce.Zb.Users) ? e : {
+						return -1 === n.indexOf(Ce.ac.Subreddits) && -1 === n.indexOf(Ce.ac.Users) ? e : {
 							...e,
 							[r]: s
 						}
@@ -15062,7 +15062,7 @@
 								tokens: s,
 								type: n
 							} = t.payload;
-							return -1 === n.indexOf(Ce.Zb.Subreddits) && -1 === n.indexOf(Ce.Zb.Users) ? e : s.listings ? {
+							return -1 === n.indexOf(Ce.ac.Subreddits) && -1 === n.indexOf(Ce.ac.Users) ? e : s.listings ? {
 								...e,
 								[r]: {
 									token: s.listings
@@ -15146,7 +15146,7 @@
 								key: r,
 								type: s
 							} = t.payload;
-							return -1 === s.indexOf(Ce.Zb.Posts) ? e : {
+							return -1 === s.indexOf(Ce.ac.Posts) ? e : {
 								...e,
 								[r]: null
 							}
@@ -15183,7 +15183,7 @@
 								success: n,
 								type: a
 							} = t.payload;
-							return -1 === a.indexOf(Ce.Zb.Posts) || n && n.posts ? e : {
+							return -1 === a.indexOf(Ce.ac.Posts) || n && n.posts ? e : {
 								...e,
 								[s]: r
 							}
@@ -15227,7 +15227,7 @@
 								key: r,
 								type: s
 							} = t.payload;
-							return -1 === s.indexOf(Ce.Zb.Posts) ? e : {
+							return -1 === s.indexOf(Ce.ac.Posts) ? e : {
 								...e,
 								[r]: !0
 							}
@@ -15295,7 +15295,7 @@
 								key: r,
 								type: s
 							} = t.payload;
-							return -1 === s.indexOf(Ce.Zb.Posts) ? e : {
+							return -1 === s.indexOf(Ce.ac.Posts) ? e : {
 								...e,
 								[r]: !1
 							}
@@ -15400,7 +15400,7 @@
 								key: s,
 								type: n
 							} = t.payload;
-							if (n.indexOf(Ce.Zb.Posts) > -1) {
+							if (n.indexOf(Ce.ac.Posts) > -1) {
 								const t = e[s];
 								return {
 									...e,
@@ -15496,7 +15496,7 @@
 								postOrder: s,
 								type: n
 							} = t.payload;
-							return -1 === n.indexOf(Ce.Zb.Posts) ? e : {
+							return -1 === n.indexOf(Ce.ac.Posts) ? e : {
 								...e,
 								[r]: s
 							}
@@ -15507,7 +15507,7 @@
 								postOrder: s,
 								type: n
 							} = t.payload;
-							return -1 === n.indexOf(Ce.Zb.Posts) ? e : {
+							return -1 === n.indexOf(Ce.ac.Posts) ? e : {
 								...e,
 								[r]: e[r].concat(s)
 							}
@@ -15598,7 +15598,7 @@
 							tokens: s,
 							type: n
 						} = t.payload;
-						return -1 === n.indexOf(Ce.Zb.Posts) ? e : s.posts ? {
+						return -1 === n.indexOf(Ce.ac.Posts) ? e : s.posts ? {
 							...e,
 							[r]: {
 								token: s.posts
@@ -26632,7 +26632,7 @@
 				l = e => e === n.V.OnetapAuto,
 				p = e => e.user.googleOneTapEnabled,
 				b = Object(s.a)(o.K, i, (e, t) => !e && !!t),
-				f = Object(s.a)(o.K, i, (e, t) => !e && !!t && !Object(n.jf)(t))
+				f = Object(s.a)(o.K, i, (e, t) => !e && !!t && !Object(n.hf)(t))
 		},
 		"./src/reddit/selectors/moderatingComments.ts": function(e, t, r) {
 			"use strict";
@@ -26911,4 +26911,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.24aa91a682d2022dbdd4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.818cf4b4db3fdaa68163.js.map

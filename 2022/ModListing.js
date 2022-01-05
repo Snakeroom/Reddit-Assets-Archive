@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.4fab1b350e50f69ea468.js
-// Retrieved at 1/4/2022, 10:50:11 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.e6bbcd9447d06825ce24.js
+// Retrieved at 1/5/2022, 10:10:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -652,7 +652,7 @@
 
 			function U(e) {
 				const t = p.B in e && e[p.B].toUpperCase() || "";
-				return t in i.fc && i.fc[t]
+				return t in i.gc && i.gc[t]
 			}
 			const q = Object(a.a)(N.c),
 				K = Object(a.a)(N.b),
@@ -2257,7 +2257,7 @@
 							subredditName: t.subredditName
 						});
 						if (!r) {
-							const r = (e => e.startsWith(c.hc) ? e.slice(2) : e)(t.subredditName);
+							const r = (e => e.startsWith(c.ic) ? e.slice(2) : e)(t.subredditName);
 							return r && Object(re.j)(e, {
 								profileName: r
 							}) || null
@@ -2380,7 +2380,7 @@
 				}) => Object(q.d)(t.path), Se.j, Se.d, (e, t, r, s, o) => {
 					const i = n()([...Object(u.a)(e)]),
 						a = Ee.B in i && i[Ee.B].toUpperCase(),
-						d = "string" == typeof a && a in c.fc ? c.fc[a] : c.gc,
+						d = "string" == typeof a && a in c.gc ? c.gc[a] : c.hc,
 						p = r ? Ie.f : Ie.e;
 					return {
 						filtered: r,
@@ -4220,14 +4220,14 @@
 			var s = r("./src/reddit/constants/experiments.ts"),
 				n = r("./src/reddit/helpers/chooseVariant/index.ts");
 			const o = e => Object(n.c)(e, {
-					experimentName: s.Md,
+					experimentName: s.Kd,
 					experimentEligibilitySelector: n.a
-				}) === s.Vd.Enabled,
+				}) === s.Td.Enabled,
 				i = e => Object(n.c)(e, {
-					experimentName: s.Nd,
+					experimentName: s.Ld,
 					experimentEligibilitySelector: n.a,
 					expEventOverride: !1
-				}) === s.Wd.Enabled
+				}) === s.Ud.Enabled
 		},
 		"./src/reddit/selectors/gold/powerups/modSignup.ts": function(e, t, r) {
 			"use strict";
@@ -4324,4 +4324,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.4fab1b350e50f69ea468.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.e6bbcd9447d06825ce24.js.map

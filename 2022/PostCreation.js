@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.57664fc42914b34dd8a3.js
-// Retrieved at 1/4/2022, 10:50:11 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.94acbea838e6e2a7f4df.js
+// Retrieved at 1/5/2022, 10:10:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -871,7 +871,7 @@
 			}));
 			var o = n("./node_modules/fbt/lib/FbtPublic.js"),
 				s = n("./src/lib/constants/index.ts");
-			const r = [s.oc, s.pb, s.B, s.Q, s.kb, s.Rb],
+			const r = [s.pc, s.pb, s.B, s.Q, s.kb, s.Rb],
 				a = {
 					[s.Rb]: e => o.fbt._({
 						"*": "{number} seconds",
@@ -903,7 +903,7 @@
 					}, [o.fbt._plural(e, "number")], {
 						hk: "28DQqD"
 					}),
-					[s.oc]: e => o.fbt._({
+					[s.pc]: e => o.fbt._({
 						"*": "{number} years",
 						_1: "1 year"
 					}, [o.fbt._plural(e, "number")], {
@@ -926,13 +926,13 @@
 					[s.pb]: e => o.fbt._("{amount}m", [o.fbt._param("amount", String(e))], {
 						hk: "28feBj"
 					}),
-					[s.oc]: e => o.fbt._("{amount}y", [o.fbt._param("amount", String(e))], {
+					[s.pc]: e => o.fbt._("{amount}y", [o.fbt._param("amount", String(e))], {
 						hk: "10bv8G"
 					}),
 					[s.pb]: e => o.fbt._("{amount}m", [o.fbt._param("amount", String(e))], {
 						hk: "28feBj"
 					}),
-					[s.oc]: e => o.fbt._("{amount}y", [o.fbt._param("amount", String(e))], {
+					[s.pc]: e => o.fbt._("{amount}y", [o.fbt._param("amount", String(e))], {
 						hk: "10bv8G"
 					})
 				};
@@ -941,7 +941,7 @@
 				const c = Date.now(),
 					d = new Date(e).getTime(),
 					l = {
-						[s.oc]: "",
+						[s.pc]: "",
 						[s.pb]: "",
 						[s.B]: "",
 						[s.Q]: "",
@@ -3057,7 +3057,7 @@
 										benefit: O.a.HdVideo
 									}),
 									u = i ? 2 * a.fb : a.fb;
-								if (t.size > u) return D(a.lc);
+								if (t.size > u) return D(a.mc);
 								let m;
 								try {
 									m = await Object(g.h)(c, !0)
@@ -9969,7 +9969,7 @@
 						subreddit: n
 					} = e, {
 						isSponsored: o
-					} = t, s = Object(a.d)(), i = Object(V.a)(), c = Object(z.a)(m.fd) === m.md.Enabled, l = Object(a.e)(A.b), u = e => {
+					} = t, s = Object(a.d)(), i = Object(V.a)(), c = Object(z.a)(m.dd) === m.kd.Enabled, l = Object(a.e)(A.b), u = e => {
 						!l || t.media && Object(O.H)(t.media) || (e.preventDefault(), s(Object(g.ab)(Object(x.b)(t.permalink), t.id)))
 					};
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return r.a.createElement(Y, {
@@ -15247,7 +15247,7 @@
 								experimentName: r.I,
 								expEventOverride: t
 							});
-							return !!(Object(r.jf)(n) ? void 0 : n)
+							return !!(Object(r.hf)(n) ? void 0 : n)
 						})(n)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -25971,14 +25971,14 @@
 			var o = n("./src/reddit/constants/experiments.ts"),
 				s = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const r = e => Object(s.c)(e, {
-					experimentName: o.Md,
+					experimentName: o.Kd,
 					experimentEligibilitySelector: s.a
-				}) === o.Vd.Enabled,
+				}) === o.Td.Enabled,
 				a = e => Object(s.c)(e, {
-					experimentName: o.Nd,
+					experimentName: o.Ld,
 					experimentEligibilitySelector: s.a,
 					expEventOverride: !1
-				}) === o.Wd.Enabled
+				}) === o.Ud.Enabled
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, n) {
 			"use strict";
@@ -26468,4 +26468,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.57664fc42914b34dd8a3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.94acbea838e6e2a7f4df.js.map

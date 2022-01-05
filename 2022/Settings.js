@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.f49ab77c7f76db34fe69.js
-// Retrieved at 1/4/2022, 3:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.679781eed68917ad3190.js
+// Retrieved at 1/5/2022, 10:10:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -1572,11 +1572,11 @@
 					if (!Object(y.K)(e)) return Object(L.a)(t, e)
 				}
 				const {
-					page: v = r.ac.Account
+					page: v = r.bc.Account
 				} = e.params;
-				if (v === r.ac.Gold) return void t(Object(a.c)("/settings/premium"));
+				if (v === r.bc.Gold) return void t(Object(a.c)("/settings/premium"));
 				const _ = [];
-				v === r.ac.Profile && (_.push(t(Object(P.a)())), _.push(t(Object(I.g)()))), v === r.ac.Account && (_.push(t(Object(b.o)())), _.push(t(Object(d.b)()))), v === r.ac.Notifications && _.push(t(O())), v !== r.ac.Privacy && v !== r.ac.Messaging || _.push(t(Object(l.b)())), v === r.ac.Premium && (_.push(t(Object(P.a)())), _.push(t(Object(h.o)(!0)))), await Promise.all(_); {
+				v === r.bc.Profile && (_.push(t(Object(P.a)())), _.push(t(Object(I.g)()))), v === r.bc.Account && (_.push(t(Object(b.o)())), _.push(t(Object(d.b)()))), v === r.bc.Notifications && _.push(t(O())), v !== r.bc.Privacy && v !== r.bc.Messaging || _.push(t(Object(l.b)())), v === r.bc.Premium && (_.push(t(Object(P.a)())), _.push(t(Object(h.o)(!0)))), await Promise.all(_); {
 					const e = n(),
 						r = e.platform.currentPage,
 						{
@@ -7657,22 +7657,22 @@
 					return t && t() || ""
 				},
 				i = {
-					[a.fc.HOUR]: () => s.fbt._("Now", null, {
+					[a.gc.HOUR]: () => s.fbt._("Now", null, {
 						hk: "ZmhY"
 					}),
-					[a.fc.DAY]: () => s.fbt._("Today", null, {
+					[a.gc.DAY]: () => s.fbt._("Today", null, {
 						hk: "40Ugu1"
 					}),
-					[a.fc.WEEK]: () => s.fbt._("This Week", null, {
+					[a.gc.WEEK]: () => s.fbt._("This Week", null, {
 						hk: "14tmoK"
 					}),
-					[a.fc.MONTH]: () => s.fbt._("This Month", null, {
+					[a.gc.MONTH]: () => s.fbt._("This Month", null, {
 						hk: "34dbM3"
 					}),
-					[a.fc.YEAR]: () => s.fbt._("This Year", null, {
+					[a.gc.YEAR]: () => s.fbt._("This Year", null, {
 						hk: "14RJsa"
 					}),
-					[a.fc.ALL]: () => s.fbt._("All Time", null, {
+					[a.gc.ALL]: () => s.fbt._("All Time", null, {
 						hk: "3qt6Ct"
 					})
 				},
@@ -11389,7 +11389,7 @@
 					selectedKey: e.sort
 				})
 			};
-			const zn = [u.fc.HOUR, u.fc.DAY, u.fc.WEEK, u.fc.MONTH, u.fc.YEAR, u.fc.ALL];
+			const zn = [u.gc.HOUR, u.gc.DAY, u.gc.WEEK, u.gc.MONTH, u.gc.YEAR, u.gc.ALL];
 			var Kn = e => {
 					const {
 						dropdownId: t
@@ -12993,59 +12993,59 @@
 				Hr = n("./src/reddit/pages/Settings/index.m.less"),
 				Wr = n.n(Hr);
 			const zr = (e, t, n) => [{
-					key: u.ac.Account,
+					key: u.bc.Account,
 					title: s.fbt._("Account", null, {
 						hk: "kL0Ow"
 					})
 				}, {
-					key: u.ac.Profile,
+					key: u.bc.Profile,
 					title: s.fbt._("Profile", null, {
 						hk: "4AiObW"
 					})
 				}, {
-					key: u.ac.Privacy,
+					key: u.bc.Privacy,
 					title: s.fbt._("Safety & Privacy", null, {
 						hk: "4hchEz"
 					})
 				}, {
-					key: u.ac.Feed,
+					key: u.bc.Feed,
 					title: s.fbt._("Feed Settings", null, {
 						hk: "4Giq2p"
 					})
 				}, {
-					key: u.ac.Notifications,
+					key: u.bc.Notifications,
 					title: s.fbt._("Notifications", null, {
 						hk: "fklVW"
 					})
 				}, {
-					key: u.ac.Premium,
+					key: u.bc.Premium,
 					title: s.fbt._("Subscriptions", null, {
 						hk: "48xste"
 					})
 				}, {
 					className: Wr.a.CreatorTab,
-					key: u.ac.Creator,
+					key: u.bc.Creator,
 					title: s.fbt._("Reddit Creator", null, {
 						hk: "45BriY"
 					}),
 					disabled: !e
 				}, {
 					className: Wr.a.PaymentsTab,
-					key: u.ac.Payments,
+					key: u.bc.Payments,
 					title: s.fbt._("Payments", null, {
 						hk: "31LCer"
 					}),
 					disabled: !n.length
 				}, {
 					className: Wr.a.SpecialMembershipTab,
-					key: u.ac.SpecialMembership,
+					key: u.bc.SpecialMembership,
 					title: s.fbt._("Special Memberships", null, {
 						hk: "3ZoNj3"
 					}),
 					disabled: !t
 				}, {
 					className: Wr.a.MessagingTab,
-					key: u.ac.Messaging,
+					key: u.bc.Messaging,
 					title: s.fbt._("Chat & Messaging", null, {
 						hk: "3uLoYZ"
 					})
@@ -13145,7 +13145,7 @@
 						}))
 					}, this.getSource = () => {
 						const e = this.props.match.params.page;
-						return e && e !== u.ac.Account ? `settings_${e}` : "settings"
+						return e && e !== u.bc.Account ? `settings_${e}` : "settings"
 					}, this.getTrackingValue = (e, t, n = !1) => {
 						const s = n ? this.props.prefs[e] : t;
 						return "boolean" == typeof s ? ["emailUnsubscribe", "hideFromRobots"].includes(e) ? !0 === s ? "off" : "on" : !0 === s ? "on" : "off" : s
@@ -13162,30 +13162,30 @@
 							update: this.update
 						};
 						switch (e) {
-							case u.ac.Account:
+							case u.bc.Account:
 								return r.a.createElement(It, i);
-							case u.ac.Profile:
+							case u.bc.Profile:
 								return r.a.createElement(Ta, i);
-							case u.ac.Premium:
+							case u.bc.Premium:
 								return r.a.createElement(Ts.b, i);
-							case u.ac.Notifications:
+							case u.bc.Notifications:
 								return r.a.createElement(vs, i);
-							case u.ac.Privacy:
+							case u.bc.Privacy:
 								return r.a.createElement(Xs, i);
-							case u.ac.Messaging:
+							case u.bc.Messaging:
 								return r.a.createElement(gn, i);
-							case u.ac.Feed:
+							case u.bc.Feed:
 								return r.a.createElement(ls, i);
-							case u.ac.Payments:
+							case u.bc.Payments:
 								return r.a.createElement(Ms, null);
-							case u.ac.Creator: {
+							case u.bc.Creator: {
 								const e = Object(p.a)(s.search);
 								return a ? r.a.createElement(Fn, {
 									stripeConnectCode: e.get("code"),
 									stripeConnectStateToken: e.get("state")
 								}) : null
 							}
-							case u.ac.SpecialMembership:
+							case u.bc.SpecialMembership:
 								return o ? r.a.createElement(Br, null) : null;
 							default:
 								return r.a.createElement(It, i)
@@ -13194,12 +13194,12 @@
 						e.preventDefault()
 					}, this.onPremiumTabClick = () => {
 						this.props.sendEvent(Object(Ur.f)())
-					}, this.getTabClickHandler = e => this.props.isResponsiveSettingsEnabled ? this.preventTabClickEvent : e === u.ac.Premium ? this.onPremiumTabClick : void 0, this.isScrolling = !1, this.resetScrolling = () => {
+					}, this.getTabClickHandler = e => this.props.isResponsiveSettingsEnabled ? this.preventTabClickEvent : e === u.bc.Premium ? this.onPremiumTabClick : void 0, this.isScrolling = !1, this.resetScrolling = () => {
 						this.isScrolling = !1
 					}, this.startScrolling = () => {
 						this.isScrolling = !0
 					}, this.tabTouchEndHandlerCache = {}, this.getTabTouchEndHandler = e => (this.tabTouchEndHandlerCache[e] || (this.tabTouchEndHandlerCache[e] = () => {
-						this.isScrolling || (e === u.ac.Premium && this.onPremiumTabClick(), this.props.changeTab(e))
+						this.isScrolling || (e === u.bc.Premium && this.onPremiumTabClick(), this.props.changeTab(e))
 					}), this.tabTouchEndHandlerCache[e]), this.tabRefCache = {}, this.getTabRef = e => (this.tabRefCache[e] || (this.tabRefCache[e] = r.a.createRef()), this.tabRefCache[e]), this.renderTab = (e, t) => {
 						const {
 							match: {
@@ -13229,7 +13229,7 @@
 						const {
 							match: {
 								params: {
-									page: e = u.ac.Account
+									page: e = u.bc.Account
 								}
 							}
 						} = this.props, t = this.tabRefCache[e];
@@ -13576,7 +13576,7 @@
 			const o = e => Object(a.c)(e, {
 				experimentName: s.E,
 				experimentEligibilitySelector: () => Object(r.J)(e)
-			}) === s.Vc
+			}) === s.Tc
 		},
 		"./src/reddit/selectors/gold/productOffers.ts": function(e, t, n) {
 			"use strict";
@@ -13730,4 +13730,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.f49ab77c7f76db34fe69.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.679781eed68917ad3190.js.map

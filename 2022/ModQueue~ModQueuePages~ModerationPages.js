@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueue~ModQueuePages~ModerationPages.f34bab20c7cb3c5da1e3.js
-// Retrieved at 1/4/2022, 10:50:11 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueue~ModQueuePages~ModerationPages.503c61dff089094324fe.js
+// Retrieved at 1/5/2022, 10:10:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueue~ModQueuePages~ModerationPages"], {
 		"./src/reddit/actions/bulkActions/index.ts": function(e, t, r) {
@@ -155,7 +155,7 @@
 						commentId: e
 					});
 					if (!c) return;
-					const i = r === a.bc.Snoozed,
+					const i = r === a.cc.Snoozed,
 						l = {
 							itemId: e,
 							reportText: t,
@@ -345,8 +345,8 @@
 					(function(e) {
 						return Object(y.c)(e, {
 							experimentEligibilitySelector: y.a,
-							experimentName: O.id
-						}) === O.Vc
+							experimentName: O.gd
+						}) === O.Tc
 					})(c()) && (async () => {
 						var e;
 						const {
@@ -2944,4 +2944,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue~ModQueuePages~ModerationPages.f34bab20c7cb3c5da1e3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue~ModQueuePages~ModerationPages.503c61dff089094324fe.js.map

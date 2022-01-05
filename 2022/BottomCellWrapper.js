@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/BottomCellWrapper.91b73ab95dc21b730574.js
-// Retrieved at 1/4/2022, 10:50:11 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/BottomCellWrapper.0debbab61a6f5a26c45e.js
+// Retrieved at 1/5/2022, 10:10:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["BottomCellWrapper", "SignupUpsell"], {
 		"./src/reddit/components/ErrorBoundary/index.tsx": function(e, t, s) {
@@ -177,11 +177,11 @@
 				});
 			var O = s("./src/reddit/hooks/promo/useIsSignupUpsellVariantEligible.ts"),
 				v = s("./src/reddit/icons/svgs/AppleLogo/index.tsx"),
-				B = s("./src/reddit/icons/svgs/Close/index.tsx"),
-				N = s("./src/reddit/icons/svgs/GoogleLogo/index.tsx"),
-				w = s("./src/reddit/selectors/experiments/signupUpsellExperiment.ts"),
-				S = s("./src/reddit/components/Upsell/SignupUpsell/index.m.less"),
-				k = s.n(S);
+				S = s("./src/reddit/icons/svgs/Close/index.tsx"),
+				B = s("./src/reddit/icons/svgs/GoogleLogo/index.tsx"),
+				N = s("./src/reddit/selectors/experiments/signupUpsellExperiment.ts"),
+				w = s("./src/reddit/components/Upsell/SignupUpsell/index.m.less"),
+				k = s.n(w);
 			const L = {
 					S: "small",
 					L: "large"
@@ -207,15 +207,15 @@
 						m(), p(Object(r.j)())
 					},
 					x = function() {
-						const e = Object(i.e)(w.b),
-							t = Object(i.e)(w.d),
-							s = Object(i.e)(w.f),
-							o = Object(O.a)(_.Tb.Bottom_sheet),
-							l = Object(O.a)(_.Tb.Bottom_cell),
-							r = Object(O.a)(_.Tb.Bottom_cell_dismissible),
-							c = Object(O.a)(_.Tb.Bottom_cell_dismissible_immediate_trigger),
-							a = Object(O.a)(_.Tb.Bottom_cell_signup_upsell_copy),
-							d = Object(O.a)(_.Tb.Bottom_cell_surprise_install_copy);
+						const e = Object(i.e)(N.b),
+							t = Object(i.e)(N.d),
+							s = Object(i.e)(N.f),
+							o = Object(O.a)(_.Sb.Bottom_sheet),
+							l = Object(O.a)(_.Sb.Bottom_cell),
+							r = Object(O.a)(_.Sb.Bottom_cell_dismissible),
+							c = Object(O.a)(_.Sb.Bottom_cell_dismissible_immediate_trigger),
+							a = Object(O.a)(_.Sb.Bottom_cell_signup_upsell_copy),
+							d = Object(O.a)(_.Sb.Bottom_cell_surprise_install_copy);
 						let u;
 						if (e) u = I;
 						else if (t) u = U;
@@ -232,9 +232,9 @@
 						if (e && d) return `${p}bottom_cell_surprise_install_copy.png`;
 						throw new Error("Invalid variant for signup upsell")
 					}(),
-					S = Object(O.a)(_.Tb.Bottom_cell_signup_upsell_copy),
-					y = Object(O.a)(_.Tb.Bottom_cell_surprise_install_copy),
-					H = S ? o.fbt._("Come join us, we have snacks", null, {
+					w = Object(O.a)(_.Sb.Bottom_cell_signup_upsell_copy),
+					y = Object(O.a)(_.Sb.Bottom_cell_surprise_install_copy),
+					H = w ? o.fbt._("Come join us, we have snacks", null, {
 						hk: "1LUl2W"
 					}) : o.fbt._("Log in or sign up for the best experience", null, {
 						hk: "2LAHQy"
@@ -258,14 +258,14 @@
 						e(), s(h())
 					},
 					type: "button"
-				}, l.createElement(B.a, null)), l.createElement("div", {
+				}, l.createElement(S.a, null)), l.createElement("div", {
 					className: k.a.title
 				}, H), l.createElement("div", {
 					className: k.a.bottom
 				}, l.createElement("div", {
 					className: k.a.left
 				}, l.createElement(b, {
-					Icon: N.a,
+					Icon: B.a,
 					onClick: () => {
 						g(), s(j(f.Google))
 					},
@@ -427,9 +427,9 @@
 					experimentName: e,
 					experimentEligibilitySelector: c,
 					throttledVariants: {
-						[o.Tb.Bottom_cell_dismissible]: e,
-						[o.Tb.Bottom_cell_dismissible_immediate_trigger]: e,
-						[o.Tb.Bottom_sheet]: e
+						[o.Sb.Bottom_cell_dismissible]: e,
+						[o.Sb.Bottom_cell_dismissible_immediate_trigger]: e,
+						[o.Sb.Bottom_sheet]: e
 					},
 					expEventOverride: t
 				})
@@ -443,4 +443,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BottomCellWrapper.91b73ab95dc21b730574.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BottomCellWrapper.0debbab61a6f5a26c45e.js.map

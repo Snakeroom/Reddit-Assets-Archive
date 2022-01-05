@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditCreation.be2e7636f3d6902b56b0.js
-// Retrieved at 1/4/2022, 10:50:11 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditCreation.0f77ed27c2be9877c5f2.js
+// Retrieved at 1/5/2022, 10:10:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditCreation"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -253,7 +253,7 @@
 			})), n.d(t, "k", (function() {
 				return X
 			})), n.d(t, "o", (function() {
-				return U
+				return Z
 			})), n.d(t, "f", (function() {
 				return $
 			})), n.d(t, "l", (function() {
@@ -384,8 +384,8 @@
 					})
 				})),
 				q = C.a.a("Link", A.a),
-				U = C.a.wrapped(q, "SubtextLink", A.a),
-				Z = C.a.wrapped(j.a, "LinkIcon", A.a),
+				Z = C.a.wrapped(q, "SubtextLink", A.a),
+				U = C.a.wrapped(j.a, "LinkIcon", A.a),
 				$ = C.a.button("LinkButton", A.a),
 				ee = C.a.wrapped(S.a, "ArrowRight", A.a),
 				te = e => s.a.createElement(X, {
@@ -494,7 +494,7 @@
 					href: e.link,
 					onClick: e.onClick,
 					target: e.openInNewTab ? "_blank" : void 0
-				}, e.label, s.a.createElement(Z, null)), s.a.createElement(Y, null, e.subtext)), s.a.createElement(z, null, s.a.createElement(q, {
+				}, e.label, s.a.createElement(U, null)), s.a.createElement(Y, null, e.subtext)), s.a.createElement(z, null, s.a.createElement(q, {
 					href: e.link,
 					onClick: e.onClick,
 					target: e.openInNewTab ? "_blank" : void 0
@@ -955,8 +955,8 @@
 			const z = 21,
 				X = "create-title-info",
 				q = Q.a.wrapped(R.a, "Info", K.a),
-				U = Q.a.wrapped(k.a, "RadioOption", K.a),
-				Z = Q.a.wrapped(h.c, "Tooltip", K.a),
+				Z = Q.a.wrapped(k.a, "RadioOption", K.a),
+				U = Q.a.wrapped(h.c, "Tooltip", K.a),
 				$ = Q.a.wrapped(L.a, "Public", K.a),
 				ee = Q.a.wrapped(D.a, "Restricted", K.a),
 				te = Q.a.wrapped(B.a, "Private", K.a),
@@ -986,7 +986,7 @@
 					onHideTooltip: () => e(Object(u.i)()),
 					validateSubredditName: t => e(Object(m.i)(t))
 				})),
-				oe = (e, t) => [r.a.createElement(U, {
+				oe = (e, t) => [r.a.createElement(Z, {
 					key: "public",
 					showButton: !0,
 					value: "public"
@@ -1002,7 +1002,7 @@
 					className: Object(c.a)(K.a.metafieldDescription, K.a.radioDescription)
 				}, a.fbt._("Anyone can view, post, and comment to this community", null, {
 					hk: "1PfFUA"
-				}))))), r.a.createElement(U, {
+				}))))), r.a.createElement(Z, {
 					key: "restricted",
 					showButton: !0,
 					value: "restricted"
@@ -1016,7 +1016,7 @@
 					hk: "1iBTDq"
 				})), r.a.createElement("div", {
 					className: Object(c.a)(K.a.metafieldDescription, K.a.radioDescription)
-				}, Object(P.g)(t))))), r.a.createElement(U, {
+				}, Object(P.g)(t))))), r.a.createElement(Z, {
 					key: "private",
 					showButton: !0,
 					value: "private"
@@ -1032,7 +1032,7 @@
 					className: Object(c.a)(K.a.metafieldDescription, K.a.radioDescription)
 				}, a.fbt._("Only approved users can view and submit to this community", null, {
 					hk: "3z8OI6"
-				}))))), r.a.createElement(U, {
+				}))))), r.a.createElement(Z, {
 					key: "employees_only",
 					showButton: !0,
 					value: "employees_only",
@@ -1168,7 +1168,7 @@
 							onMouseEnter: o,
 							onMouseLeave: i,
 							className: K.a.info
-						}, r.a.createElement(q, null), r.a.createElement(Z, {
+						}, r.a.createElement(q, null), r.a.createElement(U, {
 							className: K.a.StyledTooltip,
 							caretOnTop: !0,
 							tooltipId: X,
@@ -2031,11 +2031,11 @@
 			const r = e => {
 				const t = Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: a.Uc
+					experimentName: a.Sc
 				});
-				return !(!t || Object(a.jf)(t))
+				return !(!t || Object(a.hf)(t))
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.be2e7636f3d6902b56b0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.0f77ed27c2be9877c5f2.js.map

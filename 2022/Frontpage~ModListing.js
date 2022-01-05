@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~ModListing.dcc44d9ced70a67ffa8b.js
-// Retrieved at 1/4/2022, 10:50:11 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~ModListing.e9f0d08a4439f065f7cc.js
+// Retrieved at 1/5/2022, 10:10:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~ModListing"], {
 		"./src/reddit/actions/focusedVerticals/index.ts": function(e, t, n) {
@@ -670,19 +670,19 @@
 					})
 				})),
 				K = R.a.div("DropdownRowDisabled", D.a),
-				G = Object(l.u)({
+				V = Object(l.u)({
 					isFrontpage: l.z,
 					isProfilePage: l.I,
 					pageLayer: e => e
 				}),
-				V = Object(f.c)({
+				G = Object(f.c)({
 					isAwardListingExperimentEnabled: j.a,
 					isBestSortPopularEnabled: N.a,
 					user: T.k,
 					dropdownIsOpen: (e, t) => Object(I.b)(t.dropdownId || W)(e),
 					isPopularPage: l.E
 				}),
-				z = Object(o.b)(V, (e, {
+				z = Object(o.b)(G, (e, {
 					dropdownId: t,
 					pageLayer: n
 				}) => ({
@@ -690,7 +690,7 @@
 						tooltipId: t || W
 					}))
 				}));
-			var q = R.a.wrapped(G(z(Object(d.c)(e => r.a.createElement("div", {
+			var q = R.a.wrapped(V(z(Object(d.c)(e => r.a.createElement("div", {
 					className: e.className,
 					onClick: e.onOpenDropdown
 				}, !1 !== e.showTitle && r.a.createElement(H, null, w.fbt._("Sort", null, {
@@ -747,160 +747,160 @@
 					return t && t() || ""
 				},
 				J = {
-					[b.cc.AllStates]: () => w.fbt._("All", null, {
+					[b.dc.AllStates]: () => w.fbt._("All", null, {
 						hk: "3FfdRL"
 					}),
-					[b.cc.Alaska]: () => w.fbt._("alaska", null, {
+					[b.dc.Alaska]: () => w.fbt._("alaska", null, {
 						hk: "3PQz70"
 					}),
-					[b.cc.Alabama]: () => w.fbt._("alabama", null, {
+					[b.dc.Alabama]: () => w.fbt._("alabama", null, {
 						hk: "1Ain9C"
 					}),
-					[b.cc.Arkansas]: () => w.fbt._("arkansas", null, {
+					[b.dc.Arkansas]: () => w.fbt._("arkansas", null, {
 						hk: "3MSLfs"
 					}),
-					[b.cc.Arizona]: () => w.fbt._("arizona", null, {
+					[b.dc.Arizona]: () => w.fbt._("arizona", null, {
 						hk: "PjKyy"
 					}),
-					[b.cc.California]: () => w.fbt._("california", null, {
+					[b.dc.California]: () => w.fbt._("california", null, {
 						hk: "4fS2Uy"
 					}),
-					[b.cc.Colorado]: () => w.fbt._("colorado", null, {
+					[b.dc.Colorado]: () => w.fbt._("colorado", null, {
 						hk: "2FU5sm"
 					}),
-					[b.cc.Connecticut]: () => w.fbt._("connecticut", null, {
+					[b.dc.Connecticut]: () => w.fbt._("connecticut", null, {
 						hk: "3HJ97l"
 					}),
-					[b.cc.DistrictOfColumbia]: () => w.fbt._("district of columbia", null, {
+					[b.dc.DistrictOfColumbia]: () => w.fbt._("district of columbia", null, {
 						hk: "43sboQ"
 					}),
-					[b.cc.Delaware]: () => w.fbt._("delaware", null, {
+					[b.dc.Delaware]: () => w.fbt._("delaware", null, {
 						hk: "1sMYnC"
 					}),
-					[b.cc.Florida]: () => w.fbt._("florida", null, {
+					[b.dc.Florida]: () => w.fbt._("florida", null, {
 						hk: "1ahnDc"
 					}),
-					[b.cc.Georgia]: () => w.fbt._("georgia", null, {
+					[b.dc.Georgia]: () => w.fbt._("georgia", null, {
 						hk: "3O8sgW"
 					}),
-					[b.cc.Hawaii]: () => w.fbt._("hawaii", null, {
+					[b.dc.Hawaii]: () => w.fbt._("hawaii", null, {
 						hk: "11be3k"
 					}),
-					[b.cc.Iowa]: () => w.fbt._("iowa", null, {
+					[b.dc.Iowa]: () => w.fbt._("iowa", null, {
 						hk: "15vW0A"
 					}),
-					[b.cc.Idaho]: () => w.fbt._("idaho", null, {
+					[b.dc.Idaho]: () => w.fbt._("idaho", null, {
 						hk: "12whY2"
 					}),
-					[b.cc.Illinois]: () => w.fbt._("illinois", null, {
+					[b.dc.Illinois]: () => w.fbt._("illinois", null, {
 						hk: "4F6qqr"
 					}),
-					[b.cc.Indiana]: () => w.fbt._("indiana", null, {
+					[b.dc.Indiana]: () => w.fbt._("indiana", null, {
 						hk: "1Xvs3I"
 					}),
-					[b.cc.Kansas]: () => w.fbt._("kansas", null, {
+					[b.dc.Kansas]: () => w.fbt._("kansas", null, {
 						hk: "4yvtHS"
 					}),
-					[b.cc.Kentucky]: () => w.fbt._("kentucky", null, {
+					[b.dc.Kentucky]: () => w.fbt._("kentucky", null, {
 						hk: "3iqD7X"
 					}),
-					[b.cc.Louisiana]: () => w.fbt._("louisiana", null, {
+					[b.dc.Louisiana]: () => w.fbt._("louisiana", null, {
 						hk: "1pM17K"
 					}),
-					[b.cc.Massachusetts]: () => w.fbt._("massachusetts", null, {
+					[b.dc.Massachusetts]: () => w.fbt._("massachusetts", null, {
 						hk: "3Hx5EP"
 					}),
-					[b.cc.Maryland]: () => w.fbt._("maryland", null, {
+					[b.dc.Maryland]: () => w.fbt._("maryland", null, {
 						hk: "62JHL"
 					}),
-					[b.cc.Maine]: () => w.fbt._("maine", null, {
+					[b.dc.Maine]: () => w.fbt._("maine", null, {
 						hk: "2Sh6yp"
 					}),
-					[b.cc.Michigan]: () => w.fbt._("michigan", null, {
+					[b.dc.Michigan]: () => w.fbt._("michigan", null, {
 						hk: "2fnY28"
 					}),
-					[b.cc.Minnesota]: () => w.fbt._("minnesota", null, {
+					[b.dc.Minnesota]: () => w.fbt._("minnesota", null, {
 						hk: "4diMsG"
 					}),
-					[b.cc.Missouri]: () => w.fbt._("missouri", null, {
+					[b.dc.Missouri]: () => w.fbt._("missouri", null, {
 						hk: "3QuF4u"
 					}),
-					[b.cc.Mississippi]: () => w.fbt._("mississippi", null, {
+					[b.dc.Mississippi]: () => w.fbt._("mississippi", null, {
 						hk: "28v1kQ"
 					}),
-					[b.cc.Montana]: () => w.fbt._("montana", null, {
+					[b.dc.Montana]: () => w.fbt._("montana", null, {
 						hk: "20sZYn"
 					}),
-					[b.cc.NorthCarolina]: () => w.fbt._("north carolina", null, {
+					[b.dc.NorthCarolina]: () => w.fbt._("north carolina", null, {
 						hk: "BUaf7"
 					}),
-					[b.cc.NorthDakota]: () => w.fbt._("north dakota", null, {
+					[b.dc.NorthDakota]: () => w.fbt._("north dakota", null, {
 						hk: "1WRpz0"
 					}),
-					[b.cc.Nebraska]: () => w.fbt._("nebraska", null, {
+					[b.dc.Nebraska]: () => w.fbt._("nebraska", null, {
 						hk: "XUJCr"
 					}),
-					[b.cc.NewHampshire]: () => w.fbt._("new hampshire", null, {
+					[b.dc.NewHampshire]: () => w.fbt._("new hampshire", null, {
 						hk: "ga6kK"
 					}),
-					[b.cc.NewJersey]: () => w.fbt._("new jersey", null, {
+					[b.dc.NewJersey]: () => w.fbt._("new jersey", null, {
 						hk: "3Sz9QN"
 					}),
-					[b.cc.NewMexico]: () => w.fbt._("new mexico", null, {
+					[b.dc.NewMexico]: () => w.fbt._("new mexico", null, {
 						hk: "i2870"
 					}),
-					[b.cc.Nevada]: () => w.fbt._("nevada", null, {
+					[b.dc.Nevada]: () => w.fbt._("nevada", null, {
 						hk: "2DsBxU"
 					}),
-					[b.cc.NewYork]: () => w.fbt._("new york", null, {
+					[b.dc.NewYork]: () => w.fbt._("new york", null, {
 						hk: "2wKULo"
 					}),
-					[b.cc.Ohio]: () => w.fbt._("ohio", null, {
+					[b.dc.Ohio]: () => w.fbt._("ohio", null, {
 						hk: "1KDnKA"
 					}),
-					[b.cc.Oklahoma]: () => w.fbt._("oklahoma", null, {
+					[b.dc.Oklahoma]: () => w.fbt._("oklahoma", null, {
 						hk: "2P0Ita"
 					}),
-					[b.cc.Oregon]: () => w.fbt._("oregon", null, {
+					[b.dc.Oregon]: () => w.fbt._("oregon", null, {
 						hk: "3CqdY4"
 					}),
-					[b.cc.Pennsylvania]: () => w.fbt._("pennsylvania", null, {
+					[b.dc.Pennsylvania]: () => w.fbt._("pennsylvania", null, {
 						hk: "2skMK"
 					}),
-					[b.cc.RhodeIsland]: () => w.fbt._("rhode island", null, {
+					[b.dc.RhodeIsland]: () => w.fbt._("rhode island", null, {
 						hk: "120MAU"
 					}),
-					[b.cc.SouthCarolina]: () => w.fbt._("south carolina", null, {
+					[b.dc.SouthCarolina]: () => w.fbt._("south carolina", null, {
 						hk: "3JyeG9"
 					}),
-					[b.cc.SouthDakota]: () => w.fbt._("south dakota", null, {
+					[b.dc.SouthDakota]: () => w.fbt._("south dakota", null, {
 						hk: "4to42L"
 					}),
-					[b.cc.Tennessee]: () => w.fbt._("tennessee", null, {
+					[b.dc.Tennessee]: () => w.fbt._("tennessee", null, {
 						hk: "gHo1c"
 					}),
-					[b.cc.Texas]: () => w.fbt._("texas", null, {
+					[b.dc.Texas]: () => w.fbt._("texas", null, {
 						hk: "3dgz4M"
 					}),
-					[b.cc.Utah]: () => w.fbt._("utah", null, {
+					[b.dc.Utah]: () => w.fbt._("utah", null, {
 						hk: "22zf2i"
 					}),
-					[b.cc.Virginia]: () => w.fbt._("virginia", null, {
+					[b.dc.Virginia]: () => w.fbt._("virginia", null, {
 						hk: "1dvXBl"
 					}),
-					[b.cc.Vermont]: () => w.fbt._("vermont", null, {
+					[b.dc.Vermont]: () => w.fbt._("vermont", null, {
 						hk: "1Cdmbu"
 					}),
-					[b.cc.Washington]: () => w.fbt._("washington", null, {
+					[b.dc.Washington]: () => w.fbt._("washington", null, {
 						hk: "hhztG"
 					}),
-					[b.cc.Wisconsin]: () => w.fbt._("wisconsin", null, {
+					[b.dc.Wisconsin]: () => w.fbt._("wisconsin", null, {
 						hk: "3SOyMZ"
 					}),
-					[b.cc.WestVirginia]: () => w.fbt._("west virginia", null, {
+					[b.dc.WestVirginia]: () => w.fbt._("west virginia", null, {
 						hk: "1jIKYD"
 					}),
-					[b.cc.Wyoming]: () => w.fbt._("wyoming", null, {
+					[b.dc.Wyoming]: () => w.fbt._("wyoming", null, {
 						hk: "1QaJzt"
 					})
 				};
@@ -925,7 +925,7 @@
 					if (ne(e)) {
 						return e.split("_")[1]
 					}
-					return b.cc.AllStates
+					return b.dc.AllStates
 				},
 				re = e => {
 					if (e && e.indexOf("_") > 0) {
@@ -969,10 +969,10 @@
 					tooltipId: "StateSort--StateSortPicker"
 				}, n, {
 					renderContentsHidden: !0
-				}), Object.keys(b.cc).map(n => {
-					const s = b.cc[n];
+				}), Object.keys(b.dc).map(n => {
+					const s = b.dc[n];
 					return r.a.createElement("div", {
-						onClick: () => e.onClickLink((e => e === b.cc.AllStates ? t : `${t}_${e}`)(s), oe(s))
+						onClick: () => e.onClickLink((e => e === b.dc.AllStates ? t : `${t}_${e}`)(s), oe(s))
 					}, r.a.createElement(O.b, {
 						className: Object(a.a)(e.rowClassName, e.sort === s ? e.rowSelectedClassName : void 0),
 						displayText: Q(s),
@@ -1202,7 +1202,7 @@
 					className: e.dropdownClassName,
 					isOpen: e.dropdownIsOpen,
 					tooltipId: "TimeSort--SortPicker"
-				}, t), [b.fc.HOUR, b.fc.DAY, b.fc.WEEK, b.fc.MONTH, b.fc.YEAR, b.fc.ALL].map(t => {
+				}, t), [b.gc.HOUR, b.gc.DAY, b.gc.WEEK, b.gc.MONTH, b.gc.YEAR, b.gc.ALL].map(t => {
 					const n = ((e, t) => {
 							let n = e.url;
 							return e.urlParams.sort || Object(l.I)(e) || (n = ye.a.join(n, t)), n
@@ -1366,7 +1366,7 @@
 						onChange: n,
 						rowClassName: Le.a.DropdownRow,
 						rowSelectedClassName: Le.a.DropdownRowSelected,
-						timeSort: i || b.gc,
+						timeSort: i || b.hc,
 						wrapperClassName: Le.a.DropdownSortWrapper
 					}), u.length > 0 && r.a.createElement(q, De({}, this.props, {
 						className: Object(a.a)(Le.a.SortOverflow, e),
@@ -1387,8 +1387,8 @@
 			}
 			var Ue = Me(Object(o.b)(He)(Object(d.c)(Fe))),
 				Ke = n("./src/reddit/components/GeneralCleanup/SortViewBar/index.m.less"),
-				Ge = n.n(Ke);
-			const Ve = Object(l.u)({
+				Ve = n.n(Ke);
+			const Ge = Object(l.u)({
 					isProfilePage: l.I,
 					pageLayer: e => e
 				}),
@@ -1433,7 +1433,7 @@
 						updateSortPreference: u
 					} = this.props;
 					return r.a.createElement("div", {
-						className: Object(a.a)(Ge.a.Container, t),
+						className: Object(a.a)(Ve.a.Container, t),
 						onBlur: this.blurListingBroadcast,
 						onFocus: this.focusListingBroadcast
 					}, r.a.createElement(Ue, {
@@ -1446,12 +1446,12 @@
 						sortOptions: c,
 						timeSort: l
 					}), !o && r.a.createElement(m.a, {
-						className: Ge.a.LayoutSwitch,
+						className: Ve.a.LayoutSwitch,
 						subredditId: d
 					}))
 				}
 			}
-			t.a = Ve(ze(Object(d.c)(qe)))
+			t.a = Ge(ze(Object(d.c)(qe)))
 		},
 		"./src/reddit/components/ListingPostList/index.tsx": function(e, t, n) {
 			"use strict";
@@ -2218,22 +2218,22 @@
 					return t && t() || ""
 				},
 				i = {
-					[r.fc.HOUR]: () => s.fbt._("Now", null, {
+					[r.gc.HOUR]: () => s.fbt._("Now", null, {
 						hk: "ZmhY"
 					}),
-					[r.fc.DAY]: () => s.fbt._("Today", null, {
+					[r.gc.DAY]: () => s.fbt._("Today", null, {
 						hk: "40Ugu1"
 					}),
-					[r.fc.WEEK]: () => s.fbt._("This Week", null, {
+					[r.gc.WEEK]: () => s.fbt._("This Week", null, {
 						hk: "14tmoK"
 					}),
-					[r.fc.MONTH]: () => s.fbt._("This Month", null, {
+					[r.gc.MONTH]: () => s.fbt._("This Month", null, {
 						hk: "34dbM3"
 					}),
-					[r.fc.YEAR]: () => s.fbt._("This Year", null, {
+					[r.gc.YEAR]: () => s.fbt._("This Year", null, {
 						hk: "14RJsa"
 					}),
-					[r.fc.ALL]: () => s.fbt._("All Time", null, {
+					[r.gc.ALL]: () => s.fbt._("All Time", null, {
 						hk: "3qt6Ct"
 					})
 				},
@@ -2683,7 +2683,7 @@
 						subredditId: t
 					})),
 					w = Object(a.e)(p.a),
-					y = w !== u.Xd.NewModule;
+					y = w !== u.Vd.NewModule;
 				return (null === (s = null == f ? void 0 : f.cards) || void 0 === s ? void 0 : s.length) > 0 && y ? o.a.createElement(h, {
 					closeModuleOnMount: !!e && e !== m.g.Large,
 					subredditId: t,
@@ -2711,15 +2711,15 @@
 			const a = e => {
 					const t = Object(r.c)(e, {
 						experimentEligibilitySelector: o.K,
-						experimentName: s.xc
+						experimentName: s.vc
 					});
-					return !(!t || Object(s.jf)(t))
+					return !(!t || Object(s.hf)(t))
 				},
 				i = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: o.K,
-						experimentName: s.xc
-					}) === s.ad.ListingEnabled
+						experimentName: s.vc
+					}) === s.Yc.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, n) {
@@ -2842,4 +2842,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing.dcc44d9ced70a67ffa8b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing.e9f0d08a4439f065f7cc.js.map

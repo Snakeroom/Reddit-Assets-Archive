@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.f559a87d60a6fd614498.js
-// Retrieved at 1/4/2022, 10:50:11 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.1960e0b7144d15e205a5.js
+// Retrieved at 1/5/2022, 10:10:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ViewReportsDropdown-index"], {
 		"./src/reddit/actions/comment/index.ts": function(e, t, o) {
@@ -361,7 +361,7 @@
 						commentId: e
 					});
 					if (!c) return;
-					const m = o === n.bc.Snoozed,
+					const m = o === n.cc.Snoozed,
 						l = {
 							itemId: e,
 							reportText: t,
@@ -553,7 +553,7 @@
 			class S extends n.a.Component {
 				constructor() {
 					super(...arguments), this.tooltipTarget = null, this.setTooltipTargetRef = e => this.tooltipTarget = e, this.onSnoozeButtonClick = () => {
-						const e = this.props.isSnoozed ? c.bc.None : c.bc.Snoozed;
+						const e = this.props.isSnoozed ? c.cc.None : c.cc.Snoozed;
 						this.props.toggleSnooze(e);
 						const t = Object(j.l)(Object(f.a)(this.props.reportedThingId), this.props.isSnoozed, this.props.reportedThingId, this.props.reason);
 						this.props.sendEvent(t)
@@ -1028,4 +1028,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.f559a87d60a6fd614498.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.1960e0b7144d15e205a5.js.map

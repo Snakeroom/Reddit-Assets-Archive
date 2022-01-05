@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.df0b9eae6059f9733b41.js
-// Retrieved at 1/4/2022, 10:50:11 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.616fc95225459e5f39ee.js
+// Retrieved at 1/5/2022, 10:10:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435"], {
 		"./src/lib/hooks/usePrevious.ts": function(e, t, r) {
@@ -408,7 +408,7 @@
 						})
 					}, []);
 				Object(i.a)(P, G);
-				const [B, L] = Object(n.useState)(!1), V = Object(n.useCallback)(e => {
+				const [B, L] = Object(n.useState)(!1), U = Object(n.useCallback)(e => {
 					e.forEach(e => {
 						const {
 							isIntersecting: t,
@@ -416,10 +416,10 @@
 						} = e, n = 1 !== r;
 						t ? L(!0) : n && L(!1)
 					})
-				}, []), U = Object(n.useRef)({
+				}, []), V = Object(n.useRef)({
 					rootMargin: "2000px 0px 2000px 0px"
 				});
-				Object(i.a)(P, V, U.current);
+				Object(i.a)(P, U, V.current);
 				const q = Object(s.a)(t);
 				Object(n.useEffect)(() => {
 					if (void 0 !== q && q !== t) {
@@ -1772,9 +1772,9 @@
 			})), r.d(t, "clickFilterEvent", (function() {
 				return L
 			})), r.d(t, "clickNextFiltersEvent", (function() {
-				return V
-			})), r.d(t, "clickPreviousFiltersEvent", (function() {
 				return U
+			})), r.d(t, "clickPreviousFiltersEvent", (function() {
+				return V
 			}));
 			var n = r("./src/reddit/models/Gold/Award.ts"),
 				o = r("./src/reddit/selectors/telemetry.ts"),
@@ -1970,13 +1970,13 @@
 						filterName: e.content.markdown
 					}
 				}),
-				V = () => e => ({
+				U = () => e => ({
 					...u(e),
 					source: "give_gold",
 					action: "click",
 					noun: "next_filters"
 				}),
-				U = () => e => ({
+				V = () => e => ({
 					...u(e),
 					source: "give_gold",
 					action: "click",
@@ -3069,7 +3069,7 @@
 						postId: t
 					}) || Object(a.H)(e))(e, t),
 					experimentName: n.P
-				}) === n.Vc
+				}) === n.Tc
 			}
 		},
 		"./src/reddit/selectors/experiments/postActionBarAnimation.ts": function(e, t, r) {
@@ -3153,7 +3153,7 @@
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
 						experimentName: n.Hb
-					}) === n.Yb.Enabled
+					}) === n.Xb.Enabled
 				}
 		},
 		"./src/reddit/selectors/experiments/presence.ts": function(e, t, r) {
@@ -3166,8 +3166,8 @@
 			const s = e => {
 				return Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
-					experimentName: n.he
-				}) === n.Vc
+					experimentName: n.fe
+				}) === n.Tc
 			}
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, r) {
@@ -3466,4 +3466,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.df0b9eae6059f9733b41.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.616fc95225459e5f39ee.js.map
